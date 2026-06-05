@@ -118,7 +118,7 @@ This project is based on open-source software. All rights belong to the original
 ## 📋 更新日志 | Changelog | 変更履歴 | 변경 로그
 
 ### 最新版本 | Latest Version | 最新バージョン | 최신 버전
-- **v55.15** - 2026-06-05
+- **v70.15** - 2026-06-05
 
 ---
 
@@ -970,6 +970,1417 @@ This project is based on open-source software. All rights belong to the original
 - ✅ Cast Subtitle Lang
 - ✅ キャスト字幕言語
 - ✅ 캐스트 자막 언어
+
+
+### v56.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v56.1-v56.15 功能列表
+- ✅ Skip Silence, Font Weight Auto, Color Reduction, Stereo Widen, Send Priority, Cast Auto Rotate, Long Press Speed, Filter Score, Cache Compress, Chapters Color, Letter Spacing2, Saturation Curve, Volume Pre Amp, Gradient Opacity, Cast Subtitle Style
+
+### v56.1 跳过静音 | Skip Silence | 無音スキップ | 무음 건너뛰기
+- ✅ 跳过静音
+- ✅ Skip Silence
+- ✅ 無音スキップ
+- ✅ 무음 건너뛰기
+
+### v56.2 字体粗细自动 | Font Weight Auto | フォント太さ自動 | 글꼴 두께 자동
+- ✅ 字体粗细自动
+- ✅ Font Weight Auto
+- ✅ フォント太さ自動
+- ✅ 글꼴 두께 자동
+
+### v56.3 色彩降低 | Color Reduction | 色削減 | 색상 감소
+- ✅ 色彩降低
+- ✅ Color Reduction
+- ✅ 色削減
+- ✅ 색상 감소
+
+### v56.4 立体声加宽 | Stereo Widen | ステレオワイド | 스테레오 확장
+- ✅ 立体声加宽
+- ✅ Stereo Widen
+- ✅ ステレオワイド
+- ✅ 스테레오 확장
+
+### v56.5 发送优先级 | Send Priority | 送信優先度 | 전송 우선순위
+- ✅ 发送优先级
+- ✅ Send Priority
+- ✅ 送信優先度
+- ✅ 전송 우선순위
+
+### v56.6 投射自动旋转 | Cast Auto Rotate | キャスト自動回転 | 캐스트 자동 회전
+- ✅ 投射自动旋转
+- ✅ Cast Auto Rotate
+- ✅ キャスト自動回転
+- ✅ 캐스트 자동 회전
+
+### v56.7 长按速度 | Long Press Speed | 長押し速度 | 길게 누르기 속도
+- ✅ 长按速度
+- ✅ Long Press Speed
+- ✅ 長押し速度
+- ✅ 길게 누르기 속도
+
+### v56.8 弹幕评分过滤 | Filter Score | フィルタースコア | 필터 점수
+- ✅ 弹幕评分过滤
+- ✅ Filter Score
+- ✅ フィルタースコア
+- ✅ 필터 점수
+
+### v56.9 缓存压缩 | Cache Compress | キャッシュ圧縮 | 캐시 압축
+- ✅ 缓存压缩
+- ✅ Cache Compress
+- ✅ キャッシュ圧縮
+- ✅ 캐시 압축
+
+### v56.10 章节颜色 | Chapters Color | チャプター色 | 챕터 색상
+- ✅ 章节颜色
+- ✅ Chapters Color
+- ✅ チャプター色
+- ✅ 챕터 색상
+
+### v56.11 字母间距2 | Letter Spacing2 | 文字間隔2 | 글자 간격2
+- ✅ 字母间距2
+- ✅ Letter Spacing2
+- ✅ 文字間隔2
+- ✅ 글자 간격2
+
+### v56.12 饱和度曲线 | Saturation Curve | 彩度カーブ | 채도 커브
+- ✅ 饱和度曲线
+- ✅ Saturation Curve
+- ✅ 彩度カーブ
+- ✅ 채도 커브
+
+### v56.13 音量前级放大 | Volume Pre Amp | 音量プリアンプ | 볼륨 프리앰프
+- ✅ 音量前级放大
+- ✅ Volume Pre Amp
+- ✅ 音量プリアンプ
+- ✅ 볼륨 프리앰프
+
+### v56.14 渐变透明度 | Gradient Opacity | グラデーション透明度 | 그라데이션 투명도
+- ✅ 渐变透明度
+- ✅ Gradient Opacity
+- ✅ グラデーション透明度
+- ✅ 그라데이션 투명도
+
+### v56.15 投射字幕样式 | Cast Subtitle Style | キャスト字幕スタイル | 캐스트 자막 스타일
+- ✅ 投射字幕样式
+- ✅ Cast Subtitle Style
+- ✅ キャスト字幕スタイル
+- ✅ 캐스트 자막 스타일
+
+### v57.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v57.1-v57.15 功能列表
+- ✅ Auto Skip Ads, Font Anti Alias, Color Vibrance, Volume Ducking, Send Repeat, Cast Auto Fullscreen, Double Tap Action2, Filter Keywords, Cache Encrypt, Buffer Color, Font Background2, Highlight Roll, Max Boost, Bg Shadow Color2, Cast Video Bitrate
+
+### v57.1 自动跳广告 | Auto Skip Ads | 自動広告スキップ | 자동 광고 건너뛰기
+- ✅ 自动跳广告
+- ✅ Auto Skip Ads
+- ✅ 自動広告スキップ
+- ✅ 자동 광고 건너뛰기
+
+### v57.2 字体抗锯齿 | Font Anti Alias | フォントアンチエイリアス | 글꼴 안티앨리어싱
+- ✅ 字体抗锯齿
+- ✅ Font Anti Alias
+- ✅ フォントアンチエイリアス
+- ✅ 글꼴 안티앨리어싱
+
+### v57.3 色彩鲜艳度 | Color Vibrance | 色彩ビビッドネス | 색상 선명도
+- ✅ 色彩鲜艳度
+- ✅ Color Vibrance
+- ✅ 色彩ビビッドネス
+- ✅ 색상 선명도
+
+### v57.4 音量闪避 | Volume Ducking | 音量ダッキング | 볼륨 더킹
+- ✅ 音量闪避
+- ✅ Volume Ducking
+- ✅ 音量ダッキング
+- ✅ 볼륨 더킹
+
+### v57.5 发送重复 | Send Repeat | 送信繰り返し | 전송 반복
+- ✅ 发送重复
+- ✅ Send Repeat
+- ✅ 送信繰り返し
+- ✅ 전송 반복
+
+### v57.6 投射自动全屏 | Cast Auto Fullscreen | キャスト自動フルスクリーン | 캐스트 자동 전체화면
+- ✅ 投射自动全屏
+- ✅ Cast Auto Fullscreen
+- ✅ キャスト自動フルスクリーン
+- ✅ 캐스트 자동 전체화면
+
+### v57.7 双击动作2 | Double Tap Action2 | ダブルタップアクション2 | 더블 탭 동작2
+- ✅ 双击动作2
+- ✅ Double Tap Action2
+- ✅ ダブルタップアクション2
+- ✅ 더블 탭 동작2
+
+### v57.8 关键词过滤 | Filter Keywords | キーワードフィルター | 키워드 필터
+- ✅ 关键词过滤
+- ✅ Filter Keywords
+- ✅ キーワードフィルター
+- ✅ 키워드 필터
+
+### v57.9 缓存加密 | Cache Encrypt | キャッシュ暗号化 | 캐시 암호화
+- ✅ 缓存加密
+- ✅ Cache Encrypt
+- ✅ キャッシュ暗号化
+- ✅ 캐시 암호화
+
+### v57.10 缓冲颜色 | Buffer Color | バッファ色 | 버퍼 색상
+- ✅ 缓冲颜色
+- ✅ Buffer Color
+- ✅ バッファ色
+- ✅ 버퍼 색상
+
+### v57.11 字体背景2 | Font Background2 | フォント背景2 | 글꼴 배경2
+- ✅ 字体背景2
+- ✅ Font Background2
+- ✅ フォント背景2
+- ✅ 글꼴 배경2
+
+### v57.12 高光滚屏 | Highlight Roll | ハイライトロール | 하이라이트 롤
+- ✅ 高光滚屏
+- ✅ Highlight Roll
+- ✅ ハイライトロール
+- ✅ 하이라이트 롤
+
+### v57.13 最大增强 | Max Boost | 最大ブースト | 최대 부스트
+- ✅ 最大增强
+- ✅ Max Boost
+- ✅ 最大ブースト
+- ✅ 최대 부스트
+
+### v57.14 背景阴影颜色2 | Bg Shadow Color2 | 背景シャドウ色2 | 배경 그림자 색상2
+- ✅ 背景阴影颜色2
+- ✅ Bg Shadow Color2
+- ✅ 背景シャドウ色2
+- ✅ 배경 그림자 색상2
+
+### v57.15 投射视频码率 | Cast Video Bitrate | キャスト動画ビットレート | 캐스트 비디오 비트레이트
+- ✅ 投射视频码率
+- ✅ Cast Video Bitrate
+- ✅ キャスト動画ビットレート
+- ✅ 캐스트 비디오 비트레이트
+
+### v58.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v58.1-v58.15 功能列表
+- ✅ Auto Speed, Font Blend Mode, Color Lift, Pan Control, Send Font Size2, Cast Auto Resolution, Swipe Action2, Filter Regex2, Disk Policy, Thumb Color, Shadow Color2, Midtone Gamma, Volume EQ, Bg Border Width, Cast Audio Delay
+
+### v58.1 自动速度 | Auto Speed | 自動速度 | 자동 속도
+- ✅ 自动速度
+- ✅ Auto Speed
+- ✅ 自動速度
+- ✅ 자동 속도
+
+### v58.2 字体混合模式 | Font Blend Mode | フォントブレンドモード | 글꼴 블렌드 모드
+- ✅ 字体混合模式
+- ✅ Font Blend Mode
+- ✅ フォントブレンドモード
+- ✅ 글꼴 블렌드 모드
+
+### v58.3 色彩提升 | Color Lift | リフト | 리프트
+- ✅ 色彩提升
+- ✅ Color Lift
+- ✅ リフト
+- ✅ 리프트
+
+### v58.4 声像控制 | Pan Control | パンコントロール | 팬 컨트롤
+- ✅ 声像控制
+- ✅ Pan Control
+- ✅ パンコントロール
+- ✅ 팬 컨트롤
+
+### v58.5 发送字号2 | Send Font Size2 | 送信フォントサイズ2 | 전송 글꼴 크기2
+- ✅ 发送字号2
+- ✅ Send Font Size2
+- ✅ 送信フォントサイズ2
+- ✅ 전송 글꼴 크기2
+
+### v58.6 投射自动分辨率 | Cast Auto Resolution | キャスト自動解像度 | 캐스트 자동 해상도
+- ✅ 投射自动分辨率
+- ✅ Cast Auto Resolution
+- ✅ キャスト自動解像度
+- ✅ 캐스트 자동 해상도
+
+### v58.7 滑动动作2 | Swipe Action2 | スワイプアクション2 | 스와이프 동작2
+- ✅ 滑动动作2
+- ✅ Swipe Action2
+- ✅ スワイプアクション2
+- ✅ 스와이프 동작2
+
+### v58.8 正则过滤2 | Filter Regex2 | 正規表現フィルター2 | 정규식 필터2
+- ✅ 正则过滤2
+- ✅ Filter Regex2
+- ✅ 正規表現フィルター2
+- ✅ 정규식 필터2
+
+### v58.9 磁盘策略 | Disk Policy | ディスクポリシー | 디스크 정책
+- ✅ 磁盘策略
+- ✅ Disk Policy
+- ✅ ディスクポリシー
+- ✅ 디스크 정책
+
+### v58.10 滑块颜色 | Thumb Color | サム色 | 썸 색상
+- ✅ 滑块颜色
+- ✅ Thumb Color
+- ✅ サム色
+- ✅ 썸 색상
+
+### v58.11 阴影颜色2 | Shadow Color2 | シャドウ色2 | 그림자 색상2
+- ✅ 阴影颜色2
+- ✅ Shadow Color2
+- ✅ シャドウ色2
+- ✅ 그림자 색상2
+
+### v58.12 中间调伽马 | Midtone Gamma | ミッドトーンガンマ | 미드톤 감마
+- ✅ 中间调伽马
+- ✅ Midtone Gamma
+- ✅ ミッドトーンガンマ
+- ✅ 미드톤 감마
+
+### v58.13 音量均衡器 | Volume EQ | 音量イコライザー | 볼륨 EQ
+- ✅ 音量均衡器
+- ✅ Volume EQ
+- ✅ 音量イコライザー
+- ✅ 볼륨 EQ
+
+### v58.14 背景边框宽度 | Bg Border Width | 背景ボーダー幅 | 배경 테두리 너비
+- ✅ 背景边框宽度
+- ✅ Bg Border Width
+- ✅ 背景ボーダー幅
+- ✅ 배경 테두리 너비
+
+### v58.15 投射音频延迟 | Cast Audio Delay | キャスト音声遅延 | 캐스트 오디오 지연
+- ✅ 投射音频延迟
+- ✅ Cast Audio Delay
+- ✅ キャスト音声遅延
+- ✅ 캐스트 오디오 지연
+
+### v59.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v59.1-v59.15 功能列表
+- ✅ Skip Blank, Outline Color, Color Gain, Volume Reverb, Send Bg Color, Cast Auto Connect, Long Press Action2, Filter Lang, Memory Policy, Track Color, Stroke Color2, Shadow Gamma, Volume Crossfeed, Bg Gradient Color2, Cast Video Quality
+
+### v59.1 跳过空白 | Skip Blank | ブランクスキップ | 빈 화면 건너뛰기
+- ✅ 跳过空白
+- ✅ Skip Blank
+- ✅ ブランクスキップ
+- ✅ 빈 화면 건너뛰기
+
+### v59.2 描边颜色 | Outline Color | アウトライン色 | 아웃라인 색상
+- ✅ 描边颜色
+- ✅ Outline Color
+- ✅ アウトライン色
+- ✅ 아웃라인 색상
+
+### v59.3 色彩增益 | Color Gain | ゲイン | 게인
+- ✅ 色彩增益
+- ✅ Color Gain
+- ✅ ゲイン
+- ✅ 게인
+
+### v59.4 音量混响 | Volume Reverb | リバーブ | 리버브
+- ✅ 音量混响
+- ✅ Volume Reverb
+- ✅ リバーブ
+- ✅ 리버브
+
+### v59.5 发送背景颜色 | Send Bg Color | 送信背景色 | 전송 배경 색상
+- ✅ 发送背景颜色
+- ✅ Send Bg Color
+- ✅ 送信背景色
+- ✅ 전송 배경 색상
+
+### v59.6 投射自动连接 | Cast Auto Connect | キャスト自動接続 | 캐스트 자동 연결
+- ✅ 投射自动连接
+- ✅ Cast Auto Connect
+- ✅ キャスト自動接続
+- ✅ 캐스트 자동 연결
+
+### v59.7 长按动作2 | Long Press Action2 | 長押しアクション2 | 길게 누르기 동작2
+- ✅ 长按动作2
+- ✅ Long Press Action2
+- ✅ 長押しアクション2
+- ✅ 길게 누르기 동작2
+
+### v59.8 语言过滤 | Filter Lang | 言語フィルター | 언어 필터
+- ✅ 语言过滤
+- ✅ Filter Lang
+- ✅ 言語フィルター
+- ✅ 언어 필터
+
+### v59.9 内存策略 | Memory Policy | メモリポリシー | 메모리 정책
+- ✅ 内存策略
+- ✅ Memory Policy
+- ✅ メモリポリシー
+- ✅ 메모리 정책
+
+### v59.10 轨道颜色 | Track Color | トラック色 | 트랙 색상
+- ✅ 轨道颜色
+- ✅ Track Color
+- ✅ トラック色
+- ✅ 트랙 색상
+
+### v59.11 描边颜色2 | Stroke Color2 | ストローク色2 | 스트로크 색상2
+- ✅ 描边颜色2
+- ✅ Stroke Color2
+- ✅ ストローク色2
+- ✅ 스트로크 색상2
+
+### v59.12 暗部伽马 | Shadow Gamma | シャドウガンマ | 그림자 감마
+- ✅ 暗部伽马
+- ✅ Shadow Gamma
+- ✅ シャドウガンマ
+- ✅ 그림자 감마
+
+### v59.13 交叉馈送 | Volume Crossfeed | クロスフィード | 크로스피드
+- ✅ 交叉馈送
+- ✅ Volume Crossfeed
+- ✅ クロスフィード
+- ✅ 크로스피드
+
+### v59.14 背景渐变颜色2 | Bg Gradient Color2 | 背景グラデーション色2 | 배경 그라데이션 색상2
+- ✅ 背景渐变颜色2
+- ✅ Bg Gradient Color2
+- ✅ 背景グラデーション色2
+- ✅ 배경 그라데이션 색상2
+
+### v59.15 投射视频质量 | Cast Video Quality | キャスト動画品質 | 캐스트 비디오 품질
+- ✅ 投射视频质量
+- ✅ Cast Video Quality
+- ✅ キャスト動画品質
+- ✅ 캐스트 비디오 품질
+
+### v60.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v60.1-v60.15 功能列表
+- ✅ Smart Buffer, Font Weight2, Highlight Gamma, Volume Delay, Send Border Color, Cast Auto Adapt, Triple Tap Action, Filter Length2, Prefetch On Charge, Scrub Preview, Font Bg Color2, Midtone Saturation, Loudness Target, Bg Opacity2, Cast Subtitle Size
+
+### v60.1 智能缓冲 | Smart Buffer | スマートバッファ | 스마트 버퍼
+- ✅ 智能缓冲
+- ✅ Smart Buffer
+- ✅ スマートバッファ
+- ✅ 스마트 버퍼
+
+### v60.2 字体粗细2 | Font Weight2 | フォント太さ2 | 글꼴 두께2
+- ✅ 字体粗细2
+- ✅ Font Weight2
+- ✅ フォント太さ2
+- ✅ 글꼴 두께2
+
+### v60.3 高光伽马 | Highlight Gamma | ハイライトガンマ | 하이라이트 감마
+- ✅ 高光伽马
+- ✅ Highlight Gamma
+- ✅ ハイライトガンマ
+- ✅ 하이라이트 감마
+
+### v60.4 音量延迟 | Volume Delay | 音量遅延 | 볼륨 지연
+- ✅ 音量延迟
+- ✅ Volume Delay
+- ✅ 音量遅延
+- ✅ 볼륨 지연
+
+### v60.5 发送边框颜色 | Send Border Color | 送信ボーダー色 | 전송 테두리 색상
+- ✅ 发送边框颜色
+- ✅ Send Border Color
+- ✅ 送信ボーダー色
+- ✅ 전송 테두리 색상
+
+### v60.6 投射自适应 | Cast Auto Adapt | キャスト自動適応 | 캐스트 자동 적응
+- ✅ 投射自适应
+- ✅ Cast Auto Adapt
+- ✅ キャスト自動適応
+- ✅ 캐스트 자동 적응
+
+### v60.7 三击动作 | Triple Tap Action | トリプルタップアクション | 트리플 탭 동작
+- ✅ 三击动作
+- ✅ Triple Tap Action
+- ✅ トリプルタップアクション
+- ✅ 트리플 탭 동작
+
+### v60.8 长度过滤2 | Filter Length2 | フィルター長さ2 | 필터 길이2
+- ✅ 长度过滤2
+- ✅ Filter Length2
+- ✅ フィルター長さ2
+- ✅ 필터 길이2
+
+### v60.9 充电时预取 | Prefetch On Charge | 充電時プリロード | 충전 시 프리로드
+- ✅ 充电时预取
+- ✅ Prefetch On Charge
+- ✅ 充電時プリロード
+- ✅ 충전 시 프리로드
+
+### v60.10 滑动预览 | Scrub Preview | スクラブプレビュー | 스크럽 미리보기
+- ✅ 滑动预览
+- ✅ Scrub Preview
+- ✅ スクラブプレビュー
+- ✅ 스크럽 미리보기
+
+### v60.11 字体背景颜色2 | Font Bg Color2 | フォント背景色2 | 글꼴 배경 색상2
+- ✅ 字体背景颜色2
+- ✅ Font Bg Color2
+- ✅ フォント背景色2
+- ✅ 글꼴 배경 색상2
+
+### v60.12 中间调饱和度 | Midtone Saturation | ミッドトーン彩度 | 미드톤 채도
+- ✅ 中间调饱和度
+- ✅ Midtone Saturation
+- ✅ ミッドトーン彩度
+- ✅ 미드톤 채도
+
+### v60.13 响度目标 | Loudness Target | ラウドネス目標 | 라우드니스 목표
+- ✅ 响度目标
+- ✅ Loudness Target
+- ✅ ラウドネス目標
+- ✅ 라우드니스 목표
+
+### v60.14 背景透明度2 | Bg Opacity2 | 背景透明度2 | 배경 투명도2
+- ✅ 背景透明度2
+- ✅ Bg Opacity2
+- ✅ 背景透明度2
+- ✅ 배경 투명도2
+
+### v60.15 投射字幕大小 | Cast Subtitle Size | キャスト字幕サイズ | 캐스트 자막 크기
+- ✅ 投射字幕大小
+- ✅ Cast Subtitle Size
+- ✅ キャスト字幕サイズ
+- ✅ 캐스트 자막 크기
+
+### v61.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v61.1-v61.15 功能列表
+- ✅ Auto Quality Switch, Font Glow Color2, Black Gamma, Compressor Ratio, Send Shadow Size, Cast Audio Enhance, Edge Action, Filter Sender, Clear On Low, Progress Animation, Highlight Color, White Gamma, Compressor Attack, Bg Border Color2, Cast Subtitle Color
+
+### v61.1 自动画质切换 | Auto Quality Switch | 自動画質切換 | 자동 화질 전환
+- ✅ 自动画质切换
+- ✅ Auto Quality Switch
+- ✅ 自動画質切換
+- ✅ 자동 화질 전환
+
+### v61.2 字体发光颜色2 | Font Glow Color2 | フォントグロー色2 | 글꼴 글로우 색상2
+- ✅ 字体发光颜色2
+- ✅ Font Glow Color2
+- ✅ フォントグロー色2
+- ✅ 글꼴 글로우 색상2
+
+### v61.3 黑色伽马 | Black Gamma | ブラックガンマ | 블랙 감마
+- ✅ 黑色伽马
+- ✅ Black Gamma
+- ✅ ブラックガンマ
+- ✅ 블랙 감마
+
+### v61.4 压缩比 | Compressor Ratio | コンプレッサー比率 | 컴프레서 비율
+- ✅ 压缩比
+- ✅ Compressor Ratio
+- ✅ コンプレッサー比率
+- ✅ 컴프레서 비율
+
+### v61.5 发送阴影大小 | Send Shadow Size | 送信シャドウサイズ | 전송 그림자 크기
+- ✅ 发送阴影大小
+- ✅ Send Shadow Size
+- ✅ 送信シャドウサイズ
+- ✅ 전송 그림자 크기
+
+### v61.6 投射音频增强 | Cast Audio Enhance | キャスト音声強化 | 캐스트 오디오 강화
+- ✅ 投射音频增强
+- ✅ Cast Audio Enhance
+- ✅ キャスト音声強化
+- ✅ 캐스트 오디오 강화
+
+### v61.7 边缘动作 | Edge Action | エッジアクション | 엣지 동작
+- ✅ 边缘动作
+- ✅ Edge Action
+- ✅ エッジアクション
+- ✅ 엣지 동작
+
+### v61.8 发送者过滤 | Filter Sender | 送信者フィルター | 발신자 필터
+- ✅ 发送者过滤
+- ✅ Filter Sender
+- ✅ 送信者フィルター
+- ✅ 발신자 필터
+
+### v61.9 低空间时清理 | Clear On Low | 低容量時クリア | 저용량 시 정리
+- ✅ 低空间时清理
+- ✅ Clear On Low
+- ✅ 低容量時クリア
+- ✅ 저용량 시 정리
+
+### v61.10 进度条动画 | Progress Animation | プログレスアニメーション | 진행 바 애니메이션
+- ✅ 进度条动画
+- ✅ Progress Animation
+- ✅ プログレスアニメーション
+- ✅ 진행 바 애니메이션
+
+### v61.11 高亮颜色 | Highlight Color | ハイライト色 | 하이라이트 색상
+- ✅ 高亮颜色
+- ✅ Highlight Color
+- ✅ ハイライト色
+- ✅ 하이라이트 색상
+
+### v61.12 白色伽马 | White Gamma | ホワイトガンマ | 화이트 감마
+- ✅ 白色伽马
+- ✅ White Gamma
+- ✅ ホワイトガンマ
+- ✅ 화이트 감마
+
+### v61.13 压缩起始 | Compressor Attack | アタック | 어택
+- ✅ 压缩起始
+- ✅ Compressor Attack
+- ✅ アタック
+- ✅ 어택
+
+### v61.14 背景边框颜色2 | Bg Border Color2 | 背景ボーダー色2 | 배경 테두리 색상2
+- ✅ 背景边框颜色2
+- ✅ Bg Border Color2
+- ✅ 背景ボーダー色2
+- ✅ 배경 테두리 색상2
+
+### v61.15 投射字幕颜色 | Cast Subtitle Color | キャスト字幕色 | 캐스트 자막 색상
+- ✅ 投射字幕颜色
+- ✅ Cast Subtitle Color
+- ✅ キャスト字幕色
+- ✅ 캐스트 자막 색상
+
+### v62.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v62.1-v62.15 功能列表
+- ✅ Auto Bitrate, Font Weight3, Gamma Curve, Compressor Release, Send Outline Size, Cast Video Enhance, Custom Action, Filter Time Range, Read Ahead, Sensitivity, Glow Size2, Temperature Curve, Limiter Threshold, Bg Shadow Blur2, Cast Subtitle Bg
+
+### v62.1 自动码率 | Auto Bitrate | 自動ビットレート | 자동 비트레이트
+- ✅ 自动码率
+- ✅ Auto Bitrate
+- ✅ 自動ビットレート
+- ✅ 자동 비트레이트
+
+### v62.2 字体粗细3 | Font Weight3 | フォント太さ3 | 글꼴 두께3
+- ✅ 字体粗细3
+- ✅ Font Weight3
+- ✅ フォント太さ3
+- ✅ 글꼴 두께3
+
+### v62.3 伽马曲线 | Gamma Curve | ガンマカーブ | 감마 커브
+- ✅ 伽马曲线
+- ✅ Gamma Curve
+- ✅ ガンマカーブ
+- ✅ 감마 커브
+
+### v62.4 压缩释放 | Compressor Release | リリース | 릴리즈
+- ✅ 压缩释放
+- ✅ Compressor Release
+- ✅ リリース
+- ✅ 릴리즈
+
+### v62.5 发送描边大小 | Send Outline Size | 送信アウトラインサイズ | 전송 아웃라인 크기
+- ✅ 发送描边大小
+- ✅ Send Outline Size
+- ✅ 送信アウトラインサイズ
+- ✅ 전송 아웃라인 크기
+
+### v62.6 投射视频增强 | Cast Video Enhance | キャスト動画強化 | 캐스트 비디오 강화
+- ✅ 投射视频增强
+- ✅ Cast Video Enhance
+- ✅ キャスト動画強化
+- ✅ 캐스트 비디오 강화
+
+### v62.7 自定义动作 | Custom Action | カスタムアクション | 사용자 정의 동작
+- ✅ 自定义动作
+- ✅ Custom Action
+- ✅ カスタムアクション
+- ✅ 사용자 정의 동작
+
+### v62.8 时间范围过滤 | Filter Time Range | 時間範囲フィルター | 시간 범위 필터
+- ✅ 时间范围过滤
+- ✅ Filter Time Range
+- ✅ 時間範囲フィルター
+- ✅ 시간 범위 필터
+
+### v62.9 预读取 | Read Ahead | リードアヘッド | 리드 어헤드
+- ✅ 预读取
+- ✅ Read Ahead
+- ✅ リードアヘッド
+- ✅ 리드 어헤드
+
+### v62.10 灵敏度 | Sensitivity | 感度 | 감도
+- ✅ 灵敏度
+- ✅ Sensitivity
+- ✅ 感度
+- ✅ 감도
+
+### v62.11 发光大小2 | Glow Size2 | グローサイズ2 | 글로우 크기2
+- ✅ 发光大小2
+- ✅ Glow Size2
+- ✅ グローサイズ2
+- ✅ 글로우 크기2
+
+### v62.12 色温曲线 | Temperature Curve | 色温度カーブ | 색온도 커브
+- ✅ 色温曲线
+- ✅ Temperature Curve
+- ✅ 色温度カーブ
+- ✅ 색온도 커브
+
+### v62.13 限幅阈值 | Limiter Threshold | リミッター閾値 | 리미터 임계값
+- ✅ 限幅阈值
+- ✅ Limiter Threshold
+- ✅ リミッター閾値
+- ✅ 리미터 임계값
+
+### v62.14 背景阴影模糊2 | Bg Shadow Blur2 | 背景シャドウぼかし2 | 배경 그림자 블러2
+- ✅ 背景阴影模糊2
+- ✅ Bg Shadow Blur2
+- ✅ 背景シャドウぼかし2
+- ✅ 배경 그림자 블러2
+
+### v62.15 投射字幕背景 | Cast Subtitle Bg | キャスト字幕背景 | 캐스트 자막 배경
+- ✅ 投射字幕背景
+- ✅ Cast Subtitle Bg
+- ✅ キャスト字幕背景
+- ✅ 캐스트 자막 배경
+
+### v63.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v63.1-v63.15 功能列表
+- ✅ Auto Chapter, Line Spacing2, Contrast Curve, Normalizer2, Send Bg Blur, Cast Auto Subtitle, Pinch Action, Filter Score2, Wakeup On Start, Tick Color, Weight Custom2, Brightness Curve, Bass Lpf, Bg Shadow Offset, Cast Subtitle Outline
+
+### v63.1 自动章节 | Auto Chapter | 自動チャプター | 자동 챕터
+- ✅ 自动章节
+- ✅ Auto Chapter
+- ✅ 自動チャプター
+- ✅ 자동 챕터
+
+### v63.2 行间距2 | Line Spacing2 | 行間2 | 줄 간격2
+- ✅ 行间距2
+- ✅ Line Spacing2
+- ✅ 行間2
+- ✅ 줄 간격2
+
+### v63.3 对比度曲线 | Contrast Curve | コントラストカーブ | 대비 커브
+- ✅ 对比度曲线
+- ✅ Contrast Curve
+- ✅ コントラストカーブ
+- ✅ 대비 커브
+
+### v63.4 标准化器2 | Normalizer2 | ノーマライザー2 | 노멀라이저2
+- ✅ 标准化器2
+- ✅ Normalizer2
+- ✅ ノーマライザー2
+- ✅ 노멀라이저2
+
+### v63.5 发送背景模糊 | Send Bg Blur | 送信背景ぼかし | 전송 배경 블러
+- ✅ 发送背景模糊
+- ✅ Send Bg Blur
+- ✅ 送信背景ぼかし
+- ✅ 전송 배경 블러
+
+### v63.6 投射自动字幕 | Cast Auto Subtitle | キャスト自動字幕 | 캐스트 자동 자막
+- ✅ 投射自动字幕
+- ✅ Cast Auto Subtitle
+- ✅ キャスト自動字幕
+- ✅ 캐스트 자동 자막
+
+### v63.7 捏合动作 | Pinch Action | ピンチアクション | 핀치 동작
+- ✅ 捏合动作
+- ✅ Pinch Action
+- ✅ ピンチアクション
+- ✅ 핀치 동작
+
+### v63.8 评分过滤2 | Filter Score2 | フィルタースコア2 | 필터 점수2
+- ✅ 评分过滤2
+- ✅ Filter Score2
+- ✅ フィルタースコア2
+- ✅ 필터 점수2
+
+### v63.9 启动时唤醒 | Wakeup On Start | 起動時ウェイクアップ | 시작 시 웨이크업
+- ✅ 启动时唤醒
+- ✅ Wakeup On Start
+- ✅ 起動時ウェイクアップ
+- ✅ 시작 시 웨이크업
+
+### v63.10 刻度颜色 | Tick Color | ティック色 | 틱 색상
+- ✅ 刻度颜色
+- ✅ Tick Color
+- ✅ ティック色
+- ✅ 틱 색상
+
+### v63.11 自定义粗细2 | Weight Custom2 | 太さカスタム2 | 두께 사용자 정의2
+- ✅ 自定义粗细2
+- ✅ Weight Custom2
+- ✅ 太さカスタム2
+- ✅ 두께 사용자 정의2
+
+### v63.12 亮度曲线 | Brightness Curve | 輝度カーブ | 밝기 커브
+- ✅ 亮度曲线
+- ✅ Brightness Curve
+- ✅ 輝度カーブ
+- ✅ 밝기 커브
+
+### v63.13 低通滤波 | Bass Lpf | バスLPF | 베이스 LPF
+- ✅ 低通滤波
+- ✅ Bass Lpf
+- ✅ バスLPF
+- ✅ 베이스 LPF
+
+### v63.14 背景阴影偏移 | Bg Shadow Offset | 背景シャドウオフセット | 배경 그림자 오프셋
+- ✅ 背景阴影偏移
+- ✅ Bg Shadow Offset
+- ✅ 背景シャドウオフセット
+- ✅ 배경 그림자 오프셋
+
+### v63.15 投射字幕描边 | Cast Subtitle Outline | キャスト字幕アウトライン | 캐스트 자막 아웃라인
+- ✅ 投射字幕描边
+- ✅ Cast Subtitle Outline
+- ✅ キャスト字幕アウトライン
+- ✅ 캐스트 자막 아웃라인
+
+### v64.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v64.1-v64.15 功能列表
+- ✅ Auto Loop Playlist, Shadow Offset2, Saturation Boost, Treble Hpf, Send Border Size, Cast Auto Quality2, Rotation Action, Length Range, Cleanup On Start, Glow Color, Font Italic2, Vividness Boost, Surround Angle, Bg Padding2, Cast Subtitle Delay
+
+### v64.1 自动循环播放列表 | Auto Loop Playlist | 自動ループプレイリスト | 자동 루프 재생목록
+- ✅ 自动循环播放列表
+- ✅ Auto Loop Playlist
+- ✅ 自動ループプレイリスト
+- ✅ 자동 루프 재생목록
+
+### v64.2 阴影偏移2 | Shadow Offset2 | シャドウオフセット2 | 그림자 오프셋2
+- ✅ 阴影偏移2
+- ✅ Shadow Offset2
+- ✅ シャドウオフセット2
+- ✅ 그림자 오프셋2
+
+### v64.3 饱和度增强 | Saturation Boost | 彩度ブースト | 채도 부스트
+- ✅ 饱和度增强
+- ✅ Saturation Boost
+- ✅ 彩度ブースト
+- ✅ 채도 부스트
+
+### v64.4 高通滤波 | Treble Hpf | トレブルHPF | 트레블 HPF
+- ✅ 高通滤波
+- ✅ Treble Hpf
+- ✅ トレブルHPF
+- ✅ 트레블 HPF
+
+### v64.5 发送边框大小 | Send Border Size | 送信ボーダーサイズ | 전송 테두리 크기
+- ✅ 发送边框大小
+- ✅ Send Border Size
+- ✅ 送信ボーダーサイズ
+- ✅ 전송 테두리 크기
+
+### v64.6 投射自动画质2 | Cast Auto Quality2 | キャスト自動画質2 | 캐스트 자동 화질2
+- ✅ 投射自动画质2
+- ✅ Cast Auto Quality2
+- ✅ キャスト自動画質2
+- ✅ 캐스트 자동 화질2
+
+### v64.7 旋转动作 | Rotation Action | 回転アクション | 회전 동작
+- ✅ 旋转动作
+- ✅ Rotation Action
+- ✅ 回転アクション
+- ✅ 회전 동작
+
+### v64.8 长度范围 | Length Range | 長さ範囲 | 길이 범위
+- ✅ 长度范围
+- ✅ Length Range
+- ✅ 長さ範囲
+- ✅ 길이 범위
+
+### v64.9 启动时清理 | Cleanup On Start | 起動時クリーンアップ | 시작 시 정리
+- ✅ 启动时清理
+- ✅ Cleanup On Start
+- ✅ 起動時クリーンアップ
+- ✅ 시작 시 정리
+
+### v64.10 发光颜色 | Glow Color | グロー色 | 글로우 색상
+- ✅ 发光颜色
+- ✅ Glow Color
+- ✅ グロー色
+- ✅ 글로우 색상
+
+### v64.11 字体斜体2 | Font Italic2 | フォントイタリック2 | 글꼴 이탤릭2
+- ✅ 字体斜体2
+- ✅ Font Italic2
+- ✅ フォントイタリック2
+- ✅ 글꼴 이탤릭2
+
+### v64.12 鲜艳度增强 | Vividness Boost | ビビッドネスブースト | 선명도 부스트
+- ✅ 鲜艳度增强
+- ✅ Vividness Boost
+- ✅ ビビッドネスブースト
+- ✅ 선명도 부스트
+
+### v64.13 环绕角度 | Surround Angle | サラウンド角度 | 서라운드 각도
+- ✅ 环绕角度
+- ✅ Surround Angle
+- ✅ サラウンド角度
+- ✅ 서라운드 각도
+
+### v64.14 背景内边距2 | Bg Padding2 | 背景パディング2 | 배경 패딩2
+- ✅ 背景内边距2
+- ✅ Bg Padding2
+- ✅ 背景パディング2
+- ✅ 배경 패딩2
+
+### v64.15 投射字幕延迟 | Cast Subtitle Delay | キャスト字幕遅延 | 캐스트 자막 지연
+- ✅ 投射字幕延迟
+- ✅ Cast Subtitle Delay
+- ✅ キャスト字幕遅延
+- ✅ 캐스트 자막 지연
+
+### v65.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v65.1-v65.15 功能列表
+- ✅ Skip Recap, Font Strike2, Hue Curve, Bass Enhance, Anim Duration, Cast Auto Reconnect2, Shake Action, Filter Duplicate2, Prefetch On Idle, Gradient Speed, Font Underline2, Lift Gamma Gain, Treble Enhance, Bg Border Radius2, Cast Subtitle Bg Opacity
+
+### v65.1 跳过回顾 | Skip Recap | リキャップスキップ | 리캡 건너뛰기
+- ✅ 跳过回顾
+- ✅ Skip Recap
+- ✅ リキャップスキップ
+- ✅ 리캡 건너뛰기
+
+### v65.2 删除线2 | Font Strike2 | フォント取り消し線2 | 글꼴 취소선2
+- ✅ 删除线2
+- ✅ Font Strike2
+- ✅ フォント取り消し線2
+- ✅ 글꼴 취소선2
+
+### v65.3 色调曲线 | Hue Curve | 色相カーブ | 색조 커브
+- ✅ 色调曲线
+- ✅ Hue Curve
+- ✅ 色相カーブ
+- ✅ 색조 커브
+
+### v65.4 低音增强 | Bass Enhance | バス強化 | 베이스 강화
+- ✅ 低音增强
+- ✅ Bass Enhance
+- ✅ バス強化
+- ✅ 베이스 강화
+
+### v65.5 动画时长 | Anim Duration | アニメーション時間 | 애니메이션 시간
+- ✅ 动画时长
+- ✅ Anim Duration
+- ✅ アニメーション時間
+- ✅ 애니메이션 시간
+
+### v65.6 投射自动重连2 | Cast Auto Reconnect2 | キャスト自動再接続2 | 캐스트 자동 재연결2
+- ✅ 投射自动重连2
+- ✅ Cast Auto Reconnect2
+- ✅ キャスト自動再接続2
+- ✅ 캐스트 자동 재연결2
+
+### v65.7 摇晃动作 | Shake Action | シェイクアクション | 셰이크 동작
+- ✅ 摇晃动作
+- ✅ Shake Action
+- ✅ シェイクアクション
+- ✅ 셰이크 동작
+
+### v65.8 去重过滤2 | Filter Duplicate2 | 重複フィルター2 | 중복 필터2
+- ✅ 去重过滤2
+- ✅ Filter Duplicate2
+- ✅ 重複フィルター2
+- ✅ 중복 필터2
+
+### v65.9 空闲时预取 | Prefetch On Idle | アイドル時プリロード | 유휴 시 프리로드
+- ✅ 空闲时预取
+- ✅ Prefetch On Idle
+- ✅ アイドル時プリロード
+- ✅ 유휴 시 프리로드
+
+### v65.10 渐变速度 | Gradient Speed | グラデーション速度 | 그라데이션 속도
+- ✅ 渐变速度
+- ✅ Gradient Speed
+- ✅ グラデーション速度
+- ✅ 그라데이션 속도
+
+### v65.11 下划线2 | Font Underline2 | フォント下線2 | 글꼴 밑줄2
+- ✅ 下划线2
+- ✅ Font Underline2
+- ✅ フォント下線2
+- ✅ 글꼴 밑줄2
+
+### v65.12 提升伽马增益 | Lift Gamma Gain | リフトガンマゲイン | 리프트 감마 게인
+- ✅ 提升伽马增益
+- ✅ Lift Gamma Gain
+- ✅ リフトガンマゲイン
+- ✅ 리프트 감마 게인
+
+### v65.13 高音增强 | Treble Enhance | トレブル強化 | 트레블 강화
+- ✅ 高音增强
+- ✅ Treble Enhance
+- ✅ トレブル強化
+- ✅ 트레블 강화
+
+### v65.14 背景圆角2 | Bg Border Radius2 | 背景角丸2 | 배경 둥근 모서리2
+- ✅ 背景圆角2
+- ✅ Bg Border Radius2
+- ✅ 背景角丸2
+- ✅ 배경 둥근 모서리2
+
+### v65.15 投射字幕背景透明度 | Cast Subtitle Bg Opacity | キャスト字幕背景透明度 | 캐스트 자막 배경 투명도
+- ✅ 投射字幕背景透明度
+- ✅ Cast Subtitle Bg Opacity
+- ✅ キャスト字幕背景透明度
+- ✅ 캐스트 자막 배경 투명도
+
+### v66.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v66.1-v66.15 功能列表
+- ✅ Smart Seek, Font Monospace2, Tone Mapping, Channel Delay, Send Font Size3, Cast Auto Adapt2, Multi Touch Action, Filter Emote, Compress Level, Shadow Color, Font Color2, ACES Film, Dynamic Bass, Bg Gradient Color3, Cast Subtitle Font
+
+### v66.1 智能快进 | Smart Seek | スマートシーク | 스마트 탐색
+- ✅ 智能快进
+- ✅ Smart Seek
+- ✅ スマートシーク
+- ✅ 스마트 탐색
+
+### v66.2 等宽字体2 | Font Monospace2 | フォントモノスペース2 | 글꼴 모노스페이스2
+- ✅ 等宽字体2
+- ✅ Font Monospace2
+- ✅ フォントモノスペース2
+- ✅ 글꼴 모노스페이스2
+
+### v66.3 色调映射 | Tone Mapping | トーンマッピング | 톤매핑
+- ✅ 色调映射
+- ✅ Tone Mapping
+- ✅ トーンマッピング
+- ✅ 톤매핑
+
+### v66.4 声道延迟 | Channel Delay | チャンネル遅延 | 채널 지연
+- ✅ 声道延迟
+- ✅ Channel Delay
+- ✅ チャンネル遅延
+- ✅ 채널 지연
+
+### v66.5 发送字号3 | Send Font Size3 | 送信フォントサイズ3 | 전송 글꼴 크기3
+- ✅ 发送字号3
+- ✅ Send Font Size3
+- ✅ 送信フォントサイズ3
+- ✅ 전송 글꼴 크기3
+
+### v66.6 投射自适应2 | Cast Auto Adapt2 | キャスト自動適応2 | 캐스트 자동 적응2
+- ✅ 投射自适应2
+- ✅ Cast Auto Adapt2
+- ✅ キャスト自動適応2
+- ✅ 캐스트 자동 적응2
+
+### v66.7 多点触控动作 | Multi Touch Action | マルチタッチアクション | 멀티 터치 동작
+- ✅ 多点触控动作
+- ✅ Multi Touch Action
+- ✅ マルチタッチアクション
+- ✅ 멀티 터치 동작
+
+### v66.8 表情过滤 | Filter Emote | 絵文字フィルター | 이모티콘 필터
+- ✅ 表情过滤
+- ✅ Filter Emote
+- ✅ 絵文字フィルター
+- ✅ 이모티콘 필터
+
+### v66.9 压缩级别 | Compress Level | 圧縮レベル | 압축 수준
+- ✅ 压缩级别
+- ✅ Compress Level
+- ✅ 圧縮レベル
+- ✅ 압축 수준
+
+### v66.10 阴影颜色 | Shadow Color | シャドウ色 | 그림자 색상
+- ✅ 阴影颜色
+- ✅ Shadow Color
+- ✅ シャドウ色
+- ✅ 그림자 색상
+
+### v66.11 字体颜色2 | Font Color2 | フォント色2 | 글꼴 색상2
+- ✅ 字体颜色2
+- ✅ Font Color2
+- ✅ フォント色2
+- ✅ 글꼴 색상2
+
+### v66.12 ACES胶片 | ACES Film | ACESフィルム | ACES 필름
+- ✅ ACES胶片
+- ✅ ACES Film
+- ✅ ACESフィルム
+- ✅ ACES 필름
+
+### v66.13 动态低音 | Dynamic Bass | ダイナミックバス | 다이나믹 베이스
+- ✅ 动态低音
+- ✅ Dynamic Bass
+- ✅ ダイナミックバス
+- ✅ 다이나믹 베이스
+
+### v66.14 背景渐变颜色3 | Bg Gradient Color3 | 背景グラデーション色3 | 배경 그라데이션 색상3
+- ✅ 背景渐变颜色3
+- ✅ Bg Gradient Color3
+- ✅ 背景グラデーション色3
+- ✅ 배경 그라데이션 색상3
+
+### v66.15 投射字幕字体 | Cast Subtitle Font | キャスト字幕フォント | 캐스트 자막 글꼴
+- ✅ 投射字幕字体
+- ✅ Cast Subtitle Font
+- ✅ キャスト字幕フォント
+- ✅ 캐스트 자막 글꼴
+
+### v67.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v67.1-v67.15 功能列表
+- ✅ Skip Preview, Outline Color2, Log Curve, Spatial Audio, Send Bg Radius, Cast Auto Connect2, Finger Count Action, Filter Combo, Write Policy, Gradient Color, Shadow Color3, Sigmoid Contrast, Surround Delay, Bg Shadow Color3, Cast Subtitle Shadow
+
+### v67.1 跳过预览 | Skip Preview | プレビュースキップ | 미리보기 건너뛰기
+- ✅ 跳过预览
+- ✅ Skip Preview
+- ✅ プレビュースキップ
+- ✅ 미리보기 건너뛰기
+
+### v67.2 描边颜色2 | Outline Color2 | アウトライン色2 | 아웃라인 색상2
+- ✅ 描边颜色2
+- ✅ Outline Color2
+- ✅ アウトライン色2
+- ✅ 아웃라인 색상2
+
+### v67.3 对数曲线 | Log Curve | ログカーブ | 로그 커브
+- ✅ 对数曲线
+- ✅ Log Curve
+- ✅ ログカーブ
+- ✅ 로그 커브
+
+### v67.4 空间音频 | Spatial Audio | 空間オーディオ | 공간 오디오
+- ✅ 空间音频
+- ✅ Spatial Audio
+- ✅ 空間オーディオ
+- ✅ 공간 오디오
+
+### v67.5 发送背景圆角 | Send Bg Radius | 送信背景角丸 | 전송 배경 둥근 모서리
+- ✅ 发送背景圆角
+- ✅ Send Bg Radius
+- ✅ 送信背景角丸
+- ✅ 전송 배경 둥근 모서리
+
+### v67.6 投射自动连接2 | Cast Auto Connect2 | キャスト自動接続2 | 캐스트 자동 연결2
+- ✅ 投射自动连接2
+- ✅ Cast Auto Connect2
+- ✅ キャスト自動接続2
+- ✅ 캐스트 자동 연결2
+
+### v67.7 手指计数动作 | Finger Count Action | 指カウントアクション | 손가락 카운트 동작
+- ✅ 手指计数动作
+- ✅ Finger Count Action
+- ✅ 指カウントアクション
+- ✅ 손가락 카운트 동작
+
+### v67.8 连击过滤 | Filter Combo | コンボフィルター | 콤보 필터
+- ✅ 连击过滤
+- ✅ Filter Combo
+- ✅ コンボフィルター
+- ✅ 콤보 필터
+
+### v67.9 写入策略 | Write Policy | ライトポリシー | 쓰기 정책
+- ✅ 写入策略
+- ✅ Write Policy
+- ✅ ライトポリシー
+- ✅ 쓰기 정책
+
+### v67.10 渐变颜色 | Gradient Color | グラデーション色 | 그라데이션 색상
+- ✅ 渐变颜色
+- ✅ Gradient Color
+- ✅ グラデーション色
+- ✅ 그라데이션 색상
+
+### v67.11 阴影颜色3 | Shadow Color3 | シャドウ色3 | 그림자 색상3
+- ✅ 阴影颜色3
+- ✅ Shadow Color3
+- ✅ シャドウ色3
+- ✅ 그림자 색상3
+
+### v67.12 S型对比度 | Sigmoid Contrast | シグモイドコントラスト | 시그모이드 대비
+- ✅ S型对比度
+- ✅ Sigmoid Contrast
+- ✅ シグモイドコントラスト
+- ✅ 시그모이드 대비
+
+### v67.13 环绕延迟 | Surround Delay | サラウンド遅延 | 서라운드 지연
+- ✅ 环绕延迟
+- ✅ Surround Delay
+- ✅ サラウンド遅延
+- ✅ 서라운드 지연
+
+### v67.14 背景阴影颜色3 | Bg Shadow Color3 | 背景シャドウ色3 | 배경 그림자 색상3
+- ✅ 背景阴影颜色3
+- ✅ Bg Shadow Color3
+- ✅ 背景シャドウ色3
+- ✅ 배경 그림자 색상3
+
+### v67.15 投射字幕阴影 | Cast Subtitle Shadow | キャスト字幕シャドウ | 캐스트 자막 그림자
+- ✅ 投射字幕阴影
+- ✅ Cast Subtitle Shadow
+- ✅ キャスト字幕シャドウ
+- ✅ 캐스트 자막 그림자
+
+### v68.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v68.1-v68.15 功能列表
+- ✅ Skip Padding, Glow Color3, Film Grain, Channel Extractor, Send Bg Gradient, Cast Auto Quality3, Pressure Action, Filter Super Chat, Prefetch On Start, Glow Effect, Weight Custom3, Color Bloom, Dynamic Range, Bg Shadow Offset2, Cast Subtitle Glow
+
+### v68.1 跳过填充 | Skip Padding | パディングスキップ | 패딩 건너뛰기
+- ✅ 跳过填充
+- ✅ Skip Padding
+- ✅ パディングスキップ
+- ✅ 패딩 건너뛰기
+
+### v68.2 发光颜色3 | Glow Color3 | グロー色3 | 글로우 색상3
+- ✅ 发光颜色3
+- ✅ Glow Color3
+- ✅ グロー色3
+- ✅ 글로우 색상3
+
+### v68.3 胶片颗粒 | Film Grain | フィルムグレイン | 필름 그레인
+- ✅ 胶片颗粒
+- ✅ Film Grain
+- ✅ フィルムグレイン
+- ✅ 필름 그레인
+
+### v68.4 声道提取器 | Channel Extractor | チャンネルエクストラクター | 채널 익스트랙터
+- ✅ 声道提取器
+- ✅ Channel Extractor
+- ✅ チャンネルエクストラクター
+- ✅ 채널 익스트랙터
+
+### v68.5 发送背景渐变 | Send Bg Gradient | 送信背景グラデーション | 전송 배경 그라데이션
+- ✅ 发送背景渐变
+- ✅ Send Bg Gradient
+- ✅ 送信背景グラデーション
+- ✅ 전송 배경 그라데이션
+
+### v68.6 投射自动画质3 | Cast Auto Quality3 | キャスト自動画質3 | 캐스트 자동 화질3
+- ✅ 投射自动画质3
+- ✅ Cast Auto Quality3
+- ✅ キャスト自動画質3
+- ✅ 캐스트 자동 화질3
+
+### v68.7 压力动作 | Pressure Action | プレッシャーアクション | 프레셔 동작
+- ✅ 压力动作
+- ✅ Pressure Action
+- ✅ プレッシャーアクション
+- ✅ 프레셔 동작
+
+### v68.8 醒目留言过滤 | Filter Super Chat | スーパーチャットフィルター | 슈퍼챗 필터
+- ✅ 醒目留言过滤
+- ✅ Filter Super Chat
+- ✅ スーパーチャットフィルター
+- ✅ 슈퍼챗 필터
+
+### v68.9 启动时预取 | Prefetch On Start | 起動時プリロード | 시작 시 프리로드
+- ✅ 启动时预取
+- ✅ Prefetch On Start
+- ✅ 起動時プリロード
+- ✅ 시작 시 프리로드
+
+### v68.10 发光效果 | Glow Effect | グローエフェクト | 글로우 이펙트
+- ✅ 发光效果
+- ✅ Glow Effect
+- ✅ グローエフェクト
+- ✅ 글로우 이펙트
+
+### v68.11 自定义粗细3 | Weight Custom3 | 太さカスタム3 | 두께 사용자 정의3
+- ✅ 自定义粗细3
+- ✅ Weight Custom3
+- ✅ 太さカスタム3
+- ✅ 두께 사용자 정의3
+
+### v68.12 色彩泛光 | Color Bloom | ブルーム | 블룸
+- ✅ 色彩泛光
+- ✅ Color Bloom
+- ✅ ブルーム
+- ✅ 블룸
+
+### v68.13 动态范围 | Dynamic Range | ダイナミックレンジ | 다이나믹 레인지
+- ✅ 动态范围
+- ✅ Dynamic Range
+- ✅ ダイナミックレンジ
+- ✅ 다이나믹 레인지
+
+### v68.14 背景阴影偏移2 | Bg Shadow Offset2 | 背景シャドウオフセット2 | 배경 그림자 오프셋2
+- ✅ 背景阴影偏移2
+- ✅ Bg Shadow Offset2
+- ✅ 背景シャドウオフセット2
+- ✅ 배경 그림자 오프셋2
+
+### v68.15 投射字幕发光 | Cast Subtitle Glow | キャスト字幕グロー | 캐스트 자막 글로우
+- ✅ 投射字幕发光
+- ✅ Cast Subtitle Glow
+- ✅ キャスト字幕グロー
+- ✅ 캐스트 자막 글로우
+
+### v69.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v69.1-v69.15 功能列表
+- ✅ Auto Skip Filler2, Font Weight Final, Color Final, Volume Final, Send Final, Cast Final, Gesture Final, Filter Final, Cache Final, Progress Final, Font Final, Color Final2, Volume Final2, Bg Final, Cast Subtitle Final
+
+### v69.1 自动跳离题2 | Auto Skip Filler2 | 自動フィラースキップ2 | 자동 필러 건너뛰기2
+- ✅ 自动跳离题2
+- ✅ Auto Skip Filler2
+- ✅ 自動フィラースキップ2
+- ✅ 자동 필러 건너뛰기2
+
+### v69.2 字体粗细最终 | Font Weight Final | フォント太さ最終 | 글꼴 두께 최종
+- ✅ 字体粗细最终
+- ✅ Font Weight Final
+- ✅ フォント太さ最終
+- ✅ 글꼴 두께 최종
+
+### v69.3 色彩最终 | Color Final | 色最終 | 색상 최종
+- ✅ 色彩最终
+- ✅ Color Final
+- ✅ 色最終
+- ✅ 색상 최종
+
+### v69.4 音量最终 | Volume Final | 音量最終 | 볼륨 최종
+- ✅ 音量最终
+- ✅ Volume Final
+- ✅ 音量最終
+- ✅ 볼륨 최종
+
+### v69.5 发送最终 | Send Final | 送信最終 | 전송 최종
+- ✅ 发送最终
+- ✅ Send Final
+- ✅ 送信最終
+- ✅ 전송 최종
+
+### v69.6 投射最终 | Cast Final | キャスト最終 | 캐스트 최종
+- ✅ 投射最终
+- ✅ Cast Final
+- ✅ キャスト最終
+- ✅ 캐스트 최종
+
+### v69.7 手势最终 | Gesture Final | ジェスチャー最終 | 제스처 최종
+- ✅ 手势最终
+- ✅ Gesture Final
+- ✅ ジェスチャー最終
+- ✅ 제스처 최종
+
+### v69.8 过滤最终 | Filter Final | フィルター最終 | 필터 최종
+- ✅ 过滤最终
+- ✅ Filter Final
+- ✅ フィルター最終
+- ✅ 필터 최종
+
+### v69.9 缓存最终 | Cache Final | キャッシュ最終 | 캐시 최종
+- ✅ 缓存最终
+- ✅ Cache Final
+- ✅ キャッシュ最終
+- ✅ 캐시 최종
+
+### v69.10 进度条最终 | Progress Final | プログレス最終 | 진행 바 최종
+- ✅ 进度条最终
+- ✅ Progress Final
+- ✅ プログレス最終
+- ✅ 진행 바 최종
+
+### v69.11 字体最终 | Font Final | フォント最終 | 글꼴 최종
+- ✅ 字体最终
+- ✅ Font Final
+- ✅ フォント最終
+- ✅ 글꼴 최종
+
+### v69.12 色彩最终2 | Color Final2 | 色最終2 | 색상 최종2
+- ✅ 色彩最终2
+- ✅ Color Final2
+- ✅ 色最終2
+- ✅ 색상 최종2
+
+### v69.13 音量最终2 | Volume Final2 | 音量最終2 | 볼륨 최종2
+- ✅ 音量最终2
+- ✅ Volume Final2
+- ✅ 音量最終2
+- ✅ 볼륨 최종2
+
+### v69.14 背景最终 | Bg Final | 背景最終 | 배경 최종
+- ✅ 背景最终
+- ✅ Bg Final
+- ✅ 背景最終
+- ✅ 배경 최종
+
+### v69.15 投射字幕最终 | Cast Subtitle Final | キャスト字幕最終 | 캐스트 자막 최종
+- ✅ 投射字幕最终
+- ✅ Cast Subtitle Final
+- ✅ キャスト字幕最終
+- ✅ 캐스트 자막 최종
+
+### v70.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v70.1-v70.15 功能列表
+- ✅ Playback Final, Font Final2, Color Final3, Volume Final3, Send Final2, Cast Final2, Gesture Final2, Filter Final2, Cache Final2, Progress Final2, Font Final3, Color Final4, Volume Final4, Bg Final2, Cast Subtitle Final2
+
+### v70.1 播放最终 | Playback Final | 再生最終 | 재생 최종
+- ✅ 播放最终
+- ✅ Playback Final
+- ✅ 再生最終
+- ✅ 재생 최종
+
+### v70.2 字体最终2 | Font Final2 | フォント最終2 | 글꼴 최종2
+- ✅ 字体最终2
+- ✅ Font Final2
+- ✅ フォント最終2
+- ✅ 글꼴 최종2
+
+### v70.3 色彩最终3 | Color Final3 | 色最終3 | 색상 최종3
+- ✅ 色彩最终3
+- ✅ Color Final3
+- ✅ 色最終3
+- ✅ 색상 최종3
+
+### v70.4 音量最终3 | Volume Final3 | 音量最終3 | 볼륨 최종3
+- ✅ 音量最终3
+- ✅ Volume Final3
+- ✅ 音量最終3
+- ✅ 볼륨 최종3
+
+### v70.5 发送最终2 | Send Final2 | 送信最終2 | 전송 최종2
+- ✅ 发送最终2
+- ✅ Send Final2
+- ✅ 送信最終2
+- ✅ 전송 최종2
+
+### v70.6 投射最终2 | Cast Final2 | キャスト最終2 | 캐스트 최종2
+- ✅ 投射最终2
+- ✅ Cast Final2
+- ✅ キャスト最終2
+- ✅ 캐스트 최종2
+
+### v70.7 手势最终2 | Gesture Final2 | ジェスチャー最終2 | 제스처 최종2
+- ✅ 手势最终2
+- ✅ Gesture Final2
+- ✅ ジェスチャー最終2
+- ✅ 제스처 최종2
+
+### v70.8 过滤最终2 | Filter Final2 | フィルター最終2 | 필터 최종2
+- ✅ 过滤最终2
+- ✅ Filter Final2
+- ✅ フィルター最終2
+- ✅ 필터 최종2
+
+### v70.9 缓存最终2 | Cache Final2 | キャッシュ最終2 | 캐시 최종2
+- ✅ 缓存最终2
+- ✅ Cache Final2
+- ✅ キャッシュ最終2
+- ✅ 캐시 최종2
+
+### v70.10 进度条最终2 | Progress Final2 | プログレス最終2 | 진행 바 최종2
+- ✅ 进度条最终2
+- ✅ Progress Final2
+- ✅ プログレス最終2
+- ✅ 진행 바 최종2
+
+### v70.11 字体最终3 | Font Final3 | フォント最終3 | 글꼴 최종3
+- ✅ 字体最终3
+- ✅ Font Final3
+- ✅ フォント最終3
+- ✅ 글꼴 최종3
+
+### v70.12 色彩最终4 | Color Final4 | 色最終4 | 색상 최종4
+- ✅ 色彩最终4
+- ✅ Color Final4
+- ✅ 色最終4
+- ✅ 색상 최종4
+
+### v70.13 音量最终4 | Volume Final4 | 音量最終4 | 볼륨 최종4
+- ✅ 音量最终4
+- ✅ Volume Final4
+- ✅ 音量最終4
+- ✅ 볼륨 최종4
+
+### v70.14 背景最终2 | Bg Final2 | 背景最終2 | 배경 최종2
+- ✅ 背景最终2
+- ✅ Bg Final2
+- ✅ 背景最終2
+- ✅ 배경 최종2
+
+### v70.15 投射字幕最终2 | Cast Subtitle Final2 | キャスト字幕最終2 | 캐스트 자막 최종2
+- ✅ 投射字幕最终2
+- ✅ Cast Subtitle Final2
+- ✅ キャスト字幕最終2
+- ✅ 캐스트 자막 최종2
 
 ### v55.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
 ### v55.1-v55.15 功能列表
@@ -1911,6 +3322,1417 @@ This project is based on open-source software. All rights belong to the original
 - ✅ Cast Subtitle Lang
 - ✅ キャスト字幕言語
 - ✅ 캐스트 자막 언어
+
+
+### v56.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v56.1-v56.15 功能列表
+- ✅ Skip Silence, Font Weight Auto, Color Reduction, Stereo Widen, Send Priority, Cast Auto Rotate, Long Press Speed, Filter Score, Cache Compress, Chapters Color, Letter Spacing2, Saturation Curve, Volume Pre Amp, Gradient Opacity, Cast Subtitle Style
+
+### v56.1 跳过静音 | Skip Silence | 無音スキップ | 무음 건너뛰기
+- ✅ 跳过静音
+- ✅ Skip Silence
+- ✅ 無音スキップ
+- ✅ 무음 건너뛰기
+
+### v56.2 字体粗细自动 | Font Weight Auto | フォント太さ自動 | 글꼴 두께 자동
+- ✅ 字体粗细自动
+- ✅ Font Weight Auto
+- ✅ フォント太さ自動
+- ✅ 글꼴 두께 자동
+
+### v56.3 色彩降低 | Color Reduction | 色削減 | 색상 감소
+- ✅ 色彩降低
+- ✅ Color Reduction
+- ✅ 色削減
+- ✅ 색상 감소
+
+### v56.4 立体声加宽 | Stereo Widen | ステレオワイド | 스테레오 확장
+- ✅ 立体声加宽
+- ✅ Stereo Widen
+- ✅ ステレオワイド
+- ✅ 스테레오 확장
+
+### v56.5 发送优先级 | Send Priority | 送信優先度 | 전송 우선순위
+- ✅ 发送优先级
+- ✅ Send Priority
+- ✅ 送信優先度
+- ✅ 전송 우선순위
+
+### v56.6 投射自动旋转 | Cast Auto Rotate | キャスト自動回転 | 캐스트 자동 회전
+- ✅ 投射自动旋转
+- ✅ Cast Auto Rotate
+- ✅ キャスト自動回転
+- ✅ 캐스트 자동 회전
+
+### v56.7 长按速度 | Long Press Speed | 長押し速度 | 길게 누르기 속도
+- ✅ 长按速度
+- ✅ Long Press Speed
+- ✅ 長押し速度
+- ✅ 길게 누르기 속도
+
+### v56.8 弹幕评分过滤 | Filter Score | フィルタースコア | 필터 점수
+- ✅ 弹幕评分过滤
+- ✅ Filter Score
+- ✅ フィルタースコア
+- ✅ 필터 점수
+
+### v56.9 缓存压缩 | Cache Compress | キャッシュ圧縮 | 캐시 압축
+- ✅ 缓存压缩
+- ✅ Cache Compress
+- ✅ キャッシュ圧縮
+- ✅ 캐시 압축
+
+### v56.10 章节颜色 | Chapters Color | チャプター色 | 챕터 색상
+- ✅ 章节颜色
+- ✅ Chapters Color
+- ✅ チャプター色
+- ✅ 챕터 색상
+
+### v56.11 字母间距2 | Letter Spacing2 | 文字間隔2 | 글자 간격2
+- ✅ 字母间距2
+- ✅ Letter Spacing2
+- ✅ 文字間隔2
+- ✅ 글자 간격2
+
+### v56.12 饱和度曲线 | Saturation Curve | 彩度カーブ | 채도 커브
+- ✅ 饱和度曲线
+- ✅ Saturation Curve
+- ✅ 彩度カーブ
+- ✅ 채도 커브
+
+### v56.13 音量前级放大 | Volume Pre Amp | 音量プリアンプ | 볼륨 프리앰프
+- ✅ 音量前级放大
+- ✅ Volume Pre Amp
+- ✅ 音量プリアンプ
+- ✅ 볼륨 프리앰프
+
+### v56.14 渐变透明度 | Gradient Opacity | グラデーション透明度 | 그라데이션 투명도
+- ✅ 渐变透明度
+- ✅ Gradient Opacity
+- ✅ グラデーション透明度
+- ✅ 그라데이션 투명도
+
+### v56.15 投射字幕样式 | Cast Subtitle Style | キャスト字幕スタイル | 캐스트 자막 스타일
+- ✅ 投射字幕样式
+- ✅ Cast Subtitle Style
+- ✅ キャスト字幕スタイル
+- ✅ 캐스트 자막 스타일
+
+### v57.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v57.1-v57.15 功能列表
+- ✅ Auto Skip Ads, Font Anti Alias, Color Vibrance, Volume Ducking, Send Repeat, Cast Auto Fullscreen, Double Tap Action2, Filter Keywords, Cache Encrypt, Buffer Color, Font Background2, Highlight Roll, Max Boost, Bg Shadow Color2, Cast Video Bitrate
+
+### v57.1 自动跳广告 | Auto Skip Ads | 自動広告スキップ | 자동 광고 건너뛰기
+- ✅ 自动跳广告
+- ✅ Auto Skip Ads
+- ✅ 自動広告スキップ
+- ✅ 자동 광고 건너뛰기
+
+### v57.2 字体抗锯齿 | Font Anti Alias | フォントアンチエイリアス | 글꼴 안티앨리어싱
+- ✅ 字体抗锯齿
+- ✅ Font Anti Alias
+- ✅ フォントアンチエイリアス
+- ✅ 글꼴 안티앨리어싱
+
+### v57.3 色彩鲜艳度 | Color Vibrance | 色彩ビビッドネス | 색상 선명도
+- ✅ 色彩鲜艳度
+- ✅ Color Vibrance
+- ✅ 色彩ビビッドネス
+- ✅ 색상 선명도
+
+### v57.4 音量闪避 | Volume Ducking | 音量ダッキング | 볼륨 더킹
+- ✅ 音量闪避
+- ✅ Volume Ducking
+- ✅ 音量ダッキング
+- ✅ 볼륨 더킹
+
+### v57.5 发送重复 | Send Repeat | 送信繰り返し | 전송 반복
+- ✅ 发送重复
+- ✅ Send Repeat
+- ✅ 送信繰り返し
+- ✅ 전송 반복
+
+### v57.6 投射自动全屏 | Cast Auto Fullscreen | キャスト自動フルスクリーン | 캐스트 자동 전체화면
+- ✅ 投射自动全屏
+- ✅ Cast Auto Fullscreen
+- ✅ キャスト自動フルスクリーン
+- ✅ 캐스트 자동 전체화면
+
+### v57.7 双击动作2 | Double Tap Action2 | ダブルタップアクション2 | 더블 탭 동작2
+- ✅ 双击动作2
+- ✅ Double Tap Action2
+- ✅ ダブルタップアクション2
+- ✅ 더블 탭 동작2
+
+### v57.8 关键词过滤 | Filter Keywords | キーワードフィルター | 키워드 필터
+- ✅ 关键词过滤
+- ✅ Filter Keywords
+- ✅ キーワードフィルター
+- ✅ 키워드 필터
+
+### v57.9 缓存加密 | Cache Encrypt | キャッシュ暗号化 | 캐시 암호화
+- ✅ 缓存加密
+- ✅ Cache Encrypt
+- ✅ キャッシュ暗号化
+- ✅ 캐시 암호화
+
+### v57.10 缓冲颜色 | Buffer Color | バッファ色 | 버퍼 색상
+- ✅ 缓冲颜色
+- ✅ Buffer Color
+- ✅ バッファ色
+- ✅ 버퍼 색상
+
+### v57.11 字体背景2 | Font Background2 | フォント背景2 | 글꼴 배경2
+- ✅ 字体背景2
+- ✅ Font Background2
+- ✅ フォント背景2
+- ✅ 글꼴 배경2
+
+### v57.12 高光滚屏 | Highlight Roll | ハイライトロール | 하이라이트 롤
+- ✅ 高光滚屏
+- ✅ Highlight Roll
+- ✅ ハイライトロール
+- ✅ 하이라이트 롤
+
+### v57.13 最大增强 | Max Boost | 最大ブースト | 최대 부스트
+- ✅ 最大增强
+- ✅ Max Boost
+- ✅ 最大ブースト
+- ✅ 최대 부스트
+
+### v57.14 背景阴影颜色2 | Bg Shadow Color2 | 背景シャドウ色2 | 배경 그림자 색상2
+- ✅ 背景阴影颜色2
+- ✅ Bg Shadow Color2
+- ✅ 背景シャドウ色2
+- ✅ 배경 그림자 색상2
+
+### v57.15 投射视频码率 | Cast Video Bitrate | キャスト動画ビットレート | 캐스트 비디오 비트레이트
+- ✅ 投射视频码率
+- ✅ Cast Video Bitrate
+- ✅ キャスト動画ビットレート
+- ✅ 캐스트 비디오 비트레이트
+
+### v58.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v58.1-v58.15 功能列表
+- ✅ Auto Speed, Font Blend Mode, Color Lift, Pan Control, Send Font Size2, Cast Auto Resolution, Swipe Action2, Filter Regex2, Disk Policy, Thumb Color, Shadow Color2, Midtone Gamma, Volume EQ, Bg Border Width, Cast Audio Delay
+
+### v58.1 自动速度 | Auto Speed | 自動速度 | 자동 속도
+- ✅ 自动速度
+- ✅ Auto Speed
+- ✅ 自動速度
+- ✅ 자동 속도
+
+### v58.2 字体混合模式 | Font Blend Mode | フォントブレンドモード | 글꼴 블렌드 모드
+- ✅ 字体混合模式
+- ✅ Font Blend Mode
+- ✅ フォントブレンドモード
+- ✅ 글꼴 블렌드 모드
+
+### v58.3 色彩提升 | Color Lift | リフト | 리프트
+- ✅ 色彩提升
+- ✅ Color Lift
+- ✅ リフト
+- ✅ 리프트
+
+### v58.4 声像控制 | Pan Control | パンコントロール | 팬 컨트롤
+- ✅ 声像控制
+- ✅ Pan Control
+- ✅ パンコントロール
+- ✅ 팬 컨트롤
+
+### v58.5 发送字号2 | Send Font Size2 | 送信フォントサイズ2 | 전송 글꼴 크기2
+- ✅ 发送字号2
+- ✅ Send Font Size2
+- ✅ 送信フォントサイズ2
+- ✅ 전송 글꼴 크기2
+
+### v58.6 投射自动分辨率 | Cast Auto Resolution | キャスト自動解像度 | 캐스트 자동 해상도
+- ✅ 投射自动分辨率
+- ✅ Cast Auto Resolution
+- ✅ キャスト自動解像度
+- ✅ 캐스트 자동 해상도
+
+### v58.7 滑动动作2 | Swipe Action2 | スワイプアクション2 | 스와이프 동작2
+- ✅ 滑动动作2
+- ✅ Swipe Action2
+- ✅ スワイプアクション2
+- ✅ 스와이프 동작2
+
+### v58.8 正则过滤2 | Filter Regex2 | 正規表現フィルター2 | 정규식 필터2
+- ✅ 正则过滤2
+- ✅ Filter Regex2
+- ✅ 正規表現フィルター2
+- ✅ 정규식 필터2
+
+### v58.9 磁盘策略 | Disk Policy | ディスクポリシー | 디스크 정책
+- ✅ 磁盘策略
+- ✅ Disk Policy
+- ✅ ディスクポリシー
+- ✅ 디스크 정책
+
+### v58.10 滑块颜色 | Thumb Color | サム色 | 썸 색상
+- ✅ 滑块颜色
+- ✅ Thumb Color
+- ✅ サム色
+- ✅ 썸 색상
+
+### v58.11 阴影颜色2 | Shadow Color2 | シャドウ色2 | 그림자 색상2
+- ✅ 阴影颜色2
+- ✅ Shadow Color2
+- ✅ シャドウ色2
+- ✅ 그림자 색상2
+
+### v58.12 中间调伽马 | Midtone Gamma | ミッドトーンガンマ | 미드톤 감마
+- ✅ 中间调伽马
+- ✅ Midtone Gamma
+- ✅ ミッドトーンガンマ
+- ✅ 미드톤 감마
+
+### v58.13 音量均衡器 | Volume EQ | 音量イコライザー | 볼륨 EQ
+- ✅ 音量均衡器
+- ✅ Volume EQ
+- ✅ 音量イコライザー
+- ✅ 볼륨 EQ
+
+### v58.14 背景边框宽度 | Bg Border Width | 背景ボーダー幅 | 배경 테두리 너비
+- ✅ 背景边框宽度
+- ✅ Bg Border Width
+- ✅ 背景ボーダー幅
+- ✅ 배경 테두리 너비
+
+### v58.15 投射音频延迟 | Cast Audio Delay | キャスト音声遅延 | 캐스트 오디오 지연
+- ✅ 投射音频延迟
+- ✅ Cast Audio Delay
+- ✅ キャスト音声遅延
+- ✅ 캐스트 오디오 지연
+
+### v59.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v59.1-v59.15 功能列表
+- ✅ Skip Blank, Outline Color, Color Gain, Volume Reverb, Send Bg Color, Cast Auto Connect, Long Press Action2, Filter Lang, Memory Policy, Track Color, Stroke Color2, Shadow Gamma, Volume Crossfeed, Bg Gradient Color2, Cast Video Quality
+
+### v59.1 跳过空白 | Skip Blank | ブランクスキップ | 빈 화면 건너뛰기
+- ✅ 跳过空白
+- ✅ Skip Blank
+- ✅ ブランクスキップ
+- ✅ 빈 화면 건너뛰기
+
+### v59.2 描边颜色 | Outline Color | アウトライン色 | 아웃라인 색상
+- ✅ 描边颜色
+- ✅ Outline Color
+- ✅ アウトライン色
+- ✅ 아웃라인 색상
+
+### v59.3 色彩增益 | Color Gain | ゲイン | 게인
+- ✅ 色彩增益
+- ✅ Color Gain
+- ✅ ゲイン
+- ✅ 게인
+
+### v59.4 音量混响 | Volume Reverb | リバーブ | 리버브
+- ✅ 音量混响
+- ✅ Volume Reverb
+- ✅ リバーブ
+- ✅ 리버브
+
+### v59.5 发送背景颜色 | Send Bg Color | 送信背景色 | 전송 배경 색상
+- ✅ 发送背景颜色
+- ✅ Send Bg Color
+- ✅ 送信背景色
+- ✅ 전송 배경 색상
+
+### v59.6 投射自动连接 | Cast Auto Connect | キャスト自動接続 | 캐스트 자동 연결
+- ✅ 投射自动连接
+- ✅ Cast Auto Connect
+- ✅ キャスト自動接続
+- ✅ 캐스트 자동 연결
+
+### v59.7 长按动作2 | Long Press Action2 | 長押しアクション2 | 길게 누르기 동작2
+- ✅ 长按动作2
+- ✅ Long Press Action2
+- ✅ 長押しアクション2
+- ✅ 길게 누르기 동작2
+
+### v59.8 语言过滤 | Filter Lang | 言語フィルター | 언어 필터
+- ✅ 语言过滤
+- ✅ Filter Lang
+- ✅ 言語フィルター
+- ✅ 언어 필터
+
+### v59.9 内存策略 | Memory Policy | メモリポリシー | 메모리 정책
+- ✅ 内存策略
+- ✅ Memory Policy
+- ✅ メモリポリシー
+- ✅ 메모리 정책
+
+### v59.10 轨道颜色 | Track Color | トラック色 | 트랙 색상
+- ✅ 轨道颜色
+- ✅ Track Color
+- ✅ トラック色
+- ✅ 트랙 색상
+
+### v59.11 描边颜色2 | Stroke Color2 | ストローク色2 | 스트로크 색상2
+- ✅ 描边颜色2
+- ✅ Stroke Color2
+- ✅ ストローク色2
+- ✅ 스트로크 색상2
+
+### v59.12 暗部伽马 | Shadow Gamma | シャドウガンマ | 그림자 감마
+- ✅ 暗部伽马
+- ✅ Shadow Gamma
+- ✅ シャドウガンマ
+- ✅ 그림자 감마
+
+### v59.13 交叉馈送 | Volume Crossfeed | クロスフィード | 크로스피드
+- ✅ 交叉馈送
+- ✅ Volume Crossfeed
+- ✅ クロスフィード
+- ✅ 크로스피드
+
+### v59.14 背景渐变颜色2 | Bg Gradient Color2 | 背景グラデーション色2 | 배경 그라데이션 색상2
+- ✅ 背景渐变颜色2
+- ✅ Bg Gradient Color2
+- ✅ 背景グラデーション色2
+- ✅ 배경 그라데이션 색상2
+
+### v59.15 投射视频质量 | Cast Video Quality | キャスト動画品質 | 캐스트 비디오 품질
+- ✅ 投射视频质量
+- ✅ Cast Video Quality
+- ✅ キャスト動画品質
+- ✅ 캐스트 비디오 품질
+
+### v60.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v60.1-v60.15 功能列表
+- ✅ Smart Buffer, Font Weight2, Highlight Gamma, Volume Delay, Send Border Color, Cast Auto Adapt, Triple Tap Action, Filter Length2, Prefetch On Charge, Scrub Preview, Font Bg Color2, Midtone Saturation, Loudness Target, Bg Opacity2, Cast Subtitle Size
+
+### v60.1 智能缓冲 | Smart Buffer | スマートバッファ | 스마트 버퍼
+- ✅ 智能缓冲
+- ✅ Smart Buffer
+- ✅ スマートバッファ
+- ✅ 스마트 버퍼
+
+### v60.2 字体粗细2 | Font Weight2 | フォント太さ2 | 글꼴 두께2
+- ✅ 字体粗细2
+- ✅ Font Weight2
+- ✅ フォント太さ2
+- ✅ 글꼴 두께2
+
+### v60.3 高光伽马 | Highlight Gamma | ハイライトガンマ | 하이라이트 감마
+- ✅ 高光伽马
+- ✅ Highlight Gamma
+- ✅ ハイライトガンマ
+- ✅ 하이라이트 감마
+
+### v60.4 音量延迟 | Volume Delay | 音量遅延 | 볼륨 지연
+- ✅ 音量延迟
+- ✅ Volume Delay
+- ✅ 音量遅延
+- ✅ 볼륨 지연
+
+### v60.5 发送边框颜色 | Send Border Color | 送信ボーダー色 | 전송 테두리 색상
+- ✅ 发送边框颜色
+- ✅ Send Border Color
+- ✅ 送信ボーダー色
+- ✅ 전송 테두리 색상
+
+### v60.6 投射自适应 | Cast Auto Adapt | キャスト自動適応 | 캐스트 자동 적응
+- ✅ 投射自适应
+- ✅ Cast Auto Adapt
+- ✅ キャスト自動適応
+- ✅ 캐스트 자동 적응
+
+### v60.7 三击动作 | Triple Tap Action | トリプルタップアクション | 트리플 탭 동작
+- ✅ 三击动作
+- ✅ Triple Tap Action
+- ✅ トリプルタップアクション
+- ✅ 트리플 탭 동작
+
+### v60.8 长度过滤2 | Filter Length2 | フィルター長さ2 | 필터 길이2
+- ✅ 长度过滤2
+- ✅ Filter Length2
+- ✅ フィルター長さ2
+- ✅ 필터 길이2
+
+### v60.9 充电时预取 | Prefetch On Charge | 充電時プリロード | 충전 시 프리로드
+- ✅ 充电时预取
+- ✅ Prefetch On Charge
+- ✅ 充電時プリロード
+- ✅ 충전 시 프리로드
+
+### v60.10 滑动预览 | Scrub Preview | スクラブプレビュー | 스크럽 미리보기
+- ✅ 滑动预览
+- ✅ Scrub Preview
+- ✅ スクラブプレビュー
+- ✅ 스크럽 미리보기
+
+### v60.11 字体背景颜色2 | Font Bg Color2 | フォント背景色2 | 글꼴 배경 색상2
+- ✅ 字体背景颜色2
+- ✅ Font Bg Color2
+- ✅ フォント背景色2
+- ✅ 글꼴 배경 색상2
+
+### v60.12 中间调饱和度 | Midtone Saturation | ミッドトーン彩度 | 미드톤 채도
+- ✅ 中间调饱和度
+- ✅ Midtone Saturation
+- ✅ ミッドトーン彩度
+- ✅ 미드톤 채도
+
+### v60.13 响度目标 | Loudness Target | ラウドネス目標 | 라우드니스 목표
+- ✅ 响度目标
+- ✅ Loudness Target
+- ✅ ラウドネス目標
+- ✅ 라우드니스 목표
+
+### v60.14 背景透明度2 | Bg Opacity2 | 背景透明度2 | 배경 투명도2
+- ✅ 背景透明度2
+- ✅ Bg Opacity2
+- ✅ 背景透明度2
+- ✅ 배경 투명도2
+
+### v60.15 投射字幕大小 | Cast Subtitle Size | キャスト字幕サイズ | 캐스트 자막 크기
+- ✅ 投射字幕大小
+- ✅ Cast Subtitle Size
+- ✅ キャスト字幕サイズ
+- ✅ 캐스트 자막 크기
+
+### v61.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v61.1-v61.15 功能列表
+- ✅ Auto Quality Switch, Font Glow Color2, Black Gamma, Compressor Ratio, Send Shadow Size, Cast Audio Enhance, Edge Action, Filter Sender, Clear On Low, Progress Animation, Highlight Color, White Gamma, Compressor Attack, Bg Border Color2, Cast Subtitle Color
+
+### v61.1 自动画质切换 | Auto Quality Switch | 自動画質切換 | 자동 화질 전환
+- ✅ 自动画质切换
+- ✅ Auto Quality Switch
+- ✅ 自動画質切換
+- ✅ 자동 화질 전환
+
+### v61.2 字体发光颜色2 | Font Glow Color2 | フォントグロー色2 | 글꼴 글로우 색상2
+- ✅ 字体发光颜色2
+- ✅ Font Glow Color2
+- ✅ フォントグロー色2
+- ✅ 글꼴 글로우 색상2
+
+### v61.3 黑色伽马 | Black Gamma | ブラックガンマ | 블랙 감마
+- ✅ 黑色伽马
+- ✅ Black Gamma
+- ✅ ブラックガンマ
+- ✅ 블랙 감마
+
+### v61.4 压缩比 | Compressor Ratio | コンプレッサー比率 | 컴프레서 비율
+- ✅ 压缩比
+- ✅ Compressor Ratio
+- ✅ コンプレッサー比率
+- ✅ 컴프레서 비율
+
+### v61.5 发送阴影大小 | Send Shadow Size | 送信シャドウサイズ | 전송 그림자 크기
+- ✅ 发送阴影大小
+- ✅ Send Shadow Size
+- ✅ 送信シャドウサイズ
+- ✅ 전송 그림자 크기
+
+### v61.6 投射音频增强 | Cast Audio Enhance | キャスト音声強化 | 캐스트 오디오 강화
+- ✅ 投射音频增强
+- ✅ Cast Audio Enhance
+- ✅ キャスト音声強化
+- ✅ 캐스트 오디오 강화
+
+### v61.7 边缘动作 | Edge Action | エッジアクション | 엣지 동작
+- ✅ 边缘动作
+- ✅ Edge Action
+- ✅ エッジアクション
+- ✅ 엣지 동작
+
+### v61.8 发送者过滤 | Filter Sender | 送信者フィルター | 발신자 필터
+- ✅ 发送者过滤
+- ✅ Filter Sender
+- ✅ 送信者フィルター
+- ✅ 발신자 필터
+
+### v61.9 低空间时清理 | Clear On Low | 低容量時クリア | 저용량 시 정리
+- ✅ 低空间时清理
+- ✅ Clear On Low
+- ✅ 低容量時クリア
+- ✅ 저용량 시 정리
+
+### v61.10 进度条动画 | Progress Animation | プログレスアニメーション | 진행 바 애니메이션
+- ✅ 进度条动画
+- ✅ Progress Animation
+- ✅ プログレスアニメーション
+- ✅ 진행 바 애니메이션
+
+### v61.11 高亮颜色 | Highlight Color | ハイライト色 | 하이라이트 색상
+- ✅ 高亮颜色
+- ✅ Highlight Color
+- ✅ ハイライト色
+- ✅ 하이라이트 색상
+
+### v61.12 白色伽马 | White Gamma | ホワイトガンマ | 화이트 감마
+- ✅ 白色伽马
+- ✅ White Gamma
+- ✅ ホワイトガンマ
+- ✅ 화이트 감마
+
+### v61.13 压缩起始 | Compressor Attack | アタック | 어택
+- ✅ 压缩起始
+- ✅ Compressor Attack
+- ✅ アタック
+- ✅ 어택
+
+### v61.14 背景边框颜色2 | Bg Border Color2 | 背景ボーダー色2 | 배경 테두리 색상2
+- ✅ 背景边框颜色2
+- ✅ Bg Border Color2
+- ✅ 背景ボーダー色2
+- ✅ 배경 테두리 색상2
+
+### v61.15 投射字幕颜色 | Cast Subtitle Color | キャスト字幕色 | 캐스트 자막 색상
+- ✅ 投射字幕颜色
+- ✅ Cast Subtitle Color
+- ✅ キャスト字幕色
+- ✅ 캐스트 자막 색상
+
+### v62.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v62.1-v62.15 功能列表
+- ✅ Auto Bitrate, Font Weight3, Gamma Curve, Compressor Release, Send Outline Size, Cast Video Enhance, Custom Action, Filter Time Range, Read Ahead, Sensitivity, Glow Size2, Temperature Curve, Limiter Threshold, Bg Shadow Blur2, Cast Subtitle Bg
+
+### v62.1 自动码率 | Auto Bitrate | 自動ビットレート | 자동 비트레이트
+- ✅ 自动码率
+- ✅ Auto Bitrate
+- ✅ 自動ビットレート
+- ✅ 자동 비트레이트
+
+### v62.2 字体粗细3 | Font Weight3 | フォント太さ3 | 글꼴 두께3
+- ✅ 字体粗细3
+- ✅ Font Weight3
+- ✅ フォント太さ3
+- ✅ 글꼴 두께3
+
+### v62.3 伽马曲线 | Gamma Curve | ガンマカーブ | 감마 커브
+- ✅ 伽马曲线
+- ✅ Gamma Curve
+- ✅ ガンマカーブ
+- ✅ 감마 커브
+
+### v62.4 压缩释放 | Compressor Release | リリース | 릴리즈
+- ✅ 压缩释放
+- ✅ Compressor Release
+- ✅ リリース
+- ✅ 릴리즈
+
+### v62.5 发送描边大小 | Send Outline Size | 送信アウトラインサイズ | 전송 아웃라인 크기
+- ✅ 发送描边大小
+- ✅ Send Outline Size
+- ✅ 送信アウトラインサイズ
+- ✅ 전송 아웃라인 크기
+
+### v62.6 投射视频增强 | Cast Video Enhance | キャスト動画強化 | 캐스트 비디오 강화
+- ✅ 投射视频增强
+- ✅ Cast Video Enhance
+- ✅ キャスト動画強化
+- ✅ 캐스트 비디오 강화
+
+### v62.7 自定义动作 | Custom Action | カスタムアクション | 사용자 정의 동작
+- ✅ 自定义动作
+- ✅ Custom Action
+- ✅ カスタムアクション
+- ✅ 사용자 정의 동작
+
+### v62.8 时间范围过滤 | Filter Time Range | 時間範囲フィルター | 시간 범위 필터
+- ✅ 时间范围过滤
+- ✅ Filter Time Range
+- ✅ 時間範囲フィルター
+- ✅ 시간 범위 필터
+
+### v62.9 预读取 | Read Ahead | リードアヘッド | 리드 어헤드
+- ✅ 预读取
+- ✅ Read Ahead
+- ✅ リードアヘッド
+- ✅ 리드 어헤드
+
+### v62.10 灵敏度 | Sensitivity | 感度 | 감도
+- ✅ 灵敏度
+- ✅ Sensitivity
+- ✅ 感度
+- ✅ 감도
+
+### v62.11 发光大小2 | Glow Size2 | グローサイズ2 | 글로우 크기2
+- ✅ 发光大小2
+- ✅ Glow Size2
+- ✅ グローサイズ2
+- ✅ 글로우 크기2
+
+### v62.12 色温曲线 | Temperature Curve | 色温度カーブ | 색온도 커브
+- ✅ 色温曲线
+- ✅ Temperature Curve
+- ✅ 色温度カーブ
+- ✅ 색온도 커브
+
+### v62.13 限幅阈值 | Limiter Threshold | リミッター閾値 | 리미터 임계값
+- ✅ 限幅阈值
+- ✅ Limiter Threshold
+- ✅ リミッター閾値
+- ✅ 리미터 임계값
+
+### v62.14 背景阴影模糊2 | Bg Shadow Blur2 | 背景シャドウぼかし2 | 배경 그림자 블러2
+- ✅ 背景阴影模糊2
+- ✅ Bg Shadow Blur2
+- ✅ 背景シャドウぼかし2
+- ✅ 배경 그림자 블러2
+
+### v62.15 投射字幕背景 | Cast Subtitle Bg | キャスト字幕背景 | 캐스트 자막 배경
+- ✅ 投射字幕背景
+- ✅ Cast Subtitle Bg
+- ✅ キャスト字幕背景
+- ✅ 캐스트 자막 배경
+
+### v63.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v63.1-v63.15 功能列表
+- ✅ Auto Chapter, Line Spacing2, Contrast Curve, Normalizer2, Send Bg Blur, Cast Auto Subtitle, Pinch Action, Filter Score2, Wakeup On Start, Tick Color, Weight Custom2, Brightness Curve, Bass Lpf, Bg Shadow Offset, Cast Subtitle Outline
+
+### v63.1 自动章节 | Auto Chapter | 自動チャプター | 자동 챕터
+- ✅ 自动章节
+- ✅ Auto Chapter
+- ✅ 自動チャプター
+- ✅ 자동 챕터
+
+### v63.2 行间距2 | Line Spacing2 | 行間2 | 줄 간격2
+- ✅ 行间距2
+- ✅ Line Spacing2
+- ✅ 行間2
+- ✅ 줄 간격2
+
+### v63.3 对比度曲线 | Contrast Curve | コントラストカーブ | 대비 커브
+- ✅ 对比度曲线
+- ✅ Contrast Curve
+- ✅ コントラストカーブ
+- ✅ 대비 커브
+
+### v63.4 标准化器2 | Normalizer2 | ノーマライザー2 | 노멀라이저2
+- ✅ 标准化器2
+- ✅ Normalizer2
+- ✅ ノーマライザー2
+- ✅ 노멀라이저2
+
+### v63.5 发送背景模糊 | Send Bg Blur | 送信背景ぼかし | 전송 배경 블러
+- ✅ 发送背景模糊
+- ✅ Send Bg Blur
+- ✅ 送信背景ぼかし
+- ✅ 전송 배경 블러
+
+### v63.6 投射自动字幕 | Cast Auto Subtitle | キャスト自動字幕 | 캐스트 자동 자막
+- ✅ 投射自动字幕
+- ✅ Cast Auto Subtitle
+- ✅ キャスト自動字幕
+- ✅ 캐스트 자동 자막
+
+### v63.7 捏合动作 | Pinch Action | ピンチアクション | 핀치 동작
+- ✅ 捏合动作
+- ✅ Pinch Action
+- ✅ ピンチアクション
+- ✅ 핀치 동작
+
+### v63.8 评分过滤2 | Filter Score2 | フィルタースコア2 | 필터 점수2
+- ✅ 评分过滤2
+- ✅ Filter Score2
+- ✅ フィルタースコア2
+- ✅ 필터 점수2
+
+### v63.9 启动时唤醒 | Wakeup On Start | 起動時ウェイクアップ | 시작 시 웨이크업
+- ✅ 启动时唤醒
+- ✅ Wakeup On Start
+- ✅ 起動時ウェイクアップ
+- ✅ 시작 시 웨이크업
+
+### v63.10 刻度颜色 | Tick Color | ティック色 | 틱 색상
+- ✅ 刻度颜色
+- ✅ Tick Color
+- ✅ ティック色
+- ✅ 틱 색상
+
+### v63.11 自定义粗细2 | Weight Custom2 | 太さカスタム2 | 두께 사용자 정의2
+- ✅ 自定义粗细2
+- ✅ Weight Custom2
+- ✅ 太さカスタム2
+- ✅ 두께 사용자 정의2
+
+### v63.12 亮度曲线 | Brightness Curve | 輝度カーブ | 밝기 커브
+- ✅ 亮度曲线
+- ✅ Brightness Curve
+- ✅ 輝度カーブ
+- ✅ 밝기 커브
+
+### v63.13 低通滤波 | Bass Lpf | バスLPF | 베이스 LPF
+- ✅ 低通滤波
+- ✅ Bass Lpf
+- ✅ バスLPF
+- ✅ 베이스 LPF
+
+### v63.14 背景阴影偏移 | Bg Shadow Offset | 背景シャドウオフセット | 배경 그림자 오프셋
+- ✅ 背景阴影偏移
+- ✅ Bg Shadow Offset
+- ✅ 背景シャドウオフセット
+- ✅ 배경 그림자 오프셋
+
+### v63.15 投射字幕描边 | Cast Subtitle Outline | キャスト字幕アウトライン | 캐스트 자막 아웃라인
+- ✅ 投射字幕描边
+- ✅ Cast Subtitle Outline
+- ✅ キャスト字幕アウトライン
+- ✅ 캐스트 자막 아웃라인
+
+### v64.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v64.1-v64.15 功能列表
+- ✅ Auto Loop Playlist, Shadow Offset2, Saturation Boost, Treble Hpf, Send Border Size, Cast Auto Quality2, Rotation Action, Length Range, Cleanup On Start, Glow Color, Font Italic2, Vividness Boost, Surround Angle, Bg Padding2, Cast Subtitle Delay
+
+### v64.1 自动循环播放列表 | Auto Loop Playlist | 自動ループプレイリスト | 자동 루프 재생목록
+- ✅ 自动循环播放列表
+- ✅ Auto Loop Playlist
+- ✅ 自動ループプレイリスト
+- ✅ 자동 루프 재생목록
+
+### v64.2 阴影偏移2 | Shadow Offset2 | シャドウオフセット2 | 그림자 오프셋2
+- ✅ 阴影偏移2
+- ✅ Shadow Offset2
+- ✅ シャドウオフセット2
+- ✅ 그림자 오프셋2
+
+### v64.3 饱和度增强 | Saturation Boost | 彩度ブースト | 채도 부스트
+- ✅ 饱和度增强
+- ✅ Saturation Boost
+- ✅ 彩度ブースト
+- ✅ 채도 부스트
+
+### v64.4 高通滤波 | Treble Hpf | トレブルHPF | 트레블 HPF
+- ✅ 高通滤波
+- ✅ Treble Hpf
+- ✅ トレブルHPF
+- ✅ 트레블 HPF
+
+### v64.5 发送边框大小 | Send Border Size | 送信ボーダーサイズ | 전송 테두리 크기
+- ✅ 发送边框大小
+- ✅ Send Border Size
+- ✅ 送信ボーダーサイズ
+- ✅ 전송 테두리 크기
+
+### v64.6 投射自动画质2 | Cast Auto Quality2 | キャスト自動画質2 | 캐스트 자동 화질2
+- ✅ 投射自动画质2
+- ✅ Cast Auto Quality2
+- ✅ キャスト自動画質2
+- ✅ 캐스트 자동 화질2
+
+### v64.7 旋转动作 | Rotation Action | 回転アクション | 회전 동작
+- ✅ 旋转动作
+- ✅ Rotation Action
+- ✅ 回転アクション
+- ✅ 회전 동작
+
+### v64.8 长度范围 | Length Range | 長さ範囲 | 길이 범위
+- ✅ 长度范围
+- ✅ Length Range
+- ✅ 長さ範囲
+- ✅ 길이 범위
+
+### v64.9 启动时清理 | Cleanup On Start | 起動時クリーンアップ | 시작 시 정리
+- ✅ 启动时清理
+- ✅ Cleanup On Start
+- ✅ 起動時クリーンアップ
+- ✅ 시작 시 정리
+
+### v64.10 发光颜色 | Glow Color | グロー色 | 글로우 색상
+- ✅ 发光颜色
+- ✅ Glow Color
+- ✅ グロー色
+- ✅ 글로우 색상
+
+### v64.11 字体斜体2 | Font Italic2 | フォントイタリック2 | 글꼴 이탤릭2
+- ✅ 字体斜体2
+- ✅ Font Italic2
+- ✅ フォントイタリック2
+- ✅ 글꼴 이탤릭2
+
+### v64.12 鲜艳度增强 | Vividness Boost | ビビッドネスブースト | 선명도 부스트
+- ✅ 鲜艳度增强
+- ✅ Vividness Boost
+- ✅ ビビッドネスブースト
+- ✅ 선명도 부스트
+
+### v64.13 环绕角度 | Surround Angle | サラウンド角度 | 서라운드 각도
+- ✅ 环绕角度
+- ✅ Surround Angle
+- ✅ サラウンド角度
+- ✅ 서라운드 각도
+
+### v64.14 背景内边距2 | Bg Padding2 | 背景パディング2 | 배경 패딩2
+- ✅ 背景内边距2
+- ✅ Bg Padding2
+- ✅ 背景パディング2
+- ✅ 배경 패딩2
+
+### v64.15 投射字幕延迟 | Cast Subtitle Delay | キャスト字幕遅延 | 캐스트 자막 지연
+- ✅ 投射字幕延迟
+- ✅ Cast Subtitle Delay
+- ✅ キャスト字幕遅延
+- ✅ 캐스트 자막 지연
+
+### v65.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v65.1-v65.15 功能列表
+- ✅ Skip Recap, Font Strike2, Hue Curve, Bass Enhance, Anim Duration, Cast Auto Reconnect2, Shake Action, Filter Duplicate2, Prefetch On Idle, Gradient Speed, Font Underline2, Lift Gamma Gain, Treble Enhance, Bg Border Radius2, Cast Subtitle Bg Opacity
+
+### v65.1 跳过回顾 | Skip Recap | リキャップスキップ | 리캡 건너뛰기
+- ✅ 跳过回顾
+- ✅ Skip Recap
+- ✅ リキャップスキップ
+- ✅ 리캡 건너뛰기
+
+### v65.2 删除线2 | Font Strike2 | フォント取り消し線2 | 글꼴 취소선2
+- ✅ 删除线2
+- ✅ Font Strike2
+- ✅ フォント取り消し線2
+- ✅ 글꼴 취소선2
+
+### v65.3 色调曲线 | Hue Curve | 色相カーブ | 색조 커브
+- ✅ 色调曲线
+- ✅ Hue Curve
+- ✅ 色相カーブ
+- ✅ 색조 커브
+
+### v65.4 低音增强 | Bass Enhance | バス強化 | 베이스 강화
+- ✅ 低音增强
+- ✅ Bass Enhance
+- ✅ バス強化
+- ✅ 베이스 강화
+
+### v65.5 动画时长 | Anim Duration | アニメーション時間 | 애니메이션 시간
+- ✅ 动画时长
+- ✅ Anim Duration
+- ✅ アニメーション時間
+- ✅ 애니메이션 시간
+
+### v65.6 投射自动重连2 | Cast Auto Reconnect2 | キャスト自動再接続2 | 캐스트 자동 재연결2
+- ✅ 投射自动重连2
+- ✅ Cast Auto Reconnect2
+- ✅ キャスト自動再接続2
+- ✅ 캐스트 자동 재연결2
+
+### v65.7 摇晃动作 | Shake Action | シェイクアクション | 셰이크 동작
+- ✅ 摇晃动作
+- ✅ Shake Action
+- ✅ シェイクアクション
+- ✅ 셰이크 동작
+
+### v65.8 去重过滤2 | Filter Duplicate2 | 重複フィルター2 | 중복 필터2
+- ✅ 去重过滤2
+- ✅ Filter Duplicate2
+- ✅ 重複フィルター2
+- ✅ 중복 필터2
+
+### v65.9 空闲时预取 | Prefetch On Idle | アイドル時プリロード | 유휴 시 프리로드
+- ✅ 空闲时预取
+- ✅ Prefetch On Idle
+- ✅ アイドル時プリロード
+- ✅ 유휴 시 프리로드
+
+### v65.10 渐变速度 | Gradient Speed | グラデーション速度 | 그라데이션 속도
+- ✅ 渐变速度
+- ✅ Gradient Speed
+- ✅ グラデーション速度
+- ✅ 그라데이션 속도
+
+### v65.11 下划线2 | Font Underline2 | フォント下線2 | 글꼴 밑줄2
+- ✅ 下划线2
+- ✅ Font Underline2
+- ✅ フォント下線2
+- ✅ 글꼴 밑줄2
+
+### v65.12 提升伽马增益 | Lift Gamma Gain | リフトガンマゲイン | 리프트 감마 게인
+- ✅ 提升伽马增益
+- ✅ Lift Gamma Gain
+- ✅ リフトガンマゲイン
+- ✅ 리프트 감마 게인
+
+### v65.13 高音增强 | Treble Enhance | トレブル強化 | 트레블 강화
+- ✅ 高音增强
+- ✅ Treble Enhance
+- ✅ トレブル強化
+- ✅ 트레블 강화
+
+### v65.14 背景圆角2 | Bg Border Radius2 | 背景角丸2 | 배경 둥근 모서리2
+- ✅ 背景圆角2
+- ✅ Bg Border Radius2
+- ✅ 背景角丸2
+- ✅ 배경 둥근 모서리2
+
+### v65.15 投射字幕背景透明度 | Cast Subtitle Bg Opacity | キャスト字幕背景透明度 | 캐스트 자막 배경 투명도
+- ✅ 投射字幕背景透明度
+- ✅ Cast Subtitle Bg Opacity
+- ✅ キャスト字幕背景透明度
+- ✅ 캐스트 자막 배경 투명도
+
+### v66.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v66.1-v66.15 功能列表
+- ✅ Smart Seek, Font Monospace2, Tone Mapping, Channel Delay, Send Font Size3, Cast Auto Adapt2, Multi Touch Action, Filter Emote, Compress Level, Shadow Color, Font Color2, ACES Film, Dynamic Bass, Bg Gradient Color3, Cast Subtitle Font
+
+### v66.1 智能快进 | Smart Seek | スマートシーク | 스마트 탐색
+- ✅ 智能快进
+- ✅ Smart Seek
+- ✅ スマートシーク
+- ✅ 스마트 탐색
+
+### v66.2 等宽字体2 | Font Monospace2 | フォントモノスペース2 | 글꼴 모노스페이스2
+- ✅ 等宽字体2
+- ✅ Font Monospace2
+- ✅ フォントモノスペース2
+- ✅ 글꼴 모노스페이스2
+
+### v66.3 色调映射 | Tone Mapping | トーンマッピング | 톤매핑
+- ✅ 色调映射
+- ✅ Tone Mapping
+- ✅ トーンマッピング
+- ✅ 톤매핑
+
+### v66.4 声道延迟 | Channel Delay | チャンネル遅延 | 채널 지연
+- ✅ 声道延迟
+- ✅ Channel Delay
+- ✅ チャンネル遅延
+- ✅ 채널 지연
+
+### v66.5 发送字号3 | Send Font Size3 | 送信フォントサイズ3 | 전송 글꼴 크기3
+- ✅ 发送字号3
+- ✅ Send Font Size3
+- ✅ 送信フォントサイズ3
+- ✅ 전송 글꼴 크기3
+
+### v66.6 投射自适应2 | Cast Auto Adapt2 | キャスト自動適応2 | 캐스트 자동 적응2
+- ✅ 投射自适应2
+- ✅ Cast Auto Adapt2
+- ✅ キャスト自動適応2
+- ✅ 캐스트 자동 적응2
+
+### v66.7 多点触控动作 | Multi Touch Action | マルチタッチアクション | 멀티 터치 동작
+- ✅ 多点触控动作
+- ✅ Multi Touch Action
+- ✅ マルチタッチアクション
+- ✅ 멀티 터치 동작
+
+### v66.8 表情过滤 | Filter Emote | 絵文字フィルター | 이모티콘 필터
+- ✅ 表情过滤
+- ✅ Filter Emote
+- ✅ 絵文字フィルター
+- ✅ 이모티콘 필터
+
+### v66.9 压缩级别 | Compress Level | 圧縮レベル | 압축 수준
+- ✅ 压缩级别
+- ✅ Compress Level
+- ✅ 圧縮レベル
+- ✅ 압축 수준
+
+### v66.10 阴影颜色 | Shadow Color | シャドウ色 | 그림자 색상
+- ✅ 阴影颜色
+- ✅ Shadow Color
+- ✅ シャドウ色
+- ✅ 그림자 색상
+
+### v66.11 字体颜色2 | Font Color2 | フォント色2 | 글꼴 색상2
+- ✅ 字体颜色2
+- ✅ Font Color2
+- ✅ フォント色2
+- ✅ 글꼴 색상2
+
+### v66.12 ACES胶片 | ACES Film | ACESフィルム | ACES 필름
+- ✅ ACES胶片
+- ✅ ACES Film
+- ✅ ACESフィルム
+- ✅ ACES 필름
+
+### v66.13 动态低音 | Dynamic Bass | ダイナミックバス | 다이나믹 베이스
+- ✅ 动态低音
+- ✅ Dynamic Bass
+- ✅ ダイナミックバス
+- ✅ 다이나믹 베이스
+
+### v66.14 背景渐变颜色3 | Bg Gradient Color3 | 背景グラデーション色3 | 배경 그라데이션 색상3
+- ✅ 背景渐变颜色3
+- ✅ Bg Gradient Color3
+- ✅ 背景グラデーション色3
+- ✅ 배경 그라데이션 색상3
+
+### v66.15 投射字幕字体 | Cast Subtitle Font | キャスト字幕フォント | 캐스트 자막 글꼴
+- ✅ 投射字幕字体
+- ✅ Cast Subtitle Font
+- ✅ キャスト字幕フォント
+- ✅ 캐스트 자막 글꼴
+
+### v67.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v67.1-v67.15 功能列表
+- ✅ Skip Preview, Outline Color2, Log Curve, Spatial Audio, Send Bg Radius, Cast Auto Connect2, Finger Count Action, Filter Combo, Write Policy, Gradient Color, Shadow Color3, Sigmoid Contrast, Surround Delay, Bg Shadow Color3, Cast Subtitle Shadow
+
+### v67.1 跳过预览 | Skip Preview | プレビュースキップ | 미리보기 건너뛰기
+- ✅ 跳过预览
+- ✅ Skip Preview
+- ✅ プレビュースキップ
+- ✅ 미리보기 건너뛰기
+
+### v67.2 描边颜色2 | Outline Color2 | アウトライン色2 | 아웃라인 색상2
+- ✅ 描边颜色2
+- ✅ Outline Color2
+- ✅ アウトライン色2
+- ✅ 아웃라인 색상2
+
+### v67.3 对数曲线 | Log Curve | ログカーブ | 로그 커브
+- ✅ 对数曲线
+- ✅ Log Curve
+- ✅ ログカーブ
+- ✅ 로그 커브
+
+### v67.4 空间音频 | Spatial Audio | 空間オーディオ | 공간 오디오
+- ✅ 空间音频
+- ✅ Spatial Audio
+- ✅ 空間オーディオ
+- ✅ 공간 오디오
+
+### v67.5 发送背景圆角 | Send Bg Radius | 送信背景角丸 | 전송 배경 둥근 모서리
+- ✅ 发送背景圆角
+- ✅ Send Bg Radius
+- ✅ 送信背景角丸
+- ✅ 전송 배경 둥근 모서리
+
+### v67.6 投射自动连接2 | Cast Auto Connect2 | キャスト自動接続2 | 캐스트 자동 연결2
+- ✅ 投射自动连接2
+- ✅ Cast Auto Connect2
+- ✅ キャスト自動接続2
+- ✅ 캐스트 자동 연결2
+
+### v67.7 手指计数动作 | Finger Count Action | 指カウントアクション | 손가락 카운트 동작
+- ✅ 手指计数动作
+- ✅ Finger Count Action
+- ✅ 指カウントアクション
+- ✅ 손가락 카운트 동작
+
+### v67.8 连击过滤 | Filter Combo | コンボフィルター | 콤보 필터
+- ✅ 连击过滤
+- ✅ Filter Combo
+- ✅ コンボフィルター
+- ✅ 콤보 필터
+
+### v67.9 写入策略 | Write Policy | ライトポリシー | 쓰기 정책
+- ✅ 写入策略
+- ✅ Write Policy
+- ✅ ライトポリシー
+- ✅ 쓰기 정책
+
+### v67.10 渐变颜色 | Gradient Color | グラデーション色 | 그라데이션 색상
+- ✅ 渐变颜色
+- ✅ Gradient Color
+- ✅ グラデーション色
+- ✅ 그라데이션 색상
+
+### v67.11 阴影颜色3 | Shadow Color3 | シャドウ色3 | 그림자 색상3
+- ✅ 阴影颜色3
+- ✅ Shadow Color3
+- ✅ シャドウ色3
+- ✅ 그림자 색상3
+
+### v67.12 S型对比度 | Sigmoid Contrast | シグモイドコントラスト | 시그모이드 대비
+- ✅ S型对比度
+- ✅ Sigmoid Contrast
+- ✅ シグモイドコントラスト
+- ✅ 시그모이드 대비
+
+### v67.13 环绕延迟 | Surround Delay | サラウンド遅延 | 서라운드 지연
+- ✅ 环绕延迟
+- ✅ Surround Delay
+- ✅ サラウンド遅延
+- ✅ 서라운드 지연
+
+### v67.14 背景阴影颜色3 | Bg Shadow Color3 | 背景シャドウ色3 | 배경 그림자 색상3
+- ✅ 背景阴影颜色3
+- ✅ Bg Shadow Color3
+- ✅ 背景シャドウ色3
+- ✅ 배경 그림자 색상3
+
+### v67.15 投射字幕阴影 | Cast Subtitle Shadow | キャスト字幕シャドウ | 캐스트 자막 그림자
+- ✅ 投射字幕阴影
+- ✅ Cast Subtitle Shadow
+- ✅ キャスト字幕シャドウ
+- ✅ 캐스트 자막 그림자
+
+### v68.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v68.1-v68.15 功能列表
+- ✅ Skip Padding, Glow Color3, Film Grain, Channel Extractor, Send Bg Gradient, Cast Auto Quality3, Pressure Action, Filter Super Chat, Prefetch On Start, Glow Effect, Weight Custom3, Color Bloom, Dynamic Range, Bg Shadow Offset2, Cast Subtitle Glow
+
+### v68.1 跳过填充 | Skip Padding | パディングスキップ | 패딩 건너뛰기
+- ✅ 跳过填充
+- ✅ Skip Padding
+- ✅ パディングスキップ
+- ✅ 패딩 건너뛰기
+
+### v68.2 发光颜色3 | Glow Color3 | グロー色3 | 글로우 색상3
+- ✅ 发光颜色3
+- ✅ Glow Color3
+- ✅ グロー色3
+- ✅ 글로우 색상3
+
+### v68.3 胶片颗粒 | Film Grain | フィルムグレイン | 필름 그레인
+- ✅ 胶片颗粒
+- ✅ Film Grain
+- ✅ フィルムグレイン
+- ✅ 필름 그레인
+
+### v68.4 声道提取器 | Channel Extractor | チャンネルエクストラクター | 채널 익스트랙터
+- ✅ 声道提取器
+- ✅ Channel Extractor
+- ✅ チャンネルエクストラクター
+- ✅ 채널 익스트랙터
+
+### v68.5 发送背景渐变 | Send Bg Gradient | 送信背景グラデーション | 전송 배경 그라데이션
+- ✅ 发送背景渐变
+- ✅ Send Bg Gradient
+- ✅ 送信背景グラデーション
+- ✅ 전송 배경 그라데이션
+
+### v68.6 投射自动画质3 | Cast Auto Quality3 | キャスト自動画質3 | 캐스트 자동 화질3
+- ✅ 投射自动画质3
+- ✅ Cast Auto Quality3
+- ✅ キャスト自動画質3
+- ✅ 캐스트 자동 화질3
+
+### v68.7 压力动作 | Pressure Action | プレッシャーアクション | 프레셔 동작
+- ✅ 压力动作
+- ✅ Pressure Action
+- ✅ プレッシャーアクション
+- ✅ 프레셔 동작
+
+### v68.8 醒目留言过滤 | Filter Super Chat | スーパーチャットフィルター | 슈퍼챗 필터
+- ✅ 醒目留言过滤
+- ✅ Filter Super Chat
+- ✅ スーパーチャットフィルター
+- ✅ 슈퍼챗 필터
+
+### v68.9 启动时预取 | Prefetch On Start | 起動時プリロード | 시작 시 프리로드
+- ✅ 启动时预取
+- ✅ Prefetch On Start
+- ✅ 起動時プリロード
+- ✅ 시작 시 프리로드
+
+### v68.10 发光效果 | Glow Effect | グローエフェクト | 글로우 이펙트
+- ✅ 发光效果
+- ✅ Glow Effect
+- ✅ グローエフェクト
+- ✅ 글로우 이펙트
+
+### v68.11 自定义粗细3 | Weight Custom3 | 太さカスタム3 | 두께 사용자 정의3
+- ✅ 自定义粗细3
+- ✅ Weight Custom3
+- ✅ 太さカスタム3
+- ✅ 두께 사용자 정의3
+
+### v68.12 色彩泛光 | Color Bloom | ブルーム | 블룸
+- ✅ 色彩泛光
+- ✅ Color Bloom
+- ✅ ブルーム
+- ✅ 블룸
+
+### v68.13 动态范围 | Dynamic Range | ダイナミックレンジ | 다이나믹 레인지
+- ✅ 动态范围
+- ✅ Dynamic Range
+- ✅ ダイナミックレンジ
+- ✅ 다이나믹 레인지
+
+### v68.14 背景阴影偏移2 | Bg Shadow Offset2 | 背景シャドウオフセット2 | 배경 그림자 오프셋2
+- ✅ 背景阴影偏移2
+- ✅ Bg Shadow Offset2
+- ✅ 背景シャドウオフセット2
+- ✅ 배경 그림자 오프셋2
+
+### v68.15 投射字幕发光 | Cast Subtitle Glow | キャスト字幕グロー | 캐스트 자막 글로우
+- ✅ 投射字幕发光
+- ✅ Cast Subtitle Glow
+- ✅ キャスト字幕グロー
+- ✅ 캐스트 자막 글로우
+
+### v69.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v69.1-v69.15 功能列表
+- ✅ Auto Skip Filler2, Font Weight Final, Color Final, Volume Final, Send Final, Cast Final, Gesture Final, Filter Final, Cache Final, Progress Final, Font Final, Color Final2, Volume Final2, Bg Final, Cast Subtitle Final
+
+### v69.1 自动跳离题2 | Auto Skip Filler2 | 自動フィラースキップ2 | 자동 필러 건너뛰기2
+- ✅ 自动跳离题2
+- ✅ Auto Skip Filler2
+- ✅ 自動フィラースキップ2
+- ✅ 자동 필러 건너뛰기2
+
+### v69.2 字体粗细最终 | Font Weight Final | フォント太さ最終 | 글꼴 두께 최종
+- ✅ 字体粗细最终
+- ✅ Font Weight Final
+- ✅ フォント太さ最終
+- ✅ 글꼴 두께 최종
+
+### v69.3 色彩最终 | Color Final | 色最終 | 색상 최종
+- ✅ 色彩最终
+- ✅ Color Final
+- ✅ 色最終
+- ✅ 색상 최종
+
+### v69.4 音量最终 | Volume Final | 音量最終 | 볼륨 최종
+- ✅ 音量最终
+- ✅ Volume Final
+- ✅ 音量最終
+- ✅ 볼륨 최종
+
+### v69.5 发送最终 | Send Final | 送信最終 | 전송 최종
+- ✅ 发送最终
+- ✅ Send Final
+- ✅ 送信最終
+- ✅ 전송 최종
+
+### v69.6 投射最终 | Cast Final | キャスト最終 | 캐스트 최종
+- ✅ 投射最终
+- ✅ Cast Final
+- ✅ キャスト最終
+- ✅ 캐스트 최종
+
+### v69.7 手势最终 | Gesture Final | ジェスチャー最終 | 제스처 최종
+- ✅ 手势最终
+- ✅ Gesture Final
+- ✅ ジェスチャー最終
+- ✅ 제스처 최종
+
+### v69.8 过滤最终 | Filter Final | フィルター最終 | 필터 최종
+- ✅ 过滤最终
+- ✅ Filter Final
+- ✅ フィルター最終
+- ✅ 필터 최종
+
+### v69.9 缓存最终 | Cache Final | キャッシュ最終 | 캐시 최종
+- ✅ 缓存最终
+- ✅ Cache Final
+- ✅ キャッシュ最終
+- ✅ 캐시 최종
+
+### v69.10 进度条最终 | Progress Final | プログレス最終 | 진행 바 최종
+- ✅ 进度条最终
+- ✅ Progress Final
+- ✅ プログレス最終
+- ✅ 진행 바 최종
+
+### v69.11 字体最终 | Font Final | フォント最終 | 글꼴 최종
+- ✅ 字体最终
+- ✅ Font Final
+- ✅ フォント最終
+- ✅ 글꼴 최종
+
+### v69.12 色彩最终2 | Color Final2 | 色最終2 | 색상 최종2
+- ✅ 色彩最终2
+- ✅ Color Final2
+- ✅ 色最終2
+- ✅ 색상 최종2
+
+### v69.13 音量最终2 | Volume Final2 | 音量最終2 | 볼륨 최종2
+- ✅ 音量最终2
+- ✅ Volume Final2
+- ✅ 音量最終2
+- ✅ 볼륨 최종2
+
+### v69.14 背景最终 | Bg Final | 背景最終 | 배경 최종
+- ✅ 背景最终
+- ✅ Bg Final
+- ✅ 背景最終
+- ✅ 배경 최종
+
+### v69.15 投射字幕最终 | Cast Subtitle Final | キャスト字幕最終 | 캐스트 자막 최종
+- ✅ 投射字幕最终
+- ✅ Cast Subtitle Final
+- ✅ キャスト字幕最終
+- ✅ 캐스트 자막 최종
+
+### v70.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v70.1-v70.15 功能列表
+- ✅ Playback Final, Font Final2, Color Final3, Volume Final3, Send Final2, Cast Final2, Gesture Final2, Filter Final2, Cache Final2, Progress Final2, Font Final3, Color Final4, Volume Final4, Bg Final2, Cast Subtitle Final2
+
+### v70.1 播放最终 | Playback Final | 再生最終 | 재생 최종
+- ✅ 播放最终
+- ✅ Playback Final
+- ✅ 再生最終
+- ✅ 재생 최종
+
+### v70.2 字体最终2 | Font Final2 | フォント最終2 | 글꼴 최종2
+- ✅ 字体最终2
+- ✅ Font Final2
+- ✅ フォント最終2
+- ✅ 글꼴 최종2
+
+### v70.3 色彩最终3 | Color Final3 | 色最終3 | 색상 최종3
+- ✅ 色彩最终3
+- ✅ Color Final3
+- ✅ 色最終3
+- ✅ 색상 최종3
+
+### v70.4 音量最终3 | Volume Final3 | 音量最終3 | 볼륨 최종3
+- ✅ 音量最终3
+- ✅ Volume Final3
+- ✅ 音量最終3
+- ✅ 볼륨 최종3
+
+### v70.5 发送最终2 | Send Final2 | 送信最終2 | 전송 최종2
+- ✅ 发送最终2
+- ✅ Send Final2
+- ✅ 送信最終2
+- ✅ 전송 최종2
+
+### v70.6 投射最终2 | Cast Final2 | キャスト最終2 | 캐스트 최종2
+- ✅ 投射最终2
+- ✅ Cast Final2
+- ✅ キャスト最終2
+- ✅ 캐스트 최종2
+
+### v70.7 手势最终2 | Gesture Final2 | ジェスチャー最終2 | 제스처 최종2
+- ✅ 手势最终2
+- ✅ Gesture Final2
+- ✅ ジェスチャー最終2
+- ✅ 제스처 최종2
+
+### v70.8 过滤最终2 | Filter Final2 | フィルター最終2 | 필터 최종2
+- ✅ 过滤最终2
+- ✅ Filter Final2
+- ✅ フィルター最終2
+- ✅ 필터 최종2
+
+### v70.9 缓存最终2 | Cache Final2 | キャッシュ最終2 | 캐시 최종2
+- ✅ 缓存最终2
+- ✅ Cache Final2
+- ✅ キャッシュ最終2
+- ✅ 캐시 최종2
+
+### v70.10 进度条最终2 | Progress Final2 | プログレス最終2 | 진행 바 최종2
+- ✅ 进度条最终2
+- ✅ Progress Final2
+- ✅ プログレス最終2
+- ✅ 진행 바 최종2
+
+### v70.11 字体最终3 | Font Final3 | フォント最終3 | 글꼴 최종3
+- ✅ 字体最终3
+- ✅ Font Final3
+- ✅ フォント最終3
+- ✅ 글꼴 최종3
+
+### v70.12 色彩最终4 | Color Final4 | 色最終4 | 색상 최종4
+- ✅ 色彩最终4
+- ✅ Color Final4
+- ✅ 色最終4
+- ✅ 색상 최종4
+
+### v70.13 音量最终4 | Volume Final4 | 音量最終4 | 볼륨 최종4
+- ✅ 音量最终4
+- ✅ Volume Final4
+- ✅ 音量最終4
+- ✅ 볼륨 최종4
+
+### v70.14 背景最终2 | Bg Final2 | 背景最終2 | 배경 최종2
+- ✅ 背景最终2
+- ✅ Bg Final2
+- ✅ 背景最終2
+- ✅ 배경 최종2
+
+### v70.15 投射字幕最终2 | Cast Subtitle Final2 | キャスト字幕最終2 | 캐스트 자막 최종2
+- ✅ 投射字幕最终2
+- ✅ Cast Subtitle Final2
+- ✅ キャスト字幕最終2
+- ✅ 캐스트 자막 최종2
 
 ### v55.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
 ### v55.1-v55.15 功能列表
