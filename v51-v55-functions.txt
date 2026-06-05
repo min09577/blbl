@@ -1,0 +1,965 @@
+// v51.1: 字幕轨道记忆
+internal fun PlayerActivity.showSubtitleTrackMemoryToggle() {
+    val enabled = !BiliClient.prefs.subtitle_track_memory
+    BiliClient.prefs.subtitle_track_memory = enabled
+    AppToast.show(this, "字幕轨道记忆：${if (enabled) "开启" else "关闭"}")
+}
+
+// v51.2: 字体描边宽度
+internal fun PlayerActivity.showFontStrokeWidthDialog() {
+    val options = listOf(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+    val labels = listOf("0px", "1px", "2px", "3px", "4px", "5px", "6px", "7px", "8px", "9px", "10px")
+    val currentIndex = options.indexOf(BiliClient.prefs.font_stroke_width).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "字体描边宽度",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> labels[options.indexOf(v)] },
+    ) { value ->
+        BiliClient.prefs.font_stroke_width = value
+        AppToast.show(this, "字体描边宽度：${labels[options.indexOf(value)]}")
+    }
+}
+
+// v51.3: 自动白平衡
+internal fun PlayerActivity.showAutoWhiteBalanceToggle() {
+    val enabled = !BiliClient.prefs.auto_white_balance
+    BiliClient.prefs.auto_white_balance = enabled
+    AppToast.show(this, "自动白平衡：${if (enabled) "开启" else "关闭"}")
+}
+
+// v51.4: 自动增益
+internal fun PlayerActivity.showAutoGainToggle() {
+    val enabled = !BiliClient.prefs.auto_gain
+    BiliClient.prefs.auto_gain = enabled
+    AppToast.show(this, "自动增益：${if (enabled) "开启" else "关闭"}")
+}
+
+// v51.5: 滚动速度
+internal fun PlayerActivity.showScrollSpeedDialog() {
+    val options = listOf(-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5)
+    val labels = listOf("-5", "-4", "-3", "-2", "-1", "0", "1", "2", "3", "4", "5")
+    val currentIndex = options.indexOf(BiliClient.prefs.scroll_speed).takeIf { it >= 0 } ?: 5
+    showSettingsChoiceDialog(
+        title = "滚动速度",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> labels[options.indexOf(v)] },
+    ) { value ->
+        BiliClient.prefs.scroll_speed = value
+        AppToast.show(this, "滚动速度：${labels[options.indexOf(value)]}")
+    }
+}
+
+// v51.6: 音量增益
+internal fun PlayerActivity.showAudioVolumeBoostDialog() {
+    val options = listOf(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50)
+    val labels = listOf("0%", "1%", "2%", "3%", "4%", "5%", "6%", "7%", "8%", "9%", "10%", "11%", "12%", "13%", "14%", "15%", "16%", "17%", "18%", "19%", "20%", "21%", "22%", "23%", "24%", "25%", "26%", "27%", "28%", "29%", "30%", "31%", "32%", "33%", "34%", "35%", "36%", "37%", "38%", "39%", "40%", "41%", "42%", "43%", "44%", "45%", "46%", "47%", "48%", "49%", "50%")
+    val currentIndex = options.indexOf(BiliClient.prefs.audio_volume_boost).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "音量增益",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> labels[options.indexOf(v)] },
+    ) { value ->
+        BiliClient.prefs.audio_volume_boost = value
+        AppToast.show(this, "音量增益：${labels[options.indexOf(value)]}")
+    }
+}
+
+// v51.7: 滑动灵敏度
+internal fun PlayerActivity.showSwipeThresholdDialog() {
+    val options = listOf(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30)
+    val labels = listOf("0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30")
+    val currentIndex = options.indexOf(BiliClient.prefs.swipe_threshold).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "滑动灵敏度",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> labels[options.indexOf(v)] },
+    ) { value ->
+        BiliClient.prefs.swipe_threshold = value
+        AppToast.show(this, "滑动灵敏度：${labels[options.indexOf(value)]}")
+    }
+}
+
+// v51.8: 字体斜体
+internal fun PlayerActivity.showFontItalicToggle() {
+    val enabled = !BiliClient.prefs.font_italic
+    BiliClient.prefs.font_italic = enabled
+    AppToast.show(this, "字体斜体：${if (enabled) "开启" else "关闭"}")
+}
+
+// v51.9: 视频编解码器偏好
+internal fun PlayerActivity.showVideoCodecPreferenceDialog() {
+    val options = listOf(0, 1, 2, 3, 4)
+    val labels = listOf("0", "1", "2", "3", "4")
+    val currentIndex = options.indexOf(BiliClient.prefs.video_codec_preference).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "视频编解码器偏好",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> labels[options.indexOf(v)] },
+    ) { value ->
+        BiliClient.prefs.video_codec_preference = value
+        AppToast.show(this, "视频编解码器偏好：${labels[options.indexOf(value)]}")
+    }
+}
+
+// v51.10: 背景颜色
+internal fun PlayerActivity.showBackgroundColorDialog() {
+    val options = listOf(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+    val labels = listOf("0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10")
+    val currentIndex = options.indexOf(BiliClient.prefs.background_color).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "背景颜色",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> labels[options.indexOf(v)] },
+    ) { value ->
+        BiliClient.prefs.background_color = value
+        AppToast.show(this, "背景颜色：${labels[options.indexOf(value)]}")
+    }
+}
+
+// v51.11: 发送位置
+internal fun PlayerActivity.showSendPositionDialog() {
+    val options = listOf(0, 1, 2, 3, 4)
+    val labels = listOf("0", "1", "2", "3", "4")
+    val currentIndex = options.indexOf(BiliClient.prefs.send_position).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "发送位置",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> labels[options.indexOf(v)] },
+    ) { value ->
+        BiliClient.prefs.send_position = value
+        AppToast.show(this, "发送位置：${labels[options.indexOf(value)]}")
+    }
+}
+
+// v51.12: 胶片颗粒
+internal fun PlayerActivity.showFilmGrainDialog() {
+    val options = listOf(0, 1, 2, 3, 4, 5)
+    val labels = listOf("0", "1", "2", "3", "4", "5")
+    val currentIndex = options.indexOf(BiliClient.prefs.film_grain).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "胶片颗粒",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> labels[options.indexOf(v)] },
+    ) { value ->
+        BiliClient.prefs.film_grain = value
+        AppToast.show(this, "胶片颗粒：${labels[options.indexOf(value)]}")
+    }
+}
+
+// v51.13: 空间音频
+internal fun PlayerActivity.showSpatialAudioToggle() {
+    val enabled = !BiliClient.prefs.spatial_audio
+    BiliClient.prefs.spatial_audio = enabled
+    AppToast.show(this, "空间音频：${if (enabled) "开启" else "关闭"}")
+}
+
+// v51.14: 边框宽度
+internal fun PlayerActivity.showBorderWidthDialog() {
+    val options = listOf(0, 1, 2, 3, 4, 5)
+    val labels = listOf("0px", "1px", "2px", "3px", "4px", "5px")
+    val currentIndex = options.indexOf(BiliClient.prefs.border_width).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "边框宽度",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> labels[options.indexOf(v)] },
+    ) { value ->
+        BiliClient.prefs.border_width = value
+        AppToast.show(this, "边框宽度：${labels[options.indexOf(value)]}")
+    }
+}
+
+// v51.15: 视频比特率
+internal fun PlayerActivity.showVideoBitrateDialog() {
+    val options = listOf(0, 1, 2, 3, 4, 5)
+    val labels = listOf("0", "1", "2", "3", "4", "5")
+    val currentIndex = options.indexOf(BiliClient.prefs.video_bitrate).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "视频比特率",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> labels[options.indexOf(v)] },
+    ) { value ->
+        BiliClient.prefs.video_bitrate = value
+        AppToast.show(this, "视频比特率：${labels[options.indexOf(value)]}")
+    }
+}
+
+// v52.1: 速度步长
+internal fun PlayerActivity.showSpeedStepDialog() {
+    val options = listOf(5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100)
+    val labels = listOf("5%", "6%", "7%", "8%", "9%", "10%", "11%", "12%", "13%", "14%", "15%", "16%", "17%", "18%", "19%", "20%", "21%", "22%", "23%", "24%", "25%", "26%", "27%", "28%", "29%", "30%", "31%", "32%", "33%", "34%", "35%", "36%", "37%", "38%", "39%", "40%", "41%", "42%", "43%", "44%", "45%", "46%", "47%", "48%", "49%", "50%", "51%", "52%", "53%", "54%", "55%", "56%", "57%", "58%", "59%", "60%", "61%", "62%", "63%", "64%", "65%", "66%", "67%", "68%", "69%", "70%", "71%", "72%", "73%", "74%", "75%", "76%", "77%", "78%", "79%", "80%", "81%", "82%", "83%", "84%", "85%", "86%", "87%", "88%", "89%", "90%", "91%", "92%", "93%", "94%", "95%", "96%", "97%", "98%", "99%", "100%")
+    val currentIndex = options.indexOf(BiliClient.prefs.speed_step).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "速度步长",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> labels[options.indexOf(v)] },
+    ) { value ->
+        BiliClient.prefs.speed_step = value
+        AppToast.show(this, "速度步长：${labels[options.indexOf(value)]}")
+    }
+}
+
+// v52.2: 字体背景透明度
+internal fun PlayerActivity.showFontBgAlphaDialog() {
+    val options = listOf(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255)
+    val labels = listOf("0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "101", "102", "103", "104", "105", "106", "107", "108", "109", "110", "111", "112", "113", "114", "115", "116", "117", "118", "119", "120", "121", "122", "123", "124", "125", "126", "127", "128", "129", "130", "131", "132", "133", "134", "135", "136", "137", "138", "139", "140", "141", "142", "143", "144", "145", "146", "147", "148", "149", "150", "151", "152", "153", "154", "155", "156", "157", "158", "159", "160", "161", "162", "163", "164", "165", "166", "167", "168", "169", "170", "171", "172", "173", "174", "175", "176", "177", "178", "179", "180", "181", "182", "183", "184", "185", "186", "187", "188", "189", "190", "191", "192", "193", "194", "195", "196", "197", "198", "199", "200", "201", "202", "203", "204", "205", "206", "207", "208", "209", "210", "211", "212", "213", "214", "215", "216", "217", "218", "219", "220", "221", "222", "223", "224", "225", "226", "227", "228", "229", "230", "231", "232", "233", "234", "235", "236", "237", "238", "239", "240", "241", "242", "243", "244", "245", "246", "247", "248", "249", "250", "251", "252", "253", "254", "255")
+    val currentIndex = options.indexOf(BiliClient.prefs.font_bg_alpha).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "字体背景透明度",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> labels[options.indexOf(v)] },
+    ) { value ->
+        BiliClient.prefs.font_bg_alpha = value
+        AppToast.show(this, "字体背景透明度：${labels[options.indexOf(value)]}")
+    }
+}
+
+// v52.3: 暗角形状
+internal fun PlayerActivity.showVignetteShapeDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val labels = listOf("0", "1", "2", "3")
+    val currentIndex = options.indexOf(BiliClient.prefs.vignette_shape).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "暗角形状",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> labels[options.indexOf(v)] },
+    ) { value ->
+        BiliClient.prefs.vignette_shape = value
+        AppToast.show(this, "暗角形状：${labels[options.indexOf(value)]}")
+    }
+}
+
+// v52.4: 淡入时长
+internal fun PlayerActivity.showFadeInDurationDialog() {
+    val options = listOf(0, 1, 2, 3, 4, 5)
+    val labels = listOf("0秒", "1秒", "2秒", "3秒", "4秒", "5秒")
+    val currentIndex = options.indexOf(BiliClient.prefs.fade_in_duration).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "淡入时长",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> labels[options.indexOf(v)] },
+    ) { value ->
+        BiliClient.prefs.fade_in_duration = value
+        AppToast.show(this, "淡入时长：${labels[options.indexOf(value)]}")
+    }
+}
+
+// v52.5: 固定位置
+internal fun PlayerActivity.showFixedPositionDialog() {
+    val options = listOf(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100)
+    val labels = listOf("0%", "1%", "2%", "3%", "4%", "5%", "6%", "7%", "8%", "9%", "10%", "11%", "12%", "13%", "14%", "15%", "16%", "17%", "18%", "19%", "20%", "21%", "22%", "23%", "24%", "25%", "26%", "27%", "28%", "29%", "30%", "31%", "32%", "33%", "34%", "35%", "36%", "37%", "38%", "39%", "40%", "41%", "42%", "43%", "44%", "45%", "46%", "47%", "48%", "49%", "50%", "51%", "52%", "53%", "54%", "55%", "56%", "57%", "58%", "59%", "60%", "61%", "62%", "63%", "64%", "65%", "66%", "67%", "68%", "69%", "70%", "71%", "72%", "73%", "74%", "75%", "76%", "77%", "78%", "79%", "80%", "81%", "82%", "83%", "84%", "85%", "86%", "87%", "88%", "89%", "90%", "91%", "92%", "93%", "94%", "95%", "96%", "97%", "98%", "99%", "100%")
+    val currentIndex = options.indexOf(BiliClient.prefs.fixed_position).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "固定位置",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> labels[options.indexOf(v)] },
+    ) { value ->
+        BiliClient.prefs.fixed_position = value
+        AppToast.show(this, "固定位置：${labels[options.indexOf(value)]}")
+    }
+}
+
+// v52.6: 视频分辨率
+internal fun PlayerActivity.showVideoResolutionDialog() {
+    val options = listOf(0, 1, 2, 3, 4)
+    val labels = listOf("0", "1", "2", "3", "4")
+    val currentIndex = options.indexOf(BiliClient.prefs.video_resolution).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "视频分辨率",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> labels[options.indexOf(v)] },
+    ) { value ->
+        BiliClient.prefs.video_resolution = value
+        AppToast.show(this, "视频分辨率：${labels[options.indexOf(value)]}")
+    }
+}
+
+// v52.7: 音量步长
+internal fun PlayerActivity.showVolumeStepDialog() {
+    val options = listOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+    val labels = listOf("1", "2", "3", "4", "5", "6", "7", "8", "9", "10")
+    val currentIndex = options.indexOf(BiliClient.prefs.volume_step).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "音量步长",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> labels[options.indexOf(v)] },
+    ) { value ->
+        BiliClient.prefs.volume_step = value
+        AppToast.show(this, "音量步长：${labels[options.indexOf(value)]}")
+    }
+}
+
+// v52.8: 过滤匿名弹幕
+internal fun PlayerActivity.showFilterAnonymousToggle() {
+    val enabled = !BiliClient.prefs.filter_anonymous
+    BiliClient.prefs.filter_anonymous = enabled
+    AppToast.show(this, "过滤匿名弹幕：${if (enabled) "开启" else "关闭"}")
+}
+
+// v52.9: HLS预加载
+internal fun PlayerActivity.showHlsPrefetchToggle() {
+    val enabled = !BiliClient.prefs.hls_prefetch
+    BiliClient.prefs.hls_prefetch = enabled
+    AppToast.show(this, "HLS预加载：${if (enabled) "开启" else "关闭"}")
+}
+
+// v52.10: 标记时长
+internal fun PlayerActivity.showMarkDurationDialog() {
+    val options = listOf(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+    val labels = listOf("0秒", "1秒", "2秒", "3秒", "4秒", "5秒", "6秒", "7秒", "8秒", "9秒", "10秒")
+    val currentIndex = options.indexOf(BiliClient.prefs.mark_duration).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "标记时长",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> labels[options.indexOf(v)] },
+    ) { value ->
+        BiliClient.prefs.mark_duration = value
+        AppToast.show(this, "标记时长：${labels[options.indexOf(value)]}")
+    }
+}
+
+// v52.11: 发送边框
+internal fun PlayerActivity.showSendBorderToggle() {
+    val enabled = !BiliClient.prefs.send_border
+    BiliClient.prefs.send_border = enabled
+    AppToast.show(this, "发送边框：${if (enabled) "开启" else "关闭"}")
+}
+
+// v52.12: 怀旧色调
+internal fun PlayerActivity.showSepiaToneDialog() {
+    val options = listOf(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100)
+    val labels = listOf("0%", "1%", "2%", "3%", "4%", "5%", "6%", "7%", "8%", "9%", "10%", "11%", "12%", "13%", "14%", "15%", "16%", "17%", "18%", "19%", "20%", "21%", "22%", "23%", "24%", "25%", "26%", "27%", "28%", "29%", "30%", "31%", "32%", "33%", "34%", "35%", "36%", "37%", "38%", "39%", "40%", "41%", "42%", "43%", "44%", "45%", "46%", "47%", "48%", "49%", "50%", "51%", "52%", "53%", "54%", "55%", "56%", "57%", "58%", "59%", "60%", "61%", "62%", "63%", "64%", "65%", "66%", "67%", "68%", "69%", "70%", "71%", "72%", "73%", "74%", "75%", "76%", "77%", "78%", "79%", "80%", "81%", "82%", "83%", "84%", "85%", "86%", "87%", "88%", "89%", "90%", "91%", "92%", "93%", "94%", "95%", "96%", "97%", "98%", "99%", "100%")
+    val currentIndex = options.indexOf(BiliClient.prefs.sepia_tone).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "怀旧色调",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> labels[options.indexOf(v)] },
+    ) { value ->
+        BiliClient.prefs.sepia_tone = value
+        AppToast.show(this, "怀旧色调：${labels[options.indexOf(value)]}")
+    }
+}
+
+// v52.13: 淡出时长
+internal fun PlayerActivity.showFadeOutDurationDialog() {
+    val options = listOf(0, 1, 2, 3, 4, 5)
+    val labels = listOf("0秒", "1秒", "2秒", "3秒", "4秒", "5秒")
+    val currentIndex = options.indexOf(BiliClient.prefs.fade_out_duration).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "淡出时长",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> labels[options.indexOf(v)] },
+    ) { value ->
+        BiliClient.prefs.fade_out_duration = value
+        AppToast.show(this, "淡出时长：${labels[options.indexOf(value)]}")
+    }
+}
+
+// v52.14: 圆角半径
+internal fun PlayerActivity.showCornerRadiusDialog() {
+    val options = listOf(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20)
+    val labels = listOf("0px", "1px", "2px", "3px", "4px", "5px", "6px", "7px", "8px", "9px", "10px", "11px", "12px", "13px", "14px", "15px", "16px", "17px", "18px", "19px", "20px")
+    val currentIndex = options.indexOf(BiliClient.prefs.corner_radius).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "圆角半径",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> labels[options.indexOf(v)] },
+    ) { value ->
+        BiliClient.prefs.corner_radius = value
+        AppToast.show(this, "圆角半径：${labels[options.indexOf(value)]}")
+    }
+}
+
+// v52.15: 自动播放
+internal fun PlayerActivity.showAutoPlayToggle() {
+    val enabled = !BiliClient.prefs.auto_play
+    BiliClient.prefs.auto_play = enabled
+    AppToast.show(this, "自动播放：${if (enabled) "开启" else "关闭"}")
+}
+
+// v53.1: 循环范围
+internal fun PlayerActivity.showLoopRangeDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val labels = listOf("0", "1", "2", "3")
+    val currentIndex = options.indexOf(BiliClient.prefs.loop_range).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "循环范围",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> labels[options.indexOf(v)] },
+    ) { value ->
+        BiliClient.prefs.loop_range = value
+        AppToast.show(this, "循环范围：${labels[options.indexOf(value)]}")
+    }
+}
+
+// v53.2: 字体装饰
+internal fun PlayerActivity.showFontDecorationDialog() {
+    val options = listOf(0, 1, 2, 3, 4)
+    val labels = listOf("0", "1", "2", "3", "4")
+    val currentIndex = options.indexOf(BiliClient.prefs.font_decoration).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "字体装饰",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> labels[options.indexOf(v)] },
+    ) { value ->
+        BiliClient.prefs.font_decoration = value
+        AppToast.show(this, "字体装饰：${labels[options.indexOf(value)]}")
+    }
+}
+
+// v53.3: 交叉处理
+internal fun PlayerActivity.showCrossProcessDialog() {
+    val options = listOf(0, 1, 2, 3, 4, 5)
+    val labels = listOf("0", "1", "2", "3", "4", "5")
+    val currentIndex = options.indexOf(BiliClient.prefs.cross_process).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "交叉处理",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> labels[options.indexOf(v)] },
+    ) { value ->
+        BiliClient.prefs.cross_process = value
+        AppToast.show(this, "交叉处理：${labels[options.indexOf(value)]}")
+    }
+}
+
+// v53.4: 动态压缩
+internal fun PlayerActivity.showDynamicCompressorToggle() {
+    val enabled = !BiliClient.prefs.dynamic_compressor
+    BiliClient.prefs.dynamic_compressor = enabled
+    AppToast.show(this, "动态压缩：${if (enabled) "开启" else "关闭"}")
+}
+
+// v53.5: 速度模式
+internal fun PlayerActivity.showSpeedModeDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val labels = listOf("0", "1", "2", "3")
+    val currentIndex = options.indexOf(BiliClient.prefs.speed_mode).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "速度模式",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> labels[options.indexOf(v)] },
+    ) { value ->
+        BiliClient.prefs.speed_mode = value
+        AppToast.show(this, "速度模式：${labels[options.indexOf(value)]}")
+    }
+}
+
+// v53.6: 播放控制
+internal fun PlayerActivity.showPlaybackControlToggle() {
+    val enabled = !BiliClient.prefs.playback_control
+    BiliClient.prefs.playback_control = enabled
+    AppToast.show(this, "播放控制：${if (enabled) "开启" else "关闭"}")
+}
+
+// v53.7: 亮度步长
+internal fun PlayerActivity.showBrightnessStepDialog() {
+    val options = listOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+    val labels = listOf("1", "2", "3", "4", "5", "6", "7", "8", "9", "10")
+    val currentIndex = options.indexOf(BiliClient.prefs.brightness_step).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "亮度步长",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> labels[options.indexOf(v)] },
+    ) { value ->
+        BiliClient.prefs.brightness_step = value
+        AppToast.show(this, "亮度步长：${labels[options.indexOf(value)]}")
+    }
+}
+
+// v53.8: 过滤重复
+internal fun PlayerActivity.showFilterRepeatedDialog() {
+    val options = listOf(0, 1, 2, 3, 4, 5)
+    val labels = listOf("0", "1", "2", "3", "4", "5")
+    val currentIndex = options.indexOf(BiliClient.prefs.filter_repeated).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "过滤重复",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> labels[options.indexOf(v)] },
+    ) { value ->
+        BiliClient.prefs.filter_repeated = value
+        AppToast.show(this, "过滤重复：${labels[options.indexOf(value)]}")
+    }
+}
+
+// v53.9: 自适应比特率
+internal fun PlayerActivity.showAdaptiveBitrateToggle() {
+    val enabled = !BiliClient.prefs.adaptive_bitrate
+    BiliClient.prefs.adaptive_bitrate = enabled
+    AppToast.show(this, "自适应比特率：${if (enabled) "开启" else "关闭"}")
+}
+
+// v53.10: 进度条渐变
+internal fun PlayerActivity.showProgressBarGradientToggle() {
+    val enabled = !BiliClient.prefs.progress_bar_gradient
+    BiliClient.prefs.progress_bar_gradient = enabled
+    AppToast.show(this, "进度条渐变：${if (enabled) "开启" else "关闭"}")
+}
+
+// v53.11: 发送阴影
+internal fun PlayerActivity.showSendShadowToggle() {
+    val enabled = !BiliClient.prefs.send_shadow
+    BiliClient.prefs.send_shadow = enabled
+    AppToast.show(this, "发送阴影：${if (enabled) "开启" else "关闭"}")
+}
+
+// v53.12: 反色模式
+internal fun PlayerActivity.showInvertModeToggle() {
+    val enabled = !BiliClient.prefs.invert_mode
+    BiliClient.prefs.invert_mode = enabled
+    AppToast.show(this, "反色模式：${if (enabled) "开启" else "关闭"}")
+}
+
+// v53.13: 前置放大
+internal fun PlayerActivity.showPreAmpDialog() {
+    val options = listOf(-20, -19, -18, -17, -16, -15, -14, -13, -12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20)
+    val labels = listOf("-20dB", "-19dB", "-18dB", "-17dB", "-16dB", "-15dB", "-14dB", "-13dB", "-12dB", "-11dB", "-10dB", "-9dB", "-8dB", "-7dB", "-6dB", "-5dB", "-4dB", "-3dB", "-2dB", "-1dB", "0dB", "1dB", "2dB", "3dB", "4dB", "5dB", "6dB", "7dB", "8dB", "9dB", "10dB", "11dB", "12dB", "13dB", "14dB", "15dB", "16dB", "17dB", "18dB", "19dB", "20dB")
+    val currentIndex = options.indexOf(BiliClient.prefs.pre_amp).takeIf { it >= 0 } ?: 20
+    showSettingsChoiceDialog(
+        title = "前置放大",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> labels[options.indexOf(v)] },
+    ) { value ->
+        BiliClient.prefs.pre_amp = value
+        AppToast.show(this, "前置放大：${labels[options.indexOf(value)]}")
+    }
+}
+
+// v53.14: 背景垂直内边距
+internal fun PlayerActivity.showBgPaddingVDialog() {
+    val options = listOf(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+    val labels = listOf("0px", "1px", "2px", "3px", "4px", "5px", "6px", "7px", "8px", "9px", "10px")
+    val currentIndex = options.indexOf(BiliClient.prefs.bg_padding_v).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "背景垂直内边距",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> labels[options.indexOf(v)] },
+    ) { value ->
+        BiliClient.prefs.bg_padding_v = value
+        AppToast.show(this, "背景垂直内边距：${labels[options.indexOf(value)]}")
+    }
+}
+
+// v53.15: HDCP要求
+internal fun PlayerActivity.showHdcpRequiredToggle() {
+    val enabled = !BiliClient.prefs.hdcp_required
+    BiliClient.prefs.hdcp_required = enabled
+    AppToast.show(this, "HDCP要求：${if (enabled) "开启" else "关闭"}")
+}
+
+// v54.1: 画中画模式
+internal fun PlayerActivity.showPipModeDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val labels = listOf("0", "1", "2", "3")
+    val currentIndex = options.indexOf(BiliClient.prefs.pip_mode).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "画中画模式",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> labels[options.indexOf(v)] },
+    ) { value ->
+        BiliClient.prefs.pip_mode = value
+        AppToast.show(this, "画中画模式：${labels[options.indexOf(value)]}")
+    }
+}
+
+// v54.2: 字体族
+internal fun PlayerActivity.showFontFamilyDialog() {
+    val options = listOf(0, 1, 2, 3, 4, 5)
+    val labels = listOf("0", "1", "2", "3", "4", "5")
+    val currentIndex = options.indexOf(BiliClient.prefs.font_family).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "字体族",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> labels[options.indexOf(v)] },
+    ) { value ->
+        BiliClient.prefs.font_family = value
+        AppToast.show(this, "字体族：${labels[options.indexOf(value)]}")
+    }
+}
+
+// v54.3: 双色调
+internal fun PlayerActivity.showDuotoneDialog() {
+    val options = listOf(0, 1, 2, 3, 4, 5, 6)
+    val labels = listOf("0", "1", "2", "3", "4", "5", "6")
+    val currentIndex = options.indexOf(BiliClient.prefs.duotone).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "双色调",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> labels[options.indexOf(v)] },
+    ) { value ->
+        BiliClient.prefs.duotone = value
+        AppToast.show(this, "双色调：${labels[options.indexOf(value)]}")
+    }
+}
+
+// v54.4: 均衡器预设
+internal fun PlayerActivity.showEqualizerPresetDialog() {
+    val options = listOf(0, 1, 2, 3, 4, 5, 6, 7, 8)
+    val labels = listOf("0", "1", "2", "3", "4", "5", "6", "7", "8")
+    val currentIndex = options.indexOf(BiliClient.prefs.equalizer_preset).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "均衡器预设",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> labels[options.indexOf(v)] },
+    ) { value ->
+        BiliClient.prefs.equalizer_preset = value
+        AppToast.show(this, "均衡器预设：${labels[options.indexOf(value)]}")
+    }
+}
+
+// v54.5: 顶部区域
+internal fun PlayerActivity.showTopAreaDialog() {
+    val options = listOf(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100)
+    val labels = listOf("0%", "1%", "2%", "3%", "4%", "5%", "6%", "7%", "8%", "9%", "10%", "11%", "12%", "13%", "14%", "15%", "16%", "17%", "18%", "19%", "20%", "21%", "22%", "23%", "24%", "25%", "26%", "27%", "28%", "29%", "30%", "31%", "32%", "33%", "34%", "35%", "36%", "37%", "38%", "39%", "40%", "41%", "42%", "43%", "44%", "45%", "46%", "47%", "48%", "49%", "50%", "51%", "52%", "53%", "54%", "55%", "56%", "57%", "58%", "59%", "60%", "61%", "62%", "63%", "64%", "65%", "66%", "67%", "68%", "69%", "70%", "71%", "72%", "73%", "74%", "75%", "76%", "77%", "78%", "79%", "80%", "81%", "82%", "83%", "84%", "85%", "86%", "87%", "88%", "89%", "90%", "91%", "92%", "93%", "94%", "95%", "96%", "97%", "98%", "99%", "100%")
+    val currentIndex = options.indexOf(BiliClient.prefs.top_area).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "顶部区域",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> labels[options.indexOf(v)] },
+    ) { value ->
+        BiliClient.prefs.top_area = value
+        AppToast.show(this, "顶部区域：${labels[options.indexOf(value)]}")
+    }
+}
+
+// v54.6: 循环模式
+internal fun PlayerActivity.showLoopModeDialog() {
+    val options = listOf(0, 1, 2)
+    val labels = listOf("0", "1", "2")
+    val currentIndex = options.indexOf(BiliClient.prefs.loop_mode).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "循环模式",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> labels[options.indexOf(v)] },
+    ) { value ->
+        BiliClient.prefs.loop_mode = value
+        AppToast.show(this, "循环模式：${labels[options.indexOf(value)]}")
+    }
+}
+
+// v54.7: 双击动作
+internal fun PlayerActivity.showDoubleTapActionDialog() {
+    val options = listOf(0, 1, 2, 3, 4, 5)
+    val labels = listOf("0", "1", "2", "3", "4", "5")
+    val currentIndex = options.indexOf(BiliClient.prefs.double_tap_action).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "双击动作",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> labels[options.indexOf(v)] },
+    ) { value ->
+        BiliClient.prefs.double_tap_action = value
+        AppToast.show(this, "双击动作：${labels[options.indexOf(value)]}")
+    }
+}
+
+// v54.8: 过滤底部弹幕
+internal fun PlayerActivity.showFilterBottomToggle() {
+    val enabled = !BiliClient.prefs.filter_bottom
+    BiliClient.prefs.filter_bottom = enabled
+    AppToast.show(this, "过滤底部弹幕：${if (enabled) "开启" else "关闭"}")
+}
+
+// v54.9: P2P加速
+internal fun PlayerActivity.showP2PEnabledToggle() {
+    val enabled = !BiliClient.prefs.p2p_enabled
+    BiliClient.prefs.p2p_enabled = enabled
+    AppToast.show(this, "P2P加速：${if (enabled) "开启" else "关闭"}")
+}
+
+// v54.10: 进度条动画
+internal fun PlayerActivity.showProgressBarAnimationDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val labels = listOf("0", "1", "2", "3")
+    val currentIndex = options.indexOf(BiliClient.prefs.progress_bar_animation).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "进度条动画",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> labels[options.indexOf(v)] },
+    ) { value ->
+        BiliClient.prefs.progress_bar_animation = value
+        AppToast.show(this, "进度条动画：${labels[options.indexOf(value)]}")
+    }
+}
+
+// v54.11: 发送背景颜色
+internal fun PlayerActivity.showSendBgColorDialog() {
+    val options = listOf(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+    val labels = listOf("0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10")
+    val currentIndex = options.indexOf(BiliClient.prefs.send_bg_color).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "发送背景颜色",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> labels[options.indexOf(v)] },
+    ) { value ->
+        BiliClient.prefs.send_bg_color = value
+        AppToast.show(this, "发送背景颜色：${labels[options.indexOf(value)]}")
+    }
+}
+
+// v54.12: 色调分离
+internal fun PlayerActivity.showPosterizeDialog() {
+    val options = listOf(0, 1, 2, 3, 4, 5, 6, 7, 8)
+    val labels = listOf("0", "1", "2", "3", "4", "5", "6", "7", "8")
+    val currentIndex = options.indexOf(BiliClient.prefs.posterize).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "色调分离",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> labels[options.indexOf(v)] },
+    ) { value ->
+        BiliClient.prefs.posterize = value
+        AppToast.show(this, "色调分离：${labels[options.indexOf(value)]}")
+    }
+}
+
+// v54.13: 单声道混合
+internal fun PlayerActivity.showMonoMixToggle() {
+    val enabled = !BiliClient.prefs.mono_mix
+    BiliClient.prefs.mono_mix = enabled
+    AppToast.show(this, "单声道混合：${if (enabled) "开启" else "关闭"}")
+}
+
+// v54.14: 背景透明度
+internal fun PlayerActivity.showBgOpacityDialog() {
+    val options = listOf(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100)
+    val labels = listOf("0%", "1%", "2%", "3%", "4%", "5%", "6%", "7%", "8%", "9%", "10%", "11%", "12%", "13%", "14%", "15%", "16%", "17%", "18%", "19%", "20%", "21%", "22%", "23%", "24%", "25%", "26%", "27%", "28%", "29%", "30%", "31%", "32%", "33%", "34%", "35%", "36%", "37%", "38%", "39%", "40%", "41%", "42%", "43%", "44%", "45%", "46%", "47%", "48%", "49%", "50%", "51%", "52%", "53%", "54%", "55%", "56%", "57%", "58%", "59%", "60%", "61%", "62%", "63%", "64%", "65%", "66%", "67%", "68%", "69%", "70%", "71%", "72%", "73%", "74%", "75%", "76%", "77%", "78%", "79%", "80%", "81%", "82%", "83%", "84%", "85%", "86%", "87%", "88%", "89%", "90%", "91%", "92%", "93%", "94%", "95%", "96%", "97%", "98%", "99%", "100%")
+    val currentIndex = options.indexOf(BiliClient.prefs.bg_opacity).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "背景透明度",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> labels[options.indexOf(v)] },
+    ) { value ->
+        BiliClient.prefs.bg_opacity = value
+        AppToast.show(this, "背景透明度：${labels[options.indexOf(value)]}")
+    }
+}
+
+// v54.15: 扫描间隔
+internal fun PlayerActivity.showScanningIntervalDialog() {
+    val options = listOf(0, 1, 2, 3, 4, 5)
+    val labels = listOf("0秒", "1秒", "2秒", "3秒", "4秒", "5秒")
+    val currentIndex = options.indexOf(BiliClient.prefs.scanning_interval).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "扫描间隔",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> labels[options.indexOf(v)] },
+    ) { value ->
+        BiliClient.prefs.scanning_interval = value
+        AppToast.show(this, "扫描间隔：${labels[options.indexOf(value)]}")
+    }
+}
+
+// v55.1: 音频轨道记忆
+internal fun PlayerActivity.showAudioTrackMemoryToggle() {
+    val enabled = !BiliClient.prefs.audio_track_memory
+    BiliClient.prefs.audio_track_memory = enabled
+    AppToast.show(this, "音频轨道记忆：${if (enabled) "开启" else "关闭"}")
+}
+
+// v55.2: 字体模糊
+internal fun PlayerActivity.showFontBlurDialog() {
+    val options = listOf(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+    val labels = listOf("0px", "1px", "2px", "3px", "4px", "5px", "6px", "7px", "8px", "9px", "10px")
+    val currentIndex = options.indexOf(BiliClient.prefs.font_blur).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "字体模糊",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> labels[options.indexOf(v)] },
+    ) { value ->
+        BiliClient.prefs.font_blur = value
+        AppToast.show(this, "字体模糊：${labels[options.indexOf(value)]}")
+    }
+}
+
+// v55.3: 声道混合器
+internal fun PlayerActivity.showChannelMixerDialog() {
+    val options = listOf(0, 1, 2, 3, 4, 5, 6)
+    val labels = listOf("0", "1", "2", "3", "4", "5", "6")
+    val currentIndex = options.indexOf(BiliClient.prefs.channel_mixer).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "声道混合器",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> labels[options.indexOf(v)] },
+    ) { value ->
+        BiliClient.prefs.channel_mixer = value
+        AppToast.show(this, "声道混合器：${labels[options.indexOf(value)]}")
+    }
+}
+
+// v55.4: 交叉馈送
+internal fun PlayerActivity.showCrossfeedDialog() {
+    val options = listOf(0, 1, 2, 3, 4, 5)
+    val labels = listOf("0", "1", "2", "3", "4", "5")
+    val currentIndex = options.indexOf(BiliClient.prefs.crossfeed).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "交叉馈送",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> labels[options.indexOf(v)] },
+    ) { value ->
+        BiliClient.prefs.crossfeed = value
+        AppToast.show(this, "交叉馈送：${labels[options.indexOf(value)]}")
+    }
+}
+
+// v55.5: 底部区域
+internal fun PlayerActivity.showBottomAreaDialog() {
+    val options = listOf(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100)
+    val labels = listOf("0%", "1%", "2%", "3%", "4%", "5%", "6%", "7%", "8%", "9%", "10%", "11%", "12%", "13%", "14%", "15%", "16%", "17%", "18%", "19%", "20%", "21%", "22%", "23%", "24%", "25%", "26%", "27%", "28%", "29%", "30%", "31%", "32%", "33%", "34%", "35%", "36%", "37%", "38%", "39%", "40%", "41%", "42%", "43%", "44%", "45%", "46%", "47%", "48%", "49%", "50%", "51%", "52%", "53%", "54%", "55%", "56%", "57%", "58%", "59%", "60%", "61%", "62%", "63%", "64%", "65%", "66%", "67%", "68%", "69%", "70%", "71%", "72%", "73%", "74%", "75%", "76%", "77%", "78%", "79%", "80%", "81%", "82%", "83%", "84%", "85%", "86%", "87%", "88%", "89%", "90%", "91%", "92%", "93%", "94%", "95%", "96%", "97%", "98%", "99%", "100%")
+    val currentIndex = options.indexOf(BiliClient.prefs.bottom_area).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "底部区域",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> labels[options.indexOf(v)] },
+    ) { value ->
+        BiliClient.prefs.bottom_area = value
+        AppToast.show(this, "底部区域：${labels[options.indexOf(value)]}")
+    }
+}
+
+// v55.6: 网络优先级
+internal fun PlayerActivity.showNetworkPriorityDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val labels = listOf("0", "1", "2", "3")
+    val currentIndex = options.indexOf(BiliClient.prefs.network_priority).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "网络优先级",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> labels[options.indexOf(v)] },
+    ) { value ->
+        BiliClient.prefs.network_priority = value
+        AppToast.show(this, "网络优先级：${labels[options.indexOf(value)]}")
+    }
+}
+
+// v55.7: 三击动作
+internal fun PlayerActivity.showTripleTapActionDialog() {
+    val options = listOf(0, 1, 2, 3, 4)
+    val labels = listOf("0", "1", "2", "3", "4")
+    val currentIndex = options.indexOf(BiliClient.prefs.triple_tap_action).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "三击动作",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> labels[options.indexOf(v)] },
+    ) { value ->
+        BiliClient.prefs.triple_tap_action = value
+        AppToast.show(this, "三击动作：${labels[options.indexOf(value)]}")
+    }
+}
+
+// v55.8: 过滤系统弹幕
+internal fun PlayerActivity.showFilterSystemToggle() {
+    val enabled = !BiliClient.prefs.filter_system
+    BiliClient.prefs.filter_system = enabled
+    AppToast.show(this, "过滤系统弹幕：${if (enabled) "开启" else "关闭"}")
+}
+
+// v55.9: 比特率估计
+internal fun PlayerActivity.showBitrateEstimationToggle() {
+    val enabled = !BiliClient.prefs.bitrate_estimation
+    BiliClient.prefs.bitrate_estimation = enabled
+    AppToast.show(this, "比特率估计：${if (enabled) "开启" else "关闭"}")
+}
+
+// v55.10: 悬停效果
+internal fun PlayerActivity.showHoverEffectToggle() {
+    val enabled = !BiliClient.prefs.hover_effect
+    BiliClient.prefs.hover_effect = enabled
+    AppToast.show(this, "悬停效果：${if (enabled) "开启" else "关闭"}")
+}
+
+// v55.11: 发送描边
+internal fun PlayerActivity.showSendOutlineToggle() {
+    val enabled = !BiliClient.prefs.send_outline
+    BiliClient.prefs.send_outline = enabled
+    AppToast.show(this, "发送描边：${if (enabled) "开启" else "关闭"}")
+}
+
+// v55.12: 色调映射
+internal fun PlayerActivity.showToneMappingDialog() {
+    val options = listOf(0, 1, 2, 3, 4)
+    val labels = listOf("0", "1", "2", "3", "4")
+    val currentIndex = options.indexOf(BiliClient.prefs.tone_mapping).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "色调映射",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> labels[options.indexOf(v)] },
+    ) { value ->
+        BiliClient.prefs.tone_mapping = value
+        AppToast.show(this, "色调映射：${labels[options.indexOf(value)]}")
+    }
+}
+
+// v55.13: 音量闪避
+internal fun PlayerActivity.showVolumeDuckingToggle() {
+    val enabled = !BiliClient.prefs.volume_ducking
+    BiliClient.prefs.volume_ducking = enabled
+    AppToast.show(this, "音量闪避：${if (enabled) "开启" else "关闭"}")
+}
+
+// v55.14: 背景水平内边距
+internal fun PlayerActivity.showBgPaddingHDialog() {
+    val options = listOf(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20)
+    val labels = listOf("0px", "1px", "2px", "3px", "4px", "5px", "6px", "7px", "8px", "9px", "10px", "11px", "12px", "13px", "14px", "15px", "16px", "17px", "18px", "19px", "20px")
+    val currentIndex = options.indexOf(BiliClient.prefs.bg_padding_h).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "背景水平内边距",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> labels[options.indexOf(v)] },
+    ) { value ->
+        BiliClient.prefs.bg_padding_h = value
+        AppToast.show(this, "背景水平内边距：${labels[options.indexOf(value)]}")
+    }
+}
+
+// v55.15: 网络唤醒
+internal fun PlayerActivity.showWakeOnLanToggle() {
+    val enabled = !BiliClient.prefs.wake_on_lan
+    BiliClient.prefs.wake_on_lan = enabled
+    AppToast.show(this, "网络唤醒：${if (enabled) "开启" else "关闭"}")
+}
