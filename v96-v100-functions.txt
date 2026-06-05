@@ -1,0 +1,97 @@
+v96-v100 Dialog Functions (Total: 75)
+============================================================
+
+v96
+----------------------------------------
+ 1. StartupAutoQuality(bool) -> Toggle
+ 2. FontWeight7(int 100-900) -> ChoiceDialog
+ 3. SplitScreen(int 0-4) -> ChoiceDialog
+ 4. DialogShowMeter(bool) -> Toggle
+ 5. ScrollStyle(int 0-3) -> ChoiceDialog
+ 6. SubtitleBgBlur4(int 0-20) -> ChoiceDialog
+ 7. SwipeAction11(int 0-5) -> ChoiceDialog
+ 8. FilterSmartAuto(bool) -> Toggle
+ 9. HttpProxyVerify(bool) -> Toggle
+10. MarkColor4(int 0-10) -> ChoiceDialog
+11. SendBgBorderType2(int 0-3) -> ChoiceDialog
+12. ChromaticAberration2(int 0-100) -> ChoiceDialog
+13. BoostOnStream(bool) -> Toggle
+14. BgPaddingCustom7(int 0-30) -> ChoiceDialog
+15. SubtitleBgColor4(int 0-10) -> ChoiceDialog
+
+v97
+----------------------------------------
+16. StartupLowLatency(bool) -> Toggle
+17. FontWeight8(int 100-900) -> ChoiceDialog
+18. LetterBox2(int 0-10) -> ChoiceDialog
+19. DialogShowWaveform(bool) -> Toggle
+20. ScrollColor(int 0-10) -> ChoiceDialog
+21. SubtitleBgBorder4(int 0-5) -> ChoiceDialog
+22. SwipeAction12(int 0-5) -> ChoiceDialog
+23. FilterSmartCache(bool) -> Toggle
+24. HttpProxyAuth3(bool) -> Toggle
+25. MarkSize3(int 0-10) -> ChoiceDialog
+26. SendBgPadding7(int 0-10) -> ChoiceDialog
+27. FilmBurn2(int 0-100) -> ChoiceDialog
+28. BoostOnLive(bool) -> Toggle
+29. BgPaddingCustom8(int 0-30) -> ChoiceDialog
+30. SubtitleBgBorderRadius4(int 0-20) -> ChoiceDialog
+
+v98
+----------------------------------------
+31. StartupThreadCount(int 0-8) -> ChoiceDialog
+32. FontWeight9(int 100-900) -> ChoiceDialog
+33. LetterBox3(int 0-10) -> ChoiceDialog
+34. DialogShowSpectrum(bool) -> Toggle
+35. ScrollFont(int 0-5) -> ChoiceDialog
+36. SubtitleBgOpacity4(int 0-100) -> ChoiceDialog
+37. SwipeAction13(int 0-5) -> ChoiceDialog
+38. FilterSmartUpdate(bool) -> Toggle
+39. HttpProxyAuth4(bool) -> Toggle
+40. MarkPosition3(int 0-3) -> ChoiceDialog
+41. SendBgPadding8(int 0-10) -> ChoiceDialog
+42. LetterBox4(int 0-10) -> ChoiceDialog
+43. BoostOnVod(bool) -> Toggle
+44. BgPaddingCustom9(int 0-30) -> ChoiceDialog
+45. SubtitleBgBlur5(int 0-20) -> ChoiceDialog
+
+v99
+----------------------------------------
+46. StartupBufferMs(int 0-5) -> ChoiceDialog
+47. FontWeight10(int 100-900) -> ChoiceDialog
+48. LetterBox5(int 0-10) -> ChoiceDialog
+49. DialogShowVu(bool) -> Toggle
+50. ScrollWeight(int 100-900) -> ChoiceDialog
+51. SubtitleBgBorder5(int 0-5) -> ChoiceDialog
+52. SwipeAction14(int 0-5) -> ChoiceDialog
+53. FilterSmartSync(bool) -> Toggle
+54. HttpProxyAuth5(bool) -> Toggle
+55. MarkSize4(int 0-10) -> ChoiceDialog
+56. SendBgPadding9(int 0-10) -> ChoiceDialog
+57. LetterBox6(int 0-10) -> ChoiceDialog
+58. BoostOnShort(bool) -> Toggle
+59. BgPaddingCustom10(int 0-30) -> ChoiceDialog
+60. SubtitleBgBorderRadius5(int 0-20) -> ChoiceDialog
+
+v100
+----------------------------------------
+61. StartupRenderer2(int 0-3) -> ChoiceDialog
+62. FontWeightFinal(int 100-900) -> ChoiceDialog
+63. LetterBoxFinal(int 0-10) -> ChoiceDialog
+64. DialogShowFinal(bool) -> Toggle
+65. ScrollFinal(int 0-3) -> ChoiceDialog
+66. SubtitleBgFinal(int 0-10) -> ChoiceDialog
+67. SwipeActionFinal(int 0-5) -> ChoiceDialog
+68. FilterSmartFinal(bool) -> Toggle
+69. HttpProxyFinal(bool) -> Toggle
+70. MarkFinal(int 0-3) -> ChoiceDialog
+71. SendBgPaddingFinal(int 0-10) -> ChoiceDialog
+72. LetterBoxFinal2(int 0-10) -> ChoiceDialog
+73. BoostFinal(bool) -> Toggle
+74. BgPaddingFinal(int 0-30) -> ChoiceDialog
+75. SubtitleBgFinal2(int 0-10) -> ChoiceDialog
+
+
+Total: 75 functions
+Bool -> Toggle: 22
+Int  -> ChoiceDialog: 53
