@@ -1,6 +1,9 @@
 name: Android Debug
 
 on:
+  push:
+    tags:
+      - 'v*'
   workflow_dispatch:
     inputs:
       version_name:
@@ -24,10 +27,28 @@ jobs:
           distribution: "temurin"
           java-version: "17"
           cache: "gradle"
+      - name: Determine version
+        id: version
+        run: |
+          if [ "${{ github.event_name }}" = "push" ]; then
+            # Tag push: extract version from tag ref
+            TAG="${GITHUB_REF#refs/tags/}"
+            echo "version_name=${TAG}" >> "$GITHUB_OUTPUT"
+            echo "release_tag=${TAG}" >> "$GITHUB_OUTPUT"
+          else
+            # Manual dispatch: use input
+            VN="${{ inputs.version_name }}"
+            echo "version_name=${VN}" >> "$GITHUB_OUTPUT"
+            if [[ "$VN" == v* ]]; then
+              echo "release_tag=${VN}" >> "$GITHUB_OUTPUT"
+            else
+              echo "release_tag=v${VN}" >> "$GITHUB_OUTPUT"
+            fi
+          fi
       - name: Grant execute permission for gradlew
         run: chmod +x ./gradlew
       - name: Build debug APK
-        run: ./gradlew assembleDebug -PversionName=${{ inputs.version_name }} -PversionCode=${{ github.run_number }}
+        run: ./gradlew assembleDebug -PversionName=${{ steps.version.outputs.version_name }} -PversionCode=${{ github.run_number }}
       - name: Upload debug APK to R2 (optional)
         env:
           R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
@@ -35,7 +56,7 @@ jobs:
           R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID || vars.R2_ACCOUNT_ID }}
           R2_BUCKET: ${{ secrets.R2_BUCKET || vars.R2_BUCKET }}
           R2_PREFIX: ${{ vars.R2_PREFIX || secrets.R2_PREFIX }}
-          VERSION_NAME: ${{ inputs.version_name }}
+          VERSION_NAME: ${{ steps.version.outputs.version_name }}
         run: |
           set -euo pipefail
           if [ -z "${R2_ACCESS_KEY_ID:-}" ] || [ -z "${R2_SECRET_ACCESS_KEY:-}" ] || [ -z "${R2_ACCOUNT_ID:-}" ] || [ -z "${R2_BUCKET:-}" ]; then
@@ -60,14 +81,11 @@ jobs:
           if [ -n "${KEY_PREFIX}" ]; then
             KEY_PREFIX="${KEY_PREFIX}/"
           fi
-          if [ ! -s CHANGELOG.md ]; then
-            echo "CHANGELOG.md missing or empty."
-            exit 1
+          if [ -s CHANGELOG.md ]; then
+            printf '%s' "${CLEAN_VERSION}" > version
+            aws s3 cp "version" "s3://${R2_BUCKET}/${KEY_PREFIX}version" --endpoint-url "${ENDPOINT}" --content-type "text/plain" --cache-control "no-cache"
+            aws s3 cp "CHANGELOG.md" "s3://${R2_BUCKET}/${KEY_PREFIX}CHANGELOG.md" --endpoint-url "${ENDPOINT}" --content-type "text/markdown; charset=utf-8" --cache-control "no-cache"
           fi
-
-          printf '%s' "${CLEAN_VERSION}" > version
-          aws s3 cp "version" "s3://${R2_BUCKET}/${KEY_PREFIX}version" --endpoint-url "${ENDPOINT}" --content-type "text/plain" --cache-control "no-cache"
-          aws s3 cp "CHANGELOG.md" "s3://${R2_BUCKET}/${KEY_PREFIX}CHANGELOG.md" --endpoint-url "${ENDPOINT}" --content-type "text/markdown; charset=utf-8" --cache-control "no-cache"
           aws s3 cp "app/build/outputs/apk/debug/app-debug.apk" "s3://${R2_BUCKET}/${KEY_PREFIX}blbl-${CLEAN_VERSION}-debug.apk" --endpoint-url "${ENDPOINT}" --content-type "application/vnd.android.package-archive"
           aws s3 cp "app/build/outputs/apk/debug/app-debug.apk" "s3://${R2_BUCKET}/${KEY_PREFIX}blbl-latest-debug.apk" --endpoint-url "${ENDPOINT}" --content-type "application/vnd.android.package-archive" --cache-control "no-cache"
       - name: Upload debug APK
@@ -78,9 +96,9 @@ jobs:
       - name: Publish debug APK to GitHub Release
         env:
           GH_TOKEN: ${{ github.token }}
-          VERSION_NAME: ${{ inputs.version_name }}
-          RELEASE_TAG: ${{ startsWith(inputs.version_name, 'v') && inputs.version_name || format('v{0}', inputs.version_name) }}
-          CHANGELOG: ${{ inputs.changelog }}
+          VERSION_NAME: ${{ steps.version.outputs.version_name }}
+          RELEASE_TAG: ${{ steps.version.outputs.release_tag }}
+          CHANGELOG: ${{ inputs.changelog || '' }}
         run: |
           if gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
             if [ -n "${CHANGELOG:-}" ]; then
