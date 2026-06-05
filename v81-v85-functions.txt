@@ -1,0 +1,829 @@
+========================================================================
+v81-v85 对话框函数清单 (75个)
+规则: Bool -> Toggle对话框, Int -> ChoiceDialog对话框
+========================================================================
+
+------------------------------------------------------------------------
+  v81.x
+------------------------------------------------------------------------
+
+  [01] StartupDenoise()
+       类型: Toggle
+       SP键: keystartupDenoise
+       SP.getBool(keystartupDenoise, false)
+       new Toggle(this, getString(R.string.startupDenoise), keystartupDenoise) {
+           @Override protected void onToggle(boolean value) {
+               SP.set(keystartupDenoise, value);
+           }
+       };
+
+  [02] FontWeightAuto()
+       类型: Toggle
+       SP键: keyfontWeightAuto
+       SP.getBool(keyfontWeightAuto, false)
+       new Toggle(this, getString(R.string.fontWeightAuto), keyfontWeightAuto) {
+           @Override protected void onToggle(boolean value) {
+               SP.set(keyfontWeightAuto, value);
+           }
+       };
+
+  [03] NoiseReduction()
+       类型: ChoiceDialog
+       范围: 0-100 (101个选项)
+       SP键: keynoiseReduction
+       SP.getInt(keynoiseReduction, 0)
+       new ChoiceDialog(this, getString(R.string.noiseReduction), 101) {
+           @Override protected void onChoice(int value) {
+               SP.set(keynoiseReduction, value);
+           }
+       };
+
+  [04] DialogCompact()
+       类型: Toggle
+       SP键: keydialogCompact
+       SP.getBool(keydialogCompact, false)
+       new Toggle(this, getString(R.string.dialogCompact), keydialogCompact) {
+           @Override protected void onToggle(boolean value) {
+               SP.set(keydialogCompact, value);
+           }
+       };
+
+  [05] FixedPosition2()
+       类型: ChoiceDialog
+       范围: 0-100 (101个选项)
+       SP键: keyfixedPosition2
+       SP.getInt(keyfixedPosition2, 0)
+       new ChoiceDialog(this, getString(R.string.fixedPosition2), 101) {
+           @Override protected void onChoice(int value) {
+               SP.set(keyfixedPosition2, value);
+           }
+       };
+
+  [06] Prebuffer()
+       类型: ChoiceDialog
+       范围: 0-10 (11个选项)
+       SP键: keyprebuffer
+       SP.getInt(keyprebuffer, 0)
+       new ChoiceDialog(this, getString(R.string.prebuffer), 11) {
+           @Override protected void onChoice(int value) {
+               SP.set(keyprebuffer, value);
+           }
+       };
+
+  [07] SwipeInertia()
+       类型: Toggle
+       SP键: keyswipeInertia
+       SP.getBool(keyswipeInertia, false)
+       new Toggle(this, getString(R.string.swipeInertia), keyswipeInertia) {
+           @Override protected void onToggle(boolean value) {
+               SP.set(keyswipeInertia, value);
+           }
+       };
+
+  [08] FilterImage()
+       类型: Toggle
+       SP键: keyfilterImage
+       SP.getBool(keyfilterImage, false)
+       new Toggle(this, getString(R.string.filterImage), keyfilterImage) {
+           @Override protected void onToggle(boolean value) {
+               SP.set(keyfilterImage, value);
+           }
+       };
+
+  [09] SegmentDuration()
+       类型: ChoiceDialog
+       范围: 0-5 (6个选项)
+       SP键: keysegmentDuration
+       SP.getInt(keysegmentDuration, 0)
+       new ChoiceDialog(this, getString(R.string.segmentDuration), 6) {
+           @Override protected void onChoice(int value) {
+               SP.set(keysegmentDuration, value);
+           }
+       };
+
+  [10] ShowPercent()
+       类型: Toggle
+       SP键: keyshowPercent
+       SP.getBool(keyshowPercent, false)
+       new Toggle(this, getString(R.string.showPercent), keyshowPercent) {
+           @Override protected void onToggle(boolean value) {
+               SP.set(keyshowPercent, value);
+           }
+       };
+
+  [11] SendBgStroke()
+       类型: Toggle
+       SP键: keysendBgStroke
+       SP.getBool(keysendBgStroke, false)
+       new Toggle(this, getString(R.string.sendBgStroke), keysendBgStroke) {
+           @Override protected void onToggle(boolean value) {
+               SP.set(keysendBgStroke, value);
+           }
+       };
+
+  [12] VignetteColor()
+       类型: ChoiceDialog
+       范围: 0-10 (11个选项)
+       SP键: keyvignetteColor
+       SP.getInt(keyvignetteColor, 0)
+       new ChoiceDialog(this, getString(R.string.vignetteColor), 11) {
+           @Override protected void onChoice(int value) {
+               SP.set(keyvignetteColor, value);
+           }
+       };
+
+  [13] HeadphoneBoost()
+       类型: Toggle
+       SP键: keyheadphoneBoost
+       SP.getBool(keyheadphoneBoost, false)
+       new Toggle(this, getString(R.string.headphoneBoost), keyheadphoneBoost) {
+           @Override protected void onToggle(boolean value) {
+               SP.set(keyheadphoneBoost, value);
+           }
+       };
+
+  [14] BgShadowAuto()
+       类型: Toggle
+       SP键: keybgShadowAuto
+       SP.getBool(keybgShadowAuto, false)
+       new Toggle(this, getString(R.string.bgShadowAuto), keybgShadowAuto) {
+           @Override protected void onToggle(boolean value) {
+               SP.set(keybgShadowAuto, value);
+           }
+       };
+
+  [15] SubtitleEncoding()
+       类型: ChoiceDialog
+       范围: 0-5 (6个选项)
+       SP键: keysubtitleEncoding
+       SP.getInt(keysubtitleEncoding, 0)
+       new ChoiceDialog(this, getString(R.string.subtitleEncoding), 6) {
+           @Override protected void onChoice(int value) {
+               SP.set(keysubtitleEncoding, value);
+           }
+       };
+
+------------------------------------------------------------------------
+  v82.x
+------------------------------------------------------------------------
+
+  [16] StartupSharpen()
+       类型: ChoiceDialog
+       范围: 0-100 (101个选项)
+       SP键: keystartupSharpen
+       SP.getInt(keystartupSharpen, 0)
+       new ChoiceDialog(this, getString(R.string.startupSharpen), 101) {
+           @Override protected void onChoice(int value) {
+               SP.set(keystartupSharpen, value);
+           }
+       };
+
+  [17] FontPadding()
+       类型: ChoiceDialog
+       范围: 0-20 (21个选项)
+       SP键: keyfontPadding
+       SP.getInt(keyfontPadding, 0)
+       new ChoiceDialog(this, getString(R.string.fontPadding), 21) {
+           @Override protected void onChoice(int value) {
+               SP.set(keyfontPadding, value);
+           }
+       };
+
+  [18] DepthOfField()
+       类型: ChoiceDialog
+       范围: 0-100 (101个选项)
+       SP键: keydepthOfField
+       SP.getInt(keydepthOfField, 0)
+       new ChoiceDialog(this, getString(R.string.depthOfField), 101) {
+           @Override protected void onChoice(int value) {
+               SP.set(keydepthOfField, value);
+           }
+       };
+
+  [19] CompressorSidechain()
+       类型: Toggle
+       SP键: keycompressorSidechain
+       SP.getBool(keycompressorSidechain, false)
+       new Toggle(this, getString(R.string.compressorSidechain), keycompressorSidechain) {
+           @Override protected void onToggle(boolean value) {
+               SP.set(keycompressorSidechain, value);
+           }
+       };
+
+  [20] ScrollSpacing()
+       类型: ChoiceDialog
+       范围: 0-20 (21个选项)
+       SP键: keyscrollSpacing
+       SP.getInt(keyscrollSpacing, 0)
+       new ChoiceDialog(this, getString(R.string.scrollSpacing), 21) {
+           @Override protected void onChoice(int value) {
+               SP.set(keyscrollSpacing, value);
+           }
+       };
+
+  [21] DlnaMode()
+       类型: Toggle
+       SP键: keydlnaMode
+       SP.getBool(keydlnaMode, false)
+       new Toggle(this, getString(R.string.dlnaMode), keydlnaMode) {
+           @Override protected void onToggle(boolean value) {
+               SP.set(keydlnaMode, value);
+           }
+       };
+
+  [22] LongPressFeedback()
+       类型: ChoiceDialog
+       范围: 0-3 (4个选项)
+       SP键: keylongPressFeedback
+       SP.getInt(keylongPressFeedback, 0)
+       new ChoiceDialog(this, getString(R.string.longPressFeedback), 4) {
+           @Override protected void onChoice(int value) {
+               SP.set(keylongPressFeedback, value);
+           }
+       };
+
+  [23] FilterSticker()
+       类型: Toggle
+       SP键: keyfilterSticker
+       SP.getBool(keyfilterSticker, false)
+       new Toggle(this, getString(R.string.filterSticker), keyfilterSticker) {
+           @Override protected void onToggle(boolean value) {
+               SP.set(keyfilterSticker, value);
+           }
+       };
+
+  [24] MaxConcurrent()
+       类型: ChoiceDialog
+       范围: 0-8 (9个选项)
+       SP键: keymaxConcurrent
+       SP.getInt(keymaxConcurrent, 0)
+       new ChoiceDialog(this, getString(R.string.maxConcurrent), 9) {
+           @Override protected void onChoice(int value) {
+               SP.set(keymaxConcurrent, value);
+           }
+       };
+
+  [25] AnimStyle()
+       类型: ChoiceDialog
+       范围: 0-3 (4个选项)
+       SP键: keyanimStyle
+       SP.getInt(keyanimStyle, 0)
+       new ChoiceDialog(this, getString(R.string.animStyle), 4) {
+           @Override protected void onChoice(int value) {
+               SP.set(keyanimStyle, value);
+           }
+       };
+
+  [26] SendBgGlow()
+       类型: Toggle
+       SP键: keysendBgGlow
+       SP.getBool(keysendBgGlow, false)
+       new Toggle(this, getString(R.string.sendBgGlow), keysendBgGlow) {
+           @Override protected void onToggle(boolean value) {
+               SP.set(keysendBgGlow, value);
+           }
+       };
+
+  [27] GlowEffect()
+       类型: ChoiceDialog
+       范围: 0-100 (101个选项)
+       SP键: keyglowEffect
+       SP.getInt(keyglowEffect, 0)
+       new ChoiceDialog(this, getString(R.string.glowEffect), 101) {
+           @Override protected void onChoice(int value) {
+               SP.set(keyglowEffect, value);
+           }
+       };
+
+  [28] DialogColorScheme()
+       类型: ChoiceDialog
+       范围: 0-5 (6个选项)
+       SP键: keydialogColorScheme
+       SP.getInt(keydialogColorScheme, 0)
+       new ChoiceDialog(this, getString(R.string.dialogColorScheme), 6) {
+           @Override protected void onChoice(int value) {
+               SP.set(keydialogColorScheme, value);
+           }
+       };
+
+  [29] BgPaddingHorizontal()
+       类型: ChoiceDialog
+       范围: 0-20 (21个选项)
+       SP键: keybgPaddingHorizontal
+       SP.getInt(keybgPaddingHorizontal, 0)
+       new ChoiceDialog(this, getString(R.string.bgPaddingHorizontal), 21) {
+           @Override protected void onChoice(int value) {
+               SP.set(keybgPaddingHorizontal, value);
+           }
+       };
+
+  [30] SubtitleDelay()
+       类型: ChoiceDialog
+       范围: -5000~5000 (10001个选项)
+       SP键: keysubtitleDelay
+       SP.getInt(keysubtitleDelay, 0)
+       new ChoiceDialog(this, getString(R.string.subtitleDelay), 10001) {
+           @Override protected void onChoice(int value) {
+               SP.set(keysubtitleDelay, value);
+           }
+       };
+
+------------------------------------------------------------------------
+  v83.x
+------------------------------------------------------------------------
+
+  [31] StartupContrast()
+       类型: ChoiceDialog
+       范围: -100~100 (201个选项)
+       SP键: keystartupContrast
+       SP.getInt(keystartupContrast, 0)
+       new ChoiceDialog(this, getString(R.string.startupContrast), 201) {
+           @Override protected void onChoice(int value) {
+               SP.set(keystartupContrast, value);
+           }
+       };
+
+  [32] FontBorderWidth()
+       类型: ChoiceDialog
+       范围: 0-5 (6个选项)
+       SP键: keyfontBorderWidth
+       SP.getInt(keyfontBorderWidth, 0)
+       new ChoiceDialog(this, getString(R.string.fontBorderWidth), 6) {
+           @Override protected void onChoice(int value) {
+               SP.set(keyfontBorderWidth, value);
+           }
+       };
+
+  [33] ContrastStretch()
+       类型: Toggle
+       SP键: keycontrastStretch
+       SP.getBool(keycontrastStretch, false)
+       new Toggle(this, getString(R.string.contrastStretch), keycontrastStretch) {
+           @Override protected void onToggle(boolean value) {
+               SP.set(keycontrastStretch, value);
+           }
+       };
+
+  [34] NormalizerWindow()
+       类型: ChoiceDialog
+       范围: 0-5 (6个选项)
+       SP键: keynormalizerWindow
+       SP.getInt(keynormalizerWindow, 0)
+       new ChoiceDialog(this, getString(R.string.normalizerWindow), 6) {
+           @Override protected void onChoice(int value) {
+               SP.set(keynormalizerWindow, value);
+           }
+       };
+
+  [35] FixedMinGap()
+       类型: ChoiceDialog
+       范围: 0-10 (11个选项)
+       SP键: keyfixedMinGap
+       SP.getInt(keyfixedMinGap, 0)
+       new ChoiceDialog(this, getString(R.string.fixedMinGap), 11) {
+           @Override protected void onChoice(int value) {
+               SP.set(keyfixedMinGap, value);
+           }
+       };
+
+  [36] AudioPassthrough()
+       类型: Toggle
+       SP键: keyaudioPassthrough
+       SP.getBool(keyaudioPassthrough, false)
+       new Toggle(this, getString(R.string.audioPassthrough), keyaudioPassthrough) {
+           @Override protected void onToggle(boolean value) {
+               SP.set(keyaudioPassthrough, value);
+           }
+       };
+
+  [37] DoubleTapArea()
+       类型: ChoiceDialog
+       范围: 0-3 (4个选项)
+       SP键: keydoubleTapArea
+       SP.getInt(keydoubleTapArea, 0)
+       new ChoiceDialog(this, getString(R.string.doubleTapArea), 4) {
+           @Override protected void onChoice(int value) {
+               SP.set(keydoubleTapArea, value);
+           }
+       };
+
+  [38] FilterReply()
+       类型: Toggle
+       SP键: keyfilterReply
+       SP.getBool(keyfilterReply, false)
+       new Toggle(this, getString(R.string.filterReply), keyfilterReply) {
+           @Override protected void onToggle(boolean value) {
+               SP.set(keyfilterReply, value);
+           }
+       };
+
+  [39] HttpVersion()
+       类型: ChoiceDialog
+       范围: 0-3 (4个选项)
+       SP键: keyhttpVersion
+       SP.getInt(keyhttpVersion, 0)
+       new ChoiceDialog(this, getString(R.string.httpVersion), 4) {
+           @Override protected void onChoice(int value) {
+               SP.set(keyhttpVersion, value);
+           }
+       };
+
+  [40] ProgressBarGesture()
+       类型: Toggle
+       SP键: keyprogressBarGesture
+       SP.getBool(keyprogressBarGesture, false)
+       new Toggle(this, getString(R.string.progressBarGesture), keyprogressBarGesture) {
+           @Override protected void onToggle(boolean value) {
+               SP.set(keyprogressBarGesture, value);
+           }
+       };
+
+  [41] SendBgShadow()
+       类型: Toggle
+       SP键: keysendBgShadow
+       SP.getBool(keysendBgShadow, false)
+       new Toggle(this, getString(R.string.sendBgShadow), keysendBgShadow) {
+           @Override protected void onToggle(boolean value) {
+               SP.set(keysendBgShadow, value);
+           }
+       };
+
+  [42] DitherEffect()
+       类型: ChoiceDialog
+       范围: 0-5 (6个选项)
+       SP键: keyditherEffect
+       SP.getInt(keyditherEffect, 0)
+       new ChoiceDialog(this, getString(R.string.ditherEffect), 6) {
+           @Override protected void onChoice(int value) {
+               SP.set(keyditherEffect, value);
+           }
+       };
+
+  [43] DialogAnimation2()
+       类型: ChoiceDialog
+       范围: 0-3 (4个选项)
+       SP键: keydialogAnimation2
+       SP.getInt(keydialogAnimation2, 0)
+       new ChoiceDialog(this, getString(R.string.dialogAnimation2), 4) {
+           @Override protected void onChoice(int value) {
+               SP.set(keydialogAnimation2, value);
+           }
+       };
+
+  [44] BgPaddingVertical()
+       类型: ChoiceDialog
+       范围: 0-20 (21个选项)
+       SP键: keybgPaddingVertical
+       SP.getInt(keybgPaddingVertical, 0)
+       new ChoiceDialog(this, getString(R.string.bgPaddingVertical), 21) {
+           @Override protected void onChoice(int value) {
+               SP.set(keybgPaddingVertical, value);
+           }
+       };
+
+  [45] SubtitleBgStyle()
+       类型: ChoiceDialog
+       范围: 0-3 (4个选项)
+       SP键: keysubtitleBgStyle
+       SP.getInt(keysubtitleBgStyle, 0)
+       new ChoiceDialog(this, getString(R.string.subtitleBgStyle), 4) {
+           @Override protected void onChoice(int value) {
+               SP.set(keysubtitleBgStyle, value);
+           }
+       };
+
+------------------------------------------------------------------------
+  v84.x
+------------------------------------------------------------------------
+
+  [46] StartupSaturation()
+       类型: ChoiceDialog
+       范围: -100~100 (201个选项)
+       SP键: keystartupSaturation
+       SP.getInt(keystartupSaturation, 0)
+       new ChoiceDialog(this, getString(R.string.startupSaturation), 201) {
+           @Override protected void onChoice(int value) {
+               SP.set(keystartupSaturation, value);
+           }
+       };
+
+  [47] FontBorderColor()
+       类型: ChoiceDialog
+       范围: 0-10 (11个选项)
+       SP键: keyfontBorderColor
+       SP.getInt(keyfontBorderColor, 0)
+       new ChoiceDialog(this, getString(R.string.fontBorderColor), 11) {
+           @Override protected void onChoice(int value) {
+               SP.set(keyfontBorderColor, value);
+           }
+       };
+
+  [48] Polaroid()
+       类型: ChoiceDialog
+       范围: 0-100 (101个选项)
+       SP键: keypolaroid
+       SP.getInt(keypolaroid, 0)
+       new ChoiceDialog(this, getString(R.string.polaroid), 101) {
+           @Override protected void onChoice(int value) {
+               SP.set(keypolaroid, value);
+           }
+       };
+
+  [49] DialogPositionCustom()
+       类型: ChoiceDialog
+       范围: 0-4 (5个选项)
+       SP键: keydialogPositionCustom
+       SP.getInt(keydialogPositionCustom, 0)
+       new ChoiceDialog(this, getString(R.string.dialogPositionCustom), 5) {
+           @Override protected void onChoice(int value) {
+               SP.set(keydialogPositionCustom, value);
+           }
+       };
+
+  [50] ScrollOpacity()
+       类型: ChoiceDialog
+       范围: 0-100 (101个选项)
+       SP键: keyscrollOpacity
+       SP.getInt(keyscrollOpacity, 0)
+       new ChoiceDialog(this, getString(R.string.scrollOpacity), 101) {
+           @Override protected void onChoice(int value) {
+               SP.set(keyscrollOpacity, value);
+           }
+       };
+
+  [51] SubtitleFontColor()
+       类型: ChoiceDialog
+       范围: 0-10 (11个选项)
+       SP键: keysubtitleFontColor
+       SP.getInt(keysubtitleFontColor, 0)
+       new ChoiceDialog(this, getString(R.string.subtitleFontColor), 11) {
+           @Override protected void onChoice(int value) {
+               SP.set(keysubtitleFontColor, value);
+           }
+       };
+
+  [52] FeedbackStyle()
+       类型: ChoiceDialog
+       范围: 0-3 (4个选项)
+       SP键: keyfeedbackStyle
+       SP.getInt(keyfeedbackStyle, 0)
+       new ChoiceDialog(this, getString(R.string.feedbackStyle), 4) {
+           @Override protected void onChoice(int value) {
+               SP.set(keyfeedbackStyle, value);
+           }
+       };
+
+  [53] FilterForward()
+       类型: Toggle
+       SP键: keyfilterForward
+       SP.getBool(keyfilterForward, false)
+       new Toggle(this, getString(R.string.filterForward), keyfilterForward) {
+           @Override protected void onToggle(boolean value) {
+               SP.set(keyfilterForward, value);
+           }
+       };
+
+  [54] ChunkSize()
+       类型: ChoiceDialog
+       范围: 0-5 (6个选项)
+       SP键: keychunkSize
+       SP.getInt(keychunkSize, 0)
+       new ChoiceDialog(this, getString(R.string.chunkSize), 6) {
+           @Override protected void onChoice(int value) {
+               SP.set(keychunkSize, value);
+           }
+       };
+
+  [55] ProgressBarStyle()
+       类型: ChoiceDialog
+       范围: 0-4 (5个选项)
+       SP键: keyprogressBarStyle
+       SP.getInt(keyprogressBarStyle, 0)
+       new ChoiceDialog(this, getString(R.string.progressBarStyle), 5) {
+           @Override protected void onChoice(int value) {
+               SP.set(keyprogressBarStyle, value);
+           }
+       };
+
+  [56] SendBgColorCustom()
+       类型: ChoiceDialog
+       范围: 0-10 (11个选项)
+       SP键: keysendBgColorCustom
+       SP.getInt(keysendBgColorCustom, 0)
+       new ChoiceDialog(this, getString(R.string.sendBgColorCustom), 11) {
+           @Override protected void onChoice(int value) {
+               SP.set(keysendBgColorCustom, value);
+           }
+       };
+
+  [57] Retro()
+       类型: ChoiceDialog
+       范围: 0-100 (101个选项)
+       SP键: keyretro
+       SP.getInt(keyretro, 0)
+       new ChoiceDialog(this, getString(R.string.retro), 101) {
+           @Override protected void onChoice(int value) {
+               SP.set(keyretro, value);
+           }
+       };
+
+  [58] StartupVolume()
+       类型: ChoiceDialog
+       范围: 0-100 (101个选项)
+       SP键: keystartupVolume
+       SP.getInt(keystartupVolume, 0)
+       new ChoiceDialog(this, getString(R.string.startupVolume), 101) {
+           @Override protected void onChoice(int value) {
+               SP.set(keystartupVolume, value);
+           }
+       };
+
+  [59] BgPaddingCustom()
+       类型: ChoiceDialog
+       范围: 0-30 (31个选项)
+       SP键: keybgPaddingCustom
+       SP.getInt(keybgPaddingCustom, 0)
+       new ChoiceDialog(this, getString(R.string.bgPaddingCustom), 31) {
+           @Override protected void onChoice(int value) {
+               SP.set(keybgPaddingCustom, value);
+           }
+       };
+
+  [60] SubtitleFontSize()
+       类型: ChoiceDialog
+       范围: 0-5 (6个选项)
+       SP键: keysubtitleFontSize
+       SP.getInt(keysubtitleFontSize, 0)
+       new ChoiceDialog(this, getString(R.string.subtitleFontSize), 6) {
+           @Override protected void onChoice(int value) {
+               SP.set(keysubtitleFontSize, value);
+           }
+       };
+
+------------------------------------------------------------------------
+  v85.x
+------------------------------------------------------------------------
+
+  [61] StartupGamma()
+       类型: ChoiceDialog
+       范围: -100~100 (201个选项)
+       SP键: keystartupGamma
+       SP.getInt(keystartupGamma, 0)
+       new ChoiceDialog(this, getString(R.string.startupGamma), 201) {
+           @Override protected void onChoice(int value) {
+               SP.set(keystartupGamma, value);
+           }
+       };
+
+  [62] FontBackground()
+       类型: Toggle
+       SP键: keyfontBackground
+       SP.getBool(keyfontBackground, false)
+       new Toggle(this, getString(R.string.fontBackground), keyfontBackground) {
+           @Override protected void onToggle(boolean value) {
+               SP.set(keyfontBackground, value);
+           }
+       };
+
+  [63] SobelEdge()
+       类型: ChoiceDialog
+       范围: 0-100 (101个选项)
+       SP键: keysobelEdge
+       SP.getInt(keysobelEdge, 0)
+       new ChoiceDialog(this, getString(R.string.sobelEdge), 101) {
+           @Override protected void onChoice(int value) {
+               SP.set(keysobelEdge, value);
+           }
+       };
+
+  [64] DialogVibrate()
+       类型: Toggle
+       SP键: keydialogVibrate
+       SP.getBool(keydialogVibrate, false)
+       new Toggle(this, getString(R.string.dialogVibrate), keydialogVibrate) {
+           @Override protected void onToggle(boolean value) {
+               SP.set(keydialogVibrate, value);
+           }
+       };
+
+  [65] ScrollTimeout()
+       类型: ChoiceDialog
+       范围: 0-10 (11个选项)
+       SP键: keyscrollTimeout
+       SP.getInt(keyscrollTimeout, 0)
+       new ChoiceDialog(this, getString(R.string.scrollTimeout), 11) {
+           @Override protected void onChoice(int value) {
+               SP.set(keyscrollTimeout, value);
+           }
+       };
+
+  [66] SubtitleOutline()
+       类型: Toggle
+       SP键: keysubtitleOutline
+       SP.getBool(keysubtitleOutline, false)
+       new Toggle(this, getString(R.string.subtitleOutline), keysubtitleOutline) {
+           @Override protected void onToggle(boolean value) {
+               SP.set(keysubtitleOutline, value);
+           }
+       };
+
+  [67] EdgeZone()
+       类型: ChoiceDialog
+       范围: 0-30 (31个选项)
+       SP键: keyedgeZone
+       SP.getInt(keyedgeZone, 0)
+       new ChoiceDialog(this, getString(R.string.edgeZone), 31) {
+           @Override protected void onChoice(int value) {
+               SP.set(keyedgeZone, value);
+           }
+       };
+
+  [68] FilterColorCustom()
+       类型: ChoiceDialog
+       范围: 0-10 (11个选项)
+       SP键: keyfilterColorCustom
+       SP.getInt(keyfilterColorCustom, 0)
+       new ChoiceDialog(this, getString(R.string.filterColorCustom), 11) {
+           @Override protected void onChoice(int value) {
+               SP.set(keyfilterColorCustom, value);
+           }
+       };
+
+  [69] ProxyEnabled()
+       类型: Toggle
+       SP键: keyproxyEnabled
+       SP.getBool(keyproxyEnabled, false)
+       new Toggle(this, getString(R.string.proxyEnabled), keyproxyEnabled) {
+           @Override protected void onToggle(boolean value) {
+               SP.set(keyproxyEnabled, value);
+           }
+       };
+
+  [70] BufferStyle()
+       类型: ChoiceDialog
+       范围: 0-3 (4个选项)
+       SP键: keybufferStyle
+       SP.getInt(keybufferStyle, 0)
+       new ChoiceDialog(this, getString(R.string.bufferStyle), 4) {
+           @Override protected void onChoice(int value) {
+               SP.set(keybufferStyle, value);
+           }
+       };
+
+  [71] SendBgOpacity()
+       类型: ChoiceDialog
+       范围: 0-100 (101个选项)
+       SP键: keysendBgOpacity
+       SP.getInt(keysendBgOpacity, 0)
+       new ChoiceDialog(this, getString(R.string.sendBgOpacity), 101) {
+           @Override protected void onChoice(int value) {
+               SP.set(keysendBgOpacity, value);
+           }
+       };
+
+  [72] Solarize()
+       类型: ChoiceDialog
+       范围: 0-100 (101个选项)
+       SP键: keysolarize
+       SP.getInt(keysolarize, 0)
+       new ChoiceDialog(this, getString(R.string.solarize), 101) {
+           @Override protected void onChoice(int value) {
+               SP.set(keysolarize, value);
+           }
+       };
+
+  [73] DialogShowIcon()
+       类型: Toggle
+       SP键: keydialogShowIcon
+       SP.getBool(keydialogShowIcon, false)
+       new Toggle(this, getString(R.string.dialogShowIcon), keydialogShowIcon) {
+           @Override protected void onToggle(boolean value) {
+               SP.set(keydialogShowIcon, value);
+           }
+       };
+
+  [74] BgPaddingSymmetric2()
+       类型: Toggle
+       SP键: keybgPaddingSymmetric2
+       SP.getBool(keybgPaddingSymmetric2, false)
+       new Toggle(this, getString(R.string.bgPaddingSymmetric2), keybgPaddingSymmetric2) {
+           @Override protected void onToggle(boolean value) {
+               SP.set(keybgPaddingSymmetric2, value);
+           }
+       };
+
+  [75] SubtitleBgBlur()
+       类型: Toggle
+       SP键: keysubtitleBgBlur
+       SP.getBool(keysubtitleBgBlur, false)
+       new Toggle(this, getString(R.string.subtitleBgBlur), keysubtitleBgBlur) {
+           @Override protected void onToggle(boolean value) {
+               SP.set(keysubtitleBgBlur, value);
+           }
+       };
+
+========================================================================
+总计: 75 个对话框函数
+  Bool (Toggle):       26 个
+  Int  (ChoiceDialog): 49 个
+========================================================================
