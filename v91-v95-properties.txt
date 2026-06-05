@@ -1,0 +1,235 @@
+﻿
+    // ===== v91.x =====
+    var v91PlaybackStartupDeband: Boolean
+        get() = prefs.getBoolean(KEY_V91_PLAYBACK_STARTUP_DEBAND, false)
+        set(value) = prefs.edit().putBoolean(KEY_V91_PLAYBACK_STARTUP_DEBAND, value).apply()
+    var v91DanmakuFontWeight4: Int
+        get() = prefs.getInt(KEY_V91_DANMAKU_FONT_WEIGHT4, 400)
+        set(value) = prefs.edit().putInt(KEY_V91_DANMAKU_FONT_WEIGHT4, value.coerceIn(100, 900)).apply()
+    var x91ColorGlitch2: Int
+        get() = prefs.getInt(KEY_V91_COLOR_GLITCH2, 0)
+        set(value) = prefs.edit().putInt(KEY_V91_COLOR_GLITCH2, value.coerceIn(0, 5)).apply()
+    var v91VolumeDialogPosition3: Int
+        get() = prefs.getInt(KEY_VOLUME_DIALOG_POSITION3, 0)
+        set(value) = prefs.edit().putInt(KEY_VOLUME_DIALOG_POSITION3, value.coerceIn(0, 4)).apply()
+    var v91DanmakuScrollType: Int
+        get() = prefs.getInt(KEY_V91_DANMAKU_SCROLL_TYPE, 0)
+        set(value) = prefs.edit().putInt(KEY_V91_DANMAKU_SCROLL_TYPE, value.coerceIn(0, 3)).apply()
+    var v91CastSubtitleDelay2: Int
+        get() = prefs.getInt(KEY_V91_CAST_SUBTITLE_DELAY2, 0)
+        set(value) = prefs.edit().putInt(KEY_V91_CAST_SUBTITLE_DELAY2, value.coerceIn(-5000, 5000)).apply()
+    var v91GestureSwipeAction6: Int
+        get() = prefs.getInt(KEY_V91_GESTURE_SWIPE_ACTION6, 0)
+        set(value) = prefs.edit().putInt(KEY_V91_GESTURE_SWIPE_ACTION6, value.coerceIn(0, 5)).apply()
+    var v91DanmakuFilterSmartKeyword: Boolean
+        get() = prefs.getBoolean(KEY_V91_DANMAKU_FILTER_SMART_KEYWORD, false)
+        set(value) = prefs.edit().putBoolean(KEY_V91_DANMAKU_FILTER_SMART_KEYWORD, value).apply()
+    var v91CacheHttpProxySocks: Boolean
+        get() = prefs.getBoolean(KEY_V91_CACHE_HTTP_PROXY_SOCKS, false)
+        set(value) = prefs.edit().putBoolean(KEY_V91_CACHE_HTTP_PROXY_SOCKS, value).apply()
+    var v91ProgressBarMarkAnim: Boolean
+        get() = prefs.getBoolean(KEY_V91_PROGRESS_BAR_MARK_ANIM, false)
+        set(value) = prefs.edit().putBoolean(KEY_V91_PROGRESS_BAR_MARK_ANIM, value).apply()
+    var v91DanmakuSendBgBorderType: Int
+        get() = prefs.getInt(KEY_V91_DANMAKU_SEND_BG_BORDER_TYPE, 0)
+        set(value) = prefs.edit().putInt(KEY_V91_DANMAKU_SEND_BG_BORDER_TYPE, value.coerceIn(0, 3)).apply()
+    var x91ColorKaleidoscope: Int
+        get() = prefs.getInt(KEY_V91_COLOR_KALEIDOSCOPE, 0)
+        set(value) = prefs.edit().putInt(KEY_V91_COLOR_KALEIDOSCOPE, value.coerceIn(0, 100)).apply()
+    var v91VolumeBoostOnTv: Boolean
+        get() = prefs.getBoolean(KEY_V91_VOLUME_BOOST_ON_TV, false)
+        set(value) = prefs.edit().putBoolean(KEY_V91_VOLUME_BOOST_ON_TV, value).apply()
+    var v91DanmakuBgPaddingCustom2: Int
+        get() = prefs.getInt(KEY_V91_DANMAKU_BG_PADDING_CUSTOM2, 0)
+        set(value) = prefs.edit().putInt(KEY_V91_DANMAKU_BG_PADDING_CUSTOM2, value.coerceIn(0, 30)).apply()
+    var v91CastSubtitleBgColor2: Int
+        get() = prefs.getInt(KEY_V91_CAST_SUBTITLE_BG_COLOR2, 0)
+        set(value) = prefs.edit().putInt(KEY_V91_CAST_SUBTITLE_BG_COLOR2, value.coerceIn(0, 10)).apply()
+
+    // ===== v92.x =====
+    var v92PlaybackStartupDither: Boolean
+        get() = prefs.getBoolean(KEY_V92_PLAYBACK_STARTUP_DITHER, false)
+        set(value) = prefs.edit().putBoolean(KEY_V92_PLAYBACK_STARTUP_DITHER, value).apply()
+    var v92DanmakuFontShadowColor: Int
+        get() = prefs.getInt(KEY_V92_DANMAKU_FONT_SHADOW_COLOR, 0)
+        set(value) = prefs.edit().putInt(KEY_V92_DANMAKU_FONT_SHADOW_COLOR, value.coerceIn(0, 10)).apply()
+    var x92ColorFilmScratch: Int
+        get() = prefs.getInt(KEY_V92_COLOR_FILM_SCRATCH, 0)
+        set(value) = prefs.edit().putInt(KEY_V92_COLOR_FILM_SCRATCH, value.coerceIn(0, 100)).apply()
+    var v92VolumeDialogStyle2: Int
+        get() = prefs.getInt(KEY_VOLUME_DIALOG_STYLE2, 0)
+        set(value) = prefs.edit().putInt(KEY_VOLUME_DIALOG_STYLE2, value.coerceIn(0, 3)).apply()
+    var v92DanmakuScrollDirection2: Int
+        get() = prefs.getInt(KEY_V92_DANMAKU_SCROLL_DIRECTION2, 0)
+        set(value) = prefs.edit().putInt(KEY_V92_DANMAKU_SCROLL_DIRECTION2, value.coerceIn(0, 2)).apply()
+    var v92CastSubtitleFont2: Int
+        get() = prefs.getInt(KEY_V92_CAST_SUBTITLE_FONT2, 0)
+        set(value) = prefs.edit().putInt(KEY_V92_CAST_SUBTITLE_FONT2, value.coerceIn(0, 5)).apply()
+    var v92GestureSwipeAction7: Int
+        get() = prefs.getInt(KEY_V92_GESTURE_SWIPE_ACTION7, 0)
+        set(value) = prefs.edit().putInt(KEY_V92_GESTURE_SWIPE_ACTION7, value.coerceIn(0, 5)).apply()
+    var v92DanmakuFilterSmartUser: Boolean
+        get() = prefs.getBoolean(KEY_V92_DANMAKU_FILTER_SMART_USER, false)
+        set(value) = prefs.edit().putBoolean(KEY_V92_DANMAKU_FILTER_SMART_USER, value).apply()
+    var v92CacheHttpProxyUrl: Boolean
+        get() = prefs.getBoolean(KEY_V92_CACHE_HTTP_PROXY_URL, false)
+        set(value) = prefs.edit().putBoolean(KEY_V92_CACHE_HTTP_PROXY_URL, value).apply()
+    var v92ProgressBarMarkColor3: Int
+        get() = prefs.getInt(KEY_V92_PROGRESS_BAR_MARK_COLOR3, 0)
+        set(value) = prefs.edit().putInt(KEY_V92_PROGRESS_BAR_MARK_COLOR3, value.coerceIn(0, 10)).apply()
+    var v92DanmakuSendBgBorderRadius3: Int
+        get() = prefs.getInt(KEY_V92_DANMAKU_SEND_BG_BORDER_RADIUS3, 0)
+        set(value) = prefs.edit().putInt(KEY_V92_DANMAKU_SEND_BG_BORDER_RADIUS3, value.coerceIn(0, 20)).apply()
+    var x92ColorMotionBlur: Int
+        get() = prefs.getInt(KEY_V92_COLOR_MOTION_BLUR, 0)
+        set(value) = prefs.edit().putInt(KEY_V92_COLOR_MOTION_BLUR, value.coerceIn(0, 100)).apply()
+    var v92VolumeBoostOnGame: Boolean
+        get() = prefs.getBoolean(KEY_V92_VOLUME_BOOST_ON_GAME, false)
+        set(value) = prefs.edit().putBoolean(KEY_V92_VOLUME_BOOST_ON_GAME, value).apply()
+    var v92DanmakuBgPaddingCustom3: Int
+        get() = prefs.getInt(KEY_V92_DANMAKU_BG_PADDING_CUSTOM3, 0)
+        set(value) = prefs.edit().putInt(KEY_V92_DANMAKU_BG_PADDING_CUSTOM3, value.coerceIn(0, 30)).apply()
+    var v92CastSubtitleBgColor3: Int
+        get() = prefs.getInt(KEY_V92_CAST_SUBTITLE_BG_COLOR3, 0)
+        set(value) = prefs.edit().putInt(KEY_V92_CAST_SUBTITLE_BG_COLOR3, value.coerceIn(0, 10)).apply()
+
+    // ===== v93.x =====
+    var v93PlaybackStartupToneMap: Int
+        get() = prefs.getInt(KEY_V93_PLAYBACK_STARTUP_TONE_MAP, 0)
+        set(value) = prefs.edit().putInt(KEY_V93_PLAYBACK_STARTUP_TONE_MAP, value.coerceIn(0, 4)).apply()
+    var v93DanmakuFontEdgeColor2: Int
+        get() = prefs.getInt(KEY_V93_DANMAKU_FONT_EDGE_COLOR2, 0)
+        set(value) = prefs.edit().putInt(KEY_V93_DANMAKU_FONT_EDGE_COLOR2, value.coerceIn(0, 10)).apply()
+    var x93ColorHalation2: Int
+        get() = prefs.getInt(KEY_V93_COLOR_HALATION2, 0)
+        set(value) = prefs.edit().putInt(KEY_V93_COLOR_HALATION2, value.coerceIn(0, 100)).apply()
+    var v93VolumeDialogShowSlider: Boolean
+        get() = prefs.getBoolean(KEY_VOLUME_DIALOG_SHOW_SLIDER, true)
+        set(value) = prefs.edit().putBoolean(KEY_VOLUME_DIALOG_SHOW_SLIDER, value).apply()
+    var v93DanmakuScrollFixed: Boolean
+        get() = prefs.getBoolean(KEY_V93_DANMAKU_SCROLL_FIXED, false)
+        set(value) = prefs.edit().putBoolean(KEY_V93_DANMAKU_SCROLL_FIXED, value).apply()
+    var v93CastSubtitleBgOpacity3: Int
+        get() = prefs.getInt(KEY_V93_CAST_SUBTITLE_BG_OPACITY3, 0)
+        set(value) = prefs.edit().putInt(KEY_V93_CAST_SUBTITLE_BG_OPACITY3, value.coerceIn(0, 100)).apply()
+    var v93GestureSwipeAction8: Int
+        get() = prefs.getInt(KEY_V93_GESTURE_SWIPE_ACTION8, 0)
+        set(value) = prefs.edit().putInt(KEY_V93_GESTURE_SWIPE_ACTION8, value.coerceIn(0, 5)).apply()
+    var v93DanmakuFilterSmartScore: Int
+        get() = prefs.getInt(KEY_V93_DANMAKU_FILTER_SMART_SCORE, 0)
+        set(value) = prefs.edit().putInt(KEY_V93_DANMAKU_FILTER_SMART_SCORE, value.coerceIn(0, 5)).apply()
+    var v93CacheHttpProxyAuth2: Boolean
+        get() = prefs.getBoolean(KEY_V93_CACHE_HTTP_PROXY_AUTH2, false)
+        set(value) = prefs.edit().putBoolean(KEY_V93_CACHE_HTTP_PROXY_AUTH2, value).apply()
+    var v93ProgressBarMarkSize2: Int
+        get() = prefs.getInt(KEY_V93_PROGRESS_BAR_MARK_SIZE2, 0)
+        set(value) = prefs.edit().putInt(KEY_V93_PROGRESS_BAR_MARK_SIZE2, value.coerceIn(0, 10)).apply()
+    var v93DanmakuSendBgPadding4: Int
+        get() = prefs.getInt(KEY_V93_DANMAKU_SEND_BG_PADDING4, 0)
+        set(value) = prefs.edit().putInt(KEY_V93_DANMAKU_SEND_BG_PADDING4, value.coerceIn(0, 10)).apply()
+    var x93ColorAnamorphic2: Int
+        get() = prefs.getInt(KEY_V93_COLOR_ANAMORPHIC2, 0)
+        set(value) = prefs.edit().putInt(KEY_V93_COLOR_ANAMORPHIC2, value.coerceIn(0, 5)).apply()
+    var v93VolumeBoostOnMovie: Boolean
+        get() = prefs.getBoolean(KEY_V93_VOLUME_BOOST_ON_MOVIE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V93_VOLUME_BOOST_ON_MOVIE, value).apply()
+    var v93DanmakuBgPaddingCustom4: Int
+        get() = prefs.getInt(KEY_V93_DANMAKU_BG_PADDING_CUSTOM4, 0)
+        set(value) = prefs.edit().putInt(KEY_V93_DANMAKU_BG_PADDING_CUSTOM4, value.coerceIn(0, 30)).apply()
+    var v93CastSubtitleBgBorder3: Int
+        get() = prefs.getInt(KEY_V93_CAST_SUBTITLE_BG_BORDER3, 0)
+        set(value) = prefs.edit().putInt(KEY_V93_CAST_SUBTITLE_BG_BORDER3, value.coerceIn(0, 5)).apply()
+
+    // ===== v94.x =====
+    var v94PlaybackStartupColorSpace: Int
+        get() = prefs.getInt(KEY_V94_PLAYBACK_STARTUP_COLOR_SPACE, 0)
+        set(value) = prefs.edit().putInt(KEY_V94_PLAYBACK_STARTUP_COLOR_SPACE, value.coerceIn(0, 3)).apply()
+    var v94DanmakuFontWeight5: Int
+        get() = prefs.getInt(KEY_V94_DANMAKU_FONT_WEIGHT5, 400)
+        set(value) = prefs.edit().putInt(KEY_V94_DANMAKU_FONT_WEIGHT5, value.coerceIn(100, 900)).apply()
+    var x94ColorFilmFade2: Int
+        get() = prefs.getInt(KEY_V94_COLOR_FILM_FADE2, 0)
+        set(value) = prefs.edit().putInt(KEY_V94_COLOR_FILM_FADE2, value.coerceIn(0, 100)).apply()
+    var v94VolumeDialogShowDb: Boolean
+        get() = prefs.getBoolean(KEY_VOLUME_DIALOG_SHOW_DB, false)
+        set(value) = prefs.edit().putBoolean(KEY_VOLUME_DIALOG_SHOW_DB, value).apply()
+    var v94DanmakuScrollSpeed2: Int
+        get() = prefs.getInt(KEY_V94_DANMAKU_SCROLL_SPEED2, 0)
+        set(value) = prefs.edit().putInt(KEY_V94_DANMAKU_SCROLL_SPEED2, value.coerceIn(-5, 5)).apply()
+    var v94CastSubtitleFontColor2: Int
+        get() = prefs.getInt(KEY_V94_CAST_SUBTITLE_FONT_COLOR2, 0)
+        set(value) = prefs.edit().putInt(KEY_V94_CAST_SUBTITLE_FONT_COLOR2, value.coerceIn(0, 10)).apply()
+    var v94GestureSwipeAction9: Int
+        get() = prefs.getInt(KEY_V94_GESTURE_SWIPE_ACTION9, 0)
+        set(value) = prefs.edit().putInt(KEY_V94_GESTURE_SWIPE_ACTION9, value.coerceIn(0, 5)).apply()
+    var v94DanmakuFilterSmartType: Int
+        get() = prefs.getInt(KEY_V94_DANMAKU_FILTER_SMART_TYPE, 0)
+        set(value) = prefs.edit().putInt(KEY_V94_DANMAKU_FILTER_SMART_TYPE, value.coerceIn(0, 3)).apply()
+    var v94CacheHttpProxySni: Boolean
+        get() = prefs.getBoolean(KEY_V94_CACHE_HTTP_PROXY_SNI, false)
+        set(value) = prefs.edit().putBoolean(KEY_V94_CACHE_HTTP_PROXY_SNI, value).apply()
+    var v94ProgressBarMarkPosition2: Int
+        get() = prefs.getInt(KEY_V94_PROGRESS_BAR_MARK_POSITION2, 0)
+        set(value) = prefs.edit().putInt(KEY_V94_PROGRESS_BAR_MARK_POSITION2, value.coerceIn(0, 3)).apply()
+    var v94DanmakuSendBgPadding5: Int
+        get() = prefs.getInt(KEY_V94_DANMAKU_SEND_BG_PADDING5, 0)
+        set(value) = prefs.edit().putInt(KEY_V94_DANMAKU_SEND_BG_PADDING5, value.coerceIn(0, 10)).apply()
+    var x94ColorCrossProcess2: Int
+        get() = prefs.getInt(KEY_V94_COLOR_CROSS_PROCESS2, 0)
+        set(value) = prefs.edit().putInt(KEY_V94_COLOR_CROSS_PROCESS2, value.coerceIn(0, 5)).apply()
+    var v94VolumeBoostOnMusic: Boolean
+        get() = prefs.getBoolean(KEY_V94_VOLUME_BOOST_ON_MUSIC, false)
+        set(value) = prefs.edit().putBoolean(KEY_V94_VOLUME_BOOST_ON_MUSIC, value).apply()
+    var v94DanmakuBgPaddingCustom5: Int
+        get() = prefs.getInt(KEY_V94_DANMAKU_BG_PADDING_CUSTOM5, 0)
+        set(value) = prefs.edit().putInt(KEY_V94_DANMAKU_BG_PADDING_CUSTOM5, value.coerceIn(0, 30)).apply()
+    var v94CastSubtitleBgBorderRadius3: Int
+        get() = prefs.getInt(KEY_V94_CAST_SUBTITLE_BG_BORDER_RADIUS3, 0)
+        set(value) = prefs.edit().putInt(KEY_V94_CAST_SUBTITLE_BG_BORDER_RADIUS3, value.coerceIn(0, 20)).apply()
+
+    // ===== v95.x =====
+    var v95PlaybackStartupHdrMode: Int
+        get() = prefs.getInt(KEY_V95_PLAYBACK_STARTUP_HDR_MODE, 0)
+        set(value) = prefs.edit().putInt(KEY_V95_PLAYBACK_STARTUP_HDR_MODE, value.coerceIn(0, 3)).apply()
+    var v95DanmakuFontWeight6: Int
+        get() = prefs.getInt(KEY_V95_DANMAKU_FONT_WEIGHT6, 400)
+        set(value) = prefs.edit().putInt(KEY_V95_DANMAKU_FONT_WEIGHT6, value.coerceIn(100, 900)).apply()
+    var x95ColorBleachBypass2: Int
+        get() = prefs.getInt(KEY_V95_COLOR_BLEACH_BYPASS2, 0)
+        set(value) = prefs.edit().putInt(KEY_V95_COLOR_BLEACH_BYPASS2, value.coerceIn(0, 100)).apply()
+    var v95VolumeDialogShowPeak: Boolean
+        get() = prefs.getBoolean(KEY_VOLUME_DIALOG_SHOW_PEAK, false)
+        set(value) = prefs.edit().putBoolean(KEY_VOLUME_DIALOG_SHOW_PEAK, value).apply()
+    var v95DanmakuScrollOverlap2: Boolean
+        get() = prefs.getBoolean(KEY_V95_DANMAKU_SCROLL_OVERLAP2, false)
+        set(value) = prefs.edit().putBoolean(KEY_V95_DANMAKU_SCROLL_OVERLAP2, value).apply()
+    var v95CastSubtitleFontStyle2: Int
+        get() = prefs.getInt(KEY_V95_CAST_SUBTITLE_FONT_STYLE2, 0)
+        set(value) = prefs.edit().putInt(KEY_V95_CAST_SUBTITLE_FONT_STYLE2, value.coerceIn(0, 3)).apply()
+    var v95GestureSwipeAction10: Int
+        get() = prefs.getInt(KEY_V95_GESTURE_SWIPE_ACTION10, 0)
+        set(value) = prefs.edit().putInt(KEY_V95_GESTURE_SWIPE_ACTION10, value.coerceIn(0, 5)).apply()
+    var v95DanmakuFilterSmartScore2: Int
+        get() = prefs.getInt(KEY_V95_DANMAKU_FILTER_SMART_SCORE2, 0)
+        set(value) = prefs.edit().putInt(KEY_V95_DANMAKU_FILTER_SMART_SCORE2, value.coerceIn(0, 10)).apply()
+    var v95CacheHttpProxyCert: Boolean
+        get() = prefs.getBoolean(KEY_V95_CACHE_HTTP_PROXY_CERT, false)
+        set(value) = prefs.edit().putBoolean(KEY_V95_CACHE_HTTP_PROXY_CERT, value).apply()
+    var v95ProgressBarMarkAnim2: Boolean
+        get() = prefs.getBoolean(KEY_V95_PROGRESS_BAR_MARK_ANIM2, false)
+        set(value) = prefs.edit().putBoolean(KEY_V95_PROGRESS_BAR_MARK_ANIM2, value).apply()
+    var v95DanmakuSendBgPadding6: Int
+        get() = prefs.getInt(KEY_V95_DANMAKU_SEND_BG_PADDING6, 0)
+        set(value) = prefs.edit().putInt(KEY_V95_DANMAKU_SEND_BG_PADDING6, value.coerceIn(0, 10)).apply()
+    var x95ColorSobelEdge2: Int
+        get() = prefs.getInt(KEY_V95_COLOR_SOBEL_EDGE2, 0)
+        set(value) = prefs.edit().putInt(KEY_V95_COLOR_SOBEL_EDGE2, value.coerceIn(0, 100)).apply()
+    var v95VolumeBoostOnPodcast: Boolean
+        get() = prefs.getBoolean(KEY_V95_VOLUME_BOOST_ON_PODCAST, false)
+        set(value) = prefs.edit().putBoolean(KEY_V95_VOLUME_BOOST_ON_PODCAST, value).apply()
+    var v95DanmakuBgPaddingCustom6: Int
+        get() = prefs.getInt(KEY_V95_DANMAKU_BG_PADDING_CUSTOM6, 0)
+        set(value) = prefs.edit().putInt(KEY_V95_DANMAKU_BG_PADDING_CUSTOM6, value.coerceIn(0, 30)).apply()
+    var v95CastSubtitleBgBlur3: Int
+        get() = prefs.getInt(KEY_V95_CAST_SUBTITLE_BG_BLUR3, 0)
+        set(value) = prefs.edit().putInt(KEY_V95_CAST_SUBTITLE_BG_BLUR3, value.coerceIn(0, 20)).apply()
