@@ -1,0 +1,587 @@
+// ==================== v66.x ====================
+
+// v66.1: StartupVolume
+internal fun PlayerActivity.showV66StartupVolumeDialog() {
+    val options = listOf(0,5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100)
+    val labels = listOf("0","5","10","15","20","25","30","35","40","45","50","55","60","65","70","75","80","85","90","95","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v66StartupVolume).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "StartupVolume", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v66StartupVolume = value; AppToast.show(this, "StartupVolume: ${labels[options.indexOf(value)]}") }
+}
+
+// v66.2: FontEdgeColor
+internal fun PlayerActivity.showV66FontEdgeColorDialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v66FontEdgeColor).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "FontEdgeColor", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v66FontEdgeColor = value; AppToast.show(this, "FontEdgeColor: ${labels[options.indexOf(value)]}") }
+}
+
+// v66.3: BloomRadius
+internal fun PlayerActivity.showV66BloomRadiusDialog() {
+    val options = listOf(0,5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100)
+    val labels = listOf("0","5","10","15","20","25","30","35","40","45","50","55","60","65","70","75","80","85","90","95","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v66BloomRadius).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "BloomRadius", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v66BloomRadius = value; AppToast.show(this, "BloomRadius: ${labels[options.indexOf(value)]}") }
+}
+
+// v66.4: CompressorThreshold
+internal fun PlayerActivity.showV66CompressorThresholdDialog() {
+    val options = listOf(-60,-55,-50,-45,-40,-35,-30,-25,-20,-15,-10,-5,0)
+    val labels = listOf("-60","-55","-50","-45","-40","-35","-30","-25","-20","-15","-10","-5","0")
+    val currentIndex = options.indexOf(BiliClient.prefs.v66CompressorThreshold).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "CompressorThreshold", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v66CompressorThreshold = value; AppToast.show(this, "CompressorThreshold: ${labels[options.indexOf(value)]}") }
+}
+
+// v66.5: ScrollProportional
+internal fun PlayerActivity.showV66ScrollProportionalToggle() {
+    val current = BiliClient.prefs.v66ScrollProportional
+    BiliClient.prefs.v66ScrollProportional = !current
+    AppToast.show(this, "ScrollProportional: ${if (!current) "ON" else "OFF"}")
+}
+
+// v66.6: VideoScaling
+internal fun PlayerActivity.showV66VideoScalingDialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v66VideoScaling).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "VideoScaling", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v66VideoScaling = value; AppToast.show(this, "VideoScaling: ${labels[options.indexOf(value)]}") }
+}
+
+// v66.7: CustomAction1
+internal fun PlayerActivity.showV66CustomAction1Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8)
+    val labels = listOf("0","1","2","3","4","5","6","7","8")
+    val currentIndex = options.indexOf(BiliClient.prefs.v66CustomAction1).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "CustomAction1", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v66CustomAction1 = value; AppToast.show(this, "CustomAction1: ${labels[options.indexOf(value)]}") }
+}
+
+// v66.8: FilterRegion
+internal fun PlayerActivity.showV66FilterRegionDialog() {
+    val options = listOf(0,1,2,3,4)
+    val labels = listOf("0","1","2","3","4")
+    val currentIndex = options.indexOf(BiliClient.prefs.v66FilterRegion).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "FilterRegion", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v66FilterRegion = value; AppToast.show(this, "FilterRegion: ${labels[options.indexOf(value)]}") }
+}
+
+// v66.9: TcpFastOpen
+internal fun PlayerActivity.showV66TcpFastOpenToggle() {
+    val current = BiliClient.prefs.v66TcpFastOpen
+    BiliClient.prefs.v66TcpFastOpen = !current
+    AppToast.show(this, "TcpFastOpen: ${if (!current) "ON" else "OFF"}")
+}
+
+// v66.10: MarkVisible
+internal fun PlayerActivity.showV66MarkVisibleToggle() {
+    val current = BiliClient.prefs.v66MarkVisible
+    BiliClient.prefs.v66MarkVisible = !current
+    AppToast.show(this, "MarkVisible: ${if (!current) "ON" else "OFF"}")
+}
+
+// v66.11: SendStrokeWidth
+internal fun PlayerActivity.showV66SendStrokeWidthDialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v66SendStrokeWidth).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "SendStrokeWidth", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v66SendStrokeWidth = value; AppToast.show(this, "SendStrokeWidth: ${labels[options.indexOf(value)]}") }
+}
+
+// v66.12: FadeInOut
+internal fun PlayerActivity.showV66FadeInOutToggle() {
+    val current = BiliClient.prefs.v66FadeInOut
+    BiliClient.prefs.v66FadeInOut = !current
+    AppToast.show(this, "FadeInOut: ${if (!current) "ON" else "OFF"}")
+}
+
+// v66.13: DialogHaptic
+internal fun PlayerActivity.showV66DialogHapticToggle() {
+    val current = BiliClient.prefs.v66DialogHaptic
+    BiliClient.prefs.v66DialogHaptic = !current
+    AppToast.show(this, "DialogHaptic: ${if (!current) "ON" else "OFF"}")
+}
+
+// v66.14: BgGradientType
+internal fun PlayerActivity.showV66BgGradientTypeDialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v66BgGradientType).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "BgGradientType", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v66BgGradientType = value; AppToast.show(this, "BgGradientType: ${labels[options.indexOf(value)]}") }
+}
+
+// v66.15: SkipIntro
+internal fun PlayerActivity.showV66SkipIntroToggle() {
+    val current = BiliClient.prefs.v66SkipIntro
+    BiliClient.prefs.v66SkipIntro = !current
+    AppToast.show(this, "SkipIntro: ${if (!current) "ON" else "OFF"}")
+}
+
+
+// ==================== v67.x ====================
+
+// v67.1: StartupSpeed
+internal fun PlayerActivity.showV67StartupSpeedDialog() {
+    val options = listOf(25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100,105,110,115,120,125,130,135,140,145,150,155,160,165,170,175,180,185,190,195,200,205,210,215,220,225,230,235,240,245,250,255,260,265,270,275,280,285,290,295,300)
+    val labels = listOf("25","30","35","40","45","50","55","60","65","70","75","80","85","90","95","100","105","110","115","120","125","130","135","140","145","150","155","160","165","170","175","180","185","190","195","200","205","210","215","220","225","230","235","240","245","250","255","260","265","270","275","280","285","290","295","300")
+    val currentIndex = options.indexOf(BiliClient.prefs.v67StartupSpeed).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "StartupSpeed", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v67StartupSpeed = value; AppToast.show(this, "StartupSpeed: ${labels[options.indexOf(value)]}") }
+}
+
+// v67.2: FontShadowOffset
+internal fun PlayerActivity.showV67FontShadowOffsetDialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v67FontShadowOffset).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "FontShadowOffset", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v67FontShadowOffset = value; AppToast.show(this, "FontShadowOffset: ${labels[options.indexOf(value)]}") }
+}
+
+// v67.3: LetterBox
+internal fun PlayerActivity.showV67LetterBoxDialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v67LetterBox).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "LetterBox", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v67LetterBox = value; AppToast.show(this, "LetterBox: ${labels[options.indexOf(value)]}") }
+}
+
+// v67.4: DialogStep
+internal fun PlayerActivity.showV67DialogStepDialog() {
+    val options = listOf(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20)
+    val labels = listOf("1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20")
+    val currentIndex = options.indexOf(BiliClient.prefs.v67DialogStep).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "DialogStep", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v67DialogStep = value; AppToast.show(this, "DialogStep: ${labels[options.indexOf(value)]}") }
+}
+
+// v67.5: AreaMiddlePercent
+internal fun PlayerActivity.showV67AreaMiddlePercentDialog() {
+    val options = listOf(0,5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100)
+    val labels = listOf("0","5","10","15","20","25","30","35","40","45","50","55","60","65","70","75","80","85","90","95","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v67AreaMiddlePercent).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "AreaMiddlePercent", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v67AreaMiddlePercent = value; AppToast.show(this, "AreaMiddlePercent: ${labels[options.indexOf(value)]}") }
+}
+
+// v67.6: SubtitleSize
+internal fun PlayerActivity.showV67SubtitleSizeDialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v67SubtitleSize).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "SubtitleSize", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v67SubtitleSize = value; AppToast.show(this, "SubtitleSize: ${labels[options.indexOf(value)]}") }
+}
+
+// v67.7: CustomAction2
+internal fun PlayerActivity.showV67CustomAction2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8)
+    val labels = listOf("0","1","2","3","4","5","6","7","8")
+    val currentIndex = options.indexOf(BiliClient.prefs.v67CustomAction2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "CustomAction2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v67CustomAction2 = value; AppToast.show(this, "CustomAction2: ${labels[options.indexOf(value)]}") }
+}
+
+// v67.8: FilterLanguage
+internal fun PlayerActivity.showV67FilterLanguageDialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v67FilterLanguage).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "FilterLanguage", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v67FilterLanguage = value; AppToast.show(this, "FilterLanguage: ${labels[options.indexOf(value)]}") }
+}
+
+// v67.9: KeepAlive
+internal fun PlayerActivity.showV67KeepAliveToggle() {
+    val current = BiliClient.prefs.v67KeepAlive
+    BiliClient.prefs.v67KeepAlive = !current
+    AppToast.show(this, "KeepAlive: ${if (!current) "ON" else "OFF"}")
+}
+
+// v67.10: SnapToKeyframe
+internal fun PlayerActivity.showV67SnapToKeyframeToggle() {
+    val current = BiliClient.prefs.v67SnapToKeyframe
+    BiliClient.prefs.v67SnapToKeyframe = !current
+    AppToast.show(this, "SnapToKeyframe: ${if (!current) "ON" else "OFF"}")
+}
+
+// v67.11: SendGlowColor
+internal fun PlayerActivity.showV67SendGlowColorDialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v67SendGlowColor).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "SendGlowColor", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v67SendGlowColor = value; AppToast.show(this, "SendGlowColor: ${labels[options.indexOf(value)]}") }
+}
+
+// v67.12: VignetteFalloff
+internal fun PlayerActivity.showV67VignetteFalloffDialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v67VignetteFalloff).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "VignetteFalloff", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v67VignetteFalloff = value; AppToast.show(this, "VignetteFalloff: ${labels[options.indexOf(value)]}") }
+}
+
+// v67.13: Headroom
+internal fun PlayerActivity.showV67HeadroomDialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10,11,12)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10","11","12")
+    val currentIndex = options.indexOf(BiliClient.prefs.v67Headroom).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Headroom", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v67Headroom = value; AppToast.show(this, "Headroom: ${labels[options.indexOf(value)]}") }
+}
+
+// v67.14: ShadowDirection
+internal fun PlayerActivity.showV67ShadowDirectionDialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8)
+    val labels = listOf("0","1","2","3","4","5","6","7","8")
+    val currentIndex = options.indexOf(BiliClient.prefs.v67ShadowDirection).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "ShadowDirection", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v67ShadowDirection = value; AppToast.show(this, "ShadowDirection: ${labels[options.indexOf(value)]}") }
+}
+
+// v67.15: AutoQuality
+internal fun PlayerActivity.showV67AutoQualityToggle() {
+    val current = BiliClient.prefs.v67AutoQuality
+    BiliClient.prefs.v67AutoQuality = !current
+    AppToast.show(this, "AutoQuality: ${if (!current) "ON" else "OFF"}")
+}
+
+
+// ==================== v68.x ====================
+
+// v68.1: StartupBrightness
+internal fun PlayerActivity.showV68StartupBrightnessDialog() {
+    val options = listOf(0,5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100)
+    val labels = listOf("0","5","10","15","20","25","30","35","40","45","50","55","60","65","70","75","80","85","90","95","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v68StartupBrightness).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "StartupBrightness", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v68StartupBrightness = value; AppToast.show(this, "StartupBrightness: ${labels[options.indexOf(value)]}") }
+}
+
+// v68.2: FontWeightValue
+internal fun PlayerActivity.showV68FontWeightValueDialog() {
+    val options = listOf(100,200,300,400,500,600,700,800,900)
+    val labels = listOf("100","200","300","400","500","600","700","800","900")
+    val currentIndex = options.indexOf(BiliClient.prefs.v68FontWeightValue).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "FontWeightValue", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v68FontWeightValue = value; AppToast.show(this, "FontWeightValue: ${labels[options.indexOf(value)]}") }
+}
+
+// v68.3: TintShadows
+internal fun PlayerActivity.showV68TintShadowsDialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v68TintShadows).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "TintShadows", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v68TintShadows = value; AppToast.show(this, "TintShadows: ${labels[options.indexOf(value)]}") }
+}
+
+// v68.4: NormalizationPreamp
+internal fun PlayerActivity.showV68NormalizationPreampDialog() {
+    val options = listOf(-20,-15,-10,-5,0,5,10,15,20)
+    val labels = listOf("-20","-15","-10","-5","0","5","10","15","20")
+    val currentIndex = options.indexOf(BiliClient.prefs.v68NormalizationPreamp).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "NormalizationPreamp", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v68NormalizationPreamp = value; AppToast.show(this, "NormalizationPreamp: ${labels[options.indexOf(value)]}") }
+}
+
+// v68.5: MergeSimilar
+internal fun PlayerActivity.showV68MergeSimilarToggle() {
+    val current = BiliClient.prefs.v68MergeSimilar
+    BiliClient.prefs.v68MergeSimilar = !current
+    AppToast.show(this, "MergeSimilar: ${if (!current) "ON" else "OFF"}")
+}
+
+// v68.6: BackgroundImage
+internal fun PlayerActivity.showV68BackgroundImageToggle() {
+    val current = BiliClient.prefs.v68BackgroundImage
+    BiliClient.prefs.v68BackgroundImage = !current
+    AppToast.show(this, "BackgroundImage: ${if (!current) "ON" else "OFF"}")
+}
+
+// v68.7: DoubleTapSpeed
+internal fun PlayerActivity.showV68DoubleTapSpeedDialog() {
+    val options = listOf(200,210,220,230,240,250,260,270,280,290,300,310,320,330,340,350,360,370,380,390,400,410,420,430,440,450,460,470,480,490,500)
+    val labels = listOf("200","210","220","230","240","250","260","270","280","290","300","310","320","330","340","350","360","370","380","390","400","410","420","430","440","450","460","470","480","490","500")
+    val currentIndex = options.indexOf(BiliClient.prefs.v68DoubleTapSpeed).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "DoubleTapSpeed", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v68DoubleTapSpeed = value; AppToast.show(this, "DoubleTapSpeed: ${labels[options.indexOf(value)]}") }
+}
+
+// v68.8: FilterKeywordRegex
+internal fun PlayerActivity.showV68FilterKeywordRegexToggle() {
+    val current = BiliClient.prefs.v68FilterKeywordRegex
+    BiliClient.prefs.v68FilterKeywordRegex = !current
+    AppToast.show(this, "FilterKeywordRegex: ${if (!current) "ON" else "OFF"}")
+}
+
+// v68.9: SocketTimeout
+internal fun PlayerActivity.showV68SocketTimeoutDialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v68SocketTimeout).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "SocketTimeout", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v68SocketTimeout = value; AppToast.show(this, "SocketTimeout: ${labels[options.indexOf(value)]}") }
+}
+
+// v68.10: MinHeight
+internal fun PlayerActivity.showV68MinHeightDialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v68MinHeight).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "MinHeight", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v68MinHeight = value; AppToast.show(this, "MinHeight: ${labels[options.indexOf(value)]}") }
+}
+
+// v68.11: SendPositionOffset
+internal fun PlayerActivity.showV68SendPositionOffsetDialog() {
+    val options = listOf(0,5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100)
+    val labels = listOf("0","5","10","15","20","25","30","35","40","45","50","55","60","65","70","75","80","85","90","95","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v68SendPositionOffset).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "SendPositionOffset", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v68SendPositionOffset = value; AppToast.show(this, "SendPositionOffset: ${labels[options.indexOf(value)]}") }
+}
+
+// v68.12: TintHighlights
+internal fun PlayerActivity.showV68TintHighlightsDialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v68TintHighlights).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "TintHighlights", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v68TintHighlights = value; AppToast.show(this, "TintHighlights: ${labels[options.indexOf(value)]}") }
+}
+
+// v68.13: DialogPosition2
+internal fun PlayerActivity.showV68DialogPosition2Dialog() {
+    val options = listOf(0,1,2,3,4)
+    val labels = listOf("0","1","2","3","4")
+    val currentIndex = options.indexOf(BiliClient.prefs.v68DialogPosition2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "DialogPosition2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v68DialogPosition2 = value; AppToast.show(this, "DialogPosition2: ${labels[options.indexOf(value)]}") }
+}
+
+// v68.14: ShadowSpread
+internal fun PlayerActivity.showV68ShadowSpreadDialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v68ShadowSpread).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "ShadowSpread", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v68ShadowSpread = value; AppToast.show(this, "ShadowSpread: ${labels[options.indexOf(value)]}") }
+}
+
+// v68.15: QueueShuffle
+internal fun PlayerActivity.showV68QueueShuffleToggle() {
+    val current = BiliClient.prefs.v68QueueShuffle
+    BiliClient.prefs.v68QueueShuffle = !current
+    AppToast.show(this, "QueueShuffle: ${if (!current) "ON" else "OFF"}")
+}
+
+
+// ==================== v69.x ====================
+
+// v69.1: ResumeFromBookmark
+internal fun PlayerActivity.showV69ResumeFromBookmarkToggle() {
+    val current = BiliClient.prefs.v69ResumeFromBookmark
+    BiliClient.prefs.v69ResumeFromBookmark = !current
+    AppToast.show(this, "ResumeFromBookmark: ${if (!current) "ON" else "OFF"}")
+}
+
+// v69.2: FontStretch
+internal fun PlayerActivity.showV69FontStretchDialog() {
+    val options = listOf(50,60,70,80,90,100,110,120,130,140,150,160,170,180,190,200)
+    val labels = listOf("50","60","70","80","90","100","110","120","130","140","150","160","170","180","190","200")
+    val currentIndex = options.indexOf(BiliClient.prefs.v69FontStretch).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "FontStretch", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v69FontStretch = value; AppToast.show(this, "FontStretch: ${labels[options.indexOf(value)]}") }
+}
+
+// v69.3: BleachBypass
+internal fun PlayerActivity.showV69BleachBypassDialog() {
+    val options = listOf(0,5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100)
+    val labels = listOf("0","5","10","15","20","25","30","35","40","45","50","55","60","65","70","75","80","85","90","95","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v69BleachBypass).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "BleachBypass", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v69BleachBypass = value; AppToast.show(this, "BleachBypass: ${labels[options.indexOf(value)]}") }
+}
+
+// v69.4: DialogTimeout2
+internal fun PlayerActivity.showV69DialogTimeout2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v69DialogTimeout2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "DialogTimeout2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v69DialogTimeout2 = value; AppToast.show(this, "DialogTimeout2: ${labels[options.indexOf(value)]}") }
+}
+
+// v69.5: FilterPopups
+internal fun PlayerActivity.showV69FilterPopupsToggle() {
+    val current = BiliClient.prefs.v69FilterPopups
+    BiliClient.prefs.v69FilterPopups = !current
+    AppToast.show(this, "FilterPopups: ${if (!current) "ON" else "OFF"}")
+}
+
+// v69.6: VideoUpscale
+internal fun PlayerActivity.showV69VideoUpscaleToggle() {
+    val current = BiliClient.prefs.v69VideoUpscale
+    BiliClient.prefs.v69VideoUpscale = !current
+    AppToast.show(this, "VideoUpscale: ${if (!current) "ON" else "OFF"}")
+}
+
+// v69.7: RotationLock
+internal fun PlayerActivity.showV69RotationLockToggle() {
+    val current = BiliClient.prefs.v69RotationLock
+    BiliClient.prefs.v69RotationLock = !current
+    AppToast.show(this, "RotationLock: ${if (!current) "ON" else "OFF"}")
+}
+
+// v69.8: MergeTimeout
+internal fun PlayerActivity.showV69MergeTimeoutDialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v69MergeTimeout).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "MergeTimeout", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v69MergeTimeout = value; AppToast.show(this, "MergeTimeout: ${labels[options.indexOf(value)]}") }
+}
+
+// v69.9: HttpReadTimeout
+internal fun PlayerActivity.showV69HttpReadTimeoutDialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v69HttpReadTimeout).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "HttpReadTimeout", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v69HttpReadTimeout = value; AppToast.show(this, "HttpReadTimeout: ${labels[options.indexOf(value)]}") }
+}
+
+// v69.10: AnimationSpeed
+internal fun PlayerActivity.showV69AnimationSpeedDialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v69AnimationSpeed).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "AnimationSpeed", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v69AnimationSpeed = value; AppToast.show(this, "AnimationSpeed: ${labels[options.indexOf(value)]}") }
+}
+
+// v69.11: SendMarginTop
+internal fun PlayerActivity.showV69SendMarginTopDialog() {
+    val options = listOf(0,5,10,15,20,25,30,35,40,45,50)
+    val labels = listOf("0","5","10","15","20","25","30","35","40","45","50")
+    val currentIndex = options.indexOf(BiliClient.prefs.v69SendMarginTop).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "SendMarginTop", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v69SendMarginTop = value; AppToast.show(this, "SendMarginTop: ${labels[options.indexOf(value)]}") }
+}
+
+// v69.12: CrossProcessBlue
+internal fun PlayerActivity.showV69CrossProcessBlueDialog() {
+    val options = listOf(0,5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100)
+    val labels = listOf("0","5","10","15","20","25","30","35","40","45","50","55","60","65","70","75","80","85","90","95","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v69CrossProcessBlue).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "CrossProcessBlue", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v69CrossProcessBlue = value; AppToast.show(this, "CrossProcessBlue: ${labels[options.indexOf(value)]}") }
+}
+
+// v69.13: LoudnessAuto
+internal fun PlayerActivity.showV69LoudnessAutoToggle() {
+    val current = BiliClient.prefs.v69LoudnessAuto
+    BiliClient.prefs.v69LoudnessAuto = !current
+    AppToast.show(this, "LoudnessAuto: ${if (!current) "ON" else "OFF"}")
+}
+
+// v69.14: BgBorderStyle
+internal fun PlayerActivity.showV69BgBorderStyleDialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v69BgBorderStyle).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "BgBorderStyle", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v69BgBorderStyle = value; AppToast.show(this, "BgBorderStyle: ${labels[options.indexOf(value)]}") }
+}
+
+// v69.15: AudioDelay
+internal fun PlayerActivity.showV69AudioDelayDialog() {
+    val options = listOf(-500,-450,-400,-350,-300,-250,-200,-150,-100,-50,0,50,100,150,200,250,300,350,400,450,500)
+    val labels = listOf("-500","-450","-400","-350","-300","-250","-200","-150","-100","-50","0","50","100","150","200","250","300","350","400","450","500")
+    val currentIndex = options.indexOf(BiliClient.prefs.v69AudioDelay).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "AudioDelay", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v69AudioDelay = value; AppToast.show(this, "AudioDelay: ${labels[options.indexOf(value)]}") }
+}
+
+
+// ==================== v70.x ====================
+
+// v70.1: StartupPip
+internal fun PlayerActivity.showV70StartupPipToggle() {
+    val current = BiliClient.prefs.v70StartupPip
+    BiliClient.prefs.v70StartupPip = !current
+    AppToast.show(this, "StartupPip: ${if (!current) "ON" else "OFF"}")
+}
+
+// v70.2: FontMask
+internal fun PlayerActivity.showV70FontMaskToggle() {
+    val current = BiliClient.prefs.v70FontMask
+    BiliClient.prefs.v70FontMask = !current
+    AppToast.show(this, "FontMask: ${if (!current) "ON" else "OFF"}")
+}
+
+// v70.3: CinematicBars
+internal fun PlayerActivity.showV70CinematicBarsDialog() {
+    val options = listOf(0,5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100)
+    val labels = listOf("0","5","10","15","20","25","30","35","40","45","50","55","60","65","70","75","80","85","90","95","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v70CinematicBars).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "CinematicBars", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v70CinematicBars = value; AppToast.show(this, "CinematicBars: ${labels[options.indexOf(value)]}") }
+}
+
+// v70.4: NormalizeOnLoad
+internal fun PlayerActivity.showV70NormalizeOnLoadToggle() {
+    val current = BiliClient.prefs.v70NormalizeOnLoad
+    BiliClient.prefs.v70NormalizeOnLoad = !current
+    AppToast.show(this, "NormalizeOnLoad: ${if (!current) "ON" else "OFF"}")
+}
+
+// v70.5: ScrollMergeGap
+internal fun PlayerActivity.showV70ScrollMergeGapDialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v70ScrollMergeGap).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "ScrollMergeGap", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v70ScrollMergeGap = value; AppToast.show(this, "ScrollMergeGap: ${labels[options.indexOf(value)]}") }
+}
+
+// v70.6: ConnectTimeout
+internal fun PlayerActivity.showV70ConnectTimeoutDialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v70ConnectTimeout).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "ConnectTimeout", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v70ConnectTimeout = value; AppToast.show(this, "ConnectTimeout: ${labels[options.indexOf(value)]}") }
+}
+
+// v70.7: ShowIndicator
+internal fun PlayerActivity.showV70ShowIndicatorToggle() {
+    val current = BiliClient.prefs.v70ShowIndicator
+    BiliClient.prefs.v70ShowIndicator = !current
+    AppToast.show(this, "ShowIndicator: ${if (!current) "ON" else "OFF"}")
+}
+
+// v70.8: FilterTopPosition
+internal fun PlayerActivity.showV70FilterTopPositionToggle() {
+    val current = BiliClient.prefs.v70FilterTopPosition
+    BiliClient.prefs.v70FilterTopPosition = !current
+    AppToast.show(this, "FilterTopPosition: ${if (!current) "ON" else "OFF"}")
+}
+
+// v70.9: ConnectionReuse
+internal fun PlayerActivity.showV70ConnectionReuseToggle() {
+    val current = BiliClient.prefs.v70ConnectionReuse
+    BiliClient.prefs.v70ConnectionReuse = !current
+    AppToast.show(this, "ConnectionReuse: ${if (!current) "ON" else "OFF"}")
+}
+
+// v70.10: SmoothSeek
+internal fun PlayerActivity.showV70SmoothSeekToggle() {
+    val current = BiliClient.prefs.v70SmoothSeek
+    BiliClient.prefs.v70SmoothSeek = !current
+    AppToast.show(this, "SmoothSeek: ${if (!current) "ON" else "OFF"}")
+}
+
+// v70.11: SendEmoji
+internal fun PlayerActivity.showV70SendEmojiToggle() {
+    val current = BiliClient.prefs.v70SendEmoji
+    BiliClient.prefs.v70SendEmoji = !current
+    AppToast.show(this, "SendEmoji: ${if (!current) "ON" else "OFF"}")
+}
+
+// v70.12: FilmFade
+internal fun PlayerActivity.showV70FilmFadeDialog() {
+    val options = listOf(0,5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100)
+    val labels = listOf("0","5","10","15","20","25","30","35","40","45","50","55","60","65","70","75","80","85","90","95","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v70FilmFade).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "FilmFade", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v70FilmFade = value; AppToast.show(this, "FilmFade: ${labels[options.indexOf(value)]}") }
+}
+
+// v70.13: SilentMode
+internal fun PlayerActivity.showV70SilentModeToggle() {
+    val current = BiliClient.prefs.v70SilentMode
+    BiliClient.prefs.v70SilentMode = !current
+    AppToast.show(this, "SilentMode: ${if (!current) "ON" else "OFF"}")
+}
+
+// v70.14: BgBlurStyle
+internal fun PlayerActivity.showV70BgBlurStyleDialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v70BgBlurStyle).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "BgBlurStyle", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v70BgBlurStyle = value; AppToast.show(this, "BgBlurStyle: ${labels[options.indexOf(value)]}") }
+}
+
+// v70.15: SubtitleBgColor
+internal fun PlayerActivity.showV70SubtitleBgColorDialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v70SubtitleBgColor).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "SubtitleBgColor", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v70SubtitleBgColor = value; AppToast.show(this, "SubtitleBgColor: ${labels[options.indexOf(value)]}") }
+}
+
