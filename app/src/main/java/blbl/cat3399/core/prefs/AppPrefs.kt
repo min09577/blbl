@@ -3945,6 +3945,477 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V70_CAST_SUBTITLE_FINAL2, value.coerceIn(0, 5)).apply()
 
 
+
+    // ===== v91.x =====
+    var v91PlaybackSmartBuffer3: Boolean
+        get() = prefs.getBoolean(KEY_V91_PLAYBACK_SMART_BUFFER3, false)
+        set(value) = prefs.edit().putBoolean(KEY_V91_PLAYBACK_SMART_BUFFER3, value).apply()
+    var v91DanmakuFontAlpha3: Int
+        get() = prefs.getInt(KEY_V91_DANMAKU_FONT_ALPHA3, 0)
+        set(value) = prefs.edit().putInt(KEY_V91_DANMAKU_FONT_ALPHA3, value.coerceIn(0, 100)).apply()
+    var v91ColorSaturation3: Int
+        get() = prefs.getInt(KEY_V91_COLOR_SATURATION3, 0)
+        set(value) = prefs.edit().putInt(KEY_V91_COLOR_SATURATION3, value.coerceIn(0, 100)).apply()
+    var v91VolumeLimiter3: Int
+        get() = prefs.getInt(KEY_V91_VOLUME_LIMITER3, 0)
+        set(value) = prefs.edit().putInt(KEY_V91_VOLUME_LIMITER3, value.coerceIn(0, 5)).apply()
+    var v91CastBandwidth3: Int
+        get() = prefs.getInt(KEY_V91_CAST_BANDWIDTH3, 0)
+        set(value) = prefs.edit().putInt(KEY_V91_CAST_BANDWIDTH3, value.coerceIn(0, 5)).apply()
+    var v91GesturePinchZoom3: Boolean
+        get() = prefs.getBoolean(KEY_V91_GESTURE_PINCH_ZOOM3, false)
+        set(value) = prefs.edit().putBoolean(KEY_V91_GESTURE_PINCH_ZOOM3, value).apply()
+    var v91CacheEncrypt3: Boolean
+        get() = prefs.getBoolean(KEY_V91_CACHE_ENCRYPT3, false)
+        set(value) = prefs.edit().putBoolean(KEY_V91_CACHE_ENCRYPT3, value).apply()
+    var v91ProgressBarThumbSize3: Int
+        get() = prefs.getInt(KEY_V91_PROGRESS_BAR_THUMB_SIZE3, 0)
+        set(value) = prefs.edit().putInt(KEY_V91_PROGRESS_BAR_THUMB_SIZE3, value.coerceIn(0, 20)).apply()
+    var v91PlaybackAutoLoop2: Boolean
+        get() = prefs.getBoolean(KEY_V91_PLAYBACK_AUTO_LOOP2, false)
+        set(value) = prefs.edit().putBoolean(KEY_V91_PLAYBACK_AUTO_LOOP2, value).apply()
+    var v91DanmakuFilterScore4: Int
+        get() = prefs.getInt(KEY_V91_DANMAKU_FILTER_SCORE4, 0)
+        set(value) = prefs.edit().putInt(KEY_V91_DANMAKU_FILTER_SCORE4, value.coerceIn(0, 5)).apply()
+    var v91ColorContrast3: Int
+        get() = prefs.getInt(KEY_V91_COLOR_CONTRAST3, 0)
+        set(value) = prefs.edit().putInt(KEY_V91_COLOR_CONTRAST3, value.coerceIn(0, 100)).apply()
+    var v91VolumeEQ3: Int
+        get() = prefs.getInt(KEY_V91_VOLUME_EQ3, 0)
+        set(value) = prefs.edit().putInt(KEY_V91_VOLUME_EQ3, value.coerceIn(0, 5)).apply()
+    var v91CastAutoReconnect4: Boolean
+        get() = prefs.getBoolean(KEY_V91_CAST_AUTO_RECONNECT4, false)
+        set(value) = prefs.edit().putBoolean(KEY_V91_CAST_AUTO_RECONNECT4, value).apply()
+    var v91GestureRotation3: Int
+        get() = prefs.getInt(KEY_V91_GESTURE_ROTATION3, 0)
+        set(value) = prefs.edit().putInt(KEY_V91_GESTURE_ROTATION3, value.coerceIn(0, 3)).apply()
+    var v91CacheAutoClear3: Boolean
+        get() = prefs.getBoolean(KEY_V91_CACHE_AUTO_CLEAR3, false)
+        set(value) = prefs.edit().putBoolean(KEY_V91_CACHE_AUTO_CLEAR3, value).apply()
+
+    // ===== v92.x =====
+    var v92PlaybackSmartBuffer3: Boolean
+        get() = prefs.getBoolean(KEY_V92_PLAYBACK_SMART_BUFFER3, false)
+        set(value) = prefs.edit().putBoolean(KEY_V92_PLAYBACK_SMART_BUFFER3, value).apply()
+    var v92DanmakuFontAlpha3: Int
+        get() = prefs.getInt(KEY_V92_DANMAKU_FONT_ALPHA3, 0)
+        set(value) = prefs.edit().putInt(KEY_V92_DANMAKU_FONT_ALPHA3, value.coerceIn(0, 100)).apply()
+    var v92ColorSaturation3: Int
+        get() = prefs.getInt(KEY_V92_COLOR_SATURATION3, 0)
+        set(value) = prefs.edit().putInt(KEY_V92_COLOR_SATURATION3, value.coerceIn(0, 100)).apply()
+    var v92VolumeLimiter3: Int
+        get() = prefs.getInt(KEY_V92_VOLUME_LIMITER3, 0)
+        set(value) = prefs.edit().putInt(KEY_V92_VOLUME_LIMITER3, value.coerceIn(0, 5)).apply()
+    var v92CastBandwidth3: Int
+        get() = prefs.getInt(KEY_V92_CAST_BANDWIDTH3, 0)
+        set(value) = prefs.edit().putInt(KEY_V92_CAST_BANDWIDTH3, value.coerceIn(0, 5)).apply()
+    var v92GesturePinchZoom3: Boolean
+        get() = prefs.getBoolean(KEY_V92_GESTURE_PINCH_ZOOM3, false)
+        set(value) = prefs.edit().putBoolean(KEY_V92_GESTURE_PINCH_ZOOM3, value).apply()
+    var v92CacheEncrypt3: Boolean
+        get() = prefs.getBoolean(KEY_V92_CACHE_ENCRYPT3, false)
+        set(value) = prefs.edit().putBoolean(KEY_V92_CACHE_ENCRYPT3, value).apply()
+    var v92ProgressBarThumbSize3: Int
+        get() = prefs.getInt(KEY_V92_PROGRESS_BAR_THUMB_SIZE3, 0)
+        set(value) = prefs.edit().putInt(KEY_V92_PROGRESS_BAR_THUMB_SIZE3, value.coerceIn(0, 20)).apply()
+    var v92PlaybackAutoLoop2: Boolean
+        get() = prefs.getBoolean(KEY_V92_PLAYBACK_AUTO_LOOP2, false)
+        set(value) = prefs.edit().putBoolean(KEY_V92_PLAYBACK_AUTO_LOOP2, value).apply()
+    var v92DanmakuFilterScore4: Int
+        get() = prefs.getInt(KEY_V92_DANMAKU_FILTER_SCORE4, 0)
+        set(value) = prefs.edit().putInt(KEY_V92_DANMAKU_FILTER_SCORE4, value.coerceIn(0, 5)).apply()
+    var v92ColorContrast3: Int
+        get() = prefs.getInt(KEY_V92_COLOR_CONTRAST3, 0)
+        set(value) = prefs.edit().putInt(KEY_V92_COLOR_CONTRAST3, value.coerceIn(0, 100)).apply()
+    var v92VolumeEQ3: Int
+        get() = prefs.getInt(KEY_V92_VOLUME_EQ3, 0)
+        set(value) = prefs.edit().putInt(KEY_V92_VOLUME_EQ3, value.coerceIn(0, 5)).apply()
+    var v92CastAutoReconnect4: Boolean
+        get() = prefs.getBoolean(KEY_V92_CAST_AUTO_RECONNECT4, false)
+        set(value) = prefs.edit().putBoolean(KEY_V92_CAST_AUTO_RECONNECT4, value).apply()
+    var v92GestureRotation3: Int
+        get() = prefs.getInt(KEY_V92_GESTURE_ROTATION3, 0)
+        set(value) = prefs.edit().putInt(KEY_V92_GESTURE_ROTATION3, value.coerceIn(0, 3)).apply()
+    var v92CacheAutoClear3: Boolean
+        get() = prefs.getBoolean(KEY_V92_CACHE_AUTO_CLEAR3, false)
+        set(value) = prefs.edit().putBoolean(KEY_V92_CACHE_AUTO_CLEAR3, value).apply()
+
+    // ===== v93.x =====
+    var v93PlaybackSmartBuffer3: Boolean
+        get() = prefs.getBoolean(KEY_V93_PLAYBACK_SMART_BUFFER3, false)
+        set(value) = prefs.edit().putBoolean(KEY_V93_PLAYBACK_SMART_BUFFER3, value).apply()
+    var v93DanmakuFontAlpha3: Int
+        get() = prefs.getInt(KEY_V93_DANMAKU_FONT_ALPHA3, 0)
+        set(value) = prefs.edit().putInt(KEY_V93_DANMAKU_FONT_ALPHA3, value.coerceIn(0, 100)).apply()
+    var v93ColorSaturation3: Int
+        get() = prefs.getInt(KEY_V93_COLOR_SATURATION3, 0)
+        set(value) = prefs.edit().putInt(KEY_V93_COLOR_SATURATION3, value.coerceIn(0, 100)).apply()
+    var v93VolumeLimiter3: Int
+        get() = prefs.getInt(KEY_V93_VOLUME_LIMITER3, 0)
+        set(value) = prefs.edit().putInt(KEY_V93_VOLUME_LIMITER3, value.coerceIn(0, 5)).apply()
+    var v93CastBandwidth3: Int
+        get() = prefs.getInt(KEY_V93_CAST_BANDWIDTH3, 0)
+        set(value) = prefs.edit().putInt(KEY_V93_CAST_BANDWIDTH3, value.coerceIn(0, 5)).apply()
+    var v93GesturePinchZoom3: Boolean
+        get() = prefs.getBoolean(KEY_V93_GESTURE_PINCH_ZOOM3, false)
+        set(value) = prefs.edit().putBoolean(KEY_V93_GESTURE_PINCH_ZOOM3, value).apply()
+    var v93CacheEncrypt3: Boolean
+        get() = prefs.getBoolean(KEY_V93_CACHE_ENCRYPT3, false)
+        set(value) = prefs.edit().putBoolean(KEY_V93_CACHE_ENCRYPT3, value).apply()
+    var v93ProgressBarThumbSize3: Int
+        get() = prefs.getInt(KEY_V93_PROGRESS_BAR_THUMB_SIZE3, 0)
+        set(value) = prefs.edit().putInt(KEY_V93_PROGRESS_BAR_THUMB_SIZE3, value.coerceIn(0, 20)).apply()
+    var v93PlaybackAutoLoop2: Boolean
+        get() = prefs.getBoolean(KEY_V93_PLAYBACK_AUTO_LOOP2, false)
+        set(value) = prefs.edit().putBoolean(KEY_V93_PLAYBACK_AUTO_LOOP2, value).apply()
+    var v93DanmakuFilterScore4: Int
+        get() = prefs.getInt(KEY_V93_DANMAKU_FILTER_SCORE4, 0)
+        set(value) = prefs.edit().putInt(KEY_V93_DANMAKU_FILTER_SCORE4, value.coerceIn(0, 5)).apply()
+    var v93ColorContrast3: Int
+        get() = prefs.getInt(KEY_V93_COLOR_CONTRAST3, 0)
+        set(value) = prefs.edit().putInt(KEY_V93_COLOR_CONTRAST3, value.coerceIn(0, 100)).apply()
+    var v93VolumeEQ3: Int
+        get() = prefs.getInt(KEY_V93_VOLUME_EQ3, 0)
+        set(value) = prefs.edit().putInt(KEY_V93_VOLUME_EQ3, value.coerceIn(0, 5)).apply()
+    var v93CastAutoReconnect4: Boolean
+        get() = prefs.getBoolean(KEY_V93_CAST_AUTO_RECONNECT4, false)
+        set(value) = prefs.edit().putBoolean(KEY_V93_CAST_AUTO_RECONNECT4, value).apply()
+    var v93GestureRotation3: Int
+        get() = prefs.getInt(KEY_V93_GESTURE_ROTATION3, 0)
+        set(value) = prefs.edit().putInt(KEY_V93_GESTURE_ROTATION3, value.coerceIn(0, 3)).apply()
+    var v93CacheAutoClear3: Boolean
+        get() = prefs.getBoolean(KEY_V93_CACHE_AUTO_CLEAR3, false)
+        set(value) = prefs.edit().putBoolean(KEY_V93_CACHE_AUTO_CLEAR3, value).apply()
+
+    // ===== v94.x =====
+    var v94PlaybackSmartBuffer3: Boolean
+        get() = prefs.getBoolean(KEY_V94_PLAYBACK_SMART_BUFFER3, false)
+        set(value) = prefs.edit().putBoolean(KEY_V94_PLAYBACK_SMART_BUFFER3, value).apply()
+    var v94DanmakuFontAlpha3: Int
+        get() = prefs.getInt(KEY_V94_DANMAKU_FONT_ALPHA3, 0)
+        set(value) = prefs.edit().putInt(KEY_V94_DANMAKU_FONT_ALPHA3, value.coerceIn(0, 100)).apply()
+    var v94ColorSaturation3: Int
+        get() = prefs.getInt(KEY_V94_COLOR_SATURATION3, 0)
+        set(value) = prefs.edit().putInt(KEY_V94_COLOR_SATURATION3, value.coerceIn(0, 100)).apply()
+    var v94VolumeLimiter3: Int
+        get() = prefs.getInt(KEY_V94_VOLUME_LIMITER3, 0)
+        set(value) = prefs.edit().putInt(KEY_V94_VOLUME_LIMITER3, value.coerceIn(0, 5)).apply()
+    var v94CastBandwidth3: Int
+        get() = prefs.getInt(KEY_V94_CAST_BANDWIDTH3, 0)
+        set(value) = prefs.edit().putInt(KEY_V94_CAST_BANDWIDTH3, value.coerceIn(0, 5)).apply()
+    var v94GesturePinchZoom3: Boolean
+        get() = prefs.getBoolean(KEY_V94_GESTURE_PINCH_ZOOM3, false)
+        set(value) = prefs.edit().putBoolean(KEY_V94_GESTURE_PINCH_ZOOM3, value).apply()
+    var v94CacheEncrypt3: Boolean
+        get() = prefs.getBoolean(KEY_V94_CACHE_ENCRYPT3, false)
+        set(value) = prefs.edit().putBoolean(KEY_V94_CACHE_ENCRYPT3, value).apply()
+    var v94ProgressBarThumbSize3: Int
+        get() = prefs.getInt(KEY_V94_PROGRESS_BAR_THUMB_SIZE3, 0)
+        set(value) = prefs.edit().putInt(KEY_V94_PROGRESS_BAR_THUMB_SIZE3, value.coerceIn(0, 20)).apply()
+    var v94PlaybackAutoLoop2: Boolean
+        get() = prefs.getBoolean(KEY_V94_PLAYBACK_AUTO_LOOP2, false)
+        set(value) = prefs.edit().putBoolean(KEY_V94_PLAYBACK_AUTO_LOOP2, value).apply()
+    var v94DanmakuFilterScore4: Int
+        get() = prefs.getInt(KEY_V94_DANMAKU_FILTER_SCORE4, 0)
+        set(value) = prefs.edit().putInt(KEY_V94_DANMAKU_FILTER_SCORE4, value.coerceIn(0, 5)).apply()
+    var v94ColorContrast3: Int
+        get() = prefs.getInt(KEY_V94_COLOR_CONTRAST3, 0)
+        set(value) = prefs.edit().putInt(KEY_V94_COLOR_CONTRAST3, value.coerceIn(0, 100)).apply()
+    var v94VolumeEQ3: Int
+        get() = prefs.getInt(KEY_V94_VOLUME_EQ3, 0)
+        set(value) = prefs.edit().putInt(KEY_V94_VOLUME_EQ3, value.coerceIn(0, 5)).apply()
+    var v94CastAutoReconnect4: Boolean
+        get() = prefs.getBoolean(KEY_V94_CAST_AUTO_RECONNECT4, false)
+        set(value) = prefs.edit().putBoolean(KEY_V94_CAST_AUTO_RECONNECT4, value).apply()
+    var v94GestureRotation3: Int
+        get() = prefs.getInt(KEY_V94_GESTURE_ROTATION3, 0)
+        set(value) = prefs.edit().putInt(KEY_V94_GESTURE_ROTATION3, value.coerceIn(0, 3)).apply()
+    var v94CacheAutoClear3: Boolean
+        get() = prefs.getBoolean(KEY_V94_CACHE_AUTO_CLEAR3, false)
+        set(value) = prefs.edit().putBoolean(KEY_V94_CACHE_AUTO_CLEAR3, value).apply()
+
+    // ===== v95.x =====
+    var v95PlaybackSmartBuffer3: Boolean
+        get() = prefs.getBoolean(KEY_V95_PLAYBACK_SMART_BUFFER3, false)
+        set(value) = prefs.edit().putBoolean(KEY_V95_PLAYBACK_SMART_BUFFER3, value).apply()
+    var v95DanmakuFontAlpha3: Int
+        get() = prefs.getInt(KEY_V95_DANMAKU_FONT_ALPHA3, 0)
+        set(value) = prefs.edit().putInt(KEY_V95_DANMAKU_FONT_ALPHA3, value.coerceIn(0, 100)).apply()
+    var v95ColorSaturation3: Int
+        get() = prefs.getInt(KEY_V95_COLOR_SATURATION3, 0)
+        set(value) = prefs.edit().putInt(KEY_V95_COLOR_SATURATION3, value.coerceIn(0, 100)).apply()
+    var v95VolumeLimiter3: Int
+        get() = prefs.getInt(KEY_V95_VOLUME_LIMITER3, 0)
+        set(value) = prefs.edit().putInt(KEY_V95_VOLUME_LIMITER3, value.coerceIn(0, 5)).apply()
+    var v95CastBandwidth3: Int
+        get() = prefs.getInt(KEY_V95_CAST_BANDWIDTH3, 0)
+        set(value) = prefs.edit().putInt(KEY_V95_CAST_BANDWIDTH3, value.coerceIn(0, 5)).apply()
+    var v95GesturePinchZoom3: Boolean
+        get() = prefs.getBoolean(KEY_V95_GESTURE_PINCH_ZOOM3, false)
+        set(value) = prefs.edit().putBoolean(KEY_V95_GESTURE_PINCH_ZOOM3, value).apply()
+    var v95CacheEncrypt3: Boolean
+        get() = prefs.getBoolean(KEY_V95_CACHE_ENCRYPT3, false)
+        set(value) = prefs.edit().putBoolean(KEY_V95_CACHE_ENCRYPT3, value).apply()
+    var v95ProgressBarThumbSize3: Int
+        get() = prefs.getInt(KEY_V95_PROGRESS_BAR_THUMB_SIZE3, 0)
+        set(value) = prefs.edit().putInt(KEY_V95_PROGRESS_BAR_THUMB_SIZE3, value.coerceIn(0, 20)).apply()
+    var v95PlaybackAutoLoop2: Boolean
+        get() = prefs.getBoolean(KEY_V95_PLAYBACK_AUTO_LOOP2, false)
+        set(value) = prefs.edit().putBoolean(KEY_V95_PLAYBACK_AUTO_LOOP2, value).apply()
+    var v95DanmakuFilterScore4: Int
+        get() = prefs.getInt(KEY_V95_DANMAKU_FILTER_SCORE4, 0)
+        set(value) = prefs.edit().putInt(KEY_V95_DANMAKU_FILTER_SCORE4, value.coerceIn(0, 5)).apply()
+    var v95ColorContrast3: Int
+        get() = prefs.getInt(KEY_V95_COLOR_CONTRAST3, 0)
+        set(value) = prefs.edit().putInt(KEY_V95_COLOR_CONTRAST3, value.coerceIn(0, 100)).apply()
+    var v95VolumeEQ3: Int
+        get() = prefs.getInt(KEY_V95_VOLUME_EQ3, 0)
+        set(value) = prefs.edit().putInt(KEY_V95_VOLUME_EQ3, value.coerceIn(0, 5)).apply()
+    var v95CastAutoReconnect4: Boolean
+        get() = prefs.getBoolean(KEY_V95_CAST_AUTO_RECONNECT4, false)
+        set(value) = prefs.edit().putBoolean(KEY_V95_CAST_AUTO_RECONNECT4, value).apply()
+    var v95GestureRotation3: Int
+        get() = prefs.getInt(KEY_V95_GESTURE_ROTATION3, 0)
+        set(value) = prefs.edit().putInt(KEY_V95_GESTURE_ROTATION3, value.coerceIn(0, 3)).apply()
+    var v95CacheAutoClear3: Boolean
+        get() = prefs.getBoolean(KEY_V95_CACHE_AUTO_CLEAR3, false)
+        set(value) = prefs.edit().putBoolean(KEY_V95_CACHE_AUTO_CLEAR3, value).apply()
+
+    // ===== v96.x =====
+    var v96PlaybackSmartBuffer3: Boolean
+        get() = prefs.getBoolean(KEY_V96_PLAYBACK_SMART_BUFFER3, false)
+        set(value) = prefs.edit().putBoolean(KEY_V96_PLAYBACK_SMART_BUFFER3, value).apply()
+    var v96DanmakuFontAlpha3: Int
+        get() = prefs.getInt(KEY_V96_DANMAKU_FONT_ALPHA3, 0)
+        set(value) = prefs.edit().putInt(KEY_V96_DANMAKU_FONT_ALPHA3, value.coerceIn(0, 100)).apply()
+    var v96ColorSaturation3: Int
+        get() = prefs.getInt(KEY_V96_COLOR_SATURATION3, 0)
+        set(value) = prefs.edit().putInt(KEY_V96_COLOR_SATURATION3, value.coerceIn(0, 100)).apply()
+    var v96VolumeLimiter3: Int
+        get() = prefs.getInt(KEY_V96_VOLUME_LIMITER3, 0)
+        set(value) = prefs.edit().putInt(KEY_V96_VOLUME_LIMITER3, value.coerceIn(0, 5)).apply()
+    var v96CastBandwidth3: Int
+        get() = prefs.getInt(KEY_V96_CAST_BANDWIDTH3, 0)
+        set(value) = prefs.edit().putInt(KEY_V96_CAST_BANDWIDTH3, value.coerceIn(0, 5)).apply()
+    var v96GesturePinchZoom3: Boolean
+        get() = prefs.getBoolean(KEY_V96_GESTURE_PINCH_ZOOM3, false)
+        set(value) = prefs.edit().putBoolean(KEY_V96_GESTURE_PINCH_ZOOM3, value).apply()
+    var v96CacheEncrypt3: Boolean
+        get() = prefs.getBoolean(KEY_V96_CACHE_ENCRYPT3, false)
+        set(value) = prefs.edit().putBoolean(KEY_V96_CACHE_ENCRYPT3, value).apply()
+    var v96ProgressBarThumbSize3: Int
+        get() = prefs.getInt(KEY_V96_PROGRESS_BAR_THUMB_SIZE3, 0)
+        set(value) = prefs.edit().putInt(KEY_V96_PROGRESS_BAR_THUMB_SIZE3, value.coerceIn(0, 20)).apply()
+    var v96PlaybackAutoLoop2: Boolean
+        get() = prefs.getBoolean(KEY_V96_PLAYBACK_AUTO_LOOP2, false)
+        set(value) = prefs.edit().putBoolean(KEY_V96_PLAYBACK_AUTO_LOOP2, value).apply()
+    var v96DanmakuFilterScore4: Int
+        get() = prefs.getInt(KEY_V96_DANMAKU_FILTER_SCORE4, 0)
+        set(value) = prefs.edit().putInt(KEY_V96_DANMAKU_FILTER_SCORE4, value.coerceIn(0, 5)).apply()
+    var v96ColorContrast3: Int
+        get() = prefs.getInt(KEY_V96_COLOR_CONTRAST3, 0)
+        set(value) = prefs.edit().putInt(KEY_V96_COLOR_CONTRAST3, value.coerceIn(0, 100)).apply()
+    var v96VolumeEQ3: Int
+        get() = prefs.getInt(KEY_V96_VOLUME_EQ3, 0)
+        set(value) = prefs.edit().putInt(KEY_V96_VOLUME_EQ3, value.coerceIn(0, 5)).apply()
+    var v96CastAutoReconnect4: Boolean
+        get() = prefs.getBoolean(KEY_V96_CAST_AUTO_RECONNECT4, false)
+        set(value) = prefs.edit().putBoolean(KEY_V96_CAST_AUTO_RECONNECT4, value).apply()
+    var v96GestureRotation3: Int
+        get() = prefs.getInt(KEY_V96_GESTURE_ROTATION3, 0)
+        set(value) = prefs.edit().putInt(KEY_V96_GESTURE_ROTATION3, value.coerceIn(0, 3)).apply()
+    var v96CacheAutoClear3: Boolean
+        get() = prefs.getBoolean(KEY_V96_CACHE_AUTO_CLEAR3, false)
+        set(value) = prefs.edit().putBoolean(KEY_V96_CACHE_AUTO_CLEAR3, value).apply()
+
+    // ===== v97.x =====
+    var v97PlaybackSmartBuffer3: Boolean
+        get() = prefs.getBoolean(KEY_V97_PLAYBACK_SMART_BUFFER3, false)
+        set(value) = prefs.edit().putBoolean(KEY_V97_PLAYBACK_SMART_BUFFER3, value).apply()
+    var v97DanmakuFontAlpha3: Int
+        get() = prefs.getInt(KEY_V97_DANMAKU_FONT_ALPHA3, 0)
+        set(value) = prefs.edit().putInt(KEY_V97_DANMAKU_FONT_ALPHA3, value.coerceIn(0, 100)).apply()
+    var v97ColorSaturation3: Int
+        get() = prefs.getInt(KEY_V97_COLOR_SATURATION3, 0)
+        set(value) = prefs.edit().putInt(KEY_V97_COLOR_SATURATION3, value.coerceIn(0, 100)).apply()
+    var v97VolumeLimiter3: Int
+        get() = prefs.getInt(KEY_V97_VOLUME_LIMITER3, 0)
+        set(value) = prefs.edit().putInt(KEY_V97_VOLUME_LIMITER3, value.coerceIn(0, 5)).apply()
+    var v97CastBandwidth3: Int
+        get() = prefs.getInt(KEY_V97_CAST_BANDWIDTH3, 0)
+        set(value) = prefs.edit().putInt(KEY_V97_CAST_BANDWIDTH3, value.coerceIn(0, 5)).apply()
+    var v97GesturePinchZoom3: Boolean
+        get() = prefs.getBoolean(KEY_V97_GESTURE_PINCH_ZOOM3, false)
+        set(value) = prefs.edit().putBoolean(KEY_V97_GESTURE_PINCH_ZOOM3, value).apply()
+    var v97CacheEncrypt3: Boolean
+        get() = prefs.getBoolean(KEY_V97_CACHE_ENCRYPT3, false)
+        set(value) = prefs.edit().putBoolean(KEY_V97_CACHE_ENCRYPT3, value).apply()
+    var v97ProgressBarThumbSize3: Int
+        get() = prefs.getInt(KEY_V97_PROGRESS_BAR_THUMB_SIZE3, 0)
+        set(value) = prefs.edit().putInt(KEY_V97_PROGRESS_BAR_THUMB_SIZE3, value.coerceIn(0, 20)).apply()
+    var v97PlaybackAutoLoop2: Boolean
+        get() = prefs.getBoolean(KEY_V97_PLAYBACK_AUTO_LOOP2, false)
+        set(value) = prefs.edit().putBoolean(KEY_V97_PLAYBACK_AUTO_LOOP2, value).apply()
+    var v97DanmakuFilterScore4: Int
+        get() = prefs.getInt(KEY_V97_DANMAKU_FILTER_SCORE4, 0)
+        set(value) = prefs.edit().putInt(KEY_V97_DANMAKU_FILTER_SCORE4, value.coerceIn(0, 5)).apply()
+    var v97ColorContrast3: Int
+        get() = prefs.getInt(KEY_V97_COLOR_CONTRAST3, 0)
+        set(value) = prefs.edit().putInt(KEY_V97_COLOR_CONTRAST3, value.coerceIn(0, 100)).apply()
+    var v97VolumeEQ3: Int
+        get() = prefs.getInt(KEY_V97_VOLUME_EQ3, 0)
+        set(value) = prefs.edit().putInt(KEY_V97_VOLUME_EQ3, value.coerceIn(0, 5)).apply()
+    var v97CastAutoReconnect4: Boolean
+        get() = prefs.getBoolean(KEY_V97_CAST_AUTO_RECONNECT4, false)
+        set(value) = prefs.edit().putBoolean(KEY_V97_CAST_AUTO_RECONNECT4, value).apply()
+    var v97GestureRotation3: Int
+        get() = prefs.getInt(KEY_V97_GESTURE_ROTATION3, 0)
+        set(value) = prefs.edit().putInt(KEY_V97_GESTURE_ROTATION3, value.coerceIn(0, 3)).apply()
+    var v97CacheAutoClear3: Boolean
+        get() = prefs.getBoolean(KEY_V97_CACHE_AUTO_CLEAR3, false)
+        set(value) = prefs.edit().putBoolean(KEY_V97_CACHE_AUTO_CLEAR3, value).apply()
+
+    // ===== v98.x =====
+    var v98PlaybackSmartBuffer3: Boolean
+        get() = prefs.getBoolean(KEY_V98_PLAYBACK_SMART_BUFFER3, false)
+        set(value) = prefs.edit().putBoolean(KEY_V98_PLAYBACK_SMART_BUFFER3, value).apply()
+    var v98DanmakuFontAlpha3: Int
+        get() = prefs.getInt(KEY_V98_DANMAKU_FONT_ALPHA3, 0)
+        set(value) = prefs.edit().putInt(KEY_V98_DANMAKU_FONT_ALPHA3, value.coerceIn(0, 100)).apply()
+    var v98ColorSaturation3: Int
+        get() = prefs.getInt(KEY_V98_COLOR_SATURATION3, 0)
+        set(value) = prefs.edit().putInt(KEY_V98_COLOR_SATURATION3, value.coerceIn(0, 100)).apply()
+    var v98VolumeLimiter3: Int
+        get() = prefs.getInt(KEY_V98_VOLUME_LIMITER3, 0)
+        set(value) = prefs.edit().putInt(KEY_V98_VOLUME_LIMITER3, value.coerceIn(0, 5)).apply()
+    var v98CastBandwidth3: Int
+        get() = prefs.getInt(KEY_V98_CAST_BANDWIDTH3, 0)
+        set(value) = prefs.edit().putInt(KEY_V98_CAST_BANDWIDTH3, value.coerceIn(0, 5)).apply()
+    var v98GesturePinchZoom3: Boolean
+        get() = prefs.getBoolean(KEY_V98_GESTURE_PINCH_ZOOM3, false)
+        set(value) = prefs.edit().putBoolean(KEY_V98_GESTURE_PINCH_ZOOM3, value).apply()
+    var v98CacheEncrypt3: Boolean
+        get() = prefs.getBoolean(KEY_V98_CACHE_ENCRYPT3, false)
+        set(value) = prefs.edit().putBoolean(KEY_V98_CACHE_ENCRYPT3, value).apply()
+    var v98ProgressBarThumbSize3: Int
+        get() = prefs.getInt(KEY_V98_PROGRESS_BAR_THUMB_SIZE3, 0)
+        set(value) = prefs.edit().putInt(KEY_V98_PROGRESS_BAR_THUMB_SIZE3, value.coerceIn(0, 20)).apply()
+    var v98PlaybackAutoLoop2: Boolean
+        get() = prefs.getBoolean(KEY_V98_PLAYBACK_AUTO_LOOP2, false)
+        set(value) = prefs.edit().putBoolean(KEY_V98_PLAYBACK_AUTO_LOOP2, value).apply()
+    var v98DanmakuFilterScore4: Int
+        get() = prefs.getInt(KEY_V98_DANMAKU_FILTER_SCORE4, 0)
+        set(value) = prefs.edit().putInt(KEY_V98_DANMAKU_FILTER_SCORE4, value.coerceIn(0, 5)).apply()
+    var v98ColorContrast3: Int
+        get() = prefs.getInt(KEY_V98_COLOR_CONTRAST3, 0)
+        set(value) = prefs.edit().putInt(KEY_V98_COLOR_CONTRAST3, value.coerceIn(0, 100)).apply()
+    var v98VolumeEQ3: Int
+        get() = prefs.getInt(KEY_V98_VOLUME_EQ3, 0)
+        set(value) = prefs.edit().putInt(KEY_V98_VOLUME_EQ3, value.coerceIn(0, 5)).apply()
+    var v98CastAutoReconnect4: Boolean
+        get() = prefs.getBoolean(KEY_V98_CAST_AUTO_RECONNECT4, false)
+        set(value) = prefs.edit().putBoolean(KEY_V98_CAST_AUTO_RECONNECT4, value).apply()
+    var v98GestureRotation3: Int
+        get() = prefs.getInt(KEY_V98_GESTURE_ROTATION3, 0)
+        set(value) = prefs.edit().putInt(KEY_V98_GESTURE_ROTATION3, value.coerceIn(0, 3)).apply()
+    var v98CacheAutoClear3: Boolean
+        get() = prefs.getBoolean(KEY_V98_CACHE_AUTO_CLEAR3, false)
+        set(value) = prefs.edit().putBoolean(KEY_V98_CACHE_AUTO_CLEAR3, value).apply()
+
+    // ===== v99.x =====
+    var v99PlaybackSmartBuffer3: Boolean
+        get() = prefs.getBoolean(KEY_V99_PLAYBACK_SMART_BUFFER3, false)
+        set(value) = prefs.edit().putBoolean(KEY_V99_PLAYBACK_SMART_BUFFER3, value).apply()
+    var v99DanmakuFontAlpha3: Int
+        get() = prefs.getInt(KEY_V99_DANMAKU_FONT_ALPHA3, 0)
+        set(value) = prefs.edit().putInt(KEY_V99_DANMAKU_FONT_ALPHA3, value.coerceIn(0, 100)).apply()
+    var v99ColorSaturation3: Int
+        get() = prefs.getInt(KEY_V99_COLOR_SATURATION3, 0)
+        set(value) = prefs.edit().putInt(KEY_V99_COLOR_SATURATION3, value.coerceIn(0, 100)).apply()
+    var v99VolumeLimiter3: Int
+        get() = prefs.getInt(KEY_V99_VOLUME_LIMITER3, 0)
+        set(value) = prefs.edit().putInt(KEY_V99_VOLUME_LIMITER3, value.coerceIn(0, 5)).apply()
+    var v99CastBandwidth3: Int
+        get() = prefs.getInt(KEY_V99_CAST_BANDWIDTH3, 0)
+        set(value) = prefs.edit().putInt(KEY_V99_CAST_BANDWIDTH3, value.coerceIn(0, 5)).apply()
+    var v99GesturePinchZoom3: Boolean
+        get() = prefs.getBoolean(KEY_V99_GESTURE_PINCH_ZOOM3, false)
+        set(value) = prefs.edit().putBoolean(KEY_V99_GESTURE_PINCH_ZOOM3, value).apply()
+    var v99CacheEncrypt3: Boolean
+        get() = prefs.getBoolean(KEY_V99_CACHE_ENCRYPT3, false)
+        set(value) = prefs.edit().putBoolean(KEY_V99_CACHE_ENCRYPT3, value).apply()
+    var v99ProgressBarThumbSize3: Int
+        get() = prefs.getInt(KEY_V99_PROGRESS_BAR_THUMB_SIZE3, 0)
+        set(value) = prefs.edit().putInt(KEY_V99_PROGRESS_BAR_THUMB_SIZE3, value.coerceIn(0, 20)).apply()
+    var v99PlaybackAutoLoop2: Boolean
+        get() = prefs.getBoolean(KEY_V99_PLAYBACK_AUTO_LOOP2, false)
+        set(value) = prefs.edit().putBoolean(KEY_V99_PLAYBACK_AUTO_LOOP2, value).apply()
+    var v99DanmakuFilterScore4: Int
+        get() = prefs.getInt(KEY_V99_DANMAKU_FILTER_SCORE4, 0)
+        set(value) = prefs.edit().putInt(KEY_V99_DANMAKU_FILTER_SCORE4, value.coerceIn(0, 5)).apply()
+    var v99ColorContrast3: Int
+        get() = prefs.getInt(KEY_V99_COLOR_CONTRAST3, 0)
+        set(value) = prefs.edit().putInt(KEY_V99_COLOR_CONTRAST3, value.coerceIn(0, 100)).apply()
+    var v99VolumeEQ3: Int
+        get() = prefs.getInt(KEY_V99_VOLUME_EQ3, 0)
+        set(value) = prefs.edit().putInt(KEY_V99_VOLUME_EQ3, value.coerceIn(0, 5)).apply()
+    var v99CastAutoReconnect4: Boolean
+        get() = prefs.getBoolean(KEY_V99_CAST_AUTO_RECONNECT4, false)
+        set(value) = prefs.edit().putBoolean(KEY_V99_CAST_AUTO_RECONNECT4, value).apply()
+    var v99GestureRotation3: Int
+        get() = prefs.getInt(KEY_V99_GESTURE_ROTATION3, 0)
+        set(value) = prefs.edit().putInt(KEY_V99_GESTURE_ROTATION3, value.coerceIn(0, 3)).apply()
+    var v99CacheAutoClear3: Boolean
+        get() = prefs.getBoolean(KEY_V99_CACHE_AUTO_CLEAR3, false)
+        set(value) = prefs.edit().putBoolean(KEY_V99_CACHE_AUTO_CLEAR3, value).apply()
+
+    // ===== v100.x =====
+    var v100PlaybackSmartBuffer3: Boolean
+        get() = prefs.getBoolean(KEY_V100_PLAYBACK_SMART_BUFFER3, false)
+        set(value) = prefs.edit().putBoolean(KEY_V100_PLAYBACK_SMART_BUFFER3, value).apply()
+    var v100DanmakuFontAlpha3: Int
+        get() = prefs.getInt(KEY_V100_DANMAKU_FONT_ALPHA3, 0)
+        set(value) = prefs.edit().putInt(KEY_V100_DANMAKU_FONT_ALPHA3, value.coerceIn(0, 100)).apply()
+    var v100ColorSaturation3: Int
+        get() = prefs.getInt(KEY_V100_COLOR_SATURATION3, 0)
+        set(value) = prefs.edit().putInt(KEY_V100_COLOR_SATURATION3, value.coerceIn(0, 100)).apply()
+    var v100VolumeLimiter3: Int
+        get() = prefs.getInt(KEY_V100_VOLUME_LIMITER3, 0)
+        set(value) = prefs.edit().putInt(KEY_V100_VOLUME_LIMITER3, value.coerceIn(0, 5)).apply()
+    var v100CastBandwidth3: Int
+        get() = prefs.getInt(KEY_V100_CAST_BANDWIDTH3, 0)
+        set(value) = prefs.edit().putInt(KEY_V100_CAST_BANDWIDTH3, value.coerceIn(0, 5)).apply()
+    var v100GesturePinchZoom3: Boolean
+        get() = prefs.getBoolean(KEY_V100_GESTURE_PINCH_ZOOM3, false)
+        set(value) = prefs.edit().putBoolean(KEY_V100_GESTURE_PINCH_ZOOM3, value).apply()
+    var v100CacheEncrypt3: Boolean
+        get() = prefs.getBoolean(KEY_V100_CACHE_ENCRYPT3, false)
+        set(value) = prefs.edit().putBoolean(KEY_V100_CACHE_ENCRYPT3, value).apply()
+    var v100ProgressBarThumbSize3: Int
+        get() = prefs.getInt(KEY_V100_PROGRESS_BAR_THUMB_SIZE3, 0)
+        set(value) = prefs.edit().putInt(KEY_V100_PROGRESS_BAR_THUMB_SIZE3, value.coerceIn(0, 20)).apply()
+    var v100PlaybackAutoLoop2: Boolean
+        get() = prefs.getBoolean(KEY_V100_PLAYBACK_AUTO_LOOP2, false)
+        set(value) = prefs.edit().putBoolean(KEY_V100_PLAYBACK_AUTO_LOOP2, value).apply()
+    var v100DanmakuFilterScore4: Int
+        get() = prefs.getInt(KEY_V100_DANMAKU_FILTER_SCORE4, 0)
+        set(value) = prefs.edit().putInt(KEY_V100_DANMAKU_FILTER_SCORE4, value.coerceIn(0, 5)).apply()
+    var v100ColorContrast3: Int
+        get() = prefs.getInt(KEY_V100_COLOR_CONTRAST3, 0)
+        set(value) = prefs.edit().putInt(KEY_V100_COLOR_CONTRAST3, value.coerceIn(0, 100)).apply()
+    var v100VolumeEQ3: Int
+        get() = prefs.getInt(KEY_V100_VOLUME_EQ3, 0)
+        set(value) = prefs.edit().putInt(KEY_V100_VOLUME_EQ3, value.coerceIn(0, 5)).apply()
+    var v100CastAutoReconnect4: Boolean
+        get() = prefs.getBoolean(KEY_V100_CAST_AUTO_RECONNECT4, false)
+        set(value) = prefs.edit().putBoolean(KEY_V100_CAST_AUTO_RECONNECT4, value).apply()
+    var v100GestureRotation3: Int
+        get() = prefs.getInt(KEY_V100_GESTURE_ROTATION3, 0)
+        set(value) = prefs.edit().putInt(KEY_V100_GESTURE_ROTATION3, value.coerceIn(0, 3)).apply()
+    var v100CacheAutoClear3: Boolean
+        get() = prefs.getBoolean(KEY_V100_CACHE_AUTO_CLEAR3, false)
+        set(value) = prefs.edit().putBoolean(KEY_V100_CACHE_AUTO_CLEAR3, value).apply()
+
     // ===== v71.x =====
     var v71PlaybackAutoSkipRecap: Boolean
         get() = prefs.getBoolean(KEY_V71_PLAYBACK_AUTO_SKIP_RECAP, false)
@@ -7361,7 +7832,178 @@ class AppPrefs(context: Context) {
         private const val KEY_V70_CAST_SUBTITLE_FINAL2 = "v70_cast_subtitle_final2"
 
         
-        // ===== v71.x KEY =====
+
+        // ===== v91.x KEY =====
+        private const val KEY_V91_PLAYBACK_SMART_BUFFER3 = "v91_playback_smart_buffer3"
+        private const val KEY_V91_DANMAKU_FONT_ALPHA3 = "v91_danmaku_font_alpha3"
+        private const val KEY_V91_COLOR_SATURATION3 = "v91_color_saturation3"
+        private const val KEY_V91_VOLUME_LIMITER3 = "v91_volume_limiter3"
+        private const val KEY_V91_CAST_BANDWIDTH3 = "v91_cast_bandwidth3"
+        private const val KEY_V91_GESTURE_PINCH_ZOOM3 = "v91_gesture_pinch_zoom3"
+        private const val KEY_V91_CACHE_ENCRYPT3 = "v91_cache_encrypt3"
+        private const val KEY_V91_PROGRESS_BAR_THUMB_SIZE3 = "v91_progress_bar_thumb_size3"
+        private const val KEY_V91_PLAYBACK_AUTO_LOOP2 = "v91_playback_auto_loop2"
+        private const val KEY_V91_DANMAKU_FILTER_SCORE4 = "v91_danmaku_filter_score4"
+        private const val KEY_V91_COLOR_CONTRAST3 = "v91_color_contrast3"
+        private const val KEY_V91_VOLUME_EQ3 = "v91_volume_eq3"
+        private const val KEY_V91_CAST_AUTO_RECONNECT4 = "v91_cast_auto_reconnect4"
+        private const val KEY_V91_GESTURE_ROTATION3 = "v91_gesture_rotation3"
+        private const val KEY_V91_CACHE_AUTO_CLEAR3 = "v91_cache_auto_clear3"
+
+        // ===== v92.x KEY =====
+        private const val KEY_V92_PLAYBACK_SMART_BUFFER3 = "v92_playback_smart_buffer3"
+        private const val KEY_V92_DANMAKU_FONT_ALPHA3 = "v92_danmaku_font_alpha3"
+        private const val KEY_V92_COLOR_SATURATION3 = "v92_color_saturation3"
+        private const val KEY_V92_VOLUME_LIMITER3 = "v92_volume_limiter3"
+        private const val KEY_V92_CAST_BANDWIDTH3 = "v92_cast_bandwidth3"
+        private const val KEY_V92_GESTURE_PINCH_ZOOM3 = "v92_gesture_pinch_zoom3"
+        private const val KEY_V92_CACHE_ENCRYPT3 = "v92_cache_encrypt3"
+        private const val KEY_V92_PROGRESS_BAR_THUMB_SIZE3 = "v92_progress_bar_thumb_size3"
+        private const val KEY_V92_PLAYBACK_AUTO_LOOP2 = "v92_playback_auto_loop2"
+        private const val KEY_V92_DANMAKU_FILTER_SCORE4 = "v92_danmaku_filter_score4"
+        private const val KEY_V92_COLOR_CONTRAST3 = "v92_color_contrast3"
+        private const val KEY_V92_VOLUME_EQ3 = "v92_volume_eq3"
+        private const val KEY_V92_CAST_AUTO_RECONNECT4 = "v92_cast_auto_reconnect4"
+        private const val KEY_V92_GESTURE_ROTATION3 = "v92_gesture_rotation3"
+        private const val KEY_V92_CACHE_AUTO_CLEAR3 = "v92_cache_auto_clear3"
+
+        // ===== v93.x KEY =====
+        private const val KEY_V93_PLAYBACK_SMART_BUFFER3 = "v93_playback_smart_buffer3"
+        private const val KEY_V93_DANMAKU_FONT_ALPHA3 = "v93_danmaku_font_alpha3"
+        private const val KEY_V93_COLOR_SATURATION3 = "v93_color_saturation3"
+        private const val KEY_V93_VOLUME_LIMITER3 = "v93_volume_limiter3"
+        private const val KEY_V93_CAST_BANDWIDTH3 = "v93_cast_bandwidth3"
+        private const val KEY_V93_GESTURE_PINCH_ZOOM3 = "v93_gesture_pinch_zoom3"
+        private const val KEY_V93_CACHE_ENCRYPT3 = "v93_cache_encrypt3"
+        private const val KEY_V93_PROGRESS_BAR_THUMB_SIZE3 = "v93_progress_bar_thumb_size3"
+        private const val KEY_V93_PLAYBACK_AUTO_LOOP2 = "v93_playback_auto_loop2"
+        private const val KEY_V93_DANMAKU_FILTER_SCORE4 = "v93_danmaku_filter_score4"
+        private const val KEY_V93_COLOR_CONTRAST3 = "v93_color_contrast3"
+        private const val KEY_V93_VOLUME_EQ3 = "v93_volume_eq3"
+        private const val KEY_V93_CAST_AUTO_RECONNECT4 = "v93_cast_auto_reconnect4"
+        private const val KEY_V93_GESTURE_ROTATION3 = "v93_gesture_rotation3"
+        private const val KEY_V93_CACHE_AUTO_CLEAR3 = "v93_cache_auto_clear3"
+
+        // ===== v94.x KEY =====
+        private const val KEY_V94_PLAYBACK_SMART_BUFFER3 = "v94_playback_smart_buffer3"
+        private const val KEY_V94_DANMAKU_FONT_ALPHA3 = "v94_danmaku_font_alpha3"
+        private const val KEY_V94_COLOR_SATURATION3 = "v94_color_saturation3"
+        private const val KEY_V94_VOLUME_LIMITER3 = "v94_volume_limiter3"
+        private const val KEY_V94_CAST_BANDWIDTH3 = "v94_cast_bandwidth3"
+        private const val KEY_V94_GESTURE_PINCH_ZOOM3 = "v94_gesture_pinch_zoom3"
+        private const val KEY_V94_CACHE_ENCRYPT3 = "v94_cache_encrypt3"
+        private const val KEY_V94_PROGRESS_BAR_THUMB_SIZE3 = "v94_progress_bar_thumb_size3"
+        private const val KEY_V94_PLAYBACK_AUTO_LOOP2 = "v94_playback_auto_loop2"
+        private const val KEY_V94_DANMAKU_FILTER_SCORE4 = "v94_danmaku_filter_score4"
+        private const val KEY_V94_COLOR_CONTRAST3 = "v94_color_contrast3"
+        private const val KEY_V94_VOLUME_EQ3 = "v94_volume_eq3"
+        private const val KEY_V94_CAST_AUTO_RECONNECT4 = "v94_cast_auto_reconnect4"
+        private const val KEY_V94_GESTURE_ROTATION3 = "v94_gesture_rotation3"
+        private const val KEY_V94_CACHE_AUTO_CLEAR3 = "v94_cache_auto_clear3"
+
+        // ===== v95.x KEY =====
+        private const val KEY_V95_PLAYBACK_SMART_BUFFER3 = "v95_playback_smart_buffer3"
+        private const val KEY_V95_DANMAKU_FONT_ALPHA3 = "v95_danmaku_font_alpha3"
+        private const val KEY_V95_COLOR_SATURATION3 = "v95_color_saturation3"
+        private const val KEY_V95_VOLUME_LIMITER3 = "v95_volume_limiter3"
+        private const val KEY_V95_CAST_BANDWIDTH3 = "v95_cast_bandwidth3"
+        private const val KEY_V95_GESTURE_PINCH_ZOOM3 = "v95_gesture_pinch_zoom3"
+        private const val KEY_V95_CACHE_ENCRYPT3 = "v95_cache_encrypt3"
+        private const val KEY_V95_PROGRESS_BAR_THUMB_SIZE3 = "v95_progress_bar_thumb_size3"
+        private const val KEY_V95_PLAYBACK_AUTO_LOOP2 = "v95_playback_auto_loop2"
+        private const val KEY_V95_DANMAKU_FILTER_SCORE4 = "v95_danmaku_filter_score4"
+        private const val KEY_V95_COLOR_CONTRAST3 = "v95_color_contrast3"
+        private const val KEY_V95_VOLUME_EQ3 = "v95_volume_eq3"
+        private const val KEY_V95_CAST_AUTO_RECONNECT4 = "v95_cast_auto_reconnect4"
+        private const val KEY_V95_GESTURE_ROTATION3 = "v95_gesture_rotation3"
+        private const val KEY_V95_CACHE_AUTO_CLEAR3 = "v95_cache_auto_clear3"
+
+        // ===== v96.x KEY =====
+        private const val KEY_V96_PLAYBACK_SMART_BUFFER3 = "v96_playback_smart_buffer3"
+        private const val KEY_V96_DANMAKU_FONT_ALPHA3 = "v96_danmaku_font_alpha3"
+        private const val KEY_V96_COLOR_SATURATION3 = "v96_color_saturation3"
+        private const val KEY_V96_VOLUME_LIMITER3 = "v96_volume_limiter3"
+        private const val KEY_V96_CAST_BANDWIDTH3 = "v96_cast_bandwidth3"
+        private const val KEY_V96_GESTURE_PINCH_ZOOM3 = "v96_gesture_pinch_zoom3"
+        private const val KEY_V96_CACHE_ENCRYPT3 = "v96_cache_encrypt3"
+        private const val KEY_V96_PROGRESS_BAR_THUMB_SIZE3 = "v96_progress_bar_thumb_size3"
+        private const val KEY_V96_PLAYBACK_AUTO_LOOP2 = "v96_playback_auto_loop2"
+        private const val KEY_V96_DANMAKU_FILTER_SCORE4 = "v96_danmaku_filter_score4"
+        private const val KEY_V96_COLOR_CONTRAST3 = "v96_color_contrast3"
+        private const val KEY_V96_VOLUME_EQ3 = "v96_volume_eq3"
+        private const val KEY_V96_CAST_AUTO_RECONNECT4 = "v96_cast_auto_reconnect4"
+        private const val KEY_V96_GESTURE_ROTATION3 = "v96_gesture_rotation3"
+        private const val KEY_V96_CACHE_AUTO_CLEAR3 = "v96_cache_auto_clear3"
+
+        // ===== v97.x KEY =====
+        private const val KEY_V97_PLAYBACK_SMART_BUFFER3 = "v97_playback_smart_buffer3"
+        private const val KEY_V97_DANMAKU_FONT_ALPHA3 = "v97_danmaku_font_alpha3"
+        private const val KEY_V97_COLOR_SATURATION3 = "v97_color_saturation3"
+        private const val KEY_V97_VOLUME_LIMITER3 = "v97_volume_limiter3"
+        private const val KEY_V97_CAST_BANDWIDTH3 = "v97_cast_bandwidth3"
+        private const val KEY_V97_GESTURE_PINCH_ZOOM3 = "v97_gesture_pinch_zoom3"
+        private const val KEY_V97_CACHE_ENCRYPT3 = "v97_cache_encrypt3"
+        private const val KEY_V97_PROGRESS_BAR_THUMB_SIZE3 = "v97_progress_bar_thumb_size3"
+        private const val KEY_V97_PLAYBACK_AUTO_LOOP2 = "v97_playback_auto_loop2"
+        private const val KEY_V97_DANMAKU_FILTER_SCORE4 = "v97_danmaku_filter_score4"
+        private const val KEY_V97_COLOR_CONTRAST3 = "v97_color_contrast3"
+        private const val KEY_V97_VOLUME_EQ3 = "v97_volume_eq3"
+        private const val KEY_V97_CAST_AUTO_RECONNECT4 = "v97_cast_auto_reconnect4"
+        private const val KEY_V97_GESTURE_ROTATION3 = "v97_gesture_rotation3"
+        private const val KEY_V97_CACHE_AUTO_CLEAR3 = "v97_cache_auto_clear3"
+
+        // ===== v98.x KEY =====
+        private const val KEY_V98_PLAYBACK_SMART_BUFFER3 = "v98_playback_smart_buffer3"
+        private const val KEY_V98_DANMAKU_FONT_ALPHA3 = "v98_danmaku_font_alpha3"
+        private const val KEY_V98_COLOR_SATURATION3 = "v98_color_saturation3"
+        private const val KEY_V98_VOLUME_LIMITER3 = "v98_volume_limiter3"
+        private const val KEY_V98_CAST_BANDWIDTH3 = "v98_cast_bandwidth3"
+        private const val KEY_V98_GESTURE_PINCH_ZOOM3 = "v98_gesture_pinch_zoom3"
+        private const val KEY_V98_CACHE_ENCRYPT3 = "v98_cache_encrypt3"
+        private const val KEY_V98_PROGRESS_BAR_THUMB_SIZE3 = "v98_progress_bar_thumb_size3"
+        private const val KEY_V98_PLAYBACK_AUTO_LOOP2 = "v98_playback_auto_loop2"
+        private const val KEY_V98_DANMAKU_FILTER_SCORE4 = "v98_danmaku_filter_score4"
+        private const val KEY_V98_COLOR_CONTRAST3 = "v98_color_contrast3"
+        private const val KEY_V98_VOLUME_EQ3 = "v98_volume_eq3"
+        private const val KEY_V98_CAST_AUTO_RECONNECT4 = "v98_cast_auto_reconnect4"
+        private const val KEY_V98_GESTURE_ROTATION3 = "v98_gesture_rotation3"
+        private const val KEY_V98_CACHE_AUTO_CLEAR3 = "v98_cache_auto_clear3"
+
+        // ===== v99.x KEY =====
+        private const val KEY_V99_PLAYBACK_SMART_BUFFER3 = "v99_playback_smart_buffer3"
+        private const val KEY_V99_DANMAKU_FONT_ALPHA3 = "v99_danmaku_font_alpha3"
+        private const val KEY_V99_COLOR_SATURATION3 = "v99_color_saturation3"
+        private const val KEY_V99_VOLUME_LIMITER3 = "v99_volume_limiter3"
+        private const val KEY_V99_CAST_BANDWIDTH3 = "v99_cast_bandwidth3"
+        private const val KEY_V99_GESTURE_PINCH_ZOOM3 = "v99_gesture_pinch_zoom3"
+        private const val KEY_V99_CACHE_ENCRYPT3 = "v99_cache_encrypt3"
+        private const val KEY_V99_PROGRESS_BAR_THUMB_SIZE3 = "v99_progress_bar_thumb_size3"
+        private const val KEY_V99_PLAYBACK_AUTO_LOOP2 = "v99_playback_auto_loop2"
+        private const val KEY_V99_DANMAKU_FILTER_SCORE4 = "v99_danmaku_filter_score4"
+        private const val KEY_V99_COLOR_CONTRAST3 = "v99_color_contrast3"
+        private const val KEY_V99_VOLUME_EQ3 = "v99_volume_eq3"
+        private const val KEY_V99_CAST_AUTO_RECONNECT4 = "v99_cast_auto_reconnect4"
+        private const val KEY_V99_GESTURE_ROTATION3 = "v99_gesture_rotation3"
+        private const val KEY_V99_CACHE_AUTO_CLEAR3 = "v99_cache_auto_clear3"
+
+        // ===== v100.x KEY =====
+        private const val KEY_V100_PLAYBACK_SMART_BUFFER3 = "v100_playback_smart_buffer3"
+        private const val KEY_V100_DANMAKU_FONT_ALPHA3 = "v100_danmaku_font_alpha3"
+        private const val KEY_V100_COLOR_SATURATION3 = "v100_color_saturation3"
+        private const val KEY_V100_VOLUME_LIMITER3 = "v100_volume_limiter3"
+        private const val KEY_V100_CAST_BANDWIDTH3 = "v100_cast_bandwidth3"
+        private const val KEY_V100_GESTURE_PINCH_ZOOM3 = "v100_gesture_pinch_zoom3"
+        private const val KEY_V100_CACHE_ENCRYPT3 = "v100_cache_encrypt3"
+        private const val KEY_V100_PROGRESS_BAR_THUMB_SIZE3 = "v100_progress_bar_thumb_size3"
+        private const val KEY_V100_PLAYBACK_AUTO_LOOP2 = "v100_playback_auto_loop2"
+        private const val KEY_V100_DANMAKU_FILTER_SCORE4 = "v100_danmaku_filter_score4"
+        private const val KEY_V100_COLOR_CONTRAST3 = "v100_color_contrast3"
+        private const val KEY_V100_VOLUME_EQ3 = "v100_volume_eq3"
+        private const val KEY_V100_CAST_AUTO_RECONNECT4 = "v100_cast_auto_reconnect4"
+        private const val KEY_V100_GESTURE_ROTATION3 = "v100_gesture_rotation3"
+        private const val KEY_V100_CACHE_AUTO_CLEAR3 = "v100_cache_auto_clear3"
+
+                // ===== v71.x KEY =====
         private const val KEY_V71_PLAYBACK_AUTO_SKIP_RECAP = "v71_playback_auto_skip_recap"
         private const val KEY_V71_DANMAKU_FONT_GLOW_SIZE3 = "v71_danmaku_font_glow_size3"
         private const val KEY_V71_COLOR_LIFT2 = "v71_color_lift2"

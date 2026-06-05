@@ -13480,3 +13480,1143 @@ internal fun PlayerActivity.showv90CachePrefetchSize2Dialog() {
     showSettingsChoiceDialog(title = "ache Prefetch Size2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v90CachePrefetchSize2 = value; AppToast.show(this, "ache Prefetch Size2: ${labels[options.indexOf(value)]}") }
 }
 
+// 91.1: layback Smart Buffer3
+internal fun PlayerActivity.showv91PlaybackSmartBuffer3Toggle() {
+    val current = BiliClient.prefs.v91PlaybackSmartBuffer3
+    BiliClient.prefs.v91PlaybackSmartBuffer3 = !current
+    AppToast.show(this, "layback Smart Buffer3: ${if (!current) "ON" else "OFF"}")
+}
+
+// 91.2: anmaku Font Alpha3
+internal fun PlayerActivity.showv91DanmakuFontAlpha3Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v91DanmakuFontAlpha3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "anmaku Font Alpha3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v91DanmakuFontAlpha3 = value; AppToast.show(this, "anmaku Font Alpha3: ${labels[options.indexOf(value)]}") }
+}
+
+// 91.3: olor Saturation3
+internal fun PlayerActivity.showv91ColorSaturation3Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v91ColorSaturation3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "olor Saturation3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v91ColorSaturation3 = value; AppToast.show(this, "olor Saturation3: ${labels[options.indexOf(value)]}") }
+}
+
+// 91.4: olume Limiter3
+internal fun PlayerActivity.showv91VolumeLimiter3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v91VolumeLimiter3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "olume Limiter3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v91VolumeLimiter3 = value; AppToast.show(this, "olume Limiter3: ${labels[options.indexOf(value)]}") }
+}
+
+// 91.5: ast Bandwidth3
+internal fun PlayerActivity.showv91CastBandwidth3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v91CastBandwidth3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "ast Bandwidth3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v91CastBandwidth3 = value; AppToast.show(this, "ast Bandwidth3: ${labels[options.indexOf(value)]}") }
+}
+
+// 91.6: esture Pinch Zoom3
+internal fun PlayerActivity.showv91GesturePinchZoom3Toggle() {
+    val current = BiliClient.prefs.v91GesturePinchZoom3
+    BiliClient.prefs.v91GesturePinchZoom3 = !current
+    AppToast.show(this, "esture Pinch Zoom3: ${if (!current) "ON" else "OFF"}")
+}
+
+// 91.7: ache Encrypt3
+internal fun PlayerActivity.showv91CacheEncrypt3Toggle() {
+    val current = BiliClient.prefs.v91CacheEncrypt3
+    BiliClient.prefs.v91CacheEncrypt3 = !current
+    AppToast.show(this, "ache Encrypt3: ${if (!current) "ON" else "OFF"}")
+}
+
+// 91.8: rogress Bar Thumb Size3
+internal fun PlayerActivity.showv91ProgressBarThumbSize3Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20")
+    val currentIndex = options.indexOf(BiliClient.prefs.v91ProgressBarThumbSize3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "rogress Bar Thumb Size3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v91ProgressBarThumbSize3 = value; AppToast.show(this, "rogress Bar Thumb Size3: ${labels[options.indexOf(value)]}") }
+}
+
+// 91.9: layback Auto Loop2
+internal fun PlayerActivity.showv91PlaybackAutoLoop2Toggle() {
+    val current = BiliClient.prefs.v91PlaybackAutoLoop2
+    BiliClient.prefs.v91PlaybackAutoLoop2 = !current
+    AppToast.show(this, "layback Auto Loop2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 91.10: anmaku Filter Score4
+internal fun PlayerActivity.showv91DanmakuFilterScore4Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v91DanmakuFilterScore4).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "anmaku Filter Score4", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v91DanmakuFilterScore4 = value; AppToast.show(this, "anmaku Filter Score4: ${labels[options.indexOf(value)]}") }
+}
+
+// 91.11: olor Contrast3
+internal fun PlayerActivity.showv91ColorContrast3Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v91ColorContrast3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "olor Contrast3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v91ColorContrast3 = value; AppToast.show(this, "olor Contrast3: ${labels[options.indexOf(value)]}") }
+}
+
+// 91.12: olume EQ3
+internal fun PlayerActivity.showv91VolumeEQ3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v91VolumeEQ3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "olume EQ3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v91VolumeEQ3 = value; AppToast.show(this, "olume EQ3: ${labels[options.indexOf(value)]}") }
+}
+
+// 91.13: ast Auto Reconnect4
+internal fun PlayerActivity.showv91CastAutoReconnect4Toggle() {
+    val current = BiliClient.prefs.v91CastAutoReconnect4
+    BiliClient.prefs.v91CastAutoReconnect4 = !current
+    AppToast.show(this, "ast Auto Reconnect4: ${if (!current) "ON" else "OFF"}")
+}
+
+// 91.14: esture Rotation3
+internal fun PlayerActivity.showv91GestureRotation3Dialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v91GestureRotation3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "esture Rotation3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v91GestureRotation3 = value; AppToast.show(this, "esture Rotation3: ${labels[options.indexOf(value)]}") }
+}
+
+// 91.15: ache Auto Clear3
+internal fun PlayerActivity.showv91CacheAutoClear3Toggle() {
+    val current = BiliClient.prefs.v91CacheAutoClear3
+    BiliClient.prefs.v91CacheAutoClear3 = !current
+    AppToast.show(this, "ache Auto Clear3: ${if (!current) "ON" else "OFF"}")
+}
+
+// 92.1: layback Smart Buffer3
+internal fun PlayerActivity.showv92PlaybackSmartBuffer3Toggle() {
+    val current = BiliClient.prefs.v92PlaybackSmartBuffer3
+    BiliClient.prefs.v92PlaybackSmartBuffer3 = !current
+    AppToast.show(this, "layback Smart Buffer3: ${if (!current) "ON" else "OFF"}")
+}
+
+// 92.2: anmaku Font Alpha3
+internal fun PlayerActivity.showv92DanmakuFontAlpha3Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v92DanmakuFontAlpha3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "anmaku Font Alpha3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v92DanmakuFontAlpha3 = value; AppToast.show(this, "anmaku Font Alpha3: ${labels[options.indexOf(value)]}") }
+}
+
+// 92.3: olor Saturation3
+internal fun PlayerActivity.showv92ColorSaturation3Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v92ColorSaturation3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "olor Saturation3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v92ColorSaturation3 = value; AppToast.show(this, "olor Saturation3: ${labels[options.indexOf(value)]}") }
+}
+
+// 92.4: olume Limiter3
+internal fun PlayerActivity.showv92VolumeLimiter3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v92VolumeLimiter3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "olume Limiter3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v92VolumeLimiter3 = value; AppToast.show(this, "olume Limiter3: ${labels[options.indexOf(value)]}") }
+}
+
+// 92.5: ast Bandwidth3
+internal fun PlayerActivity.showv92CastBandwidth3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v92CastBandwidth3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "ast Bandwidth3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v92CastBandwidth3 = value; AppToast.show(this, "ast Bandwidth3: ${labels[options.indexOf(value)]}") }
+}
+
+// 92.6: esture Pinch Zoom3
+internal fun PlayerActivity.showv92GesturePinchZoom3Toggle() {
+    val current = BiliClient.prefs.v92GesturePinchZoom3
+    BiliClient.prefs.v92GesturePinchZoom3 = !current
+    AppToast.show(this, "esture Pinch Zoom3: ${if (!current) "ON" else "OFF"}")
+}
+
+// 92.7: ache Encrypt3
+internal fun PlayerActivity.showv92CacheEncrypt3Toggle() {
+    val current = BiliClient.prefs.v92CacheEncrypt3
+    BiliClient.prefs.v92CacheEncrypt3 = !current
+    AppToast.show(this, "ache Encrypt3: ${if (!current) "ON" else "OFF"}")
+}
+
+// 92.8: rogress Bar Thumb Size3
+internal fun PlayerActivity.showv92ProgressBarThumbSize3Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20")
+    val currentIndex = options.indexOf(BiliClient.prefs.v92ProgressBarThumbSize3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "rogress Bar Thumb Size3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v92ProgressBarThumbSize3 = value; AppToast.show(this, "rogress Bar Thumb Size3: ${labels[options.indexOf(value)]}") }
+}
+
+// 92.9: layback Auto Loop2
+internal fun PlayerActivity.showv92PlaybackAutoLoop2Toggle() {
+    val current = BiliClient.prefs.v92PlaybackAutoLoop2
+    BiliClient.prefs.v92PlaybackAutoLoop2 = !current
+    AppToast.show(this, "layback Auto Loop2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 92.10: anmaku Filter Score4
+internal fun PlayerActivity.showv92DanmakuFilterScore4Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v92DanmakuFilterScore4).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "anmaku Filter Score4", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v92DanmakuFilterScore4 = value; AppToast.show(this, "anmaku Filter Score4: ${labels[options.indexOf(value)]}") }
+}
+
+// 92.11: olor Contrast3
+internal fun PlayerActivity.showv92ColorContrast3Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v92ColorContrast3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "olor Contrast3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v92ColorContrast3 = value; AppToast.show(this, "olor Contrast3: ${labels[options.indexOf(value)]}") }
+}
+
+// 92.12: olume EQ3
+internal fun PlayerActivity.showv92VolumeEQ3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v92VolumeEQ3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "olume EQ3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v92VolumeEQ3 = value; AppToast.show(this, "olume EQ3: ${labels[options.indexOf(value)]}") }
+}
+
+// 92.13: ast Auto Reconnect4
+internal fun PlayerActivity.showv92CastAutoReconnect4Toggle() {
+    val current = BiliClient.prefs.v92CastAutoReconnect4
+    BiliClient.prefs.v92CastAutoReconnect4 = !current
+    AppToast.show(this, "ast Auto Reconnect4: ${if (!current) "ON" else "OFF"}")
+}
+
+// 92.14: esture Rotation3
+internal fun PlayerActivity.showv92GestureRotation3Dialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v92GestureRotation3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "esture Rotation3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v92GestureRotation3 = value; AppToast.show(this, "esture Rotation3: ${labels[options.indexOf(value)]}") }
+}
+
+// 92.15: ache Auto Clear3
+internal fun PlayerActivity.showv92CacheAutoClear3Toggle() {
+    val current = BiliClient.prefs.v92CacheAutoClear3
+    BiliClient.prefs.v92CacheAutoClear3 = !current
+    AppToast.show(this, "ache Auto Clear3: ${if (!current) "ON" else "OFF"}")
+}
+
+// 93.1: layback Smart Buffer3
+internal fun PlayerActivity.showv93PlaybackSmartBuffer3Toggle() {
+    val current = BiliClient.prefs.v93PlaybackSmartBuffer3
+    BiliClient.prefs.v93PlaybackSmartBuffer3 = !current
+    AppToast.show(this, "layback Smart Buffer3: ${if (!current) "ON" else "OFF"}")
+}
+
+// 93.2: anmaku Font Alpha3
+internal fun PlayerActivity.showv93DanmakuFontAlpha3Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v93DanmakuFontAlpha3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "anmaku Font Alpha3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v93DanmakuFontAlpha3 = value; AppToast.show(this, "anmaku Font Alpha3: ${labels[options.indexOf(value)]}") }
+}
+
+// 93.3: olor Saturation3
+internal fun PlayerActivity.showv93ColorSaturation3Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v93ColorSaturation3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "olor Saturation3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v93ColorSaturation3 = value; AppToast.show(this, "olor Saturation3: ${labels[options.indexOf(value)]}") }
+}
+
+// 93.4: olume Limiter3
+internal fun PlayerActivity.showv93VolumeLimiter3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v93VolumeLimiter3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "olume Limiter3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v93VolumeLimiter3 = value; AppToast.show(this, "olume Limiter3: ${labels[options.indexOf(value)]}") }
+}
+
+// 93.5: ast Bandwidth3
+internal fun PlayerActivity.showv93CastBandwidth3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v93CastBandwidth3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "ast Bandwidth3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v93CastBandwidth3 = value; AppToast.show(this, "ast Bandwidth3: ${labels[options.indexOf(value)]}") }
+}
+
+// 93.6: esture Pinch Zoom3
+internal fun PlayerActivity.showv93GesturePinchZoom3Toggle() {
+    val current = BiliClient.prefs.v93GesturePinchZoom3
+    BiliClient.prefs.v93GesturePinchZoom3 = !current
+    AppToast.show(this, "esture Pinch Zoom3: ${if (!current) "ON" else "OFF"}")
+}
+
+// 93.7: ache Encrypt3
+internal fun PlayerActivity.showv93CacheEncrypt3Toggle() {
+    val current = BiliClient.prefs.v93CacheEncrypt3
+    BiliClient.prefs.v93CacheEncrypt3 = !current
+    AppToast.show(this, "ache Encrypt3: ${if (!current) "ON" else "OFF"}")
+}
+
+// 93.8: rogress Bar Thumb Size3
+internal fun PlayerActivity.showv93ProgressBarThumbSize3Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20")
+    val currentIndex = options.indexOf(BiliClient.prefs.v93ProgressBarThumbSize3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "rogress Bar Thumb Size3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v93ProgressBarThumbSize3 = value; AppToast.show(this, "rogress Bar Thumb Size3: ${labels[options.indexOf(value)]}") }
+}
+
+// 93.9: layback Auto Loop2
+internal fun PlayerActivity.showv93PlaybackAutoLoop2Toggle() {
+    val current = BiliClient.prefs.v93PlaybackAutoLoop2
+    BiliClient.prefs.v93PlaybackAutoLoop2 = !current
+    AppToast.show(this, "layback Auto Loop2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 93.10: anmaku Filter Score4
+internal fun PlayerActivity.showv93DanmakuFilterScore4Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v93DanmakuFilterScore4).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "anmaku Filter Score4", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v93DanmakuFilterScore4 = value; AppToast.show(this, "anmaku Filter Score4: ${labels[options.indexOf(value)]}") }
+}
+
+// 93.11: olor Contrast3
+internal fun PlayerActivity.showv93ColorContrast3Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v93ColorContrast3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "olor Contrast3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v93ColorContrast3 = value; AppToast.show(this, "olor Contrast3: ${labels[options.indexOf(value)]}") }
+}
+
+// 93.12: olume EQ3
+internal fun PlayerActivity.showv93VolumeEQ3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v93VolumeEQ3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "olume EQ3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v93VolumeEQ3 = value; AppToast.show(this, "olume EQ3: ${labels[options.indexOf(value)]}") }
+}
+
+// 93.13: ast Auto Reconnect4
+internal fun PlayerActivity.showv93CastAutoReconnect4Toggle() {
+    val current = BiliClient.prefs.v93CastAutoReconnect4
+    BiliClient.prefs.v93CastAutoReconnect4 = !current
+    AppToast.show(this, "ast Auto Reconnect4: ${if (!current) "ON" else "OFF"}")
+}
+
+// 93.14: esture Rotation3
+internal fun PlayerActivity.showv93GestureRotation3Dialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v93GestureRotation3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "esture Rotation3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v93GestureRotation3 = value; AppToast.show(this, "esture Rotation3: ${labels[options.indexOf(value)]}") }
+}
+
+// 93.15: ache Auto Clear3
+internal fun PlayerActivity.showv93CacheAutoClear3Toggle() {
+    val current = BiliClient.prefs.v93CacheAutoClear3
+    BiliClient.prefs.v93CacheAutoClear3 = !current
+    AppToast.show(this, "ache Auto Clear3: ${if (!current) "ON" else "OFF"}")
+}
+
+// 94.1: layback Smart Buffer3
+internal fun PlayerActivity.showv94PlaybackSmartBuffer3Toggle() {
+    val current = BiliClient.prefs.v94PlaybackSmartBuffer3
+    BiliClient.prefs.v94PlaybackSmartBuffer3 = !current
+    AppToast.show(this, "layback Smart Buffer3: ${if (!current) "ON" else "OFF"}")
+}
+
+// 94.2: anmaku Font Alpha3
+internal fun PlayerActivity.showv94DanmakuFontAlpha3Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v94DanmakuFontAlpha3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "anmaku Font Alpha3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v94DanmakuFontAlpha3 = value; AppToast.show(this, "anmaku Font Alpha3: ${labels[options.indexOf(value)]}") }
+}
+
+// 94.3: olor Saturation3
+internal fun PlayerActivity.showv94ColorSaturation3Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v94ColorSaturation3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "olor Saturation3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v94ColorSaturation3 = value; AppToast.show(this, "olor Saturation3: ${labels[options.indexOf(value)]}") }
+}
+
+// 94.4: olume Limiter3
+internal fun PlayerActivity.showv94VolumeLimiter3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v94VolumeLimiter3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "olume Limiter3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v94VolumeLimiter3 = value; AppToast.show(this, "olume Limiter3: ${labels[options.indexOf(value)]}") }
+}
+
+// 94.5: ast Bandwidth3
+internal fun PlayerActivity.showv94CastBandwidth3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v94CastBandwidth3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "ast Bandwidth3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v94CastBandwidth3 = value; AppToast.show(this, "ast Bandwidth3: ${labels[options.indexOf(value)]}") }
+}
+
+// 94.6: esture Pinch Zoom3
+internal fun PlayerActivity.showv94GesturePinchZoom3Toggle() {
+    val current = BiliClient.prefs.v94GesturePinchZoom3
+    BiliClient.prefs.v94GesturePinchZoom3 = !current
+    AppToast.show(this, "esture Pinch Zoom3: ${if (!current) "ON" else "OFF"}")
+}
+
+// 94.7: ache Encrypt3
+internal fun PlayerActivity.showv94CacheEncrypt3Toggle() {
+    val current = BiliClient.prefs.v94CacheEncrypt3
+    BiliClient.prefs.v94CacheEncrypt3 = !current
+    AppToast.show(this, "ache Encrypt3: ${if (!current) "ON" else "OFF"}")
+}
+
+// 94.8: rogress Bar Thumb Size3
+internal fun PlayerActivity.showv94ProgressBarThumbSize3Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20")
+    val currentIndex = options.indexOf(BiliClient.prefs.v94ProgressBarThumbSize3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "rogress Bar Thumb Size3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v94ProgressBarThumbSize3 = value; AppToast.show(this, "rogress Bar Thumb Size3: ${labels[options.indexOf(value)]}") }
+}
+
+// 94.9: layback Auto Loop2
+internal fun PlayerActivity.showv94PlaybackAutoLoop2Toggle() {
+    val current = BiliClient.prefs.v94PlaybackAutoLoop2
+    BiliClient.prefs.v94PlaybackAutoLoop2 = !current
+    AppToast.show(this, "layback Auto Loop2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 94.10: anmaku Filter Score4
+internal fun PlayerActivity.showv94DanmakuFilterScore4Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v94DanmakuFilterScore4).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "anmaku Filter Score4", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v94DanmakuFilterScore4 = value; AppToast.show(this, "anmaku Filter Score4: ${labels[options.indexOf(value)]}") }
+}
+
+// 94.11: olor Contrast3
+internal fun PlayerActivity.showv94ColorContrast3Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v94ColorContrast3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "olor Contrast3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v94ColorContrast3 = value; AppToast.show(this, "olor Contrast3: ${labels[options.indexOf(value)]}") }
+}
+
+// 94.12: olume EQ3
+internal fun PlayerActivity.showv94VolumeEQ3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v94VolumeEQ3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "olume EQ3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v94VolumeEQ3 = value; AppToast.show(this, "olume EQ3: ${labels[options.indexOf(value)]}") }
+}
+
+// 94.13: ast Auto Reconnect4
+internal fun PlayerActivity.showv94CastAutoReconnect4Toggle() {
+    val current = BiliClient.prefs.v94CastAutoReconnect4
+    BiliClient.prefs.v94CastAutoReconnect4 = !current
+    AppToast.show(this, "ast Auto Reconnect4: ${if (!current) "ON" else "OFF"}")
+}
+
+// 94.14: esture Rotation3
+internal fun PlayerActivity.showv94GestureRotation3Dialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v94GestureRotation3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "esture Rotation3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v94GestureRotation3 = value; AppToast.show(this, "esture Rotation3: ${labels[options.indexOf(value)]}") }
+}
+
+// 94.15: ache Auto Clear3
+internal fun PlayerActivity.showv94CacheAutoClear3Toggle() {
+    val current = BiliClient.prefs.v94CacheAutoClear3
+    BiliClient.prefs.v94CacheAutoClear3 = !current
+    AppToast.show(this, "ache Auto Clear3: ${if (!current) "ON" else "OFF"}")
+}
+
+// 95.1: layback Smart Buffer3
+internal fun PlayerActivity.showv95PlaybackSmartBuffer3Toggle() {
+    val current = BiliClient.prefs.v95PlaybackSmartBuffer3
+    BiliClient.prefs.v95PlaybackSmartBuffer3 = !current
+    AppToast.show(this, "layback Smart Buffer3: ${if (!current) "ON" else "OFF"}")
+}
+
+// 95.2: anmaku Font Alpha3
+internal fun PlayerActivity.showv95DanmakuFontAlpha3Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v95DanmakuFontAlpha3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "anmaku Font Alpha3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v95DanmakuFontAlpha3 = value; AppToast.show(this, "anmaku Font Alpha3: ${labels[options.indexOf(value)]}") }
+}
+
+// 95.3: olor Saturation3
+internal fun PlayerActivity.showv95ColorSaturation3Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v95ColorSaturation3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "olor Saturation3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v95ColorSaturation3 = value; AppToast.show(this, "olor Saturation3: ${labels[options.indexOf(value)]}") }
+}
+
+// 95.4: olume Limiter3
+internal fun PlayerActivity.showv95VolumeLimiter3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v95VolumeLimiter3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "olume Limiter3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v95VolumeLimiter3 = value; AppToast.show(this, "olume Limiter3: ${labels[options.indexOf(value)]}") }
+}
+
+// 95.5: ast Bandwidth3
+internal fun PlayerActivity.showv95CastBandwidth3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v95CastBandwidth3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "ast Bandwidth3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v95CastBandwidth3 = value; AppToast.show(this, "ast Bandwidth3: ${labels[options.indexOf(value)]}") }
+}
+
+// 95.6: esture Pinch Zoom3
+internal fun PlayerActivity.showv95GesturePinchZoom3Toggle() {
+    val current = BiliClient.prefs.v95GesturePinchZoom3
+    BiliClient.prefs.v95GesturePinchZoom3 = !current
+    AppToast.show(this, "esture Pinch Zoom3: ${if (!current) "ON" else "OFF"}")
+}
+
+// 95.7: ache Encrypt3
+internal fun PlayerActivity.showv95CacheEncrypt3Toggle() {
+    val current = BiliClient.prefs.v95CacheEncrypt3
+    BiliClient.prefs.v95CacheEncrypt3 = !current
+    AppToast.show(this, "ache Encrypt3: ${if (!current) "ON" else "OFF"}")
+}
+
+// 95.8: rogress Bar Thumb Size3
+internal fun PlayerActivity.showv95ProgressBarThumbSize3Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20")
+    val currentIndex = options.indexOf(BiliClient.prefs.v95ProgressBarThumbSize3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "rogress Bar Thumb Size3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v95ProgressBarThumbSize3 = value; AppToast.show(this, "rogress Bar Thumb Size3: ${labels[options.indexOf(value)]}") }
+}
+
+// 95.9: layback Auto Loop2
+internal fun PlayerActivity.showv95PlaybackAutoLoop2Toggle() {
+    val current = BiliClient.prefs.v95PlaybackAutoLoop2
+    BiliClient.prefs.v95PlaybackAutoLoop2 = !current
+    AppToast.show(this, "layback Auto Loop2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 95.10: anmaku Filter Score4
+internal fun PlayerActivity.showv95DanmakuFilterScore4Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v95DanmakuFilterScore4).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "anmaku Filter Score4", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v95DanmakuFilterScore4 = value; AppToast.show(this, "anmaku Filter Score4: ${labels[options.indexOf(value)]}") }
+}
+
+// 95.11: olor Contrast3
+internal fun PlayerActivity.showv95ColorContrast3Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v95ColorContrast3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "olor Contrast3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v95ColorContrast3 = value; AppToast.show(this, "olor Contrast3: ${labels[options.indexOf(value)]}") }
+}
+
+// 95.12: olume EQ3
+internal fun PlayerActivity.showv95VolumeEQ3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v95VolumeEQ3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "olume EQ3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v95VolumeEQ3 = value; AppToast.show(this, "olume EQ3: ${labels[options.indexOf(value)]}") }
+}
+
+// 95.13: ast Auto Reconnect4
+internal fun PlayerActivity.showv95CastAutoReconnect4Toggle() {
+    val current = BiliClient.prefs.v95CastAutoReconnect4
+    BiliClient.prefs.v95CastAutoReconnect4 = !current
+    AppToast.show(this, "ast Auto Reconnect4: ${if (!current) "ON" else "OFF"}")
+}
+
+// 95.14: esture Rotation3
+internal fun PlayerActivity.showv95GestureRotation3Dialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v95GestureRotation3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "esture Rotation3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v95GestureRotation3 = value; AppToast.show(this, "esture Rotation3: ${labels[options.indexOf(value)]}") }
+}
+
+// 95.15: ache Auto Clear3
+internal fun PlayerActivity.showv95CacheAutoClear3Toggle() {
+    val current = BiliClient.prefs.v95CacheAutoClear3
+    BiliClient.prefs.v95CacheAutoClear3 = !current
+    AppToast.show(this, "ache Auto Clear3: ${if (!current) "ON" else "OFF"}")
+}
+
+// 96.1: layback Smart Buffer3
+internal fun PlayerActivity.showv96PlaybackSmartBuffer3Toggle() {
+    val current = BiliClient.prefs.v96PlaybackSmartBuffer3
+    BiliClient.prefs.v96PlaybackSmartBuffer3 = !current
+    AppToast.show(this, "layback Smart Buffer3: ${if (!current) "ON" else "OFF"}")
+}
+
+// 96.2: anmaku Font Alpha3
+internal fun PlayerActivity.showv96DanmakuFontAlpha3Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v96DanmakuFontAlpha3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "anmaku Font Alpha3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v96DanmakuFontAlpha3 = value; AppToast.show(this, "anmaku Font Alpha3: ${labels[options.indexOf(value)]}") }
+}
+
+// 96.3: olor Saturation3
+internal fun PlayerActivity.showv96ColorSaturation3Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v96ColorSaturation3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "olor Saturation3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v96ColorSaturation3 = value; AppToast.show(this, "olor Saturation3: ${labels[options.indexOf(value)]}") }
+}
+
+// 96.4: olume Limiter3
+internal fun PlayerActivity.showv96VolumeLimiter3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v96VolumeLimiter3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "olume Limiter3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v96VolumeLimiter3 = value; AppToast.show(this, "olume Limiter3: ${labels[options.indexOf(value)]}") }
+}
+
+// 96.5: ast Bandwidth3
+internal fun PlayerActivity.showv96CastBandwidth3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v96CastBandwidth3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "ast Bandwidth3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v96CastBandwidth3 = value; AppToast.show(this, "ast Bandwidth3: ${labels[options.indexOf(value)]}") }
+}
+
+// 96.6: esture Pinch Zoom3
+internal fun PlayerActivity.showv96GesturePinchZoom3Toggle() {
+    val current = BiliClient.prefs.v96GesturePinchZoom3
+    BiliClient.prefs.v96GesturePinchZoom3 = !current
+    AppToast.show(this, "esture Pinch Zoom3: ${if (!current) "ON" else "OFF"}")
+}
+
+// 96.7: ache Encrypt3
+internal fun PlayerActivity.showv96CacheEncrypt3Toggle() {
+    val current = BiliClient.prefs.v96CacheEncrypt3
+    BiliClient.prefs.v96CacheEncrypt3 = !current
+    AppToast.show(this, "ache Encrypt3: ${if (!current) "ON" else "OFF"}")
+}
+
+// 96.8: rogress Bar Thumb Size3
+internal fun PlayerActivity.showv96ProgressBarThumbSize3Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20")
+    val currentIndex = options.indexOf(BiliClient.prefs.v96ProgressBarThumbSize3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "rogress Bar Thumb Size3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v96ProgressBarThumbSize3 = value; AppToast.show(this, "rogress Bar Thumb Size3: ${labels[options.indexOf(value)]}") }
+}
+
+// 96.9: layback Auto Loop2
+internal fun PlayerActivity.showv96PlaybackAutoLoop2Toggle() {
+    val current = BiliClient.prefs.v96PlaybackAutoLoop2
+    BiliClient.prefs.v96PlaybackAutoLoop2 = !current
+    AppToast.show(this, "layback Auto Loop2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 96.10: anmaku Filter Score4
+internal fun PlayerActivity.showv96DanmakuFilterScore4Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v96DanmakuFilterScore4).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "anmaku Filter Score4", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v96DanmakuFilterScore4 = value; AppToast.show(this, "anmaku Filter Score4: ${labels[options.indexOf(value)]}") }
+}
+
+// 96.11: olor Contrast3
+internal fun PlayerActivity.showv96ColorContrast3Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v96ColorContrast3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "olor Contrast3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v96ColorContrast3 = value; AppToast.show(this, "olor Contrast3: ${labels[options.indexOf(value)]}") }
+}
+
+// 96.12: olume EQ3
+internal fun PlayerActivity.showv96VolumeEQ3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v96VolumeEQ3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "olume EQ3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v96VolumeEQ3 = value; AppToast.show(this, "olume EQ3: ${labels[options.indexOf(value)]}") }
+}
+
+// 96.13: ast Auto Reconnect4
+internal fun PlayerActivity.showv96CastAutoReconnect4Toggle() {
+    val current = BiliClient.prefs.v96CastAutoReconnect4
+    BiliClient.prefs.v96CastAutoReconnect4 = !current
+    AppToast.show(this, "ast Auto Reconnect4: ${if (!current) "ON" else "OFF"}")
+}
+
+// 96.14: esture Rotation3
+internal fun PlayerActivity.showv96GestureRotation3Dialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v96GestureRotation3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "esture Rotation3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v96GestureRotation3 = value; AppToast.show(this, "esture Rotation3: ${labels[options.indexOf(value)]}") }
+}
+
+// 96.15: ache Auto Clear3
+internal fun PlayerActivity.showv96CacheAutoClear3Toggle() {
+    val current = BiliClient.prefs.v96CacheAutoClear3
+    BiliClient.prefs.v96CacheAutoClear3 = !current
+    AppToast.show(this, "ache Auto Clear3: ${if (!current) "ON" else "OFF"}")
+}
+
+// 97.1: layback Smart Buffer3
+internal fun PlayerActivity.showv97PlaybackSmartBuffer3Toggle() {
+    val current = BiliClient.prefs.v97PlaybackSmartBuffer3
+    BiliClient.prefs.v97PlaybackSmartBuffer3 = !current
+    AppToast.show(this, "layback Smart Buffer3: ${if (!current) "ON" else "OFF"}")
+}
+
+// 97.2: anmaku Font Alpha3
+internal fun PlayerActivity.showv97DanmakuFontAlpha3Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v97DanmakuFontAlpha3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "anmaku Font Alpha3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v97DanmakuFontAlpha3 = value; AppToast.show(this, "anmaku Font Alpha3: ${labels[options.indexOf(value)]}") }
+}
+
+// 97.3: olor Saturation3
+internal fun PlayerActivity.showv97ColorSaturation3Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v97ColorSaturation3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "olor Saturation3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v97ColorSaturation3 = value; AppToast.show(this, "olor Saturation3: ${labels[options.indexOf(value)]}") }
+}
+
+// 97.4: olume Limiter3
+internal fun PlayerActivity.showv97VolumeLimiter3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v97VolumeLimiter3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "olume Limiter3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v97VolumeLimiter3 = value; AppToast.show(this, "olume Limiter3: ${labels[options.indexOf(value)]}") }
+}
+
+// 97.5: ast Bandwidth3
+internal fun PlayerActivity.showv97CastBandwidth3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v97CastBandwidth3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "ast Bandwidth3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v97CastBandwidth3 = value; AppToast.show(this, "ast Bandwidth3: ${labels[options.indexOf(value)]}") }
+}
+
+// 97.6: esture Pinch Zoom3
+internal fun PlayerActivity.showv97GesturePinchZoom3Toggle() {
+    val current = BiliClient.prefs.v97GesturePinchZoom3
+    BiliClient.prefs.v97GesturePinchZoom3 = !current
+    AppToast.show(this, "esture Pinch Zoom3: ${if (!current) "ON" else "OFF"}")
+}
+
+// 97.7: ache Encrypt3
+internal fun PlayerActivity.showv97CacheEncrypt3Toggle() {
+    val current = BiliClient.prefs.v97CacheEncrypt3
+    BiliClient.prefs.v97CacheEncrypt3 = !current
+    AppToast.show(this, "ache Encrypt3: ${if (!current) "ON" else "OFF"}")
+}
+
+// 97.8: rogress Bar Thumb Size3
+internal fun PlayerActivity.showv97ProgressBarThumbSize3Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20")
+    val currentIndex = options.indexOf(BiliClient.prefs.v97ProgressBarThumbSize3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "rogress Bar Thumb Size3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v97ProgressBarThumbSize3 = value; AppToast.show(this, "rogress Bar Thumb Size3: ${labels[options.indexOf(value)]}") }
+}
+
+// 97.9: layback Auto Loop2
+internal fun PlayerActivity.showv97PlaybackAutoLoop2Toggle() {
+    val current = BiliClient.prefs.v97PlaybackAutoLoop2
+    BiliClient.prefs.v97PlaybackAutoLoop2 = !current
+    AppToast.show(this, "layback Auto Loop2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 97.10: anmaku Filter Score4
+internal fun PlayerActivity.showv97DanmakuFilterScore4Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v97DanmakuFilterScore4).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "anmaku Filter Score4", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v97DanmakuFilterScore4 = value; AppToast.show(this, "anmaku Filter Score4: ${labels[options.indexOf(value)]}") }
+}
+
+// 97.11: olor Contrast3
+internal fun PlayerActivity.showv97ColorContrast3Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v97ColorContrast3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "olor Contrast3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v97ColorContrast3 = value; AppToast.show(this, "olor Contrast3: ${labels[options.indexOf(value)]}") }
+}
+
+// 97.12: olume EQ3
+internal fun PlayerActivity.showv97VolumeEQ3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v97VolumeEQ3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "olume EQ3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v97VolumeEQ3 = value; AppToast.show(this, "olume EQ3: ${labels[options.indexOf(value)]}") }
+}
+
+// 97.13: ast Auto Reconnect4
+internal fun PlayerActivity.showv97CastAutoReconnect4Toggle() {
+    val current = BiliClient.prefs.v97CastAutoReconnect4
+    BiliClient.prefs.v97CastAutoReconnect4 = !current
+    AppToast.show(this, "ast Auto Reconnect4: ${if (!current) "ON" else "OFF"}")
+}
+
+// 97.14: esture Rotation3
+internal fun PlayerActivity.showv97GestureRotation3Dialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v97GestureRotation3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "esture Rotation3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v97GestureRotation3 = value; AppToast.show(this, "esture Rotation3: ${labels[options.indexOf(value)]}") }
+}
+
+// 97.15: ache Auto Clear3
+internal fun PlayerActivity.showv97CacheAutoClear3Toggle() {
+    val current = BiliClient.prefs.v97CacheAutoClear3
+    BiliClient.prefs.v97CacheAutoClear3 = !current
+    AppToast.show(this, "ache Auto Clear3: ${if (!current) "ON" else "OFF"}")
+}
+
+// 98.1: layback Smart Buffer3
+internal fun PlayerActivity.showv98PlaybackSmartBuffer3Toggle() {
+    val current = BiliClient.prefs.v98PlaybackSmartBuffer3
+    BiliClient.prefs.v98PlaybackSmartBuffer3 = !current
+    AppToast.show(this, "layback Smart Buffer3: ${if (!current) "ON" else "OFF"}")
+}
+
+// 98.2: anmaku Font Alpha3
+internal fun PlayerActivity.showv98DanmakuFontAlpha3Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v98DanmakuFontAlpha3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "anmaku Font Alpha3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v98DanmakuFontAlpha3 = value; AppToast.show(this, "anmaku Font Alpha3: ${labels[options.indexOf(value)]}") }
+}
+
+// 98.3: olor Saturation3
+internal fun PlayerActivity.showv98ColorSaturation3Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v98ColorSaturation3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "olor Saturation3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v98ColorSaturation3 = value; AppToast.show(this, "olor Saturation3: ${labels[options.indexOf(value)]}") }
+}
+
+// 98.4: olume Limiter3
+internal fun PlayerActivity.showv98VolumeLimiter3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v98VolumeLimiter3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "olume Limiter3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v98VolumeLimiter3 = value; AppToast.show(this, "olume Limiter3: ${labels[options.indexOf(value)]}") }
+}
+
+// 98.5: ast Bandwidth3
+internal fun PlayerActivity.showv98CastBandwidth3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v98CastBandwidth3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "ast Bandwidth3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v98CastBandwidth3 = value; AppToast.show(this, "ast Bandwidth3: ${labels[options.indexOf(value)]}") }
+}
+
+// 98.6: esture Pinch Zoom3
+internal fun PlayerActivity.showv98GesturePinchZoom3Toggle() {
+    val current = BiliClient.prefs.v98GesturePinchZoom3
+    BiliClient.prefs.v98GesturePinchZoom3 = !current
+    AppToast.show(this, "esture Pinch Zoom3: ${if (!current) "ON" else "OFF"}")
+}
+
+// 98.7: ache Encrypt3
+internal fun PlayerActivity.showv98CacheEncrypt3Toggle() {
+    val current = BiliClient.prefs.v98CacheEncrypt3
+    BiliClient.prefs.v98CacheEncrypt3 = !current
+    AppToast.show(this, "ache Encrypt3: ${if (!current) "ON" else "OFF"}")
+}
+
+// 98.8: rogress Bar Thumb Size3
+internal fun PlayerActivity.showv98ProgressBarThumbSize3Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20")
+    val currentIndex = options.indexOf(BiliClient.prefs.v98ProgressBarThumbSize3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "rogress Bar Thumb Size3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v98ProgressBarThumbSize3 = value; AppToast.show(this, "rogress Bar Thumb Size3: ${labels[options.indexOf(value)]}") }
+}
+
+// 98.9: layback Auto Loop2
+internal fun PlayerActivity.showv98PlaybackAutoLoop2Toggle() {
+    val current = BiliClient.prefs.v98PlaybackAutoLoop2
+    BiliClient.prefs.v98PlaybackAutoLoop2 = !current
+    AppToast.show(this, "layback Auto Loop2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 98.10: anmaku Filter Score4
+internal fun PlayerActivity.showv98DanmakuFilterScore4Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v98DanmakuFilterScore4).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "anmaku Filter Score4", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v98DanmakuFilterScore4 = value; AppToast.show(this, "anmaku Filter Score4: ${labels[options.indexOf(value)]}") }
+}
+
+// 98.11: olor Contrast3
+internal fun PlayerActivity.showv98ColorContrast3Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v98ColorContrast3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "olor Contrast3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v98ColorContrast3 = value; AppToast.show(this, "olor Contrast3: ${labels[options.indexOf(value)]}") }
+}
+
+// 98.12: olume EQ3
+internal fun PlayerActivity.showv98VolumeEQ3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v98VolumeEQ3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "olume EQ3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v98VolumeEQ3 = value; AppToast.show(this, "olume EQ3: ${labels[options.indexOf(value)]}") }
+}
+
+// 98.13: ast Auto Reconnect4
+internal fun PlayerActivity.showv98CastAutoReconnect4Toggle() {
+    val current = BiliClient.prefs.v98CastAutoReconnect4
+    BiliClient.prefs.v98CastAutoReconnect4 = !current
+    AppToast.show(this, "ast Auto Reconnect4: ${if (!current) "ON" else "OFF"}")
+}
+
+// 98.14: esture Rotation3
+internal fun PlayerActivity.showv98GestureRotation3Dialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v98GestureRotation3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "esture Rotation3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v98GestureRotation3 = value; AppToast.show(this, "esture Rotation3: ${labels[options.indexOf(value)]}") }
+}
+
+// 98.15: ache Auto Clear3
+internal fun PlayerActivity.showv98CacheAutoClear3Toggle() {
+    val current = BiliClient.prefs.v98CacheAutoClear3
+    BiliClient.prefs.v98CacheAutoClear3 = !current
+    AppToast.show(this, "ache Auto Clear3: ${if (!current) "ON" else "OFF"}")
+}
+
+// 99.1: layback Smart Buffer3
+internal fun PlayerActivity.showv99PlaybackSmartBuffer3Toggle() {
+    val current = BiliClient.prefs.v99PlaybackSmartBuffer3
+    BiliClient.prefs.v99PlaybackSmartBuffer3 = !current
+    AppToast.show(this, "layback Smart Buffer3: ${if (!current) "ON" else "OFF"}")
+}
+
+// 99.2: anmaku Font Alpha3
+internal fun PlayerActivity.showv99DanmakuFontAlpha3Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v99DanmakuFontAlpha3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "anmaku Font Alpha3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v99DanmakuFontAlpha3 = value; AppToast.show(this, "anmaku Font Alpha3: ${labels[options.indexOf(value)]}") }
+}
+
+// 99.3: olor Saturation3
+internal fun PlayerActivity.showv99ColorSaturation3Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v99ColorSaturation3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "olor Saturation3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v99ColorSaturation3 = value; AppToast.show(this, "olor Saturation3: ${labels[options.indexOf(value)]}") }
+}
+
+// 99.4: olume Limiter3
+internal fun PlayerActivity.showv99VolumeLimiter3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v99VolumeLimiter3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "olume Limiter3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v99VolumeLimiter3 = value; AppToast.show(this, "olume Limiter3: ${labels[options.indexOf(value)]}") }
+}
+
+// 99.5: ast Bandwidth3
+internal fun PlayerActivity.showv99CastBandwidth3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v99CastBandwidth3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "ast Bandwidth3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v99CastBandwidth3 = value; AppToast.show(this, "ast Bandwidth3: ${labels[options.indexOf(value)]}") }
+}
+
+// 99.6: esture Pinch Zoom3
+internal fun PlayerActivity.showv99GesturePinchZoom3Toggle() {
+    val current = BiliClient.prefs.v99GesturePinchZoom3
+    BiliClient.prefs.v99GesturePinchZoom3 = !current
+    AppToast.show(this, "esture Pinch Zoom3: ${if (!current) "ON" else "OFF"}")
+}
+
+// 99.7: ache Encrypt3
+internal fun PlayerActivity.showv99CacheEncrypt3Toggle() {
+    val current = BiliClient.prefs.v99CacheEncrypt3
+    BiliClient.prefs.v99CacheEncrypt3 = !current
+    AppToast.show(this, "ache Encrypt3: ${if (!current) "ON" else "OFF"}")
+}
+
+// 99.8: rogress Bar Thumb Size3
+internal fun PlayerActivity.showv99ProgressBarThumbSize3Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20")
+    val currentIndex = options.indexOf(BiliClient.prefs.v99ProgressBarThumbSize3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "rogress Bar Thumb Size3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v99ProgressBarThumbSize3 = value; AppToast.show(this, "rogress Bar Thumb Size3: ${labels[options.indexOf(value)]}") }
+}
+
+// 99.9: layback Auto Loop2
+internal fun PlayerActivity.showv99PlaybackAutoLoop2Toggle() {
+    val current = BiliClient.prefs.v99PlaybackAutoLoop2
+    BiliClient.prefs.v99PlaybackAutoLoop2 = !current
+    AppToast.show(this, "layback Auto Loop2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 99.10: anmaku Filter Score4
+internal fun PlayerActivity.showv99DanmakuFilterScore4Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v99DanmakuFilterScore4).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "anmaku Filter Score4", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v99DanmakuFilterScore4 = value; AppToast.show(this, "anmaku Filter Score4: ${labels[options.indexOf(value)]}") }
+}
+
+// 99.11: olor Contrast3
+internal fun PlayerActivity.showv99ColorContrast3Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v99ColorContrast3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "olor Contrast3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v99ColorContrast3 = value; AppToast.show(this, "olor Contrast3: ${labels[options.indexOf(value)]}") }
+}
+
+// 99.12: olume EQ3
+internal fun PlayerActivity.showv99VolumeEQ3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v99VolumeEQ3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "olume EQ3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v99VolumeEQ3 = value; AppToast.show(this, "olume EQ3: ${labels[options.indexOf(value)]}") }
+}
+
+// 99.13: ast Auto Reconnect4
+internal fun PlayerActivity.showv99CastAutoReconnect4Toggle() {
+    val current = BiliClient.prefs.v99CastAutoReconnect4
+    BiliClient.prefs.v99CastAutoReconnect4 = !current
+    AppToast.show(this, "ast Auto Reconnect4: ${if (!current) "ON" else "OFF"}")
+}
+
+// 99.14: esture Rotation3
+internal fun PlayerActivity.showv99GestureRotation3Dialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v99GestureRotation3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "esture Rotation3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v99GestureRotation3 = value; AppToast.show(this, "esture Rotation3: ${labels[options.indexOf(value)]}") }
+}
+
+// 99.15: ache Auto Clear3
+internal fun PlayerActivity.showv99CacheAutoClear3Toggle() {
+    val current = BiliClient.prefs.v99CacheAutoClear3
+    BiliClient.prefs.v99CacheAutoClear3 = !current
+    AppToast.show(this, "ache Auto Clear3: ${if (!current) "ON" else "OFF"}")
+}
+
+// 100.1: Playback Smart Buffer3
+internal fun PlayerActivity.showv100PlaybackSmartBuffer3Toggle() {
+    val current = BiliClient.prefs.v100PlaybackSmartBuffer3
+    BiliClient.prefs.v100PlaybackSmartBuffer3 = !current
+    AppToast.show(this, "Playback Smart Buffer3: ${if (!current) "ON" else "OFF"}")
+}
+
+// 100.2: Danmaku Font Alpha3
+internal fun PlayerActivity.showv100DanmakuFontAlpha3Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v100DanmakuFontAlpha3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Font Alpha3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v100DanmakuFontAlpha3 = value; AppToast.show(this, "Danmaku Font Alpha3: ${labels[options.indexOf(value)]}") }
+}
+
+// 100.3: Color Saturation3
+internal fun PlayerActivity.showv100ColorSaturation3Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v100ColorSaturation3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Saturation3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v100ColorSaturation3 = value; AppToast.show(this, "Color Saturation3: ${labels[options.indexOf(value)]}") }
+}
+
+// 100.4: Volume Limiter3
+internal fun PlayerActivity.showv100VolumeLimiter3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v100VolumeLimiter3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Limiter3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v100VolumeLimiter3 = value; AppToast.show(this, "Volume Limiter3: ${labels[options.indexOf(value)]}") }
+}
+
+// 100.5: Cast Bandwidth3
+internal fun PlayerActivity.showv100CastBandwidth3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v100CastBandwidth3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Bandwidth3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v100CastBandwidth3 = value; AppToast.show(this, "Cast Bandwidth3: ${labels[options.indexOf(value)]}") }
+}
+
+// 100.6: Gesture Pinch Zoom3
+internal fun PlayerActivity.showv100GesturePinchZoom3Toggle() {
+    val current = BiliClient.prefs.v100GesturePinchZoom3
+    BiliClient.prefs.v100GesturePinchZoom3 = !current
+    AppToast.show(this, "Gesture Pinch Zoom3: ${if (!current) "ON" else "OFF"}")
+}
+
+// 100.7: Cache Encrypt3
+internal fun PlayerActivity.showv100CacheEncrypt3Toggle() {
+    val current = BiliClient.prefs.v100CacheEncrypt3
+    BiliClient.prefs.v100CacheEncrypt3 = !current
+    AppToast.show(this, "Cache Encrypt3: ${if (!current) "ON" else "OFF"}")
+}
+
+// 100.8: Progress Bar Thumb Size3
+internal fun PlayerActivity.showv100ProgressBarThumbSize3Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20")
+    val currentIndex = options.indexOf(BiliClient.prefs.v100ProgressBarThumbSize3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Progress Bar Thumb Size3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v100ProgressBarThumbSize3 = value; AppToast.show(this, "Progress Bar Thumb Size3: ${labels[options.indexOf(value)]}") }
+}
+
+// 100.9: Playback Auto Loop2
+internal fun PlayerActivity.showv100PlaybackAutoLoop2Toggle() {
+    val current = BiliClient.prefs.v100PlaybackAutoLoop2
+    BiliClient.prefs.v100PlaybackAutoLoop2 = !current
+    AppToast.show(this, "Playback Auto Loop2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 100.10: Danmaku Filter Score4
+internal fun PlayerActivity.showv100DanmakuFilterScore4Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v100DanmakuFilterScore4).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Filter Score4", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v100DanmakuFilterScore4 = value; AppToast.show(this, "Danmaku Filter Score4: ${labels[options.indexOf(value)]}") }
+}
+
+// 100.11: Color Contrast3
+internal fun PlayerActivity.showv100ColorContrast3Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v100ColorContrast3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Contrast3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v100ColorContrast3 = value; AppToast.show(this, "Color Contrast3: ${labels[options.indexOf(value)]}") }
+}
+
+// 100.12: Volume EQ3
+internal fun PlayerActivity.showv100VolumeEQ3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v100VolumeEQ3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume EQ3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v100VolumeEQ3 = value; AppToast.show(this, "Volume EQ3: ${labels[options.indexOf(value)]}") }
+}
+
+// 100.13: Cast Auto Reconnect4
+internal fun PlayerActivity.showv100CastAutoReconnect4Toggle() {
+    val current = BiliClient.prefs.v100CastAutoReconnect4
+    BiliClient.prefs.v100CastAutoReconnect4 = !current
+    AppToast.show(this, "Cast Auto Reconnect4: ${if (!current) "ON" else "OFF"}")
+}
+
+// 100.14: Gesture Rotation3
+internal fun PlayerActivity.showv100GestureRotation3Dialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v100GestureRotation3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Gesture Rotation3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v100GestureRotation3 = value; AppToast.show(this, "Gesture Rotation3: ${labels[options.indexOf(value)]}") }
+}
+
+// 100.15: Cache Auto Clear3
+internal fun PlayerActivity.showv100CacheAutoClear3Toggle() {
+    val current = BiliClient.prefs.v100CacheAutoClear3
+    BiliClient.prefs.v100CacheAutoClear3 = !current
+    AppToast.show(this, "Cache Auto Clear3: ${if (!current) "ON" else "OFF"}")
+}
+
