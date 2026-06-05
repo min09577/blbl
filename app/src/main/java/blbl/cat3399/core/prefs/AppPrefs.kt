@@ -2797,6 +2797,241 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V45_PROGRESS_BAR_BUFFER_ENHANCED, true)
         set(value) = prefs.edit().putBoolean(KEY_V45_PROGRESS_BAR_BUFFER_ENHANCED, value).apply()
 
+    // ===== v46.x =====
+    var v46PlaybackLoopMemory: Boolean
+        get() = prefs.getBoolean(KEY_V46_PLAYBACK_LOOP_MEMORY, false)
+        set(value) = prefs.edit().putBoolean(KEY_V46_PLAYBACK_LOOP_MEMORY, value).apply()
+    var v46DanmakuFontWeight: Int
+        get() = prefs.getInt(KEY_V46_DANMAKU_FONT_WEIGHT, 400)
+        set(value) = prefs.edit().putInt(KEY_V46_DANMAKU_FONT_WEIGHT, value.coerceIn(100, 900)).apply()
+    var v46ColorAutoGamma: Boolean
+        get() = prefs.getBoolean(KEY_V46_COLOR_AUTO_GAMMA, false)
+        set(value) = prefs.edit().putBoolean(KEY_V46_COLOR_AUTO_GAMMA, value).apply()
+    var v46VolumeNormalization: Boolean
+        get() = prefs.getBoolean(KEY_V46_VOLUME_NORMALIZATION, false)
+        set(value) = prefs.edit().putBoolean(KEY_V46_VOLUME_NORMALIZATION, value).apply()
+    var v46DanmakuStrokeOffset: Int
+        get() = prefs.getInt(KEY_V46_DANMAKU_STROKE_OFFSET, 0)
+        set(value) = prefs.edit().putInt(KEY_V46_DANMAKU_STROKE_OFFSET, value.coerceIn(-5, 5)).apply()
+    var v46CastColorTemperature: Int
+        get() = prefs.getInt(KEY_V46_CAST_COLOR_TEMPERATURE, 0)
+        set(value) = prefs.edit().putInt(KEY_V46_CAST_COLOR_TEMPERATURE, value.coerceIn(-100, 100)).apply()
+    var v46GestureEdgeExclusion: Int
+        get() = prefs.getInt(KEY_V46_GESTURE_EDGE_EXCLUSION, 0)
+        set(value) = prefs.edit().putInt(KEY_V46_GESTURE_EDGE_EXCLUSION, value.coerceIn(0, 50)).apply()
+    var v46DanmakuRowSpacing: Int
+        get() = prefs.getInt(KEY_V46_DANMAKU_ROW_SPACING, 0)
+        set(value) = prefs.edit().putInt(KEY_V46_DANMAKU_ROW_SPACING, value.coerceIn(0, 20)).apply()
+    var v46CachePrefetchOnWifi: Boolean
+        get() = prefs.getBoolean(KEY_V46_CACHE_PREFETCH_ON_WIFI, false)
+        set(value) = prefs.edit().putBoolean(KEY_V46_CACHE_PREFETCH_ON_WIFI, value).apply()
+    var v46ProgressBarThumbSize: Int
+        get() = prefs.getInt(KEY_V46_PROGRESS_BAR_THUMB_SIZE, 0)
+        set(value) = prefs.edit().putInt(KEY_V46_PROGRESS_BAR_THUMB_SIZE, value.coerceIn(0, 20)).apply()
+    var v46DanmakuSendConfirmDialog: Boolean
+        get() = prefs.getBoolean(KEY_V46_DANMAKU_SEND_CONFIRM_DIALOG, true)
+        set(value) = prefs.edit().putBoolean(KEY_V46_DANMAKU_SEND_CONFIRM_DIALOG, value).apply()
+    var v46ColorWhiteBalance: Int
+        get() = prefs.getInt(KEY_V46_COLOR_WHITE_BALANCE, 0)
+        set(value) = prefs.edit().putInt(KEY_V46_COLOR_WHITE_BALANCE, value.coerceIn(-100, 100)).apply()
+    var v46VolumeLimitThreshold: Int
+        get() = prefs.getInt(KEY_V46_VOLUME_LIMIT_THRESHOLD, 100)
+        set(value) = prefs.edit().putInt(KEY_V46_VOLUME_LIMIT_THRESHOLD, value.coerceIn(50, 150)).apply()
+    var v46DanmakuBgPadding: Int
+        get() = prefs.getInt(KEY_V46_DANMAKU_BG_PADDING, 0)
+        set(value) = prefs.edit().putInt(KEY_V46_DANMAKU_BG_PADDING, value.coerceIn(0, 20)).apply()
+    var v46CastVideoCodec: Int
+        get() = prefs.getInt(KEY_V46_CAST_VIDEO_CODEC, 0)
+        set(value) = prefs.edit().putInt(KEY_V46_CAST_VIDEO_CODEC, value.coerceIn(0, 3)).apply()
+
+    // ===== v47.x =====
+    var v47PlaybackResumePrompt: Boolean
+        get() = prefs.getBoolean(KEY_V47_PLAYBACK_RESUME_PROMPT, true)
+        set(value) = prefs.edit().putBoolean(KEY_V47_PLAYBACK_RESUME_PROMPT, value).apply()
+    var v47DanmakuFontSpacing: Int
+        get() = prefs.getInt(KEY_V47_DANMAKU_FONT_SPACING, 0)
+        set(value) = prefs.edit().putInt(KEY_V47_DANMAKU_FONT_SPACING, value.coerceIn(0, 10)).apply()
+    var v47ColorExposureCompensation: Int
+        get() = prefs.getInt(KEY_V47_COLOR_EXPOSURE_COMPENSATION, 0)
+        set(value) = prefs.edit().putInt(KEY_V47_COLOR_EXPOSURE_COMPENSATION, value.coerceIn(-100, 100)).apply()
+    var v47VolumeLoudnessEnhancer: Int
+        get() = prefs.getInt(KEY_V47_VOLUME_LOUDNESS_ENHANCER, 0)
+        set(value) = prefs.edit().putInt(KEY_V47_VOLUME_LOUDNESS_ENHANCER, value.coerceIn(0, 100)).apply()
+    var v47DanmakuStrokeBlur: Int
+        get() = prefs.getInt(KEY_V47_DANMAKU_STROKE_BLUR, 0)
+        set(value) = prefs.edit().putInt(KEY_V47_DANMAKU_STROKE_BLUR, value.coerceIn(0, 10)).apply()
+    var v47CastAudioBitrate: Int
+        get() = prefs.getInt(KEY_V47_CAST_AUDIO_BITRATE, 0)
+        set(value) = prefs.edit().putInt(KEY_V47_CAST_AUDIO_BITRATE, value.coerceIn(0, 5)).apply()
+    var v47GestureDeadZone: Int
+        get() = prefs.getInt(KEY_V47_GESTURE_DEAD_ZONE, 0)
+        set(value) = prefs.edit().putInt(KEY_V47_GESTURE_DEAD_ZONE, value.coerceIn(0, 30)).apply()
+    var v47DanmakuMaxLines: Int
+        get() = prefs.getInt(KEY_V47_DANMAKU_MAX_LINES, 0)
+        set(value) = prefs.edit().putInt(KEY_V47_DANMAKU_MAX_LINES, value.coerceIn(0, 50)).apply()
+    var v47CacheMaxSizeMb: Int
+        get() = prefs.getInt(KEY_V47_CACHE_MAX_SIZE_MB, 0)
+        set(value) = prefs.edit().putInt(KEY_V47_CACHE_MAX_SIZE_MB, value.coerceIn(0, 2048)).apply()
+    var v47ProgressBarSeekPreview: Boolean
+        get() = prefs.getBoolean(KEY_V47_PROGRESS_BAR_SEEK_PREVIEW, false)
+        set(value) = prefs.edit().putBoolean(KEY_V47_PROGRESS_BAR_SEEK_PREVIEW, value).apply()
+    var v47DanmakuHighlightMention: Boolean
+        get() = prefs.getBoolean(KEY_V47_DANMAKU_HIGHLIGHT_MENTION, false)
+        set(value) = prefs.edit().putBoolean(KEY_V47_DANMAKU_HIGHLIGHT_MENTION, value).apply()
+    var v47ColorTint: Int
+        get() = prefs.getInt(KEY_V47_COLOR_TINT, 0)
+        set(value) = prefs.edit().putInt(KEY_V47_COLOR_TINT, value.coerceIn(0, 5)).apply()
+    var v47VolumeChannelBalance: Int
+        get() = prefs.getInt(KEY_V47_VOLUME_CHANNEL_BALANCE, 0)
+        set(value) = prefs.edit().putInt(KEY_V47_VOLUME_CHANNEL_BALANCE, value.coerceIn(-50, 50)).apply()
+    var v47DanmakuBgBorderColor: Int
+        get() = prefs.getInt(KEY_V47_DANMAKU_BG_BORDER_COLOR, 0)
+        set(value) = prefs.edit().putInt(KEY_V47_DANMAKU_BG_BORDER_COLOR, value.coerceIn(0, 10)).apply()
+    var v47CastSubtitleEnabled: Boolean
+        get() = prefs.getBoolean(KEY_V47_CAST_SUBTITLE_ENABLED, false)
+        set(value) = prefs.edit().putBoolean(KEY_V47_CAST_SUBTITLE_ENABLED, value).apply()
+
+    // ===== v48.x =====
+    var v48PlaybackAutoSkipIntro: Boolean
+        get() = prefs.getBoolean(KEY_V48_PLAYBACK_AUTO_SKIP_INTRO, false)
+        set(value) = prefs.edit().putBoolean(KEY_V48_PLAYBACK_AUTO_SKIP_INTRO, value).apply()
+    var v48DanmakuFontLineHeight: Int
+        get() = prefs.getInt(KEY_V48_DANMAKU_FONT_LINE_HEIGHT, 0)
+        set(value) = prefs.edit().putInt(KEY_V48_DANMAKU_FONT_LINE_HEIGHT, value.coerceIn(0, 20)).apply()
+    var v48ColorBlackLevel: Int
+        get() = prefs.getInt(KEY_V48_COLOR_BLACK_LEVEL, 0)
+        set(value) = prefs.edit().putInt(KEY_V48_COLOR_BLACK_LEVEL, value.coerceIn(-100, 100)).apply()
+    var v48VolumeBassBoost: Int
+        get() = prefs.getInt(KEY_V48_VOLUME_BASS_BOOST, 0)
+        set(value) = prefs.edit().putInt(KEY_V48_VOLUME_BASS_BOOST, value.coerceIn(0, 100)).apply()
+    var v48DanmakuSendMaxLength: Int
+        get() = prefs.getInt(KEY_V48_DANMAKU_SEND_MAX_LENGTH, 100)
+        set(value) = prefs.edit().putInt(KEY_V48_DANMAKU_SEND_MAX_LENGTH, value.coerceIn(20, 200)).apply()
+    var v48CastResolutionAuto: Boolean
+        get() = prefs.getBoolean(KEY_V48_CAST_RESOLUTION_AUTO, true)
+        set(value) = prefs.edit().putBoolean(KEY_V48_CAST_RESOLUTION_AUTO, value).apply()
+    var v48GestureTapFeedback: Boolean
+        get() = prefs.getBoolean(KEY_V48_GESTURE_TAP_FEEDBACK, false)
+        set(value) = prefs.edit().putBoolean(KEY_V48_GESTURE_TAP_FEEDBACK, value).apply()
+    var v48DanmakuFilterRegex: Boolean
+        get() = prefs.getBoolean(KEY_V48_DANMAKU_FILTER_REGEX, false)
+        set(value) = prefs.edit().putBoolean(KEY_V48_DANMAKU_FILTER_REGEX, value).apply()
+    var v48CacheCleanupInterval: Int
+        get() = prefs.getInt(KEY_V48_CACHE_CLEANUP_INTERVAL, 0)
+        set(value) = prefs.edit().putInt(KEY_V48_CACHE_CLEANUP_INTERVAL, value.coerceIn(0, 5)).apply()
+    var v48ProgressBarTouchArea: Int
+        get() = prefs.getInt(KEY_V48_PROGRESS_BAR_TOUCH_AREA, 0)
+        set(value) = prefs.edit().putInt(KEY_V48_PROGRESS_BAR_TOUCH_AREA, value.coerceIn(0, 30)).apply()
+    var v48DanmakuFontSizeAdaptive: Boolean
+        get() = prefs.getBoolean(KEY_V48_DANMAKU_FONT_SIZE_ADAPTIVE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V48_DANMAKU_FONT_SIZE_ADAPTIVE, value).apply()
+    var v48ColorWhiteLevel: Int
+        get() = prefs.getInt(KEY_V48_COLOR_WHITE_LEVEL, 0)
+        set(value) = prefs.edit().putInt(KEY_V48_COLOR_WHITE_LEVEL, value.coerceIn(-100, 100)).apply()
+    var v48VolumeVirtualizer: Int
+        get() = prefs.getInt(KEY_V48_VOLUME_VIRTUALIZER, 0)
+        set(value) = prefs.edit().putInt(KEY_V48_VOLUME_VIRTUALIZER, value.coerceIn(0, 100)).apply()
+    var v48DanmakuBgShadowSize: Int
+        get() = prefs.getInt(KEY_V48_DANMAKU_BG_SHADOW_SIZE, 0)
+        set(value) = prefs.edit().putInt(KEY_V48_DANMAKU_BG_SHADOW_SIZE, value.coerceIn(0, 10)).apply()
+    var v48CastMirrorQuality: Int
+        get() = prefs.getInt(KEY_V48_CAST_MIRROR_QUALITY, 0)
+        set(value) = prefs.edit().putInt(KEY_V48_CAST_MIRROR_QUALITY, value.coerceIn(0, 3)).apply()
+
+    // ===== v49.x =====
+    var v49PlaybackAutoSkipOutro: Boolean
+        get() = prefs.getBoolean(KEY_V49_PLAYBACK_AUTO_SKIP_OUTRO, false)
+        set(value) = prefs.edit().putBoolean(KEY_V49_PLAYBACK_AUTO_SKIP_OUTRO, value).apply()
+    var v49DanmakuFontLetterSpacing: Int
+        get() = prefs.getInt(KEY_V49_DANMAKU_FONT_LETTER_SPACING, 0)
+        set(value) = prefs.edit().putInt(KEY_V49_DANMAKU_FONT_LETTER_SPACING, value.coerceIn(0, 10)).apply()
+    var v49ColorHighlightRecovery: Int
+        get() = prefs.getInt(KEY_V49_COLOR_HIGHLIGHT_RECOVERY, 0)
+        set(value) = prefs.edit().putInt(KEY_V49_COLOR_HIGHLIGHT_RECOVERY, value.coerceIn(0, 5)).apply()
+    var v49VolumeTrebleBoost: Int
+        get() = prefs.getInt(KEY_V49_VOLUME_TREBLE_BOOST, 0)
+        set(value) = prefs.edit().putInt(KEY_V49_VOLUME_TREBLE_BOOST, value.coerceIn(0, 100)).apply()
+    var v49DanmakuSendFontSize: Int
+        get() = prefs.getInt(KEY_V49_DANMAKU_SEND_FONT_SIZE, 25)
+        set(value) = prefs.edit().putInt(KEY_V49_DANMAKU_SEND_FONT_SIZE, value.coerceIn(12, 40)).apply()
+    var v49CastAudioSync: Int
+        get() = prefs.getInt(KEY_V49_CAST_AUDIO_SYNC, 0)
+        set(value) = prefs.edit().putInt(KEY_V49_CAST_AUDIO_SYNC, value.coerceIn(-500, 500)).apply()
+    var v49GestureLongPressAction: Int
+        get() = prefs.getInt(KEY_V49_GESTURE_LONG_PRESS_ACTION, 0)
+        set(value) = prefs.edit().putInt(KEY_V49_GESTURE_LONG_PRESS_ACTION, value.coerceIn(0, 5)).apply()
+    var v49DanmakuFilterDuplicate: Boolean
+        get() = prefs.getBoolean(KEY_V49_DANMAKU_FILTER_DUPLICATE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V49_DANMAKU_FILTER_DUPLICATE, value).apply()
+    var v49CacheAutoCleanupThreshold: Int
+        get() = prefs.getInt(KEY_V49_CACHE_AUTO_CLEANUP_THRESHOLD, 0)
+        set(value) = prefs.edit().putInt(KEY_V49_CACHE_AUTO_CLEANUP_THRESHOLD, value.coerceIn(0, 5)).apply()
+    var v49ProgressBarChapterMark: Boolean
+        get() = prefs.getBoolean(KEY_V49_PROGRESS_BAR_CHAPTER_MARK, false)
+        set(value) = prefs.edit().putBoolean(KEY_V49_PROGRESS_BAR_CHAPTER_MARK, value).apply()
+    var v49DanmakuHighlightKeyword: Boolean
+        get() = prefs.getBoolean(KEY_V49_DANMAKU_HIGHLIGHT_KEYWORD, false)
+        set(value) = prefs.edit().putBoolean(KEY_V49_DANMAKU_HIGHLIGHT_KEYWORD, value).apply()
+    var v49ColorShadowRecovery: Int
+        get() = prefs.getInt(KEY_V49_COLOR_SHADOW_RECOVERY, 0)
+        set(value) = prefs.edit().putInt(KEY_V49_COLOR_SHADOW_RECOVERY, value.coerceIn(0, 5)).apply()
+    var v49VolumeReplayGain: Int
+        get() = prefs.getInt(KEY_V49_VOLUME_REPLAY_GAIN, 0)
+        set(value) = prefs.edit().putInt(KEY_V49_VOLUME_REPLAY_GAIN, value.coerceIn(-12, 12)).apply()
+    var v49DanmakuBgGradientAngle: Int
+        get() = prefs.getInt(KEY_V49_DANMAKU_BG_GRADIENT_ANGLE, 0)
+        set(value) = prefs.edit().putInt(KEY_V49_DANMAKU_BG_GRADIENT_ANGLE, value.coerceIn(0, 360)).apply()
+    var v49CastAutoReconnect: Boolean
+        get() = prefs.getBoolean(KEY_V49_CAST_AUTO_RECONNECT, false)
+        set(value) = prefs.edit().putBoolean(KEY_V49_CAST_AUTO_RECONNECT, value).apply()
+
+    // ===== v50.x =====
+    var v50PlaybackAutoNextEpisode: Boolean
+        get() = prefs.getBoolean(KEY_V50_PLAYBACK_AUTO_NEXT_EPISODE, true)
+        set(value) = prefs.edit().putBoolean(KEY_V50_PLAYBACK_AUTO_NEXT_EPISODE, value).apply()
+    var v50DanmakuFontShadowSize: Int
+        get() = prefs.getInt(KEY_V50_DANMAKU_FONT_SHADOW_SIZE, 0)
+        set(value) = prefs.edit().putInt(KEY_V50_DANMAKU_FONT_SHADOW_SIZE, value.coerceIn(0, 10)).apply()
+    var v50ColorMidtoneAdjust: Int
+        get() = prefs.getInt(KEY_V50_COLOR_MIDTONE_ADJUST, 0)
+        set(value) = prefs.edit().putInt(KEY_V50_COLOR_MIDTONE_ADJUST, value.coerceIn(-100, 100)).apply()
+    var v50VolumeAmbientMode: Int
+        get() = prefs.getInt(KEY_VOLUME_AMBIENT_MODE, 0)
+        set(value) = prefs.edit().putInt(KEY_VOLUME_AMBIENT_MODE, value.coerceIn(0, 3)).apply()
+    var v50DanmakuSendColorCustom: Int
+        get() = prefs.getInt(KEY_V50_DANMAKU_SEND_COLOR_CUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V50_DANMAKU_SEND_COLOR_CUSTOM, value.coerceIn(0, 10)).apply()
+    var v50CastVolumeSync: Boolean
+        get() = prefs.getBoolean(KEY_V50_CAST_VOLUME_SYNC, false)
+        set(value) = prefs.edit().putBoolean(KEY_V50_CAST_VOLUME_SYNC, value).apply()
+    var v50GesturePinchZoom: Boolean
+        get() = prefs.getBoolean(KEY_V50_GESTURE_PINCH_ZOOM, false)
+        set(value) = prefs.edit().putBoolean(KEY_V50_GESTURE_PINCH_ZOOM, value).apply()
+    var v50DanmakuFilterColor: Int
+        get() = prefs.getInt(KEY_V50_DANMAKU_FILTER_COLOR, 0)
+        set(value) = prefs.edit().putInt(KEY_V50_DANMAKU_FILTER_COLOR, value.coerceIn(0, 10)).apply()
+    var v50CachePrebufferSeconds: Int
+        get() = prefs.getInt(KEY_V50_CACHE_PREBUFFER_SECONDS, 0)
+        set(value) = prefs.edit().putInt(KEY_V50_CACHE_PREBUFFER_SECONDS, value.coerceIn(0, 30)).apply()
+    var v50ProgressBarDoubleTapSeek: Int
+        get() = prefs.getInt(KEY_V50_PROGRESS_BAR_DOUBLE_TAP_SEEK, 10)
+        set(value) = prefs.edit().putInt(KEY_V50_PROGRESS_BAR_DOUBLE_TAP_SEEK, value.coerceIn(5, 60)).apply()
+    var v50DanmakuFontSizeAuto: Boolean
+        get() = prefs.getBoolean(KEY_V50_DANMAKU_FONT_SIZE_AUTO, false)
+        set(value) = prefs.edit().putBoolean(KEY_V50_DANMAKU_FONT_SIZE_AUTO, value).apply()
+    var v50ColorDynamicRange: Int
+        get() = prefs.getInt(KEY_V50_COLOR_DYNAMIC_RANGE, 0)
+        set(value) = prefs.edit().putInt(KEY_V50_COLOR_DYNAMIC_RANGE, value.coerceIn(0, 5)).apply()
+    var v50VolumeNightMode: Boolean
+        get() = prefs.getBoolean(KEY_V50_VOLUME_NIGHT_MODE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V50_VOLUME_NIGHT_MODE, value).apply()
+    var v50DanmakuBgBlurRadius: Int
+        get() = prefs.getInt(KEY_V50_DANMAKU_BG_BLUR_RADIUS, 0)
+        set(value) = prefs.edit().putInt(KEY_V50_DANMAKU_BG_BLUR_RADIUS, value.coerceIn(0, 20)).apply()
+    var v50CastAutoDiscover: Boolean
+        get() = prefs.getBoolean(KEY_V50_CAST_AUTO_DISCOVER, false)
+        set(value) = prefs.edit().putBoolean(KEY_V50_CAST_AUTO_DISCOVER, value).apply()
+
     // v13.10: 暗角效果
     var vignetteIntensity: Int
         get() = prefs.getInt(KEY_VIGNETTE_INTENSITY, 0)
@@ -4880,6 +5115,86 @@ class AppPrefs(context: Context) {
         private const val KEY_V45_DANMAKU_VIBRATION_INTENSITY_ENHANCED = "v45_danmaku_vibration_intensity_enhanced"
         private const val KEY_V45_CACHE_SMART_CLEANUP_ENHANCED = "v45_cache_smart_cleanup_enhanced"
         private const val KEY_V45_PROGRESS_BAR_BUFFER_ENHANCED = "v45_progress_bar_buffer_enhanced"
+        // ===== v46.x KEY =====
+        private const val KEY_V46_PLAYBACK_LOOP_MEMORY = "v46_playback_loop_memory"
+        private const val KEY_V46_DANMAKU_FONT_WEIGHT = "v46_danmaku_font_weight"
+        private const val KEY_V46_COLOR_AUTO_GAMMA = "v46_color_auto_gamma"
+        private const val KEY_V46_VOLUME_NORMALIZATION = "v46_volume_normalization"
+        private const val KEY_V46_DANMAKU_STROKE_OFFSET = "v46_danmaku_stroke_offset"
+        private const val KEY_V46_CAST_COLOR_TEMPERATURE = "v46_cast_color_temperature"
+        private const val KEY_V46_GESTURE_EDGE_EXCLUSION = "v46_gesture_edge_exclusion"
+        private const val KEY_V46_DANMAKU_ROW_SPACING = "v46_danmaku_row_spacing"
+        private const val KEY_V46_CACHE_PREFETCH_ON_WIFI = "v46_cache_prefetch_on_wifi"
+        private const val KEY_V46_PROGRESS_BAR_THUMB_SIZE = "v46_progress_bar_thumb_size"
+        private const val KEY_V46_DANMAKU_SEND_CONFIRM_DIALOG = "v46_danmaku_send_confirm_dialog"
+        private const val KEY_V46_COLOR_WHITE_BALANCE = "v46_color_white_balance"
+        private const val KEY_V46_VOLUME_LIMIT_THRESHOLD = "v46_volume_limit_threshold"
+        private const val KEY_V46_DANMAKU_BG_PADDING = "v46_danmaku_bg_padding"
+        private const val KEY_V46_CAST_VIDEO_CODEC = "v46_cast_video_codec"
+        // ===== v47.x KEY =====
+        private const val KEY_V47_PLAYBACK_RESUME_PROMPT = "v47_playback_resume_prompt"
+        private const val KEY_V47_DANMAKU_FONT_SPACING = "v47_danmaku_font_spacing"
+        private const val KEY_V47_COLOR_EXPOSURE_COMPENSATION = "v47_color_exposure_compensation"
+        private const val KEY_V47_VOLUME_LOUDNESS_ENHANCER = "v47_volume_loudness_enhancer"
+        private const val KEY_V47_DANMAKU_STROKE_BLUR = "v47_danmaku_stroke_blur"
+        private const val KEY_V47_CAST_AUDIO_BITRATE = "v47_cast_audio_bitrate"
+        private const val KEY_V47_GESTURE_DEAD_ZONE = "v47_gesture_dead_zone"
+        private const val KEY_V47_DANMAKU_MAX_LINES = "v47_danmaku_max_lines"
+        private const val KEY_V47_CACHE_MAX_SIZE_MB = "v47_cache_max_size_mb"
+        private const val KEY_V47_PROGRESS_BAR_SEEK_PREVIEW = "v47_progress_bar_seek_preview"
+        private const val KEY_V47_DANMAKU_HIGHLIGHT_MENTION = "v47_danmaku_highlight_mention"
+        private const val KEY_V47_COLOR_TINT = "v47_color_tint"
+        private const val KEY_V47_VOLUME_CHANNEL_BALANCE = "v47_volume_channel_balance"
+        private const val KEY_V47_DANMAKU_BG_BORDER_COLOR = "v47_danmaku_bg_border_color"
+        private const val KEY_V47_CAST_SUBTITLE_ENABLED = "v47_cast_subtitle_enabled"
+        // ===== v48.x KEY =====
+        private const val KEY_V48_PLAYBACK_AUTO_SKIP_INTRO = "v48_playback_auto_skip_intro"
+        private const val KEY_V48_DANMAKU_FONT_LINE_HEIGHT = "v48_danmaku_font_line_height"
+        private const val KEY_V48_COLOR_BLACK_LEVEL = "v48_color_black_level"
+        private const val KEY_V48_VOLUME_BASS_BOOST = "v48_volume_bass_boost"
+        private const val KEY_V48_DANMAKU_SEND_MAX_LENGTH = "v48_danmaku_send_max_length"
+        private const val KEY_V48_CAST_RESOLUTION_AUTO = "v48_cast_resolution_auto"
+        private const val KEY_V48_GESTURE_TAP_FEEDBACK = "v48_gesture_tap_feedback"
+        private const val KEY_V48_DANMAKU_FILTER_REGEX = "v48_danmaku_filter_regex"
+        private const val KEY_V48_CACHE_CLEANUP_INTERVAL = "v48_cache_cleanup_interval"
+        private const val KEY_V48_PROGRESS_BAR_TOUCH_AREA = "v48_progress_bar_touch_area"
+        private const val KEY_V48_DANMAKU_FONT_SIZE_ADAPTIVE = "v48_danmaku_font_size_adaptive"
+        private const val KEY_V48_COLOR_WHITE_LEVEL = "v48_color_white_level"
+        private const val KEY_V48_VOLUME_VIRTUALIZER = "v48_volume_virtualizer"
+        private const val KEY_V48_DANMAKU_BG_SHADOW_SIZE = "v48_danmaku_bg_shadow_size"
+        private const val KEY_V48_CAST_MIRROR_QUALITY = "v48_cast_mirror_quality"
+        // ===== v49.x KEY =====
+        private const val KEY_V49_PLAYBACK_AUTO_SKIP_OUTRO = "v49_playback_auto_skip_outro"
+        private const val KEY_V49_DANMAKU_FONT_LETTER_SPACING = "v49_danmaku_font_letter_spacing"
+        private const val KEY_V49_COLOR_HIGHLIGHT_RECOVERY = "v49_color_highlight_recovery"
+        private const val KEY_V49_VOLUME_TREBLE_BOOST = "v49_volume_treble_boost"
+        private const val KEY_V49_DANMAKU_SEND_FONT_SIZE = "v49_danmaku_send_font_size"
+        private const val KEY_V49_CAST_AUDIO_SYNC = "v49_cast_audio_sync"
+        private const val KEY_V49_GESTURE_LONG_PRESS_ACTION = "v49_gesture_long_press_action"
+        private const val KEY_V49_DANMAKU_FILTER_DUPLICATE = "v49_danmaku_filter_duplicate"
+        private const val KEY_V49_CACHE_AUTO_CLEANUP_THRESHOLD = "v49_cache_auto_cleanup_threshold"
+        private const val KEY_V49_PROGRESS_BAR_CHAPTER_MARK = "v49_progress_bar_chapter_mark"
+        private const val KEY_V49_DANMAKU_HIGHLIGHT_KEYWORD = "v49_danmaku_highlight_keyword"
+        private const val KEY_V49_COLOR_SHADOW_RECOVERY = "v49_color_shadow_recovery"
+        private const val KEY_V49_VOLUME_REPLAY_GAIN = "v49_volume_replay_gain"
+        private const val KEY_V49_DANMAKU_BG_GRADIENT_ANGLE = "v49_danmaku_bg_gradient_angle"
+        private const val KEY_V49_CAST_AUTO_RECONNECT = "v49_cast_auto_reconnect"
+        // ===== v50.x KEY =====
+        private const val KEY_V50_PLAYBACK_AUTO_NEXT_EPISODE = "v50_playback_auto_next_episode"
+        private const val KEY_V50_DANMAKU_FONT_SHADOW_SIZE = "v50_danmaku_font_shadow_size"
+        private const val KEY_V50_COLOR_MIDTONE_ADJUST = "v50_color_midtone_adjust"
+        private const val KEY_VOLUME_AMBIENT_MODE = "v50_volume_ambient_mode"
+        private const val KEY_V50_DANMAKU_SEND_COLOR_CUSTOM = "v50_danmaku_send_color_custom"
+        private const val KEY_V50_CAST_VOLUME_SYNC = "v50_cast_volume_sync"
+        private const val KEY_V50_GESTURE_PINCH_ZOOM = "v50_gesture_pinch_zoom"
+        private const val KEY_V50_DANMAKU_FILTER_COLOR = "v50_danmaku_filter_color"
+        private const val KEY_V50_CACHE_PREBUFFER_SECONDS = "v50_cache_prebuffer_seconds"
+        private const val KEY_V50_PROGRESS_BAR_DOUBLE_TAP_SEEK = "v50_progress_bar_double_tap_seek"
+        private const val KEY_V50_DANMAKU_FONT_SIZE_AUTO = "v50_danmaku_font_size_auto"
+        private const val KEY_V50_COLOR_DYNAMIC_RANGE = "v50_color_dynamic_range"
+        private const val KEY_V50_VOLUME_NIGHT_MODE = "v50_volume_night_mode"
+        private const val KEY_V50_DANMAKU_BG_BLUR_RADIUS = "v50_danmaku_bg_blur_radius"
+        private const val KEY_V50_CAST_AUTO_DISCOVER = "v50_cast_auto_discover"
         // v13.10: 暗角效果
         private const val KEY_VIGNETTE_INTENSITY = "vignette_intensity"
         // v13.10: 自定义文字水印
