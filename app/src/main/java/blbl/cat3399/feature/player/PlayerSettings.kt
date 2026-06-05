@@ -8739,3 +8739,647 @@ internal fun PlayerActivity.showV50CastAutoDiscoverToggle() {
     BiliClient.prefs.v50CastAutoDiscover = !current
     AppToast.show(this, "Cast Auto Discover: ${if (!current) "ON" else "OFF"}")
 }
+// v51.1: 自动跳片头
+// v51.1: 自动跳片头
+internal fun PlayerActivity.showv51PlaybackAutoSkipIntroToggle() {
+    val current = BiliClient.prefs.v51PlaybackAutoSkipIntro
+    BiliClient.prefs.v51PlaybackAutoSkipIntro = !current
+    AppToast.show(this, "Playback Auto Skip Intro: ${if (!current) "ON" else "OFF"}")
+}
+
+// v51.2: 弹幕字体描边宽度
+// v51.2: 弹幕字体描边宽度
+internal fun PlayerActivity.showv51DanmakuFontOutlineWidthDialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v51DanmakuFontOutlineWidth).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Font Outline Width", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v51DanmakuFontOutlineWidth = value; AppToast.show(this, "Danmaku Font Outline Width: ${labels[options.indexOf(value)]}") }
+}
+
+// v51.3: 视频暗部调整
+// v51.3: 视频暗部调整
+internal fun PlayerActivity.showv51ColorShadowAdjustDialog() {
+    val options = listOf(-100,-80,-60,-40,-20,0,20,40,60,80,100)
+    val labels = listOf("-100","-80","-60","-40","-20","0","20","40","60","80","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v51ColorShadowAdjust).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Shadow Adjust", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v51ColorShadowAdjust = value; AppToast.show(this, "Color Shadow Adjust: ${labels[options.indexOf(value)]}") }
+}
+
+// v51.4: 音量响度标准化
+// v51.4: 音量响度标准化
+internal fun PlayerActivity.showv51VolumeLoudnessNormalizeDialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v51VolumeLoudnessNormalize).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Loudness Normalize", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v51VolumeLoudnessNormalize = value; AppToast.show(this, "Volume Loudness Normalize: ${labels[options.indexOf(value)]}") }
+}
+
+// v51.5: 弹幕发送背景样式
+// v51.5: 弹幕发送背景样式
+internal fun PlayerActivity.showv51DanmakuSendBgStyleDialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v51DanmakuSendBgStyle).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Send Bg Style", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v51DanmakuSendBgStyle = value; AppToast.show(this, "Danmaku Send Bg Style: ${labels[options.indexOf(value)]}") }
+}
+
+// v51.6: 投射视频编码
+// v51.6: 投射视频编码
+internal fun PlayerActivity.showv51CastVideoCodecDialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v51CastVideoCodec).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Video Codec", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v51CastVideoCodec = value; AppToast.show(this, "Cast Video Codec: ${labels[options.indexOf(value)]}") }
+}
+
+// v51.7: 双击快退
+// v51.7: 双击快退
+internal fun PlayerActivity.showv51GestureDoubleTapRewindToggle() {
+    val current = BiliClient.prefs.v51GestureDoubleTapRewind
+    BiliClient.prefs.v51GestureDoubleTapRewind = !current
+    AppToast.show(this, "Gesture Double Tap Rewind: ${if (!current) "ON" else "OFF"}")
+}
+
+// v51.8: 弹幕过滤长度
+// v51.8: 弹幕过滤长度
+internal fun PlayerActivity.showv51DanmakuFilterLengthDialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v51DanmakuFilterLength).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Filter Length", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v51DanmakuFilterLength = value; AppToast.show(this, "Danmaku Filter Length: ${labels[options.indexOf(value)]}") }
+}
+
+// v51.9: 缓存最大大小MB
+// v51.9: 缓存最大大小MB
+internal fun PlayerActivity.showv51CacheMaxSizeMbDialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v51CacheMaxSizeMb).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Max Size Mb", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v51CacheMaxSizeMb = value; AppToast.show(this, "Cache Max Size Mb: ${labels[options.indexOf(value)]}") }
+}
+
+// v51.10: 进度条滑动速度
+// v51.10: 进度条滑动速度
+internal fun PlayerActivity.showv51ProgressBarScrubSpeedDialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v51ProgressBarScrubSpeed).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Progress Bar Scrub Speed", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v51ProgressBarScrubSpeed = value; AppToast.show(this, "Progress Bar Scrub Speed: ${labels[options.indexOf(value)]}") }
+}
+
+// v51.11: 弹幕字间距
+// v51.11: 弹幕字间距
+internal fun PlayerActivity.showv51DanmakuFontSpacingDialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v51DanmakuFontSpacing).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Font Spacing", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v51DanmakuFontSpacing = value; AppToast.show(this, "Danmaku Font Spacing: ${labels[options.indexOf(value)]}") }
+}
+
+// v51.12: 伽马校正
+// v51.12: 伽马校正
+internal fun PlayerActivity.showv51ColorGammaCorrectionDialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v51ColorGammaCorrection).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Gamma Correction", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v51ColorGammaCorrection = value; AppToast.show(this, "Color Gamma Correction: ${labels[options.indexOf(value)]}") }
+}
+
+// v51.13: 低音减弱
+// v51.13: 低音减弱
+internal fun PlayerActivity.showv51VolumeBassReduceToggle() {
+    val current = BiliClient.prefs.v51VolumeBassReduce
+    BiliClient.prefs.v51VolumeBassReduce = !current
+    AppToast.show(this, "Volume Bass Reduce: ${if (!current) "ON" else "OFF"}")
+}
+
+// v51.14: 弹幕背景边框颜色
+// v51.14: 弹幕背景边框颜色
+internal fun PlayerActivity.showv51DanmakuBgBorderColorDialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v51DanmakuBgBorderColor).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Bg Border Color", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v51DanmakuBgBorderColor = value; AppToast.show(this, "Danmaku Bg Border Color: ${labels[options.indexOf(value)]}") }
+}
+
+// v51.15: 投射字幕同步延迟
+// v51.15: 投射字幕同步延迟
+internal fun PlayerActivity.showv51CastSubtitleSyncDialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v51CastSubtitleSync).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Subtitle Sync", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v51CastSubtitleSync = value; AppToast.show(this, "Cast Subtitle Sync: ${labels[options.indexOf(value)]}") }
+}
+
+// v52.1: 自动跳过离题内容
+// v52.1: 自动跳过离题内容
+internal fun PlayerActivity.showv52PlaybackAutoSkipFillerToggle() {
+    val current = BiliClient.prefs.v52PlaybackAutoSkipFiller
+    BiliClient.prefs.v52PlaybackAutoSkipFiller = !current
+    AppToast.show(this, "Playback Auto Skip Filler: ${if (!current) "ON" else "OFF"}")
+}
+
+// v52.2: 弹幕字体行高
+// v52.2: 弹幕字体行高
+internal fun PlayerActivity.showv52DanmakuFontLineHeightDialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20")
+    val currentIndex = options.indexOf(BiliClient.prefs.v52DanmakuFontLineHeight).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Font Line Height", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v52DanmakuFontLineHeight = value; AppToast.show(this, "Danmaku Font Line Height: ${labels[options.indexOf(value)]}") }
+}
+
+// v52.3: 色温
+// v52.3: 色温
+internal fun PlayerActivity.showv52ColorTemperatureDialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v52ColorTemperature).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Temperature", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v52ColorTemperature = value; AppToast.show(this, "Color Temperature: ${labels[options.indexOf(value)]}") }
+}
+
+// v52.4: 声道交换
+// v52.4: 声道交换
+internal fun PlayerActivity.showv52VolumeChannelSwapToggle() {
+    val current = BiliClient.prefs.v52VolumeChannelSwap
+    BiliClient.prefs.v52VolumeChannelSwap = !current
+    AppToast.show(this, "Volume Channel Swap: ${if (!current) "ON" else "OFF"}")
+}
+
+// v52.5: 弹幕发送动画样式
+// v52.5: 弹幕发送动画样式
+internal fun PlayerActivity.showv52DanmakuSendAnimStyleDialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v52DanmakuSendAnimStyle).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Send Anim Style", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v52DanmakuSendAnimStyle = value; AppToast.show(this, "Danmaku Send Anim Style: ${labels[options.indexOf(value)]}") }
+}
+
+// v52.6: 投射分辨率增强
+// v52.6: 投射分辨率增强
+internal fun PlayerActivity.showv52CastResolutionEnhanceDialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v52CastResolutionEnhance).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Resolution Enhance", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v52CastResolutionEnhance = value; AppToast.show(this, "Cast Resolution Enhance: ${labels[options.indexOf(value)]}") }
+}
+
+// v52.7: 滑动快进快退
+// v52.7: 滑动快进快退
+internal fun PlayerActivity.showv52GestureSwipeSeekToggle() {
+    val current = BiliClient.prefs.v52GestureSwipeSeek
+    BiliClient.prefs.v52GestureSwipeSeek = !current
+    AppToast.show(this, "Gesture Swipe Seek: ${if (!current) "ON" else "OFF"}")
+}
+
+// v52.8: 弹幕过滤速度
+// v52.8: 弹幕过滤速度
+internal fun PlayerActivity.showv52DanmakuFilterSpeedDialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v52DanmakuFilterSpeed).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Filter Speed", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v52DanmakuFilterSpeed = value; AppToast.show(this, "Danmaku Filter Speed: ${labels[options.indexOf(value)]}") }
+}
+
+// v52.9: 缓存预取大小
+// v52.9: 缓存预取大小
+internal fun PlayerActivity.showv52CachePrefetchSizeDialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v52CachePrefetchSize).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Prefetch Size", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v52CachePrefetchSize = value; AppToast.show(this, "Cache Prefetch Size: ${labels[options.indexOf(value)]}") }
+}
+
+// v52.10: 进度条章节标记
+// v52.10: 进度条章节标记
+internal fun PlayerActivity.showv52ProgressBarChaptersToggle() {
+    val current = BiliClient.prefs.v52ProgressBarChapters
+    BiliClient.prefs.v52ProgressBarChapters = !current
+    AppToast.show(this, "Progress Bar Chapters: ${if (!current) "ON" else "OFF"}")
+}
+
+// v52.11: 弹幕字体阴影模糊
+// v52.11: 弹幕字体阴影模糊
+internal fun PlayerActivity.showv52DanmakuFontShadowBlurDialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v52DanmakuFontShadowBlur).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Font Shadow Blur", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v52DanmakuFontShadowBlur = value; AppToast.show(this, "Danmaku Font Shadow Blur: ${labels[options.indexOf(value)]}") }
+}
+
+// v52.12: 自动饱和度
+// v52.12: 自动饱和度
+internal fun PlayerActivity.showv52ColorSaturationAutoToggle() {
+    val current = BiliClient.prefs.v52ColorSaturationAuto
+    BiliClient.prefs.v52ColorSaturationAuto = !current
+    AppToast.show(this, "Color Saturation Auto: ${if (!current) "ON" else "OFF"}")
+}
+
+// v52.13: 音量淡入时间
+// v52.13: 音量淡入时间
+internal fun PlayerActivity.showv52VolumeFadeInMsDialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v52VolumeFadeInMs).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade In Ms", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v52VolumeFadeInMs = value; AppToast.show(this, "Volume Fade In Ms: ${labels[options.indexOf(value)]}") }
+}
+
+// v52.14: 弹幕背景渐变颜色
+// v52.14: 弹幕背景渐变颜色
+internal fun PlayerActivity.showv52DanmakuBgGradientColorDialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v52DanmakuBgGradientColor).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Bg Gradient Color", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v52DanmakuBgGradientColor = value; AppToast.show(this, "Danmaku Bg Gradient Color: ${labels[options.indexOf(value)]}") }
+}
+
+// v52.15: 投射延迟模式
+// v52.15: 投射延迟模式
+internal fun PlayerActivity.showv52CastLatencyModeDialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v52CastLatencyMode).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Latency Mode", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v52CastLatencyMode = value; AppToast.show(this, "Cast Latency Mode: ${labels[options.indexOf(value)]}") }
+}
+
+// v53.1: 自动暂停
+// v53.1: 自动暂停
+internal fun PlayerActivity.showv53PlaybackAutoPauseToggle() {
+    val current = BiliClient.prefs.v53PlaybackAutoPause
+    BiliClient.prefs.v53PlaybackAutoPause = !current
+    AppToast.show(this, "Playback Auto Pause: ${if (!current) "ON" else "OFF"}")
+}
+
+// v53.2: 弹幕斜体
+// v53.2: 弹幕斜体
+internal fun PlayerActivity.showv53DanmakuFontItalicToggle() {
+    val current = BiliClient.prefs.v53DanmakuFontItalic
+    BiliClient.prefs.v53DanmakuFontItalic = !current
+    AppToast.show(this, "Danmaku Font Italic: ${if (!current) "ON" else "OFF"}")
+}
+
+// v53.3: 自定义暗角强度
+// v53.3: 自定义暗角强度
+internal fun PlayerActivity.showv53ColorVignetteCustomDialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v53ColorVignetteCustom).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Vignette Custom", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v53ColorVignetteCustom = value; AppToast.show(this, "Color Vignette Custom: ${labels[options.indexOf(value)]}") }
+}
+
+// v53.4: 音量淡出时间
+// v53.4: 音量淡出时间
+internal fun PlayerActivity.showv53VolumeFadeOutMsDialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v53VolumeFadeOutMs).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade Out Ms", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v53VolumeFadeOutMs = value; AppToast.show(this, "Volume Fade Out Ms: ${labels[options.indexOf(value)]}") }
+}
+
+// v53.5: 弹幕发送时间戳
+// v53.5: 弹幕发送时间戳
+internal fun PlayerActivity.showv53DanmakuSendTimestampToggle() {
+    val current = BiliClient.prefs.v53DanmakuSendTimestamp
+    BiliClient.prefs.v53DanmakuSendTimestamp = !current
+    AppToast.show(this, "Danmaku Send Timestamp: ${if (!current) "ON" else "OFF"}")
+}
+
+// v53.6: 投射音频编码
+// v53.6: 投射音频编码
+internal fun PlayerActivity.showv53CastAudioCodecDialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v53CastAudioCodec).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Audio Codec", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v53CastAudioCodec = value; AppToast.show(this, "Cast Audio Codec: ${labels[options.indexOf(value)]}") }
+}
+
+// v53.7: 音量手势步进
+// v53.7: 音量手势步进
+internal fun PlayerActivity.showv53GestureVolumeStepDialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v53GestureVolumeStep).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Gesture Volume Step", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v53GestureVolumeStep = value; AppToast.show(this, "Gesture Volume Step: ${labels[options.indexOf(value)]}") }
+}
+
+// v53.8: 弹幕过滤类型
+// v53.8: 弹幕过滤类型
+internal fun PlayerActivity.showv53DanmakuFilterTypeDialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v53DanmakuFilterType).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Filter Type", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v53DanmakuFilterType = value; AppToast.show(this, "Danmaku Filter Type: ${labels[options.indexOf(value)]}") }
+}
+
+// v53.9: 缓存清理策略
+// v53.9: 缓存清理策略
+internal fun PlayerActivity.showv53CacheCleanupPolicyDialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v53CacheCleanupPolicy).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Cleanup Policy", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v53CacheCleanupPolicy = value; AppToast.show(this, "Cache Cleanup Policy: ${labels[options.indexOf(value)]}") }
+}
+
+// v53.10: 进度条吸附
+// v53.10: 进度条吸附
+internal fun PlayerActivity.showv53ProgressBarSnapToggle() {
+    val current = BiliClient.prefs.v53ProgressBarSnap
+    BiliClient.prefs.v53ProgressBarSnap = !current
+    AppToast.show(this, "Progress Bar Snap: ${if (!current) "ON" else "OFF"}")
+}
+
+// v53.11: 弹幕删除线
+// v53.11: 弹幕删除线
+internal fun PlayerActivity.showv53DanmakuFontStrikeToggle() {
+    val current = BiliClient.prefs.v53DanmakuFontStrike
+    BiliClient.prefs.v53DanmakuFontStrike = !current
+    AppToast.show(this, "Danmaku Font Strike: ${if (!current) "ON" else "OFF"}")
+}
+
+// v53.12: 黑电平
+// v53.12: 黑电平
+internal fun PlayerActivity.showv53ColorBlackLevelDialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v53ColorBlackLevel).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Black Level", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v53ColorBlackLevel = value; AppToast.show(this, "Color Black Level: ${labels[options.indexOf(value)]}") }
+}
+
+// v53.13: 自定义声道平衡
+// v53.13: 自定义声道平衡
+internal fun PlayerActivity.showv53VolumeBalanceCustomDialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v53VolumeBalanceCustom).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Balance Custom", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v53VolumeBalanceCustom = value; AppToast.show(this, "Volume Balance Custom: ${labels[options.indexOf(value)]}") }
+}
+
+// v53.14: 弹幕背景圆角
+// v53.14: 弹幕背景圆角
+internal fun PlayerActivity.showv53DanmakuBgRoundedToggle() {
+    val current = BiliClient.prefs.v53DanmakuBgRounded
+    BiliClient.prefs.v53DanmakuBgRounded = !current
+    AppToast.show(this, "Danmaku Bg Rounded: ${if (!current) "ON" else "OFF"}")
+}
+
+// v53.15: 投射自动暂停
+// v53.15: 投射自动暂停
+internal fun PlayerActivity.showv53CastAutoPauseToggle() {
+    val current = BiliClient.prefs.v53CastAutoPause
+    BiliClient.prefs.v53CastAutoPause = !current
+    AppToast.show(this, "Cast Auto Pause: ${if (!current) "ON" else "OFF"}")
+}
+
+// v54.1: 记忆恢复播放位置
+// v54.1: 记忆恢复播放位置
+internal fun PlayerActivity.showv54PlaybackResumePositionToggle() {
+    val current = BiliClient.prefs.v54PlaybackResumePosition
+    BiliClient.prefs.v54PlaybackResumePosition = !current
+    AppToast.show(this, "Playback Resume Position: ${if (!current) "ON" else "OFF"}")
+}
+
+// v54.2: 弹幕字号范围
+// v54.2: 弹幕字号范围
+internal fun PlayerActivity.showv54DanmakuFontSizeRangeDialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v54DanmakuFontSizeRange).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Font Size Range", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v54DanmakuFontSizeRange = value; AppToast.show(this, "Danmaku Font Size Range: ${labels[options.indexOf(value)]}") }
+}
+
+// v54.3: 亮度调节
+// v54.3: 亮度调节
+internal fun PlayerActivity.showv54ColorBrightnessDialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v54ColorBrightness).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Brightness", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v54ColorBrightness = value; AppToast.show(this, "Color Brightness: ${labels[options.indexOf(value)]}") }
+}
+
+// v54.4: 环绕声模式
+// v54.4: 环绕声模式
+internal fun PlayerActivity.showv54VolumeSurroundModeDialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v54VolumeSurroundMode).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Surround Mode", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v54VolumeSurroundMode = value; AppToast.show(this, "Volume Surround Mode: ${labels[options.indexOf(value)]}") }
+}
+
+// v54.5: 弹幕草稿箱
+// v54.5: 弹幕草稿箱
+internal fun PlayerActivity.showv54DanmakuSendDraftToggle() {
+    val current = BiliClient.prefs.v54DanmakuSendDraft
+    BiliClient.prefs.v54DanmakuSendDraft = !current
+    AppToast.show(this, "Danmaku Send Draft: ${if (!current) "ON" else "OFF"}")
+}
+
+// v54.6: 投射屏幕镜像
+// v54.6: 投射屏幕镜像
+internal fun PlayerActivity.showv54CastScreenMirrorToggle() {
+    val current = BiliClient.prefs.v54CastScreenMirror
+    BiliClient.prefs.v54CastScreenMirror = !current
+    AppToast.show(this, "Cast Screen Mirror: ${if (!current) "ON" else "OFF"}")
+}
+
+// v54.7: 亮度手势步进
+// v54.7: 亮度手势步进
+internal fun PlayerActivity.showv54GestureBrightnessStepDialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v54GestureBrightnessStep).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Gesture Brightness Step", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v54GestureBrightnessStep = value; AppToast.show(this, "Gesture Brightness Step: ${labels[options.indexOf(value)]}") }
+}
+
+// v54.8: 弹幕过滤用户
+// v54.8: 弹幕过滤用户
+internal fun PlayerActivity.showv54DanmakuFilterUserToggle() {
+    val current = BiliClient.prefs.v54DanmakuFilterUser
+    BiliClient.prefs.v54DanmakuFilterUser = !current
+    AppToast.show(this, "Danmaku Filter User: ${if (!current) "ON" else "OFF"}")
+}
+
+// v54.9: 唤醒预加载
+// v54.9: 唤醒预加载
+internal fun PlayerActivity.showv54CacheWakeupPrefetchToggle() {
+    val current = BiliClient.prefs.v54CacheWakeupPrefetch
+    BiliClient.prefs.v54CacheWakeupPrefetch = !current
+    AppToast.show(this, "Cache Wakeup Prefetch: ${if (!current) "ON" else "OFF"}")
+}
+
+// v54.10: 进度条震动反馈
+// v54.10: 进度条震动反馈
+internal fun PlayerActivity.showv54ProgressBarHapticToggle() {
+    val current = BiliClient.prefs.v54ProgressBarHaptic
+    BiliClient.prefs.v54ProgressBarHaptic = !current
+    AppToast.show(this, "Progress Bar Haptic: ${if (!current) "ON" else "OFF"}")
+}
+
+// v54.11: 弹幕下划线
+// v54.11: 弹幕下划线
+internal fun PlayerActivity.showv54DanmakuFontUnderlineToggle() {
+    val current = BiliClient.prefs.v54DanmakuFontUnderline
+    BiliClient.prefs.v54DanmakuFontUnderline = !current
+    AppToast.show(this, "Danmaku Font Underline: ${if (!current) "ON" else "OFF"}")
+}
+
+// v54.12: 对比度
+// v54.12: 对比度
+internal fun PlayerActivity.showv54ColorContrastDialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v54ColorContrast).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Contrast", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v54ColorContrast = value; AppToast.show(this, "Color Contrast: ${labels[options.indexOf(value)]}") }
+}
+
+// v54.13: 自动增益
+// v54.13: 自动增益
+internal fun PlayerActivity.showv54VolumeAutoGainToggle() {
+    val current = BiliClient.prefs.v54VolumeAutoGain
+    BiliClient.prefs.v54VolumeAutoGain = !current
+    AppToast.show(this, "Volume Auto Gain: ${if (!current) "ON" else "OFF"}")
+}
+
+// v54.14: 弹幕渐变方向
+// v54.14: 弹幕渐变方向
+internal fun PlayerActivity.showv54DanmakuBgGradientDirectionDialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v54DanmakuBgGradientDirection).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Bg Gradient Direction", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v54DanmakuBgGradientDirection = value; AppToast.show(this, "Danmaku Bg Gradient Direction: ${labels[options.indexOf(value)]}") }
+}
+
+// v54.15: 投射字幕语言
+// v54.15: 投射字幕语言
+internal fun PlayerActivity.showv54CastSubtitleLangDialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v54CastSubtitleLang).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Subtitle Lang", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v54CastSubtitleLang = value; AppToast.show(this, "Cast Subtitle Lang: ${labels[options.indexOf(value)]}") }
+}
+
+// v55.1: 自动恢复播放
+// v55.1: 自动恢复播放
+internal fun PlayerActivity.showv55PlaybackAutoResumeToggle() {
+    val current = BiliClient.prefs.v55PlaybackAutoResume
+    BiliClient.prefs.v55PlaybackAutoResume = !current
+    AppToast.show(this, "Playback Auto Resume: ${if (!current) "ON" else "OFF"}")
+}
+
+// v55.2: 弹幕等宽字体
+// v55.2: 弹幕等宽字体
+internal fun PlayerActivity.showv55DanmakuFontMonospaceToggle() {
+    val current = BiliClient.prefs.v55DanmakuFontMonospace
+    BiliClient.prefs.v55DanmakuFontMonospace = !current
+    AppToast.show(this, "Danmaku Font Monospace: ${if (!current) "ON" else "OFF"}")
+}
+
+// v55.3: 自动色调
+// v55.3: 自动色调
+internal fun PlayerActivity.showv55ColorHueAutoToggle() {
+    val current = BiliClient.prefs.v55ColorHueAuto
+    BiliClient.prefs.v55ColorHueAuto = !current
+    AppToast.show(this, "Color Hue Auto: ${if (!current) "ON" else "OFF"}")
+}
+
+// v55.4: 峰值限幅
+// v55.4: 峰值限幅
+internal fun PlayerActivity.showv55VolumePeakLimiterToggle() {
+    val current = BiliClient.prefs.v55VolumePeakLimiter
+    BiliClient.prefs.v55VolumePeakLimiter = !current
+    AppToast.show(this, "Volume Peak Limiter: ${if (!current) "ON" else "OFF"}")
+}
+
+// v55.5: 弹幕队列发送
+// v55.5: 弹幕队列发送
+internal fun PlayerActivity.showv55DanmakuSendQueueToggle() {
+    val current = BiliClient.prefs.v55DanmakuSendQueue
+    BiliClient.prefs.v55DanmakuSendQueue = !current
+    AppToast.show(this, "Danmaku Send Queue: ${if (!current) "ON" else "OFF"}")
+}
+
+// v55.6: 投射带宽限制
+// v55.6: 投射带宽限制
+internal fun PlayerActivity.showv55CastBandwidthLimitDialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v55CastBandwidthLimit).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Bandwidth Limit", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v55CastBandwidthLimit = value; AppToast.show(this, "Cast Bandwidth Limit: ${labels[options.indexOf(value)]}") }
+}
+
+// v55.7: 手势锁屏
+// v55.7: 手势锁屏
+internal fun PlayerActivity.showv55GestureLockScreenToggle() {
+    val current = BiliClient.prefs.v55GestureLockScreen
+    BiliClient.prefs.v55GestureLockScreen = !current
+    AppToast.show(this, "Gesture Lock Screen: ${if (!current) "ON" else "OFF"}")
+}
+
+// v55.8: 弹幕正则过滤
+// v55.8: 弹幕正则过滤
+internal fun PlayerActivity.showv55DanmakuFilterRegexToggle() {
+    val current = BiliClient.prefs.v55DanmakuFilterRegex
+    BiliClient.prefs.v55DanmakuFilterRegex = !current
+    AppToast.show(this, "Danmaku Filter Regex: ${if (!current) "ON" else "OFF"}")
+}
+
+// v55.9: 缓存网络策略
+// v55.9: 缓存网络策略
+internal fun PlayerActivity.showv55CacheNetworkPolicyDialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v55CacheNetworkPolicy).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Network Policy", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v55CacheNetworkPolicy = value; AppToast.show(this, "Cache Network Policy: ${labels[options.indexOf(value)]}") }
+}
+
+// v55.10: 进度条双击动作
+// v55.10: 进度条双击动作
+internal fun PlayerActivity.showv55ProgressBarDoubleTapActionDialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v55ProgressBarDoubleTapAction).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Progress Bar Double Tap Action", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v55ProgressBarDoubleTapAction = value; AppToast.show(this, "Progress Bar Double Tap Action: ${labels[options.indexOf(value)]}") }
+}
+
+// v55.11: 弹幕字体自定义粗细
+// v55.11: 弹幕字体自定义粗细
+internal fun PlayerActivity.showv55DanmakuFontWeightCustomDialog() {
+    val options = listOf(100,200,300,400,500,600,700,800,900)
+    val labels = listOf("100","200","300","400","500","600","700","800","900")
+    val currentIndex = options.indexOf(BiliClient.prefs.v55DanmakuFontWeightCustom).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Font Weight Custom", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v55DanmakuFontWeightCustom = value; AppToast.show(this, "Danmaku Font Weight Custom: ${labels[options.indexOf(value)]}") }
+}
+
+// v55.12: 自定义色调
+// v55.12: 自定义色调
+internal fun PlayerActivity.showv55ColorTintCustomDialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v55ColorTintCustom).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Tint Custom", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v55ColorTintCustom = value; AppToast.show(this, "Color Tint Custom: ${labels[options.indexOf(value)]}") }
+}
+
+// v55.13: 音量压缩
+// v55.13: 音量压缩
+internal fun PlayerActivity.showv55VolumeCompressorToggle() {
+    val current = BiliClient.prefs.v55VolumeCompressor
+    BiliClient.prefs.v55VolumeCompressor = !current
+    AppToast.show(this, "Volume Compressor: ${if (!current) "ON" else "OFF"}")
+}
+
+// v55.14: 弹幕背景内边距
+// v55.14: 弹幕背景内边距
+internal fun PlayerActivity.showv55DanmakuBgPaddingDialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v55DanmakuBgPadding).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Bg Padding", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v55DanmakuBgPadding = value; AppToast.show(this, "Danmaku Bg Padding: ${labels[options.indexOf(value)]}") }
+}
+
+// v55.15: 投射自动画质
+// v55.15: 投射自动画质
+internal fun PlayerActivity.showv55CastAutoQualityToggle() {
+    val current = BiliClient.prefs.v55CastAutoQuality
+    BiliClient.prefs.v55CastAutoQuality = !current
+    AppToast.show(this, "Cast Auto Quality: ${if (!current) "ON" else "OFF"}")
+}
+
+
