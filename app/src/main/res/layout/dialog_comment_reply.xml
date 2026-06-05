@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etReplyMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="120dp"
+        android:gravity="top"
+        android:hint="写下你的回复..."
+        android:inputType="textMultiLine"
+        android:maxLines="10"
+        android:background="@android:color/black"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/darker_gray"
+        android:padding="12dp" />
+
+    <Button
+        android:id="@+id/btnSendReply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="发送回复"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/blbl_pink" />
+
+</LinearLayout>
