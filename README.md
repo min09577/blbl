@@ -118,11 +118,1893 @@ This project is based on open-source software. All rights belong to the original
 ## 📋 更新日志 | Changelog | 変更履歴 | 변경 로그
 
 ### 最新版本 | Latest Version | 最新バージョン | 최신 버전
-- **v45.15** - 2026-06-05
+- **v55.15** - 2026-06-05
 
 ---
 
 ## 📊 版本更新日志 | Version Changelog | バージョン更新履歴 | 버전 변경 로그
+
+
+### v46.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v46.1-v46.15 功能列表
+- ✅ Loop Memory, Danmaku Font Weight, Auto Gamma, Volume Normalization, Danmaku Stroke Offset, Cast Color Temperature, Gesture Edge Exclusion, Danmaku Row Spacing, Cache Prefetch on WiFi, Progress Bar Thumb Size, Danmaku Send Confirm Dialog, Color White Balance, Volume Limit Threshold, Danmaku Bg Padding, Cast Video Codec
+
+### v46.1 循环记忆 | Loop Memory | ループメモリ | 루프 메모리
+- ✅ 循环记忆
+- ✅ Loop Memory
+- ✅ ループメモリ
+- ✅ 루프 메모리
+
+### v46.2 弹幕字体粗细 | Danmaku Font Weight | コメント太さ | 댓글 글꼴 두께
+- ✅ 弹幕字体粗细
+- ✅ Danmaku Font Weight
+- ✅ コメント太さ
+- ✅ 댓글 글꼴 두께
+
+### v46.3 自动伽马 | Auto Gamma | 自動ガンマ | 자동 감마
+- ✅ 自动伽马
+- ✅ Auto Gamma
+- ✅ 自動ガンマ
+- ✅ 자동 감마
+
+### v46.4 音量标准化 | Volume Normalization | 音量正規化 | 볼륨 정규화
+- ✅ 音量标准化
+- ✅ Volume Normalization
+- ✅ 音量正規化
+- ✅ 볼륨 정규화
+
+### v46.5 弹幕描边偏移 | Danmaku Stroke Offset | コメントストロークオフセット | 댓글 스트로크 오프셋
+- ✅ 弹幕描边偏移
+- ✅ Danmaku Stroke Offset
+- ✅ コメントストロークオフセット
+- ✅ 댓글 스트로크 오프셋
+
+### v46.6 投射色温 | Cast Color Temperature | キャスト色温度 | 캐스트 색온도
+- ✅ 投射色温
+- ✅ Cast Color Temperature
+- ✅ キャスト色温度
+- ✅ 캐스트 색온도
+
+### v46.7 手势边缘排除 | Gesture Edge Exclusion | ジェスチャーエッジ除外 | 제스처 가장자리 제외
+- ✅ 手势边缘排除
+- ✅ Gesture Edge Exclusion
+- ✅ ジェスチャーエッジ除外
+- ✅ 제스처 가장자리 제외
+
+### v46.8 弹幕行间距 | Danmaku Row Spacing | コメント行間 | 댓글 줄 간격
+- ✅ 弹幕行间距
+- ✅ Danmaku Row Spacing
+- ✅ コメント行間
+- ✅ 댓글 줄 간격
+
+### v46.9 WiFi缓存预取 | Cache Prefetch on WiFi | WiFiキャッシュプリロード | WiFi 캐시 프리로드
+- ✅ WiFi缓存预取
+- ✅ Cache Prefetch on WiFi
+- ✅ WiFiキャッシュプリロード
+- ✅ WiFi 캐시 프리로드
+
+### v46.10 进度条滑块大小 | Progress Bar Thumb Size | プログレスバーサムズサイズ | 진행 바 썸 크기
+- ✅ 进度条滑块大小
+- ✅ Progress Bar Thumb Size
+- ✅ プログレスバーサムズサイズ
+- ✅ 진행 바 썸 크기
+
+### v46.11 弹幕发送确认 | Danmaku Send Confirm Dialog | コメント送信確認 | 댓글 전송 확인
+- ✅ 弹幕发送确认
+- ✅ Danmaku Send Confirm Dialog
+- ✅ コメント送信確認
+- ✅ 댓글 전송 확인
+
+### v46.12 白平衡 | Color White Balance | ホワイトバランス | 화이트 밸런스
+- ✅ 白平衡
+- ✅ Color White Balance
+- ✅ ホワイトバランス
+- ✅ 화이트 밸런스
+
+### v46.13 音量限制阈值 | Volume Limit Threshold | 音量制限閾値 | 볼륨 제한 임계값
+- ✅ 音量限制阈值
+- ✅ Volume Limit Threshold
+- ✅ 音量制限閾値
+- ✅ 볼륨 제한 임계값
+
+### v46.14 弹幕背景内边距 | Danmaku Bg Padding | コメント背景パディング | 댓글 배경 패딩
+- ✅ 弹幕背景内边距
+- ✅ Danmaku Bg Padding
+- ✅ コメント背景パディング
+- ✅ 댓글 배경 패딩
+
+### v46.15 投射视频编码 | Cast Video Codec | キャスト動画コーデック | 캐스트 비디오 코덱
+- ✅ 投射视频编码
+- ✅ Cast Video Codec
+- ✅ キャスト動画コーデック
+- ✅ 캐스트 비디오 코덱
+
+### v47.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v47.1-v47.15 功能列表
+- ✅ Resume Prompt, Danmaku Font Spacing, Exposure Compensation, Volume Loudness Enhancer, Danmaku Stroke Blur, Cast Audio Bitrate, Gesture Dead Zone, Danmaku Max Lines, Cache Max Size, Progress Bar Seek Preview, Danmaku Highlight Mention, Color Tint, Volume Channel Balance, Danmaku Bg Border Color, Cast Subtitle Enabled
+
+### v47.1 恢复提示 | Resume Prompt | 再開プロンプト | 재개 프롬프트
+- ✅ 恢复提示
+- ✅ Resume Prompt
+- ✅ 再開プロンプト
+- ✅ 재개 프롬프트
+
+### v47.2 弹幕字间距 | Danmaku Font Spacing | コメント文字間隔 | 댓글 글자 간격
+- ✅ 弹幕字间距
+- ✅ Danmaku Font Spacing
+- ✅ コメント文字間隔
+- ✅ 댓글 글자 간격
+
+### v47.3 曝光补偿 | Exposure Compensation | 露出補正 | 노출 보정
+- ✅ 曝光补偿
+- ✅ Exposure Compensation
+- ✅ 露出補正
+- ✅ 노출 보정
+
+### v47.4 音量响度增强 | Volume Loudness Enhancer | 音量ラウドネス強化 | 볼륨 라우드니스 강화
+- ✅ 音量响度增强
+- ✅ Volume Loudness Enhancer
+- ✅ 音量ラウドネス強化
+- ✅ 볼륨 라우드니스 강화
+
+### v47.5 弹幕描边模糊 | Danmaku Stroke Blur | コメントストロークぼかし | 댓글 스트로크 블러
+- ✅ 弹幕描边模糊
+- ✅ Danmaku Stroke Blur
+- ✅ コメントストロークぼかし
+- ✅ 댓글 스트로크 블러
+
+### v47.6 投射音频码率 | Cast Audio Bitrate | キャスト音声ビットレート | 캐스트 오디오 비트레이트
+- ✅ 投射音频码率
+- ✅ Cast Audio Bitrate
+- ✅ キャスト音声ビットレート
+- ✅ 캐스트 오디오 비트레이트
+
+### v47.7 手势死区 | Gesture Dead Zone | ジェスチャーデッドゾーン | 제스처 데드존
+- ✅ 手势死区
+- ✅ Gesture Dead Zone
+- ✅ ジェスチャーデッドゾーン
+- ✅ 제스처 데드존
+
+### v47.8 弹幕最大行数 | Danmaku Max Lines | コメント最大行数 | 댓글 최대 줄 수
+- ✅ 弹幕最大行数
+- ✅ Danmaku Max Lines
+- ✅ コメント最大行数
+- ✅ 댓글 최대 줄 수
+
+### v47.9 缓存最大大小 | Cache Max Size | キャッシュ最大サイズ | 캐시 최대 크기
+- ✅ 缓存最大大小
+- ✅ Cache Max Size
+- ✅ キャッシュ最大サイズ
+- ✅ 캐시 최대 크기
+
+### v47.10 进度条预览 | Progress Bar Seek Preview | プログレスバーシークプレビュー | 진행 바 탐색 미리보기
+- ✅ 进度条预览
+- ✅ Progress Bar Seek Preview
+- ✅ プログレスバーシークプレビュー
+- ✅ 진행 바 탐색 미리보기
+
+### v47.11 弹幕@高亮 | Danmaku Highlight Mention | コメント@ハイライト | 댓글 @강조
+- ✅ 弹幕@高亮
+- ✅ Danmaku Highlight Mention
+- ✅ コメント@ハイライト
+- ✅ 댓글 @강조
+
+### v47.12 色彩色调 | Color Tint | 色彩ティント | 색상 틴트
+- ✅ 色彩色调
+- ✅ Color Tint
+- ✅ 色彩ティント
+- ✅ 색상 틴트
+
+### v47.13 声道平衡 | Volume Channel Balance | チャンネルバランス | 채널 밸런스
+- ✅ 声道平衡
+- ✅ Volume Channel Balance
+- ✅ チャンネルバランス
+- ✅ 채널 밸런스
+
+### v47.14 弹幕背景边框颜色 | Danmaku Bg Border Color | コメント背景ボーダー色 | 댓글 배경 테두리 색상
+- ✅ 弹幕背景边框颜色
+- ✅ Danmaku Bg Border Color
+- ✅ コメント背景ボーダー色
+- ✅ 댓글 배경 테두리 색상
+
+### v47.15 投射字幕开关 | Cast Subtitle Enabled | キャスト字幕有効化 | 캐스트 자막 활성화
+- ✅ 投射字幕开关
+- ✅ Cast Subtitle Enabled
+- ✅ キャスト字幕有効化
+- ✅ 캐스트 자막 활성화
+
+### v48.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v48.1-v48.15 功能列表
+- ✅ Skip Intro, Danmaku Line Height, Color Black Level, Volume Bass Boost, Danmaku Max Length, Resolution Auto, Danmaku Tap Feedback, Danmaku Filter Regex, Cache Cleanup Interval, Progress Bar Touch Area, Danmaku Font Size Adaptive, Color White Level, Volume Virtualizer, Danmaku Bg Shadow Size, Cast Mirror Quality
+
+### v48.1 跳过片头 | Skip Intro | イントロスキップ | 인트로 건너뛰기
+- ✅ 跳过片头
+- ✅ Skip Intro
+- ✅ イントロスキップ
+- ✅ 인트로 건너뛰기
+
+### v48.2 弹幕行高 | Danmaku Line Height | コメント行の高さ | 댓글 줄 높이
+- ✅ 弹幕行高
+- ✅ Danmaku Line Height
+- ✅ コメント行の高さ
+- ✅ 댓글 줄 높이
+
+### v48.3 黑电平 | Color Black Level | ブラックレベル | 블랙 레벨
+- ✅ 黑电平
+- ✅ Color Black Level
+- ✅ ブラックレベル
+- ✅ 블랙 레벨
+
+### v48.4 低音增强 | Volume Bass Boost | バスブースト | 베이스 부스트
+- ✅ 低音增强
+- ✅ Volume Bass Boost
+- ✅ バスブースト
+- ✅ 베이스 부스트
+
+### v48.5 弹幕最大长度 | Danmaku Max Length | コメント最大長 | 댓글 최대 길이
+- ✅ 弹幕最大长度
+- ✅ Danmaku Max Length
+- ✅ コメント最大長
+- ✅ 댓글 최대 길이
+
+### v48.6 自动分辨率 | Resolution Auto | 解像度自動 | 해상도 자동
+- ✅ 自动分辨率
+- ✅ Resolution Auto
+- ✅ 解像度自動
+- ✅ 해상도 자동
+
+### v48.7 弹幕点击反馈 | Danmaku Tap Feedback | コメントタップフィードバック | 댓글 탭 피드백
+- ✅ 弹幕点击反馈
+- ✅ Danmaku Tap Feedback
+- ✅ コメントタップフィードバック
+- ✅ 댓글 탭 피드백
+
+### v48.8 弹幕正则过滤 | Danmaku Filter Regex | コメント正規表現フィルター | 댓글 정규식 필터
+- ✅ 弹幕正则过滤
+- ✅ Danmaku Filter Regex
+- ✅ コメント正規表現フィルター
+- ✅ 댓글 정규식 필터
+
+### v48.9 缓存清理间隔 | Cache Cleanup Interval | キャッシュクリーンアップ間隔 | 캐시 정리 간격
+- ✅ 缓存清理间隔
+- ✅ Cache Cleanup Interval
+- ✅ キャッシュクリーンアップ間隔
+- ✅ 캐시 정리 간격
+
+### v48.10 进度条触摸区域 | Progress Bar Touch Area | プログレスバータッチエリア | 진행 바 터치 영역
+- ✅ 进度条触摸区域
+- ✅ Progress Bar Touch Area
+- ✅ プログレスバータッチエリア
+- ✅ 진행 바 터치 영역
+
+### v48.11 弹幕字号自适应 | Danmaku Font Size Adaptive | コメントフォントサイズ自動調整 | 댓글 글꼴 크기 적응
+- ✅ 弹幕字号自适应
+- ✅ Danmaku Font Size Adaptive
+- ✅ コメントフォントサイズ自動調整
+- ✅ 댓글 글꼴 크기 적응
+
+### v48.12 白色等级 | Color White Level | ホワイトレベル | 화이트 레벨
+- ✅ 白色等级
+- ✅ Color White Level
+- ✅ ホワイトレベル
+- ✅ 화이트 레벨
+
+### v48.13 音量虚拟器 | Volume Virtualizer | バーチャライザー | 버추얼라이저
+- ✅ 音量虚拟器
+- ✅ Volume Virtualizer
+- ✅ バーチャライザー
+- ✅ 버추얼라이저
+
+### v48.14 弹幕背景阴影大小 | Danmaku Bg Shadow Size | コメント背景シャドウサイズ | 댓글 배경 그림자 크기
+- ✅ 弹幕背景阴影大小
+- ✅ Danmaku Bg Shadow Size
+- ✅ コメント背景シャドウサイズ
+- ✅ 댓글 배경 그림자 크기
+
+### v48.15 投射镜像质量 | Cast Mirror Quality | キャストミラー品質 | 캐스트 미러 품질
+- ✅ 投射镜像质量
+- ✅ Cast Mirror Quality
+- ✅ キャストミラー品質
+- ✅ 캐스트 미러 품질
+
+### v49.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v49.1-v49.15 功能列表
+- ✅ Auto Skip Outro, Danmaku Font Letter Spacing, Color Highlight Recovery, Volume Treble Boost, Danmaku Send Font Size, Cast Audio Sync, Gesture Long Press Action, Danmaku Filter Duplicate, Cache Auto Cleanup Threshold, Progress Bar Chapter Mark, Danmaku Highlight Keyword, Color Shadow Recovery, Volume Replay Gain, Danmaku Bg Gradient Angle, Cast Auto Reconnect
+
+### v49.1 自动跳片尾 | Auto Skip Outro | 自動アウトロスキップ | 자동 아웃트로 건너뛰기
+- ✅ 自动跳片尾
+- ✅ Auto Skip Outro
+- ✅ 自動アウトロスキップ
+- ✅ 자동 아웃트로 건너뛰기
+
+### v49.2 弹幕字母间距 | Danmaku Font Letter Spacing | コメント文字間隔 | 댓글 글자 간격
+- ✅ 弹幕字母间距
+- ✅ Danmaku Font Letter Spacing
+- ✅ コメント文字間隔
+- ✅ 댓글 글자 간격
+
+### v49.3 高光恢复 | Color Highlight Recovery | ハイライト回復 | 하이라이트 복구
+- ✅ 高光恢复
+- ✅ Color Highlight Recovery
+- ✅ ハイライト回復
+- ✅ 하이라이트 복구
+
+### v49.4 高音增强 | Volume Treble Boost | トレブルブースト | 트레블 부스트
+- ✅ 高音增强
+- ✅ Volume Treble Boost
+- ✅ トレブルブースト
+- ✅ 트레블 부스트
+
+### v49.5 弹幕发送字号 | Danmaku Send Font Size | コメント送信フォントサイズ | 댓글 전송 글꼴 크기
+- ✅ 弹幕发送字号
+- ✅ Danmaku Send Font Size
+- ✅ コメント送信フォントサイズ
+- ✅ 댓글 전송 글꼴 크기
+
+### v49.6 投射音频同步 | Cast Audio Sync | キャスト音声同期 | 캐스트 오디오 동기화
+- ✅ 投射音频同步
+- ✅ Cast Audio Sync
+- ✅ キャスト音声同期
+- ✅ 캐스트 오디오 동기화
+
+### v49.7 长按手势动作 | Gesture Long Press Action | ジェスチャー長押しアクション | 제스처 길게 누르기 동작
+- ✅ 长按手势动作
+- ✅ Gesture Long Press Action
+- ✅ ジェスチャー長押しアクション
+- ✅ 제스처 길게 누르기 동작
+
+### v49.8 弹幕去重过滤 | Danmaku Filter Duplicate | コメント重複フィルター | 댓글 중복 필터
+- ✅ 弹幕去重过滤
+- ✅ Danmaku Filter Duplicate
+- ✅ コメント重複フィルター
+- ✅ 댓글 중복 필터
+
+### v49.9 缓存自动清理阈值 | Cache Auto Cleanup Threshold | キャッシュ自動クリーンアップ閾値 | 캐시 자동 정리 임계값
+- ✅ 缓存自动清理阈值
+- ✅ Cache Auto Cleanup Threshold
+- ✅ キャッシュ自動クリーンアップ閾値
+- ✅ 캐시 자동 정리 임계값
+
+### v49.10 进度条章节标记 | Progress Bar Chapter Mark | プログレスバーチャプターマーク | 진행 바 챕터 마크
+- ✅ 进度条章节标记
+- ✅ Progress Bar Chapter Mark
+- ✅ プログレスバーチャプターマーク
+- ✅ 진행 바 챕터 마크
+
+### v49.11 弹幕关键词高亮 | Danmaku Highlight Keyword | コメントキーワードハイライト | 댓글 키워드 강조
+- ✅ 弹幕关键词高亮
+- ✅ Danmaku Highlight Keyword
+- ✅ コメントキーワードハイライト
+- ✅ 댓글 키워드 강조
+
+### v49.12 暗部恢复 | Color Shadow Recovery | シャドウ回復 | 그림자 복구
+- ✅ 暗部恢复
+- ✅ Color Shadow Recovery
+- ✅ シャドウ回復
+- ✅ 그림자 복구
+
+### v49.13 回放增益 | Volume Replay Gain | リプレイゲイン | 리플레이 게인
+- ✅ 回放增益
+- ✅ Volume Replay Gain
+- ✅ リプレイゲイン
+- ✅ 리플레이 게인
+
+### v49.14 弹幕渐变角度 | Danmaku Bg Gradient Angle | コメントグラデーション角度 | 댓글 그라데이션 각도
+- ✅ 弹幕渐变角度
+- ✅ Danmaku Bg Gradient Angle
+- ✅ コメントグラデーション角度
+- ✅ 댓글 그라데이션 각도
+
+### v49.15 投射自动重连 | Cast Auto Reconnect | キャスト自動再接続 | 캐스트 자동 재연결
+- ✅ 投射自动重连
+- ✅ Cast Auto Reconnect
+- ✅ キャスト自動再接続
+- ✅ 캐스트 자동 재연결
+
+### v50.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v50.1-v50.15 功能列表
+- ✅ Auto Next Episode, Danmaku Font Shadow Size, Color Midtone Adjust, Volume Ambient Mode, Danmaku Send Color Custom, Cast Volume Sync, Gesture Pinch Zoom, Danmaku Filter Color, Cache Prebuffer Seconds, Progress Bar Double Tap Seek, Danmaku Font Size Auto, Color Dynamic Range, Volume Night Mode, Danmaku Bg Blur Radius, Cast Auto Discover
+
+### v50.1 自动下一集 | Auto Next Episode | 自動次エピソード | 자동 다음 에피소드
+- ✅ 自动下一集
+- ✅ Auto Next Episode
+- ✅ 自動次エピソード
+- ✅ 자동 다음 에피소드
+
+### v50.2 弹幕阴影大小 | Danmaku Font Shadow Size | コメントシャドウサイズ | 댓글 그림자 크기
+- ✅ 弹幕阴影大小
+- ✅ Danmaku Font Shadow Size
+- ✅ コメントシャドウサイズ
+- ✅ 댓글 그림자 크기
+
+### v50.3 中间调调整 | Color Midtone Adjust | ミッドトーン調整 | 미드톤 조정
+- ✅ 中间调调整
+- ✅ Color Midtone Adjust
+- ✅ ミッドトーン調整
+- ✅ 미드톤 조정
+
+### v50.4 环境音模式 | Volume Ambient Mode | アンビエントモード | 앰비언트 모드
+- ✅ 环境音模式
+- ✅ Volume Ambient Mode
+- ✅ アンビエントモード
+- ✅ 앰비언트 모드
+
+### v50.5 弹幕发送颜色自定义 | Danmaku Send Color Custom | コメント送信色カスタム | 댓글 전송 색상 사용자 정의
+- ✅ 弹幕发送颜色自定义
+- ✅ Danmaku Send Color Custom
+- ✅ コメント送信色カスタム
+- ✅ 댓글 전송 색상 사용자 정의
+
+### v50.6 投射音量同步 | Cast Volume Sync | キャスト音量同期 | 캐스트 볼륨 동기화
+- ✅ 投射音量同步
+- ✅ Cast Volume Sync
+- ✅ キャスト音量同期
+- ✅ 캐스트 볼륨 동기화
+
+### v50.7 手势缩放 | Gesture Pinch Zoom | ジェスチャーピンチズーム | 제스처 핀치 줌
+- ✅ 手势缩放
+- ✅ Gesture Pinch Zoom
+- ✅ ジェスチャーピンチズーム
+- ✅ 제스처 핀치 줌
+
+### v50.8 弹幕颜色过滤 | Danmaku Filter Color | コメント色フィルター | 댓글 색상 필터
+- ✅ 弹幕颜色过滤
+- ✅ Danmaku Filter Color
+- ✅ コメント色フィルター
+- ✅ 댓글 색상 필터
+
+### v50.9 缓存预缓冲秒数 | Cache Prebuffer Seconds | キャッシュプリバッファ秒 | 캐시 프리버퍼 초
+- ✅ 缓存预缓冲秒数
+- ✅ Cache Prebuffer Seconds
+- ✅ キャッシュプリバッファ秒
+- ✅ 캐시 프리버퍼 초
+
+### v50.10 双击快进秒数 | Progress Bar Double Tap Seek | ダブルタップシーク秒 | 더블 탭 탐색 초
+- ✅ 双击快进秒数
+- ✅ Progress Bar Double Tap Seek
+- ✅ ダブルタップシーク秒
+- ✅ 더블 탭 탐색 초
+
+### v50.11 弹幕字号自动 | Danmaku Font Size Auto | コメントフォントサイズ自動 | 댓글 글꼴 크기 자동
+- ✅ 弹幕字号自动
+- ✅ Danmaku Font Size Auto
+- ✅ コメントフォントサイズ自動
+- ✅ 댓글 글꼴 크기 자동
+
+### v50.12 动态范围 | Color Dynamic Range | ダイナミックレンジ | 다이나믹 레인지
+- ✅ 动态范围
+- ✅ Color Dynamic Range
+- ✅ ダイナミックレンジ
+- ✅ 다이나믹 레인지
+
+### v50.13 夜间音量模式 | Volume Night Mode | ナイトモード | 나이트 모드
+- ✅ 夜间音量模式
+- ✅ Volume Night Mode
+- ✅ ナイトモード
+- ✅ 나이트 모드
+
+### v50.14 弹幕背景模糊半径 | Danmaku Bg Blur Radius | コメント背景ぼかし半径 | 댓글 배경 블러 반경
+- ✅ 弹幕背景模糊半径
+- ✅ Danmaku Bg Blur Radius
+- ✅ コメント背景ぼかし半径
+- ✅ 댓글 배경 블러 반경
+
+### v50.15 投射自动发现 | Cast Auto Discover | キャスト自動検出 | 캐스트 자동 검색
+- ✅ 投射自动发现
+- ✅ Cast Auto Discover
+- ✅ キャスト自動検出
+- ✅ 캐스트 자동 검색
+
+### v51.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v51.1-v51.15 功能列表
+- ✅ Auto Skip Intro, Danmaku Outline Width, Shadow Adjust, Loudness Normalize, Send Bg Style, Cast Video Codec, Double Tap Rewind, Filter Length, Cache Max Size, Scrub Speed, Font Spacing, Gamma Correction, Bass Reduce, Bg Border Color, Cast Subtitle Sync
+
+### v51.1 自动跳片头 | Auto Skip Intro | 自動イントロスキップ | 자동 인트로 건너뛰기
+- ✅ 自动跳片头
+- ✅ Auto Skip Intro
+- ✅ 自動イントロスキップ
+- ✅ 자동 인트로 건너뛰기
+
+### v51.2 弹幕描边宽度 | Danmaku Outline Width | コメントアウトライン幅 | 댓글 아웃라인 너비
+- ✅ 弹幕描边宽度
+- ✅ Danmaku Outline Width
+- ✅ コメントアウトライン幅
+- ✅ 댓글 아웃라인 너비
+
+### v51.3 暗部调整 | Shadow Adjust | シャドウ調整 | 그림자 조정
+- ✅ 暗部调整
+- ✅ Shadow Adjust
+- ✅ シャドウ調整
+- ✅ 그림자 조정
+
+### v51.4 响度标准化 | Loudness Normalize | ラウドネス正規化 | 라우드니스 정규화
+- ✅ 响度标准化
+- ✅ Loudness Normalize
+- ✅ ラウドネス正規化
+- ✅ 라우드니스 정규화
+
+### v51.5 发送背景样式 | Send Bg Style | 送信背景スタイル | 전송 배경 스타일
+- ✅ 发送背景样式
+- ✅ Send Bg Style
+- ✅ 送信背景スタイル
+- ✅ 전송 배경 스타일
+
+### v51.6 投射视频编码 | Cast Video Codec | キャスト動画コーデック | 캐스트 비디오 코덱
+- ✅ 投射视频编码
+- ✅ Cast Video Codec
+- ✅ キャスト動画コーデック
+- ✅ 캐스트 비디오 코덱
+
+### v51.7 双击快退 | Double Tap Rewind | ダブルタップ巻き戻し | 더블 탭 되감기
+- ✅ 双击快退
+- ✅ Double Tap Rewind
+- ✅ ダブルタップ巻き戻し
+- ✅ 더블 탭 되감기
+
+### v51.8 弹幕长度过滤 | Filter Length | フィルター長さ | 필터 길이
+- ✅ 弹幕长度过滤
+- ✅ Filter Length
+- ✅ フィルター長さ
+- ✅ 필터 길이
+
+### v51.9 缓存最大大小 | Cache Max Size | キャッシュ最大サイズ | 캐시 최대 크기
+- ✅ 缓存最大大小
+- ✅ Cache Max Size
+- ✅ キャッシュ最大サイズ
+- ✅ 캐시 최대 크기
+
+### v51.10 滑动速度 | Scrub Speed | スクラブ速度 | 스크럽 속도
+- ✅ 滑动速度
+- ✅ Scrub Speed
+- ✅ スクラブ速度
+- ✅ 스크럽 속도
+
+### v51.11 字间距 | Font Spacing | フォント間隔 | 글꼴 간격
+- ✅ 字间距
+- ✅ Font Spacing
+- ✅ フォント間隔
+- ✅ 글꼴 간격
+
+### v51.12 伽马校正 | Gamma Correction | ガンマ補正 | 감마 보정
+- ✅ 伽马校正
+- ✅ Gamma Correction
+- ✅ ガンマ補正
+- ✅ 감마 보정
+
+### v51.13 低音减弱 | Bass Reduce | バス軽減 | 베이스 감소
+- ✅ 低音减弱
+- ✅ Bass Reduce
+- ✅ バス軽減
+- ✅ 베이스 감소
+
+### v51.14 背景边框颜色 | Bg Border Color | 背景ボーダー色 | 배경 테두리 색상
+- ✅ 背景边框颜色
+- ✅ Bg Border Color
+- ✅ 背景ボーダー色
+- ✅ 배경 테두리 색상
+
+### v51.15 投射字幕同步 | Cast Subtitle Sync | キャスト字幕同期 | 캐스트 자막 동기화
+- ✅ 投射字幕同步
+- ✅ Cast Subtitle Sync
+- ✅ キャスト字幕同期
+- ✅ 캐스트 자막 동기화
+
+### v52.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v52.1-v52.15 功能列表
+- ✅ Auto Skip Filler, Line Height, Color Temperature, Channel Swap, Send Anim Style, Cast Resolution Enhance, Swipe Seek, Filter Speed, Prefetch Size, Progress Chapters, Shadow Blur, Saturation Auto, Volume Fade In, Bg Gradient Color, Cast Latency Mode
+
+### v52.1 自动跳离题 | Auto Skip Filler | 自動フィラースキップ | 자동 필러 건너뛰기
+- ✅ 自动跳离题
+- ✅ Auto Skip Filler
+- ✅ 自動フィラースキップ
+- ✅ 자동 필러 건너뛰기
+
+### v52.2 行高 | Line Height | 行の高さ | 줄 높이
+- ✅ 行高
+- ✅ Line Height
+- ✅ 行の高さ
+- ✅ 줄 높이
+
+### v52.3 色温 | Color Temperature | 色温度 | 색온도
+- ✅ 色温
+- ✅ Color Temperature
+- ✅ 色温度
+- ✅ 색온도
+
+### v52.4 声道交换 | Channel Swap | チャンネルスワップ | 채널 스왑
+- ✅ 声道交换
+- ✅ Channel Swap
+- ✅ チャンネルスワップ
+- ✅ 채널 스왑
+
+### v52.5 发送动画样式 | Send Anim Style | 送信アニメーションスタイル | 전송 애니메이션 스타일
+- ✅ 发送动画样式
+- ✅ Send Anim Style
+- ✅ 送信アニメーションスタイル
+- ✅ 전송 애니메이션 스타일
+
+### v52.6 投射分辨率增强 | Cast Resolution Enhance | キャスト解像度強化 | 캐스트 해상도 강화
+- ✅ 投射分辨率增强
+- ✅ Cast Resolution Enhance
+- ✅ キャスト解像度強化
+- ✅ 캐스트 해상도 강화
+
+### v52.7 滑动快进 | Swipe Seek | スワイプシーク | 스와이프 탐색
+- ✅ 滑动快进
+- ✅ Swipe Seek
+- ✅ スワイプシーク
+- ✅ 스와이프 탐색
+
+### v52.8 弹幕速度过滤 | Filter Speed | フィルター速度 | 필터 속도
+- ✅ 弹幕速度过滤
+- ✅ Filter Speed
+- ✅ フィルター速度
+- ✅ 필터 속도
+
+### v52.9 预取大小 | Prefetch Size | プリフェッチサイズ | 프리페치 크기
+- ✅ 预取大小
+- ✅ Prefetch Size
+- ✅ プリフェッチサイズ
+- ✅ 프리페치 크기
+
+### v52.10 进度条章节 | Progress Chapters | プログレスチャプター | 진행 바 챕터
+- ✅ 进度条章节
+- ✅ Progress Chapters
+- ✅ プログレスチャプター
+- ✅ 진행 바 챕터
+
+### v52.11 阴影模糊 | Shadow Blur | シャドウぼかし | 그림자 블러
+- ✅ 阴影模糊
+- ✅ Shadow Blur
+- ✅ シャドウぼかし
+- ✅ 그림자 블러
+
+### v52.12 自动饱和度 | Saturation Auto | 彩度自動 | 채도 자동
+- ✅ 自动饱和度
+- ✅ Saturation Auto
+- ✅ 彩度自動
+- ✅ 채도 자동
+
+### v52.13 音量淡入 | Volume Fade In | 音量フェードイン | 볼륨 페이드 인
+- ✅ 音量淡入
+- ✅ Volume Fade In
+- ✅ 音量フェードイン
+- ✅ 볼륨 페이드 인
+
+### v52.14 背景渐变颜色 | Bg Gradient Color | 背景グラデーション色 | 배경 그라데이션 색상
+- ✅ 背景渐变颜色
+- ✅ Bg Gradient Color
+- ✅ 背景グラデーション色
+- ✅ 배경 그라데이션 색상
+
+### v52.15 投射延迟模式 | Cast Latency Mode | キャスト遅延モード | 캐스트 지연 모드
+- ✅ 投射延迟模式
+- ✅ Cast Latency Mode
+- ✅ キャスト遅延モード
+- ✅ 캐스트 지연 모드
+
+### v53.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v53.1-v53.15 功能列表
+- ✅ Auto Pause, Font Italic, Vignette Custom, Volume Fade Out, Send Timestamp, Cast Audio Codec, Volume Step, Filter Type, Cleanup Policy, Progress Snap, Font Strike, Black Level, Balance Custom, Bg Rounded, Cast Auto Pause
+
+### v53.1 自动暂停 | Auto Pause | 自動一時停止 | 자동 일시정지
+- ✅ 自动暂停
+- ✅ Auto Pause
+- ✅ 自動一時停止
+- ✅ 자동 일시정지
+
+### v53.2 弹幕斜体 | Font Italic | フォントイタリック | 글꼴 이탤릭
+- ✅ 弹幕斜体
+- ✅ Font Italic
+- ✅ フォントイタリック
+- ✅ 글꼴 이탤릭
+
+### v53.3 自定义暗角 | Vignette Custom | ビネットカスタム | 비네트 사용자 정의
+- ✅ 自定义暗角
+- ✅ Vignette Custom
+- ✅ ビネットカスタム
+- ✅ 비네트 사용자 정의
+
+### v53.4 音量淡出 | Volume Fade Out | 音量フェードアウト | 볼륨 페이드 아웃
+- ✅ 音量淡出
+- ✅ Volume Fade Out
+- ✅ 音量フェードアウト
+- ✅ 볼륨 페이드 아웃
+
+### v53.5 发送时间戳 | Send Timestamp | 送信タイムスタンプ | 전송 타임스탬프
+- ✅ 发送时间戳
+- ✅ Send Timestamp
+- ✅ 送信タイムスタンプ
+- ✅ 전송 타임스탬프
+
+### v53.6 投射音频编码 | Cast Audio Codec | キャスト音声コーデック | 캐스트 오디오 코덱
+- ✅ 投射音频编码
+- ✅ Cast Audio Codec
+- ✅ キャスト音声コーデック
+- ✅ 캐스트 오디오 코덱
+
+### v53.7 音量步进 | Volume Step | 音量ステップ | 볼륨 스텝
+- ✅ 音量步进
+- ✅ Volume Step
+- ✅ 音量ステップ
+- ✅ 볼륨 스텝
+
+### v53.8 弹幕类型过滤 | Filter Type | フィルタータイプ | 필터 유형
+- ✅ 弹幕类型过滤
+- ✅ Filter Type
+- ✅ フィルタータイプ
+- ✅ 필터 유형
+
+### v53.9 清理策略 | Cleanup Policy | クリーンアップポリシー | 정리 정책
+- ✅ 清理策略
+- ✅ Cleanup Policy
+- ✅ クリーンアップポリシー
+- ✅ 정리 정책
+
+### v53.10 进度条吸附 | Progress Snap | プログレススナップ | 진행 바 스냅
+- ✅ 进度条吸附
+- ✅ Progress Snap
+- ✅ プログレススナップ
+- ✅ 진행 바 스냅
+
+### v53.11 弹幕删除线 | Font Strike | フォント取り消し線 | 글꼴 취소선
+- ✅ 弹幕删除线
+- ✅ Font Strike
+- ✅ フォント取り消し線
+- ✅ 글꼴 취소선
+
+### v53.12 黑电平 | Black Level | ブラックレベル | 블랙 레벨
+- ✅ 黑电平
+- ✅ Black Level
+- ✅ ブラックレベル
+- ✅ 블랙 레벨
+
+### v53.13 自定义声道平衡 | Balance Custom | バランスカスタム | 밸런스 사용자 정의
+- ✅ 自定义声道平衡
+- ✅ Balance Custom
+- ✅ バランスカスタム
+- ✅ 밸런스 사용자 정의
+
+### v53.14 背景圆角 | Bg Rounded | 背景角丸 | 배경 둥근 모서리
+- ✅ 背景圆角
+- ✅ Bg Rounded
+- ✅ 背景角丸
+- ✅ 배경 둥근 모서리
+
+### v53.15 投射自动暂停 | Cast Auto Pause | キャスト自動一時停止 | 캐스트 자동 일시정지
+- ✅ 投射自动暂停
+- ✅ Cast Auto Pause
+- ✅ キャスト自動一時停止
+- ✅ 캐스트 자동 일시정지
+
+### v54.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v54.1-v54.15 功能列表
+- ✅ Resume Position, Font Size Range, Color Brightness, Surround Mode, Send Draft, Cast Screen Mirror, Brightness Step, Filter User, Wakeup Prefetch, Progress Haptic, Font Underline, Color Contrast, Auto Gain, Bg Gradient Direction, Cast Subtitle Lang
+
+### v54.1 记忆恢复位置 | Resume Position | 再開位置メモリ | 재개 위치 기억
+- ✅ 记忆恢复位置
+- ✅ Resume Position
+- ✅ 再開位置メモリ
+- ✅ 재개 위치 기억
+
+### v54.2 字号范围 | Font Size Range | フォントサイズ範囲 | 글꼴 크기 범위
+- ✅ 字号范围
+- ✅ Font Size Range
+- ✅ フォントサイズ範囲
+- ✅ 글꼴 크기 범위
+
+### v54.3 亮度调节 | Color Brightness | 輝度調整 | 밝기 조정
+- ✅ 亮度调节
+- ✅ Color Brightness
+- ✅ 輝度調整
+- ✅ 밝기 조정
+
+### v54.4 环绕声模式 | Surround Mode | サラウンドモード | 서라운드 모드
+- ✅ 环绕声模式
+- ✅ Surround Mode
+- ✅ サラウンドモード
+- ✅ 서라운드 모드
+
+### v54.5 弹幕草稿箱 | Send Draft | 送信ドラフト | 전송 드래프트
+- ✅ 弹幕草稿箱
+- ✅ Send Draft
+- ✅ 送信ドラフト
+- ✅ 전송 드래프트
+
+### v54.6 投射屏幕镜像 | Cast Screen Mirror | キャスト画面ミラー | 캐스트 화면 미러
+- ✅ 投射屏幕镜像
+- ✅ Cast Screen Mirror
+- ✅ キャスト画面ミラー
+- ✅ 캐스트 화면 미러
+
+### v54.7 亮度手势步进 | Brightness Step | 輝度ステップ | 밝기 스텝
+- ✅ 亮度手势步进
+- ✅ Brightness Step
+- ✅ 輝度ステップ
+- ✅ 밝기 스텝
+
+### v54.8 弹幕用户过滤 | Filter User | ユーザーフィルター | 사용자 필터
+- ✅ 弹幕用户过滤
+- ✅ Filter User
+- ✅ ユーザーフィルター
+- ✅ 사용자 필터
+
+### v54.9 唤醒预加载 | Wakeup Prefetch | ウェイクアッププリロード | 웨이크업 프리로드
+- ✅ 唤醒预加载
+- ✅ Wakeup Prefetch
+- ✅ ウェイクアッププリロード
+- ✅ 웨이크업 프리로드
+
+### v54.10 进度条震动 | Progress Haptic | プログレスハプティック | 진행 바 햅틱
+- ✅ 进度条震动
+- ✅ Progress Haptic
+- ✅ プログレスハプティック
+- ✅ 진행 바 햅틱
+
+### v54.11 弹幕下划线 | Font Underline | フォント下線 | 글꼴 밑줄
+- ✅ 弹幕下划线
+- ✅ Font Underline
+- ✅ フォント下線
+- ✅ 글꼴 밑줄
+
+### v54.12 对比度 | Color Contrast | コントラスト | 대비
+- ✅ 对比度
+- ✅ Color Contrast
+- ✅ コントラスト
+- ✅ 대비
+
+### v54.13 自动增益 | Auto Gain | 自動ゲイン | 자동 게인
+- ✅ 自动增益
+- ✅ Auto Gain
+- ✅ 自動ゲイン
+- ✅ 자동 게인
+
+### v54.14 背景渐变方向 | Bg Gradient Direction | 背景グラデーション方向 | 배경 그라데이션 방향
+- ✅ 背景渐变方向
+- ✅ Bg Gradient Direction
+- ✅ 背景グラデーション方向
+- ✅ 배경 그라데이션 방향
+
+### v54.15 投射字幕语言 | Cast Subtitle Lang | キャスト字幕言語 | 캐스트 자막 언어
+- ✅ 投射字幕语言
+- ✅ Cast Subtitle Lang
+- ✅ キャスト字幕言語
+- ✅ 캐스트 자막 언어
+
+### v55.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v55.1-v55.15 功能列表
+- ✅ Auto Resume, Font Monospace, Color Hue Auto, Peak Limiter, Send Queue, Cast Bandwidth Limit, Lock Screen, Filter Regex, Network Policy, Double Tap Action, Font Weight Custom, Tint Custom, Volume Compressor, Bg Padding, Cast Auto Quality
+
+### v55.1 自动恢复播放 | Auto Resume | 自動再開 | 자동 재개
+- ✅ 自动恢复播放
+- ✅ Auto Resume
+- ✅ 自動再開
+- ✅ 자동 재개
+
+### v55.2 弹幕等宽字体 | Font Monospace | フォントモノスペース | 글꼴 모노스페이스
+- ✅ 弹幕等宽字体
+- ✅ Font Monospace
+- ✅ フォントモノスペース
+- ✅ 글꼴 모노스페이스
+
+### v55.3 自动色调 | Color Hue Auto | 色相自動 | 색조 자동
+- ✅ 自动色调
+- ✅ Color Hue Auto
+- ✅ 色相自動
+- ✅ 색조 자동
+
+### v55.4 峰值限幅 | Peak Limiter | ピックリミッター | 피크 리미터
+- ✅ 峰值限幅
+- ✅ Peak Limiter
+- ✅ ピックリミッター
+- ✅ 피크 리미터
+
+### v55.5 弹幕队列发送 | Send Queue | 送信キュー | 전송 대기열
+- ✅ 弹幕队列发送
+- ✅ Send Queue
+- ✅ 送信キュー
+- ✅ 전송 대기열
+
+### v55.6 投射带宽限制 | Cast Bandwidth Limit | キャスト帯域制限 | 캐스트 대역폭 제한
+- ✅ 投射带宽限制
+- ✅ Cast Bandwidth Limit
+- ✅ キャスト帯域制限
+- ✅ 캐스트 대역폭 제한
+
+### v55.7 手势锁屏 | Lock Screen | 画面ロック | 화면 잠금
+- ✅ 手势锁屏
+- ✅ Lock Screen
+- ✅ 画面ロック
+- ✅ 화면 잠금
+
+### v55.8 正则过滤 | Filter Regex | 正規表現フィルター | 정규식 필터
+- ✅ 正则过滤
+- ✅ Filter Regex
+- ✅ 正規表現フィルター
+- ✅ 정규식 필터
+
+### v55.9 网络策略 | Network Policy | ネットワークポリシー | 네트워크 정책
+- ✅ 网络策略
+- ✅ Network Policy
+- ✅ ネットワークポリシー
+- ✅ 네트워크 정책
+
+### v55.10 双击动作 | Double Tap Action | ダブルタップアクション | 더블 탭 동작
+- ✅ 双击动作
+- ✅ Double Tap Action
+- ✅ ダブルタップアクション
+- ✅ 더블 탭 동작
+
+### v55.11 自定义字体粗细 | Font Weight Custom | フォント太さカスタム | 글꼴 두께 사용자 정의
+- ✅ 自定义字体粗细
+- ✅ Font Weight Custom
+- ✅ フォント太さカスタム
+- ✅ 글꼴 두께 사용자 정의
+
+### v55.12 自定义色调 | Tint Custom | ティントカスタム | 틴트 사용자 정의
+- ✅ 自定义色调
+- ✅ Tint Custom
+- ✅ ティントカスタム
+- ✅ 틴트 사용자 정의
+
+### v55.13 音量压缩 | Volume Compressor | 音量コンプレッサー | 볼륨 컴프레서
+- ✅ 音量压缩
+- ✅ Volume Compressor
+- ✅ 音量コンプレッサー
+- ✅ 볼륨 컴프레서
+
+### v55.14 背景内边距 | Bg Padding | 背景パディング | 배경 패딩
+- ✅ 背景内边距
+- ✅ Bg Padding
+- ✅ 背景パディング
+- ✅ 배경 패딩
+
+### v55.15 投射自动画质 | Cast Auto Quality | キャスト自動画質 | 캐스트 자동 화질
+- ✅ 投射自动画质
+- ✅ Cast Auto Quality
+- ✅ キャスト自動画質
+- ✅ 캐스트 자동 화질
+
+
+### v46.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v46.1-v46.15 功能列表
+- ✅ Loop Memory, Danmaku Font Weight, Auto Gamma, Volume Normalization, Danmaku Stroke Offset, Cast Color Temperature, Gesture Edge Exclusion, Danmaku Row Spacing, Cache Prefetch on WiFi, Progress Bar Thumb Size, Danmaku Send Confirm Dialog, Color White Balance, Volume Limit Threshold, Danmaku Bg Padding, Cast Video Codec
+
+### v46.1 循环记忆 | Loop Memory | ループメモリ | 루프 메모리
+- ✅ 循环记忆
+- ✅ Loop Memory
+- ✅ ループメモリ
+- ✅ 루프 메모리
+
+### v46.2 弹幕字体粗细 | Danmaku Font Weight | コメント太さ | 댓글 글꼴 두께
+- ✅ 弹幕字体粗细
+- ✅ Danmaku Font Weight
+- ✅ コメント太さ
+- ✅ 댓글 글꼴 두께
+
+### v46.3 自动伽马 | Auto Gamma | 自動ガンマ | 자동 감마
+- ✅ 自动伽马
+- ✅ Auto Gamma
+- ✅ 自動ガンマ
+- ✅ 자동 감마
+
+### v46.4 音量标准化 | Volume Normalization | 音量正規化 | 볼륨 정규화
+- ✅ 音量标准化
+- ✅ Volume Normalization
+- ✅ 音量正規化
+- ✅ 볼륨 정규화
+
+### v46.5 弹幕描边偏移 | Danmaku Stroke Offset | コメントストロークオフセット | 댓글 스트로크 오프셋
+- ✅ 弹幕描边偏移
+- ✅ Danmaku Stroke Offset
+- ✅ コメントストロークオフセット
+- ✅ 댓글 스트로크 오프셋
+
+### v46.6 投射色温 | Cast Color Temperature | キャスト色温度 | 캐스트 색온도
+- ✅ 投射色温
+- ✅ Cast Color Temperature
+- ✅ キャスト色温度
+- ✅ 캐스트 색온도
+
+### v46.7 手势边缘排除 | Gesture Edge Exclusion | ジェスチャーエッジ除外 | 제스처 가장자리 제외
+- ✅ 手势边缘排除
+- ✅ Gesture Edge Exclusion
+- ✅ ジェスチャーエッジ除外
+- ✅ 제스처 가장자리 제외
+
+### v46.8 弹幕行间距 | Danmaku Row Spacing | コメント行間 | 댓글 줄 간격
+- ✅ 弹幕行间距
+- ✅ Danmaku Row Spacing
+- ✅ コメント行間
+- ✅ 댓글 줄 간격
+
+### v46.9 WiFi缓存预取 | Cache Prefetch on WiFi | WiFiキャッシュプリロード | WiFi 캐시 프리로드
+- ✅ WiFi缓存预取
+- ✅ Cache Prefetch on WiFi
+- ✅ WiFiキャッシュプリロード
+- ✅ WiFi 캐시 프리로드
+
+### v46.10 进度条滑块大小 | Progress Bar Thumb Size | プログレスバーサムズサイズ | 진행 바 썸 크기
+- ✅ 进度条滑块大小
+- ✅ Progress Bar Thumb Size
+- ✅ プログレスバーサムズサイズ
+- ✅ 진행 바 썸 크기
+
+### v46.11 弹幕发送确认 | Danmaku Send Confirm Dialog | コメント送信確認 | 댓글 전송 확인
+- ✅ 弹幕发送确认
+- ✅ Danmaku Send Confirm Dialog
+- ✅ コメント送信確認
+- ✅ 댓글 전송 확인
+
+### v46.12 白平衡 | Color White Balance | ホワイトバランス | 화이트 밸런스
+- ✅ 白平衡
+- ✅ Color White Balance
+- ✅ ホワイトバランス
+- ✅ 화이트 밸런스
+
+### v46.13 音量限制阈值 | Volume Limit Threshold | 音量制限閾値 | 볼륨 제한 임계값
+- ✅ 音量限制阈值
+- ✅ Volume Limit Threshold
+- ✅ 音量制限閾値
+- ✅ 볼륨 제한 임계값
+
+### v46.14 弹幕背景内边距 | Danmaku Bg Padding | コメント背景パディング | 댓글 배경 패딩
+- ✅ 弹幕背景内边距
+- ✅ Danmaku Bg Padding
+- ✅ コメント背景パディング
+- ✅ 댓글 배경 패딩
+
+### v46.15 投射视频编码 | Cast Video Codec | キャスト動画コーデック | 캐스트 비디오 코덱
+- ✅ 投射视频编码
+- ✅ Cast Video Codec
+- ✅ キャスト動画コーデック
+- ✅ 캐스트 비디오 코덱
+
+### v47.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v47.1-v47.15 功能列表
+- ✅ Resume Prompt, Danmaku Font Spacing, Exposure Compensation, Volume Loudness Enhancer, Danmaku Stroke Blur, Cast Audio Bitrate, Gesture Dead Zone, Danmaku Max Lines, Cache Max Size, Progress Bar Seek Preview, Danmaku Highlight Mention, Color Tint, Volume Channel Balance, Danmaku Bg Border Color, Cast Subtitle Enabled
+
+### v47.1 恢复提示 | Resume Prompt | 再開プロンプト | 재개 프롬프트
+- ✅ 恢复提示
+- ✅ Resume Prompt
+- ✅ 再開プロンプト
+- ✅ 재개 프롬프트
+
+### v47.2 弹幕字间距 | Danmaku Font Spacing | コメント文字間隔 | 댓글 글자 간격
+- ✅ 弹幕字间距
+- ✅ Danmaku Font Spacing
+- ✅ コメント文字間隔
+- ✅ 댓글 글자 간격
+
+### v47.3 曝光补偿 | Exposure Compensation | 露出補正 | 노출 보정
+- ✅ 曝光补偿
+- ✅ Exposure Compensation
+- ✅ 露出補正
+- ✅ 노출 보정
+
+### v47.4 音量响度增强 | Volume Loudness Enhancer | 音量ラウドネス強化 | 볼륨 라우드니스 강화
+- ✅ 音量响度增强
+- ✅ Volume Loudness Enhancer
+- ✅ 音量ラウドネス強化
+- ✅ 볼륨 라우드니스 강화
+
+### v47.5 弹幕描边模糊 | Danmaku Stroke Blur | コメントストロークぼかし | 댓글 스트로크 블러
+- ✅ 弹幕描边模糊
+- ✅ Danmaku Stroke Blur
+- ✅ コメントストロークぼかし
+- ✅ 댓글 스트로크 블러
+
+### v47.6 投射音频码率 | Cast Audio Bitrate | キャスト音声ビットレート | 캐스트 오디오 비트레이트
+- ✅ 投射音频码率
+- ✅ Cast Audio Bitrate
+- ✅ キャスト音声ビットレート
+- ✅ 캐스트 오디오 비트레이트
+
+### v47.7 手势死区 | Gesture Dead Zone | ジェスチャーデッドゾーン | 제스처 데드존
+- ✅ 手势死区
+- ✅ Gesture Dead Zone
+- ✅ ジェスチャーデッドゾーン
+- ✅ 제스처 데드존
+
+### v47.8 弹幕最大行数 | Danmaku Max Lines | コメント最大行数 | 댓글 최대 줄 수
+- ✅ 弹幕最大行数
+- ✅ Danmaku Max Lines
+- ✅ コメント最大行数
+- ✅ 댓글 최대 줄 수
+
+### v47.9 缓存最大大小 | Cache Max Size | キャッシュ最大サイズ | 캐시 최대 크기
+- ✅ 缓存最大大小
+- ✅ Cache Max Size
+- ✅ キャッシュ最大サイズ
+- ✅ 캐시 최대 크기
+
+### v47.10 进度条预览 | Progress Bar Seek Preview | プログレスバーシークプレビュー | 진행 바 탐색 미리보기
+- ✅ 进度条预览
+- ✅ Progress Bar Seek Preview
+- ✅ プログレスバーシークプレビュー
+- ✅ 진행 바 탐색 미리보기
+
+### v47.11 弹幕@高亮 | Danmaku Highlight Mention | コメント@ハイライト | 댓글 @강조
+- ✅ 弹幕@高亮
+- ✅ Danmaku Highlight Mention
+- ✅ コメント@ハイライト
+- ✅ 댓글 @강조
+
+### v47.12 色彩色调 | Color Tint | 色彩ティント | 색상 틴트
+- ✅ 色彩色调
+- ✅ Color Tint
+- ✅ 色彩ティント
+- ✅ 색상 틴트
+
+### v47.13 声道平衡 | Volume Channel Balance | チャンネルバランス | 채널 밸런스
+- ✅ 声道平衡
+- ✅ Volume Channel Balance
+- ✅ チャンネルバランス
+- ✅ 채널 밸런스
+
+### v47.14 弹幕背景边框颜色 | Danmaku Bg Border Color | コメント背景ボーダー色 | 댓글 배경 테두리 색상
+- ✅ 弹幕背景边框颜色
+- ✅ Danmaku Bg Border Color
+- ✅ コメント背景ボーダー色
+- ✅ 댓글 배경 테두리 색상
+
+### v47.15 投射字幕开关 | Cast Subtitle Enabled | キャスト字幕有効化 | 캐스트 자막 활성화
+- ✅ 投射字幕开关
+- ✅ Cast Subtitle Enabled
+- ✅ キャスト字幕有効化
+- ✅ 캐스트 자막 활성화
+
+### v48.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v48.1-v48.15 功能列表
+- ✅ Skip Intro, Danmaku Line Height, Color Black Level, Volume Bass Boost, Danmaku Max Length, Resolution Auto, Danmaku Tap Feedback, Danmaku Filter Regex, Cache Cleanup Interval, Progress Bar Touch Area, Danmaku Font Size Adaptive, Color White Level, Volume Virtualizer, Danmaku Bg Shadow Size, Cast Mirror Quality
+
+### v48.1 跳过片头 | Skip Intro | イントロスキップ | 인트로 건너뛰기
+- ✅ 跳过片头
+- ✅ Skip Intro
+- ✅ イントロスキップ
+- ✅ 인트로 건너뛰기
+
+### v48.2 弹幕行高 | Danmaku Line Height | コメント行の高さ | 댓글 줄 높이
+- ✅ 弹幕行高
+- ✅ Danmaku Line Height
+- ✅ コメント行の高さ
+- ✅ 댓글 줄 높이
+
+### v48.3 黑电平 | Color Black Level | ブラックレベル | 블랙 레벨
+- ✅ 黑电平
+- ✅ Color Black Level
+- ✅ ブラックレベル
+- ✅ 블랙 레벨
+
+### v48.4 低音增强 | Volume Bass Boost | バスブースト | 베이스 부스트
+- ✅ 低音增强
+- ✅ Volume Bass Boost
+- ✅ バスブースト
+- ✅ 베이스 부스트
+
+### v48.5 弹幕最大长度 | Danmaku Max Length | コメント最大長 | 댓글 최대 길이
+- ✅ 弹幕最大长度
+- ✅ Danmaku Max Length
+- ✅ コメント最大長
+- ✅ 댓글 최대 길이
+
+### v48.6 自动分辨率 | Resolution Auto | 解像度自動 | 해상도 자동
+- ✅ 自动分辨率
+- ✅ Resolution Auto
+- ✅ 解像度自動
+- ✅ 해상도 자동
+
+### v48.7 弹幕点击反馈 | Danmaku Tap Feedback | コメントタップフィードバック | 댓글 탭 피드백
+- ✅ 弹幕点击反馈
+- ✅ Danmaku Tap Feedback
+- ✅ コメントタップフィードバック
+- ✅ 댓글 탭 피드백
+
+### v48.8 弹幕正则过滤 | Danmaku Filter Regex | コメント正規表現フィルター | 댓글 정규식 필터
+- ✅ 弹幕正则过滤
+- ✅ Danmaku Filter Regex
+- ✅ コメント正規表現フィルター
+- ✅ 댓글 정규식 필터
+
+### v48.9 缓存清理间隔 | Cache Cleanup Interval | キャッシュクリーンアップ間隔 | 캐시 정리 간격
+- ✅ 缓存清理间隔
+- ✅ Cache Cleanup Interval
+- ✅ キャッシュクリーンアップ間隔
+- ✅ 캐시 정리 간격
+
+### v48.10 进度条触摸区域 | Progress Bar Touch Area | プログレスバータッチエリア | 진행 바 터치 영역
+- ✅ 进度条触摸区域
+- ✅ Progress Bar Touch Area
+- ✅ プログレスバータッチエリア
+- ✅ 진행 바 터치 영역
+
+### v48.11 弹幕字号自适应 | Danmaku Font Size Adaptive | コメントフォントサイズ自動調整 | 댓글 글꼴 크기 적응
+- ✅ 弹幕字号自适应
+- ✅ Danmaku Font Size Adaptive
+- ✅ コメントフォントサイズ自動調整
+- ✅ 댓글 글꼴 크기 적응
+
+### v48.12 白色等级 | Color White Level | ホワイトレベル | 화이트 레벨
+- ✅ 白色等级
+- ✅ Color White Level
+- ✅ ホワイトレベル
+- ✅ 화이트 레벨
+
+### v48.13 音量虚拟器 | Volume Virtualizer | バーチャライザー | 버추얼라이저
+- ✅ 音量虚拟器
+- ✅ Volume Virtualizer
+- ✅ バーチャライザー
+- ✅ 버추얼라이저
+
+### v48.14 弹幕背景阴影大小 | Danmaku Bg Shadow Size | コメント背景シャドウサイズ | 댓글 배경 그림자 크기
+- ✅ 弹幕背景阴影大小
+- ✅ Danmaku Bg Shadow Size
+- ✅ コメント背景シャドウサイズ
+- ✅ 댓글 배경 그림자 크기
+
+### v48.15 投射镜像质量 | Cast Mirror Quality | キャストミラー品質 | 캐스트 미러 품질
+- ✅ 投射镜像质量
+- ✅ Cast Mirror Quality
+- ✅ キャストミラー品質
+- ✅ 캐스트 미러 품질
+
+### v49.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v49.1-v49.15 功能列表
+- ✅ Auto Skip Outro, Danmaku Font Letter Spacing, Color Highlight Recovery, Volume Treble Boost, Danmaku Send Font Size, Cast Audio Sync, Gesture Long Press Action, Danmaku Filter Duplicate, Cache Auto Cleanup Threshold, Progress Bar Chapter Mark, Danmaku Highlight Keyword, Color Shadow Recovery, Volume Replay Gain, Danmaku Bg Gradient Angle, Cast Auto Reconnect
+
+### v49.1 自动跳片尾 | Auto Skip Outro | 自動アウトロスキップ | 자동 아웃트로 건너뛰기
+- ✅ 自动跳片尾
+- ✅ Auto Skip Outro
+- ✅ 自動アウトロスキップ
+- ✅ 자동 아웃트로 건너뛰기
+
+### v49.2 弹幕字母间距 | Danmaku Font Letter Spacing | コメント文字間隔 | 댓글 글자 간격
+- ✅ 弹幕字母间距
+- ✅ Danmaku Font Letter Spacing
+- ✅ コメント文字間隔
+- ✅ 댓글 글자 간격
+
+### v49.3 高光恢复 | Color Highlight Recovery | ハイライト回復 | 하이라이트 복구
+- ✅ 高光恢复
+- ✅ Color Highlight Recovery
+- ✅ ハイライト回復
+- ✅ 하이라이트 복구
+
+### v49.4 高音增强 | Volume Treble Boost | トレブルブースト | 트레블 부스트
+- ✅ 高音增强
+- ✅ Volume Treble Boost
+- ✅ トレブルブースト
+- ✅ 트레블 부스트
+
+### v49.5 弹幕发送字号 | Danmaku Send Font Size | コメント送信フォントサイズ | 댓글 전송 글꼴 크기
+- ✅ 弹幕发送字号
+- ✅ Danmaku Send Font Size
+- ✅ コメント送信フォントサイズ
+- ✅ 댓글 전송 글꼴 크기
+
+### v49.6 投射音频同步 | Cast Audio Sync | キャスト音声同期 | 캐스트 오디오 동기화
+- ✅ 投射音频同步
+- ✅ Cast Audio Sync
+- ✅ キャスト音声同期
+- ✅ 캐스트 오디오 동기화
+
+### v49.7 长按手势动作 | Gesture Long Press Action | ジェスチャー長押しアクション | 제스처 길게 누르기 동작
+- ✅ 长按手势动作
+- ✅ Gesture Long Press Action
+- ✅ ジェスチャー長押しアクション
+- ✅ 제스처 길게 누르기 동작
+
+### v49.8 弹幕去重过滤 | Danmaku Filter Duplicate | コメント重複フィルター | 댓글 중복 필터
+- ✅ 弹幕去重过滤
+- ✅ Danmaku Filter Duplicate
+- ✅ コメント重複フィルター
+- ✅ 댓글 중복 필터
+
+### v49.9 缓存自动清理阈值 | Cache Auto Cleanup Threshold | キャッシュ自動クリーンアップ閾値 | 캐시 자동 정리 임계값
+- ✅ 缓存自动清理阈值
+- ✅ Cache Auto Cleanup Threshold
+- ✅ キャッシュ自動クリーンアップ閾値
+- ✅ 캐시 자동 정리 임계값
+
+### v49.10 进度条章节标记 | Progress Bar Chapter Mark | プログレスバーチャプターマーク | 진행 바 챕터 마크
+- ✅ 进度条章节标记
+- ✅ Progress Bar Chapter Mark
+- ✅ プログレスバーチャプターマーク
+- ✅ 진행 바 챕터 마크
+
+### v49.11 弹幕关键词高亮 | Danmaku Highlight Keyword | コメントキーワードハイライト | 댓글 키워드 강조
+- ✅ 弹幕关键词高亮
+- ✅ Danmaku Highlight Keyword
+- ✅ コメントキーワードハイライト
+- ✅ 댓글 키워드 강조
+
+### v49.12 暗部恢复 | Color Shadow Recovery | シャドウ回復 | 그림자 복구
+- ✅ 暗部恢复
+- ✅ Color Shadow Recovery
+- ✅ シャドウ回復
+- ✅ 그림자 복구
+
+### v49.13 回放增益 | Volume Replay Gain | リプレイゲイン | 리플레이 게인
+- ✅ 回放增益
+- ✅ Volume Replay Gain
+- ✅ リプレイゲイン
+- ✅ 리플레이 게인
+
+### v49.14 弹幕渐变角度 | Danmaku Bg Gradient Angle | コメントグラデーション角度 | 댓글 그라데이션 각도
+- ✅ 弹幕渐变角度
+- ✅ Danmaku Bg Gradient Angle
+- ✅ コメントグラデーション角度
+- ✅ 댓글 그라데이션 각도
+
+### v49.15 投射自动重连 | Cast Auto Reconnect | キャスト自動再接続 | 캐스트 자동 재연결
+- ✅ 投射自动重连
+- ✅ Cast Auto Reconnect
+- ✅ キャスト自動再接続
+- ✅ 캐스트 자동 재연결
+
+### v50.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v50.1-v50.15 功能列表
+- ✅ Auto Next Episode, Danmaku Font Shadow Size, Color Midtone Adjust, Volume Ambient Mode, Danmaku Send Color Custom, Cast Volume Sync, Gesture Pinch Zoom, Danmaku Filter Color, Cache Prebuffer Seconds, Progress Bar Double Tap Seek, Danmaku Font Size Auto, Color Dynamic Range, Volume Night Mode, Danmaku Bg Blur Radius, Cast Auto Discover
+
+### v50.1 自动下一集 | Auto Next Episode | 自動次エピソード | 자동 다음 에피소드
+- ✅ 自动下一集
+- ✅ Auto Next Episode
+- ✅ 自動次エピソード
+- ✅ 자동 다음 에피소드
+
+### v50.2 弹幕阴影大小 | Danmaku Font Shadow Size | コメントシャドウサイズ | 댓글 그림자 크기
+- ✅ 弹幕阴影大小
+- ✅ Danmaku Font Shadow Size
+- ✅ コメントシャドウサイズ
+- ✅ 댓글 그림자 크기
+
+### v50.3 中间调调整 | Color Midtone Adjust | ミッドトーン調整 | 미드톤 조정
+- ✅ 中间调调整
+- ✅ Color Midtone Adjust
+- ✅ ミッドトーン調整
+- ✅ 미드톤 조정
+
+### v50.4 环境音模式 | Volume Ambient Mode | アンビエントモード | 앰비언트 모드
+- ✅ 环境音模式
+- ✅ Volume Ambient Mode
+- ✅ アンビエントモード
+- ✅ 앰비언트 모드
+
+### v50.5 弹幕发送颜色自定义 | Danmaku Send Color Custom | コメント送信色カスタム | 댓글 전송 색상 사용자 정의
+- ✅ 弹幕发送颜色自定义
+- ✅ Danmaku Send Color Custom
+- ✅ コメント送信色カスタム
+- ✅ 댓글 전송 색상 사용자 정의
+
+### v50.6 投射音量同步 | Cast Volume Sync | キャスト音量同期 | 캐스트 볼륨 동기화
+- ✅ 投射音量同步
+- ✅ Cast Volume Sync
+- ✅ キャスト音量同期
+- ✅ 캐스트 볼륨 동기화
+
+### v50.7 手势缩放 | Gesture Pinch Zoom | ジェスチャーピンチズーム | 제스처 핀치 줌
+- ✅ 手势缩放
+- ✅ Gesture Pinch Zoom
+- ✅ ジェスチャーピンチズーム
+- ✅ 제스처 핀치 줌
+
+### v50.8 弹幕颜色过滤 | Danmaku Filter Color | コメント色フィルター | 댓글 색상 필터
+- ✅ 弹幕颜色过滤
+- ✅ Danmaku Filter Color
+- ✅ コメント色フィルター
+- ✅ 댓글 색상 필터
+
+### v50.9 缓存预缓冲秒数 | Cache Prebuffer Seconds | キャッシュプリバッファ秒 | 캐시 프리버퍼 초
+- ✅ 缓存预缓冲秒数
+- ✅ Cache Prebuffer Seconds
+- ✅ キャッシュプリバッファ秒
+- ✅ 캐시 프리버퍼 초
+
+### v50.10 双击快进秒数 | Progress Bar Double Tap Seek | ダブルタップシーク秒 | 더블 탭 탐색 초
+- ✅ 双击快进秒数
+- ✅ Progress Bar Double Tap Seek
+- ✅ ダブルタップシーク秒
+- ✅ 더블 탭 탐색 초
+
+### v50.11 弹幕字号自动 | Danmaku Font Size Auto | コメントフォントサイズ自動 | 댓글 글꼴 크기 자동
+- ✅ 弹幕字号自动
+- ✅ Danmaku Font Size Auto
+- ✅ コメントフォントサイズ自動
+- ✅ 댓글 글꼴 크기 자동
+
+### v50.12 动态范围 | Color Dynamic Range | ダイナミックレンジ | 다이나믹 레인지
+- ✅ 动态范围
+- ✅ Color Dynamic Range
+- ✅ ダイナミックレンジ
+- ✅ 다이나믹 레인지
+
+### v50.13 夜间音量模式 | Volume Night Mode | ナイトモード | 나이트 모드
+- ✅ 夜间音量模式
+- ✅ Volume Night Mode
+- ✅ ナイトモード
+- ✅ 나이트 모드
+
+### v50.14 弹幕背景模糊半径 | Danmaku Bg Blur Radius | コメント背景ぼかし半径 | 댓글 배경 블러 반경
+- ✅ 弹幕背景模糊半径
+- ✅ Danmaku Bg Blur Radius
+- ✅ コメント背景ぼかし半径
+- ✅ 댓글 배경 블러 반경
+
+### v50.15 投射自动发现 | Cast Auto Discover | キャスト自動検出 | 캐스트 자동 검색
+- ✅ 投射自动发现
+- ✅ Cast Auto Discover
+- ✅ キャスト自動検出
+- ✅ 캐스트 자동 검색
+
+### v51.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v51.1-v51.15 功能列表
+- ✅ Auto Skip Intro, Danmaku Outline Width, Shadow Adjust, Loudness Normalize, Send Bg Style, Cast Video Codec, Double Tap Rewind, Filter Length, Cache Max Size, Scrub Speed, Font Spacing, Gamma Correction, Bass Reduce, Bg Border Color, Cast Subtitle Sync
+
+### v51.1 自动跳片头 | Auto Skip Intro | 自動イントロスキップ | 자동 인트로 건너뛰기
+- ✅ 自动跳片头
+- ✅ Auto Skip Intro
+- ✅ 自動イントロスキップ
+- ✅ 자동 인트로 건너뛰기
+
+### v51.2 弹幕描边宽度 | Danmaku Outline Width | コメントアウトライン幅 | 댓글 아웃라인 너비
+- ✅ 弹幕描边宽度
+- ✅ Danmaku Outline Width
+- ✅ コメントアウトライン幅
+- ✅ 댓글 아웃라인 너비
+
+### v51.3 暗部调整 | Shadow Adjust | シャドウ調整 | 그림자 조정
+- ✅ 暗部调整
+- ✅ Shadow Adjust
+- ✅ シャドウ調整
+- ✅ 그림자 조정
+
+### v51.4 响度标准化 | Loudness Normalize | ラウドネス正規化 | 라우드니스 정규화
+- ✅ 响度标准化
+- ✅ Loudness Normalize
+- ✅ ラウドネス正規化
+- ✅ 라우드니스 정규화
+
+### v51.5 发送背景样式 | Send Bg Style | 送信背景スタイル | 전송 배경 스타일
+- ✅ 发送背景样式
+- ✅ Send Bg Style
+- ✅ 送信背景スタイル
+- ✅ 전송 배경 스타일
+
+### v51.6 投射视频编码 | Cast Video Codec | キャスト動画コーデック | 캐스트 비디오 코덱
+- ✅ 投射视频编码
+- ✅ Cast Video Codec
+- ✅ キャスト動画コーデック
+- ✅ 캐스트 비디오 코덱
+
+### v51.7 双击快退 | Double Tap Rewind | ダブルタップ巻き戻し | 더블 탭 되감기
+- ✅ 双击快退
+- ✅ Double Tap Rewind
+- ✅ ダブルタップ巻き戻し
+- ✅ 더블 탭 되감기
+
+### v51.8 弹幕长度过滤 | Filter Length | フィルター長さ | 필터 길이
+- ✅ 弹幕长度过滤
+- ✅ Filter Length
+- ✅ フィルター長さ
+- ✅ 필터 길이
+
+### v51.9 缓存最大大小 | Cache Max Size | キャッシュ最大サイズ | 캐시 최대 크기
+- ✅ 缓存最大大小
+- ✅ Cache Max Size
+- ✅ キャッシュ最大サイズ
+- ✅ 캐시 최대 크기
+
+### v51.10 滑动速度 | Scrub Speed | スクラブ速度 | 스크럽 속도
+- ✅ 滑动速度
+- ✅ Scrub Speed
+- ✅ スクラブ速度
+- ✅ 스크럽 속도
+
+### v51.11 字间距 | Font Spacing | フォント間隔 | 글꼴 간격
+- ✅ 字间距
+- ✅ Font Spacing
+- ✅ フォント間隔
+- ✅ 글꼴 간격
+
+### v51.12 伽马校正 | Gamma Correction | ガンマ補正 | 감마 보정
+- ✅ 伽马校正
+- ✅ Gamma Correction
+- ✅ ガンマ補正
+- ✅ 감마 보정
+
+### v51.13 低音减弱 | Bass Reduce | バス軽減 | 베이스 감소
+- ✅ 低音减弱
+- ✅ Bass Reduce
+- ✅ バス軽減
+- ✅ 베이스 감소
+
+### v51.14 背景边框颜色 | Bg Border Color | 背景ボーダー色 | 배경 테두리 색상
+- ✅ 背景边框颜色
+- ✅ Bg Border Color
+- ✅ 背景ボーダー色
+- ✅ 배경 테두리 색상
+
+### v51.15 投射字幕同步 | Cast Subtitle Sync | キャスト字幕同期 | 캐스트 자막 동기화
+- ✅ 投射字幕同步
+- ✅ Cast Subtitle Sync
+- ✅ キャスト字幕同期
+- ✅ 캐스트 자막 동기화
+
+### v52.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v52.1-v52.15 功能列表
+- ✅ Auto Skip Filler, Line Height, Color Temperature, Channel Swap, Send Anim Style, Cast Resolution Enhance, Swipe Seek, Filter Speed, Prefetch Size, Progress Chapters, Shadow Blur, Saturation Auto, Volume Fade In, Bg Gradient Color, Cast Latency Mode
+
+### v52.1 自动跳离题 | Auto Skip Filler | 自動フィラースキップ | 자동 필러 건너뛰기
+- ✅ 自动跳离题
+- ✅ Auto Skip Filler
+- ✅ 自動フィラースキップ
+- ✅ 자동 필러 건너뛰기
+
+### v52.2 行高 | Line Height | 行の高さ | 줄 높이
+- ✅ 行高
+- ✅ Line Height
+- ✅ 行の高さ
+- ✅ 줄 높이
+
+### v52.3 色温 | Color Temperature | 色温度 | 색온도
+- ✅ 色温
+- ✅ Color Temperature
+- ✅ 色温度
+- ✅ 색온도
+
+### v52.4 声道交换 | Channel Swap | チャンネルスワップ | 채널 스왑
+- ✅ 声道交换
+- ✅ Channel Swap
+- ✅ チャンネルスワップ
+- ✅ 채널 스왑
+
+### v52.5 发送动画样式 | Send Anim Style | 送信アニメーションスタイル | 전송 애니메이션 스타일
+- ✅ 发送动画样式
+- ✅ Send Anim Style
+- ✅ 送信アニメーションスタイル
+- ✅ 전송 애니메이션 스타일
+
+### v52.6 投射分辨率增强 | Cast Resolution Enhance | キャスト解像度強化 | 캐스트 해상도 강화
+- ✅ 投射分辨率增强
+- ✅ Cast Resolution Enhance
+- ✅ キャスト解像度強化
+- ✅ 캐스트 해상도 강화
+
+### v52.7 滑动快进 | Swipe Seek | スワイプシーク | 스와이프 탐색
+- ✅ 滑动快进
+- ✅ Swipe Seek
+- ✅ スワイプシーク
+- ✅ 스와이프 탐색
+
+### v52.8 弹幕速度过滤 | Filter Speed | フィルター速度 | 필터 속도
+- ✅ 弹幕速度过滤
+- ✅ Filter Speed
+- ✅ フィルター速度
+- ✅ 필터 속도
+
+### v52.9 预取大小 | Prefetch Size | プリフェッチサイズ | 프리페치 크기
+- ✅ 预取大小
+- ✅ Prefetch Size
+- ✅ プリフェッチサイズ
+- ✅ 프리페치 크기
+
+### v52.10 进度条章节 | Progress Chapters | プログレスチャプター | 진행 바 챕터
+- ✅ 进度条章节
+- ✅ Progress Chapters
+- ✅ プログレスチャプター
+- ✅ 진행 바 챕터
+
+### v52.11 阴影模糊 | Shadow Blur | シャドウぼかし | 그림자 블러
+- ✅ 阴影模糊
+- ✅ Shadow Blur
+- ✅ シャドウぼかし
+- ✅ 그림자 블러
+
+### v52.12 自动饱和度 | Saturation Auto | 彩度自動 | 채도 자동
+- ✅ 自动饱和度
+- ✅ Saturation Auto
+- ✅ 彩度自動
+- ✅ 채도 자동
+
+### v52.13 音量淡入 | Volume Fade In | 音量フェードイン | 볼륨 페이드 인
+- ✅ 音量淡入
+- ✅ Volume Fade In
+- ✅ 音量フェードイン
+- ✅ 볼륨 페이드 인
+
+### v52.14 背景渐变颜色 | Bg Gradient Color | 背景グラデーション色 | 배경 그라데이션 색상
+- ✅ 背景渐变颜色
+- ✅ Bg Gradient Color
+- ✅ 背景グラデーション色
+- ✅ 배경 그라데이션 색상
+
+### v52.15 投射延迟模式 | Cast Latency Mode | キャスト遅延モード | 캐스트 지연 모드
+- ✅ 投射延迟模式
+- ✅ Cast Latency Mode
+- ✅ キャスト遅延モード
+- ✅ 캐스트 지연 모드
+
+### v53.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v53.1-v53.15 功能列表
+- ✅ Auto Pause, Font Italic, Vignette Custom, Volume Fade Out, Send Timestamp, Cast Audio Codec, Volume Step, Filter Type, Cleanup Policy, Progress Snap, Font Strike, Black Level, Balance Custom, Bg Rounded, Cast Auto Pause
+
+### v53.1 自动暂停 | Auto Pause | 自動一時停止 | 자동 일시정지
+- ✅ 自动暂停
+- ✅ Auto Pause
+- ✅ 自動一時停止
+- ✅ 자동 일시정지
+
+### v53.2 弹幕斜体 | Font Italic | フォントイタリック | 글꼴 이탤릭
+- ✅ 弹幕斜体
+- ✅ Font Italic
+- ✅ フォントイタリック
+- ✅ 글꼴 이탤릭
+
+### v53.3 自定义暗角 | Vignette Custom | ビネットカスタム | 비네트 사용자 정의
+- ✅ 自定义暗角
+- ✅ Vignette Custom
+- ✅ ビネットカスタム
+- ✅ 비네트 사용자 정의
+
+### v53.4 音量淡出 | Volume Fade Out | 音量フェードアウト | 볼륨 페이드 아웃
+- ✅ 音量淡出
+- ✅ Volume Fade Out
+- ✅ 音量フェードアウト
+- ✅ 볼륨 페이드 아웃
+
+### v53.5 发送时间戳 | Send Timestamp | 送信タイムスタンプ | 전송 타임스탬프
+- ✅ 发送时间戳
+- ✅ Send Timestamp
+- ✅ 送信タイムスタンプ
+- ✅ 전송 타임스탬프
+
+### v53.6 投射音频编码 | Cast Audio Codec | キャスト音声コーデック | 캐스트 오디오 코덱
+- ✅ 投射音频编码
+- ✅ Cast Audio Codec
+- ✅ キャスト音声コーデック
+- ✅ 캐스트 오디오 코덱
+
+### v53.7 音量步进 | Volume Step | 音量ステップ | 볼륨 스텝
+- ✅ 音量步进
+- ✅ Volume Step
+- ✅ 音量ステップ
+- ✅ 볼륨 스텝
+
+### v53.8 弹幕类型过滤 | Filter Type | フィルタータイプ | 필터 유형
+- ✅ 弹幕类型过滤
+- ✅ Filter Type
+- ✅ フィルタータイプ
+- ✅ 필터 유형
+
+### v53.9 清理策略 | Cleanup Policy | クリーンアップポリシー | 정리 정책
+- ✅ 清理策略
+- ✅ Cleanup Policy
+- ✅ クリーンアップポリシー
+- ✅ 정리 정책
+
+### v53.10 进度条吸附 | Progress Snap | プログレススナップ | 진행 바 스냅
+- ✅ 进度条吸附
+- ✅ Progress Snap
+- ✅ プログレススナップ
+- ✅ 진행 바 스냅
+
+### v53.11 弹幕删除线 | Font Strike | フォント取り消し線 | 글꼴 취소선
+- ✅ 弹幕删除线
+- ✅ Font Strike
+- ✅ フォント取り消し線
+- ✅ 글꼴 취소선
+
+### v53.12 黑电平 | Black Level | ブラックレベル | 블랙 레벨
+- ✅ 黑电平
+- ✅ Black Level
+- ✅ ブラックレベル
+- ✅ 블랙 레벨
+
+### v53.13 自定义声道平衡 | Balance Custom | バランスカスタム | 밸런스 사용자 정의
+- ✅ 自定义声道平衡
+- ✅ Balance Custom
+- ✅ バランスカスタム
+- ✅ 밸런스 사용자 정의
+
+### v53.14 背景圆角 | Bg Rounded | 背景角丸 | 배경 둥근 모서리
+- ✅ 背景圆角
+- ✅ Bg Rounded
+- ✅ 背景角丸
+- ✅ 배경 둥근 모서리
+
+### v53.15 投射自动暂停 | Cast Auto Pause | キャスト自動一時停止 | 캐스트 자동 일시정지
+- ✅ 投射自动暂停
+- ✅ Cast Auto Pause
+- ✅ キャスト自動一時停止
+- ✅ 캐스트 자동 일시정지
+
+### v54.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v54.1-v54.15 功能列表
+- ✅ Resume Position, Font Size Range, Color Brightness, Surround Mode, Send Draft, Cast Screen Mirror, Brightness Step, Filter User, Wakeup Prefetch, Progress Haptic, Font Underline, Color Contrast, Auto Gain, Bg Gradient Direction, Cast Subtitle Lang
+
+### v54.1 记忆恢复位置 | Resume Position | 再開位置メモリ | 재개 위치 기억
+- ✅ 记忆恢复位置
+- ✅ Resume Position
+- ✅ 再開位置メモリ
+- ✅ 재개 위치 기억
+
+### v54.2 字号范围 | Font Size Range | フォントサイズ範囲 | 글꼴 크기 범위
+- ✅ 字号范围
+- ✅ Font Size Range
+- ✅ フォントサイズ範囲
+- ✅ 글꼴 크기 범위
+
+### v54.3 亮度调节 | Color Brightness | 輝度調整 | 밝기 조정
+- ✅ 亮度调节
+- ✅ Color Brightness
+- ✅ 輝度調整
+- ✅ 밝기 조정
+
+### v54.4 环绕声模式 | Surround Mode | サラウンドモード | 서라운드 모드
+- ✅ 环绕声模式
+- ✅ Surround Mode
+- ✅ サラウンドモード
+- ✅ 서라운드 모드
+
+### v54.5 弹幕草稿箱 | Send Draft | 送信ドラフト | 전송 드래프트
+- ✅ 弹幕草稿箱
+- ✅ Send Draft
+- ✅ 送信ドラフト
+- ✅ 전송 드래프트
+
+### v54.6 投射屏幕镜像 | Cast Screen Mirror | キャスト画面ミラー | 캐스트 화면 미러
+- ✅ 投射屏幕镜像
+- ✅ Cast Screen Mirror
+- ✅ キャスト画面ミラー
+- ✅ 캐스트 화면 미러
+
+### v54.7 亮度手势步进 | Brightness Step | 輝度ステップ | 밝기 스텝
+- ✅ 亮度手势步进
+- ✅ Brightness Step
+- ✅ 輝度ステップ
+- ✅ 밝기 스텝
+
+### v54.8 弹幕用户过滤 | Filter User | ユーザーフィルター | 사용자 필터
+- ✅ 弹幕用户过滤
+- ✅ Filter User
+- ✅ ユーザーフィルター
+- ✅ 사용자 필터
+
+### v54.9 唤醒预加载 | Wakeup Prefetch | ウェイクアッププリロード | 웨이크업 프리로드
+- ✅ 唤醒预加载
+- ✅ Wakeup Prefetch
+- ✅ ウェイクアッププリロード
+- ✅ 웨이크업 프리로드
+
+### v54.10 进度条震动 | Progress Haptic | プログレスハプティック | 진행 바 햅틱
+- ✅ 进度条震动
+- ✅ Progress Haptic
+- ✅ プログレスハプティック
+- ✅ 진행 바 햅틱
+
+### v54.11 弹幕下划线 | Font Underline | フォント下線 | 글꼴 밑줄
+- ✅ 弹幕下划线
+- ✅ Font Underline
+- ✅ フォント下線
+- ✅ 글꼴 밑줄
+
+### v54.12 对比度 | Color Contrast | コントラスト | 대비
+- ✅ 对比度
+- ✅ Color Contrast
+- ✅ コントラスト
+- ✅ 대비
+
+### v54.13 自动增益 | Auto Gain | 自動ゲイン | 자동 게인
+- ✅ 自动增益
+- ✅ Auto Gain
+- ✅ 自動ゲイン
+- ✅ 자동 게인
+
+### v54.14 背景渐变方向 | Bg Gradient Direction | 背景グラデーション方向 | 배경 그라데이션 방향
+- ✅ 背景渐变方向
+- ✅ Bg Gradient Direction
+- ✅ 背景グラデーション方向
+- ✅ 배경 그라데이션 방향
+
+### v54.15 投射字幕语言 | Cast Subtitle Lang | キャスト字幕言語 | 캐스트 자막 언어
+- ✅ 投射字幕语言
+- ✅ Cast Subtitle Lang
+- ✅ キャスト字幕言語
+- ✅ 캐스트 자막 언어
+
+### v55.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v55.1-v55.15 功能列表
+- ✅ Auto Resume, Font Monospace, Color Hue Auto, Peak Limiter, Send Queue, Cast Bandwidth Limit, Lock Screen, Filter Regex, Network Policy, Double Tap Action, Font Weight Custom, Tint Custom, Volume Compressor, Bg Padding, Cast Auto Quality
+
+### v55.1 自动恢复播放 | Auto Resume | 自動再開 | 자동 재개
+- ✅ 自动恢复播放
+- ✅ Auto Resume
+- ✅ 自動再開
+- ✅ 자동 재개
+
+### v55.2 弹幕等宽字体 | Font Monospace | フォントモノスペース | 글꼴 모노스페이스
+- ✅ 弹幕等宽字体
+- ✅ Font Monospace
+- ✅ フォントモノスペース
+- ✅ 글꼴 모노스페이스
+
+### v55.3 自动色调 | Color Hue Auto | 色相自動 | 색조 자동
+- ✅ 自动色调
+- ✅ Color Hue Auto
+- ✅ 色相自動
+- ✅ 색조 자동
+
+### v55.4 峰值限幅 | Peak Limiter | ピックリミッター | 피크 리미터
+- ✅ 峰值限幅
+- ✅ Peak Limiter
+- ✅ ピックリミッター
+- ✅ 피크 리미터
+
+### v55.5 弹幕队列发送 | Send Queue | 送信キュー | 전송 대기열
+- ✅ 弹幕队列发送
+- ✅ Send Queue
+- ✅ 送信キュー
+- ✅ 전송 대기열
+
+### v55.6 投射带宽限制 | Cast Bandwidth Limit | キャスト帯域制限 | 캐스트 대역폭 제한
+- ✅ 投射带宽限制
+- ✅ Cast Bandwidth Limit
+- ✅ キャスト帯域制限
+- ✅ 캐스트 대역폭 제한
+
+### v55.7 手势锁屏 | Lock Screen | 画面ロック | 화면 잠금
+- ✅ 手势锁屏
+- ✅ Lock Screen
+- ✅ 画面ロック
+- ✅ 화면 잠금
+
+### v55.8 正则过滤 | Filter Regex | 正規表現フィルター | 정규식 필터
+- ✅ 正则过滤
+- ✅ Filter Regex
+- ✅ 正規表現フィルター
+- ✅ 정규식 필터
+
+### v55.9 网络策略 | Network Policy | ネットワークポリシー | 네트워크 정책
+- ✅ 网络策略
+- ✅ Network Policy
+- ✅ ネットワークポリシー
+- ✅ 네트워크 정책
+
+### v55.10 双击动作 | Double Tap Action | ダブルタップアクション | 더블 탭 동작
+- ✅ 双击动作
+- ✅ Double Tap Action
+- ✅ ダブルタップアクション
+- ✅ 더블 탭 동작
+
+### v55.11 自定义字体粗细 | Font Weight Custom | フォント太さカスタム | 글꼴 두께 사용자 정의
+- ✅ 自定义字体粗细
+- ✅ Font Weight Custom
+- ✅ フォント太さカスタム
+- ✅ 글꼴 두께 사용자 정의
+
+### v55.12 自定义色调 | Tint Custom | ティントカスタム | 틴트 사용자 정의
+- ✅ 自定义色调
+- ✅ Tint Custom
+- ✅ ティントカスタム
+- ✅ 틴트 사용자 정의
+
+### v55.13 音量压缩 | Volume Compressor | 音量コンプレッサー | 볼륨 컴프레서
+- ✅ 音量压缩
+- ✅ Volume Compressor
+- ✅ 音量コンプレッサー
+- ✅ 볼륨 컴프레서
+
+### v55.14 背景内边距 | Bg Padding | 背景パディング | 배경 패딩
+- ✅ 背景内边距
+- ✅ Bg Padding
+- ✅ 背景パディング
+- ✅ 배경 패딩
+
+### v55.15 投射自动画质 | Cast Auto Quality | キャスト自動画質 | 캐스트 자동 화질
+- ✅ 投射自动画质
+- ✅ Cast Auto Quality
+- ✅ キャスト自動画質
+- ✅ 캐스트 자동 화질
 
 ### v45.x (AI自动维护版) | AI Maintenance Version
 ### v45.1-v45.15 功能列表
