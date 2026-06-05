@@ -1,0 +1,950 @@
+// ==================== v56.x ====================
+
+private fun showResumePositionFineDialog() {
+    val current = spRepository.getResumePositionFine()
+    val items = (0..5).map { it.toString() }.toTypedArray()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Resume Position Fine")
+        .setSingleChoiceItems(items, current) { dialog, which ->
+            spRepository.setResumePositionFine(which)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showFontWeightBoldDialog() {
+    val current = spRepository.getFontWeightBold()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Font Weight Bold")
+        .setSingleChoiceItems(arrayOf("Off", "On"), if (current) 1 else 0) { dialog, which ->
+            spRepository.setFontWeightBold(which == 1)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showContrastAdaptiveDialog() {
+    val current = spRepository.getContrastAdaptive()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Contrast Adaptive")
+        .setSingleChoiceItems(arrayOf("Off", "On"), if (current) 1 else 0) { dialog, which ->
+            spRepository.setContrastAdaptive(which == 1)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showPeakLimiterDialog() {
+    val current = spRepository.getPeakLimiter()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Peak Limiter")
+        .setSingleChoiceItems(arrayOf("Off", "On"), if (current) 1 else 0) { dialog, which ->
+            spRepository.setPeakLimiter(which == 1)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showScrollDirectionDialog() {
+    val current = spRepository.getScrollDirection()
+    val items = (0..2).map { it.toString() }.toTypedArray()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Scroll Direction")
+        .setSingleChoiceItems(items, current) { dialog, which ->
+            spRepository.setScrollDirection(which)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showAutoQualitySwitchDialog() {
+    val current = spRepository.getAutoQualitySwitch()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Auto Quality Switch")
+        .setSingleChoiceItems(arrayOf("Off", "On"), if (current) 1 else 0) { dialog, which ->
+            spRepository.setAutoQualitySwitch(which == 1)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showHapticFeedbackDialog() {
+    val current = spRepository.getHapticFeedback()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Haptic Feedback")
+        .setSingleChoiceItems(arrayOf("Off", "On"), if (current) 1 else 0) { dialog, which ->
+            spRepository.setHapticFeedback(which == 1)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showFilterTopFixedDialog() {
+    val current = spRepository.getFilterTopFixed()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Filter Top Fixed")
+        .setSingleChoiceItems(arrayOf("Off", "On"), if (current) 1 else 0) { dialog, which ->
+            spRepository.setFilterTopFixed(which == 1)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showDownloadBandwidthLimitDialog() {
+    val current = spRepository.getDownloadBandwidthLimit()
+    val items = (0..8).map { it.toString() }.toTypedArray()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Download Bandwidth Limit")
+        .setSingleChoiceItems(items, current) { dialog, which ->
+            spRepository.setDownloadBandwidthLimit(which)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showMarkerColorDialog() {
+    val current = spRepository.getMarkerColor()
+    val items = (0..10).map { it.toString() }.toTypedArray()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Marker Color")
+        .setSingleChoiceItems(items, current) { dialog, which ->
+            spRepository.setMarkerColor(which)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showSendBorderColorDialog() {
+    val current = spRepository.getSendBorderColor()
+    val items = (0..10).map { it.toString() }.toTypedArray()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Send Border Color")
+        .setSingleChoiceItems(items, current) { dialog, which ->
+            spRepository.setSendBorderColor(which)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showHistogramViewDialog() {
+    val current = spRepository.getHistogramView()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Histogram View")
+        .setSingleChoiceItems(arrayOf("Off", "On"), if (current) 1 else 0) { dialog, which ->
+            spRepository.setHistogramView(which == 1)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showCompressorRatioDialog() {
+    val current = spRepository.getCompressorRatio()
+    val items = (0..5).map { it.toString() }.toTypedArray()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Compressor Ratio")
+        .setSingleChoiceItems(items, current) { dialog, which ->
+            spRepository.setCompressorRatio(which)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showShadowBlurDialog() {
+    val current = spRepository.getShadowBlur()
+    val items = (0..10).map { it.toString() }.toTypedArray()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Shadow Blur")
+        .setSingleChoiceItems(items, current) { dialog, which ->
+            spRepository.setShadowBlur(which)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showScreenOffKeepDialog() {
+    val current = spRepository.getScreenOffKeep()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Screen Off Keep")
+        .setSingleChoiceItems(arrayOf("Off", "On"), if (current) 1 else 0) { dialog, which ->
+            spRepository.setScreenOffKeep(which == 1)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+// ==================== v57.x ====================
+
+private fun showSkipSilenceDialog() {
+    val current = spRepository.getSkipSilence()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Skip Silence")
+        .setSingleChoiceItems(arrayOf("Off", "On"), if (current) 1 else 0) { dialog, which ->
+            spRepository.setSkipSilence(which == 1)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showEdgeStyleDialog() {
+    val current = spRepository.getEdgeStyle()
+    val items = (0..4).map { it.toString() }.toTypedArray()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Edge Style")
+        .setSingleChoiceItems(items, current) { dialog, which ->
+            spRepository.setEdgeStyle(which)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showAdaptiveBrightnessDialog() {
+    val current = spRepository.getAdaptiveBrightness()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Adaptive Brightness")
+        .setSingleChoiceItems(arrayOf("Off", "On"), if (current) 1 else 0) { dialog, which ->
+            spRepository.setAdaptiveBrightness(which == 1)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showSurroundEffectDialog() {
+    val current = spRepository.getSurroundEffect()
+    val items = (0..5).map { it.toString() }.toTypedArray()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Surround Effect")
+        .setSingleChoiceItems(items, current) { dialog, which ->
+            spRepository.setSurroundEffect(which)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showAreaTopPercentDialog() {
+    val current = spRepository.getAreaTopPercent()
+    val items = (0..50).map { it.toString() }.toTypedArray()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Area Top Percent")
+        .setSingleChoiceItems(items, current) { dialog, which ->
+            spRepository.setAreaTopPercent(which)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showMediaQueueDialog() {
+    val current = spRepository.getMediaQueue()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Media Queue")
+        .setSingleChoiceItems(arrayOf("Off", "On"), if (current) 1 else 0) { dialog, which ->
+            spRepository.setMediaQueue(which == 1)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showLongPressTimeoutDialog() {
+    val current = spRepository.getLongPressTimeout()
+    val items = (0..5).map { it.toString() }.toTypedArray()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Long Press Timeout")
+        .setSingleChoiceItems(items, current) { dialog, which ->
+            spRepository.setLongPressTimeout(which)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showFilterBottomFixedDialog() {
+    val current = spRepository.getFilterBottomFixed()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Filter Bottom Fixed")
+        .setSingleChoiceItems(arrayOf("Off", "On"), if (current) 1 else 0) { dialog, which ->
+            spRepository.setFilterBottomFixed(which == 1)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showMultiThreadDownloadDialog() {
+    val current = spRepository.getMultiThreadDownload()
+    val items = (0..8).map { it.toString() }.toTypedArray()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Multi Thread Download")
+        .setSingleChoiceItems(items, current) { dialog, which ->
+            spRepository.setMultiThreadDownload(which)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showTrackHeightDialog() {
+    val current = spRepository.getTrackHeight()
+    val items = (0..10).map { it.toString() }.toTypedArray()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Track Height")
+        .setSingleChoiceItems(items, current) { dialog, which ->
+            spRepository.setTrackHeight(which)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showSendEffectTypeDialog() {
+    val current = spRepository.getSendEffectType()
+    val items = (0..5).map { it.toString() }.toTypedArray()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Send Effect Type")
+        .setSingleChoiceItems(items, current) { dialog, which ->
+            spRepository.setSendEffectType(which)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showNightModeEnhancedDialog() {
+    val current = spRepository.getNightModeEnhanced()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Night Mode Enhanced")
+        .setSingleChoiceItems(arrayOf("Off", "On"), if (current) 1 else 0) { dialog, which ->
+            spRepository.setNightModeEnhanced(which == 1)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showDialogStyleDialog() {
+    val current = spRepository.getDialogStyle()
+    val items = (0..3).map { it.toString() }.toTypedArray()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Dialog Style")
+        .setSingleChoiceItems(items, current) { dialog, which ->
+            spRepository.setDialogStyle(which)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showShadowColorDialog() {
+    val current = spRepository.getShadowColor()
+    val items = (0..10).map { it.toString() }.toTypedArray()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Shadow Color")
+        .setSingleChoiceItems(items, current) { dialog, which ->
+            spRepository.setShadowColor(which)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showSubtitlesMultiDialog() {
+    val current = spRepository.getSubtitlesMulti()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Subtitles Multi")
+        .setSingleChoiceItems(arrayOf("Off", "On"), if (current) 1 else 0) { dialog, which ->
+            spRepository.setSubtitlesMulti(which == 1)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+// ==================== v58.x ====================
+
+private fun showAutoRotateDialog() {
+    val current = spRepository.getAutoRotate()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Auto Rotate")
+        .setSingleChoiceItems(arrayOf("Off", "On"), if (current) 1 else 0) { dialog, which ->
+            spRepository.setAutoRotate(which == 1)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showFontUnderlineDialog() {
+    val current = spRepository.getFontUnderline()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Font Underline")
+        .setSingleChoiceItems(arrayOf("Off", "On"), if (current) 1 else 0) { dialog, which ->
+            spRepository.setFontUnderline(which == 1)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showTemperatureAdaptiveDialog() {
+    val current = spRepository.getTemperatureAdaptive()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Temperature Adaptive")
+        .setSingleChoiceItems(arrayOf("Off", "On"), if (current) 1 else 0) { dialog, which ->
+            spRepository.setTemperatureAdaptive(which == 1)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showDialogPositionDialog() {
+    val current = spRepository.getDialogPosition()
+    val items = (0..3).map { it.toString() }.toTypedArray()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Dialog Position")
+        .setSingleChoiceItems(items, current) { dialog, which ->
+            spRepository.setDialogPosition(which)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showScrollAreaPercentDialog() {
+    val current = spRepository.getScrollAreaPercent()
+    val items = (0..100).map { it.toString() }.toTypedArray()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Scroll Area Percent")
+        .setSingleChoiceItems(items, current) { dialog, which ->
+            spRepository.setScrollAreaPercent(which)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showVideoHdrDialog() {
+    val current = spRepository.getVideoHdr()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Video Hdr")
+        .setSingleChoiceItems(arrayOf("Off", "On"), if (current) 1 else 0) { dialog, which ->
+            spRepository.setVideoHdr(which == 1)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showBrightnessModeDialog() {
+    val current = spRepository.getBrightnessMode()
+    val items = (0..2).map { it.toString() }.toTypedArray()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Brightness Mode")
+        .setSingleChoiceItems(items, current) { dialog, which ->
+            spRepository.setBrightnessMode(which)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showFilterScrollDialog() {
+    val current = spRepository.getFilterScroll()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Filter Scroll")
+        .setSingleChoiceItems(arrayOf("Off", "On"), if (current) 1 else 0) { dialog, which ->
+            spRepository.setFilterScroll(which == 1)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showResumeInterruptedDialog() {
+    val current = spRepository.getResumeInterrupted()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Resume Interrupted")
+        .setSingleChoiceItems(arrayOf("Off", "On"), if (current) 1 else 0) { dialog, which ->
+            spRepository.setResumeInterrupted(which == 1)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showBufferColorDialog() {
+    val current = spRepository.getBufferColor()
+    val items = (0..10).map { it.toString() }.toTypedArray()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Buffer Color")
+        .setSingleChoiceItems(items, current) { dialog, which ->
+            spRepository.setBufferColor(which)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showSendFontStyleDialog() {
+    val current = spRepository.getSendFontStyle()
+    val items = (0..3).map { it.toString() }.toTypedArray()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Send Font Style")
+        .setSingleChoiceItems(items, current) { dialog, which ->
+            spRepository.setSendFontStyle(which)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showNormalizationTypeDialog() {
+    val current = spRepository.getNormalizationType()
+    val items = (0..3).map { it.toString() }.toTypedArray()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Normalization Type")
+        .setSingleChoiceItems(items, current) { dialog, which ->
+            spRepository.setNormalizationType(which)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showBorderRadiusDialog() {
+    val current = spRepository.getBorderRadius()
+    val items = (0..20).map { it.toString() }.toTypedArray()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Border Radius")
+        .setSingleChoiceItems(items, current) { dialog, which ->
+            spRepository.setBorderRadius(which)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showReconnectAttemptsDialog() {
+    val current = spRepository.getReconnectAttempts()
+    val items = (0..10).map { it.toString() }.toTypedArray()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Reconnect Attempts")
+        .setSingleChoiceItems(items, current) { dialog, which ->
+            spRepository.setReconnectAttempts(which)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showBrightnessMode2Dialog() {
+    val current = spRepository.getBrightnessMode2()
+    val items = (0..2).map { it.toString() }.toTypedArray()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Brightness Mode2")
+        .setSingleChoiceItems(items, current) { dialog, which ->
+            spRepository.setBrightnessMode2(which)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+// ==================== v59.x ====================
+
+private fun showBackgroundPlayDialog() {
+    val current = spRepository.getBackgroundPlay()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Background Play")
+        .setSingleChoiceItems(arrayOf("Off", "On"), if (current) 1 else 0) { dialog, which ->
+            spRepository.setBackgroundPlay(which == 1)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showFontStrikethroughDialog() {
+    val current = spRepository.getFontStrikethrough()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Font Strikethrough")
+        .setSingleChoiceItems(arrayOf("Off", "On"), if (current) 1 else 0) { dialog, which ->
+            spRepository.setFontStrikethrough(which == 1)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showSkinToneDialog() {
+    val current = spRepository.getSkinTone()
+    val items = (-100..100).map { it.toString() }.toTypedArray()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Skin Tone")
+        .setSingleChoiceItems(items, current - (-100)) { dialog, which ->
+            spRepository.setSkinTone(which + (-100))
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showEqualizerBandsDialog() {
+    val current = spRepository.getEqualizerBands()
+    val items = (0..10).map { it.toString() }.toTypedArray()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Equalizer Bands")
+        .setSingleChoiceItems(items, current) { dialog, which ->
+            spRepository.setEqualizerBands(which)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showFixedAreaPercentDialog() {
+    val current = spRepository.getFixedAreaPercent()
+    val items = (0..50).map { it.toString() }.toTypedArray()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Fixed Area Percent")
+        .setSingleChoiceItems(items, current) { dialog, which ->
+            spRepository.setFixedAreaPercent(which)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showDnsOverHttpsDialog() {
+    val current = spRepository.getDnsOverHttps()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Dns Over Https")
+        .setSingleChoiceItems(arrayOf("Off", "On"), if (current) 1 else 0) { dialog, which ->
+            spRepository.setDnsOverHttps(which == 1)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showVolumeVisualDialog() {
+    val current = spRepository.getVolumeVisual()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Volume Visual")
+        .setSingleChoiceItems(arrayOf("Off", "On"), if (current) 1 else 0) { dialog, which ->
+            spRepository.setVolumeVisual(which == 1)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showFilterTopScrollDialog() {
+    val current = spRepository.getFilterTopScroll()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Filter Top Scroll")
+        .setSingleChoiceItems(arrayOf("Off", "On"), if (current) 1 else 0) { dialog, which ->
+            spRepository.setFilterTopScroll(which == 1)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showPlaylistPrefetchDialog() {
+    val current = spRepository.getPlaylistPrefetch()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Playlist Prefetch")
+        .setSingleChoiceItems(arrayOf("Off", "On"), if (current) 1 else 0) { dialog, which ->
+            spRepository.setPlaylistPrefetch(which == 1)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showScrubStyleDialog() {
+    val current = spRepository.getScrubStyle()
+    val items = (0..3).map { it.toString() }.toTypedArray()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Scrub Style")
+        .setSingleChoiceItems(items, current) { dialog, which ->
+            spRepository.setScrubStyle(which)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showSendShadowColorDialog() {
+    val current = spRepository.getSendShadowColor()
+    val items = (0..10).map { it.toString() }.toTypedArray()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Send Shadow Color")
+        .setSingleChoiceItems(items, current) { dialog, which ->
+            spRepository.setSendShadowColor(which)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showPresetFilterDialog() {
+    val current = spRepository.getPresetFilter()
+    val items = (0..10).map { it.toString() }.toTypedArray()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Preset Filter")
+        .setSingleChoiceItems(items, current) { dialog, which ->
+            spRepository.setPresetFilter(which)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showDialogTimeoutDialog() {
+    val current = spRepository.getDialogTimeout()
+    val items = (0..10).map { it.toString() }.toTypedArray()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Dialog Timeout")
+        .setSingleChoiceItems(items, current) { dialog, which ->
+            spRepository.setDialogTimeout(which)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showShadowOffsetDialog() {
+    val current = spRepository.getShadowOffset()
+    val items = (0..10).map { it.toString() }.toTypedArray()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Shadow Offset")
+        .setSingleChoiceItems(items, current) { dialog, which ->
+            spRepository.setShadowOffset(which)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showQueueRepeatDialog() {
+    val current = spRepository.getQueueRepeat()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Queue Repeat")
+        .setSingleChoiceItems(arrayOf("Off", "On"), if (current) 1 else 0) { dialog, which ->
+            spRepository.setQueueRepeat(which == 1)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+// ==================== v60.x ====================
+
+private fun showLockScreenDialog() {
+    val current = spRepository.getLockScreen()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Lock Screen")
+        .setSingleChoiceItems(arrayOf("Off", "On"), if (current) 1 else 0) { dialog, which ->
+            spRepository.setLockScreen(which == 1)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showFontMonospaceDialog() {
+    val current = spRepository.getFontMonospace()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Font Monospace")
+        .setSingleChoiceItems(arrayOf("Off", "On"), if (current) 1 else 0) { dialog, which ->
+            spRepository.setFontMonospace(which == 1)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showColorGradingDialog() {
+    val current = spRepository.getColorGrading()
+    val items = (0..8).map { it.toString() }.toTypedArray()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Color Grading")
+        .setSingleChoiceItems(items, current) { dialog, which ->
+            spRepository.setColorGrading(which)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showAutoFadeDialog() {
+    val current = spRepository.getAutoFade()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Auto Fade")
+        .setSingleChoiceItems(arrayOf("Off", "On"), if (current) 1 else 0) { dialog, which ->
+            spRepository.setAutoFade(which == 1)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showScrollOverlapDialog() {
+    val current = spRepository.getScrollOverlap()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Scroll Overlap")
+        .setSingleChoiceItems(arrayOf("Off", "On"), if (current) 1 else 0) { dialog, which ->
+            spRepository.setScrollOverlap(which == 1)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showStreamTypeDialog() {
+    val current = spRepository.getStreamType()
+    val items = (0..3).map { it.toString() }.toTypedArray()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Stream Type")
+        .setSingleChoiceItems(items, current) { dialog, which ->
+            spRepository.setStreamType(which)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showEdgeSwipeActionDialog() {
+    val current = spRepository.getEdgeSwipeAction()
+    val items = (0..4).map { it.toString() }.toTypedArray()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Edge Swipe Action")
+        .setSingleChoiceItems(items, current) { dialog, which ->
+            spRepository.setEdgeSwipeAction(which)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showFilterSameUserDialog() {
+    val current = spRepository.getFilterSameUser()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Filter Same User")
+        .setSingleChoiceItems(arrayOf("Off", "On"), if (current) 1 else 0) { dialog, which ->
+            spRepository.setFilterSameUser(which == 1)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showSmartQualityDialog() {
+    val current = spRepository.getSmartQuality()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Smart Quality")
+        .setSingleChoiceItems(arrayOf("Off", "On"), if (current) 1 else 0) { dialog, which ->
+            spRepository.setSmartQuality(which == 1)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showWaveformDialog() {
+    val current = spRepository.getWaveform()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Waveform")
+        .setSingleChoiceItems(arrayOf("Off", "On"), if (current) 1 else 0) { dialog, which ->
+            spRepository.setWaveform(which == 1)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showSendAlignmentDialog() {
+    val current = spRepository.getSendAlignment()
+    val items = (0..2).map { it.toString() }.toTypedArray()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Send Alignment")
+        .setSingleChoiceItems(items, current) { dialog, which ->
+            spRepository.setSendAlignment(which)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showGrainIntensityDialog() {
+    val current = spRepository.getGrainIntensity()
+    val items = (0..100).map { it.toString() }.toTypedArray()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Grain Intensity")
+        .setSingleChoiceItems(items, current) { dialog, which ->
+            spRepository.setGrainIntensity(which)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showDialogSizeDialog() {
+    val current = spRepository.getDialogSize()
+    val items = (0..3).map { it.toString() }.toTypedArray()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Dialog Size")
+        .setSingleChoiceItems(items, current) { dialog, which ->
+            spRepository.setDialogSize(which)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showBgBlurTypeDialog() {
+    val current = spRepository.getBgBlurType()
+    val items = (0..3).map { it.toString() }.toTypedArray()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Bg Blur Type")
+        .setSingleChoiceItems(items, current) { dialog, which ->
+            spRepository.setBgBlurType(which)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
+
+private fun showNetworkTimeoutDialog() {
+    val current = spRepository.getNetworkTimeout()
+    val items = (0..5).map { it.toString() }.toTypedArray()
+    MaterialAlertDialogBuilder(requireContext())
+        .setTitle("Network Timeout")
+        .setSingleChoiceItems(items, current) { dialog, which ->
+            spRepository.setNetworkTimeout(which)
+            dialog.dismiss()
+        }
+        .setNegativeButton("Cancel", null)
+        .show()
+}
