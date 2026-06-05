@@ -1,0 +1,253 @@
+================================================================================
+BLBL v76-v80 对话框函数定义（共75个）
+规则: Bool -> Toggle, Int -> ChoiceDialog, 不创建脚本文件
+================================================================================
+
+------------------------------------------------------------
+  v76.x  (15 个)
+------------------------------------------------------------
+
+   1. [Int] StartupFit
+      -> ChoiceDialog | ChoiceDialog 数值选择 — 0 ~ 4
+
+   2. [Int] FontWeightCustom
+      -> ChoiceDialog | ChoiceDialog 数值选择 — 100 ~ 900
+
+   3. [Int] Cartoon
+      -> ChoiceDialog | ChoiceDialog 数值选择 — 0 ~ 100
+
+   4. [Bool] DialogOverlay
+      -> Toggle | Toggle 开关 — true/false
+
+   5. [Int] ScrollMaxCount
+      -> ChoiceDialog | ChoiceDialog 数值选择 — 0 ~ 100
+
+   6. [Int] IdleTimeout
+      -> ChoiceDialog | ChoiceDialog 数值选择 — 0 ~ 5
+
+   7. [Int] PinchSensitivity
+      -> ChoiceDialog | ChoiceDialog 数值选择 — 0 ~ 10
+
+   8. [Int] FilterDuration
+      -> ChoiceDialog | ChoiceDialog 数值选择 — 0 ~ 5
+
+   9. [Int] PrefetchCount
+      -> ChoiceDialog | ChoiceDialog 数值选择 — 0 ~ 10
+
+  10. [Int] SeekStep
+      -> ChoiceDialog | ChoiceDialog 数值选择 — 0 ~ 10
+
+  11. [Bool] SendDropShadow
+      -> Toggle | Toggle 开关 — true/false
+
+  12. [Int] FrostGlass
+      -> ChoiceDialog | ChoiceDialog 数值选择 — 0 ~ 100
+
+  13. [Bool] FadeOnPause
+      -> Toggle | Toggle 开关 — true/false
+
+  14. [Int] ShadowOffsetX
+      -> ChoiceDialog | ChoiceDialog 数值选择 — -10 ~ 10
+
+  15. [Bool] CustomPort
+      -> Toggle | Toggle 开关 — true/false
+
+------------------------------------------------------------
+  v77.x  (15 个)
+------------------------------------------------------------
+
+  16. [Int] StartupRepeat
+      -> ChoiceDialog | ChoiceDialog 数值选择 — 0 ~ 3
+
+  17. [Int] LetterSpacingCustom
+      -> ChoiceDialog | ChoiceDialog 数值选择 — 0 ~ 10
+
+  18. [Int] SpiralBlur
+      -> ChoiceDialog | ChoiceDialog 数值选择 — 0 ~ 100
+
+  19. [Bool] BoostOnConnect
+      -> Toggle | Toggle 开关 — true/false
+
+  20. [Int] FixedMaxCount
+      -> ChoiceDialog | ChoiceDialog 数值选择 — 0 ~ 50
+
+  21. [Bool] MediaSession
+      -> Toggle | Toggle 开关 — true/false
+
+  22. [Int] SwipeDirection
+      -> ChoiceDialog | ChoiceDialog 数值选择 — 0 ~ 2
+
+  23. [Bool] FilterPremium
+      -> Toggle | Toggle 开关 — true/false
+
+  24. [Int] SegmentIndex
+      -> ChoiceDialog | ChoiceDialog 数值选择 — 0 ~ 5
+
+  25. [Int] DoubleTap
+      -> ChoiceDialog | ChoiceDialog 数值选择 — 0 ~ 4
+
+  26. [Bool] SendBgBorder
+      -> Toggle | Toggle 开关 — true/false
+
+  27. [Int] RadialBlur
+      -> ChoiceDialog | ChoiceDialog 数值选择 — 0 ~ 100
+
+  28. [Bool] AutoLevel
+      -> Toggle | Toggle 开关 — true/false
+
+  29. [Int] ShadowOffsetY
+      -> ChoiceDialog | ChoiceDialog 数值选择 — -10 ~ 10
+
+  30. [Int] VideoProfile
+      -> ChoiceDialog | ChoiceDialog 数值选择 — 0 ~ 5
+
+------------------------------------------------------------
+  v78.x  (15 个)
+------------------------------------------------------------
+
+  31. [Int] StartupBitrate
+      -> ChoiceDialog | ChoiceDialog 数值选择 — 0 ~ 5
+
+  32. [Int] LineSpacingCustom
+      -> ChoiceDialog | ChoiceDialog 数值选择 — 0 ~ 20
+
+  33. [Int] ZoomBlur
+      -> ChoiceDialog | ChoiceDialog 数值选择 — 0 ~ 100
+
+  34. [Int] CompressorMakeup
+      -> ChoiceDialog | ChoiceDialog 数值选择 — 0 ~ 30
+
+  35. [Int] ScrollMinGap
+      -> ChoiceDialog | ChoiceDialog 数值选择 — 0 ~ 10
+
+  36. [Bool] Notification
+      -> Toggle | Toggle 开关 — true/false
+
+  37. [Int] TapZone
+      -> ChoiceDialog | ChoiceDialog 数值选择 — 0 ~ 3
+
+  38. [Bool] FilterColorWhitelist
+      -> Toggle | Toggle 开关 — true/false
+
+  39. [Bool] VideoOnly
+      -> Toggle | Toggle 开关 — true/false
+
+  40. [Int] LongPress
+      -> ChoiceDialog | ChoiceDialog 数值选择 — 0 ~ 3
+
+  41. [Int] SendBgCornerRadius
+      -> ChoiceDialog | ChoiceDialog 数值选择 — 0 ~ 20
+
+  42. [Int] WaveEffect
+      -> ChoiceDialog | ChoiceDialog 数值选择 — 0 ~ 100
+
+  43. [Bool] DialogShowPercent
+      -> Toggle | Toggle 开关 — true/false
+
+  44. [Int] ShadowType
+      -> ChoiceDialog | ChoiceDialog 数值选择 — 0 ~ 3
+
+  45. [Int] AudioCodec
+      -> ChoiceDialog | ChoiceDialog 数值选择 — 0 ~ 4
+
+------------------------------------------------------------
+  v79.x  (15 个)
+------------------------------------------------------------
+
+  46. [Int] StartupAudioDelay
+      -> ChoiceDialog | ChoiceDialog 数值选择 — -500 ~ 500
+
+  47. [Int] FontOutlineWidth
+      -> ChoiceDialog | ChoiceDialog 数值选择 — 0 ~ 5
+
+  48. [Int] RippleEffect
+      -> ChoiceDialog | ChoiceDialog 数值选择 — 0 ~ 100
+
+  49. [Bool] DialogPositionLock
+      -> Toggle | Toggle 开关 — true/false
+
+  50. [Int] ScrollLayerCount
+      -> ChoiceDialog | ChoiceDialog 数值选择 — 0 ~ 5
+
+  51. [Bool] VideoCrop
+      -> Toggle | Toggle 开关 — true/false
+
+  52. [Int] TapAreaSize
+      -> ChoiceDialog | ChoiceDialog 数值选择 — 0 ~ 30
+
+  53. [Int] FilterUserLevel
+      -> ChoiceDialog | ChoiceDialog 数值选择 — 0 ~ 6
+
+  54. [Bool] PreloadNext
+      -> Toggle | Toggle 开关 — true/false
+
+  55. [Int] BufferedColor
+      -> ChoiceDialog | ChoiceDialog 数值选择 — 0 ~ 10
+
+  56. [Bool] SendBgBlur
+      -> Toggle | Toggle 开关 — true/false
+
+  57. [Int] Anamorphic
+      -> ChoiceDialog | ChoiceDialog 数值选择 — 0 ~ 5
+
+  58. [Bool] CompressorAutoMakeup
+      -> Toggle | Toggle 开关 — true/false
+
+  59. [Bool] BgPaddingAuto
+      -> Toggle | Toggle 开关 — true/false
+
+  60. [Int] AutoReconnectDelay
+      -> ChoiceDialog | ChoiceDialog 数值选择 — 0 ~ 5
+
+------------------------------------------------------------
+  v80.x  (15 个)
+------------------------------------------------------------
+
+  61. [Int] StartupScale
+      -> ChoiceDialog | ChoiceDialog 数值选择 — 0 ~ 5
+
+  62. [Int] FontShadowBlur
+      -> ChoiceDialog | ChoiceDialog 数值选择 — 0 ~ 10
+
+  63. [Int] LensFlare
+      -> ChoiceDialog | ChoiceDialog 数值选择 — 0 ~ 100
+
+  64. [Bool] DialogAutoHide
+      -> Toggle | Toggle 开关 — true/false
+
+  65. [Bool] ScrollAutoSpeed
+      -> Toggle | Toggle 开关 — true/false
+
+  66. [Int] VideoCropRatio
+      -> ChoiceDialog | ChoiceDialog 数值选择 — 0 ~ 4
+
+  67. [Int] SwipeAction
+      -> ChoiceDialog | ChoiceDialog 数值选择 — 0 ~ 5
+
+  68. [Bool] FilterBilibiliEmoji
+      -> Toggle | Toggle 开关 — true/false
+
+  69. [Bool] AudioOnly
+      -> Toggle | Toggle 开关 — true/false
+
+  70. [Bool] ShowTime
+      -> Toggle | Toggle 开关 — true/false
+
+  71. [Int] SendPaddingV
+      -> ChoiceDialog | ChoiceDialog 数值选择 — 0 ~ 10
+
+  72. [Int] LightLeak
+      -> ChoiceDialog | ChoiceDialog 数值选择 — 0 ~ 100
+
+  73. [Bool] BoostOnPlay
+      -> Toggle | Toggle 开关 — true/false
+
+  74. [Bool] BgPaddingSymmetric
+      -> Toggle | Toggle 开关 — true/false
+
+  75. [Bool] DeviceInfo
+      -> Toggle | Toggle 开关 — true/false
+
+================================================================================
+合计: 75 个对话框函数
+================================================================================
