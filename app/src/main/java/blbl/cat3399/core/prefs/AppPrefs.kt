@@ -1372,10 +1372,6 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V26_DANMAKU_BORDER_COLOR, value).apply()
 
     // v26.3: 视频画面对比度曲线
-    var v26ContrastCurveMode: Int
-        get() = prefs.getInt(KEY_V26_CONTRAST_CURVE_MODE, 0)
-        set(value) = prefs.edit().putInt(KEY_V26_CONTRAST_CURVE_MODE, value.coerceIn(0, 4)).apply()
-
     // v26.4: 弹幕发送确认震动
     var v26DanmakuSendVibration: Boolean
         get() = prefs.getBoolean(KEY_V26_DANMAKU_SEND_VIBRATION, false)
@@ -1397,10 +1393,6 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V26_DANMAKU_DISPLAY_OPACITY, value.coerceIn(0, 100)).apply()
 
     // v26.8: 视频画面亮度曲线
-    var v26BrightnessCurveMode: Int
-        get() = prefs.getInt(KEY_V26_BRIGHTNESS_CURVE_MODE, 0)
-        set(value) = prefs.edit().putInt(KEY_V26_BRIGHTNESS_CURVE_MODE, value.coerceIn(0, 4)).apply()
-
     // v26.9: 弹幕发送历史记录数
     var v26DanmakuHistoryCount: Int
         get() = prefs.getInt(KEY_V26_DANMAKU_HISTORY_COUNT, 20)
@@ -1427,10 +1419,6 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V26_SWIPE_FUNCTION, value.coerceIn(0, 5)).apply()
 
     // v26.14: 视频画面饱和度曲线
-    var v26SaturationCurveMode: Int
-        get() = prefs.getInt(KEY_V26_SATURATION_CURVE_MODE, 0)
-        set(value) = prefs.edit().putInt(KEY_V26_SATURATION_CURVE_MODE, value.coerceIn(0, 4)).apply()
-
     // v26.15: 弹幕显示字体样式
     var v26DanmakuFontStyle: Int
         get() = prefs.getInt(KEY_V26_DANMAKU_FONT_STYLE, 0)
@@ -1473,10 +1461,6 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V27_DANMAKU_POSITION_ALIGN, value.coerceIn(0, 2)).apply()
 
     // v27.8: 视频画面色调曲线
-    var v27ToneCurveMode: Int
-        get() = prefs.getInt(KEY_V27_TONE_CURVE_MODE, 0)
-        set(value) = prefs.edit().putInt(KEY_V27_TONE_CURVE_MODE, value.coerceIn(0, 4)).apply()
-
     // v27.9: 弹幕发送历史记录大小
     var v27DanmakuHistorySize: Int
         get() = prefs.getInt(KEY_V27_DANMAKU_HISTORY_SIZE, 50)
@@ -1498,20 +1482,12 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V27_DANMAKU_SHADOW_SIZE, value.coerceIn(0, 5)).apply()
 
     // v27.13: 播放器手势双击功能
-    var v27DoubleTapFunction: Int
-        get() = prefs.getInt(KEY_V27_DOUBLE_TAP_FUNCTION, 0)
-        set(value) = prefs.edit().putInt(KEY_V27_DOUBLE_TAP_FUNCTION, value.coerceIn(0, 5)).apply()
-
     // v27.14: 视频画面降噪强度
     var v27DenoiseStrength: Int
         get() = prefs.getInt(KEY_V27_DENOISE_STRENGTH, 0)
         set(value) = prefs.edit().putInt(KEY_V27_DENOISE_STRENGTH, value.coerceIn(0, 100)).apply()
 
     // v27.15: 弹幕显示字体间距
-    var v27DanmakuFontSpacing: Int
-        get() = prefs.getInt(KEY_V27_DANMAKU_FONT_SPACING, 0)
-        set(value) = prefs.edit().putInt(KEY_V27_DANMAKU_FONT_SPACING, value.coerceIn(-5, 10)).apply()
-    
     // v28.1: 视频播放列表自动跳过
     var v28AutoSkip: Boolean
         get() = prefs.getBoolean(KEY_V28_AUTO_SKIP, false)
@@ -1618,10 +1594,6 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V29_CACHE_CLEANUP_THRESHOLD, value.coerceIn(50, 1000)).apply()
     
     // v29.7: 弹幕显示位置偏移
-    var v29DanmakuPositionOffset: Int
-        get() = prefs.getInt(KEY_V29_DANMAKU_POSITION_OFFSET, 0)
-        set(value) = prefs.edit().putInt(KEY_V29_DANMAKU_POSITION_OFFSET, value.coerceIn(-50, 50)).apply()
-    
     // v29.8: 视频画面色彩色温
     var v29ColorTemperature: Int
         get() = prefs.getInt(KEY_V29_COLOR_TEMPERATURE, 0)
@@ -1633,25 +1605,13 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putBoolean(KEY_V29_HISTORY_EXPORT, value).apply()
     
     // v29.10: 播放器进度条样式
-    var v29ProgressBarStyle: Int
-        get() = prefs.getInt(KEY_V29_PROGRESS_BAR_STYLE, 0)
-        set(value) = prefs.edit().putInt(KEY_V29_PROGRESS_BAR_STYLE, value.coerceIn(0, 4)).apply()
-    
     // v29.11: 视频投射画面质量
-    var v29CastQuality: Int
-        get() = prefs.getInt(KEY_V29_CAST_QUALITY, 0)
-        set(value) = prefs.edit().putInt(KEY_V29_CAST_QUALITY, value.coerceIn(0, 3)).apply()
-    
     // v29.12: 弹幕字体背景透明度
     var v29DanmakuBackgroundOpacity: Int
         get() = prefs.getInt(KEY_V29_DANMAKU_BACKGROUND_OPACITY, 0)
         set(value) = prefs.edit().putInt(KEY_V29_DANMAKU_BACKGROUND_OPACITY, value.coerceIn(0, 100)).apply()
     
     // v29.13: 播放器手势长按功能
-    var v29LongPressFunction: Int
-        get() = prefs.getInt(KEY_V29_LONG_PRESS_FUNCTION, 0)
-        set(value) = prefs.edit().putInt(KEY_V29_LONG_PRESS_FUNCTION, value.coerceIn(0, 5)).apply()
-    
     // v29.14: 视频画面色彩伽马
     var v29ColorGamma: Int
         get() = prefs.getInt(KEY_V29_COLOR_GAMMA, 0)
@@ -1708,10 +1668,6 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putBoolean(KEY_V30_HISTORY_IMPORT, value).apply()
     
     // v30.10: 播放器进度条颜色
-    var v30ProgressBarColor: Int
-        get() = prefs.getInt(KEY_V30_PROGRESS_BAR_COLOR, 0)
-        set(value) = prefs.edit().putInt(KEY_V30_PROGRESS_BAR_COLOR, value.coerceIn(0, 5)).apply()
-    
     // v30.11: 视频投射画面延迟
     var v30CastLatency: Int
         get() = prefs.getInt(KEY_V30_CAST_LATENCY, 0)
@@ -1723,10 +1679,6 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V30_DANMAKU_BACKGROUND_SHADOW, value.coerceIn(0, 100)).apply()
     
     // v30.13: 播放器手势滑动功能
-    var v30SwipeFunction: Int
-        get() = prefs.getInt(KEY_V30_SWIPE_FUNCTION, 0)
-        set(value) = prefs.edit().putInt(KEY_V30_SWIPE_FUNCTION, value.coerceIn(0, 5)).apply()
-    
     // v30.14: 视频画面色彩模糊
     var v30ColorBlur: Int
         get() = prefs.getInt(KEY_V30_COLOR_BLUR, 0)
@@ -1788,10 +1740,6 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V31_PROGRESS_BAR_ANIMATION, value.coerceIn(0, 4)).apply()
     
     // v31.11: 视频投射画面缓冲策略
-    var v31CastBufferStrategy: Int
-        get() = prefs.getInt(KEY_V31_CAST_BUFFER_STRATEGY, 0)
-        set(value) = prefs.edit().putInt(KEY_V31_CAST_BUFFER_STRATEGY, value.coerceIn(0, 3)).apply()
-    
     // v31.12: 弹幕字体背景渐变方向
     var v31DanmakuBackgroundGradientDirection: Int
         get() = prefs.getInt(KEY_V31_DANMAKU_BACKGROUND_GRADIENT_DIRECTION, 0)
@@ -1923,10 +1871,6 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V33_DANMAKU_POSITION_ALIGN_OFFSET_CURVE, value.coerceIn(0, 3)).apply()
     
     // v33.8: 视频画面色彩对比度曲线
-    var v33ColorContrastCurve: Int
-        get() = prefs.getInt(KEY_V33_COLOR_CONTRAST_CURVE, 0)
-        set(value) = prefs.edit().putInt(KEY_V33_COLOR_CONTRAST_CURVE, value.coerceIn(0, 3)).apply()
-    
     // v33.9: 弹幕发送历史记录导入格式
     var v33HistoryImportFormat: Int
         get() = prefs.getInt(KEY_V33_HISTORY_IMPORT_FORMAT, 0)
@@ -1953,15 +1897,7 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V33_SWIPE_DIRECTION, value.coerceIn(0, 3)).apply()
     
     // v33.14: 视频画面色彩饱和度曲线
-    var v33ColorSaturationCurve: Int
-        get() = prefs.getInt(KEY_V33_COLOR_SATURATION_CURVE, 0)
-        set(value) = prefs.edit().putInt(KEY_V33_COLOR_SATURATION_CURVE, value.coerceIn(0, 3)).apply()
-    
     // v33.15: 弹幕显示字体发光颜色
-    var v33DanmakuFontGlowColor: Int
-        get() = prefs.getInt(KEY_V33_DANMAKU_FONT_GLOW_COLOR, 0)
-        set(value) = prefs.edit().putInt(KEY_V33_DANMAKU_FONT_GLOW_COLOR, value.coerceIn(0, 5)).apply()
-    
     // v34.1: 视频播放列表自动循环模式
     var v34AutoLoopMode: Int
         get() = prefs.getInt(KEY_V34_AUTO_LOOP_MODE, 0)
@@ -1973,70 +1909,18 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V34_DANMAKU_BACKGROUND_GRADIENT_TYPE, value.coerceIn(0, 4)).apply()
     
     // v34.3: 视频画面色彩色调曲线
-    var v34ColorHueCurve: Int
-        get() = prefs.getInt(KEY_V34_COLOR_HUE_CURVE, 0)
-        set(value) = prefs.edit().putInt(KEY_V34_COLOR_HUE_CURVE, value.coerceIn(0, 3)).apply()
-    
     // v34.4: 弹幕发送确认震动强度曲线
-    var v34VibrationStrengthCurve: Int
-        get() = prefs.getInt(KEY_V34_VIBRATION_STRENGTH_CURVE, 0)
-        set(value) = prefs.edit().putInt(KEY_V34_VIBRATION_STRENGTH_CURVE, value.coerceIn(0, 3)).apply()
-    
     // v34.5: 播放器音量限制阈值曲线
-    var v34VolumeLimitThresholdCurve: Int
-        get() = prefs.getInt(KEY_V34_VOLUME_LIMIT_THRESHOLD_CURVE, 0)
-        set(value) = prefs.edit().putInt(KEY_V34_VOLUME_LIMIT_THRESHOLD_CURVE, value.coerceIn(0, 3)).apply()
-    
     // v34.6: 视频缓存清理策略曲线
-    var v34CacheCleanupStrategyCurve: Int
-        get() = prefs.getInt(KEY_V34_CACHE_CLEANUP_STRATEGY_CURVE, 0)
-        set(value) = prefs.edit().putInt(KEY_V34_CACHE_CLEANUP_STRATEGY_CURVE, value.coerceIn(0, 3)).apply()
-    
     // v34.7: 弹幕显示位置对齐方式曲线
-    var v34DanmakuPositionAlignModeCurve: Int
-        get() = prefs.getInt(KEY_V34_DANMAKU_POSITION_ALIGN_MODE_CURVE, 0)
-        set(value) = prefs.edit().putInt(KEY_V34_DANMAKU_POSITION_ALIGN_MODE_CURVE, value.coerceIn(0, 3)).apply()
-    
     // v34.8: 视频画面色彩降噪曲线
-    var v34ColorDenoiseCurve: Int
-        get() = prefs.getInt(KEY_V34_COLOR_DENOISE_CURVE, 0)
-        set(value) = prefs.edit().putInt(KEY_V34_COLOR_DENOISE_CURVE, value.coerceIn(0, 3)).apply()
-    
     // v34.9: 弹幕发送历史记录导出格式
-    var v34HistoryExportFormat: Int
-        get() = prefs.getInt(KEY_V34_HISTORY_EXPORT_FORMAT, 0)
-        set(value) = prefs.edit().putInt(KEY_V34_HISTORY_EXPORT_FORMAT, value.coerceIn(0, 3)).apply()
-    
     // v34.10: 播放器进度条颜色渐变
-    var v34ProgressBarColorGradient: Int
-        get() = prefs.getInt(KEY_V34_PROGRESS_BAR_COLOR_GRADIENT, 0)
-        set(value) = prefs.edit().putInt(KEY_V34_PROGRESS_BAR_COLOR_GRADIENT, value.coerceIn(0, 5)).apply()
-    
     // v34.11: 视频投射画面延迟策略
-    var v34CastLatencyStrategy: Int
-        get() = prefs.getInt(KEY_V34_CAST_LATENCY_STRATEGY, 0)
-        set(value) = prefs.edit().putInt(KEY_V34_CAST_LATENCY_STRATEGY, value.coerceIn(0, 3)).apply()
-    
     // v34.12: 弹幕字体背景渐变透明度
-    var v34DanmakuBackgroundGradientOpacity: Int
-        get() = prefs.getInt(KEY_V34_DANMAKU_BACKGROUND_GRADIENT_OPACITY, 0)
-        set(value) = prefs.edit().putInt(KEY_V34_DANMAKU_BACKGROUND_GRADIENT_OPACITY, value.coerceIn(0, 100)).apply()
-    
     // v34.13: 播放器手势滑动速度
-    var v34SwipeSpeed: Int
-        get() = prefs.getInt(KEY_V34_SWIPE_SPEED, 50)
-        set(value) = prefs.edit().putInt(KEY_V34_SWIPE_SPEED, value.coerceIn(10, 100)).apply()
-    
     // v34.14: 视频画面色彩模糊曲线
-    var v34ColorBlurCurve: Int
-        get() = prefs.getInt(KEY_V34_COLOR_BLUR_CURVE, 0)
-        set(value) = prefs.edit().putInt(KEY_V34_COLOR_BLUR_CURVE, value.coerceIn(0, 3)).apply()
-    
     // v34.15: 弹幕显示字体发光强度
-    var v34DanmakuFontGlowStrength: Int
-        get() = prefs.getInt(KEY_V34_DANMAKU_FONT_GLOW_STRENGTH, 0)
-        set(value) = prefs.edit().putInt(KEY_V34_DANMAKU_FONT_GLOW_STRENGTH, value.coerceIn(0, 100)).apply()
-    
     // v35.1: 视频播放列表自动跳过片头片尾
     var v35AutoSkipIntroOutro: Boolean
         get() = prefs.getBoolean(KEY_V35_AUTO_SKIP_INTRO_OUTRO, false)
@@ -2123,20 +2007,12 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V36_DANMAKU_FONT_STROKE_COLOR, value.coerceIn(0, 5)).apply()
     
     // v36.3: 视频画面色彩色温
-    var v36ColorTemperature: Int
-        get() = prefs.getInt(KEY_V36_COLOR_TEMPERATURE, 0)
-        set(value) = prefs.edit().putInt(KEY_V36_COLOR_TEMPERATURE, value.coerceIn(-50, 50)).apply()
-    
     // v36.4: 弹幕发送确认震动模式
     var v36VibrationPattern: Int
         get() = prefs.getInt(KEY_V36_VIBRATION_PATTERN, 0)
         set(value) = prefs.edit().putInt(KEY_V36_VIBRATION_PATTERN, value.coerceIn(0, 5)).apply()
     
     // v36.5: 播放器音量步进值
-    var v36VolumeStep: Int
-        get() = prefs.getInt(KEY_V36_VOLUME_STEP, 5)
-        set(value) = prefs.edit().putInt(KEY_V36_VOLUME_STEP, value.coerceIn(1, 20)).apply()
-    
     // v36.6: 视频缓存大小限制
     var v36CacheSizeLimit: Int
         get() = prefs.getInt(KEY_V36_CACHE_SIZE_LIMIT, 500)
@@ -2148,20 +2024,8 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V36_DANMAKU_DISPLAY_AREA, value.coerceIn(25, 100)).apply()
     
     // v36.8: 视频画面色彩伽马
-    var v36ColorGamma: Int
-        get() = prefs.getInt(KEY_V36_COLOR_GAMMA, 0)
-        set(value) = prefs.edit().putInt(KEY_V36_COLOR_GAMMA, value.coerceIn(-50, 50)).apply()
-    
     // v36.9: 弹幕发送历史记录搜索
-    var v36HistorySearch: Boolean
-        get() = prefs.getBoolean(KEY_V36_HISTORY_SEARCH, false)
-        set(value) = prefs.edit().putBoolean(KEY_V36_HISTORY_SEARCH, value).apply()
-    
     // v36.10: 播放器进度条样式
-    var v36ProgressBarStyle: Int
-        get() = prefs.getInt(KEY_V36_PROGRESS_BAR_STYLE, 0)
-        set(value) = prefs.edit().putInt(KEY_V36_PROGRESS_BAR_STYLE, value.coerceIn(0, 5)).apply()
-    
     // v36.11: 视频投射画面分辨率
     var v36CastResolution: Int
         get() = prefs.getInt(KEY_V36_CAST_RESOLUTION, 0)
@@ -2183,20 +2047,8 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V36_COLOR_HUE_SHIFT, value.coerceIn(-180, 180)).apply()
     
     // v36.15: 弹幕显示字体发光颜色
-    var v36DanmakuFontGlowColor: Int
-        get() = prefs.getInt(KEY_V36_DANMAKU_FONT_GLOW_COLOR, 0)
-        set(value) = prefs.edit().putInt(KEY_V36_DANMAKU_FONT_GLOW_COLOR, value.coerceIn(0, 5)).apply()
-    
     // v37.1: 视频播放列表随机播放
-    var v37PlaylistShuffle: Boolean
-        get() = prefs.getBoolean(KEY_V37_PLAYLIST_SHUFFLE, false)
-        set(value) = prefs.edit().putBoolean(KEY_V37_PLAYLIST_SHUFFLE, value).apply()
-    
     // v37.2: 弹幕字体阴影颜色
-    var v37DanmakuShadowColor: Int
-        get() = prefs.getInt(KEY_V37_DANMAKU_SHADOW_COLOR, 0)
-        set(value) = prefs.edit().putInt(KEY_V37_DANMAKU_SHADOW_COLOR, value.coerceIn(0, 5)).apply()
-    
     // v37.3: 视频画面色彩鲜艳度
     var v37ColorVividness: Int
         get() = prefs.getInt(KEY_V37_COLOR_VIVIDNESS, 0)
@@ -2208,10 +2060,6 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V37_VIBRATION_DECAY, value.coerceIn(0, 100)).apply()
     
     // v37.5: 播放器音量淡入淡出
-    var v37VolumeFade: Boolean
-        get() = prefs.getBoolean(KEY_V37_VOLUME_FADE, false)
-        set(value) = prefs.edit().putBoolean(KEY_V37_VOLUME_FADE, value).apply()
-    
     // v37.6: 视频缓存预加载
     var v37CachePreload: Boolean
         get() = prefs.getBoolean(KEY_V37_CACHE_PRELOAD, false)
@@ -2228,25 +2076,13 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V37_COLOR_TONEMAP, value.coerceIn(0, 5)).apply()
     
     // v37.9: 弹幕发送历史记录导出
-    var v37HistoryExport: Boolean
-        get() = prefs.getBoolean(KEY_V37_HISTORY_EXPORT, false)
-        set(value) = prefs.edit().putBoolean(KEY_V37_HISTORY_EXPORT, value).apply()
-    
     // v37.10: 播放器进度条高度
-    var v37ProgressBarHeight: Int
-        get() = prefs.getInt(KEY_V37_PROGRESS_BAR_HEIGHT, 3)
-        set(value) = prefs.edit().putInt(KEY_V37_PROGRESS_BAR_HEIGHT, value.coerceIn(1, 10)).apply()
-    
     // v37.11: 视频投射画面码率
     var v37CastBitrate: Int
         get() = prefs.getInt(KEY_V37_CAST_BITRATE, 0)
         set(value) = prefs.edit().putInt(KEY_V37_CAST_BITRATE, value.coerceIn(0, 5)).apply()
     
     // v37.12: 弹幕字体背景边框颜色
-    var v37DanmakuBorderColor: Int
-        get() = prefs.getInt(KEY_V37_DANMAKU_BORDER_COLOR, 0)
-        set(value) = prefs.edit().putInt(KEY_V37_DANMAKU_BORDER_COLOR, value.coerceIn(0, 5)).apply()
-    
     // v37.13: 播放器手势双击功能
     var v37GestureDoubleTap: Int
         get() = prefs.getInt(KEY_V37_GESTURE_DOUBLE_TAP, 0)
@@ -2263,60 +2099,32 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V37_DANMAKU_GLOW_INTENSITY, value.coerceIn(0, 100)).apply()
     
     // v38.1: 视频播放列表循环模式
-    var v38PlaylistLoopMode: Int
-        get() = prefs.getInt(KEY_V38_PLAYLIST_LOOP_MODE, 0)
-        set(value) = prefs.edit().putInt(KEY_V38_PLAYLIST_LOOP_MODE, value.coerceIn(0, 3)).apply()
-    
     // v38.2: 弹幕字体背景圆角
     var v38DanmakuBackgroundRadius: Int
         get() = prefs.getInt(KEY_V38_DANMAKU_BACKGROUND_RADIUS, 0)
         set(value) = prefs.edit().putInt(KEY_V38_DANMAKU_BACKGROUND_RADIUS, value.coerceIn(0, 20)).apply()
     
     // v38.3: 视频画面色彩对比度曲线
-    var v38ColorContrastCurve: Int
-        get() = prefs.getInt(KEY_V38_COLOR_CONTRAST_CURVE, 0)
-        set(value) = prefs.edit().putInt(KEY_V38_COLOR_CONTRAST_CURVE, value.coerceIn(0, 5)).apply()
-    
     // v38.4: 弹幕发送确认震动频率
     var v38VibrationFrequency: Int
         get() = prefs.getInt(KEY_V38_VIBRATION_FREQUENCY, 0)
         set(value) = prefs.edit().putInt(KEY_V38_VIBRATION_FREQUENCY, value.coerceIn(0, 100)).apply()
     
     // v38.5: 播放器音量限制模式
-    var v38VolumeLimitMode: Int
-        get() = prefs.getInt(KEY_V38_VOLUME_LIMIT_MODE, 0)
-        set(value) = prefs.edit().putInt(KEY_V38_VOLUME_LIMIT_MODE, value.coerceIn(0, 3)).apply()
-    
     // v38.6: 视频缓存清理策略
-    var v38CacheCleanupStrategy: Int
-        get() = prefs.getInt(KEY_V38_CACHE_CLEANUP_STRATEGY, 0)
-        set(value) = prefs.edit().putInt(KEY_V38_CACHE_CLEANUP_STRATEGY, value.coerceIn(0, 3)).apply()
-    
     // v38.7: 弹幕显示位置偏移X
     var v38DanmakuOffsetX: Int
         get() = prefs.getInt(KEY_V38_DANMAKU_OFFSET_X, 0)
         set(value) = prefs.edit().putInt(KEY_V38_DANMAKU_OFFSET_X, value.coerceIn(-100, 100)).apply()
     
     // v38.8: 视频画面色彩亮度曲线
-    var v38ColorBrightnessCurve: Int
-        get() = prefs.getInt(KEY_V38_COLOR_BRIGHTNESS_CURVE, 0)
-        set(value) = prefs.edit().putInt(KEY_V38_COLOR_BRIGHTNESS_CURVE, value.coerceIn(0, 5)).apply()
-    
     // v38.9: 弹幕发送历史记录搜索模式
     var v38HistorySearchMode: Int
         get() = prefs.getInt(KEY_V38_HISTORY_SEARCH_MODE, 0)
         set(value) = prefs.edit().putInt(KEY_V38_HISTORY_SEARCH_MODE, value.coerceIn(0, 3)).apply()
     
     // v38.10: 播放器进度条动画
-    var v38ProgressBarAnimation: Boolean
-        get() = prefs.getBoolean(KEY_V38_PROGRESS_BAR_ANIMATION, true)
-        set(value) = prefs.edit().putBoolean(KEY_V38_PROGRESS_BAR_ANIMATION, value).apply()
-    
     // v38.11: 视频投射画面延迟
-    var v38CastLatency: Int
-        get() = prefs.getInt(KEY_V38_CAST_LATENCY, 0)
-        set(value) = prefs.edit().putInt(KEY_V38_CAST_LATENCY, value.coerceIn(0, 5000)).apply()
-    
     // v38.12: 弹幕字体背景渐变方向
     var v38DanmakuGradientDirection: Int
         get() = prefs.getInt(KEY_V38_DANMAKU_GRADIENT_DIRECTION, 0)
@@ -2328,10 +2136,6 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V38_GESTURE_SWIPE_SENSITIVITY, value.coerceIn(10, 100)).apply()
     
     // v38.14: 视频画面色彩饱和度曲线
-    var v38ColorSaturationCurve: Int
-        get() = prefs.getInt(KEY_V38_COLOR_SATURATION_CURVE, 0)
-        set(value) = prefs.edit().putInt(KEY_V38_COLOR_SATURATION_CURVE, value.coerceIn(0, 5)).apply()
-    
     // v38.15: 弹幕显示字体描边宽度
     var v38DanmakuFontStrokeWidth: Int
         get() = prefs.getInt(KEY_V38_DANMAKU_FONT_STROKE_WIDTH, 0)
@@ -2348,35 +2152,19 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V39_DANMAKU_BACKGROUND_ALPHA_CURVE, value.coerceIn(0, 5)).apply()
     
     // v39.3: 视频画面色彩锐化强度
-    var v39ColorSharpen: Int
-        get() = prefs.getInt(KEY_V39_COLOR_SHARPEN, 0)
-        set(value) = prefs.edit().putInt(KEY_V39_COLOR_SHARPEN, value.coerceIn(0, 100)).apply()
-    
     // v39.4: 弹幕发送确认震动模式曲线
     var v39VibrationPatternCurve: Int
         get() = prefs.getInt(KEY_V39_VIBRATION_PATTERN_CURVE, 0)
         set(value) = prefs.edit().putInt(KEY_V39_VIBRATION_PATTERN_CURVE, value.coerceIn(0, 5)).apply()
     
     // v39.5: 播放器音量平衡
-    var v39VolumeBalance: Int
-        get() = prefs.getInt(KEY_V39_VOLUME_BALANCE, 0)
-        set(value) = prefs.edit().putInt(KEY_V39_VOLUME_BALANCE, value.coerceIn(-100, 100)).apply()
-    
     // v39.6: 视频缓存预加载大小
-    var v39CachePreloadSize: Int
-        get() = prefs.getInt(KEY_V39_CACHE_PRELOAD_SIZE, 50)
-        set(value) = prefs.edit().putInt(KEY_V39_CACHE_PRELOAD_SIZE, value.coerceIn(10, 500)).apply()
-    
     // v39.7: 弹幕显示位置偏移Y
     var v39DanmakuOffsetY: Int
         get() = prefs.getInt(KEY_V39_DANMAKU_OFFSET_Y, 0)
         set(value) = prefs.edit().putInt(KEY_V39_DANMAKU_OFFSET_Y, value.coerceIn(-100, 100)).apply()
     
     // v39.8: 视频画面色彩降噪强度
-    var v39ColorDenoise: Int
-        get() = prefs.getInt(KEY_V39_COLOR_DENOISE, 0)
-        set(value) = prefs.edit().putInt(KEY_V39_COLOR_DENOISE, value.coerceIn(0, 100)).apply()
-    
     // v39.9: 弹幕发送历史记录自动清理
     var v39HistoryAutoCleanup: Boolean
         get() = prefs.getBoolean(KEY_V39_HISTORY_AUTO_CLEANUP, false)
@@ -2388,10 +2176,6 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putBoolean(KEY_V39_PROGRESS_BAR_GRADIENT, value).apply()
     
     // v39.11: 视频投射画面缓冲策略
-    var v39CastBufferStrategy: Int
-        get() = prefs.getInt(KEY_V39_CAST_BUFFER_STRATEGY, 0)
-        set(value) = prefs.edit().putInt(KEY_V39_CAST_BUFFER_STRATEGY, value.coerceIn(0, 3)).apply()
-    
     // v39.12: 弹幕字体背景渐变速度
     var v39DanmakuGradientSpeed: Int
         get() = prefs.getInt(KEY_V39_DANMAKU_GRADIENT_SPEED, 0)
@@ -2403,10 +2187,6 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V39_GESTURE_LONG_PRESS, value.coerceIn(0, 5)).apply()
     
     // v39.14: 视频画面色彩模糊强度
-    var v39ColorBlur: Int
-        get() = prefs.getInt(KEY_V39_COLOR_BLUR, 0)
-        set(value) = prefs.edit().putInt(KEY_V39_COLOR_BLUR, value.coerceIn(0, 20)).apply()
-    
     // v39.15: 弹幕显示字体发光模式
     var v39DanmakuGlowMode: Int
         get() = prefs.getInt(KEY_V39_DANMAKU_GLOW_MODE, 0)
@@ -2423,10 +2203,6 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V40_DANMAKU_GRADIENT_COLOR, value.coerceIn(0, 5)).apply()
     
     // v40.3: 视频画面色彩色调曲线
-    var v40ColorHueCurve: Int
-        get() = prefs.getInt(KEY_V40_COLOR_HUE_CURVE, 0)
-        set(value) = prefs.edit().putInt(KEY_V40_COLOR_HUE_CURVE, value.coerceIn(0, 5)).apply()
-    
     // v40.4: 弹幕发送确认震动强度曲线
     var v40VibrationIntensityCurve: Int
         get() = prefs.getInt(KEY_V40_VIBRATION_INTENSITY_CURVE, 0)
@@ -2448,25 +2224,13 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V40_DANMAKU_ALIGN_CURVE, value.coerceIn(0, 5)).apply()
     
     // v40.8: 视频画面色彩降噪曲线
-    var v40ColorDenoiseCurve: Int
-        get() = prefs.getInt(KEY_V40_COLOR_DENOISE_CURVE, 0)
-        set(value) = prefs.edit().putInt(KEY_V40_COLOR_DENOISE_CURVE, value.coerceIn(0, 5)).apply()
-    
     // v40.9: 弹幕发送历史记录导出格式
-    var v40HistoryExportFormat: Int
-        get() = prefs.getInt(KEY_V40_HISTORY_EXPORT_FORMAT, 0)
-        set(value) = prefs.edit().putInt(KEY_V40_HISTORY_EXPORT_FORMAT, value.coerceIn(0, 3)).apply()
-    
     // v40.10: 播放器进度条颜色渐变方向
     var v40ProgressBarGradientDirection: Int
         get() = prefs.getInt(KEY_V40_PROGRESS_BAR_GRADIENT_DIRECTION, 0)
         set(value) = prefs.edit().putInt(KEY_V40_PROGRESS_BAR_GRADIENT_DIRECTION, value.coerceIn(0, 3)).apply()
     
     // v40.11: 视频投射画面延迟策略
-    var v40CastLatencyStrategy: Int
-        get() = prefs.getInt(KEY_V40_CAST_LATENCY_STRATEGY, 0)
-        set(value) = prefs.edit().putInt(KEY_V40_CAST_LATENCY_STRATEGY, value.coerceIn(0, 3)).apply()
-    
     // v40.12: 弹幕字体背景渐变透明度
     var v40DanmakuGradientAlpha: Int
         get() = prefs.getInt(KEY_V40_DANMAKU_GRADIENT_ALPHA, 0)
@@ -2478,20 +2242,9 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V40_GESTURE_SWIPE_SPEED, value.coerceIn(10, 100)).apply()
     
     // v40.14: 视频画面色彩模糊曲线
-    var v40ColorBlurCurve: Int
-        get() = prefs.getInt(KEY_V40_COLOR_BLUR_CURVE, 0)
-        set(value) = prefs.edit().putInt(KEY_V40_COLOR_BLUR_CURVE, value.coerceIn(0, 5)).apply()
-    
     // v40.15: 弹幕显示字体发光强度
-    var v40DanmakuGlowIntensity: Int
-        get() = prefs.getInt(KEY_V40_DANMAKU_GLOW_INTENSITY, 0)
-        set(value) = prefs.edit().putInt(KEY_V40_DANMAKU_GLOW_INTENSITY, value.coerceIn(0, 100)).apply()
-
     // ===== v41.x 系列 =====
     // v41.1: 视频播放速度记忆
-    var v41PlaybackSpeedMemory: Boolean
-        get() = prefs.getBoolean(KEY_V41_PLAYBACK_SPEED_MEMORY, false)
-        set(value) = prefs.edit().putBoolean(KEY_V41_PLAYBACK_SPEED_MEMORY, value).apply()
     // v41.2: 弹幕发送确认震动模式
     var v41DanmakuVibrationMode: Int
         get() = prefs.getInt(KEY_V41_DANMAKU_VIBRATION_MODE, 0)
@@ -2571,9 +2324,6 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V42_CACHE_AUTO_SIZE, false)
         set(value) = prefs.edit().putBoolean(KEY_V42_CACHE_AUTO_SIZE, value).apply()
     // v42.6: 播放器进度条颜色自定义
-    var v42ProgressBarColor: Int
-        get() = prefs.getInt(KEY_V42_PROGRESS_BAR_COLOR, 0)
-        set(value) = prefs.edit().putInt(KEY_V42_PROGRESS_BAR_COLOR, value.coerceIn(0, 10)).apply()
     // v42.7: 弹幕字体背景渐变增强
     var v42DanmakuGradientEnhanced: Int
         get() = prefs.getInt(KEY_V42_DANMAKU_GRADIENT_ENHANCED, 0)
@@ -2603,9 +2353,6 @@ class AppPrefs(context: Context) {
         get() = prefs.getInt(KEY_V42_DANMAKU_VIBRATION_DURATION, 100)
         set(value) = prefs.edit().putInt(KEY_V42_DANMAKU_VIBRATION_DURATION, value.coerceIn(50, 500)).apply()
     // v42.14: 视频缓存预加载策略
-    var v42CachePreloadStrategy: Int
-        get() = prefs.getInt(KEY_V42_CACHE_PRELOAD_STRATEGY, 0)
-        set(value) = prefs.edit().putInt(KEY_V42_CACHE_PRELOAD_STRATEGY, value.coerceIn(0, 3)).apply()
     // v42.15: 播放器进度条缓冲颜色
     var v42ProgressBarBufferColor: Int
         get() = prefs.getInt(KEY_V42_PROGRESS_BAR_BUFFER_COLOR, 0)
@@ -2828,15 +2575,9 @@ class AppPrefs(context: Context) {
     var v46ProgressBarThumbSize: Int
         get() = prefs.getInt(KEY_V46_PROGRESS_BAR_THUMB_SIZE, 0)
         set(value) = prefs.edit().putInt(KEY_V46_PROGRESS_BAR_THUMB_SIZE, value.coerceIn(0, 20)).apply()
-    var v46DanmakuSendConfirmDialog: Boolean
-        get() = prefs.getBoolean(KEY_V46_DANMAKU_SEND_CONFIRM_DIALOG, true)
-        set(value) = prefs.edit().putBoolean(KEY_V46_DANMAKU_SEND_CONFIRM_DIALOG, value).apply()
     var v46ColorWhiteBalance: Int
         get() = prefs.getInt(KEY_V46_COLOR_WHITE_BALANCE, 0)
         set(value) = prefs.edit().putInt(KEY_V46_COLOR_WHITE_BALANCE, value.coerceIn(-100, 100)).apply()
-    var v46VolumeLimitThreshold: Int
-        get() = prefs.getInt(KEY_V46_VOLUME_LIMIT_THRESHOLD, 100)
-        set(value) = prefs.edit().putInt(KEY_V46_VOLUME_LIMIT_THRESHOLD, value.coerceIn(50, 150)).apply()
     var v46DanmakuBgPadding: Int
         get() = prefs.getInt(KEY_V46_DANMAKU_BG_PADDING, 0)
         set(value) = prefs.edit().putInt(KEY_V46_DANMAKU_BG_PADDING, value.coerceIn(0, 20)).apply()
@@ -2848,9 +2589,6 @@ class AppPrefs(context: Context) {
     var v47PlaybackResumePrompt: Boolean
         get() = prefs.getBoolean(KEY_V47_PLAYBACK_RESUME_PROMPT, true)
         set(value) = prefs.edit().putBoolean(KEY_V47_PLAYBACK_RESUME_PROMPT, value).apply()
-    var v47DanmakuFontSpacing: Int
-        get() = prefs.getInt(KEY_V47_DANMAKU_FONT_SPACING, 0)
-        set(value) = prefs.edit().putInt(KEY_V47_DANMAKU_FONT_SPACING, value.coerceIn(0, 10)).apply()
     var v47ColorExposureCompensation: Int
         get() = prefs.getInt(KEY_V47_COLOR_EXPOSURE_COMPENSATION, 0)
         set(value) = prefs.edit().putInt(KEY_V47_COLOR_EXPOSURE_COMPENSATION, value.coerceIn(-100, 100)).apply()
@@ -2916,9 +2654,6 @@ class AppPrefs(context: Context) {
     var v48DanmakuFilterRegex: Boolean
         get() = prefs.getBoolean(KEY_V48_DANMAKU_FILTER_REGEX, false)
         set(value) = prefs.edit().putBoolean(KEY_V48_DANMAKU_FILTER_REGEX, value).apply()
-    var v48CacheCleanupInterval: Int
-        get() = prefs.getInt(KEY_V48_CACHE_CLEANUP_INTERVAL, 0)
-        set(value) = prefs.edit().putInt(KEY_V48_CACHE_CLEANUP_INTERVAL, value.coerceIn(0, 5)).apply()
     var v48ProgressBarTouchArea: Int
         get() = prefs.getInt(KEY_V48_PROGRESS_BAR_TOUCH_AREA, 0)
         set(value) = prefs.edit().putInt(KEY_V48_PROGRESS_BAR_TOUCH_AREA, value.coerceIn(0, 30)).apply()
@@ -3033,9 +2768,6 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putBoolean(KEY_V50_CAST_AUTO_DISCOVER, value).apply()
 
     // ===== v51.x =====
-    var v51PlaybackAutoSkipIntro: Boolean
-        get() = prefs.getBoolean(KEY_V51_PLAYBACK_AUTO_SKIP_INTRO, false)
-        set(value) = prefs.edit().putBoolean(KEY_V51_PLAYBACK_AUTO_SKIP_INTRO, value).apply()
     var v51DanmakuFontOutlineWidth: Int
         get() = prefs.getInt(KEY_V51_DANMAKU_FONT_OUTLINE_WIDTH, 0)
         set(value) = prefs.edit().putInt(KEY_V51_DANMAKU_FONT_OUTLINE_WIDTH, value.coerceIn(0, 10)).apply()
@@ -3048,33 +2780,21 @@ class AppPrefs(context: Context) {
     var v51DanmakuSendBgStyle: Int
         get() = prefs.getInt(KEY_V51_DANMAKU_SEND_BG_STYLE, 0)
         set(value) = prefs.edit().putInt(KEY_V51_DANMAKU_SEND_BG_STYLE, value.coerceIn(0, 5)).apply()
-    var v51CastVideoCodec: Int
-        get() = prefs.getInt(KEY_V51_CAST_VIDEO_CODEC, 0)
-        set(value) = prefs.edit().putInt(KEY_V51_CAST_VIDEO_CODEC, value.coerceIn(0, 3)).apply()
     var v51GestureDoubleTapRewind: Boolean
         get() = prefs.getBoolean(KEY_V51_GESTURE_DOUBLE_TAP_REWIND, false)
         set(value) = prefs.edit().putBoolean(KEY_V51_GESTURE_DOUBLE_TAP_REWIND, value).apply()
     var v51DanmakuFilterLength: Int
         get() = prefs.getInt(KEY_V51_DANMAKU_FILTER_LENGTH, 0)
         set(value) = prefs.edit().putInt(KEY_V51_DANMAKU_FILTER_LENGTH, value.coerceIn(0, 5)).apply()
-    var v51CacheMaxSizeMb: Int
-        get() = prefs.getInt(KEY_V51_CACHE_MAX_SIZE_MB, 0)
-        set(value) = prefs.edit().putInt(KEY_V51_CACHE_MAX_SIZE_MB, value.coerceIn(0, 10)).apply()
     var v51ProgressBarScrubSpeed: Int
         get() = prefs.getInt(KEY_V51_PROGRESS_BAR_SCRUB_SPEED, 0)
         set(value) = prefs.edit().putInt(KEY_V51_PROGRESS_BAR_SCRUB_SPEED, value.coerceIn(0, 5)).apply()
-    var v51DanmakuFontSpacing: Int
-        get() = prefs.getInt(KEY_V51_DANMAKU_FONT_SPACING, 0)
-        set(value) = prefs.edit().putInt(KEY_V51_DANMAKU_FONT_SPACING, value.coerceIn(0, 10)).apply()
     var v51ColorGammaCorrection: Int
         get() = prefs.getInt(KEY_V51_COLOR_GAMMA_CORRECTION, 0)
         set(value) = prefs.edit().putInt(KEY_V51_COLOR_GAMMA_CORRECTION, value.coerceIn(0, 5)).apply()
     var v51VolumeBassReduce: Boolean
         get() = prefs.getBoolean(KEY_V51_VOLUME_BASS_REDUCE, false)
         set(value) = prefs.edit().putBoolean(KEY_V51_VOLUME_BASS_REDUCE, value).apply()
-    var v51DanmakuBgBorderColor: Int
-        get() = prefs.getInt(KEY_V51_DANMAKU_BG_BORDER_COLOR, 0)
-        set(value) = prefs.edit().putInt(KEY_V51_DANMAKU_BG_BORDER_COLOR, value.coerceIn(0, 10)).apply()
     var v51CastSubtitleSync: Int
         get() = prefs.getInt(KEY_V51_CAST_SUBTITLE_SYNC, 0)
         set(value) = prefs.edit().putInt(KEY_V51_CAST_SUBTITLE_SYNC, value.coerceIn(0, 10)).apply()
@@ -3083,12 +2803,6 @@ class AppPrefs(context: Context) {
     var v52PlaybackAutoSkipFiller: Boolean
         get() = prefs.getBoolean(KEY_V52_PLAYBACK_AUTO_SKIP_FILLER, false)
         set(value) = prefs.edit().putBoolean(KEY_V52_PLAYBACK_AUTO_SKIP_FILLER, value).apply()
-    var v52DanmakuFontLineHeight: Int
-        get() = prefs.getInt(KEY_V52_DANMAKU_FONT_LINE_HEIGHT, 0)
-        set(value) = prefs.edit().putInt(KEY_V52_DANMAKU_FONT_LINE_HEIGHT, value.coerceIn(0, 20)).apply()
-    var v52ColorTemperature: Int
-        get() = prefs.getInt(KEY_V52_COLOR_TEMPERATURE, 50)
-        set(value) = prefs.edit().putInt(KEY_V52_COLOR_TEMPERATURE, value.coerceIn(0, 100)).apply()
     var v52VolumeChannelSwap: Boolean
         get() = prefs.getBoolean(KEY_V52_VOLUME_CHANNEL_SWAP, false)
         set(value) = prefs.edit().putBoolean(KEY_V52_VOLUME_CHANNEL_SWAP, value).apply()
@@ -3142,9 +2856,6 @@ class AppPrefs(context: Context) {
     var v53DanmakuSendTimestamp: Boolean
         get() = prefs.getBoolean(KEY_V53_DANMAKU_SEND_TIMESTAMP, false)
         set(value) = prefs.edit().putBoolean(KEY_V53_DANMAKU_SEND_TIMESTAMP, value).apply()
-    var v53CastAudioCodec: Int
-        get() = prefs.getInt(KEY_V53_CAST_AUDIO_CODEC, 0)
-        set(value) = prefs.edit().putInt(KEY_V53_CAST_AUDIO_CODEC, value.coerceIn(0, 3)).apply()
     var v53GestureVolumeStep: Int
         get() = prefs.getInt(KEY_V53_GESTURE_VOLUME_STEP, 0)
         set(value) = prefs.edit().putInt(KEY_V53_GESTURE_VOLUME_STEP, value.coerceIn(0, 5)).apply()
@@ -3160,9 +2871,6 @@ class AppPrefs(context: Context) {
     var v53DanmakuFontStrike: Boolean
         get() = prefs.getBoolean(KEY_V53_DANMAKU_FONT_STRIKE, false)
         set(value) = prefs.edit().putBoolean(KEY_V53_DANMAKU_FONT_STRIKE, value).apply()
-    var v53ColorBlackLevel: Int
-        get() = prefs.getInt(KEY_V53_COLOR_BLACK_LEVEL, 0)
-        set(value) = prefs.edit().putInt(KEY_V53_COLOR_BLACK_LEVEL, value.coerceIn(0, 100)).apply()
     var v53VolumeBalanceCustom: Int
         get() = prefs.getInt(KEY_V53_VOLUME_BALANCE_CUSTOM, 5)
         set(value) = prefs.edit().putInt(KEY_V53_VOLUME_BALANCE_CUSTOM, value.coerceIn(0, 10)).apply()
@@ -3180,9 +2888,6 @@ class AppPrefs(context: Context) {
     var v54DanmakuFontSizeRange: Int
         get() = prefs.getInt(KEY_V54_DANMAKU_FONT_SIZE_RANGE, 0)
         set(value) = prefs.edit().putInt(KEY_V54_DANMAKU_FONT_SIZE_RANGE, value.coerceIn(0, 5)).apply()
-    var v54ColorBrightness: Int
-        get() = prefs.getInt(KEY_V54_COLOR_BRIGHTNESS, 50)
-        set(value) = prefs.edit().putInt(KEY_V54_COLOR_BRIGHTNESS, value.coerceIn(0, 100)).apply()
     var v54VolumeSurroundMode: Int
         get() = prefs.getInt(KEY_V54_VOLUME_SURROUND_MODE, 0)
         set(value) = prefs.edit().putInt(KEY_V54_VOLUME_SURROUND_MODE, value.coerceIn(0, 3)).apply()
@@ -3207,9 +2912,6 @@ class AppPrefs(context: Context) {
     var v54DanmakuFontUnderline: Boolean
         get() = prefs.getBoolean(KEY_V54_DANMAKU_FONT_UNDERLINE, false)
         set(value) = prefs.edit().putBoolean(KEY_V54_DANMAKU_FONT_UNDERLINE, value).apply()
-    var v54ColorContrast: Int
-        get() = prefs.getInt(KEY_V54_COLOR_CONTRAST, 50)
-        set(value) = prefs.edit().putInt(KEY_V54_COLOR_CONTRAST, value.coerceIn(0, 100)).apply()
     var v54VolumeAutoGain: Boolean
         get() = prefs.getBoolean(KEY_V54_VOLUME_AUTO_GAIN, false)
         set(value) = prefs.edit().putBoolean(KEY_V54_VOLUME_AUTO_GAIN, value).apply()
@@ -3242,9 +2944,6 @@ class AppPrefs(context: Context) {
     var v55GestureLockScreen: Boolean
         get() = prefs.getBoolean(KEY_V55_GESTURE_LOCK_SCREEN, false)
         set(value) = prefs.edit().putBoolean(KEY_V55_GESTURE_LOCK_SCREEN, value).apply()
-    var v55DanmakuFilterRegex: Boolean
-        get() = prefs.getBoolean(KEY_V55_DANMAKU_FILTER_REGEX, false)
-        set(value) = prefs.edit().putBoolean(KEY_V55_DANMAKU_FILTER_REGEX, value).apply()
     var v55CacheNetworkPolicy: Int
         get() = prefs.getInt(KEY_V55_CACHE_NETWORK_POLICY, 0)
         set(value) = prefs.edit().putInt(KEY_V55_CACHE_NETWORK_POLICY, value.coerceIn(0, 3)).apply()
@@ -3260,13 +2959,9 @@ class AppPrefs(context: Context) {
     var v55VolumeCompressor: Boolean
         get() = prefs.getBoolean(KEY_V55_VOLUME_COMPRESSOR, false)
         set(value) = prefs.edit().putBoolean(KEY_V55_VOLUME_COMPRESSOR, value).apply()
-    var v55DanmakuBgPadding: Int
-        get() = prefs.getInt(KEY_V55_DANMAKU_BG_PADDING, 0)
-        set(value) = prefs.edit().putInt(KEY_V55_DANMAKU_BG_PADDING, value.coerceIn(0, 10)).apply()
     var v55CastAutoQuality: Boolean
         get() = prefs.getBoolean(KEY_V55_CAST_AUTO_QUALITY, false)
         set(value) = prefs.edit().putBoolean(KEY_V55_CAST_AUTO_QUALITY, value).apply()
-
 
     var v56PlaybackSkipSilence: Boolean
         get() = prefs.getBoolean(KEY_V56_PLAYBACK_SKIP_SILENCE, false)
@@ -3301,9 +2996,6 @@ class AppPrefs(context: Context) {
     var v56DanmakuFontLetterSpacing2: Int
         get() = prefs.getInt(KEY_V56_DANMAKU_FONT_LETTER_SPACING2, 0)
         set(value) = prefs.edit().putInt(KEY_V56_DANMAKU_FONT_LETTER_SPACING2, value.coerceIn(0, 10)).apply()
-    var v56ColorSaturationCurve: Int
-        get() = prefs.getInt(KEY_V56_COLOR_SATURATION_CURVE, 0)
-        set(value) = prefs.edit().putInt(KEY_V56_COLOR_SATURATION_CURVE, value.coerceIn(0, 5)).apply()
     var v56VolumePreAmp: Int
         get() = prefs.getInt(KEY_V56_VOLUME_PRE_AMP, 0)
         set(value) = prefs.edit().putInt(KEY_V56_VOLUME_PRE_AMP, value.coerceIn(-20, 20)).apply()
@@ -3340,9 +3032,6 @@ class AppPrefs(context: Context) {
     var v57CacheEncryptEnabled: Boolean
         get() = prefs.getBoolean(KEY_V57_CACHE_ENCRYPT_ENABLED, false)
         set(value) = prefs.edit().putBoolean(KEY_V57_CACHE_ENCRYPT_ENABLED, value).apply()
-    var v57ProgressBarBufferColor: Int
-        get() = prefs.getInt(KEY_V57_PROGRESS_BAR_BUFFER_COLOR, 0)
-        set(value) = prefs.edit().putInt(KEY_V57_PROGRESS_BAR_BUFFER_COLOR, value.coerceIn(0, 10)).apply()
     var v57DanmakuFontBackground2: Int
         get() = prefs.getInt(KEY_V57_DANMAKU_FONT_BACKGROUND2, 0)
         set(value) = prefs.edit().putInt(KEY_V57_DANMAKU_FONT_BACKGROUND2, value.coerceIn(0, 10)).apply()
@@ -3520,9 +3209,6 @@ class AppPrefs(context: Context) {
     var v61CacheAutoClearOnLow: Boolean
         get() = prefs.getBoolean(KEY_V61_CACHE_AUTO_CLEAR_ON_LOW, false)
         set(value) = prefs.edit().putBoolean(KEY_V61_CACHE_AUTO_CLEAR_ON_LOW, value).apply()
-    var v61ProgressBarAnimation: Boolean
-        get() = prefs.getBoolean(KEY_V61_PROGRESS_BAR_ANIMATION, false)
-        set(value) = prefs.edit().putBoolean(KEY_V61_PROGRESS_BAR_ANIMATION, value).apply()
     var v61DanmakuFontHighlightColor: Int
         get() = prefs.getInt(KEY_V61_DANMAKU_FONT_HIGHLIGHT_COLOR, 0)
         set(value) = prefs.edit().putInt(KEY_V61_DANMAKU_FONT_HIGHLIGHT_COLOR, value.coerceIn(0, 10)).apply()
@@ -3589,9 +3275,6 @@ class AppPrefs(context: Context) {
     var v63DanmakuFontLineSpacing2: Int
         get() = prefs.getInt(KEY_V63_DANMAKU_FONT_LINE_SPACING2, 0)
         set(value) = prefs.edit().putInt(KEY_V63_DANMAKU_FONT_LINE_SPACING2, value.coerceIn(0, 20)).apply()
-    var v63ColorContrastCurve: Int
-        get() = prefs.getInt(KEY_V63_COLOR_CONTRAST_CURVE, 0)
-        set(value) = prefs.edit().putInt(KEY_V63_COLOR_CONTRAST_CURVE, value.coerceIn(0, 5)).apply()
     var v63VolumeNormalizer2: Int
         get() = prefs.getInt(KEY_V63_VOLUME_NORMALIZER2, 0)
         set(value) = prefs.edit().putInt(KEY_V63_VOLUME_NORMALIZER2, value.coerceIn(0, 5)).apply()
@@ -3616,9 +3299,6 @@ class AppPrefs(context: Context) {
     var v63DanmakuFontWeightCustom2: Int
         get() = prefs.getInt(KEY_V63_DANMAKU_FONT_WEIGHT_CUSTOM2, 400)
         set(value) = prefs.edit().putInt(KEY_V63_DANMAKU_FONT_WEIGHT_CUSTOM2, value.coerceIn(100, 900)).apply()
-    var v63ColorBrightnessCurve: Int
-        get() = prefs.getInt(KEY_V63_COLOR_BRIGHTNESS_CURVE, 0)
-        set(value) = prefs.edit().putInt(KEY_V63_COLOR_BRIGHTNESS_CURVE, value.coerceIn(0, 5)).apply()
     var v63VolumeBassLpf: Int
         get() = prefs.getInt(KEY_V63_VOLUME_BASS_LPF, 0)
         set(value) = prefs.edit().putInt(KEY_V63_VOLUME_BASS_LPF, value.coerceIn(0, 5)).apply()
@@ -3679,9 +3359,6 @@ class AppPrefs(context: Context) {
     var v65DanmakuFontStrike2: Boolean
         get() = prefs.getBoolean(KEY_V65_DANMAKU_FONT_STRIKE2, false)
         set(value) = prefs.edit().putBoolean(KEY_V65_DANMAKU_FONT_STRIKE2, value).apply()
-    var v65ColorHueCurve: Int
-        get() = prefs.getInt(KEY_V65_COLOR_HUE_CURVE, 0)
-        set(value) = prefs.edit().putInt(KEY_V65_COLOR_HUE_CURVE, value.coerceIn(0, 5)).apply()
     var v65VolumeBassEnhance: Int
         get() = prefs.getInt(KEY_V65_VOLUME_BASS_ENHANCE, 0)
         set(value) = prefs.edit().putInt(KEY_V65_VOLUME_BASS_ENHANCE, value.coerceIn(0, 5)).apply()
@@ -3944,10 +3621,6 @@ class AppPrefs(context: Context) {
         get() = prefs.getInt(KEY_V70_CAST_SUBTITLE_FINAL2, 0)
         set(value) = prefs.edit().putInt(KEY_V70_CAST_SUBTITLE_FINAL2, value.coerceIn(0, 5)).apply()
 
-
-
-
-
     // ===== v121.x =====
     var v121PlaybackSkipIntro2: Boolean
         get() = prefs.getBoolean(KEY_V121_PLAYBACK_SKIP_INTRO2, false)
@@ -3996,1368 +3669,34 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V121_CACHE_MEMORY_SIZE2, value.coerceIn(0, 10)).apply()
 
     // ===== v122.x =====
-    var v122PlaybackSkipIntro2: Boolean
-        get() = prefs.getBoolean(KEY_V122_PLAYBACK_SKIP_INTRO2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V122_PLAYBACK_SKIP_INTRO2, value).apply()
-    var v122DanmakuSpeed2: Int
-        get() = prefs.getInt(KEY_V122_DANMAKU_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V122_DANMAKU_SPEED2, value.coerceIn(0, 10)).apply()
-    var v122ColorFade2: Int
-        get() = prefs.getInt(KEY_V122_COLOR_FADE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V122_COLOR_FADE2, value.coerceIn(0, 100)).apply()
-    var v122VolumeFadeIn2: Int
-        get() = prefs.getInt(KEY_V122_VOLUME_FADE_IN2, 0)
-        set(value) = prefs.edit().putInt(KEY_V122_VOLUME_FADE_IN2, value.coerceIn(0, 5)).apply()
-    var v122CastBitrate2: Int
-        get() = prefs.getInt(KEY_V122_CAST_BITRATE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V122_CAST_BITRATE2, value.coerceIn(0, 5)).apply()
-    var v122GestureTapZone2: Int
-        get() = prefs.getInt(KEY_V122_GESTURE_TAP_ZONE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V122_GESTURE_TAP_ZONE2, value.coerceIn(0, 5)).apply()
-    var v122CacheCompLevel3: Int
-        get() = prefs.getInt(KEY_V122_CACHE_COMP_LEVEL3, 0)
-        set(value) = prefs.edit().putInt(KEY_V122_CACHE_COMP_LEVEL3, value.coerceIn(0, 5)).apply()
-    var v122ProgressBarFade2: Boolean
-        get() = prefs.getBoolean(KEY_V122_PROGRESS_BAR_FADE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V122_PROGRESS_BAR_FADE2, value).apply()
-    var v122PlaybackAutoPause2: Boolean
-        get() = prefs.getBoolean(KEY_V122_PLAYBACK_AUTO_PAUSE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V122_PLAYBACK_AUTO_PAUSE2, value).apply()
-    var v122DanmakuScrollSpeed2: Int
-        get() = prefs.getInt(KEY_V122_DANMAKU_SCROLL_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V122_DANMAKU_SCROLL_SPEED2, value.coerceIn(0, 10)).apply()
-    var v122ColorTint2: Int
-        get() = prefs.getInt(KEY_V122_COLOR_TINT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V122_COLOR_TINT2, value.coerceIn(0, 100)).apply()
-    var v122VolumeFadeOut2: Int
-        get() = prefs.getInt(KEY_V122_VOLUME_FADE_OUT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V122_VOLUME_FADE_OUT2, value.coerceIn(0, 5)).apply()
-    var v122CastCodec2: Int
-        get() = prefs.getInt(KEY_V122_CAST_CODEC2, 0)
-        set(value) = prefs.edit().putInt(KEY_V122_CAST_CODEC2, value.coerceIn(0, 3)).apply()
-    var v122GestureDoubleSwipe2: Boolean
-        get() = prefs.getBoolean(KEY_V122_GESTURE_DOUBLE_SWIPE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V122_GESTURE_DOUBLE_SWIPE2, value).apply()
-    var v122CacheMemorySize2: Int
-        get() = prefs.getInt(KEY_V122_CACHE_MEMORY_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V122_CACHE_MEMORY_SIZE2, value.coerceIn(0, 10)).apply()
-
     // ===== v123.x =====
-    var v123PlaybackSkipIntro2: Boolean
-        get() = prefs.getBoolean(KEY_V123_PLAYBACK_SKIP_INTRO2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V123_PLAYBACK_SKIP_INTRO2, value).apply()
-    var v123DanmakuSpeed2: Int
-        get() = prefs.getInt(KEY_V123_DANMAKU_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V123_DANMAKU_SPEED2, value.coerceIn(0, 10)).apply()
-    var v123ColorFade2: Int
-        get() = prefs.getInt(KEY_V123_COLOR_FADE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V123_COLOR_FADE2, value.coerceIn(0, 100)).apply()
-    var v123VolumeFadeIn2: Int
-        get() = prefs.getInt(KEY_V123_VOLUME_FADE_IN2, 0)
-        set(value) = prefs.edit().putInt(KEY_V123_VOLUME_FADE_IN2, value.coerceIn(0, 5)).apply()
-    var v123CastBitrate2: Int
-        get() = prefs.getInt(KEY_V123_CAST_BITRATE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V123_CAST_BITRATE2, value.coerceIn(0, 5)).apply()
-    var v123GestureTapZone2: Int
-        get() = prefs.getInt(KEY_V123_GESTURE_TAP_ZONE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V123_GESTURE_TAP_ZONE2, value.coerceIn(0, 5)).apply()
-    var v123CacheCompLevel3: Int
-        get() = prefs.getInt(KEY_V123_CACHE_COMP_LEVEL3, 0)
-        set(value) = prefs.edit().putInt(KEY_V123_CACHE_COMP_LEVEL3, value.coerceIn(0, 5)).apply()
-    var v123ProgressBarFade2: Boolean
-        get() = prefs.getBoolean(KEY_V123_PROGRESS_BAR_FADE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V123_PROGRESS_BAR_FADE2, value).apply()
-    var v123PlaybackAutoPause2: Boolean
-        get() = prefs.getBoolean(KEY_V123_PLAYBACK_AUTO_PAUSE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V123_PLAYBACK_AUTO_PAUSE2, value).apply()
-    var v123DanmakuScrollSpeed2: Int
-        get() = prefs.getInt(KEY_V123_DANMAKU_SCROLL_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V123_DANMAKU_SCROLL_SPEED2, value.coerceIn(0, 10)).apply()
-    var v123ColorTint2: Int
-        get() = prefs.getInt(KEY_V123_COLOR_TINT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V123_COLOR_TINT2, value.coerceIn(0, 100)).apply()
-    var v123VolumeFadeOut2: Int
-        get() = prefs.getInt(KEY_V123_VOLUME_FADE_OUT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V123_VOLUME_FADE_OUT2, value.coerceIn(0, 5)).apply()
-    var v123CastCodec2: Int
-        get() = prefs.getInt(KEY_V123_CAST_CODEC2, 0)
-        set(value) = prefs.edit().putInt(KEY_V123_CAST_CODEC2, value.coerceIn(0, 3)).apply()
-    var v123GestureDoubleSwipe2: Boolean
-        get() = prefs.getBoolean(KEY_V123_GESTURE_DOUBLE_SWIPE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V123_GESTURE_DOUBLE_SWIPE2, value).apply()
-    var v123CacheMemorySize2: Int
-        get() = prefs.getInt(KEY_V123_CACHE_MEMORY_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V123_CACHE_MEMORY_SIZE2, value.coerceIn(0, 10)).apply()
-
     // ===== v124.x =====
-    var v124PlaybackSkipIntro2: Boolean
-        get() = prefs.getBoolean(KEY_V124_PLAYBACK_SKIP_INTRO2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V124_PLAYBACK_SKIP_INTRO2, value).apply()
-    var v124DanmakuSpeed2: Int
-        get() = prefs.getInt(KEY_V124_DANMAKU_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V124_DANMAKU_SPEED2, value.coerceIn(0, 10)).apply()
-    var v124ColorFade2: Int
-        get() = prefs.getInt(KEY_V124_COLOR_FADE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V124_COLOR_FADE2, value.coerceIn(0, 100)).apply()
-    var v124VolumeFadeIn2: Int
-        get() = prefs.getInt(KEY_V124_VOLUME_FADE_IN2, 0)
-        set(value) = prefs.edit().putInt(KEY_V124_VOLUME_FADE_IN2, value.coerceIn(0, 5)).apply()
-    var v124CastBitrate2: Int
-        get() = prefs.getInt(KEY_V124_CAST_BITRATE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V124_CAST_BITRATE2, value.coerceIn(0, 5)).apply()
-    var v124GestureTapZone2: Int
-        get() = prefs.getInt(KEY_V124_GESTURE_TAP_ZONE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V124_GESTURE_TAP_ZONE2, value.coerceIn(0, 5)).apply()
-    var v124CacheCompLevel3: Int
-        get() = prefs.getInt(KEY_V124_CACHE_COMP_LEVEL3, 0)
-        set(value) = prefs.edit().putInt(KEY_V124_CACHE_COMP_LEVEL3, value.coerceIn(0, 5)).apply()
-    var v124ProgressBarFade2: Boolean
-        get() = prefs.getBoolean(KEY_V124_PROGRESS_BAR_FADE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V124_PROGRESS_BAR_FADE2, value).apply()
-    var v124PlaybackAutoPause2: Boolean
-        get() = prefs.getBoolean(KEY_V124_PLAYBACK_AUTO_PAUSE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V124_PLAYBACK_AUTO_PAUSE2, value).apply()
-    var v124DanmakuScrollSpeed2: Int
-        get() = prefs.getInt(KEY_V124_DANMAKU_SCROLL_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V124_DANMAKU_SCROLL_SPEED2, value.coerceIn(0, 10)).apply()
-    var v124ColorTint2: Int
-        get() = prefs.getInt(KEY_V124_COLOR_TINT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V124_COLOR_TINT2, value.coerceIn(0, 100)).apply()
-    var v124VolumeFadeOut2: Int
-        get() = prefs.getInt(KEY_V124_VOLUME_FADE_OUT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V124_VOLUME_FADE_OUT2, value.coerceIn(0, 5)).apply()
-    var v124CastCodec2: Int
-        get() = prefs.getInt(KEY_V124_CAST_CODEC2, 0)
-        set(value) = prefs.edit().putInt(KEY_V124_CAST_CODEC2, value.coerceIn(0, 3)).apply()
-    var v124GestureDoubleSwipe2: Boolean
-        get() = prefs.getBoolean(KEY_V124_GESTURE_DOUBLE_SWIPE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V124_GESTURE_DOUBLE_SWIPE2, value).apply()
-    var v124CacheMemorySize2: Int
-        get() = prefs.getInt(KEY_V124_CACHE_MEMORY_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V124_CACHE_MEMORY_SIZE2, value.coerceIn(0, 10)).apply()
-
     // ===== v125.x =====
-    var v125PlaybackSkipIntro2: Boolean
-        get() = prefs.getBoolean(KEY_V125_PLAYBACK_SKIP_INTRO2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V125_PLAYBACK_SKIP_INTRO2, value).apply()
-    var v125DanmakuSpeed2: Int
-        get() = prefs.getInt(KEY_V125_DANMAKU_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V125_DANMAKU_SPEED2, value.coerceIn(0, 10)).apply()
-    var v125ColorFade2: Int
-        get() = prefs.getInt(KEY_V125_COLOR_FADE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V125_COLOR_FADE2, value.coerceIn(0, 100)).apply()
-    var v125VolumeFadeIn2: Int
-        get() = prefs.getInt(KEY_V125_VOLUME_FADE_IN2, 0)
-        set(value) = prefs.edit().putInt(KEY_V125_VOLUME_FADE_IN2, value.coerceIn(0, 5)).apply()
-    var v125CastBitrate2: Int
-        get() = prefs.getInt(KEY_V125_CAST_BITRATE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V125_CAST_BITRATE2, value.coerceIn(0, 5)).apply()
-    var v125GestureTapZone2: Int
-        get() = prefs.getInt(KEY_V125_GESTURE_TAP_ZONE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V125_GESTURE_TAP_ZONE2, value.coerceIn(0, 5)).apply()
-    var v125CacheCompLevel3: Int
-        get() = prefs.getInt(KEY_V125_CACHE_COMP_LEVEL3, 0)
-        set(value) = prefs.edit().putInt(KEY_V125_CACHE_COMP_LEVEL3, value.coerceIn(0, 5)).apply()
-    var v125ProgressBarFade2: Boolean
-        get() = prefs.getBoolean(KEY_V125_PROGRESS_BAR_FADE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V125_PROGRESS_BAR_FADE2, value).apply()
-    var v125PlaybackAutoPause2: Boolean
-        get() = prefs.getBoolean(KEY_V125_PLAYBACK_AUTO_PAUSE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V125_PLAYBACK_AUTO_PAUSE2, value).apply()
-    var v125DanmakuScrollSpeed2: Int
-        get() = prefs.getInt(KEY_V125_DANMAKU_SCROLL_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V125_DANMAKU_SCROLL_SPEED2, value.coerceIn(0, 10)).apply()
-    var v125ColorTint2: Int
-        get() = prefs.getInt(KEY_V125_COLOR_TINT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V125_COLOR_TINT2, value.coerceIn(0, 100)).apply()
-    var v125VolumeFadeOut2: Int
-        get() = prefs.getInt(KEY_V125_VOLUME_FADE_OUT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V125_VOLUME_FADE_OUT2, value.coerceIn(0, 5)).apply()
-    var v125CastCodec2: Int
-        get() = prefs.getInt(KEY_V125_CAST_CODEC2, 0)
-        set(value) = prefs.edit().putInt(KEY_V125_CAST_CODEC2, value.coerceIn(0, 3)).apply()
-    var v125GestureDoubleSwipe2: Boolean
-        get() = prefs.getBoolean(KEY_V125_GESTURE_DOUBLE_SWIPE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V125_GESTURE_DOUBLE_SWIPE2, value).apply()
-    var v125CacheMemorySize2: Int
-        get() = prefs.getInt(KEY_V125_CACHE_MEMORY_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V125_CACHE_MEMORY_SIZE2, value.coerceIn(0, 10)).apply()
-
     // ===== v126.x =====
-    var v126PlaybackSkipIntro2: Boolean
-        get() = prefs.getBoolean(KEY_V126_PLAYBACK_SKIP_INTRO2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V126_PLAYBACK_SKIP_INTRO2, value).apply()
-    var v126DanmakuSpeed2: Int
-        get() = prefs.getInt(KEY_V126_DANMAKU_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V126_DANMAKU_SPEED2, value.coerceIn(0, 10)).apply()
-    var v126ColorFade2: Int
-        get() = prefs.getInt(KEY_V126_COLOR_FADE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V126_COLOR_FADE2, value.coerceIn(0, 100)).apply()
-    var v126VolumeFadeIn2: Int
-        get() = prefs.getInt(KEY_V126_VOLUME_FADE_IN2, 0)
-        set(value) = prefs.edit().putInt(KEY_V126_VOLUME_FADE_IN2, value.coerceIn(0, 5)).apply()
-    var v126CastBitrate2: Int
-        get() = prefs.getInt(KEY_V126_CAST_BITRATE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V126_CAST_BITRATE2, value.coerceIn(0, 5)).apply()
-    var v126GestureTapZone2: Int
-        get() = prefs.getInt(KEY_V126_GESTURE_TAP_ZONE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V126_GESTURE_TAP_ZONE2, value.coerceIn(0, 5)).apply()
-    var v126CacheCompLevel3: Int
-        get() = prefs.getInt(KEY_V126_CACHE_COMP_LEVEL3, 0)
-        set(value) = prefs.edit().putInt(KEY_V126_CACHE_COMP_LEVEL3, value.coerceIn(0, 5)).apply()
-    var v126ProgressBarFade2: Boolean
-        get() = prefs.getBoolean(KEY_V126_PROGRESS_BAR_FADE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V126_PROGRESS_BAR_FADE2, value).apply()
-    var v126PlaybackAutoPause2: Boolean
-        get() = prefs.getBoolean(KEY_V126_PLAYBACK_AUTO_PAUSE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V126_PLAYBACK_AUTO_PAUSE2, value).apply()
-    var v126DanmakuScrollSpeed2: Int
-        get() = prefs.getInt(KEY_V126_DANMAKU_SCROLL_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V126_DANMAKU_SCROLL_SPEED2, value.coerceIn(0, 10)).apply()
-    var v126ColorTint2: Int
-        get() = prefs.getInt(KEY_V126_COLOR_TINT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V126_COLOR_TINT2, value.coerceIn(0, 100)).apply()
-    var v126VolumeFadeOut2: Int
-        get() = prefs.getInt(KEY_V126_VOLUME_FADE_OUT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V126_VOLUME_FADE_OUT2, value.coerceIn(0, 5)).apply()
-    var v126CastCodec2: Int
-        get() = prefs.getInt(KEY_V126_CAST_CODEC2, 0)
-        set(value) = prefs.edit().putInt(KEY_V126_CAST_CODEC2, value.coerceIn(0, 3)).apply()
-    var v126GestureDoubleSwipe2: Boolean
-        get() = prefs.getBoolean(KEY_V126_GESTURE_DOUBLE_SWIPE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V126_GESTURE_DOUBLE_SWIPE2, value).apply()
-    var v126CacheMemorySize2: Int
-        get() = prefs.getInt(KEY_V126_CACHE_MEMORY_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V126_CACHE_MEMORY_SIZE2, value.coerceIn(0, 10)).apply()
-
     // ===== v127.x =====
-    var v127PlaybackSkipIntro2: Boolean
-        get() = prefs.getBoolean(KEY_V127_PLAYBACK_SKIP_INTRO2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V127_PLAYBACK_SKIP_INTRO2, value).apply()
-    var v127DanmakuSpeed2: Int
-        get() = prefs.getInt(KEY_V127_DANMAKU_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V127_DANMAKU_SPEED2, value.coerceIn(0, 10)).apply()
-    var v127ColorFade2: Int
-        get() = prefs.getInt(KEY_V127_COLOR_FADE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V127_COLOR_FADE2, value.coerceIn(0, 100)).apply()
-    var v127VolumeFadeIn2: Int
-        get() = prefs.getInt(KEY_V127_VOLUME_FADE_IN2, 0)
-        set(value) = prefs.edit().putInt(KEY_V127_VOLUME_FADE_IN2, value.coerceIn(0, 5)).apply()
-    var v127CastBitrate2: Int
-        get() = prefs.getInt(KEY_V127_CAST_BITRATE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V127_CAST_BITRATE2, value.coerceIn(0, 5)).apply()
-    var v127GestureTapZone2: Int
-        get() = prefs.getInt(KEY_V127_GESTURE_TAP_ZONE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V127_GESTURE_TAP_ZONE2, value.coerceIn(0, 5)).apply()
-    var v127CacheCompLevel3: Int
-        get() = prefs.getInt(KEY_V127_CACHE_COMP_LEVEL3, 0)
-        set(value) = prefs.edit().putInt(KEY_V127_CACHE_COMP_LEVEL3, value.coerceIn(0, 5)).apply()
-    var v127ProgressBarFade2: Boolean
-        get() = prefs.getBoolean(KEY_V127_PROGRESS_BAR_FADE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V127_PROGRESS_BAR_FADE2, value).apply()
-    var v127PlaybackAutoPause2: Boolean
-        get() = prefs.getBoolean(KEY_V127_PLAYBACK_AUTO_PAUSE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V127_PLAYBACK_AUTO_PAUSE2, value).apply()
-    var v127DanmakuScrollSpeed2: Int
-        get() = prefs.getInt(KEY_V127_DANMAKU_SCROLL_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V127_DANMAKU_SCROLL_SPEED2, value.coerceIn(0, 10)).apply()
-    var v127ColorTint2: Int
-        get() = prefs.getInt(KEY_V127_COLOR_TINT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V127_COLOR_TINT2, value.coerceIn(0, 100)).apply()
-    var v127VolumeFadeOut2: Int
-        get() = prefs.getInt(KEY_V127_VOLUME_FADE_OUT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V127_VOLUME_FADE_OUT2, value.coerceIn(0, 5)).apply()
-    var v127CastCodec2: Int
-        get() = prefs.getInt(KEY_V127_CAST_CODEC2, 0)
-        set(value) = prefs.edit().putInt(KEY_V127_CAST_CODEC2, value.coerceIn(0, 3)).apply()
-    var v127GestureDoubleSwipe2: Boolean
-        get() = prefs.getBoolean(KEY_V127_GESTURE_DOUBLE_SWIPE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V127_GESTURE_DOUBLE_SWIPE2, value).apply()
-    var v127CacheMemorySize2: Int
-        get() = prefs.getInt(KEY_V127_CACHE_MEMORY_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V127_CACHE_MEMORY_SIZE2, value.coerceIn(0, 10)).apply()
-
     // ===== v128.x =====
-    var v128PlaybackSkipIntro2: Boolean
-        get() = prefs.getBoolean(KEY_V128_PLAYBACK_SKIP_INTRO2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V128_PLAYBACK_SKIP_INTRO2, value).apply()
-    var v128DanmakuSpeed2: Int
-        get() = prefs.getInt(KEY_V128_DANMAKU_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V128_DANMAKU_SPEED2, value.coerceIn(0, 10)).apply()
-    var v128ColorFade2: Int
-        get() = prefs.getInt(KEY_V128_COLOR_FADE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V128_COLOR_FADE2, value.coerceIn(0, 100)).apply()
-    var v128VolumeFadeIn2: Int
-        get() = prefs.getInt(KEY_V128_VOLUME_FADE_IN2, 0)
-        set(value) = prefs.edit().putInt(KEY_V128_VOLUME_FADE_IN2, value.coerceIn(0, 5)).apply()
-    var v128CastBitrate2: Int
-        get() = prefs.getInt(KEY_V128_CAST_BITRATE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V128_CAST_BITRATE2, value.coerceIn(0, 5)).apply()
-    var v128GestureTapZone2: Int
-        get() = prefs.getInt(KEY_V128_GESTURE_TAP_ZONE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V128_GESTURE_TAP_ZONE2, value.coerceIn(0, 5)).apply()
-    var v128CacheCompLevel3: Int
-        get() = prefs.getInt(KEY_V128_CACHE_COMP_LEVEL3, 0)
-        set(value) = prefs.edit().putInt(KEY_V128_CACHE_COMP_LEVEL3, value.coerceIn(0, 5)).apply()
-    var v128ProgressBarFade2: Boolean
-        get() = prefs.getBoolean(KEY_V128_PROGRESS_BAR_FADE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V128_PROGRESS_BAR_FADE2, value).apply()
-    var v128PlaybackAutoPause2: Boolean
-        get() = prefs.getBoolean(KEY_V128_PLAYBACK_AUTO_PAUSE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V128_PLAYBACK_AUTO_PAUSE2, value).apply()
-    var v128DanmakuScrollSpeed2: Int
-        get() = prefs.getInt(KEY_V128_DANMAKU_SCROLL_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V128_DANMAKU_SCROLL_SPEED2, value.coerceIn(0, 10)).apply()
-    var v128ColorTint2: Int
-        get() = prefs.getInt(KEY_V128_COLOR_TINT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V128_COLOR_TINT2, value.coerceIn(0, 100)).apply()
-    var v128VolumeFadeOut2: Int
-        get() = prefs.getInt(KEY_V128_VOLUME_FADE_OUT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V128_VOLUME_FADE_OUT2, value.coerceIn(0, 5)).apply()
-    var v128CastCodec2: Int
-        get() = prefs.getInt(KEY_V128_CAST_CODEC2, 0)
-        set(value) = prefs.edit().putInt(KEY_V128_CAST_CODEC2, value.coerceIn(0, 3)).apply()
-    var v128GestureDoubleSwipe2: Boolean
-        get() = prefs.getBoolean(KEY_V128_GESTURE_DOUBLE_SWIPE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V128_GESTURE_DOUBLE_SWIPE2, value).apply()
-    var v128CacheMemorySize2: Int
-        get() = prefs.getInt(KEY_V128_CACHE_MEMORY_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V128_CACHE_MEMORY_SIZE2, value.coerceIn(0, 10)).apply()
-
     // ===== v129.x =====
-    var v129PlaybackSkipIntro2: Boolean
-        get() = prefs.getBoolean(KEY_V129_PLAYBACK_SKIP_INTRO2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V129_PLAYBACK_SKIP_INTRO2, value).apply()
-    var v129DanmakuSpeed2: Int
-        get() = prefs.getInt(KEY_V129_DANMAKU_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V129_DANMAKU_SPEED2, value.coerceIn(0, 10)).apply()
-    var v129ColorFade2: Int
-        get() = prefs.getInt(KEY_V129_COLOR_FADE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V129_COLOR_FADE2, value.coerceIn(0, 100)).apply()
-    var v129VolumeFadeIn2: Int
-        get() = prefs.getInt(KEY_V129_VOLUME_FADE_IN2, 0)
-        set(value) = prefs.edit().putInt(KEY_V129_VOLUME_FADE_IN2, value.coerceIn(0, 5)).apply()
-    var v129CastBitrate2: Int
-        get() = prefs.getInt(KEY_V129_CAST_BITRATE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V129_CAST_BITRATE2, value.coerceIn(0, 5)).apply()
-    var v129GestureTapZone2: Int
-        get() = prefs.getInt(KEY_V129_GESTURE_TAP_ZONE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V129_GESTURE_TAP_ZONE2, value.coerceIn(0, 5)).apply()
-    var v129CacheCompLevel3: Int
-        get() = prefs.getInt(KEY_V129_CACHE_COMP_LEVEL3, 0)
-        set(value) = prefs.edit().putInt(KEY_V129_CACHE_COMP_LEVEL3, value.coerceIn(0, 5)).apply()
-    var v129ProgressBarFade2: Boolean
-        get() = prefs.getBoolean(KEY_V129_PROGRESS_BAR_FADE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V129_PROGRESS_BAR_FADE2, value).apply()
-    var v129PlaybackAutoPause2: Boolean
-        get() = prefs.getBoolean(KEY_V129_PLAYBACK_AUTO_PAUSE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V129_PLAYBACK_AUTO_PAUSE2, value).apply()
-    var v129DanmakuScrollSpeed2: Int
-        get() = prefs.getInt(KEY_V129_DANMAKU_SCROLL_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V129_DANMAKU_SCROLL_SPEED2, value.coerceIn(0, 10)).apply()
-    var v129ColorTint2: Int
-        get() = prefs.getInt(KEY_V129_COLOR_TINT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V129_COLOR_TINT2, value.coerceIn(0, 100)).apply()
-    var v129VolumeFadeOut2: Int
-        get() = prefs.getInt(KEY_V129_VOLUME_FADE_OUT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V129_VOLUME_FADE_OUT2, value.coerceIn(0, 5)).apply()
-    var v129CastCodec2: Int
-        get() = prefs.getInt(KEY_V129_CAST_CODEC2, 0)
-        set(value) = prefs.edit().putInt(KEY_V129_CAST_CODEC2, value.coerceIn(0, 3)).apply()
-    var v129GestureDoubleSwipe2: Boolean
-        get() = prefs.getBoolean(KEY_V129_GESTURE_DOUBLE_SWIPE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V129_GESTURE_DOUBLE_SWIPE2, value).apply()
-    var v129CacheMemorySize2: Int
-        get() = prefs.getInt(KEY_V129_CACHE_MEMORY_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V129_CACHE_MEMORY_SIZE2, value.coerceIn(0, 10)).apply()
-
     // ===== v130.x =====
-    var v130PlaybackSkipIntro2: Boolean
-        get() = prefs.getBoolean(KEY_V130_PLAYBACK_SKIP_INTRO2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V130_PLAYBACK_SKIP_INTRO2, value).apply()
-    var v130DanmakuSpeed2: Int
-        get() = prefs.getInt(KEY_V130_DANMAKU_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V130_DANMAKU_SPEED2, value.coerceIn(0, 10)).apply()
-    var v130ColorFade2: Int
-        get() = prefs.getInt(KEY_V130_COLOR_FADE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V130_COLOR_FADE2, value.coerceIn(0, 100)).apply()
-    var v130VolumeFadeIn2: Int
-        get() = prefs.getInt(KEY_V130_VOLUME_FADE_IN2, 0)
-        set(value) = prefs.edit().putInt(KEY_V130_VOLUME_FADE_IN2, value.coerceIn(0, 5)).apply()
-    var v130CastBitrate2: Int
-        get() = prefs.getInt(KEY_V130_CAST_BITRATE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V130_CAST_BITRATE2, value.coerceIn(0, 5)).apply()
-    var v130GestureTapZone2: Int
-        get() = prefs.getInt(KEY_V130_GESTURE_TAP_ZONE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V130_GESTURE_TAP_ZONE2, value.coerceIn(0, 5)).apply()
-    var v130CacheCompLevel3: Int
-        get() = prefs.getInt(KEY_V130_CACHE_COMP_LEVEL3, 0)
-        set(value) = prefs.edit().putInt(KEY_V130_CACHE_COMP_LEVEL3, value.coerceIn(0, 5)).apply()
-    var v130ProgressBarFade2: Boolean
-        get() = prefs.getBoolean(KEY_V130_PROGRESS_BAR_FADE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V130_PROGRESS_BAR_FADE2, value).apply()
-    var v130PlaybackAutoPause2: Boolean
-        get() = prefs.getBoolean(KEY_V130_PLAYBACK_AUTO_PAUSE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V130_PLAYBACK_AUTO_PAUSE2, value).apply()
-    var v130DanmakuScrollSpeed2: Int
-        get() = prefs.getInt(KEY_V130_DANMAKU_SCROLL_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V130_DANMAKU_SCROLL_SPEED2, value.coerceIn(0, 10)).apply()
-    var v130ColorTint2: Int
-        get() = prefs.getInt(KEY_V130_COLOR_TINT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V130_COLOR_TINT2, value.coerceIn(0, 100)).apply()
-    var v130VolumeFadeOut2: Int
-        get() = prefs.getInt(KEY_V130_VOLUME_FADE_OUT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V130_VOLUME_FADE_OUT2, value.coerceIn(0, 5)).apply()
-    var v130CastCodec2: Int
-        get() = prefs.getInt(KEY_V130_CAST_CODEC2, 0)
-        set(value) = prefs.edit().putInt(KEY_V130_CAST_CODEC2, value.coerceIn(0, 3)).apply()
-    var v130GestureDoubleSwipe2: Boolean
-        get() = prefs.getBoolean(KEY_V130_GESTURE_DOUBLE_SWIPE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V130_GESTURE_DOUBLE_SWIPE2, value).apply()
-    var v130CacheMemorySize2: Int
-        get() = prefs.getInt(KEY_V130_CACHE_MEMORY_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V130_CACHE_MEMORY_SIZE2, value.coerceIn(0, 10)).apply()
-
     // ===== v131.x =====
-    var v131PlaybackSkipIntro2: Boolean
-        get() = prefs.getBoolean(KEY_V131_PLAYBACK_SKIP_INTRO2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V131_PLAYBACK_SKIP_INTRO2, value).apply()
-    var v131DanmakuSpeed2: Int
-        get() = prefs.getInt(KEY_V131_DANMAKU_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V131_DANMAKU_SPEED2, value.coerceIn(0, 10)).apply()
-    var v131ColorFade2: Int
-        get() = prefs.getInt(KEY_V131_COLOR_FADE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V131_COLOR_FADE2, value.coerceIn(0, 100)).apply()
-    var v131VolumeFadeIn2: Int
-        get() = prefs.getInt(KEY_V131_VOLUME_FADE_IN2, 0)
-        set(value) = prefs.edit().putInt(KEY_V131_VOLUME_FADE_IN2, value.coerceIn(0, 5)).apply()
-    var v131CastBitrate2: Int
-        get() = prefs.getInt(KEY_V131_CAST_BITRATE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V131_CAST_BITRATE2, value.coerceIn(0, 5)).apply()
-    var v131GestureTapZone2: Int
-        get() = prefs.getInt(KEY_V131_GESTURE_TAP_ZONE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V131_GESTURE_TAP_ZONE2, value.coerceIn(0, 5)).apply()
-    var v131CacheCompLevel3: Int
-        get() = prefs.getInt(KEY_V131_CACHE_COMP_LEVEL3, 0)
-        set(value) = prefs.edit().putInt(KEY_V131_CACHE_COMP_LEVEL3, value.coerceIn(0, 5)).apply()
-    var v131ProgressBarFade2: Boolean
-        get() = prefs.getBoolean(KEY_V131_PROGRESS_BAR_FADE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V131_PROGRESS_BAR_FADE2, value).apply()
-    var v131PlaybackAutoPause2: Boolean
-        get() = prefs.getBoolean(KEY_V131_PLAYBACK_AUTO_PAUSE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V131_PLAYBACK_AUTO_PAUSE2, value).apply()
-    var v131DanmakuScrollSpeed2: Int
-        get() = prefs.getInt(KEY_V131_DANMAKU_SCROLL_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V131_DANMAKU_SCROLL_SPEED2, value.coerceIn(0, 10)).apply()
-    var v131ColorTint2: Int
-        get() = prefs.getInt(KEY_V131_COLOR_TINT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V131_COLOR_TINT2, value.coerceIn(0, 100)).apply()
-    var v131VolumeFadeOut2: Int
-        get() = prefs.getInt(KEY_V131_VOLUME_FADE_OUT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V131_VOLUME_FADE_OUT2, value.coerceIn(0, 5)).apply()
-    var v131CastCodec2: Int
-        get() = prefs.getInt(KEY_V131_CAST_CODEC2, 0)
-        set(value) = prefs.edit().putInt(KEY_V131_CAST_CODEC2, value.coerceIn(0, 3)).apply()
-    var v131GestureDoubleSwipe2: Boolean
-        get() = prefs.getBoolean(KEY_V131_GESTURE_DOUBLE_SWIPE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V131_GESTURE_DOUBLE_SWIPE2, value).apply()
-    var v131CacheMemorySize2: Int
-        get() = prefs.getInt(KEY_V131_CACHE_MEMORY_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V131_CACHE_MEMORY_SIZE2, value.coerceIn(0, 10)).apply()
-
     // ===== v132.x =====
-    var v132PlaybackSkipIntro2: Boolean
-        get() = prefs.getBoolean(KEY_V132_PLAYBACK_SKIP_INTRO2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V132_PLAYBACK_SKIP_INTRO2, value).apply()
-    var v132DanmakuSpeed2: Int
-        get() = prefs.getInt(KEY_V132_DANMAKU_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V132_DANMAKU_SPEED2, value.coerceIn(0, 10)).apply()
-    var v132ColorFade2: Int
-        get() = prefs.getInt(KEY_V132_COLOR_FADE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V132_COLOR_FADE2, value.coerceIn(0, 100)).apply()
-    var v132VolumeFadeIn2: Int
-        get() = prefs.getInt(KEY_V132_VOLUME_FADE_IN2, 0)
-        set(value) = prefs.edit().putInt(KEY_V132_VOLUME_FADE_IN2, value.coerceIn(0, 5)).apply()
-    var v132CastBitrate2: Int
-        get() = prefs.getInt(KEY_V132_CAST_BITRATE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V132_CAST_BITRATE2, value.coerceIn(0, 5)).apply()
-    var v132GestureTapZone2: Int
-        get() = prefs.getInt(KEY_V132_GESTURE_TAP_ZONE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V132_GESTURE_TAP_ZONE2, value.coerceIn(0, 5)).apply()
-    var v132CacheCompLevel3: Int
-        get() = prefs.getInt(KEY_V132_CACHE_COMP_LEVEL3, 0)
-        set(value) = prefs.edit().putInt(KEY_V132_CACHE_COMP_LEVEL3, value.coerceIn(0, 5)).apply()
-    var v132ProgressBarFade2: Boolean
-        get() = prefs.getBoolean(KEY_V132_PROGRESS_BAR_FADE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V132_PROGRESS_BAR_FADE2, value).apply()
-    var v132PlaybackAutoPause2: Boolean
-        get() = prefs.getBoolean(KEY_V132_PLAYBACK_AUTO_PAUSE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V132_PLAYBACK_AUTO_PAUSE2, value).apply()
-    var v132DanmakuScrollSpeed2: Int
-        get() = prefs.getInt(KEY_V132_DANMAKU_SCROLL_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V132_DANMAKU_SCROLL_SPEED2, value.coerceIn(0, 10)).apply()
-    var v132ColorTint2: Int
-        get() = prefs.getInt(KEY_V132_COLOR_TINT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V132_COLOR_TINT2, value.coerceIn(0, 100)).apply()
-    var v132VolumeFadeOut2: Int
-        get() = prefs.getInt(KEY_V132_VOLUME_FADE_OUT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V132_VOLUME_FADE_OUT2, value.coerceIn(0, 5)).apply()
-    var v132CastCodec2: Int
-        get() = prefs.getInt(KEY_V132_CAST_CODEC2, 0)
-        set(value) = prefs.edit().putInt(KEY_V132_CAST_CODEC2, value.coerceIn(0, 3)).apply()
-    var v132GestureDoubleSwipe2: Boolean
-        get() = prefs.getBoolean(KEY_V132_GESTURE_DOUBLE_SWIPE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V132_GESTURE_DOUBLE_SWIPE2, value).apply()
-    var v132CacheMemorySize2: Int
-        get() = prefs.getInt(KEY_V132_CACHE_MEMORY_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V132_CACHE_MEMORY_SIZE2, value.coerceIn(0, 10)).apply()
-
     // ===== v133.x =====
-    var v133PlaybackSkipIntro2: Boolean
-        get() = prefs.getBoolean(KEY_V133_PLAYBACK_SKIP_INTRO2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V133_PLAYBACK_SKIP_INTRO2, value).apply()
-    var v133DanmakuSpeed2: Int
-        get() = prefs.getInt(KEY_V133_DANMAKU_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V133_DANMAKU_SPEED2, value.coerceIn(0, 10)).apply()
-    var v133ColorFade2: Int
-        get() = prefs.getInt(KEY_V133_COLOR_FADE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V133_COLOR_FADE2, value.coerceIn(0, 100)).apply()
-    var v133VolumeFadeIn2: Int
-        get() = prefs.getInt(KEY_V133_VOLUME_FADE_IN2, 0)
-        set(value) = prefs.edit().putInt(KEY_V133_VOLUME_FADE_IN2, value.coerceIn(0, 5)).apply()
-    var v133CastBitrate2: Int
-        get() = prefs.getInt(KEY_V133_CAST_BITRATE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V133_CAST_BITRATE2, value.coerceIn(0, 5)).apply()
-    var v133GestureTapZone2: Int
-        get() = prefs.getInt(KEY_V133_GESTURE_TAP_ZONE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V133_GESTURE_TAP_ZONE2, value.coerceIn(0, 5)).apply()
-    var v133CacheCompLevel3: Int
-        get() = prefs.getInt(KEY_V133_CACHE_COMP_LEVEL3, 0)
-        set(value) = prefs.edit().putInt(KEY_V133_CACHE_COMP_LEVEL3, value.coerceIn(0, 5)).apply()
-    var v133ProgressBarFade2: Boolean
-        get() = prefs.getBoolean(KEY_V133_PROGRESS_BAR_FADE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V133_PROGRESS_BAR_FADE2, value).apply()
-    var v133PlaybackAutoPause2: Boolean
-        get() = prefs.getBoolean(KEY_V133_PLAYBACK_AUTO_PAUSE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V133_PLAYBACK_AUTO_PAUSE2, value).apply()
-    var v133DanmakuScrollSpeed2: Int
-        get() = prefs.getInt(KEY_V133_DANMAKU_SCROLL_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V133_DANMAKU_SCROLL_SPEED2, value.coerceIn(0, 10)).apply()
-    var v133ColorTint2: Int
-        get() = prefs.getInt(KEY_V133_COLOR_TINT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V133_COLOR_TINT2, value.coerceIn(0, 100)).apply()
-    var v133VolumeFadeOut2: Int
-        get() = prefs.getInt(KEY_V133_VOLUME_FADE_OUT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V133_VOLUME_FADE_OUT2, value.coerceIn(0, 5)).apply()
-    var v133CastCodec2: Int
-        get() = prefs.getInt(KEY_V133_CAST_CODEC2, 0)
-        set(value) = prefs.edit().putInt(KEY_V133_CAST_CODEC2, value.coerceIn(0, 3)).apply()
-    var v133GestureDoubleSwipe2: Boolean
-        get() = prefs.getBoolean(KEY_V133_GESTURE_DOUBLE_SWIPE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V133_GESTURE_DOUBLE_SWIPE2, value).apply()
-    var v133CacheMemorySize2: Int
-        get() = prefs.getInt(KEY_V133_CACHE_MEMORY_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V133_CACHE_MEMORY_SIZE2, value.coerceIn(0, 10)).apply()
-
     // ===== v134.x =====
-    var v134PlaybackSkipIntro2: Boolean
-        get() = prefs.getBoolean(KEY_V134_PLAYBACK_SKIP_INTRO2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V134_PLAYBACK_SKIP_INTRO2, value).apply()
-    var v134DanmakuSpeed2: Int
-        get() = prefs.getInt(KEY_V134_DANMAKU_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V134_DANMAKU_SPEED2, value.coerceIn(0, 10)).apply()
-    var v134ColorFade2: Int
-        get() = prefs.getInt(KEY_V134_COLOR_FADE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V134_COLOR_FADE2, value.coerceIn(0, 100)).apply()
-    var v134VolumeFadeIn2: Int
-        get() = prefs.getInt(KEY_V134_VOLUME_FADE_IN2, 0)
-        set(value) = prefs.edit().putInt(KEY_V134_VOLUME_FADE_IN2, value.coerceIn(0, 5)).apply()
-    var v134CastBitrate2: Int
-        get() = prefs.getInt(KEY_V134_CAST_BITRATE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V134_CAST_BITRATE2, value.coerceIn(0, 5)).apply()
-    var v134GestureTapZone2: Int
-        get() = prefs.getInt(KEY_V134_GESTURE_TAP_ZONE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V134_GESTURE_TAP_ZONE2, value.coerceIn(0, 5)).apply()
-    var v134CacheCompLevel3: Int
-        get() = prefs.getInt(KEY_V134_CACHE_COMP_LEVEL3, 0)
-        set(value) = prefs.edit().putInt(KEY_V134_CACHE_COMP_LEVEL3, value.coerceIn(0, 5)).apply()
-    var v134ProgressBarFade2: Boolean
-        get() = prefs.getBoolean(KEY_V134_PROGRESS_BAR_FADE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V134_PROGRESS_BAR_FADE2, value).apply()
-    var v134PlaybackAutoPause2: Boolean
-        get() = prefs.getBoolean(KEY_V134_PLAYBACK_AUTO_PAUSE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V134_PLAYBACK_AUTO_PAUSE2, value).apply()
-    var v134DanmakuScrollSpeed2: Int
-        get() = prefs.getInt(KEY_V134_DANMAKU_SCROLL_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V134_DANMAKU_SCROLL_SPEED2, value.coerceIn(0, 10)).apply()
-    var v134ColorTint2: Int
-        get() = prefs.getInt(KEY_V134_COLOR_TINT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V134_COLOR_TINT2, value.coerceIn(0, 100)).apply()
-    var v134VolumeFadeOut2: Int
-        get() = prefs.getInt(KEY_V134_VOLUME_FADE_OUT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V134_VOLUME_FADE_OUT2, value.coerceIn(0, 5)).apply()
-    var v134CastCodec2: Int
-        get() = prefs.getInt(KEY_V134_CAST_CODEC2, 0)
-        set(value) = prefs.edit().putInt(KEY_V134_CAST_CODEC2, value.coerceIn(0, 3)).apply()
-    var v134GestureDoubleSwipe2: Boolean
-        get() = prefs.getBoolean(KEY_V134_GESTURE_DOUBLE_SWIPE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V134_GESTURE_DOUBLE_SWIPE2, value).apply()
-    var v134CacheMemorySize2: Int
-        get() = prefs.getInt(KEY_V134_CACHE_MEMORY_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V134_CACHE_MEMORY_SIZE2, value.coerceIn(0, 10)).apply()
-
     // ===== v135.x =====
-    var v135PlaybackSkipIntro2: Boolean
-        get() = prefs.getBoolean(KEY_V135_PLAYBACK_SKIP_INTRO2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V135_PLAYBACK_SKIP_INTRO2, value).apply()
-    var v135DanmakuSpeed2: Int
-        get() = prefs.getInt(KEY_V135_DANMAKU_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V135_DANMAKU_SPEED2, value.coerceIn(0, 10)).apply()
-    var v135ColorFade2: Int
-        get() = prefs.getInt(KEY_V135_COLOR_FADE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V135_COLOR_FADE2, value.coerceIn(0, 100)).apply()
-    var v135VolumeFadeIn2: Int
-        get() = prefs.getInt(KEY_V135_VOLUME_FADE_IN2, 0)
-        set(value) = prefs.edit().putInt(KEY_V135_VOLUME_FADE_IN2, value.coerceIn(0, 5)).apply()
-    var v135CastBitrate2: Int
-        get() = prefs.getInt(KEY_V135_CAST_BITRATE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V135_CAST_BITRATE2, value.coerceIn(0, 5)).apply()
-    var v135GestureTapZone2: Int
-        get() = prefs.getInt(KEY_V135_GESTURE_TAP_ZONE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V135_GESTURE_TAP_ZONE2, value.coerceIn(0, 5)).apply()
-    var v135CacheCompLevel3: Int
-        get() = prefs.getInt(KEY_V135_CACHE_COMP_LEVEL3, 0)
-        set(value) = prefs.edit().putInt(KEY_V135_CACHE_COMP_LEVEL3, value.coerceIn(0, 5)).apply()
-    var v135ProgressBarFade2: Boolean
-        get() = prefs.getBoolean(KEY_V135_PROGRESS_BAR_FADE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V135_PROGRESS_BAR_FADE2, value).apply()
-    var v135PlaybackAutoPause2: Boolean
-        get() = prefs.getBoolean(KEY_V135_PLAYBACK_AUTO_PAUSE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V135_PLAYBACK_AUTO_PAUSE2, value).apply()
-    var v135DanmakuScrollSpeed2: Int
-        get() = prefs.getInt(KEY_V135_DANMAKU_SCROLL_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V135_DANMAKU_SCROLL_SPEED2, value.coerceIn(0, 10)).apply()
-    var v135ColorTint2: Int
-        get() = prefs.getInt(KEY_V135_COLOR_TINT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V135_COLOR_TINT2, value.coerceIn(0, 100)).apply()
-    var v135VolumeFadeOut2: Int
-        get() = prefs.getInt(KEY_V135_VOLUME_FADE_OUT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V135_VOLUME_FADE_OUT2, value.coerceIn(0, 5)).apply()
-    var v135CastCodec2: Int
-        get() = prefs.getInt(KEY_V135_CAST_CODEC2, 0)
-        set(value) = prefs.edit().putInt(KEY_V135_CAST_CODEC2, value.coerceIn(0, 3)).apply()
-    var v135GestureDoubleSwipe2: Boolean
-        get() = prefs.getBoolean(KEY_V135_GESTURE_DOUBLE_SWIPE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V135_GESTURE_DOUBLE_SWIPE2, value).apply()
-    var v135CacheMemorySize2: Int
-        get() = prefs.getInt(KEY_V135_CACHE_MEMORY_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V135_CACHE_MEMORY_SIZE2, value.coerceIn(0, 10)).apply()
-
     // ===== v136.x =====
-    var v136PlaybackSkipIntro2: Boolean
-        get() = prefs.getBoolean(KEY_V136_PLAYBACK_SKIP_INTRO2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V136_PLAYBACK_SKIP_INTRO2, value).apply()
-    var v136DanmakuSpeed2: Int
-        get() = prefs.getInt(KEY_V136_DANMAKU_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V136_DANMAKU_SPEED2, value.coerceIn(0, 10)).apply()
-    var v136ColorFade2: Int
-        get() = prefs.getInt(KEY_V136_COLOR_FADE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V136_COLOR_FADE2, value.coerceIn(0, 100)).apply()
-    var v136VolumeFadeIn2: Int
-        get() = prefs.getInt(KEY_V136_VOLUME_FADE_IN2, 0)
-        set(value) = prefs.edit().putInt(KEY_V136_VOLUME_FADE_IN2, value.coerceIn(0, 5)).apply()
-    var v136CastBitrate2: Int
-        get() = prefs.getInt(KEY_V136_CAST_BITRATE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V136_CAST_BITRATE2, value.coerceIn(0, 5)).apply()
-    var v136GestureTapZone2: Int
-        get() = prefs.getInt(KEY_V136_GESTURE_TAP_ZONE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V136_GESTURE_TAP_ZONE2, value.coerceIn(0, 5)).apply()
-    var v136CacheCompLevel3: Int
-        get() = prefs.getInt(KEY_V136_CACHE_COMP_LEVEL3, 0)
-        set(value) = prefs.edit().putInt(KEY_V136_CACHE_COMP_LEVEL3, value.coerceIn(0, 5)).apply()
-    var v136ProgressBarFade2: Boolean
-        get() = prefs.getBoolean(KEY_V136_PROGRESS_BAR_FADE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V136_PROGRESS_BAR_FADE2, value).apply()
-    var v136PlaybackAutoPause2: Boolean
-        get() = prefs.getBoolean(KEY_V136_PLAYBACK_AUTO_PAUSE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V136_PLAYBACK_AUTO_PAUSE2, value).apply()
-    var v136DanmakuScrollSpeed2: Int
-        get() = prefs.getInt(KEY_V136_DANMAKU_SCROLL_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V136_DANMAKU_SCROLL_SPEED2, value.coerceIn(0, 10)).apply()
-    var v136ColorTint2: Int
-        get() = prefs.getInt(KEY_V136_COLOR_TINT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V136_COLOR_TINT2, value.coerceIn(0, 100)).apply()
-    var v136VolumeFadeOut2: Int
-        get() = prefs.getInt(KEY_V136_VOLUME_FADE_OUT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V136_VOLUME_FADE_OUT2, value.coerceIn(0, 5)).apply()
-    var v136CastCodec2: Int
-        get() = prefs.getInt(KEY_V136_CAST_CODEC2, 0)
-        set(value) = prefs.edit().putInt(KEY_V136_CAST_CODEC2, value.coerceIn(0, 3)).apply()
-    var v136GestureDoubleSwipe2: Boolean
-        get() = prefs.getBoolean(KEY_V136_GESTURE_DOUBLE_SWIPE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V136_GESTURE_DOUBLE_SWIPE2, value).apply()
-    var v136CacheMemorySize2: Int
-        get() = prefs.getInt(KEY_V136_CACHE_MEMORY_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V136_CACHE_MEMORY_SIZE2, value.coerceIn(0, 10)).apply()
-
     // ===== v137.x =====
-    var v137PlaybackSkipIntro2: Boolean
-        get() = prefs.getBoolean(KEY_V137_PLAYBACK_SKIP_INTRO2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V137_PLAYBACK_SKIP_INTRO2, value).apply()
-    var v137DanmakuSpeed2: Int
-        get() = prefs.getInt(KEY_V137_DANMAKU_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V137_DANMAKU_SPEED2, value.coerceIn(0, 10)).apply()
-    var v137ColorFade2: Int
-        get() = prefs.getInt(KEY_V137_COLOR_FADE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V137_COLOR_FADE2, value.coerceIn(0, 100)).apply()
-    var v137VolumeFadeIn2: Int
-        get() = prefs.getInt(KEY_V137_VOLUME_FADE_IN2, 0)
-        set(value) = prefs.edit().putInt(KEY_V137_VOLUME_FADE_IN2, value.coerceIn(0, 5)).apply()
-    var v137CastBitrate2: Int
-        get() = prefs.getInt(KEY_V137_CAST_BITRATE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V137_CAST_BITRATE2, value.coerceIn(0, 5)).apply()
-    var v137GestureTapZone2: Int
-        get() = prefs.getInt(KEY_V137_GESTURE_TAP_ZONE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V137_GESTURE_TAP_ZONE2, value.coerceIn(0, 5)).apply()
-    var v137CacheCompLevel3: Int
-        get() = prefs.getInt(KEY_V137_CACHE_COMP_LEVEL3, 0)
-        set(value) = prefs.edit().putInt(KEY_V137_CACHE_COMP_LEVEL3, value.coerceIn(0, 5)).apply()
-    var v137ProgressBarFade2: Boolean
-        get() = prefs.getBoolean(KEY_V137_PROGRESS_BAR_FADE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V137_PROGRESS_BAR_FADE2, value).apply()
-    var v137PlaybackAutoPause2: Boolean
-        get() = prefs.getBoolean(KEY_V137_PLAYBACK_AUTO_PAUSE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V137_PLAYBACK_AUTO_PAUSE2, value).apply()
-    var v137DanmakuScrollSpeed2: Int
-        get() = prefs.getInt(KEY_V137_DANMAKU_SCROLL_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V137_DANMAKU_SCROLL_SPEED2, value.coerceIn(0, 10)).apply()
-    var v137ColorTint2: Int
-        get() = prefs.getInt(KEY_V137_COLOR_TINT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V137_COLOR_TINT2, value.coerceIn(0, 100)).apply()
-    var v137VolumeFadeOut2: Int
-        get() = prefs.getInt(KEY_V137_VOLUME_FADE_OUT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V137_VOLUME_FADE_OUT2, value.coerceIn(0, 5)).apply()
-    var v137CastCodec2: Int
-        get() = prefs.getInt(KEY_V137_CAST_CODEC2, 0)
-        set(value) = prefs.edit().putInt(KEY_V137_CAST_CODEC2, value.coerceIn(0, 3)).apply()
-    var v137GestureDoubleSwipe2: Boolean
-        get() = prefs.getBoolean(KEY_V137_GESTURE_DOUBLE_SWIPE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V137_GESTURE_DOUBLE_SWIPE2, value).apply()
-    var v137CacheMemorySize2: Int
-        get() = prefs.getInt(KEY_V137_CACHE_MEMORY_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V137_CACHE_MEMORY_SIZE2, value.coerceIn(0, 10)).apply()
-
     // ===== v138.x =====
-    var v138PlaybackSkipIntro2: Boolean
-        get() = prefs.getBoolean(KEY_V138_PLAYBACK_SKIP_INTRO2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V138_PLAYBACK_SKIP_INTRO2, value).apply()
-    var v138DanmakuSpeed2: Int
-        get() = prefs.getInt(KEY_V138_DANMAKU_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V138_DANMAKU_SPEED2, value.coerceIn(0, 10)).apply()
-    var v138ColorFade2: Int
-        get() = prefs.getInt(KEY_V138_COLOR_FADE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V138_COLOR_FADE2, value.coerceIn(0, 100)).apply()
-    var v138VolumeFadeIn2: Int
-        get() = prefs.getInt(KEY_V138_VOLUME_FADE_IN2, 0)
-        set(value) = prefs.edit().putInt(KEY_V138_VOLUME_FADE_IN2, value.coerceIn(0, 5)).apply()
-    var v138CastBitrate2: Int
-        get() = prefs.getInt(KEY_V138_CAST_BITRATE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V138_CAST_BITRATE2, value.coerceIn(0, 5)).apply()
-    var v138GestureTapZone2: Int
-        get() = prefs.getInt(KEY_V138_GESTURE_TAP_ZONE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V138_GESTURE_TAP_ZONE2, value.coerceIn(0, 5)).apply()
-    var v138CacheCompLevel3: Int
-        get() = prefs.getInt(KEY_V138_CACHE_COMP_LEVEL3, 0)
-        set(value) = prefs.edit().putInt(KEY_V138_CACHE_COMP_LEVEL3, value.coerceIn(0, 5)).apply()
-    var v138ProgressBarFade2: Boolean
-        get() = prefs.getBoolean(KEY_V138_PROGRESS_BAR_FADE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V138_PROGRESS_BAR_FADE2, value).apply()
-    var v138PlaybackAutoPause2: Boolean
-        get() = prefs.getBoolean(KEY_V138_PLAYBACK_AUTO_PAUSE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V138_PLAYBACK_AUTO_PAUSE2, value).apply()
-    var v138DanmakuScrollSpeed2: Int
-        get() = prefs.getInt(KEY_V138_DANMAKU_SCROLL_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V138_DANMAKU_SCROLL_SPEED2, value.coerceIn(0, 10)).apply()
-    var v138ColorTint2: Int
-        get() = prefs.getInt(KEY_V138_COLOR_TINT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V138_COLOR_TINT2, value.coerceIn(0, 100)).apply()
-    var v138VolumeFadeOut2: Int
-        get() = prefs.getInt(KEY_V138_VOLUME_FADE_OUT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V138_VOLUME_FADE_OUT2, value.coerceIn(0, 5)).apply()
-    var v138CastCodec2: Int
-        get() = prefs.getInt(KEY_V138_CAST_CODEC2, 0)
-        set(value) = prefs.edit().putInt(KEY_V138_CAST_CODEC2, value.coerceIn(0, 3)).apply()
-    var v138GestureDoubleSwipe2: Boolean
-        get() = prefs.getBoolean(KEY_V138_GESTURE_DOUBLE_SWIPE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V138_GESTURE_DOUBLE_SWIPE2, value).apply()
-    var v138CacheMemorySize2: Int
-        get() = prefs.getInt(KEY_V138_CACHE_MEMORY_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V138_CACHE_MEMORY_SIZE2, value.coerceIn(0, 10)).apply()
-
     // ===== v139.x =====
-    var v139PlaybackSkipIntro2: Boolean
-        get() = prefs.getBoolean(KEY_V139_PLAYBACK_SKIP_INTRO2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V139_PLAYBACK_SKIP_INTRO2, value).apply()
-    var v139DanmakuSpeed2: Int
-        get() = prefs.getInt(KEY_V139_DANMAKU_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V139_DANMAKU_SPEED2, value.coerceIn(0, 10)).apply()
-    var v139ColorFade2: Int
-        get() = prefs.getInt(KEY_V139_COLOR_FADE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V139_COLOR_FADE2, value.coerceIn(0, 100)).apply()
-    var v139VolumeFadeIn2: Int
-        get() = prefs.getInt(KEY_V139_VOLUME_FADE_IN2, 0)
-        set(value) = prefs.edit().putInt(KEY_V139_VOLUME_FADE_IN2, value.coerceIn(0, 5)).apply()
-    var v139CastBitrate2: Int
-        get() = prefs.getInt(KEY_V139_CAST_BITRATE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V139_CAST_BITRATE2, value.coerceIn(0, 5)).apply()
-    var v139GestureTapZone2: Int
-        get() = prefs.getInt(KEY_V139_GESTURE_TAP_ZONE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V139_GESTURE_TAP_ZONE2, value.coerceIn(0, 5)).apply()
-    var v139CacheCompLevel3: Int
-        get() = prefs.getInt(KEY_V139_CACHE_COMP_LEVEL3, 0)
-        set(value) = prefs.edit().putInt(KEY_V139_CACHE_COMP_LEVEL3, value.coerceIn(0, 5)).apply()
-    var v139ProgressBarFade2: Boolean
-        get() = prefs.getBoolean(KEY_V139_PROGRESS_BAR_FADE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V139_PROGRESS_BAR_FADE2, value).apply()
-    var v139PlaybackAutoPause2: Boolean
-        get() = prefs.getBoolean(KEY_V139_PLAYBACK_AUTO_PAUSE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V139_PLAYBACK_AUTO_PAUSE2, value).apply()
-    var v139DanmakuScrollSpeed2: Int
-        get() = prefs.getInt(KEY_V139_DANMAKU_SCROLL_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V139_DANMAKU_SCROLL_SPEED2, value.coerceIn(0, 10)).apply()
-    var v139ColorTint2: Int
-        get() = prefs.getInt(KEY_V139_COLOR_TINT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V139_COLOR_TINT2, value.coerceIn(0, 100)).apply()
-    var v139VolumeFadeOut2: Int
-        get() = prefs.getInt(KEY_V139_VOLUME_FADE_OUT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V139_VOLUME_FADE_OUT2, value.coerceIn(0, 5)).apply()
-    var v139CastCodec2: Int
-        get() = prefs.getInt(KEY_V139_CAST_CODEC2, 0)
-        set(value) = prefs.edit().putInt(KEY_V139_CAST_CODEC2, value.coerceIn(0, 3)).apply()
-    var v139GestureDoubleSwipe2: Boolean
-        get() = prefs.getBoolean(KEY_V139_GESTURE_DOUBLE_SWIPE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V139_GESTURE_DOUBLE_SWIPE2, value).apply()
-    var v139CacheMemorySize2: Int
-        get() = prefs.getInt(KEY_V139_CACHE_MEMORY_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V139_CACHE_MEMORY_SIZE2, value.coerceIn(0, 10)).apply()
-
     // ===== v140.x =====
-    var v140PlaybackSkipIntro2: Boolean
-        get() = prefs.getBoolean(KEY_V140_PLAYBACK_SKIP_INTRO2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V140_PLAYBACK_SKIP_INTRO2, value).apply()
-    var v140DanmakuSpeed2: Int
-        get() = prefs.getInt(KEY_V140_DANMAKU_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V140_DANMAKU_SPEED2, value.coerceIn(0, 10)).apply()
-    var v140ColorFade2: Int
-        get() = prefs.getInt(KEY_V140_COLOR_FADE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V140_COLOR_FADE2, value.coerceIn(0, 100)).apply()
-    var v140VolumeFadeIn2: Int
-        get() = prefs.getInt(KEY_V140_VOLUME_FADE_IN2, 0)
-        set(value) = prefs.edit().putInt(KEY_V140_VOLUME_FADE_IN2, value.coerceIn(0, 5)).apply()
-    var v140CastBitrate2: Int
-        get() = prefs.getInt(KEY_V140_CAST_BITRATE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V140_CAST_BITRATE2, value.coerceIn(0, 5)).apply()
-    var v140GestureTapZone2: Int
-        get() = prefs.getInt(KEY_V140_GESTURE_TAP_ZONE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V140_GESTURE_TAP_ZONE2, value.coerceIn(0, 5)).apply()
-    var v140CacheCompLevel3: Int
-        get() = prefs.getInt(KEY_V140_CACHE_COMP_LEVEL3, 0)
-        set(value) = prefs.edit().putInt(KEY_V140_CACHE_COMP_LEVEL3, value.coerceIn(0, 5)).apply()
-    var v140ProgressBarFade2: Boolean
-        get() = prefs.getBoolean(KEY_V140_PROGRESS_BAR_FADE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V140_PROGRESS_BAR_FADE2, value).apply()
-    var v140PlaybackAutoPause2: Boolean
-        get() = prefs.getBoolean(KEY_V140_PLAYBACK_AUTO_PAUSE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V140_PLAYBACK_AUTO_PAUSE2, value).apply()
-    var v140DanmakuScrollSpeed2: Int
-        get() = prefs.getInt(KEY_V140_DANMAKU_SCROLL_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V140_DANMAKU_SCROLL_SPEED2, value.coerceIn(0, 10)).apply()
-    var v140ColorTint2: Int
-        get() = prefs.getInt(KEY_V140_COLOR_TINT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V140_COLOR_TINT2, value.coerceIn(0, 100)).apply()
-    var v140VolumeFadeOut2: Int
-        get() = prefs.getInt(KEY_V140_VOLUME_FADE_OUT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V140_VOLUME_FADE_OUT2, value.coerceIn(0, 5)).apply()
-    var v140CastCodec2: Int
-        get() = prefs.getInt(KEY_V140_CAST_CODEC2, 0)
-        set(value) = prefs.edit().putInt(KEY_V140_CAST_CODEC2, value.coerceIn(0, 3)).apply()
-    var v140GestureDoubleSwipe2: Boolean
-        get() = prefs.getBoolean(KEY_V140_GESTURE_DOUBLE_SWIPE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V140_GESTURE_DOUBLE_SWIPE2, value).apply()
-    var v140CacheMemorySize2: Int
-        get() = prefs.getInt(KEY_V140_CACHE_MEMORY_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V140_CACHE_MEMORY_SIZE2, value.coerceIn(0, 10)).apply()
-
     // ===== v141.x =====
-    var v141PlaybackSkipIntro2: Boolean
-        get() = prefs.getBoolean(KEY_V141_PLAYBACK_SKIP_INTRO2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V141_PLAYBACK_SKIP_INTRO2, value).apply()
-    var v141DanmakuSpeed2: Int
-        get() = prefs.getInt(KEY_V141_DANMAKU_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V141_DANMAKU_SPEED2, value.coerceIn(0, 10)).apply()
-    var v141ColorFade2: Int
-        get() = prefs.getInt(KEY_V141_COLOR_FADE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V141_COLOR_FADE2, value.coerceIn(0, 100)).apply()
-    var v141VolumeFadeIn2: Int
-        get() = prefs.getInt(KEY_V141_VOLUME_FADE_IN2, 0)
-        set(value) = prefs.edit().putInt(KEY_V141_VOLUME_FADE_IN2, value.coerceIn(0, 5)).apply()
-    var v141CastBitrate2: Int
-        get() = prefs.getInt(KEY_V141_CAST_BITRATE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V141_CAST_BITRATE2, value.coerceIn(0, 5)).apply()
-    var v141GestureTapZone2: Int
-        get() = prefs.getInt(KEY_V141_GESTURE_TAP_ZONE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V141_GESTURE_TAP_ZONE2, value.coerceIn(0, 5)).apply()
-    var v141CacheCompLevel3: Int
-        get() = prefs.getInt(KEY_V141_CACHE_COMP_LEVEL3, 0)
-        set(value) = prefs.edit().putInt(KEY_V141_CACHE_COMP_LEVEL3, value.coerceIn(0, 5)).apply()
-    var v141ProgressBarFade2: Boolean
-        get() = prefs.getBoolean(KEY_V141_PROGRESS_BAR_FADE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V141_PROGRESS_BAR_FADE2, value).apply()
-    var v141PlaybackAutoPause2: Boolean
-        get() = prefs.getBoolean(KEY_V141_PLAYBACK_AUTO_PAUSE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V141_PLAYBACK_AUTO_PAUSE2, value).apply()
-    var v141DanmakuScrollSpeed2: Int
-        get() = prefs.getInt(KEY_V141_DANMAKU_SCROLL_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V141_DANMAKU_SCROLL_SPEED2, value.coerceIn(0, 10)).apply()
-    var v141ColorTint2: Int
-        get() = prefs.getInt(KEY_V141_COLOR_TINT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V141_COLOR_TINT2, value.coerceIn(0, 100)).apply()
-    var v141VolumeFadeOut2: Int
-        get() = prefs.getInt(KEY_V141_VOLUME_FADE_OUT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V141_VOLUME_FADE_OUT2, value.coerceIn(0, 5)).apply()
-    var v141CastCodec2: Int
-        get() = prefs.getInt(KEY_V141_CAST_CODEC2, 0)
-        set(value) = prefs.edit().putInt(KEY_V141_CAST_CODEC2, value.coerceIn(0, 3)).apply()
-    var v141GestureDoubleSwipe2: Boolean
-        get() = prefs.getBoolean(KEY_V141_GESTURE_DOUBLE_SWIPE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V141_GESTURE_DOUBLE_SWIPE2, value).apply()
-    var v141CacheMemorySize2: Int
-        get() = prefs.getInt(KEY_V141_CACHE_MEMORY_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V141_CACHE_MEMORY_SIZE2, value.coerceIn(0, 10)).apply()
-
     // ===== v142.x =====
-    var v142PlaybackSkipIntro2: Boolean
-        get() = prefs.getBoolean(KEY_V142_PLAYBACK_SKIP_INTRO2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V142_PLAYBACK_SKIP_INTRO2, value).apply()
-    var v142DanmakuSpeed2: Int
-        get() = prefs.getInt(KEY_V142_DANMAKU_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V142_DANMAKU_SPEED2, value.coerceIn(0, 10)).apply()
-    var v142ColorFade2: Int
-        get() = prefs.getInt(KEY_V142_COLOR_FADE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V142_COLOR_FADE2, value.coerceIn(0, 100)).apply()
-    var v142VolumeFadeIn2: Int
-        get() = prefs.getInt(KEY_V142_VOLUME_FADE_IN2, 0)
-        set(value) = prefs.edit().putInt(KEY_V142_VOLUME_FADE_IN2, value.coerceIn(0, 5)).apply()
-    var v142CastBitrate2: Int
-        get() = prefs.getInt(KEY_V142_CAST_BITRATE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V142_CAST_BITRATE2, value.coerceIn(0, 5)).apply()
-    var v142GestureTapZone2: Int
-        get() = prefs.getInt(KEY_V142_GESTURE_TAP_ZONE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V142_GESTURE_TAP_ZONE2, value.coerceIn(0, 5)).apply()
-    var v142CacheCompLevel3: Int
-        get() = prefs.getInt(KEY_V142_CACHE_COMP_LEVEL3, 0)
-        set(value) = prefs.edit().putInt(KEY_V142_CACHE_COMP_LEVEL3, value.coerceIn(0, 5)).apply()
-    var v142ProgressBarFade2: Boolean
-        get() = prefs.getBoolean(KEY_V142_PROGRESS_BAR_FADE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V142_PROGRESS_BAR_FADE2, value).apply()
-    var v142PlaybackAutoPause2: Boolean
-        get() = prefs.getBoolean(KEY_V142_PLAYBACK_AUTO_PAUSE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V142_PLAYBACK_AUTO_PAUSE2, value).apply()
-    var v142DanmakuScrollSpeed2: Int
-        get() = prefs.getInt(KEY_V142_DANMAKU_SCROLL_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V142_DANMAKU_SCROLL_SPEED2, value.coerceIn(0, 10)).apply()
-    var v142ColorTint2: Int
-        get() = prefs.getInt(KEY_V142_COLOR_TINT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V142_COLOR_TINT2, value.coerceIn(0, 100)).apply()
-    var v142VolumeFadeOut2: Int
-        get() = prefs.getInt(KEY_V142_VOLUME_FADE_OUT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V142_VOLUME_FADE_OUT2, value.coerceIn(0, 5)).apply()
-    var v142CastCodec2: Int
-        get() = prefs.getInt(KEY_V142_CAST_CODEC2, 0)
-        set(value) = prefs.edit().putInt(KEY_V142_CAST_CODEC2, value.coerceIn(0, 3)).apply()
-    var v142GestureDoubleSwipe2: Boolean
-        get() = prefs.getBoolean(KEY_V142_GESTURE_DOUBLE_SWIPE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V142_GESTURE_DOUBLE_SWIPE2, value).apply()
-    var v142CacheMemorySize2: Int
-        get() = prefs.getInt(KEY_V142_CACHE_MEMORY_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V142_CACHE_MEMORY_SIZE2, value.coerceIn(0, 10)).apply()
-
     // ===== v143.x =====
-    var v143PlaybackSkipIntro2: Boolean
-        get() = prefs.getBoolean(KEY_V143_PLAYBACK_SKIP_INTRO2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V143_PLAYBACK_SKIP_INTRO2, value).apply()
-    var v143DanmakuSpeed2: Int
-        get() = prefs.getInt(KEY_V143_DANMAKU_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V143_DANMAKU_SPEED2, value.coerceIn(0, 10)).apply()
-    var v143ColorFade2: Int
-        get() = prefs.getInt(KEY_V143_COLOR_FADE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V143_COLOR_FADE2, value.coerceIn(0, 100)).apply()
-    var v143VolumeFadeIn2: Int
-        get() = prefs.getInt(KEY_V143_VOLUME_FADE_IN2, 0)
-        set(value) = prefs.edit().putInt(KEY_V143_VOLUME_FADE_IN2, value.coerceIn(0, 5)).apply()
-    var v143CastBitrate2: Int
-        get() = prefs.getInt(KEY_V143_CAST_BITRATE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V143_CAST_BITRATE2, value.coerceIn(0, 5)).apply()
-    var v143GestureTapZone2: Int
-        get() = prefs.getInt(KEY_V143_GESTURE_TAP_ZONE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V143_GESTURE_TAP_ZONE2, value.coerceIn(0, 5)).apply()
-    var v143CacheCompLevel3: Int
-        get() = prefs.getInt(KEY_V143_CACHE_COMP_LEVEL3, 0)
-        set(value) = prefs.edit().putInt(KEY_V143_CACHE_COMP_LEVEL3, value.coerceIn(0, 5)).apply()
-    var v143ProgressBarFade2: Boolean
-        get() = prefs.getBoolean(KEY_V143_PROGRESS_BAR_FADE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V143_PROGRESS_BAR_FADE2, value).apply()
-    var v143PlaybackAutoPause2: Boolean
-        get() = prefs.getBoolean(KEY_V143_PLAYBACK_AUTO_PAUSE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V143_PLAYBACK_AUTO_PAUSE2, value).apply()
-    var v143DanmakuScrollSpeed2: Int
-        get() = prefs.getInt(KEY_V143_DANMAKU_SCROLL_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V143_DANMAKU_SCROLL_SPEED2, value.coerceIn(0, 10)).apply()
-    var v143ColorTint2: Int
-        get() = prefs.getInt(KEY_V143_COLOR_TINT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V143_COLOR_TINT2, value.coerceIn(0, 100)).apply()
-    var v143VolumeFadeOut2: Int
-        get() = prefs.getInt(KEY_V143_VOLUME_FADE_OUT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V143_VOLUME_FADE_OUT2, value.coerceIn(0, 5)).apply()
-    var v143CastCodec2: Int
-        get() = prefs.getInt(KEY_V143_CAST_CODEC2, 0)
-        set(value) = prefs.edit().putInt(KEY_V143_CAST_CODEC2, value.coerceIn(0, 3)).apply()
-    var v143GestureDoubleSwipe2: Boolean
-        get() = prefs.getBoolean(KEY_V143_GESTURE_DOUBLE_SWIPE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V143_GESTURE_DOUBLE_SWIPE2, value).apply()
-    var v143CacheMemorySize2: Int
-        get() = prefs.getInt(KEY_V143_CACHE_MEMORY_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V143_CACHE_MEMORY_SIZE2, value.coerceIn(0, 10)).apply()
-
     // ===== v144.x =====
-    var v144PlaybackSkipIntro2: Boolean
-        get() = prefs.getBoolean(KEY_V144_PLAYBACK_SKIP_INTRO2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V144_PLAYBACK_SKIP_INTRO2, value).apply()
-    var v144DanmakuSpeed2: Int
-        get() = prefs.getInt(KEY_V144_DANMAKU_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V144_DANMAKU_SPEED2, value.coerceIn(0, 10)).apply()
-    var v144ColorFade2: Int
-        get() = prefs.getInt(KEY_V144_COLOR_FADE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V144_COLOR_FADE2, value.coerceIn(0, 100)).apply()
-    var v144VolumeFadeIn2: Int
-        get() = prefs.getInt(KEY_V144_VOLUME_FADE_IN2, 0)
-        set(value) = prefs.edit().putInt(KEY_V144_VOLUME_FADE_IN2, value.coerceIn(0, 5)).apply()
-    var v144CastBitrate2: Int
-        get() = prefs.getInt(KEY_V144_CAST_BITRATE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V144_CAST_BITRATE2, value.coerceIn(0, 5)).apply()
-    var v144GestureTapZone2: Int
-        get() = prefs.getInt(KEY_V144_GESTURE_TAP_ZONE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V144_GESTURE_TAP_ZONE2, value.coerceIn(0, 5)).apply()
-    var v144CacheCompLevel3: Int
-        get() = prefs.getInt(KEY_V144_CACHE_COMP_LEVEL3, 0)
-        set(value) = prefs.edit().putInt(KEY_V144_CACHE_COMP_LEVEL3, value.coerceIn(0, 5)).apply()
-    var v144ProgressBarFade2: Boolean
-        get() = prefs.getBoolean(KEY_V144_PROGRESS_BAR_FADE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V144_PROGRESS_BAR_FADE2, value).apply()
-    var v144PlaybackAutoPause2: Boolean
-        get() = prefs.getBoolean(KEY_V144_PLAYBACK_AUTO_PAUSE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V144_PLAYBACK_AUTO_PAUSE2, value).apply()
-    var v144DanmakuScrollSpeed2: Int
-        get() = prefs.getInt(KEY_V144_DANMAKU_SCROLL_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V144_DANMAKU_SCROLL_SPEED2, value.coerceIn(0, 10)).apply()
-    var v144ColorTint2: Int
-        get() = prefs.getInt(KEY_V144_COLOR_TINT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V144_COLOR_TINT2, value.coerceIn(0, 100)).apply()
-    var v144VolumeFadeOut2: Int
-        get() = prefs.getInt(KEY_V144_VOLUME_FADE_OUT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V144_VOLUME_FADE_OUT2, value.coerceIn(0, 5)).apply()
-    var v144CastCodec2: Int
-        get() = prefs.getInt(KEY_V144_CAST_CODEC2, 0)
-        set(value) = prefs.edit().putInt(KEY_V144_CAST_CODEC2, value.coerceIn(0, 3)).apply()
-    var v144GestureDoubleSwipe2: Boolean
-        get() = prefs.getBoolean(KEY_V144_GESTURE_DOUBLE_SWIPE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V144_GESTURE_DOUBLE_SWIPE2, value).apply()
-    var v144CacheMemorySize2: Int
-        get() = prefs.getInt(KEY_V144_CACHE_MEMORY_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V144_CACHE_MEMORY_SIZE2, value.coerceIn(0, 10)).apply()
-
     // ===== v145.x =====
-    var v145PlaybackSkipIntro2: Boolean
-        get() = prefs.getBoolean(KEY_V145_PLAYBACK_SKIP_INTRO2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V145_PLAYBACK_SKIP_INTRO2, value).apply()
-    var v145DanmakuSpeed2: Int
-        get() = prefs.getInt(KEY_V145_DANMAKU_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V145_DANMAKU_SPEED2, value.coerceIn(0, 10)).apply()
-    var v145ColorFade2: Int
-        get() = prefs.getInt(KEY_V145_COLOR_FADE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V145_COLOR_FADE2, value.coerceIn(0, 100)).apply()
-    var v145VolumeFadeIn2: Int
-        get() = prefs.getInt(KEY_V145_VOLUME_FADE_IN2, 0)
-        set(value) = prefs.edit().putInt(KEY_V145_VOLUME_FADE_IN2, value.coerceIn(0, 5)).apply()
-    var v145CastBitrate2: Int
-        get() = prefs.getInt(KEY_V145_CAST_BITRATE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V145_CAST_BITRATE2, value.coerceIn(0, 5)).apply()
-    var v145GestureTapZone2: Int
-        get() = prefs.getInt(KEY_V145_GESTURE_TAP_ZONE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V145_GESTURE_TAP_ZONE2, value.coerceIn(0, 5)).apply()
-    var v145CacheCompLevel3: Int
-        get() = prefs.getInt(KEY_V145_CACHE_COMP_LEVEL3, 0)
-        set(value) = prefs.edit().putInt(KEY_V145_CACHE_COMP_LEVEL3, value.coerceIn(0, 5)).apply()
-    var v145ProgressBarFade2: Boolean
-        get() = prefs.getBoolean(KEY_V145_PROGRESS_BAR_FADE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V145_PROGRESS_BAR_FADE2, value).apply()
-    var v145PlaybackAutoPause2: Boolean
-        get() = prefs.getBoolean(KEY_V145_PLAYBACK_AUTO_PAUSE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V145_PLAYBACK_AUTO_PAUSE2, value).apply()
-    var v145DanmakuScrollSpeed2: Int
-        get() = prefs.getInt(KEY_V145_DANMAKU_SCROLL_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V145_DANMAKU_SCROLL_SPEED2, value.coerceIn(0, 10)).apply()
-    var v145ColorTint2: Int
-        get() = prefs.getInt(KEY_V145_COLOR_TINT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V145_COLOR_TINT2, value.coerceIn(0, 100)).apply()
-    var v145VolumeFadeOut2: Int
-        get() = prefs.getInt(KEY_V145_VOLUME_FADE_OUT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V145_VOLUME_FADE_OUT2, value.coerceIn(0, 5)).apply()
-    var v145CastCodec2: Int
-        get() = prefs.getInt(KEY_V145_CAST_CODEC2, 0)
-        set(value) = prefs.edit().putInt(KEY_V145_CAST_CODEC2, value.coerceIn(0, 3)).apply()
-    var v145GestureDoubleSwipe2: Boolean
-        get() = prefs.getBoolean(KEY_V145_GESTURE_DOUBLE_SWIPE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V145_GESTURE_DOUBLE_SWIPE2, value).apply()
-    var v145CacheMemorySize2: Int
-        get() = prefs.getInt(KEY_V145_CACHE_MEMORY_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V145_CACHE_MEMORY_SIZE2, value.coerceIn(0, 10)).apply()
-
     // ===== v146.x =====
-    var v146PlaybackSkipIntro2: Boolean
-        get() = prefs.getBoolean(KEY_V146_PLAYBACK_SKIP_INTRO2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V146_PLAYBACK_SKIP_INTRO2, value).apply()
-    var v146DanmakuSpeed2: Int
-        get() = prefs.getInt(KEY_V146_DANMAKU_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V146_DANMAKU_SPEED2, value.coerceIn(0, 10)).apply()
-    var v146ColorFade2: Int
-        get() = prefs.getInt(KEY_V146_COLOR_FADE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V146_COLOR_FADE2, value.coerceIn(0, 100)).apply()
-    var v146VolumeFadeIn2: Int
-        get() = prefs.getInt(KEY_V146_VOLUME_FADE_IN2, 0)
-        set(value) = prefs.edit().putInt(KEY_V146_VOLUME_FADE_IN2, value.coerceIn(0, 5)).apply()
-    var v146CastBitrate2: Int
-        get() = prefs.getInt(KEY_V146_CAST_BITRATE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V146_CAST_BITRATE2, value.coerceIn(0, 5)).apply()
-    var v146GestureTapZone2: Int
-        get() = prefs.getInt(KEY_V146_GESTURE_TAP_ZONE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V146_GESTURE_TAP_ZONE2, value.coerceIn(0, 5)).apply()
-    var v146CacheCompLevel3: Int
-        get() = prefs.getInt(KEY_V146_CACHE_COMP_LEVEL3, 0)
-        set(value) = prefs.edit().putInt(KEY_V146_CACHE_COMP_LEVEL3, value.coerceIn(0, 5)).apply()
-    var v146ProgressBarFade2: Boolean
-        get() = prefs.getBoolean(KEY_V146_PROGRESS_BAR_FADE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V146_PROGRESS_BAR_FADE2, value).apply()
-    var v146PlaybackAutoPause2: Boolean
-        get() = prefs.getBoolean(KEY_V146_PLAYBACK_AUTO_PAUSE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V146_PLAYBACK_AUTO_PAUSE2, value).apply()
-    var v146DanmakuScrollSpeed2: Int
-        get() = prefs.getInt(KEY_V146_DANMAKU_SCROLL_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V146_DANMAKU_SCROLL_SPEED2, value.coerceIn(0, 10)).apply()
-    var v146ColorTint2: Int
-        get() = prefs.getInt(KEY_V146_COLOR_TINT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V146_COLOR_TINT2, value.coerceIn(0, 100)).apply()
-    var v146VolumeFadeOut2: Int
-        get() = prefs.getInt(KEY_V146_VOLUME_FADE_OUT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V146_VOLUME_FADE_OUT2, value.coerceIn(0, 5)).apply()
-    var v146CastCodec2: Int
-        get() = prefs.getInt(KEY_V146_CAST_CODEC2, 0)
-        set(value) = prefs.edit().putInt(KEY_V146_CAST_CODEC2, value.coerceIn(0, 3)).apply()
-    var v146GestureDoubleSwipe2: Boolean
-        get() = prefs.getBoolean(KEY_V146_GESTURE_DOUBLE_SWIPE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V146_GESTURE_DOUBLE_SWIPE2, value).apply()
-    var v146CacheMemorySize2: Int
-        get() = prefs.getInt(KEY_V146_CACHE_MEMORY_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V146_CACHE_MEMORY_SIZE2, value.coerceIn(0, 10)).apply()
-
     // ===== v147.x =====
-    var v147PlaybackSkipIntro2: Boolean
-        get() = prefs.getBoolean(KEY_V147_PLAYBACK_SKIP_INTRO2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V147_PLAYBACK_SKIP_INTRO2, value).apply()
-    var v147DanmakuSpeed2: Int
-        get() = prefs.getInt(KEY_V147_DANMAKU_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V147_DANMAKU_SPEED2, value.coerceIn(0, 10)).apply()
-    var v147ColorFade2: Int
-        get() = prefs.getInt(KEY_V147_COLOR_FADE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V147_COLOR_FADE2, value.coerceIn(0, 100)).apply()
-    var v147VolumeFadeIn2: Int
-        get() = prefs.getInt(KEY_V147_VOLUME_FADE_IN2, 0)
-        set(value) = prefs.edit().putInt(KEY_V147_VOLUME_FADE_IN2, value.coerceIn(0, 5)).apply()
-    var v147CastBitrate2: Int
-        get() = prefs.getInt(KEY_V147_CAST_BITRATE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V147_CAST_BITRATE2, value.coerceIn(0, 5)).apply()
-    var v147GestureTapZone2: Int
-        get() = prefs.getInt(KEY_V147_GESTURE_TAP_ZONE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V147_GESTURE_TAP_ZONE2, value.coerceIn(0, 5)).apply()
-    var v147CacheCompLevel3: Int
-        get() = prefs.getInt(KEY_V147_CACHE_COMP_LEVEL3, 0)
-        set(value) = prefs.edit().putInt(KEY_V147_CACHE_COMP_LEVEL3, value.coerceIn(0, 5)).apply()
-    var v147ProgressBarFade2: Boolean
-        get() = prefs.getBoolean(KEY_V147_PROGRESS_BAR_FADE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V147_PROGRESS_BAR_FADE2, value).apply()
-    var v147PlaybackAutoPause2: Boolean
-        get() = prefs.getBoolean(KEY_V147_PLAYBACK_AUTO_PAUSE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V147_PLAYBACK_AUTO_PAUSE2, value).apply()
-    var v147DanmakuScrollSpeed2: Int
-        get() = prefs.getInt(KEY_V147_DANMAKU_SCROLL_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V147_DANMAKU_SCROLL_SPEED2, value.coerceIn(0, 10)).apply()
-    var v147ColorTint2: Int
-        get() = prefs.getInt(KEY_V147_COLOR_TINT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V147_COLOR_TINT2, value.coerceIn(0, 100)).apply()
-    var v147VolumeFadeOut2: Int
-        get() = prefs.getInt(KEY_V147_VOLUME_FADE_OUT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V147_VOLUME_FADE_OUT2, value.coerceIn(0, 5)).apply()
-    var v147CastCodec2: Int
-        get() = prefs.getInt(KEY_V147_CAST_CODEC2, 0)
-        set(value) = prefs.edit().putInt(KEY_V147_CAST_CODEC2, value.coerceIn(0, 3)).apply()
-    var v147GestureDoubleSwipe2: Boolean
-        get() = prefs.getBoolean(KEY_V147_GESTURE_DOUBLE_SWIPE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V147_GESTURE_DOUBLE_SWIPE2, value).apply()
-    var v147CacheMemorySize2: Int
-        get() = prefs.getInt(KEY_V147_CACHE_MEMORY_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V147_CACHE_MEMORY_SIZE2, value.coerceIn(0, 10)).apply()
-
     // ===== v148.x =====
-    var v148PlaybackSkipIntro2: Boolean
-        get() = prefs.getBoolean(KEY_V148_PLAYBACK_SKIP_INTRO2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V148_PLAYBACK_SKIP_INTRO2, value).apply()
-    var v148DanmakuSpeed2: Int
-        get() = prefs.getInt(KEY_V148_DANMAKU_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V148_DANMAKU_SPEED2, value.coerceIn(0, 10)).apply()
-    var v148ColorFade2: Int
-        get() = prefs.getInt(KEY_V148_COLOR_FADE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V148_COLOR_FADE2, value.coerceIn(0, 100)).apply()
-    var v148VolumeFadeIn2: Int
-        get() = prefs.getInt(KEY_V148_VOLUME_FADE_IN2, 0)
-        set(value) = prefs.edit().putInt(KEY_V148_VOLUME_FADE_IN2, value.coerceIn(0, 5)).apply()
-    var v148CastBitrate2: Int
-        get() = prefs.getInt(KEY_V148_CAST_BITRATE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V148_CAST_BITRATE2, value.coerceIn(0, 5)).apply()
-    var v148GestureTapZone2: Int
-        get() = prefs.getInt(KEY_V148_GESTURE_TAP_ZONE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V148_GESTURE_TAP_ZONE2, value.coerceIn(0, 5)).apply()
-    var v148CacheCompLevel3: Int
-        get() = prefs.getInt(KEY_V148_CACHE_COMP_LEVEL3, 0)
-        set(value) = prefs.edit().putInt(KEY_V148_CACHE_COMP_LEVEL3, value.coerceIn(0, 5)).apply()
-    var v148ProgressBarFade2: Boolean
-        get() = prefs.getBoolean(KEY_V148_PROGRESS_BAR_FADE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V148_PROGRESS_BAR_FADE2, value).apply()
-    var v148PlaybackAutoPause2: Boolean
-        get() = prefs.getBoolean(KEY_V148_PLAYBACK_AUTO_PAUSE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V148_PLAYBACK_AUTO_PAUSE2, value).apply()
-    var v148DanmakuScrollSpeed2: Int
-        get() = prefs.getInt(KEY_V148_DANMAKU_SCROLL_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V148_DANMAKU_SCROLL_SPEED2, value.coerceIn(0, 10)).apply()
-    var v148ColorTint2: Int
-        get() = prefs.getInt(KEY_V148_COLOR_TINT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V148_COLOR_TINT2, value.coerceIn(0, 100)).apply()
-    var v148VolumeFadeOut2: Int
-        get() = prefs.getInt(KEY_V148_VOLUME_FADE_OUT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V148_VOLUME_FADE_OUT2, value.coerceIn(0, 5)).apply()
-    var v148CastCodec2: Int
-        get() = prefs.getInt(KEY_V148_CAST_CODEC2, 0)
-        set(value) = prefs.edit().putInt(KEY_V148_CAST_CODEC2, value.coerceIn(0, 3)).apply()
-    var v148GestureDoubleSwipe2: Boolean
-        get() = prefs.getBoolean(KEY_V148_GESTURE_DOUBLE_SWIPE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V148_GESTURE_DOUBLE_SWIPE2, value).apply()
-    var v148CacheMemorySize2: Int
-        get() = prefs.getInt(KEY_V148_CACHE_MEMORY_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V148_CACHE_MEMORY_SIZE2, value.coerceIn(0, 10)).apply()
-
     // ===== v149.x =====
-    var v149PlaybackSkipIntro2: Boolean
-        get() = prefs.getBoolean(KEY_V149_PLAYBACK_SKIP_INTRO2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V149_PLAYBACK_SKIP_INTRO2, value).apply()
-    var v149DanmakuSpeed2: Int
-        get() = prefs.getInt(KEY_V149_DANMAKU_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V149_DANMAKU_SPEED2, value.coerceIn(0, 10)).apply()
-    var v149ColorFade2: Int
-        get() = prefs.getInt(KEY_V149_COLOR_FADE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V149_COLOR_FADE2, value.coerceIn(0, 100)).apply()
-    var v149VolumeFadeIn2: Int
-        get() = prefs.getInt(KEY_V149_VOLUME_FADE_IN2, 0)
-        set(value) = prefs.edit().putInt(KEY_V149_VOLUME_FADE_IN2, value.coerceIn(0, 5)).apply()
-    var v149CastBitrate2: Int
-        get() = prefs.getInt(KEY_V149_CAST_BITRATE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V149_CAST_BITRATE2, value.coerceIn(0, 5)).apply()
-    var v149GestureTapZone2: Int
-        get() = prefs.getInt(KEY_V149_GESTURE_TAP_ZONE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V149_GESTURE_TAP_ZONE2, value.coerceIn(0, 5)).apply()
-    var v149CacheCompLevel3: Int
-        get() = prefs.getInt(KEY_V149_CACHE_COMP_LEVEL3, 0)
-        set(value) = prefs.edit().putInt(KEY_V149_CACHE_COMP_LEVEL3, value.coerceIn(0, 5)).apply()
-    var v149ProgressBarFade2: Boolean
-        get() = prefs.getBoolean(KEY_V149_PROGRESS_BAR_FADE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V149_PROGRESS_BAR_FADE2, value).apply()
-    var v149PlaybackAutoPause2: Boolean
-        get() = prefs.getBoolean(KEY_V149_PLAYBACK_AUTO_PAUSE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V149_PLAYBACK_AUTO_PAUSE2, value).apply()
-    var v149DanmakuScrollSpeed2: Int
-        get() = prefs.getInt(KEY_V149_DANMAKU_SCROLL_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V149_DANMAKU_SCROLL_SPEED2, value.coerceIn(0, 10)).apply()
-    var v149ColorTint2: Int
-        get() = prefs.getInt(KEY_V149_COLOR_TINT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V149_COLOR_TINT2, value.coerceIn(0, 100)).apply()
-    var v149VolumeFadeOut2: Int
-        get() = prefs.getInt(KEY_V149_VOLUME_FADE_OUT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V149_VOLUME_FADE_OUT2, value.coerceIn(0, 5)).apply()
-    var v149CastCodec2: Int
-        get() = prefs.getInt(KEY_V149_CAST_CODEC2, 0)
-        set(value) = prefs.edit().putInt(KEY_V149_CAST_CODEC2, value.coerceIn(0, 3)).apply()
-    var v149GestureDoubleSwipe2: Boolean
-        get() = prefs.getBoolean(KEY_V149_GESTURE_DOUBLE_SWIPE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V149_GESTURE_DOUBLE_SWIPE2, value).apply()
-    var v149CacheMemorySize2: Int
-        get() = prefs.getInt(KEY_V149_CACHE_MEMORY_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V149_CACHE_MEMORY_SIZE2, value.coerceIn(0, 10)).apply()
-
     // ===== v150.x =====
-    var v150PlaybackSkipIntro2: Boolean
-        get() = prefs.getBoolean(KEY_V150_PLAYBACK_SKIP_INTRO2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V150_PLAYBACK_SKIP_INTRO2, value).apply()
-    var v150DanmakuSpeed2: Int
-        get() = prefs.getInt(KEY_V150_DANMAKU_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V150_DANMAKU_SPEED2, value.coerceIn(0, 10)).apply()
-    var v150ColorFade2: Int
-        get() = prefs.getInt(KEY_V150_COLOR_FADE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V150_COLOR_FADE2, value.coerceIn(0, 100)).apply()
-    var v150VolumeFadeIn2: Int
-        get() = prefs.getInt(KEY_V150_VOLUME_FADE_IN2, 0)
-        set(value) = prefs.edit().putInt(KEY_V150_VOLUME_FADE_IN2, value.coerceIn(0, 5)).apply()
-    var v150CastBitrate2: Int
-        get() = prefs.getInt(KEY_V150_CAST_BITRATE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V150_CAST_BITRATE2, value.coerceIn(0, 5)).apply()
-    var v150GestureTapZone2: Int
-        get() = prefs.getInt(KEY_V150_GESTURE_TAP_ZONE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V150_GESTURE_TAP_ZONE2, value.coerceIn(0, 5)).apply()
-    var v150CacheCompLevel3: Int
-        get() = prefs.getInt(KEY_V150_CACHE_COMP_LEVEL3, 0)
-        set(value) = prefs.edit().putInt(KEY_V150_CACHE_COMP_LEVEL3, value.coerceIn(0, 5)).apply()
-    var v150ProgressBarFade2: Boolean
-        get() = prefs.getBoolean(KEY_V150_PROGRESS_BAR_FADE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V150_PROGRESS_BAR_FADE2, value).apply()
-    var v150PlaybackAutoPause2: Boolean
-        get() = prefs.getBoolean(KEY_V150_PLAYBACK_AUTO_PAUSE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V150_PLAYBACK_AUTO_PAUSE2, value).apply()
-    var v150DanmakuScrollSpeed2: Int
-        get() = prefs.getInt(KEY_V150_DANMAKU_SCROLL_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V150_DANMAKU_SCROLL_SPEED2, value.coerceIn(0, 10)).apply()
-    var v150ColorTint2: Int
-        get() = prefs.getInt(KEY_V150_COLOR_TINT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V150_COLOR_TINT2, value.coerceIn(0, 100)).apply()
-    var v150VolumeFadeOut2: Int
-        get() = prefs.getInt(KEY_V150_VOLUME_FADE_OUT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V150_VOLUME_FADE_OUT2, value.coerceIn(0, 5)).apply()
-    var v150CastCodec2: Int
-        get() = prefs.getInt(KEY_V150_CAST_CODEC2, 0)
-        set(value) = prefs.edit().putInt(KEY_V150_CAST_CODEC2, value.coerceIn(0, 3)).apply()
-    var v150GestureDoubleSwipe2: Boolean
-        get() = prefs.getBoolean(KEY_V150_GESTURE_DOUBLE_SWIPE2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V150_GESTURE_DOUBLE_SWIPE2, value).apply()
-    var v150CacheMemorySize2: Int
-        get() = prefs.getInt(KEY_V150_CACHE_MEMORY_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V150_CACHE_MEMORY_SIZE2, value.coerceIn(0, 10)).apply()
-
     // ===== v101.x =====
     var v101PlaybackAutoResume3: Boolean
         get() = prefs.getBoolean(KEY_V101_PLAYBACK_AUTO_RESUME3, false)
@@ -5406,898 +3745,24 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V101_CACHE_DISK_POLICY3, value.coerceIn(0, 3)).apply()
 
     // ===== v102.x =====
-    var v102PlaybackAutoResume3: Boolean
-        get() = prefs.getBoolean(KEY_V102_PLAYBACK_AUTO_RESUME3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V102_PLAYBACK_AUTO_RESUME3, value).apply()
-    var v102DanmakuFontBlur3: Int
-        get() = prefs.getInt(KEY_V102_DANMAKU_FONT_BLUR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V102_DANMAKU_FONT_BLUR3, value.coerceIn(0, 10)).apply()
-    var v102ColorMidtone3: Int
-        get() = prefs.getInt(KEY_V102_COLOR_MIDTONE3, 0)
-        set(value) = prefs.edit().putInt(KEY_V102_COLOR_MIDTONE3, value.coerceIn(0, 100)).apply()
-    var v102VolumeCompressor3: Int
-        get() = prefs.getInt(KEY_V102_VOLUME_COMPRESSOR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V102_VOLUME_COMPRESSOR3, value.coerceIn(0, 5)).apply()
-    var v102CastSubtitleFont3: Int
-        get() = prefs.getInt(KEY_V102_CAST_SUBTITLE_FONT3, 0)
-        set(value) = prefs.edit().putInt(KEY_V102_CAST_SUBTITLE_FONT3, value.coerceIn(0, 5)).apply()
-    var v102GestureEdgePan3: Boolean
-        get() = prefs.getBoolean(KEY_V102_GESTURE_EDGE_PAN3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V102_GESTURE_EDGE_PAN3, value).apply()
-    var v102CacheReadAhead3: Int
-        get() = prefs.getInt(KEY_V102_CACHE_READ_AHEAD3, 0)
-        set(value) = prefs.edit().putInt(KEY_V102_CACHE_READ_AHEAD3, value.coerceIn(0, 5)).apply()
-    var v102ProgressBarColor3: Int
-        get() = prefs.getInt(KEY_V102_PROGRESS_BAR_COLOR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V102_PROGRESS_BAR_COLOR3, value.coerceIn(0, 10)).apply()
-    var v102PlaybackAutoSkipCredits2: Boolean
-        get() = prefs.getBoolean(KEY_V102_PLAYBACK_AUTO_SKIP_CREDITS2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V102_PLAYBACK_AUTO_SKIP_CREDITS2, value).apply()
-    var v102DanmakuFontGlowColor4: Int
-        get() = prefs.getInt(KEY_V102_DANMAKU_FONT_GLOW_COLOR4, 0)
-        set(value) = prefs.edit().putInt(KEY_V102_DANMAKU_FONT_GLOW_COLOR4, value.coerceIn(0, 10)).apply()
-    var v102ColorHighlight3: Int
-        get() = prefs.getInt(KEY_V102_COLOR_HIGHLIGHT3, 0)
-        set(value) = prefs.edit().putInt(KEY_V102_COLOR_HIGHLIGHT3, value.coerceIn(0, 100)).apply()
-    var v102VolumePeakLimiter3: Boolean
-        get() = prefs.getBoolean(KEY_V102_VOLUME_PEAK_LIMITER3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V102_VOLUME_PEAK_LIMITER3, value).apply()
-    var v102CastResolution3: Int
-        get() = prefs.getInt(KEY_V102_CAST_RESOLUTION3, 0)
-        set(value) = prefs.edit().putInt(KEY_V102_CAST_RESOLUTION3, value.coerceIn(0, 5)).apply()
-    var v102GestureHaptic3: Boolean
-        get() = prefs.getBoolean(KEY_V102_GESTURE_HAPTIC3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V102_GESTURE_HAPTIC3, value).apply()
-    var v102CacheDiskPolicy3: Int
-        get() = prefs.getInt(KEY_V102_CACHE_DISK_POLICY3, 0)
-        set(value) = prefs.edit().putInt(KEY_V102_CACHE_DISK_POLICY3, value.coerceIn(0, 3)).apply()
-
     // ===== v103.x =====
-    var v103PlaybackAutoResume3: Boolean
-        get() = prefs.getBoolean(KEY_V103_PLAYBACK_AUTO_RESUME3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V103_PLAYBACK_AUTO_RESUME3, value).apply()
-    var v103DanmakuFontBlur3: Int
-        get() = prefs.getInt(KEY_V103_DANMAKU_FONT_BLUR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V103_DANMAKU_FONT_BLUR3, value.coerceIn(0, 10)).apply()
-    var v103ColorMidtone3: Int
-        get() = prefs.getInt(KEY_V103_COLOR_MIDTONE3, 0)
-        set(value) = prefs.edit().putInt(KEY_V103_COLOR_MIDTONE3, value.coerceIn(0, 100)).apply()
-    var v103VolumeCompressor3: Int
-        get() = prefs.getInt(KEY_V103_VOLUME_COMPRESSOR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V103_VOLUME_COMPRESSOR3, value.coerceIn(0, 5)).apply()
-    var v103CastSubtitleFont3: Int
-        get() = prefs.getInt(KEY_V103_CAST_SUBTITLE_FONT3, 0)
-        set(value) = prefs.edit().putInt(KEY_V103_CAST_SUBTITLE_FONT3, value.coerceIn(0, 5)).apply()
-    var v103GestureEdgePan3: Boolean
-        get() = prefs.getBoolean(KEY_V103_GESTURE_EDGE_PAN3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V103_GESTURE_EDGE_PAN3, value).apply()
-    var v103CacheReadAhead3: Int
-        get() = prefs.getInt(KEY_V103_CACHE_READ_AHEAD3, 0)
-        set(value) = prefs.edit().putInt(KEY_V103_CACHE_READ_AHEAD3, value.coerceIn(0, 5)).apply()
-    var v103ProgressBarColor3: Int
-        get() = prefs.getInt(KEY_V103_PROGRESS_BAR_COLOR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V103_PROGRESS_BAR_COLOR3, value.coerceIn(0, 10)).apply()
-    var v103PlaybackAutoSkipCredits2: Boolean
-        get() = prefs.getBoolean(KEY_V103_PLAYBACK_AUTO_SKIP_CREDITS2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V103_PLAYBACK_AUTO_SKIP_CREDITS2, value).apply()
-    var v103DanmakuFontGlowColor4: Int
-        get() = prefs.getInt(KEY_V103_DANMAKU_FONT_GLOW_COLOR4, 0)
-        set(value) = prefs.edit().putInt(KEY_V103_DANMAKU_FONT_GLOW_COLOR4, value.coerceIn(0, 10)).apply()
-    var v103ColorHighlight3: Int
-        get() = prefs.getInt(KEY_V103_COLOR_HIGHLIGHT3, 0)
-        set(value) = prefs.edit().putInt(KEY_V103_COLOR_HIGHLIGHT3, value.coerceIn(0, 100)).apply()
-    var v103VolumePeakLimiter3: Boolean
-        get() = prefs.getBoolean(KEY_V103_VOLUME_PEAK_LIMITER3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V103_VOLUME_PEAK_LIMITER3, value).apply()
-    var v103CastResolution3: Int
-        get() = prefs.getInt(KEY_V103_CAST_RESOLUTION3, 0)
-        set(value) = prefs.edit().putInt(KEY_V103_CAST_RESOLUTION3, value.coerceIn(0, 5)).apply()
-    var v103GestureHaptic3: Boolean
-        get() = prefs.getBoolean(KEY_V103_GESTURE_HAPTIC3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V103_GESTURE_HAPTIC3, value).apply()
-    var v103CacheDiskPolicy3: Int
-        get() = prefs.getInt(KEY_V103_CACHE_DISK_POLICY3, 0)
-        set(value) = prefs.edit().putInt(KEY_V103_CACHE_DISK_POLICY3, value.coerceIn(0, 3)).apply()
-
     // ===== v104.x =====
-    var v104PlaybackAutoResume3: Boolean
-        get() = prefs.getBoolean(KEY_V104_PLAYBACK_AUTO_RESUME3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V104_PLAYBACK_AUTO_RESUME3, value).apply()
-    var v104DanmakuFontBlur3: Int
-        get() = prefs.getInt(KEY_V104_DANMAKU_FONT_BLUR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V104_DANMAKU_FONT_BLUR3, value.coerceIn(0, 10)).apply()
-    var v104ColorMidtone3: Int
-        get() = prefs.getInt(KEY_V104_COLOR_MIDTONE3, 0)
-        set(value) = prefs.edit().putInt(KEY_V104_COLOR_MIDTONE3, value.coerceIn(0, 100)).apply()
-    var v104VolumeCompressor3: Int
-        get() = prefs.getInt(KEY_V104_VOLUME_COMPRESSOR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V104_VOLUME_COMPRESSOR3, value.coerceIn(0, 5)).apply()
-    var v104CastSubtitleFont3: Int
-        get() = prefs.getInt(KEY_V104_CAST_SUBTITLE_FONT3, 0)
-        set(value) = prefs.edit().putInt(KEY_V104_CAST_SUBTITLE_FONT3, value.coerceIn(0, 5)).apply()
-    var v104GestureEdgePan3: Boolean
-        get() = prefs.getBoolean(KEY_V104_GESTURE_EDGE_PAN3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V104_GESTURE_EDGE_PAN3, value).apply()
-    var v104CacheReadAhead3: Int
-        get() = prefs.getInt(KEY_V104_CACHE_READ_AHEAD3, 0)
-        set(value) = prefs.edit().putInt(KEY_V104_CACHE_READ_AHEAD3, value.coerceIn(0, 5)).apply()
-    var v104ProgressBarColor3: Int
-        get() = prefs.getInt(KEY_V104_PROGRESS_BAR_COLOR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V104_PROGRESS_BAR_COLOR3, value.coerceIn(0, 10)).apply()
-    var v104PlaybackAutoSkipCredits2: Boolean
-        get() = prefs.getBoolean(KEY_V104_PLAYBACK_AUTO_SKIP_CREDITS2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V104_PLAYBACK_AUTO_SKIP_CREDITS2, value).apply()
-    var v104DanmakuFontGlowColor4: Int
-        get() = prefs.getInt(KEY_V104_DANMAKU_FONT_GLOW_COLOR4, 0)
-        set(value) = prefs.edit().putInt(KEY_V104_DANMAKU_FONT_GLOW_COLOR4, value.coerceIn(0, 10)).apply()
-    var v104ColorHighlight3: Int
-        get() = prefs.getInt(KEY_V104_COLOR_HIGHLIGHT3, 0)
-        set(value) = prefs.edit().putInt(KEY_V104_COLOR_HIGHLIGHT3, value.coerceIn(0, 100)).apply()
-    var v104VolumePeakLimiter3: Boolean
-        get() = prefs.getBoolean(KEY_V104_VOLUME_PEAK_LIMITER3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V104_VOLUME_PEAK_LIMITER3, value).apply()
-    var v104CastResolution3: Int
-        get() = prefs.getInt(KEY_V104_CAST_RESOLUTION3, 0)
-        set(value) = prefs.edit().putInt(KEY_V104_CAST_RESOLUTION3, value.coerceIn(0, 5)).apply()
-    var v104GestureHaptic3: Boolean
-        get() = prefs.getBoolean(KEY_V104_GESTURE_HAPTIC3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V104_GESTURE_HAPTIC3, value).apply()
-    var v104CacheDiskPolicy3: Int
-        get() = prefs.getInt(KEY_V104_CACHE_DISK_POLICY3, 0)
-        set(value) = prefs.edit().putInt(KEY_V104_CACHE_DISK_POLICY3, value.coerceIn(0, 3)).apply()
-
     // ===== v105.x =====
-    var v105PlaybackAutoResume3: Boolean
-        get() = prefs.getBoolean(KEY_V105_PLAYBACK_AUTO_RESUME3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V105_PLAYBACK_AUTO_RESUME3, value).apply()
-    var v105DanmakuFontBlur3: Int
-        get() = prefs.getInt(KEY_V105_DANMAKU_FONT_BLUR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V105_DANMAKU_FONT_BLUR3, value.coerceIn(0, 10)).apply()
-    var v105ColorMidtone3: Int
-        get() = prefs.getInt(KEY_V105_COLOR_MIDTONE3, 0)
-        set(value) = prefs.edit().putInt(KEY_V105_COLOR_MIDTONE3, value.coerceIn(0, 100)).apply()
-    var v105VolumeCompressor3: Int
-        get() = prefs.getInt(KEY_V105_VOLUME_COMPRESSOR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V105_VOLUME_COMPRESSOR3, value.coerceIn(0, 5)).apply()
-    var v105CastSubtitleFont3: Int
-        get() = prefs.getInt(KEY_V105_CAST_SUBTITLE_FONT3, 0)
-        set(value) = prefs.edit().putInt(KEY_V105_CAST_SUBTITLE_FONT3, value.coerceIn(0, 5)).apply()
-    var v105GestureEdgePan3: Boolean
-        get() = prefs.getBoolean(KEY_V105_GESTURE_EDGE_PAN3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V105_GESTURE_EDGE_PAN3, value).apply()
-    var v105CacheReadAhead3: Int
-        get() = prefs.getInt(KEY_V105_CACHE_READ_AHEAD3, 0)
-        set(value) = prefs.edit().putInt(KEY_V105_CACHE_READ_AHEAD3, value.coerceIn(0, 5)).apply()
-    var v105ProgressBarColor3: Int
-        get() = prefs.getInt(KEY_V105_PROGRESS_BAR_COLOR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V105_PROGRESS_BAR_COLOR3, value.coerceIn(0, 10)).apply()
-    var v105PlaybackAutoSkipCredits2: Boolean
-        get() = prefs.getBoolean(KEY_V105_PLAYBACK_AUTO_SKIP_CREDITS2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V105_PLAYBACK_AUTO_SKIP_CREDITS2, value).apply()
-    var v105DanmakuFontGlowColor4: Int
-        get() = prefs.getInt(KEY_V105_DANMAKU_FONT_GLOW_COLOR4, 0)
-        set(value) = prefs.edit().putInt(KEY_V105_DANMAKU_FONT_GLOW_COLOR4, value.coerceIn(0, 10)).apply()
-    var v105ColorHighlight3: Int
-        get() = prefs.getInt(KEY_V105_COLOR_HIGHLIGHT3, 0)
-        set(value) = prefs.edit().putInt(KEY_V105_COLOR_HIGHLIGHT3, value.coerceIn(0, 100)).apply()
-    var v105VolumePeakLimiter3: Boolean
-        get() = prefs.getBoolean(KEY_V105_VOLUME_PEAK_LIMITER3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V105_VOLUME_PEAK_LIMITER3, value).apply()
-    var v105CastResolution3: Int
-        get() = prefs.getInt(KEY_V105_CAST_RESOLUTION3, 0)
-        set(value) = prefs.edit().putInt(KEY_V105_CAST_RESOLUTION3, value.coerceIn(0, 5)).apply()
-    var v105GestureHaptic3: Boolean
-        get() = prefs.getBoolean(KEY_V105_GESTURE_HAPTIC3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V105_GESTURE_HAPTIC3, value).apply()
-    var v105CacheDiskPolicy3: Int
-        get() = prefs.getInt(KEY_V105_CACHE_DISK_POLICY3, 0)
-        set(value) = prefs.edit().putInt(KEY_V105_CACHE_DISK_POLICY3, value.coerceIn(0, 3)).apply()
-
     // ===== v106.x =====
-    var v106PlaybackAutoResume3: Boolean
-        get() = prefs.getBoolean(KEY_V106_PLAYBACK_AUTO_RESUME3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V106_PLAYBACK_AUTO_RESUME3, value).apply()
-    var v106DanmakuFontBlur3: Int
-        get() = prefs.getInt(KEY_V106_DANMAKU_FONT_BLUR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V106_DANMAKU_FONT_BLUR3, value.coerceIn(0, 10)).apply()
-    var v106ColorMidtone3: Int
-        get() = prefs.getInt(KEY_V106_COLOR_MIDTONE3, 0)
-        set(value) = prefs.edit().putInt(KEY_V106_COLOR_MIDTONE3, value.coerceIn(0, 100)).apply()
-    var v106VolumeCompressor3: Int
-        get() = prefs.getInt(KEY_V106_VOLUME_COMPRESSOR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V106_VOLUME_COMPRESSOR3, value.coerceIn(0, 5)).apply()
-    var v106CastSubtitleFont3: Int
-        get() = prefs.getInt(KEY_V106_CAST_SUBTITLE_FONT3, 0)
-        set(value) = prefs.edit().putInt(KEY_V106_CAST_SUBTITLE_FONT3, value.coerceIn(0, 5)).apply()
-    var v106GestureEdgePan3: Boolean
-        get() = prefs.getBoolean(KEY_V106_GESTURE_EDGE_PAN3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V106_GESTURE_EDGE_PAN3, value).apply()
-    var v106CacheReadAhead3: Int
-        get() = prefs.getInt(KEY_V106_CACHE_READ_AHEAD3, 0)
-        set(value) = prefs.edit().putInt(KEY_V106_CACHE_READ_AHEAD3, value.coerceIn(0, 5)).apply()
-    var v106ProgressBarColor3: Int
-        get() = prefs.getInt(KEY_V106_PROGRESS_BAR_COLOR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V106_PROGRESS_BAR_COLOR3, value.coerceIn(0, 10)).apply()
-    var v106PlaybackAutoSkipCredits2: Boolean
-        get() = prefs.getBoolean(KEY_V106_PLAYBACK_AUTO_SKIP_CREDITS2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V106_PLAYBACK_AUTO_SKIP_CREDITS2, value).apply()
-    var v106DanmakuFontGlowColor4: Int
-        get() = prefs.getInt(KEY_V106_DANMAKU_FONT_GLOW_COLOR4, 0)
-        set(value) = prefs.edit().putInt(KEY_V106_DANMAKU_FONT_GLOW_COLOR4, value.coerceIn(0, 10)).apply()
-    var v106ColorHighlight3: Int
-        get() = prefs.getInt(KEY_V106_COLOR_HIGHLIGHT3, 0)
-        set(value) = prefs.edit().putInt(KEY_V106_COLOR_HIGHLIGHT3, value.coerceIn(0, 100)).apply()
-    var v106VolumePeakLimiter3: Boolean
-        get() = prefs.getBoolean(KEY_V106_VOLUME_PEAK_LIMITER3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V106_VOLUME_PEAK_LIMITER3, value).apply()
-    var v106CastResolution3: Int
-        get() = prefs.getInt(KEY_V106_CAST_RESOLUTION3, 0)
-        set(value) = prefs.edit().putInt(KEY_V106_CAST_RESOLUTION3, value.coerceIn(0, 5)).apply()
-    var v106GestureHaptic3: Boolean
-        get() = prefs.getBoolean(KEY_V106_GESTURE_HAPTIC3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V106_GESTURE_HAPTIC3, value).apply()
-    var v106CacheDiskPolicy3: Int
-        get() = prefs.getInt(KEY_V106_CACHE_DISK_POLICY3, 0)
-        set(value) = prefs.edit().putInt(KEY_V106_CACHE_DISK_POLICY3, value.coerceIn(0, 3)).apply()
-
     // ===== v107.x =====
-    var v107PlaybackAutoResume3: Boolean
-        get() = prefs.getBoolean(KEY_V107_PLAYBACK_AUTO_RESUME3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V107_PLAYBACK_AUTO_RESUME3, value).apply()
-    var v107DanmakuFontBlur3: Int
-        get() = prefs.getInt(KEY_V107_DANMAKU_FONT_BLUR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V107_DANMAKU_FONT_BLUR3, value.coerceIn(0, 10)).apply()
-    var v107ColorMidtone3: Int
-        get() = prefs.getInt(KEY_V107_COLOR_MIDTONE3, 0)
-        set(value) = prefs.edit().putInt(KEY_V107_COLOR_MIDTONE3, value.coerceIn(0, 100)).apply()
-    var v107VolumeCompressor3: Int
-        get() = prefs.getInt(KEY_V107_VOLUME_COMPRESSOR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V107_VOLUME_COMPRESSOR3, value.coerceIn(0, 5)).apply()
-    var v107CastSubtitleFont3: Int
-        get() = prefs.getInt(KEY_V107_CAST_SUBTITLE_FONT3, 0)
-        set(value) = prefs.edit().putInt(KEY_V107_CAST_SUBTITLE_FONT3, value.coerceIn(0, 5)).apply()
-    var v107GestureEdgePan3: Boolean
-        get() = prefs.getBoolean(KEY_V107_GESTURE_EDGE_PAN3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V107_GESTURE_EDGE_PAN3, value).apply()
-    var v107CacheReadAhead3: Int
-        get() = prefs.getInt(KEY_V107_CACHE_READ_AHEAD3, 0)
-        set(value) = prefs.edit().putInt(KEY_V107_CACHE_READ_AHEAD3, value.coerceIn(0, 5)).apply()
-    var v107ProgressBarColor3: Int
-        get() = prefs.getInt(KEY_V107_PROGRESS_BAR_COLOR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V107_PROGRESS_BAR_COLOR3, value.coerceIn(0, 10)).apply()
-    var v107PlaybackAutoSkipCredits2: Boolean
-        get() = prefs.getBoolean(KEY_V107_PLAYBACK_AUTO_SKIP_CREDITS2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V107_PLAYBACK_AUTO_SKIP_CREDITS2, value).apply()
-    var v107DanmakuFontGlowColor4: Int
-        get() = prefs.getInt(KEY_V107_DANMAKU_FONT_GLOW_COLOR4, 0)
-        set(value) = prefs.edit().putInt(KEY_V107_DANMAKU_FONT_GLOW_COLOR4, value.coerceIn(0, 10)).apply()
-    var v107ColorHighlight3: Int
-        get() = prefs.getInt(KEY_V107_COLOR_HIGHLIGHT3, 0)
-        set(value) = prefs.edit().putInt(KEY_V107_COLOR_HIGHLIGHT3, value.coerceIn(0, 100)).apply()
-    var v107VolumePeakLimiter3: Boolean
-        get() = prefs.getBoolean(KEY_V107_VOLUME_PEAK_LIMITER3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V107_VOLUME_PEAK_LIMITER3, value).apply()
-    var v107CastResolution3: Int
-        get() = prefs.getInt(KEY_V107_CAST_RESOLUTION3, 0)
-        set(value) = prefs.edit().putInt(KEY_V107_CAST_RESOLUTION3, value.coerceIn(0, 5)).apply()
-    var v107GestureHaptic3: Boolean
-        get() = prefs.getBoolean(KEY_V107_GESTURE_HAPTIC3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V107_GESTURE_HAPTIC3, value).apply()
-    var v107CacheDiskPolicy3: Int
-        get() = prefs.getInt(KEY_V107_CACHE_DISK_POLICY3, 0)
-        set(value) = prefs.edit().putInt(KEY_V107_CACHE_DISK_POLICY3, value.coerceIn(0, 3)).apply()
-
     // ===== v108.x =====
-    var v108PlaybackAutoResume3: Boolean
-        get() = prefs.getBoolean(KEY_V108_PLAYBACK_AUTO_RESUME3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V108_PLAYBACK_AUTO_RESUME3, value).apply()
-    var v108DanmakuFontBlur3: Int
-        get() = prefs.getInt(KEY_V108_DANMAKU_FONT_BLUR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V108_DANMAKU_FONT_BLUR3, value.coerceIn(0, 10)).apply()
-    var v108ColorMidtone3: Int
-        get() = prefs.getInt(KEY_V108_COLOR_MIDTONE3, 0)
-        set(value) = prefs.edit().putInt(KEY_V108_COLOR_MIDTONE3, value.coerceIn(0, 100)).apply()
-    var v108VolumeCompressor3: Int
-        get() = prefs.getInt(KEY_V108_VOLUME_COMPRESSOR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V108_VOLUME_COMPRESSOR3, value.coerceIn(0, 5)).apply()
-    var v108CastSubtitleFont3: Int
-        get() = prefs.getInt(KEY_V108_CAST_SUBTITLE_FONT3, 0)
-        set(value) = prefs.edit().putInt(KEY_V108_CAST_SUBTITLE_FONT3, value.coerceIn(0, 5)).apply()
-    var v108GestureEdgePan3: Boolean
-        get() = prefs.getBoolean(KEY_V108_GESTURE_EDGE_PAN3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V108_GESTURE_EDGE_PAN3, value).apply()
-    var v108CacheReadAhead3: Int
-        get() = prefs.getInt(KEY_V108_CACHE_READ_AHEAD3, 0)
-        set(value) = prefs.edit().putInt(KEY_V108_CACHE_READ_AHEAD3, value.coerceIn(0, 5)).apply()
-    var v108ProgressBarColor3: Int
-        get() = prefs.getInt(KEY_V108_PROGRESS_BAR_COLOR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V108_PROGRESS_BAR_COLOR3, value.coerceIn(0, 10)).apply()
-    var v108PlaybackAutoSkipCredits2: Boolean
-        get() = prefs.getBoolean(KEY_V108_PLAYBACK_AUTO_SKIP_CREDITS2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V108_PLAYBACK_AUTO_SKIP_CREDITS2, value).apply()
-    var v108DanmakuFontGlowColor4: Int
-        get() = prefs.getInt(KEY_V108_DANMAKU_FONT_GLOW_COLOR4, 0)
-        set(value) = prefs.edit().putInt(KEY_V108_DANMAKU_FONT_GLOW_COLOR4, value.coerceIn(0, 10)).apply()
-    var v108ColorHighlight3: Int
-        get() = prefs.getInt(KEY_V108_COLOR_HIGHLIGHT3, 0)
-        set(value) = prefs.edit().putInt(KEY_V108_COLOR_HIGHLIGHT3, value.coerceIn(0, 100)).apply()
-    var v108VolumePeakLimiter3: Boolean
-        get() = prefs.getBoolean(KEY_V108_VOLUME_PEAK_LIMITER3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V108_VOLUME_PEAK_LIMITER3, value).apply()
-    var v108CastResolution3: Int
-        get() = prefs.getInt(KEY_V108_CAST_RESOLUTION3, 0)
-        set(value) = prefs.edit().putInt(KEY_V108_CAST_RESOLUTION3, value.coerceIn(0, 5)).apply()
-    var v108GestureHaptic3: Boolean
-        get() = prefs.getBoolean(KEY_V108_GESTURE_HAPTIC3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V108_GESTURE_HAPTIC3, value).apply()
-    var v108CacheDiskPolicy3: Int
-        get() = prefs.getInt(KEY_V108_CACHE_DISK_POLICY3, 0)
-        set(value) = prefs.edit().putInt(KEY_V108_CACHE_DISK_POLICY3, value.coerceIn(0, 3)).apply()
-
     // ===== v109.x =====
-    var v109PlaybackAutoResume3: Boolean
-        get() = prefs.getBoolean(KEY_V109_PLAYBACK_AUTO_RESUME3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V109_PLAYBACK_AUTO_RESUME3, value).apply()
-    var v109DanmakuFontBlur3: Int
-        get() = prefs.getInt(KEY_V109_DANMAKU_FONT_BLUR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V109_DANMAKU_FONT_BLUR3, value.coerceIn(0, 10)).apply()
-    var v109ColorMidtone3: Int
-        get() = prefs.getInt(KEY_V109_COLOR_MIDTONE3, 0)
-        set(value) = prefs.edit().putInt(KEY_V109_COLOR_MIDTONE3, value.coerceIn(0, 100)).apply()
-    var v109VolumeCompressor3: Int
-        get() = prefs.getInt(KEY_V109_VOLUME_COMPRESSOR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V109_VOLUME_COMPRESSOR3, value.coerceIn(0, 5)).apply()
-    var v109CastSubtitleFont3: Int
-        get() = prefs.getInt(KEY_V109_CAST_SUBTITLE_FONT3, 0)
-        set(value) = prefs.edit().putInt(KEY_V109_CAST_SUBTITLE_FONT3, value.coerceIn(0, 5)).apply()
-    var v109GestureEdgePan3: Boolean
-        get() = prefs.getBoolean(KEY_V109_GESTURE_EDGE_PAN3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V109_GESTURE_EDGE_PAN3, value).apply()
-    var v109CacheReadAhead3: Int
-        get() = prefs.getInt(KEY_V109_CACHE_READ_AHEAD3, 0)
-        set(value) = prefs.edit().putInt(KEY_V109_CACHE_READ_AHEAD3, value.coerceIn(0, 5)).apply()
-    var v109ProgressBarColor3: Int
-        get() = prefs.getInt(KEY_V109_PROGRESS_BAR_COLOR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V109_PROGRESS_BAR_COLOR3, value.coerceIn(0, 10)).apply()
-    var v109PlaybackAutoSkipCredits2: Boolean
-        get() = prefs.getBoolean(KEY_V109_PLAYBACK_AUTO_SKIP_CREDITS2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V109_PLAYBACK_AUTO_SKIP_CREDITS2, value).apply()
-    var v109DanmakuFontGlowColor4: Int
-        get() = prefs.getInt(KEY_V109_DANMAKU_FONT_GLOW_COLOR4, 0)
-        set(value) = prefs.edit().putInt(KEY_V109_DANMAKU_FONT_GLOW_COLOR4, value.coerceIn(0, 10)).apply()
-    var v109ColorHighlight3: Int
-        get() = prefs.getInt(KEY_V109_COLOR_HIGHLIGHT3, 0)
-        set(value) = prefs.edit().putInt(KEY_V109_COLOR_HIGHLIGHT3, value.coerceIn(0, 100)).apply()
-    var v109VolumePeakLimiter3: Boolean
-        get() = prefs.getBoolean(KEY_V109_VOLUME_PEAK_LIMITER3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V109_VOLUME_PEAK_LIMITER3, value).apply()
-    var v109CastResolution3: Int
-        get() = prefs.getInt(KEY_V109_CAST_RESOLUTION3, 0)
-        set(value) = prefs.edit().putInt(KEY_V109_CAST_RESOLUTION3, value.coerceIn(0, 5)).apply()
-    var v109GestureHaptic3: Boolean
-        get() = prefs.getBoolean(KEY_V109_GESTURE_HAPTIC3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V109_GESTURE_HAPTIC3, value).apply()
-    var v109CacheDiskPolicy3: Int
-        get() = prefs.getInt(KEY_V109_CACHE_DISK_POLICY3, 0)
-        set(value) = prefs.edit().putInt(KEY_V109_CACHE_DISK_POLICY3, value.coerceIn(0, 3)).apply()
-
     // ===== v110.x =====
-    var v110PlaybackAutoResume3: Boolean
-        get() = prefs.getBoolean(KEY_V110_PLAYBACK_AUTO_RESUME3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V110_PLAYBACK_AUTO_RESUME3, value).apply()
-    var v110DanmakuFontBlur3: Int
-        get() = prefs.getInt(KEY_V110_DANMAKU_FONT_BLUR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V110_DANMAKU_FONT_BLUR3, value.coerceIn(0, 10)).apply()
-    var v110ColorMidtone3: Int
-        get() = prefs.getInt(KEY_V110_COLOR_MIDTONE3, 0)
-        set(value) = prefs.edit().putInt(KEY_V110_COLOR_MIDTONE3, value.coerceIn(0, 100)).apply()
-    var v110VolumeCompressor3: Int
-        get() = prefs.getInt(KEY_V110_VOLUME_COMPRESSOR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V110_VOLUME_COMPRESSOR3, value.coerceIn(0, 5)).apply()
-    var v110CastSubtitleFont3: Int
-        get() = prefs.getInt(KEY_V110_CAST_SUBTITLE_FONT3, 0)
-        set(value) = prefs.edit().putInt(KEY_V110_CAST_SUBTITLE_FONT3, value.coerceIn(0, 5)).apply()
-    var v110GestureEdgePan3: Boolean
-        get() = prefs.getBoolean(KEY_V110_GESTURE_EDGE_PAN3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V110_GESTURE_EDGE_PAN3, value).apply()
-    var v110CacheReadAhead3: Int
-        get() = prefs.getInt(KEY_V110_CACHE_READ_AHEAD3, 0)
-        set(value) = prefs.edit().putInt(KEY_V110_CACHE_READ_AHEAD3, value.coerceIn(0, 5)).apply()
-    var v110ProgressBarColor3: Int
-        get() = prefs.getInt(KEY_V110_PROGRESS_BAR_COLOR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V110_PROGRESS_BAR_COLOR3, value.coerceIn(0, 10)).apply()
-    var v110PlaybackAutoSkipCredits2: Boolean
-        get() = prefs.getBoolean(KEY_V110_PLAYBACK_AUTO_SKIP_CREDITS2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V110_PLAYBACK_AUTO_SKIP_CREDITS2, value).apply()
-    var v110DanmakuFontGlowColor4: Int
-        get() = prefs.getInt(KEY_V110_DANMAKU_FONT_GLOW_COLOR4, 0)
-        set(value) = prefs.edit().putInt(KEY_V110_DANMAKU_FONT_GLOW_COLOR4, value.coerceIn(0, 10)).apply()
-    var v110ColorHighlight3: Int
-        get() = prefs.getInt(KEY_V110_COLOR_HIGHLIGHT3, 0)
-        set(value) = prefs.edit().putInt(KEY_V110_COLOR_HIGHLIGHT3, value.coerceIn(0, 100)).apply()
-    var v110VolumePeakLimiter3: Boolean
-        get() = prefs.getBoolean(KEY_V110_VOLUME_PEAK_LIMITER3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V110_VOLUME_PEAK_LIMITER3, value).apply()
-    var v110CastResolution3: Int
-        get() = prefs.getInt(KEY_V110_CAST_RESOLUTION3, 0)
-        set(value) = prefs.edit().putInt(KEY_V110_CAST_RESOLUTION3, value.coerceIn(0, 5)).apply()
-    var v110GestureHaptic3: Boolean
-        get() = prefs.getBoolean(KEY_V110_GESTURE_HAPTIC3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V110_GESTURE_HAPTIC3, value).apply()
-    var v110CacheDiskPolicy3: Int
-        get() = prefs.getInt(KEY_V110_CACHE_DISK_POLICY3, 0)
-        set(value) = prefs.edit().putInt(KEY_V110_CACHE_DISK_POLICY3, value.coerceIn(0, 3)).apply()
-
     // ===== v111.x =====
-    var v111PlaybackAutoResume3: Boolean
-        get() = prefs.getBoolean(KEY_V111_PLAYBACK_AUTO_RESUME3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V111_PLAYBACK_AUTO_RESUME3, value).apply()
-    var v111DanmakuFontBlur3: Int
-        get() = prefs.getInt(KEY_V111_DANMAKU_FONT_BLUR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V111_DANMAKU_FONT_BLUR3, value.coerceIn(0, 10)).apply()
-    var v111ColorMidtone3: Int
-        get() = prefs.getInt(KEY_V111_COLOR_MIDTONE3, 0)
-        set(value) = prefs.edit().putInt(KEY_V111_COLOR_MIDTONE3, value.coerceIn(0, 100)).apply()
-    var v111VolumeCompressor3: Int
-        get() = prefs.getInt(KEY_V111_VOLUME_COMPRESSOR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V111_VOLUME_COMPRESSOR3, value.coerceIn(0, 5)).apply()
-    var v111CastSubtitleFont3: Int
-        get() = prefs.getInt(KEY_V111_CAST_SUBTITLE_FONT3, 0)
-        set(value) = prefs.edit().putInt(KEY_V111_CAST_SUBTITLE_FONT3, value.coerceIn(0, 5)).apply()
-    var v111GestureEdgePan3: Boolean
-        get() = prefs.getBoolean(KEY_V111_GESTURE_EDGE_PAN3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V111_GESTURE_EDGE_PAN3, value).apply()
-    var v111CacheReadAhead3: Int
-        get() = prefs.getInt(KEY_V111_CACHE_READ_AHEAD3, 0)
-        set(value) = prefs.edit().putInt(KEY_V111_CACHE_READ_AHEAD3, value.coerceIn(0, 5)).apply()
-    var v111ProgressBarColor3: Int
-        get() = prefs.getInt(KEY_V111_PROGRESS_BAR_COLOR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V111_PROGRESS_BAR_COLOR3, value.coerceIn(0, 10)).apply()
-    var v111PlaybackAutoSkipCredits2: Boolean
-        get() = prefs.getBoolean(KEY_V111_PLAYBACK_AUTO_SKIP_CREDITS2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V111_PLAYBACK_AUTO_SKIP_CREDITS2, value).apply()
-    var v111DanmakuFontGlowColor4: Int
-        get() = prefs.getInt(KEY_V111_DANMAKU_FONT_GLOW_COLOR4, 0)
-        set(value) = prefs.edit().putInt(KEY_V111_DANMAKU_FONT_GLOW_COLOR4, value.coerceIn(0, 10)).apply()
-    var v111ColorHighlight3: Int
-        get() = prefs.getInt(KEY_V111_COLOR_HIGHLIGHT3, 0)
-        set(value) = prefs.edit().putInt(KEY_V111_COLOR_HIGHLIGHT3, value.coerceIn(0, 100)).apply()
-    var v111VolumePeakLimiter3: Boolean
-        get() = prefs.getBoolean(KEY_V111_VOLUME_PEAK_LIMITER3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V111_VOLUME_PEAK_LIMITER3, value).apply()
-    var v111CastResolution3: Int
-        get() = prefs.getInt(KEY_V111_CAST_RESOLUTION3, 0)
-        set(value) = prefs.edit().putInt(KEY_V111_CAST_RESOLUTION3, value.coerceIn(0, 5)).apply()
-    var v111GestureHaptic3: Boolean
-        get() = prefs.getBoolean(KEY_V111_GESTURE_HAPTIC3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V111_GESTURE_HAPTIC3, value).apply()
-    var v111CacheDiskPolicy3: Int
-        get() = prefs.getInt(KEY_V111_CACHE_DISK_POLICY3, 0)
-        set(value) = prefs.edit().putInt(KEY_V111_CACHE_DISK_POLICY3, value.coerceIn(0, 3)).apply()
-
     // ===== v112.x =====
-    var v112PlaybackAutoResume3: Boolean
-        get() = prefs.getBoolean(KEY_V112_PLAYBACK_AUTO_RESUME3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V112_PLAYBACK_AUTO_RESUME3, value).apply()
-    var v112DanmakuFontBlur3: Int
-        get() = prefs.getInt(KEY_V112_DANMAKU_FONT_BLUR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V112_DANMAKU_FONT_BLUR3, value.coerceIn(0, 10)).apply()
-    var v112ColorMidtone3: Int
-        get() = prefs.getInt(KEY_V112_COLOR_MIDTONE3, 0)
-        set(value) = prefs.edit().putInt(KEY_V112_COLOR_MIDTONE3, value.coerceIn(0, 100)).apply()
-    var v112VolumeCompressor3: Int
-        get() = prefs.getInt(KEY_V112_VOLUME_COMPRESSOR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V112_VOLUME_COMPRESSOR3, value.coerceIn(0, 5)).apply()
-    var v112CastSubtitleFont3: Int
-        get() = prefs.getInt(KEY_V112_CAST_SUBTITLE_FONT3, 0)
-        set(value) = prefs.edit().putInt(KEY_V112_CAST_SUBTITLE_FONT3, value.coerceIn(0, 5)).apply()
-    var v112GestureEdgePan3: Boolean
-        get() = prefs.getBoolean(KEY_V112_GESTURE_EDGE_PAN3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V112_GESTURE_EDGE_PAN3, value).apply()
-    var v112CacheReadAhead3: Int
-        get() = prefs.getInt(KEY_V112_CACHE_READ_AHEAD3, 0)
-        set(value) = prefs.edit().putInt(KEY_V112_CACHE_READ_AHEAD3, value.coerceIn(0, 5)).apply()
-    var v112ProgressBarColor3: Int
-        get() = prefs.getInt(KEY_V112_PROGRESS_BAR_COLOR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V112_PROGRESS_BAR_COLOR3, value.coerceIn(0, 10)).apply()
-    var v112PlaybackAutoSkipCredits2: Boolean
-        get() = prefs.getBoolean(KEY_V112_PLAYBACK_AUTO_SKIP_CREDITS2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V112_PLAYBACK_AUTO_SKIP_CREDITS2, value).apply()
-    var v112DanmakuFontGlowColor4: Int
-        get() = prefs.getInt(KEY_V112_DANMAKU_FONT_GLOW_COLOR4, 0)
-        set(value) = prefs.edit().putInt(KEY_V112_DANMAKU_FONT_GLOW_COLOR4, value.coerceIn(0, 10)).apply()
-    var v112ColorHighlight3: Int
-        get() = prefs.getInt(KEY_V112_COLOR_HIGHLIGHT3, 0)
-        set(value) = prefs.edit().putInt(KEY_V112_COLOR_HIGHLIGHT3, value.coerceIn(0, 100)).apply()
-    var v112VolumePeakLimiter3: Boolean
-        get() = prefs.getBoolean(KEY_V112_VOLUME_PEAK_LIMITER3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V112_VOLUME_PEAK_LIMITER3, value).apply()
-    var v112CastResolution3: Int
-        get() = prefs.getInt(KEY_V112_CAST_RESOLUTION3, 0)
-        set(value) = prefs.edit().putInt(KEY_V112_CAST_RESOLUTION3, value.coerceIn(0, 5)).apply()
-    var v112GestureHaptic3: Boolean
-        get() = prefs.getBoolean(KEY_V112_GESTURE_HAPTIC3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V112_GESTURE_HAPTIC3, value).apply()
-    var v112CacheDiskPolicy3: Int
-        get() = prefs.getInt(KEY_V112_CACHE_DISK_POLICY3, 0)
-        set(value) = prefs.edit().putInt(KEY_V112_CACHE_DISK_POLICY3, value.coerceIn(0, 3)).apply()
-
     // ===== v113.x =====
-    var v113PlaybackAutoResume3: Boolean
-        get() = prefs.getBoolean(KEY_V113_PLAYBACK_AUTO_RESUME3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V113_PLAYBACK_AUTO_RESUME3, value).apply()
-    var v113DanmakuFontBlur3: Int
-        get() = prefs.getInt(KEY_V113_DANMAKU_FONT_BLUR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V113_DANMAKU_FONT_BLUR3, value.coerceIn(0, 10)).apply()
-    var v113ColorMidtone3: Int
-        get() = prefs.getInt(KEY_V113_COLOR_MIDTONE3, 0)
-        set(value) = prefs.edit().putInt(KEY_V113_COLOR_MIDTONE3, value.coerceIn(0, 100)).apply()
-    var v113VolumeCompressor3: Int
-        get() = prefs.getInt(KEY_V113_VOLUME_COMPRESSOR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V113_VOLUME_COMPRESSOR3, value.coerceIn(0, 5)).apply()
-    var v113CastSubtitleFont3: Int
-        get() = prefs.getInt(KEY_V113_CAST_SUBTITLE_FONT3, 0)
-        set(value) = prefs.edit().putInt(KEY_V113_CAST_SUBTITLE_FONT3, value.coerceIn(0, 5)).apply()
-    var v113GestureEdgePan3: Boolean
-        get() = prefs.getBoolean(KEY_V113_GESTURE_EDGE_PAN3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V113_GESTURE_EDGE_PAN3, value).apply()
-    var v113CacheReadAhead3: Int
-        get() = prefs.getInt(KEY_V113_CACHE_READ_AHEAD3, 0)
-        set(value) = prefs.edit().putInt(KEY_V113_CACHE_READ_AHEAD3, value.coerceIn(0, 5)).apply()
-    var v113ProgressBarColor3: Int
-        get() = prefs.getInt(KEY_V113_PROGRESS_BAR_COLOR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V113_PROGRESS_BAR_COLOR3, value.coerceIn(0, 10)).apply()
-    var v113PlaybackAutoSkipCredits2: Boolean
-        get() = prefs.getBoolean(KEY_V113_PLAYBACK_AUTO_SKIP_CREDITS2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V113_PLAYBACK_AUTO_SKIP_CREDITS2, value).apply()
-    var v113DanmakuFontGlowColor4: Int
-        get() = prefs.getInt(KEY_V113_DANMAKU_FONT_GLOW_COLOR4, 0)
-        set(value) = prefs.edit().putInt(KEY_V113_DANMAKU_FONT_GLOW_COLOR4, value.coerceIn(0, 10)).apply()
-    var v113ColorHighlight3: Int
-        get() = prefs.getInt(KEY_V113_COLOR_HIGHLIGHT3, 0)
-        set(value) = prefs.edit().putInt(KEY_V113_COLOR_HIGHLIGHT3, value.coerceIn(0, 100)).apply()
-    var v113VolumePeakLimiter3: Boolean
-        get() = prefs.getBoolean(KEY_V113_VOLUME_PEAK_LIMITER3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V113_VOLUME_PEAK_LIMITER3, value).apply()
-    var v113CastResolution3: Int
-        get() = prefs.getInt(KEY_V113_CAST_RESOLUTION3, 0)
-        set(value) = prefs.edit().putInt(KEY_V113_CAST_RESOLUTION3, value.coerceIn(0, 5)).apply()
-    var v113GestureHaptic3: Boolean
-        get() = prefs.getBoolean(KEY_V113_GESTURE_HAPTIC3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V113_GESTURE_HAPTIC3, value).apply()
-    var v113CacheDiskPolicy3: Int
-        get() = prefs.getInt(KEY_V113_CACHE_DISK_POLICY3, 0)
-        set(value) = prefs.edit().putInt(KEY_V113_CACHE_DISK_POLICY3, value.coerceIn(0, 3)).apply()
-
     // ===== v114.x =====
-    var v114PlaybackAutoResume3: Boolean
-        get() = prefs.getBoolean(KEY_V114_PLAYBACK_AUTO_RESUME3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V114_PLAYBACK_AUTO_RESUME3, value).apply()
-    var v114DanmakuFontBlur3: Int
-        get() = prefs.getInt(KEY_V114_DANMAKU_FONT_BLUR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V114_DANMAKU_FONT_BLUR3, value.coerceIn(0, 10)).apply()
-    var v114ColorMidtone3: Int
-        get() = prefs.getInt(KEY_V114_COLOR_MIDTONE3, 0)
-        set(value) = prefs.edit().putInt(KEY_V114_COLOR_MIDTONE3, value.coerceIn(0, 100)).apply()
-    var v114VolumeCompressor3: Int
-        get() = prefs.getInt(KEY_V114_VOLUME_COMPRESSOR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V114_VOLUME_COMPRESSOR3, value.coerceIn(0, 5)).apply()
-    var v114CastSubtitleFont3: Int
-        get() = prefs.getInt(KEY_V114_CAST_SUBTITLE_FONT3, 0)
-        set(value) = prefs.edit().putInt(KEY_V114_CAST_SUBTITLE_FONT3, value.coerceIn(0, 5)).apply()
-    var v114GestureEdgePan3: Boolean
-        get() = prefs.getBoolean(KEY_V114_GESTURE_EDGE_PAN3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V114_GESTURE_EDGE_PAN3, value).apply()
-    var v114CacheReadAhead3: Int
-        get() = prefs.getInt(KEY_V114_CACHE_READ_AHEAD3, 0)
-        set(value) = prefs.edit().putInt(KEY_V114_CACHE_READ_AHEAD3, value.coerceIn(0, 5)).apply()
-    var v114ProgressBarColor3: Int
-        get() = prefs.getInt(KEY_V114_PROGRESS_BAR_COLOR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V114_PROGRESS_BAR_COLOR3, value.coerceIn(0, 10)).apply()
-    var v114PlaybackAutoSkipCredits2: Boolean
-        get() = prefs.getBoolean(KEY_V114_PLAYBACK_AUTO_SKIP_CREDITS2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V114_PLAYBACK_AUTO_SKIP_CREDITS2, value).apply()
-    var v114DanmakuFontGlowColor4: Int
-        get() = prefs.getInt(KEY_V114_DANMAKU_FONT_GLOW_COLOR4, 0)
-        set(value) = prefs.edit().putInt(KEY_V114_DANMAKU_FONT_GLOW_COLOR4, value.coerceIn(0, 10)).apply()
-    var v114ColorHighlight3: Int
-        get() = prefs.getInt(KEY_V114_COLOR_HIGHLIGHT3, 0)
-        set(value) = prefs.edit().putInt(KEY_V114_COLOR_HIGHLIGHT3, value.coerceIn(0, 100)).apply()
-    var v114VolumePeakLimiter3: Boolean
-        get() = prefs.getBoolean(KEY_V114_VOLUME_PEAK_LIMITER3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V114_VOLUME_PEAK_LIMITER3, value).apply()
-    var v114CastResolution3: Int
-        get() = prefs.getInt(KEY_V114_CAST_RESOLUTION3, 0)
-        set(value) = prefs.edit().putInt(KEY_V114_CAST_RESOLUTION3, value.coerceIn(0, 5)).apply()
-    var v114GestureHaptic3: Boolean
-        get() = prefs.getBoolean(KEY_V114_GESTURE_HAPTIC3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V114_GESTURE_HAPTIC3, value).apply()
-    var v114CacheDiskPolicy3: Int
-        get() = prefs.getInt(KEY_V114_CACHE_DISK_POLICY3, 0)
-        set(value) = prefs.edit().putInt(KEY_V114_CACHE_DISK_POLICY3, value.coerceIn(0, 3)).apply()
-
     // ===== v115.x =====
-    var v115PlaybackAutoResume3: Boolean
-        get() = prefs.getBoolean(KEY_V115_PLAYBACK_AUTO_RESUME3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V115_PLAYBACK_AUTO_RESUME3, value).apply()
-    var v115DanmakuFontBlur3: Int
-        get() = prefs.getInt(KEY_V115_DANMAKU_FONT_BLUR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V115_DANMAKU_FONT_BLUR3, value.coerceIn(0, 10)).apply()
-    var v115ColorMidtone3: Int
-        get() = prefs.getInt(KEY_V115_COLOR_MIDTONE3, 0)
-        set(value) = prefs.edit().putInt(KEY_V115_COLOR_MIDTONE3, value.coerceIn(0, 100)).apply()
-    var v115VolumeCompressor3: Int
-        get() = prefs.getInt(KEY_V115_VOLUME_COMPRESSOR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V115_VOLUME_COMPRESSOR3, value.coerceIn(0, 5)).apply()
-    var v115CastSubtitleFont3: Int
-        get() = prefs.getInt(KEY_V115_CAST_SUBTITLE_FONT3, 0)
-        set(value) = prefs.edit().putInt(KEY_V115_CAST_SUBTITLE_FONT3, value.coerceIn(0, 5)).apply()
-    var v115GestureEdgePan3: Boolean
-        get() = prefs.getBoolean(KEY_V115_GESTURE_EDGE_PAN3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V115_GESTURE_EDGE_PAN3, value).apply()
-    var v115CacheReadAhead3: Int
-        get() = prefs.getInt(KEY_V115_CACHE_READ_AHEAD3, 0)
-        set(value) = prefs.edit().putInt(KEY_V115_CACHE_READ_AHEAD3, value.coerceIn(0, 5)).apply()
-    var v115ProgressBarColor3: Int
-        get() = prefs.getInt(KEY_V115_PROGRESS_BAR_COLOR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V115_PROGRESS_BAR_COLOR3, value.coerceIn(0, 10)).apply()
-    var v115PlaybackAutoSkipCredits2: Boolean
-        get() = prefs.getBoolean(KEY_V115_PLAYBACK_AUTO_SKIP_CREDITS2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V115_PLAYBACK_AUTO_SKIP_CREDITS2, value).apply()
-    var v115DanmakuFontGlowColor4: Int
-        get() = prefs.getInt(KEY_V115_DANMAKU_FONT_GLOW_COLOR4, 0)
-        set(value) = prefs.edit().putInt(KEY_V115_DANMAKU_FONT_GLOW_COLOR4, value.coerceIn(0, 10)).apply()
-    var v115ColorHighlight3: Int
-        get() = prefs.getInt(KEY_V115_COLOR_HIGHLIGHT3, 0)
-        set(value) = prefs.edit().putInt(KEY_V115_COLOR_HIGHLIGHT3, value.coerceIn(0, 100)).apply()
-    var v115VolumePeakLimiter3: Boolean
-        get() = prefs.getBoolean(KEY_V115_VOLUME_PEAK_LIMITER3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V115_VOLUME_PEAK_LIMITER3, value).apply()
-    var v115CastResolution3: Int
-        get() = prefs.getInt(KEY_V115_CAST_RESOLUTION3, 0)
-        set(value) = prefs.edit().putInt(KEY_V115_CAST_RESOLUTION3, value.coerceIn(0, 5)).apply()
-    var v115GestureHaptic3: Boolean
-        get() = prefs.getBoolean(KEY_V115_GESTURE_HAPTIC3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V115_GESTURE_HAPTIC3, value).apply()
-    var v115CacheDiskPolicy3: Int
-        get() = prefs.getInt(KEY_V115_CACHE_DISK_POLICY3, 0)
-        set(value) = prefs.edit().putInt(KEY_V115_CACHE_DISK_POLICY3, value.coerceIn(0, 3)).apply()
-
     // ===== v116.x =====
-    var v116PlaybackAutoResume3: Boolean
-        get() = prefs.getBoolean(KEY_V116_PLAYBACK_AUTO_RESUME3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V116_PLAYBACK_AUTO_RESUME3, value).apply()
-    var v116DanmakuFontBlur3: Int
-        get() = prefs.getInt(KEY_V116_DANMAKU_FONT_BLUR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V116_DANMAKU_FONT_BLUR3, value.coerceIn(0, 10)).apply()
-    var v116ColorMidtone3: Int
-        get() = prefs.getInt(KEY_V116_COLOR_MIDTONE3, 0)
-        set(value) = prefs.edit().putInt(KEY_V116_COLOR_MIDTONE3, value.coerceIn(0, 100)).apply()
-    var v116VolumeCompressor3: Int
-        get() = prefs.getInt(KEY_V116_VOLUME_COMPRESSOR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V116_VOLUME_COMPRESSOR3, value.coerceIn(0, 5)).apply()
-    var v116CastSubtitleFont3: Int
-        get() = prefs.getInt(KEY_V116_CAST_SUBTITLE_FONT3, 0)
-        set(value) = prefs.edit().putInt(KEY_V116_CAST_SUBTITLE_FONT3, value.coerceIn(0, 5)).apply()
-    var v116GestureEdgePan3: Boolean
-        get() = prefs.getBoolean(KEY_V116_GESTURE_EDGE_PAN3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V116_GESTURE_EDGE_PAN3, value).apply()
-    var v116CacheReadAhead3: Int
-        get() = prefs.getInt(KEY_V116_CACHE_READ_AHEAD3, 0)
-        set(value) = prefs.edit().putInt(KEY_V116_CACHE_READ_AHEAD3, value.coerceIn(0, 5)).apply()
-    var v116ProgressBarColor3: Int
-        get() = prefs.getInt(KEY_V116_PROGRESS_BAR_COLOR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V116_PROGRESS_BAR_COLOR3, value.coerceIn(0, 10)).apply()
-    var v116PlaybackAutoSkipCredits2: Boolean
-        get() = prefs.getBoolean(KEY_V116_PLAYBACK_AUTO_SKIP_CREDITS2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V116_PLAYBACK_AUTO_SKIP_CREDITS2, value).apply()
-    var v116DanmakuFontGlowColor4: Int
-        get() = prefs.getInt(KEY_V116_DANMAKU_FONT_GLOW_COLOR4, 0)
-        set(value) = prefs.edit().putInt(KEY_V116_DANMAKU_FONT_GLOW_COLOR4, value.coerceIn(0, 10)).apply()
-    var v116ColorHighlight3: Int
-        get() = prefs.getInt(KEY_V116_COLOR_HIGHLIGHT3, 0)
-        set(value) = prefs.edit().putInt(KEY_V116_COLOR_HIGHLIGHT3, value.coerceIn(0, 100)).apply()
-    var v116VolumePeakLimiter3: Boolean
-        get() = prefs.getBoolean(KEY_V116_VOLUME_PEAK_LIMITER3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V116_VOLUME_PEAK_LIMITER3, value).apply()
-    var v116CastResolution3: Int
-        get() = prefs.getInt(KEY_V116_CAST_RESOLUTION3, 0)
-        set(value) = prefs.edit().putInt(KEY_V116_CAST_RESOLUTION3, value.coerceIn(0, 5)).apply()
-    var v116GestureHaptic3: Boolean
-        get() = prefs.getBoolean(KEY_V116_GESTURE_HAPTIC3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V116_GESTURE_HAPTIC3, value).apply()
-    var v116CacheDiskPolicy3: Int
-        get() = prefs.getInt(KEY_V116_CACHE_DISK_POLICY3, 0)
-        set(value) = prefs.edit().putInt(KEY_V116_CACHE_DISK_POLICY3, value.coerceIn(0, 3)).apply()
-
     // ===== v117.x =====
-    var v117PlaybackAutoResume3: Boolean
-        get() = prefs.getBoolean(KEY_V117_PLAYBACK_AUTO_RESUME3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V117_PLAYBACK_AUTO_RESUME3, value).apply()
-    var v117DanmakuFontBlur3: Int
-        get() = prefs.getInt(KEY_V117_DANMAKU_FONT_BLUR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V117_DANMAKU_FONT_BLUR3, value.coerceIn(0, 10)).apply()
-    var v117ColorMidtone3: Int
-        get() = prefs.getInt(KEY_V117_COLOR_MIDTONE3, 0)
-        set(value) = prefs.edit().putInt(KEY_V117_COLOR_MIDTONE3, value.coerceIn(0, 100)).apply()
-    var v117VolumeCompressor3: Int
-        get() = prefs.getInt(KEY_V117_VOLUME_COMPRESSOR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V117_VOLUME_COMPRESSOR3, value.coerceIn(0, 5)).apply()
-    var v117CastSubtitleFont3: Int
-        get() = prefs.getInt(KEY_V117_CAST_SUBTITLE_FONT3, 0)
-        set(value) = prefs.edit().putInt(KEY_V117_CAST_SUBTITLE_FONT3, value.coerceIn(0, 5)).apply()
-    var v117GestureEdgePan3: Boolean
-        get() = prefs.getBoolean(KEY_V117_GESTURE_EDGE_PAN3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V117_GESTURE_EDGE_PAN3, value).apply()
-    var v117CacheReadAhead3: Int
-        get() = prefs.getInt(KEY_V117_CACHE_READ_AHEAD3, 0)
-        set(value) = prefs.edit().putInt(KEY_V117_CACHE_READ_AHEAD3, value.coerceIn(0, 5)).apply()
-    var v117ProgressBarColor3: Int
-        get() = prefs.getInt(KEY_V117_PROGRESS_BAR_COLOR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V117_PROGRESS_BAR_COLOR3, value.coerceIn(0, 10)).apply()
-    var v117PlaybackAutoSkipCredits2: Boolean
-        get() = prefs.getBoolean(KEY_V117_PLAYBACK_AUTO_SKIP_CREDITS2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V117_PLAYBACK_AUTO_SKIP_CREDITS2, value).apply()
-    var v117DanmakuFontGlowColor4: Int
-        get() = prefs.getInt(KEY_V117_DANMAKU_FONT_GLOW_COLOR4, 0)
-        set(value) = prefs.edit().putInt(KEY_V117_DANMAKU_FONT_GLOW_COLOR4, value.coerceIn(0, 10)).apply()
-    var v117ColorHighlight3: Int
-        get() = prefs.getInt(KEY_V117_COLOR_HIGHLIGHT3, 0)
-        set(value) = prefs.edit().putInt(KEY_V117_COLOR_HIGHLIGHT3, value.coerceIn(0, 100)).apply()
-    var v117VolumePeakLimiter3: Boolean
-        get() = prefs.getBoolean(KEY_V117_VOLUME_PEAK_LIMITER3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V117_VOLUME_PEAK_LIMITER3, value).apply()
-    var v117CastResolution3: Int
-        get() = prefs.getInt(KEY_V117_CAST_RESOLUTION3, 0)
-        set(value) = prefs.edit().putInt(KEY_V117_CAST_RESOLUTION3, value.coerceIn(0, 5)).apply()
-    var v117GestureHaptic3: Boolean
-        get() = prefs.getBoolean(KEY_V117_GESTURE_HAPTIC3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V117_GESTURE_HAPTIC3, value).apply()
-    var v117CacheDiskPolicy3: Int
-        get() = prefs.getInt(KEY_V117_CACHE_DISK_POLICY3, 0)
-        set(value) = prefs.edit().putInt(KEY_V117_CACHE_DISK_POLICY3, value.coerceIn(0, 3)).apply()
-
     // ===== v118.x =====
-    var v118PlaybackAutoResume3: Boolean
-        get() = prefs.getBoolean(KEY_V118_PLAYBACK_AUTO_RESUME3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V118_PLAYBACK_AUTO_RESUME3, value).apply()
-    var v118DanmakuFontBlur3: Int
-        get() = prefs.getInt(KEY_V118_DANMAKU_FONT_BLUR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V118_DANMAKU_FONT_BLUR3, value.coerceIn(0, 10)).apply()
-    var v118ColorMidtone3: Int
-        get() = prefs.getInt(KEY_V118_COLOR_MIDTONE3, 0)
-        set(value) = prefs.edit().putInt(KEY_V118_COLOR_MIDTONE3, value.coerceIn(0, 100)).apply()
-    var v118VolumeCompressor3: Int
-        get() = prefs.getInt(KEY_V118_VOLUME_COMPRESSOR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V118_VOLUME_COMPRESSOR3, value.coerceIn(0, 5)).apply()
-    var v118CastSubtitleFont3: Int
-        get() = prefs.getInt(KEY_V118_CAST_SUBTITLE_FONT3, 0)
-        set(value) = prefs.edit().putInt(KEY_V118_CAST_SUBTITLE_FONT3, value.coerceIn(0, 5)).apply()
-    var v118GestureEdgePan3: Boolean
-        get() = prefs.getBoolean(KEY_V118_GESTURE_EDGE_PAN3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V118_GESTURE_EDGE_PAN3, value).apply()
-    var v118CacheReadAhead3: Int
-        get() = prefs.getInt(KEY_V118_CACHE_READ_AHEAD3, 0)
-        set(value) = prefs.edit().putInt(KEY_V118_CACHE_READ_AHEAD3, value.coerceIn(0, 5)).apply()
-    var v118ProgressBarColor3: Int
-        get() = prefs.getInt(KEY_V118_PROGRESS_BAR_COLOR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V118_PROGRESS_BAR_COLOR3, value.coerceIn(0, 10)).apply()
-    var v118PlaybackAutoSkipCredits2: Boolean
-        get() = prefs.getBoolean(KEY_V118_PLAYBACK_AUTO_SKIP_CREDITS2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V118_PLAYBACK_AUTO_SKIP_CREDITS2, value).apply()
-    var v118DanmakuFontGlowColor4: Int
-        get() = prefs.getInt(KEY_V118_DANMAKU_FONT_GLOW_COLOR4, 0)
-        set(value) = prefs.edit().putInt(KEY_V118_DANMAKU_FONT_GLOW_COLOR4, value.coerceIn(0, 10)).apply()
-    var v118ColorHighlight3: Int
-        get() = prefs.getInt(KEY_V118_COLOR_HIGHLIGHT3, 0)
-        set(value) = prefs.edit().putInt(KEY_V118_COLOR_HIGHLIGHT3, value.coerceIn(0, 100)).apply()
-    var v118VolumePeakLimiter3: Boolean
-        get() = prefs.getBoolean(KEY_V118_VOLUME_PEAK_LIMITER3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V118_VOLUME_PEAK_LIMITER3, value).apply()
-    var v118CastResolution3: Int
-        get() = prefs.getInt(KEY_V118_CAST_RESOLUTION3, 0)
-        set(value) = prefs.edit().putInt(KEY_V118_CAST_RESOLUTION3, value.coerceIn(0, 5)).apply()
-    var v118GestureHaptic3: Boolean
-        get() = prefs.getBoolean(KEY_V118_GESTURE_HAPTIC3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V118_GESTURE_HAPTIC3, value).apply()
-    var v118CacheDiskPolicy3: Int
-        get() = prefs.getInt(KEY_V118_CACHE_DISK_POLICY3, 0)
-        set(value) = prefs.edit().putInt(KEY_V118_CACHE_DISK_POLICY3, value.coerceIn(0, 3)).apply()
-
     // ===== v119.x =====
-    var v119PlaybackAutoResume3: Boolean
-        get() = prefs.getBoolean(KEY_V119_PLAYBACK_AUTO_RESUME3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V119_PLAYBACK_AUTO_RESUME3, value).apply()
-    var v119DanmakuFontBlur3: Int
-        get() = prefs.getInt(KEY_V119_DANMAKU_FONT_BLUR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V119_DANMAKU_FONT_BLUR3, value.coerceIn(0, 10)).apply()
-    var v119ColorMidtone3: Int
-        get() = prefs.getInt(KEY_V119_COLOR_MIDTONE3, 0)
-        set(value) = prefs.edit().putInt(KEY_V119_COLOR_MIDTONE3, value.coerceIn(0, 100)).apply()
-    var v119VolumeCompressor3: Int
-        get() = prefs.getInt(KEY_V119_VOLUME_COMPRESSOR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V119_VOLUME_COMPRESSOR3, value.coerceIn(0, 5)).apply()
-    var v119CastSubtitleFont3: Int
-        get() = prefs.getInt(KEY_V119_CAST_SUBTITLE_FONT3, 0)
-        set(value) = prefs.edit().putInt(KEY_V119_CAST_SUBTITLE_FONT3, value.coerceIn(0, 5)).apply()
-    var v119GestureEdgePan3: Boolean
-        get() = prefs.getBoolean(KEY_V119_GESTURE_EDGE_PAN3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V119_GESTURE_EDGE_PAN3, value).apply()
-    var v119CacheReadAhead3: Int
-        get() = prefs.getInt(KEY_V119_CACHE_READ_AHEAD3, 0)
-        set(value) = prefs.edit().putInt(KEY_V119_CACHE_READ_AHEAD3, value.coerceIn(0, 5)).apply()
-    var v119ProgressBarColor3: Int
-        get() = prefs.getInt(KEY_V119_PROGRESS_BAR_COLOR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V119_PROGRESS_BAR_COLOR3, value.coerceIn(0, 10)).apply()
-    var v119PlaybackAutoSkipCredits2: Boolean
-        get() = prefs.getBoolean(KEY_V119_PLAYBACK_AUTO_SKIP_CREDITS2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V119_PLAYBACK_AUTO_SKIP_CREDITS2, value).apply()
-    var v119DanmakuFontGlowColor4: Int
-        get() = prefs.getInt(KEY_V119_DANMAKU_FONT_GLOW_COLOR4, 0)
-        set(value) = prefs.edit().putInt(KEY_V119_DANMAKU_FONT_GLOW_COLOR4, value.coerceIn(0, 10)).apply()
-    var v119ColorHighlight3: Int
-        get() = prefs.getInt(KEY_V119_COLOR_HIGHLIGHT3, 0)
-        set(value) = prefs.edit().putInt(KEY_V119_COLOR_HIGHLIGHT3, value.coerceIn(0, 100)).apply()
-    var v119VolumePeakLimiter3: Boolean
-        get() = prefs.getBoolean(KEY_V119_VOLUME_PEAK_LIMITER3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V119_VOLUME_PEAK_LIMITER3, value).apply()
-    var v119CastResolution3: Int
-        get() = prefs.getInt(KEY_V119_CAST_RESOLUTION3, 0)
-        set(value) = prefs.edit().putInt(KEY_V119_CAST_RESOLUTION3, value.coerceIn(0, 5)).apply()
-    var v119GestureHaptic3: Boolean
-        get() = prefs.getBoolean(KEY_V119_GESTURE_HAPTIC3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V119_GESTURE_HAPTIC3, value).apply()
-    var v119CacheDiskPolicy3: Int
-        get() = prefs.getInt(KEY_V119_CACHE_DISK_POLICY3, 0)
-        set(value) = prefs.edit().putInt(KEY_V119_CACHE_DISK_POLICY3, value.coerceIn(0, 3)).apply()
-
     // ===== v120.x =====
-    var v120PlaybackAutoResume3: Boolean
-        get() = prefs.getBoolean(KEY_V120_PLAYBACK_AUTO_RESUME3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V120_PLAYBACK_AUTO_RESUME3, value).apply()
-    var v120DanmakuFontBlur3: Int
-        get() = prefs.getInt(KEY_V120_DANMAKU_FONT_BLUR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V120_DANMAKU_FONT_BLUR3, value.coerceIn(0, 10)).apply()
-    var v120ColorMidtone3: Int
-        get() = prefs.getInt(KEY_V120_COLOR_MIDTONE3, 0)
-        set(value) = prefs.edit().putInt(KEY_V120_COLOR_MIDTONE3, value.coerceIn(0, 100)).apply()
-    var v120VolumeCompressor3: Int
-        get() = prefs.getInt(KEY_V120_VOLUME_COMPRESSOR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V120_VOLUME_COMPRESSOR3, value.coerceIn(0, 5)).apply()
-    var v120CastSubtitleFont3: Int
-        get() = prefs.getInt(KEY_V120_CAST_SUBTITLE_FONT3, 0)
-        set(value) = prefs.edit().putInt(KEY_V120_CAST_SUBTITLE_FONT3, value.coerceIn(0, 5)).apply()
-    var v120GestureEdgePan3: Boolean
-        get() = prefs.getBoolean(KEY_V120_GESTURE_EDGE_PAN3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V120_GESTURE_EDGE_PAN3, value).apply()
-    var v120CacheReadAhead3: Int
-        get() = prefs.getInt(KEY_V120_CACHE_READ_AHEAD3, 0)
-        set(value) = prefs.edit().putInt(KEY_V120_CACHE_READ_AHEAD3, value.coerceIn(0, 5)).apply()
-    var v120ProgressBarColor3: Int
-        get() = prefs.getInt(KEY_V120_PROGRESS_BAR_COLOR3, 0)
-        set(value) = prefs.edit().putInt(KEY_V120_PROGRESS_BAR_COLOR3, value.coerceIn(0, 10)).apply()
-    var v120PlaybackAutoSkipCredits2: Boolean
-        get() = prefs.getBoolean(KEY_V120_PLAYBACK_AUTO_SKIP_CREDITS2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V120_PLAYBACK_AUTO_SKIP_CREDITS2, value).apply()
-    var v120DanmakuFontGlowColor4: Int
-        get() = prefs.getInt(KEY_V120_DANMAKU_FONT_GLOW_COLOR4, 0)
-        set(value) = prefs.edit().putInt(KEY_V120_DANMAKU_FONT_GLOW_COLOR4, value.coerceIn(0, 10)).apply()
-    var v120ColorHighlight3: Int
-        get() = prefs.getInt(KEY_V120_COLOR_HIGHLIGHT3, 0)
-        set(value) = prefs.edit().putInt(KEY_V120_COLOR_HIGHLIGHT3, value.coerceIn(0, 100)).apply()
-    var v120VolumePeakLimiter3: Boolean
-        get() = prefs.getBoolean(KEY_V120_VOLUME_PEAK_LIMITER3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V120_VOLUME_PEAK_LIMITER3, value).apply()
-    var v120CastResolution3: Int
-        get() = prefs.getInt(KEY_V120_CAST_RESOLUTION3, 0)
-        set(value) = prefs.edit().putInt(KEY_V120_CAST_RESOLUTION3, value.coerceIn(0, 5)).apply()
-    var v120GestureHaptic3: Boolean
-        get() = prefs.getBoolean(KEY_V120_GESTURE_HAPTIC3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V120_GESTURE_HAPTIC3, value).apply()
-    var v120CacheDiskPolicy3: Int
-        get() = prefs.getInt(KEY_V120_CACHE_DISK_POLICY3, 0)
-        set(value) = prefs.edit().putInt(KEY_V120_CACHE_DISK_POLICY3, value.coerceIn(0, 3)).apply()
-
     // ===== v91.x =====
     var v91PlaybackSmartBuffer3: Boolean
         get() = prefs.getBoolean(KEY_V91_PLAYBACK_SMART_BUFFER3, false)
@@ -6346,432 +3811,15 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putBoolean(KEY_V91_CACHE_AUTO_CLEAR3, value).apply()
 
     // ===== v92.x =====
-    var v92PlaybackSmartBuffer3: Boolean
-        get() = prefs.getBoolean(KEY_V92_PLAYBACK_SMART_BUFFER3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V92_PLAYBACK_SMART_BUFFER3, value).apply()
-    var v92DanmakuFontAlpha3: Int
-        get() = prefs.getInt(KEY_V92_DANMAKU_FONT_ALPHA3, 0)
-        set(value) = prefs.edit().putInt(KEY_V92_DANMAKU_FONT_ALPHA3, value.coerceIn(0, 100)).apply()
-    var v92ColorSaturation3: Int
-        get() = prefs.getInt(KEY_V92_COLOR_SATURATION3, 0)
-        set(value) = prefs.edit().putInt(KEY_V92_COLOR_SATURATION3, value.coerceIn(0, 100)).apply()
-    var v92VolumeLimiter3: Int
-        get() = prefs.getInt(KEY_V92_VOLUME_LIMITER3, 0)
-        set(value) = prefs.edit().putInt(KEY_V92_VOLUME_LIMITER3, value.coerceIn(0, 5)).apply()
-    var v92CastBandwidth3: Int
-        get() = prefs.getInt(KEY_V92_CAST_BANDWIDTH3, 0)
-        set(value) = prefs.edit().putInt(KEY_V92_CAST_BANDWIDTH3, value.coerceIn(0, 5)).apply()
-    var v92GesturePinchZoom3: Boolean
-        get() = prefs.getBoolean(KEY_V92_GESTURE_PINCH_ZOOM3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V92_GESTURE_PINCH_ZOOM3, value).apply()
-    var v92CacheEncrypt3: Boolean
-        get() = prefs.getBoolean(KEY_V92_CACHE_ENCRYPT3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V92_CACHE_ENCRYPT3, value).apply()
-    var v92ProgressBarThumbSize3: Int
-        get() = prefs.getInt(KEY_V92_PROGRESS_BAR_THUMB_SIZE3, 0)
-        set(value) = prefs.edit().putInt(KEY_V92_PROGRESS_BAR_THUMB_SIZE3, value.coerceIn(0, 20)).apply()
-    var v92PlaybackAutoLoop2: Boolean
-        get() = prefs.getBoolean(KEY_V92_PLAYBACK_AUTO_LOOP2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V92_PLAYBACK_AUTO_LOOP2, value).apply()
-    var v92DanmakuFilterScore4: Int
-        get() = prefs.getInt(KEY_V92_DANMAKU_FILTER_SCORE4, 0)
-        set(value) = prefs.edit().putInt(KEY_V92_DANMAKU_FILTER_SCORE4, value.coerceIn(0, 5)).apply()
-    var v92ColorContrast3: Int
-        get() = prefs.getInt(KEY_V92_COLOR_CONTRAST3, 0)
-        set(value) = prefs.edit().putInt(KEY_V92_COLOR_CONTRAST3, value.coerceIn(0, 100)).apply()
-    var v92VolumeEQ3: Int
-        get() = prefs.getInt(KEY_V92_VOLUME_EQ3, 0)
-        set(value) = prefs.edit().putInt(KEY_V92_VOLUME_EQ3, value.coerceIn(0, 5)).apply()
-    var v92CastAutoReconnect4: Boolean
-        get() = prefs.getBoolean(KEY_V92_CAST_AUTO_RECONNECT4, false)
-        set(value) = prefs.edit().putBoolean(KEY_V92_CAST_AUTO_RECONNECT4, value).apply()
-    var v92GestureRotation3: Int
-        get() = prefs.getInt(KEY_V92_GESTURE_ROTATION3, 0)
-        set(value) = prefs.edit().putInt(KEY_V92_GESTURE_ROTATION3, value.coerceIn(0, 3)).apply()
-    var v92CacheAutoClear3: Boolean
-        get() = prefs.getBoolean(KEY_V92_CACHE_AUTO_CLEAR3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V92_CACHE_AUTO_CLEAR3, value).apply()
-
     // ===== v93.x =====
-    var v93PlaybackSmartBuffer3: Boolean
-        get() = prefs.getBoolean(KEY_V93_PLAYBACK_SMART_BUFFER3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V93_PLAYBACK_SMART_BUFFER3, value).apply()
-    var v93DanmakuFontAlpha3: Int
-        get() = prefs.getInt(KEY_V93_DANMAKU_FONT_ALPHA3, 0)
-        set(value) = prefs.edit().putInt(KEY_V93_DANMAKU_FONT_ALPHA3, value.coerceIn(0, 100)).apply()
-    var v93ColorSaturation3: Int
-        get() = prefs.getInt(KEY_V93_COLOR_SATURATION3, 0)
-        set(value) = prefs.edit().putInt(KEY_V93_COLOR_SATURATION3, value.coerceIn(0, 100)).apply()
-    var v93VolumeLimiter3: Int
-        get() = prefs.getInt(KEY_V93_VOLUME_LIMITER3, 0)
-        set(value) = prefs.edit().putInt(KEY_V93_VOLUME_LIMITER3, value.coerceIn(0, 5)).apply()
-    var v93CastBandwidth3: Int
-        get() = prefs.getInt(KEY_V93_CAST_BANDWIDTH3, 0)
-        set(value) = prefs.edit().putInt(KEY_V93_CAST_BANDWIDTH3, value.coerceIn(0, 5)).apply()
-    var v93GesturePinchZoom3: Boolean
-        get() = prefs.getBoolean(KEY_V93_GESTURE_PINCH_ZOOM3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V93_GESTURE_PINCH_ZOOM3, value).apply()
-    var v93CacheEncrypt3: Boolean
-        get() = prefs.getBoolean(KEY_V93_CACHE_ENCRYPT3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V93_CACHE_ENCRYPT3, value).apply()
-    var v93ProgressBarThumbSize3: Int
-        get() = prefs.getInt(KEY_V93_PROGRESS_BAR_THUMB_SIZE3, 0)
-        set(value) = prefs.edit().putInt(KEY_V93_PROGRESS_BAR_THUMB_SIZE3, value.coerceIn(0, 20)).apply()
-    var v93PlaybackAutoLoop2: Boolean
-        get() = prefs.getBoolean(KEY_V93_PLAYBACK_AUTO_LOOP2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V93_PLAYBACK_AUTO_LOOP2, value).apply()
-    var v93DanmakuFilterScore4: Int
-        get() = prefs.getInt(KEY_V93_DANMAKU_FILTER_SCORE4, 0)
-        set(value) = prefs.edit().putInt(KEY_V93_DANMAKU_FILTER_SCORE4, value.coerceIn(0, 5)).apply()
-    var v93ColorContrast3: Int
-        get() = prefs.getInt(KEY_V93_COLOR_CONTRAST3, 0)
-        set(value) = prefs.edit().putInt(KEY_V93_COLOR_CONTRAST3, value.coerceIn(0, 100)).apply()
-    var v93VolumeEQ3: Int
-        get() = prefs.getInt(KEY_V93_VOLUME_EQ3, 0)
-        set(value) = prefs.edit().putInt(KEY_V93_VOLUME_EQ3, value.coerceIn(0, 5)).apply()
-    var v93CastAutoReconnect4: Boolean
-        get() = prefs.getBoolean(KEY_V93_CAST_AUTO_RECONNECT4, false)
-        set(value) = prefs.edit().putBoolean(KEY_V93_CAST_AUTO_RECONNECT4, value).apply()
-    var v93GestureRotation3: Int
-        get() = prefs.getInt(KEY_V93_GESTURE_ROTATION3, 0)
-        set(value) = prefs.edit().putInt(KEY_V93_GESTURE_ROTATION3, value.coerceIn(0, 3)).apply()
-    var v93CacheAutoClear3: Boolean
-        get() = prefs.getBoolean(KEY_V93_CACHE_AUTO_CLEAR3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V93_CACHE_AUTO_CLEAR3, value).apply()
-
     // ===== v94.x =====
-    var v94PlaybackSmartBuffer3: Boolean
-        get() = prefs.getBoolean(KEY_V94_PLAYBACK_SMART_BUFFER3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V94_PLAYBACK_SMART_BUFFER3, value).apply()
-    var v94DanmakuFontAlpha3: Int
-        get() = prefs.getInt(KEY_V94_DANMAKU_FONT_ALPHA3, 0)
-        set(value) = prefs.edit().putInt(KEY_V94_DANMAKU_FONT_ALPHA3, value.coerceIn(0, 100)).apply()
-    var v94ColorSaturation3: Int
-        get() = prefs.getInt(KEY_V94_COLOR_SATURATION3, 0)
-        set(value) = prefs.edit().putInt(KEY_V94_COLOR_SATURATION3, value.coerceIn(0, 100)).apply()
-    var v94VolumeLimiter3: Int
-        get() = prefs.getInt(KEY_V94_VOLUME_LIMITER3, 0)
-        set(value) = prefs.edit().putInt(KEY_V94_VOLUME_LIMITER3, value.coerceIn(0, 5)).apply()
-    var v94CastBandwidth3: Int
-        get() = prefs.getInt(KEY_V94_CAST_BANDWIDTH3, 0)
-        set(value) = prefs.edit().putInt(KEY_V94_CAST_BANDWIDTH3, value.coerceIn(0, 5)).apply()
-    var v94GesturePinchZoom3: Boolean
-        get() = prefs.getBoolean(KEY_V94_GESTURE_PINCH_ZOOM3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V94_GESTURE_PINCH_ZOOM3, value).apply()
-    var v94CacheEncrypt3: Boolean
-        get() = prefs.getBoolean(KEY_V94_CACHE_ENCRYPT3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V94_CACHE_ENCRYPT3, value).apply()
-    var v94ProgressBarThumbSize3: Int
-        get() = prefs.getInt(KEY_V94_PROGRESS_BAR_THUMB_SIZE3, 0)
-        set(value) = prefs.edit().putInt(KEY_V94_PROGRESS_BAR_THUMB_SIZE3, value.coerceIn(0, 20)).apply()
-    var v94PlaybackAutoLoop2: Boolean
-        get() = prefs.getBoolean(KEY_V94_PLAYBACK_AUTO_LOOP2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V94_PLAYBACK_AUTO_LOOP2, value).apply()
-    var v94DanmakuFilterScore4: Int
-        get() = prefs.getInt(KEY_V94_DANMAKU_FILTER_SCORE4, 0)
-        set(value) = prefs.edit().putInt(KEY_V94_DANMAKU_FILTER_SCORE4, value.coerceIn(0, 5)).apply()
-    var v94ColorContrast3: Int
-        get() = prefs.getInt(KEY_V94_COLOR_CONTRAST3, 0)
-        set(value) = prefs.edit().putInt(KEY_V94_COLOR_CONTRAST3, value.coerceIn(0, 100)).apply()
-    var v94VolumeEQ3: Int
-        get() = prefs.getInt(KEY_V94_VOLUME_EQ3, 0)
-        set(value) = prefs.edit().putInt(KEY_V94_VOLUME_EQ3, value.coerceIn(0, 5)).apply()
-    var v94CastAutoReconnect4: Boolean
-        get() = prefs.getBoolean(KEY_V94_CAST_AUTO_RECONNECT4, false)
-        set(value) = prefs.edit().putBoolean(KEY_V94_CAST_AUTO_RECONNECT4, value).apply()
-    var v94GestureRotation3: Int
-        get() = prefs.getInt(KEY_V94_GESTURE_ROTATION3, 0)
-        set(value) = prefs.edit().putInt(KEY_V94_GESTURE_ROTATION3, value.coerceIn(0, 3)).apply()
-    var v94CacheAutoClear3: Boolean
-        get() = prefs.getBoolean(KEY_V94_CACHE_AUTO_CLEAR3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V94_CACHE_AUTO_CLEAR3, value).apply()
-
     // ===== v95.x =====
-    var v95PlaybackSmartBuffer3: Boolean
-        get() = prefs.getBoolean(KEY_V95_PLAYBACK_SMART_BUFFER3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V95_PLAYBACK_SMART_BUFFER3, value).apply()
-    var v95DanmakuFontAlpha3: Int
-        get() = prefs.getInt(KEY_V95_DANMAKU_FONT_ALPHA3, 0)
-        set(value) = prefs.edit().putInt(KEY_V95_DANMAKU_FONT_ALPHA3, value.coerceIn(0, 100)).apply()
-    var v95ColorSaturation3: Int
-        get() = prefs.getInt(KEY_V95_COLOR_SATURATION3, 0)
-        set(value) = prefs.edit().putInt(KEY_V95_COLOR_SATURATION3, value.coerceIn(0, 100)).apply()
-    var v95VolumeLimiter3: Int
-        get() = prefs.getInt(KEY_V95_VOLUME_LIMITER3, 0)
-        set(value) = prefs.edit().putInt(KEY_V95_VOLUME_LIMITER3, value.coerceIn(0, 5)).apply()
-    var v95CastBandwidth3: Int
-        get() = prefs.getInt(KEY_V95_CAST_BANDWIDTH3, 0)
-        set(value) = prefs.edit().putInt(KEY_V95_CAST_BANDWIDTH3, value.coerceIn(0, 5)).apply()
-    var v95GesturePinchZoom3: Boolean
-        get() = prefs.getBoolean(KEY_V95_GESTURE_PINCH_ZOOM3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V95_GESTURE_PINCH_ZOOM3, value).apply()
-    var v95CacheEncrypt3: Boolean
-        get() = prefs.getBoolean(KEY_V95_CACHE_ENCRYPT3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V95_CACHE_ENCRYPT3, value).apply()
-    var v95ProgressBarThumbSize3: Int
-        get() = prefs.getInt(KEY_V95_PROGRESS_BAR_THUMB_SIZE3, 0)
-        set(value) = prefs.edit().putInt(KEY_V95_PROGRESS_BAR_THUMB_SIZE3, value.coerceIn(0, 20)).apply()
-    var v95PlaybackAutoLoop2: Boolean
-        get() = prefs.getBoolean(KEY_V95_PLAYBACK_AUTO_LOOP2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V95_PLAYBACK_AUTO_LOOP2, value).apply()
-    var v95DanmakuFilterScore4: Int
-        get() = prefs.getInt(KEY_V95_DANMAKU_FILTER_SCORE4, 0)
-        set(value) = prefs.edit().putInt(KEY_V95_DANMAKU_FILTER_SCORE4, value.coerceIn(0, 5)).apply()
-    var v95ColorContrast3: Int
-        get() = prefs.getInt(KEY_V95_COLOR_CONTRAST3, 0)
-        set(value) = prefs.edit().putInt(KEY_V95_COLOR_CONTRAST3, value.coerceIn(0, 100)).apply()
-    var v95VolumeEQ3: Int
-        get() = prefs.getInt(KEY_V95_VOLUME_EQ3, 0)
-        set(value) = prefs.edit().putInt(KEY_V95_VOLUME_EQ3, value.coerceIn(0, 5)).apply()
-    var v95CastAutoReconnect4: Boolean
-        get() = prefs.getBoolean(KEY_V95_CAST_AUTO_RECONNECT4, false)
-        set(value) = prefs.edit().putBoolean(KEY_V95_CAST_AUTO_RECONNECT4, value).apply()
-    var v95GestureRotation3: Int
-        get() = prefs.getInt(KEY_V95_GESTURE_ROTATION3, 0)
-        set(value) = prefs.edit().putInt(KEY_V95_GESTURE_ROTATION3, value.coerceIn(0, 3)).apply()
-    var v95CacheAutoClear3: Boolean
-        get() = prefs.getBoolean(KEY_V95_CACHE_AUTO_CLEAR3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V95_CACHE_AUTO_CLEAR3, value).apply()
-
     // ===== v96.x =====
-    var v96PlaybackSmartBuffer3: Boolean
-        get() = prefs.getBoolean(KEY_V96_PLAYBACK_SMART_BUFFER3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V96_PLAYBACK_SMART_BUFFER3, value).apply()
-    var v96DanmakuFontAlpha3: Int
-        get() = prefs.getInt(KEY_V96_DANMAKU_FONT_ALPHA3, 0)
-        set(value) = prefs.edit().putInt(KEY_V96_DANMAKU_FONT_ALPHA3, value.coerceIn(0, 100)).apply()
-    var v96ColorSaturation3: Int
-        get() = prefs.getInt(KEY_V96_COLOR_SATURATION3, 0)
-        set(value) = prefs.edit().putInt(KEY_V96_COLOR_SATURATION3, value.coerceIn(0, 100)).apply()
-    var v96VolumeLimiter3: Int
-        get() = prefs.getInt(KEY_V96_VOLUME_LIMITER3, 0)
-        set(value) = prefs.edit().putInt(KEY_V96_VOLUME_LIMITER3, value.coerceIn(0, 5)).apply()
-    var v96CastBandwidth3: Int
-        get() = prefs.getInt(KEY_V96_CAST_BANDWIDTH3, 0)
-        set(value) = prefs.edit().putInt(KEY_V96_CAST_BANDWIDTH3, value.coerceIn(0, 5)).apply()
-    var v96GesturePinchZoom3: Boolean
-        get() = prefs.getBoolean(KEY_V96_GESTURE_PINCH_ZOOM3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V96_GESTURE_PINCH_ZOOM3, value).apply()
-    var v96CacheEncrypt3: Boolean
-        get() = prefs.getBoolean(KEY_V96_CACHE_ENCRYPT3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V96_CACHE_ENCRYPT3, value).apply()
-    var v96ProgressBarThumbSize3: Int
-        get() = prefs.getInt(KEY_V96_PROGRESS_BAR_THUMB_SIZE3, 0)
-        set(value) = prefs.edit().putInt(KEY_V96_PROGRESS_BAR_THUMB_SIZE3, value.coerceIn(0, 20)).apply()
-    var v96PlaybackAutoLoop2: Boolean
-        get() = prefs.getBoolean(KEY_V96_PLAYBACK_AUTO_LOOP2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V96_PLAYBACK_AUTO_LOOP2, value).apply()
-    var v96DanmakuFilterScore4: Int
-        get() = prefs.getInt(KEY_V96_DANMAKU_FILTER_SCORE4, 0)
-        set(value) = prefs.edit().putInt(KEY_V96_DANMAKU_FILTER_SCORE4, value.coerceIn(0, 5)).apply()
-    var v96ColorContrast3: Int
-        get() = prefs.getInt(KEY_V96_COLOR_CONTRAST3, 0)
-        set(value) = prefs.edit().putInt(KEY_V96_COLOR_CONTRAST3, value.coerceIn(0, 100)).apply()
-    var v96VolumeEQ3: Int
-        get() = prefs.getInt(KEY_V96_VOLUME_EQ3, 0)
-        set(value) = prefs.edit().putInt(KEY_V96_VOLUME_EQ3, value.coerceIn(0, 5)).apply()
-    var v96CastAutoReconnect4: Boolean
-        get() = prefs.getBoolean(KEY_V96_CAST_AUTO_RECONNECT4, false)
-        set(value) = prefs.edit().putBoolean(KEY_V96_CAST_AUTO_RECONNECT4, value).apply()
-    var v96GestureRotation3: Int
-        get() = prefs.getInt(KEY_V96_GESTURE_ROTATION3, 0)
-        set(value) = prefs.edit().putInt(KEY_V96_GESTURE_ROTATION3, value.coerceIn(0, 3)).apply()
-    var v96CacheAutoClear3: Boolean
-        get() = prefs.getBoolean(KEY_V96_CACHE_AUTO_CLEAR3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V96_CACHE_AUTO_CLEAR3, value).apply()
-
     // ===== v97.x =====
-    var v97PlaybackSmartBuffer3: Boolean
-        get() = prefs.getBoolean(KEY_V97_PLAYBACK_SMART_BUFFER3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V97_PLAYBACK_SMART_BUFFER3, value).apply()
-    var v97DanmakuFontAlpha3: Int
-        get() = prefs.getInt(KEY_V97_DANMAKU_FONT_ALPHA3, 0)
-        set(value) = prefs.edit().putInt(KEY_V97_DANMAKU_FONT_ALPHA3, value.coerceIn(0, 100)).apply()
-    var v97ColorSaturation3: Int
-        get() = prefs.getInt(KEY_V97_COLOR_SATURATION3, 0)
-        set(value) = prefs.edit().putInt(KEY_V97_COLOR_SATURATION3, value.coerceIn(0, 100)).apply()
-    var v97VolumeLimiter3: Int
-        get() = prefs.getInt(KEY_V97_VOLUME_LIMITER3, 0)
-        set(value) = prefs.edit().putInt(KEY_V97_VOLUME_LIMITER3, value.coerceIn(0, 5)).apply()
-    var v97CastBandwidth3: Int
-        get() = prefs.getInt(KEY_V97_CAST_BANDWIDTH3, 0)
-        set(value) = prefs.edit().putInt(KEY_V97_CAST_BANDWIDTH3, value.coerceIn(0, 5)).apply()
-    var v97GesturePinchZoom3: Boolean
-        get() = prefs.getBoolean(KEY_V97_GESTURE_PINCH_ZOOM3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V97_GESTURE_PINCH_ZOOM3, value).apply()
-    var v97CacheEncrypt3: Boolean
-        get() = prefs.getBoolean(KEY_V97_CACHE_ENCRYPT3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V97_CACHE_ENCRYPT3, value).apply()
-    var v97ProgressBarThumbSize3: Int
-        get() = prefs.getInt(KEY_V97_PROGRESS_BAR_THUMB_SIZE3, 0)
-        set(value) = prefs.edit().putInt(KEY_V97_PROGRESS_BAR_THUMB_SIZE3, value.coerceIn(0, 20)).apply()
-    var v97PlaybackAutoLoop2: Boolean
-        get() = prefs.getBoolean(KEY_V97_PLAYBACK_AUTO_LOOP2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V97_PLAYBACK_AUTO_LOOP2, value).apply()
-    var v97DanmakuFilterScore4: Int
-        get() = prefs.getInt(KEY_V97_DANMAKU_FILTER_SCORE4, 0)
-        set(value) = prefs.edit().putInt(KEY_V97_DANMAKU_FILTER_SCORE4, value.coerceIn(0, 5)).apply()
-    var v97ColorContrast3: Int
-        get() = prefs.getInt(KEY_V97_COLOR_CONTRAST3, 0)
-        set(value) = prefs.edit().putInt(KEY_V97_COLOR_CONTRAST3, value.coerceIn(0, 100)).apply()
-    var v97VolumeEQ3: Int
-        get() = prefs.getInt(KEY_V97_VOLUME_EQ3, 0)
-        set(value) = prefs.edit().putInt(KEY_V97_VOLUME_EQ3, value.coerceIn(0, 5)).apply()
-    var v97CastAutoReconnect4: Boolean
-        get() = prefs.getBoolean(KEY_V97_CAST_AUTO_RECONNECT4, false)
-        set(value) = prefs.edit().putBoolean(KEY_V97_CAST_AUTO_RECONNECT4, value).apply()
-    var v97GestureRotation3: Int
-        get() = prefs.getInt(KEY_V97_GESTURE_ROTATION3, 0)
-        set(value) = prefs.edit().putInt(KEY_V97_GESTURE_ROTATION3, value.coerceIn(0, 3)).apply()
-    var v97CacheAutoClear3: Boolean
-        get() = prefs.getBoolean(KEY_V97_CACHE_AUTO_CLEAR3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V97_CACHE_AUTO_CLEAR3, value).apply()
-
     // ===== v98.x =====
-    var v98PlaybackSmartBuffer3: Boolean
-        get() = prefs.getBoolean(KEY_V98_PLAYBACK_SMART_BUFFER3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V98_PLAYBACK_SMART_BUFFER3, value).apply()
-    var v98DanmakuFontAlpha3: Int
-        get() = prefs.getInt(KEY_V98_DANMAKU_FONT_ALPHA3, 0)
-        set(value) = prefs.edit().putInt(KEY_V98_DANMAKU_FONT_ALPHA3, value.coerceIn(0, 100)).apply()
-    var v98ColorSaturation3: Int
-        get() = prefs.getInt(KEY_V98_COLOR_SATURATION3, 0)
-        set(value) = prefs.edit().putInt(KEY_V98_COLOR_SATURATION3, value.coerceIn(0, 100)).apply()
-    var v98VolumeLimiter3: Int
-        get() = prefs.getInt(KEY_V98_VOLUME_LIMITER3, 0)
-        set(value) = prefs.edit().putInt(KEY_V98_VOLUME_LIMITER3, value.coerceIn(0, 5)).apply()
-    var v98CastBandwidth3: Int
-        get() = prefs.getInt(KEY_V98_CAST_BANDWIDTH3, 0)
-        set(value) = prefs.edit().putInt(KEY_V98_CAST_BANDWIDTH3, value.coerceIn(0, 5)).apply()
-    var v98GesturePinchZoom3: Boolean
-        get() = prefs.getBoolean(KEY_V98_GESTURE_PINCH_ZOOM3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V98_GESTURE_PINCH_ZOOM3, value).apply()
-    var v98CacheEncrypt3: Boolean
-        get() = prefs.getBoolean(KEY_V98_CACHE_ENCRYPT3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V98_CACHE_ENCRYPT3, value).apply()
-    var v98ProgressBarThumbSize3: Int
-        get() = prefs.getInt(KEY_V98_PROGRESS_BAR_THUMB_SIZE3, 0)
-        set(value) = prefs.edit().putInt(KEY_V98_PROGRESS_BAR_THUMB_SIZE3, value.coerceIn(0, 20)).apply()
-    var v98PlaybackAutoLoop2: Boolean
-        get() = prefs.getBoolean(KEY_V98_PLAYBACK_AUTO_LOOP2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V98_PLAYBACK_AUTO_LOOP2, value).apply()
-    var v98DanmakuFilterScore4: Int
-        get() = prefs.getInt(KEY_V98_DANMAKU_FILTER_SCORE4, 0)
-        set(value) = prefs.edit().putInt(KEY_V98_DANMAKU_FILTER_SCORE4, value.coerceIn(0, 5)).apply()
-    var v98ColorContrast3: Int
-        get() = prefs.getInt(KEY_V98_COLOR_CONTRAST3, 0)
-        set(value) = prefs.edit().putInt(KEY_V98_COLOR_CONTRAST3, value.coerceIn(0, 100)).apply()
-    var v98VolumeEQ3: Int
-        get() = prefs.getInt(KEY_V98_VOLUME_EQ3, 0)
-        set(value) = prefs.edit().putInt(KEY_V98_VOLUME_EQ3, value.coerceIn(0, 5)).apply()
-    var v98CastAutoReconnect4: Boolean
-        get() = prefs.getBoolean(KEY_V98_CAST_AUTO_RECONNECT4, false)
-        set(value) = prefs.edit().putBoolean(KEY_V98_CAST_AUTO_RECONNECT4, value).apply()
-    var v98GestureRotation3: Int
-        get() = prefs.getInt(KEY_V98_GESTURE_ROTATION3, 0)
-        set(value) = prefs.edit().putInt(KEY_V98_GESTURE_ROTATION3, value.coerceIn(0, 3)).apply()
-    var v98CacheAutoClear3: Boolean
-        get() = prefs.getBoolean(KEY_V98_CACHE_AUTO_CLEAR3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V98_CACHE_AUTO_CLEAR3, value).apply()
-
     // ===== v99.x =====
-    var v99PlaybackSmartBuffer3: Boolean
-        get() = prefs.getBoolean(KEY_V99_PLAYBACK_SMART_BUFFER3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V99_PLAYBACK_SMART_BUFFER3, value).apply()
-    var v99DanmakuFontAlpha3: Int
-        get() = prefs.getInt(KEY_V99_DANMAKU_FONT_ALPHA3, 0)
-        set(value) = prefs.edit().putInt(KEY_V99_DANMAKU_FONT_ALPHA3, value.coerceIn(0, 100)).apply()
-    var v99ColorSaturation3: Int
-        get() = prefs.getInt(KEY_V99_COLOR_SATURATION3, 0)
-        set(value) = prefs.edit().putInt(KEY_V99_COLOR_SATURATION3, value.coerceIn(0, 100)).apply()
-    var v99VolumeLimiter3: Int
-        get() = prefs.getInt(KEY_V99_VOLUME_LIMITER3, 0)
-        set(value) = prefs.edit().putInt(KEY_V99_VOLUME_LIMITER3, value.coerceIn(0, 5)).apply()
-    var v99CastBandwidth3: Int
-        get() = prefs.getInt(KEY_V99_CAST_BANDWIDTH3, 0)
-        set(value) = prefs.edit().putInt(KEY_V99_CAST_BANDWIDTH3, value.coerceIn(0, 5)).apply()
-    var v99GesturePinchZoom3: Boolean
-        get() = prefs.getBoolean(KEY_V99_GESTURE_PINCH_ZOOM3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V99_GESTURE_PINCH_ZOOM3, value).apply()
-    var v99CacheEncrypt3: Boolean
-        get() = prefs.getBoolean(KEY_V99_CACHE_ENCRYPT3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V99_CACHE_ENCRYPT3, value).apply()
-    var v99ProgressBarThumbSize3: Int
-        get() = prefs.getInt(KEY_V99_PROGRESS_BAR_THUMB_SIZE3, 0)
-        set(value) = prefs.edit().putInt(KEY_V99_PROGRESS_BAR_THUMB_SIZE3, value.coerceIn(0, 20)).apply()
-    var v99PlaybackAutoLoop2: Boolean
-        get() = prefs.getBoolean(KEY_V99_PLAYBACK_AUTO_LOOP2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V99_PLAYBACK_AUTO_LOOP2, value).apply()
-    var v99DanmakuFilterScore4: Int
-        get() = prefs.getInt(KEY_V99_DANMAKU_FILTER_SCORE4, 0)
-        set(value) = prefs.edit().putInt(KEY_V99_DANMAKU_FILTER_SCORE4, value.coerceIn(0, 5)).apply()
-    var v99ColorContrast3: Int
-        get() = prefs.getInt(KEY_V99_COLOR_CONTRAST3, 0)
-        set(value) = prefs.edit().putInt(KEY_V99_COLOR_CONTRAST3, value.coerceIn(0, 100)).apply()
-    var v99VolumeEQ3: Int
-        get() = prefs.getInt(KEY_V99_VOLUME_EQ3, 0)
-        set(value) = prefs.edit().putInt(KEY_V99_VOLUME_EQ3, value.coerceIn(0, 5)).apply()
-    var v99CastAutoReconnect4: Boolean
-        get() = prefs.getBoolean(KEY_V99_CAST_AUTO_RECONNECT4, false)
-        set(value) = prefs.edit().putBoolean(KEY_V99_CAST_AUTO_RECONNECT4, value).apply()
-    var v99GestureRotation3: Int
-        get() = prefs.getInt(KEY_V99_GESTURE_ROTATION3, 0)
-        set(value) = prefs.edit().putInt(KEY_V99_GESTURE_ROTATION3, value.coerceIn(0, 3)).apply()
-    var v99CacheAutoClear3: Boolean
-        get() = prefs.getBoolean(KEY_V99_CACHE_AUTO_CLEAR3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V99_CACHE_AUTO_CLEAR3, value).apply()
-
     // ===== v100.x =====
-    var v100PlaybackSmartBuffer3: Boolean
-        get() = prefs.getBoolean(KEY_V100_PLAYBACK_SMART_BUFFER3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V100_PLAYBACK_SMART_BUFFER3, value).apply()
-    var v100DanmakuFontAlpha3: Int
-        get() = prefs.getInt(KEY_V100_DANMAKU_FONT_ALPHA3, 0)
-        set(value) = prefs.edit().putInt(KEY_V100_DANMAKU_FONT_ALPHA3, value.coerceIn(0, 100)).apply()
-    var v100ColorSaturation3: Int
-        get() = prefs.getInt(KEY_V100_COLOR_SATURATION3, 0)
-        set(value) = prefs.edit().putInt(KEY_V100_COLOR_SATURATION3, value.coerceIn(0, 100)).apply()
-    var v100VolumeLimiter3: Int
-        get() = prefs.getInt(KEY_V100_VOLUME_LIMITER3, 0)
-        set(value) = prefs.edit().putInt(KEY_V100_VOLUME_LIMITER3, value.coerceIn(0, 5)).apply()
-    var v100CastBandwidth3: Int
-        get() = prefs.getInt(KEY_V100_CAST_BANDWIDTH3, 0)
-        set(value) = prefs.edit().putInt(KEY_V100_CAST_BANDWIDTH3, value.coerceIn(0, 5)).apply()
-    var v100GesturePinchZoom3: Boolean
-        get() = prefs.getBoolean(KEY_V100_GESTURE_PINCH_ZOOM3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V100_GESTURE_PINCH_ZOOM3, value).apply()
-    var v100CacheEncrypt3: Boolean
-        get() = prefs.getBoolean(KEY_V100_CACHE_ENCRYPT3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V100_CACHE_ENCRYPT3, value).apply()
-    var v100ProgressBarThumbSize3: Int
-        get() = prefs.getInt(KEY_V100_PROGRESS_BAR_THUMB_SIZE3, 0)
-        set(value) = prefs.edit().putInt(KEY_V100_PROGRESS_BAR_THUMB_SIZE3, value.coerceIn(0, 20)).apply()
-    var v100PlaybackAutoLoop2: Boolean
-        get() = prefs.getBoolean(KEY_V100_PLAYBACK_AUTO_LOOP2, false)
-        set(value) = prefs.edit().putBoolean(KEY_V100_PLAYBACK_AUTO_LOOP2, value).apply()
-    var v100DanmakuFilterScore4: Int
-        get() = prefs.getInt(KEY_V100_DANMAKU_FILTER_SCORE4, 0)
-        set(value) = prefs.edit().putInt(KEY_V100_DANMAKU_FILTER_SCORE4, value.coerceIn(0, 5)).apply()
-    var v100ColorContrast3: Int
-        get() = prefs.getInt(KEY_V100_COLOR_CONTRAST3, 0)
-        set(value) = prefs.edit().putInt(KEY_V100_COLOR_CONTRAST3, value.coerceIn(0, 100)).apply()
-    var v100VolumeEQ3: Int
-        get() = prefs.getInt(KEY_V100_VOLUME_EQ3, 0)
-        set(value) = prefs.edit().putInt(KEY_V100_VOLUME_EQ3, value.coerceIn(0, 5)).apply()
-    var v100CastAutoReconnect4: Boolean
-        get() = prefs.getBoolean(KEY_V100_CAST_AUTO_RECONNECT4, false)
-        set(value) = prefs.edit().putBoolean(KEY_V100_CAST_AUTO_RECONNECT4, value).apply()
-    var v100GestureRotation3: Int
-        get() = prefs.getInt(KEY_V100_GESTURE_ROTATION3, 0)
-        set(value) = prefs.edit().putInt(KEY_V100_GESTURE_ROTATION3, value.coerceIn(0, 3)).apply()
-    var v100CacheAutoClear3: Boolean
-        get() = prefs.getBoolean(KEY_V100_CACHE_AUTO_CLEAR3, false)
-        set(value) = prefs.edit().putBoolean(KEY_V100_CACHE_AUTO_CLEAR3, value).apply()
-
     // ===== v71.x =====
-    var v71PlaybackAutoSkipRecap: Boolean
-        get() = prefs.getBoolean(KEY_V71_PLAYBACK_AUTO_SKIP_RECAP, false)
-        set(value) = prefs.edit().putBoolean(KEY_V71_PLAYBACK_AUTO_SKIP_RECAP, value).apply()
     var v71DanmakuFontGlowSize3: Int
         get() = prefs.getInt(KEY_V71_DANMAKU_FONT_GLOW_SIZE3, 0)
         set(value) = prefs.edit().putInt(KEY_V71_DANMAKU_FONT_GLOW_SIZE3, value.coerceIn(0, 10)).apply()
@@ -6816,898 +3864,24 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V71_CACHE_PREFETCH_SIZE2, value.coerceIn(0, 5)).apply()
 
     // ===== v72.x =====
-    var v72PlaybackAutoSkipRecap: Boolean
-        get() = prefs.getBoolean(KEY_V72_PLAYBACK_AUTO_SKIP_RECAP, false)
-        set(value) = prefs.edit().putBoolean(KEY_V72_PLAYBACK_AUTO_SKIP_RECAP, value).apply()
-    var v72DanmakuFontGlowSize3: Int
-        get() = prefs.getInt(KEY_V72_DANMAKU_FONT_GLOW_SIZE3, 0)
-        set(value) = prefs.edit().putInt(KEY_V72_DANMAKU_FONT_GLOW_SIZE3, value.coerceIn(0, 10)).apply()
-    var v72ColorLift2: Int
-        get() = prefs.getInt(KEY_V72_COLOR_LIFT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V72_COLOR_LIFT2, value.coerceIn(0, 100)).apply()
-    var v72VolumeSurround2: Int
-        get() = prefs.getInt(KEY_V72_VOLUME_SURROUND2, 0)
-        set(value) = prefs.edit().putInt(KEY_V72_VOLUME_SURROUND2, value.coerceIn(0, 5)).apply()
-    var v72CastSubtitleSync2: Int
-        get() = prefs.getInt(KEY_V72_CAST_SUBTITLE_SYNC2, 0)
-        set(value) = prefs.edit().putInt(KEY_V72_CAST_SUBTITLE_SYNC2, value.coerceIn(0, 10)).apply()
-    var v72GestureSwipeSpeed2: Int
-        get() = prefs.getInt(KEY_V72_GESTURE_SWIPE_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V72_GESTURE_SWIPE_SPEED2, value.coerceIn(0, 5)).apply()
-    var v72CacheMaxSize2: Int
-        get() = prefs.getInt(KEY_V72_CACHE_MAX_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V72_CACHE_MAX_SIZE2, value.coerceIn(0, 10)).apply()
-    var v72ProgressBarSensitivity2: Int
-        get() = prefs.getInt(KEY_V72_PROGRESS_BAR_SENSITIVITY2, 0)
-        set(value) = prefs.edit().putInt(KEY_V72_PROGRESS_BAR_SENSITIVITY2, value.coerceIn(0, 5)).apply()
-    var v72PlaybackSmartSpeed: Boolean
-        get() = prefs.getBoolean(KEY_V72_PLAYBACK_SMART_SPEED, false)
-        set(value) = prefs.edit().putBoolean(KEY_V72_PLAYBACK_SMART_SPEED, value).apply()
-    var v72DanmakuFontWeight4: Int
-        get() = prefs.getInt(KEY_V72_DANMAKU_FONT_WEIGHT4, 400)
-        set(value) = prefs.edit().putInt(KEY_V72_DANMAKU_FONT_WEIGHT4, value.coerceIn(100, 900)).apply()
-    var v72ColorGamma2: Int
-        get() = prefs.getInt(KEY_V72_COLOR_GAMMA2, 0)
-        set(value) = prefs.edit().putInt(KEY_V72_COLOR_GAMMA2, value.coerceIn(0, 5)).apply()
-    var v72VolumeBass2: Int
-        get() = prefs.getInt(KEY_V72_VOLUME_BASS2, 0)
-        set(value) = prefs.edit().putInt(KEY_V72_VOLUME_BASS2, value.coerceIn(0, 5)).apply()
-    var v72CastVideoQuality2: Int
-        get() = prefs.getInt(KEY_V72_CAST_VIDEO_QUALITY2, 0)
-        set(value) = prefs.edit().putInt(KEY_V72_CAST_VIDEO_QUALITY2, value.coerceIn(0, 5)).apply()
-    var v72GestureDoubleTapSpeed: Int
-        get() = prefs.getInt(KEY_V72_GESTURE_DOUBLE_TAP_SPEED, 0)
-        set(value) = prefs.edit().putInt(KEY_V72_GESTURE_DOUBLE_TAP_SPEED, value.coerceIn(0, 5)).apply()
-    var v72CachePrefetchSize2: Int
-        get() = prefs.getInt(KEY_V72_CACHE_PREFETCH_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V72_CACHE_PREFETCH_SIZE2, value.coerceIn(0, 5)).apply()
-
     // ===== v73.x =====
-    var v73PlaybackAutoSkipRecap: Boolean
-        get() = prefs.getBoolean(KEY_V73_PLAYBACK_AUTO_SKIP_RECAP, false)
-        set(value) = prefs.edit().putBoolean(KEY_V73_PLAYBACK_AUTO_SKIP_RECAP, value).apply()
-    var v73DanmakuFontGlowSize3: Int
-        get() = prefs.getInt(KEY_V73_DANMAKU_FONT_GLOW_SIZE3, 0)
-        set(value) = prefs.edit().putInt(KEY_V73_DANMAKU_FONT_GLOW_SIZE3, value.coerceIn(0, 10)).apply()
-    var v73ColorLift2: Int
-        get() = prefs.getInt(KEY_V73_COLOR_LIFT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V73_COLOR_LIFT2, value.coerceIn(0, 100)).apply()
-    var v73VolumeSurround2: Int
-        get() = prefs.getInt(KEY_V73_VOLUME_SURROUND2, 0)
-        set(value) = prefs.edit().putInt(KEY_V73_VOLUME_SURROUND2, value.coerceIn(0, 5)).apply()
-    var v73CastSubtitleSync2: Int
-        get() = prefs.getInt(KEY_V73_CAST_SUBTITLE_SYNC2, 0)
-        set(value) = prefs.edit().putInt(KEY_V73_CAST_SUBTITLE_SYNC2, value.coerceIn(0, 10)).apply()
-    var v73GestureSwipeSpeed2: Int
-        get() = prefs.getInt(KEY_V73_GESTURE_SWIPE_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V73_GESTURE_SWIPE_SPEED2, value.coerceIn(0, 5)).apply()
-    var v73CacheMaxSize2: Int
-        get() = prefs.getInt(KEY_V73_CACHE_MAX_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V73_CACHE_MAX_SIZE2, value.coerceIn(0, 10)).apply()
-    var v73ProgressBarSensitivity2: Int
-        get() = prefs.getInt(KEY_V73_PROGRESS_BAR_SENSITIVITY2, 0)
-        set(value) = prefs.edit().putInt(KEY_V73_PROGRESS_BAR_SENSITIVITY2, value.coerceIn(0, 5)).apply()
-    var v73PlaybackSmartSpeed: Boolean
-        get() = prefs.getBoolean(KEY_V73_PLAYBACK_SMART_SPEED, false)
-        set(value) = prefs.edit().putBoolean(KEY_V73_PLAYBACK_SMART_SPEED, value).apply()
-    var v73DanmakuFontWeight4: Int
-        get() = prefs.getInt(KEY_V73_DANMAKU_FONT_WEIGHT4, 400)
-        set(value) = prefs.edit().putInt(KEY_V73_DANMAKU_FONT_WEIGHT4, value.coerceIn(100, 900)).apply()
-    var v73ColorGamma2: Int
-        get() = prefs.getInt(KEY_V73_COLOR_GAMMA2, 0)
-        set(value) = prefs.edit().putInt(KEY_V73_COLOR_GAMMA2, value.coerceIn(0, 5)).apply()
-    var v73VolumeBass2: Int
-        get() = prefs.getInt(KEY_V73_VOLUME_BASS2, 0)
-        set(value) = prefs.edit().putInt(KEY_V73_VOLUME_BASS2, value.coerceIn(0, 5)).apply()
-    var v73CastVideoQuality2: Int
-        get() = prefs.getInt(KEY_V73_CAST_VIDEO_QUALITY2, 0)
-        set(value) = prefs.edit().putInt(KEY_V73_CAST_VIDEO_QUALITY2, value.coerceIn(0, 5)).apply()
-    var v73GestureDoubleTapSpeed: Int
-        get() = prefs.getInt(KEY_V73_GESTURE_DOUBLE_TAP_SPEED, 0)
-        set(value) = prefs.edit().putInt(KEY_V73_GESTURE_DOUBLE_TAP_SPEED, value.coerceIn(0, 5)).apply()
-    var v73CachePrefetchSize2: Int
-        get() = prefs.getInt(KEY_V73_CACHE_PREFETCH_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V73_CACHE_PREFETCH_SIZE2, value.coerceIn(0, 5)).apply()
-
     // ===== v74.x =====
-    var v74PlaybackAutoSkipRecap: Boolean
-        get() = prefs.getBoolean(KEY_V74_PLAYBACK_AUTO_SKIP_RECAP, false)
-        set(value) = prefs.edit().putBoolean(KEY_V74_PLAYBACK_AUTO_SKIP_RECAP, value).apply()
-    var v74DanmakuFontGlowSize3: Int
-        get() = prefs.getInt(KEY_V74_DANMAKU_FONT_GLOW_SIZE3, 0)
-        set(value) = prefs.edit().putInt(KEY_V74_DANMAKU_FONT_GLOW_SIZE3, value.coerceIn(0, 10)).apply()
-    var v74ColorLift2: Int
-        get() = prefs.getInt(KEY_V74_COLOR_LIFT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V74_COLOR_LIFT2, value.coerceIn(0, 100)).apply()
-    var v74VolumeSurround2: Int
-        get() = prefs.getInt(KEY_V74_VOLUME_SURROUND2, 0)
-        set(value) = prefs.edit().putInt(KEY_V74_VOLUME_SURROUND2, value.coerceIn(0, 5)).apply()
-    var v74CastSubtitleSync2: Int
-        get() = prefs.getInt(KEY_V74_CAST_SUBTITLE_SYNC2, 0)
-        set(value) = prefs.edit().putInt(KEY_V74_CAST_SUBTITLE_SYNC2, value.coerceIn(0, 10)).apply()
-    var v74GestureSwipeSpeed2: Int
-        get() = prefs.getInt(KEY_V74_GESTURE_SWIPE_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V74_GESTURE_SWIPE_SPEED2, value.coerceIn(0, 5)).apply()
-    var v74CacheMaxSize2: Int
-        get() = prefs.getInt(KEY_V74_CACHE_MAX_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V74_CACHE_MAX_SIZE2, value.coerceIn(0, 10)).apply()
-    var v74ProgressBarSensitivity2: Int
-        get() = prefs.getInt(KEY_V74_PROGRESS_BAR_SENSITIVITY2, 0)
-        set(value) = prefs.edit().putInt(KEY_V74_PROGRESS_BAR_SENSITIVITY2, value.coerceIn(0, 5)).apply()
-    var v74PlaybackSmartSpeed: Boolean
-        get() = prefs.getBoolean(KEY_V74_PLAYBACK_SMART_SPEED, false)
-        set(value) = prefs.edit().putBoolean(KEY_V74_PLAYBACK_SMART_SPEED, value).apply()
-    var v74DanmakuFontWeight4: Int
-        get() = prefs.getInt(KEY_V74_DANMAKU_FONT_WEIGHT4, 400)
-        set(value) = prefs.edit().putInt(KEY_V74_DANMAKU_FONT_WEIGHT4, value.coerceIn(100, 900)).apply()
-    var v74ColorGamma2: Int
-        get() = prefs.getInt(KEY_V74_COLOR_GAMMA2, 0)
-        set(value) = prefs.edit().putInt(KEY_V74_COLOR_GAMMA2, value.coerceIn(0, 5)).apply()
-    var v74VolumeBass2: Int
-        get() = prefs.getInt(KEY_V74_VOLUME_BASS2, 0)
-        set(value) = prefs.edit().putInt(KEY_V74_VOLUME_BASS2, value.coerceIn(0, 5)).apply()
-    var v74CastVideoQuality2: Int
-        get() = prefs.getInt(KEY_V74_CAST_VIDEO_QUALITY2, 0)
-        set(value) = prefs.edit().putInt(KEY_V74_CAST_VIDEO_QUALITY2, value.coerceIn(0, 5)).apply()
-    var v74GestureDoubleTapSpeed: Int
-        get() = prefs.getInt(KEY_V74_GESTURE_DOUBLE_TAP_SPEED, 0)
-        set(value) = prefs.edit().putInt(KEY_V74_GESTURE_DOUBLE_TAP_SPEED, value.coerceIn(0, 5)).apply()
-    var v74CachePrefetchSize2: Int
-        get() = prefs.getInt(KEY_V74_CACHE_PREFETCH_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V74_CACHE_PREFETCH_SIZE2, value.coerceIn(0, 5)).apply()
-
     // ===== v75.x =====
-    var v75PlaybackAutoSkipRecap: Boolean
-        get() = prefs.getBoolean(KEY_V75_PLAYBACK_AUTO_SKIP_RECAP, false)
-        set(value) = prefs.edit().putBoolean(KEY_V75_PLAYBACK_AUTO_SKIP_RECAP, value).apply()
-    var v75DanmakuFontGlowSize3: Int
-        get() = prefs.getInt(KEY_V75_DANMAKU_FONT_GLOW_SIZE3, 0)
-        set(value) = prefs.edit().putInt(KEY_V75_DANMAKU_FONT_GLOW_SIZE3, value.coerceIn(0, 10)).apply()
-    var v75ColorLift2: Int
-        get() = prefs.getInt(KEY_V75_COLOR_LIFT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V75_COLOR_LIFT2, value.coerceIn(0, 100)).apply()
-    var v75VolumeSurround2: Int
-        get() = prefs.getInt(KEY_V75_VOLUME_SURROUND2, 0)
-        set(value) = prefs.edit().putInt(KEY_V75_VOLUME_SURROUND2, value.coerceIn(0, 5)).apply()
-    var v75CastSubtitleSync2: Int
-        get() = prefs.getInt(KEY_V75_CAST_SUBTITLE_SYNC2, 0)
-        set(value) = prefs.edit().putInt(KEY_V75_CAST_SUBTITLE_SYNC2, value.coerceIn(0, 10)).apply()
-    var v75GestureSwipeSpeed2: Int
-        get() = prefs.getInt(KEY_V75_GESTURE_SWIPE_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V75_GESTURE_SWIPE_SPEED2, value.coerceIn(0, 5)).apply()
-    var v75CacheMaxSize2: Int
-        get() = prefs.getInt(KEY_V75_CACHE_MAX_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V75_CACHE_MAX_SIZE2, value.coerceIn(0, 10)).apply()
-    var v75ProgressBarSensitivity2: Int
-        get() = prefs.getInt(KEY_V75_PROGRESS_BAR_SENSITIVITY2, 0)
-        set(value) = prefs.edit().putInt(KEY_V75_PROGRESS_BAR_SENSITIVITY2, value.coerceIn(0, 5)).apply()
-    var v75PlaybackSmartSpeed: Boolean
-        get() = prefs.getBoolean(KEY_V75_PLAYBACK_SMART_SPEED, false)
-        set(value) = prefs.edit().putBoolean(KEY_V75_PLAYBACK_SMART_SPEED, value).apply()
-    var v75DanmakuFontWeight4: Int
-        get() = prefs.getInt(KEY_V75_DANMAKU_FONT_WEIGHT4, 400)
-        set(value) = prefs.edit().putInt(KEY_V75_DANMAKU_FONT_WEIGHT4, value.coerceIn(100, 900)).apply()
-    var v75ColorGamma2: Int
-        get() = prefs.getInt(KEY_V75_COLOR_GAMMA2, 0)
-        set(value) = prefs.edit().putInt(KEY_V75_COLOR_GAMMA2, value.coerceIn(0, 5)).apply()
-    var v75VolumeBass2: Int
-        get() = prefs.getInt(KEY_V75_VOLUME_BASS2, 0)
-        set(value) = prefs.edit().putInt(KEY_V75_VOLUME_BASS2, value.coerceIn(0, 5)).apply()
-    var v75CastVideoQuality2: Int
-        get() = prefs.getInt(KEY_V75_CAST_VIDEO_QUALITY2, 0)
-        set(value) = prefs.edit().putInt(KEY_V75_CAST_VIDEO_QUALITY2, value.coerceIn(0, 5)).apply()
-    var v75GestureDoubleTapSpeed: Int
-        get() = prefs.getInt(KEY_V75_GESTURE_DOUBLE_TAP_SPEED, 0)
-        set(value) = prefs.edit().putInt(KEY_V75_GESTURE_DOUBLE_TAP_SPEED, value.coerceIn(0, 5)).apply()
-    var v75CachePrefetchSize2: Int
-        get() = prefs.getInt(KEY_V75_CACHE_PREFETCH_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V75_CACHE_PREFETCH_SIZE2, value.coerceIn(0, 5)).apply()
-
     // ===== v76.x =====
-    var v76PlaybackAutoSkipRecap: Boolean
-        get() = prefs.getBoolean(KEY_V76_PLAYBACK_AUTO_SKIP_RECAP, false)
-        set(value) = prefs.edit().putBoolean(KEY_V76_PLAYBACK_AUTO_SKIP_RECAP, value).apply()
-    var v76DanmakuFontGlowSize3: Int
-        get() = prefs.getInt(KEY_V76_DANMAKU_FONT_GLOW_SIZE3, 0)
-        set(value) = prefs.edit().putInt(KEY_V76_DANMAKU_FONT_GLOW_SIZE3, value.coerceIn(0, 10)).apply()
-    var v76ColorLift2: Int
-        get() = prefs.getInt(KEY_V76_COLOR_LIFT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V76_COLOR_LIFT2, value.coerceIn(0, 100)).apply()
-    var v76VolumeSurround2: Int
-        get() = prefs.getInt(KEY_V76_VOLUME_SURROUND2, 0)
-        set(value) = prefs.edit().putInt(KEY_V76_VOLUME_SURROUND2, value.coerceIn(0, 5)).apply()
-    var v76CastSubtitleSync2: Int
-        get() = prefs.getInt(KEY_V76_CAST_SUBTITLE_SYNC2, 0)
-        set(value) = prefs.edit().putInt(KEY_V76_CAST_SUBTITLE_SYNC2, value.coerceIn(0, 10)).apply()
-    var v76GestureSwipeSpeed2: Int
-        get() = prefs.getInt(KEY_V76_GESTURE_SWIPE_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V76_GESTURE_SWIPE_SPEED2, value.coerceIn(0, 5)).apply()
-    var v76CacheMaxSize2: Int
-        get() = prefs.getInt(KEY_V76_CACHE_MAX_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V76_CACHE_MAX_SIZE2, value.coerceIn(0, 10)).apply()
-    var v76ProgressBarSensitivity2: Int
-        get() = prefs.getInt(KEY_V76_PROGRESS_BAR_SENSITIVITY2, 0)
-        set(value) = prefs.edit().putInt(KEY_V76_PROGRESS_BAR_SENSITIVITY2, value.coerceIn(0, 5)).apply()
-    var v76PlaybackSmartSpeed: Boolean
-        get() = prefs.getBoolean(KEY_V76_PLAYBACK_SMART_SPEED, false)
-        set(value) = prefs.edit().putBoolean(KEY_V76_PLAYBACK_SMART_SPEED, value).apply()
-    var v76DanmakuFontWeight4: Int
-        get() = prefs.getInt(KEY_V76_DANMAKU_FONT_WEIGHT4, 400)
-        set(value) = prefs.edit().putInt(KEY_V76_DANMAKU_FONT_WEIGHT4, value.coerceIn(100, 900)).apply()
-    var v76ColorGamma2: Int
-        get() = prefs.getInt(KEY_V76_COLOR_GAMMA2, 0)
-        set(value) = prefs.edit().putInt(KEY_V76_COLOR_GAMMA2, value.coerceIn(0, 5)).apply()
-    var v76VolumeBass2: Int
-        get() = prefs.getInt(KEY_V76_VOLUME_BASS2, 0)
-        set(value) = prefs.edit().putInt(KEY_V76_VOLUME_BASS2, value.coerceIn(0, 5)).apply()
-    var v76CastVideoQuality2: Int
-        get() = prefs.getInt(KEY_V76_CAST_VIDEO_QUALITY2, 0)
-        set(value) = prefs.edit().putInt(KEY_V76_CAST_VIDEO_QUALITY2, value.coerceIn(0, 5)).apply()
-    var v76GestureDoubleTapSpeed: Int
-        get() = prefs.getInt(KEY_V76_GESTURE_DOUBLE_TAP_SPEED, 0)
-        set(value) = prefs.edit().putInt(KEY_V76_GESTURE_DOUBLE_TAP_SPEED, value.coerceIn(0, 5)).apply()
-    var v76CachePrefetchSize2: Int
-        get() = prefs.getInt(KEY_V76_CACHE_PREFETCH_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V76_CACHE_PREFETCH_SIZE2, value.coerceIn(0, 5)).apply()
-
     // ===== v77.x =====
-    var v77PlaybackAutoSkipRecap: Boolean
-        get() = prefs.getBoolean(KEY_V77_PLAYBACK_AUTO_SKIP_RECAP, false)
-        set(value) = prefs.edit().putBoolean(KEY_V77_PLAYBACK_AUTO_SKIP_RECAP, value).apply()
-    var v77DanmakuFontGlowSize3: Int
-        get() = prefs.getInt(KEY_V77_DANMAKU_FONT_GLOW_SIZE3, 0)
-        set(value) = prefs.edit().putInt(KEY_V77_DANMAKU_FONT_GLOW_SIZE3, value.coerceIn(0, 10)).apply()
-    var v77ColorLift2: Int
-        get() = prefs.getInt(KEY_V77_COLOR_LIFT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V77_COLOR_LIFT2, value.coerceIn(0, 100)).apply()
-    var v77VolumeSurround2: Int
-        get() = prefs.getInt(KEY_V77_VOLUME_SURROUND2, 0)
-        set(value) = prefs.edit().putInt(KEY_V77_VOLUME_SURROUND2, value.coerceIn(0, 5)).apply()
-    var v77CastSubtitleSync2: Int
-        get() = prefs.getInt(KEY_V77_CAST_SUBTITLE_SYNC2, 0)
-        set(value) = prefs.edit().putInt(KEY_V77_CAST_SUBTITLE_SYNC2, value.coerceIn(0, 10)).apply()
-    var v77GestureSwipeSpeed2: Int
-        get() = prefs.getInt(KEY_V77_GESTURE_SWIPE_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V77_GESTURE_SWIPE_SPEED2, value.coerceIn(0, 5)).apply()
-    var v77CacheMaxSize2: Int
-        get() = prefs.getInt(KEY_V77_CACHE_MAX_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V77_CACHE_MAX_SIZE2, value.coerceIn(0, 10)).apply()
-    var v77ProgressBarSensitivity2: Int
-        get() = prefs.getInt(KEY_V77_PROGRESS_BAR_SENSITIVITY2, 0)
-        set(value) = prefs.edit().putInt(KEY_V77_PROGRESS_BAR_SENSITIVITY2, value.coerceIn(0, 5)).apply()
-    var v77PlaybackSmartSpeed: Boolean
-        get() = prefs.getBoolean(KEY_V77_PLAYBACK_SMART_SPEED, false)
-        set(value) = prefs.edit().putBoolean(KEY_V77_PLAYBACK_SMART_SPEED, value).apply()
-    var v77DanmakuFontWeight4: Int
-        get() = prefs.getInt(KEY_V77_DANMAKU_FONT_WEIGHT4, 400)
-        set(value) = prefs.edit().putInt(KEY_V77_DANMAKU_FONT_WEIGHT4, value.coerceIn(100, 900)).apply()
-    var v77ColorGamma2: Int
-        get() = prefs.getInt(KEY_V77_COLOR_GAMMA2, 0)
-        set(value) = prefs.edit().putInt(KEY_V77_COLOR_GAMMA2, value.coerceIn(0, 5)).apply()
-    var v77VolumeBass2: Int
-        get() = prefs.getInt(KEY_V77_VOLUME_BASS2, 0)
-        set(value) = prefs.edit().putInt(KEY_V77_VOLUME_BASS2, value.coerceIn(0, 5)).apply()
-    var v77CastVideoQuality2: Int
-        get() = prefs.getInt(KEY_V77_CAST_VIDEO_QUALITY2, 0)
-        set(value) = prefs.edit().putInt(KEY_V77_CAST_VIDEO_QUALITY2, value.coerceIn(0, 5)).apply()
-    var v77GestureDoubleTapSpeed: Int
-        get() = prefs.getInt(KEY_V77_GESTURE_DOUBLE_TAP_SPEED, 0)
-        set(value) = prefs.edit().putInt(KEY_V77_GESTURE_DOUBLE_TAP_SPEED, value.coerceIn(0, 5)).apply()
-    var v77CachePrefetchSize2: Int
-        get() = prefs.getInt(KEY_V77_CACHE_PREFETCH_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V77_CACHE_PREFETCH_SIZE2, value.coerceIn(0, 5)).apply()
-
     // ===== v78.x =====
-    var v78PlaybackAutoSkipRecap: Boolean
-        get() = prefs.getBoolean(KEY_V78_PLAYBACK_AUTO_SKIP_RECAP, false)
-        set(value) = prefs.edit().putBoolean(KEY_V78_PLAYBACK_AUTO_SKIP_RECAP, value).apply()
-    var v78DanmakuFontGlowSize3: Int
-        get() = prefs.getInt(KEY_V78_DANMAKU_FONT_GLOW_SIZE3, 0)
-        set(value) = prefs.edit().putInt(KEY_V78_DANMAKU_FONT_GLOW_SIZE3, value.coerceIn(0, 10)).apply()
-    var v78ColorLift2: Int
-        get() = prefs.getInt(KEY_V78_COLOR_LIFT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V78_COLOR_LIFT2, value.coerceIn(0, 100)).apply()
-    var v78VolumeSurround2: Int
-        get() = prefs.getInt(KEY_V78_VOLUME_SURROUND2, 0)
-        set(value) = prefs.edit().putInt(KEY_V78_VOLUME_SURROUND2, value.coerceIn(0, 5)).apply()
-    var v78CastSubtitleSync2: Int
-        get() = prefs.getInt(KEY_V78_CAST_SUBTITLE_SYNC2, 0)
-        set(value) = prefs.edit().putInt(KEY_V78_CAST_SUBTITLE_SYNC2, value.coerceIn(0, 10)).apply()
-    var v78GestureSwipeSpeed2: Int
-        get() = prefs.getInt(KEY_V78_GESTURE_SWIPE_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V78_GESTURE_SWIPE_SPEED2, value.coerceIn(0, 5)).apply()
-    var v78CacheMaxSize2: Int
-        get() = prefs.getInt(KEY_V78_CACHE_MAX_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V78_CACHE_MAX_SIZE2, value.coerceIn(0, 10)).apply()
-    var v78ProgressBarSensitivity2: Int
-        get() = prefs.getInt(KEY_V78_PROGRESS_BAR_SENSITIVITY2, 0)
-        set(value) = prefs.edit().putInt(KEY_V78_PROGRESS_BAR_SENSITIVITY2, value.coerceIn(0, 5)).apply()
-    var v78PlaybackSmartSpeed: Boolean
-        get() = prefs.getBoolean(KEY_V78_PLAYBACK_SMART_SPEED, false)
-        set(value) = prefs.edit().putBoolean(KEY_V78_PLAYBACK_SMART_SPEED, value).apply()
-    var v78DanmakuFontWeight4: Int
-        get() = prefs.getInt(KEY_V78_DANMAKU_FONT_WEIGHT4, 400)
-        set(value) = prefs.edit().putInt(KEY_V78_DANMAKU_FONT_WEIGHT4, value.coerceIn(100, 900)).apply()
-    var v78ColorGamma2: Int
-        get() = prefs.getInt(KEY_V78_COLOR_GAMMA2, 0)
-        set(value) = prefs.edit().putInt(KEY_V78_COLOR_GAMMA2, value.coerceIn(0, 5)).apply()
-    var v78VolumeBass2: Int
-        get() = prefs.getInt(KEY_V78_VOLUME_BASS2, 0)
-        set(value) = prefs.edit().putInt(KEY_V78_VOLUME_BASS2, value.coerceIn(0, 5)).apply()
-    var v78CastVideoQuality2: Int
-        get() = prefs.getInt(KEY_V78_CAST_VIDEO_QUALITY2, 0)
-        set(value) = prefs.edit().putInt(KEY_V78_CAST_VIDEO_QUALITY2, value.coerceIn(0, 5)).apply()
-    var v78GestureDoubleTapSpeed: Int
-        get() = prefs.getInt(KEY_V78_GESTURE_DOUBLE_TAP_SPEED, 0)
-        set(value) = prefs.edit().putInt(KEY_V78_GESTURE_DOUBLE_TAP_SPEED, value.coerceIn(0, 5)).apply()
-    var v78CachePrefetchSize2: Int
-        get() = prefs.getInt(KEY_V78_CACHE_PREFETCH_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V78_CACHE_PREFETCH_SIZE2, value.coerceIn(0, 5)).apply()
-
     // ===== v79.x =====
-    var v79PlaybackAutoSkipRecap: Boolean
-        get() = prefs.getBoolean(KEY_V79_PLAYBACK_AUTO_SKIP_RECAP, false)
-        set(value) = prefs.edit().putBoolean(KEY_V79_PLAYBACK_AUTO_SKIP_RECAP, value).apply()
-    var v79DanmakuFontGlowSize3: Int
-        get() = prefs.getInt(KEY_V79_DANMAKU_FONT_GLOW_SIZE3, 0)
-        set(value) = prefs.edit().putInt(KEY_V79_DANMAKU_FONT_GLOW_SIZE3, value.coerceIn(0, 10)).apply()
-    var v79ColorLift2: Int
-        get() = prefs.getInt(KEY_V79_COLOR_LIFT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V79_COLOR_LIFT2, value.coerceIn(0, 100)).apply()
-    var v79VolumeSurround2: Int
-        get() = prefs.getInt(KEY_V79_VOLUME_SURROUND2, 0)
-        set(value) = prefs.edit().putInt(KEY_V79_VOLUME_SURROUND2, value.coerceIn(0, 5)).apply()
-    var v79CastSubtitleSync2: Int
-        get() = prefs.getInt(KEY_V79_CAST_SUBTITLE_SYNC2, 0)
-        set(value) = prefs.edit().putInt(KEY_V79_CAST_SUBTITLE_SYNC2, value.coerceIn(0, 10)).apply()
-    var v79GestureSwipeSpeed2: Int
-        get() = prefs.getInt(KEY_V79_GESTURE_SWIPE_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V79_GESTURE_SWIPE_SPEED2, value.coerceIn(0, 5)).apply()
-    var v79CacheMaxSize2: Int
-        get() = prefs.getInt(KEY_V79_CACHE_MAX_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V79_CACHE_MAX_SIZE2, value.coerceIn(0, 10)).apply()
-    var v79ProgressBarSensitivity2: Int
-        get() = prefs.getInt(KEY_V79_PROGRESS_BAR_SENSITIVITY2, 0)
-        set(value) = prefs.edit().putInt(KEY_V79_PROGRESS_BAR_SENSITIVITY2, value.coerceIn(0, 5)).apply()
-    var v79PlaybackSmartSpeed: Boolean
-        get() = prefs.getBoolean(KEY_V79_PLAYBACK_SMART_SPEED, false)
-        set(value) = prefs.edit().putBoolean(KEY_V79_PLAYBACK_SMART_SPEED, value).apply()
-    var v79DanmakuFontWeight4: Int
-        get() = prefs.getInt(KEY_V79_DANMAKU_FONT_WEIGHT4, 400)
-        set(value) = prefs.edit().putInt(KEY_V79_DANMAKU_FONT_WEIGHT4, value.coerceIn(100, 900)).apply()
-    var v79ColorGamma2: Int
-        get() = prefs.getInt(KEY_V79_COLOR_GAMMA2, 0)
-        set(value) = prefs.edit().putInt(KEY_V79_COLOR_GAMMA2, value.coerceIn(0, 5)).apply()
-    var v79VolumeBass2: Int
-        get() = prefs.getInt(KEY_V79_VOLUME_BASS2, 0)
-        set(value) = prefs.edit().putInt(KEY_V79_VOLUME_BASS2, value.coerceIn(0, 5)).apply()
-    var v79CastVideoQuality2: Int
-        get() = prefs.getInt(KEY_V79_CAST_VIDEO_QUALITY2, 0)
-        set(value) = prefs.edit().putInt(KEY_V79_CAST_VIDEO_QUALITY2, value.coerceIn(0, 5)).apply()
-    var v79GestureDoubleTapSpeed: Int
-        get() = prefs.getInt(KEY_V79_GESTURE_DOUBLE_TAP_SPEED, 0)
-        set(value) = prefs.edit().putInt(KEY_V79_GESTURE_DOUBLE_TAP_SPEED, value.coerceIn(0, 5)).apply()
-    var v79CachePrefetchSize2: Int
-        get() = prefs.getInt(KEY_V79_CACHE_PREFETCH_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V79_CACHE_PREFETCH_SIZE2, value.coerceIn(0, 5)).apply()
-
     // ===== v80.x =====
-    var v80PlaybackAutoSkipRecap: Boolean
-        get() = prefs.getBoolean(KEY_V80_PLAYBACK_AUTO_SKIP_RECAP, false)
-        set(value) = prefs.edit().putBoolean(KEY_V80_PLAYBACK_AUTO_SKIP_RECAP, value).apply()
-    var v80DanmakuFontGlowSize3: Int
-        get() = prefs.getInt(KEY_V80_DANMAKU_FONT_GLOW_SIZE3, 0)
-        set(value) = prefs.edit().putInt(KEY_V80_DANMAKU_FONT_GLOW_SIZE3, value.coerceIn(0, 10)).apply()
-    var v80ColorLift2: Int
-        get() = prefs.getInt(KEY_V80_COLOR_LIFT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V80_COLOR_LIFT2, value.coerceIn(0, 100)).apply()
-    var v80VolumeSurround2: Int
-        get() = prefs.getInt(KEY_V80_VOLUME_SURROUND2, 0)
-        set(value) = prefs.edit().putInt(KEY_V80_VOLUME_SURROUND2, value.coerceIn(0, 5)).apply()
-    var v80CastSubtitleSync2: Int
-        get() = prefs.getInt(KEY_V80_CAST_SUBTITLE_SYNC2, 0)
-        set(value) = prefs.edit().putInt(KEY_V80_CAST_SUBTITLE_SYNC2, value.coerceIn(0, 10)).apply()
-    var v80GestureSwipeSpeed2: Int
-        get() = prefs.getInt(KEY_V80_GESTURE_SWIPE_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V80_GESTURE_SWIPE_SPEED2, value.coerceIn(0, 5)).apply()
-    var v80CacheMaxSize2: Int
-        get() = prefs.getInt(KEY_V80_CACHE_MAX_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V80_CACHE_MAX_SIZE2, value.coerceIn(0, 10)).apply()
-    var v80ProgressBarSensitivity2: Int
-        get() = prefs.getInt(KEY_V80_PROGRESS_BAR_SENSITIVITY2, 0)
-        set(value) = prefs.edit().putInt(KEY_V80_PROGRESS_BAR_SENSITIVITY2, value.coerceIn(0, 5)).apply()
-    var v80PlaybackSmartSpeed: Boolean
-        get() = prefs.getBoolean(KEY_V80_PLAYBACK_SMART_SPEED, false)
-        set(value) = prefs.edit().putBoolean(KEY_V80_PLAYBACK_SMART_SPEED, value).apply()
-    var v80DanmakuFontWeight4: Int
-        get() = prefs.getInt(KEY_V80_DANMAKU_FONT_WEIGHT4, 400)
-        set(value) = prefs.edit().putInt(KEY_V80_DANMAKU_FONT_WEIGHT4, value.coerceIn(100, 900)).apply()
-    var v80ColorGamma2: Int
-        get() = prefs.getInt(KEY_V80_COLOR_GAMMA2, 0)
-        set(value) = prefs.edit().putInt(KEY_V80_COLOR_GAMMA2, value.coerceIn(0, 5)).apply()
-    var v80VolumeBass2: Int
-        get() = prefs.getInt(KEY_V80_VOLUME_BASS2, 0)
-        set(value) = prefs.edit().putInt(KEY_V80_VOLUME_BASS2, value.coerceIn(0, 5)).apply()
-    var v80CastVideoQuality2: Int
-        get() = prefs.getInt(KEY_V80_CAST_VIDEO_QUALITY2, 0)
-        set(value) = prefs.edit().putInt(KEY_V80_CAST_VIDEO_QUALITY2, value.coerceIn(0, 5)).apply()
-    var v80GestureDoubleTapSpeed: Int
-        get() = prefs.getInt(KEY_V80_GESTURE_DOUBLE_TAP_SPEED, 0)
-        set(value) = prefs.edit().putInt(KEY_V80_GESTURE_DOUBLE_TAP_SPEED, value.coerceIn(0, 5)).apply()
-    var v80CachePrefetchSize2: Int
-        get() = prefs.getInt(KEY_V80_CACHE_PREFETCH_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V80_CACHE_PREFETCH_SIZE2, value.coerceIn(0, 5)).apply()
-
     // ===== v81.x =====
-    var v81PlaybackAutoSkipRecap: Boolean
-        get() = prefs.getBoolean(KEY_V81_PLAYBACK_AUTO_SKIP_RECAP, false)
-        set(value) = prefs.edit().putBoolean(KEY_V81_PLAYBACK_AUTO_SKIP_RECAP, value).apply()
-    var v81DanmakuFontGlowSize3: Int
-        get() = prefs.getInt(KEY_V81_DANMAKU_FONT_GLOW_SIZE3, 0)
-        set(value) = prefs.edit().putInt(KEY_V81_DANMAKU_FONT_GLOW_SIZE3, value.coerceIn(0, 10)).apply()
-    var v81ColorLift2: Int
-        get() = prefs.getInt(KEY_V81_COLOR_LIFT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V81_COLOR_LIFT2, value.coerceIn(0, 100)).apply()
-    var v81VolumeSurround2: Int
-        get() = prefs.getInt(KEY_V81_VOLUME_SURROUND2, 0)
-        set(value) = prefs.edit().putInt(KEY_V81_VOLUME_SURROUND2, value.coerceIn(0, 5)).apply()
-    var v81CastSubtitleSync2: Int
-        get() = prefs.getInt(KEY_V81_CAST_SUBTITLE_SYNC2, 0)
-        set(value) = prefs.edit().putInt(KEY_V81_CAST_SUBTITLE_SYNC2, value.coerceIn(0, 10)).apply()
-    var v81GestureSwipeSpeed2: Int
-        get() = prefs.getInt(KEY_V81_GESTURE_SWIPE_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V81_GESTURE_SWIPE_SPEED2, value.coerceIn(0, 5)).apply()
-    var v81CacheMaxSize2: Int
-        get() = prefs.getInt(KEY_V81_CACHE_MAX_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V81_CACHE_MAX_SIZE2, value.coerceIn(0, 10)).apply()
-    var v81ProgressBarSensitivity2: Int
-        get() = prefs.getInt(KEY_V81_PROGRESS_BAR_SENSITIVITY2, 0)
-        set(value) = prefs.edit().putInt(KEY_V81_PROGRESS_BAR_SENSITIVITY2, value.coerceIn(0, 5)).apply()
-    var v81PlaybackSmartSpeed: Boolean
-        get() = prefs.getBoolean(KEY_V81_PLAYBACK_SMART_SPEED, false)
-        set(value) = prefs.edit().putBoolean(KEY_V81_PLAYBACK_SMART_SPEED, value).apply()
-    var v81DanmakuFontWeight4: Int
-        get() = prefs.getInt(KEY_V81_DANMAKU_FONT_WEIGHT4, 400)
-        set(value) = prefs.edit().putInt(KEY_V81_DANMAKU_FONT_WEIGHT4, value.coerceIn(100, 900)).apply()
-    var v81ColorGamma2: Int
-        get() = prefs.getInt(KEY_V81_COLOR_GAMMA2, 0)
-        set(value) = prefs.edit().putInt(KEY_V81_COLOR_GAMMA2, value.coerceIn(0, 5)).apply()
-    var v81VolumeBass2: Int
-        get() = prefs.getInt(KEY_V81_VOLUME_BASS2, 0)
-        set(value) = prefs.edit().putInt(KEY_V81_VOLUME_BASS2, value.coerceIn(0, 5)).apply()
-    var v81CastVideoQuality2: Int
-        get() = prefs.getInt(KEY_V81_CAST_VIDEO_QUALITY2, 0)
-        set(value) = prefs.edit().putInt(KEY_V81_CAST_VIDEO_QUALITY2, value.coerceIn(0, 5)).apply()
-    var v81GestureDoubleTapSpeed: Int
-        get() = prefs.getInt(KEY_V81_GESTURE_DOUBLE_TAP_SPEED, 0)
-        set(value) = prefs.edit().putInt(KEY_V81_GESTURE_DOUBLE_TAP_SPEED, value.coerceIn(0, 5)).apply()
-    var v81CachePrefetchSize2: Int
-        get() = prefs.getInt(KEY_V81_CACHE_PREFETCH_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V81_CACHE_PREFETCH_SIZE2, value.coerceIn(0, 5)).apply()
-
     // ===== v82.x =====
-    var v82PlaybackAutoSkipRecap: Boolean
-        get() = prefs.getBoolean(KEY_V82_PLAYBACK_AUTO_SKIP_RECAP, false)
-        set(value) = prefs.edit().putBoolean(KEY_V82_PLAYBACK_AUTO_SKIP_RECAP, value).apply()
-    var v82DanmakuFontGlowSize3: Int
-        get() = prefs.getInt(KEY_V82_DANMAKU_FONT_GLOW_SIZE3, 0)
-        set(value) = prefs.edit().putInt(KEY_V82_DANMAKU_FONT_GLOW_SIZE3, value.coerceIn(0, 10)).apply()
-    var v82ColorLift2: Int
-        get() = prefs.getInt(KEY_V82_COLOR_LIFT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V82_COLOR_LIFT2, value.coerceIn(0, 100)).apply()
-    var v82VolumeSurround2: Int
-        get() = prefs.getInt(KEY_V82_VOLUME_SURROUND2, 0)
-        set(value) = prefs.edit().putInt(KEY_V82_VOLUME_SURROUND2, value.coerceIn(0, 5)).apply()
-    var v82CastSubtitleSync2: Int
-        get() = prefs.getInt(KEY_V82_CAST_SUBTITLE_SYNC2, 0)
-        set(value) = prefs.edit().putInt(KEY_V82_CAST_SUBTITLE_SYNC2, value.coerceIn(0, 10)).apply()
-    var v82GestureSwipeSpeed2: Int
-        get() = prefs.getInt(KEY_V82_GESTURE_SWIPE_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V82_GESTURE_SWIPE_SPEED2, value.coerceIn(0, 5)).apply()
-    var v82CacheMaxSize2: Int
-        get() = prefs.getInt(KEY_V82_CACHE_MAX_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V82_CACHE_MAX_SIZE2, value.coerceIn(0, 10)).apply()
-    var v82ProgressBarSensitivity2: Int
-        get() = prefs.getInt(KEY_V82_PROGRESS_BAR_SENSITIVITY2, 0)
-        set(value) = prefs.edit().putInt(KEY_V82_PROGRESS_BAR_SENSITIVITY2, value.coerceIn(0, 5)).apply()
-    var v82PlaybackSmartSpeed: Boolean
-        get() = prefs.getBoolean(KEY_V82_PLAYBACK_SMART_SPEED, false)
-        set(value) = prefs.edit().putBoolean(KEY_V82_PLAYBACK_SMART_SPEED, value).apply()
-    var v82DanmakuFontWeight4: Int
-        get() = prefs.getInt(KEY_V82_DANMAKU_FONT_WEIGHT4, 400)
-        set(value) = prefs.edit().putInt(KEY_V82_DANMAKU_FONT_WEIGHT4, value.coerceIn(100, 900)).apply()
-    var v82ColorGamma2: Int
-        get() = prefs.getInt(KEY_V82_COLOR_GAMMA2, 0)
-        set(value) = prefs.edit().putInt(KEY_V82_COLOR_GAMMA2, value.coerceIn(0, 5)).apply()
-    var v82VolumeBass2: Int
-        get() = prefs.getInt(KEY_V82_VOLUME_BASS2, 0)
-        set(value) = prefs.edit().putInt(KEY_V82_VOLUME_BASS2, value.coerceIn(0, 5)).apply()
-    var v82CastVideoQuality2: Int
-        get() = prefs.getInt(KEY_V82_CAST_VIDEO_QUALITY2, 0)
-        set(value) = prefs.edit().putInt(KEY_V82_CAST_VIDEO_QUALITY2, value.coerceIn(0, 5)).apply()
-    var v82GestureDoubleTapSpeed: Int
-        get() = prefs.getInt(KEY_V82_GESTURE_DOUBLE_TAP_SPEED, 0)
-        set(value) = prefs.edit().putInt(KEY_V82_GESTURE_DOUBLE_TAP_SPEED, value.coerceIn(0, 5)).apply()
-    var v82CachePrefetchSize2: Int
-        get() = prefs.getInt(KEY_V82_CACHE_PREFETCH_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V82_CACHE_PREFETCH_SIZE2, value.coerceIn(0, 5)).apply()
-
     // ===== v83.x =====
-    var v83PlaybackAutoSkipRecap: Boolean
-        get() = prefs.getBoolean(KEY_V83_PLAYBACK_AUTO_SKIP_RECAP, false)
-        set(value) = prefs.edit().putBoolean(KEY_V83_PLAYBACK_AUTO_SKIP_RECAP, value).apply()
-    var v83DanmakuFontGlowSize3: Int
-        get() = prefs.getInt(KEY_V83_DANMAKU_FONT_GLOW_SIZE3, 0)
-        set(value) = prefs.edit().putInt(KEY_V83_DANMAKU_FONT_GLOW_SIZE3, value.coerceIn(0, 10)).apply()
-    var v83ColorLift2: Int
-        get() = prefs.getInt(KEY_V83_COLOR_LIFT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V83_COLOR_LIFT2, value.coerceIn(0, 100)).apply()
-    var v83VolumeSurround2: Int
-        get() = prefs.getInt(KEY_V83_VOLUME_SURROUND2, 0)
-        set(value) = prefs.edit().putInt(KEY_V83_VOLUME_SURROUND2, value.coerceIn(0, 5)).apply()
-    var v83CastSubtitleSync2: Int
-        get() = prefs.getInt(KEY_V83_CAST_SUBTITLE_SYNC2, 0)
-        set(value) = prefs.edit().putInt(KEY_V83_CAST_SUBTITLE_SYNC2, value.coerceIn(0, 10)).apply()
-    var v83GestureSwipeSpeed2: Int
-        get() = prefs.getInt(KEY_V83_GESTURE_SWIPE_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V83_GESTURE_SWIPE_SPEED2, value.coerceIn(0, 5)).apply()
-    var v83CacheMaxSize2: Int
-        get() = prefs.getInt(KEY_V83_CACHE_MAX_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V83_CACHE_MAX_SIZE2, value.coerceIn(0, 10)).apply()
-    var v83ProgressBarSensitivity2: Int
-        get() = prefs.getInt(KEY_V83_PROGRESS_BAR_SENSITIVITY2, 0)
-        set(value) = prefs.edit().putInt(KEY_V83_PROGRESS_BAR_SENSITIVITY2, value.coerceIn(0, 5)).apply()
-    var v83PlaybackSmartSpeed: Boolean
-        get() = prefs.getBoolean(KEY_V83_PLAYBACK_SMART_SPEED, false)
-        set(value) = prefs.edit().putBoolean(KEY_V83_PLAYBACK_SMART_SPEED, value).apply()
-    var v83DanmakuFontWeight4: Int
-        get() = prefs.getInt(KEY_V83_DANMAKU_FONT_WEIGHT4, 400)
-        set(value) = prefs.edit().putInt(KEY_V83_DANMAKU_FONT_WEIGHT4, value.coerceIn(100, 900)).apply()
-    var v83ColorGamma2: Int
-        get() = prefs.getInt(KEY_V83_COLOR_GAMMA2, 0)
-        set(value) = prefs.edit().putInt(KEY_V83_COLOR_GAMMA2, value.coerceIn(0, 5)).apply()
-    var v83VolumeBass2: Int
-        get() = prefs.getInt(KEY_V83_VOLUME_BASS2, 0)
-        set(value) = prefs.edit().putInt(KEY_V83_VOLUME_BASS2, value.coerceIn(0, 5)).apply()
-    var v83CastVideoQuality2: Int
-        get() = prefs.getInt(KEY_V83_CAST_VIDEO_QUALITY2, 0)
-        set(value) = prefs.edit().putInt(KEY_V83_CAST_VIDEO_QUALITY2, value.coerceIn(0, 5)).apply()
-    var v83GestureDoubleTapSpeed: Int
-        get() = prefs.getInt(KEY_V83_GESTURE_DOUBLE_TAP_SPEED, 0)
-        set(value) = prefs.edit().putInt(KEY_V83_GESTURE_DOUBLE_TAP_SPEED, value.coerceIn(0, 5)).apply()
-    var v83CachePrefetchSize2: Int
-        get() = prefs.getInt(KEY_V83_CACHE_PREFETCH_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V83_CACHE_PREFETCH_SIZE2, value.coerceIn(0, 5)).apply()
-
     // ===== v84.x =====
-    var v84PlaybackAutoSkipRecap: Boolean
-        get() = prefs.getBoolean(KEY_V84_PLAYBACK_AUTO_SKIP_RECAP, false)
-        set(value) = prefs.edit().putBoolean(KEY_V84_PLAYBACK_AUTO_SKIP_RECAP, value).apply()
-    var v84DanmakuFontGlowSize3: Int
-        get() = prefs.getInt(KEY_V84_DANMAKU_FONT_GLOW_SIZE3, 0)
-        set(value) = prefs.edit().putInt(KEY_V84_DANMAKU_FONT_GLOW_SIZE3, value.coerceIn(0, 10)).apply()
-    var v84ColorLift2: Int
-        get() = prefs.getInt(KEY_V84_COLOR_LIFT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V84_COLOR_LIFT2, value.coerceIn(0, 100)).apply()
-    var v84VolumeSurround2: Int
-        get() = prefs.getInt(KEY_V84_VOLUME_SURROUND2, 0)
-        set(value) = prefs.edit().putInt(KEY_V84_VOLUME_SURROUND2, value.coerceIn(0, 5)).apply()
-    var v84CastSubtitleSync2: Int
-        get() = prefs.getInt(KEY_V84_CAST_SUBTITLE_SYNC2, 0)
-        set(value) = prefs.edit().putInt(KEY_V84_CAST_SUBTITLE_SYNC2, value.coerceIn(0, 10)).apply()
-    var v84GestureSwipeSpeed2: Int
-        get() = prefs.getInt(KEY_V84_GESTURE_SWIPE_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V84_GESTURE_SWIPE_SPEED2, value.coerceIn(0, 5)).apply()
-    var v84CacheMaxSize2: Int
-        get() = prefs.getInt(KEY_V84_CACHE_MAX_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V84_CACHE_MAX_SIZE2, value.coerceIn(0, 10)).apply()
-    var v84ProgressBarSensitivity2: Int
-        get() = prefs.getInt(KEY_V84_PROGRESS_BAR_SENSITIVITY2, 0)
-        set(value) = prefs.edit().putInt(KEY_V84_PROGRESS_BAR_SENSITIVITY2, value.coerceIn(0, 5)).apply()
-    var v84PlaybackSmartSpeed: Boolean
-        get() = prefs.getBoolean(KEY_V84_PLAYBACK_SMART_SPEED, false)
-        set(value) = prefs.edit().putBoolean(KEY_V84_PLAYBACK_SMART_SPEED, value).apply()
-    var v84DanmakuFontWeight4: Int
-        get() = prefs.getInt(KEY_V84_DANMAKU_FONT_WEIGHT4, 400)
-        set(value) = prefs.edit().putInt(KEY_V84_DANMAKU_FONT_WEIGHT4, value.coerceIn(100, 900)).apply()
-    var v84ColorGamma2: Int
-        get() = prefs.getInt(KEY_V84_COLOR_GAMMA2, 0)
-        set(value) = prefs.edit().putInt(KEY_V84_COLOR_GAMMA2, value.coerceIn(0, 5)).apply()
-    var v84VolumeBass2: Int
-        get() = prefs.getInt(KEY_V84_VOLUME_BASS2, 0)
-        set(value) = prefs.edit().putInt(KEY_V84_VOLUME_BASS2, value.coerceIn(0, 5)).apply()
-    var v84CastVideoQuality2: Int
-        get() = prefs.getInt(KEY_V84_CAST_VIDEO_QUALITY2, 0)
-        set(value) = prefs.edit().putInt(KEY_V84_CAST_VIDEO_QUALITY2, value.coerceIn(0, 5)).apply()
-    var v84GestureDoubleTapSpeed: Int
-        get() = prefs.getInt(KEY_V84_GESTURE_DOUBLE_TAP_SPEED, 0)
-        set(value) = prefs.edit().putInt(KEY_V84_GESTURE_DOUBLE_TAP_SPEED, value.coerceIn(0, 5)).apply()
-    var v84CachePrefetchSize2: Int
-        get() = prefs.getInt(KEY_V84_CACHE_PREFETCH_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V84_CACHE_PREFETCH_SIZE2, value.coerceIn(0, 5)).apply()
-
     // ===== v85.x =====
-    var v85PlaybackAutoSkipRecap: Boolean
-        get() = prefs.getBoolean(KEY_V85_PLAYBACK_AUTO_SKIP_RECAP, false)
-        set(value) = prefs.edit().putBoolean(KEY_V85_PLAYBACK_AUTO_SKIP_RECAP, value).apply()
-    var v85DanmakuFontGlowSize3: Int
-        get() = prefs.getInt(KEY_V85_DANMAKU_FONT_GLOW_SIZE3, 0)
-        set(value) = prefs.edit().putInt(KEY_V85_DANMAKU_FONT_GLOW_SIZE3, value.coerceIn(0, 10)).apply()
-    var v85ColorLift2: Int
-        get() = prefs.getInt(KEY_V85_COLOR_LIFT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V85_COLOR_LIFT2, value.coerceIn(0, 100)).apply()
-    var v85VolumeSurround2: Int
-        get() = prefs.getInt(KEY_V85_VOLUME_SURROUND2, 0)
-        set(value) = prefs.edit().putInt(KEY_V85_VOLUME_SURROUND2, value.coerceIn(0, 5)).apply()
-    var v85CastSubtitleSync2: Int
-        get() = prefs.getInt(KEY_V85_CAST_SUBTITLE_SYNC2, 0)
-        set(value) = prefs.edit().putInt(KEY_V85_CAST_SUBTITLE_SYNC2, value.coerceIn(0, 10)).apply()
-    var v85GestureSwipeSpeed2: Int
-        get() = prefs.getInt(KEY_V85_GESTURE_SWIPE_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V85_GESTURE_SWIPE_SPEED2, value.coerceIn(0, 5)).apply()
-    var v85CacheMaxSize2: Int
-        get() = prefs.getInt(KEY_V85_CACHE_MAX_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V85_CACHE_MAX_SIZE2, value.coerceIn(0, 10)).apply()
-    var v85ProgressBarSensitivity2: Int
-        get() = prefs.getInt(KEY_V85_PROGRESS_BAR_SENSITIVITY2, 0)
-        set(value) = prefs.edit().putInt(KEY_V85_PROGRESS_BAR_SENSITIVITY2, value.coerceIn(0, 5)).apply()
-    var v85PlaybackSmartSpeed: Boolean
-        get() = prefs.getBoolean(KEY_V85_PLAYBACK_SMART_SPEED, false)
-        set(value) = prefs.edit().putBoolean(KEY_V85_PLAYBACK_SMART_SPEED, value).apply()
-    var v85DanmakuFontWeight4: Int
-        get() = prefs.getInt(KEY_V85_DANMAKU_FONT_WEIGHT4, 400)
-        set(value) = prefs.edit().putInt(KEY_V85_DANMAKU_FONT_WEIGHT4, value.coerceIn(100, 900)).apply()
-    var v85ColorGamma2: Int
-        get() = prefs.getInt(KEY_V85_COLOR_GAMMA2, 0)
-        set(value) = prefs.edit().putInt(KEY_V85_COLOR_GAMMA2, value.coerceIn(0, 5)).apply()
-    var v85VolumeBass2: Int
-        get() = prefs.getInt(KEY_V85_VOLUME_BASS2, 0)
-        set(value) = prefs.edit().putInt(KEY_V85_VOLUME_BASS2, value.coerceIn(0, 5)).apply()
-    var v85CastVideoQuality2: Int
-        get() = prefs.getInt(KEY_V85_CAST_VIDEO_QUALITY2, 0)
-        set(value) = prefs.edit().putInt(KEY_V85_CAST_VIDEO_QUALITY2, value.coerceIn(0, 5)).apply()
-    var v85GestureDoubleTapSpeed: Int
-        get() = prefs.getInt(KEY_V85_GESTURE_DOUBLE_TAP_SPEED, 0)
-        set(value) = prefs.edit().putInt(KEY_V85_GESTURE_DOUBLE_TAP_SPEED, value.coerceIn(0, 5)).apply()
-    var v85CachePrefetchSize2: Int
-        get() = prefs.getInt(KEY_V85_CACHE_PREFETCH_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V85_CACHE_PREFETCH_SIZE2, value.coerceIn(0, 5)).apply()
-
     // ===== v86.x =====
-    var v86PlaybackAutoSkipRecap: Boolean
-        get() = prefs.getBoolean(KEY_V86_PLAYBACK_AUTO_SKIP_RECAP, false)
-        set(value) = prefs.edit().putBoolean(KEY_V86_PLAYBACK_AUTO_SKIP_RECAP, value).apply()
-    var v86DanmakuFontGlowSize3: Int
-        get() = prefs.getInt(KEY_V86_DANMAKU_FONT_GLOW_SIZE3, 0)
-        set(value) = prefs.edit().putInt(KEY_V86_DANMAKU_FONT_GLOW_SIZE3, value.coerceIn(0, 10)).apply()
-    var v86ColorLift2: Int
-        get() = prefs.getInt(KEY_V86_COLOR_LIFT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V86_COLOR_LIFT2, value.coerceIn(0, 100)).apply()
-    var v86VolumeSurround2: Int
-        get() = prefs.getInt(KEY_V86_VOLUME_SURROUND2, 0)
-        set(value) = prefs.edit().putInt(KEY_V86_VOLUME_SURROUND2, value.coerceIn(0, 5)).apply()
-    var v86CastSubtitleSync2: Int
-        get() = prefs.getInt(KEY_V86_CAST_SUBTITLE_SYNC2, 0)
-        set(value) = prefs.edit().putInt(KEY_V86_CAST_SUBTITLE_SYNC2, value.coerceIn(0, 10)).apply()
-    var v86GestureSwipeSpeed2: Int
-        get() = prefs.getInt(KEY_V86_GESTURE_SWIPE_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V86_GESTURE_SWIPE_SPEED2, value.coerceIn(0, 5)).apply()
-    var v86CacheMaxSize2: Int
-        get() = prefs.getInt(KEY_V86_CACHE_MAX_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V86_CACHE_MAX_SIZE2, value.coerceIn(0, 10)).apply()
-    var v86ProgressBarSensitivity2: Int
-        get() = prefs.getInt(KEY_V86_PROGRESS_BAR_SENSITIVITY2, 0)
-        set(value) = prefs.edit().putInt(KEY_V86_PROGRESS_BAR_SENSITIVITY2, value.coerceIn(0, 5)).apply()
-    var v86PlaybackSmartSpeed: Boolean
-        get() = prefs.getBoolean(KEY_V86_PLAYBACK_SMART_SPEED, false)
-        set(value) = prefs.edit().putBoolean(KEY_V86_PLAYBACK_SMART_SPEED, value).apply()
-    var v86DanmakuFontWeight4: Int
-        get() = prefs.getInt(KEY_V86_DANMAKU_FONT_WEIGHT4, 400)
-        set(value) = prefs.edit().putInt(KEY_V86_DANMAKU_FONT_WEIGHT4, value.coerceIn(100, 900)).apply()
-    var v86ColorGamma2: Int
-        get() = prefs.getInt(KEY_V86_COLOR_GAMMA2, 0)
-        set(value) = prefs.edit().putInt(KEY_V86_COLOR_GAMMA2, value.coerceIn(0, 5)).apply()
-    var v86VolumeBass2: Int
-        get() = prefs.getInt(KEY_V86_VOLUME_BASS2, 0)
-        set(value) = prefs.edit().putInt(KEY_V86_VOLUME_BASS2, value.coerceIn(0, 5)).apply()
-    var v86CastVideoQuality2: Int
-        get() = prefs.getInt(KEY_V86_CAST_VIDEO_QUALITY2, 0)
-        set(value) = prefs.edit().putInt(KEY_V86_CAST_VIDEO_QUALITY2, value.coerceIn(0, 5)).apply()
-    var v86GestureDoubleTapSpeed: Int
-        get() = prefs.getInt(KEY_V86_GESTURE_DOUBLE_TAP_SPEED, 0)
-        set(value) = prefs.edit().putInt(KEY_V86_GESTURE_DOUBLE_TAP_SPEED, value.coerceIn(0, 5)).apply()
-    var v86CachePrefetchSize2: Int
-        get() = prefs.getInt(KEY_V86_CACHE_PREFETCH_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V86_CACHE_PREFETCH_SIZE2, value.coerceIn(0, 5)).apply()
-
     // ===== v87.x =====
-    var v87PlaybackAutoSkipRecap: Boolean
-        get() = prefs.getBoolean(KEY_V87_PLAYBACK_AUTO_SKIP_RECAP, false)
-        set(value) = prefs.edit().putBoolean(KEY_V87_PLAYBACK_AUTO_SKIP_RECAP, value).apply()
-    var v87DanmakuFontGlowSize3: Int
-        get() = prefs.getInt(KEY_V87_DANMAKU_FONT_GLOW_SIZE3, 0)
-        set(value) = prefs.edit().putInt(KEY_V87_DANMAKU_FONT_GLOW_SIZE3, value.coerceIn(0, 10)).apply()
-    var v87ColorLift2: Int
-        get() = prefs.getInt(KEY_V87_COLOR_LIFT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V87_COLOR_LIFT2, value.coerceIn(0, 100)).apply()
-    var v87VolumeSurround2: Int
-        get() = prefs.getInt(KEY_V87_VOLUME_SURROUND2, 0)
-        set(value) = prefs.edit().putInt(KEY_V87_VOLUME_SURROUND2, value.coerceIn(0, 5)).apply()
-    var v87CastSubtitleSync2: Int
-        get() = prefs.getInt(KEY_V87_CAST_SUBTITLE_SYNC2, 0)
-        set(value) = prefs.edit().putInt(KEY_V87_CAST_SUBTITLE_SYNC2, value.coerceIn(0, 10)).apply()
-    var v87GestureSwipeSpeed2: Int
-        get() = prefs.getInt(KEY_V87_GESTURE_SWIPE_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V87_GESTURE_SWIPE_SPEED2, value.coerceIn(0, 5)).apply()
-    var v87CacheMaxSize2: Int
-        get() = prefs.getInt(KEY_V87_CACHE_MAX_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V87_CACHE_MAX_SIZE2, value.coerceIn(0, 10)).apply()
-    var v87ProgressBarSensitivity2: Int
-        get() = prefs.getInt(KEY_V87_PROGRESS_BAR_SENSITIVITY2, 0)
-        set(value) = prefs.edit().putInt(KEY_V87_PROGRESS_BAR_SENSITIVITY2, value.coerceIn(0, 5)).apply()
-    var v87PlaybackSmartSpeed: Boolean
-        get() = prefs.getBoolean(KEY_V87_PLAYBACK_SMART_SPEED, false)
-        set(value) = prefs.edit().putBoolean(KEY_V87_PLAYBACK_SMART_SPEED, value).apply()
-    var v87DanmakuFontWeight4: Int
-        get() = prefs.getInt(KEY_V87_DANMAKU_FONT_WEIGHT4, 400)
-        set(value) = prefs.edit().putInt(KEY_V87_DANMAKU_FONT_WEIGHT4, value.coerceIn(100, 900)).apply()
-    var v87ColorGamma2: Int
-        get() = prefs.getInt(KEY_V87_COLOR_GAMMA2, 0)
-        set(value) = prefs.edit().putInt(KEY_V87_COLOR_GAMMA2, value.coerceIn(0, 5)).apply()
-    var v87VolumeBass2: Int
-        get() = prefs.getInt(KEY_V87_VOLUME_BASS2, 0)
-        set(value) = prefs.edit().putInt(KEY_V87_VOLUME_BASS2, value.coerceIn(0, 5)).apply()
-    var v87CastVideoQuality2: Int
-        get() = prefs.getInt(KEY_V87_CAST_VIDEO_QUALITY2, 0)
-        set(value) = prefs.edit().putInt(KEY_V87_CAST_VIDEO_QUALITY2, value.coerceIn(0, 5)).apply()
-    var v87GestureDoubleTapSpeed: Int
-        get() = prefs.getInt(KEY_V87_GESTURE_DOUBLE_TAP_SPEED, 0)
-        set(value) = prefs.edit().putInt(KEY_V87_GESTURE_DOUBLE_TAP_SPEED, value.coerceIn(0, 5)).apply()
-    var v87CachePrefetchSize2: Int
-        get() = prefs.getInt(KEY_V87_CACHE_PREFETCH_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V87_CACHE_PREFETCH_SIZE2, value.coerceIn(0, 5)).apply()
-
     // ===== v88.x =====
-    var v88PlaybackAutoSkipRecap: Boolean
-        get() = prefs.getBoolean(KEY_V88_PLAYBACK_AUTO_SKIP_RECAP, false)
-        set(value) = prefs.edit().putBoolean(KEY_V88_PLAYBACK_AUTO_SKIP_RECAP, value).apply()
-    var v88DanmakuFontGlowSize3: Int
-        get() = prefs.getInt(KEY_V88_DANMAKU_FONT_GLOW_SIZE3, 0)
-        set(value) = prefs.edit().putInt(KEY_V88_DANMAKU_FONT_GLOW_SIZE3, value.coerceIn(0, 10)).apply()
-    var v88ColorLift2: Int
-        get() = prefs.getInt(KEY_V88_COLOR_LIFT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V88_COLOR_LIFT2, value.coerceIn(0, 100)).apply()
-    var v88VolumeSurround2: Int
-        get() = prefs.getInt(KEY_V88_VOLUME_SURROUND2, 0)
-        set(value) = prefs.edit().putInt(KEY_V88_VOLUME_SURROUND2, value.coerceIn(0, 5)).apply()
-    var v88CastSubtitleSync2: Int
-        get() = prefs.getInt(KEY_V88_CAST_SUBTITLE_SYNC2, 0)
-        set(value) = prefs.edit().putInt(KEY_V88_CAST_SUBTITLE_SYNC2, value.coerceIn(0, 10)).apply()
-    var v88GestureSwipeSpeed2: Int
-        get() = prefs.getInt(KEY_V88_GESTURE_SWIPE_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V88_GESTURE_SWIPE_SPEED2, value.coerceIn(0, 5)).apply()
-    var v88CacheMaxSize2: Int
-        get() = prefs.getInt(KEY_V88_CACHE_MAX_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V88_CACHE_MAX_SIZE2, value.coerceIn(0, 10)).apply()
-    var v88ProgressBarSensitivity2: Int
-        get() = prefs.getInt(KEY_V88_PROGRESS_BAR_SENSITIVITY2, 0)
-        set(value) = prefs.edit().putInt(KEY_V88_PROGRESS_BAR_SENSITIVITY2, value.coerceIn(0, 5)).apply()
-    var v88PlaybackSmartSpeed: Boolean
-        get() = prefs.getBoolean(KEY_V88_PLAYBACK_SMART_SPEED, false)
-        set(value) = prefs.edit().putBoolean(KEY_V88_PLAYBACK_SMART_SPEED, value).apply()
-    var v88DanmakuFontWeight4: Int
-        get() = prefs.getInt(KEY_V88_DANMAKU_FONT_WEIGHT4, 400)
-        set(value) = prefs.edit().putInt(KEY_V88_DANMAKU_FONT_WEIGHT4, value.coerceIn(100, 900)).apply()
-    var v88ColorGamma2: Int
-        get() = prefs.getInt(KEY_V88_COLOR_GAMMA2, 0)
-        set(value) = prefs.edit().putInt(KEY_V88_COLOR_GAMMA2, value.coerceIn(0, 5)).apply()
-    var v88VolumeBass2: Int
-        get() = prefs.getInt(KEY_V88_VOLUME_BASS2, 0)
-        set(value) = prefs.edit().putInt(KEY_V88_VOLUME_BASS2, value.coerceIn(0, 5)).apply()
-    var v88CastVideoQuality2: Int
-        get() = prefs.getInt(KEY_V88_CAST_VIDEO_QUALITY2, 0)
-        set(value) = prefs.edit().putInt(KEY_V88_CAST_VIDEO_QUALITY2, value.coerceIn(0, 5)).apply()
-    var v88GestureDoubleTapSpeed: Int
-        get() = prefs.getInt(KEY_V88_GESTURE_DOUBLE_TAP_SPEED, 0)
-        set(value) = prefs.edit().putInt(KEY_V88_GESTURE_DOUBLE_TAP_SPEED, value.coerceIn(0, 5)).apply()
-    var v88CachePrefetchSize2: Int
-        get() = prefs.getInt(KEY_V88_CACHE_PREFETCH_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V88_CACHE_PREFETCH_SIZE2, value.coerceIn(0, 5)).apply()
-
     // ===== v89.x =====
-    var v89PlaybackAutoSkipRecap: Boolean
-        get() = prefs.getBoolean(KEY_V89_PLAYBACK_AUTO_SKIP_RECAP, false)
-        set(value) = prefs.edit().putBoolean(KEY_V89_PLAYBACK_AUTO_SKIP_RECAP, value).apply()
-    var v89DanmakuFontGlowSize3: Int
-        get() = prefs.getInt(KEY_V89_DANMAKU_FONT_GLOW_SIZE3, 0)
-        set(value) = prefs.edit().putInt(KEY_V89_DANMAKU_FONT_GLOW_SIZE3, value.coerceIn(0, 10)).apply()
-    var v89ColorLift2: Int
-        get() = prefs.getInt(KEY_V89_COLOR_LIFT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V89_COLOR_LIFT2, value.coerceIn(0, 100)).apply()
-    var v89VolumeSurround2: Int
-        get() = prefs.getInt(KEY_V89_VOLUME_SURROUND2, 0)
-        set(value) = prefs.edit().putInt(KEY_V89_VOLUME_SURROUND2, value.coerceIn(0, 5)).apply()
-    var v89CastSubtitleSync2: Int
-        get() = prefs.getInt(KEY_V89_CAST_SUBTITLE_SYNC2, 0)
-        set(value) = prefs.edit().putInt(KEY_V89_CAST_SUBTITLE_SYNC2, value.coerceIn(0, 10)).apply()
-    var v89GestureSwipeSpeed2: Int
-        get() = prefs.getInt(KEY_V89_GESTURE_SWIPE_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V89_GESTURE_SWIPE_SPEED2, value.coerceIn(0, 5)).apply()
-    var v89CacheMaxSize2: Int
-        get() = prefs.getInt(KEY_V89_CACHE_MAX_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V89_CACHE_MAX_SIZE2, value.coerceIn(0, 10)).apply()
-    var v89ProgressBarSensitivity2: Int
-        get() = prefs.getInt(KEY_V89_PROGRESS_BAR_SENSITIVITY2, 0)
-        set(value) = prefs.edit().putInt(KEY_V89_PROGRESS_BAR_SENSITIVITY2, value.coerceIn(0, 5)).apply()
-    var v89PlaybackSmartSpeed: Boolean
-        get() = prefs.getBoolean(KEY_V89_PLAYBACK_SMART_SPEED, false)
-        set(value) = prefs.edit().putBoolean(KEY_V89_PLAYBACK_SMART_SPEED, value).apply()
-    var v89DanmakuFontWeight4: Int
-        get() = prefs.getInt(KEY_V89_DANMAKU_FONT_WEIGHT4, 400)
-        set(value) = prefs.edit().putInt(KEY_V89_DANMAKU_FONT_WEIGHT4, value.coerceIn(100, 900)).apply()
-    var v89ColorGamma2: Int
-        get() = prefs.getInt(KEY_V89_COLOR_GAMMA2, 0)
-        set(value) = prefs.edit().putInt(KEY_V89_COLOR_GAMMA2, value.coerceIn(0, 5)).apply()
-    var v89VolumeBass2: Int
-        get() = prefs.getInt(KEY_V89_VOLUME_BASS2, 0)
-        set(value) = prefs.edit().putInt(KEY_V89_VOLUME_BASS2, value.coerceIn(0, 5)).apply()
-    var v89CastVideoQuality2: Int
-        get() = prefs.getInt(KEY_V89_CAST_VIDEO_QUALITY2, 0)
-        set(value) = prefs.edit().putInt(KEY_V89_CAST_VIDEO_QUALITY2, value.coerceIn(0, 5)).apply()
-    var v89GestureDoubleTapSpeed: Int
-        get() = prefs.getInt(KEY_V89_GESTURE_DOUBLE_TAP_SPEED, 0)
-        set(value) = prefs.edit().putInt(KEY_V89_GESTURE_DOUBLE_TAP_SPEED, value.coerceIn(0, 5)).apply()
-    var v89CachePrefetchSize2: Int
-        get() = prefs.getInt(KEY_V89_CACHE_PREFETCH_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V89_CACHE_PREFETCH_SIZE2, value.coerceIn(0, 5)).apply()
-
     // ===== v90.x =====
-    var v90PlaybackAutoSkipRecap: Boolean
-        get() = prefs.getBoolean(KEY_V90_PLAYBACK_AUTO_SKIP_RECAP, false)
-        set(value) = prefs.edit().putBoolean(KEY_V90_PLAYBACK_AUTO_SKIP_RECAP, value).apply()
-    var v90DanmakuFontGlowSize3: Int
-        get() = prefs.getInt(KEY_V90_DANMAKU_FONT_GLOW_SIZE3, 0)
-        set(value) = prefs.edit().putInt(KEY_V90_DANMAKU_FONT_GLOW_SIZE3, value.coerceIn(0, 10)).apply()
-    var v90ColorLift2: Int
-        get() = prefs.getInt(KEY_V90_COLOR_LIFT2, 0)
-        set(value) = prefs.edit().putInt(KEY_V90_COLOR_LIFT2, value.coerceIn(0, 100)).apply()
-    var v90VolumeSurround2: Int
-        get() = prefs.getInt(KEY_V90_VOLUME_SURROUND2, 0)
-        set(value) = prefs.edit().putInt(KEY_V90_VOLUME_SURROUND2, value.coerceIn(0, 5)).apply()
-    var v90CastSubtitleSync2: Int
-        get() = prefs.getInt(KEY_V90_CAST_SUBTITLE_SYNC2, 0)
-        set(value) = prefs.edit().putInt(KEY_V90_CAST_SUBTITLE_SYNC2, value.coerceIn(0, 10)).apply()
-    var v90GestureSwipeSpeed2: Int
-        get() = prefs.getInt(KEY_V90_GESTURE_SWIPE_SPEED2, 0)
-        set(value) = prefs.edit().putInt(KEY_V90_GESTURE_SWIPE_SPEED2, value.coerceIn(0, 5)).apply()
-    var v90CacheMaxSize2: Int
-        get() = prefs.getInt(KEY_V90_CACHE_MAX_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V90_CACHE_MAX_SIZE2, value.coerceIn(0, 10)).apply()
-    var v90ProgressBarSensitivity2: Int
-        get() = prefs.getInt(KEY_V90_PROGRESS_BAR_SENSITIVITY2, 0)
-        set(value) = prefs.edit().putInt(KEY_V90_PROGRESS_BAR_SENSITIVITY2, value.coerceIn(0, 5)).apply()
-    var v90PlaybackSmartSpeed: Boolean
-        get() = prefs.getBoolean(KEY_V90_PLAYBACK_SMART_SPEED, false)
-        set(value) = prefs.edit().putBoolean(KEY_V90_PLAYBACK_SMART_SPEED, value).apply()
-    var v90DanmakuFontWeight4: Int
-        get() = prefs.getInt(KEY_V90_DANMAKU_FONT_WEIGHT4, 400)
-        set(value) = prefs.edit().putInt(KEY_V90_DANMAKU_FONT_WEIGHT4, value.coerceIn(100, 900)).apply()
-    var v90ColorGamma2: Int
-        get() = prefs.getInt(KEY_V90_COLOR_GAMMA2, 0)
-        set(value) = prefs.edit().putInt(KEY_V90_COLOR_GAMMA2, value.coerceIn(0, 5)).apply()
-    var v90VolumeBass2: Int
-        get() = prefs.getInt(KEY_V90_VOLUME_BASS2, 0)
-        set(value) = prefs.edit().putInt(KEY_V90_VOLUME_BASS2, value.coerceIn(0, 5)).apply()
-    var v90CastVideoQuality2: Int
-        get() = prefs.getInt(KEY_V90_CAST_VIDEO_QUALITY2, 0)
-        set(value) = prefs.edit().putInt(KEY_V90_CAST_VIDEO_QUALITY2, value.coerceIn(0, 5)).apply()
-    var v90GestureDoubleTapSpeed: Int
-        get() = prefs.getInt(KEY_V90_GESTURE_DOUBLE_TAP_SPEED, 0)
-        set(value) = prefs.edit().putInt(KEY_V90_GESTURE_DOUBLE_TAP_SPEED, value.coerceIn(0, 5)).apply()
-    var v90CachePrefetchSize2: Int
-        get() = prefs.getInt(KEY_V90_CACHE_PREFETCH_SIZE2, 0)
-        set(value) = prefs.edit().putInt(KEY_V90_CACHE_PREFETCH_SIZE2, value.coerceIn(0, 5)).apply()
-
     // v13.10: 暗角效果
     var vignetteIntensity: Int
         get() = prefs.getInt(KEY_VIGNETTE_INTENSITY, 0)
@@ -9265,7 +5439,6 @@ class AppPrefs(context: Context) {
         // v26.2: 弹幕字体边框颜色
         private const val KEY_V26_DANMAKU_BORDER_COLOR = "v26_danmaku_border_color"
         // v26.3: 视频画面对比度曲线
-        private const val KEY_V26_CONTRAST_CURVE_MODE = "v26_contrast_curve_mode"
         // v26.4: 弹幕发送确认震动
         private const val KEY_V26_DANMAKU_SEND_VIBRATION = "v26_danmaku_send_vibration"
         // v26.5: 播放器音量均衡
@@ -9275,7 +5448,6 @@ class AppPrefs(context: Context) {
         // v26.7: 弹幕显示透明度
         private const val KEY_V26_DANMAKU_DISPLAY_OPACITY = "v26_danmaku_display_opacity"
         // v26.8: 视频画面亮度曲线
-        private const val KEY_V26_BRIGHTNESS_CURVE_MODE = "v26_brightness_curve_mode"
         // v26.9: 弹幕发送历史记录数
         private const val KEY_V26_DANMAKU_HISTORY_COUNT = "v26_danmaku_history_count"
         // v26.10: 播放器进度条透明度
@@ -9287,7 +5459,6 @@ class AppPrefs(context: Context) {
         // v26.13: 播放器手势滑动功能
         private const val KEY_V26_SWIPE_FUNCTION = "v26_swipe_function"
         // v26.14: 视频画面饱和度曲线
-        private const val KEY_V26_SATURATION_CURVE_MODE = "v26_saturation_curve_mode"
         // v26.15: 弹幕显示字体样式
         private const val KEY_V26_DANMAKU_FONT_STYLE = "v26_danmaku_font_style"
         // ==================== v27.x 新功能 ====================
@@ -9306,7 +5477,6 @@ class AppPrefs(context: Context) {
         // v27.7: 弹幕显示位置对齐
         private const val KEY_V27_DANMAKU_POSITION_ALIGN = "v27_danmaku_position_align"
         // v27.8: 视频画面色调曲线
-        private const val KEY_V27_TONE_CURVE_MODE = "v27_tone_curve_mode"
         // v27.9: 弹幕发送历史记录大小
         private const val KEY_V27_DANMAKU_HISTORY_SIZE = "v27_danmaku_history_size"
         // v27.10: 播放器进度条高度
@@ -9316,11 +5486,9 @@ class AppPrefs(context: Context) {
         // v27.12: 弹幕字体阴影大小
         private const val KEY_V27_DANMAKU_SHADOW_SIZE = "v27_danmaku_shadow_size"
         // v27.13: 播放器手势双击功能
-        private const val KEY_V27_DOUBLE_TAP_FUNCTION = "v27_double_tap_function"
         // v27.14: 视频画面降噪强度
         private const val KEY_V27_DENOISE_STRENGTH = "v27_denoise_strength"
         // v27.15: 弹幕显示字体间距
-        private const val KEY_V27_DANMAKU_FONT_SPACING = "v27_danmaku_font_spacing"
         // v28.1: 视频播放列表自动跳过
         private const val KEY_V28_AUTO_SKIP = "v28_auto_skip"
         // v28.2: 弹幕字体背景圆角
@@ -9364,19 +5532,15 @@ class AppPrefs(context: Context) {
         // v29.6: 视频缓存清理阈值
         private const val KEY_V29_CACHE_CLEANUP_THRESHOLD = "v29_cache_cleanup_threshold"
         // v29.7: 弹幕显示位置偏移
-        private const val KEY_V29_DANMAKU_POSITION_OFFSET = "v29_danmaku_position_offset"
         // v29.8: 视频画面色彩色温
         private const val KEY_V29_COLOR_TEMPERATURE = "v29_color_temperature"
         // v29.9: 弹幕发送历史记录导出
         private const val KEY_V29_HISTORY_EXPORT = "v29_history_export"
         // v29.10: 播放器进度条样式
-        private const val KEY_V29_PROGRESS_BAR_STYLE = "v29_progress_bar_style"
         // v29.11: 视频投射画面质量
-        private const val KEY_V29_CAST_QUALITY = "v29_cast_quality"
         // v29.12: 弹幕字体背景透明度
         private const val KEY_V29_DANMAKU_BACKGROUND_OPACITY = "v29_danmaku_background_opacity"
         // v29.13: 播放器手势长按功能
-        private const val KEY_V29_LONG_PRESS_FUNCTION = "v29_long_press_function"
         // v29.14: 视频画面色彩伽马
         private const val KEY_V29_COLOR_GAMMA = "v29_color_gamma"
         // v29.15: 弹幕显示字体描边
@@ -9400,13 +5564,11 @@ class AppPrefs(context: Context) {
         // v30.9: 弹幕发送历史记录导入
         private const val KEY_V30_HISTORY_IMPORT = "v30_history_import"
         // v30.10: 播放器进度条颜色
-        private const val KEY_V30_PROGRESS_BAR_COLOR = "v30_progress_bar_color"
         // v30.11: 视频投射画面延迟
         private const val KEY_V30_CAST_LATENCY = "v30_cast_latency"
         // v30.12: 弹幕字体背景阴影
         private const val KEY_V30_DANMAKU_BACKGROUND_SHADOW = "v30_danmaku_background_shadow"
         // v30.13: 播放器手势滑动功能
-        private const val KEY_V30_SWIPE_FUNCTION = "v30_swipe_function"
         // v30.14: 视频画面色彩模糊
         private const val KEY_V30_COLOR_BLUR = "v30_color_blur"
         // v30.15: 弹幕显示字体发光
@@ -9432,7 +5594,6 @@ class AppPrefs(context: Context) {
         // v31.10: 播放器进度条动画
         private const val KEY_V31_PROGRESS_BAR_ANIMATION = "v31_progress_bar_animation"
         // v31.11: 视频投射画面缓冲策略
-        private const val KEY_V31_CAST_BUFFER_STRATEGY = "v31_cast_buffer_strategy"
         // v31.12: 弹幕字体背景渐变方向
         private const val KEY_V31_DANMAKU_BACKGROUND_GRADIENT_DIRECTION = "v31_danmaku_background_gradient_direction"
         // v31.13: 播放器手势滑动阈值
@@ -9486,7 +5647,6 @@ class AppPrefs(context: Context) {
         // v33.7: 弹幕显示位置对齐偏移曲线
         private const val KEY_V33_DANMAKU_POSITION_ALIGN_OFFSET_CURVE = "v33_danmaku_position_align_offset_curve"
         // v33.8: 视频画面色彩对比度曲线
-        private const val KEY_V33_COLOR_CONTRAST_CURVE = "v33_color_contrast_curve"
         // v33.9: 弹幕发送历史记录导入格式
         private const val KEY_V33_HISTORY_IMPORT_FORMAT = "v33_history_import_format"
         // v33.10: 播放器进度条颜色渐变方向
@@ -9498,39 +5658,24 @@ class AppPrefs(context: Context) {
         // v33.13: 播放器手势滑动方向
         private const val KEY_V33_SWIPE_DIRECTION = "v33_swipe_direction"
         // v33.14: 视频画面色彩饱和度曲线
-        private const val KEY_V33_COLOR_SATURATION_CURVE = "v33_color_saturation_curve"
         // v33.15: 弹幕显示字体发光颜色
-        private const val KEY_V33_DANMAKU_FONT_GLOW_COLOR = "v33_danmaku_font_glow_color"
         // v34.1: 视频播放列表自动循环模式
         private const val KEY_V34_AUTO_LOOP_MODE = "v34_auto_loop_mode"
         // v34.2: 弹幕字体背景渐变类型
         private const val KEY_V34_DANMAKU_BACKGROUND_GRADIENT_TYPE = "v34_danmaku_background_gradient_type"
         // v34.3: 视频画面色彩色调曲线
-        private const val KEY_V34_COLOR_HUE_CURVE = "v34_color_hue_curve"
         // v34.4: 弹幕发送确认震动强度曲线
-        private const val KEY_V34_VIBRATION_STRENGTH_CURVE = "v34_vibration_strength_curve"
         // v34.5: 播放器音量限制阈值曲线
-        private const val KEY_V34_VOLUME_LIMIT_THRESHOLD_CURVE = "v34_volume_limit_threshold_curve"
         // v34.6: 视频缓存清理策略曲线
-        private const val KEY_V34_CACHE_CLEANUP_STRATEGY_CURVE = "v34_cache_cleanup_strategy_curve"
         // v34.7: 弹幕显示位置对齐方式曲线
-        private const val KEY_V34_DANMAKU_POSITION_ALIGN_MODE_CURVE = "v34_danmaku_position_align_mode_curve"
         // v34.8: 视频画面色彩降噪曲线
-        private const val KEY_V34_COLOR_DENOISE_CURVE = "v34_color_denoise_curve"
         // v34.9: 弹幕发送历史记录导出格式
-        private const val KEY_V34_HISTORY_EXPORT_FORMAT = "v34_history_export_format"
         // v34.10: 播放器进度条颜色渐变
-        private const val KEY_V34_PROGRESS_BAR_COLOR_GRADIENT = "v34_progress_bar_color_gradient"
         // v34.11: 视频投射画面延迟策略
-        private const val KEY_V34_CAST_LATENCY_STRATEGY = "v34_cast_latency_strategy"
         // v34.12: 弹幕字体背景渐变透明度
-        private const val KEY_V34_DANMAKU_BACKGROUND_GRADIENT_OPACITY = "v34_danmaku_background_gradient_opacity"
         // v34.13: 播放器手势滑动速度
-        private const val KEY_V34_SWIPE_SPEED = "v34_swipe_speed"
         // v34.14: 视频画面色彩模糊曲线
-        private const val KEY_V34_COLOR_BLUR_CURVE = "v34_color_blur_curve"
         // v34.15: 弹幕显示字体发光强度
-        private const val KEY_V34_DANMAKU_FONT_GLOW_STRENGTH = "v34_danmaku_font_glow_strength"
         // v35.1: 视频播放列表自动跳过片头片尾
         private const val KEY_V35_AUTO_SKIP_INTRO_OUTRO = "v35_auto_skip_intro_outro"
         // v35.2: 弹幕字体背景渐变颜色自定义
@@ -9566,21 +5711,16 @@ class AppPrefs(context: Context) {
         // v36.2: 弹幕字体描边颜色
         private const val KEY_V36_DANMAKU_FONT_STROKE_COLOR = "v36_danmaku_font_stroke_color"
         // v36.3: 视频画面色彩色温
-        private const val KEY_V36_COLOR_TEMPERATURE = "v36_color_temperature"
         // v36.4: 弹幕发送确认震动模式
         private const val KEY_V36_VIBRATION_PATTERN = "v36_vibration_pattern"
         // v36.5: 播放器音量步进值
-        private const val KEY_V36_VOLUME_STEP = "v36_volume_step"
         // v36.6: 视频缓存大小限制
         private const val KEY_V36_CACHE_SIZE_LIMIT = "v36_cache_size_limit"
         // v36.7: 弹幕显示区域限制
         private const val KEY_V36_DANMAKU_DISPLAY_AREA = "v36_danmaku_display_area"
         // v36.8: 视频画面色彩伽马
-        private const val KEY_V36_COLOR_GAMMA = "v36_color_gamma"
         // v36.9: 弹幕发送历史记录搜索
-        private const val KEY_V36_HISTORY_SEARCH = "v36_history_search"
         // v36.10: 播放器进度条样式
-        private const val KEY_V36_PROGRESS_BAR_STYLE = "v36_progress_bar_style"
         // v36.11: 视频投射画面分辨率
         private const val KEY_V36_CAST_RESOLUTION = "v36_cast_resolution"
         // v36.12: 弹幕字体背景模糊
@@ -9590,17 +5730,13 @@ class AppPrefs(context: Context) {
         // v36.14: 视频画面色彩色调偏移
         private const val KEY_V36_COLOR_HUE_SHIFT = "v36_color_hue_shift"
         // v36.15: 弹幕显示字体发光颜色
-        private const val KEY_V36_DANMAKU_FONT_GLOW_COLOR = "v36_danmaku_font_glow_color"
         // v37.1: 视频播放列表随机播放
-        private const val KEY_V37_PLAYLIST_SHUFFLE = "v37_playlist_shuffle"
         // v37.2: 弹幕字体阴影颜色
-        private const val KEY_V37_DANMAKU_SHADOW_COLOR = "v37_danmaku_shadow_color"
         // v37.3: 视频画面色彩鲜艳度
         private const val KEY_V37_COLOR_VIVIDNESS = "v37_color_vividness"
         // v37.4: 弹幕发送确认震动衰减
         private const val KEY_V37_VIBRATION_DECAY = "v37_vibration_decay"
         // v37.5: 播放器音量淡入淡出
-        private const val KEY_V37_VOLUME_FADE = "v37_volume_fade"
         // v37.6: 视频缓存预加载
         private const val KEY_V37_CACHE_PRELOAD = "v37_cache_preload"
         // v37.7: 弹幕显示滚动速度
@@ -9608,13 +5744,10 @@ class AppPrefs(context: Context) {
         // v37.8: 视频画面色彩色阶
         private const val KEY_V37_COLOR_TONEMAP = "v37_color_tonemap"
         // v37.9: 弹幕发送历史记录导出
-        private const val KEY_V37_HISTORY_EXPORT = "v37_history_export"
         // v37.10: 播放器进度条高度
-        private const val KEY_V37_PROGRESS_BAR_HEIGHT = "v37_progress_bar_height"
         // v37.11: 视频投射画面码率
         private const val KEY_V37_CAST_BITRATE = "v37_cast_bitrate"
         // v37.12: 弹幕字体背景边框颜色
-        private const val KEY_V37_DANMAKU_BORDER_COLOR = "v37_danmaku_border_color"
         // v37.13: 播放器手势双击功能
         private const val KEY_V37_GESTURE_DOUBLE_TAP = "v37_gesture_double_tap"
         // v37.14: 视频画面色彩色调饱和度
@@ -9622,33 +5755,25 @@ class AppPrefs(context: Context) {
         // v37.15: 弹幕显示字体发光强度
         private const val KEY_V37_DANMAKU_GLOW_INTENSITY = "v37_danmaku_glow_intensity"
         // v38.1: 视频播放列表循环模式
-        private const val KEY_V38_PLAYLIST_LOOP_MODE = "v38_playlist_loop_mode"
         // v38.2: 弹幕字体背景圆角
         private const val KEY_V38_DANMAKU_BACKGROUND_RADIUS = "v38_danmaku_background_radius"
         // v38.3: 视频画面色彩对比度曲线
-        private const val KEY_V38_COLOR_CONTRAST_CURVE = "v38_color_contrast_curve"
         // v38.4: 弹幕发送确认震动频率
         private const val KEY_V38_VIBRATION_FREQUENCY = "v38_vibration_frequency"
         // v38.5: 播放器音量限制模式
-        private const val KEY_V38_VOLUME_LIMIT_MODE = "v38_volume_limit_mode"
         // v38.6: 视频缓存清理策略
-        private const val KEY_V38_CACHE_CLEANUP_STRATEGY = "v38_cache_cleanup_strategy"
         // v38.7: 弹幕显示位置偏移X
         private const val KEY_V38_DANMAKU_OFFSET_X = "v38_danmaku_offset_x"
         // v38.8: 视频画面色彩亮度曲线
-        private const val KEY_V38_COLOR_BRIGHTNESS_CURVE = "v38_color_brightness_curve"
         // v38.9: 弹幕发送历史记录搜索模式
         private const val KEY_V38_HISTORY_SEARCH_MODE = "v38_history_search_mode"
         // v38.10: 播放器进度条动画
-        private const val KEY_V38_PROGRESS_BAR_ANIMATION = "v38_progress_bar_animation"
         // v38.11: 视频投射画面延迟
-        private const val KEY_V38_CAST_LATENCY = "v38_cast_latency"
         // v38.12: 弹幕字体背景渐变方向
         private const val KEY_V38_DANMAKU_GRADIENT_DIRECTION = "v38_danmaku_gradient_direction"
         // v38.13: 播放器手势滑动灵敏度
         private const val KEY_V38_GESTURE_SWIPE_SENSITIVITY = "v38_gesture_swipe_sensitivity"
         // v38.14: 视频画面色彩饱和度曲线
-        private const val KEY_V38_COLOR_SATURATION_CURVE = "v38_color_saturation_curve"
         // v38.15: 弹幕显示字体描边宽度
         private const val KEY_V38_DANMAKU_FONT_STROKE_WIDTH = "v38_danmaku_font_stroke_width"
         // v39.1: 视频播放列表自动跳过
@@ -9656,29 +5781,23 @@ class AppPrefs(context: Context) {
         // v39.2: 弹幕字体背景透明度曲线
         private const val KEY_V39_DANMAKU_BACKGROUND_ALPHA_CURVE = "v39_danmaku_background_alpha_curve"
         // v39.3: 视频画面色彩锐化强度
-        private const val KEY_V39_COLOR_SHARPEN = "v39_color_sharpen"
         // v39.4: 弹幕发送确认震动模式曲线
         private const val KEY_V39_VIBRATION_PATTERN_CURVE = "v39_vibration_pattern_curve"
         // v39.5: 播放器音量平衡
-        private const val KEY_V39_VOLUME_BALANCE = "v39_volume_balance"
         // v39.6: 视频缓存预加载大小
-        private const val KEY_V39_CACHE_PRELOAD_SIZE = "v39_cache_preload_size"
         // v39.7: 弹幕显示位置偏移Y
         private const val KEY_V39_DANMAKU_OFFSET_Y = "v39_danmaku_offset_y"
         // v39.8: 视频画面色彩降噪强度
-        private const val KEY_V39_COLOR_DENOISE = "v39_color_denoise"
         // v39.9: 弹幕发送历史记录自动清理
         private const val KEY_V39_HISTORY_AUTO_CLEANUP = "v39_history_auto_cleanup"
         // v39.10: 播放器进度条颜色渐变
         private const val KEY_V39_PROGRESS_BAR_GRADIENT = "v39_progress_bar_gradient"
         // v39.11: 视频投射画面缓冲策略
-        private const val KEY_V39_CAST_BUFFER_STRATEGY = "v39_cast_buffer_strategy"
         // v39.12: 弹幕字体背景渐变速度
         private const val KEY_V39_DANMAKU_GRADIENT_SPEED = "v39_danmaku_gradient_speed"
         // v39.13: 播放器手势长按功能
         private const val KEY_V39_GESTURE_LONG_PRESS = "v39_gesture_long_press"
         // v39.14: 视频画面色彩模糊强度
-        private const val KEY_V39_COLOR_BLUR = "v39_color_blur"
         // v39.15: 弹幕显示字体发光模式
         private const val KEY_V39_DANMAKU_GLOW_MODE = "v39_danmaku_glow_mode"
         // v40.1: 视频播放列表智能排序
@@ -9686,7 +5805,6 @@ class AppPrefs(context: Context) {
         // v40.2: 弹幕字体背景渐变颜色
         private const val KEY_V40_DANMAKU_GRADIENT_COLOR = "v40_danmaku_gradient_color"
         // v40.3: 视频画面色彩色调曲线
-        private const val KEY_V40_COLOR_HUE_CURVE = "v40_color_hue_curve"
         // v40.4: 弹幕发送确认震动强度曲线
         private const val KEY_V40_VIBRATION_INTENSITY_CURVE = "v40_vibration_intensity_curve"
         // v40.5: 播放器音量限制阈值曲线
@@ -9696,23 +5814,17 @@ class AppPrefs(context: Context) {
         // v40.7: 弹幕显示位置对齐方式曲线
         private const val KEY_V40_DANMAKU_ALIGN_CURVE = "v40_danmaku_align_curve"
         // v40.8: 视频画面色彩降噪曲线
-        private const val KEY_V40_COLOR_DENOISE_CURVE = "v40_color_denoise_curve"
         // v40.9: 弹幕发送历史记录导出格式
-        private const val KEY_V40_HISTORY_EXPORT_FORMAT = "v40_history_export_format"
         // v40.10: 播放器进度条颜色渐变方向
         private const val KEY_V40_PROGRESS_BAR_GRADIENT_DIRECTION = "v40_progress_bar_gradient_direction"
         // v40.11: 视频投射画面延迟策略
-        private const val KEY_V40_CAST_LATENCY_STRATEGY = "v40_cast_latency_strategy"
         // v40.12: 弹幕字体背景渐变透明度
         private const val KEY_V40_DANMAKU_GRADIENT_ALPHA = "v40_danmaku_gradient_alpha"
         // v40.13: 播放器手势滑动速度
         private const val KEY_V40_GESTURE_SWIPE_SPEED = "v40_gesture_swipe_speed"
         // v40.14: 视频画面色彩模糊曲线
-        private const val KEY_V40_COLOR_BLUR_CURVE = "v40_color_blur_curve"
         // v40.15: 弹幕显示字体发光强度
-        private const val KEY_V40_DANMAKU_GLOW_INTENSITY = "v40_danmaku_glow_intensity"
         // ===== v41.x KEY =====
-        private const val KEY_V41_PLAYBACK_SPEED_MEMORY = "v41_playback_speed_memory"
         private const val KEY_V41_DANMAKU_VIBRATION_MODE = "v41_danmaku_vibration_mode"
         private const val KEY_V41_COLOR_AUTO_ADJUST = "v41_color_auto_adjust"
         private const val KEY_V41_VOLUME_BOOST_MODE = "v41_volume_boost_mode"
@@ -9733,7 +5845,6 @@ class AppPrefs(context: Context) {
         private const val KEY_V42_GESTURE_VIBRATION = "v42_gesture_vibration"
         private const val KEY_V42_DANMAKU_HISTORY_STATS = "v42_danmaku_history_stats"
         private const val KEY_V42_CACHE_AUTO_SIZE = "v42_cache_auto_size"
-        private const val KEY_V42_PROGRESS_BAR_COLOR = "v42_progress_bar_color"
         private const val KEY_V42_DANMAKU_GRADIENT_ENHANCED = "v42_danmaku_gradient_enhanced"
         private const val KEY_V42_CAST_COLOR_ENHANCE = "v42_cast_color_enhance"
         private const val KEY_V42_VOLUME_STEP_CUSTOM = "v42_volume_step_custom"
@@ -9741,7 +5852,6 @@ class AppPrefs(context: Context) {
         private const val KEY_V42_COLOR_AUTO_SATURATION = "v42_color_auto_saturation"
         private const val KEY_V42_GESTURE_LONG_PRESS_VIBRATION = "v42_gesture_long_press_vibration"
         private const val KEY_V42_DANMAKU_VIBRATION_DURATION = "v42_danmaku_vibration_duration"
-        private const val KEY_V42_CACHE_PRELOAD_STRATEGY = "v42_cache_preload_strategy"
         private const val KEY_V42_PROGRESS_BAR_BUFFER_COLOR = "v42_progress_bar_buffer_color"
         // ===== v43.x KEY =====
         private const val KEY_V43_COLOR_AUTO_HUE = "v43_color_auto_hue"
@@ -9802,14 +5912,11 @@ class AppPrefs(context: Context) {
         private const val KEY_V46_DANMAKU_ROW_SPACING = "v46_danmaku_row_spacing"
         private const val KEY_V46_CACHE_PREFETCH_ON_WIFI = "v46_cache_prefetch_on_wifi"
         private const val KEY_V46_PROGRESS_BAR_THUMB_SIZE = "v46_progress_bar_thumb_size"
-        private const val KEY_V46_DANMAKU_SEND_CONFIRM_DIALOG = "v46_danmaku_send_confirm_dialog"
         private const val KEY_V46_COLOR_WHITE_BALANCE = "v46_color_white_balance"
-        private const val KEY_V46_VOLUME_LIMIT_THRESHOLD = "v46_volume_limit_threshold"
         private const val KEY_V46_DANMAKU_BG_PADDING = "v46_danmaku_bg_padding"
         private const val KEY_V46_CAST_VIDEO_CODEC = "v46_cast_video_codec"
         // ===== v47.x KEY =====
         private const val KEY_V47_PLAYBACK_RESUME_PROMPT = "v47_playback_resume_prompt"
-        private const val KEY_V47_DANMAKU_FONT_SPACING = "v47_danmaku_font_spacing"
         private const val KEY_V47_COLOR_EXPOSURE_COMPENSATION = "v47_color_exposure_compensation"
         private const val KEY_V47_VOLUME_LOUDNESS_ENHANCER = "v47_volume_loudness_enhancer"
         private const val KEY_V47_DANMAKU_STROKE_BLUR = "v47_danmaku_stroke_blur"
@@ -9832,7 +5939,6 @@ class AppPrefs(context: Context) {
         private const val KEY_V48_CAST_RESOLUTION_AUTO = "v48_cast_resolution_auto"
         private const val KEY_V48_GESTURE_TAP_FEEDBACK = "v48_gesture_tap_feedback"
         private const val KEY_V48_DANMAKU_FILTER_REGEX = "v48_danmaku_filter_regex"
-        private const val KEY_V48_CACHE_CLEANUP_INTERVAL = "v48_cache_cleanup_interval"
         private const val KEY_V48_PROGRESS_BAR_TOUCH_AREA = "v48_progress_bar_touch_area"
         private const val KEY_V48_DANMAKU_FONT_SIZE_ADAPTIVE = "v48_danmaku_font_size_adaptive"
         private const val KEY_V48_COLOR_WHITE_LEVEL = "v48_color_white_level"
@@ -9873,26 +5979,19 @@ class AppPrefs(context: Context) {
         private const val KEY_V50_CAST_AUTO_DISCOVER = "v50_cast_auto_discover"
 
         // ===== v51.x KEY =====
-        private const val KEY_V51_PLAYBACK_AUTO_SKIP_INTRO = "v51_playback_auto_skip_intro"
         private const val KEY_V51_DANMAKU_FONT_OUTLINE_WIDTH = "v51_danmaku_font_outline_width"
         private const val KEY_V51_COLOR_SHADOW_ADJUST = "v51_color_shadow_adjust"
         private const val KEY_V51_VOLUME_LOUDNESS_NORMALIZE = "v51_volume_loudness_normalize"
         private const val KEY_V51_DANMAKU_SEND_BG_STYLE = "v51_danmaku_send_bg_style"
-        private const val KEY_V51_CAST_VIDEO_CODEC = "v51_cast_video_codec"
         private const val KEY_V51_GESTURE_DOUBLE_TAP_REWIND = "v51_gesture_double_tap_rewind"
         private const val KEY_V51_DANMAKU_FILTER_LENGTH = "v51_danmaku_filter_length"
-        private const val KEY_V51_CACHE_MAX_SIZE_MB = "v51_cache_max_size_mb"
         private const val KEY_V51_PROGRESS_BAR_SCRUB_SPEED = "v51_progress_bar_scrub_speed"
-        private const val KEY_V51_DANMAKU_FONT_SPACING = "v51_danmaku_font_spacing"
         private const val KEY_V51_COLOR_GAMMA_CORRECTION = "v51_color_gamma_correction"
         private const val KEY_V51_VOLUME_BASS_REDUCE = "v51_volume_bass_reduce"
-        private const val KEY_V51_DANMAKU_BG_BORDER_COLOR = "v51_danmaku_bg_border_color"
         private const val KEY_V51_CAST_SUBTITLE_SYNC = "v51_cast_subtitle_sync"
 
         // ===== v52.x KEY =====
         private const val KEY_V52_PLAYBACK_AUTO_SKIP_FILLER = "v52_playback_auto_skip_filler"
-        private const val KEY_V52_DANMAKU_FONT_LINE_HEIGHT = "v52_danmaku_font_line_height"
-        private const val KEY_V52_COLOR_TEMPERATURE = "v52_color_temperature"
         private const val KEY_V52_VOLUME_CHANNEL_SWAP = "v52_volume_channel_swap"
         private const val KEY_V52_DANMAKU_SEND_ANIM_STYLE = "v52_danmaku_send_anim_style"
         private const val KEY_V52_CAST_RESOLUTION_ENHANCE = "v52_cast_resolution_enhance"
@@ -9912,13 +6011,11 @@ class AppPrefs(context: Context) {
         private const val KEY_V53_COLOR_VIGNETTE_CUSTOM = "v53_color_vignette_custom"
         private const val KEY_V53_VOLUME_FADE_OUT_MS = "v53_volume_fade_out_ms"
         private const val KEY_V53_DANMAKU_SEND_TIMESTAMP = "v53_danmaku_send_timestamp"
-        private const val KEY_V53_CAST_AUDIO_CODEC = "v53_cast_audio_codec"
         private const val KEY_V53_GESTURE_VOLUME_STEP = "v53_gesture_volume_step"
         private const val KEY_V53_DANMAKU_FILTER_TYPE = "v53_danmaku_filter_type"
         private const val KEY_V53_CACHE_CLEANUP_POLICY = "v53_cache_cleanup_policy"
         private const val KEY_V53_PROGRESS_BAR_SNAP = "v53_progress_bar_snap"
         private const val KEY_V53_DANMAKU_FONT_STRIKE = "v53_danmaku_font_strike"
-        private const val KEY_V53_COLOR_BLACK_LEVEL = "v53_color_black_level"
         private const val KEY_V53_VOLUME_BALANCE_CUSTOM = "v53_volume_balance_custom"
         private const val KEY_V53_DANMAKU_BG_ROUNDED = "v53_danmaku_bg_rounded"
         private const val KEY_V53_CAST_AUTO_PAUSE = "v53_cast_auto_pause"
@@ -9926,7 +6023,6 @@ class AppPrefs(context: Context) {
         // ===== v54.x KEY =====
         private const val KEY_V54_PLAYBACK_RESUME_POSITION = "v54_playback_resume_position"
         private const val KEY_V54_DANMAKU_FONT_SIZE_RANGE = "v54_danmaku_font_size_range"
-        private const val KEY_V54_COLOR_BRIGHTNESS = "v54_color_brightness"
         private const val KEY_V54_VOLUME_SURROUND_MODE = "v54_volume_surround_mode"
         private const val KEY_V54_DANMAKU_SEND_DRAFT = "v54_danmaku_send_draft"
         private const val KEY_V54_CAST_SCREEN_MIRROR = "v54_cast_screen_mirror"
@@ -9935,7 +6031,6 @@ class AppPrefs(context: Context) {
         private const val KEY_V54_CACHE_WAKEUP_PREFETCH = "v54_cache_wakeup_prefetch"
         private const val KEY_V54_PROGRESS_BAR_HAPTIC = "v54_progress_bar_haptic"
         private const val KEY_V54_DANMAKU_FONT_UNDERLINE = "v54_danmaku_font_underline"
-        private const val KEY_V54_COLOR_CONTRAST = "v54_color_contrast"
         private const val KEY_V54_VOLUME_AUTO_GAIN = "v54_volume_auto_gain"
         private const val KEY_V54_DANMAKU_BG_GRADIENT_DIRECTION = "v54_danmaku_bg_gradient_direction"
         private const val KEY_V54_CAST_SUBTITLE_LANG = "v54_cast_subtitle_lang"
@@ -9948,13 +6043,11 @@ class AppPrefs(context: Context) {
         private const val KEY_V55_DANMAKU_SEND_QUEUE = "v55_danmaku_send_queue"
         private const val KEY_V55_CAST_BANDWIDTH_LIMIT = "v55_cast_bandwidth_limit"
         private const val KEY_V55_GESTURE_LOCK_SCREEN = "v55_gesture_lock_screen"
-        private const val KEY_V55_DANMAKU_FILTER_REGEX = "v55_danmaku_filter_regex"
         private const val KEY_V55_CACHE_NETWORK_POLICY = "v55_cache_network_policy"
         private const val KEY_V55_PROGRESS_BAR_DOUBLE_TAP_ACTION = "v55_progress_bar_double_tap_action"
         private const val KEY_V55_DANMAKU_FONT_WEIGHT_CUSTOM = "v55_danmaku_font_weight_custom"
         private const val KEY_V55_COLOR_TINT_CUSTOM = "v55_color_tint_custom"
         private const val KEY_V55_VOLUME_COMPRESSOR = "v55_volume_compressor"
-        private const val KEY_V55_DANMAKU_BG_PADDING = "v55_danmaku_bg_padding"
         private const val KEY_V55_CAST_AUTO_QUALITY = "v55_cast_auto_quality"
 
         private const val KEY_V56_PLAYBACK_SKIP_SILENCE = "v56_playback_skip_silence"
@@ -9968,7 +6061,6 @@ class AppPrefs(context: Context) {
         private const val KEY_V56_CACHE_COMPRESS_ENABLED = "v56_cache_compress_enabled"
         private const val KEY_V56_PROGRESS_BAR_CHAPTERS_COLOR = "v56_progress_bar_chapters_color"
         private const val KEY_V56_DANMAKU_FONT_LETTER_SPACING2 = "v56_danmaku_font_letter_spacing2"
-        private const val KEY_V56_COLOR_SATURATION_CURVE = "v56_color_saturation_curve"
         private const val KEY_V56_VOLUME_PRE_AMP = "v56_volume_pre_amp"
         private const val KEY_V56_DANMAKU_BG_GRADIENT_OPACITY = "v56_danmaku_bg_gradient_opacity"
         private const val KEY_V56_CAST_SUBTITLE_STYLE = "v56_cast_subtitle_style"
@@ -9981,7 +6073,6 @@ class AppPrefs(context: Context) {
         private const val KEY_V57_GESTURE_DOUBLE_TAP_ACTION2 = "v57_gesture_double_tap_action2"
         private const val KEY_V57_DANMAKU_FILTER_KEYWORDS = "v57_danmaku_filter_keywords"
         private const val KEY_V57_CACHE_ENCRYPT_ENABLED = "v57_cache_encrypt_enabled"
-        private const val KEY_V57_PROGRESS_BAR_BUFFER_COLOR = "v57_progress_bar_buffer_color"
         private const val KEY_V57_DANMAKU_FONT_BACKGROUND2 = "v57_danmaku_font_background2"
         private const val KEY_V57_COLOR_HIGHLIGHT_ROLL = "v57_color_highlight_roll"
         private const val KEY_V57_VOLUME_MAX_BOOST = "v57_volume_max_boost"
@@ -10041,7 +6132,6 @@ class AppPrefs(context: Context) {
         private const val KEY_V61_GESTURE_EDGE_ACTION = "v61_gesture_edge_action"
         private const val KEY_V61_DANMAKU_FILTER_SENDER = "v61_danmaku_filter_sender"
         private const val KEY_V61_CACHE_AUTO_CLEAR_ON_LOW = "v61_cache_auto_clear_on_low"
-        private const val KEY_V61_PROGRESS_BAR_ANIMATION = "v61_progress_bar_animation"
         private const val KEY_V61_DANMAKU_FONT_HIGHLIGHT_COLOR = "v61_danmaku_font_highlight_color"
         private const val KEY_V61_COLOR_WHITE_GAMMA = "v61_color_white_gamma"
         private const val KEY_V61_VOLUME_COMPRESSOR_ATTACK = "v61_volume_compressor_attack"
@@ -10064,7 +6154,6 @@ class AppPrefs(context: Context) {
         private const val KEY_V62_CAST_SUBTITLE_BG_COLOR = "v62_cast_subtitle_bg_color"
         private const val KEY_V63_PLAYBACK_AUTO_CHAPTER = "v63_playback_auto_chapter"
         private const val KEY_V63_DANMAKU_FONT_LINE_SPACING2 = "v63_danmaku_font_line_spacing2"
-        private const val KEY_V63_COLOR_CONTRAST_CURVE = "v63_color_contrast_curve"
         private const val KEY_V63_VOLUME_NORMALIZER2 = "v63_volume_normalizer2"
         private const val KEY_V63_DANMAKU_SEND_BG_BLUR = "v63_danmaku_send_bg_blur"
         private const val KEY_V63_CAST_AUTO_SUBTITLE = "v63_cast_auto_subtitle"
@@ -10073,7 +6162,6 @@ class AppPrefs(context: Context) {
         private const val KEY_V63_CACHE_WAKEUP_ON_START = "v63_cache_wakeup_on_start"
         private const val KEY_V63_PROGRESS_BAR_TICK_COLOR = "v63_progress_bar_tick_color"
         private const val KEY_V63_DANMAKU_FONT_WEIGHT_CUSTOM2 = "v63_danmaku_font_weight_custom2"
-        private const val KEY_V63_COLOR_BRIGHTNESS_CURVE = "v63_color_brightness_curve"
         private const val KEY_V63_VOLUME_BASS_LPF = "v63_volume_bass_lpf"
         private const val KEY_V63_DANMAKU_BG_SHADOW_OFFSET = "v63_danmaku_bg_shadow_offset"
         private const val KEY_V63_CAST_SUBTITLE_OUTLINE = "v63_cast_subtitle_outline"
@@ -10094,7 +6182,6 @@ class AppPrefs(context: Context) {
         private const val KEY_V64_CAST_SUBTITLE_DELAY = "v64_cast_subtitle_delay"
         private const val KEY_V65_PLAYBACK_AUTO_SKIP_RECAP = "v65_playback_auto_skip_recap"
         private const val KEY_V65_DANMAKU_FONT_STRIKE2 = "v65_danmaku_font_strike2"
-        private const val KEY_V65_COLOR_HUE_CURVE = "v65_color_hue_curve"
         private const val KEY_V65_VOLUME_BASS_ENHANCE = "v65_volume_bass_enhance"
         private const val KEY_V65_DANMAKU_SEND_ANIM_DURATION = "v65_danmaku_send_anim_duration"
         private const val KEY_V65_CAST_AUTO_RECONNECT2 = "v65_cast_auto_reconnect2"
@@ -10185,8 +6272,6 @@ class AppPrefs(context: Context) {
 
         
 
-
-
         // ===== v121.x KEY =====
         private const val KEY_V121_PLAYBACK_SKIP_INTRO2 = "v121_playback_skip_intro2"
         private const val KEY_V121_DANMAKU_SPEED2 = "v121_danmaku_speed2"
@@ -10205,497 +6290,62 @@ class AppPrefs(context: Context) {
         private const val KEY_V121_CACHE_MEMORY_SIZE2 = "v121_cache_memory_size2"
 
         // ===== v122.x KEY =====
-        private const val KEY_V122_PLAYBACK_SKIP_INTRO2 = "v122_playback_skip_intro2"
-        private const val KEY_V122_DANMAKU_SPEED2 = "v122_danmaku_speed2"
-        private const val KEY_V122_COLOR_FADE2 = "v122_color_fade2"
-        private const val KEY_V122_VOLUME_FADE_IN2 = "v122_volume_fade_in2"
-        private const val KEY_V122_CAST_BITRATE2 = "v122_cast_bitrate2"
-        private const val KEY_V122_GESTURE_TAP_ZONE2 = "v122_gesture_tap_zone2"
-        private const val KEY_V122_CACHE_COMP_LEVEL3 = "v122_cache_comp_level3"
-        private const val KEY_V122_PROGRESS_BAR_FADE2 = "v122_progress_bar_fade2"
-        private const val KEY_V122_PLAYBACK_AUTO_PAUSE2 = "v122_playback_auto_pause2"
-        private const val KEY_V122_DANMAKU_SCROLL_SPEED2 = "v122_danmaku_scroll_speed2"
-        private const val KEY_V122_COLOR_TINT2 = "v122_color_tint2"
-        private const val KEY_V122_VOLUME_FADE_OUT2 = "v122_volume_fade_out2"
-        private const val KEY_V122_CAST_CODEC2 = "v122_cast_codec2"
-        private const val KEY_V122_GESTURE_DOUBLE_SWIPE2 = "v122_gesture_double_swipe2"
-        private const val KEY_V122_CACHE_MEMORY_SIZE2 = "v122_cache_memory_size2"
 
         // ===== v123.x KEY =====
-        private const val KEY_V123_PLAYBACK_SKIP_INTRO2 = "v123_playback_skip_intro2"
-        private const val KEY_V123_DANMAKU_SPEED2 = "v123_danmaku_speed2"
-        private const val KEY_V123_COLOR_FADE2 = "v123_color_fade2"
-        private const val KEY_V123_VOLUME_FADE_IN2 = "v123_volume_fade_in2"
-        private const val KEY_V123_CAST_BITRATE2 = "v123_cast_bitrate2"
-        private const val KEY_V123_GESTURE_TAP_ZONE2 = "v123_gesture_tap_zone2"
-        private const val KEY_V123_CACHE_COMP_LEVEL3 = "v123_cache_comp_level3"
-        private const val KEY_V123_PROGRESS_BAR_FADE2 = "v123_progress_bar_fade2"
-        private const val KEY_V123_PLAYBACK_AUTO_PAUSE2 = "v123_playback_auto_pause2"
-        private const val KEY_V123_DANMAKU_SCROLL_SPEED2 = "v123_danmaku_scroll_speed2"
-        private const val KEY_V123_COLOR_TINT2 = "v123_color_tint2"
-        private const val KEY_V123_VOLUME_FADE_OUT2 = "v123_volume_fade_out2"
-        private const val KEY_V123_CAST_CODEC2 = "v123_cast_codec2"
-        private const val KEY_V123_GESTURE_DOUBLE_SWIPE2 = "v123_gesture_double_swipe2"
-        private const val KEY_V123_CACHE_MEMORY_SIZE2 = "v123_cache_memory_size2"
 
         // ===== v124.x KEY =====
-        private const val KEY_V124_PLAYBACK_SKIP_INTRO2 = "v124_playback_skip_intro2"
-        private const val KEY_V124_DANMAKU_SPEED2 = "v124_danmaku_speed2"
-        private const val KEY_V124_COLOR_FADE2 = "v124_color_fade2"
-        private const val KEY_V124_VOLUME_FADE_IN2 = "v124_volume_fade_in2"
-        private const val KEY_V124_CAST_BITRATE2 = "v124_cast_bitrate2"
-        private const val KEY_V124_GESTURE_TAP_ZONE2 = "v124_gesture_tap_zone2"
-        private const val KEY_V124_CACHE_COMP_LEVEL3 = "v124_cache_comp_level3"
-        private const val KEY_V124_PROGRESS_BAR_FADE2 = "v124_progress_bar_fade2"
-        private const val KEY_V124_PLAYBACK_AUTO_PAUSE2 = "v124_playback_auto_pause2"
-        private const val KEY_V124_DANMAKU_SCROLL_SPEED2 = "v124_danmaku_scroll_speed2"
-        private const val KEY_V124_COLOR_TINT2 = "v124_color_tint2"
-        private const val KEY_V124_VOLUME_FADE_OUT2 = "v124_volume_fade_out2"
-        private const val KEY_V124_CAST_CODEC2 = "v124_cast_codec2"
-        private const val KEY_V124_GESTURE_DOUBLE_SWIPE2 = "v124_gesture_double_swipe2"
-        private const val KEY_V124_CACHE_MEMORY_SIZE2 = "v124_cache_memory_size2"
 
         // ===== v125.x KEY =====
-        private const val KEY_V125_PLAYBACK_SKIP_INTRO2 = "v125_playback_skip_intro2"
-        private const val KEY_V125_DANMAKU_SPEED2 = "v125_danmaku_speed2"
-        private const val KEY_V125_COLOR_FADE2 = "v125_color_fade2"
-        private const val KEY_V125_VOLUME_FADE_IN2 = "v125_volume_fade_in2"
-        private const val KEY_V125_CAST_BITRATE2 = "v125_cast_bitrate2"
-        private const val KEY_V125_GESTURE_TAP_ZONE2 = "v125_gesture_tap_zone2"
-        private const val KEY_V125_CACHE_COMP_LEVEL3 = "v125_cache_comp_level3"
-        private const val KEY_V125_PROGRESS_BAR_FADE2 = "v125_progress_bar_fade2"
-        private const val KEY_V125_PLAYBACK_AUTO_PAUSE2 = "v125_playback_auto_pause2"
-        private const val KEY_V125_DANMAKU_SCROLL_SPEED2 = "v125_danmaku_scroll_speed2"
-        private const val KEY_V125_COLOR_TINT2 = "v125_color_tint2"
-        private const val KEY_V125_VOLUME_FADE_OUT2 = "v125_volume_fade_out2"
-        private const val KEY_V125_CAST_CODEC2 = "v125_cast_codec2"
-        private const val KEY_V125_GESTURE_DOUBLE_SWIPE2 = "v125_gesture_double_swipe2"
-        private const val KEY_V125_CACHE_MEMORY_SIZE2 = "v125_cache_memory_size2"
 
         // ===== v126.x KEY =====
-        private const val KEY_V126_PLAYBACK_SKIP_INTRO2 = "v126_playback_skip_intro2"
-        private const val KEY_V126_DANMAKU_SPEED2 = "v126_danmaku_speed2"
-        private const val KEY_V126_COLOR_FADE2 = "v126_color_fade2"
-        private const val KEY_V126_VOLUME_FADE_IN2 = "v126_volume_fade_in2"
-        private const val KEY_V126_CAST_BITRATE2 = "v126_cast_bitrate2"
-        private const val KEY_V126_GESTURE_TAP_ZONE2 = "v126_gesture_tap_zone2"
-        private const val KEY_V126_CACHE_COMP_LEVEL3 = "v126_cache_comp_level3"
-        private const val KEY_V126_PROGRESS_BAR_FADE2 = "v126_progress_bar_fade2"
-        private const val KEY_V126_PLAYBACK_AUTO_PAUSE2 = "v126_playback_auto_pause2"
-        private const val KEY_V126_DANMAKU_SCROLL_SPEED2 = "v126_danmaku_scroll_speed2"
-        private const val KEY_V126_COLOR_TINT2 = "v126_color_tint2"
-        private const val KEY_V126_VOLUME_FADE_OUT2 = "v126_volume_fade_out2"
-        private const val KEY_V126_CAST_CODEC2 = "v126_cast_codec2"
-        private const val KEY_V126_GESTURE_DOUBLE_SWIPE2 = "v126_gesture_double_swipe2"
-        private const val KEY_V126_CACHE_MEMORY_SIZE2 = "v126_cache_memory_size2"
 
         // ===== v127.x KEY =====
-        private const val KEY_V127_PLAYBACK_SKIP_INTRO2 = "v127_playback_skip_intro2"
-        private const val KEY_V127_DANMAKU_SPEED2 = "v127_danmaku_speed2"
-        private const val KEY_V127_COLOR_FADE2 = "v127_color_fade2"
-        private const val KEY_V127_VOLUME_FADE_IN2 = "v127_volume_fade_in2"
-        private const val KEY_V127_CAST_BITRATE2 = "v127_cast_bitrate2"
-        private const val KEY_V127_GESTURE_TAP_ZONE2 = "v127_gesture_tap_zone2"
-        private const val KEY_V127_CACHE_COMP_LEVEL3 = "v127_cache_comp_level3"
-        private const val KEY_V127_PROGRESS_BAR_FADE2 = "v127_progress_bar_fade2"
-        private const val KEY_V127_PLAYBACK_AUTO_PAUSE2 = "v127_playback_auto_pause2"
-        private const val KEY_V127_DANMAKU_SCROLL_SPEED2 = "v127_danmaku_scroll_speed2"
-        private const val KEY_V127_COLOR_TINT2 = "v127_color_tint2"
-        private const val KEY_V127_VOLUME_FADE_OUT2 = "v127_volume_fade_out2"
-        private const val KEY_V127_CAST_CODEC2 = "v127_cast_codec2"
-        private const val KEY_V127_GESTURE_DOUBLE_SWIPE2 = "v127_gesture_double_swipe2"
-        private const val KEY_V127_CACHE_MEMORY_SIZE2 = "v127_cache_memory_size2"
 
         // ===== v128.x KEY =====
-        private const val KEY_V128_PLAYBACK_SKIP_INTRO2 = "v128_playback_skip_intro2"
-        private const val KEY_V128_DANMAKU_SPEED2 = "v128_danmaku_speed2"
-        private const val KEY_V128_COLOR_FADE2 = "v128_color_fade2"
-        private const val KEY_V128_VOLUME_FADE_IN2 = "v128_volume_fade_in2"
-        private const val KEY_V128_CAST_BITRATE2 = "v128_cast_bitrate2"
-        private const val KEY_V128_GESTURE_TAP_ZONE2 = "v128_gesture_tap_zone2"
-        private const val KEY_V128_CACHE_COMP_LEVEL3 = "v128_cache_comp_level3"
-        private const val KEY_V128_PROGRESS_BAR_FADE2 = "v128_progress_bar_fade2"
-        private const val KEY_V128_PLAYBACK_AUTO_PAUSE2 = "v128_playback_auto_pause2"
-        private const val KEY_V128_DANMAKU_SCROLL_SPEED2 = "v128_danmaku_scroll_speed2"
-        private const val KEY_V128_COLOR_TINT2 = "v128_color_tint2"
-        private const val KEY_V128_VOLUME_FADE_OUT2 = "v128_volume_fade_out2"
-        private const val KEY_V128_CAST_CODEC2 = "v128_cast_codec2"
-        private const val KEY_V128_GESTURE_DOUBLE_SWIPE2 = "v128_gesture_double_swipe2"
-        private const val KEY_V128_CACHE_MEMORY_SIZE2 = "v128_cache_memory_size2"
 
         // ===== v129.x KEY =====
-        private const val KEY_V129_PLAYBACK_SKIP_INTRO2 = "v129_playback_skip_intro2"
-        private const val KEY_V129_DANMAKU_SPEED2 = "v129_danmaku_speed2"
-        private const val KEY_V129_COLOR_FADE2 = "v129_color_fade2"
-        private const val KEY_V129_VOLUME_FADE_IN2 = "v129_volume_fade_in2"
-        private const val KEY_V129_CAST_BITRATE2 = "v129_cast_bitrate2"
-        private const val KEY_V129_GESTURE_TAP_ZONE2 = "v129_gesture_tap_zone2"
-        private const val KEY_V129_CACHE_COMP_LEVEL3 = "v129_cache_comp_level3"
-        private const val KEY_V129_PROGRESS_BAR_FADE2 = "v129_progress_bar_fade2"
-        private const val KEY_V129_PLAYBACK_AUTO_PAUSE2 = "v129_playback_auto_pause2"
-        private const val KEY_V129_DANMAKU_SCROLL_SPEED2 = "v129_danmaku_scroll_speed2"
-        private const val KEY_V129_COLOR_TINT2 = "v129_color_tint2"
-        private const val KEY_V129_VOLUME_FADE_OUT2 = "v129_volume_fade_out2"
-        private const val KEY_V129_CAST_CODEC2 = "v129_cast_codec2"
-        private const val KEY_V129_GESTURE_DOUBLE_SWIPE2 = "v129_gesture_double_swipe2"
-        private const val KEY_V129_CACHE_MEMORY_SIZE2 = "v129_cache_memory_size2"
 
         // ===== v130.x KEY =====
-        private const val KEY_V130_PLAYBACK_SKIP_INTRO2 = "v130_playback_skip_intro2"
-        private const val KEY_V130_DANMAKU_SPEED2 = "v130_danmaku_speed2"
-        private const val KEY_V130_COLOR_FADE2 = "v130_color_fade2"
-        private const val KEY_V130_VOLUME_FADE_IN2 = "v130_volume_fade_in2"
-        private const val KEY_V130_CAST_BITRATE2 = "v130_cast_bitrate2"
-        private const val KEY_V130_GESTURE_TAP_ZONE2 = "v130_gesture_tap_zone2"
-        private const val KEY_V130_CACHE_COMP_LEVEL3 = "v130_cache_comp_level3"
-        private const val KEY_V130_PROGRESS_BAR_FADE2 = "v130_progress_bar_fade2"
-        private const val KEY_V130_PLAYBACK_AUTO_PAUSE2 = "v130_playback_auto_pause2"
-        private const val KEY_V130_DANMAKU_SCROLL_SPEED2 = "v130_danmaku_scroll_speed2"
-        private const val KEY_V130_COLOR_TINT2 = "v130_color_tint2"
-        private const val KEY_V130_VOLUME_FADE_OUT2 = "v130_volume_fade_out2"
-        private const val KEY_V130_CAST_CODEC2 = "v130_cast_codec2"
-        private const val KEY_V130_GESTURE_DOUBLE_SWIPE2 = "v130_gesture_double_swipe2"
-        private const val KEY_V130_CACHE_MEMORY_SIZE2 = "v130_cache_memory_size2"
 
         // ===== v131.x KEY =====
-        private const val KEY_V131_PLAYBACK_SKIP_INTRO2 = "v131_playback_skip_intro2"
-        private const val KEY_V131_DANMAKU_SPEED2 = "v131_danmaku_speed2"
-        private const val KEY_V131_COLOR_FADE2 = "v131_color_fade2"
-        private const val KEY_V131_VOLUME_FADE_IN2 = "v131_volume_fade_in2"
-        private const val KEY_V131_CAST_BITRATE2 = "v131_cast_bitrate2"
-        private const val KEY_V131_GESTURE_TAP_ZONE2 = "v131_gesture_tap_zone2"
-        private const val KEY_V131_CACHE_COMP_LEVEL3 = "v131_cache_comp_level3"
-        private const val KEY_V131_PROGRESS_BAR_FADE2 = "v131_progress_bar_fade2"
-        private const val KEY_V131_PLAYBACK_AUTO_PAUSE2 = "v131_playback_auto_pause2"
-        private const val KEY_V131_DANMAKU_SCROLL_SPEED2 = "v131_danmaku_scroll_speed2"
-        private const val KEY_V131_COLOR_TINT2 = "v131_color_tint2"
-        private const val KEY_V131_VOLUME_FADE_OUT2 = "v131_volume_fade_out2"
-        private const val KEY_V131_CAST_CODEC2 = "v131_cast_codec2"
-        private const val KEY_V131_GESTURE_DOUBLE_SWIPE2 = "v131_gesture_double_swipe2"
-        private const val KEY_V131_CACHE_MEMORY_SIZE2 = "v131_cache_memory_size2"
 
         // ===== v132.x KEY =====
-        private const val KEY_V132_PLAYBACK_SKIP_INTRO2 = "v132_playback_skip_intro2"
-        private const val KEY_V132_DANMAKU_SPEED2 = "v132_danmaku_speed2"
-        private const val KEY_V132_COLOR_FADE2 = "v132_color_fade2"
-        private const val KEY_V132_VOLUME_FADE_IN2 = "v132_volume_fade_in2"
-        private const val KEY_V132_CAST_BITRATE2 = "v132_cast_bitrate2"
-        private const val KEY_V132_GESTURE_TAP_ZONE2 = "v132_gesture_tap_zone2"
-        private const val KEY_V132_CACHE_COMP_LEVEL3 = "v132_cache_comp_level3"
-        private const val KEY_V132_PROGRESS_BAR_FADE2 = "v132_progress_bar_fade2"
-        private const val KEY_V132_PLAYBACK_AUTO_PAUSE2 = "v132_playback_auto_pause2"
-        private const val KEY_V132_DANMAKU_SCROLL_SPEED2 = "v132_danmaku_scroll_speed2"
-        private const val KEY_V132_COLOR_TINT2 = "v132_color_tint2"
-        private const val KEY_V132_VOLUME_FADE_OUT2 = "v132_volume_fade_out2"
-        private const val KEY_V132_CAST_CODEC2 = "v132_cast_codec2"
-        private const val KEY_V132_GESTURE_DOUBLE_SWIPE2 = "v132_gesture_double_swipe2"
-        private const val KEY_V132_CACHE_MEMORY_SIZE2 = "v132_cache_memory_size2"
 
         // ===== v133.x KEY =====
-        private const val KEY_V133_PLAYBACK_SKIP_INTRO2 = "v133_playback_skip_intro2"
-        private const val KEY_V133_DANMAKU_SPEED2 = "v133_danmaku_speed2"
-        private const val KEY_V133_COLOR_FADE2 = "v133_color_fade2"
-        private const val KEY_V133_VOLUME_FADE_IN2 = "v133_volume_fade_in2"
-        private const val KEY_V133_CAST_BITRATE2 = "v133_cast_bitrate2"
-        private const val KEY_V133_GESTURE_TAP_ZONE2 = "v133_gesture_tap_zone2"
-        private const val KEY_V133_CACHE_COMP_LEVEL3 = "v133_cache_comp_level3"
-        private const val KEY_V133_PROGRESS_BAR_FADE2 = "v133_progress_bar_fade2"
-        private const val KEY_V133_PLAYBACK_AUTO_PAUSE2 = "v133_playback_auto_pause2"
-        private const val KEY_V133_DANMAKU_SCROLL_SPEED2 = "v133_danmaku_scroll_speed2"
-        private const val KEY_V133_COLOR_TINT2 = "v133_color_tint2"
-        private const val KEY_V133_VOLUME_FADE_OUT2 = "v133_volume_fade_out2"
-        private const val KEY_V133_CAST_CODEC2 = "v133_cast_codec2"
-        private const val KEY_V133_GESTURE_DOUBLE_SWIPE2 = "v133_gesture_double_swipe2"
-        private const val KEY_V133_CACHE_MEMORY_SIZE2 = "v133_cache_memory_size2"
 
         // ===== v134.x KEY =====
-        private const val KEY_V134_PLAYBACK_SKIP_INTRO2 = "v134_playback_skip_intro2"
-        private const val KEY_V134_DANMAKU_SPEED2 = "v134_danmaku_speed2"
-        private const val KEY_V134_COLOR_FADE2 = "v134_color_fade2"
-        private const val KEY_V134_VOLUME_FADE_IN2 = "v134_volume_fade_in2"
-        private const val KEY_V134_CAST_BITRATE2 = "v134_cast_bitrate2"
-        private const val KEY_V134_GESTURE_TAP_ZONE2 = "v134_gesture_tap_zone2"
-        private const val KEY_V134_CACHE_COMP_LEVEL3 = "v134_cache_comp_level3"
-        private const val KEY_V134_PROGRESS_BAR_FADE2 = "v134_progress_bar_fade2"
-        private const val KEY_V134_PLAYBACK_AUTO_PAUSE2 = "v134_playback_auto_pause2"
-        private const val KEY_V134_DANMAKU_SCROLL_SPEED2 = "v134_danmaku_scroll_speed2"
-        private const val KEY_V134_COLOR_TINT2 = "v134_color_tint2"
-        private const val KEY_V134_VOLUME_FADE_OUT2 = "v134_volume_fade_out2"
-        private const val KEY_V134_CAST_CODEC2 = "v134_cast_codec2"
-        private const val KEY_V134_GESTURE_DOUBLE_SWIPE2 = "v134_gesture_double_swipe2"
-        private const val KEY_V134_CACHE_MEMORY_SIZE2 = "v134_cache_memory_size2"
 
         // ===== v135.x KEY =====
-        private const val KEY_V135_PLAYBACK_SKIP_INTRO2 = "v135_playback_skip_intro2"
-        private const val KEY_V135_DANMAKU_SPEED2 = "v135_danmaku_speed2"
-        private const val KEY_V135_COLOR_FADE2 = "v135_color_fade2"
-        private const val KEY_V135_VOLUME_FADE_IN2 = "v135_volume_fade_in2"
-        private const val KEY_V135_CAST_BITRATE2 = "v135_cast_bitrate2"
-        private const val KEY_V135_GESTURE_TAP_ZONE2 = "v135_gesture_tap_zone2"
-        private const val KEY_V135_CACHE_COMP_LEVEL3 = "v135_cache_comp_level3"
-        private const val KEY_V135_PROGRESS_BAR_FADE2 = "v135_progress_bar_fade2"
-        private const val KEY_V135_PLAYBACK_AUTO_PAUSE2 = "v135_playback_auto_pause2"
-        private const val KEY_V135_DANMAKU_SCROLL_SPEED2 = "v135_danmaku_scroll_speed2"
-        private const val KEY_V135_COLOR_TINT2 = "v135_color_tint2"
-        private const val KEY_V135_VOLUME_FADE_OUT2 = "v135_volume_fade_out2"
-        private const val KEY_V135_CAST_CODEC2 = "v135_cast_codec2"
-        private const val KEY_V135_GESTURE_DOUBLE_SWIPE2 = "v135_gesture_double_swipe2"
-        private const val KEY_V135_CACHE_MEMORY_SIZE2 = "v135_cache_memory_size2"
 
         // ===== v136.x KEY =====
-        private const val KEY_V136_PLAYBACK_SKIP_INTRO2 = "v136_playback_skip_intro2"
-        private const val KEY_V136_DANMAKU_SPEED2 = "v136_danmaku_speed2"
-        private const val KEY_V136_COLOR_FADE2 = "v136_color_fade2"
-        private const val KEY_V136_VOLUME_FADE_IN2 = "v136_volume_fade_in2"
-        private const val KEY_V136_CAST_BITRATE2 = "v136_cast_bitrate2"
-        private const val KEY_V136_GESTURE_TAP_ZONE2 = "v136_gesture_tap_zone2"
-        private const val KEY_V136_CACHE_COMP_LEVEL3 = "v136_cache_comp_level3"
-        private const val KEY_V136_PROGRESS_BAR_FADE2 = "v136_progress_bar_fade2"
-        private const val KEY_V136_PLAYBACK_AUTO_PAUSE2 = "v136_playback_auto_pause2"
-        private const val KEY_V136_DANMAKU_SCROLL_SPEED2 = "v136_danmaku_scroll_speed2"
-        private const val KEY_V136_COLOR_TINT2 = "v136_color_tint2"
-        private const val KEY_V136_VOLUME_FADE_OUT2 = "v136_volume_fade_out2"
-        private const val KEY_V136_CAST_CODEC2 = "v136_cast_codec2"
-        private const val KEY_V136_GESTURE_DOUBLE_SWIPE2 = "v136_gesture_double_swipe2"
-        private const val KEY_V136_CACHE_MEMORY_SIZE2 = "v136_cache_memory_size2"
 
         // ===== v137.x KEY =====
-        private const val KEY_V137_PLAYBACK_SKIP_INTRO2 = "v137_playback_skip_intro2"
-        private const val KEY_V137_DANMAKU_SPEED2 = "v137_danmaku_speed2"
-        private const val KEY_V137_COLOR_FADE2 = "v137_color_fade2"
-        private const val KEY_V137_VOLUME_FADE_IN2 = "v137_volume_fade_in2"
-        private const val KEY_V137_CAST_BITRATE2 = "v137_cast_bitrate2"
-        private const val KEY_V137_GESTURE_TAP_ZONE2 = "v137_gesture_tap_zone2"
-        private const val KEY_V137_CACHE_COMP_LEVEL3 = "v137_cache_comp_level3"
-        private const val KEY_V137_PROGRESS_BAR_FADE2 = "v137_progress_bar_fade2"
-        private const val KEY_V137_PLAYBACK_AUTO_PAUSE2 = "v137_playback_auto_pause2"
-        private const val KEY_V137_DANMAKU_SCROLL_SPEED2 = "v137_danmaku_scroll_speed2"
-        private const val KEY_V137_COLOR_TINT2 = "v137_color_tint2"
-        private const val KEY_V137_VOLUME_FADE_OUT2 = "v137_volume_fade_out2"
-        private const val KEY_V137_CAST_CODEC2 = "v137_cast_codec2"
-        private const val KEY_V137_GESTURE_DOUBLE_SWIPE2 = "v137_gesture_double_swipe2"
-        private const val KEY_V137_CACHE_MEMORY_SIZE2 = "v137_cache_memory_size2"
 
         // ===== v138.x KEY =====
-        private const val KEY_V138_PLAYBACK_SKIP_INTRO2 = "v138_playback_skip_intro2"
-        private const val KEY_V138_DANMAKU_SPEED2 = "v138_danmaku_speed2"
-        private const val KEY_V138_COLOR_FADE2 = "v138_color_fade2"
-        private const val KEY_V138_VOLUME_FADE_IN2 = "v138_volume_fade_in2"
-        private const val KEY_V138_CAST_BITRATE2 = "v138_cast_bitrate2"
-        private const val KEY_V138_GESTURE_TAP_ZONE2 = "v138_gesture_tap_zone2"
-        private const val KEY_V138_CACHE_COMP_LEVEL3 = "v138_cache_comp_level3"
-        private const val KEY_V138_PROGRESS_BAR_FADE2 = "v138_progress_bar_fade2"
-        private const val KEY_V138_PLAYBACK_AUTO_PAUSE2 = "v138_playback_auto_pause2"
-        private const val KEY_V138_DANMAKU_SCROLL_SPEED2 = "v138_danmaku_scroll_speed2"
-        private const val KEY_V138_COLOR_TINT2 = "v138_color_tint2"
-        private const val KEY_V138_VOLUME_FADE_OUT2 = "v138_volume_fade_out2"
-        private const val KEY_V138_CAST_CODEC2 = "v138_cast_codec2"
-        private const val KEY_V138_GESTURE_DOUBLE_SWIPE2 = "v138_gesture_double_swipe2"
-        private const val KEY_V138_CACHE_MEMORY_SIZE2 = "v138_cache_memory_size2"
 
         // ===== v139.x KEY =====
-        private const val KEY_V139_PLAYBACK_SKIP_INTRO2 = "v139_playback_skip_intro2"
-        private const val KEY_V139_DANMAKU_SPEED2 = "v139_danmaku_speed2"
-        private const val KEY_V139_COLOR_FADE2 = "v139_color_fade2"
-        private const val KEY_V139_VOLUME_FADE_IN2 = "v139_volume_fade_in2"
-        private const val KEY_V139_CAST_BITRATE2 = "v139_cast_bitrate2"
-        private const val KEY_V139_GESTURE_TAP_ZONE2 = "v139_gesture_tap_zone2"
-        private const val KEY_V139_CACHE_COMP_LEVEL3 = "v139_cache_comp_level3"
-        private const val KEY_V139_PROGRESS_BAR_FADE2 = "v139_progress_bar_fade2"
-        private const val KEY_V139_PLAYBACK_AUTO_PAUSE2 = "v139_playback_auto_pause2"
-        private const val KEY_V139_DANMAKU_SCROLL_SPEED2 = "v139_danmaku_scroll_speed2"
-        private const val KEY_V139_COLOR_TINT2 = "v139_color_tint2"
-        private const val KEY_V139_VOLUME_FADE_OUT2 = "v139_volume_fade_out2"
-        private const val KEY_V139_CAST_CODEC2 = "v139_cast_codec2"
-        private const val KEY_V139_GESTURE_DOUBLE_SWIPE2 = "v139_gesture_double_swipe2"
-        private const val KEY_V139_CACHE_MEMORY_SIZE2 = "v139_cache_memory_size2"
 
         // ===== v140.x KEY =====
-        private const val KEY_V140_PLAYBACK_SKIP_INTRO2 = "v140_playback_skip_intro2"
-        private const val KEY_V140_DANMAKU_SPEED2 = "v140_danmaku_speed2"
-        private const val KEY_V140_COLOR_FADE2 = "v140_color_fade2"
-        private const val KEY_V140_VOLUME_FADE_IN2 = "v140_volume_fade_in2"
-        private const val KEY_V140_CAST_BITRATE2 = "v140_cast_bitrate2"
-        private const val KEY_V140_GESTURE_TAP_ZONE2 = "v140_gesture_tap_zone2"
-        private const val KEY_V140_CACHE_COMP_LEVEL3 = "v140_cache_comp_level3"
-        private const val KEY_V140_PROGRESS_BAR_FADE2 = "v140_progress_bar_fade2"
-        private const val KEY_V140_PLAYBACK_AUTO_PAUSE2 = "v140_playback_auto_pause2"
-        private const val KEY_V140_DANMAKU_SCROLL_SPEED2 = "v140_danmaku_scroll_speed2"
-        private const val KEY_V140_COLOR_TINT2 = "v140_color_tint2"
-        private const val KEY_V140_VOLUME_FADE_OUT2 = "v140_volume_fade_out2"
-        private const val KEY_V140_CAST_CODEC2 = "v140_cast_codec2"
-        private const val KEY_V140_GESTURE_DOUBLE_SWIPE2 = "v140_gesture_double_swipe2"
-        private const val KEY_V140_CACHE_MEMORY_SIZE2 = "v140_cache_memory_size2"
 
         // ===== v141.x KEY =====
-        private const val KEY_V141_PLAYBACK_SKIP_INTRO2 = "v141_playback_skip_intro2"
-        private const val KEY_V141_DANMAKU_SPEED2 = "v141_danmaku_speed2"
-        private const val KEY_V141_COLOR_FADE2 = "v141_color_fade2"
-        private const val KEY_V141_VOLUME_FADE_IN2 = "v141_volume_fade_in2"
-        private const val KEY_V141_CAST_BITRATE2 = "v141_cast_bitrate2"
-        private const val KEY_V141_GESTURE_TAP_ZONE2 = "v141_gesture_tap_zone2"
-        private const val KEY_V141_CACHE_COMP_LEVEL3 = "v141_cache_comp_level3"
-        private const val KEY_V141_PROGRESS_BAR_FADE2 = "v141_progress_bar_fade2"
-        private const val KEY_V141_PLAYBACK_AUTO_PAUSE2 = "v141_playback_auto_pause2"
-        private const val KEY_V141_DANMAKU_SCROLL_SPEED2 = "v141_danmaku_scroll_speed2"
-        private const val KEY_V141_COLOR_TINT2 = "v141_color_tint2"
-        private const val KEY_V141_VOLUME_FADE_OUT2 = "v141_volume_fade_out2"
-        private const val KEY_V141_CAST_CODEC2 = "v141_cast_codec2"
-        private const val KEY_V141_GESTURE_DOUBLE_SWIPE2 = "v141_gesture_double_swipe2"
-        private const val KEY_V141_CACHE_MEMORY_SIZE2 = "v141_cache_memory_size2"
 
         // ===== v142.x KEY =====
-        private const val KEY_V142_PLAYBACK_SKIP_INTRO2 = "v142_playback_skip_intro2"
-        private const val KEY_V142_DANMAKU_SPEED2 = "v142_danmaku_speed2"
-        private const val KEY_V142_COLOR_FADE2 = "v142_color_fade2"
-        private const val KEY_V142_VOLUME_FADE_IN2 = "v142_volume_fade_in2"
-        private const val KEY_V142_CAST_BITRATE2 = "v142_cast_bitrate2"
-        private const val KEY_V142_GESTURE_TAP_ZONE2 = "v142_gesture_tap_zone2"
-        private const val KEY_V142_CACHE_COMP_LEVEL3 = "v142_cache_comp_level3"
-        private const val KEY_V142_PROGRESS_BAR_FADE2 = "v142_progress_bar_fade2"
-        private const val KEY_V142_PLAYBACK_AUTO_PAUSE2 = "v142_playback_auto_pause2"
-        private const val KEY_V142_DANMAKU_SCROLL_SPEED2 = "v142_danmaku_scroll_speed2"
-        private const val KEY_V142_COLOR_TINT2 = "v142_color_tint2"
-        private const val KEY_V142_VOLUME_FADE_OUT2 = "v142_volume_fade_out2"
-        private const val KEY_V142_CAST_CODEC2 = "v142_cast_codec2"
-        private const val KEY_V142_GESTURE_DOUBLE_SWIPE2 = "v142_gesture_double_swipe2"
-        private const val KEY_V142_CACHE_MEMORY_SIZE2 = "v142_cache_memory_size2"
 
         // ===== v143.x KEY =====
-        private const val KEY_V143_PLAYBACK_SKIP_INTRO2 = "v143_playback_skip_intro2"
-        private const val KEY_V143_DANMAKU_SPEED2 = "v143_danmaku_speed2"
-        private const val KEY_V143_COLOR_FADE2 = "v143_color_fade2"
-        private const val KEY_V143_VOLUME_FADE_IN2 = "v143_volume_fade_in2"
-        private const val KEY_V143_CAST_BITRATE2 = "v143_cast_bitrate2"
-        private const val KEY_V143_GESTURE_TAP_ZONE2 = "v143_gesture_tap_zone2"
-        private const val KEY_V143_CACHE_COMP_LEVEL3 = "v143_cache_comp_level3"
-        private const val KEY_V143_PROGRESS_BAR_FADE2 = "v143_progress_bar_fade2"
-        private const val KEY_V143_PLAYBACK_AUTO_PAUSE2 = "v143_playback_auto_pause2"
-        private const val KEY_V143_DANMAKU_SCROLL_SPEED2 = "v143_danmaku_scroll_speed2"
-        private const val KEY_V143_COLOR_TINT2 = "v143_color_tint2"
-        private const val KEY_V143_VOLUME_FADE_OUT2 = "v143_volume_fade_out2"
-        private const val KEY_V143_CAST_CODEC2 = "v143_cast_codec2"
-        private const val KEY_V143_GESTURE_DOUBLE_SWIPE2 = "v143_gesture_double_swipe2"
-        private const val KEY_V143_CACHE_MEMORY_SIZE2 = "v143_cache_memory_size2"
 
         // ===== v144.x KEY =====
-        private const val KEY_V144_PLAYBACK_SKIP_INTRO2 = "v144_playback_skip_intro2"
-        private const val KEY_V144_DANMAKU_SPEED2 = "v144_danmaku_speed2"
-        private const val KEY_V144_COLOR_FADE2 = "v144_color_fade2"
-        private const val KEY_V144_VOLUME_FADE_IN2 = "v144_volume_fade_in2"
-        private const val KEY_V144_CAST_BITRATE2 = "v144_cast_bitrate2"
-        private const val KEY_V144_GESTURE_TAP_ZONE2 = "v144_gesture_tap_zone2"
-        private const val KEY_V144_CACHE_COMP_LEVEL3 = "v144_cache_comp_level3"
-        private const val KEY_V144_PROGRESS_BAR_FADE2 = "v144_progress_bar_fade2"
-        private const val KEY_V144_PLAYBACK_AUTO_PAUSE2 = "v144_playback_auto_pause2"
-        private const val KEY_V144_DANMAKU_SCROLL_SPEED2 = "v144_danmaku_scroll_speed2"
-        private const val KEY_V144_COLOR_TINT2 = "v144_color_tint2"
-        private const val KEY_V144_VOLUME_FADE_OUT2 = "v144_volume_fade_out2"
-        private const val KEY_V144_CAST_CODEC2 = "v144_cast_codec2"
-        private const val KEY_V144_GESTURE_DOUBLE_SWIPE2 = "v144_gesture_double_swipe2"
-        private const val KEY_V144_CACHE_MEMORY_SIZE2 = "v144_cache_memory_size2"
 
         // ===== v145.x KEY =====
-        private const val KEY_V145_PLAYBACK_SKIP_INTRO2 = "v145_playback_skip_intro2"
-        private const val KEY_V145_DANMAKU_SPEED2 = "v145_danmaku_speed2"
-        private const val KEY_V145_COLOR_FADE2 = "v145_color_fade2"
-        private const val KEY_V145_VOLUME_FADE_IN2 = "v145_volume_fade_in2"
-        private const val KEY_V145_CAST_BITRATE2 = "v145_cast_bitrate2"
-        private const val KEY_V145_GESTURE_TAP_ZONE2 = "v145_gesture_tap_zone2"
-        private const val KEY_V145_CACHE_COMP_LEVEL3 = "v145_cache_comp_level3"
-        private const val KEY_V145_PROGRESS_BAR_FADE2 = "v145_progress_bar_fade2"
-        private const val KEY_V145_PLAYBACK_AUTO_PAUSE2 = "v145_playback_auto_pause2"
-        private const val KEY_V145_DANMAKU_SCROLL_SPEED2 = "v145_danmaku_scroll_speed2"
-        private const val KEY_V145_COLOR_TINT2 = "v145_color_tint2"
-        private const val KEY_V145_VOLUME_FADE_OUT2 = "v145_volume_fade_out2"
-        private const val KEY_V145_CAST_CODEC2 = "v145_cast_codec2"
-        private const val KEY_V145_GESTURE_DOUBLE_SWIPE2 = "v145_gesture_double_swipe2"
-        private const val KEY_V145_CACHE_MEMORY_SIZE2 = "v145_cache_memory_size2"
 
         // ===== v146.x KEY =====
-        private const val KEY_V146_PLAYBACK_SKIP_INTRO2 = "v146_playback_skip_intro2"
-        private const val KEY_V146_DANMAKU_SPEED2 = "v146_danmaku_speed2"
-        private const val KEY_V146_COLOR_FADE2 = "v146_color_fade2"
-        private const val KEY_V146_VOLUME_FADE_IN2 = "v146_volume_fade_in2"
-        private const val KEY_V146_CAST_BITRATE2 = "v146_cast_bitrate2"
-        private const val KEY_V146_GESTURE_TAP_ZONE2 = "v146_gesture_tap_zone2"
-        private const val KEY_V146_CACHE_COMP_LEVEL3 = "v146_cache_comp_level3"
-        private const val KEY_V146_PROGRESS_BAR_FADE2 = "v146_progress_bar_fade2"
-        private const val KEY_V146_PLAYBACK_AUTO_PAUSE2 = "v146_playback_auto_pause2"
-        private const val KEY_V146_DANMAKU_SCROLL_SPEED2 = "v146_danmaku_scroll_speed2"
-        private const val KEY_V146_COLOR_TINT2 = "v146_color_tint2"
-        private const val KEY_V146_VOLUME_FADE_OUT2 = "v146_volume_fade_out2"
-        private const val KEY_V146_CAST_CODEC2 = "v146_cast_codec2"
-        private const val KEY_V146_GESTURE_DOUBLE_SWIPE2 = "v146_gesture_double_swipe2"
-        private const val KEY_V146_CACHE_MEMORY_SIZE2 = "v146_cache_memory_size2"
 
         // ===== v147.x KEY =====
-        private const val KEY_V147_PLAYBACK_SKIP_INTRO2 = "v147_playback_skip_intro2"
-        private const val KEY_V147_DANMAKU_SPEED2 = "v147_danmaku_speed2"
-        private const val KEY_V147_COLOR_FADE2 = "v147_color_fade2"
-        private const val KEY_V147_VOLUME_FADE_IN2 = "v147_volume_fade_in2"
-        private const val KEY_V147_CAST_BITRATE2 = "v147_cast_bitrate2"
-        private const val KEY_V147_GESTURE_TAP_ZONE2 = "v147_gesture_tap_zone2"
-        private const val KEY_V147_CACHE_COMP_LEVEL3 = "v147_cache_comp_level3"
-        private const val KEY_V147_PROGRESS_BAR_FADE2 = "v147_progress_bar_fade2"
-        private const val KEY_V147_PLAYBACK_AUTO_PAUSE2 = "v147_playback_auto_pause2"
-        private const val KEY_V147_DANMAKU_SCROLL_SPEED2 = "v147_danmaku_scroll_speed2"
-        private const val KEY_V147_COLOR_TINT2 = "v147_color_tint2"
-        private const val KEY_V147_VOLUME_FADE_OUT2 = "v147_volume_fade_out2"
-        private const val KEY_V147_CAST_CODEC2 = "v147_cast_codec2"
-        private const val KEY_V147_GESTURE_DOUBLE_SWIPE2 = "v147_gesture_double_swipe2"
-        private const val KEY_V147_CACHE_MEMORY_SIZE2 = "v147_cache_memory_size2"
 
         // ===== v148.x KEY =====
-        private const val KEY_V148_PLAYBACK_SKIP_INTRO2 = "v148_playback_skip_intro2"
-        private const val KEY_V148_DANMAKU_SPEED2 = "v148_danmaku_speed2"
-        private const val KEY_V148_COLOR_FADE2 = "v148_color_fade2"
-        private const val KEY_V148_VOLUME_FADE_IN2 = "v148_volume_fade_in2"
-        private const val KEY_V148_CAST_BITRATE2 = "v148_cast_bitrate2"
-        private const val KEY_V148_GESTURE_TAP_ZONE2 = "v148_gesture_tap_zone2"
-        private const val KEY_V148_CACHE_COMP_LEVEL3 = "v148_cache_comp_level3"
-        private const val KEY_V148_PROGRESS_BAR_FADE2 = "v148_progress_bar_fade2"
-        private const val KEY_V148_PLAYBACK_AUTO_PAUSE2 = "v148_playback_auto_pause2"
-        private const val KEY_V148_DANMAKU_SCROLL_SPEED2 = "v148_danmaku_scroll_speed2"
-        private const val KEY_V148_COLOR_TINT2 = "v148_color_tint2"
-        private const val KEY_V148_VOLUME_FADE_OUT2 = "v148_volume_fade_out2"
-        private const val KEY_V148_CAST_CODEC2 = "v148_cast_codec2"
-        private const val KEY_V148_GESTURE_DOUBLE_SWIPE2 = "v148_gesture_double_swipe2"
-        private const val KEY_V148_CACHE_MEMORY_SIZE2 = "v148_cache_memory_size2"
 
         // ===== v149.x KEY =====
-        private const val KEY_V149_PLAYBACK_SKIP_INTRO2 = "v149_playback_skip_intro2"
-        private const val KEY_V149_DANMAKU_SPEED2 = "v149_danmaku_speed2"
-        private const val KEY_V149_COLOR_FADE2 = "v149_color_fade2"
-        private const val KEY_V149_VOLUME_FADE_IN2 = "v149_volume_fade_in2"
-        private const val KEY_V149_CAST_BITRATE2 = "v149_cast_bitrate2"
-        private const val KEY_V149_GESTURE_TAP_ZONE2 = "v149_gesture_tap_zone2"
-        private const val KEY_V149_CACHE_COMP_LEVEL3 = "v149_cache_comp_level3"
-        private const val KEY_V149_PROGRESS_BAR_FADE2 = "v149_progress_bar_fade2"
-        private const val KEY_V149_PLAYBACK_AUTO_PAUSE2 = "v149_playback_auto_pause2"
-        private const val KEY_V149_DANMAKU_SCROLL_SPEED2 = "v149_danmaku_scroll_speed2"
-        private const val KEY_V149_COLOR_TINT2 = "v149_color_tint2"
-        private const val KEY_V149_VOLUME_FADE_OUT2 = "v149_volume_fade_out2"
-        private const val KEY_V149_CAST_CODEC2 = "v149_cast_codec2"
-        private const val KEY_V149_GESTURE_DOUBLE_SWIPE2 = "v149_gesture_double_swipe2"
-        private const val KEY_V149_CACHE_MEMORY_SIZE2 = "v149_cache_memory_size2"
 
         // ===== v150.x KEY =====
-        private const val KEY_V150_PLAYBACK_SKIP_INTRO2 = "v150_playback_skip_intro2"
-        private const val KEY_V150_DANMAKU_SPEED2 = "v150_danmaku_speed2"
-        private const val KEY_V150_COLOR_FADE2 = "v150_color_fade2"
-        private const val KEY_V150_VOLUME_FADE_IN2 = "v150_volume_fade_in2"
-        private const val KEY_V150_CAST_BITRATE2 = "v150_cast_bitrate2"
-        private const val KEY_V150_GESTURE_TAP_ZONE2 = "v150_gesture_tap_zone2"
-        private const val KEY_V150_CACHE_COMP_LEVEL3 = "v150_cache_comp_level3"
-        private const val KEY_V150_PROGRESS_BAR_FADE2 = "v150_progress_bar_fade2"
-        private const val KEY_V150_PLAYBACK_AUTO_PAUSE2 = "v150_playback_auto_pause2"
-        private const val KEY_V150_DANMAKU_SCROLL_SPEED2 = "v150_danmaku_scroll_speed2"
-        private const val KEY_V150_COLOR_TINT2 = "v150_color_tint2"
-        private const val KEY_V150_VOLUME_FADE_OUT2 = "v150_volume_fade_out2"
-        private const val KEY_V150_CAST_CODEC2 = "v150_cast_codec2"
-        private const val KEY_V150_GESTURE_DOUBLE_SWIPE2 = "v150_gesture_double_swipe2"
-        private const val KEY_V150_CACHE_MEMORY_SIZE2 = "v150_cache_memory_size2"
 
                 // ===== v101.x KEY =====
         private const val KEY_V101_PLAYBACK_AUTO_RESUME3 = "v101_playback_auto_resume3"
@@ -10715,327 +6365,42 @@ class AppPrefs(context: Context) {
         private const val KEY_V101_CACHE_DISK_POLICY3 = "v101_cache_disk_policy3"
 
         // ===== v102.x KEY =====
-        private const val KEY_V102_PLAYBACK_AUTO_RESUME3 = "v102_playback_auto_resume3"
-        private const val KEY_V102_DANMAKU_FONT_BLUR3 = "v102_danmaku_font_blur3"
-        private const val KEY_V102_COLOR_MIDTONE3 = "v102_color_midtone3"
-        private const val KEY_V102_VOLUME_COMPRESSOR3 = "v102_volume_compressor3"
-        private const val KEY_V102_CAST_SUBTITLE_FONT3 = "v102_cast_subtitle_font3"
-        private const val KEY_V102_GESTURE_EDGE_PAN3 = "v102_gesture_edge_pan3"
-        private const val KEY_V102_CACHE_READ_AHEAD3 = "v102_cache_read_ahead3"
-        private const val KEY_V102_PROGRESS_BAR_COLOR3 = "v102_progress_bar_color3"
-        private const val KEY_V102_PLAYBACK_AUTO_SKIP_CREDITS2 = "v102_playback_auto_skip_credits2"
-        private const val KEY_V102_DANMAKU_FONT_GLOW_COLOR4 = "v102_danmaku_font_glow_color4"
-        private const val KEY_V102_COLOR_HIGHLIGHT3 = "v102_color_highlight3"
-        private const val KEY_V102_VOLUME_PEAK_LIMITER3 = "v102_volume_peak_limiter3"
-        private const val KEY_V102_CAST_RESOLUTION3 = "v102_cast_resolution3"
-        private const val KEY_V102_GESTURE_HAPTIC3 = "v102_gesture_haptic3"
-        private const val KEY_V102_CACHE_DISK_POLICY3 = "v102_cache_disk_policy3"
 
         // ===== v103.x KEY =====
-        private const val KEY_V103_PLAYBACK_AUTO_RESUME3 = "v103_playback_auto_resume3"
-        private const val KEY_V103_DANMAKU_FONT_BLUR3 = "v103_danmaku_font_blur3"
-        private const val KEY_V103_COLOR_MIDTONE3 = "v103_color_midtone3"
-        private const val KEY_V103_VOLUME_COMPRESSOR3 = "v103_volume_compressor3"
-        private const val KEY_V103_CAST_SUBTITLE_FONT3 = "v103_cast_subtitle_font3"
-        private const val KEY_V103_GESTURE_EDGE_PAN3 = "v103_gesture_edge_pan3"
-        private const val KEY_V103_CACHE_READ_AHEAD3 = "v103_cache_read_ahead3"
-        private const val KEY_V103_PROGRESS_BAR_COLOR3 = "v103_progress_bar_color3"
-        private const val KEY_V103_PLAYBACK_AUTO_SKIP_CREDITS2 = "v103_playback_auto_skip_credits2"
-        private const val KEY_V103_DANMAKU_FONT_GLOW_COLOR4 = "v103_danmaku_font_glow_color4"
-        private const val KEY_V103_COLOR_HIGHLIGHT3 = "v103_color_highlight3"
-        private const val KEY_V103_VOLUME_PEAK_LIMITER3 = "v103_volume_peak_limiter3"
-        private const val KEY_V103_CAST_RESOLUTION3 = "v103_cast_resolution3"
-        private const val KEY_V103_GESTURE_HAPTIC3 = "v103_gesture_haptic3"
-        private const val KEY_V103_CACHE_DISK_POLICY3 = "v103_cache_disk_policy3"
 
         // ===== v104.x KEY =====
-        private const val KEY_V104_PLAYBACK_AUTO_RESUME3 = "v104_playback_auto_resume3"
-        private const val KEY_V104_DANMAKU_FONT_BLUR3 = "v104_danmaku_font_blur3"
-        private const val KEY_V104_COLOR_MIDTONE3 = "v104_color_midtone3"
-        private const val KEY_V104_VOLUME_COMPRESSOR3 = "v104_volume_compressor3"
-        private const val KEY_V104_CAST_SUBTITLE_FONT3 = "v104_cast_subtitle_font3"
-        private const val KEY_V104_GESTURE_EDGE_PAN3 = "v104_gesture_edge_pan3"
-        private const val KEY_V104_CACHE_READ_AHEAD3 = "v104_cache_read_ahead3"
-        private const val KEY_V104_PROGRESS_BAR_COLOR3 = "v104_progress_bar_color3"
-        private const val KEY_V104_PLAYBACK_AUTO_SKIP_CREDITS2 = "v104_playback_auto_skip_credits2"
-        private const val KEY_V104_DANMAKU_FONT_GLOW_COLOR4 = "v104_danmaku_font_glow_color4"
-        private const val KEY_V104_COLOR_HIGHLIGHT3 = "v104_color_highlight3"
-        private const val KEY_V104_VOLUME_PEAK_LIMITER3 = "v104_volume_peak_limiter3"
-        private const val KEY_V104_CAST_RESOLUTION3 = "v104_cast_resolution3"
-        private const val KEY_V104_GESTURE_HAPTIC3 = "v104_gesture_haptic3"
-        private const val KEY_V104_CACHE_DISK_POLICY3 = "v104_cache_disk_policy3"
 
         // ===== v105.x KEY =====
-        private const val KEY_V105_PLAYBACK_AUTO_RESUME3 = "v105_playback_auto_resume3"
-        private const val KEY_V105_DANMAKU_FONT_BLUR3 = "v105_danmaku_font_blur3"
-        private const val KEY_V105_COLOR_MIDTONE3 = "v105_color_midtone3"
-        private const val KEY_V105_VOLUME_COMPRESSOR3 = "v105_volume_compressor3"
-        private const val KEY_V105_CAST_SUBTITLE_FONT3 = "v105_cast_subtitle_font3"
-        private const val KEY_V105_GESTURE_EDGE_PAN3 = "v105_gesture_edge_pan3"
-        private const val KEY_V105_CACHE_READ_AHEAD3 = "v105_cache_read_ahead3"
-        private const val KEY_V105_PROGRESS_BAR_COLOR3 = "v105_progress_bar_color3"
-        private const val KEY_V105_PLAYBACK_AUTO_SKIP_CREDITS2 = "v105_playback_auto_skip_credits2"
-        private const val KEY_V105_DANMAKU_FONT_GLOW_COLOR4 = "v105_danmaku_font_glow_color4"
-        private const val KEY_V105_COLOR_HIGHLIGHT3 = "v105_color_highlight3"
-        private const val KEY_V105_VOLUME_PEAK_LIMITER3 = "v105_volume_peak_limiter3"
-        private const val KEY_V105_CAST_RESOLUTION3 = "v105_cast_resolution3"
-        private const val KEY_V105_GESTURE_HAPTIC3 = "v105_gesture_haptic3"
-        private const val KEY_V105_CACHE_DISK_POLICY3 = "v105_cache_disk_policy3"
 
         // ===== v106.x KEY =====
-        private const val KEY_V106_PLAYBACK_AUTO_RESUME3 = "v106_playback_auto_resume3"
-        private const val KEY_V106_DANMAKU_FONT_BLUR3 = "v106_danmaku_font_blur3"
-        private const val KEY_V106_COLOR_MIDTONE3 = "v106_color_midtone3"
-        private const val KEY_V106_VOLUME_COMPRESSOR3 = "v106_volume_compressor3"
-        private const val KEY_V106_CAST_SUBTITLE_FONT3 = "v106_cast_subtitle_font3"
-        private const val KEY_V106_GESTURE_EDGE_PAN3 = "v106_gesture_edge_pan3"
-        private const val KEY_V106_CACHE_READ_AHEAD3 = "v106_cache_read_ahead3"
-        private const val KEY_V106_PROGRESS_BAR_COLOR3 = "v106_progress_bar_color3"
-        private const val KEY_V106_PLAYBACK_AUTO_SKIP_CREDITS2 = "v106_playback_auto_skip_credits2"
-        private const val KEY_V106_DANMAKU_FONT_GLOW_COLOR4 = "v106_danmaku_font_glow_color4"
-        private const val KEY_V106_COLOR_HIGHLIGHT3 = "v106_color_highlight3"
-        private const val KEY_V106_VOLUME_PEAK_LIMITER3 = "v106_volume_peak_limiter3"
-        private const val KEY_V106_CAST_RESOLUTION3 = "v106_cast_resolution3"
-        private const val KEY_V106_GESTURE_HAPTIC3 = "v106_gesture_haptic3"
-        private const val KEY_V106_CACHE_DISK_POLICY3 = "v106_cache_disk_policy3"
 
         // ===== v107.x KEY =====
-        private const val KEY_V107_PLAYBACK_AUTO_RESUME3 = "v107_playback_auto_resume3"
-        private const val KEY_V107_DANMAKU_FONT_BLUR3 = "v107_danmaku_font_blur3"
-        private const val KEY_V107_COLOR_MIDTONE3 = "v107_color_midtone3"
-        private const val KEY_V107_VOLUME_COMPRESSOR3 = "v107_volume_compressor3"
-        private const val KEY_V107_CAST_SUBTITLE_FONT3 = "v107_cast_subtitle_font3"
-        private const val KEY_V107_GESTURE_EDGE_PAN3 = "v107_gesture_edge_pan3"
-        private const val KEY_V107_CACHE_READ_AHEAD3 = "v107_cache_read_ahead3"
-        private const val KEY_V107_PROGRESS_BAR_COLOR3 = "v107_progress_bar_color3"
-        private const val KEY_V107_PLAYBACK_AUTO_SKIP_CREDITS2 = "v107_playback_auto_skip_credits2"
-        private const val KEY_V107_DANMAKU_FONT_GLOW_COLOR4 = "v107_danmaku_font_glow_color4"
-        private const val KEY_V107_COLOR_HIGHLIGHT3 = "v107_color_highlight3"
-        private const val KEY_V107_VOLUME_PEAK_LIMITER3 = "v107_volume_peak_limiter3"
-        private const val KEY_V107_CAST_RESOLUTION3 = "v107_cast_resolution3"
-        private const val KEY_V107_GESTURE_HAPTIC3 = "v107_gesture_haptic3"
-        private const val KEY_V107_CACHE_DISK_POLICY3 = "v107_cache_disk_policy3"
 
         // ===== v108.x KEY =====
-        private const val KEY_V108_PLAYBACK_AUTO_RESUME3 = "v108_playback_auto_resume3"
-        private const val KEY_V108_DANMAKU_FONT_BLUR3 = "v108_danmaku_font_blur3"
-        private const val KEY_V108_COLOR_MIDTONE3 = "v108_color_midtone3"
-        private const val KEY_V108_VOLUME_COMPRESSOR3 = "v108_volume_compressor3"
-        private const val KEY_V108_CAST_SUBTITLE_FONT3 = "v108_cast_subtitle_font3"
-        private const val KEY_V108_GESTURE_EDGE_PAN3 = "v108_gesture_edge_pan3"
-        private const val KEY_V108_CACHE_READ_AHEAD3 = "v108_cache_read_ahead3"
-        private const val KEY_V108_PROGRESS_BAR_COLOR3 = "v108_progress_bar_color3"
-        private const val KEY_V108_PLAYBACK_AUTO_SKIP_CREDITS2 = "v108_playback_auto_skip_credits2"
-        private const val KEY_V108_DANMAKU_FONT_GLOW_COLOR4 = "v108_danmaku_font_glow_color4"
-        private const val KEY_V108_COLOR_HIGHLIGHT3 = "v108_color_highlight3"
-        private const val KEY_V108_VOLUME_PEAK_LIMITER3 = "v108_volume_peak_limiter3"
-        private const val KEY_V108_CAST_RESOLUTION3 = "v108_cast_resolution3"
-        private const val KEY_V108_GESTURE_HAPTIC3 = "v108_gesture_haptic3"
-        private const val KEY_V108_CACHE_DISK_POLICY3 = "v108_cache_disk_policy3"
 
         // ===== v109.x KEY =====
-        private const val KEY_V109_PLAYBACK_AUTO_RESUME3 = "v109_playback_auto_resume3"
-        private const val KEY_V109_DANMAKU_FONT_BLUR3 = "v109_danmaku_font_blur3"
-        private const val KEY_V109_COLOR_MIDTONE3 = "v109_color_midtone3"
-        private const val KEY_V109_VOLUME_COMPRESSOR3 = "v109_volume_compressor3"
-        private const val KEY_V109_CAST_SUBTITLE_FONT3 = "v109_cast_subtitle_font3"
-        private const val KEY_V109_GESTURE_EDGE_PAN3 = "v109_gesture_edge_pan3"
-        private const val KEY_V109_CACHE_READ_AHEAD3 = "v109_cache_read_ahead3"
-        private const val KEY_V109_PROGRESS_BAR_COLOR3 = "v109_progress_bar_color3"
-        private const val KEY_V109_PLAYBACK_AUTO_SKIP_CREDITS2 = "v109_playback_auto_skip_credits2"
-        private const val KEY_V109_DANMAKU_FONT_GLOW_COLOR4 = "v109_danmaku_font_glow_color4"
-        private const val KEY_V109_COLOR_HIGHLIGHT3 = "v109_color_highlight3"
-        private const val KEY_V109_VOLUME_PEAK_LIMITER3 = "v109_volume_peak_limiter3"
-        private const val KEY_V109_CAST_RESOLUTION3 = "v109_cast_resolution3"
-        private const val KEY_V109_GESTURE_HAPTIC3 = "v109_gesture_haptic3"
-        private const val KEY_V109_CACHE_DISK_POLICY3 = "v109_cache_disk_policy3"
 
         // ===== v110.x KEY =====
-        private const val KEY_V110_PLAYBACK_AUTO_RESUME3 = "v110_playback_auto_resume3"
-        private const val KEY_V110_DANMAKU_FONT_BLUR3 = "v110_danmaku_font_blur3"
-        private const val KEY_V110_COLOR_MIDTONE3 = "v110_color_midtone3"
-        private const val KEY_V110_VOLUME_COMPRESSOR3 = "v110_volume_compressor3"
-        private const val KEY_V110_CAST_SUBTITLE_FONT3 = "v110_cast_subtitle_font3"
-        private const val KEY_V110_GESTURE_EDGE_PAN3 = "v110_gesture_edge_pan3"
-        private const val KEY_V110_CACHE_READ_AHEAD3 = "v110_cache_read_ahead3"
-        private const val KEY_V110_PROGRESS_BAR_COLOR3 = "v110_progress_bar_color3"
-        private const val KEY_V110_PLAYBACK_AUTO_SKIP_CREDITS2 = "v110_playback_auto_skip_credits2"
-        private const val KEY_V110_DANMAKU_FONT_GLOW_COLOR4 = "v110_danmaku_font_glow_color4"
-        private const val KEY_V110_COLOR_HIGHLIGHT3 = "v110_color_highlight3"
-        private const val KEY_V110_VOLUME_PEAK_LIMITER3 = "v110_volume_peak_limiter3"
-        private const val KEY_V110_CAST_RESOLUTION3 = "v110_cast_resolution3"
-        private const val KEY_V110_GESTURE_HAPTIC3 = "v110_gesture_haptic3"
-        private const val KEY_V110_CACHE_DISK_POLICY3 = "v110_cache_disk_policy3"
 
         // ===== v111.x KEY =====
-        private const val KEY_V111_PLAYBACK_AUTO_RESUME3 = "v111_playback_auto_resume3"
-        private const val KEY_V111_DANMAKU_FONT_BLUR3 = "v111_danmaku_font_blur3"
-        private const val KEY_V111_COLOR_MIDTONE3 = "v111_color_midtone3"
-        private const val KEY_V111_VOLUME_COMPRESSOR3 = "v111_volume_compressor3"
-        private const val KEY_V111_CAST_SUBTITLE_FONT3 = "v111_cast_subtitle_font3"
-        private const val KEY_V111_GESTURE_EDGE_PAN3 = "v111_gesture_edge_pan3"
-        private const val KEY_V111_CACHE_READ_AHEAD3 = "v111_cache_read_ahead3"
-        private const val KEY_V111_PROGRESS_BAR_COLOR3 = "v111_progress_bar_color3"
-        private const val KEY_V111_PLAYBACK_AUTO_SKIP_CREDITS2 = "v111_playback_auto_skip_credits2"
-        private const val KEY_V111_DANMAKU_FONT_GLOW_COLOR4 = "v111_danmaku_font_glow_color4"
-        private const val KEY_V111_COLOR_HIGHLIGHT3 = "v111_color_highlight3"
-        private const val KEY_V111_VOLUME_PEAK_LIMITER3 = "v111_volume_peak_limiter3"
-        private const val KEY_V111_CAST_RESOLUTION3 = "v111_cast_resolution3"
-        private const val KEY_V111_GESTURE_HAPTIC3 = "v111_gesture_haptic3"
-        private const val KEY_V111_CACHE_DISK_POLICY3 = "v111_cache_disk_policy3"
 
         // ===== v112.x KEY =====
-        private const val KEY_V112_PLAYBACK_AUTO_RESUME3 = "v112_playback_auto_resume3"
-        private const val KEY_V112_DANMAKU_FONT_BLUR3 = "v112_danmaku_font_blur3"
-        private const val KEY_V112_COLOR_MIDTONE3 = "v112_color_midtone3"
-        private const val KEY_V112_VOLUME_COMPRESSOR3 = "v112_volume_compressor3"
-        private const val KEY_V112_CAST_SUBTITLE_FONT3 = "v112_cast_subtitle_font3"
-        private const val KEY_V112_GESTURE_EDGE_PAN3 = "v112_gesture_edge_pan3"
-        private const val KEY_V112_CACHE_READ_AHEAD3 = "v112_cache_read_ahead3"
-        private const val KEY_V112_PROGRESS_BAR_COLOR3 = "v112_progress_bar_color3"
-        private const val KEY_V112_PLAYBACK_AUTO_SKIP_CREDITS2 = "v112_playback_auto_skip_credits2"
-        private const val KEY_V112_DANMAKU_FONT_GLOW_COLOR4 = "v112_danmaku_font_glow_color4"
-        private const val KEY_V112_COLOR_HIGHLIGHT3 = "v112_color_highlight3"
-        private const val KEY_V112_VOLUME_PEAK_LIMITER3 = "v112_volume_peak_limiter3"
-        private const val KEY_V112_CAST_RESOLUTION3 = "v112_cast_resolution3"
-        private const val KEY_V112_GESTURE_HAPTIC3 = "v112_gesture_haptic3"
-        private const val KEY_V112_CACHE_DISK_POLICY3 = "v112_cache_disk_policy3"
 
         // ===== v113.x KEY =====
-        private const val KEY_V113_PLAYBACK_AUTO_RESUME3 = "v113_playback_auto_resume3"
-        private const val KEY_V113_DANMAKU_FONT_BLUR3 = "v113_danmaku_font_blur3"
-        private const val KEY_V113_COLOR_MIDTONE3 = "v113_color_midtone3"
-        private const val KEY_V113_VOLUME_COMPRESSOR3 = "v113_volume_compressor3"
-        private const val KEY_V113_CAST_SUBTITLE_FONT3 = "v113_cast_subtitle_font3"
-        private const val KEY_V113_GESTURE_EDGE_PAN3 = "v113_gesture_edge_pan3"
-        private const val KEY_V113_CACHE_READ_AHEAD3 = "v113_cache_read_ahead3"
-        private const val KEY_V113_PROGRESS_BAR_COLOR3 = "v113_progress_bar_color3"
-        private const val KEY_V113_PLAYBACK_AUTO_SKIP_CREDITS2 = "v113_playback_auto_skip_credits2"
-        private const val KEY_V113_DANMAKU_FONT_GLOW_COLOR4 = "v113_danmaku_font_glow_color4"
-        private const val KEY_V113_COLOR_HIGHLIGHT3 = "v113_color_highlight3"
-        private const val KEY_V113_VOLUME_PEAK_LIMITER3 = "v113_volume_peak_limiter3"
-        private const val KEY_V113_CAST_RESOLUTION3 = "v113_cast_resolution3"
-        private const val KEY_V113_GESTURE_HAPTIC3 = "v113_gesture_haptic3"
-        private const val KEY_V113_CACHE_DISK_POLICY3 = "v113_cache_disk_policy3"
 
         // ===== v114.x KEY =====
-        private const val KEY_V114_PLAYBACK_AUTO_RESUME3 = "v114_playback_auto_resume3"
-        private const val KEY_V114_DANMAKU_FONT_BLUR3 = "v114_danmaku_font_blur3"
-        private const val KEY_V114_COLOR_MIDTONE3 = "v114_color_midtone3"
-        private const val KEY_V114_VOLUME_COMPRESSOR3 = "v114_volume_compressor3"
-        private const val KEY_V114_CAST_SUBTITLE_FONT3 = "v114_cast_subtitle_font3"
-        private const val KEY_V114_GESTURE_EDGE_PAN3 = "v114_gesture_edge_pan3"
-        private const val KEY_V114_CACHE_READ_AHEAD3 = "v114_cache_read_ahead3"
-        private const val KEY_V114_PROGRESS_BAR_COLOR3 = "v114_progress_bar_color3"
-        private const val KEY_V114_PLAYBACK_AUTO_SKIP_CREDITS2 = "v114_playback_auto_skip_credits2"
-        private const val KEY_V114_DANMAKU_FONT_GLOW_COLOR4 = "v114_danmaku_font_glow_color4"
-        private const val KEY_V114_COLOR_HIGHLIGHT3 = "v114_color_highlight3"
-        private const val KEY_V114_VOLUME_PEAK_LIMITER3 = "v114_volume_peak_limiter3"
-        private const val KEY_V114_CAST_RESOLUTION3 = "v114_cast_resolution3"
-        private const val KEY_V114_GESTURE_HAPTIC3 = "v114_gesture_haptic3"
-        private const val KEY_V114_CACHE_DISK_POLICY3 = "v114_cache_disk_policy3"
 
         // ===== v115.x KEY =====
-        private const val KEY_V115_PLAYBACK_AUTO_RESUME3 = "v115_playback_auto_resume3"
-        private const val KEY_V115_DANMAKU_FONT_BLUR3 = "v115_danmaku_font_blur3"
-        private const val KEY_V115_COLOR_MIDTONE3 = "v115_color_midtone3"
-        private const val KEY_V115_VOLUME_COMPRESSOR3 = "v115_volume_compressor3"
-        private const val KEY_V115_CAST_SUBTITLE_FONT3 = "v115_cast_subtitle_font3"
-        private const val KEY_V115_GESTURE_EDGE_PAN3 = "v115_gesture_edge_pan3"
-        private const val KEY_V115_CACHE_READ_AHEAD3 = "v115_cache_read_ahead3"
-        private const val KEY_V115_PROGRESS_BAR_COLOR3 = "v115_progress_bar_color3"
-        private const val KEY_V115_PLAYBACK_AUTO_SKIP_CREDITS2 = "v115_playback_auto_skip_credits2"
-        private const val KEY_V115_DANMAKU_FONT_GLOW_COLOR4 = "v115_danmaku_font_glow_color4"
-        private const val KEY_V115_COLOR_HIGHLIGHT3 = "v115_color_highlight3"
-        private const val KEY_V115_VOLUME_PEAK_LIMITER3 = "v115_volume_peak_limiter3"
-        private const val KEY_V115_CAST_RESOLUTION3 = "v115_cast_resolution3"
-        private const val KEY_V115_GESTURE_HAPTIC3 = "v115_gesture_haptic3"
-        private const val KEY_V115_CACHE_DISK_POLICY3 = "v115_cache_disk_policy3"
 
         // ===== v116.x KEY =====
-        private const val KEY_V116_PLAYBACK_AUTO_RESUME3 = "v116_playback_auto_resume3"
-        private const val KEY_V116_DANMAKU_FONT_BLUR3 = "v116_danmaku_font_blur3"
-        private const val KEY_V116_COLOR_MIDTONE3 = "v116_color_midtone3"
-        private const val KEY_V116_VOLUME_COMPRESSOR3 = "v116_volume_compressor3"
-        private const val KEY_V116_CAST_SUBTITLE_FONT3 = "v116_cast_subtitle_font3"
-        private const val KEY_V116_GESTURE_EDGE_PAN3 = "v116_gesture_edge_pan3"
-        private const val KEY_V116_CACHE_READ_AHEAD3 = "v116_cache_read_ahead3"
-        private const val KEY_V116_PROGRESS_BAR_COLOR3 = "v116_progress_bar_color3"
-        private const val KEY_V116_PLAYBACK_AUTO_SKIP_CREDITS2 = "v116_playback_auto_skip_credits2"
-        private const val KEY_V116_DANMAKU_FONT_GLOW_COLOR4 = "v116_danmaku_font_glow_color4"
-        private const val KEY_V116_COLOR_HIGHLIGHT3 = "v116_color_highlight3"
-        private const val KEY_V116_VOLUME_PEAK_LIMITER3 = "v116_volume_peak_limiter3"
-        private const val KEY_V116_CAST_RESOLUTION3 = "v116_cast_resolution3"
-        private const val KEY_V116_GESTURE_HAPTIC3 = "v116_gesture_haptic3"
-        private const val KEY_V116_CACHE_DISK_POLICY3 = "v116_cache_disk_policy3"
 
         // ===== v117.x KEY =====
-        private const val KEY_V117_PLAYBACK_AUTO_RESUME3 = "v117_playback_auto_resume3"
-        private const val KEY_V117_DANMAKU_FONT_BLUR3 = "v117_danmaku_font_blur3"
-        private const val KEY_V117_COLOR_MIDTONE3 = "v117_color_midtone3"
-        private const val KEY_V117_VOLUME_COMPRESSOR3 = "v117_volume_compressor3"
-        private const val KEY_V117_CAST_SUBTITLE_FONT3 = "v117_cast_subtitle_font3"
-        private const val KEY_V117_GESTURE_EDGE_PAN3 = "v117_gesture_edge_pan3"
-        private const val KEY_V117_CACHE_READ_AHEAD3 = "v117_cache_read_ahead3"
-        private const val KEY_V117_PROGRESS_BAR_COLOR3 = "v117_progress_bar_color3"
-        private const val KEY_V117_PLAYBACK_AUTO_SKIP_CREDITS2 = "v117_playback_auto_skip_credits2"
-        private const val KEY_V117_DANMAKU_FONT_GLOW_COLOR4 = "v117_danmaku_font_glow_color4"
-        private const val KEY_V117_COLOR_HIGHLIGHT3 = "v117_color_highlight3"
-        private const val KEY_V117_VOLUME_PEAK_LIMITER3 = "v117_volume_peak_limiter3"
-        private const val KEY_V117_CAST_RESOLUTION3 = "v117_cast_resolution3"
-        private const val KEY_V117_GESTURE_HAPTIC3 = "v117_gesture_haptic3"
-        private const val KEY_V117_CACHE_DISK_POLICY3 = "v117_cache_disk_policy3"
 
         // ===== v118.x KEY =====
-        private const val KEY_V118_PLAYBACK_AUTO_RESUME3 = "v118_playback_auto_resume3"
-        private const val KEY_V118_DANMAKU_FONT_BLUR3 = "v118_danmaku_font_blur3"
-        private const val KEY_V118_COLOR_MIDTONE3 = "v118_color_midtone3"
-        private const val KEY_V118_VOLUME_COMPRESSOR3 = "v118_volume_compressor3"
-        private const val KEY_V118_CAST_SUBTITLE_FONT3 = "v118_cast_subtitle_font3"
-        private const val KEY_V118_GESTURE_EDGE_PAN3 = "v118_gesture_edge_pan3"
-        private const val KEY_V118_CACHE_READ_AHEAD3 = "v118_cache_read_ahead3"
-        private const val KEY_V118_PROGRESS_BAR_COLOR3 = "v118_progress_bar_color3"
-        private const val KEY_V118_PLAYBACK_AUTO_SKIP_CREDITS2 = "v118_playback_auto_skip_credits2"
-        private const val KEY_V118_DANMAKU_FONT_GLOW_COLOR4 = "v118_danmaku_font_glow_color4"
-        private const val KEY_V118_COLOR_HIGHLIGHT3 = "v118_color_highlight3"
-        private const val KEY_V118_VOLUME_PEAK_LIMITER3 = "v118_volume_peak_limiter3"
-        private const val KEY_V118_CAST_RESOLUTION3 = "v118_cast_resolution3"
-        private const val KEY_V118_GESTURE_HAPTIC3 = "v118_gesture_haptic3"
-        private const val KEY_V118_CACHE_DISK_POLICY3 = "v118_cache_disk_policy3"
 
         // ===== v119.x KEY =====
-        private const val KEY_V119_PLAYBACK_AUTO_RESUME3 = "v119_playback_auto_resume3"
-        private const val KEY_V119_DANMAKU_FONT_BLUR3 = "v119_danmaku_font_blur3"
-        private const val KEY_V119_COLOR_MIDTONE3 = "v119_color_midtone3"
-        private const val KEY_V119_VOLUME_COMPRESSOR3 = "v119_volume_compressor3"
-        private const val KEY_V119_CAST_SUBTITLE_FONT3 = "v119_cast_subtitle_font3"
-        private const val KEY_V119_GESTURE_EDGE_PAN3 = "v119_gesture_edge_pan3"
-        private const val KEY_V119_CACHE_READ_AHEAD3 = "v119_cache_read_ahead3"
-        private const val KEY_V119_PROGRESS_BAR_COLOR3 = "v119_progress_bar_color3"
-        private const val KEY_V119_PLAYBACK_AUTO_SKIP_CREDITS2 = "v119_playback_auto_skip_credits2"
-        private const val KEY_V119_DANMAKU_FONT_GLOW_COLOR4 = "v119_danmaku_font_glow_color4"
-        private const val KEY_V119_COLOR_HIGHLIGHT3 = "v119_color_highlight3"
-        private const val KEY_V119_VOLUME_PEAK_LIMITER3 = "v119_volume_peak_limiter3"
-        private const val KEY_V119_CAST_RESOLUTION3 = "v119_cast_resolution3"
-        private const val KEY_V119_GESTURE_HAPTIC3 = "v119_gesture_haptic3"
-        private const val KEY_V119_CACHE_DISK_POLICY3 = "v119_cache_disk_policy3"
 
         // ===== v120.x KEY =====
-        private const val KEY_V120_PLAYBACK_AUTO_RESUME3 = "v120_playback_auto_resume3"
-        private const val KEY_V120_DANMAKU_FONT_BLUR3 = "v120_danmaku_font_blur3"
-        private const val KEY_V120_COLOR_MIDTONE3 = "v120_color_midtone3"
-        private const val KEY_V120_VOLUME_COMPRESSOR3 = "v120_volume_compressor3"
-        private const val KEY_V120_CAST_SUBTITLE_FONT3 = "v120_cast_subtitle_font3"
-        private const val KEY_V120_GESTURE_EDGE_PAN3 = "v120_gesture_edge_pan3"
-        private const val KEY_V120_CACHE_READ_AHEAD3 = "v120_cache_read_ahead3"
-        private const val KEY_V120_PROGRESS_BAR_COLOR3 = "v120_progress_bar_color3"
-        private const val KEY_V120_PLAYBACK_AUTO_SKIP_CREDITS2 = "v120_playback_auto_skip_credits2"
-        private const val KEY_V120_DANMAKU_FONT_GLOW_COLOR4 = "v120_danmaku_font_glow_color4"
-        private const val KEY_V120_COLOR_HIGHLIGHT3 = "v120_color_highlight3"
-        private const val KEY_V120_VOLUME_PEAK_LIMITER3 = "v120_volume_peak_limiter3"
-        private const val KEY_V120_CAST_RESOLUTION3 = "v120_cast_resolution3"
-        private const val KEY_V120_GESTURE_HAPTIC3 = "v120_gesture_haptic3"
-        private const val KEY_V120_CACHE_DISK_POLICY3 = "v120_cache_disk_policy3"
 
                 // ===== v91.x KEY =====
         private const val KEY_V91_PLAYBACK_SMART_BUFFER3 = "v91_playback_smart_buffer3"
@@ -11055,160 +6420,24 @@ class AppPrefs(context: Context) {
         private const val KEY_V91_CACHE_AUTO_CLEAR3 = "v91_cache_auto_clear3"
 
         // ===== v92.x KEY =====
-        private const val KEY_V92_PLAYBACK_SMART_BUFFER3 = "v92_playback_smart_buffer3"
-        private const val KEY_V92_DANMAKU_FONT_ALPHA3 = "v92_danmaku_font_alpha3"
-        private const val KEY_V92_COLOR_SATURATION3 = "v92_color_saturation3"
-        private const val KEY_V92_VOLUME_LIMITER3 = "v92_volume_limiter3"
-        private const val KEY_V92_CAST_BANDWIDTH3 = "v92_cast_bandwidth3"
-        private const val KEY_V92_GESTURE_PINCH_ZOOM3 = "v92_gesture_pinch_zoom3"
-        private const val KEY_V92_CACHE_ENCRYPT3 = "v92_cache_encrypt3"
-        private const val KEY_V92_PROGRESS_BAR_THUMB_SIZE3 = "v92_progress_bar_thumb_size3"
-        private const val KEY_V92_PLAYBACK_AUTO_LOOP2 = "v92_playback_auto_loop2"
-        private const val KEY_V92_DANMAKU_FILTER_SCORE4 = "v92_danmaku_filter_score4"
-        private const val KEY_V92_COLOR_CONTRAST3 = "v92_color_contrast3"
-        private const val KEY_V92_VOLUME_EQ3 = "v92_volume_eq3"
-        private const val KEY_V92_CAST_AUTO_RECONNECT4 = "v92_cast_auto_reconnect4"
-        private const val KEY_V92_GESTURE_ROTATION3 = "v92_gesture_rotation3"
-        private const val KEY_V92_CACHE_AUTO_CLEAR3 = "v92_cache_auto_clear3"
 
         // ===== v93.x KEY =====
-        private const val KEY_V93_PLAYBACK_SMART_BUFFER3 = "v93_playback_smart_buffer3"
-        private const val KEY_V93_DANMAKU_FONT_ALPHA3 = "v93_danmaku_font_alpha3"
-        private const val KEY_V93_COLOR_SATURATION3 = "v93_color_saturation3"
-        private const val KEY_V93_VOLUME_LIMITER3 = "v93_volume_limiter3"
-        private const val KEY_V93_CAST_BANDWIDTH3 = "v93_cast_bandwidth3"
-        private const val KEY_V93_GESTURE_PINCH_ZOOM3 = "v93_gesture_pinch_zoom3"
-        private const val KEY_V93_CACHE_ENCRYPT3 = "v93_cache_encrypt3"
-        private const val KEY_V93_PROGRESS_BAR_THUMB_SIZE3 = "v93_progress_bar_thumb_size3"
-        private const val KEY_V93_PLAYBACK_AUTO_LOOP2 = "v93_playback_auto_loop2"
-        private const val KEY_V93_DANMAKU_FILTER_SCORE4 = "v93_danmaku_filter_score4"
-        private const val KEY_V93_COLOR_CONTRAST3 = "v93_color_contrast3"
-        private const val KEY_V93_VOLUME_EQ3 = "v93_volume_eq3"
-        private const val KEY_V93_CAST_AUTO_RECONNECT4 = "v93_cast_auto_reconnect4"
-        private const val KEY_V93_GESTURE_ROTATION3 = "v93_gesture_rotation3"
-        private const val KEY_V93_CACHE_AUTO_CLEAR3 = "v93_cache_auto_clear3"
 
         // ===== v94.x KEY =====
-        private const val KEY_V94_PLAYBACK_SMART_BUFFER3 = "v94_playback_smart_buffer3"
-        private const val KEY_V94_DANMAKU_FONT_ALPHA3 = "v94_danmaku_font_alpha3"
-        private const val KEY_V94_COLOR_SATURATION3 = "v94_color_saturation3"
-        private const val KEY_V94_VOLUME_LIMITER3 = "v94_volume_limiter3"
-        private const val KEY_V94_CAST_BANDWIDTH3 = "v94_cast_bandwidth3"
-        private const val KEY_V94_GESTURE_PINCH_ZOOM3 = "v94_gesture_pinch_zoom3"
-        private const val KEY_V94_CACHE_ENCRYPT3 = "v94_cache_encrypt3"
-        private const val KEY_V94_PROGRESS_BAR_THUMB_SIZE3 = "v94_progress_bar_thumb_size3"
-        private const val KEY_V94_PLAYBACK_AUTO_LOOP2 = "v94_playback_auto_loop2"
-        private const val KEY_V94_DANMAKU_FILTER_SCORE4 = "v94_danmaku_filter_score4"
-        private const val KEY_V94_COLOR_CONTRAST3 = "v94_color_contrast3"
-        private const val KEY_V94_VOLUME_EQ3 = "v94_volume_eq3"
-        private const val KEY_V94_CAST_AUTO_RECONNECT4 = "v94_cast_auto_reconnect4"
-        private const val KEY_V94_GESTURE_ROTATION3 = "v94_gesture_rotation3"
-        private const val KEY_V94_CACHE_AUTO_CLEAR3 = "v94_cache_auto_clear3"
 
         // ===== v95.x KEY =====
-        private const val KEY_V95_PLAYBACK_SMART_BUFFER3 = "v95_playback_smart_buffer3"
-        private const val KEY_V95_DANMAKU_FONT_ALPHA3 = "v95_danmaku_font_alpha3"
-        private const val KEY_V95_COLOR_SATURATION3 = "v95_color_saturation3"
-        private const val KEY_V95_VOLUME_LIMITER3 = "v95_volume_limiter3"
-        private const val KEY_V95_CAST_BANDWIDTH3 = "v95_cast_bandwidth3"
-        private const val KEY_V95_GESTURE_PINCH_ZOOM3 = "v95_gesture_pinch_zoom3"
-        private const val KEY_V95_CACHE_ENCRYPT3 = "v95_cache_encrypt3"
-        private const val KEY_V95_PROGRESS_BAR_THUMB_SIZE3 = "v95_progress_bar_thumb_size3"
-        private const val KEY_V95_PLAYBACK_AUTO_LOOP2 = "v95_playback_auto_loop2"
-        private const val KEY_V95_DANMAKU_FILTER_SCORE4 = "v95_danmaku_filter_score4"
-        private const val KEY_V95_COLOR_CONTRAST3 = "v95_color_contrast3"
-        private const val KEY_V95_VOLUME_EQ3 = "v95_volume_eq3"
-        private const val KEY_V95_CAST_AUTO_RECONNECT4 = "v95_cast_auto_reconnect4"
-        private const val KEY_V95_GESTURE_ROTATION3 = "v95_gesture_rotation3"
-        private const val KEY_V95_CACHE_AUTO_CLEAR3 = "v95_cache_auto_clear3"
 
         // ===== v96.x KEY =====
-        private const val KEY_V96_PLAYBACK_SMART_BUFFER3 = "v96_playback_smart_buffer3"
-        private const val KEY_V96_DANMAKU_FONT_ALPHA3 = "v96_danmaku_font_alpha3"
-        private const val KEY_V96_COLOR_SATURATION3 = "v96_color_saturation3"
-        private const val KEY_V96_VOLUME_LIMITER3 = "v96_volume_limiter3"
-        private const val KEY_V96_CAST_BANDWIDTH3 = "v96_cast_bandwidth3"
-        private const val KEY_V96_GESTURE_PINCH_ZOOM3 = "v96_gesture_pinch_zoom3"
-        private const val KEY_V96_CACHE_ENCRYPT3 = "v96_cache_encrypt3"
-        private const val KEY_V96_PROGRESS_BAR_THUMB_SIZE3 = "v96_progress_bar_thumb_size3"
-        private const val KEY_V96_PLAYBACK_AUTO_LOOP2 = "v96_playback_auto_loop2"
-        private const val KEY_V96_DANMAKU_FILTER_SCORE4 = "v96_danmaku_filter_score4"
-        private const val KEY_V96_COLOR_CONTRAST3 = "v96_color_contrast3"
-        private const val KEY_V96_VOLUME_EQ3 = "v96_volume_eq3"
-        private const val KEY_V96_CAST_AUTO_RECONNECT4 = "v96_cast_auto_reconnect4"
-        private const val KEY_V96_GESTURE_ROTATION3 = "v96_gesture_rotation3"
-        private const val KEY_V96_CACHE_AUTO_CLEAR3 = "v96_cache_auto_clear3"
 
         // ===== v97.x KEY =====
-        private const val KEY_V97_PLAYBACK_SMART_BUFFER3 = "v97_playback_smart_buffer3"
-        private const val KEY_V97_DANMAKU_FONT_ALPHA3 = "v97_danmaku_font_alpha3"
-        private const val KEY_V97_COLOR_SATURATION3 = "v97_color_saturation3"
-        private const val KEY_V97_VOLUME_LIMITER3 = "v97_volume_limiter3"
-        private const val KEY_V97_CAST_BANDWIDTH3 = "v97_cast_bandwidth3"
-        private const val KEY_V97_GESTURE_PINCH_ZOOM3 = "v97_gesture_pinch_zoom3"
-        private const val KEY_V97_CACHE_ENCRYPT3 = "v97_cache_encrypt3"
-        private const val KEY_V97_PROGRESS_BAR_THUMB_SIZE3 = "v97_progress_bar_thumb_size3"
-        private const val KEY_V97_PLAYBACK_AUTO_LOOP2 = "v97_playback_auto_loop2"
-        private const val KEY_V97_DANMAKU_FILTER_SCORE4 = "v97_danmaku_filter_score4"
-        private const val KEY_V97_COLOR_CONTRAST3 = "v97_color_contrast3"
-        private const val KEY_V97_VOLUME_EQ3 = "v97_volume_eq3"
-        private const val KEY_V97_CAST_AUTO_RECONNECT4 = "v97_cast_auto_reconnect4"
-        private const val KEY_V97_GESTURE_ROTATION3 = "v97_gesture_rotation3"
-        private const val KEY_V97_CACHE_AUTO_CLEAR3 = "v97_cache_auto_clear3"
 
         // ===== v98.x KEY =====
-        private const val KEY_V98_PLAYBACK_SMART_BUFFER3 = "v98_playback_smart_buffer3"
-        private const val KEY_V98_DANMAKU_FONT_ALPHA3 = "v98_danmaku_font_alpha3"
-        private const val KEY_V98_COLOR_SATURATION3 = "v98_color_saturation3"
-        private const val KEY_V98_VOLUME_LIMITER3 = "v98_volume_limiter3"
-        private const val KEY_V98_CAST_BANDWIDTH3 = "v98_cast_bandwidth3"
-        private const val KEY_V98_GESTURE_PINCH_ZOOM3 = "v98_gesture_pinch_zoom3"
-        private const val KEY_V98_CACHE_ENCRYPT3 = "v98_cache_encrypt3"
-        private const val KEY_V98_PROGRESS_BAR_THUMB_SIZE3 = "v98_progress_bar_thumb_size3"
-        private const val KEY_V98_PLAYBACK_AUTO_LOOP2 = "v98_playback_auto_loop2"
-        private const val KEY_V98_DANMAKU_FILTER_SCORE4 = "v98_danmaku_filter_score4"
-        private const val KEY_V98_COLOR_CONTRAST3 = "v98_color_contrast3"
-        private const val KEY_V98_VOLUME_EQ3 = "v98_volume_eq3"
-        private const val KEY_V98_CAST_AUTO_RECONNECT4 = "v98_cast_auto_reconnect4"
-        private const val KEY_V98_GESTURE_ROTATION3 = "v98_gesture_rotation3"
-        private const val KEY_V98_CACHE_AUTO_CLEAR3 = "v98_cache_auto_clear3"
 
         // ===== v99.x KEY =====
-        private const val KEY_V99_PLAYBACK_SMART_BUFFER3 = "v99_playback_smart_buffer3"
-        private const val KEY_V99_DANMAKU_FONT_ALPHA3 = "v99_danmaku_font_alpha3"
-        private const val KEY_V99_COLOR_SATURATION3 = "v99_color_saturation3"
-        private const val KEY_V99_VOLUME_LIMITER3 = "v99_volume_limiter3"
-        private const val KEY_V99_CAST_BANDWIDTH3 = "v99_cast_bandwidth3"
-        private const val KEY_V99_GESTURE_PINCH_ZOOM3 = "v99_gesture_pinch_zoom3"
-        private const val KEY_V99_CACHE_ENCRYPT3 = "v99_cache_encrypt3"
-        private const val KEY_V99_PROGRESS_BAR_THUMB_SIZE3 = "v99_progress_bar_thumb_size3"
-        private const val KEY_V99_PLAYBACK_AUTO_LOOP2 = "v99_playback_auto_loop2"
-        private const val KEY_V99_DANMAKU_FILTER_SCORE4 = "v99_danmaku_filter_score4"
-        private const val KEY_V99_COLOR_CONTRAST3 = "v99_color_contrast3"
-        private const val KEY_V99_VOLUME_EQ3 = "v99_volume_eq3"
-        private const val KEY_V99_CAST_AUTO_RECONNECT4 = "v99_cast_auto_reconnect4"
-        private const val KEY_V99_GESTURE_ROTATION3 = "v99_gesture_rotation3"
-        private const val KEY_V99_CACHE_AUTO_CLEAR3 = "v99_cache_auto_clear3"
 
         // ===== v100.x KEY =====
-        private const val KEY_V100_PLAYBACK_SMART_BUFFER3 = "v100_playback_smart_buffer3"
-        private const val KEY_V100_DANMAKU_FONT_ALPHA3 = "v100_danmaku_font_alpha3"
-        private const val KEY_V100_COLOR_SATURATION3 = "v100_color_saturation3"
-        private const val KEY_V100_VOLUME_LIMITER3 = "v100_volume_limiter3"
-        private const val KEY_V100_CAST_BANDWIDTH3 = "v100_cast_bandwidth3"
-        private const val KEY_V100_GESTURE_PINCH_ZOOM3 = "v100_gesture_pinch_zoom3"
-        private const val KEY_V100_CACHE_ENCRYPT3 = "v100_cache_encrypt3"
-        private const val KEY_V100_PROGRESS_BAR_THUMB_SIZE3 = "v100_progress_bar_thumb_size3"
-        private const val KEY_V100_PLAYBACK_AUTO_LOOP2 = "v100_playback_auto_loop2"
-        private const val KEY_V100_DANMAKU_FILTER_SCORE4 = "v100_danmaku_filter_score4"
-        private const val KEY_V100_COLOR_CONTRAST3 = "v100_color_contrast3"
-        private const val KEY_V100_VOLUME_EQ3 = "v100_volume_eq3"
-        private const val KEY_V100_CAST_AUTO_RECONNECT4 = "v100_cast_auto_reconnect4"
-        private const val KEY_V100_GESTURE_ROTATION3 = "v100_gesture_rotation3"
-        private const val KEY_V100_CACHE_AUTO_CLEAR3 = "v100_cache_auto_clear3"
 
                 // ===== v71.x KEY =====
-        private const val KEY_V71_PLAYBACK_AUTO_SKIP_RECAP = "v71_playback_auto_skip_recap"
         private const val KEY_V71_DANMAKU_FONT_GLOW_SIZE3 = "v71_danmaku_font_glow_size3"
         private const val KEY_V71_COLOR_LIFT2 = "v71_color_lift2"
         private const val KEY_V71_VOLUME_SURROUND2 = "v71_volume_surround2"
@@ -11225,327 +6454,42 @@ class AppPrefs(context: Context) {
         private const val KEY_V71_CACHE_PREFETCH_SIZE2 = "v71_cache_prefetch_size2"
 
         // ===== v72.x KEY =====
-        private const val KEY_V72_PLAYBACK_AUTO_SKIP_RECAP = "v72_playback_auto_skip_recap"
-        private const val KEY_V72_DANMAKU_FONT_GLOW_SIZE3 = "v72_danmaku_font_glow_size3"
-        private const val KEY_V72_COLOR_LIFT2 = "v72_color_lift2"
-        private const val KEY_V72_VOLUME_SURROUND2 = "v72_volume_surround2"
-        private const val KEY_V72_CAST_SUBTITLE_SYNC2 = "v72_cast_subtitle_sync2"
-        private const val KEY_V72_GESTURE_SWIPE_SPEED2 = "v72_gesture_swipe_speed2"
-        private const val KEY_V72_CACHE_MAX_SIZE2 = "v72_cache_max_size2"
-        private const val KEY_V72_PROGRESS_BAR_SENSITIVITY2 = "v72_progress_bar_sensitivity2"
-        private const val KEY_V72_PLAYBACK_SMART_SPEED = "v72_playback_smart_speed"
-        private const val KEY_V72_DANMAKU_FONT_WEIGHT4 = "v72_danmaku_font_weight4"
-        private const val KEY_V72_COLOR_GAMMA2 = "v72_color_gamma2"
-        private const val KEY_V72_VOLUME_BASS2 = "v72_volume_bass2"
-        private const val KEY_V72_CAST_VIDEO_QUALITY2 = "v72_cast_video_quality2"
-        private const val KEY_V72_GESTURE_DOUBLE_TAP_SPEED = "v72_gesture_double_tap_speed"
-        private const val KEY_V72_CACHE_PREFETCH_SIZE2 = "v72_cache_prefetch_size2"
 
         // ===== v73.x KEY =====
-        private const val KEY_V73_PLAYBACK_AUTO_SKIP_RECAP = "v73_playback_auto_skip_recap"
-        private const val KEY_V73_DANMAKU_FONT_GLOW_SIZE3 = "v73_danmaku_font_glow_size3"
-        private const val KEY_V73_COLOR_LIFT2 = "v73_color_lift2"
-        private const val KEY_V73_VOLUME_SURROUND2 = "v73_volume_surround2"
-        private const val KEY_V73_CAST_SUBTITLE_SYNC2 = "v73_cast_subtitle_sync2"
-        private const val KEY_V73_GESTURE_SWIPE_SPEED2 = "v73_gesture_swipe_speed2"
-        private const val KEY_V73_CACHE_MAX_SIZE2 = "v73_cache_max_size2"
-        private const val KEY_V73_PROGRESS_BAR_SENSITIVITY2 = "v73_progress_bar_sensitivity2"
-        private const val KEY_V73_PLAYBACK_SMART_SPEED = "v73_playback_smart_speed"
-        private const val KEY_V73_DANMAKU_FONT_WEIGHT4 = "v73_danmaku_font_weight4"
-        private const val KEY_V73_COLOR_GAMMA2 = "v73_color_gamma2"
-        private const val KEY_V73_VOLUME_BASS2 = "v73_volume_bass2"
-        private const val KEY_V73_CAST_VIDEO_QUALITY2 = "v73_cast_video_quality2"
-        private const val KEY_V73_GESTURE_DOUBLE_TAP_SPEED = "v73_gesture_double_tap_speed"
-        private const val KEY_V73_CACHE_PREFETCH_SIZE2 = "v73_cache_prefetch_size2"
 
         // ===== v74.x KEY =====
-        private const val KEY_V74_PLAYBACK_AUTO_SKIP_RECAP = "v74_playback_auto_skip_recap"
-        private const val KEY_V74_DANMAKU_FONT_GLOW_SIZE3 = "v74_danmaku_font_glow_size3"
-        private const val KEY_V74_COLOR_LIFT2 = "v74_color_lift2"
-        private const val KEY_V74_VOLUME_SURROUND2 = "v74_volume_surround2"
-        private const val KEY_V74_CAST_SUBTITLE_SYNC2 = "v74_cast_subtitle_sync2"
-        private const val KEY_V74_GESTURE_SWIPE_SPEED2 = "v74_gesture_swipe_speed2"
-        private const val KEY_V74_CACHE_MAX_SIZE2 = "v74_cache_max_size2"
-        private const val KEY_V74_PROGRESS_BAR_SENSITIVITY2 = "v74_progress_bar_sensitivity2"
-        private const val KEY_V74_PLAYBACK_SMART_SPEED = "v74_playback_smart_speed"
-        private const val KEY_V74_DANMAKU_FONT_WEIGHT4 = "v74_danmaku_font_weight4"
-        private const val KEY_V74_COLOR_GAMMA2 = "v74_color_gamma2"
-        private const val KEY_V74_VOLUME_BASS2 = "v74_volume_bass2"
-        private const val KEY_V74_CAST_VIDEO_QUALITY2 = "v74_cast_video_quality2"
-        private const val KEY_V74_GESTURE_DOUBLE_TAP_SPEED = "v74_gesture_double_tap_speed"
-        private const val KEY_V74_CACHE_PREFETCH_SIZE2 = "v74_cache_prefetch_size2"
 
         // ===== v75.x KEY =====
-        private const val KEY_V75_PLAYBACK_AUTO_SKIP_RECAP = "v75_playback_auto_skip_recap"
-        private const val KEY_V75_DANMAKU_FONT_GLOW_SIZE3 = "v75_danmaku_font_glow_size3"
-        private const val KEY_V75_COLOR_LIFT2 = "v75_color_lift2"
-        private const val KEY_V75_VOLUME_SURROUND2 = "v75_volume_surround2"
-        private const val KEY_V75_CAST_SUBTITLE_SYNC2 = "v75_cast_subtitle_sync2"
-        private const val KEY_V75_GESTURE_SWIPE_SPEED2 = "v75_gesture_swipe_speed2"
-        private const val KEY_V75_CACHE_MAX_SIZE2 = "v75_cache_max_size2"
-        private const val KEY_V75_PROGRESS_BAR_SENSITIVITY2 = "v75_progress_bar_sensitivity2"
-        private const val KEY_V75_PLAYBACK_SMART_SPEED = "v75_playback_smart_speed"
-        private const val KEY_V75_DANMAKU_FONT_WEIGHT4 = "v75_danmaku_font_weight4"
-        private const val KEY_V75_COLOR_GAMMA2 = "v75_color_gamma2"
-        private const val KEY_V75_VOLUME_BASS2 = "v75_volume_bass2"
-        private const val KEY_V75_CAST_VIDEO_QUALITY2 = "v75_cast_video_quality2"
-        private const val KEY_V75_GESTURE_DOUBLE_TAP_SPEED = "v75_gesture_double_tap_speed"
-        private const val KEY_V75_CACHE_PREFETCH_SIZE2 = "v75_cache_prefetch_size2"
 
         // ===== v76.x KEY =====
-        private const val KEY_V76_PLAYBACK_AUTO_SKIP_RECAP = "v76_playback_auto_skip_recap"
-        private const val KEY_V76_DANMAKU_FONT_GLOW_SIZE3 = "v76_danmaku_font_glow_size3"
-        private const val KEY_V76_COLOR_LIFT2 = "v76_color_lift2"
-        private const val KEY_V76_VOLUME_SURROUND2 = "v76_volume_surround2"
-        private const val KEY_V76_CAST_SUBTITLE_SYNC2 = "v76_cast_subtitle_sync2"
-        private const val KEY_V76_GESTURE_SWIPE_SPEED2 = "v76_gesture_swipe_speed2"
-        private const val KEY_V76_CACHE_MAX_SIZE2 = "v76_cache_max_size2"
-        private const val KEY_V76_PROGRESS_BAR_SENSITIVITY2 = "v76_progress_bar_sensitivity2"
-        private const val KEY_V76_PLAYBACK_SMART_SPEED = "v76_playback_smart_speed"
-        private const val KEY_V76_DANMAKU_FONT_WEIGHT4 = "v76_danmaku_font_weight4"
-        private const val KEY_V76_COLOR_GAMMA2 = "v76_color_gamma2"
-        private const val KEY_V76_VOLUME_BASS2 = "v76_volume_bass2"
-        private const val KEY_V76_CAST_VIDEO_QUALITY2 = "v76_cast_video_quality2"
-        private const val KEY_V76_GESTURE_DOUBLE_TAP_SPEED = "v76_gesture_double_tap_speed"
-        private const val KEY_V76_CACHE_PREFETCH_SIZE2 = "v76_cache_prefetch_size2"
 
         // ===== v77.x KEY =====
-        private const val KEY_V77_PLAYBACK_AUTO_SKIP_RECAP = "v77_playback_auto_skip_recap"
-        private const val KEY_V77_DANMAKU_FONT_GLOW_SIZE3 = "v77_danmaku_font_glow_size3"
-        private const val KEY_V77_COLOR_LIFT2 = "v77_color_lift2"
-        private const val KEY_V77_VOLUME_SURROUND2 = "v77_volume_surround2"
-        private const val KEY_V77_CAST_SUBTITLE_SYNC2 = "v77_cast_subtitle_sync2"
-        private const val KEY_V77_GESTURE_SWIPE_SPEED2 = "v77_gesture_swipe_speed2"
-        private const val KEY_V77_CACHE_MAX_SIZE2 = "v77_cache_max_size2"
-        private const val KEY_V77_PROGRESS_BAR_SENSITIVITY2 = "v77_progress_bar_sensitivity2"
-        private const val KEY_V77_PLAYBACK_SMART_SPEED = "v77_playback_smart_speed"
-        private const val KEY_V77_DANMAKU_FONT_WEIGHT4 = "v77_danmaku_font_weight4"
-        private const val KEY_V77_COLOR_GAMMA2 = "v77_color_gamma2"
-        private const val KEY_V77_VOLUME_BASS2 = "v77_volume_bass2"
-        private const val KEY_V77_CAST_VIDEO_QUALITY2 = "v77_cast_video_quality2"
-        private const val KEY_V77_GESTURE_DOUBLE_TAP_SPEED = "v77_gesture_double_tap_speed"
-        private const val KEY_V77_CACHE_PREFETCH_SIZE2 = "v77_cache_prefetch_size2"
 
         // ===== v78.x KEY =====
-        private const val KEY_V78_PLAYBACK_AUTO_SKIP_RECAP = "v78_playback_auto_skip_recap"
-        private const val KEY_V78_DANMAKU_FONT_GLOW_SIZE3 = "v78_danmaku_font_glow_size3"
-        private const val KEY_V78_COLOR_LIFT2 = "v78_color_lift2"
-        private const val KEY_V78_VOLUME_SURROUND2 = "v78_volume_surround2"
-        private const val KEY_V78_CAST_SUBTITLE_SYNC2 = "v78_cast_subtitle_sync2"
-        private const val KEY_V78_GESTURE_SWIPE_SPEED2 = "v78_gesture_swipe_speed2"
-        private const val KEY_V78_CACHE_MAX_SIZE2 = "v78_cache_max_size2"
-        private const val KEY_V78_PROGRESS_BAR_SENSITIVITY2 = "v78_progress_bar_sensitivity2"
-        private const val KEY_V78_PLAYBACK_SMART_SPEED = "v78_playback_smart_speed"
-        private const val KEY_V78_DANMAKU_FONT_WEIGHT4 = "v78_danmaku_font_weight4"
-        private const val KEY_V78_COLOR_GAMMA2 = "v78_color_gamma2"
-        private const val KEY_V78_VOLUME_BASS2 = "v78_volume_bass2"
-        private const val KEY_V78_CAST_VIDEO_QUALITY2 = "v78_cast_video_quality2"
-        private const val KEY_V78_GESTURE_DOUBLE_TAP_SPEED = "v78_gesture_double_tap_speed"
-        private const val KEY_V78_CACHE_PREFETCH_SIZE2 = "v78_cache_prefetch_size2"
 
         // ===== v79.x KEY =====
-        private const val KEY_V79_PLAYBACK_AUTO_SKIP_RECAP = "v79_playback_auto_skip_recap"
-        private const val KEY_V79_DANMAKU_FONT_GLOW_SIZE3 = "v79_danmaku_font_glow_size3"
-        private const val KEY_V79_COLOR_LIFT2 = "v79_color_lift2"
-        private const val KEY_V79_VOLUME_SURROUND2 = "v79_volume_surround2"
-        private const val KEY_V79_CAST_SUBTITLE_SYNC2 = "v79_cast_subtitle_sync2"
-        private const val KEY_V79_GESTURE_SWIPE_SPEED2 = "v79_gesture_swipe_speed2"
-        private const val KEY_V79_CACHE_MAX_SIZE2 = "v79_cache_max_size2"
-        private const val KEY_V79_PROGRESS_BAR_SENSITIVITY2 = "v79_progress_bar_sensitivity2"
-        private const val KEY_V79_PLAYBACK_SMART_SPEED = "v79_playback_smart_speed"
-        private const val KEY_V79_DANMAKU_FONT_WEIGHT4 = "v79_danmaku_font_weight4"
-        private const val KEY_V79_COLOR_GAMMA2 = "v79_color_gamma2"
-        private const val KEY_V79_VOLUME_BASS2 = "v79_volume_bass2"
-        private const val KEY_V79_CAST_VIDEO_QUALITY2 = "v79_cast_video_quality2"
-        private const val KEY_V79_GESTURE_DOUBLE_TAP_SPEED = "v79_gesture_double_tap_speed"
-        private const val KEY_V79_CACHE_PREFETCH_SIZE2 = "v79_cache_prefetch_size2"
 
         // ===== v80.x KEY =====
-        private const val KEY_V80_PLAYBACK_AUTO_SKIP_RECAP = "v80_playback_auto_skip_recap"
-        private const val KEY_V80_DANMAKU_FONT_GLOW_SIZE3 = "v80_danmaku_font_glow_size3"
-        private const val KEY_V80_COLOR_LIFT2 = "v80_color_lift2"
-        private const val KEY_V80_VOLUME_SURROUND2 = "v80_volume_surround2"
-        private const val KEY_V80_CAST_SUBTITLE_SYNC2 = "v80_cast_subtitle_sync2"
-        private const val KEY_V80_GESTURE_SWIPE_SPEED2 = "v80_gesture_swipe_speed2"
-        private const val KEY_V80_CACHE_MAX_SIZE2 = "v80_cache_max_size2"
-        private const val KEY_V80_PROGRESS_BAR_SENSITIVITY2 = "v80_progress_bar_sensitivity2"
-        private const val KEY_V80_PLAYBACK_SMART_SPEED = "v80_playback_smart_speed"
-        private const val KEY_V80_DANMAKU_FONT_WEIGHT4 = "v80_danmaku_font_weight4"
-        private const val KEY_V80_COLOR_GAMMA2 = "v80_color_gamma2"
-        private const val KEY_V80_VOLUME_BASS2 = "v80_volume_bass2"
-        private const val KEY_V80_CAST_VIDEO_QUALITY2 = "v80_cast_video_quality2"
-        private const val KEY_V80_GESTURE_DOUBLE_TAP_SPEED = "v80_gesture_double_tap_speed"
-        private const val KEY_V80_CACHE_PREFETCH_SIZE2 = "v80_cache_prefetch_size2"
 
         // ===== v81.x KEY =====
-        private const val KEY_V81_PLAYBACK_AUTO_SKIP_RECAP = "v81_playback_auto_skip_recap"
-        private const val KEY_V81_DANMAKU_FONT_GLOW_SIZE3 = "v81_danmaku_font_glow_size3"
-        private const val KEY_V81_COLOR_LIFT2 = "v81_color_lift2"
-        private const val KEY_V81_VOLUME_SURROUND2 = "v81_volume_surround2"
-        private const val KEY_V81_CAST_SUBTITLE_SYNC2 = "v81_cast_subtitle_sync2"
-        private const val KEY_V81_GESTURE_SWIPE_SPEED2 = "v81_gesture_swipe_speed2"
-        private const val KEY_V81_CACHE_MAX_SIZE2 = "v81_cache_max_size2"
-        private const val KEY_V81_PROGRESS_BAR_SENSITIVITY2 = "v81_progress_bar_sensitivity2"
-        private const val KEY_V81_PLAYBACK_SMART_SPEED = "v81_playback_smart_speed"
-        private const val KEY_V81_DANMAKU_FONT_WEIGHT4 = "v81_danmaku_font_weight4"
-        private const val KEY_V81_COLOR_GAMMA2 = "v81_color_gamma2"
-        private const val KEY_V81_VOLUME_BASS2 = "v81_volume_bass2"
-        private const val KEY_V81_CAST_VIDEO_QUALITY2 = "v81_cast_video_quality2"
-        private const val KEY_V81_GESTURE_DOUBLE_TAP_SPEED = "v81_gesture_double_tap_speed"
-        private const val KEY_V81_CACHE_PREFETCH_SIZE2 = "v81_cache_prefetch_size2"
 
         // ===== v82.x KEY =====
-        private const val KEY_V82_PLAYBACK_AUTO_SKIP_RECAP = "v82_playback_auto_skip_recap"
-        private const val KEY_V82_DANMAKU_FONT_GLOW_SIZE3 = "v82_danmaku_font_glow_size3"
-        private const val KEY_V82_COLOR_LIFT2 = "v82_color_lift2"
-        private const val KEY_V82_VOLUME_SURROUND2 = "v82_volume_surround2"
-        private const val KEY_V82_CAST_SUBTITLE_SYNC2 = "v82_cast_subtitle_sync2"
-        private const val KEY_V82_GESTURE_SWIPE_SPEED2 = "v82_gesture_swipe_speed2"
-        private const val KEY_V82_CACHE_MAX_SIZE2 = "v82_cache_max_size2"
-        private const val KEY_V82_PROGRESS_BAR_SENSITIVITY2 = "v82_progress_bar_sensitivity2"
-        private const val KEY_V82_PLAYBACK_SMART_SPEED = "v82_playback_smart_speed"
-        private const val KEY_V82_DANMAKU_FONT_WEIGHT4 = "v82_danmaku_font_weight4"
-        private const val KEY_V82_COLOR_GAMMA2 = "v82_color_gamma2"
-        private const val KEY_V82_VOLUME_BASS2 = "v82_volume_bass2"
-        private const val KEY_V82_CAST_VIDEO_QUALITY2 = "v82_cast_video_quality2"
-        private const val KEY_V82_GESTURE_DOUBLE_TAP_SPEED = "v82_gesture_double_tap_speed"
-        private const val KEY_V82_CACHE_PREFETCH_SIZE2 = "v82_cache_prefetch_size2"
 
         // ===== v83.x KEY =====
-        private const val KEY_V83_PLAYBACK_AUTO_SKIP_RECAP = "v83_playback_auto_skip_recap"
-        private const val KEY_V83_DANMAKU_FONT_GLOW_SIZE3 = "v83_danmaku_font_glow_size3"
-        private const val KEY_V83_COLOR_LIFT2 = "v83_color_lift2"
-        private const val KEY_V83_VOLUME_SURROUND2 = "v83_volume_surround2"
-        private const val KEY_V83_CAST_SUBTITLE_SYNC2 = "v83_cast_subtitle_sync2"
-        private const val KEY_V83_GESTURE_SWIPE_SPEED2 = "v83_gesture_swipe_speed2"
-        private const val KEY_V83_CACHE_MAX_SIZE2 = "v83_cache_max_size2"
-        private const val KEY_V83_PROGRESS_BAR_SENSITIVITY2 = "v83_progress_bar_sensitivity2"
-        private const val KEY_V83_PLAYBACK_SMART_SPEED = "v83_playback_smart_speed"
-        private const val KEY_V83_DANMAKU_FONT_WEIGHT4 = "v83_danmaku_font_weight4"
-        private const val KEY_V83_COLOR_GAMMA2 = "v83_color_gamma2"
-        private const val KEY_V83_VOLUME_BASS2 = "v83_volume_bass2"
-        private const val KEY_V83_CAST_VIDEO_QUALITY2 = "v83_cast_video_quality2"
-        private const val KEY_V83_GESTURE_DOUBLE_TAP_SPEED = "v83_gesture_double_tap_speed"
-        private const val KEY_V83_CACHE_PREFETCH_SIZE2 = "v83_cache_prefetch_size2"
 
         // ===== v84.x KEY =====
-        private const val KEY_V84_PLAYBACK_AUTO_SKIP_RECAP = "v84_playback_auto_skip_recap"
-        private const val KEY_V84_DANMAKU_FONT_GLOW_SIZE3 = "v84_danmaku_font_glow_size3"
-        private const val KEY_V84_COLOR_LIFT2 = "v84_color_lift2"
-        private const val KEY_V84_VOLUME_SURROUND2 = "v84_volume_surround2"
-        private const val KEY_V84_CAST_SUBTITLE_SYNC2 = "v84_cast_subtitle_sync2"
-        private const val KEY_V84_GESTURE_SWIPE_SPEED2 = "v84_gesture_swipe_speed2"
-        private const val KEY_V84_CACHE_MAX_SIZE2 = "v84_cache_max_size2"
-        private const val KEY_V84_PROGRESS_BAR_SENSITIVITY2 = "v84_progress_bar_sensitivity2"
-        private const val KEY_V84_PLAYBACK_SMART_SPEED = "v84_playback_smart_speed"
-        private const val KEY_V84_DANMAKU_FONT_WEIGHT4 = "v84_danmaku_font_weight4"
-        private const val KEY_V84_COLOR_GAMMA2 = "v84_color_gamma2"
-        private const val KEY_V84_VOLUME_BASS2 = "v84_volume_bass2"
-        private const val KEY_V84_CAST_VIDEO_QUALITY2 = "v84_cast_video_quality2"
-        private const val KEY_V84_GESTURE_DOUBLE_TAP_SPEED = "v84_gesture_double_tap_speed"
-        private const val KEY_V84_CACHE_PREFETCH_SIZE2 = "v84_cache_prefetch_size2"
 
         // ===== v85.x KEY =====
-        private const val KEY_V85_PLAYBACK_AUTO_SKIP_RECAP = "v85_playback_auto_skip_recap"
-        private const val KEY_V85_DANMAKU_FONT_GLOW_SIZE3 = "v85_danmaku_font_glow_size3"
-        private const val KEY_V85_COLOR_LIFT2 = "v85_color_lift2"
-        private const val KEY_V85_VOLUME_SURROUND2 = "v85_volume_surround2"
-        private const val KEY_V85_CAST_SUBTITLE_SYNC2 = "v85_cast_subtitle_sync2"
-        private const val KEY_V85_GESTURE_SWIPE_SPEED2 = "v85_gesture_swipe_speed2"
-        private const val KEY_V85_CACHE_MAX_SIZE2 = "v85_cache_max_size2"
-        private const val KEY_V85_PROGRESS_BAR_SENSITIVITY2 = "v85_progress_bar_sensitivity2"
-        private const val KEY_V85_PLAYBACK_SMART_SPEED = "v85_playback_smart_speed"
-        private const val KEY_V85_DANMAKU_FONT_WEIGHT4 = "v85_danmaku_font_weight4"
-        private const val KEY_V85_COLOR_GAMMA2 = "v85_color_gamma2"
-        private const val KEY_V85_VOLUME_BASS2 = "v85_volume_bass2"
-        private const val KEY_V85_CAST_VIDEO_QUALITY2 = "v85_cast_video_quality2"
-        private const val KEY_V85_GESTURE_DOUBLE_TAP_SPEED = "v85_gesture_double_tap_speed"
-        private const val KEY_V85_CACHE_PREFETCH_SIZE2 = "v85_cache_prefetch_size2"
 
         // ===== v86.x KEY =====
-        private const val KEY_V86_PLAYBACK_AUTO_SKIP_RECAP = "v86_playback_auto_skip_recap"
-        private const val KEY_V86_DANMAKU_FONT_GLOW_SIZE3 = "v86_danmaku_font_glow_size3"
-        private const val KEY_V86_COLOR_LIFT2 = "v86_color_lift2"
-        private const val KEY_V86_VOLUME_SURROUND2 = "v86_volume_surround2"
-        private const val KEY_V86_CAST_SUBTITLE_SYNC2 = "v86_cast_subtitle_sync2"
-        private const val KEY_V86_GESTURE_SWIPE_SPEED2 = "v86_gesture_swipe_speed2"
-        private const val KEY_V86_CACHE_MAX_SIZE2 = "v86_cache_max_size2"
-        private const val KEY_V86_PROGRESS_BAR_SENSITIVITY2 = "v86_progress_bar_sensitivity2"
-        private const val KEY_V86_PLAYBACK_SMART_SPEED = "v86_playback_smart_speed"
-        private const val KEY_V86_DANMAKU_FONT_WEIGHT4 = "v86_danmaku_font_weight4"
-        private const val KEY_V86_COLOR_GAMMA2 = "v86_color_gamma2"
-        private const val KEY_V86_VOLUME_BASS2 = "v86_volume_bass2"
-        private const val KEY_V86_CAST_VIDEO_QUALITY2 = "v86_cast_video_quality2"
-        private const val KEY_V86_GESTURE_DOUBLE_TAP_SPEED = "v86_gesture_double_tap_speed"
-        private const val KEY_V86_CACHE_PREFETCH_SIZE2 = "v86_cache_prefetch_size2"
 
         // ===== v87.x KEY =====
-        private const val KEY_V87_PLAYBACK_AUTO_SKIP_RECAP = "v87_playback_auto_skip_recap"
-        private const val KEY_V87_DANMAKU_FONT_GLOW_SIZE3 = "v87_danmaku_font_glow_size3"
-        private const val KEY_V87_COLOR_LIFT2 = "v87_color_lift2"
-        private const val KEY_V87_VOLUME_SURROUND2 = "v87_volume_surround2"
-        private const val KEY_V87_CAST_SUBTITLE_SYNC2 = "v87_cast_subtitle_sync2"
-        private const val KEY_V87_GESTURE_SWIPE_SPEED2 = "v87_gesture_swipe_speed2"
-        private const val KEY_V87_CACHE_MAX_SIZE2 = "v87_cache_max_size2"
-        private const val KEY_V87_PROGRESS_BAR_SENSITIVITY2 = "v87_progress_bar_sensitivity2"
-        private const val KEY_V87_PLAYBACK_SMART_SPEED = "v87_playback_smart_speed"
-        private const val KEY_V87_DANMAKU_FONT_WEIGHT4 = "v87_danmaku_font_weight4"
-        private const val KEY_V87_COLOR_GAMMA2 = "v87_color_gamma2"
-        private const val KEY_V87_VOLUME_BASS2 = "v87_volume_bass2"
-        private const val KEY_V87_CAST_VIDEO_QUALITY2 = "v87_cast_video_quality2"
-        private const val KEY_V87_GESTURE_DOUBLE_TAP_SPEED = "v87_gesture_double_tap_speed"
-        private const val KEY_V87_CACHE_PREFETCH_SIZE2 = "v87_cache_prefetch_size2"
 
         // ===== v88.x KEY =====
-        private const val KEY_V88_PLAYBACK_AUTO_SKIP_RECAP = "v88_playback_auto_skip_recap"
-        private const val KEY_V88_DANMAKU_FONT_GLOW_SIZE3 = "v88_danmaku_font_glow_size3"
-        private const val KEY_V88_COLOR_LIFT2 = "v88_color_lift2"
-        private const val KEY_V88_VOLUME_SURROUND2 = "v88_volume_surround2"
-        private const val KEY_V88_CAST_SUBTITLE_SYNC2 = "v88_cast_subtitle_sync2"
-        private const val KEY_V88_GESTURE_SWIPE_SPEED2 = "v88_gesture_swipe_speed2"
-        private const val KEY_V88_CACHE_MAX_SIZE2 = "v88_cache_max_size2"
-        private const val KEY_V88_PROGRESS_BAR_SENSITIVITY2 = "v88_progress_bar_sensitivity2"
-        private const val KEY_V88_PLAYBACK_SMART_SPEED = "v88_playback_smart_speed"
-        private const val KEY_V88_DANMAKU_FONT_WEIGHT4 = "v88_danmaku_font_weight4"
-        private const val KEY_V88_COLOR_GAMMA2 = "v88_color_gamma2"
-        private const val KEY_V88_VOLUME_BASS2 = "v88_volume_bass2"
-        private const val KEY_V88_CAST_VIDEO_QUALITY2 = "v88_cast_video_quality2"
-        private const val KEY_V88_GESTURE_DOUBLE_TAP_SPEED = "v88_gesture_double_tap_speed"
-        private const val KEY_V88_CACHE_PREFETCH_SIZE2 = "v88_cache_prefetch_size2"
 
         // ===== v89.x KEY =====
-        private const val KEY_V89_PLAYBACK_AUTO_SKIP_RECAP = "v89_playback_auto_skip_recap"
-        private const val KEY_V89_DANMAKU_FONT_GLOW_SIZE3 = "v89_danmaku_font_glow_size3"
-        private const val KEY_V89_COLOR_LIFT2 = "v89_color_lift2"
-        private const val KEY_V89_VOLUME_SURROUND2 = "v89_volume_surround2"
-        private const val KEY_V89_CAST_SUBTITLE_SYNC2 = "v89_cast_subtitle_sync2"
-        private const val KEY_V89_GESTURE_SWIPE_SPEED2 = "v89_gesture_swipe_speed2"
-        private const val KEY_V89_CACHE_MAX_SIZE2 = "v89_cache_max_size2"
-        private const val KEY_V89_PROGRESS_BAR_SENSITIVITY2 = "v89_progress_bar_sensitivity2"
-        private const val KEY_V89_PLAYBACK_SMART_SPEED = "v89_playback_smart_speed"
-        private const val KEY_V89_DANMAKU_FONT_WEIGHT4 = "v89_danmaku_font_weight4"
-        private const val KEY_V89_COLOR_GAMMA2 = "v89_color_gamma2"
-        private const val KEY_V89_VOLUME_BASS2 = "v89_volume_bass2"
-        private const val KEY_V89_CAST_VIDEO_QUALITY2 = "v89_cast_video_quality2"
-        private const val KEY_V89_GESTURE_DOUBLE_TAP_SPEED = "v89_gesture_double_tap_speed"
-        private const val KEY_V89_CACHE_PREFETCH_SIZE2 = "v89_cache_prefetch_size2"
 
         // ===== v90.x KEY =====
-        private const val KEY_V90_PLAYBACK_AUTO_SKIP_RECAP = "v90_playback_auto_skip_recap"
-        private const val KEY_V90_DANMAKU_FONT_GLOW_SIZE3 = "v90_danmaku_font_glow_size3"
-        private const val KEY_V90_COLOR_LIFT2 = "v90_color_lift2"
-        private const val KEY_V90_VOLUME_SURROUND2 = "v90_volume_surround2"
-        private const val KEY_V90_CAST_SUBTITLE_SYNC2 = "v90_cast_subtitle_sync2"
-        private const val KEY_V90_GESTURE_SWIPE_SPEED2 = "v90_gesture_swipe_speed2"
-        private const val KEY_V90_CACHE_MAX_SIZE2 = "v90_cache_max_size2"
-        private const val KEY_V90_PROGRESS_BAR_SENSITIVITY2 = "v90_progress_bar_sensitivity2"
-        private const val KEY_V90_PLAYBACK_SMART_SPEED = "v90_playback_smart_speed"
-        private const val KEY_V90_DANMAKU_FONT_WEIGHT4 = "v90_danmaku_font_weight4"
-        private const val KEY_V90_COLOR_GAMMA2 = "v90_color_gamma2"
-        private const val KEY_V90_VOLUME_BASS2 = "v90_volume_bass2"
-        private const val KEY_V90_CAST_VIDEO_QUALITY2 = "v90_cast_video_quality2"
-        private const val KEY_V90_GESTURE_DOUBLE_TAP_SPEED = "v90_gesture_double_tap_speed"
-        private const val KEY_V90_CACHE_PREFETCH_SIZE2 = "v90_cache_prefetch_size2"
 
                 // v13.10: 暗角效果
         private const val KEY_VIGNETTE_INTENSITY = "vignette_intensity"
