@@ -16920,3 +16920,3483 @@ internal fun PlayerActivity.showv120CacheDiskPolicy3Dialog() {
     showSettingsChoiceDialog(title = "Cache Disk Policy3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v120CacheDiskPolicy3 = value; AppToast.show(this, "Cache Disk Policy3: ${labels[options.indexOf(value)]}") }
 }
 
+// 121.1: Playback Skip Intro2
+internal fun PlayerActivity.showv121PlaybackSkipIntro2Toggle() {
+    val current = BiliClient.prefs.v121PlaybackSkipIntro2
+    BiliClient.prefs.v121PlaybackSkipIntro2 = !current
+    AppToast.show(this, "Playback Skip Intro2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 121.2: Danmaku Speed2
+internal fun PlayerActivity.showv121DanmakuSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v121DanmakuSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v121DanmakuSpeed2 = value; AppToast.show(this, "Danmaku Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 121.3: Color Fade2
+internal fun PlayerActivity.showv121ColorFade2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v121ColorFade2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Fade2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v121ColorFade2 = value; AppToast.show(this, "Color Fade2: ${labels[options.indexOf(value)]}") }
+}
+
+// 121.4: Volume Fade In2
+internal fun PlayerActivity.showv121VolumeFadeIn2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v121VolumeFadeIn2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade In2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v121VolumeFadeIn2 = value; AppToast.show(this, "Volume Fade In2: ${labels[options.indexOf(value)]}") }
+}
+
+// 121.5: Cast Bitrate2
+internal fun PlayerActivity.showv121CastBitrate2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v121CastBitrate2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Bitrate2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v121CastBitrate2 = value; AppToast.show(this, "Cast Bitrate2: ${labels[options.indexOf(value)]}") }
+}
+
+// 121.6: Gesture Tap Zone2
+internal fun PlayerActivity.showv121GestureTapZone2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v121GestureTapZone2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Gesture Tap Zone2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v121GestureTapZone2 = value; AppToast.show(this, "Gesture Tap Zone2: ${labels[options.indexOf(value)]}") }
+}
+
+// 121.7: Cache Comp Level3
+internal fun PlayerActivity.showv121CacheCompLevel3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v121CacheCompLevel3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Comp Level3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v121CacheCompLevel3 = value; AppToast.show(this, "Cache Comp Level3: ${labels[options.indexOf(value)]}") }
+}
+
+// 121.8: Progress Bar Fade2
+internal fun PlayerActivity.showv121ProgressBarFade2Toggle() {
+    val current = BiliClient.prefs.v121ProgressBarFade2
+    BiliClient.prefs.v121ProgressBarFade2 = !current
+    AppToast.show(this, "Progress Bar Fade2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 121.9: Playback Auto Pause2
+internal fun PlayerActivity.showv121PlaybackAutoPause2Toggle() {
+    val current = BiliClient.prefs.v121PlaybackAutoPause2
+    BiliClient.prefs.v121PlaybackAutoPause2 = !current
+    AppToast.show(this, "Playback Auto Pause2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 121.10: Danmaku Scroll Speed2
+internal fun PlayerActivity.showv121DanmakuScrollSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v121DanmakuScrollSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Scroll Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v121DanmakuScrollSpeed2 = value; AppToast.show(this, "Danmaku Scroll Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 121.11: Color Tint2
+internal fun PlayerActivity.showv121ColorTint2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v121ColorTint2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Tint2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v121ColorTint2 = value; AppToast.show(this, "Color Tint2: ${labels[options.indexOf(value)]}") }
+}
+
+// 121.12: Volume Fade Out2
+internal fun PlayerActivity.showv121VolumeFadeOut2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v121VolumeFadeOut2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade Out2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v121VolumeFadeOut2 = value; AppToast.show(this, "Volume Fade Out2: ${labels[options.indexOf(value)]}") }
+}
+
+// 121.13: Cast Codec2
+internal fun PlayerActivity.showv121CastCodec2Dialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v121CastCodec2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Codec2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v121CastCodec2 = value; AppToast.show(this, "Cast Codec2: ${labels[options.indexOf(value)]}") }
+}
+
+// 121.14: Gesture Double Swipe2
+internal fun PlayerActivity.showv121GestureDoubleSwipe2Toggle() {
+    val current = BiliClient.prefs.v121GestureDoubleSwipe2
+    BiliClient.prefs.v121GestureDoubleSwipe2 = !current
+    AppToast.show(this, "Gesture Double Swipe2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 121.15: Cache Memory Size2
+internal fun PlayerActivity.showv121CacheMemorySize2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v121CacheMemorySize2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Memory Size2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v121CacheMemorySize2 = value; AppToast.show(this, "Cache Memory Size2: ${labels[options.indexOf(value)]}") }
+}
+
+// 122.1: Playback Skip Intro2
+internal fun PlayerActivity.showv122PlaybackSkipIntro2Toggle() {
+    val current = BiliClient.prefs.v122PlaybackSkipIntro2
+    BiliClient.prefs.v122PlaybackSkipIntro2 = !current
+    AppToast.show(this, "Playback Skip Intro2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 122.2: Danmaku Speed2
+internal fun PlayerActivity.showv122DanmakuSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v122DanmakuSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v122DanmakuSpeed2 = value; AppToast.show(this, "Danmaku Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 122.3: Color Fade2
+internal fun PlayerActivity.showv122ColorFade2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v122ColorFade2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Fade2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v122ColorFade2 = value; AppToast.show(this, "Color Fade2: ${labels[options.indexOf(value)]}") }
+}
+
+// 122.4: Volume Fade In2
+internal fun PlayerActivity.showv122VolumeFadeIn2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v122VolumeFadeIn2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade In2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v122VolumeFadeIn2 = value; AppToast.show(this, "Volume Fade In2: ${labels[options.indexOf(value)]}") }
+}
+
+// 122.5: Cast Bitrate2
+internal fun PlayerActivity.showv122CastBitrate2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v122CastBitrate2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Bitrate2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v122CastBitrate2 = value; AppToast.show(this, "Cast Bitrate2: ${labels[options.indexOf(value)]}") }
+}
+
+// 122.6: Gesture Tap Zone2
+internal fun PlayerActivity.showv122GestureTapZone2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v122GestureTapZone2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Gesture Tap Zone2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v122GestureTapZone2 = value; AppToast.show(this, "Gesture Tap Zone2: ${labels[options.indexOf(value)]}") }
+}
+
+// 122.7: Cache Comp Level3
+internal fun PlayerActivity.showv122CacheCompLevel3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v122CacheCompLevel3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Comp Level3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v122CacheCompLevel3 = value; AppToast.show(this, "Cache Comp Level3: ${labels[options.indexOf(value)]}") }
+}
+
+// 122.8: Progress Bar Fade2
+internal fun PlayerActivity.showv122ProgressBarFade2Toggle() {
+    val current = BiliClient.prefs.v122ProgressBarFade2
+    BiliClient.prefs.v122ProgressBarFade2 = !current
+    AppToast.show(this, "Progress Bar Fade2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 122.9: Playback Auto Pause2
+internal fun PlayerActivity.showv122PlaybackAutoPause2Toggle() {
+    val current = BiliClient.prefs.v122PlaybackAutoPause2
+    BiliClient.prefs.v122PlaybackAutoPause2 = !current
+    AppToast.show(this, "Playback Auto Pause2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 122.10: Danmaku Scroll Speed2
+internal fun PlayerActivity.showv122DanmakuScrollSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v122DanmakuScrollSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Scroll Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v122DanmakuScrollSpeed2 = value; AppToast.show(this, "Danmaku Scroll Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 122.11: Color Tint2
+internal fun PlayerActivity.showv122ColorTint2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v122ColorTint2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Tint2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v122ColorTint2 = value; AppToast.show(this, "Color Tint2: ${labels[options.indexOf(value)]}") }
+}
+
+// 122.12: Volume Fade Out2
+internal fun PlayerActivity.showv122VolumeFadeOut2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v122VolumeFadeOut2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade Out2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v122VolumeFadeOut2 = value; AppToast.show(this, "Volume Fade Out2: ${labels[options.indexOf(value)]}") }
+}
+
+// 122.13: Cast Codec2
+internal fun PlayerActivity.showv122CastCodec2Dialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v122CastCodec2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Codec2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v122CastCodec2 = value; AppToast.show(this, "Cast Codec2: ${labels[options.indexOf(value)]}") }
+}
+
+// 122.14: Gesture Double Swipe2
+internal fun PlayerActivity.showv122GestureDoubleSwipe2Toggle() {
+    val current = BiliClient.prefs.v122GestureDoubleSwipe2
+    BiliClient.prefs.v122GestureDoubleSwipe2 = !current
+    AppToast.show(this, "Gesture Double Swipe2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 122.15: Cache Memory Size2
+internal fun PlayerActivity.showv122CacheMemorySize2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v122CacheMemorySize2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Memory Size2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v122CacheMemorySize2 = value; AppToast.show(this, "Cache Memory Size2: ${labels[options.indexOf(value)]}") }
+}
+
+// 123.1: Playback Skip Intro2
+internal fun PlayerActivity.showv123PlaybackSkipIntro2Toggle() {
+    val current = BiliClient.prefs.v123PlaybackSkipIntro2
+    BiliClient.prefs.v123PlaybackSkipIntro2 = !current
+    AppToast.show(this, "Playback Skip Intro2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 123.2: Danmaku Speed2
+internal fun PlayerActivity.showv123DanmakuSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v123DanmakuSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v123DanmakuSpeed2 = value; AppToast.show(this, "Danmaku Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 123.3: Color Fade2
+internal fun PlayerActivity.showv123ColorFade2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v123ColorFade2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Fade2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v123ColorFade2 = value; AppToast.show(this, "Color Fade2: ${labels[options.indexOf(value)]}") }
+}
+
+// 123.4: Volume Fade In2
+internal fun PlayerActivity.showv123VolumeFadeIn2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v123VolumeFadeIn2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade In2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v123VolumeFadeIn2 = value; AppToast.show(this, "Volume Fade In2: ${labels[options.indexOf(value)]}") }
+}
+
+// 123.5: Cast Bitrate2
+internal fun PlayerActivity.showv123CastBitrate2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v123CastBitrate2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Bitrate2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v123CastBitrate2 = value; AppToast.show(this, "Cast Bitrate2: ${labels[options.indexOf(value)]}") }
+}
+
+// 123.6: Gesture Tap Zone2
+internal fun PlayerActivity.showv123GestureTapZone2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v123GestureTapZone2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Gesture Tap Zone2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v123GestureTapZone2 = value; AppToast.show(this, "Gesture Tap Zone2: ${labels[options.indexOf(value)]}") }
+}
+
+// 123.7: Cache Comp Level3
+internal fun PlayerActivity.showv123CacheCompLevel3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v123CacheCompLevel3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Comp Level3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v123CacheCompLevel3 = value; AppToast.show(this, "Cache Comp Level3: ${labels[options.indexOf(value)]}") }
+}
+
+// 123.8: Progress Bar Fade2
+internal fun PlayerActivity.showv123ProgressBarFade2Toggle() {
+    val current = BiliClient.prefs.v123ProgressBarFade2
+    BiliClient.prefs.v123ProgressBarFade2 = !current
+    AppToast.show(this, "Progress Bar Fade2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 123.9: Playback Auto Pause2
+internal fun PlayerActivity.showv123PlaybackAutoPause2Toggle() {
+    val current = BiliClient.prefs.v123PlaybackAutoPause2
+    BiliClient.prefs.v123PlaybackAutoPause2 = !current
+    AppToast.show(this, "Playback Auto Pause2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 123.10: Danmaku Scroll Speed2
+internal fun PlayerActivity.showv123DanmakuScrollSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v123DanmakuScrollSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Scroll Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v123DanmakuScrollSpeed2 = value; AppToast.show(this, "Danmaku Scroll Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 123.11: Color Tint2
+internal fun PlayerActivity.showv123ColorTint2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v123ColorTint2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Tint2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v123ColorTint2 = value; AppToast.show(this, "Color Tint2: ${labels[options.indexOf(value)]}") }
+}
+
+// 123.12: Volume Fade Out2
+internal fun PlayerActivity.showv123VolumeFadeOut2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v123VolumeFadeOut2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade Out2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v123VolumeFadeOut2 = value; AppToast.show(this, "Volume Fade Out2: ${labels[options.indexOf(value)]}") }
+}
+
+// 123.13: Cast Codec2
+internal fun PlayerActivity.showv123CastCodec2Dialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v123CastCodec2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Codec2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v123CastCodec2 = value; AppToast.show(this, "Cast Codec2: ${labels[options.indexOf(value)]}") }
+}
+
+// 123.14: Gesture Double Swipe2
+internal fun PlayerActivity.showv123GestureDoubleSwipe2Toggle() {
+    val current = BiliClient.prefs.v123GestureDoubleSwipe2
+    BiliClient.prefs.v123GestureDoubleSwipe2 = !current
+    AppToast.show(this, "Gesture Double Swipe2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 123.15: Cache Memory Size2
+internal fun PlayerActivity.showv123CacheMemorySize2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v123CacheMemorySize2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Memory Size2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v123CacheMemorySize2 = value; AppToast.show(this, "Cache Memory Size2: ${labels[options.indexOf(value)]}") }
+}
+
+// 124.1: Playback Skip Intro2
+internal fun PlayerActivity.showv124PlaybackSkipIntro2Toggle() {
+    val current = BiliClient.prefs.v124PlaybackSkipIntro2
+    BiliClient.prefs.v124PlaybackSkipIntro2 = !current
+    AppToast.show(this, "Playback Skip Intro2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 124.2: Danmaku Speed2
+internal fun PlayerActivity.showv124DanmakuSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v124DanmakuSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v124DanmakuSpeed2 = value; AppToast.show(this, "Danmaku Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 124.3: Color Fade2
+internal fun PlayerActivity.showv124ColorFade2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v124ColorFade2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Fade2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v124ColorFade2 = value; AppToast.show(this, "Color Fade2: ${labels[options.indexOf(value)]}") }
+}
+
+// 124.4: Volume Fade In2
+internal fun PlayerActivity.showv124VolumeFadeIn2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v124VolumeFadeIn2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade In2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v124VolumeFadeIn2 = value; AppToast.show(this, "Volume Fade In2: ${labels[options.indexOf(value)]}") }
+}
+
+// 124.5: Cast Bitrate2
+internal fun PlayerActivity.showv124CastBitrate2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v124CastBitrate2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Bitrate2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v124CastBitrate2 = value; AppToast.show(this, "Cast Bitrate2: ${labels[options.indexOf(value)]}") }
+}
+
+// 124.6: Gesture Tap Zone2
+internal fun PlayerActivity.showv124GestureTapZone2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v124GestureTapZone2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Gesture Tap Zone2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v124GestureTapZone2 = value; AppToast.show(this, "Gesture Tap Zone2: ${labels[options.indexOf(value)]}") }
+}
+
+// 124.7: Cache Comp Level3
+internal fun PlayerActivity.showv124CacheCompLevel3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v124CacheCompLevel3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Comp Level3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v124CacheCompLevel3 = value; AppToast.show(this, "Cache Comp Level3: ${labels[options.indexOf(value)]}") }
+}
+
+// 124.8: Progress Bar Fade2
+internal fun PlayerActivity.showv124ProgressBarFade2Toggle() {
+    val current = BiliClient.prefs.v124ProgressBarFade2
+    BiliClient.prefs.v124ProgressBarFade2 = !current
+    AppToast.show(this, "Progress Bar Fade2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 124.9: Playback Auto Pause2
+internal fun PlayerActivity.showv124PlaybackAutoPause2Toggle() {
+    val current = BiliClient.prefs.v124PlaybackAutoPause2
+    BiliClient.prefs.v124PlaybackAutoPause2 = !current
+    AppToast.show(this, "Playback Auto Pause2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 124.10: Danmaku Scroll Speed2
+internal fun PlayerActivity.showv124DanmakuScrollSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v124DanmakuScrollSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Scroll Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v124DanmakuScrollSpeed2 = value; AppToast.show(this, "Danmaku Scroll Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 124.11: Color Tint2
+internal fun PlayerActivity.showv124ColorTint2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v124ColorTint2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Tint2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v124ColorTint2 = value; AppToast.show(this, "Color Tint2: ${labels[options.indexOf(value)]}") }
+}
+
+// 124.12: Volume Fade Out2
+internal fun PlayerActivity.showv124VolumeFadeOut2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v124VolumeFadeOut2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade Out2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v124VolumeFadeOut2 = value; AppToast.show(this, "Volume Fade Out2: ${labels[options.indexOf(value)]}") }
+}
+
+// 124.13: Cast Codec2
+internal fun PlayerActivity.showv124CastCodec2Dialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v124CastCodec2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Codec2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v124CastCodec2 = value; AppToast.show(this, "Cast Codec2: ${labels[options.indexOf(value)]}") }
+}
+
+// 124.14: Gesture Double Swipe2
+internal fun PlayerActivity.showv124GestureDoubleSwipe2Toggle() {
+    val current = BiliClient.prefs.v124GestureDoubleSwipe2
+    BiliClient.prefs.v124GestureDoubleSwipe2 = !current
+    AppToast.show(this, "Gesture Double Swipe2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 124.15: Cache Memory Size2
+internal fun PlayerActivity.showv124CacheMemorySize2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v124CacheMemorySize2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Memory Size2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v124CacheMemorySize2 = value; AppToast.show(this, "Cache Memory Size2: ${labels[options.indexOf(value)]}") }
+}
+
+// 125.1: Playback Skip Intro2
+internal fun PlayerActivity.showv125PlaybackSkipIntro2Toggle() {
+    val current = BiliClient.prefs.v125PlaybackSkipIntro2
+    BiliClient.prefs.v125PlaybackSkipIntro2 = !current
+    AppToast.show(this, "Playback Skip Intro2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 125.2: Danmaku Speed2
+internal fun PlayerActivity.showv125DanmakuSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v125DanmakuSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v125DanmakuSpeed2 = value; AppToast.show(this, "Danmaku Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 125.3: Color Fade2
+internal fun PlayerActivity.showv125ColorFade2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v125ColorFade2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Fade2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v125ColorFade2 = value; AppToast.show(this, "Color Fade2: ${labels[options.indexOf(value)]}") }
+}
+
+// 125.4: Volume Fade In2
+internal fun PlayerActivity.showv125VolumeFadeIn2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v125VolumeFadeIn2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade In2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v125VolumeFadeIn2 = value; AppToast.show(this, "Volume Fade In2: ${labels[options.indexOf(value)]}") }
+}
+
+// 125.5: Cast Bitrate2
+internal fun PlayerActivity.showv125CastBitrate2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v125CastBitrate2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Bitrate2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v125CastBitrate2 = value; AppToast.show(this, "Cast Bitrate2: ${labels[options.indexOf(value)]}") }
+}
+
+// 125.6: Gesture Tap Zone2
+internal fun PlayerActivity.showv125GestureTapZone2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v125GestureTapZone2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Gesture Tap Zone2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v125GestureTapZone2 = value; AppToast.show(this, "Gesture Tap Zone2: ${labels[options.indexOf(value)]}") }
+}
+
+// 125.7: Cache Comp Level3
+internal fun PlayerActivity.showv125CacheCompLevel3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v125CacheCompLevel3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Comp Level3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v125CacheCompLevel3 = value; AppToast.show(this, "Cache Comp Level3: ${labels[options.indexOf(value)]}") }
+}
+
+// 125.8: Progress Bar Fade2
+internal fun PlayerActivity.showv125ProgressBarFade2Toggle() {
+    val current = BiliClient.prefs.v125ProgressBarFade2
+    BiliClient.prefs.v125ProgressBarFade2 = !current
+    AppToast.show(this, "Progress Bar Fade2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 125.9: Playback Auto Pause2
+internal fun PlayerActivity.showv125PlaybackAutoPause2Toggle() {
+    val current = BiliClient.prefs.v125PlaybackAutoPause2
+    BiliClient.prefs.v125PlaybackAutoPause2 = !current
+    AppToast.show(this, "Playback Auto Pause2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 125.10: Danmaku Scroll Speed2
+internal fun PlayerActivity.showv125DanmakuScrollSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v125DanmakuScrollSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Scroll Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v125DanmakuScrollSpeed2 = value; AppToast.show(this, "Danmaku Scroll Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 125.11: Color Tint2
+internal fun PlayerActivity.showv125ColorTint2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v125ColorTint2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Tint2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v125ColorTint2 = value; AppToast.show(this, "Color Tint2: ${labels[options.indexOf(value)]}") }
+}
+
+// 125.12: Volume Fade Out2
+internal fun PlayerActivity.showv125VolumeFadeOut2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v125VolumeFadeOut2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade Out2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v125VolumeFadeOut2 = value; AppToast.show(this, "Volume Fade Out2: ${labels[options.indexOf(value)]}") }
+}
+
+// 125.13: Cast Codec2
+internal fun PlayerActivity.showv125CastCodec2Dialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v125CastCodec2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Codec2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v125CastCodec2 = value; AppToast.show(this, "Cast Codec2: ${labels[options.indexOf(value)]}") }
+}
+
+// 125.14: Gesture Double Swipe2
+internal fun PlayerActivity.showv125GestureDoubleSwipe2Toggle() {
+    val current = BiliClient.prefs.v125GestureDoubleSwipe2
+    BiliClient.prefs.v125GestureDoubleSwipe2 = !current
+    AppToast.show(this, "Gesture Double Swipe2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 125.15: Cache Memory Size2
+internal fun PlayerActivity.showv125CacheMemorySize2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v125CacheMemorySize2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Memory Size2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v125CacheMemorySize2 = value; AppToast.show(this, "Cache Memory Size2: ${labels[options.indexOf(value)]}") }
+}
+
+// 126.1: Playback Skip Intro2
+internal fun PlayerActivity.showv126PlaybackSkipIntro2Toggle() {
+    val current = BiliClient.prefs.v126PlaybackSkipIntro2
+    BiliClient.prefs.v126PlaybackSkipIntro2 = !current
+    AppToast.show(this, "Playback Skip Intro2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 126.2: Danmaku Speed2
+internal fun PlayerActivity.showv126DanmakuSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v126DanmakuSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v126DanmakuSpeed2 = value; AppToast.show(this, "Danmaku Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 126.3: Color Fade2
+internal fun PlayerActivity.showv126ColorFade2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v126ColorFade2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Fade2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v126ColorFade2 = value; AppToast.show(this, "Color Fade2: ${labels[options.indexOf(value)]}") }
+}
+
+// 126.4: Volume Fade In2
+internal fun PlayerActivity.showv126VolumeFadeIn2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v126VolumeFadeIn2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade In2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v126VolumeFadeIn2 = value; AppToast.show(this, "Volume Fade In2: ${labels[options.indexOf(value)]}") }
+}
+
+// 126.5: Cast Bitrate2
+internal fun PlayerActivity.showv126CastBitrate2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v126CastBitrate2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Bitrate2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v126CastBitrate2 = value; AppToast.show(this, "Cast Bitrate2: ${labels[options.indexOf(value)]}") }
+}
+
+// 126.6: Gesture Tap Zone2
+internal fun PlayerActivity.showv126GestureTapZone2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v126GestureTapZone2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Gesture Tap Zone2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v126GestureTapZone2 = value; AppToast.show(this, "Gesture Tap Zone2: ${labels[options.indexOf(value)]}") }
+}
+
+// 126.7: Cache Comp Level3
+internal fun PlayerActivity.showv126CacheCompLevel3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v126CacheCompLevel3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Comp Level3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v126CacheCompLevel3 = value; AppToast.show(this, "Cache Comp Level3: ${labels[options.indexOf(value)]}") }
+}
+
+// 126.8: Progress Bar Fade2
+internal fun PlayerActivity.showv126ProgressBarFade2Toggle() {
+    val current = BiliClient.prefs.v126ProgressBarFade2
+    BiliClient.prefs.v126ProgressBarFade2 = !current
+    AppToast.show(this, "Progress Bar Fade2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 126.9: Playback Auto Pause2
+internal fun PlayerActivity.showv126PlaybackAutoPause2Toggle() {
+    val current = BiliClient.prefs.v126PlaybackAutoPause2
+    BiliClient.prefs.v126PlaybackAutoPause2 = !current
+    AppToast.show(this, "Playback Auto Pause2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 126.10: Danmaku Scroll Speed2
+internal fun PlayerActivity.showv126DanmakuScrollSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v126DanmakuScrollSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Scroll Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v126DanmakuScrollSpeed2 = value; AppToast.show(this, "Danmaku Scroll Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 126.11: Color Tint2
+internal fun PlayerActivity.showv126ColorTint2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v126ColorTint2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Tint2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v126ColorTint2 = value; AppToast.show(this, "Color Tint2: ${labels[options.indexOf(value)]}") }
+}
+
+// 126.12: Volume Fade Out2
+internal fun PlayerActivity.showv126VolumeFadeOut2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v126VolumeFadeOut2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade Out2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v126VolumeFadeOut2 = value; AppToast.show(this, "Volume Fade Out2: ${labels[options.indexOf(value)]}") }
+}
+
+// 126.13: Cast Codec2
+internal fun PlayerActivity.showv126CastCodec2Dialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v126CastCodec2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Codec2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v126CastCodec2 = value; AppToast.show(this, "Cast Codec2: ${labels[options.indexOf(value)]}") }
+}
+
+// 126.14: Gesture Double Swipe2
+internal fun PlayerActivity.showv126GestureDoubleSwipe2Toggle() {
+    val current = BiliClient.prefs.v126GestureDoubleSwipe2
+    BiliClient.prefs.v126GestureDoubleSwipe2 = !current
+    AppToast.show(this, "Gesture Double Swipe2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 126.15: Cache Memory Size2
+internal fun PlayerActivity.showv126CacheMemorySize2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v126CacheMemorySize2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Memory Size2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v126CacheMemorySize2 = value; AppToast.show(this, "Cache Memory Size2: ${labels[options.indexOf(value)]}") }
+}
+
+// 127.1: Playback Skip Intro2
+internal fun PlayerActivity.showv127PlaybackSkipIntro2Toggle() {
+    val current = BiliClient.prefs.v127PlaybackSkipIntro2
+    BiliClient.prefs.v127PlaybackSkipIntro2 = !current
+    AppToast.show(this, "Playback Skip Intro2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 127.2: Danmaku Speed2
+internal fun PlayerActivity.showv127DanmakuSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v127DanmakuSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v127DanmakuSpeed2 = value; AppToast.show(this, "Danmaku Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 127.3: Color Fade2
+internal fun PlayerActivity.showv127ColorFade2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v127ColorFade2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Fade2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v127ColorFade2 = value; AppToast.show(this, "Color Fade2: ${labels[options.indexOf(value)]}") }
+}
+
+// 127.4: Volume Fade In2
+internal fun PlayerActivity.showv127VolumeFadeIn2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v127VolumeFadeIn2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade In2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v127VolumeFadeIn2 = value; AppToast.show(this, "Volume Fade In2: ${labels[options.indexOf(value)]}") }
+}
+
+// 127.5: Cast Bitrate2
+internal fun PlayerActivity.showv127CastBitrate2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v127CastBitrate2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Bitrate2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v127CastBitrate2 = value; AppToast.show(this, "Cast Bitrate2: ${labels[options.indexOf(value)]}") }
+}
+
+// 127.6: Gesture Tap Zone2
+internal fun PlayerActivity.showv127GestureTapZone2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v127GestureTapZone2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Gesture Tap Zone2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v127GestureTapZone2 = value; AppToast.show(this, "Gesture Tap Zone2: ${labels[options.indexOf(value)]}") }
+}
+
+// 127.7: Cache Comp Level3
+internal fun PlayerActivity.showv127CacheCompLevel3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v127CacheCompLevel3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Comp Level3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v127CacheCompLevel3 = value; AppToast.show(this, "Cache Comp Level3: ${labels[options.indexOf(value)]}") }
+}
+
+// 127.8: Progress Bar Fade2
+internal fun PlayerActivity.showv127ProgressBarFade2Toggle() {
+    val current = BiliClient.prefs.v127ProgressBarFade2
+    BiliClient.prefs.v127ProgressBarFade2 = !current
+    AppToast.show(this, "Progress Bar Fade2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 127.9: Playback Auto Pause2
+internal fun PlayerActivity.showv127PlaybackAutoPause2Toggle() {
+    val current = BiliClient.prefs.v127PlaybackAutoPause2
+    BiliClient.prefs.v127PlaybackAutoPause2 = !current
+    AppToast.show(this, "Playback Auto Pause2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 127.10: Danmaku Scroll Speed2
+internal fun PlayerActivity.showv127DanmakuScrollSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v127DanmakuScrollSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Scroll Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v127DanmakuScrollSpeed2 = value; AppToast.show(this, "Danmaku Scroll Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 127.11: Color Tint2
+internal fun PlayerActivity.showv127ColorTint2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v127ColorTint2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Tint2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v127ColorTint2 = value; AppToast.show(this, "Color Tint2: ${labels[options.indexOf(value)]}") }
+}
+
+// 127.12: Volume Fade Out2
+internal fun PlayerActivity.showv127VolumeFadeOut2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v127VolumeFadeOut2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade Out2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v127VolumeFadeOut2 = value; AppToast.show(this, "Volume Fade Out2: ${labels[options.indexOf(value)]}") }
+}
+
+// 127.13: Cast Codec2
+internal fun PlayerActivity.showv127CastCodec2Dialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v127CastCodec2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Codec2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v127CastCodec2 = value; AppToast.show(this, "Cast Codec2: ${labels[options.indexOf(value)]}") }
+}
+
+// 127.14: Gesture Double Swipe2
+internal fun PlayerActivity.showv127GestureDoubleSwipe2Toggle() {
+    val current = BiliClient.prefs.v127GestureDoubleSwipe2
+    BiliClient.prefs.v127GestureDoubleSwipe2 = !current
+    AppToast.show(this, "Gesture Double Swipe2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 127.15: Cache Memory Size2
+internal fun PlayerActivity.showv127CacheMemorySize2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v127CacheMemorySize2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Memory Size2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v127CacheMemorySize2 = value; AppToast.show(this, "Cache Memory Size2: ${labels[options.indexOf(value)]}") }
+}
+
+// 128.1: Playback Skip Intro2
+internal fun PlayerActivity.showv128PlaybackSkipIntro2Toggle() {
+    val current = BiliClient.prefs.v128PlaybackSkipIntro2
+    BiliClient.prefs.v128PlaybackSkipIntro2 = !current
+    AppToast.show(this, "Playback Skip Intro2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 128.2: Danmaku Speed2
+internal fun PlayerActivity.showv128DanmakuSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v128DanmakuSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v128DanmakuSpeed2 = value; AppToast.show(this, "Danmaku Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 128.3: Color Fade2
+internal fun PlayerActivity.showv128ColorFade2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v128ColorFade2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Fade2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v128ColorFade2 = value; AppToast.show(this, "Color Fade2: ${labels[options.indexOf(value)]}") }
+}
+
+// 128.4: Volume Fade In2
+internal fun PlayerActivity.showv128VolumeFadeIn2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v128VolumeFadeIn2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade In2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v128VolumeFadeIn2 = value; AppToast.show(this, "Volume Fade In2: ${labels[options.indexOf(value)]}") }
+}
+
+// 128.5: Cast Bitrate2
+internal fun PlayerActivity.showv128CastBitrate2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v128CastBitrate2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Bitrate2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v128CastBitrate2 = value; AppToast.show(this, "Cast Bitrate2: ${labels[options.indexOf(value)]}") }
+}
+
+// 128.6: Gesture Tap Zone2
+internal fun PlayerActivity.showv128GestureTapZone2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v128GestureTapZone2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Gesture Tap Zone2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v128GestureTapZone2 = value; AppToast.show(this, "Gesture Tap Zone2: ${labels[options.indexOf(value)]}") }
+}
+
+// 128.7: Cache Comp Level3
+internal fun PlayerActivity.showv128CacheCompLevel3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v128CacheCompLevel3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Comp Level3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v128CacheCompLevel3 = value; AppToast.show(this, "Cache Comp Level3: ${labels[options.indexOf(value)]}") }
+}
+
+// 128.8: Progress Bar Fade2
+internal fun PlayerActivity.showv128ProgressBarFade2Toggle() {
+    val current = BiliClient.prefs.v128ProgressBarFade2
+    BiliClient.prefs.v128ProgressBarFade2 = !current
+    AppToast.show(this, "Progress Bar Fade2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 128.9: Playback Auto Pause2
+internal fun PlayerActivity.showv128PlaybackAutoPause2Toggle() {
+    val current = BiliClient.prefs.v128PlaybackAutoPause2
+    BiliClient.prefs.v128PlaybackAutoPause2 = !current
+    AppToast.show(this, "Playback Auto Pause2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 128.10: Danmaku Scroll Speed2
+internal fun PlayerActivity.showv128DanmakuScrollSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v128DanmakuScrollSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Scroll Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v128DanmakuScrollSpeed2 = value; AppToast.show(this, "Danmaku Scroll Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 128.11: Color Tint2
+internal fun PlayerActivity.showv128ColorTint2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v128ColorTint2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Tint2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v128ColorTint2 = value; AppToast.show(this, "Color Tint2: ${labels[options.indexOf(value)]}") }
+}
+
+// 128.12: Volume Fade Out2
+internal fun PlayerActivity.showv128VolumeFadeOut2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v128VolumeFadeOut2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade Out2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v128VolumeFadeOut2 = value; AppToast.show(this, "Volume Fade Out2: ${labels[options.indexOf(value)]}") }
+}
+
+// 128.13: Cast Codec2
+internal fun PlayerActivity.showv128CastCodec2Dialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v128CastCodec2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Codec2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v128CastCodec2 = value; AppToast.show(this, "Cast Codec2: ${labels[options.indexOf(value)]}") }
+}
+
+// 128.14: Gesture Double Swipe2
+internal fun PlayerActivity.showv128GestureDoubleSwipe2Toggle() {
+    val current = BiliClient.prefs.v128GestureDoubleSwipe2
+    BiliClient.prefs.v128GestureDoubleSwipe2 = !current
+    AppToast.show(this, "Gesture Double Swipe2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 128.15: Cache Memory Size2
+internal fun PlayerActivity.showv128CacheMemorySize2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v128CacheMemorySize2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Memory Size2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v128CacheMemorySize2 = value; AppToast.show(this, "Cache Memory Size2: ${labels[options.indexOf(value)]}") }
+}
+
+// 129.1: Playback Skip Intro2
+internal fun PlayerActivity.showv129PlaybackSkipIntro2Toggle() {
+    val current = BiliClient.prefs.v129PlaybackSkipIntro2
+    BiliClient.prefs.v129PlaybackSkipIntro2 = !current
+    AppToast.show(this, "Playback Skip Intro2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 129.2: Danmaku Speed2
+internal fun PlayerActivity.showv129DanmakuSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v129DanmakuSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v129DanmakuSpeed2 = value; AppToast.show(this, "Danmaku Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 129.3: Color Fade2
+internal fun PlayerActivity.showv129ColorFade2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v129ColorFade2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Fade2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v129ColorFade2 = value; AppToast.show(this, "Color Fade2: ${labels[options.indexOf(value)]}") }
+}
+
+// 129.4: Volume Fade In2
+internal fun PlayerActivity.showv129VolumeFadeIn2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v129VolumeFadeIn2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade In2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v129VolumeFadeIn2 = value; AppToast.show(this, "Volume Fade In2: ${labels[options.indexOf(value)]}") }
+}
+
+// 129.5: Cast Bitrate2
+internal fun PlayerActivity.showv129CastBitrate2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v129CastBitrate2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Bitrate2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v129CastBitrate2 = value; AppToast.show(this, "Cast Bitrate2: ${labels[options.indexOf(value)]}") }
+}
+
+// 129.6: Gesture Tap Zone2
+internal fun PlayerActivity.showv129GestureTapZone2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v129GestureTapZone2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Gesture Tap Zone2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v129GestureTapZone2 = value; AppToast.show(this, "Gesture Tap Zone2: ${labels[options.indexOf(value)]}") }
+}
+
+// 129.7: Cache Comp Level3
+internal fun PlayerActivity.showv129CacheCompLevel3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v129CacheCompLevel3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Comp Level3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v129CacheCompLevel3 = value; AppToast.show(this, "Cache Comp Level3: ${labels[options.indexOf(value)]}") }
+}
+
+// 129.8: Progress Bar Fade2
+internal fun PlayerActivity.showv129ProgressBarFade2Toggle() {
+    val current = BiliClient.prefs.v129ProgressBarFade2
+    BiliClient.prefs.v129ProgressBarFade2 = !current
+    AppToast.show(this, "Progress Bar Fade2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 129.9: Playback Auto Pause2
+internal fun PlayerActivity.showv129PlaybackAutoPause2Toggle() {
+    val current = BiliClient.prefs.v129PlaybackAutoPause2
+    BiliClient.prefs.v129PlaybackAutoPause2 = !current
+    AppToast.show(this, "Playback Auto Pause2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 129.10: Danmaku Scroll Speed2
+internal fun PlayerActivity.showv129DanmakuScrollSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v129DanmakuScrollSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Scroll Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v129DanmakuScrollSpeed2 = value; AppToast.show(this, "Danmaku Scroll Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 129.11: Color Tint2
+internal fun PlayerActivity.showv129ColorTint2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v129ColorTint2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Tint2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v129ColorTint2 = value; AppToast.show(this, "Color Tint2: ${labels[options.indexOf(value)]}") }
+}
+
+// 129.12: Volume Fade Out2
+internal fun PlayerActivity.showv129VolumeFadeOut2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v129VolumeFadeOut2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade Out2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v129VolumeFadeOut2 = value; AppToast.show(this, "Volume Fade Out2: ${labels[options.indexOf(value)]}") }
+}
+
+// 129.13: Cast Codec2
+internal fun PlayerActivity.showv129CastCodec2Dialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v129CastCodec2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Codec2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v129CastCodec2 = value; AppToast.show(this, "Cast Codec2: ${labels[options.indexOf(value)]}") }
+}
+
+// 129.14: Gesture Double Swipe2
+internal fun PlayerActivity.showv129GestureDoubleSwipe2Toggle() {
+    val current = BiliClient.prefs.v129GestureDoubleSwipe2
+    BiliClient.prefs.v129GestureDoubleSwipe2 = !current
+    AppToast.show(this, "Gesture Double Swipe2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 129.15: Cache Memory Size2
+internal fun PlayerActivity.showv129CacheMemorySize2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v129CacheMemorySize2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Memory Size2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v129CacheMemorySize2 = value; AppToast.show(this, "Cache Memory Size2: ${labels[options.indexOf(value)]}") }
+}
+
+// 130.1: Playback Skip Intro2
+internal fun PlayerActivity.showv130PlaybackSkipIntro2Toggle() {
+    val current = BiliClient.prefs.v130PlaybackSkipIntro2
+    BiliClient.prefs.v130PlaybackSkipIntro2 = !current
+    AppToast.show(this, "Playback Skip Intro2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 130.2: Danmaku Speed2
+internal fun PlayerActivity.showv130DanmakuSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v130DanmakuSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v130DanmakuSpeed2 = value; AppToast.show(this, "Danmaku Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 130.3: Color Fade2
+internal fun PlayerActivity.showv130ColorFade2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v130ColorFade2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Fade2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v130ColorFade2 = value; AppToast.show(this, "Color Fade2: ${labels[options.indexOf(value)]}") }
+}
+
+// 130.4: Volume Fade In2
+internal fun PlayerActivity.showv130VolumeFadeIn2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v130VolumeFadeIn2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade In2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v130VolumeFadeIn2 = value; AppToast.show(this, "Volume Fade In2: ${labels[options.indexOf(value)]}") }
+}
+
+// 130.5: Cast Bitrate2
+internal fun PlayerActivity.showv130CastBitrate2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v130CastBitrate2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Bitrate2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v130CastBitrate2 = value; AppToast.show(this, "Cast Bitrate2: ${labels[options.indexOf(value)]}") }
+}
+
+// 130.6: Gesture Tap Zone2
+internal fun PlayerActivity.showv130GestureTapZone2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v130GestureTapZone2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Gesture Tap Zone2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v130GestureTapZone2 = value; AppToast.show(this, "Gesture Tap Zone2: ${labels[options.indexOf(value)]}") }
+}
+
+// 130.7: Cache Comp Level3
+internal fun PlayerActivity.showv130CacheCompLevel3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v130CacheCompLevel3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Comp Level3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v130CacheCompLevel3 = value; AppToast.show(this, "Cache Comp Level3: ${labels[options.indexOf(value)]}") }
+}
+
+// 130.8: Progress Bar Fade2
+internal fun PlayerActivity.showv130ProgressBarFade2Toggle() {
+    val current = BiliClient.prefs.v130ProgressBarFade2
+    BiliClient.prefs.v130ProgressBarFade2 = !current
+    AppToast.show(this, "Progress Bar Fade2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 130.9: Playback Auto Pause2
+internal fun PlayerActivity.showv130PlaybackAutoPause2Toggle() {
+    val current = BiliClient.prefs.v130PlaybackAutoPause2
+    BiliClient.prefs.v130PlaybackAutoPause2 = !current
+    AppToast.show(this, "Playback Auto Pause2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 130.10: Danmaku Scroll Speed2
+internal fun PlayerActivity.showv130DanmakuScrollSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v130DanmakuScrollSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Scroll Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v130DanmakuScrollSpeed2 = value; AppToast.show(this, "Danmaku Scroll Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 130.11: Color Tint2
+internal fun PlayerActivity.showv130ColorTint2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v130ColorTint2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Tint2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v130ColorTint2 = value; AppToast.show(this, "Color Tint2: ${labels[options.indexOf(value)]}") }
+}
+
+// 130.12: Volume Fade Out2
+internal fun PlayerActivity.showv130VolumeFadeOut2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v130VolumeFadeOut2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade Out2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v130VolumeFadeOut2 = value; AppToast.show(this, "Volume Fade Out2: ${labels[options.indexOf(value)]}") }
+}
+
+// 130.13: Cast Codec2
+internal fun PlayerActivity.showv130CastCodec2Dialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v130CastCodec2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Codec2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v130CastCodec2 = value; AppToast.show(this, "Cast Codec2: ${labels[options.indexOf(value)]}") }
+}
+
+// 130.14: Gesture Double Swipe2
+internal fun PlayerActivity.showv130GestureDoubleSwipe2Toggle() {
+    val current = BiliClient.prefs.v130GestureDoubleSwipe2
+    BiliClient.prefs.v130GestureDoubleSwipe2 = !current
+    AppToast.show(this, "Gesture Double Swipe2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 130.15: Cache Memory Size2
+internal fun PlayerActivity.showv130CacheMemorySize2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v130CacheMemorySize2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Memory Size2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v130CacheMemorySize2 = value; AppToast.show(this, "Cache Memory Size2: ${labels[options.indexOf(value)]}") }
+}
+
+// 131.1: Playback Skip Intro2
+internal fun PlayerActivity.showv131PlaybackSkipIntro2Toggle() {
+    val current = BiliClient.prefs.v131PlaybackSkipIntro2
+    BiliClient.prefs.v131PlaybackSkipIntro2 = !current
+    AppToast.show(this, "Playback Skip Intro2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 131.2: Danmaku Speed2
+internal fun PlayerActivity.showv131DanmakuSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v131DanmakuSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v131DanmakuSpeed2 = value; AppToast.show(this, "Danmaku Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 131.3: Color Fade2
+internal fun PlayerActivity.showv131ColorFade2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v131ColorFade2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Fade2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v131ColorFade2 = value; AppToast.show(this, "Color Fade2: ${labels[options.indexOf(value)]}") }
+}
+
+// 131.4: Volume Fade In2
+internal fun PlayerActivity.showv131VolumeFadeIn2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v131VolumeFadeIn2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade In2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v131VolumeFadeIn2 = value; AppToast.show(this, "Volume Fade In2: ${labels[options.indexOf(value)]}") }
+}
+
+// 131.5: Cast Bitrate2
+internal fun PlayerActivity.showv131CastBitrate2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v131CastBitrate2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Bitrate2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v131CastBitrate2 = value; AppToast.show(this, "Cast Bitrate2: ${labels[options.indexOf(value)]}") }
+}
+
+// 131.6: Gesture Tap Zone2
+internal fun PlayerActivity.showv131GestureTapZone2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v131GestureTapZone2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Gesture Tap Zone2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v131GestureTapZone2 = value; AppToast.show(this, "Gesture Tap Zone2: ${labels[options.indexOf(value)]}") }
+}
+
+// 131.7: Cache Comp Level3
+internal fun PlayerActivity.showv131CacheCompLevel3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v131CacheCompLevel3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Comp Level3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v131CacheCompLevel3 = value; AppToast.show(this, "Cache Comp Level3: ${labels[options.indexOf(value)]}") }
+}
+
+// 131.8: Progress Bar Fade2
+internal fun PlayerActivity.showv131ProgressBarFade2Toggle() {
+    val current = BiliClient.prefs.v131ProgressBarFade2
+    BiliClient.prefs.v131ProgressBarFade2 = !current
+    AppToast.show(this, "Progress Bar Fade2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 131.9: Playback Auto Pause2
+internal fun PlayerActivity.showv131PlaybackAutoPause2Toggle() {
+    val current = BiliClient.prefs.v131PlaybackAutoPause2
+    BiliClient.prefs.v131PlaybackAutoPause2 = !current
+    AppToast.show(this, "Playback Auto Pause2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 131.10: Danmaku Scroll Speed2
+internal fun PlayerActivity.showv131DanmakuScrollSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v131DanmakuScrollSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Scroll Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v131DanmakuScrollSpeed2 = value; AppToast.show(this, "Danmaku Scroll Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 131.11: Color Tint2
+internal fun PlayerActivity.showv131ColorTint2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v131ColorTint2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Tint2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v131ColorTint2 = value; AppToast.show(this, "Color Tint2: ${labels[options.indexOf(value)]}") }
+}
+
+// 131.12: Volume Fade Out2
+internal fun PlayerActivity.showv131VolumeFadeOut2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v131VolumeFadeOut2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade Out2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v131VolumeFadeOut2 = value; AppToast.show(this, "Volume Fade Out2: ${labels[options.indexOf(value)]}") }
+}
+
+// 131.13: Cast Codec2
+internal fun PlayerActivity.showv131CastCodec2Dialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v131CastCodec2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Codec2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v131CastCodec2 = value; AppToast.show(this, "Cast Codec2: ${labels[options.indexOf(value)]}") }
+}
+
+// 131.14: Gesture Double Swipe2
+internal fun PlayerActivity.showv131GestureDoubleSwipe2Toggle() {
+    val current = BiliClient.prefs.v131GestureDoubleSwipe2
+    BiliClient.prefs.v131GestureDoubleSwipe2 = !current
+    AppToast.show(this, "Gesture Double Swipe2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 131.15: Cache Memory Size2
+internal fun PlayerActivity.showv131CacheMemorySize2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v131CacheMemorySize2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Memory Size2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v131CacheMemorySize2 = value; AppToast.show(this, "Cache Memory Size2: ${labels[options.indexOf(value)]}") }
+}
+
+// 132.1: Playback Skip Intro2
+internal fun PlayerActivity.showv132PlaybackSkipIntro2Toggle() {
+    val current = BiliClient.prefs.v132PlaybackSkipIntro2
+    BiliClient.prefs.v132PlaybackSkipIntro2 = !current
+    AppToast.show(this, "Playback Skip Intro2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 132.2: Danmaku Speed2
+internal fun PlayerActivity.showv132DanmakuSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v132DanmakuSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v132DanmakuSpeed2 = value; AppToast.show(this, "Danmaku Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 132.3: Color Fade2
+internal fun PlayerActivity.showv132ColorFade2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v132ColorFade2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Fade2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v132ColorFade2 = value; AppToast.show(this, "Color Fade2: ${labels[options.indexOf(value)]}") }
+}
+
+// 132.4: Volume Fade In2
+internal fun PlayerActivity.showv132VolumeFadeIn2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v132VolumeFadeIn2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade In2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v132VolumeFadeIn2 = value; AppToast.show(this, "Volume Fade In2: ${labels[options.indexOf(value)]}") }
+}
+
+// 132.5: Cast Bitrate2
+internal fun PlayerActivity.showv132CastBitrate2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v132CastBitrate2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Bitrate2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v132CastBitrate2 = value; AppToast.show(this, "Cast Bitrate2: ${labels[options.indexOf(value)]}") }
+}
+
+// 132.6: Gesture Tap Zone2
+internal fun PlayerActivity.showv132GestureTapZone2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v132GestureTapZone2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Gesture Tap Zone2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v132GestureTapZone2 = value; AppToast.show(this, "Gesture Tap Zone2: ${labels[options.indexOf(value)]}") }
+}
+
+// 132.7: Cache Comp Level3
+internal fun PlayerActivity.showv132CacheCompLevel3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v132CacheCompLevel3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Comp Level3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v132CacheCompLevel3 = value; AppToast.show(this, "Cache Comp Level3: ${labels[options.indexOf(value)]}") }
+}
+
+// 132.8: Progress Bar Fade2
+internal fun PlayerActivity.showv132ProgressBarFade2Toggle() {
+    val current = BiliClient.prefs.v132ProgressBarFade2
+    BiliClient.prefs.v132ProgressBarFade2 = !current
+    AppToast.show(this, "Progress Bar Fade2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 132.9: Playback Auto Pause2
+internal fun PlayerActivity.showv132PlaybackAutoPause2Toggle() {
+    val current = BiliClient.prefs.v132PlaybackAutoPause2
+    BiliClient.prefs.v132PlaybackAutoPause2 = !current
+    AppToast.show(this, "Playback Auto Pause2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 132.10: Danmaku Scroll Speed2
+internal fun PlayerActivity.showv132DanmakuScrollSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v132DanmakuScrollSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Scroll Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v132DanmakuScrollSpeed2 = value; AppToast.show(this, "Danmaku Scroll Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 132.11: Color Tint2
+internal fun PlayerActivity.showv132ColorTint2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v132ColorTint2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Tint2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v132ColorTint2 = value; AppToast.show(this, "Color Tint2: ${labels[options.indexOf(value)]}") }
+}
+
+// 132.12: Volume Fade Out2
+internal fun PlayerActivity.showv132VolumeFadeOut2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v132VolumeFadeOut2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade Out2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v132VolumeFadeOut2 = value; AppToast.show(this, "Volume Fade Out2: ${labels[options.indexOf(value)]}") }
+}
+
+// 132.13: Cast Codec2
+internal fun PlayerActivity.showv132CastCodec2Dialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v132CastCodec2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Codec2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v132CastCodec2 = value; AppToast.show(this, "Cast Codec2: ${labels[options.indexOf(value)]}") }
+}
+
+// 132.14: Gesture Double Swipe2
+internal fun PlayerActivity.showv132GestureDoubleSwipe2Toggle() {
+    val current = BiliClient.prefs.v132GestureDoubleSwipe2
+    BiliClient.prefs.v132GestureDoubleSwipe2 = !current
+    AppToast.show(this, "Gesture Double Swipe2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 132.15: Cache Memory Size2
+internal fun PlayerActivity.showv132CacheMemorySize2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v132CacheMemorySize2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Memory Size2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v132CacheMemorySize2 = value; AppToast.show(this, "Cache Memory Size2: ${labels[options.indexOf(value)]}") }
+}
+
+// 133.1: Playback Skip Intro2
+internal fun PlayerActivity.showv133PlaybackSkipIntro2Toggle() {
+    val current = BiliClient.prefs.v133PlaybackSkipIntro2
+    BiliClient.prefs.v133PlaybackSkipIntro2 = !current
+    AppToast.show(this, "Playback Skip Intro2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 133.2: Danmaku Speed2
+internal fun PlayerActivity.showv133DanmakuSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v133DanmakuSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v133DanmakuSpeed2 = value; AppToast.show(this, "Danmaku Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 133.3: Color Fade2
+internal fun PlayerActivity.showv133ColorFade2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v133ColorFade2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Fade2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v133ColorFade2 = value; AppToast.show(this, "Color Fade2: ${labels[options.indexOf(value)]}") }
+}
+
+// 133.4: Volume Fade In2
+internal fun PlayerActivity.showv133VolumeFadeIn2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v133VolumeFadeIn2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade In2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v133VolumeFadeIn2 = value; AppToast.show(this, "Volume Fade In2: ${labels[options.indexOf(value)]}") }
+}
+
+// 133.5: Cast Bitrate2
+internal fun PlayerActivity.showv133CastBitrate2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v133CastBitrate2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Bitrate2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v133CastBitrate2 = value; AppToast.show(this, "Cast Bitrate2: ${labels[options.indexOf(value)]}") }
+}
+
+// 133.6: Gesture Tap Zone2
+internal fun PlayerActivity.showv133GestureTapZone2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v133GestureTapZone2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Gesture Tap Zone2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v133GestureTapZone2 = value; AppToast.show(this, "Gesture Tap Zone2: ${labels[options.indexOf(value)]}") }
+}
+
+// 133.7: Cache Comp Level3
+internal fun PlayerActivity.showv133CacheCompLevel3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v133CacheCompLevel3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Comp Level3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v133CacheCompLevel3 = value; AppToast.show(this, "Cache Comp Level3: ${labels[options.indexOf(value)]}") }
+}
+
+// 133.8: Progress Bar Fade2
+internal fun PlayerActivity.showv133ProgressBarFade2Toggle() {
+    val current = BiliClient.prefs.v133ProgressBarFade2
+    BiliClient.prefs.v133ProgressBarFade2 = !current
+    AppToast.show(this, "Progress Bar Fade2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 133.9: Playback Auto Pause2
+internal fun PlayerActivity.showv133PlaybackAutoPause2Toggle() {
+    val current = BiliClient.prefs.v133PlaybackAutoPause2
+    BiliClient.prefs.v133PlaybackAutoPause2 = !current
+    AppToast.show(this, "Playback Auto Pause2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 133.10: Danmaku Scroll Speed2
+internal fun PlayerActivity.showv133DanmakuScrollSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v133DanmakuScrollSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Scroll Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v133DanmakuScrollSpeed2 = value; AppToast.show(this, "Danmaku Scroll Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 133.11: Color Tint2
+internal fun PlayerActivity.showv133ColorTint2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v133ColorTint2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Tint2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v133ColorTint2 = value; AppToast.show(this, "Color Tint2: ${labels[options.indexOf(value)]}") }
+}
+
+// 133.12: Volume Fade Out2
+internal fun PlayerActivity.showv133VolumeFadeOut2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v133VolumeFadeOut2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade Out2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v133VolumeFadeOut2 = value; AppToast.show(this, "Volume Fade Out2: ${labels[options.indexOf(value)]}") }
+}
+
+// 133.13: Cast Codec2
+internal fun PlayerActivity.showv133CastCodec2Dialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v133CastCodec2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Codec2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v133CastCodec2 = value; AppToast.show(this, "Cast Codec2: ${labels[options.indexOf(value)]}") }
+}
+
+// 133.14: Gesture Double Swipe2
+internal fun PlayerActivity.showv133GestureDoubleSwipe2Toggle() {
+    val current = BiliClient.prefs.v133GestureDoubleSwipe2
+    BiliClient.prefs.v133GestureDoubleSwipe2 = !current
+    AppToast.show(this, "Gesture Double Swipe2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 133.15: Cache Memory Size2
+internal fun PlayerActivity.showv133CacheMemorySize2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v133CacheMemorySize2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Memory Size2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v133CacheMemorySize2 = value; AppToast.show(this, "Cache Memory Size2: ${labels[options.indexOf(value)]}") }
+}
+
+// 134.1: Playback Skip Intro2
+internal fun PlayerActivity.showv134PlaybackSkipIntro2Toggle() {
+    val current = BiliClient.prefs.v134PlaybackSkipIntro2
+    BiliClient.prefs.v134PlaybackSkipIntro2 = !current
+    AppToast.show(this, "Playback Skip Intro2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 134.2: Danmaku Speed2
+internal fun PlayerActivity.showv134DanmakuSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v134DanmakuSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v134DanmakuSpeed2 = value; AppToast.show(this, "Danmaku Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 134.3: Color Fade2
+internal fun PlayerActivity.showv134ColorFade2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v134ColorFade2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Fade2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v134ColorFade2 = value; AppToast.show(this, "Color Fade2: ${labels[options.indexOf(value)]}") }
+}
+
+// 134.4: Volume Fade In2
+internal fun PlayerActivity.showv134VolumeFadeIn2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v134VolumeFadeIn2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade In2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v134VolumeFadeIn2 = value; AppToast.show(this, "Volume Fade In2: ${labels[options.indexOf(value)]}") }
+}
+
+// 134.5: Cast Bitrate2
+internal fun PlayerActivity.showv134CastBitrate2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v134CastBitrate2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Bitrate2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v134CastBitrate2 = value; AppToast.show(this, "Cast Bitrate2: ${labels[options.indexOf(value)]}") }
+}
+
+// 134.6: Gesture Tap Zone2
+internal fun PlayerActivity.showv134GestureTapZone2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v134GestureTapZone2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Gesture Tap Zone2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v134GestureTapZone2 = value; AppToast.show(this, "Gesture Tap Zone2: ${labels[options.indexOf(value)]}") }
+}
+
+// 134.7: Cache Comp Level3
+internal fun PlayerActivity.showv134CacheCompLevel3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v134CacheCompLevel3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Comp Level3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v134CacheCompLevel3 = value; AppToast.show(this, "Cache Comp Level3: ${labels[options.indexOf(value)]}") }
+}
+
+// 134.8: Progress Bar Fade2
+internal fun PlayerActivity.showv134ProgressBarFade2Toggle() {
+    val current = BiliClient.prefs.v134ProgressBarFade2
+    BiliClient.prefs.v134ProgressBarFade2 = !current
+    AppToast.show(this, "Progress Bar Fade2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 134.9: Playback Auto Pause2
+internal fun PlayerActivity.showv134PlaybackAutoPause2Toggle() {
+    val current = BiliClient.prefs.v134PlaybackAutoPause2
+    BiliClient.prefs.v134PlaybackAutoPause2 = !current
+    AppToast.show(this, "Playback Auto Pause2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 134.10: Danmaku Scroll Speed2
+internal fun PlayerActivity.showv134DanmakuScrollSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v134DanmakuScrollSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Scroll Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v134DanmakuScrollSpeed2 = value; AppToast.show(this, "Danmaku Scroll Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 134.11: Color Tint2
+internal fun PlayerActivity.showv134ColorTint2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v134ColorTint2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Tint2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v134ColorTint2 = value; AppToast.show(this, "Color Tint2: ${labels[options.indexOf(value)]}") }
+}
+
+// 134.12: Volume Fade Out2
+internal fun PlayerActivity.showv134VolumeFadeOut2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v134VolumeFadeOut2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade Out2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v134VolumeFadeOut2 = value; AppToast.show(this, "Volume Fade Out2: ${labels[options.indexOf(value)]}") }
+}
+
+// 134.13: Cast Codec2
+internal fun PlayerActivity.showv134CastCodec2Dialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v134CastCodec2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Codec2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v134CastCodec2 = value; AppToast.show(this, "Cast Codec2: ${labels[options.indexOf(value)]}") }
+}
+
+// 134.14: Gesture Double Swipe2
+internal fun PlayerActivity.showv134GestureDoubleSwipe2Toggle() {
+    val current = BiliClient.prefs.v134GestureDoubleSwipe2
+    BiliClient.prefs.v134GestureDoubleSwipe2 = !current
+    AppToast.show(this, "Gesture Double Swipe2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 134.15: Cache Memory Size2
+internal fun PlayerActivity.showv134CacheMemorySize2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v134CacheMemorySize2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Memory Size2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v134CacheMemorySize2 = value; AppToast.show(this, "Cache Memory Size2: ${labels[options.indexOf(value)]}") }
+}
+
+// 135.1: Playback Skip Intro2
+internal fun PlayerActivity.showv135PlaybackSkipIntro2Toggle() {
+    val current = BiliClient.prefs.v135PlaybackSkipIntro2
+    BiliClient.prefs.v135PlaybackSkipIntro2 = !current
+    AppToast.show(this, "Playback Skip Intro2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 135.2: Danmaku Speed2
+internal fun PlayerActivity.showv135DanmakuSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v135DanmakuSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v135DanmakuSpeed2 = value; AppToast.show(this, "Danmaku Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 135.3: Color Fade2
+internal fun PlayerActivity.showv135ColorFade2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v135ColorFade2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Fade2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v135ColorFade2 = value; AppToast.show(this, "Color Fade2: ${labels[options.indexOf(value)]}") }
+}
+
+// 135.4: Volume Fade In2
+internal fun PlayerActivity.showv135VolumeFadeIn2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v135VolumeFadeIn2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade In2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v135VolumeFadeIn2 = value; AppToast.show(this, "Volume Fade In2: ${labels[options.indexOf(value)]}") }
+}
+
+// 135.5: Cast Bitrate2
+internal fun PlayerActivity.showv135CastBitrate2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v135CastBitrate2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Bitrate2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v135CastBitrate2 = value; AppToast.show(this, "Cast Bitrate2: ${labels[options.indexOf(value)]}") }
+}
+
+// 135.6: Gesture Tap Zone2
+internal fun PlayerActivity.showv135GestureTapZone2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v135GestureTapZone2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Gesture Tap Zone2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v135GestureTapZone2 = value; AppToast.show(this, "Gesture Tap Zone2: ${labels[options.indexOf(value)]}") }
+}
+
+// 135.7: Cache Comp Level3
+internal fun PlayerActivity.showv135CacheCompLevel3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v135CacheCompLevel3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Comp Level3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v135CacheCompLevel3 = value; AppToast.show(this, "Cache Comp Level3: ${labels[options.indexOf(value)]}") }
+}
+
+// 135.8: Progress Bar Fade2
+internal fun PlayerActivity.showv135ProgressBarFade2Toggle() {
+    val current = BiliClient.prefs.v135ProgressBarFade2
+    BiliClient.prefs.v135ProgressBarFade2 = !current
+    AppToast.show(this, "Progress Bar Fade2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 135.9: Playback Auto Pause2
+internal fun PlayerActivity.showv135PlaybackAutoPause2Toggle() {
+    val current = BiliClient.prefs.v135PlaybackAutoPause2
+    BiliClient.prefs.v135PlaybackAutoPause2 = !current
+    AppToast.show(this, "Playback Auto Pause2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 135.10: Danmaku Scroll Speed2
+internal fun PlayerActivity.showv135DanmakuScrollSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v135DanmakuScrollSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Scroll Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v135DanmakuScrollSpeed2 = value; AppToast.show(this, "Danmaku Scroll Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 135.11: Color Tint2
+internal fun PlayerActivity.showv135ColorTint2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v135ColorTint2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Tint2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v135ColorTint2 = value; AppToast.show(this, "Color Tint2: ${labels[options.indexOf(value)]}") }
+}
+
+// 135.12: Volume Fade Out2
+internal fun PlayerActivity.showv135VolumeFadeOut2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v135VolumeFadeOut2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade Out2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v135VolumeFadeOut2 = value; AppToast.show(this, "Volume Fade Out2: ${labels[options.indexOf(value)]}") }
+}
+
+// 135.13: Cast Codec2
+internal fun PlayerActivity.showv135CastCodec2Dialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v135CastCodec2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Codec2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v135CastCodec2 = value; AppToast.show(this, "Cast Codec2: ${labels[options.indexOf(value)]}") }
+}
+
+// 135.14: Gesture Double Swipe2
+internal fun PlayerActivity.showv135GestureDoubleSwipe2Toggle() {
+    val current = BiliClient.prefs.v135GestureDoubleSwipe2
+    BiliClient.prefs.v135GestureDoubleSwipe2 = !current
+    AppToast.show(this, "Gesture Double Swipe2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 135.15: Cache Memory Size2
+internal fun PlayerActivity.showv135CacheMemorySize2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v135CacheMemorySize2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Memory Size2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v135CacheMemorySize2 = value; AppToast.show(this, "Cache Memory Size2: ${labels[options.indexOf(value)]}") }
+}
+
+// 136.1: Playback Skip Intro2
+internal fun PlayerActivity.showv136PlaybackSkipIntro2Toggle() {
+    val current = BiliClient.prefs.v136PlaybackSkipIntro2
+    BiliClient.prefs.v136PlaybackSkipIntro2 = !current
+    AppToast.show(this, "Playback Skip Intro2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 136.2: Danmaku Speed2
+internal fun PlayerActivity.showv136DanmakuSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v136DanmakuSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v136DanmakuSpeed2 = value; AppToast.show(this, "Danmaku Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 136.3: Color Fade2
+internal fun PlayerActivity.showv136ColorFade2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v136ColorFade2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Fade2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v136ColorFade2 = value; AppToast.show(this, "Color Fade2: ${labels[options.indexOf(value)]}") }
+}
+
+// 136.4: Volume Fade In2
+internal fun PlayerActivity.showv136VolumeFadeIn2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v136VolumeFadeIn2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade In2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v136VolumeFadeIn2 = value; AppToast.show(this, "Volume Fade In2: ${labels[options.indexOf(value)]}") }
+}
+
+// 136.5: Cast Bitrate2
+internal fun PlayerActivity.showv136CastBitrate2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v136CastBitrate2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Bitrate2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v136CastBitrate2 = value; AppToast.show(this, "Cast Bitrate2: ${labels[options.indexOf(value)]}") }
+}
+
+// 136.6: Gesture Tap Zone2
+internal fun PlayerActivity.showv136GestureTapZone2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v136GestureTapZone2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Gesture Tap Zone2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v136GestureTapZone2 = value; AppToast.show(this, "Gesture Tap Zone2: ${labels[options.indexOf(value)]}") }
+}
+
+// 136.7: Cache Comp Level3
+internal fun PlayerActivity.showv136CacheCompLevel3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v136CacheCompLevel3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Comp Level3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v136CacheCompLevel3 = value; AppToast.show(this, "Cache Comp Level3: ${labels[options.indexOf(value)]}") }
+}
+
+// 136.8: Progress Bar Fade2
+internal fun PlayerActivity.showv136ProgressBarFade2Toggle() {
+    val current = BiliClient.prefs.v136ProgressBarFade2
+    BiliClient.prefs.v136ProgressBarFade2 = !current
+    AppToast.show(this, "Progress Bar Fade2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 136.9: Playback Auto Pause2
+internal fun PlayerActivity.showv136PlaybackAutoPause2Toggle() {
+    val current = BiliClient.prefs.v136PlaybackAutoPause2
+    BiliClient.prefs.v136PlaybackAutoPause2 = !current
+    AppToast.show(this, "Playback Auto Pause2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 136.10: Danmaku Scroll Speed2
+internal fun PlayerActivity.showv136DanmakuScrollSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v136DanmakuScrollSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Scroll Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v136DanmakuScrollSpeed2 = value; AppToast.show(this, "Danmaku Scroll Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 136.11: Color Tint2
+internal fun PlayerActivity.showv136ColorTint2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v136ColorTint2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Tint2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v136ColorTint2 = value; AppToast.show(this, "Color Tint2: ${labels[options.indexOf(value)]}") }
+}
+
+// 136.12: Volume Fade Out2
+internal fun PlayerActivity.showv136VolumeFadeOut2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v136VolumeFadeOut2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade Out2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v136VolumeFadeOut2 = value; AppToast.show(this, "Volume Fade Out2: ${labels[options.indexOf(value)]}") }
+}
+
+// 136.13: Cast Codec2
+internal fun PlayerActivity.showv136CastCodec2Dialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v136CastCodec2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Codec2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v136CastCodec2 = value; AppToast.show(this, "Cast Codec2: ${labels[options.indexOf(value)]}") }
+}
+
+// 136.14: Gesture Double Swipe2
+internal fun PlayerActivity.showv136GestureDoubleSwipe2Toggle() {
+    val current = BiliClient.prefs.v136GestureDoubleSwipe2
+    BiliClient.prefs.v136GestureDoubleSwipe2 = !current
+    AppToast.show(this, "Gesture Double Swipe2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 136.15: Cache Memory Size2
+internal fun PlayerActivity.showv136CacheMemorySize2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v136CacheMemorySize2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Memory Size2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v136CacheMemorySize2 = value; AppToast.show(this, "Cache Memory Size2: ${labels[options.indexOf(value)]}") }
+}
+
+// 137.1: Playback Skip Intro2
+internal fun PlayerActivity.showv137PlaybackSkipIntro2Toggle() {
+    val current = BiliClient.prefs.v137PlaybackSkipIntro2
+    BiliClient.prefs.v137PlaybackSkipIntro2 = !current
+    AppToast.show(this, "Playback Skip Intro2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 137.2: Danmaku Speed2
+internal fun PlayerActivity.showv137DanmakuSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v137DanmakuSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v137DanmakuSpeed2 = value; AppToast.show(this, "Danmaku Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 137.3: Color Fade2
+internal fun PlayerActivity.showv137ColorFade2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v137ColorFade2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Fade2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v137ColorFade2 = value; AppToast.show(this, "Color Fade2: ${labels[options.indexOf(value)]}") }
+}
+
+// 137.4: Volume Fade In2
+internal fun PlayerActivity.showv137VolumeFadeIn2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v137VolumeFadeIn2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade In2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v137VolumeFadeIn2 = value; AppToast.show(this, "Volume Fade In2: ${labels[options.indexOf(value)]}") }
+}
+
+// 137.5: Cast Bitrate2
+internal fun PlayerActivity.showv137CastBitrate2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v137CastBitrate2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Bitrate2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v137CastBitrate2 = value; AppToast.show(this, "Cast Bitrate2: ${labels[options.indexOf(value)]}") }
+}
+
+// 137.6: Gesture Tap Zone2
+internal fun PlayerActivity.showv137GestureTapZone2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v137GestureTapZone2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Gesture Tap Zone2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v137GestureTapZone2 = value; AppToast.show(this, "Gesture Tap Zone2: ${labels[options.indexOf(value)]}") }
+}
+
+// 137.7: Cache Comp Level3
+internal fun PlayerActivity.showv137CacheCompLevel3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v137CacheCompLevel3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Comp Level3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v137CacheCompLevel3 = value; AppToast.show(this, "Cache Comp Level3: ${labels[options.indexOf(value)]}") }
+}
+
+// 137.8: Progress Bar Fade2
+internal fun PlayerActivity.showv137ProgressBarFade2Toggle() {
+    val current = BiliClient.prefs.v137ProgressBarFade2
+    BiliClient.prefs.v137ProgressBarFade2 = !current
+    AppToast.show(this, "Progress Bar Fade2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 137.9: Playback Auto Pause2
+internal fun PlayerActivity.showv137PlaybackAutoPause2Toggle() {
+    val current = BiliClient.prefs.v137PlaybackAutoPause2
+    BiliClient.prefs.v137PlaybackAutoPause2 = !current
+    AppToast.show(this, "Playback Auto Pause2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 137.10: Danmaku Scroll Speed2
+internal fun PlayerActivity.showv137DanmakuScrollSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v137DanmakuScrollSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Scroll Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v137DanmakuScrollSpeed2 = value; AppToast.show(this, "Danmaku Scroll Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 137.11: Color Tint2
+internal fun PlayerActivity.showv137ColorTint2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v137ColorTint2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Tint2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v137ColorTint2 = value; AppToast.show(this, "Color Tint2: ${labels[options.indexOf(value)]}") }
+}
+
+// 137.12: Volume Fade Out2
+internal fun PlayerActivity.showv137VolumeFadeOut2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v137VolumeFadeOut2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade Out2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v137VolumeFadeOut2 = value; AppToast.show(this, "Volume Fade Out2: ${labels[options.indexOf(value)]}") }
+}
+
+// 137.13: Cast Codec2
+internal fun PlayerActivity.showv137CastCodec2Dialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v137CastCodec2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Codec2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v137CastCodec2 = value; AppToast.show(this, "Cast Codec2: ${labels[options.indexOf(value)]}") }
+}
+
+// 137.14: Gesture Double Swipe2
+internal fun PlayerActivity.showv137GestureDoubleSwipe2Toggle() {
+    val current = BiliClient.prefs.v137GestureDoubleSwipe2
+    BiliClient.prefs.v137GestureDoubleSwipe2 = !current
+    AppToast.show(this, "Gesture Double Swipe2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 137.15: Cache Memory Size2
+internal fun PlayerActivity.showv137CacheMemorySize2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v137CacheMemorySize2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Memory Size2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v137CacheMemorySize2 = value; AppToast.show(this, "Cache Memory Size2: ${labels[options.indexOf(value)]}") }
+}
+
+// 138.1: Playback Skip Intro2
+internal fun PlayerActivity.showv138PlaybackSkipIntro2Toggle() {
+    val current = BiliClient.prefs.v138PlaybackSkipIntro2
+    BiliClient.prefs.v138PlaybackSkipIntro2 = !current
+    AppToast.show(this, "Playback Skip Intro2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 138.2: Danmaku Speed2
+internal fun PlayerActivity.showv138DanmakuSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v138DanmakuSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v138DanmakuSpeed2 = value; AppToast.show(this, "Danmaku Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 138.3: Color Fade2
+internal fun PlayerActivity.showv138ColorFade2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v138ColorFade2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Fade2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v138ColorFade2 = value; AppToast.show(this, "Color Fade2: ${labels[options.indexOf(value)]}") }
+}
+
+// 138.4: Volume Fade In2
+internal fun PlayerActivity.showv138VolumeFadeIn2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v138VolumeFadeIn2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade In2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v138VolumeFadeIn2 = value; AppToast.show(this, "Volume Fade In2: ${labels[options.indexOf(value)]}") }
+}
+
+// 138.5: Cast Bitrate2
+internal fun PlayerActivity.showv138CastBitrate2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v138CastBitrate2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Bitrate2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v138CastBitrate2 = value; AppToast.show(this, "Cast Bitrate2: ${labels[options.indexOf(value)]}") }
+}
+
+// 138.6: Gesture Tap Zone2
+internal fun PlayerActivity.showv138GestureTapZone2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v138GestureTapZone2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Gesture Tap Zone2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v138GestureTapZone2 = value; AppToast.show(this, "Gesture Tap Zone2: ${labels[options.indexOf(value)]}") }
+}
+
+// 138.7: Cache Comp Level3
+internal fun PlayerActivity.showv138CacheCompLevel3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v138CacheCompLevel3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Comp Level3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v138CacheCompLevel3 = value; AppToast.show(this, "Cache Comp Level3: ${labels[options.indexOf(value)]}") }
+}
+
+// 138.8: Progress Bar Fade2
+internal fun PlayerActivity.showv138ProgressBarFade2Toggle() {
+    val current = BiliClient.prefs.v138ProgressBarFade2
+    BiliClient.prefs.v138ProgressBarFade2 = !current
+    AppToast.show(this, "Progress Bar Fade2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 138.9: Playback Auto Pause2
+internal fun PlayerActivity.showv138PlaybackAutoPause2Toggle() {
+    val current = BiliClient.prefs.v138PlaybackAutoPause2
+    BiliClient.prefs.v138PlaybackAutoPause2 = !current
+    AppToast.show(this, "Playback Auto Pause2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 138.10: Danmaku Scroll Speed2
+internal fun PlayerActivity.showv138DanmakuScrollSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v138DanmakuScrollSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Scroll Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v138DanmakuScrollSpeed2 = value; AppToast.show(this, "Danmaku Scroll Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 138.11: Color Tint2
+internal fun PlayerActivity.showv138ColorTint2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v138ColorTint2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Tint2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v138ColorTint2 = value; AppToast.show(this, "Color Tint2: ${labels[options.indexOf(value)]}") }
+}
+
+// 138.12: Volume Fade Out2
+internal fun PlayerActivity.showv138VolumeFadeOut2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v138VolumeFadeOut2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade Out2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v138VolumeFadeOut2 = value; AppToast.show(this, "Volume Fade Out2: ${labels[options.indexOf(value)]}") }
+}
+
+// 138.13: Cast Codec2
+internal fun PlayerActivity.showv138CastCodec2Dialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v138CastCodec2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Codec2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v138CastCodec2 = value; AppToast.show(this, "Cast Codec2: ${labels[options.indexOf(value)]}") }
+}
+
+// 138.14: Gesture Double Swipe2
+internal fun PlayerActivity.showv138GestureDoubleSwipe2Toggle() {
+    val current = BiliClient.prefs.v138GestureDoubleSwipe2
+    BiliClient.prefs.v138GestureDoubleSwipe2 = !current
+    AppToast.show(this, "Gesture Double Swipe2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 138.15: Cache Memory Size2
+internal fun PlayerActivity.showv138CacheMemorySize2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v138CacheMemorySize2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Memory Size2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v138CacheMemorySize2 = value; AppToast.show(this, "Cache Memory Size2: ${labels[options.indexOf(value)]}") }
+}
+
+// 139.1: Playback Skip Intro2
+internal fun PlayerActivity.showv139PlaybackSkipIntro2Toggle() {
+    val current = BiliClient.prefs.v139PlaybackSkipIntro2
+    BiliClient.prefs.v139PlaybackSkipIntro2 = !current
+    AppToast.show(this, "Playback Skip Intro2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 139.2: Danmaku Speed2
+internal fun PlayerActivity.showv139DanmakuSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v139DanmakuSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v139DanmakuSpeed2 = value; AppToast.show(this, "Danmaku Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 139.3: Color Fade2
+internal fun PlayerActivity.showv139ColorFade2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v139ColorFade2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Fade2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v139ColorFade2 = value; AppToast.show(this, "Color Fade2: ${labels[options.indexOf(value)]}") }
+}
+
+// 139.4: Volume Fade In2
+internal fun PlayerActivity.showv139VolumeFadeIn2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v139VolumeFadeIn2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade In2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v139VolumeFadeIn2 = value; AppToast.show(this, "Volume Fade In2: ${labels[options.indexOf(value)]}") }
+}
+
+// 139.5: Cast Bitrate2
+internal fun PlayerActivity.showv139CastBitrate2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v139CastBitrate2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Bitrate2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v139CastBitrate2 = value; AppToast.show(this, "Cast Bitrate2: ${labels[options.indexOf(value)]}") }
+}
+
+// 139.6: Gesture Tap Zone2
+internal fun PlayerActivity.showv139GestureTapZone2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v139GestureTapZone2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Gesture Tap Zone2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v139GestureTapZone2 = value; AppToast.show(this, "Gesture Tap Zone2: ${labels[options.indexOf(value)]}") }
+}
+
+// 139.7: Cache Comp Level3
+internal fun PlayerActivity.showv139CacheCompLevel3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v139CacheCompLevel3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Comp Level3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v139CacheCompLevel3 = value; AppToast.show(this, "Cache Comp Level3: ${labels[options.indexOf(value)]}") }
+}
+
+// 139.8: Progress Bar Fade2
+internal fun PlayerActivity.showv139ProgressBarFade2Toggle() {
+    val current = BiliClient.prefs.v139ProgressBarFade2
+    BiliClient.prefs.v139ProgressBarFade2 = !current
+    AppToast.show(this, "Progress Bar Fade2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 139.9: Playback Auto Pause2
+internal fun PlayerActivity.showv139PlaybackAutoPause2Toggle() {
+    val current = BiliClient.prefs.v139PlaybackAutoPause2
+    BiliClient.prefs.v139PlaybackAutoPause2 = !current
+    AppToast.show(this, "Playback Auto Pause2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 139.10: Danmaku Scroll Speed2
+internal fun PlayerActivity.showv139DanmakuScrollSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v139DanmakuScrollSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Scroll Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v139DanmakuScrollSpeed2 = value; AppToast.show(this, "Danmaku Scroll Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 139.11: Color Tint2
+internal fun PlayerActivity.showv139ColorTint2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v139ColorTint2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Tint2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v139ColorTint2 = value; AppToast.show(this, "Color Tint2: ${labels[options.indexOf(value)]}") }
+}
+
+// 139.12: Volume Fade Out2
+internal fun PlayerActivity.showv139VolumeFadeOut2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v139VolumeFadeOut2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade Out2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v139VolumeFadeOut2 = value; AppToast.show(this, "Volume Fade Out2: ${labels[options.indexOf(value)]}") }
+}
+
+// 139.13: Cast Codec2
+internal fun PlayerActivity.showv139CastCodec2Dialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v139CastCodec2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Codec2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v139CastCodec2 = value; AppToast.show(this, "Cast Codec2: ${labels[options.indexOf(value)]}") }
+}
+
+// 139.14: Gesture Double Swipe2
+internal fun PlayerActivity.showv139GestureDoubleSwipe2Toggle() {
+    val current = BiliClient.prefs.v139GestureDoubleSwipe2
+    BiliClient.prefs.v139GestureDoubleSwipe2 = !current
+    AppToast.show(this, "Gesture Double Swipe2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 139.15: Cache Memory Size2
+internal fun PlayerActivity.showv139CacheMemorySize2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v139CacheMemorySize2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Memory Size2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v139CacheMemorySize2 = value; AppToast.show(this, "Cache Memory Size2: ${labels[options.indexOf(value)]}") }
+}
+
+// 140.1: Playback Skip Intro2
+internal fun PlayerActivity.showv140PlaybackSkipIntro2Toggle() {
+    val current = BiliClient.prefs.v140PlaybackSkipIntro2
+    BiliClient.prefs.v140PlaybackSkipIntro2 = !current
+    AppToast.show(this, "Playback Skip Intro2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 140.2: Danmaku Speed2
+internal fun PlayerActivity.showv140DanmakuSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v140DanmakuSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v140DanmakuSpeed2 = value; AppToast.show(this, "Danmaku Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 140.3: Color Fade2
+internal fun PlayerActivity.showv140ColorFade2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v140ColorFade2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Fade2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v140ColorFade2 = value; AppToast.show(this, "Color Fade2: ${labels[options.indexOf(value)]}") }
+}
+
+// 140.4: Volume Fade In2
+internal fun PlayerActivity.showv140VolumeFadeIn2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v140VolumeFadeIn2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade In2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v140VolumeFadeIn2 = value; AppToast.show(this, "Volume Fade In2: ${labels[options.indexOf(value)]}") }
+}
+
+// 140.5: Cast Bitrate2
+internal fun PlayerActivity.showv140CastBitrate2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v140CastBitrate2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Bitrate2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v140CastBitrate2 = value; AppToast.show(this, "Cast Bitrate2: ${labels[options.indexOf(value)]}") }
+}
+
+// 140.6: Gesture Tap Zone2
+internal fun PlayerActivity.showv140GestureTapZone2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v140GestureTapZone2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Gesture Tap Zone2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v140GestureTapZone2 = value; AppToast.show(this, "Gesture Tap Zone2: ${labels[options.indexOf(value)]}") }
+}
+
+// 140.7: Cache Comp Level3
+internal fun PlayerActivity.showv140CacheCompLevel3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v140CacheCompLevel3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Comp Level3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v140CacheCompLevel3 = value; AppToast.show(this, "Cache Comp Level3: ${labels[options.indexOf(value)]}") }
+}
+
+// 140.8: Progress Bar Fade2
+internal fun PlayerActivity.showv140ProgressBarFade2Toggle() {
+    val current = BiliClient.prefs.v140ProgressBarFade2
+    BiliClient.prefs.v140ProgressBarFade2 = !current
+    AppToast.show(this, "Progress Bar Fade2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 140.9: Playback Auto Pause2
+internal fun PlayerActivity.showv140PlaybackAutoPause2Toggle() {
+    val current = BiliClient.prefs.v140PlaybackAutoPause2
+    BiliClient.prefs.v140PlaybackAutoPause2 = !current
+    AppToast.show(this, "Playback Auto Pause2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 140.10: Danmaku Scroll Speed2
+internal fun PlayerActivity.showv140DanmakuScrollSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v140DanmakuScrollSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Scroll Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v140DanmakuScrollSpeed2 = value; AppToast.show(this, "Danmaku Scroll Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 140.11: Color Tint2
+internal fun PlayerActivity.showv140ColorTint2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v140ColorTint2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Tint2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v140ColorTint2 = value; AppToast.show(this, "Color Tint2: ${labels[options.indexOf(value)]}") }
+}
+
+// 140.12: Volume Fade Out2
+internal fun PlayerActivity.showv140VolumeFadeOut2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v140VolumeFadeOut2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade Out2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v140VolumeFadeOut2 = value; AppToast.show(this, "Volume Fade Out2: ${labels[options.indexOf(value)]}") }
+}
+
+// 140.13: Cast Codec2
+internal fun PlayerActivity.showv140CastCodec2Dialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v140CastCodec2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Codec2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v140CastCodec2 = value; AppToast.show(this, "Cast Codec2: ${labels[options.indexOf(value)]}") }
+}
+
+// 140.14: Gesture Double Swipe2
+internal fun PlayerActivity.showv140GestureDoubleSwipe2Toggle() {
+    val current = BiliClient.prefs.v140GestureDoubleSwipe2
+    BiliClient.prefs.v140GestureDoubleSwipe2 = !current
+    AppToast.show(this, "Gesture Double Swipe2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 140.15: Cache Memory Size2
+internal fun PlayerActivity.showv140CacheMemorySize2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v140CacheMemorySize2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Memory Size2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v140CacheMemorySize2 = value; AppToast.show(this, "Cache Memory Size2: ${labels[options.indexOf(value)]}") }
+}
+
+// 141.1: Playback Skip Intro2
+internal fun PlayerActivity.showv141PlaybackSkipIntro2Toggle() {
+    val current = BiliClient.prefs.v141PlaybackSkipIntro2
+    BiliClient.prefs.v141PlaybackSkipIntro2 = !current
+    AppToast.show(this, "Playback Skip Intro2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 141.2: Danmaku Speed2
+internal fun PlayerActivity.showv141DanmakuSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v141DanmakuSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v141DanmakuSpeed2 = value; AppToast.show(this, "Danmaku Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 141.3: Color Fade2
+internal fun PlayerActivity.showv141ColorFade2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v141ColorFade2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Fade2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v141ColorFade2 = value; AppToast.show(this, "Color Fade2: ${labels[options.indexOf(value)]}") }
+}
+
+// 141.4: Volume Fade In2
+internal fun PlayerActivity.showv141VolumeFadeIn2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v141VolumeFadeIn2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade In2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v141VolumeFadeIn2 = value; AppToast.show(this, "Volume Fade In2: ${labels[options.indexOf(value)]}") }
+}
+
+// 141.5: Cast Bitrate2
+internal fun PlayerActivity.showv141CastBitrate2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v141CastBitrate2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Bitrate2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v141CastBitrate2 = value; AppToast.show(this, "Cast Bitrate2: ${labels[options.indexOf(value)]}") }
+}
+
+// 141.6: Gesture Tap Zone2
+internal fun PlayerActivity.showv141GestureTapZone2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v141GestureTapZone2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Gesture Tap Zone2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v141GestureTapZone2 = value; AppToast.show(this, "Gesture Tap Zone2: ${labels[options.indexOf(value)]}") }
+}
+
+// 141.7: Cache Comp Level3
+internal fun PlayerActivity.showv141CacheCompLevel3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v141CacheCompLevel3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Comp Level3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v141CacheCompLevel3 = value; AppToast.show(this, "Cache Comp Level3: ${labels[options.indexOf(value)]}") }
+}
+
+// 141.8: Progress Bar Fade2
+internal fun PlayerActivity.showv141ProgressBarFade2Toggle() {
+    val current = BiliClient.prefs.v141ProgressBarFade2
+    BiliClient.prefs.v141ProgressBarFade2 = !current
+    AppToast.show(this, "Progress Bar Fade2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 141.9: Playback Auto Pause2
+internal fun PlayerActivity.showv141PlaybackAutoPause2Toggle() {
+    val current = BiliClient.prefs.v141PlaybackAutoPause2
+    BiliClient.prefs.v141PlaybackAutoPause2 = !current
+    AppToast.show(this, "Playback Auto Pause2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 141.10: Danmaku Scroll Speed2
+internal fun PlayerActivity.showv141DanmakuScrollSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v141DanmakuScrollSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Scroll Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v141DanmakuScrollSpeed2 = value; AppToast.show(this, "Danmaku Scroll Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 141.11: Color Tint2
+internal fun PlayerActivity.showv141ColorTint2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v141ColorTint2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Tint2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v141ColorTint2 = value; AppToast.show(this, "Color Tint2: ${labels[options.indexOf(value)]}") }
+}
+
+// 141.12: Volume Fade Out2
+internal fun PlayerActivity.showv141VolumeFadeOut2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v141VolumeFadeOut2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade Out2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v141VolumeFadeOut2 = value; AppToast.show(this, "Volume Fade Out2: ${labels[options.indexOf(value)]}") }
+}
+
+// 141.13: Cast Codec2
+internal fun PlayerActivity.showv141CastCodec2Dialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v141CastCodec2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Codec2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v141CastCodec2 = value; AppToast.show(this, "Cast Codec2: ${labels[options.indexOf(value)]}") }
+}
+
+// 141.14: Gesture Double Swipe2
+internal fun PlayerActivity.showv141GestureDoubleSwipe2Toggle() {
+    val current = BiliClient.prefs.v141GestureDoubleSwipe2
+    BiliClient.prefs.v141GestureDoubleSwipe2 = !current
+    AppToast.show(this, "Gesture Double Swipe2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 141.15: Cache Memory Size2
+internal fun PlayerActivity.showv141CacheMemorySize2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v141CacheMemorySize2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Memory Size2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v141CacheMemorySize2 = value; AppToast.show(this, "Cache Memory Size2: ${labels[options.indexOf(value)]}") }
+}
+
+// 142.1: Playback Skip Intro2
+internal fun PlayerActivity.showv142PlaybackSkipIntro2Toggle() {
+    val current = BiliClient.prefs.v142PlaybackSkipIntro2
+    BiliClient.prefs.v142PlaybackSkipIntro2 = !current
+    AppToast.show(this, "Playback Skip Intro2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 142.2: Danmaku Speed2
+internal fun PlayerActivity.showv142DanmakuSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v142DanmakuSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v142DanmakuSpeed2 = value; AppToast.show(this, "Danmaku Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 142.3: Color Fade2
+internal fun PlayerActivity.showv142ColorFade2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v142ColorFade2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Fade2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v142ColorFade2 = value; AppToast.show(this, "Color Fade2: ${labels[options.indexOf(value)]}") }
+}
+
+// 142.4: Volume Fade In2
+internal fun PlayerActivity.showv142VolumeFadeIn2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v142VolumeFadeIn2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade In2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v142VolumeFadeIn2 = value; AppToast.show(this, "Volume Fade In2: ${labels[options.indexOf(value)]}") }
+}
+
+// 142.5: Cast Bitrate2
+internal fun PlayerActivity.showv142CastBitrate2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v142CastBitrate2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Bitrate2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v142CastBitrate2 = value; AppToast.show(this, "Cast Bitrate2: ${labels[options.indexOf(value)]}") }
+}
+
+// 142.6: Gesture Tap Zone2
+internal fun PlayerActivity.showv142GestureTapZone2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v142GestureTapZone2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Gesture Tap Zone2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v142GestureTapZone2 = value; AppToast.show(this, "Gesture Tap Zone2: ${labels[options.indexOf(value)]}") }
+}
+
+// 142.7: Cache Comp Level3
+internal fun PlayerActivity.showv142CacheCompLevel3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v142CacheCompLevel3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Comp Level3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v142CacheCompLevel3 = value; AppToast.show(this, "Cache Comp Level3: ${labels[options.indexOf(value)]}") }
+}
+
+// 142.8: Progress Bar Fade2
+internal fun PlayerActivity.showv142ProgressBarFade2Toggle() {
+    val current = BiliClient.prefs.v142ProgressBarFade2
+    BiliClient.prefs.v142ProgressBarFade2 = !current
+    AppToast.show(this, "Progress Bar Fade2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 142.9: Playback Auto Pause2
+internal fun PlayerActivity.showv142PlaybackAutoPause2Toggle() {
+    val current = BiliClient.prefs.v142PlaybackAutoPause2
+    BiliClient.prefs.v142PlaybackAutoPause2 = !current
+    AppToast.show(this, "Playback Auto Pause2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 142.10: Danmaku Scroll Speed2
+internal fun PlayerActivity.showv142DanmakuScrollSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v142DanmakuScrollSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Scroll Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v142DanmakuScrollSpeed2 = value; AppToast.show(this, "Danmaku Scroll Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 142.11: Color Tint2
+internal fun PlayerActivity.showv142ColorTint2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v142ColorTint2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Tint2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v142ColorTint2 = value; AppToast.show(this, "Color Tint2: ${labels[options.indexOf(value)]}") }
+}
+
+// 142.12: Volume Fade Out2
+internal fun PlayerActivity.showv142VolumeFadeOut2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v142VolumeFadeOut2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade Out2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v142VolumeFadeOut2 = value; AppToast.show(this, "Volume Fade Out2: ${labels[options.indexOf(value)]}") }
+}
+
+// 142.13: Cast Codec2
+internal fun PlayerActivity.showv142CastCodec2Dialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v142CastCodec2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Codec2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v142CastCodec2 = value; AppToast.show(this, "Cast Codec2: ${labels[options.indexOf(value)]}") }
+}
+
+// 142.14: Gesture Double Swipe2
+internal fun PlayerActivity.showv142GestureDoubleSwipe2Toggle() {
+    val current = BiliClient.prefs.v142GestureDoubleSwipe2
+    BiliClient.prefs.v142GestureDoubleSwipe2 = !current
+    AppToast.show(this, "Gesture Double Swipe2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 142.15: Cache Memory Size2
+internal fun PlayerActivity.showv142CacheMemorySize2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v142CacheMemorySize2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Memory Size2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v142CacheMemorySize2 = value; AppToast.show(this, "Cache Memory Size2: ${labels[options.indexOf(value)]}") }
+}
+
+// 143.1: Playback Skip Intro2
+internal fun PlayerActivity.showv143PlaybackSkipIntro2Toggle() {
+    val current = BiliClient.prefs.v143PlaybackSkipIntro2
+    BiliClient.prefs.v143PlaybackSkipIntro2 = !current
+    AppToast.show(this, "Playback Skip Intro2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 143.2: Danmaku Speed2
+internal fun PlayerActivity.showv143DanmakuSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v143DanmakuSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v143DanmakuSpeed2 = value; AppToast.show(this, "Danmaku Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 143.3: Color Fade2
+internal fun PlayerActivity.showv143ColorFade2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v143ColorFade2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Fade2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v143ColorFade2 = value; AppToast.show(this, "Color Fade2: ${labels[options.indexOf(value)]}") }
+}
+
+// 143.4: Volume Fade In2
+internal fun PlayerActivity.showv143VolumeFadeIn2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v143VolumeFadeIn2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade In2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v143VolumeFadeIn2 = value; AppToast.show(this, "Volume Fade In2: ${labels[options.indexOf(value)]}") }
+}
+
+// 143.5: Cast Bitrate2
+internal fun PlayerActivity.showv143CastBitrate2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v143CastBitrate2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Bitrate2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v143CastBitrate2 = value; AppToast.show(this, "Cast Bitrate2: ${labels[options.indexOf(value)]}") }
+}
+
+// 143.6: Gesture Tap Zone2
+internal fun PlayerActivity.showv143GestureTapZone2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v143GestureTapZone2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Gesture Tap Zone2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v143GestureTapZone2 = value; AppToast.show(this, "Gesture Tap Zone2: ${labels[options.indexOf(value)]}") }
+}
+
+// 143.7: Cache Comp Level3
+internal fun PlayerActivity.showv143CacheCompLevel3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v143CacheCompLevel3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Comp Level3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v143CacheCompLevel3 = value; AppToast.show(this, "Cache Comp Level3: ${labels[options.indexOf(value)]}") }
+}
+
+// 143.8: Progress Bar Fade2
+internal fun PlayerActivity.showv143ProgressBarFade2Toggle() {
+    val current = BiliClient.prefs.v143ProgressBarFade2
+    BiliClient.prefs.v143ProgressBarFade2 = !current
+    AppToast.show(this, "Progress Bar Fade2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 143.9: Playback Auto Pause2
+internal fun PlayerActivity.showv143PlaybackAutoPause2Toggle() {
+    val current = BiliClient.prefs.v143PlaybackAutoPause2
+    BiliClient.prefs.v143PlaybackAutoPause2 = !current
+    AppToast.show(this, "Playback Auto Pause2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 143.10: Danmaku Scroll Speed2
+internal fun PlayerActivity.showv143DanmakuScrollSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v143DanmakuScrollSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Scroll Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v143DanmakuScrollSpeed2 = value; AppToast.show(this, "Danmaku Scroll Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 143.11: Color Tint2
+internal fun PlayerActivity.showv143ColorTint2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v143ColorTint2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Tint2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v143ColorTint2 = value; AppToast.show(this, "Color Tint2: ${labels[options.indexOf(value)]}") }
+}
+
+// 143.12: Volume Fade Out2
+internal fun PlayerActivity.showv143VolumeFadeOut2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v143VolumeFadeOut2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade Out2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v143VolumeFadeOut2 = value; AppToast.show(this, "Volume Fade Out2: ${labels[options.indexOf(value)]}") }
+}
+
+// 143.13: Cast Codec2
+internal fun PlayerActivity.showv143CastCodec2Dialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v143CastCodec2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Codec2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v143CastCodec2 = value; AppToast.show(this, "Cast Codec2: ${labels[options.indexOf(value)]}") }
+}
+
+// 143.14: Gesture Double Swipe2
+internal fun PlayerActivity.showv143GestureDoubleSwipe2Toggle() {
+    val current = BiliClient.prefs.v143GestureDoubleSwipe2
+    BiliClient.prefs.v143GestureDoubleSwipe2 = !current
+    AppToast.show(this, "Gesture Double Swipe2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 143.15: Cache Memory Size2
+internal fun PlayerActivity.showv143CacheMemorySize2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v143CacheMemorySize2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Memory Size2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v143CacheMemorySize2 = value; AppToast.show(this, "Cache Memory Size2: ${labels[options.indexOf(value)]}") }
+}
+
+// 144.1: Playback Skip Intro2
+internal fun PlayerActivity.showv144PlaybackSkipIntro2Toggle() {
+    val current = BiliClient.prefs.v144PlaybackSkipIntro2
+    BiliClient.prefs.v144PlaybackSkipIntro2 = !current
+    AppToast.show(this, "Playback Skip Intro2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 144.2: Danmaku Speed2
+internal fun PlayerActivity.showv144DanmakuSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v144DanmakuSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v144DanmakuSpeed2 = value; AppToast.show(this, "Danmaku Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 144.3: Color Fade2
+internal fun PlayerActivity.showv144ColorFade2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v144ColorFade2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Fade2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v144ColorFade2 = value; AppToast.show(this, "Color Fade2: ${labels[options.indexOf(value)]}") }
+}
+
+// 144.4: Volume Fade In2
+internal fun PlayerActivity.showv144VolumeFadeIn2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v144VolumeFadeIn2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade In2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v144VolumeFadeIn2 = value; AppToast.show(this, "Volume Fade In2: ${labels[options.indexOf(value)]}") }
+}
+
+// 144.5: Cast Bitrate2
+internal fun PlayerActivity.showv144CastBitrate2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v144CastBitrate2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Bitrate2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v144CastBitrate2 = value; AppToast.show(this, "Cast Bitrate2: ${labels[options.indexOf(value)]}") }
+}
+
+// 144.6: Gesture Tap Zone2
+internal fun PlayerActivity.showv144GestureTapZone2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v144GestureTapZone2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Gesture Tap Zone2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v144GestureTapZone2 = value; AppToast.show(this, "Gesture Tap Zone2: ${labels[options.indexOf(value)]}") }
+}
+
+// 144.7: Cache Comp Level3
+internal fun PlayerActivity.showv144CacheCompLevel3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v144CacheCompLevel3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Comp Level3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v144CacheCompLevel3 = value; AppToast.show(this, "Cache Comp Level3: ${labels[options.indexOf(value)]}") }
+}
+
+// 144.8: Progress Bar Fade2
+internal fun PlayerActivity.showv144ProgressBarFade2Toggle() {
+    val current = BiliClient.prefs.v144ProgressBarFade2
+    BiliClient.prefs.v144ProgressBarFade2 = !current
+    AppToast.show(this, "Progress Bar Fade2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 144.9: Playback Auto Pause2
+internal fun PlayerActivity.showv144PlaybackAutoPause2Toggle() {
+    val current = BiliClient.prefs.v144PlaybackAutoPause2
+    BiliClient.prefs.v144PlaybackAutoPause2 = !current
+    AppToast.show(this, "Playback Auto Pause2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 144.10: Danmaku Scroll Speed2
+internal fun PlayerActivity.showv144DanmakuScrollSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v144DanmakuScrollSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Scroll Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v144DanmakuScrollSpeed2 = value; AppToast.show(this, "Danmaku Scroll Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 144.11: Color Tint2
+internal fun PlayerActivity.showv144ColorTint2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v144ColorTint2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Tint2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v144ColorTint2 = value; AppToast.show(this, "Color Tint2: ${labels[options.indexOf(value)]}") }
+}
+
+// 144.12: Volume Fade Out2
+internal fun PlayerActivity.showv144VolumeFadeOut2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v144VolumeFadeOut2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade Out2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v144VolumeFadeOut2 = value; AppToast.show(this, "Volume Fade Out2: ${labels[options.indexOf(value)]}") }
+}
+
+// 144.13: Cast Codec2
+internal fun PlayerActivity.showv144CastCodec2Dialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v144CastCodec2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Codec2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v144CastCodec2 = value; AppToast.show(this, "Cast Codec2: ${labels[options.indexOf(value)]}") }
+}
+
+// 144.14: Gesture Double Swipe2
+internal fun PlayerActivity.showv144GestureDoubleSwipe2Toggle() {
+    val current = BiliClient.prefs.v144GestureDoubleSwipe2
+    BiliClient.prefs.v144GestureDoubleSwipe2 = !current
+    AppToast.show(this, "Gesture Double Swipe2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 144.15: Cache Memory Size2
+internal fun PlayerActivity.showv144CacheMemorySize2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v144CacheMemorySize2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Memory Size2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v144CacheMemorySize2 = value; AppToast.show(this, "Cache Memory Size2: ${labels[options.indexOf(value)]}") }
+}
+
+// 145.1: Playback Skip Intro2
+internal fun PlayerActivity.showv145PlaybackSkipIntro2Toggle() {
+    val current = BiliClient.prefs.v145PlaybackSkipIntro2
+    BiliClient.prefs.v145PlaybackSkipIntro2 = !current
+    AppToast.show(this, "Playback Skip Intro2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 145.2: Danmaku Speed2
+internal fun PlayerActivity.showv145DanmakuSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v145DanmakuSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v145DanmakuSpeed2 = value; AppToast.show(this, "Danmaku Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 145.3: Color Fade2
+internal fun PlayerActivity.showv145ColorFade2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v145ColorFade2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Fade2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v145ColorFade2 = value; AppToast.show(this, "Color Fade2: ${labels[options.indexOf(value)]}") }
+}
+
+// 145.4: Volume Fade In2
+internal fun PlayerActivity.showv145VolumeFadeIn2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v145VolumeFadeIn2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade In2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v145VolumeFadeIn2 = value; AppToast.show(this, "Volume Fade In2: ${labels[options.indexOf(value)]}") }
+}
+
+// 145.5: Cast Bitrate2
+internal fun PlayerActivity.showv145CastBitrate2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v145CastBitrate2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Bitrate2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v145CastBitrate2 = value; AppToast.show(this, "Cast Bitrate2: ${labels[options.indexOf(value)]}") }
+}
+
+// 145.6: Gesture Tap Zone2
+internal fun PlayerActivity.showv145GestureTapZone2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v145GestureTapZone2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Gesture Tap Zone2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v145GestureTapZone2 = value; AppToast.show(this, "Gesture Tap Zone2: ${labels[options.indexOf(value)]}") }
+}
+
+// 145.7: Cache Comp Level3
+internal fun PlayerActivity.showv145CacheCompLevel3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v145CacheCompLevel3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Comp Level3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v145CacheCompLevel3 = value; AppToast.show(this, "Cache Comp Level3: ${labels[options.indexOf(value)]}") }
+}
+
+// 145.8: Progress Bar Fade2
+internal fun PlayerActivity.showv145ProgressBarFade2Toggle() {
+    val current = BiliClient.prefs.v145ProgressBarFade2
+    BiliClient.prefs.v145ProgressBarFade2 = !current
+    AppToast.show(this, "Progress Bar Fade2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 145.9: Playback Auto Pause2
+internal fun PlayerActivity.showv145PlaybackAutoPause2Toggle() {
+    val current = BiliClient.prefs.v145PlaybackAutoPause2
+    BiliClient.prefs.v145PlaybackAutoPause2 = !current
+    AppToast.show(this, "Playback Auto Pause2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 145.10: Danmaku Scroll Speed2
+internal fun PlayerActivity.showv145DanmakuScrollSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v145DanmakuScrollSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Scroll Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v145DanmakuScrollSpeed2 = value; AppToast.show(this, "Danmaku Scroll Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 145.11: Color Tint2
+internal fun PlayerActivity.showv145ColorTint2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v145ColorTint2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Tint2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v145ColorTint2 = value; AppToast.show(this, "Color Tint2: ${labels[options.indexOf(value)]}") }
+}
+
+// 145.12: Volume Fade Out2
+internal fun PlayerActivity.showv145VolumeFadeOut2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v145VolumeFadeOut2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade Out2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v145VolumeFadeOut2 = value; AppToast.show(this, "Volume Fade Out2: ${labels[options.indexOf(value)]}") }
+}
+
+// 145.13: Cast Codec2
+internal fun PlayerActivity.showv145CastCodec2Dialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v145CastCodec2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Codec2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v145CastCodec2 = value; AppToast.show(this, "Cast Codec2: ${labels[options.indexOf(value)]}") }
+}
+
+// 145.14: Gesture Double Swipe2
+internal fun PlayerActivity.showv145GestureDoubleSwipe2Toggle() {
+    val current = BiliClient.prefs.v145GestureDoubleSwipe2
+    BiliClient.prefs.v145GestureDoubleSwipe2 = !current
+    AppToast.show(this, "Gesture Double Swipe2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 145.15: Cache Memory Size2
+internal fun PlayerActivity.showv145CacheMemorySize2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v145CacheMemorySize2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Memory Size2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v145CacheMemorySize2 = value; AppToast.show(this, "Cache Memory Size2: ${labels[options.indexOf(value)]}") }
+}
+
+// 146.1: Playback Skip Intro2
+internal fun PlayerActivity.showv146PlaybackSkipIntro2Toggle() {
+    val current = BiliClient.prefs.v146PlaybackSkipIntro2
+    BiliClient.prefs.v146PlaybackSkipIntro2 = !current
+    AppToast.show(this, "Playback Skip Intro2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 146.2: Danmaku Speed2
+internal fun PlayerActivity.showv146DanmakuSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v146DanmakuSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v146DanmakuSpeed2 = value; AppToast.show(this, "Danmaku Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 146.3: Color Fade2
+internal fun PlayerActivity.showv146ColorFade2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v146ColorFade2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Fade2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v146ColorFade2 = value; AppToast.show(this, "Color Fade2: ${labels[options.indexOf(value)]}") }
+}
+
+// 146.4: Volume Fade In2
+internal fun PlayerActivity.showv146VolumeFadeIn2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v146VolumeFadeIn2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade In2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v146VolumeFadeIn2 = value; AppToast.show(this, "Volume Fade In2: ${labels[options.indexOf(value)]}") }
+}
+
+// 146.5: Cast Bitrate2
+internal fun PlayerActivity.showv146CastBitrate2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v146CastBitrate2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Bitrate2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v146CastBitrate2 = value; AppToast.show(this, "Cast Bitrate2: ${labels[options.indexOf(value)]}") }
+}
+
+// 146.6: Gesture Tap Zone2
+internal fun PlayerActivity.showv146GestureTapZone2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v146GestureTapZone2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Gesture Tap Zone2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v146GestureTapZone2 = value; AppToast.show(this, "Gesture Tap Zone2: ${labels[options.indexOf(value)]}") }
+}
+
+// 146.7: Cache Comp Level3
+internal fun PlayerActivity.showv146CacheCompLevel3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v146CacheCompLevel3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Comp Level3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v146CacheCompLevel3 = value; AppToast.show(this, "Cache Comp Level3: ${labels[options.indexOf(value)]}") }
+}
+
+// 146.8: Progress Bar Fade2
+internal fun PlayerActivity.showv146ProgressBarFade2Toggle() {
+    val current = BiliClient.prefs.v146ProgressBarFade2
+    BiliClient.prefs.v146ProgressBarFade2 = !current
+    AppToast.show(this, "Progress Bar Fade2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 146.9: Playback Auto Pause2
+internal fun PlayerActivity.showv146PlaybackAutoPause2Toggle() {
+    val current = BiliClient.prefs.v146PlaybackAutoPause2
+    BiliClient.prefs.v146PlaybackAutoPause2 = !current
+    AppToast.show(this, "Playback Auto Pause2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 146.10: Danmaku Scroll Speed2
+internal fun PlayerActivity.showv146DanmakuScrollSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v146DanmakuScrollSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Scroll Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v146DanmakuScrollSpeed2 = value; AppToast.show(this, "Danmaku Scroll Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 146.11: Color Tint2
+internal fun PlayerActivity.showv146ColorTint2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v146ColorTint2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Tint2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v146ColorTint2 = value; AppToast.show(this, "Color Tint2: ${labels[options.indexOf(value)]}") }
+}
+
+// 146.12: Volume Fade Out2
+internal fun PlayerActivity.showv146VolumeFadeOut2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v146VolumeFadeOut2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade Out2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v146VolumeFadeOut2 = value; AppToast.show(this, "Volume Fade Out2: ${labels[options.indexOf(value)]}") }
+}
+
+// 146.13: Cast Codec2
+internal fun PlayerActivity.showv146CastCodec2Dialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v146CastCodec2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Codec2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v146CastCodec2 = value; AppToast.show(this, "Cast Codec2: ${labels[options.indexOf(value)]}") }
+}
+
+// 146.14: Gesture Double Swipe2
+internal fun PlayerActivity.showv146GestureDoubleSwipe2Toggle() {
+    val current = BiliClient.prefs.v146GestureDoubleSwipe2
+    BiliClient.prefs.v146GestureDoubleSwipe2 = !current
+    AppToast.show(this, "Gesture Double Swipe2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 146.15: Cache Memory Size2
+internal fun PlayerActivity.showv146CacheMemorySize2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v146CacheMemorySize2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Memory Size2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v146CacheMemorySize2 = value; AppToast.show(this, "Cache Memory Size2: ${labels[options.indexOf(value)]}") }
+}
+
+// 147.1: Playback Skip Intro2
+internal fun PlayerActivity.showv147PlaybackSkipIntro2Toggle() {
+    val current = BiliClient.prefs.v147PlaybackSkipIntro2
+    BiliClient.prefs.v147PlaybackSkipIntro2 = !current
+    AppToast.show(this, "Playback Skip Intro2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 147.2: Danmaku Speed2
+internal fun PlayerActivity.showv147DanmakuSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v147DanmakuSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v147DanmakuSpeed2 = value; AppToast.show(this, "Danmaku Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 147.3: Color Fade2
+internal fun PlayerActivity.showv147ColorFade2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v147ColorFade2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Fade2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v147ColorFade2 = value; AppToast.show(this, "Color Fade2: ${labels[options.indexOf(value)]}") }
+}
+
+// 147.4: Volume Fade In2
+internal fun PlayerActivity.showv147VolumeFadeIn2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v147VolumeFadeIn2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade In2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v147VolumeFadeIn2 = value; AppToast.show(this, "Volume Fade In2: ${labels[options.indexOf(value)]}") }
+}
+
+// 147.5: Cast Bitrate2
+internal fun PlayerActivity.showv147CastBitrate2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v147CastBitrate2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Bitrate2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v147CastBitrate2 = value; AppToast.show(this, "Cast Bitrate2: ${labels[options.indexOf(value)]}") }
+}
+
+// 147.6: Gesture Tap Zone2
+internal fun PlayerActivity.showv147GestureTapZone2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v147GestureTapZone2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Gesture Tap Zone2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v147GestureTapZone2 = value; AppToast.show(this, "Gesture Tap Zone2: ${labels[options.indexOf(value)]}") }
+}
+
+// 147.7: Cache Comp Level3
+internal fun PlayerActivity.showv147CacheCompLevel3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v147CacheCompLevel3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Comp Level3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v147CacheCompLevel3 = value; AppToast.show(this, "Cache Comp Level3: ${labels[options.indexOf(value)]}") }
+}
+
+// 147.8: Progress Bar Fade2
+internal fun PlayerActivity.showv147ProgressBarFade2Toggle() {
+    val current = BiliClient.prefs.v147ProgressBarFade2
+    BiliClient.prefs.v147ProgressBarFade2 = !current
+    AppToast.show(this, "Progress Bar Fade2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 147.9: Playback Auto Pause2
+internal fun PlayerActivity.showv147PlaybackAutoPause2Toggle() {
+    val current = BiliClient.prefs.v147PlaybackAutoPause2
+    BiliClient.prefs.v147PlaybackAutoPause2 = !current
+    AppToast.show(this, "Playback Auto Pause2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 147.10: Danmaku Scroll Speed2
+internal fun PlayerActivity.showv147DanmakuScrollSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v147DanmakuScrollSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Scroll Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v147DanmakuScrollSpeed2 = value; AppToast.show(this, "Danmaku Scroll Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 147.11: Color Tint2
+internal fun PlayerActivity.showv147ColorTint2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v147ColorTint2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Tint2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v147ColorTint2 = value; AppToast.show(this, "Color Tint2: ${labels[options.indexOf(value)]}") }
+}
+
+// 147.12: Volume Fade Out2
+internal fun PlayerActivity.showv147VolumeFadeOut2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v147VolumeFadeOut2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade Out2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v147VolumeFadeOut2 = value; AppToast.show(this, "Volume Fade Out2: ${labels[options.indexOf(value)]}") }
+}
+
+// 147.13: Cast Codec2
+internal fun PlayerActivity.showv147CastCodec2Dialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v147CastCodec2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Codec2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v147CastCodec2 = value; AppToast.show(this, "Cast Codec2: ${labels[options.indexOf(value)]}") }
+}
+
+// 147.14: Gesture Double Swipe2
+internal fun PlayerActivity.showv147GestureDoubleSwipe2Toggle() {
+    val current = BiliClient.prefs.v147GestureDoubleSwipe2
+    BiliClient.prefs.v147GestureDoubleSwipe2 = !current
+    AppToast.show(this, "Gesture Double Swipe2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 147.15: Cache Memory Size2
+internal fun PlayerActivity.showv147CacheMemorySize2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v147CacheMemorySize2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Memory Size2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v147CacheMemorySize2 = value; AppToast.show(this, "Cache Memory Size2: ${labels[options.indexOf(value)]}") }
+}
+
+// 148.1: Playback Skip Intro2
+internal fun PlayerActivity.showv148PlaybackSkipIntro2Toggle() {
+    val current = BiliClient.prefs.v148PlaybackSkipIntro2
+    BiliClient.prefs.v148PlaybackSkipIntro2 = !current
+    AppToast.show(this, "Playback Skip Intro2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 148.2: Danmaku Speed2
+internal fun PlayerActivity.showv148DanmakuSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v148DanmakuSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v148DanmakuSpeed2 = value; AppToast.show(this, "Danmaku Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 148.3: Color Fade2
+internal fun PlayerActivity.showv148ColorFade2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v148ColorFade2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Fade2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v148ColorFade2 = value; AppToast.show(this, "Color Fade2: ${labels[options.indexOf(value)]}") }
+}
+
+// 148.4: Volume Fade In2
+internal fun PlayerActivity.showv148VolumeFadeIn2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v148VolumeFadeIn2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade In2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v148VolumeFadeIn2 = value; AppToast.show(this, "Volume Fade In2: ${labels[options.indexOf(value)]}") }
+}
+
+// 148.5: Cast Bitrate2
+internal fun PlayerActivity.showv148CastBitrate2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v148CastBitrate2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Bitrate2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v148CastBitrate2 = value; AppToast.show(this, "Cast Bitrate2: ${labels[options.indexOf(value)]}") }
+}
+
+// 148.6: Gesture Tap Zone2
+internal fun PlayerActivity.showv148GestureTapZone2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v148GestureTapZone2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Gesture Tap Zone2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v148GestureTapZone2 = value; AppToast.show(this, "Gesture Tap Zone2: ${labels[options.indexOf(value)]}") }
+}
+
+// 148.7: Cache Comp Level3
+internal fun PlayerActivity.showv148CacheCompLevel3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v148CacheCompLevel3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Comp Level3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v148CacheCompLevel3 = value; AppToast.show(this, "Cache Comp Level3: ${labels[options.indexOf(value)]}") }
+}
+
+// 148.8: Progress Bar Fade2
+internal fun PlayerActivity.showv148ProgressBarFade2Toggle() {
+    val current = BiliClient.prefs.v148ProgressBarFade2
+    BiliClient.prefs.v148ProgressBarFade2 = !current
+    AppToast.show(this, "Progress Bar Fade2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 148.9: Playback Auto Pause2
+internal fun PlayerActivity.showv148PlaybackAutoPause2Toggle() {
+    val current = BiliClient.prefs.v148PlaybackAutoPause2
+    BiliClient.prefs.v148PlaybackAutoPause2 = !current
+    AppToast.show(this, "Playback Auto Pause2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 148.10: Danmaku Scroll Speed2
+internal fun PlayerActivity.showv148DanmakuScrollSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v148DanmakuScrollSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Scroll Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v148DanmakuScrollSpeed2 = value; AppToast.show(this, "Danmaku Scroll Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 148.11: Color Tint2
+internal fun PlayerActivity.showv148ColorTint2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v148ColorTint2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Tint2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v148ColorTint2 = value; AppToast.show(this, "Color Tint2: ${labels[options.indexOf(value)]}") }
+}
+
+// 148.12: Volume Fade Out2
+internal fun PlayerActivity.showv148VolumeFadeOut2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v148VolumeFadeOut2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade Out2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v148VolumeFadeOut2 = value; AppToast.show(this, "Volume Fade Out2: ${labels[options.indexOf(value)]}") }
+}
+
+// 148.13: Cast Codec2
+internal fun PlayerActivity.showv148CastCodec2Dialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v148CastCodec2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Codec2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v148CastCodec2 = value; AppToast.show(this, "Cast Codec2: ${labels[options.indexOf(value)]}") }
+}
+
+// 148.14: Gesture Double Swipe2
+internal fun PlayerActivity.showv148GestureDoubleSwipe2Toggle() {
+    val current = BiliClient.prefs.v148GestureDoubleSwipe2
+    BiliClient.prefs.v148GestureDoubleSwipe2 = !current
+    AppToast.show(this, "Gesture Double Swipe2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 148.15: Cache Memory Size2
+internal fun PlayerActivity.showv148CacheMemorySize2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v148CacheMemorySize2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Memory Size2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v148CacheMemorySize2 = value; AppToast.show(this, "Cache Memory Size2: ${labels[options.indexOf(value)]}") }
+}
+
+// 149.1: Playback Skip Intro2
+internal fun PlayerActivity.showv149PlaybackSkipIntro2Toggle() {
+    val current = BiliClient.prefs.v149PlaybackSkipIntro2
+    BiliClient.prefs.v149PlaybackSkipIntro2 = !current
+    AppToast.show(this, "Playback Skip Intro2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 149.2: Danmaku Speed2
+internal fun PlayerActivity.showv149DanmakuSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v149DanmakuSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v149DanmakuSpeed2 = value; AppToast.show(this, "Danmaku Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 149.3: Color Fade2
+internal fun PlayerActivity.showv149ColorFade2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v149ColorFade2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Fade2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v149ColorFade2 = value; AppToast.show(this, "Color Fade2: ${labels[options.indexOf(value)]}") }
+}
+
+// 149.4: Volume Fade In2
+internal fun PlayerActivity.showv149VolumeFadeIn2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v149VolumeFadeIn2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade In2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v149VolumeFadeIn2 = value; AppToast.show(this, "Volume Fade In2: ${labels[options.indexOf(value)]}") }
+}
+
+// 149.5: Cast Bitrate2
+internal fun PlayerActivity.showv149CastBitrate2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v149CastBitrate2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Bitrate2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v149CastBitrate2 = value; AppToast.show(this, "Cast Bitrate2: ${labels[options.indexOf(value)]}") }
+}
+
+// 149.6: Gesture Tap Zone2
+internal fun PlayerActivity.showv149GestureTapZone2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v149GestureTapZone2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Gesture Tap Zone2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v149GestureTapZone2 = value; AppToast.show(this, "Gesture Tap Zone2: ${labels[options.indexOf(value)]}") }
+}
+
+// 149.7: Cache Comp Level3
+internal fun PlayerActivity.showv149CacheCompLevel3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v149CacheCompLevel3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Comp Level3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v149CacheCompLevel3 = value; AppToast.show(this, "Cache Comp Level3: ${labels[options.indexOf(value)]}") }
+}
+
+// 149.8: Progress Bar Fade2
+internal fun PlayerActivity.showv149ProgressBarFade2Toggle() {
+    val current = BiliClient.prefs.v149ProgressBarFade2
+    BiliClient.prefs.v149ProgressBarFade2 = !current
+    AppToast.show(this, "Progress Bar Fade2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 149.9: Playback Auto Pause2
+internal fun PlayerActivity.showv149PlaybackAutoPause2Toggle() {
+    val current = BiliClient.prefs.v149PlaybackAutoPause2
+    BiliClient.prefs.v149PlaybackAutoPause2 = !current
+    AppToast.show(this, "Playback Auto Pause2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 149.10: Danmaku Scroll Speed2
+internal fun PlayerActivity.showv149DanmakuScrollSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v149DanmakuScrollSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Scroll Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v149DanmakuScrollSpeed2 = value; AppToast.show(this, "Danmaku Scroll Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 149.11: Color Tint2
+internal fun PlayerActivity.showv149ColorTint2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v149ColorTint2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Tint2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v149ColorTint2 = value; AppToast.show(this, "Color Tint2: ${labels[options.indexOf(value)]}") }
+}
+
+// 149.12: Volume Fade Out2
+internal fun PlayerActivity.showv149VolumeFadeOut2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v149VolumeFadeOut2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade Out2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v149VolumeFadeOut2 = value; AppToast.show(this, "Volume Fade Out2: ${labels[options.indexOf(value)]}") }
+}
+
+// 149.13: Cast Codec2
+internal fun PlayerActivity.showv149CastCodec2Dialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v149CastCodec2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Codec2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v149CastCodec2 = value; AppToast.show(this, "Cast Codec2: ${labels[options.indexOf(value)]}") }
+}
+
+// 149.14: Gesture Double Swipe2
+internal fun PlayerActivity.showv149GestureDoubleSwipe2Toggle() {
+    val current = BiliClient.prefs.v149GestureDoubleSwipe2
+    BiliClient.prefs.v149GestureDoubleSwipe2 = !current
+    AppToast.show(this, "Gesture Double Swipe2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 149.15: Cache Memory Size2
+internal fun PlayerActivity.showv149CacheMemorySize2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v149CacheMemorySize2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Memory Size2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v149CacheMemorySize2 = value; AppToast.show(this, "Cache Memory Size2: ${labels[options.indexOf(value)]}") }
+}
+
+// 150.1: Playback Skip Intro2
+internal fun PlayerActivity.showv150PlaybackSkipIntro2Toggle() {
+    val current = BiliClient.prefs.v150PlaybackSkipIntro2
+    BiliClient.prefs.v150PlaybackSkipIntro2 = !current
+    AppToast.show(this, "Playback Skip Intro2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 150.2: Danmaku Speed2
+internal fun PlayerActivity.showv150DanmakuSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v150DanmakuSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v150DanmakuSpeed2 = value; AppToast.show(this, "Danmaku Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 150.3: Color Fade2
+internal fun PlayerActivity.showv150ColorFade2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v150ColorFade2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Fade2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v150ColorFade2 = value; AppToast.show(this, "Color Fade2: ${labels[options.indexOf(value)]}") }
+}
+
+// 150.4: Volume Fade In2
+internal fun PlayerActivity.showv150VolumeFadeIn2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v150VolumeFadeIn2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade In2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v150VolumeFadeIn2 = value; AppToast.show(this, "Volume Fade In2: ${labels[options.indexOf(value)]}") }
+}
+
+// 150.5: Cast Bitrate2
+internal fun PlayerActivity.showv150CastBitrate2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v150CastBitrate2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Bitrate2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v150CastBitrate2 = value; AppToast.show(this, "Cast Bitrate2: ${labels[options.indexOf(value)]}") }
+}
+
+// 150.6: Gesture Tap Zone2
+internal fun PlayerActivity.showv150GestureTapZone2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v150GestureTapZone2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Gesture Tap Zone2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v150GestureTapZone2 = value; AppToast.show(this, "Gesture Tap Zone2: ${labels[options.indexOf(value)]}") }
+}
+
+// 150.7: Cache Comp Level3
+internal fun PlayerActivity.showv150CacheCompLevel3Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v150CacheCompLevel3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Comp Level3", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v150CacheCompLevel3 = value; AppToast.show(this, "Cache Comp Level3: ${labels[options.indexOf(value)]}") }
+}
+
+// 150.8: Progress Bar Fade2
+internal fun PlayerActivity.showv150ProgressBarFade2Toggle() {
+    val current = BiliClient.prefs.v150ProgressBarFade2
+    BiliClient.prefs.v150ProgressBarFade2 = !current
+    AppToast.show(this, "Progress Bar Fade2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 150.9: Playback Auto Pause2
+internal fun PlayerActivity.showv150PlaybackAutoPause2Toggle() {
+    val current = BiliClient.prefs.v150PlaybackAutoPause2
+    BiliClient.prefs.v150PlaybackAutoPause2 = !current
+    AppToast.show(this, "Playback Auto Pause2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 150.10: Danmaku Scroll Speed2
+internal fun PlayerActivity.showv150DanmakuScrollSpeed2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v150DanmakuScrollSpeed2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Danmaku Scroll Speed2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v150DanmakuScrollSpeed2 = value; AppToast.show(this, "Danmaku Scroll Speed2: ${labels[options.indexOf(value)]}") }
+}
+
+// 150.11: Color Tint2
+internal fun PlayerActivity.showv150ColorTint2Dialog() {
+    val options = listOf(0,10,20,30,40,50,60,70,80,90,100)
+    val labels = listOf("0","10","20","30","40","50","60","70","80","90","100")
+    val currentIndex = options.indexOf(BiliClient.prefs.v150ColorTint2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Color Tint2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v150ColorTint2 = value; AppToast.show(this, "Color Tint2: ${labels[options.indexOf(value)]}") }
+}
+
+// 150.12: Volume Fade Out2
+internal fun PlayerActivity.showv150VolumeFadeOut2Dialog() {
+    val options = listOf(0,1,2,3,4,5)
+    val labels = listOf("0","1","2","3","4","5")
+    val currentIndex = options.indexOf(BiliClient.prefs.v150VolumeFadeOut2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Volume Fade Out2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v150VolumeFadeOut2 = value; AppToast.show(this, "Volume Fade Out2: ${labels[options.indexOf(value)]}") }
+}
+
+// 150.13: Cast Codec2
+internal fun PlayerActivity.showv150CastCodec2Dialog() {
+    val options = listOf(0,1,2,3)
+    val labels = listOf("0","1","2","3")
+    val currentIndex = options.indexOf(BiliClient.prefs.v150CastCodec2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cast Codec2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v150CastCodec2 = value; AppToast.show(this, "Cast Codec2: ${labels[options.indexOf(value)]}") }
+}
+
+// 150.14: Gesture Double Swipe2
+internal fun PlayerActivity.showv150GestureDoubleSwipe2Toggle() {
+    val current = BiliClient.prefs.v150GestureDoubleSwipe2
+    BiliClient.prefs.v150GestureDoubleSwipe2 = !current
+    AppToast.show(this, "Gesture Double Swipe2: ${if (!current) "ON" else "OFF"}")
+}
+
+// 150.15: Cache Memory Size2
+internal fun PlayerActivity.showv150CacheMemorySize2Dialog() {
+    val options = listOf(0,1,2,3,4,5,6,7,8,9,10)
+    val labels = listOf("0","1","2","3","4","5","6","7","8","9","10")
+    val currentIndex = options.indexOf(BiliClient.prefs.v150CacheMemorySize2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(title = "Cache Memory Size2", options = options, checkedIndex = currentIndex, label = { v -> labels[options.indexOf(v)] }) { value -> BiliClient.prefs.v150CacheMemorySize2 = value; AppToast.show(this, "Cache Memory Size2: ${labels[options.indexOf(value)]}") }
+}
+
