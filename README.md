@@ -118,7 +118,7 @@ This project is based on open-source software. All rights belong to the original
 ## 📋 更新日志 | Changelog | 変更履歴 | 변경 로그
 
 ### 最新版本 | Latest Version | 最新バージョン | 최신 버전
-- **v90.15** - 2026-06-07
+- **v100.15** - 2026-06-07
 
 ---
 
@@ -12236,6 +12236,947 @@ This project is based on open-source software. All rights belong to the original
 - ✅ 字幕アニメーション遅延カスタム
 - ✅ 자막 애니메이션 지연 사용자 정의
 
+
+### v91.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v91.1-v91.15 功能列表
+- ✅ Video Dithering Mode, Danmaku Font Shadow Toggle, Subtitle Fade In Out Custom, Gesture Edge Dead Zone, Cast Video Latency Mode, Playlist Auto Resume Last, Cache Segment Size, Progress Bar Chapter Label, Volume Auto Ducking, History Group By Series, Playback Auto Skip Next Countdown, Screenshot Region Capture, Video Film Grain Custom, Danmaku BG Corner Radius, Subtitle BG Margin Bottom
+
+### v91.1 视频抖动模式 | Video Dithering Mode | ビデオディザリングモード | 비디오 디더링 모드
+- ✅ 视频抖动模式
+- ✅ Video Dithering Mode
+- ✅ ビデオディザリングモード
+- ✅ 비디오 디더링 모드
+
+### v91.2 弹幕字体阴影开关 | Danmaku Font Shadow Toggle | コメントフォントシャドウ切替 | 댓글 글꼴 그림자 전환
+- ✅ 弹幕字体阴影开关
+- ✅ Danmaku Font Shadow Toggle
+- ✅ コメントフォントシャドウ切替
+- ✅ 댓글 글꼴 그림자 전환
+
+### v91.3 字幕淡入淡出自定义 | Subtitle Fade In Out Custom | 字幕フェードインアウトカスタム | 자막 페이드인아웃 사용자 정의
+- ✅ 字幕淡入淡出自定义
+- ✅ Subtitle Fade In Out Custom
+- ✅ 字幕フェードインアウトカスタム
+- ✅ 자막 페이드인아웃 사용자 정의
+
+### v91.4 手势边缘死区 | Gesture Edge Dead Zone | ジェスチャーエッジデッドゾーン | 제스처 가장자리 데드존
+- ✅ 手势边缘死区
+- ✅ Gesture Edge Dead Zone
+- ✅ ジェスチャーエッジデッドゾーン
+- ✅ 제스처 가장자리 데드존
+
+### v91.5 投射视频延迟模式 | Cast Video Latency Mode | キャストビデオ遅延モード | 캐스트 비디오 지연 모드
+- ✅ 投射视频延迟模式
+- ✅ Cast Video Latency Mode
+- ✅ キャストビデオ遅延モード
+- ✅ 캐스트 비디오 지연 모드
+
+### v91.6 播放列表自动恢复上次 | Playlist Auto Resume Last | プレイリスト自動前回再開 | 재생 목록 자동 이전 재개
+- ✅ 播放列表自动恢复上次
+- ✅ Playlist Auto Resume Last
+- ✅ プレイリスト自動前回再開
+- ✅ 재생 목록 자동 이전 재개
+
+### v91.7 缓存分段大小 | Cache Segment Size | キャッシュセグメントサイズ | 캐시 세그먼트 크기
+- ✅ 缓存分段大小
+- ✅ Cache Segment Size
+- ✅ キャッシュセグメントサイズ
+- ✅ 캐시 세그먼트 크기
+
+### v91.8 进度条章节标签 | Progress Bar Chapter Label | プログレスバーチャプターラベル | 진행 바 챕터 라벨
+- ✅ 进度条章节标签
+- ✅ Progress Bar Chapter Label
+- ✅ プログレスバーチャプターラベル
+- ✅ 진행 바 챕터 라벨
+
+### v91.9 音量自动闪避 | Volume Auto Ducking | 音量自動ダッキング | 볼륨 자동 덕킹
+- ✅ 音量自动闪避
+- ✅ Volume Auto Ducking
+- ✅ 音量自動ダッキング
+- ✅ 볼륨 자동 덕킹
+
+### v91.10 历史记录按系列分组 | History Group By Series | 履歴シリーズ別グループ化 | 기록 시리즈별 그룹화
+- ✅ 历史记录按系列分组
+- ✅ History Group By Series
+- ✅ 履歴シリーズ別グループ化
+- ✅ 기록 시리즈별 그룹화
+
+### v91.11 播放自动跳过下一集倒计时 | Playback Auto Skip Next Countdown | 再生自動次エピソードカウントダウンスキップ | 재생 자동 다음 에피소드 카운트다운 건너뛰기
+- ✅ 播放自动跳过下一集倒计时
+- ✅ Playback Auto Skip Next Countdown
+- ✅ 再生自動次エピソードカウントダウンスキップ
+- ✅ 재생 자동 다음 에피소드 카운트다운 건너뛰기
+
+### v91.12 截图区域截取 | Screenshot Region Capture | スクリーンショット領域キャプチャ | 스크린샷 영역 캡처
+- ✅ 截图区域截取
+- ✅ Screenshot Region Capture
+- ✅ スクリーンショット領域キャプチャ
+- ✅ 스크린샷 영역 캡처
+
+### v91.13 视频胶片颗粒自定义 | Video Film Grain Custom | ビデオフィルムグレインカスタム | 비디오 필름 그레인 사용자 정의
+- ✅ 视频胶片颗粒自定义
+- ✅ Video Film Grain Custom
+- ✅ ビデオフィルムグレインカスタム
+- ✅ 비디오 필름 그레인 사용자 정의
+
+### v91.14 弹幕背景圆角半径 | Danmaku BG Corner Radius | コメントBG角丸半径 | 댓글 배경 모서리 반경
+- ✅ 弹幕背景圆角半径
+- ✅ Danmaku BG Corner Radius
+- ✅ コメントBG角丸半径
+- ✅ 댓글 배경 모서리 반경
+
+### v91.15 字幕背景底部边距 | Subtitle BG Margin Bottom | 字幕BG下マージン | 자막 배경 하단 마진
+- ✅ 字幕背景底部边距
+- ✅ Subtitle BG Margin Bottom
+- ✅ 字幕BG下マージン
+- ✅ 자막 배경 하단 마진
+
+### v92.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v92.1-v92.15 功能列表
+- ✅ Video Vignette Custom, Danmaku Font Underline Toggle, Subtitle BG Padding Custom, Gesture Swipe Back Action, Cast Video Drop Frame, Playlist Auto Skip Short, Cache Download Policy, Progress Bar Thumb Shape, Volume Auto Balance, History Auto Clean Expired, Playback Auto Skip Same Title, Screenshot Auto Delete Days, Video Color Fringe Custom, Danmaku BG Opacity Custom, Subtitle BG Margin Top
+
+### v92.1 视频暗角自定义 | Video Vignette Custom | ビデオビネットカスタム | 비디오 비네트 사용자 정의
+- ✅ 视频暗角自定义
+- ✅ Video Vignette Custom
+- ✅ ビデオビネットカスタム
+- ✅ 비디오 비네트 사용자 정의
+
+### v92.2 弹幕字体下划线开关 | Danmaku Font Underline Toggle | コメントフォント下線切替 | 댓글 글꼴 밑줄 전환
+- ✅ 弹幕字体下划线开关
+- ✅ Danmaku Font Underline Toggle
+- ✅ コメントフォント下線切替
+- ✅ 댓글 글꼴 밑줄 전환
+
+### v92.3 字幕背景填充自定义 | Subtitle BG Padding Custom | 字幕BGパディングカスタム | 자막 배경 패딩 사용자 정의
+- ✅ 字幕背景填充自定义
+- ✅ Subtitle BG Padding Custom
+- ✅ 字幕BGパディングカスタム
+- ✅ 자막 배경 패딩 사용자 정의
+
+### v92.4 手势滑动返回动作 | Gesture Swipe Back Action | ジェスチャースワイプバックアクション | 제스처 스와이프 뒤로 동작
+- ✅ 手势滑动返回动作
+- ✅ Gesture Swipe Back Action
+- ✅ ジェスチャースワイプバックアクション
+- ✅ 제스처 스와이프 뒤로 동작
+
+### v92.5 投射视频丢帧 | Cast Video Drop Frame | キャストビデオフレームドロップ | 캐스트 비디오 프레임 드롭
+- ✅ 投射视频丢帧
+- ✅ Cast Video Drop Frame
+- ✅ キャストビデオフレームドロップ
+- ✅ 캐스트 비디오 프레임 드롭
+
+### v92.6 播放列表自动跳过短视频 | Playlist Auto Skip Short | プレイリスト自動短時間スキップ | 재생 목록 자동 짧은 영상 건너뛰기
+- ✅ 播放列表自动跳过短视频
+- ✅ Playlist Auto Skip Short
+- ✅ プレイリスト自動短時間スキップ
+- ✅ 재생 목록 자동 짧은 영상 건너뛰기
+
+### v92.7 缓存下载策略 | Cache Download Policy | キャッシュダウンロードポリシー | 캐시 다운로드 정책
+- ✅ 缓存下载策略
+- ✅ Cache Download Policy
+- ✅ キャッシュダウンロードポリシー
+- ✅ 캐시 다운로드 정책
+
+### v92.8 进度条滑块形状 | Progress Bar Thumb Shape | プログレスバーサム形状 | 진행 바 썸形状
+- ✅ 进度条滑块形状
+- ✅ Progress Bar Thumb Shape
+- ✅ プログレスバーサム形状
+- ✅ 진행 바 썸形状
+
+### v92.9 音量自动平衡 | Volume Auto Balance | 音量自動バランス | 볼륨 자동 밸런스
+- ✅ 音量自动平衡
+- ✅ Volume Auto Balance
+- ✅ 音量自動バランス
+- ✅ 볼륨 자동 밸런스
+
+### v92.10 历史记录自动清理过期 | History Auto Clean Expired | 履歴自動期限切れクリーンアップ | 기록 자동 만료 정리
+- ✅ 历史记录自动清理过期
+- ✅ History Auto Clean Expired
+- ✅ 履歴自動期限切れクリーンアップ
+- ✅ 기록 자동 만료 정리
+
+### v92.11 播放自动跳过相同标题 | Playback Auto Skip Same Title | 再生自動同タイトルスキップ | 재생 자동 동일 제목 건너뛰기
+- ✅ 播放自动跳过相同标题
+- ✅ Playback Auto Skip Same Title
+- ✅ 再生自動同タイトルスキップ
+- ✅ 재생 자동 동일 제목 건너뛰기
+
+### v92.12 截图自动删除天数 | Screenshot Auto Delete Days | スクリーンショット自動削除日数 | 스크린샷 자동 삭제 일수
+- ✅ 截图自动删除天数
+- ✅ Screenshot Auto Delete Days
+- ✅ スクリーンショット自動削除日数
+- ✅ 스크린샷 자동 삭제 일수
+
+### v92.13 视频色边自定义 | Video Color Fringe Custom | ビデオカラーフリンジカスタム | 비디오 컬러 프린지 사용자 정의
+- ✅ 视频色边自定义
+- ✅ Video Color Fringe Custom
+- ✅ ビデオカラーフリンジカスタム
+- ✅ 비디오 컬러 프린지 사용자 정의
+
+### v92.14 弹幕背景透明度自定义 | Danmaku BG Opacity Custom | コメントBG透明度カスタム | 댓글 배경 불투명도 사용자 정의
+- ✅ 弹幕背景透明度自定义
+- ✅ Danmaku BG Opacity Custom
+- ✅ コメントBG透明度カスタム
+- ✅ 댓글 배경 불투명도 사용자 정의
+
+### v92.15 字幕背景顶部边距 | Subtitle BG Margin Top | 字幕BG上マージン | 자막 배경 상단 마진
+- ✅ 字幕背景顶部边距
+- ✅ Subtitle BG Margin Top
+- ✅ 字幕BG上マージン
+- ✅ 자막 배경 상단 마진
+
+### v93.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v93.1-v93.15 功能列表
+- ✅ Video Scanline Effect, Danmaku Send Max Length Custom, Subtitle BG Border Color Custom, Gesture Swipe Forward Action, Cast Audio Dynamic Range, Playlist Auto Skip Long, Cache Network Policy, Progress Bar Buffer Color Custom, Volume Auto Gain Control, History Auto Sync Device, Playback Auto Skip Recap93, Screenshot Naming Template, Video CRT Filter Custom, Danmaku Send Confirm Toggle, Subtitle BG Border Width Custom
+
+### v93.1 视频扫描线效果 | Video Scanline Effect | ビデオスキャンラインエフェクト | 비디오 스캔라인 효과
+- ✅ 视频扫描线效果
+- ✅ Video Scanline Effect
+- ✅ ビデオスキャンラインエフェクト
+- ✅ 비디오 스캔라인 효과
+
+### v93.2 弹幕发送最大长度自定义 | Danmaku Send Max Length Custom | コメント送信最大長カスタム | 댓글 전송 최대 길이 사용자 정의
+- ✅ 弹幕发送最大长度自定义
+- ✅ Danmaku Send Max Length Custom
+- ✅ コメント送信最大長カスタム
+- ✅ 댓글 전송 최대 길이 사용자 정의
+
+### v93.3 字幕背景边框颜色自定义 | Subtitle BG Border Color Custom | 字幕BGボーダー色カスタム | 자막 배경 테두리 색상 사용자 정의
+- ✅ 字幕背景边框颜色自定义
+- ✅ Subtitle BG Border Color Custom
+- ✅ 字幕BGボーダー色カスタム
+- ✅ 자막 배경 테두리 색상 사용자 정의
+
+### v93.4 手势滑动前进动作 | Gesture Swipe Forward Action | ジェスチャースワイプフォワードアクション | 제스처 스와이프 앞으로 동작
+- ✅ 手势滑动前进动作
+- ✅ Gesture Swipe Forward Action
+- ✅ ジェスチャースワイプフォワードアクション
+- ✅ 제스처 스와이프 앞으로 동작
+
+### v93.5 投射音频动态范围 | Cast Audio Dynamic Range | キャスト音声ダイナミックレンジ | 캐스트 오디오 다이나믹 레인지
+- ✅ 投射音频动态范围
+- ✅ Cast Audio Dynamic Range
+- ✅ キャスト音声ダイナミックレンジ
+- ✅ 캐스트 오디오 다이나믹 레인지
+
+### v93.6 播放列表自动跳过长视频 | Playlist Auto Skip Long | プレイリスト自動長時間スキップ | 재생 목록 자동 긴 영상 건너뛰기
+- ✅ 播放列表自动跳过长视频
+- ✅ Playlist Auto Skip Long
+- ✅ プレイリスト自動長時間スキップ
+- ✅ 재생 목록 자동 긴 영상 건너뛰기
+
+### v93.7 缓存网络策略 | Cache Network Policy | キャッシュネットワークポリシー | 캐시 네트워크 정책
+- ✅ 缓存网络策略
+- ✅ Cache Network Policy
+- ✅ キャッシュネットワークポリシー
+- ✅ 캐시 네트워크 정책
+
+### v93.8 进度条缓冲颜色自定义 | Progress Bar Buffer Color Custom | プログレスバーバッファ色カスタム | 진행 바 버퍼 색상 사용자 정의
+- ✅ 进度条缓冲颜色自定义
+- ✅ Progress Bar Buffer Color Custom
+- ✅ プログレスバーバッファ色カスタム
+- ✅ 진행 바 버퍼 색상 사용자 정의
+
+### v93.9 音量自动增益控制 | Volume Auto Gain Control | 音量自動ゲイン制御 | 볼륨 자동 게인 제어
+- ✅ 音量自动增益控制
+- ✅ Volume Auto Gain Control
+- ✅ 音量自動ゲイン制御
+- ✅ 볼륨 자동 게인 제어
+
+### v93.10 历史记录自动同步设备 | History Auto Sync Device | 履歴自動デバイス同期 | 기록 자동 디바이스 동기화
+- ✅ 历史记录自动同步设备
+- ✅ History Auto Sync Device
+- ✅ 履歴自動デバイス同期
+- ✅ 기록 자동 디바이스 동기화
+
+### v93.11 播放自动跳过回顾93 | Playback Auto Skip Recap93 | 再生自動リキャップスキップ93 | 재생 자동 리캡 건너뛰기93
+- ✅ 播放自动跳过回顾93
+- ✅ Playback Auto Skip Recap93
+- ✅ 再生自動リキャップスキップ93
+- ✅ 재생 자동 리캡 건너뛰기93
+
+### v93.12 截图命名模板 | Screenshot Naming Template | スクリーンショット命名テンプレート | 스크린샷 이름 템플릿
+- ✅ 截图命名模板
+- ✅ Screenshot Naming Template
+- ✅ スクリーンショット命名テンプレート
+- ✅ 스크린샷 이름 템플릿
+
+### v93.13 视频CRT滤镜自定义 | Video CRT Filter Custom | ビデオCRTフィルターカスタム | 비디오 CRT 필터 사용자 정의
+- ✅ 视频CRT滤镜自定义
+- ✅ Video CRT Filter Custom
+- ✅ ビデオCRTフィルターカスタム
+- ✅ 비디오 CRT 필터 사용자 정의
+
+### v93.14 弹幕发送确认开关 | Danmaku Send Confirm Toggle | コメント送信確認切替 | 댓글 전송 확인 전환
+- ✅ 弹幕发送确认开关
+- ✅ Danmaku Send Confirm Toggle
+- ✅ コメント送信確認切替
+- ✅ 댓글 전송 확인 전환
+
+### v93.15 字幕背景边框宽度自定义 | Subtitle BG Border Width Custom | 字幕BGボーダー幅カスタム | 자막 배경 테두리 너비 사용자 정의
+- ✅ 字幕背景边框宽度自定义
+- ✅ Subtitle BG Border Width Custom
+- ✅ 字幕BGボーダー幅カスタム
+- ✅ 자막 배경 테두리 너비 사용자 정의
+
+### v94.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v94.1-v94.15 功能列表
+- ✅ Video Pixel Art Mode, Danmaku Font Monospace Toggle, Subtitle BG Border Radius Custom, Gesture Long Press Timeout, Cast Video Buffer Size, Playlist Auto Group By Up, Cache Smart Cleanup, Progress Bar Live Indicator, Volume Auto Pan, History Export Auto, Playback Auto Skip Title, Screenshot Auto Copy Path, Video Ascii Art Mode, Danmaku Font Size Step, Subtitle Animation Fade Time
+
+### v94.1 视频像素艺术模式 | Video Pixel Art Mode | ビデオピクセルアートモード | 비디오 픽셀 아트 모드
+- ✅ 视频像素艺术模式
+- ✅ Video Pixel Art Mode
+- ✅ ビデオピクセルアートモード
+- ✅ 비디오 픽셀 아트 모드
+
+### v94.2 弹幕字体等宽开关 | Danmaku Font Monospace Toggle | コメントフォントモノスペース切替 | 댓글 글꼴 고정폭 전환
+- ✅ 弹幕字体等宽开关
+- ✅ Danmaku Font Monospace Toggle
+- ✅ コメントフォントモノスペース切替
+- ✅ 댓글 글꼴 고정폭 전환
+
+### v94.3 字幕背景边框圆角自定义 | Subtitle BG Border Radius Custom | 字幕BGボーダー角丸カスタム | 자막 배경 테두리 반경 사용자 정의
+- ✅ 字幕背景边框圆角自定义
+- ✅ Subtitle BG Border Radius Custom
+- ✅ 字幕BGボーダー角丸カスタム
+- ✅ 자막 배경 테두리 반경 사용자 정의
+
+### v94.4 手势长按超时 | Gesture Long Press Timeout | ジェスチャー長押しタイムアウト | 제스처 길게 누르기 타임아웃
+- ✅ 手势长按超时
+- ✅ Gesture Long Press Timeout
+- ✅ ジェスチャー長押しタイムアウト
+- ✅ 제스처 길게 누르기 타임아웃
+
+### v94.5 投射视频缓冲大小 | Cast Video Buffer Size | キャストビデオバッファサイズ | 캐스트 비디오 버퍼 크기
+- ✅ 投射视频缓冲大小
+- ✅ Cast Video Buffer Size
+- ✅ キャストビデオバッファサイズ
+- ✅ 캐스트 비디오 버퍼 크기
+
+### v94.6 播放列表按UP主分组 | Playlist Auto Group By Up | プレイリストUP主別グループ化 | 재생 목록 UP주별 그룹화
+- ✅ 播放列表按UP主分组
+- ✅ Playlist Auto Group By Up
+- ✅ プレイリストUP主別グループ化
+- ✅ 재생 목록 UP주별 그룹화
+
+### v94.7 缓存智能清理 | Cache Smart Cleanup | キャッシュスマートクリーンアップ | 캐시 스마트 정리
+- ✅ 缓存智能清理
+- ✅ Cache Smart Cleanup
+- ✅ キャッシュスマートクリーンアップ
+- ✅ 캐시 스마트 정리
+
+### v94.8 进度条直播指示器 | Progress Bar Live Indicator | プログレスバーライブインジケーター | 진행 바 라이브 표시기
+- ✅ 进度条直播指示器
+- ✅ Progress Bar Live Indicator
+- ✅ プログレスバーライブインジケーター
+- ✅ 진행 바 라이브 표시기
+
+### v94.9 音量自动声像 | Volume Auto Pan | 音量自動パン | 볼륨 자동 팬
+- ✅ 音量自动声像
+- ✅ Volume Auto Pan
+- ✅ 音量自動パン
+- ✅ 볼륨 자동 팬
+
+### v94.10 历史记录自动导出 | History Export Auto | 履歴自動エクスポート | 기록 자동 내보내기
+- ✅ 历史记录自动导出
+- ✅ History Export Auto
+- ✅ 履歴自動エクスポート
+- ✅ 기록 자동 내보내기
+
+### v94.11 播放自动跳过片头 | Playback Auto Skip Title | 再生自動タイトルスキップ | 재생 자동 타이틀 건너뛰기
+- ✅ 播放自动跳过片头
+- ✅ Playback Auto Skip Title
+- ✅ 再生自動タイトルスキップ
+- ✅ 재생 자동 타이틀 건너뛰기
+
+### v94.12 截图自动复制路径 | Screenshot Auto Copy Path | スクリーンショット自動パスコピー | 스크린샷 자동 경로 복사
+- ✅ 截图自动复制路径
+- ✅ Screenshot Auto Copy Path
+- ✅ スクリーンショット自動パスコピー
+- ✅ 스크린샷 자동 경로 복사
+
+### v94.13 视频ASCII艺术模式 | Video Ascii Art Mode | ビデオアスキーアートモード | 비디오 ASCII 아트 모드
+- ✅ 视频ASCII艺术模式
+- ✅ Video Ascii Art Mode
+- ✅ ビデオアスキーアートモード
+- ✅ 비디오 ASCII 아트 모드
+
+### v94.14 弹幕字体大小步进 | Danmaku Font Size Step | コメントフォントサイズステップ | 댓글 글꼴 크기 단계
+- ✅ 弹幕字体大小步进
+- ✅ Danmaku Font Size Step
+- ✅ コメントフォントサイズステップ
+- ✅ 댓글 글꼴 크기 단계
+
+### v94.15 字幕动画淡入时间 | Subtitle Animation Fade Time | 字幕アニメーションフェード時間 | 자막 애니메이션 페이드 시간
+- ✅ 字幕动画淡入时间
+- ✅ Subtitle Animation Fade Time
+- ✅ 字幕アニメーションフェード時間
+- ✅ 자막 애니메이션 페이드 시간
+
+### v95.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v95.1-v95.15 功能列表
+- ✅ Video Glitch Effect Custom, Danmaku Scroll Easing, Subtitle BG Gradient Angle, Gesture Double Tap Timeout, Cast Audio Buffer Size, Playlist Auto Group By Date, Cache Storage Limit, Progress Bar Chapter Color, Volume Auto Crossfade, History Import Auto, Playback Auto Skip Ending95, Screenshot Auto Open After, Video VHS Effect Custom, Danmaku Scroll Acceleration, Subtitle BG Gradient Opacity
+
+### v95.1 视频故障效果自定义 | Video Glitch Effect Custom | ビデオグリッチエフェクトカスタム | 비디오 글리치 효과 사용자 정의
+- ✅ 视频故障效果自定义
+- ✅ Video Glitch Effect Custom
+- ✅ ビデオグリッチエフェクトカスタム
+- ✅ 비디오 글리치 효과 사용자 정의
+
+### v95.2 弹幕滚动缓动 | Danmaku Scroll Easing | コメントスクロールイージング | 댓글 스크롤 이징
+- ✅ 弹幕滚动缓动
+- ✅ Danmaku Scroll Easing
+- ✅ コメントスクロールイージング
+- ✅ 댓글 스크롤 이징
+
+### v95.3 字幕背景渐变角度 | Subtitle BG Gradient Angle | 字幕BGグラデーション角度 | 자막 배경 그래디언트 각도
+- ✅ 字幕背景渐变角度
+- ✅ Subtitle BG Gradient Angle
+- ✅ 字幕BGグラデーション角度
+- ✅ 자막 배경 그래디언트 각도
+
+### v95.4 手势双击超时 | Gesture Double Tap Timeout | ジェスチャーダブルタップタイムアウト | 제스처 더블탭 타임아웃
+- ✅ 手势双击超时
+- ✅ Gesture Double Tap Timeout
+- ✅ ジェスチャーダブルタップタイムアウト
+- ✅ 제스처 더블탭 타임아웃
+
+### v95.5 投射音频缓冲大小 | Cast Audio Buffer Size | キャスト音声バッファサイズ | 캐스트 오디오 버퍼 크기
+- ✅ 投射音频缓冲大小
+- ✅ Cast Audio Buffer Size
+- ✅ キャスト音声バッファサイズ
+- ✅ 캐스트 오디오 버퍼 크기
+
+### v95.6 播放列表按日期分组 | Playlist Auto Group By Date | プレイリスト日付別グループ化 | 재생 목록 날짜별 그룹화
+- ✅ 播放列表按日期分组
+- ✅ Playlist Auto Group By Date
+- ✅ プレイリスト日付別グループ化
+- ✅ 재생 목록 날짜별 그룹화
+
+### v95.7 缓存存储限制 | Cache Storage Limit | キャッシュストレージ制限 | 캐시 저장 공간 제한
+- ✅ 缓存存储限制
+- ✅ Cache Storage Limit
+- ✅ キャッシュストレージ制限
+- ✅ 캐시 저장 공간 제한
+
+### v95.8 进度条章节颜色 | Progress Bar Chapter Color | プログレスバーチャプター色 | 진행 바 챕터 색상
+- ✅ 进度条章节颜色
+- ✅ Progress Bar Chapter Color
+- ✅ プログレスバーチャプター色
+- ✅ 진행 바 챕터 색상
+
+### v95.9 音量自动交叉淡入淡出 | Volume Auto Crossfade | 音量自動クロスフェード | 볼륨 자동 크로스페이드
+- ✅ 音量自动交叉淡入淡出
+- ✅ Volume Auto Crossfade
+- ✅ 音量自動クロスフェード
+- ✅ 볼륨 자동 크로스페이드
+
+### v95.10 历史记录自动导入 | History Import Auto | 履歴自動インポート | 기록 자동 가져오기
+- ✅ 历史记录自动导入
+- ✅ History Import Auto
+- ✅ 履歴自動インポート
+- ✅ 기록 자동 가져오기
+
+### v95.11 播放自动跳过片尾95 | Playback Auto Skip Ending95 | 再生自動エンディングスキップ95 | 재생 자동 엔딩 건너뛰기95
+- ✅ 播放自动跳过片尾95
+- ✅ Playback Auto Skip Ending95
+- ✅ 再生自動エンディングスキップ95
+- ✅ 재생 자동 엔딩 건너뛰기95
+
+### v95.12 截图后自动打开 | Screenshot Auto Open After | スクリーンショット後自動オープン | 스크린샷 후 자동 열기
+- ✅ 截图后自动打开
+- ✅ Screenshot Auto Open After
+- ✅ スクリーンショット後自動オープン
+- ✅ 스크린샷 후 자동 열기
+
+### v95.13 视频VHS效果自定义 | Video VHS Effect Custom | ビデオVHSエフェクトカスタム | 비디오 VHS 효과 사용자 정의
+- ✅ 视频VHS效果自定义
+- ✅ Video VHS Effect Custom
+- ✅ ビデオVHSエフェクトカスタム
+- ✅ 비디오 VHS 효과 사용자 정의
+
+### v95.14 弹幕滚动加速度 | Danmaku Scroll Acceleration | コメントスクロール加速度 | 댓글 스크롤 가속도
+- ✅ 弹幕滚动加速度
+- ✅ Danmaku Scroll Acceleration
+- ✅ コメントスクロール加速度
+- ✅ 댓글 스크롤 가속도
+
+### v95.15 字幕背景渐变透明度 | Subtitle BG Gradient Opacity | 字幕BGグラデーション透明度 | 자막 배경 그래디언트 불투명도
+- ✅ 字幕背景渐变透明度
+- ✅ Subtitle BG Gradient Opacity
+- ✅ 字幕BGグラデーション透明度
+- ✅ 자막 배경 그래디언트 불투명도
+
+### v96.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v96.1-v96.15 功能列表
+- ✅ Video Neon Glow Custom, Danmaku Font Letter Spacing, Subtitle BG Gradient Type, Gesture Swipe Min Distance, Cast Video Decode Threads, Playlist Auto Group By Type, Cache Cleanup Interval, Progress Bar Thumb Shadow, Volume Auto Replay Gain, History Auto Clean Max Days, Playback Auto Skip Credits, Screenshot Auto Share Target, Video Dreamy Effect Custom, Danmaku Scroll Deceleration, Subtitle BG Gradient Start
+
+### v96.1 视频霓虹发光自定义 | Video Neon Glow Custom | ビデオネオングローカスタム | 비디오 네온 글로우 사용자 정의
+- ✅ 视频霓虹发光自定义
+- ✅ Video Neon Glow Custom
+- ✅ ビデオネオングローカスタム
+- ✅ 비디오 네온 글로우 사용자 정의
+
+### v96.2 弹幕字体字间距 | Danmaku Font Letter Spacing | コメントフォントレタースペーシング | 댓글 글꼴 자간
+- ✅ 弹幕字体字间距
+- ✅ Danmaku Font Letter Spacing
+- ✅ コメントフォントレタースペーシング
+- ✅ 댓글 글꼴 자간
+
+### v96.3 字幕背景渐变类型 | Subtitle BG Gradient Type | 字幕BGグラデーションタイプ | 자막 배경 그래디언트 유형
+- ✅ 字幕背景渐变类型
+- ✅ Subtitle BG Gradient Type
+- ✅ 字幕BGグラデーションタイプ
+- ✅ 자막 배경 그래디언트 유형
+
+### v96.4 手势滑动最小距离 | Gesture Swipe Min Distance | ジェスチャースワイプ最小距離 | 제스처 스와이프 최소 거리
+- ✅ 手势滑动最小距离
+- ✅ Gesture Swipe Min Distance
+- ✅ ジェスチャースワイプ最小距離
+- ✅ 제스처 스와이프 최소 거리
+
+### v96.5 投射视频解码线程 | Cast Video Decode Threads | キャストビデオデコードスレッド | 캐스트 비디오 디코딩 스레드
+- ✅ 投射视频解码线程
+- ✅ Cast Video Decode Threads
+- ✅ キャストビデオデコードスレッド
+- ✅ 캐스트 비디오 디코딩 스레드
+
+### v96.6 播放列表按类型分组 | Playlist Auto Group By Type | プレイリストタイプ別グループ化 | 재생 목록 유형별 그룹화
+- ✅ 播放列表按类型分组
+- ✅ Playlist Auto Group By Type
+- ✅ プレイリストタイプ別グループ化
+- ✅ 재생 목록 유형별 그룹화
+
+### v96.7 缓存清理间隔 | Cache Cleanup Interval | キャッシュクリーンアップ間隔 | 캐시 정리 간격
+- ✅ 缓存清理间隔
+- ✅ Cache Cleanup Interval
+- ✅ キャッシュクリーンアップ間隔
+- ✅ 캐시 정리 간격
+
+### v96.8 进度条滑块阴影 | Progress Bar Thumb Shadow | プログレスバーサムシャドウ | 진행 바 썸 그림자
+- ✅ 进度条滑块阴影
+- ✅ Progress Bar Thumb Shadow
+- ✅ プログレスバーサムシャドウ
+- ✅ 진행 바 썸 그림자
+
+### v96.9 音量自动回放增益 | Volume Auto Replay Gain | 音量自動リプレイゲイン | 볼륨 자동 리플레이 게인
+- ✅ 音量自动回放增益
+- ✅ Volume Auto Replay Gain
+- ✅ 音量自動リプレイゲイン
+- ✅ 볼륨 자동 리플레이 게인
+
+### v96.10 历史记录自动清理最大天数 | History Auto Clean Max Days | 履歴自動クリーンアップ最大日数 | 기록 자동 정리 최대 일수
+- ✅ 历史记录自动清理最大天数
+- ✅ History Auto Clean Max Days
+- ✅ 履歴自動クリーンアップ最大日数
+- ✅ 기록 자동 정리 최대 일수
+
+### v96.11 播放自动跳过制作人员 | Playback Auto Skip Credits | 再生自動クレジットスキップ | 재생 자동 크레딧 건너뛰기
+- ✅ 播放自动跳过制作人员
+- ✅ Playback Auto Skip Credits
+- ✅ 再生自動クレジットスキップ
+- ✅ 재생 자동 크레딧 건너뛰기
+
+### v96.12 截图自动分享目标 | Screenshot Auto Share Target | スクリーンショット自動共有ターゲット | 스크린샷 자동 공유 대상
+- ✅ 截图自动分享目标
+- ✅ Screenshot Auto Share Target
+- ✅ スクリーンショット自動共有ターゲット
+- ✅ 스크린샷 자동 공유 대상
+
+### v96.13 视频梦幻效果自定义 | Video Dreamy Effect Custom | ビデオドリーミーエフェクトカスタム | 비디오 드리미 효과 사용자 정의
+- ✅ 视频梦幻效果自定义
+- ✅ Video Dreamy Effect Custom
+- ✅ ビデオドリーミーエフェクトカスタム
+- ✅ 비디오 드리미 효과 사용자 정의
+
+### v96.14 弹幕滚动减速度 | Danmaku Scroll Deceleration | コメントスクロール減速度 | 댓글 스크롤 감속도
+- ✅ 弹幕滚动减速度
+- ✅ Danmaku Scroll Deceleration
+- ✅ コメントスクロール減速度
+- ✅ 댓글 스크롤 감속도
+
+### v96.15 字幕背景渐变开始 | Subtitle BG Gradient Start | 字幕BGグラデーション開始 | 자막 배경 그래디언트 시작
+- ✅ 字幕背景渐变开始
+- ✅ Subtitle BG Gradient Start
+- ✅ 字幕BGグラデーション開始
+- ✅ 자막 배경 그래디언트 시작
+
+### v97.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v97.1-v97.15 功能列表
+- ✅ Video Sepia Custom, Danmaku Font Weight Range, Subtitle BG Gradient End, Gesture Swipe Angle Threshold, Cast Video Post Processing, Playlist Auto Group By Season, Cache Preload Policy, Progress Bar Thumb Glow, Volume Auto Peak Limit, History Auto Clean Min Items, Playback Auto Skip Recap97, Screenshot Auto Annotate Text, Video Polaroid Custom, Danmaku Font Size Min, Subtitle Animation Type97
+
+### v97.1 视频怀旧自定义 | Video Sepia Custom | ビデオセピアカスタム | 비디오 세피아 사용자 정의
+- ✅ 视频怀旧自定义
+- ✅ Video Sepia Custom
+- ✅ ビデオセピアカスタム
+- ✅ 비디오 세피아 사용자 정의
+
+### v97.2 弹幕字体粗细范围 | Danmaku Font Weight Range | コメントフォントウェイト範囲 | 댓글 글꼴 굵기 범위
+- ✅ 弹幕字体粗细范围
+- ✅ Danmaku Font Weight Range
+- ✅ コメントフォントウェイト範囲
+- ✅ 댓글 글꼴 굵기 범위
+
+### v97.3 字幕背景渐变结束 | Subtitle BG Gradient End | 字幕BGグラデーション終了 | 자막 배경 그래디언트 종료
+- ✅ 字幕背景渐变结束
+- ✅ Subtitle BG Gradient End
+- ✅ 字幕BGグラデーション終了
+- ✅ 자막 배경 그래디언트 종료
+
+### v97.4 手势滑动角度阈值 | Gesture Swipe Angle Threshold | ジェスチャースワイプ角度しきい値 | 제스처 스와이프 각도 임계값
+- ✅ 手势滑动角度阈值
+- ✅ Gesture Swipe Angle Threshold
+- ✅ ジェスチャースワイプ角度しきい値
+- ✅ 제스처 스와이프 각도 임계값
+
+### v97.5 投射视频后处理 | Cast Video Post Processing | キャストビデオ後処理 | 캐스트 비디오 후처리
+- ✅ 投射视频后处理
+- ✅ Cast Video Post Processing
+- ✅ キャストビデオ後処理
+- ✅ 캐스트 비디오 후처리
+
+### v97.6 播放列表按季度分组 | Playlist Auto Group By Season | プレイリストシーズン別グループ化 | 재생 목록 시즌별 그룹화
+- ✅ 播放列表按季度分组
+- ✅ Playlist Auto Group By Season
+- ✅ プレイリストシーズン別グループ化
+- ✅ 재생 목록 시즌별 그룹화
+
+### v97.7 缓存预加载策略 | Cache Preload Policy | キャッシュプリロードポリシー | 캐시 프리로드 정책
+- ✅ 缓存预加载策略
+- ✅ Cache Preload Policy
+- ✅ キャッシュプリロードポリシー
+- ✅ 캐시 프리로드 정책
+
+### v97.8 进度条滑块发光 | Progress Bar Thumb Glow | プログレスバーサムグロウ | 진행 바 썸 글로우
+- ✅ 进度条滑块发光
+- ✅ Progress Bar Thumb Glow
+- ✅ プログレスバーサムグロウ
+- ✅ 진행 바 썸 글로우
+
+### v97.9 音量自动峰值限制 | Volume Auto Peak Limit | 音量自動ピークリミット | 볼륨 자동 피크 제한
+- ✅ 音量自动峰值限制
+- ✅ Volume Auto Peak Limit
+- ✅ 音量自動ピークリミット
+- ✅ 볼륨 자동 피크 제한
+
+### v97.10 历史记录自动清理最小条目 | History Auto Clean Min Items | 履歴自動クリーンアップ最小アイテム | 기록 자동 정리 최소 항목
+- ✅ 历史记录自动清理最小条目
+- ✅ History Auto Clean Min Items
+- ✅ 履歴自動クリーンアップ最小アイテム
+- ✅ 기록 자동 정리 최소 항목
+
+### v97.11 播放自动跳过回顾97 | Playback Auto Skip Recap97 | 再生自動リキャップスキップ97 | 재생 자동 리캡 건너뛰기97
+- ✅ 播放自动跳过回顾97
+- ✅ Playback Auto Skip Recap97
+- ✅ 再生自動リキャップスキップ97
+- ✅ 재생 자동 리캡 건너뛰기97
+
+### v97.12 截图自动标注文字 | Screenshot Auto Annotate Text | スクリーンショット自動テキスト注釈 | 스크린샷 자동 텍스트 주석
+- ✅ 截图自动标注文字
+- ✅ Screenshot Auto Annotate Text
+- ✅ スクリーンショット自動テキスト注釈
+- ✅ 스크린샷 자동 텍스트 주석
+
+### v97.13 视频宝丽来效果自定义 | Video Polaroid Custom | ビデオポラロイドカスタム | 비디오 폴라로이드 사용자 정의
+- ✅ 视频宝丽来效果自定义
+- ✅ Video Polaroid Custom
+- ✅ ビデオポラロイドカスタム
+- ✅ 비디오 폴라로이드 사용자 정의
+
+### v97.14 弹幕字体大小最小值 | Danmaku Font Size Min | コメントフォントサイズ最小値 | 댓글 글꼴 크기 최소값
+- ✅ 弹幕字体大小最小值
+- ✅ Danmaku Font Size Min
+- ✅ コメントフォントサイズ最小値
+- ✅ 댓글 글꼴 크기 최소값
+
+### v97.15 字幕动画类型97 | Subtitle Animation Type97 | 字幕アニメーションタイプ97 | 자막 애니메이션 유형97
+- ✅ 字幕动画类型97
+- ✅ Subtitle Animation Type97
+- ✅ 字幕アニメーションタイプ97
+- ✅ 자막 애니메이션 유형97
+
+### v98.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v98.1-v98.15 功能列表
+- ✅ Video Negative Custom, Danmaku Font Size Max, Subtitle Animation Speed98, Gesture Pinch Min Scale, Cast Audio Post Processing, Playlist Auto Group By Genre, Cache Download On Wifi, Progress Bar Thumb Border, Volume Auto RMS Level, History Auto Clean On Start, Playback Auto Skip Filler98, Screenshot Auto Upload Cloud, Video Monochrome Custom, Danmaku Font Style Custom98, Subtitle Animation Easing98
+
+### v98.1 视频负片效果自定义 | Video Negative Custom | ビデオネガティブカスタム | 비디오 네거티브 사용자 정의
+- ✅ 视频负片效果自定义
+- ✅ Video Negative Custom
+- ✅ ビデオネガティブカスタム
+- ✅ 비디오 네거티브 사용자 정의
+
+### v98.2 弹幕字体大小最大值 | Danmaku Font Size Max | コメントフォントサイズ最大値 | 댓글 글꼴 크기 최대값
+- ✅ 弹幕字体大小最大值
+- ✅ Danmaku Font Size Max
+- ✅ コメントフォントサイズ最大値
+- ✅ 댓글 글꼴 크기 최대값
+
+### v98.3 字幕动画速度98 | Subtitle Animation Speed98 | 字幕アニメーション速度98 | 자막 애니메이션 속도98
+- ✅ 字幕动画速度98
+- ✅ Subtitle Animation Speed98
+- ✅ 字幕アニメーション速度98
+- ✅ 자막 애니메이션 속도98
+
+### v98.4 手势捏合最小缩放 | Gesture Pinch Min Scale | ジェスチャーピンチ最小スケール | 제스처 핀치 최소 스케일
+- ✅ 手势捏合最小缩放
+- ✅ Gesture Pinch Min Scale
+- ✅ ジェスチャーピンチ最小スケール
+- ✅ 제스처 핀치 최소 스케일
+
+### v98.5 投射音频后处理 | Cast Audio Post Processing | キャスト音声後処理 | 캐스트 오디오 후처리
+- ✅ 投射音频后处理
+- ✅ Cast Audio Post Processing
+- ✅ キャスト音声後処理
+- ✅ 캐스트 오디오 후처리
+
+### v98.6 播放列表按类型分组 | Playlist Auto Group By Genre | プレイリストジャンル別グループ化 | 재생 목록 장르별 그룹화
+- ✅ 播放列表按类型分组
+- ✅ Playlist Auto Group By Genre
+- ✅ プレイリストジャンル別グループ化
+- ✅ 재생 목록 장르별 그룹화
+
+### v98.7 缓存WiFi下载 | Cache Download On Wifi | キャッシュWiFiダウンロード | 캐시 WiFi 다운로드
+- ✅ 缓存WiFi下载
+- ✅ Cache Download On Wifi
+- ✅ キャッシュWiFiダウンロード
+- ✅ 캐시 WiFi 다운로드
+
+### v98.8 进度条滑块边框 | Progress Bar Thumb Border | プログレスバーサムボーダー | 진행 바 썸 테두리
+- ✅ 进度条滑块边框
+- ✅ Progress Bar Thumb Border
+- ✅ プログレスバーサムボーダー
+- ✅ 진행 바 썸 테두리
+
+### v98.9 音量自动RMS电平 | Volume Auto RMS Level | 音量自動RMSレベル | 볼륨 자동 RMS 레벨
+- ✅ 音量自动RMS电平
+- ✅ Volume Auto RMS Level
+- ✅ 音量自動RMSレベル
+- ✅ 볼륨 자동 RMS 레벨
+
+### v98.10 历史记录启动时自动清理 | History Auto Clean On Start | 履歴起動時自動クリーンアップ | 기록 시작 시 자동 정리
+- ✅ 历史记录启动时自动清理
+- ✅ History Auto Clean On Start
+- ✅ 履歴起動時自動クリーンアップ
+- ✅ 기록 시작 시 자동 정리
+
+### v98.11 播放自动跳过填充98 | Playback Auto Skip Filler98 | 再生自動フィラースキップ98 | 재생 자동 필러 건너뛰기98
+- ✅ 播放自动跳过填充98
+- ✅ Playback Auto Skip Filler98
+- ✅ 再生自動フィラースキップ98
+- ✅ 재생 자동 필러 건너뛰기98
+
+### v98.12 截图自动上传云端 | Screenshot Auto Upload Cloud | スクリーンショット自動クラウドアップロード | 스크린샷 자동 클라우드 업로드
+- ✅ 截图自动上传云端
+- ✅ Screenshot Auto Upload Cloud
+- ✅ スクリーンショット自動クラウドアップロード
+- ✅ 스크린샷 자동 클라우드 업로드
+
+### v98.13 视频单色效果自定义 | Video Monochrome Custom | ビデオモノクロームカスタム | 비디오 모노크롬 사용자 정의
+- ✅ 视频单色效果自定义
+- ✅ Video Monochrome Custom
+- ✅ ビデオモノクロームカスタム
+- ✅ 비디오 모노크롬 사용자 정의
+
+### v98.14 弹幕字体样式自定义98 | Danmaku Font Style Custom98 | コメントフォントスタイルカスタム98 | 댓글 글꼴 스타일 사용자 정의98
+- ✅ 弹幕字体样式自定义98
+- ✅ Danmaku Font Style Custom98
+- ✅ コメントフォントスタイルカスタム98
+- ✅ 댓글 글꼴 스타일 사용자 정의98
+
+### v98.15 字幕动画缓动98 | Subtitle Animation Easing98 | 字幕アニメーションイージング98 | 자막 애니메이션 이징98
+- ✅ 字幕动画缓动98
+- ✅ Subtitle Animation Easing98
+- ✅ 字幕アニメーションイージング98
+- ✅ 자막 애니메이션 이징98
+
+### v99.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v99.1-v99.15 功能列表
+- ✅ Video Posterize Custom, Danmaku Font Outline Toggle, Subtitle Animation Duration99, Gesture Pinch Max Scale, Cast Video Auto Quality, Playlist Auto Group By Channel, Cache Download Speed Limit, Progress Bar Thumb Size99, Volume Auto Loudness99, History Auto Clean On Exit, Playback Auto Skip Intro99, Screenshot Auto Share99, Video Solarize Custom, Danmaku Font Color Custom, Subtitle Animation Loop99
+
+### v99.1 视频色调分离自定义 | Video Posterize Custom | ビデオポスタリーズカスタム | 비디오 포스터라이즈 사용자 정의
+- ✅ 视频色调分离自定义
+- ✅ Video Posterize Custom
+- ✅ ビデオポスタリーズカスタム
+- ✅ 비디오 포스터라이즈 사용자 정의
+
+### v99.2 弹幕字体描边开关 | Danmaku Font Outline Toggle | コメントフォントアウトライン切替 | 댓글 글꼴 외곽선 전환
+- ✅ 弹幕字体描边开关
+- ✅ Danmaku Font Outline Toggle
+- ✅ コメントフォントアウトライン切替
+- ✅ 댓글 글꼴 외곽선 전환
+
+### v99.3 字幕动画持续时间99 | Subtitle Animation Duration99 | 字幕アニメーション持続時間99 | 자막 애니메이션 지속 시간99
+- ✅ 字幕动画持续时间99
+- ✅ Subtitle Animation Duration99
+- ✅ 字幕アニメーション持続時間99
+- ✅ 자막 애니메이션 지속 시간99
+
+### v99.4 手势捏合最大缩放 | Gesture Pinch Max Scale | ジェスチャーピンチ最大スケール | 제스처 핀치 최대 스케일
+- ✅ 手势捏合最大缩放
+- ✅ Gesture Pinch Max Scale
+- ✅ ジェスチャーピンチ最大スケール
+- ✅ 제스처 핀치 최대 스케일
+
+### v99.5 投射视频自动画质 | Cast Video Auto Quality | キャストビデオ自動画質 | 캐스트 비디오 자동 화질
+- ✅ 投射视频自动画质
+- ✅ Cast Video Auto Quality
+- ✅ キャストビデオ自動画質
+- ✅ 캐스트 비디오 자동 화질
+
+### v99.6 播放列表按频道分组 | Playlist Auto Group By Channel | プレイリストチャンネル別グループ化 | 재생 목록 채널별 그룹화
+- ✅ 播放列表按频道分组
+- ✅ Playlist Auto Group By Channel
+- ✅ プレイリストチャンネル別グループ化
+- ✅ 재생 목록 채널별 그룹화
+
+### v99.7 缓存下载速度限制 | Cache Download Speed Limit | キャッシュダウンロード速度制限 | 캐시 다운로드 속도 제한
+- ✅ 缓存下载速度限制
+- ✅ Cache Download Speed Limit
+- ✅ キャッシュダウンロード速度制限
+- ✅ 캐시 다운로드 속도 제한
+
+### v99.8 进度条滑块大小99 | Progress Bar Thumb Size99 | プログレスバーサムサイズ99 | 진행 바 썸 크기99
+- ✅ 进度条滑块大小99
+- ✅ Progress Bar Thumb Size99
+- ✅ プログレスバーサムサイズ99
+- ✅ 진행 바 썸 크기99
+
+### v99.9 音量自动响度99 | Volume Auto Loudness99 | 音量自動ラウドネス99 | 볼륨 자동 음량99
+- ✅ 音量自动响度99
+- ✅ Volume Auto Loudness99
+- ✅ 音量自動ラウドネス99
+- ✅ 볼륨 자동 음량99
+
+### v99.10 历史记录退出时自动清理 | History Auto Clean On Exit | 履歴終了時自動クリーンアップ | 기록 종료 시 자동 정리
+- ✅ 历史记录退出时自动清理
+- ✅ History Auto Clean On Exit
+- ✅ 履歴終了時自動クリーンアップ
+- ✅ 기록 종료 시 자동 정리
+
+### v99.11 播放自动跳过片头99 | Playback Auto Skip Intro99 | 再生自動イントロスキップ99 | 재생 자동 인트로 건너뛰기99
+- ✅ 播放自动跳过片头99
+- ✅ Playback Auto Skip Intro99
+- ✅ 再生自動イントロスキップ99
+- ✅ 재생 자동 인트로 건너뛰기99
+
+### v99.12 截图自动分享99 | Screenshot Auto Share99 | スクリーンショット自動共有99 | 스크린샷 자동 공유99
+- ✅ 截图自动分享99
+- ✅ Screenshot Auto Share99
+- ✅ スクリーンショット自動共有99
+- ✅ 스크린샷 자동 공유99
+
+### v99.13 视频曝光过度自定义 | Video Solarize Custom | ビデオソラライズカスタム | 비디오 솔라라이즈 사용자 정의
+- ✅ 视频曝光过度自定义
+- ✅ Video Solarize Custom
+- ✅ ビデオソラライズカスタム
+- ✅ 비디오 솔라라이즈 사용자 정의
+
+### v99.14 弹幕字体颜色自定义 | Danmaku Font Color Custom | コメントフォント色カスタム | 댓글 글꼴 색상 사용자 정의
+- ✅ 弹幕字体颜色自定义
+- ✅ Danmaku Font Color Custom
+- ✅ コメントフォント色カスタム
+- ✅ 댓글 글꼴 색상 사용자 정의
+
+### v99.15 字幕动画循环99 | Subtitle Animation Loop99 | 字幕アニメーションループ99 | 자막 애니메이션 반복99
+- ✅ 字幕动画循环99
+- ✅ Subtitle Animation Loop99
+- ✅ 字幕アニメーションループ99
+- ✅ 자막 애니메이션 반복99
+
+### v100.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v100.1-v100.15 功能列表
+- ✅ Video Duotone Custom, Danmaku Font BG Toggle, Subtitle Animation Delay99, Gesture Pinch Speed99, Cast Audio Auto Quality, Playlist Auto Group All, Cache Download Retry, Progress Bar Thumb Color99, Volume Auto Normalize99, History Auto Sync99, Playback Auto Skip Outro99, Screenshot Auto Format99, Video Tint Duotone, Danmaku Font Weight99, Subtitle Animation Type99
+
+### v100.1 视频双色调自定义 | Video Duotone Custom | ビデオデュオトーンカスタム | 비디오 듀오톤 사용자 정의
+- ✅ 视频双色调自定义
+- ✅ Video Duotone Custom
+- ✅ ビデオデュオトーンカスタム
+- ✅ 비디오 듀오톤 사용자 정의
+
+### v100.2 弹幕字体背景开关 | Danmaku Font BG Toggle | コメントフォントBG切替 | 댓글 글꼴 배경 전환
+- ✅ 弹幕字体背景开关
+- ✅ Danmaku Font BG Toggle
+- ✅ コメントフォントBG切替
+- ✅ 댓글 글꼴 배경 전환
+
+### v100.3 字幕动画延迟99 | Subtitle Animation Delay99 | 字幕アニメーション遅延99 | 자막 애니메이션 지연99
+- ✅ 字幕动画延迟99
+- ✅ Subtitle Animation Delay99
+- ✅ 字幕アニメーション遅延99
+- ✅ 자막 애니메이션 지연99
+
+### v100.4 手势捏合速度99 | Gesture Pinch Speed99 | ジェスチャーピンチ速度99 | 제스처 핀치 속도99
+- ✅ 手势捏合速度99
+- ✅ Gesture Pinch Speed99
+- ✅ ジェスチャーピンチ速度99
+- ✅ 제스처 핀치 속도99
+
+### v100.5 投射音频自动音质 | Cast Audio Auto Quality | キャスト音声自動品質 | 캐스트 오디오 자동 음질
+- ✅ 投射音频自动音质
+- ✅ Cast Audio Auto Quality
+- ✅ キャスト音声自動品質
+- ✅ 캐스트 오디오 자동 음질
+
+### v100.6 播放列表全部自动分组 | Playlist Auto Group All | プレイリスト全自動グループ化 | 재생 목록 전체 자동 그룹화
+- ✅ 播放列表全部自动分组
+- ✅ Playlist Auto Group All
+- ✅ プレイリスト全自動グループ化
+- ✅ 재생 목록 전체 자동 그룹화
+
+### v100.7 缓存下载重试 | Cache Download Retry | キャッシュダウンロードリトライ | 캐시 다운로드 재시도
+- ✅ 缓存下载重试
+- ✅ Cache Download Retry
+- ✅ キャッシュダウンロードリトライ
+- ✅ 캐시 다운로드 재시도
+
+### v100.8 进度条滑块颜色99 | Progress Bar Thumb Color99 | プログレスバーサム色99 | 진행 바 썸 색상99
+- ✅ 进度条滑块颜色99
+- ✅ Progress Bar Thumb Color99
+- ✅ プログレスバーサム色99
+- ✅ 진행 바 썸 색상99
+
+### v100.9 音量自动标准化99 | Volume Auto Normalize99 | 音量自動正規化99 | 볼륨 자동 정규화99
+- ✅ 音量自动标准化99
+- ✅ Volume Auto Normalize99
+- ✅ 音量自動正規化99
+- ✅ 볼륨 자동 정규화99
+
+### v100.10 历史记录自动同步99 | History Auto Sync99 | 履歴自動同期99 | 기록 자동 동기화99
+- ✅ 历史记录自动同步99
+- ✅ History Auto Sync99
+- ✅ 履歴自動同期99
+- ✅ 기록 자동 동기화99
+
+### v100.11 播放自动跳过片尾99 | Playback Auto Skip Outro99 | 再生自動アウトロスキップ99 | 재생 자동 아웃트로 건너뛰기99
+- ✅ 播放自动跳过片尾99
+- ✅ Playback Auto Skip Outro99
+- ✅ 再生自動アウトロスキップ99
+- ✅ 재생 자동 아웃트로 건너뛰기99
+
+### v100.12 截图自动格式99 | Screenshot Auto Format99 | スクリーンショット自動フォーマット99 | 스크린샷 자동 형식99
+- ✅ 截图自动格式99
+- ✅ Screenshot Auto Format99
+- ✅ スクリーンショット自動フォーマット99
+- ✅ 스크린샷 자동 형식99
+
+### v100.13 视频色调双色 | Video Tint Duotone | ビデオチントデュオトーン | 비디오 틴트 듀오톤
+- ✅ 视频色调双色
+- ✅ Video Tint Duotone
+- ✅ ビデオチントデュオトーン
+- ✅ 비디오 틴트 듀오톤
+
+### v100.14 弹幕字体粗细99 | Danmaku Font Weight99 | コメントフォントウェイト99 | 댓글 글꼴 굵기99
+- ✅ 弹幕字体粗细99
+- ✅ Danmaku Font Weight99
+- ✅ コメントフォントウェイト99
+- ✅ 댓글 글꼴 굵기99
+
+### v100.15 字幕动画类型99 | Subtitle Animation Type99 | 字幕アニメーションタイプ99 | 자막 애니메이션 유형99
+- ✅ 字幕动画类型99
+- ✅ Subtitle Animation Type99
+- ✅ 字幕アニメーションタイプ99
+- ✅ 자막 애니메이션 유형99
+
 ### v55.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
 ### v55.1-v55.15 功能列表
 - ✅ Auto Resume, Font Monospace, Color Hue Auto, Peak Limiter, Send Queue, Cast Bandwidth Limit, Lock Screen, Filter Regex, Network Policy, Double Tap Action, Font Weight Custom, Tint Custom, Volume Compressor, Bg Padding, Cast Auto Quality
@@ -15701,4 +16642,4 @@ This project is based on open-source software. All rights belong to the original
 - **基础版本 | Base Versions**: v10.0.0 - v11.19.0 (25 versions)
 - **AI自动维护版本 | AI Maintained**: v12.1 - v45.15 (550+ versions)
 - **开发周期 | Development Cycle**: 2024 - 2026
-- **功能特性 | Features**: 900+ new features added
+- **功能特性 | Features**: 1000+ new features added
