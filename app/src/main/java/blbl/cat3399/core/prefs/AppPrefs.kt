@@ -1830,6 +1830,11 @@ class AppPrefs(context: Context) {
     var v33AudioBassBoost: Int
         get() = prefs.getInt(KEY_V33_AUDIO_BASS_BOOST, 0)
         set(value) = prefs.edit().putInt(KEY_V33_AUDIO_BASS_BOOST, value).apply()
+    // v33.2: 弹幕滚动方向
+    var v33DanmakuScrollDirection: Int
+        get() = prefs.getInt(KEY_V33_DANMAKU_SCROLL_DIRECTION, 0)
+        set(value) = prefs.edit().putInt(KEY_V33_DANMAKU_SCROLL_DIRECTION, value).apply()
+
 
 
 
@@ -3824,6 +3829,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V32_VIDEO_CROP_PRESET = "v32_video_crop_preset"
         private const val KEY_V32_DANMAKU_EMOJI_FILTER = "v32_danmaku_emoji_filter"
         private const val KEY_V33_AUDIO_BASS_BOOST = "v33_audio_bass_boost"
+        private const val KEY_V33_DANMAKU_SCROLL_DIRECTION = "v33_danmaku_scroll_direction"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
