@@ -2096,6 +2096,11 @@ class AppPrefs(context: Context) {
     var v37VideoInterpolationMode: Int
         get() = prefs.getInt(KEY_V37_VIDEO_INTERPOLATION_MODE, 0)
         set(value) = prefs.edit().putInt(KEY_V37_VIDEO_INTERPOLATION_MODE, value).apply()
+    // v37.13: 弹幕阴影偏移
+    var v37DanmakuShadowOffset: Int
+        get() = prefs.getInt(KEY_V37_DANMAKU_SHADOW_OFFSET, 0)
+        set(value) = prefs.edit().putInt(KEY_V37_DANMAKU_SHADOW_OFFSET, value).apply()
+
 
 
 
@@ -4223,6 +4228,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V37_AUDIO_REVERB_PRESET = "v37_audio_reverb_preset"
         private const val KEY_V37_PLAYER_LONG_PRESS_SPEED = "v37_player_long_press_speed"
         private const val KEY_V37_VIDEO_INTERPOLATION_MODE = "v37_video_interpolation_mode"
+        private const val KEY_V37_DANMAKU_SHADOW_OFFSET = "v37_danmaku_shadow_offset"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
