@@ -658,6 +658,15 @@ internal fun PlayerActivity.showv32DanmakuOpacityFadeToggle() {
         .option(switchText(current)) { BiliClient.prefs.v32DanmakuOpacityFade = !current }
         .show()
 }
+// 32.10: 变速平滑过渡
+internal fun PlayerActivity.showv32VideoSpeedRampModeToggle() {
+    val current = BiliClient.prefs.v32VideoSpeedRampMode
+    AppPopup.Builder(this)
+        .title("变速平滑过渡")
+        .option(switchText(current)) { BiliClient.prefs.v32VideoSpeedRampMode = !current }
+        .show()
+}
+
 
 
 

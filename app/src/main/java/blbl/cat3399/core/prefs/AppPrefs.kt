@@ -1762,6 +1762,11 @@ class AppPrefs(context: Context) {
     var v31DanmakuMergeOverlap: Boolean
         get() = prefs.getBoolean(KEY_V31_DANMAKU_MERGE_OVERLAP, false)
         set(value) = prefs.edit().putBoolean(KEY_V31_DANMAKU_MERGE_OVERLAP, value).apply()
+    // v32.10: 变速平滑过渡
+    var v32VideoSpeedRampMode: Boolean
+        get() = prefs.getBoolean(KEY_V32_VIDEO_SPEED_RAMP_MODE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V32_VIDEO_SPEED_RAMP_MODE, value).apply()
+
     // v32.9: 弹幕透明度渐隐
     var v32DanmakuOpacityFade: Boolean
         get() = prefs.getBoolean(KEY_V32_DANMAKU_OPACITY_FADE, false)
@@ -3058,6 +3063,7 @@ class AppPrefs(context: Context) {
 
         const val PLAYER_RENDER_VIEW_SURFACE_VIEW = "surface_view"
         const val PLAYER_RENDER_VIEW_TEXTURE_VIEW = "texture_view"
+        private const val KEY_V32_VIDEO_SPEED_RAMP_MODE = "v32_video_speed_ramp_mode"
 
         const val PLAYER_ENGINE_EXO = "exoplayer"
         const val PLAYER_ENGINE_IJK = "ijkplayer"
