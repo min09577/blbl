@@ -1836,6 +1836,11 @@ class AppPrefs(context: Context) {
     var v32ScreenOffTimer: Int
         get() = prefs.getInt(KEY_V32_SCREEN_OFF_TIMER, 0)
         set(value) = prefs.edit().putInt(KEY_V32_SCREEN_OFF_TIMER, value).apply()
+    // v33.8: 跳过片头秒数
+    var v33PlaybackSkipIntroSec: Int
+        get() = prefs.getInt(KEY_V33_PLAYBACK_SKIP_INTRO_SEC, 0)
+        set(value) = prefs.edit().putInt(KEY_V33_PLAYBACK_SKIP_INTRO_SEC, value).apply()
+
     // v33.7: HDR色调映射
     var v33VideoHdrToneMap: Int
         get() = prefs.getInt(KEY_V33_VIDEO_HDR_TONE_MAP, 0)
@@ -3190,6 +3195,7 @@ class AppPrefs(context: Context) {
         const val PLAYER_OSD_BTN_PLAY_PAUSE = "play_pause"
         const val PLAYER_OSD_BTN_NEXT = "next"
         const val PLAYER_OSD_BTN_SUBTITLE = "subtitle"
+        private const val KEY_V33_PLAYBACK_SKIP_INTRO_SEC = "v33_playback_skip_intro_sec"
         const val PLAYER_OSD_BTN_DANMAKU = "danmaku"
         const val PLAYER_OSD_BTN_COMMENTS = "comments"
         const val PLAYER_OSD_BTN_DETAIL = "detail"
