@@ -2354,6 +2354,11 @@ class AppPrefs(context: Context) {
     var v39VideoTbnSyncMode: Int
         get() = prefs.getInt(KEY_V39_VIDEO_TBN_SYNC_MODE, 0)
         set(value) = prefs.edit().putInt(KEY_V39_VIDEO_TBN_SYNC_MODE, value).apply()
+    // v40.2: 弹幕复古模式
+    var v40DanmakuVintageMode: Boolean
+        get() = prefs.getBoolean(KEY_V40_DANMAKU_VINTAGE_MODE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V40_DANMAKU_VINTAGE_MODE, value).apply()
+
     // v40.1: 快照间隔(秒)
     var v40VideoSnapshotInterval: Int
         get() = prefs.getInt(KEY_V40_VIDEO_SNAPSHOT_INTERVAL, 0)
@@ -3945,3 +3950,4 @@ class AppPrefs(context: Context) {
 
         // ===== v40.x KEY =====
         private const val KEY_V40_VIDEO_SNAPSHOT_INTERVAL = "v40_video_snapshot_interval"
+        private const val KEY_V40_DANMAKU_VINTAGE_MODE = "v40_danmaku_vintage_mode"
