@@ -1,4 +1,4 @@
-﻿name: blbl AI Enhanced Build v6.4
+name: blbl AI Enhanced Build v6.4
 
 env:
   VERSION_NAME: "11.19.0"
@@ -6,8 +6,6 @@ env:
 
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
 
 permissions:
   contents: write
