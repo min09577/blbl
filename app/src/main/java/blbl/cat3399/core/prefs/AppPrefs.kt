@@ -1892,6 +1892,11 @@ class AppPrefs(context: Context) {
     var v34SubtitleKaraokeMode: Boolean
         get() = prefs.getBoolean(KEY_V34_SUBTITLE_KARAOKE_MODE, false)
         set(value) = prefs.edit().putBoolean(KEY_V34_SUBTITLE_KARAOKE_MODE, value).apply()
+    // v34.7: 扫描线滤镜
+    var v34VideoScanLineFilter: Boolean
+        get() = prefs.getBoolean(KEY_V34_VIDEO_SCAN_LINE_FILTER, false)
+        set(value) = prefs.edit().putBoolean(KEY_V34_VIDEO_SCAN_LINE_FILTER, value).apply()
+
 
 
 
@@ -3917,6 +3922,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V34_PLAYER_GESTURE_CUSTOM_MAP = "v34_player_gesture_custom_map"
         private const val KEY_V34_DANMAKU_SHIELD_REGEX = "v34_danmaku_shield_regex"
         private const val KEY_V34_SUBTITLE_KARAOKE_MODE = "v34_subtitle_karaoke_mode"
+        private const val KEY_V34_VIDEO_SCAN_LINE_FILTER = "v34_video_scan_line_filter"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
