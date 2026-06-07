@@ -1688,6 +1688,11 @@ class AppPrefs(context: Context) {
     var v30DanmakuFontGlow: Int
         get() = prefs.getInt(KEY_V30_DANMAKU_FONT_GLOW, 0)
         set(value) = prefs.edit().putInt(KEY_V30_DANMAKU_FONT_GLOW, value.coerceIn(0, 100)).apply()
+    // v31.12: 字幕同步偏移(ms)
+    var v31SubtitleSyncOffset: Int
+        get() = prefs.getInt(KEY_V31_SUBTITLE_SYNC_OFFSET, 0)
+        set(value) = prefs.edit().putInt(KEY_V31_SUBTITLE_SYNC_OFFSET, value).apply()
+
     // v31.11: 弹幕层级排序
     var v31DanmakuLayerOrder: Int
         get() = prefs.getInt(KEY_V31_DANMAKU_LAYER_ORDER, 0)
@@ -2926,6 +2931,7 @@ class AppPrefs(context: Context) {
                 1f / 6f,
                 1f / 5f,
                 0.25f,
+        private const val KEY_V31_SUBTITLE_SYNC_OFFSET = "v31_subtitle_sync_offset"
                 1f / 3f,
                 2f / 5f,
                 0.50f,
