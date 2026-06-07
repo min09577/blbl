@@ -682,7 +682,6 @@ internal fun PlayerActivity.handleSettingsItemClick(item: PlayerSettingsAdapter.
                         )
                     }
                     .setNegativeButton("取消", null)
-                    .show()
             } else {
                 AppToast.show(this, "无法获取视频信息")
             }
@@ -2286,7 +2285,6 @@ internal fun PlayerActivity.showShortcutKeyMappingDialog() {
         .setTitle("快捷键映射")
         .setItems(items) { _, _ -> }
         .setPositiveButton("确定", null)
-        .show()
 }
 
 // v14.10: 导出播放历史
@@ -2310,7 +2308,6 @@ private fun PlayerActivity.showDanmakuPoolSizeDialog() {
             refreshSettings(binding.recyclerSettings.adapter as PlayerSettingsAdapter, PlayerSettingKeys.DANMAKU_POOL_SIZE)
         }
         .setNegativeButton("取消", null)
-        .show()
 }
 
 // v15.1: 弹幕缩放比例文本
@@ -2328,7 +2325,6 @@ private fun PlayerActivity.showDanmakuScaleDialog() {
             refreshSettings(binding.recyclerSettings.adapter as PlayerSettingsAdapter, PlayerSettingKeys.DANMAKU_SCALE)
         }
         .setNegativeButton("取消", null)
-        .show()
 }
 
 // v15.6: 弹幕间隔时间文本
@@ -2346,7 +2342,6 @@ private fun PlayerActivity.showDanmakuIntervalDialog() {
             refreshSettings(binding.recyclerSettings.adapter as PlayerSettingsAdapter, PlayerSettingKeys.DANMAKU_INTERVAL)
         }
         .setNegativeButton("取消", null)
-        .show()
 }
 
 // v15.8: 弹幕池优先级文本
@@ -2364,7 +2359,6 @@ private fun PlayerActivity.showDanmakuPoolPriorityDialog() {
             refreshSettings(binding.recyclerSettings.adapter as PlayerSettingsAdapter, PlayerSettingKeys.DANMAKU_POOL_PRIORITY)
         }
         .setNegativeButton("取消", null)
-        .show()
 }
 
 // v15.10: 弹幕时间偏移文本
@@ -2383,7 +2377,6 @@ private fun PlayerActivity.showDanmakuTimeOffsetDialog() {
             refreshSettings(binding.recyclerSettings.adapter as PlayerSettingsAdapter, PlayerSettingKeys.DANMAKU_TIME_OFFSET)
         }
         .setNegativeButton("取消", null)
-        .show()
 }
 
 // v15.13: 弹幕发送历史对话框
@@ -2406,7 +2399,6 @@ private fun PlayerActivity.showDanmakuBlurRadiusDialog() {
             refreshSettings(binding.recyclerSettings.adapter as PlayerSettingsAdapter, PlayerSettingKeys.DANMAKU_BLUR_RADIUS)
         }
         .setNegativeButton("取消", null)
-        .show()
 }
 
 // v15.19: 截图质量文本
@@ -2424,7 +2416,6 @@ private fun PlayerActivity.showScreenshotQualityDialog() {
             refreshSettings(binding.recyclerSettings.adapter as PlayerSettingsAdapter, PlayerSettingKeys.SCREENSHOT_QUALITY)
         }
         .setNegativeButton("取消", null)
-        .show()
 }
 
 // v15.20: 弹幕输出模式文本
@@ -2442,7 +2433,6 @@ private fun PlayerActivity.showDanmakuOutputModeDialog() {
             refreshSettings(binding.recyclerSettings.adapter as PlayerSettingsAdapter, PlayerSettingKeys.DANMAKU_OUTPUT_MODE)
         }
         .setNegativeButton("取消", null)
-        .show()
 }
 
 // v15.21: 进度条样式文本
@@ -2460,7 +2450,6 @@ private fun PlayerActivity.showProgressBarStyleDialog() {
             refreshSettings(binding.recyclerSettings.adapter as PlayerSettingsAdapter, PlayerSettingKeys.PROGRESS_BAR_STYLE)
         }
         .setNegativeButton("取消", null)
-        .show()
 }
 
 // v15.22: 弹幕渲染层级文本
@@ -2478,7 +2467,6 @@ private fun PlayerActivity.showDanmakuRenderLayerDialog() {
             refreshSettings(binding.recyclerSettings.adapter as PlayerSettingsAdapter, PlayerSettingKeys.DANMAKU_RENDER_LAYER)
         }
         .setNegativeButton("取消", null)
-        .show()
 }
 
 // v15.25: 视频色彩空间文本
@@ -2496,7 +2484,6 @@ private fun PlayerActivity.showVideoColorSpaceDialog() {
             refreshSettings(binding.recyclerSettings.adapter as PlayerSettingsAdapter, PlayerSettingKeys.VIDEO_COLOR_SPACE)
         }
         .setNegativeButton("取消", null)
-        .show()
 }
 
 // v15.26: 弹幕发送快捷键文本
@@ -2514,7 +2501,6 @@ private fun PlayerActivity.showDanmakuSendKeyDialog() {
             refreshSettings(binding.recyclerSettings.adapter as PlayerSettingsAdapter, PlayerSettingKeys.DANMAKU_SEND_KEY)
         }
         .setNegativeButton("取消", null)
-        .show()
 }
 
 // v16.5: 播放完成动作文本
@@ -2532,7 +2518,6 @@ private fun PlayerActivity.showPlaybackCompleteActionDialog() {
             refreshSettings(binding.recyclerSettings.adapter as PlayerSettingsAdapter, PlayerSettingKeys.PLAYBACK_COMPLETE_ACTION)
         }
         .setNegativeButton("取消", null)
-        .show()
 }
 
 // v16.6: 弹幕显示区域文本
@@ -2550,7 +2535,6 @@ private fun PlayerActivity.showDanmakuDisplayAreaDialog() {
             refreshSettings(binding.recyclerSettings.adapter as PlayerSettingsAdapter, PlayerSettingKeys.DANMAKU_DISPLAY_AREA)
         }
         .setNegativeButton("取消", null)
-        .show()
 }
 
 // v16.7: 视频解码方式文本
@@ -2568,7 +2552,6 @@ private fun PlayerActivity.showVideoDecoderDialog() {
             refreshSettings(binding.recyclerSettings.adapter as PlayerSettingsAdapter, PlayerSettingKeys.VIDEO_DECODER)
         }
         .setNegativeButton("取消", null)
-        .show()
 }
 
 // v16.8: 弹幕发送框位置文本
@@ -2586,7 +2569,6 @@ private fun PlayerActivity.showDanmakuInputPositionDialog() {
             refreshSettings(binding.recyclerSettings.adapter as PlayerSettingsAdapter, PlayerSettingKeys.DANMAKU_INPUT_POSITION)
         }
         .setNegativeButton("取消", null)
-        .show()
 }
 
 // v16.9: 跳过片尾时长文本
@@ -2604,7 +2586,6 @@ private fun PlayerActivity.showSkipEndingDurationDialog() {
             refreshSettings(binding.recyclerSettings.adapter as PlayerSettingsAdapter, PlayerSettingKeys.SKIP_ENDING_DURATION)
         }
         .setNegativeButton("取消", null)
-        .show()
 }
 
 // v16.11: 投射音量文本
@@ -2622,7 +2603,6 @@ private fun PlayerActivity.showCastVolumeDialog() {
             refreshSettings(binding.recyclerSettings.adapter as PlayerSettingsAdapter, PlayerSettingKeys.CAST_VOLUME)
         }
         .setNegativeButton("取消", null)
-        .show()
 }
 
 // v16.13: 弹幕刷新率文本
@@ -2640,7 +2620,6 @@ private fun PlayerActivity.showDanmakuRefreshRateDialog() {
             refreshSettings(binding.recyclerSettings.adapter as PlayerSettingsAdapter, PlayerSettingKeys.DANMAKU_REFRESH_RATE)
         }
         .setNegativeButton("取消", null)
-        .show()
 }
 
 // v16.14: 截图格式文本
@@ -2658,7 +2637,6 @@ private fun PlayerActivity.showScreenshotFormatDialog() {
             refreshSettings(binding.recyclerSettings.adapter as PlayerSettingsAdapter, PlayerSettingKeys.SCREENSHOT_FORMAT)
         }
         .setNegativeButton("取消", null)
-        .show()
 }
 
 // v16.15: 弹幕描边透明度文本
@@ -2676,7 +2654,6 @@ private fun PlayerActivity.showDanmakuStrokeOpacityDialog() {
             refreshSettings(binding.recyclerSettings.adapter as PlayerSettingsAdapter, PlayerSettingKeys.DANMAKU_STROKE_OPACITY)
         }
         .setNegativeButton("取消", null)
-        .show()
 }
 
 // v17.5: 弹幕字体选择文本
@@ -2694,7 +2671,6 @@ private fun PlayerActivity.showDanmakuFontFamilyDialog() {
             refreshSettings(binding.recyclerSettings.adapter as PlayerSettingsAdapter, PlayerSettingKeys.DANMAKU_FONT_FAMILY)
         }
         .setNegativeButton("取消", null)
-        .show()
 }
 
 // v17.6: 视频投射延迟文本
@@ -2712,7 +2688,6 @@ private fun PlayerActivity.showCastLatencyDialog() {
             refreshSettings(binding.recyclerSettings.adapter as PlayerSettingsAdapter, PlayerSettingKeys.CAST_LATENCY)
         }
         .setNegativeButton("取消", null)
-        .show()
 }
 
 // v17.7: 弹幕过滤强度文本
@@ -2730,7 +2705,6 @@ private fun PlayerActivity.showDanmakuFilterStrengthDialog() {
             refreshSettings(binding.recyclerSettings.adapter as PlayerSettingsAdapter, PlayerSettingKeys.DANMAKU_FILTER_STRENGTH)
         }
         .setNegativeButton("取消", null)
-        .show()
 }
 
 // v17.8: 播放列表循环模式文本
@@ -2748,7 +2722,6 @@ private fun PlayerActivity.showPlaylistLoopModeDialog() {
             refreshSettings(binding.recyclerSettings.adapter as PlayerSettingsAdapter, PlayerSettingKeys.PLAYLIST_LOOP_MODE)
         }
         .setNegativeButton("取消", null)
-        .show()
 }
 
 // v17.10: 视频缩放模式文本
@@ -2766,7 +2739,6 @@ private fun PlayerActivity.showVideoScaleModeDialog() {
             refreshSettings(binding.recyclerSettings.adapter as PlayerSettingsAdapter, PlayerSettingKeys.VIDEO_SCALE_MODE)
         }
         .setNegativeButton("取消", null)
-        .show()
 }
 
 // v17.14: 视频HDR模式文本
@@ -2784,7 +2756,6 @@ private fun PlayerActivity.showVideoHdrModeDialog() {
             refreshSettings(binding.recyclerSettings.adapter as PlayerSettingsAdapter, PlayerSettingKeys.VIDEO_HDR_MODE)
         }
         .setNegativeButton("取消", null)
-        .show()
 }
 
 private fun PlayerActivity.buildSubtitleSettingsItems(): List<PlayerSettingsAdapter.SettingItem> {
@@ -2883,7 +2854,6 @@ internal fun PlayerActivity.showDanmakuHighlightColorDialog() {
             dialog.dismiss()
         }
         .setNegativeButton("取消", null)
-        .show()
 }
 
 // v6.10: 定时关闭子标题
@@ -3380,7 +3350,6 @@ private fun PlayerActivity.showCustomSpeedInputDialog() {
             }
         }
         .setNegativeButton("取消", null)
-        .show()
 }
 
 // v13.19: 截图保存路径对话框
@@ -3427,7 +3396,6 @@ private fun PlayerActivity.showCustomScreenshotPathDialog() {
             AppToast.show(this, "截图保存路径已设置为: ${if (path.isBlank()) "默认" else path}")
         }
         .setNegativeButton("取消", null)
-        .show()
 }
 
 private fun PlayerActivity.applySpeedValue(speed: Float) {
@@ -3773,7 +3741,6 @@ internal fun PlayerActivity.showDanmakuTextSizeDialog() {
             )
         }
         .setNegativeButton("取消", null)
-        .show()
 }
 
 internal fun PlayerActivity.showDanmakuSpeedDialog() {
@@ -3941,7 +3908,6 @@ private fun PlayerActivity.showAddKeywordDialog(existing: List<String>) {
             }
         }
         .setNegativeButton("取消", null)
-        .show()
 }
 
 private fun PlayerActivity.showManageKeywordsDialog(keywords: List<String>) {
@@ -3963,7 +3929,6 @@ private fun PlayerActivity.showManageKeywordsDialog(keywords: List<String>) {
             }
         }
         .setNegativeButton("取消", null)
-        .show()
 }
 
 // v6.4: 弹幕关键词高亮对话框
@@ -4022,7 +3987,6 @@ private fun PlayerActivity.showAddHighlightKeywordDialog(existing: List<String>)
             }
         }
         .setNegativeButton("取消", null)
-        .show()
 }
 
 private fun PlayerActivity.showManageHighlightKeywordsDialog(keywords: List<String>) {
@@ -4043,7 +4007,6 @@ private fun PlayerActivity.showManageHighlightKeywordsDialog(keywords: List<Stri
             }
         }
         .setNegativeButton("取消", null)
-        .show()
 }
 
 // v11.1: 评论关键词过滤
@@ -4109,7 +4072,6 @@ private fun PlayerActivity.showAddCommentKeywordDialog(existing: List<String>) {
             }
         }
         .setNegativeButton("取消", null)
-        .show()
 }
 
 private fun PlayerActivity.showManageCommentKeywordsDialog(keywords: List<String>) {
@@ -4131,7 +4093,6 @@ private fun PlayerActivity.showManageCommentKeywordsDialog(keywords: List<String
             }
         }
         .setNegativeButton("取消", null)
-        .show()
 }
 
 // v11.2: 双击快进秒数
@@ -4155,7 +4116,6 @@ private fun PlayerActivity.showShortSeekStepDialog() {
             dialog.dismiss()
         }
         .setNegativeButton("取消", null)
-        .show()
 }
 
 // v11.3: 弹幕最大数量限制
@@ -4180,7 +4140,6 @@ private fun PlayerActivity.showDanmakuMaxCountDialog() {
             dialog.dismiss()
         }
         .setNegativeButton("取消", null)
-        .show()
 }
 
 // v11.7: 字幕延迟
@@ -4205,7 +4164,6 @@ private fun PlayerActivity.showSubtitleDelayDialog() {
             dialog.dismiss()
         }
         .setNegativeButton("取消", null)
-        .show()
 }
 
 // v11.9: 默认亮度
@@ -4234,7 +4192,6 @@ private fun PlayerActivity.showDefaultBrightnessDialog() {
             dialog.dismiss()
         }
         .setNegativeButton("取消", null)
-        .show()
 }
 
 // v12.14: 视频画面旋转对话框
@@ -4332,7 +4289,6 @@ internal fun PlayerActivity.showJumpToTimeDialog() {
             }
         }
         .setNegativeButton("取消", null)
-        .show()
 }
 
 // v12.17: 格式化毫秒为时间字符串
@@ -4425,7 +4381,6 @@ internal fun PlayerActivity.showPlaybackStatsDialog() {
         .setTitle("播放统计")
         .setMessage(statsText)
         .setPositiveButton("关闭", null)
-        .show()
 }
 
 // v12.20: 格式化时间显示
@@ -4482,7 +4437,6 @@ internal fun PlayerActivity.startPlaybackTimeReminder(minutes: Int) {
                 AppToast.show(this@startPlaybackTimeReminder, "提醒已关闭")
             }
             .setCancelable(false)
-            .show()
     }
 }
 
@@ -6438,1846 +6392,1753 @@ internal fun PlayerActivity.showDanmakuFontGlowDialog() {
 
 // 31.1: 弹幕重叠自动合并
 internal fun PlayerActivity.showv31DanmakuMergeOverlapToggle() {
-    val current = BiliClient.prefs.v31DanmakuMergeOverlap
-    AppPopup.Builder(this)
-        .title("弹幕重叠自动合并")
-        .option(switchText(current)) { BiliClient.prefs.v31DanmakuMergeOverlap = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v31DanmakuMergeOverlap
+    BiliClient.prefs.v31DanmakuMergeOverlap = enabled
+    AppToast.show(this, "弹幕重叠自动合并：${if (enabled) "开" else "关"}")
 }
 
 
 // 31.2: 静音片段自动跳过
 internal fun PlayerActivity.showv31VideoFrameSkipSilenceToggle() {
-    val current = BiliClient.prefs.v31VideoFrameSkipSilence
-    AppPopup.Builder(this)
-        .title("静音片段自动跳过")
-        .option(switchText(current)) { BiliClient.prefs.v31VideoFrameSkipSilence = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v31VideoFrameSkipSilence
+    BiliClient.prefs.v31VideoFrameSkipSilence = enabled
+    AppToast.show(this, "静音片段自动跳过：${if (enabled) "开" else "关"}")
 }
 
 
 // 31.3: 字幕字号自动适配
 internal fun PlayerActivity.showv31SubtitleFontSizeAutoToggle() {
-    val current = BiliClient.prefs.v31SubtitleFontSizeAuto
-    AppPopup.Builder(this)
-        .title("字幕字号自动适配")
-        .option(switchText(current)) { BiliClient.prefs.v31SubtitleFontSizeAuto = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v31SubtitleFontSizeAuto
+    BiliClient.prefs.v31SubtitleFontSizeAuto = enabled
+    AppToast.show(this, "字幕字号自动适配：${if (enabled) "开" else "关"}")
 }
 
 
 // 31.4: 预缓冲时长(秒)
 internal fun PlayerActivity.showv31PlaybackBufferAheadSecDialog() {
-    val current = BiliClient.prefs.v31PlaybackBufferAheadSec
-    AppPopup.Builder(this)
-        .title("预缓冲时长(秒)")
-        .option("0") { BiliClient.prefs.v31PlaybackBufferAheadSec = 0 }
-        .option("1") { BiliClient.prefs.v31PlaybackBufferAheadSec = 1 }
-        .option("2") { BiliClient.prefs.v31PlaybackBufferAheadSec = 2 }
-        .option("3") { BiliClient.prefs.v31PlaybackBufferAheadSec = 3 }
-        .option("5") { BiliClient.prefs.v31PlaybackBufferAheadSec = 5 }
-        .option("10") { BiliClient.prefs.v31PlaybackBufferAheadSec = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v31PlaybackBufferAheadSec).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "预缓冲时长(秒)",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v31PlaybackBufferAheadSec = value
+        AppToast.show(this, "预缓冲时长(秒)：$value")
+    }
 }
 
 
 // 31.5: 弹幕防刷等级
 internal fun PlayerActivity.showv31DanmakuAntiSpamLevelDialog() {
-    val current = BiliClient.prefs.v31DanmakuAntiSpamLevel
-    AppPopup.Builder(this)
-        .title("弹幕防刷等级")
-        .option("0") { BiliClient.prefs.v31DanmakuAntiSpamLevel = 0 }
-        .option("1") { BiliClient.prefs.v31DanmakuAntiSpamLevel = 1 }
-        .option("2") { BiliClient.prefs.v31DanmakuAntiSpamLevel = 2 }
-        .option("3") { BiliClient.prefs.v31DanmakuAntiSpamLevel = 3 }
-        .option("5") { BiliClient.prefs.v31DanmakuAntiSpamLevel = 5 }
-        .option("10") { BiliClient.prefs.v31DanmakuAntiSpamLevel = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v31DanmakuAntiSpamLevel).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "弹幕防刷等级",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v31DanmakuAntiSpamLevel = value
+        AppToast.show(this, "弹幕防刷等级：$value")
+    }
 }
 
 
 // 31.6: 视频反交错模式
 internal fun PlayerActivity.showv31VideoDeinterlaceModeDialog() {
-    val current = BiliClient.prefs.v31VideoDeinterlaceMode
-    AppPopup.Builder(this)
-        .title("视频反交错模式")
-        .option("0") { BiliClient.prefs.v31VideoDeinterlaceMode = 0 }
-        .option("1") { BiliClient.prefs.v31VideoDeinterlaceMode = 1 }
-        .option("2") { BiliClient.prefs.v31VideoDeinterlaceMode = 2 }
-        .option("3") { BiliClient.prefs.v31VideoDeinterlaceMode = 3 }
-        .option("5") { BiliClient.prefs.v31VideoDeinterlaceMode = 5 }
-        .option("10") { BiliClient.prefs.v31VideoDeinterlaceMode = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v31VideoDeinterlaceMode).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "视频反交错模式",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v31VideoDeinterlaceMode = value
+        AppToast.show(this, "视频反交错模式：$value")
+    }
 }
 
 
 // 31.7: 音频夜间模式
 internal fun PlayerActivity.showv31AudioNightModeToggle() {
-    val current = BiliClient.prefs.v31AudioNightMode
-    AppPopup.Builder(this)
-        .title("音频夜间模式")
-        .option(switchText(current)) { BiliClient.prefs.v31AudioNightMode = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v31AudioNightMode
+    BiliClient.prefs.v31AudioNightMode = enabled
+    AppToast.show(this, "音频夜间模式：${if (enabled) "开" else "关"}")
 }
 
 
 // 31.8: 弹幕关键词高亮
 internal fun PlayerActivity.showv31DanmakuKeywordHighlightToggle() {
-    val current = BiliClient.prefs.v31DanmakuKeywordHighlight
-    AppPopup.Builder(this)
-        .title("弹幕关键词高亮")
-        .option(switchText(current)) { BiliClient.prefs.v31DanmakuKeywordHighlight = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v31DanmakuKeywordHighlight
+    BiliClient.prefs.v31DanmakuKeywordHighlight = enabled
+    AppToast.show(this, "弹幕关键词高亮：${if (enabled) "开" else "关"}")
 }
 
 
 // 31.9: 画中画模式支持
 internal fun PlayerActivity.showv31PlayerPiPSupportToggle() {
-    val current = BiliClient.prefs.v31PlayerPiPSupport
-    AppPopup.Builder(this)
-        .title("画中画模式支持")
-        .option(switchText(current)) { BiliClient.prefs.v31PlayerPiPSupport = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v31PlayerPiPSupport
+    BiliClient.prefs.v31PlayerPiPSupport = enabled
+    AppToast.show(this, "画中画模式支持：${if (enabled) "开" else "关"}")
 }
 
 
 // 31.10: A-B循环播放
 internal fun PlayerActivity.showv31VideoABoopModeToggle() {
-    val current = BiliClient.prefs.v31VideoABoopMode
-    AppPopup.Builder(this)
-        .title("A-B循环播放")
-        .option(switchText(current)) { BiliClient.prefs.v31VideoABoopMode = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v31VideoABoopMode
+    BiliClient.prefs.v31VideoABoopMode = enabled
+    AppToast.show(this, "A-B循环播放：${if (enabled) "开" else "关"}")
 }
 
 
 // 31.11: 弹幕层级排序
 internal fun PlayerActivity.showv31DanmakuLayerOrderDialog() {
-    val current = BiliClient.prefs.v31DanmakuLayerOrder
-    AppPopup.Builder(this)
-        .title("弹幕层级排序")
-        .option("0") { BiliClient.prefs.v31DanmakuLayerOrder = 0 }
-        .option("1") { BiliClient.prefs.v31DanmakuLayerOrder = 1 }
-        .option("2") { BiliClient.prefs.v31DanmakuLayerOrder = 2 }
-        .option("3") { BiliClient.prefs.v31DanmakuLayerOrder = 3 }
-        .option("5") { BiliClient.prefs.v31DanmakuLayerOrder = 5 }
-        .option("10") { BiliClient.prefs.v31DanmakuLayerOrder = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v31DanmakuLayerOrder).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "弹幕层级排序",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v31DanmakuLayerOrder = value
+        AppToast.show(this, "弹幕层级排序：$value")
+    }
 }
 
 
 // 31.12: 字幕同步偏移(ms)
 internal fun PlayerActivity.showv31SubtitleSyncOffsetDialog() {
-    val current = BiliClient.prefs.v31SubtitleSyncOffset
-    AppPopup.Builder(this)
-        .title("字幕同步偏移(ms)")
-        .option("0") { BiliClient.prefs.v31SubtitleSyncOffset = 0 }
-        .option("1") { BiliClient.prefs.v31SubtitleSyncOffset = 1 }
-        .option("2") { BiliClient.prefs.v31SubtitleSyncOffset = 2 }
-        .option("3") { BiliClient.prefs.v31SubtitleSyncOffset = 3 }
-        .option("5") { BiliClient.prefs.v31SubtitleSyncOffset = 5 }
-        .option("10") { BiliClient.prefs.v31SubtitleSyncOffset = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v31SubtitleSyncOffset).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "字幕同步偏移(ms)",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v31SubtitleSyncOffset = value
+        AppToast.show(this, "字幕同步偏移(ms)：$value")
+    }
 }
 
 
 // 31.13: 播放自动恢复
 internal fun PlayerActivity.showv31PlaybackAutoResumeToggle() {
-    val current = BiliClient.prefs.v31PlaybackAutoResume
-    AppPopup.Builder(this)
-        .title("播放自动恢复")
-        .option(switchText(current)) { BiliClient.prefs.v31PlaybackAutoResume = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v31PlaybackAutoResume
+    BiliClient.prefs.v31PlaybackAutoResume = enabled
+    AppToast.show(this, "播放自动恢复：${if (enabled) "开" else "关"}")
 }
 
 
 // 31.14: 弹幕屏蔽用户等级
 internal fun PlayerActivity.showv31DanmakuBlockUserLevelDialog() {
-    val current = BiliClient.prefs.v31DanmakuBlockUserLevel
-    AppPopup.Builder(this)
-        .title("弹幕屏蔽用户等级")
-        .option("0") { BiliClient.prefs.v31DanmakuBlockUserLevel = 0 }
-        .option("1") { BiliClient.prefs.v31DanmakuBlockUserLevel = 1 }
-        .option("2") { BiliClient.prefs.v31DanmakuBlockUserLevel = 2 }
-        .option("3") { BiliClient.prefs.v31DanmakuBlockUserLevel = 3 }
-        .option("5") { BiliClient.prefs.v31DanmakuBlockUserLevel = 5 }
-        .option("10") { BiliClient.prefs.v31DanmakuBlockUserLevel = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v31DanmakuBlockUserLevel).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "弹幕屏蔽用户等级",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v31DanmakuBlockUserLevel = value
+        AppToast.show(this, "弹幕屏蔽用户等级：$value")
+    }
 }
 
 
 // 31.15: 视频解码优先级
 internal fun PlayerActivity.showv31VideoCodecPriorityDialog() {
-    val current = BiliClient.prefs.v31VideoCodecPriority
-    AppPopup.Builder(this)
-        .title("视频解码优先级")
-        .option("0") { BiliClient.prefs.v31VideoCodecPriority = 0 }
-        .option("1") { BiliClient.prefs.v31VideoCodecPriority = 1 }
-        .option("2") { BiliClient.prefs.v31VideoCodecPriority = 2 }
-        .option("3") { BiliClient.prefs.v31VideoCodecPriority = 3 }
-        .option("5") { BiliClient.prefs.v31VideoCodecPriority = 5 }
-        .option("10") { BiliClient.prefs.v31VideoCodecPriority = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v31VideoCodecPriority).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "视频解码优先级",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v31VideoCodecPriority = value
+        AppToast.show(this, "视频解码优先级：$value")
+    }
 }
 
 
 // 32.1: 息屏定时器(分钟)
 internal fun PlayerActivity.showv32ScreenOffTimerDialog() {
-    val current = BiliClient.prefs.v32ScreenOffTimer
-    AppPopup.Builder(this)
-        .title("息屏定时器(分钟)")
-        .option("0") { BiliClient.prefs.v32ScreenOffTimer = 0 }
-        .option("1") { BiliClient.prefs.v32ScreenOffTimer = 1 }
-        .option("2") { BiliClient.prefs.v32ScreenOffTimer = 2 }
-        .option("3") { BiliClient.prefs.v32ScreenOffTimer = 3 }
-        .option("5") { BiliClient.prefs.v32ScreenOffTimer = 5 }
-        .option("10") { BiliClient.prefs.v32ScreenOffTimer = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v32ScreenOffTimer).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "息屏定时器(分钟)",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v32ScreenOffTimer = value
+        AppToast.show(this, "息屏定时器(分钟)：$value")
+    }
 }
 
 
 // 32.2: 弹幕雨模式
 internal fun PlayerActivity.showv32DanmakuRainModeToggle() {
-    val current = BiliClient.prefs.v32DanmakuRainMode
-    AppPopup.Builder(this)
-        .title("弹幕雨模式")
-        .option(switchText(current)) { BiliClient.prefs.v32DanmakuRainMode = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v32DanmakuRainMode
+    BiliClient.prefs.v32DanmakuRainMode = enabled
+    AppToast.show(this, "弹幕雨模式：${if (enabled) "开" else "关"}")
 }
 
 
 // 32.3: 音频声道交换
 internal fun PlayerActivity.showv32AudioChannelSwapToggle() {
-    val current = BiliClient.prefs.v32AudioChannelSwap
-    AppPopup.Builder(this)
-        .title("音频声道交换")
-        .option(switchText(current)) { BiliClient.prefs.v32AudioChannelSwap = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v32AudioChannelSwap
+    BiliClient.prefs.v32AudioChannelSwap = enabled
+    AppToast.show(this, "音频声道交换：${if (enabled) "开" else "关"}")
 }
 
 
 // 32.4: 视频缩放手势
 internal fun PlayerActivity.showv32VideoZoomGestureToggle() {
-    val current = BiliClient.prefs.v32VideoZoomGesture
-    AppPopup.Builder(this)
-        .title("视频缩放手势")
-        .option(switchText(current)) { BiliClient.prefs.v32VideoZoomGesture = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v32VideoZoomGesture
+    BiliClient.prefs.v32VideoZoomGesture = enabled
+    AppToast.show(this, "视频缩放手势：${if (enabled) "开" else "关"}")
 }
 
 
 // 32.5: 弹幕时间戳显示
 internal fun PlayerActivity.showv32DanmakuTimestampDisplayToggle() {
-    val current = BiliClient.prefs.v32DanmakuTimestampDisplay
-    AppPopup.Builder(this)
-        .title("弹幕时间戳显示")
-        .option(switchText(current)) { BiliClient.prefs.v32DanmakuTimestampDisplay = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v32DanmakuTimestampDisplay
+    BiliClient.prefs.v32DanmakuTimestampDisplay = enabled
+    AppToast.show(this, "弹幕时间戳显示：${if (enabled) "开" else "关"}")
 }
 
 
 // 32.6: 自动移除已播放项
 internal fun PlayerActivity.showv32PlaylistRemovePlayedToggle() {
-    val current = BiliClient.prefs.v32PlaylistRemovePlayed
-    AppPopup.Builder(this)
-        .title("自动移除已播放项")
-        .option(switchText(current)) { BiliClient.prefs.v32PlaylistRemovePlayed = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v32PlaylistRemovePlayed
+    BiliClient.prefs.v32PlaylistRemovePlayed = enabled
+    AppToast.show(this, "自动移除已播放项：${if (enabled) "开" else "关"}")
 }
 
 
 // 32.7: 后台播放
 internal fun PlayerActivity.showv32PlayerBackgroundPlayToggle() {
-    val current = BiliClient.prefs.v32PlayerBackgroundPlay
-    AppPopup.Builder(this)
-        .title("后台播放")
-        .option(switchText(current)) { BiliClient.prefs.v32PlayerBackgroundPlay = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v32PlayerBackgroundPlay
+    BiliClient.prefs.v32PlayerBackgroundPlay = enabled
+    AppToast.show(this, "后台播放：${if (enabled) "开" else "关"}")
 }
 
 
 // 32.8: 双语字幕
 internal fun PlayerActivity.showv32SubtitleDualLangToggle() {
-    val current = BiliClient.prefs.v32SubtitleDualLang
-    AppPopup.Builder(this)
-        .title("双语字幕")
-        .option(switchText(current)) { BiliClient.prefs.v32SubtitleDualLang = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v32SubtitleDualLang
+    BiliClient.prefs.v32SubtitleDualLang = enabled
+    AppToast.show(this, "双语字幕：${if (enabled) "开" else "关"}")
 }
 
 
 // 32.9: 弹幕透明度渐隐
 internal fun PlayerActivity.showv32DanmakuOpacityFadeToggle() {
-    val current = BiliClient.prefs.v32DanmakuOpacityFade
-    AppPopup.Builder(this)
-        .title("弹幕透明度渐隐")
-        .option(switchText(current)) { BiliClient.prefs.v32DanmakuOpacityFade = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v32DanmakuOpacityFade
+    BiliClient.prefs.v32DanmakuOpacityFade = enabled
+    AppToast.show(this, "弹幕透明度渐隐：${if (enabled) "开" else "关"}")
 }
 
 
 // 32.10: 变速平滑过渡
 internal fun PlayerActivity.showv32VideoSpeedRampModeToggle() {
-    val current = BiliClient.prefs.v32VideoSpeedRampMode
-    AppPopup.Builder(this)
-        .title("变速平滑过渡")
-        .option(switchText(current)) { BiliClient.prefs.v32VideoSpeedRampMode = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v32VideoSpeedRampMode
+    BiliClient.prefs.v32VideoSpeedRampMode = enabled
+    AppToast.show(this, "变速平滑过渡：${if (enabled) "开" else "关"}")
 }
 
 
 // 32.11: 音频虚拟环绕声
 internal fun PlayerActivity.showv32AudioVirtualSurroundToggle() {
-    val current = BiliClient.prefs.v32AudioVirtualSurround
-    AppPopup.Builder(this)
-        .title("音频虚拟环绕声")
-        .option(switchText(current)) { BiliClient.prefs.v32AudioVirtualSurround = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v32AudioVirtualSurround
+    BiliClient.prefs.v32AudioVirtualSurround = enabled
+    AppToast.show(this, "音频虚拟环绕声：${if (enabled) "开" else "关"}")
 }
 
 
 // 32.12: 弹幕气泡样式
 internal fun PlayerActivity.showv32DanmakuBubbleStyleToggle() {
-    val current = BiliClient.prefs.v32DanmakuBubbleStyle
-    AppPopup.Builder(this)
-        .title("弹幕气泡样式")
-        .option(switchText(current)) { BiliClient.prefs.v32DanmakuBubbleStyle = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v32DanmakuBubbleStyle
+    BiliClient.prefs.v32DanmakuBubbleStyle = enabled
+    AppToast.show(this, "弹幕气泡样式：${if (enabled) "开" else "关"}")
 }
 
 
 // 32.13: 播放器锁定超时(秒)
 internal fun PlayerActivity.showv32PlayerLockTimeoutDialog() {
-    val current = BiliClient.prefs.v32PlayerLockTimeout
-    AppPopup.Builder(this)
-        .title("播放器锁定超时(秒)")
-        .option("0") { BiliClient.prefs.v32PlayerLockTimeout = 0 }
-        .option("1") { BiliClient.prefs.v32PlayerLockTimeout = 1 }
-        .option("2") { BiliClient.prefs.v32PlayerLockTimeout = 2 }
-        .option("3") { BiliClient.prefs.v32PlayerLockTimeout = 3 }
-        .option("5") { BiliClient.prefs.v32PlayerLockTimeout = 5 }
-        .option("10") { BiliClient.prefs.v32PlayerLockTimeout = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v32PlayerLockTimeout).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "播放器锁定超时(秒)",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v32PlayerLockTimeout = value
+        AppToast.show(this, "播放器锁定超时(秒)：$value")
+    }
 }
 
 
 // 32.14: 视频裁剪预设
 internal fun PlayerActivity.showv32VideoCropPresetDialog() {
-    val current = BiliClient.prefs.v32VideoCropPreset
-    AppPopup.Builder(this)
-        .title("视频裁剪预设")
-        .option("0") { BiliClient.prefs.v32VideoCropPreset = 0 }
-        .option("1") { BiliClient.prefs.v32VideoCropPreset = 1 }
-        .option("2") { BiliClient.prefs.v32VideoCropPreset = 2 }
-        .option("3") { BiliClient.prefs.v32VideoCropPreset = 3 }
-        .option("5") { BiliClient.prefs.v32VideoCropPreset = 5 }
-        .option("10") { BiliClient.prefs.v32VideoCropPreset = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v32VideoCropPreset).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "视频裁剪预设",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v32VideoCropPreset = value
+        AppToast.show(this, "视频裁剪预设：$value")
+    }
 }
 
 
 // 32.15: 弹幕表情过滤
 internal fun PlayerActivity.showv32DanmakuEmojiFilterToggle() {
-    val current = BiliClient.prefs.v32DanmakuEmojiFilter
-    AppPopup.Builder(this)
-        .title("弹幕表情过滤")
-        .option(switchText(current)) { BiliClient.prefs.v32DanmakuEmojiFilter = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v32DanmakuEmojiFilter
+    BiliClient.prefs.v32DanmakuEmojiFilter = enabled
+    AppToast.show(this, "弹幕表情过滤：${if (enabled) "开" else "关"}")
 }
 
 
 // 33.1: 低音增强
 internal fun PlayerActivity.showv33AudioBassBoostDialog() {
-    val current = BiliClient.prefs.v33AudioBassBoost
-    AppPopup.Builder(this)
-        .title("低音增强")
-        .option("0") { BiliClient.prefs.v33AudioBassBoost = 0 }
-        .option("1") { BiliClient.prefs.v33AudioBassBoost = 1 }
-        .option("2") { BiliClient.prefs.v33AudioBassBoost = 2 }
-        .option("3") { BiliClient.prefs.v33AudioBassBoost = 3 }
-        .option("5") { BiliClient.prefs.v33AudioBassBoost = 5 }
-        .option("10") { BiliClient.prefs.v33AudioBassBoost = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v33AudioBassBoost).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "低音增强",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v33AudioBassBoost = value
+        AppToast.show(this, "低音增强：$value")
+    }
 }
 
 
 // 33.2: 弹幕滚动方向
 internal fun PlayerActivity.showv33DanmakuScrollDirectionDialog() {
-    val current = BiliClient.prefs.v33DanmakuScrollDirection
-    AppPopup.Builder(this)
-        .title("弹幕滚动方向")
-        .option("0") { BiliClient.prefs.v33DanmakuScrollDirection = 0 }
-        .option("1") { BiliClient.prefs.v33DanmakuScrollDirection = 1 }
-        .option("2") { BiliClient.prefs.v33DanmakuScrollDirection = 2 }
-        .option("3") { BiliClient.prefs.v33DanmakuScrollDirection = 3 }
-        .option("5") { BiliClient.prefs.v33DanmakuScrollDirection = 5 }
-        .option("10") { BiliClient.prefs.v33DanmakuScrollDirection = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v33DanmakuScrollDirection).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "弹幕滚动方向",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v33DanmakuScrollDirection = value
+        AppToast.show(this, "弹幕滚动方向：$value")
+    }
 }
 
 
 // 33.3: 缩略图时间点(秒)
 internal fun PlayerActivity.showv33VideoThumbnailTimeSecDialog() {
-    val current = BiliClient.prefs.v33VideoThumbnailTimeSec
-    AppPopup.Builder(this)
-        .title("缩略图时间点(秒)")
-        .option("0") { BiliClient.prefs.v33VideoThumbnailTimeSec = 0 }
-        .option("1") { BiliClient.prefs.v33VideoThumbnailTimeSec = 1 }
-        .option("2") { BiliClient.prefs.v33VideoThumbnailTimeSec = 2 }
-        .option("3") { BiliClient.prefs.v33VideoThumbnailTimeSec = 3 }
-        .option("5") { BiliClient.prefs.v33VideoThumbnailTimeSec = 5 }
-        .option("10") { BiliClient.prefs.v33VideoThumbnailTimeSec = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v33VideoThumbnailTimeSec).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "缩略图时间点(秒)",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v33VideoThumbnailTimeSec = value
+        AppToast.show(this, "缩略图时间点(秒)：$value")
+    }
 }
 
 
 // 33.4: 双击快进秒数
 internal fun PlayerActivity.showv33PlayerDoubleTapSeekSecDialog() {
-    val current = BiliClient.prefs.v33PlayerDoubleTapSeekSec
-    AppPopup.Builder(this)
-        .title("双击快进秒数")
-        .option("0") { BiliClient.prefs.v33PlayerDoubleTapSeekSec = 0 }
-        .option("1") { BiliClient.prefs.v33PlayerDoubleTapSeekSec = 1 }
-        .option("2") { BiliClient.prefs.v33PlayerDoubleTapSeekSec = 2 }
-        .option("3") { BiliClient.prefs.v33PlayerDoubleTapSeekSec = 3 }
-        .option("5") { BiliClient.prefs.v33PlayerDoubleTapSeekSec = 5 }
-        .option("10") { BiliClient.prefs.v33PlayerDoubleTapSeekSec = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v33PlayerDoubleTapSeekSec).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "双击快进秒数",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v33PlayerDoubleTapSeekSec = value
+        AppToast.show(this, "双击快进秒数：$value")
+    }
 }
 
 
 // 33.5: 弹幕行数限制
 internal fun PlayerActivity.showv33DanmakuLineNumberDialog() {
-    val current = BiliClient.prefs.v33DanmakuLineNumber
-    AppPopup.Builder(this)
-        .title("弹幕行数限制")
-        .option("0") { BiliClient.prefs.v33DanmakuLineNumber = 0 }
-        .option("1") { BiliClient.prefs.v33DanmakuLineNumber = 1 }
-        .option("2") { BiliClient.prefs.v33DanmakuLineNumber = 2 }
-        .option("3") { BiliClient.prefs.v33DanmakuLineNumber = 3 }
-        .option("5") { BiliClient.prefs.v33DanmakuLineNumber = 5 }
-        .option("10") { BiliClient.prefs.v33DanmakuLineNumber = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v33DanmakuLineNumber).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "弹幕行数限制",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v33DanmakuLineNumber = value
+        AppToast.show(this, "弹幕行数限制：$value")
+    }
 }
 
 
 // 33.6: 字幕描边宽度
 internal fun PlayerActivity.showv33SubtitleBorderWidthDialog() {
-    val current = BiliClient.prefs.v33SubtitleBorderWidth
-    AppPopup.Builder(this)
-        .title("字幕描边宽度")
-        .option("0") { BiliClient.prefs.v33SubtitleBorderWidth = 0 }
-        .option("1") { BiliClient.prefs.v33SubtitleBorderWidth = 1 }
-        .option("2") { BiliClient.prefs.v33SubtitleBorderWidth = 2 }
-        .option("3") { BiliClient.prefs.v33SubtitleBorderWidth = 3 }
-        .option("5") { BiliClient.prefs.v33SubtitleBorderWidth = 5 }
-        .option("10") { BiliClient.prefs.v33SubtitleBorderWidth = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v33SubtitleBorderWidth).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "字幕描边宽度",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v33SubtitleBorderWidth = value
+        AppToast.show(this, "字幕描边宽度：$value")
+    }
 }
 
 
 // 33.7: HDR色调映射
 internal fun PlayerActivity.showv33VideoHdrToneMapDialog() {
-    val current = BiliClient.prefs.v33VideoHdrToneMap
-    AppPopup.Builder(this)
-        .title("HDR色调映射")
-        .option("0") { BiliClient.prefs.v33VideoHdrToneMap = 0 }
-        .option("1") { BiliClient.prefs.v33VideoHdrToneMap = 1 }
-        .option("2") { BiliClient.prefs.v33VideoHdrToneMap = 2 }
-        .option("3") { BiliClient.prefs.v33VideoHdrToneMap = 3 }
-        .option("5") { BiliClient.prefs.v33VideoHdrToneMap = 5 }
-        .option("10") { BiliClient.prefs.v33VideoHdrToneMap = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v33VideoHdrToneMap).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "HDR色调映射",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v33VideoHdrToneMap = value
+        AppToast.show(this, "HDR色调映射：$value")
+    }
 }
 
 
 // 33.8: 跳过片头秒数
 internal fun PlayerActivity.showv33PlaybackSkipIntroSecDialog() {
-    val current = BiliClient.prefs.v33PlaybackSkipIntroSec
-    AppPopup.Builder(this)
-        .title("跳过片头秒数")
-        .option("0") { BiliClient.prefs.v33PlaybackSkipIntroSec = 0 }
-        .option("1") { BiliClient.prefs.v33PlaybackSkipIntroSec = 1 }
-        .option("2") { BiliClient.prefs.v33PlaybackSkipIntroSec = 2 }
-        .option("3") { BiliClient.prefs.v33PlaybackSkipIntroSec = 3 }
-        .option("5") { BiliClient.prefs.v33PlaybackSkipIntroSec = 5 }
-        .option("10") { BiliClient.prefs.v33PlaybackSkipIntroSec = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v33PlaybackSkipIntroSec).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "跳过片头秒数",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v33PlaybackSkipIntroSec = value
+        AppToast.show(this, "跳过片头秒数：$value")
+    }
 }
 
 
 // 33.9: 弹幕自定义字体路径
 internal fun PlayerActivity.showv33DanmakuCustomFontPathToggle() {
-    val current = BiliClient.prefs.v33DanmakuCustomFontPath
-    AppPopup.Builder(this)
-        .title("弹幕自定义字体路径")
-        .option(switchText(current)) { BiliClient.prefs.v33DanmakuCustomFontPath = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v33DanmakuCustomFontPath
+    BiliClient.prefs.v33DanmakuCustomFontPath = enabled
+    AppToast.show(this, "弹幕自定义字体路径：${if (enabled) "开" else "关"}")
 }
 
 
 // 33.10: 音频增益(dB)
 internal fun PlayerActivity.showv33AudioGainDbDialog() {
-    val current = BiliClient.prefs.v33AudioGainDb
-    AppPopup.Builder(this)
-        .title("音频增益(dB)")
-        .option("0") { BiliClient.prefs.v33AudioGainDb = 0 }
-        .option("1") { BiliClient.prefs.v33AudioGainDb = 1 }
-        .option("2") { BiliClient.prefs.v33AudioGainDb = 2 }
-        .option("3") { BiliClient.prefs.v33AudioGainDb = 3 }
-        .option("5") { BiliClient.prefs.v33AudioGainDb = 5 }
-        .option("10") { BiliClient.prefs.v33AudioGainDb = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v33AudioGainDb).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "音频增益(dB)",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v33AudioGainDb = value
+        AppToast.show(this, "音频增益(dB)：$value")
+    }
 }
 
 
 // 33.11: 进度条章节标记
 internal fun PlayerActivity.showv33PlayerSeekBarChapterToggle() {
-    val current = BiliClient.prefs.v33PlayerSeekBarChapter
-    AppPopup.Builder(this)
-        .title("进度条章节标记")
-        .option(switchText(current)) { BiliClient.prefs.v33PlayerSeekBarChapter = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v33PlayerSeekBarChapter
+    BiliClient.prefs.v33PlayerSeekBarChapter = enabled
+    AppToast.show(this, "进度条章节标记：${if (enabled) "开" else "关"}")
 }
 
 
 // 33.12: 视频旋转锁定
 internal fun PlayerActivity.showv33VideoRotationLockToggle() {
-    val current = BiliClient.prefs.v33VideoRotationLock
-    AppPopup.Builder(this)
-        .title("视频旋转锁定")
-        .option(switchText(current)) { BiliClient.prefs.v33VideoRotationLock = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v33VideoRotationLock
+    BiliClient.prefs.v33VideoRotationLock = enabled
+    AppToast.show(this, "视频旋转锁定：${if (enabled) "开" else "关"}")
 }
 
 
 // 33.13: 弹幕重复过滤
 internal fun PlayerActivity.showv33DanmakuRepeatFilterToggle() {
-    val current = BiliClient.prefs.v33DanmakuRepeatFilter
-    AppPopup.Builder(this)
-        .title("弹幕重复过滤")
-        .option(switchText(current)) { BiliClient.prefs.v33DanmakuRepeatFilter = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v33DanmakuRepeatFilter
+    BiliClient.prefs.v33DanmakuRepeatFilter = enabled
+    AppToast.show(this, "弹幕重复过滤：${if (enabled) "开" else "关"}")
 }
 
 
 // 33.14: 字幕阴影偏移
 internal fun PlayerActivity.showv33SubtitleShadowOffsetDialog() {
-    val current = BiliClient.prefs.v33SubtitleShadowOffset
-    AppPopup.Builder(this)
-        .title("字幕阴影偏移")
-        .option("0") { BiliClient.prefs.v33SubtitleShadowOffset = 0 }
-        .option("1") { BiliClient.prefs.v33SubtitleShadowOffset = 1 }
-        .option("2") { BiliClient.prefs.v33SubtitleShadowOffset = 2 }
-        .option("3") { BiliClient.prefs.v33SubtitleShadowOffset = 3 }
-        .option("5") { BiliClient.prefs.v33SubtitleShadowOffset = 5 }
-        .option("10") { BiliClient.prefs.v33SubtitleShadowOffset = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v33SubtitleShadowOffset).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "字幕阴影偏移",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v33SubtitleShadowOffset = value
+        AppToast.show(this, "字幕阴影偏移：$value")
+    }
 }
 
 
 // 33.15: 播放列表倒序
 internal fun PlayerActivity.showv33PlaylistReverseOrderToggle() {
-    val current = BiliClient.prefs.v33PlaylistReverseOrder
-    AppPopup.Builder(this)
-        .title("播放列表倒序")
-        .option(switchText(current)) { BiliClient.prefs.v33PlaylistReverseOrder = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v33PlaylistReverseOrder
+    BiliClient.prefs.v33PlaylistReverseOrder = enabled
+    AppToast.show(this, "播放列表倒序：${if (enabled) "开" else "关"}")
 }
 
 
 // 34.1: 弹幕最大显示时长(秒)
 internal fun PlayerActivity.showv34DanmakuMaxDisplaySecDialog() {
-    val current = BiliClient.prefs.v34DanmakuMaxDisplaySec
-    AppPopup.Builder(this)
-        .title("弹幕最大显示时长(秒)")
-        .option("0") { BiliClient.prefs.v34DanmakuMaxDisplaySec = 0 }
-        .option("1") { BiliClient.prefs.v34DanmakuMaxDisplaySec = 1 }
-        .option("2") { BiliClient.prefs.v34DanmakuMaxDisplaySec = 2 }
-        .option("3") { BiliClient.prefs.v34DanmakuMaxDisplaySec = 3 }
-        .option("5") { BiliClient.prefs.v34DanmakuMaxDisplaySec = 5 }
-        .option("10") { BiliClient.prefs.v34DanmakuMaxDisplaySec = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v34DanmakuMaxDisplaySec).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "弹幕最大显示时长(秒)",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v34DanmakuMaxDisplaySec = value
+        AppToast.show(this, "弹幕最大显示时长(秒)：$value")
+    }
 }
 
 
 // 34.2: 亮度自动感应
 internal fun PlayerActivity.showv34VideoBrightnessSensorToggle() {
-    val current = BiliClient.prefs.v34VideoBrightnessSensor
-    AppPopup.Builder(this)
-        .title("亮度自动感应")
-        .option(switchText(current)) { BiliClient.prefs.v34VideoBrightnessSensor = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v34VideoBrightnessSensor
+    BiliClient.prefs.v34VideoBrightnessSensor = enabled
+    AppToast.show(this, "亮度自动感应：${if (enabled) "开" else "关"}")
 }
 
 
 // 34.3: 音频压缩阈值
 internal fun PlayerActivity.showv34AudioCompressorThresholdDialog() {
-    val current = BiliClient.prefs.v34AudioCompressorThreshold
-    AppPopup.Builder(this)
-        .title("音频压缩阈值")
-        .option("0") { BiliClient.prefs.v34AudioCompressorThreshold = 0 }
-        .option("1") { BiliClient.prefs.v34AudioCompressorThreshold = 1 }
-        .option("2") { BiliClient.prefs.v34AudioCompressorThreshold = 2 }
-        .option("3") { BiliClient.prefs.v34AudioCompressorThreshold = 3 }
-        .option("5") { BiliClient.prefs.v34AudioCompressorThreshold = 5 }
-        .option("10") { BiliClient.prefs.v34AudioCompressorThreshold = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v34AudioCompressorThreshold).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "音频压缩阈值",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v34AudioCompressorThreshold = value
+        AppToast.show(this, "音频压缩阈值：$value")
+    }
 }
 
 
 // 34.4: 自定义手势映射
 internal fun PlayerActivity.showv34PlayerGestureCustomMapToggle() {
-    val current = BiliClient.prefs.v34PlayerGestureCustomMap
-    AppPopup.Builder(this)
-        .title("自定义手势映射")
-        .option(switchText(current)) { BiliClient.prefs.v34PlayerGestureCustomMap = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v34PlayerGestureCustomMap
+    BiliClient.prefs.v34PlayerGestureCustomMap = enabled
+    AppToast.show(this, "自定义手势映射：${if (enabled) "开" else "关"}")
 }
 
 
 // 34.5: 弹幕正则屏蔽
 internal fun PlayerActivity.showv34DanmakuShieldRegexToggle() {
-    val current = BiliClient.prefs.v34DanmakuShieldRegex
-    AppPopup.Builder(this)
-        .title("弹幕正则屏蔽")
-        .option(switchText(current)) { BiliClient.prefs.v34DanmakuShieldRegex = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v34DanmakuShieldRegex
+    BiliClient.prefs.v34DanmakuShieldRegex = enabled
+    AppToast.show(this, "弹幕正则屏蔽：${if (enabled) "开" else "关"}")
 }
 
 
 // 34.6: 字幕卡拉OK模式
 internal fun PlayerActivity.showv34SubtitleKaraokeModeToggle() {
-    val current = BiliClient.prefs.v34SubtitleKaraokeMode
-    AppPopup.Builder(this)
-        .title("字幕卡拉OK模式")
-        .option(switchText(current)) { BiliClient.prefs.v34SubtitleKaraokeMode = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v34SubtitleKaraokeMode
+    BiliClient.prefs.v34SubtitleKaraokeMode = enabled
+    AppToast.show(this, "字幕卡拉OK模式：${if (enabled) "开" else "关"}")
 }
 
 
 // 34.7: 扫描线滤镜
 internal fun PlayerActivity.showv34VideoScanLineFilterToggle() {
-    val current = BiliClient.prefs.v34VideoScanLineFilter
-    AppPopup.Builder(this)
-        .title("扫描线滤镜")
-        .option(switchText(current)) { BiliClient.prefs.v34VideoScanLineFilter = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v34VideoScanLineFilter
+    BiliClient.prefs.v34VideoScanLineFilter = enabled
+    AppToast.show(this, "扫描线滤镜：${if (enabled) "开" else "关"}")
 }
 
 
 // 34.8: 耳机断开自动暂停
 internal fun PlayerActivity.showv34PlaybackAutoPauseOnHeadsetToggle() {
-    val current = BiliClient.prefs.v34PlaybackAutoPauseOnHeadset
-    AppPopup.Builder(this)
-        .title("耳机断开自动暂停")
-        .option(switchText(current)) { BiliClient.prefs.v34PlaybackAutoPauseOnHeadset = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v34PlaybackAutoPauseOnHeadset
+    BiliClient.prefs.v34PlaybackAutoPauseOnHeadset = enabled
+    AppToast.show(this, "耳机断开自动暂停：${if (enabled) "开" else "关"}")
 }
 
 
 // 34.9: 弹幕镜像翻转
 internal fun PlayerActivity.showv34DanmakuMirrorFlipToggle() {
-    val current = BiliClient.prefs.v34DanmakuMirrorFlip
-    AppPopup.Builder(this)
-        .title("弹幕镜像翻转")
-        .option(switchText(current)) { BiliClient.prefs.v34DanmakuMirrorFlip = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v34DanmakuMirrorFlip
+    BiliClient.prefs.v34DanmakuMirrorFlip = enabled
+    AppToast.show(this, "弹幕镜像翻转：${if (enabled) "开" else "关"}")
 }
 
 
 // 34.10: 均衡器预设
 internal fun PlayerActivity.showv34AudioEqPresetDialog() {
-    val current = BiliClient.prefs.v34AudioEqPreset
-    AppPopup.Builder(this)
-        .title("均衡器预设")
-        .option("0") { BiliClient.prefs.v34AudioEqPreset = 0 }
-        .option("1") { BiliClient.prefs.v34AudioEqPreset = 1 }
-        .option("2") { BiliClient.prefs.v34AudioEqPreset = 2 }
-        .option("3") { BiliClient.prefs.v34AudioEqPreset = 3 }
-        .option("5") { BiliClient.prefs.v34AudioEqPreset = 5 }
-        .option("10") { BiliClient.prefs.v34AudioEqPreset = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v34AudioEqPreset).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "均衡器预设",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v34AudioEqPreset = value
+        AppToast.show(this, "均衡器预设：$value")
+    }
 }
 
 
 // 34.11: 播放器音量增强
 internal fun PlayerActivity.showv34PlayerVolumeBoostToggle() {
-    val current = BiliClient.prefs.v34PlayerVolumeBoost
-    AppPopup.Builder(this)
-        .title("播放器音量增强")
-        .option(switchText(current)) { BiliClient.prefs.v34PlayerVolumeBoost = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v34PlayerVolumeBoost
+    BiliClient.prefs.v34PlayerVolumeBoost = enabled
+    AppToast.show(this, "播放器音量增强：${if (enabled) "开" else "关"}")
 }
 
 
 // 34.12: 像素风格模式
 internal fun PlayerActivity.showv34VideoPixelArtModeToggle() {
-    val current = BiliClient.prefs.v34VideoPixelArtMode
-    AppPopup.Builder(this)
-        .title("像素风格模式")
-        .option(switchText(current)) { BiliClient.prefs.v34VideoPixelArtMode = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v34VideoPixelArtMode
+    BiliClient.prefs.v34VideoPixelArtMode = enabled
+    AppToast.show(this, "像素风格模式：${if (enabled) "开" else "关"}")
 }
 
 
 // 34.13: 弹幕最小字号
 internal fun PlayerActivity.showv34DanmakuFontSizeMinDialog() {
-    val current = BiliClient.prefs.v34DanmakuFontSizeMin
-    AppPopup.Builder(this)
-        .title("弹幕最小字号")
-        .option("0") { BiliClient.prefs.v34DanmakuFontSizeMin = 0 }
-        .option("1") { BiliClient.prefs.v34DanmakuFontSizeMin = 1 }
-        .option("2") { BiliClient.prefs.v34DanmakuFontSizeMin = 2 }
-        .option("3") { BiliClient.prefs.v34DanmakuFontSizeMin = 3 }
-        .option("5") { BiliClient.prefs.v34DanmakuFontSizeMin = 5 }
-        .option("10") { BiliClient.prefs.v34DanmakuFontSizeMin = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v34DanmakuFontSizeMin).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "弹幕最小字号",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v34DanmakuFontSizeMin = value
+        AppToast.show(this, "弹幕最小字号：$value")
+    }
 }
 
 
 // 34.14: 字幕自定义颜色
 internal fun PlayerActivity.showv34SubtitleTextColorCustomToggle() {
-    val current = BiliClient.prefs.v34SubtitleTextColorCustom
-    AppPopup.Builder(this)
-        .title("字幕自定义颜色")
-        .option(switchText(current)) { BiliClient.prefs.v34SubtitleTextColorCustom = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v34SubtitleTextColorCustom
+    BiliClient.prefs.v34SubtitleTextColorCustom = enabled
+    AppToast.show(this, "字幕自定义颜色：${if (enabled) "开" else "关"}")
 }
 
 
 // 34.15: 单曲循环模式
 internal fun PlayerActivity.showv34PlaylistRepeatSingleToggle() {
-    val current = BiliClient.prefs.v34PlaylistRepeatSingle
-    AppPopup.Builder(this)
-        .title("单曲循环模式")
-        .option(switchText(current)) { BiliClient.prefs.v34PlaylistRepeatSingle = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v34PlaylistRepeatSingle
+    BiliClient.prefs.v34PlaylistRepeatSingle = enabled
+    AppToast.show(this, "单曲循环模式：${if (enabled) "开" else "关"}")
 }
 
 
 // 35.1: 帧率覆盖
 internal fun PlayerActivity.showv35VideoFrameRateOverrideDialog() {
-    val current = BiliClient.prefs.v35VideoFrameRateOverride
-    AppPopup.Builder(this)
-        .title("帧率覆盖")
-        .option("0") { BiliClient.prefs.v35VideoFrameRateOverride = 0 }
-        .option("1") { BiliClient.prefs.v35VideoFrameRateOverride = 1 }
-        .option("2") { BiliClient.prefs.v35VideoFrameRateOverride = 2 }
-        .option("3") { BiliClient.prefs.v35VideoFrameRateOverride = 3 }
-        .option("5") { BiliClient.prefs.v35VideoFrameRateOverride = 5 }
-        .option("10") { BiliClient.prefs.v35VideoFrameRateOverride = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v35VideoFrameRateOverride).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "帧率覆盖",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v35VideoFrameRateOverride = value
+        AppToast.show(this, "帧率覆盖：$value")
+    }
 }
 
 
 // 35.2: 弹幕发送者头像
 internal fun PlayerActivity.showv35DanmakuSenderAvatarToggle() {
-    val current = BiliClient.prefs.v35DanmakuSenderAvatar
-    AppPopup.Builder(this)
-        .title("弹幕发送者头像")
-        .option(switchText(current)) { BiliClient.prefs.v35DanmakuSenderAvatar = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v35DanmakuSenderAvatar
+    BiliClient.prefs.v35DanmakuSenderAvatar = enabled
+    AppToast.show(this, "弹幕发送者头像：${if (enabled) "开" else "关"}")
 }
 
 
 // 35.3: 空间音频宽度
 internal fun PlayerActivity.showv35AudioSpatialWidthDialog() {
-    val current = BiliClient.prefs.v35AudioSpatialWidth
-    AppPopup.Builder(this)
-        .title("空间音频宽度")
-        .option("0") { BiliClient.prefs.v35AudioSpatialWidth = 0 }
-        .option("1") { BiliClient.prefs.v35AudioSpatialWidth = 1 }
-        .option("2") { BiliClient.prefs.v35AudioSpatialWidth = 2 }
-        .option("3") { BiliClient.prefs.v35AudioSpatialWidth = 3 }
-        .option("5") { BiliClient.prefs.v35AudioSpatialWidth = 5 }
-        .option("10") { BiliClient.prefs.v35AudioSpatialWidth = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v35AudioSpatialWidth).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "空间音频宽度",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v35AudioSpatialWidth = value
+        AppToast.show(this, "空间音频宽度：$value")
+    }
 }
 
 
 // 35.4: 横屏自动全屏
 internal fun PlayerActivity.showv35PlayerAutoFullscreenLandscapeToggle() {
-    val current = BiliClient.prefs.v35PlayerAutoFullscreenLandscape
-    AppPopup.Builder(this)
-        .title("横屏自动全屏")
-        .option(switchText(current)) { BiliClient.prefs.v35PlayerAutoFullscreenLandscape = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v35PlayerAutoFullscreenLandscape
+    BiliClient.prefs.v35PlayerAutoFullscreenLandscape = enabled
+    AppToast.show(this, "横屏自动全屏：${if (enabled) "开" else "关"}")
 }
 
 
 // 35.5: 弹幕拼音转换
 internal fun PlayerActivity.showv35DanmakuPinyinConvertToggle() {
-    val current = BiliClient.prefs.v35DanmakuPinyinConvert
-    AppPopup.Builder(this)
-        .title("弹幕拼音转换")
-        .option(switchText(current)) { BiliClient.prefs.v35DanmakuPinyinConvert = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v35DanmakuPinyinConvert
+    BiliClient.prefs.v35DanmakuPinyinConvert = enabled
+    AppToast.show(this, "弹幕拼音转换：${if (enabled) "开" else "关"}")
 }
 
 
 // 35.6: 字幕顶部显示
 internal fun PlayerActivity.showv35SubtitlePositionTopToggle() {
-    val current = BiliClient.prefs.v35SubtitlePositionTop
-    AppPopup.Builder(this)
-        .title("字幕顶部显示")
-        .option(switchText(current)) { BiliClient.prefs.v35SubtitlePositionTop = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v35SubtitlePositionTop
+    BiliClient.prefs.v35SubtitlePositionTop = enabled
+    AppToast.show(this, "字幕顶部显示：${if (enabled) "开" else "关"}")
 }
 
 
 // 35.7: 暗角效果强度
 internal fun PlayerActivity.showv35VideoVignetteEffectDialog() {
-    val current = BiliClient.prefs.v35VideoVignetteEffect
-    AppPopup.Builder(this)
-        .title("暗角效果强度")
-        .option("0") { BiliClient.prefs.v35VideoVignetteEffect = 0 }
-        .option("1") { BiliClient.prefs.v35VideoVignetteEffect = 1 }
-        .option("2") { BiliClient.prefs.v35VideoVignetteEffect = 2 }
-        .option("3") { BiliClient.prefs.v35VideoVignetteEffect = 3 }
-        .option("5") { BiliClient.prefs.v35VideoVignetteEffect = 5 }
-        .option("10") { BiliClient.prefs.v35VideoVignetteEffect = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v35VideoVignetteEffect).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "暗角效果强度",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v35VideoVignetteEffect = value
+        AppToast.show(this, "暗角效果强度：$value")
+    }
 }
 
 
 // 35.8: 仅WiFi预加载
 internal fun PlayerActivity.showv35PlaybackPreloadOnWifiToggle() {
-    val current = BiliClient.prefs.v35PlaybackPreloadOnWifi
-    AppPopup.Builder(this)
-        .title("仅WiFi预加载")
-        .option(switchText(current)) { BiliClient.prefs.v35PlaybackPreloadOnWifi = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v35PlaybackPreloadOnWifi
+    BiliClient.prefs.v35PlaybackPreloadOnWifi = enabled
+    AppToast.show(this, "仅WiFi预加载：${if (enabled) "开" else "关"}")
 }
 
 
 // 35.9: 弹幕渐变色
 internal fun PlayerActivity.showv35DanmakuGradientColorToggle() {
-    val current = BiliClient.prefs.v35DanmakuGradientColor
-    AppPopup.Builder(this)
-        .title("弹幕渐变色")
-        .option(switchText(current)) { BiliClient.prefs.v35DanmakuGradientColor = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v35DanmakuGradientColor
+    BiliClient.prefs.v35DanmakuGradientColor = enabled
+    AppToast.show(this, "弹幕渐变色：${if (enabled) "开" else "关"}")
 }
 
 
 // 35.10: 音频响度标准化
 internal fun PlayerActivity.showv35AudioLoudnessNormalizeToggle() {
-    val current = BiliClient.prefs.v35AudioLoudnessNormalize
-    AppPopup.Builder(this)
-        .title("音频响度标准化")
-        .option(switchText(current)) { BiliClient.prefs.v35AudioLoudnessNormalize = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v35AudioLoudnessNormalize
+    BiliClient.prefs.v35AudioLoudnessNormalize = enabled
+    AppToast.show(this, "音频响度标准化：${if (enabled) "开" else "关"}")
 }
 
 
 // 35.11: 小窗播放
 internal fun PlayerActivity.showv35PlayerMiniWindowToggle() {
-    val current = BiliClient.prefs.v35PlayerMiniWindow
-    AppPopup.Builder(this)
-        .title("小窗播放")
-        .option(switchText(current)) { BiliClient.prefs.v35PlayerMiniWindow = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v35PlayerMiniWindow
+    BiliClient.prefs.v35PlayerMiniWindow = enabled
+    AppToast.show(this, "小窗播放：${if (enabled) "开" else "关"}")
 }
 
 
 // 35.12: 视频降噪强度
 internal fun PlayerActivity.showv35VideoNoiseReductionDialog() {
-    val current = BiliClient.prefs.v35VideoNoiseReduction
-    AppPopup.Builder(this)
-        .title("视频降噪强度")
-        .option("0") { BiliClient.prefs.v35VideoNoiseReduction = 0 }
-        .option("1") { BiliClient.prefs.v35VideoNoiseReduction = 1 }
-        .option("2") { BiliClient.prefs.v35VideoNoiseReduction = 2 }
-        .option("3") { BiliClient.prefs.v35VideoNoiseReduction = 3 }
-        .option("5") { BiliClient.prefs.v35VideoNoiseReduction = 5 }
-        .option("10") { BiliClient.prefs.v35VideoNoiseReduction = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v35VideoNoiseReduction).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "视频降噪强度",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v35VideoNoiseReduction = value
+        AppToast.show(this, "视频降噪强度：$value")
+    }
 }
 
 
 // 35.13: 弹幕动画速度
 internal fun PlayerActivity.showv35DanmakuAnimationSpeedDialog() {
-    val current = BiliClient.prefs.v35DanmakuAnimationSpeed
-    AppPopup.Builder(this)
-        .title("弹幕动画速度")
-        .option("0") { BiliClient.prefs.v35DanmakuAnimationSpeed = 0 }
-        .option("1") { BiliClient.prefs.v35DanmakuAnimationSpeed = 1 }
-        .option("2") { BiliClient.prefs.v35DanmakuAnimationSpeed = 2 }
-        .option("3") { BiliClient.prefs.v35DanmakuAnimationSpeed = 3 }
-        .option("5") { BiliClient.prefs.v35DanmakuAnimationSpeed = 5 }
-        .option("10") { BiliClient.prefs.v35DanmakuAnimationSpeed = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v35DanmakuAnimationSpeed).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "弹幕动画速度",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v35DanmakuAnimationSpeed = value
+        AppToast.show(this, "弹幕动画速度：$value")
+    }
 }
 
 
 // 35.14: 字幕行间距
 internal fun PlayerActivity.showv35SubtitleLineSpacingDialog() {
-    val current = BiliClient.prefs.v35SubtitleLineSpacing
-    AppPopup.Builder(this)
-        .title("字幕行间距")
-        .option("0") { BiliClient.prefs.v35SubtitleLineSpacing = 0 }
-        .option("1") { BiliClient.prefs.v35SubtitleLineSpacing = 1 }
-        .option("2") { BiliClient.prefs.v35SubtitleLineSpacing = 2 }
-        .option("3") { BiliClient.prefs.v35SubtitleLineSpacing = 3 }
-        .option("5") { BiliClient.prefs.v35SubtitleLineSpacing = 5 }
-        .option("10") { BiliClient.prefs.v35SubtitleLineSpacing = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v35SubtitleLineSpacing).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "字幕行间距",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v35SubtitleLineSpacing = value
+        AppToast.show(this, "字幕行间距：$value")
+    }
 }
 
 
 // 35.15: 智能随机播放
 internal fun PlayerActivity.showv35PlaylistSmartShuffleToggle() {
-    val current = BiliClient.prefs.v35PlaylistSmartShuffle
-    AppPopup.Builder(this)
-        .title("智能随机播放")
-        .option(switchText(current)) { BiliClient.prefs.v35PlaylistSmartShuffle = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v35PlaylistSmartShuffle
+    BiliClient.prefs.v35PlaylistSmartShuffle = enabled
+    AppToast.show(this, "智能随机播放：${if (enabled) "开" else "关"}")
 }
 
 
 // 36.1: 画面适配模式
 internal fun PlayerActivity.showv36VideoAspectFitModeDialog() {
-    val current = BiliClient.prefs.v36VideoAspectFitMode
-    AppPopup.Builder(this)
-        .title("画面适配模式")
-        .option("0") { BiliClient.prefs.v36VideoAspectFitMode = 0 }
-        .option("1") { BiliClient.prefs.v36VideoAspectFitMode = 1 }
-        .option("2") { BiliClient.prefs.v36VideoAspectFitMode = 2 }
-        .option("3") { BiliClient.prefs.v36VideoAspectFitMode = 3 }
-        .option("5") { BiliClient.prefs.v36VideoAspectFitMode = 5 }
-        .option("10") { BiliClient.prefs.v36VideoAspectFitMode = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v36VideoAspectFitMode).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "画面适配模式",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v36VideoAspectFitMode = value
+        AppToast.show(this, "画面适配模式：$value")
+    }
 }
 
 
 // 36.2: 弹幕类型透明度
 internal fun PlayerActivity.showv36DanmakuOpacityPerTypeDialog() {
-    val current = BiliClient.prefs.v36DanmakuOpacityPerType
-    AppPopup.Builder(this)
-        .title("弹幕类型透明度")
-        .option("0") { BiliClient.prefs.v36DanmakuOpacityPerType = 0 }
-        .option("1") { BiliClient.prefs.v36DanmakuOpacityPerType = 1 }
-        .option("2") { BiliClient.prefs.v36DanmakuOpacityPerType = 2 }
-        .option("3") { BiliClient.prefs.v36DanmakuOpacityPerType = 3 }
-        .option("5") { BiliClient.prefs.v36DanmakuOpacityPerType = 5 }
-        .option("10") { BiliClient.prefs.v36DanmakuOpacityPerType = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v36DanmakuOpacityPerType).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "弹幕类型透明度",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v36DanmakuOpacityPerType = value
+        AppToast.show(this, "弹幕类型透明度：$value")
+    }
 }
 
 
 // 36.3: 人声隔离
 internal fun PlayerActivity.showv36AudioVoiceIsolateToggle() {
-    val current = BiliClient.prefs.v36AudioVoiceIsolate
-    AppPopup.Builder(this)
-        .title("人声隔离")
-        .option(switchText(current)) { BiliClient.prefs.v36AudioVoiceIsolate = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v36AudioVoiceIsolate
+    BiliClient.prefs.v36AudioVoiceIsolate = enabled
+    AppToast.show(this, "人声隔离：${if (enabled) "开" else "关"}")
 }
 
 
 // 36.4: 跳过片尾秒数
 internal fun PlayerActivity.showv36PlayerSkipOutroSecDialog() {
-    val current = BiliClient.prefs.v36PlayerSkipOutroSec
-    AppPopup.Builder(this)
-        .title("跳过片尾秒数")
-        .option("0") { BiliClient.prefs.v36PlayerSkipOutroSec = 0 }
-        .option("1") { BiliClient.prefs.v36PlayerSkipOutroSec = 1 }
-        .option("2") { BiliClient.prefs.v36PlayerSkipOutroSec = 2 }
-        .option("3") { BiliClient.prefs.v36PlayerSkipOutroSec = 3 }
-        .option("5") { BiliClient.prefs.v36PlayerSkipOutroSec = 5 }
-        .option("10") { BiliClient.prefs.v36PlayerSkipOutroSec = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v36PlayerSkipOutroSec).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "跳过片尾秒数",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v36PlayerSkipOutroSec = value
+        AppToast.show(this, "跳过片尾秒数：$value")
+    }
 }
 
 
 // 36.5: 弹幕自动缩放
 internal fun PlayerActivity.showv36DanmakuAutoScaleToggle() {
-    val current = BiliClient.prefs.v36DanmakuAutoScale
-    AppPopup.Builder(this)
-        .title("弹幕自动缩放")
-        .option(switchText(current)) { BiliClient.prefs.v36DanmakuAutoScale = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v36DanmakuAutoScale
+    BiliClient.prefs.v36DanmakuAutoScale = enabled
+    AppToast.show(this, "弹幕自动缩放：${if (enabled) "开" else "关"}")
 }
 
 
 // 36.6: 字幕边缘模糊
 internal fun PlayerActivity.showv36SubtitleEdgeBlurDialog() {
-    val current = BiliClient.prefs.v36SubtitleEdgeBlur
-    AppPopup.Builder(this)
-        .title("字幕边缘模糊")
-        .option("0") { BiliClient.prefs.v36SubtitleEdgeBlur = 0 }
-        .option("1") { BiliClient.prefs.v36SubtitleEdgeBlur = 1 }
-        .option("2") { BiliClient.prefs.v36SubtitleEdgeBlur = 2 }
-        .option("3") { BiliClient.prefs.v36SubtitleEdgeBlur = 3 }
-        .option("5") { BiliClient.prefs.v36SubtitleEdgeBlur = 5 }
-        .option("10") { BiliClient.prefs.v36SubtitleEdgeBlur = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v36SubtitleEdgeBlur).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "字幕边缘模糊",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v36SubtitleEdgeBlur = value
+        AppToast.show(this, "字幕边缘模糊：$value")
+    }
 }
 
 
 // 36.7: 色彩LUT预设
 internal fun PlayerActivity.showv36VideoColorLutPresetDialog() {
-    val current = BiliClient.prefs.v36VideoColorLutPreset
-    AppPopup.Builder(this)
-        .title("色彩LUT预设")
-        .option("0") { BiliClient.prefs.v36VideoColorLutPreset = 0 }
-        .option("1") { BiliClient.prefs.v36VideoColorLutPreset = 1 }
-        .option("2") { BiliClient.prefs.v36VideoColorLutPreset = 2 }
-        .option("3") { BiliClient.prefs.v36VideoColorLutPreset = 3 }
-        .option("5") { BiliClient.prefs.v36VideoColorLutPreset = 5 }
-        .option("10") { BiliClient.prefs.v36VideoColorLutPreset = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v36VideoColorLutPreset).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "色彩LUT预设",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v36VideoColorLutPreset = value
+        AppToast.show(this, "色彩LUT预设：$value")
+    }
 }
 
 
 // 36.8: 变速音调修正
 internal fun PlayerActivity.showv36PlaybackSpeedPitchCorrectToggle() {
-    val current = BiliClient.prefs.v36PlaybackSpeedPitchCorrect
-    AppPopup.Builder(this)
-        .title("变速音调修正")
-        .option(switchText(current)) { BiliClient.prefs.v36PlaybackSpeedPitchCorrect = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v36PlaybackSpeedPitchCorrect
+    BiliClient.prefs.v36PlaybackSpeedPitchCorrect = enabled
+    AppToast.show(this, "变速音调修正：${if (enabled) "开" else "关"}")
 }
 
 
 // 36.9: 弹幕长度上限
 internal fun PlayerActivity.showv36DanmakuBlockLengthDialog() {
-    val current = BiliClient.prefs.v36DanmakuBlockLength
-    AppPopup.Builder(this)
-        .title("弹幕长度上限")
-        .option("0") { BiliClient.prefs.v36DanmakuBlockLength = 0 }
-        .option("1") { BiliClient.prefs.v36DanmakuBlockLength = 1 }
-        .option("2") { BiliClient.prefs.v36DanmakuBlockLength = 2 }
-        .option("3") { BiliClient.prefs.v36DanmakuBlockLength = 3 }
-        .option("5") { BiliClient.prefs.v36DanmakuBlockLength = 5 }
-        .option("10") { BiliClient.prefs.v36DanmakuBlockLength = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v36DanmakuBlockLength).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "弹幕长度上限",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v36DanmakuBlockLength = value
+        AppToast.show(this, "弹幕长度上限：$value")
+    }
 }
 
 
 // 36.10: 音频延迟(ms)
 internal fun PlayerActivity.showv36AudioDelayMsDialog() {
-    val current = BiliClient.prefs.v36AudioDelayMs
-    AppPopup.Builder(this)
-        .title("音频延迟(ms)")
-        .option("0") { BiliClient.prefs.v36AudioDelayMs = 0 }
-        .option("1") { BiliClient.prefs.v36AudioDelayMs = 1 }
-        .option("2") { BiliClient.prefs.v36AudioDelayMs = 2 }
-        .option("3") { BiliClient.prefs.v36AudioDelayMs = 3 }
-        .option("5") { BiliClient.prefs.v36AudioDelayMs = 5 }
-        .option("10") { BiliClient.prefs.v36AudioDelayMs = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v36AudioDelayMs).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "音频延迟(ms)",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v36AudioDelayMs = value
+        AppToast.show(this, "音频延迟(ms)：$value")
+    }
 }
 
 
 // 36.11: 滑动亮度曲线
 internal fun PlayerActivity.showv36PlayerSwipeBrightnessCurveDialog() {
-    val current = BiliClient.prefs.v36PlayerSwipeBrightnessCurve
-    AppPopup.Builder(this)
-        .title("滑动亮度曲线")
-        .option("0") { BiliClient.prefs.v36PlayerSwipeBrightnessCurve = 0 }
-        .option("1") { BiliClient.prefs.v36PlayerSwipeBrightnessCurve = 1 }
-        .option("2") { BiliClient.prefs.v36PlayerSwipeBrightnessCurve = 2 }
-        .option("3") { BiliClient.prefs.v36PlayerSwipeBrightnessCurve = 3 }
-        .option("5") { BiliClient.prefs.v36PlayerSwipeBrightnessCurve = 5 }
-        .option("10") { BiliClient.prefs.v36PlayerSwipeBrightnessCurve = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v36PlayerSwipeBrightnessCurve).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "滑动亮度曲线",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v36PlayerSwipeBrightnessCurve = value
+        AppToast.show(this, "滑动亮度曲线：$value")
+    }
 }
 
 
 // 36.12: 边缘锐化模式
 internal fun PlayerActivity.showv36VideoSharpenEdgeModeDialog() {
-    val current = BiliClient.prefs.v36VideoSharpenEdgeMode
-    AppPopup.Builder(this)
-        .title("边缘锐化模式")
-        .option("0") { BiliClient.prefs.v36VideoSharpenEdgeMode = 0 }
-        .option("1") { BiliClient.prefs.v36VideoSharpenEdgeMode = 1 }
-        .option("2") { BiliClient.prefs.v36VideoSharpenEdgeMode = 2 }
-        .option("3") { BiliClient.prefs.v36VideoSharpenEdgeMode = 3 }
-        .option("5") { BiliClient.prefs.v36VideoSharpenEdgeMode = 5 }
-        .option("10") { BiliClient.prefs.v36VideoSharpenEdgeMode = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v36VideoSharpenEdgeMode).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "边缘锐化模式",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v36VideoSharpenEdgeMode = value
+        AppToast.show(this, "边缘锐化模式：$value")
+    }
 }
 
 
 // 36.13: 弹幕粉丝徽章
 internal fun PlayerActivity.showv36DanmakuFanBadgeToggle() {
-    val current = BiliClient.prefs.v36DanmakuFanBadge
-    AppPopup.Builder(this)
-        .title("弹幕粉丝徽章")
-        .option(switchText(current)) { BiliClient.prefs.v36DanmakuFanBadge = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v36DanmakuFanBadge
+    BiliClient.prefs.v36DanmakuFanBadge = enabled
+    AppToast.show(this, "弹幕粉丝徽章：${if (enabled) "开" else "关"}")
 }
 
 
 // 36.14: 字幕字重
 internal fun PlayerActivity.showv36SubtitleFontWeightCustomDialog() {
-    val current = BiliClient.prefs.v36SubtitleFontWeightCustom
-    AppPopup.Builder(this)
-        .title("字幕字重")
-        .option("0") { BiliClient.prefs.v36SubtitleFontWeightCustom = 0 }
-        .option("1") { BiliClient.prefs.v36SubtitleFontWeightCustom = 1 }
-        .option("2") { BiliClient.prefs.v36SubtitleFontWeightCustom = 2 }
-        .option("3") { BiliClient.prefs.v36SubtitleFontWeightCustom = 3 }
-        .option("5") { BiliClient.prefs.v36SubtitleFontWeightCustom = 5 }
-        .option("10") { BiliClient.prefs.v36SubtitleFontWeightCustom = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v36SubtitleFontWeightCustom).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "字幕字重",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v36SubtitleFontWeightCustom = value
+        AppToast.show(this, "字幕字重：$value")
+    }
 }
 
 
 // 36.15: 自动播放下一集
 internal fun PlayerActivity.showv36PlaylistAutoplayNextEpisodeToggle() {
-    val current = BiliClient.prefs.v36PlaylistAutoplayNextEpisode
-    AppPopup.Builder(this)
-        .title("自动播放下一集")
-        .option(switchText(current)) { BiliClient.prefs.v36PlaylistAutoplayNextEpisode = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v36PlaylistAutoplayNextEpisode
+    BiliClient.prefs.v36PlaylistAutoplayNextEpisode = enabled
+    AppToast.show(this, "自动播放下一集：${if (enabled) "开" else "关"}")
 }
 
 
 // 37.1: 黑边自动检测
 internal fun PlayerActivity.showv37VideoBlackBarDetectToggle() {
-    val current = BiliClient.prefs.v37VideoBlackBarDetect
-    AppPopup.Builder(this)
-        .title("黑边自动检测")
-        .option(switchText(current)) { BiliClient.prefs.v37VideoBlackBarDetect = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v37VideoBlackBarDetect
+    BiliClient.prefs.v37VideoBlackBarDetect = enabled
+    AppToast.show(this, "黑边自动检测：${if (enabled) "开" else "关"}")
 }
 
 
 // 37.2: 弹幕分组合并
 internal fun PlayerActivity.showv37DanmakuGroupMergeToggle() {
-    val current = BiliClient.prefs.v37DanmakuGroupMerge
-    AppPopup.Builder(this)
-        .title("弹幕分组合并")
-        .option(switchText(current)) { BiliClient.prefs.v37DanmakuGroupMerge = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v37DanmakuGroupMerge
+    BiliClient.prefs.v37DanmakuGroupMerge = enabled
+    AppToast.show(this, "弹幕分组合并：${if (enabled) "开" else "关"}")
 }
 
 
 // 37.3: 立体声宽度
 internal fun PlayerActivity.showv37AudioStereoWidthDialog() {
-    val current = BiliClient.prefs.v37AudioStereoWidth
-    AppPopup.Builder(this)
-        .title("立体声宽度")
-        .option("0") { BiliClient.prefs.v37AudioStereoWidth = 0 }
-        .option("1") { BiliClient.prefs.v37AudioStereoWidth = 1 }
-        .option("2") { BiliClient.prefs.v37AudioStereoWidth = 2 }
-        .option("3") { BiliClient.prefs.v37AudioStereoWidth = 3 }
-        .option("5") { BiliClient.prefs.v37AudioStereoWidth = 5 }
-        .option("10") { BiliClient.prefs.v37AudioStereoWidth = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v37AudioStereoWidth).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "立体声宽度",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v37AudioStereoWidth = value
+        AppToast.show(this, "立体声宽度：$value")
+    }
 }
 
 
 // 37.4: 恢复播放阈值(秒)
 internal fun PlayerActivity.showv37PlayerResumeThresholdDialog() {
-    val current = BiliClient.prefs.v37PlayerResumeThreshold
-    AppPopup.Builder(this)
-        .title("恢复播放阈值(秒)")
-        .option("0") { BiliClient.prefs.v37PlayerResumeThreshold = 0 }
-        .option("1") { BiliClient.prefs.v37PlayerResumeThreshold = 1 }
-        .option("2") { BiliClient.prefs.v37PlayerResumeThreshold = 2 }
-        .option("3") { BiliClient.prefs.v37PlayerResumeThreshold = 3 }
-        .option("5") { BiliClient.prefs.v37PlayerResumeThreshold = 5 }
-        .option("10") { BiliClient.prefs.v37PlayerResumeThreshold = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v37PlayerResumeThreshold).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "恢复播放阈值(秒)",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v37PlayerResumeThreshold = value
+        AppToast.show(this, "恢复播放阈值(秒)：$value")
+    }
 }
 
 
 // 37.5: 弹幕注音显示
 internal fun PlayerActivity.showv37DanmakuFuriganaShowToggle() {
-    val current = BiliClient.prefs.v37DanmakuFuriganaShow
-    AppPopup.Builder(this)
-        .title("弹幕注音显示")
-        .option(switchText(current)) { BiliClient.prefs.v37DanmakuFuriganaShow = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v37DanmakuFuriganaShow
+    BiliClient.prefs.v37DanmakuFuriganaShow = enabled
+    AppToast.show(this, "弹幕注音显示：${if (enabled) "开" else "关"}")
 }
 
 
 // 37.6: 字幕外框颜色
 internal fun PlayerActivity.showv37SubtitleOutlineColorToggle() {
-    val current = BiliClient.prefs.v37SubtitleOutlineColor
-    AppPopup.Builder(this)
-        .title("字幕外框颜色")
-        .option(switchText(current)) { BiliClient.prefs.v37SubtitleOutlineColor = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v37SubtitleOutlineColor
+    BiliClient.prefs.v37SubtitleOutlineColor = enabled
+    AppToast.show(this, "字幕外框颜色：${if (enabled) "开" else "关"}")
 }
 
 
 // 37.7: 帧率计数器
 internal fun PlayerActivity.showv37VideoFpsCounterToggle() {
-    val current = BiliClient.prefs.v37VideoFpsCounter
-    AppPopup.Builder(this)
-        .title("帧率计数器")
-        .option(switchText(current)) { BiliClient.prefs.v37VideoFpsCounter = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v37VideoFpsCounter
+    BiliClient.prefs.v37VideoFpsCounter = enabled
+    AppToast.show(this, "帧率计数器：${if (enabled) "开" else "关"}")
 }
 
 
 // 37.8: 缓冲策略
 internal fun PlayerActivity.showv37PlaybackBufferStrategyDialog() {
-    val current = BiliClient.prefs.v37PlaybackBufferStrategy
-    AppPopup.Builder(this)
-        .title("缓冲策略")
-        .option("0") { BiliClient.prefs.v37PlaybackBufferStrategy = 0 }
-        .option("1") { BiliClient.prefs.v37PlaybackBufferStrategy = 1 }
-        .option("2") { BiliClient.prefs.v37PlaybackBufferStrategy = 2 }
-        .option("3") { BiliClient.prefs.v37PlaybackBufferStrategy = 3 }
-        .option("5") { BiliClient.prefs.v37PlaybackBufferStrategy = 5 }
-        .option("10") { BiliClient.prefs.v37PlaybackBufferStrategy = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v37PlaybackBufferStrategy).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "缓冲策略",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v37PlaybackBufferStrategy = value
+        AppToast.show(this, "缓冲策略：$value")
+    }
 }
 
 
 // 37.9: 弹幕等级屏蔽
 internal fun PlayerActivity.showv37DanmakuLevelShieldDialog() {
-    val current = BiliClient.prefs.v37DanmakuLevelShield
-    AppPopup.Builder(this)
-        .title("弹幕等级屏蔽")
-        .option("0") { BiliClient.prefs.v37DanmakuLevelShield = 0 }
-        .option("1") { BiliClient.prefs.v37DanmakuLevelShield = 1 }
-        .option("2") { BiliClient.prefs.v37DanmakuLevelShield = 2 }
-        .option("3") { BiliClient.prefs.v37DanmakuLevelShield = 3 }
-        .option("5") { BiliClient.prefs.v37DanmakuLevelShield = 5 }
-        .option("10") { BiliClient.prefs.v37DanmakuLevelShield = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v37DanmakuLevelShield).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "弹幕等级屏蔽",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v37DanmakuLevelShield = value
+        AppToast.show(this, "弹幕等级屏蔽：$value")
+    }
 }
 
 
 // 37.10: 混响预设
 internal fun PlayerActivity.showv37AudioReverbPresetDialog() {
-    val current = BiliClient.prefs.v37AudioReverbPreset
-    AppPopup.Builder(this)
-        .title("混响预设")
-        .option("0") { BiliClient.prefs.v37AudioReverbPreset = 0 }
-        .option("1") { BiliClient.prefs.v37AudioReverbPreset = 1 }
-        .option("2") { BiliClient.prefs.v37AudioReverbPreset = 2 }
-        .option("3") { BiliClient.prefs.v37AudioReverbPreset = 3 }
-        .option("5") { BiliClient.prefs.v37AudioReverbPreset = 5 }
-        .option("10") { BiliClient.prefs.v37AudioReverbPreset = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v37AudioReverbPreset).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "混响预设",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v37AudioReverbPreset = value
+        AppToast.show(this, "混响预设：$value")
+    }
 }
 
 
 // 37.11: 长按倍速值
 internal fun PlayerActivity.showv37PlayerLongPressSpeedDialog() {
-    val current = BiliClient.prefs.v37PlayerLongPressSpeed
-    AppPopup.Builder(this)
-        .title("长按倍速值")
-        .option("0") { BiliClient.prefs.v37PlayerLongPressSpeed = 0 }
-        .option("1") { BiliClient.prefs.v37PlayerLongPressSpeed = 1 }
-        .option("2") { BiliClient.prefs.v37PlayerLongPressSpeed = 2 }
-        .option("3") { BiliClient.prefs.v37PlayerLongPressSpeed = 3 }
-        .option("5") { BiliClient.prefs.v37PlayerLongPressSpeed = 5 }
-        .option("10") { BiliClient.prefs.v37PlayerLongPressSpeed = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v37PlayerLongPressSpeed).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "长按倍速值",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v37PlayerLongPressSpeed = value
+        AppToast.show(this, "长按倍速值：$value")
+    }
 }
 
 
 // 37.12: 插帧模式
 internal fun PlayerActivity.showv37VideoInterpolationModeDialog() {
-    val current = BiliClient.prefs.v37VideoInterpolationMode
-    AppPopup.Builder(this)
-        .title("插帧模式")
-        .option("0") { BiliClient.prefs.v37VideoInterpolationMode = 0 }
-        .option("1") { BiliClient.prefs.v37VideoInterpolationMode = 1 }
-        .option("2") { BiliClient.prefs.v37VideoInterpolationMode = 2 }
-        .option("3") { BiliClient.prefs.v37VideoInterpolationMode = 3 }
-        .option("5") { BiliClient.prefs.v37VideoInterpolationMode = 5 }
-        .option("10") { BiliClient.prefs.v37VideoInterpolationMode = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v37VideoInterpolationMode).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "插帧模式",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v37VideoInterpolationMode = value
+        AppToast.show(this, "插帧模式：$value")
+    }
 }
 
 
 // 37.13: 弹幕阴影偏移
 internal fun PlayerActivity.showv37DanmakuShadowOffsetDialog() {
-    val current = BiliClient.prefs.v37DanmakuShadowOffset
-    AppPopup.Builder(this)
-        .title("弹幕阴影偏移")
-        .option("0") { BiliClient.prefs.v37DanmakuShadowOffset = 0 }
-        .option("1") { BiliClient.prefs.v37DanmakuShadowOffset = 1 }
-        .option("2") { BiliClient.prefs.v37DanmakuShadowOffset = 2 }
-        .option("3") { BiliClient.prefs.v37DanmakuShadowOffset = 3 }
-        .option("5") { BiliClient.prefs.v37DanmakuShadowOffset = 5 }
-        .option("10") { BiliClient.prefs.v37DanmakuShadowOffset = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v37DanmakuShadowOffset).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "弹幕阴影偏移",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v37DanmakuShadowOffset = value
+        AppToast.show(this, "弹幕阴影偏移：$value")
+    }
 }
 
 
 // 37.14: 字幕自定义背景色
 internal fun PlayerActivity.showv37SubtitleBgColorCustomToggle() {
-    val current = BiliClient.prefs.v37SubtitleBgColorCustom
-    AppPopup.Builder(this)
-        .title("字幕自定义背景色")
-        .option(switchText(current)) { BiliClient.prefs.v37SubtitleBgColorCustom = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v37SubtitleBgColorCustom
+    BiliClient.prefs.v37SubtitleBgColorCustom = enabled
+    AppToast.show(this, "字幕自定义背景色：${if (enabled) "开" else "关"}")
 }
 
 
 // 37.15: 淡入淡出过渡
 internal fun PlayerActivity.showv37PlaylistFadeTransitionToggle() {
-    val current = BiliClient.prefs.v37PlaylistFadeTransition
-    AppPopup.Builder(this)
-        .title("淡入淡出过渡")
-        .option(switchText(current)) { BiliClient.prefs.v37PlaylistFadeTransition = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v37PlaylistFadeTransition
+    BiliClient.prefs.v37PlaylistFadeTransition = enabled
+    AppToast.show(this, "淡入淡出过渡：${if (enabled) "开" else "关"}")
 }
 
 
 // 38.1: Gamma曲线预设
 internal fun PlayerActivity.showv38VideoGammaCurveDialog() {
-    val current = BiliClient.prefs.v38VideoGammaCurve
-    AppPopup.Builder(this)
-        .title("Gamma曲线预设")
-        .option("0") { BiliClient.prefs.v38VideoGammaCurve = 0 }
-        .option("1") { BiliClient.prefs.v38VideoGammaCurve = 1 }
-        .option("2") { BiliClient.prefs.v38VideoGammaCurve = 2 }
-        .option("3") { BiliClient.prefs.v38VideoGammaCurve = 3 }
-        .option("5") { BiliClient.prefs.v38VideoGammaCurve = 5 }
-        .option("10") { BiliClient.prefs.v38VideoGammaCurve = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v38VideoGammaCurve).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Gamma曲线预设",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v38VideoGammaCurve = value
+        AppToast.show(this, "Gamma曲线预设：$value")
+    }
 }
 
 
 // 38.2: 弹幕智能密度控制
 internal fun PlayerActivity.showv38DanmakuSmartDensityToggle() {
-    val current = BiliClient.prefs.v38DanmakuSmartDensity
-    AppPopup.Builder(this)
-        .title("弹幕智能密度控制")
-        .option(switchText(current)) { BiliClient.prefs.v38DanmakuSmartDensity = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v38DanmakuSmartDensity
+    BiliClient.prefs.v38DanmakuSmartDensity = enabled
+    AppToast.show(this, "弹幕智能密度控制：${if (enabled) "开" else "关"}")
 }
 
 
 // 38.3: 高频搁架增益
 internal fun PlayerActivity.showv38AudioHighShelfGainDialog() {
-    val current = BiliClient.prefs.v38AudioHighShelfGain
-    AppPopup.Builder(this)
-        .title("高频搁架增益")
-        .option("0") { BiliClient.prefs.v38AudioHighShelfGain = 0 }
-        .option("1") { BiliClient.prefs.v38AudioHighShelfGain = 1 }
-        .option("2") { BiliClient.prefs.v38AudioHighShelfGain = 2 }
-        .option("3") { BiliClient.prefs.v38AudioHighShelfGain = 3 }
-        .option("5") { BiliClient.prefs.v38AudioHighShelfGain = 5 }
-        .option("10") { BiliClient.prefs.v38AudioHighShelfGain = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v38AudioHighShelfGain).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "高频搁架增益",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v38AudioHighShelfGain = value
+        AppToast.show(this, "高频搁架增益：$value")
+    }
 }
 
 
 // 38.4: 拖动预览帧
 internal fun PlayerActivity.showv38PlayerSeekPreviewFrameToggle() {
-    val current = BiliClient.prefs.v38PlayerSeekPreviewFrame
-    AppPopup.Builder(this)
-        .title("拖动预览帧")
-        .option(switchText(current)) { BiliClient.prefs.v38PlayerSeekPreviewFrame = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v38PlayerSeekPreviewFrame
+    BiliClient.prefs.v38PlayerSeekPreviewFrame = enabled
+    AppToast.show(this, "拖动预览帧：${if (enabled) "开" else "关"}")
 }
 
 
 // 38.5: 弹幕自动换行
 internal fun PlayerActivity.showv38DanmakuWrapTextToggle() {
-    val current = BiliClient.prefs.v38DanmakuWrapText
-    AppPopup.Builder(this)
-        .title("弹幕自动换行")
-        .option(switchText(current)) { BiliClient.prefs.v38DanmakuWrapText = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v38DanmakuWrapText
+    BiliClient.prefs.v38DanmakuWrapText = enabled
+    AppToast.show(this, "弹幕自动换行：${if (enabled) "开" else "关"}")
 }
 
 
 // 38.6: 字幕字间距
 internal fun PlayerActivity.showv38SubtitleLetterSpacingDialog() {
-    val current = BiliClient.prefs.v38SubtitleLetterSpacing
-    AppPopup.Builder(this)
-        .title("字幕字间距")
-        .option("0") { BiliClient.prefs.v38SubtitleLetterSpacing = 0 }
-        .option("1") { BiliClient.prefs.v38SubtitleLetterSpacing = 1 }
-        .option("2") { BiliClient.prefs.v38SubtitleLetterSpacing = 2 }
-        .option("3") { BiliClient.prefs.v38SubtitleLetterSpacing = 3 }
-        .option("5") { BiliClient.prefs.v38SubtitleLetterSpacing = 5 }
-        .option("10") { BiliClient.prefs.v38SubtitleLetterSpacing = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v38SubtitleLetterSpacing).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "字幕字间距",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v38SubtitleLetterSpacing = value
+        AppToast.show(this, "字幕字间距：$value")
+    }
 }
 
 
 // 38.7: 对比度增强
 internal fun PlayerActivity.showv38VideoContrastEnhanceDialog() {
-    val current = BiliClient.prefs.v38VideoContrastEnhance
-    AppPopup.Builder(this)
-        .title("对比度增强")
-        .option("0") { BiliClient.prefs.v38VideoContrastEnhance = 0 }
-        .option("1") { BiliClient.prefs.v38VideoContrastEnhance = 1 }
-        .option("2") { BiliClient.prefs.v38VideoContrastEnhance = 2 }
-        .option("3") { BiliClient.prefs.v38VideoContrastEnhance = 3 }
-        .option("5") { BiliClient.prefs.v38VideoContrastEnhance = 5 }
-        .option("10") { BiliClient.prefs.v38VideoContrastEnhance = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v38VideoContrastEnhance).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "对比度增强",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v38VideoContrastEnhance = value
+        AppToast.show(this, "对比度增强：$value")
+    }
 }
 
 
 // 38.8: 最小缓冲秒数
 internal fun PlayerActivity.showv38PlaybackBufferMinSecDialog() {
-    val current = BiliClient.prefs.v38PlaybackBufferMinSec
-    AppPopup.Builder(this)
-        .title("最小缓冲秒数")
-        .option("0") { BiliClient.prefs.v38PlaybackBufferMinSec = 0 }
-        .option("1") { BiliClient.prefs.v38PlaybackBufferMinSec = 1 }
-        .option("2") { BiliClient.prefs.v38PlaybackBufferMinSec = 2 }
-        .option("3") { BiliClient.prefs.v38PlaybackBufferMinSec = 3 }
-        .option("5") { BiliClient.prefs.v38PlaybackBufferMinSec = 5 }
-        .option("10") { BiliClient.prefs.v38PlaybackBufferMinSec = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v38PlaybackBufferMinSec).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "最小缓冲秒数",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v38PlaybackBufferMinSec = value
+        AppToast.show(this, "最小缓冲秒数：$value")
+    }
 }
 
 
 // 38.9: 弹幕优先级
 internal fun PlayerActivity.showv38DanmakuPriorityLevelDialog() {
-    val current = BiliClient.prefs.v38DanmakuPriorityLevel
-    AppPopup.Builder(this)
-        .title("弹幕优先级")
-        .option("0") { BiliClient.prefs.v38DanmakuPriorityLevel = 0 }
-        .option("1") { BiliClient.prefs.v38DanmakuPriorityLevel = 1 }
-        .option("2") { BiliClient.prefs.v38DanmakuPriorityLevel = 2 }
-        .option("3") { BiliClient.prefs.v38DanmakuPriorityLevel = 3 }
-        .option("5") { BiliClient.prefs.v38DanmakuPriorityLevel = 5 }
-        .option("10") { BiliClient.prefs.v38DanmakuPriorityLevel = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v38DanmakuPriorityLevel).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "弹幕优先级",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v38DanmakuPriorityLevel = value
+        AppToast.show(this, "弹幕优先级：$value")
+    }
 }
 
 
 // 38.10: 低频搁架增益
 internal fun PlayerActivity.showv38AudioLowShelfGainDialog() {
-    val current = BiliClient.prefs.v38AudioLowShelfGain
-    AppPopup.Builder(this)
-        .title("低频搁架增益")
-        .option("0") { BiliClient.prefs.v38AudioLowShelfGain = 0 }
-        .option("1") { BiliClient.prefs.v38AudioLowShelfGain = 1 }
-        .option("2") { BiliClient.prefs.v38AudioLowShelfGain = 2 }
-        .option("3") { BiliClient.prefs.v38AudioLowShelfGain = 3 }
-        .option("5") { BiliClient.prefs.v38AudioLowShelfGain = 5 }
-        .option("10") { BiliClient.prefs.v38AudioLowShelfGain = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v38AudioLowShelfGain).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "低频搁架增益",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v38AudioLowShelfGain = value
+        AppToast.show(this, "低频搁架增益：$value")
+    }
 }
 
 
 // 38.11: 倍速步进值(0.1x)
 internal fun PlayerActivity.showv38PlayerSpeedStepDialog() {
-    val current = BiliClient.prefs.v38PlayerSpeedStep
-    AppPopup.Builder(this)
-        .title("倍速步进值(0.1x)")
-        .option("0") { BiliClient.prefs.v38PlayerSpeedStep = 0 }
-        .option("1") { BiliClient.prefs.v38PlayerSpeedStep = 1 }
-        .option("2") { BiliClient.prefs.v38PlayerSpeedStep = 2 }
-        .option("3") { BiliClient.prefs.v38PlayerSpeedStep = 3 }
-        .option("5") { BiliClient.prefs.v38PlayerSpeedStep = 5 }
-        .option("10") { BiliClient.prefs.v38PlayerSpeedStep = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v38PlayerSpeedStep).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "倍速步进值(0.1x)",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v38PlayerSpeedStep = value
+        AppToast.show(this, "倍速步进值(0.1x)：$value")
+    }
 }
 
 
 // 38.12: 饱和度增强
 internal fun PlayerActivity.showv38VideoSaturationBoostDialog() {
-    val current = BiliClient.prefs.v38VideoSaturationBoost
-    AppPopup.Builder(this)
-        .title("饱和度增强")
-        .option("0") { BiliClient.prefs.v38VideoSaturationBoost = 0 }
-        .option("1") { BiliClient.prefs.v38VideoSaturationBoost = 1 }
-        .option("2") { BiliClient.prefs.v38VideoSaturationBoost = 2 }
-        .option("3") { BiliClient.prefs.v38VideoSaturationBoost = 3 }
-        .option("5") { BiliClient.prefs.v38VideoSaturationBoost = 5 }
-        .option("10") { BiliClient.prefs.v38VideoSaturationBoost = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v38VideoSaturationBoost).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "饱和度增强",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v38VideoSaturationBoost = value
+        AppToast.show(this, "饱和度增强：$value")
+    }
 }
 
 
 // 38.13: 弹幕悬停暂停
 internal fun PlayerActivity.showv38DanmakuHoverPauseToggle() {
-    val current = BiliClient.prefs.v38DanmakuHoverPause
-    AppPopup.Builder(this)
-        .title("弹幕悬停暂停")
-        .option(switchText(current)) { BiliClient.prefs.v38DanmakuHoverPause = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v38DanmakuHoverPause
+    BiliClient.prefs.v38DanmakuHoverPause = enabled
+    AppToast.show(this, "弹幕悬停暂停：${if (enabled) "开" else "关"}")
 }
 
 
 // 38.14: 字幕罗马音化
 internal fun PlayerActivity.showv38SubtitleRomanizeToggle() {
-    val current = BiliClient.prefs.v38SubtitleRomanize
-    AppPopup.Builder(this)
-        .title("字幕罗马音化")
-        .option(switchText(current)) { BiliClient.prefs.v38SubtitleRomanize = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v38SubtitleRomanize
+    BiliClient.prefs.v38SubtitleRomanize = enabled
+    AppToast.show(this, "字幕罗马音化：${if (enabled) "开" else "关"}")
 }
 
 
 // 38.15: 交叉淡入(ms)
 internal fun PlayerActivity.showv38PlaylistCrossFadeMsDialog() {
-    val current = BiliClient.prefs.v38PlaylistCrossFadeMs
-    AppPopup.Builder(this)
-        .title("交叉淡入(ms)")
-        .option("0") { BiliClient.prefs.v38PlaylistCrossFadeMs = 0 }
-        .option("1") { BiliClient.prefs.v38PlaylistCrossFadeMs = 1 }
-        .option("2") { BiliClient.prefs.v38PlaylistCrossFadeMs = 2 }
-        .option("3") { BiliClient.prefs.v38PlaylistCrossFadeMs = 3 }
-        .option("5") { BiliClient.prefs.v38PlaylistCrossFadeMs = 5 }
-        .option("10") { BiliClient.prefs.v38PlaylistCrossFadeMs = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v38PlaylistCrossFadeMs).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "交叉淡入(ms)",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v38PlaylistCrossFadeMs = value
+        AppToast.show(this, "交叉淡入(ms)：$value")
+    }
 }
 
 
 // 39.1: 时间基准同步模式
 internal fun PlayerActivity.showv39VideoTbnSyncModeDialog() {
-    val current = BiliClient.prefs.v39VideoTbnSyncMode
-    AppPopup.Builder(this)
-        .title("时间基准同步模式")
-        .option("0") { BiliClient.prefs.v39VideoTbnSyncMode = 0 }
-        .option("1") { BiliClient.prefs.v39VideoTbnSyncMode = 1 }
-        .option("2") { BiliClient.prefs.v39VideoTbnSyncMode = 2 }
-        .option("3") { BiliClient.prefs.v39VideoTbnSyncMode = 3 }
-        .option("5") { BiliClient.prefs.v39VideoTbnSyncMode = 5 }
-        .option("10") { BiliClient.prefs.v39VideoTbnSyncMode = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v39VideoTbnSyncMode).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "时间基准同步模式",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v39VideoTbnSyncMode = value
+        AppToast.show(this, "时间基准同步模式：$value")
+    }
 }
 
 
 // 39.2: 弹幕云样式
 internal fun PlayerActivity.showv39DanmakuCloudPatternToggle() {
-    val current = BiliClient.prefs.v39DanmakuCloudPattern
-    AppPopup.Builder(this)
-        .title("弹幕云样式")
-        .option(switchText(current)) { BiliClient.prefs.v39DanmakuCloudPattern = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v39DanmakuCloudPattern
+    BiliClient.prefs.v39DanmakuCloudPattern = enabled
+    AppToast.show(this, "弹幕云样式：${if (enabled) "开" else "关"}")
 }
 
 
 // 39.3: 中频增益
 internal fun PlayerActivity.showv39AudioMidFreqGainDialog() {
-    val current = BiliClient.prefs.v39AudioMidFreqGain
-    AppPopup.Builder(this)
-        .title("中频增益")
-        .option("0") { BiliClient.prefs.v39AudioMidFreqGain = 0 }
-        .option("1") { BiliClient.prefs.v39AudioMidFreqGain = 1 }
-        .option("2") { BiliClient.prefs.v39AudioMidFreqGain = 2 }
-        .option("3") { BiliClient.prefs.v39AudioMidFreqGain = 3 }
-        .option("5") { BiliClient.prefs.v39AudioMidFreqGain = 5 }
-        .option("10") { BiliClient.prefs.v39AudioMidFreqGain = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v39AudioMidFreqGain).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "中频增益",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v39AudioMidFreqGain = value
+        AppToast.show(this, "中频增益：$value")
+    }
 }
 
 
 // 39.4: 自动亮度范围
 internal fun PlayerActivity.showv39PlayerAutoBrightnessRangeDialog() {
-    val current = BiliClient.prefs.v39PlayerAutoBrightnessRange
-    AppPopup.Builder(this)
-        .title("自动亮度范围")
-        .option("0") { BiliClient.prefs.v39PlayerAutoBrightnessRange = 0 }
-        .option("1") { BiliClient.prefs.v39PlayerAutoBrightnessRange = 1 }
-        .option("2") { BiliClient.prefs.v39PlayerAutoBrightnessRange = 2 }
-        .option("3") { BiliClient.prefs.v39PlayerAutoBrightnessRange = 3 }
-        .option("5") { BiliClient.prefs.v39PlayerAutoBrightnessRange = 5 }
-        .option("10") { BiliClient.prefs.v39PlayerAutoBrightnessRange = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v39PlayerAutoBrightnessRange).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "自动亮度范围",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v39PlayerAutoBrightnessRange = value
+        AppToast.show(this, "自动亮度范围：$value")
+    }
 }
 
 
 // 39.5: 弹幕紧凑模式
 internal fun PlayerActivity.showv39DanmakuCompactModeToggle() {
-    val current = BiliClient.prefs.v39DanmakuCompactMode
-    AppPopup.Builder(this)
-        .title("弹幕紧凑模式")
-        .option(switchText(current)) { BiliClient.prefs.v39DanmakuCompactMode = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v39DanmakuCompactMode
+    BiliClient.prefs.v39DanmakuCompactMode = enabled
+    AppToast.show(this, "弹幕紧凑模式：${if (enabled) "开" else "关"}")
 }
 
 
 // 39.6: 字幕动画类型
 internal fun PlayerActivity.showv39SubtitleAnimationTypeDialog() {
-    val current = BiliClient.prefs.v39SubtitleAnimationType
-    AppPopup.Builder(this)
-        .title("字幕动画类型")
-        .option("0") { BiliClient.prefs.v39SubtitleAnimationType = 0 }
-        .option("1") { BiliClient.prefs.v39SubtitleAnimationType = 1 }
-        .option("2") { BiliClient.prefs.v39SubtitleAnimationType = 2 }
-        .option("3") { BiliClient.prefs.v39SubtitleAnimationType = 3 }
-        .option("5") { BiliClient.prefs.v39SubtitleAnimationType = 5 }
-        .option("10") { BiliClient.prefs.v39SubtitleAnimationType = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v39SubtitleAnimationType).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "字幕动画类型",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v39SubtitleAnimationType = value
+        AppToast.show(this, "字幕动画类型：$value")
+    }
 }
 
 
 // 39.7: 视频详细信息栏
 internal fun PlayerActivity.showv39VideoDetailInfoBarToggle() {
-    val current = BiliClient.prefs.v39VideoDetailInfoBar
-    AppPopup.Builder(this)
-        .title("视频详细信息栏")
-        .option(switchText(current)) { BiliClient.prefs.v39VideoDetailInfoBar = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v39VideoDetailInfoBar
+    BiliClient.prefs.v39VideoDetailInfoBar = enabled
+    AppToast.show(this, "视频详细信息栏：${if (enabled) "开" else "关"}")
 }
 
 
 // 39.8: 网络自适应播放
 internal fun PlayerActivity.showv39PlaybackNetworkAdaptToggle() {
-    val current = BiliClient.prefs.v39PlaybackNetworkAdapt
-    AppPopup.Builder(this)
-        .title("网络自适应播放")
-        .option(switchText(current)) { BiliClient.prefs.v39PlaybackNetworkAdapt = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v39PlaybackNetworkAdapt
+    BiliClient.prefs.v39PlaybackNetworkAdapt = enabled
+    AppToast.show(this, "网络自适应播放：${if (enabled) "开" else "关"}")
 }
 
 
 // 39.9: 弹幕拖影效果
 internal fun PlayerActivity.showv39DanmakuGhostTrailToggle() {
-    val current = BiliClient.prefs.v39DanmakuGhostTrail
-    AppPopup.Builder(this)
-        .title("弹幕拖影效果")
-        .option(switchText(current)) { BiliClient.prefs.v39DanmakuGhostTrail = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v39DanmakuGhostTrail
+    BiliClient.prefs.v39DanmakuGhostTrail = enabled
+    AppToast.show(this, "弹幕拖影效果：${if (enabled) "开" else "关"}")
 }
 
 
 // 39.10: 动态范围压缩
 internal fun PlayerActivity.showv39AudioDynamicRangeDialog() {
-    val current = BiliClient.prefs.v39AudioDynamicRange
-    AppPopup.Builder(this)
-        .title("动态范围压缩")
-        .option("0") { BiliClient.prefs.v39AudioDynamicRange = 0 }
-        .option("1") { BiliClient.prefs.v39AudioDynamicRange = 1 }
-        .option("2") { BiliClient.prefs.v39AudioDynamicRange = 2 }
-        .option("3") { BiliClient.prefs.v39AudioDynamicRange = 3 }
-        .option("5") { BiliClient.prefs.v39AudioDynamicRange = 5 }
-        .option("10") { BiliClient.prefs.v39AudioDynamicRange = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v39AudioDynamicRange).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "动态范围压缩",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v39AudioDynamicRange = value
+        AppToast.show(this, "动态范围压缩：$value")
+    }
 }
 
 
 // 39.11: 进度提示Toast
 internal fun PlayerActivity.showv39PlayerProgressToastToggle() {
-    val current = BiliClient.prefs.v39PlayerProgressToast
-    AppPopup.Builder(this)
-        .title("进度提示Toast")
-        .option(switchText(current)) { BiliClient.prefs.v39PlayerProgressToast = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v39PlayerProgressToast
+    BiliClient.prefs.v39PlayerProgressToast = enabled
+    AppToast.show(this, "进度提示Toast：${if (enabled) "开" else "关"}")
 }
 
 
 // 39.12: 画面平滑等级
 internal fun PlayerActivity.showv39VideoSmoothingLevelDialog() {
-    val current = BiliClient.prefs.v39VideoSmoothingLevel
-    AppPopup.Builder(this)
-        .title("画面平滑等级")
-        .option("0") { BiliClient.prefs.v39VideoSmoothingLevel = 0 }
-        .option("1") { BiliClient.prefs.v39VideoSmoothingLevel = 1 }
-        .option("2") { BiliClient.prefs.v39VideoSmoothingLevel = 2 }
-        .option("3") { BiliClient.prefs.v39VideoSmoothingLevel = 3 }
-        .option("5") { BiliClient.prefs.v39VideoSmoothingLevel = 5 }
-        .option("10") { BiliClient.prefs.v39VideoSmoothingLevel = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v39VideoSmoothingLevel).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "画面平滑等级",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v39VideoSmoothingLevel = value
+        AppToast.show(this, "画面平滑等级：$value")
+    }
 }
 
 
 // 39.13: 弹幕等级图标
 internal fun PlayerActivity.showv39DanmakuSenderLevelIconToggle() {
-    val current = BiliClient.prefs.v39DanmakuSenderLevelIcon
-    AppPopup.Builder(this)
-        .title("弹幕等级图标")
-        .option(switchText(current)) { BiliClient.prefs.v39DanmakuSenderLevelIcon = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v39DanmakuSenderLevelIcon
+    BiliClient.prefs.v39DanmakuSenderLevelIcon = enabled
+    AppToast.show(this, "弹幕等级图标：${if (enabled) "开" else "关"}")
 }
 
 
 // 39.14: 字幕自动翻译
 internal fun PlayerActivity.showv39SubtitleAutoTranslateToggle() {
-    val current = BiliClient.prefs.v39SubtitleAutoTranslate
-    AppPopup.Builder(this)
-        .title("字幕自动翻译")
-        .option(switchText(current)) { BiliClient.prefs.v39SubtitleAutoTranslate = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v39SubtitleAutoTranslate
+    BiliClient.prefs.v39SubtitleAutoTranslate = enabled
+    AppToast.show(this, "字幕自动翻译：${if (enabled) "开" else "关"}")
 }
 
 
 // 39.15: 加载相关视频
 internal fun PlayerActivity.showv39PlaylistLoadRelatedToggle() {
-    val current = BiliClient.prefs.v39PlaylistLoadRelated
-    AppPopup.Builder(this)
-        .title("加载相关视频")
-        .option(switchText(current)) { BiliClient.prefs.v39PlaylistLoadRelated = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v39PlaylistLoadRelated
+    BiliClient.prefs.v39PlaylistLoadRelated = enabled
+    AppToast.show(this, "加载相关视频：${if (enabled) "开" else "关"}")
 }
 
 
 // 40.1: 快照间隔(秒)
 internal fun PlayerActivity.showv40VideoSnapshotIntervalDialog() {
-    val current = BiliClient.prefs.v40VideoSnapshotInterval
-    AppPopup.Builder(this)
-        .title("快照间隔(秒)")
-        .option("0") { BiliClient.prefs.v40VideoSnapshotInterval = 0 }
-        .option("1") { BiliClient.prefs.v40VideoSnapshotInterval = 1 }
-        .option("2") { BiliClient.prefs.v40VideoSnapshotInterval = 2 }
-        .option("3") { BiliClient.prefs.v40VideoSnapshotInterval = 3 }
-        .option("5") { BiliClient.prefs.v40VideoSnapshotInterval = 5 }
-        .option("10") { BiliClient.prefs.v40VideoSnapshotInterval = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v40VideoSnapshotInterval).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "快照间隔(秒)",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v40VideoSnapshotInterval = value
+        AppToast.show(this, "快照间隔(秒)：$value")
+    }
 }
 
 
 // 40.2: 弹幕复古模式
 internal fun PlayerActivity.showv40DanmakuVintageModeToggle() {
-    val current = BiliClient.prefs.v40DanmakuVintageMode
-    AppPopup.Builder(this)
-        .title("弹幕复古模式")
-        .option(switchText(current)) { BiliClient.prefs.v40DanmakuVintageMode = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v40DanmakuVintageMode
+    BiliClient.prefs.v40DanmakuVintageMode = enabled
+    AppToast.show(this, "弹幕复古模式：${if (enabled) "开" else "关"}")
 }
 
 
 // 40.3: 人声消除
 internal fun PlayerActivity.showv40AudioVocalRemoveToggle() {
-    val current = BiliClient.prefs.v40AudioVocalRemove
-    AppPopup.Builder(this)
-        .title("人声消除")
-        .option(switchText(current)) { BiliClient.prefs.v40AudioVocalRemove = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v40AudioVocalRemove
+    BiliClient.prefs.v40AudioVocalRemove = enabled
+    AppToast.show(this, "人声消除：${if (enabled) "开" else "关"}")
 }
 
 
 // 40.4: 快捷键自定义映射
 internal fun PlayerActivity.showv40PlayerKeyShortcutMapToggle() {
-    val current = BiliClient.prefs.v40PlayerKeyShortcutMap
-    AppPopup.Builder(this)
-        .title("快捷键自定义映射")
-        .option(switchText(current)) { BiliClient.prefs.v40PlayerKeyShortcutMap = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v40PlayerKeyShortcutMap
+    BiliClient.prefs.v40PlayerKeyShortcutMap = enabled
+    AppToast.show(this, "快捷键自定义映射：${if (enabled) "开" else "关"}")
 }
 
 
 // 40.5: B站表情解析
 internal fun PlayerActivity.showv40DanmakuBiliEmoteParseToggle() {
-    val current = BiliClient.prefs.v40DanmakuBiliEmoteParse
-    AppPopup.Builder(this)
-        .title("B站表情解析")
-        .option(switchText(current)) { BiliClient.prefs.v40DanmakuBiliEmoteParse = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v40DanmakuBiliEmoteParse
+    BiliClient.prefs.v40DanmakuBiliEmoteParse = enabled
+    AppToast.show(this, "B站表情解析：${if (enabled) "开" else "关"}")
 }
 
 
 // 40.6: 字幕衬线字体
 internal fun PlayerActivity.showv40SubtitleFontSerifToggle() {
-    val current = BiliClient.prefs.v40SubtitleFontSerif
-    AppPopup.Builder(this)
-        .title("字幕衬线字体")
-        .option(switchText(current)) { BiliClient.prefs.v40SubtitleFontSerif = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v40SubtitleFontSerif
+    BiliClient.prefs.v40SubtitleFontSerif = enabled
+    AppToast.show(this, "字幕衬线字体：${if (enabled) "开" else "关"}")
 }
 
 
 // 40.7: AI超分辨率
 internal fun PlayerActivity.showv40VideoAiSuperResToggle() {
-    val current = BiliClient.prefs.v40VideoAiSuperRes
-    AppPopup.Builder(this)
-        .title("AI超分辨率")
-        .option(switchText(current)) { BiliClient.prefs.v40VideoAiSuperRes = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v40VideoAiSuperRes
+    BiliClient.prefs.v40VideoAiSuperRes = enabled
+    AppToast.show(this, "AI超分辨率：${if (enabled) "开" else "关"}")
 }
 
 
 // 40.8: 分段缓存大小(MB)
 internal fun PlayerActivity.showv40PlaybackCacheSegmentDialog() {
-    val current = BiliClient.prefs.v40PlaybackCacheSegment
-    AppPopup.Builder(this)
-        .title("分段缓存大小(MB)")
-        .option("0") { BiliClient.prefs.v40PlaybackCacheSegment = 0 }
-        .option("1") { BiliClient.prefs.v40PlaybackCacheSegment = 1 }
-        .option("2") { BiliClient.prefs.v40PlaybackCacheSegment = 2 }
-        .option("3") { BiliClient.prefs.v40PlaybackCacheSegment = 3 }
-        .option("5") { BiliClient.prefs.v40PlaybackCacheSegment = 5 }
-        .option("10") { BiliClient.prefs.v40PlaybackCacheSegment = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v40PlaybackCacheSegment).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "分段缓存大小(MB)",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v40PlaybackCacheSegment = value
+        AppToast.show(this, "分段缓存大小(MB)：$value")
+    }
 }
 
 
 // 40.9: 弹幕淡入时长(ms)
 internal fun PlayerActivity.showv40DanmakuFadeInDurationDialog() {
-    val current = BiliClient.prefs.v40DanmakuFadeInDuration
-    AppPopup.Builder(this)
-        .title("弹幕淡入时长(ms)")
-        .option("0") { BiliClient.prefs.v40DanmakuFadeInDuration = 0 }
-        .option("1") { BiliClient.prefs.v40DanmakuFadeInDuration = 1 }
-        .option("2") { BiliClient.prefs.v40DanmakuFadeInDuration = 2 }
-        .option("3") { BiliClient.prefs.v40DanmakuFadeInDuration = 3 }
-        .option("5") { BiliClient.prefs.v40DanmakuFadeInDuration = 5 }
-        .option("10") { BiliClient.prefs.v40DanmakuFadeInDuration = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v40DanmakuFadeInDuration).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "弹幕淡入时长(ms)",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v40DanmakuFadeInDuration = value
+        AppToast.show(this, "弹幕淡入时长(ms)：$value")
+    }
 }
 
 
 // 40.10: 变速保调
 internal fun PlayerActivity.showv40AudioPreservePitchToggle() {
-    val current = BiliClient.prefs.v40AudioPreservePitch
-    AppPopup.Builder(this)
-        .title("变速保调")
-        .option(switchText(current)) { BiliClient.prefs.v40AudioPreservePitch = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v40AudioPreservePitch
+    BiliClient.prefs.v40AudioPreservePitch = enabled
+    AppToast.show(this, "变速保调：${if (enabled) "开" else "关"}")
 }
 
 
 // 40.11: OSD超时(秒)
 internal fun PlayerActivity.showv40PlayerOsdTimeoutDialog() {
-    val current = BiliClient.prefs.v40PlayerOsdTimeout
-    AppPopup.Builder(this)
-        .title("OSD超时(秒)")
-        .option("0") { BiliClient.prefs.v40PlayerOsdTimeout = 0 }
-        .option("1") { BiliClient.prefs.v40PlayerOsdTimeout = 1 }
-        .option("2") { BiliClient.prefs.v40PlayerOsdTimeout = 2 }
-        .option("3") { BiliClient.prefs.v40PlayerOsdTimeout = 3 }
-        .option("5") { BiliClient.prefs.v40PlayerOsdTimeout = 5 }
-        .option("10") { BiliClient.prefs.v40PlayerOsdTimeout = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v40PlayerOsdTimeout).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "OSD超时(秒)",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v40PlayerOsdTimeout = value
+        AppToast.show(this, "OSD超时(秒)：$value")
+    }
 }
 
 
 // 40.12: 动态色调映射
 internal fun PlayerActivity.showv40VideoDynamicToneMapToggle() {
-    val current = BiliClient.prefs.v40VideoDynamicToneMap
-    AppPopup.Builder(this)
-        .title("动态色调映射")
-        .option(switchText(current)) { BiliClient.prefs.v40VideoDynamicToneMap = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v40VideoDynamicToneMap
+    BiliClient.prefs.v40VideoDynamicToneMap = enabled
+    AppToast.show(this, "动态色调映射：${if (enabled) "开" else "关"}")
 }
 
 
 // 40.13: 屏幕最大弹幕数
 internal fun PlayerActivity.showv40DanmakuMaxPerScreenDialog() {
-    val current = BiliClient.prefs.v40DanmakuMaxPerScreen
-    AppPopup.Builder(this)
-        .title("屏幕最大弹幕数")
-        .option("0") { BiliClient.prefs.v40DanmakuMaxPerScreen = 0 }
-        .option("1") { BiliClient.prefs.v40DanmakuMaxPerScreen = 1 }
-        .option("2") { BiliClient.prefs.v40DanmakuMaxPerScreen = 2 }
-        .option("3") { BiliClient.prefs.v40DanmakuMaxPerScreen = 3 }
-        .option("5") { BiliClient.prefs.v40DanmakuMaxPerScreen = 5 }
-        .option("10") { BiliClient.prefs.v40DanmakuMaxPerScreen = 10 }
-        .show()
+    val options = listOf(0, 1, 2, 3, 5, 10)
+    val currentIndex = options.indexOf(BiliClient.prefs.v40DanmakuMaxPerScreen).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "屏幕最大弹幕数",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { v -> "$v" },
+    ) { value ->
+        BiliClient.prefs.v40DanmakuMaxPerScreen = value
+        AppToast.show(this, "屏幕最大弹幕数：$value")
+    }
 }
 
 
 // 40.14: 字幕描边颜色
 internal fun PlayerActivity.showv40SubtitleStrokeColorToggle() {
-    val current = BiliClient.prefs.v40SubtitleStrokeColor
-    AppPopup.Builder(this)
-        .title("字幕描边颜色")
-        .option(switchText(current)) { BiliClient.prefs.v40SubtitleStrokeColor = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v40SubtitleStrokeColor
+    BiliClient.prefs.v40SubtitleStrokeColor = enabled
+    AppToast.show(this, "字幕描边颜色：${if (enabled) "开" else "关"}")
 }
 
 
 // 40.15: 自动去重
 internal fun PlayerActivity.showv40PlaylistAutoRemoveDuplicatedToggle() {
-    val current = BiliClient.prefs.v40PlaylistAutoRemoveDuplicated
-    AppPopup.Builder(this)
-        .title("自动去重")
-        .option(switchText(current)) { BiliClient.prefs.v40PlaylistAutoRemoveDuplicated = !current }
-        .show()
+    val enabled = !BiliClient.prefs.v40PlaylistAutoRemoveDuplicated
+    BiliClient.prefs.v40PlaylistAutoRemoveDuplicated = enabled
+    AppToast.show(this, "自动去重：${if (enabled) "开" else "关"}")
 }
 
 }
