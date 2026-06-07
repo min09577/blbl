@@ -14664,5 +14664,761 @@ class AppPrefs(context: Context) {
         const val KEY_V70_VIDEOCOLORGLITCH = "v70VideoColorGlitch"
         const val KEY_V70_DANMAKUHISTORYSTATS = "v70DanmakuHistoryStats"
         const val KEY_V70_CASTAUDIOMULTISCREEN = "v70CastAudioMultiScreen"
+
+        // ==================== v71-v80 New Unique Features ====================
+
+        const val KEY_V71VIDEOSTABILIZATIONSTRENGTH = "v71videoStabilizationStrength"
+        const val KEY_V71DANMAKUCOLLISIONAVOIDANCE = "v71danmakuCollisionAvoidance"
+        const val KEY_V71SUBTITLEWORDWRAPMODE = "v71subtitleWordWrapMode"
+        const val KEY_V71GESTURESENSITIVITYPROFILE = "v71gestureSensitivityProfile"
+        const val KEY_V71CASTVIDEOSTABILIZATION = "v71castVideoStabilization"
+        const val KEY_V71PLAYLISTAUTORECOVER = "v71playlistAutoRecover"
+        const val KEY_V71CACHEINTEGRITYCHECK = "v71cacheIntegrityCheck"
+        const val KEY_V71PROGRESSBARCHAPTERMARKS = "v71progressBarChapterMarks"
+        const val KEY_V71VOLUMENORMALIZATIONAUTO = "v71volumeNormalizationAuto"
+        const val KEY_V71HISTORYAUTOSYNC = "v71historyAutoSync"
+        const val KEY_V71PLAYBACKRESUMEFROMBOOKMARK = "v71playbackResumeFromBookmark"
+        const val KEY_V71SCREENSHOTAUTOANNOTATE = "v71screenshotAutoAnnotate"
+        const val KEY_V71VIDEOHDR10PLUS = "v71videoHDR10Plus"
+        const val KEY_V71DANMAKULAYERMANAGEMENT = "v71danmakuLayerManagement"
+        const val KEY_V71SUBTITLELINESPACINGCUSTOM = "v71subtitleLineSpacingCustom"
+        const val KEY_V72VIDEOFRAMERATECONVERT = "v72videoFrameRateConvert"
+        const val KEY_V72DANMAKUPRIORITYSYSTEM = "v72danmakuPrioritySystem"
+        const val KEY_V72SUBTITLECHARSPACINGCUSTOM = "v72subtitleCharSpacingCustom"
+        const val KEY_V72GESTUREDEADZONECUSTOM = "v72gestureDeadZoneCustom"
+        const val KEY_V72CASTAUDIONORMALIZATION = "v72castAudioNormalization"
+        const val KEY_V72PLAYLISTAUTORECOVERMODE = "v72playlistAutoRecoverMode"
+        const val KEY_V72CACHEDEDUPLICATION = "v72cacheDeduplication"
+        const val KEY_V72PROGRESSBARBUFFERINDICATOR = "v72progressBarBufferIndicator"
+        const val KEY_V72VOLUMECOMPRESSIONSTRENGTH = "v72volumeCompressionStrength"
+        const val KEY_V72HISTORYAUTOBACKUP = "v72historyAutoBackup"
+        const val KEY_V72PLAYBACKAUTOBOOKMARK = "v72playbackAutoBookmark"
+        const val KEY_V72SCREENSHOTAUTOSHARE = "v72screenshotAutoShare"
+        const val KEY_V72VIDEODOLBYVISIONPROFILE = "v72videoDolbyVisionProfile"
+        const val KEY_V72DANMAKUANIMATIONEFFECTS = "v72danmakuAnimationEffects"
+        const val KEY_V72SUBTITLEBGGRADIENTCUSTOM = "v72subtitleBgGradientCustom"
+        const val KEY_V73VIDEOCOLORSPACECONVERT = "v73videoColorSpaceConvert"
+        const val KEY_V73DANMAKUSCROLLDIRECTIONCUSTOM = "v73danmakuScrollDirectionCustom"
+        const val KEY_V73SUBTITLEANIMATIONCUSTOM = "v73subtitleAnimationCustom"
+        const val KEY_V73GESTUREFEEDBACKMODE = "v73gestureFeedbackMode"
+        const val KEY_V73CASTVIDEOCOLORSPACE = "v73castVideoColorSpace"
+        const val KEY_V73PLAYLISTAUTORECOVERPRIORITY = "v73playlistAutoRecoverPriority"
+        const val KEY_V73CACHEVERIFICATIONMODE = "v73cacheVerificationMode"
+        const val KEY_V73PROGRESSBARTHUMBSTYLE = "v73progressBarThumbStyle"
+        const val KEY_V73VOLUMEEXPANSIONSTRENGTH = "v73volumeExpansionStrength"
+        const val KEY_V73HISTORYAUTOSYNCMODE = "v73historyAutoSyncMode"
+        const val KEY_V73PLAYBACKAUTOBOOKMARKMODE = "v73playbackAutoBookmarkMode"
+        const val KEY_V73SCREENSHOTAUTOEDIT = "v73screenshotAutoEdit"
+        const val KEY_V73VIDEOALPHACHANNEL = "v73videoAlphaChannel"
+        const val KEY_V73DANMAKUFONTWEIGHTADAPTIVE = "v73danmakuFontWeightAdaptive"
+        const val KEY_V73SUBTITLEOUTLINEEFFECTS = "v73subtitleOutlineEffects"
+        const val KEY_V74VIDEODEPTHOFFIELD = "v74videoDepthOfField"
+        const val KEY_V74DANMAKUBACKGROUNDBLUR = "v74danmakuBackgroundBlur"
+        const val KEY_V74SUBTITLESHADOWEFFECTS = "v74subtitleShadowEffects"
+        const val KEY_V74GESTUREANIMATIONMODE = "v74gestureAnimationMode"
+        const val KEY_V74CASTVIDEOHDR10PLUS = "v74castVideoHDR10Plus"
+        const val KEY_V74PLAYLISTAUTORECOVERTIME = "v74playlistAutoRecoverTime"
+        const val KEY_V74CACHECOMPRESSIONMODE = "v74cacheCompressionMode"
+        const val KEY_V74PROGRESSBARSEEKPREVIEW = "v74progressBarSeekPreview"
+        const val KEY_V74VOLUMEEQUALIZERPRESET = "v74volumeEqualizerPreset"
+        const val KEY_V74HISTORYAUTOBACKUPMODE = "v74historyAutoBackupMode"
+        const val KEY_V74PLAYBACKAUTOPAUSEONFOCUS = "v74playbackAutoPauseOnFocus"
+        const val KEY_V74SCREENSHOTAUTOCROP = "v74screenshotAutoCrop"
+        const val KEY_V74VIDEOBOKEHEFFECT = "v74videoBokehEffect"
+        const val KEY_V74DANMAKUSHADOWEFFECTS = "v74danmakuShadowEffects"
+        const val KEY_V74SUBTITLEGLOWEFFECTS = "v74subtitleGlowEffects"
+        const val KEY_V75VIDEOCHROMAKEY = "v75videoChromaKey"
+        const val KEY_V75DANMAKUGLOWEFFECTS = "v75danmakuGlowEffects"
+        const val KEY_V75SUBTITLEBORDEREFFECTS = "v75subtitleBorderEffects"
+        const val KEY_V75GESTURESOUNDFEEDBACK = "v75gestureSoundFeedback"
+        const val KEY_V75CASTAUDIOSPATIAL = "v75castAudioSpatial"
+        const val KEY_V75PLAYLISTAUTORECOVERSOURCE = "v75playlistAutoRecoverSource"
+        const val KEY_V75CACHEENCRYPTIONMODE = "v75cacheEncryptionMode"
+        const val KEY_V75PROGRESSBARCHAPTERPREVIEW = "v75progressBarChapterPreview"
+        const val KEY_V75VOLUMESPATIALAUDIO = "v75volumeSpatialAudio"
+        const val KEY_V75HISTORYAUTORESTORE = "v75historyAutoRestore"
+        const val KEY_V75PLAYBACKAUTORESUMEONRETURN = "v75playbackAutoResumeOnReturn"
+        const val KEY_V75SCREENSHOTAUTOFILTER = "v75screenshotAutoFilter"
+        const val KEY_V75VIDEOFRAMEBLEND = "v75videoFrameBlend"
+        const val KEY_V75DANMAKUBORDEREFFECTS = "v75danmakuBorderEffects"
+        const val KEY_V75SUBTITLEANIMATIONSPEED = "v75subtitleAnimationSpeed"
+        const val KEY_V76VIDEOCOLORGRADINGPRESET = "v76videoColorGradingPreset"
+        const val KEY_V76DANMAKUFONTSTYLECUSTOM = "v76danmakuFontStyleCustom"
+        const val KEY_V76SUBTITLEFONTSTYLECUSTOM = "v76subtitleFontStyleCustom"
+        const val KEY_V76GESTUREVIBRATIONFEEDBACK = "v76gestureVibrationFeedback"
+        const val KEY_V76CASTVIDEODOLBYATMOS = "v76castVideoDolbyAtmos"
+        const val KEY_V76PLAYLISTAUTORECOVERSTRATEGY = "v76playlistAutoRecoverStrategy"
+        const val KEY_V76CACHELOCATIONMODE = "v76cacheLocationMode"
+        const val KEY_V76PROGRESSBARBUFFERCOLOR = "v76progressBarBufferColor"
+        const val KEY_V76VOLUME3DAUDIO = "v76volume3DAudio"
+        const val KEY_V76HISTORYAUTOSYNCSOURCE = "v76historyAutoSyncSource"
+        const val KEY_V76PLAYBACKAUTOSKIPSILENCE = "v76playbackAutoSkipSilence"
+        const val KEY_V76SCREENSHOTAUTOANNOTATEMODE = "v76screenshotAutoAnnotateMode"
+        const val KEY_V76VIDEOLUTCUSTOM = "v76videoLUTCustom"
+        const val KEY_V76DANMAKUFONTCUSTOMPATH = "v76danmakuFontCustomPath"
+        const val KEY_V76SUBTITLEFONTWEIGHTCUSTOM = "v76subtitleFontWeightCustom"
+        const val KEY_V77VIDEOFRAMEINTERPOLATION = "v77videoFrameInterpolation"
+        const val KEY_V77DANMAKUPRIORITYCUSTOM = "v77danmakuPriorityCustom"
+        const val KEY_V77SUBTITLEKERNINGCUSTOM = "v77subtitleKerningCustom"
+        const val KEY_V77GESTUREVISUALFEEDBACK = "v77gestureVisualFeedback"
+        const val KEY_V77CASTAUDIO3D = "v77castAudio3D"
+        const val KEY_V77PLAYLISTAUTORECOVERLIMIT = "v77playlistAutoRecoverLimit"
+        const val KEY_V77CACHEPRIORITYMODE = "v77cachePriorityMode"
+        const val KEY_V77PROGRESSBARTHUMBCOLOR = "v77progressBarThumbColor"
+        const val KEY_V77VOLUMEAUTOLEVELING = "v77volumeAutoLeveling"
+        const val KEY_V77HISTORYAUTOBACKUPSOURCE = "v77historyAutoBackupSource"
+        const val KEY_V77PLAYBACKAUTOSKIPINTROCUSTOM = "v77playbackAutoSkipIntroCustom"
+        const val KEY_V77SCREENSHOTAUTOSHAREMODE = "v77screenshotAutoShareMode"
+        const val KEY_V77VIDEOMOTIONBLUR = "v77videoMotionBlur"
+        const val KEY_V77DANMAKULAYERCUSTOM = "v77danmakuLayerCustom"
+        const val KEY_V77SUBTITLELETTERSPACINGCUSTOM = "v77subtitleLetterSpacingCustom"
+        const val KEY_V78VIDEOADAPTIVERESOLUTION = "v78videoAdaptiveResolution"
+        const val KEY_V78DANMAKUCOLLISIONMODE = "v78danmakuCollisionMode"
+        const val KEY_V78SUBTITLEANIMATIONDELAY = "v78subtitleAnimationDelay"
+        const val KEY_V78GESTURELONGPRESSDURATION = "v78gestureLongPressDuration"
+        const val KEY_V78CASTVIDEODOLBYVISIONIQ = "v78castVideoDolbyVisionIQ"
+        const val KEY_V78PLAYLISTAUTORECOVERTIMELIMIT = "v78playlistAutoRecoverTimeLimit"
+        const val KEY_V78CACHESIZELIMITCUSTOM = "v78cacheSizeLimitCustom"
+        const val KEY_V78PROGRESSBARTHUMBOPACITY = "v78progressBarThumbOpacity"
+        const val KEY_V78VOLUMEAUTOLEVELINGMODE = "v78volumeAutoLevelingMode"
+        const val KEY_V78HISTORYAUTOSYNCTIME = "v78historyAutoSyncTime"
+        const val KEY_V78PLAYBACKAUTOSKIPOUTROCUSTOM = "v78playbackAutoSkipOutroCustom"
+        const val KEY_V78SCREENSHOTAUTOEDITMODE = "v78screenshotAutoEditMode"
+        const val KEY_V78VIDEOADAPTIVEBITRATE = "v78videoAdaptiveBitrate"
+        const val KEY_V78DANMAKUSCROLLSPEEDADAPTIVE = "v78danmakuScrollSpeedAdaptive"
+        const val KEY_V78SUBTITLEFONTSTRETCHCUSTOM = "v78subtitleFontStretchCustom"
+        const val KEY_V79VIDEOCOLORGRADINGCUSTOM = "v79videoColorGradingCustom"
+        const val KEY_V79DANMAKUFONTSPACINGADAPTIVE = "v79danmakuFontSpacingAdaptive"
+        const val KEY_V79SUBTITLEANIMATIONTYPE = "v79subtitleAnimationType"
+        const val KEY_V79GESTURESWIPEVELOCITY = "v79gestureSwipeVelocity"
+        const val KEY_V79CASTAUDIOSPATIALCUSTOM = "v79castAudioSpatialCustom"
+        const val KEY_V79PLAYLISTAUTORECOVERSOURCEMODE = "v79playlistAutoRecoverSourceMode"
+        const val KEY_V79CACHECLEANUPSTRATEGYCUSTOM = "v79cacheCleanupStrategyCustom"
+        const val KEY_V79PROGRESSBARTHUMBANIMATION = "v79progressBarThumbAnimation"
+        const val KEY_V79VOLUMEAUTOLEVELINGSTRENGTH = "v79volumeAutoLevelingStrength"
+        const val KEY_V79HISTORYAUTOBACKUPTIME = "v79historyAutoBackupTime"
+        const val KEY_V79PLAYBACKAUTOBOOKMARKCUSTOM = "v79playbackAutoBookmarkCustom"
+        const val KEY_V79SCREENSHOTAUTOCROPMODE = "v79screenshotAutoCropMode"
+        const val KEY_V79VIDEOADAPTIVEFRAMERATE = "v79videoAdaptiveFrameRate"
+        const val KEY_V79DANMAKUFONTWEIGHTCUSTOM = "v79danmakuFontWeightCustom"
+        const val KEY_V79SUBTITLEANIMATIONDURATION = "v79subtitleAnimationDuration"
+        const val KEY_V80VIDEOADAPTIVECOLORGRADING = "v80videoAdaptiveColorGrading"
+        const val KEY_V80DANMAKUCOLLISIONSTRENGTH = "v80danmakuCollisionStrength"
+        const val KEY_V80SUBTITLEANIMATIONEASING = "v80subtitleAnimationEasing"
+        const val KEY_V80GESTURESWIPEACCELERATIONCUSTOM = "v80gestureSwipeAccelerationCustom"
+        const val KEY_V80CASTVIDEODOLBYVISIONCUSTOM = "v80castVideoDolbyVisionCustom"
+        const val KEY_V80PLAYLISTAUTORECOVERSTRATEGYCUSTOM = "v80playlistAutoRecoverStrategyCustom"
+        const val KEY_V80CACHEENCRYPTIONCUSTOM = "v80cacheEncryptionCustom"
+        const val KEY_V80PROGRESSBARTHUMBSIZECUSTOM = "v80progressBarThumbSizeCustom"
+        const val KEY_V80VOLUMEAUTOLEVELINGCUSTOM = "v80volumeAutoLevelingCustom"
+        const val KEY_V80HISTORYAUTOSYNCCUSTOM = "v80historyAutoSyncCustom"
+        const val KEY_V80PLAYBACKAUTORESUMECUSTOM = "v80playbackAutoResumeCustom"
+        const val KEY_V80SCREENSHOTAUTOSHARECUSTOM = "v80screenshotAutoShareCustom"
+        const val KEY_V80VIDEOADAPTIVEMOTIONBLUR = "v80videoAdaptiveMotionBlur"
+        const val KEY_V80DANMAKUFONTSPACINGCUSTOM = "v80danmakuFontSpacingCustom"
+        const val KEY_V80SUBTITLEANIMATIONLOOP = "v80subtitleAnimationLoop"    }
+
+// ==================== v71-v80 New Unique Features ====================
+
+    var v71VideoStabilizationStrength: Int
+        get() = prefs.getInt(KEY_V71VIDEOSTABILIZATIONSTRENGTH, 50)
+        set(value) = prefs.edit().putInt(KEY_V71VIDEOSTABILIZATIONSTRENGTH, value).apply()
+
+    var v71DanmakuCollisionAvoidance: Boolean
+        get() = prefs.getBoolean(KEY_V71DANMAKUCOLLISIONAVOIDANCE, False)
+        set(value) = prefs.edit().putBoolean(KEY_V71DANMAKUCOLLISIONAVOIDANCE, value).apply()
+
+    var v71SubtitleWordWrapMode: Int
+        get() = prefs.getInt(KEY_V71SUBTITLEWORDWRAPMODE, 0)
+        set(value) = prefs.edit().putInt(KEY_V71SUBTITLEWORDWRAPMODE, value).apply()
+
+    var v71GestureSensitivityProfile: Int
+        get() = prefs.getInt(KEY_V71GESTURESENSITIVITYPROFILE, 0)
+        set(value) = prefs.edit().putInt(KEY_V71GESTURESENSITIVITYPROFILE, value).apply()
+
+    var v71CastVideoStabilization: Boolean
+        get() = prefs.getBoolean(KEY_V71CASTVIDEOSTABILIZATION, False)
+        set(value) = prefs.edit().putBoolean(KEY_V71CASTVIDEOSTABILIZATION, value).apply()
+
+    var v71PlaylistAutoRecover: Boolean
+        get() = prefs.getBoolean(KEY_V71PLAYLISTAUTORECOVER, True)
+        set(value) = prefs.edit().putBoolean(KEY_V71PLAYLISTAUTORECOVER, value).apply()
+
+    var v71CacheIntegrityCheck: Boolean
+        get() = prefs.getBoolean(KEY_V71CACHEINTEGRITYCHECK, False)
+        set(value) = prefs.edit().putBoolean(KEY_V71CACHEINTEGRITYCHECK, value).apply()
+
+    var v71ProgressBarChapterMarks: Boolean
+        get() = prefs.getBoolean(KEY_V71PROGRESSBARCHAPTERMARKS, True)
+        set(value) = prefs.edit().putBoolean(KEY_V71PROGRESSBARCHAPTERMARKS, value).apply()
+
+    var v71VolumeNormalizationAuto: Boolean
+        get() = prefs.getBoolean(KEY_V71VOLUMENORMALIZATIONAUTO, False)
+        set(value) = prefs.edit().putBoolean(KEY_V71VOLUMENORMALIZATIONAUTO, value).apply()
+
+    var v71HistoryAutoSync: Boolean
+        get() = prefs.getBoolean(KEY_V71HISTORYAUTOSYNC, False)
+        set(value) = prefs.edit().putBoolean(KEY_V71HISTORYAUTOSYNC, value).apply()
+
+    var v71PlaybackResumeFromBookmark: Boolean
+        get() = prefs.getBoolean(KEY_V71PLAYBACKRESUMEFROMBOOKMARK, False)
+        set(value) = prefs.edit().putBoolean(KEY_V71PLAYBACKRESUMEFROMBOOKMARK, value).apply()
+
+    var v71ScreenshotAutoAnnotate: Boolean
+        get() = prefs.getBoolean(KEY_V71SCREENSHOTAUTOANNOTATE, False)
+        set(value) = prefs.edit().putBoolean(KEY_V71SCREENSHOTAUTOANNOTATE, value).apply()
+
+    var v71VideoHDR10Plus: Boolean
+        get() = prefs.getBoolean(KEY_V71VIDEOHDR10PLUS, False)
+        set(value) = prefs.edit().putBoolean(KEY_V71VIDEOHDR10PLUS, value).apply()
+
+    var v71DanmakuLayerManagement: Int
+        get() = prefs.getInt(KEY_V71DANMAKULAYERMANAGEMENT, 0)
+        set(value) = prefs.edit().putInt(KEY_V71DANMAKULAYERMANAGEMENT, value).apply()
+
+    var v71SubtitleLineSpacingCustom: Int
+        get() = prefs.getInt(KEY_V71SUBTITLELINESPACINGCUSTOM, 100)
+        set(value) = prefs.edit().putInt(KEY_V71SUBTITLELINESPACINGCUSTOM, value).apply()
+
+    var v72VideoFrameRateConvert: Int
+        get() = prefs.getInt(KEY_V72VIDEOFRAMERATECONVERT, 0)
+        set(value) = prefs.edit().putInt(KEY_V72VIDEOFRAMERATECONVERT, value).apply()
+
+    var v72DanmakuPrioritySystem: Int
+        get() = prefs.getInt(KEY_V72DANMAKUPRIORITYSYSTEM, 0)
+        set(value) = prefs.edit().putInt(KEY_V72DANMAKUPRIORITYSYSTEM, value).apply()
+
+    var v72SubtitleCharSpacingCustom: Int
+        get() = prefs.getInt(KEY_V72SUBTITLECHARSPACINGCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V72SUBTITLECHARSPACINGCUSTOM, value).apply()
+
+    var v72GestureDeadZoneCustom: Int
+        get() = prefs.getInt(KEY_V72GESTUREDEADZONECUSTOM, 10)
+        set(value) = prefs.edit().putInt(KEY_V72GESTUREDEADZONECUSTOM, value).apply()
+
+    var v72CastAudioNormalization: Boolean
+        get() = prefs.getBoolean(KEY_V72CASTAUDIONORMALIZATION, False)
+        set(value) = prefs.edit().putBoolean(KEY_V72CASTAUDIONORMALIZATION, value).apply()
+
+    var v72PlaylistAutoRecoverMode: Int
+        get() = prefs.getInt(KEY_V72PLAYLISTAUTORECOVERMODE, 0)
+        set(value) = prefs.edit().putInt(KEY_V72PLAYLISTAUTORECOVERMODE, value).apply()
+
+    var v72CacheDeduplication: Boolean
+        get() = prefs.getBoolean(KEY_V72CACHEDEDUPLICATION, False)
+        set(value) = prefs.edit().putBoolean(KEY_V72CACHEDEDUPLICATION, value).apply()
+
+    var v72ProgressBarBufferIndicator: Boolean
+        get() = prefs.getBoolean(KEY_V72PROGRESSBARBUFFERINDICATOR, True)
+        set(value) = prefs.edit().putBoolean(KEY_V72PROGRESSBARBUFFERINDICATOR, value).apply()
+
+    var v72VolumeCompressionStrength: Int
+        get() = prefs.getInt(KEY_V72VOLUMECOMPRESSIONSTRENGTH, 0)
+        set(value) = prefs.edit().putInt(KEY_V72VOLUMECOMPRESSIONSTRENGTH, value).apply()
+
+    var v72HistoryAutoBackup: Boolean
+        get() = prefs.getBoolean(KEY_V72HISTORYAUTOBACKUP, False)
+        set(value) = prefs.edit().putBoolean(KEY_V72HISTORYAUTOBACKUP, value).apply()
+
+    var v72PlaybackAutoBookmark: Boolean
+        get() = prefs.getBoolean(KEY_V72PLAYBACKAUTOBOOKMARK, False)
+        set(value) = prefs.edit().putBoolean(KEY_V72PLAYBACKAUTOBOOKMARK, value).apply()
+
+    var v72ScreenshotAutoShare: Boolean
+        get() = prefs.getBoolean(KEY_V72SCREENSHOTAUTOSHARE, False)
+        set(value) = prefs.edit().putBoolean(KEY_V72SCREENSHOTAUTOSHARE, value).apply()
+
+    var v72VideoDolbyVisionProfile: Int
+        get() = prefs.getInt(KEY_V72VIDEODOLBYVISIONPROFILE, 0)
+        set(value) = prefs.edit().putInt(KEY_V72VIDEODOLBYVISIONPROFILE, value).apply()
+
+    var v72DanmakuAnimationEffects: Int
+        get() = prefs.getInt(KEY_V72DANMAKUANIMATIONEFFECTS, 0)
+        set(value) = prefs.edit().putInt(KEY_V72DANMAKUANIMATIONEFFECTS, value).apply()
+
+    var v72SubtitleBgGradientCustom: Boolean
+        get() = prefs.getBoolean(KEY_V72SUBTITLEBGGRADIENTCUSTOM, False)
+        set(value) = prefs.edit().putBoolean(KEY_V72SUBTITLEBGGRADIENTCUSTOM, value).apply()
+
+    var v73VideoColorSpaceConvert: Int
+        get() = prefs.getInt(KEY_V73VIDEOCOLORSPACECONVERT, 0)
+        set(value) = prefs.edit().putInt(KEY_V73VIDEOCOLORSPACECONVERT, value).apply()
+
+    var v73DanmakuScrollDirectionCustom: Int
+        get() = prefs.getInt(KEY_V73DANMAKUSCROLLDIRECTIONCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V73DANMAKUSCROLLDIRECTIONCUSTOM, value).apply()
+
+    var v73SubtitleAnimationCustom: Int
+        get() = prefs.getInt(KEY_V73SUBTITLEANIMATIONCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V73SUBTITLEANIMATIONCUSTOM, value).apply()
+
+    var v73GestureFeedbackMode: Int
+        get() = prefs.getInt(KEY_V73GESTUREFEEDBACKMODE, 0)
+        set(value) = prefs.edit().putInt(KEY_V73GESTUREFEEDBACKMODE, value).apply()
+
+    var v73CastVideoColorSpace: Int
+        get() = prefs.getInt(KEY_V73CASTVIDEOCOLORSPACE, 0)
+        set(value) = prefs.edit().putInt(KEY_V73CASTVIDEOCOLORSPACE, value).apply()
+
+    var v73PlaylistAutoRecoverPriority: Int
+        get() = prefs.getInt(KEY_V73PLAYLISTAUTORECOVERPRIORITY, 0)
+        set(value) = prefs.edit().putInt(KEY_V73PLAYLISTAUTORECOVERPRIORITY, value).apply()
+
+    var v73CacheVerificationMode: Int
+        get() = prefs.getInt(KEY_V73CACHEVERIFICATIONMODE, 0)
+        set(value) = prefs.edit().putInt(KEY_V73CACHEVERIFICATIONMODE, value).apply()
+
+    var v73ProgressBarThumbStyle: Int
+        get() = prefs.getInt(KEY_V73PROGRESSBARTHUMBSTYLE, 0)
+        set(value) = prefs.edit().putInt(KEY_V73PROGRESSBARTHUMBSTYLE, value).apply()
+
+    var v73VolumeExpansionStrength: Int
+        get() = prefs.getInt(KEY_V73VOLUMEEXPANSIONSTRENGTH, 0)
+        set(value) = prefs.edit().putInt(KEY_V73VOLUMEEXPANSIONSTRENGTH, value).apply()
+
+    var v73HistoryAutoSyncMode: Int
+        get() = prefs.getInt(KEY_V73HISTORYAUTOSYNCMODE, 0)
+        set(value) = prefs.edit().putInt(KEY_V73HISTORYAUTOSYNCMODE, value).apply()
+
+    var v73PlaybackAutoBookmarkMode: Int
+        get() = prefs.getInt(KEY_V73PLAYBACKAUTOBOOKMARKMODE, 0)
+        set(value) = prefs.edit().putInt(KEY_V73PLAYBACKAUTOBOOKMARKMODE, value).apply()
+
+    var v73ScreenshotAutoEdit: Boolean
+        get() = prefs.getBoolean(KEY_V73SCREENSHOTAUTOEDIT, False)
+        set(value) = prefs.edit().putBoolean(KEY_V73SCREENSHOTAUTOEDIT, value).apply()
+
+    var v73VideoAlphaChannel: Boolean
+        get() = prefs.getBoolean(KEY_V73VIDEOALPHACHANNEL, False)
+        set(value) = prefs.edit().putBoolean(KEY_V73VIDEOALPHACHANNEL, value).apply()
+
+    var v73DanmakuFontWeightAdaptive: Boolean
+        get() = prefs.getBoolean(KEY_V73DANMAKUFONTWEIGHTADAPTIVE, False)
+        set(value) = prefs.edit().putBoolean(KEY_V73DANMAKUFONTWEIGHTADAPTIVE, value).apply()
+
+    var v73SubtitleOutlineEffects: Int
+        get() = prefs.getInt(KEY_V73SUBTITLEOUTLINEEFFECTS, 0)
+        set(value) = prefs.edit().putInt(KEY_V73SUBTITLEOUTLINEEFFECTS, value).apply()
+
+    var v74VideoDepthOfField: Boolean
+        get() = prefs.getBoolean(KEY_V74VIDEODEPTHOFFIELD, False)
+        set(value) = prefs.edit().putBoolean(KEY_V74VIDEODEPTHOFFIELD, value).apply()
+
+    var v74DanmakuBackgroundBlur: Int
+        get() = prefs.getInt(KEY_V74DANMAKUBACKGROUNDBLUR, 0)
+        set(value) = prefs.edit().putInt(KEY_V74DANMAKUBACKGROUNDBLUR, value).apply()
+
+    var v74SubtitleShadowEffects: Int
+        get() = prefs.getInt(KEY_V74SUBTITLESHADOWEFFECTS, 0)
+        set(value) = prefs.edit().putInt(KEY_V74SUBTITLESHADOWEFFECTS, value).apply()
+
+    var v74GestureAnimationMode: Int
+        get() = prefs.getInt(KEY_V74GESTUREANIMATIONMODE, 0)
+        set(value) = prefs.edit().putInt(KEY_V74GESTUREANIMATIONMODE, value).apply()
+
+    var v74CastVideoHDR10Plus: Boolean
+        get() = prefs.getBoolean(KEY_V74CASTVIDEOHDR10PLUS, False)
+        set(value) = prefs.edit().putBoolean(KEY_V74CASTVIDEOHDR10PLUS, value).apply()
+
+    var v74PlaylistAutoRecoverTime: Int
+        get() = prefs.getInt(KEY_V74PLAYLISTAUTORECOVERTIME, 0)
+        set(value) = prefs.edit().putInt(KEY_V74PLAYLISTAUTORECOVERTIME, value).apply()
+
+    var v74CacheCompressionMode: Int
+        get() = prefs.getInt(KEY_V74CACHECOMPRESSIONMODE, 0)
+        set(value) = prefs.edit().putInt(KEY_V74CACHECOMPRESSIONMODE, value).apply()
+
+    var v74ProgressBarSeekPreview: Boolean
+        get() = prefs.getBoolean(KEY_V74PROGRESSBARSEEKPREVIEW, True)
+        set(value) = prefs.edit().putBoolean(KEY_V74PROGRESSBARSEEKPREVIEW, value).apply()
+
+    var v74VolumeEqualizerPreset: Int
+        get() = prefs.getInt(KEY_V74VOLUMEEQUALIZERPRESET, 0)
+        set(value) = prefs.edit().putInt(KEY_V74VOLUMEEQUALIZERPRESET, value).apply()
+
+    var v74HistoryAutoBackupMode: Int
+        get() = prefs.getInt(KEY_V74HISTORYAUTOBACKUPMODE, 0)
+        set(value) = prefs.edit().putInt(KEY_V74HISTORYAUTOBACKUPMODE, value).apply()
+
+    var v74PlaybackAutoPauseOnFocus: Boolean
+        get() = prefs.getBoolean(KEY_V74PLAYBACKAUTOPAUSEONFOCUS, False)
+        set(value) = prefs.edit().putBoolean(KEY_V74PLAYBACKAUTOPAUSEONFOCUS, value).apply()
+
+    var v74ScreenshotAutoCrop: Boolean
+        get() = prefs.getBoolean(KEY_V74SCREENSHOTAUTOCROP, False)
+        set(value) = prefs.edit().putBoolean(KEY_V74SCREENSHOTAUTOCROP, value).apply()
+
+    var v74VideoBokehEffect: Boolean
+        get() = prefs.getBoolean(KEY_V74VIDEOBOKEHEFFECT, False)
+        set(value) = prefs.edit().putBoolean(KEY_V74VIDEOBOKEHEFFECT, value).apply()
+
+    var v74DanmakuShadowEffects: Int
+        get() = prefs.getInt(KEY_V74DANMAKUSHADOWEFFECTS, 0)
+        set(value) = prefs.edit().putInt(KEY_V74DANMAKUSHADOWEFFECTS, value).apply()
+
+    var v74SubtitleGlowEffects: Int
+        get() = prefs.getInt(KEY_V74SUBTITLEGLOWEFFECTS, 0)
+        set(value) = prefs.edit().putInt(KEY_V74SUBTITLEGLOWEFFECTS, value).apply()
+
+    var v75VideoChromaKey: Boolean
+        get() = prefs.getBoolean(KEY_V75VIDEOCHROMAKEY, False)
+        set(value) = prefs.edit().putBoolean(KEY_V75VIDEOCHROMAKEY, value).apply()
+
+    var v75DanmakuGlowEffects: Int
+        get() = prefs.getInt(KEY_V75DANMAKUGLOWEFFECTS, 0)
+        set(value) = prefs.edit().putInt(KEY_V75DANMAKUGLOWEFFECTS, value).apply()
+
+    var v75SubtitleBorderEffects: Int
+        get() = prefs.getInt(KEY_V75SUBTITLEBORDEREFFECTS, 0)
+        set(value) = prefs.edit().putInt(KEY_V75SUBTITLEBORDEREFFECTS, value).apply()
+
+    var v75GestureSoundFeedback: Boolean
+        get() = prefs.getBoolean(KEY_V75GESTURESOUNDFEEDBACK, False)
+        set(value) = prefs.edit().putBoolean(KEY_V75GESTURESOUNDFEEDBACK, value).apply()
+
+    var v75CastAudioSpatial: Boolean
+        get() = prefs.getBoolean(KEY_V75CASTAUDIOSPATIAL, False)
+        set(value) = prefs.edit().putBoolean(KEY_V75CASTAUDIOSPATIAL, value).apply()
+
+    var v75PlaylistAutoRecoverSource: Int
+        get() = prefs.getInt(KEY_V75PLAYLISTAUTORECOVERSOURCE, 0)
+        set(value) = prefs.edit().putInt(KEY_V75PLAYLISTAUTORECOVERSOURCE, value).apply()
+
+    var v75CacheEncryptionMode: Int
+        get() = prefs.getInt(KEY_V75CACHEENCRYPTIONMODE, 0)
+        set(value) = prefs.edit().putInt(KEY_V75CACHEENCRYPTIONMODE, value).apply()
+
+    var v75ProgressBarChapterPreview: Boolean
+        get() = prefs.getBoolean(KEY_V75PROGRESSBARCHAPTERPREVIEW, True)
+        set(value) = prefs.edit().putBoolean(KEY_V75PROGRESSBARCHAPTERPREVIEW, value).apply()
+
+    var v75VolumeSpatialAudio: Boolean
+        get() = prefs.getBoolean(KEY_V75VOLUMESPATIALAUDIO, False)
+        set(value) = prefs.edit().putBoolean(KEY_V75VOLUMESPATIALAUDIO, value).apply()
+
+    var v75HistoryAutoRestore: Boolean
+        get() = prefs.getBoolean(KEY_V75HISTORYAUTORESTORE, False)
+        set(value) = prefs.edit().putBoolean(KEY_V75HISTORYAUTORESTORE, value).apply()
+
+    var v75PlaybackAutoResumeOnReturn: Boolean
+        get() = prefs.getBoolean(KEY_V75PLAYBACKAUTORESUMEONRETURN, True)
+        set(value) = prefs.edit().putBoolean(KEY_V75PLAYBACKAUTORESUMEONRETURN, value).apply()
+
+    var v75ScreenshotAutoFilter: Boolean
+        get() = prefs.getBoolean(KEY_V75SCREENSHOTAUTOFILTER, False)
+        set(value) = prefs.edit().putBoolean(KEY_V75SCREENSHOTAUTOFILTER, value).apply()
+
+    var v75VideoFrameBlend: Boolean
+        get() = prefs.getBoolean(KEY_V75VIDEOFRAMEBLEND, False)
+        set(value) = prefs.edit().putBoolean(KEY_V75VIDEOFRAMEBLEND, value).apply()
+
+    var v75DanmakuBorderEffects: Int
+        get() = prefs.getInt(KEY_V75DANMAKUBORDEREFFECTS, 0)
+        set(value) = prefs.edit().putInt(KEY_V75DANMAKUBORDEREFFECTS, value).apply()
+
+    var v75SubtitleAnimationSpeed: Int
+        get() = prefs.getInt(KEY_V75SUBTITLEANIMATIONSPEED, 100)
+        set(value) = prefs.edit().putInt(KEY_V75SUBTITLEANIMATIONSPEED, value).apply()
+
+    var v76VideoColorGradingPreset: Int
+        get() = prefs.getInt(KEY_V76VIDEOCOLORGRADINGPRESET, 0)
+        set(value) = prefs.edit().putInt(KEY_V76VIDEOCOLORGRADINGPRESET, value).apply()
+
+    var v76DanmakuFontStyleCustom: Int
+        get() = prefs.getInt(KEY_V76DANMAKUFONTSTYLECUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V76DANMAKUFONTSTYLECUSTOM, value).apply()
+
+    var v76SubtitleFontStyleCustom: Int
+        get() = prefs.getInt(KEY_V76SUBTITLEFONTSTYLECUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V76SUBTITLEFONTSTYLECUSTOM, value).apply()
+
+    var v76GestureVibrationFeedback: Boolean
+        get() = prefs.getBoolean(KEY_V76GESTUREVIBRATIONFEEDBACK, True)
+        set(value) = prefs.edit().putBoolean(KEY_V76GESTUREVIBRATIONFEEDBACK, value).apply()
+
+    var v76CastVideoDolbyAtmos: Boolean
+        get() = prefs.getBoolean(KEY_V76CASTVIDEODOLBYATMOS, False)
+        set(value) = prefs.edit().putBoolean(KEY_V76CASTVIDEODOLBYATMOS, value).apply()
+
+    var v76PlaylistAutoRecoverStrategy: Int
+        get() = prefs.getInt(KEY_V76PLAYLISTAUTORECOVERSTRATEGY, 0)
+        set(value) = prefs.edit().putInt(KEY_V76PLAYLISTAUTORECOVERSTRATEGY, value).apply()
+
+    var v76CacheLocationMode: Int
+        get() = prefs.getInt(KEY_V76CACHELOCATIONMODE, 0)
+        set(value) = prefs.edit().putInt(KEY_V76CACHELOCATIONMODE, value).apply()
+
+    var v76ProgressBarBufferColor: Int
+        get() = prefs.getInt(KEY_V76PROGRESSBARBUFFERCOLOR, 0)
+        set(value) = prefs.edit().putInt(KEY_V76PROGRESSBARBUFFERCOLOR, value).apply()
+
+    var v76Volume3DAudio: Boolean
+        get() = prefs.getBoolean(KEY_V76VOLUME3DAUDIO, False)
+        set(value) = prefs.edit().putBoolean(KEY_V76VOLUME3DAUDIO, value).apply()
+
+    var v76HistoryAutoSyncSource: Int
+        get() = prefs.getInt(KEY_V76HISTORYAUTOSYNCSOURCE, 0)
+        set(value) = prefs.edit().putInt(KEY_V76HISTORYAUTOSYNCSOURCE, value).apply()
+
+    var v76PlaybackAutoSkipSilence: Boolean
+        get() = prefs.getBoolean(KEY_V76PLAYBACKAUTOSKIPSILENCE, False)
+        set(value) = prefs.edit().putBoolean(KEY_V76PLAYBACKAUTOSKIPSILENCE, value).apply()
+
+    var v76ScreenshotAutoAnnotateMode: Int
+        get() = prefs.getInt(KEY_V76SCREENSHOTAUTOANNOTATEMODE, 0)
+        set(value) = prefs.edit().putInt(KEY_V76SCREENSHOTAUTOANNOTATEMODE, value).apply()
+
+    var v76VideoLUTCustom: Boolean
+        get() = prefs.getBoolean(KEY_V76VIDEOLUTCUSTOM, False)
+        set(value) = prefs.edit().putBoolean(KEY_V76VIDEOLUTCUSTOM, value).apply()
+
+    var v76DanmakuFontCustomPath: Boolean
+        get() = prefs.getBoolean(KEY_V76DANMAKUFONTCUSTOMPATH, False)
+        set(value) = prefs.edit().putBoolean(KEY_V76DANMAKUFONTCUSTOMPATH, value).apply()
+
+    var v76SubtitleFontWeightCustom: Int
+        get() = prefs.getInt(KEY_V76SUBTITLEFONTWEIGHTCUSTOM, 400)
+        set(value) = prefs.edit().putInt(KEY_V76SUBTITLEFONTWEIGHTCUSTOM, value).apply()
+
+    var v77VideoFrameInterpolation: Boolean
+        get() = prefs.getBoolean(KEY_V77VIDEOFRAMEINTERPOLATION, False)
+        set(value) = prefs.edit().putBoolean(KEY_V77VIDEOFRAMEINTERPOLATION, value).apply()
+
+    var v77DanmakuPriorityCustom: Int
+        get() = prefs.getInt(KEY_V77DANMAKUPRIORITYCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V77DANMAKUPRIORITYCUSTOM, value).apply()
+
+    var v77SubtitleKerningCustom: Int
+        get() = prefs.getInt(KEY_V77SUBTITLEKERNINGCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V77SUBTITLEKERNINGCUSTOM, value).apply()
+
+    var v77GestureVisualFeedback: Boolean
+        get() = prefs.getBoolean(KEY_V77GESTUREVISUALFEEDBACK, True)
+        set(value) = prefs.edit().putBoolean(KEY_V77GESTUREVISUALFEEDBACK, value).apply()
+
+    var v77CastAudio3D: Boolean
+        get() = prefs.getBoolean(KEY_V77CASTAUDIO3D, False)
+        set(value) = prefs.edit().putBoolean(KEY_V77CASTAUDIO3D, value).apply()
+
+    var v77PlaylistAutoRecoverLimit: Int
+        get() = prefs.getInt(KEY_V77PLAYLISTAUTORECOVERLIMIT, 10)
+        set(value) = prefs.edit().putInt(KEY_V77PLAYLISTAUTORECOVERLIMIT, value).apply()
+
+    var v77CachePriorityMode: Int
+        get() = prefs.getInt(KEY_V77CACHEPRIORITYMODE, 0)
+        set(value) = prefs.edit().putInt(KEY_V77CACHEPRIORITYMODE, value).apply()
+
+    var v77ProgressBarThumbColor: Int
+        get() = prefs.getInt(KEY_V77PROGRESSBARTHUMBCOLOR, 0)
+        set(value) = prefs.edit().putInt(KEY_V77PROGRESSBARTHUMBCOLOR, value).apply()
+
+    var v77VolumeAutoLeveling: Boolean
+        get() = prefs.getBoolean(KEY_V77VOLUMEAUTOLEVELING, False)
+        set(value) = prefs.edit().putBoolean(KEY_V77VOLUMEAUTOLEVELING, value).apply()
+
+    var v77HistoryAutoBackupSource: Int
+        get() = prefs.getInt(KEY_V77HISTORYAUTOBACKUPSOURCE, 0)
+        set(value) = prefs.edit().putInt(KEY_V77HISTORYAUTOBACKUPSOURCE, value).apply()
+
+    var v77PlaybackAutoSkipIntroCustom: Int
+        get() = prefs.getInt(KEY_V77PLAYBACKAUTOSKIPINTROCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V77PLAYBACKAUTOSKIPINTROCUSTOM, value).apply()
+
+    var v77ScreenshotAutoShareMode: Int
+        get() = prefs.getInt(KEY_V77SCREENSHOTAUTOSHAREMODE, 0)
+        set(value) = prefs.edit().putInt(KEY_V77SCREENSHOTAUTOSHAREMODE, value).apply()
+
+    var v77VideoMotionBlur: Boolean
+        get() = prefs.getBoolean(KEY_V77VIDEOMOTIONBLUR, False)
+        set(value) = prefs.edit().putBoolean(KEY_V77VIDEOMOTIONBLUR, value).apply()
+
+    var v77DanmakuLayerCustom: Int
+        get() = prefs.getInt(KEY_V77DANMAKULAYERCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V77DANMAKULAYERCUSTOM, value).apply()
+
+    var v77SubtitleLetterSpacingCustom: Int
+        get() = prefs.getInt(KEY_V77SUBTITLELETTERSPACINGCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V77SUBTITLELETTERSPACINGCUSTOM, value).apply()
+
+    var v78VideoAdaptiveResolution: Boolean
+        get() = prefs.getBoolean(KEY_V78VIDEOADAPTIVERESOLUTION, False)
+        set(value) = prefs.edit().putBoolean(KEY_V78VIDEOADAPTIVERESOLUTION, value).apply()
+
+    var v78DanmakuCollisionMode: Int
+        get() = prefs.getInt(KEY_V78DANMAKUCOLLISIONMODE, 0)
+        set(value) = prefs.edit().putInt(KEY_V78DANMAKUCOLLISIONMODE, value).apply()
+
+    var v78SubtitleAnimationDelay: Int
+        get() = prefs.getInt(KEY_V78SUBTITLEANIMATIONDELAY, 0)
+        set(value) = prefs.edit().putInt(KEY_V78SUBTITLEANIMATIONDELAY, value).apply()
+
+    var v78GestureLongPressDuration: Int
+        get() = prefs.getInt(KEY_V78GESTURELONGPRESSDURATION, 500)
+        set(value) = prefs.edit().putInt(KEY_V78GESTURELONGPRESSDURATION, value).apply()
+
+    var v78CastVideoDolbyVisionIQ: Boolean
+        get() = prefs.getBoolean(KEY_V78CASTVIDEODOLBYVISIONIQ, False)
+        set(value) = prefs.edit().putBoolean(KEY_V78CASTVIDEODOLBYVISIONIQ, value).apply()
+
+    var v78PlaylistAutoRecoverTimeLimit: Int
+        get() = prefs.getInt(KEY_V78PLAYLISTAUTORECOVERTIMELIMIT, 0)
+        set(value) = prefs.edit().putInt(KEY_V78PLAYLISTAUTORECOVERTIMELIMIT, value).apply()
+
+    var v78CacheSizeLimitCustom: Int
+        get() = prefs.getInt(KEY_V78CACHESIZELIMITCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V78CACHESIZELIMITCUSTOM, value).apply()
+
+    var v78ProgressBarThumbOpacity: Int
+        get() = prefs.getInt(KEY_V78PROGRESSBARTHUMBOPACITY, 100)
+        set(value) = prefs.edit().putInt(KEY_V78PROGRESSBARTHUMBOPACITY, value).apply()
+
+    var v78VolumeAutoLevelingMode: Int
+        get() = prefs.getInt(KEY_V78VOLUMEAUTOLEVELINGMODE, 0)
+        set(value) = prefs.edit().putInt(KEY_V78VOLUMEAUTOLEVELINGMODE, value).apply()
+
+    var v78HistoryAutoSyncTime: Int
+        get() = prefs.getInt(KEY_V78HISTORYAUTOSYNCTIME, 0)
+        set(value) = prefs.edit().putInt(KEY_V78HISTORYAUTOSYNCTIME, value).apply()
+
+    var v78PlaybackAutoSkipOutroCustom: Int
+        get() = prefs.getInt(KEY_V78PLAYBACKAUTOSKIPOUTROCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V78PLAYBACKAUTOSKIPOUTROCUSTOM, value).apply()
+
+    var v78ScreenshotAutoEditMode: Int
+        get() = prefs.getInt(KEY_V78SCREENSHOTAUTOEDITMODE, 0)
+        set(value) = prefs.edit().putInt(KEY_V78SCREENSHOTAUTOEDITMODE, value).apply()
+
+    var v78VideoAdaptiveBitrate: Boolean
+        get() = prefs.getBoolean(KEY_V78VIDEOADAPTIVEBITRATE, False)
+        set(value) = prefs.edit().putBoolean(KEY_V78VIDEOADAPTIVEBITRATE, value).apply()
+
+    var v78DanmakuScrollSpeedAdaptive: Boolean
+        get() = prefs.getBoolean(KEY_V78DANMAKUSCROLLSPEEDADAPTIVE, False)
+        set(value) = prefs.edit().putBoolean(KEY_V78DANMAKUSCROLLSPEEDADAPTIVE, value).apply()
+
+    var v78SubtitleFontStretchCustom: Int
+        get() = prefs.getInt(KEY_V78SUBTITLEFONTSTRETCHCUSTOM, 100)
+        set(value) = prefs.edit().putInt(KEY_V78SUBTITLEFONTSTRETCHCUSTOM, value).apply()
+
+    var v79VideoColorGradingCustom: Boolean
+        get() = prefs.getBoolean(KEY_V79VIDEOCOLORGRADINGCUSTOM, False)
+        set(value) = prefs.edit().putBoolean(KEY_V79VIDEOCOLORGRADINGCUSTOM, value).apply()
+
+    var v79DanmakuFontSpacingAdaptive: Boolean
+        get() = prefs.getBoolean(KEY_V79DANMAKUFONTSPACINGADAPTIVE, False)
+        set(value) = prefs.edit().putBoolean(KEY_V79DANMAKUFONTSPACINGADAPTIVE, value).apply()
+
+    var v79SubtitleAnimationType: Int
+        get() = prefs.getInt(KEY_V79SUBTITLEANIMATIONTYPE, 0)
+        set(value) = prefs.edit().putInt(KEY_V79SUBTITLEANIMATIONTYPE, value).apply()
+
+    var v79GestureSwipeVelocity: Int
+        get() = prefs.getInt(KEY_V79GESTURESWIPEVELOCITY, 50)
+        set(value) = prefs.edit().putInt(KEY_V79GESTURESWIPEVELOCITY, value).apply()
+
+    var v79CastAudioSpatialCustom: Int
+        get() = prefs.getInt(KEY_V79CASTAUDIOSPATIALCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V79CASTAUDIOSPATIALCUSTOM, value).apply()
+
+    var v79PlaylistAutoRecoverSourceMode: Int
+        get() = prefs.getInt(KEY_V79PLAYLISTAUTORECOVERSOURCEMODE, 0)
+        set(value) = prefs.edit().putInt(KEY_V79PLAYLISTAUTORECOVERSOURCEMODE, value).apply()
+
+    var v79CacheCleanupStrategyCustom: Int
+        get() = prefs.getInt(KEY_V79CACHECLEANUPSTRATEGYCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V79CACHECLEANUPSTRATEGYCUSTOM, value).apply()
+
+    var v79ProgressBarThumbAnimation: Boolean
+        get() = prefs.getBoolean(KEY_V79PROGRESSBARTHUMBANIMATION, True)
+        set(value) = prefs.edit().putBoolean(KEY_V79PROGRESSBARTHUMBANIMATION, value).apply()
+
+    var v79VolumeAutoLevelingStrength: Int
+        get() = prefs.getInt(KEY_V79VOLUMEAUTOLEVELINGSTRENGTH, 50)
+        set(value) = prefs.edit().putInt(KEY_V79VOLUMEAUTOLEVELINGSTRENGTH, value).apply()
+
+    var v79HistoryAutoBackupTime: Int
+        get() = prefs.getInt(KEY_V79HISTORYAUTOBACKUPTIME, 0)
+        set(value) = prefs.edit().putInt(KEY_V79HISTORYAUTOBACKUPTIME, value).apply()
+
+    var v79PlaybackAutoBookmarkCustom: Int
+        get() = prefs.getInt(KEY_V79PLAYBACKAUTOBOOKMARKCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V79PLAYBACKAUTOBOOKMARKCUSTOM, value).apply()
+
+    var v79ScreenshotAutoCropMode: Int
+        get() = prefs.getInt(KEY_V79SCREENSHOTAUTOCROPMODE, 0)
+        set(value) = prefs.edit().putInt(KEY_V79SCREENSHOTAUTOCROPMODE, value).apply()
+
+    var v79VideoAdaptiveFrameRate: Boolean
+        get() = prefs.getBoolean(KEY_V79VIDEOADAPTIVEFRAMERATE, False)
+        set(value) = prefs.edit().putBoolean(KEY_V79VIDEOADAPTIVEFRAMERATE, value).apply()
+
+    var v79DanmakuFontWeightCustom: Int
+        get() = prefs.getInt(KEY_V79DANMAKUFONTWEIGHTCUSTOM, 400)
+        set(value) = prefs.edit().putInt(KEY_V79DANMAKUFONTWEIGHTCUSTOM, value).apply()
+
+    var v79SubtitleAnimationDuration: Int
+        get() = prefs.getInt(KEY_V79SUBTITLEANIMATIONDURATION, 300)
+        set(value) = prefs.edit().putInt(KEY_V79SUBTITLEANIMATIONDURATION, value).apply()
+
+    var v80VideoAdaptiveColorGrading: Boolean
+        get() = prefs.getBoolean(KEY_V80VIDEOADAPTIVECOLORGRADING, False)
+        set(value) = prefs.edit().putBoolean(KEY_V80VIDEOADAPTIVECOLORGRADING, value).apply()
+
+    var v80DanmakuCollisionStrength: Int
+        get() = prefs.getInt(KEY_V80DANMAKUCOLLISIONSTRENGTH, 50)
+        set(value) = prefs.edit().putInt(KEY_V80DANMAKUCOLLISIONSTRENGTH, value).apply()
+
+    var v80SubtitleAnimationEasing: Int
+        get() = prefs.getInt(KEY_V80SUBTITLEANIMATIONEASING, 0)
+        set(value) = prefs.edit().putInt(KEY_V80SUBTITLEANIMATIONEASING, value).apply()
+
+    var v80GestureSwipeAccelerationCustom: Int
+        get() = prefs.getInt(KEY_V80GESTURESWIPEACCELERATIONCUSTOM, 50)
+        set(value) = prefs.edit().putInt(KEY_V80GESTURESWIPEACCELERATIONCUSTOM, value).apply()
+
+    var v80CastVideoDolbyVisionCustom: Int
+        get() = prefs.getInt(KEY_V80CASTVIDEODOLBYVISIONCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V80CASTVIDEODOLBYVISIONCUSTOM, value).apply()
+
+    var v80PlaylistAutoRecoverStrategyCustom: Int
+        get() = prefs.getInt(KEY_V80PLAYLISTAUTORECOVERSTRATEGYCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V80PLAYLISTAUTORECOVERSTRATEGYCUSTOM, value).apply()
+
+    var v80CacheEncryptionCustom: Boolean
+        get() = prefs.getBoolean(KEY_V80CACHEENCRYPTIONCUSTOM, False)
+        set(value) = prefs.edit().putBoolean(KEY_V80CACHEENCRYPTIONCUSTOM, value).apply()
+
+    var v80ProgressBarThumbSizeCustom: Int
+        get() = prefs.getInt(KEY_V80PROGRESSBARTHUMBSIZECUSTOM, 12)
+        set(value) = prefs.edit().putInt(KEY_V80PROGRESSBARTHUMBSIZECUSTOM, value).apply()
+
+    var v80VolumeAutoLevelingCustom: Boolean
+        get() = prefs.getBoolean(KEY_V80VOLUMEAUTOLEVELINGCUSTOM, False)
+        set(value) = prefs.edit().putBoolean(KEY_V80VOLUMEAUTOLEVELINGCUSTOM, value).apply()
+
+    var v80HistoryAutoSyncCustom: Boolean
+        get() = prefs.getBoolean(KEY_V80HISTORYAUTOSYNCCUSTOM, False)
+        set(value) = prefs.edit().putBoolean(KEY_V80HISTORYAUTOSYNCCUSTOM, value).apply()
+
+    var v80PlaybackAutoResumeCustom: Boolean
+        get() = prefs.getBoolean(KEY_V80PLAYBACKAUTORESUMECUSTOM, True)
+        set(value) = prefs.edit().putBoolean(KEY_V80PLAYBACKAUTORESUMECUSTOM, value).apply()
+
+    var v80ScreenshotAutoShareCustom: Boolean
+        get() = prefs.getBoolean(KEY_V80SCREENSHOTAUTOSHARECUSTOM, False)
+        set(value) = prefs.edit().putBoolean(KEY_V80SCREENSHOTAUTOSHARECUSTOM, value).apply()
+
+    var v80VideoAdaptiveMotionBlur: Boolean
+        get() = prefs.getBoolean(KEY_V80VIDEOADAPTIVEMOTIONBLUR, False)
+        set(value) = prefs.edit().putBoolean(KEY_V80VIDEOADAPTIVEMOTIONBLUR, value).apply()
+
+    var v80DanmakuFontSpacingCustom: Int
+        get() = prefs.getInt(KEY_V80DANMAKUFONTSPACINGCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V80DANMAKUFONTSPACINGCUSTOM, value).apply()
+
+    var v80SubtitleAnimationLoop: Boolean
+        get() = prefs.getBoolean(KEY_V80SUBTITLEANIMATIONLOOP, False)
+        set(value) = prefs.edit().putBoolean(KEY_V80SUBTITLEANIMATIONLOOP, value).apply()
+
     }
 }
