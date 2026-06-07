@@ -1278,6 +1278,20 @@ internal fun PlayerActivity.showv36DanmakuBlockLengthDialog() {
         .option("10") { BiliClient.prefs.v36DanmakuBlockLength = 10 }
         .show()
 }
+// 36.10: 音频延迟(ms)
+internal fun PlayerActivity.showv36AudioDelayMsDialog() {
+    val current = BiliClient.prefs.v36AudioDelayMs
+    AppPopup.Builder(this)
+        .title("音频延迟(ms)")
+        .option("0") { BiliClient.prefs.v36AudioDelayMs = 0 }
+        .option("1") { BiliClient.prefs.v36AudioDelayMs = 1 }
+        .option("2") { BiliClient.prefs.v36AudioDelayMs = 2 }
+        .option("3") { BiliClient.prefs.v36AudioDelayMs = 3 }
+        .option("5") { BiliClient.prefs.v36AudioDelayMs = 5 }
+        .option("10") { BiliClient.prefs.v36AudioDelayMs = 10 }
+        .show()
+}
+
 
 
 
