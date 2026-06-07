@@ -1984,6 +1984,11 @@ class AppPrefs(context: Context) {
     var v34DanmakuMaxDisplaySec: Int
         get() = prefs.getInt(KEY_V34_DANMAKU_MAX_DISPLAY_SEC, 0)
         set(value) = prefs.edit().putInt(KEY_V34_DANMAKU_MAX_DISPLAY_SEC, value).apply()
+    // v35.3: 空间音频宽度
+    var v35AudioSpatialWidth: Int
+        get() = prefs.getInt(KEY_V35_AUDIO_SPATIAL_WIDTH, 0)
+        set(value) = prefs.edit().putInt(KEY_V35_AUDIO_SPATIAL_WIDTH, value).apply()
+
     // v35.2: 弹幕发送者头像
     var v35DanmakuSenderAvatar: Boolean
         get() = prefs.getBoolean(KEY_V35_DANMAKU_SENDER_AVATAR, false)
@@ -3444,6 +3449,7 @@ class AppPrefs(context: Context) {
             val url = value.toHttpUrlOrNull() ?: return null
             if (url.query != null || url.fragment != null) return null
             return url.toString().trimEnd('/')
+        private const val KEY_V35_AUDIO_SPATIAL_WIDTH = "v35_audio_spatial_width"
         }
 
         fun normalizeThemePreset(value: String?): String {

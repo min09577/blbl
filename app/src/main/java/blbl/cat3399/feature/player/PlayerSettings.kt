@@ -1047,6 +1047,20 @@ internal fun PlayerActivity.showv35DanmakuSenderAvatarToggle() {
         .option(switchText(current)) { BiliClient.prefs.v35DanmakuSenderAvatar = !current }
         .show()
 }
+// 35.3: 空间音频宽度
+internal fun PlayerActivity.showv35AudioSpatialWidthDialog() {
+    val current = BiliClient.prefs.v35AudioSpatialWidth
+    AppPopup.Builder(this)
+        .title("空间音频宽度")
+        .option("0") { BiliClient.prefs.v35AudioSpatialWidth = 0 }
+        .option("1") { BiliClient.prefs.v35AudioSpatialWidth = 1 }
+        .option("2") { BiliClient.prefs.v35AudioSpatialWidth = 2 }
+        .option("3") { BiliClient.prefs.v35AudioSpatialWidth = 3 }
+        .option("5") { BiliClient.prefs.v35AudioSpatialWidth = 5 }
+        .option("10") { BiliClient.prefs.v35AudioSpatialWidth = 10 }
+        .show()
+}
+
 
 
 
