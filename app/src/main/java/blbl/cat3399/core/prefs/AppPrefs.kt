@@ -2132,6 +2132,11 @@ class AppPrefs(context: Context) {
     var v36VideoAspectFitMode: Int
         get() = prefs.getInt(KEY_V36_VIDEO_ASPECT_FIT_MODE, 0)
         set(value) = prefs.edit().putInt(KEY_V36_VIDEO_ASPECT_FIT_MODE, value).apply()
+    // v37.4: 恢复播放阈值(秒)
+    var v37PlayerResumeThreshold: Int
+        get() = prefs.getInt(KEY_V37_PLAYER_RESUME_THRESHOLD, 0)
+        set(value) = prefs.edit().putInt(KEY_V37_PLAYER_RESUME_THRESHOLD, value).apply()
+
     // v37.3: 立体声宽度
     var v37AudioStereoWidth: Int
         get() = prefs.getInt(KEY_V37_AUDIO_STEREO_WIDTH, 0)
@@ -3675,3 +3680,4 @@ class AppPrefs(context: Context) {
         private const val KEY_V37_VIDEO_BLACK_BAR_DETECT = "v37_video_black_bar_detect"
         private const val KEY_V37_DANMAKU_GROUP_MERGE = "v37_danmaku_group_merge"
         private const val KEY_V37_AUDIO_STEREO_WIDTH = "v37_audio_stereo_width"
+        private const val KEY_V37_PLAYER_RESUME_THRESHOLD = "v37_player_resume_threshold"
