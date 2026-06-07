@@ -2132,6 +2132,11 @@ class AppPrefs(context: Context) {
     var v36VideoAspectFitMode: Int
         get() = prefs.getInt(KEY_V36_VIDEO_ASPECT_FIT_MODE, 0)
         set(value) = prefs.edit().putInt(KEY_V36_VIDEO_ASPECT_FIT_MODE, value).apply()
+    // v37.9: 弹幕等级屏蔽
+    var v37DanmakuLevelShield: Int
+        get() = prefs.getInt(KEY_V37_DANMAKU_LEVEL_SHIELD, 0)
+        set(value) = prefs.edit().putInt(KEY_V37_DANMAKU_LEVEL_SHIELD, value).apply()
+
     // v37.8: 缓冲策略
     var v37PlaybackBufferStrategy: Int
         get() = prefs.getInt(KEY_V37_PLAYBACK_BUFFER_STRATEGY, 0)
@@ -3705,3 +3710,4 @@ class AppPrefs(context: Context) {
         private const val KEY_V37_SUBTITLE_OUTLINE_COLOR = "v37_subtitle_outline_color"
         private const val KEY_V37_VIDEO_FPS_COUNTER = "v37_video_fps_counter"
         private const val KEY_V37_PLAYBACK_BUFFER_STRATEGY = "v37_playback_buffer_strategy"
+        private const val KEY_V37_DANMAKU_LEVEL_SHIELD = "v37_danmaku_level_shield"
