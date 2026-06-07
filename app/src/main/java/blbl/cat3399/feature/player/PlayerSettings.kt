@@ -1582,6 +1582,20 @@ internal fun PlayerActivity.showv38VideoContrastEnhanceDialog() {
         .option("10") { BiliClient.prefs.v38VideoContrastEnhance = 10 }
         .show()
 }
+// 38.8: 最小缓冲秒数
+internal fun PlayerActivity.showv38PlaybackBufferMinSecDialog() {
+    val current = BiliClient.prefs.v38PlaybackBufferMinSec
+    AppPopup.Builder(this)
+        .title("最小缓冲秒数")
+        .option("0") { BiliClient.prefs.v38PlaybackBufferMinSec = 0 }
+        .option("1") { BiliClient.prefs.v38PlaybackBufferMinSec = 1 }
+        .option("2") { BiliClient.prefs.v38PlaybackBufferMinSec = 2 }
+        .option("3") { BiliClient.prefs.v38PlaybackBufferMinSec = 3 }
+        .option("5") { BiliClient.prefs.v38PlaybackBufferMinSec = 5 }
+        .option("10") { BiliClient.prefs.v38PlaybackBufferMinSec = 10 }
+        .show()
+}
+
 
 
 
