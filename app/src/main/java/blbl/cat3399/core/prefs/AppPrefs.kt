@@ -1688,6 +1688,11 @@ class AppPrefs(context: Context) {
     var v30DanmakuFontGlow: Int
         get() = prefs.getInt(KEY_V30_DANMAKU_FONT_GLOW, 0)
         set(value) = prefs.edit().putInt(KEY_V30_DANMAKU_FONT_GLOW, value.coerceIn(0, 100)).apply()
+    // v31.4: 预缓冲时长(秒)
+    var v31PlaybackBufferAheadSec: Int
+        get() = prefs.getInt(KEY_V31_PLAYBACK_BUFFER_AHEAD_SEC, 0)
+        set(value) = prefs.edit().putInt(KEY_V31_PLAYBACK_BUFFER_AHEAD_SEC, value).apply()
+
     // v31.3: 字幕字号自动适配
     var v31SubtitleFontSizeAuto: Boolean
         get() = prefs.getBoolean(KEY_V31_SUBTITLE_FONT_SIZE_AUTO, false)
@@ -2846,6 +2851,7 @@ class AppPrefs(context: Context) {
 
         private val DIAGNOSTIC_EXCLUDED_KEYS: Set<String> =
             CREDENTIAL_KEYS +
+        private const val KEY_V31_PLAYBACK_BUFFER_AHEAD_SEC = "v31_playback_buffer_ahead_sec"
                 setOf(
                     KEY_BUVID_ACTIVATED_MID,
                     KEY_SEARCH_HISTORY,
