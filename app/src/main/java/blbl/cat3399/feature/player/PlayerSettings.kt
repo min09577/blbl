@@ -1291,6 +1291,20 @@ internal fun PlayerActivity.showv36AudioDelayMsDialog() {
         .option("10") { BiliClient.prefs.v36AudioDelayMs = 10 }
         .show()
 }
+// 36.11: 滑动亮度曲线
+internal fun PlayerActivity.showv36PlayerSwipeBrightnessCurveDialog() {
+    val current = BiliClient.prefs.v36PlayerSwipeBrightnessCurve
+    AppPopup.Builder(this)
+        .title("滑动亮度曲线")
+        .option("0") { BiliClient.prefs.v36PlayerSwipeBrightnessCurve = 0 }
+        .option("1") { BiliClient.prefs.v36PlayerSwipeBrightnessCurve = 1 }
+        .option("2") { BiliClient.prefs.v36PlayerSwipeBrightnessCurve = 2 }
+        .option("3") { BiliClient.prefs.v36PlayerSwipeBrightnessCurve = 3 }
+        .option("5") { BiliClient.prefs.v36PlayerSwipeBrightnessCurve = 5 }
+        .option("10") { BiliClient.prefs.v36PlayerSwipeBrightnessCurve = 10 }
+        .show()
+}
+
 
 
 

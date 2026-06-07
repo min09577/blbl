@@ -2058,6 +2058,11 @@ class AppPrefs(context: Context) {
     var v35VideoFrameRateOverride: Int
         get() = prefs.getInt(KEY_V35_VIDEO_FRAME_RATE_OVERRIDE, 0)
         set(value) = prefs.edit().putInt(KEY_V35_VIDEO_FRAME_RATE_OVERRIDE, value).apply()
+    // v36.11: 滑动亮度曲线
+    var v36PlayerSwipeBrightnessCurve: Int
+        get() = prefs.getInt(KEY_V36_PLAYER_SWIPE_BRIGHTNESS_CURVE, 0)
+        set(value) = prefs.edit().putInt(KEY_V36_PLAYER_SWIPE_BRIGHTNESS_CURVE, value).apply()
+
     // v36.10: 音频延迟(ms)
     var v36AudioDelayMs: Int
         get() = prefs.getInt(KEY_V36_AUDIO_DELAY_MS, 0)
@@ -3623,3 +3628,4 @@ class AppPrefs(context: Context) {
         private const val KEY_V36_PLAYBACK_SPEED_PITCH_CORRECT = "v36_playback_speed_pitch_correct"
         private const val KEY_V36_DANMAKU_BLOCK_LENGTH = "v36_danmaku_block_length"
         private const val KEY_V36_AUDIO_DELAY_MS = "v36_audio_delay_ms"
+        private const val KEY_V36_PLAYER_SWIPE_BRIGHTNESS_CURVE = "v36_player_swipe_brightness_curve"
