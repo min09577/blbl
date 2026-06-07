@@ -1766,6 +1766,11 @@ class AppPrefs(context: Context) {
     var v31VideoCodecPriority: Int
         get() = prefs.getInt(KEY_V31_VIDEO_CODEC_PRIORITY, 0)
         set(value) = prefs.edit().putInt(KEY_V31_VIDEO_CODEC_PRIORITY, value).apply()
+    // v32.1: 息屏定时器(分钟)
+    var v32ScreenOffTimer: Int
+        get() = prefs.getInt(KEY_V32_SCREEN_OFF_TIMER, 0)
+        set(value) = prefs.edit().putInt(KEY_V32_SCREEN_OFF_TIMER, value).apply()
+
 
 
 
@@ -3728,6 +3733,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V31_PLAYBACK_AUTO_RESUME = "v31_playback_auto_resume"
         private const val KEY_V31_DANMAKU_BLOCK_USER_LEVEL = "v31_danmaku_block_user_level"
         private const val KEY_V31_VIDEO_CODEC_PRIORITY = "v31_video_codec_priority"
+        private const val KEY_V32_SCREEN_OFF_TIMER = "v32_screen_off_timer"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
