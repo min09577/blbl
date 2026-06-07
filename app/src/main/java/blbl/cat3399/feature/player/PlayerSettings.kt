@@ -1921,6 +1921,20 @@ internal fun PlayerActivity.showv40AudioPreservePitchToggle() {
         .option(switchText(current)) { BiliClient.prefs.v40AudioPreservePitch = !current }
         .show()
 }
+// 40.11: OSD超时(秒)
+internal fun PlayerActivity.showv40PlayerOsdTimeoutDialog() {
+    val current = BiliClient.prefs.v40PlayerOsdTimeout
+    AppPopup.Builder(this)
+        .title("OSD超时(秒)")
+        .option("0") { BiliClient.prefs.v40PlayerOsdTimeout = 0 }
+        .option("1") { BiliClient.prefs.v40PlayerOsdTimeout = 1 }
+        .option("2") { BiliClient.prefs.v40PlayerOsdTimeout = 2 }
+        .option("3") { BiliClient.prefs.v40PlayerOsdTimeout = 3 }
+        .option("5") { BiliClient.prefs.v40PlayerOsdTimeout = 5 }
+        .option("10") { BiliClient.prefs.v40PlayerOsdTimeout = 10 }
+        .show()
+}
+
 
 
 
