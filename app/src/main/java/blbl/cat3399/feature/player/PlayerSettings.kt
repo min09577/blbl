@@ -8832,4 +8832,14 @@ internal fun PlayerActivity.showv31DanmakuKeywordHighlightToggle() {
         .show()
 }
 
+
+// 31.9: 画中画模式支持
+internal fun PlayerActivity.showv31PlayerPiPSupportToggle() {
+    val current = BiliClient.prefs.v31PlayerPiPSupport
+    AppPopup.Builder(this)
+        .title("画中画模式支持")
+        .option(switchText(current)) { BiliClient.prefs.v31PlayerPiPSupport = !current }
+        .show()
+}
+
 }
