@@ -9132,4 +9132,19 @@ internal fun PlayerActivity.showv33VideoThumbnailTimeSecDialog() {
         .show()
 }
 
+
+// 33.4: 双击快进秒数
+internal fun PlayerActivity.showv33PlayerDoubleTapSeekSecDialog() {
+    val current = BiliClient.prefs.v33PlayerDoubleTapSeekSec
+    AppPopup.Builder(this)
+        .title("双击快进秒数")
+        .option("0") { BiliClient.prefs.v33PlayerDoubleTapSeekSec = 0 }
+        .option("1") { BiliClient.prefs.v33PlayerDoubleTapSeekSec = 1 }
+        .option("2") { BiliClient.prefs.v33PlayerDoubleTapSeekSec = 2 }
+        .option("3") { BiliClient.prefs.v33PlayerDoubleTapSeekSec = 3 }
+        .option("5") { BiliClient.prefs.v33PlayerDoubleTapSeekSec = 5 }
+        .option("10") { BiliClient.prefs.v33PlayerDoubleTapSeekSec = 10 }
+        .show()
+}
+
 }
