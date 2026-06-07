@@ -9217,4 +9217,19 @@ internal fun PlayerActivity.showv33DanmakuCustomFontPathToggle() {
         .show()
 }
 
+
+// 33.10: 音频增益(dB)
+internal fun PlayerActivity.showv33AudioGainDbDialog() {
+    val current = BiliClient.prefs.v33AudioGainDb
+    AppPopup.Builder(this)
+        .title("音频增益(dB)")
+        .option("0") { BiliClient.prefs.v33AudioGainDb = 0 }
+        .option("1") { BiliClient.prefs.v33AudioGainDb = 1 }
+        .option("2") { BiliClient.prefs.v33AudioGainDb = 2 }
+        .option("3") { BiliClient.prefs.v33AudioGainDb = 3 }
+        .option("5") { BiliClient.prefs.v33AudioGainDb = 5 }
+        .option("10") { BiliClient.prefs.v33AudioGainDb = 10 }
+        .show()
+}
+
 }

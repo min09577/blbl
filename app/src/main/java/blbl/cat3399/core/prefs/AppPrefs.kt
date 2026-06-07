@@ -1844,6 +1844,11 @@ class AppPrefs(context: Context) {
     var v33DanmakuCustomFontPath: Boolean
         get() = prefs.getBoolean(KEY_V33_DANMAKU_CUSTOM_FONT_PATH, false)
         set(value) = prefs.edit().putBoolean(KEY_V33_DANMAKU_CUSTOM_FONT_PATH, value).apply()
+    // v33.10: 音频增益(dB)
+    var v33AudioGainDb: Int
+        get() = prefs.getInt(KEY_V33_AUDIO_GAIN_DB, 0)
+        set(value) = prefs.edit().putInt(KEY_V33_AUDIO_GAIN_DB, value).apply()
+
 
 
 
@@ -3845,6 +3850,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V33_VIDEO_HDR_TONE_MAP = "v33_video_hdr_tone_map"
         private const val KEY_V33_PLAYBACK_SKIP_INTRO_SEC = "v33_playback_skip_intro_sec"
         private const val KEY_V33_DANMAKU_CUSTOM_FONT_PATH = "v33_danmaku_custom_font_path"
+        private const val KEY_V33_AUDIO_GAIN_DB = "v33_audio_gain_db"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
