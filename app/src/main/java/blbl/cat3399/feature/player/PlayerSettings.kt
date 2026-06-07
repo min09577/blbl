@@ -9507,4 +9507,14 @@ internal fun PlayerActivity.showv35PlayerAutoFullscreenLandscapeToggle() {
         .show()
 }
 
+
+// 35.5: 弹幕拼音转换
+internal fun PlayerActivity.showv35DanmakuPinyinConvertToggle() {
+    val current = BiliClient.prefs.v35DanmakuPinyinConvert
+    AppPopup.Builder(this)
+        .title("弹幕拼音转换")
+        .option(switchText(current)) { BiliClient.prefs.v35DanmakuPinyinConvert = !current }
+        .show()
+}
+
 }
