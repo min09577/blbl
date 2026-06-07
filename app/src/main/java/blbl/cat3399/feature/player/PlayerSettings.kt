@@ -8798,4 +8798,19 @@ internal fun PlayerActivity.showv31DanmakuAntiSpamLevelDialog() {
         .show()
 }
 
+
+// 31.6: 视频反交错模式
+internal fun PlayerActivity.showv31VideoDeinterlaceModeDialog() {
+    val current = BiliClient.prefs.v31VideoDeinterlaceMode
+    AppPopup.Builder(this)
+        .title("视频反交错模式")
+        .option("0") { BiliClient.prefs.v31VideoDeinterlaceMode = 0 }
+        .option("1") { BiliClient.prefs.v31VideoDeinterlaceMode = 1 }
+        .option("2") { BiliClient.prefs.v31VideoDeinterlaceMode = 2 }
+        .option("3") { BiliClient.prefs.v31VideoDeinterlaceMode = 3 }
+        .option("5") { BiliClient.prefs.v31VideoDeinterlaceMode = 5 }
+        .option("10") { BiliClient.prefs.v31VideoDeinterlaceMode = 10 }
+        .show()
+}
+
 }
