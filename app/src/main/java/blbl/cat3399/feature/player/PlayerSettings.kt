@@ -9732,4 +9732,14 @@ internal fun PlayerActivity.showv36VideoColorLutPresetDialog() {
         .show()
 }
 
+
+// 36.8: 变速音调修正
+internal fun PlayerActivity.showv36PlaybackSpeedPitchCorrectToggle() {
+    val current = BiliClient.prefs.v36PlaybackSpeedPitchCorrect
+    AppPopup.Builder(this)
+        .title("变速音调修正")
+        .option(switchText(current)) { BiliClient.prefs.v36PlaybackSpeedPitchCorrect = !current }
+        .show()
+}
+
 }
