@@ -8908,4 +8908,19 @@ internal fun PlayerActivity.showv31DanmakuBlockUserLevelDialog() {
         .show()
 }
 
+
+// 31.15: 视频解码优先级
+internal fun PlayerActivity.showv31VideoCodecPriorityDialog() {
+    val current = BiliClient.prefs.v31VideoCodecPriority
+    AppPopup.Builder(this)
+        .title("视频解码优先级")
+        .option("0") { BiliClient.prefs.v31VideoCodecPriority = 0 }
+        .option("1") { BiliClient.prefs.v31VideoCodecPriority = 1 }
+        .option("2") { BiliClient.prefs.v31VideoCodecPriority = 2 }
+        .option("3") { BiliClient.prefs.v31VideoCodecPriority = 3 }
+        .option("5") { BiliClient.prefs.v31VideoCodecPriority = 5 }
+        .option("10") { BiliClient.prefs.v31VideoCodecPriority = 10 }
+        .show()
+}
+
 }
