@@ -15786,5 +15786,455 @@ internal fun PlayerActivity.showV90SubtitleAnimationDelayCustomDialog() {
     ) { value ->
         BiliClient.prefs.v90SubtitleAnimationDelayCustom = value
         AppToast.show(this, "Subtitle Animation Delay Custom: $value")
+    internal fun PlayerActivity.showV91VideoDitheringModeDialog() {
+        showSettingsChoiceDialog("Video Dithering Mode", AppPrefs.0, listOf(0, 1, 2, 3), AppPrefs.KEY_V91VIDEODITHERINGMODE)
+    }
+    internal fun PlayerActivity.showV91DanmakuFontShadowToggleToggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V91DANMAKUFONTSHADOWTOGGLE)
+    }
+    internal fun PlayerActivity.showV91SubtitleFadeInOutCustomDialog() {
+        showSettingsChoiceDialog("Subtitle Fade In Out Custom", AppPrefs.0, listOf(0, 200, 400, 600, 800), AppPrefs.KEY_V91SUBTITLEFADEINOUTCUSTOM)
+    }
+    internal fun PlayerActivity.showV91GestureEdgeDeadZoneDialog() {
+        showSettingsChoiceDialog("Gesture Edge Dead Zone", AppPrefs.10, listOf(5, 10, 15, 20, 30), AppPrefs.KEY_V91GESTUREEDGEDEADZONE)
+    }
+    internal fun PlayerActivity.showV91CastVideoLatencyModeDialog() {
+        showSettingsChoiceDialog("Cast Video Latency Mode", AppPrefs.0, listOf(0, 1, 2, 3), AppPrefs.KEY_V91CASTVIDEOLATENCYMODE)
+    }
+    internal fun PlayerActivity.showV91PlaylistAutoResumeLastToggle() {
+        AppToast.show(this, AppPrefs.True, AppPrefs.KEY_V91PLAYLISTAUTORESUMELAST)
+    }
+    internal fun PlayerActivity.showV91CacheSegmentSizeDialog() {
+        showSettingsChoiceDialog("Cache Segment Size", AppPrefs.0, listOf(0, 1, 2, 3), AppPrefs.KEY_V91CACHESEGMENTSIZE)
+    }
+    internal fun PlayerActivity.showV91ProgressBarChapterLabelToggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V91PROGRESSBARCHAPTERLABEL)
+    }
+    internal fun PlayerActivity.showV91VolumeAutoDuckingToggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V91VOLUMEAUTODUCKING)
+    }
+    internal fun PlayerActivity.showV91HistoryGroupBySeriesToggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V91HISTORYGROUPBYSERIES)
+    }
+    internal fun PlayerActivity.showV91PlaybackAutoSkipNextCountdownDialog() {
+        showSettingsChoiceDialog("Playback Auto Skip Next Countdown", AppPrefs.5, listOf(3, 5, 10, 15, 30), AppPrefs.KEY_V91PLAYBACKAUTOSKIPNEXTCOUNTDOWN)
+    }
+    internal fun PlayerActivity.showV91ScreenshotRegionCaptureToggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V91SCREENSHOTREGIONCAPTURE)
+    }
+    internal fun PlayerActivity.showV91VideoFilmGrainCustomDialog() {
+        showSettingsChoiceDialog("Video Film Grain Custom", AppPrefs.0, listOf(0, 25, 50, 75, 100), AppPrefs.KEY_V91VIDEOFILMGRAINCUSTOM)
+    }
+    internal fun PlayerActivity.showV91DanmakuBgCornerRadiusDialog() {
+        showSettingsChoiceDialog("Danmaku BG Corner Radius", AppPrefs.0, listOf(0, 2, 4, 6, 8), AppPrefs.KEY_V91DANMAKUBGCORNERRADIUS)
+    }
+    internal fun PlayerActivity.showV91SubtitleBgMarginBottomDialog() {
+        showSettingsChoiceDialog("Subtitle BG Margin Bottom", AppPrefs.10, listOf(0, 5, 10, 15, 20), AppPrefs.KEY_V91SUBTITLEBGMARGINBOTTOM)
+    }
+    internal fun PlayerActivity.showV92VideoVignetteCustomDialog() {
+        showSettingsChoiceDialog("Video Vignette Custom", AppPrefs.0, listOf(0, 25, 50, 75, 100), AppPrefs.KEY_V92VIDEOVIGNETTECUSTOM)
+    }
+    internal fun PlayerActivity.showV92DanmakuFontUnderlineToggleToggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V92DANMAKUFONTUNDERLINETOGGLE)
+    }
+    internal fun PlayerActivity.showV92SubtitleBgPaddingCustomDialog() {
+        showSettingsChoiceDialog("Subtitle BG Padding Custom", AppPrefs.4, listOf(0, 2, 4, 6, 8), AppPrefs.KEY_V92SUBTITLEBGPADDINGCUSTOM)
+    }
+    internal fun PlayerActivity.showV92GestureSwipeBackActionDialog() {
+        showSettingsChoiceDialog("Gesture Swipe Back Action", AppPrefs.0, listOf(0, 1, 2, 3), AppPrefs.KEY_V92GESTURESWIPEBACKACTION)
+    }
+    internal fun PlayerActivity.showV92CastVideoDropFrameToggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V92CASTVIDEODROPFRAME)
+    }
+    internal fun PlayerActivity.showV92PlaylistAutoSkipShortDialog() {
+        showSettingsChoiceDialog("Playlist Auto Skip Short", AppPrefs.0, listOf(0, 1, 2, 3), AppPrefs.KEY_V92PLAYLISTAUTOSKIPSHORT)
+    }
+    internal fun PlayerActivity.showV92CacheDownloadPolicyDialog() {
+        showSettingsChoiceDialog("Cache Download Policy", AppPrefs.0, listOf(0, 1, 2, 3), AppPrefs.KEY_V92CACHEDOWNLOADPOLICY)
+    }
+    internal fun PlayerActivity.showV92ProgressBarThumbShapeDialog() {
+        showSettingsChoiceDialog("Progress Bar Thumb Shape", AppPrefs.0, listOf(0, 1, 2, 3), AppPrefs.KEY_V92PROGRESSBARTHUMBSHAPE)
+    }
+    internal fun PlayerActivity.showV92VolumeAutoBalanceToggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V92VOLUMEAUTOBALANCE)
+    }
+    internal fun PlayerActivity.showV92HistoryAutoCleanExpiredToggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V92HISTORYAUTOCLEANEXPIRED)
+    }
+    internal fun PlayerActivity.showV92PlaybackAutoSkipSameTitleToggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V92PLAYBACKAUTOSKIPSAMETITLE)
+    }
+    internal fun PlayerActivity.showV92ScreenshotAutoDeleteDaysDialog() {
+        showSettingsChoiceDialog("Screenshot Auto Delete Days", AppPrefs.30, listOf(7, 14, 30, 60, 90), AppPrefs.KEY_V92SCREENSHOTAUTODELETEDAYS)
+    }
+    internal fun PlayerActivity.showV92VideoColorFringeCustomDialog() {
+        showSettingsChoiceDialog("Video Color Fringe Custom", AppPrefs.0, listOf(0, 25, 50, 75, 100), AppPrefs.KEY_V92VIDEOCOLORFRINGECUSTOM)
+    }
+    internal fun PlayerActivity.showV92DanmakuBgOpacityCustomDialog() {
+        showSettingsChoiceDialog("Danmaku BG Opacity Custom", AppPrefs.50, listOf(0, 25, 50, 75, 100), AppPrefs.KEY_V92DANMAKUBGOPACITYCUSTOM)
+    }
+    internal fun PlayerActivity.showV92SubtitleBgMarginTopDialog() {
+        showSettingsChoiceDialog("Subtitle BG Margin Top", AppPrefs.10, listOf(0, 5, 10, 15, 20), AppPrefs.KEY_V92SUBTITLEBGMARGINTOP)
+    }
+    internal fun PlayerActivity.showV93VideoScanlineEffectToggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V93VIDEOSCANLINEEFFECT)
+    }
+    internal fun PlayerActivity.showV93DanmakuSendMaxLengthCustomDialog() {
+        showSettingsChoiceDialog("Danmaku Send Max Length Custom", AppPrefs.0, listOf(0, 1, 2, 3), AppPrefs.KEY_V93DANMAKUSENDMAXLENGTHCUSTOM)
+    }
+    internal fun PlayerActivity.showV93SubtitleBgBorderColorCustomDialog() {
+        showSettingsChoiceDialog("Subtitle BG Border Color Custom", AppPrefs.0, listOf(0, 1, 2, 3), AppPrefs.KEY_V93SUBTITLEBGBORDERCOLORCUSTOM)
+    }
+    internal fun PlayerActivity.showV93GestureSwipeForwardActionDialog() {
+        showSettingsChoiceDialog("Gesture Swipe Forward Action", AppPrefs.0, listOf(0, 1, 2, 3), AppPrefs.KEY_V93GESTURESWIPEFORWARDACTION)
+    }
+    internal fun PlayerActivity.showV93CastAudioDynamicRangeDialog() {
+        showSettingsChoiceDialog("Cast Audio Dynamic Range", AppPrefs.0, listOf(0, 1, 2, 3), AppPrefs.KEY_V93CASTAUDIODYNAMICRANGE)
+    }
+    internal fun PlayerActivity.showV93PlaylistAutoSkipLongDialog() {
+        showSettingsChoiceDialog("Playlist Auto Skip Long", AppPrefs.0, listOf(0, 1, 2, 3), AppPrefs.KEY_V93PLAYLISTAUTOSKIPLONG)
+    }
+    internal fun PlayerActivity.showV93CacheNetworkPolicyDialog() {
+        showSettingsChoiceDialog("Cache Network Policy", AppPrefs.0, listOf(0, 1, 2, 3), AppPrefs.KEY_V93CACHENETWORKPOLICY)
+    }
+    internal fun PlayerActivity.showV93ProgressBarBufferColorCustomDialog() {
+        showSettingsChoiceDialog("Progress Bar Buffer Color Custom", AppPrefs.0, listOf(0, 1, 2, 3), AppPrefs.KEY_V93PROGRESSBARBUFFERCOLORCUSTOM)
+    }
+    internal fun PlayerActivity.showV93VolumeAutoGainControlToggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V93VOLUMEAUTOGAINCONTROL)
+    }
+    internal fun PlayerActivity.showV93HistoryAutoSyncDeviceToggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V93HISTORYAUTOSYNCDEVICE)
+    }
+    internal fun PlayerActivity.showV93PlaybackAutoSkipRecap93Toggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V93PLAYBACKAUTOSKIPRECAP93)
+    }
+    internal fun PlayerActivity.showV93ScreenshotNamingTemplateDialog() {
+        showSettingsChoiceDialog("Screenshot Naming Template", AppPrefs.0, listOf(0, 1, 2, 3), AppPrefs.KEY_V93SCREENSHOTNAMINGTEMPLATE)
+    }
+    internal fun PlayerActivity.showV93VideoCRTFilterCustomDialog() {
+        showSettingsChoiceDialog("Video CRT Filter Custom", AppPrefs.0, listOf(0, 25, 50, 75, 100), AppPrefs.KEY_V93VIDEOCRTFILTERCUSTOM)
+    }
+    internal fun PlayerActivity.showV93DanmakuSendConfirmToggleToggle() {
+        AppToast.show(this, AppPrefs.True, AppPrefs.KEY_V93DANMAKUSENDCONFIRMTOGGLE)
+    }
+    internal fun PlayerActivity.showV93SubtitleBgBorderWidthCustomDialog() {
+        showSettingsChoiceDialog("Subtitle BG Border Width Custom", AppPrefs.0, listOf(0, 1, 2, 3), AppPrefs.KEY_V93SUBTITLEBGBORDERWIDTHCUSTOM)
+    }
+    internal fun PlayerActivity.showV94VideoPixelArtModeToggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V94VIDEOPIXELARTMODE)
+    }
+    internal fun PlayerActivity.showV94DanmakuFontMonospaceToggleToggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V94DANMAKUFONTMONOSPACETOGGLE)
+    }
+    internal fun PlayerActivity.showV94SubtitleBgBorderRadiusCustomDialog() {
+        showSettingsChoiceDialog("Subtitle BG Border Radius Custom", AppPrefs.0, listOf(0, 2, 4, 6, 8), AppPrefs.KEY_V94SUBTITLEBGBORDERRADIUSCUSTOM)
+    }
+    internal fun PlayerActivity.showV94GestureLongPressTimeoutDialog() {
+        showSettingsChoiceDialog("Gesture Long Press Timeout", AppPrefs.500, listOf(300, 400, 500, 700, 1000), AppPrefs.KEY_V94GESTURELONGPRESSTIMEOUT)
+    }
+    internal fun PlayerActivity.showV94CastVideoBufferSizeDialog() {
+        showSettingsChoiceDialog("Cast Video Buffer Size", AppPrefs.0, listOf(0, 1, 2, 3), AppPrefs.KEY_V94CASTVIDEOBUFFERSIZE)
+    }
+    internal fun PlayerActivity.showV94PlaylistAutoGroupByUpToggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V94PLAYLISTAUTOGROUPBYUP)
+    }
+    internal fun PlayerActivity.showV94CacheSmartCleanupToggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V94CACHESMARTCLEANUP)
+    }
+    internal fun PlayerActivity.showV94ProgressBarLiveIndicatorToggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V94PROGRESSBARLIVEINDICATOR)
+    }
+    internal fun PlayerActivity.showV94VolumeAutoPanToggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V94VOLUMEAUTOPAN)
+    }
+    internal fun PlayerActivity.showV94HistoryExportAutoToggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V94HISTORYEXPORTAUTO)
+    }
+    internal fun PlayerActivity.showV94PlaybackAutoSkipTitleToggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V94PLAYBACKAUTOSKIPTITLE)
+    }
+    internal fun PlayerActivity.showV94ScreenshotAutoCopyPathToggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V94SCREENSHOTAUTOCOPYPATH)
+    }
+    internal fun PlayerActivity.showV94VideoAsciiArtModeToggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V94VIDEOASCIIARTMODE)
+    }
+    internal fun PlayerActivity.showV94DanmakuFontSizeStepDialog() {
+        showSettingsChoiceDialog("Danmaku Font Size Step", AppPrefs.2, listOf(1, 2, 3, 4, 5), AppPrefs.KEY_V94DANMAKUFONTSIZESTEP)
+    }
+    internal fun PlayerActivity.showV94SubtitleAnimationFadeTimeDialog() {
+        showSettingsChoiceDialog("Subtitle Animation Fade Time", AppPrefs.300, listOf(100, 200, 300, 500, 800), AppPrefs.KEY_V94SUBTITLEANIMATIONFADETIME)
+    }
+    internal fun PlayerActivity.showV95VideoGlitchEffectCustomDialog() {
+        showSettingsChoiceDialog("Video Glitch Effect Custom", AppPrefs.0, listOf(0, 25, 50, 75, 100), AppPrefs.KEY_V95VIDEOGLITCHEFFECTCUSTOM)
+    }
+    internal fun PlayerActivity.showV95DanmakuScrollEasingDialog() {
+        showSettingsChoiceDialog("Danmaku Scroll Easing", AppPrefs.0, listOf(0, 1, 2, 3), AppPrefs.KEY_V95DANMAKUSCROLLEASING)
+    }
+    internal fun PlayerActivity.showV95SubtitleBgGradientAngleDialog() {
+        showSettingsChoiceDialog("Subtitle BG Gradient Angle", AppPrefs.0, listOf(0, 90, 180, 270), AppPrefs.KEY_V95SUBTITLEBGGRADIENTANGLE)
+    }
+    internal fun PlayerActivity.showV95GestureDoubleTapTimeoutDialog() {
+        showSettingsChoiceDialog("Gesture Double Tap Timeout", AppPrefs.300, listOf(200, 250, 300, 400, 500), AppPrefs.KEY_V95GESTUREDOUBLETAPTIMEOUT)
+    }
+    internal fun PlayerActivity.showV95CastAudioBufferSizeDialog() {
+        showSettingsChoiceDialog("Cast Audio Buffer Size", AppPrefs.0, listOf(0, 1, 2, 3), AppPrefs.KEY_V95CASTAUDIOBUFFERSIZE)
+    }
+    internal fun PlayerActivity.showV95PlaylistAutoGroupByDateToggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V95PLAYLISTAUTOGROUPBYDATE)
+    }
+    internal fun PlayerActivity.showV95CacheStorageLimitDialog() {
+        showSettingsChoiceDialog("Cache Storage Limit", AppPrefs.0, listOf(0, 1, 2, 3), AppPrefs.KEY_V95CACHESTORAGELIMIT)
+    }
+    internal fun PlayerActivity.showV95ProgressBarChapterColorDialog() {
+        showSettingsChoiceDialog("Progress Bar Chapter Color", AppPrefs.0, listOf(0, 1, 2, 3), AppPrefs.KEY_V95PROGRESSBARCHAPTERCOLOR)
+    }
+    internal fun PlayerActivity.showV95VolumeAutoCrossfadeToggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V95VOLUMEAUTOCROSSFADE)
+    }
+    internal fun PlayerActivity.showV95HistoryImportAutoToggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V95HISTORYIMPORTAUTO)
+    }
+    internal fun PlayerActivity.showV95PlaybackAutoSkipEnding95Toggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V95PLAYBACKAUTOSKIPENDING95)
+    }
+    internal fun PlayerActivity.showV95ScreenshotAutoOpenAfterToggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V95SCREENSHOTAUTOOPENAFTER)
+    }
+    internal fun PlayerActivity.showV95VideoVHSEffectCustomDialog() {
+        showSettingsChoiceDialog("Video VHS Effect Custom", AppPrefs.0, listOf(0, 25, 50, 75, 100), AppPrefs.KEY_V95VIDEOVHSEFFECTCUSTOM)
+    }
+    internal fun PlayerActivity.showV95DanmakuScrollAccelerationDialog() {
+        showSettingsChoiceDialog("Danmaku Scroll Acceleration", AppPrefs.50, listOf(25, 50, 75, 100), AppPrefs.KEY_V95DANMAKUSCROLLACCELERATION)
+    }
+    internal fun PlayerActivity.showV95SubtitleBgGradientOpacityDialog() {
+        showSettingsChoiceDialog("Subtitle BG Gradient Opacity", AppPrefs.50, listOf(0, 25, 50, 75, 100), AppPrefs.KEY_V95SUBTITLEBGGRADIENTOPACITY)
+    }
+    internal fun PlayerActivity.showV96VideoNeonGlowCustomDialog() {
+        showSettingsChoiceDialog("Video Neon Glow Custom", AppPrefs.0, listOf(0, 25, 50, 75, 100), AppPrefs.KEY_V96VIDEONEONGLOWCUSTOM)
+    }
+    internal fun PlayerActivity.showV96DanmakuFontLetterSpacingDialog() {
+        showSettingsChoiceDialog("Danmaku Font Letter Spacing", AppPrefs.0, listOf(-2, -1, 0, 1, 2), AppPrefs.KEY_V96DANMAKUFONTLETTERSPACING)
+    }
+    internal fun PlayerActivity.showV96SubtitleBgGradientTypeDialog() {
+        showSettingsChoiceDialog("Subtitle BG Gradient Type", AppPrefs.0, listOf(0, 1, 2, 3), AppPrefs.KEY_V96SUBTITLEBGGRADIENTTYPE)
+    }
+    internal fun PlayerActivity.showV96GestureSwipeMinDistanceDialog() {
+        showSettingsChoiceDialog("Gesture Swipe Min Distance", AppPrefs.50, listOf(25, 50, 75, 100), AppPrefs.KEY_V96GESTURESWIPEMINDISTANCE)
+    }
+    internal fun PlayerActivity.showV96CastVideoDecodeThreadsDialog() {
+        showSettingsChoiceDialog("Cast Video Decode Threads", AppPrefs.0, listOf(0, 1, 2, 3), AppPrefs.KEY_V96CASTVIDEODECODETHREADS)
+    }
+    internal fun PlayerActivity.showV96PlaylistAutoGroupByTypeToggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V96PLAYLISTAUTOGROUPBYTYPE)
+    }
+    internal fun PlayerActivity.showV96CacheCleanupIntervalDialog() {
+        showSettingsChoiceDialog("Cache Cleanup Interval", AppPrefs.0, listOf(0, 1, 2, 3), AppPrefs.KEY_V96CACHECLEANUPINTERVAL)
+    }
+    internal fun PlayerActivity.showV96ProgressBarThumbShadowToggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V96PROGRESSBARTHUMBSHADOW)
+    }
+    internal fun PlayerActivity.showV96VolumeAutoReplayGainToggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V96VOLUMEAUTOREPLAYGAIN)
+    }
+    internal fun PlayerActivity.showV96HistoryAutoCleanMaxDaysDialog() {
+        showSettingsChoiceDialog("History Auto Clean Max Days", AppPrefs.90, listOf(30, 60, 90, 180, 365), AppPrefs.KEY_V96HISTORYAUTOCLEANMAXDAYS)
+    }
+    internal fun PlayerActivity.showV96PlaybackAutoSkipCreditsToggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V96PLAYBACKAUTOSKIPCREDITS)
+    }
+    internal fun PlayerActivity.showV96ScreenshotAutoShareTargetDialog() {
+        showSettingsChoiceDialog("Screenshot Auto Share Target", AppPrefs.0, listOf(0, 1, 2, 3), AppPrefs.KEY_V96SCREENSHOTAUTOSHARETARGET)
+    }
+    internal fun PlayerActivity.showV96VideoDreamyEffectCustomDialog() {
+        showSettingsChoiceDialog("Video Dreamy Effect Custom", AppPrefs.0, listOf(0, 25, 50, 75, 100), AppPrefs.KEY_V96VIDEODREAMYEFFECTCUSTOM)
+    }
+    internal fun PlayerActivity.showV96DanmakuScrollDecelerationDialog() {
+        showSettingsChoiceDialog("Danmaku Scroll Deceleration", AppPrefs.50, listOf(25, 50, 75, 100), AppPrefs.KEY_V96DANMAKUSCROLLDECELERATION)
+    }
+    internal fun PlayerActivity.showV96SubtitleBgGradientStartDialog() {
+        showSettingsChoiceDialog("Subtitle BG Gradient Start", AppPrefs.0, listOf(0, 1, 2, 3), AppPrefs.KEY_V96SUBTITLEBGGRADIENTSTART)
+    }
+    internal fun PlayerActivity.showV97VideoSepiaCustomDialog() {
+        showSettingsChoiceDialog("Video Sepia Custom", AppPrefs.0, listOf(0, 25, 50, 75, 100), AppPrefs.KEY_V97VIDEOSEPIACUSTOM)
+    }
+    internal fun PlayerActivity.showV97DanmakuFontWeightRangeDialog() {
+        showSettingsChoiceDialog("Danmaku Font Weight Range", AppPrefs.0, listOf(0, 1, 2, 3), AppPrefs.KEY_V97DANMAKUFONTWEIGHTRANGE)
+    }
+    internal fun PlayerActivity.showV97SubtitleBgGradientEndDialog() {
+        showSettingsChoiceDialog("Subtitle BG Gradient End", AppPrefs.0, listOf(0, 1, 2, 3), AppPrefs.KEY_V97SUBTITLEBGGRADIENTEND)
+    }
+    internal fun PlayerActivity.showV97GestureSwipeAngleThresholdDialog() {
+        showSettingsChoiceDialog("Gesture Swipe Angle Threshold", AppPrefs.30, listOf(15, 20, 30, 45, 60), AppPrefs.KEY_V97GESTURESWIPEANGLETHRESHOLD)
+    }
+    internal fun PlayerActivity.showV97CastVideoPostProcessingToggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V97CASTVIDEOPOSTPROCESSING)
+    }
+    internal fun PlayerActivity.showV97PlaylistAutoGroupBySeasonToggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V97PLAYLISTAUTOGROUPBYSEASON)
+    }
+    internal fun PlayerActivity.showV97CachePreloadPolicyDialog() {
+        showSettingsChoiceDialog("Cache Preload Policy", AppPrefs.0, listOf(0, 1, 2, 3), AppPrefs.KEY_V97CACHEPRELOADPOLICY)
+    }
+    internal fun PlayerActivity.showV97ProgressBarThumbGlowToggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V97PROGRESSBARTHUMBGLOW)
+    }
+    internal fun PlayerActivity.showV97VolumeAutoPeakLimitToggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V97VOLUMEAUTOPEAKLIMIT)
+    }
+    internal fun PlayerActivity.showV97HistoryAutoCleanMinItemsDialog() {
+        showSettingsChoiceDialog("History Auto Clean Min Items", AppPrefs.100, listOf(50, 100, 200, 500, 1000), AppPrefs.KEY_V97HISTORYAUTOCLEANMINITEMS)
+    }
+    internal fun PlayerActivity.showV97PlaybackAutoSkipRecap97Toggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V97PLAYBACKAUTOSKIPRECAP97)
+    }
+    internal fun PlayerActivity.showV97ScreenshotAutoAnnotateTextToggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V97SCREENSHOTAUTOANNOTATETEXT)
+    }
+    internal fun PlayerActivity.showV97VideoPolaroidCustomDialog() {
+        showSettingsChoiceDialog("Video Polaroid Custom", AppPrefs.0, listOf(0, 25, 50, 75, 100), AppPrefs.KEY_V97VIDEOPOLAROIDCUSTOM)
+    }
+    internal fun PlayerActivity.showV97DanmakuFontSizeMinDialog() {
+        showSettingsChoiceDialog("Danmaku Font Size Min", AppPrefs.12, listOf(8, 10, 12, 14, 16), AppPrefs.KEY_V97DANMAKUFONTSIZEMIN)
+    }
+    internal fun PlayerActivity.showV97SubtitleAnimationType97Dialog() {
+        showSettingsChoiceDialog("Subtitle Animation Type97", AppPrefs.0, listOf(0, 1, 2, 3), AppPrefs.KEY_V97SUBTITLEANIMATIONTYPE97)
+    }
+    internal fun PlayerActivity.showV98VideoNegativeCustomDialog() {
+        showSettingsChoiceDialog("Video Negative Custom", AppPrefs.0, listOf(0, 25, 50, 75, 100), AppPrefs.KEY_V98VIDEONEGATIVECUSTOM)
+    }
+    internal fun PlayerActivity.showV98DanmakuFontSizeMaxDialog() {
+        showSettingsChoiceDialog("Danmaku Font Size Max", AppPrefs.48, listOf(24, 32, 40, 48, 64), AppPrefs.KEY_V98DANMAKUFONTSIZEMAX)
+    }
+    internal fun PlayerActivity.showV98SubtitleAnimationSpeed98Dialog() {
+        showSettingsChoiceDialog("Subtitle Animation Speed98", AppPrefs.100, listOf(50, 75, 100, 125, 150), AppPrefs.KEY_V98SUBTITLEANIMATIONSPEED98)
+    }
+    internal fun PlayerActivity.showV98GesturePinchMinScaleDialog() {
+        showSettingsChoiceDialog("Gesture Pinch Min Scale", AppPrefs.50, listOf(25, 30, 50, 70, 80), AppPrefs.KEY_V98GESTUREPINCHMINSCALE)
+    }
+    internal fun PlayerActivity.showV98CastAudioPostProcessingToggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V98CASTAUDIOPOSTPROCESSING)
+    }
+    internal fun PlayerActivity.showV98PlaylistAutoGroupByGenreToggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V98PLAYLISTAUTOGROUPBYGENRE)
+    }
+    internal fun PlayerActivity.showV98CacheDownloadOnWifiToggle() {
+        AppToast.show(this, AppPrefs.True, AppPrefs.KEY_V98CACHEDOWNLOADONWIFI)
+    }
+    internal fun PlayerActivity.showV98ProgressBarThumbBorderToggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V98PROGRESSBARTHUMBBORDER)
+    }
+    internal fun PlayerActivity.showV98VolumeAutoRMSLevelToggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V98VOLUMEAUTORMSLEVEL)
+    }
+    internal fun PlayerActivity.showV98HistoryAutoCleanOnStartToggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V98HISTORYAUTOCLEANONSTART)
+    }
+    internal fun PlayerActivity.showV98PlaybackAutoSkipFiller98Toggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V98PLAYBACKAUTOSKIPFILLER98)
+    }
+    internal fun PlayerActivity.showV98ScreenshotAutoUploadCloudToggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V98SCREENSHOTAUTOUPLOADCLOUD)
+    }
+    internal fun PlayerActivity.showV98VideoMonochromeCustomDialog() {
+        showSettingsChoiceDialog("Video Monochrome Custom", AppPrefs.0, listOf(0, 25, 50, 75, 100), AppPrefs.KEY_V98VIDEOMONOCHROMECUSTOM)
+    }
+    internal fun PlayerActivity.showV98DanmakuFontStyleCustom98Dialog() {
+        showSettingsChoiceDialog("Danmaku Font Style Custom98", AppPrefs.0, listOf(0, 1, 2, 3), AppPrefs.KEY_V98DANMAKUFONTSTYLECUSTOM98)
+    }
+    internal fun PlayerActivity.showV98SubtitleAnimationEasing98Dialog() {
+        showSettingsChoiceDialog("Subtitle Animation Easing98", AppPrefs.0, listOf(0, 1, 2, 3), AppPrefs.KEY_V98SUBTITLEANIMATIONEASING98)
+    }
+    internal fun PlayerActivity.showV99VideoPosterizeCustomDialog() {
+        showSettingsChoiceDialog("Video Posterize Custom", AppPrefs.0, listOf(0, 25, 50, 75, 100), AppPrefs.KEY_V99VIDEOPOSTERIZECUSTOM)
+    }
+    internal fun PlayerActivity.showV99DanmakuFontOutlineToggleToggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V99DANMAKUFONTOUTLINETOGGLE)
+    }
+    internal fun PlayerActivity.showV99SubtitleAnimationDuration99Dialog() {
+        showSettingsChoiceDialog("Subtitle Animation Duration99", AppPrefs.300, listOf(100, 200, 300, 400, 500), AppPrefs.KEY_V99SUBTITLEANIMATIONDURATION99)
+    }
+    internal fun PlayerActivity.showV99GesturePinchMaxScaleDialog() {
+        showSettingsChoiceDialog("Gesture Pinch Max Scale", AppPrefs.200, listOf(150, 200, 250, 300, 400), AppPrefs.KEY_V99GESTUREPINCHMAXSCALE)
+    }
+    internal fun PlayerActivity.showV99CastVideoAutoQualityToggle() {
+        AppToast.show(this, AppPrefs.True, AppPrefs.KEY_V99CASTVIDEOAUTOQUALITY)
+    }
+    internal fun PlayerActivity.showV99PlaylistAutoGroupByChannelToggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V99PLAYLISTAUTOGROUPBYCHANNEL)
+    }
+    internal fun PlayerActivity.showV99CacheDownloadSpeedLimitDialog() {
+        showSettingsChoiceDialog("Cache Download Speed Limit", AppPrefs.0, listOf(0, 1, 2, 3), AppPrefs.KEY_V99CACHEDOWNLOADSPEEDLIMIT)
+    }
+    internal fun PlayerActivity.showV99ProgressBarThumbSize99Dialog() {
+        showSettingsChoiceDialog("Progress Bar Thumb Size99", AppPrefs.12, listOf(8, 10, 12, 14, 16), AppPrefs.KEY_V99PROGRESSBARTHUMBSIZE99)
+    }
+    internal fun PlayerActivity.showV99VolumeAutoLoudness99Toggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V99VOLUMEAUTOLOUDNESS99)
+    }
+    internal fun PlayerActivity.showV99HistoryAutoCleanOnExitToggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V99HISTORYAUTOCLEANONEXIT)
+    }
+    internal fun PlayerActivity.showV99PlaybackAutoSkipIntro99Toggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V99PLAYBACKAUTOSKIPINTRO99)
+    }
+    internal fun PlayerActivity.showV99ScreenshotAutoShare99Toggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V99SCREENSHOTAUTOSHARE99)
+    }
+    internal fun PlayerActivity.showV99VideoSolarizeCustomDialog() {
+        showSettingsChoiceDialog("Video Solarize Custom", AppPrefs.0, listOf(0, 25, 50, 75, 100), AppPrefs.KEY_V99VIDEOSOLARIZECUSTOM)
+    }
+    internal fun PlayerActivity.showV99DanmakuFontColorCustomDialog() {
+        showSettingsChoiceDialog("Danmaku Font Color Custom", AppPrefs.0, listOf(0, 1, 2, 3), AppPrefs.KEY_V99DANMAKUFONTCOLORCUSTOM)
+    }
+    internal fun PlayerActivity.showV99SubtitleAnimationLoop99Toggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V99SUBTITLEANIMATIONLOOP99)
+    }
+    internal fun PlayerActivity.showV100VideoDuotoneCustomDialog() {
+        showSettingsChoiceDialog("Video Duotone Custom", AppPrefs.0, listOf(0, 1, 2, 3, 4), AppPrefs.KEY_V100VIDEODUOTONECUSTOM)
+    }
+    internal fun PlayerActivity.showV100DanmakuFontBgToggleToggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V100DANMAKUFONTBGTOGGLE)
+    }
+    internal fun PlayerActivity.showV100SubtitleAnimationDelay99Dialog() {
+        showSettingsChoiceDialog("Subtitle Animation Delay99", AppPrefs.0, listOf(0, 100, 200, 300, 500), AppPrefs.KEY_V100SUBTITLEANIMATIONDELAY99)
+    }
+    internal fun PlayerActivity.showV100GesturePinchSpeed99Dialog() {
+        showSettingsChoiceDialog("Gesture Pinch Speed99", AppPrefs.50, listOf(25, 50, 75, 100), AppPrefs.KEY_V100GESTUREPINCHSPEED99)
+    }
+    internal fun PlayerActivity.showV100CastAudioAutoQualityToggle() {
+        AppToast.show(this, AppPrefs.True, AppPrefs.KEY_V100CASTAUDIOAUTOQUALITY)
+    }
+    internal fun PlayerActivity.showV100PlaylistAutoGroupAllToggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V100PLAYLISTAUTOGROUPALL)
+    }
+    internal fun PlayerActivity.showV100CacheDownloadRetryDialog() {
+        showSettingsChoiceDialog("Cache Download Retry", AppPrefs.3, listOf(1, 2, 3, 5, 10), AppPrefs.KEY_V100CACHEDOWNLOADRETRY)
+    }
+    internal fun PlayerActivity.showV100ProgressBarThumbColor99Dialog() {
+        showSettingsChoiceDialog("Progress Bar Thumb Color99", AppPrefs.0, listOf(0, 1, 2, 3), AppPrefs.KEY_V100PROGRESSBARTHUMBCOLOR99)
+    }
+    internal fun PlayerActivity.showV100VolumeAutoNormalize99Toggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V100VOLUMEAUTONORMALIZE99)
+    }
+    internal fun PlayerActivity.showV100HistoryAutoSync99Toggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V100HISTORYAUTOSYNC99)
+    }
+    internal fun PlayerActivity.showV100PlaybackAutoSkipOutro99Toggle() {
+        AppToast.show(this, AppPrefs.False, AppPrefs.KEY_V100PLAYBACKAUTOSKIPOUTRO99)
+    }
+    internal fun PlayerActivity.showV100ScreenshotAutoFormat99Dialog() {
+        showSettingsChoiceDialog("Screenshot Auto Format99", AppPrefs.0, listOf(0, 1, 2), AppPrefs.KEY_V100SCREENSHOTAUTOFORMAT99)
+    }
+    internal fun PlayerActivity.showV100VideoTintDuotoneDialog() {
+        showSettingsChoiceDialog("Video Tint Duotone", AppPrefs.0, listOf(0, 1, 2, 3, 4), AppPrefs.KEY_V100VIDEOTINTDUOTONE)
+    }
+    internal fun PlayerActivity.showV100DanmakuFontWeight99Dialog() {
+        showSettingsChoiceDialog("Danmaku Font Weight99", AppPrefs.400, listOf(100, 200, 300, 400, 500, 600, 700, 800, 900), AppPrefs.KEY_V100DANMAKUFONTWEIGHT99)
+    }
+    internal fun PlayerActivity.showV100SubtitleAnimationType99Dialog() {
+        showSettingsChoiceDialog("Subtitle Animation Type99", AppPrefs.0, listOf(0, 1, 2, 3), AppPrefs.KEY_V100SUBTITLEANIMATIONTYPE99)
+    }
     }
 }
