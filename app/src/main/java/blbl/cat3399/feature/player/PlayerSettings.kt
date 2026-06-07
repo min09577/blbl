@@ -9177,4 +9177,19 @@ internal fun PlayerActivity.showv33SubtitleBorderWidthDialog() {
         .show()
 }
 
+
+// 33.7: HDR色调映射
+internal fun PlayerActivity.showv33VideoHdrToneMapDialog() {
+    val current = BiliClient.prefs.v33VideoHdrToneMap
+    AppPopup.Builder(this)
+        .title("HDR色调映射")
+        .option("0") { BiliClient.prefs.v33VideoHdrToneMap = 0 }
+        .option("1") { BiliClient.prefs.v33VideoHdrToneMap = 1 }
+        .option("2") { BiliClient.prefs.v33VideoHdrToneMap = 2 }
+        .option("3") { BiliClient.prefs.v33VideoHdrToneMap = 3 }
+        .option("5") { BiliClient.prefs.v33VideoHdrToneMap = 5 }
+        .option("10") { BiliClient.prefs.v33VideoHdrToneMap = 10 }
+        .show()
+}
+
 }

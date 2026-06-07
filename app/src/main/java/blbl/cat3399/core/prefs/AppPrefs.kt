@@ -1832,6 +1832,11 @@ class AppPrefs(context: Context) {
     var v33SubtitleBorderWidth: Int
         get() = prefs.getInt(KEY_V33_SUBTITLE_BORDER_WIDTH, 0)
         set(value) = prefs.edit().putInt(KEY_V33_SUBTITLE_BORDER_WIDTH, value).apply()
+    // v33.7: HDR色调映射
+    var v33VideoHdrToneMap: Int
+        get() = prefs.getInt(KEY_V33_VIDEO_HDR_TONE_MAP, 0)
+        set(value) = prefs.edit().putInt(KEY_V33_VIDEO_HDR_TONE_MAP, value).apply()
+
 
 
 
@@ -3827,6 +3832,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V33_PLAYER_DOUBLE_TAP_SEEK_SEC = "v33_player_double_tap_seek_sec"
         private const val KEY_V33_DANMAKU_LINE_NUMBER = "v33_danmaku_line_number"
         private const val KEY_V33_SUBTITLE_BORDER_WIDTH = "v33_subtitle_border_width"
+        private const val KEY_V33_VIDEO_HDR_TONE_MAP = "v33_video_hdr_tone_map"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
