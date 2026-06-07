@@ -2146,6 +2146,11 @@ class AppPrefs(context: Context) {
     var v38DanmakuWrapText: Boolean
         get() = prefs.getBoolean(KEY_V38_DANMAKU_WRAP_TEXT, false)
         set(value) = prefs.edit().putBoolean(KEY_V38_DANMAKU_WRAP_TEXT, value).apply()
+    // v38.6: 字幕字间距
+    var v38SubtitleLetterSpacing: Int
+        get() = prefs.getInt(KEY_V38_SUBTITLE_LETTER_SPACING, 0)
+        set(value) = prefs.edit().putInt(KEY_V38_SUBTITLE_LETTER_SPACING, value).apply()
+
 
 
 
@@ -4298,6 +4303,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V38_AUDIO_HIGH_SHELF_GAIN = "v38_audio_high_shelf_gain"
         private const val KEY_V38_PLAYER_SEEK_PREVIEW_FRAME = "v38_player_seek_preview_frame"
         private const val KEY_V38_DANMAKU_WRAP_TEXT = "v38_danmaku_wrap_text"
+        private const val KEY_V38_SUBTITLE_LETTER_SPACING = "v38_subtitle_letter_spacing"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
