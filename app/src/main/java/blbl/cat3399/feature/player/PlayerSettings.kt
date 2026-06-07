@@ -1388,6 +1388,15 @@ internal fun PlayerActivity.showv37PlayerResumeThresholdDialog() {
         .option("10") { BiliClient.prefs.v37PlayerResumeThreshold = 10 }
         .show()
 }
+// 37.5: 弹幕注音显示
+internal fun PlayerActivity.showv37DanmakuFuriganaShowToggle() {
+    val current = BiliClient.prefs.v37DanmakuFuriganaShow
+    AppPopup.Builder(this)
+        .title("弹幕注音显示")
+        .option(switchText(current)) { BiliClient.prefs.v37DanmakuFuriganaShow = !current }
+        .show()
+}
+
 
 
 
