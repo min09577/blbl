@@ -1884,6 +1884,11 @@ class AppPrefs(context: Context) {
     var v34PlayerGestureCustomMap: Boolean
         get() = prefs.getBoolean(KEY_V34_PLAYER_GESTURE_CUSTOM_MAP, false)
         set(value) = prefs.edit().putBoolean(KEY_V34_PLAYER_GESTURE_CUSTOM_MAP, value).apply()
+    // v34.5: 弹幕正则屏蔽
+    var v34DanmakuShieldRegex: Boolean
+        get() = prefs.getBoolean(KEY_V34_DANMAKU_SHIELD_REGEX, false)
+        set(value) = prefs.edit().putBoolean(KEY_V34_DANMAKU_SHIELD_REGEX, value).apply()
+
 
 
 
@@ -3905,6 +3910,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V34_VIDEO_BRIGHTNESS_SENSOR = "v34_video_brightness_sensor"
         private const val KEY_V34_AUDIO_COMPRESSOR_THRESHOLD = "v34_audio_compressor_threshold"
         private const val KEY_V34_PLAYER_GESTURE_CUSTOM_MAP = "v34_player_gesture_custom_map"
+        private const val KEY_V34_DANMAKU_SHIELD_REGEX = "v34_danmaku_shield_regex"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(

@@ -9337,4 +9337,14 @@ internal fun PlayerActivity.showv34PlayerGestureCustomMapToggle() {
         .show()
 }
 
+
+// 34.5: 弹幕正则屏蔽
+internal fun PlayerActivity.showv34DanmakuShieldRegexToggle() {
+    val current = BiliClient.prefs.v34DanmakuShieldRegex
+    AppPopup.Builder(this)
+        .title("弹幕正则屏蔽")
+        .option(switchText(current)) { BiliClient.prefs.v34DanmakuShieldRegex = !current }
+        .show()
+}
+
 }
