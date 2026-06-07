@@ -9288,4 +9288,19 @@ internal fun PlayerActivity.showv33PlaylistReverseOrderToggle() {
         .show()
 }
 
+
+// 34.1: 弹幕最大显示时长(秒)
+internal fun PlayerActivity.showv34DanmakuMaxDisplaySecDialog() {
+    val current = BiliClient.prefs.v34DanmakuMaxDisplaySec
+    AppPopup.Builder(this)
+        .title("弹幕最大显示时长(秒)")
+        .option("0") { BiliClient.prefs.v34DanmakuMaxDisplaySec = 0 }
+        .option("1") { BiliClient.prefs.v34DanmakuMaxDisplaySec = 1 }
+        .option("2") { BiliClient.prefs.v34DanmakuMaxDisplaySec = 2 }
+        .option("3") { BiliClient.prefs.v34DanmakuMaxDisplaySec = 3 }
+        .option("5") { BiliClient.prefs.v34DanmakuMaxDisplaySec = 5 }
+        .option("10") { BiliClient.prefs.v34DanmakuMaxDisplaySec = 10 }
+        .show()
+}
+
 }
