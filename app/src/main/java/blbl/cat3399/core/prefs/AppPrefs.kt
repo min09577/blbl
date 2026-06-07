@@ -2012,6 +2012,11 @@ class AppPrefs(context: Context) {
     var v36SubtitleEdgeBlur: Int
         get() = prefs.getInt(KEY_V36_SUBTITLE_EDGE_BLUR, 0)
         set(value) = prefs.edit().putInt(KEY_V36_SUBTITLE_EDGE_BLUR, value).apply()
+    // v36.7: 色彩LUT预设
+    var v36VideoColorLutPreset: Int
+        get() = prefs.getInt(KEY_V36_VIDEO_COLOR_LUT_PRESET, 0)
+        set(value) = prefs.edit().putInt(KEY_V36_VIDEO_COLOR_LUT_PRESET, value).apply()
+
 
 
 
@@ -4097,6 +4102,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V36_PLAYER_SKIP_OUTRO_SEC = "v36_player_skip_outro_sec"
         private const val KEY_V36_DANMAKU_AUTO_SCALE = "v36_danmaku_auto_scale"
         private const val KEY_V36_SUBTITLE_EDGE_BLUR = "v36_subtitle_edge_blur"
+        private const val KEY_V36_VIDEO_COLOR_LUT_PRESET = "v36_video_color_lut_preset"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
