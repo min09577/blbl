@@ -1346,6 +1346,15 @@ internal fun PlayerActivity.showv36PlaylistAutoplayNextEpisodeToggle() {
         .option(switchText(current)) { BiliClient.prefs.v36PlaylistAutoplayNextEpisode = !current }
         .show()
 }
+// 37.1: 黑边自动检测
+internal fun PlayerActivity.showv37VideoBlackBarDetectToggle() {
+    val current = BiliClient.prefs.v37VideoBlackBarDetect
+    AppPopup.Builder(this)
+        .title("黑边自动检测")
+        .option(switchText(current)) { BiliClient.prefs.v37VideoBlackBarDetect = !current }
+        .show()
+}
+
 
 
 
