@@ -2280,6 +2280,11 @@ class AppPrefs(context: Context) {
     var v38VideoGammaCurve: Int
         get() = prefs.getInt(KEY_V38_VIDEO_GAMMA_CURVE, 0)
         set(value) = prefs.edit().putInt(KEY_V38_VIDEO_GAMMA_CURVE, value).apply()
+    // v39.5: 弹幕紧凑模式
+    var v39DanmakuCompactMode: Boolean
+        get() = prefs.getBoolean(KEY_V39_DANMAKU_COMPACT_MODE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V39_DANMAKU_COMPACT_MODE, value).apply()
+
     // v39.4: 自动亮度范围
     var v39PlayerAutoBrightnessRange: Int
         get() = prefs.getInt(KEY_V39_PLAYER_AUTO_BRIGHTNESS_RANGE, 0)
@@ -3869,3 +3874,4 @@ class AppPrefs(context: Context) {
         private const val KEY_V39_DANMAKU_CLOUD_PATTERN = "v39_danmaku_cloud_pattern"
         private const val KEY_V39_AUDIO_MID_FREQ_GAIN = "v39_audio_mid_freq_gain"
         private const val KEY_V39_PLAYER_AUTO_BRIGHTNESS_RANGE = "v39_player_auto_brightness_range"
+        private const val KEY_V39_DANMAKU_COMPACT_MODE = "v39_danmaku_compact_mode"
