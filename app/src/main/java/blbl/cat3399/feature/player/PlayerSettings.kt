@@ -1913,6 +1913,15 @@ internal fun PlayerActivity.showv40DanmakuFadeInDurationDialog() {
         .option("10") { BiliClient.prefs.v40DanmakuFadeInDuration = 10 }
         .show()
 }
+// 40.10: 变速保调
+internal fun PlayerActivity.showv40AudioPreservePitchToggle() {
+    val current = BiliClient.prefs.v40AudioPreservePitch
+    AppPopup.Builder(this)
+        .title("变速保调")
+        .option(switchText(current)) { BiliClient.prefs.v40AudioPreservePitch = !current }
+        .show()
+}
+
 
 
 
