@@ -1760,6 +1760,15 @@ internal fun PlayerActivity.showv39PlaybackNetworkAdaptToggle() {
         .option(switchText(current)) { BiliClient.prefs.v39PlaybackNetworkAdapt = !current }
         .show()
 }
+// 39.9: 弹幕拖影效果
+internal fun PlayerActivity.showv39DanmakuGhostTrailToggle() {
+    val current = BiliClient.prefs.v39DanmakuGhostTrail
+    AppPopup.Builder(this)
+        .title("弹幕拖影效果")
+        .option(switchText(current)) { BiliClient.prefs.v39DanmakuGhostTrail = !current }
+        .show()
+}
+
 
 
 

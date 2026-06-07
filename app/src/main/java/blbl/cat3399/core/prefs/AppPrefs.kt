@@ -2280,6 +2280,11 @@ class AppPrefs(context: Context) {
     var v38VideoGammaCurve: Int
         get() = prefs.getInt(KEY_V38_VIDEO_GAMMA_CURVE, 0)
         set(value) = prefs.edit().putInt(KEY_V38_VIDEO_GAMMA_CURVE, value).apply()
+    // v39.9: 弹幕拖影效果
+    var v39DanmakuGhostTrail: Boolean
+        get() = prefs.getBoolean(KEY_V39_DANMAKU_GHOST_TRAIL, false)
+        set(value) = prefs.edit().putBoolean(KEY_V39_DANMAKU_GHOST_TRAIL, value).apply()
+
     // v39.8: 网络自适应播放
     var v39PlaybackNetworkAdapt: Boolean
         get() = prefs.getBoolean(KEY_V39_PLAYBACK_NETWORK_ADAPT, false)
@@ -3893,3 +3898,4 @@ class AppPrefs(context: Context) {
         private const val KEY_V39_SUBTITLE_ANIMATION_TYPE = "v39_subtitle_animation_type"
         private const val KEY_V39_VIDEO_DETAIL_INFO_BAR = "v39_video_detail_info_bar"
         private const val KEY_V39_PLAYBACK_NETWORK_ADAPT = "v39_playback_network_adapt"
+        private const val KEY_V39_DANMAKU_GHOST_TRAIL = "v39_danmaku_ghost_trail"
