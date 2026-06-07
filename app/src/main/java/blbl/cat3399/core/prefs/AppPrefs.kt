@@ -1882,6 +1882,11 @@ class AppPrefs(context: Context) {
     var v33SubtitleShadowOffset: Int
         get() = prefs.getInt(KEY_V33_SUBTITLE_SHADOW_OFFSET, 0)
         set(value) = prefs.edit().putInt(KEY_V33_SUBTITLE_SHADOW_OFFSET, value).apply()
+    // v33.15: 播放列表倒序
+    var v33PlaylistReverseOrder: Boolean
+        get() = prefs.getBoolean(KEY_V33_PLAYLIST_REVERSE_ORDER, false)
+        set(value) = prefs.edit().putBoolean(KEY_V33_PLAYLIST_REVERSE_ORDER, value).apply()
+
 
 
 
@@ -3902,6 +3907,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V33_VIDEO_ROTATION_LOCK = "v33_video_rotation_lock"
         private const val KEY_V33_DANMAKU_REPEAT_FILTER = "v33_danmaku_repeat_filter"
         private const val KEY_V33_SUBTITLE_SHADOW_OFFSET = "v33_subtitle_shadow_offset"
+        private const val KEY_V33_PLAYLIST_REVERSE_ORDER = "v33_playlist_reverse_order"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(

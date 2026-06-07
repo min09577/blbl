@@ -9278,4 +9278,14 @@ internal fun PlayerActivity.showv33SubtitleShadowOffsetDialog() {
         .show()
 }
 
+
+// 33.15: 播放列表倒序
+internal fun PlayerActivity.showv33PlaylistReverseOrderToggle() {
+    val current = BiliClient.prefs.v33PlaylistReverseOrder
+    AppPopup.Builder(this)
+        .title("播放列表倒序")
+        .option(switchText(current)) { BiliClient.prefs.v33PlaylistReverseOrder = !current }
+        .show()
+}
+
 }
