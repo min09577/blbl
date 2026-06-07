@@ -10193,4 +10193,14 @@ internal fun PlayerActivity.showv38VideoSaturationBoostDialog() {
         .show()
 }
 
+
+// 38.13: 弹幕悬停暂停
+internal fun PlayerActivity.showv38DanmakuHoverPauseToggle() {
+    val current = BiliClient.prefs.v38DanmakuHoverPause
+    AppPopup.Builder(this)
+        .title("弹幕悬停暂停")
+        .option(switchText(current)) { BiliClient.prefs.v38DanmakuHoverPause = !current }
+        .show()
+}
+
 }
