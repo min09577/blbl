@@ -8938,4 +8938,14 @@ internal fun PlayerActivity.showv32ScreenOffTimerDialog() {
         .show()
 }
 
+
+// 32.2: 弹幕雨模式
+internal fun PlayerActivity.showv32DanmakuRainModeToggle() {
+    val current = BiliClient.prefs.v32DanmakuRainMode
+    AppPopup.Builder(this)
+        .title("弹幕雨模式")
+        .option(switchText(current)) { BiliClient.prefs.v32DanmakuRainMode = !current }
+        .show()
+}
+
 }

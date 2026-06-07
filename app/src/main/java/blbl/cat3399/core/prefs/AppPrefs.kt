@@ -1770,6 +1770,11 @@ class AppPrefs(context: Context) {
     var v32ScreenOffTimer: Int
         get() = prefs.getInt(KEY_V32_SCREEN_OFF_TIMER, 0)
         set(value) = prefs.edit().putInt(KEY_V32_SCREEN_OFF_TIMER, value).apply()
+    // v32.2: 弹幕雨模式
+    var v32DanmakuRainMode: Boolean
+        get() = prefs.getBoolean(KEY_V32_DANMAKU_RAIN_MODE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V32_DANMAKU_RAIN_MODE, value).apply()
+
 
 
 
@@ -3734,6 +3739,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V31_DANMAKU_BLOCK_USER_LEVEL = "v31_danmaku_block_user_level"
         private const val KEY_V31_VIDEO_CODEC_PRIORITY = "v31_video_codec_priority"
         private const val KEY_V32_SCREEN_OFF_TIMER = "v32_screen_off_timer"
+        private const val KEY_V32_DANMAKU_RAIN_MODE = "v32_danmaku_rain_mode"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
