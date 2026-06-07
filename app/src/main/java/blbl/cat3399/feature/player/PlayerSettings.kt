@@ -10162,4 +10162,19 @@ internal fun PlayerActivity.showv38AudioLowShelfGainDialog() {
         .show()
 }
 
+
+// 38.11: 倍速步进值(0.1x)
+internal fun PlayerActivity.showv38PlayerSpeedStepDialog() {
+    val current = BiliClient.prefs.v38PlayerSpeedStep
+    AppPopup.Builder(this)
+        .title("倍速步进值(0.1x)")
+        .option("0") { BiliClient.prefs.v38PlayerSpeedStep = 0 }
+        .option("1") { BiliClient.prefs.v38PlayerSpeedStep = 1 }
+        .option("2") { BiliClient.prefs.v38PlayerSpeedStep = 2 }
+        .option("3") { BiliClient.prefs.v38PlayerSpeedStep = 3 }
+        .option("5") { BiliClient.prefs.v38PlayerSpeedStep = 5 }
+        .option("10") { BiliClient.prefs.v38PlayerSpeedStep = 10 }
+        .show()
+}
+
 }
