@@ -1688,6 +1688,11 @@ class AppPrefs(context: Context) {
     var v30DanmakuFontGlow: Int
         get() = prefs.getInt(KEY_V30_DANMAKU_FONT_GLOW, 0)
         set(value) = prefs.edit().putInt(KEY_V30_DANMAKU_FONT_GLOW, value.coerceIn(0, 100)).apply()
+    // v31.8: 弹幕关键词高亮
+    var v31DanmakuKeywordHighlight: Boolean
+        get() = prefs.getBoolean(KEY_V31_DANMAKU_KEYWORD_HIGHLIGHT, false)
+        set(value) = prefs.edit().putBoolean(KEY_V31_DANMAKU_KEYWORD_HIGHLIGHT, value).apply()
+
     // v31.7: 音频夜间模式
     var v31AudioNightMode: Boolean
         get() = prefs.getBoolean(KEY_V31_AUDIO_NIGHT_MODE, false)
@@ -2886,6 +2891,7 @@ class AppPrefs(context: Context) {
         const val DANMAKU_LANE_DENSITY_STANDARD = "standard"
         const val DANMAKU_LANE_DENSITY_DENSE = "dense"
         // v5.4: 极疏/极密
+        private const val KEY_V31_DANMAKU_KEYWORD_HIGHLIGHT = "v31_danmaku_keyword_highlight"
         const val DANMAKU_LANE_DENSITY_VERY_SPARSE = "very_sparse"
         const val DANMAKU_LANE_DENSITY_VERY_DENSE = "very_dense"
 
