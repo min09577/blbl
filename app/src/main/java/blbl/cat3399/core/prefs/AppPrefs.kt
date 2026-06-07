@@ -1836,6 +1836,11 @@ class AppPrefs(context: Context) {
     var v32ScreenOffTimer: Int
         get() = prefs.getInt(KEY_V32_SCREEN_OFF_TIMER, 0)
         set(value) = prefs.edit().putInt(KEY_V32_SCREEN_OFF_TIMER, value).apply()
+    // v33.2: 弹幕滚动方向
+    var v33DanmakuScrollDirection: Int
+        get() = prefs.getInt(KEY_V33_DANMAKU_SCROLL_DIRECTION, 0)
+        set(value) = prefs.edit().putInt(KEY_V33_DANMAKU_SCROLL_DIRECTION, value).apply()
+
     // v33.1: 低音增强
     var v33AudioBassBoost: Int
         get() = prefs.getInt(KEY_V33_AUDIO_BASS_BOOST, 0)
@@ -3130,6 +3135,7 @@ class AppPrefs(context: Context) {
         const val PLAYER_PLAYBACK_MODE_RANDOM = "random"
 
         val PLAYER_SHORT_SEEK_STEP_SECONDS_OPTIONS: Set<Int> = linkedSetOf(3, 5, 8, 10, 15, 20)
+        private const val KEY_V33_DANMAKU_SCROLL_DIRECTION = "v33_danmaku_scroll_direction"
         const val PLAYER_SHORT_SEEK_STEP_SECONDS_DEFAULT = 10
 
         const val PLAYER_HOLD_SEEK_MODE_SPEED = "speed"
