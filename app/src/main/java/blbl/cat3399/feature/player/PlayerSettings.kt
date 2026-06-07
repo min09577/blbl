@@ -1781,6 +1781,15 @@ internal fun PlayerActivity.showv39AudioDynamicRangeDialog() {
         .option("10") { BiliClient.prefs.v39AudioDynamicRange = 10 }
         .show()
 }
+// 39.11: 进度提示Toast
+internal fun PlayerActivity.showv39PlayerProgressToastToggle() {
+    val current = BiliClient.prefs.v39PlayerProgressToast
+    AppPopup.Builder(this)
+        .title("进度提示Toast")
+        .option(switchText(current)) { BiliClient.prefs.v39PlayerProgressToast = !current }
+        .show()
+}
+
 
 
 

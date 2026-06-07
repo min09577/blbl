@@ -2280,6 +2280,11 @@ class AppPrefs(context: Context) {
     var v38VideoGammaCurve: Int
         get() = prefs.getInt(KEY_V38_VIDEO_GAMMA_CURVE, 0)
         set(value) = prefs.edit().putInt(KEY_V38_VIDEO_GAMMA_CURVE, value).apply()
+    // v39.11: 进度提示Toast
+    var v39PlayerProgressToast: Boolean
+        get() = prefs.getBoolean(KEY_V39_PLAYER_PROGRESS_TOAST, false)
+        set(value) = prefs.edit().putBoolean(KEY_V39_PLAYER_PROGRESS_TOAST, value).apply()
+
     // v39.10: 动态范围压缩
     var v39AudioDynamicRange: Int
         get() = prefs.getInt(KEY_V39_AUDIO_DYNAMIC_RANGE, 0)
@@ -3905,3 +3910,4 @@ class AppPrefs(context: Context) {
         private const val KEY_V39_PLAYBACK_NETWORK_ADAPT = "v39_playback_network_adapt"
         private const val KEY_V39_DANMAKU_GHOST_TRAIL = "v39_danmaku_ghost_trail"
         private const val KEY_V39_AUDIO_DYNAMIC_RANGE = "v39_audio_dynamic_range"
+        private const val KEY_V39_PLAYER_PROGRESS_TOAST = "v39_player_progress_toast"
