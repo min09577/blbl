@@ -1910,6 +1910,11 @@ class AppPrefs(context: Context) {
     var v33AudioBassBoost: Int
         get() = prefs.getInt(KEY_V33_AUDIO_BASS_BOOST, 0)
         set(value) = prefs.edit().putInt(KEY_V33_AUDIO_BASS_BOOST, value).apply()
+    // v34.10: 均衡器预设
+    var v34AudioEqPreset: Int
+        get() = prefs.getInt(KEY_V34_AUDIO_EQ_PRESET, 0)
+        set(value) = prefs.edit().putInt(KEY_V34_AUDIO_EQ_PRESET, value).apply()
+
     // v34.9: 弹幕镜像翻转
     var v34DanmakuMirrorFlip: Boolean
         get() = prefs.getBoolean(KEY_V34_DANMAKU_MIRROR_FLIP, false)
@@ -3362,6 +3367,7 @@ class AppPrefs(context: Context) {
             java.security.SecureRandom().nextBytes(bytes)
             val md5 = java.security.MessageDigest.getInstance("MD5").digest(bytes)
             val hex = buildString(md5.size * 2) { md5.forEach { append(String.format(java.util.Locale.US, "%02x", it)) } }
+        private const val KEY_V34_AUDIO_EQ_PRESET = "v34_audio_eq_preset"
             return "XY${hex[2]}${hex[12]}${hex[22]}$hex"
         }
 
