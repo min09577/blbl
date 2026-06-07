@@ -1762,6 +1762,11 @@ class AppPrefs(context: Context) {
     var v31DanmakuMergeOverlap: Boolean
         get() = prefs.getBoolean(KEY_V31_DANMAKU_MERGE_OVERLAP, false)
         set(value) = prefs.edit().putBoolean(KEY_V31_DANMAKU_MERGE_OVERLAP, value).apply()
+    // v32.11: 音频虚拟环绕声
+    var v32AudioVirtualSurround: Boolean
+        get() = prefs.getBoolean(KEY_V32_AUDIO_VIRTUAL_SURROUND, false)
+        set(value) = prefs.edit().putBoolean(KEY_V32_AUDIO_VIRTUAL_SURROUND, value).apply()
+
     // v32.10: 变速平滑过渡
     var v32VideoSpeedRampMode: Boolean
         get() = prefs.getBoolean(KEY_V32_VIDEO_SPEED_RAMP_MODE, false)
@@ -3068,6 +3073,7 @@ class AppPrefs(context: Context) {
         const val PLAYER_ENGINE_EXO = "exoplayer"
         const val PLAYER_ENGINE_IJK = "ijkplayer"
 
+        private const val KEY_V32_AUDIO_VIRTUAL_SURROUND = "v32_audio_virtual_surround"
         const val PLAYER_STYLE_FULLSCREEN = "fullscreen"
         const val PLAYER_STYLE_HD = "hd"
 
