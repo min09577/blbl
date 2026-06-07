@@ -2354,6 +2354,11 @@ class AppPrefs(context: Context) {
     var v39VideoTbnSyncMode: Int
         get() = prefs.getInt(KEY_V39_VIDEO_TBN_SYNC_MODE, 0)
         set(value) = prefs.edit().putInt(KEY_V39_VIDEO_TBN_SYNC_MODE, value).apply()
+    // v40.5: B站表情解析
+    var v40DanmakuBiliEmoteParse: Boolean
+        get() = prefs.getBoolean(KEY_V40_DANMAKU_BILI_EMOTE_PARSE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V40_DANMAKU_BILI_EMOTE_PARSE, value).apply()
+
     // v40.4: 快捷键自定义映射
     var v40PlayerKeyShortcutMap: Boolean
         get() = prefs.getBoolean(KEY_V40_PLAYER_KEY_SHORTCUT_MAP, false)
@@ -3963,3 +3968,4 @@ class AppPrefs(context: Context) {
         private const val KEY_V40_DANMAKU_VINTAGE_MODE = "v40_danmaku_vintage_mode"
         private const val KEY_V40_AUDIO_VOCAL_REMOVE = "v40_audio_vocal_remove"
         private const val KEY_V40_PLAYER_KEY_SHORTCUT_MAP = "v40_player_key_shortcut_map"
+        private const val KEY_V40_DANMAKU_BILI_EMOTE_PARSE = "v40_danmaku_bili_emote_parse"
