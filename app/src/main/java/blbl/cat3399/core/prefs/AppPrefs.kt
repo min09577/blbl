@@ -2196,6 +2196,11 @@ class AppPrefs(context: Context) {
     var v39VideoDetailInfoBar: Boolean
         get() = prefs.getBoolean(KEY_V39_VIDEO_DETAIL_INFO_BAR, false)
         set(value) = prefs.edit().putBoolean(KEY_V39_VIDEO_DETAIL_INFO_BAR, value).apply()
+    // v39.8: 网络自适应播放
+    var v39PlaybackNetworkAdapt: Boolean
+        get() = prefs.getBoolean(KEY_V39_PLAYBACK_NETWORK_ADAPT, false)
+        set(value) = prefs.edit().putBoolean(KEY_V39_PLAYBACK_NETWORK_ADAPT, value).apply()
+
 
 
 
@@ -4373,6 +4378,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V39_DANMAKU_COMPACT_MODE = "v39_danmaku_compact_mode"
         private const val KEY_V39_SUBTITLE_ANIMATION_TYPE = "v39_subtitle_animation_type"
         private const val KEY_V39_VIDEO_DETAIL_INFO_BAR = "v39_video_detail_info_bar"
+        private const val KEY_V39_PLAYBACK_NETWORK_ADAPT = "v39_playback_network_adapt"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
