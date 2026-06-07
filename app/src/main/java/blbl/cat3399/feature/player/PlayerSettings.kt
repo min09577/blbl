@@ -9613,4 +9613,19 @@ internal fun PlayerActivity.showv35DanmakuAnimationSpeedDialog() {
         .show()
 }
 
+
+// 35.14: 字幕行间距
+internal fun PlayerActivity.showv35SubtitleLineSpacingDialog() {
+    val current = BiliClient.prefs.v35SubtitleLineSpacing
+    AppPopup.Builder(this)
+        .title("字幕行间距")
+        .option("0") { BiliClient.prefs.v35SubtitleLineSpacing = 0 }
+        .option("1") { BiliClient.prefs.v35SubtitleLineSpacing = 1 }
+        .option("2") { BiliClient.prefs.v35SubtitleLineSpacing = 2 }
+        .option("3") { BiliClient.prefs.v35SubtitleLineSpacing = 3 }
+        .option("5") { BiliClient.prefs.v35SubtitleLineSpacing = 5 }
+        .option("10") { BiliClient.prefs.v35SubtitleLineSpacing = 10 }
+        .show()
+}
+
 }
