@@ -9048,4 +9048,19 @@ internal fun PlayerActivity.showv32DanmakuBubbleStyleToggle() {
         .show()
 }
 
+
+// 32.13: 播放器锁定超时(秒)
+internal fun PlayerActivity.showv32PlayerLockTimeoutDialog() {
+    val current = BiliClient.prefs.v32PlayerLockTimeout
+    AppPopup.Builder(this)
+        .title("播放器锁定超时(秒)")
+        .option("0") { BiliClient.prefs.v32PlayerLockTimeout = 0 }
+        .option("1") { BiliClient.prefs.v32PlayerLockTimeout = 1 }
+        .option("2") { BiliClient.prefs.v32PlayerLockTimeout = 2 }
+        .option("3") { BiliClient.prefs.v32PlayerLockTimeout = 3 }
+        .option("5") { BiliClient.prefs.v32PlayerLockTimeout = 5 }
+        .option("10") { BiliClient.prefs.v32PlayerLockTimeout = 10 }
+        .show()
+}
+
 }
