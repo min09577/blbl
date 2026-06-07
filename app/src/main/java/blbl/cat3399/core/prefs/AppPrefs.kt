@@ -1910,6 +1910,11 @@ class AppPrefs(context: Context) {
     var v33AudioBassBoost: Int
         get() = prefs.getInt(KEY_V33_AUDIO_BASS_BOOST, 0)
         set(value) = prefs.edit().putInt(KEY_V33_AUDIO_BASS_BOOST, value).apply()
+    // v34.15: 单曲循环模式
+    var v34PlaylistRepeatSingle: Boolean
+        get() = prefs.getBoolean(KEY_V34_PLAYLIST_REPEAT_SINGLE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V34_PLAYLIST_REPEAT_SINGLE, value).apply()
+
     // v34.14: 字幕自定义颜色
     var v34SubtitleTextColorCustom: Boolean
         get() = prefs.getBoolean(KEY_V34_SUBTITLE_TEXT_COLOR_CUSTOM, false)
@@ -3412,6 +3417,7 @@ class AppPrefs(context: Context) {
 
         private fun isValidUuid(text: String): Boolean {
             return runCatching {
+        private const val KEY_V34_PLAYLIST_REPEAT_SINGLE = "v34_playlist_repeat_single"
                 UUID.fromString(text.trim())
                 true
             }.getOrDefault(false)

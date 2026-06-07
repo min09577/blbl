@@ -1018,6 +1018,15 @@ internal fun PlayerActivity.showv34SubtitleTextColorCustomToggle() {
         .option(switchText(current)) { BiliClient.prefs.v34SubtitleTextColorCustom = !current }
         .show()
 }
+// 34.15: 单曲循环模式
+internal fun PlayerActivity.showv34PlaylistRepeatSingleToggle() {
+    val current = BiliClient.prefs.v34PlaylistRepeatSingle
+    AppPopup.Builder(this)
+        .title("单曲循环模式")
+        .option(switchText(current)) { BiliClient.prefs.v34PlaylistRepeatSingle = !current }
+        .show()
+}
+
 
 
 
