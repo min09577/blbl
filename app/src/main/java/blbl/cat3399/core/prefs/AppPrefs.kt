@@ -1716,6 +1716,11 @@ class AppPrefs(context: Context) {
     var v31AudioNightMode: Boolean
         get() = prefs.getBoolean(KEY_V31_AUDIO_NIGHT_MODE, false)
         set(value) = prefs.edit().putBoolean(KEY_V31_AUDIO_NIGHT_MODE, value).apply()
+    // v31.8: 弹幕关键词高亮
+    var v31DanmakuKeywordHighlight: Boolean
+        get() = prefs.getBoolean(KEY_V31_DANMAKU_KEYWORD_HIGHLIGHT, false)
+        set(value) = prefs.edit().putBoolean(KEY_V31_DANMAKU_KEYWORD_HIGHLIGHT, value).apply()
+
 
 
 
@@ -3653,6 +3658,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V31_DANMAKU_ANTI_SPAM_LEVEL = "v31_danmaku_anti_spam_level"
         private const val KEY_V31_VIDEO_DEINTERLACE_MODE = "v31_video_deinterlace_mode"
         private const val KEY_V31_AUDIO_NIGHT_MODE = "v31_audio_night_mode"
+        private const val KEY_V31_DANMAKU_KEYWORD_HIGHLIGHT = "v31_danmaku_keyword_highlight"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
