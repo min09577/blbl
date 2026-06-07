@@ -9192,4 +9192,19 @@ internal fun PlayerActivity.showv33VideoHdrToneMapDialog() {
         .show()
 }
 
+
+// 33.8: 跳过片头秒数
+internal fun PlayerActivity.showv33PlaybackSkipIntroSecDialog() {
+    val current = BiliClient.prefs.v33PlaybackSkipIntroSec
+    AppPopup.Builder(this)
+        .title("跳过片头秒数")
+        .option("0") { BiliClient.prefs.v33PlaybackSkipIntroSec = 0 }
+        .option("1") { BiliClient.prefs.v33PlaybackSkipIntroSec = 1 }
+        .option("2") { BiliClient.prefs.v33PlaybackSkipIntroSec = 2 }
+        .option("3") { BiliClient.prefs.v33PlaybackSkipIntroSec = 3 }
+        .option("5") { BiliClient.prefs.v33PlaybackSkipIntroSec = 5 }
+        .option("10") { BiliClient.prefs.v33PlaybackSkipIntroSec = 10 }
+        .show()
+}
+
 }

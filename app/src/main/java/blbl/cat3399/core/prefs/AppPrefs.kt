@@ -1836,6 +1836,11 @@ class AppPrefs(context: Context) {
     var v33VideoHdrToneMap: Int
         get() = prefs.getInt(KEY_V33_VIDEO_HDR_TONE_MAP, 0)
         set(value) = prefs.edit().putInt(KEY_V33_VIDEO_HDR_TONE_MAP, value).apply()
+    // v33.8: 跳过片头秒数
+    var v33PlaybackSkipIntroSec: Int
+        get() = prefs.getInt(KEY_V33_PLAYBACK_SKIP_INTRO_SEC, 0)
+        set(value) = prefs.edit().putInt(KEY_V33_PLAYBACK_SKIP_INTRO_SEC, value).apply()
+
 
 
 
@@ -3833,6 +3838,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V33_DANMAKU_LINE_NUMBER = "v33_danmaku_line_number"
         private const val KEY_V33_SUBTITLE_BORDER_WIDTH = "v33_subtitle_border_width"
         private const val KEY_V33_VIDEO_HDR_TONE_MAP = "v33_video_hdr_tone_map"
+        private const val KEY_V33_PLAYBACK_SKIP_INTRO_SEC = "v33_playback_skip_intro_sec"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
