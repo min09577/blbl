@@ -2280,6 +2280,11 @@ class AppPrefs(context: Context) {
     var v38VideoGammaCurve: Int
         get() = prefs.getInt(KEY_V38_VIDEO_GAMMA_CURVE, 0)
         set(value) = prefs.edit().putInt(KEY_V38_VIDEO_GAMMA_CURVE, value).apply()
+    // v39.2: 弹幕云样式
+    var v39DanmakuCloudPattern: Boolean
+        get() = prefs.getBoolean(KEY_V39_DANMAKU_CLOUD_PATTERN, false)
+        set(value) = prefs.edit().putBoolean(KEY_V39_DANMAKU_CLOUD_PATTERN, value).apply()
+
     // v39.1: 时间基准同步模式
     var v39VideoTbnSyncMode: Int
         get() = prefs.getInt(KEY_V39_VIDEO_TBN_SYNC_MODE, 0)
@@ -3851,3 +3856,4 @@ class AppPrefs(context: Context) {
 
         // ===== v39.x KEY =====
         private const val KEY_V39_VIDEO_TBN_SYNC_MODE = "v39_video_tbn_sync_mode"
+        private const val KEY_V39_DANMAKU_CLOUD_PATTERN = "v39_danmaku_cloud_pattern"
