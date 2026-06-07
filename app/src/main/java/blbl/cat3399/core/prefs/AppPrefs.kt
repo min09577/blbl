@@ -2024,6 +2024,11 @@ class AppPrefs(context: Context) {
     var v36DanmakuBlockLength: Int
         get() = prefs.getInt(KEY_V36_DANMAKU_BLOCK_LENGTH, 0)
         set(value) = prefs.edit().putInt(KEY_V36_DANMAKU_BLOCK_LENGTH, value).apply()
+    // v36.10: 音频延迟(ms)
+    var v36AudioDelayMs: Int
+        get() = prefs.getInt(KEY_V36_AUDIO_DELAY_MS, 0)
+        set(value) = prefs.edit().putInt(KEY_V36_AUDIO_DELAY_MS, value).apply()
+
 
 
 
@@ -4115,6 +4120,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V36_VIDEO_COLOR_LUT_PRESET = "v36_video_color_lut_preset"
         private const val KEY_V36_PLAYBACK_SPEED_PITCH_CORRECT = "v36_playback_speed_pitch_correct"
         private const val KEY_V36_DANMAKU_BLOCK_LENGTH = "v36_danmaku_block_length"
+        private const val KEY_V36_AUDIO_DELAY_MS = "v36_audio_delay_ms"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
