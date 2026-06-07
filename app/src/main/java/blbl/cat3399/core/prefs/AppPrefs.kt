@@ -2206,6 +2206,11 @@ class AppPrefs(context: Context) {
     var v37VideoBlackBarDetect: Boolean
         get() = prefs.getBoolean(KEY_V37_VIDEO_BLACK_BAR_DETECT, false)
         set(value) = prefs.edit().putBoolean(KEY_V37_VIDEO_BLACK_BAR_DETECT, value).apply()
+    // v38.13: 弹幕悬停暂停
+    var v38DanmakuHoverPause: Boolean
+        get() = prefs.getBoolean(KEY_V38_DANMAKU_HOVER_PAUSE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V38_DANMAKU_HOVER_PAUSE, value).apply()
+
     // v38.12: 饱和度增强
     var v38VideoSaturationBoost: Int
         get() = prefs.getInt(KEY_V38_VIDEO_SATURATION_BOOST, 0)
@@ -3823,3 +3828,4 @@ class AppPrefs(context: Context) {
         private const val KEY_V38_AUDIO_LOW_SHELF_GAIN = "v38_audio_low_shelf_gain"
         private const val KEY_V38_PLAYER_SPEED_STEP = "v38_player_speed_step"
         private const val KEY_V38_VIDEO_SATURATION_BOOST = "v38_video_saturation_boost"
+        private const val KEY_V38_DANMAKU_HOVER_PAUSE = "v38_danmaku_hover_pause"
