@@ -1910,6 +1910,11 @@ class AppPrefs(context: Context) {
     var v33AudioBassBoost: Int
         get() = prefs.getInt(KEY_V33_AUDIO_BASS_BOOST, 0)
         set(value) = prefs.edit().putInt(KEY_V33_AUDIO_BASS_BOOST, value).apply()
+    // v34.13: 弹幕最小字号
+    var v34DanmakuFontSizeMin: Int
+        get() = prefs.getInt(KEY_V34_DANMAKU_FONT_SIZE_MIN, 0)
+        set(value) = prefs.edit().putInt(KEY_V34_DANMAKU_FONT_SIZE_MIN, value).apply()
+
     // v34.12: 像素风格模式
     var v34VideoPixelArtMode: Boolean
         get() = prefs.getBoolean(KEY_V34_VIDEO_PIXEL_ART_MODE, false)
@@ -3392,6 +3397,7 @@ class AppPrefs(context: Context) {
             val alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
             val random = java.security.SecureRandom()
             return buildString(40) {
+        private const val KEY_V34_DANMAKU_FONT_SIZE_MIN = "v34_danmaku_font_size_min"
                 repeat(40) {
                     append(alphabet[random.nextInt(alphabet.length)])
                 }

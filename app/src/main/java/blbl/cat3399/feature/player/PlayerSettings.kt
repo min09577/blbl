@@ -997,6 +997,20 @@ internal fun PlayerActivity.showv34VideoPixelArtModeToggle() {
         .option(switchText(current)) { BiliClient.prefs.v34VideoPixelArtMode = !current }
         .show()
 }
+// 34.13: 弹幕最小字号
+internal fun PlayerActivity.showv34DanmakuFontSizeMinDialog() {
+    val current = BiliClient.prefs.v34DanmakuFontSizeMin
+    AppPopup.Builder(this)
+        .title("弹幕最小字号")
+        .option("0") { BiliClient.prefs.v34DanmakuFontSizeMin = 0 }
+        .option("1") { BiliClient.prefs.v34DanmakuFontSizeMin = 1 }
+        .option("2") { BiliClient.prefs.v34DanmakuFontSizeMin = 2 }
+        .option("3") { BiliClient.prefs.v34DanmakuFontSizeMin = 3 }
+        .option("5") { BiliClient.prefs.v34DanmakuFontSizeMin = 5 }
+        .option("10") { BiliClient.prefs.v34DanmakuFontSizeMin = 10 }
+        .show()
+}
+
 
 
 
