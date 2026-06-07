@@ -1968,6 +1968,11 @@ class AppPrefs(context: Context) {
     var v35AudioLoudnessNormalize: Boolean
         get() = prefs.getBoolean(KEY_V35_AUDIO_LOUDNESS_NORMALIZE, false)
         set(value) = prefs.edit().putBoolean(KEY_V35_AUDIO_LOUDNESS_NORMALIZE, value).apply()
+    // v35.11: 小窗播放
+    var v35PlayerMiniWindow: Boolean
+        get() = prefs.getBoolean(KEY_V35_PLAYER_MINI_WINDOW, false)
+        set(value) = prefs.edit().putBoolean(KEY_V35_PLAYER_MINI_WINDOW, value).apply()
+
 
 
 
@@ -4031,6 +4036,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V35_PLAYBACK_PRELOAD_ON_WIFI = "v35_playback_preload_on_wifi"
         private const val KEY_V35_DANMAKU_GRADIENT_COLOR = "v35_danmaku_gradient_color"
         private const val KEY_V35_AUDIO_LOUDNESS_NORMALIZE = "v35_audio_loudness_normalize"
+        private const val KEY_V35_PLAYER_MINI_WINDOW = "v35_player_mini_window"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(

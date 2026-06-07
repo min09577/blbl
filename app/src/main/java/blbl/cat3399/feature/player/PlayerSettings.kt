@@ -9572,4 +9572,14 @@ internal fun PlayerActivity.showv35AudioLoudnessNormalizeToggle() {
         .show()
 }
 
+
+// 35.11: 小窗播放
+internal fun PlayerActivity.showv35PlayerMiniWindowToggle() {
+    val current = BiliClient.prefs.v35PlayerMiniWindow
+    AppPopup.Builder(this)
+        .title("小窗播放")
+        .option(switchText(current)) { BiliClient.prefs.v35PlayerMiniWindow = !current }
+        .show()
+}
+
 }
