@@ -2280,6 +2280,11 @@ class AppPrefs(context: Context) {
     var v38VideoGammaCurve: Int
         get() = prefs.getInt(KEY_V38_VIDEO_GAMMA_CURVE, 0)
         set(value) = prefs.edit().putInt(KEY_V38_VIDEO_GAMMA_CURVE, value).apply()
+    // v39.15: 加载相关视频
+    var v39PlaylistLoadRelated: Boolean
+        get() = prefs.getBoolean(KEY_V39_PLAYLIST_LOAD_RELATED, false)
+        set(value) = prefs.edit().putBoolean(KEY_V39_PLAYLIST_LOAD_RELATED, value).apply()
+
     // v39.14: 字幕自动翻译
     var v39SubtitleAutoTranslate: Boolean
         get() = prefs.getBoolean(KEY_V39_SUBTITLE_AUTO_TRANSLATE, false)
@@ -3929,3 +3934,4 @@ class AppPrefs(context: Context) {
         private const val KEY_V39_VIDEO_SMOOTHING_LEVEL = "v39_video_smoothing_level"
         private const val KEY_V39_DANMAKU_SENDER_LEVEL_ICON = "v39_danmaku_sender_level_icon"
         private const val KEY_V39_SUBTITLE_AUTO_TRANSLATE = "v39_subtitle_auto_translate"
+        private const val KEY_V39_PLAYLIST_LOAD_RELATED = "v39_playlist_load_related"
