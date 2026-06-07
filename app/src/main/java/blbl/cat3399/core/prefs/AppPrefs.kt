@@ -2154,6 +2154,11 @@ class AppPrefs(context: Context) {
     var v38VideoContrastEnhance: Int
         get() = prefs.getInt(KEY_V38_VIDEO_CONTRAST_ENHANCE, 0)
         set(value) = prefs.edit().putInt(KEY_V38_VIDEO_CONTRAST_ENHANCE, value).apply()
+    // v38.8: 最小缓冲秒数
+    var v38PlaybackBufferMinSec: Int
+        get() = prefs.getInt(KEY_V38_PLAYBACK_BUFFER_MIN_SEC, 0)
+        set(value) = prefs.edit().putInt(KEY_V38_PLAYBACK_BUFFER_MIN_SEC, value).apply()
+
 
 
 
@@ -4310,6 +4315,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V38_DANMAKU_WRAP_TEXT = "v38_danmaku_wrap_text"
         private const val KEY_V38_SUBTITLE_LETTER_SPACING = "v38_subtitle_letter_spacing"
         private const val KEY_V38_VIDEO_CONTRAST_ENHANCE = "v38_video_contrast_enhance"
+        private const val KEY_V38_PLAYBACK_BUFFER_MIN_SEC = "v38_playback_buffer_min_sec"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
