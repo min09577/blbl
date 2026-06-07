@@ -1984,6 +1984,11 @@ class AppPrefs(context: Context) {
     var v34DanmakuMaxDisplaySec: Int
         get() = prefs.getInt(KEY_V34_DANMAKU_MAX_DISPLAY_SEC, 0)
         set(value) = prefs.edit().putInt(KEY_V34_DANMAKU_MAX_DISPLAY_SEC, value).apply()
+    // v35.2: 弹幕发送者头像
+    var v35DanmakuSenderAvatar: Boolean
+        get() = prefs.getBoolean(KEY_V35_DANMAKU_SENDER_AVATAR, false)
+        set(value) = prefs.edit().putBoolean(KEY_V35_DANMAKU_SENDER_AVATAR, value).apply()
+
     // v35.1: 帧率覆盖
     var v35VideoFrameRateOverride: Int
         get() = prefs.getInt(KEY_V35_VIDEO_FRAME_RATE_OVERRIDE, 0)
@@ -3434,6 +3439,7 @@ class AppPrefs(context: Context) {
         }
 
         fun normalizePlayerAutoSkipServerBaseUrl(raw: String?): String? {
+        private const val KEY_V35_DANMAKU_SENDER_AVATAR = "v35_danmaku_sender_avatar"
             val value = raw?.trim()?.takeIf { it.isNotBlank() } ?: return null
             val url = value.toHttpUrlOrNull() ?: return null
             if (url.query != null || url.fragment != null) return null
