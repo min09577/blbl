@@ -1890,6 +1890,11 @@ class AppPrefs(context: Context) {
     var v34DanmakuMaxDisplaySec: Int
         get() = prefs.getInt(KEY_V34_DANMAKU_MAX_DISPLAY_SEC, 0)
         set(value) = prefs.edit().putInt(KEY_V34_DANMAKU_MAX_DISPLAY_SEC, value).apply()
+    // v34.2: 亮度自动感应
+    var v34VideoBrightnessSensor: Boolean
+        get() = prefs.getBoolean(KEY_V34_VIDEO_BRIGHTNESS_SENSOR, false)
+        set(value) = prefs.edit().putBoolean(KEY_V34_VIDEO_BRIGHTNESS_SENSOR, value).apply()
+
 
 
 
@@ -3914,6 +3919,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V33_SUBTITLE_SHADOW_OFFSET = "v33_subtitle_shadow_offset"
         private const val KEY_V33_PLAYLIST_REVERSE_ORDER = "v33_playlist_reverse_order"
         private const val KEY_V34_DANMAKU_MAX_DISPLAY_SEC = "v34_danmaku_max_display_sec"
+        private const val KEY_V34_VIDEO_BRIGHTNESS_SENSOR = "v34_video_brightness_sensor"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(

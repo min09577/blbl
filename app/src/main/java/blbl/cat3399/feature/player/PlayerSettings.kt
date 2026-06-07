@@ -9303,4 +9303,14 @@ internal fun PlayerActivity.showv34DanmakuMaxDisplaySecDialog() {
         .show()
 }
 
+
+// 34.2: 亮度自动感应
+internal fun PlayerActivity.showv34VideoBrightnessSensorToggle() {
+    val current = BiliClient.prefs.v34VideoBrightnessSensor
+    AppPopup.Builder(this)
+        .title("亮度自动感应")
+        .option(switchText(current)) { BiliClient.prefs.v34VideoBrightnessSensor = !current }
+        .show()
+}
+
 }
