@@ -1976,6 +1976,11 @@ class AppPrefs(context: Context) {
     var v35VideoNoiseReduction: Int
         get() = prefs.getInt(KEY_V35_VIDEO_NOISE_REDUCTION, 0)
         set(value) = prefs.edit().putInt(KEY_V35_VIDEO_NOISE_REDUCTION, value).apply()
+    // v35.13: 弹幕动画速度
+    var v35DanmakuAnimationSpeed: Int
+        get() = prefs.getInt(KEY_V35_DANMAKU_ANIMATION_SPEED, 0)
+        set(value) = prefs.edit().putInt(KEY_V35_DANMAKU_ANIMATION_SPEED, value).apply()
+
 
 
 
@@ -4043,6 +4048,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V35_AUDIO_LOUDNESS_NORMALIZE = "v35_audio_loudness_normalize"
         private const val KEY_V35_PLAYER_MINI_WINDOW = "v35_player_mini_window"
         private const val KEY_V35_VIDEO_NOISE_REDUCTION = "v35_video_noise_reduction"
+        private const val KEY_V35_DANMAKU_ANIMATION_SPEED = "v35_danmaku_animation_speed"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
