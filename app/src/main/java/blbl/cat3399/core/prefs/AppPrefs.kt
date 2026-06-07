@@ -152,6 +152,22 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putString(KEY_DEVICE_BUVID, value.trim()).apply()
 
     /**
+     * Derive a stable UUID from ANDROID_ID.
+     */
+    private fun deriveDeviceUuid(): String {
+        return try {
+            val androidId = Settings.Secure.getString(appContext.contentResolver, Settings.Secure.ANDROID_ID)
+            if (!androidId.isNullOrBlank() && androidId != "9774d56d682e549c") {
+                UUID.nameUUIDFromBytes(androidId.toByteArray()).toString()
+            } else {
+                UUID.randomUUID().toString()
+            }
+        } catch (_: Exception) {
+            UUID.randomUUID().toString()
+        }
+    }
+
+    /**
      * Stable per-device UUID for diagnostics (e.g. log uploads).
      *
      * - Pref-backed (memory): once created/derived, keep using it.
@@ -14649,3 +14665,4 @@ class AppPrefs(context: Context) {
         const val KEY_V70_DANMAKUHISTORYSTATS = "v70DanmakuHistoryStats"
         const val KEY_V70_CASTAUDIOMULTISCREEN = "v70CastAudioMultiScreen"
     }
+}
