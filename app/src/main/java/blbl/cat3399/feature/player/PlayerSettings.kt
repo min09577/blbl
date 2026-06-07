@@ -9358,4 +9358,14 @@ internal fun PlayerActivity.showv34SubtitleKaraokeModeToggle() {
         .show()
 }
 
+
+// 34.7: 扫描线滤镜
+internal fun PlayerActivity.showv34VideoScanLineFilterToggle() {
+    val current = BiliClient.prefs.v34VideoScanLineFilter
+    AppPopup.Builder(this)
+        .title("扫描线滤镜")
+        .option(switchText(current)) { BiliClient.prefs.v34VideoScanLineFilter = !current }
+        .show()
+}
+
 }
