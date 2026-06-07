@@ -1852,6 +1852,11 @@ class AppPrefs(context: Context) {
     var v33PlayerSeekBarChapter: Boolean
         get() = prefs.getBoolean(KEY_V33_PLAYER_SEEK_BAR_CHAPTER, false)
         set(value) = prefs.edit().putBoolean(KEY_V33_PLAYER_SEEK_BAR_CHAPTER, value).apply()
+    // v33.12: 视频旋转锁定
+    var v33VideoRotationLock: Boolean
+        get() = prefs.getBoolean(KEY_V33_VIDEO_ROTATION_LOCK, false)
+        set(value) = prefs.edit().putBoolean(KEY_V33_VIDEO_ROTATION_LOCK, value).apply()
+
 
 
 
@@ -3857,6 +3862,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V33_DANMAKU_CUSTOM_FONT_PATH = "v33_danmaku_custom_font_path"
         private const val KEY_V33_AUDIO_GAIN_DB = "v33_audio_gain_db"
         private const val KEY_V33_PLAYER_SEEK_BAR_CHAPTER = "v33_player_seek_bar_chapter"
+        private const val KEY_V33_VIDEO_ROTATION_LOCK = "v33_video_rotation_lock"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
