@@ -1836,6 +1836,13 @@ class AppPrefs(context: Context) {
     var v32ScreenOffTimer: Int
         get() = prefs.getInt(KEY_V32_SCREEN_OFF_TIMER, 0)
         set(value) = prefs.edit().putInt(KEY_V32_SCREEN_OFF_TIMER, value).apply()
+    // v33.1: 低音增强
+    var v33AudioBassBoost: Int
+        get() = prefs.getInt(KEY_V33_AUDIO_BASS_BOOST, 0)
+        set(value) = prefs.edit().putInt(KEY_V33_AUDIO_BASS_BOOST, value).apply()
+
+
+    // ===== v33.x =====
 
 
     // ===== v32.x =====
@@ -3114,8 +3121,11 @@ class AppPrefs(context: Context) {
         const val PLAYER_PLAYBACK_MODE_PAGE_LIST = "page_list"
         const val PLAYER_PLAYBACK_MODE_PARTS_LIST = "parts_list"
         private const val KEY_V32_DANMAKU_EMOJI_FILTER = "v32_danmaku_emoji_filter"
+
+        // ===== v33.x KEY =====
         const val PLAYER_PLAYBACK_MODE_PARTS_LIST_THEN_RECOMMEND = "parts_list_then_recommend"
         const val PLAYER_PLAYBACK_MODE_RECOMMEND = "recommend"
+        private const val KEY_V33_AUDIO_BASS_BOOST = "v33_audio_bass_boost"
         // v7.4: 随机播放
         const val PLAYER_PLAYBACK_MODE_RANDOM = "random"
 
