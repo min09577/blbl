@@ -1972,6 +1972,11 @@ class AppPrefs(context: Context) {
     var v35PlayerMiniWindow: Boolean
         get() = prefs.getBoolean(KEY_V35_PLAYER_MINI_WINDOW, false)
         set(value) = prefs.edit().putBoolean(KEY_V35_PLAYER_MINI_WINDOW, value).apply()
+    // v35.12: 视频降噪强度
+    var v35VideoNoiseReduction: Int
+        get() = prefs.getInt(KEY_V35_VIDEO_NOISE_REDUCTION, 0)
+        set(value) = prefs.edit().putInt(KEY_V35_VIDEO_NOISE_REDUCTION, value).apply()
+
 
 
 
@@ -4037,6 +4042,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V35_DANMAKU_GRADIENT_COLOR = "v35_danmaku_gradient_color"
         private const val KEY_V35_AUDIO_LOUDNESS_NORMALIZE = "v35_audio_loudness_normalize"
         private const val KEY_V35_PLAYER_MINI_WINDOW = "v35_player_mini_window"
+        private const val KEY_V35_VIDEO_NOISE_REDUCTION = "v35_video_noise_reduction"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
