@@ -610,6 +610,15 @@ internal fun PlayerActivity.showv32AudioChannelSwapToggle() {
         .option(switchText(current)) { BiliClient.prefs.v32AudioChannelSwap = !current }
         .show()
 }
+// 32.4: 视频缩放手势
+internal fun PlayerActivity.showv32VideoZoomGestureToggle() {
+    val current = BiliClient.prefs.v32VideoZoomGesture
+    AppPopup.Builder(this)
+        .title("视频缩放手势")
+        .option(switchText(current)) { BiliClient.prefs.v32VideoZoomGesture = !current }
+        .show()
+}
+
 
 
 

@@ -1762,6 +1762,11 @@ class AppPrefs(context: Context) {
     var v31DanmakuMergeOverlap: Boolean
         get() = prefs.getBoolean(KEY_V31_DANMAKU_MERGE_OVERLAP, false)
         set(value) = prefs.edit().putBoolean(KEY_V31_DANMAKU_MERGE_OVERLAP, value).apply()
+    // v32.4: 视频缩放手势
+    var v32VideoZoomGesture: Boolean
+        get() = prefs.getBoolean(KEY_V32_VIDEO_ZOOM_GESTURE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V32_VIDEO_ZOOM_GESTURE, value).apply()
+
     // v32.3: 音频声道交换
     var v32AudioChannelSwap: Boolean
         get() = prefs.getBoolean(KEY_V32_AUDIO_CHANNEL_SWAP, false)
@@ -2998,6 +3003,7 @@ class AppPrefs(context: Context) {
          */
         fun normalizeLegacyDanmakuAreaCompat(value: Float): Float {
             val sanitized = value.takeIf { it.isFinite() } ?: DANMAKU_AREA_DEFAULT
+        private const val KEY_V32_VIDEO_ZOOM_GESTURE = "v32_video_zoom_gesture"
             val legacy =
                 LEGACY_DANMAKU_AREA_OPTIONS.firstOrNull { legacyValue ->
                     abs(legacyValue - sanitized) < DANMAKU_AREA_COMPAT_EPSILON
