@@ -1176,6 +1176,20 @@ internal fun PlayerActivity.showv35PlaylistSmartShuffleToggle() {
         .option(switchText(current)) { BiliClient.prefs.v35PlaylistSmartShuffle = !current }
         .show()
 }
+// 36.1: 画面适配模式
+internal fun PlayerActivity.showv36VideoAspectFitModeDialog() {
+    val current = BiliClient.prefs.v36VideoAspectFitMode
+    AppPopup.Builder(this)
+        .title("画面适配模式")
+        .option("0") { BiliClient.prefs.v36VideoAspectFitMode = 0 }
+        .option("1") { BiliClient.prefs.v36VideoAspectFitMode = 1 }
+        .option("2") { BiliClient.prefs.v36VideoAspectFitMode = 2 }
+        .option("3") { BiliClient.prefs.v36VideoAspectFitMode = 3 }
+        .option("5") { BiliClient.prefs.v36VideoAspectFitMode = 5 }
+        .option("10") { BiliClient.prefs.v36VideoAspectFitMode = 10 }
+        .show()
+}
+
 
 
 

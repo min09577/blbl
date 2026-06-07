@@ -2058,6 +2058,13 @@ class AppPrefs(context: Context) {
     var v35VideoFrameRateOverride: Int
         get() = prefs.getInt(KEY_V35_VIDEO_FRAME_RATE_OVERRIDE, 0)
         set(value) = prefs.edit().putInt(KEY_V35_VIDEO_FRAME_RATE_OVERRIDE, value).apply()
+    // v36.1: 画面适配模式
+    var v36VideoAspectFitMode: Int
+        get() = prefs.getInt(KEY_V36_VIDEO_ASPECT_FIT_MODE, 0)
+        set(value) = prefs.edit().putInt(KEY_V36_VIDEO_ASPECT_FIT_MODE, value).apply()
+
+
+    // ===== v36.x =====
 
 
     // ===== v35.x =====
@@ -3559,3 +3566,6 @@ class AppPrefs(context: Context) {
         private const val KEY_V35_DANMAKU_ANIMATION_SPEED = "v35_danmaku_animation_speed"
         private const val KEY_V35_SUBTITLE_LINE_SPACING = "v35_subtitle_line_spacing"
         private const val KEY_V35_PLAYLIST_SMART_SHUFFLE = "v35_playlist_smart_shuffle"
+
+        // ===== v36.x KEY =====
+        private const val KEY_V36_VIDEO_ASPECT_FIT_MODE = "v36_video_aspect_fit_mode"
