@@ -1848,6 +1848,11 @@ class AppPrefs(context: Context) {
     var v33AudioGainDb: Int
         get() = prefs.getInt(KEY_V33_AUDIO_GAIN_DB, 0)
         set(value) = prefs.edit().putInt(KEY_V33_AUDIO_GAIN_DB, value).apply()
+    // v33.11: 进度条章节标记
+    var v33PlayerSeekBarChapter: Boolean
+        get() = prefs.getBoolean(KEY_V33_PLAYER_SEEK_BAR_CHAPTER, false)
+        set(value) = prefs.edit().putBoolean(KEY_V33_PLAYER_SEEK_BAR_CHAPTER, value).apply()
+
 
 
 
@@ -3851,6 +3856,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V33_PLAYBACK_SKIP_INTRO_SEC = "v33_playback_skip_intro_sec"
         private const val KEY_V33_DANMAKU_CUSTOM_FONT_PATH = "v33_danmaku_custom_font_path"
         private const val KEY_V33_AUDIO_GAIN_DB = "v33_audio_gain_db"
+        private const val KEY_V33_PLAYER_SEEK_BAR_CHAPTER = "v33_player_seek_bar_chapter"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
