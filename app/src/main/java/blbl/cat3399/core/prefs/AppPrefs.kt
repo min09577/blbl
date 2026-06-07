@@ -1822,6 +1822,11 @@ class AppPrefs(context: Context) {
     var v32VideoCropPreset: Int
         get() = prefs.getInt(KEY_V32_VIDEO_CROP_PRESET, 0)
         set(value) = prefs.edit().putInt(KEY_V32_VIDEO_CROP_PRESET, value).apply()
+    // v32.15: 弹幕表情过滤
+    var v32DanmakuEmojiFilter: Boolean
+        get() = prefs.getBoolean(KEY_V32_DANMAKU_EMOJI_FILTER, false)
+        set(value) = prefs.edit().putBoolean(KEY_V32_DANMAKU_EMOJI_FILTER, value).apply()
+
 
 
 
@@ -3812,6 +3817,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V32_DANMAKU_BUBBLE_STYLE = "v32_danmaku_bubble_style"
         private const val KEY_V32_PLAYER_LOCK_TIMEOUT = "v32_player_lock_timeout"
         private const val KEY_V32_VIDEO_CROP_PRESET = "v32_video_crop_preset"
+        private const val KEY_V32_DANMAKU_EMOJI_FILTER = "v32_danmaku_emoji_filter"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
