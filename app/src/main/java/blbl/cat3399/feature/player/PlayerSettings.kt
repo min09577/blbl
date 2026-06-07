@@ -1076,6 +1076,15 @@ internal fun PlayerActivity.showv35DanmakuPinyinConvertToggle() {
         .option(switchText(current)) { BiliClient.prefs.v35DanmakuPinyinConvert = !current }
         .show()
 }
+// 35.6: 字幕顶部显示
+internal fun PlayerActivity.showv35SubtitlePositionTopToggle() {
+    val current = BiliClient.prefs.v35SubtitlePositionTop
+    AppPopup.Builder(this)
+        .title("字幕顶部显示")
+        .option(switchText(current)) { BiliClient.prefs.v35SubtitlePositionTop = !current }
+        .show()
+}
+
 
 
 

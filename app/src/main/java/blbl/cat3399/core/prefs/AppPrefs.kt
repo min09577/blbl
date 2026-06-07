@@ -1984,6 +1984,11 @@ class AppPrefs(context: Context) {
     var v34DanmakuMaxDisplaySec: Int
         get() = prefs.getInt(KEY_V34_DANMAKU_MAX_DISPLAY_SEC, 0)
         set(value) = prefs.edit().putInt(KEY_V34_DANMAKU_MAX_DISPLAY_SEC, value).apply()
+    // v35.6: 字幕顶部显示
+    var v35SubtitlePositionTop: Boolean
+        get() = prefs.getBoolean(KEY_V35_SUBTITLE_POSITION_TOP, false)
+        set(value) = prefs.edit().putBoolean(KEY_V35_SUBTITLE_POSITION_TOP, value).apply()
+
     // v35.5: 弹幕拼音转换
     var v35DanmakuPinyinConvert: Boolean
         get() = prefs.getBoolean(KEY_V35_DANMAKU_PINYIN_CONVERT, false)
@@ -3474,6 +3479,7 @@ class AppPrefs(context: Context) {
             }
         }
 
+        private const val KEY_V35_SUBTITLE_POSITION_TOP = "v35_subtitle_position_top"
         fun normalizeApiSource(value: String?): String {
             return when (value?.trim()?.lowercase()) {
                 API_SOURCE_APP -> API_SOURCE_APP
