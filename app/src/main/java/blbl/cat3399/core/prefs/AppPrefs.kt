@@ -1910,6 +1910,11 @@ class AppPrefs(context: Context) {
     var v33AudioBassBoost: Int
         get() = prefs.getInt(KEY_V33_AUDIO_BASS_BOOST, 0)
         set(value) = prefs.edit().putInt(KEY_V33_AUDIO_BASS_BOOST, value).apply()
+    // v34.6: 字幕卡拉OK模式
+    var v34SubtitleKaraokeMode: Boolean
+        get() = prefs.getBoolean(KEY_V34_SUBTITLE_KARAOKE_MODE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V34_SUBTITLE_KARAOKE_MODE, value).apply()
+
     // v34.5: 弹幕正则屏蔽
     var v34DanmakuShieldRegex: Boolean
         get() = prefs.getBoolean(KEY_V34_DANMAKU_SHIELD_REGEX, false)
@@ -3322,6 +3327,7 @@ class AppPrefs(context: Context) {
         const val PLAYER_DOWN_KEY_OSD_FOCUS_DANMAKU = "danmaku"
         const val PLAYER_DOWN_KEY_OSD_FOCUS_COMMENTS = "comments"
         const val PLAYER_DOWN_KEY_OSD_FOCUS_DETAIL = "detail"
+        private const val KEY_V34_SUBTITLE_KARAOKE_MODE = "v34_subtitle_karaoke_mode"
         const val PLAYER_DOWN_KEY_OSD_FOCUS_UP = "up"
         const val PLAYER_DOWN_KEY_OSD_FOCUS_LIKE = "like"
         const val PLAYER_DOWN_KEY_OSD_FOCUS_COIN = "coin"
