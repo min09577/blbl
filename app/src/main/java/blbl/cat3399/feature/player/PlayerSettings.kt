@@ -1855,6 +1855,15 @@ internal fun PlayerActivity.showv40AudioVocalRemoveToggle() {
         .option(switchText(current)) { BiliClient.prefs.v40AudioVocalRemove = !current }
         .show()
 }
+// 40.4: 快捷键自定义映射
+internal fun PlayerActivity.showv40PlayerKeyShortcutMapToggle() {
+    val current = BiliClient.prefs.v40PlayerKeyShortcutMap
+    AppPopup.Builder(this)
+        .title("快捷键自定义映射")
+        .option(switchText(current)) { BiliClient.prefs.v40PlayerKeyShortcutMap = !current }
+        .show()
+}
+
 
 
 
