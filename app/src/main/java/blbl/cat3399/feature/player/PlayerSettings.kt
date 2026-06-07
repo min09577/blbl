@@ -1540,6 +1540,15 @@ internal fun PlayerActivity.showv38AudioHighShelfGainDialog() {
         .option("10") { BiliClient.prefs.v38AudioHighShelfGain = 10 }
         .show()
 }
+// 38.4: 拖动预览帧
+internal fun PlayerActivity.showv38PlayerSeekPreviewFrameToggle() {
+    val current = BiliClient.prefs.v38PlayerSeekPreviewFrame
+    AppPopup.Builder(this)
+        .title("拖动预览帧")
+        .option(switchText(current)) { BiliClient.prefs.v38PlayerSeekPreviewFrame = !current }
+        .show()
+}
+
 
 
 
