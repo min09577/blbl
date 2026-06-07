@@ -2206,6 +2206,11 @@ class AppPrefs(context: Context) {
     var v37VideoBlackBarDetect: Boolean
         get() = prefs.getBoolean(KEY_V37_VIDEO_BLACK_BAR_DETECT, false)
         set(value) = prefs.edit().putBoolean(KEY_V37_VIDEO_BLACK_BAR_DETECT, value).apply()
+    // v38.14: 字幕罗马音化
+    var v38SubtitleRomanize: Boolean
+        get() = prefs.getBoolean(KEY_V38_SUBTITLE_ROMANIZE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V38_SUBTITLE_ROMANIZE, value).apply()
+
     // v38.13: 弹幕悬停暂停
     var v38DanmakuHoverPause: Boolean
         get() = prefs.getBoolean(KEY_V38_DANMAKU_HOVER_PAUSE, false)
@@ -3829,3 +3834,4 @@ class AppPrefs(context: Context) {
         private const val KEY_V38_PLAYER_SPEED_STEP = "v38_player_speed_step"
         private const val KEY_V38_VIDEO_SATURATION_BOOST = "v38_video_saturation_boost"
         private const val KEY_V38_DANMAKU_HOVER_PAUSE = "v38_danmaku_hover_pause"
+        private const val KEY_V38_SUBTITLE_ROMANIZE = "v38_subtitle_romanize"
