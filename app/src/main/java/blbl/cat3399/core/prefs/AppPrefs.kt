@@ -1946,6 +1946,11 @@ class AppPrefs(context: Context) {
     var v34PlaylistRepeatSingle: Boolean
         get() = prefs.getBoolean(KEY_V34_PLAYLIST_REPEAT_SINGLE, false)
         set(value) = prefs.edit().putBoolean(KEY_V34_PLAYLIST_REPEAT_SINGLE, value).apply()
+    // v35.1: 帧率覆盖
+    var v35VideoFrameRateOverride: Int
+        get() = prefs.getInt(KEY_V35_VIDEO_FRAME_RATE_OVERRIDE, 0)
+        set(value) = prefs.edit().putInt(KEY_V35_VIDEO_FRAME_RATE_OVERRIDE, value).apply()
+
 
 
 
@@ -3998,6 +4003,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V34_DANMAKU_FONT_SIZE_MIN = "v34_danmaku_font_size_min"
         private const val KEY_V34_SUBTITLE_TEXT_COLOR_CUSTOM = "v34_subtitle_text_color_custom"
         private const val KEY_V34_PLAYLIST_REPEAT_SINGLE = "v34_playlist_repeat_single"
+        private const val KEY_V35_VIDEO_FRAME_RATE_OVERRIDE = "v35_video_frame_rate_override"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(

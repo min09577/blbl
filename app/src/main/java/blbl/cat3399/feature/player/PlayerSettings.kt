@@ -9458,4 +9458,19 @@ internal fun PlayerActivity.showv34PlaylistRepeatSingleToggle() {
         .show()
 }
 
+
+// 35.1: 帧率覆盖
+internal fun PlayerActivity.showv35VideoFrameRateOverrideDialog() {
+    val current = BiliClient.prefs.v35VideoFrameRateOverride
+    AppPopup.Builder(this)
+        .title("帧率覆盖")
+        .option("0") { BiliClient.prefs.v35VideoFrameRateOverride = 0 }
+        .option("1") { BiliClient.prefs.v35VideoFrameRateOverride = 1 }
+        .option("2") { BiliClient.prefs.v35VideoFrameRateOverride = 2 }
+        .option("3") { BiliClient.prefs.v35VideoFrameRateOverride = 3 }
+        .option("5") { BiliClient.prefs.v35VideoFrameRateOverride = 5 }
+        .option("10") { BiliClient.prefs.v35VideoFrameRateOverride = 10 }
+        .show()
+}
+
 }
