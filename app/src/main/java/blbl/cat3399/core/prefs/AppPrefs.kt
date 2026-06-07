@@ -1796,6 +1796,11 @@ class AppPrefs(context: Context) {
     var v32DanmakuBubbleStyle: Boolean
         get() = prefs.getBoolean(KEY_V32_DANMAKU_BUBBLE_STYLE, false)
         set(value) = prefs.edit().putBoolean(KEY_V32_DANMAKU_BUBBLE_STYLE, value).apply()
+    // v32.13: 播放器锁定超时(秒)
+    var v32PlayerLockTimeout: Int
+        get() = prefs.getInt(KEY_V32_PLAYER_LOCK_TIMEOUT, 0)
+        set(value) = prefs.edit().putInt(KEY_V32_PLAYER_LOCK_TIMEOUT, value).apply()
+
 
 
 
@@ -3773,6 +3778,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V32_VIDEO_SPEED_RAMP_MODE = "v32_video_speed_ramp_mode"
         private const val KEY_V32_AUDIO_VIRTUAL_SURROUND = "v32_audio_virtual_surround"
         private const val KEY_V32_DANMAKU_BUBBLE_STYLE = "v32_danmaku_bubble_style"
+        private const val KEY_V32_PLAYER_LOCK_TIMEOUT = "v32_player_lock_timeout"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
