@@ -2204,6 +2204,11 @@ class AppPrefs(context: Context) {
     var v39DanmakuGhostTrail: Boolean
         get() = prefs.getBoolean(KEY_V39_DANMAKU_GHOST_TRAIL, false)
         set(value) = prefs.edit().putBoolean(KEY_V39_DANMAKU_GHOST_TRAIL, value).apply()
+    // v39.10: 动态范围压缩
+    var v39AudioDynamicRange: Int
+        get() = prefs.getInt(KEY_V39_AUDIO_DYNAMIC_RANGE, 0)
+        set(value) = prefs.edit().putInt(KEY_V39_AUDIO_DYNAMIC_RANGE, value).apply()
+
 
 
 
@@ -4385,6 +4390,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V39_VIDEO_DETAIL_INFO_BAR = "v39_video_detail_info_bar"
         private const val KEY_V39_PLAYBACK_NETWORK_ADAPT = "v39_playback_network_adapt"
         private const val KEY_V39_DANMAKU_GHOST_TRAIL = "v39_danmaku_ghost_trail"
+        private const val KEY_V39_AUDIO_DYNAMIC_RANGE = "v39_audio_dynamic_range"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
