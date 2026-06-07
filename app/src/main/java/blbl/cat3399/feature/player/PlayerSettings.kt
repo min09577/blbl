@@ -1404,6 +1404,15 @@ internal fun PlayerActivity.showv37SubtitleOutlineColorToggle() {
         .option(switchText(current)) { BiliClient.prefs.v37SubtitleOutlineColor = !current }
         .show()
 }
+// 37.7: 帧率计数器
+internal fun PlayerActivity.showv37VideoFpsCounterToggle() {
+    val current = BiliClient.prefs.v37VideoFpsCounter
+    AppPopup.Builder(this)
+        .title("帧率计数器")
+        .option(switchText(current)) { BiliClient.prefs.v37VideoFpsCounter = !current }
+        .show()
+}
+
 
 
 
