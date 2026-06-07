@@ -557,122 +557,152 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_CAST_MODE, false)
         set(value) = prefs.edit().putBoolean(KEY_CAST_MODE, value).apply()
 
+    // v15.1: 弹幕缩放比例
     var danmakuScale: Float
         get() = prefs.getFloat(KEY_DANMAKU_SCALE, 1.0f)
         set(value) = prefs.edit().putFloat(KEY_DANMAKU_SCALE, value.coerceIn(0.5f, 2.0f)).apply()
 
+    // v15.2: 自动播放下一集
     var autoPlayNextEpisode: Boolean
         get() = prefs.getBoolean(KEY_AUTO_PLAY_NEXT_EPISODE, false)
         set(value) = prefs.edit().putBoolean(KEY_AUTO_PLAY_NEXT_EPISODE, value).apply()
 
+    // v15.3: 弹幕描边模糊
     var danmakuStrokeBlur: Boolean
         get() = prefs.getBoolean(KEY_DANMAKU_STROKE_BLUR, false)
         set(value) = prefs.edit().putBoolean(KEY_DANMAKU_STROKE_BLUR, value).apply()
 
+    // v15.4: 记住音量
     var rememberVolume: Boolean
         get() = prefs.getBoolean(KEY_REMEMBER_VOLUME, true)
         set(value) = prefs.edit().putBoolean(KEY_REMEMBER_VOLUME, value).apply()
 
+    // v15.5: 记住亮度
     var rememberBrightness: Boolean
         get() = prefs.getBoolean(KEY_REMEMBER_BRIGHTNESS, true)
         set(value) = prefs.edit().putBoolean(KEY_REMEMBER_BRIGHTNESS, value).apply()
 
+    // v15.6: 弹幕间隔时间
     var danmakuInterval: Int
         get() = prefs.getInt(KEY_DANMAKU_INTERVAL, 0)
         set(value) = prefs.edit().putInt(KEY_DANMAKU_INTERVAL, value.coerceIn(0, 500)).apply()
 
+    // v15.7: 播放速度曲线
     var playbackSpeedCurve: Boolean
         get() = prefs.getBoolean(KEY_PLAYBACK_SPEED_CURVE, false)
         set(value) = prefs.edit().putBoolean(KEY_PLAYBACK_SPEED_CURVE, value).apply()
 
+    // v15.8: 弹幕池优先级
     var danmakuPoolPriority: Int
         get() = prefs.getInt(KEY_DANMAKU_POOL_PRIORITY, 0)
         set(value) = prefs.edit().putInt(KEY_DANMAKU_POOL_PRIORITY, value.coerceIn(0, 2)).apply()
 
+    // v15.9: 视频镜像翻转
     var videoMirrorEnabled: Boolean
         get() = prefs.getBoolean(KEY_VIDEO_MIRROR, false)
         set(value) = prefs.edit().putBoolean(KEY_VIDEO_MIRROR, value).apply()
 
+    // v15.10: 弹幕时间偏移
     var danmakuTimeOffset: Int
         get() = prefs.getInt(KEY_DANMAKU_TIME_OFFSET, 0)
         set(value) = prefs.edit().putInt(KEY_DANMAKU_TIME_OFFSET, value.coerceIn(-300, 300)).apply()
 
+    // v15.11: 自动跳过片头
     var autoSkipOpening: Boolean
         get() = prefs.getBoolean(KEY_AUTO_SKIP_OPENING, false)
         set(value) = prefs.edit().putBoolean(KEY_AUTO_SKIP_OPENING, value).apply()
 
+    // v15.12: 弹幕透明度动画
     var danmakuOpacityAnimation: Boolean
         get() = prefs.getBoolean(KEY_DANMAKU_OPACITY_ANIM, true)
         set(value) = prefs.edit().putBoolean(KEY_DANMAKU_OPACITY_ANIM, value).apply()
 
+    // v15.13: 弹幕发送历史备份
     var danmakuSendHistoryBackup: String
         get() = prefs.getString(KEY_DANMAKU_SEND_HISTORY_BACKUP, "").orEmpty()
         set(value) = prefs.edit().putString(KEY_DANMAKU_SEND_HISTORY_BACKUP, value).apply()
 
+    // v15.14: 视频旋转记忆
     var rememberVideoRotation: Boolean
         get() = prefs.getBoolean(KEY_REMEMBER_VIDEO_ROTATION, true)
         set(value) = prefs.edit().putBoolean(KEY_REMEMBER_VIDEO_ROTATION, value).apply()
 
+    // v15.15: 弹幕模糊半径
     var danmakuBlurRadius: Int
         get() = prefs.getInt(KEY_DANMAKU_BLUR_RADIUS, 0)
         set(value) = prefs.edit().putInt(KEY_DANMAKU_BLUR_RADIUS, value.coerceIn(0, 20)).apply()
 
+    // v15.16: 快捷分享
     var quickShareEnabled: Boolean
         get() = prefs.getBoolean(KEY_QUICK_SHARE, true)
         set(value) = prefs.edit().putBoolean(KEY_QUICK_SHARE, value).apply()
 
+    // v15.17: 记住弹幕开关
     var rememberDanmakuEnabled: Boolean
         get() = prefs.getBoolean(KEY_REMEMBER_DANMAKU_ENABLED, true)
         set(value) = prefs.edit().putBoolean(KEY_REMEMBER_DANMAKU_ENABLED, value).apply()
 
+    // v15.18: 弹幕入场动画
     var danmakuEntryAnimation: Boolean
         get() = prefs.getBoolean(KEY_DANMAKU_ENTRY_ANIM, true)
         set(value) = prefs.edit().putBoolean(KEY_DANMAKU_ENTRY_ANIM, value).apply()
 
+    // v15.19: 视频截图质量
     var screenshotQuality: Int
         get() = prefs.getInt(KEY_SCREENSHOT_QUALITY, 100)
         set(value) = prefs.edit().putInt(KEY_SCREENSHOT_QUALITY, value.coerceIn(50, 100)).apply()
 
+    // v15.20: 弹幕输出模式
     var danmakuOutputMode: Int
         get() = prefs.getInt(KEY_DANMAKU_OUTPUT_MODE, 0)
         set(value) = prefs.edit().putInt(KEY_DANMAKU_OUTPUT_MODE, value.coerceIn(0, 2)).apply()
 
+    // v15.21: 播放进度条样式
     var progressBarStyle: Int
         get() = prefs.getInt(KEY_PROGRESS_BAR_STYLE, 0)
         set(value) = prefs.edit().putInt(KEY_PROGRESS_BAR_STYLE, value.coerceIn(0, 2)).apply()
 
+    // v15.22: 弹幕渲染层级
     var danmakuRenderLayer: Int
         get() = prefs.getInt(KEY_DANMAKU_RENDER_LAYER, 0)
         set(value) = prefs.edit().putInt(KEY_DANMAKU_RENDER_LAYER, value.coerceIn(0, 3)).apply()
 
+    // v15.23: 自动播放记忆
     var rememberAutoPlay: Boolean
         get() = prefs.getBoolean(KEY_REMEMBER_AUTO_PLAY, true)
         set(value) = prefs.edit().putBoolean(KEY_REMEMBER_AUTO_PLAY, value).apply()
 
+    // v15.24: 弹幕过滤关键词
     var danmakuFilterKeywords: String
         get() = prefs.getString(KEY_DANMAKU_FILTER_KEYWORDS, "").orEmpty()
         set(value) = prefs.edit().putString(KEY_DANMAKU_FILTER_KEYWORDS, value).apply()
 
+    // v15.25: 视频色彩空间
     var videoColorSpace: Int
         get() = prefs.getInt(KEY_VIDEO_COLOR_SPACE, 0)
         set(value) = prefs.edit().putInt(KEY_VIDEO_COLOR_SPACE, value.coerceIn(0, 4)).apply()
 
+    // v15.26: 弹幕发送快捷键
     var danmakuSendKey: Int
         get() = prefs.getInt(KEY_DANMAKU_SEND_KEY, 0)
         set(value) = prefs.edit().putInt(KEY_DANMAKU_SEND_KEY, value.coerceIn(0, 5)).apply()
 
+    // v15.27: 播放倍速预设
     var playbackSpeedPresets: String
         get() = prefs.getString(KEY_PLAYBACK_SPEED_PRESETS, "0.5,0.75,1.0,1.25,1.5,2.0").orEmpty()
         set(value) = prefs.edit().putString(KEY_PLAYBACK_SPEED_PRESETS, value).apply()
 
+    // v15.28: 弹幕过滤正则
     var danmakuFilterRegex: Boolean
         get() = prefs.getBoolean(KEY_DANMAKU_FILTER_REGEX, false)
         set(value) = prefs.edit().putBoolean(KEY_DANMAKU_FILTER_REGEX, value).apply()
 
+    // v15.29: 视频投射设备
     var castDeviceName: String
         get() = prefs.getString(KEY_CAST_DEVICE_NAME, "").orEmpty()
         set(value) = prefs.edit().putString(KEY_CAST_DEVICE_NAME, value).apply()
 
+    // v15.30: 弹幕描边3D效果
     var danmakuStroke3D: Boolean
         get() = prefs.getBoolean(KEY_DANMAKU_STROKE_3D, false)
         set(value) = prefs.edit().putBoolean(KEY_DANMAKU_STROKE_3D, value).apply()
@@ -1706,6 +1736,8 @@ class AppPrefs(context: Context) {
     var v30DanmakuFontGlow: Int
         get() = prefs.getInt(KEY_V30_DANMAKU_FONT_GLOW, 0)
         set(value) = prefs.edit().putInt(KEY_V30_DANMAKU_FONT_GLOW, value.coerceIn(0, 100)).apply()
+
+    // ===== v31.x =====
     // v31.1: 弹幕重叠自动合并
     var v31DanmakuMergeOverlap: Boolean
         get() = prefs.getBoolean(KEY_V31_DANMAKU_MERGE_OVERLAP, false)
@@ -1766,6 +1798,8 @@ class AppPrefs(context: Context) {
     var v31VideoCodecPriority: Int
         get() = prefs.getInt(KEY_V31_VIDEO_CODEC_PRIORITY, 0)
         set(value) = prefs.edit().putInt(KEY_V31_VIDEO_CODEC_PRIORITY, value).apply()
+
+    // ===== v32.x =====
     // v32.1: 息屏定时器(分钟)
     var v32ScreenOffTimer: Int
         get() = prefs.getInt(KEY_V32_SCREEN_OFF_TIMER, 0)
@@ -1826,6 +1860,8 @@ class AppPrefs(context: Context) {
     var v32DanmakuEmojiFilter: Boolean
         get() = prefs.getBoolean(KEY_V32_DANMAKU_EMOJI_FILTER, false)
         set(value) = prefs.edit().putBoolean(KEY_V32_DANMAKU_EMOJI_FILTER, value).apply()
+
+    // ===== v33.x =====
     // v33.1: 低音增强
     var v33AudioBassBoost: Int
         get() = prefs.getInt(KEY_V33_AUDIO_BASS_BOOST, 0)
@@ -1886,6 +1922,8 @@ class AppPrefs(context: Context) {
     var v33PlaylistReverseOrder: Boolean
         get() = prefs.getBoolean(KEY_V33_PLAYLIST_REVERSE_ORDER, false)
         set(value) = prefs.edit().putBoolean(KEY_V33_PLAYLIST_REVERSE_ORDER, value).apply()
+
+    // ===== v34.x =====
     // v34.1: 弹幕最大显示时长(秒)
     var v34DanmakuMaxDisplaySec: Int
         get() = prefs.getInt(KEY_V34_DANMAKU_MAX_DISPLAY_SEC, 0)
@@ -1946,6 +1984,8 @@ class AppPrefs(context: Context) {
     var v34PlaylistRepeatSingle: Boolean
         get() = prefs.getBoolean(KEY_V34_PLAYLIST_REPEAT_SINGLE, false)
         set(value) = prefs.edit().putBoolean(KEY_V34_PLAYLIST_REPEAT_SINGLE, value).apply()
+
+    // ===== v35.x =====
     // v35.1: 帧率覆盖
     var v35VideoFrameRateOverride: Int
         get() = prefs.getInt(KEY_V35_VIDEO_FRAME_RATE_OVERRIDE, 0)
@@ -2006,6 +2046,8 @@ class AppPrefs(context: Context) {
     var v35PlaylistSmartShuffle: Boolean
         get() = prefs.getBoolean(KEY_V35_PLAYLIST_SMART_SHUFFLE, false)
         set(value) = prefs.edit().putBoolean(KEY_V35_PLAYLIST_SMART_SHUFFLE, value).apply()
+
+    // ===== v36.x =====
     // v36.1: 画面适配模式
     var v36VideoAspectFitMode: Int
         get() = prefs.getInt(KEY_V36_VIDEO_ASPECT_FIT_MODE, 0)
@@ -2066,6 +2108,8 @@ class AppPrefs(context: Context) {
     var v36PlaylistAutoplayNextEpisode: Boolean
         get() = prefs.getBoolean(KEY_V36_PLAYLIST_AUTOPLAY_NEXT_EPISODE, false)
         set(value) = prefs.edit().putBoolean(KEY_V36_PLAYLIST_AUTOPLAY_NEXT_EPISODE, value).apply()
+
+    // ===== v37.x =====
     // v37.1: 黑边自动检测
     var v37VideoBlackBarDetect: Boolean
         get() = prefs.getBoolean(KEY_V37_VIDEO_BLACK_BAR_DETECT, false)
@@ -2126,6 +2170,8 @@ class AppPrefs(context: Context) {
     var v37PlaylistFadeTransition: Boolean
         get() = prefs.getBoolean(KEY_V37_PLAYLIST_FADE_TRANSITION, false)
         set(value) = prefs.edit().putBoolean(KEY_V37_PLAYLIST_FADE_TRANSITION, value).apply()
+
+    // ===== v38.x =====
     // v38.1: Gamma曲线预设
     var v38VideoGammaCurve: Int
         get() = prefs.getInt(KEY_V38_VIDEO_GAMMA_CURVE, 0)
@@ -2186,6 +2232,8 @@ class AppPrefs(context: Context) {
     var v38PlaylistCrossFadeMs: Int
         get() = prefs.getInt(KEY_V38_PLAYLIST_CROSS_FADE_MS, 0)
         set(value) = prefs.edit().putInt(KEY_V38_PLAYLIST_CROSS_FADE_MS, value).apply()
+
+    // ===== v39.x =====
     // v39.1: 时间基准同步模式
     var v39VideoTbnSyncMode: Int
         get() = prefs.getInt(KEY_V39_VIDEO_TBN_SYNC_MODE, 0)
@@ -2246,6 +2294,8 @@ class AppPrefs(context: Context) {
     var v39PlaylistLoadRelated: Boolean
         get() = prefs.getBoolean(KEY_V39_PLAYLIST_LOAD_RELATED, false)
         set(value) = prefs.edit().putBoolean(KEY_V39_PLAYLIST_LOAD_RELATED, value).apply()
+
+    // ===== v40.x =====
     // v40.1: 快照间隔(秒)
     var v40VideoSnapshotInterval: Int
         get() = prefs.getInt(KEY_V40_VIDEO_SNAPSHOT_INTERVAL, 0)
@@ -2306,156 +2356,6 @@ class AppPrefs(context: Context) {
     var v40PlaylistAutoRemoveDuplicated: Boolean
         get() = prefs.getBoolean(KEY_V40_PLAYLIST_AUTO_REMOVE_DUPLICATED, false)
         set(value) = prefs.edit().putBoolean(KEY_V40_PLAYLIST_AUTO_REMOVE_DUPLICATED, value).apply()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     
     
     
@@ -2606,8 +2506,6 @@ class AppPrefs(context: Context) {
     
     
     
-
-
 
 
     // v13.10: 暗角效果
@@ -3838,34 +3736,63 @@ class AppPrefs(context: Context) {
         private const val KEY_DANMAKU_POOL_SIZE = "danmaku_pool_size"
         // v14.20: 视频投射模式
         private const val KEY_CAST_MODE = "cast_mode"
+        // v15.1: 弹幕缩放比例
         private const val KEY_DANMAKU_SCALE = "danmaku_scale"
+        // v15.2: 自动播放下一集
         private const val KEY_AUTO_PLAY_NEXT_EPISODE = "auto_play_next_episode"
+        // v15.3: 弹幕描边模糊
         private const val KEY_DANMAKU_STROKE_BLUR = "danmaku_stroke_blur"
+        // v15.4: 记住音量
         private const val KEY_REMEMBER_VOLUME = "remember_volume"
+        // v15.5: 记住亮度
         private const val KEY_REMEMBER_BRIGHTNESS = "remember_brightness"
+        // v15.6: 弹幕间隔时间
         private const val KEY_DANMAKU_INTERVAL = "danmaku_interval"
+        // v15.7: 播放速度曲线
         private const val KEY_PLAYBACK_SPEED_CURVE = "playback_speed_curve"
+        // v15.8: 弹幕池优先级
         private const val KEY_DANMAKU_POOL_PRIORITY = "danmaku_pool_priority"
+        // v15.10: 弹幕时间偏移
         private const val KEY_DANMAKU_TIME_OFFSET = "danmaku_time_offset"
+        // v15.11: 自动跳过片头
         private const val KEY_AUTO_SKIP_OPENING = "auto_skip_opening"
+        // v15.12: 弹幕透明度动画
         private const val KEY_DANMAKU_OPACITY_ANIM = "danmaku_opacity_anim"
+        // v15.13: 弹幕发送历史备份
         private const val KEY_DANMAKU_SEND_HISTORY_BACKUP = "danmaku_send_history_backup"
+        // v15.14: 视频旋转记忆
         private const val KEY_REMEMBER_VIDEO_ROTATION = "remember_video_rotation"
+        // v15.15: 弹幕模糊半径
         private const val KEY_DANMAKU_BLUR_RADIUS = "danmaku_blur_radius"
+        // v15.16: 快捷分享
         private const val KEY_QUICK_SHARE = "quick_share"
+        // v15.17: 记住弹幕开关
         private const val KEY_REMEMBER_DANMAKU_ENABLED = "remember_danmaku_enabled"
+        // v15.18: 弹幕入场动画
         private const val KEY_DANMAKU_ENTRY_ANIM = "danmaku_entry_anim"
+        // v15.19: 视频截图质量
         private const val KEY_SCREENSHOT_QUALITY = "screenshot_quality"
+        // v15.20: 弹幕输出模式
         private const val KEY_DANMAKU_OUTPUT_MODE = "danmaku_output_mode"
+        // v15.21: 播放进度条样式
         private const val KEY_PROGRESS_BAR_STYLE = "progress_bar_style"
+        // v15.22: 弹幕渲染层级
         private const val KEY_DANMAKU_RENDER_LAYER = "danmaku_render_layer"
+        // v15.23: 自动播放记忆
         private const val KEY_REMEMBER_AUTO_PLAY = "remember_auto_play"
+        // v15.24: 弹幕过滤关键词
         private const val KEY_DANMAKU_FILTER_KEYWORDS = "danmaku_filter_keywords"
+        // v15.25: 视频色彩空间
         private const val KEY_VIDEO_COLOR_SPACE = "video_color_space"
+        // v15.26: 弹幕发送快捷键
         private const val KEY_DANMAKU_SEND_KEY = "danmaku_send_key"
+        // v15.27: 播放倍速预设
         private const val KEY_PLAYBACK_SPEED_PRESETS = "playback_speed_presets"
+        // v15.28: 弹幕过滤正则
         private const val KEY_DANMAKU_FILTER_REGEX = "danmaku_filter_regex"
+        // v15.29: 视频投射设备
         private const val KEY_CAST_DEVICE_NAME = "cast_device_name"
+        // v15.30: 弹幕描边3D效果
         private const val KEY_DANMAKU_STROKE_3D = "danmaku_stroke_3d"
         // v16.1: 弹幕字体描边颜色
         private const val KEY_DANMAKU_STROKE_COLOR_V2 = "danmaku_stroke_color_v2"
@@ -4288,8 +4215,6 @@ class AppPrefs(context: Context) {
 
 
         
-
-
 
 
                 // v13.10: 暗角效果
