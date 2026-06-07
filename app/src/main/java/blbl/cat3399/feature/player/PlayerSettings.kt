@@ -10453,4 +10453,14 @@ internal fun PlayerActivity.showv40PlayerKeyShortcutMapToggle() {
         .show()
 }
 
+
+// 40.5: B站表情解析
+internal fun PlayerActivity.showv40DanmakuBiliEmoteParseToggle() {
+    val current = BiliClient.prefs.v40DanmakuBiliEmoteParse
+    AppPopup.Builder(this)
+        .title("B站表情解析")
+        .option(switchText(current)) { BiliClient.prefs.v40DanmakuBiliEmoteParse = !current }
+        .show()
+}
+
 }
