@@ -9918,4 +9918,19 @@ internal fun PlayerActivity.showv37VideoFpsCounterToggle() {
         .show()
 }
 
+
+// 37.8: 缓冲策略
+internal fun PlayerActivity.showv37PlaybackBufferStrategyDialog() {
+    val current = BiliClient.prefs.v37PlaybackBufferStrategy
+    AppPopup.Builder(this)
+        .title("缓冲策略")
+        .option("0") { BiliClient.prefs.v37PlaybackBufferStrategy = 0 }
+        .option("1") { BiliClient.prefs.v37PlaybackBufferStrategy = 1 }
+        .option("2") { BiliClient.prefs.v37PlaybackBufferStrategy = 2 }
+        .option("3") { BiliClient.prefs.v37PlaybackBufferStrategy = 3 }
+        .option("5") { BiliClient.prefs.v37PlaybackBufferStrategy = 5 }
+        .option("10") { BiliClient.prefs.v37PlaybackBufferStrategy = 10 }
+        .show()
+}
+
 }
