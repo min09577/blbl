@@ -10482,4 +10482,19 @@ internal fun PlayerActivity.showv40VideoAiSuperResToggle() {
         .show()
 }
 
+
+// 40.8: 分段缓存大小(MB)
+internal fun PlayerActivity.showv40PlaybackCacheSegmentDialog() {
+    val current = BiliClient.prefs.v40PlaybackCacheSegment
+    AppPopup.Builder(this)
+        .title("分段缓存大小(MB)")
+        .option("0") { BiliClient.prefs.v40PlaybackCacheSegment = 0 }
+        .option("1") { BiliClient.prefs.v40PlaybackCacheSegment = 1 }
+        .option("2") { BiliClient.prefs.v40PlaybackCacheSegment = 2 }
+        .option("3") { BiliClient.prefs.v40PlaybackCacheSegment = 3 }
+        .option("5") { BiliClient.prefs.v40PlaybackCacheSegment = 5 }
+        .option("10") { BiliClient.prefs.v40PlaybackCacheSegment = 10 }
+        .show()
+}
+
 }

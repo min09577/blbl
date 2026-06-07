@@ -2256,6 +2256,11 @@ class AppPrefs(context: Context) {
     var v40VideoAiSuperRes: Boolean
         get() = prefs.getBoolean(KEY_V40_VIDEO_AI_SUPER_RES, false)
         set(value) = prefs.edit().putBoolean(KEY_V40_VIDEO_AI_SUPER_RES, value).apply()
+    // v40.8: 分段缓存大小(MB)
+    var v40PlaybackCacheSegment: Int
+        get() = prefs.getInt(KEY_V40_PLAYBACK_CACHE_SEGMENT, 0)
+        set(value) = prefs.edit().putInt(KEY_V40_PLAYBACK_CACHE_SEGMENT, value).apply()
+
 
 
 
@@ -4463,6 +4468,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V40_DANMAKU_BILI_EMOTE_PARSE = "v40_danmaku_bili_emote_parse"
         private const val KEY_V40_SUBTITLE_FONT_SERIF = "v40_subtitle_font_serif"
         private const val KEY_V40_VIDEO_AI_SUPER_RES = "v40_video_ai_super_res"
+        private const val KEY_V40_PLAYBACK_CACHE_SEGMENT = "v40_playback_cache_segment"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
