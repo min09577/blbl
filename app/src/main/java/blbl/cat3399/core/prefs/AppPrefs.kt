@@ -2048,6 +2048,11 @@ class AppPrefs(context: Context) {
     var v36PlaylistAutoplayNextEpisode: Boolean
         get() = prefs.getBoolean(KEY_V36_PLAYLIST_AUTOPLAY_NEXT_EPISODE, false)
         set(value) = prefs.edit().putBoolean(KEY_V36_PLAYLIST_AUTOPLAY_NEXT_EPISODE, value).apply()
+    // v37.1: 黑边自动检测
+    var v37VideoBlackBarDetect: Boolean
+        get() = prefs.getBoolean(KEY_V37_VIDEO_BLACK_BAR_DETECT, false)
+        set(value) = prefs.edit().putBoolean(KEY_V37_VIDEO_BLACK_BAR_DETECT, value).apply()
+
 
 
 
@@ -4151,6 +4156,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V36_DANMAKU_FAN_BADGE = "v36_danmaku_fan_badge"
         private const val KEY_V36_SUBTITLE_FONT_WEIGHT_CUSTOM = "v36_subtitle_font_weight_custom"
         private const val KEY_V36_PLAYLIST_AUTOPLAY_NEXT_EPISODE = "v36_playlist_autoplay_next_episode"
+        private const val KEY_V37_VIDEO_BLACK_BAR_DETECT = "v37_video_black_bar_detect"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
