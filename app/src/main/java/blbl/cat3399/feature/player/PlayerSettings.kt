@@ -521,6 +521,20 @@ internal fun PlayerActivity.showv31VideoABoopModeToggle() {
         .option(switchText(current)) { BiliClient.prefs.v31VideoABoopMode = !current }
         .show()
 }
+// 31.11: 弹幕层级排序
+internal fun PlayerActivity.showv31DanmakuLayerOrderDialog() {
+    val current = BiliClient.prefs.v31DanmakuLayerOrder
+    AppPopup.Builder(this)
+        .title("弹幕层级排序")
+        .option("0") { BiliClient.prefs.v31DanmakuLayerOrder = 0 }
+        .option("1") { BiliClient.prefs.v31DanmakuLayerOrder = 1 }
+        .option("2") { BiliClient.prefs.v31DanmakuLayerOrder = 2 }
+        .option("3") { BiliClient.prefs.v31DanmakuLayerOrder = 3 }
+        .option("5") { BiliClient.prefs.v31DanmakuLayerOrder = 5 }
+        .option("10") { BiliClient.prefs.v31DanmakuLayerOrder = 10 }
+        .show()
+}
+
 
 
 

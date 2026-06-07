@@ -1688,6 +1688,11 @@ class AppPrefs(context: Context) {
     var v30DanmakuFontGlow: Int
         get() = prefs.getInt(KEY_V30_DANMAKU_FONT_GLOW, 0)
         set(value) = prefs.edit().putInt(KEY_V30_DANMAKU_FONT_GLOW, value.coerceIn(0, 100)).apply()
+    // v31.11: 弹幕层级排序
+    var v31DanmakuLayerOrder: Int
+        get() = prefs.getInt(KEY_V31_DANMAKU_LAYER_ORDER, 0)
+        set(value) = prefs.edit().putInt(KEY_V31_DANMAKU_LAYER_ORDER, value).apply()
+
     // v31.10: A-B循环播放
     var v31VideoABoopMode: Boolean
         get() = prefs.getBoolean(KEY_V31_VIDEO_A_BOOP_MODE, false)
@@ -2916,6 +2921,7 @@ class AppPrefs(context: Context) {
         val DANMAKU_AREA_OPTIONS: List<Float> = (1..10).map { it / 10f }
 
         private val LEGACY_DANMAKU_AREA_OPTIONS: List<Float> =
+        private const val KEY_V31_DANMAKU_LAYER_ORDER = "v31_danmaku_layer_order"
             listOf(
                 1f / 6f,
                 1f / 5f,
