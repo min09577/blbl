@@ -1962,6 +1962,11 @@ class AppPrefs(context: Context) {
     var v35PlayerAutoFullscreenLandscape: Boolean
         get() = prefs.getBoolean(KEY_V35_PLAYER_AUTO_FULLSCREEN_LANDSCAPE, false)
         set(value) = prefs.edit().putBoolean(KEY_V35_PLAYER_AUTO_FULLSCREEN_LANDSCAPE, value).apply()
+    // v35.5: 弹幕拼音转换
+    var v35DanmakuPinyinConvert: Boolean
+        get() = prefs.getBoolean(KEY_V35_DANMAKU_PINYIN_CONVERT, false)
+        set(value) = prefs.edit().putBoolean(KEY_V35_DANMAKU_PINYIN_CONVERT, value).apply()
+
 
 
 
@@ -4022,6 +4027,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V35_DANMAKU_SENDER_AVATAR = "v35_danmaku_sender_avatar"
         private const val KEY_V35_AUDIO_SPATIAL_WIDTH = "v35_audio_spatial_width"
         private const val KEY_V35_PLAYER_AUTO_FULLSCREEN_LANDSCAPE = "v35_player_auto_fullscreen_landscape"
+        private const val KEY_V35_DANMAKU_PINYIN_CONVERT = "v35_danmaku_pinyin_convert"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
