@@ -9668,4 +9668,14 @@ internal fun PlayerActivity.showv36DanmakuOpacityPerTypeDialog() {
         .show()
 }
 
+
+// 36.3: 人声隔离
+internal fun PlayerActivity.showv36AudioVoiceIsolateToggle() {
+    val current = BiliClient.prefs.v36AudioVoiceIsolate
+    AppPopup.Builder(this)
+        .title("人声隔离")
+        .option(switchText(current)) { BiliClient.prefs.v36AudioVoiceIsolate = !current }
+        .show()
+}
+
 }
