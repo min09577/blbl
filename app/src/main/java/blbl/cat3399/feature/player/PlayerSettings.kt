@@ -1752,6 +1752,15 @@ internal fun PlayerActivity.showv39VideoDetailInfoBarToggle() {
         .option(switchText(current)) { BiliClient.prefs.v39VideoDetailInfoBar = !current }
         .show()
 }
+// 39.8: 网络自适应播放
+internal fun PlayerActivity.showv39PlaybackNetworkAdaptToggle() {
+    val current = BiliClient.prefs.v39PlaybackNetworkAdapt
+    AppPopup.Builder(this)
+        .title("网络自适应播放")
+        .option(switchText(current)) { BiliClient.prefs.v39PlaybackNetworkAdapt = !current }
+        .show()
+}
+
 
 
 
