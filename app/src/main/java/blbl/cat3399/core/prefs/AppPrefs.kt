@@ -1836,6 +1836,11 @@ class AppPrefs(context: Context) {
     var v32ScreenOffTimer: Int
         get() = prefs.getInt(KEY_V32_SCREEN_OFF_TIMER, 0)
         set(value) = prefs.edit().putInt(KEY_V32_SCREEN_OFF_TIMER, value).apply()
+    // v33.14: 字幕阴影偏移
+    var v33SubtitleShadowOffset: Int
+        get() = prefs.getInt(KEY_V33_SUBTITLE_SHADOW_OFFSET, 0)
+        set(value) = prefs.edit().putInt(KEY_V33_SUBTITLE_SHADOW_OFFSET, value).apply()
+
     // v33.13: 弹幕重复过滤
     var v33DanmakuRepeatFilter: Boolean
         get() = prefs.getBoolean(KEY_V33_DANMAKU_REPEAT_FILTER, false)
@@ -3250,6 +3255,7 @@ class AppPrefs(context: Context) {
                 PLAYER_OSD_BTN_LIST_PANEL,
                 PLAYER_OSD_BTN_ADVANCED,
             )
+        private const val KEY_V33_SUBTITLE_SHADOW_OFFSET = "v33_subtitle_shadow_offset"
 
         private val PLAYER_OSD_BUTTON_KEYS: Set<String> =
             setOf(

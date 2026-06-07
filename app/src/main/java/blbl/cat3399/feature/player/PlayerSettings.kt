@@ -865,6 +865,20 @@ internal fun PlayerActivity.showv33DanmakuRepeatFilterToggle() {
         .option(switchText(current)) { BiliClient.prefs.v33DanmakuRepeatFilter = !current }
         .show()
 }
+// 33.14: 字幕阴影偏移
+internal fun PlayerActivity.showv33SubtitleShadowOffsetDialog() {
+    val current = BiliClient.prefs.v33SubtitleShadowOffset
+    AppPopup.Builder(this)
+        .title("字幕阴影偏移")
+        .option("0") { BiliClient.prefs.v33SubtitleShadowOffset = 0 }
+        .option("1") { BiliClient.prefs.v33SubtitleShadowOffset = 1 }
+        .option("2") { BiliClient.prefs.v33SubtitleShadowOffset = 2 }
+        .option("3") { BiliClient.prefs.v33SubtitleShadowOffset = 3 }
+        .option("5") { BiliClient.prefs.v33SubtitleShadowOffset = 5 }
+        .option("10") { BiliClient.prefs.v33SubtitleShadowOffset = 10 }
+        .show()
+}
+
 
 
 
