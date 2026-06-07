@@ -1910,6 +1910,11 @@ class AppPrefs(context: Context) {
     var v33AudioBassBoost: Int
         get() = prefs.getInt(KEY_V33_AUDIO_BASS_BOOST, 0)
         set(value) = prefs.edit().putInt(KEY_V33_AUDIO_BASS_BOOST, value).apply()
+    // v34.7: 扫描线滤镜
+    var v34VideoScanLineFilter: Boolean
+        get() = prefs.getBoolean(KEY_V34_VIDEO_SCAN_LINE_FILTER, false)
+        set(value) = prefs.edit().putBoolean(KEY_V34_VIDEO_SCAN_LINE_FILTER, value).apply()
+
     // v34.6: 字幕卡拉OK模式
     var v34SubtitleKaraokeMode: Boolean
         get() = prefs.getBoolean(KEY_V34_SUBTITLE_KARAOKE_MODE, false)
@@ -3332,6 +3337,7 @@ class AppPrefs(context: Context) {
         const val PLAYER_DOWN_KEY_OSD_FOCUS_LIKE = "like"
         const val PLAYER_DOWN_KEY_OSD_FOCUS_COIN = "coin"
         const val PLAYER_DOWN_KEY_OSD_FOCUS_FAV = "fav"
+        private const val KEY_V34_VIDEO_SCAN_LINE_FILTER = "v34_video_scan_line_filter"
         const val PLAYER_DOWN_KEY_OSD_FOCUS_LIST_PANEL = "list_panel"
         const val PLAYER_DOWN_KEY_OSD_FOCUS_SPONSOR_SUBMIT = "sponsor_submit"
         const val PLAYER_DOWN_KEY_OSD_FOCUS_ADVANCED = "advanced"
