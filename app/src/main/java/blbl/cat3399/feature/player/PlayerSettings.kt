@@ -1710,6 +1710,20 @@ internal fun PlayerActivity.showv39AudioMidFreqGainDialog() {
         .option("10") { BiliClient.prefs.v39AudioMidFreqGain = 10 }
         .show()
 }
+// 39.4: 自动亮度范围
+internal fun PlayerActivity.showv39PlayerAutoBrightnessRangeDialog() {
+    val current = BiliClient.prefs.v39PlayerAutoBrightnessRange
+    AppPopup.Builder(this)
+        .title("自动亮度范围")
+        .option("0") { BiliClient.prefs.v39PlayerAutoBrightnessRange = 0 }
+        .option("1") { BiliClient.prefs.v39PlayerAutoBrightnessRange = 1 }
+        .option("2") { BiliClient.prefs.v39PlayerAutoBrightnessRange = 2 }
+        .option("3") { BiliClient.prefs.v39PlayerAutoBrightnessRange = 3 }
+        .option("5") { BiliClient.prefs.v39PlayerAutoBrightnessRange = 5 }
+        .option("10") { BiliClient.prefs.v39PlayerAutoBrightnessRange = 10 }
+        .show()
+}
+
 
 
 
