@@ -9378,4 +9378,14 @@ internal fun PlayerActivity.showv34PlaybackAutoPauseOnHeadsetToggle() {
         .show()
 }
 
+
+// 34.9: 弹幕镜像翻转
+internal fun PlayerActivity.showv34DanmakuMirrorFlipToggle() {
+    val current = BiliClient.prefs.v34DanmakuMirrorFlip
+    AppPopup.Builder(this)
+        .title("弹幕镜像翻转")
+        .option(switchText(current)) { BiliClient.prefs.v34DanmakuMirrorFlip = !current }
+        .show()
+}
+
 }
