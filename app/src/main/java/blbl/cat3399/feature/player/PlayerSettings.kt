@@ -10027,4 +10027,19 @@ internal fun PlayerActivity.showv37PlaylistFadeTransitionToggle() {
         .show()
 }
 
+
+// 38.1: Gamma曲线预设
+internal fun PlayerActivity.showv38VideoGammaCurveDialog() {
+    val current = BiliClient.prefs.v38VideoGammaCurve
+    AppPopup.Builder(this)
+        .title("Gamma曲线预设")
+        .option("0") { BiliClient.prefs.v38VideoGammaCurve = 0 }
+        .option("1") { BiliClient.prefs.v38VideoGammaCurve = 1 }
+        .option("2") { BiliClient.prefs.v38VideoGammaCurve = 2 }
+        .option("3") { BiliClient.prefs.v38VideoGammaCurve = 3 }
+        .option("5") { BiliClient.prefs.v38VideoGammaCurve = 5 }
+        .option("10") { BiliClient.prefs.v38VideoGammaCurve = 10 }
+        .show()
+}
+
 }
