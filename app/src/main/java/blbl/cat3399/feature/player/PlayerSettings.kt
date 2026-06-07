@@ -9718,4 +9718,19 @@ internal fun PlayerActivity.showv36SubtitleEdgeBlurDialog() {
         .show()
 }
 
+
+// 36.7: 色彩LUT预设
+internal fun PlayerActivity.showv36VideoColorLutPresetDialog() {
+    val current = BiliClient.prefs.v36VideoColorLutPreset
+    AppPopup.Builder(this)
+        .title("色彩LUT预设")
+        .option("0") { BiliClient.prefs.v36VideoColorLutPreset = 0 }
+        .option("1") { BiliClient.prefs.v36VideoColorLutPreset = 1 }
+        .option("2") { BiliClient.prefs.v36VideoColorLutPreset = 2 }
+        .option("3") { BiliClient.prefs.v36VideoColorLutPreset = 3 }
+        .option("5") { BiliClient.prefs.v36VideoColorLutPreset = 5 }
+        .option("10") { BiliClient.prefs.v36VideoColorLutPreset = 10 }
+        .show()
+}
+
 }
