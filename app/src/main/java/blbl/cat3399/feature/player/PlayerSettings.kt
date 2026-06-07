@@ -9312,4 +9312,19 @@ internal fun PlayerActivity.showv34VideoBrightnessSensorToggle() {
         .show()
 }
 
+
+// 34.3: 音频压缩阈值
+internal fun PlayerActivity.showv34AudioCompressorThresholdDialog() {
+    val current = BiliClient.prefs.v34AudioCompressorThreshold
+    AppPopup.Builder(this)
+        .title("音频压缩阈值")
+        .option("0") { BiliClient.prefs.v34AudioCompressorThreshold = 0 }
+        .option("1") { BiliClient.prefs.v34AudioCompressorThreshold = 1 }
+        .option("2") { BiliClient.prefs.v34AudioCompressorThreshold = 2 }
+        .option("3") { BiliClient.prefs.v34AudioCompressorThreshold = 3 }
+        .option("5") { BiliClient.prefs.v34AudioCompressorThreshold = 5 }
+        .option("10") { BiliClient.prefs.v34AudioCompressorThreshold = 10 }
+        .show()
+}
+
 }

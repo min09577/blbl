@@ -1876,6 +1876,11 @@ class AppPrefs(context: Context) {
     var v34VideoBrightnessSensor: Boolean
         get() = prefs.getBoolean(KEY_V34_VIDEO_BRIGHTNESS_SENSOR, false)
         set(value) = prefs.edit().putBoolean(KEY_V34_VIDEO_BRIGHTNESS_SENSOR, value).apply()
+    // v34.3: 音频压缩阈值
+    var v34AudioCompressorThreshold: Int
+        get() = prefs.getInt(KEY_V34_AUDIO_COMPRESSOR_THRESHOLD, 0)
+        set(value) = prefs.edit().putInt(KEY_V34_AUDIO_COMPRESSOR_THRESHOLD, value).apply()
+
 
 
 
@@ -3893,6 +3898,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V33_PLAYLIST_REVERSE_ORDER = "v33_playlist_reverse_order"
         private const val KEY_V34_DANMAKU_MAX_DISPLAY_SEC = "v34_danmaku_max_display_sec"
         private const val KEY_V34_VIDEO_BRIGHTNESS_SENSOR = "v34_video_brightness_sensor"
+        private const val KEY_V34_AUDIO_COMPRESSOR_THRESHOLD = "v34_audio_compressor_threshold"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
