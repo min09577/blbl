@@ -9233,4 +9233,14 @@ internal fun PlayerActivity.showv33AudioGainDbDialog() {
         .show()
 }
 
+
+// 33.11: 进度条章节标记
+internal fun PlayerActivity.showv33PlayerSeekBarChapterToggle() {
+    val current = BiliClient.prefs.v33PlayerSeekBarChapter
+    AppPopup.Builder(this)
+        .title("进度条章节标记")
+        .option(switchText(current)) { BiliClient.prefs.v33PlayerSeekBarChapter = !current }
+        .show()
+}
+
 }
