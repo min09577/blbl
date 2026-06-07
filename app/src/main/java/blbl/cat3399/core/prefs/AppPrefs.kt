@@ -1730,6 +1730,11 @@ class AppPrefs(context: Context) {
     var v31VideoDeinterlaceMode: Int
         get() = prefs.getInt(KEY_V31_VIDEO_DEINTERLACE_MODE, 0)
         set(value) = prefs.edit().putInt(KEY_V31_VIDEO_DEINTERLACE_MODE, value).apply()
+    // v31.7: 音频夜间模式
+    var v31AudioNightMode: Boolean
+        get() = prefs.getBoolean(KEY_V31_AUDIO_NIGHT_MODE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V31_AUDIO_NIGHT_MODE, value).apply()
+
 
 
 
@@ -3674,6 +3679,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V31_PLAYBACK_BUFFER_AHEAD_SEC = "v31_playback_buffer_ahead_sec"
         private const val KEY_V31_DANMAKU_ANTI_SPAM_LEVEL = "v31_danmaku_anti_spam_level"
         private const val KEY_V31_VIDEO_DEINTERLACE_MODE = "v31_video_deinterlace_mode"
+        private const val KEY_V31_AUDIO_NIGHT_MODE = "v31_audio_night_mode"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
