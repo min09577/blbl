@@ -8893,4 +8893,19 @@ internal fun PlayerActivity.showv31PlaybackAutoResumeToggle() {
         .show()
 }
 
+
+// 31.14: 弹幕屏蔽用户等级
+internal fun PlayerActivity.showv31DanmakuBlockUserLevelDialog() {
+    val current = BiliClient.prefs.v31DanmakuBlockUserLevel
+    AppPopup.Builder(this)
+        .title("弹幕屏蔽用户等级")
+        .option("0") { BiliClient.prefs.v31DanmakuBlockUserLevel = 0 }
+        .option("1") { BiliClient.prefs.v31DanmakuBlockUserLevel = 1 }
+        .option("2") { BiliClient.prefs.v31DanmakuBlockUserLevel = 2 }
+        .option("3") { BiliClient.prefs.v31DanmakuBlockUserLevel = 3 }
+        .option("5") { BiliClient.prefs.v31DanmakuBlockUserLevel = 5 }
+        .option("10") { BiliClient.prefs.v31DanmakuBlockUserLevel = 10 }
+        .show()
+}
+
 }

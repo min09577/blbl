@@ -1758,6 +1758,11 @@ class AppPrefs(context: Context) {
     var v31PlaybackAutoResume: Boolean
         get() = prefs.getBoolean(KEY_V31_PLAYBACK_AUTO_RESUME, false)
         set(value) = prefs.edit().putBoolean(KEY_V31_PLAYBACK_AUTO_RESUME, value).apply()
+    // v31.14: 弹幕屏蔽用户等级
+    var v31DanmakuBlockUserLevel: Int
+        get() = prefs.getInt(KEY_V31_DANMAKU_BLOCK_USER_LEVEL, 0)
+        set(value) = prefs.edit().putInt(KEY_V31_DANMAKU_BLOCK_USER_LEVEL, value).apply()
+
 
 
 
@@ -3716,6 +3721,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V31_DANMAKU_LAYER_ORDER = "v31_danmaku_layer_order"
         private const val KEY_V31_SUBTITLE_SYNC_OFFSET = "v31_subtitle_sync_offset"
         private const val KEY_V31_PLAYBACK_AUTO_RESUME = "v31_playback_auto_resume"
+        private const val KEY_V31_DANMAKU_BLOCK_USER_LEVEL = "v31_danmaku_block_user_level"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
