@@ -1836,6 +1836,11 @@ class AppPrefs(context: Context) {
     var v32ScreenOffTimer: Int
         get() = prefs.getInt(KEY_V32_SCREEN_OFF_TIMER, 0)
         set(value) = prefs.edit().putInt(KEY_V32_SCREEN_OFF_TIMER, value).apply()
+    // v33.15: 播放列表倒序
+    var v33PlaylistReverseOrder: Boolean
+        get() = prefs.getBoolean(KEY_V33_PLAYLIST_REVERSE_ORDER, false)
+        set(value) = prefs.edit().putBoolean(KEY_V33_PLAYLIST_REVERSE_ORDER, value).apply()
+
     // v33.14: 字幕阴影偏移
     var v33SubtitleShadowOffset: Int
         get() = prefs.getInt(KEY_V33_SUBTITLE_SHADOW_OFFSET, 0)
@@ -3260,6 +3265,7 @@ class AppPrefs(context: Context) {
         private val PLAYER_OSD_BUTTON_KEYS: Set<String> =
             setOf(
                 PLAYER_OSD_BTN_PREV,
+        private const val KEY_V33_PLAYLIST_REVERSE_ORDER = "v33_playlist_reverse_order"
                 PLAYER_OSD_BTN_PLAY_PAUSE,
                 PLAYER_OSD_BTN_NEXT,
                 PLAYER_OSD_BTN_SUBTITLE,
