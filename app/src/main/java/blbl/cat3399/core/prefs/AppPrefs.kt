@@ -1762,6 +1762,13 @@ class AppPrefs(context: Context) {
     var v31DanmakuMergeOverlap: Boolean
         get() = prefs.getBoolean(KEY_V31_DANMAKU_MERGE_OVERLAP, false)
         set(value) = prefs.edit().putBoolean(KEY_V31_DANMAKU_MERGE_OVERLAP, value).apply()
+    // v32.1: 息屏定时器(分钟)
+    var v32ScreenOffTimer: Int
+        get() = prefs.getInt(KEY_V32_SCREEN_OFF_TIMER, 0)
+        set(value) = prefs.edit().putInt(KEY_V32_SCREEN_OFF_TIMER, value).apply()
+
+
+    // ===== v32.x =====
 
 
     // ===== v31.x =====
@@ -2962,8 +2969,11 @@ class AppPrefs(context: Context) {
         fun normalizeDanmakuArea(value: Float): Float {
             val v = value.takeIf { it.isFinite() } ?: DANMAKU_AREA_DEFAULT
         private const val KEY_V31_VIDEO_CODEC_PRIORITY = "v31_video_codec_priority"
+
+        // ===== v32.x KEY =====
             val clamped = v.coerceIn(DANMAKU_AREA_MIN, DANMAKU_AREA_MAX)
             val scaled = (clamped * 100f).roundToInt()
+        private const val KEY_V32_SCREEN_OFF_TIMER = "v32_screen_off_timer"
             val step = (DANMAKU_AREA_STEP * 100f).roundToInt().coerceAtLeast(1)
             val snapped = ((scaled + step / 2) / step) * step
             return (snapped / 100f).coerceIn(DANMAKU_AREA_MIN, DANMAKU_AREA_MAX)
