@@ -8882,4 +8882,14 @@ internal fun PlayerActivity.showv31SubtitleSyncOffsetDialog() {
         .show()
 }
 
+
+// 31.13: 播放自动恢复
+internal fun PlayerActivity.showv31PlaybackAutoResumeToggle() {
+    val current = BiliClient.prefs.v31PlaybackAutoResume
+    AppPopup.Builder(this)
+        .title("播放自动恢复")
+        .option(switchText(current)) { BiliClient.prefs.v31PlaybackAutoResume = !current }
+        .show()
+}
+
 }
