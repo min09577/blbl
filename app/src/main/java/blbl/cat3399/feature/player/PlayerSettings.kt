@@ -10387,4 +10387,14 @@ internal fun PlayerActivity.showv39DanmakuSenderLevelIconToggle() {
         .show()
 }
 
+
+// 39.14: 字幕自动翻译
+internal fun PlayerActivity.showv39SubtitleAutoTranslateToggle() {
+    val current = BiliClient.prefs.v39SubtitleAutoTranslate
+    AppPopup.Builder(this)
+        .title("字幕自动翻译")
+        .option(switchText(current)) { BiliClient.prefs.v39SubtitleAutoTranslate = !current }
+        .show()
+}
+
 }
