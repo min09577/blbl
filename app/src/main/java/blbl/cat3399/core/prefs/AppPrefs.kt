@@ -1810,6 +1810,11 @@ class AppPrefs(context: Context) {
     var v32AudioVirtualSurround: Boolean
         get() = prefs.getBoolean(KEY_V32_AUDIO_VIRTUAL_SURROUND, false)
         set(value) = prefs.edit().putBoolean(KEY_V32_AUDIO_VIRTUAL_SURROUND, value).apply()
+    // v32.12: 弹幕气泡样式
+    var v32DanmakuBubbleStyle: Boolean
+        get() = prefs.getBoolean(KEY_V32_DANMAKU_BUBBLE_STYLE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V32_DANMAKU_BUBBLE_STYLE, value).apply()
+
 
 
 
@@ -3794,6 +3799,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V32_DANMAKU_OPACITY_FADE = "v32_danmaku_opacity_fade"
         private const val KEY_V32_VIDEO_SPEED_RAMP_MODE = "v32_video_speed_ramp_mode"
         private const val KEY_V32_AUDIO_VIRTUAL_SURROUND = "v32_audio_virtual_surround"
+        private const val KEY_V32_DANMAKU_BUBBLE_STYLE = "v32_danmaku_bubble_style"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
