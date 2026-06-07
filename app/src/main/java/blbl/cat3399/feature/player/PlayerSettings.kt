@@ -10242,4 +10242,14 @@ internal fun PlayerActivity.showv39VideoTbnSyncModeDialog() {
         .show()
 }
 
+
+// 39.2: 弹幕云样式
+internal fun PlayerActivity.showv39DanmakuCloudPatternToggle() {
+    val current = BiliClient.prefs.v39DanmakuCloudPattern
+    AppPopup.Builder(this)
+        .title("弹幕云样式")
+        .option(switchText(current)) { BiliClient.prefs.v39DanmakuCloudPattern = !current }
+        .show()
+}
+
 }

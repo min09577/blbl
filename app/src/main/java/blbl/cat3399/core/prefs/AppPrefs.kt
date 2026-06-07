@@ -2172,6 +2172,11 @@ class AppPrefs(context: Context) {
     var v39VideoTbnSyncMode: Int
         get() = prefs.getInt(KEY_V39_VIDEO_TBN_SYNC_MODE, 0)
         set(value) = prefs.edit().putInt(KEY_V39_VIDEO_TBN_SYNC_MODE, value).apply()
+    // v39.2: 弹幕云样式
+    var v39DanmakuCloudPattern: Boolean
+        get() = prefs.getBoolean(KEY_V39_DANMAKU_CLOUD_PATTERN, false)
+        set(value) = prefs.edit().putBoolean(KEY_V39_DANMAKU_CLOUD_PATTERN, value).apply()
+
 
 
 
@@ -4337,6 +4342,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V38_SUBTITLE_ROMANIZE = "v38_subtitle_romanize"
         private const val KEY_V38_PLAYLIST_CROSS_FADE_MS = "v38_playlist_cross_fade_ms"
         private const val KEY_V39_VIDEO_TBN_SYNC_MODE = "v39_video_tbn_sync_mode"
+        private const val KEY_V39_DANMAKU_CLOUD_PATTERN = "v39_danmaku_cloud_pattern"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
