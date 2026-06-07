@@ -2132,6 +2132,11 @@ class AppPrefs(context: Context) {
     var v36VideoAspectFitMode: Int
         get() = prefs.getInt(KEY_V36_VIDEO_ASPECT_FIT_MODE, 0)
         set(value) = prefs.edit().putInt(KEY_V36_VIDEO_ASPECT_FIT_MODE, value).apply()
+    // v37.14: 字幕自定义背景色
+    var v37SubtitleBgColorCustom: Boolean
+        get() = prefs.getBoolean(KEY_V37_SUBTITLE_BG_COLOR_CUSTOM, false)
+        set(value) = prefs.edit().putBoolean(KEY_V37_SUBTITLE_BG_COLOR_CUSTOM, value).apply()
+
     // v37.13: 弹幕阴影偏移
     var v37DanmakuShadowOffset: Int
         get() = prefs.getInt(KEY_V37_DANMAKU_SHADOW_OFFSET, 0)
@@ -3735,3 +3740,4 @@ class AppPrefs(context: Context) {
         private const val KEY_V37_PLAYER_LONG_PRESS_SPEED = "v37_player_long_press_speed"
         private const val KEY_V37_VIDEO_INTERPOLATION_MODE = "v37_video_interpolation_mode"
         private const val KEY_V37_DANMAKU_SHADOW_OFFSET = "v37_danmaku_shadow_offset"
+        private const val KEY_V37_SUBTITLE_BG_COLOR_CUSTOM = "v37_subtitle_bg_color_custom"

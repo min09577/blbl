@@ -1490,6 +1490,15 @@ internal fun PlayerActivity.showv37DanmakuShadowOffsetDialog() {
         .option("10") { BiliClient.prefs.v37DanmakuShadowOffset = 10 }
         .show()
 }
+// 37.14: 字幕自定义背景色
+internal fun PlayerActivity.showv37SubtitleBgColorCustomToggle() {
+    val current = BiliClient.prefs.v37SubtitleBgColorCustom
+    AppPopup.Builder(this)
+        .title("字幕自定义背景色")
+        .option(switchText(current)) { BiliClient.prefs.v37SubtitleBgColorCustom = !current }
+        .show()
+}
+
 
 
 
