@@ -2058,6 +2058,11 @@ class AppPrefs(context: Context) {
     var v35VideoFrameRateOverride: Int
         get() = prefs.getInt(KEY_V35_VIDEO_FRAME_RATE_OVERRIDE, 0)
         set(value) = prefs.edit().putInt(KEY_V35_VIDEO_FRAME_RATE_OVERRIDE, value).apply()
+    // v36.8: 变速音调修正
+    var v36PlaybackSpeedPitchCorrect: Boolean
+        get() = prefs.getBoolean(KEY_V36_PLAYBACK_SPEED_PITCH_CORRECT, false)
+        set(value) = prefs.edit().putBoolean(KEY_V36_PLAYBACK_SPEED_PITCH_CORRECT, value).apply()
+
     // v36.7: 色彩LUT预设
     var v36VideoColorLutPreset: Int
         get() = prefs.getInt(KEY_V36_VIDEO_COLOR_LUT_PRESET, 0)
@@ -3605,3 +3610,4 @@ class AppPrefs(context: Context) {
         private const val KEY_V36_DANMAKU_AUTO_SCALE = "v36_danmaku_auto_scale"
         private const val KEY_V36_SUBTITLE_EDGE_BLUR = "v36_subtitle_edge_blur"
         private const val KEY_V36_VIDEO_COLOR_LUT_PRESET = "v36_video_color_lut_preset"
+        private const val KEY_V36_PLAYBACK_SPEED_PITCH_CORRECT = "v36_playback_speed_pitch_correct"
