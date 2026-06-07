@@ -2120,6 +2120,11 @@ class AppPrefs(context: Context) {
     var v38AudioHighShelfGain: Int
         get() = prefs.getInt(KEY_V38_AUDIO_HIGH_SHELF_GAIN, 0)
         set(value) = prefs.edit().putInt(KEY_V38_AUDIO_HIGH_SHELF_GAIN, value).apply()
+    // v38.4: 拖动预览帧
+    var v38PlayerSeekPreviewFrame: Boolean
+        get() = prefs.getBoolean(KEY_V38_PLAYER_SEEK_PREVIEW_FRAME, false)
+        set(value) = prefs.edit().putBoolean(KEY_V38_PLAYER_SEEK_PREVIEW_FRAME, value).apply()
+
 
 
 
@@ -4259,6 +4264,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V38_VIDEO_GAMMA_CURVE = "v38_video_gamma_curve"
         private const val KEY_V38_DANMAKU_SMART_DENSITY = "v38_danmaku_smart_density"
         private const val KEY_V38_AUDIO_HIGH_SHELF_GAIN = "v38_audio_high_shelf_gain"
+        private const val KEY_V38_PLAYER_SEEK_PREVIEW_FRAME = "v38_player_seek_preview_frame"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
