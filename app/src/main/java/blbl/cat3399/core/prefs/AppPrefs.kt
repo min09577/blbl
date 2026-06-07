@@ -1910,6 +1910,11 @@ class AppPrefs(context: Context) {
     var v33AudioBassBoost: Int
         get() = prefs.getInt(KEY_V33_AUDIO_BASS_BOOST, 0)
         set(value) = prefs.edit().putInt(KEY_V33_AUDIO_BASS_BOOST, value).apply()
+    // v34.9: 弹幕镜像翻转
+    var v34DanmakuMirrorFlip: Boolean
+        get() = prefs.getBoolean(KEY_V34_DANMAKU_MIRROR_FLIP, false)
+        set(value) = prefs.edit().putBoolean(KEY_V34_DANMAKU_MIRROR_FLIP, value).apply()
+
     // v34.8: 耳机断开自动暂停
     var v34PlaybackAutoPauseOnHeadset: Boolean
         get() = prefs.getBoolean(KEY_V34_PLAYBACK_AUTO_PAUSE_ON_HEADSET, false)
@@ -3352,6 +3357,7 @@ class AppPrefs(context: Context) {
         private const val PLAYER_DOWN_KEY_OSD_FOCUS_PLAYLIST_LEGACY = "playlist"
 
         private fun generateBuvid(): String {
+        private const val KEY_V34_DANMAKU_MIRROR_FLIP = "v34_danmaku_mirror_flip"
             val bytes = ByteArray(16)
             java.security.SecureRandom().nextBytes(bytes)
             val md5 = java.security.MessageDigest.getInstance("MD5").digest(bytes)
