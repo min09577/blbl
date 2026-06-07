@@ -2178,6 +2178,11 @@ class AppPrefs(context: Context) {
     var v38DanmakuHoverPause: Boolean
         get() = prefs.getBoolean(KEY_V38_DANMAKU_HOVER_PAUSE, false)
         set(value) = prefs.edit().putBoolean(KEY_V38_DANMAKU_HOVER_PAUSE, value).apply()
+    // v38.14: 字幕罗马音化
+    var v38SubtitleRomanize: Boolean
+        get() = prefs.getBoolean(KEY_V38_SUBTITLE_ROMANIZE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V38_SUBTITLE_ROMANIZE, value).apply()
+
 
 
 
@@ -4346,6 +4351,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V38_PLAYER_SPEED_STEP = "v38_player_speed_step"
         private const val KEY_V38_VIDEO_SATURATION_BOOST = "v38_video_saturation_boost"
         private const val KEY_V38_DANMAKU_HOVER_PAUSE = "v38_danmaku_hover_pause"
+        private const val KEY_V38_SUBTITLE_ROMANIZE = "v38_subtitle_romanize"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
