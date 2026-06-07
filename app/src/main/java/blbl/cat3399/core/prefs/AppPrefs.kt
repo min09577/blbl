@@ -1984,6 +1984,11 @@ class AppPrefs(context: Context) {
     var v34DanmakuMaxDisplaySec: Int
         get() = prefs.getInt(KEY_V34_DANMAKU_MAX_DISPLAY_SEC, 0)
         set(value) = prefs.edit().putInt(KEY_V34_DANMAKU_MAX_DISPLAY_SEC, value).apply()
+    // v35.8: 仅WiFi预加载
+    var v35PlaybackPreloadOnWifi: Boolean
+        get() = prefs.getBoolean(KEY_V35_PLAYBACK_PRELOAD_ON_WIFI, false)
+        set(value) = prefs.edit().putBoolean(KEY_V35_PLAYBACK_PRELOAD_ON_WIFI, value).apply()
+
     // v35.7: 暗角效果强度
     var v35VideoVignetteEffect: Int
         get() = prefs.getInt(KEY_V35_VIDEO_VIGNETTE_EFFECT, 0)
@@ -3494,6 +3499,7 @@ class AppPrefs(context: Context) {
         }
     }
 
+        private const val KEY_V35_PLAYBACK_PRELOAD_ON_WIFI = "v35_playback_preload_on_wifi"
     private fun deriveDeviceUuid(): String {
         val androidId =
             runCatching {

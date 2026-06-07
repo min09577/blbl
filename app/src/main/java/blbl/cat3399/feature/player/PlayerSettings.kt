@@ -1097,6 +1097,15 @@ internal fun PlayerActivity.showv35VideoVignetteEffectDialog() {
         .option("10") { BiliClient.prefs.v35VideoVignetteEffect = 10 }
         .show()
 }
+// 35.8: 仅WiFi预加载
+internal fun PlayerActivity.showv35PlaybackPreloadOnWifiToggle() {
+    val current = BiliClient.prefs.v35PlaybackPreloadOnWifi
+    AppPopup.Builder(this)
+        .title("仅WiFi预加载")
+        .option(switchText(current)) { BiliClient.prefs.v35PlaybackPreloadOnWifi = !current }
+        .show()
+}
+
 
 
 
