@@ -1527,6 +1527,20 @@ internal fun PlayerActivity.showv38DanmakuSmartDensityToggle() {
         .option(switchText(current)) { BiliClient.prefs.v38DanmakuSmartDensity = !current }
         .show()
 }
+// 38.3: 高频搁架增益
+internal fun PlayerActivity.showv38AudioHighShelfGainDialog() {
+    val current = BiliClient.prefs.v38AudioHighShelfGain
+    AppPopup.Builder(this)
+        .title("高频搁架增益")
+        .option("0") { BiliClient.prefs.v38AudioHighShelfGain = 0 }
+        .option("1") { BiliClient.prefs.v38AudioHighShelfGain = 1 }
+        .option("2") { BiliClient.prefs.v38AudioHighShelfGain = 2 }
+        .option("3") { BiliClient.prefs.v38AudioHighShelfGain = 3 }
+        .option("5") { BiliClient.prefs.v38AudioHighShelfGain = 5 }
+        .option("10") { BiliClient.prefs.v38AudioHighShelfGain = 10 }
+        .show()
+}
+
 
 
 

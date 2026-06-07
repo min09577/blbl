@@ -2206,6 +2206,11 @@ class AppPrefs(context: Context) {
     var v37VideoBlackBarDetect: Boolean
         get() = prefs.getBoolean(KEY_V37_VIDEO_BLACK_BAR_DETECT, false)
         set(value) = prefs.edit().putBoolean(KEY_V37_VIDEO_BLACK_BAR_DETECT, value).apply()
+    // v38.3: 高频搁架增益
+    var v38AudioHighShelfGain: Int
+        get() = prefs.getInt(KEY_V38_AUDIO_HIGH_SHELF_GAIN, 0)
+        set(value) = prefs.edit().putInt(KEY_V38_AUDIO_HIGH_SHELF_GAIN, value).apply()
+
     // v38.2: 弹幕智能密度控制
     var v38DanmakuSmartDensity: Boolean
         get() = prefs.getBoolean(KEY_V38_DANMAKU_SMART_DENSITY, false)
@@ -3763,3 +3768,4 @@ class AppPrefs(context: Context) {
         // ===== v38.x KEY =====
         private const val KEY_V38_VIDEO_GAMMA_CURVE = "v38_video_gamma_curve"
         private const val KEY_V38_DANMAKU_SMART_DENSITY = "v38_danmaku_smart_density"
+        private const val KEY_V38_AUDIO_HIGH_SHELF_GAIN = "v38_audio_high_shelf_gain"
