@@ -1746,6 +1746,11 @@ class AppPrefs(context: Context) {
     var v31VideoABoopMode: Boolean
         get() = prefs.getBoolean(KEY_V31_VIDEO_A_BOOP_MODE, false)
         set(value) = prefs.edit().putBoolean(KEY_V31_VIDEO_A_BOOP_MODE, value).apply()
+    // v31.11: 弹幕层级排序
+    var v31DanmakuLayerOrder: Int
+        get() = prefs.getInt(KEY_V31_DANMAKU_LAYER_ORDER, 0)
+        set(value) = prefs.edit().putInt(KEY_V31_DANMAKU_LAYER_ORDER, value).apply()
+
 
 
 
@@ -3698,6 +3703,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V31_DANMAKU_KEYWORD_HIGHLIGHT = "v31_danmaku_keyword_highlight"
         private const val KEY_V31_PLAYER_PI_P_SUPPORT = "v31_player_pi_p_support"
         private const val KEY_V31_VIDEO_A_BOOP_MODE = "v31_video_a_boop_mode"
+        private const val KEY_V31_DANMAKU_LAYER_ORDER = "v31_danmaku_layer_order"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
