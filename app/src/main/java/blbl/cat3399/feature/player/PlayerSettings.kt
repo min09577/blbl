@@ -10516,18 +10516,10 @@ internal fun PlayerActivity.showV60CastAudioFadeModeCustomDialog() {
 // ==================== v61-v70 New Unique Features ====================
 
 // v61.1: Video Edge Enhance Strength
-internal fun PlayerActivity.showV61VideoEdgeEnhanceStrengthDialog() {
-    val options = listOf(0, 25, 50, 75, 100)
-    val currentIndex = options.indexOf(BiliClient.prefs.v61VideoEdgeEnhanceStrength).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Video Edge Enhance Strength",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v61VideoEdgeEnhanceStrength = value
-        AppToast.show(this, "Video Edge Enhance Strength: $value")
-    }
+internal fun PlayerActivity.showV61VideoEdgeEnhanceStrengthToggle() {
+    val enabled = !BiliClient.prefs.v61VideoEdgeEnhanceStrength
+    BiliClient.prefs.v61VideoEdgeEnhanceStrength = enabled
+    AppToast.show(this, "Video Edge Enhance Strength: ${if (enabled) "ON" else "OFF"}")
 }
 
 // v61.2: Danmaku Collision Detection
