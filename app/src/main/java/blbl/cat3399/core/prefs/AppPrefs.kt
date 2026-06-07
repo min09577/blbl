@@ -1982,6 +1982,11 @@ class AppPrefs(context: Context) {
     var v35DanmakuGradientColor: Boolean
         get() = prefs.getBoolean(KEY_V35_DANMAKU_GRADIENT_COLOR, false)
         set(value) = prefs.edit().putBoolean(KEY_V35_DANMAKU_GRADIENT_COLOR, value).apply()
+    // v35.10: 音频响度标准化
+    var v35AudioLoudnessNormalize: Boolean
+        get() = prefs.getBoolean(KEY_V35_AUDIO_LOUDNESS_NORMALIZE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V35_AUDIO_LOUDNESS_NORMALIZE, value).apply()
+
 
 
 
@@ -4052,6 +4057,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V35_VIDEO_VIGNETTE_EFFECT = "v35_video_vignette_effect"
         private const val KEY_V35_PLAYBACK_PRELOAD_ON_WIFI = "v35_playback_preload_on_wifi"
         private const val KEY_V35_DANMAKU_GRADIENT_COLOR = "v35_danmaku_gradient_color"
+        private const val KEY_V35_AUDIO_LOUDNESS_NORMALIZE = "v35_audio_loudness_normalize"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
