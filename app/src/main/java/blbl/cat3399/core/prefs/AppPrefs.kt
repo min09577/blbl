@@ -12244,156 +12244,607 @@ class AppPrefs(context: Context) {
         get() = prefs.getInt(KEY_V90SUBTITLEANIMATIONDELAYCUSTOM, 0)
         set(value) = prefs.edit().putInt(KEY_V90SUBTITLEANIMATIONDELAYCUSTOM, value).apply()
 
-    var v91VideoDitheringMode = 0
-    var v91DanmakuFontShadowToggle = false
-    var v91SubtitleFadeInOutCustom = 0
-    var v91GestureEdgeDeadZone = 10
-    var v91CastVideoLatencyMode = 0
-    var v91PlaylistAutoResumeLast = true
-    var v91CacheSegmentSize = 0
-    var v91ProgressBarChapterLabel = false
-    var v91VolumeAutoDucking = false
-    var v91HistoryGroupBySeries = false
-    var v91PlaybackAutoSkipNextCountdown = 5
-    var v91ScreenshotRegionCapture = false
-    var v91VideoFilmGrainCustom = 0
-    var v91DanmakuBgCornerRadius = 0
-    var v91SubtitleBgMarginBottom = 10
-    var v92VideoVignetteCustom = 0
-    var v92DanmakuFontUnderlineToggle = false
-    var v92SubtitleBgPaddingCustom = 4
-    var v92GestureSwipeBackAction = 0
-    var v92CastVideoDropFrame = false
-    var v92PlaylistAutoSkipShort = 0
-    var v92CacheDownloadPolicy = 0
-    var v92ProgressBarThumbShape = 0
-    var v92VolumeAutoBalance = false
-    var v92HistoryAutoCleanExpired = false
-    var v92PlaybackAutoSkipSameTitle = false
-    var v92ScreenshotAutoDeleteDays = 30
-    var v92VideoColorFringeCustom = 0
-    var v92DanmakuBgOpacityCustom = 50
-    var v92SubtitleBgMarginTop = 10
-    var v93VideoScanlineEffect = false
-    var v93DanmakuSendMaxLengthCustom = 0
-    var v93SubtitleBgBorderColorCustom = 0
-    var v93GestureSwipeForwardAction = 0
-    var v93CastAudioDynamicRange = 0
-    var v93PlaylistAutoSkipLong = 0
-    var v93CacheNetworkPolicy = 0
-    var v93ProgressBarBufferColorCustom = 0
-    var v93VolumeAutoGainControl = false
-    var v93HistoryAutoSyncDevice = false
-    var v93PlaybackAutoSkipRecap93 = false
-    var v93ScreenshotNamingTemplate = 0
-    var v93VideoCRTFilterCustom = 0
-    var v93DanmakuSendConfirmToggle = true
-    var v93SubtitleBgBorderWidthCustom = 0
-    var v94VideoPixelArtMode = false
-    var v94DanmakuFontMonospaceToggle = false
-    var v94SubtitleBgBorderRadiusCustom = 0
-    var v94GestureLongPressTimeout = 500
-    var v94CastVideoBufferSize = 0
-    var v94PlaylistAutoGroupByUp = false
-    var v94CacheSmartCleanup = false
-    var v94ProgressBarLiveIndicator = false
-    var v94VolumeAutoPan = false
-    var v94HistoryExportAuto = false
-    var v94PlaybackAutoSkipTitle = false
-    var v94ScreenshotAutoCopyPath = false
-    var v94VideoAsciiArtMode = false
-    var v94DanmakuFontSizeStep = 2
-    var v94SubtitleAnimationFadeTime = 300
-    var v95VideoGlitchEffectCustom = 0
-    var v95DanmakuScrollEasing = 0
-    var v95SubtitleBgGradientAngle = 0
-    var v95GestureDoubleTapTimeout = 300
-    var v95CastAudioBufferSize = 0
-    var v95PlaylistAutoGroupByDate = false
-    var v95CacheStorageLimit = 0
-    var v95ProgressBarChapterColor = 0
-    var v95VolumeAutoCrossfade = false
-    var v95HistoryImportAuto = false
-    var v95PlaybackAutoSkipEnding95 = false
-    var v95ScreenshotAutoOpenAfter = false
-    var v95VideoVHSEffectCustom = 0
-    var v95DanmakuScrollAcceleration = 50
-    var v95SubtitleBgGradientOpacity = 50
-    var v96VideoNeonGlowCustom = 0
-    var v96DanmakuFontLetterSpacing = 0
-    var v96SubtitleBgGradientType = 0
-    var v96GestureSwipeMinDistance = 50
-    var v96CastVideoDecodeThreads = 0
-    var v96PlaylistAutoGroupByType = false
-    var v96CacheCleanupInterval = 0
-    var v96ProgressBarThumbShadow = false
-    var v96VolumeAutoReplayGain = false
-    var v96HistoryAutoCleanMaxDays = 90
-    var v96PlaybackAutoSkipCredits = false
-    var v96ScreenshotAutoShareTarget = 0
-    var v96VideoDreamyEffectCustom = 0
-    var v96DanmakuScrollDeceleration = 50
-    var v96SubtitleBgGradientStart = 0
-    var v97VideoSepiaCustom = 0
-    var v97DanmakuFontWeightRange = 0
-    var v97SubtitleBgGradientEnd = 0
-    var v97GestureSwipeAngleThreshold = 30
-    var v97CastVideoPostProcessing = false
-    var v97PlaylistAutoGroupBySeason = false
-    var v97CachePreloadPolicy = 0
-    var v97ProgressBarThumbGlow = false
-    var v97VolumeAutoPeakLimit = false
-    var v97HistoryAutoCleanMinItems = 100
-    var v97PlaybackAutoSkipRecap97 = false
-    var v97ScreenshotAutoAnnotateText = false
-    var v97VideoPolaroidCustom = 0
-    var v97DanmakuFontSizeMin = 12
-    var v97SubtitleAnimationType97 = 0
-    var v98VideoNegativeCustom = 0
-    var v98DanmakuFontSizeMax = 48
-    var v98SubtitleAnimationSpeed98 = 100
-    var v98GesturePinchMinScale = 50
-    var v98CastAudioPostProcessing = false
-    var v98PlaylistAutoGroupByGenre = false
-    var v98CacheDownloadOnWifi = true
-    var v98ProgressBarThumbBorder = false
-    var v98VolumeAutoRMSLevel = false
-    var v98HistoryAutoCleanOnStart = false
-    var v98PlaybackAutoSkipFiller98 = false
-    var v98ScreenshotAutoUploadCloud = false
-    var v98VideoMonochromeCustom = 0
-    var v98DanmakuFontStyleCustom98 = 0
-    var v98SubtitleAnimationEasing98 = 0
-    var v99VideoPosterizeCustom = 0
-    var v99DanmakuFontOutlineToggle = false
-    var v99SubtitleAnimationDuration99 = 300
-    var v99GesturePinchMaxScale = 200
-    var v99CastVideoAutoQuality = true
-    var v99PlaylistAutoGroupByChannel = false
-    var v99CacheDownloadSpeedLimit = 0
-    var v99ProgressBarThumbSize99 = 12
-    var v99VolumeAutoLoudness99 = false
-    var v99HistoryAutoCleanOnExit = false
-    var v99PlaybackAutoSkipIntro99 = false
-    var v99ScreenshotAutoShare99 = false
-    var v99VideoSolarizeCustom = 0
-    var v99DanmakuFontColorCustom = 0
-    var v99SubtitleAnimationLoop99 = false
-    var v100VideoDuotoneCustom = 0
-    var v100DanmakuFontBgToggle = false
-    var v100SubtitleAnimationDelay99 = 0
-    var v100GesturePinchSpeed99 = 50
-    var v100CastAudioAutoQuality = true
-    var v100PlaylistAutoGroupAll = false
-    var v100CacheDownloadRetry = 3
-    var v100ProgressBarThumbColor99 = 0
-    var v100VolumeAutoNormalize99 = false
-    var v100HistoryAutoSync99 = false
-    var v100PlaybackAutoSkipOutro99 = false
-    var v100ScreenshotAutoFormat99 = 0
-    var v100VideoTintDuotone = 0
-    var v100DanmakuFontWeight99 = 400
-    var v100SubtitleAnimationType99 = 0
+
+    var v91videoDitheringMode: Int
+        get() = prefs.getInt(KEY_V91VIDEODITHERINGMODE, 0)
+        set(value) = prefs.edit().putInt(KEY_V91VIDEODITHERINGMODE, value).apply()
+
+    var v91danmakuFontShadowToggle: Boolean
+        get() = prefs.getBoolean(KEY_V91DANMAKUFONTSHADOWTOGGLE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V91DANMAKUFONTSHADOWTOGGLE, value).apply()
+
+    var v91subtitleFadeInOutCustom: Int
+        get() = prefs.getInt(KEY_V91SUBTITLEFADEINOUTCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V91SUBTITLEFADEINOUTCUSTOM, value).apply()
+
+    var v91gestureEdgeDeadZone: Int
+        get() = prefs.getInt(KEY_V91GESTUREEDGEDEADZONE, 10)
+        set(value) = prefs.edit().putInt(KEY_V91GESTUREEDGEDEADZONE, value).apply()
+
+    var v91castVideoLatencyMode: Int
+        get() = prefs.getInt(KEY_V91CASTVIDEOLATENCYMODE, 0)
+        set(value) = prefs.edit().putInt(KEY_V91CASTVIDEOLATENCYMODE, value).apply()
+
+    var v91playlistAutoResumeLast: Boolean
+        get() = prefs.getBoolean(KEY_V91PLAYLISTAUTORESUMELAST, true)
+        set(value) = prefs.edit().putBoolean(KEY_V91PLAYLISTAUTORESUMELAST, value).apply()
+
+    var v91cacheSegmentSize: Int
+        get() = prefs.getInt(KEY_V91CACHESEGMENTSIZE, 0)
+        set(value) = prefs.edit().putInt(KEY_V91CACHESEGMENTSIZE, value).apply()
+
+    var v91progressBarChapterLabel: Boolean
+        get() = prefs.getBoolean(KEY_V91PROGRESSBARCHAPTERLABEL, false)
+        set(value) = prefs.edit().putBoolean(KEY_V91PROGRESSBARCHAPTERLABEL, value).apply()
+
+    var v91volumeAutoDucking: Boolean
+        get() = prefs.getBoolean(KEY_V91VOLUMEAUTODUCKING, false)
+        set(value) = prefs.edit().putBoolean(KEY_V91VOLUMEAUTODUCKING, value).apply()
+
+    var v91historyGroupBySeries: Boolean
+        get() = prefs.getBoolean(KEY_V91HISTORYGROUPBYSERIES, false)
+        set(value) = prefs.edit().putBoolean(KEY_V91HISTORYGROUPBYSERIES, value).apply()
+
+    var v91playbackAutoSkipNextCountdown: Int
+        get() = prefs.getInt(KEY_V91PLAYBACKAUTOSKIPNEXTCOUNTDOWN, 5)
+        set(value) = prefs.edit().putInt(KEY_V91PLAYBACKAUTOSKIPNEXTCOUNTDOWN, value).apply()
+
+    var v91screenshotRegionCapture: Boolean
+        get() = prefs.getBoolean(KEY_V91SCREENSHOTREGIONCAPTURE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V91SCREENSHOTREGIONCAPTURE, value).apply()
+
+    var v91videoFilmGrainCustom: Int
+        get() = prefs.getInt(KEY_V91VIDEOFILMGRAINCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V91VIDEOFILMGRAINCUSTOM, value).apply()
+
+    var v91danmakuBgCornerRadius: Int
+        get() = prefs.getInt(KEY_V91DANMAKUBGCORNERRADIUS, 0)
+        set(value) = prefs.edit().putInt(KEY_V91DANMAKUBGCORNERRADIUS, value).apply()
+
+    var v91subtitleBgMarginBottom: Int
+        get() = prefs.getInt(KEY_V91SUBTITLEBGMARGINBOTTOM, 10)
+        set(value) = prefs.edit().putInt(KEY_V91SUBTITLEBGMARGINBOTTOM, value).apply()
+
+    var v92videoVignetteCustom: Int
+        get() = prefs.getInt(KEY_V92VIDEOVIGNETTECUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V92VIDEOVIGNETTECUSTOM, value).apply()
+
+    var v92danmakuFontUnderlineToggle: Boolean
+        get() = prefs.getBoolean(KEY_V92DANMAKUFONTUNDERLINETOGGLE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V92DANMAKUFONTUNDERLINETOGGLE, value).apply()
+
+    var v92subtitleBgPaddingCustom: Int
+        get() = prefs.getInt(KEY_V92SUBTITLEBGPADDINGCUSTOM, 4)
+        set(value) = prefs.edit().putInt(KEY_V92SUBTITLEBGPADDINGCUSTOM, value).apply()
+
+    var v92gestureSwipeBackAction: Int
+        get() = prefs.getInt(KEY_V92GESTURESWIPEBACKACTION, 0)
+        set(value) = prefs.edit().putInt(KEY_V92GESTURESWIPEBACKACTION, value).apply()
+
+    var v92castVideoDropFrame: Boolean
+        get() = prefs.getBoolean(KEY_V92CASTVIDEODROPFRAME, false)
+        set(value) = prefs.edit().putBoolean(KEY_V92CASTVIDEODROPFRAME, value).apply()
+
+    var v92playlistAutoSkipShort: Int
+        get() = prefs.getInt(KEY_V92PLAYLISTAUTOSKIPSHORT, 0)
+        set(value) = prefs.edit().putInt(KEY_V92PLAYLISTAUTOSKIPSHORT, value).apply()
+
+    var v92cacheDownloadPolicy: Int
+        get() = prefs.getInt(KEY_V92CACHEDOWNLOADPOLICY, 0)
+        set(value) = prefs.edit().putInt(KEY_V92CACHEDOWNLOADPOLICY, value).apply()
+
+    var v92progressBarThumbShape: Int
+        get() = prefs.getInt(KEY_V92PROGRESSBARTHUMBSHAPE, 0)
+        set(value) = prefs.edit().putInt(KEY_V92PROGRESSBARTHUMBSHAPE, value).apply()
+
+    var v92volumeAutoBalance: Boolean
+        get() = prefs.getBoolean(KEY_V92VOLUMEAUTOBALANCE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V92VOLUMEAUTOBALANCE, value).apply()
+
+    var v92historyAutoCleanExpired: Boolean
+        get() = prefs.getBoolean(KEY_V92HISTORYAUTOCLEANEXPIRED, false)
+        set(value) = prefs.edit().putBoolean(KEY_V92HISTORYAUTOCLEANEXPIRED, value).apply()
+
+    var v92playbackAutoSkipSameTitle: Boolean
+        get() = prefs.getBoolean(KEY_V92PLAYBACKAUTOSKIPSAMETITLE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V92PLAYBACKAUTOSKIPSAMETITLE, value).apply()
+
+    var v92screenshotAutoDeleteDays: Int
+        get() = prefs.getInt(KEY_V92SCREENSHOTAUTODELETEDAYS, 30)
+        set(value) = prefs.edit().putInt(KEY_V92SCREENSHOTAUTODELETEDAYS, value).apply()
+
+    var v92videoColorFringeCustom: Int
+        get() = prefs.getInt(KEY_V92VIDEOCOLORFRINGECUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V92VIDEOCOLORFRINGECUSTOM, value).apply()
+
+    var v92danmakuBgOpacityCustom: Int
+        get() = prefs.getInt(KEY_V92DANMAKUBGOPACITYCUSTOM, 50)
+        set(value) = prefs.edit().putInt(KEY_V92DANMAKUBGOPACITYCUSTOM, value).apply()
+
+    var v92subtitleBgMarginTop: Int
+        get() = prefs.getInt(KEY_V92SUBTITLEBGMARGINTOP, 10)
+        set(value) = prefs.edit().putInt(KEY_V92SUBTITLEBGMARGINTOP, value).apply()
+
+    var v93videoScanlineEffect: Boolean
+        get() = prefs.getBoolean(KEY_V93VIDEOSCANLINEEFFECT, false)
+        set(value) = prefs.edit().putBoolean(KEY_V93VIDEOSCANLINEEFFECT, value).apply()
+
+    var v93danmakuSendMaxLengthCustom: Int
+        get() = prefs.getInt(KEY_V93DANMAKUSENDMAXLENGTHCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V93DANMAKUSENDMAXLENGTHCUSTOM, value).apply()
+
+    var v93subtitleBgBorderColorCustom: Int
+        get() = prefs.getInt(KEY_V93SUBTITLEBGBORDERCOLORCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V93SUBTITLEBGBORDERCOLORCUSTOM, value).apply()
+
+    var v93gestureSwipeForwardAction: Int
+        get() = prefs.getInt(KEY_V93GESTURESWIPEFORWARDACTION, 0)
+        set(value) = prefs.edit().putInt(KEY_V93GESTURESWIPEFORWARDACTION, value).apply()
+
+    var v93castAudioDynamicRange: Int
+        get() = prefs.getInt(KEY_V93CASTAUDIODYNAMICRANGE, 0)
+        set(value) = prefs.edit().putInt(KEY_V93CASTAUDIODYNAMICRANGE, value).apply()
+
+    var v93playlistAutoSkipLong: Int
+        get() = prefs.getInt(KEY_V93PLAYLISTAUTOSKIPLONG, 0)
+        set(value) = prefs.edit().putInt(KEY_V93PLAYLISTAUTOSKIPLONG, value).apply()
+
+    var v93cacheNetworkPolicy: Int
+        get() = prefs.getInt(KEY_V93CACHENETWORKPOLICY, 0)
+        set(value) = prefs.edit().putInt(KEY_V93CACHENETWORKPOLICY, value).apply()
+
+    var v93progressBarBufferColorCustom: Int
+        get() = prefs.getInt(KEY_V93PROGRESSBARBUFFERCOLORCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V93PROGRESSBARBUFFERCOLORCUSTOM, value).apply()
+
+    var v93volumeAutoGainControl: Boolean
+        get() = prefs.getBoolean(KEY_V93VOLUMEAUTOGAINCONTROL, false)
+        set(value) = prefs.edit().putBoolean(KEY_V93VOLUMEAUTOGAINCONTROL, value).apply()
+
+    var v93historyAutoSyncDevice: Boolean
+        get() = prefs.getBoolean(KEY_V93HISTORYAUTOSYNCDEVICE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V93HISTORYAUTOSYNCDEVICE, value).apply()
+
+    var v93playbackAutoSkipRecap93: Boolean
+        get() = prefs.getBoolean(KEY_V93PLAYBACKAUTOSKIPRECAP93, false)
+        set(value) = prefs.edit().putBoolean(KEY_V93PLAYBACKAUTOSKIPRECAP93, value).apply()
+
+    var v93screenshotNamingTemplate: Int
+        get() = prefs.getInt(KEY_V93SCREENSHOTNAMINGTEMPLATE, 0)
+        set(value) = prefs.edit().putInt(KEY_V93SCREENSHOTNAMINGTEMPLATE, value).apply()
+
+    var v93videoCRTFilterCustom: Int
+        get() = prefs.getInt(KEY_V93VIDEOCRTFILTERCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V93VIDEOCRTFILTERCUSTOM, value).apply()
+
+    var v93danmakuSendConfirmToggle: Boolean
+        get() = prefs.getBoolean(KEY_V93DANMAKUSENDCONFIRMTOGGLE, true)
+        set(value) = prefs.edit().putBoolean(KEY_V93DANMAKUSENDCONFIRMTOGGLE, value).apply()
+
+    var v93subtitleBgBorderWidthCustom: Int
+        get() = prefs.getInt(KEY_V93SUBTITLEBGBORDERWIDTHCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V93SUBTITLEBGBORDERWIDTHCUSTOM, value).apply()
+
+    var v94videoPixelArtMode: Boolean
+        get() = prefs.getBoolean(KEY_V94VIDEOPIXELARTMODE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V94VIDEOPIXELARTMODE, value).apply()
+
+    var v94danmakuFontMonospaceToggle: Boolean
+        get() = prefs.getBoolean(KEY_V94DANMAKUFONTMONOSPACETOGGLE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V94DANMAKUFONTMONOSPACETOGGLE, value).apply()
+
+    var v94subtitleBgBorderRadiusCustom: Int
+        get() = prefs.getInt(KEY_V94SUBTITLEBGBORDERRADIUSCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V94SUBTITLEBGBORDERRADIUSCUSTOM, value).apply()
+
+    var v94gestureLongPressTimeout: Int
+        get() = prefs.getInt(KEY_V94GESTURELONGPRESSTIMEOUT, 500)
+        set(value) = prefs.edit().putInt(KEY_V94GESTURELONGPRESSTIMEOUT, value).apply()
+
+    var v94castVideoBufferSize: Int
+        get() = prefs.getInt(KEY_V94CASTVIDEOBUFFERSIZE, 0)
+        set(value) = prefs.edit().putInt(KEY_V94CASTVIDEOBUFFERSIZE, value).apply()
+
+    var v94playlistAutoGroupByUp: Boolean
+        get() = prefs.getBoolean(KEY_V94PLAYLISTAUTOGROUPBYUP, false)
+        set(value) = prefs.edit().putBoolean(KEY_V94PLAYLISTAUTOGROUPBYUP, value).apply()
+
+    var v94cacheSmartCleanup: Boolean
+        get() = prefs.getBoolean(KEY_V94CACHESMARTCLEANUP, false)
+        set(value) = prefs.edit().putBoolean(KEY_V94CACHESMARTCLEANUP, value).apply()
+
+    var v94progressBarLiveIndicator: Boolean
+        get() = prefs.getBoolean(KEY_V94PROGRESSBARLIVEINDICATOR, false)
+        set(value) = prefs.edit().putBoolean(KEY_V94PROGRESSBARLIVEINDICATOR, value).apply()
+
+    var v94volumeAutoPan: Boolean
+        get() = prefs.getBoolean(KEY_V94VOLUMEAUTOPAN, false)
+        set(value) = prefs.edit().putBoolean(KEY_V94VOLUMEAUTOPAN, value).apply()
+
+    var v94historyExportAuto: Boolean
+        get() = prefs.getBoolean(KEY_V94HISTORYEXPORTAUTO, false)
+        set(value) = prefs.edit().putBoolean(KEY_V94HISTORYEXPORTAUTO, value).apply()
+
+    var v94playbackAutoSkipTitle: Boolean
+        get() = prefs.getBoolean(KEY_V94PLAYBACKAUTOSKIPTITLE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V94PLAYBACKAUTOSKIPTITLE, value).apply()
+
+    var v94screenshotAutoCopyPath: Boolean
+        get() = prefs.getBoolean(KEY_V94SCREENSHOTAUTOCOPYPATH, false)
+        set(value) = prefs.edit().putBoolean(KEY_V94SCREENSHOTAUTOCOPYPATH, value).apply()
+
+    var v94videoAsciiArtMode: Boolean
+        get() = prefs.getBoolean(KEY_V94VIDEOASCIIARTMODE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V94VIDEOASCIIARTMODE, value).apply()
+
+    var v94danmakuFontSizeStep: Int
+        get() = prefs.getInt(KEY_V94DANMAKUFONTSIZESTEP, 2)
+        set(value) = prefs.edit().putInt(KEY_V94DANMAKUFONTSIZESTEP, value).apply()
+
+    var v94subtitleAnimationFadeTime: Int
+        get() = prefs.getInt(KEY_V94SUBTITLEANIMATIONFADETIME, 300)
+        set(value) = prefs.edit().putInt(KEY_V94SUBTITLEANIMATIONFADETIME, value).apply()
+
+    var v95videoGlitchEffectCustom: Int
+        get() = prefs.getInt(KEY_V95VIDEOGLITCHEFFECTCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V95VIDEOGLITCHEFFECTCUSTOM, value).apply()
+
+    var v95danmakuScrollEasing: Int
+        get() = prefs.getInt(KEY_V95DANMAKUSCROLLEASING, 0)
+        set(value) = prefs.edit().putInt(KEY_V95DANMAKUSCROLLEASING, value).apply()
+
+    var v95subtitleBgGradientAngle: Int
+        get() = prefs.getInt(KEY_V95SUBTITLEBGGRADIENTANGLE, 0)
+        set(value) = prefs.edit().putInt(KEY_V95SUBTITLEBGGRADIENTANGLE, value).apply()
+
+    var v95gestureDoubleTapTimeout: Int
+        get() = prefs.getInt(KEY_V95GESTUREDOUBLETAPTIMEOUT, 300)
+        set(value) = prefs.edit().putInt(KEY_V95GESTUREDOUBLETAPTIMEOUT, value).apply()
+
+    var v95castAudioBufferSize: Int
+        get() = prefs.getInt(KEY_V95CASTAUDIOBUFFERSIZE, 0)
+        set(value) = prefs.edit().putInt(KEY_V95CASTAUDIOBUFFERSIZE, value).apply()
+
+    var v95playlistAutoGroupByDate: Boolean
+        get() = prefs.getBoolean(KEY_V95PLAYLISTAUTOGROUPBYDATE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V95PLAYLISTAUTOGROUPBYDATE, value).apply()
+
+    var v95cacheStorageLimit: Int
+        get() = prefs.getInt(KEY_V95CACHESTORAGELIMIT, 0)
+        set(value) = prefs.edit().putInt(KEY_V95CACHESTORAGELIMIT, value).apply()
+
+    var v95progressBarChapterColor: Int
+        get() = prefs.getInt(KEY_V95PROGRESSBARCHAPTERCOLOR, 0)
+        set(value) = prefs.edit().putInt(KEY_V95PROGRESSBARCHAPTERCOLOR, value).apply()
+
+    var v95volumeAutoCrossfade: Boolean
+        get() = prefs.getBoolean(KEY_V95VOLUMEAUTOCROSSFADE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V95VOLUMEAUTOCROSSFADE, value).apply()
+
+    var v95historyImportAuto: Boolean
+        get() = prefs.getBoolean(KEY_V95HISTORYIMPORTAUTO, false)
+        set(value) = prefs.edit().putBoolean(KEY_V95HISTORYIMPORTAUTO, value).apply()
+
+    var v95playbackAutoSkipEnding95: Boolean
+        get() = prefs.getBoolean(KEY_V95PLAYBACKAUTOSKIPENDING95, false)
+        set(value) = prefs.edit().putBoolean(KEY_V95PLAYBACKAUTOSKIPENDING95, value).apply()
+
+    var v95screenshotAutoOpenAfter: Boolean
+        get() = prefs.getBoolean(KEY_V95SCREENSHOTAUTOOPENAFTER, false)
+        set(value) = prefs.edit().putBoolean(KEY_V95SCREENSHOTAUTOOPENAFTER, value).apply()
+
+    var v95videoVHSEffectCustom: Int
+        get() = prefs.getInt(KEY_V95VIDEOVHSEFFECTCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V95VIDEOVHSEFFECTCUSTOM, value).apply()
+
+    var v95danmakuScrollAcceleration: Int
+        get() = prefs.getInt(KEY_V95DANMAKUSCROLLACCELERATION, 50)
+        set(value) = prefs.edit().putInt(KEY_V95DANMAKUSCROLLACCELERATION, value).apply()
+
+    var v95subtitleBgGradientOpacity: Int
+        get() = prefs.getInt(KEY_V95SUBTITLEBGGRADIENTOPACITY, 50)
+        set(value) = prefs.edit().putInt(KEY_V95SUBTITLEBGGRADIENTOPACITY, value).apply()
+
+    var v96videoNeonGlowCustom: Int
+        get() = prefs.getInt(KEY_V96VIDEONEONGLOWCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V96VIDEONEONGLOWCUSTOM, value).apply()
+
+    var v96danmakuFontLetterSpacing: Int
+        get() = prefs.getInt(KEY_V96DANMAKUFONTLETTERSPACING, 0)
+        set(value) = prefs.edit().putInt(KEY_V96DANMAKUFONTLETTERSPACING, value).apply()
+
+    var v96subtitleBgGradientType: Int
+        get() = prefs.getInt(KEY_V96SUBTITLEBGGRADIENTTYPE, 0)
+        set(value) = prefs.edit().putInt(KEY_V96SUBTITLEBGGRADIENTTYPE, value).apply()
+
+    var v96gestureSwipeMinDistance: Int
+        get() = prefs.getInt(KEY_V96GESTURESWIPEMINDISTANCE, 50)
+        set(value) = prefs.edit().putInt(KEY_V96GESTURESWIPEMINDISTANCE, value).apply()
+
+    var v96castVideoDecodeThreads: Int
+        get() = prefs.getInt(KEY_V96CASTVIDEODECODETHREADS, 0)
+        set(value) = prefs.edit().putInt(KEY_V96CASTVIDEODECODETHREADS, value).apply()
+
+    var v96playlistAutoGroupByType: Boolean
+        get() = prefs.getBoolean(KEY_V96PLAYLISTAUTOGROUPBYTYPE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V96PLAYLISTAUTOGROUPBYTYPE, value).apply()
+
+    var v96cacheCleanupInterval: Int
+        get() = prefs.getInt(KEY_V96CACHECLEANUPINTERVAL, 0)
+        set(value) = prefs.edit().putInt(KEY_V96CACHECLEANUPINTERVAL, value).apply()
+
+    var v96progressBarThumbShadow: Boolean
+        get() = prefs.getBoolean(KEY_V96PROGRESSBARTHUMBSHADOW, false)
+        set(value) = prefs.edit().putBoolean(KEY_V96PROGRESSBARTHUMBSHADOW, value).apply()
+
+    var v96volumeAutoReplayGain: Boolean
+        get() = prefs.getBoolean(KEY_V96VOLUMEAUTOREPLAYGAIN, false)
+        set(value) = prefs.edit().putBoolean(KEY_V96VOLUMEAUTOREPLAYGAIN, value).apply()
+
+    var v96historyAutoCleanMaxDays: Int
+        get() = prefs.getInt(KEY_V96HISTORYAUTOCLEANMAXDAYS, 90)
+        set(value) = prefs.edit().putInt(KEY_V96HISTORYAUTOCLEANMAXDAYS, value).apply()
+
+    var v96playbackAutoSkipCredits: Boolean
+        get() = prefs.getBoolean(KEY_V96PLAYBACKAUTOSKIPCREDITS, false)
+        set(value) = prefs.edit().putBoolean(KEY_V96PLAYBACKAUTOSKIPCREDITS, value).apply()
+
+    var v96screenshotAutoShareTarget: Int
+        get() = prefs.getInt(KEY_V96SCREENSHOTAUTOSHARETARGET, 0)
+        set(value) = prefs.edit().putInt(KEY_V96SCREENSHOTAUTOSHARETARGET, value).apply()
+
+    var v96videoDreamyEffectCustom: Int
+        get() = prefs.getInt(KEY_V96VIDEODREAMYEFFECTCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V96VIDEODREAMYEFFECTCUSTOM, value).apply()
+
+    var v96danmakuScrollDeceleration: Int
+        get() = prefs.getInt(KEY_V96DANMAKUSCROLLDECELERATION, 50)
+        set(value) = prefs.edit().putInt(KEY_V96DANMAKUSCROLLDECELERATION, value).apply()
+
+    var v96subtitleBgGradientStart: Int
+        get() = prefs.getInt(KEY_V96SUBTITLEBGGRADIENTSTART, 0)
+        set(value) = prefs.edit().putInt(KEY_V96SUBTITLEBGGRADIENTSTART, value).apply()
+
+    var v97videoSepiaCustom: Int
+        get() = prefs.getInt(KEY_V97VIDEOSEPIACUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V97VIDEOSEPIACUSTOM, value).apply()
+
+    var v97danmakuFontWeightRange: Int
+        get() = prefs.getInt(KEY_V97DANMAKUFONTWEIGHTRANGE, 0)
+        set(value) = prefs.edit().putInt(KEY_V97DANMAKUFONTWEIGHTRANGE, value).apply()
+
+    var v97subtitleBgGradientEnd: Int
+        get() = prefs.getInt(KEY_V97SUBTITLEBGGRADIENTEND, 0)
+        set(value) = prefs.edit().putInt(KEY_V97SUBTITLEBGGRADIENTEND, value).apply()
+
+    var v97gestureSwipeAngleThreshold: Int
+        get() = prefs.getInt(KEY_V97GESTURESWIPEANGLETHRESHOLD, 30)
+        set(value) = prefs.edit().putInt(KEY_V97GESTURESWIPEANGLETHRESHOLD, value).apply()
+
+    var v97castVideoPostProcessing: Boolean
+        get() = prefs.getBoolean(KEY_V97CASTVIDEOPOSTPROCESSING, false)
+        set(value) = prefs.edit().putBoolean(KEY_V97CASTVIDEOPOSTPROCESSING, value).apply()
+
+    var v97playlistAutoGroupBySeason: Boolean
+        get() = prefs.getBoolean(KEY_V97PLAYLISTAUTOGROUPBYSEASON, false)
+        set(value) = prefs.edit().putBoolean(KEY_V97PLAYLISTAUTOGROUPBYSEASON, value).apply()
+
+    var v97cachePreloadPolicy: Int
+        get() = prefs.getInt(KEY_V97CACHEPRELOADPOLICY, 0)
+        set(value) = prefs.edit().putInt(KEY_V97CACHEPRELOADPOLICY, value).apply()
+
+    var v97progressBarThumbGlow: Boolean
+        get() = prefs.getBoolean(KEY_V97PROGRESSBARTHUMBGLOW, false)
+        set(value) = prefs.edit().putBoolean(KEY_V97PROGRESSBARTHUMBGLOW, value).apply()
+
+    var v97volumeAutoPeakLimit: Boolean
+        get() = prefs.getBoolean(KEY_V97VOLUMEAUTOPEAKLIMIT, false)
+        set(value) = prefs.edit().putBoolean(KEY_V97VOLUMEAUTOPEAKLIMIT, value).apply()
+
+    var v97historyAutoCleanMinItems: Int
+        get() = prefs.getInt(KEY_V97HISTORYAUTOCLEANMINITEMS, 100)
+        set(value) = prefs.edit().putInt(KEY_V97HISTORYAUTOCLEANMINITEMS, value).apply()
+
+    var v97playbackAutoSkipRecap97: Boolean
+        get() = prefs.getBoolean(KEY_V97PLAYBACKAUTOSKIPRECAP97, false)
+        set(value) = prefs.edit().putBoolean(KEY_V97PLAYBACKAUTOSKIPRECAP97, value).apply()
+
+    var v97screenshotAutoAnnotateText: Boolean
+        get() = prefs.getBoolean(KEY_V97SCREENSHOTAUTOANNOTATETEXT, false)
+        set(value) = prefs.edit().putBoolean(KEY_V97SCREENSHOTAUTOANNOTATETEXT, value).apply()
+
+    var v97videoPolaroidCustom: Int
+        get() = prefs.getInt(KEY_V97VIDEOPOLAROIDCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V97VIDEOPOLAROIDCUSTOM, value).apply()
+
+    var v97danmakuFontSizeMin: Int
+        get() = prefs.getInt(KEY_V97DANMAKUFONTSIZEMIN, 12)
+        set(value) = prefs.edit().putInt(KEY_V97DANMAKUFONTSIZEMIN, value).apply()
+
+    var v97subtitleAnimationType97: Int
+        get() = prefs.getInt(KEY_V97SUBTITLEANIMATIONTYPE97, 0)
+        set(value) = prefs.edit().putInt(KEY_V97SUBTITLEANIMATIONTYPE97, value).apply()
+
+    var v98videoNegativeCustom: Int
+        get() = prefs.getInt(KEY_V98VIDEONEGATIVECUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V98VIDEONEGATIVECUSTOM, value).apply()
+
+    var v98danmakuFontSizeMax: Int
+        get() = prefs.getInt(KEY_V98DANMAKUFONTSIZEMAX, 48)
+        set(value) = prefs.edit().putInt(KEY_V98DANMAKUFONTSIZEMAX, value).apply()
+
+    var v98subtitleAnimationSpeed98: Int
+        get() = prefs.getInt(KEY_V98SUBTITLEANIMATIONSPEED98, 100)
+        set(value) = prefs.edit().putInt(KEY_V98SUBTITLEANIMATIONSPEED98, value).apply()
+
+    var v98gesturePinchMinScale: Int
+        get() = prefs.getInt(KEY_V98GESTUREPINCHMINSCALE, 50)
+        set(value) = prefs.edit().putInt(KEY_V98GESTUREPINCHMINSCALE, value).apply()
+
+    var v98castAudioPostProcessing: Boolean
+        get() = prefs.getBoolean(KEY_V98CASTAUDIOPOSTPROCESSING, false)
+        set(value) = prefs.edit().putBoolean(KEY_V98CASTAUDIOPOSTPROCESSING, value).apply()
+
+    var v98playlistAutoGroupByGenre: Boolean
+        get() = prefs.getBoolean(KEY_V98PLAYLISTAUTOGROUPBYGENRE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V98PLAYLISTAUTOGROUPBYGENRE, value).apply()
+
+    var v98cacheDownloadOnWifi: Boolean
+        get() = prefs.getBoolean(KEY_V98CACHEDOWNLOADONWIFI, true)
+        set(value) = prefs.edit().putBoolean(KEY_V98CACHEDOWNLOADONWIFI, value).apply()
+
+    var v98progressBarThumbBorder: Boolean
+        get() = prefs.getBoolean(KEY_V98PROGRESSBARTHUMBBORDER, false)
+        set(value) = prefs.edit().putBoolean(KEY_V98PROGRESSBARTHUMBBORDER, value).apply()
+
+    var v98volumeAutoRMSLevel: Boolean
+        get() = prefs.getBoolean(KEY_V98VOLUMEAUTORMSLEVEL, false)
+        set(value) = prefs.edit().putBoolean(KEY_V98VOLUMEAUTORMSLEVEL, value).apply()
+
+    var v98historyAutoCleanOnStart: Boolean
+        get() = prefs.getBoolean(KEY_V98HISTORYAUTOCLEANONSTART, false)
+        set(value) = prefs.edit().putBoolean(KEY_V98HISTORYAUTOCLEANONSTART, value).apply()
+
+    var v98playbackAutoSkipFiller98: Boolean
+        get() = prefs.getBoolean(KEY_V98PLAYBACKAUTOSKIPFILLER98, false)
+        set(value) = prefs.edit().putBoolean(KEY_V98PLAYBACKAUTOSKIPFILLER98, value).apply()
+
+    var v98screenshotAutoUploadCloud: Boolean
+        get() = prefs.getBoolean(KEY_V98SCREENSHOTAUTOUPLOADCLOUD, false)
+        set(value) = prefs.edit().putBoolean(KEY_V98SCREENSHOTAUTOUPLOADCLOUD, value).apply()
+
+    var v98videoMonochromeCustom: Int
+        get() = prefs.getInt(KEY_V98VIDEOMONOCHROMECUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V98VIDEOMONOCHROMECUSTOM, value).apply()
+
+    var v98danmakuFontStyleCustom98: Int
+        get() = prefs.getInt(KEY_V98DANMAKUFONTSTYLECUSTOM98, 0)
+        set(value) = prefs.edit().putInt(KEY_V98DANMAKUFONTSTYLECUSTOM98, value).apply()
+
+    var v98subtitleAnimationEasing98: Int
+        get() = prefs.getInt(KEY_V98SUBTITLEANIMATIONEASING98, 0)
+        set(value) = prefs.edit().putInt(KEY_V98SUBTITLEANIMATIONEASING98, value).apply()
+
+    var v99videoPosterizeCustom: Int
+        get() = prefs.getInt(KEY_V99VIDEOPOSTERIZECUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V99VIDEOPOSTERIZECUSTOM, value).apply()
+
+    var v99danmakuFontOutlineToggle: Boolean
+        get() = prefs.getBoolean(KEY_V99DANMAKUFONTOUTLINETOGGLE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V99DANMAKUFONTOUTLINETOGGLE, value).apply()
+
+    var v99subtitleAnimationDuration99: Int
+        get() = prefs.getInt(KEY_V99SUBTITLEANIMATIONDURATION99, 300)
+        set(value) = prefs.edit().putInt(KEY_V99SUBTITLEANIMATIONDURATION99, value).apply()
+
+    var v99gesturePinchMaxScale: Int
+        get() = prefs.getInt(KEY_V99GESTUREPINCHMAXSCALE, 200)
+        set(value) = prefs.edit().putInt(KEY_V99GESTUREPINCHMAXSCALE, value).apply()
+
+    var v99castVideoAutoQuality: Boolean
+        get() = prefs.getBoolean(KEY_V99CASTVIDEOAUTOQUALITY, true)
+        set(value) = prefs.edit().putBoolean(KEY_V99CASTVIDEOAUTOQUALITY, value).apply()
+
+    var v99playlistAutoGroupByChannel: Boolean
+        get() = prefs.getBoolean(KEY_V99PLAYLISTAUTOGROUPBYCHANNEL, false)
+        set(value) = prefs.edit().putBoolean(KEY_V99PLAYLISTAUTOGROUPBYCHANNEL, value).apply()
+
+    var v99cacheDownloadSpeedLimit: Int
+        get() = prefs.getInt(KEY_V99CACHEDOWNLOADSPEEDLIMIT, 0)
+        set(value) = prefs.edit().putInt(KEY_V99CACHEDOWNLOADSPEEDLIMIT, value).apply()
+
+    var v99progressBarThumbSize99: Int
+        get() = prefs.getInt(KEY_V99PROGRESSBARTHUMBSIZE99, 12)
+        set(value) = prefs.edit().putInt(KEY_V99PROGRESSBARTHUMBSIZE99, value).apply()
+
+    var v99volumeAutoLoudness99: Boolean
+        get() = prefs.getBoolean(KEY_V99VOLUMEAUTOLOUDNESS99, false)
+        set(value) = prefs.edit().putBoolean(KEY_V99VOLUMEAUTOLOUDNESS99, value).apply()
+
+    var v99historyAutoCleanOnExit: Boolean
+        get() = prefs.getBoolean(KEY_V99HISTORYAUTOCLEANONEXIT, false)
+        set(value) = prefs.edit().putBoolean(KEY_V99HISTORYAUTOCLEANONEXIT, value).apply()
+
+    var v99playbackAutoSkipIntro99: Boolean
+        get() = prefs.getBoolean(KEY_V99PLAYBACKAUTOSKIPINTRO99, false)
+        set(value) = prefs.edit().putBoolean(KEY_V99PLAYBACKAUTOSKIPINTRO99, value).apply()
+
+    var v99screenshotAutoShare99: Boolean
+        get() = prefs.getBoolean(KEY_V99SCREENSHOTAUTOSHARE99, false)
+        set(value) = prefs.edit().putBoolean(KEY_V99SCREENSHOTAUTOSHARE99, value).apply()
+
+    var v99videoSolarizeCustom: Int
+        get() = prefs.getInt(KEY_V99VIDEOSOLARIZECUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V99VIDEOSOLARIZECUSTOM, value).apply()
+
+    var v99danmakuFontColorCustom: Int
+        get() = prefs.getInt(KEY_V99DANMAKUFONTCOLORCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V99DANMAKUFONTCOLORCUSTOM, value).apply()
+
+    var v99subtitleAnimationLoop99: Boolean
+        get() = prefs.getBoolean(KEY_V99SUBTITLEANIMATIONLOOP99, false)
+        set(value) = prefs.edit().putBoolean(KEY_V99SUBTITLEANIMATIONLOOP99, value).apply()
+
+    var v100videoDuotoneCustom: Int
+        get() = prefs.getInt(KEY_V100VIDEODUOTONECUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V100VIDEODUOTONECUSTOM, value).apply()
+
+    var v100danmakuFontBgToggle: Boolean
+        get() = prefs.getBoolean(KEY_V100DANMAKUFONTBGTOGGLE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V100DANMAKUFONTBGTOGGLE, value).apply()
+
+    var v100subtitleAnimationDelay99: Int
+        get() = prefs.getInt(KEY_V100SUBTITLEANIMATIONDELAY99, 0)
+        set(value) = prefs.edit().putInt(KEY_V100SUBTITLEANIMATIONDELAY99, value).apply()
+
+    var v100gesturePinchSpeed99: Int
+        get() = prefs.getInt(KEY_V100GESTUREPINCHSPEED99, 50)
+        set(value) = prefs.edit().putInt(KEY_V100GESTUREPINCHSPEED99, value).apply()
+
+    var v100castAudioAutoQuality: Boolean
+        get() = prefs.getBoolean(KEY_V100CASTAUDIOAUTOQUALITY, true)
+        set(value) = prefs.edit().putBoolean(KEY_V100CASTAUDIOAUTOQUALITY, value).apply()
+
+    var v100playlistAutoGroupAll: Boolean
+        get() = prefs.getBoolean(KEY_V100PLAYLISTAUTOGROUPALL, false)
+        set(value) = prefs.edit().putBoolean(KEY_V100PLAYLISTAUTOGROUPALL, value).apply()
+
+    var v100cacheDownloadRetry: Int
+        get() = prefs.getInt(KEY_V100CACHEDOWNLOADRETRY, 3)
+        set(value) = prefs.edit().putInt(KEY_V100CACHEDOWNLOADRETRY, value).apply()
+
+    var v100progressBarThumbColor99: Int
+        get() = prefs.getInt(KEY_V100PROGRESSBARTHUMBCOLOR99, 0)
+        set(value) = prefs.edit().putInt(KEY_V100PROGRESSBARTHUMBCOLOR99, value).apply()
+
+    var v100volumeAutoNormalize99: Boolean
+        get() = prefs.getBoolean(KEY_V100VOLUMEAUTONORMALIZE99, false)
+        set(value) = prefs.edit().putBoolean(KEY_V100VOLUMEAUTONORMALIZE99, value).apply()
+
+    var v100historyAutoSync99: Boolean
+        get() = prefs.getBoolean(KEY_V100HISTORYAUTOSYNC99, false)
+        set(value) = prefs.edit().putBoolean(KEY_V100HISTORYAUTOSYNC99, value).apply()
+
+    var v100playbackAutoSkipOutro99: Boolean
+        get() = prefs.getBoolean(KEY_V100PLAYBACKAUTOSKIPOUTRO99, false)
+        set(value) = prefs.edit().putBoolean(KEY_V100PLAYBACKAUTOSKIPOUTRO99, value).apply()
+
+    var v100screenshotAutoFormat99: Int
+        get() = prefs.getInt(KEY_V100SCREENSHOTAUTOFORMAT99, 0)
+        set(value) = prefs.edit().putInt(KEY_V100SCREENSHOTAUTOFORMAT99, value).apply()
+
+    var v100videoTintDuotone: Int
+        get() = prefs.getInt(KEY_V100VIDEOTINTDUOTONE, 0)
+        set(value) = prefs.edit().putInt(KEY_V100VIDEOTINTDUOTONE, value).apply()
+
+    var v100danmakuFontWeight99: Int
+        get() = prefs.getInt(KEY_V100DANMAKUFONTWEIGHT99, 400)
+        set(value) = prefs.edit().putInt(KEY_V100DANMAKUFONTWEIGHT99, value).apply()
+
+    var v100subtitleAnimationType99: Int
+        get() = prefs.getInt(KEY_V100SUBTITLEANIMATIONTYPE99, 0)
+        set(value) = prefs.edit().putInt(KEY_V100SUBTITLEANIMATIONTYPE99, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -16326,155 +16777,155 @@ class AppPrefs(context: Context) {
         const val KEY_V90VIDEOHIGHLIGHTCUSTOM = "v90videoHighlightCustom"
         const val KEY_V90DANMAKUSENDMAXLENGTH = "v90danmakuSendMaxLength"
         const val KEY_V90SUBTITLEANIMATIONDELAYCUSTOM = "v90subtitleAnimationDelayCustom"
-        const val KEY_V91VIDEODITHERINGMODE = "v91VideoDitheringMode"
-        const val KEY_V91DANMAKUFONTSHADOWTOGGLE = "v91DanmakuFontShadowToggle"
-        const val KEY_V91SUBTITLEFADEINOUTCUSTOM = "v91SubtitleFadeInOutCustom"
-        const val KEY_V91GESTUREEDGEDEADZONE = "v91GestureEdgeDeadZone"
-        const val KEY_V91CASTVIDEOLATENCYMODE = "v91CastVideoLatencyMode"
-        const val KEY_V91PLAYLISTAUTORESUMELAST = "v91PlaylistAutoResumeLast"
-        const val KEY_V91CACHESEGMENTSIZE = "v91CacheSegmentSize"
-        const val KEY_V91PROGRESSBARCHAPTERLABEL = "v91ProgressBarChapterLabel"
-        const val KEY_V91VOLUMEAUTODUCKING = "v91VolumeAutoDucking"
-        const val KEY_V91HISTORYGROUPBYSERIES = "v91HistoryGroupBySeries"
-        const val KEY_V91PLAYBACKAUTOSKIPNEXTCOUNTDOWN = "v91PlaybackAutoSkipNextCountdown"
-        const val KEY_V91SCREENSHOTREGIONCAPTURE = "v91ScreenshotRegionCapture"
-        const val KEY_V91VIDEOFILMGRAINCUSTOM = "v91VideoFilmGrainCustom"
-        const val KEY_V91DANMAKUBGCORNERRADIUS = "v91DanmakuBgCornerRadius"
-        const val KEY_V91SUBTITLEBGMARGINBOTTOM = "v91SubtitleBgMarginBottom"
-        const val KEY_V92VIDEOVIGNETTECUSTOM = "v92VideoVignetteCustom"
-        const val KEY_V92DANMAKUFONTUNDERLINETOGGLE = "v92DanmakuFontUnderlineToggle"
-        const val KEY_V92SUBTITLEBGPADDINGCUSTOM = "v92SubtitleBgPaddingCustom"
-        const val KEY_V92GESTURESWIPEBACKACTION = "v92GestureSwipeBackAction"
-        const val KEY_V92CASTVIDEODROPFRAME = "v92CastVideoDropFrame"
-        const val KEY_V92PLAYLISTAUTOSKIPSHORT = "v92PlaylistAutoSkipShort"
-        const val KEY_V92CACHEDOWNLOADPOLICY = "v92CacheDownloadPolicy"
-        const val KEY_V92PROGRESSBARTHUMBSHAPE = "v92ProgressBarThumbShape"
-        const val KEY_V92VOLUMEAUTOBALANCE = "v92VolumeAutoBalance"
-        const val KEY_V92HISTORYAUTOCLEANEXPIRED = "v92HistoryAutoCleanExpired"
-        const val KEY_V92PLAYBACKAUTOSKIPSAMETITLE = "v92PlaybackAutoSkipSameTitle"
-        const val KEY_V92SCREENSHOTAUTODELETEDAYS = "v92ScreenshotAutoDeleteDays"
-        const val KEY_V92VIDEOCOLORFRINGECUSTOM = "v92VideoColorFringeCustom"
-        const val KEY_V92DANMAKUBGOPACITYCUSTOM = "v92DanmakuBgOpacityCustom"
-        const val KEY_V92SUBTITLEBGMARGINTOP = "v92SubtitleBgMarginTop"
-        const val KEY_V93VIDEOSCANLINEEFFECT = "v93VideoScanlineEffect"
-        const val KEY_V93DANMAKUSENDMAXLENGTHCUSTOM = "v93DanmakuSendMaxLengthCustom"
-        const val KEY_V93SUBTITLEBGBORDERCOLORCUSTOM = "v93SubtitleBgBorderColorCustom"
-        const val KEY_V93GESTURESWIPEFORWARDACTION = "v93GestureSwipeForwardAction"
-        const val KEY_V93CASTAUDIODYNAMICRANGE = "v93CastAudioDynamicRange"
-        const val KEY_V93PLAYLISTAUTOSKIPLONG = "v93PlaylistAutoSkipLong"
-        const val KEY_V93CACHENETWORKPOLICY = "v93CacheNetworkPolicy"
-        const val KEY_V93PROGRESSBARBUFFERCOLORCUSTOM = "v93ProgressBarBufferColorCustom"
-        const val KEY_V93VOLUMEAUTOGAINCONTROL = "v93VolumeAutoGainControl"
-        const val KEY_V93HISTORYAUTOSYNCDEVICE = "v93HistoryAutoSyncDevice"
-        const val KEY_V93PLAYBACKAUTOSKIPRECAP93 = "v93PlaybackAutoSkipRecap93"
-        const val KEY_V93SCREENSHOTNAMINGTEMPLATE = "v93ScreenshotNamingTemplate"
-        const val KEY_V93VIDEOCRTFILTERCUSTOM = "v93VideoCRTFilterCustom"
-        const val KEY_V93DANMAKUSENDCONFIRMTOGGLE = "v93DanmakuSendConfirmToggle"
-        const val KEY_V93SUBTITLEBGBORDERWIDTHCUSTOM = "v93SubtitleBgBorderWidthCustom"
-        const val KEY_V94VIDEOPIXELARTMODE = "v94VideoPixelArtMode"
-        const val KEY_V94DANMAKUFONTMONOSPACETOGGLE = "v94DanmakuFontMonospaceToggle"
-        const val KEY_V94SUBTITLEBGBORDERRADIUSCUSTOM = "v94SubtitleBgBorderRadiusCustom"
-        const val KEY_V94GESTURELONGPRESSTIMEOUT = "v94GestureLongPressTimeout"
-        const val KEY_V94CASTVIDEOBUFFERSIZE = "v94CastVideoBufferSize"
-        const val KEY_V94PLAYLISTAUTOGROUPBYUP = "v94PlaylistAutoGroupByUp"
-        const val KEY_V94CACHESMARTCLEANUP = "v94CacheSmartCleanup"
-        const val KEY_V94PROGRESSBARLIVEINDICATOR = "v94ProgressBarLiveIndicator"
-        const val KEY_V94VOLUMEAUTOPAN = "v94VolumeAutoPan"
-        const val KEY_V94HISTORYEXPORTAUTO = "v94HistoryExportAuto"
-        const val KEY_V94PLAYBACKAUTOSKIPTITLE = "v94PlaybackAutoSkipTitle"
-        const val KEY_V94SCREENSHOTAUTOCOPYPATH = "v94ScreenshotAutoCopyPath"
-        const val KEY_V94VIDEOASCIIARTMODE = "v94VideoAsciiArtMode"
-        const val KEY_V94DANMAKUFONTSIZESTEP = "v94DanmakuFontSizeStep"
-        const val KEY_V94SUBTITLEANIMATIONFADETIME = "v94SubtitleAnimationFadeTime"
-        const val KEY_V95VIDEOGLITCHEFFECTCUSTOM = "v95VideoGlitchEffectCustom"
-        const val KEY_V95DANMAKUSCROLLEASING = "v95DanmakuScrollEasing"
-        const val KEY_V95SUBTITLEBGGRADIENTANGLE = "v95SubtitleBgGradientAngle"
-        const val KEY_V95GESTUREDOUBLETAPTIMEOUT = "v95GestureDoubleTapTimeout"
-        const val KEY_V95CASTAUDIOBUFFERSIZE = "v95CastAudioBufferSize"
-        const val KEY_V95PLAYLISTAUTOGROUPBYDATE = "v95PlaylistAutoGroupByDate"
-        const val KEY_V95CACHESTORAGELIMIT = "v95CacheStorageLimit"
-        const val KEY_V95PROGRESSBARCHAPTERCOLOR = "v95ProgressBarChapterColor"
-        const val KEY_V95VOLUMEAUTOCROSSFADE = "v95VolumeAutoCrossfade"
-        const val KEY_V95HISTORYIMPORTAUTO = "v95HistoryImportAuto"
-        const val KEY_V95PLAYBACKAUTOSKIPENDING95 = "v95PlaybackAutoSkipEnding95"
-        const val KEY_V95SCREENSHOTAUTOOPENAFTER = "v95ScreenshotAutoOpenAfter"
-        const val KEY_V95VIDEOVHSEFFECTCUSTOM = "v95VideoVHSEffectCustom"
-        const val KEY_V95DANMAKUSCROLLACCELERATION = "v95DanmakuScrollAcceleration"
-        const val KEY_V95SUBTITLEBGGRADIENTOPACITY = "v95SubtitleBgGradientOpacity"
-        const val KEY_V96VIDEONEONGLOWCUSTOM = "v96VideoNeonGlowCustom"
-        const val KEY_V96DANMAKUFONTLETTERSPACING = "v96DanmakuFontLetterSpacing"
-        const val KEY_V96SUBTITLEBGGRADIENTTYPE = "v96SubtitleBgGradientType"
-        const val KEY_V96GESTURESWIPEMINDISTANCE = "v96GestureSwipeMinDistance"
-        const val KEY_V96CASTVIDEODECODETHREADS = "v96CastVideoDecodeThreads"
-        const val KEY_V96PLAYLISTAUTOGROUPBYTYPE = "v96PlaylistAutoGroupByType"
-        const val KEY_V96CACHECLEANUPINTERVAL = "v96CacheCleanupInterval"
-        const val KEY_V96PROGRESSBARTHUMBSHADOW = "v96ProgressBarThumbShadow"
-        const val KEY_V96VOLUMEAUTOREPLAYGAIN = "v96VolumeAutoReplayGain"
-        const val KEY_V96HISTORYAUTOCLEANMAXDAYS = "v96HistoryAutoCleanMaxDays"
-        const val KEY_V96PLAYBACKAUTOSKIPCREDITS = "v96PlaybackAutoSkipCredits"
-        const val KEY_V96SCREENSHOTAUTOSHARETARGET = "v96ScreenshotAutoShareTarget"
-        const val KEY_V96VIDEODREAMYEFFECTCUSTOM = "v96VideoDreamyEffectCustom"
-        const val KEY_V96DANMAKUSCROLLDECELERATION = "v96DanmakuScrollDeceleration"
-        const val KEY_V96SUBTITLEBGGRADIENTSTART = "v96SubtitleBgGradientStart"
-        const val KEY_V97VIDEOSEPIACUSTOM = "v97VideoSepiaCustom"
-        const val KEY_V97DANMAKUFONTWEIGHTRANGE = "v97DanmakuFontWeightRange"
-        const val KEY_V97SUBTITLEBGGRADIENTEND = "v97SubtitleBgGradientEnd"
-        const val KEY_V97GESTURESWIPEANGLETHRESHOLD = "v97GestureSwipeAngleThreshold"
-        const val KEY_V97CASTVIDEOPOSTPROCESSING = "v97CastVideoPostProcessing"
-        const val KEY_V97PLAYLISTAUTOGROUPBYSEASON = "v97PlaylistAutoGroupBySeason"
-        const val KEY_V97CACHEPRELOADPOLICY = "v97CachePreloadPolicy"
-        const val KEY_V97PROGRESSBARTHUMBGLOW = "v97ProgressBarThumbGlow"
-        const val KEY_V97VOLUMEAUTOPEAKLIMIT = "v97VolumeAutoPeakLimit"
-        const val KEY_V97HISTORYAUTOCLEANMINITEMS = "v97HistoryAutoCleanMinItems"
-        const val KEY_V97PLAYBACKAUTOSKIPRECAP97 = "v97PlaybackAutoSkipRecap97"
-        const val KEY_V97SCREENSHOTAUTOANNOTATETEXT = "v97ScreenshotAutoAnnotateText"
-        const val KEY_V97VIDEOPOLAROIDCUSTOM = "v97VideoPolaroidCustom"
-        const val KEY_V97DANMAKUFONTSIZEMIN = "v97DanmakuFontSizeMin"
-        const val KEY_V97SUBTITLEANIMATIONTYPE97 = "v97SubtitleAnimationType97"
-        const val KEY_V98VIDEONEGATIVECUSTOM = "v98VideoNegativeCustom"
-        const val KEY_V98DANMAKUFONTSIZEMAX = "v98DanmakuFontSizeMax"
-        const val KEY_V98SUBTITLEANIMATIONSPEED98 = "v98SubtitleAnimationSpeed98"
-        const val KEY_V98GESTUREPINCHMINSCALE = "v98GesturePinchMinScale"
-        const val KEY_V98CASTAUDIOPOSTPROCESSING = "v98CastAudioPostProcessing"
-        const val KEY_V98PLAYLISTAUTOGROUPBYGENRE = "v98PlaylistAutoGroupByGenre"
-        const val KEY_V98CACHEDOWNLOADONWIFI = "v98CacheDownloadOnWifi"
-        const val KEY_V98PROGRESSBARTHUMBBORDER = "v98ProgressBarThumbBorder"
-        const val KEY_V98VOLUMEAUTORMSLEVEL = "v98VolumeAutoRMSLevel"
-        const val KEY_V98HISTORYAUTOCLEANONSTART = "v98HistoryAutoCleanOnStart"
-        const val KEY_V98PLAYBACKAUTOSKIPFILLER98 = "v98PlaybackAutoSkipFiller98"
-        const val KEY_V98SCREENSHOTAUTOUPLOADCLOUD = "v98ScreenshotAutoUploadCloud"
-        const val KEY_V98VIDEOMONOCHROMECUSTOM = "v98VideoMonochromeCustom"
-        const val KEY_V98DANMAKUFONTSTYLECUSTOM98 = "v98DanmakuFontStyleCustom98"
-        const val KEY_V98SUBTITLEANIMATIONEASING98 = "v98SubtitleAnimationEasing98"
-        const val KEY_V99VIDEOPOSTERIZECUSTOM = "v99VideoPosterizeCustom"
-        const val KEY_V99DANMAKUFONTOUTLINETOGGLE = "v99DanmakuFontOutlineToggle"
-        const val KEY_V99SUBTITLEANIMATIONDURATION99 = "v99SubtitleAnimationDuration99"
-        const val KEY_V99GESTUREPINCHMAXSCALE = "v99GesturePinchMaxScale"
-        const val KEY_V99CASTVIDEOAUTOQUALITY = "v99CastVideoAutoQuality"
-        const val KEY_V99PLAYLISTAUTOGROUPBYCHANNEL = "v99PlaylistAutoGroupByChannel"
-        const val KEY_V99CACHEDOWNLOADSPEEDLIMIT = "v99CacheDownloadSpeedLimit"
-        const val KEY_V99PROGRESSBARTHUMBSIZE99 = "v99ProgressBarThumbSize99"
-        const val KEY_V99VOLUMEAUTOLOUDNESS99 = "v99VolumeAutoLoudness99"
-        const val KEY_V99HISTORYAUTOCLEANONEXIT = "v99HistoryAutoCleanOnExit"
-        const val KEY_V99PLAYBACKAUTOSKIPINTRO99 = "v99PlaybackAutoSkipIntro99"
-        const val KEY_V99SCREENSHOTAUTOSHARE99 = "v99ScreenshotAutoShare99"
-        const val KEY_V99VIDEOSOLARIZECUSTOM = "v99VideoSolarizeCustom"
-        const val KEY_V99DANMAKUFONTCOLORCUSTOM = "v99DanmakuFontColorCustom"
-        const val KEY_V99SUBTITLEANIMATIONLOOP99 = "v99SubtitleAnimationLoop99"
-        const val KEY_V100VIDEODUOTONECUSTOM = "v100VideoDuotoneCustom"
-        const val KEY_V100DANMAKUFONTBGTOGGLE = "v100DanmakuFontBgToggle"
-        const val KEY_V100SUBTITLEANIMATIONDELAY99 = "v100SubtitleAnimationDelay99"
-        const val KEY_V100GESTUREPINCHSPEED99 = "v100GesturePinchSpeed99"
-        const val KEY_V100CASTAUDIOAUTOQUALITY = "v100CastAudioAutoQuality"
-        const val KEY_V100PLAYLISTAUTOGROUPALL = "v100PlaylistAutoGroupAll"
-        const val KEY_V100CACHEDOWNLOADRETRY = "v100CacheDownloadRetry"
-        const val KEY_V100PROGRESSBARTHUMBCOLOR99 = "v100ProgressBarThumbColor99"
-        const val KEY_V100VOLUMEAUTONORMALIZE99 = "v100VolumeAutoNormalize99"
-        const val KEY_V100HISTORYAUTOSYNC99 = "v100HistoryAutoSync99"
-        const val KEY_V100PLAYBACKAUTOSKIPOUTRO99 = "v100PlaybackAutoSkipOutro99"
-        const val KEY_V100SCREENSHOTAUTOFORMAT99 = "v100ScreenshotAutoFormat99"
-        const val KEY_V100VIDEOTINTDUOTONE = "v100VideoTintDuotone"
-        const val KEY_V100DANMAKUFONTWEIGHT99 = "v100DanmakuFontWeight99"
-        const val KEY_V100SUBTITLEANIMATIONTYPE99 = "v100SubtitleAnimationType99"
+        const val KEY_V91VIDEODITHERINGMODE = "v91videoDitheringMode"
+        const val KEY_V91DANMAKUFONTSHADOWTOGGLE = "v91danmakuFontShadowToggle"
+        const val KEY_V91SUBTITLEFADEINOUTCUSTOM = "v91subtitleFadeInOutCustom"
+        const val KEY_V91GESTUREEDGEDEADZONE = "v91gestureEdgeDeadZone"
+        const val KEY_V91CASTVIDEOLATENCYMODE = "v91castVideoLatencyMode"
+        const val KEY_V91PLAYLISTAUTORESUMELAST = "v91playlistAutoResumeLast"
+        const val KEY_V91CACHESEGMENTSIZE = "v91cacheSegmentSize"
+        const val KEY_V91PROGRESSBARCHAPTERLABEL = "v91progressBarChapterLabel"
+        const val KEY_V91VOLUMEAUTODUCKING = "v91volumeAutoDucking"
+        const val KEY_V91HISTORYGROUPBYSERIES = "v91historyGroupBySeries"
+        const val KEY_V91PLAYBACKAUTOSKIPNEXTCOUNTDOWN = "v91playbackAutoSkipNextCountdown"
+        const val KEY_V91SCREENSHOTREGIONCAPTURE = "v91screenshotRegionCapture"
+        const val KEY_V91VIDEOFILMGRAINCUSTOM = "v91videoFilmGrainCustom"
+        const val KEY_V91DANMAKUBGCORNERRADIUS = "v91danmakuBgCornerRadius"
+        const val KEY_V91SUBTITLEBGMARGINBOTTOM = "v91subtitleBgMarginBottom"
+        const val KEY_V92VIDEOVIGNETTECUSTOM = "v92videoVignetteCustom"
+        const val KEY_V92DANMAKUFONTUNDERLINETOGGLE = "v92danmakuFontUnderlineToggle"
+        const val KEY_V92SUBTITLEBGPADDINGCUSTOM = "v92subtitleBgPaddingCustom"
+        const val KEY_V92GESTURESWIPEBACKACTION = "v92gestureSwipeBackAction"
+        const val KEY_V92CASTVIDEODROPFRAME = "v92castVideoDropFrame"
+        const val KEY_V92PLAYLISTAUTOSKIPSHORT = "v92playlistAutoSkipShort"
+        const val KEY_V92CACHEDOWNLOADPOLICY = "v92cacheDownloadPolicy"
+        const val KEY_V92PROGRESSBARTHUMBSHAPE = "v92progressBarThumbShape"
+        const val KEY_V92VOLUMEAUTOBALANCE = "v92volumeAutoBalance"
+        const val KEY_V92HISTORYAUTOCLEANEXPIRED = "v92historyAutoCleanExpired"
+        const val KEY_V92PLAYBACKAUTOSKIPSAMETITLE = "v92playbackAutoSkipSameTitle"
+        const val KEY_V92SCREENSHOTAUTODELETEDAYS = "v92screenshotAutoDeleteDays"
+        const val KEY_V92VIDEOCOLORFRINGECUSTOM = "v92videoColorFringeCustom"
+        const val KEY_V92DANMAKUBGOPACITYCUSTOM = "v92danmakuBgOpacityCustom"
+        const val KEY_V92SUBTITLEBGMARGINTOP = "v92subtitleBgMarginTop"
+        const val KEY_V93VIDEOSCANLINEEFFECT = "v93videoScanlineEffect"
+        const val KEY_V93DANMAKUSENDMAXLENGTHCUSTOM = "v93danmakuSendMaxLengthCustom"
+        const val KEY_V93SUBTITLEBGBORDERCOLORCUSTOM = "v93subtitleBgBorderColorCustom"
+        const val KEY_V93GESTURESWIPEFORWARDACTION = "v93gestureSwipeForwardAction"
+        const val KEY_V93CASTAUDIODYNAMICRANGE = "v93castAudioDynamicRange"
+        const val KEY_V93PLAYLISTAUTOSKIPLONG = "v93playlistAutoSkipLong"
+        const val KEY_V93CACHENETWORKPOLICY = "v93cacheNetworkPolicy"
+        const val KEY_V93PROGRESSBARBUFFERCOLORCUSTOM = "v93progressBarBufferColorCustom"
+        const val KEY_V93VOLUMEAUTOGAINCONTROL = "v93volumeAutoGainControl"
+        const val KEY_V93HISTORYAUTOSYNCDEVICE = "v93historyAutoSyncDevice"
+        const val KEY_V93PLAYBACKAUTOSKIPRECAP93 = "v93playbackAutoSkipRecap93"
+        const val KEY_V93SCREENSHOTNAMINGTEMPLATE = "v93screenshotNamingTemplate"
+        const val KEY_V93VIDEOCRTFILTERCUSTOM = "v93videoCRTFilterCustom"
+        const val KEY_V93DANMAKUSENDCONFIRMTOGGLE = "v93danmakuSendConfirmToggle"
+        const val KEY_V93SUBTITLEBGBORDERWIDTHCUSTOM = "v93subtitleBgBorderWidthCustom"
+        const val KEY_V94VIDEOPIXELARTMODE = "v94videoPixelArtMode"
+        const val KEY_V94DANMAKUFONTMONOSPACETOGGLE = "v94danmakuFontMonospaceToggle"
+        const val KEY_V94SUBTITLEBGBORDERRADIUSCUSTOM = "v94subtitleBgBorderRadiusCustom"
+        const val KEY_V94GESTURELONGPRESSTIMEOUT = "v94gestureLongPressTimeout"
+        const val KEY_V94CASTVIDEOBUFFERSIZE = "v94castVideoBufferSize"
+        const val KEY_V94PLAYLISTAUTOGROUPBYUP = "v94playlistAutoGroupByUp"
+        const val KEY_V94CACHESMARTCLEANUP = "v94cacheSmartCleanup"
+        const val KEY_V94PROGRESSBARLIVEINDICATOR = "v94progressBarLiveIndicator"
+        const val KEY_V94VOLUMEAUTOPAN = "v94volumeAutoPan"
+        const val KEY_V94HISTORYEXPORTAUTO = "v94historyExportAuto"
+        const val KEY_V94PLAYBACKAUTOSKIPTITLE = "v94playbackAutoSkipTitle"
+        const val KEY_V94SCREENSHOTAUTOCOPYPATH = "v94screenshotAutoCopyPath"
+        const val KEY_V94VIDEOASCIIARTMODE = "v94videoAsciiArtMode"
+        const val KEY_V94DANMAKUFONTSIZESTEP = "v94danmakuFontSizeStep"
+        const val KEY_V94SUBTITLEANIMATIONFADETIME = "v94subtitleAnimationFadeTime"
+        const val KEY_V95VIDEOGLITCHEFFECTCUSTOM = "v95videoGlitchEffectCustom"
+        const val KEY_V95DANMAKUSCROLLEASING = "v95danmakuScrollEasing"
+        const val KEY_V95SUBTITLEBGGRADIENTANGLE = "v95subtitleBgGradientAngle"
+        const val KEY_V95GESTUREDOUBLETAPTIMEOUT = "v95gestureDoubleTapTimeout"
+        const val KEY_V95CASTAUDIOBUFFERSIZE = "v95castAudioBufferSize"
+        const val KEY_V95PLAYLISTAUTOGROUPBYDATE = "v95playlistAutoGroupByDate"
+        const val KEY_V95CACHESTORAGELIMIT = "v95cacheStorageLimit"
+        const val KEY_V95PROGRESSBARCHAPTERCOLOR = "v95progressBarChapterColor"
+        const val KEY_V95VOLUMEAUTOCROSSFADE = "v95volumeAutoCrossfade"
+        const val KEY_V95HISTORYIMPORTAUTO = "v95historyImportAuto"
+        const val KEY_V95PLAYBACKAUTOSKIPENDING95 = "v95playbackAutoSkipEnding95"
+        const val KEY_V95SCREENSHOTAUTOOPENAFTER = "v95screenshotAutoOpenAfter"
+        const val KEY_V95VIDEOVHSEFFECTCUSTOM = "v95videoVHSEffectCustom"
+        const val KEY_V95DANMAKUSCROLLACCELERATION = "v95danmakuScrollAcceleration"
+        const val KEY_V95SUBTITLEBGGRADIENTOPACITY = "v95subtitleBgGradientOpacity"
+        const val KEY_V96VIDEONEONGLOWCUSTOM = "v96videoNeonGlowCustom"
+        const val KEY_V96DANMAKUFONTLETTERSPACING = "v96danmakuFontLetterSpacing"
+        const val KEY_V96SUBTITLEBGGRADIENTTYPE = "v96subtitleBgGradientType"
+        const val KEY_V96GESTURESWIPEMINDISTANCE = "v96gestureSwipeMinDistance"
+        const val KEY_V96CASTVIDEODECODETHREADS = "v96castVideoDecodeThreads"
+        const val KEY_V96PLAYLISTAUTOGROUPBYTYPE = "v96playlistAutoGroupByType"
+        const val KEY_V96CACHECLEANUPINTERVAL = "v96cacheCleanupInterval"
+        const val KEY_V96PROGRESSBARTHUMBSHADOW = "v96progressBarThumbShadow"
+        const val KEY_V96VOLUMEAUTOREPLAYGAIN = "v96volumeAutoReplayGain"
+        const val KEY_V96HISTORYAUTOCLEANMAXDAYS = "v96historyAutoCleanMaxDays"
+        const val KEY_V96PLAYBACKAUTOSKIPCREDITS = "v96playbackAutoSkipCredits"
+        const val KEY_V96SCREENSHOTAUTOSHARETARGET = "v96screenshotAutoShareTarget"
+        const val KEY_V96VIDEODREAMYEFFECTCUSTOM = "v96videoDreamyEffectCustom"
+        const val KEY_V96DANMAKUSCROLLDECELERATION = "v96danmakuScrollDeceleration"
+        const val KEY_V96SUBTITLEBGGRADIENTSTART = "v96subtitleBgGradientStart"
+        const val KEY_V97VIDEOSEPIACUSTOM = "v97videoSepiaCustom"
+        const val KEY_V97DANMAKUFONTWEIGHTRANGE = "v97danmakuFontWeightRange"
+        const val KEY_V97SUBTITLEBGGRADIENTEND = "v97subtitleBgGradientEnd"
+        const val KEY_V97GESTURESWIPEANGLETHRESHOLD = "v97gestureSwipeAngleThreshold"
+        const val KEY_V97CASTVIDEOPOSTPROCESSING = "v97castVideoPostProcessing"
+        const val KEY_V97PLAYLISTAUTOGROUPBYSEASON = "v97playlistAutoGroupBySeason"
+        const val KEY_V97CACHEPRELOADPOLICY = "v97cachePreloadPolicy"
+        const val KEY_V97PROGRESSBARTHUMBGLOW = "v97progressBarThumbGlow"
+        const val KEY_V97VOLUMEAUTOPEAKLIMIT = "v97volumeAutoPeakLimit"
+        const val KEY_V97HISTORYAUTOCLEANMINITEMS = "v97historyAutoCleanMinItems"
+        const val KEY_V97PLAYBACKAUTOSKIPRECAP97 = "v97playbackAutoSkipRecap97"
+        const val KEY_V97SCREENSHOTAUTOANNOTATETEXT = "v97screenshotAutoAnnotateText"
+        const val KEY_V97VIDEOPOLAROIDCUSTOM = "v97videoPolaroidCustom"
+        const val KEY_V97DANMAKUFONTSIZEMIN = "v97danmakuFontSizeMin"
+        const val KEY_V97SUBTITLEANIMATIONTYPE97 = "v97subtitleAnimationType97"
+        const val KEY_V98VIDEONEGATIVECUSTOM = "v98videoNegativeCustom"
+        const val KEY_V98DANMAKUFONTSIZEMAX = "v98danmakuFontSizeMax"
+        const val KEY_V98SUBTITLEANIMATIONSPEED98 = "v98subtitleAnimationSpeed98"
+        const val KEY_V98GESTUREPINCHMINSCALE = "v98gesturePinchMinScale"
+        const val KEY_V98CASTAUDIOPOSTPROCESSING = "v98castAudioPostProcessing"
+        const val KEY_V98PLAYLISTAUTOGROUPBYGENRE = "v98playlistAutoGroupByGenre"
+        const val KEY_V98CACHEDOWNLOADONWIFI = "v98cacheDownloadOnWifi"
+        const val KEY_V98PROGRESSBARTHUMBBORDER = "v98progressBarThumbBorder"
+        const val KEY_V98VOLUMEAUTORMSLEVEL = "v98volumeAutoRMSLevel"
+        const val KEY_V98HISTORYAUTOCLEANONSTART = "v98historyAutoCleanOnStart"
+        const val KEY_V98PLAYBACKAUTOSKIPFILLER98 = "v98playbackAutoSkipFiller98"
+        const val KEY_V98SCREENSHOTAUTOUPLOADCLOUD = "v98screenshotAutoUploadCloud"
+        const val KEY_V98VIDEOMONOCHROMECUSTOM = "v98videoMonochromeCustom"
+        const val KEY_V98DANMAKUFONTSTYLECUSTOM98 = "v98danmakuFontStyleCustom98"
+        const val KEY_V98SUBTITLEANIMATIONEASING98 = "v98subtitleAnimationEasing98"
+        const val KEY_V99VIDEOPOSTERIZECUSTOM = "v99videoPosterizeCustom"
+        const val KEY_V99DANMAKUFONTOUTLINETOGGLE = "v99danmakuFontOutlineToggle"
+        const val KEY_V99SUBTITLEANIMATIONDURATION99 = "v99subtitleAnimationDuration99"
+        const val KEY_V99GESTUREPINCHMAXSCALE = "v99gesturePinchMaxScale"
+        const val KEY_V99CASTVIDEOAUTOQUALITY = "v99castVideoAutoQuality"
+        const val KEY_V99PLAYLISTAUTOGROUPBYCHANNEL = "v99playlistAutoGroupByChannel"
+        const val KEY_V99CACHEDOWNLOADSPEEDLIMIT = "v99cacheDownloadSpeedLimit"
+        const val KEY_V99PROGRESSBARTHUMBSIZE99 = "v99progressBarThumbSize99"
+        const val KEY_V99VOLUMEAUTOLOUDNESS99 = "v99volumeAutoLoudness99"
+        const val KEY_V99HISTORYAUTOCLEANONEXIT = "v99historyAutoCleanOnExit"
+        const val KEY_V99PLAYBACKAUTOSKIPINTRO99 = "v99playbackAutoSkipIntro99"
+        const val KEY_V99SCREENSHOTAUTOSHARE99 = "v99screenshotAutoShare99"
+        const val KEY_V99VIDEOSOLARIZECUSTOM = "v99videoSolarizeCustom"
+        const val KEY_V99DANMAKUFONTCOLORCUSTOM = "v99danmakuFontColorCustom"
+        const val KEY_V99SUBTITLEANIMATIONLOOP99 = "v99subtitleAnimationLoop99"
+        const val KEY_V100VIDEODUOTONECUSTOM = "v100videoDuotoneCustom"
+        const val KEY_V100DANMAKUFONTBGTOGGLE = "v100danmakuFontBgToggle"
+        const val KEY_V100SUBTITLEANIMATIONDELAY99 = "v100subtitleAnimationDelay99"
+        const val KEY_V100GESTUREPINCHSPEED99 = "v100gesturePinchSpeed99"
+        const val KEY_V100CASTAUDIOAUTOQUALITY = "v100castAudioAutoQuality"
+        const val KEY_V100PLAYLISTAUTOGROUPALL = "v100playlistAutoGroupAll"
+        const val KEY_V100CACHEDOWNLOADRETRY = "v100cacheDownloadRetry"
+        const val KEY_V100PROGRESSBARTHUMBCOLOR99 = "v100progressBarThumbColor99"
+        const val KEY_V100VOLUMEAUTONORMALIZE99 = "v100volumeAutoNormalize99"
+        const val KEY_V100HISTORYAUTOSYNC99 = "v100historyAutoSync99"
+        const val KEY_V100PLAYBACKAUTOSKIPOUTRO99 = "v100playbackAutoSkipOutro99"
+        const val KEY_V100SCREENSHOTAUTOFORMAT99 = "v100screenshotAutoFormat99"
+        const val KEY_V100VIDEOTINTDUOTONE = "v100videoTintDuotone"
+        const val KEY_V100DANMAKUFONTWEIGHT99 = "v100danmakuFontWeight99"
+        const val KEY_V100SUBTITLEANIMATIONTYPE99 = "v100subtitleAnimationType99"
     }
 }
