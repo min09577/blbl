@@ -1942,6 +1942,20 @@ internal fun PlayerActivity.showv40VideoDynamicToneMapToggle() {
         .option(switchText(current)) { BiliClient.prefs.v40VideoDynamicToneMap = !current }
         .show()
 }
+// 40.13: 屏幕最大弹幕数
+internal fun PlayerActivity.showv40DanmakuMaxPerScreenDialog() {
+    val current = BiliClient.prefs.v40DanmakuMaxPerScreen
+    AppPopup.Builder(this)
+        .title("屏幕最大弹幕数")
+        .option("0") { BiliClient.prefs.v40DanmakuMaxPerScreen = 0 }
+        .option("1") { BiliClient.prefs.v40DanmakuMaxPerScreen = 1 }
+        .option("2") { BiliClient.prefs.v40DanmakuMaxPerScreen = 2 }
+        .option("3") { BiliClient.prefs.v40DanmakuMaxPerScreen = 3 }
+        .option("5") { BiliClient.prefs.v40DanmakuMaxPerScreen = 5 }
+        .option("10") { BiliClient.prefs.v40DanmakuMaxPerScreen = 10 }
+        .show()
+}
+
 
 
 
