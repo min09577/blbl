@@ -1926,6 +1926,11 @@ class AppPrefs(context: Context) {
     var v34AudioEqPreset: Int
         get() = prefs.getInt(KEY_V34_AUDIO_EQ_PRESET, 0)
         set(value) = prefs.edit().putInt(KEY_V34_AUDIO_EQ_PRESET, value).apply()
+    // v34.11: 播放器音量增强
+    var v34PlayerVolumeBoost: Boolean
+        get() = prefs.getBoolean(KEY_V34_PLAYER_VOLUME_BOOST, false)
+        set(value) = prefs.edit().putBoolean(KEY_V34_PLAYER_VOLUME_BOOST, value).apply()
+
 
 
 
@@ -3968,6 +3973,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V34_PLAYBACK_AUTO_PAUSE_ON_HEADSET = "v34_playback_auto_pause_on_headset"
         private const val KEY_V34_DANMAKU_MIRROR_FLIP = "v34_danmaku_mirror_flip"
         private const val KEY_V34_AUDIO_EQ_PRESET = "v34_audio_eq_preset"
+        private const val KEY_V34_PLAYER_VOLUME_BOOST = "v34_player_volume_boost"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
