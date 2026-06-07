@@ -1984,6 +1984,11 @@ class AppPrefs(context: Context) {
     var v34DanmakuMaxDisplaySec: Int
         get() = prefs.getInt(KEY_V34_DANMAKU_MAX_DISPLAY_SEC, 0)
         set(value) = prefs.edit().putInt(KEY_V34_DANMAKU_MAX_DISPLAY_SEC, value).apply()
+    // v35.14: 字幕行间距
+    var v35SubtitleLineSpacing: Int
+        get() = prefs.getInt(KEY_V35_SUBTITLE_LINE_SPACING, 0)
+        set(value) = prefs.edit().putInt(KEY_V35_SUBTITLE_LINE_SPACING, value).apply()
+
     // v35.13: 弹幕动画速度
     var v35DanmakuAnimationSpeed: Int
         get() = prefs.getInt(KEY_V35_DANMAKU_ANIMATION_SPEED, 0)
@@ -3547,3 +3552,4 @@ class AppPrefs(context: Context) {
         private const val KEY_V35_VIDEO_NOISE_REDUCTION = "v35_video_noise_reduction"
 
         private const val KEY_V35_DANMAKU_ANIMATION_SPEED = "v35_danmaku_animation_speed"
+        private const val KEY_V35_SUBTITLE_LINE_SPACING = "v35_subtitle_line_spacing"
