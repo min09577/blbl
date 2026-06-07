@@ -9328,4 +9328,14 @@ internal fun PlayerActivity.showv34AudioCompressorThresholdDialog() {
         .show()
 }
 
+
+// 34.4: 自定义手势映射
+internal fun PlayerActivity.showv34PlayerGestureCustomMapToggle() {
+    val current = BiliClient.prefs.v34PlayerGestureCustomMap
+    AppPopup.Builder(this)
+        .title("自定义手势映射")
+        .option(switchText(current)) { BiliClient.prefs.v34PlayerGestureCustomMap = !current }
+        .show()
+}
+
 }
