@@ -1722,6 +1722,11 @@ class AppPrefs(context: Context) {
     var v31PlaybackBufferAheadSec: Int
         get() = prefs.getInt(KEY_V31_PLAYBACK_BUFFER_AHEAD_SEC, 0)
         set(value) = prefs.edit().putInt(KEY_V31_PLAYBACK_BUFFER_AHEAD_SEC, value).apply()
+    // v31.5: 弹幕防刷等级
+    var v31DanmakuAntiSpamLevel: Int
+        get() = prefs.getInt(KEY_V31_DANMAKU_ANTI_SPAM_LEVEL, 0)
+        set(value) = prefs.edit().putInt(KEY_V31_DANMAKU_ANTI_SPAM_LEVEL, value).apply()
+
 
 
 
@@ -3662,6 +3667,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V31_VIDEO_FRAME_SKIP_SILENCE = "v31_video_frame_skip_silence"
         private const val KEY_V31_SUBTITLE_FONT_SIZE_AUTO = "v31_subtitle_font_size_auto"
         private const val KEY_V31_PLAYBACK_BUFFER_AHEAD_SEC = "v31_playback_buffer_ahead_sec"
+        private const val KEY_V31_DANMAKU_ANTI_SPAM_LEVEL = "v31_danmaku_anti_spam_level"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(

@@ -8783,4 +8783,19 @@ internal fun PlayerActivity.showv31PlaybackBufferAheadSecDialog() {
         .show()
 }
 
+
+// 31.5: 弹幕防刷等级
+internal fun PlayerActivity.showv31DanmakuAntiSpamLevelDialog() {
+    val current = BiliClient.prefs.v31DanmakuAntiSpamLevel
+    AppPopup.Builder(this)
+        .title("弹幕防刷等级")
+        .option("0") { BiliClient.prefs.v31DanmakuAntiSpamLevel = 0 }
+        .option("1") { BiliClient.prefs.v31DanmakuAntiSpamLevel = 1 }
+        .option("2") { BiliClient.prefs.v31DanmakuAntiSpamLevel = 2 }
+        .option("3") { BiliClient.prefs.v31DanmakuAntiSpamLevel = 3 }
+        .option("5") { BiliClient.prefs.v31DanmakuAntiSpamLevel = 5 }
+        .option("10") { BiliClient.prefs.v31DanmakuAntiSpamLevel = 10 }
+        .show()
+}
+
 }
