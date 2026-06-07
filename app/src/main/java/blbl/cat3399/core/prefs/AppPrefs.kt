@@ -2072,6 +2072,11 @@ class AppPrefs(context: Context) {
     var v37SubtitleOutlineColor: Boolean
         get() = prefs.getBoolean(KEY_V37_SUBTITLE_OUTLINE_COLOR, false)
         set(value) = prefs.edit().putBoolean(KEY_V37_SUBTITLE_OUTLINE_COLOR, value).apply()
+    // v37.7: 帧率计数器
+    var v37VideoFpsCounter: Boolean
+        get() = prefs.getBoolean(KEY_V37_VIDEO_FPS_COUNTER, false)
+        set(value) = prefs.edit().putBoolean(KEY_V37_VIDEO_FPS_COUNTER, value).apply()
+
 
 
 
@@ -4187,6 +4192,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V37_PLAYER_RESUME_THRESHOLD = "v37_player_resume_threshold"
         private const val KEY_V37_DANMAKU_FURIGANA_SHOW = "v37_danmaku_furigana_show"
         private const val KEY_V37_SUBTITLE_OUTLINE_COLOR = "v37_subtitle_outline_color"
+        private const val KEY_V37_VIDEO_FPS_COUNTER = "v37_video_fps_counter"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
