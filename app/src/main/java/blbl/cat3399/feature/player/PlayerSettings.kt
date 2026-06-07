@@ -10432,4 +10432,14 @@ internal fun PlayerActivity.showv40DanmakuVintageModeToggle() {
         .show()
 }
 
+
+// 40.3: 人声消除
+internal fun PlayerActivity.showv40AudioVocalRemoveToggle() {
+    val current = BiliClient.prefs.v40AudioVocalRemove
+    AppPopup.Builder(this)
+        .title("人声消除")
+        .option(switchText(current)) { BiliClient.prefs.v40AudioVocalRemove = !current }
+        .show()
+}
+
 }
