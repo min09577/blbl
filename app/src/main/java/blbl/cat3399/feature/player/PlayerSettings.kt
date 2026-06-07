@@ -10398,4 +10398,14 @@ internal fun PlayerActivity.showv39SubtitleAutoTranslateToggle() {
         .show()
 }
 
+
+// 39.15: 加载相关视频
+internal fun PlayerActivity.showv39PlaylistLoadRelatedToggle() {
+    val current = BiliClient.prefs.v39PlaylistLoadRelated
+    AppPopup.Builder(this)
+        .title("加载相关视频")
+        .option(switchText(current)) { BiliClient.prefs.v39PlaylistLoadRelated = !current }
+        .show()
+}
+
 }
