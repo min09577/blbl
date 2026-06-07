@@ -2132,6 +2132,11 @@ class AppPrefs(context: Context) {
     var v36VideoAspectFitMode: Int
         get() = prefs.getInt(KEY_V36_VIDEO_ASPECT_FIT_MODE, 0)
         set(value) = prefs.edit().putInt(KEY_V36_VIDEO_ASPECT_FIT_MODE, value).apply()
+    // v37.2: 弹幕分组合并
+    var v37DanmakuGroupMerge: Boolean
+        get() = prefs.getBoolean(KEY_V37_DANMAKU_GROUP_MERGE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V37_DANMAKU_GROUP_MERGE, value).apply()
+
     // v37.1: 黑边自动检测
     var v37VideoBlackBarDetect: Boolean
         get() = prefs.getBoolean(KEY_V37_VIDEO_BLACK_BAR_DETECT, false)
@@ -3663,3 +3668,4 @@ class AppPrefs(context: Context) {
 
         // ===== v37.x KEY =====
         private const val KEY_V37_VIDEO_BLACK_BAR_DETECT = "v37_video_black_bar_detect"
+        private const val KEY_V37_DANMAKU_GROUP_MERGE = "v37_danmaku_group_merge"
