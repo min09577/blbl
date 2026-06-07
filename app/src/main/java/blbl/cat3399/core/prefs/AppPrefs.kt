@@ -1984,6 +1984,11 @@ class AppPrefs(context: Context) {
     var v35SubtitleLineSpacing: Int
         get() = prefs.getInt(KEY_V35_SUBTITLE_LINE_SPACING, 0)
         set(value) = prefs.edit().putInt(KEY_V35_SUBTITLE_LINE_SPACING, value).apply()
+    // v35.15: 智能随机播放
+    var v35PlaylistSmartShuffle: Boolean
+        get() = prefs.getBoolean(KEY_V35_PLAYLIST_SMART_SHUFFLE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V35_PLAYLIST_SMART_SHUFFLE, value).apply()
+
 
 
 
@@ -4055,6 +4060,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V35_VIDEO_NOISE_REDUCTION = "v35_video_noise_reduction"
         private const val KEY_V35_DANMAKU_ANIMATION_SPEED = "v35_danmaku_animation_speed"
         private const val KEY_V35_SUBTITLE_LINE_SPACING = "v35_subtitle_line_spacing"
+        private const val KEY_V35_PLAYLIST_SMART_SHUFFLE = "v35_playlist_smart_shuffle"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(

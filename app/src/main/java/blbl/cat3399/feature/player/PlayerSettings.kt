@@ -9627,4 +9627,14 @@ internal fun PlayerActivity.showv35SubtitleLineSpacingDialog() {
         .show()
 }
 
+
+// 35.15: 智能随机播放
+internal fun PlayerActivity.showv35PlaylistSmartShuffleToggle() {
+    val current = BiliClient.prefs.v35PlaylistSmartShuffle
+    AppPopup.Builder(this)
+        .title("智能随机播放")
+        .option(switchText(current)) { BiliClient.prefs.v35PlaylistSmartShuffle = !current }
+        .show()
+}
+
 }
