@@ -1189,6 +1189,20 @@ internal fun PlayerActivity.showv36VideoAspectFitModeDialog() {
         .option("10") { BiliClient.prefs.v36VideoAspectFitMode = 10 }
         .show()
 }
+// 36.2: 弹幕类型透明度
+internal fun PlayerActivity.showv36DanmakuOpacityPerTypeDialog() {
+    val current = BiliClient.prefs.v36DanmakuOpacityPerType
+    AppPopup.Builder(this)
+        .title("弹幕类型透明度")
+        .option("0") { BiliClient.prefs.v36DanmakuOpacityPerType = 0 }
+        .option("1") { BiliClient.prefs.v36DanmakuOpacityPerType = 1 }
+        .option("2") { BiliClient.prefs.v36DanmakuOpacityPerType = 2 }
+        .option("3") { BiliClient.prefs.v36DanmakuOpacityPerType = 3 }
+        .option("5") { BiliClient.prefs.v36DanmakuOpacityPerType = 5 }
+        .option("10") { BiliClient.prefs.v36DanmakuOpacityPerType = 10 }
+        .show()
+}
+
 
 
 

@@ -2058,6 +2058,11 @@ class AppPrefs(context: Context) {
     var v35VideoFrameRateOverride: Int
         get() = prefs.getInt(KEY_V35_VIDEO_FRAME_RATE_OVERRIDE, 0)
         set(value) = prefs.edit().putInt(KEY_V35_VIDEO_FRAME_RATE_OVERRIDE, value).apply()
+    // v36.2: 弹幕类型透明度
+    var v36DanmakuOpacityPerType: Int
+        get() = prefs.getInt(KEY_V36_DANMAKU_OPACITY_PER_TYPE, 0)
+        set(value) = prefs.edit().putInt(KEY_V36_DANMAKU_OPACITY_PER_TYPE, value).apply()
+
     // v36.1: 画面适配模式
     var v36VideoAspectFitMode: Int
         get() = prefs.getInt(KEY_V36_VIDEO_ASPECT_FIT_MODE, 0)
@@ -3569,3 +3574,4 @@ class AppPrefs(context: Context) {
 
         // ===== v36.x KEY =====
         private const val KEY_V36_VIDEO_ASPECT_FIT_MODE = "v36_video_aspect_fit_mode"
+        private const val KEY_V36_DANMAKU_OPACITY_PER_TYPE = "v36_danmaku_opacity_per_type"
