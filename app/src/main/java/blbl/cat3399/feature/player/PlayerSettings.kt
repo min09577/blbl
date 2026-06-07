@@ -9387,4 +9387,19 @@ internal fun PlayerActivity.showv34DanmakuMirrorFlipToggle() {
         .show()
 }
 
+
+// 34.10: 均衡器预设
+internal fun PlayerActivity.showv34AudioEqPresetDialog() {
+    val current = BiliClient.prefs.v34AudioEqPreset
+    AppPopup.Builder(this)
+        .title("均衡器预设")
+        .option("0") { BiliClient.prefs.v34AudioEqPreset = 0 }
+        .option("1") { BiliClient.prefs.v34AudioEqPreset = 1 }
+        .option("2") { BiliClient.prefs.v34AudioEqPreset = 2 }
+        .option("3") { BiliClient.prefs.v34AudioEqPreset = 3 }
+        .option("5") { BiliClient.prefs.v34AudioEqPreset = 5 }
+        .option("10") { BiliClient.prefs.v34AudioEqPreset = 10 }
+        .show()
+}
+
 }
