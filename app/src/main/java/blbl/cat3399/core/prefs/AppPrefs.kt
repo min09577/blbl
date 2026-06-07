@@ -1916,6 +1916,11 @@ class AppPrefs(context: Context) {
     var v34VideoPixelArtMode: Boolean
         get() = prefs.getBoolean(KEY_V34_VIDEO_PIXEL_ART_MODE, false)
         set(value) = prefs.edit().putBoolean(KEY_V34_VIDEO_PIXEL_ART_MODE, value).apply()
+    // v34.13: 弹幕最小字号
+    var v34DanmakuFontSizeMin: Int
+        get() = prefs.getInt(KEY_V34_DANMAKU_FONT_SIZE_MIN, 0)
+        set(value) = prefs.edit().putInt(KEY_V34_DANMAKU_FONT_SIZE_MIN, value).apply()
+
 
 
 
@@ -3953,6 +3958,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V34_AUDIO_EQ_PRESET = "v34_audio_eq_preset"
         private const val KEY_V34_PLAYER_VOLUME_BOOST = "v34_player_volume_boost"
         private const val KEY_V34_VIDEO_PIXEL_ART_MODE = "v34_video_pixel_art_mode"
+        private const val KEY_V34_DANMAKU_FONT_SIZE_MIN = "v34_danmaku_font_size_min"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
