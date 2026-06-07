@@ -1362,6 +1362,20 @@ internal fun PlayerActivity.showv37DanmakuGroupMergeToggle() {
         .option(switchText(current)) { BiliClient.prefs.v37DanmakuGroupMerge = !current }
         .show()
 }
+// 37.3: 立体声宽度
+internal fun PlayerActivity.showv37AudioStereoWidthDialog() {
+    val current = BiliClient.prefs.v37AudioStereoWidth
+    AppPopup.Builder(this)
+        .title("立体声宽度")
+        .option("0") { BiliClient.prefs.v37AudioStereoWidth = 0 }
+        .option("1") { BiliClient.prefs.v37AudioStereoWidth = 1 }
+        .option("2") { BiliClient.prefs.v37AudioStereoWidth = 2 }
+        .option("3") { BiliClient.prefs.v37AudioStereoWidth = 3 }
+        .option("5") { BiliClient.prefs.v37AudioStereoWidth = 5 }
+        .option("10") { BiliClient.prefs.v37AudioStereoWidth = 10 }
+        .show()
+}
+
 
 
 
