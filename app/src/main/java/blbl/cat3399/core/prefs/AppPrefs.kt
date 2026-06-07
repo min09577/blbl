@@ -2280,6 +2280,11 @@ class AppPrefs(context: Context) {
     var v40DanmakuMaxPerScreen: Int
         get() = prefs.getInt(KEY_V40_DANMAKU_MAX_PER_SCREEN, 0)
         set(value) = prefs.edit().putInt(KEY_V40_DANMAKU_MAX_PER_SCREEN, value).apply()
+    // v40.14: 字幕描边颜色
+    var v40SubtitleStrokeColor: Boolean
+        get() = prefs.getBoolean(KEY_V40_SUBTITLE_STROKE_COLOR, false)
+        set(value) = prefs.edit().putBoolean(KEY_V40_SUBTITLE_STROKE_COLOR, value).apply()
+
 
 
 
@@ -4499,6 +4504,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V40_PLAYER_OSD_TIMEOUT = "v40_player_osd_timeout"
         private const val KEY_V40_VIDEO_DYNAMIC_TONE_MAP = "v40_video_dynamic_tone_map"
         private const val KEY_V40_DANMAKU_MAX_PER_SCREEN = "v40_danmaku_max_per_screen"
+        private const val KEY_V40_SUBTITLE_STROKE_COLOR = "v40_subtitle_stroke_color"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
