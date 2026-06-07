@@ -9932,4 +9932,19 @@ internal fun PlayerActivity.showv37PlaybackBufferStrategyDialog() {
         .show()
 }
 
+
+// 37.9: 弹幕等级屏蔽
+internal fun PlayerActivity.showv37DanmakuLevelShieldDialog() {
+    val current = BiliClient.prefs.v37DanmakuLevelShield
+    AppPopup.Builder(this)
+        .title("弹幕等级屏蔽")
+        .option("0") { BiliClient.prefs.v37DanmakuLevelShield = 0 }
+        .option("1") { BiliClient.prefs.v37DanmakuLevelShield = 1 }
+        .option("2") { BiliClient.prefs.v37DanmakuLevelShield = 2 }
+        .option("3") { BiliClient.prefs.v37DanmakuLevelShield = 3 }
+        .option("5") { BiliClient.prefs.v37DanmakuLevelShield = 5 }
+        .option("10") { BiliClient.prefs.v37DanmakuLevelShield = 10 }
+        .show()
+}
+
 }
