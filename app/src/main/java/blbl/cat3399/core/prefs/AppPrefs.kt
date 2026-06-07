@@ -1988,6 +1988,11 @@ class AppPrefs(context: Context) {
     var v35PlaylistSmartShuffle: Boolean
         get() = prefs.getBoolean(KEY_V35_PLAYLIST_SMART_SHUFFLE, false)
         set(value) = prefs.edit().putBoolean(KEY_V35_PLAYLIST_SMART_SHUFFLE, value).apply()
+    // v36.1: 画面适配模式
+    var v36VideoAspectFitMode: Int
+        get() = prefs.getInt(KEY_V36_VIDEO_ASPECT_FIT_MODE, 0)
+        set(value) = prefs.edit().putInt(KEY_V36_VIDEO_ASPECT_FIT_MODE, value).apply()
+
 
 
 
@@ -4061,6 +4066,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V35_DANMAKU_ANIMATION_SPEED = "v35_danmaku_animation_speed"
         private const val KEY_V35_SUBTITLE_LINE_SPACING = "v35_subtitle_line_spacing"
         private const val KEY_V35_PLAYLIST_SMART_SHUFFLE = "v35_playlist_smart_shuffle"
+        private const val KEY_V36_VIDEO_ASPECT_FIT_MODE = "v36_video_aspect_fit_mode"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
