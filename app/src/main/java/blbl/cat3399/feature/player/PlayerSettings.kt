@@ -9037,4 +9037,14 @@ internal fun PlayerActivity.showv32AudioVirtualSurroundToggle() {
         .show()
 }
 
+
+// 32.12: 弹幕气泡样式
+internal fun PlayerActivity.showv32DanmakuBubbleStyleToggle() {
+    val current = BiliClient.prefs.v32DanmakuBubbleStyle
+    AppPopup.Builder(this)
+        .title("弹幕气泡样式")
+        .option(switchText(current)) { BiliClient.prefs.v32DanmakuBubbleStyle = !current }
+        .show()
+}
+
 }
