@@ -2280,6 +2280,11 @@ class AppPrefs(context: Context) {
     var v38VideoGammaCurve: Int
         get() = prefs.getInt(KEY_V38_VIDEO_GAMMA_CURVE, 0)
         set(value) = prefs.edit().putInt(KEY_V38_VIDEO_GAMMA_CURVE, value).apply()
+    // v39.7: 视频详细信息栏
+    var v39VideoDetailInfoBar: Boolean
+        get() = prefs.getBoolean(KEY_V39_VIDEO_DETAIL_INFO_BAR, false)
+        set(value) = prefs.edit().putBoolean(KEY_V39_VIDEO_DETAIL_INFO_BAR, value).apply()
+
     // v39.6: 字幕动画类型
     var v39SubtitleAnimationType: Int
         get() = prefs.getInt(KEY_V39_SUBTITLE_ANIMATION_TYPE, 0)
@@ -3881,3 +3886,4 @@ class AppPrefs(context: Context) {
         private const val KEY_V39_PLAYER_AUTO_BRIGHTNESS_RANGE = "v39_player_auto_brightness_range"
         private const val KEY_V39_DANMAKU_COMPACT_MODE = "v39_danmaku_compact_mode"
         private const val KEY_V39_SUBTITLE_ANIMATION_TYPE = "v39_subtitle_animation_type"
+        private const val KEY_V39_VIDEO_DETAIL_INFO_BAR = "v39_video_detail_info_bar"
