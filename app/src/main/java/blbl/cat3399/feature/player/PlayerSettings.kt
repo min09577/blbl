@@ -9828,4 +9828,14 @@ internal fun PlayerActivity.showv36SubtitleFontWeightCustomDialog() {
         .show()
 }
 
+
+// 36.15: 自动播放下一集
+internal fun PlayerActivity.showv36PlaylistAutoplayNextEpisodeToggle() {
+    val current = BiliClient.prefs.v36PlaylistAutoplayNextEpisode
+    AppPopup.Builder(this)
+        .title("自动播放下一集")
+        .option(switchText(current)) { BiliClient.prefs.v36PlaylistAutoplayNextEpisode = !current }
+        .show()
+}
+
 }
