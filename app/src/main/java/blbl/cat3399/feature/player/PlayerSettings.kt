@@ -9947,4 +9947,19 @@ internal fun PlayerActivity.showv37DanmakuLevelShieldDialog() {
         .show()
 }
 
+
+// 37.10: 混响预设
+internal fun PlayerActivity.showv37AudioReverbPresetDialog() {
+    val current = BiliClient.prefs.v37AudioReverbPreset
+    AppPopup.Builder(this)
+        .title("混响预设")
+        .option("0") { BiliClient.prefs.v37AudioReverbPreset = 0 }
+        .option("1") { BiliClient.prefs.v37AudioReverbPreset = 1 }
+        .option("2") { BiliClient.prefs.v37AudioReverbPreset = 2 }
+        .option("3") { BiliClient.prefs.v37AudioReverbPreset = 3 }
+        .option("5") { BiliClient.prefs.v37AudioReverbPreset = 5 }
+        .option("10") { BiliClient.prefs.v37AudioReverbPreset = 10 }
+        .show()
+}
+
 }
