@@ -1764,6 +1764,11 @@ class AppPrefs(context: Context) {
     var v32VideoZoomGesture: Boolean
         get() = prefs.getBoolean(KEY_V32_VIDEO_ZOOM_GESTURE, false)
         set(value) = prefs.edit().putBoolean(KEY_V32_VIDEO_ZOOM_GESTURE, value).apply()
+    // v32.5: 弹幕时间戳显示
+    var v32DanmakuTimestampDisplay: Boolean
+        get() = prefs.getBoolean(KEY_V32_DANMAKU_TIMESTAMP_DISPLAY, false)
+        set(value) = prefs.edit().putBoolean(KEY_V32_DANMAKU_TIMESTAMP_DISPLAY, value).apply()
+
 
 
 
@@ -3725,6 +3730,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V32_DANMAKU_RAIN_MODE = "v32_danmaku_rain_mode"
         private const val KEY_V32_AUDIO_CHANNEL_SWAP = "v32_audio_channel_swap"
         private const val KEY_V32_VIDEO_ZOOM_GESTURE = "v32_video_zoom_gesture"
+        private const val KEY_V32_DANMAKU_TIMESTAMP_DISPLAY = "v32_danmaku_timestamp_display"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
