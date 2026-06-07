@@ -10292,4 +10292,19 @@ internal fun PlayerActivity.showv39DanmakuCompactModeToggle() {
         .show()
 }
 
+
+// 39.6: 字幕动画类型
+internal fun PlayerActivity.showv39SubtitleAnimationTypeDialog() {
+    val current = BiliClient.prefs.v39SubtitleAnimationType
+    AppPopup.Builder(this)
+        .title("字幕动画类型")
+        .option("0") { BiliClient.prefs.v39SubtitleAnimationType = 0 }
+        .option("1") { BiliClient.prefs.v39SubtitleAnimationType = 1 }
+        .option("2") { BiliClient.prefs.v39SubtitleAnimationType = 2 }
+        .option("3") { BiliClient.prefs.v39SubtitleAnimationType = 3 }
+        .option("5") { BiliClient.prefs.v39SubtitleAnimationType = 5 }
+        .option("10") { BiliClient.prefs.v39SubtitleAnimationType = 10 }
+        .show()
+}
+
 }
