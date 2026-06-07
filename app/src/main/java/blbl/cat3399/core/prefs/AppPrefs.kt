@@ -1786,6 +1786,11 @@ class AppPrefs(context: Context) {
     var v32DanmakuTimestampDisplay: Boolean
         get() = prefs.getBoolean(KEY_V32_DANMAKU_TIMESTAMP_DISPLAY, false)
         set(value) = prefs.edit().putBoolean(KEY_V32_DANMAKU_TIMESTAMP_DISPLAY, value).apply()
+    // v32.6: 自动移除已播放项
+    var v32PlaylistRemovePlayed: Boolean
+        get() = prefs.getBoolean(KEY_V32_PLAYLIST_REMOVE_PLAYED, false)
+        set(value) = prefs.edit().putBoolean(KEY_V32_PLAYLIST_REMOVE_PLAYED, value).apply()
+
 
 
 
@@ -3758,6 +3763,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V32_AUDIO_CHANNEL_SWAP = "v32_audio_channel_swap"
         private const val KEY_V32_VIDEO_ZOOM_GESTURE = "v32_video_zoom_gesture"
         private const val KEY_V32_DANMAKU_TIMESTAMP_DISPLAY = "v32_danmaku_timestamp_display"
+        private const val KEY_V32_PLAYLIST_REMOVE_PLAYED = "v32_playlist_remove_played"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
