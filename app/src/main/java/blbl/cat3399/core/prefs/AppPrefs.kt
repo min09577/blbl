@@ -1762,6 +1762,11 @@ class AppPrefs(context: Context) {
     var v31DanmakuMergeOverlap: Boolean
         get() = prefs.getBoolean(KEY_V31_DANMAKU_MERGE_OVERLAP, false)
         set(value) = prefs.edit().putBoolean(KEY_V31_DANMAKU_MERGE_OVERLAP, value).apply()
+    // v32.15: 弹幕表情过滤
+    var v32DanmakuEmojiFilter: Boolean
+        get() = prefs.getBoolean(KEY_V32_DANMAKU_EMOJI_FILTER, false)
+        set(value) = prefs.edit().putBoolean(KEY_V32_DANMAKU_EMOJI_FILTER, value).apply()
+
     // v32.14: 视频裁剪预设
     var v32VideoCropPreset: Int
         get() = prefs.getInt(KEY_V32_VIDEO_CROP_PRESET, 0)
@@ -3108,6 +3113,7 @@ class AppPrefs(context: Context) {
         const val PLAYER_PLAYBACK_MODE_EXIT = "exit"
         const val PLAYER_PLAYBACK_MODE_PAGE_LIST = "page_list"
         const val PLAYER_PLAYBACK_MODE_PARTS_LIST = "parts_list"
+        private const val KEY_V32_DANMAKU_EMOJI_FILTER = "v32_danmaku_emoji_filter"
         const val PLAYER_PLAYBACK_MODE_PARTS_LIST_THEN_RECOMMEND = "parts_list_then_recommend"
         const val PLAYER_PLAYBACK_MODE_RECOMMEND = "recommend"
         // v7.4: 随机播放
