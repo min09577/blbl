@@ -1451,6 +1451,20 @@ internal fun PlayerActivity.showv37AudioReverbPresetDialog() {
         .option("10") { BiliClient.prefs.v37AudioReverbPreset = 10 }
         .show()
 }
+// 37.11: 长按倍速值
+internal fun PlayerActivity.showv37PlayerLongPressSpeedDialog() {
+    val current = BiliClient.prefs.v37PlayerLongPressSpeed
+    AppPopup.Builder(this)
+        .title("长按倍速值")
+        .option("0") { BiliClient.prefs.v37PlayerLongPressSpeed = 0 }
+        .option("1") { BiliClient.prefs.v37PlayerLongPressSpeed = 1 }
+        .option("2") { BiliClient.prefs.v37PlayerLongPressSpeed = 2 }
+        .option("3") { BiliClient.prefs.v37PlayerLongPressSpeed = 3 }
+        .option("5") { BiliClient.prefs.v37PlayerLongPressSpeed = 5 }
+        .option("10") { BiliClient.prefs.v37PlayerLongPressSpeed = 10 }
+        .show()
+}
+
 
 
 

@@ -2132,6 +2132,11 @@ class AppPrefs(context: Context) {
     var v36VideoAspectFitMode: Int
         get() = prefs.getInt(KEY_V36_VIDEO_ASPECT_FIT_MODE, 0)
         set(value) = prefs.edit().putInt(KEY_V36_VIDEO_ASPECT_FIT_MODE, value).apply()
+    // v37.11: 长按倍速值
+    var v37PlayerLongPressSpeed: Int
+        get() = prefs.getInt(KEY_V37_PLAYER_LONG_PRESS_SPEED, 0)
+        set(value) = prefs.edit().putInt(KEY_V37_PLAYER_LONG_PRESS_SPEED, value).apply()
+
     // v37.10: 混响预设
     var v37AudioReverbPreset: Int
         get() = prefs.getInt(KEY_V37_AUDIO_REVERB_PRESET, 0)
@@ -3717,3 +3722,4 @@ class AppPrefs(context: Context) {
         private const val KEY_V37_PLAYBACK_BUFFER_STRATEGY = "v37_playback_buffer_strategy"
         private const val KEY_V37_DANMAKU_LEVEL_SHIELD = "v37_danmaku_level_shield"
         private const val KEY_V37_AUDIO_REVERB_PRESET = "v37_audio_reverb_preset"
+        private const val KEY_V37_PLAYER_LONG_PRESS_SPEED = "v37_player_long_press_speed"
