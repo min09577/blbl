@@ -1984,6 +1984,11 @@ class AppPrefs(context: Context) {
     var v34DanmakuMaxDisplaySec: Int
         get() = prefs.getInt(KEY_V34_DANMAKU_MAX_DISPLAY_SEC, 0)
         set(value) = prefs.edit().putInt(KEY_V34_DANMAKU_MAX_DISPLAY_SEC, value).apply()
+    // v35.9: 弹幕渐变色
+    var v35DanmakuGradientColor: Boolean
+        get() = prefs.getBoolean(KEY_V35_DANMAKU_GRADIENT_COLOR, false)
+        set(value) = prefs.edit().putBoolean(KEY_V35_DANMAKU_GRADIENT_COLOR, value).apply()
+
     // v35.8: 仅WiFi预加载
     var v35PlaybackPreloadOnWifi: Boolean
         get() = prefs.getBoolean(KEY_V35_PLAYBACK_PRELOAD_ON_WIFI, false)
@@ -3504,6 +3509,7 @@ class AppPrefs(context: Context) {
         val androidId =
             runCatching {
                 Settings.Secure.getString(appContext.contentResolver, Settings.Secure.ANDROID_ID)
+        private const val KEY_V35_DANMAKU_GRADIENT_COLOR = "v35_danmaku_gradient_color"
             }.getOrNull()
                 ?.trim()
                 ?.takeIf { it.isNotBlank() }

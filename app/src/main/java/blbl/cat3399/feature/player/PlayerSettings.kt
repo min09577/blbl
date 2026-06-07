@@ -1105,6 +1105,15 @@ internal fun PlayerActivity.showv35PlaybackPreloadOnWifiToggle() {
         .option(switchText(current)) { BiliClient.prefs.v35PlaybackPreloadOnWifi = !current }
         .show()
 }
+// 35.9: 弹幕渐变色
+internal fun PlayerActivity.showv35DanmakuGradientColorToggle() {
+    val current = BiliClient.prefs.v35DanmakuGradientColor
+    AppPopup.Builder(this)
+        .title("弹幕渐变色")
+        .option(switchText(current)) { BiliClient.prefs.v35DanmakuGradientColor = !current }
+        .show()
+}
+
 
 
 
