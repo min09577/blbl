@@ -1836,6 +1836,11 @@ class AppPrefs(context: Context) {
     var v32ScreenOffTimer: Int
         get() = prefs.getInt(KEY_V32_SCREEN_OFF_TIMER, 0)
         set(value) = prefs.edit().putInt(KEY_V32_SCREEN_OFF_TIMER, value).apply()
+    // v33.11: 进度条章节标记
+    var v33PlayerSeekBarChapter: Boolean
+        get() = prefs.getBoolean(KEY_V33_PLAYER_SEEK_BAR_CHAPTER, false)
+        set(value) = prefs.edit().putBoolean(KEY_V33_PLAYER_SEEK_BAR_CHAPTER, value).apply()
+
     // v33.10: 音频增益(dB)
     var v33AudioGainDb: Int
         get() = prefs.getInt(KEY_V33_AUDIO_GAIN_DB, 0)
@@ -3220,6 +3225,7 @@ class AppPrefs(context: Context) {
         const val PLAYER_OSD_BTN_ADVANCED = "advanced"
 
         val DEFAULT_PLAYER_OSD_BUTTONS: List<String> =
+        private const val KEY_V33_PLAYER_SEEK_BAR_CHAPTER = "v33_player_seek_bar_chapter"
             listOf(
                 PLAYER_OSD_BTN_PLAY_PAUSE,
                 PLAYER_OSD_BTN_NEXT,
