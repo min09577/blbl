@@ -10362,4 +10362,19 @@ internal fun PlayerActivity.showv39PlayerProgressToastToggle() {
         .show()
 }
 
+
+// 39.12: 画面平滑等级
+internal fun PlayerActivity.showv39VideoSmoothingLevelDialog() {
+    val current = BiliClient.prefs.v39VideoSmoothingLevel
+    AppPopup.Builder(this)
+        .title("画面平滑等级")
+        .option("0") { BiliClient.prefs.v39VideoSmoothingLevel = 0 }
+        .option("1") { BiliClient.prefs.v39VideoSmoothingLevel = 1 }
+        .option("2") { BiliClient.prefs.v39VideoSmoothingLevel = 2 }
+        .option("3") { BiliClient.prefs.v39VideoSmoothingLevel = 3 }
+        .option("5") { BiliClient.prefs.v39VideoSmoothingLevel = 5 }
+        .option("10") { BiliClient.prefs.v39VideoSmoothingLevel = 10 }
+        .show()
+}
+
 }
