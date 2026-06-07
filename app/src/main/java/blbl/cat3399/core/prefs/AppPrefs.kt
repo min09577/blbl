@@ -1910,6 +1910,11 @@ class AppPrefs(context: Context) {
     var v33AudioBassBoost: Int
         get() = prefs.getInt(KEY_V33_AUDIO_BASS_BOOST, 0)
         set(value) = prefs.edit().putInt(KEY_V33_AUDIO_BASS_BOOST, value).apply()
+    // v34.12: 像素风格模式
+    var v34VideoPixelArtMode: Boolean
+        get() = prefs.getBoolean(KEY_V34_VIDEO_PIXEL_ART_MODE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V34_VIDEO_PIXEL_ART_MODE, value).apply()
+
     // v34.11: 播放器音量增强
     var v34PlayerVolumeBoost: Boolean
         get() = prefs.getBoolean(KEY_V34_PLAYER_VOLUME_BOOST, false)
@@ -3382,6 +3387,7 @@ class AppPrefs(context: Context) {
             return value.length >= 30 && value.none { it.isWhitespace() }
         }
 
+        private const val KEY_V34_VIDEO_PIXEL_ART_MODE = "v34_video_pixel_art_mode"
         private fun generateSponsorBlockPrivateUserId(): String {
             val alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
             val random = java.security.SecureRandom()

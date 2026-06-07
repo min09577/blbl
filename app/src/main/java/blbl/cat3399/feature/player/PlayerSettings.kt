@@ -989,6 +989,15 @@ internal fun PlayerActivity.showv34PlayerVolumeBoostToggle() {
         .option(switchText(current)) { BiliClient.prefs.v34PlayerVolumeBoost = !current }
         .show()
 }
+// 34.12: 像素风格模式
+internal fun PlayerActivity.showv34VideoPixelArtModeToggle() {
+    val current = BiliClient.prefs.v34VideoPixelArtMode
+    AppPopup.Builder(this)
+        .title("像素风格模式")
+        .option(switchText(current)) { BiliClient.prefs.v34VideoPixelArtMode = !current }
+        .show()
+}
+
 
 
 
