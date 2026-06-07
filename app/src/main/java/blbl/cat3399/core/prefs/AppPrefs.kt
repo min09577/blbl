@@ -2038,6 +2038,11 @@ class AppPrefs(context: Context) {
     var v36PlaybackSpeedPitchCorrect: Boolean
         get() = prefs.getBoolean(KEY_V36_PLAYBACK_SPEED_PITCH_CORRECT, false)
         set(value) = prefs.edit().putBoolean(KEY_V36_PLAYBACK_SPEED_PITCH_CORRECT, value).apply()
+    // v36.9: 弹幕长度上限
+    var v36DanmakuBlockLength: Int
+        get() = prefs.getInt(KEY_V36_DANMAKU_BLOCK_LENGTH, 0)
+        set(value) = prefs.edit().putInt(KEY_V36_DANMAKU_BLOCK_LENGTH, value).apply()
+
 
 
 
@@ -4136,6 +4141,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V36_SUBTITLE_EDGE_BLUR = "v36_subtitle_edge_blur"
         private const val KEY_V36_VIDEO_COLOR_LUT_PRESET = "v36_video_color_lut_preset"
         private const val KEY_V36_PLAYBACK_SPEED_PITCH_CORRECT = "v36_playback_speed_pitch_correct"
+        private const val KEY_V36_DANMAKU_BLOCK_LENGTH = "v36_danmaku_block_length"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
