@@ -9693,4 +9693,14 @@ internal fun PlayerActivity.showv36PlayerSkipOutroSecDialog() {
         .show()
 }
 
+
+// 36.5: 弹幕自动缩放
+internal fun PlayerActivity.showv36DanmakuAutoScaleToggle() {
+    val current = BiliClient.prefs.v36DanmakuAutoScale
+    AppPopup.Builder(this)
+        .title("弹幕自动缩放")
+        .option(switchText(current)) { BiliClient.prefs.v36DanmakuAutoScale = !current }
+        .show()
+}
+
 }
