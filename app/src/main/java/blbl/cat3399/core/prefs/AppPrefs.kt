@@ -1910,6 +1910,11 @@ class AppPrefs(context: Context) {
     var v33AudioBassBoost: Int
         get() = prefs.getInt(KEY_V33_AUDIO_BASS_BOOST, 0)
         set(value) = prefs.edit().putInt(KEY_V33_AUDIO_BASS_BOOST, value).apply()
+    // v34.11: 播放器音量增强
+    var v34PlayerVolumeBoost: Boolean
+        get() = prefs.getBoolean(KEY_V34_PLAYER_VOLUME_BOOST, false)
+        set(value) = prefs.edit().putBoolean(KEY_V34_PLAYER_VOLUME_BOOST, value).apply()
+
     // v34.10: 均衡器预设
     var v34AudioEqPreset: Int
         get() = prefs.getInt(KEY_V34_AUDIO_EQ_PRESET, 0)
@@ -3372,6 +3377,7 @@ class AppPrefs(context: Context) {
         }
 
         private fun isValidSponsorBlockPrivateUserId(text: String): Boolean {
+        private const val KEY_V34_PLAYER_VOLUME_BOOST = "v34_player_volume_boost"
             val value = text.trim()
             return value.length >= 30 && value.none { it.isWhitespace() }
         }

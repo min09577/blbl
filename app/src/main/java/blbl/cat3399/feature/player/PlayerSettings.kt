@@ -981,6 +981,15 @@ internal fun PlayerActivity.showv34AudioEqPresetDialog() {
         .option("10") { BiliClient.prefs.v34AudioEqPreset = 10 }
         .show()
 }
+// 34.11: 播放器音量增强
+internal fun PlayerActivity.showv34PlayerVolumeBoostToggle() {
+    val current = BiliClient.prefs.v34PlayerVolumeBoost
+    AppPopup.Builder(this)
+        .title("播放器音量增强")
+        .option(switchText(current)) { BiliClient.prefs.v34PlayerVolumeBoost = !current }
+        .show()
+}
+
 
 
 
