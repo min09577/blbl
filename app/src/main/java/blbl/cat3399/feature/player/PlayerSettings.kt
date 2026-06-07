@@ -9598,4 +9598,19 @@ internal fun PlayerActivity.showv35VideoNoiseReductionDialog() {
         .show()
 }
 
+
+// 35.13: 弹幕动画速度
+internal fun PlayerActivity.showv35DanmakuAnimationSpeedDialog() {
+    val current = BiliClient.prefs.v35DanmakuAnimationSpeed
+    AppPopup.Builder(this)
+        .title("弹幕动画速度")
+        .option("0") { BiliClient.prefs.v35DanmakuAnimationSpeed = 0 }
+        .option("1") { BiliClient.prefs.v35DanmakuAnimationSpeed = 1 }
+        .option("2") { BiliClient.prefs.v35DanmakuAnimationSpeed = 2 }
+        .option("3") { BiliClient.prefs.v35DanmakuAnimationSpeed = 3 }
+        .option("5") { BiliClient.prefs.v35DanmakuAnimationSpeed = 5 }
+        .option("10") { BiliClient.prefs.v35DanmakuAnimationSpeed = 10 }
+        .show()
+}
+
 }
