@@ -1762,6 +1762,11 @@ class AppPrefs(context: Context) {
     var v31DanmakuMergeOverlap: Boolean
         get() = prefs.getBoolean(KEY_V31_DANMAKU_MERGE_OVERLAP, false)
         set(value) = prefs.edit().putBoolean(KEY_V31_DANMAKU_MERGE_OVERLAP, value).apply()
+    // v32.13: 播放器锁定超时(秒)
+    var v32PlayerLockTimeout: Int
+        get() = prefs.getInt(KEY_V32_PLAYER_LOCK_TIMEOUT, 0)
+        set(value) = prefs.edit().putInt(KEY_V32_PLAYER_LOCK_TIMEOUT, value).apply()
+
     // v32.12: 弹幕气泡样式
     var v32DanmakuBubbleStyle: Boolean
         get() = prefs.getBoolean(KEY_V32_DANMAKU_BUBBLE_STYLE, false)
@@ -3088,6 +3093,7 @@ class AppPrefs(context: Context) {
         const val PLAYER_AUDIO_BALANCE_MEDIUM = "medium"
         const val PLAYER_AUDIO_BALANCE_HIGH = "high"
 
+        private const val KEY_V32_PLAYER_LOCK_TIMEOUT = "v32_player_lock_timeout"
         const val API_SOURCE_WEB = "web"
         const val API_SOURCE_APP = "app"
 
