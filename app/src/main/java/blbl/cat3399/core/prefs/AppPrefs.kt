@@ -1688,6 +1688,11 @@ class AppPrefs(context: Context) {
     var v30DanmakuFontGlow: Int
         get() = prefs.getInt(KEY_V30_DANMAKU_FONT_GLOW, 0)
         set(value) = prefs.edit().putInt(KEY_V30_DANMAKU_FONT_GLOW, value.coerceIn(0, 100)).apply()
+    // v31.2: 静音片段自动跳过
+    var v31VideoFrameSkipSilence: Boolean
+        get() = prefs.getBoolean(KEY_V31_VIDEO_FRAME_SKIP_SILENCE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V31_VIDEO_FRAME_SKIP_SILENCE, value).apply()
+
     // v31.1: 弹幕重叠自动合并
     var v31DanmakuMergeOverlap: Boolean
         get() = prefs.getBoolean(KEY_V31_DANMAKU_MERGE_OVERLAP, false)
@@ -2826,6 +2831,7 @@ class AppPrefs(context: Context) {
                 KEY_WEB_REFRESH_TOKEN,
                 KEY_APP_AUTH_SESSION,
                 KEY_WEB_COOKIE_REFRESH_CHECKED_EPOCH_DAY,
+        private const val KEY_V31_VIDEO_FRAME_SKIP_SILENCE = "v31_video_frame_skip_silence"
                 KEY_BILI_TICKET_CHECKED_EPOCH_DAY,
                 KEY_GAIA_VGATE_V_VOUCHER,
                 KEY_GAIA_VGATE_V_VOUCHER_SAVED_AT_MS,
