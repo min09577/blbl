@@ -10078,4 +10078,14 @@ internal fun PlayerActivity.showv38PlayerSeekPreviewFrameToggle() {
         .show()
 }
 
+
+// 38.5: 弹幕自动换行
+internal fun PlayerActivity.showv38DanmakuWrapTextToggle() {
+    val current = BiliClient.prefs.v38DanmakuWrapText
+    AppPopup.Builder(this)
+        .title("弹幕自动换行")
+        .option(switchText(current)) { BiliClient.prefs.v38DanmakuWrapText = !current }
+        .show()
+}
+
 }
