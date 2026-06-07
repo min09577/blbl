@@ -1984,6 +1984,11 @@ class AppPrefs(context: Context) {
     var v34DanmakuMaxDisplaySec: Int
         get() = prefs.getInt(KEY_V34_DANMAKU_MAX_DISPLAY_SEC, 0)
         set(value) = prefs.edit().putInt(KEY_V34_DANMAKU_MAX_DISPLAY_SEC, value).apply()
+    // v35.7: 暗角效果强度
+    var v35VideoVignetteEffect: Int
+        get() = prefs.getInt(KEY_V35_VIDEO_VIGNETTE_EFFECT, 0)
+        set(value) = prefs.edit().putInt(KEY_V35_VIDEO_VIGNETTE_EFFECT, value).apply()
+
     // v35.6: 字幕顶部显示
     var v35SubtitlePositionTop: Boolean
         get() = prefs.getBoolean(KEY_V35_SUBTITLE_POSITION_TOP, false)
@@ -3484,6 +3489,7 @@ class AppPrefs(context: Context) {
             return when (value?.trim()?.lowercase()) {
                 API_SOURCE_APP -> API_SOURCE_APP
                 else -> API_SOURCE_WEB
+        private const val KEY_V35_VIDEO_VIGNETTE_EFFECT = "v35_video_vignette_effect"
             }
         }
     }

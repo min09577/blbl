@@ -1084,6 +1084,20 @@ internal fun PlayerActivity.showv35SubtitlePositionTopToggle() {
         .option(switchText(current)) { BiliClient.prefs.v35SubtitlePositionTop = !current }
         .show()
 }
+// 35.7: 暗角效果强度
+internal fun PlayerActivity.showv35VideoVignetteEffectDialog() {
+    val current = BiliClient.prefs.v35VideoVignetteEffect
+    AppPopup.Builder(this)
+        .title("暗角效果强度")
+        .option("0") { BiliClient.prefs.v35VideoVignetteEffect = 0 }
+        .option("1") { BiliClient.prefs.v35VideoVignetteEffect = 1 }
+        .option("2") { BiliClient.prefs.v35VideoVignetteEffect = 2 }
+        .option("3") { BiliClient.prefs.v35VideoVignetteEffect = 3 }
+        .option("5") { BiliClient.prefs.v35VideoVignetteEffect = 5 }
+        .option("10") { BiliClient.prefs.v35VideoVignetteEffect = 10 }
+        .show()
+}
+
 
 
 
