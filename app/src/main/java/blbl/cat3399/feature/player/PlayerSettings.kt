@@ -1879,6 +1879,15 @@ internal fun PlayerActivity.showv40SubtitleFontSerifToggle() {
         .option(switchText(current)) { BiliClient.prefs.v40SubtitleFontSerif = !current }
         .show()
 }
+// 40.7: AI超分辨率
+internal fun PlayerActivity.showv40VideoAiSuperResToggle() {
+    val current = BiliClient.prefs.v40VideoAiSuperRes
+    AppPopup.Builder(this)
+        .title("AI超分辨率")
+        .option(switchText(current)) { BiliClient.prefs.v40VideoAiSuperRes = !current }
+        .show()
+}
+
 
 
 
