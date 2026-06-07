@@ -10512,3 +10512,1767 @@ internal fun PlayerActivity.showV60CastAudioFadeModeCustomDialog() {
         AppToast.show(this, "Cast Audio Fade Mode Custom: $value")
     }
 }
+
+// ==================== v61-v70 New Unique Features ====================
+
+// v61.1: Video Edge Enhance Strength
+internal fun PlayerActivity.showV61VideoEdgeEnhanceStrengthDialog() {
+    val options = listOf(0, 25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v61VideoEdgeEnhanceStrength).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Video Edge Enhance Strength",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v61VideoEdgeEnhanceStrength = value
+        AppToast.show(this, "Video Edge Enhance Strength: $value")
+    }
+}
+
+// v61.2: Danmaku Collision Detection
+internal fun PlayerActivity.showV61DanmakuCollisionDetectionToggle() {
+    val enabled = !BiliClient.prefs.v61DanmakuCollisionDetection
+    BiliClient.prefs.v61DanmakuCollisionDetection = enabled
+    AppToast.show(this, "Danmaku Collision Detection: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v61.3: Subtitle Position Offset X
+internal fun PlayerActivity.showV61SubtitlePositionOffsetXDialog() {
+    val options = listOf(-100, -50, 0, 50, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v61SubtitlePositionOffsetX).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Position Offset X",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v61SubtitlePositionOffsetX = value
+        AppToast.show(this, "Subtitle Position Offset X: $value")
+    }
+}
+
+// v61.4: Gesture Fling Velocity
+internal fun PlayerActivity.showV61GestureFlingVelocityDialog() {
+    val options = listOf(25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v61GestureFlingVelocity).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Gesture Fling Velocity",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v61GestureFlingVelocity = value
+        AppToast.show(this, "Gesture Fling Velocity: $value")
+    }
+}
+
+// v61.5: Video Motion Compensation
+internal fun PlayerActivity.showV61VideoMotionCompensationToggle() {
+    val enabled = !BiliClient.prefs.v61VideoMotionCompensation
+    BiliClient.prefs.v61VideoMotionCompensation = enabled
+    AppToast.show(this, "Video Motion Compensation: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v61.6: Danmaku Animation Type
+internal fun PlayerActivity.showV61DanmakuAnimationTypeDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v61DanmakuAnimationType).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Animation Type",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v61DanmakuAnimationType = value
+        AppToast.show(this, "Danmaku Animation Type: $value")
+    }
+}
+
+// v61.7: Cast Video Buffer (ms)
+internal fun PlayerActivity.showV61CastVideoBufferMsDialog() {
+    val options = listOf(0, 500, 1000, 2000, 5000)
+    val currentIndex = options.indexOf(BiliClient.prefs.v61CastVideoBufferMs).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Cast Video Buffer (ms)",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v61CastVideoBufferMs = value
+        AppToast.show(this, "Cast Video Buffer (ms): $value")
+    }
+}
+
+// v61.8: Subtitle Font Size Min
+internal fun PlayerActivity.showV61SubtitleFontSizeMinDialog() {
+    val options = listOf(8, 10, 12, 14, 16)
+    val currentIndex = options.indexOf(BiliClient.prefs.v61SubtitleFontSizeMin).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Font Size Min",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v61SubtitleFontSizeMin = value
+        AppToast.show(this, "Subtitle Font Size Min: $value")
+    }
+}
+
+// v61.9: Video Adaptive Sharpness
+internal fun PlayerActivity.showV61VideoAdaptiveSharpnessToggle() {
+    val enabled = !BiliClient.prefs.v61VideoAdaptiveSharpness
+    BiliClient.prefs.v61VideoAdaptiveSharpness = enabled
+    AppToast.show(this, "Video Adaptive Sharpness: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v61.10: Danmaku Filter By Length
+internal fun PlayerActivity.showV61DanmakuFilterByLengthDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v61DanmakuFilterByLength).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Filter By Length",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v61DanmakuFilterByLength = value
+        AppToast.show(this, "Danmaku Filter By Length: $value")
+    }
+}
+
+// v61.11: Playlist Smart Filter
+internal fun PlayerActivity.showV61PlaylistSmartFilterToggle() {
+    val enabled = !BiliClient.prefs.v61PlaylistSmartFilter
+    BiliClient.prefs.v61PlaylistSmartFilter = enabled
+    AppToast.show(this, "Playlist Smart Filter: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v61.12: Gesture Swipe Curve
+internal fun PlayerActivity.showV61GestureSwipeCurveDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v61GestureSwipeCurve).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Gesture Swipe Curve",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v61GestureSwipeCurve = value
+        AppToast.show(this, "Gesture Swipe Curve: $value")
+    }
+}
+
+// v61.13: Video Color Balance RGB
+internal fun PlayerActivity.showV61VideoColorBalanceRGBDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v61VideoColorBalanceRGB).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Video Color Balance RGB",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v61VideoColorBalanceRGB = value
+        AppToast.show(this, "Video Color Balance RGB: $value")
+    }
+}
+
+// v61.14: Danmaku Font Size Auto Min
+internal fun PlayerActivity.showV61DanmakuFontSizeAutoMinDialog() {
+    val options = listOf(8, 10, 12, 14, 16)
+    val currentIndex = options.indexOf(BiliClient.prefs.v61DanmakuFontSizeAutoMin).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Font Size Auto Min",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v61DanmakuFontSizeAutoMin = value
+        AppToast.show(this, "Danmaku Font Size Auto Min: $value")
+    }
+}
+
+// v61.15: Cast Audio Buffer (ms)
+internal fun PlayerActivity.showV61CastAudioBufferMsDialog() {
+    val options = listOf(0, 100, 200, 500, 1000)
+    val currentIndex = options.indexOf(BiliClient.prefs.v61CastAudioBufferMs).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Cast Audio Buffer (ms)",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v61CastAudioBufferMs = value
+        AppToast.show(this, "Cast Audio Buffer (ms): $value")
+    }
+}
+
+// v62.1: Video Temporal Denoise
+internal fun PlayerActivity.showV62VideoTemporalDenoiseToggle() {
+    val enabled = !BiliClient.prefs.v62VideoTemporalDenoise
+    BiliClient.prefs.v62VideoTemporalDenoise = enabled
+    AppToast.show(this, "Video Temporal Denoise: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v62.2: Danmaku Scroll Speed Custom
+internal fun PlayerActivity.showV62DanmakuScrollSpeedCustomDialog() {
+    val options = listOf(50, 75, 100, 125, 150)
+    val currentIndex = options.indexOf(BiliClient.prefs.v62DanmakuScrollSpeedCustom).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Scroll Speed Custom",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v62DanmakuScrollSpeedCustom = value
+        AppToast.show(this, "Danmaku Scroll Speed Custom: $value")
+    }
+}
+
+// v62.3: Subtitle Position Offset Y
+internal fun PlayerActivity.showV62SubtitlePositionOffsetYDialog() {
+    val options = listOf(-100, -50, 0, 50, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v62SubtitlePositionOffsetY).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Position Offset Y",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v62SubtitlePositionOffsetY = value
+        AppToast.show(this, "Subtitle Position Offset Y: $value")
+    }
+}
+
+// v62.4: Gesture Tap Feedback
+internal fun PlayerActivity.showV62GestureTapFeedbackDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v62GestureTapFeedback).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Gesture Tap Feedback",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v62GestureTapFeedback = value
+        AppToast.show(this, "Gesture Tap Feedback: $value")
+    }
+}
+
+// v62.5: Video Adaptive Noise Gate
+internal fun PlayerActivity.showV62VideoAdaptiveNoiseGateToggle() {
+    val enabled = !BiliClient.prefs.v62VideoAdaptiveNoiseGate
+    BiliClient.prefs.v62VideoAdaptiveNoiseGate = enabled
+    AppToast.show(this, "Video Adaptive Noise Gate: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v62.6: Danmaku Merge Distance Custom
+internal fun PlayerActivity.showV62DanmakuMergeDistanceCustomDialog() {
+    val options = listOf(25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v62DanmakuMergeDistanceCustom).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Merge Distance Custom",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v62DanmakuMergeDistanceCustom = value
+        AppToast.show(this, "Danmaku Merge Distance Custom: $value")
+    }
+}
+
+// v62.7: Cast Video Decode Mode
+internal fun PlayerActivity.showV62CastVideoDecodeModeDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v62CastVideoDecodeMode).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Cast Video Decode Mode",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v62CastVideoDecodeMode = value
+        AppToast.show(this, "Cast Video Decode Mode: $value")
+    }
+}
+
+// v62.8: Subtitle Font Size Max
+internal fun PlayerActivity.showV62SubtitleFontSizeMaxDialog() {
+    val options = listOf(24, 32, 40, 48, 64)
+    val currentIndex = options.indexOf(BiliClient.prefs.v62SubtitleFontSizeMax).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Font Size Max",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v62SubtitleFontSizeMax = value
+        AppToast.show(this, "Subtitle Font Size Max: $value")
+    }
+}
+
+// v62.9: Video Adaptive Contrast Curve
+internal fun PlayerActivity.showV62VideoAdaptiveContrastCurveDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v62VideoAdaptiveContrastCurve).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Video Adaptive Contrast Curve",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v62VideoAdaptiveContrastCurve = value
+        AppToast.show(this, "Video Adaptive Contrast Curve: $value")
+    }
+}
+
+// v62.10: Danmaku Filter By Speed
+internal fun PlayerActivity.showV62DanmakuFilterBySpeedDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v62DanmakuFilterBySpeed).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Filter By Speed",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v62DanmakuFilterBySpeed = value
+        AppToast.show(this, "Danmaku Filter By Speed: $value")
+    }
+}
+
+// v62.11: Playlist Auto Group
+internal fun PlayerActivity.showV62PlaylistAutoGroupToggle() {
+    val enabled = !BiliClient.prefs.v62PlaylistAutoGroup
+    BiliClient.prefs.v62PlaylistAutoGroup = enabled
+    AppToast.show(this, "Playlist Auto Group: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v62.12: Gesture Swipe Acceleration
+internal fun PlayerActivity.showV62GestureSwipeAccelerationDialog() {
+    val options = listOf(25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v62GestureSwipeAcceleration).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Gesture Swipe Acceleration",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v62GestureSwipeAcceleration = value
+        AppToast.show(this, "Gesture Swipe Acceleration: $value")
+    }
+}
+
+// v62.13: Video Color Hue Rotate
+internal fun PlayerActivity.showV62VideoColorHueRotateDialog() {
+    val options = listOf(0, 90, 180, 270)
+    val currentIndex = options.indexOf(BiliClient.prefs.v62VideoColorHueRotate).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Video Color Hue Rotate",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v62VideoColorHueRotate = value
+        AppToast.show(this, "Video Color Hue Rotate: $value")
+    }
+}
+
+// v62.14: Danmaku Font Size Auto Max
+internal fun PlayerActivity.showV62DanmakuFontSizeAutoMaxDialog() {
+    val options = listOf(24, 28, 32, 36, 48)
+    val currentIndex = options.indexOf(BiliClient.prefs.v62DanmakuFontSizeAutoMax).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Font Size Auto Max",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v62DanmakuFontSizeAutoMax = value
+        AppToast.show(this, "Danmaku Font Size Auto Max: $value")
+    }
+}
+
+// v62.15: Cast Audio Decode Mode
+internal fun PlayerActivity.showV62CastAudioDecodeModeDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v62CastAudioDecodeMode).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Cast Audio Decode Mode",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v62CastAudioDecodeMode = value
+        AppToast.show(this, "Cast Audio Decode Mode: $value")
+    }
+}
+
+// v63.1: Video Spatial Denoise
+internal fun PlayerActivity.showV63VideoSpatialDenoiseToggle() {
+    val enabled = !BiliClient.prefs.v63VideoSpatialDenoise
+    BiliClient.prefs.v63VideoSpatialDenoise = enabled
+    AppToast.show(this, "Video Spatial Denoise: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v63.2: Danmaku Top Bottom Margin
+internal fun PlayerActivity.showV63DanmakuTopBottomMarginDialog() {
+    val options = listOf(0, 5, 10, 15, 20)
+    val currentIndex = options.indexOf(BiliClient.prefs.v63DanmakuTopBottomMargin).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Top Bottom Margin",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v63DanmakuTopBottomMargin = value
+        AppToast.show(this, "Danmaku Top Bottom Margin: $value")
+    }
+}
+
+// v63.3: Subtitle Animation Fade In
+internal fun PlayerActivity.showV63SubtitleAnimationFadeInToggle() {
+    val enabled = !BiliClient.prefs.v63SubtitleAnimationFadeIn
+    BiliClient.prefs.v63SubtitleAnimationFadeIn = enabled
+    AppToast.show(this, "Subtitle Animation Fade In: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v63.4: Gesture Long Press Vibration
+internal fun PlayerActivity.showV63GestureLongPressVibrationToggle() {
+    val enabled = !BiliClient.prefs.v63GestureLongPressVibration
+    BiliClient.prefs.v63GestureLongPressVibration = enabled
+    AppToast.show(this, "Gesture Long Press Vibration: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v63.5: Video Adaptive Saturation Curve
+internal fun PlayerActivity.showV63VideoAdaptiveSaturationCurveDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v63VideoAdaptiveSaturationCurve).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Video Adaptive Saturation Curve",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v63VideoAdaptiveSaturationCurve = value
+        AppToast.show(this, "Video Adaptive Saturation Curve: $value")
+    }
+}
+
+// v63.6: Danmaku Send Queue Size
+internal fun PlayerActivity.showV63DanmakuSendQueueSizeDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v63DanmakuSendQueueSize).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Send Queue Size",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v63DanmakuSendQueueSize = value
+        AppToast.show(this, "Danmaku Send Queue Size: $value")
+    }
+}
+
+// v63.7: Cast Video Render Mode
+internal fun PlayerActivity.showV63CastVideoRenderModeDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v63CastVideoRenderMode).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Cast Video Render Mode",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v63CastVideoRenderMode = value
+        AppToast.show(this, "Cast Video Render Mode: $value")
+    }
+}
+
+// v63.8: Subtitle BG Border Width
+internal fun PlayerActivity.showV63SubtitleBgBorderWidthDialog() {
+    val options = listOf(0, 1, 2, 3, 4)
+    val currentIndex = options.indexOf(BiliClient.prefs.v63SubtitleBgBorderWidth).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle BG Border Width",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v63SubtitleBgBorderWidth = value
+        AppToast.show(this, "Subtitle BG Border Width: $value")
+    }
+}
+
+// v63.9: Video Adaptive Gamma Curve
+internal fun PlayerActivity.showV63VideoAdaptiveGammaCurveDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v63VideoAdaptiveGammaCurve).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Video Adaptive Gamma Curve",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v63VideoAdaptiveGammaCurve = value
+        AppToast.show(this, "Video Adaptive Gamma Curve: $value")
+    }
+}
+
+// v63.10: Danmaku Filter By Type
+internal fun PlayerActivity.showV63DanmakuFilterByTypeDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v63DanmakuFilterByType).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Filter By Type",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v63DanmakuFilterByType = value
+        AppToast.show(this, "Danmaku Filter By Type: $value")
+    }
+}
+
+// v63.11: Playlist Auto Merge
+internal fun PlayerActivity.showV63PlaylistAutoMergeToggle() {
+    val enabled = !BiliClient.prefs.v63PlaylistAutoMerge
+    BiliClient.prefs.v63PlaylistAutoMerge = enabled
+    AppToast.show(this, "Playlist Auto Merge: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v63.12: Gesture Swipe Deceleration Custom
+internal fun PlayerActivity.showV63GestureSwipeDecelerationCustomDialog() {
+    val options = listOf(25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v63GestureSwipeDecelerationCustom).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Gesture Swipe Deceleration Custom",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v63GestureSwipeDecelerationCustom = value
+        AppToast.show(this, "Gesture Swipe Deceleration Custom: $value")
+    }
+}
+
+// v63.13: Video Color Invert
+internal fun PlayerActivity.showV63VideoColorInvertToggle() {
+    val enabled = !BiliClient.prefs.v63VideoColorInvert
+    BiliClient.prefs.v63VideoColorInvert = enabled
+    AppToast.show(this, "Video Color Invert: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v63.14: Danmaku History Sort Order
+internal fun PlayerActivity.showV63DanmakuHistorySortOrderDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v63DanmakuHistorySortOrder).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku History Sort Order",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v63DanmakuHistorySortOrder = value
+        AppToast.show(this, "Danmaku History Sort Order: $value")
+    }
+}
+
+// v63.15: Cast Audio Render Mode
+internal fun PlayerActivity.showV63CastAudioRenderModeDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v63CastAudioRenderMode).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Cast Audio Render Mode",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v63CastAudioRenderMode = value
+        AppToast.show(this, "Cast Audio Render Mode: $value")
+    }
+}
+
+// v64.1: Video Adaptive Edge Preserve
+internal fun PlayerActivity.showV64VideoAdaptiveEdgePreserveToggle() {
+    val enabled = !BiliClient.prefs.v64VideoAdaptiveEdgePreserve
+    BiliClient.prefs.v64VideoAdaptiveEdgePreserve = enabled
+    AppToast.show(this, "Video Adaptive Edge Preserve: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v64.2: Danmaku Fixed Position
+internal fun PlayerActivity.showV64DanmakuFixedPositionDialog() {
+    val options = listOf(0, 1, 2, 3, 4)
+    val currentIndex = options.indexOf(BiliClient.prefs.v64DanmakuFixedPosition).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Fixed Position",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v64DanmakuFixedPosition = value
+        AppToast.show(this, "Danmaku Fixed Position: $value")
+    }
+}
+
+// v64.3: Subtitle Animation Fade Out
+internal fun PlayerActivity.showV64SubtitleAnimationFadeOutToggle() {
+    val enabled = !BiliClient.prefs.v64SubtitleAnimationFadeOut
+    BiliClient.prefs.v64SubtitleAnimationFadeOut = enabled
+    AppToast.show(this, "Subtitle Animation Fade Out: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v64.4: Gesture Multi Finger Gesture
+internal fun PlayerActivity.showV64GestureMultiFingerGestureDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v64GestureMultiFingerGesture).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Gesture Multi Finger Gesture",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v64GestureMultiFingerGesture = value
+        AppToast.show(this, "Gesture Multi Finger Gesture: $value")
+    }
+}
+
+// v64.5: Video Color Grayscale
+internal fun PlayerActivity.showV64VideoColorGrayscaleToggle() {
+    val enabled = !BiliClient.prefs.v64VideoColorGrayscale
+    BiliClient.prefs.v64VideoColorGrayscale = enabled
+    AppToast.show(this, "Video Color Grayscale: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v64.6: Danmaku Send Delay
+internal fun PlayerActivity.showV64DanmakuSendDelayDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v64DanmakuSendDelay).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Send Delay",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v64DanmakuSendDelay = value
+        AppToast.show(this, "Danmaku Send Delay: $value")
+    }
+}
+
+// v64.7: Cast Video Post Process
+internal fun PlayerActivity.showV64CastVideoPostProcessToggle() {
+    val enabled = !BiliClient.prefs.v64CastVideoPostProcess
+    BiliClient.prefs.v64CastVideoPostProcess = enabled
+    AppToast.show(this, "Cast Video Post Process: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v64.8: Subtitle BG Border Color
+internal fun PlayerActivity.showV64SubtitleBgBorderColorDialog() {
+    val options = listOf(0, 1, 2, 3, 4)
+    val currentIndex = options.indexOf(BiliClient.prefs.v64SubtitleBgBorderColor).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle BG Border Color",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v64SubtitleBgBorderColor = value
+        AppToast.show(this, "Subtitle BG Border Color: $value")
+    }
+}
+
+// v64.9: Video Adaptive Detail Curve
+internal fun PlayerActivity.showV64VideoAdaptiveDetailCurveDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v64VideoAdaptiveDetailCurve).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Video Adaptive Detail Curve",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v64VideoAdaptiveDetailCurve = value
+        AppToast.show(this, "Video Adaptive Detail Curve: $value")
+    }
+}
+
+// v64.10: Danmaku Filter By User Level
+internal fun PlayerActivity.showV64DanmakuFilterByUserLevelDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v64DanmakuFilterByUserLevel).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Filter By User Level",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v64DanmakuFilterByUserLevel = value
+        AppToast.show(this, "Danmaku Filter By User Level: $value")
+    }
+}
+
+// v64.11: Playlist Auto Split
+internal fun PlayerActivity.showV64PlaylistAutoSplitToggle() {
+    val enabled = !BiliClient.prefs.v64PlaylistAutoSplit
+    BiliClient.prefs.v64PlaylistAutoSplit = enabled
+    AppToast.show(this, "Playlist Auto Split: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v64.12: Gesture Swipe Friction
+internal fun PlayerActivity.showV64GestureSwipeFrictionDialog() {
+    val options = listOf(25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v64GestureSwipeFriction).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Gesture Swipe Friction",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v64GestureSwipeFriction = value
+        AppToast.show(this, "Gesture Swipe Friction: $value")
+    }
+}
+
+// v64.13: Video Color Sepia Strength
+internal fun PlayerActivity.showV64VideoColorSepiaStrengthDialog() {
+    val options = listOf(0, 25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v64VideoColorSepiaStrength).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Video Color Sepia Strength",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v64VideoColorSepiaStrength = value
+        AppToast.show(this, "Video Color Sepia Strength: $value")
+    }
+}
+
+// v64.14: Danmaku History Max Items
+internal fun PlayerActivity.showV64DanmakuHistoryMaxItemsDialog() {
+    val options = listOf(0, 1, 2, 3, 4)
+    val currentIndex = options.indexOf(BiliClient.prefs.v64DanmakuHistoryMaxItems).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku History Max Items",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v64DanmakuHistoryMaxItems = value
+        AppToast.show(this, "Danmaku History Max Items: $value")
+    }
+}
+
+// v64.15: Cast Audio Post Process
+internal fun PlayerActivity.showV64CastAudioPostProcessToggle() {
+    val enabled = !BiliClient.prefs.v64CastAudioPostProcess
+    BiliClient.prefs.v64CastAudioPostProcess = enabled
+    AppToast.show(this, "Cast Audio Post Process: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v65.1: Video Adaptive Motion Blur
+internal fun PlayerActivity.showV65VideoAdaptiveMotionBlurToggle() {
+    val enabled = !BiliClient.prefs.v65VideoAdaptiveMotionBlur
+    BiliClient.prefs.v65VideoAdaptiveMotionBlur = enabled
+    AppToast.show(this, "Video Adaptive Motion Blur: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v65.2: Danmaku Scroll Direction
+internal fun PlayerActivity.showV65DanmakuScrollDirectionDialog() {
+    val options = listOf(0, 1, 2)
+    val currentIndex = options.indexOf(BiliClient.prefs.v65DanmakuScrollDirection).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Scroll Direction",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v65DanmakuScrollDirection = value
+        AppToast.show(this, "Danmaku Scroll Direction: $value")
+    }
+}
+
+// v65.3: Subtitle Animation Slide
+internal fun PlayerActivity.showV65SubtitleAnimationSlideDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v65SubtitleAnimationSlide).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Animation Slide",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v65SubtitleAnimationSlide = value
+        AppToast.show(this, "Subtitle Animation Slide: $value")
+    }
+}
+
+// v65.4: Gesture Custom Gesture 1
+internal fun PlayerActivity.showV65GestureCustomGesture1Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v65GestureCustomGesture1).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Gesture Custom Gesture 1",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v65GestureCustomGesture1 = value
+        AppToast.show(this, "Gesture Custom Gesture 1: $value")
+    }
+}
+
+// v65.5: Video Color Posterize Level
+internal fun PlayerActivity.showV65VideoColorPosterizeLevelDialog() {
+    val options = listOf(0, 1, 2, 3, 4)
+    val currentIndex = options.indexOf(BiliClient.prefs.v65VideoColorPosterizeLevel).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Video Color Posterize Level",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v65VideoColorPosterizeLevel = value
+        AppToast.show(this, "Video Color Posterize Level: $value")
+    }
+}
+
+// v65.6: Danmaku Send Priority Level
+internal fun PlayerActivity.showV65DanmakuSendPriorityLevelDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v65DanmakuSendPriorityLevel).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Send Priority Level",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v65DanmakuSendPriorityLevel = value
+        AppToast.show(this, "Danmaku Send Priority Level: $value")
+    }
+}
+
+// v65.7: Cast Video HDR
+internal fun PlayerActivity.showV65CastVideoHDRToggle() {
+    val enabled = !BiliClient.prefs.v65CastVideoHDR
+    BiliClient.prefs.v65CastVideoHDR = enabled
+    AppToast.show(this, "Cast Video HDR: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v65.8: Subtitle BG Blur Strength
+internal fun PlayerActivity.showV65SubtitleBgBlurStrengthDialog() {
+    val options = listOf(0, 2, 4, 6, 8)
+    val currentIndex = options.indexOf(BiliClient.prefs.v65SubtitleBgBlurStrength).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle BG Blur Strength",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v65SubtitleBgBlurStrength = value
+        AppToast.show(this, "Subtitle BG Blur Strength: $value")
+    }
+}
+
+// v65.9: Video Adaptive Luma Curve
+internal fun PlayerActivity.showV65VideoAdaptiveLumaCurveDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v65VideoAdaptiveLumaCurve).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Video Adaptive Luma Curve",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v65VideoAdaptiveLumaCurve = value
+        AppToast.show(this, "Video Adaptive Luma Curve: $value")
+    }
+}
+
+// v65.10: Danmaku Filter By Badge
+internal fun PlayerActivity.showV65DanmakuFilterByBadgeToggle() {
+    val enabled = !BiliClient.prefs.v65DanmakuFilterByBadge
+    BiliClient.prefs.v65DanmakuFilterByBadge = enabled
+    AppToast.show(this, "Danmaku Filter By Badge: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v65.11: Playlist Auto Deduplicate
+internal fun PlayerActivity.showV65PlaylistAutoDeduplicateToggle() {
+    val enabled = !BiliClient.prefs.v65PlaylistAutoDeduplicate
+    BiliClient.prefs.v65PlaylistAutoDeduplicate = enabled
+    AppToast.show(this, "Playlist Auto Deduplicate: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v65.12: Gesture Swipe Sensitivity Custom
+internal fun PlayerActivity.showV65GestureSwipeSensitivityCustomDialog() {
+    val options = listOf(25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v65GestureSwipeSensitivityCustom).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Gesture Swipe Sensitivity Custom",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v65GestureSwipeSensitivityCustom = value
+        AppToast.show(this, "Gesture Swipe Sensitivity Custom: $value")
+    }
+}
+
+// v65.13: Video Color Solarize Strength
+internal fun PlayerActivity.showV65VideoColorSolarizeStrengthDialog() {
+    val options = listOf(0, 25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v65VideoColorSolarizeStrength).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Video Color Solarize Strength",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v65VideoColorSolarizeStrength = value
+        AppToast.show(this, "Video Color Solarize Strength: $value")
+    }
+}
+
+// v65.14: Danmaku History Auto Export
+internal fun PlayerActivity.showV65DanmakuHistoryAutoExportToggle() {
+    val enabled = !BiliClient.prefs.v65DanmakuHistoryAutoExport
+    BiliClient.prefs.v65DanmakuHistoryAutoExport = enabled
+    AppToast.show(this, "Danmaku History Auto Export: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v65.15: Cast Audio HDR
+internal fun PlayerActivity.showV65CastAudioHDRToggle() {
+    val enabled = !BiliClient.prefs.v65CastAudioHDR
+    BiliClient.prefs.v65CastAudioHDR = enabled
+    AppToast.show(this, "Cast Audio HDR: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v66.1: Video Adaptive Frame Blend
+internal fun PlayerActivity.showV66VideoAdaptiveFrameBlendToggle() {
+    val enabled = !BiliClient.prefs.v66VideoAdaptiveFrameBlend
+    BiliClient.prefs.v66VideoAdaptiveFrameBlend = enabled
+    AppToast.show(this, "Video Adaptive Frame Blend: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v66.2: Danmaku Top Margin
+internal fun PlayerActivity.showV66DanmakuTopMarginDialog() {
+    val options = listOf(0, 5, 10, 15, 20)
+    val currentIndex = options.indexOf(BiliClient.prefs.v66DanmakuTopMargin).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Top Margin",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v66DanmakuTopMargin = value
+        AppToast.show(this, "Danmaku Top Margin: $value")
+    }
+}
+
+// v66.3: Subtitle Animation Bounce
+internal fun PlayerActivity.showV66SubtitleAnimationBounceToggle() {
+    val enabled = !BiliClient.prefs.v66SubtitleAnimationBounce
+    BiliClient.prefs.v66SubtitleAnimationBounce = enabled
+    AppToast.show(this, "Subtitle Animation Bounce: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v66.4: Gesture Custom Gesture 2
+internal fun PlayerActivity.showV66GestureCustomGesture2Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v66GestureCustomGesture2).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Gesture Custom Gesture 2",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v66GestureCustomGesture2 = value
+        AppToast.show(this, "Gesture Custom Gesture 2: $value")
+    }
+}
+
+// v66.5: Video Color Vignette
+internal fun PlayerActivity.showV66VideoColorVignetteDialog() {
+    val options = listOf(0, 25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v66VideoColorVignette).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Video Color Vignette",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v66VideoColorVignette = value
+        AppToast.show(this, "Video Color Vignette: $value")
+    }
+}
+
+// v66.6: Danmaku Send Max Length Per Second
+internal fun PlayerActivity.showV66DanmakuSendMaxLengthPerSecondDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v66DanmakuSendMaxLengthPerSecond).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Send Max Length Per Second",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v66DanmakuSendMaxLengthPerSecond = value
+        AppToast.show(this, "Danmaku Send Max Length Per Second: $value")
+    }
+}
+
+// v66.7: Cast Video Dolby Vision
+internal fun PlayerActivity.showV66CastVideoDolbyVisionToggle() {
+    val enabled = !BiliClient.prefs.v66CastVideoDolbyVision
+    BiliClient.prefs.v66CastVideoDolbyVision = enabled
+    AppToast.show(this, "Cast Video Dolby Vision: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v66.8: Subtitle BG Border Radius
+internal fun PlayerActivity.showV66SubtitleBgBorderRadiusDialog() {
+    val options = listOf(0, 2, 4, 6, 8)
+    val currentIndex = options.indexOf(BiliClient.prefs.v66SubtitleBgBorderRadius).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle BG Border Radius",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v66SubtitleBgBorderRadius = value
+        AppToast.show(this, "Subtitle BG Border Radius: $value")
+    }
+}
+
+// v66.9: Video Adaptive Color Curve
+internal fun PlayerActivity.showV66VideoAdaptiveColorCurveDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v66VideoAdaptiveColorCurve).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Video Adaptive Color Curve",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v66VideoAdaptiveColorCurve = value
+        AppToast.show(this, "Video Adaptive Color Curve: $value")
+    }
+}
+
+// v66.10: Danmaku Filter By Medal
+internal fun PlayerActivity.showV66DanmakuFilterByMedalToggle() {
+    val enabled = !BiliClient.prefs.v66DanmakuFilterByMedal
+    BiliClient.prefs.v66DanmakuFilterByMedal = enabled
+    AppToast.show(this, "Danmaku Filter By Medal: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v66.11: Playlist Auto Shuffle On Start
+internal fun PlayerActivity.showV66PlaylistAutoShuffleOnStartToggle() {
+    val enabled = !BiliClient.prefs.v66PlaylistAutoShuffleOnStart
+    BiliClient.prefs.v66PlaylistAutoShuffleOnStart = enabled
+    AppToast.show(this, "Playlist Auto Shuffle On Start: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v66.12: Gesture Swipe Momentum
+internal fun PlayerActivity.showV66GestureSwipeMomentumDialog() {
+    val options = listOf(25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v66GestureSwipeMomentum).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Gesture Swipe Momentum",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v66GestureSwipeMomentum = value
+        AppToast.show(this, "Gesture Swipe Momentum: $value")
+    }
+}
+
+// v66.13: Video Color Duotone
+internal fun PlayerActivity.showV66VideoColorDuotoneDialog() {
+    val options = listOf(0, 1, 2, 3, 4)
+    val currentIndex = options.indexOf(BiliClient.prefs.v66VideoColorDuotone).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Video Color Duotone",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v66VideoColorDuotone = value
+        AppToast.show(this, "Video Color Duotone: $value")
+    }
+}
+
+// v66.14: Danmaku History Search Mode
+internal fun PlayerActivity.showV66DanmakuHistorySearchModeDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v66DanmakuHistorySearchMode).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku History Search Mode",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v66DanmakuHistorySearchMode = value
+        AppToast.show(this, "Danmaku History Search Mode: $value")
+    }
+}
+
+// v66.15: Cast Audio Dolby Atmos
+internal fun PlayerActivity.showV66CastAudioDolbyAtmosToggle() {
+    val enabled = !BiliClient.prefs.v66CastAudioDolbyAtmos
+    BiliClient.prefs.v66CastAudioDolbyAtmos = enabled
+    AppToast.show(this, "Cast Audio Dolby Atmos: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v67.1: Video Adaptive Temporal Blend
+internal fun PlayerActivity.showV67VideoAdaptiveTemporalBlendToggle() {
+    val enabled = !BiliClient.prefs.v67VideoAdaptiveTemporalBlend
+    BiliClient.prefs.v67VideoAdaptiveTemporalBlend = enabled
+    AppToast.show(this, "Video Adaptive Temporal Blend: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v67.2: Danmaku Bottom Margin
+internal fun PlayerActivity.showV67DanmakuBottomMarginDialog() {
+    val options = listOf(0, 5, 10, 15, 20)
+    val currentIndex = options.indexOf(BiliClient.prefs.v67DanmakuBottomMargin).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Bottom Margin",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v67DanmakuBottomMargin = value
+        AppToast.show(this, "Danmaku Bottom Margin: $value")
+    }
+}
+
+// v67.3: Subtitle Animation Zoom
+internal fun PlayerActivity.showV67SubtitleAnimationZoomToggle() {
+    val enabled = !BiliClient.prefs.v67SubtitleAnimationZoom
+    BiliClient.prefs.v67SubtitleAnimationZoom = enabled
+    AppToast.show(this, "Subtitle Animation Zoom: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v67.4: Gesture Custom Gesture 3
+internal fun PlayerActivity.showV67GestureCustomGesture3Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v67GestureCustomGesture3).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Gesture Custom Gesture 3",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v67GestureCustomGesture3 = value
+        AppToast.show(this, "Gesture Custom Gesture 3: $value")
+    }
+}
+
+// v67.5: Video Color Tilt Shift
+internal fun PlayerActivity.showV67VideoColorTiltShiftToggle() {
+    val enabled = !BiliClient.prefs.v67VideoColorTiltShift
+    BiliClient.prefs.v67VideoColorTiltShift = enabled
+    AppToast.show(this, "Video Color Tilt Shift: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v67.6: Danmaku Send Rate Per User
+internal fun PlayerActivity.showV67DanmakuSendRatePerUserDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v67DanmakuSendRatePerUser).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Send Rate Per User",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v67DanmakuSendRatePerUser = value
+        AppToast.show(this, "Danmaku Send Rate Per User: $value")
+    }
+}
+
+// v67.7: Cast Video 3D
+internal fun PlayerActivity.showV67CastVideo3DToggle() {
+    val enabled = !BiliClient.prefs.v67CastVideo3D
+    BiliClient.prefs.v67CastVideo3D = enabled
+    AppToast.show(this, "Cast Video 3D: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v67.8: Subtitle BG Gradient Direction
+internal fun PlayerActivity.showV67SubtitleBgGradientDirectionDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v67SubtitleBgGradientDirection).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle BG Gradient Direction",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v67SubtitleBgGradientDirection = value
+        AppToast.show(this, "Subtitle BG Gradient Direction: $value")
+    }
+}
+
+// v67.9: Video Adaptive Spatial Blend
+internal fun PlayerActivity.showV67VideoAdaptiveSpatialBlendToggle() {
+    val enabled = !BiliClient.prefs.v67VideoAdaptiveSpatialBlend
+    BiliClient.prefs.v67VideoAdaptiveSpatialBlend = enabled
+    AppToast.show(this, "Video Adaptive Spatial Blend: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v67.10: Danmaku Filter By Level
+internal fun PlayerActivity.showV67DanmakuFilterByLevelDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v67DanmakuFilterByLevel).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Filter By Level",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v67DanmakuFilterByLevel = value
+        AppToast.show(this, "Danmaku Filter By Level: $value")
+    }
+}
+
+// v67.11: Playlist Auto Repeat Mode
+internal fun PlayerActivity.showV67PlaylistAutoRepeatModeDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v67PlaylistAutoRepeatMode).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Playlist Auto Repeat Mode",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v67PlaylistAutoRepeatMode = value
+        AppToast.show(this, "Playlist Auto Repeat Mode: $value")
+    }
+}
+
+// v67.12: Gesture Swipe Bounce
+internal fun PlayerActivity.showV67GestureSwipeBounceDialog() {
+    val options = listOf(25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v67GestureSwipeBounce).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Gesture Swipe Bounce",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v67GestureSwipeBounce = value
+        AppToast.show(this, "Gesture Swipe Bounce: $value")
+    }
+}
+
+// v67.13: Video Color Cross Process
+internal fun PlayerActivity.showV67VideoColorCrossProcessToggle() {
+    val enabled = !BiliClient.prefs.v67VideoColorCrossProcess
+    BiliClient.prefs.v67VideoColorCrossProcess = enabled
+    AppToast.show(this, "Video Color Cross Process: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v67.14: Danmaku History Export Auto
+internal fun PlayerActivity.showV67DanmakuHistoryExportAutoToggle() {
+    val enabled = !BiliClient.prefs.v67DanmakuHistoryExportAuto
+    BiliClient.prefs.v67DanmakuHistoryExportAuto = enabled
+    AppToast.show(this, "Danmaku History Export Auto: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v67.15: Cast Audio Spatial
+internal fun PlayerActivity.showV67CastAudioSpatialToggle() {
+    val enabled = !BiliClient.prefs.v67CastAudioSpatial
+    BiliClient.prefs.v67CastAudioSpatial = enabled
+    AppToast.show(this, "Cast Audio Spatial: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v68.1: Video Adaptive Color Balance
+internal fun PlayerActivity.showV68VideoAdaptiveColorBalanceToggle() {
+    val enabled = !BiliClient.prefs.v68VideoAdaptiveColorBalance
+    BiliClient.prefs.v68VideoAdaptiveColorBalance = enabled
+    AppToast.show(this, "Video Adaptive Color Balance: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v68.2: Danmaku Left Right Margin
+internal fun PlayerActivity.showV68DanmakuLeftRightMarginDialog() {
+    val options = listOf(0, 5, 10, 15, 20)
+    val currentIndex = options.indexOf(BiliClient.prefs.v68DanmakuLeftRightMargin).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Left Right Margin",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v68DanmakuLeftRightMargin = value
+        AppToast.show(this, "Danmaku Left Right Margin: $value")
+    }
+}
+
+// v68.3: Subtitle Animation Rotate
+internal fun PlayerActivity.showV68SubtitleAnimationRotateToggle() {
+    val enabled = !BiliClient.prefs.v68SubtitleAnimationRotate
+    BiliClient.prefs.v68SubtitleAnimationRotate = enabled
+    AppToast.show(this, "Subtitle Animation Rotate: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v68.4: Gesture Custom Gesture 4
+internal fun PlayerActivity.showV68GestureCustomGesture4Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v68GestureCustomGesture4).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Gesture Custom Gesture 4",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v68GestureCustomGesture4 = value
+        AppToast.show(this, "Gesture Custom Gesture 4: $value")
+    }
+}
+
+// v68.5: Video Color Fisheye
+internal fun PlayerActivity.showV68VideoColorFisheyeDialog() {
+    val options = listOf(0, 25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v68VideoColorFisheye).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Video Color Fisheye",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v68VideoColorFisheye = value
+        AppToast.show(this, "Video Color Fisheye: $value")
+    }
+}
+
+// v68.6: Danmaku Send Max Length Per Minute
+internal fun PlayerActivity.showV68DanmakuSendMaxLengthPerMinuteDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v68DanmakuSendMaxLengthPerMinute).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Send Max Length Per Minute",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v68DanmakuSendMaxLengthPerMinute = value
+        AppToast.show(this, "Danmaku Send Max Length Per Minute: $value")
+    }
+}
+
+// v68.7: Cast Video Surround
+internal fun PlayerActivity.showV68CastVideoSurroundToggle() {
+    val enabled = !BiliClient.prefs.v68CastVideoSurround
+    BiliClient.prefs.v68CastVideoSurround = enabled
+    AppToast.show(this, "Cast Video Surround: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v68.8: Subtitle BG Gradient Color
+internal fun PlayerActivity.showV68SubtitleBgGradientColorDialog() {
+    val options = listOf(0, 1, 2, 3, 4)
+    val currentIndex = options.indexOf(BiliClient.prefs.v68SubtitleBgGradientColor).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle BG Gradient Color",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v68SubtitleBgGradientColor = value
+        AppToast.show(this, "Subtitle BG Gradient Color: $value")
+    }
+}
+
+// v68.9: Video Adaptive Noise Reduce
+internal fun PlayerActivity.showV68VideoAdaptiveNoiseReduceToggle() {
+    val enabled = !BiliClient.prefs.v68VideoAdaptiveNoiseReduce
+    BiliClient.prefs.v68VideoAdaptiveNoiseReduce = enabled
+    AppToast.show(this, "Video Adaptive Noise Reduce: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v68.10: Danmaku Filter By Title
+internal fun PlayerActivity.showV68DanmakuFilterByTitleToggle() {
+    val enabled = !BiliClient.prefs.v68DanmakuFilterByTitle
+    BiliClient.prefs.v68DanmakuFilterByTitle = enabled
+    AppToast.show(this, "Danmaku Filter By Title: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v68.11: Playlist Auto Next On End
+internal fun PlayerActivity.showV68PlaylistAutoNextOnEndToggle() {
+    val enabled = !BiliClient.prefs.v68PlaylistAutoNextOnEnd
+    BiliClient.prefs.v68PlaylistAutoNextOnEnd = enabled
+    AppToast.show(this, "Playlist Auto Next On End: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v68.12: Gesture Swipe Elastic
+internal fun PlayerActivity.showV68GestureSwipeElasticDialog() {
+    val options = listOf(25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v68GestureSwipeElastic).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Gesture Swipe Elastic",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v68GestureSwipeElastic = value
+        AppToast.show(this, "Gesture Swipe Elastic: $value")
+    }
+}
+
+// v68.13: Video Color Chromatic Aberration
+internal fun PlayerActivity.showV68VideoColorChromaticAberrationDialog() {
+    val options = listOf(0, 25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v68VideoColorChromaticAberration).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Video Color Chromatic Aberration",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v68VideoColorChromaticAberration = value
+        AppToast.show(this, "Video Color Chromatic Aberration: $value")
+    }
+}
+
+// v68.14: Danmaku History Import
+internal fun PlayerActivity.showV68DanmakuHistoryImportToggle() {
+    val enabled = !BiliClient.prefs.v68DanmakuHistoryImport
+    BiliClient.prefs.v68DanmakuHistoryImport = enabled
+    AppToast.show(this, "Danmaku History Import: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v68.15: Cast Audio Surround
+internal fun PlayerActivity.showV68CastAudioSurroundToggle() {
+    val enabled = !BiliClient.prefs.v68CastAudioSurround
+    BiliClient.prefs.v68CastAudioSurround = enabled
+    AppToast.show(this, "Cast Audio Surround: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v69.1: Video Adaptive Detail Enhance
+internal fun PlayerActivity.showV69VideoAdaptiveDetailEnhanceToggle() {
+    val enabled = !BiliClient.prefs.v69VideoAdaptiveDetailEnhance
+    BiliClient.prefs.v69VideoAdaptiveDetailEnhance = enabled
+    AppToast.show(this, "Video Adaptive Detail Enhance: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v69.2: Danmaku Line Spacing
+internal fun PlayerActivity.showV69DanmakuLineSpacingDialog() {
+    val options = listOf(80, 90, 100, 110, 120)
+    val currentIndex = options.indexOf(BiliClient.prefs.v69DanmakuLineSpacing).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Line Spacing",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v69DanmakuLineSpacing = value
+        AppToast.show(this, "Danmaku Line Spacing: $value")
+    }
+}
+
+// v69.3: Subtitle Animation Typewriter
+internal fun PlayerActivity.showV69SubtitleAnimationTypewriterToggle() {
+    val enabled = !BiliClient.prefs.v69SubtitleAnimationTypewriter
+    BiliClient.prefs.v69SubtitleAnimationTypewriter = enabled
+    AppToast.show(this, "Subtitle Animation Typewriter: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v69.4: Gesture Custom Action 5
+internal fun PlayerActivity.showV69GestureCustomAction5Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v69GestureCustomAction5).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Gesture Custom Action 5",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v69GestureCustomAction5 = value
+        AppToast.show(this, "Gesture Custom Action 5: $value")
+    }
+}
+
+// v69.5: Video Color Barrel Distortion
+internal fun PlayerActivity.showV69VideoColorBarrelDistortionDialog() {
+    val options = listOf(0, 25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v69VideoColorBarrelDistortion).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Video Color Barrel Distortion",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v69VideoColorBarrelDistortion = value
+        AppToast.show(this, "Video Color Barrel Distortion: $value")
+    }
+}
+
+// v69.6: Danmaku Send Max Length Total
+internal fun PlayerActivity.showV69DanmakuSendMaxLengthTotalDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v69DanmakuSendMaxLengthTotal).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Send Max Length Total",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v69DanmakuSendMaxLengthTotal = value
+        AppToast.show(this, "Danmaku Send Max Length Total: $value")
+    }
+}
+
+// v69.7: Cast Video Multi View
+internal fun PlayerActivity.showV69CastVideoMultiViewToggle() {
+    val enabled = !BiliClient.prefs.v69CastVideoMultiView
+    BiliClient.prefs.v69CastVideoMultiView = enabled
+    AppToast.show(this, "Cast Video Multi View: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v69.8: Subtitle BG Padding X
+internal fun PlayerActivity.showV69SubtitleBgPaddingXDialog() {
+    val options = listOf(0, 2, 4, 6, 8)
+    val currentIndex = options.indexOf(BiliClient.prefs.v69SubtitleBgPaddingX).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle BG Padding X",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v69SubtitleBgPaddingX = value
+        AppToast.show(this, "Subtitle BG Padding X: $value")
+    }
+}
+
+// v69.9: Video Adaptive Chroma Enhance
+internal fun PlayerActivity.showV69VideoAdaptiveChromaEnhanceToggle() {
+    val enabled = !BiliClient.prefs.v69VideoAdaptiveChromaEnhance
+    BiliClient.prefs.v69VideoAdaptiveChromaEnhance = enabled
+    AppToast.show(this, "Video Adaptive Chroma Enhance: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v69.10: Danmaku Filter By Content
+internal fun PlayerActivity.showV69DanmakuFilterByContentToggle() {
+    val enabled = !BiliClient.prefs.v69DanmakuFilterByContent
+    BiliClient.prefs.v69DanmakuFilterByContent = enabled
+    AppToast.show(this, "Danmaku Filter By Content: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v69.11: Playlist Auto Resume
+internal fun PlayerActivity.showV69PlaylistAutoResumeToggle() {
+    val enabled = !BiliClient.prefs.v69PlaylistAutoResume
+    BiliClient.prefs.v69PlaylistAutoResume = enabled
+    AppToast.show(this, "Playlist Auto Resume: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v69.12: Gesture Swipe Rubber Band
+internal fun PlayerActivity.showV69GestureSwipeRubberBandDialog() {
+    val options = listOf(25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v69GestureSwipeRubberBand).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Gesture Swipe Rubber Band",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v69GestureSwipeRubberBand = value
+        AppToast.show(this, "Gesture Swipe Rubber Band: $value")
+    }
+}
+
+// v69.13: Video Color Pincushion
+internal fun PlayerActivity.showV69VideoColorPincushionDialog() {
+    val options = listOf(0, 25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v69VideoColorPincushion).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Video Color Pincushion",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v69VideoColorPincushion = value
+        AppToast.show(this, "Video Color Pincushion: $value")
+    }
+}
+
+// v69.14: Danmaku History Clear
+internal fun PlayerActivity.showV69DanmakuHistoryClearToggle() {
+    val enabled = !BiliClient.prefs.v69DanmakuHistoryClear
+    BiliClient.prefs.v69DanmakuHistoryClear = enabled
+    AppToast.show(this, "Danmaku History Clear: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v69.15: Cast Audio Multi View
+internal fun PlayerActivity.showV69CastAudioMultiViewToggle() {
+    val enabled = !BiliClient.prefs.v69CastAudioMultiView
+    BiliClient.prefs.v69CastAudioMultiView = enabled
+    AppToast.show(this, "Cast Audio Multi View: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v70.1: Video Adaptive Luma Enhance
+internal fun PlayerActivity.showV70VideoAdaptiveLumaEnhanceToggle() {
+    val enabled = !BiliClient.prefs.v70VideoAdaptiveLumaEnhance
+    BiliClient.prefs.v70VideoAdaptiveLumaEnhance = enabled
+    AppToast.show(this, "Video Adaptive Luma Enhance: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v70.2: Danmaku Character Spacing
+internal fun PlayerActivity.showV70DanmakuCharacterSpacingDialog() {
+    val options = listOf(-2, -1, 0, 1, 2)
+    val currentIndex = options.indexOf(BiliClient.prefs.v70DanmakuCharacterSpacing).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Character Spacing",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v70DanmakuCharacterSpacing = value
+        AppToast.show(this, "Danmaku Character Spacing: $value")
+    }
+}
+
+// v70.3: Subtitle Animation Highlight
+internal fun PlayerActivity.showV70SubtitleAnimationHighlightToggle() {
+    val enabled = !BiliClient.prefs.v70SubtitleAnimationHighlight
+    BiliClient.prefs.v70SubtitleAnimationHighlight = enabled
+    AppToast.show(this, "Subtitle Animation Highlight: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v70.4: Gesture Custom Action 6
+internal fun PlayerActivity.showV70GestureCustomAction6Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v70GestureCustomAction6).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Gesture Custom Action 6",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v70GestureCustomAction6 = value
+        AppToast.show(this, "Gesture Custom Action 6: $value")
+    }
+}
+
+// v70.5: Video Color Wave Distortion
+internal fun PlayerActivity.showV70VideoColorWaveDistortionDialog() {
+    val options = listOf(0, 25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v70VideoColorWaveDistortion).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Video Color Wave Distortion",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v70VideoColorWaveDistortion = value
+        AppToast.show(this, "Video Color Wave Distortion: $value")
+    }
+}
+
+// v70.6: Danmaku Send Max Length VIP
+internal fun PlayerActivity.showV70DanmakuSendMaxLengthVIPDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v70DanmakuSendMaxLengthVIP).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Send Max Length VIP",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v70DanmakuSendMaxLengthVIP = value
+        AppToast.show(this, "Danmaku Send Max Length VIP: $value")
+    }
+}
+
+// v70.7: Cast Video Multi Screen
+internal fun PlayerActivity.showV70CastVideoMultiScreenToggle() {
+    val enabled = !BiliClient.prefs.v70CastVideoMultiScreen
+    BiliClient.prefs.v70CastVideoMultiScreen = enabled
+    AppToast.show(this, "Cast Video Multi Screen: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v70.8: Subtitle BG Padding Y
+internal fun PlayerActivity.showV70SubtitleBgPaddingYDialog() {
+    val options = listOf(0, 1, 2, 3, 4)
+    val currentIndex = options.indexOf(BiliClient.prefs.v70SubtitleBgPaddingY).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle BG Padding Y",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v70SubtitleBgPaddingY = value
+        AppToast.show(this, "Subtitle BG Padding Y: $value")
+    }
+}
+
+// v70.9: Video Adaptive Color Enhance Curve
+internal fun PlayerActivity.showV70VideoAdaptiveColorEnhanceCurveDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v70VideoAdaptiveColorEnhanceCurve).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Video Adaptive Color Enhance Curve",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v70VideoAdaptiveColorEnhanceCurve = value
+        AppToast.show(this, "Video Adaptive Color Enhance Curve: $value")
+    }
+}
+
+// v70.10: Danmaku Filter By Gift
+internal fun PlayerActivity.showV70DanmakuFilterByGiftToggle() {
+    val enabled = !BiliClient.prefs.v70DanmakuFilterByGift
+    BiliClient.prefs.v70DanmakuFilterByGift = enabled
+    AppToast.show(this, "Danmaku Filter By Gift: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v70.11: Playlist Auto Create
+internal fun PlayerActivity.showV70PlaylistAutoCreateToggle() {
+    val enabled = !BiliClient.prefs.v70PlaylistAutoCreate
+    BiliClient.prefs.v70PlaylistAutoCreate = enabled
+    AppToast.show(this, "Playlist Auto Create: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v70.12: Gesture Swipe Spring
+internal fun PlayerActivity.showV70GestureSwipeSpringDialog() {
+    val options = listOf(25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v70GestureSwipeSpring).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Gesture Swipe Spring",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v70GestureSwipeSpring = value
+        AppToast.show(this, "Gesture Swipe Spring: $value")
+    }
+}
+
+// v70.13: Video Color Glitch
+internal fun PlayerActivity.showV70VideoColorGlitchDialog() {
+    val options = listOf(0, 25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v70VideoColorGlitch).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Video Color Glitch",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v70VideoColorGlitch = value
+        AppToast.show(this, "Video Color Glitch: $value")
+    }
+}
+
+// v70.14: Danmaku History Stats
+internal fun PlayerActivity.showV70DanmakuHistoryStatsToggle() {
+    val enabled = !BiliClient.prefs.v70DanmakuHistoryStats
+    BiliClient.prefs.v70DanmakuHistoryStats = enabled
+    AppToast.show(this, "Danmaku History Stats: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v70.15: Cast Audio Multi Screen
+internal fun PlayerActivity.showV70CastAudioMultiScreenToggle() {
+    val enabled = !BiliClient.prefs.v70CastAudioMultiScreen
+    BiliClient.prefs.v70CastAudioMultiScreen = enabled
+    AppToast.show(this, "Cast Audio Multi Screen: ${if (enabled) "ON" else "OFF"}")
+}
