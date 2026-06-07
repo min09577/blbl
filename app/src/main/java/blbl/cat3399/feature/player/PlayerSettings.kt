@@ -1900,6 +1900,20 @@ internal fun PlayerActivity.showv40PlaybackCacheSegmentDialog() {
         .option("10") { BiliClient.prefs.v40PlaybackCacheSegment = 10 }
         .show()
 }
+// 40.9: 弹幕淡入时长(ms)
+internal fun PlayerActivity.showv40DanmakuFadeInDurationDialog() {
+    val current = BiliClient.prefs.v40DanmakuFadeInDuration
+    AppPopup.Builder(this)
+        .title("弹幕淡入时长(ms)")
+        .option("0") { BiliClient.prefs.v40DanmakuFadeInDuration = 0 }
+        .option("1") { BiliClient.prefs.v40DanmakuFadeInDuration = 1 }
+        .option("2") { BiliClient.prefs.v40DanmakuFadeInDuration = 2 }
+        .option("3") { BiliClient.prefs.v40DanmakuFadeInDuration = 3 }
+        .option("5") { BiliClient.prefs.v40DanmakuFadeInDuration = 5 }
+        .option("10") { BiliClient.prefs.v40DanmakuFadeInDuration = 10 }
+        .show()
+}
+
 
 
 
