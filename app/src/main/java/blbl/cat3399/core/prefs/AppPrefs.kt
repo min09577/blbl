@@ -2302,6 +2302,11 @@ class AppPrefs(context: Context) {
     var v40SubtitleStrokeColor: Boolean
         get() = prefs.getBoolean(KEY_V40_SUBTITLE_STROKE_COLOR, false)
         set(value) = prefs.edit().putBoolean(KEY_V40_SUBTITLE_STROKE_COLOR, value).apply()
+    // v40.15: 自动去重
+    var v40PlaylistAutoRemoveDuplicated: Boolean
+        get() = prefs.getBoolean(KEY_V40_PLAYLIST_AUTO_REMOVE_DUPLICATED, false)
+        set(value) = prefs.edit().putBoolean(KEY_V40_PLAYLIST_AUTO_REMOVE_DUPLICATED, value).apply()
+
 
 
 
@@ -4532,6 +4537,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V40_VIDEO_DYNAMIC_TONE_MAP = "v40_video_dynamic_tone_map"
         private const val KEY_V40_DANMAKU_MAX_PER_SCREEN = "v40_danmaku_max_per_screen"
         private const val KEY_V40_SUBTITLE_STROKE_COLOR = "v40_subtitle_stroke_color"
+        private const val KEY_V40_PLAYLIST_AUTO_REMOVE_DUPLICATED = "v40_playlist_auto_remove_duplicated"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
