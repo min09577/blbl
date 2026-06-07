@@ -1688,6 +1688,11 @@ class AppPrefs(context: Context) {
     var v30DanmakuFontGlow: Int
         get() = prefs.getInt(KEY_V30_DANMAKU_FONT_GLOW, 0)
         set(value) = prefs.edit().putInt(KEY_V30_DANMAKU_FONT_GLOW, value.coerceIn(0, 100)).apply()
+    // v31.9: 画中画模式支持
+    var v31PlayerPiPSupport: Boolean
+        get() = prefs.getBoolean(KEY_V31_PLAYER_PI_P_SUPPORT, false)
+        set(value) = prefs.edit().putBoolean(KEY_V31_PLAYER_PI_P_SUPPORT, value).apply()
+
     // v31.8: 弹幕关键词高亮
     var v31DanmakuKeywordHighlight: Boolean
         get() = prefs.getBoolean(KEY_V31_DANMAKU_KEYWORD_HIGHLIGHT, false)
@@ -2896,6 +2901,7 @@ class AppPrefs(context: Context) {
         const val DANMAKU_LANE_DENSITY_VERY_DENSE = "very_dense"
 
         const val DANMAKU_AREA_MIN = 0.10f
+        private const val KEY_V31_PLAYER_PI_P_SUPPORT = "v31_player_pi_p_support"
         const val DANMAKU_AREA_MAX = 1.00f
         const val DANMAKU_AREA_STEP = 0.10f
         const val DANMAKU_AREA_DEFAULT = DANMAKU_AREA_MAX
