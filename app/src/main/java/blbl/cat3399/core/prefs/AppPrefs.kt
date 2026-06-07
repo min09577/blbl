@@ -1984,6 +1984,11 @@ class AppPrefs(context: Context) {
     var v34DanmakuMaxDisplaySec: Int
         get() = prefs.getInt(KEY_V34_DANMAKU_MAX_DISPLAY_SEC, 0)
         set(value) = prefs.edit().putInt(KEY_V34_DANMAKU_MAX_DISPLAY_SEC, value).apply()
+    // v35.5: 弹幕拼音转换
+    var v35DanmakuPinyinConvert: Boolean
+        get() = prefs.getBoolean(KEY_V35_DANMAKU_PINYIN_CONVERT, false)
+        set(value) = prefs.edit().putBoolean(KEY_V35_DANMAKU_PINYIN_CONVERT, value).apply()
+
     // v35.4: 横屏自动全屏
     var v35PlayerAutoFullscreenLandscape: Boolean
         get() = prefs.getBoolean(KEY_V35_PLAYER_AUTO_FULLSCREEN_LANDSCAPE, false)
@@ -3464,6 +3469,7 @@ class AppPrefs(context: Context) {
                 THEME_PRESET_TV_PINK_ILLUSTRATION -> THEME_PRESET_TV_PINK_ILLUSTRATION
                 THEME_PRESET_BLUE_DARK -> THEME_PRESET_BLUE_DARK
                 THEME_PRESET_GREEN_DARK -> THEME_PRESET_GREEN_DARK
+        private const val KEY_V35_DANMAKU_PINYIN_CONVERT = "v35_danmaku_pinyin_convert"
                 else -> THEME_PRESET_DEFAULT
             }
         }
