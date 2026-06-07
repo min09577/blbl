@@ -9803,4 +9803,14 @@ internal fun PlayerActivity.showv36VideoSharpenEdgeModeDialog() {
         .show()
 }
 
+
+// 36.13: 弹幕粉丝徽章
+internal fun PlayerActivity.showv36DanmakuFanBadgeToggle() {
+    val current = BiliClient.prefs.v36DanmakuFanBadge
+    AppPopup.Builder(this)
+        .title("弹幕粉丝徽章")
+        .option(switchText(current)) { BiliClient.prefs.v36DanmakuFanBadge = !current }
+        .show()
+}
+
 }
