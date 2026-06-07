@@ -1836,6 +1836,11 @@ class AppPrefs(context: Context) {
     var v32ScreenOffTimer: Int
         get() = prefs.getInt(KEY_V32_SCREEN_OFF_TIMER, 0)
         set(value) = prefs.edit().putInt(KEY_V32_SCREEN_OFF_TIMER, value).apply()
+    // v33.10: 音频增益(dB)
+    var v33AudioGainDb: Int
+        get() = prefs.getInt(KEY_V33_AUDIO_GAIN_DB, 0)
+        set(value) = prefs.edit().putInt(KEY_V33_AUDIO_GAIN_DB, value).apply()
+
     // v33.9: 弹幕自定义字体路径
     var v33DanmakuCustomFontPath: Boolean
         get() = prefs.getBoolean(KEY_V33_DANMAKU_CUSTOM_FONT_PATH, false)
@@ -3210,6 +3215,7 @@ class AppPrefs(context: Context) {
         const val PLAYER_OSD_BTN_COIN = "coin"
         const val PLAYER_OSD_BTN_FAV = "fav"
         const val PLAYER_OSD_BTN_LIST_PANEL = "list_panel"
+        private const val KEY_V33_AUDIO_GAIN_DB = "v33_audio_gain_db"
         const val PLAYER_OSD_BTN_SPONSOR_SUBMIT = "sponsor_submit"
         const val PLAYER_OSD_BTN_ADVANCED = "advanced"
 
