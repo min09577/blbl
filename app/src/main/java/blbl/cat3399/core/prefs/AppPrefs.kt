@@ -1710,6 +1710,11 @@ class AppPrefs(context: Context) {
     var v31DanmakuMergeOverlap: Boolean
         get() = prefs.getBoolean(KEY_V31_DANMAKU_MERGE_OVERLAP, false)
         set(value) = prefs.edit().putBoolean(KEY_V31_DANMAKU_MERGE_OVERLAP, value).apply()
+    // v31.2: 静音片段自动跳过
+    var v31VideoFrameSkipSilence: Boolean
+        get() = prefs.getBoolean(KEY_V31_VIDEO_FRAME_SKIP_SILENCE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V31_VIDEO_FRAME_SKIP_SILENCE, value).apply()
+
 
     
     
@@ -3644,6 +3649,7 @@ class AppPrefs(context: Context) {
         // v10.2: 视频书签
         private const val KEY_VIDEO_BOOKMARKS = "video_bookmarks"
         private const val KEY_V31_DANMAKU_MERGE_OVERLAP = "v31_danmaku_merge_overlap"
+        private const val KEY_V31_VIDEO_FRAME_SKIP_SILENCE = "v31_video_frame_skip_silence"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(

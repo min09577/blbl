@@ -8748,4 +8748,14 @@ internal fun PlayerActivity.showv31DanmakuMergeOverlapToggle() {
         .show()
 }
 
+
+// 31.2: 静音片段自动跳过
+internal fun PlayerActivity.showv31VideoFrameSkipSilenceToggle() {
+    val current = BiliClient.prefs.v31VideoFrameSkipSilence
+    AppPopup.Builder(this)
+        .title("静音片段自动跳过")
+        .option(switchText(current)) { BiliClient.prefs.v31VideoFrameSkipSilence = !current }
+        .show()
+}
+
 }
