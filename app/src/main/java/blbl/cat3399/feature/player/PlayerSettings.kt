@@ -8998,4 +8998,14 @@ internal fun PlayerActivity.showv32PlayerBackgroundPlayToggle() {
         .show()
 }
 
+
+// 32.8: 双语字幕
+internal fun PlayerActivity.showv32SubtitleDualLangToggle() {
+    val current = BiliClient.prefs.v32SubtitleDualLang
+    AppPopup.Builder(this)
+        .title("双语字幕")
+        .option(switchText(current)) { BiliClient.prefs.v32SubtitleDualLang = !current }
+        .show()
+}
+
 }
