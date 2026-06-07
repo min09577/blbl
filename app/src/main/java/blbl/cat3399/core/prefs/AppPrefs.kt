@@ -1950,6 +1950,11 @@ class AppPrefs(context: Context) {
     var v35VideoFrameRateOverride: Int
         get() = prefs.getInt(KEY_V35_VIDEO_FRAME_RATE_OVERRIDE, 0)
         set(value) = prefs.edit().putInt(KEY_V35_VIDEO_FRAME_RATE_OVERRIDE, value).apply()
+    // v35.2: 弹幕发送者头像
+    var v35DanmakuSenderAvatar: Boolean
+        get() = prefs.getBoolean(KEY_V35_DANMAKU_SENDER_AVATAR, false)
+        set(value) = prefs.edit().putBoolean(KEY_V35_DANMAKU_SENDER_AVATAR, value).apply()
+
 
 
 
@@ -4004,6 +4009,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V34_SUBTITLE_TEXT_COLOR_CUSTOM = "v34_subtitle_text_color_custom"
         private const val KEY_V34_PLAYLIST_REPEAT_SINGLE = "v34_playlist_repeat_single"
         private const val KEY_V35_VIDEO_FRAME_RATE_OVERRIDE = "v35_video_frame_rate_override"
+        private const val KEY_V35_DANMAKU_SENDER_AVATAR = "v35_danmaku_sender_avatar"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
