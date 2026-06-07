@@ -1896,6 +1896,11 @@ class AppPrefs(context: Context) {
     var v34VideoScanLineFilter: Boolean
         get() = prefs.getBoolean(KEY_V34_VIDEO_SCAN_LINE_FILTER, false)
         set(value) = prefs.edit().putBoolean(KEY_V34_VIDEO_SCAN_LINE_FILTER, value).apply()
+    // v34.8: 耳机断开自动暂停
+    var v34PlaybackAutoPauseOnHeadset: Boolean
+        get() = prefs.getBoolean(KEY_V34_PLAYBACK_AUTO_PAUSE_ON_HEADSET, false)
+        set(value) = prefs.edit().putBoolean(KEY_V34_PLAYBACK_AUTO_PAUSE_ON_HEADSET, value).apply()
+
 
 
 
@@ -3923,6 +3928,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V34_DANMAKU_SHIELD_REGEX = "v34_danmaku_shield_regex"
         private const val KEY_V34_SUBTITLE_KARAOKE_MODE = "v34_subtitle_karaoke_mode"
         private const val KEY_V34_VIDEO_SCAN_LINE_FILTER = "v34_video_scan_line_filter"
+        private const val KEY_V34_PLAYBACK_AUTO_PAUSE_ON_HEADSET = "v34_playback_auto_pause_on_headset"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
