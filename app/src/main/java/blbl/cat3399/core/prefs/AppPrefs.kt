@@ -1788,6 +1788,11 @@ class AppPrefs(context: Context) {
     var v32VideoSpeedRampMode: Boolean
         get() = prefs.getBoolean(KEY_V32_VIDEO_SPEED_RAMP_MODE, false)
         set(value) = prefs.edit().putBoolean(KEY_V32_VIDEO_SPEED_RAMP_MODE, value).apply()
+    // v32.11: 音频虚拟环绕声
+    var v32AudioVirtualSurround: Boolean
+        get() = prefs.getBoolean(KEY_V32_AUDIO_VIRTUAL_SURROUND, false)
+        set(value) = prefs.edit().putBoolean(KEY_V32_AUDIO_VIRTUAL_SURROUND, value).apply()
+
 
 
 
@@ -3761,6 +3766,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V32_SUBTITLE_DUAL_LANG = "v32_subtitle_dual_lang"
         private const val KEY_V32_DANMAKU_OPACITY_FADE = "v32_danmaku_opacity_fade"
         private const val KEY_V32_VIDEO_SPEED_RAMP_MODE = "v32_video_speed_ramp_mode"
+        private const val KEY_V32_AUDIO_VIRTUAL_SURROUND = "v32_audio_virtual_surround"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
