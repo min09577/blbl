@@ -857,6 +857,15 @@ internal fun PlayerActivity.showv33VideoRotationLockToggle() {
         .option(switchText(current)) { BiliClient.prefs.v33VideoRotationLock = !current }
         .show()
 }
+// 33.13: 弹幕重复过滤
+internal fun PlayerActivity.showv33DanmakuRepeatFilterToggle() {
+    val current = BiliClient.prefs.v33DanmakuRepeatFilter
+    AppPopup.Builder(this)
+        .title("弹幕重复过滤")
+        .option(switchText(current)) { BiliClient.prefs.v33DanmakuRepeatFilter = !current }
+        .show()
+}
+
 
 
 

@@ -1836,6 +1836,11 @@ class AppPrefs(context: Context) {
     var v32ScreenOffTimer: Int
         get() = prefs.getInt(KEY_V32_SCREEN_OFF_TIMER, 0)
         set(value) = prefs.edit().putInt(KEY_V32_SCREEN_OFF_TIMER, value).apply()
+    // v33.13: 弹幕重复过滤
+    var v33DanmakuRepeatFilter: Boolean
+        get() = prefs.getBoolean(KEY_V33_DANMAKU_REPEAT_FILTER, false)
+        set(value) = prefs.edit().putBoolean(KEY_V33_DANMAKU_REPEAT_FILTER, value).apply()
+
     // v33.12: 视频旋转锁定
     var v33VideoRotationLock: Boolean
         get() = prefs.getBoolean(KEY_V33_VIDEO_ROTATION_LOCK, false)
@@ -3240,6 +3245,7 @@ class AppPrefs(context: Context) {
                 PLAYER_OSD_BTN_COMMENTS,
                 PLAYER_OSD_BTN_DETAIL,
                 PLAYER_OSD_BTN_SPONSOR_SUBMIT,
+        private const val KEY_V33_DANMAKU_REPEAT_FILTER = "v33_danmaku_repeat_filter"
                 PLAYER_OSD_BTN_UP,
                 PLAYER_OSD_BTN_LIST_PANEL,
                 PLAYER_OSD_BTN_ADVANCED,
