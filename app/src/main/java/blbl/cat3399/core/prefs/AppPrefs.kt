@@ -1910,6 +1910,11 @@ class AppPrefs(context: Context) {
     var v33AudioBassBoost: Int
         get() = prefs.getInt(KEY_V33_AUDIO_BASS_BOOST, 0)
         set(value) = prefs.edit().putInt(KEY_V33_AUDIO_BASS_BOOST, value).apply()
+    // v34.2: 亮度自动感应
+    var v34VideoBrightnessSensor: Boolean
+        get() = prefs.getBoolean(KEY_V34_VIDEO_BRIGHTNESS_SENSOR, false)
+        set(value) = prefs.edit().putBoolean(KEY_V34_VIDEO_BRIGHTNESS_SENSOR, value).apply()
+
     // v34.1: 弹幕最大显示时长(秒)
     var v34DanmakuMaxDisplaySec: Int
         get() = prefs.getInt(KEY_V34_DANMAKU_MAX_DISPLAY_SEC, 0)
@@ -3282,6 +3287,7 @@ class AppPrefs(context: Context) {
                 PLAYER_OSD_BTN_DANMAKU,
                 PLAYER_OSD_BTN_COMMENTS,
                 PLAYER_OSD_BTN_DETAIL,
+        private const val KEY_V34_VIDEO_BRIGHTNESS_SENSOR = "v34_video_brightness_sensor"
                 PLAYER_OSD_BTN_UP,
                 PLAYER_OSD_BTN_LIKE,
                 PLAYER_OSD_BTN_COIN,
