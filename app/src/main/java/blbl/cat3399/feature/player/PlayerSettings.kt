@@ -4755,7 +4755,7 @@ internal fun PlayerActivity.showv31PlaybackBufferAheadSecDialog() {
         title = "预缓冲时长(秒)",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v31PlaybackBufferAheadSec = value
         AppToast.show(this, "预缓冲时长(秒)：$value")
@@ -4770,7 +4770,7 @@ internal fun PlayerActivity.showv31DanmakuAntiSpamLevelDialog() {
         title = "弹幕防刷等级",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v31DanmakuAntiSpamLevel = value
         AppToast.show(this, "弹幕防刷等级：$value")
@@ -4785,7 +4785,7 @@ internal fun PlayerActivity.showv31VideoDeinterlaceModeDialog() {
         title = "视频反交错模式",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v31VideoDeinterlaceMode = value
         AppToast.show(this, "视频反交错模式：$value")
@@ -4828,7 +4828,7 @@ internal fun PlayerActivity.showv31DanmakuLayerOrderDialog() {
         title = "弹幕层级排序",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v31DanmakuLayerOrder = value
         AppToast.show(this, "弹幕层级排序：$value")
@@ -4843,7 +4843,7 @@ internal fun PlayerActivity.showv31SubtitleSyncOffsetDialog() {
         title = "字幕同步偏移(ms)",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v31SubtitleSyncOffset = value
         AppToast.show(this, "字幕同步偏移(ms)：$value")
@@ -4865,7 +4865,7 @@ internal fun PlayerActivity.showv31DanmakuBlockUserLevelDialog() {
         title = "弹幕屏蔽用户等级",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v31DanmakuBlockUserLevel = value
         AppToast.show(this, "弹幕屏蔽用户等级：$value")
@@ -4880,7 +4880,7 @@ internal fun PlayerActivity.showv31VideoCodecPriorityDialog() {
         title = "视频解码优先级",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v31VideoCodecPriority = value
         AppToast.show(this, "视频解码优先级：$value")
@@ -4895,7 +4895,7 @@ internal fun PlayerActivity.showv32ScreenOffTimerDialog() {
         title = "息屏定时器(分钟)",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v32ScreenOffTimer = value
         AppToast.show(this, "息屏定时器(分钟)：$value")
@@ -4987,7 +4987,7 @@ internal fun PlayerActivity.showv32PlayerLockTimeoutDialog() {
         title = "播放器锁定超时(秒)",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v32PlayerLockTimeout = value
         AppToast.show(this, "播放器锁定超时(秒)：$value")
@@ -5002,7 +5002,7 @@ internal fun PlayerActivity.showv32VideoCropPresetDialog() {
         title = "视频裁剪预设",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v32VideoCropPreset = value
         AppToast.show(this, "视频裁剪预设：$value")
@@ -5024,7 +5024,7 @@ internal fun PlayerActivity.showv33AudioBassBoostDialog() {
         title = "低音增强",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v33AudioBassBoost = value
         AppToast.show(this, "低音增强：$value")
@@ -5039,7 +5039,7 @@ internal fun PlayerActivity.showv33DanmakuScrollDirectionDialog() {
         title = "弹幕滚动方向",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v33DanmakuScrollDirection = value
         AppToast.show(this, "弹幕滚动方向：$value")
@@ -5054,7 +5054,7 @@ internal fun PlayerActivity.showv33VideoThumbnailTimeSecDialog() {
         title = "缩略图时间点(秒)",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v33VideoThumbnailTimeSec = value
         AppToast.show(this, "缩略图时间点(秒)：$value")
@@ -5069,7 +5069,7 @@ internal fun PlayerActivity.showv33PlayerDoubleTapSeekSecDialog() {
         title = "双击快进秒数",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v33PlayerDoubleTapSeekSec = value
         AppToast.show(this, "双击快进秒数：$value")
@@ -5084,7 +5084,7 @@ internal fun PlayerActivity.showv33DanmakuLineNumberDialog() {
         title = "弹幕行数限制",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v33DanmakuLineNumber = value
         AppToast.show(this, "弹幕行数限制：$value")
@@ -5099,7 +5099,7 @@ internal fun PlayerActivity.showv33SubtitleBorderWidthDialog() {
         title = "字幕描边宽度",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v33SubtitleBorderWidth = value
         AppToast.show(this, "字幕描边宽度：$value")
@@ -5114,7 +5114,7 @@ internal fun PlayerActivity.showv33VideoHdrToneMapDialog() {
         title = "HDR色调映射",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v33VideoHdrToneMap = value
         AppToast.show(this, "HDR色调映射：$value")
@@ -5129,7 +5129,7 @@ internal fun PlayerActivity.showv33PlaybackSkipIntroSecDialog() {
         title = "跳过片头秒数",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v33PlaybackSkipIntroSec = value
         AppToast.show(this, "跳过片头秒数：$value")
@@ -5151,7 +5151,7 @@ internal fun PlayerActivity.showv33AudioGainDbDialog() {
         title = "音频增益(dB)",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v33AudioGainDb = value
         AppToast.show(this, "音频增益(dB)：$value")
@@ -5187,7 +5187,7 @@ internal fun PlayerActivity.showv33SubtitleShadowOffsetDialog() {
         title = "字幕阴影偏移",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v33SubtitleShadowOffset = value
         AppToast.show(this, "字幕阴影偏移：$value")
@@ -5209,7 +5209,7 @@ internal fun PlayerActivity.showv34DanmakuMaxDisplaySecDialog() {
         title = "弹幕最大显示时长(秒)",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v34DanmakuMaxDisplaySec = value
         AppToast.show(this, "弹幕最大显示时长(秒)：$value")
@@ -5231,7 +5231,7 @@ internal fun PlayerActivity.showv34AudioCompressorThresholdDialog() {
         title = "音频压缩阈值",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v34AudioCompressorThreshold = value
         AppToast.show(this, "音频压缩阈值：$value")
@@ -5288,7 +5288,7 @@ internal fun PlayerActivity.showv34AudioEqPresetDialog() {
         title = "均衡器预设",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v34AudioEqPreset = value
         AppToast.show(this, "均衡器预设：$value")
@@ -5317,7 +5317,7 @@ internal fun PlayerActivity.showv34DanmakuFontSizeMinDialog() {
         title = "弹幕最小字号",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v34DanmakuFontSizeMin = value
         AppToast.show(this, "弹幕最小字号：$value")
@@ -5346,7 +5346,7 @@ internal fun PlayerActivity.showv35VideoFrameRateOverrideDialog() {
         title = "帧率覆盖",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v35VideoFrameRateOverride = value
         AppToast.show(this, "帧率覆盖：$value")
@@ -5368,7 +5368,7 @@ internal fun PlayerActivity.showv35AudioSpatialWidthDialog() {
         title = "空间音频宽度",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v35AudioSpatialWidth = value
         AppToast.show(this, "空间音频宽度：$value")
@@ -5404,7 +5404,7 @@ internal fun PlayerActivity.showv35VideoVignetteEffectDialog() {
         title = "暗角效果强度",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v35VideoVignetteEffect = value
         AppToast.show(this, "暗角效果强度：$value")
@@ -5447,7 +5447,7 @@ internal fun PlayerActivity.showv35VideoNoiseReductionDialog() {
         title = "视频降噪强度",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v35VideoNoiseReduction = value
         AppToast.show(this, "视频降噪强度：$value")
@@ -5462,7 +5462,7 @@ internal fun PlayerActivity.showv35DanmakuAnimationSpeedDialog() {
         title = "弹幕动画速度",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v35DanmakuAnimationSpeed = value
         AppToast.show(this, "弹幕动画速度：$value")
@@ -5477,7 +5477,7 @@ internal fun PlayerActivity.showv35SubtitleLineSpacingDialog() {
         title = "字幕行间距",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v35SubtitleLineSpacing = value
         AppToast.show(this, "字幕行间距：$value")
@@ -5499,7 +5499,7 @@ internal fun PlayerActivity.showv36VideoAspectFitModeDialog() {
         title = "画面适配模式",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v36VideoAspectFitMode = value
         AppToast.show(this, "画面适配模式：$value")
@@ -5514,7 +5514,7 @@ internal fun PlayerActivity.showv36DanmakuOpacityPerTypeDialog() {
         title = "弹幕类型透明度",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v36DanmakuOpacityPerType = value
         AppToast.show(this, "弹幕类型透明度：$value")
@@ -5536,7 +5536,7 @@ internal fun PlayerActivity.showv36PlayerSkipOutroSecDialog() {
         title = "跳过片尾秒数",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v36PlayerSkipOutroSec = value
         AppToast.show(this, "跳过片尾秒数：$value")
@@ -5558,7 +5558,7 @@ internal fun PlayerActivity.showv36SubtitleEdgeBlurDialog() {
         title = "字幕边缘模糊",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v36SubtitleEdgeBlur = value
         AppToast.show(this, "字幕边缘模糊：$value")
@@ -5573,7 +5573,7 @@ internal fun PlayerActivity.showv36VideoColorLutPresetDialog() {
         title = "色彩LUT预设",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v36VideoColorLutPreset = value
         AppToast.show(this, "色彩LUT预设：$value")
@@ -5595,7 +5595,7 @@ internal fun PlayerActivity.showv36DanmakuBlockLengthDialog() {
         title = "弹幕长度上限",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v36DanmakuBlockLength = value
         AppToast.show(this, "弹幕长度上限：$value")
@@ -5610,7 +5610,7 @@ internal fun PlayerActivity.showv36AudioDelayMsDialog() {
         title = "音频延迟(ms)",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v36AudioDelayMs = value
         AppToast.show(this, "音频延迟(ms)：$value")
@@ -5625,7 +5625,7 @@ internal fun PlayerActivity.showv36PlayerSwipeBrightnessCurveDialog() {
         title = "滑动亮度曲线",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v36PlayerSwipeBrightnessCurve = value
         AppToast.show(this, "滑动亮度曲线：$value")
@@ -5640,7 +5640,7 @@ internal fun PlayerActivity.showv36VideoSharpenEdgeModeDialog() {
         title = "边缘锐化模式",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v36VideoSharpenEdgeMode = value
         AppToast.show(this, "边缘锐化模式：$value")
@@ -5662,7 +5662,7 @@ internal fun PlayerActivity.showv36SubtitleFontWeightCustomDialog() {
         title = "字幕字重",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v36SubtitleFontWeightCustom = value
         AppToast.show(this, "字幕字重：$value")
@@ -5698,7 +5698,7 @@ internal fun PlayerActivity.showv37AudioStereoWidthDialog() {
         title = "立体声宽度",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v37AudioStereoWidth = value
         AppToast.show(this, "立体声宽度：$value")
@@ -5713,7 +5713,7 @@ internal fun PlayerActivity.showv37PlayerResumeThresholdDialog() {
         title = "恢复播放阈值(秒)",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v37PlayerResumeThreshold = value
         AppToast.show(this, "恢复播放阈值(秒)：$value")
@@ -5749,7 +5749,7 @@ internal fun PlayerActivity.showv37PlaybackBufferStrategyDialog() {
         title = "缓冲策略",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v37PlaybackBufferStrategy = value
         AppToast.show(this, "缓冲策略：$value")
@@ -5764,7 +5764,7 @@ internal fun PlayerActivity.showv37DanmakuLevelShieldDialog() {
         title = "弹幕等级屏蔽",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v37DanmakuLevelShield = value
         AppToast.show(this, "弹幕等级屏蔽：$value")
@@ -5779,7 +5779,7 @@ internal fun PlayerActivity.showv37AudioReverbPresetDialog() {
         title = "混响预设",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v37AudioReverbPreset = value
         AppToast.show(this, "混响预设：$value")
@@ -5794,7 +5794,7 @@ internal fun PlayerActivity.showv37PlayerLongPressSpeedDialog() {
         title = "长按倍速值",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v37PlayerLongPressSpeed = value
         AppToast.show(this, "长按倍速值：$value")
@@ -5809,7 +5809,7 @@ internal fun PlayerActivity.showv37VideoInterpolationModeDialog() {
         title = "插帧模式",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v37VideoInterpolationMode = value
         AppToast.show(this, "插帧模式：$value")
@@ -5824,7 +5824,7 @@ internal fun PlayerActivity.showv37DanmakuShadowOffsetDialog() {
         title = "弹幕阴影偏移",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v37DanmakuShadowOffset = value
         AppToast.show(this, "弹幕阴影偏移：$value")
@@ -5853,7 +5853,7 @@ internal fun PlayerActivity.showv38VideoGammaCurveDialog() {
         title = "Gamma曲线预设",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v38VideoGammaCurve = value
         AppToast.show(this, "Gamma曲线预设：$value")
@@ -5875,7 +5875,7 @@ internal fun PlayerActivity.showv38AudioHighShelfGainDialog() {
         title = "高频搁架增益",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v38AudioHighShelfGain = value
         AppToast.show(this, "高频搁架增益：$value")
@@ -5904,7 +5904,7 @@ internal fun PlayerActivity.showv38SubtitleLetterSpacingDialog() {
         title = "字幕字间距",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v38SubtitleLetterSpacing = value
         AppToast.show(this, "字幕字间距：$value")
@@ -5919,7 +5919,7 @@ internal fun PlayerActivity.showv38VideoContrastEnhanceDialog() {
         title = "对比度增强",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v38VideoContrastEnhance = value
         AppToast.show(this, "对比度增强：$value")
@@ -5934,7 +5934,7 @@ internal fun PlayerActivity.showv38PlaybackBufferMinSecDialog() {
         title = "最小缓冲秒数",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v38PlaybackBufferMinSec = value
         AppToast.show(this, "最小缓冲秒数：$value")
@@ -5949,7 +5949,7 @@ internal fun PlayerActivity.showv38DanmakuPriorityLevelDialog() {
         title = "弹幕优先级",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v38DanmakuPriorityLevel = value
         AppToast.show(this, "弹幕优先级：$value")
@@ -5964,7 +5964,7 @@ internal fun PlayerActivity.showv38AudioLowShelfGainDialog() {
         title = "低频搁架增益",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v38AudioLowShelfGain = value
         AppToast.show(this, "低频搁架增益：$value")
@@ -5979,7 +5979,7 @@ internal fun PlayerActivity.showv38PlayerSpeedStepDialog() {
         title = "倍速步进值(0.1x)",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v38PlayerSpeedStep = value
         AppToast.show(this, "倍速步进值(0.1x)：$value")
@@ -5994,7 +5994,7 @@ internal fun PlayerActivity.showv38VideoSaturationBoostDialog() {
         title = "饱和度增强",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v38VideoSaturationBoost = value
         AppToast.show(this, "饱和度增强：$value")
@@ -6023,7 +6023,7 @@ internal fun PlayerActivity.showv38PlaylistCrossFadeMsDialog() {
         title = "交叉淡入(ms)",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v38PlaylistCrossFadeMs = value
         AppToast.show(this, "交叉淡入(ms)：$value")
@@ -6038,7 +6038,7 @@ internal fun PlayerActivity.showv39VideoTbnSyncModeDialog() {
         title = "时间基准同步模式",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v39VideoTbnSyncMode = value
         AppToast.show(this, "时间基准同步模式：$value")
@@ -6060,7 +6060,7 @@ internal fun PlayerActivity.showv39AudioMidFreqGainDialog() {
         title = "中频增益",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v39AudioMidFreqGain = value
         AppToast.show(this, "中频增益：$value")
@@ -6075,7 +6075,7 @@ internal fun PlayerActivity.showv39PlayerAutoBrightnessRangeDialog() {
         title = "自动亮度范围",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v39PlayerAutoBrightnessRange = value
         AppToast.show(this, "自动亮度范围：$value")
@@ -6097,7 +6097,7 @@ internal fun PlayerActivity.showv39SubtitleAnimationTypeDialog() {
         title = "字幕动画类型",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v39SubtitleAnimationType = value
         AppToast.show(this, "字幕动画类型：$value")
@@ -6133,7 +6133,7 @@ internal fun PlayerActivity.showv39AudioDynamicRangeDialog() {
         title = "动态范围压缩",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v39AudioDynamicRange = value
         AppToast.show(this, "动态范围压缩：$value")
@@ -6155,7 +6155,7 @@ internal fun PlayerActivity.showv39VideoSmoothingLevelDialog() {
         title = "画面平滑等级",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v39VideoSmoothingLevel = value
         AppToast.show(this, "画面平滑等级：$value")
@@ -6191,7 +6191,7 @@ internal fun PlayerActivity.showv40VideoSnapshotIntervalDialog() {
         title = "快照间隔(秒)",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v40VideoSnapshotInterval = value
         AppToast.show(this, "快照间隔(秒)：$value")
@@ -6248,7 +6248,7 @@ internal fun PlayerActivity.showv40PlaybackCacheSegmentDialog() {
         title = "分段缓存大小(MB)",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v40PlaybackCacheSegment = value
         AppToast.show(this, "分段缓存大小(MB)：$value")
@@ -6263,7 +6263,7 @@ internal fun PlayerActivity.showv40DanmakuFadeInDurationDialog() {
         title = "弹幕淡入时长(ms)",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v40DanmakuFadeInDuration = value
         AppToast.show(this, "弹幕淡入时长(ms)：$value")
@@ -6285,7 +6285,7 @@ internal fun PlayerActivity.showv40PlayerOsdTimeoutDialog() {
         title = "OSD超时(秒)",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v40PlayerOsdTimeout = value
         AppToast.show(this, "OSD超时(秒)：$value")
@@ -6307,7 +6307,7 @@ internal fun PlayerActivity.showv40DanmakuMaxPerScreenDialog() {
         title = "屏幕最大弹幕数",
         options = options,
         checkedIndex = currentIndex,
-        label = { v -> "$v" },
+        label = { "$it" },
     ) { value ->
         BiliClient.prefs.v40DanmakuMaxPerScreen = value
         AppToast.show(this, "屏幕最大弹幕数：$value")
