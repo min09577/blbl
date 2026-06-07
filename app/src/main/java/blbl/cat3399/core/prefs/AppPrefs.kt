@@ -2170,6 +2170,11 @@ class AppPrefs(context: Context) {
     var v38PlayerSpeedStep: Int
         get() = prefs.getInt(KEY_V38_PLAYER_SPEED_STEP, 0)
         set(value) = prefs.edit().putInt(KEY_V38_PLAYER_SPEED_STEP, value).apply()
+    // v38.12: 饱和度增强
+    var v38VideoSaturationBoost: Int
+        get() = prefs.getInt(KEY_V38_VIDEO_SATURATION_BOOST, 0)
+        set(value) = prefs.edit().putInt(KEY_V38_VIDEO_SATURATION_BOOST, value).apply()
+
 
 
 
@@ -4334,6 +4339,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V38_DANMAKU_PRIORITY_LEVEL = "v38_danmaku_priority_level"
         private const val KEY_V38_AUDIO_LOW_SHELF_GAIN = "v38_audio_low_shelf_gain"
         private const val KEY_V38_PLAYER_SPEED_STEP = "v38_player_speed_step"
+        private const val KEY_V38_VIDEO_SATURATION_BOOST = "v38_video_saturation_boost"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
