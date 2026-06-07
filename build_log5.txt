@@ -1,0 +1,771 @@
+﻿2026-06-07T08:58:26.1331551Z Current runner version: '2.334.0'
+2026-06-07T08:58:26.1359763Z ##[group]Runner Image Provisioner
+2026-06-07T08:58:26.1360684Z Hosted Compute Agent
+2026-06-07T08:58:26.1361404Z Version: 20260520.533
+2026-06-07T08:58:26.1362057Z Commit: 189110e25284a9812c124fd27b339e2fb4f2f9db
+2026-06-07T08:58:26.1362831Z Build Date: 2026-05-20T17:44:04Z
+2026-06-07T08:58:26.1363936Z Worker ID: {f4493b54-5982-4c13-83be-33ecc31127dd}
+2026-06-07T08:58:26.1364725Z Azure Region: northcentralus
+2026-06-07T08:58:26.1365415Z ##[endgroup]
+2026-06-07T08:58:26.1366967Z ##[group]Operating System
+2026-06-07T08:58:26.1367631Z Ubuntu
+2026-06-07T08:58:26.1368269Z 24.04.4
+2026-06-07T08:58:26.1368841Z LTS
+2026-06-07T08:58:26.1369401Z ##[endgroup]
+2026-06-07T08:58:26.1370000Z ##[group]Runner Image
+2026-06-07T08:58:26.1370652Z Image: ubuntu-24.04
+2026-06-07T08:58:26.1371338Z Version: 20260525.161.1
+2026-06-07T08:58:26.1372650Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260525.161/images/ubuntu/Ubuntu2404-Readme.md
+2026-06-07T08:58:26.1374799Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260525.161
+2026-06-07T08:58:26.1375811Z ##[endgroup]
+2026-06-07T08:58:26.1377480Z ##[group]GITHUB_TOKEN Permissions
+2026-06-07T08:58:26.1379718Z Contents: write
+2026-06-07T08:58:26.1380482Z Metadata: read
+2026-06-07T08:58:26.1381073Z ##[endgroup]
+2026-06-07T08:58:26.1383855Z Secret source: Actions
+2026-06-07T08:58:26.1384963Z Prepare workflow directory
+2026-06-07T08:58:26.2124893Z Prepare all required actions
+2026-06-07T08:58:26.2181076Z Getting action download info
+2026-06-07T08:58:26.5998910Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+2026-06-07T08:58:26.7197706Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-06-07T08:58:26.9261156Z Complete job name: build
+2026-06-07T08:58:27.0010424Z ##[group]Run actions/checkout@v4
+2026-06-07T08:58:27.0011415Z with:
+2026-06-07T08:58:27.0011912Z   repository: min09577/blbl
+2026-06-07T08:58:27.0016757Z   token: ***
+2026-06-07T08:58:27.0017278Z   ssh-strict: true
+2026-06-07T08:58:27.0017775Z   ssh-user: git
+2026-06-07T08:58:27.0018266Z   persist-credentials: true
+2026-06-07T08:58:27.0018801Z   clean: true
+2026-06-07T08:58:27.0019291Z   sparse-checkout-cone-mode: true
+2026-06-07T08:58:27.0019850Z   fetch-depth: 1
+2026-06-07T08:58:27.0020323Z   fetch-tags: false
+2026-06-07T08:58:27.0020821Z   show-progress: true
+2026-06-07T08:58:27.0021323Z   lfs: false
+2026-06-07T08:58:27.0021785Z   submodules: false
+2026-06-07T08:58:27.0022271Z   set-safe-directory: true
+2026-06-07T08:58:27.0023331Z env:
+2026-06-07T08:58:27.0023836Z   VERSION_NAME: 11.19.0
+2026-06-07T08:58:27.0024353Z   VERSION_CODE: 496
+2026-06-07T08:58:27.0024828Z ##[endgroup]
+2026-06-07T08:58:27.1198861Z Syncing repository: min09577/blbl
+2026-06-07T08:58:27.1200885Z ##[group]Getting Git version info
+2026-06-07T08:58:27.1201658Z Working directory is '/home/runner/work/blbl/blbl'
+2026-06-07T08:58:27.1202744Z [command]/usr/bin/git version
+2026-06-07T08:58:27.1306919Z git version 2.54.0
+2026-06-07T08:58:27.1345353Z ##[endgroup]
+2026-06-07T08:58:27.1363732Z Temporarily overriding HOME='/home/runner/work/_temp/7f5405ee-b97a-4e40-be4e-aff65d1c86a5' before making global git config changes
+2026-06-07T08:58:27.1366840Z Adding repository directory to the temporary git global config as a safe directory
+2026-06-07T08:58:27.1369446Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/blbl/blbl
+2026-06-07T08:58:27.1420067Z Deleting the contents of '/home/runner/work/blbl/blbl'
+2026-06-07T08:58:27.1425567Z ##[group]Initializing the repository
+2026-06-07T08:58:27.1430845Z [command]/usr/bin/git init /home/runner/work/blbl/blbl
+2026-06-07T08:58:27.1532463Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-06-07T08:58:27.1534771Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-06-07T08:58:27.1535833Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-06-07T08:58:27.1536963Z hint: call:
+2026-06-07T08:58:27.1537433Z hint:
+2026-06-07T08:58:27.1537998Z hint: 	git config --global init.defaultBranch <name>
+2026-06-07T08:58:27.1538684Z hint:
+2026-06-07T08:58:27.1539326Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-06-07T08:58:27.1540372Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-06-07T08:58:27.1541180Z hint:
+2026-06-07T08:58:27.1541638Z hint: 	git branch -m <name>
+2026-06-07T08:58:27.1542169Z hint:
+2026-06-07T08:58:27.1542854Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-06-07T08:58:27.1550006Z Initialized empty Git repository in /home/runner/work/blbl/blbl/.git/
+2026-06-07T08:58:27.1563712Z [command]/usr/bin/git remote add origin https://github.com/min09577/blbl
+2026-06-07T08:58:27.1610278Z ##[endgroup]
+2026-06-07T08:58:27.1611789Z ##[group]Disabling automatic garbage collection
+2026-06-07T08:58:27.1615929Z [command]/usr/bin/git config --local gc.auto 0
+2026-06-07T08:58:27.1649600Z ##[endgroup]
+2026-06-07T08:58:27.1651169Z ##[group]Setting up auth
+2026-06-07T08:58:27.1658484Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-06-07T08:58:27.1697126Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-06-07T08:58:27.2072503Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-06-07T08:58:27.2103691Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-06-07T08:58:27.2333315Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-06-07T08:58:27.2367530Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-06-07T08:58:27.2610360Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-06-07T08:58:27.2646638Z ##[endgroup]
+2026-06-07T08:58:27.2647555Z ##[group]Fetching the repository
+2026-06-07T08:58:27.2655547Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +6bd320dc4efba744c9df9dd0df474dfa7ae1eda5:refs/remotes/origin/main
+2026-06-07T08:58:28.2850173Z From https://github.com/min09577/blbl
+2026-06-07T08:58:28.2852630Z  * [new ref]         6bd320dc4efba744c9df9dd0df474dfa7ae1eda5 -> origin/main
+2026-06-07T08:58:28.2889635Z ##[endgroup]
+2026-06-07T08:58:28.2891710Z ##[group]Determining the checkout info
+2026-06-07T08:58:28.2894246Z ##[endgroup]
+2026-06-07T08:58:28.2898238Z [command]/usr/bin/git sparse-checkout disable
+2026-06-07T08:58:28.2944656Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-06-07T08:58:28.2971171Z ##[group]Checking out the ref
+2026-06-07T08:58:28.2975071Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-06-07T08:58:28.3730471Z Switched to a new branch 'main'
+2026-06-07T08:58:28.3732467Z branch 'main' set up to track 'origin/main'.
+2026-06-07T08:58:28.3746926Z ##[endgroup]
+2026-06-07T08:58:28.3791287Z [command]/usr/bin/git log -1 --format=%H
+2026-06-07T08:58:28.3815757Z 6bd320dc4efba744c9df9dd0df474dfa7ae1eda5
+2026-06-07T08:58:28.4056783Z ##[group]Run sudo apt-get update
+2026-06-07T08:58:28.4058415Z [36;1msudo apt-get update[0m
+2026-06-07T08:58:28.4059771Z [36;1msudo apt-get install -y openjdk-17-jdk[0m
+2026-06-07T08:58:28.4061694Z [36;1mecho "JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64" >> $GITHUB_ENV[0m
+2026-06-07T08:58:28.4095958Z shell: /usr/bin/bash -e {0}
+2026-06-07T08:58:28.4097136Z env:
+2026-06-07T08:58:28.4098052Z   VERSION_NAME: 11.19.0
+2026-06-07T08:58:28.4099129Z   VERSION_CODE: 496
+2026-06-07T08:58:28.4100413Z ##[endgroup]
+2026-06-07T08:58:28.5024464Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+2026-06-07T08:58:28.5297299Z Get:6 https://packages.microsoft.com/repos/azure-cli noble InRelease [3564 B]
+2026-06-07T08:58:28.5387423Z Get:7 https://packages.microsoft.com/ubuntu/24.04/prod noble InRelease [3600 B]
+2026-06-07T08:58:28.5435049Z Hit:2 http://azure.archive.ubuntu.com/ubuntu noble InRelease
+2026-06-07T08:58:28.5457738Z Get:3 http://azure.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+2026-06-07T08:58:28.5500594Z Get:4 http://azure.archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+2026-06-07T08:58:28.5529060Z Get:5 http://azure.archive.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+2026-06-07T08:58:28.5558006Z Get:8 https://dl.google.com/linux/chrome-stable/deb stable InRelease [1825 B]
+2026-06-07T08:58:28.6059826Z Get:9 https://packages.microsoft.com/repos/azure-cli noble/main amd64 Packages [2255 B]
+2026-06-07T08:58:28.6777045Z Get:10 https://packages.microsoft.com/ubuntu/24.04/prod noble/main amd64 Packages [168 kB]
+2026-06-07T08:58:28.6830187Z Get:11 https://packages.microsoft.com/ubuntu/24.04/prod noble/main arm64 Packages [138 kB]
+2026-06-07T08:58:28.7844524Z Get:12 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [2064 kB]
+2026-06-07T08:58:28.7952382Z Get:13 http://azure.archive.ubuntu.com/ubuntu noble-updates/main Translation-en [362 kB]
+2026-06-07T08:58:28.7979858Z Get:14 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 Components [177 kB]
+2026-06-07T08:58:28.8000084Z Get:15 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 c-n-f Metadata [17.4 kB]
+2026-06-07T08:58:28.8015008Z Get:16 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1696 kB]
+2026-06-07T08:58:28.8119055Z Get:17 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [331 kB]
+2026-06-07T08:58:28.8147557Z Get:18 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Components [386 kB]
+2026-06-07T08:58:28.8178377Z Get:19 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 c-n-f Metadata [34.6 kB]
+2026-06-07T08:58:28.8194938Z Get:20 http://azure.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [3299 kB]
+2026-06-07T08:58:28.8347341Z Get:21 http://azure.archive.ubuntu.com/ubuntu noble-updates/restricted Translation-en [764 kB]
+2026-06-07T08:58:28.8838265Z Get:22 http://azure.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 c-n-f Metadata [456 B]
+2026-06-07T08:58:28.8847977Z Get:23 http://azure.archive.ubuntu.com/ubuntu noble-updates/multiverse Translation-en [11.3 kB]
+2026-06-07T08:58:28.8864042Z Get:24 http://azure.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Components [940 B]
+2026-06-07T08:58:28.8879229Z Get:25 http://azure.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 c-n-f Metadata [656 B]
+2026-06-07T08:58:28.8894137Z Get:26 http://azure.archive.ubuntu.com/ubuntu noble-backports/main amd64 Components [5772 B]
+2026-06-07T08:58:28.8905630Z Get:27 http://azure.archive.ubuntu.com/ubuntu noble-backports/universe amd64 Components [10.5 kB]
+2026-06-07T08:58:28.8918898Z Get:28 http://azure.archive.ubuntu.com/ubuntu noble-backports/universe amd64 c-n-f Metadata [1588 B]
+2026-06-07T08:58:28.9022515Z Get:29 http://azure.archive.ubuntu.com/ubuntu noble-security/main amd64 Packages [1761 kB]
+2026-06-07T08:58:28.9126333Z Get:30 http://azure.archive.ubuntu.com/ubuntu noble-security/main Translation-en [275 kB]
+2026-06-07T08:58:28.9149798Z Get:31 http://azure.archive.ubuntu.com/ubuntu noble-security/main amd64 Components [42.4 kB]
+2026-06-07T08:58:28.9165549Z Get:32 http://azure.archive.ubuntu.com/ubuntu noble-security/main amd64 c-n-f Metadata [11.4 kB]
+2026-06-07T08:58:28.9199936Z Get:33 http://azure.archive.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1194 kB]
+2026-06-07T08:58:28.9251489Z Get:34 http://azure.archive.ubuntu.com/ubuntu noble-security/universe Translation-en [231 kB]
+2026-06-07T08:58:28.9273771Z Get:35 http://azure.archive.ubuntu.com/ubuntu noble-security/universe amd64 Components [74.2 kB]
+2026-06-07T08:58:28.9314692Z Get:36 http://azure.archive.ubuntu.com/ubuntu noble-security/universe amd64 c-n-f Metadata [23.2 kB]
+2026-06-07T08:58:28.9776734Z Get:42 https://dl.google.com/linux/chrome-stable/deb stable/main amd64 Packages [1209 B]
+2026-06-07T08:58:28.9796846Z Get:37 http://azure.archive.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [3106 kB]
+2026-06-07T08:58:28.9940034Z Get:38 http://azure.archive.ubuntu.com/ubuntu noble-security/restricted Translation-en [721 kB]
+2026-06-07T08:58:28.9983268Z Get:39 http://azure.archive.ubuntu.com/ubuntu noble-security/restricted amd64 c-n-f Metadata [444 B]
+2026-06-07T08:58:28.9996078Z Get:40 http://azure.archive.ubuntu.com/ubuntu noble-security/multiverse Translation-en [9248 B]
+2026-06-07T08:58:29.0007845Z Get:41 http://azure.archive.ubuntu.com/ubuntu noble-security/multiverse amd64 c-n-f Metadata [468 B]
+2026-06-07T08:58:37.5265774Z Fetched 17.3 MB in 2s (8728 kB/s)
+2026-06-07T08:58:38.3539788Z Reading package lists...
+2026-06-07T08:58:38.3873585Z Reading package lists...
+2026-06-07T08:58:38.5820689Z Building dependency tree...
+2026-06-07T08:58:38.5828158Z Reading state information...
+2026-06-07T08:58:38.7466448Z The following additional packages will be installed:
+2026-06-07T08:58:38.7468317Z   ca-certificates-java libatk-wrapper-java libatk-wrapper-java-jni libgif7
+2026-06-07T08:58:38.7470943Z   libice-dev libpcsclite1 libpthread-stubs0-dev libsm-dev libx11-dev
+2026-06-07T08:58:38.7471609Z   libxau-dev libxcb-shape0 libxcb1-dev libxdmcp-dev libxt-dev libxv1
+2026-06-07T08:58:38.7473904Z   libxxf86dga1 openjdk-17-jdk-headless openjdk-17-jre openjdk-17-jre-headless
+2026-06-07T08:58:38.7474669Z   x11-utils x11proto-dev xorg-sgml-doctools xtrans-dev
+2026-06-07T08:58:38.7480527Z Suggested packages:
+2026-06-07T08:58:38.7481103Z   libice-doc pcscd libsm-doc libx11-doc libxcb-doc libxt-doc openjdk-17-demo
+2026-06-07T08:58:38.7481639Z   openjdk-17-source visualvm libnss-mdns fonts-ipafont-gothic
+2026-06-07T08:58:38.7482154Z   fonts-ipafont-mincho fonts-wqy-microhei | fonts-wqy-zenhei fonts-indic
+2026-06-07T08:58:38.7482589Z   mesa-utils
+2026-06-07T08:58:38.7483153Z Recommended packages:
+2026-06-07T08:58:38.7483545Z   luit
+2026-06-07T08:58:38.7739603Z The following NEW packages will be installed:
+2026-06-07T08:58:38.7742030Z   ca-certificates-java libatk-wrapper-java libatk-wrapper-java-jni libgif7
+2026-06-07T08:58:38.7745999Z   libice-dev libpcsclite1 libpthread-stubs0-dev libsm-dev libx11-dev
+2026-06-07T08:58:38.7746727Z   libxau-dev libxcb-shape0 libxcb1-dev libxdmcp-dev libxt-dev libxv1
+2026-06-07T08:58:38.7747869Z   libxxf86dga1 openjdk-17-jdk openjdk-17-jdk-headless openjdk-17-jre
+2026-06-07T08:58:38.7749884Z   openjdk-17-jre-headless x11-utils x11proto-dev xorg-sgml-doctools xtrans-dev
+2026-06-07T08:58:38.7934160Z 0 upgraded, 24 newly installed, 0 to remove and 72 not upgraded.
+2026-06-07T08:58:38.7934883Z Need to get 125 MB of archives.
+2026-06-07T08:58:38.7935502Z After this operation, 284 MB of additional disk space will be used.
+2026-06-07T08:58:38.7936263Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+2026-06-07T08:58:38.8343548Z Get:2 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 ca-certificates-java all 20240118 [11.6 kB]
+2026-06-07T08:58:38.8565530Z Get:3 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 libxcb-shape0 amd64 1.15-1ubuntu2 [6100 B]
+2026-06-07T08:58:38.8787128Z Get:4 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 libxv1 amd64 2:1.0.11-1.1build1 [10.7 kB]
+2026-06-07T08:58:38.9008478Z Get:5 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 libxxf86dga1 amd64 2:1.1.5-1build1 [11.6 kB]
+2026-06-07T08:58:38.9228334Z Get:6 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 x11-utils amd64 7.7+6build2 [189 kB]
+2026-06-07T08:58:38.9488329Z Get:7 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 libatk-wrapper-java all 0.40.0-3build2 [54.3 kB]
+2026-06-07T08:58:38.9856939Z Get:8 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 libatk-wrapper-java-jni amd64 0.40.0-3build2 [46.4 kB]
+2026-06-07T08:58:39.0077569Z Get:9 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 libgif7 amd64 5.2.2-1ubuntu1 [35.2 kB]
+2026-06-07T08:58:39.0299097Z Get:10 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 xorg-sgml-doctools all 1:1.11-1.1 [10.9 kB]
+2026-06-07T08:58:39.0519154Z Get:11 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 x11proto-dev all 2023.2-1 [602 kB]
+2026-06-07T08:58:39.0788341Z Get:12 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 libice-dev amd64 2:1.0.10-1build3 [51.0 kB]
+2026-06-07T08:58:39.1147642Z Get:13 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 libpcsclite1 amd64 2.0.3-1build1 [21.4 kB]
+2026-06-07T08:58:39.1371527Z Get:14 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 libpthread-stubs0-dev amd64 0.4-1build3 [4746 B]
+2026-06-07T08:58:39.1590015Z Get:15 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 libsm-dev amd64 2:1.2.3-1build3 [17.8 kB]
+2026-06-07T08:58:39.1808775Z Get:16 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 libxau-dev amd64 1:1.0.9-1build6 [9570 B]
+2026-06-07T08:58:39.2028633Z Get:17 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 libxdmcp-dev amd64 1:1.1.3-0ubuntu6 [26.5 kB]
+2026-06-07T08:58:39.2248359Z Get:18 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 xtrans-dev all 1.4.0-1 [68.9 kB]
+2026-06-07T08:58:39.2477764Z Get:19 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 libxcb1-dev amd64 1.15-1ubuntu2 [85.8 kB]
+2026-06-07T08:58:39.3130153Z Get:20 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 libx11-dev amd64 2:1.8.7-1build1 [732 kB]
+2026-06-07T08:58:39.3437757Z Get:21 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 libxt-dev amd64 1:1.2.1-1.2build1 [394 kB]
+2026-06-07T08:58:39.3747886Z Get:22 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 openjdk-17-jre-headless amd64 17.0.19+10-1~24.04.2 [48.1 MB]
+2026-06-07T08:58:39.8274720Z Get:23 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 openjdk-17-jre amd64 17.0.19+10-1~24.04.2 [234 kB]
+2026-06-07T08:58:39.8515168Z Get:24 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 openjdk-17-jdk-headless amd64 17.0.19+10-1~24.04.2 [71.6 MB]
+2026-06-07T08:58:41.0724295Z Get:25 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 openjdk-17-jdk amd64 17.0.19+10-1~24.04.2 [2479 kB]
+2026-06-07T08:58:41.3602680Z Fetched 125 MB in 2s (54.0 MB/s)
+2026-06-07T08:58:41.3856005Z Selecting previously unselected package ca-certificates-java.
+2026-06-07T08:58:41.4134787Z (Reading database ... 
+2026-06-07T08:58:41.4135372Z (Reading database ... 5%
+2026-06-07T08:58:41.4135819Z (Reading database ... 10%
+2026-06-07T08:58:41.4136213Z (Reading database ... 15%
+2026-06-07T08:58:41.4136568Z (Reading database ... 20%
+2026-06-07T08:58:41.4136820Z (Reading database ... 25%
+2026-06-07T08:58:41.4137763Z (Reading database ... 30%
+2026-06-07T08:58:41.4138258Z (Reading database ... 35%
+2026-06-07T08:58:41.4138680Z (Reading database ... 40%
+2026-06-07T08:58:41.4138958Z (Reading database ... 45%
+2026-06-07T08:58:41.4139192Z (Reading database ... 50%
+2026-06-07T08:58:41.4176372Z (Reading database ... 55%
+2026-06-07T08:58:41.5702300Z (Reading database ... 60%
+2026-06-07T08:58:41.7725533Z (Reading database ... 65%
+2026-06-07T08:58:41.9246306Z (Reading database ... 70%
+2026-06-07T08:58:42.0720974Z (Reading database ... 75%
+2026-06-07T08:58:42.2216911Z (Reading database ... 80%
+2026-06-07T08:58:42.4182504Z (Reading database ... 85%
+2026-06-07T08:58:42.5247230Z (Reading database ... 90%
+2026-06-07T08:58:42.6800527Z (Reading database ... 95%
+2026-06-07T08:58:42.6801115Z (Reading database ... 100%
+2026-06-07T08:58:42.6801755Z (Reading database ... 202271 files and directories currently installed.)
+2026-06-07T08:58:42.6844039Z Preparing to unpack .../00-ca-certificates-java_20240118_all.deb ...
+2026-06-07T08:58:42.6900236Z Unpacking ca-certificates-java (20240118) ...
+2026-06-07T08:58:42.7189575Z Selecting previously unselected package libxcb-shape0:amd64.
+2026-06-07T08:58:42.7318818Z Preparing to unpack .../01-libxcb-shape0_1.15-1ubuntu2_amd64.deb ...
+2026-06-07T08:58:42.7347294Z Unpacking libxcb-shape0:amd64 (1.15-1ubuntu2) ...
+2026-06-07T08:58:42.7580802Z Selecting previously unselected package libxv1:amd64.
+2026-06-07T08:58:42.7707259Z Preparing to unpack .../02-libxv1_2%3a1.0.11-1.1build1_amd64.deb ...
+2026-06-07T08:58:42.7719726Z Unpacking libxv1:amd64 (2:1.0.11-1.1build1) ...
+2026-06-07T08:58:42.7943677Z Selecting previously unselected package libxxf86dga1:amd64.
+2026-06-07T08:58:42.8070400Z Preparing to unpack .../03-libxxf86dga1_2%3a1.1.5-1build1_amd64.deb ...
+2026-06-07T08:58:42.8082299Z Unpacking libxxf86dga1:amd64 (2:1.1.5-1build1) ...
+2026-06-07T08:58:42.8320123Z Selecting previously unselected package x11-utils.
+2026-06-07T08:58:42.8446996Z Preparing to unpack .../04-x11-utils_7.7+6build2_amd64.deb ...
+2026-06-07T08:58:42.8460330Z Unpacking x11-utils (7.7+6build2) ...
+2026-06-07T08:58:42.8899786Z Selecting previously unselected package libatk-wrapper-java.
+2026-06-07T08:58:42.9027981Z Preparing to unpack .../05-libatk-wrapper-java_0.40.0-3build2_all.deb ...
+2026-06-07T08:58:42.9039995Z Unpacking libatk-wrapper-java (0.40.0-3build2) ...
+2026-06-07T08:58:42.9264052Z Selecting previously unselected package libatk-wrapper-java-jni:amd64.
+2026-06-07T08:58:42.9390708Z Preparing to unpack .../06-libatk-wrapper-java-jni_0.40.0-3build2_amd64.deb ...
+2026-06-07T08:58:42.9403793Z Unpacking libatk-wrapper-java-jni:amd64 (0.40.0-3build2) ...
+2026-06-07T08:58:42.9634980Z Selecting previously unselected package libgif7:amd64.
+2026-06-07T08:58:42.9762136Z Preparing to unpack .../07-libgif7_5.2.2-1ubuntu1_amd64.deb ...
+2026-06-07T08:58:42.9775154Z Unpacking libgif7:amd64 (5.2.2-1ubuntu1) ...
+2026-06-07T08:58:42.9995664Z Selecting previously unselected package xorg-sgml-doctools.
+2026-06-07T08:58:43.0121863Z Preparing to unpack .../08-xorg-sgml-doctools_1%3a1.11-1.1_all.deb ...
+2026-06-07T08:58:43.0134235Z Unpacking xorg-sgml-doctools (1:1.11-1.1) ...
+2026-06-07T08:58:43.0398310Z Selecting previously unselected package x11proto-dev.
+2026-06-07T08:58:43.0528583Z Preparing to unpack .../09-x11proto-dev_2023.2-1_all.deb ...
+2026-06-07T08:58:43.0541483Z Unpacking x11proto-dev (2023.2-1) ...
+2026-06-07T08:58:43.1193448Z Selecting previously unselected package libice-dev:amd64.
+2026-06-07T08:58:43.1321991Z Preparing to unpack .../10-libice-dev_2%3a1.0.10-1build3_amd64.deb ...
+2026-06-07T08:58:43.1332759Z Unpacking libice-dev:amd64 (2:1.0.10-1build3) ...
+2026-06-07T08:58:43.1595049Z Selecting previously unselected package libpcsclite1:amd64.
+2026-06-07T08:58:43.1722040Z Preparing to unpack .../11-libpcsclite1_2.0.3-1build1_amd64.deb ...
+2026-06-07T08:58:43.1733734Z Unpacking libpcsclite1:amd64 (2.0.3-1build1) ...
+2026-06-07T08:58:43.1946778Z Selecting previously unselected package libpthread-stubs0-dev:amd64.
+2026-06-07T08:58:43.2074171Z Preparing to unpack .../12-libpthread-stubs0-dev_0.4-1build3_amd64.deb ...
+2026-06-07T08:58:43.2085743Z Unpacking libpthread-stubs0-dev:amd64 (0.4-1build3) ...
+2026-06-07T08:58:43.2323246Z Selecting previously unselected package libsm-dev:amd64.
+2026-06-07T08:58:43.2448286Z Preparing to unpack .../13-libsm-dev_2%3a1.2.3-1build3_amd64.deb ...
+2026-06-07T08:58:43.2458368Z Unpacking libsm-dev:amd64 (2:1.2.3-1build3) ...
+2026-06-07T08:58:43.2671459Z Selecting previously unselected package libxau-dev:amd64.
+2026-06-07T08:58:43.2797618Z Preparing to unpack .../14-libxau-dev_1%3a1.0.9-1build6_amd64.deb ...
+2026-06-07T08:58:43.2815475Z Unpacking libxau-dev:amd64 (1:1.0.9-1build6) ...
+2026-06-07T08:58:43.3058989Z Selecting previously unselected package libxdmcp-dev:amd64.
+2026-06-07T08:58:43.3184207Z Preparing to unpack .../15-libxdmcp-dev_1%3a1.1.3-0ubuntu6_amd64.deb ...
+2026-06-07T08:58:43.3195299Z Unpacking libxdmcp-dev:amd64 (1:1.1.3-0ubuntu6) ...
+2026-06-07T08:58:43.3503647Z Selecting previously unselected package xtrans-dev.
+2026-06-07T08:58:43.3629865Z Preparing to unpack .../16-xtrans-dev_1.4.0-1_all.deb ...
+2026-06-07T08:58:43.3641023Z Unpacking xtrans-dev (1.4.0-1) ...
+2026-06-07T08:58:43.3908453Z Selecting previously unselected package libxcb1-dev:amd64.
+2026-06-07T08:58:43.4034004Z Preparing to unpack .../17-libxcb1-dev_1.15-1ubuntu2_amd64.deb ...
+2026-06-07T08:58:43.4046447Z Unpacking libxcb1-dev:amd64 (1.15-1ubuntu2) ...
+2026-06-07T08:58:43.4279427Z Selecting previously unselected package libx11-dev:amd64.
+2026-06-07T08:58:43.4408730Z Preparing to unpack .../18-libx11-dev_2%3a1.8.7-1build1_amd64.deb ...
+2026-06-07T08:58:43.4426697Z Unpacking libx11-dev:amd64 (2:1.8.7-1build1) ...
+2026-06-07T08:58:43.4745163Z Selecting previously unselected package libxt-dev:amd64.
+2026-06-07T08:58:43.4870614Z Preparing to unpack .../19-libxt-dev_1%3a1.2.1-1.2build1_amd64.deb ...
+2026-06-07T08:58:43.4885141Z Unpacking libxt-dev:amd64 (1:1.2.1-1.2build1) ...
+2026-06-07T08:58:43.5467760Z Selecting previously unselected package openjdk-17-jre-headless:amd64.
+2026-06-07T08:58:43.5594721Z Preparing to unpack .../20-openjdk-17-jre-headless_17.0.19+10-1~24.04.2_amd64.deb ...
+2026-06-07T08:58:43.5605979Z Unpacking openjdk-17-jre-headless:amd64 (17.0.19+10-1~24.04.2) ...
+2026-06-07T08:58:44.2530454Z Selecting previously unselected package openjdk-17-jre:amd64.
+2026-06-07T08:58:44.2659494Z Preparing to unpack .../21-openjdk-17-jre_17.0.19+10-1~24.04.2_amd64.deb ...
+2026-06-07T08:58:44.2671126Z Unpacking openjdk-17-jre:amd64 (17.0.19+10-1~24.04.2) ...
+2026-06-07T08:58:44.2994313Z Selecting previously unselected package openjdk-17-jdk-headless:amd64.
+2026-06-07T08:58:44.3123653Z Preparing to unpack .../22-openjdk-17-jdk-headless_17.0.19+10-1~24.04.2_amd64.deb ...
+2026-06-07T08:58:44.3162723Z Unpacking openjdk-17-jdk-headless:amd64 (17.0.19+10-1~24.04.2) ...
+2026-06-07T08:58:44.5700667Z Selecting previously unselected package openjdk-17-jdk:amd64.
+2026-06-07T08:58:44.5833123Z Preparing to unpack .../23-openjdk-17-jdk_17.0.19+10-1~24.04.2_amd64.deb ...
+2026-06-07T08:58:44.5845028Z Unpacking openjdk-17-jdk:amd64 (17.0.19+10-1~24.04.2) ...
+2026-06-07T08:58:44.6354842Z Setting up libxcb-shape0:amd64 (1.15-1ubuntu2) ...
+2026-06-07T08:58:44.6389523Z Setting up libxxf86dga1:amd64 (2:1.1.5-1build1) ...
+2026-06-07T08:58:44.6421671Z Setting up libpthread-stubs0-dev:amd64 (0.4-1build3) ...
+2026-06-07T08:58:44.6450120Z Setting up xtrans-dev (1.4.0-1) ...
+2026-06-07T08:58:44.6480649Z Setting up libxv1:amd64 (2:1.0.11-1.1build1) ...
+2026-06-07T08:58:44.6512284Z Setting up libpcsclite1:amd64 (2.0.3-1build1) ...
+2026-06-07T08:58:44.6543212Z Setting up libgif7:amd64 (5.2.2-1ubuntu1) ...
+2026-06-07T08:58:44.6572789Z Setting up x11-utils (7.7+6build2) ...
+2026-06-07T08:58:44.6704015Z Setting up xorg-sgml-doctools (1:1.11-1.1) ...
+2026-06-07T08:58:44.6734736Z Setting up libatk-wrapper-java (0.40.0-3build2) ...
+2026-06-07T08:58:44.6761982Z Setting up ca-certificates-java (20240118) ...
+2026-06-07T08:58:46.8663610Z Adding debian:ACCVRAIZ1.pem
+2026-06-07T08:58:46.8689801Z Adding debian:AC_RAIZ_FNMT-RCM.pem
+2026-06-07T08:58:46.9932625Z Adding debian:AC_RAIZ_FNMT-RCM_SERVIDORES_SEGUROS.pem
+2026-06-07T08:58:46.9956081Z Adding debian:ANF_Secure_Server_Root_CA.pem
+2026-06-07T08:58:46.9977773Z Adding debian:Actalis_Authentication_Root_CA.pem
+2026-06-07T08:58:46.9992003Z Adding debian:AffirmTrust_Commercial.pem
+2026-06-07T08:58:47.0006689Z Adding debian:AffirmTrust_Networking.pem
+2026-06-07T08:58:47.0027283Z Adding debian:AffirmTrust_Premium.pem
+2026-06-07T08:58:47.0038915Z Adding debian:AffirmTrust_Premium_ECC.pem
+2026-06-07T08:58:47.0052828Z Adding debian:Amazon_Root_CA_1.pem
+2026-06-07T08:58:47.0073814Z Adding debian:Amazon_Root_CA_2.pem
+2026-06-07T08:58:47.0083887Z Adding debian:Amazon_Root_CA_3.pem
+2026-06-07T08:58:47.0094942Z Adding debian:Amazon_Root_CA_4.pem
+2026-06-07T08:58:47.0110631Z Adding debian:Atos_TrustedRoot_2011.pem
+2026-06-07T08:58:47.0121484Z Adding debian:Atos_TrustedRoot_Root_CA_ECC_TLS_2021.pem
+2026-06-07T08:58:47.0419919Z Adding debian:Atos_TrustedRoot_Root_CA_RSA_TLS_2021.pem
+2026-06-07T08:58:47.0449917Z Adding debian:Autoridad_de_Certificacion_Firmaprofesional_CIF_A62634068.pem
+2026-06-07T08:58:47.0464899Z Adding debian:BJCA_Global_Root_CA1.pem
+2026-06-07T08:58:47.0477140Z Adding debian:BJCA_Global_Root_CA2.pem
+2026-06-07T08:58:47.0491159Z Adding debian:Baltimore_CyberTrust_Root.pem
+2026-06-07T08:58:47.0510609Z Adding debian:Buypass_Class_2_Root_CA.pem
+2026-06-07T08:58:47.0533884Z Adding debian:Buypass_Class_3_Root_CA.pem
+2026-06-07T08:58:47.0553703Z Adding debian:CA_Disig_Root_R2.pem
+2026-06-07T08:58:47.0575733Z Adding debian:CFCA_EV_ROOT.pem
+2026-06-07T08:58:47.0593745Z Adding debian:COMODO_Certification_Authority.pem
+2026-06-07T08:58:47.0606851Z Adding debian:COMODO_ECC_Certification_Authority.pem
+2026-06-07T08:58:47.0626821Z Adding debian:COMODO_RSA_Certification_Authority.pem
+2026-06-07T08:58:47.0636579Z Adding debian:Certainly_Root_E1.pem
+2026-06-07T08:58:47.0656252Z Adding debian:Certainly_Root_R1.pem
+2026-06-07T08:58:47.0733455Z Adding debian:Certigna.pem
+2026-06-07T08:58:47.0758011Z Adding debian:Certigna_Root_CA.pem
+2026-06-07T08:58:47.0773834Z Adding debian:Certum_EC-384_CA.pem
+2026-06-07T08:58:47.0784777Z Adding debian:Certum_Trusted_Network_CA.pem
+2026-06-07T08:58:47.0806207Z Adding debian:Certum_Trusted_Network_CA_2.pem
+2026-06-07T08:58:47.0829017Z Adding debian:Certum_Trusted_Root_CA.pem
+2026-06-07T08:58:47.0839229Z Adding debian:CommScope_Public_Trust_ECC_Root-01.pem
+2026-06-07T08:58:47.0850609Z Adding debian:CommScope_Public_Trust_ECC_Root-02.pem
+2026-06-07T08:58:47.0873673Z Adding debian:CommScope_Public_Trust_RSA_Root-01.pem
+2026-06-07T08:58:47.0893861Z Adding debian:CommScope_Public_Trust_RSA_Root-02.pem
+2026-06-07T08:58:47.0915606Z Adding debian:Comodo_AAA_Services_root.pem
+2026-06-07T08:58:47.0931609Z Adding debian:D-TRUST_BR_Root_CA_1_2020.pem
+2026-06-07T08:58:47.0949017Z Adding debian:D-TRUST_EV_Root_CA_1_2020.pem
+2026-06-07T08:58:47.0968559Z Adding debian:D-TRUST_Root_Class_3_CA_2_2009.pem
+2026-06-07T08:58:47.0986230Z Adding debian:D-TRUST_Root_Class_3_CA_2_EV_2009.pem
+2026-06-07T08:58:47.0999727Z Adding debian:DigiCert_Assured_ID_Root_CA.pem
+2026-06-07T08:58:47.1012569Z Adding debian:DigiCert_Assured_ID_Root_G2.pem
+2026-06-07T08:58:47.1022013Z Adding debian:DigiCert_Assured_ID_Root_G3.pem
+2026-06-07T08:58:47.1036784Z Adding debian:DigiCert_Global_Root_CA.pem
+2026-06-07T08:58:47.1049135Z Adding debian:DigiCert_Global_Root_G2.pem
+2026-06-07T08:58:47.1059236Z Adding debian:DigiCert_Global_Root_G3.pem
+2026-06-07T08:58:47.1075811Z Adding debian:DigiCert_High_Assurance_EV_Root_CA.pem
+2026-06-07T08:58:47.1085762Z Adding debian:DigiCert_TLS_ECC_P384_Root_G5.pem
+2026-06-07T08:58:47.1109677Z Adding debian:DigiCert_TLS_RSA4096_Root_G5.pem
+2026-06-07T08:58:47.1130040Z Adding debian:DigiCert_Trusted_Root_G4.pem
+2026-06-07T08:58:47.1145522Z Adding debian:Entrust.net_Premium_2048_Secure_Server_CA.pem
+2026-06-07T08:58:47.1168796Z Adding debian:Entrust_Root_Certification_Authority.pem
+2026-06-07T08:58:47.1180449Z Adding debian:Entrust_Root_Certification_Authority_-_EC1.pem
+2026-06-07T08:58:47.1195590Z Adding debian:Entrust_Root_Certification_Authority_-_G2.pem
+2026-06-07T08:58:47.1217217Z Adding debian:Entrust_Root_Certification_Authority_-_G4.pem
+2026-06-07T08:58:47.1235841Z Adding debian:GDCA_TrustAUTH_R5_ROOT.pem
+2026-06-07T08:58:47.1253458Z Adding debian:GLOBALTRUST_2020.pem
+2026-06-07T08:58:47.1271448Z Adding debian:GTS_Root_R1.pem
+2026-06-07T08:58:47.1295357Z Adding debian:GTS_Root_R2.pem
+2026-06-07T08:58:47.1306841Z Adding debian:GTS_Root_R3.pem
+2026-06-07T08:58:47.1317807Z Adding debian:GTS_Root_R4.pem
+2026-06-07T08:58:47.1328491Z Adding debian:GlobalSign_ECC_Root_CA_-_R4.pem
+2026-06-07T08:58:47.1342215Z Adding debian:GlobalSign_ECC_Root_CA_-_R5.pem
+2026-06-07T08:58:47.1356204Z Adding debian:GlobalSign_Root_CA.pem
+2026-06-07T08:58:47.1368946Z Adding debian:GlobalSign_Root_CA_-_R3.pem
+2026-06-07T08:58:47.1392282Z Adding debian:GlobalSign_Root_CA_-_R6.pem
+2026-06-07T08:58:47.1401665Z Adding debian:GlobalSign_Root_E46.pem
+2026-06-07T08:58:47.1438218Z Adding debian:GlobalSign_Root_R46.pem
+2026-06-07T08:58:47.1445355Z Adding debian:Go_Daddy_Class_2_CA.pem
+2026-06-07T08:58:47.1463585Z Adding debian:Go_Daddy_Root_Certificate_Authority_-_G2.pem
+2026-06-07T08:58:47.1475907Z Adding debian:HARICA_TLS_ECC_Root_CA_2021.pem
+2026-06-07T08:58:47.1500893Z Adding debian:HARICA_TLS_RSA_Root_CA_2021.pem
+2026-06-07T08:58:47.1514506Z Adding debian:Hellenic_Academic_and_Research_Institutions_ECC_RootCA_2015.pem
+2026-06-07T08:58:47.1540092Z Adding debian:Hellenic_Academic_and_Research_Institutions_RootCA_2015.pem
+2026-06-07T08:58:47.1563228Z Adding debian:HiPKI_Root_CA_-_G1.pem
+2026-06-07T08:58:47.1587287Z Adding debian:Hongkong_Post_Root_CA_3.pem
+2026-06-07T08:58:47.1610190Z Adding debian:ISRG_Root_X1.pem
+2026-06-07T08:58:47.1620827Z Adding debian:ISRG_Root_X2.pem
+2026-06-07T08:58:47.1643656Z Adding debian:IdenTrust_Commercial_Root_CA_1.pem
+2026-06-07T08:58:47.1666907Z Adding debian:IdenTrust_Public_Sector_Root_CA_1.pem
+2026-06-07T08:58:47.1693873Z Adding debian:Izenpe.com.pem
+2026-06-07T08:58:47.1714732Z Adding debian:Microsec_e-Szigno_Root_CA_2009.pem
+2026-06-07T08:58:47.1727074Z Adding debian:Microsoft_ECC_Root_Certificate_Authority_2017.pem
+2026-06-07T08:58:47.1747748Z Adding debian:Microsoft_RSA_Root_Certificate_Authority_2017.pem
+2026-06-07T08:58:47.1772018Z Adding debian:NAVER_Global_Root_Certification_Authority.pem
+2026-06-07T08:58:47.1804823Z Adding debian:NetLock_Arany_=Class_Gold=_Főtanúsítvány.pem
+2026-06-07T08:58:47.1824097Z Adding debian:OISTE_WISeKey_Global_Root_GB_CA.pem
+2026-06-07T08:58:47.1837706Z Adding debian:OISTE_WISeKey_Global_Root_GC_CA.pem
+2026-06-07T08:58:47.1860776Z Adding debian:QuoVadis_Root_CA_1_G3.pem
+2026-06-07T08:58:47.1884753Z Adding debian:QuoVadis_Root_CA_2.pem
+2026-06-07T08:58:47.1916120Z Adding debian:QuoVadis_Root_CA_2_G3.pem
+2026-06-07T08:58:47.1938396Z Adding debian:QuoVadis_Root_CA_3.pem
+2026-06-07T08:58:47.1983638Z Adding debian:QuoVadis_Root_CA_3_G3.pem
+2026-06-07T08:58:47.1984652Z Adding debian:SSL.com_EV_Root_Certification_Authority_ECC.pem
+2026-06-07T08:58:47.1999356Z Adding debian:SSL.com_EV_Root_Certification_Authority_RSA_R2.pem
+2026-06-07T08:58:47.2024316Z Adding debian:SSL.com_Root_Certification_Authority_ECC.pem
+2026-06-07T08:58:47.2048349Z Adding debian:SSL.com_Root_Certification_Authority_RSA.pem
+2026-06-07T08:58:47.2073768Z Adding debian:SSL.com_TLS_ECC_Root_CA_2022.pem
+2026-06-07T08:58:47.2103690Z Adding debian:SSL.com_TLS_RSA_Root_CA_2022.pem
+2026-06-07T08:58:47.2117894Z Adding debian:SZAFIR_ROOT_CA2.pem
+2026-06-07T08:58:47.2131377Z Adding debian:Sectigo_Public_Server_Authentication_Root_E46.pem
+2026-06-07T08:58:47.2132599Z Adding debian:Sectigo_Public_Server_Authentication_Root_R46.pem
+2026-06-07T08:58:47.2133845Z Adding debian:SecureSign_RootCA11.pem
+2026-06-07T08:58:47.2150839Z Adding debian:SecureTrust_CA.pem
+2026-06-07T08:58:47.2167956Z Adding debian:Secure_Global_CA.pem
+2026-06-07T08:58:47.2179034Z Adding debian:Security_Communication_ECC_RootCA1.pem
+2026-06-07T08:58:47.2194777Z Adding debian:Security_Communication_RootCA2.pem
+2026-06-07T08:58:47.2217844Z Adding debian:Security_Communication_RootCA3.pem
+2026-06-07T08:58:47.2231952Z Adding debian:Security_Communication_Root_CA.pem
+2026-06-07T08:58:47.2250650Z Adding debian:Starfield_Class_2_CA.pem
+2026-06-07T08:58:47.2266324Z Adding debian:Starfield_Root_Certificate_Authority_-_G2.pem
+2026-06-07T08:58:47.2283144Z Adding debian:Starfield_Services_Root_Certificate_Authority_-_G2.pem
+2026-06-07T08:58:47.2305975Z Adding debian:SwissSign_Gold_CA_-_G2.pem
+2026-06-07T08:58:47.2328432Z Adding debian:SwissSign_Silver_CA_-_G2.pem
+2026-06-07T08:58:47.2345205Z Adding debian:T-TeleSec_GlobalRoot_Class_2.pem
+2026-06-07T08:58:47.2359334Z Adding debian:T-TeleSec_GlobalRoot_Class_3.pem
+2026-06-07T08:58:47.2376921Z Adding debian:TUBITAK_Kamu_SM_SSL_Kok_Sertifikasi_-_Surum_1.pem
+2026-06-07T08:58:47.2387296Z Adding debian:TWCA_Global_Root_CA.pem
+2026-06-07T08:58:47.2398244Z Adding debian:TWCA_Root_Certification_Authority.pem
+2026-06-07T08:58:47.2413009Z Adding debian:TeliaSonera_Root_CA_v1.pem
+2026-06-07T08:58:47.2429887Z Adding debian:Telia_Root_CA_v2.pem
+2026-06-07T08:58:47.2448077Z Adding debian:TrustAsia_Global_Root_CA_G3.pem
+2026-06-07T08:58:47.2457737Z Adding debian:TrustAsia_Global_Root_CA_G4.pem
+2026-06-07T08:58:47.2475974Z Adding debian:Trustwave_Global_Certification_Authority.pem
+2026-06-07T08:58:47.2485183Z Adding debian:Trustwave_Global_ECC_P256_Certification_Authority.pem
+2026-06-07T08:58:47.2495038Z Adding debian:Trustwave_Global_ECC_P384_Certification_Authority.pem
+2026-06-07T08:58:47.2511346Z Adding debian:TunTrust_Root_CA.pem
+2026-06-07T08:58:47.2527769Z Adding debian:UCA_Extended_Validation_Root.pem
+2026-06-07T08:58:47.2542269Z Adding debian:UCA_Global_G2_Root.pem
+2026-06-07T08:58:47.2551548Z Adding debian:USERTrust_ECC_Certification_Authority.pem
+2026-06-07T08:58:47.2569266Z Adding debian:USERTrust_RSA_Certification_Authority.pem
+2026-06-07T08:58:47.2582860Z Adding debian:XRamp_Global_CA_Root.pem
+2026-06-07T08:58:47.2593565Z Adding debian:certSIGN_ROOT_CA.pem
+2026-06-07T08:58:47.2609005Z Adding debian:certSIGN_Root_CA_G2.pem
+2026-06-07T08:58:47.2617683Z Adding debian:e-Szigno_Root_CA_2017.pem
+2026-06-07T08:58:47.2633498Z Adding debian:ePKI_Root_Certification_Authority.pem
+2026-06-07T08:58:47.2641795Z Adding debian:emSign_ECC_Root_CA_-_C3.pem
+2026-06-07T08:58:47.2649708Z Adding debian:emSign_ECC_Root_CA_-_G3.pem
+2026-06-07T08:58:47.2660694Z Adding debian:emSign_Root_CA_-_C1.pem
+2026-06-07T08:58:47.2671471Z Adding debian:emSign_Root_CA_-_G1.pem
+2026-06-07T08:58:47.2679199Z Adding debian:vTrus_ECC_Root_CA.pem
+2026-06-07T08:58:47.2694220Z Adding debian:vTrus_Root_CA.pem
+2026-06-07T08:58:47.3576297Z done.
+2026-06-07T08:58:47.3624142Z Setting up libatk-wrapper-java-jni:amd64 (0.40.0-3build2) ...
+2026-06-07T08:58:47.3653319Z Setting up openjdk-17-jre-headless:amd64 (17.0.19+10-1~24.04.2) ...
+2026-06-07T08:58:47.4482151Z Processing triggers for libc-bin (2.39-0ubuntu8.7) ...
+2026-06-07T08:58:47.4813415Z Processing triggers for man-db (2.12.0-4build2) ...
+2026-06-07T08:58:47.4839705Z Not building database; man-db/auto-update is not 'true'.
+2026-06-07T08:58:47.4874410Z Processing triggers for sgml-base (1.31) ...
+2026-06-07T08:58:47.4995212Z Setting up x11proto-dev (2023.2-1) ...
+2026-06-07T08:58:47.5032344Z Setting up libxau-dev:amd64 (1:1.0.9-1build6) ...
+2026-06-07T08:58:47.5066486Z Processing triggers for hicolor-icon-theme (0.17-2) ...
+2026-06-07T08:58:47.6177177Z Setting up libice-dev:amd64 (2:1.0.10-1build3) ...
+2026-06-07T08:58:47.6208235Z Setting up libsm-dev:amd64 (2:1.2.3-1build3) ...
+2026-06-07T08:58:47.6259997Z Setting up libxdmcp-dev:amd64 (1:1.1.3-0ubuntu6) ...
+2026-06-07T08:58:47.6296807Z Setting up libxcb1-dev:amd64 (1.15-1ubuntu2) ...
+2026-06-07T08:58:47.6336624Z Setting up libx11-dev:amd64 (2:1.8.7-1build1) ...
+2026-06-07T08:58:47.6374469Z Setting up libxt-dev:amd64 (1:1.2.1-1.2build1) ...
+2026-06-07T08:58:47.6448620Z Processing triggers for ca-certificates-java (20240118) ...
+2026-06-07T08:58:47.6775075Z done.
+2026-06-07T08:58:47.6818625Z Setting up openjdk-17-jre:amd64 (17.0.19+10-1~24.04.2) ...
+2026-06-07T08:58:47.6888860Z Setting up openjdk-17-jdk-headless:amd64 (17.0.19+10-1~24.04.2) ...
+2026-06-07T08:58:47.8061118Z Setting up openjdk-17-jdk:amd64 (17.0.19+10-1~24.04.2) ...
+2026-06-07T08:58:48.4548330Z 
+2026-06-07T08:58:48.4549012Z Running kernel seems to be up-to-date.
+2026-06-07T08:58:48.4549470Z 
+2026-06-07T08:58:48.4549720Z No services need to be restarted.
+2026-06-07T08:58:48.4550045Z 
+2026-06-07T08:58:48.4550355Z No containers need to be restarted.
+2026-06-07T08:58:48.4550699Z 
+2026-06-07T08:58:48.4550919Z No user sessions are running outdated binaries.
+2026-06-07T08:58:48.4551283Z 
+2026-06-07T08:58:48.4552119Z No VM guests are running outdated hypervisor (qemu) binaries on this host.
+2026-06-07T08:58:49.4135747Z ##[group]Run mkdir -p keystore
+2026-06-07T08:58:49.4136078Z [36;1mmkdir -p keystore[0m
+2026-06-07T08:58:49.4136331Z [36;1mkeytool -genkeypair -v \[0m
+2026-06-07T08:58:49.4136632Z [36;1m  -keystore keystore/release.keystore \[0m
+2026-06-07T08:58:49.4136933Z [36;1m  -alias release \[0m
+2026-06-07T08:58:49.4137214Z [36;1m  -keyalg RSA -keysize 2048 -validity 10000 \[0m
+2026-06-07T08:58:49.4137808Z [36;1m  -storepass blbl2024 -keypass blbl2024 \[0m
+2026-06-07T08:58:49.4138196Z [36;1m  -dname "CN=BLBL AI, OU=Enhanced, O=BLBL, L=Shanghai, C=CN"[0m
+2026-06-07T08:58:49.4163633Z shell: /usr/bin/bash -e {0}
+2026-06-07T08:58:49.4163884Z env:
+2026-06-07T08:58:49.4164086Z   VERSION_NAME: 11.19.0
+2026-06-07T08:58:49.4164311Z   VERSION_CODE: 496
+2026-06-07T08:58:49.4164559Z   JAVA_HOME: /usr/lib/jvm/java-17-openjdk-amd64
+2026-06-07T08:58:49.4164867Z ##[endgroup]
+2026-06-07T08:58:50.0534698Z Generating 2,048 bit RSA key pair and self-signed certificate (SHA256withRSA) with a validity of 10,000 days
+2026-06-07T08:58:50.0554709Z 	for: CN=BLBL AI, OU=Enhanced, O=BLBL, L=Shanghai, C=CN
+2026-06-07T08:58:50.3864559Z [Storing keystore/release.keystore]
+2026-06-07T08:58:50.4794567Z ##[group]Run chmod +x ./gradlew
+2026-06-07T08:58:50.4794905Z [36;1mchmod +x ./gradlew[0m
+2026-06-07T08:58:50.4795339Z [36;1m./gradlew assembleRelease -PversionName=11.19.0 -PversionCode=496 --no-daemon[0m
+2026-06-07T08:58:50.4820866Z shell: /usr/bin/bash -e {0}
+2026-06-07T08:58:50.4821132Z env:
+2026-06-07T08:58:50.4821329Z   VERSION_NAME: 11.19.0
+2026-06-07T08:58:50.4821558Z   VERSION_CODE: 496
+2026-06-07T08:58:50.4821814Z   JAVA_HOME: /usr/lib/jvm/java-17-openjdk-amd64
+2026-06-07T08:58:50.4822137Z   RELEASE_STORE_PASSWORD: blbl2024
+2026-06-07T08:58:50.4822398Z   RELEASE_KEY_ALIAS: release
+2026-06-07T08:58:50.4822641Z   RELEASE_KEY_PASSWORD: blbl2024
+2026-06-07T08:58:50.4823141Z ##[endgroup]
+2026-06-07T08:58:50.5666595Z Downloading https://services.gradle.org/distributions/gradle-8.7-bin.zip
+2026-06-07T08:58:52.2307284Z ............10%.............20%.............30%.............40%............50%.............60%.............70%.............80%.............90%............100%
+2026-06-07T08:58:53.3155508Z 
+2026-06-07T08:58:53.3162856Z Welcome to Gradle 8.7!
+2026-06-07T08:58:53.3163630Z 
+2026-06-07T08:58:53.3164103Z Here are the highlights of this release:
+2026-06-07T08:58:53.3165053Z  - Compiling and testing with Java 22
+2026-06-07T08:58:53.3165566Z  - Cacheable Groovy script compilation
+2026-06-07T08:58:53.3166066Z  - New methods in lazy collection properties
+2026-06-07T08:58:53.3166405Z 
+2026-06-07T08:58:53.3166713Z For more details see https://docs.gradle.org/8.7/release-notes.html
+2026-06-07T08:58:53.3167155Z 
+2026-06-07T08:58:53.4154700Z To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.7/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+2026-06-07T08:58:54.4146116Z Daemon will be stopped at the end of the build 
+2026-06-07T08:59:47.2184214Z > Task :app:buildKotlinToolingMetadata
+2026-06-07T08:59:47.2234231Z > Task :app:checkKotlinGradlePluginConfigurationErrors
+2026-06-07T08:59:47.2235151Z > Task :app:checkThemeTokens
+2026-06-07T08:59:47.2235899Z > Task :app:preBuild
+2026-06-07T08:59:47.2236534Z > Task :app:preReleaseBuild
+2026-06-07T08:59:52.6144345Z > Task :app:generateReleaseResValues
+2026-06-07T08:59:52.6145346Z > Task :app:dataBindingMergeDependencyArtifactsRelease
+2026-06-07T08:59:52.7164108Z > Task :app:generateReleaseResources
+2026-06-07T08:59:55.8153809Z > Task :app:packageReleaseResources
+2026-06-07T08:59:56.4149021Z > Task :app:mergeReleaseResources
+2026-06-07T08:59:56.9163269Z > Task :app:generateReleaseBuildConfig
+2026-06-07T08:59:57.2140813Z > Task :app:parseReleaseLocalResources
+2026-06-07T08:59:57.5174111Z > Task :app:extractIncludeReleaseProto
+2026-06-07T08:59:58.1141633Z > Task :app:dataBindingGenBaseClassesRelease
+2026-06-07T08:59:58.1154041Z > Task :app:extractProto
+2026-06-07T08:59:58.1154676Z > Task :app:extractReleaseProto
+2026-06-07T08:59:58.8145610Z > Task :app:generateReleaseProto
+2026-06-07T08:59:58.9143618Z > Task :app:mapReleaseSourceSetPaths
+2026-06-07T08:59:58.9173979Z > Task :app:createReleaseCompatibleScreenManifests
+2026-06-07T08:59:58.9193833Z > Task :app:extractDeepLinksRelease
+2026-06-07T08:59:58.9195374Z > Task :app:checkReleaseAarMetadata
+2026-06-07T08:59:59.2140996Z > Task :app:processReleaseMainManifest
+2026-06-07T08:59:59.3140758Z > Task :app:processReleaseManifest
+2026-06-07T08:59:59.3142846Z > Task :app:javaPreCompileRelease
+2026-06-07T08:59:59.4141517Z > Task :app:extractProguardFiles
+2026-06-07T08:59:59.4173977Z > Task :app:mergeReleaseJniLibFolders
+2026-06-07T08:59:59.6206053Z > Task :app:mergeReleaseNativeLibs
+2026-06-07T09:00:00.2164641Z > Task :app:processReleaseManifestForPackage
+2026-06-07T09:00:00.6140823Z > Task :app:checkReleaseDuplicateClasses
+2026-06-07T09:00:01.0148891Z > Task :app:stripReleaseDebugSymbols NO-SOURCE
+2026-06-07T09:00:01.0174030Z > Task :app:extractReleaseNativeSymbolTables NO-SOURCE
+2026-06-07T09:00:01.0203596Z > Task :app:mergeReleaseNativeDebugMetadata NO-SOURCE
+2026-06-07T09:00:02.0164649Z > Task :app:processReleaseResources
+2026-06-07T09:00:06.0141375Z > Task :app:desugarReleaseFileDependencies
+2026-06-07T09:00:07.2141225Z > Task :app:mergeReleaseStartupProfile
+2026-06-07T09:00:32.1203985Z > Task :app:compileReleaseKotlin
+2026-06-07T09:00:37.2187457Z > Task :app:mergeExtDexRelease
+2026-06-07T09:01:24.6174436Z > Task :app:mergeReleaseArtProfile
+2026-06-07T09:01:24.6187258Z > Task :app:mergeReleaseShaders
+2026-06-07T09:01:24.6218201Z > Task :app:compileReleaseShaders NO-SOURCE
+2026-06-07T09:01:24.6245687Z > Task :app:generateReleaseAssets UP-TO-DATE
+2026-06-07T09:01:24.7174106Z > Task :app:mergeReleaseAssets
+2026-06-07T09:01:24.8140903Z > Task :app:compressReleaseAssets
+2026-06-07T09:01:25.0156133Z > Task :app:extractReleaseVersionControlInfo
+2026-06-07T09:01:25.3141007Z > Task :app:collectReleaseDependencies
+2026-06-07T09:01:25.4170231Z > Task :app:sdkReleaseDependencyData
+2026-06-07T09:01:25.5163460Z > Task :app:validateSigningRelease
+2026-06-07T09:01:25.5214207Z > Task :app:writeReleaseAppMetadata
+2026-06-07T09:01:25.5244058Z > Task :app:writeReleaseSigningConfigVersions
+2026-06-07T09:01:25.9154021Z > Task :app:optimizeReleaseResources
+2026-06-07T09:02:20.8165029Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6394:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8204554Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6402:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8206664Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6410:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8208749Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6418:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8210817Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6434:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8212662Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6450:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8214056Z 
+2026-06-07T09:02:20.8215159Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6466:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8216536Z > Task :app:compileReleaseKotlin FAILED
+2026-06-07T09:02:20.8244249Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6474:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8314400Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6482:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8354553Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6490:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8384455Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6498:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8414414Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6514:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8444359Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6530:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8474084Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6538:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8514814Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6554:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8544369Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6570:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8546516Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6586:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8574374Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6594:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8634304Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6602:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8649940Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6610:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8652038Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6618:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8653828Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6626:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8655389Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6634:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8656907Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6642:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8658365Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6650:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8659822Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6658:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8661309Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6666:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8662829Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6674:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8664647Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6690:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8665778Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6706:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8666888Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6714:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8668014Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6730:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8669369Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6746:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8670468Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6762:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8671575Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6778:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8672836Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6794:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8702433Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6810:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8704911Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6826:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8707099Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6842:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8709234Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6850:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8711363Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6866:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8713833Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6874:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8716060Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6882:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8718265Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6890:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8720452Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6906:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8722592Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6914:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8725370Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6930:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8727473Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6938:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8729666Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6954:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8731791Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6962:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8734305Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6970:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8736402Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6978:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8738511Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6986:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8740977Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:6994:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8743327Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7002:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8745503Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7018:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8747780Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7026:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8749858Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7034:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8751972Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7050:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8760860Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7058:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8763338Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7066:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8765460Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7082:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8767567Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7090:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8769676Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7106:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8771755Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7114:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8774114Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7122:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8776183Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7130:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8778224Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7146:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8780457Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7154:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8782602Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7162:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8785854Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7170:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8787967Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7178:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8790056Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7194:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8792161Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7210:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8794830Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7226:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8796920Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7234:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8799001Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7250:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8801287Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7266:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8803736Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7274:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8805887Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7290:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8807985Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7298:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8810118Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7314:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8812237Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7330:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8816257Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7338:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8818410Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7354:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8820586Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7370:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8822709Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7386:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8830638Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7402:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8832803Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7410:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8835216Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7426:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8837309Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7434:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8839415Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7442:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8840621Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7450:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8841759Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7466:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8844038Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7482:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8845883Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7490:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8847675Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7498:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8849711Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7506:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8851508Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7522:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8853598Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7538:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8855377Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7554:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8857140Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7570:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8858945Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7586:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8860758Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7602:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8862553Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7610:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8864567Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7618:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8866362Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7634:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8868171Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7642:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8869984Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7658:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8871757Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7666:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8873766Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7674:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8875570Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7690:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8877369Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7706:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8879157Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7722:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8880944Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7738:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8883140Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7754:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8884964Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7770:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8886788Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7786:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8889100Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7794:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8890932Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7802:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8892703Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7818:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8895010Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7834:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8896834Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7842:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8898770Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7858:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8900623Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7874:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8902413Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7882:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8904487Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7898:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8906363Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7906:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8908501Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7914:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8910330Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7922:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8912231Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7938:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8914452Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7946:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8916387Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7962:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8918226Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7970:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8920065Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7978:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8921835Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:7986:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8923807Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:8002:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8924940Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:8010:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8926080Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:8018:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8927328Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:8026:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8928425Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:8034:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8929513Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:8042:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8930607Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:8050:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8931689Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:8066:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8932781Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:8082:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8934702Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:8090:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8936374Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:8106:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8938041Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:8114:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8939717Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:8130:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.8941386Z e: file:///home/runner/work/blbl/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerSettings.kt:8138:1 Modifier 'internal' is not applicable to 'local function'
+2026-06-07T09:02:20.9148611Z 
+2026-06-07T09:02:20.9182063Z FAILURE: Build failed with an exception.
+2026-06-07T09:02:20.9182669Z 43 actionable tasks: 43 executed
+2026-06-07T09:02:20.9195970Z 
+2026-06-07T09:02:20.9207074Z * What went wrong:
+2026-06-07T09:02:20.9207601Z Execution failed for task ':app:compileReleaseKotlin'.
+2026-06-07T09:02:20.9208956Z > A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+2026-06-07T09:02:20.9210244Z    > Compilation error. See log for more details
+2026-06-07T09:02:20.9210648Z 
+2026-06-07T09:02:20.9210790Z * Try:
+2026-06-07T09:02:20.9211226Z > Run with --stacktrace option to get the stack trace.
+2026-06-07T09:02:20.9226954Z > Run with --info or --debug option to get more log output.
+2026-06-07T09:02:20.9227637Z > Run with --scan to get full insights.
+2026-06-07T09:02:20.9228188Z > Get more help at https://help.gradle.org.
+2026-06-07T09:02:20.9228555Z 
+2026-06-07T09:02:20.9228719Z BUILD FAILED in 3m 30s
+2026-06-07T09:02:21.3696228Z ##[error]Process completed with exit code 1.
+2026-06-07T09:02:21.3833768Z Post job cleanup.
+2026-06-07T09:02:21.4887212Z [command]/usr/bin/git version
+2026-06-07T09:02:21.4926307Z git version 2.54.0
+2026-06-07T09:02:21.4971275Z Temporarily overriding HOME='/home/runner/work/_temp/c698119c-7ca2-4d47-8abf-38736e0f2a13' before making global git config changes
+2026-06-07T09:02:21.4972547Z Adding repository directory to the temporary git global config as a safe directory
+2026-06-07T09:02:21.4984820Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/blbl/blbl
+2026-06-07T09:02:21.5023584Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-06-07T09:02:21.5057681Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-06-07T09:02:21.5296120Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-06-07T09:02:21.5326353Z http.https://github.com/.extraheader
+2026-06-07T09:02:21.5339590Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-06-07T09:02:21.5372331Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-06-07T09:02:21.5599918Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-06-07T09:02:21.5632480Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-06-07T09:02:21.6011460Z Cleaning up orphan processes
+2026-06-07T09:02:21.6367112Z Terminate orphan process: pid (3499) (java)
+2026-06-07T09:02:21.6388477Z ##[warning]Node.js 20 actions are deprecated. The following actions are running on Node.js 20 and may not work as expected: actions/checkout@v4. Actions will be forced to run with Node.js 24 by default starting June 16th, 2026. Node.js 20 will be removed from the runner on September 16th, 2026. Please check if updated versions of these actions are available that support Node.js 24. To opt into Node.js 24 now, set the FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true environment variable on the runner or in your workflow file. Once Node.js 24 becomes the default, you can temporarily opt out by setting ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
