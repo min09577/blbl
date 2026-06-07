@@ -650,6 +650,15 @@ internal fun PlayerActivity.showv32SubtitleDualLangToggle() {
         .option(switchText(current)) { BiliClient.prefs.v32SubtitleDualLang = !current }
         .show()
 }
+// 32.9: 弹幕透明度渐隐
+internal fun PlayerActivity.showv32DanmakuOpacityFadeToggle() {
+    val current = BiliClient.prefs.v32DanmakuOpacityFade
+    AppPopup.Builder(this)
+        .title("弹幕透明度渐隐")
+        .option(switchText(current)) { BiliClient.prefs.v32DanmakuOpacityFade = !current }
+        .show()
+}
+
 
 
 

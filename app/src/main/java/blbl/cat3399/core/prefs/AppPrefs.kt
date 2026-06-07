@@ -1762,6 +1762,11 @@ class AppPrefs(context: Context) {
     var v31DanmakuMergeOverlap: Boolean
         get() = prefs.getBoolean(KEY_V31_DANMAKU_MERGE_OVERLAP, false)
         set(value) = prefs.edit().putBoolean(KEY_V31_DANMAKU_MERGE_OVERLAP, value).apply()
+    // v32.9: 弹幕透明度渐隐
+    var v32DanmakuOpacityFade: Boolean
+        get() = prefs.getBoolean(KEY_V32_DANMAKU_OPACITY_FADE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V32_DANMAKU_OPACITY_FADE, value).apply()
+
     // v32.8: 双语字幕
     var v32SubtitleDualLang: Boolean
         get() = prefs.getBoolean(KEY_V32_SUBTITLE_DUAL_LANG, false)
@@ -3048,6 +3053,7 @@ class AppPrefs(context: Context) {
         }
 
         const val DANMAKU_FONT_WEIGHT_NORMAL = "normal"
+        private const val KEY_V32_DANMAKU_OPACITY_FADE = "v32_danmaku_opacity_fade"
         const val DANMAKU_FONT_WEIGHT_BOLD = "bold"
 
         const val PLAYER_RENDER_VIEW_SURFACE_VIEW = "surface_view"
