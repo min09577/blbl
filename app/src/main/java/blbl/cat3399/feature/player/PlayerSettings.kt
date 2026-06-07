@@ -10422,4 +10422,14 @@ internal fun PlayerActivity.showv40VideoSnapshotIntervalDialog() {
         .show()
 }
 
+
+// 40.2: 弹幕复古模式
+internal fun PlayerActivity.showv40DanmakuVintageModeToggle() {
+    val current = BiliClient.prefs.v40DanmakuVintageMode
+    AppPopup.Builder(this)
+        .title("弹幕复古模式")
+        .option(switchText(current)) { BiliClient.prefs.v40DanmakuVintageMode = !current }
+        .show()
+}
+
 }
