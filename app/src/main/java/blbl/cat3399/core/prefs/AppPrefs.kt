@@ -1756,6 +1756,11 @@ class AppPrefs(context: Context) {
     var v32DanmakuRainMode: Boolean
         get() = prefs.getBoolean(KEY_V32_DANMAKU_RAIN_MODE, false)
         set(value) = prefs.edit().putBoolean(KEY_V32_DANMAKU_RAIN_MODE, value).apply()
+    // v32.3: 音频声道交换
+    var v32AudioChannelSwap: Boolean
+        get() = prefs.getBoolean(KEY_V32_AUDIO_CHANNEL_SWAP, false)
+        set(value) = prefs.edit().putBoolean(KEY_V32_AUDIO_CHANNEL_SWAP, value).apply()
+
 
 
 
@@ -3713,6 +3718,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V31_VIDEO_CODEC_PRIORITY = "v31_video_codec_priority"
         private const val KEY_V32_SCREEN_OFF_TIMER = "v32_screen_off_timer"
         private const val KEY_V32_DANMAKU_RAIN_MODE = "v32_danmaku_rain_mode"
+        private const val KEY_V32_AUDIO_CHANNEL_SWAP = "v32_audio_channel_swap"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
