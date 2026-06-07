@@ -8843,4 +8843,14 @@ internal fun PlayerActivity.showv31PlayerPiPSupportToggle() {
         .show()
 }
 
+
+// 31.10: A-B循环播放
+internal fun PlayerActivity.showv31VideoABoopModeToggle() {
+    val current = BiliClient.prefs.v31VideoABoopMode
+    AppPopup.Builder(this)
+        .title("A-B循环播放")
+        .option(switchText(current)) { BiliClient.prefs.v31VideoABoopMode = !current }
+        .show()
+}
+
 }
