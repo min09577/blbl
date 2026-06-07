@@ -1688,6 +1688,11 @@ class AppPrefs(context: Context) {
     var v30DanmakuFontGlow: Int
         get() = prefs.getInt(KEY_V30_DANMAKU_FONT_GLOW, 0)
         set(value) = prefs.edit().putInt(KEY_V30_DANMAKU_FONT_GLOW, value.coerceIn(0, 100)).apply()
+    // v31.7: 音频夜间模式
+    var v31AudioNightMode: Boolean
+        get() = prefs.getBoolean(KEY_V31_AUDIO_NIGHT_MODE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V31_AUDIO_NIGHT_MODE, value).apply()
+
     // v31.6: 视频反交错模式
     var v31VideoDeinterlaceMode: Int
         get() = prefs.getInt(KEY_V31_VIDEO_DEINTERLACE_MODE, 0)
@@ -2876,6 +2881,7 @@ class AppPrefs(context: Context) {
         const val PLAYER_CDN_BILIVIDEO = "bilivideo"
         const val PLAYER_CDN_MCDN = "mcdn"
 
+        private const val KEY_V31_AUDIO_NIGHT_MODE = "v31_audio_night_mode"
         const val DANMAKU_LANE_DENSITY_SPARSE = "sparse"
         const val DANMAKU_LANE_DENSITY_STANDARD = "standard"
         const val DANMAKU_LANE_DENSITY_DENSE = "dense"

@@ -489,6 +489,15 @@ internal fun PlayerActivity.showv31VideoDeinterlaceModeDialog() {
         .option("10") { BiliClient.prefs.v31VideoDeinterlaceMode = 10 }
         .show()
 }
+// 31.7: 音频夜间模式
+internal fun PlayerActivity.showv31AudioNightModeToggle() {
+    val current = BiliClient.prefs.v31AudioNightMode
+    AppPopup.Builder(this)
+        .title("音频夜间模式")
+        .option(switchText(current)) { BiliClient.prefs.v31AudioNightMode = !current }
+        .show()
+}
+
 
 
 
