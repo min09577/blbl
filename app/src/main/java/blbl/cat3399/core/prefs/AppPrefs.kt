@@ -2166,6 +2166,11 @@ class AppPrefs(context: Context) {
     var v38AudioLowShelfGain: Int
         get() = prefs.getInt(KEY_V38_AUDIO_LOW_SHELF_GAIN, 0)
         set(value) = prefs.edit().putInt(KEY_V38_AUDIO_LOW_SHELF_GAIN, value).apply()
+    // v38.11: 倍速步进值(0.1x)
+    var v38PlayerSpeedStep: Int
+        get() = prefs.getInt(KEY_V38_PLAYER_SPEED_STEP, 0)
+        set(value) = prefs.edit().putInt(KEY_V38_PLAYER_SPEED_STEP, value).apply()
+
 
 
 
@@ -4328,6 +4333,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V38_PLAYBACK_BUFFER_MIN_SEC = "v38_playback_buffer_min_sec"
         private const val KEY_V38_DANMAKU_PRIORITY_LEVEL = "v38_danmaku_priority_level"
         private const val KEY_V38_AUDIO_LOW_SHELF_GAIN = "v38_audio_low_shelf_gain"
+        private const val KEY_V38_PLAYER_SPEED_STEP = "v38_player_speed_step"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
