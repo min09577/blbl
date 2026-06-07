@@ -1762,6 +1762,11 @@ class AppPrefs(context: Context) {
     var v31DanmakuMergeOverlap: Boolean
         get() = prefs.getBoolean(KEY_V31_DANMAKU_MERGE_OVERLAP, false)
         set(value) = prefs.edit().putBoolean(KEY_V31_DANMAKU_MERGE_OVERLAP, value).apply()
+    // v32.5: 弹幕时间戳显示
+    var v32DanmakuTimestampDisplay: Boolean
+        get() = prefs.getBoolean(KEY_V32_DANMAKU_TIMESTAMP_DISPLAY, false)
+        set(value) = prefs.edit().putBoolean(KEY_V32_DANMAKU_TIMESTAMP_DISPLAY, value).apply()
+
     // v32.4: 视频缩放手势
     var v32VideoZoomGesture: Boolean
         get() = prefs.getBoolean(KEY_V32_VIDEO_ZOOM_GESTURE, false)
@@ -3008,6 +3013,7 @@ class AppPrefs(context: Context) {
                 LEGACY_DANMAKU_AREA_OPTIONS.firstOrNull { legacyValue ->
                     abs(legacyValue - sanitized) < DANMAKU_AREA_COMPAT_EPSILON
                 }
+        private const val KEY_V32_DANMAKU_TIMESTAMP_DISPLAY = "v32_danmaku_timestamp_display"
             return normalizeDanmakuArea(legacy ?: sanitized)
         }
 

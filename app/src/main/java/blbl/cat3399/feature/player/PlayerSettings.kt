@@ -618,6 +618,15 @@ internal fun PlayerActivity.showv32VideoZoomGestureToggle() {
         .option(switchText(current)) { BiliClient.prefs.v32VideoZoomGesture = !current }
         .show()
 }
+// 32.5: 弹幕时间戳显示
+internal fun PlayerActivity.showv32DanmakuTimestampDisplayToggle() {
+    val current = BiliClient.prefs.v32DanmakuTimestampDisplay
+    AppPopup.Builder(this)
+        .title("弹幕时间戳显示")
+        .option(switchText(current)) { BiliClient.prefs.v32DanmakuTimestampDisplay = !current }
+        .show()
+}
+
 
 
 
