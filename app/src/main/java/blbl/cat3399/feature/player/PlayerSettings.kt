@@ -626,6 +626,15 @@ internal fun PlayerActivity.showv32DanmakuTimestampDisplayToggle() {
         .option(switchText(current)) { BiliClient.prefs.v32DanmakuTimestampDisplay = !current }
         .show()
 }
+// 32.6: 自动移除已播放项
+internal fun PlayerActivity.showv32PlaylistRemovePlayedToggle() {
+    val current = BiliClient.prefs.v32PlaylistRemovePlayed
+    AppPopup.Builder(this)
+        .title("自动移除已播放项")
+        .option(switchText(current)) { BiliClient.prefs.v32PlaylistRemovePlayed = !current }
+        .show()
+}
+
 
 
 

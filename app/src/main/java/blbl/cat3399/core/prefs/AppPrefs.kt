@@ -1762,6 +1762,11 @@ class AppPrefs(context: Context) {
     var v31DanmakuMergeOverlap: Boolean
         get() = prefs.getBoolean(KEY_V31_DANMAKU_MERGE_OVERLAP, false)
         set(value) = prefs.edit().putBoolean(KEY_V31_DANMAKU_MERGE_OVERLAP, value).apply()
+    // v32.6: 自动移除已播放项
+    var v32PlaylistRemovePlayed: Boolean
+        get() = prefs.getBoolean(KEY_V32_PLAYLIST_REMOVE_PLAYED, false)
+        set(value) = prefs.edit().putBoolean(KEY_V32_PLAYLIST_REMOVE_PLAYED, value).apply()
+
     // v32.5: 弹幕时间戳显示
     var v32DanmakuTimestampDisplay: Boolean
         get() = prefs.getBoolean(KEY_V32_DANMAKU_TIMESTAMP_DISPLAY, false)
@@ -3018,6 +3023,7 @@ class AppPrefs(context: Context) {
         }
 
         fun normalizeVideoCardLongPressAction(value: String?): String {
+        private const val KEY_V32_PLAYLIST_REMOVE_PLAYED = "v32_playlist_remove_played"
             return when (value?.trim()) {
                 VIDEO_CARD_LONG_PRESS_ACTION_WATCH_LATER -> VIDEO_CARD_LONG_PRESS_ACTION_WATCH_LATER
                 VIDEO_CARD_LONG_PRESS_ACTION_OPEN_DETAIL -> VIDEO_CARD_LONG_PRESS_ACTION_OPEN_DETAIL
