@@ -9993,4 +9993,19 @@ internal fun PlayerActivity.showv37VideoInterpolationModeDialog() {
         .show()
 }
 
+
+// 37.13: 弹幕阴影偏移
+internal fun PlayerActivity.showv37DanmakuShadowOffsetDialog() {
+    val current = BiliClient.prefs.v37DanmakuShadowOffset
+    AppPopup.Builder(this)
+        .title("弹幕阴影偏移")
+        .option("0") { BiliClient.prefs.v37DanmakuShadowOffset = 0 }
+        .option("1") { BiliClient.prefs.v37DanmakuShadowOffset = 1 }
+        .option("2") { BiliClient.prefs.v37DanmakuShadowOffset = 2 }
+        .option("3") { BiliClient.prefs.v37DanmakuShadowOffset = 3 }
+        .option("5") { BiliClient.prefs.v37DanmakuShadowOffset = 5 }
+        .option("10") { BiliClient.prefs.v37DanmakuShadowOffset = 10 }
+        .show()
+}
+
 }
