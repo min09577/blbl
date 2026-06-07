@@ -8922,4 +8922,19 @@ internal fun PlayerActivity.showv31VideoCodecPriorityDialog() {
         .show()
 }
 
+
+// 32.1: 息屏定时器(分钟)
+internal fun PlayerActivity.showv32ScreenOffTimerDialog() {
+    val current = BiliClient.prefs.v32ScreenOffTimer
+    AppPopup.Builder(this)
+        .title("息屏定时器(分钟)")
+        .option("0") { BiliClient.prefs.v32ScreenOffTimer = 0 }
+        .option("1") { BiliClient.prefs.v32ScreenOffTimer = 1 }
+        .option("2") { BiliClient.prefs.v32ScreenOffTimer = 2 }
+        .option("3") { BiliClient.prefs.v32ScreenOffTimer = 3 }
+        .option("5") { BiliClient.prefs.v32ScreenOffTimer = 5 }
+        .option("10") { BiliClient.prefs.v32ScreenOffTimer = 10 }
+        .show()
+}
+
 }
