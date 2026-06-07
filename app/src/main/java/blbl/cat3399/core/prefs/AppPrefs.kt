@@ -2058,6 +2058,11 @@ class AppPrefs(context: Context) {
     var v35VideoFrameRateOverride: Int
         get() = prefs.getInt(KEY_V35_VIDEO_FRAME_RATE_OVERRIDE, 0)
         set(value) = prefs.edit().putInt(KEY_V35_VIDEO_FRAME_RATE_OVERRIDE, value).apply()
+    // v36.13: 弹幕粉丝徽章
+    var v36DanmakuFanBadge: Boolean
+        get() = prefs.getBoolean(KEY_V36_DANMAKU_FAN_BADGE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V36_DANMAKU_FAN_BADGE, value).apply()
+
     // v36.12: 边缘锐化模式
     var v36VideoSharpenEdgeMode: Int
         get() = prefs.getInt(KEY_V36_VIDEO_SHARPEN_EDGE_MODE, 0)
@@ -3635,3 +3640,4 @@ class AppPrefs(context: Context) {
         private const val KEY_V36_AUDIO_DELAY_MS = "v36_audio_delay_ms"
         private const val KEY_V36_PLAYER_SWIPE_BRIGHTNESS_CURVE = "v36_player_swipe_brightness_curve"
         private const val KEY_V36_VIDEO_SHARPEN_EDGE_MODE = "v36_video_sharpen_edge_mode"
+        private const val KEY_V36_DANMAKU_FAN_BADGE = "v36_danmaku_fan_badge"
