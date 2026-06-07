@@ -10202,4 +10202,14 @@ internal fun PlayerActivity.showv38DanmakuHoverPauseToggle() {
         .show()
 }
 
+
+// 38.14: 字幕罗马音化
+internal fun PlayerActivity.showv38SubtitleRomanizeToggle() {
+    val current = BiliClient.prefs.v38SubtitleRomanize
+    AppPopup.Builder(this)
+        .title("字幕罗马音化")
+        .option(switchText(current)) { BiliClient.prefs.v38SubtitleRomanize = !current }
+        .show()
+}
+
 }
