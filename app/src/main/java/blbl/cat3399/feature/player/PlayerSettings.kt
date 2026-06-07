@@ -9087,4 +9087,19 @@ internal fun PlayerActivity.showv32DanmakuEmojiFilterToggle() {
         .show()
 }
 
+
+// 33.1: 低音增强
+internal fun PlayerActivity.showv33AudioBassBoostDialog() {
+    val current = BiliClient.prefs.v33AudioBassBoost
+    AppPopup.Builder(this)
+        .title("低音增强")
+        .option("0") { BiliClient.prefs.v33AudioBassBoost = 0 }
+        .option("1") { BiliClient.prefs.v33AudioBassBoost = 1 }
+        .option("2") { BiliClient.prefs.v33AudioBassBoost = 2 }
+        .option("3") { BiliClient.prefs.v33AudioBassBoost = 3 }
+        .option("5") { BiliClient.prefs.v33AudioBassBoost = 5 }
+        .option("10") { BiliClient.prefs.v33AudioBassBoost = 10 }
+        .show()
+}
+
 }

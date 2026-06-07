@@ -1808,6 +1808,11 @@ class AppPrefs(context: Context) {
     var v32DanmakuEmojiFilter: Boolean
         get() = prefs.getBoolean(KEY_V32_DANMAKU_EMOJI_FILTER, false)
         set(value) = prefs.edit().putBoolean(KEY_V32_DANMAKU_EMOJI_FILTER, value).apply()
+    // v33.1: 低音增强
+    var v33AudioBassBoost: Int
+        get() = prefs.getInt(KEY_V33_AUDIO_BASS_BOOST, 0)
+        set(value) = prefs.edit().putInt(KEY_V33_AUDIO_BASS_BOOST, value).apply()
+
 
 
 
@@ -3791,6 +3796,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V32_PLAYER_LOCK_TIMEOUT = "v32_player_lock_timeout"
         private const val KEY_V32_VIDEO_CROP_PRESET = "v32_video_crop_preset"
         private const val KEY_V32_DANMAKU_EMOJI_FILTER = "v32_danmaku_emoji_filter"
+        private const val KEY_V33_AUDIO_BASS_BOOST = "v33_audio_bass_boost"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
