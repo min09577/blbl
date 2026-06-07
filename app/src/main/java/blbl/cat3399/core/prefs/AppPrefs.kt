@@ -1836,6 +1836,11 @@ class AppPrefs(context: Context) {
     var v32ScreenOffTimer: Int
         get() = prefs.getInt(KEY_V32_SCREEN_OFF_TIMER, 0)
         set(value) = prefs.edit().putInt(KEY_V32_SCREEN_OFF_TIMER, value).apply()
+    // v33.12: 视频旋转锁定
+    var v33VideoRotationLock: Boolean
+        get() = prefs.getBoolean(KEY_V33_VIDEO_ROTATION_LOCK, false)
+        set(value) = prefs.edit().putBoolean(KEY_V33_VIDEO_ROTATION_LOCK, value).apply()
+
     // v33.11: 进度条章节标记
     var v33PlayerSeekBarChapter: Boolean
         get() = prefs.getBoolean(KEY_V33_PLAYER_SEEK_BAR_CHAPTER, false)
@@ -3230,6 +3235,7 @@ class AppPrefs(context: Context) {
                 PLAYER_OSD_BTN_PLAY_PAUSE,
                 PLAYER_OSD_BTN_NEXT,
                 PLAYER_OSD_BTN_SUBTITLE,
+        private const val KEY_V33_VIDEO_ROTATION_LOCK = "v33_video_rotation_lock"
                 PLAYER_OSD_BTN_DANMAKU,
                 PLAYER_OSD_BTN_COMMENTS,
                 PLAYER_OSD_BTN_DETAIL,

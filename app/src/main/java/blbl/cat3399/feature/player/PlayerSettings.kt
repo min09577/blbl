@@ -849,6 +849,15 @@ internal fun PlayerActivity.showv33PlayerSeekBarChapterToggle() {
         .option(switchText(current)) { BiliClient.prefs.v33PlayerSeekBarChapter = !current }
         .show()
 }
+// 33.12: 视频旋转锁定
+internal fun PlayerActivity.showv33VideoRotationLockToggle() {
+    val current = BiliClient.prefs.v33VideoRotationLock
+    AppPopup.Builder(this)
+        .title("视频旋转锁定")
+        .option(switchText(current)) { BiliClient.prefs.v33VideoRotationLock = !current }
+        .show()
+}
+
 
 
 
