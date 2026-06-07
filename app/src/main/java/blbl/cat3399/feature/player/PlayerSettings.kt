@@ -9077,4 +9077,14 @@ internal fun PlayerActivity.showv32VideoCropPresetDialog() {
         .show()
 }
 
+
+// 32.15: 弹幕表情过滤
+internal fun PlayerActivity.showv32DanmakuEmojiFilterToggle() {
+    val current = BiliClient.prefs.v32DanmakuEmojiFilter
+    AppPopup.Builder(this)
+        .title("弹幕表情过滤")
+        .option(switchText(current)) { BiliClient.prefs.v32DanmakuEmojiFilter = !current }
+        .show()
+}
+
 }
