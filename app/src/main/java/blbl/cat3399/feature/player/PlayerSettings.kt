@@ -9742,4 +9742,19 @@ internal fun PlayerActivity.showv36PlaybackSpeedPitchCorrectToggle() {
         .show()
 }
 
+
+// 36.9: 弹幕长度上限
+internal fun PlayerActivity.showv36DanmakuBlockLengthDialog() {
+    val current = BiliClient.prefs.v36DanmakuBlockLength
+    AppPopup.Builder(this)
+        .title("弹幕长度上限")
+        .option("0") { BiliClient.prefs.v36DanmakuBlockLength = 0 }
+        .option("1") { BiliClient.prefs.v36DanmakuBlockLength = 1 }
+        .option("2") { BiliClient.prefs.v36DanmakuBlockLength = 2 }
+        .option("3") { BiliClient.prefs.v36DanmakuBlockLength = 3 }
+        .option("5") { BiliClient.prefs.v36DanmakuBlockLength = 5 }
+        .option("10") { BiliClient.prefs.v36DanmakuBlockLength = 10 }
+        .show()
+}
+
 }
