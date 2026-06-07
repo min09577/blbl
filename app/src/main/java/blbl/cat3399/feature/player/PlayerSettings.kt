@@ -10462,4 +10462,14 @@ internal fun PlayerActivity.showv40DanmakuBiliEmoteParseToggle() {
         .show()
 }
 
+
+// 40.6: 字幕衬线字体
+internal fun PlayerActivity.showv40SubtitleFontSerifToggle() {
+    val current = BiliClient.prefs.v40SubtitleFontSerif
+    AppPopup.Builder(this)
+        .title("字幕衬线字体")
+        .option(switchText(current)) { BiliClient.prefs.v40SubtitleFontSerif = !current }
+        .show()
+}
+
 }
