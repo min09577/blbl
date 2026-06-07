@@ -1868,6 +1868,11 @@ class AppPrefs(context: Context) {
     var v33PlaylistReverseOrder: Boolean
         get() = prefs.getBoolean(KEY_V33_PLAYLIST_REVERSE_ORDER, false)
         set(value) = prefs.edit().putBoolean(KEY_V33_PLAYLIST_REVERSE_ORDER, value).apply()
+    // v34.1: 弹幕最大显示时长(秒)
+    var v34DanmakuMaxDisplaySec: Int
+        get() = prefs.getInt(KEY_V34_DANMAKU_MAX_DISPLAY_SEC, 0)
+        set(value) = prefs.edit().putInt(KEY_V34_DANMAKU_MAX_DISPLAY_SEC, value).apply()
+
 
 
 
@@ -3881,6 +3886,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V33_DANMAKU_REPEAT_FILTER = "v33_danmaku_repeat_filter"
         private const val KEY_V33_SUBTITLE_SHADOW_OFFSET = "v33_subtitle_shadow_offset"
         private const val KEY_V33_PLAYLIST_REVERSE_ORDER = "v33_playlist_reverse_order"
+        private const val KEY_V34_DANMAKU_MAX_DISPLAY_SEC = "v34_danmaku_max_display_sec"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
