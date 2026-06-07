@@ -9677,4 +9677,19 @@ internal fun PlayerActivity.showv36AudioVoiceIsolateToggle() {
         .show()
 }
 
+
+// 36.4: 跳过片尾秒数
+internal fun PlayerActivity.showv36PlayerSkipOutroSecDialog() {
+    val current = BiliClient.prefs.v36PlayerSkipOutroSec
+    AppPopup.Builder(this)
+        .title("跳过片尾秒数")
+        .option("0") { BiliClient.prefs.v36PlayerSkipOutroSec = 0 }
+        .option("1") { BiliClient.prefs.v36PlayerSkipOutroSec = 1 }
+        .option("2") { BiliClient.prefs.v36PlayerSkipOutroSec = 2 }
+        .option("3") { BiliClient.prefs.v36PlayerSkipOutroSec = 3 }
+        .option("5") { BiliClient.prefs.v36PlayerSkipOutroSec = 5 }
+        .option("10") { BiliClient.prefs.v36PlayerSkipOutroSec = 10 }
+        .show()
+}
+
 }
