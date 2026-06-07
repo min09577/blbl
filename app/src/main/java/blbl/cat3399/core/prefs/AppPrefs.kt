@@ -2186,6 +2186,11 @@ class AppPrefs(context: Context) {
     var v38PlaylistCrossFadeMs: Int
         get() = prefs.getInt(KEY_V38_PLAYLIST_CROSS_FADE_MS, 0)
         set(value) = prefs.edit().putInt(KEY_V38_PLAYLIST_CROSS_FADE_MS, value).apply()
+    // v39.1: 时间基准同步模式
+    var v39VideoTbnSyncMode: Int
+        get() = prefs.getInt(KEY_V39_VIDEO_TBN_SYNC_MODE, 0)
+        set(value) = prefs.edit().putInt(KEY_V39_VIDEO_TBN_SYNC_MODE, value).apply()
+
 
 
 
@@ -4358,6 +4363,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V38_DANMAKU_HOVER_PAUSE = "v38_danmaku_hover_pause"
         private const val KEY_V38_SUBTITLE_ROMANIZE = "v38_subtitle_romanize"
         private const val KEY_V38_PLAYLIST_CROSS_FADE_MS = "v38_playlist_cross_fade_ms"
+        private const val KEY_V39_VIDEO_TBN_SYNC_MODE = "v39_video_tbn_sync_mode"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
