@@ -1754,6 +1754,11 @@ class AppPrefs(context: Context) {
     var v31SubtitleSyncOffset: Int
         get() = prefs.getInt(KEY_V31_SUBTITLE_SYNC_OFFSET, 0)
         set(value) = prefs.edit().putInt(KEY_V31_SUBTITLE_SYNC_OFFSET, value).apply()
+    // v31.13: 播放自动恢复
+    var v31PlaybackAutoResume: Boolean
+        get() = prefs.getBoolean(KEY_V31_PLAYBACK_AUTO_RESUME, false)
+        set(value) = prefs.edit().putBoolean(KEY_V31_PLAYBACK_AUTO_RESUME, value).apply()
+
 
 
 
@@ -3710,6 +3715,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V31_VIDEO_A_BOOP_MODE = "v31_video_a_boop_mode"
         private const val KEY_V31_DANMAKU_LAYER_ORDER = "v31_danmaku_layer_order"
         private const val KEY_V31_SUBTITLE_SYNC_OFFSET = "v31_subtitle_sync_offset"
+        private const val KEY_V31_PLAYBACK_AUTO_RESUME = "v31_playback_auto_resume"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
