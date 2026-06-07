@@ -1688,6 +1688,11 @@ class AppPrefs(context: Context) {
     var v30DanmakuFontGlow: Int
         get() = prefs.getInt(KEY_V30_DANMAKU_FONT_GLOW, 0)
         set(value) = prefs.edit().putInt(KEY_V30_DANMAKU_FONT_GLOW, value.coerceIn(0, 100)).apply()
+    // v31.5: 弹幕防刷等级
+    var v31DanmakuAntiSpamLevel: Int
+        get() = prefs.getInt(KEY_V31_DANMAKU_ANTI_SPAM_LEVEL, 0)
+        set(value) = prefs.edit().putInt(KEY_V31_DANMAKU_ANTI_SPAM_LEVEL, value).apply()
+
     // v31.4: 预缓冲时长(秒)
     var v31PlaybackBufferAheadSec: Int
         get() = prefs.getInt(KEY_V31_PLAYBACK_BUFFER_AHEAD_SEC, 0)
@@ -2856,6 +2861,7 @@ class AppPrefs(context: Context) {
                     KEY_BUVID_ACTIVATED_MID,
                     KEY_SEARCH_HISTORY,
                 )
+        private const val KEY_V31_DANMAKU_ANTI_SPAM_LEVEL = "v31_danmaku_anti_spam_level"
 
         // PC browser UA is used to reduce CDN 403 for media resources.
         const val DEFAULT_UA =
