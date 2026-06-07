@@ -10252,4 +10252,19 @@ internal fun PlayerActivity.showv39DanmakuCloudPatternToggle() {
         .show()
 }
 
+
+// 39.3: 中频增益
+internal fun PlayerActivity.showv39AudioMidFreqGainDialog() {
+    val current = BiliClient.prefs.v39AudioMidFreqGain
+    AppPopup.Builder(this)
+        .title("中频增益")
+        .option("0") { BiliClient.prefs.v39AudioMidFreqGain = 0 }
+        .option("1") { BiliClient.prefs.v39AudioMidFreqGain = 1 }
+        .option("2") { BiliClient.prefs.v39AudioMidFreqGain = 2 }
+        .option("3") { BiliClient.prefs.v39AudioMidFreqGain = 3 }
+        .option("5") { BiliClient.prefs.v39AudioMidFreqGain = 5 }
+        .option("10") { BiliClient.prefs.v39AudioMidFreqGain = 10 }
+        .show()
+}
+
 }
