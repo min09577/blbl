@@ -1836,6 +1836,11 @@ class AppPrefs(context: Context) {
     var v32ScreenOffTimer: Int
         get() = prefs.getInt(KEY_V32_SCREEN_OFF_TIMER, 0)
         set(value) = prefs.edit().putInt(KEY_V32_SCREEN_OFF_TIMER, value).apply()
+    // v33.5: 弹幕行数限制
+    var v33DanmakuLineNumber: Int
+        get() = prefs.getInt(KEY_V33_DANMAKU_LINE_NUMBER, 0)
+        set(value) = prefs.edit().putInt(KEY_V33_DANMAKU_LINE_NUMBER, value).apply()
+
     // v33.4: 双击快进秒数
     var v33PlayerDoubleTapSeekSec: Int
         get() = prefs.getInt(KEY_V33_PLAYER_DOUBLE_TAP_SEEK_SEC, 0)
@@ -3160,6 +3165,7 @@ class AppPrefs(context: Context) {
         const val DEFAULT_PLAYER_AUTO_SKIP_SERVER_BASE_URL = "https://bsbsb.top"
         const val FALLBACK_PLAYER_AUTO_SKIP_SERVER_BASE_URL = "http://154.222.28.109"
 
+        private const val KEY_V33_DANMAKU_LINE_NUMBER = "v33_danmaku_line_number"
         const val PLAYER_VIDEOSHOT_PREVIEW_SIZE_OFF = "off"
         const val PLAYER_VIDEOSHOT_PREVIEW_SIZE_SMALL = "small"
         const val PLAYER_VIDEOSHOT_PREVIEW_SIZE_MEDIUM = "medium"
