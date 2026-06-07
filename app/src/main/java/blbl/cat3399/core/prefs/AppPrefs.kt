@@ -1922,6 +1922,11 @@ class AppPrefs(context: Context) {
     var v34DanmakuMirrorFlip: Boolean
         get() = prefs.getBoolean(KEY_V34_DANMAKU_MIRROR_FLIP, false)
         set(value) = prefs.edit().putBoolean(KEY_V34_DANMAKU_MIRROR_FLIP, value).apply()
+    // v34.10: 均衡器预设
+    var v34AudioEqPreset: Int
+        get() = prefs.getInt(KEY_V34_AUDIO_EQ_PRESET, 0)
+        set(value) = prefs.edit().putInt(KEY_V34_AUDIO_EQ_PRESET, value).apply()
+
 
 
 
@@ -3962,6 +3967,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V34_VIDEO_SCAN_LINE_FILTER = "v34_video_scan_line_filter"
         private const val KEY_V34_PLAYBACK_AUTO_PAUSE_ON_HEADSET = "v34_playback_auto_pause_on_headset"
         private const val KEY_V34_DANMAKU_MIRROR_FLIP = "v34_danmaku_mirror_flip"
+        private const val KEY_V34_AUDIO_EQ_PRESET = "v34_audio_eq_preset"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
