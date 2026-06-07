@@ -1860,6 +1860,11 @@ class AppPrefs(context: Context) {
     var v33DanmakuRepeatFilter: Boolean
         get() = prefs.getBoolean(KEY_V33_DANMAKU_REPEAT_FILTER, false)
         set(value) = prefs.edit().putBoolean(KEY_V33_DANMAKU_REPEAT_FILTER, value).apply()
+    // v33.14: 字幕阴影偏移
+    var v33SubtitleShadowOffset: Int
+        get() = prefs.getInt(KEY_V33_SUBTITLE_SHADOW_OFFSET, 0)
+        set(value) = prefs.edit().putInt(KEY_V33_SUBTITLE_SHADOW_OFFSET, value).apply()
+
 
 
 
@@ -3869,6 +3874,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V33_PLAYER_SEEK_BAR_CHAPTER = "v33_player_seek_bar_chapter"
         private const val KEY_V33_VIDEO_ROTATION_LOCK = "v33_video_rotation_lock"
         private const val KEY_V33_DANMAKU_REPEAT_FILTER = "v33_danmaku_repeat_filter"
+        private const val KEY_V33_SUBTITLE_SHADOW_OFFSET = "v33_subtitle_shadow_offset"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
