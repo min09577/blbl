@@ -1984,6 +1984,13 @@ class AppPrefs(context: Context) {
     var v34DanmakuMaxDisplaySec: Int
         get() = prefs.getInt(KEY_V34_DANMAKU_MAX_DISPLAY_SEC, 0)
         set(value) = prefs.edit().putInt(KEY_V34_DANMAKU_MAX_DISPLAY_SEC, value).apply()
+    // v35.1: 帧率覆盖
+    var v35VideoFrameRateOverride: Int
+        get() = prefs.getInt(KEY_V35_VIDEO_FRAME_RATE_OVERRIDE, 0)
+        set(value) = prefs.edit().putInt(KEY_V35_VIDEO_FRAME_RATE_OVERRIDE, value).apply()
+
+
+    // ===== v35.x =====
 
 
     // ===== v34.x =====
@@ -3418,8 +3425,11 @@ class AppPrefs(context: Context) {
         private fun isValidUuid(text: String): Boolean {
             return runCatching {
         private const val KEY_V34_PLAYLIST_REPEAT_SINGLE = "v34_playlist_repeat_single"
+
+        // ===== v35.x KEY =====
                 UUID.fromString(text.trim())
                 true
+        private const val KEY_V35_VIDEO_FRAME_RATE_OVERRIDE = "v35_video_frame_rate_override"
             }.getOrDefault(false)
         }
 
