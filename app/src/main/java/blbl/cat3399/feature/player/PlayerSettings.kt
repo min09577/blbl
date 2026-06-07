@@ -9347,4 +9347,14 @@ internal fun PlayerActivity.showv34DanmakuShieldRegexToggle() {
         .show()
 }
 
+
+// 34.6: 字幕卡拉OK模式
+internal fun PlayerActivity.showv34SubtitleKaraokeModeToggle() {
+    val current = BiliClient.prefs.v34SubtitleKaraokeMode
+    AppPopup.Builder(this)
+        .title("字幕卡拉OK模式")
+        .option(switchText(current)) { BiliClient.prefs.v34SubtitleKaraokeMode = !current }
+        .show()
+}
+
 }
