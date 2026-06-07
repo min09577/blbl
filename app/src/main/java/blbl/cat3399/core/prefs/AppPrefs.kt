@@ -2064,6 +2064,11 @@ class AppPrefs(context: Context) {
     var v37PlayerResumeThreshold: Int
         get() = prefs.getInt(KEY_V37_PLAYER_RESUME_THRESHOLD, 0)
         set(value) = prefs.edit().putInt(KEY_V37_PLAYER_RESUME_THRESHOLD, value).apply()
+    // v37.5: 弹幕注音显示
+    var v37DanmakuFuriganaShow: Boolean
+        get() = prefs.getBoolean(KEY_V37_DANMAKU_FURIGANA_SHOW, false)
+        set(value) = prefs.edit().putBoolean(KEY_V37_DANMAKU_FURIGANA_SHOW, value).apply()
+
 
 
 
@@ -4175,6 +4180,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V37_DANMAKU_GROUP_MERGE = "v37_danmaku_group_merge"
         private const val KEY_V37_AUDIO_STEREO_WIDTH = "v37_audio_stereo_width"
         private const val KEY_V37_PLAYER_RESUME_THRESHOLD = "v37_player_resume_threshold"
+        private const val KEY_V37_DANMAKU_FURIGANA_SHOW = "v37_danmaku_furigana_show"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
