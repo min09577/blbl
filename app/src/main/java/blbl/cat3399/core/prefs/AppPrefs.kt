@@ -1688,6 +1688,11 @@ class AppPrefs(context: Context) {
     var v30DanmakuFontGlow: Int
         get() = prefs.getInt(KEY_V30_DANMAKU_FONT_GLOW, 0)
         set(value) = prefs.edit().putInt(KEY_V30_DANMAKU_FONT_GLOW, value.coerceIn(0, 100)).apply()
+    // v31.15: 视频解码优先级
+    var v31VideoCodecPriority: Int
+        get() = prefs.getInt(KEY_V31_VIDEO_CODEC_PRIORITY, 0)
+        set(value) = prefs.edit().putInt(KEY_V31_VIDEO_CODEC_PRIORITY, value).apply()
+
     // v31.14: 弹幕屏蔽用户等级
     var v31DanmakuBlockUserLevel: Int
         get() = prefs.getInt(KEY_V31_DANMAKU_BLOCK_USER_LEVEL, 0)
@@ -2956,6 +2961,7 @@ class AppPrefs(context: Context) {
 
         fun normalizeDanmakuArea(value: Float): Float {
             val v = value.takeIf { it.isFinite() } ?: DANMAKU_AREA_DEFAULT
+        private const val KEY_V31_VIDEO_CODEC_PRIORITY = "v31_video_codec_priority"
             val clamped = v.coerceIn(DANMAKU_AREA_MIN, DANMAKU_AREA_MAX)
             val scaled = (clamped * 100f).roundToInt()
             val step = (DANMAKU_AREA_STEP * 100f).roundToInt().coerceAtLeast(1)
