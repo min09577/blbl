@@ -9498,4 +9498,14 @@ internal fun PlayerActivity.showv35AudioSpatialWidthDialog() {
         .show()
 }
 
+
+// 35.4: 横屏自动全屏
+internal fun PlayerActivity.showv35PlayerAutoFullscreenLandscapeToggle() {
+    val current = BiliClient.prefs.v35PlayerAutoFullscreenLandscape
+    AppPopup.Builder(this)
+        .title("横屏自动全屏")
+        .option(switchText(current)) { BiliClient.prefs.v35PlayerAutoFullscreenLandscape = !current }
+        .show()
+}
+
 }
