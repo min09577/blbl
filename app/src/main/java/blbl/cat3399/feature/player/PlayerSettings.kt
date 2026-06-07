@@ -9368,4 +9368,14 @@ internal fun PlayerActivity.showv34VideoScanLineFilterToggle() {
         .show()
 }
 
+
+// 34.8: 耳机断开自动暂停
+internal fun PlayerActivity.showv34PlaybackAutoPauseOnHeadsetToggle() {
+    val current = BiliClient.prefs.v34PlaybackAutoPauseOnHeadset
+    AppPopup.Builder(this)
+        .title("耳机断开自动暂停")
+        .option(switchText(current)) { BiliClient.prefs.v34PlaybackAutoPauseOnHeadset = !current }
+        .show()
+}
+
 }
