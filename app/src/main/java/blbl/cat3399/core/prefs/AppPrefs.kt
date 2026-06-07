@@ -2226,6 +2226,11 @@ class AppPrefs(context: Context) {
     var v39AudioDynamicRange: Int
         get() = prefs.getInt(KEY_V39_AUDIO_DYNAMIC_RANGE, 0)
         set(value) = prefs.edit().putInt(KEY_V39_AUDIO_DYNAMIC_RANGE, value).apply()
+    // v39.11: 进度提示Toast
+    var v39PlayerProgressToast: Boolean
+        get() = prefs.getBoolean(KEY_V39_PLAYER_PROGRESS_TOAST, false)
+        set(value) = prefs.edit().putBoolean(KEY_V39_PLAYER_PROGRESS_TOAST, value).apply()
+
 
 
 
@@ -4418,6 +4423,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V39_PLAYBACK_NETWORK_ADAPT = "v39_playback_network_adapt"
         private const val KEY_V39_DANMAKU_GHOST_TRAIL = "v39_danmaku_ghost_trail"
         private const val KEY_V39_AUDIO_DYNAMIC_RANGE = "v39_audio_dynamic_range"
+        private const val KEY_V39_PLAYER_PROGRESS_TOAST = "v39_player_progress_toast"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
