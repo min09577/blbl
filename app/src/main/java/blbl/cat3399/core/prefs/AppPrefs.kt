@@ -14825,7 +14825,7 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V71VIDEOSTABILIZATIONSTRENGTH, value).apply()
 
     var v71DanmakuCollisionAvoidance: Boolean
-        get() = prefs.getBoolean(KEY_V71DANMAKUCOLLISIONAVOIDANCE, False)
+        get() = prefs.getBoolean(KEY_V71DANMAKUCOLLISIONAVOIDANCE, false)
         set(value) = prefs.edit().putBoolean(KEY_V71DANMAKUCOLLISIONAVOIDANCE, value).apply()
 
     var v71SubtitleWordWrapMode: Int
@@ -14837,39 +14837,39 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V71GESTURESENSITIVITYPROFILE, value).apply()
 
     var v71CastVideoStabilization: Boolean
-        get() = prefs.getBoolean(KEY_V71CASTVIDEOSTABILIZATION, False)
+        get() = prefs.getBoolean(KEY_V71CASTVIDEOSTABILIZATION, false)
         set(value) = prefs.edit().putBoolean(KEY_V71CASTVIDEOSTABILIZATION, value).apply()
 
     var v71PlaylistAutoRecover: Boolean
-        get() = prefs.getBoolean(KEY_V71PLAYLISTAUTORECOVER, True)
+        get() = prefs.getBoolean(KEY_V71PLAYLISTAUTORECOVER, true)
         set(value) = prefs.edit().putBoolean(KEY_V71PLAYLISTAUTORECOVER, value).apply()
 
     var v71CacheIntegrityCheck: Boolean
-        get() = prefs.getBoolean(KEY_V71CACHEINTEGRITYCHECK, False)
+        get() = prefs.getBoolean(KEY_V71CACHEINTEGRITYCHECK, false)
         set(value) = prefs.edit().putBoolean(KEY_V71CACHEINTEGRITYCHECK, value).apply()
 
     var v71ProgressBarChapterMarks: Boolean
-        get() = prefs.getBoolean(KEY_V71PROGRESSBARCHAPTERMARKS, True)
+        get() = prefs.getBoolean(KEY_V71PROGRESSBARCHAPTERMARKS, true)
         set(value) = prefs.edit().putBoolean(KEY_V71PROGRESSBARCHAPTERMARKS, value).apply()
 
     var v71VolumeNormalizationAuto: Boolean
-        get() = prefs.getBoolean(KEY_V71VOLUMENORMALIZATIONAUTO, False)
+        get() = prefs.getBoolean(KEY_V71VOLUMENORMALIZATIONAUTO, false)
         set(value) = prefs.edit().putBoolean(KEY_V71VOLUMENORMALIZATIONAUTO, value).apply()
 
     var v71HistoryAutoSync: Boolean
-        get() = prefs.getBoolean(KEY_V71HISTORYAUTOSYNC, False)
+        get() = prefs.getBoolean(KEY_V71HISTORYAUTOSYNC, false)
         set(value) = prefs.edit().putBoolean(KEY_V71HISTORYAUTOSYNC, value).apply()
 
     var v71PlaybackResumeFromBookmark: Boolean
-        get() = prefs.getBoolean(KEY_V71PLAYBACKRESUMEFROMBOOKMARK, False)
+        get() = prefs.getBoolean(KEY_V71PLAYBACKRESUMEFROMBOOKMARK, false)
         set(value) = prefs.edit().putBoolean(KEY_V71PLAYBACKRESUMEFROMBOOKMARK, value).apply()
 
     var v71ScreenshotAutoAnnotate: Boolean
-        get() = prefs.getBoolean(KEY_V71SCREENSHOTAUTOANNOTATE, False)
+        get() = prefs.getBoolean(KEY_V71SCREENSHOTAUTOANNOTATE, false)
         set(value) = prefs.edit().putBoolean(KEY_V71SCREENSHOTAUTOANNOTATE, value).apply()
 
     var v71VideoHDR10Plus: Boolean
-        get() = prefs.getBoolean(KEY_V71VIDEOHDR10PLUS, False)
+        get() = prefs.getBoolean(KEY_V71VIDEOHDR10PLUS, false)
         set(value) = prefs.edit().putBoolean(KEY_V71VIDEOHDR10PLUS, value).apply()
 
     var v71DanmakuLayerManagement: Int
@@ -14897,7 +14897,7 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V72GESTUREDEADZONECUSTOM, value).apply()
 
     var v72CastAudioNormalization: Boolean
-        get() = prefs.getBoolean(KEY_V72CASTAUDIONORMALIZATION, False)
+        get() = prefs.getBoolean(KEY_V72CASTAUDIONORMALIZATION, false)
         set(value) = prefs.edit().putBoolean(KEY_V72CASTAUDIONORMALIZATION, value).apply()
 
     var v72PlaylistAutoRecoverMode: Int
@@ -14905,11 +14905,11 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V72PLAYLISTAUTORECOVERMODE, value).apply()
 
     var v72CacheDeduplication: Boolean
-        get() = prefs.getBoolean(KEY_V72CACHEDEDUPLICATION, False)
+        get() = prefs.getBoolean(KEY_V72CACHEDEDUPLICATION, false)
         set(value) = prefs.edit().putBoolean(KEY_V72CACHEDEDUPLICATION, value).apply()
 
     var v72ProgressBarBufferIndicator: Boolean
-        get() = prefs.getBoolean(KEY_V72PROGRESSBARBUFFERINDICATOR, True)
+        get() = prefs.getBoolean(KEY_V72PROGRESSBARBUFFERINDICATOR, true)
         set(value) = prefs.edit().putBoolean(KEY_V72PROGRESSBARBUFFERINDICATOR, value).apply()
 
     var v72VolumeCompressionStrength: Int
@@ -14917,15 +14917,15 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V72VOLUMECOMPRESSIONSTRENGTH, value).apply()
 
     var v72HistoryAutoBackup: Boolean
-        get() = prefs.getBoolean(KEY_V72HISTORYAUTOBACKUP, False)
+        get() = prefs.getBoolean(KEY_V72HISTORYAUTOBACKUP, false)
         set(value) = prefs.edit().putBoolean(KEY_V72HISTORYAUTOBACKUP, value).apply()
 
     var v72PlaybackAutoBookmark: Boolean
-        get() = prefs.getBoolean(KEY_V72PLAYBACKAUTOBOOKMARK, False)
+        get() = prefs.getBoolean(KEY_V72PLAYBACKAUTOBOOKMARK, false)
         set(value) = prefs.edit().putBoolean(KEY_V72PLAYBACKAUTOBOOKMARK, value).apply()
 
     var v72ScreenshotAutoShare: Boolean
-        get() = prefs.getBoolean(KEY_V72SCREENSHOTAUTOSHARE, False)
+        get() = prefs.getBoolean(KEY_V72SCREENSHOTAUTOSHARE, false)
         set(value) = prefs.edit().putBoolean(KEY_V72SCREENSHOTAUTOSHARE, value).apply()
 
     var v72VideoDolbyVisionProfile: Int
@@ -14937,7 +14937,7 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V72DANMAKUANIMATIONEFFECTS, value).apply()
 
     var v72SubtitleBgGradientCustom: Boolean
-        get() = prefs.getBoolean(KEY_V72SUBTITLEBGGRADIENTCUSTOM, False)
+        get() = prefs.getBoolean(KEY_V72SUBTITLEBGGRADIENTCUSTOM, false)
         set(value) = prefs.edit().putBoolean(KEY_V72SUBTITLEBGGRADIENTCUSTOM, value).apply()
 
     var v73VideoColorSpaceConvert: Int
@@ -14985,15 +14985,15 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V73PLAYBACKAUTOBOOKMARKMODE, value).apply()
 
     var v73ScreenshotAutoEdit: Boolean
-        get() = prefs.getBoolean(KEY_V73SCREENSHOTAUTOEDIT, False)
+        get() = prefs.getBoolean(KEY_V73SCREENSHOTAUTOEDIT, false)
         set(value) = prefs.edit().putBoolean(KEY_V73SCREENSHOTAUTOEDIT, value).apply()
 
     var v73VideoAlphaChannel: Boolean
-        get() = prefs.getBoolean(KEY_V73VIDEOALPHACHANNEL, False)
+        get() = prefs.getBoolean(KEY_V73VIDEOALPHACHANNEL, false)
         set(value) = prefs.edit().putBoolean(KEY_V73VIDEOALPHACHANNEL, value).apply()
 
     var v73DanmakuFontWeightAdaptive: Boolean
-        get() = prefs.getBoolean(KEY_V73DANMAKUFONTWEIGHTADAPTIVE, False)
+        get() = prefs.getBoolean(KEY_V73DANMAKUFONTWEIGHTADAPTIVE, false)
         set(value) = prefs.edit().putBoolean(KEY_V73DANMAKUFONTWEIGHTADAPTIVE, value).apply()
 
     var v73SubtitleOutlineEffects: Int
@@ -15001,7 +15001,7 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V73SUBTITLEOUTLINEEFFECTS, value).apply()
 
     var v74VideoDepthOfField: Boolean
-        get() = prefs.getBoolean(KEY_V74VIDEODEPTHOFFIELD, False)
+        get() = prefs.getBoolean(KEY_V74VIDEODEPTHOFFIELD, false)
         set(value) = prefs.edit().putBoolean(KEY_V74VIDEODEPTHOFFIELD, value).apply()
 
     var v74DanmakuBackgroundBlur: Int
@@ -15017,7 +15017,7 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V74GESTUREANIMATIONMODE, value).apply()
 
     var v74CastVideoHDR10Plus: Boolean
-        get() = prefs.getBoolean(KEY_V74CASTVIDEOHDR10PLUS, False)
+        get() = prefs.getBoolean(KEY_V74CASTVIDEOHDR10PLUS, false)
         set(value) = prefs.edit().putBoolean(KEY_V74CASTVIDEOHDR10PLUS, value).apply()
 
     var v74PlaylistAutoRecoverTime: Int
@@ -15029,7 +15029,7 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V74CACHECOMPRESSIONMODE, value).apply()
 
     var v74ProgressBarSeekPreview: Boolean
-        get() = prefs.getBoolean(KEY_V74PROGRESSBARSEEKPREVIEW, True)
+        get() = prefs.getBoolean(KEY_V74PROGRESSBARSEEKPREVIEW, true)
         set(value) = prefs.edit().putBoolean(KEY_V74PROGRESSBARSEEKPREVIEW, value).apply()
 
     var v74VolumeEqualizerPreset: Int
@@ -15041,15 +15041,15 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V74HISTORYAUTOBACKUPMODE, value).apply()
 
     var v74PlaybackAutoPauseOnFocus: Boolean
-        get() = prefs.getBoolean(KEY_V74PLAYBACKAUTOPAUSEONFOCUS, False)
+        get() = prefs.getBoolean(KEY_V74PLAYBACKAUTOPAUSEONFOCUS, false)
         set(value) = prefs.edit().putBoolean(KEY_V74PLAYBACKAUTOPAUSEONFOCUS, value).apply()
 
     var v74ScreenshotAutoCrop: Boolean
-        get() = prefs.getBoolean(KEY_V74SCREENSHOTAUTOCROP, False)
+        get() = prefs.getBoolean(KEY_V74SCREENSHOTAUTOCROP, false)
         set(value) = prefs.edit().putBoolean(KEY_V74SCREENSHOTAUTOCROP, value).apply()
 
     var v74VideoBokehEffect: Boolean
-        get() = prefs.getBoolean(KEY_V74VIDEOBOKEHEFFECT, False)
+        get() = prefs.getBoolean(KEY_V74VIDEOBOKEHEFFECT, false)
         set(value) = prefs.edit().putBoolean(KEY_V74VIDEOBOKEHEFFECT, value).apply()
 
     var v74DanmakuShadowEffects: Int
@@ -15061,7 +15061,7 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V74SUBTITLEGLOWEFFECTS, value).apply()
 
     var v75VideoChromaKey: Boolean
-        get() = prefs.getBoolean(KEY_V75VIDEOCHROMAKEY, False)
+        get() = prefs.getBoolean(KEY_V75VIDEOCHROMAKEY, false)
         set(value) = prefs.edit().putBoolean(KEY_V75VIDEOCHROMAKEY, value).apply()
 
     var v75DanmakuGlowEffects: Int
@@ -15073,11 +15073,11 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V75SUBTITLEBORDEREFFECTS, value).apply()
 
     var v75GestureSoundFeedback: Boolean
-        get() = prefs.getBoolean(KEY_V75GESTURESOUNDFEEDBACK, False)
+        get() = prefs.getBoolean(KEY_V75GESTURESOUNDFEEDBACK, false)
         set(value) = prefs.edit().putBoolean(KEY_V75GESTURESOUNDFEEDBACK, value).apply()
 
     var v75CastAudioSpatial: Boolean
-        get() = prefs.getBoolean(KEY_V75CASTAUDIOSPATIAL, False)
+        get() = prefs.getBoolean(KEY_V75CASTAUDIOSPATIAL, false)
         set(value) = prefs.edit().putBoolean(KEY_V75CASTAUDIOSPATIAL, value).apply()
 
     var v75PlaylistAutoRecoverSource: Int
@@ -15089,27 +15089,27 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V75CACHEENCRYPTIONMODE, value).apply()
 
     var v75ProgressBarChapterPreview: Boolean
-        get() = prefs.getBoolean(KEY_V75PROGRESSBARCHAPTERPREVIEW, True)
+        get() = prefs.getBoolean(KEY_V75PROGRESSBARCHAPTERPREVIEW, true)
         set(value) = prefs.edit().putBoolean(KEY_V75PROGRESSBARCHAPTERPREVIEW, value).apply()
 
     var v75VolumeSpatialAudio: Boolean
-        get() = prefs.getBoolean(KEY_V75VOLUMESPATIALAUDIO, False)
+        get() = prefs.getBoolean(KEY_V75VOLUMESPATIALAUDIO, false)
         set(value) = prefs.edit().putBoolean(KEY_V75VOLUMESPATIALAUDIO, value).apply()
 
     var v75HistoryAutoRestore: Boolean
-        get() = prefs.getBoolean(KEY_V75HISTORYAUTORESTORE, False)
+        get() = prefs.getBoolean(KEY_V75HISTORYAUTORESTORE, false)
         set(value) = prefs.edit().putBoolean(KEY_V75HISTORYAUTORESTORE, value).apply()
 
     var v75PlaybackAutoResumeOnReturn: Boolean
-        get() = prefs.getBoolean(KEY_V75PLAYBACKAUTORESUMEONRETURN, True)
+        get() = prefs.getBoolean(KEY_V75PLAYBACKAUTORESUMEONRETURN, true)
         set(value) = prefs.edit().putBoolean(KEY_V75PLAYBACKAUTORESUMEONRETURN, value).apply()
 
     var v75ScreenshotAutoFilter: Boolean
-        get() = prefs.getBoolean(KEY_V75SCREENSHOTAUTOFILTER, False)
+        get() = prefs.getBoolean(KEY_V75SCREENSHOTAUTOFILTER, false)
         set(value) = prefs.edit().putBoolean(KEY_V75SCREENSHOTAUTOFILTER, value).apply()
 
     var v75VideoFrameBlend: Boolean
-        get() = prefs.getBoolean(KEY_V75VIDEOFRAMEBLEND, False)
+        get() = prefs.getBoolean(KEY_V75VIDEOFRAMEBLEND, false)
         set(value) = prefs.edit().putBoolean(KEY_V75VIDEOFRAMEBLEND, value).apply()
 
     var v75DanmakuBorderEffects: Int
@@ -15133,11 +15133,11 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V76SUBTITLEFONTSTYLECUSTOM, value).apply()
 
     var v76GestureVibrationFeedback: Boolean
-        get() = prefs.getBoolean(KEY_V76GESTUREVIBRATIONFEEDBACK, True)
+        get() = prefs.getBoolean(KEY_V76GESTUREVIBRATIONFEEDBACK, true)
         set(value) = prefs.edit().putBoolean(KEY_V76GESTUREVIBRATIONFEEDBACK, value).apply()
 
     var v76CastVideoDolbyAtmos: Boolean
-        get() = prefs.getBoolean(KEY_V76CASTVIDEODOLBYATMOS, False)
+        get() = prefs.getBoolean(KEY_V76CASTVIDEODOLBYATMOS, false)
         set(value) = prefs.edit().putBoolean(KEY_V76CASTVIDEODOLBYATMOS, value).apply()
 
     var v76PlaylistAutoRecoverStrategy: Int
@@ -15153,7 +15153,7 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V76PROGRESSBARBUFFERCOLOR, value).apply()
 
     var v76Volume3DAudio: Boolean
-        get() = prefs.getBoolean(KEY_V76VOLUME3DAUDIO, False)
+        get() = prefs.getBoolean(KEY_V76VOLUME3DAUDIO, false)
         set(value) = prefs.edit().putBoolean(KEY_V76VOLUME3DAUDIO, value).apply()
 
     var v76HistoryAutoSyncSource: Int
@@ -15161,7 +15161,7 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V76HISTORYAUTOSYNCSOURCE, value).apply()
 
     var v76PlaybackAutoSkipSilence: Boolean
-        get() = prefs.getBoolean(KEY_V76PLAYBACKAUTOSKIPSILENCE, False)
+        get() = prefs.getBoolean(KEY_V76PLAYBACKAUTOSKIPSILENCE, false)
         set(value) = prefs.edit().putBoolean(KEY_V76PLAYBACKAUTOSKIPSILENCE, value).apply()
 
     var v76ScreenshotAutoAnnotateMode: Int
@@ -15169,11 +15169,11 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V76SCREENSHOTAUTOANNOTATEMODE, value).apply()
 
     var v76VideoLUTCustom: Boolean
-        get() = prefs.getBoolean(KEY_V76VIDEOLUTCUSTOM, False)
+        get() = prefs.getBoolean(KEY_V76VIDEOLUTCUSTOM, false)
         set(value) = prefs.edit().putBoolean(KEY_V76VIDEOLUTCUSTOM, value).apply()
 
     var v76DanmakuFontCustomPath: Boolean
-        get() = prefs.getBoolean(KEY_V76DANMAKUFONTCUSTOMPATH, False)
+        get() = prefs.getBoolean(KEY_V76DANMAKUFONTCUSTOMPATH, false)
         set(value) = prefs.edit().putBoolean(KEY_V76DANMAKUFONTCUSTOMPATH, value).apply()
 
     var v76SubtitleFontWeightCustom: Int
@@ -15181,7 +15181,7 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V76SUBTITLEFONTWEIGHTCUSTOM, value).apply()
 
     var v77VideoFrameInterpolation: Boolean
-        get() = prefs.getBoolean(KEY_V77VIDEOFRAMEINTERPOLATION, False)
+        get() = prefs.getBoolean(KEY_V77VIDEOFRAMEINTERPOLATION, false)
         set(value) = prefs.edit().putBoolean(KEY_V77VIDEOFRAMEINTERPOLATION, value).apply()
 
     var v77DanmakuPriorityCustom: Int
@@ -15193,11 +15193,11 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V77SUBTITLEKERNINGCUSTOM, value).apply()
 
     var v77GestureVisualFeedback: Boolean
-        get() = prefs.getBoolean(KEY_V77GESTUREVISUALFEEDBACK, True)
+        get() = prefs.getBoolean(KEY_V77GESTUREVISUALFEEDBACK, true)
         set(value) = prefs.edit().putBoolean(KEY_V77GESTUREVISUALFEEDBACK, value).apply()
 
     var v77CastAudio3D: Boolean
-        get() = prefs.getBoolean(KEY_V77CASTAUDIO3D, False)
+        get() = prefs.getBoolean(KEY_V77CASTAUDIO3D, false)
         set(value) = prefs.edit().putBoolean(KEY_V77CASTAUDIO3D, value).apply()
 
     var v77PlaylistAutoRecoverLimit: Int
@@ -15213,7 +15213,7 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V77PROGRESSBARTHUMBCOLOR, value).apply()
 
     var v77VolumeAutoLeveling: Boolean
-        get() = prefs.getBoolean(KEY_V77VOLUMEAUTOLEVELING, False)
+        get() = prefs.getBoolean(KEY_V77VOLUMEAUTOLEVELING, false)
         set(value) = prefs.edit().putBoolean(KEY_V77VOLUMEAUTOLEVELING, value).apply()
 
     var v77HistoryAutoBackupSource: Int
@@ -15229,7 +15229,7 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V77SCREENSHOTAUTOSHAREMODE, value).apply()
 
     var v77VideoMotionBlur: Boolean
-        get() = prefs.getBoolean(KEY_V77VIDEOMOTIONBLUR, False)
+        get() = prefs.getBoolean(KEY_V77VIDEOMOTIONBLUR, false)
         set(value) = prefs.edit().putBoolean(KEY_V77VIDEOMOTIONBLUR, value).apply()
 
     var v77DanmakuLayerCustom: Int
@@ -15241,7 +15241,7 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V77SUBTITLELETTERSPACINGCUSTOM, value).apply()
 
     var v78VideoAdaptiveResolution: Boolean
-        get() = prefs.getBoolean(KEY_V78VIDEOADAPTIVERESOLUTION, False)
+        get() = prefs.getBoolean(KEY_V78VIDEOADAPTIVERESOLUTION, false)
         set(value) = prefs.edit().putBoolean(KEY_V78VIDEOADAPTIVERESOLUTION, value).apply()
 
     var v78DanmakuCollisionMode: Int
@@ -15257,7 +15257,7 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V78GESTURELONGPRESSDURATION, value).apply()
 
     var v78CastVideoDolbyVisionIQ: Boolean
-        get() = prefs.getBoolean(KEY_V78CASTVIDEODOLBYVISIONIQ, False)
+        get() = prefs.getBoolean(KEY_V78CASTVIDEODOLBYVISIONIQ, false)
         set(value) = prefs.edit().putBoolean(KEY_V78CASTVIDEODOLBYVISIONIQ, value).apply()
 
     var v78PlaylistAutoRecoverTimeLimit: Int
@@ -15289,11 +15289,11 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V78SCREENSHOTAUTOEDITMODE, value).apply()
 
     var v78VideoAdaptiveBitrate: Boolean
-        get() = prefs.getBoolean(KEY_V78VIDEOADAPTIVEBITRATE, False)
+        get() = prefs.getBoolean(KEY_V78VIDEOADAPTIVEBITRATE, false)
         set(value) = prefs.edit().putBoolean(KEY_V78VIDEOADAPTIVEBITRATE, value).apply()
 
     var v78DanmakuScrollSpeedAdaptive: Boolean
-        get() = prefs.getBoolean(KEY_V78DANMAKUSCROLLSPEEDADAPTIVE, False)
+        get() = prefs.getBoolean(KEY_V78DANMAKUSCROLLSPEEDADAPTIVE, false)
         set(value) = prefs.edit().putBoolean(KEY_V78DANMAKUSCROLLSPEEDADAPTIVE, value).apply()
 
     var v78SubtitleFontStretchCustom: Int
@@ -15301,11 +15301,11 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V78SUBTITLEFONTSTRETCHCUSTOM, value).apply()
 
     var v79VideoColorGradingCustom: Boolean
-        get() = prefs.getBoolean(KEY_V79VIDEOCOLORGRADINGCUSTOM, False)
+        get() = prefs.getBoolean(KEY_V79VIDEOCOLORGRADINGCUSTOM, false)
         set(value) = prefs.edit().putBoolean(KEY_V79VIDEOCOLORGRADINGCUSTOM, value).apply()
 
     var v79DanmakuFontSpacingAdaptive: Boolean
-        get() = prefs.getBoolean(KEY_V79DANMAKUFONTSPACINGADAPTIVE, False)
+        get() = prefs.getBoolean(KEY_V79DANMAKUFONTSPACINGADAPTIVE, false)
         set(value) = prefs.edit().putBoolean(KEY_V79DANMAKUFONTSPACINGADAPTIVE, value).apply()
 
     var v79SubtitleAnimationType: Int
@@ -15329,7 +15329,7 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V79CACHECLEANUPSTRATEGYCUSTOM, value).apply()
 
     var v79ProgressBarThumbAnimation: Boolean
-        get() = prefs.getBoolean(KEY_V79PROGRESSBARTHUMBANIMATION, True)
+        get() = prefs.getBoolean(KEY_V79PROGRESSBARTHUMBANIMATION, true)
         set(value) = prefs.edit().putBoolean(KEY_V79PROGRESSBARTHUMBANIMATION, value).apply()
 
     var v79VolumeAutoLevelingStrength: Int
@@ -15349,7 +15349,7 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V79SCREENSHOTAUTOCROPMODE, value).apply()
 
     var v79VideoAdaptiveFrameRate: Boolean
-        get() = prefs.getBoolean(KEY_V79VIDEOADAPTIVEFRAMERATE, False)
+        get() = prefs.getBoolean(KEY_V79VIDEOADAPTIVEFRAMERATE, false)
         set(value) = prefs.edit().putBoolean(KEY_V79VIDEOADAPTIVEFRAMERATE, value).apply()
 
     var v79DanmakuFontWeightCustom: Int
@@ -15361,7 +15361,7 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V79SUBTITLEANIMATIONDURATION, value).apply()
 
     var v80VideoAdaptiveColorGrading: Boolean
-        get() = prefs.getBoolean(KEY_V80VIDEOADAPTIVECOLORGRADING, False)
+        get() = prefs.getBoolean(KEY_V80VIDEOADAPTIVECOLORGRADING, false)
         set(value) = prefs.edit().putBoolean(KEY_V80VIDEOADAPTIVECOLORGRADING, value).apply()
 
     var v80DanmakuCollisionStrength: Int
@@ -15385,7 +15385,7 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V80PLAYLISTAUTORECOVERSTRATEGYCUSTOM, value).apply()
 
     var v80CacheEncryptionCustom: Boolean
-        get() = prefs.getBoolean(KEY_V80CACHEENCRYPTIONCUSTOM, False)
+        get() = prefs.getBoolean(KEY_V80CACHEENCRYPTIONCUSTOM, false)
         set(value) = prefs.edit().putBoolean(KEY_V80CACHEENCRYPTIONCUSTOM, value).apply()
 
     var v80ProgressBarThumbSizeCustom: Int
@@ -15393,23 +15393,23 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V80PROGRESSBARTHUMBSIZECUSTOM, value).apply()
 
     var v80VolumeAutoLevelingCustom: Boolean
-        get() = prefs.getBoolean(KEY_V80VOLUMEAUTOLEVELINGCUSTOM, False)
+        get() = prefs.getBoolean(KEY_V80VOLUMEAUTOLEVELINGCUSTOM, false)
         set(value) = prefs.edit().putBoolean(KEY_V80VOLUMEAUTOLEVELINGCUSTOM, value).apply()
 
     var v80HistoryAutoSyncCustom: Boolean
-        get() = prefs.getBoolean(KEY_V80HISTORYAUTOSYNCCUSTOM, False)
+        get() = prefs.getBoolean(KEY_V80HISTORYAUTOSYNCCUSTOM, false)
         set(value) = prefs.edit().putBoolean(KEY_V80HISTORYAUTOSYNCCUSTOM, value).apply()
 
     var v80PlaybackAutoResumeCustom: Boolean
-        get() = prefs.getBoolean(KEY_V80PLAYBACKAUTORESUMECUSTOM, True)
+        get() = prefs.getBoolean(KEY_V80PLAYBACKAUTORESUMECUSTOM, true)
         set(value) = prefs.edit().putBoolean(KEY_V80PLAYBACKAUTORESUMECUSTOM, value).apply()
 
     var v80ScreenshotAutoShareCustom: Boolean
-        get() = prefs.getBoolean(KEY_V80SCREENSHOTAUTOSHARECUSTOM, False)
+        get() = prefs.getBoolean(KEY_V80SCREENSHOTAUTOSHARECUSTOM, false)
         set(value) = prefs.edit().putBoolean(KEY_V80SCREENSHOTAUTOSHARECUSTOM, value).apply()
 
     var v80VideoAdaptiveMotionBlur: Boolean
-        get() = prefs.getBoolean(KEY_V80VIDEOADAPTIVEMOTIONBLUR, False)
+        get() = prefs.getBoolean(KEY_V80VIDEOADAPTIVEMOTIONBLUR, false)
         set(value) = prefs.edit().putBoolean(KEY_V80VIDEOADAPTIVEMOTIONBLUR, value).apply()
 
     var v80DanmakuFontSpacingCustom: Int
@@ -15417,7 +15417,7 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V80DANMAKUFONTSPACINGCUSTOM, value).apply()
 
     var v80SubtitleAnimationLoop: Boolean
-        get() = prefs.getBoolean(KEY_V80SUBTITLEANIMATIONLOOP, False)
+        get() = prefs.getBoolean(KEY_V80SUBTITLEANIMATIONLOOP, false)
         set(value) = prefs.edit().putBoolean(KEY_V80SUBTITLEANIMATIONLOOP, value).apply()
 
     }
