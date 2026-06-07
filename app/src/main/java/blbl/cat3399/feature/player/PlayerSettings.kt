@@ -9148,4 +9148,19 @@ internal fun PlayerActivity.showv33PlayerDoubleTapSeekSecDialog() {
         .show()
 }
 
+
+// 33.5: 弹幕行数限制
+internal fun PlayerActivity.showv33DanmakuLineNumberDialog() {
+    val current = BiliClient.prefs.v33DanmakuLineNumber
+    AppPopup.Builder(this)
+        .title("弹幕行数限制")
+        .option("0") { BiliClient.prefs.v33DanmakuLineNumber = 0 }
+        .option("1") { BiliClient.prefs.v33DanmakuLineNumber = 1 }
+        .option("2") { BiliClient.prefs.v33DanmakuLineNumber = 2 }
+        .option("3") { BiliClient.prefs.v33DanmakuLineNumber = 3 }
+        .option("5") { BiliClient.prefs.v33DanmakuLineNumber = 5 }
+        .option("10") { BiliClient.prefs.v33DanmakuLineNumber = 10 }
+        .show()
+}
+
 }
