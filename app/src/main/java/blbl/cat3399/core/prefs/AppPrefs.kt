@@ -12666,24 +12666,6 @@ class AppPrefs(context: Context) {
                 else -> API_SOURCE_WEB
             }
         }
-    }
-
-    private fun deriveDeviceUuid(): String {
-        val androidId =
-            runCatching {
-                Settings.Secure.getString(appContext.contentResolver, Settings.Secure.ANDROID_ID)
-            }.getOrNull()
-                ?.trim()
-                ?.takeIf { it.isNotBlank() }
-
-        if (!androidId.isNullOrBlank()) {
-            val name = "blbl:device_uuid:$androidId"
-            return UUID.nameUUIDFromBytes(name.toByteArray(Charsets.UTF_8)).toString()
-        }
-
-        return UUID.randomUUID().toString()
-    }
-
         // v31b-v40b New Unique Features KEY constants
         const val KEY_V31_DANMAKURAINBOW = "v31DanmakuRainbow"
         const val KEY_V31_VIDEOSMOOTHTRANSITION = "v31VideoSmoothTransition"
@@ -12835,4 +12817,23 @@ class AppPrefs(context: Context) {
         const val KEY_V40_VIDEOCOLORBOOST = "v40VideoColorBoost"
         const val KEY_V40_DANMAKUFONTSIZEOVERRIDE = "v40DanmakuFontSizeOverride"
         const val KEY_V40_CASTAUDIONORMALIZATION = "v40CastAudioNormalization"
+
+    }
+
+    private fun deriveDeviceUuid(): String {
+        val androidId =
+            runCatching {
+                Settings.Secure.getString(appContext.contentResolver, Settings.Secure.ANDROID_ID)
+            }.getOrNull()
+                ?.trim()
+                ?.takeIf { it.isNotBlank() }
+
+        if (!androidId.isNullOrBlank()) {
+            val name = "blbl:device_uuid:$androidId"
+            return UUID.nameUUIDFromBytes(name.toByteArray(Charsets.UTF_8)).toString()
+        }
+
+        return UUID.randomUUID().toString()
+    }
+
     }
