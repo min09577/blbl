@@ -9438,4 +9438,14 @@ internal fun PlayerActivity.showv34DanmakuFontSizeMinDialog() {
         .show()
 }
 
+
+// 34.14: 字幕自定义颜色
+internal fun PlayerActivity.showv34SubtitleTextColorCustomToggle() {
+    val current = BiliClient.prefs.v34SubtitleTextColorCustom
+    AppPopup.Builder(this)
+        .title("字幕自定义颜色")
+        .option(switchText(current)) { BiliClient.prefs.v34SubtitleTextColorCustom = !current }
+        .show()
+}
+
 }

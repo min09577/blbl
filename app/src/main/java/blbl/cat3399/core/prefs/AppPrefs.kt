@@ -1938,6 +1938,11 @@ class AppPrefs(context: Context) {
     var v34DanmakuFontSizeMin: Int
         get() = prefs.getInt(KEY_V34_DANMAKU_FONT_SIZE_MIN, 0)
         set(value) = prefs.edit().putInt(KEY_V34_DANMAKU_FONT_SIZE_MIN, value).apply()
+    // v34.14: 字幕自定义颜色
+    var v34SubtitleTextColorCustom: Boolean
+        get() = prefs.getBoolean(KEY_V34_SUBTITLE_TEXT_COLOR_CUSTOM, false)
+        set(value) = prefs.edit().putBoolean(KEY_V34_SUBTITLE_TEXT_COLOR_CUSTOM, value).apply()
+
 
 
 
@@ -3986,6 +3991,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V34_PLAYER_VOLUME_BOOST = "v34_player_volume_boost"
         private const val KEY_V34_VIDEO_PIXEL_ART_MODE = "v34_video_pixel_art_mode"
         private const val KEY_V34_DANMAKU_FONT_SIZE_MIN = "v34_danmaku_font_size_min"
+        private const val KEY_V34_SUBTITLE_TEXT_COLOR_CUSTOM = "v34_subtitle_text_color_custom"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
