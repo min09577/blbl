@@ -10563,4 +10563,14 @@ internal fun PlayerActivity.showv40DanmakuMaxPerScreenDialog() {
         .show()
 }
 
+
+// 40.14: 字幕描边颜色
+internal fun PlayerActivity.showv40SubtitleStrokeColorToggle() {
+    val current = BiliClient.prefs.v40SubtitleStrokeColor
+    AppPopup.Builder(this)
+        .title("字幕描边颜色")
+        .option(switchText(current)) { BiliClient.prefs.v40SubtitleStrokeColor = !current }
+        .show()
+}
+
 }
