@@ -1762,6 +1762,11 @@ class AppPrefs(context: Context) {
     var v31DanmakuMergeOverlap: Boolean
         get() = prefs.getBoolean(KEY_V31_DANMAKU_MERGE_OVERLAP, false)
         set(value) = prefs.edit().putBoolean(KEY_V31_DANMAKU_MERGE_OVERLAP, value).apply()
+    // v32.14: 视频裁剪预设
+    var v32VideoCropPreset: Int
+        get() = prefs.getInt(KEY_V32_VIDEO_CROP_PRESET, 0)
+        set(value) = prefs.edit().putInt(KEY_V32_VIDEO_CROP_PRESET, value).apply()
+
     // v32.13: 播放器锁定超时(秒)
     var v32PlayerLockTimeout: Int
         get() = prefs.getInt(KEY_V32_PLAYER_LOCK_TIMEOUT, 0)
@@ -3098,6 +3103,7 @@ class AppPrefs(context: Context) {
         const val API_SOURCE_APP = "app"
 
         const val PLAYER_PLAYBACK_MODE_NONE = "none"
+        private const val KEY_V32_VIDEO_CROP_PRESET = "v32_video_crop_preset"
         const val PLAYER_PLAYBACK_MODE_LOOP_ONE = "loop_one"
         const val PLAYER_PLAYBACK_MODE_EXIT = "exit"
         const val PLAYER_PLAYBACK_MODE_PAGE_LIST = "page_list"

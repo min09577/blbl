@@ -695,6 +695,20 @@ internal fun PlayerActivity.showv32PlayerLockTimeoutDialog() {
         .option("10") { BiliClient.prefs.v32PlayerLockTimeout = 10 }
         .show()
 }
+// 32.14: 视频裁剪预设
+internal fun PlayerActivity.showv32VideoCropPresetDialog() {
+    val current = BiliClient.prefs.v32VideoCropPreset
+    AppPopup.Builder(this)
+        .title("视频裁剪预设")
+        .option("0") { BiliClient.prefs.v32VideoCropPreset = 0 }
+        .option("1") { BiliClient.prefs.v32VideoCropPreset = 1 }
+        .option("2") { BiliClient.prefs.v32VideoCropPreset = 2 }
+        .option("3") { BiliClient.prefs.v32VideoCropPreset = 3 }
+        .option("5") { BiliClient.prefs.v32VideoCropPreset = 5 }
+        .option("10") { BiliClient.prefs.v32VideoCropPreset = 10 }
+        .show()
+}
+
 
 
 
