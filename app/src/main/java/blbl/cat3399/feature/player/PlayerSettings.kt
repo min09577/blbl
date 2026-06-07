@@ -10283,4 +10283,14 @@ internal fun PlayerActivity.showv39PlayerAutoBrightnessRangeDialog() {
         .show()
 }
 
+
+// 39.5: 弹幕紧凑模式
+internal fun PlayerActivity.showv39DanmakuCompactModeToggle() {
+    val current = BiliClient.prefs.v39DanmakuCompactMode
+    AppPopup.Builder(this)
+        .title("弹幕紧凑模式")
+        .option(switchText(current)) { BiliClient.prefs.v39DanmakuCompactMode = !current }
+        .show()
+}
+
 }
