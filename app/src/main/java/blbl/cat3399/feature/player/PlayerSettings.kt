@@ -1826,6 +1826,20 @@ internal fun PlayerActivity.showv39PlaylistLoadRelatedToggle() {
         .option(switchText(current)) { BiliClient.prefs.v39PlaylistLoadRelated = !current }
         .show()
 }
+// 40.1: 快照间隔(秒)
+internal fun PlayerActivity.showv40VideoSnapshotIntervalDialog() {
+    val current = BiliClient.prefs.v40VideoSnapshotInterval
+    AppPopup.Builder(this)
+        .title("快照间隔(秒)")
+        .option("0") { BiliClient.prefs.v40VideoSnapshotInterval = 0 }
+        .option("1") { BiliClient.prefs.v40VideoSnapshotInterval = 1 }
+        .option("2") { BiliClient.prefs.v40VideoSnapshotInterval = 2 }
+        .option("3") { BiliClient.prefs.v40VideoSnapshotInterval = 3 }
+        .option("5") { BiliClient.prefs.v40VideoSnapshotInterval = 5 }
+        .option("10") { BiliClient.prefs.v40VideoSnapshotInterval = 10 }
+        .show()
+}
+
 
 
 
