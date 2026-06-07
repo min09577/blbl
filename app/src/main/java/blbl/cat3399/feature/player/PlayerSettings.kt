@@ -10338,4 +10338,19 @@ internal fun PlayerActivity.showv39DanmakuGhostTrailToggle() {
         .show()
 }
 
+
+// 39.10: 动态范围压缩
+internal fun PlayerActivity.showv39AudioDynamicRangeDialog() {
+    val current = BiliClient.prefs.v39AudioDynamicRange
+    AppPopup.Builder(this)
+        .title("动态范围压缩")
+        .option("0") { BiliClient.prefs.v39AudioDynamicRange = 0 }
+        .option("1") { BiliClient.prefs.v39AudioDynamicRange = 1 }
+        .option("2") { BiliClient.prefs.v39AudioDynamicRange = 2 }
+        .option("3") { BiliClient.prefs.v39AudioDynamicRange = 3 }
+        .option("5") { BiliClient.prefs.v39AudioDynamicRange = 5 }
+        .option("10") { BiliClient.prefs.v39AudioDynamicRange = 10 }
+        .show()
+}
+
 }
