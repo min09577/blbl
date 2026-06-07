@@ -9028,4 +9028,14 @@ internal fun PlayerActivity.showv32VideoSpeedRampModeToggle() {
         .show()
 }
 
+
+// 32.11: 音频虚拟环绕声
+internal fun PlayerActivity.showv32AudioVirtualSurroundToggle() {
+    val current = BiliClient.prefs.v32AudioVirtualSurround
+    AppPopup.Builder(this)
+        .title("音频虚拟环绕声")
+        .option(switchText(current)) { BiliClient.prefs.v32AudioVirtualSurround = !current }
+        .show()
+}
+
 }
