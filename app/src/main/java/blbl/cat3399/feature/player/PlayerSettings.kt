@@ -9472,4 +9472,14 @@ internal fun PlayerActivity.showv35VideoFrameRateOverrideDialog() {
         .show()
 }
 
+
+// 35.2: 弹幕发送者头像
+internal fun PlayerActivity.showv35DanmakuSenderAvatarToggle() {
+    val current = BiliClient.prefs.v35DanmakuSenderAvatar
+    AppPopup.Builder(this)
+        .title("弹幕发送者头像")
+        .option(switchText(current)) { BiliClient.prefs.v35DanmakuSenderAvatar = !current }
+        .show()
+}
+
 }
