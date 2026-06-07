@@ -8734,625 +8734,2294 @@ class AppPrefs(context: Context) {
     }
 
 
-    // === v61.x New Features ===
+    // ==================== v31b-v40b New Unique Features ====================
+
+    // === v31b.x ===
+    // v31b.1: Danmaku Rainbow Effect
+    var v31DanmakuRainbow: Boolean
+        get() = prefs.getBoolean(KEY_V31_DANMAKURAINBOW, false)
+        set(v) = prefs.edit().putBoolean(KEY_V31_DANMAKURAINBOW, v).apply()
+
+    // v31b.2: Video Smooth Transition
+    var v31VideoSmoothTransition: Boolean
+        get() = prefs.getBoolean(KEY_V31_VIDEOSMOOTHTRANSITION, false)
+        set(v) = prefs.edit().putBoolean(KEY_V31_VIDEOSMOOTHTRANSITION, v).apply()
+
+    // v31b.3: Danmaku Typewriter Effect
+    var v31DanmakuTypewriter: Boolean
+        get() = prefs.getBoolean(KEY_V31_DANMAKUTYPEWRITER, false)
+        set(v) = prefs.edit().putBoolean(KEY_V31_DANMAKUTYPEWRITER, v).apply()
+
+    // v31b.4: Remember Playlist Order
+    var v31PlaylistRememberOrder: Boolean
+        get() = prefs.getBoolean(KEY_V31_PLAYLISTREMEMBERORDER, false)
+        set(v) = prefs.edit().putBoolean(KEY_V31_PLAYLISTREMEMBERORDER, v).apply()
+
+    // v31b.5: Danmaku Batch Copy
+    var v31DanmakuBatchCopy: Boolean
+        get() = prefs.getBoolean(KEY_V31_DANMAKUBATCHCOPY, false)
+        set(v) = prefs.edit().putBoolean(KEY_V31_DANMAKUBATCHCOPY, v).apply()
+
+    // v31b.6: Cast Performance Mode
+    var v31CastPerformanceMode: Int
+        get() = prefs.getInt(KEY_V31_CASTPERFORMANCEMODE, 0)
+        set(v) = prefs.edit().putInt(KEY_V31_CASTPERFORMANCEMODE, v).apply()
+
+    // v31b.7: Danmaku Scale Effect
+    var v31DanmakuScaleEffect: Int
+        get() = prefs.getInt(KEY_V31_DANMAKUSCALEEFFECT, 0)
+        set(v) = prefs.edit().putInt(KEY_V31_DANMAKUSCALEEFFECT, v).apply()
+
+    // v31b.8: Danmaku Template Reply
+    var v31DanmakuTemplateReply: Boolean
+        get() = prefs.getBoolean(KEY_V31_DANMAKUTEMPLATEREPLY, false)
+        set(v) = prefs.edit().putBoolean(KEY_V31_DANMAKUTEMPLATEREPLY, v).apply()
+
+    // v31b.9: Cast Power Saving
+    var v31CastPowerSaving: Boolean
+        get() = prefs.getBoolean(KEY_V31_CASTPOWERSAVING, false)
+        set(v) = prefs.edit().putBoolean(KEY_V31_CASTPOWERSAVING, v).apply()
+
+    // v31b.10: Danmaku Highlight Effect
+    var v31DanmakuHighlightFx: Int
+        get() = prefs.getInt(KEY_V31_DANMAKUHIGHLIGHTFX, 0)
+        set(v) = prefs.edit().putInt(KEY_V31_DANMAKUHIGHLIGHTFX, v).apply()
+
+    // v31b.11: Remember Playback Position
+    var v31RememberPlaybackPos: Boolean
+        get() = prefs.getBoolean(KEY_V31_REMEMBERPLAYBACKPOS, false)
+        set(v) = prefs.edit().putBoolean(KEY_V31_REMEMBERPLAYBACKPOS, v).apply()
+
+    // v31b.12: Danmaku Send Animation
+    var v31DanmakuSendAnimation: Boolean
+        get() = prefs.getBoolean(KEY_V31_DANMAKUSENDANIMATION, false)
+        set(v) = prefs.edit().putBoolean(KEY_V31_DANMAKUSENDANIMATION, v).apply()
+
+    // v31b.13: Remember Playback Skip
+    var v31RememberPlaybackSkip: Boolean
+        get() = prefs.getBoolean(KEY_V31_REMEMBERPLAYBACKSKIP, false)
+        set(v) = prefs.edit().putBoolean(KEY_V31_REMEMBERPLAYBACKSKIP, v).apply()
+
+    // v31b.14: Danmaku 3D Effect Level
+    var v31Danmaku3dEffect: Int
+        get() = prefs.getInt(KEY_V31_DANMAKU3DEFFECT, 0)
+        set(v) = prefs.edit().putInt(KEY_V31_DANMAKU3DEFFECT, v).apply()
+
+    // v31b.15: Video Auto Next
+    var v31VideoAutoNext: Boolean
+        get() = prefs.getBoolean(KEY_V31_VIDEOAUTONEXT, false)
+        set(v) = prefs.edit().putBoolean(KEY_V31_VIDEOAUTONEXT, v).apply()
+
+    // === v32b.x ===
+    // v32b.1: Danmaku Font Size Curve
+    var v32DanmakuFontSizeCurve: Int
+        get() = prefs.getInt(KEY_V32_DANMAKUFONTSIZECURVE, 0)
+        set(v) = prefs.edit().putInt(KEY_V32_DANMAKUFONTSIZECURVE, v).apply()
+
+    // v32b.2: Video Debanding
+    var v32VideoDeband: Boolean
+        get() = prefs.getBoolean(KEY_V32_VIDEODEBAND, false)
+        set(v) = prefs.edit().putBoolean(KEY_V32_VIDEODEBAND, v).apply()
+
+    // v32b.3: Danmaku Shadow Depth
+    var v32DanmakuShadowDepth: Int
+        get() = prefs.getInt(KEY_V32_DANMAKUSHADOWDEPTH, 2)
+        set(v) = prefs.edit().putInt(KEY_V32_DANMAKUSHADOWDEPTH, v).apply()
+
+    // v32b.4: Video Color Vibrance
+    var v32VideoColorVibrance: Int
+        get() = prefs.getInt(KEY_V32_VIDEOCOLORVIBRANCE, 50)
+        set(v) = prefs.edit().putInt(KEY_V32_VIDEOCOLORVIBRANCE, v).apply()
+
+    // v32b.5: Subtitle BG Round Corner
+    var v32SubtitleBgRoundCorner: Int
+        get() = prefs.getInt(KEY_V32_SUBTITLEBGROUNDCORNER, 4)
+        set(v) = prefs.edit().putInt(KEY_V32_SUBTITLEBGROUNDCORNER, v).apply()
+
+    // v32b.6: Danmaku Scroll Inertia
+    var v32DanmakuScrollInertia: Int
+        get() = prefs.getInt(KEY_V32_DANMAKUSCROLLINERTIA, 50)
+        set(v) = prefs.edit().putInt(KEY_V32_DANMAKUSCROLLINERTIA, v).apply()
+
+    // v32b.7: Gesture Haptic Feedback
+    var v32GestureHapticFeedback: Boolean
+        get() = prefs.getBoolean(KEY_V32_GESTUREHAPTICFEEDBACK, true)
+        set(v) = prefs.edit().putBoolean(KEY_V32_GESTUREHAPTICFEEDBACK, v).apply()
+
+    // v32b.8: Video Anti-Aliasing
+    var v32VideoAntiAliasing: Boolean
+        get() = prefs.getBoolean(KEY_V32_VIDEOANTIALIASING, false)
+        set(v) = prefs.edit().putBoolean(KEY_V32_VIDEOANTIALIASING, v).apply()
+
+    // v32b.9: Danmaku Overlap Limit
+    var v32DanmakuOverlapLimit: Int
+        get() = prefs.getInt(KEY_V32_DANMAKUOVERLAPLIMIT, 3)
+        set(v) = prefs.edit().putInt(KEY_V32_DANMAKUOVERLAPLIMIT, v).apply()
+
+    // v32b.10: Subtitle Sync Offset (ms)
+    var v32SubtitleSyncOffset: Int
+        get() = prefs.getInt(KEY_V32_SUBTITLESYNCOFFSET, 0)
+        set(v) = prefs.edit().putInt(KEY_V32_SUBTITLESYNCOFFSET, v).apply()
+
+    // v32b.11: Cast Auto Reconnect
+    var v32CastAutoReconnect: Boolean
+        get() = prefs.getBoolean(KEY_V32_CASTAUTORECONNECT, true)
+        set(v) = prefs.edit().putBoolean(KEY_V32_CASTAUTORECONNECT, v).apply()
+
+    // v32b.12: Danmaku Edge Style
+    var v32DanmakuEdgeStyle: Int
+        get() = prefs.getInt(KEY_V32_DANMAKUEDGESTYLE, 0)
+        set(v) = prefs.edit().putInt(KEY_V32_DANMAKUEDGESTYLE, v).apply()
+
+    // v32b.13: Video Frame Interpolation
+    var v32VideoFrameInterpolation: Boolean
+        get() = prefs.getBoolean(KEY_V32_VIDEOFRAMEINTERPOLATION, false)
+        set(v) = prefs.edit().putBoolean(KEY_V32_VIDEOFRAMEINTERPOLATION, v).apply()
+
+    // v32b.14: Playlist Auto Expand
+    var v32PlaylistAutoExpand: Boolean
+        get() = prefs.getBoolean(KEY_V32_PLAYLISTAUTOEXPAND, false)
+        set(v) = prefs.edit().putBoolean(KEY_V32_PLAYLISTAUTOEXPAND, v).apply()
+
+    // v32b.15: Danmaku Color Palette Size
+    var v32DanmakuColorPalette: Int
+        get() = prefs.getInt(KEY_V32_DANMAKUCOLORPALETTE, 0)
+        set(v) = prefs.edit().putInt(KEY_V32_DANMAKUCOLORPALETTE, v).apply()
+
+    // === v33b.x ===
+    // v33b.1: Video Denoise Level
+    var v33VideoDenoiseLevel: Int
+        get() = prefs.getInt(KEY_V33_VIDEODENOISELEVEL, 0)
+        set(v) = prefs.edit().putInt(KEY_V33_VIDEODENOISELEVEL, v).apply()
+
+    // v33b.2: Danmaku Font Weight Adj
+    var v33DanmakuFontWeightAdj: Int
+        get() = prefs.getInt(KEY_V33_DANMAKUFONTWEIGHTADJ, 50)
+        set(v) = prefs.edit().putInt(KEY_V33_DANMAKUFONTWEIGHTADJ, v).apply()
+
+    // v33b.3: Subtitle Auto Detect
+    var v33SubtitleAutoDetect: Boolean
+        get() = prefs.getBoolean(KEY_V33_SUBTITLEAUTODETECT, true)
+        set(v) = prefs.edit().putBoolean(KEY_V33_SUBTITLEAUTODETECT, v).apply()
+
+    // v33b.4: Gesture Double Tap Action
+    var v33GestureDoubleTapAction: Int
+        get() = prefs.getInt(KEY_V33_GESTUREDOUBLETAPACTION, 0)
+        set(v) = prefs.edit().putInt(KEY_V33_GESTUREDOUBLETAPACTION, v).apply()
+
+    // v33b.5: Video Gamma Correction
+    var v33VideoGammaCorrection: Int
+        get() = prefs.getInt(KEY_V33_VIDEOGAMMACORRECTION, 50)
+        set(v) = prefs.edit().putInt(KEY_V33_VIDEOGAMMACORRECTION, v).apply()
+
+    // v33b.6: Danmaku Merge Window (s)
+    var v33DanmakuMergeWindow: Int
+        get() = prefs.getInt(KEY_V33_DANMAKUMERGEWINDOW, 5)
+        set(v) = prefs.edit().putInt(KEY_V33_DANMAKUMERGEWINDOW, v).apply()
+
+    // v33b.7: Cast Audio Sync
+    var v33CastAudioSync: Boolean
+        get() = prefs.getBoolean(KEY_V33_CASTAUDIOSYNC, true)
+        set(v) = prefs.edit().putBoolean(KEY_V33_CASTAUDIOSYNC, v).apply()
+
+    // v33b.8: Subtitle Font Size Step
+    var v33SubtitleFontSizeStep: Int
+        get() = prefs.getInt(KEY_V33_SUBTITLEFONTSIZESTEP, 2)
+        set(v) = prefs.edit().putInt(KEY_V33_SUBTITLEFONTSIZESTEP, v).apply()
+
+    // v33b.9: Video Saturation Curve
+    var v33VideoSaturationCurve: Int
+        get() = prefs.getInt(KEY_V33_VIDEOSATURATIONCURVE, 0)
+        set(v) = prefs.edit().putInt(KEY_V33_VIDEOSATURATIONCURVE, v).apply()
+
+    // v33b.10: Danmaku Speed Adaptive
+    var v33DanmakuSpeedAdaptive: Boolean
+        get() = prefs.getBoolean(KEY_V33_DANMAKUSPEEDADAPTIVE, false)
+        set(v) = prefs.edit().putBoolean(KEY_V33_DANMAKUSPEEDADAPTIVE, v).apply()
+
+    // v33b.11: Playlist Loop Count
+    var v33PlaylistLoopCount: Int
+        get() = prefs.getInt(KEY_V33_PLAYLISTLOOPCOUNT, 0)
+        set(v) = prefs.edit().putInt(KEY_V33_PLAYLISTLOOPCOUNT, v).apply()
+
+    // v33b.12: Gesture Swipe Threshold
+    var v33GestureSwipeThreshold: Int
+        get() = prefs.getInt(KEY_V33_GESTURESWIPETHRESHOLD, 50)
+        set(v) = prefs.edit().putInt(KEY_V33_GESTURESWIPETHRESHOLD, v).apply()
+
+    // v33b.13: Video Brightness Curve
+    var v33VideoBrightnessCurve: Int
+        get() = prefs.getInt(KEY_V33_VIDEOBRIGHTNESSCURVE, 0)
+        set(v) = prefs.edit().putInt(KEY_V33_VIDEOBRIGHTNESSCURVE, v).apply()
+
+    // v33b.14: Danmaku Font Italic
+    var v33DanmakuFontItalic: Boolean
+        get() = prefs.getBoolean(KEY_V33_DANMAKUFONTITALIC, false)
+        set(v) = prefs.edit().putBoolean(KEY_V33_DANMAKUFONTITALIC, v).apply()
+
+    // v33b.15: Cast Resolution
+    var v33CastResolution: Int
+        get() = prefs.getInt(KEY_V33_CASTRESOLUTION, 0)
+        set(v) = prefs.edit().putInt(KEY_V33_CASTRESOLUTION, v).apply()
+
+    // === v34b.x ===
+    // v34b.1: Video Color Space
+    var v34VideoColorSpace: Int
+        get() = prefs.getInt(KEY_V34_VIDEOCOLORSPACE, 0)
+        set(v) = prefs.edit().putInt(KEY_V34_VIDEOCOLORSPACE, v).apply()
+
+    // v34b.2: Danmaku Animation Duration
+    var v34DanmakuAnimDuration: Int
+        get() = prefs.getInt(KEY_V34_DANMAKUANIMDURATION, 300)
+        set(v) = prefs.edit().putInt(KEY_V34_DANMAKUANIMDURATION, v).apply()
+
+    // v34b.3: Subtitle Outline Width
+    var v34SubtitleOutlineWidth: Int
+        get() = prefs.getInt(KEY_V34_SUBTITLEOUTLINEWIDTH, 2)
+        set(v) = prefs.edit().putInt(KEY_V34_SUBTITLEOUTLINEWIDTH, v).apply()
+
+    // v34b.4: Gesture Long Press Action
+    var v34GestureLongPressAction: Int
+        get() = prefs.getInt(KEY_V34_GESTURELONGPRESSACTION, 0)
+        set(v) = prefs.edit().putInt(KEY_V34_GESTURELONGPRESSACTION, v).apply()
+
+    // v34b.5: Video Peak Brightness
+    var v34VideoPeakBrightness: Int
+        get() = prefs.getInt(KEY_V34_VIDEOPEAKBRIGHTNESS, 100)
+        set(v) = prefs.edit().putInt(KEY_V34_VIDEOPEAKBRIGHTNESS, v).apply()
+
+    // v34b.6: Danmaku Filter Regex
+    var v34DanmakuFilterRegex: Boolean
+        get() = prefs.getBoolean(KEY_V34_DANMAKUFILTERREGEX, false)
+        set(v) = prefs.edit().putBoolean(KEY_V34_DANMAKUFILTERREGEX, v).apply()
+
+    // v34b.7: Cast Video Codec
+    var v34CastVideoCodec: Int
+        get() = prefs.getInt(KEY_V34_CASTVIDEOCODEC, 0)
+        set(v) = prefs.edit().putInt(KEY_V34_CASTVIDEOCODEC, v).apply()
+
+    // v34b.8: Subtitle Position Y
+    var v34SubtitlePositionY: Int
+        get() = prefs.getInt(KEY_V34_SUBTITLEPOSITIONY, 0)
+        set(v) = prefs.edit().putInt(KEY_V34_SUBTITLEPOSITIONY, v).apply()
+
+    // v34b.9: Video Contrast Adaptive
+    var v34VideoContrastAdaptive: Boolean
+        get() = prefs.getBoolean(KEY_V34_VIDEOCONTRASTADAPTIVE, false)
+        set(v) = prefs.edit().putBoolean(KEY_V34_VIDEOCONTRASTADAPTIVE, v).apply()
+
+    // v34b.10: Danmaku Merge Similar
+    var v34DanmakuMergeSimilar: Boolean
+        get() = prefs.getBoolean(KEY_V34_DANMAKUMERGESIMILAR, false)
+        set(v) = prefs.edit().putBoolean(KEY_V34_DANMAKUMERGESIMILAR, v).apply()
+
+    // v34b.11: Playlist Shuffle Seed
+    var v34PlaylistShuffleSeed: Int
+        get() = prefs.getInt(KEY_V34_PLAYLISTSHUFFLESEED, 0)
+        set(v) = prefs.edit().putInt(KEY_V34_PLAYLISTSHUFFLESEED, v).apply()
+
+    // v34b.12: Gesture Pinch Action
+    var v34GesturePinchAction: Int
+        get() = prefs.getInt(KEY_V34_GESTUREPINCHACTION, 0)
+        set(v) = prefs.edit().putInt(KEY_V34_GESTUREPINCHACTION, v).apply()
+
+    // v34b.13: Video Noise Reduction
+    var v34VideoNoiseReduction: Int
+        get() = prefs.getInt(KEY_V34_VIDEONOISEREDUCTION, 50)
+        set(v) = prefs.edit().putInt(KEY_V34_VIDEONOISEREDUCTION, v).apply()
+
+    // v34b.14: Danmaku Send Cooldown (s)
+    var v34DanmakuSendCooldown: Int
+        get() = prefs.getInt(KEY_V34_DANMAKUSENDCOOLDOWN, 0)
+        set(v) = prefs.edit().putInt(KEY_V34_DANMAKUSENDCOOLDOWN, v).apply()
+
+    // v34b.15: Cast Bitrate Limit (Mbps)
+    var v34CastBitrateLimit: Int
+        get() = prefs.getInt(KEY_V34_CASTBITRATELIMIT, 0)
+        set(v) = prefs.edit().putInt(KEY_V34_CASTBITRATELIMIT, v).apply()
+
+    // === v35b.x ===
+    // v35b.1: Video Sharpen Radius
+    var v35VideoSharpenRadius: Int
+        get() = prefs.getInt(KEY_V35_VIDEOSHARPENRADIUS, 1)
+        set(v) = prefs.edit().putInt(KEY_V35_VIDEOSHARPENRADIUS, v).apply()
+
+    // v35b.2: Danmaku Glow Effect
+    var v35DanmakuGlowEffect: Boolean
+        get() = prefs.getBoolean(KEY_V35_DANMAKUGLOWEFFECT, false)
+        set(v) = prefs.edit().putBoolean(KEY_V35_DANMAKUGLOWEFFECT, v).apply()
+
+    // v35b.3: Subtitle Font Weight
+    var v35SubtitleFontWeight: Int
+        get() = prefs.getInt(KEY_V35_SUBTITLEFONTWEIGHT, 400)
+        set(v) = prefs.edit().putInt(KEY_V35_SUBTITLEFONTWEIGHT, v).apply()
+
+    // v35b.4: Gesture Volume Sensitivity
+    var v35GestureVolumeSensitivity: Int
+        get() = prefs.getInt(KEY_V35_GESTUREVOLUMESENSITIVITY, 50)
+        set(v) = prefs.edit().putInt(KEY_V35_GESTUREVOLUMESENSITIVITY, v).apply()
+
+    // v35b.5: Video Highlight Recovery
+    var v35VideoHighlightRecovery: Boolean
+        get() = prefs.getBoolean(KEY_V35_VIDEOHIGHLIGHTRECOVERY, false)
+        set(v) = prefs.edit().putBoolean(KEY_V35_VIDEOHIGHLIGHTRECOVERY, v).apply()
+
+    // v35b.6: Danmaku Persist Across Episodes
+    var v35DanmakuPersistAcrossEp: Boolean
+        get() = prefs.getBoolean(KEY_V35_DANMAKUPERSISTACROSSEP, false)
+        set(v) = prefs.edit().putBoolean(KEY_V35_DANMAKUPERSISTACROSSEP, v).apply()
+
+    // v35b.7: Cast Subtitle Enabled
+    var v35CastSubtitleEnabled: Boolean
+        get() = prefs.getBoolean(KEY_V35_CASTSUBTITLEENABLED, true)
+        set(v) = prefs.edit().putBoolean(KEY_V35_CASTSUBTITLEENABLED, v).apply()
+
+    // v35b.8: Subtitle Shadow Offset
+    var v35SubtitleShadowOffset: Int
+        get() = prefs.getInt(KEY_V35_SUBTITLESHADOWOFFSET, 1)
+        set(v) = prefs.edit().putInt(KEY_V35_SUBTITLESHADOWOFFSET, v).apply()
+
+    // v35b.9: Video Color Gradient
+    var v35VideoColorGradient: Int
+        get() = prefs.getInt(KEY_V35_VIDEOCOLORGRADIENT, 0)
+        set(v) = prefs.edit().putInt(KEY_V35_VIDEOCOLORGRADIENT, v).apply()
+
+    // v35b.10: Danmaku Scroll Direction
+    var v35DanmakuScrollDirection: Int
+        get() = prefs.getInt(KEY_V35_DANMAKUSCROLLDIRECTION, 0)
+        set(v) = prefs.edit().putInt(KEY_V35_DANMAKUSCROLLDIRECTION, v).apply()
+
+    // v35b.11: Playlist Auto Play Next
+    var v35PlaylistAutoPlayNext: Boolean
+        get() = prefs.getBoolean(KEY_V35_PLAYLISTAUTOPLAYNEXT, true)
+        set(v) = prefs.edit().putBoolean(KEY_V35_PLAYLISTAUTOPLAYNEXT, v).apply()
+
+    // v35b.12: Gesture Brightness Sensitivity
+    var v35GestureBrightnessSensitivity: Int
+        get() = prefs.getInt(KEY_V35_GESTUREBRIGHTNESSSENSITIVITY, 50)
+        set(v) = prefs.edit().putInt(KEY_V35_GESTUREBRIGHTNESSSENSITIVITY, v).apply()
+
+    // v35b.13: Video Black Level Adj
+    var v35VideoBlackLevelAdj: Int
+        get() = prefs.getInt(KEY_V35_VIDEOBLACKLEVELADJ, 0)
+        set(v) = prefs.edit().putInt(KEY_V35_VIDEOBLACKLEVELADJ, v).apply()
+
+    // v35b.14: Danmaku Border Color
+    var v35DanmakuBorderColor: Int
+        get() = prefs.getInt(KEY_V35_DANMAKUBORDERCOLOR, 0)
+        set(v) = prefs.edit().putInt(KEY_V35_DANMAKUBORDERCOLOR, v).apply()
+
+    // v35b.15: Cast Audio Delay (ms)
+    var v35CastAudioDelay: Int
+        get() = prefs.getInt(KEY_V35_CASTAUDIODELAY, 0)
+        set(v) = prefs.edit().putInt(KEY_V35_CASTAUDIODELAY, v).apply()
+
+    // === v36b.x ===
+    // v36b.1: Video White Balance (K)
+    var v36VideoWhiteBalance: Int
+        get() = prefs.getInt(KEY_V36_VIDEOWHITEBALANCE, 6500)
+        set(v) = prefs.edit().putInt(KEY_V36_VIDEOWHITEBALANCE, v).apply()
+
+    // v36b.2: Danmaku Font Stretch
+    var v36DanmakuFontStretch: Int
+        get() = prefs.getInt(KEY_V36_DANMAKUFONTSTRETCH, 100)
+        set(v) = prefs.edit().putInt(KEY_V36_DANMAKUFONTSTRETCH, v).apply()
+
+    // v36b.3: Subtitle Encoding
+    var v36SubtitleEncoding: Int
+        get() = prefs.getInt(KEY_V36_SUBTITLEENCODING, 0)
+        set(v) = prefs.edit().putInt(KEY_V36_SUBTITLEENCODING, v).apply()
+
+    // v36b.4: Gesture Seek Step (s)
+    var v36GestureSeekStep: Int
+        get() = prefs.getInt(KEY_V36_GESTURESEEKSTEP, 5)
+        set(v) = prefs.edit().putInt(KEY_V36_GESTURESEEKSTEP, v).apply()
+
+    // v36b.5: Video Color Tint
+    var v36VideoColorTint: Int
+        get() = prefs.getInt(KEY_V36_VIDEOCOLORTINT, 0)
+        set(v) = prefs.edit().putInt(KEY_V36_VIDEOCOLORTINT, v).apply()
+
+    // v36b.6: Danmaku Fade In
+    var v36DanmakuFadeIn: Boolean
+        get() = prefs.getBoolean(KEY_V36_DANMAKUFADEIN, false)
+        set(v) = prefs.edit().putBoolean(KEY_V36_DANMAKUFADEIN, v).apply()
+
+    // v36b.7: Cast Screen Mirror
+    var v36CastScreenMirror: Boolean
+        get() = prefs.getBoolean(KEY_V36_CASTSCREENMIRROR, false)
+        set(v) = prefs.edit().putBoolean(KEY_V36_CASTSCREENMIRROR, v).apply()
+
+    // v36b.8: Subtitle Line Spacing
+    var v36SubtitleLineSpacing: Int
+        get() = prefs.getInt(KEY_V36_SUBTITLELINESPACING, 120)
+        set(v) = prefs.edit().putInt(KEY_V36_SUBTITLELINESPACING, v).apply()
+
+    // v36b.9: Video Gamma Tone Map
+    var v36VideoGammaToneMap: Int
+        get() = prefs.getInt(KEY_V36_VIDEOGAMMATONEMAP, 0)
+        set(v) = prefs.edit().putInt(KEY_V36_VIDEOGAMMATONEMAP, v).apply()
+
+    // v36b.10: Danmaku History Depth
+    var v36DanmakuHistoryDepth: Int
+        get() = prefs.getInt(KEY_V36_DANMAKUHISTORYDEPTH, 0)
+        set(v) = prefs.edit().putInt(KEY_V36_DANMAKUHISTORYDEPTH, v).apply()
+
+    // v36b.11: Playlist Resume Last
+    var v36PlaylistResumeLast: Boolean
+        get() = prefs.getBoolean(KEY_V36_PLAYLISTRESUMELAST, true)
+        set(v) = prefs.edit().putBoolean(KEY_V36_PLAYLISTRESUMELAST, v).apply()
+
+    // v36b.12: Gesture Double Swipe
+    var v36GestureDoubleSwipeAction: Int
+        get() = prefs.getInt(KEY_V36_GESTUREDOUBLESWIPEACTION, 0)
+        set(v) = prefs.edit().putInt(KEY_V36_GESTUREDOUBLESWIPEACTION, v).apply()
+
+    // v36b.13: Video Contrast Ratio
+    var v36VideoContrastRatio: Int
+        get() = prefs.getInt(KEY_V36_VIDEOCONTRASTRATIO, 100)
+        set(v) = prefs.edit().putInt(KEY_V36_VIDEOCONTRASTRATIO, v).apply()
+
+    // v36b.14: Danmaku Speed Multiplier
+    var v36DanmakuSpeedMultiplier: Int
+        get() = prefs.getInt(KEY_V36_DANMAKUSPEEDMULTIPLIER, 100)
+        set(v) = prefs.edit().putInt(KEY_V36_DANMAKUSPEEDMULTIPLIER, v).apply()
+
+    // v36b.15: Cast Auto Quality
+    var v36CastAutoQuality: Boolean
+        get() = prefs.getBoolean(KEY_V36_CASTAUTOQUALITY, true)
+        set(v) = prefs.edit().putBoolean(KEY_V36_CASTAUTOQUALITY, v).apply()
+
+    // === v37b.x ===
+    // v37b.1: Video Dynamic Range
+    var v37VideoDynamicRange: Int
+        get() = prefs.getInt(KEY_V37_VIDEODYNAMICRANGE, 0)
+        set(v) = prefs.edit().putInt(KEY_V37_VIDEODYNAMICRANGE, v).apply()
+
+    // v37b.2: Danmaku Blend Mode
+    var v37DanmakuBlendMode: Int
+        get() = prefs.getInt(KEY_V37_DANMAKUBLENDMODE, 0)
+        set(v) = prefs.edit().putInt(KEY_V37_DANMAKUBLENDMODE, v).apply()
+
+    // v37b.3: Subtitle Karaoke Mode
+    var v37SubtitleKaraokeMode: Boolean
+        get() = prefs.getBoolean(KEY_V37_SUBTITLEKARAOKEMODE, false)
+        set(v) = prefs.edit().putBoolean(KEY_V37_SUBTITLEKARAOKEMODE, v).apply()
+
+    // v37b.4: Gesture Rotate Action
+    var v37GestureRotateAction: Int
+        get() = prefs.getInt(KEY_V37_GESTUREROTATEACTION, 0)
+        set(v) = prefs.edit().putInt(KEY_V37_GESTUREROTATEACTION, v).apply()
+
+    // v37b.5: Video Color Depth
+    var v37VideoColorDepth: Int
+        get() = prefs.getInt(KEY_V37_VIDEOCOLORDEPTH, 0)
+        set(v) = prefs.edit().putInt(KEY_V37_VIDEOCOLORDEPTH, v).apply()
+
+    // v37b.6: Danmaku Preview Mode
+    var v37DanmakuPreviewMode: Boolean
+        get() = prefs.getBoolean(KEY_V37_DANMAKUPREVIEWMODE, false)
+        set(v) = prefs.edit().putBoolean(KEY_V37_DANMAKUPREVIEWMODE, v).apply()
+
+    // v37b.7: Cast Audio Channel
+    var v37CastAudioChannel: Int
+        get() = prefs.getInt(KEY_V37_CASTAUDIOCHANNEL, 0)
+        set(v) = prefs.edit().putInt(KEY_V37_CASTAUDIOCHANNEL, v).apply()
+
+    // v37b.8: Subtitle Font Size Auto
+    var v37SubtitleFontSizeAuto: Boolean
+        get() = prefs.getBoolean(KEY_V37_SUBTITLEFONTSIZEAUTO, false)
+        set(v) = prefs.edit().putBoolean(KEY_V37_SUBTITLEFONTSIZEAUTO, v).apply()
+
+    // v37b.9: Video Edge Enhancement
+    var v37VideoEdgeEnhance: Int
+        get() = prefs.getInt(KEY_V37_VIDEOEDGEENHANCE, 0)
+        set(v) = prefs.edit().putInt(KEY_V37_VIDEOEDGEENHANCE, v).apply()
+
+    // v37b.10: Danmaku Send Font
+    var v37DanmakuSendFont: Int
+        get() = prefs.getInt(KEY_V37_DANMAKUSENDFONT, 0)
+        set(v) = prefs.edit().putInt(KEY_V37_DANMAKUSENDFONT, v).apply()
+
+    // v37b.11: Playlist Repeat Mode
+    var v37PlaylistRepeatMode: Int
+        get() = prefs.getInt(KEY_V37_PLAYLISTREPEATMODE, 0)
+        set(v) = prefs.edit().putInt(KEY_V37_PLAYLISTREPEATMODE, v).apply()
+
+    // v37b.12: Gesture Triple Tap
+    var v37GestureTripleTapAction: Int
+        get() = prefs.getInt(KEY_V37_GESTURETRIPLETAPACTION, 0)
+        set(v) = prefs.edit().putInt(KEY_V37_GESTURETRIPLETAPACTION, v).apply()
+
+    // v37b.13: Video Color Curve
+    var v37VideoColorCurve: Int
+        get() = prefs.getInt(KEY_V37_VIDEOCOLORCURVE, 0)
+        set(v) = prefs.edit().putInt(KEY_V37_VIDEOCOLORCURVE, v).apply()
+
+    // v37b.14: Danmaku Shadow Color Custom
+    var v37DanmakuShadowColorCustom: Int
+        get() = prefs.getInt(KEY_V37_DANMAKUSHADOWCOLORCUSTOM, 0)
+        set(v) = prefs.edit().putInt(KEY_V37_DANMAKUSHADOWCOLORCUSTOM, v).apply()
+
+    // v37b.15: Cast Keep Alive
+    var v37CastKeepAlive: Boolean
+        get() = prefs.getBoolean(KEY_V37_CASTKEEPALIVE, true)
+        set(v) = prefs.edit().putBoolean(KEY_V37_CASTKEEPALIVE, v).apply()
+
+    // === v38b.x ===
+    // v38b.1: Video Chroma Upsampling
+    var v38VideoChromaUpsampling: Int
+        get() = prefs.getInt(KEY_V38_VIDEOCHROMAUPSAMPLING, 0)
+        set(v) = prefs.edit().putInt(KEY_V38_VIDEOCHROMAUPSAMPLING, v).apply()
+
+    // v38b.2: Danmaku Preset Slots
+    var v38DanmakuPresetSlots: Int
+        get() = prefs.getInt(KEY_V38_DANMAKUPRESETSLOTS, 3)
+        set(v) = prefs.edit().putInt(KEY_V38_DANMAKUPRESETSLOTS, v).apply()
+
+    // v38b.3: Subtitle BG Blur
+    var v38SubtitleBgBlur: Int
+        get() = prefs.getInt(KEY_V38_SUBTITLEBGBLUR, 0)
+        set(v) = prefs.edit().putInt(KEY_V38_SUBTITLEBGBLUR, v).apply()
+
+    // v38b.4: Gesture Edge Zone Width
+    var v38GestureEdgeZoneWidth: Int
+        get() = prefs.getInt(KEY_V38_GESTUREEDGEZONEWIDTH, 10)
+        set(v) = prefs.edit().putInt(KEY_V38_GESTUREEDGEZONEWIDTH, v).apply()
+
+    // v38b.5: Video Deinterlace
+    var v38VideoDeinterlace: Boolean
+        get() = prefs.getBoolean(KEY_V38_VIDEODEINTERLACE, true)
+        set(v) = prefs.edit().putBoolean(KEY_V38_VIDEODEINTERLACE, v).apply()
+
+    // v38b.6: Danmaku Keyboard Send
+    var v38DanmakuKeyboardSend: Boolean
+        get() = prefs.getBoolean(KEY_V38_DANMAKUKEYBOARDSEND, false)
+        set(v) = prefs.edit().putBoolean(KEY_V38_DANMAKUKEYBOARDSEND, v).apply()
+
+    // v38b.7: Cast Video HDR
+    var v38CastVideoHDR: Boolean
+        get() = prefs.getBoolean(KEY_V38_CASTVIDEOHDR, false)
+        set(v) = prefs.edit().putBoolean(KEY_V38_CASTVIDEOHDR, v).apply()
+
+    // v38b.8: Subtitle Font Outline
+    var v38SubtitleFontOutline: Boolean
+        get() = prefs.getBoolean(KEY_V38_SUBTITLEFONTOUTLINE, true)
+        set(v) = prefs.edit().putBoolean(KEY_V38_SUBTITLEFONTOUTLINE, v).apply()
+
+    // v38b.9: Video Banding Fix
+    var v38VideoBandingFix: Boolean
+        get() = prefs.getBoolean(KEY_V38_VIDEOBANDINGFIX, false)
+        set(v) = prefs.edit().putBoolean(KEY_V38_VIDEOBANDINGFIX, v).apply()
+
+    // v38b.10: Danmaku Lane Count
+    var v38DanmakuLaneCount: Int
+        get() = prefs.getInt(KEY_V38_DANMAKULANECOUNT, 0)
+        set(v) = prefs.edit().putInt(KEY_V38_DANMAKULANECOUNT, v).apply()
+
+    // v38b.11: Playlist Smart Sort
+    var v38PlaylistSmartSort: Boolean
+        get() = prefs.getBoolean(KEY_V38_PLAYLISTSMARTSORT, false)
+        set(v) = prefs.edit().putBoolean(KEY_V38_PLAYLISTSMARTSORT, v).apply()
+
+    // v38b.12: Gesture Dead Zone
+    var v38GestureDeadZone: Int
+        get() = prefs.getInt(KEY_V38_GESTUREDEADZONE, 20)
+        set(v) = prefs.edit().putInt(KEY_V38_GESTUREDEADZONE, v).apply()
+
+    // v38b.13: Video Overscan Crop
+    var v38VideoOverscan: Int
+        get() = prefs.getInt(KEY_V38_VIDEOOVERSCAN, 0)
+        set(v) = prefs.edit().putInt(KEY_V38_VIDEOOVERSCAN, v).apply()
+
+    // v38b.14: Danmaku Merge Threshold
+    var v38DanmakuMergeThreshold: Int
+        get() = prefs.getInt(KEY_V38_DANMAKUMERGETHRESHOLD, 80)
+        set(v) = prefs.edit().putInt(KEY_V38_DANMAKUMERGETHRESHOLD, v).apply()
+
+    // v38b.15: Cast Volume Control
+    var v38CastVolumeControl: Boolean
+        get() = prefs.getBoolean(KEY_V38_CASTVOLUMECONTROL, true)
+        set(v) = prefs.edit().putBoolean(KEY_V38_CASTVOLUMECONTROL, v).apply()
+
+    // === v39b.x ===
+    // v39b.1: Video Temporal Denoise
+    var v39VideoTemporalDenoise: Int
+        get() = prefs.getInt(KEY_V39_VIDEOTEMPORALDENOISE, 0)
+        set(v) = prefs.edit().putInt(KEY_V39_VIDEOTEMPORALDENOISE, v).apply()
+
+    // v39b.2: Danmaku Font Family
+    var v39DanmakuFontFamily: Int
+        get() = prefs.getInt(KEY_V39_DANMAKUFONTFAMILY, 0)
+        set(v) = prefs.edit().putInt(KEY_V39_DANMAKUFONTFAMILY, v).apply()
+
+    // v39b.3: Subtitle BG Color
+    var v39SubtitleBgColor: Int
+        get() = prefs.getInt(KEY_V39_SUBTITLEBGCOLOR, 0)
+        set(v) = prefs.edit().putInt(KEY_V39_SUBTITLEBGCOLOR, v).apply()
+
+    // v39b.4: Gesture Scroll Action
+    var v39GestureScrollAction: Int
+        get() = prefs.getInt(KEY_V39_GESTURESCROLLACTION, 0)
+        set(v) = prefs.edit().putInt(KEY_V39_GESTURESCROLLACTION, v).apply()
+
+    // v39b.5: Video Adaptive Sharpen
+    var v39VideoAdaptiveSharpen: Boolean
+        get() = prefs.getBoolean(KEY_V39_VIDEOADAPTIVESHARPEN, false)
+        set(v) = prefs.edit().putBoolean(KEY_V39_VIDEOADAPTIVESHARPEN, v).apply()
+
+    // v39b.6: Danmaku Send Privilege
+    var v39DanmakuSendPrivilege: Boolean
+        get() = prefs.getBoolean(KEY_V39_DANMAKUSENDPRIVILEGE, false)
+        set(v) = prefs.edit().putBoolean(KEY_V39_DANMAKUSENDPRIVILEGE, v).apply()
+
+    // v39b.7: Cast Subtitle Track
+    var v39CastSubtitles: Int
+        get() = prefs.getInt(KEY_V39_CASTSUBTITLES, 0)
+        set(v) = prefs.edit().putInt(KEY_V39_CASTSUBTITLES, v).apply()
+
+    // v39b.8: Subtitle BG Padding
+    var v39SubtitleBgPadding: Int
+        get() = prefs.getInt(KEY_V39_SUBTITLEBGPADDING, 4)
+        set(v) = prefs.edit().putInt(KEY_V39_SUBTITLEBGPADDING, v).apply()
+
+    // v39b.9: Video Color Temp Fine
+    var v39VideoColorTemperatureFine: Int
+        get() = prefs.getInt(KEY_V39_VIDEOCOLORTEMPERATUREFINE, 50)
+        set(v) = prefs.edit().putInt(KEY_V39_VIDEOCOLORTEMPERATUREFINE, v).apply()
+
+    // v39b.10: Danmaku Max Per Screen
+    var v39DanmakuMaxPerScreen: Int
+        get() = prefs.getInt(KEY_V39_DANMAKUMAXPERSCREEN, 3)
+        set(v) = prefs.edit().putInt(KEY_V39_DANMAKUMAXPERSCREEN, v).apply()
+
+    // v39b.11: Playlist Load Related
+    var v39PlaylistLoadRelated: Boolean
+        get() = prefs.getBoolean(KEY_V39_PLAYLISTLOADRELATED, true)
+        set(v) = prefs.edit().putBoolean(KEY_V39_PLAYLISTLOADRELATED, v).apply()
+
+    // v39b.12: Video Smoothing Level
+    var v39VideoSmoothingLevel: Int
+        get() = prefs.getInt(KEY_V39_VIDEOSMOOTHINGLEVEL, 0)
+        set(v) = prefs.edit().putInt(KEY_V39_VIDEOSMOOTHINGLEVEL, v).apply()
+
+    // v39b.13: Danmaku Sender Level Icon
+    var v39DanmakuSenderLevelIcon: Boolean
+        get() = prefs.getBoolean(KEY_V39_DANMAKUSENDERLEVELICON, true)
+        set(v) = prefs.edit().putBoolean(KEY_V39_DANMAKUSENDERLEVELICON, v).apply()
+
+    // v39b.14: Subtitle Auto Translate
+    var v39SubtitleAutoTranslate: Boolean
+        get() = prefs.getBoolean(KEY_V39_SUBTITLEAUTOTRANSLATE, false)
+        set(v) = prefs.edit().putBoolean(KEY_V39_SUBTITLEAUTOTRANSLATE, v).apply()
+
+    // v39b.15: Cast Audio Quality
+    var v39CastAudioQuality: Int
+        get() = prefs.getInt(KEY_V39_CASTAUDIOQUALITY, 0)
+        set(v) = prefs.edit().putInt(KEY_V39_CASTAUDIOQUALITY, v).apply()
+
+    // === v40b.x ===
+    // v40b.1: Video Spatial Denoise
+    var v40VideoSpatialDenoise: Int
+        get() = prefs.getInt(KEY_V40_VIDEOSPATIALDENOISE, 0)
+        set(v) = prefs.edit().putInt(KEY_V40_VIDEOSPATIALDENOISE, v).apply()
+
+    // v40b.2: Danmaku Preview Size
+    var v40DanmakuPreviewSize: Int
+        get() = prefs.getInt(KEY_V40_DANMAKUPREVIEWSIZE, 14)
+        set(v) = prefs.edit().putInt(KEY_V40_DANMAKUPREVIEWSIZE, v).apply()
+
+    // v40b.3: Subtitle Stroke Color Custom
+    var v40SubtitleStrokeColor: Boolean
+        get() = prefs.getBoolean(KEY_V40_SUBTITLESTROKECOLOR, false)
+        set(v) = prefs.edit().putBoolean(KEY_V40_SUBTITLESTROKECOLOR, v).apply()
+
+    // v40b.4: Gesture Invert Scroll
+    var v40GestureInvertScroll: Boolean
+        get() = prefs.getBoolean(KEY_V40_GESTUREINVERTSCROLL, false)
+        set(v) = prefs.edit().putBoolean(KEY_V40_GESTUREINVERTSCROLL, v).apply()
+
+    // v40b.5: Video Motion Blur
+    var v40VideoMotionBlur: Int
+        get() = prefs.getInt(KEY_V40_VIDEOMOTIONBLUR, 0)
+        set(v) = prefs.edit().putInt(KEY_V40_VIDEOMOTIONBLUR, v).apply()
+
+    // v40b.6: Danmaku Report Button
+    var v40DanmakuReportEnabled: Boolean
+        get() = prefs.getBoolean(KEY_V40_DANMAKUREPORTENABLED, true)
+        set(v) = prefs.edit().putBoolean(KEY_V40_DANMAKUREPORTENABLED, v).apply()
+
+    // v40b.7: Cast Auto Pause
+    var v40CastAutoPause: Boolean
+        get() = prefs.getBoolean(KEY_V40_CASTAUTOPAUSE, false)
+        set(v) = prefs.edit().putBoolean(KEY_V40_CASTAUTOPAUSE, v).apply()
+
+    // v40b.8: Subtitle Stroke Width
+    var v40SubtitleStrokeWidth: Int
+        get() = prefs.getInt(KEY_V40_SUBTITLESTROKEWIDTH, 1)
+        set(v) = prefs.edit().putInt(KEY_V40_SUBTITLESTROKEWIDTH, v).apply()
+
+    // v40b.9: Video Detail Enhancement
+    var v40VideoDetailEnhance: Int
+        get() = prefs.getInt(KEY_V40_VIDEODETAILENHANCE, 0)
+        set(v) = prefs.edit().putInt(KEY_V40_VIDEODETAILENHANCE, v).apply()
+
+    // v40b.10: Danmaku Block Level
+    var v40DanmakuBlockLevel: Int
+        get() = prefs.getInt(KEY_V40_DANMAKUBLOCKLEVEL, 0)
+        set(v) = prefs.edit().putInt(KEY_V40_DANMAKUBLOCKLEVEL, v).apply()
+
+    // v40b.11: Playlist Next Episode
+    var v40PlaylistNextEpisode: Boolean
+        get() = prefs.getBoolean(KEY_V40_PLAYLISTNEXTEPISODE, true)
+        set(v) = prefs.edit().putBoolean(KEY_V40_PLAYLISTNEXTEPISODE, v).apply()
+
+    // v40b.12: Gesture Custom Mapping
+    var v40GestureCustomMapping: Boolean
+        get() = prefs.getBoolean(KEY_V40_GESTURECUSTOMMAPPING, false)
+        set(v) = prefs.edit().putBoolean(KEY_V40_GESTURECUSTOMMAPPING, v).apply()
+
+    // v40b.13: Video Color Boost
+    var v40VideoColorBoost: Int
+        get() = prefs.getInt(KEY_V40_VIDEOCOLORBOOST, 100)
+        set(v) = prefs.edit().putInt(KEY_V40_VIDEOCOLORBOOST, v).apply()
+
+    // v40b.14: Danmaku Font Size Override
+    var v40DanmakuFontSizeOverride: Int
+        get() = prefs.getInt(KEY_V40_DANMAKUFONTSIZEOVERRIDE, 0)
+        set(v) = prefs.edit().putInt(KEY_V40_DANMAKUFONTSIZEOVERRIDE, v).apply()
+
+    // v40b.15: Cast Audio Normalization
+    var v40CastAudioNormalization: Boolean
+        get() = prefs.getBoolean(KEY_V40_CASTAUDIONORMALIZATION, false)
+        set(v) = prefs.edit().putBoolean(KEY_V40_CASTAUDIONORMALIZATION, v).apply()
+
+
+    // ==================== v51-v60 New Unique Features ====================
+
+    // === v51.x ===
+    // v51.1: Playback Auto Next Episode
+    var v51PlaybackAutoNextEpisode: Boolean
+        get() = prefs.getBoolean(KEY_V51_PLAYBACKAUTONEXTEPISODE, true)
+        set(v) = prefs.edit().putBoolean(KEY_V51_PLAYBACKAUTONEXTEPISODE, v).apply()
+
+    // v51.2: Danmaku Font Shadow Size
+    var v51DanmakuFontShadowSize: Int
+        get() = prefs.getInt(KEY_V51_DANMAKUFONTSHADOWSIZE, 0)
+        set(v) = prefs.edit().putInt(KEY_V51_DANMAKUFONTSHADOWSIZE, v).apply()
+
+    // v51.3: Color Midtone Adjust
+    var v51ColorMidtoneAdjust: Int
+        get() = prefs.getInt(KEY_V51_COLORMIDTONEADJUST, 0)
+        set(v) = prefs.edit().putInt(KEY_V51_COLORMIDTONEADJUST, v).apply()
+
+    // v51.4: Gesture Custom Action 3
+    var v51GestureCustomAction3: Int
+        get() = prefs.getInt(KEY_V51_GESTURECUSTOMACTION3, 0)
+        set(v) = prefs.edit().putInt(KEY_V51_GESTURECUSTOMACTION3, v).apply()
+
+    // v51.5: Subtitle Font Italic
+    var v51SubtitleFontItalic: Boolean
+        get() = prefs.getBoolean(KEY_V51_SUBTITLEFONTITALIC, false)
+        set(v) = prefs.edit().putBoolean(KEY_V51_SUBTITLEFONTITALIC, v).apply()
+
+    // v51.6: Video Adaptive Contrast Enhanced
+    var v51VideoAdaptiveContrastEnhanced: Boolean
+        get() = prefs.getBoolean(KEY_V51_VIDEOADAPTIVECONTRASTENHANCED, false)
+        set(v) = prefs.edit().putBoolean(KEY_V51_VIDEOADAPTIVECONTRASTENHANCED, v).apply()
+
+    // v51.7: Danmaku Filter Muted Users
+    var v51DanmakuFilterMutedUsers: Boolean
+        get() = prefs.getBoolean(KEY_V51_DANMAKUFILTERMUTEDUSERS, true)
+        set(v) = prefs.edit().putBoolean(KEY_V51_DANMAKUFILTERMUTEDUSERS, v).apply()
+
+    // v51.8: Cast Video Upscale Mode
+    var v51CastVideoUpscaleMode: Int
+        get() = prefs.getInt(KEY_V51_CASTVIDEOUPSCALEMODE, 0)
+        set(v) = prefs.edit().putInt(KEY_V51_CASTVIDEOUPSCALEMODE, v).apply()
+
+    // v51.9: Playlist Auto Continue
+    var v51PlaylistAutoContinue: Boolean
+        get() = prefs.getBoolean(KEY_V51_PLAYLISTAUTOCONTINUE, true)
+        set(v) = prefs.edit().putBoolean(KEY_V51_PLAYLISTAUTOCONTINUE, v).apply()
+
+    // v51.10: Video Luma Adaptive
+    var v51VideoLumaAdaptive: Boolean
+        get() = prefs.getBoolean(KEY_V51_VIDEOLUMAADAPTIVE, false)
+        set(v) = prefs.edit().putBoolean(KEY_V51_VIDEOLUMAADAPTIVE, v).apply()
+
+    // v51.11: Danmaku Font Spacing Custom
+    var v51DanmakuFontSpacingCustom: Int
+        get() = prefs.getInt(KEY_V51_DANMAKUFONTSPACINGCUSTOM, 0)
+        set(v) = prefs.edit().putInt(KEY_V51_DANMAKUFONTSPACINGCUSTOM, v).apply()
+
+    // v51.12: Subtitle Font Color Custom
+    var v51SubtitleFontColorCustom: Int
+        get() = prefs.getInt(KEY_V51_SUBTITLEFONTCOLORCUSTOM, 0)
+        set(v) = prefs.edit().putInt(KEY_V51_SUBTITLEFONTCOLORCUSTOM, v).apply()
+
+    // v51.13: Gesture Long Press Action
+    var v51GestureLongPressAction: Int
+        get() = prefs.getInt(KEY_V51_GESTURELONGPRESSACTION, 0)
+        set(v) = prefs.edit().putInt(KEY_V51_GESTURELONGPRESSACTION, v).apply()
+
+    // v51.14: Video Chroma Adaptive
+    var v51VideoChromaAdaptive: Boolean
+        get() = prefs.getBoolean(KEY_V51_VIDEOCHROMAADAPTIVE, false)
+        set(v) = prefs.edit().putBoolean(KEY_V51_VIDEOCHROMAADAPTIVE, v).apply()
+
+    // v51.15: Cast Audio Sync
+    var v51CastAudioSync: Boolean
+        get() = prefs.getBoolean(KEY_V51_CASTAUDIOSYNC, true)
+        set(v) = prefs.edit().putBoolean(KEY_V51_CASTAUDIOSYNC, v).apply()
+
+    // === v52.x ===
+    // v52.1: Video Temporal Noise Reduce
+    var v52VideoTemporalNoiseReduce: Boolean
+        get() = prefs.getBoolean(KEY_V52_VIDEOTEMPORALNOISEREDUCE, false)
+        set(v) = prefs.edit().putBoolean(KEY_V52_VIDEOTEMPORALNOISEREDUCE, v).apply()
+
+    // v52.2: Danmaku BG Color Custom
+    var v52DanmakuBgColorCustom: Int
+        get() = prefs.getInt(KEY_V52_DANMAKUBGCOLORCUSTOM, 0)
+        set(v) = prefs.edit().putInt(KEY_V52_DANMAKUBGCOLORCUSTOM, v).apply()
+
+    // v52.3: Subtitle Font Size Auto
+    var v52SubtitleFontSizeAuto: Boolean
+        get() = prefs.getBoolean(KEY_V52_SUBTITLEFONTSIZEAUTO, false)
+        set(v) = prefs.edit().putBoolean(KEY_V52_SUBTITLEFONTSIZEAUTO, v).apply()
+
+    // v52.4: Gesture Swipe Feedback
+    var v52GestureSwipeFeedback: Int
+        get() = prefs.getInt(KEY_V52_GESTURESWIPEFEEDBACK, 0)
+        set(v) = prefs.edit().putInt(KEY_V52_GESTURESWIPEFEEDBACK, v).apply()
+
+    // v52.5: Video Color Highlight Recovery
+    var v52VideoColorHighlightRecovery: Boolean
+        get() = prefs.getBoolean(KEY_V52_VIDEOCOLORHIGHLIGHTRECOVERY, false)
+        set(v) = prefs.edit().putBoolean(KEY_V52_VIDEOCOLORHIGHLIGHTRECOVERY, v).apply()
+
+    // v52.6: Danmaku Send Preview
+    var v52DanmakuSendPreview: Boolean
+        get() = prefs.getBoolean(KEY_V52_DANMAKUSENDPREVIEW, true)
+        set(v) = prefs.edit().putBoolean(KEY_V52_DANMAKUSENDPREVIEW, v).apply()
+
+    // v52.7: Cast Video Auto Quality
+    var v52CastVideoAutoQuality: Boolean
+        get() = prefs.getBoolean(KEY_V52_CASTVIDEOAUTOQUALITY, true)
+        set(v) = prefs.edit().putBoolean(KEY_V52_CASTVIDEOAUTOQUALITY, v).apply()
+
+    // v52.8: Subtitle BG Padding Custom
+    var v52SubtitleBgPaddingCustom: Int
+        get() = prefs.getInt(KEY_V52_SUBTITLEBGPADDINGCUSTOM, 2)
+        set(v) = prefs.edit().putInt(KEY_V52_SUBTITLEBGPADDINGCUSTOM, v).apply()
+
+    // v52.9: Video Frame Interpolation
+    var v52VideoFrameInterpolation: Boolean
+        get() = prefs.getBoolean(KEY_V52_VIDEOFRAMEINTERPOLATION, false)
+        set(v) = prefs.edit().putBoolean(KEY_V52_VIDEOFRAMEINTERPOLATION, v).apply()
+
+    // v52.10: Danmaku Merge Algorithm
+    var v52DanmakuMergeAlgorithm: Int
+        get() = prefs.getInt(KEY_V52_DANMAKUMERGEALGORITHM, 0)
+        set(v) = prefs.edit().putInt(KEY_V52_DANMAKUMERGEALGORITHM, v).apply()
+
+    // v52.11: Playlist Shuffle Weighted
+    var v52PlaylistShuffleWeighted: Boolean
+        get() = prefs.getBoolean(KEY_V52_PLAYLISTSHUFFLEWEIGHTED, false)
+        set(v) = prefs.edit().putBoolean(KEY_V52_PLAYLISTSHUFFLEWEIGHTED, v).apply()
+
+    // v52.12: Gesture Pinch Action
+    var v52GesturePinchAction: Int
+        get() = prefs.getInt(KEY_V52_GESTUREPINCHACTION, 0)
+        set(v) = prefs.edit().putInt(KEY_V52_GESTUREPINCHACTION, v).apply()
+
+    // v52.13: Video Color Temperature
+    var v52VideoColorTemperature: Int
+        get() = prefs.getInt(KEY_V52_VIDEOCOLORTEMPERATURE, 0)
+        set(v) = prefs.edit().putInt(KEY_V52_VIDEOCOLORTEMPERATURE, v).apply()
+
+    // v52.14: Danmaku Font Weight Adaptive
+    var v52DanmakuFontWeightAdaptive: Boolean
+        get() = prefs.getBoolean(KEY_V52_DANMAKUFONTWEIGHTADAPTIVE, false)
+        set(v) = prefs.edit().putBoolean(KEY_V52_DANMAKUFONTWEIGHTADAPTIVE, v).apply()
+
+    // v52.15: Cast Screen Mirror Mode
+    var v52CastScreenMirrorMode: Int
+        get() = prefs.getInt(KEY_V52_CASTSCREENMIRRORMODE, 0)
+        set(v) = prefs.edit().putInt(KEY_V52_CASTSCREENMIRRORMODE, v).apply()
+
+    // === v53.x ===
+    // v53.1: Video Spatial Noise Reduce
+    var v53VideoSpatialNoiseReduce: Boolean
+        get() = prefs.getBoolean(KEY_V53_VIDEOSPATIALNOISEREDUCE, false)
+        set(v) = prefs.edit().putBoolean(KEY_V53_VIDEOSPATIALNOISEREDUCE, v).apply()
+
+    // v53.2: Danmaku Opacity Adaptive
+    var v53DanmakuOpacityAdaptive: Boolean
+        get() = prefs.getBoolean(KEY_V53_DANMAKUOPACITYADAPTIVE, false)
+        set(v) = prefs.edit().putBoolean(KEY_V53_DANMAKUOPACITYADAPTIVE, v).apply()
+
+    // v53.3: Subtitle Sync Auto Detect
+    var v53SubtitleSyncAutoDetect: Boolean
+        get() = prefs.getBoolean(KEY_V53_SUBTITLESYNCAUTODETECT, false)
+        set(v) = prefs.edit().putBoolean(KEY_V53_SUBTITLESYNCAUTODETECT, v).apply()
+
+    // v53.4: Gesture Triple Tap Action
+    var v53GestureTripleTapAction: Int
+        get() = prefs.getInt(KEY_V53_GESTURETRIPLETAPACTION, 0)
+        set(v) = prefs.edit().putInt(KEY_V53_GESTURETRIPLETAPACTION, v).apply()
+
+    // v53.5: Video Color Highlight Compress
+    var v53VideoColorHighlightCompress: Boolean
+        get() = prefs.getBoolean(KEY_V53_VIDEOCOLORHIGHLIGHTCOMPRESS, false)
+        set(v) = prefs.edit().putBoolean(KEY_V53_VIDEOCOLORHIGHLIGHTCOMPRESS, v).apply()
+
+    // v53.6: Danmaku Send Timer
+    var v53DanmakuSendTimer: Boolean
+        get() = prefs.getBoolean(KEY_V53_DANMAKUSENDTIMER, false)
+        set(v) = prefs.edit().putBoolean(KEY_V53_DANMAKUSENDTIMER, v).apply()
+
+    // v53.7: Cast Video Latency Mode
+    var v53CastVideoLatencyMode: Int
+        get() = prefs.getInt(KEY_V53_CASTVIDEOLATENCYMODE, 0)
+        set(v) = prefs.edit().putInt(KEY_V53_CASTVIDEOLATENCYMODE, v).apply()
+
+    // v53.8: Subtitle BG Radius Custom
+    var v53SubtitleBgRadiusCustom: Int
+        get() = prefs.getInt(KEY_V53_SUBTITLEBGRADIUSCUSTOM, 0)
+        set(v) = prefs.edit().putInt(KEY_V53_SUBTITLEBGRADIUSCUSTOM, v).apply()
+
+    // v53.9: Video Detail Enhance
+    var v53VideoDetailEnhance: Boolean
+        get() = prefs.getBoolean(KEY_V53_VIDEODETAILENHANCE, false)
+        set(v) = prefs.edit().putBoolean(KEY_V53_VIDEODETAILENHANCE, v).apply()
+
+    // v53.10: Danmaku Font Size Curve
+    var v53DanmakuFontSizeCurve: Int
+        get() = prefs.getInt(KEY_V53_DANMAKUFONTSIZECURVE, 0)
+        set(v) = prefs.edit().putInt(KEY_V53_DANMAKUFONTSIZECURVE, v).apply()
+
+    // v53.11: Playlist Auto Download Quality
+    var v53PlaylistAutoDownloadQuality: Int
+        get() = prefs.getInt(KEY_V53_PLAYLISTAUTODOWNLOADQUALITY, 0)
+        set(v) = prefs.edit().putInt(KEY_V53_PLAYLISTAUTODOWNLOADQUALITY, v).apply()
+
+    // v53.12: Gesture Swipe Threshold
+    var v53GestureSwipeThreshold: Int
+        get() = prefs.getInt(KEY_V53_GESTURESWIPETHRESHOLD, 50)
+        set(v) = prefs.edit().putInt(KEY_V53_GESTURESWIPETHRESHOLD, v).apply()
+
+    // v53.13: Video Color Shadow Compress
+    var v53VideoColorShadowCompress: Boolean
+        get() = prefs.getBoolean(KEY_V53_VIDEOCOLORSHADOWCOMPRESS, false)
+        set(v) = prefs.edit().putBoolean(KEY_V53_VIDEOCOLORSHADOWCOMPRESS, v).apply()
+
+    // v53.14: Danmaku Stroke Color Custom
+    var v53DanmakuStrokeColorCustom: Int
+        get() = prefs.getInt(KEY_V53_DANMAKUSTROKECOLORCUSTOM, 0)
+        set(v) = prefs.edit().putInt(KEY_V53_DANMAKUSTROKECOLORCUSTOM, v).apply()
+
+    // v53.15: Cast Audio Fade Mode
+    var v53CastAudioFadeMode: Int
+        get() = prefs.getInt(KEY_V53_CASTAUDIOFADEMODE, 0)
+        set(v) = prefs.edit().putInt(KEY_V53_CASTAUDIOFADEMODE, v).apply()
+
+    // === v54.x ===
+    // v54.1: Video Color Grading Custom
+    var v54VideoColorGradingCustom: Boolean
+        get() = prefs.getBoolean(KEY_V54_VIDEOCOLORGRADINGCUSTOM, false)
+        set(v) = prefs.edit().putBoolean(KEY_V54_VIDEOCOLORGRADINGCUSTOM, v).apply()
+
+    // v54.2: Danmaku Border Weight
+    var v54DanmakuBorderWeight: Int
+        get() = prefs.getInt(KEY_V54_DANMAKUBORDERWEIGHT, 1)
+        set(v) = prefs.edit().putInt(KEY_V54_DANMAKUBORDERWEIGHT, v).apply()
+
+    // v54.3: Subtitle Font Weight
+    var v54SubtitleFontWeight: Int
+        get() = prefs.getInt(KEY_V54_SUBTITLEFONTWEIGHT, 400)
+        set(v) = prefs.edit().putInt(KEY_V54_SUBTITLEFONTWEIGHT, v).apply()
+
+    // v54.4: Gesture Edge Swipe Speed
+    var v54GestureEdgeSwipeSpeed: Int
+        get() = prefs.getInt(KEY_V54_GESTUREEDGESWIPESPEED, 50)
+        set(v) = prefs.edit().putInt(KEY_V54_GESTUREEDGESWIPESPEED, v).apply()
+
+    // v54.5: Video Adaptive Saturation
+    var v54VideoAdaptiveSaturation: Boolean
+        get() = prefs.getBoolean(KEY_V54_VIDEOADAPTIVESATURATION, false)
+        set(v) = prefs.edit().putBoolean(KEY_V54_VIDEOADAPTIVESATURATION, v).apply()
+
+    // v54.6: Danmaku Send Max Length Custom
+    var v54DanmakuSendMaxLengthCustom: Int
+        get() = prefs.getInt(KEY_V54_DANMAKUSENDMAXLENGTHCUSTOM, 0)
+        set(v) = prefs.edit().putInt(KEY_V54_DANMAKUSENDMAXLENGTHCUSTOM, v).apply()
+
+    // v54.7: Cast Video Frame Rate Sync
+    var v54CastVideoFrameRateSync: Boolean
+        get() = prefs.getBoolean(KEY_V54_CASTVIDEOFRAMERATESYNC, true)
+        set(v) = prefs.edit().putBoolean(KEY_V54_CASTVIDEOFRAMERATESYNC, v).apply()
+
+    // v54.8: Subtitle Outline Color Custom
+    var v54SubtitleOutlineColorCustom: Int
+        get() = prefs.getInt(KEY_V54_SUBTITLEOUTLINECOLORCUSTOM, 0)
+        set(v) = prefs.edit().putInt(KEY_V54_SUBTITLEOUTLINECOLORCUSTOM, v).apply()
+
+    // v54.9: Video Luma Curve Custom
+    var v54VideoLumaCurveCustom: Int
+        get() = prefs.getInt(KEY_V54_VIDEOLUMACURVECUSTOM, 0)
+        set(v) = prefs.edit().putInt(KEY_V54_VIDEOLUMACURVECUSTOM, v).apply()
+
+    // v54.10: Danmaku History Filter
+    var v54DanmakuHistoryFilter: Boolean
+        get() = prefs.getBoolean(KEY_V54_DANMAKUHISTORYFILTER, false)
+        set(v) = prefs.edit().putBoolean(KEY_V54_DANMAKUHISTORYFILTER, v).apply()
+
+    // v54.11: Playlist Auto Skip Watched
+    var v54PlaylistAutoSkipWatched: Boolean
+        get() = prefs.getBoolean(KEY_V54_PLAYLISTAUTOSKIPWATCHED, false)
+        set(v) = prefs.edit().putBoolean(KEY_V54_PLAYLISTAUTOSKIPWATCHED, v).apply()
+
+    // v54.12: Gesture Double Tap Action
+    var v54GestureDoubleTapAction: Int
+        get() = prefs.getInt(KEY_V54_GESTUREDOUBLETAPACTION, 0)
+        set(v) = prefs.edit().putInt(KEY_V54_GESTUREDOUBLETAPACTION, v).apply()
+
+    // v54.13: Video Chroma Curve Custom
+    var v54VideoChromaCurveCustom: Int
+        get() = prefs.getInt(KEY_V54_VIDEOCHROMACURVECUSTOM, 0)
+        set(v) = prefs.edit().putInt(KEY_V54_VIDEOCHROMACURVECUSTOM, v).apply()
+
+    // v54.14: Danmaku BG Opacity Custom
+    var v54DanmakuBgOpacityCustom: Int
+        get() = prefs.getInt(KEY_V54_DANMAKUBGOPACITYCUSTOM, 0)
+        set(v) = prefs.edit().putInt(KEY_V54_DANMAKUBGOPACITYCUSTOM, v).apply()
+
+    // v54.15: Cast Audio Codec Custom
+    var v54CastAudioCodecCustom: Int
+        get() = prefs.getInt(KEY_V54_CASTAUDIOCODECCUSTOM, 0)
+        set(v) = prefs.edit().putInt(KEY_V54_CASTAUDIOCODECCUSTOM, v).apply()
+
+    // === v55.x ===
+    // v55.1: Video Color Fade
+    var v55VideoColorFade: Int
+        get() = prefs.getInt(KEY_V55_VIDEOCOLORFADE, 0)
+        set(v) = prefs.edit().putInt(KEY_V55_VIDEOCOLORFADE, v).apply()
+
+    // v55.2: Danmaku Text Glow Custom
+    var v55DanmakuTextGlowCustom: Boolean
+        get() = prefs.getBoolean(KEY_V55_DANMAKUTEXTGLOWCUSTOM, false)
+        set(v) = prefs.edit().putBoolean(KEY_V55_DANMAKUTEXTGLOWCUSTOM, v).apply()
+
+    // v55.3: Subtitle Animation Speed
+    var v55SubtitleAnimationSpeed: Int
+        get() = prefs.getInt(KEY_V55_SUBTITLEANIMATIONSPEED, 50)
+        set(v) = prefs.edit().putInt(KEY_V55_SUBTITLEANIMATIONSPEED, v).apply()
+
+    // v55.4: Gesture Pinch Zoom Mode
+    var v55GesturePinchZoomMode: Int
+        get() = prefs.getInt(KEY_V55_GESTUREPINCHZOOMMODE, 0)
+        set(v) = prefs.edit().putInt(KEY_V55_GESTUREPINCHZOOMMODE, v).apply()
+
+    // v55.5: Video Adaptive Gamma
+    var v55VideoAdaptiveGamma: Boolean
+        get() = prefs.getBoolean(KEY_V55_VIDEOADAPTIVEGAMMA, false)
+        set(v) = prefs.edit().putBoolean(KEY_V55_VIDEOADAPTIVEGAMMA, v).apply()
+
+    // v55.6: Danmaku Send Rate Custom
+    var v55DanmakuSendRateCustom: Int
+        get() = prefs.getInt(KEY_V55_DANMAKUSENDRATECUSTOM, 0)
+        set(v) = prefs.edit().putInt(KEY_V55_DANMAKUSENDRATECUSTOM, v).apply()
+
+    // v55.7: Cast Video Bitrate Adaptive
+    var v55CastVideoBitrateAdaptive: Boolean
+        get() = prefs.getBoolean(KEY_V55_CASTVIDEOBITRATEADAPTIVE, true)
+        set(v) = prefs.edit().putBoolean(KEY_V55_CASTVIDEOBITRATEADAPTIVE, v).apply()
+
+    // v55.8: Subtitle BG Opacity Custom
+    var v55SubtitleBgOpacityCustom: Int
+        get() = prefs.getInt(KEY_V55_SUBTITLEBGOPACITYCUSTOM, 80)
+        set(v) = prefs.edit().putInt(KEY_V55_SUBTITLEBGOPACITYCUSTOM, v).apply()
+
+    // v55.9: Video Frame Blend
+    var v55VideoFrameBlend: Boolean
+        get() = prefs.getBoolean(KEY_V55_VIDEOFRAMEBLEND, false)
+        set(v) = prefs.edit().putBoolean(KEY_V55_VIDEOFRAMEBLEND, v).apply()
+
+    // v55.10: Danmaku Lane Count
+    var v55DanmakuLaneCount: Int
+        get() = prefs.getInt(KEY_V55_DANMAKULANECOUNT, 0)
+        set(v) = prefs.edit().putInt(KEY_V55_DANMAKULANECOUNT, v).apply()
+
+    // v55.11: Playlist Auto Sync
+    var v55PlaylistAutoSync: Boolean
+        get() = prefs.getBoolean(KEY_V55_PLAYLISTAUTOSYNC, false)
+        set(v) = prefs.edit().putBoolean(KEY_V55_PLAYLISTAUTOSYNC, v).apply()
+
+    // v55.12: Gesture Rotate Action
+    var v55GestureRotateAction: Int
+        get() = prefs.getInt(KEY_V55_GESTUREROTATEACTION, 0)
+        set(v) = prefs.edit().putInt(KEY_V55_GESTUREROTATEACTION, v).apply()
+
+    // v55.13: Video Color Tint Enhanced
+    var v55VideoColorTintEnhanced: Boolean
+        get() = prefs.getBoolean(KEY_V55_VIDEOCOLORTINTENHANCED, false)
+        set(v) = prefs.edit().putBoolean(KEY_V55_VIDEOCOLORTINTENHANCED, v).apply()
+
+    // v55.14: Danmaku Font Custom Path
+    var v55DanmakuFontCustomPath: Boolean
+        get() = prefs.getBoolean(KEY_V55_DANMAKUFONTCUSTOMPATH, false)
+        set(v) = prefs.edit().putBoolean(KEY_V55_DANMAKUFONTCUSTOMPATH, v).apply()
+
+    // v55.15: Cast Audio Latency Auto
+    var v55CastAudioLatencyAuto: Boolean
+        get() = prefs.getBoolean(KEY_V55_CASTAUDIOLATENCYAUTO, true)
+        set(v) = prefs.edit().putBoolean(KEY_V55_CASTAUDIOLATENCYAUTO, v).apply()
+
+    // === v56.x ===
+    // v56.1: Video Adaptive Detail
+    var v56VideoAdaptiveDetail: Boolean
+        get() = prefs.getBoolean(KEY_V56_VIDEOADAPTIVEDETAIL, false)
+        set(v) = prefs.edit().putBoolean(KEY_V56_VIDEOADAPTIVEDETAIL, v).apply()
+
+    // v56.2: Danmaku Stroke Blur
+    var v56DanmakuStrokeBlur: Int
+        get() = prefs.getInt(KEY_V56_DANMAKUSTROKEBLUR, 0)
+        set(v) = prefs.edit().putInt(KEY_V56_DANMAKUSTROKEBLUR, v).apply()
+
+    // v56.3: Subtitle Word Spacing
+    var v56SubtitleWordSpacing: Int
+        get() = prefs.getInt(KEY_V56_SUBTITLEWORDSPACING, 0)
+        set(v) = prefs.edit().putInt(KEY_V56_SUBTITLEWORDSPACING, v).apply()
+
+    // v56.4: Gesture Multi Finger Action
+    var v56GestureMultiFingerAction: Int
+        get() = prefs.getInt(KEY_V56_GESTUREMULTIFINGERACTION, 0)
+        set(v) = prefs.edit().putInt(KEY_V56_GESTUREMULTIFINGERACTION, v).apply()
+
+    // v56.5: Video Color Black Level Custom
+    var v56VideoColorBlackLevelCustom: Int
+        get() = prefs.getInt(KEY_V56_VIDEOCOLORBLACKLEVELCUSTOM, 0)
+        set(v) = prefs.edit().putInt(KEY_V56_VIDEOCOLORBLACKLEVELCUSTOM, v).apply()
+
+    // v56.6: Danmaku Send Font Custom
+    var v56DanmakuSendFontCustom: Boolean
+        get() = prefs.getBoolean(KEY_V56_DANMAKUSENDFONTCUSTOM, false)
+        set(v) = prefs.edit().putBoolean(KEY_V56_DANMAKUSENDFONTCUSTOM, v).apply()
+
+    // v56.7: Cast Video Resolution Custom
+    var v56CastVideoResolutionCustom: Int
+        get() = prefs.getInt(KEY_V56_CASTVIDEORESOLUTIONCUSTOM, 0)
+        set(v) = prefs.edit().putInt(KEY_V56_CASTVIDEORESOLUTIONCUSTOM, v).apply()
+
+    // v56.8: Subtitle Font Stretch Custom
+    var v56SubtitleFontStretchCustom: Int
+        get() = prefs.getInt(KEY_V56_SUBTITLEFONTSTRETCHCUSTOM, 100)
+        set(v) = prefs.edit().putInt(KEY_V56_SUBTITLEFONTSTRETCHCUSTOM, v).apply()
+
+    // v56.9: Video Color White Level Custom
+    var v56VideoColorWhiteLevelCustom: Int
+        get() = prefs.getInt(KEY_V56_VIDEOCOLORWHITELEVELCUSTOM, 0)
+        set(v) = prefs.edit().putInt(KEY_V56_VIDEOCOLORWHITELEVELCUSTOM, v).apply()
+
+    // v56.10: Danmaku Filter By Color
+    var v56DanmakuFilterByColor: Boolean
+        get() = prefs.getBoolean(KEY_V56_DANMAKUFILTERBYCOLOR, false)
+        set(v) = prefs.edit().putBoolean(KEY_V56_DANMAKUFILTERBYCOLOR, v).apply()
+
+    // v56.11: Playlist Auto Delete Expired
+    var v56PlaylistAutoDeleteExpired: Boolean
+        get() = prefs.getBoolean(KEY_V56_PLAYLISTAUTODELETEEXPIRED, false)
+        set(v) = prefs.edit().putBoolean(KEY_V56_PLAYLISTAUTODELETEEXPIRED, v).apply()
+
+    // v56.12: Gesture Swipe Direction Lock
+    var v56GestureSwipeDirectionLock: Int
+        get() = prefs.getInt(KEY_V56_GESTURESWIPEDIRECTIONLOCK, 0)
+        set(v) = prefs.edit().putInt(KEY_V56_GESTURESWIPEDIRECTIONLOCK, v).apply()
+
+    // v56.13: Video Color Midtone Custom
+    var v56VideoColorMidtoneCustom: Int
+        get() = prefs.getInt(KEY_V56_VIDEOCOLORMIDTONECUSTOM, 0)
+        set(v) = prefs.edit().putInt(KEY_V56_VIDEOCOLORMIDTONECUSTOM, v).apply()
+
+    // v56.14: Danmaku BG Padding Custom
+    var v56DanmakuBgPaddingCustom: Int
+        get() = prefs.getInt(KEY_V56_DANMAKUBGPADDINGCUSTOM, 2)
+        set(v) = prefs.edit().putInt(KEY_V56_DANMAKUBGPADDINGCUSTOM, v).apply()
+
+    // v56.15: Cast Audio Volume Sync
+    var v56CastAudioVolumeSync: Boolean
+        get() = prefs.getBoolean(KEY_V56_CASTAUDIOVOLUMESYNC, true)
+        set(v) = prefs.edit().putBoolean(KEY_V56_CASTAUDIOVOLUMESYNC, v).apply()
+
+    // === v57.x ===
+    // v57.1: Video Temporal Enhance
+    var v57VideoTemporalEnhance: Boolean
+        get() = prefs.getBoolean(KEY_V57_VIDEOTEMPORALENHANCE, false)
+        set(v) = prefs.edit().putBoolean(KEY_V57_VIDEOTEMPORALENHANCE, v).apply()
+
+    // v57.2: Danmaku Font Line Height Custom
+    var v57DanmakuFontLineHeightCustom: Int
+        get() = prefs.getInt(KEY_V57_DANMAKUFONTLINEHEIGHTCUSTOM, 120)
+        set(v) = prefs.edit().putInt(KEY_V57_DANMAKUFONTLINEHEIGHTCUSTOM, v).apply()
+
+    // v57.3: Subtitle Outline Width Custom
+    var v57SubtitleOutlineWidthCustom: Int
+        get() = prefs.getInt(KEY_V57_SUBTITLEOUTLINEWIDTHCUSTOM, 1)
+        set(v) = prefs.edit().putInt(KEY_V57_SUBTITLEOUTLINEWIDTHCUSTOM, v).apply()
+
+    // v57.4: Gesture Long Press Feedback
+    var v57GestureLongPressFeedback: Int
+        get() = prefs.getInt(KEY_V57_GESTURELONGPRESSFEEDBACK, 0)
+        set(v) = prefs.edit().putInt(KEY_V57_GESTURELONGPRESSFEEDBACK, v).apply()
+
+    // v57.5: Video Color Highlight Custom
+    var v57VideoColorHighlightCustom: Int
+        get() = prefs.getInt(KEY_V57_VIDEOCOLORHIGHLIGHTCUSTOM, 0)
+        set(v) = prefs.edit().putInt(KEY_V57_VIDEOCOLORHIGHLIGHTCUSTOM, v).apply()
+
+    // v57.6: Danmaku Send Effect Custom
+    var v57DanmakuSendEffectCustom: Boolean
+        get() = prefs.getBoolean(KEY_V57_DANMAKUSENDEFFECTCUSTOM, false)
+        set(v) = prefs.edit().putBoolean(KEY_V57_DANMAKUSENDEFFECTCUSTOM, v).apply()
+
+    // v57.7: Cast Video Color Profile
+    var v57CastVideoColorProfile: Int
+        get() = prefs.getInt(KEY_V57_CASTVIDEOCOLORPROFILE, 0)
+        set(v) = prefs.edit().putInt(KEY_V57_CASTVIDEOCOLORPROFILE, v).apply()
+
+    // v57.8: Subtitle BG Blur Mode
+    var v57SubtitleBgBlurMode: Int
+        get() = prefs.getInt(KEY_V57_SUBTITLEBGBLURMODE, 0)
+        set(v) = prefs.edit().putInt(KEY_V57_SUBTITLEBGBLURMODE, v).apply()
+
+    // v57.9: Video Color Shadow Custom
+    var v57VideoColorShadowCustom: Int
+        get() = prefs.getInt(KEY_V57_VIDEOCOLORSHADOWCUSTOM, 0)
+        set(v) = prefs.edit().putInt(KEY_V57_VIDEOCOLORSHADOWCUSTOM, v).apply()
+
+    // v57.10: Danmaku History Export Format
+    var v57DanmakuHistoryExportFormat: Int
+        get() = prefs.getInt(KEY_V57_DANMAKUHISTORYEXPORTFORMAT, 0)
+        set(v) = prefs.edit().putInt(KEY_V57_DANMAKUHISTORYEXPORTFORMAT, v).apply()
+
+    // v57.11: Playlist Auto Sort By Rating
+    var v57PlaylistAutoSortByRating: Boolean
+        get() = prefs.getBoolean(KEY_V57_PLAYLISTAUTOSORTBYRATING, false)
+        set(v) = prefs.edit().putBoolean(KEY_V57_PLAYLISTAUTOSORTBYRATING, v).apply()
+
+    // v57.12: Gesture Dead Zone Mode
+    var v57GestureDeadZoneMode: Int
+        get() = prefs.getInt(KEY_V57_GESTUREDEADZONEMODE, 0)
+        set(v) = prefs.edit().putInt(KEY_V57_GESTUREDEADZONEMODE, v).apply()
+
+    // v57.13: Video Color Gamma Custom
+    var v57VideoColorGammaCustom: Int
+        get() = prefs.getInt(KEY_V57_VIDEOCOLORGAMMACUSTOM, 0)
+        set(v) = prefs.edit().putInt(KEY_V57_VIDEOCOLORGAMMACUSTOM, v).apply()
+
+    // v57.14: Danmaku Border Radius Custom
+    var v57DanmakuBorderRadiusCustom: Int
+        get() = prefs.getInt(KEY_V57_DANMAKUBORDERRADIUSCUSTOM, 0)
+        set(v) = prefs.edit().putInt(KEY_V57_DANMAKUBORDERRADIUSCUSTOM, v).apply()
+
+    // v57.15: Cast Audio Normalization Auto
+    var v57CastAudioNormalizationAuto: Boolean
+        get() = prefs.getBoolean(KEY_V57_CASTAUDIONORMALIZATIONAUTO, false)
+        set(v) = prefs.edit().putBoolean(KEY_V57_CASTAUDIONORMALIZATIONAUTO, v).apply()
+
+    // === v58.x ===
+    // v58.1: Video Spatial Enhance
+    var v58VideoSpatialEnhance: Boolean
+        get() = prefs.getBoolean(KEY_V58_VIDEOSPATIALENHANCE, false)
+        set(v) = prefs.edit().putBoolean(KEY_V58_VIDEOSPATIALENHANCE, v).apply()
+
+    // v58.2: Danmaku Font Size Adaptive Custom
+    var v58DanmakuFontSizeAdaptiveCustom: Boolean
+        get() = prefs.getBoolean(KEY_V58_DANMAKUFONTSIZEADAPTIVECUSTOM, false)
+        set(v) = prefs.edit().putBoolean(KEY_V58_DANMAKUFONTSIZEADAPTIVECUSTOM, v).apply()
+
+    // v58.3: Subtitle Font Kerning Custom
+    var v58SubtitleFontKerningCustom: Boolean
+        get() = prefs.getBoolean(KEY_V58_SUBTITLEFONTKERNINGCUSTOM, true)
+        set(v) = prefs.edit().putBoolean(KEY_V58_SUBTITLEFONTKERNINGCUSTOM, v).apply()
+
+    // v58.4: Gesture Custom Action 4
+    var v58GestureCustomAction4: Int
+        get() = prefs.getInt(KEY_V58_GESTURECUSTOMACTION4, 0)
+        set(v) = prefs.edit().putInt(KEY_V58_GESTURECUSTOMACTION4, v).apply()
+
+    // v58.5: Video Color Saturation Custom
+    var v58VideoColorSaturationCustom: Int
+        get() = prefs.getInt(KEY_V58_VIDEOCOLORSATURATIONCUSTOM, 0)
+        set(v) = prefs.edit().putInt(KEY_V58_VIDEOCOLORSATURATIONCUSTOM, v).apply()
+
+    // v58.6: Danmaku Send Color Preset
+    var v58DanmakuSendColorPreset: Int
+        get() = prefs.getInt(KEY_V58_DANMAKUSENDCOLORPRESET, 0)
+        set(v) = prefs.edit().putInt(KEY_V58_DANMAKUSENDCOLORPRESET, v).apply()
+
+    // v58.7: Cast Video Upscale Mode Custom
+    var v58CastVideoUpscaleModeCustom: Int
+        get() = prefs.getInt(KEY_V58_CASTVIDEOUPSCALEMODECUSTOM, 0)
+        set(v) = prefs.edit().putInt(KEY_V58_CASTVIDEOUPSCALEMODECUSTOM, v).apply()
+
+    // v58.8: Subtitle Font Letter Spacing Custom
+    var v58SubtitleFontLetterSpacingCustom: Int
+        get() = prefs.getInt(KEY_V58_SUBTITLEFONTLETTERSPACINGCUSTOM, 0)
+        set(v) = prefs.edit().putInt(KEY_V58_SUBTITLEFONTLETTERSPACINGCUSTOM, v).apply()
+
+    // v58.9: Video Color Contrast Custom
+    var v58VideoColorContrastCustom: Int
+        get() = prefs.getInt(KEY_V58_VIDEOCOLORCONTRASTCUSTOM, 0)
+        set(v) = prefs.edit().putInt(KEY_V58_VIDEOCOLORCONTRASTCUSTOM, v).apply()
+
+    // v58.10: Danmaku Merge Window Auto
+    var v58DanmakuMergeWindowAuto: Boolean
+        get() = prefs.getBoolean(KEY_V58_DANMAKUMERGEWINDOWAUTO, false)
+        set(v) = prefs.edit().putBoolean(KEY_V58_DANMAKUMERGEWINDOWAUTO, v).apply()
+
+    // v58.11: Playlist Auto Mark Expired
+    var v58PlaylistAutoMarkExpired: Boolean
+        get() = prefs.getBoolean(KEY_V58_PLAYLISTAUTOMARKEXPIRED, false)
+        set(v) = prefs.edit().putBoolean(KEY_V58_PLAYLISTAUTOMARKEXPIRED, v).apply()
+
+    // v58.12: Gesture Swipe Velocity Custom
+    var v58GestureSwipeVelocityCustom: Int
+        get() = prefs.getInt(KEY_V58_GESTURESWIPEVELOCITYCUSTOM, 50)
+        set(v) = prefs.edit().putInt(KEY_V58_GESTURESWIPEVELOCITYCUSTOM, v).apply()
+
+    // v58.13: Video Color Brightness Custom
+    var v58VideoColorBrightnessCustom: Int
+        get() = prefs.getInt(KEY_V58_VIDEOCOLORBRIGHTNESSCUSTOM, 0)
+        set(v) = prefs.edit().putInt(KEY_V58_VIDEOCOLORBRIGHTNESSCUSTOM, v).apply()
+
+    // v58.14: Danmaku BG Radius Custom
+    var v58DanmakuBgRadiusCustom: Int
+        get() = prefs.getInt(KEY_V58_DANMAKUBGRADIUSCUSTOM, 0)
+        set(v) = prefs.edit().putInt(KEY_V58_DANMAKUBGRADIUSCUSTOM, v).apply()
+
+    // v58.15: Cast Audio Delay Custom (ms)
+    var v58CastAudioDelayCustom: Int
+        get() = prefs.getInt(KEY_V58_CASTAUDIODELAYCUSTOM, 0)
+        set(v) = prefs.edit().putInt(KEY_V58_CASTAUDIODELAYCUSTOM, v).apply()
+
+    // === v59.x ===
+    // v59.1: Video Color Matrix Custom
+    var v59VideoColorMatrixCustom: Boolean
+        get() = prefs.getBoolean(KEY_V59_VIDEOCOLORMATRIXCUSTOM, false)
+        set(v) = prefs.edit().putBoolean(KEY_V59_VIDEOCOLORMATRIXCUSTOM, v).apply()
+
+    // v59.2: Danmaku Text Shadow Custom
+    var v59DanmakuTextShadowCustom: Int
+        get() = prefs.getInt(KEY_V59_DANMAKUTEXTSHADOWCUSTOM, 0)
+        set(v) = prefs.edit().putInt(KEY_V59_DANMAKUTEXTSHADOWCUSTOM, v).apply()
+
+    // v59.3: Subtitle Animation Delay
+    var v59SubtitleAnimationDelay: Int
+        get() = prefs.getInt(KEY_V59_SUBTITLEANIMATIONDELAY, 0)
+        set(v) = prefs.edit().putInt(KEY_V59_SUBTITLEANIMATIONDELAY, v).apply()
+
+    // v59.4: Gesture Edge Swipe Custom
+    var v59GestureEdgeSwipeCustom: Int
+        get() = prefs.getInt(KEY_V59_GESTUREEDGESWIPECUSTOM, 0)
+        set(v) = prefs.edit().putInt(KEY_V59_GESTUREEDGESWIPECUSTOM, v).apply()
+
+    // v59.5: Video Color Denoise Strength
+    var v59VideoColorDenoiseStrength: Int
+        get() = prefs.getInt(KEY_V59_VIDEOCOLORDENOISESTRENGTH, 0)
+        set(v) = prefs.edit().putInt(KEY_V59_VIDEOCOLORDENOISESTRENGTH, v).apply()
+
+    // v59.6: Danmaku Send Effect Preview
+    var v59DanmakuSendEffectPreview: Boolean
+        get() = prefs.getBoolean(KEY_V59_DANMAKUSENDEFFECTPREVIEW, false)
+        set(v) = prefs.edit().putBoolean(KEY_V59_DANMAKUSENDEFFECTPREVIEW, v).apply()
+
+    // v59.7: Cast Video Color Space
+    var v59CastVideoColorSpace: Int
+        get() = prefs.getInt(KEY_V59_CASTVIDEOCOLORSPACE, 0)
+        set(v) = prefs.edit().putInt(KEY_V59_CASTVIDEOCOLORSPACE, v).apply()
+
+    // v59.8: Subtitle BG Gradient Custom
+    var v59SubtitleBgGradientCustom: Boolean
+        get() = prefs.getBoolean(KEY_V59_SUBTITLEBGGRADIENTCUSTOM, false)
+        set(v) = prefs.edit().putBoolean(KEY_V59_SUBTITLEBGGRADIENTCUSTOM, v).apply()
+
+    // v59.9: Video Color Vibrance Custom
+    var v59VideoColorVibranceCustom: Int
+        get() = prefs.getInt(KEY_V59_VIDEOCOLORVIBRANCECUSTOM, 0)
+        set(v) = prefs.edit().putInt(KEY_V59_VIDEOCOLORVIBRANCECUSTOM, v).apply()
+
+    // v59.10: Danmaku History Search Custom
+    var v59DanmakuHistorySearchCustom: Boolean
+        get() = prefs.getBoolean(KEY_V59_DANMAKUHISTORYSEARCHCUSTOM, false)
+        set(v) = prefs.edit().putBoolean(KEY_V59_DANMAKUHISTORYSEARCHCUSTOM, v).apply()
+
+    // v59.11: Playlist Auto Backup
+    var v59PlaylistAutoBackup: Boolean
+        get() = prefs.getBoolean(KEY_V59_PLAYLISTAUTOBACKUP, false)
+        set(v) = prefs.edit().putBoolean(KEY_V59_PLAYLISTAUTOBACKUP, v).apply()
+
+    // v59.12: Gesture Pinch Sensitivity Custom
+    var v59GesturePinchSensitivityCustom: Int
+        get() = prefs.getInt(KEY_V59_GESTUREPINCHSENSITIVITYCUSTOM, 50)
+        set(v) = prefs.edit().putInt(KEY_V59_GESTUREPINCHSENSITIVITYCUSTOM, v).apply()
+
+    // v59.13: Video Color Temperature Custom
+    var v59VideoColorTemperatureCustom: Int
+        get() = prefs.getInt(KEY_V59_VIDEOCOLORTEMPERATURECUSTOM, 0)
+        set(v) = prefs.edit().putInt(KEY_V59_VIDEOCOLORTEMPERATURECUSTOM, v).apply()
+
+    // v59.14: Danmaku Font Weight Custom
+    var v59DanmakuFontWeightCustom: Int
+        get() = prefs.getInt(KEY_V59_DANMAKUFONTWEIGHTCUSTOM, 400)
+        set(v) = prefs.edit().putInt(KEY_V59_DANMAKUFONTWEIGHTCUSTOM, v).apply()
+
+    // v59.15: Cast Audio Channel Sync
+    var v59CastAudioChannelSync: Boolean
+        get() = prefs.getBoolean(KEY_V59_CASTAUDIOCHANNELSYNC, true)
+        set(v) = prefs.edit().putBoolean(KEY_V59_CASTAUDIOCHANNELSYNC, v).apply()
+
+    // === v60.x ===
+    // v60.1: Video Adaptive Color Enhance
+    var v60VideoAdaptiveColorEnhance: Boolean
+        get() = prefs.getBoolean(KEY_V60_VIDEOADAPTIVECOLORENHANCE, false)
+        set(v) = prefs.edit().putBoolean(KEY_V60_VIDEOADAPTIVECOLORENHANCE, v).apply()
+
+    // v60.2: Danmaku Border Weight Custom
+    var v60DanmakuBorderWeightCustom: Int
+        get() = prefs.getInt(KEY_V60_DANMAKUBORDERWEIGHTCUSTOM, 1)
+        set(v) = prefs.edit().putInt(KEY_V60_DANMAKUBORDERWEIGHTCUSTOM, v).apply()
+
+    // v60.3: Subtitle Font Shadow Custom
+    var v60SubtitleFontShadowCustom: Int
+        get() = prefs.getInt(KEY_V60_SUBTITLEFONTSHADOWCUSTOM, 1)
+        set(v) = prefs.edit().putInt(KEY_V60_SUBTITLEFONTSHADOWCUSTOM, v).apply()
+
+    // v60.4: Gesture Multi Touch Custom
+    var v60GestureMultiTouchCustom: Int
+        get() = prefs.getInt(KEY_V60_GESTUREMULTITOUCHCUSTOM, 0)
+        set(v) = prefs.edit().putInt(KEY_V60_GESTUREMULTITOUCHCUSTOM, v).apply()
+
+    // v60.5: Video Color Tint Preset
+    var v60VideoColorTintPreset: Int
+        get() = prefs.getInt(KEY_V60_VIDEOCOLORTINTPRESET, 0)
+        set(v) = prefs.edit().putInt(KEY_V60_VIDEOCOLORTINTPRESET, v).apply()
+
+    // v60.6: Danmaku Send Max Length Enhanced
+    var v60DanmakuSendMaxLengthEnhanced: Int
+        get() = prefs.getInt(KEY_V60_DANMAKUSENDMAXLENGTHENHANCED, 0)
+        set(v) = prefs.edit().putInt(KEY_V60_DANMAKUSENDMAXLENGTHENHANCED, v).apply()
+
+    // v60.7: Cast Video Auto Resolution
+    var v60CastVideoAutoResolution: Boolean
+        get() = prefs.getBoolean(KEY_V60_CASTVIDEOAUTORESOLUTION, true)
+        set(v) = prefs.edit().putBoolean(KEY_V60_CASTVIDEOAUTORESOLUTION, v).apply()
+
+    // v60.8: Subtitle BG Color Preset
+    var v60SubtitleBgColorPreset: Int
+        get() = prefs.getInt(KEY_V60_SUBTITLEBGCOLORPRESET, 0)
+        set(v) = prefs.edit().putInt(KEY_V60_SUBTITLEBGCOLORPRESET, v).apply()
+
+    // v60.9: Video Color LUT Custom
+    var v60VideoColorLUTCustom: Boolean
+        get() = prefs.getBoolean(KEY_V60_VIDEOCOLORLUTCUSTOM, false)
+        set(v) = prefs.edit().putBoolean(KEY_V60_VIDEOCOLORLUTCUSTOM, v).apply()
+
+    // v60.10: Danmaku Font Size Preset
+    var v60DanmakuFontSizePreset: Int
+        get() = prefs.getInt(KEY_V60_DANMAKUFONTSIZEPRESET, 0)
+        set(v) = prefs.edit().putInt(KEY_V60_DANMAKUFONTSIZEPRESET, v).apply()
+
+    // v60.11: Playlist Auto Restore
+    var v60PlaylistAutoRestore: Boolean
+        get() = prefs.getBoolean(KEY_V60_PLAYLISTAUTORESTORE, false)
+        set(v) = prefs.edit().putBoolean(KEY_V60_PLAYLISTAUTORESTORE, v).apply()
+
+    // v60.12: Gesture Custom Sensitivity Enhanced
+    var v60GestureCustomSensitivityEnhanced: Int
+        get() = prefs.getInt(KEY_V60_GESTURECUSTOMSENSITIVITYENHANCED, 50)
+        set(v) = prefs.edit().putInt(KEY_V60_GESTURECUSTOMSENSITIVITYENHANCED, v).apply()
+
+    // v60.13: Video Color Grading Preset
+    var v60VideoColorGradingPreset: Int
+        get() = prefs.getInt(KEY_V60_VIDEOCOLORGRADINGPRESET, 0)
+        set(v) = prefs.edit().putInt(KEY_V60_VIDEOCOLORGRADINGPRESET, v).apply()
+
+    // v60.14: Danmaku BG Color Preset
+    var v60DanmakuBgColorPreset: Int
+        get() = prefs.getInt(KEY_V60_DANMAKUBGCOLORPRESET, 0)
+        set(v) = prefs.edit().putInt(KEY_V60_DANMAKUBGCOLORPRESET, v).apply()
+
+    // v60.15: Cast Audio Fade Mode Custom
+    var v60CastAudioFadeModeCustom: Int
+        get() = prefs.getInt(KEY_V60_CASTAUDIOFADEMODECUSTOM, 0)
+        set(v) = prefs.edit().putInt(KEY_V60_CASTAUDIOFADEMODECUSTOM, v).apply()
+
+
+    // ==================== v61-v70 New Unique Features ====================
+
+    // === v61.x ===
     // v61.1: Video Edge Enhance Strength
     var v61VideoEdgeEnhanceStrength: Boolean
         get() = prefs.getBoolean(KEY_V61_VIDEOEDGEENHANCESTRENGTH, false)
         set(v) = prefs.edit().putBoolean(KEY_V61_VIDEOEDGEENHANCESTRENGTH, v).apply()
+
     // v61.2: Danmaku Collision Detection
     var v61DanmakuCollisionDetection: Boolean
         get() = prefs.getBoolean(KEY_V61_DANMAKUCOLLISIONDETECTION, false)
         set(v) = prefs.edit().putBoolean(KEY_V61_DANMAKUCOLLISIONDETECTION, v).apply()
+
     // v61.3: Subtitle Position Offset X
     var v61SubtitlePositionOffsetX: Int
         get() = prefs.getInt(KEY_V61_SUBTITLEPOSITIONOFFSETX, 0)
         set(v) = prefs.edit().putInt(KEY_V61_SUBTITLEPOSITIONOFFSETX, v).apply()
+
     // v61.4: Gesture Fling Velocity
     var v61GestureFlingVelocity: Int
         get() = prefs.getInt(KEY_V61_GESTUREFLINGVELOCITY, 50)
         set(v) = prefs.edit().putInt(KEY_V61_GESTUREFLINGVELOCITY, v).apply()
+
     // v61.5: Video Motion Compensation
     var v61VideoMotionCompensation: Boolean
         get() = prefs.getBoolean(KEY_V61_VIDEOMOTIONCOMPENSATION, false)
         set(v) = prefs.edit().putBoolean(KEY_V61_VIDEOMOTIONCOMPENSATION, v).apply()
+
     // v61.6: Danmaku Animation Type
     var v61DanmakuAnimationType: Int
         get() = prefs.getInt(KEY_V61_DANMAKUANIMATIONTYPE, 0)
         set(v) = prefs.edit().putInt(KEY_V61_DANMAKUANIMATIONTYPE, v).apply()
+
     // v61.7: Cast Video Buffer (ms)
     var v61CastVideoBufferMs: Int
         get() = prefs.getInt(KEY_V61_CASTVIDEOBUFFERMS, 0)
         set(v) = prefs.edit().putInt(KEY_V61_CASTVIDEOBUFFERMS, v).apply()
+
     // v61.8: Subtitle Font Size Min
     var v61SubtitleFontSizeMin: Int
         get() = prefs.getInt(KEY_V61_SUBTITLEFONTSIZEMIN, 12)
         set(v) = prefs.edit().putInt(KEY_V61_SUBTITLEFONTSIZEMIN, v).apply()
+
     // v61.9: Video Adaptive Sharpness
     var v61VideoAdaptiveSharpness: Boolean
         get() = prefs.getBoolean(KEY_V61_VIDEOADAPTIVESHARPNESS, false)
         set(v) = prefs.edit().putBoolean(KEY_V61_VIDEOADAPTIVESHARPNESS, v).apply()
+
     // v61.10: Danmaku Filter By Length
     var v61DanmakuFilterByLength: Int
         get() = prefs.getInt(KEY_V61_DANMAKUFILTERBYLENGTH, 0)
         set(v) = prefs.edit().putInt(KEY_V61_DANMAKUFILTERBYLENGTH, v).apply()
+
     // v61.11: Playlist Smart Filter
     var v61PlaylistSmartFilter: Boolean
         get() = prefs.getBoolean(KEY_V61_PLAYLISTSMARTFILTER, false)
         set(v) = prefs.edit().putBoolean(KEY_V61_PLAYLISTSMARTFILTER, v).apply()
+
     // v61.12: Gesture Swipe Curve
     var v61GestureSwipeCurve: Int
         get() = prefs.getInt(KEY_V61_GESTURESWIPECURVE, 0)
         set(v) = prefs.edit().putInt(KEY_V61_GESTURESWIPECURVE, v).apply()
+
     // v61.13: Video Color Balance RGB
     var v61VideoColorBalanceRGB: Int
         get() = prefs.getInt(KEY_V61_VIDEOCOLORBALANCERGB, 0)
         set(v) = prefs.edit().putInt(KEY_V61_VIDEOCOLORBALANCERGB, v).apply()
+
     // v61.14: Danmaku Font Size Auto Min
     var v61DanmakuFontSizeAutoMin: Int
         get() = prefs.getInt(KEY_V61_DANMAKUFONTSIZEAUTOMIN, 12)
         set(v) = prefs.edit().putInt(KEY_V61_DANMAKUFONTSIZEAUTOMIN, v).apply()
+
     // v61.15: Cast Audio Buffer (ms)
     var v61CastAudioBufferMs: Int
         get() = prefs.getInt(KEY_V61_CASTAUDIOBUFFERMS, 0)
         set(v) = prefs.edit().putInt(KEY_V61_CASTAUDIOBUFFERMS, v).apply()
 
-    // === v62.x New Features ===
+    // === v62.x ===
     // v62.1: Video Temporal Denoise
     var v62VideoTemporalDenoise: Boolean
         get() = prefs.getBoolean(KEY_V62_VIDEOTEMPORALDENOISE, false)
         set(v) = prefs.edit().putBoolean(KEY_V62_VIDEOTEMPORALDENOISE, v).apply()
+
     // v62.2: Danmaku Scroll Speed Custom
     var v62DanmakuScrollSpeedCustom: Int
         get() = prefs.getInt(KEY_V62_DANMAKUSCROLLSPEEDCUSTOM, 100)
         set(v) = prefs.edit().putInt(KEY_V62_DANMAKUSCROLLSPEEDCUSTOM, v).apply()
+
     // v62.3: Subtitle Position Offset Y
     var v62SubtitlePositionOffsetY: Int
         get() = prefs.getInt(KEY_V62_SUBTITLEPOSITIONOFFSETY, 0)
         set(v) = prefs.edit().putInt(KEY_V62_SUBTITLEPOSITIONOFFSETY, v).apply()
+
     // v62.4: Gesture Tap Feedback
     var v62GestureTapFeedback: Int
         get() = prefs.getInt(KEY_V62_GESTURETAPFEEDBACK, 0)
         set(v) = prefs.edit().putInt(KEY_V62_GESTURETAPFEEDBACK, v).apply()
+
     // v62.5: Video Adaptive Noise Gate
     var v62VideoAdaptiveNoiseGate: Boolean
         get() = prefs.getBoolean(KEY_V62_VIDEOADAPTIVENOISEGATE, false)
         set(v) = prefs.edit().putBoolean(KEY_V62_VIDEOADAPTIVENOISEGATE, v).apply()
+
     // v62.6: Danmaku Merge Distance Custom
     var v62DanmakuMergeDistanceCustom: Int
         get() = prefs.getInt(KEY_V62_DANMAKUMERGEDISTANCECUSTOM, 50)
         set(v) = prefs.edit().putInt(KEY_V62_DANMAKUMERGEDISTANCECUSTOM, v).apply()
+
     // v62.7: Cast Video Decode Mode
     var v62CastVideoDecodeMode: Int
         get() = prefs.getInt(KEY_V62_CASTVIDEODECODEMODE, 0)
         set(v) = prefs.edit().putInt(KEY_V62_CASTVIDEODECODEMODE, v).apply()
+
     // v62.8: Subtitle Font Size Max
     var v62SubtitleFontSizeMax: Int
         get() = prefs.getInt(KEY_V62_SUBTITLEFONTSIZEMAX, 48)
         set(v) = prefs.edit().putInt(KEY_V62_SUBTITLEFONTSIZEMAX, v).apply()
+
     // v62.9: Video Adaptive Contrast Curve
     var v62VideoAdaptiveContrastCurve: Int
         get() = prefs.getInt(KEY_V62_VIDEOADAPTIVECONTRASTCURVE, 0)
         set(v) = prefs.edit().putInt(KEY_V62_VIDEOADAPTIVECONTRASTCURVE, v).apply()
+
     // v62.10: Danmaku Filter By Speed
     var v62DanmakuFilterBySpeed: Int
         get() = prefs.getInt(KEY_V62_DANMAKUFILTERBYSPEED, 0)
         set(v) = prefs.edit().putInt(KEY_V62_DANMAKUFILTERBYSPEED, v).apply()
+
     // v62.11: Playlist Auto Group
     var v62PlaylistAutoGroup: Boolean
         get() = prefs.getBoolean(KEY_V62_PLAYLISTAUTOGROUP, false)
         set(v) = prefs.edit().putBoolean(KEY_V62_PLAYLISTAUTOGROUP, v).apply()
+
     // v62.12: Gesture Swipe Acceleration
     var v62GestureSwipeAcceleration: Int
         get() = prefs.getInt(KEY_V62_GESTURESWIPEACCELERATION, 50)
         set(v) = prefs.edit().putInt(KEY_V62_GESTURESWIPEACCELERATION, v).apply()
+
     // v62.13: Video Color Hue Rotate
     var v62VideoColorHueRotate: Int
         get() = prefs.getInt(KEY_V62_VIDEOCOLORHUEROTATE, 0)
         set(v) = prefs.edit().putInt(KEY_V62_VIDEOCOLORHUEROTATE, v).apply()
+
     // v62.14: Danmaku Font Size Auto Max
     var v62DanmakuFontSizeAutoMax: Int
         get() = prefs.getInt(KEY_V62_DANMAKUFONTSIZEAUTOMAX, 36)
         set(v) = prefs.edit().putInt(KEY_V62_DANMAKUFONTSIZEAUTOMAX, v).apply()
+
     // v62.15: Cast Audio Decode Mode
     var v62CastAudioDecodeMode: Int
         get() = prefs.getInt(KEY_V62_CASTAUDIODECODEMODE, 0)
         set(v) = prefs.edit().putInt(KEY_V62_CASTAUDIODECODEMODE, v).apply()
 
-    // === v63.x New Features ===
+    // === v63.x ===
     // v63.1: Video Spatial Denoise
     var v63VideoSpatialDenoise: Boolean
         get() = prefs.getBoolean(KEY_V63_VIDEOSPATIALDENOISE, false)
         set(v) = prefs.edit().putBoolean(KEY_V63_VIDEOSPATIALDENOISE, v).apply()
+
     // v63.2: Danmaku Top Bottom Margin
     var v63DanmakuTopBottomMargin: Int
         get() = prefs.getInt(KEY_V63_DANMAKUTOPBOTTOMMARGIN, 10)
         set(v) = prefs.edit().putInt(KEY_V63_DANMAKUTOPBOTTOMMARGIN, v).apply()
+
     // v63.3: Subtitle Animation Fade In
     var v63SubtitleAnimationFadeIn: Boolean
         get() = prefs.getBoolean(KEY_V63_SUBTITLEANIMATIONFADEIN, false)
         set(v) = prefs.edit().putBoolean(KEY_V63_SUBTITLEANIMATIONFADEIN, v).apply()
+
     // v63.4: Gesture Long Press Vibration
     var v63GestureLongPressVibration: Boolean
         get() = prefs.getBoolean(KEY_V63_GESTURELONGPRESSVIBRATION, false)
         set(v) = prefs.edit().putBoolean(KEY_V63_GESTURELONGPRESSVIBRATION, v).apply()
+
     // v63.5: Video Adaptive Saturation Curve
     var v63VideoAdaptiveSaturationCurve: Int
         get() = prefs.getInt(KEY_V63_VIDEOADAPTIVESATURATIONCURVE, 0)
         set(v) = prefs.edit().putInt(KEY_V63_VIDEOADAPTIVESATURATIONCURVE, v).apply()
+
     // v63.6: Danmaku Send Queue Size
     var v63DanmakuSendQueueSize: Int
         get() = prefs.getInt(KEY_V63_DANMAKUSENDQUEUESIZE, 0)
         set(v) = prefs.edit().putInt(KEY_V63_DANMAKUSENDQUEUESIZE, v).apply()
+
     // v63.7: Cast Video Render Mode
     var v63CastVideoRenderMode: Int
         get() = prefs.getInt(KEY_V63_CASTVIDEORENDERMODE, 0)
         set(v) = prefs.edit().putInt(KEY_V63_CASTVIDEORENDERMODE, v).apply()
+
     // v63.8: Subtitle BG Border Width
     var v63SubtitleBgBorderWidth: Int
         get() = prefs.getInt(KEY_V63_SUBTITLEBGBORDERWIDTH, 0)
         set(v) = prefs.edit().putInt(KEY_V63_SUBTITLEBGBORDERWIDTH, v).apply()
+
     // v63.9: Video Adaptive Gamma Curve
     var v63VideoAdaptiveGammaCurve: Int
         get() = prefs.getInt(KEY_V63_VIDEOADAPTIVEGAMMACURVE, 0)
         set(v) = prefs.edit().putInt(KEY_V63_VIDEOADAPTIVEGAMMACURVE, v).apply()
+
     // v63.10: Danmaku Filter By Type
     var v63DanmakuFilterByType: Int
         get() = prefs.getInt(KEY_V63_DANMAKUFILTERBYTYPE, 0)
         set(v) = prefs.edit().putInt(KEY_V63_DANMAKUFILTERBYTYPE, v).apply()
+
     // v63.11: Playlist Auto Merge
     var v63PlaylistAutoMerge: Boolean
         get() = prefs.getBoolean(KEY_V63_PLAYLISTAUTOMERGE, false)
         set(v) = prefs.edit().putBoolean(KEY_V63_PLAYLISTAUTOMERGE, v).apply()
+
     // v63.12: Gesture Swipe Deceleration Custom
     var v63GestureSwipeDecelerationCustom: Int
         get() = prefs.getInt(KEY_V63_GESTURESWIPEDECELERATIONCUSTOM, 50)
         set(v) = prefs.edit().putInt(KEY_V63_GESTURESWIPEDECELERATIONCUSTOM, v).apply()
+
     // v63.13: Video Color Invert
     var v63VideoColorInvert: Boolean
         get() = prefs.getBoolean(KEY_V63_VIDEOCOLORINVERT, false)
         set(v) = prefs.edit().putBoolean(KEY_V63_VIDEOCOLORINVERT, v).apply()
+
     // v63.14: Danmaku History Sort Order
     var v63DanmakuHistorySortOrder: Int
         get() = prefs.getInt(KEY_V63_DANMAKUHISTORYSORTORDER, 0)
         set(v) = prefs.edit().putInt(KEY_V63_DANMAKUHISTORYSORTORDER, v).apply()
+
     // v63.15: Cast Audio Render Mode
     var v63CastAudioRenderMode: Int
         get() = prefs.getInt(KEY_V63_CASTAUDIORENDERMODE, 0)
         set(v) = prefs.edit().putInt(KEY_V63_CASTAUDIORENDERMODE, v).apply()
 
-    // === v64.x New Features ===
+    // === v64.x ===
     // v64.1: Video Adaptive Edge Preserve
     var v64VideoAdaptiveEdgePreserve: Boolean
         get() = prefs.getBoolean(KEY_V64_VIDEOADAPTIVEEDGEPRESERVE, false)
         set(v) = prefs.edit().putBoolean(KEY_V64_VIDEOADAPTIVEEDGEPRESERVE, v).apply()
+
     // v64.2: Danmaku Fixed Position
     var v64DanmakuFixedPosition: Int
         get() = prefs.getInt(KEY_V64_DANMAKUFIXEDPOSITION, 0)
         set(v) = prefs.edit().putInt(KEY_V64_DANMAKUFIXEDPOSITION, v).apply()
+
     // v64.3: Subtitle Animation Fade Out
     var v64SubtitleAnimationFadeOut: Boolean
         get() = prefs.getBoolean(KEY_V64_SUBTITLEANIMATIONFADEOUT, false)
         set(v) = prefs.edit().putBoolean(KEY_V64_SUBTITLEANIMATIONFADEOUT, v).apply()
+
     // v64.4: Gesture Multi Finger Gesture
     var v64GestureMultiFingerGesture: Int
         get() = prefs.getInt(KEY_V64_GESTUREMULTIFINGERGESTURE, 0)
         set(v) = prefs.edit().putInt(KEY_V64_GESTUREMULTIFINGERGESTURE, v).apply()
+
     // v64.5: Video Color Grayscale
     var v64VideoColorGrayscale: Boolean
         get() = prefs.getBoolean(KEY_V64_VIDEOCOLORGRAYSCALE, false)
         set(v) = prefs.edit().putBoolean(KEY_V64_VIDEOCOLORGRAYSCALE, v).apply()
+
     // v64.6: Danmaku Send Delay
     var v64DanmakuSendDelay: Int
         get() = prefs.getInt(KEY_V64_DANMAKUSENDDELAY, 0)
         set(v) = prefs.edit().putInt(KEY_V64_DANMAKUSENDDELAY, v).apply()
+
     // v64.7: Cast Video Post Process
     var v64CastVideoPostProcess: Boolean
         get() = prefs.getBoolean(KEY_V64_CASTVIDEOPOSTPROCESS, false)
         set(v) = prefs.edit().putBoolean(KEY_V64_CASTVIDEOPOSTPROCESS, v).apply()
+
     // v64.8: Subtitle BG Border Color
     var v64SubtitleBgBorderColor: Int
         get() = prefs.getInt(KEY_V64_SUBTITLEBGBORDERCOLOR, 0)
         set(v) = prefs.edit().putInt(KEY_V64_SUBTITLEBGBORDERCOLOR, v).apply()
+
     // v64.9: Video Adaptive Detail Curve
     var v64VideoAdaptiveDetailCurve: Int
         get() = prefs.getInt(KEY_V64_VIDEOADAPTIVEDETAILCURVE, 0)
         set(v) = prefs.edit().putInt(KEY_V64_VIDEOADAPTIVEDETAILCURVE, v).apply()
+
     // v64.10: Danmaku Filter By User Level
     var v64DanmakuFilterByUserLevel: Int
         get() = prefs.getInt(KEY_V64_DANMAKUFILTERBYUSERLEVEL, 0)
         set(v) = prefs.edit().putInt(KEY_V64_DANMAKUFILTERBYUSERLEVEL, v).apply()
+
     // v64.11: Playlist Auto Split
     var v64PlaylistAutoSplit: Boolean
         get() = prefs.getBoolean(KEY_V64_PLAYLISTAUTOSPLIT, false)
         set(v) = prefs.edit().putBoolean(KEY_V64_PLAYLISTAUTOSPLIT, v).apply()
+
     // v64.12: Gesture Swipe Friction
     var v64GestureSwipeFriction: Int
         get() = prefs.getInt(KEY_V64_GESTURESWIPEFRICTION, 50)
         set(v) = prefs.edit().putInt(KEY_V64_GESTURESWIPEFRICTION, v).apply()
+
     // v64.13: Video Color Sepia Strength
     var v64VideoColorSepiaStrength: Int
         get() = prefs.getInt(KEY_V64_VIDEOCOLORSEPIASTRENGTH, 0)
         set(v) = prefs.edit().putInt(KEY_V64_VIDEOCOLORSEPIASTRENGTH, v).apply()
+
     // v64.14: Danmaku History Max Items
     var v64DanmakuHistoryMaxItems: Int
         get() = prefs.getInt(KEY_V64_DANMAKUHISTORYMAXITEMS, 0)
         set(v) = prefs.edit().putInt(KEY_V64_DANMAKUHISTORYMAXITEMS, v).apply()
+
     // v64.15: Cast Audio Post Process
     var v64CastAudioPostProcess: Boolean
         get() = prefs.getBoolean(KEY_V64_CASTAUDIOPOSTPROCESS, false)
         set(v) = prefs.edit().putBoolean(KEY_V64_CASTAUDIOPOSTPROCESS, v).apply()
 
-    // === v65.x New Features ===
+    // === v65.x ===
     // v65.1: Video Adaptive Motion Blur
     var v65VideoAdaptiveMotionBlur: Boolean
         get() = prefs.getBoolean(KEY_V65_VIDEOADAPTIVEMOTIONBLUR, false)
         set(v) = prefs.edit().putBoolean(KEY_V65_VIDEOADAPTIVEMOTIONBLUR, v).apply()
+
     // v65.2: Danmaku Scroll Direction
     var v65DanmakuScrollDirection: Int
         get() = prefs.getInt(KEY_V65_DANMAKUSCROLLDIRECTION, 0)
         set(v) = prefs.edit().putInt(KEY_V65_DANMAKUSCROLLDIRECTION, v).apply()
+
     // v65.3: Subtitle Animation Slide
     var v65SubtitleAnimationSlide: Int
         get() = prefs.getInt(KEY_V65_SUBTITLEANIMATIONSLIDE, 0)
         set(v) = prefs.edit().putInt(KEY_V65_SUBTITLEANIMATIONSLIDE, v).apply()
+
     // v65.4: Gesture Custom Gesture 1
     var v65GestureCustomGesture1: Int
         get() = prefs.getInt(KEY_V65_GESTURECUSTOMGESTURE1, 0)
         set(v) = prefs.edit().putInt(KEY_V65_GESTURECUSTOMGESTURE1, v).apply()
+
     // v65.5: Video Color Posterize Level
     var v65VideoColorPosterizeLevel: Int
         get() = prefs.getInt(KEY_V65_VIDEOCOLORPOSTERIZELEVEL, 0)
         set(v) = prefs.edit().putInt(KEY_V65_VIDEOCOLORPOSTERIZELEVEL, v).apply()
+
     // v65.6: Danmaku Send Priority Level
     var v65DanmakuSendPriorityLevel: Int
         get() = prefs.getInt(KEY_V65_DANMAKUSENDPRIORITYLEVEL, 0)
         set(v) = prefs.edit().putInt(KEY_V65_DANMAKUSENDPRIORITYLEVEL, v).apply()
+
     // v65.7: Cast Video HDR
     var v65CastVideoHDR: Boolean
         get() = prefs.getBoolean(KEY_V65_CASTVIDEOHDR, false)
         set(v) = prefs.edit().putBoolean(KEY_V65_CASTVIDEOHDR, v).apply()
+
     // v65.8: Subtitle BG Blur Strength
     var v65SubtitleBgBlurStrength: Int
         get() = prefs.getInt(KEY_V65_SUBTITLEBGBLURSTRENGTH, 0)
         set(v) = prefs.edit().putInt(KEY_V65_SUBTITLEBGBLURSTRENGTH, v).apply()
+
     // v65.9: Video Adaptive Luma Curve
     var v65VideoAdaptiveLumaCurve: Int
         get() = prefs.getInt(KEY_V65_VIDEOADAPTIVELUMACURVE, 0)
         set(v) = prefs.edit().putInt(KEY_V65_VIDEOADAPTIVELUMACURVE, v).apply()
+
     // v65.10: Danmaku Filter By Badge
     var v65DanmakuFilterByBadge: Boolean
         get() = prefs.getBoolean(KEY_V65_DANMAKUFILTERBYBADGE, false)
         set(v) = prefs.edit().putBoolean(KEY_V65_DANMAKUFILTERBYBADGE, v).apply()
+
     // v65.11: Playlist Auto Deduplicate
     var v65PlaylistAutoDeduplicate: Boolean
         get() = prefs.getBoolean(KEY_V65_PLAYLISTAUTODEDUPLICATE, false)
         set(v) = prefs.edit().putBoolean(KEY_V65_PLAYLISTAUTODEDUPLICATE, v).apply()
+
     // v65.12: Gesture Swipe Sensitivity Custom
     var v65GestureSwipeSensitivityCustom: Int
         get() = prefs.getInt(KEY_V65_GESTURESWIPESENSITIVITYCUSTOM, 50)
         set(v) = prefs.edit().putInt(KEY_V65_GESTURESWIPESENSITIVITYCUSTOM, v).apply()
+
     // v65.13: Video Color Solarize Strength
     var v65VideoColorSolarizeStrength: Int
         get() = prefs.getInt(KEY_V65_VIDEOCOLORSOLARIZESTRENGTH, 0)
         set(v) = prefs.edit().putInt(KEY_V65_VIDEOCOLORSOLARIZESTRENGTH, v).apply()
+
     // v65.14: Danmaku History Auto Export
     var v65DanmakuHistoryAutoExport: Boolean
         get() = prefs.getBoolean(KEY_V65_DANMAKUHISTORYAUTOEXPORT, false)
         set(v) = prefs.edit().putBoolean(KEY_V65_DANMAKUHISTORYAUTOEXPORT, v).apply()
+
     // v65.15: Cast Audio HDR
     var v65CastAudioHDR: Boolean
         get() = prefs.getBoolean(KEY_V65_CASTAUDIOHDR, false)
         set(v) = prefs.edit().putBoolean(KEY_V65_CASTAUDIOHDR, v).apply()
 
-    // === v66.x New Features ===
+    // === v66.x ===
     // v66.1: Video Adaptive Frame Blend
     var v66VideoAdaptiveFrameBlend: Boolean
         get() = prefs.getBoolean(KEY_V66_VIDEOADAPTIVEFRAMEBLEND, false)
         set(v) = prefs.edit().putBoolean(KEY_V66_VIDEOADAPTIVEFRAMEBLEND, v).apply()
+
     // v66.2: Danmaku Top Margin
     var v66DanmakuTopMargin: Int
         get() = prefs.getInt(KEY_V66_DANMAKUTOPMARGIN, 10)
         set(v) = prefs.edit().putInt(KEY_V66_DANMAKUTOPMARGIN, v).apply()
+
     // v66.3: Subtitle Animation Bounce
     var v66SubtitleAnimationBounce: Boolean
         get() = prefs.getBoolean(KEY_V66_SUBTITLEANIMATIONBOUNCE, false)
         set(v) = prefs.edit().putBoolean(KEY_V66_SUBTITLEANIMATIONBOUNCE, v).apply()
+
     // v66.4: Gesture Custom Gesture 2
     var v66GestureCustomGesture2: Int
         get() = prefs.getInt(KEY_V66_GESTURECUSTOMGESTURE2, 0)
         set(v) = prefs.edit().putInt(KEY_V66_GESTURECUSTOMGESTURE2, v).apply()
+
     // v66.5: Video Color Vignette
     var v66VideoColorVignette: Int
         get() = prefs.getInt(KEY_V66_VIDEOCOLORVIGNETTE, 0)
         set(v) = prefs.edit().putInt(KEY_V66_VIDEOCOLORVIGNETTE, v).apply()
+
     // v66.6: Danmaku Send Max Length Per Second
     var v66DanmakuSendMaxLengthPerSecond: Int
         get() = prefs.getInt(KEY_V66_DANMAKUSENDMAXLENGTHPERSECOND, 0)
         set(v) = prefs.edit().putInt(KEY_V66_DANMAKUSENDMAXLENGTHPERSECOND, v).apply()
+
     // v66.7: Cast Video Dolby Vision
     var v66CastVideoDolbyVision: Boolean
         get() = prefs.getBoolean(KEY_V66_CASTVIDEODOLBYVISION, false)
         set(v) = prefs.edit().putBoolean(KEY_V66_CASTVIDEODOLBYVISION, v).apply()
+
     // v66.8: Subtitle BG Border Radius
     var v66SubtitleBgBorderRadius: Int
         get() = prefs.getInt(KEY_V66_SUBTITLEBGBORDERRADIUS, 0)
         set(v) = prefs.edit().putInt(KEY_V66_SUBTITLEBGBORDERRADIUS, v).apply()
+
     // v66.9: Video Adaptive Color Curve
     var v66VideoAdaptiveColorCurve: Int
         get() = prefs.getInt(KEY_V66_VIDEOADAPTIVECOLORCURVE, 0)
         set(v) = prefs.edit().putInt(KEY_V66_VIDEOADAPTIVECOLORCURVE, v).apply()
+
     // v66.10: Danmaku Filter By Medal
     var v66DanmakuFilterByMedal: Boolean
         get() = prefs.getBoolean(KEY_V66_DANMAKUFILTERBYMEDAL, false)
         set(v) = prefs.edit().putBoolean(KEY_V66_DANMAKUFILTERBYMEDAL, v).apply()
+
     // v66.11: Playlist Auto Shuffle On Start
     var v66PlaylistAutoShuffleOnStart: Boolean
         get() = prefs.getBoolean(KEY_V66_PLAYLISTAUTOSHUFFLEONSTART, false)
         set(v) = prefs.edit().putBoolean(KEY_V66_PLAYLISTAUTOSHUFFLEONSTART, v).apply()
+
     // v66.12: Gesture Swipe Momentum
     var v66GestureSwipeMomentum: Int
         get() = prefs.getInt(KEY_V66_GESTURESWIPEMOMENTUM, 50)
         set(v) = prefs.edit().putInt(KEY_V66_GESTURESWIPEMOMENTUM, v).apply()
+
     // v66.13: Video Color Duotone
     var v66VideoColorDuotone: Int
         get() = prefs.getInt(KEY_V66_VIDEOCOLORDUOTONE, 0)
         set(v) = prefs.edit().putInt(KEY_V66_VIDEOCOLORDUOTONE, v).apply()
+
     // v66.14: Danmaku History Search Mode
     var v66DanmakuHistorySearchMode: Int
         get() = prefs.getInt(KEY_V66_DANMAKUHISTORYSEARCHMODE, 0)
         set(v) = prefs.edit().putInt(KEY_V66_DANMAKUHISTORYSEARCHMODE, v).apply()
+
     // v66.15: Cast Audio Dolby Atmos
     var v66CastAudioDolbyAtmos: Boolean
         get() = prefs.getBoolean(KEY_V66_CASTAUDIODOLBYATMOS, false)
         set(v) = prefs.edit().putBoolean(KEY_V66_CASTAUDIODOLBYATMOS, v).apply()
 
-    // === v67.x New Features ===
+    // === v67.x ===
     // v67.1: Video Adaptive Temporal Blend
     var v67VideoAdaptiveTemporalBlend: Boolean
         get() = prefs.getBoolean(KEY_V67_VIDEOADAPTIVETEMPORALBLEND, false)
         set(v) = prefs.edit().putBoolean(KEY_V67_VIDEOADAPTIVETEMPORALBLEND, v).apply()
+
     // v67.2: Danmaku Bottom Margin
     var v67DanmakuBottomMargin: Int
         get() = prefs.getInt(KEY_V67_DANMAKUBOTTOMMARGIN, 10)
         set(v) = prefs.edit().putInt(KEY_V67_DANMAKUBOTTOMMARGIN, v).apply()
+
     // v67.3: Subtitle Animation Zoom
     var v67SubtitleAnimationZoom: Boolean
         get() = prefs.getBoolean(KEY_V67_SUBTITLEANIMATIONZOOM, false)
         set(v) = prefs.edit().putBoolean(KEY_V67_SUBTITLEANIMATIONZOOM, v).apply()
+
     // v67.4: Gesture Custom Gesture 3
     var v67GestureCustomGesture3: Int
         get() = prefs.getInt(KEY_V67_GESTURECUSTOMGESTURE3, 0)
         set(v) = prefs.edit().putInt(KEY_V67_GESTURECUSTOMGESTURE3, v).apply()
+
     // v67.5: Video Color Tilt Shift
     var v67VideoColorTiltShift: Boolean
         get() = prefs.getBoolean(KEY_V67_VIDEOCOLORTILTSHIFT, false)
         set(v) = prefs.edit().putBoolean(KEY_V67_VIDEOCOLORTILTSHIFT, v).apply()
+
     // v67.6: Danmaku Send Rate Per User
     var v67DanmakuSendRatePerUser: Int
         get() = prefs.getInt(KEY_V67_DANMAKUSENDRATEPERUSER, 0)
         set(v) = prefs.edit().putInt(KEY_V67_DANMAKUSENDRATEPERUSER, v).apply()
+
     // v67.7: Cast Video 3D
     var v67CastVideo3D: Boolean
         get() = prefs.getBoolean(KEY_V67_CASTVIDEO3D, false)
         set(v) = prefs.edit().putBoolean(KEY_V67_CASTVIDEO3D, v).apply()
+
     // v67.8: Subtitle BG Gradient Direction
     var v67SubtitleBgGradientDirection: Int
         get() = prefs.getInt(KEY_V67_SUBTITLEBGGRADIENTDIRECTION, 0)
         set(v) = prefs.edit().putInt(KEY_V67_SUBTITLEBGGRADIENTDIRECTION, v).apply()
+
     // v67.9: Video Adaptive Spatial Blend
     var v67VideoAdaptiveSpatialBlend: Boolean
         get() = prefs.getBoolean(KEY_V67_VIDEOADAPTIVESPATIALBLEND, false)
         set(v) = prefs.edit().putBoolean(KEY_V67_VIDEOADAPTIVESPATIALBLEND, v).apply()
+
     // v67.10: Danmaku Filter By Level
     var v67DanmakuFilterByLevel: Int
         get() = prefs.getInt(KEY_V67_DANMAKUFILTERBYLEVEL, 0)
         set(v) = prefs.edit().putInt(KEY_V67_DANMAKUFILTERBYLEVEL, v).apply()
+
     // v67.11: Playlist Auto Repeat Mode
     var v67PlaylistAutoRepeatMode: Int
         get() = prefs.getInt(KEY_V67_PLAYLISTAUTOREPEATMODE, 0)
         set(v) = prefs.edit().putInt(KEY_V67_PLAYLISTAUTOREPEATMODE, v).apply()
+
     // v67.12: Gesture Swipe Bounce
     var v67GestureSwipeBounce: Int
         get() = prefs.getInt(KEY_V67_GESTURESWIPEBOUNCE, 50)
         set(v) = prefs.edit().putInt(KEY_V67_GESTURESWIPEBOUNCE, v).apply()
+
     // v67.13: Video Color Cross Process
     var v67VideoColorCrossProcess: Boolean
         get() = prefs.getBoolean(KEY_V67_VIDEOCOLORCROSSPROCESS, false)
         set(v) = prefs.edit().putBoolean(KEY_V67_VIDEOCOLORCROSSPROCESS, v).apply()
+
     // v67.14: Danmaku History Export Auto
     var v67DanmakuHistoryExportAuto: Boolean
         get() = prefs.getBoolean(KEY_V67_DANMAKUHISTORYEXPORTAUTO, false)
         set(v) = prefs.edit().putBoolean(KEY_V67_DANMAKUHISTORYEXPORTAUTO, v).apply()
+
     // v67.15: Cast Audio Spatial
     var v67CastAudioSpatial: Boolean
         get() = prefs.getBoolean(KEY_V67_CASTAUDIOSPATIAL, false)
         set(v) = prefs.edit().putBoolean(KEY_V67_CASTAUDIOSPATIAL, v).apply()
 
-    // === v68.x New Features ===
+    // === v68.x ===
     // v68.1: Video Adaptive Color Balance
     var v68VideoAdaptiveColorBalance: Boolean
         get() = prefs.getBoolean(KEY_V68_VIDEOADAPTIVECOLORBALANCE, false)
         set(v) = prefs.edit().putBoolean(KEY_V68_VIDEOADAPTIVECOLORBALANCE, v).apply()
+
     // v68.2: Danmaku Left Right Margin
     var v68DanmakuLeftRightMargin: Int
         get() = prefs.getInt(KEY_V68_DANMAKULEFTRIGHTMARGIN, 10)
         set(v) = prefs.edit().putInt(KEY_V68_DANMAKULEFTRIGHTMARGIN, v).apply()
+
     // v68.3: Subtitle Animation Rotate
     var v68SubtitleAnimationRotate: Boolean
         get() = prefs.getBoolean(KEY_V68_SUBTITLEANIMATIONROTATE, false)
         set(v) = prefs.edit().putBoolean(KEY_V68_SUBTITLEANIMATIONROTATE, v).apply()
+
     // v68.4: Gesture Custom Gesture 4
     var v68GestureCustomGesture4: Int
         get() = prefs.getInt(KEY_V68_GESTURECUSTOMGESTURE4, 0)
         set(v) = prefs.edit().putInt(KEY_V68_GESTURECUSTOMGESTURE4, v).apply()
+
     // v68.5: Video Color Fisheye
     var v68VideoColorFisheye: Int
         get() = prefs.getInt(KEY_V68_VIDEOCOLORFISHEYE, 0)
         set(v) = prefs.edit().putInt(KEY_V68_VIDEOCOLORFISHEYE, v).apply()
+
     // v68.6: Danmaku Send Max Length Per Minute
     var v68DanmakuSendMaxLengthPerMinute: Int
         get() = prefs.getInt(KEY_V68_DANMAKUSENDMAXLENGTHPERMINUTE, 0)
         set(v) = prefs.edit().putInt(KEY_V68_DANMAKUSENDMAXLENGTHPERMINUTE, v).apply()
+
     // v68.7: Cast Video Surround
     var v68CastVideoSurround: Boolean
         get() = prefs.getBoolean(KEY_V68_CASTVIDEOSURROUND, false)
         set(v) = prefs.edit().putBoolean(KEY_V68_CASTVIDEOSURROUND, v).apply()
+
     // v68.8: Subtitle BG Gradient Color
     var v68SubtitleBgGradientColor: Int
         get() = prefs.getInt(KEY_V68_SUBTITLEBGGRADIENTCOLOR, 0)
         set(v) = prefs.edit().putInt(KEY_V68_SUBTITLEBGGRADIENTCOLOR, v).apply()
+
     // v68.9: Video Adaptive Noise Reduce
     var v68VideoAdaptiveNoiseReduce: Boolean
         get() = prefs.getBoolean(KEY_V68_VIDEOADAPTIVENOISEREDUCE, false)
         set(v) = prefs.edit().putBoolean(KEY_V68_VIDEOADAPTIVENOISEREDUCE, v).apply()
+
     // v68.10: Danmaku Filter By Title
     var v68DanmakuFilterByTitle: Boolean
         get() = prefs.getBoolean(KEY_V68_DANMAKUFILTERBYTITLE, false)
         set(v) = prefs.edit().putBoolean(KEY_V68_DANMAKUFILTERBYTITLE, v).apply()
+
     // v68.11: Playlist Auto Next On End
     var v68PlaylistAutoNextOnEnd: Boolean
         get() = prefs.getBoolean(KEY_V68_PLAYLISTAUTONEXTONEND, true)
         set(v) = prefs.edit().putBoolean(KEY_V68_PLAYLISTAUTONEXTONEND, v).apply()
+
     // v68.12: Gesture Swipe Elastic
     var v68GestureSwipeElastic: Int
         get() = prefs.getInt(KEY_V68_GESTURESWIPEELASTIC, 50)
         set(v) = prefs.edit().putInt(KEY_V68_GESTURESWIPEELASTIC, v).apply()
+
     // v68.13: Video Color Chromatic Aberration
     var v68VideoColorChromaticAberration: Int
         get() = prefs.getInt(KEY_V68_VIDEOCOLORCHROMATICABERRATION, 0)
         set(v) = prefs.edit().putInt(KEY_V68_VIDEOCOLORCHROMATICABERRATION, v).apply()
+
     // v68.14: Danmaku History Import
     var v68DanmakuHistoryImport: Boolean
         get() = prefs.getBoolean(KEY_V68_DANMAKUHISTORYIMPORT, false)
         set(v) = prefs.edit().putBoolean(KEY_V68_DANMAKUHISTORYIMPORT, v).apply()
+
     // v68.15: Cast Audio Surround
     var v68CastAudioSurround: Boolean
         get() = prefs.getBoolean(KEY_V68_CASTAUDIOSURROUND, false)
         set(v) = prefs.edit().putBoolean(KEY_V68_CASTAUDIOSURROUND, v).apply()
 
-    // === v69.x New Features ===
+    // === v69.x ===
     // v69.1: Video Adaptive Detail Enhance
     var v69VideoAdaptiveDetailEnhance: Boolean
         get() = prefs.getBoolean(KEY_V69_VIDEOADAPTIVEDETAILENHANCE, false)
         set(v) = prefs.edit().putBoolean(KEY_V69_VIDEOADAPTIVEDETAILENHANCE, v).apply()
+
     // v69.2: Danmaku Line Spacing
     var v69DanmakuLineSpacing: Int
         get() = prefs.getInt(KEY_V69_DANMAKULINESPACING, 100)
         set(v) = prefs.edit().putInt(KEY_V69_DANMAKULINESPACING, v).apply()
+
     // v69.3: Subtitle Animation Typewriter
     var v69SubtitleAnimationTypewriter: Boolean
         get() = prefs.getBoolean(KEY_V69_SUBTITLEANIMATIONTYPEWRITER, false)
         set(v) = prefs.edit().putBoolean(KEY_V69_SUBTITLEANIMATIONTYPEWRITER, v).apply()
+
     // v69.4: Gesture Custom Action 5
     var v69GestureCustomAction5: Int
         get() = prefs.getInt(KEY_V69_GESTURECUSTOMACTION5, 0)
         set(v) = prefs.edit().putInt(KEY_V69_GESTURECUSTOMACTION5, v).apply()
+
     // v69.5: Video Color Barrel Distortion
     var v69VideoColorBarrelDistortion: Int
         get() = prefs.getInt(KEY_V69_VIDEOCOLORBARRELDISTORTION, 0)
         set(v) = prefs.edit().putInt(KEY_V69_VIDEOCOLORBARRELDISTORTION, v).apply()
+
     // v69.6: Danmaku Send Max Length Total
     var v69DanmakuSendMaxLengthTotal: Int
         get() = prefs.getInt(KEY_V69_DANMAKUSENDMAXLENGTHTOTAL, 0)
         set(v) = prefs.edit().putInt(KEY_V69_DANMAKUSENDMAXLENGTHTOTAL, v).apply()
+
     // v69.7: Cast Video Multi View
     var v69CastVideoMultiView: Boolean
         get() = prefs.getBoolean(KEY_V69_CASTVIDEOMULTIVIEW, false)
         set(v) = prefs.edit().putBoolean(KEY_V69_CASTVIDEOMULTIVIEW, v).apply()
+
     // v69.8: Subtitle BG Padding X
     var v69SubtitleBgPaddingX: Int
         get() = prefs.getInt(KEY_V69_SUBTITLEBGPADDINGX, 4)
         set(v) = prefs.edit().putInt(KEY_V69_SUBTITLEBGPADDINGX, v).apply()
+
     // v69.9: Video Adaptive Chroma Enhance
     var v69VideoAdaptiveChromaEnhance: Boolean
         get() = prefs.getBoolean(KEY_V69_VIDEOADAPTIVECHROMAENHANCE, false)
         set(v) = prefs.edit().putBoolean(KEY_V69_VIDEOADAPTIVECHROMAENHANCE, v).apply()
+
     // v69.10: Danmaku Filter By Content
     var v69DanmakuFilterByContent: Boolean
         get() = prefs.getBoolean(KEY_V69_DANMAKUFILTERBYCONTENT, false)
         set(v) = prefs.edit().putBoolean(KEY_V69_DANMAKUFILTERBYCONTENT, v).apply()
+
     // v69.11: Playlist Auto Resume
     var v69PlaylistAutoResume: Boolean
         get() = prefs.getBoolean(KEY_V69_PLAYLISTAUTORESUME, true)
         set(v) = prefs.edit().putBoolean(KEY_V69_PLAYLISTAUTORESUME, v).apply()
+
     // v69.12: Gesture Swipe Rubber Band
     var v69GestureSwipeRubberBand: Int
         get() = prefs.getInt(KEY_V69_GESTURESWIPERUBBERBAND, 50)
         set(v) = prefs.edit().putInt(KEY_V69_GESTURESWIPERUBBERBAND, v).apply()
+
     // v69.13: Video Color Pincushion
     var v69VideoColorPincushion: Int
         get() = prefs.getInt(KEY_V69_VIDEOCOLORPINCUSHION, 0)
         set(v) = prefs.edit().putInt(KEY_V69_VIDEOCOLORPINCUSHION, v).apply()
+
     // v69.14: Danmaku History Clear
     var v69DanmakuHistoryClear: Boolean
         get() = prefs.getBoolean(KEY_V69_DANMAKUHISTORYCLEAR, false)
         set(v) = prefs.edit().putBoolean(KEY_V69_DANMAKUHISTORYCLEAR, v).apply()
+
     // v69.15: Cast Audio Multi View
     var v69CastAudioMultiView: Boolean
         get() = prefs.getBoolean(KEY_V69_CASTAUDIOMULTIVIEW, false)
         set(v) = prefs.edit().putBoolean(KEY_V69_CASTAUDIOMULTIVIEW, v).apply()
 
-    // === v70.x New Features ===
+    // === v70.x ===
     // v70.1: Video Adaptive Luma Enhance
     var v70VideoAdaptiveLumaEnhance: Boolean
         get() = prefs.getBoolean(KEY_V70_VIDEOADAPTIVELUMAENHANCE, false)
         set(v) = prefs.edit().putBoolean(KEY_V70_VIDEOADAPTIVELUMAENHANCE, v).apply()
+
     // v70.2: Danmaku Character Spacing
     var v70DanmakuCharacterSpacing: Int
         get() = prefs.getInt(KEY_V70_DANMAKUCHARACTERSPACING, 0)
         set(v) = prefs.edit().putInt(KEY_V70_DANMAKUCHARACTERSPACING, v).apply()
+
     // v70.3: Subtitle Animation Highlight
     var v70SubtitleAnimationHighlight: Boolean
         get() = prefs.getBoolean(KEY_V70_SUBTITLEANIMATIONHIGHLIGHT, false)
         set(v) = prefs.edit().putBoolean(KEY_V70_SUBTITLEANIMATIONHIGHLIGHT, v).apply()
+
     // v70.4: Gesture Custom Action 6
     var v70GestureCustomAction6: Int
         get() = prefs.getInt(KEY_V70_GESTURECUSTOMACTION6, 0)
         set(v) = prefs.edit().putInt(KEY_V70_GESTURECUSTOMACTION6, v).apply()
+
     // v70.5: Video Color Wave Distortion
     var v70VideoColorWaveDistortion: Int
         get() = prefs.getInt(KEY_V70_VIDEOCOLORWAVEDISTORTION, 0)
         set(v) = prefs.edit().putInt(KEY_V70_VIDEOCOLORWAVEDISTORTION, v).apply()
+
     // v70.6: Danmaku Send Max Length VIP
     var v70DanmakuSendMaxLengthVIP: Int
         get() = prefs.getInt(KEY_V70_DANMAKUSENDMAXLENGTHVIP, 0)
         set(v) = prefs.edit().putInt(KEY_V70_DANMAKUSENDMAXLENGTHVIP, v).apply()
+
     // v70.7: Cast Video Multi Screen
     var v70CastVideoMultiScreen: Boolean
         get() = prefs.getBoolean(KEY_V70_CASTVIDEOMULTISCREEN, false)
         set(v) = prefs.edit().putBoolean(KEY_V70_CASTVIDEOMULTISCREEN, v).apply()
+
     // v70.8: Subtitle BG Padding Y
     var v70SubtitleBgPaddingY: Int
         get() = prefs.getInt(KEY_V70_SUBTITLEBGPADDINGY, 2)
         set(v) = prefs.edit().putInt(KEY_V70_SUBTITLEBGPADDINGY, v).apply()
+
     // v70.9: Video Adaptive Color Enhance Curve
     var v70VideoAdaptiveColorEnhanceCurve: Int
         get() = prefs.getInt(KEY_V70_VIDEOADAPTIVECOLORENHANCECURVE, 0)
         set(v) = prefs.edit().putInt(KEY_V70_VIDEOADAPTIVECOLORENHANCECURVE, v).apply()
+
     // v70.10: Danmaku Filter By Gift
     var v70DanmakuFilterByGift: Boolean
         get() = prefs.getBoolean(KEY_V70_DANMAKUFILTERBYGIFT, false)
         set(v) = prefs.edit().putBoolean(KEY_V70_DANMAKUFILTERBYGIFT, v).apply()
+
     // v70.11: Playlist Auto Create
     var v70PlaylistAutoCreate: Boolean
         get() = prefs.getBoolean(KEY_V70_PLAYLISTAUTOCREATE, false)
         set(v) = prefs.edit().putBoolean(KEY_V70_PLAYLISTAUTOCREATE, v).apply()
+
     // v70.12: Gesture Swipe Spring
     var v70GestureSwipeSpring: Int
         get() = prefs.getInt(KEY_V70_GESTURESWIPESPRING, 50)
         set(v) = prefs.edit().putInt(KEY_V70_GESTURESWIPESPRING, v).apply()
+
     // v70.13: Video Color Glitch
     var v70VideoColorGlitch: Int
         get() = prefs.getInt(KEY_V70_VIDEOCOLORGLITCH, 0)
         set(v) = prefs.edit().putInt(KEY_V70_VIDEOCOLORGLITCH, v).apply()
+
     // v70.14: Danmaku History Stats
     var v70DanmakuHistoryStats: Boolean
         get() = prefs.getBoolean(KEY_V70_DANMAKUHISTORYSTATS, false)
         set(v) = prefs.edit().putBoolean(KEY_V70_DANMAKUHISTORYSTATS, v).apply()
+
     // v70.15: Cast Audio Multi Screen
     var v70CastAudioMultiScreen: Boolean
         get() = prefs.getBoolean(KEY_V70_CASTAUDIOMULTISCREEN, false)
         set(v) = prefs.edit().putBoolean(KEY_V70_CASTAUDIOMULTISCREEN, v).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -12523,159 +14192,312 @@ class AppPrefs(context: Context) {
                 else -> API_SOURCE_WEB
             }
         }
+        // v31b-v40b New Unique Features KEY constants
+        const val KEY_V31_DANMAKURAINBOW = "v31DanmakuRainbow"
+        const val KEY_V31_VIDEOSMOOTHTRANSITION = "v31VideoSmoothTransition"
+        const val KEY_V31_DANMAKUTYPEWRITER = "v31DanmakuTypewriter"
+        const val KEY_V31_PLAYLISTREMEMBERORDER = "v31PlaylistRememberOrder"
+        const val KEY_V31_DANMAKUBATCHCOPY = "v31DanmakuBatchCopy"
+        const val KEY_V31_CASTPERFORMANCEMODE = "v31CastPerformanceMode"
+        const val KEY_V31_DANMAKUSCALEEFFECT = "v31DanmakuScaleEffect"
+        const val KEY_V31_DANMAKUTEMPLATEREPLY = "v31DanmakuTemplateReply"
+        const val KEY_V31_CASTPOWERSAVING = "v31CastPowerSaving"
+        const val KEY_V31_DANMAKUHIGHLIGHTFX = "v31DanmakuHighlightFx"
+        const val KEY_V31_REMEMBERPLAYBACKPOS = "v31RememberPlaybackPos"
+        const val KEY_V31_DANMAKUSENDANIMATION = "v31DanmakuSendAnimation"
+        const val KEY_V31_REMEMBERPLAYBACKSKIP = "v31RememberPlaybackSkip"
+        const val KEY_V31_DANMAKU3DEFFECT = "v31Danmaku3dEffect"
+        const val KEY_V31_VIDEOAUTONEXT = "v31VideoAutoNext"
+        const val KEY_V32_DANMAKUFONTSIZECURVE = "v32DanmakuFontSizeCurve"
+        const val KEY_V32_VIDEODEBAND = "v32VideoDeband"
+        const val KEY_V32_DANMAKUSHADOWDEPTH = "v32DanmakuShadowDepth"
+        const val KEY_V32_VIDEOCOLORVIBRANCE = "v32VideoColorVibrance"
+        const val KEY_V32_SUBTITLEBGROUNDCORNER = "v32SubtitleBgRoundCorner"
+        const val KEY_V32_DANMAKUSCROLLINERTIA = "v32DanmakuScrollInertia"
+        const val KEY_V32_GESTUREHAPTICFEEDBACK = "v32GestureHapticFeedback"
+        const val KEY_V32_VIDEOANTIALIASING = "v32VideoAntiAliasing"
+        const val KEY_V32_DANMAKUOVERLAPLIMIT = "v32DanmakuOverlapLimit"
+        const val KEY_V32_SUBTITLESYNCOFFSET = "v32SubtitleSyncOffset"
+        const val KEY_V32_CASTAUTORECONNECT = "v32CastAutoReconnect"
+        const val KEY_V32_DANMAKUEDGESTYLE = "v32DanmakuEdgeStyle"
+        const val KEY_V32_VIDEOFRAMEINTERPOLATION = "v32VideoFrameInterpolation"
+        const val KEY_V32_PLAYLISTAUTOEXPAND = "v32PlaylistAutoExpand"
+        const val KEY_V32_DANMAKUCOLORPALETTE = "v32DanmakuColorPalette"
+        const val KEY_V33_VIDEODENOISELEVEL = "v33VideoDenoiseLevel"
+        const val KEY_V33_DANMAKUFONTWEIGHTADJ = "v33DanmakuFontWeightAdj"
+        const val KEY_V33_SUBTITLEAUTODETECT = "v33SubtitleAutoDetect"
+        const val KEY_V33_GESTUREDOUBLETAPACTION = "v33GestureDoubleTapAction"
+        const val KEY_V33_VIDEOGAMMACORRECTION = "v33VideoGammaCorrection"
+        const val KEY_V33_DANMAKUMERGEWINDOW = "v33DanmakuMergeWindow"
+        const val KEY_V33_CASTAUDIOSYNC = "v33CastAudioSync"
+        const val KEY_V33_SUBTITLEFONTSIZESTEP = "v33SubtitleFontSizeStep"
+        const val KEY_V33_VIDEOSATURATIONCURVE = "v33VideoSaturationCurve"
+        const val KEY_V33_DANMAKUSPEEDADAPTIVE = "v33DanmakuSpeedAdaptive"
+        const val KEY_V33_PLAYLISTLOOPCOUNT = "v33PlaylistLoopCount"
+        const val KEY_V33_GESTURESWIPETHRESHOLD = "v33GestureSwipeThreshold"
+        const val KEY_V33_VIDEOBRIGHTNESSCURVE = "v33VideoBrightnessCurve"
+        const val KEY_V33_DANMAKUFONTITALIC = "v33DanmakuFontItalic"
+        const val KEY_V33_CASTRESOLUTION = "v33CastResolution"
+        const val KEY_V34_VIDEOCOLORSPACE = "v34VideoColorSpace"
+        const val KEY_V34_DANMAKUANIMDURATION = "v34DanmakuAnimDuration"
+        const val KEY_V34_SUBTITLEOUTLINEWIDTH = "v34SubtitleOutlineWidth"
+        const val KEY_V34_GESTURELONGPRESSACTION = "v34GestureLongPressAction"
+        const val KEY_V34_VIDEOPEAKBRIGHTNESS = "v34VideoPeakBrightness"
+        const val KEY_V34_DANMAKUFILTERREGEX = "v34DanmakuFilterRegex"
+        const val KEY_V34_CASTVIDEOCODEC = "v34CastVideoCodec"
+        const val KEY_V34_SUBTITLEPOSITIONY = "v34SubtitlePositionY"
+        const val KEY_V34_VIDEOCONTRASTADAPTIVE = "v34VideoContrastAdaptive"
+        const val KEY_V34_DANMAKUMERGESIMILAR = "v34DanmakuMergeSimilar"
+        const val KEY_V34_PLAYLISTSHUFFLESEED = "v34PlaylistShuffleSeed"
+        const val KEY_V34_GESTUREPINCHACTION = "v34GesturePinchAction"
+        const val KEY_V34_VIDEONOISEREDUCTION = "v34VideoNoiseReduction"
+        const val KEY_V34_DANMAKUSENDCOOLDOWN = "v34DanmakuSendCooldown"
+        const val KEY_V34_CASTBITRATELIMIT = "v34CastBitrateLimit"
+        const val KEY_V35_VIDEOSHARPENRADIUS = "v35VideoSharpenRadius"
+        const val KEY_V35_DANMAKUGLOWEFFECT = "v35DanmakuGlowEffect"
+        const val KEY_V35_SUBTITLEFONTWEIGHT = "v35SubtitleFontWeight"
+        const val KEY_V35_GESTUREVOLUMESENSITIVITY = "v35GestureVolumeSensitivity"
+        const val KEY_V35_VIDEOHIGHLIGHTRECOVERY = "v35VideoHighlightRecovery"
+        const val KEY_V35_DANMAKUPERSISTACROSSEP = "v35DanmakuPersistAcrossEp"
+        const val KEY_V35_CASTSUBTITLEENABLED = "v35CastSubtitleEnabled"
+        const val KEY_V35_SUBTITLESHADOWOFFSET = "v35SubtitleShadowOffset"
+        const val KEY_V35_VIDEOCOLORGRADIENT = "v35VideoColorGradient"
+        const val KEY_V35_DANMAKUSCROLLDIRECTION = "v35DanmakuScrollDirection"
+        const val KEY_V35_PLAYLISTAUTOPLAYNEXT = "v35PlaylistAutoPlayNext"
+        const val KEY_V35_GESTUREBRIGHTNESSSENSITIVITY = "v35GestureBrightnessSensitivity"
+        const val KEY_V35_VIDEOBLACKLEVELADJ = "v35VideoBlackLevelAdj"
+        const val KEY_V35_DANMAKUBORDERCOLOR = "v35DanmakuBorderColor"
+        const val KEY_V35_CASTAUDIODELAY = "v35CastAudioDelay"
+        const val KEY_V36_VIDEOWHITEBALANCE = "v36VideoWhiteBalance"
+        const val KEY_V36_DANMAKUFONTSTRETCH = "v36DanmakuFontStretch"
+        const val KEY_V36_SUBTITLEENCODING = "v36SubtitleEncoding"
+        const val KEY_V36_GESTURESEEKSTEP = "v36GestureSeekStep"
+        const val KEY_V36_VIDEOCOLORTINT = "v36VideoColorTint"
+        const val KEY_V36_DANMAKUFADEIN = "v36DanmakuFadeIn"
+        const val KEY_V36_CASTSCREENMIRROR = "v36CastScreenMirror"
+        const val KEY_V36_SUBTITLELINESPACING = "v36SubtitleLineSpacing"
+        const val KEY_V36_VIDEOGAMMATONEMAP = "v36VideoGammaToneMap"
+        const val KEY_V36_DANMAKUHISTORYDEPTH = "v36DanmakuHistoryDepth"
+        const val KEY_V36_PLAYLISTRESUMELAST = "v36PlaylistResumeLast"
+        const val KEY_V36_GESTUREDOUBLESWIPEACTION = "v36GestureDoubleSwipeAction"
+        const val KEY_V36_VIDEOCONTRASTRATIO = "v36VideoContrastRatio"
+        const val KEY_V36_DANMAKUSPEEDMULTIPLIER = "v36DanmakuSpeedMultiplier"
+        const val KEY_V36_CASTAUTOQUALITY = "v36CastAutoQuality"
+        const val KEY_V37_VIDEODYNAMICRANGE = "v37VideoDynamicRange"
+        const val KEY_V37_DANMAKUBLENDMODE = "v37DanmakuBlendMode"
+        const val KEY_V37_SUBTITLEKARAOKEMODE = "v37SubtitleKaraokeMode"
+        const val KEY_V37_GESTUREROTATEACTION = "v37GestureRotateAction"
+        const val KEY_V37_VIDEOCOLORDEPTH = "v37VideoColorDepth"
+        const val KEY_V37_DANMAKUPREVIEWMODE = "v37DanmakuPreviewMode"
+        const val KEY_V37_CASTAUDIOCHANNEL = "v37CastAudioChannel"
+        const val KEY_V37_SUBTITLEFONTSIZEAUTO = "v37SubtitleFontSizeAuto"
+        const val KEY_V37_VIDEOEDGEENHANCE = "v37VideoEdgeEnhance"
+        const val KEY_V37_DANMAKUSENDFONT = "v37DanmakuSendFont"
+        const val KEY_V37_PLAYLISTREPEATMODE = "v37PlaylistRepeatMode"
+        const val KEY_V37_GESTURETRIPLETAPACTION = "v37GestureTripleTapAction"
+        const val KEY_V37_VIDEOCOLORCURVE = "v37VideoColorCurve"
+        const val KEY_V37_DANMAKUSHADOWCOLORCUSTOM = "v37DanmakuShadowColorCustom"
+        const val KEY_V37_CASTKEEPALIVE = "v37CastKeepAlive"
+        const val KEY_V38_VIDEOCHROMAUPSAMPLING = "v38VideoChromaUpsampling"
+        const val KEY_V38_DANMAKUPRESETSLOTS = "v38DanmakuPresetSlots"
+        const val KEY_V38_SUBTITLEBGBLUR = "v38SubtitleBgBlur"
+        const val KEY_V38_GESTUREEDGEZONEWIDTH = "v38GestureEdgeZoneWidth"
+        const val KEY_V38_VIDEODEINTERLACE = "v38VideoDeinterlace"
+        const val KEY_V38_DANMAKUKEYBOARDSEND = "v38DanmakuKeyboardSend"
+        const val KEY_V38_CASTVIDEOHDR = "v38CastVideoHDR"
+        const val KEY_V38_SUBTITLEFONTOUTLINE = "v38SubtitleFontOutline"
+        const val KEY_V38_VIDEOBANDINGFIX = "v38VideoBandingFix"
+        const val KEY_V38_DANMAKULANECOUNT = "v38DanmakuLaneCount"
+        const val KEY_V38_PLAYLISTSMARTSORT = "v38PlaylistSmartSort"
+        const val KEY_V38_GESTUREDEADZONE = "v38GestureDeadZone"
+        const val KEY_V38_VIDEOOVERSCAN = "v38VideoOverscan"
+        const val KEY_V38_DANMAKUMERGETHRESHOLD = "v38DanmakuMergeThreshold"
+        const val KEY_V38_CASTVOLUMECONTROL = "v38CastVolumeControl"
+        const val KEY_V39_VIDEOTEMPORALDENOISE = "v39VideoTemporalDenoise"
+        const val KEY_V39_DANMAKUFONTFAMILY = "v39DanmakuFontFamily"
+        const val KEY_V39_SUBTITLEBGCOLOR = "v39SubtitleBgColor"
+        const val KEY_V39_GESTURESCROLLACTION = "v39GestureScrollAction"
+        const val KEY_V39_VIDEOADAPTIVESHARPEN = "v39VideoAdaptiveSharpen"
+        const val KEY_V39_DANMAKUSENDPRIVILEGE = "v39DanmakuSendPrivilege"
+        const val KEY_V39_CASTSUBTITLES = "v39CastSubtitles"
+        const val KEY_V39_SUBTITLEBGPADDING = "v39SubtitleBgPadding"
+        const val KEY_V39_VIDEOCOLORTEMPERATUREFINE = "v39VideoColorTemperatureFine"
+        const val KEY_V39_DANMAKUMAXPERSCREEN = "v39DanmakuMaxPerScreen"
+        const val KEY_V39_PLAYLISTLOADRELATED = "v39PlaylistLoadRelated"
+        const val KEY_V39_VIDEOSMOOTHINGLEVEL = "v39VideoSmoothingLevel"
+        const val KEY_V39_DANMAKUSENDERLEVELICON = "v39DanmakuSenderLevelIcon"
+        const val KEY_V39_SUBTITLEAUTOTRANSLATE = "v39SubtitleAutoTranslate"
+        const val KEY_V39_CASTAUDIOQUALITY = "v39CastAudioQuality"
+        const val KEY_V40_VIDEOSPATIALDENOISE = "v40VideoSpatialDenoise"
+        const val KEY_V40_DANMAKUPREVIEWSIZE = "v40DanmakuPreviewSize"
+        const val KEY_V40_SUBTITLESTROKECOLOR = "v40SubtitleStrokeColor"
+        const val KEY_V40_GESTUREINVERTSCROLL = "v40GestureInvertScroll"
+        const val KEY_V40_VIDEOMOTIONBLUR = "v40VideoMotionBlur"
+        const val KEY_V40_DANMAKUREPORTENABLED = "v40DanmakuReportEnabled"
+        const val KEY_V40_CASTAUTOPAUSE = "v40CastAutoPause"
+        const val KEY_V40_SUBTITLESTROKEWIDTH = "v40SubtitleStrokeWidth"
+        const val KEY_V40_VIDEODETAILENHANCE = "v40VideoDetailEnhance"
+        const val KEY_V40_DANMAKUBLOCKLEVEL = "v40DanmakuBlockLevel"
+        const val KEY_V40_PLAYLISTNEXTEPISODE = "v40PlaylistNextEpisode"
+        const val KEY_V40_GESTURECUSTOMMAPPING = "v40GestureCustomMapping"
+        const val KEY_V40_VIDEOCOLORBOOST = "v40VideoColorBoost"
+        const val KEY_V40_DANMAKUFONTSIZEOVERRIDE = "v40DanmakuFontSizeOverride"
+        const val KEY_V40_CASTAUDIONORMALIZATION = "v40CastAudioNormalization"
+
+
+        // v51-v60 New Unique Features KEY constants
+        const val KEY_V51_PLAYBACKAUTONEXTEPISODE = "v51PlaybackAutoNextEpisode"
+        const val KEY_V51_DANMAKUFONTSHADOWSIZE = "v51DanmakuFontShadowSize"
+        const val KEY_V51_COLORMIDTONEADJUST = "v51ColorMidtoneAdjust"
+        const val KEY_V51_GESTURECUSTOMACTION3 = "v51GestureCustomAction3"
+        const val KEY_V51_SUBTITLEFONTITALIC = "v51SubtitleFontItalic"
+        const val KEY_V51_VIDEOADAPTIVECONTRASTENHANCED = "v51VideoAdaptiveContrastEnhanced"
+        const val KEY_V51_DANMAKUFILTERMUTEDUSERS = "v51DanmakuFilterMutedUsers"
+        const val KEY_V51_CASTVIDEOUPSCALEMODE = "v51CastVideoUpscaleMode"
+        const val KEY_V51_PLAYLISTAUTOCONTINUE = "v51PlaylistAutoContinue"
+        const val KEY_V51_VIDEOLUMAADAPTIVE = "v51VideoLumaAdaptive"
+        const val KEY_V51_DANMAKUFONTSPACINGCUSTOM = "v51DanmakuFontSpacingCustom"
+        const val KEY_V51_SUBTITLEFONTCOLORCUSTOM = "v51SubtitleFontColorCustom"
+        const val KEY_V51_GESTURELONGPRESSACTION = "v51GestureLongPressAction"
+        const val KEY_V51_VIDEOCHROMAADAPTIVE = "v51VideoChromaAdaptive"
+        const val KEY_V51_CASTAUDIOSYNC = "v51CastAudioSync"
+        const val KEY_V52_VIDEOTEMPORALNOISEREDUCE = "v52VideoTemporalNoiseReduce"
+        const val KEY_V52_DANMAKUBGCOLORCUSTOM = "v52DanmakuBgColorCustom"
+        const val KEY_V52_SUBTITLEFONTSIZEAUTO = "v52SubtitleFontSizeAuto"
+        const val KEY_V52_GESTURESWIPEFEEDBACK = "v52GestureSwipeFeedback"
+        const val KEY_V52_VIDEOCOLORHIGHLIGHTRECOVERY = "v52VideoColorHighlightRecovery"
+        const val KEY_V52_DANMAKUSENDPREVIEW = "v52DanmakuSendPreview"
+        const val KEY_V52_CASTVIDEOAUTOQUALITY = "v52CastVideoAutoQuality"
+        const val KEY_V52_SUBTITLEBGPADDINGCUSTOM = "v52SubtitleBgPaddingCustom"
+        const val KEY_V52_VIDEOFRAMEINTERPOLATION = "v52VideoFrameInterpolation"
+        const val KEY_V52_DANMAKUMERGEALGORITHM = "v52DanmakuMergeAlgorithm"
+        const val KEY_V52_PLAYLISTSHUFFLEWEIGHTED = "v52PlaylistShuffleWeighted"
+        const val KEY_V52_GESTUREPINCHACTION = "v52GesturePinchAction"
+        const val KEY_V52_VIDEOCOLORTEMPERATURE = "v52VideoColorTemperature"
+        const val KEY_V52_DANMAKUFONTWEIGHTADAPTIVE = "v52DanmakuFontWeightAdaptive"
+        const val KEY_V52_CASTSCREENMIRRORMODE = "v52CastScreenMirrorMode"
+        const val KEY_V53_VIDEOSPATIALNOISEREDUCE = "v53VideoSpatialNoiseReduce"
+        const val KEY_V53_DANMAKUOPACITYADAPTIVE = "v53DanmakuOpacityAdaptive"
+        const val KEY_V53_SUBTITLESYNCAUTODETECT = "v53SubtitleSyncAutoDetect"
+        const val KEY_V53_GESTURETRIPLETAPACTION = "v53GestureTripleTapAction"
+        const val KEY_V53_VIDEOCOLORHIGHLIGHTCOMPRESS = "v53VideoColorHighlightCompress"
+        const val KEY_V53_DANMAKUSENDTIMER = "v53DanmakuSendTimer"
+        const val KEY_V53_CASTVIDEOLATENCYMODE = "v53CastVideoLatencyMode"
+        const val KEY_V53_SUBTITLEBGRADIUSCUSTOM = "v53SubtitleBgRadiusCustom"
+        const val KEY_V53_VIDEODETAILENHANCE = "v53VideoDetailEnhance"
+        const val KEY_V53_DANMAKUFONTSIZECURVE = "v53DanmakuFontSizeCurve"
+        const val KEY_V53_PLAYLISTAUTODOWNLOADQUALITY = "v53PlaylistAutoDownloadQuality"
+        const val KEY_V53_GESTURESWIPETHRESHOLD = "v53GestureSwipeThreshold"
+        const val KEY_V53_VIDEOCOLORSHADOWCOMPRESS = "v53VideoColorShadowCompress"
+        const val KEY_V53_DANMAKUSTROKECOLORCUSTOM = "v53DanmakuStrokeColorCustom"
+        const val KEY_V53_CASTAUDIOFADEMODE = "v53CastAudioFadeMode"
+        const val KEY_V54_VIDEOCOLORGRADINGCUSTOM = "v54VideoColorGradingCustom"
+        const val KEY_V54_DANMAKUBORDERWEIGHT = "v54DanmakuBorderWeight"
+        const val KEY_V54_SUBTITLEFONTWEIGHT = "v54SubtitleFontWeight"
+        const val KEY_V54_GESTUREEDGESWIPESPEED = "v54GestureEdgeSwipeSpeed"
+        const val KEY_V54_VIDEOADAPTIVESATURATION = "v54VideoAdaptiveSaturation"
+        const val KEY_V54_DANMAKUSENDMAXLENGTHCUSTOM = "v54DanmakuSendMaxLengthCustom"
+        const val KEY_V54_CASTVIDEOFRAMERATESYNC = "v54CastVideoFrameRateSync"
+        const val KEY_V54_SUBTITLEOUTLINECOLORCUSTOM = "v54SubtitleOutlineColorCustom"
+        const val KEY_V54_VIDEOLUMACURVECUSTOM = "v54VideoLumaCurveCustom"
+        const val KEY_V54_DANMAKUHISTORYFILTER = "v54DanmakuHistoryFilter"
+        const val KEY_V54_PLAYLISTAUTOSKIPWATCHED = "v54PlaylistAutoSkipWatched"
+        const val KEY_V54_GESTUREDOUBLETAPACTION = "v54GestureDoubleTapAction"
+        const val KEY_V54_VIDEOCHROMACURVECUSTOM = "v54VideoChromaCurveCustom"
+        const val KEY_V54_DANMAKUBGOPACITYCUSTOM = "v54DanmakuBgOpacityCustom"
+        const val KEY_V54_CASTAUDIOCODECCUSTOM = "v54CastAudioCodecCustom"
+        const val KEY_V55_VIDEOCOLORFADE = "v55VideoColorFade"
+        const val KEY_V55_DANMAKUTEXTGLOWCUSTOM = "v55DanmakuTextGlowCustom"
+        const val KEY_V55_SUBTITLEANIMATIONSPEED = "v55SubtitleAnimationSpeed"
+        const val KEY_V55_GESTUREPINCHZOOMMODE = "v55GesturePinchZoomMode"
+        const val KEY_V55_VIDEOADAPTIVEGAMMA = "v55VideoAdaptiveGamma"
+        const val KEY_V55_DANMAKUSENDRATECUSTOM = "v55DanmakuSendRateCustom"
+        const val KEY_V55_CASTVIDEOBITRATEADAPTIVE = "v55CastVideoBitrateAdaptive"
+        const val KEY_V55_SUBTITLEBGOPACITYCUSTOM = "v55SubtitleBgOpacityCustom"
+        const val KEY_V55_VIDEOFRAMEBLEND = "v55VideoFrameBlend"
+        const val KEY_V55_DANMAKULANECOUNT = "v55DanmakuLaneCount"
+        const val KEY_V55_PLAYLISTAUTOSYNC = "v55PlaylistAutoSync"
+        const val KEY_V55_GESTUREROTATEACTION = "v55GestureRotateAction"
+        const val KEY_V55_VIDEOCOLORTINTENHANCED = "v55VideoColorTintEnhanced"
+        const val KEY_V55_DANMAKUFONTCUSTOMPATH = "v55DanmakuFontCustomPath"
+        const val KEY_V55_CASTAUDIOLATENCYAUTO = "v55CastAudioLatencyAuto"
+        const val KEY_V56_VIDEOADAPTIVEDETAIL = "v56VideoAdaptiveDetail"
+        const val KEY_V56_DANMAKUSTROKEBLUR = "v56DanmakuStrokeBlur"
+        const val KEY_V56_SUBTITLEWORDSPACING = "v56SubtitleWordSpacing"
+        const val KEY_V56_GESTUREMULTIFINGERACTION = "v56GestureMultiFingerAction"
+        const val KEY_V56_VIDEOCOLORBLACKLEVELCUSTOM = "v56VideoColorBlackLevelCustom"
+        const val KEY_V56_DANMAKUSENDFONTCUSTOM = "v56DanmakuSendFontCustom"
+        const val KEY_V56_CASTVIDEORESOLUTIONCUSTOM = "v56CastVideoResolutionCustom"
+        const val KEY_V56_SUBTITLEFONTSTRETCHCUSTOM = "v56SubtitleFontStretchCustom"
+        const val KEY_V56_VIDEOCOLORWHITELEVELCUSTOM = "v56VideoColorWhiteLevelCustom"
+        const val KEY_V56_DANMAKUFILTERBYCOLOR = "v56DanmakuFilterByColor"
+        const val KEY_V56_PLAYLISTAUTODELETEEXPIRED = "v56PlaylistAutoDeleteExpired"
+        const val KEY_V56_GESTURESWIPEDIRECTIONLOCK = "v56GestureSwipeDirectionLock"
+        const val KEY_V56_VIDEOCOLORMIDTONECUSTOM = "v56VideoColorMidtoneCustom"
+        const val KEY_V56_DANMAKUBGPADDINGCUSTOM = "v56DanmakuBgPaddingCustom"
+        const val KEY_V56_CASTAUDIOVOLUMESYNC = "v56CastAudioVolumeSync"
+        const val KEY_V57_VIDEOTEMPORALENHANCE = "v57VideoTemporalEnhance"
+        const val KEY_V57_DANMAKUFONTLINEHEIGHTCUSTOM = "v57DanmakuFontLineHeightCustom"
+        const val KEY_V57_SUBTITLEOUTLINEWIDTHCUSTOM = "v57SubtitleOutlineWidthCustom"
+        const val KEY_V57_GESTURELONGPRESSFEEDBACK = "v57GestureLongPressFeedback"
+        const val KEY_V57_VIDEOCOLORHIGHLIGHTCUSTOM = "v57VideoColorHighlightCustom"
+        const val KEY_V57_DANMAKUSENDEFFECTCUSTOM = "v57DanmakuSendEffectCustom"
+        const val KEY_V57_CASTVIDEOCOLORPROFILE = "v57CastVideoColorProfile"
+        const val KEY_V57_SUBTITLEBGBLURMODE = "v57SubtitleBgBlurMode"
+        const val KEY_V57_VIDEOCOLORSHADOWCUSTOM = "v57VideoColorShadowCustom"
+        const val KEY_V57_DANMAKUHISTORYEXPORTFORMAT = "v57DanmakuHistoryExportFormat"
+        const val KEY_V57_PLAYLISTAUTOSORTBYRATING = "v57PlaylistAutoSortByRating"
+        const val KEY_V57_GESTUREDEADZONEMODE = "v57GestureDeadZoneMode"
+        const val KEY_V57_VIDEOCOLORGAMMACUSTOM = "v57VideoColorGammaCustom"
+        const val KEY_V57_DANMAKUBORDERRADIUSCUSTOM = "v57DanmakuBorderRadiusCustom"
+        const val KEY_V57_CASTAUDIONORMALIZATIONAUTO = "v57CastAudioNormalizationAuto"
+        const val KEY_V58_VIDEOSPATIALENHANCE = "v58VideoSpatialEnhance"
+        const val KEY_V58_DANMAKUFONTSIZEADAPTIVECUSTOM = "v58DanmakuFontSizeAdaptiveCustom"
+        const val KEY_V58_SUBTITLEFONTKERNINGCUSTOM = "v58SubtitleFontKerningCustom"
+        const val KEY_V58_GESTURECUSTOMACTION4 = "v58GestureCustomAction4"
+        const val KEY_V58_VIDEOCOLORSATURATIONCUSTOM = "v58VideoColorSaturationCustom"
+        const val KEY_V58_DANMAKUSENDCOLORPRESET = "v58DanmakuSendColorPreset"
+        const val KEY_V58_CASTVIDEOUPSCALEMODECUSTOM = "v58CastVideoUpscaleModeCustom"
+        const val KEY_V58_SUBTITLEFONTLETTERSPACINGCUSTOM = "v58SubtitleFontLetterSpacingCustom"
+        const val KEY_V58_VIDEOCOLORCONTRASTCUSTOM = "v58VideoColorContrastCustom"
+        const val KEY_V58_DANMAKUMERGEWINDOWAUTO = "v58DanmakuMergeWindowAuto"
+        const val KEY_V58_PLAYLISTAUTOMARKEXPIRED = "v58PlaylistAutoMarkExpired"
+        const val KEY_V58_GESTURESWIPEVELOCITYCUSTOM = "v58GestureSwipeVelocityCustom"
+        const val KEY_V58_VIDEOCOLORBRIGHTNESSCUSTOM = "v58VideoColorBrightnessCustom"
+        const val KEY_V58_DANMAKUBGRADIUSCUSTOM = "v58DanmakuBgRadiusCustom"
+        const val KEY_V58_CASTAUDIODELAYCUSTOM = "v58CastAudioDelayCustom"
+        const val KEY_V59_VIDEOCOLORMATRIXCUSTOM = "v59VideoColorMatrixCustom"
+        const val KEY_V59_DANMAKUTEXTSHADOWCUSTOM = "v59DanmakuTextShadowCustom"
+        const val KEY_V59_SUBTITLEANIMATIONDELAY = "v59SubtitleAnimationDelay"
+        const val KEY_V59_GESTUREEDGESWIPECUSTOM = "v59GestureEdgeSwipeCustom"
+        const val KEY_V59_VIDEOCOLORDENOISESTRENGTH = "v59VideoColorDenoiseStrength"
+        const val KEY_V59_DANMAKUSENDEFFECTPREVIEW = "v59DanmakuSendEffectPreview"
+        const val KEY_V59_CASTVIDEOCOLORSPACE = "v59CastVideoColorSpace"
+        const val KEY_V59_SUBTITLEBGGRADIENTCUSTOM = "v59SubtitleBgGradientCustom"
+        const val KEY_V59_VIDEOCOLORVIBRANCECUSTOM = "v59VideoColorVibranceCustom"
+        const val KEY_V59_DANMAKUHISTORYSEARCHCUSTOM = "v59DanmakuHistorySearchCustom"
+        const val KEY_V59_PLAYLISTAUTOBACKUP = "v59PlaylistAutoBackup"
+        const val KEY_V59_GESTUREPINCHSENSITIVITYCUSTOM = "v59GesturePinchSensitivityCustom"
+        const val KEY_V59_VIDEOCOLORTEMPERATURECUSTOM = "v59VideoColorTemperatureCustom"
+        const val KEY_V59_DANMAKUFONTWEIGHTCUSTOM = "v59DanmakuFontWeightCustom"
+        const val KEY_V59_CASTAUDIOCHANNELSYNC = "v59CastAudioChannelSync"
+        const val KEY_V60_VIDEOADAPTIVECOLORENHANCE = "v60VideoAdaptiveColorEnhance"
+        const val KEY_V60_DANMAKUBORDERWEIGHTCUSTOM = "v60DanmakuBorderWeightCustom"
+        const val KEY_V60_SUBTITLEFONTSHADOWCUSTOM = "v60SubtitleFontShadowCustom"
+        const val KEY_V60_GESTUREMULTITOUCHCUSTOM = "v60GestureMultiTouchCustom"
+        const val KEY_V60_VIDEOCOLORTINTPRESET = "v60VideoColorTintPreset"
+        const val KEY_V60_DANMAKUSENDMAXLENGTHENHANCED = "v60DanmakuSendMaxLengthEnhanced"
+        const val KEY_V60_CASTVIDEOAUTORESOLUTION = "v60CastVideoAutoResolution"
+        const val KEY_V60_SUBTITLEBGCOLORPRESET = "v60SubtitleBgColorPreset"
+        const val KEY_V60_VIDEOCOLORLUTCUSTOM = "v60VideoColorLUTCustom"
+        const val KEY_V60_DANMAKUFONTSIZEPRESET = "v60DanmakuFontSizePreset"
+        const val KEY_V60_PLAYLISTAUTORESTORE = "v60PlaylistAutoRestore"
+        const val KEY_V60_GESTURECUSTOMSENSITIVITYENHANCED = "v60GestureCustomSensitivityEnhanced"
+        const val KEY_V60_VIDEOCOLORGRADINGPRESET = "v60VideoColorGradingPreset"
+        const val KEY_V60_DANMAKUBGCOLORPRESET = "v60DanmakuBgColorPreset"
+        const val KEY_V60_CASTAUDIOFADEMODECUSTOM = "v60CastAudioFadeModeCustom"
     
-        // v61-v70 New Features KEY constants
-        const val KEY_V61_VIDEOEDGEENHANCESTRENGTH = "v61VideoEdgeEnhanceStrength"
-        const val KEY_V61_DANMAKUCOLLISIONDETECTION = "v61DanmakuCollisionDetection"
-        const val KEY_V61_SUBTITLEPOSITIONOFFSETX = "v61SubtitlePositionOffsetX"
-        const val KEY_V61_GESTUREFLINGVELOCITY = "v61GestureFlingVelocity"
-        const val KEY_V61_VIDEOMOTIONCOMPENSATION = "v61VideoMotionCompensation"
-        const val KEY_V61_DANMAKUANIMATIONTYPE = "v61DanmakuAnimationType"
-        const val KEY_V61_CASTVIDEOBUFFERMS = "v61CastVideoBufferMs"
-        const val KEY_V61_SUBTITLEFONTSIZEMIN = "v61SubtitleFontSizeMin"
-        const val KEY_V61_VIDEOADAPTIVESHARPNESS = "v61VideoAdaptiveSharpness"
-        const val KEY_V61_DANMAKUFILTERBYLENGTH = "v61DanmakuFilterByLength"
-        const val KEY_V61_PLAYLISTSMARTFILTER = "v61PlaylistSmartFilter"
-        const val KEY_V61_GESTURESWIPECURVE = "v61GestureSwipeCurve"
-        const val KEY_V61_VIDEOCOLORBALANCERGB = "v61VideoColorBalanceRGB"
-        const val KEY_V61_DANMAKUFONTSIZEAUTOMIN = "v61DanmakuFontSizeAutoMin"
-        const val KEY_V61_CASTAUDIOBUFFERMS = "v61CastAudioBufferMs"
-        const val KEY_V62_VIDEOTEMPORALDENOISE = "v62VideoTemporalDenoise"
-        const val KEY_V62_DANMAKUSCROLLSPEEDCUSTOM = "v62DanmakuScrollSpeedCustom"
-        const val KEY_V62_SUBTITLEPOSITIONOFFSETY = "v62SubtitlePositionOffsetY"
-        const val KEY_V62_GESTURETAPFEEDBACK = "v62GestureTapFeedback"
-        const val KEY_V62_VIDEOADAPTIVENOISEGATE = "v62VideoAdaptiveNoiseGate"
-        const val KEY_V62_DANMAKUMERGEDISTANCECUSTOM = "v62DanmakuMergeDistanceCustom"
-        const val KEY_V62_CASTVIDEODECODEMODE = "v62CastVideoDecodeMode"
-        const val KEY_V62_SUBTITLEFONTSIZEMAX = "v62SubtitleFontSizeMax"
-        const val KEY_V62_VIDEOADAPTIVECONTRASTCURVE = "v62VideoAdaptiveContrastCurve"
-        const val KEY_V62_DANMAKUFILTERBYSPEED = "v62DanmakuFilterBySpeed"
-        const val KEY_V62_PLAYLISTAUTOGROUP = "v62PlaylistAutoGroup"
-        const val KEY_V62_GESTURESWIPEACCELERATION = "v62GestureSwipeAcceleration"
-        const val KEY_V62_VIDEOCOLORHUEROTATE = "v62VideoColorHueRotate"
-        const val KEY_V62_DANMAKUFONTSIZEAUTOMAX = "v62DanmakuFontSizeAutoMax"
-        const val KEY_V62_CASTAUDIODECODEMODE = "v62CastAudioDecodeMode"
-        const val KEY_V63_VIDEOSPATIALDENOISE = "v63VideoSpatialDenoise"
-        const val KEY_V63_DANMAKUTOPBOTTOMMARGIN = "v63DanmakuTopBottomMargin"
-        const val KEY_V63_SUBTITLEANIMATIONFADEIN = "v63SubtitleAnimationFadeIn"
-        const val KEY_V63_GESTURELONGPRESSVIBRATION = "v63GestureLongPressVibration"
-        const val KEY_V63_VIDEOADAPTIVESATURATIONCURVE = "v63VideoAdaptiveSaturationCurve"
-        const val KEY_V63_DANMAKUSENDQUEUESIZE = "v63DanmakuSendQueueSize"
-        const val KEY_V63_CASTVIDEORENDERMODE = "v63CastVideoRenderMode"
-        const val KEY_V63_SUBTITLEBGBORDERWIDTH = "v63SubtitleBgBorderWidth"
-        const val KEY_V63_VIDEOADAPTIVEGAMMACURVE = "v63VideoAdaptiveGammaCurve"
-        const val KEY_V63_DANMAKUFILTERBYTYPE = "v63DanmakuFilterByType"
-        const val KEY_V63_PLAYLISTAUTOMERGE = "v63PlaylistAutoMerge"
-        const val KEY_V63_GESTURESWIPEDECELERATIONCUSTOM = "v63GestureSwipeDecelerationCustom"
-        const val KEY_V63_VIDEOCOLORINVERT = "v63VideoColorInvert"
-        const val KEY_V63_DANMAKUHISTORYSORTORDER = "v63DanmakuHistorySortOrder"
-        const val KEY_V63_CASTAUDIORENDERMODE = "v63CastAudioRenderMode"
-        const val KEY_V64_VIDEOADAPTIVEEDGEPRESERVE = "v64VideoAdaptiveEdgePreserve"
-        const val KEY_V64_DANMAKUFIXEDPOSITION = "v64DanmakuFixedPosition"
-        const val KEY_V64_SUBTITLEANIMATIONFADEOUT = "v64SubtitleAnimationFadeOut"
-        const val KEY_V64_GESTUREMULTIFINGERGESTURE = "v64GestureMultiFingerGesture"
-        const val KEY_V64_VIDEOCOLORGRAYSCALE = "v64VideoColorGrayscale"
-        const val KEY_V64_DANMAKUSENDDELAY = "v64DanmakuSendDelay"
-        const val KEY_V64_CASTVIDEOPOSTPROCESS = "v64CastVideoPostProcess"
-        const val KEY_V64_SUBTITLEBGBORDERCOLOR = "v64SubtitleBgBorderColor"
-        const val KEY_V64_VIDEOADAPTIVEDETAILCURVE = "v64VideoAdaptiveDetailCurve"
-        const val KEY_V64_DANMAKUFILTERBYUSERLEVEL = "v64DanmakuFilterByUserLevel"
-        const val KEY_V64_PLAYLISTAUTOSPLIT = "v64PlaylistAutoSplit"
-        const val KEY_V64_GESTURESWIPEFRICTION = "v64GestureSwipeFriction"
-        const val KEY_V64_VIDEOCOLORSEPIASTRENGTH = "v64VideoColorSepiaStrength"
-        const val KEY_V64_DANMAKUHISTORYMAXITEMS = "v64DanmakuHistoryMaxItems"
-        const val KEY_V64_CASTAUDIOPOSTPROCESS = "v64CastAudioPostProcess"
-        const val KEY_V65_VIDEOADAPTIVEMOTIONBLUR = "v65VideoAdaptiveMotionBlur"
-        const val KEY_V65_DANMAKUSCROLLDIRECTION = "v65DanmakuScrollDirection"
-        const val KEY_V65_SUBTITLEANIMATIONSLIDE = "v65SubtitleAnimationSlide"
-        const val KEY_V65_GESTURECUSTOMGESTURE1 = "v65GestureCustomGesture1"
-        const val KEY_V65_VIDEOCOLORPOSTERIZELEVEL = "v65VideoColorPosterizeLevel"
-        const val KEY_V65_DANMAKUSENDPRIORITYLEVEL = "v65DanmakuSendPriorityLevel"
-        const val KEY_V65_CASTVIDEOHDR = "v65CastVideoHDR"
-        const val KEY_V65_SUBTITLEBGBLURSTRENGTH = "v65SubtitleBgBlurStrength"
-        const val KEY_V65_VIDEOADAPTIVELUMACURVE = "v65VideoAdaptiveLumaCurve"
-        const val KEY_V65_DANMAKUFILTERBYBADGE = "v65DanmakuFilterByBadge"
-        const val KEY_V65_PLAYLISTAUTODEDUPLICATE = "v65PlaylistAutoDeduplicate"
-        const val KEY_V65_GESTURESWIPESENSITIVITYCUSTOM = "v65GestureSwipeSensitivityCustom"
-        const val KEY_V65_VIDEOCOLORSOLARIZESTRENGTH = "v65VideoColorSolarizeStrength"
-        const val KEY_V65_DANMAKUHISTORYAUTOEXPORT = "v65DanmakuHistoryAutoExport"
-        const val KEY_V65_CASTAUDIOHDR = "v65CastAudioHDR"
-        const val KEY_V66_VIDEOADAPTIVEFRAMEBLEND = "v66VideoAdaptiveFrameBlend"
-        const val KEY_V66_DANMAKUTOPMARGIN = "v66DanmakuTopMargin"
-        const val KEY_V66_SUBTITLEANIMATIONBOUNCE = "v66SubtitleAnimationBounce"
-        const val KEY_V66_GESTURECUSTOMGESTURE2 = "v66GestureCustomGesture2"
-        const val KEY_V66_VIDEOCOLORVIGNETTE = "v66VideoColorVignette"
-        const val KEY_V66_DANMAKUSENDMAXLENGTHPERSECOND = "v66DanmakuSendMaxLengthPerSecond"
-        const val KEY_V66_CASTVIDEODOLBYVISION = "v66CastVideoDolbyVision"
-        const val KEY_V66_SUBTITLEBGBORDERRADIUS = "v66SubtitleBgBorderRadius"
-        const val KEY_V66_VIDEOADAPTIVECOLORCURVE = "v66VideoAdaptiveColorCurve"
-        const val KEY_V66_DANMAKUFILTERBYMEDAL = "v66DanmakuFilterByMedal"
-        const val KEY_V66_PLAYLISTAUTOSHUFFLEONSTART = "v66PlaylistAutoShuffleOnStart"
-        const val KEY_V66_GESTURESWIPEMOMENTUM = "v66GestureSwipeMomentum"
-        const val KEY_V66_VIDEOCOLORDUOTONE = "v66VideoColorDuotone"
-        const val KEY_V66_DANMAKUHISTORYSEARCHMODE = "v66DanmakuHistorySearchMode"
-        const val KEY_V66_CASTAUDIODOLBYATMOS = "v66CastAudioDolbyAtmos"
-        const val KEY_V67_VIDEOADAPTIVETEMPORALBLEND = "v67VideoAdaptiveTemporalBlend"
-        const val KEY_V67_DANMAKUBOTTOMMARGIN = "v67DanmakuBottomMargin"
-        const val KEY_V67_SUBTITLEANIMATIONZOOM = "v67SubtitleAnimationZoom"
-        const val KEY_V67_GESTURECUSTOMGESTURE3 = "v67GestureCustomGesture3"
-        const val KEY_V67_VIDEOCOLORTILTSHIFT = "v67VideoColorTiltShift"
-        const val KEY_V67_DANMAKUSENDRATEPERUSER = "v67DanmakuSendRatePerUser"
-        const val KEY_V67_CASTVIDEO3D = "v67CastVideo3D"
-        const val KEY_V67_SUBTITLEBGGRADIENTDIRECTION = "v67SubtitleBgGradientDirection"
-        const val KEY_V67_VIDEOADAPTIVESPATIALBLEND = "v67VideoAdaptiveSpatialBlend"
-        const val KEY_V67_DANMAKUFILTERBYLEVEL = "v67DanmakuFilterByLevel"
-        const val KEY_V67_PLAYLISTAUTOREPEATMODE = "v67PlaylistAutoRepeatMode"
-        const val KEY_V67_GESTURESWIPEBOUNCE = "v67GestureSwipeBounce"
-        const val KEY_V67_VIDEOCOLORCROSSPROCESS = "v67VideoColorCrossProcess"
-        const val KEY_V67_DANMAKUHISTORYEXPORTAUTO = "v67DanmakuHistoryExportAuto"
-        const val KEY_V67_CASTAUDIOSPATIAL = "v67CastAudioSpatial"
-        const val KEY_V68_VIDEOADAPTIVECOLORBALANCE = "v68VideoAdaptiveColorBalance"
-        const val KEY_V68_DANMAKULEFTRIGHTMARGIN = "v68DanmakuLeftRightMargin"
-        const val KEY_V68_SUBTITLEANIMATIONROTATE = "v68SubtitleAnimationRotate"
-        const val KEY_V68_GESTURECUSTOMGESTURE4 = "v68GestureCustomGesture4"
-        const val KEY_V68_VIDEOCOLORFISHEYE = "v68VideoColorFisheye"
-        const val KEY_V68_DANMAKUSENDMAXLENGTHPERMINUTE = "v68DanmakuSendMaxLengthPerMinute"
-        const val KEY_V68_CASTVIDEOSURROUND = "v68CastVideoSurround"
-        const val KEY_V68_SUBTITLEBGGRADIENTCOLOR = "v68SubtitleBgGradientColor"
-        const val KEY_V68_VIDEOADAPTIVENOISEREDUCE = "v68VideoAdaptiveNoiseReduce"
-        const val KEY_V68_DANMAKUFILTERBYTITLE = "v68DanmakuFilterByTitle"
-        const val KEY_V68_PLAYLISTAUTONEXTONEND = "v68PlaylistAutoNextOnEnd"
-        const val KEY_V68_GESTURESWIPEELASTIC = "v68GestureSwipeElastic"
-        const val KEY_V68_VIDEOCOLORCHROMATICABERRATION = "v68VideoColorChromaticAberration"
-        const val KEY_V68_DANMAKUHISTORYIMPORT = "v68DanmakuHistoryImport"
-        const val KEY_V68_CASTAUDIOSURROUND = "v68CastAudioSurround"
-        const val KEY_V69_VIDEOADAPTIVEDETAILENHANCE = "v69VideoAdaptiveDetailEnhance"
-        const val KEY_V69_DANMAKULINESPACING = "v69DanmakuLineSpacing"
-        const val KEY_V69_SUBTITLEANIMATIONTYPEWRITER = "v69SubtitleAnimationTypewriter"
-        const val KEY_V69_GESTURECUSTOMACTION5 = "v69GestureCustomAction5"
-        const val KEY_V69_VIDEOCOLORBARRELDISTORTION = "v69VideoColorBarrelDistortion"
-        const val KEY_V69_DANMAKUSENDMAXLENGTHTOTAL = "v69DanmakuSendMaxLengthTotal"
-        const val KEY_V69_CASTVIDEOMULTIVIEW = "v69CastVideoMultiView"
-        const val KEY_V69_SUBTITLEBGPADDINGX = "v69SubtitleBgPaddingX"
-        const val KEY_V69_VIDEOADAPTIVECHROMAENHANCE = "v69VideoAdaptiveChromaEnhance"
-        const val KEY_V69_DANMAKUFILTERBYCONTENT = "v69DanmakuFilterByContent"
-        const val KEY_V69_PLAYLISTAUTORESUME = "v69PlaylistAutoResume"
-        const val KEY_V69_GESTURESWIPERUBBERBAND = "v69GestureSwipeRubberBand"
-        const val KEY_V69_VIDEOCOLORPINCUSHION = "v69VideoColorPincushion"
-        const val KEY_V69_DANMAKUHISTORYCLEAR = "v69DanmakuHistoryClear"
-        const val KEY_V69_CASTAUDIOMULTIVIEW = "v69CastAudioMultiView"
-        const val KEY_V70_VIDEOADAPTIVELUMAENHANCE = "v70VideoAdaptiveLumaEnhance"
-        const val KEY_V70_DANMAKUCHARACTERSPACING = "v70DanmakuCharacterSpacing"
-        const val KEY_V70_SUBTITLEANIMATIONHIGHLIGHT = "v70SubtitleAnimationHighlight"
-        const val KEY_V70_GESTURECUSTOMACTION6 = "v70GestureCustomAction6"
-        const val KEY_V70_VIDEOCOLORWAVEDISTORTION = "v70VideoColorWaveDistortion"
-        const val KEY_V70_DANMAKUSENDMAXLENGTHVIP = "v70DanmakuSendMaxLengthVIP"
-        const val KEY_V70_CASTVIDEOMULTISCREEN = "v70CastVideoMultiScreen"
-        const val KEY_V70_SUBTITLEBGPADDINGY = "v70SubtitleBgPaddingY"
-        const val KEY_V70_VIDEOADAPTIVECOLORENHANCECURVE = "v70VideoAdaptiveColorEnhanceCurve"
-        const val KEY_V70_DANMAKUFILTERBYGIFT = "v70DanmakuFilterByGift"
-        const val KEY_V70_PLAYLISTAUTOCREATE = "v70PlaylistAutoCreate"
-        const val KEY_V70_GESTURESWIPESPRING = "v70GestureSwipeSpring"
-        const val KEY_V70_VIDEOCOLORGLITCH = "v70VideoColorGlitch"
-        const val KEY_V70_DANMAKUHISTORYSTATS = "v70DanmakuHistoryStats"
-        const val KEY_V70_CASTAUDIOMULTISCREEN = "v70CastAudioMultiScreen"
-    }        // v61-v70 New Features KEY constants
+        // v61-v70 New Unique Features KEY constants
         const val KEY_V61_VIDEOEDGEENHANCESTRENGTH = "v61VideoEdgeEnhanceStrength"
         const val KEY_V61_DANMAKUCOLLISIONDETECTION = "v61DanmakuCollisionDetection"
         const val KEY_V61_SUBTITLEPOSITIONOFFSETX = "v61SubtitlePositionOffsetX"
