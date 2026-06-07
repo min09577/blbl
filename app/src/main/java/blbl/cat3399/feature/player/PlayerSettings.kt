@@ -1802,6 +1802,15 @@ internal fun PlayerActivity.showv39VideoSmoothingLevelDialog() {
         .option("10") { BiliClient.prefs.v39VideoSmoothingLevel = 10 }
         .show()
 }
+// 39.13: 弹幕等级图标
+internal fun PlayerActivity.showv39DanmakuSenderLevelIconToggle() {
+    val current = BiliClient.prefs.v39DanmakuSenderLevelIcon
+    AppPopup.Builder(this)
+        .title("弹幕等级图标")
+        .option(switchText(current)) { BiliClient.prefs.v39DanmakuSenderLevelIcon = !current }
+        .show()
+}
+
 
 
 
