@@ -1762,6 +1762,11 @@ class AppPrefs(context: Context) {
     var v31DanmakuMergeOverlap: Boolean
         get() = prefs.getBoolean(KEY_V31_DANMAKU_MERGE_OVERLAP, false)
         set(value) = prefs.edit().putBoolean(KEY_V31_DANMAKU_MERGE_OVERLAP, value).apply()
+    // v32.3: 音频声道交换
+    var v32AudioChannelSwap: Boolean
+        get() = prefs.getBoolean(KEY_V32_AUDIO_CHANNEL_SWAP, false)
+        set(value) = prefs.edit().putBoolean(KEY_V32_AUDIO_CHANNEL_SWAP, value).apply()
+
     // v32.2: 弹幕雨模式
     var v32DanmakuRainMode: Boolean
         get() = prefs.getBoolean(KEY_V32_DANMAKU_RAIN_MODE, false)
@@ -2988,6 +2993,7 @@ class AppPrefs(context: Context) {
         /**
          * 0.1.22 生效，3 个版本后移除兼容：
          * 兼容历史分数档位（1/6、1/5、1/4、1/3、2/5、1/2、3/5、2/3、3/4、4/5、1），
+        private const val KEY_V32_AUDIO_CHANNEL_SWAP = "v32_audio_channel_swap"
          * 统一按新的 10% 档位四舍五入吸收到规范值。
          */
         fun normalizeLegacyDanmakuAreaCompat(value: Float): Float {

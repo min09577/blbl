@@ -602,6 +602,15 @@ internal fun PlayerActivity.showv32DanmakuRainModeToggle() {
         .option(switchText(current)) { BiliClient.prefs.v32DanmakuRainMode = !current }
         .show()
 }
+// 32.3: 音频声道交换
+internal fun PlayerActivity.showv32AudioChannelSwapToggle() {
+    val current = BiliClient.prefs.v32AudioChannelSwap
+    AppPopup.Builder(this)
+        .title("音频声道交换")
+        .option(switchText(current)) { BiliClient.prefs.v32AudioChannelSwap = !current }
+        .show()
+}
+
 
 
 
