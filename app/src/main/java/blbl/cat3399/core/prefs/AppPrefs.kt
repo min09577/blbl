@@ -2200,6 +2200,11 @@ class AppPrefs(context: Context) {
     var v39PlaybackNetworkAdapt: Boolean
         get() = prefs.getBoolean(KEY_V39_PLAYBACK_NETWORK_ADAPT, false)
         set(value) = prefs.edit().putBoolean(KEY_V39_PLAYBACK_NETWORK_ADAPT, value).apply()
+    // v39.9: 弹幕拖影效果
+    var v39DanmakuGhostTrail: Boolean
+        get() = prefs.getBoolean(KEY_V39_DANMAKU_GHOST_TRAIL, false)
+        set(value) = prefs.edit().putBoolean(KEY_V39_DANMAKU_GHOST_TRAIL, value).apply()
+
 
 
 
@@ -4379,6 +4384,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V39_SUBTITLE_ANIMATION_TYPE = "v39_subtitle_animation_type"
         private const val KEY_V39_VIDEO_DETAIL_INFO_BAR = "v39_video_detail_info_bar"
         private const val KEY_V39_PLAYBACK_NETWORK_ADAPT = "v39_playback_network_adapt"
+        private const val KEY_V39_DANMAKU_GHOST_TRAIL = "v39_danmaku_ghost_trail"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
