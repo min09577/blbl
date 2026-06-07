@@ -1910,6 +1910,11 @@ class AppPrefs(context: Context) {
     var v33AudioBassBoost: Int
         get() = prefs.getInt(KEY_V33_AUDIO_BASS_BOOST, 0)
         set(value) = prefs.edit().putInt(KEY_V33_AUDIO_BASS_BOOST, value).apply()
+    // v34.14: 字幕自定义颜色
+    var v34SubtitleTextColorCustom: Boolean
+        get() = prefs.getBoolean(KEY_V34_SUBTITLE_TEXT_COLOR_CUSTOM, false)
+        set(value) = prefs.edit().putBoolean(KEY_V34_SUBTITLE_TEXT_COLOR_CUSTOM, value).apply()
+
     // v34.13: 弹幕最小字号
     var v34DanmakuFontSizeMin: Int
         get() = prefs.getInt(KEY_V34_DANMAKU_FONT_SIZE_MIN, 0)
@@ -3402,6 +3407,7 @@ class AppPrefs(context: Context) {
                     append(alphabet[random.nextInt(alphabet.length)])
                 }
             }
+        private const val KEY_V34_SUBTITLE_TEXT_COLOR_CUSTOM = "v34_subtitle_text_color_custom"
         }
 
         private fun isValidUuid(text: String): Boolean {
