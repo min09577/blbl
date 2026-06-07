@@ -118,7 +118,7 @@ This project is based on open-source software. All rights belong to the original
 ## 📋 更新日志 | Changelog | 変更履歴 | 변경 로그
 
 ### 最新版本 | Latest Version | 最新バージョン | 최신 버전
-- **v70.15** - 2026-06-05
+- **v80.15** - 2026-06-07
 
 ---
 
@@ -10354,6 +10354,947 @@ This project is based on open-source software. All rights belong to the original
 - ✅ キャスト字幕最終2
 - ✅ 캐스트 자막 최종2
 
+
+### v71.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v71.1-v71.15 功能列表
+- ✅ Video Stabilization Strength, Danmaku Collision Avoidance, Subtitle Word Wrap Mode, Gesture Sensitivity Profile, Cast Video Stabilization, Playlist Auto Recover, Cache Integrity Check, Progress Bar Chapter Marks, Volume Normalization Auto, History Auto Sync, Playback Resume From Bookmark, Screenshot Auto Annotate, Video HDR10+, Danmaku Layer Management, Subtitle Line Spacing Custom
+
+### v71.1 视频防抖强度 | Video Stabilization Strength | ビデオ手ブレ補正強度 | 비디오 안정화 강도
+- ✅ 视频防抖强度
+- ✅ Video Stabilization Strength
+- ✅ ビデオ手ブレ補正強度
+- ✅ 비디오 안정화 강도
+
+### v71.2 弹幕避碰 | Danmaku Collision Avoidance | コメント衝突回避 | 댓글 충돌 회피
+- ✅ 弹幕避碰
+- ✅ Danmaku Collision Avoidance
+- ✅ コメント衝突回避
+- ✅ 댓글 충돌 회피
+
+### v71.3 字幕换行模式 | Subtitle Word Wrap Mode | 字幕折り返しモード | 자막 줄 바꿈 모드
+- ✅ 字幕换行模式
+- ✅ Subtitle Word Wrap Mode
+- ✅ 字幕折り返しモード
+- ✅ 자막 줄 바꿈 모드
+
+### v71.4 手势灵敏度配置 | Gesture Sensitivity Profile | ジェスチャー感度プロファイル | 제스처 감도 프로필
+- ✅ 手势灵敏度配置
+- ✅ Gesture Sensitivity Profile
+- ✅ ジェスチャー感度プロファイル
+- ✅ 제스처 감도 프로필
+
+### v71.5 投射视频防抖 | Cast Video Stabilization | キャストビデオ手ブレ補正 | 캐스트 비디오 안정화
+- ✅ 投射视频防抖
+- ✅ Cast Video Stabilization
+- ✅ キャストビデオ手ブレ補正
+- ✅ 캐스트 비디오 안정화
+
+### v71.6 播放列表自动恢复 | Playlist Auto Recover | プレイリスト自動復元 | 재생 목록 자동 복구
+- ✅ 播放列表自动恢复
+- ✅ Playlist Auto Recover
+- ✅ プレイリスト自動復元
+- ✅ 재생 목록 자동 복구
+
+### v71.7 缓存完整性检查 | Cache Integrity Check | キャッシュ整合性チェック | 캐시 무결성 검사
+- ✅ 缓存完整性检查
+- ✅ Cache Integrity Check
+- ✅ キャッシュ整合性チェック
+- ✅ 캐시 무결성 검사
+
+### v71.8 进度条章节标记 | Progress Bar Chapter Marks | プログレスバーチャプターマーク | 진행 바 챕터 마크
+- ✅ 进度条章节标记
+- ✅ Progress Bar Chapter Marks
+- ✅ プログレスバーチャプターマーク
+- ✅ 진행 바 챕터 마크
+
+### v71.9 音量自动标准化 | Volume Normalization Auto | 音量自動正規化 | 볼륨 자동 정규화
+- ✅ 音量自动标准化
+- ✅ Volume Normalization Auto
+- ✅ 音量自動正規化
+- ✅ 볼륨 자동 정규화
+
+### v71.10 历史记录自动同步 | History Auto Sync | 履歴自動同期 | 기록 자동 동기화
+- ✅ 历史记录自动同步
+- ✅ History Auto Sync
+- ✅ 履歴自動同期
+- ✅ 기록 자동 동기화
+
+### v71.11 从书签恢复播放 | Playback Resume From Bookmark | ブックマークから再生再開 | 북마크에서 재생 재개
+- ✅ 从书签恢复播放
+- ✅ Playback Resume From Bookmark
+- ✅ ブックマークから再生再開
+- ✅ 북마크에서 재생 재개
+
+### v71.12 截图自动标注 | Screenshot Auto Annotate | スクリーンショット自動注釈 | 스크린샷 자동 주석
+- ✅ 截图自动标注
+- ✅ Screenshot Auto Annotate
+- ✅ スクリーンショット自動注釈
+- ✅ 스크린샷 자동 주석
+
+### v71.13 视频 HDR10+ | Video HDR10+ | ビデオ HDR10+ | 비디오 HDR10+
+- ✅ 视频 HDR10+
+- ✅ Video HDR10+
+- ✅ ビデオ HDR10+
+- ✅ 비디오 HDR10+
+
+### v71.14 弹幕图层管理 | Danmaku Layer Management | コメントレイヤー管理 | 댓글 레이어 관리
+- ✅ 弹幕图层管理
+- ✅ Danmaku Layer Management
+- ✅ コメントレイヤー管理
+- ✅ 댓글 레이어 관리
+
+### v71.15 字幕行距自定义 | Subtitle Line Spacing Custom | 字幕行間カスタム | 자막 줄 간격 사용자 정의
+- ✅ 字幕行距自定义
+- ✅ Subtitle Line Spacing Custom
+- ✅ 字幕行間カスタム
+- ✅ 자막 줄 간격 사용자 정의
+
+### v72.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v72.1-v72.15 功能列表
+- ✅ Video Frame Rate Convert, Danmaku Priority System, Subtitle Char Spacing Custom, Gesture Dead Zone Custom, Cast Audio Normalization, Playlist Auto Recover Mode, Cache Deduplication, Progress Bar Buffer Indicator, Volume Compression Strength, History Auto Backup, Playback Auto Bookmark, Screenshot Auto Share, Video Dolby Vision Profile, Danmaku Animation Effects, Subtitle BG Gradient Custom
+
+### v72.1 视频帧率转换 | Video Frame Rate Convert | ビデオフレームレート変換 | 비디오 프레임레이트 변환
+- ✅ 视频帧率转换
+- ✅ Video Frame Rate Convert
+- ✅ ビデオフレームレート変換
+- ✅ 비디오 프레임레이트 변환
+
+### v72.2 弹幕优先级系统 | Danmaku Priority System | コメント優先度システム | 댓글 우선순위 시스템
+- ✅ 弹幕优先级系统
+- ✅ Danmaku Priority System
+- ✅ コメント優先度システム
+- ✅ 댓글 우선순위 시스템
+
+### v72.3 字幕字符间距自定义 | Subtitle Char Spacing Custom | 字幕文字間隔カスタム | 자막 문자 간격 사용자 정의
+- ✅ 字幕字符间距自定义
+- ✅ Subtitle Char Spacing Custom
+- ✅ 字幕文字間隔カスタム
+- ✅ 자막 문자 간격 사용자 정의
+
+### v72.4 手势死区自定义 | Gesture Dead Zone Custom | ジェスチャーデッドゾーンカスタム | 제스처 데드존 사용자 정의
+- ✅ 手势死区自定义
+- ✅ Gesture Dead Zone Custom
+- ✅ ジェスチャーデッドゾーンカスタム
+- ✅ 제스처 데드존 사용자 정의
+
+### v72.5 投射音频标准化 | Cast Audio Normalization | キャスト音声正規化 | 캐스트 오디오 정규화
+- ✅ 投射音频标准化
+- ✅ Cast Audio Normalization
+- ✅ キャスト音声正規化
+- ✅ 캐스트 오디오 정규화
+
+### v72.6 播放列表自动恢复模式 | Playlist Auto Recover Mode | プレイリスト自動復元モード | 재생 목록 자동 복구 모드
+- ✅ 播放列表自动恢复模式
+- ✅ Playlist Auto Recover Mode
+- ✅ プレイリスト自動復元モード
+- ✅ 재생 목록 자동 복구 모드
+
+### v72.7 缓存去重 | Cache Deduplication | キャッシュ重複排除 | 캐시 중복 제거
+- ✅ 缓存去重
+- ✅ Cache Deduplication
+- ✅ キャッシュ重複排除
+- ✅ 캐시 중복 제거
+
+### v72.8 进度条缓冲指示器 | Progress Bar Buffer Indicator | プログレスバーバッファインジケーター | 진행 바 버퍼 표시기
+- ✅ 进度条缓冲指示器
+- ✅ Progress Bar Buffer Indicator
+- ✅ プログレスバーバッファインジケーター
+- ✅ 진행 바 버퍼 표시기
+
+### v72.9 音量压缩强度 | Volume Compression Strength | 音量圧縮強度 | 볼륨 압축 강도
+- ✅ 音量压缩强度
+- ✅ Volume Compression Strength
+- ✅ 音量圧縮強度
+- ✅ 볼륨 압축 강도
+
+### v72.10 历史记录自动备份 | History Auto Backup | 履歴自動バックアップ | 기록 자동 백업
+- ✅ 历史记录自动备份
+- ✅ History Auto Backup
+- ✅ 履歴自動バックアップ
+- ✅ 기록 자동 백업
+
+### v72.11 播放自动书签 | Playback Auto Bookmark | 再生自動ブックマーク | 재생 자동 북마크
+- ✅ 播放自动书签
+- ✅ Playback Auto Bookmark
+- ✅ 再生自動ブックマーク
+- ✅ 재생 자동 북마크
+
+### v72.12 截图自动分享 | Screenshot Auto Share | スクリーンショット自動共有 | 스크린샷 자동 공유
+- ✅ 截图自动分享
+- ✅ Screenshot Auto Share
+- ✅ スクリーンショット自動共有
+- ✅ 스크린샷 자동 공유
+
+### v72.13 视频杜比视界配置 | Video Dolby Vision Profile | ビデオドルビービジョンプロファイル | 비디오 돌비 비전 프로필
+- ✅ 视频杜比视界配置
+- ✅ Video Dolby Vision Profile
+- ✅ ビデオドルビービジョンプロファイル
+- ✅ 비디오 돌비 비전 프로필
+
+### v72.14 弹幕动画效果 | Danmaku Animation Effects | コメントアニメーション効果 | 댓글 애니메이션 효과
+- ✅ 弹幕动画效果
+- ✅ Danmaku Animation Effects
+- ✅ コメントアニメーション効果
+- ✅ 댓글 애니메이션 효과
+
+### v72.15 字幕背景渐变自定义 | Subtitle BG Gradient Custom | 字幕背景グラデーションカスタム | 자막 배경 그라데이션 사용자 정의
+- ✅ 字幕背景渐变自定义
+- ✅ Subtitle BG Gradient Custom
+- ✅ 字幕背景グラデーションカスタム
+- ✅ 자막 배경 그라데이션 사용자 정의
+
+### v73.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v73.1-v73.15 功能列表
+- ✅ Video Color Space Convert, Danmaku Scroll Direction Custom, Subtitle Animation Custom, Gesture Feedback Mode, Cast Video Color Space, Playlist Auto Recover Priority, Cache Verification Mode, Progress Bar Thumb Style, Volume Expansion Strength, History Auto Sync Mode, Playback Auto Bookmark Mode, Screenshot Auto Edit, Video Alpha Channel, Danmaku Font Weight Adaptive, Subtitle Outline Effects
+
+### v73.1 视频色彩空间转换 | Video Color Space Convert | ビデオ色空間変換 | 비디오 색 공간 변환
+- ✅ 视频色彩空间转换
+- ✅ Video Color Space Convert
+- ✅ ビデオ色空間変換
+- ✅ 비디오 색 공간 변환
+
+### v73.2 弹幕滚动方向自定义 | Danmaku Scroll Direction Custom | コメントスクロール方向カスタム | 댓글 스크롤 방향 사용자 정의
+- ✅ 弹幕滚动方向自定义
+- ✅ Danmaku Scroll Direction Custom
+- ✅ コメントスクロール方向カスタム
+- ✅ 댓글 스크롤 방향 사용자 정의
+
+### v73.3 字幕动画自定义 | Subtitle Animation Custom | 字幕アニメーションカスタム | 자막 애니메이션 사용자 정의
+- ✅ 字幕动画自定义
+- ✅ Subtitle Animation Custom
+- ✅ 字幕アニメーションカスタム
+- ✅ 자막 애니메이션 사용자 정의
+
+### v73.4 手势反馈模式 | Gesture Feedback Mode | ジェスチャーフィードバックモード | 제스처 피드백 모드
+- ✅ 手势反馈模式
+- ✅ Gesture Feedback Mode
+- ✅ ジェスチャーフィードバックモード
+- ✅ 제스처 피드백 모드
+
+### v73.5 投射视频色彩空间 | Cast Video Color Space | キャストビデオ色空間 | 캐스트 비디오 색 공간
+- ✅ 投射视频色彩空间
+- ✅ Cast Video Color Space
+- ✅ キャストビデオ色空間
+- ✅ 캐스트 비디오 색 공간
+
+### v73.6 播放列表自动恢复优先级 | Playlist Auto Recover Priority | プレイリスト自動復元優先度 | 재생 목록 자동 복구 우선순위
+- ✅ 播放列表自动恢复优先级
+- ✅ Playlist Auto Recover Priority
+- ✅ プレイリスト自動復元優先度
+- ✅ 재생 목록 자동 복구 우선순위
+
+### v73.7 缓存验证模式 | Cache Verification Mode | キャッシュ検証モード | 캐시 검증 모드
+- ✅ 缓存验证模式
+- ✅ Cache Verification Mode
+- ✅ キャッシュ検証モード
+- ✅ 캐시 검증 모드
+
+### v73.8 进度条滑块样式 | Progress Bar Thumb Style | プログレスバーサムスタイル | 진행 바 썸 스타일
+- ✅ 进度条滑块样式
+- ✅ Progress Bar Thumb Style
+- ✅ プログレスバーサムスタイル
+- ✅ 진행 바 썸 스타일
+
+### v73.9 音量扩展强度 | Volume Expansion Strength | 音量拡張強度 | 볼륨 확장 강도
+- ✅ 音量扩展强度
+- ✅ Volume Expansion Strength
+- ✅ 音量拡張強度
+- ✅ 볼륨 확장 강도
+
+### v73.10 历史记录自动同步模式 | History Auto Sync Mode | 履歴自動同期モード | 기록 자동 동기화 모드
+- ✅ 历史记录自动同步模式
+- ✅ History Auto Sync Mode
+- ✅ 履歴自動同期モード
+- ✅ 기록 자동 동기화 모드
+
+### v73.11 播放自动书签模式 | Playback Auto Bookmark Mode | 再生自動ブックマークモード | 재생 자동 북마크 모드
+- ✅ 播放自动书签模式
+- ✅ Playback Auto Bookmark Mode
+- ✅ 再生自動ブックマークモード
+- ✅ 재생 자동 북마크 모드
+
+### v73.12 截图自动编辑 | Screenshot Auto Edit | スクリーンショット自動編集 | 스크린샷 자동 편집
+- ✅ 截图自动编辑
+- ✅ Screenshot Auto Edit
+- ✅ スクリーンショット自動編集
+- ✅ 스크린샷 자동 편집
+
+### v73.13 视频Alpha通道 | Video Alpha Channel | ビデオアルファチャンネル | 비디오 알파 채널
+- ✅ 视频Alpha通道
+- ✅ Video Alpha Channel
+- ✅ ビデオアルファチャンネル
+- ✅ 비디오 알파 채널
+
+### v73.14 弹幕字体粗细自适应 | Danmaku Font Weight Adaptive | コメントフォント太さ適応 | 댓글 글꼴 두께 적응
+- ✅ 弹幕字体粗细自适应
+- ✅ Danmaku Font Weight Adaptive
+- ✅ コメントフォント太さ適応
+- ✅ 댓글 글꼴 두께 적응
+
+### v73.15 字幕描边效果 | Subtitle Outline Effects | 字幕アウトライン効果 | 자막 외곽선 효과
+- ✅ 字幕描边效果
+- ✅ Subtitle Outline Effects
+- ✅ 字幕アウトライン効果
+- ✅ 자막 외곽선 효과
+
+### v74.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v74.1-v74.15 功能列表
+- ✅ Video Depth Of Field, Danmaku Background Blur, Subtitle Shadow Effects, Gesture Animation Mode, Cast Video HDR10+, Playlist Auto Recover Time, Cache Compression Mode, Progress Bar Seek Preview, Volume Equalizer Preset, History Auto Backup Mode, Playback Auto Pause On Focus, Screenshot Auto Crop, Video Bokeh Effect, Danmaku Shadow Effects, Subtitle Glow Effects
+
+### v74.1 视频景深 | Video Depth Of Field | ビデオ被写界深度 | 비디오 피사계 심도
+- ✅ 视频景深
+- ✅ Video Depth Of Field
+- ✅ ビデオ被写界深度
+- ✅ 비디오 피사계 심도
+
+### v74.2 弹幕背景模糊 | Danmaku Background Blur | コメント背景ブラー | 댓글 배경 블러
+- ✅ 弹幕背景模糊
+- ✅ Danmaku Background Blur
+- ✅ コメント背景ブラー
+- ✅ 댓글 배경 블러
+
+### v74.3 字幕阴影效果 | Subtitle Shadow Effects | 字幕シャドウ効果 | 자막 그림자 효과
+- ✅ 字幕阴影效果
+- ✅ Subtitle Shadow Effects
+- ✅ 字幕シャドウ効果
+- ✅ 자막 그림자 효과
+
+### v74.4 手势动画模式 | Gesture Animation Mode | ジェスチャーアニメーションモード | 제스처 애니메이션 모드
+- ✅ 手势动画模式
+- ✅ Gesture Animation Mode
+- ✅ ジェスチャーアニメーションモード
+- ✅ 제스처 애니메이션 모드
+
+### v74.5 投射视频HDR10+ | Cast Video HDR10+ | キャストビデオHDR10+ | 캐스트 비디오 HDR10+
+- ✅ 投射视频HDR10+
+- ✅ Cast Video HDR10+
+- ✅ キャストビデオHDR10+
+- ✅ 캐스트 비디오 HDR10+
+
+### v74.6 播放列表自动恢复时间 | Playlist Auto Recover Time | プレイリスト自動復元時間 | 재생 목록 자동 복구 시간
+- ✅ 播放列表自动恢复时间
+- ✅ Playlist Auto Recover Time
+- ✅ プレイリスト自動復元時間
+- ✅ 재생 목록 자동 복구 시간
+
+### v74.7 缓存压缩模式 | Cache Compression Mode | キャッシュ圧縮モード | 캐시 압축 모드
+- ✅ 缓存压缩模式
+- ✅ Cache Compression Mode
+- ✅ キャッシュ圧縮モード
+- ✅ 캐시 압축 모드
+
+### v74.8 进度条跳转预览 | Progress Bar Seek Preview | プログレスバーシークプレビュー | 진행 바 탐색 미리보기
+- ✅ 进度条跳转预览
+- ✅ Progress Bar Seek Preview
+- ✅ プログレスバーシークプレビュー
+- ✅ 진행 바 탐색 미리보기
+
+### v74.9 音量均衡器预设 | Volume Equalizer Preset | 音量イコライザープリセット | 볼륨 이퀄라이저 프리셋
+- ✅ 音量均衡器预设
+- ✅ Volume Equalizer Preset
+- ✅ 音量イコライザープリセット
+- ✅ 볼륨 이퀄라이저 프리셋
+
+### v74.10 历史记录自动备份模式 | History Auto Backup Mode | 履歴自動バックアップモード | 기록 자동 백업 모드
+- ✅ 历史记录自动备份模式
+- ✅ History Auto Backup Mode
+- ✅ 履歴自動バックアップモード
+- ✅ 기록 자동 백업 모드
+
+### v74.11 焦点变化时自动暂停 | Playback Auto Pause On Focus | フォーカス変更時自動一時停止 | 포커스 변경 시 자동 일시정지
+- ✅ 焦点变化时自动暂停
+- ✅ Playback Auto Pause On Focus
+- ✅ フォーカス変更時自動一時停止
+- ✅ 포커스 변경 시 자동 일시정지
+
+### v74.12 截图自动裁剪 | Screenshot Auto Crop | スクリーンショット自動クロップ | 스크린샷 자동 크롭
+- ✅ 截图自动裁剪
+- ✅ Screenshot Auto Crop
+- ✅ スクリーンショット自動クロップ
+- ✅ 스크린샷 자동 크롭
+
+### v74.13 视频虚化效果 | Video Bokeh Effect | ビデオボケ効果 | 비디오 보케 효과
+- ✅ 视频虚化效果
+- ✅ Video Bokeh Effect
+- ✅ ビデオボケ効果
+- ✅ 비디오 보케 효과
+
+### v74.14 弹幕阴影效果 | Danmaku Shadow Effects | コメントシャドウ効果 | 댓글 그림자 효과
+- ✅ 弹幕阴影效果
+- ✅ Danmaku Shadow Effects
+- ✅ コメントシャドウ効果
+- ✅ 댓글 그림자 효과
+
+### v74.15 字幕发光效果 | Subtitle Glow Effects | 字幕グロー効果 | 자막 글로우 효과
+- ✅ 字幕发光效果
+- ✅ Subtitle Glow Effects
+- ✅ 字幕グロー効果
+- ✅ 자막 글로우 효과
+
+### v75.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v75.1-v75.15 功能列表
+- ✅ Video Chroma Key, Danmaku Glow Effects, Subtitle Border Effects, Gesture Sound Feedback, Cast Audio Spatial, Playlist Auto Recover Source, Cache Encryption Mode, Progress Bar Chapter Preview, Volume Spatial Audio, History Auto Restore, Playback Auto Resume On Return, Screenshot Auto Filter, Video Frame Blend, Danmaku Border Effects, Subtitle Animation Speed
+
+### v75.1 视频色度键 | Video Chroma Key | ビデオクロマキー | 비디오 크로마 키
+- ✅ 视频色度键
+- ✅ Video Chroma Key
+- ✅ ビデオクロマキー
+- ✅ 비디오 크로마 키
+
+### v75.2 弹幕发光效果 | Danmaku Glow Effects | コメントグロー効果 | 댓글 글로우 효과
+- ✅ 弹幕发光效果
+- ✅ Danmaku Glow Effects
+- ✅ コメントグロー効果
+- ✅ 댓글 글로우 효과
+
+### v75.3 字幕边框效果 | Subtitle Border Effects | 字幕ボーダー効果 | 자막 테두리 효과
+- ✅ 字幕边框效果
+- ✅ Subtitle Border Effects
+- ✅ 字幕ボーダー効果
+- ✅ 자막 테두리 효과
+
+### v75.4 手势声音反馈 | Gesture Sound Feedback | ジェスチャー音声フィードバック | 제스처 소리 피드백
+- ✅ 手势声音反馈
+- ✅ Gesture Sound Feedback
+- ✅ ジェスチャー音声フィードバック
+- ✅ 제스처 소리 피드백
+
+### v75.5 投射音频空间音效 | Cast Audio Spatial | キャスト音声空間音響 | 캐스트 오디오 공간 음향
+- ✅ 投射音频空间音效
+- ✅ Cast Audio Spatial
+- ✅ キャスト音声空間音響
+- ✅ 캐스트 오디오 공간 음향
+
+### v75.6 播放列表自动恢复来源 | Playlist Auto Recover Source | プレイリスト自動復元ソース | 재생 목록 자동 복구 소스
+- ✅ 播放列表自动恢复来源
+- ✅ Playlist Auto Recover Source
+- ✅ プレイリスト自動復元ソース
+- ✅ 재생 목록 자동 복구 소스
+
+### v75.7 缓存加密模式 | Cache Encryption Mode | キャッシュ暗号化モード | 캐시 암호화 모드
+- ✅ 缓存加密模式
+- ✅ Cache Encryption Mode
+- ✅ キャッシュ暗号化モード
+- ✅ 캐시 암호화 모드
+
+### v75.8 进度条章节预览 | Progress Bar Chapter Preview | プログレスバーチャプタープレビュー | 진행 바 챕터 미리보기
+- ✅ 进度条章节预览
+- ✅ Progress Bar Chapter Preview
+- ✅ プログレスバーチャプタープレビュー
+- ✅ 진행 바 챕터 미리보기
+
+### v75.9 音量空间音效 | Volume Spatial Audio | 音量空間音響 | 볼륨 공간 음향
+- ✅ 音量空间音效
+- ✅ Volume Spatial Audio
+- ✅ 音量空間音響
+- ✅ 볼륨 공간 음향
+
+### v75.10 历史记录自动恢复 | History Auto Restore | 履歴自動復元 | 기록 자동 복원
+- ✅ 历史记录自动恢复
+- ✅ History Auto Restore
+- ✅ 履歴自動復元
+- ✅ 기록 자동 복원
+
+### v75.11 返回时自动恢复播放 | Playback Auto Resume On Return | 復帰時自動再生再開 | 복귀 시 자동 재생 재개
+- ✅ 返回时自动恢复播放
+- ✅ Playback Auto Resume On Return
+- ✅ 復帰時自動再生再開
+- ✅ 복귀 시 자동 재생 재개
+
+### v75.12 截图自动滤镜 | Screenshot Auto Filter | スクリーンショット自動フィルター | 스크린샷 자동 필터
+- ✅ 截图自动滤镜
+- ✅ Screenshot Auto Filter
+- ✅ スクリーンショット自動フィルター
+- ✅ 스크린샷 자동 필터
+
+### v75.13 视频帧混合 | Video Frame Blend | ビデオフレームブレンド | 비디오 프레임 블렌드
+- ✅ 视频帧混合
+- ✅ Video Frame Blend
+- ✅ ビデオフレームブレンド
+- ✅ 비디오 프레임 블렌드
+
+### v75.14 弹幕边框效果 | Danmaku Border Effects | コメントボーダー効果 | 댓글 테두리 효과
+- ✅ 弹幕边框效果
+- ✅ Danmaku Border Effects
+- ✅ コメントボーダー効果
+- ✅ 댓글 테두리 효과
+
+### v75.15 字幕动画速度 | Subtitle Animation Speed | 字幕アニメーション速度 | 자막 애니메이션 속도
+- ✅ 字幕动画速度
+- ✅ Subtitle Animation Speed
+- ✅ 字幕アニメーション速度
+- ✅ 자막 애니메이션 속도
+
+### v76.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v76.1-v76.15 功能列表
+- ✅ Video Color Grading Preset, Danmaku Font Style Custom, Subtitle Font Style Custom, Gesture Vibration Feedback, Cast Video Dolby Atmos, Playlist Auto Recover Strategy, Cache Location Mode, Progress Bar Buffer Color, Volume 3D Audio, History Auto Sync Source, Playback Auto Skip Silence, Screenshot Auto Annotate Mode, Video LUT Custom, Danmaku Font Custom Path, Subtitle Font Weight Custom
+
+### v76.1 视频调色预设 | Video Color Grading Preset | ビデオカラーグレーディングプリセット | 비디오 컬러 그레이딩 프리셋
+- ✅ 视频调色预设
+- ✅ Video Color Grading Preset
+- ✅ ビデオカラーグレーディングプリセット
+- ✅ 비디오 컬러 그레이딩 프리셋
+
+### v76.2 弹幕字体样式自定义 | Danmaku Font Style Custom | コメントフォントスタイルカスタム | 댓글 글꼴 스타일 사용자 정의
+- ✅ 弹幕字体样式自定义
+- ✅ Danmaku Font Style Custom
+- ✅ コメントフォントスタイルカスタム
+- ✅ 댓글 글꼴 스타일 사용자 정의
+
+### v76.3 字幕字体样式自定义 | Subtitle Font Style Custom | 字幕フォントスタイルカスタム | 자막 글꼴 스타일 사용자 정의
+- ✅ 字幕字体样式自定义
+- ✅ Subtitle Font Style Custom
+- ✅ 字幕フォントスタイルカスタム
+- ✅ 자막 글꼴 스타일 사용자 정의
+
+### v76.4 手势振动反馈 | Gesture Vibration Feedback | ジェスチャー振動フィードバック | 제스처 진동 피드백
+- ✅ 手势振动反馈
+- ✅ Gesture Vibration Feedback
+- ✅ ジェスチャー振動フィードバック
+- ✅ 제스처 진동 피드백
+
+### v76.5 投射视频杜比全景声 | Cast Video Dolby Atmos | キャストビデオドルビーアトモス | 캐스트 비디오 돌비 애트모스
+- ✅ 投射视频杜比全景声
+- ✅ Cast Video Dolby Atmos
+- ✅ キャストビデオドルビーアトモス
+- ✅ 캐스트 비디오 돌비 애트모스
+
+### v76.6 播放列表自动恢复策略 | Playlist Auto Recover Strategy | プレイリスト自動復元戦略 | 재생 목록 자동 복구 전략
+- ✅ 播放列表自动恢复策略
+- ✅ Playlist Auto Recover Strategy
+- ✅ プレイリスト自動復元戦略
+- ✅ 재생 목록 자동 복구 전략
+
+### v76.7 缓存位置模式 | Cache Location Mode | キャッシュロケーションモード | 캐시 위치 모드
+- ✅ 缓存位置模式
+- ✅ Cache Location Mode
+- ✅ キャッシュロケーションモード
+- ✅ 캐시 위치 모드
+
+### v76.8 进度条缓冲颜色 | Progress Bar Buffer Color | プログレスバーバッファカラー | 진행 바 버퍼 색상
+- ✅ 进度条缓冲颜色
+- ✅ Progress Bar Buffer Color
+- ✅ プログレスバーバッファカラー
+- ✅ 진행 바 버퍼 색상
+
+### v76.9 音量3D音效 | Volume 3D Audio | 音量3D音響 | 볼륨 3D 오디오
+- ✅ 音量3D音效
+- ✅ Volume 3D Audio
+- ✅ 音量3D音響
+- ✅ 볼륨 3D 오디오
+
+### v76.10 历史记录自动同步来源 | History Auto Sync Source | 履歴自動同期ソース | 기록 자동 동기화 소스
+- ✅ 历史记录自动同步来源
+- ✅ History Auto Sync Source
+- ✅ 履歴自動同期ソース
+- ✅ 기록 자동 동기화 소스
+
+### v76.11 播放自动跳过静音 | Playback Auto Skip Silence | 再生自動無音スキップ | 재생 자동 무음 건너뛰기
+- ✅ 播放自动跳过静音
+- ✅ Playback Auto Skip Silence
+- ✅ 再生自動無音スキップ
+- ✅ 재생 자동 무음 건너뛰기
+
+### v76.12 截图自动标注模式 | Screenshot Auto Annotate Mode | スクリーンショット自動注釈モード | 스크린샷 자동 주석 모드
+- ✅ 截图自动标注模式
+- ✅ Screenshot Auto Annotate Mode
+- ✅ スクリーンショット自動注釈モード
+- ✅ 스크린샷 자동 주석 모드
+
+### v76.13 视频LUT自定义 | Video LUT Custom | ビデオLUTカスタム | 비디오 LUT 사용자 정의
+- ✅ 视频LUT自定义
+- ✅ Video LUT Custom
+- ✅ ビデオLUTカスタム
+- ✅ 비디오 LUT 사용자 정의
+
+### v76.14 弹幕字体自定义路径 | Danmaku Font Custom Path | コメントフォントカスタムパス | 댓글 글꼴 사용자 정의 경로
+- ✅ 弹幕字体自定义路径
+- ✅ Danmaku Font Custom Path
+- ✅ コメントフォントカスタムパス
+- ✅ 댓글 글꼴 사용자 정의 경로
+
+### v76.15 字幕字体粗细自定义 | Subtitle Font Weight Custom | 字幕フォント太さカスタム | 자막 글꼴 두께 사용자 정의
+- ✅ 字幕字体粗细自定义
+- ✅ Subtitle Font Weight Custom
+- ✅ 字幕フォント太さカスタム
+- ✅ 자막 글꼴 두께 사용자 정의
+
+### v77.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v77.1-v77.15 功能列表
+- ✅ Video Frame Interpolation, Danmaku Priority Custom, Subtitle Kerning Custom, Gesture Visual Feedback, Cast Audio 3D, Playlist Auto Recover Limit, Cache Priority Mode, Progress Bar Thumb Color, Volume Auto Leveling, History Auto Backup Source, Playback Auto Skip Intro Custom, Screenshot Auto Share Mode, Video Motion Blur, Danmaku Layer Custom, Subtitle Letter Spacing Custom
+
+### v77.1 视频帧插值 | Video Frame Interpolation | ビデオフレーム補間 | 비디오 프레임 보간
+- ✅ 视频帧插值
+- ✅ Video Frame Interpolation
+- ✅ ビデオフレーム補間
+- ✅ 비디오 프레임 보간
+
+### v77.2 弹幕优先级自定义 | Danmaku Priority Custom | コメント優先度カスタム | 댓글 우선순위 사용자 정의
+- ✅ 弹幕优先级自定义
+- ✅ Danmaku Priority Custom
+- ✅ コメント優先度カスタム
+- ✅ 댓글 우선순위 사용자 정의
+
+### v77.3 字幕字距调整自定义 | Subtitle Kerning Custom | 字幕カーニングカスタム | 자막 커닝 사용자 정의
+- ✅ 字幕字距调整自定义
+- ✅ Subtitle Kerning Custom
+- ✅ 字幕カーニングカスタム
+- ✅ 자막 커닝 사용자 정의
+
+### v77.4 手势视觉反馈 | Gesture Visual Feedback | ジェスチャー視覚フィードバック | 제스처 시각 피드백
+- ✅ 手势视觉反馈
+- ✅ Gesture Visual Feedback
+- ✅ ジェスチャー視覚フィードバック
+- ✅ 제스처 시각 피드백
+
+### v77.5 投射音频3D | Cast Audio 3D | キャスト音声3D | 캐스트 오디오 3D
+- ✅ 投射音频3D
+- ✅ Cast Audio 3D
+- ✅ キャスト音声3D
+- ✅ 캐스트 오디오 3D
+
+### v77.6 播放列表自动恢复限制 | Playlist Auto Recover Limit | プレイリスト自動復元制限 | 재생 목록 자동 복구 제한
+- ✅ 播放列表自动恢复限制
+- ✅ Playlist Auto Recover Limit
+- ✅ プレイリスト自動復元制限
+- ✅ 재생 목록 자동 복구 제한
+
+### v77.7 缓存优先级模式 | Cache Priority Mode | キャッシュ優先モード | 캐시 우선 모드
+- ✅ 缓存优先级模式
+- ✅ Cache Priority Mode
+- ✅ キャッシュ優先モード
+- ✅ 캐시 우선 모드
+
+### v77.8 进度条滑块颜色 | Progress Bar Thumb Color | プログレスバーサムカラー | 진행 바 썸 색상
+- ✅ 进度条滑块颜色
+- ✅ Progress Bar Thumb Color
+- ✅ プログレスバーサムカラー
+- ✅ 진행 바 썸 색상
+
+### v77.9 音量自动调平 | Volume Auto Leveling | 音量自動レベル調整 | 볼륨 자동 레벨링
+- ✅ 音量自动调平
+- ✅ Volume Auto Leveling
+- ✅ 音量自動レベル調整
+- ✅ 볼륨 자동 레벨링
+
+### v77.10 历史记录自动备份来源 | History Auto Backup Source | 履歴自動バックアップソース | 기록 자동 백업 소스
+- ✅ 历史记录自动备份来源
+- ✅ History Auto Backup Source
+- ✅ 履歴自動バックアップソース
+- ✅ 기록 자동 백업 소스
+
+### v77.11 播放自动跳过片头自定义 | Playback Auto Skip Intro Custom | 再生自動イントロスキップカスタム | 재생 자동 인트로 건너뛰기 사용자 정의
+- ✅ 播放自动跳过片头自定义
+- ✅ Playback Auto Skip Intro Custom
+- ✅ 再生自動イントロスキップカスタム
+- ✅ 재생 자동 인트로 건너뛰기 사용자 정의
+
+### v77.12 截图自动分享模式 | Screenshot Auto Share Mode | スクリーンショット自動共有モード | 스크린샷 자동 공유 모드
+- ✅ 截图自动分享模式
+- ✅ Screenshot Auto Share Mode
+- ✅ スクリーンショット自動共有モード
+- ✅ 스크린샷 자동 공유 모드
+
+### v77.13 视频运动模糊 | Video Motion Blur | ビデオモーションブラー | 비디오 모션 블러
+- ✅ 视频运动模糊
+- ✅ Video Motion Blur
+- ✅ ビデオモーションブラー
+- ✅ 비디오 모션 블러
+
+### v77.14 弹幕图层自定义 | Danmaku Layer Custom | コメントレイヤーカスタム | 댓글 레이어 사용자 정의
+- ✅ 弹幕图层自定义
+- ✅ Danmaku Layer Custom
+- ✅ コメントレイヤーカスタム
+- ✅ 댓글 레이어 사용자 정의
+
+### v77.15 字幕字母间距自定义 | Subtitle Letter Spacing Custom | 字幕文字間隔カスタム | 자막 자간 사용자 정의
+- ✅ 字幕字母间距自定义
+- ✅ Subtitle Letter Spacing Custom
+- ✅ 字幕文字間隔カスタム
+- ✅ 자막 자간 사용자 정의
+
+### v78.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v78.1-v78.15 功能列表
+- ✅ Video Adaptive Resolution, Danmaku Collision Mode, Subtitle Animation Delay, Gesture Long Press Duration, Cast Video Dolby Vision IQ, Playlist Auto Recover Time Limit, Cache Size Limit Custom, Progress Bar Thumb Opacity, Volume Auto Leveling Mode, History Auto Sync Time, Playback Auto Skip Outro Custom, Screenshot Auto Edit Mode, Video Adaptive Bitrate, Danmaku Scroll Speed Adaptive, Subtitle Font Stretch Custom
+
+### v78.1 视频自适应分辨率 | Video Adaptive Resolution | ビデオ適応解像度 | 비디오 적응형 해상도
+- ✅ 视频自适应分辨率
+- ✅ Video Adaptive Resolution
+- ✅ ビデオ適応解像度
+- ✅ 비디오 적응형 해상도
+
+### v78.2 弹幕碰撞模式 | Danmaku Collision Mode | コメント衝突モード | 댓글 충돌 모드
+- ✅ 弹幕碰撞模式
+- ✅ Danmaku Collision Mode
+- ✅ コメント衝突モード
+- ✅ 댓글 충돌 모드
+
+### v78.3 字幕动画延迟 | Subtitle Animation Delay | 字幕アニメーション遅延 | 자막 애니메이션 지연
+- ✅ 字幕动画延迟
+- ✅ Subtitle Animation Delay
+- ✅ 字幕アニメーション遅延
+- ✅ 자막 애니메이션 지연
+
+### v78.4 手势长按时间 | Gesture Long Press Duration | ジェスチャー長押し時間 | 제스처 길게 누르기 시간
+- ✅ 手势长按时间
+- ✅ Gesture Long Press Duration
+- ✅ ジェスチャー長押し時間
+- ✅ 제스처 길게 누르기 시간
+
+### v78.5 投射视频杜比视界IQ | Cast Video Dolby Vision IQ | キャストビデオドルビービジョンIQ | 캐스트 비디오 돌비 비전 IQ
+- ✅ 投射视频杜比视界IQ
+- ✅ Cast Video Dolby Vision IQ
+- ✅ キャストビデオドルビービジョンIQ
+- ✅ 캐스트 비디오 돌비 비전 IQ
+
+### v78.6 播放列表自动恢复时间限制 | Playlist Auto Recover Time Limit | プレイリスト自動復元時間制限 | 재생 목록 자동 복구 시간 제한
+- ✅ 播放列表自动恢复时间限制
+- ✅ Playlist Auto Recover Time Limit
+- ✅ プレイリスト自動復元時間制限
+- ✅ 재생 목록 자동 복구 시간 제한
+
+### v78.7 缓存大小限制自定义 | Cache Size Limit Custom | キャッシュサイズ制限カスタム | 캐시 크기 제한 사용자 정의
+- ✅ 缓存大小限制自定义
+- ✅ Cache Size Limit Custom
+- ✅ キャッシュサイズ制限カスタム
+- ✅ 캐시 크기 제한 사용자 정의
+
+### v78.8 进度条滑块透明度 | Progress Bar Thumb Opacity | プログレスバーサム不透明度 | 진행 바 썸 불투명도
+- ✅ 进度条滑块透明度
+- ✅ Progress Bar Thumb Opacity
+- ✅ プログレスバーサム不透明度
+- ✅ 진행 바 썸 불투명도
+
+### v78.9 音量自动调平模式 | Volume Auto Leveling Mode | 音量自動レベル調整モード | 볼륨 자동 레벨링 모드
+- ✅ 音量自动调平模式
+- ✅ Volume Auto Leveling Mode
+- ✅ 音量自動レベル調整モード
+- ✅ 볼륨 자동 레벨링 모드
+
+### v78.10 历史记录自动同步时间 | History Auto Sync Time | 履歴自動同期時間 | 기록 자동 동기화 시간
+- ✅ 历史记录自动同步时间
+- ✅ History Auto Sync Time
+- ✅ 履歴自動同期時間
+- ✅ 기록 자동 동기화 시간
+
+### v78.11 播放自动跳过片尾自定义 | Playback Auto Skip Outro Custom | 再生自動アウトロスキップカスタム | 재생 자동 아웃로 건너뛰기 사용자 정의
+- ✅ 播放自动跳过片尾自定义
+- ✅ Playback Auto Skip Outro Custom
+- ✅ 再生自動アウトロスキップカスタム
+- ✅ 재생 자동 아웃로 건너뛰기 사용자 정의
+
+### v78.12 截图自动编辑模式 | Screenshot Auto Edit Mode | スクリーンショット自動編集モード | 스크린샷 자동 편집 모드
+- ✅ 截图自动编辑模式
+- ✅ Screenshot Auto Edit Mode
+- ✅ スクリーンショット自動編集モード
+- ✅ 스크린샷 자동 편집 모드
+
+### v78.13 视频自适应码率 | Video Adaptive Bitrate | ビデオ適応ビットレート | 비디오 적응형 비트레이트
+- ✅ 视频自适应码率
+- ✅ Video Adaptive Bitrate
+- ✅ ビデオ適応ビットレート
+- ✅ 비디오 적응형 비트레이트
+
+### v78.14 弹幕滚动速度自适应 | Danmaku Scroll Speed Adaptive | コメントスクロール速度適応 | 댓글 스크롤 속도 적응
+- ✅ 弹幕滚动速度自适应
+- ✅ Danmaku Scroll Speed Adaptive
+- ✅ コメントスクロール速度適応
+- ✅ 댓글 스크롤 속도 적응
+
+### v78.15 字幕字体拉伸自定义 | Subtitle Font Stretch Custom | 字幕フォントストレッチカスタム | 자막 글꼴 스트레치 사용자 정의
+- ✅ 字幕字体拉伸自定义
+- ✅ Subtitle Font Stretch Custom
+- ✅ 字幕フォントストレッチカスタム
+- ✅ 자막 글꼴 스트레치 사용자 정의
+
+### v79.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v79.1-v79.15 功能列表
+- ✅ Video Color Grading Custom, Danmaku Font Spacing Adaptive, Subtitle Animation Type, Gesture Swipe Velocity, Cast Audio Spatial Custom, Playlist Auto Recover Source Mode, Cache Cleanup Strategy Custom, Progress Bar Thumb Animation, Volume Auto Leveling Strength, History Auto Backup Time, Playback Auto Bookmark Custom, Screenshot Auto Crop Mode, Video Adaptive Frame Rate, Danmaku Font Weight Custom, Subtitle Animation Duration
+
+### v79.1 视频调色自定义 | Video Color Grading Custom | ビデオカラーグレーディングカスタム | 비디오 컬러 그레이딩 사용자 정의
+- ✅ 视频调色自定义
+- ✅ Video Color Grading Custom
+- ✅ ビデオカラーグレーディングカスタム
+- ✅ 비디오 컬러 그레이딩 사용자 정의
+
+### v79.2 弹幕字体间距自适应 | Danmaku Font Spacing Adaptive | コメントフォント間隔適応 | 댓글 글꼴 간격 적응
+- ✅ 弹幕字体间距自适应
+- ✅ Danmaku Font Spacing Adaptive
+- ✅ コメントフォント間隔適応
+- ✅ 댓글 글꼴 간격 적응
+
+### v79.3 字幕动画类型 | Subtitle Animation Type | 字幕アニメーションタイプ | 자막 애니메이션 유형
+- ✅ 字幕动画类型
+- ✅ Subtitle Animation Type
+- ✅ 字幕アニメーションタイプ
+- ✅ 자막 애니메이션 유형
+
+### v79.4 手势滑动速度 | Gesture Swipe Velocity | ジェスチャースワイプ速度 | 제스처 스와이프 속도
+- ✅ 手势滑动速度
+- ✅ Gesture Swipe Velocity
+- ✅ ジェスチャースワイプ速度
+- ✅ 제스처 스와이프 속도
+
+### v79.5 投射音频空间音效自定义 | Cast Audio Spatial Custom | キャスト音声空間音響カスタム | 캐스트 오디오 공간 음향 사용자 정의
+- ✅ 投射音频空间音效自定义
+- ✅ Cast Audio Spatial Custom
+- ✅ キャスト音声空間音響カスタム
+- ✅ 캐스트 오디오 공간 음향 사용자 정의
+
+### v79.6 播放列表自动恢复来源模式 | Playlist Auto Recover Source Mode | プレイリスト自動復元ソースモード | 재생 목록 자동 복구 소스 모드
+- ✅ 播放列表自动恢复来源模式
+- ✅ Playlist Auto Recover Source Mode
+- ✅ プレイリスト自動復元ソースモード
+- ✅ 재생 목록 자동 복구 소스 모드
+
+### v79.7 缓存清理策略自定义 | Cache Cleanup Strategy Custom | キャッシュクリーンアップ戦略カスタム | 캐시 정리 전략 사용자 정의
+- ✅ 缓存清理策略自定义
+- ✅ Cache Cleanup Strategy Custom
+- ✅ キャッシュクリーンアップ戦略カスタム
+- ✅ 캐시 정리 전략 사용자 정의
+
+### v79.8 进度条滑块动画 | Progress Bar Thumb Animation | プログレスバーサムアニメーション | 진행 바 썸 애니메이션
+- ✅ 进度条滑块动画
+- ✅ Progress Bar Thumb Animation
+- ✅ プログレスバーサムアニメーション
+- ✅ 진행 바 썸 애니메이션
+
+### v79.9 音量自动调平强度 | Volume Auto Leveling Strength | 音量自動レベル調整強度 | 볼륨 자동 레벨링 강도
+- ✅ 音量自动调平强度
+- ✅ Volume Auto Leveling Strength
+- ✅ 音量自動レベル調整強度
+- ✅ 볼륨 자동 레벨링 강도
+
+### v79.10 历史记录自动备份时间 | History Auto Backup Time | 履歴自動バックアップ時間 | 기록 자동 백업 시간
+- ✅ 历史记录自动备份时间
+- ✅ History Auto Backup Time
+- ✅ 履歴自動バックアップ時間
+- ✅ 기록 자동 백업 시간
+
+### v79.11 播放自动书签自定义 | Playback Auto Bookmark Custom | 再生自動ブックマークカスタム | 재생 자동 북마크 사용자 정의
+- ✅ 播放自动书签自定义
+- ✅ Playback Auto Bookmark Custom
+- ✅ 再生自動ブックマークカスタム
+- ✅ 재생 자동 북마크 사용자 정의
+
+### v79.12 截图自动裁剪模式 | Screenshot Auto Crop Mode | スクリーンショット自動クロップモード | 스크린샷 자동 크롭 모드
+- ✅ 截图自动裁剪模式
+- ✅ Screenshot Auto Crop Mode
+- ✅ スクリーンショット自動クロップモード
+- ✅ 스크린샷 자동 크롭 모드
+
+### v79.13 视频自适应帧率 | Video Adaptive Frame Rate | ビデオ適応フレームレート | 비디오 적응형 프레임레이트
+- ✅ 视频自适应帧率
+- ✅ Video Adaptive Frame Rate
+- ✅ ビデオ適応フレームレート
+- ✅ 비디오 적응형 프레임레이트
+
+### v79.14 弹幕字体粗细自定义 | Danmaku Font Weight Custom | コメントフォント太さカスタム | 댓글 글꼴 두께 사용자 정의
+- ✅ 弹幕字体粗细自定义
+- ✅ Danmaku Font Weight Custom
+- ✅ コメントフォント太さカスタム
+- ✅ 댓글 글꼴 두께 사용자 정의
+
+### v79.15 字幕动画持续时间 | Subtitle Animation Duration | 字幕アニメーション持続時間 | 자막 애니메이션 지속 시간
+- ✅ 字幕动画持续时间
+- ✅ Subtitle Animation Duration
+- ✅ 字幕アニメーション持続時間
+- ✅ 자막 애니메이션 지속 시간
+
+### v80.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v80.1-v80.15 功能列表
+- ✅ Video Adaptive Color Grading, Danmaku Collision Strength, Subtitle Animation Easing, Gesture Swipe Acceleration Custom, Cast Video Dolby Vision Custom, Playlist Auto Recover Strategy Custom, Cache Encryption Custom, Progress Bar Thumb Size Custom, Volume Auto Leveling Custom, History Auto Sync Custom, Playback Auto Resume Custom, Screenshot Auto Share Custom, Video Adaptive Motion Blur, Danmaku Font Spacing Custom, Subtitle Animation Loop
+
+### v80.1 视频自适应调色 | Video Adaptive Color Grading | ビデオ適応カラーグレーディング | 비디오 적응형 컬러 그레이딩
+- ✅ 视频自适应调色
+- ✅ Video Adaptive Color Grading
+- ✅ ビデオ適応カラーグレーディング
+- ✅ 비디오 적응형 컬러 그레이딩
+
+### v80.2 弹幕碰撞强度 | Danmaku Collision Strength | コメント衝突強度 | 댓글 충돌 강도
+- ✅ 弹幕碰撞强度
+- ✅ Danmaku Collision Strength
+- ✅ コメント衝突強度
+- ✅ 댓글 충돌 강도
+
+### v80.3 字幕动画缓动 | Subtitle Animation Easing | 字幕アニメーションイージング | 자막 애니메이션 이징
+- ✅ 字幕动画缓动
+- ✅ Subtitle Animation Easing
+- ✅ 字幕アニメーションイージング
+- ✅ 자막 애니메이션 이징
+
+### v80.4 手势滑动加速度自定义 | Gesture Swipe Acceleration Custom | ジェスチャースワイプ加速度カスタム | 제스처 스와이프 가속도 사용자 정의
+- ✅ 手势滑动加速度自定义
+- ✅ Gesture Swipe Acceleration Custom
+- ✅ ジェスチャースワイプ加速度カスタム
+- ✅ 제스처 스와이프 가속도 사용자 정의
+
+### v80.5 投射视频杜比视界自定义 | Cast Video Dolby Vision Custom | キャストビデオドルビービジョンカスタム | 캐스트 비디오 돌비 비전 사용자 정의
+- ✅ 投射视频杜比视界自定义
+- ✅ Cast Video Dolby Vision Custom
+- ✅ キャストビデオドルビービジョンカスタム
+- ✅ 캐스트 비디오 돌비 비전 사용자 정의
+
+### v80.6 播放列表自动恢复策略自定义 | Playlist Auto Recover Strategy Custom | プレイリスト自動復元戦略カスタム | 재생 목록 자동 복구 전략 사용자 정의
+- ✅ 播放列表自动恢复策略自定义
+- ✅ Playlist Auto Recover Strategy Custom
+- ✅ プレイリスト自動復元戦略カスタム
+- ✅ 재생 목록 자동 복구 전략 사용자 정의
+
+### v80.7 缓存加密自定义 | Cache Encryption Custom | キャッシュ暗号化カスタム | 캐시 암호화 사용자 정의
+- ✅ 缓存加密自定义
+- ✅ Cache Encryption Custom
+- ✅ キャッシュ暗号化カスタム
+- ✅ 캐시 암호화 사용자 정의
+
+### v80.8 进度条滑块大小自定义 | Progress Bar Thumb Size Custom | プログレスバーサムサイズカスタム | 진행 바 썸 크기 사용자 정의
+- ✅ 进度条滑块大小自定义
+- ✅ Progress Bar Thumb Size Custom
+- ✅ プログレスバーサムサイズカスタム
+- ✅ 진행 바 썸 크기 사용자 정의
+
+### v80.9 音量自动调平自定义 | Volume Auto Leveling Custom | 音量自動レベル調整カスタム | 볼륨 자동 레벨링 사용자 정의
+- ✅ 音量自动调平自定义
+- ✅ Volume Auto Leveling Custom
+- ✅ 音量自動レベル調整カスタム
+- ✅ 볼륨 자동 레벨링 사용자 정의
+
+### v80.10 历史记录自动同步自定义 | History Auto Sync Custom | 履歴自動同期カスタム | 기록 자동 동기화 사용자 정의
+- ✅ 历史记录自动同步自定义
+- ✅ History Auto Sync Custom
+- ✅ 履歴自動同期カスタム
+- ✅ 기록 자동 동기화 사용자 정의
+
+### v80.11 播放自动恢复自定义 | Playback Auto Resume Custom | 再生自動再開カスタム | 재생 자동 재개 사용자 정의
+- ✅ 播放自动恢复自定义
+- ✅ Playback Auto Resume Custom
+- ✅ 再生自動再開カスタム
+- ✅ 재생 자동 재개 사용자 정의
+
+### v80.12 截图自动分享自定义 | Screenshot Auto Share Custom | スクリーンショット自動共有カスタム | 스크린샷 자동 공유 사용자 정의
+- ✅ 截图自动分享自定义
+- ✅ Screenshot Auto Share Custom
+- ✅ スクリーンショット自動共有カスタム
+- ✅ 스크린샷 자동 공유 사용자 정의
+
+### v80.13 视频自适应运动模糊 | Video Adaptive Motion Blur | ビデオ適応モーションブラー | 비디오 적응형 모션 블러
+- ✅ 视频自适应运动模糊
+- ✅ Video Adaptive Motion Blur
+- ✅ ビデオ適応モーションブラー
+- ✅ 비디오 적응형 모션 블러
+
+### v80.14 弹幕字体间距自定义 | Danmaku Font Spacing Custom | コメントフォント間隔カスタム | 댓글 글꼴 간격 사용자 정의
+- ✅ 弹幕字体间距自定义
+- ✅ Danmaku Font Spacing Custom
+- ✅ コメントフォント間隔カスタム
+- ✅ 댓글 글꼴 간격 사용자 정의
+
+### v80.15 字幕动画循环 | Subtitle Animation Loop | 字幕アニメーションループ | 자막 애니메이션 루프
+- ✅ 字幕动画循环
+- ✅ Subtitle Animation Loop
+- ✅ 字幕アニメーションループ
+- ✅ 자막 애니메이션 루프
+
 ### v55.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
 ### v55.1-v55.15 功能列表
 - ✅ Auto Resume, Font Monospace, Color Hue Auto, Peak Limiter, Send Queue, Cast Bandwidth Limit, Lock Screen, Filter Regex, Network Policy, Double Tap Action, Font Weight Custom, Tint Custom, Volume Compressor, Bg Padding, Cast Auto Quality
@@ -13819,4 +14760,4 @@ This project is based on open-source software. All rights belong to the original
 - **基础版本 | Base Versions**: v10.0.0 - v11.19.0 (25 versions)
 - **AI自动维护版本 | AI Maintained**: v12.1 - v45.15 (550+ versions)
 - **开发周期 | Development Cycle**: 2024 - 2026
-- **功能特性 | Features**: 575+ new features added
+- **功能特性 | Features**: 750+ new features added
