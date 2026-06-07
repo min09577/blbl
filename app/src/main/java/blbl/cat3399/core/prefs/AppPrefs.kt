@@ -1984,6 +1984,11 @@ class AppPrefs(context: Context) {
     var v34DanmakuMaxDisplaySec: Int
         get() = prefs.getInt(KEY_V34_DANMAKU_MAX_DISPLAY_SEC, 0)
         set(value) = prefs.edit().putInt(KEY_V34_DANMAKU_MAX_DISPLAY_SEC, value).apply()
+    // v35.12: 视频降噪强度
+    var v35VideoNoiseReduction: Int
+        get() = prefs.getInt(KEY_V35_VIDEO_NOISE_REDUCTION, 0)
+        set(value) = prefs.edit().putInt(KEY_V35_VIDEO_NOISE_REDUCTION, value).apply()
+
     // v35.11: 小窗播放
     var v35PlayerMiniWindow: Boolean
         get() = prefs.getBoolean(KEY_V35_PLAYER_MINI_WINDOW, false)
@@ -3534,4 +3539,5 @@ class AppPrefs(context: Context) {
         return UUID.randomUUID().toString()
     }
 }
+        private const val KEY_V35_VIDEO_NOISE_REDUCTION = "v35_video_noise_reduction"
 

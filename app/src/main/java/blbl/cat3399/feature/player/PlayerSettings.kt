@@ -1129,6 +1129,20 @@ internal fun PlayerActivity.showv35PlayerMiniWindowToggle() {
         .option(switchText(current)) { BiliClient.prefs.v35PlayerMiniWindow = !current }
         .show()
 }
+// 35.12: 视频降噪强度
+internal fun PlayerActivity.showv35VideoNoiseReductionDialog() {
+    val current = BiliClient.prefs.v35VideoNoiseReduction
+    AppPopup.Builder(this)
+        .title("视频降噪强度")
+        .option("0") { BiliClient.prefs.v35VideoNoiseReduction = 0 }
+        .option("1") { BiliClient.prefs.v35VideoNoiseReduction = 1 }
+        .option("2") { BiliClient.prefs.v35VideoNoiseReduction = 2 }
+        .option("3") { BiliClient.prefs.v35VideoNoiseReduction = 3 }
+        .option("5") { BiliClient.prefs.v35VideoNoiseReduction = 5 }
+        .option("10") { BiliClient.prefs.v35VideoNoiseReduction = 10 }
+        .show()
+}
+
 
 
 
