@@ -2206,6 +2206,11 @@ class AppPrefs(context: Context) {
     var v37VideoBlackBarDetect: Boolean
         get() = prefs.getBoolean(KEY_V37_VIDEO_BLACK_BAR_DETECT, false)
         set(value) = prefs.edit().putBoolean(KEY_V37_VIDEO_BLACK_BAR_DETECT, value).apply()
+    // v38.15: 交叉淡入(ms)
+    var v38PlaylistCrossFadeMs: Int
+        get() = prefs.getInt(KEY_V38_PLAYLIST_CROSS_FADE_MS, 0)
+        set(value) = prefs.edit().putInt(KEY_V38_PLAYLIST_CROSS_FADE_MS, value).apply()
+
     // v38.14: 字幕罗马音化
     var v38SubtitleRomanize: Boolean
         get() = prefs.getBoolean(KEY_V38_SUBTITLE_ROMANIZE, false)
@@ -3835,3 +3840,4 @@ class AppPrefs(context: Context) {
         private const val KEY_V38_VIDEO_SATURATION_BOOST = "v38_video_saturation_boost"
         private const val KEY_V38_DANMAKU_HOVER_PAUSE = "v38_danmaku_hover_pause"
         private const val KEY_V38_SUBTITLE_ROMANIZE = "v38_subtitle_romanize"
+        private const val KEY_V38_PLAYLIST_CROSS_FADE_MS = "v38_playlist_cross_fade_ms"
