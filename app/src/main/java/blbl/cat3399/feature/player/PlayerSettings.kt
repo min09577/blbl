@@ -1231,6 +1231,20 @@ internal fun PlayerActivity.showv36DanmakuAutoScaleToggle() {
         .option(switchText(current)) { BiliClient.prefs.v36DanmakuAutoScale = !current }
         .show()
 }
+// 36.6: 字幕边缘模糊
+internal fun PlayerActivity.showv36SubtitleEdgeBlurDialog() {
+    val current = BiliClient.prefs.v36SubtitleEdgeBlur
+    AppPopup.Builder(this)
+        .title("字幕边缘模糊")
+        .option("0") { BiliClient.prefs.v36SubtitleEdgeBlur = 0 }
+        .option("1") { BiliClient.prefs.v36SubtitleEdgeBlur = 1 }
+        .option("2") { BiliClient.prefs.v36SubtitleEdgeBlur = 2 }
+        .option("3") { BiliClient.prefs.v36SubtitleEdgeBlur = 3 }
+        .option("5") { BiliClient.prefs.v36SubtitleEdgeBlur = 5 }
+        .option("10") { BiliClient.prefs.v36SubtitleEdgeBlur = 10 }
+        .show()
+}
+
 
 
 

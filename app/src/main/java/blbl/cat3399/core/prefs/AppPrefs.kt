@@ -2058,6 +2058,11 @@ class AppPrefs(context: Context) {
     var v35VideoFrameRateOverride: Int
         get() = prefs.getInt(KEY_V35_VIDEO_FRAME_RATE_OVERRIDE, 0)
         set(value) = prefs.edit().putInt(KEY_V35_VIDEO_FRAME_RATE_OVERRIDE, value).apply()
+    // v36.6: 字幕边缘模糊
+    var v36SubtitleEdgeBlur: Int
+        get() = prefs.getInt(KEY_V36_SUBTITLE_EDGE_BLUR, 0)
+        set(value) = prefs.edit().putInt(KEY_V36_SUBTITLE_EDGE_BLUR, value).apply()
+
     // v36.5: 弹幕自动缩放
     var v36DanmakuAutoScale: Boolean
         get() = prefs.getBoolean(KEY_V36_DANMAKU_AUTO_SCALE, false)
@@ -3593,3 +3598,4 @@ class AppPrefs(context: Context) {
         private const val KEY_V36_AUDIO_VOICE_ISOLATE = "v36_audio_voice_isolate"
         private const val KEY_V36_PLAYER_SKIP_OUTRO_SEC = "v36_player_skip_outro_sec"
         private const val KEY_V36_DANMAKU_AUTO_SCALE = "v36_danmaku_auto_scale"
+        private const val KEY_V36_SUBTITLE_EDGE_BLUR = "v36_subtitle_edge_blur"
