@@ -1912,6 +1912,11 @@ class AppPrefs(context: Context) {
     var v34PlayerVolumeBoost: Boolean
         get() = prefs.getBoolean(KEY_V34_PLAYER_VOLUME_BOOST, false)
         set(value) = prefs.edit().putBoolean(KEY_V34_PLAYER_VOLUME_BOOST, value).apply()
+    // v34.12: 像素风格模式
+    var v34VideoPixelArtMode: Boolean
+        get() = prefs.getBoolean(KEY_V34_VIDEO_PIXEL_ART_MODE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V34_VIDEO_PIXEL_ART_MODE, value).apply()
+
 
 
 
@@ -3947,6 +3952,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V34_DANMAKU_MIRROR_FLIP = "v34_danmaku_mirror_flip"
         private const val KEY_V34_AUDIO_EQ_PRESET = "v34_audio_eq_preset"
         private const val KEY_V34_PLAYER_VOLUME_BOOST = "v34_player_volume_boost"
+        private const val KEY_V34_VIDEO_PIXEL_ART_MODE = "v34_video_pixel_art_mode"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
