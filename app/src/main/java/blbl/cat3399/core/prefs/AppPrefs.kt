@@ -1952,6 +1952,11 @@ class AppPrefs(context: Context) {
     var v35SubtitlePositionTop: Boolean
         get() = prefs.getBoolean(KEY_V35_SUBTITLE_POSITION_TOP, false)
         set(value) = prefs.edit().putBoolean(KEY_V35_SUBTITLE_POSITION_TOP, value).apply()
+    // v35.7: 暗角效果强度
+    var v35VideoVignetteEffect: Int
+        get() = prefs.getInt(KEY_V35_VIDEO_VIGNETTE_EFFECT, 0)
+        set(value) = prefs.edit().putInt(KEY_V35_VIDEO_VIGNETTE_EFFECT, value).apply()
+
 
 
 
@@ -4007,6 +4012,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V35_PLAYER_AUTO_FULLSCREEN_LANDSCAPE = "v35_player_auto_fullscreen_landscape"
         private const val KEY_V35_DANMAKU_PINYIN_CONVERT = "v35_danmaku_pinyin_convert"
         private const val KEY_V35_SUBTITLE_POSITION_TOP = "v35_subtitle_position_top"
+        private const val KEY_V35_VIDEO_VIGNETTE_EFFECT = "v35_video_vignette_effect"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
