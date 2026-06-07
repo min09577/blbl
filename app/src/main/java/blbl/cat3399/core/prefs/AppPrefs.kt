@@ -11641,6 +11641,609 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V80SUBTITLEANIMATIONLOOP, false)
         set(value) = prefs.edit().putBoolean(KEY_V80SUBTITLEANIMATIONLOOP, value).apply()
 
+
+// ==================== v81-v90 New Unique Features ====================
+
+    var v81NetworkBandwidthAdapt: Boolean
+        get() = prefs.getBoolean(KEY_V81NETWORKBANDWIDTHADAPT, false)
+        set(value) = prefs.edit().putBoolean(KEY_V81NETWORKBANDWIDTHADAPT, value).apply()
+
+    var v81DanmakuOpacityCurveCustom: Int
+        get() = prefs.getInt(KEY_V81DANMAKUOPACITYCURVECUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V81DANMAKUOPACITYCURVECUSTOM, value).apply()
+
+    var v81SubtitlePositionLock: Boolean
+        get() = prefs.getBoolean(KEY_V81SUBTITLEPOSITIONLOCK, false)
+        set(value) = prefs.edit().putBoolean(KEY_V81SUBTITLEPOSITIONLOCK, value).apply()
+
+    var v81GesturePinchZoomSpeed: Int
+        get() = prefs.getInt(KEY_V81GESTUREPINCHZOOMSPEED, 50)
+        set(value) = prefs.edit().putInt(KEY_V81GESTUREPINCHZOOMSPEED, value).apply()
+
+    var v81CastReconnectAuto: Boolean
+        get() = prefs.getBoolean(KEY_V81CASTRECONNECTAUTO, true)
+        set(value) = prefs.edit().putBoolean(KEY_V81CASTRECONNECTAUTO, value).apply()
+
+    var v81PlaylistBookmarkSync: Boolean
+        get() = prefs.getBoolean(KEY_V81PLAYLISTBOOKMARKSYNC, false)
+        set(value) = prefs.edit().putBoolean(KEY_V81PLAYLISTBOOKMARKSYNC, value).apply()
+
+    var v81CachePrebufferSize: Int
+        get() = prefs.getInt(KEY_V81CACHEPREBUFFERSIZE, 0)
+        set(value) = prefs.edit().putInt(KEY_V81CACHEPREBUFFERSIZE, value).apply()
+
+    var v81ProgressBarDoubleTapSeek: Int
+        get() = prefs.getInt(KEY_V81PROGRESSBARDOUBLETAPSEEK, 10)
+        set(value) = prefs.edit().putInt(KEY_V81PROGRESSBARDOUBLETAPSEEK, value).apply()
+
+    var v81VolumeLoudnessNormalize: Boolean
+        get() = prefs.getBoolean(KEY_V81VOLUMELOUDNESSNORMALIZE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V81VOLUMELOUDNESSNORMALIZE, value).apply()
+
+    var v81HistorySearchFilter: Boolean
+        get() = prefs.getBoolean(KEY_V81HISTORYSEARCHFILTER, false)
+        set(value) = prefs.edit().putBoolean(KEY_V81HISTORYSEARCHFILTER, value).apply()
+
+    var v81PlaybackSkipAdAuto: Boolean
+        get() = prefs.getBoolean(KEY_V81PLAYBACKSKIPADAUTO, false)
+        set(value) = prefs.edit().putBoolean(KEY_V81PLAYBACKSKIPADAUTO, value).apply()
+
+    var v81ScreenshotCountDisplay: Boolean
+        get() = prefs.getBoolean(KEY_V81SCREENSHOTCOUNTDISPLAY, false)
+        set(value) = prefs.edit().putBoolean(KEY_V81SCREENSHOTCOUNTDISPLAY, value).apply()
+
+    var v81VideoUpscaleAI: Boolean
+        get() = prefs.getBoolean(KEY_V81VIDEOUPSCALEAI, false)
+        set(value) = prefs.edit().putBoolean(KEY_V81VIDEOUPSCALEAI, value).apply()
+
+    var v81DanmakuSendRateLimit: Int
+        get() = prefs.getInt(KEY_V81DANMAKUSENDRATELIMIT, 0)
+        set(value) = prefs.edit().putInt(KEY_V81DANMAKUSENDRATELIMIT, value).apply()
+
+    var v81SubtitleTimingOffset: Int
+        get() = prefs.getInt(KEY_V81SUBTITLETIMINGOFFSET, 0)
+        set(value) = prefs.edit().putInt(KEY_V81SUBTITLETIMINGOFFSET, value).apply()
+
+    var v82VideoDeinterlaceMode: Int
+        get() = prefs.getInt(KEY_V82VIDEODEINTERLACEMODE, 0)
+        set(value) = prefs.edit().putInt(KEY_V82VIDEODEINTERLACEMODE, value).apply()
+
+    var v82DanmakuFontSizeAutoRange: Int
+        get() = prefs.getInt(KEY_V82DANMAKUFONTSIZEAUTORANGE, 0)
+        set(value) = prefs.edit().putInt(KEY_V82DANMAKUFONTSIZEAUTORANGE, value).apply()
+
+    var v82SubtitleBgBlurCustom: Int
+        get() = prefs.getInt(KEY_V82SUBTITLEBGBLURCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V82SUBTITLEBGBLURCUSTOM, value).apply()
+
+    var v82GestureEdgeSwipeAction: Int
+        get() = prefs.getInt(KEY_V82GESTUREEDGESWIPEACTION, 0)
+        set(value) = prefs.edit().putInt(KEY_V82GESTUREEDGESWIPEACTION, value).apply()
+
+    var v82CastVideoBitrateLimit: Int
+        get() = prefs.getInt(KEY_V82CASTVIDEOBITRATELIMIT, 0)
+        set(value) = prefs.edit().putInt(KEY_V82CASTVIDEOBITRATELIMIT, value).apply()
+
+    var v82PlaylistDuplicateDetect: Boolean
+        get() = prefs.getBoolean(KEY_V82PLAYLISTDUPLICATEDETECT, false)
+        set(value) = prefs.edit().putBoolean(KEY_V82PLAYLISTDUPLICATEDETECT, value).apply()
+
+    var v82CacheSmartPrefetch: Boolean
+        get() = prefs.getBoolean(KEY_V82CACHESMARTPREFETCH, false)
+        set(value) = prefs.edit().putBoolean(KEY_V82CACHESMARTPREFETCH, value).apply()
+
+    var v82ProgressBarSwipeSeek: Boolean
+        get() = prefs.getBoolean(KEY_V82PROGRESSBARSWIPESEEK, true)
+        set(value) = prefs.edit().putBoolean(KEY_V82PROGRESSBARSWIPESEEK, value).apply()
+
+    var v82VolumeNightMode: Boolean
+        get() = prefs.getBoolean(KEY_V82VOLUMENIGHTMODE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V82VOLUMENIGHTMODE, value).apply()
+
+    var v82HistoryGroupByDate: Boolean
+        get() = prefs.getBoolean(KEY_V82HISTORYGROUPBYDATE, true)
+        set(value) = prefs.edit().putBoolean(KEY_V82HISTORYGROUPBYDATE, value).apply()
+
+    var v82PlaybackSpeedMemory: Boolean
+        get() = prefs.getBoolean(KEY_V82PLAYBACKSPEEDMEMORY, false)
+        set(value) = prefs.edit().putBoolean(KEY_V82PLAYBACKSPEEDMEMORY, value).apply()
+
+    var v82ScreenshotTimestamp: Boolean
+        get() = prefs.getBoolean(KEY_V82SCREENSHOTTIMESTAMP, false)
+        set(value) = prefs.edit().putBoolean(KEY_V82SCREENSHOTTIMESTAMP, value).apply()
+
+    var v82VideoColorTemperatureCustom: Int
+        get() = prefs.getInt(KEY_V82VIDEOCOLORTEMPERATURECUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V82VIDEOCOLORTEMPERATURECUSTOM, value).apply()
+
+    var v82DanmakuMergeAlgorithm: Int
+        get() = prefs.getInt(KEY_V82DANMAKUMERGEALGORITHM, 0)
+        set(value) = prefs.edit().putInt(KEY_V82DANMAKUMERGEALGORITHM, value).apply()
+
+    var v82SubtitleSyncAuto: Boolean
+        get() = prefs.getBoolean(KEY_V82SUBTITLESYNCAUTO, false)
+        set(value) = prefs.edit().putBoolean(KEY_V82SUBTITLESYNCAUTO, value).apply()
+
+    var v83VideoNoiseGateCustom: Int
+        get() = prefs.getInt(KEY_V83VIDEONOISEGATECUSTOM, 50)
+        set(value) = prefs.edit().putInt(KEY_V83VIDEONOISEGATECUSTOM, value).apply()
+
+    var v83DanmakuScrollMomentum: Int
+        get() = prefs.getInt(KEY_V83DANMAKUSCROLLMOMENTUM, 50)
+        set(value) = prefs.edit().putInt(KEY_V83DANMAKUSCROLLMOMENTUM, value).apply()
+
+    var v83SubtitleKaraokeHighlight: Boolean
+        get() = prefs.getBoolean(KEY_V83SUBTITLEKARAOKEHIGHLIGHT, false)
+        set(value) = prefs.edit().putBoolean(KEY_V83SUBTITLEKARAOKEHIGHLIGHT, value).apply()
+
+    var v83GestureThreeFingerAction: Int
+        get() = prefs.getInt(KEY_V83GESTURETHREEFINGERACTION, 0)
+        set(value) = prefs.edit().putInt(KEY_V83GESTURETHREEFINGERACTION, value).apply()
+
+    var v83CastAudioDelay: Int
+        get() = prefs.getInt(KEY_V83CASTAUDIODELAY, 0)
+        set(value) = prefs.edit().putInt(KEY_V83CASTAUDIODELAY, value).apply()
+
+    var v83PlaylistSmartSort: Int
+        get() = prefs.getInt(KEY_V83PLAYLISTSMARTSORT, 0)
+        set(value) = prefs.edit().putInt(KEY_V83PLAYLISTSMARTSORT, value).apply()
+
+    var v83CacheWIFIPriority: Boolean
+        get() = prefs.getBoolean(KEY_V83CACHEWIFIPRIORITY, true)
+        set(value) = prefs.edit().putBoolean(KEY_V83CACHEWIFIPRIORITY, value).apply()
+
+    var v83ProgressBarGestureArea: Int
+        get() = prefs.getInt(KEY_V83PROGRESSBARGESTUREAREA, 0)
+        set(value) = prefs.edit().putInt(KEY_V83PROGRESSBARGESTUREAREA, value).apply()
+
+    var v83VolumeBalanceLR: Int
+        get() = prefs.getInt(KEY_V83VOLUMEBALANCELR, 0)
+        set(value) = prefs.edit().putInt(KEY_V83VOLUMEBALANCELR, value).apply()
+
+    var v83HistoryMaxItems: Int
+        get() = prefs.getInt(KEY_V83HISTORYMAXITEMS, 0)
+        set(value) = prefs.edit().putInt(KEY_V83HISTORYMAXITEMS, value).apply()
+
+    var v83PlaybackAutoNextEpisode: Boolean
+        get() = prefs.getBoolean(KEY_V83PLAYBACKAUTONEXTEPISODE, true)
+        set(value) = prefs.edit().putBoolean(KEY_V83PLAYBACKAUTONEXTEPISODE, value).apply()
+
+    var v83ScreenshotOverlayInfo: Boolean
+        get() = prefs.getBoolean(KEY_V83SCREENSHOTOVERLAYINFO, false)
+        set(value) = prefs.edit().putBoolean(KEY_V83SCREENSHOTOVERLAYINFO, value).apply()
+
+    var v83VideoImageSharpCustom: Int
+        get() = prefs.getInt(KEY_V83VIDEOIMAGESHARPCUSTOM, 50)
+        set(value) = prefs.edit().putInt(KEY_V83VIDEOIMAGESHARPCUSTOM, value).apply()
+
+    var v83DanmakuColorPalette: Int
+        get() = prefs.getInt(KEY_V83DANMAKUCOLORPALETTE, 0)
+        set(value) = prefs.edit().putInt(KEY_V83DANMAKUCOLORPALETTE, value).apply()
+
+    var v83SubtitleBgOpacityCustom: Int
+        get() = prefs.getInt(KEY_V83SUBTITLEBGOPACITYCUSTOM, 50)
+        set(value) = prefs.edit().putInt(KEY_V83SUBTITLEBGOPACITYCUSTOM, value).apply()
+
+    var v84VideoDetailEnhanceCustom: Int
+        get() = prefs.getInt(KEY_V84VIDEODETAILENHANCECUSTOM, 50)
+        set(value) = prefs.edit().putInt(KEY_V84VIDEODETAILENHANCECUSTOM, value).apply()
+
+    var v84DanmakuScrollFriction: Int
+        get() = prefs.getInt(KEY_V84DANMAKUSCROLLFRICTION, 50)
+        set(value) = prefs.edit().putInt(KEY_V84DANMAKUSCROLLFRICTION, value).apply()
+
+    var v84SubtitleBilingualDisplay: Boolean
+        get() = prefs.getBoolean(KEY_V84SUBTITLEBILINGUALDISPLAY, false)
+        set(value) = prefs.edit().putBoolean(KEY_V84SUBTITLEBILINGUALDISPLAY, value).apply()
+
+    var v84GestureFourFingerAction: Int
+        get() = prefs.getInt(KEY_V84GESTUREFOURFINGERACTION, 0)
+        set(value) = prefs.edit().putInt(KEY_V84GESTUREFOURFINGERACTION, value).apply()
+
+    var v84CastVideoHDR10Custom: Boolean
+        get() = prefs.getBoolean(KEY_V84CASTVIDEOHDR10CUSTOM, false)
+        set(value) = prefs.edit().putBoolean(KEY_V84CASTVIDEOHDR10CUSTOM, value).apply()
+
+    var v84PlaylistAutoPlayNext: Boolean
+        get() = prefs.getBoolean(KEY_V84PLAYLISTAUTOPLAYNEXT, true)
+        set(value) = prefs.edit().putBoolean(KEY_V84PLAYLISTAUTOPLAYNEXT, value).apply()
+
+    var v84CacheStorageAnalyze: Boolean
+        get() = prefs.getBoolean(KEY_V84CACHESTORAGEANALYZE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V84CACHESTORAGEANALYZE, value).apply()
+
+    var v84ProgressBarHapticFeedback: Boolean
+        get() = prefs.getBoolean(KEY_V84PROGRESSBARHAPTICFEEDBACK, true)
+        set(value) = prefs.edit().putBoolean(KEY_V84PROGRESSBARHAPTICFEEDBACK, value).apply()
+
+    var v84VolumeFadeInDuration: Int
+        get() = prefs.getInt(KEY_V84VOLUMEFADEINDURATION, 0)
+        set(value) = prefs.edit().putInt(KEY_V84VOLUMEFADEINDURATION, value).apply()
+
+    var v84HistoryAutoCleanup: Boolean
+        get() = prefs.getBoolean(KEY_V84HISTORYAUTOCLEANUP, false)
+        set(value) = prefs.edit().putBoolean(KEY_V84HISTORYAUTOCLEANUP, value).apply()
+
+    var v84PlaybackAutoPlayOnOpen: Boolean
+        get() = prefs.getBoolean(KEY_V84PLAYBACKAUTOPLAYONOPEN, false)
+        set(value) = prefs.edit().putBoolean(KEY_V84PLAYBACKAUTOPLAYONOPEN, value).apply()
+
+    var v84ScreenshotFolderPath: Int
+        get() = prefs.getInt(KEY_V84SCREENSHOTFOLDERPATH, 0)
+        set(value) = prefs.edit().putInt(KEY_V84SCREENSHOTFOLDERPATH, value).apply()
+
+    var v84VideoVividnessCustom: Int
+        get() = prefs.getInt(KEY_V84VIDEOVIVIDNESSCUSTOM, 50)
+        set(value) = prefs.edit().putInt(KEY_V84VIDEOVIVIDNESSCUSTOM, value).apply()
+
+    var v84DanmakuFontItalicToggle: Boolean
+        get() = prefs.getBoolean(KEY_V84DANMAKUFONTITALICTOGGLE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V84DANMAKUFONTITALICTOGGLE, value).apply()
+
+    var v84SubtitlePositionCustom: Int
+        get() = prefs.getInt(KEY_V84SUBTITLEPOSITIONCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V84SUBTITLEPOSITIONCUSTOM, value).apply()
+
+    var v85VideoLumaSharpenCustom: Int
+        get() = prefs.getInt(KEY_V85VIDEOLUMASHARPENCUSTOM, 50)
+        set(value) = prefs.edit().putInt(KEY_V85VIDEOLUMASHARPENCUSTOM, value).apply()
+
+    var v85DanmakuBgPaddingCustom: Int
+        get() = prefs.getInt(KEY_V85DANMAKUBGPADDINGCUSTOM, 4)
+        set(value) = prefs.edit().putInt(KEY_V85DANMAKUBGPADDINGCUSTOM, value).apply()
+
+    var v85SubtitleBgColorCustom: Int
+        get() = prefs.getInt(KEY_V85SUBTITLEBGCOLORCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V85SUBTITLEBGCOLORCUSTOM, value).apply()
+
+    var v85GestureLongPressAction: Int
+        get() = prefs.getInt(KEY_V85GESTURELONGPRESSACTION, 0)
+        set(value) = prefs.edit().putInt(KEY_V85GESTURELONGPRESSACTION, value).apply()
+
+    var v85CastAudioCodecCustom: Int
+        get() = prefs.getInt(KEY_V85CASTAUDIOCODECCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V85CASTAUDIOCODECCUSTOM, value).apply()
+
+    var v85PlaylistAutoLoadMore: Boolean
+        get() = prefs.getBoolean(KEY_V85PLAYLISTAUTOLOADMORE, true)
+        set(value) = prefs.edit().putBoolean(KEY_V85PLAYLISTAUTOLOADMORE, value).apply()
+
+    var v85CacheCleanupOnLowStorage: Boolean
+        get() = prefs.getBoolean(KEY_V85CACHECLEANUPONLOWSTORAGE, true)
+        set(value) = prefs.edit().putBoolean(KEY_V85CACHECLEANUPONLOWSTORAGE, value).apply()
+
+    var v85ProgressBarTooltip: Boolean
+        get() = prefs.getBoolean(KEY_V85PROGRESSBARTOOLTIP, true)
+        set(value) = prefs.edit().putBoolean(KEY_V85PROGRESSBARTOOLTIP, value).apply()
+
+    var v85VolumeFadeOutDuration: Int
+        get() = prefs.getInt(KEY_V85VOLUMEFADEOUTDURATION, 0)
+        set(value) = prefs.edit().putInt(KEY_V85VOLUMEFADEOUTDURATION, value).apply()
+
+    var v85HistoryExportFormat: Int
+        get() = prefs.getInt(KEY_V85HISTORYEXPORTFORMAT, 0)
+        set(value) = prefs.edit().putInt(KEY_V85HISTORYEXPORTFORMAT, value).apply()
+
+    var v85PlaybackAutoLoopSingle: Boolean
+        get() = prefs.getBoolean(KEY_V85PLAYBACKAUTOLOOPSINGLE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V85PLAYBACKAUTOLOOPSINGLE, value).apply()
+
+    var v85ScreenshotNamingRule: Int
+        get() = prefs.getInt(KEY_V85SCREENSHOTNAMINGRULE, 0)
+        set(value) = prefs.edit().putInt(KEY_V85SCREENSHOTNAMINGRULE, value).apply()
+
+    var v85VideoChromaSharpenCustom: Int
+        get() = prefs.getInt(KEY_V85VIDEOCHROMASHARPENCUSTOM, 50)
+        set(value) = prefs.edit().putInt(KEY_V85VIDEOCHROMASHARPENCUSTOM, value).apply()
+
+    var v85DanmakuBgBorderToggle: Boolean
+        get() = prefs.getBoolean(KEY_V85DANMAKUBGBORDERTOGGLE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V85DANMAKUBGBORDERTOGGLE, value).apply()
+
+    var v85SubtitleFontSizeAuto: Boolean
+        get() = prefs.getBoolean(KEY_V85SUBTITLEFONTSIZEAUTO, false)
+        set(value) = prefs.edit().putBoolean(KEY_V85SUBTITLEFONTSIZEAUTO, value).apply()
+
+    var v86VideoContrastCurveCustom: Int
+        get() = prefs.getInt(KEY_V86VIDEOCONTRASTCURVECUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V86VIDEOCONTRASTCURVECUSTOM, value).apply()
+
+    var v86DanmakuFontStretchCustom: Int
+        get() = prefs.getInt(KEY_V86DANMAKUFONTSTRETCHCUSTOM, 100)
+        set(value) = prefs.edit().putInt(KEY_V86DANMAKUFONTSTRETCHCUSTOM, value).apply()
+
+    var v86SubtitleBgRadiusCustom: Int
+        get() = prefs.getInt(KEY_V86SUBTITLEBGRADIUSCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V86SUBTITLEBGRADIUSCUSTOM, value).apply()
+
+    var v86GestureDoubleTapAction: Int
+        get() = prefs.getInt(KEY_V86GESTUREDOUBLETAPACTION, 0)
+        set(value) = prefs.edit().putInt(KEY_V86GESTUREDOUBLETAPACTION, value).apply()
+
+    var v86CastVideoProtocol: Int
+        get() = prefs.getInt(KEY_V86CASTVIDEOPROTOCOL, 0)
+        set(value) = prefs.edit().putInt(KEY_V86CASTVIDEOPROTOCOL, value).apply()
+
+    var v86PlaylistAutoRefresh: Boolean
+        get() = prefs.getBoolean(KEY_V86PLAYLISTAUTOREFRESH, false)
+        set(value) = prefs.edit().putBoolean(KEY_V86PLAYLISTAUTOREFRESH, value).apply()
+
+    var v86CacheMaxSizeCustom: Int
+        get() = prefs.getInt(KEY_V86CACHEMAXSIZECUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V86CACHEMAXSIZECUSTOM, value).apply()
+
+    var v86ProgressBarLiveEdge: Boolean
+        get() = prefs.getBoolean(KEY_V86PROGRESSBARLIVEEDGE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V86PROGRESSBARLIVEEDGE, value).apply()
+
+    var v86VolumeBoostStrength: Int
+        get() = prefs.getInt(KEY_V86VOLUMEBOOSTSTRENGTH, 0)
+        set(value) = prefs.edit().putInt(KEY_V86VOLUMEBOOSTSTRENGTH, value).apply()
+
+    var v86HistoryImportFormat: Int
+        get() = prefs.getInt(KEY_V86HISTORYIMPORTFORMAT, 0)
+        set(value) = prefs.edit().putInt(KEY_V86HISTORYIMPORTFORMAT, value).apply()
+
+    var v86PlaybackAutoQualitySwitch: Boolean
+        get() = prefs.getBoolean(KEY_V86PLAYBACKAUTOQUALITYSWITCH, false)
+        set(value) = prefs.edit().putBoolean(KEY_V86PLAYBACKAUTOQUALITYSWITCH, value).apply()
+
+    var v86ScreenshotAutoUpload: Boolean
+        get() = prefs.getBoolean(KEY_V86SCREENSHOTAUTOUPLOAD, false)
+        set(value) = prefs.edit().putBoolean(KEY_V86SCREENSHOTAUTOUPLOAD, value).apply()
+
+    var v86VideoSaturationCurveCustom: Int
+        get() = prefs.getInt(KEY_V86VIDEOSATURATIONCURVECUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V86VIDEOSATURATIONCURVECUSTOM, value).apply()
+
+    var v86DanmakuSendCooldown: Int
+        get() = prefs.getInt(KEY_V86DANMAKUSENDCOOLDOWN, 0)
+        set(value) = prefs.edit().putInt(KEY_V86DANMAKUSENDCOOLDOWN, value).apply()
+
+    var v86SubtitleOutlineWidth: Int
+        get() = prefs.getInt(KEY_V86SUBTITLEOUTLINEWIDTH, 2)
+        set(value) = prefs.edit().putInt(KEY_V86SUBTITLEOUTLINEWIDTH, value).apply()
+
+    var v87VideoBrightnessCurveCustom: Int
+        get() = prefs.getInt(KEY_V87VIDEOBRIGHTNESSCURVECUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V87VIDEOBRIGHTNESSCURVECUSTOM, value).apply()
+
+    var v87DanmakuLineHeightCustom: Int
+        get() = prefs.getInt(KEY_V87DANMAKULINEHEIGHTCUSTOM, 100)
+        set(value) = prefs.edit().putInt(KEY_V87DANMAKULINEHEIGHTCUSTOM, value).apply()
+
+    var v87SubtitleShadowOffsetX: Int
+        get() = prefs.getInt(KEY_V87SUBTITLESHADOWOFFSETX, 2)
+        set(value) = prefs.edit().putInt(KEY_V87SUBTITLESHADOWOFFSETX, value).apply()
+
+    var v87GestureSwipeThreshold: Int
+        get() = prefs.getInt(KEY_V87GESTURESWIPETHRESHOLD, 50)
+        set(value) = prefs.edit().putInt(KEY_V87GESTURESWIPETHRESHOLD, value).apply()
+
+    var v87CastAudioSampleRate: Int
+        get() = prefs.getInt(KEY_V87CASTAUDIOSAMPLERATE, 0)
+        set(value) = prefs.edit().putInt(KEY_V87CASTAUDIOSAMPLERATE, value).apply()
+
+    var v87PlaylistAutoDownload: Boolean
+        get() = prefs.getBoolean(KEY_V87PLAYLISTAUTODOWNLOAD, false)
+        set(value) = prefs.edit().putBoolean(KEY_V87PLAYLISTAUTODOWNLOAD, value).apply()
+
+    var v87CacheCleanupSchedule: Int
+        get() = prefs.getInt(KEY_V87CACHECLEANUPSCHEDULE, 0)
+        set(value) = prefs.edit().putInt(KEY_V87CACHECLEANUPSCHEDULE, value).apply()
+
+    var v87ProgressBarSnapToChapter: Boolean
+        get() = prefs.getBoolean(KEY_V87PROGRESSBARSNAPTOCHAPTER, false)
+        set(value) = prefs.edit().putBoolean(KEY_V87PROGRESSBARSNAPTOCHAPTER, value).apply()
+
+    var v87VolumeLimitMax: Int
+        get() = prefs.getInt(KEY_V87VOLUMELIMITMAX, 100)
+        set(value) = prefs.edit().putInt(KEY_V87VOLUMELIMITMAX, value).apply()
+
+    var v87HistoryAutoDeleteExpired: Boolean
+        get() = prefs.getBoolean(KEY_V87HISTORYAUTODELETEEXPIRED, false)
+        set(value) = prefs.edit().putBoolean(KEY_V87HISTORYAUTODELETEEXPIRED, value).apply()
+
+    var v87PlaybackAutoSkipFiller: Boolean
+        get() = prefs.getBoolean(KEY_V87PLAYBACKAUTOSKIPFILLER, false)
+        set(value) = prefs.edit().putBoolean(KEY_V87PLAYBACKAUTOSKIPFILLER, value).apply()
+
+    var v87ScreenshotCloudSync: Boolean
+        get() = prefs.getBoolean(KEY_V87SCREENSHOTCLOUDSYNC, false)
+        set(value) = prefs.edit().putBoolean(KEY_V87SCREENSHOTCLOUDSYNC, value).apply()
+
+    var v87VideoGammaCurveCustom: Int
+        get() = prefs.getInt(KEY_V87VIDEOGAMMACURVECUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V87VIDEOGAMMACURVECUSTOM, value).apply()
+
+    var v87DanmakuMaxOnScreen: Int
+        get() = prefs.getInt(KEY_V87DANMAKUMAXONSCREEN, 0)
+        set(value) = prefs.edit().putInt(KEY_V87DANMAKUMAXONSCREEN, value).apply()
+
+    var v87SubtitleShadowOffsetY: Int
+        get() = prefs.getInt(KEY_V87SUBTITLESHADOWOFFSETY, 2)
+        set(value) = prefs.edit().putInt(KEY_V87SUBTITLESHADOWOFFSETY, value).apply()
+
+    var v88VideoWhiteBalanceCustom: Int
+        get() = prefs.getInt(KEY_V88VIDEOWHITEBALANCECUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V88VIDEOWHITEBALANCECUSTOM, value).apply()
+
+    var v88DanmakuSendAnimation: Int
+        get() = prefs.getInt(KEY_V88DANMAKUSENDANIMATION, 0)
+        set(value) = prefs.edit().putInt(KEY_V88DANMAKUSENDANIMATION, value).apply()
+
+    var v88SubtitleOutlineColor: Int
+        get() = prefs.getInt(KEY_V88SUBTITLEOUTLINECOLOR, 0)
+        set(value) = prefs.edit().putInt(KEY_V88SUBTITLEOUTLINECOLOR, value).apply()
+
+    var v88GestureTapAction: Int
+        get() = prefs.getInt(KEY_V88GESTURETAPACTION, 0)
+        set(value) = prefs.edit().putInt(KEY_V88GESTURETAPACTION, value).apply()
+
+    var v88CastVideoResolution: Int
+        get() = prefs.getInt(KEY_V88CASTVIDEORESOLUTION, 0)
+        set(value) = prefs.edit().putInt(KEY_V88CASTVIDEORESOLUTION, value).apply()
+
+    var v88PlaylistAutoMarkWatched: Boolean
+        get() = prefs.getBoolean(KEY_V88PLAYLISTAUTOMARKWATCHED, true)
+        set(value) = prefs.edit().putBoolean(KEY_V88PLAYLISTAUTOMARKWATCHED, value).apply()
+
+    var v88CachePreloadNextEpisode: Boolean
+        get() = prefs.getBoolean(KEY_V88CACHEPRELOADNEXTEPISODE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V88CACHEPRELOADNEXTEPISODE, value).apply()
+
+    var v88ProgressBarCustomLabel: Boolean
+        get() = prefs.getBoolean(KEY_V88PROGRESSBARCUSTOMLABEL, false)
+        set(value) = prefs.edit().putBoolean(KEY_V88PROGRESSBARCUSTOMLABEL, value).apply()
+
+    var v88VolumeAutoMuteOnCall: Boolean
+        get() = prefs.getBoolean(KEY_V88VOLUMEAUTOMUTEONCALL, true)
+        set(value) = prefs.edit().putBoolean(KEY_V88VOLUMEAUTOMUTEONCALL, value).apply()
+
+    var v88HistoryShowThumbnails: Boolean
+        get() = prefs.getBoolean(KEY_V88HISTORYSHOWTHUMBNAILS, true)
+        set(value) = prefs.edit().putBoolean(KEY_V88HISTORYSHOWTHUMBNAILS, value).apply()
+
+    var v88PlaybackAutoResumePosition: Boolean
+        get() = prefs.getBoolean(KEY_V88PLAYBACKAUTORESUMEPOSITION, true)
+        set(value) = prefs.edit().putBoolean(KEY_V88PLAYBACKAUTORESUMEPOSITION, value).apply()
+
+    var v88ScreenshotFormatCustom: Int
+        get() = prefs.getInt(KEY_V88SCREENSHOTFORMATCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V88SCREENSHOTFORMATCUSTOM, value).apply()
+
+    var v88VideoTintCustom: Int
+        get() = prefs.getInt(KEY_V88VIDEOTINTCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V88VIDEOTINTCUSTOM, value).apply()
+
+    var v88DanmakuScrollSpeedCurve: Int
+        get() = prefs.getInt(KEY_V88DANMAKUSCROLLSPEEDCURVE, 0)
+        set(value) = prefs.edit().putInt(KEY_V88DANMAKUSCROLLSPEEDCURVE, value).apply()
+
+    var v88SubtitleShadowBlur: Int
+        get() = prefs.getInt(KEY_V88SUBTITLESHADOWBLUR, 2)
+        set(value) = prefs.edit().putInt(KEY_V88SUBTITLESHADOWBLUR, value).apply()
+
+    var v89VideoBlackLevelCustom: Int
+        get() = prefs.getInt(KEY_V89VIDEOBLACKLEVELCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V89VIDEOBLACKLEVELCUSTOM, value).apply()
+
+    var v89DanmakuFontKerningCustom: Int
+        get() = prefs.getInt(KEY_V89DANMAKUFONTKERNINGCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V89DANMAKUFONTKERNINGCUSTOM, value).apply()
+
+    var v89SubtitleAnimationLoopCount: Int
+        get() = prefs.getInt(KEY_V89SUBTITLEANIMATIONLOOPCOUNT, 0)
+        set(value) = prefs.edit().putInt(KEY_V89SUBTITLEANIMATIONLOOPCOUNT, value).apply()
+
+    var v89GesturePinchAction: Int
+        get() = prefs.getInt(KEY_V89GESTUREPINCHACTION, 0)
+        set(value) = prefs.edit().putInt(KEY_V89GESTUREPINCHACTION, value).apply()
+
+    var v89CastAudioBitrate: Int
+        get() = prefs.getInt(KEY_V89CASTAUDIOBITRATE, 0)
+        set(value) = prefs.edit().putInt(KEY_V89CASTAUDIOBITRATE, value).apply()
+
+    var v89PlaylistAutoGroupBySeries: Boolean
+        get() = prefs.getBoolean(KEY_V89PLAYLISTAUTOGROUPBYSERIES, false)
+        set(value) = prefs.edit().putBoolean(KEY_V89PLAYLISTAUTOGROUPBYSERIES, value).apply()
+
+    var v89CacheVerifyOnStart: Boolean
+        get() = prefs.getBoolean(KEY_V89CACHEVERIFYONSTART, false)
+        set(value) = prefs.edit().putBoolean(KEY_V89CACHEVERIFYONSTART, value).apply()
+
+    var v89ProgressBarMidpointIndicator: Boolean
+        get() = prefs.getBoolean(KEY_V89PROGRESSBARMIDPOINTINDICATOR, false)
+        set(value) = prefs.edit().putBoolean(KEY_V89PROGRESSBARMIDPOINTINDICATOR, value).apply()
+
+    var v89VolumeAutoLowerOnNotification: Boolean
+        get() = prefs.getBoolean(KEY_V89VOLUMEAUTOLOWERONNOTIFICATION, false)
+        set(value) = prefs.edit().putBoolean(KEY_V89VOLUMEAUTOLOWERONNOTIFICATION, value).apply()
+
+    var v89HistorySortOrder: Int
+        get() = prefs.getInt(KEY_V89HISTORYSORTORDER, 0)
+        set(value) = prefs.edit().putInt(KEY_V89HISTORYSORTORDER, value).apply()
+
+    var v89PlaybackAutoSkipPreview: Boolean
+        get() = prefs.getBoolean(KEY_V89PLAYBACKAUTOSKIPPREVIEW, false)
+        set(value) = prefs.edit().putBoolean(KEY_V89PLAYBACKAUTOSKIPPREVIEW, value).apply()
+
+    var v89ScreenshotQualityCustom: Int
+        get() = prefs.getInt(KEY_V89SCREENSHOTQUALITYCUSTOM, 90)
+        set(value) = prefs.edit().putInt(KEY_V89SCREENSHOTQUALITYCUSTOM, value).apply()
+
+    var v89VideoWhitePointCustom: Int
+        get() = prefs.getInt(KEY_V89VIDEOWHITEPOINTCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V89VIDEOWHITEPOINTCUSTOM, value).apply()
+
+    var v89DanmakuScrollSpeedMin: Int
+        get() = prefs.getInt(KEY_V89DANMAKUSCROLLSPEEDMIN, 50)
+        set(value) = prefs.edit().putInt(KEY_V89DANMAKUSCROLLSPEEDMIN, value).apply()
+
+    var v89SubtitlePositionYCustom: Int
+        get() = prefs.getInt(KEY_V89SUBTITLEPOSITIONYCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V89SUBTITLEPOSITIONYCUSTOM, value).apply()
+
+    var v90VideoMidtoneCustom: Int
+        get() = prefs.getInt(KEY_V90VIDEOMIDTONECUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V90VIDEOMIDTONECUSTOM, value).apply()
+
+    var v90DanmakuScrollSpeedMax: Int
+        get() = prefs.getInt(KEY_V90DANMAKUSCROLLSPEEDMAX, 150)
+        set(value) = prefs.edit().putInt(KEY_V90DANMAKUSCROLLSPEEDMAX, value).apply()
+
+    var v90SubtitlePositionXCustom: Int
+        get() = prefs.getInt(KEY_V90SUBTITLEPOSITIONXCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V90SUBTITLEPOSITIONXCUSTOM, value).apply()
+
+    var v90GestureRotationAction: Int
+        get() = prefs.getInt(KEY_V90GESTUREROTATIONACTION, 0)
+        set(value) = prefs.edit().putInt(KEY_V90GESTUREROTATIONACTION, value).apply()
+
+    var v90CastVideoCodecCustom: Int
+        get() = prefs.getInt(KEY_V90CASTVIDEOCODECCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V90CASTVIDEOCODECCUSTOM, value).apply()
+
+    var v90PlaylistAutoSkipWatched: Boolean
+        get() = prefs.getBoolean(KEY_V90PLAYLISTAUTOSKIPWATCHED, false)
+        set(value) = prefs.edit().putBoolean(KEY_V90PLAYLISTAUTOSKIPWATCHED, value).apply()
+
+    var v90CacheBackgroundCleanup: Boolean
+        get() = prefs.getBoolean(KEY_V90CACHEBACKGROUNDCLEANUP, false)
+        set(value) = prefs.edit().putBoolean(KEY_V90CACHEBACKGROUNDCLEANUP, value).apply()
+
+    var v90ProgressBarEstimatedTime: Boolean
+        get() = prefs.getBoolean(KEY_V90PROGRESSBARESTIMATEDTIME, true)
+        set(value) = prefs.edit().putBoolean(KEY_V90PROGRESSBARESTIMATEDTIME, value).apply()
+
+    var v90VolumeSpatialWidth: Int
+        get() = prefs.getInt(KEY_V90VOLUMESPATIALWIDTH, 50)
+        set(value) = prefs.edit().putInt(KEY_V90VOLUMESPATIALWIDTH, value).apply()
+
+    var v90HistoryAutoSyncCloud: Boolean
+        get() = prefs.getBoolean(KEY_V90HISTORYAUTOSYNCCLOUD, false)
+        set(value) = prefs.edit().putBoolean(KEY_V90HISTORYAUTOSYNCCLOUD, value).apply()
+
+    var v90PlaybackAutoNextOnBuffer: Boolean
+        get() = prefs.getBoolean(KEY_V90PLAYBACKAUTONEXTONBUFFER, false)
+        set(value) = prefs.edit().putBoolean(KEY_V90PLAYBACKAUTONEXTONBUFFER, value).apply()
+
+    var v90ScreenshotAutoDeleteOld: Boolean
+        get() = prefs.getBoolean(KEY_V90SCREENSHOTAUTODELETEOLD, false)
+        set(value) = prefs.edit().putBoolean(KEY_V90SCREENSHOTAUTODELETEOLD, value).apply()
+
+    var v90VideoHighlightCustom: Int
+        get() = prefs.getInt(KEY_V90VIDEOHIGHLIGHTCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V90VIDEOHIGHLIGHTCUSTOM, value).apply()
+
+    var v90DanmakuSendMaxLength: Int
+        get() = prefs.getInt(KEY_V90DANMAKUSENDMAXLENGTH, 0)
+        set(value) = prefs.edit().putInt(KEY_V90DANMAKUSENDMAXLENGTH, value).apply()
+
+    var v90SubtitleAnimationDelayCustom: Int
+        get() = prefs.getInt(KEY_V90SUBTITLEANIMATIONDELAYCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V90SUBTITLEANIMATIONDELAYCUSTOM, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -15420,5 +16023,158 @@ class AppPrefs(context: Context) {
         const val KEY_V80VIDEOADAPTIVEMOTIONBLUR = "v80videoAdaptiveMotionBlur"
         const val KEY_V80DANMAKUFONTSPACINGCUSTOM = "v80danmakuFontSpacingCustom"
         const val KEY_V80SUBTITLEANIMATIONLOOP = "v80subtitleAnimationLoop"
+
+        // ==================== v81-v90 New Unique Features ====================
+
+        const val KEY_V81NETWORKBANDWIDTHADAPT = "v81networkBandwidthAdapt"
+        const val KEY_V81DANMAKUOPACITYCURVECUSTOM = "v81danmakuOpacityCurveCustom"
+        const val KEY_V81SUBTITLEPOSITIONLOCK = "v81subtitlePositionLock"
+        const val KEY_V81GESTUREPINCHZOOMSPEED = "v81gesturePinchZoomSpeed"
+        const val KEY_V81CASTRECONNECTAUTO = "v81castReconnectAuto"
+        const val KEY_V81PLAYLISTBOOKMARKSYNC = "v81playlistBookmarkSync"
+        const val KEY_V81CACHEPREBUFFERSIZE = "v81cachePrebufferSize"
+        const val KEY_V81PROGRESSBARDOUBLETAPSEEK = "v81progressBarDoubleTapSeek"
+        const val KEY_V81VOLUMELOUDNESSNORMALIZE = "v81volumeLoudnessNormalize"
+        const val KEY_V81HISTORYSEARCHFILTER = "v81historySearchFilter"
+        const val KEY_V81PLAYBACKSKIPADAUTO = "v81playbackSkipAdAuto"
+        const val KEY_V81SCREENSHOTCOUNTDISPLAY = "v81screenshotCountDisplay"
+        const val KEY_V81VIDEOUPSCALEAI = "v81videoUpscaleAI"
+        const val KEY_V81DANMAKUSENDRATELIMIT = "v81danmakuSendRateLimit"
+        const val KEY_V81SUBTITLETIMINGOFFSET = "v81subtitleTimingOffset"
+        const val KEY_V82VIDEODEINTERLACEMODE = "v82videoDeinterlaceMode"
+        const val KEY_V82DANMAKUFONTSIZEAUTORANGE = "v82danmakuFontSizeAutoRange"
+        const val KEY_V82SUBTITLEBGBLURCUSTOM = "v82subtitleBgBlurCustom"
+        const val KEY_V82GESTUREEDGESWIPEACTION = "v82gestureEdgeSwipeAction"
+        const val KEY_V82CASTVIDEOBITRATELIMIT = "v82castVideoBitrateLimit"
+        const val KEY_V82PLAYLISTDUPLICATEDETECT = "v82playlistDuplicateDetect"
+        const val KEY_V82CACHESMARTPREFETCH = "v82cacheSmartPrefetch"
+        const val KEY_V82PROGRESSBARSWIPESEEK = "v82progressBarSwipeSeek"
+        const val KEY_V82VOLUMENIGHTMODE = "v82volumeNightMode"
+        const val KEY_V82HISTORYGROUPBYDATE = "v82historyGroupByDate"
+        const val KEY_V82PLAYBACKSPEEDMEMORY = "v82playbackSpeedMemory"
+        const val KEY_V82SCREENSHOTTIMESTAMP = "v82screenshotTimestamp"
+        const val KEY_V82VIDEOCOLORTEMPERATURECUSTOM = "v82videoColorTemperatureCustom"
+        const val KEY_V82DANMAKUMERGEALGORITHM = "v82danmakuMergeAlgorithm"
+        const val KEY_V82SUBTITLESYNCAUTO = "v82subtitleSyncAuto"
+        const val KEY_V83VIDEONOISEGATECUSTOM = "v83videoNoiseGateCustom"
+        const val KEY_V83DANMAKUSCROLLMOMENTUM = "v83danmakuScrollMomentum"
+        const val KEY_V83SUBTITLEKARAOKEHIGHLIGHT = "v83subtitleKaraokeHighlight"
+        const val KEY_V83GESTURETHREEFINGERACTION = "v83gestureThreeFingerAction"
+        const val KEY_V83CASTAUDIODELAY = "v83castAudioDelay"
+        const val KEY_V83PLAYLISTSMARTSORT = "v83playlistSmartSort"
+        const val KEY_V83CACHEWIFIPRIORITY = "v83cacheWIFIPriority"
+        const val KEY_V83PROGRESSBARGESTUREAREA = "v83progressBarGestureArea"
+        const val KEY_V83VOLUMEBALANCELR = "v83volumeBalanceLR"
+        const val KEY_V83HISTORYMAXITEMS = "v83historyMaxItems"
+        const val KEY_V83PLAYBACKAUTONEXTEPISODE = "v83playbackAutoNextEpisode"
+        const val KEY_V83SCREENSHOTOVERLAYINFO = "v83screenshotOverlayInfo"
+        const val KEY_V83VIDEOIMAGESHARPCUSTOM = "v83videoImageSharpCustom"
+        const val KEY_V83DANMAKUCOLORPALETTE = "v83danmakuColorPalette"
+        const val KEY_V83SUBTITLEBGOPACITYCUSTOM = "v83subtitleBgOpacityCustom"
+        const val KEY_V84VIDEODETAILENHANCECUSTOM = "v84videoDetailEnhanceCustom"
+        const val KEY_V84DANMAKUSCROLLFRICTION = "v84danmakuScrollFriction"
+        const val KEY_V84SUBTITLEBILINGUALDISPLAY = "v84subtitleBilingualDisplay"
+        const val KEY_V84GESTUREFOURFINGERACTION = "v84gestureFourFingerAction"
+        const val KEY_V84CASTVIDEOHDR10CUSTOM = "v84castVideoHDR10Custom"
+        const val KEY_V84PLAYLISTAUTOPLAYNEXT = "v84playlistAutoPlayNext"
+        const val KEY_V84CACHESTORAGEANALYZE = "v84cacheStorageAnalyze"
+        const val KEY_V84PROGRESSBARHAPTICFEEDBACK = "v84progressBarHapticFeedback"
+        const val KEY_V84VOLUMEFADEINDURATION = "v84volumeFadeInDuration"
+        const val KEY_V84HISTORYAUTOCLEANUP = "v84historyAutoCleanup"
+        const val KEY_V84PLAYBACKAUTOPLAYONOPEN = "v84playbackAutoPlayOnOpen"
+        const val KEY_V84SCREENSHOTFOLDERPATH = "v84screenshotFolderPath"
+        const val KEY_V84VIDEOVIVIDNESSCUSTOM = "v84videoVividnessCustom"
+        const val KEY_V84DANMAKUFONTITALICTOGGLE = "v84danmakuFontItalicToggle"
+        const val KEY_V84SUBTITLEPOSITIONCUSTOM = "v84subtitlePositionCustom"
+        const val KEY_V85VIDEOLUMASHARPENCUSTOM = "v85videoLumaSharpenCustom"
+        const val KEY_V85DANMAKUBGPADDINGCUSTOM = "v85danmakuBgPaddingCustom"
+        const val KEY_V85SUBTITLEBGCOLORCUSTOM = "v85subtitleBgColorCustom"
+        const val KEY_V85GESTURELONGPRESSACTION = "v85gestureLongPressAction"
+        const val KEY_V85CASTAUDIOCODECCUSTOM = "v85castAudioCodecCustom"
+        const val KEY_V85PLAYLISTAUTOLOADMORE = "v85playlistAutoLoadMore"
+        const val KEY_V85CACHECLEANUPONLOWSTORAGE = "v85cacheCleanupOnLowStorage"
+        const val KEY_V85PROGRESSBARTOOLTIP = "v85progressBarTooltip"
+        const val KEY_V85VOLUMEFADEOUTDURATION = "v85volumeFadeOutDuration"
+        const val KEY_V85HISTORYEXPORTFORMAT = "v85historyExportFormat"
+        const val KEY_V85PLAYBACKAUTOLOOPSINGLE = "v85playbackAutoLoopSingle"
+        const val KEY_V85SCREENSHOTNAMINGRULE = "v85screenshotNamingRule"
+        const val KEY_V85VIDEOCHROMASHARPENCUSTOM = "v85videoChromaSharpenCustom"
+        const val KEY_V85DANMAKUBGBORDERTOGGLE = "v85danmakuBgBorderToggle"
+        const val KEY_V85SUBTITLEFONTSIZEAUTO = "v85subtitleFontSizeAuto"
+        const val KEY_V86VIDEOCONTRASTCURVECUSTOM = "v86videoContrastCurveCustom"
+        const val KEY_V86DANMAKUFONTSTRETCHCUSTOM = "v86danmakuFontStretchCustom"
+        const val KEY_V86SUBTITLEBGRADIUSCUSTOM = "v86subtitleBgRadiusCustom"
+        const val KEY_V86GESTUREDOUBLETAPACTION = "v86gestureDoubleTapAction"
+        const val KEY_V86CASTVIDEOPROTOCOL = "v86castVideoProtocol"
+        const val KEY_V86PLAYLISTAUTOREFRESH = "v86playlistAutoRefresh"
+        const val KEY_V86CACHEMAXSIZECUSTOM = "v86cacheMaxSizeCustom"
+        const val KEY_V86PROGRESSBARLIVEEDGE = "v86progressBarLiveEdge"
+        const val KEY_V86VOLUMEBOOSTSTRENGTH = "v86volumeBoostStrength"
+        const val KEY_V86HISTORYIMPORTFORMAT = "v86historyImportFormat"
+        const val KEY_V86PLAYBACKAUTOQUALITYSWITCH = "v86playbackAutoQualitySwitch"
+        const val KEY_V86SCREENSHOTAUTOUPLOAD = "v86screenshotAutoUpload"
+        const val KEY_V86VIDEOSATURATIONCURVECUSTOM = "v86videoSaturationCurveCustom"
+        const val KEY_V86DANMAKUSENDCOOLDOWN = "v86danmakuSendCooldown"
+        const val KEY_V86SUBTITLEOUTLINEWIDTH = "v86subtitleOutlineWidth"
+        const val KEY_V87VIDEOBRIGHTNESSCURVECUSTOM = "v87videoBrightnessCurveCustom"
+        const val KEY_V87DANMAKULINEHEIGHTCUSTOM = "v87danmakuLineHeightCustom"
+        const val KEY_V87SUBTITLESHADOWOFFSETX = "v87subtitleShadowOffsetX"
+        const val KEY_V87GESTURESWIPETHRESHOLD = "v87gestureSwipeThreshold"
+        const val KEY_V87CASTAUDIOSAMPLERATE = "v87castAudioSampleRate"
+        const val KEY_V87PLAYLISTAUTODOWNLOAD = "v87playlistAutoDownload"
+        const val KEY_V87CACHECLEANUPSCHEDULE = "v87cacheCleanupSchedule"
+        const val KEY_V87PROGRESSBARSNAPTOCHAPTER = "v87progressBarSnapToChapter"
+        const val KEY_V87VOLUMELIMITMAX = "v87volumeLimitMax"
+        const val KEY_V87HISTORYAUTODELETEEXPIRED = "v87historyAutoDeleteExpired"
+        const val KEY_V87PLAYBACKAUTOSKIPFILLER = "v87playbackAutoSkipFiller"
+        const val KEY_V87SCREENSHOTCLOUDSYNC = "v87screenshotCloudSync"
+        const val KEY_V87VIDEOGAMMACURVECUSTOM = "v87videoGammaCurveCustom"
+        const val KEY_V87DANMAKUMAXONSCREEN = "v87danmakuMaxOnScreen"
+        const val KEY_V87SUBTITLESHADOWOFFSETY = "v87subtitleShadowOffsetY"
+        const val KEY_V88VIDEOWHITEBALANCECUSTOM = "v88videoWhiteBalanceCustom"
+        const val KEY_V88DANMAKUSENDANIMATION = "v88danmakuSendAnimation"
+        const val KEY_V88SUBTITLEOUTLINECOLOR = "v88subtitleOutlineColor"
+        const val KEY_V88GESTURETAPACTION = "v88gestureTapAction"
+        const val KEY_V88CASTVIDEORESOLUTION = "v88castVideoResolution"
+        const val KEY_V88PLAYLISTAUTOMARKWATCHED = "v88playlistAutoMarkWatched"
+        const val KEY_V88CACHEPRELOADNEXTEPISODE = "v88cachePreloadNextEpisode"
+        const val KEY_V88PROGRESSBARCUSTOMLABEL = "v88progressBarCustomLabel"
+        const val KEY_V88VOLUMEAUTOMUTEONCALL = "v88volumeAutoMuteOnCall"
+        const val KEY_V88HISTORYSHOWTHUMBNAILS = "v88historyShowThumbnails"
+        const val KEY_V88PLAYBACKAUTORESUMEPOSITION = "v88playbackAutoResumePosition"
+        const val KEY_V88SCREENSHOTFORMATCUSTOM = "v88screenshotFormatCustom"
+        const val KEY_V88VIDEOTINTCUSTOM = "v88videoTintCustom"
+        const val KEY_V88DANMAKUSCROLLSPEEDCURVE = "v88danmakuScrollSpeedCurve"
+        const val KEY_V88SUBTITLESHADOWBLUR = "v88subtitleShadowBlur"
+        const val KEY_V89VIDEOBLACKLEVELCUSTOM = "v89videoBlackLevelCustom"
+        const val KEY_V89DANMAKUFONTKERNINGCUSTOM = "v89danmakuFontKerningCustom"
+        const val KEY_V89SUBTITLEANIMATIONLOOPCOUNT = "v89subtitleAnimationLoopCount"
+        const val KEY_V89GESTUREPINCHACTION = "v89gesturePinchAction"
+        const val KEY_V89CASTAUDIOBITRATE = "v89castAudioBitrate"
+        const val KEY_V89PLAYLISTAUTOGROUPBYSERIES = "v89playlistAutoGroupBySeries"
+        const val KEY_V89CACHEVERIFYONSTART = "v89cacheVerifyOnStart"
+        const val KEY_V89PROGRESSBARMIDPOINTINDICATOR = "v89progressBarMidpointIndicator"
+        const val KEY_V89VOLUMEAUTOLOWERONNOTIFICATION = "v89volumeAutoLowerOnNotification"
+        const val KEY_V89HISTORYSORTORDER = "v89historySortOrder"
+        const val KEY_V89PLAYBACKAUTOSKIPPREVIEW = "v89playbackAutoSkipPreview"
+        const val KEY_V89SCREENSHOTQUALITYCUSTOM = "v89screenshotQualityCustom"
+        const val KEY_V89VIDEOWHITEPOINTCUSTOM = "v89videoWhitePointCustom"
+        const val KEY_V89DANMAKUSCROLLSPEEDMIN = "v89danmakuScrollSpeedMin"
+        const val KEY_V89SUBTITLEPOSITIONYCUSTOM = "v89subtitlePositionYCustom"
+        const val KEY_V90VIDEOMIDTONECUSTOM = "v90videoMidtoneCustom"
+        const val KEY_V90DANMAKUSCROLLSPEEDMAX = "v90danmakuScrollSpeedMax"
+        const val KEY_V90SUBTITLEPOSITIONXCUSTOM = "v90subtitlePositionXCustom"
+        const val KEY_V90GESTUREROTATIONACTION = "v90gestureRotationAction"
+        const val KEY_V90CASTVIDEOCODECCUSTOM = "v90castVideoCodecCustom"
+        const val KEY_V90PLAYLISTAUTOSKIPWATCHED = "v90playlistAutoSkipWatched"
+        const val KEY_V90CACHEBACKGROUNDCLEANUP = "v90cacheBackgroundCleanup"
+        const val KEY_V90PROGRESSBARESTIMATEDTIME = "v90progressBarEstimatedTime"
+        const val KEY_V90VOLUMESPATIALWIDTH = "v90volumeSpatialWidth"
+        const val KEY_V90HISTORYAUTOSYNCCLOUD = "v90historyAutoSyncCloud"
+        const val KEY_V90PLAYBACKAUTONEXTONBUFFER = "v90playbackAutoNextOnBuffer"
+        const val KEY_V90SCREENSHOTAUTODELETEOLD = "v90screenshotAutoDeleteOld"
+        const val KEY_V90VIDEOHIGHLIGHTCUSTOM = "v90videoHighlightCustom"
+        const val KEY_V90DANMAKUSENDMAXLENGTH = "v90danmakuSendMaxLength"
+        const val KEY_V90SUBTITLEANIMATIONDELAYCUSTOM = "v90subtitleAnimationDelayCustom"
     }
 }
