@@ -1963,6 +1963,15 @@ internal fun PlayerActivity.showv40SubtitleStrokeColorToggle() {
         .option(switchText(current)) { BiliClient.prefs.v40SubtitleStrokeColor = !current }
         .show()
 }
+// 40.15: 自动去重
+internal fun PlayerActivity.showv40PlaylistAutoRemoveDuplicatedToggle() {
+    val current = BiliClient.prefs.v40PlaylistAutoRemoveDuplicated
+    AppPopup.Builder(this)
+        .title("自动去重")
+        .option(switchText(current)) { BiliClient.prefs.v40PlaylistAutoRemoveDuplicated = !current }
+        .show()
+}
+
 
 
 
