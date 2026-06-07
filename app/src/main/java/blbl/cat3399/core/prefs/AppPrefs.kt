@@ -1858,6 +1858,11 @@ class AppPrefs(context: Context) {
     var v33PlaybackSkipIntroSec: Int
         get() = prefs.getInt(KEY_V33_PLAYBACK_SKIP_INTRO_SEC, 0)
         set(value) = prefs.edit().putInt(KEY_V33_PLAYBACK_SKIP_INTRO_SEC, value).apply()
+    // v33.9: 弹幕自定义字体路径
+    var v33DanmakuCustomFontPath: Boolean
+        get() = prefs.getBoolean(KEY_V33_DANMAKU_CUSTOM_FONT_PATH, false)
+        set(value) = prefs.edit().putBoolean(KEY_V33_DANMAKU_CUSTOM_FONT_PATH, value).apply()
+
 
 
 
@@ -3866,6 +3871,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V33_SUBTITLE_BORDER_WIDTH = "v33_subtitle_border_width"
         private const val KEY_V33_VIDEO_HDR_TONE_MAP = "v33_video_hdr_tone_map"
         private const val KEY_V33_PLAYBACK_SKIP_INTRO_SEC = "v33_playback_skip_intro_sec"
+        private const val KEY_V33_DANMAKU_CUSTOM_FONT_PATH = "v33_danmaku_custom_font_path"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
