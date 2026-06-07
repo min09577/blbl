@@ -1910,6 +1910,13 @@ class AppPrefs(context: Context) {
     var v33AudioBassBoost: Int
         get() = prefs.getInt(KEY_V33_AUDIO_BASS_BOOST, 0)
         set(value) = prefs.edit().putInt(KEY_V33_AUDIO_BASS_BOOST, value).apply()
+    // v34.1: 弹幕最大显示时长(秒)
+    var v34DanmakuMaxDisplaySec: Int
+        get() = prefs.getInt(KEY_V34_DANMAKU_MAX_DISPLAY_SEC, 0)
+        set(value) = prefs.edit().putInt(KEY_V34_DANMAKU_MAX_DISPLAY_SEC, value).apply()
+
+
+    // ===== v34.x =====
 
 
     // ===== v33.x =====
@@ -3266,8 +3273,11 @@ class AppPrefs(context: Context) {
             setOf(
                 PLAYER_OSD_BTN_PREV,
         private const val KEY_V33_PLAYLIST_REVERSE_ORDER = "v33_playlist_reverse_order"
+
+        // ===== v34.x KEY =====
                 PLAYER_OSD_BTN_PLAY_PAUSE,
                 PLAYER_OSD_BTN_NEXT,
+        private const val KEY_V34_DANMAKU_MAX_DISPLAY_SEC = "v34_danmaku_max_display_sec"
                 PLAYER_OSD_BTN_SUBTITLE,
                 PLAYER_OSD_BTN_DANMAKU,
                 PLAYER_OSD_BTN_COMMENTS,
