@@ -9562,4 +9562,14 @@ internal fun PlayerActivity.showv35DanmakuGradientColorToggle() {
         .show()
 }
 
+
+// 35.10: 音频响度标准化
+internal fun PlayerActivity.showv35AudioLoudnessNormalizeToggle() {
+    val current = BiliClient.prefs.v35AudioLoudnessNormalize
+    AppPopup.Builder(this)
+        .title("音频响度标准化")
+        .option(switchText(current)) { BiliClient.prefs.v35AudioLoudnessNormalize = !current }
+        .show()
+}
+
 }
