@@ -8867,4 +8867,19 @@ internal fun PlayerActivity.showv31DanmakuLayerOrderDialog() {
         .show()
 }
 
+
+// 31.12: 字幕同步偏移(ms)
+internal fun PlayerActivity.showv31SubtitleSyncOffsetDialog() {
+    val current = BiliClient.prefs.v31SubtitleSyncOffset
+    AppPopup.Builder(this)
+        .title("字幕同步偏移(ms)")
+        .option("0") { BiliClient.prefs.v31SubtitleSyncOffset = 0 }
+        .option("1") { BiliClient.prefs.v31SubtitleSyncOffset = 1 }
+        .option("2") { BiliClient.prefs.v31SubtitleSyncOffset = 2 }
+        .option("3") { BiliClient.prefs.v31SubtitleSyncOffset = 3 }
+        .option("5") { BiliClient.prefs.v31SubtitleSyncOffset = 5 }
+        .option("10") { BiliClient.prefs.v31SubtitleSyncOffset = 10 }
+        .show()
+}
+
 }
