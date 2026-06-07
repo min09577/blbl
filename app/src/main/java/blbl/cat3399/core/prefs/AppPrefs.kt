@@ -2206,6 +2206,11 @@ class AppPrefs(context: Context) {
     var v37VideoBlackBarDetect: Boolean
         get() = prefs.getBoolean(KEY_V37_VIDEO_BLACK_BAR_DETECT, false)
         set(value) = prefs.edit().putBoolean(KEY_V37_VIDEO_BLACK_BAR_DETECT, value).apply()
+    // v38.2: 弹幕智能密度控制
+    var v38DanmakuSmartDensity: Boolean
+        get() = prefs.getBoolean(KEY_V38_DANMAKU_SMART_DENSITY, false)
+        set(value) = prefs.edit().putBoolean(KEY_V38_DANMAKU_SMART_DENSITY, value).apply()
+
     // v38.1: Gamma曲线预设
     var v38VideoGammaCurve: Int
         get() = prefs.getInt(KEY_V38_VIDEO_GAMMA_CURVE, 0)
@@ -3757,3 +3762,4 @@ class AppPrefs(context: Context) {
 
         // ===== v38.x KEY =====
         private const val KEY_V38_VIDEO_GAMMA_CURVE = "v38_video_gamma_curve"
+        private const val KEY_V38_DANMAKU_SMART_DENSITY = "v38_danmaku_smart_density"

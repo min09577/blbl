@@ -1519,6 +1519,15 @@ internal fun PlayerActivity.showv38VideoGammaCurveDialog() {
         .option("10") { BiliClient.prefs.v38VideoGammaCurve = 10 }
         .show()
 }
+// 38.2: 弹幕智能密度控制
+internal fun PlayerActivity.showv38DanmakuSmartDensityToggle() {
+    val current = BiliClient.prefs.v38DanmakuSmartDensity
+    AppPopup.Builder(this)
+        .title("弹幕智能密度控制")
+        .option(switchText(current)) { BiliClient.prefs.v38DanmakuSmartDensity = !current }
+        .show()
+}
+
 
 
 
