@@ -2270,6 +2270,11 @@ class AppPrefs(context: Context) {
     var v40SubtitleFontSerif: Boolean
         get() = prefs.getBoolean(KEY_V40_SUBTITLE_FONT_SERIF, false)
         set(value) = prefs.edit().putBoolean(KEY_V40_SUBTITLE_FONT_SERIF, value).apply()
+    // v40.7: AI超分辨率
+    var v40VideoAiSuperRes: Boolean
+        get() = prefs.getBoolean(KEY_V40_VIDEO_AI_SUPER_RES, false)
+        set(value) = prefs.edit().putBoolean(KEY_V40_VIDEO_AI_SUPER_RES, value).apply()
+
 
 
 
@@ -4484,6 +4489,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V40_PLAYER_KEY_SHORTCUT_MAP = "v40_player_key_shortcut_map"
         private const val KEY_V40_DANMAKU_BILI_EMOTE_PARSE = "v40_danmaku_bili_emote_parse"
         private const val KEY_V40_SUBTITLE_FONT_SERIF = "v40_subtitle_font_serif"
+        private const val KEY_V40_VIDEO_AI_SUPER_RES = "v40_video_ai_super_res"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
