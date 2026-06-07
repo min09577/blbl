@@ -2140,6 +2140,11 @@ class AppPrefs(context: Context) {
     var v38PlaybackBufferMinSec: Int
         get() = prefs.getInt(KEY_V38_PLAYBACK_BUFFER_MIN_SEC, 0)
         set(value) = prefs.edit().putInt(KEY_V38_PLAYBACK_BUFFER_MIN_SEC, value).apply()
+    // v38.9: 弹幕优先级
+    var v38DanmakuPriorityLevel: Int
+        get() = prefs.getInt(KEY_V38_DANMAKU_PRIORITY_LEVEL, 0)
+        set(value) = prefs.edit().putInt(KEY_V38_DANMAKU_PRIORITY_LEVEL, value).apply()
+
 
 
 
@@ -4289,6 +4294,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V38_SUBTITLE_LETTER_SPACING = "v38_subtitle_letter_spacing"
         private const val KEY_V38_VIDEO_CONTRAST_ENHANCE = "v38_video_contrast_enhance"
         private const val KEY_V38_PLAYBACK_BUFFER_MIN_SEC = "v38_playback_buffer_min_sec"
+        private const val KEY_V38_DANMAKU_PRIORITY_LEVEL = "v38_danmaku_priority_level"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
