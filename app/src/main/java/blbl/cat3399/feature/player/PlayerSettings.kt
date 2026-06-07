@@ -1325,6 +1325,20 @@ internal fun PlayerActivity.showv36DanmakuFanBadgeToggle() {
         .option(switchText(current)) { BiliClient.prefs.v36DanmakuFanBadge = !current }
         .show()
 }
+// 36.14: 字幕字重
+internal fun PlayerActivity.showv36SubtitleFontWeightCustomDialog() {
+    val current = BiliClient.prefs.v36SubtitleFontWeightCustom
+    AppPopup.Builder(this)
+        .title("字幕字重")
+        .option("0") { BiliClient.prefs.v36SubtitleFontWeightCustom = 0 }
+        .option("1") { BiliClient.prefs.v36SubtitleFontWeightCustom = 1 }
+        .option("2") { BiliClient.prefs.v36SubtitleFontWeightCustom = 2 }
+        .option("3") { BiliClient.prefs.v36SubtitleFontWeightCustom = 3 }
+        .option("5") { BiliClient.prefs.v36SubtitleFontWeightCustom = 5 }
+        .option("10") { BiliClient.prefs.v36SubtitleFontWeightCustom = 10 }
+        .show()
+}
+
 
 
 

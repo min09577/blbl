@@ -2058,6 +2058,11 @@ class AppPrefs(context: Context) {
     var v35VideoFrameRateOverride: Int
         get() = prefs.getInt(KEY_V35_VIDEO_FRAME_RATE_OVERRIDE, 0)
         set(value) = prefs.edit().putInt(KEY_V35_VIDEO_FRAME_RATE_OVERRIDE, value).apply()
+    // v36.14: 字幕字重
+    var v36SubtitleFontWeightCustom: Int
+        get() = prefs.getInt(KEY_V36_SUBTITLE_FONT_WEIGHT_CUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V36_SUBTITLE_FONT_WEIGHT_CUSTOM, value).apply()
+
     // v36.13: 弹幕粉丝徽章
     var v36DanmakuFanBadge: Boolean
         get() = prefs.getBoolean(KEY_V36_DANMAKU_FAN_BADGE, false)
@@ -3641,3 +3646,4 @@ class AppPrefs(context: Context) {
         private const val KEY_V36_PLAYER_SWIPE_BRIGHTNESS_CURVE = "v36_player_swipe_brightness_curve"
         private const val KEY_V36_VIDEO_SHARPEN_EDGE_MODE = "v36_video_sharpen_edge_mode"
         private const val KEY_V36_DANMAKU_FAN_BADGE = "v36_danmaku_fan_badge"
+        private const val KEY_V36_SUBTITLE_FONT_WEIGHT_CUSTOM = "v36_subtitle_font_weight_custom"
