@@ -9978,4 +9978,19 @@ internal fun PlayerActivity.showv37PlayerLongPressSpeedDialog() {
         .show()
 }
 
+
+// 37.12: 插帧模式
+internal fun PlayerActivity.showv37VideoInterpolationModeDialog() {
+    val current = BiliClient.prefs.v37VideoInterpolationMode
+    AppPopup.Builder(this)
+        .title("插帧模式")
+        .option("0") { BiliClient.prefs.v37VideoInterpolationMode = 0 }
+        .option("1") { BiliClient.prefs.v37VideoInterpolationMode = 1 }
+        .option("2") { BiliClient.prefs.v37VideoInterpolationMode = 2 }
+        .option("3") { BiliClient.prefs.v37VideoInterpolationMode = 3 }
+        .option("5") { BiliClient.prefs.v37VideoInterpolationMode = 5 }
+        .option("10") { BiliClient.prefs.v37VideoInterpolationMode = 10 }
+        .show()
+}
+
 }

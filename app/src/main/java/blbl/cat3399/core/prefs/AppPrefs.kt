@@ -2110,6 +2110,11 @@ class AppPrefs(context: Context) {
     var v37PlayerLongPressSpeed: Int
         get() = prefs.getInt(KEY_V37_PLAYER_LONG_PRESS_SPEED, 0)
         set(value) = prefs.edit().putInt(KEY_V37_PLAYER_LONG_PRESS_SPEED, value).apply()
+    // v37.12: 插帧模式
+    var v37VideoInterpolationMode: Int
+        get() = prefs.getInt(KEY_V37_VIDEO_INTERPOLATION_MODE, 0)
+        set(value) = prefs.edit().putInt(KEY_V37_VIDEO_INTERPOLATION_MODE, value).apply()
+
 
 
 
@@ -4244,6 +4249,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V37_DANMAKU_LEVEL_SHIELD = "v37_danmaku_level_shield"
         private const val KEY_V37_AUDIO_REVERB_PRESET = "v37_audio_reverb_preset"
         private const val KEY_V37_PLAYER_LONG_PRESS_SPEED = "v37_player_long_press_speed"
+        private const val KEY_V37_VIDEO_INTERPOLATION_MODE = "v37_video_interpolation_mode"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
