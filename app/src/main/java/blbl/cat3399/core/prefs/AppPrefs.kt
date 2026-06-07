@@ -1836,6 +1836,11 @@ class AppPrefs(context: Context) {
     var v32ScreenOffTimer: Int
         get() = prefs.getInt(KEY_V32_SCREEN_OFF_TIMER, 0)
         set(value) = prefs.edit().putInt(KEY_V32_SCREEN_OFF_TIMER, value).apply()
+    // v33.7: HDR色调映射
+    var v33VideoHdrToneMap: Int
+        get() = prefs.getInt(KEY_V33_VIDEO_HDR_TONE_MAP, 0)
+        set(value) = prefs.edit().putInt(KEY_V33_VIDEO_HDR_TONE_MAP, value).apply()
+
     // v33.6: 字幕描边宽度
     var v33SubtitleBorderWidth: Int
         get() = prefs.getInt(KEY_V33_SUBTITLE_BORDER_WIDTH, 0)
@@ -3180,6 +3185,7 @@ class AppPrefs(context: Context) {
         private const val SUBTITLE_BOTTOM_PADDING_FRACTION_DEFAULT = 0.16f
         private const val SUBTITLE_BACKGROUND_OPACITY_DEFAULT = 34f / 255f
 
+        private const val KEY_V33_VIDEO_HDR_TONE_MAP = "v33_video_hdr_tone_map"
         const val PLAYER_OSD_BTN_PREV = "prev"
         const val PLAYER_OSD_BTN_PLAY_PAUSE = "play_pause"
         const val PLAYER_OSD_BTN_NEXT = "next"
