@@ -1498,6 +1498,15 @@ internal fun PlayerActivity.showv37SubtitleBgColorCustomToggle() {
         .option(switchText(current)) { BiliClient.prefs.v37SubtitleBgColorCustom = !current }
         .show()
 }
+// 37.15: 淡入淡出过渡
+internal fun PlayerActivity.showv37PlaylistFadeTransitionToggle() {
+    val current = BiliClient.prefs.v37PlaylistFadeTransition
+    AppPopup.Builder(this)
+        .title("淡入淡出过渡")
+        .option(switchText(current)) { BiliClient.prefs.v37PlaylistFadeTransition = !current }
+        .show()
+}
+
 
 
 
