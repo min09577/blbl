@@ -9872,4 +9872,19 @@ internal fun PlayerActivity.showv37AudioStereoWidthDialog() {
         .show()
 }
 
+
+// 37.4: 恢复播放阈值(秒)
+internal fun PlayerActivity.showv37PlayerResumeThresholdDialog() {
+    val current = BiliClient.prefs.v37PlayerResumeThreshold
+    AppPopup.Builder(this)
+        .title("恢复播放阈值(秒)")
+        .option("0") { BiliClient.prefs.v37PlayerResumeThreshold = 0 }
+        .option("1") { BiliClient.prefs.v37PlayerResumeThreshold = 1 }
+        .option("2") { BiliClient.prefs.v37PlayerResumeThreshold = 2 }
+        .option("3") { BiliClient.prefs.v37PlayerResumeThreshold = 3 }
+        .option("5") { BiliClient.prefs.v37PlayerResumeThreshold = 5 }
+        .option("10") { BiliClient.prefs.v37PlayerResumeThreshold = 10 }
+        .show()
+}
+
 }
