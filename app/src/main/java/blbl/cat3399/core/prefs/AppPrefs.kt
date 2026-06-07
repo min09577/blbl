@@ -1924,6 +1924,11 @@ class AppPrefs(context: Context) {
     var v34SubtitleTextColorCustom: Boolean
         get() = prefs.getBoolean(KEY_V34_SUBTITLE_TEXT_COLOR_CUSTOM, false)
         set(value) = prefs.edit().putBoolean(KEY_V34_SUBTITLE_TEXT_COLOR_CUSTOM, value).apply()
+    // v34.15: 单曲循环模式
+    var v34PlaylistRepeatSingle: Boolean
+        get() = prefs.getBoolean(KEY_V34_PLAYLIST_REPEAT_SINGLE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V34_PLAYLIST_REPEAT_SINGLE, value).apply()
+
 
 
 
@@ -3965,6 +3970,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V34_VIDEO_PIXEL_ART_MODE = "v34_video_pixel_art_mode"
         private const val KEY_V34_DANMAKU_FONT_SIZE_MIN = "v34_danmaku_font_size_min"
         private const val KEY_V34_SUBTITLE_TEXT_COLOR_CUSTOM = "v34_subtitle_text_color_custom"
+        private const val KEY_V34_PLAYLIST_REPEAT_SINGLE = "v34_playlist_repeat_single"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
