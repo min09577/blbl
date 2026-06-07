@@ -1608,6 +1608,20 @@ internal fun PlayerActivity.showv38DanmakuPriorityLevelDialog() {
         .option("10") { BiliClient.prefs.v38DanmakuPriorityLevel = 10 }
         .show()
 }
+// 38.10: 低频搁架增益
+internal fun PlayerActivity.showv38AudioLowShelfGainDialog() {
+    val current = BiliClient.prefs.v38AudioLowShelfGain
+    AppPopup.Builder(this)
+        .title("低频搁架增益")
+        .option("0") { BiliClient.prefs.v38AudioLowShelfGain = 0 }
+        .option("1") { BiliClient.prefs.v38AudioLowShelfGain = 1 }
+        .option("2") { BiliClient.prefs.v38AudioLowShelfGain = 2 }
+        .option("3") { BiliClient.prefs.v38AudioLowShelfGain = 3 }
+        .option("5") { BiliClient.prefs.v38AudioLowShelfGain = 5 }
+        .option("10") { BiliClient.prefs.v38AudioLowShelfGain = 10 }
+        .show()
+}
+
 
 
 

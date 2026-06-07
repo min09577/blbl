@@ -2206,6 +2206,11 @@ class AppPrefs(context: Context) {
     var v37VideoBlackBarDetect: Boolean
         get() = prefs.getBoolean(KEY_V37_VIDEO_BLACK_BAR_DETECT, false)
         set(value) = prefs.edit().putBoolean(KEY_V37_VIDEO_BLACK_BAR_DETECT, value).apply()
+    // v38.10: 低频搁架增益
+    var v38AudioLowShelfGain: Int
+        get() = prefs.getInt(KEY_V38_AUDIO_LOW_SHELF_GAIN, 0)
+        set(value) = prefs.edit().putInt(KEY_V38_AUDIO_LOW_SHELF_GAIN, value).apply()
+
     // v38.9: 弹幕优先级
     var v38DanmakuPriorityLevel: Int
         get() = prefs.getInt(KEY_V38_DANMAKU_PRIORITY_LEVEL, 0)
@@ -3805,3 +3810,4 @@ class AppPrefs(context: Context) {
         private const val KEY_V38_VIDEO_CONTRAST_ENHANCE = "v38_video_contrast_enhance"
         private const val KEY_V38_PLAYBACK_BUFFER_MIN_SEC = "v38_playback_buffer_min_sec"
         private const val KEY_V38_DANMAKU_PRIORITY_LEVEL = "v38_danmaku_priority_level"
+        private const val KEY_V38_AUDIO_LOW_SHELF_GAIN = "v38_audio_low_shelf_gain"
