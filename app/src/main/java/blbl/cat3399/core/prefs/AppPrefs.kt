@@ -1880,6 +1880,11 @@ class AppPrefs(context: Context) {
     var v34AudioCompressorThreshold: Int
         get() = prefs.getInt(KEY_V34_AUDIO_COMPRESSOR_THRESHOLD, 0)
         set(value) = prefs.edit().putInt(KEY_V34_AUDIO_COMPRESSOR_THRESHOLD, value).apply()
+    // v34.4: 自定义手势映射
+    var v34PlayerGestureCustomMap: Boolean
+        get() = prefs.getBoolean(KEY_V34_PLAYER_GESTURE_CUSTOM_MAP, false)
+        set(value) = prefs.edit().putBoolean(KEY_V34_PLAYER_GESTURE_CUSTOM_MAP, value).apply()
+
 
 
 
@@ -3899,6 +3904,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V34_DANMAKU_MAX_DISPLAY_SEC = "v34_danmaku_max_display_sec"
         private const val KEY_V34_VIDEO_BRIGHTNESS_SENSOR = "v34_video_brightness_sensor"
         private const val KEY_V34_AUDIO_COMPRESSOR_THRESHOLD = "v34_audio_compressor_threshold"
+        private const val KEY_V34_PLAYER_GESTURE_CUSTOM_MAP = "v34_player_gesture_custom_map"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
