@@ -2132,6 +2132,11 @@ class AppPrefs(context: Context) {
     var v36VideoAspectFitMode: Int
         get() = prefs.getInt(KEY_V36_VIDEO_ASPECT_FIT_MODE, 0)
         set(value) = prefs.edit().putInt(KEY_V36_VIDEO_ASPECT_FIT_MODE, value).apply()
+    // v37.6: 字幕外框颜色
+    var v37SubtitleOutlineColor: Boolean
+        get() = prefs.getBoolean(KEY_V37_SUBTITLE_OUTLINE_COLOR, false)
+        set(value) = prefs.edit().putBoolean(KEY_V37_SUBTITLE_OUTLINE_COLOR, value).apply()
+
     // v37.5: 弹幕注音显示
     var v37DanmakuFuriganaShow: Boolean
         get() = prefs.getBoolean(KEY_V37_DANMAKU_FURIGANA_SHOW, false)
@@ -3687,3 +3692,4 @@ class AppPrefs(context: Context) {
         private const val KEY_V37_AUDIO_STEREO_WIDTH = "v37_audio_stereo_width"
         private const val KEY_V37_PLAYER_RESUME_THRESHOLD = "v37_player_resume_threshold"
         private const val KEY_V37_DANMAKU_FURIGANA_SHOW = "v37_danmaku_furigana_show"
+        private const val KEY_V37_SUBTITLE_OUTLINE_COLOR = "v37_subtitle_outline_color"

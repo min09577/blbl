@@ -1396,6 +1396,15 @@ internal fun PlayerActivity.showv37DanmakuFuriganaShowToggle() {
         .option(switchText(current)) { BiliClient.prefs.v37DanmakuFuriganaShow = !current }
         .show()
 }
+// 37.6: 字幕外框颜色
+internal fun PlayerActivity.showv37SubtitleOutlineColorToggle() {
+    val current = BiliClient.prefs.v37SubtitleOutlineColor
+    AppPopup.Builder(this)
+        .title("字幕外框颜色")
+        .option(switchText(current)) { BiliClient.prefs.v37SubtitleOutlineColor = !current }
+        .show()
+}
+
 
 
 
