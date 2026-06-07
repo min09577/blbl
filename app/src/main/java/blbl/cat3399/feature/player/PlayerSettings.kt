@@ -1676,6 +1676,20 @@ internal fun PlayerActivity.showv38PlaylistCrossFadeMsDialog() {
         .option("10") { BiliClient.prefs.v38PlaylistCrossFadeMs = 10 }
         .show()
 }
+// 39.1: 时间基准同步模式
+internal fun PlayerActivity.showv39VideoTbnSyncModeDialog() {
+    val current = BiliClient.prefs.v39VideoTbnSyncMode
+    AppPopup.Builder(this)
+        .title("时间基准同步模式")
+        .option("0") { BiliClient.prefs.v39VideoTbnSyncMode = 0 }
+        .option("1") { BiliClient.prefs.v39VideoTbnSyncMode = 1 }
+        .option("2") { BiliClient.prefs.v39VideoTbnSyncMode = 2 }
+        .option("3") { BiliClient.prefs.v39VideoTbnSyncMode = 3 }
+        .option("5") { BiliClient.prefs.v39VideoTbnSyncMode = 5 }
+        .option("10") { BiliClient.prefs.v39VideoTbnSyncMode = 10 }
+        .show()
+}
+
 
 
 
