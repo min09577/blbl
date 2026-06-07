@@ -1688,6 +1688,11 @@ class AppPrefs(context: Context) {
     var v30DanmakuFontGlow: Int
         get() = prefs.getInt(KEY_V30_DANMAKU_FONT_GLOW, 0)
         set(value) = prefs.edit().putInt(KEY_V30_DANMAKU_FONT_GLOW, value.coerceIn(0, 100)).apply()
+    // v31.14: 弹幕屏蔽用户等级
+    var v31DanmakuBlockUserLevel: Int
+        get() = prefs.getInt(KEY_V31_DANMAKU_BLOCK_USER_LEVEL, 0)
+        set(value) = prefs.edit().putInt(KEY_V31_DANMAKU_BLOCK_USER_LEVEL, value).apply()
+
     // v31.13: 播放自动恢复
     var v31PlaybackAutoResume: Boolean
         get() = prefs.getBoolean(KEY_V31_PLAYBACK_AUTO_RESUME, false)
@@ -2946,6 +2951,7 @@ class AppPrefs(context: Context) {
                 0.75f,
                 4f / 5f,
                 1.00f,
+        private const val KEY_V31_DANMAKU_BLOCK_USER_LEVEL = "v31_danmaku_block_user_level"
             )
 
         fun normalizeDanmakuArea(value: Float): Float {
