@@ -1906,6 +1906,11 @@ class AppPrefs(context: Context) {
     var v34DanmakuShieldRegex: Boolean
         get() = prefs.getBoolean(KEY_V34_DANMAKU_SHIELD_REGEX, false)
         set(value) = prefs.edit().putBoolean(KEY_V34_DANMAKU_SHIELD_REGEX, value).apply()
+    // v34.6: 字幕卡拉OK模式
+    var v34SubtitleKaraokeMode: Boolean
+        get() = prefs.getBoolean(KEY_V34_SUBTITLE_KARAOKE_MODE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V34_SUBTITLE_KARAOKE_MODE, value).apply()
+
 
 
 
@@ -3938,6 +3943,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V34_AUDIO_COMPRESSOR_THRESHOLD = "v34_audio_compressor_threshold"
         private const val KEY_V34_PLAYER_GESTURE_CUSTOM_MAP = "v34_player_gesture_custom_map"
         private const val KEY_V34_DANMAKU_SHIELD_REGEX = "v34_danmaku_shield_regex"
+        private const val KEY_V34_SUBTITLE_KARAOKE_MODE = "v34_subtitle_karaoke_mode"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
