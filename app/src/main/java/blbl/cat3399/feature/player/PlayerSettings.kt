@@ -1934,6 +1934,15 @@ internal fun PlayerActivity.showv40PlayerOsdTimeoutDialog() {
         .option("10") { BiliClient.prefs.v40PlayerOsdTimeout = 10 }
         .show()
 }
+// 40.12: 动态色调映射
+internal fun PlayerActivity.showv40VideoDynamicToneMapToggle() {
+    val current = BiliClient.prefs.v40VideoDynamicToneMap
+    AppPopup.Builder(this)
+        .title("动态色调映射")
+        .option(switchText(current)) { BiliClient.prefs.v40VideoDynamicToneMap = !current }
+        .show()
+}
+
 
 
 

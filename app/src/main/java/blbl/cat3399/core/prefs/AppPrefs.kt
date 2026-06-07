@@ -2354,6 +2354,11 @@ class AppPrefs(context: Context) {
     var v39VideoTbnSyncMode: Int
         get() = prefs.getInt(KEY_V39_VIDEO_TBN_SYNC_MODE, 0)
         set(value) = prefs.edit().putInt(KEY_V39_VIDEO_TBN_SYNC_MODE, value).apply()
+    // v40.12: 动态色调映射
+    var v40VideoDynamicToneMap: Boolean
+        get() = prefs.getBoolean(KEY_V40_VIDEO_DYNAMIC_TONE_MAP, false)
+        set(value) = prefs.edit().putBoolean(KEY_V40_VIDEO_DYNAMIC_TONE_MAP, value).apply()
+
     // v40.11: OSD超时(秒)
     var v40PlayerOsdTimeout: Int
         get() = prefs.getInt(KEY_V40_PLAYER_OSD_TIMEOUT, 0)
@@ -4005,3 +4010,4 @@ class AppPrefs(context: Context) {
         private const val KEY_V40_DANMAKU_FADE_IN_DURATION = "v40_danmaku_fade_in_duration"
         private const val KEY_V40_AUDIO_PRESERVE_PITCH = "v40_audio_preserve_pitch"
         private const val KEY_V40_PLAYER_OSD_TIMEOUT = "v40_player_osd_timeout"
+        private const val KEY_V40_VIDEO_DYNAMIC_TONE_MAP = "v40_video_dynamic_tone_map"
