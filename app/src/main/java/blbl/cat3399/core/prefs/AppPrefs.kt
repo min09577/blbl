@@ -1688,6 +1688,31 @@ class AppPrefs(context: Context) {
     var v30DanmakuFontGlow: Int
         get() = prefs.getInt(KEY_V30_DANMAKU_FONT_GLOW, 0)
         set(value) = prefs.edit().putInt(KEY_V30_DANMAKU_FONT_GLOW, value.coerceIn(0, 100)).apply()
+    // v31.1: 弹幕重叠自动合并
+    var v31DanmakuMergeOverlap: Boolean
+        get() = prefs.getBoolean(KEY_V31_DANMAKU_MERGE_OVERLAP, false)
+        set(value) = prefs.edit().putBoolean(KEY_V31_DANMAKU_MERGE_OVERLAP, value).apply()
+
+
+    // ===== v40.x =====
+
+    // ===== v39.x =====
+
+    // ===== v38.x =====
+
+    // ===== v37.x =====
+
+    // ===== v36.x =====
+
+    // ===== v35.x =====
+
+    // ===== v34.x =====
+
+    // ===== v33.x =====
+
+    // ===== v32.x =====
+
+    // ===== v31.x =====
     
     
     
@@ -3591,6 +3616,7 @@ class AppPrefs(context: Context) {
         private const val KEY_PLAYBACK_TIME_REMINDER = "playback_time_reminder"
         // v10.2: 视频书签
         private const val KEY_VIDEO_BOOKMARKS = "video_bookmarks"
+        private const val KEY_V31_DANMAKU_MERGE_OVERLAP = "v31_danmaku_merge_overlap"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
