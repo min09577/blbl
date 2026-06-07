@@ -1984,6 +1984,11 @@ class AppPrefs(context: Context) {
     var v34DanmakuMaxDisplaySec: Int
         get() = prefs.getInt(KEY_V34_DANMAKU_MAX_DISPLAY_SEC, 0)
         set(value) = prefs.edit().putInt(KEY_V34_DANMAKU_MAX_DISPLAY_SEC, value).apply()
+    // v35.4: 横屏自动全屏
+    var v35PlayerAutoFullscreenLandscape: Boolean
+        get() = prefs.getBoolean(KEY_V35_PLAYER_AUTO_FULLSCREEN_LANDSCAPE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V35_PLAYER_AUTO_FULLSCREEN_LANDSCAPE, value).apply()
+
     // v35.3: 空间音频宽度
     var v35AudioSpatialWidth: Int
         get() = prefs.getInt(KEY_V35_AUDIO_SPATIAL_WIDTH, 0)
@@ -3454,6 +3459,7 @@ class AppPrefs(context: Context) {
 
         fun normalizeThemePreset(value: String?): String {
             return when (value?.trim()) {
+        private const val KEY_V35_PLAYER_AUTO_FULLSCREEN_LANDSCAPE = "v35_player_auto_fullscreen_landscape"
                 THEME_PRESET_TV_PINK -> THEME_PRESET_TV_PINK
                 THEME_PRESET_TV_PINK_ILLUSTRATION -> THEME_PRESET_TV_PINK_ILLUSTRATION
                 THEME_PRESET_BLUE_DARK -> THEME_PRESET_BLUE_DARK
