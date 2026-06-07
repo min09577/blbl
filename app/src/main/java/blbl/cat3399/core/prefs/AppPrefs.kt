@@ -2264,6 +2264,11 @@ class AppPrefs(context: Context) {
     var v40DanmakuFadeInDuration: Int
         get() = prefs.getInt(KEY_V40_DANMAKU_FADE_IN_DURATION, 0)
         set(value) = prefs.edit().putInt(KEY_V40_DANMAKU_FADE_IN_DURATION, value).apply()
+    // v40.10: 变速保调
+    var v40AudioPreservePitch: Boolean
+        get() = prefs.getBoolean(KEY_V40_AUDIO_PRESERVE_PITCH, false)
+        set(value) = prefs.edit().putBoolean(KEY_V40_AUDIO_PRESERVE_PITCH, value).apply()
+
 
 
 
@@ -4475,6 +4480,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V40_VIDEO_AI_SUPER_RES = "v40_video_ai_super_res"
         private const val KEY_V40_PLAYBACK_CACHE_SEGMENT = "v40_playback_cache_segment"
         private const val KEY_V40_DANMAKU_FADE_IN_DURATION = "v40_danmaku_fade_in_duration"
+        private const val KEY_V40_AUDIO_PRESERVE_PITCH = "v40_audio_preserve_pitch"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
