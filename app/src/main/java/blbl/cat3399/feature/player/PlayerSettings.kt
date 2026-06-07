@@ -1338,6 +1338,15 @@ internal fun PlayerActivity.showv36SubtitleFontWeightCustomDialog() {
         .option("10") { BiliClient.prefs.v36SubtitleFontWeightCustom = 10 }
         .show()
 }
+// 36.15: 自动播放下一集
+internal fun PlayerActivity.showv36PlaylistAutoplayNextEpisodeToggle() {
+    val current = BiliClient.prefs.v36PlaylistAutoplayNextEpisode
+    AppPopup.Builder(this)
+        .title("自动播放下一集")
+        .option(switchText(current)) { BiliClient.prefs.v36PlaylistAutoplayNextEpisode = !current }
+        .show()
+}
+
 
 
 
