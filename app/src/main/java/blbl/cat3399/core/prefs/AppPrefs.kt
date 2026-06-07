@@ -1824,6 +1824,11 @@ class AppPrefs(context: Context) {
     var v33PlayerDoubleTapSeekSec: Int
         get() = prefs.getInt(KEY_V33_PLAYER_DOUBLE_TAP_SEEK_SEC, 0)
         set(value) = prefs.edit().putInt(KEY_V33_PLAYER_DOUBLE_TAP_SEEK_SEC, value).apply()
+    // v33.5: 弹幕行数限制
+    var v33DanmakuLineNumber: Int
+        get() = prefs.getInt(KEY_V33_DANMAKU_LINE_NUMBER, 0)
+        set(value) = prefs.edit().putInt(KEY_V33_DANMAKU_LINE_NUMBER, value).apply()
+
 
 
 
@@ -3815,6 +3820,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V33_DANMAKU_SCROLL_DIRECTION = "v33_danmaku_scroll_direction"
         private const val KEY_V33_VIDEO_THUMBNAIL_TIME_SEC = "v33_video_thumbnail_time_sec"
         private const val KEY_V33_PLAYER_DOUBLE_TAP_SEEK_SEC = "v33_player_double_tap_seek_sec"
+        private const val KEY_V33_DANMAKU_LINE_NUMBER = "v33_danmaku_line_number"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
