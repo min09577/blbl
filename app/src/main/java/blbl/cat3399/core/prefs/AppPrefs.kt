@@ -2228,6 +2228,11 @@ class AppPrefs(context: Context) {
     var v39PlaylistLoadRelated: Boolean
         get() = prefs.getBoolean(KEY_V39_PLAYLIST_LOAD_RELATED, false)
         set(value) = prefs.edit().putBoolean(KEY_V39_PLAYLIST_LOAD_RELATED, value).apply()
+    // v40.1: 快照间隔(秒)
+    var v40VideoSnapshotInterval: Int
+        get() = prefs.getInt(KEY_V40_VIDEO_SNAPSHOT_INTERVAL, 0)
+        set(value) = prefs.edit().putInt(KEY_V40_VIDEO_SNAPSHOT_INTERVAL, value).apply()
+
 
 
 
@@ -4421,6 +4426,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V39_DANMAKU_SENDER_LEVEL_ICON = "v39_danmaku_sender_level_icon"
         private const val KEY_V39_SUBTITLE_AUTO_TRANSLATE = "v39_subtitle_auto_translate"
         private const val KEY_V39_PLAYLIST_LOAD_RELATED = "v39_playlist_load_related"
+        private const val KEY_V40_VIDEO_SNAPSHOT_INTERVAL = "v40_video_snapshot_interval"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
