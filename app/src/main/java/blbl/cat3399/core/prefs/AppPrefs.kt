@@ -1846,6 +1846,11 @@ class AppPrefs(context: Context) {
     var v33DanmakuLineNumber: Int
         get() = prefs.getInt(KEY_V33_DANMAKU_LINE_NUMBER, 0)
         set(value) = prefs.edit().putInt(KEY_V33_DANMAKU_LINE_NUMBER, value).apply()
+    // v33.6: 字幕描边宽度
+    var v33SubtitleBorderWidth: Int
+        get() = prefs.getInt(KEY_V33_SUBTITLE_BORDER_WIDTH, 0)
+        set(value) = prefs.edit().putInt(KEY_V33_SUBTITLE_BORDER_WIDTH, value).apply()
+
 
 
 
@@ -3848,6 +3853,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V33_VIDEO_THUMBNAIL_TIME_SEC = "v33_video_thumbnail_time_sec"
         private const val KEY_V33_PLAYER_DOUBLE_TAP_SEEK_SEC = "v33_player_double_tap_seek_sec"
         private const val KEY_V33_DANMAKU_LINE_NUMBER = "v33_danmaku_line_number"
+        private const val KEY_V33_SUBTITLE_BORDER_WIDTH = "v33_subtitle_border_width"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
