@@ -9207,4 +9207,14 @@ internal fun PlayerActivity.showv33PlaybackSkipIntroSecDialog() {
         .show()
 }
 
+
+// 33.9: 弹幕自定义字体路径
+internal fun PlayerActivity.showv33DanmakuCustomFontPathToggle() {
+    val current = BiliClient.prefs.v33DanmakuCustomFontPath
+    AppPopup.Builder(this)
+        .title("弹幕自定义字体路径")
+        .option(switchText(current)) { BiliClient.prefs.v33DanmakuCustomFontPath = !current }
+        .show()
+}
+
 }
