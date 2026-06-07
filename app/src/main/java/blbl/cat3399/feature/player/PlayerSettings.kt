@@ -9787,4 +9787,19 @@ internal fun PlayerActivity.showv36PlayerSwipeBrightnessCurveDialog() {
         .show()
 }
 
+
+// 36.12: 边缘锐化模式
+internal fun PlayerActivity.showv36VideoSharpenEdgeModeDialog() {
+    val current = BiliClient.prefs.v36VideoSharpenEdgeMode
+    AppPopup.Builder(this)
+        .title("边缘锐化模式")
+        .option("0") { BiliClient.prefs.v36VideoSharpenEdgeMode = 0 }
+        .option("1") { BiliClient.prefs.v36VideoSharpenEdgeMode = 1 }
+        .option("2") { BiliClient.prefs.v36VideoSharpenEdgeMode = 2 }
+        .option("3") { BiliClient.prefs.v36VideoSharpenEdgeMode = 3 }
+        .option("5") { BiliClient.prefs.v36VideoSharpenEdgeMode = 5 }
+        .option("10") { BiliClient.prefs.v36VideoSharpenEdgeMode = 10 }
+        .show()
+}
+
 }
