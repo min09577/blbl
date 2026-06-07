@@ -2180,6 +2180,11 @@ class AppPrefs(context: Context) {
     var v39AudioMidFreqGain: Int
         get() = prefs.getInt(KEY_V39_AUDIO_MID_FREQ_GAIN, 0)
         set(value) = prefs.edit().putInt(KEY_V39_AUDIO_MID_FREQ_GAIN, value).apply()
+    // v39.4: 自动亮度范围
+    var v39PlayerAutoBrightnessRange: Int
+        get() = prefs.getInt(KEY_V39_PLAYER_AUTO_BRIGHTNESS_RANGE, 0)
+        set(value) = prefs.edit().putInt(KEY_V39_PLAYER_AUTO_BRIGHTNESS_RANGE, value).apply()
+
 
 
 
@@ -4349,6 +4354,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V39_VIDEO_TBN_SYNC_MODE = "v39_video_tbn_sync_mode"
         private const val KEY_V39_DANMAKU_CLOUD_PATTERN = "v39_danmaku_cloud_pattern"
         private const val KEY_V39_AUDIO_MID_FREQ_GAIN = "v39_audio_mid_freq_gain"
+        private const val KEY_V39_PLAYER_AUTO_BRIGHTNESS_RANGE = "v39_player_auto_brightness_range"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
