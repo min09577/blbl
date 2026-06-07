@@ -2126,6 +2126,11 @@ class AppPrefs(context: Context) {
     var v37PlaylistFadeTransition: Boolean
         get() = prefs.getBoolean(KEY_V37_PLAYLIST_FADE_TRANSITION, false)
         set(value) = prefs.edit().putBoolean(KEY_V37_PLAYLIST_FADE_TRANSITION, value).apply()
+    // v38.1: Gamma曲线预设
+    var v38VideoGammaCurve: Int
+        get() = prefs.getInt(KEY_V38_VIDEO_GAMMA_CURVE, 0)
+        set(value) = prefs.edit().putInt(KEY_V38_VIDEO_GAMMA_CURVE, value).apply()
+
 
 
 
@@ -4268,6 +4273,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V37_DANMAKU_SHADOW_OFFSET = "v37_danmaku_shadow_offset"
         private const val KEY_V37_SUBTITLE_BG_COLOR_CUSTOM = "v37_subtitle_bg_color_custom"
         private const val KEY_V37_PLAYLIST_FADE_TRANSITION = "v37_playlist_fade_transition"
+        private const val KEY_V38_VIDEO_GAMMA_CURVE = "v38_video_gamma_curve"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
