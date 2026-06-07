@@ -9102,4 +9102,19 @@ internal fun PlayerActivity.showv33AudioBassBoostDialog() {
         .show()
 }
 
+
+// 33.2: 弹幕滚动方向
+internal fun PlayerActivity.showv33DanmakuScrollDirectionDialog() {
+    val current = BiliClient.prefs.v33DanmakuScrollDirection
+    AppPopup.Builder(this)
+        .title("弹幕滚动方向")
+        .option("0") { BiliClient.prefs.v33DanmakuScrollDirection = 0 }
+        .option("1") { BiliClient.prefs.v33DanmakuScrollDirection = 1 }
+        .option("2") { BiliClient.prefs.v33DanmakuScrollDirection = 2 }
+        .option("3") { BiliClient.prefs.v33DanmakuScrollDirection = 3 }
+        .option("5") { BiliClient.prefs.v33DanmakuScrollDirection = 5 }
+        .option("10") { BiliClient.prefs.v33DanmakuScrollDirection = 10 }
+        .show()
+}
+
 }
