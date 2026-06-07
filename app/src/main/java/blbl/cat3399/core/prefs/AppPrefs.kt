@@ -1778,6 +1778,11 @@ class AppPrefs(context: Context) {
     var v32AudioChannelSwap: Boolean
         get() = prefs.getBoolean(KEY_V32_AUDIO_CHANNEL_SWAP, false)
         set(value) = prefs.edit().putBoolean(KEY_V32_AUDIO_CHANNEL_SWAP, value).apply()
+    // v32.4: 视频缩放手势
+    var v32VideoZoomGesture: Boolean
+        get() = prefs.getBoolean(KEY_V32_VIDEO_ZOOM_GESTURE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V32_VIDEO_ZOOM_GESTURE, value).apply()
+
 
 
 
@@ -3746,6 +3751,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V32_SCREEN_OFF_TIMER = "v32_screen_off_timer"
         private const val KEY_V32_DANMAKU_RAIN_MODE = "v32_danmaku_rain_mode"
         private const val KEY_V32_AUDIO_CHANNEL_SWAP = "v32_audio_channel_swap"
+        private const val KEY_V32_VIDEO_ZOOM_GESTURE = "v32_video_zoom_gesture"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
