@@ -1798,6 +1798,11 @@ class AppPrefs(context: Context) {
     var v32SubtitleDualLang: Boolean
         get() = prefs.getBoolean(KEY_V32_SUBTITLE_DUAL_LANG, false)
         set(value) = prefs.edit().putBoolean(KEY_V32_SUBTITLE_DUAL_LANG, value).apply()
+    // v32.9: 弹幕透明度渐隐
+    var v32DanmakuOpacityFade: Boolean
+        get() = prefs.getBoolean(KEY_V32_DANMAKU_OPACITY_FADE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V32_DANMAKU_OPACITY_FADE, value).apply()
+
 
 
 
@@ -3776,6 +3781,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V32_PLAYLIST_REMOVE_PLAYED = "v32_playlist_remove_played"
         private const val KEY_V32_PLAYER_BACKGROUND_PLAY = "v32_player_background_play"
         private const val KEY_V32_SUBTITLE_DUAL_LANG = "v32_subtitle_dual_lang"
+        private const val KEY_V32_DANMAKU_OPACITY_FADE = "v32_danmaku_opacity_fade"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
