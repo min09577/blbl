@@ -9848,4 +9848,14 @@ internal fun PlayerActivity.showv37VideoBlackBarDetectToggle() {
         .show()
 }
 
+
+// 37.2: 弹幕分组合并
+internal fun PlayerActivity.showv37DanmakuGroupMergeToggle() {
+    val current = BiliClient.prefs.v37DanmakuGroupMerge
+    AppPopup.Builder(this)
+        .title("弹幕分组合并")
+        .option(switchText(current)) { BiliClient.prefs.v37DanmakuGroupMerge = !current }
+        .show()
+}
+
 }
