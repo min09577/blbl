@@ -2258,6 +2258,11 @@ class AppPrefs(context: Context) {
     var v40AudioVocalRemove: Boolean
         get() = prefs.getBoolean(KEY_V40_AUDIO_VOCAL_REMOVE, false)
         set(value) = prefs.edit().putBoolean(KEY_V40_AUDIO_VOCAL_REMOVE, value).apply()
+    // v40.4: 快捷键自定义映射
+    var v40PlayerKeyShortcutMap: Boolean
+        get() = prefs.getBoolean(KEY_V40_PLAYER_KEY_SHORTCUT_MAP, false)
+        set(value) = prefs.edit().putBoolean(KEY_V40_PLAYER_KEY_SHORTCUT_MAP, value).apply()
+
 
 
 
@@ -4466,6 +4471,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V40_VIDEO_SNAPSHOT_INTERVAL = "v40_video_snapshot_interval"
         private const val KEY_V40_DANMAKU_VINTAGE_MODE = "v40_danmaku_vintage_mode"
         private const val KEY_V40_AUDIO_VOCAL_REMOVE = "v40_audio_vocal_remove"
+        private const val KEY_V40_PLAYER_KEY_SHORTCUT_MAP = "v40_player_key_shortcut_map"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
