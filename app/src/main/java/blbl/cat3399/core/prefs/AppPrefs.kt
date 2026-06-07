@@ -1910,6 +1910,11 @@ class AppPrefs(context: Context) {
     var v33AudioBassBoost: Int
         get() = prefs.getInt(KEY_V33_AUDIO_BASS_BOOST, 0)
         set(value) = prefs.edit().putInt(KEY_V33_AUDIO_BASS_BOOST, value).apply()
+    // v34.5: 弹幕正则屏蔽
+    var v34DanmakuShieldRegex: Boolean
+        get() = prefs.getBoolean(KEY_V34_DANMAKU_SHIELD_REGEX, false)
+        set(value) = prefs.edit().putBoolean(KEY_V34_DANMAKU_SHIELD_REGEX, value).apply()
+
     // v34.4: 自定义手势映射
     var v34PlayerGestureCustomMap: Boolean
         get() = prefs.getBoolean(KEY_V34_PLAYER_GESTURE_CUSTOM_MAP, false)
@@ -3312,6 +3317,7 @@ class AppPrefs(context: Context) {
         const val PLAYER_DOWN_KEY_OSD_FOCUS_PREV = "prev"
         const val PLAYER_DOWN_KEY_OSD_FOCUS_PLAY_PAUSE = "play_pause"
         const val PLAYER_DOWN_KEY_OSD_FOCUS_NEXT = "next"
+        private const val KEY_V34_DANMAKU_SHIELD_REGEX = "v34_danmaku_shield_regex"
         const val PLAYER_DOWN_KEY_OSD_FOCUS_SUBTITLE = "subtitle"
         const val PLAYER_DOWN_KEY_OSD_FOCUS_DANMAKU = "danmaku"
         const val PLAYER_DOWN_KEY_OSD_FOCUS_COMMENTS = "comments"
