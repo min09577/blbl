@@ -781,6 +781,20 @@ internal fun PlayerActivity.showv33DanmakuLineNumberDialog() {
         .option("10") { BiliClient.prefs.v33DanmakuLineNumber = 10 }
         .show()
 }
+// 33.6: 字幕描边宽度
+internal fun PlayerActivity.showv33SubtitleBorderWidthDialog() {
+    val current = BiliClient.prefs.v33SubtitleBorderWidth
+    AppPopup.Builder(this)
+        .title("字幕描边宽度")
+        .option("0") { BiliClient.prefs.v33SubtitleBorderWidth = 0 }
+        .option("1") { BiliClient.prefs.v33SubtitleBorderWidth = 1 }
+        .option("2") { BiliClient.prefs.v33SubtitleBorderWidth = 2 }
+        .option("3") { BiliClient.prefs.v33SubtitleBorderWidth = 3 }
+        .option("5") { BiliClient.prefs.v33SubtitleBorderWidth = 5 }
+        .option("10") { BiliClient.prefs.v33SubtitleBorderWidth = 10 }
+        .show()
+}
+
 
 
 

@@ -1836,6 +1836,11 @@ class AppPrefs(context: Context) {
     var v32ScreenOffTimer: Int
         get() = prefs.getInt(KEY_V32_SCREEN_OFF_TIMER, 0)
         set(value) = prefs.edit().putInt(KEY_V32_SCREEN_OFF_TIMER, value).apply()
+    // v33.6: 字幕描边宽度
+    var v33SubtitleBorderWidth: Int
+        get() = prefs.getInt(KEY_V33_SUBTITLE_BORDER_WIDTH, 0)
+        set(value) = prefs.edit().putInt(KEY_V33_SUBTITLE_BORDER_WIDTH, value).apply()
+
     // v33.5: 弹幕行数限制
     var v33DanmakuLineNumber: Int
         get() = prefs.getInt(KEY_V33_DANMAKU_LINE_NUMBER, 0)
@@ -3170,6 +3175,7 @@ class AppPrefs(context: Context) {
         const val PLAYER_VIDEOSHOT_PREVIEW_SIZE_SMALL = "small"
         const val PLAYER_VIDEOSHOT_PREVIEW_SIZE_MEDIUM = "medium"
         const val PLAYER_VIDEOSHOT_PREVIEW_SIZE_LARGE = "large"
+        private const val KEY_V33_SUBTITLE_BORDER_WIDTH = "v33_subtitle_border_width"
 
         private const val SUBTITLE_BOTTOM_PADDING_FRACTION_DEFAULT = 0.16f
         private const val SUBTITLE_BACKGROUND_OPACITY_DEFAULT = 34f / 255f
