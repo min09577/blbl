@@ -1688,6 +1688,11 @@ class AppPrefs(context: Context) {
     var v30DanmakuFontGlow: Int
         get() = prefs.getInt(KEY_V30_DANMAKU_FONT_GLOW, 0)
         set(value) = prefs.edit().putInt(KEY_V30_DANMAKU_FONT_GLOW, value.coerceIn(0, 100)).apply()
+    // v31.13: 播放自动恢复
+    var v31PlaybackAutoResume: Boolean
+        get() = prefs.getBoolean(KEY_V31_PLAYBACK_AUTO_RESUME, false)
+        set(value) = prefs.edit().putBoolean(KEY_V31_PLAYBACK_AUTO_RESUME, value).apply()
+
     // v31.12: 字幕同步偏移(ms)
     var v31SubtitleSyncOffset: Int
         get() = prefs.getInt(KEY_V31_SUBTITLE_SYNC_OFFSET, 0)
@@ -2936,6 +2941,7 @@ class AppPrefs(context: Context) {
                 2f / 5f,
                 0.50f,
                 3f / 5f,
+        private const val KEY_V31_PLAYBACK_AUTO_RESUME = "v31_playback_auto_resume"
                 2f / 3f,
                 0.75f,
                 4f / 5f,
