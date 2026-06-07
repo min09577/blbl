@@ -1790,6 +1790,11 @@ class AppPrefs(context: Context) {
     var v32PlaylistRemovePlayed: Boolean
         get() = prefs.getBoolean(KEY_V32_PLAYLIST_REMOVE_PLAYED, false)
         set(value) = prefs.edit().putBoolean(KEY_V32_PLAYLIST_REMOVE_PLAYED, value).apply()
+    // v32.7: 后台播放
+    var v32PlayerBackgroundPlay: Boolean
+        get() = prefs.getBoolean(KEY_V32_PLAYER_BACKGROUND_PLAY, false)
+        set(value) = prefs.edit().putBoolean(KEY_V32_PLAYER_BACKGROUND_PLAY, value).apply()
+
 
 
 
@@ -3764,6 +3769,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V32_VIDEO_ZOOM_GESTURE = "v32_video_zoom_gesture"
         private const val KEY_V32_DANMAKU_TIMESTAMP_DISPLAY = "v32_danmaku_timestamp_display"
         private const val KEY_V32_PLAYLIST_REMOVE_PLAYED = "v32_playlist_remove_played"
+        private const val KEY_V32_PLAYER_BACKGROUND_PLAY = "v32_player_background_play"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
