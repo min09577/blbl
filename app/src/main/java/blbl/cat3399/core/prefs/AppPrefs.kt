@@ -1688,6 +1688,11 @@ class AppPrefs(context: Context) {
     var v30DanmakuFontGlow: Int
         get() = prefs.getInt(KEY_V30_DANMAKU_FONT_GLOW, 0)
         set(value) = prefs.edit().putInt(KEY_V30_DANMAKU_FONT_GLOW, value.coerceIn(0, 100)).apply()
+    // v31.10: A-B循环播放
+    var v31VideoABoopMode: Boolean
+        get() = prefs.getBoolean(KEY_V31_VIDEO_A_BOOP_MODE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V31_VIDEO_A_BOOP_MODE, value).apply()
+
     // v31.9: 画中画模式支持
     var v31PlayerPiPSupport: Boolean
         get() = prefs.getBoolean(KEY_V31_PLAYER_PI_P_SUPPORT, false)
@@ -2906,6 +2911,7 @@ class AppPrefs(context: Context) {
         const val DANMAKU_AREA_STEP = 0.10f
         const val DANMAKU_AREA_DEFAULT = DANMAKU_AREA_MAX
         const val DANMAKU_AREA_COMPAT_EPSILON = 0.0001f
+        private const val KEY_V31_VIDEO_A_BOOP_MODE = "v31_video_a_boop_mode"
 
         val DANMAKU_AREA_OPTIONS: List<Float> = (1..10).map { it / 10f }
 
