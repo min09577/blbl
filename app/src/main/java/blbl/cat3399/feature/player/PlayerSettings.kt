@@ -10213,4 +10213,19 @@ internal fun PlayerActivity.showv38SubtitleRomanizeToggle() {
         .show()
 }
 
+
+// 38.15: 交叉淡入(ms)
+internal fun PlayerActivity.showv38PlaylistCrossFadeMsDialog() {
+    val current = BiliClient.prefs.v38PlaylistCrossFadeMs
+    AppPopup.Builder(this)
+        .title("交叉淡入(ms)")
+        .option("0") { BiliClient.prefs.v38PlaylistCrossFadeMs = 0 }
+        .option("1") { BiliClient.prefs.v38PlaylistCrossFadeMs = 1 }
+        .option("2") { BiliClient.prefs.v38PlaylistCrossFadeMs = 2 }
+        .option("3") { BiliClient.prefs.v38PlaylistCrossFadeMs = 3 }
+        .option("5") { BiliClient.prefs.v38PlaylistCrossFadeMs = 5 }
+        .option("10") { BiliClient.prefs.v38PlaylistCrossFadeMs = 10 }
+        .show()
+}
+
 }
