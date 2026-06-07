@@ -1762,6 +1762,11 @@ class AppPrefs(context: Context) {
     var v31DanmakuMergeOverlap: Boolean
         get() = prefs.getBoolean(KEY_V31_DANMAKU_MERGE_OVERLAP, false)
         set(value) = prefs.edit().putBoolean(KEY_V31_DANMAKU_MERGE_OVERLAP, value).apply()
+    // v32.7: 后台播放
+    var v32PlayerBackgroundPlay: Boolean
+        get() = prefs.getBoolean(KEY_V32_PLAYER_BACKGROUND_PLAY, false)
+        set(value) = prefs.edit().putBoolean(KEY_V32_PLAYER_BACKGROUND_PLAY, value).apply()
+
     // v32.6: 自动移除已播放项
     var v32PlaylistRemovePlayed: Boolean
         get() = prefs.getBoolean(KEY_V32_PLAYLIST_REMOVE_PLAYED, false)
@@ -3028,6 +3033,7 @@ class AppPrefs(context: Context) {
                 VIDEO_CARD_LONG_PRESS_ACTION_WATCH_LATER -> VIDEO_CARD_LONG_PRESS_ACTION_WATCH_LATER
                 VIDEO_CARD_LONG_PRESS_ACTION_OPEN_DETAIL -> VIDEO_CARD_LONG_PRESS_ACTION_OPEN_DETAIL
                 VIDEO_CARD_LONG_PRESS_ACTION_OPEN_UP -> VIDEO_CARD_LONG_PRESS_ACTION_OPEN_UP
+        private const val KEY_V32_PLAYER_BACKGROUND_PLAY = "v32_player_background_play"
                 VIDEO_CARD_LONG_PRESS_ACTION_DISMISS -> VIDEO_CARD_LONG_PRESS_ACTION_DISMISS
                 VIDEO_CARD_LONG_PRESS_ACTION_SHARE -> VIDEO_CARD_LONG_PRESS_ACTION_SHARE
                 VIDEO_CARD_LONG_PRESS_ACTION_COPY_LINK -> VIDEO_CARD_LONG_PRESS_ACTION_COPY_LINK

@@ -634,6 +634,15 @@ internal fun PlayerActivity.showv32PlaylistRemovePlayedToggle() {
         .option(switchText(current)) { BiliClient.prefs.v32PlaylistRemovePlayed = !current }
         .show()
 }
+// 32.7: 后台播放
+internal fun PlayerActivity.showv32PlayerBackgroundPlayToggle() {
+    val current = BiliClient.prefs.v32PlayerBackgroundPlay
+    AppPopup.Builder(this)
+        .title("后台播放")
+        .option(switchText(current)) { BiliClient.prefs.v32PlayerBackgroundPlay = !current }
+        .show()
+}
+
 
 
 
