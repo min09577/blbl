@@ -2254,6 +2254,11 @@ class AppPrefs(context: Context) {
     var v40DanmakuVintageMode: Boolean
         get() = prefs.getBoolean(KEY_V40_DANMAKU_VINTAGE_MODE, false)
         set(value) = prefs.edit().putBoolean(KEY_V40_DANMAKU_VINTAGE_MODE, value).apply()
+    // v40.3: 人声消除
+    var v40AudioVocalRemove: Boolean
+        get() = prefs.getBoolean(KEY_V40_AUDIO_VOCAL_REMOVE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V40_AUDIO_VOCAL_REMOVE, value).apply()
+
 
 
 
@@ -4460,6 +4465,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V39_PLAYLIST_LOAD_RELATED = "v39_playlist_load_related"
         private const val KEY_V40_VIDEO_SNAPSHOT_INTERVAL = "v40_video_snapshot_interval"
         private const val KEY_V40_DANMAKU_VINTAGE_MODE = "v40_danmaku_vintage_mode"
+        private const val KEY_V40_AUDIO_VOCAL_REMOVE = "v40_audio_vocal_remove"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
