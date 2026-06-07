@@ -425,3 +425,12 @@ private fun Boolean.switchText(): String = if (this) "开" else "关"
 
 private fun PlayerActivity.shouldPersistPlayerSettingsToGlobal(): Boolean = BiliClient.prefs.playerSettingsApplyToGlobal
 
+
+// 31.1: 弹幕重叠自动合并
+internal fun PlayerActivity.showv31DanmakuMergeOverlapToggle() {
+    val current = BiliClient.prefs.v31DanmakuMergeOverlap
+    AppPopup.Builder(this)
+        .title("弹幕重叠自动合并")
+        .option(switchText(current)) { BiliClient.prefs.v31DanmakuMergeOverlap = !current }
+        .show()
+}
