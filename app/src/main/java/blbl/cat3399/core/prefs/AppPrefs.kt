@@ -1696,6 +1696,11 @@ class AppPrefs(context: Context) {
     var v31VideoFrameSkipSilence: Boolean
         get() = prefs.getBoolean(KEY_V31_VIDEO_FRAME_SKIP_SILENCE, false)
         set(value) = prefs.edit().putBoolean(KEY_V31_VIDEO_FRAME_SKIP_SILENCE, value).apply()
+    // v31.3: 字幕字号自动适配
+    var v31SubtitleFontSizeAuto: Boolean
+        get() = prefs.getBoolean(KEY_V31_SUBTITLE_FONT_SIZE_AUTO, false)
+        set(value) = prefs.edit().putBoolean(KEY_V31_SUBTITLE_FONT_SIZE_AUTO, value).apply()
+
 
 
 
@@ -3623,6 +3628,7 @@ class AppPrefs(context: Context) {
         private const val KEY_VIDEO_BOOKMARKS = "video_bookmarks"
         private const val KEY_V31_DANMAKU_MERGE_OVERLAP = "v31_danmaku_merge_overlap"
         private const val KEY_V31_VIDEO_FRAME_SKIP_SILENCE = "v31_video_frame_skip_silence"
+        private const val KEY_V31_SUBTITLE_FONT_SIZE_AUTO = "v31_subtitle_font_size_auto"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
