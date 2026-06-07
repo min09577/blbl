@@ -10102,4 +10102,19 @@ internal fun PlayerActivity.showv38SubtitleLetterSpacingDialog() {
         .show()
 }
 
+
+// 38.7: 对比度增强
+internal fun PlayerActivity.showv38VideoContrastEnhanceDialog() {
+    val current = BiliClient.prefs.v38VideoContrastEnhance
+    AppPopup.Builder(this)
+        .title("对比度增强")
+        .option("0") { BiliClient.prefs.v38VideoContrastEnhance = 0 }
+        .option("1") { BiliClient.prefs.v38VideoContrastEnhance = 1 }
+        .option("2") { BiliClient.prefs.v38VideoContrastEnhance = 2 }
+        .option("3") { BiliClient.prefs.v38VideoContrastEnhance = 3 }
+        .option("5") { BiliClient.prefs.v38VideoContrastEnhance = 5 }
+        .option("10") { BiliClient.prefs.v38VideoContrastEnhance = 10 }
+        .show()
+}
+
 }
