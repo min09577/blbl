@@ -1724,6 +1724,11 @@ class AppPrefs(context: Context) {
     var v31PlayerPiPSupport: Boolean
         get() = prefs.getBoolean(KEY_V31_PLAYER_PI_P_SUPPORT, false)
         set(value) = prefs.edit().putBoolean(KEY_V31_PLAYER_PI_P_SUPPORT, value).apply()
+    // v31.10: A-B循环播放
+    var v31VideoABoopMode: Boolean
+        get() = prefs.getBoolean(KEY_V31_VIDEO_A_BOOP_MODE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V31_VIDEO_A_BOOP_MODE, value).apply()
+
 
 
 
@@ -3665,6 +3670,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V31_AUDIO_NIGHT_MODE = "v31_audio_night_mode"
         private const val KEY_V31_DANMAKU_KEYWORD_HIGHLIGHT = "v31_danmaku_keyword_highlight"
         private const val KEY_V31_PLAYER_PI_P_SUPPORT = "v31_player_pi_p_support"
+        private const val KEY_V31_VIDEO_A_BOOP_MODE = "v31_video_a_boop_mode"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
