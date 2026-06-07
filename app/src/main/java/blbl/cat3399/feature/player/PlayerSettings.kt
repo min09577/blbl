@@ -10308,4 +10308,14 @@ internal fun PlayerActivity.showv39SubtitleAnimationTypeDialog() {
         .show()
 }
 
+
+// 39.7: 视频详细信息栏
+internal fun PlayerActivity.showv39VideoDetailInfoBarToggle() {
+    val current = BiliClient.prefs.v39VideoDetailInfoBar
+    AppPopup.Builder(this)
+        .title("视频详细信息栏")
+        .option(switchText(current)) { BiliClient.prefs.v39VideoDetailInfoBar = !current }
+        .show()
+}
+
 }
