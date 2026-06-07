@@ -1556,6 +1556,20 @@ internal fun PlayerActivity.showv38DanmakuWrapTextToggle() {
         .option(switchText(current)) { BiliClient.prefs.v38DanmakuWrapText = !current }
         .show()
 }
+// 38.6: 字幕字间距
+internal fun PlayerActivity.showv38SubtitleLetterSpacingDialog() {
+    val current = BiliClient.prefs.v38SubtitleLetterSpacing
+    AppPopup.Builder(this)
+        .title("字幕字间距")
+        .option("0") { BiliClient.prefs.v38SubtitleLetterSpacing = 0 }
+        .option("1") { BiliClient.prefs.v38SubtitleLetterSpacing = 1 }
+        .option("2") { BiliClient.prefs.v38SubtitleLetterSpacing = 2 }
+        .option("3") { BiliClient.prefs.v38SubtitleLetterSpacing = 3 }
+        .option("5") { BiliClient.prefs.v38SubtitleLetterSpacing = 5 }
+        .option("10") { BiliClient.prefs.v38SubtitleLetterSpacing = 10 }
+        .show()
+}
+
 
 
 
