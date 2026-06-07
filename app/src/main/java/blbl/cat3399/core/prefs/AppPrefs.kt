@@ -1762,6 +1762,11 @@ class AppPrefs(context: Context) {
     var v31DanmakuMergeOverlap: Boolean
         get() = prefs.getBoolean(KEY_V31_DANMAKU_MERGE_OVERLAP, false)
         set(value) = prefs.edit().putBoolean(KEY_V31_DANMAKU_MERGE_OVERLAP, value).apply()
+    // v32.2: 弹幕雨模式
+    var v32DanmakuRainMode: Boolean
+        get() = prefs.getBoolean(KEY_V32_DANMAKU_RAIN_MODE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V32_DANMAKU_RAIN_MODE, value).apply()
+
     // v32.1: 息屏定时器(分钟)
     var v32ScreenOffTimer: Int
         get() = prefs.getInt(KEY_V32_SCREEN_OFF_TIMER, 0)
@@ -2978,6 +2983,7 @@ class AppPrefs(context: Context) {
             val snapped = ((scaled + step / 2) / step) * step
             return (snapped / 100f).coerceIn(DANMAKU_AREA_MIN, DANMAKU_AREA_MAX)
         }
+        private const val KEY_V32_DANMAKU_RAIN_MODE = "v32_danmaku_rain_mode"
 
         /**
          * 0.1.22 生效，3 个版本后移除兼容：
