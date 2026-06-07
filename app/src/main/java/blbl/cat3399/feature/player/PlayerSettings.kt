@@ -9117,4 +9117,19 @@ internal fun PlayerActivity.showv33DanmakuScrollDirectionDialog() {
         .show()
 }
 
+
+// 33.3: 缩略图时间点(秒)
+internal fun PlayerActivity.showv33VideoThumbnailTimeSecDialog() {
+    val current = BiliClient.prefs.v33VideoThumbnailTimeSec
+    AppPopup.Builder(this)
+        .title("缩略图时间点(秒)")
+        .option("0") { BiliClient.prefs.v33VideoThumbnailTimeSec = 0 }
+        .option("1") { BiliClient.prefs.v33VideoThumbnailTimeSec = 1 }
+        .option("2") { BiliClient.prefs.v33VideoThumbnailTimeSec = 2 }
+        .option("3") { BiliClient.prefs.v33VideoThumbnailTimeSec = 3 }
+        .option("5") { BiliClient.prefs.v33VideoThumbnailTimeSec = 5 }
+        .option("10") { BiliClient.prefs.v33VideoThumbnailTimeSec = 10 }
+        .show()
+}
+
 }
