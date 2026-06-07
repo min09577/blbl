@@ -8823,4 +8823,14 @@ internal fun PlayerActivity.showv31AudioNightModeToggle() {
         .show()
 }
 
+
+// 31.8: 弹幕关键词高亮
+internal fun PlayerActivity.showv31DanmakuKeywordHighlightToggle() {
+    val current = BiliClient.prefs.v31DanmakuKeywordHighlight
+    AppPopup.Builder(this)
+        .title("弹幕关键词高亮")
+        .option(switchText(current)) { BiliClient.prefs.v31DanmakuKeywordHighlight = !current }
+        .show()
+}
+
 }
