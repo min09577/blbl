@@ -1688,6 +1688,11 @@ class AppPrefs(context: Context) {
     var v30DanmakuFontGlow: Int
         get() = prefs.getInt(KEY_V30_DANMAKU_FONT_GLOW, 0)
         set(value) = prefs.edit().putInt(KEY_V30_DANMAKU_FONT_GLOW, value.coerceIn(0, 100)).apply()
+    // v31.3: 字幕字号自动适配
+    var v31SubtitleFontSizeAuto: Boolean
+        get() = prefs.getBoolean(KEY_V31_SUBTITLE_FONT_SIZE_AUTO, false)
+        set(value) = prefs.edit().putBoolean(KEY_V31_SUBTITLE_FONT_SIZE_AUTO, value).apply()
+
     // v31.2: 静音片段自动跳过
     var v31VideoFrameSkipSilence: Boolean
         get() = prefs.getBoolean(KEY_V31_VIDEO_FRAME_SKIP_SILENCE, false)
@@ -2836,6 +2841,7 @@ class AppPrefs(context: Context) {
                 KEY_GAIA_VGATE_V_VOUCHER,
                 KEY_GAIA_VGATE_V_VOUCHER_SAVED_AT_MS,
                 KEY_SPONSOR_BLOCK_PRIVATE_USER_ID,
+        private const val KEY_V31_SUBTITLE_FONT_SIZE_AUTO = "v31_subtitle_font_size_auto"
             )
 
         private val DIAGNOSTIC_EXCLUDED_KEYS: Set<String> =

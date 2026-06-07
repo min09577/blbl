@@ -442,4 +442,13 @@ internal fun PlayerActivity.showv31VideoFrameSkipSilenceToggle() {
         .option(switchText(current)) { BiliClient.prefs.v31VideoFrameSkipSilence = !current }
         .show()
 }
+// 31.3: 字幕字号自动适配
+internal fun PlayerActivity.showv31SubtitleFontSizeAutoToggle() {
+    val current = BiliClient.prefs.v31SubtitleFontSizeAuto
+    AppPopup.Builder(this)
+        .title("字幕字号自动适配")
+        .option(switchText(current)) { BiliClient.prefs.v31SubtitleFontSizeAuto = !current }
+        .show()
+}
+
 
