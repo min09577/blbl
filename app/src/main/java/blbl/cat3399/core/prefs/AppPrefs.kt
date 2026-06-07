@@ -1996,6 +1996,11 @@ class AppPrefs(context: Context) {
     var v36DanmakuOpacityPerType: Int
         get() = prefs.getInt(KEY_V36_DANMAKU_OPACITY_PER_TYPE, 0)
         set(value) = prefs.edit().putInt(KEY_V36_DANMAKU_OPACITY_PER_TYPE, value).apply()
+    // v36.3: 人声隔离
+    var v36AudioVoiceIsolate: Boolean
+        get() = prefs.getBoolean(KEY_V36_AUDIO_VOICE_ISOLATE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V36_AUDIO_VOICE_ISOLATE, value).apply()
+
 
 
 
@@ -4073,6 +4078,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V35_PLAYLIST_SMART_SHUFFLE = "v35_playlist_smart_shuffle"
         private const val KEY_V36_VIDEO_ASPECT_FIT_MODE = "v36_video_aspect_fit_mode"
         private const val KEY_V36_DANMAKU_OPACITY_PER_TYPE = "v36_danmaku_opacity_per_type"
+        private const val KEY_V36_AUDIO_VOICE_ISOLATE = "v36_audio_voice_isolate"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
