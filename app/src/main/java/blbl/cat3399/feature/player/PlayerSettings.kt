@@ -1595,6 +1595,20 @@ internal fun PlayerActivity.showv38PlaybackBufferMinSecDialog() {
         .option("10") { BiliClient.prefs.v38PlaybackBufferMinSec = 10 }
         .show()
 }
+// 38.9: 弹幕优先级
+internal fun PlayerActivity.showv38DanmakuPriorityLevelDialog() {
+    val current = BiliClient.prefs.v38DanmakuPriorityLevel
+    AppPopup.Builder(this)
+        .title("弹幕优先级")
+        .option("0") { BiliClient.prefs.v38DanmakuPriorityLevel = 0 }
+        .option("1") { BiliClient.prefs.v38DanmakuPriorityLevel = 1 }
+        .option("2") { BiliClient.prefs.v38DanmakuPriorityLevel = 2 }
+        .option("3") { BiliClient.prefs.v38DanmakuPriorityLevel = 3 }
+        .option("5") { BiliClient.prefs.v38DanmakuPriorityLevel = 5 }
+        .option("10") { BiliClient.prefs.v38DanmakuPriorityLevel = 10 }
+        .show()
+}
+
 
 
 
