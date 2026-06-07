@@ -1718,6 +1718,11 @@ class AppPrefs(context: Context) {
     var v31SubtitleFontSizeAuto: Boolean
         get() = prefs.getBoolean(KEY_V31_SUBTITLE_FONT_SIZE_AUTO, false)
         set(value) = prefs.edit().putBoolean(KEY_V31_SUBTITLE_FONT_SIZE_AUTO, value).apply()
+    // v31.4: 预缓冲时长(秒)
+    var v31PlaybackBufferAheadSec: Int
+        get() = prefs.getInt(KEY_V31_PLAYBACK_BUFFER_AHEAD_SEC, 0)
+        set(value) = prefs.edit().putInt(KEY_V31_PLAYBACK_BUFFER_AHEAD_SEC, value).apply()
+
 
 
 
@@ -3656,6 +3661,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V31_DANMAKU_MERGE_OVERLAP = "v31_danmaku_merge_overlap"
         private const val KEY_V31_VIDEO_FRAME_SKIP_SILENCE = "v31_video_frame_skip_silence"
         private const val KEY_V31_SUBTITLE_FONT_SIZE_AUTO = "v31_subtitle_font_size_auto"
+        private const val KEY_V31_PLAYBACK_BUFFER_AHEAD_SEC = "v31_playback_buffer_ahead_sec"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(

@@ -8768,4 +8768,19 @@ internal fun PlayerActivity.showv31SubtitleFontSizeAutoToggle() {
         .show()
 }
 
+
+// 31.4: 预缓冲时长(秒)
+internal fun PlayerActivity.showv31PlaybackBufferAheadSecDialog() {
+    val current = BiliClient.prefs.v31PlaybackBufferAheadSec
+    AppPopup.Builder(this)
+        .title("预缓冲时长(秒)")
+        .option("0") { BiliClient.prefs.v31PlaybackBufferAheadSec = 0 }
+        .option("1") { BiliClient.prefs.v31PlaybackBufferAheadSec = 1 }
+        .option("2") { BiliClient.prefs.v31PlaybackBufferAheadSec = 2 }
+        .option("3") { BiliClient.prefs.v31PlaybackBufferAheadSec = 3 }
+        .option("5") { BiliClient.prefs.v31PlaybackBufferAheadSec = 5 }
+        .option("10") { BiliClient.prefs.v31PlaybackBufferAheadSec = 10 }
+        .show()
+}
+
 }
