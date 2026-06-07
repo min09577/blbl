@@ -1974,6 +1974,11 @@ class AppPrefs(context: Context) {
     var v35VideoVignetteEffect: Int
         get() = prefs.getInt(KEY_V35_VIDEO_VIGNETTE_EFFECT, 0)
         set(value) = prefs.edit().putInt(KEY_V35_VIDEO_VIGNETTE_EFFECT, value).apply()
+    // v35.8: 仅WiFi预加载
+    var v35PlaybackPreloadOnWifi: Boolean
+        get() = prefs.getBoolean(KEY_V35_PLAYBACK_PRELOAD_ON_WIFI, false)
+        set(value) = prefs.edit().putBoolean(KEY_V35_PLAYBACK_PRELOAD_ON_WIFI, value).apply()
+
 
 
 
@@ -4040,6 +4045,7 @@ class AppPrefs(context: Context) {
         private const val KEY_V35_DANMAKU_PINYIN_CONVERT = "v35_danmaku_pinyin_convert"
         private const val KEY_V35_SUBTITLE_POSITION_TOP = "v35_subtitle_position_top"
         private const val KEY_V35_VIDEO_VIGNETTE_EFFECT = "v35_video_vignette_effect"
+        private const val KEY_V35_PLAYBACK_PRELOAD_ON_WIFI = "v35_playback_preload_on_wifi"
 
         private val CREDENTIAL_KEYS: Set<String> =
             setOf(
