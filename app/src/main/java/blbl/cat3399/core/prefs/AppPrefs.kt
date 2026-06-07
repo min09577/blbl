@@ -1910,6 +1910,11 @@ class AppPrefs(context: Context) {
     var v33AudioBassBoost: Int
         get() = prefs.getInt(KEY_V33_AUDIO_BASS_BOOST, 0)
         set(value) = prefs.edit().putInt(KEY_V33_AUDIO_BASS_BOOST, value).apply()
+    // v34.8: 耳机断开自动暂停
+    var v34PlaybackAutoPauseOnHeadset: Boolean
+        get() = prefs.getBoolean(KEY_V34_PLAYBACK_AUTO_PAUSE_ON_HEADSET, false)
+        set(value) = prefs.edit().putBoolean(KEY_V34_PLAYBACK_AUTO_PAUSE_ON_HEADSET, value).apply()
+
     // v34.7: 扫描线滤镜
     var v34VideoScanLineFilter: Boolean
         get() = prefs.getBoolean(KEY_V34_VIDEO_SCAN_LINE_FILTER, false)
@@ -3342,6 +3347,7 @@ class AppPrefs(context: Context) {
         const val PLAYER_DOWN_KEY_OSD_FOCUS_SPONSOR_SUBMIT = "sponsor_submit"
         const val PLAYER_DOWN_KEY_OSD_FOCUS_ADVANCED = "advanced"
 
+        private const val KEY_V34_PLAYBACK_AUTO_PAUSE_ON_HEADSET = "v34_playback_auto_pause_on_headset"
         private const val PLAYER_DOWN_KEY_OSD_FOCUS_RECOMMEND_LEGACY = "recommend"
         private const val PLAYER_DOWN_KEY_OSD_FOCUS_PLAYLIST_LEGACY = "playlist"
 
