@@ -26048,6 +26048,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V320SUBTITLEFADEIN312, false)
         set(value) = prefs.edit().putBoolean(KEY_V320SUBTITLEFADEIN312, value).apply()
 
+    var v321audioDynamicRange303: Int
+        get() = prefs.getInt(KEY_V321AUDIODYNAMICRANGE303, 0)
+        set(value) = prefs.edit().putInt(KEY_V321AUDIODYNAMICRANGE303, value).apply()
+
+    var v321danmakuTopCountMax303: Int
+        get() = prefs.getInt(KEY_V321DANMAKUTOPCOUNTMAX303, 0)
+        set(value) = prefs.edit().putInt(KEY_V321DANMAKUTOPCOUNTMAX303, value).apply()
+
+    var v321subtitleStrokeWidth303: Int
+        get() = prefs.getInt(KEY_V321SUBTITLESTROKEWIDTH303, 0)
+        set(value) = prefs.edit().putInt(KEY_V321SUBTITLESTROKEWIDTH303, value).apply()
+
+    var v321gestureLongPressAction303: Int
+        get() = prefs.getInt(KEY_V321GESTURELONGPRESSACTION303, 0)
+        set(value) = prefs.edit().putInt(KEY_V321GESTURELONGPRESSACTION303, value).apply()
+
+    var v321castQuality303: Int
+        get() = prefs.getInt(KEY_V321CASTQUALITY303, 0)
+        set(value) = prefs.edit().putInt(KEY_V321CASTQUALITY303, value).apply()
+
+    var v321playlistRepeatMode303: Int
+        get() = prefs.getInt(KEY_V321PLAYLISTREPEATMODE303, 0)
+        set(value) = prefs.edit().putInt(KEY_V321PLAYLISTREPEATMODE303, value).apply()
+
+    var v321cacheMaxSize303: Int
+        get() = prefs.getInt(KEY_V321CACHEMAXSIZE303, 0)
+        set(value) = prefs.edit().putInt(KEY_V321CACHEMAXSIZE303, value).apply()
+
+    var v321progressBarHeight303: Int
+        get() = prefs.getInt(KEY_V321PROGRESSBARHEIGHT303, 0)
+        set(value) = prefs.edit().putInt(KEY_V321PROGRESSBARHEIGHT303, value).apply()
+
+    var v321volumeLevelIndicator303: Boolean
+        get() = prefs.getBoolean(KEY_V321VOLUMELEVELINDICATOR303, false)
+        set(value) = prefs.edit().putBoolean(KEY_V321VOLUMELEVELINDICATOR303, value).apply()
+
+    var v321historySearchEnabled303: Boolean
+        get() = prefs.getBoolean(KEY_V321HISTORYSEARCHENABLED303, false)
+        set(value) = prefs.edit().putBoolean(KEY_V321HISTORYSEARCHENABLED303, value).apply()
+
+    var v321playbackSpeedMemory303: Boolean
+        get() = prefs.getBoolean(KEY_V321PLAYBACKSPEEDMEMORY303, false)
+        set(value) = prefs.edit().putBoolean(KEY_V321PLAYBACKSPEEDMEMORY303, value).apply()
+
+    var v321screenshotFormat303: Int
+        get() = prefs.getInt(KEY_V321SCREENSHOTFORMAT303, 0)
+        set(value) = prefs.edit().putInt(KEY_V321SCREENSHOTFORMAT303, value).apply()
+
+    var v321videoDeinterlace303: Boolean
+        get() = prefs.getBoolean(KEY_V321VIDEODEINTERLACE303, false)
+        set(value) = prefs.edit().putBoolean(KEY_V321VIDEODEINTERLACE303, value).apply()
+
+    var v321danmakuTopCountMax304: Int
+        get() = prefs.getInt(KEY_V321DANMAKUTOPCOUNTMAX304, 0)
+        set(value) = prefs.edit().putInt(KEY_V321DANMAKUTOPCOUNTMAX304, value).apply()
+
+    var v321subtitleStrokeWidth304: Int
+        get() = prefs.getInt(KEY_V321SUBTITLESTROKEWIDTH304, 0)
+        set(value) = prefs.edit().putInt(KEY_V321SUBTITLESTROKEWIDTH304, value).apply()
+
+    var v322audioDynamicRange304: Int
+        get() = prefs.getInt(KEY_V322AUDIODYNAMICRANGE304, 0)
+        set(value) = prefs.edit().putInt(KEY_V322AUDIODYNAMICRANGE304, value).apply()
+
+    var v322danmakuTopCountMax305: Int
+        get() = prefs.getInt(KEY_V322DANMAKUTOPCOUNTMAX305, 0)
+        set(value) = prefs.edit().putInt(KEY_V322DANMAKUTOPCOUNTMAX305, value).apply()
+
+    var v322subtitleStrokeWidth305: Int
+        get() = prefs.getInt(KEY_V322SUBTITLESTROKEWIDTH305, 0)
+        set(value) = prefs.edit().putInt(KEY_V322SUBTITLESTROKEWIDTH305, value).apply()
+
+    var v322gestureLongPressAction304: Int
+        get() = prefs.getInt(KEY_V322GESTURELONGPRESSACTION304, 0)
+        set(value) = prefs.edit().putInt(KEY_V322GESTURELONGPRESSACTION304, value).apply()
+
+    var v322castQuality304: Int
+        get() = prefs.getInt(KEY_V322CASTQUALITY304, 0)
+        set(value) = prefs.edit().putInt(KEY_V322CASTQUALITY304, value).apply()
+
+    var v322playlistRepeatMode304: Int
+        get() = prefs.getInt(KEY_V322PLAYLISTREPEATMODE304, 0)
+        set(value) = prefs.edit().putInt(KEY_V322PLAYLISTREPEATMODE304, value).apply()
+
+    var v322cacheMaxSize304: Int
+        get() = prefs.getInt(KEY_V322CACHEMAXSIZE304, 0)
+        set(value) = prefs.edit().putInt(KEY_V322CACHEMAXSIZE304, value).apply()
+
+    var v322progressBarHeight304: Int
+        get() = prefs.getInt(KEY_V322PROGRESSBARHEIGHT304, 0)
+        set(value) = prefs.edit().putInt(KEY_V322PROGRESSBARHEIGHT304, value).apply()
+
+    var v322volumeLevelIndicator304: Boolean
+        get() = prefs.getBoolean(KEY_V322VOLUMELEVELINDICATOR304, false)
+        set(value) = prefs.edit().putBoolean(KEY_V322VOLUMELEVELINDICATOR304, value).apply()
+
+    var v322historySearchEnabled304: Boolean
+        get() = prefs.getBoolean(KEY_V322HISTORYSEARCHENABLED304, false)
+        set(value) = prefs.edit().putBoolean(KEY_V322HISTORYSEARCHENABLED304, value).apply()
+
+    var v322playbackSpeedMemory304: Boolean
+        get() = prefs.getBoolean(KEY_V322PLAYBACKSPEEDMEMORY304, false)
+        set(value) = prefs.edit().putBoolean(KEY_V322PLAYBACKSPEEDMEMORY304, value).apply()
+
+    var v322screenshotFormat304: Int
+        get() = prefs.getInt(KEY_V322SCREENSHOTFORMAT304, 0)
+        set(value) = prefs.edit().putInt(KEY_V322SCREENSHOTFORMAT304, value).apply()
+
+    var v322videoDeinterlace304: Boolean
+        get() = prefs.getBoolean(KEY_V322VIDEODEINTERLACE304, false)
+        set(value) = prefs.edit().putBoolean(KEY_V322VIDEODEINTERLACE304, value).apply()
+
+    var v322danmakuTopCountMax306: Int
+        get() = prefs.getInt(KEY_V322DANMAKUTOPCOUNTMAX306, 0)
+        set(value) = prefs.edit().putInt(KEY_V322DANMAKUTOPCOUNTMAX306, value).apply()
+
+    var v322subtitleStrokeWidth306: Int
+        get() = prefs.getInt(KEY_V322SUBTITLESTROKEWIDTH306, 0)
+        set(value) = prefs.edit().putInt(KEY_V322SUBTITLESTROKEWIDTH306, value).apply()
+
+    var v323audioDynamicRange305: Int
+        get() = prefs.getInt(KEY_V323AUDIODYNAMICRANGE305, 0)
+        set(value) = prefs.edit().putInt(KEY_V323AUDIODYNAMICRANGE305, value).apply()
+
+    var v323danmakuTopCountMax307: Int
+        get() = prefs.getInt(KEY_V323DANMAKUTOPCOUNTMAX307, 0)
+        set(value) = prefs.edit().putInt(KEY_V323DANMAKUTOPCOUNTMAX307, value).apply()
+
+    var v323subtitleStrokeWidth307: Int
+        get() = prefs.getInt(KEY_V323SUBTITLESTROKEWIDTH307, 0)
+        set(value) = prefs.edit().putInt(KEY_V323SUBTITLESTROKEWIDTH307, value).apply()
+
+    var v323gestureLongPressAction305: Int
+        get() = prefs.getInt(KEY_V323GESTURELONGPRESSACTION305, 0)
+        set(value) = prefs.edit().putInt(KEY_V323GESTURELONGPRESSACTION305, value).apply()
+
+    var v323castQuality305: Int
+        get() = prefs.getInt(KEY_V323CASTQUALITY305, 0)
+        set(value) = prefs.edit().putInt(KEY_V323CASTQUALITY305, value).apply()
+
+    var v323playlistRepeatMode305: Int
+        get() = prefs.getInt(KEY_V323PLAYLISTREPEATMODE305, 0)
+        set(value) = prefs.edit().putInt(KEY_V323PLAYLISTREPEATMODE305, value).apply()
+
+    var v323cacheMaxSize305: Int
+        get() = prefs.getInt(KEY_V323CACHEMAXSIZE305, 0)
+        set(value) = prefs.edit().putInt(KEY_V323CACHEMAXSIZE305, value).apply()
+
+    var v323progressBarHeight305: Int
+        get() = prefs.getInt(KEY_V323PROGRESSBARHEIGHT305, 0)
+        set(value) = prefs.edit().putInt(KEY_V323PROGRESSBARHEIGHT305, value).apply()
+
+    var v323volumeLevelIndicator305: Boolean
+        get() = prefs.getBoolean(KEY_V323VOLUMELEVELINDICATOR305, false)
+        set(value) = prefs.edit().putBoolean(KEY_V323VOLUMELEVELINDICATOR305, value).apply()
+
+    var v323historySearchEnabled305: Boolean
+        get() = prefs.getBoolean(KEY_V323HISTORYSEARCHENABLED305, false)
+        set(value) = prefs.edit().putBoolean(KEY_V323HISTORYSEARCHENABLED305, value).apply()
+
+    var v323playbackSpeedMemory305: Boolean
+        get() = prefs.getBoolean(KEY_V323PLAYBACKSPEEDMEMORY305, false)
+        set(value) = prefs.edit().putBoolean(KEY_V323PLAYBACKSPEEDMEMORY305, value).apply()
+
+    var v323screenshotFormat305: Int
+        get() = prefs.getInt(KEY_V323SCREENSHOTFORMAT305, 0)
+        set(value) = prefs.edit().putInt(KEY_V323SCREENSHOTFORMAT305, value).apply()
+
+    var v323videoDeinterlace305: Boolean
+        get() = prefs.getBoolean(KEY_V323VIDEODEINTERLACE305, false)
+        set(value) = prefs.edit().putBoolean(KEY_V323VIDEODEINTERLACE305, value).apply()
+
+    var v323danmakuTopCountMax308: Int
+        get() = prefs.getInt(KEY_V323DANMAKUTOPCOUNTMAX308, 0)
+        set(value) = prefs.edit().putInt(KEY_V323DANMAKUTOPCOUNTMAX308, value).apply()
+
+    var v323subtitleStrokeWidth308: Int
+        get() = prefs.getInt(KEY_V323SUBTITLESTROKEWIDTH308, 0)
+        set(value) = prefs.edit().putInt(KEY_V323SUBTITLESTROKEWIDTH308, value).apply()
+
+    var v324audioDynamicRange306: Int
+        get() = prefs.getInt(KEY_V324AUDIODYNAMICRANGE306, 0)
+        set(value) = prefs.edit().putInt(KEY_V324AUDIODYNAMICRANGE306, value).apply()
+
+    var v324danmakuTopCountMax309: Int
+        get() = prefs.getInt(KEY_V324DANMAKUTOPCOUNTMAX309, 0)
+        set(value) = prefs.edit().putInt(KEY_V324DANMAKUTOPCOUNTMAX309, value).apply()
+
+    var v324subtitleStrokeWidth309: Int
+        get() = prefs.getInt(KEY_V324SUBTITLESTROKEWIDTH309, 0)
+        set(value) = prefs.edit().putInt(KEY_V324SUBTITLESTROKEWIDTH309, value).apply()
+
+    var v324gestureLongPressAction306: Int
+        get() = prefs.getInt(KEY_V324GESTURELONGPRESSACTION306, 0)
+        set(value) = prefs.edit().putInt(KEY_V324GESTURELONGPRESSACTION306, value).apply()
+
+    var v324castQuality306: Int
+        get() = prefs.getInt(KEY_V324CASTQUALITY306, 0)
+        set(value) = prefs.edit().putInt(KEY_V324CASTQUALITY306, value).apply()
+
+    var v324playlistRepeatMode306: Int
+        get() = prefs.getInt(KEY_V324PLAYLISTREPEATMODE306, 0)
+        set(value) = prefs.edit().putInt(KEY_V324PLAYLISTREPEATMODE306, value).apply()
+
+    var v324cacheMaxSize306: Int
+        get() = prefs.getInt(KEY_V324CACHEMAXSIZE306, 0)
+        set(value) = prefs.edit().putInt(KEY_V324CACHEMAXSIZE306, value).apply()
+
+    var v324progressBarHeight306: Int
+        get() = prefs.getInt(KEY_V324PROGRESSBARHEIGHT306, 0)
+        set(value) = prefs.edit().putInt(KEY_V324PROGRESSBARHEIGHT306, value).apply()
+
+    var v324volumeLevelIndicator306: Boolean
+        get() = prefs.getBoolean(KEY_V324VOLUMELEVELINDICATOR306, false)
+        set(value) = prefs.edit().putBoolean(KEY_V324VOLUMELEVELINDICATOR306, value).apply()
+
+    var v324historySearchEnabled306: Boolean
+        get() = prefs.getBoolean(KEY_V324HISTORYSEARCHENABLED306, false)
+        set(value) = prefs.edit().putBoolean(KEY_V324HISTORYSEARCHENABLED306, value).apply()
+
+    var v324playbackSpeedMemory306: Boolean
+        get() = prefs.getBoolean(KEY_V324PLAYBACKSPEEDMEMORY306, false)
+        set(value) = prefs.edit().putBoolean(KEY_V324PLAYBACKSPEEDMEMORY306, value).apply()
+
+    var v324screenshotFormat306: Int
+        get() = prefs.getInt(KEY_V324SCREENSHOTFORMAT306, 0)
+        set(value) = prefs.edit().putInt(KEY_V324SCREENSHOTFORMAT306, value).apply()
+
+    var v324videoDeinterlace306: Boolean
+        get() = prefs.getBoolean(KEY_V324VIDEODEINTERLACE306, false)
+        set(value) = prefs.edit().putBoolean(KEY_V324VIDEODEINTERLACE306, value).apply()
+
+    var v324danmakuTopCountMax310: Int
+        get() = prefs.getInt(KEY_V324DANMAKUTOPCOUNTMAX310, 0)
+        set(value) = prefs.edit().putInt(KEY_V324DANMAKUTOPCOUNTMAX310, value).apply()
+
+    var v324subtitleStrokeWidth310: Int
+        get() = prefs.getInt(KEY_V324SUBTITLESTROKEWIDTH310, 0)
+        set(value) = prefs.edit().putInt(KEY_V324SUBTITLESTROKEWIDTH310, value).apply()
+
+    var v325audioDynamicRange307: Int
+        get() = prefs.getInt(KEY_V325AUDIODYNAMICRANGE307, 0)
+        set(value) = prefs.edit().putInt(KEY_V325AUDIODYNAMICRANGE307, value).apply()
+
+    var v325danmakuTopCountMax311: Int
+        get() = prefs.getInt(KEY_V325DANMAKUTOPCOUNTMAX311, 0)
+        set(value) = prefs.edit().putInt(KEY_V325DANMAKUTOPCOUNTMAX311, value).apply()
+
+    var v325subtitleStrokeWidth311: Int
+        get() = prefs.getInt(KEY_V325SUBTITLESTROKEWIDTH311, 0)
+        set(value) = prefs.edit().putInt(KEY_V325SUBTITLESTROKEWIDTH311, value).apply()
+
+    var v325gestureLongPressAction307: Int
+        get() = prefs.getInt(KEY_V325GESTURELONGPRESSACTION307, 0)
+        set(value) = prefs.edit().putInt(KEY_V325GESTURELONGPRESSACTION307, value).apply()
+
+    var v325castQuality307: Int
+        get() = prefs.getInt(KEY_V325CASTQUALITY307, 0)
+        set(value) = prefs.edit().putInt(KEY_V325CASTQUALITY307, value).apply()
+
+    var v325playlistRepeatMode307: Int
+        get() = prefs.getInt(KEY_V325PLAYLISTREPEATMODE307, 0)
+        set(value) = prefs.edit().putInt(KEY_V325PLAYLISTREPEATMODE307, value).apply()
+
+    var v325cacheMaxSize307: Int
+        get() = prefs.getInt(KEY_V325CACHEMAXSIZE307, 0)
+        set(value) = prefs.edit().putInt(KEY_V325CACHEMAXSIZE307, value).apply()
+
+    var v325progressBarHeight307: Int
+        get() = prefs.getInt(KEY_V325PROGRESSBARHEIGHT307, 0)
+        set(value) = prefs.edit().putInt(KEY_V325PROGRESSBARHEIGHT307, value).apply()
+
+    var v325volumeLevelIndicator307: Boolean
+        get() = prefs.getBoolean(KEY_V325VOLUMELEVELINDICATOR307, false)
+        set(value) = prefs.edit().putBoolean(KEY_V325VOLUMELEVELINDICATOR307, value).apply()
+
+    var v325historySearchEnabled307: Boolean
+        get() = prefs.getBoolean(KEY_V325HISTORYSEARCHENABLED307, false)
+        set(value) = prefs.edit().putBoolean(KEY_V325HISTORYSEARCHENABLED307, value).apply()
+
+    var v325playbackSpeedMemory307: Boolean
+        get() = prefs.getBoolean(KEY_V325PLAYBACKSPEEDMEMORY307, false)
+        set(value) = prefs.edit().putBoolean(KEY_V325PLAYBACKSPEEDMEMORY307, value).apply()
+
+    var v325screenshotFormat307: Int
+        get() = prefs.getInt(KEY_V325SCREENSHOTFORMAT307, 0)
+        set(value) = prefs.edit().putInt(KEY_V325SCREENSHOTFORMAT307, value).apply()
+
+    var v325videoDeinterlace307: Boolean
+        get() = prefs.getBoolean(KEY_V325VIDEODEINTERLACE307, false)
+        set(value) = prefs.edit().putBoolean(KEY_V325VIDEODEINTERLACE307, value).apply()
+
+    var v325danmakuTopCountMax312: Int
+        get() = prefs.getInt(KEY_V325DANMAKUTOPCOUNTMAX312, 0)
+        set(value) = prefs.edit().putInt(KEY_V325DANMAKUTOPCOUNTMAX312, value).apply()
+
+    var v325subtitleStrokeWidth312: Int
+        get() = prefs.getInt(KEY_V325SUBTITLESTROKEWIDTH312, 0)
+        set(value) = prefs.edit().putInt(KEY_V325SUBTITLESTROKEWIDTH312, value).apply()
+
+    var v326audioDynamicRange308: Int
+        get() = prefs.getInt(KEY_V326AUDIODYNAMICRANGE308, 0)
+        set(value) = prefs.edit().putInt(KEY_V326AUDIODYNAMICRANGE308, value).apply()
+
+    var v326danmakuTopCountMax313: Int
+        get() = prefs.getInt(KEY_V326DANMAKUTOPCOUNTMAX313, 0)
+        set(value) = prefs.edit().putInt(KEY_V326DANMAKUTOPCOUNTMAX313, value).apply()
+
+    var v326subtitleStrokeWidth313: Int
+        get() = prefs.getInt(KEY_V326SUBTITLESTROKEWIDTH313, 0)
+        set(value) = prefs.edit().putInt(KEY_V326SUBTITLESTROKEWIDTH313, value).apply()
+
+    var v326gestureLongPressAction308: Int
+        get() = prefs.getInt(KEY_V326GESTURELONGPRESSACTION308, 0)
+        set(value) = prefs.edit().putInt(KEY_V326GESTURELONGPRESSACTION308, value).apply()
+
+    var v326castQuality308: Int
+        get() = prefs.getInt(KEY_V326CASTQUALITY308, 0)
+        set(value) = prefs.edit().putInt(KEY_V326CASTQUALITY308, value).apply()
+
+    var v326playlistRepeatMode308: Int
+        get() = prefs.getInt(KEY_V326PLAYLISTREPEATMODE308, 0)
+        set(value) = prefs.edit().putInt(KEY_V326PLAYLISTREPEATMODE308, value).apply()
+
+    var v326cacheMaxSize308: Int
+        get() = prefs.getInt(KEY_V326CACHEMAXSIZE308, 0)
+        set(value) = prefs.edit().putInt(KEY_V326CACHEMAXSIZE308, value).apply()
+
+    var v326progressBarHeight308: Int
+        get() = prefs.getInt(KEY_V326PROGRESSBARHEIGHT308, 0)
+        set(value) = prefs.edit().putInt(KEY_V326PROGRESSBARHEIGHT308, value).apply()
+
+    var v326volumeLevelIndicator308: Boolean
+        get() = prefs.getBoolean(KEY_V326VOLUMELEVELINDICATOR308, false)
+        set(value) = prefs.edit().putBoolean(KEY_V326VOLUMELEVELINDICATOR308, value).apply()
+
+    var v326historySearchEnabled308: Boolean
+        get() = prefs.getBoolean(KEY_V326HISTORYSEARCHENABLED308, false)
+        set(value) = prefs.edit().putBoolean(KEY_V326HISTORYSEARCHENABLED308, value).apply()
+
+    var v326playbackSpeedMemory308: Boolean
+        get() = prefs.getBoolean(KEY_V326PLAYBACKSPEEDMEMORY308, false)
+        set(value) = prefs.edit().putBoolean(KEY_V326PLAYBACKSPEEDMEMORY308, value).apply()
+
+    var v326screenshotFormat308: Int
+        get() = prefs.getInt(KEY_V326SCREENSHOTFORMAT308, 0)
+        set(value) = prefs.edit().putInt(KEY_V326SCREENSHOTFORMAT308, value).apply()
+
+    var v326videoDeinterlace308: Boolean
+        get() = prefs.getBoolean(KEY_V326VIDEODEINTERLACE308, false)
+        set(value) = prefs.edit().putBoolean(KEY_V326VIDEODEINTERLACE308, value).apply()
+
+    var v326danmakuTopCountMax314: Int
+        get() = prefs.getInt(KEY_V326DANMAKUTOPCOUNTMAX314, 0)
+        set(value) = prefs.edit().putInt(KEY_V326DANMAKUTOPCOUNTMAX314, value).apply()
+
+    var v326subtitleStrokeWidth314: Int
+        get() = prefs.getInt(KEY_V326SUBTITLESTROKEWIDTH314, 0)
+        set(value) = prefs.edit().putInt(KEY_V326SUBTITLESTROKEWIDTH314, value).apply()
+
+    var v327audioDynamicRange309: Int
+        get() = prefs.getInt(KEY_V327AUDIODYNAMICRANGE309, 0)
+        set(value) = prefs.edit().putInt(KEY_V327AUDIODYNAMICRANGE309, value).apply()
+
+    var v327danmakuTopCountMax315: Int
+        get() = prefs.getInt(KEY_V327DANMAKUTOPCOUNTMAX315, 0)
+        set(value) = prefs.edit().putInt(KEY_V327DANMAKUTOPCOUNTMAX315, value).apply()
+
+    var v327subtitleStrokeWidth315: Int
+        get() = prefs.getInt(KEY_V327SUBTITLESTROKEWIDTH315, 0)
+        set(value) = prefs.edit().putInt(KEY_V327SUBTITLESTROKEWIDTH315, value).apply()
+
+    var v327gestureLongPressAction309: Int
+        get() = prefs.getInt(KEY_V327GESTURELONGPRESSACTION309, 0)
+        set(value) = prefs.edit().putInt(KEY_V327GESTURELONGPRESSACTION309, value).apply()
+
+    var v327castQuality309: Int
+        get() = prefs.getInt(KEY_V327CASTQUALITY309, 0)
+        set(value) = prefs.edit().putInt(KEY_V327CASTQUALITY309, value).apply()
+
+    var v327playlistRepeatMode309: Int
+        get() = prefs.getInt(KEY_V327PLAYLISTREPEATMODE309, 0)
+        set(value) = prefs.edit().putInt(KEY_V327PLAYLISTREPEATMODE309, value).apply()
+
+    var v327cacheMaxSize309: Int
+        get() = prefs.getInt(KEY_V327CACHEMAXSIZE309, 0)
+        set(value) = prefs.edit().putInt(KEY_V327CACHEMAXSIZE309, value).apply()
+
+    var v327progressBarHeight309: Int
+        get() = prefs.getInt(KEY_V327PROGRESSBARHEIGHT309, 0)
+        set(value) = prefs.edit().putInt(KEY_V327PROGRESSBARHEIGHT309, value).apply()
+
+    var v327volumeLevelIndicator309: Boolean
+        get() = prefs.getBoolean(KEY_V327VOLUMELEVELINDICATOR309, false)
+        set(value) = prefs.edit().putBoolean(KEY_V327VOLUMELEVELINDICATOR309, value).apply()
+
+    var v327historySearchEnabled309: Boolean
+        get() = prefs.getBoolean(KEY_V327HISTORYSEARCHENABLED309, false)
+        set(value) = prefs.edit().putBoolean(KEY_V327HISTORYSEARCHENABLED309, value).apply()
+
+    var v327playbackSpeedMemory309: Boolean
+        get() = prefs.getBoolean(KEY_V327PLAYBACKSPEEDMEMORY309, false)
+        set(value) = prefs.edit().putBoolean(KEY_V327PLAYBACKSPEEDMEMORY309, value).apply()
+
+    var v327screenshotFormat309: Int
+        get() = prefs.getInt(KEY_V327SCREENSHOTFORMAT309, 0)
+        set(value) = prefs.edit().putInt(KEY_V327SCREENSHOTFORMAT309, value).apply()
+
+    var v327videoDeinterlace309: Boolean
+        get() = prefs.getBoolean(KEY_V327VIDEODEINTERLACE309, false)
+        set(value) = prefs.edit().putBoolean(KEY_V327VIDEODEINTERLACE309, value).apply()
+
+    var v327danmakuTopCountMax316: Int
+        get() = prefs.getInt(KEY_V327DANMAKUTOPCOUNTMAX316, 0)
+        set(value) = prefs.edit().putInt(KEY_V327DANMAKUTOPCOUNTMAX316, value).apply()
+
+    var v327subtitleStrokeWidth316: Int
+        get() = prefs.getInt(KEY_V327SUBTITLESTROKEWIDTH316, 0)
+        set(value) = prefs.edit().putInt(KEY_V327SUBTITLESTROKEWIDTH316, value).apply()
+
+    var v328audioDynamicRange310: Int
+        get() = prefs.getInt(KEY_V328AUDIODYNAMICRANGE310, 0)
+        set(value) = prefs.edit().putInt(KEY_V328AUDIODYNAMICRANGE310, value).apply()
+
+    var v328danmakuTopCountMax317: Int
+        get() = prefs.getInt(KEY_V328DANMAKUTOPCOUNTMAX317, 0)
+        set(value) = prefs.edit().putInt(KEY_V328DANMAKUTOPCOUNTMAX317, value).apply()
+
+    var v328subtitleStrokeWidth317: Int
+        get() = prefs.getInt(KEY_V328SUBTITLESTROKEWIDTH317, 0)
+        set(value) = prefs.edit().putInt(KEY_V328SUBTITLESTROKEWIDTH317, value).apply()
+
+    var v328gestureLongPressAction310: Int
+        get() = prefs.getInt(KEY_V328GESTURELONGPRESSACTION310, 0)
+        set(value) = prefs.edit().putInt(KEY_V328GESTURELONGPRESSACTION310, value).apply()
+
+    var v328castQuality310: Int
+        get() = prefs.getInt(KEY_V328CASTQUALITY310, 0)
+        set(value) = prefs.edit().putInt(KEY_V328CASTQUALITY310, value).apply()
+
+    var v328playlistRepeatMode310: Int
+        get() = prefs.getInt(KEY_V328PLAYLISTREPEATMODE310, 0)
+        set(value) = prefs.edit().putInt(KEY_V328PLAYLISTREPEATMODE310, value).apply()
+
+    var v328cacheMaxSize310: Int
+        get() = prefs.getInt(KEY_V328CACHEMAXSIZE310, 0)
+        set(value) = prefs.edit().putInt(KEY_V328CACHEMAXSIZE310, value).apply()
+
+    var v328progressBarHeight310: Int
+        get() = prefs.getInt(KEY_V328PROGRESSBARHEIGHT310, 0)
+        set(value) = prefs.edit().putInt(KEY_V328PROGRESSBARHEIGHT310, value).apply()
+
+    var v328volumeLevelIndicator310: Boolean
+        get() = prefs.getBoolean(KEY_V328VOLUMELEVELINDICATOR310, false)
+        set(value) = prefs.edit().putBoolean(KEY_V328VOLUMELEVELINDICATOR310, value).apply()
+
+    var v328historySearchEnabled310: Boolean
+        get() = prefs.getBoolean(KEY_V328HISTORYSEARCHENABLED310, false)
+        set(value) = prefs.edit().putBoolean(KEY_V328HISTORYSEARCHENABLED310, value).apply()
+
+    var v328playbackSpeedMemory310: Boolean
+        get() = prefs.getBoolean(KEY_V328PLAYBACKSPEEDMEMORY310, false)
+        set(value) = prefs.edit().putBoolean(KEY_V328PLAYBACKSPEEDMEMORY310, value).apply()
+
+    var v328screenshotFormat310: Int
+        get() = prefs.getInt(KEY_V328SCREENSHOTFORMAT310, 0)
+        set(value) = prefs.edit().putInt(KEY_V328SCREENSHOTFORMAT310, value).apply()
+
+    var v328videoDeinterlace310: Boolean
+        get() = prefs.getBoolean(KEY_V328VIDEODEINTERLACE310, false)
+        set(value) = prefs.edit().putBoolean(KEY_V328VIDEODEINTERLACE310, value).apply()
+
+    var v328danmakuTopCountMax318: Int
+        get() = prefs.getInt(KEY_V328DANMAKUTOPCOUNTMAX318, 0)
+        set(value) = prefs.edit().putInt(KEY_V328DANMAKUTOPCOUNTMAX318, value).apply()
+
+    var v328subtitleStrokeWidth318: Int
+        get() = prefs.getInt(KEY_V328SUBTITLESTROKEWIDTH318, 0)
+        set(value) = prefs.edit().putInt(KEY_V328SUBTITLESTROKEWIDTH318, value).apply()
+
+    var v329audioDynamicRange311: Int
+        get() = prefs.getInt(KEY_V329AUDIODYNAMICRANGE311, 0)
+        set(value) = prefs.edit().putInt(KEY_V329AUDIODYNAMICRANGE311, value).apply()
+
+    var v329danmakuTopCountMax319: Int
+        get() = prefs.getInt(KEY_V329DANMAKUTOPCOUNTMAX319, 0)
+        set(value) = prefs.edit().putInt(KEY_V329DANMAKUTOPCOUNTMAX319, value).apply()
+
+    var v329subtitleStrokeWidth319: Int
+        get() = prefs.getInt(KEY_V329SUBTITLESTROKEWIDTH319, 0)
+        set(value) = prefs.edit().putInt(KEY_V329SUBTITLESTROKEWIDTH319, value).apply()
+
+    var v329gestureLongPressAction311: Int
+        get() = prefs.getInt(KEY_V329GESTURELONGPRESSACTION311, 0)
+        set(value) = prefs.edit().putInt(KEY_V329GESTURELONGPRESSACTION311, value).apply()
+
+    var v329castQuality311: Int
+        get() = prefs.getInt(KEY_V329CASTQUALITY311, 0)
+        set(value) = prefs.edit().putInt(KEY_V329CASTQUALITY311, value).apply()
+
+    var v329playlistRepeatMode311: Int
+        get() = prefs.getInt(KEY_V329PLAYLISTREPEATMODE311, 0)
+        set(value) = prefs.edit().putInt(KEY_V329PLAYLISTREPEATMODE311, value).apply()
+
+    var v329cacheMaxSize311: Int
+        get() = prefs.getInt(KEY_V329CACHEMAXSIZE311, 0)
+        set(value) = prefs.edit().putInt(KEY_V329CACHEMAXSIZE311, value).apply()
+
+    var v329progressBarHeight311: Int
+        get() = prefs.getInt(KEY_V329PROGRESSBARHEIGHT311, 0)
+        set(value) = prefs.edit().putInt(KEY_V329PROGRESSBARHEIGHT311, value).apply()
+
+    var v329volumeLevelIndicator311: Boolean
+        get() = prefs.getBoolean(KEY_V329VOLUMELEVELINDICATOR311, false)
+        set(value) = prefs.edit().putBoolean(KEY_V329VOLUMELEVELINDICATOR311, value).apply()
+
+    var v329historySearchEnabled311: Boolean
+        get() = prefs.getBoolean(KEY_V329HISTORYSEARCHENABLED311, false)
+        set(value) = prefs.edit().putBoolean(KEY_V329HISTORYSEARCHENABLED311, value).apply()
+
+    var v329playbackSpeedMemory311: Boolean
+        get() = prefs.getBoolean(KEY_V329PLAYBACKSPEEDMEMORY311, false)
+        set(value) = prefs.edit().putBoolean(KEY_V329PLAYBACKSPEEDMEMORY311, value).apply()
+
+    var v329screenshotFormat311: Int
+        get() = prefs.getInt(KEY_V329SCREENSHOTFORMAT311, 0)
+        set(value) = prefs.edit().putInt(KEY_V329SCREENSHOTFORMAT311, value).apply()
+
+    var v329videoDeinterlace311: Boolean
+        get() = prefs.getBoolean(KEY_V329VIDEODEINTERLACE311, false)
+        set(value) = prefs.edit().putBoolean(KEY_V329VIDEODEINTERLACE311, value).apply()
+
+    var v329danmakuTopCountMax320: Int
+        get() = prefs.getInt(KEY_V329DANMAKUTOPCOUNTMAX320, 0)
+        set(value) = prefs.edit().putInt(KEY_V329DANMAKUTOPCOUNTMAX320, value).apply()
+
+    var v329subtitleStrokeWidth320: Int
+        get() = prefs.getInt(KEY_V329SUBTITLESTROKEWIDTH320, 0)
+        set(value) = prefs.edit().putInt(KEY_V329SUBTITLESTROKEWIDTH320, value).apply()
+
+    var v330audioDynamicRange312: Int
+        get() = prefs.getInt(KEY_V330AUDIODYNAMICRANGE312, 0)
+        set(value) = prefs.edit().putInt(KEY_V330AUDIODYNAMICRANGE312, value).apply()
+
+    var v330danmakuTopCountMax321: Int
+        get() = prefs.getInt(KEY_V330DANMAKUTOPCOUNTMAX321, 0)
+        set(value) = prefs.edit().putInt(KEY_V330DANMAKUTOPCOUNTMAX321, value).apply()
+
+    var v330subtitleStrokeWidth321: Int
+        get() = prefs.getInt(KEY_V330SUBTITLESTROKEWIDTH321, 0)
+        set(value) = prefs.edit().putInt(KEY_V330SUBTITLESTROKEWIDTH321, value).apply()
+
+    var v330gestureLongPressAction312: Int
+        get() = prefs.getInt(KEY_V330GESTURELONGPRESSACTION312, 0)
+        set(value) = prefs.edit().putInt(KEY_V330GESTURELONGPRESSACTION312, value).apply()
+
+    var v330castQuality312: Int
+        get() = prefs.getInt(KEY_V330CASTQUALITY312, 0)
+        set(value) = prefs.edit().putInt(KEY_V330CASTQUALITY312, value).apply()
+
+    var v330playlistRepeatMode312: Int
+        get() = prefs.getInt(KEY_V330PLAYLISTREPEATMODE312, 0)
+        set(value) = prefs.edit().putInt(KEY_V330PLAYLISTREPEATMODE312, value).apply()
+
+    var v330cacheMaxSize312: Int
+        get() = prefs.getInt(KEY_V330CACHEMAXSIZE312, 0)
+        set(value) = prefs.edit().putInt(KEY_V330CACHEMAXSIZE312, value).apply()
+
+    var v330progressBarHeight312: Int
+        get() = prefs.getInt(KEY_V330PROGRESSBARHEIGHT312, 0)
+        set(value) = prefs.edit().putInt(KEY_V330PROGRESSBARHEIGHT312, value).apply()
+
+    var v330volumeLevelIndicator312: Boolean
+        get() = prefs.getBoolean(KEY_V330VOLUMELEVELINDICATOR312, false)
+        set(value) = prefs.edit().putBoolean(KEY_V330VOLUMELEVELINDICATOR312, value).apply()
+
+    var v330historySearchEnabled312: Boolean
+        get() = prefs.getBoolean(KEY_V330HISTORYSEARCHENABLED312, false)
+        set(value) = prefs.edit().putBoolean(KEY_V330HISTORYSEARCHENABLED312, value).apply()
+
+    var v330playbackSpeedMemory312: Boolean
+        get() = prefs.getBoolean(KEY_V330PLAYBACKSPEEDMEMORY312, false)
+        set(value) = prefs.edit().putBoolean(KEY_V330PLAYBACKSPEEDMEMORY312, value).apply()
+
+    var v330screenshotFormat312: Int
+        get() = prefs.getInt(KEY_V330SCREENSHOTFORMAT312, 0)
+        set(value) = prefs.edit().putInt(KEY_V330SCREENSHOTFORMAT312, value).apply()
+
+    var v330videoDeinterlace312: Boolean
+        get() = prefs.getBoolean(KEY_V330VIDEODEINTERLACE312, false)
+        set(value) = prefs.edit().putBoolean(KEY_V330VIDEODEINTERLACE312, value).apply()
+
+    var v330danmakuTopCountMax322: Int
+        get() = prefs.getInt(KEY_V330DANMAKUTOPCOUNTMAX322, 0)
+        set(value) = prefs.edit().putInt(KEY_V330DANMAKUTOPCOUNTMAX322, value).apply()
+
+    var v330subtitleStrokeWidth322: Int
+        get() = prefs.getInt(KEY_V330SUBTITLESTROKEWIDTH322, 0)
+        set(value) = prefs.edit().putInt(KEY_V330SUBTITLESTROKEWIDTH322, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -33430,5 +34030,155 @@ class AppPrefs(context: Context) {
         const val KEY_V320VIDEOHDR302 = "v320videoHDR302" // v320 Video HDR302
         const val KEY_V320DANMAKUBOTTOMMAXCOUNT448 = "v320danmakuBottomMaxCount448" // v320 Danmaku Bottom Max Count448
         const val KEY_V320SUBTITLEFADEIN312 = "v320subtitleFadeIn312" // v320 Subtitle Fade In312
+        const val KEY_V321AUDIODYNAMICRANGE303 = "v321audioDynamicRange303" // v321 Audio Dynamic Range303
+        const val KEY_V321DANMAKUTOPCOUNTMAX303 = "v321danmakuTopCountMax303" // v321 Danmaku Top Count Max303
+        const val KEY_V321SUBTITLESTROKEWIDTH303 = "v321subtitleStrokeWidth303" // v321 Subtitle Stroke Width303
+        const val KEY_V321GESTURELONGPRESSACTION303 = "v321gestureLongPressAction303" // v321 Gesture Long Press Action303
+        const val KEY_V321CASTQUALITY303 = "v321castQuality303" // v321 Cast Quality303
+        const val KEY_V321PLAYLISTREPEATMODE303 = "v321playlistRepeatMode303" // v321 Playlist Repeat Mode303
+        const val KEY_V321CACHEMAXSIZE303 = "v321cacheMaxSize303" // v321 Cache Max Size303
+        const val KEY_V321PROGRESSBARHEIGHT303 = "v321progressBarHeight303" // v321 Progress Bar Height303
+        const val KEY_V321VOLUMELEVELINDICATOR303 = "v321volumeLevelIndicator303" // v321 Volume Level Indicator303
+        const val KEY_V321HISTORYSEARCHENABLED303 = "v321historySearchEnabled303" // v321 History Search Enabled303
+        const val KEY_V321PLAYBACKSPEEDMEMORY303 = "v321playbackSpeedMemory303" // v321 Playback Speed Memory303
+        const val KEY_V321SCREENSHOTFORMAT303 = "v321screenshotFormat303" // v321 Screenshot Format303
+        const val KEY_V321VIDEODEINTERLACE303 = "v321videoDeinterlace303" // v321 Video Deinterlace303
+        const val KEY_V321DANMAKUTOPCOUNTMAX304 = "v321danmakuTopCountMax304" // v321 Danmaku Top Count Max304
+        const val KEY_V321SUBTITLESTROKEWIDTH304 = "v321subtitleStrokeWidth304" // v321 Subtitle Stroke Width304
+        const val KEY_V322AUDIODYNAMICRANGE304 = "v322audioDynamicRange304" // v322 Audio Dynamic Range304
+        const val KEY_V322DANMAKUTOPCOUNTMAX305 = "v322danmakuTopCountMax305" // v322 Danmaku Top Count Max305
+        const val KEY_V322SUBTITLESTROKEWIDTH305 = "v322subtitleStrokeWidth305" // v322 Subtitle Stroke Width305
+        const val KEY_V322GESTURELONGPRESSACTION304 = "v322gestureLongPressAction304" // v322 Gesture Long Press Action304
+        const val KEY_V322CASTQUALITY304 = "v322castQuality304" // v322 Cast Quality304
+        const val KEY_V322PLAYLISTREPEATMODE304 = "v322playlistRepeatMode304" // v322 Playlist Repeat Mode304
+        const val KEY_V322CACHEMAXSIZE304 = "v322cacheMaxSize304" // v322 Cache Max Size304
+        const val KEY_V322PROGRESSBARHEIGHT304 = "v322progressBarHeight304" // v322 Progress Bar Height304
+        const val KEY_V322VOLUMELEVELINDICATOR304 = "v322volumeLevelIndicator304" // v322 Volume Level Indicator304
+        const val KEY_V322HISTORYSEARCHENABLED304 = "v322historySearchEnabled304" // v322 History Search Enabled304
+        const val KEY_V322PLAYBACKSPEEDMEMORY304 = "v322playbackSpeedMemory304" // v322 Playback Speed Memory304
+        const val KEY_V322SCREENSHOTFORMAT304 = "v322screenshotFormat304" // v322 Screenshot Format304
+        const val KEY_V322VIDEODEINTERLACE304 = "v322videoDeinterlace304" // v322 Video Deinterlace304
+        const val KEY_V322DANMAKUTOPCOUNTMAX306 = "v322danmakuTopCountMax306" // v322 Danmaku Top Count Max306
+        const val KEY_V322SUBTITLESTROKEWIDTH306 = "v322subtitleStrokeWidth306" // v322 Subtitle Stroke Width306
+        const val KEY_V323AUDIODYNAMICRANGE305 = "v323audioDynamicRange305" // v323 Audio Dynamic Range305
+        const val KEY_V323DANMAKUTOPCOUNTMAX307 = "v323danmakuTopCountMax307" // v323 Danmaku Top Count Max307
+        const val KEY_V323SUBTITLESTROKEWIDTH307 = "v323subtitleStrokeWidth307" // v323 Subtitle Stroke Width307
+        const val KEY_V323GESTURELONGPRESSACTION305 = "v323gestureLongPressAction305" // v323 Gesture Long Press Action305
+        const val KEY_V323CASTQUALITY305 = "v323castQuality305" // v323 Cast Quality305
+        const val KEY_V323PLAYLISTREPEATMODE305 = "v323playlistRepeatMode305" // v323 Playlist Repeat Mode305
+        const val KEY_V323CACHEMAXSIZE305 = "v323cacheMaxSize305" // v323 Cache Max Size305
+        const val KEY_V323PROGRESSBARHEIGHT305 = "v323progressBarHeight305" // v323 Progress Bar Height305
+        const val KEY_V323VOLUMELEVELINDICATOR305 = "v323volumeLevelIndicator305" // v323 Volume Level Indicator305
+        const val KEY_V323HISTORYSEARCHENABLED305 = "v323historySearchEnabled305" // v323 History Search Enabled305
+        const val KEY_V323PLAYBACKSPEEDMEMORY305 = "v323playbackSpeedMemory305" // v323 Playback Speed Memory305
+        const val KEY_V323SCREENSHOTFORMAT305 = "v323screenshotFormat305" // v323 Screenshot Format305
+        const val KEY_V323VIDEODEINTERLACE305 = "v323videoDeinterlace305" // v323 Video Deinterlace305
+        const val KEY_V323DANMAKUTOPCOUNTMAX308 = "v323danmakuTopCountMax308" // v323 Danmaku Top Count Max308
+        const val KEY_V323SUBTITLESTROKEWIDTH308 = "v323subtitleStrokeWidth308" // v323 Subtitle Stroke Width308
+        const val KEY_V324AUDIODYNAMICRANGE306 = "v324audioDynamicRange306" // v324 Audio Dynamic Range306
+        const val KEY_V324DANMAKUTOPCOUNTMAX309 = "v324danmakuTopCountMax309" // v324 Danmaku Top Count Max309
+        const val KEY_V324SUBTITLESTROKEWIDTH309 = "v324subtitleStrokeWidth309" // v324 Subtitle Stroke Width309
+        const val KEY_V324GESTURELONGPRESSACTION306 = "v324gestureLongPressAction306" // v324 Gesture Long Press Action306
+        const val KEY_V324CASTQUALITY306 = "v324castQuality306" // v324 Cast Quality306
+        const val KEY_V324PLAYLISTREPEATMODE306 = "v324playlistRepeatMode306" // v324 Playlist Repeat Mode306
+        const val KEY_V324CACHEMAXSIZE306 = "v324cacheMaxSize306" // v324 Cache Max Size306
+        const val KEY_V324PROGRESSBARHEIGHT306 = "v324progressBarHeight306" // v324 Progress Bar Height306
+        const val KEY_V324VOLUMELEVELINDICATOR306 = "v324volumeLevelIndicator306" // v324 Volume Level Indicator306
+        const val KEY_V324HISTORYSEARCHENABLED306 = "v324historySearchEnabled306" // v324 History Search Enabled306
+        const val KEY_V324PLAYBACKSPEEDMEMORY306 = "v324playbackSpeedMemory306" // v324 Playback Speed Memory306
+        const val KEY_V324SCREENSHOTFORMAT306 = "v324screenshotFormat306" // v324 Screenshot Format306
+        const val KEY_V324VIDEODEINTERLACE306 = "v324videoDeinterlace306" // v324 Video Deinterlace306
+        const val KEY_V324DANMAKUTOPCOUNTMAX310 = "v324danmakuTopCountMax310" // v324 Danmaku Top Count Max310
+        const val KEY_V324SUBTITLESTROKEWIDTH310 = "v324subtitleStrokeWidth310" // v324 Subtitle Stroke Width310
+        const val KEY_V325AUDIODYNAMICRANGE307 = "v325audioDynamicRange307" // v325 Audio Dynamic Range307
+        const val KEY_V325DANMAKUTOPCOUNTMAX311 = "v325danmakuTopCountMax311" // v325 Danmaku Top Count Max311
+        const val KEY_V325SUBTITLESTROKEWIDTH311 = "v325subtitleStrokeWidth311" // v325 Subtitle Stroke Width311
+        const val KEY_V325GESTURELONGPRESSACTION307 = "v325gestureLongPressAction307" // v325 Gesture Long Press Action307
+        const val KEY_V325CASTQUALITY307 = "v325castQuality307" // v325 Cast Quality307
+        const val KEY_V325PLAYLISTREPEATMODE307 = "v325playlistRepeatMode307" // v325 Playlist Repeat Mode307
+        const val KEY_V325CACHEMAXSIZE307 = "v325cacheMaxSize307" // v325 Cache Max Size307
+        const val KEY_V325PROGRESSBARHEIGHT307 = "v325progressBarHeight307" // v325 Progress Bar Height307
+        const val KEY_V325VOLUMELEVELINDICATOR307 = "v325volumeLevelIndicator307" // v325 Volume Level Indicator307
+        const val KEY_V325HISTORYSEARCHENABLED307 = "v325historySearchEnabled307" // v325 History Search Enabled307
+        const val KEY_V325PLAYBACKSPEEDMEMORY307 = "v325playbackSpeedMemory307" // v325 Playback Speed Memory307
+        const val KEY_V325SCREENSHOTFORMAT307 = "v325screenshotFormat307" // v325 Screenshot Format307
+        const val KEY_V325VIDEODEINTERLACE307 = "v325videoDeinterlace307" // v325 Video Deinterlace307
+        const val KEY_V325DANMAKUTOPCOUNTMAX312 = "v325danmakuTopCountMax312" // v325 Danmaku Top Count Max312
+        const val KEY_V325SUBTITLESTROKEWIDTH312 = "v325subtitleStrokeWidth312" // v325 Subtitle Stroke Width312
+        const val KEY_V326AUDIODYNAMICRANGE308 = "v326audioDynamicRange308" // v326 Audio Dynamic Range308
+        const val KEY_V326DANMAKUTOPCOUNTMAX313 = "v326danmakuTopCountMax313" // v326 Danmaku Top Count Max313
+        const val KEY_V326SUBTITLESTROKEWIDTH313 = "v326subtitleStrokeWidth313" // v326 Subtitle Stroke Width313
+        const val KEY_V326GESTURELONGPRESSACTION308 = "v326gestureLongPressAction308" // v326 Gesture Long Press Action308
+        const val KEY_V326CASTQUALITY308 = "v326castQuality308" // v326 Cast Quality308
+        const val KEY_V326PLAYLISTREPEATMODE308 = "v326playlistRepeatMode308" // v326 Playlist Repeat Mode308
+        const val KEY_V326CACHEMAXSIZE308 = "v326cacheMaxSize308" // v326 Cache Max Size308
+        const val KEY_V326PROGRESSBARHEIGHT308 = "v326progressBarHeight308" // v326 Progress Bar Height308
+        const val KEY_V326VOLUMELEVELINDICATOR308 = "v326volumeLevelIndicator308" // v326 Volume Level Indicator308
+        const val KEY_V326HISTORYSEARCHENABLED308 = "v326historySearchEnabled308" // v326 History Search Enabled308
+        const val KEY_V326PLAYBACKSPEEDMEMORY308 = "v326playbackSpeedMemory308" // v326 Playback Speed Memory308
+        const val KEY_V326SCREENSHOTFORMAT308 = "v326screenshotFormat308" // v326 Screenshot Format308
+        const val KEY_V326VIDEODEINTERLACE308 = "v326videoDeinterlace308" // v326 Video Deinterlace308
+        const val KEY_V326DANMAKUTOPCOUNTMAX314 = "v326danmakuTopCountMax314" // v326 Danmaku Top Count Max314
+        const val KEY_V326SUBTITLESTROKEWIDTH314 = "v326subtitleStrokeWidth314" // v326 Subtitle Stroke Width314
+        const val KEY_V327AUDIODYNAMICRANGE309 = "v327audioDynamicRange309" // v327 Audio Dynamic Range309
+        const val KEY_V327DANMAKUTOPCOUNTMAX315 = "v327danmakuTopCountMax315" // v327 Danmaku Top Count Max315
+        const val KEY_V327SUBTITLESTROKEWIDTH315 = "v327subtitleStrokeWidth315" // v327 Subtitle Stroke Width315
+        const val KEY_V327GESTURELONGPRESSACTION309 = "v327gestureLongPressAction309" // v327 Gesture Long Press Action309
+        const val KEY_V327CASTQUALITY309 = "v327castQuality309" // v327 Cast Quality309
+        const val KEY_V327PLAYLISTREPEATMODE309 = "v327playlistRepeatMode309" // v327 Playlist Repeat Mode309
+        const val KEY_V327CACHEMAXSIZE309 = "v327cacheMaxSize309" // v327 Cache Max Size309
+        const val KEY_V327PROGRESSBARHEIGHT309 = "v327progressBarHeight309" // v327 Progress Bar Height309
+        const val KEY_V327VOLUMELEVELINDICATOR309 = "v327volumeLevelIndicator309" // v327 Volume Level Indicator309
+        const val KEY_V327HISTORYSEARCHENABLED309 = "v327historySearchEnabled309" // v327 History Search Enabled309
+        const val KEY_V327PLAYBACKSPEEDMEMORY309 = "v327playbackSpeedMemory309" // v327 Playback Speed Memory309
+        const val KEY_V327SCREENSHOTFORMAT309 = "v327screenshotFormat309" // v327 Screenshot Format309
+        const val KEY_V327VIDEODEINTERLACE309 = "v327videoDeinterlace309" // v327 Video Deinterlace309
+        const val KEY_V327DANMAKUTOPCOUNTMAX316 = "v327danmakuTopCountMax316" // v327 Danmaku Top Count Max316
+        const val KEY_V327SUBTITLESTROKEWIDTH316 = "v327subtitleStrokeWidth316" // v327 Subtitle Stroke Width316
+        const val KEY_V328AUDIODYNAMICRANGE310 = "v328audioDynamicRange310" // v328 Audio Dynamic Range310
+        const val KEY_V328DANMAKUTOPCOUNTMAX317 = "v328danmakuTopCountMax317" // v328 Danmaku Top Count Max317
+        const val KEY_V328SUBTITLESTROKEWIDTH317 = "v328subtitleStrokeWidth317" // v328 Subtitle Stroke Width317
+        const val KEY_V328GESTURELONGPRESSACTION310 = "v328gestureLongPressAction310" // v328 Gesture Long Press Action310
+        const val KEY_V328CASTQUALITY310 = "v328castQuality310" // v328 Cast Quality310
+        const val KEY_V328PLAYLISTREPEATMODE310 = "v328playlistRepeatMode310" // v328 Playlist Repeat Mode310
+        const val KEY_V328CACHEMAXSIZE310 = "v328cacheMaxSize310" // v328 Cache Max Size310
+        const val KEY_V328PROGRESSBARHEIGHT310 = "v328progressBarHeight310" // v328 Progress Bar Height310
+        const val KEY_V328VOLUMELEVELINDICATOR310 = "v328volumeLevelIndicator310" // v328 Volume Level Indicator310
+        const val KEY_V328HISTORYSEARCHENABLED310 = "v328historySearchEnabled310" // v328 History Search Enabled310
+        const val KEY_V328PLAYBACKSPEEDMEMORY310 = "v328playbackSpeedMemory310" // v328 Playback Speed Memory310
+        const val KEY_V328SCREENSHOTFORMAT310 = "v328screenshotFormat310" // v328 Screenshot Format310
+        const val KEY_V328VIDEODEINTERLACE310 = "v328videoDeinterlace310" // v328 Video Deinterlace310
+        const val KEY_V328DANMAKUTOPCOUNTMAX318 = "v328danmakuTopCountMax318" // v328 Danmaku Top Count Max318
+        const val KEY_V328SUBTITLESTROKEWIDTH318 = "v328subtitleStrokeWidth318" // v328 Subtitle Stroke Width318
+        const val KEY_V329AUDIODYNAMICRANGE311 = "v329audioDynamicRange311" // v329 Audio Dynamic Range311
+        const val KEY_V329DANMAKUTOPCOUNTMAX319 = "v329danmakuTopCountMax319" // v329 Danmaku Top Count Max319
+        const val KEY_V329SUBTITLESTROKEWIDTH319 = "v329subtitleStrokeWidth319" // v329 Subtitle Stroke Width319
+        const val KEY_V329GESTURELONGPRESSACTION311 = "v329gestureLongPressAction311" // v329 Gesture Long Press Action311
+        const val KEY_V329CASTQUALITY311 = "v329castQuality311" // v329 Cast Quality311
+        const val KEY_V329PLAYLISTREPEATMODE311 = "v329playlistRepeatMode311" // v329 Playlist Repeat Mode311
+        const val KEY_V329CACHEMAXSIZE311 = "v329cacheMaxSize311" // v329 Cache Max Size311
+        const val KEY_V329PROGRESSBARHEIGHT311 = "v329progressBarHeight311" // v329 Progress Bar Height311
+        const val KEY_V329VOLUMELEVELINDICATOR311 = "v329volumeLevelIndicator311" // v329 Volume Level Indicator311
+        const val KEY_V329HISTORYSEARCHENABLED311 = "v329historySearchEnabled311" // v329 History Search Enabled311
+        const val KEY_V329PLAYBACKSPEEDMEMORY311 = "v329playbackSpeedMemory311" // v329 Playback Speed Memory311
+        const val KEY_V329SCREENSHOTFORMAT311 = "v329screenshotFormat311" // v329 Screenshot Format311
+        const val KEY_V329VIDEODEINTERLACE311 = "v329videoDeinterlace311" // v329 Video Deinterlace311
+        const val KEY_V329DANMAKUTOPCOUNTMAX320 = "v329danmakuTopCountMax320" // v329 Danmaku Top Count Max320
+        const val KEY_V329SUBTITLESTROKEWIDTH320 = "v329subtitleStrokeWidth320" // v329 Subtitle Stroke Width320
+        const val KEY_V330AUDIODYNAMICRANGE312 = "v330audioDynamicRange312" // v330 Audio Dynamic Range312
+        const val KEY_V330DANMAKUTOPCOUNTMAX321 = "v330danmakuTopCountMax321" // v330 Danmaku Top Count Max321
+        const val KEY_V330SUBTITLESTROKEWIDTH321 = "v330subtitleStrokeWidth321" // v330 Subtitle Stroke Width321
+        const val KEY_V330GESTURELONGPRESSACTION312 = "v330gestureLongPressAction312" // v330 Gesture Long Press Action312
+        const val KEY_V330CASTQUALITY312 = "v330castQuality312" // v330 Cast Quality312
+        const val KEY_V330PLAYLISTREPEATMODE312 = "v330playlistRepeatMode312" // v330 Playlist Repeat Mode312
+        const val KEY_V330CACHEMAXSIZE312 = "v330cacheMaxSize312" // v330 Cache Max Size312
+        const val KEY_V330PROGRESSBARHEIGHT312 = "v330progressBarHeight312" // v330 Progress Bar Height312
+        const val KEY_V330VOLUMELEVELINDICATOR312 = "v330volumeLevelIndicator312" // v330 Volume Level Indicator312
+        const val KEY_V330HISTORYSEARCHENABLED312 = "v330historySearchEnabled312" // v330 History Search Enabled312
+        const val KEY_V330PLAYBACKSPEEDMEMORY312 = "v330playbackSpeedMemory312" // v330 Playback Speed Memory312
+        const val KEY_V330SCREENSHOTFORMAT312 = "v330screenshotFormat312" // v330 Screenshot Format312
+        const val KEY_V330VIDEODEINTERLACE312 = "v330videoDeinterlace312" // v330 Video Deinterlace312
+        const val KEY_V330DANMAKUTOPCOUNTMAX322 = "v330danmakuTopCountMax322" // v330 Danmaku Top Count Max322
+        const val KEY_V330SUBTITLESTROKEWIDTH322 = "v330subtitleStrokeWidth322" // v330 Subtitle Stroke Width322
     }
 }
