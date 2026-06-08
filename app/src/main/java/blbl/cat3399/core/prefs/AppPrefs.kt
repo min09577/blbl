@@ -66048,6 +66048,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getInt(KEY_V990STROKEAUTOWIDTH990, 0)
         set(value) = prefs.edit().putInt(KEY_V990STROKEAUTOWIDTH990, value).apply()
 
+    var v991structureAutoSchema991: Boolean
+        get() = prefs.getBoolean(KEY_V991STRUCTUREAUTOSCHEMA991, false)
+        set(value) = prefs.edit().putBoolean(KEY_V991STRUCTUREAUTOSCHEMA991, value).apply()
+
+    var v991styleAutoTheme991: Boolean
+        get() = prefs.getBoolean(KEY_V991STYLEAUTOTHEME991, false)
+        set(value) = prefs.edit().putBoolean(KEY_V991STYLEAUTOTHEME991, value).apply()
+
+    var v991subAutoTitle991: Boolean
+        get() = prefs.getBoolean(KEY_V991SUBAUTOTITLE991, false)
+        set(value) = prefs.edit().putBoolean(KEY_V991SUBAUTOTITLE991, value).apply()
+
+    var v991submitAutoForm991: Boolean
+        get() = prefs.getBoolean(KEY_V991SUBMITAUTOFORM991, false)
+        set(value) = prefs.edit().putBoolean(KEY_V991SUBMITAUTOFORM991, value).apply()
+
+    var v991subscribeAutoPush991: Boolean
+        get() = prefs.getBoolean(KEY_V991SUBSCRIBEAUTOPUSH991, false)
+        set(value) = prefs.edit().putBoolean(KEY_V991SUBSCRIBEAUTOPUSH991, value).apply()
+
+    var v991successAutoToast991: Boolean
+        get() = prefs.getBoolean(KEY_V991SUCCESSAUTOTOAST991, false)
+        set(value) = prefs.edit().putBoolean(KEY_V991SUCCESSAUTOTOAST991, value).apply()
+
+    var v991suffixAutoTrim991: Boolean
+        get() = prefs.getBoolean(KEY_V991SUFFIXAUTOTRIM991, false)
+        set(value) = prefs.edit().putBoolean(KEY_V991SUFFIXAUTOTRIM991, value).apply()
+
+    var v991sumAutoAggregate991: Boolean
+        get() = prefs.getBoolean(KEY_V991SUMAUTOAGGREGATE991, false)
+        set(value) = prefs.edit().putBoolean(KEY_V991SUMAUTOAGGREGATE991, value).apply()
+
+    var v991summaryAutoGenerate991: Boolean
+        get() = prefs.getBoolean(KEY_V991SUMMARYAUTOGENERATE991, false)
+        set(value) = prefs.edit().putBoolean(KEY_V991SUMMARYAUTOGENERATE991, value).apply()
+
+    var v991supportAutoDetect991: Boolean
+        get() = prefs.getBoolean(KEY_V991SUPPORTAUTODETECT991, false)
+        set(value) = prefs.edit().putBoolean(KEY_V991SUPPORTAUTODETECT991, value).apply()
+
+    var v991swapAutoBuffer991: Boolean
+        get() = prefs.getBoolean(KEY_V991SWAPAUTOBUFFER991, false)
+        set(value) = prefs.edit().putBoolean(KEY_V991SWAPAUTOBUFFER991, value).apply()
+
+    var v991switchAutoTab991: Boolean
+        get() = prefs.getBoolean(KEY_V991SWITCHAUTOTAB991, false)
+        set(value) = prefs.edit().putBoolean(KEY_V991SWITCHAUTOTAB991, value).apply()
+
+    var v991symbolAutoEncode991: Boolean
+        get() = prefs.getBoolean(KEY_V991SYMBOLAUTOENCODE991, false)
+        set(value) = prefs.edit().putBoolean(KEY_V991SYMBOLAUTOENCODE991, value).apply()
+
+    var v991syncAutoCloud991: Boolean
+        get() = prefs.getBoolean(KEY_V991SYNCAUTOCLOUD991, false)
+        set(value) = prefs.edit().putBoolean(KEY_V991SYNCAUTOCLOUD991, value).apply()
+
+    var v991systemAutoOptimize991: Boolean
+        get() = prefs.getBoolean(KEY_V991SYSTEMAUTOOPTIMIZE991, false)
+        set(value) = prefs.edit().putBoolean(KEY_V991SYSTEMAUTOOPTIMIZE991, value).apply()
+
+    var v992structureAutoSchema992: Boolean
+        get() = prefs.getBoolean(KEY_V992STRUCTUREAUTOSCHEMA992, false)
+        set(value) = prefs.edit().putBoolean(KEY_V992STRUCTUREAUTOSCHEMA992, value).apply()
+
+    var v992styleAutoTheme992: Boolean
+        get() = prefs.getBoolean(KEY_V992STYLEAUTOTHEME992, false)
+        set(value) = prefs.edit().putBoolean(KEY_V992STYLEAUTOTHEME992, value).apply()
+
+    var v992subAutoTitle992: Boolean
+        get() = prefs.getBoolean(KEY_V992SUBAUTOTITLE992, false)
+        set(value) = prefs.edit().putBoolean(KEY_V992SUBAUTOTITLE992, value).apply()
+
+    var v992submitAutoForm992: Boolean
+        get() = prefs.getBoolean(KEY_V992SUBMITAUTOFORM992, false)
+        set(value) = prefs.edit().putBoolean(KEY_V992SUBMITAUTOFORM992, value).apply()
+
+    var v992subscribeAutoPush992: Boolean
+        get() = prefs.getBoolean(KEY_V992SUBSCRIBEAUTOPUSH992, false)
+        set(value) = prefs.edit().putBoolean(KEY_V992SUBSCRIBEAUTOPUSH992, value).apply()
+
+    var v992successAutoToast992: Boolean
+        get() = prefs.getBoolean(KEY_V992SUCCESSAUTOTOAST992, false)
+        set(value) = prefs.edit().putBoolean(KEY_V992SUCCESSAUTOTOAST992, value).apply()
+
+    var v992suffixAutoTrim992: Boolean
+        get() = prefs.getBoolean(KEY_V992SUFFIXAUTOTRIM992, false)
+        set(value) = prefs.edit().putBoolean(KEY_V992SUFFIXAUTOTRIM992, value).apply()
+
+    var v992sumAutoAggregate992: Boolean
+        get() = prefs.getBoolean(KEY_V992SUMAUTOAGGREGATE992, false)
+        set(value) = prefs.edit().putBoolean(KEY_V992SUMAUTOAGGREGATE992, value).apply()
+
+    var v992summaryAutoGenerate992: Boolean
+        get() = prefs.getBoolean(KEY_V992SUMMARYAUTOGENERATE992, false)
+        set(value) = prefs.edit().putBoolean(KEY_V992SUMMARYAUTOGENERATE992, value).apply()
+
+    var v992supportAutoDetect992: Boolean
+        get() = prefs.getBoolean(KEY_V992SUPPORTAUTODETECT992, false)
+        set(value) = prefs.edit().putBoolean(KEY_V992SUPPORTAUTODETECT992, value).apply()
+
+    var v992swapAutoBuffer992: Boolean
+        get() = prefs.getBoolean(KEY_V992SWAPAUTOBUFFER992, false)
+        set(value) = prefs.edit().putBoolean(KEY_V992SWAPAUTOBUFFER992, value).apply()
+
+    var v992switchAutoTab992: Boolean
+        get() = prefs.getBoolean(KEY_V992SWITCHAUTOTAB992, false)
+        set(value) = prefs.edit().putBoolean(KEY_V992SWITCHAUTOTAB992, value).apply()
+
+    var v992symbolAutoEncode992: Boolean
+        get() = prefs.getBoolean(KEY_V992SYMBOLAUTOENCODE992, false)
+        set(value) = prefs.edit().putBoolean(KEY_V992SYMBOLAUTOENCODE992, value).apply()
+
+    var v992syncAutoCloud992: Boolean
+        get() = prefs.getBoolean(KEY_V992SYNCAUTOCLOUD992, false)
+        set(value) = prefs.edit().putBoolean(KEY_V992SYNCAUTOCLOUD992, value).apply()
+
+    var v992systemAutoOptimize992: Boolean
+        get() = prefs.getBoolean(KEY_V992SYSTEMAUTOOPTIMIZE992, false)
+        set(value) = prefs.edit().putBoolean(KEY_V992SYSTEMAUTOOPTIMIZE992, value).apply()
+
+    var v993structureAutoSchema993: Boolean
+        get() = prefs.getBoolean(KEY_V993STRUCTUREAUTOSCHEMA993, false)
+        set(value) = prefs.edit().putBoolean(KEY_V993STRUCTUREAUTOSCHEMA993, value).apply()
+
+    var v993styleAutoTheme993: Boolean
+        get() = prefs.getBoolean(KEY_V993STYLEAUTOTHEME993, false)
+        set(value) = prefs.edit().putBoolean(KEY_V993STYLEAUTOTHEME993, value).apply()
+
+    var v993subAutoTitle993: Boolean
+        get() = prefs.getBoolean(KEY_V993SUBAUTOTITLE993, false)
+        set(value) = prefs.edit().putBoolean(KEY_V993SUBAUTOTITLE993, value).apply()
+
+    var v993submitAutoForm993: Boolean
+        get() = prefs.getBoolean(KEY_V993SUBMITAUTOFORM993, false)
+        set(value) = prefs.edit().putBoolean(KEY_V993SUBMITAUTOFORM993, value).apply()
+
+    var v993subscribeAutoPush993: Boolean
+        get() = prefs.getBoolean(KEY_V993SUBSCRIBEAUTOPUSH993, false)
+        set(value) = prefs.edit().putBoolean(KEY_V993SUBSCRIBEAUTOPUSH993, value).apply()
+
+    var v993successAutoToast993: Boolean
+        get() = prefs.getBoolean(KEY_V993SUCCESSAUTOTOAST993, false)
+        set(value) = prefs.edit().putBoolean(KEY_V993SUCCESSAUTOTOAST993, value).apply()
+
+    var v993suffixAutoTrim993: Boolean
+        get() = prefs.getBoolean(KEY_V993SUFFIXAUTOTRIM993, false)
+        set(value) = prefs.edit().putBoolean(KEY_V993SUFFIXAUTOTRIM993, value).apply()
+
+    var v993sumAutoAggregate993: Boolean
+        get() = prefs.getBoolean(KEY_V993SUMAUTOAGGREGATE993, false)
+        set(value) = prefs.edit().putBoolean(KEY_V993SUMAUTOAGGREGATE993, value).apply()
+
+    var v993summaryAutoGenerate993: Boolean
+        get() = prefs.getBoolean(KEY_V993SUMMARYAUTOGENERATE993, false)
+        set(value) = prefs.edit().putBoolean(KEY_V993SUMMARYAUTOGENERATE993, value).apply()
+
+    var v993supportAutoDetect993: Boolean
+        get() = prefs.getBoolean(KEY_V993SUPPORTAUTODETECT993, false)
+        set(value) = prefs.edit().putBoolean(KEY_V993SUPPORTAUTODETECT993, value).apply()
+
+    var v993swapAutoBuffer993: Boolean
+        get() = prefs.getBoolean(KEY_V993SWAPAUTOBUFFER993, false)
+        set(value) = prefs.edit().putBoolean(KEY_V993SWAPAUTOBUFFER993, value).apply()
+
+    var v993switchAutoTab993: Boolean
+        get() = prefs.getBoolean(KEY_V993SWITCHAUTOTAB993, false)
+        set(value) = prefs.edit().putBoolean(KEY_V993SWITCHAUTOTAB993, value).apply()
+
+    var v993symbolAutoEncode993: Boolean
+        get() = prefs.getBoolean(KEY_V993SYMBOLAUTOENCODE993, false)
+        set(value) = prefs.edit().putBoolean(KEY_V993SYMBOLAUTOENCODE993, value).apply()
+
+    var v993syncAutoCloud993: Boolean
+        get() = prefs.getBoolean(KEY_V993SYNCAUTOCLOUD993, false)
+        set(value) = prefs.edit().putBoolean(KEY_V993SYNCAUTOCLOUD993, value).apply()
+
+    var v993systemAutoOptimize993: Boolean
+        get() = prefs.getBoolean(KEY_V993SYSTEMAUTOOPTIMIZE993, false)
+        set(value) = prefs.edit().putBoolean(KEY_V993SYSTEMAUTOOPTIMIZE993, value).apply()
+
+    var v994structureAutoSchema994: Boolean
+        get() = prefs.getBoolean(KEY_V994STRUCTUREAUTOSCHEMA994, false)
+        set(value) = prefs.edit().putBoolean(KEY_V994STRUCTUREAUTOSCHEMA994, value).apply()
+
+    var v994styleAutoTheme994: Boolean
+        get() = prefs.getBoolean(KEY_V994STYLEAUTOTHEME994, false)
+        set(value) = prefs.edit().putBoolean(KEY_V994STYLEAUTOTHEME994, value).apply()
+
+    var v994subAutoTitle994: Boolean
+        get() = prefs.getBoolean(KEY_V994SUBAUTOTITLE994, false)
+        set(value) = prefs.edit().putBoolean(KEY_V994SUBAUTOTITLE994, value).apply()
+
+    var v994submitAutoForm994: Boolean
+        get() = prefs.getBoolean(KEY_V994SUBMITAUTOFORM994, false)
+        set(value) = prefs.edit().putBoolean(KEY_V994SUBMITAUTOFORM994, value).apply()
+
+    var v994subscribeAutoPush994: Boolean
+        get() = prefs.getBoolean(KEY_V994SUBSCRIBEAUTOPUSH994, false)
+        set(value) = prefs.edit().putBoolean(KEY_V994SUBSCRIBEAUTOPUSH994, value).apply()
+
+    var v994successAutoToast994: Boolean
+        get() = prefs.getBoolean(KEY_V994SUCCESSAUTOTOAST994, false)
+        set(value) = prefs.edit().putBoolean(KEY_V994SUCCESSAUTOTOAST994, value).apply()
+
+    var v994suffixAutoTrim994: Boolean
+        get() = prefs.getBoolean(KEY_V994SUFFIXAUTOTRIM994, false)
+        set(value) = prefs.edit().putBoolean(KEY_V994SUFFIXAUTOTRIM994, value).apply()
+
+    var v994sumAutoAggregate994: Boolean
+        get() = prefs.getBoolean(KEY_V994SUMAUTOAGGREGATE994, false)
+        set(value) = prefs.edit().putBoolean(KEY_V994SUMAUTOAGGREGATE994, value).apply()
+
+    var v994summaryAutoGenerate994: Boolean
+        get() = prefs.getBoolean(KEY_V994SUMMARYAUTOGENERATE994, false)
+        set(value) = prefs.edit().putBoolean(KEY_V994SUMMARYAUTOGENERATE994, value).apply()
+
+    var v994supportAutoDetect994: Boolean
+        get() = prefs.getBoolean(KEY_V994SUPPORTAUTODETECT994, false)
+        set(value) = prefs.edit().putBoolean(KEY_V994SUPPORTAUTODETECT994, value).apply()
+
+    var v994swapAutoBuffer994: Boolean
+        get() = prefs.getBoolean(KEY_V994SWAPAUTOBUFFER994, false)
+        set(value) = prefs.edit().putBoolean(KEY_V994SWAPAUTOBUFFER994, value).apply()
+
+    var v994switchAutoTab994: Boolean
+        get() = prefs.getBoolean(KEY_V994SWITCHAUTOTAB994, false)
+        set(value) = prefs.edit().putBoolean(KEY_V994SWITCHAUTOTAB994, value).apply()
+
+    var v994symbolAutoEncode994: Boolean
+        get() = prefs.getBoolean(KEY_V994SYMBOLAUTOENCODE994, false)
+        set(value) = prefs.edit().putBoolean(KEY_V994SYMBOLAUTOENCODE994, value).apply()
+
+    var v994syncAutoCloud994: Boolean
+        get() = prefs.getBoolean(KEY_V994SYNCAUTOCLOUD994, false)
+        set(value) = prefs.edit().putBoolean(KEY_V994SYNCAUTOCLOUD994, value).apply()
+
+    var v994systemAutoOptimize994: Boolean
+        get() = prefs.getBoolean(KEY_V994SYSTEMAUTOOPTIMIZE994, false)
+        set(value) = prefs.edit().putBoolean(KEY_V994SYSTEMAUTOOPTIMIZE994, value).apply()
+
+    var v995structureAutoSchema995: Boolean
+        get() = prefs.getBoolean(KEY_V995STRUCTUREAUTOSCHEMA995, false)
+        set(value) = prefs.edit().putBoolean(KEY_V995STRUCTUREAUTOSCHEMA995, value).apply()
+
+    var v995styleAutoTheme995: Boolean
+        get() = prefs.getBoolean(KEY_V995STYLEAUTOTHEME995, false)
+        set(value) = prefs.edit().putBoolean(KEY_V995STYLEAUTOTHEME995, value).apply()
+
+    var v995subAutoTitle995: Boolean
+        get() = prefs.getBoolean(KEY_V995SUBAUTOTITLE995, false)
+        set(value) = prefs.edit().putBoolean(KEY_V995SUBAUTOTITLE995, value).apply()
+
+    var v995submitAutoForm995: Boolean
+        get() = prefs.getBoolean(KEY_V995SUBMITAUTOFORM995, false)
+        set(value) = prefs.edit().putBoolean(KEY_V995SUBMITAUTOFORM995, value).apply()
+
+    var v995subscribeAutoPush995: Boolean
+        get() = prefs.getBoolean(KEY_V995SUBSCRIBEAUTOPUSH995, false)
+        set(value) = prefs.edit().putBoolean(KEY_V995SUBSCRIBEAUTOPUSH995, value).apply()
+
+    var v995successAutoToast995: Boolean
+        get() = prefs.getBoolean(KEY_V995SUCCESSAUTOTOAST995, false)
+        set(value) = prefs.edit().putBoolean(KEY_V995SUCCESSAUTOTOAST995, value).apply()
+
+    var v995suffixAutoTrim995: Boolean
+        get() = prefs.getBoolean(KEY_V995SUFFIXAUTOTRIM995, false)
+        set(value) = prefs.edit().putBoolean(KEY_V995SUFFIXAUTOTRIM995, value).apply()
+
+    var v995sumAutoAggregate995: Boolean
+        get() = prefs.getBoolean(KEY_V995SUMAUTOAGGREGATE995, false)
+        set(value) = prefs.edit().putBoolean(KEY_V995SUMAUTOAGGREGATE995, value).apply()
+
+    var v995summaryAutoGenerate995: Boolean
+        get() = prefs.getBoolean(KEY_V995SUMMARYAUTOGENERATE995, false)
+        set(value) = prefs.edit().putBoolean(KEY_V995SUMMARYAUTOGENERATE995, value).apply()
+
+    var v995supportAutoDetect995: Boolean
+        get() = prefs.getBoolean(KEY_V995SUPPORTAUTODETECT995, false)
+        set(value) = prefs.edit().putBoolean(KEY_V995SUPPORTAUTODETECT995, value).apply()
+
+    var v995swapAutoBuffer995: Boolean
+        get() = prefs.getBoolean(KEY_V995SWAPAUTOBUFFER995, false)
+        set(value) = prefs.edit().putBoolean(KEY_V995SWAPAUTOBUFFER995, value).apply()
+
+    var v995switchAutoTab995: Boolean
+        get() = prefs.getBoolean(KEY_V995SWITCHAUTOTAB995, false)
+        set(value) = prefs.edit().putBoolean(KEY_V995SWITCHAUTOTAB995, value).apply()
+
+    var v995symbolAutoEncode995: Boolean
+        get() = prefs.getBoolean(KEY_V995SYMBOLAUTOENCODE995, false)
+        set(value) = prefs.edit().putBoolean(KEY_V995SYMBOLAUTOENCODE995, value).apply()
+
+    var v995syncAutoCloud995: Boolean
+        get() = prefs.getBoolean(KEY_V995SYNCAUTOCLOUD995, false)
+        set(value) = prefs.edit().putBoolean(KEY_V995SYNCAUTOCLOUD995, value).apply()
+
+    var v995systemAutoOptimize995: Boolean
+        get() = prefs.getBoolean(KEY_V995SYSTEMAUTOOPTIMIZE995, false)
+        set(value) = prefs.edit().putBoolean(KEY_V995SYSTEMAUTOOPTIMIZE995, value).apply()
+
+    var v996structureAutoSchema996: Boolean
+        get() = prefs.getBoolean(KEY_V996STRUCTUREAUTOSCHEMA996, false)
+        set(value) = prefs.edit().putBoolean(KEY_V996STRUCTUREAUTOSCHEMA996, value).apply()
+
+    var v996styleAutoTheme996: Boolean
+        get() = prefs.getBoolean(KEY_V996STYLEAUTOTHEME996, false)
+        set(value) = prefs.edit().putBoolean(KEY_V996STYLEAUTOTHEME996, value).apply()
+
+    var v996subAutoTitle996: Boolean
+        get() = prefs.getBoolean(KEY_V996SUBAUTOTITLE996, false)
+        set(value) = prefs.edit().putBoolean(KEY_V996SUBAUTOTITLE996, value).apply()
+
+    var v996submitAutoForm996: Boolean
+        get() = prefs.getBoolean(KEY_V996SUBMITAUTOFORM996, false)
+        set(value) = prefs.edit().putBoolean(KEY_V996SUBMITAUTOFORM996, value).apply()
+
+    var v996subscribeAutoPush996: Boolean
+        get() = prefs.getBoolean(KEY_V996SUBSCRIBEAUTOPUSH996, false)
+        set(value) = prefs.edit().putBoolean(KEY_V996SUBSCRIBEAUTOPUSH996, value).apply()
+
+    var v996successAutoToast996: Boolean
+        get() = prefs.getBoolean(KEY_V996SUCCESSAUTOTOAST996, false)
+        set(value) = prefs.edit().putBoolean(KEY_V996SUCCESSAUTOTOAST996, value).apply()
+
+    var v996suffixAutoTrim996: Boolean
+        get() = prefs.getBoolean(KEY_V996SUFFIXAUTOTRIM996, false)
+        set(value) = prefs.edit().putBoolean(KEY_V996SUFFIXAUTOTRIM996, value).apply()
+
+    var v996sumAutoAggregate996: Boolean
+        get() = prefs.getBoolean(KEY_V996SUMAUTOAGGREGATE996, false)
+        set(value) = prefs.edit().putBoolean(KEY_V996SUMAUTOAGGREGATE996, value).apply()
+
+    var v996summaryAutoGenerate996: Boolean
+        get() = prefs.getBoolean(KEY_V996SUMMARYAUTOGENERATE996, false)
+        set(value) = prefs.edit().putBoolean(KEY_V996SUMMARYAUTOGENERATE996, value).apply()
+
+    var v996supportAutoDetect996: Boolean
+        get() = prefs.getBoolean(KEY_V996SUPPORTAUTODETECT996, false)
+        set(value) = prefs.edit().putBoolean(KEY_V996SUPPORTAUTODETECT996, value).apply()
+
+    var v996swapAutoBuffer996: Boolean
+        get() = prefs.getBoolean(KEY_V996SWAPAUTOBUFFER996, false)
+        set(value) = prefs.edit().putBoolean(KEY_V996SWAPAUTOBUFFER996, value).apply()
+
+    var v996switchAutoTab996: Boolean
+        get() = prefs.getBoolean(KEY_V996SWITCHAUTOTAB996, false)
+        set(value) = prefs.edit().putBoolean(KEY_V996SWITCHAUTOTAB996, value).apply()
+
+    var v996symbolAutoEncode996: Boolean
+        get() = prefs.getBoolean(KEY_V996SYMBOLAUTOENCODE996, false)
+        set(value) = prefs.edit().putBoolean(KEY_V996SYMBOLAUTOENCODE996, value).apply()
+
+    var v996syncAutoCloud996: Boolean
+        get() = prefs.getBoolean(KEY_V996SYNCAUTOCLOUD996, false)
+        set(value) = prefs.edit().putBoolean(KEY_V996SYNCAUTOCLOUD996, value).apply()
+
+    var v996systemAutoOptimize996: Boolean
+        get() = prefs.getBoolean(KEY_V996SYSTEMAUTOOPTIMIZE996, false)
+        set(value) = prefs.edit().putBoolean(KEY_V996SYSTEMAUTOOPTIMIZE996, value).apply()
+
+    var v997structureAutoSchema997: Boolean
+        get() = prefs.getBoolean(KEY_V997STRUCTUREAUTOSCHEMA997, false)
+        set(value) = prefs.edit().putBoolean(KEY_V997STRUCTUREAUTOSCHEMA997, value).apply()
+
+    var v997styleAutoTheme997: Boolean
+        get() = prefs.getBoolean(KEY_V997STYLEAUTOTHEME997, false)
+        set(value) = prefs.edit().putBoolean(KEY_V997STYLEAUTOTHEME997, value).apply()
+
+    var v997subAutoTitle997: Boolean
+        get() = prefs.getBoolean(KEY_V997SUBAUTOTITLE997, false)
+        set(value) = prefs.edit().putBoolean(KEY_V997SUBAUTOTITLE997, value).apply()
+
+    var v997submitAutoForm997: Boolean
+        get() = prefs.getBoolean(KEY_V997SUBMITAUTOFORM997, false)
+        set(value) = prefs.edit().putBoolean(KEY_V997SUBMITAUTOFORM997, value).apply()
+
+    var v997subscribeAutoPush997: Boolean
+        get() = prefs.getBoolean(KEY_V997SUBSCRIBEAUTOPUSH997, false)
+        set(value) = prefs.edit().putBoolean(KEY_V997SUBSCRIBEAUTOPUSH997, value).apply()
+
+    var v997successAutoToast997: Boolean
+        get() = prefs.getBoolean(KEY_V997SUCCESSAUTOTOAST997, false)
+        set(value) = prefs.edit().putBoolean(KEY_V997SUCCESSAUTOTOAST997, value).apply()
+
+    var v997suffixAutoTrim997: Boolean
+        get() = prefs.getBoolean(KEY_V997SUFFIXAUTOTRIM997, false)
+        set(value) = prefs.edit().putBoolean(KEY_V997SUFFIXAUTOTRIM997, value).apply()
+
+    var v997sumAutoAggregate997: Boolean
+        get() = prefs.getBoolean(KEY_V997SUMAUTOAGGREGATE997, false)
+        set(value) = prefs.edit().putBoolean(KEY_V997SUMAUTOAGGREGATE997, value).apply()
+
+    var v997summaryAutoGenerate997: Boolean
+        get() = prefs.getBoolean(KEY_V997SUMMARYAUTOGENERATE997, false)
+        set(value) = prefs.edit().putBoolean(KEY_V997SUMMARYAUTOGENERATE997, value).apply()
+
+    var v997supportAutoDetect997: Boolean
+        get() = prefs.getBoolean(KEY_V997SUPPORTAUTODETECT997, false)
+        set(value) = prefs.edit().putBoolean(KEY_V997SUPPORTAUTODETECT997, value).apply()
+
+    var v997swapAutoBuffer997: Boolean
+        get() = prefs.getBoolean(KEY_V997SWAPAUTOBUFFER997, false)
+        set(value) = prefs.edit().putBoolean(KEY_V997SWAPAUTOBUFFER997, value).apply()
+
+    var v997switchAutoTab997: Boolean
+        get() = prefs.getBoolean(KEY_V997SWITCHAUTOTAB997, false)
+        set(value) = prefs.edit().putBoolean(KEY_V997SWITCHAUTOTAB997, value).apply()
+
+    var v997symbolAutoEncode997: Boolean
+        get() = prefs.getBoolean(KEY_V997SYMBOLAUTOENCODE997, false)
+        set(value) = prefs.edit().putBoolean(KEY_V997SYMBOLAUTOENCODE997, value).apply()
+
+    var v997syncAutoCloud997: Boolean
+        get() = prefs.getBoolean(KEY_V997SYNCAUTOCLOUD997, false)
+        set(value) = prefs.edit().putBoolean(KEY_V997SYNCAUTOCLOUD997, value).apply()
+
+    var v997systemAutoOptimize997: Boolean
+        get() = prefs.getBoolean(KEY_V997SYSTEMAUTOOPTIMIZE997, false)
+        set(value) = prefs.edit().putBoolean(KEY_V997SYSTEMAUTOOPTIMIZE997, value).apply()
+
+    var v998structureAutoSchema998: Boolean
+        get() = prefs.getBoolean(KEY_V998STRUCTUREAUTOSCHEMA998, false)
+        set(value) = prefs.edit().putBoolean(KEY_V998STRUCTUREAUTOSCHEMA998, value).apply()
+
+    var v998styleAutoTheme998: Boolean
+        get() = prefs.getBoolean(KEY_V998STYLEAUTOTHEME998, false)
+        set(value) = prefs.edit().putBoolean(KEY_V998STYLEAUTOTHEME998, value).apply()
+
+    var v998subAutoTitle998: Boolean
+        get() = prefs.getBoolean(KEY_V998SUBAUTOTITLE998, false)
+        set(value) = prefs.edit().putBoolean(KEY_V998SUBAUTOTITLE998, value).apply()
+
+    var v998submitAutoForm998: Boolean
+        get() = prefs.getBoolean(KEY_V998SUBMITAUTOFORM998, false)
+        set(value) = prefs.edit().putBoolean(KEY_V998SUBMITAUTOFORM998, value).apply()
+
+    var v998subscribeAutoPush998: Boolean
+        get() = prefs.getBoolean(KEY_V998SUBSCRIBEAUTOPUSH998, false)
+        set(value) = prefs.edit().putBoolean(KEY_V998SUBSCRIBEAUTOPUSH998, value).apply()
+
+    var v998successAutoToast998: Boolean
+        get() = prefs.getBoolean(KEY_V998SUCCESSAUTOTOAST998, false)
+        set(value) = prefs.edit().putBoolean(KEY_V998SUCCESSAUTOTOAST998, value).apply()
+
+    var v998suffixAutoTrim998: Boolean
+        get() = prefs.getBoolean(KEY_V998SUFFIXAUTOTRIM998, false)
+        set(value) = prefs.edit().putBoolean(KEY_V998SUFFIXAUTOTRIM998, value).apply()
+
+    var v998sumAutoAggregate998: Boolean
+        get() = prefs.getBoolean(KEY_V998SUMAUTOAGGREGATE998, false)
+        set(value) = prefs.edit().putBoolean(KEY_V998SUMAUTOAGGREGATE998, value).apply()
+
+    var v998summaryAutoGenerate998: Boolean
+        get() = prefs.getBoolean(KEY_V998SUMMARYAUTOGENERATE998, false)
+        set(value) = prefs.edit().putBoolean(KEY_V998SUMMARYAUTOGENERATE998, value).apply()
+
+    var v998supportAutoDetect998: Boolean
+        get() = prefs.getBoolean(KEY_V998SUPPORTAUTODETECT998, false)
+        set(value) = prefs.edit().putBoolean(KEY_V998SUPPORTAUTODETECT998, value).apply()
+
+    var v998swapAutoBuffer998: Boolean
+        get() = prefs.getBoolean(KEY_V998SWAPAUTOBUFFER998, false)
+        set(value) = prefs.edit().putBoolean(KEY_V998SWAPAUTOBUFFER998, value).apply()
+
+    var v998switchAutoTab998: Boolean
+        get() = prefs.getBoolean(KEY_V998SWITCHAUTOTAB998, false)
+        set(value) = prefs.edit().putBoolean(KEY_V998SWITCHAUTOTAB998, value).apply()
+
+    var v998symbolAutoEncode998: Boolean
+        get() = prefs.getBoolean(KEY_V998SYMBOLAUTOENCODE998, false)
+        set(value) = prefs.edit().putBoolean(KEY_V998SYMBOLAUTOENCODE998, value).apply()
+
+    var v998syncAutoCloud998: Boolean
+        get() = prefs.getBoolean(KEY_V998SYNCAUTOCLOUD998, false)
+        set(value) = prefs.edit().putBoolean(KEY_V998SYNCAUTOCLOUD998, value).apply()
+
+    var v998systemAutoOptimize998: Boolean
+        get() = prefs.getBoolean(KEY_V998SYSTEMAUTOOPTIMIZE998, false)
+        set(value) = prefs.edit().putBoolean(KEY_V998SYSTEMAUTOOPTIMIZE998, value).apply()
+
+    var v999structureAutoSchema999: Boolean
+        get() = prefs.getBoolean(KEY_V999STRUCTUREAUTOSCHEMA999, false)
+        set(value) = prefs.edit().putBoolean(KEY_V999STRUCTUREAUTOSCHEMA999, value).apply()
+
+    var v999styleAutoTheme999: Boolean
+        get() = prefs.getBoolean(KEY_V999STYLEAUTOTHEME999, false)
+        set(value) = prefs.edit().putBoolean(KEY_V999STYLEAUTOTHEME999, value).apply()
+
+    var v999subAutoTitle999: Boolean
+        get() = prefs.getBoolean(KEY_V999SUBAUTOTITLE999, false)
+        set(value) = prefs.edit().putBoolean(KEY_V999SUBAUTOTITLE999, value).apply()
+
+    var v999submitAutoForm999: Boolean
+        get() = prefs.getBoolean(KEY_V999SUBMITAUTOFORM999, false)
+        set(value) = prefs.edit().putBoolean(KEY_V999SUBMITAUTOFORM999, value).apply()
+
+    var v999subscribeAutoPush999: Boolean
+        get() = prefs.getBoolean(KEY_V999SUBSCRIBEAUTOPUSH999, false)
+        set(value) = prefs.edit().putBoolean(KEY_V999SUBSCRIBEAUTOPUSH999, value).apply()
+
+    var v999successAutoToast999: Boolean
+        get() = prefs.getBoolean(KEY_V999SUCCESSAUTOTOAST999, false)
+        set(value) = prefs.edit().putBoolean(KEY_V999SUCCESSAUTOTOAST999, value).apply()
+
+    var v999suffixAutoTrim999: Boolean
+        get() = prefs.getBoolean(KEY_V999SUFFIXAUTOTRIM999, false)
+        set(value) = prefs.edit().putBoolean(KEY_V999SUFFIXAUTOTRIM999, value).apply()
+
+    var v999sumAutoAggregate999: Boolean
+        get() = prefs.getBoolean(KEY_V999SUMAUTOAGGREGATE999, false)
+        set(value) = prefs.edit().putBoolean(KEY_V999SUMAUTOAGGREGATE999, value).apply()
+
+    var v999summaryAutoGenerate999: Boolean
+        get() = prefs.getBoolean(KEY_V999SUMMARYAUTOGENERATE999, false)
+        set(value) = prefs.edit().putBoolean(KEY_V999SUMMARYAUTOGENERATE999, value).apply()
+
+    var v999supportAutoDetect999: Boolean
+        get() = prefs.getBoolean(KEY_V999SUPPORTAUTODETECT999, false)
+        set(value) = prefs.edit().putBoolean(KEY_V999SUPPORTAUTODETECT999, value).apply()
+
+    var v999swapAutoBuffer999: Boolean
+        get() = prefs.getBoolean(KEY_V999SWAPAUTOBUFFER999, false)
+        set(value) = prefs.edit().putBoolean(KEY_V999SWAPAUTOBUFFER999, value).apply()
+
+    var v999switchAutoTab999: Boolean
+        get() = prefs.getBoolean(KEY_V999SWITCHAUTOTAB999, false)
+        set(value) = prefs.edit().putBoolean(KEY_V999SWITCHAUTOTAB999, value).apply()
+
+    var v999symbolAutoEncode999: Boolean
+        get() = prefs.getBoolean(KEY_V999SYMBOLAUTOENCODE999, false)
+        set(value) = prefs.edit().putBoolean(KEY_V999SYMBOLAUTOENCODE999, value).apply()
+
+    var v999syncAutoCloud999: Boolean
+        get() = prefs.getBoolean(KEY_V999SYNCAUTOCLOUD999, false)
+        set(value) = prefs.edit().putBoolean(KEY_V999SYNCAUTOCLOUD999, value).apply()
+
+    var v999systemAutoOptimize999: Boolean
+        get() = prefs.getBoolean(KEY_V999SYSTEMAUTOOPTIMIZE999, false)
+        set(value) = prefs.edit().putBoolean(KEY_V999SYSTEMAUTOOPTIMIZE999, value).apply()
+
+    var v1000structureAutoSchema1000: Boolean
+        get() = prefs.getBoolean(KEY_V1000STRUCTUREAUTOSCHEMA1000, false)
+        set(value) = prefs.edit().putBoolean(KEY_V1000STRUCTUREAUTOSCHEMA1000, value).apply()
+
+    var v1000styleAutoTheme1000: Boolean
+        get() = prefs.getBoolean(KEY_V1000STYLEAUTOTHEME1000, false)
+        set(value) = prefs.edit().putBoolean(KEY_V1000STYLEAUTOTHEME1000, value).apply()
+
+    var v1000subAutoTitle1000: Boolean
+        get() = prefs.getBoolean(KEY_V1000SUBAUTOTITLE1000, false)
+        set(value) = prefs.edit().putBoolean(KEY_V1000SUBAUTOTITLE1000, value).apply()
+
+    var v1000submitAutoForm1000: Boolean
+        get() = prefs.getBoolean(KEY_V1000SUBMITAUTOFORM1000, false)
+        set(value) = prefs.edit().putBoolean(KEY_V1000SUBMITAUTOFORM1000, value).apply()
+
+    var v1000subscribeAutoPush1000: Boolean
+        get() = prefs.getBoolean(KEY_V1000SUBSCRIBEAUTOPUSH1000, false)
+        set(value) = prefs.edit().putBoolean(KEY_V1000SUBSCRIBEAUTOPUSH1000, value).apply()
+
+    var v1000successAutoToast1000: Boolean
+        get() = prefs.getBoolean(KEY_V1000SUCCESSAUTOTOAST1000, false)
+        set(value) = prefs.edit().putBoolean(KEY_V1000SUCCESSAUTOTOAST1000, value).apply()
+
+    var v1000suffixAutoTrim1000: Boolean
+        get() = prefs.getBoolean(KEY_V1000SUFFIXAUTOTRIM1000, false)
+        set(value) = prefs.edit().putBoolean(KEY_V1000SUFFIXAUTOTRIM1000, value).apply()
+
+    var v1000sumAutoAggregate1000: Boolean
+        get() = prefs.getBoolean(KEY_V1000SUMAUTOAGGREGATE1000, false)
+        set(value) = prefs.edit().putBoolean(KEY_V1000SUMAUTOAGGREGATE1000, value).apply()
+
+    var v1000summaryAutoGenerate1000: Boolean
+        get() = prefs.getBoolean(KEY_V1000SUMMARYAUTOGENERATE1000, false)
+        set(value) = prefs.edit().putBoolean(KEY_V1000SUMMARYAUTOGENERATE1000, value).apply()
+
+    var v1000supportAutoDetect1000: Boolean
+        get() = prefs.getBoolean(KEY_V1000SUPPORTAUTODETECT1000, false)
+        set(value) = prefs.edit().putBoolean(KEY_V1000SUPPORTAUTODETECT1000, value).apply()
+
+    var v1000swapAutoBuffer1000: Boolean
+        get() = prefs.getBoolean(KEY_V1000SWAPAUTOBUFFER1000, false)
+        set(value) = prefs.edit().putBoolean(KEY_V1000SWAPAUTOBUFFER1000, value).apply()
+
+    var v1000switchAutoTab1000: Boolean
+        get() = prefs.getBoolean(KEY_V1000SWITCHAUTOTAB1000, false)
+        set(value) = prefs.edit().putBoolean(KEY_V1000SWITCHAUTOTAB1000, value).apply()
+
+    var v1000symbolAutoEncode1000: Boolean
+        get() = prefs.getBoolean(KEY_V1000SYMBOLAUTOENCODE1000, false)
+        set(value) = prefs.edit().putBoolean(KEY_V1000SYMBOLAUTOENCODE1000, value).apply()
+
+    var v1000syncAutoCloud1000: Boolean
+        get() = prefs.getBoolean(KEY_V1000SYNCAUTOCLOUD1000, false)
+        set(value) = prefs.edit().putBoolean(KEY_V1000SYNCAUTOCLOUD1000, value).apply()
+
+    var v1000systemAutoOptimize1000: Boolean
+        get() = prefs.getBoolean(KEY_V1000SYSTEMAUTOOPTIMIZE1000, false)
+        set(value) = prefs.edit().putBoolean(KEY_V1000SYSTEMAUTOOPTIMIZE1000, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -83430,5 +84030,155 @@ class AppPrefs(context: Context) {
         const val KEY_V990STRINGAUTOESCAPE990 = "v990stringAutoEscape990" // v990 String Auto Escape990
         const val KEY_V990STRIPAUTOWHITESPACE990 = "v990stripAutoWhitespace990" // v990 Strip Auto Whitespace990
         const val KEY_V990STROKEAUTOWIDTH990 = "v990strokeAutoWidth990" // v990 Stroke Auto Width990
+        const val KEY_V991STRUCTUREAUTOSCHEMA991 = "v991structureAutoSchema991" // v991 Structure Auto Schema991
+        const val KEY_V991STYLEAUTOTHEME991 = "v991styleAutoTheme991" // v991 Style Auto Theme991
+        const val KEY_V991SUBAUTOTITLE991 = "v991subAutoTitle991" // v991 Sub Auto Title991
+        const val KEY_V991SUBMITAUTOFORM991 = "v991submitAutoForm991" // v991 Submit Auto Form991
+        const val KEY_V991SUBSCRIBEAUTOPUSH991 = "v991subscribeAutoPush991" // v991 Subscribe Auto Push991
+        const val KEY_V991SUCCESSAUTOTOAST991 = "v991successAutoToast991" // v991 Success Auto Toast991
+        const val KEY_V991SUFFIXAUTOTRIM991 = "v991suffixAutoTrim991" // v991 Suffix Auto Trim991
+        const val KEY_V991SUMAUTOAGGREGATE991 = "v991sumAutoAggregate991" // v991 Sum Auto Aggregate991
+        const val KEY_V991SUMMARYAUTOGENERATE991 = "v991summaryAutoGenerate991" // v991 Summary Auto Generate991
+        const val KEY_V991SUPPORTAUTODETECT991 = "v991supportAutoDetect991" // v991 Support Auto Detect991
+        const val KEY_V991SWAPAUTOBUFFER991 = "v991swapAutoBuffer991" // v991 Swap Auto Buffer991
+        const val KEY_V991SWITCHAUTOTAB991 = "v991switchAutoTab991" // v991 Switch Auto Tab991
+        const val KEY_V991SYMBOLAUTOENCODE991 = "v991symbolAutoEncode991" // v991 Symbol Auto Encode991
+        const val KEY_V991SYNCAUTOCLOUD991 = "v991syncAutoCloud991" // v991 Sync Auto Cloud991
+        const val KEY_V991SYSTEMAUTOOPTIMIZE991 = "v991systemAutoOptimize991" // v991 System Auto Optimize991
+        const val KEY_V992STRUCTUREAUTOSCHEMA992 = "v992structureAutoSchema992" // v992 Structure Auto Schema992
+        const val KEY_V992STYLEAUTOTHEME992 = "v992styleAutoTheme992" // v992 Style Auto Theme992
+        const val KEY_V992SUBAUTOTITLE992 = "v992subAutoTitle992" // v992 Sub Auto Title992
+        const val KEY_V992SUBMITAUTOFORM992 = "v992submitAutoForm992" // v992 Submit Auto Form992
+        const val KEY_V992SUBSCRIBEAUTOPUSH992 = "v992subscribeAutoPush992" // v992 Subscribe Auto Push992
+        const val KEY_V992SUCCESSAUTOTOAST992 = "v992successAutoToast992" // v992 Success Auto Toast992
+        const val KEY_V992SUFFIXAUTOTRIM992 = "v992suffixAutoTrim992" // v992 Suffix Auto Trim992
+        const val KEY_V992SUMAUTOAGGREGATE992 = "v992sumAutoAggregate992" // v992 Sum Auto Aggregate992
+        const val KEY_V992SUMMARYAUTOGENERATE992 = "v992summaryAutoGenerate992" // v992 Summary Auto Generate992
+        const val KEY_V992SUPPORTAUTODETECT992 = "v992supportAutoDetect992" // v992 Support Auto Detect992
+        const val KEY_V992SWAPAUTOBUFFER992 = "v992swapAutoBuffer992" // v992 Swap Auto Buffer992
+        const val KEY_V992SWITCHAUTOTAB992 = "v992switchAutoTab992" // v992 Switch Auto Tab992
+        const val KEY_V992SYMBOLAUTOENCODE992 = "v992symbolAutoEncode992" // v992 Symbol Auto Encode992
+        const val KEY_V992SYNCAUTOCLOUD992 = "v992syncAutoCloud992" // v992 Sync Auto Cloud992
+        const val KEY_V992SYSTEMAUTOOPTIMIZE992 = "v992systemAutoOptimize992" // v992 System Auto Optimize992
+        const val KEY_V993STRUCTUREAUTOSCHEMA993 = "v993structureAutoSchema993" // v993 Structure Auto Schema993
+        const val KEY_V993STYLEAUTOTHEME993 = "v993styleAutoTheme993" // v993 Style Auto Theme993
+        const val KEY_V993SUBAUTOTITLE993 = "v993subAutoTitle993" // v993 Sub Auto Title993
+        const val KEY_V993SUBMITAUTOFORM993 = "v993submitAutoForm993" // v993 Submit Auto Form993
+        const val KEY_V993SUBSCRIBEAUTOPUSH993 = "v993subscribeAutoPush993" // v993 Subscribe Auto Push993
+        const val KEY_V993SUCCESSAUTOTOAST993 = "v993successAutoToast993" // v993 Success Auto Toast993
+        const val KEY_V993SUFFIXAUTOTRIM993 = "v993suffixAutoTrim993" // v993 Suffix Auto Trim993
+        const val KEY_V993SUMAUTOAGGREGATE993 = "v993sumAutoAggregate993" // v993 Sum Auto Aggregate993
+        const val KEY_V993SUMMARYAUTOGENERATE993 = "v993summaryAutoGenerate993" // v993 Summary Auto Generate993
+        const val KEY_V993SUPPORTAUTODETECT993 = "v993supportAutoDetect993" // v993 Support Auto Detect993
+        const val KEY_V993SWAPAUTOBUFFER993 = "v993swapAutoBuffer993" // v993 Swap Auto Buffer993
+        const val KEY_V993SWITCHAUTOTAB993 = "v993switchAutoTab993" // v993 Switch Auto Tab993
+        const val KEY_V993SYMBOLAUTOENCODE993 = "v993symbolAutoEncode993" // v993 Symbol Auto Encode993
+        const val KEY_V993SYNCAUTOCLOUD993 = "v993syncAutoCloud993" // v993 Sync Auto Cloud993
+        const val KEY_V993SYSTEMAUTOOPTIMIZE993 = "v993systemAutoOptimize993" // v993 System Auto Optimize993
+        const val KEY_V994STRUCTUREAUTOSCHEMA994 = "v994structureAutoSchema994" // v994 Structure Auto Schema994
+        const val KEY_V994STYLEAUTOTHEME994 = "v994styleAutoTheme994" // v994 Style Auto Theme994
+        const val KEY_V994SUBAUTOTITLE994 = "v994subAutoTitle994" // v994 Sub Auto Title994
+        const val KEY_V994SUBMITAUTOFORM994 = "v994submitAutoForm994" // v994 Submit Auto Form994
+        const val KEY_V994SUBSCRIBEAUTOPUSH994 = "v994subscribeAutoPush994" // v994 Subscribe Auto Push994
+        const val KEY_V994SUCCESSAUTOTOAST994 = "v994successAutoToast994" // v994 Success Auto Toast994
+        const val KEY_V994SUFFIXAUTOTRIM994 = "v994suffixAutoTrim994" // v994 Suffix Auto Trim994
+        const val KEY_V994SUMAUTOAGGREGATE994 = "v994sumAutoAggregate994" // v994 Sum Auto Aggregate994
+        const val KEY_V994SUMMARYAUTOGENERATE994 = "v994summaryAutoGenerate994" // v994 Summary Auto Generate994
+        const val KEY_V994SUPPORTAUTODETECT994 = "v994supportAutoDetect994" // v994 Support Auto Detect994
+        const val KEY_V994SWAPAUTOBUFFER994 = "v994swapAutoBuffer994" // v994 Swap Auto Buffer994
+        const val KEY_V994SWITCHAUTOTAB994 = "v994switchAutoTab994" // v994 Switch Auto Tab994
+        const val KEY_V994SYMBOLAUTOENCODE994 = "v994symbolAutoEncode994" // v994 Symbol Auto Encode994
+        const val KEY_V994SYNCAUTOCLOUD994 = "v994syncAutoCloud994" // v994 Sync Auto Cloud994
+        const val KEY_V994SYSTEMAUTOOPTIMIZE994 = "v994systemAutoOptimize994" // v994 System Auto Optimize994
+        const val KEY_V995STRUCTUREAUTOSCHEMA995 = "v995structureAutoSchema995" // v995 Structure Auto Schema995
+        const val KEY_V995STYLEAUTOTHEME995 = "v995styleAutoTheme995" // v995 Style Auto Theme995
+        const val KEY_V995SUBAUTOTITLE995 = "v995subAutoTitle995" // v995 Sub Auto Title995
+        const val KEY_V995SUBMITAUTOFORM995 = "v995submitAutoForm995" // v995 Submit Auto Form995
+        const val KEY_V995SUBSCRIBEAUTOPUSH995 = "v995subscribeAutoPush995" // v995 Subscribe Auto Push995
+        const val KEY_V995SUCCESSAUTOTOAST995 = "v995successAutoToast995" // v995 Success Auto Toast995
+        const val KEY_V995SUFFIXAUTOTRIM995 = "v995suffixAutoTrim995" // v995 Suffix Auto Trim995
+        const val KEY_V995SUMAUTOAGGREGATE995 = "v995sumAutoAggregate995" // v995 Sum Auto Aggregate995
+        const val KEY_V995SUMMARYAUTOGENERATE995 = "v995summaryAutoGenerate995" // v995 Summary Auto Generate995
+        const val KEY_V995SUPPORTAUTODETECT995 = "v995supportAutoDetect995" // v995 Support Auto Detect995
+        const val KEY_V995SWAPAUTOBUFFER995 = "v995swapAutoBuffer995" // v995 Swap Auto Buffer995
+        const val KEY_V995SWITCHAUTOTAB995 = "v995switchAutoTab995" // v995 Switch Auto Tab995
+        const val KEY_V995SYMBOLAUTOENCODE995 = "v995symbolAutoEncode995" // v995 Symbol Auto Encode995
+        const val KEY_V995SYNCAUTOCLOUD995 = "v995syncAutoCloud995" // v995 Sync Auto Cloud995
+        const val KEY_V995SYSTEMAUTOOPTIMIZE995 = "v995systemAutoOptimize995" // v995 System Auto Optimize995
+        const val KEY_V996STRUCTUREAUTOSCHEMA996 = "v996structureAutoSchema996" // v996 Structure Auto Schema996
+        const val KEY_V996STYLEAUTOTHEME996 = "v996styleAutoTheme996" // v996 Style Auto Theme996
+        const val KEY_V996SUBAUTOTITLE996 = "v996subAutoTitle996" // v996 Sub Auto Title996
+        const val KEY_V996SUBMITAUTOFORM996 = "v996submitAutoForm996" // v996 Submit Auto Form996
+        const val KEY_V996SUBSCRIBEAUTOPUSH996 = "v996subscribeAutoPush996" // v996 Subscribe Auto Push996
+        const val KEY_V996SUCCESSAUTOTOAST996 = "v996successAutoToast996" // v996 Success Auto Toast996
+        const val KEY_V996SUFFIXAUTOTRIM996 = "v996suffixAutoTrim996" // v996 Suffix Auto Trim996
+        const val KEY_V996SUMAUTOAGGREGATE996 = "v996sumAutoAggregate996" // v996 Sum Auto Aggregate996
+        const val KEY_V996SUMMARYAUTOGENERATE996 = "v996summaryAutoGenerate996" // v996 Summary Auto Generate996
+        const val KEY_V996SUPPORTAUTODETECT996 = "v996supportAutoDetect996" // v996 Support Auto Detect996
+        const val KEY_V996SWAPAUTOBUFFER996 = "v996swapAutoBuffer996" // v996 Swap Auto Buffer996
+        const val KEY_V996SWITCHAUTOTAB996 = "v996switchAutoTab996" // v996 Switch Auto Tab996
+        const val KEY_V996SYMBOLAUTOENCODE996 = "v996symbolAutoEncode996" // v996 Symbol Auto Encode996
+        const val KEY_V996SYNCAUTOCLOUD996 = "v996syncAutoCloud996" // v996 Sync Auto Cloud996
+        const val KEY_V996SYSTEMAUTOOPTIMIZE996 = "v996systemAutoOptimize996" // v996 System Auto Optimize996
+        const val KEY_V997STRUCTUREAUTOSCHEMA997 = "v997structureAutoSchema997" // v997 Structure Auto Schema997
+        const val KEY_V997STYLEAUTOTHEME997 = "v997styleAutoTheme997" // v997 Style Auto Theme997
+        const val KEY_V997SUBAUTOTITLE997 = "v997subAutoTitle997" // v997 Sub Auto Title997
+        const val KEY_V997SUBMITAUTOFORM997 = "v997submitAutoForm997" // v997 Submit Auto Form997
+        const val KEY_V997SUBSCRIBEAUTOPUSH997 = "v997subscribeAutoPush997" // v997 Subscribe Auto Push997
+        const val KEY_V997SUCCESSAUTOTOAST997 = "v997successAutoToast997" // v997 Success Auto Toast997
+        const val KEY_V997SUFFIXAUTOTRIM997 = "v997suffixAutoTrim997" // v997 Suffix Auto Trim997
+        const val KEY_V997SUMAUTOAGGREGATE997 = "v997sumAutoAggregate997" // v997 Sum Auto Aggregate997
+        const val KEY_V997SUMMARYAUTOGENERATE997 = "v997summaryAutoGenerate997" // v997 Summary Auto Generate997
+        const val KEY_V997SUPPORTAUTODETECT997 = "v997supportAutoDetect997" // v997 Support Auto Detect997
+        const val KEY_V997SWAPAUTOBUFFER997 = "v997swapAutoBuffer997" // v997 Swap Auto Buffer997
+        const val KEY_V997SWITCHAUTOTAB997 = "v997switchAutoTab997" // v997 Switch Auto Tab997
+        const val KEY_V997SYMBOLAUTOENCODE997 = "v997symbolAutoEncode997" // v997 Symbol Auto Encode997
+        const val KEY_V997SYNCAUTOCLOUD997 = "v997syncAutoCloud997" // v997 Sync Auto Cloud997
+        const val KEY_V997SYSTEMAUTOOPTIMIZE997 = "v997systemAutoOptimize997" // v997 System Auto Optimize997
+        const val KEY_V998STRUCTUREAUTOSCHEMA998 = "v998structureAutoSchema998" // v998 Structure Auto Schema998
+        const val KEY_V998STYLEAUTOTHEME998 = "v998styleAutoTheme998" // v998 Style Auto Theme998
+        const val KEY_V998SUBAUTOTITLE998 = "v998subAutoTitle998" // v998 Sub Auto Title998
+        const val KEY_V998SUBMITAUTOFORM998 = "v998submitAutoForm998" // v998 Submit Auto Form998
+        const val KEY_V998SUBSCRIBEAUTOPUSH998 = "v998subscribeAutoPush998" // v998 Subscribe Auto Push998
+        const val KEY_V998SUCCESSAUTOTOAST998 = "v998successAutoToast998" // v998 Success Auto Toast998
+        const val KEY_V998SUFFIXAUTOTRIM998 = "v998suffixAutoTrim998" // v998 Suffix Auto Trim998
+        const val KEY_V998SUMAUTOAGGREGATE998 = "v998sumAutoAggregate998" // v998 Sum Auto Aggregate998
+        const val KEY_V998SUMMARYAUTOGENERATE998 = "v998summaryAutoGenerate998" // v998 Summary Auto Generate998
+        const val KEY_V998SUPPORTAUTODETECT998 = "v998supportAutoDetect998" // v998 Support Auto Detect998
+        const val KEY_V998SWAPAUTOBUFFER998 = "v998swapAutoBuffer998" // v998 Swap Auto Buffer998
+        const val KEY_V998SWITCHAUTOTAB998 = "v998switchAutoTab998" // v998 Switch Auto Tab998
+        const val KEY_V998SYMBOLAUTOENCODE998 = "v998symbolAutoEncode998" // v998 Symbol Auto Encode998
+        const val KEY_V998SYNCAUTOCLOUD998 = "v998syncAutoCloud998" // v998 Sync Auto Cloud998
+        const val KEY_V998SYSTEMAUTOOPTIMIZE998 = "v998systemAutoOptimize998" // v998 System Auto Optimize998
+        const val KEY_V999STRUCTUREAUTOSCHEMA999 = "v999structureAutoSchema999" // v999 Structure Auto Schema999
+        const val KEY_V999STYLEAUTOTHEME999 = "v999styleAutoTheme999" // v999 Style Auto Theme999
+        const val KEY_V999SUBAUTOTITLE999 = "v999subAutoTitle999" // v999 Sub Auto Title999
+        const val KEY_V999SUBMITAUTOFORM999 = "v999submitAutoForm999" // v999 Submit Auto Form999
+        const val KEY_V999SUBSCRIBEAUTOPUSH999 = "v999subscribeAutoPush999" // v999 Subscribe Auto Push999
+        const val KEY_V999SUCCESSAUTOTOAST999 = "v999successAutoToast999" // v999 Success Auto Toast999
+        const val KEY_V999SUFFIXAUTOTRIM999 = "v999suffixAutoTrim999" // v999 Suffix Auto Trim999
+        const val KEY_V999SUMAUTOAGGREGATE999 = "v999sumAutoAggregate999" // v999 Sum Auto Aggregate999
+        const val KEY_V999SUMMARYAUTOGENERATE999 = "v999summaryAutoGenerate999" // v999 Summary Auto Generate999
+        const val KEY_V999SUPPORTAUTODETECT999 = "v999supportAutoDetect999" // v999 Support Auto Detect999
+        const val KEY_V999SWAPAUTOBUFFER999 = "v999swapAutoBuffer999" // v999 Swap Auto Buffer999
+        const val KEY_V999SWITCHAUTOTAB999 = "v999switchAutoTab999" // v999 Switch Auto Tab999
+        const val KEY_V999SYMBOLAUTOENCODE999 = "v999symbolAutoEncode999" // v999 Symbol Auto Encode999
+        const val KEY_V999SYNCAUTOCLOUD999 = "v999syncAutoCloud999" // v999 Sync Auto Cloud999
+        const val KEY_V999SYSTEMAUTOOPTIMIZE999 = "v999systemAutoOptimize999" // v999 System Auto Optimize999
+        const val KEY_V1000STRUCTUREAUTOSCHEMA1000 = "v1000structureAutoSchema1000" // v1000 Structure Auto Schema1000
+        const val KEY_V1000STYLEAUTOTHEME1000 = "v1000styleAutoTheme1000" // v1000 Style Auto Theme1000
+        const val KEY_V1000SUBAUTOTITLE1000 = "v1000subAutoTitle1000" // v1000 Sub Auto Title1000
+        const val KEY_V1000SUBMITAUTOFORM1000 = "v1000submitAutoForm1000" // v1000 Submit Auto Form1000
+        const val KEY_V1000SUBSCRIBEAUTOPUSH1000 = "v1000subscribeAutoPush1000" // v1000 Subscribe Auto Push1000
+        const val KEY_V1000SUCCESSAUTOTOAST1000 = "v1000successAutoToast1000" // v1000 Success Auto Toast1000
+        const val KEY_V1000SUFFIXAUTOTRIM1000 = "v1000suffixAutoTrim1000" // v1000 Suffix Auto Trim1000
+        const val KEY_V1000SUMAUTOAGGREGATE1000 = "v1000sumAutoAggregate1000" // v1000 Sum Auto Aggregate1000
+        const val KEY_V1000SUMMARYAUTOGENERATE1000 = "v1000summaryAutoGenerate1000" // v1000 Summary Auto Generate1000
+        const val KEY_V1000SUPPORTAUTODETECT1000 = "v1000supportAutoDetect1000" // v1000 Support Auto Detect1000
+        const val KEY_V1000SWAPAUTOBUFFER1000 = "v1000swapAutoBuffer1000" // v1000 Swap Auto Buffer1000
+        const val KEY_V1000SWITCHAUTOTAB1000 = "v1000switchAutoTab1000" // v1000 Switch Auto Tab1000
+        const val KEY_V1000SYMBOLAUTOENCODE1000 = "v1000symbolAutoEncode1000" // v1000 Symbol Auto Encode1000
+        const val KEY_V1000SYNCAUTOCLOUD1000 = "v1000syncAutoCloud1000" // v1000 Sync Auto Cloud1000
+        const val KEY_V1000SYSTEMAUTOOPTIMIZE1000 = "v1000systemAutoOptimize1000" // v1000 System Auto Optimize1000
     }
 }
