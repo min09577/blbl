@@ -63648,6 +63648,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V950SENSORAUTOGYRO950, false)
         set(value) = prefs.edit().putBoolean(KEY_V950SENSORAUTOGYRO950, value).apply()
 
+    var v951sequenceAutoOrder951: Boolean
+        get() = prefs.getBoolean(KEY_V951SEQUENCEAUTOORDER951, false)
+        set(value) = prefs.edit().putBoolean(KEY_V951SEQUENCEAUTOORDER951, value).apply()
+
+    var v951serialAutoPort951: Boolean
+        get() = prefs.getBoolean(KEY_V951SERIALAUTOPORT951, false)
+        set(value) = prefs.edit().putBoolean(KEY_V951SERIALAUTOPORT951, value).apply()
+
+    var v951serverAutoLoad951: Boolean
+        get() = prefs.getBoolean(KEY_V951SERVERAUTOLOAD951, false)
+        set(value) = prefs.edit().putBoolean(KEY_V951SERVERAUTOLOAD951, value).apply()
+
+    var v951serviceAutoBind951: Boolean
+        get() = prefs.getBoolean(KEY_V951SERVICEAUTOBIND951, false)
+        set(value) = prefs.edit().putBoolean(KEY_V951SERVICEAUTOBIND951, value).apply()
+
+    var v951sessionAutoRestore951: Boolean
+        get() = prefs.getBoolean(KEY_V951SESSIONAUTORESTORE951, false)
+        set(value) = prefs.edit().putBoolean(KEY_V951SESSIONAUTORESTORE951, value).apply()
+
+    var v951setAutoDefault951: Boolean
+        get() = prefs.getBoolean(KEY_V951SETAUTODEFAULT951, false)
+        set(value) = prefs.edit().putBoolean(KEY_V951SETAUTODEFAULT951, value).apply()
+
+    var v951settingAutoExport951: Boolean
+        get() = prefs.getBoolean(KEY_V951SETTINGAUTOEXPORT951, false)
+        set(value) = prefs.edit().putBoolean(KEY_V951SETTINGAUTOEXPORT951, value).apply()
+
+    var v951setupAutoWizard951: Boolean
+        get() = prefs.getBoolean(KEY_V951SETUPAUTOWIZARD951, false)
+        set(value) = prefs.edit().putBoolean(KEY_V951SETUPAUTOWIZARD951, value).apply()
+
+    var v951shadowAutoElevation951: Boolean
+        get() = prefs.getBoolean(KEY_V951SHADOWAUTOELEVATION951, false)
+        set(value) = prefs.edit().putBoolean(KEY_V951SHADOWAUTOELEVATION951, value).apply()
+
+    var v951shapeAutoMorph951: Boolean
+        get() = prefs.getBoolean(KEY_V951SHAPEAUTOMORPH951, false)
+        set(value) = prefs.edit().putBoolean(KEY_V951SHAPEAUTOMORPH951, value).apply()
+
+    var v951shareAutoClipboard951: Boolean
+        get() = prefs.getBoolean(KEY_V951SHAREAUTOCLIPBOARD951, false)
+        set(value) = prefs.edit().putBoolean(KEY_V951SHAREAUTOCLIPBOARD951, value).apply()
+
+    var v951sharpAutoContrast951: Boolean
+        get() = prefs.getBoolean(KEY_V951SHARPAUTOCONTRAST951, false)
+        set(value) = prefs.edit().putBoolean(KEY_V951SHARPAUTOCONTRAST951, value).apply()
+
+    var v951shiftAutoTimestamp951: Boolean
+        get() = prefs.getBoolean(KEY_V951SHIFTAUTOTIMESTAMP951, false)
+        set(value) = prefs.edit().putBoolean(KEY_V951SHIFTAUTOTIMESTAMP951, value).apply()
+
+    var v951showAutoAnimation951: Boolean
+        get() = prefs.getBoolean(KEY_V951SHOWAUTOANIMATION951, false)
+        set(value) = prefs.edit().putBoolean(KEY_V951SHOWAUTOANIMATION951, value).apply()
+
+    var v951shrinkAutoCollapse951: Boolean
+        get() = prefs.getBoolean(KEY_V951SHRINKAUTOCOLLAPSE951, false)
+        set(value) = prefs.edit().putBoolean(KEY_V951SHRINKAUTOCOLLAPSE951, value).apply()
+
+    var v952sequenceAutoOrder952: Boolean
+        get() = prefs.getBoolean(KEY_V952SEQUENCEAUTOORDER952, false)
+        set(value) = prefs.edit().putBoolean(KEY_V952SEQUENCEAUTOORDER952, value).apply()
+
+    var v952serialAutoPort952: Boolean
+        get() = prefs.getBoolean(KEY_V952SERIALAUTOPORT952, false)
+        set(value) = prefs.edit().putBoolean(KEY_V952SERIALAUTOPORT952, value).apply()
+
+    var v952serverAutoLoad952: Boolean
+        get() = prefs.getBoolean(KEY_V952SERVERAUTOLOAD952, false)
+        set(value) = prefs.edit().putBoolean(KEY_V952SERVERAUTOLOAD952, value).apply()
+
+    var v952serviceAutoBind952: Boolean
+        get() = prefs.getBoolean(KEY_V952SERVICEAUTOBIND952, false)
+        set(value) = prefs.edit().putBoolean(KEY_V952SERVICEAUTOBIND952, value).apply()
+
+    var v952sessionAutoRestore952: Boolean
+        get() = prefs.getBoolean(KEY_V952SESSIONAUTORESTORE952, false)
+        set(value) = prefs.edit().putBoolean(KEY_V952SESSIONAUTORESTORE952, value).apply()
+
+    var v952setAutoDefault952: Boolean
+        get() = prefs.getBoolean(KEY_V952SETAUTODEFAULT952, false)
+        set(value) = prefs.edit().putBoolean(KEY_V952SETAUTODEFAULT952, value).apply()
+
+    var v952settingAutoExport952: Boolean
+        get() = prefs.getBoolean(KEY_V952SETTINGAUTOEXPORT952, false)
+        set(value) = prefs.edit().putBoolean(KEY_V952SETTINGAUTOEXPORT952, value).apply()
+
+    var v952setupAutoWizard952: Boolean
+        get() = prefs.getBoolean(KEY_V952SETUPAUTOWIZARD952, false)
+        set(value) = prefs.edit().putBoolean(KEY_V952SETUPAUTOWIZARD952, value).apply()
+
+    var v952shadowAutoElevation952: Boolean
+        get() = prefs.getBoolean(KEY_V952SHADOWAUTOELEVATION952, false)
+        set(value) = prefs.edit().putBoolean(KEY_V952SHADOWAUTOELEVATION952, value).apply()
+
+    var v952shapeAutoMorph952: Boolean
+        get() = prefs.getBoolean(KEY_V952SHAPEAUTOMORPH952, false)
+        set(value) = prefs.edit().putBoolean(KEY_V952SHAPEAUTOMORPH952, value).apply()
+
+    var v952shareAutoClipboard952: Boolean
+        get() = prefs.getBoolean(KEY_V952SHAREAUTOCLIPBOARD952, false)
+        set(value) = prefs.edit().putBoolean(KEY_V952SHAREAUTOCLIPBOARD952, value).apply()
+
+    var v952sharpAutoContrast952: Boolean
+        get() = prefs.getBoolean(KEY_V952SHARPAUTOCONTRAST952, false)
+        set(value) = prefs.edit().putBoolean(KEY_V952SHARPAUTOCONTRAST952, value).apply()
+
+    var v952shiftAutoTimestamp952: Boolean
+        get() = prefs.getBoolean(KEY_V952SHIFTAUTOTIMESTAMP952, false)
+        set(value) = prefs.edit().putBoolean(KEY_V952SHIFTAUTOTIMESTAMP952, value).apply()
+
+    var v952showAutoAnimation952: Boolean
+        get() = prefs.getBoolean(KEY_V952SHOWAUTOANIMATION952, false)
+        set(value) = prefs.edit().putBoolean(KEY_V952SHOWAUTOANIMATION952, value).apply()
+
+    var v952shrinkAutoCollapse952: Boolean
+        get() = prefs.getBoolean(KEY_V952SHRINKAUTOCOLLAPSE952, false)
+        set(value) = prefs.edit().putBoolean(KEY_V952SHRINKAUTOCOLLAPSE952, value).apply()
+
+    var v953sequenceAutoOrder953: Boolean
+        get() = prefs.getBoolean(KEY_V953SEQUENCEAUTOORDER953, false)
+        set(value) = prefs.edit().putBoolean(KEY_V953SEQUENCEAUTOORDER953, value).apply()
+
+    var v953serialAutoPort953: Boolean
+        get() = prefs.getBoolean(KEY_V953SERIALAUTOPORT953, false)
+        set(value) = prefs.edit().putBoolean(KEY_V953SERIALAUTOPORT953, value).apply()
+
+    var v953serverAutoLoad953: Boolean
+        get() = prefs.getBoolean(KEY_V953SERVERAUTOLOAD953, false)
+        set(value) = prefs.edit().putBoolean(KEY_V953SERVERAUTOLOAD953, value).apply()
+
+    var v953serviceAutoBind953: Boolean
+        get() = prefs.getBoolean(KEY_V953SERVICEAUTOBIND953, false)
+        set(value) = prefs.edit().putBoolean(KEY_V953SERVICEAUTOBIND953, value).apply()
+
+    var v953sessionAutoRestore953: Boolean
+        get() = prefs.getBoolean(KEY_V953SESSIONAUTORESTORE953, false)
+        set(value) = prefs.edit().putBoolean(KEY_V953SESSIONAUTORESTORE953, value).apply()
+
+    var v953setAutoDefault953: Boolean
+        get() = prefs.getBoolean(KEY_V953SETAUTODEFAULT953, false)
+        set(value) = prefs.edit().putBoolean(KEY_V953SETAUTODEFAULT953, value).apply()
+
+    var v953settingAutoExport953: Boolean
+        get() = prefs.getBoolean(KEY_V953SETTINGAUTOEXPORT953, false)
+        set(value) = prefs.edit().putBoolean(KEY_V953SETTINGAUTOEXPORT953, value).apply()
+
+    var v953setupAutoWizard953: Boolean
+        get() = prefs.getBoolean(KEY_V953SETUPAUTOWIZARD953, false)
+        set(value) = prefs.edit().putBoolean(KEY_V953SETUPAUTOWIZARD953, value).apply()
+
+    var v953shadowAutoElevation953: Boolean
+        get() = prefs.getBoolean(KEY_V953SHADOWAUTOELEVATION953, false)
+        set(value) = prefs.edit().putBoolean(KEY_V953SHADOWAUTOELEVATION953, value).apply()
+
+    var v953shapeAutoMorph953: Boolean
+        get() = prefs.getBoolean(KEY_V953SHAPEAUTOMORPH953, false)
+        set(value) = prefs.edit().putBoolean(KEY_V953SHAPEAUTOMORPH953, value).apply()
+
+    var v953shareAutoClipboard953: Boolean
+        get() = prefs.getBoolean(KEY_V953SHAREAUTOCLIPBOARD953, false)
+        set(value) = prefs.edit().putBoolean(KEY_V953SHAREAUTOCLIPBOARD953, value).apply()
+
+    var v953sharpAutoContrast953: Boolean
+        get() = prefs.getBoolean(KEY_V953SHARPAUTOCONTRAST953, false)
+        set(value) = prefs.edit().putBoolean(KEY_V953SHARPAUTOCONTRAST953, value).apply()
+
+    var v953shiftAutoTimestamp953: Boolean
+        get() = prefs.getBoolean(KEY_V953SHIFTAUTOTIMESTAMP953, false)
+        set(value) = prefs.edit().putBoolean(KEY_V953SHIFTAUTOTIMESTAMP953, value).apply()
+
+    var v953showAutoAnimation953: Boolean
+        get() = prefs.getBoolean(KEY_V953SHOWAUTOANIMATION953, false)
+        set(value) = prefs.edit().putBoolean(KEY_V953SHOWAUTOANIMATION953, value).apply()
+
+    var v953shrinkAutoCollapse953: Boolean
+        get() = prefs.getBoolean(KEY_V953SHRINKAUTOCOLLAPSE953, false)
+        set(value) = prefs.edit().putBoolean(KEY_V953SHRINKAUTOCOLLAPSE953, value).apply()
+
+    var v954sequenceAutoOrder954: Boolean
+        get() = prefs.getBoolean(KEY_V954SEQUENCEAUTOORDER954, false)
+        set(value) = prefs.edit().putBoolean(KEY_V954SEQUENCEAUTOORDER954, value).apply()
+
+    var v954serialAutoPort954: Boolean
+        get() = prefs.getBoolean(KEY_V954SERIALAUTOPORT954, false)
+        set(value) = prefs.edit().putBoolean(KEY_V954SERIALAUTOPORT954, value).apply()
+
+    var v954serverAutoLoad954: Boolean
+        get() = prefs.getBoolean(KEY_V954SERVERAUTOLOAD954, false)
+        set(value) = prefs.edit().putBoolean(KEY_V954SERVERAUTOLOAD954, value).apply()
+
+    var v954serviceAutoBind954: Boolean
+        get() = prefs.getBoolean(KEY_V954SERVICEAUTOBIND954, false)
+        set(value) = prefs.edit().putBoolean(KEY_V954SERVICEAUTOBIND954, value).apply()
+
+    var v954sessionAutoRestore954: Boolean
+        get() = prefs.getBoolean(KEY_V954SESSIONAUTORESTORE954, false)
+        set(value) = prefs.edit().putBoolean(KEY_V954SESSIONAUTORESTORE954, value).apply()
+
+    var v954setAutoDefault954: Boolean
+        get() = prefs.getBoolean(KEY_V954SETAUTODEFAULT954, false)
+        set(value) = prefs.edit().putBoolean(KEY_V954SETAUTODEFAULT954, value).apply()
+
+    var v954settingAutoExport954: Boolean
+        get() = prefs.getBoolean(KEY_V954SETTINGAUTOEXPORT954, false)
+        set(value) = prefs.edit().putBoolean(KEY_V954SETTINGAUTOEXPORT954, value).apply()
+
+    var v954setupAutoWizard954: Boolean
+        get() = prefs.getBoolean(KEY_V954SETUPAUTOWIZARD954, false)
+        set(value) = prefs.edit().putBoolean(KEY_V954SETUPAUTOWIZARD954, value).apply()
+
+    var v954shadowAutoElevation954: Boolean
+        get() = prefs.getBoolean(KEY_V954SHADOWAUTOELEVATION954, false)
+        set(value) = prefs.edit().putBoolean(KEY_V954SHADOWAUTOELEVATION954, value).apply()
+
+    var v954shapeAutoMorph954: Boolean
+        get() = prefs.getBoolean(KEY_V954SHAPEAUTOMORPH954, false)
+        set(value) = prefs.edit().putBoolean(KEY_V954SHAPEAUTOMORPH954, value).apply()
+
+    var v954shareAutoClipboard954: Boolean
+        get() = prefs.getBoolean(KEY_V954SHAREAUTOCLIPBOARD954, false)
+        set(value) = prefs.edit().putBoolean(KEY_V954SHAREAUTOCLIPBOARD954, value).apply()
+
+    var v954sharpAutoContrast954: Boolean
+        get() = prefs.getBoolean(KEY_V954SHARPAUTOCONTRAST954, false)
+        set(value) = prefs.edit().putBoolean(KEY_V954SHARPAUTOCONTRAST954, value).apply()
+
+    var v954shiftAutoTimestamp954: Boolean
+        get() = prefs.getBoolean(KEY_V954SHIFTAUTOTIMESTAMP954, false)
+        set(value) = prefs.edit().putBoolean(KEY_V954SHIFTAUTOTIMESTAMP954, value).apply()
+
+    var v954showAutoAnimation954: Boolean
+        get() = prefs.getBoolean(KEY_V954SHOWAUTOANIMATION954, false)
+        set(value) = prefs.edit().putBoolean(KEY_V954SHOWAUTOANIMATION954, value).apply()
+
+    var v954shrinkAutoCollapse954: Boolean
+        get() = prefs.getBoolean(KEY_V954SHRINKAUTOCOLLAPSE954, false)
+        set(value) = prefs.edit().putBoolean(KEY_V954SHRINKAUTOCOLLAPSE954, value).apply()
+
+    var v955sequenceAutoOrder955: Boolean
+        get() = prefs.getBoolean(KEY_V955SEQUENCEAUTOORDER955, false)
+        set(value) = prefs.edit().putBoolean(KEY_V955SEQUENCEAUTOORDER955, value).apply()
+
+    var v955serialAutoPort955: Boolean
+        get() = prefs.getBoolean(KEY_V955SERIALAUTOPORT955, false)
+        set(value) = prefs.edit().putBoolean(KEY_V955SERIALAUTOPORT955, value).apply()
+
+    var v955serverAutoLoad955: Boolean
+        get() = prefs.getBoolean(KEY_V955SERVERAUTOLOAD955, false)
+        set(value) = prefs.edit().putBoolean(KEY_V955SERVERAUTOLOAD955, value).apply()
+
+    var v955serviceAutoBind955: Boolean
+        get() = prefs.getBoolean(KEY_V955SERVICEAUTOBIND955, false)
+        set(value) = prefs.edit().putBoolean(KEY_V955SERVICEAUTOBIND955, value).apply()
+
+    var v955sessionAutoRestore955: Boolean
+        get() = prefs.getBoolean(KEY_V955SESSIONAUTORESTORE955, false)
+        set(value) = prefs.edit().putBoolean(KEY_V955SESSIONAUTORESTORE955, value).apply()
+
+    var v955setAutoDefault955: Boolean
+        get() = prefs.getBoolean(KEY_V955SETAUTODEFAULT955, false)
+        set(value) = prefs.edit().putBoolean(KEY_V955SETAUTODEFAULT955, value).apply()
+
+    var v955settingAutoExport955: Boolean
+        get() = prefs.getBoolean(KEY_V955SETTINGAUTOEXPORT955, false)
+        set(value) = prefs.edit().putBoolean(KEY_V955SETTINGAUTOEXPORT955, value).apply()
+
+    var v955setupAutoWizard955: Boolean
+        get() = prefs.getBoolean(KEY_V955SETUPAUTOWIZARD955, false)
+        set(value) = prefs.edit().putBoolean(KEY_V955SETUPAUTOWIZARD955, value).apply()
+
+    var v955shadowAutoElevation955: Boolean
+        get() = prefs.getBoolean(KEY_V955SHADOWAUTOELEVATION955, false)
+        set(value) = prefs.edit().putBoolean(KEY_V955SHADOWAUTOELEVATION955, value).apply()
+
+    var v955shapeAutoMorph955: Boolean
+        get() = prefs.getBoolean(KEY_V955SHAPEAUTOMORPH955, false)
+        set(value) = prefs.edit().putBoolean(KEY_V955SHAPEAUTOMORPH955, value).apply()
+
+    var v955shareAutoClipboard955: Boolean
+        get() = prefs.getBoolean(KEY_V955SHAREAUTOCLIPBOARD955, false)
+        set(value) = prefs.edit().putBoolean(KEY_V955SHAREAUTOCLIPBOARD955, value).apply()
+
+    var v955sharpAutoContrast955: Boolean
+        get() = prefs.getBoolean(KEY_V955SHARPAUTOCONTRAST955, false)
+        set(value) = prefs.edit().putBoolean(KEY_V955SHARPAUTOCONTRAST955, value).apply()
+
+    var v955shiftAutoTimestamp955: Boolean
+        get() = prefs.getBoolean(KEY_V955SHIFTAUTOTIMESTAMP955, false)
+        set(value) = prefs.edit().putBoolean(KEY_V955SHIFTAUTOTIMESTAMP955, value).apply()
+
+    var v955showAutoAnimation955: Boolean
+        get() = prefs.getBoolean(KEY_V955SHOWAUTOANIMATION955, false)
+        set(value) = prefs.edit().putBoolean(KEY_V955SHOWAUTOANIMATION955, value).apply()
+
+    var v955shrinkAutoCollapse955: Boolean
+        get() = prefs.getBoolean(KEY_V955SHRINKAUTOCOLLAPSE955, false)
+        set(value) = prefs.edit().putBoolean(KEY_V955SHRINKAUTOCOLLAPSE955, value).apply()
+
+    var v956sequenceAutoOrder956: Boolean
+        get() = prefs.getBoolean(KEY_V956SEQUENCEAUTOORDER956, false)
+        set(value) = prefs.edit().putBoolean(KEY_V956SEQUENCEAUTOORDER956, value).apply()
+
+    var v956serialAutoPort956: Boolean
+        get() = prefs.getBoolean(KEY_V956SERIALAUTOPORT956, false)
+        set(value) = prefs.edit().putBoolean(KEY_V956SERIALAUTOPORT956, value).apply()
+
+    var v956serverAutoLoad956: Boolean
+        get() = prefs.getBoolean(KEY_V956SERVERAUTOLOAD956, false)
+        set(value) = prefs.edit().putBoolean(KEY_V956SERVERAUTOLOAD956, value).apply()
+
+    var v956serviceAutoBind956: Boolean
+        get() = prefs.getBoolean(KEY_V956SERVICEAUTOBIND956, false)
+        set(value) = prefs.edit().putBoolean(KEY_V956SERVICEAUTOBIND956, value).apply()
+
+    var v956sessionAutoRestore956: Boolean
+        get() = prefs.getBoolean(KEY_V956SESSIONAUTORESTORE956, false)
+        set(value) = prefs.edit().putBoolean(KEY_V956SESSIONAUTORESTORE956, value).apply()
+
+    var v956setAutoDefault956: Boolean
+        get() = prefs.getBoolean(KEY_V956SETAUTODEFAULT956, false)
+        set(value) = prefs.edit().putBoolean(KEY_V956SETAUTODEFAULT956, value).apply()
+
+    var v956settingAutoExport956: Boolean
+        get() = prefs.getBoolean(KEY_V956SETTINGAUTOEXPORT956, false)
+        set(value) = prefs.edit().putBoolean(KEY_V956SETTINGAUTOEXPORT956, value).apply()
+
+    var v956setupAutoWizard956: Boolean
+        get() = prefs.getBoolean(KEY_V956SETUPAUTOWIZARD956, false)
+        set(value) = prefs.edit().putBoolean(KEY_V956SETUPAUTOWIZARD956, value).apply()
+
+    var v956shadowAutoElevation956: Boolean
+        get() = prefs.getBoolean(KEY_V956SHADOWAUTOELEVATION956, false)
+        set(value) = prefs.edit().putBoolean(KEY_V956SHADOWAUTOELEVATION956, value).apply()
+
+    var v956shapeAutoMorph956: Boolean
+        get() = prefs.getBoolean(KEY_V956SHAPEAUTOMORPH956, false)
+        set(value) = prefs.edit().putBoolean(KEY_V956SHAPEAUTOMORPH956, value).apply()
+
+    var v956shareAutoClipboard956: Boolean
+        get() = prefs.getBoolean(KEY_V956SHAREAUTOCLIPBOARD956, false)
+        set(value) = prefs.edit().putBoolean(KEY_V956SHAREAUTOCLIPBOARD956, value).apply()
+
+    var v956sharpAutoContrast956: Boolean
+        get() = prefs.getBoolean(KEY_V956SHARPAUTOCONTRAST956, false)
+        set(value) = prefs.edit().putBoolean(KEY_V956SHARPAUTOCONTRAST956, value).apply()
+
+    var v956shiftAutoTimestamp956: Boolean
+        get() = prefs.getBoolean(KEY_V956SHIFTAUTOTIMESTAMP956, false)
+        set(value) = prefs.edit().putBoolean(KEY_V956SHIFTAUTOTIMESTAMP956, value).apply()
+
+    var v956showAutoAnimation956: Boolean
+        get() = prefs.getBoolean(KEY_V956SHOWAUTOANIMATION956, false)
+        set(value) = prefs.edit().putBoolean(KEY_V956SHOWAUTOANIMATION956, value).apply()
+
+    var v956shrinkAutoCollapse956: Boolean
+        get() = prefs.getBoolean(KEY_V956SHRINKAUTOCOLLAPSE956, false)
+        set(value) = prefs.edit().putBoolean(KEY_V956SHRINKAUTOCOLLAPSE956, value).apply()
+
+    var v957sequenceAutoOrder957: Boolean
+        get() = prefs.getBoolean(KEY_V957SEQUENCEAUTOORDER957, false)
+        set(value) = prefs.edit().putBoolean(KEY_V957SEQUENCEAUTOORDER957, value).apply()
+
+    var v957serialAutoPort957: Boolean
+        get() = prefs.getBoolean(KEY_V957SERIALAUTOPORT957, false)
+        set(value) = prefs.edit().putBoolean(KEY_V957SERIALAUTOPORT957, value).apply()
+
+    var v957serverAutoLoad957: Boolean
+        get() = prefs.getBoolean(KEY_V957SERVERAUTOLOAD957, false)
+        set(value) = prefs.edit().putBoolean(KEY_V957SERVERAUTOLOAD957, value).apply()
+
+    var v957serviceAutoBind957: Boolean
+        get() = prefs.getBoolean(KEY_V957SERVICEAUTOBIND957, false)
+        set(value) = prefs.edit().putBoolean(KEY_V957SERVICEAUTOBIND957, value).apply()
+
+    var v957sessionAutoRestore957: Boolean
+        get() = prefs.getBoolean(KEY_V957SESSIONAUTORESTORE957, false)
+        set(value) = prefs.edit().putBoolean(KEY_V957SESSIONAUTORESTORE957, value).apply()
+
+    var v957setAutoDefault957: Boolean
+        get() = prefs.getBoolean(KEY_V957SETAUTODEFAULT957, false)
+        set(value) = prefs.edit().putBoolean(KEY_V957SETAUTODEFAULT957, value).apply()
+
+    var v957settingAutoExport957: Boolean
+        get() = prefs.getBoolean(KEY_V957SETTINGAUTOEXPORT957, false)
+        set(value) = prefs.edit().putBoolean(KEY_V957SETTINGAUTOEXPORT957, value).apply()
+
+    var v957setupAutoWizard957: Boolean
+        get() = prefs.getBoolean(KEY_V957SETUPAUTOWIZARD957, false)
+        set(value) = prefs.edit().putBoolean(KEY_V957SETUPAUTOWIZARD957, value).apply()
+
+    var v957shadowAutoElevation957: Boolean
+        get() = prefs.getBoolean(KEY_V957SHADOWAUTOELEVATION957, false)
+        set(value) = prefs.edit().putBoolean(KEY_V957SHADOWAUTOELEVATION957, value).apply()
+
+    var v957shapeAutoMorph957: Boolean
+        get() = prefs.getBoolean(KEY_V957SHAPEAUTOMORPH957, false)
+        set(value) = prefs.edit().putBoolean(KEY_V957SHAPEAUTOMORPH957, value).apply()
+
+    var v957shareAutoClipboard957: Boolean
+        get() = prefs.getBoolean(KEY_V957SHAREAUTOCLIPBOARD957, false)
+        set(value) = prefs.edit().putBoolean(KEY_V957SHAREAUTOCLIPBOARD957, value).apply()
+
+    var v957sharpAutoContrast957: Boolean
+        get() = prefs.getBoolean(KEY_V957SHARPAUTOCONTRAST957, false)
+        set(value) = prefs.edit().putBoolean(KEY_V957SHARPAUTOCONTRAST957, value).apply()
+
+    var v957shiftAutoTimestamp957: Boolean
+        get() = prefs.getBoolean(KEY_V957SHIFTAUTOTIMESTAMP957, false)
+        set(value) = prefs.edit().putBoolean(KEY_V957SHIFTAUTOTIMESTAMP957, value).apply()
+
+    var v957showAutoAnimation957: Boolean
+        get() = prefs.getBoolean(KEY_V957SHOWAUTOANIMATION957, false)
+        set(value) = prefs.edit().putBoolean(KEY_V957SHOWAUTOANIMATION957, value).apply()
+
+    var v957shrinkAutoCollapse957: Boolean
+        get() = prefs.getBoolean(KEY_V957SHRINKAUTOCOLLAPSE957, false)
+        set(value) = prefs.edit().putBoolean(KEY_V957SHRINKAUTOCOLLAPSE957, value).apply()
+
+    var v958sequenceAutoOrder958: Boolean
+        get() = prefs.getBoolean(KEY_V958SEQUENCEAUTOORDER958, false)
+        set(value) = prefs.edit().putBoolean(KEY_V958SEQUENCEAUTOORDER958, value).apply()
+
+    var v958serialAutoPort958: Boolean
+        get() = prefs.getBoolean(KEY_V958SERIALAUTOPORT958, false)
+        set(value) = prefs.edit().putBoolean(KEY_V958SERIALAUTOPORT958, value).apply()
+
+    var v958serverAutoLoad958: Boolean
+        get() = prefs.getBoolean(KEY_V958SERVERAUTOLOAD958, false)
+        set(value) = prefs.edit().putBoolean(KEY_V958SERVERAUTOLOAD958, value).apply()
+
+    var v958serviceAutoBind958: Boolean
+        get() = prefs.getBoolean(KEY_V958SERVICEAUTOBIND958, false)
+        set(value) = prefs.edit().putBoolean(KEY_V958SERVICEAUTOBIND958, value).apply()
+
+    var v958sessionAutoRestore958: Boolean
+        get() = prefs.getBoolean(KEY_V958SESSIONAUTORESTORE958, false)
+        set(value) = prefs.edit().putBoolean(KEY_V958SESSIONAUTORESTORE958, value).apply()
+
+    var v958setAutoDefault958: Boolean
+        get() = prefs.getBoolean(KEY_V958SETAUTODEFAULT958, false)
+        set(value) = prefs.edit().putBoolean(KEY_V958SETAUTODEFAULT958, value).apply()
+
+    var v958settingAutoExport958: Boolean
+        get() = prefs.getBoolean(KEY_V958SETTINGAUTOEXPORT958, false)
+        set(value) = prefs.edit().putBoolean(KEY_V958SETTINGAUTOEXPORT958, value).apply()
+
+    var v958setupAutoWizard958: Boolean
+        get() = prefs.getBoolean(KEY_V958SETUPAUTOWIZARD958, false)
+        set(value) = prefs.edit().putBoolean(KEY_V958SETUPAUTOWIZARD958, value).apply()
+
+    var v958shadowAutoElevation958: Boolean
+        get() = prefs.getBoolean(KEY_V958SHADOWAUTOELEVATION958, false)
+        set(value) = prefs.edit().putBoolean(KEY_V958SHADOWAUTOELEVATION958, value).apply()
+
+    var v958shapeAutoMorph958: Boolean
+        get() = prefs.getBoolean(KEY_V958SHAPEAUTOMORPH958, false)
+        set(value) = prefs.edit().putBoolean(KEY_V958SHAPEAUTOMORPH958, value).apply()
+
+    var v958shareAutoClipboard958: Boolean
+        get() = prefs.getBoolean(KEY_V958SHAREAUTOCLIPBOARD958, false)
+        set(value) = prefs.edit().putBoolean(KEY_V958SHAREAUTOCLIPBOARD958, value).apply()
+
+    var v958sharpAutoContrast958: Boolean
+        get() = prefs.getBoolean(KEY_V958SHARPAUTOCONTRAST958, false)
+        set(value) = prefs.edit().putBoolean(KEY_V958SHARPAUTOCONTRAST958, value).apply()
+
+    var v958shiftAutoTimestamp958: Boolean
+        get() = prefs.getBoolean(KEY_V958SHIFTAUTOTIMESTAMP958, false)
+        set(value) = prefs.edit().putBoolean(KEY_V958SHIFTAUTOTIMESTAMP958, value).apply()
+
+    var v958showAutoAnimation958: Boolean
+        get() = prefs.getBoolean(KEY_V958SHOWAUTOANIMATION958, false)
+        set(value) = prefs.edit().putBoolean(KEY_V958SHOWAUTOANIMATION958, value).apply()
+
+    var v958shrinkAutoCollapse958: Boolean
+        get() = prefs.getBoolean(KEY_V958SHRINKAUTOCOLLAPSE958, false)
+        set(value) = prefs.edit().putBoolean(KEY_V958SHRINKAUTOCOLLAPSE958, value).apply()
+
+    var v959sequenceAutoOrder959: Boolean
+        get() = prefs.getBoolean(KEY_V959SEQUENCEAUTOORDER959, false)
+        set(value) = prefs.edit().putBoolean(KEY_V959SEQUENCEAUTOORDER959, value).apply()
+
+    var v959serialAutoPort959: Boolean
+        get() = prefs.getBoolean(KEY_V959SERIALAUTOPORT959, false)
+        set(value) = prefs.edit().putBoolean(KEY_V959SERIALAUTOPORT959, value).apply()
+
+    var v959serverAutoLoad959: Boolean
+        get() = prefs.getBoolean(KEY_V959SERVERAUTOLOAD959, false)
+        set(value) = prefs.edit().putBoolean(KEY_V959SERVERAUTOLOAD959, value).apply()
+
+    var v959serviceAutoBind959: Boolean
+        get() = prefs.getBoolean(KEY_V959SERVICEAUTOBIND959, false)
+        set(value) = prefs.edit().putBoolean(KEY_V959SERVICEAUTOBIND959, value).apply()
+
+    var v959sessionAutoRestore959: Boolean
+        get() = prefs.getBoolean(KEY_V959SESSIONAUTORESTORE959, false)
+        set(value) = prefs.edit().putBoolean(KEY_V959SESSIONAUTORESTORE959, value).apply()
+
+    var v959setAutoDefault959: Boolean
+        get() = prefs.getBoolean(KEY_V959SETAUTODEFAULT959, false)
+        set(value) = prefs.edit().putBoolean(KEY_V959SETAUTODEFAULT959, value).apply()
+
+    var v959settingAutoExport959: Boolean
+        get() = prefs.getBoolean(KEY_V959SETTINGAUTOEXPORT959, false)
+        set(value) = prefs.edit().putBoolean(KEY_V959SETTINGAUTOEXPORT959, value).apply()
+
+    var v959setupAutoWizard959: Boolean
+        get() = prefs.getBoolean(KEY_V959SETUPAUTOWIZARD959, false)
+        set(value) = prefs.edit().putBoolean(KEY_V959SETUPAUTOWIZARD959, value).apply()
+
+    var v959shadowAutoElevation959: Boolean
+        get() = prefs.getBoolean(KEY_V959SHADOWAUTOELEVATION959, false)
+        set(value) = prefs.edit().putBoolean(KEY_V959SHADOWAUTOELEVATION959, value).apply()
+
+    var v959shapeAutoMorph959: Boolean
+        get() = prefs.getBoolean(KEY_V959SHAPEAUTOMORPH959, false)
+        set(value) = prefs.edit().putBoolean(KEY_V959SHAPEAUTOMORPH959, value).apply()
+
+    var v959shareAutoClipboard959: Boolean
+        get() = prefs.getBoolean(KEY_V959SHAREAUTOCLIPBOARD959, false)
+        set(value) = prefs.edit().putBoolean(KEY_V959SHAREAUTOCLIPBOARD959, value).apply()
+
+    var v959sharpAutoContrast959: Boolean
+        get() = prefs.getBoolean(KEY_V959SHARPAUTOCONTRAST959, false)
+        set(value) = prefs.edit().putBoolean(KEY_V959SHARPAUTOCONTRAST959, value).apply()
+
+    var v959shiftAutoTimestamp959: Boolean
+        get() = prefs.getBoolean(KEY_V959SHIFTAUTOTIMESTAMP959, false)
+        set(value) = prefs.edit().putBoolean(KEY_V959SHIFTAUTOTIMESTAMP959, value).apply()
+
+    var v959showAutoAnimation959: Boolean
+        get() = prefs.getBoolean(KEY_V959SHOWAUTOANIMATION959, false)
+        set(value) = prefs.edit().putBoolean(KEY_V959SHOWAUTOANIMATION959, value).apply()
+
+    var v959shrinkAutoCollapse959: Boolean
+        get() = prefs.getBoolean(KEY_V959SHRINKAUTOCOLLAPSE959, false)
+        set(value) = prefs.edit().putBoolean(KEY_V959SHRINKAUTOCOLLAPSE959, value).apply()
+
+    var v960sequenceAutoOrder960: Boolean
+        get() = prefs.getBoolean(KEY_V960SEQUENCEAUTOORDER960, false)
+        set(value) = prefs.edit().putBoolean(KEY_V960SEQUENCEAUTOORDER960, value).apply()
+
+    var v960serialAutoPort960: Boolean
+        get() = prefs.getBoolean(KEY_V960SERIALAUTOPORT960, false)
+        set(value) = prefs.edit().putBoolean(KEY_V960SERIALAUTOPORT960, value).apply()
+
+    var v960serverAutoLoad960: Boolean
+        get() = prefs.getBoolean(KEY_V960SERVERAUTOLOAD960, false)
+        set(value) = prefs.edit().putBoolean(KEY_V960SERVERAUTOLOAD960, value).apply()
+
+    var v960serviceAutoBind960: Boolean
+        get() = prefs.getBoolean(KEY_V960SERVICEAUTOBIND960, false)
+        set(value) = prefs.edit().putBoolean(KEY_V960SERVICEAUTOBIND960, value).apply()
+
+    var v960sessionAutoRestore960: Boolean
+        get() = prefs.getBoolean(KEY_V960SESSIONAUTORESTORE960, false)
+        set(value) = prefs.edit().putBoolean(KEY_V960SESSIONAUTORESTORE960, value).apply()
+
+    var v960setAutoDefault960: Boolean
+        get() = prefs.getBoolean(KEY_V960SETAUTODEFAULT960, false)
+        set(value) = prefs.edit().putBoolean(KEY_V960SETAUTODEFAULT960, value).apply()
+
+    var v960settingAutoExport960: Boolean
+        get() = prefs.getBoolean(KEY_V960SETTINGAUTOEXPORT960, false)
+        set(value) = prefs.edit().putBoolean(KEY_V960SETTINGAUTOEXPORT960, value).apply()
+
+    var v960setupAutoWizard960: Boolean
+        get() = prefs.getBoolean(KEY_V960SETUPAUTOWIZARD960, false)
+        set(value) = prefs.edit().putBoolean(KEY_V960SETUPAUTOWIZARD960, value).apply()
+
+    var v960shadowAutoElevation960: Boolean
+        get() = prefs.getBoolean(KEY_V960SHADOWAUTOELEVATION960, false)
+        set(value) = prefs.edit().putBoolean(KEY_V960SHADOWAUTOELEVATION960, value).apply()
+
+    var v960shapeAutoMorph960: Boolean
+        get() = prefs.getBoolean(KEY_V960SHAPEAUTOMORPH960, false)
+        set(value) = prefs.edit().putBoolean(KEY_V960SHAPEAUTOMORPH960, value).apply()
+
+    var v960shareAutoClipboard960: Boolean
+        get() = prefs.getBoolean(KEY_V960SHAREAUTOCLIPBOARD960, false)
+        set(value) = prefs.edit().putBoolean(KEY_V960SHAREAUTOCLIPBOARD960, value).apply()
+
+    var v960sharpAutoContrast960: Boolean
+        get() = prefs.getBoolean(KEY_V960SHARPAUTOCONTRAST960, false)
+        set(value) = prefs.edit().putBoolean(KEY_V960SHARPAUTOCONTRAST960, value).apply()
+
+    var v960shiftAutoTimestamp960: Boolean
+        get() = prefs.getBoolean(KEY_V960SHIFTAUTOTIMESTAMP960, false)
+        set(value) = prefs.edit().putBoolean(KEY_V960SHIFTAUTOTIMESTAMP960, value).apply()
+
+    var v960showAutoAnimation960: Boolean
+        get() = prefs.getBoolean(KEY_V960SHOWAUTOANIMATION960, false)
+        set(value) = prefs.edit().putBoolean(KEY_V960SHOWAUTOANIMATION960, value).apply()
+
+    var v960shrinkAutoCollapse960: Boolean
+        get() = prefs.getBoolean(KEY_V960SHRINKAUTOCOLLAPSE960, false)
+        set(value) = prefs.edit().putBoolean(KEY_V960SHRINKAUTOCOLLAPSE960, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -80430,5 +81030,155 @@ class AppPrefs(context: Context) {
         const val KEY_V950SELECTAUTOMULTI950 = "v950selectAutoMulti950" // v950 Select Auto Multi950
         const val KEY_V950SENDAUTOBATCH950 = "v950sendAutoBatch950" // v950 Send Auto Batch950
         const val KEY_V950SENSORAUTOGYRO950 = "v950sensorAutoGyro950" // v950 Sensor Auto Gyro950
+        const val KEY_V951SEQUENCEAUTOORDER951 = "v951sequenceAutoOrder951" // v951 Sequence Auto Order951
+        const val KEY_V951SERIALAUTOPORT951 = "v951serialAutoPort951" // v951 Serial Auto Port951
+        const val KEY_V951SERVERAUTOLOAD951 = "v951serverAutoLoad951" // v951 Server Auto Load951
+        const val KEY_V951SERVICEAUTOBIND951 = "v951serviceAutoBind951" // v951 Service Auto Bind951
+        const val KEY_V951SESSIONAUTORESTORE951 = "v951sessionAutoRestore951" // v951 Session Auto Restore951
+        const val KEY_V951SETAUTODEFAULT951 = "v951setAutoDefault951" // v951 Set Auto Default951
+        const val KEY_V951SETTINGAUTOEXPORT951 = "v951settingAutoExport951" // v951 Setting Auto Export951
+        const val KEY_V951SETUPAUTOWIZARD951 = "v951setupAutoWizard951" // v951 Setup Auto Wizard951
+        const val KEY_V951SHADOWAUTOELEVATION951 = "v951shadowAutoElevation951" // v951 Shadow Auto Elevation951
+        const val KEY_V951SHAPEAUTOMORPH951 = "v951shapeAutoMorph951" // v951 Shape Auto Morph951
+        const val KEY_V951SHAREAUTOCLIPBOARD951 = "v951shareAutoClipboard951" // v951 Share Auto Clipboard951
+        const val KEY_V951SHARPAUTOCONTRAST951 = "v951sharpAutoContrast951" // v951 Sharp Auto Contrast951
+        const val KEY_V951SHIFTAUTOTIMESTAMP951 = "v951shiftAutoTimestamp951" // v951 Shift Auto Timestamp951
+        const val KEY_V951SHOWAUTOANIMATION951 = "v951showAutoAnimation951" // v951 Show Auto Animation951
+        const val KEY_V951SHRINKAUTOCOLLAPSE951 = "v951shrinkAutoCollapse951" // v951 Shrink Auto Collapse951
+        const val KEY_V952SEQUENCEAUTOORDER952 = "v952sequenceAutoOrder952" // v952 Sequence Auto Order952
+        const val KEY_V952SERIALAUTOPORT952 = "v952serialAutoPort952" // v952 Serial Auto Port952
+        const val KEY_V952SERVERAUTOLOAD952 = "v952serverAutoLoad952" // v952 Server Auto Load952
+        const val KEY_V952SERVICEAUTOBIND952 = "v952serviceAutoBind952" // v952 Service Auto Bind952
+        const val KEY_V952SESSIONAUTORESTORE952 = "v952sessionAutoRestore952" // v952 Session Auto Restore952
+        const val KEY_V952SETAUTODEFAULT952 = "v952setAutoDefault952" // v952 Set Auto Default952
+        const val KEY_V952SETTINGAUTOEXPORT952 = "v952settingAutoExport952" // v952 Setting Auto Export952
+        const val KEY_V952SETUPAUTOWIZARD952 = "v952setupAutoWizard952" // v952 Setup Auto Wizard952
+        const val KEY_V952SHADOWAUTOELEVATION952 = "v952shadowAutoElevation952" // v952 Shadow Auto Elevation952
+        const val KEY_V952SHAPEAUTOMORPH952 = "v952shapeAutoMorph952" // v952 Shape Auto Morph952
+        const val KEY_V952SHAREAUTOCLIPBOARD952 = "v952shareAutoClipboard952" // v952 Share Auto Clipboard952
+        const val KEY_V952SHARPAUTOCONTRAST952 = "v952sharpAutoContrast952" // v952 Sharp Auto Contrast952
+        const val KEY_V952SHIFTAUTOTIMESTAMP952 = "v952shiftAutoTimestamp952" // v952 Shift Auto Timestamp952
+        const val KEY_V952SHOWAUTOANIMATION952 = "v952showAutoAnimation952" // v952 Show Auto Animation952
+        const val KEY_V952SHRINKAUTOCOLLAPSE952 = "v952shrinkAutoCollapse952" // v952 Shrink Auto Collapse952
+        const val KEY_V953SEQUENCEAUTOORDER953 = "v953sequenceAutoOrder953" // v953 Sequence Auto Order953
+        const val KEY_V953SERIALAUTOPORT953 = "v953serialAutoPort953" // v953 Serial Auto Port953
+        const val KEY_V953SERVERAUTOLOAD953 = "v953serverAutoLoad953" // v953 Server Auto Load953
+        const val KEY_V953SERVICEAUTOBIND953 = "v953serviceAutoBind953" // v953 Service Auto Bind953
+        const val KEY_V953SESSIONAUTORESTORE953 = "v953sessionAutoRestore953" // v953 Session Auto Restore953
+        const val KEY_V953SETAUTODEFAULT953 = "v953setAutoDefault953" // v953 Set Auto Default953
+        const val KEY_V953SETTINGAUTOEXPORT953 = "v953settingAutoExport953" // v953 Setting Auto Export953
+        const val KEY_V953SETUPAUTOWIZARD953 = "v953setupAutoWizard953" // v953 Setup Auto Wizard953
+        const val KEY_V953SHADOWAUTOELEVATION953 = "v953shadowAutoElevation953" // v953 Shadow Auto Elevation953
+        const val KEY_V953SHAPEAUTOMORPH953 = "v953shapeAutoMorph953" // v953 Shape Auto Morph953
+        const val KEY_V953SHAREAUTOCLIPBOARD953 = "v953shareAutoClipboard953" // v953 Share Auto Clipboard953
+        const val KEY_V953SHARPAUTOCONTRAST953 = "v953sharpAutoContrast953" // v953 Sharp Auto Contrast953
+        const val KEY_V953SHIFTAUTOTIMESTAMP953 = "v953shiftAutoTimestamp953" // v953 Shift Auto Timestamp953
+        const val KEY_V953SHOWAUTOANIMATION953 = "v953showAutoAnimation953" // v953 Show Auto Animation953
+        const val KEY_V953SHRINKAUTOCOLLAPSE953 = "v953shrinkAutoCollapse953" // v953 Shrink Auto Collapse953
+        const val KEY_V954SEQUENCEAUTOORDER954 = "v954sequenceAutoOrder954" // v954 Sequence Auto Order954
+        const val KEY_V954SERIALAUTOPORT954 = "v954serialAutoPort954" // v954 Serial Auto Port954
+        const val KEY_V954SERVERAUTOLOAD954 = "v954serverAutoLoad954" // v954 Server Auto Load954
+        const val KEY_V954SERVICEAUTOBIND954 = "v954serviceAutoBind954" // v954 Service Auto Bind954
+        const val KEY_V954SESSIONAUTORESTORE954 = "v954sessionAutoRestore954" // v954 Session Auto Restore954
+        const val KEY_V954SETAUTODEFAULT954 = "v954setAutoDefault954" // v954 Set Auto Default954
+        const val KEY_V954SETTINGAUTOEXPORT954 = "v954settingAutoExport954" // v954 Setting Auto Export954
+        const val KEY_V954SETUPAUTOWIZARD954 = "v954setupAutoWizard954" // v954 Setup Auto Wizard954
+        const val KEY_V954SHADOWAUTOELEVATION954 = "v954shadowAutoElevation954" // v954 Shadow Auto Elevation954
+        const val KEY_V954SHAPEAUTOMORPH954 = "v954shapeAutoMorph954" // v954 Shape Auto Morph954
+        const val KEY_V954SHAREAUTOCLIPBOARD954 = "v954shareAutoClipboard954" // v954 Share Auto Clipboard954
+        const val KEY_V954SHARPAUTOCONTRAST954 = "v954sharpAutoContrast954" // v954 Sharp Auto Contrast954
+        const val KEY_V954SHIFTAUTOTIMESTAMP954 = "v954shiftAutoTimestamp954" // v954 Shift Auto Timestamp954
+        const val KEY_V954SHOWAUTOANIMATION954 = "v954showAutoAnimation954" // v954 Show Auto Animation954
+        const val KEY_V954SHRINKAUTOCOLLAPSE954 = "v954shrinkAutoCollapse954" // v954 Shrink Auto Collapse954
+        const val KEY_V955SEQUENCEAUTOORDER955 = "v955sequenceAutoOrder955" // v955 Sequence Auto Order955
+        const val KEY_V955SERIALAUTOPORT955 = "v955serialAutoPort955" // v955 Serial Auto Port955
+        const val KEY_V955SERVERAUTOLOAD955 = "v955serverAutoLoad955" // v955 Server Auto Load955
+        const val KEY_V955SERVICEAUTOBIND955 = "v955serviceAutoBind955" // v955 Service Auto Bind955
+        const val KEY_V955SESSIONAUTORESTORE955 = "v955sessionAutoRestore955" // v955 Session Auto Restore955
+        const val KEY_V955SETAUTODEFAULT955 = "v955setAutoDefault955" // v955 Set Auto Default955
+        const val KEY_V955SETTINGAUTOEXPORT955 = "v955settingAutoExport955" // v955 Setting Auto Export955
+        const val KEY_V955SETUPAUTOWIZARD955 = "v955setupAutoWizard955" // v955 Setup Auto Wizard955
+        const val KEY_V955SHADOWAUTOELEVATION955 = "v955shadowAutoElevation955" // v955 Shadow Auto Elevation955
+        const val KEY_V955SHAPEAUTOMORPH955 = "v955shapeAutoMorph955" // v955 Shape Auto Morph955
+        const val KEY_V955SHAREAUTOCLIPBOARD955 = "v955shareAutoClipboard955" // v955 Share Auto Clipboard955
+        const val KEY_V955SHARPAUTOCONTRAST955 = "v955sharpAutoContrast955" // v955 Sharp Auto Contrast955
+        const val KEY_V955SHIFTAUTOTIMESTAMP955 = "v955shiftAutoTimestamp955" // v955 Shift Auto Timestamp955
+        const val KEY_V955SHOWAUTOANIMATION955 = "v955showAutoAnimation955" // v955 Show Auto Animation955
+        const val KEY_V955SHRINKAUTOCOLLAPSE955 = "v955shrinkAutoCollapse955" // v955 Shrink Auto Collapse955
+        const val KEY_V956SEQUENCEAUTOORDER956 = "v956sequenceAutoOrder956" // v956 Sequence Auto Order956
+        const val KEY_V956SERIALAUTOPORT956 = "v956serialAutoPort956" // v956 Serial Auto Port956
+        const val KEY_V956SERVERAUTOLOAD956 = "v956serverAutoLoad956" // v956 Server Auto Load956
+        const val KEY_V956SERVICEAUTOBIND956 = "v956serviceAutoBind956" // v956 Service Auto Bind956
+        const val KEY_V956SESSIONAUTORESTORE956 = "v956sessionAutoRestore956" // v956 Session Auto Restore956
+        const val KEY_V956SETAUTODEFAULT956 = "v956setAutoDefault956" // v956 Set Auto Default956
+        const val KEY_V956SETTINGAUTOEXPORT956 = "v956settingAutoExport956" // v956 Setting Auto Export956
+        const val KEY_V956SETUPAUTOWIZARD956 = "v956setupAutoWizard956" // v956 Setup Auto Wizard956
+        const val KEY_V956SHADOWAUTOELEVATION956 = "v956shadowAutoElevation956" // v956 Shadow Auto Elevation956
+        const val KEY_V956SHAPEAUTOMORPH956 = "v956shapeAutoMorph956" // v956 Shape Auto Morph956
+        const val KEY_V956SHAREAUTOCLIPBOARD956 = "v956shareAutoClipboard956" // v956 Share Auto Clipboard956
+        const val KEY_V956SHARPAUTOCONTRAST956 = "v956sharpAutoContrast956" // v956 Sharp Auto Contrast956
+        const val KEY_V956SHIFTAUTOTIMESTAMP956 = "v956shiftAutoTimestamp956" // v956 Shift Auto Timestamp956
+        const val KEY_V956SHOWAUTOANIMATION956 = "v956showAutoAnimation956" // v956 Show Auto Animation956
+        const val KEY_V956SHRINKAUTOCOLLAPSE956 = "v956shrinkAutoCollapse956" // v956 Shrink Auto Collapse956
+        const val KEY_V957SEQUENCEAUTOORDER957 = "v957sequenceAutoOrder957" // v957 Sequence Auto Order957
+        const val KEY_V957SERIALAUTOPORT957 = "v957serialAutoPort957" // v957 Serial Auto Port957
+        const val KEY_V957SERVERAUTOLOAD957 = "v957serverAutoLoad957" // v957 Server Auto Load957
+        const val KEY_V957SERVICEAUTOBIND957 = "v957serviceAutoBind957" // v957 Service Auto Bind957
+        const val KEY_V957SESSIONAUTORESTORE957 = "v957sessionAutoRestore957" // v957 Session Auto Restore957
+        const val KEY_V957SETAUTODEFAULT957 = "v957setAutoDefault957" // v957 Set Auto Default957
+        const val KEY_V957SETTINGAUTOEXPORT957 = "v957settingAutoExport957" // v957 Setting Auto Export957
+        const val KEY_V957SETUPAUTOWIZARD957 = "v957setupAutoWizard957" // v957 Setup Auto Wizard957
+        const val KEY_V957SHADOWAUTOELEVATION957 = "v957shadowAutoElevation957" // v957 Shadow Auto Elevation957
+        const val KEY_V957SHAPEAUTOMORPH957 = "v957shapeAutoMorph957" // v957 Shape Auto Morph957
+        const val KEY_V957SHAREAUTOCLIPBOARD957 = "v957shareAutoClipboard957" // v957 Share Auto Clipboard957
+        const val KEY_V957SHARPAUTOCONTRAST957 = "v957sharpAutoContrast957" // v957 Sharp Auto Contrast957
+        const val KEY_V957SHIFTAUTOTIMESTAMP957 = "v957shiftAutoTimestamp957" // v957 Shift Auto Timestamp957
+        const val KEY_V957SHOWAUTOANIMATION957 = "v957showAutoAnimation957" // v957 Show Auto Animation957
+        const val KEY_V957SHRINKAUTOCOLLAPSE957 = "v957shrinkAutoCollapse957" // v957 Shrink Auto Collapse957
+        const val KEY_V958SEQUENCEAUTOORDER958 = "v958sequenceAutoOrder958" // v958 Sequence Auto Order958
+        const val KEY_V958SERIALAUTOPORT958 = "v958serialAutoPort958" // v958 Serial Auto Port958
+        const val KEY_V958SERVERAUTOLOAD958 = "v958serverAutoLoad958" // v958 Server Auto Load958
+        const val KEY_V958SERVICEAUTOBIND958 = "v958serviceAutoBind958" // v958 Service Auto Bind958
+        const val KEY_V958SESSIONAUTORESTORE958 = "v958sessionAutoRestore958" // v958 Session Auto Restore958
+        const val KEY_V958SETAUTODEFAULT958 = "v958setAutoDefault958" // v958 Set Auto Default958
+        const val KEY_V958SETTINGAUTOEXPORT958 = "v958settingAutoExport958" // v958 Setting Auto Export958
+        const val KEY_V958SETUPAUTOWIZARD958 = "v958setupAutoWizard958" // v958 Setup Auto Wizard958
+        const val KEY_V958SHADOWAUTOELEVATION958 = "v958shadowAutoElevation958" // v958 Shadow Auto Elevation958
+        const val KEY_V958SHAPEAUTOMORPH958 = "v958shapeAutoMorph958" // v958 Shape Auto Morph958
+        const val KEY_V958SHAREAUTOCLIPBOARD958 = "v958shareAutoClipboard958" // v958 Share Auto Clipboard958
+        const val KEY_V958SHARPAUTOCONTRAST958 = "v958sharpAutoContrast958" // v958 Sharp Auto Contrast958
+        const val KEY_V958SHIFTAUTOTIMESTAMP958 = "v958shiftAutoTimestamp958" // v958 Shift Auto Timestamp958
+        const val KEY_V958SHOWAUTOANIMATION958 = "v958showAutoAnimation958" // v958 Show Auto Animation958
+        const val KEY_V958SHRINKAUTOCOLLAPSE958 = "v958shrinkAutoCollapse958" // v958 Shrink Auto Collapse958
+        const val KEY_V959SEQUENCEAUTOORDER959 = "v959sequenceAutoOrder959" // v959 Sequence Auto Order959
+        const val KEY_V959SERIALAUTOPORT959 = "v959serialAutoPort959" // v959 Serial Auto Port959
+        const val KEY_V959SERVERAUTOLOAD959 = "v959serverAutoLoad959" // v959 Server Auto Load959
+        const val KEY_V959SERVICEAUTOBIND959 = "v959serviceAutoBind959" // v959 Service Auto Bind959
+        const val KEY_V959SESSIONAUTORESTORE959 = "v959sessionAutoRestore959" // v959 Session Auto Restore959
+        const val KEY_V959SETAUTODEFAULT959 = "v959setAutoDefault959" // v959 Set Auto Default959
+        const val KEY_V959SETTINGAUTOEXPORT959 = "v959settingAutoExport959" // v959 Setting Auto Export959
+        const val KEY_V959SETUPAUTOWIZARD959 = "v959setupAutoWizard959" // v959 Setup Auto Wizard959
+        const val KEY_V959SHADOWAUTOELEVATION959 = "v959shadowAutoElevation959" // v959 Shadow Auto Elevation959
+        const val KEY_V959SHAPEAUTOMORPH959 = "v959shapeAutoMorph959" // v959 Shape Auto Morph959
+        const val KEY_V959SHAREAUTOCLIPBOARD959 = "v959shareAutoClipboard959" // v959 Share Auto Clipboard959
+        const val KEY_V959SHARPAUTOCONTRAST959 = "v959sharpAutoContrast959" // v959 Sharp Auto Contrast959
+        const val KEY_V959SHIFTAUTOTIMESTAMP959 = "v959shiftAutoTimestamp959" // v959 Shift Auto Timestamp959
+        const val KEY_V959SHOWAUTOANIMATION959 = "v959showAutoAnimation959" // v959 Show Auto Animation959
+        const val KEY_V959SHRINKAUTOCOLLAPSE959 = "v959shrinkAutoCollapse959" // v959 Shrink Auto Collapse959
+        const val KEY_V960SEQUENCEAUTOORDER960 = "v960sequenceAutoOrder960" // v960 Sequence Auto Order960
+        const val KEY_V960SERIALAUTOPORT960 = "v960serialAutoPort960" // v960 Serial Auto Port960
+        const val KEY_V960SERVERAUTOLOAD960 = "v960serverAutoLoad960" // v960 Server Auto Load960
+        const val KEY_V960SERVICEAUTOBIND960 = "v960serviceAutoBind960" // v960 Service Auto Bind960
+        const val KEY_V960SESSIONAUTORESTORE960 = "v960sessionAutoRestore960" // v960 Session Auto Restore960
+        const val KEY_V960SETAUTODEFAULT960 = "v960setAutoDefault960" // v960 Set Auto Default960
+        const val KEY_V960SETTINGAUTOEXPORT960 = "v960settingAutoExport960" // v960 Setting Auto Export960
+        const val KEY_V960SETUPAUTOWIZARD960 = "v960setupAutoWizard960" // v960 Setup Auto Wizard960
+        const val KEY_V960SHADOWAUTOELEVATION960 = "v960shadowAutoElevation960" // v960 Shadow Auto Elevation960
+        const val KEY_V960SHAPEAUTOMORPH960 = "v960shapeAutoMorph960" // v960 Shape Auto Morph960
+        const val KEY_V960SHAREAUTOCLIPBOARD960 = "v960shareAutoClipboard960" // v960 Share Auto Clipboard960
+        const val KEY_V960SHARPAUTOCONTRAST960 = "v960sharpAutoContrast960" // v960 Sharp Auto Contrast960
+        const val KEY_V960SHIFTAUTOTIMESTAMP960 = "v960shiftAutoTimestamp960" // v960 Shift Auto Timestamp960
+        const val KEY_V960SHOWAUTOANIMATION960 = "v960showAutoAnimation960" // v960 Show Auto Animation960
+        const val KEY_V960SHRINKAUTOCOLLAPSE960 = "v960shrinkAutoCollapse960" // v960 Shrink Auto Collapse960
     }
 }
