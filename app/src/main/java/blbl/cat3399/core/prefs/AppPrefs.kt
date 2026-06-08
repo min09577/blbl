@@ -64248,6 +64248,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V960SHRINKAUTOCOLLAPSE960, false)
         set(value) = prefs.edit().putBoolean(KEY_V960SHRINKAUTOCOLLAPSE960, value).apply()
 
+    var v961sideAutoDrawer961: Boolean
+        get() = prefs.getBoolean(KEY_V961SIDEAUTODRAWER961, false)
+        set(value) = prefs.edit().putBoolean(KEY_V961SIDEAUTODRAWER961, value).apply()
+
+    var v961signAutoVerify961: Boolean
+        get() = prefs.getBoolean(KEY_V961SIGNAUTOVERIFY961, false)
+        set(value) = prefs.edit().putBoolean(KEY_V961SIGNAUTOVERIFY961, value).apply()
+
+    var v961signalAutoBoost961: Boolean
+        get() = prefs.getBoolean(KEY_V961SIGNALAUTOBOOST961, false)
+        set(value) = prefs.edit().putBoolean(KEY_V961SIGNALAUTOBOOST961, value).apply()
+
+    var v961silenceAutoMute961: Boolean
+        get() = prefs.getBoolean(KEY_V961SILENCEAUTOMUTE961, false)
+        set(value) = prefs.edit().putBoolean(KEY_V961SILENCEAUTOMUTE961, value).apply()
+
+    var v961simpleAutoView961: Boolean
+        get() = prefs.getBoolean(KEY_V961SIMPLEAUTOVIEW961, false)
+        set(value) = prefs.edit().putBoolean(KEY_V961SIMPLEAUTOVIEW961, value).apply()
+
+    var v961singleAutoInstance961: Boolean
+        get() = prefs.getBoolean(KEY_V961SINGLEAUTOINSTANCE961, false)
+        set(value) = prefs.edit().putBoolean(KEY_V961SINGLEAUTOINSTANCE961, value).apply()
+
+    var v961siteAutoMap961: Boolean
+        get() = prefs.getBoolean(KEY_V961SITEAUTOMAP961, false)
+        set(value) = prefs.edit().putBoolean(KEY_V961SITEAUTOMAP961, value).apply()
+
+    var v961sizeAutoOptimize961: Boolean
+        get() = prefs.getBoolean(KEY_V961SIZEAUTOOPTIMIZE961, false)
+        set(value) = prefs.edit().putBoolean(KEY_V961SIZEAUTOOPTIMIZE961, value).apply()
+
+    var v961skipAutoIntro961: Boolean
+        get() = prefs.getBoolean(KEY_V961SKIPAUTOINTRO961, false)
+        set(value) = prefs.edit().putBoolean(KEY_V961SKIPAUTOINTRO961, value).apply()
+
+    var v961sleepAutoTimer961: Boolean
+        get() = prefs.getBoolean(KEY_V961SLEEPAUTOTIMER961, false)
+        set(value) = prefs.edit().putBoolean(KEY_V961SLEEPAUTOTIMER961, value).apply()
+
+    var v961sliceAutoArray961: Boolean
+        get() = prefs.getBoolean(KEY_V961SLICEAUTOARRAY961, false)
+        set(value) = prefs.edit().putBoolean(KEY_V961SLICEAUTOARRAY961, value).apply()
+
+    var v961slideAutoPager961: Boolean
+        get() = prefs.getBoolean(KEY_V961SLIDEAUTOPAGER961, false)
+        set(value) = prefs.edit().putBoolean(KEY_V961SLIDEAUTOPAGER961, value).apply()
+
+    var v961slowAutoMotion961: Boolean
+        get() = prefs.getBoolean(KEY_V961SLOWAUTOMOTION961, false)
+        set(value) = prefs.edit().putBoolean(KEY_V961SLOWAUTOMOTION961, value).apply()
+
+    var v961smallAutoWindow961: Boolean
+        get() = prefs.getBoolean(KEY_V961SMALLAUTOWINDOW961, false)
+        set(value) = prefs.edit().putBoolean(KEY_V961SMALLAUTOWINDOW961, value).apply()
+
+    var v961smartAutoSuggest961: Boolean
+        get() = prefs.getBoolean(KEY_V961SMARTAUTOSUGGEST961, false)
+        set(value) = prefs.edit().putBoolean(KEY_V961SMARTAUTOSUGGEST961, value).apply()
+
+    var v962sideAutoDrawer962: Boolean
+        get() = prefs.getBoolean(KEY_V962SIDEAUTODRAWER962, false)
+        set(value) = prefs.edit().putBoolean(KEY_V962SIDEAUTODRAWER962, value).apply()
+
+    var v962signAutoVerify962: Boolean
+        get() = prefs.getBoolean(KEY_V962SIGNAUTOVERIFY962, false)
+        set(value) = prefs.edit().putBoolean(KEY_V962SIGNAUTOVERIFY962, value).apply()
+
+    var v962signalAutoBoost962: Boolean
+        get() = prefs.getBoolean(KEY_V962SIGNALAUTOBOOST962, false)
+        set(value) = prefs.edit().putBoolean(KEY_V962SIGNALAUTOBOOST962, value).apply()
+
+    var v962silenceAutoMute962: Boolean
+        get() = prefs.getBoolean(KEY_V962SILENCEAUTOMUTE962, false)
+        set(value) = prefs.edit().putBoolean(KEY_V962SILENCEAUTOMUTE962, value).apply()
+
+    var v962simpleAutoView962: Boolean
+        get() = prefs.getBoolean(KEY_V962SIMPLEAUTOVIEW962, false)
+        set(value) = prefs.edit().putBoolean(KEY_V962SIMPLEAUTOVIEW962, value).apply()
+
+    var v962singleAutoInstance962: Boolean
+        get() = prefs.getBoolean(KEY_V962SINGLEAUTOINSTANCE962, false)
+        set(value) = prefs.edit().putBoolean(KEY_V962SINGLEAUTOINSTANCE962, value).apply()
+
+    var v962siteAutoMap962: Boolean
+        get() = prefs.getBoolean(KEY_V962SITEAUTOMAP962, false)
+        set(value) = prefs.edit().putBoolean(KEY_V962SITEAUTOMAP962, value).apply()
+
+    var v962sizeAutoOptimize962: Boolean
+        get() = prefs.getBoolean(KEY_V962SIZEAUTOOPTIMIZE962, false)
+        set(value) = prefs.edit().putBoolean(KEY_V962SIZEAUTOOPTIMIZE962, value).apply()
+
+    var v962skipAutoIntro962: Boolean
+        get() = prefs.getBoolean(KEY_V962SKIPAUTOINTRO962, false)
+        set(value) = prefs.edit().putBoolean(KEY_V962SKIPAUTOINTRO962, value).apply()
+
+    var v962sleepAutoTimer962: Boolean
+        get() = prefs.getBoolean(KEY_V962SLEEPAUTOTIMER962, false)
+        set(value) = prefs.edit().putBoolean(KEY_V962SLEEPAUTOTIMER962, value).apply()
+
+    var v962sliceAutoArray962: Boolean
+        get() = prefs.getBoolean(KEY_V962SLICEAUTOARRAY962, false)
+        set(value) = prefs.edit().putBoolean(KEY_V962SLICEAUTOARRAY962, value).apply()
+
+    var v962slideAutoPager962: Boolean
+        get() = prefs.getBoolean(KEY_V962SLIDEAUTOPAGER962, false)
+        set(value) = prefs.edit().putBoolean(KEY_V962SLIDEAUTOPAGER962, value).apply()
+
+    var v962slowAutoMotion962: Boolean
+        get() = prefs.getBoolean(KEY_V962SLOWAUTOMOTION962, false)
+        set(value) = prefs.edit().putBoolean(KEY_V962SLOWAUTOMOTION962, value).apply()
+
+    var v962smallAutoWindow962: Boolean
+        get() = prefs.getBoolean(KEY_V962SMALLAUTOWINDOW962, false)
+        set(value) = prefs.edit().putBoolean(KEY_V962SMALLAUTOWINDOW962, value).apply()
+
+    var v962smartAutoSuggest962: Boolean
+        get() = prefs.getBoolean(KEY_V962SMARTAUTOSUGGEST962, false)
+        set(value) = prefs.edit().putBoolean(KEY_V962SMARTAUTOSUGGEST962, value).apply()
+
+    var v963sideAutoDrawer963: Boolean
+        get() = prefs.getBoolean(KEY_V963SIDEAUTODRAWER963, false)
+        set(value) = prefs.edit().putBoolean(KEY_V963SIDEAUTODRAWER963, value).apply()
+
+    var v963signAutoVerify963: Boolean
+        get() = prefs.getBoolean(KEY_V963SIGNAUTOVERIFY963, false)
+        set(value) = prefs.edit().putBoolean(KEY_V963SIGNAUTOVERIFY963, value).apply()
+
+    var v963signalAutoBoost963: Boolean
+        get() = prefs.getBoolean(KEY_V963SIGNALAUTOBOOST963, false)
+        set(value) = prefs.edit().putBoolean(KEY_V963SIGNALAUTOBOOST963, value).apply()
+
+    var v963silenceAutoMute963: Boolean
+        get() = prefs.getBoolean(KEY_V963SILENCEAUTOMUTE963, false)
+        set(value) = prefs.edit().putBoolean(KEY_V963SILENCEAUTOMUTE963, value).apply()
+
+    var v963simpleAutoView963: Boolean
+        get() = prefs.getBoolean(KEY_V963SIMPLEAUTOVIEW963, false)
+        set(value) = prefs.edit().putBoolean(KEY_V963SIMPLEAUTOVIEW963, value).apply()
+
+    var v963singleAutoInstance963: Boolean
+        get() = prefs.getBoolean(KEY_V963SINGLEAUTOINSTANCE963, false)
+        set(value) = prefs.edit().putBoolean(KEY_V963SINGLEAUTOINSTANCE963, value).apply()
+
+    var v963siteAutoMap963: Boolean
+        get() = prefs.getBoolean(KEY_V963SITEAUTOMAP963, false)
+        set(value) = prefs.edit().putBoolean(KEY_V963SITEAUTOMAP963, value).apply()
+
+    var v963sizeAutoOptimize963: Boolean
+        get() = prefs.getBoolean(KEY_V963SIZEAUTOOPTIMIZE963, false)
+        set(value) = prefs.edit().putBoolean(KEY_V963SIZEAUTOOPTIMIZE963, value).apply()
+
+    var v963skipAutoIntro963: Boolean
+        get() = prefs.getBoolean(KEY_V963SKIPAUTOINTRO963, false)
+        set(value) = prefs.edit().putBoolean(KEY_V963SKIPAUTOINTRO963, value).apply()
+
+    var v963sleepAutoTimer963: Boolean
+        get() = prefs.getBoolean(KEY_V963SLEEPAUTOTIMER963, false)
+        set(value) = prefs.edit().putBoolean(KEY_V963SLEEPAUTOTIMER963, value).apply()
+
+    var v963sliceAutoArray963: Boolean
+        get() = prefs.getBoolean(KEY_V963SLICEAUTOARRAY963, false)
+        set(value) = prefs.edit().putBoolean(KEY_V963SLICEAUTOARRAY963, value).apply()
+
+    var v963slideAutoPager963: Boolean
+        get() = prefs.getBoolean(KEY_V963SLIDEAUTOPAGER963, false)
+        set(value) = prefs.edit().putBoolean(KEY_V963SLIDEAUTOPAGER963, value).apply()
+
+    var v963slowAutoMotion963: Boolean
+        get() = prefs.getBoolean(KEY_V963SLOWAUTOMOTION963, false)
+        set(value) = prefs.edit().putBoolean(KEY_V963SLOWAUTOMOTION963, value).apply()
+
+    var v963smallAutoWindow963: Boolean
+        get() = prefs.getBoolean(KEY_V963SMALLAUTOWINDOW963, false)
+        set(value) = prefs.edit().putBoolean(KEY_V963SMALLAUTOWINDOW963, value).apply()
+
+    var v963smartAutoSuggest963: Boolean
+        get() = prefs.getBoolean(KEY_V963SMARTAUTOSUGGEST963, false)
+        set(value) = prefs.edit().putBoolean(KEY_V963SMARTAUTOSUGGEST963, value).apply()
+
+    var v964sideAutoDrawer964: Boolean
+        get() = prefs.getBoolean(KEY_V964SIDEAUTODRAWER964, false)
+        set(value) = prefs.edit().putBoolean(KEY_V964SIDEAUTODRAWER964, value).apply()
+
+    var v964signAutoVerify964: Boolean
+        get() = prefs.getBoolean(KEY_V964SIGNAUTOVERIFY964, false)
+        set(value) = prefs.edit().putBoolean(KEY_V964SIGNAUTOVERIFY964, value).apply()
+
+    var v964signalAutoBoost964: Boolean
+        get() = prefs.getBoolean(KEY_V964SIGNALAUTOBOOST964, false)
+        set(value) = prefs.edit().putBoolean(KEY_V964SIGNALAUTOBOOST964, value).apply()
+
+    var v964silenceAutoMute964: Boolean
+        get() = prefs.getBoolean(KEY_V964SILENCEAUTOMUTE964, false)
+        set(value) = prefs.edit().putBoolean(KEY_V964SILENCEAUTOMUTE964, value).apply()
+
+    var v964simpleAutoView964: Boolean
+        get() = prefs.getBoolean(KEY_V964SIMPLEAUTOVIEW964, false)
+        set(value) = prefs.edit().putBoolean(KEY_V964SIMPLEAUTOVIEW964, value).apply()
+
+    var v964singleAutoInstance964: Boolean
+        get() = prefs.getBoolean(KEY_V964SINGLEAUTOINSTANCE964, false)
+        set(value) = prefs.edit().putBoolean(KEY_V964SINGLEAUTOINSTANCE964, value).apply()
+
+    var v964siteAutoMap964: Boolean
+        get() = prefs.getBoolean(KEY_V964SITEAUTOMAP964, false)
+        set(value) = prefs.edit().putBoolean(KEY_V964SITEAUTOMAP964, value).apply()
+
+    var v964sizeAutoOptimize964: Boolean
+        get() = prefs.getBoolean(KEY_V964SIZEAUTOOPTIMIZE964, false)
+        set(value) = prefs.edit().putBoolean(KEY_V964SIZEAUTOOPTIMIZE964, value).apply()
+
+    var v964skipAutoIntro964: Boolean
+        get() = prefs.getBoolean(KEY_V964SKIPAUTOINTRO964, false)
+        set(value) = prefs.edit().putBoolean(KEY_V964SKIPAUTOINTRO964, value).apply()
+
+    var v964sleepAutoTimer964: Boolean
+        get() = prefs.getBoolean(KEY_V964SLEEPAUTOTIMER964, false)
+        set(value) = prefs.edit().putBoolean(KEY_V964SLEEPAUTOTIMER964, value).apply()
+
+    var v964sliceAutoArray964: Boolean
+        get() = prefs.getBoolean(KEY_V964SLICEAUTOARRAY964, false)
+        set(value) = prefs.edit().putBoolean(KEY_V964SLICEAUTOARRAY964, value).apply()
+
+    var v964slideAutoPager964: Boolean
+        get() = prefs.getBoolean(KEY_V964SLIDEAUTOPAGER964, false)
+        set(value) = prefs.edit().putBoolean(KEY_V964SLIDEAUTOPAGER964, value).apply()
+
+    var v964slowAutoMotion964: Boolean
+        get() = prefs.getBoolean(KEY_V964SLOWAUTOMOTION964, false)
+        set(value) = prefs.edit().putBoolean(KEY_V964SLOWAUTOMOTION964, value).apply()
+
+    var v964smallAutoWindow964: Boolean
+        get() = prefs.getBoolean(KEY_V964SMALLAUTOWINDOW964, false)
+        set(value) = prefs.edit().putBoolean(KEY_V964SMALLAUTOWINDOW964, value).apply()
+
+    var v964smartAutoSuggest964: Boolean
+        get() = prefs.getBoolean(KEY_V964SMARTAUTOSUGGEST964, false)
+        set(value) = prefs.edit().putBoolean(KEY_V964SMARTAUTOSUGGEST964, value).apply()
+
+    var v965sideAutoDrawer965: Boolean
+        get() = prefs.getBoolean(KEY_V965SIDEAUTODRAWER965, false)
+        set(value) = prefs.edit().putBoolean(KEY_V965SIDEAUTODRAWER965, value).apply()
+
+    var v965signAutoVerify965: Boolean
+        get() = prefs.getBoolean(KEY_V965SIGNAUTOVERIFY965, false)
+        set(value) = prefs.edit().putBoolean(KEY_V965SIGNAUTOVERIFY965, value).apply()
+
+    var v965signalAutoBoost965: Boolean
+        get() = prefs.getBoolean(KEY_V965SIGNALAUTOBOOST965, false)
+        set(value) = prefs.edit().putBoolean(KEY_V965SIGNALAUTOBOOST965, value).apply()
+
+    var v965silenceAutoMute965: Boolean
+        get() = prefs.getBoolean(KEY_V965SILENCEAUTOMUTE965, false)
+        set(value) = prefs.edit().putBoolean(KEY_V965SILENCEAUTOMUTE965, value).apply()
+
+    var v965simpleAutoView965: Boolean
+        get() = prefs.getBoolean(KEY_V965SIMPLEAUTOVIEW965, false)
+        set(value) = prefs.edit().putBoolean(KEY_V965SIMPLEAUTOVIEW965, value).apply()
+
+    var v965singleAutoInstance965: Boolean
+        get() = prefs.getBoolean(KEY_V965SINGLEAUTOINSTANCE965, false)
+        set(value) = prefs.edit().putBoolean(KEY_V965SINGLEAUTOINSTANCE965, value).apply()
+
+    var v965siteAutoMap965: Boolean
+        get() = prefs.getBoolean(KEY_V965SITEAUTOMAP965, false)
+        set(value) = prefs.edit().putBoolean(KEY_V965SITEAUTOMAP965, value).apply()
+
+    var v965sizeAutoOptimize965: Boolean
+        get() = prefs.getBoolean(KEY_V965SIZEAUTOOPTIMIZE965, false)
+        set(value) = prefs.edit().putBoolean(KEY_V965SIZEAUTOOPTIMIZE965, value).apply()
+
+    var v965skipAutoIntro965: Boolean
+        get() = prefs.getBoolean(KEY_V965SKIPAUTOINTRO965, false)
+        set(value) = prefs.edit().putBoolean(KEY_V965SKIPAUTOINTRO965, value).apply()
+
+    var v965sleepAutoTimer965: Boolean
+        get() = prefs.getBoolean(KEY_V965SLEEPAUTOTIMER965, false)
+        set(value) = prefs.edit().putBoolean(KEY_V965SLEEPAUTOTIMER965, value).apply()
+
+    var v965sliceAutoArray965: Boolean
+        get() = prefs.getBoolean(KEY_V965SLICEAUTOARRAY965, false)
+        set(value) = prefs.edit().putBoolean(KEY_V965SLICEAUTOARRAY965, value).apply()
+
+    var v965slideAutoPager965: Boolean
+        get() = prefs.getBoolean(KEY_V965SLIDEAUTOPAGER965, false)
+        set(value) = prefs.edit().putBoolean(KEY_V965SLIDEAUTOPAGER965, value).apply()
+
+    var v965slowAutoMotion965: Boolean
+        get() = prefs.getBoolean(KEY_V965SLOWAUTOMOTION965, false)
+        set(value) = prefs.edit().putBoolean(KEY_V965SLOWAUTOMOTION965, value).apply()
+
+    var v965smallAutoWindow965: Boolean
+        get() = prefs.getBoolean(KEY_V965SMALLAUTOWINDOW965, false)
+        set(value) = prefs.edit().putBoolean(KEY_V965SMALLAUTOWINDOW965, value).apply()
+
+    var v965smartAutoSuggest965: Boolean
+        get() = prefs.getBoolean(KEY_V965SMARTAUTOSUGGEST965, false)
+        set(value) = prefs.edit().putBoolean(KEY_V965SMARTAUTOSUGGEST965, value).apply()
+
+    var v966sideAutoDrawer966: Boolean
+        get() = prefs.getBoolean(KEY_V966SIDEAUTODRAWER966, false)
+        set(value) = prefs.edit().putBoolean(KEY_V966SIDEAUTODRAWER966, value).apply()
+
+    var v966signAutoVerify966: Boolean
+        get() = prefs.getBoolean(KEY_V966SIGNAUTOVERIFY966, false)
+        set(value) = prefs.edit().putBoolean(KEY_V966SIGNAUTOVERIFY966, value).apply()
+
+    var v966signalAutoBoost966: Boolean
+        get() = prefs.getBoolean(KEY_V966SIGNALAUTOBOOST966, false)
+        set(value) = prefs.edit().putBoolean(KEY_V966SIGNALAUTOBOOST966, value).apply()
+
+    var v966silenceAutoMute966: Boolean
+        get() = prefs.getBoolean(KEY_V966SILENCEAUTOMUTE966, false)
+        set(value) = prefs.edit().putBoolean(KEY_V966SILENCEAUTOMUTE966, value).apply()
+
+    var v966simpleAutoView966: Boolean
+        get() = prefs.getBoolean(KEY_V966SIMPLEAUTOVIEW966, false)
+        set(value) = prefs.edit().putBoolean(KEY_V966SIMPLEAUTOVIEW966, value).apply()
+
+    var v966singleAutoInstance966: Boolean
+        get() = prefs.getBoolean(KEY_V966SINGLEAUTOINSTANCE966, false)
+        set(value) = prefs.edit().putBoolean(KEY_V966SINGLEAUTOINSTANCE966, value).apply()
+
+    var v966siteAutoMap966: Boolean
+        get() = prefs.getBoolean(KEY_V966SITEAUTOMAP966, false)
+        set(value) = prefs.edit().putBoolean(KEY_V966SITEAUTOMAP966, value).apply()
+
+    var v966sizeAutoOptimize966: Boolean
+        get() = prefs.getBoolean(KEY_V966SIZEAUTOOPTIMIZE966, false)
+        set(value) = prefs.edit().putBoolean(KEY_V966SIZEAUTOOPTIMIZE966, value).apply()
+
+    var v966skipAutoIntro966: Boolean
+        get() = prefs.getBoolean(KEY_V966SKIPAUTOINTRO966, false)
+        set(value) = prefs.edit().putBoolean(KEY_V966SKIPAUTOINTRO966, value).apply()
+
+    var v966sleepAutoTimer966: Boolean
+        get() = prefs.getBoolean(KEY_V966SLEEPAUTOTIMER966, false)
+        set(value) = prefs.edit().putBoolean(KEY_V966SLEEPAUTOTIMER966, value).apply()
+
+    var v966sliceAutoArray966: Boolean
+        get() = prefs.getBoolean(KEY_V966SLICEAUTOARRAY966, false)
+        set(value) = prefs.edit().putBoolean(KEY_V966SLICEAUTOARRAY966, value).apply()
+
+    var v966slideAutoPager966: Boolean
+        get() = prefs.getBoolean(KEY_V966SLIDEAUTOPAGER966, false)
+        set(value) = prefs.edit().putBoolean(KEY_V966SLIDEAUTOPAGER966, value).apply()
+
+    var v966slowAutoMotion966: Boolean
+        get() = prefs.getBoolean(KEY_V966SLOWAUTOMOTION966, false)
+        set(value) = prefs.edit().putBoolean(KEY_V966SLOWAUTOMOTION966, value).apply()
+
+    var v966smallAutoWindow966: Boolean
+        get() = prefs.getBoolean(KEY_V966SMALLAUTOWINDOW966, false)
+        set(value) = prefs.edit().putBoolean(KEY_V966SMALLAUTOWINDOW966, value).apply()
+
+    var v966smartAutoSuggest966: Boolean
+        get() = prefs.getBoolean(KEY_V966SMARTAUTOSUGGEST966, false)
+        set(value) = prefs.edit().putBoolean(KEY_V966SMARTAUTOSUGGEST966, value).apply()
+
+    var v967sideAutoDrawer967: Boolean
+        get() = prefs.getBoolean(KEY_V967SIDEAUTODRAWER967, false)
+        set(value) = prefs.edit().putBoolean(KEY_V967SIDEAUTODRAWER967, value).apply()
+
+    var v967signAutoVerify967: Boolean
+        get() = prefs.getBoolean(KEY_V967SIGNAUTOVERIFY967, false)
+        set(value) = prefs.edit().putBoolean(KEY_V967SIGNAUTOVERIFY967, value).apply()
+
+    var v967signalAutoBoost967: Boolean
+        get() = prefs.getBoolean(KEY_V967SIGNALAUTOBOOST967, false)
+        set(value) = prefs.edit().putBoolean(KEY_V967SIGNALAUTOBOOST967, value).apply()
+
+    var v967silenceAutoMute967: Boolean
+        get() = prefs.getBoolean(KEY_V967SILENCEAUTOMUTE967, false)
+        set(value) = prefs.edit().putBoolean(KEY_V967SILENCEAUTOMUTE967, value).apply()
+
+    var v967simpleAutoView967: Boolean
+        get() = prefs.getBoolean(KEY_V967SIMPLEAUTOVIEW967, false)
+        set(value) = prefs.edit().putBoolean(KEY_V967SIMPLEAUTOVIEW967, value).apply()
+
+    var v967singleAutoInstance967: Boolean
+        get() = prefs.getBoolean(KEY_V967SINGLEAUTOINSTANCE967, false)
+        set(value) = prefs.edit().putBoolean(KEY_V967SINGLEAUTOINSTANCE967, value).apply()
+
+    var v967siteAutoMap967: Boolean
+        get() = prefs.getBoolean(KEY_V967SITEAUTOMAP967, false)
+        set(value) = prefs.edit().putBoolean(KEY_V967SITEAUTOMAP967, value).apply()
+
+    var v967sizeAutoOptimize967: Boolean
+        get() = prefs.getBoolean(KEY_V967SIZEAUTOOPTIMIZE967, false)
+        set(value) = prefs.edit().putBoolean(KEY_V967SIZEAUTOOPTIMIZE967, value).apply()
+
+    var v967skipAutoIntro967: Boolean
+        get() = prefs.getBoolean(KEY_V967SKIPAUTOINTRO967, false)
+        set(value) = prefs.edit().putBoolean(KEY_V967SKIPAUTOINTRO967, value).apply()
+
+    var v967sleepAutoTimer967: Boolean
+        get() = prefs.getBoolean(KEY_V967SLEEPAUTOTIMER967, false)
+        set(value) = prefs.edit().putBoolean(KEY_V967SLEEPAUTOTIMER967, value).apply()
+
+    var v967sliceAutoArray967: Boolean
+        get() = prefs.getBoolean(KEY_V967SLICEAUTOARRAY967, false)
+        set(value) = prefs.edit().putBoolean(KEY_V967SLICEAUTOARRAY967, value).apply()
+
+    var v967slideAutoPager967: Boolean
+        get() = prefs.getBoolean(KEY_V967SLIDEAUTOPAGER967, false)
+        set(value) = prefs.edit().putBoolean(KEY_V967SLIDEAUTOPAGER967, value).apply()
+
+    var v967slowAutoMotion967: Boolean
+        get() = prefs.getBoolean(KEY_V967SLOWAUTOMOTION967, false)
+        set(value) = prefs.edit().putBoolean(KEY_V967SLOWAUTOMOTION967, value).apply()
+
+    var v967smallAutoWindow967: Boolean
+        get() = prefs.getBoolean(KEY_V967SMALLAUTOWINDOW967, false)
+        set(value) = prefs.edit().putBoolean(KEY_V967SMALLAUTOWINDOW967, value).apply()
+
+    var v967smartAutoSuggest967: Boolean
+        get() = prefs.getBoolean(KEY_V967SMARTAUTOSUGGEST967, false)
+        set(value) = prefs.edit().putBoolean(KEY_V967SMARTAUTOSUGGEST967, value).apply()
+
+    var v968sideAutoDrawer968: Boolean
+        get() = prefs.getBoolean(KEY_V968SIDEAUTODRAWER968, false)
+        set(value) = prefs.edit().putBoolean(KEY_V968SIDEAUTODRAWER968, value).apply()
+
+    var v968signAutoVerify968: Boolean
+        get() = prefs.getBoolean(KEY_V968SIGNAUTOVERIFY968, false)
+        set(value) = prefs.edit().putBoolean(KEY_V968SIGNAUTOVERIFY968, value).apply()
+
+    var v968signalAutoBoost968: Boolean
+        get() = prefs.getBoolean(KEY_V968SIGNALAUTOBOOST968, false)
+        set(value) = prefs.edit().putBoolean(KEY_V968SIGNALAUTOBOOST968, value).apply()
+
+    var v968silenceAutoMute968: Boolean
+        get() = prefs.getBoolean(KEY_V968SILENCEAUTOMUTE968, false)
+        set(value) = prefs.edit().putBoolean(KEY_V968SILENCEAUTOMUTE968, value).apply()
+
+    var v968simpleAutoView968: Boolean
+        get() = prefs.getBoolean(KEY_V968SIMPLEAUTOVIEW968, false)
+        set(value) = prefs.edit().putBoolean(KEY_V968SIMPLEAUTOVIEW968, value).apply()
+
+    var v968singleAutoInstance968: Boolean
+        get() = prefs.getBoolean(KEY_V968SINGLEAUTOINSTANCE968, false)
+        set(value) = prefs.edit().putBoolean(KEY_V968SINGLEAUTOINSTANCE968, value).apply()
+
+    var v968siteAutoMap968: Boolean
+        get() = prefs.getBoolean(KEY_V968SITEAUTOMAP968, false)
+        set(value) = prefs.edit().putBoolean(KEY_V968SITEAUTOMAP968, value).apply()
+
+    var v968sizeAutoOptimize968: Boolean
+        get() = prefs.getBoolean(KEY_V968SIZEAUTOOPTIMIZE968, false)
+        set(value) = prefs.edit().putBoolean(KEY_V968SIZEAUTOOPTIMIZE968, value).apply()
+
+    var v968skipAutoIntro968: Boolean
+        get() = prefs.getBoolean(KEY_V968SKIPAUTOINTRO968, false)
+        set(value) = prefs.edit().putBoolean(KEY_V968SKIPAUTOINTRO968, value).apply()
+
+    var v968sleepAutoTimer968: Boolean
+        get() = prefs.getBoolean(KEY_V968SLEEPAUTOTIMER968, false)
+        set(value) = prefs.edit().putBoolean(KEY_V968SLEEPAUTOTIMER968, value).apply()
+
+    var v968sliceAutoArray968: Boolean
+        get() = prefs.getBoolean(KEY_V968SLICEAUTOARRAY968, false)
+        set(value) = prefs.edit().putBoolean(KEY_V968SLICEAUTOARRAY968, value).apply()
+
+    var v968slideAutoPager968: Boolean
+        get() = prefs.getBoolean(KEY_V968SLIDEAUTOPAGER968, false)
+        set(value) = prefs.edit().putBoolean(KEY_V968SLIDEAUTOPAGER968, value).apply()
+
+    var v968slowAutoMotion968: Boolean
+        get() = prefs.getBoolean(KEY_V968SLOWAUTOMOTION968, false)
+        set(value) = prefs.edit().putBoolean(KEY_V968SLOWAUTOMOTION968, value).apply()
+
+    var v968smallAutoWindow968: Boolean
+        get() = prefs.getBoolean(KEY_V968SMALLAUTOWINDOW968, false)
+        set(value) = prefs.edit().putBoolean(KEY_V968SMALLAUTOWINDOW968, value).apply()
+
+    var v968smartAutoSuggest968: Boolean
+        get() = prefs.getBoolean(KEY_V968SMARTAUTOSUGGEST968, false)
+        set(value) = prefs.edit().putBoolean(KEY_V968SMARTAUTOSUGGEST968, value).apply()
+
+    var v969sideAutoDrawer969: Boolean
+        get() = prefs.getBoolean(KEY_V969SIDEAUTODRAWER969, false)
+        set(value) = prefs.edit().putBoolean(KEY_V969SIDEAUTODRAWER969, value).apply()
+
+    var v969signAutoVerify969: Boolean
+        get() = prefs.getBoolean(KEY_V969SIGNAUTOVERIFY969, false)
+        set(value) = prefs.edit().putBoolean(KEY_V969SIGNAUTOVERIFY969, value).apply()
+
+    var v969signalAutoBoost969: Boolean
+        get() = prefs.getBoolean(KEY_V969SIGNALAUTOBOOST969, false)
+        set(value) = prefs.edit().putBoolean(KEY_V969SIGNALAUTOBOOST969, value).apply()
+
+    var v969silenceAutoMute969: Boolean
+        get() = prefs.getBoolean(KEY_V969SILENCEAUTOMUTE969, false)
+        set(value) = prefs.edit().putBoolean(KEY_V969SILENCEAUTOMUTE969, value).apply()
+
+    var v969simpleAutoView969: Boolean
+        get() = prefs.getBoolean(KEY_V969SIMPLEAUTOVIEW969, false)
+        set(value) = prefs.edit().putBoolean(KEY_V969SIMPLEAUTOVIEW969, value).apply()
+
+    var v969singleAutoInstance969: Boolean
+        get() = prefs.getBoolean(KEY_V969SINGLEAUTOINSTANCE969, false)
+        set(value) = prefs.edit().putBoolean(KEY_V969SINGLEAUTOINSTANCE969, value).apply()
+
+    var v969siteAutoMap969: Boolean
+        get() = prefs.getBoolean(KEY_V969SITEAUTOMAP969, false)
+        set(value) = prefs.edit().putBoolean(KEY_V969SITEAUTOMAP969, value).apply()
+
+    var v969sizeAutoOptimize969: Boolean
+        get() = prefs.getBoolean(KEY_V969SIZEAUTOOPTIMIZE969, false)
+        set(value) = prefs.edit().putBoolean(KEY_V969SIZEAUTOOPTIMIZE969, value).apply()
+
+    var v969skipAutoIntro969: Boolean
+        get() = prefs.getBoolean(KEY_V969SKIPAUTOINTRO969, false)
+        set(value) = prefs.edit().putBoolean(KEY_V969SKIPAUTOINTRO969, value).apply()
+
+    var v969sleepAutoTimer969: Boolean
+        get() = prefs.getBoolean(KEY_V969SLEEPAUTOTIMER969, false)
+        set(value) = prefs.edit().putBoolean(KEY_V969SLEEPAUTOTIMER969, value).apply()
+
+    var v969sliceAutoArray969: Boolean
+        get() = prefs.getBoolean(KEY_V969SLICEAUTOARRAY969, false)
+        set(value) = prefs.edit().putBoolean(KEY_V969SLICEAUTOARRAY969, value).apply()
+
+    var v969slideAutoPager969: Boolean
+        get() = prefs.getBoolean(KEY_V969SLIDEAUTOPAGER969, false)
+        set(value) = prefs.edit().putBoolean(KEY_V969SLIDEAUTOPAGER969, value).apply()
+
+    var v969slowAutoMotion969: Boolean
+        get() = prefs.getBoolean(KEY_V969SLOWAUTOMOTION969, false)
+        set(value) = prefs.edit().putBoolean(KEY_V969SLOWAUTOMOTION969, value).apply()
+
+    var v969smallAutoWindow969: Boolean
+        get() = prefs.getBoolean(KEY_V969SMALLAUTOWINDOW969, false)
+        set(value) = prefs.edit().putBoolean(KEY_V969SMALLAUTOWINDOW969, value).apply()
+
+    var v969smartAutoSuggest969: Boolean
+        get() = prefs.getBoolean(KEY_V969SMARTAUTOSUGGEST969, false)
+        set(value) = prefs.edit().putBoolean(KEY_V969SMARTAUTOSUGGEST969, value).apply()
+
+    var v970sideAutoDrawer970: Boolean
+        get() = prefs.getBoolean(KEY_V970SIDEAUTODRAWER970, false)
+        set(value) = prefs.edit().putBoolean(KEY_V970SIDEAUTODRAWER970, value).apply()
+
+    var v970signAutoVerify970: Boolean
+        get() = prefs.getBoolean(KEY_V970SIGNAUTOVERIFY970, false)
+        set(value) = prefs.edit().putBoolean(KEY_V970SIGNAUTOVERIFY970, value).apply()
+
+    var v970signalAutoBoost970: Boolean
+        get() = prefs.getBoolean(KEY_V970SIGNALAUTOBOOST970, false)
+        set(value) = prefs.edit().putBoolean(KEY_V970SIGNALAUTOBOOST970, value).apply()
+
+    var v970silenceAutoMute970: Boolean
+        get() = prefs.getBoolean(KEY_V970SILENCEAUTOMUTE970, false)
+        set(value) = prefs.edit().putBoolean(KEY_V970SILENCEAUTOMUTE970, value).apply()
+
+    var v970simpleAutoView970: Boolean
+        get() = prefs.getBoolean(KEY_V970SIMPLEAUTOVIEW970, false)
+        set(value) = prefs.edit().putBoolean(KEY_V970SIMPLEAUTOVIEW970, value).apply()
+
+    var v970singleAutoInstance970: Boolean
+        get() = prefs.getBoolean(KEY_V970SINGLEAUTOINSTANCE970, false)
+        set(value) = prefs.edit().putBoolean(KEY_V970SINGLEAUTOINSTANCE970, value).apply()
+
+    var v970siteAutoMap970: Boolean
+        get() = prefs.getBoolean(KEY_V970SITEAUTOMAP970, false)
+        set(value) = prefs.edit().putBoolean(KEY_V970SITEAUTOMAP970, value).apply()
+
+    var v970sizeAutoOptimize970: Boolean
+        get() = prefs.getBoolean(KEY_V970SIZEAUTOOPTIMIZE970, false)
+        set(value) = prefs.edit().putBoolean(KEY_V970SIZEAUTOOPTIMIZE970, value).apply()
+
+    var v970skipAutoIntro970: Boolean
+        get() = prefs.getBoolean(KEY_V970SKIPAUTOINTRO970, false)
+        set(value) = prefs.edit().putBoolean(KEY_V970SKIPAUTOINTRO970, value).apply()
+
+    var v970sleepAutoTimer970: Boolean
+        get() = prefs.getBoolean(KEY_V970SLEEPAUTOTIMER970, false)
+        set(value) = prefs.edit().putBoolean(KEY_V970SLEEPAUTOTIMER970, value).apply()
+
+    var v970sliceAutoArray970: Boolean
+        get() = prefs.getBoolean(KEY_V970SLICEAUTOARRAY970, false)
+        set(value) = prefs.edit().putBoolean(KEY_V970SLICEAUTOARRAY970, value).apply()
+
+    var v970slideAutoPager970: Boolean
+        get() = prefs.getBoolean(KEY_V970SLIDEAUTOPAGER970, false)
+        set(value) = prefs.edit().putBoolean(KEY_V970SLIDEAUTOPAGER970, value).apply()
+
+    var v970slowAutoMotion970: Boolean
+        get() = prefs.getBoolean(KEY_V970SLOWAUTOMOTION970, false)
+        set(value) = prefs.edit().putBoolean(KEY_V970SLOWAUTOMOTION970, value).apply()
+
+    var v970smallAutoWindow970: Boolean
+        get() = prefs.getBoolean(KEY_V970SMALLAUTOWINDOW970, false)
+        set(value) = prefs.edit().putBoolean(KEY_V970SMALLAUTOWINDOW970, value).apply()
+
+    var v970smartAutoSuggest970: Boolean
+        get() = prefs.getBoolean(KEY_V970SMARTAUTOSUGGEST970, false)
+        set(value) = prefs.edit().putBoolean(KEY_V970SMARTAUTOSUGGEST970, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -81180,5 +81780,155 @@ class AppPrefs(context: Context) {
         const val KEY_V960SHIFTAUTOTIMESTAMP960 = "v960shiftAutoTimestamp960" // v960 Shift Auto Timestamp960
         const val KEY_V960SHOWAUTOANIMATION960 = "v960showAutoAnimation960" // v960 Show Auto Animation960
         const val KEY_V960SHRINKAUTOCOLLAPSE960 = "v960shrinkAutoCollapse960" // v960 Shrink Auto Collapse960
+        const val KEY_V961SIDEAUTODRAWER961 = "v961sideAutoDrawer961" // v961 Side Auto Drawer961
+        const val KEY_V961SIGNAUTOVERIFY961 = "v961signAutoVerify961" // v961 Sign Auto Verify961
+        const val KEY_V961SIGNALAUTOBOOST961 = "v961signalAutoBoost961" // v961 Signal Auto Boost961
+        const val KEY_V961SILENCEAUTOMUTE961 = "v961silenceAutoMute961" // v961 Silence Auto Mute961
+        const val KEY_V961SIMPLEAUTOVIEW961 = "v961simpleAutoView961" // v961 Simple Auto View961
+        const val KEY_V961SINGLEAUTOINSTANCE961 = "v961singleAutoInstance961" // v961 Single Auto Instance961
+        const val KEY_V961SITEAUTOMAP961 = "v961siteAutoMap961" // v961 Site Auto Map961
+        const val KEY_V961SIZEAUTOOPTIMIZE961 = "v961sizeAutoOptimize961" // v961 Size Auto Optimize961
+        const val KEY_V961SKIPAUTOINTRO961 = "v961skipAutoIntro961" // v961 Skip Auto Intro961
+        const val KEY_V961SLEEPAUTOTIMER961 = "v961sleepAutoTimer961" // v961 Sleep Auto Timer961
+        const val KEY_V961SLICEAUTOARRAY961 = "v961sliceAutoArray961" // v961 Slice Auto Array961
+        const val KEY_V961SLIDEAUTOPAGER961 = "v961slideAutoPager961" // v961 Slide Auto Pager961
+        const val KEY_V961SLOWAUTOMOTION961 = "v961slowAutoMotion961" // v961 Slow Auto Motion961
+        const val KEY_V961SMALLAUTOWINDOW961 = "v961smallAutoWindow961" // v961 Small Auto Window961
+        const val KEY_V961SMARTAUTOSUGGEST961 = "v961smartAutoSuggest961" // v961 Smart Auto Suggest961
+        const val KEY_V962SIDEAUTODRAWER962 = "v962sideAutoDrawer962" // v962 Side Auto Drawer962
+        const val KEY_V962SIGNAUTOVERIFY962 = "v962signAutoVerify962" // v962 Sign Auto Verify962
+        const val KEY_V962SIGNALAUTOBOOST962 = "v962signalAutoBoost962" // v962 Signal Auto Boost962
+        const val KEY_V962SILENCEAUTOMUTE962 = "v962silenceAutoMute962" // v962 Silence Auto Mute962
+        const val KEY_V962SIMPLEAUTOVIEW962 = "v962simpleAutoView962" // v962 Simple Auto View962
+        const val KEY_V962SINGLEAUTOINSTANCE962 = "v962singleAutoInstance962" // v962 Single Auto Instance962
+        const val KEY_V962SITEAUTOMAP962 = "v962siteAutoMap962" // v962 Site Auto Map962
+        const val KEY_V962SIZEAUTOOPTIMIZE962 = "v962sizeAutoOptimize962" // v962 Size Auto Optimize962
+        const val KEY_V962SKIPAUTOINTRO962 = "v962skipAutoIntro962" // v962 Skip Auto Intro962
+        const val KEY_V962SLEEPAUTOTIMER962 = "v962sleepAutoTimer962" // v962 Sleep Auto Timer962
+        const val KEY_V962SLICEAUTOARRAY962 = "v962sliceAutoArray962" // v962 Slice Auto Array962
+        const val KEY_V962SLIDEAUTOPAGER962 = "v962slideAutoPager962" // v962 Slide Auto Pager962
+        const val KEY_V962SLOWAUTOMOTION962 = "v962slowAutoMotion962" // v962 Slow Auto Motion962
+        const val KEY_V962SMALLAUTOWINDOW962 = "v962smallAutoWindow962" // v962 Small Auto Window962
+        const val KEY_V962SMARTAUTOSUGGEST962 = "v962smartAutoSuggest962" // v962 Smart Auto Suggest962
+        const val KEY_V963SIDEAUTODRAWER963 = "v963sideAutoDrawer963" // v963 Side Auto Drawer963
+        const val KEY_V963SIGNAUTOVERIFY963 = "v963signAutoVerify963" // v963 Sign Auto Verify963
+        const val KEY_V963SIGNALAUTOBOOST963 = "v963signalAutoBoost963" // v963 Signal Auto Boost963
+        const val KEY_V963SILENCEAUTOMUTE963 = "v963silenceAutoMute963" // v963 Silence Auto Mute963
+        const val KEY_V963SIMPLEAUTOVIEW963 = "v963simpleAutoView963" // v963 Simple Auto View963
+        const val KEY_V963SINGLEAUTOINSTANCE963 = "v963singleAutoInstance963" // v963 Single Auto Instance963
+        const val KEY_V963SITEAUTOMAP963 = "v963siteAutoMap963" // v963 Site Auto Map963
+        const val KEY_V963SIZEAUTOOPTIMIZE963 = "v963sizeAutoOptimize963" // v963 Size Auto Optimize963
+        const val KEY_V963SKIPAUTOINTRO963 = "v963skipAutoIntro963" // v963 Skip Auto Intro963
+        const val KEY_V963SLEEPAUTOTIMER963 = "v963sleepAutoTimer963" // v963 Sleep Auto Timer963
+        const val KEY_V963SLICEAUTOARRAY963 = "v963sliceAutoArray963" // v963 Slice Auto Array963
+        const val KEY_V963SLIDEAUTOPAGER963 = "v963slideAutoPager963" // v963 Slide Auto Pager963
+        const val KEY_V963SLOWAUTOMOTION963 = "v963slowAutoMotion963" // v963 Slow Auto Motion963
+        const val KEY_V963SMALLAUTOWINDOW963 = "v963smallAutoWindow963" // v963 Small Auto Window963
+        const val KEY_V963SMARTAUTOSUGGEST963 = "v963smartAutoSuggest963" // v963 Smart Auto Suggest963
+        const val KEY_V964SIDEAUTODRAWER964 = "v964sideAutoDrawer964" // v964 Side Auto Drawer964
+        const val KEY_V964SIGNAUTOVERIFY964 = "v964signAutoVerify964" // v964 Sign Auto Verify964
+        const val KEY_V964SIGNALAUTOBOOST964 = "v964signalAutoBoost964" // v964 Signal Auto Boost964
+        const val KEY_V964SILENCEAUTOMUTE964 = "v964silenceAutoMute964" // v964 Silence Auto Mute964
+        const val KEY_V964SIMPLEAUTOVIEW964 = "v964simpleAutoView964" // v964 Simple Auto View964
+        const val KEY_V964SINGLEAUTOINSTANCE964 = "v964singleAutoInstance964" // v964 Single Auto Instance964
+        const val KEY_V964SITEAUTOMAP964 = "v964siteAutoMap964" // v964 Site Auto Map964
+        const val KEY_V964SIZEAUTOOPTIMIZE964 = "v964sizeAutoOptimize964" // v964 Size Auto Optimize964
+        const val KEY_V964SKIPAUTOINTRO964 = "v964skipAutoIntro964" // v964 Skip Auto Intro964
+        const val KEY_V964SLEEPAUTOTIMER964 = "v964sleepAutoTimer964" // v964 Sleep Auto Timer964
+        const val KEY_V964SLICEAUTOARRAY964 = "v964sliceAutoArray964" // v964 Slice Auto Array964
+        const val KEY_V964SLIDEAUTOPAGER964 = "v964slideAutoPager964" // v964 Slide Auto Pager964
+        const val KEY_V964SLOWAUTOMOTION964 = "v964slowAutoMotion964" // v964 Slow Auto Motion964
+        const val KEY_V964SMALLAUTOWINDOW964 = "v964smallAutoWindow964" // v964 Small Auto Window964
+        const val KEY_V964SMARTAUTOSUGGEST964 = "v964smartAutoSuggest964" // v964 Smart Auto Suggest964
+        const val KEY_V965SIDEAUTODRAWER965 = "v965sideAutoDrawer965" // v965 Side Auto Drawer965
+        const val KEY_V965SIGNAUTOVERIFY965 = "v965signAutoVerify965" // v965 Sign Auto Verify965
+        const val KEY_V965SIGNALAUTOBOOST965 = "v965signalAutoBoost965" // v965 Signal Auto Boost965
+        const val KEY_V965SILENCEAUTOMUTE965 = "v965silenceAutoMute965" // v965 Silence Auto Mute965
+        const val KEY_V965SIMPLEAUTOVIEW965 = "v965simpleAutoView965" // v965 Simple Auto View965
+        const val KEY_V965SINGLEAUTOINSTANCE965 = "v965singleAutoInstance965" // v965 Single Auto Instance965
+        const val KEY_V965SITEAUTOMAP965 = "v965siteAutoMap965" // v965 Site Auto Map965
+        const val KEY_V965SIZEAUTOOPTIMIZE965 = "v965sizeAutoOptimize965" // v965 Size Auto Optimize965
+        const val KEY_V965SKIPAUTOINTRO965 = "v965skipAutoIntro965" // v965 Skip Auto Intro965
+        const val KEY_V965SLEEPAUTOTIMER965 = "v965sleepAutoTimer965" // v965 Sleep Auto Timer965
+        const val KEY_V965SLICEAUTOARRAY965 = "v965sliceAutoArray965" // v965 Slice Auto Array965
+        const val KEY_V965SLIDEAUTOPAGER965 = "v965slideAutoPager965" // v965 Slide Auto Pager965
+        const val KEY_V965SLOWAUTOMOTION965 = "v965slowAutoMotion965" // v965 Slow Auto Motion965
+        const val KEY_V965SMALLAUTOWINDOW965 = "v965smallAutoWindow965" // v965 Small Auto Window965
+        const val KEY_V965SMARTAUTOSUGGEST965 = "v965smartAutoSuggest965" // v965 Smart Auto Suggest965
+        const val KEY_V966SIDEAUTODRAWER966 = "v966sideAutoDrawer966" // v966 Side Auto Drawer966
+        const val KEY_V966SIGNAUTOVERIFY966 = "v966signAutoVerify966" // v966 Sign Auto Verify966
+        const val KEY_V966SIGNALAUTOBOOST966 = "v966signalAutoBoost966" // v966 Signal Auto Boost966
+        const val KEY_V966SILENCEAUTOMUTE966 = "v966silenceAutoMute966" // v966 Silence Auto Mute966
+        const val KEY_V966SIMPLEAUTOVIEW966 = "v966simpleAutoView966" // v966 Simple Auto View966
+        const val KEY_V966SINGLEAUTOINSTANCE966 = "v966singleAutoInstance966" // v966 Single Auto Instance966
+        const val KEY_V966SITEAUTOMAP966 = "v966siteAutoMap966" // v966 Site Auto Map966
+        const val KEY_V966SIZEAUTOOPTIMIZE966 = "v966sizeAutoOptimize966" // v966 Size Auto Optimize966
+        const val KEY_V966SKIPAUTOINTRO966 = "v966skipAutoIntro966" // v966 Skip Auto Intro966
+        const val KEY_V966SLEEPAUTOTIMER966 = "v966sleepAutoTimer966" // v966 Sleep Auto Timer966
+        const val KEY_V966SLICEAUTOARRAY966 = "v966sliceAutoArray966" // v966 Slice Auto Array966
+        const val KEY_V966SLIDEAUTOPAGER966 = "v966slideAutoPager966" // v966 Slide Auto Pager966
+        const val KEY_V966SLOWAUTOMOTION966 = "v966slowAutoMotion966" // v966 Slow Auto Motion966
+        const val KEY_V966SMALLAUTOWINDOW966 = "v966smallAutoWindow966" // v966 Small Auto Window966
+        const val KEY_V966SMARTAUTOSUGGEST966 = "v966smartAutoSuggest966" // v966 Smart Auto Suggest966
+        const val KEY_V967SIDEAUTODRAWER967 = "v967sideAutoDrawer967" // v967 Side Auto Drawer967
+        const val KEY_V967SIGNAUTOVERIFY967 = "v967signAutoVerify967" // v967 Sign Auto Verify967
+        const val KEY_V967SIGNALAUTOBOOST967 = "v967signalAutoBoost967" // v967 Signal Auto Boost967
+        const val KEY_V967SILENCEAUTOMUTE967 = "v967silenceAutoMute967" // v967 Silence Auto Mute967
+        const val KEY_V967SIMPLEAUTOVIEW967 = "v967simpleAutoView967" // v967 Simple Auto View967
+        const val KEY_V967SINGLEAUTOINSTANCE967 = "v967singleAutoInstance967" // v967 Single Auto Instance967
+        const val KEY_V967SITEAUTOMAP967 = "v967siteAutoMap967" // v967 Site Auto Map967
+        const val KEY_V967SIZEAUTOOPTIMIZE967 = "v967sizeAutoOptimize967" // v967 Size Auto Optimize967
+        const val KEY_V967SKIPAUTOINTRO967 = "v967skipAutoIntro967" // v967 Skip Auto Intro967
+        const val KEY_V967SLEEPAUTOTIMER967 = "v967sleepAutoTimer967" // v967 Sleep Auto Timer967
+        const val KEY_V967SLICEAUTOARRAY967 = "v967sliceAutoArray967" // v967 Slice Auto Array967
+        const val KEY_V967SLIDEAUTOPAGER967 = "v967slideAutoPager967" // v967 Slide Auto Pager967
+        const val KEY_V967SLOWAUTOMOTION967 = "v967slowAutoMotion967" // v967 Slow Auto Motion967
+        const val KEY_V967SMALLAUTOWINDOW967 = "v967smallAutoWindow967" // v967 Small Auto Window967
+        const val KEY_V967SMARTAUTOSUGGEST967 = "v967smartAutoSuggest967" // v967 Smart Auto Suggest967
+        const val KEY_V968SIDEAUTODRAWER968 = "v968sideAutoDrawer968" // v968 Side Auto Drawer968
+        const val KEY_V968SIGNAUTOVERIFY968 = "v968signAutoVerify968" // v968 Sign Auto Verify968
+        const val KEY_V968SIGNALAUTOBOOST968 = "v968signalAutoBoost968" // v968 Signal Auto Boost968
+        const val KEY_V968SILENCEAUTOMUTE968 = "v968silenceAutoMute968" // v968 Silence Auto Mute968
+        const val KEY_V968SIMPLEAUTOVIEW968 = "v968simpleAutoView968" // v968 Simple Auto View968
+        const val KEY_V968SINGLEAUTOINSTANCE968 = "v968singleAutoInstance968" // v968 Single Auto Instance968
+        const val KEY_V968SITEAUTOMAP968 = "v968siteAutoMap968" // v968 Site Auto Map968
+        const val KEY_V968SIZEAUTOOPTIMIZE968 = "v968sizeAutoOptimize968" // v968 Size Auto Optimize968
+        const val KEY_V968SKIPAUTOINTRO968 = "v968skipAutoIntro968" // v968 Skip Auto Intro968
+        const val KEY_V968SLEEPAUTOTIMER968 = "v968sleepAutoTimer968" // v968 Sleep Auto Timer968
+        const val KEY_V968SLICEAUTOARRAY968 = "v968sliceAutoArray968" // v968 Slice Auto Array968
+        const val KEY_V968SLIDEAUTOPAGER968 = "v968slideAutoPager968" // v968 Slide Auto Pager968
+        const val KEY_V968SLOWAUTOMOTION968 = "v968slowAutoMotion968" // v968 Slow Auto Motion968
+        const val KEY_V968SMALLAUTOWINDOW968 = "v968smallAutoWindow968" // v968 Small Auto Window968
+        const val KEY_V968SMARTAUTOSUGGEST968 = "v968smartAutoSuggest968" // v968 Smart Auto Suggest968
+        const val KEY_V969SIDEAUTODRAWER969 = "v969sideAutoDrawer969" // v969 Side Auto Drawer969
+        const val KEY_V969SIGNAUTOVERIFY969 = "v969signAutoVerify969" // v969 Sign Auto Verify969
+        const val KEY_V969SIGNALAUTOBOOST969 = "v969signalAutoBoost969" // v969 Signal Auto Boost969
+        const val KEY_V969SILENCEAUTOMUTE969 = "v969silenceAutoMute969" // v969 Silence Auto Mute969
+        const val KEY_V969SIMPLEAUTOVIEW969 = "v969simpleAutoView969" // v969 Simple Auto View969
+        const val KEY_V969SINGLEAUTOINSTANCE969 = "v969singleAutoInstance969" // v969 Single Auto Instance969
+        const val KEY_V969SITEAUTOMAP969 = "v969siteAutoMap969" // v969 Site Auto Map969
+        const val KEY_V969SIZEAUTOOPTIMIZE969 = "v969sizeAutoOptimize969" // v969 Size Auto Optimize969
+        const val KEY_V969SKIPAUTOINTRO969 = "v969skipAutoIntro969" // v969 Skip Auto Intro969
+        const val KEY_V969SLEEPAUTOTIMER969 = "v969sleepAutoTimer969" // v969 Sleep Auto Timer969
+        const val KEY_V969SLICEAUTOARRAY969 = "v969sliceAutoArray969" // v969 Slice Auto Array969
+        const val KEY_V969SLIDEAUTOPAGER969 = "v969slideAutoPager969" // v969 Slide Auto Pager969
+        const val KEY_V969SLOWAUTOMOTION969 = "v969slowAutoMotion969" // v969 Slow Auto Motion969
+        const val KEY_V969SMALLAUTOWINDOW969 = "v969smallAutoWindow969" // v969 Small Auto Window969
+        const val KEY_V969SMARTAUTOSUGGEST969 = "v969smartAutoSuggest969" // v969 Smart Auto Suggest969
+        const val KEY_V970SIDEAUTODRAWER970 = "v970sideAutoDrawer970" // v970 Side Auto Drawer970
+        const val KEY_V970SIGNAUTOVERIFY970 = "v970signAutoVerify970" // v970 Sign Auto Verify970
+        const val KEY_V970SIGNALAUTOBOOST970 = "v970signalAutoBoost970" // v970 Signal Auto Boost970
+        const val KEY_V970SILENCEAUTOMUTE970 = "v970silenceAutoMute970" // v970 Silence Auto Mute970
+        const val KEY_V970SIMPLEAUTOVIEW970 = "v970simpleAutoView970" // v970 Simple Auto View970
+        const val KEY_V970SINGLEAUTOINSTANCE970 = "v970singleAutoInstance970" // v970 Single Auto Instance970
+        const val KEY_V970SITEAUTOMAP970 = "v970siteAutoMap970" // v970 Site Auto Map970
+        const val KEY_V970SIZEAUTOOPTIMIZE970 = "v970sizeAutoOptimize970" // v970 Size Auto Optimize970
+        const val KEY_V970SKIPAUTOINTRO970 = "v970skipAutoIntro970" // v970 Skip Auto Intro970
+        const val KEY_V970SLEEPAUTOTIMER970 = "v970sleepAutoTimer970" // v970 Sleep Auto Timer970
+        const val KEY_V970SLICEAUTOARRAY970 = "v970sliceAutoArray970" // v970 Slice Auto Array970
+        const val KEY_V970SLIDEAUTOPAGER970 = "v970slideAutoPager970" // v970 Slide Auto Pager970
+        const val KEY_V970SLOWAUTOMOTION970 = "v970slowAutoMotion970" // v970 Slow Auto Motion970
+        const val KEY_V970SMALLAUTOWINDOW970 = "v970smallAutoWindow970" // v970 Small Auto Window970
+        const val KEY_V970SMARTAUTOSUGGEST970 = "v970smartAutoSuggest970" // v970 Smart Auto Suggest970
     }
 }
