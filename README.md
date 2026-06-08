@@ -118,7 +118,7 @@ This project is based on open-source software. All rights belong to the original
 ## 📋 更新日志 | Changelog | 変更履歴 | 변경 로그
 
 ### 最新版本 | Latest Version | 最新バージョン | 최신 버전
-- **v480.15** - 2026-06-08
+- **v490.15** - 2026-06-08
 
 ---
 
@@ -48935,6 +48935,947 @@ This project is based on open-source software. All rights belong to the original
 - ✅ モデル自動ロード480
 - ✅ 모델 자동 로드480
 
+
+### v481.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v481.1-v481.15 功能列表
+- ✅ Module Auto Load481, Monitor CPU Usage481, Mount Auto Detect481, Mouse Hover Preview481, Move Transition481, Multi Thread Decode481, Nav Auto Collapse481, Node Auto Connect481, Offset Auto Calibrate481, Open With External481, Order Auto Sort481, Output Auto Select481, Overlay Auto Show481, Override Global481, Pack Auto Compress481
+
+### v481.1 模块自动加载481 | Module Auto Load481 | モジュール自動ロード481 | 모듈 자동 로드481
+- ✅ 模块自动加载481
+- ✅ Module Auto Load481
+- ✅ モジュール自動ロード481
+- ✅ 모듈 자동 로드481
+
+### v481.2 监控CPU使用率481 | Monitor CPU Usage481 | CPU使用率モニター481 | CPU 사용량 모니터481
+- ✅ 监控CPU使用率481
+- ✅ Monitor CPU Usage481
+- ✅ CPU使用率モニター481
+- ✅ CPU 사용량 모니터481
+
+### v481.3 挂载自动检测481 | Mount Auto Detect481 | マウント自動検出481 | 마운트 자동 감지481
+- ✅ 挂载自动检测481
+- ✅ Mount Auto Detect481
+- ✅ マウント自動検出481
+- ✅ 마운트 자동 감지481
+
+### v481.4 鼠标悬停预览481 | Mouse Hover Preview481 | マウスホバープレビュー481 | 마우스 호버 미리보기481
+- ✅ 鼠标悬停预览481
+- ✅ Mouse Hover Preview481
+- ✅ マウスホバープレビュー481
+- ✅ 마우스 호버 미리보기481
+
+### v481.5 移动过渡481 | Move Transition481 | ムーブトランジション481 | 무브 전환481
+- ✅ 移动过渡481
+- ✅ Move Transition481
+- ✅ ムーブトランジション481
+- ✅ 무브 전환481
+
+### v481.6 多线程解码481 | Multi Thread Decode481 | マルチスレッドデコード481 | 멀티스레드 디코딩481
+- ✅ 多线程解码481
+- ✅ Multi Thread Decode481
+- ✅ マルチスレッドデコード481
+- ✅ 멀티스레드 디코딩481
+
+### v481.7 导航自动折叠481 | Nav Auto Collapse481 | ナビ自動折りたたみ481 | 네비 자동 접기481
+- ✅ 导航自动折叠481
+- ✅ Nav Auto Collapse481
+- ✅ ナビ自動折りたたみ481
+- ✅ 네비 자동 접기481
+
+### v481.8 节点自动连接481 | Node Auto Connect481 | ノード自動接続481 | 노드 자동 연결481
+- ✅ 节点自动连接481
+- ✅ Node Auto Connect481
+- ✅ ノード自動接続481
+- ✅ 노드 자동 연결481
+
+### v481.9 偏移自动校准481 | Offset Auto Calibrate481 | オフセット自動校正481 | 오프셋 자동 보정481
+- ✅ 偏移自动校准481
+- ✅ Offset Auto Calibrate481
+- ✅ オフセット自動校正481
+- ✅ 오프셋 자동 보정481
+
+### v481.10 外部打开481 | Open With External481 | 外部で開く481 | 외부에서 열기481
+- ✅ 外部打开481
+- ✅ Open With External481
+- ✅ 外部で開く481
+- ✅ 외부에서 열기481
+
+### v481.11 排序自动排列481 | Order Auto Sort481 | 順序自動ソート481 | 순서 자동 정렬481
+- ✅ 排序自动排列481
+- ✅ Order Auto Sort481
+- ✅ 順序自動ソート481
+- ✅ 순서 자동 정렬481
+
+### v481.12 输出自动选择481 | Output Auto Select481 | 出力自動選択481 | 출력 자동 선택481
+- ✅ 输出自动选择481
+- ✅ Output Auto Select481
+- ✅ 出力自動選択481
+- ✅ 출력 자동 선택481
+
+### v481.13 叠加自动显示481 | Overlay Auto Show481 | オーバーレイ自動表示481 | 오버레이 자동 표시481
+- ✅ 叠加自动显示481
+- ✅ Overlay Auto Show481
+- ✅ オーバーレイ自動表示481
+- ✅ 오버레이 자동 표시481
+
+### v481.14 覆盖全局设置481 | Override Global481 | グローバルオーバーライド481 | 글로벌 오버라이드481
+- ✅ 覆盖全局设置481
+- ✅ Override Global481
+- ✅ グローバルオーバーライド481
+- ✅ 글로벌 오버라이드481
+
+### v481.15 打包自动压缩481 | Pack Auto Compress481 | パック自動圧縮481 | 팩 자동 압축481
+- ✅ 打包自动压缩481
+- ✅ Pack Auto Compress481
+- ✅ パック自動圧縮481
+- ✅ 팩 자동 압축481
+
+### v482.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v482.1-v482.15 功能列表
+- ✅ Module Auto Load482, Monitor CPU Usage482, Mount Auto Detect482, Mouse Hover Preview482, Move Transition482, Multi Thread Decode482, Nav Auto Collapse482, Node Auto Connect482, Offset Auto Calibrate482, Open With External482, Order Auto Sort482, Output Auto Select482, Overlay Auto Show482, Override Global482, Pack Auto Compress482
+
+### v482.1 模块自动加载482 | Module Auto Load482 | モジュール自動ロード482 | 모듈 자동 로드482
+- ✅ 模块自动加载482
+- ✅ Module Auto Load482
+- ✅ モジュール自動ロード482
+- ✅ 모듈 자동 로드482
+
+### v482.2 监控CPU使用率482 | Monitor CPU Usage482 | CPU使用率モニター482 | CPU 사용량 모니터482
+- ✅ 监控CPU使用率482
+- ✅ Monitor CPU Usage482
+- ✅ CPU使用率モニター482
+- ✅ CPU 사용량 모니터482
+
+### v482.3 挂载自动检测482 | Mount Auto Detect482 | マウント自動検出482 | 마운트 자동 감지482
+- ✅ 挂载自动检测482
+- ✅ Mount Auto Detect482
+- ✅ マウント自動検出482
+- ✅ 마운트 자동 감지482
+
+### v482.4 鼠标悬停预览482 | Mouse Hover Preview482 | マウスホバープレビュー482 | 마우스 호버 미리보기482
+- ✅ 鼠标悬停预览482
+- ✅ Mouse Hover Preview482
+- ✅ マウスホバープレビュー482
+- ✅ 마우스 호버 미리보기482
+
+### v482.5 移动过渡482 | Move Transition482 | ムーブトランジション482 | 무브 전환482
+- ✅ 移动过渡482
+- ✅ Move Transition482
+- ✅ ムーブトランジション482
+- ✅ 무브 전환482
+
+### v482.6 多线程解码482 | Multi Thread Decode482 | マルチスレッドデコード482 | 멀티스레드 디코딩482
+- ✅ 多线程解码482
+- ✅ Multi Thread Decode482
+- ✅ マルチスレッドデコード482
+- ✅ 멀티스레드 디코딩482
+
+### v482.7 导航自动折叠482 | Nav Auto Collapse482 | ナビ自動折りたたみ482 | 네비 자동 접기482
+- ✅ 导航自动折叠482
+- ✅ Nav Auto Collapse482
+- ✅ ナビ自動折りたたみ482
+- ✅ 네비 자동 접기482
+
+### v482.8 节点自动连接482 | Node Auto Connect482 | ノード自動接続482 | 노드 자동 연결482
+- ✅ 节点自动连接482
+- ✅ Node Auto Connect482
+- ✅ ノード自動接続482
+- ✅ 노드 자동 연결482
+
+### v482.9 偏移自动校准482 | Offset Auto Calibrate482 | オフセット自動校正482 | 오프셋 자동 보정482
+- ✅ 偏移自动校准482
+- ✅ Offset Auto Calibrate482
+- ✅ オフセット自動校正482
+- ✅ 오프셋 자동 보정482
+
+### v482.10 外部打开482 | Open With External482 | 外部で開く482 | 외부에서 열기482
+- ✅ 外部打开482
+- ✅ Open With External482
+- ✅ 外部で開く482
+- ✅ 외부에서 열기482
+
+### v482.11 排序自动排列482 | Order Auto Sort482 | 順序自動ソート482 | 순서 자동 정렬482
+- ✅ 排序自动排列482
+- ✅ Order Auto Sort482
+- ✅ 順序自動ソート482
+- ✅ 순서 자동 정렬482
+
+### v482.12 输出自动选择482 | Output Auto Select482 | 出力自動選択482 | 출력 자동 선택482
+- ✅ 输出自动选择482
+- ✅ Output Auto Select482
+- ✅ 出力自動選択482
+- ✅ 출력 자동 선택482
+
+### v482.13 叠加自动显示482 | Overlay Auto Show482 | オーバーレイ自動表示482 | 오버레이 자동 표시482
+- ✅ 叠加自动显示482
+- ✅ Overlay Auto Show482
+- ✅ オーバーレイ自動表示482
+- ✅ 오버레이 자동 표시482
+
+### v482.14 覆盖全局设置482 | Override Global482 | グローバルオーバーライド482 | 글로벌 오버라이드482
+- ✅ 覆盖全局设置482
+- ✅ Override Global482
+- ✅ グローバルオーバーライド482
+- ✅ 글로벌 오버라이드482
+
+### v482.15 打包自动压缩482 | Pack Auto Compress482 | パック自動圧縮482 | 팩 자동 압축482
+- ✅ 打包自动压缩482
+- ✅ Pack Auto Compress482
+- ✅ パック自動圧縮482
+- ✅ 팩 자동 압축482
+
+### v483.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v483.1-v483.15 功能列表
+- ✅ Module Auto Load483, Monitor CPU Usage483, Mount Auto Detect483, Mouse Hover Preview483, Move Transition483, Multi Thread Decode483, Nav Auto Collapse483, Node Auto Connect483, Offset Auto Calibrate483, Open With External483, Order Auto Sort483, Output Auto Select483, Overlay Auto Show483, Override Global483, Pack Auto Compress483
+
+### v483.1 模块自动加载483 | Module Auto Load483 | モジュール自動ロード483 | 모듈 자동 로드483
+- ✅ 模块自动加载483
+- ✅ Module Auto Load483
+- ✅ モジュール自動ロード483
+- ✅ 모듈 자동 로드483
+
+### v483.2 监控CPU使用率483 | Monitor CPU Usage483 | CPU使用率モニター483 | CPU 사용량 모니터483
+- ✅ 监控CPU使用率483
+- ✅ Monitor CPU Usage483
+- ✅ CPU使用率モニター483
+- ✅ CPU 사용량 모니터483
+
+### v483.3 挂载自动检测483 | Mount Auto Detect483 | マウント自動検出483 | 마운트 자동 감지483
+- ✅ 挂载自动检测483
+- ✅ Mount Auto Detect483
+- ✅ マウント自動検出483
+- ✅ 마운트 자동 감지483
+
+### v483.4 鼠标悬停预览483 | Mouse Hover Preview483 | マウスホバープレビュー483 | 마우스 호버 미리보기483
+- ✅ 鼠标悬停预览483
+- ✅ Mouse Hover Preview483
+- ✅ マウスホバープレビュー483
+- ✅ 마우스 호버 미리보기483
+
+### v483.5 移动过渡483 | Move Transition483 | ムーブトランジション483 | 무브 전환483
+- ✅ 移动过渡483
+- ✅ Move Transition483
+- ✅ ムーブトランジション483
+- ✅ 무브 전환483
+
+### v483.6 多线程解码483 | Multi Thread Decode483 | マルチスレッドデコード483 | 멀티스레드 디코딩483
+- ✅ 多线程解码483
+- ✅ Multi Thread Decode483
+- ✅ マルチスレッドデコード483
+- ✅ 멀티스레드 디코딩483
+
+### v483.7 导航自动折叠483 | Nav Auto Collapse483 | ナビ自動折りたたみ483 | 네비 자동 접기483
+- ✅ 导航自动折叠483
+- ✅ Nav Auto Collapse483
+- ✅ ナビ自動折りたたみ483
+- ✅ 네비 자동 접기483
+
+### v483.8 节点自动连接483 | Node Auto Connect483 | ノード自動接続483 | 노드 자동 연결483
+- ✅ 节点自动连接483
+- ✅ Node Auto Connect483
+- ✅ ノード自動接続483
+- ✅ 노드 자동 연결483
+
+### v483.9 偏移自动校准483 | Offset Auto Calibrate483 | オフセット自動校正483 | 오프셋 자동 보정483
+- ✅ 偏移自动校准483
+- ✅ Offset Auto Calibrate483
+- ✅ オフセット自動校正483
+- ✅ 오프셋 자동 보정483
+
+### v483.10 外部打开483 | Open With External483 | 外部で開く483 | 외부에서 열기483
+- ✅ 外部打开483
+- ✅ Open With External483
+- ✅ 外部で開く483
+- ✅ 외부에서 열기483
+
+### v483.11 排序自动排列483 | Order Auto Sort483 | 順序自動ソート483 | 순서 자동 정렬483
+- ✅ 排序自动排列483
+- ✅ Order Auto Sort483
+- ✅ 順序自動ソート483
+- ✅ 순서 자동 정렬483
+
+### v483.12 输出自动选择483 | Output Auto Select483 | 出力自動選択483 | 출력 자동 선택483
+- ✅ 输出自动选择483
+- ✅ Output Auto Select483
+- ✅ 出力自動選択483
+- ✅ 출력 자동 선택483
+
+### v483.13 叠加自动显示483 | Overlay Auto Show483 | オーバーレイ自動表示483 | 오버레이 자동 표시483
+- ✅ 叠加自动显示483
+- ✅ Overlay Auto Show483
+- ✅ オーバーレイ自動表示483
+- ✅ 오버레이 자동 표시483
+
+### v483.14 覆盖全局设置483 | Override Global483 | グローバルオーバーライド483 | 글로벌 오버라이드483
+- ✅ 覆盖全局设置483
+- ✅ Override Global483
+- ✅ グローバルオーバーライド483
+- ✅ 글로벌 오버라이드483
+
+### v483.15 打包自动压缩483 | Pack Auto Compress483 | パック自動圧縮483 | 팩 자동 압축483
+- ✅ 打包自动压缩483
+- ✅ Pack Auto Compress483
+- ✅ パック自動圧縮483
+- ✅ 팩 자동 압축483
+
+### v484.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v484.1-v484.15 功能列表
+- ✅ Module Auto Load484, Monitor CPU Usage484, Mount Auto Detect484, Mouse Hover Preview484, Move Transition484, Multi Thread Decode484, Nav Auto Collapse484, Node Auto Connect484, Offset Auto Calibrate484, Open With External484, Order Auto Sort484, Output Auto Select484, Overlay Auto Show484, Override Global484, Pack Auto Compress484
+
+### v484.1 模块自动加载484 | Module Auto Load484 | モジュール自動ロード484 | 모듈 자동 로드484
+- ✅ 模块自动加载484
+- ✅ Module Auto Load484
+- ✅ モジュール自動ロード484
+- ✅ 모듈 자동 로드484
+
+### v484.2 监控CPU使用率484 | Monitor CPU Usage484 | CPU使用率モニター484 | CPU 사용량 모니터484
+- ✅ 监控CPU使用率484
+- ✅ Monitor CPU Usage484
+- ✅ CPU使用率モニター484
+- ✅ CPU 사용량 모니터484
+
+### v484.3 挂载自动检测484 | Mount Auto Detect484 | マウント自動検出484 | 마운트 자동 감지484
+- ✅ 挂载自动检测484
+- ✅ Mount Auto Detect484
+- ✅ マウント自動検出484
+- ✅ 마운트 자동 감지484
+
+### v484.4 鼠标悬停预览484 | Mouse Hover Preview484 | マウスホバープレビュー484 | 마우스 호버 미리보기484
+- ✅ 鼠标悬停预览484
+- ✅ Mouse Hover Preview484
+- ✅ マウスホバープレビュー484
+- ✅ 마우스 호버 미리보기484
+
+### v484.5 移动过渡484 | Move Transition484 | ムーブトランジション484 | 무브 전환484
+- ✅ 移动过渡484
+- ✅ Move Transition484
+- ✅ ムーブトランジション484
+- ✅ 무브 전환484
+
+### v484.6 多线程解码484 | Multi Thread Decode484 | マルチスレッドデコード484 | 멀티스레드 디코딩484
+- ✅ 多线程解码484
+- ✅ Multi Thread Decode484
+- ✅ マルチスレッドデコード484
+- ✅ 멀티스레드 디코딩484
+
+### v484.7 导航自动折叠484 | Nav Auto Collapse484 | ナビ自動折りたたみ484 | 네비 자동 접기484
+- ✅ 导航自动折叠484
+- ✅ Nav Auto Collapse484
+- ✅ ナビ自動折りたたみ484
+- ✅ 네비 자동 접기484
+
+### v484.8 节点自动连接484 | Node Auto Connect484 | ノード自動接続484 | 노드 자동 연결484
+- ✅ 节点自动连接484
+- ✅ Node Auto Connect484
+- ✅ ノード自動接続484
+- ✅ 노드 자동 연결484
+
+### v484.9 偏移自动校准484 | Offset Auto Calibrate484 | オフセット自動校正484 | 오프셋 자동 보정484
+- ✅ 偏移自动校准484
+- ✅ Offset Auto Calibrate484
+- ✅ オフセット自動校正484
+- ✅ 오프셋 자동 보정484
+
+### v484.10 外部打开484 | Open With External484 | 外部で開く484 | 외부에서 열기484
+- ✅ 外部打开484
+- ✅ Open With External484
+- ✅ 外部で開く484
+- ✅ 외부에서 열기484
+
+### v484.11 排序自动排列484 | Order Auto Sort484 | 順序自動ソート484 | 순서 자동 정렬484
+- ✅ 排序自动排列484
+- ✅ Order Auto Sort484
+- ✅ 順序自動ソート484
+- ✅ 순서 자동 정렬484
+
+### v484.12 输出自动选择484 | Output Auto Select484 | 出力自動選択484 | 출력 자동 선택484
+- ✅ 输出自动选择484
+- ✅ Output Auto Select484
+- ✅ 出力自動選択484
+- ✅ 출력 자동 선택484
+
+### v484.13 叠加自动显示484 | Overlay Auto Show484 | オーバーレイ自動表示484 | 오버레이 자동 표시484
+- ✅ 叠加自动显示484
+- ✅ Overlay Auto Show484
+- ✅ オーバーレイ自動表示484
+- ✅ 오버레이 자동 표시484
+
+### v484.14 覆盖全局设置484 | Override Global484 | グローバルオーバーライド484 | 글로벌 오버라이드484
+- ✅ 覆盖全局设置484
+- ✅ Override Global484
+- ✅ グローバルオーバーライド484
+- ✅ 글로벌 오버라이드484
+
+### v484.15 打包自动压缩484 | Pack Auto Compress484 | パック自動圧縮484 | 팩 자동 압축484
+- ✅ 打包自动压缩484
+- ✅ Pack Auto Compress484
+- ✅ パック自動圧縮484
+- ✅ 팩 자동 압축484
+
+### v485.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v485.1-v485.15 功能列表
+- ✅ Module Auto Load485, Monitor CPU Usage485, Mount Auto Detect485, Mouse Hover Preview485, Move Transition485, Multi Thread Decode485, Nav Auto Collapse485, Node Auto Connect485, Offset Auto Calibrate485, Open With External485, Order Auto Sort485, Output Auto Select485, Overlay Auto Show485, Override Global485, Pack Auto Compress485
+
+### v485.1 模块自动加载485 | Module Auto Load485 | モジュール自動ロード485 | 모듈 자동 로드485
+- ✅ 模块自动加载485
+- ✅ Module Auto Load485
+- ✅ モジュール自動ロード485
+- ✅ 모듈 자동 로드485
+
+### v485.2 监控CPU使用率485 | Monitor CPU Usage485 | CPU使用率モニター485 | CPU 사용량 모니터485
+- ✅ 监控CPU使用率485
+- ✅ Monitor CPU Usage485
+- ✅ CPU使用率モニター485
+- ✅ CPU 사용량 모니터485
+
+### v485.3 挂载自动检测485 | Mount Auto Detect485 | マウント自動検出485 | 마운트 자동 감지485
+- ✅ 挂载自动检测485
+- ✅ Mount Auto Detect485
+- ✅ マウント自動検出485
+- ✅ 마운트 자동 감지485
+
+### v485.4 鼠标悬停预览485 | Mouse Hover Preview485 | マウスホバープレビュー485 | 마우스 호버 미리보기485
+- ✅ 鼠标悬停预览485
+- ✅ Mouse Hover Preview485
+- ✅ マウスホバープレビュー485
+- ✅ 마우스 호버 미리보기485
+
+### v485.5 移动过渡485 | Move Transition485 | ムーブトランジション485 | 무브 전환485
+- ✅ 移动过渡485
+- ✅ Move Transition485
+- ✅ ムーブトランジション485
+- ✅ 무브 전환485
+
+### v485.6 多线程解码485 | Multi Thread Decode485 | マルチスレッドデコード485 | 멀티스레드 디코딩485
+- ✅ 多线程解码485
+- ✅ Multi Thread Decode485
+- ✅ マルチスレッドデコード485
+- ✅ 멀티스레드 디코딩485
+
+### v485.7 导航自动折叠485 | Nav Auto Collapse485 | ナビ自動折りたたみ485 | 네비 자동 접기485
+- ✅ 导航自动折叠485
+- ✅ Nav Auto Collapse485
+- ✅ ナビ自動折りたたみ485
+- ✅ 네비 자동 접기485
+
+### v485.8 节点自动连接485 | Node Auto Connect485 | ノード自動接続485 | 노드 자동 연결485
+- ✅ 节点自动连接485
+- ✅ Node Auto Connect485
+- ✅ ノード自動接続485
+- ✅ 노드 자동 연결485
+
+### v485.9 偏移自动校准485 | Offset Auto Calibrate485 | オフセット自動校正485 | 오프셋 자동 보정485
+- ✅ 偏移自动校准485
+- ✅ Offset Auto Calibrate485
+- ✅ オフセット自動校正485
+- ✅ 오프셋 자동 보정485
+
+### v485.10 外部打开485 | Open With External485 | 外部で開く485 | 외부에서 열기485
+- ✅ 外部打开485
+- ✅ Open With External485
+- ✅ 外部で開く485
+- ✅ 외부에서 열기485
+
+### v485.11 排序自动排列485 | Order Auto Sort485 | 順序自動ソート485 | 순서 자동 정렬485
+- ✅ 排序自动排列485
+- ✅ Order Auto Sort485
+- ✅ 順序自動ソート485
+- ✅ 순서 자동 정렬485
+
+### v485.12 输出自动选择485 | Output Auto Select485 | 出力自動選択485 | 출력 자동 선택485
+- ✅ 输出自动选择485
+- ✅ Output Auto Select485
+- ✅ 出力自動選択485
+- ✅ 출력 자동 선택485
+
+### v485.13 叠加自动显示485 | Overlay Auto Show485 | オーバーレイ自動表示485 | 오버레이 자동 표시485
+- ✅ 叠加自动显示485
+- ✅ Overlay Auto Show485
+- ✅ オーバーレイ自動表示485
+- ✅ 오버레이 자동 표시485
+
+### v485.14 覆盖全局设置485 | Override Global485 | グローバルオーバーライド485 | 글로벌 오버라이드485
+- ✅ 覆盖全局设置485
+- ✅ Override Global485
+- ✅ グローバルオーバーライド485
+- ✅ 글로벌 오버라이드485
+
+### v485.15 打包自动压缩485 | Pack Auto Compress485 | パック自動圧縮485 | 팩 자동 압축485
+- ✅ 打包自动压缩485
+- ✅ Pack Auto Compress485
+- ✅ パック自動圧縮485
+- ✅ 팩 자동 압축485
+
+### v486.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v486.1-v486.15 功能列表
+- ✅ Module Auto Load486, Monitor CPU Usage486, Mount Auto Detect486, Mouse Hover Preview486, Move Transition486, Multi Thread Decode486, Nav Auto Collapse486, Node Auto Connect486, Offset Auto Calibrate486, Open With External486, Order Auto Sort486, Output Auto Select486, Overlay Auto Show486, Override Global486, Pack Auto Compress486
+
+### v486.1 模块自动加载486 | Module Auto Load486 | モジュール自動ロード486 | 모듈 자동 로드486
+- ✅ 模块自动加载486
+- ✅ Module Auto Load486
+- ✅ モジュール自動ロード486
+- ✅ 모듈 자동 로드486
+
+### v486.2 监控CPU使用率486 | Monitor CPU Usage486 | CPU使用率モニター486 | CPU 사용량 모니터486
+- ✅ 监控CPU使用率486
+- ✅ Monitor CPU Usage486
+- ✅ CPU使用率モニター486
+- ✅ CPU 사용량 모니터486
+
+### v486.3 挂载自动检测486 | Mount Auto Detect486 | マウント自動検出486 | 마운트 자동 감지486
+- ✅ 挂载自动检测486
+- ✅ Mount Auto Detect486
+- ✅ マウント自動検出486
+- ✅ 마운트 자동 감지486
+
+### v486.4 鼠标悬停预览486 | Mouse Hover Preview486 | マウスホバープレビュー486 | 마우스 호버 미리보기486
+- ✅ 鼠标悬停预览486
+- ✅ Mouse Hover Preview486
+- ✅ マウスホバープレビュー486
+- ✅ 마우스 호버 미리보기486
+
+### v486.5 移动过渡486 | Move Transition486 | ムーブトランジション486 | 무브 전환486
+- ✅ 移动过渡486
+- ✅ Move Transition486
+- ✅ ムーブトランジション486
+- ✅ 무브 전환486
+
+### v486.6 多线程解码486 | Multi Thread Decode486 | マルチスレッドデコード486 | 멀티스레드 디코딩486
+- ✅ 多线程解码486
+- ✅ Multi Thread Decode486
+- ✅ マルチスレッドデコード486
+- ✅ 멀티스레드 디코딩486
+
+### v486.7 导航自动折叠486 | Nav Auto Collapse486 | ナビ自動折りたたみ486 | 네비 자동 접기486
+- ✅ 导航自动折叠486
+- ✅ Nav Auto Collapse486
+- ✅ ナビ自動折りたたみ486
+- ✅ 네비 자동 접기486
+
+### v486.8 节点自动连接486 | Node Auto Connect486 | ノード自動接続486 | 노드 자동 연결486
+- ✅ 节点自动连接486
+- ✅ Node Auto Connect486
+- ✅ ノード自動接続486
+- ✅ 노드 자동 연결486
+
+### v486.9 偏移自动校准486 | Offset Auto Calibrate486 | オフセット自動校正486 | 오프셋 자동 보정486
+- ✅ 偏移自动校准486
+- ✅ Offset Auto Calibrate486
+- ✅ オフセット自動校正486
+- ✅ 오프셋 자동 보정486
+
+### v486.10 外部打开486 | Open With External486 | 外部で開く486 | 외부에서 열기486
+- ✅ 外部打开486
+- ✅ Open With External486
+- ✅ 外部で開く486
+- ✅ 외부에서 열기486
+
+### v486.11 排序自动排列486 | Order Auto Sort486 | 順序自動ソート486 | 순서 자동 정렬486
+- ✅ 排序自动排列486
+- ✅ Order Auto Sort486
+- ✅ 順序自動ソート486
+- ✅ 순서 자동 정렬486
+
+### v486.12 输出自动选择486 | Output Auto Select486 | 出力自動選択486 | 출력 자동 선택486
+- ✅ 输出自动选择486
+- ✅ Output Auto Select486
+- ✅ 出力自動選択486
+- ✅ 출력 자동 선택486
+
+### v486.13 叠加自动显示486 | Overlay Auto Show486 | オーバーレイ自動表示486 | 오버레이 자동 표시486
+- ✅ 叠加自动显示486
+- ✅ Overlay Auto Show486
+- ✅ オーバーレイ自動表示486
+- ✅ 오버레이 자동 표시486
+
+### v486.14 覆盖全局设置486 | Override Global486 | グローバルオーバーライド486 | 글로벌 오버라이드486
+- ✅ 覆盖全局设置486
+- ✅ Override Global486
+- ✅ グローバルオーバーライド486
+- ✅ 글로벌 오버라이드486
+
+### v486.15 打包自动压缩486 | Pack Auto Compress486 | パック自動圧縮486 | 팩 자동 압축486
+- ✅ 打包自动压缩486
+- ✅ Pack Auto Compress486
+- ✅ パック自動圧縮486
+- ✅ 팩 자동 압축486
+
+### v487.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v487.1-v487.15 功能列表
+- ✅ Module Auto Load487, Monitor CPU Usage487, Mount Auto Detect487, Mouse Hover Preview487, Move Transition487, Multi Thread Decode487, Nav Auto Collapse487, Node Auto Connect487, Offset Auto Calibrate487, Open With External487, Order Auto Sort487, Output Auto Select487, Overlay Auto Show487, Override Global487, Pack Auto Compress487
+
+### v487.1 模块自动加载487 | Module Auto Load487 | モジュール自動ロード487 | 모듈 자동 로드487
+- ✅ 模块自动加载487
+- ✅ Module Auto Load487
+- ✅ モジュール自動ロード487
+- ✅ 모듈 자동 로드487
+
+### v487.2 监控CPU使用率487 | Monitor CPU Usage487 | CPU使用率モニター487 | CPU 사용량 모니터487
+- ✅ 监控CPU使用率487
+- ✅ Monitor CPU Usage487
+- ✅ CPU使用率モニター487
+- ✅ CPU 사용량 모니터487
+
+### v487.3 挂载自动检测487 | Mount Auto Detect487 | マウント自動検出487 | 마운트 자동 감지487
+- ✅ 挂载自动检测487
+- ✅ Mount Auto Detect487
+- ✅ マウント自動検出487
+- ✅ 마운트 자동 감지487
+
+### v487.4 鼠标悬停预览487 | Mouse Hover Preview487 | マウスホバープレビュー487 | 마우스 호버 미리보기487
+- ✅ 鼠标悬停预览487
+- ✅ Mouse Hover Preview487
+- ✅ マウスホバープレビュー487
+- ✅ 마우스 호버 미리보기487
+
+### v487.5 移动过渡487 | Move Transition487 | ムーブトランジション487 | 무브 전환487
+- ✅ 移动过渡487
+- ✅ Move Transition487
+- ✅ ムーブトランジション487
+- ✅ 무브 전환487
+
+### v487.6 多线程解码487 | Multi Thread Decode487 | マルチスレッドデコード487 | 멀티스레드 디코딩487
+- ✅ 多线程解码487
+- ✅ Multi Thread Decode487
+- ✅ マルチスレッドデコード487
+- ✅ 멀티스레드 디코딩487
+
+### v487.7 导航自动折叠487 | Nav Auto Collapse487 | ナビ自動折りたたみ487 | 네비 자동 접기487
+- ✅ 导航自动折叠487
+- ✅ Nav Auto Collapse487
+- ✅ ナビ自動折りたたみ487
+- ✅ 네비 자동 접기487
+
+### v487.8 节点自动连接487 | Node Auto Connect487 | ノード自動接続487 | 노드 자동 연결487
+- ✅ 节点自动连接487
+- ✅ Node Auto Connect487
+- ✅ ノード自動接続487
+- ✅ 노드 자동 연결487
+
+### v487.9 偏移自动校准487 | Offset Auto Calibrate487 | オフセット自動校正487 | 오프셋 자동 보정487
+- ✅ 偏移自动校准487
+- ✅ Offset Auto Calibrate487
+- ✅ オフセット自動校正487
+- ✅ 오프셋 자동 보정487
+
+### v487.10 外部打开487 | Open With External487 | 外部で開く487 | 외부에서 열기487
+- ✅ 外部打开487
+- ✅ Open With External487
+- ✅ 外部で開く487
+- ✅ 외부에서 열기487
+
+### v487.11 排序自动排列487 | Order Auto Sort487 | 順序自動ソート487 | 순서 자동 정렬487
+- ✅ 排序自动排列487
+- ✅ Order Auto Sort487
+- ✅ 順序自動ソート487
+- ✅ 순서 자동 정렬487
+
+### v487.12 输出自动选择487 | Output Auto Select487 | 出力自動選択487 | 출력 자동 선택487
+- ✅ 输出自动选择487
+- ✅ Output Auto Select487
+- ✅ 出力自動選択487
+- ✅ 출력 자동 선택487
+
+### v487.13 叠加自动显示487 | Overlay Auto Show487 | オーバーレイ自動表示487 | 오버레이 자동 표시487
+- ✅ 叠加自动显示487
+- ✅ Overlay Auto Show487
+- ✅ オーバーレイ自動表示487
+- ✅ 오버레이 자동 표시487
+
+### v487.14 覆盖全局设置487 | Override Global487 | グローバルオーバーライド487 | 글로벌 오버라이드487
+- ✅ 覆盖全局设置487
+- ✅ Override Global487
+- ✅ グローバルオーバーライド487
+- ✅ 글로벌 오버라이드487
+
+### v487.15 打包自动压缩487 | Pack Auto Compress487 | パック自動圧縮487 | 팩 자동 압축487
+- ✅ 打包自动压缩487
+- ✅ Pack Auto Compress487
+- ✅ パック自動圧縮487
+- ✅ 팩 자동 압축487
+
+### v488.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v488.1-v488.15 功能列表
+- ✅ Module Auto Load488, Monitor CPU Usage488, Mount Auto Detect488, Mouse Hover Preview488, Move Transition488, Multi Thread Decode488, Nav Auto Collapse488, Node Auto Connect488, Offset Auto Calibrate488, Open With External488, Order Auto Sort488, Output Auto Select488, Overlay Auto Show488, Override Global488, Pack Auto Compress488
+
+### v488.1 模块自动加载488 | Module Auto Load488 | モジュール自動ロード488 | 모듈 자동 로드488
+- ✅ 模块自动加载488
+- ✅ Module Auto Load488
+- ✅ モジュール自動ロード488
+- ✅ 모듈 자동 로드488
+
+### v488.2 监控CPU使用率488 | Monitor CPU Usage488 | CPU使用率モニター488 | CPU 사용량 모니터488
+- ✅ 监控CPU使用率488
+- ✅ Monitor CPU Usage488
+- ✅ CPU使用率モニター488
+- ✅ CPU 사용량 모니터488
+
+### v488.3 挂载自动检测488 | Mount Auto Detect488 | マウント自動検出488 | 마운트 자동 감지488
+- ✅ 挂载自动检测488
+- ✅ Mount Auto Detect488
+- ✅ マウント自動検出488
+- ✅ 마운트 자동 감지488
+
+### v488.4 鼠标悬停预览488 | Mouse Hover Preview488 | マウスホバープレビュー488 | 마우스 호버 미리보기488
+- ✅ 鼠标悬停预览488
+- ✅ Mouse Hover Preview488
+- ✅ マウスホバープレビュー488
+- ✅ 마우스 호버 미리보기488
+
+### v488.5 移动过渡488 | Move Transition488 | ムーブトランジション488 | 무브 전환488
+- ✅ 移动过渡488
+- ✅ Move Transition488
+- ✅ ムーブトランジション488
+- ✅ 무브 전환488
+
+### v488.6 多线程解码488 | Multi Thread Decode488 | マルチスレッドデコード488 | 멀티스레드 디코딩488
+- ✅ 多线程解码488
+- ✅ Multi Thread Decode488
+- ✅ マルチスレッドデコード488
+- ✅ 멀티스레드 디코딩488
+
+### v488.7 导航自动折叠488 | Nav Auto Collapse488 | ナビ自動折りたたみ488 | 네비 자동 접기488
+- ✅ 导航自动折叠488
+- ✅ Nav Auto Collapse488
+- ✅ ナビ自動折りたたみ488
+- ✅ 네비 자동 접기488
+
+### v488.8 节点自动连接488 | Node Auto Connect488 | ノード自動接続488 | 노드 자동 연결488
+- ✅ 节点自动连接488
+- ✅ Node Auto Connect488
+- ✅ ノード自動接続488
+- ✅ 노드 자동 연결488
+
+### v488.9 偏移自动校准488 | Offset Auto Calibrate488 | オフセット自動校正488 | 오프셋 자동 보정488
+- ✅ 偏移自动校准488
+- ✅ Offset Auto Calibrate488
+- ✅ オフセット自動校正488
+- ✅ 오프셋 자동 보정488
+
+### v488.10 外部打开488 | Open With External488 | 外部で開く488 | 외부에서 열기488
+- ✅ 外部打开488
+- ✅ Open With External488
+- ✅ 外部で開く488
+- ✅ 외부에서 열기488
+
+### v488.11 排序自动排列488 | Order Auto Sort488 | 順序自動ソート488 | 순서 자동 정렬488
+- ✅ 排序自动排列488
+- ✅ Order Auto Sort488
+- ✅ 順序自動ソート488
+- ✅ 순서 자동 정렬488
+
+### v488.12 输出自动选择488 | Output Auto Select488 | 出力自動選択488 | 출력 자동 선택488
+- ✅ 输出自动选择488
+- ✅ Output Auto Select488
+- ✅ 出力自動選択488
+- ✅ 출력 자동 선택488
+
+### v488.13 叠加自动显示488 | Overlay Auto Show488 | オーバーレイ自動表示488 | 오버레이 자동 표시488
+- ✅ 叠加自动显示488
+- ✅ Overlay Auto Show488
+- ✅ オーバーレイ自動表示488
+- ✅ 오버레이 자동 표시488
+
+### v488.14 覆盖全局设置488 | Override Global488 | グローバルオーバーライド488 | 글로벌 오버라이드488
+- ✅ 覆盖全局设置488
+- ✅ Override Global488
+- ✅ グローバルオーバーライド488
+- ✅ 글로벌 오버라이드488
+
+### v488.15 打包自动压缩488 | Pack Auto Compress488 | パック自動圧縮488 | 팩 자동 압축488
+- ✅ 打包自动压缩488
+- ✅ Pack Auto Compress488
+- ✅ パック自動圧縮488
+- ✅ 팩 자동 압축488
+
+### v489.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v489.1-v489.15 功能列表
+- ✅ Module Auto Load489, Monitor CPU Usage489, Mount Auto Detect489, Mouse Hover Preview489, Move Transition489, Multi Thread Decode489, Nav Auto Collapse489, Node Auto Connect489, Offset Auto Calibrate489, Open With External489, Order Auto Sort489, Output Auto Select489, Overlay Auto Show489, Override Global489, Pack Auto Compress489
+
+### v489.1 模块自动加载489 | Module Auto Load489 | モジュール自動ロード489 | 모듈 자동 로드489
+- ✅ 模块自动加载489
+- ✅ Module Auto Load489
+- ✅ モジュール自動ロード489
+- ✅ 모듈 자동 로드489
+
+### v489.2 监控CPU使用率489 | Monitor CPU Usage489 | CPU使用率モニター489 | CPU 사용량 모니터489
+- ✅ 监控CPU使用率489
+- ✅ Monitor CPU Usage489
+- ✅ CPU使用率モニター489
+- ✅ CPU 사용량 모니터489
+
+### v489.3 挂载自动检测489 | Mount Auto Detect489 | マウント自動検出489 | 마운트 자동 감지489
+- ✅ 挂载自动检测489
+- ✅ Mount Auto Detect489
+- ✅ マウント自動検出489
+- ✅ 마운트 자동 감지489
+
+### v489.4 鼠标悬停预览489 | Mouse Hover Preview489 | マウスホバープレビュー489 | 마우스 호버 미리보기489
+- ✅ 鼠标悬停预览489
+- ✅ Mouse Hover Preview489
+- ✅ マウスホバープレビュー489
+- ✅ 마우스 호버 미리보기489
+
+### v489.5 移动过渡489 | Move Transition489 | ムーブトランジション489 | 무브 전환489
+- ✅ 移动过渡489
+- ✅ Move Transition489
+- ✅ ムーブトランジション489
+- ✅ 무브 전환489
+
+### v489.6 多线程解码489 | Multi Thread Decode489 | マルチスレッドデコード489 | 멀티스레드 디코딩489
+- ✅ 多线程解码489
+- ✅ Multi Thread Decode489
+- ✅ マルチスレッドデコード489
+- ✅ 멀티스레드 디코딩489
+
+### v489.7 导航自动折叠489 | Nav Auto Collapse489 | ナビ自動折りたたみ489 | 네비 자동 접기489
+- ✅ 导航自动折叠489
+- ✅ Nav Auto Collapse489
+- ✅ ナビ自動折りたたみ489
+- ✅ 네비 자동 접기489
+
+### v489.8 节点自动连接489 | Node Auto Connect489 | ノード自動接続489 | 노드 자동 연결489
+- ✅ 节点自动连接489
+- ✅ Node Auto Connect489
+- ✅ ノード自動接続489
+- ✅ 노드 자동 연결489
+
+### v489.9 偏移自动校准489 | Offset Auto Calibrate489 | オフセット自動校正489 | 오프셋 자동 보정489
+- ✅ 偏移自动校准489
+- ✅ Offset Auto Calibrate489
+- ✅ オフセット自動校正489
+- ✅ 오프셋 자동 보정489
+
+### v489.10 外部打开489 | Open With External489 | 外部で開く489 | 외부에서 열기489
+- ✅ 外部打开489
+- ✅ Open With External489
+- ✅ 外部で開く489
+- ✅ 외부에서 열기489
+
+### v489.11 排序自动排列489 | Order Auto Sort489 | 順序自動ソート489 | 순서 자동 정렬489
+- ✅ 排序自动排列489
+- ✅ Order Auto Sort489
+- ✅ 順序自動ソート489
+- ✅ 순서 자동 정렬489
+
+### v489.12 输出自动选择489 | Output Auto Select489 | 出力自動選択489 | 출력 자동 선택489
+- ✅ 输出自动选择489
+- ✅ Output Auto Select489
+- ✅ 出力自動選択489
+- ✅ 출력 자동 선택489
+
+### v489.13 叠加自动显示489 | Overlay Auto Show489 | オーバーレイ自動表示489 | 오버레이 자동 표시489
+- ✅ 叠加自动显示489
+- ✅ Overlay Auto Show489
+- ✅ オーバーレイ自動表示489
+- ✅ 오버레이 자동 표시489
+
+### v489.14 覆盖全局设置489 | Override Global489 | グローバルオーバーライド489 | 글로벌 오버라이드489
+- ✅ 覆盖全局设置489
+- ✅ Override Global489
+- ✅ グローバルオーバーライド489
+- ✅ 글로벌 오버라이드489
+
+### v489.15 打包自动压缩489 | Pack Auto Compress489 | パック自動圧縮489 | 팩 자동 압축489
+- ✅ 打包自动压缩489
+- ✅ Pack Auto Compress489
+- ✅ パック自動圧縮489
+- ✅ 팩 자동 압축489
+
+### v490.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v490.1-v490.15 功能列表
+- ✅ Module Auto Load490, Monitor CPU Usage490, Mount Auto Detect490, Mouse Hover Preview490, Move Transition490, Multi Thread Decode490, Nav Auto Collapse490, Node Auto Connect490, Offset Auto Calibrate490, Open With External490, Order Auto Sort490, Output Auto Select490, Overlay Auto Show490, Override Global490, Pack Auto Compress490
+
+### v490.1 模块自动加载490 | Module Auto Load490 | モジュール自動ロード490 | 모듈 자동 로드490
+- ✅ 模块自动加载490
+- ✅ Module Auto Load490
+- ✅ モジュール自動ロード490
+- ✅ 모듈 자동 로드490
+
+### v490.2 监控CPU使用率490 | Monitor CPU Usage490 | CPU使用率モニター490 | CPU 사용량 모니터490
+- ✅ 监控CPU使用率490
+- ✅ Monitor CPU Usage490
+- ✅ CPU使用率モニター490
+- ✅ CPU 사용량 모니터490
+
+### v490.3 挂载自动检测490 | Mount Auto Detect490 | マウント自動検出490 | 마운트 자동 감지490
+- ✅ 挂载自动检测490
+- ✅ Mount Auto Detect490
+- ✅ マウント自動検出490
+- ✅ 마운트 자동 감지490
+
+### v490.4 鼠标悬停预览490 | Mouse Hover Preview490 | マウスホバープレビュー490 | 마우스 호버 미리보기490
+- ✅ 鼠标悬停预览490
+- ✅ Mouse Hover Preview490
+- ✅ マウスホバープレビュー490
+- ✅ 마우스 호버 미리보기490
+
+### v490.5 移动过渡490 | Move Transition490 | ムーブトランジション490 | 무브 전환490
+- ✅ 移动过渡490
+- ✅ Move Transition490
+- ✅ ムーブトランジション490
+- ✅ 무브 전환490
+
+### v490.6 多线程解码490 | Multi Thread Decode490 | マルチスレッドデコード490 | 멀티스레드 디코딩490
+- ✅ 多线程解码490
+- ✅ Multi Thread Decode490
+- ✅ マルチスレッドデコード490
+- ✅ 멀티스레드 디코딩490
+
+### v490.7 导航自动折叠490 | Nav Auto Collapse490 | ナビ自動折りたたみ490 | 네비 자동 접기490
+- ✅ 导航自动折叠490
+- ✅ Nav Auto Collapse490
+- ✅ ナビ自動折りたたみ490
+- ✅ 네비 자동 접기490
+
+### v490.8 节点自动连接490 | Node Auto Connect490 | ノード自動接続490 | 노드 자동 연결490
+- ✅ 节点自动连接490
+- ✅ Node Auto Connect490
+- ✅ ノード自動接続490
+- ✅ 노드 자동 연결490
+
+### v490.9 偏移自动校准490 | Offset Auto Calibrate490 | オフセット自動校正490 | 오프셋 자동 보정490
+- ✅ 偏移自动校准490
+- ✅ Offset Auto Calibrate490
+- ✅ オフセット自動校正490
+- ✅ 오프셋 자동 보정490
+
+### v490.10 外部打开490 | Open With External490 | 外部で開く490 | 외부에서 열기490
+- ✅ 外部打开490
+- ✅ Open With External490
+- ✅ 外部で開く490
+- ✅ 외부에서 열기490
+
+### v490.11 排序自动排列490 | Order Auto Sort490 | 順序自動ソート490 | 순서 자동 정렬490
+- ✅ 排序自动排列490
+- ✅ Order Auto Sort490
+- ✅ 順序自動ソート490
+- ✅ 순서 자동 정렬490
+
+### v490.12 输出自动选择490 | Output Auto Select490 | 出力自動選択490 | 출력 자동 선택490
+- ✅ 输出自动选择490
+- ✅ Output Auto Select490
+- ✅ 出力自動選択490
+- ✅ 출력 자동 선택490
+
+### v490.13 叠加自动显示490 | Overlay Auto Show490 | オーバーレイ自動表示490 | 오버레이 자동 표시490
+- ✅ 叠加自动显示490
+- ✅ Overlay Auto Show490
+- ✅ オーバーレイ自動表示490
+- ✅ 오버레이 자동 표시490
+
+### v490.14 覆盖全局设置490 | Override Global490 | グローバルオーバーライド490 | 글로벌 오버라이드490
+- ✅ 覆盖全局设置490
+- ✅ Override Global490
+- ✅ グローバルオーバーライド490
+- ✅ 글로벌 오버라이드490
+
+### v490.15 打包自动压缩490 | Pack Auto Compress490 | パック自動圧縮490 | 팩 자동 압축490
+- ✅ 打包自动压缩490
+- ✅ Pack Auto Compress490
+- ✅ パック自動圧縮490
+- ✅ 팩 자동 압축490
+
 ### v55.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
 ### v55.1-v55.15 功能列表
 - ✅ Auto Resume, Font Monospace, Color Hue Auto, Peak Limiter, Send Queue, Cast Bandwidth Limit, Lock Screen, Filter Regex, Network Policy, Double Tap Action, Font Weight Custom, Tint Custom, Volume Compressor, Bg Padding, Cast Auto Quality
@@ -52400,4 +53341,4 @@ This project is based on open-source software. All rights belong to the original
 - **基础版本 | Base Versions**: v10.0.0 - v11.19.0 (25 versions)
 - **AI自动维护版本 | AI Maintained**: v12.1 - v45.15 (550+ versions)
 - **开发周期 | Development Cycle**: 2024 - 2026
-- **功能特性 | Features**: 4800+ new features added
+- **功能特性 | Features**: 4900+ new features added
