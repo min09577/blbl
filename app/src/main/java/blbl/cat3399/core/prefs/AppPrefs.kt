@@ -48248,6 +48248,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V690DIRECTAUTOROUTE690, false)
         set(value) = prefs.edit().putBoolean(KEY_V690DIRECTAUTOROUTE690, value).apply()
 
+    var v691dirtyAutoFlag691: Boolean
+        get() = prefs.getBoolean(KEY_V691DIRTYAUTOFLAG691, false)
+        set(value) = prefs.edit().putBoolean(KEY_V691DIRTYAUTOFLAG691, value).apply()
+
+    var v691disableAutoToggle691: Boolean
+        get() = prefs.getBoolean(KEY_V691DISABLEAUTOTOGGLE691, false)
+        set(value) = prefs.edit().putBoolean(KEY_V691DISABLEAUTOTOGGLE691, value).apply()
+
+    var v691discardAutoWarn691: Boolean
+        get() = prefs.getBoolean(KEY_V691DISCARDAUTOWARN691, false)
+        set(value) = prefs.edit().putBoolean(KEY_V691DISCARDAUTOWARN691, value).apply()
+
+    var v691discoverAutoScan691: Boolean
+        get() = prefs.getBoolean(KEY_V691DISCOVERAUTOSCAN691, false)
+        set(value) = prefs.edit().putBoolean(KEY_V691DISCOVERAUTOSCAN691, value).apply()
+
+    var v691dispatchAutoEvent691: Boolean
+        get() = prefs.getBoolean(KEY_V691DISPATCHAUTOEVENT691, false)
+        set(value) = prefs.edit().putBoolean(KEY_V691DISPATCHAUTOEVENT691, value).apply()
+
+    var v691displayAutoRotate691: Int
+        get() = prefs.getInt(KEY_V691DISPLAYAUTOROTATE691, 0)
+        set(value) = prefs.edit().putInt(KEY_V691DISPLAYAUTOROTATE691, value).apply()
+
+    var v691disposeAutoCleanup691: Boolean
+        get() = prefs.getBoolean(KEY_V691DISPOSEAUTOCLEANUP691, false)
+        set(value) = prefs.edit().putBoolean(KEY_V691DISPOSEAUTOCLEANUP691, value).apply()
+
+    var v691distAutoCalc691: Boolean
+        get() = prefs.getBoolean(KEY_V691DISTAUTOCALC691, false)
+        set(value) = prefs.edit().putBoolean(KEY_V691DISTAUTOCALC691, value).apply()
+
+    var v691divideAutoSplit691: Boolean
+        get() = prefs.getBoolean(KEY_V691DIVIDEAUTOSPLIT691, false)
+        set(value) = prefs.edit().putBoolean(KEY_V691DIVIDEAUTOSPLIT691, value).apply()
+
+    var v691documentAutoSave691: Boolean
+        get() = prefs.getBoolean(KEY_V691DOCUMENTAUTOSAVE691, false)
+        set(value) = prefs.edit().putBoolean(KEY_V691DOCUMENTAUTOSAVE691, value).apply()
+
+    var v691domainAutoResolve691: Boolean
+        get() = prefs.getBoolean(KEY_V691DOMAINAUTORESOLVE691, false)
+        set(value) = prefs.edit().putBoolean(KEY_V691DOMAINAUTORESOLVE691, value).apply()
+
+    var v691downloadAutoQueue691: Boolean
+        get() = prefs.getBoolean(KEY_V691DOWNLOADAUTOQUEUE691, false)
+        set(value) = prefs.edit().putBoolean(KEY_V691DOWNLOADAUTOQUEUE691, value).apply()
+
+    var v691draftAutoSave691: Boolean
+        get() = prefs.getBoolean(KEY_V691DRAFTAUTOSAVE691, false)
+        set(value) = prefs.edit().putBoolean(KEY_V691DRAFTAUTOSAVE691, value).apply()
+
+    var v691dragAutoScroll691: Boolean
+        get() = prefs.getBoolean(KEY_V691DRAGAUTOSCROLL691, false)
+        set(value) = prefs.edit().putBoolean(KEY_V691DRAGAUTOSCROLL691, value).apply()
+
+    var v691drawAutoAntialias691: Boolean
+        get() = prefs.getBoolean(KEY_V691DRAWAUTOANTIALIAS691, false)
+        set(value) = prefs.edit().putBoolean(KEY_V691DRAWAUTOANTIALIAS691, value).apply()
+
+    var v692dirtyAutoFlag692: Boolean
+        get() = prefs.getBoolean(KEY_V692DIRTYAUTOFLAG692, false)
+        set(value) = prefs.edit().putBoolean(KEY_V692DIRTYAUTOFLAG692, value).apply()
+
+    var v692disableAutoToggle692: Boolean
+        get() = prefs.getBoolean(KEY_V692DISABLEAUTOTOGGLE692, false)
+        set(value) = prefs.edit().putBoolean(KEY_V692DISABLEAUTOTOGGLE692, value).apply()
+
+    var v692discardAutoWarn692: Boolean
+        get() = prefs.getBoolean(KEY_V692DISCARDAUTOWARN692, false)
+        set(value) = prefs.edit().putBoolean(KEY_V692DISCARDAUTOWARN692, value).apply()
+
+    var v692discoverAutoScan692: Boolean
+        get() = prefs.getBoolean(KEY_V692DISCOVERAUTOSCAN692, false)
+        set(value) = prefs.edit().putBoolean(KEY_V692DISCOVERAUTOSCAN692, value).apply()
+
+    var v692dispatchAutoEvent692: Boolean
+        get() = prefs.getBoolean(KEY_V692DISPATCHAUTOEVENT692, false)
+        set(value) = prefs.edit().putBoolean(KEY_V692DISPATCHAUTOEVENT692, value).apply()
+
+    var v692displayAutoRotate692: Int
+        get() = prefs.getInt(KEY_V692DISPLAYAUTOROTATE692, 0)
+        set(value) = prefs.edit().putInt(KEY_V692DISPLAYAUTOROTATE692, value).apply()
+
+    var v692disposeAutoCleanup692: Boolean
+        get() = prefs.getBoolean(KEY_V692DISPOSEAUTOCLEANUP692, false)
+        set(value) = prefs.edit().putBoolean(KEY_V692DISPOSEAUTOCLEANUP692, value).apply()
+
+    var v692distAutoCalc692: Boolean
+        get() = prefs.getBoolean(KEY_V692DISTAUTOCALC692, false)
+        set(value) = prefs.edit().putBoolean(KEY_V692DISTAUTOCALC692, value).apply()
+
+    var v692divideAutoSplit692: Boolean
+        get() = prefs.getBoolean(KEY_V692DIVIDEAUTOSPLIT692, false)
+        set(value) = prefs.edit().putBoolean(KEY_V692DIVIDEAUTOSPLIT692, value).apply()
+
+    var v692documentAutoSave692: Boolean
+        get() = prefs.getBoolean(KEY_V692DOCUMENTAUTOSAVE692, false)
+        set(value) = prefs.edit().putBoolean(KEY_V692DOCUMENTAUTOSAVE692, value).apply()
+
+    var v692domainAutoResolve692: Boolean
+        get() = prefs.getBoolean(KEY_V692DOMAINAUTORESOLVE692, false)
+        set(value) = prefs.edit().putBoolean(KEY_V692DOMAINAUTORESOLVE692, value).apply()
+
+    var v692downloadAutoQueue692: Boolean
+        get() = prefs.getBoolean(KEY_V692DOWNLOADAUTOQUEUE692, false)
+        set(value) = prefs.edit().putBoolean(KEY_V692DOWNLOADAUTOQUEUE692, value).apply()
+
+    var v692draftAutoSave692: Boolean
+        get() = prefs.getBoolean(KEY_V692DRAFTAUTOSAVE692, false)
+        set(value) = prefs.edit().putBoolean(KEY_V692DRAFTAUTOSAVE692, value).apply()
+
+    var v692dragAutoScroll692: Boolean
+        get() = prefs.getBoolean(KEY_V692DRAGAUTOSCROLL692, false)
+        set(value) = prefs.edit().putBoolean(KEY_V692DRAGAUTOSCROLL692, value).apply()
+
+    var v692drawAutoAntialias692: Boolean
+        get() = prefs.getBoolean(KEY_V692DRAWAUTOANTIALIAS692, false)
+        set(value) = prefs.edit().putBoolean(KEY_V692DRAWAUTOANTIALIAS692, value).apply()
+
+    var v693dirtyAutoFlag693: Boolean
+        get() = prefs.getBoolean(KEY_V693DIRTYAUTOFLAG693, false)
+        set(value) = prefs.edit().putBoolean(KEY_V693DIRTYAUTOFLAG693, value).apply()
+
+    var v693disableAutoToggle693: Boolean
+        get() = prefs.getBoolean(KEY_V693DISABLEAUTOTOGGLE693, false)
+        set(value) = prefs.edit().putBoolean(KEY_V693DISABLEAUTOTOGGLE693, value).apply()
+
+    var v693discardAutoWarn693: Boolean
+        get() = prefs.getBoolean(KEY_V693DISCARDAUTOWARN693, false)
+        set(value) = prefs.edit().putBoolean(KEY_V693DISCARDAUTOWARN693, value).apply()
+
+    var v693discoverAutoScan693: Boolean
+        get() = prefs.getBoolean(KEY_V693DISCOVERAUTOSCAN693, false)
+        set(value) = prefs.edit().putBoolean(KEY_V693DISCOVERAUTOSCAN693, value).apply()
+
+    var v693dispatchAutoEvent693: Boolean
+        get() = prefs.getBoolean(KEY_V693DISPATCHAUTOEVENT693, false)
+        set(value) = prefs.edit().putBoolean(KEY_V693DISPATCHAUTOEVENT693, value).apply()
+
+    var v693displayAutoRotate693: Int
+        get() = prefs.getInt(KEY_V693DISPLAYAUTOROTATE693, 0)
+        set(value) = prefs.edit().putInt(KEY_V693DISPLAYAUTOROTATE693, value).apply()
+
+    var v693disposeAutoCleanup693: Boolean
+        get() = prefs.getBoolean(KEY_V693DISPOSEAUTOCLEANUP693, false)
+        set(value) = prefs.edit().putBoolean(KEY_V693DISPOSEAUTOCLEANUP693, value).apply()
+
+    var v693distAutoCalc693: Boolean
+        get() = prefs.getBoolean(KEY_V693DISTAUTOCALC693, false)
+        set(value) = prefs.edit().putBoolean(KEY_V693DISTAUTOCALC693, value).apply()
+
+    var v693divideAutoSplit693: Boolean
+        get() = prefs.getBoolean(KEY_V693DIVIDEAUTOSPLIT693, false)
+        set(value) = prefs.edit().putBoolean(KEY_V693DIVIDEAUTOSPLIT693, value).apply()
+
+    var v693documentAutoSave693: Boolean
+        get() = prefs.getBoolean(KEY_V693DOCUMENTAUTOSAVE693, false)
+        set(value) = prefs.edit().putBoolean(KEY_V693DOCUMENTAUTOSAVE693, value).apply()
+
+    var v693domainAutoResolve693: Boolean
+        get() = prefs.getBoolean(KEY_V693DOMAINAUTORESOLVE693, false)
+        set(value) = prefs.edit().putBoolean(KEY_V693DOMAINAUTORESOLVE693, value).apply()
+
+    var v693downloadAutoQueue693: Boolean
+        get() = prefs.getBoolean(KEY_V693DOWNLOADAUTOQUEUE693, false)
+        set(value) = prefs.edit().putBoolean(KEY_V693DOWNLOADAUTOQUEUE693, value).apply()
+
+    var v693draftAutoSave693: Boolean
+        get() = prefs.getBoolean(KEY_V693DRAFTAUTOSAVE693, false)
+        set(value) = prefs.edit().putBoolean(KEY_V693DRAFTAUTOSAVE693, value).apply()
+
+    var v693dragAutoScroll693: Boolean
+        get() = prefs.getBoolean(KEY_V693DRAGAUTOSCROLL693, false)
+        set(value) = prefs.edit().putBoolean(KEY_V693DRAGAUTOSCROLL693, value).apply()
+
+    var v693drawAutoAntialias693: Boolean
+        get() = prefs.getBoolean(KEY_V693DRAWAUTOANTIALIAS693, false)
+        set(value) = prefs.edit().putBoolean(KEY_V693DRAWAUTOANTIALIAS693, value).apply()
+
+    var v694dirtyAutoFlag694: Boolean
+        get() = prefs.getBoolean(KEY_V694DIRTYAUTOFLAG694, false)
+        set(value) = prefs.edit().putBoolean(KEY_V694DIRTYAUTOFLAG694, value).apply()
+
+    var v694disableAutoToggle694: Boolean
+        get() = prefs.getBoolean(KEY_V694DISABLEAUTOTOGGLE694, false)
+        set(value) = prefs.edit().putBoolean(KEY_V694DISABLEAUTOTOGGLE694, value).apply()
+
+    var v694discardAutoWarn694: Boolean
+        get() = prefs.getBoolean(KEY_V694DISCARDAUTOWARN694, false)
+        set(value) = prefs.edit().putBoolean(KEY_V694DISCARDAUTOWARN694, value).apply()
+
+    var v694discoverAutoScan694: Boolean
+        get() = prefs.getBoolean(KEY_V694DISCOVERAUTOSCAN694, false)
+        set(value) = prefs.edit().putBoolean(KEY_V694DISCOVERAUTOSCAN694, value).apply()
+
+    var v694dispatchAutoEvent694: Boolean
+        get() = prefs.getBoolean(KEY_V694DISPATCHAUTOEVENT694, false)
+        set(value) = prefs.edit().putBoolean(KEY_V694DISPATCHAUTOEVENT694, value).apply()
+
+    var v694displayAutoRotate694: Int
+        get() = prefs.getInt(KEY_V694DISPLAYAUTOROTATE694, 0)
+        set(value) = prefs.edit().putInt(KEY_V694DISPLAYAUTOROTATE694, value).apply()
+
+    var v694disposeAutoCleanup694: Boolean
+        get() = prefs.getBoolean(KEY_V694DISPOSEAUTOCLEANUP694, false)
+        set(value) = prefs.edit().putBoolean(KEY_V694DISPOSEAUTOCLEANUP694, value).apply()
+
+    var v694distAutoCalc694: Boolean
+        get() = prefs.getBoolean(KEY_V694DISTAUTOCALC694, false)
+        set(value) = prefs.edit().putBoolean(KEY_V694DISTAUTOCALC694, value).apply()
+
+    var v694divideAutoSplit694: Boolean
+        get() = prefs.getBoolean(KEY_V694DIVIDEAUTOSPLIT694, false)
+        set(value) = prefs.edit().putBoolean(KEY_V694DIVIDEAUTOSPLIT694, value).apply()
+
+    var v694documentAutoSave694: Boolean
+        get() = prefs.getBoolean(KEY_V694DOCUMENTAUTOSAVE694, false)
+        set(value) = prefs.edit().putBoolean(KEY_V694DOCUMENTAUTOSAVE694, value).apply()
+
+    var v694domainAutoResolve694: Boolean
+        get() = prefs.getBoolean(KEY_V694DOMAINAUTORESOLVE694, false)
+        set(value) = prefs.edit().putBoolean(KEY_V694DOMAINAUTORESOLVE694, value).apply()
+
+    var v694downloadAutoQueue694: Boolean
+        get() = prefs.getBoolean(KEY_V694DOWNLOADAUTOQUEUE694, false)
+        set(value) = prefs.edit().putBoolean(KEY_V694DOWNLOADAUTOQUEUE694, value).apply()
+
+    var v694draftAutoSave694: Boolean
+        get() = prefs.getBoolean(KEY_V694DRAFTAUTOSAVE694, false)
+        set(value) = prefs.edit().putBoolean(KEY_V694DRAFTAUTOSAVE694, value).apply()
+
+    var v694dragAutoScroll694: Boolean
+        get() = prefs.getBoolean(KEY_V694DRAGAUTOSCROLL694, false)
+        set(value) = prefs.edit().putBoolean(KEY_V694DRAGAUTOSCROLL694, value).apply()
+
+    var v694drawAutoAntialias694: Boolean
+        get() = prefs.getBoolean(KEY_V694DRAWAUTOANTIALIAS694, false)
+        set(value) = prefs.edit().putBoolean(KEY_V694DRAWAUTOANTIALIAS694, value).apply()
+
+    var v695dirtyAutoFlag695: Boolean
+        get() = prefs.getBoolean(KEY_V695DIRTYAUTOFLAG695, false)
+        set(value) = prefs.edit().putBoolean(KEY_V695DIRTYAUTOFLAG695, value).apply()
+
+    var v695disableAutoToggle695: Boolean
+        get() = prefs.getBoolean(KEY_V695DISABLEAUTOTOGGLE695, false)
+        set(value) = prefs.edit().putBoolean(KEY_V695DISABLEAUTOTOGGLE695, value).apply()
+
+    var v695discardAutoWarn695: Boolean
+        get() = prefs.getBoolean(KEY_V695DISCARDAUTOWARN695, false)
+        set(value) = prefs.edit().putBoolean(KEY_V695DISCARDAUTOWARN695, value).apply()
+
+    var v695discoverAutoScan695: Boolean
+        get() = prefs.getBoolean(KEY_V695DISCOVERAUTOSCAN695, false)
+        set(value) = prefs.edit().putBoolean(KEY_V695DISCOVERAUTOSCAN695, value).apply()
+
+    var v695dispatchAutoEvent695: Boolean
+        get() = prefs.getBoolean(KEY_V695DISPATCHAUTOEVENT695, false)
+        set(value) = prefs.edit().putBoolean(KEY_V695DISPATCHAUTOEVENT695, value).apply()
+
+    var v695displayAutoRotate695: Int
+        get() = prefs.getInt(KEY_V695DISPLAYAUTOROTATE695, 0)
+        set(value) = prefs.edit().putInt(KEY_V695DISPLAYAUTOROTATE695, value).apply()
+
+    var v695disposeAutoCleanup695: Boolean
+        get() = prefs.getBoolean(KEY_V695DISPOSEAUTOCLEANUP695, false)
+        set(value) = prefs.edit().putBoolean(KEY_V695DISPOSEAUTOCLEANUP695, value).apply()
+
+    var v695distAutoCalc695: Boolean
+        get() = prefs.getBoolean(KEY_V695DISTAUTOCALC695, false)
+        set(value) = prefs.edit().putBoolean(KEY_V695DISTAUTOCALC695, value).apply()
+
+    var v695divideAutoSplit695: Boolean
+        get() = prefs.getBoolean(KEY_V695DIVIDEAUTOSPLIT695, false)
+        set(value) = prefs.edit().putBoolean(KEY_V695DIVIDEAUTOSPLIT695, value).apply()
+
+    var v695documentAutoSave695: Boolean
+        get() = prefs.getBoolean(KEY_V695DOCUMENTAUTOSAVE695, false)
+        set(value) = prefs.edit().putBoolean(KEY_V695DOCUMENTAUTOSAVE695, value).apply()
+
+    var v695domainAutoResolve695: Boolean
+        get() = prefs.getBoolean(KEY_V695DOMAINAUTORESOLVE695, false)
+        set(value) = prefs.edit().putBoolean(KEY_V695DOMAINAUTORESOLVE695, value).apply()
+
+    var v695downloadAutoQueue695: Boolean
+        get() = prefs.getBoolean(KEY_V695DOWNLOADAUTOQUEUE695, false)
+        set(value) = prefs.edit().putBoolean(KEY_V695DOWNLOADAUTOQUEUE695, value).apply()
+
+    var v695draftAutoSave695: Boolean
+        get() = prefs.getBoolean(KEY_V695DRAFTAUTOSAVE695, false)
+        set(value) = prefs.edit().putBoolean(KEY_V695DRAFTAUTOSAVE695, value).apply()
+
+    var v695dragAutoScroll695: Boolean
+        get() = prefs.getBoolean(KEY_V695DRAGAUTOSCROLL695, false)
+        set(value) = prefs.edit().putBoolean(KEY_V695DRAGAUTOSCROLL695, value).apply()
+
+    var v695drawAutoAntialias695: Boolean
+        get() = prefs.getBoolean(KEY_V695DRAWAUTOANTIALIAS695, false)
+        set(value) = prefs.edit().putBoolean(KEY_V695DRAWAUTOANTIALIAS695, value).apply()
+
+    var v696dirtyAutoFlag696: Boolean
+        get() = prefs.getBoolean(KEY_V696DIRTYAUTOFLAG696, false)
+        set(value) = prefs.edit().putBoolean(KEY_V696DIRTYAUTOFLAG696, value).apply()
+
+    var v696disableAutoToggle696: Boolean
+        get() = prefs.getBoolean(KEY_V696DISABLEAUTOTOGGLE696, false)
+        set(value) = prefs.edit().putBoolean(KEY_V696DISABLEAUTOTOGGLE696, value).apply()
+
+    var v696discardAutoWarn696: Boolean
+        get() = prefs.getBoolean(KEY_V696DISCARDAUTOWARN696, false)
+        set(value) = prefs.edit().putBoolean(KEY_V696DISCARDAUTOWARN696, value).apply()
+
+    var v696discoverAutoScan696: Boolean
+        get() = prefs.getBoolean(KEY_V696DISCOVERAUTOSCAN696, false)
+        set(value) = prefs.edit().putBoolean(KEY_V696DISCOVERAUTOSCAN696, value).apply()
+
+    var v696dispatchAutoEvent696: Boolean
+        get() = prefs.getBoolean(KEY_V696DISPATCHAUTOEVENT696, false)
+        set(value) = prefs.edit().putBoolean(KEY_V696DISPATCHAUTOEVENT696, value).apply()
+
+    var v696displayAutoRotate696: Int
+        get() = prefs.getInt(KEY_V696DISPLAYAUTOROTATE696, 0)
+        set(value) = prefs.edit().putInt(KEY_V696DISPLAYAUTOROTATE696, value).apply()
+
+    var v696disposeAutoCleanup696: Boolean
+        get() = prefs.getBoolean(KEY_V696DISPOSEAUTOCLEANUP696, false)
+        set(value) = prefs.edit().putBoolean(KEY_V696DISPOSEAUTOCLEANUP696, value).apply()
+
+    var v696distAutoCalc696: Boolean
+        get() = prefs.getBoolean(KEY_V696DISTAUTOCALC696, false)
+        set(value) = prefs.edit().putBoolean(KEY_V696DISTAUTOCALC696, value).apply()
+
+    var v696divideAutoSplit696: Boolean
+        get() = prefs.getBoolean(KEY_V696DIVIDEAUTOSPLIT696, false)
+        set(value) = prefs.edit().putBoolean(KEY_V696DIVIDEAUTOSPLIT696, value).apply()
+
+    var v696documentAutoSave696: Boolean
+        get() = prefs.getBoolean(KEY_V696DOCUMENTAUTOSAVE696, false)
+        set(value) = prefs.edit().putBoolean(KEY_V696DOCUMENTAUTOSAVE696, value).apply()
+
+    var v696domainAutoResolve696: Boolean
+        get() = prefs.getBoolean(KEY_V696DOMAINAUTORESOLVE696, false)
+        set(value) = prefs.edit().putBoolean(KEY_V696DOMAINAUTORESOLVE696, value).apply()
+
+    var v696downloadAutoQueue696: Boolean
+        get() = prefs.getBoolean(KEY_V696DOWNLOADAUTOQUEUE696, false)
+        set(value) = prefs.edit().putBoolean(KEY_V696DOWNLOADAUTOQUEUE696, value).apply()
+
+    var v696draftAutoSave696: Boolean
+        get() = prefs.getBoolean(KEY_V696DRAFTAUTOSAVE696, false)
+        set(value) = prefs.edit().putBoolean(KEY_V696DRAFTAUTOSAVE696, value).apply()
+
+    var v696dragAutoScroll696: Boolean
+        get() = prefs.getBoolean(KEY_V696DRAGAUTOSCROLL696, false)
+        set(value) = prefs.edit().putBoolean(KEY_V696DRAGAUTOSCROLL696, value).apply()
+
+    var v696drawAutoAntialias696: Boolean
+        get() = prefs.getBoolean(KEY_V696DRAWAUTOANTIALIAS696, false)
+        set(value) = prefs.edit().putBoolean(KEY_V696DRAWAUTOANTIALIAS696, value).apply()
+
+    var v697dirtyAutoFlag697: Boolean
+        get() = prefs.getBoolean(KEY_V697DIRTYAUTOFLAG697, false)
+        set(value) = prefs.edit().putBoolean(KEY_V697DIRTYAUTOFLAG697, value).apply()
+
+    var v697disableAutoToggle697: Boolean
+        get() = prefs.getBoolean(KEY_V697DISABLEAUTOTOGGLE697, false)
+        set(value) = prefs.edit().putBoolean(KEY_V697DISABLEAUTOTOGGLE697, value).apply()
+
+    var v697discardAutoWarn697: Boolean
+        get() = prefs.getBoolean(KEY_V697DISCARDAUTOWARN697, false)
+        set(value) = prefs.edit().putBoolean(KEY_V697DISCARDAUTOWARN697, value).apply()
+
+    var v697discoverAutoScan697: Boolean
+        get() = prefs.getBoolean(KEY_V697DISCOVERAUTOSCAN697, false)
+        set(value) = prefs.edit().putBoolean(KEY_V697DISCOVERAUTOSCAN697, value).apply()
+
+    var v697dispatchAutoEvent697: Boolean
+        get() = prefs.getBoolean(KEY_V697DISPATCHAUTOEVENT697, false)
+        set(value) = prefs.edit().putBoolean(KEY_V697DISPATCHAUTOEVENT697, value).apply()
+
+    var v697displayAutoRotate697: Int
+        get() = prefs.getInt(KEY_V697DISPLAYAUTOROTATE697, 0)
+        set(value) = prefs.edit().putInt(KEY_V697DISPLAYAUTOROTATE697, value).apply()
+
+    var v697disposeAutoCleanup697: Boolean
+        get() = prefs.getBoolean(KEY_V697DISPOSEAUTOCLEANUP697, false)
+        set(value) = prefs.edit().putBoolean(KEY_V697DISPOSEAUTOCLEANUP697, value).apply()
+
+    var v697distAutoCalc697: Boolean
+        get() = prefs.getBoolean(KEY_V697DISTAUTOCALC697, false)
+        set(value) = prefs.edit().putBoolean(KEY_V697DISTAUTOCALC697, value).apply()
+
+    var v697divideAutoSplit697: Boolean
+        get() = prefs.getBoolean(KEY_V697DIVIDEAUTOSPLIT697, false)
+        set(value) = prefs.edit().putBoolean(KEY_V697DIVIDEAUTOSPLIT697, value).apply()
+
+    var v697documentAutoSave697: Boolean
+        get() = prefs.getBoolean(KEY_V697DOCUMENTAUTOSAVE697, false)
+        set(value) = prefs.edit().putBoolean(KEY_V697DOCUMENTAUTOSAVE697, value).apply()
+
+    var v697domainAutoResolve697: Boolean
+        get() = prefs.getBoolean(KEY_V697DOMAINAUTORESOLVE697, false)
+        set(value) = prefs.edit().putBoolean(KEY_V697DOMAINAUTORESOLVE697, value).apply()
+
+    var v697downloadAutoQueue697: Boolean
+        get() = prefs.getBoolean(KEY_V697DOWNLOADAUTOQUEUE697, false)
+        set(value) = prefs.edit().putBoolean(KEY_V697DOWNLOADAUTOQUEUE697, value).apply()
+
+    var v697draftAutoSave697: Boolean
+        get() = prefs.getBoolean(KEY_V697DRAFTAUTOSAVE697, false)
+        set(value) = prefs.edit().putBoolean(KEY_V697DRAFTAUTOSAVE697, value).apply()
+
+    var v697dragAutoScroll697: Boolean
+        get() = prefs.getBoolean(KEY_V697DRAGAUTOSCROLL697, false)
+        set(value) = prefs.edit().putBoolean(KEY_V697DRAGAUTOSCROLL697, value).apply()
+
+    var v697drawAutoAntialias697: Boolean
+        get() = prefs.getBoolean(KEY_V697DRAWAUTOANTIALIAS697, false)
+        set(value) = prefs.edit().putBoolean(KEY_V697DRAWAUTOANTIALIAS697, value).apply()
+
+    var v698dirtyAutoFlag698: Boolean
+        get() = prefs.getBoolean(KEY_V698DIRTYAUTOFLAG698, false)
+        set(value) = prefs.edit().putBoolean(KEY_V698DIRTYAUTOFLAG698, value).apply()
+
+    var v698disableAutoToggle698: Boolean
+        get() = prefs.getBoolean(KEY_V698DISABLEAUTOTOGGLE698, false)
+        set(value) = prefs.edit().putBoolean(KEY_V698DISABLEAUTOTOGGLE698, value).apply()
+
+    var v698discardAutoWarn698: Boolean
+        get() = prefs.getBoolean(KEY_V698DISCARDAUTOWARN698, false)
+        set(value) = prefs.edit().putBoolean(KEY_V698DISCARDAUTOWARN698, value).apply()
+
+    var v698discoverAutoScan698: Boolean
+        get() = prefs.getBoolean(KEY_V698DISCOVERAUTOSCAN698, false)
+        set(value) = prefs.edit().putBoolean(KEY_V698DISCOVERAUTOSCAN698, value).apply()
+
+    var v698dispatchAutoEvent698: Boolean
+        get() = prefs.getBoolean(KEY_V698DISPATCHAUTOEVENT698, false)
+        set(value) = prefs.edit().putBoolean(KEY_V698DISPATCHAUTOEVENT698, value).apply()
+
+    var v698displayAutoRotate698: Int
+        get() = prefs.getInt(KEY_V698DISPLAYAUTOROTATE698, 0)
+        set(value) = prefs.edit().putInt(KEY_V698DISPLAYAUTOROTATE698, value).apply()
+
+    var v698disposeAutoCleanup698: Boolean
+        get() = prefs.getBoolean(KEY_V698DISPOSEAUTOCLEANUP698, false)
+        set(value) = prefs.edit().putBoolean(KEY_V698DISPOSEAUTOCLEANUP698, value).apply()
+
+    var v698distAutoCalc698: Boolean
+        get() = prefs.getBoolean(KEY_V698DISTAUTOCALC698, false)
+        set(value) = prefs.edit().putBoolean(KEY_V698DISTAUTOCALC698, value).apply()
+
+    var v698divideAutoSplit698: Boolean
+        get() = prefs.getBoolean(KEY_V698DIVIDEAUTOSPLIT698, false)
+        set(value) = prefs.edit().putBoolean(KEY_V698DIVIDEAUTOSPLIT698, value).apply()
+
+    var v698documentAutoSave698: Boolean
+        get() = prefs.getBoolean(KEY_V698DOCUMENTAUTOSAVE698, false)
+        set(value) = prefs.edit().putBoolean(KEY_V698DOCUMENTAUTOSAVE698, value).apply()
+
+    var v698domainAutoResolve698: Boolean
+        get() = prefs.getBoolean(KEY_V698DOMAINAUTORESOLVE698, false)
+        set(value) = prefs.edit().putBoolean(KEY_V698DOMAINAUTORESOLVE698, value).apply()
+
+    var v698downloadAutoQueue698: Boolean
+        get() = prefs.getBoolean(KEY_V698DOWNLOADAUTOQUEUE698, false)
+        set(value) = prefs.edit().putBoolean(KEY_V698DOWNLOADAUTOQUEUE698, value).apply()
+
+    var v698draftAutoSave698: Boolean
+        get() = prefs.getBoolean(KEY_V698DRAFTAUTOSAVE698, false)
+        set(value) = prefs.edit().putBoolean(KEY_V698DRAFTAUTOSAVE698, value).apply()
+
+    var v698dragAutoScroll698: Boolean
+        get() = prefs.getBoolean(KEY_V698DRAGAUTOSCROLL698, false)
+        set(value) = prefs.edit().putBoolean(KEY_V698DRAGAUTOSCROLL698, value).apply()
+
+    var v698drawAutoAntialias698: Boolean
+        get() = prefs.getBoolean(KEY_V698DRAWAUTOANTIALIAS698, false)
+        set(value) = prefs.edit().putBoolean(KEY_V698DRAWAUTOANTIALIAS698, value).apply()
+
+    var v699dirtyAutoFlag699: Boolean
+        get() = prefs.getBoolean(KEY_V699DIRTYAUTOFLAG699, false)
+        set(value) = prefs.edit().putBoolean(KEY_V699DIRTYAUTOFLAG699, value).apply()
+
+    var v699disableAutoToggle699: Boolean
+        get() = prefs.getBoolean(KEY_V699DISABLEAUTOTOGGLE699, false)
+        set(value) = prefs.edit().putBoolean(KEY_V699DISABLEAUTOTOGGLE699, value).apply()
+
+    var v699discardAutoWarn699: Boolean
+        get() = prefs.getBoolean(KEY_V699DISCARDAUTOWARN699, false)
+        set(value) = prefs.edit().putBoolean(KEY_V699DISCARDAUTOWARN699, value).apply()
+
+    var v699discoverAutoScan699: Boolean
+        get() = prefs.getBoolean(KEY_V699DISCOVERAUTOSCAN699, false)
+        set(value) = prefs.edit().putBoolean(KEY_V699DISCOVERAUTOSCAN699, value).apply()
+
+    var v699dispatchAutoEvent699: Boolean
+        get() = prefs.getBoolean(KEY_V699DISPATCHAUTOEVENT699, false)
+        set(value) = prefs.edit().putBoolean(KEY_V699DISPATCHAUTOEVENT699, value).apply()
+
+    var v699displayAutoRotate699: Int
+        get() = prefs.getInt(KEY_V699DISPLAYAUTOROTATE699, 0)
+        set(value) = prefs.edit().putInt(KEY_V699DISPLAYAUTOROTATE699, value).apply()
+
+    var v699disposeAutoCleanup699: Boolean
+        get() = prefs.getBoolean(KEY_V699DISPOSEAUTOCLEANUP699, false)
+        set(value) = prefs.edit().putBoolean(KEY_V699DISPOSEAUTOCLEANUP699, value).apply()
+
+    var v699distAutoCalc699: Boolean
+        get() = prefs.getBoolean(KEY_V699DISTAUTOCALC699, false)
+        set(value) = prefs.edit().putBoolean(KEY_V699DISTAUTOCALC699, value).apply()
+
+    var v699divideAutoSplit699: Boolean
+        get() = prefs.getBoolean(KEY_V699DIVIDEAUTOSPLIT699, false)
+        set(value) = prefs.edit().putBoolean(KEY_V699DIVIDEAUTOSPLIT699, value).apply()
+
+    var v699documentAutoSave699: Boolean
+        get() = prefs.getBoolean(KEY_V699DOCUMENTAUTOSAVE699, false)
+        set(value) = prefs.edit().putBoolean(KEY_V699DOCUMENTAUTOSAVE699, value).apply()
+
+    var v699domainAutoResolve699: Boolean
+        get() = prefs.getBoolean(KEY_V699DOMAINAUTORESOLVE699, false)
+        set(value) = prefs.edit().putBoolean(KEY_V699DOMAINAUTORESOLVE699, value).apply()
+
+    var v699downloadAutoQueue699: Boolean
+        get() = prefs.getBoolean(KEY_V699DOWNLOADAUTOQUEUE699, false)
+        set(value) = prefs.edit().putBoolean(KEY_V699DOWNLOADAUTOQUEUE699, value).apply()
+
+    var v699draftAutoSave699: Boolean
+        get() = prefs.getBoolean(KEY_V699DRAFTAUTOSAVE699, false)
+        set(value) = prefs.edit().putBoolean(KEY_V699DRAFTAUTOSAVE699, value).apply()
+
+    var v699dragAutoScroll699: Boolean
+        get() = prefs.getBoolean(KEY_V699DRAGAUTOSCROLL699, false)
+        set(value) = prefs.edit().putBoolean(KEY_V699DRAGAUTOSCROLL699, value).apply()
+
+    var v699drawAutoAntialias699: Boolean
+        get() = prefs.getBoolean(KEY_V699DRAWAUTOANTIALIAS699, false)
+        set(value) = prefs.edit().putBoolean(KEY_V699DRAWAUTOANTIALIAS699, value).apply()
+
+    var v700dirtyAutoFlag700: Boolean
+        get() = prefs.getBoolean(KEY_V700DIRTYAUTOFLAG700, false)
+        set(value) = prefs.edit().putBoolean(KEY_V700DIRTYAUTOFLAG700, value).apply()
+
+    var v700disableAutoToggle700: Boolean
+        get() = prefs.getBoolean(KEY_V700DISABLEAUTOTOGGLE700, false)
+        set(value) = prefs.edit().putBoolean(KEY_V700DISABLEAUTOTOGGLE700, value).apply()
+
+    var v700discardAutoWarn700: Boolean
+        get() = prefs.getBoolean(KEY_V700DISCARDAUTOWARN700, false)
+        set(value) = prefs.edit().putBoolean(KEY_V700DISCARDAUTOWARN700, value).apply()
+
+    var v700discoverAutoScan700: Boolean
+        get() = prefs.getBoolean(KEY_V700DISCOVERAUTOSCAN700, false)
+        set(value) = prefs.edit().putBoolean(KEY_V700DISCOVERAUTOSCAN700, value).apply()
+
+    var v700dispatchAutoEvent700: Boolean
+        get() = prefs.getBoolean(KEY_V700DISPATCHAUTOEVENT700, false)
+        set(value) = prefs.edit().putBoolean(KEY_V700DISPATCHAUTOEVENT700, value).apply()
+
+    var v700displayAutoRotate700: Int
+        get() = prefs.getInt(KEY_V700DISPLAYAUTOROTATE700, 0)
+        set(value) = prefs.edit().putInt(KEY_V700DISPLAYAUTOROTATE700, value).apply()
+
+    var v700disposeAutoCleanup700: Boolean
+        get() = prefs.getBoolean(KEY_V700DISPOSEAUTOCLEANUP700, false)
+        set(value) = prefs.edit().putBoolean(KEY_V700DISPOSEAUTOCLEANUP700, value).apply()
+
+    var v700distAutoCalc700: Boolean
+        get() = prefs.getBoolean(KEY_V700DISTAUTOCALC700, false)
+        set(value) = prefs.edit().putBoolean(KEY_V700DISTAUTOCALC700, value).apply()
+
+    var v700divideAutoSplit700: Boolean
+        get() = prefs.getBoolean(KEY_V700DIVIDEAUTOSPLIT700, false)
+        set(value) = prefs.edit().putBoolean(KEY_V700DIVIDEAUTOSPLIT700, value).apply()
+
+    var v700documentAutoSave700: Boolean
+        get() = prefs.getBoolean(KEY_V700DOCUMENTAUTOSAVE700, false)
+        set(value) = prefs.edit().putBoolean(KEY_V700DOCUMENTAUTOSAVE700, value).apply()
+
+    var v700domainAutoResolve700: Boolean
+        get() = prefs.getBoolean(KEY_V700DOMAINAUTORESOLVE700, false)
+        set(value) = prefs.edit().putBoolean(KEY_V700DOMAINAUTORESOLVE700, value).apply()
+
+    var v700downloadAutoQueue700: Boolean
+        get() = prefs.getBoolean(KEY_V700DOWNLOADAUTOQUEUE700, false)
+        set(value) = prefs.edit().putBoolean(KEY_V700DOWNLOADAUTOQUEUE700, value).apply()
+
+    var v700draftAutoSave700: Boolean
+        get() = prefs.getBoolean(KEY_V700DRAFTAUTOSAVE700, false)
+        set(value) = prefs.edit().putBoolean(KEY_V700DRAFTAUTOSAVE700, value).apply()
+
+    var v700dragAutoScroll700: Boolean
+        get() = prefs.getBoolean(KEY_V700DRAGAUTOSCROLL700, false)
+        set(value) = prefs.edit().putBoolean(KEY_V700DRAGAUTOSCROLL700, value).apply()
+
+    var v700drawAutoAntialias700: Boolean
+        get() = prefs.getBoolean(KEY_V700DRAWAUTOANTIALIAS700, false)
+        set(value) = prefs.edit().putBoolean(KEY_V700DRAWAUTOANTIALIAS700, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -61180,5 +61780,155 @@ class AppPrefs(context: Context) {
         const val KEY_V690DIGESTAUTOCHECK690 = "v690digestAutoCheck690" // v690 Digest Auto Check690
         const val KEY_V690DIGITALAUTOSIGN690 = "v690digitalAutoSign690" // v690 Digital Auto Sign690
         const val KEY_V690DIRECTAUTOROUTE690 = "v690directAutoRoute690" // v690 Direct Auto Route690
+        const val KEY_V691DIRTYAUTOFLAG691 = "v691dirtyAutoFlag691" // v691 Dirty Auto Flag691
+        const val KEY_V691DISABLEAUTOTOGGLE691 = "v691disableAutoToggle691" // v691 Disable Auto Toggle691
+        const val KEY_V691DISCARDAUTOWARN691 = "v691discardAutoWarn691" // v691 Discard Auto Warn691
+        const val KEY_V691DISCOVERAUTOSCAN691 = "v691discoverAutoScan691" // v691 Discover Auto Scan691
+        const val KEY_V691DISPATCHAUTOEVENT691 = "v691dispatchAutoEvent691" // v691 Dispatch Auto Event691
+        const val KEY_V691DISPLAYAUTOROTATE691 = "v691displayAutoRotate691" // v691 Display Auto Rotate691
+        const val KEY_V691DISPOSEAUTOCLEANUP691 = "v691disposeAutoCleanup691" // v691 Dispose Auto Cleanup691
+        const val KEY_V691DISTAUTOCALC691 = "v691distAutoCalc691" // v691 Dist Auto Calc691
+        const val KEY_V691DIVIDEAUTOSPLIT691 = "v691divideAutoSplit691" // v691 Divide Auto Split691
+        const val KEY_V691DOCUMENTAUTOSAVE691 = "v691documentAutoSave691" // v691 Document Auto Save691
+        const val KEY_V691DOMAINAUTORESOLVE691 = "v691domainAutoResolve691" // v691 Domain Auto Resolve691
+        const val KEY_V691DOWNLOADAUTOQUEUE691 = "v691downloadAutoQueue691" // v691 Download Auto Queue691
+        const val KEY_V691DRAFTAUTOSAVE691 = "v691draftAutoSave691" // v691 Draft Auto Save691
+        const val KEY_V691DRAGAUTOSCROLL691 = "v691dragAutoScroll691" // v691 Drag Auto Scroll691
+        const val KEY_V691DRAWAUTOANTIALIAS691 = "v691drawAutoAntialias691" // v691 Draw Auto Antialias691
+        const val KEY_V692DIRTYAUTOFLAG692 = "v692dirtyAutoFlag692" // v692 Dirty Auto Flag692
+        const val KEY_V692DISABLEAUTOTOGGLE692 = "v692disableAutoToggle692" // v692 Disable Auto Toggle692
+        const val KEY_V692DISCARDAUTOWARN692 = "v692discardAutoWarn692" // v692 Discard Auto Warn692
+        const val KEY_V692DISCOVERAUTOSCAN692 = "v692discoverAutoScan692" // v692 Discover Auto Scan692
+        const val KEY_V692DISPATCHAUTOEVENT692 = "v692dispatchAutoEvent692" // v692 Dispatch Auto Event692
+        const val KEY_V692DISPLAYAUTOROTATE692 = "v692displayAutoRotate692" // v692 Display Auto Rotate692
+        const val KEY_V692DISPOSEAUTOCLEANUP692 = "v692disposeAutoCleanup692" // v692 Dispose Auto Cleanup692
+        const val KEY_V692DISTAUTOCALC692 = "v692distAutoCalc692" // v692 Dist Auto Calc692
+        const val KEY_V692DIVIDEAUTOSPLIT692 = "v692divideAutoSplit692" // v692 Divide Auto Split692
+        const val KEY_V692DOCUMENTAUTOSAVE692 = "v692documentAutoSave692" // v692 Document Auto Save692
+        const val KEY_V692DOMAINAUTORESOLVE692 = "v692domainAutoResolve692" // v692 Domain Auto Resolve692
+        const val KEY_V692DOWNLOADAUTOQUEUE692 = "v692downloadAutoQueue692" // v692 Download Auto Queue692
+        const val KEY_V692DRAFTAUTOSAVE692 = "v692draftAutoSave692" // v692 Draft Auto Save692
+        const val KEY_V692DRAGAUTOSCROLL692 = "v692dragAutoScroll692" // v692 Drag Auto Scroll692
+        const val KEY_V692DRAWAUTOANTIALIAS692 = "v692drawAutoAntialias692" // v692 Draw Auto Antialias692
+        const val KEY_V693DIRTYAUTOFLAG693 = "v693dirtyAutoFlag693" // v693 Dirty Auto Flag693
+        const val KEY_V693DISABLEAUTOTOGGLE693 = "v693disableAutoToggle693" // v693 Disable Auto Toggle693
+        const val KEY_V693DISCARDAUTOWARN693 = "v693discardAutoWarn693" // v693 Discard Auto Warn693
+        const val KEY_V693DISCOVERAUTOSCAN693 = "v693discoverAutoScan693" // v693 Discover Auto Scan693
+        const val KEY_V693DISPATCHAUTOEVENT693 = "v693dispatchAutoEvent693" // v693 Dispatch Auto Event693
+        const val KEY_V693DISPLAYAUTOROTATE693 = "v693displayAutoRotate693" // v693 Display Auto Rotate693
+        const val KEY_V693DISPOSEAUTOCLEANUP693 = "v693disposeAutoCleanup693" // v693 Dispose Auto Cleanup693
+        const val KEY_V693DISTAUTOCALC693 = "v693distAutoCalc693" // v693 Dist Auto Calc693
+        const val KEY_V693DIVIDEAUTOSPLIT693 = "v693divideAutoSplit693" // v693 Divide Auto Split693
+        const val KEY_V693DOCUMENTAUTOSAVE693 = "v693documentAutoSave693" // v693 Document Auto Save693
+        const val KEY_V693DOMAINAUTORESOLVE693 = "v693domainAutoResolve693" // v693 Domain Auto Resolve693
+        const val KEY_V693DOWNLOADAUTOQUEUE693 = "v693downloadAutoQueue693" // v693 Download Auto Queue693
+        const val KEY_V693DRAFTAUTOSAVE693 = "v693draftAutoSave693" // v693 Draft Auto Save693
+        const val KEY_V693DRAGAUTOSCROLL693 = "v693dragAutoScroll693" // v693 Drag Auto Scroll693
+        const val KEY_V693DRAWAUTOANTIALIAS693 = "v693drawAutoAntialias693" // v693 Draw Auto Antialias693
+        const val KEY_V694DIRTYAUTOFLAG694 = "v694dirtyAutoFlag694" // v694 Dirty Auto Flag694
+        const val KEY_V694DISABLEAUTOTOGGLE694 = "v694disableAutoToggle694" // v694 Disable Auto Toggle694
+        const val KEY_V694DISCARDAUTOWARN694 = "v694discardAutoWarn694" // v694 Discard Auto Warn694
+        const val KEY_V694DISCOVERAUTOSCAN694 = "v694discoverAutoScan694" // v694 Discover Auto Scan694
+        const val KEY_V694DISPATCHAUTOEVENT694 = "v694dispatchAutoEvent694" // v694 Dispatch Auto Event694
+        const val KEY_V694DISPLAYAUTOROTATE694 = "v694displayAutoRotate694" // v694 Display Auto Rotate694
+        const val KEY_V694DISPOSEAUTOCLEANUP694 = "v694disposeAutoCleanup694" // v694 Dispose Auto Cleanup694
+        const val KEY_V694DISTAUTOCALC694 = "v694distAutoCalc694" // v694 Dist Auto Calc694
+        const val KEY_V694DIVIDEAUTOSPLIT694 = "v694divideAutoSplit694" // v694 Divide Auto Split694
+        const val KEY_V694DOCUMENTAUTOSAVE694 = "v694documentAutoSave694" // v694 Document Auto Save694
+        const val KEY_V694DOMAINAUTORESOLVE694 = "v694domainAutoResolve694" // v694 Domain Auto Resolve694
+        const val KEY_V694DOWNLOADAUTOQUEUE694 = "v694downloadAutoQueue694" // v694 Download Auto Queue694
+        const val KEY_V694DRAFTAUTOSAVE694 = "v694draftAutoSave694" // v694 Draft Auto Save694
+        const val KEY_V694DRAGAUTOSCROLL694 = "v694dragAutoScroll694" // v694 Drag Auto Scroll694
+        const val KEY_V694DRAWAUTOANTIALIAS694 = "v694drawAutoAntialias694" // v694 Draw Auto Antialias694
+        const val KEY_V695DIRTYAUTOFLAG695 = "v695dirtyAutoFlag695" // v695 Dirty Auto Flag695
+        const val KEY_V695DISABLEAUTOTOGGLE695 = "v695disableAutoToggle695" // v695 Disable Auto Toggle695
+        const val KEY_V695DISCARDAUTOWARN695 = "v695discardAutoWarn695" // v695 Discard Auto Warn695
+        const val KEY_V695DISCOVERAUTOSCAN695 = "v695discoverAutoScan695" // v695 Discover Auto Scan695
+        const val KEY_V695DISPATCHAUTOEVENT695 = "v695dispatchAutoEvent695" // v695 Dispatch Auto Event695
+        const val KEY_V695DISPLAYAUTOROTATE695 = "v695displayAutoRotate695" // v695 Display Auto Rotate695
+        const val KEY_V695DISPOSEAUTOCLEANUP695 = "v695disposeAutoCleanup695" // v695 Dispose Auto Cleanup695
+        const val KEY_V695DISTAUTOCALC695 = "v695distAutoCalc695" // v695 Dist Auto Calc695
+        const val KEY_V695DIVIDEAUTOSPLIT695 = "v695divideAutoSplit695" // v695 Divide Auto Split695
+        const val KEY_V695DOCUMENTAUTOSAVE695 = "v695documentAutoSave695" // v695 Document Auto Save695
+        const val KEY_V695DOMAINAUTORESOLVE695 = "v695domainAutoResolve695" // v695 Domain Auto Resolve695
+        const val KEY_V695DOWNLOADAUTOQUEUE695 = "v695downloadAutoQueue695" // v695 Download Auto Queue695
+        const val KEY_V695DRAFTAUTOSAVE695 = "v695draftAutoSave695" // v695 Draft Auto Save695
+        const val KEY_V695DRAGAUTOSCROLL695 = "v695dragAutoScroll695" // v695 Drag Auto Scroll695
+        const val KEY_V695DRAWAUTOANTIALIAS695 = "v695drawAutoAntialias695" // v695 Draw Auto Antialias695
+        const val KEY_V696DIRTYAUTOFLAG696 = "v696dirtyAutoFlag696" // v696 Dirty Auto Flag696
+        const val KEY_V696DISABLEAUTOTOGGLE696 = "v696disableAutoToggle696" // v696 Disable Auto Toggle696
+        const val KEY_V696DISCARDAUTOWARN696 = "v696discardAutoWarn696" // v696 Discard Auto Warn696
+        const val KEY_V696DISCOVERAUTOSCAN696 = "v696discoverAutoScan696" // v696 Discover Auto Scan696
+        const val KEY_V696DISPATCHAUTOEVENT696 = "v696dispatchAutoEvent696" // v696 Dispatch Auto Event696
+        const val KEY_V696DISPLAYAUTOROTATE696 = "v696displayAutoRotate696" // v696 Display Auto Rotate696
+        const val KEY_V696DISPOSEAUTOCLEANUP696 = "v696disposeAutoCleanup696" // v696 Dispose Auto Cleanup696
+        const val KEY_V696DISTAUTOCALC696 = "v696distAutoCalc696" // v696 Dist Auto Calc696
+        const val KEY_V696DIVIDEAUTOSPLIT696 = "v696divideAutoSplit696" // v696 Divide Auto Split696
+        const val KEY_V696DOCUMENTAUTOSAVE696 = "v696documentAutoSave696" // v696 Document Auto Save696
+        const val KEY_V696DOMAINAUTORESOLVE696 = "v696domainAutoResolve696" // v696 Domain Auto Resolve696
+        const val KEY_V696DOWNLOADAUTOQUEUE696 = "v696downloadAutoQueue696" // v696 Download Auto Queue696
+        const val KEY_V696DRAFTAUTOSAVE696 = "v696draftAutoSave696" // v696 Draft Auto Save696
+        const val KEY_V696DRAGAUTOSCROLL696 = "v696dragAutoScroll696" // v696 Drag Auto Scroll696
+        const val KEY_V696DRAWAUTOANTIALIAS696 = "v696drawAutoAntialias696" // v696 Draw Auto Antialias696
+        const val KEY_V697DIRTYAUTOFLAG697 = "v697dirtyAutoFlag697" // v697 Dirty Auto Flag697
+        const val KEY_V697DISABLEAUTOTOGGLE697 = "v697disableAutoToggle697" // v697 Disable Auto Toggle697
+        const val KEY_V697DISCARDAUTOWARN697 = "v697discardAutoWarn697" // v697 Discard Auto Warn697
+        const val KEY_V697DISCOVERAUTOSCAN697 = "v697discoverAutoScan697" // v697 Discover Auto Scan697
+        const val KEY_V697DISPATCHAUTOEVENT697 = "v697dispatchAutoEvent697" // v697 Dispatch Auto Event697
+        const val KEY_V697DISPLAYAUTOROTATE697 = "v697displayAutoRotate697" // v697 Display Auto Rotate697
+        const val KEY_V697DISPOSEAUTOCLEANUP697 = "v697disposeAutoCleanup697" // v697 Dispose Auto Cleanup697
+        const val KEY_V697DISTAUTOCALC697 = "v697distAutoCalc697" // v697 Dist Auto Calc697
+        const val KEY_V697DIVIDEAUTOSPLIT697 = "v697divideAutoSplit697" // v697 Divide Auto Split697
+        const val KEY_V697DOCUMENTAUTOSAVE697 = "v697documentAutoSave697" // v697 Document Auto Save697
+        const val KEY_V697DOMAINAUTORESOLVE697 = "v697domainAutoResolve697" // v697 Domain Auto Resolve697
+        const val KEY_V697DOWNLOADAUTOQUEUE697 = "v697downloadAutoQueue697" // v697 Download Auto Queue697
+        const val KEY_V697DRAFTAUTOSAVE697 = "v697draftAutoSave697" // v697 Draft Auto Save697
+        const val KEY_V697DRAGAUTOSCROLL697 = "v697dragAutoScroll697" // v697 Drag Auto Scroll697
+        const val KEY_V697DRAWAUTOANTIALIAS697 = "v697drawAutoAntialias697" // v697 Draw Auto Antialias697
+        const val KEY_V698DIRTYAUTOFLAG698 = "v698dirtyAutoFlag698" // v698 Dirty Auto Flag698
+        const val KEY_V698DISABLEAUTOTOGGLE698 = "v698disableAutoToggle698" // v698 Disable Auto Toggle698
+        const val KEY_V698DISCARDAUTOWARN698 = "v698discardAutoWarn698" // v698 Discard Auto Warn698
+        const val KEY_V698DISCOVERAUTOSCAN698 = "v698discoverAutoScan698" // v698 Discover Auto Scan698
+        const val KEY_V698DISPATCHAUTOEVENT698 = "v698dispatchAutoEvent698" // v698 Dispatch Auto Event698
+        const val KEY_V698DISPLAYAUTOROTATE698 = "v698displayAutoRotate698" // v698 Display Auto Rotate698
+        const val KEY_V698DISPOSEAUTOCLEANUP698 = "v698disposeAutoCleanup698" // v698 Dispose Auto Cleanup698
+        const val KEY_V698DISTAUTOCALC698 = "v698distAutoCalc698" // v698 Dist Auto Calc698
+        const val KEY_V698DIVIDEAUTOSPLIT698 = "v698divideAutoSplit698" // v698 Divide Auto Split698
+        const val KEY_V698DOCUMENTAUTOSAVE698 = "v698documentAutoSave698" // v698 Document Auto Save698
+        const val KEY_V698DOMAINAUTORESOLVE698 = "v698domainAutoResolve698" // v698 Domain Auto Resolve698
+        const val KEY_V698DOWNLOADAUTOQUEUE698 = "v698downloadAutoQueue698" // v698 Download Auto Queue698
+        const val KEY_V698DRAFTAUTOSAVE698 = "v698draftAutoSave698" // v698 Draft Auto Save698
+        const val KEY_V698DRAGAUTOSCROLL698 = "v698dragAutoScroll698" // v698 Drag Auto Scroll698
+        const val KEY_V698DRAWAUTOANTIALIAS698 = "v698drawAutoAntialias698" // v698 Draw Auto Antialias698
+        const val KEY_V699DIRTYAUTOFLAG699 = "v699dirtyAutoFlag699" // v699 Dirty Auto Flag699
+        const val KEY_V699DISABLEAUTOTOGGLE699 = "v699disableAutoToggle699" // v699 Disable Auto Toggle699
+        const val KEY_V699DISCARDAUTOWARN699 = "v699discardAutoWarn699" // v699 Discard Auto Warn699
+        const val KEY_V699DISCOVERAUTOSCAN699 = "v699discoverAutoScan699" // v699 Discover Auto Scan699
+        const val KEY_V699DISPATCHAUTOEVENT699 = "v699dispatchAutoEvent699" // v699 Dispatch Auto Event699
+        const val KEY_V699DISPLAYAUTOROTATE699 = "v699displayAutoRotate699" // v699 Display Auto Rotate699
+        const val KEY_V699DISPOSEAUTOCLEANUP699 = "v699disposeAutoCleanup699" // v699 Dispose Auto Cleanup699
+        const val KEY_V699DISTAUTOCALC699 = "v699distAutoCalc699" // v699 Dist Auto Calc699
+        const val KEY_V699DIVIDEAUTOSPLIT699 = "v699divideAutoSplit699" // v699 Divide Auto Split699
+        const val KEY_V699DOCUMENTAUTOSAVE699 = "v699documentAutoSave699" // v699 Document Auto Save699
+        const val KEY_V699DOMAINAUTORESOLVE699 = "v699domainAutoResolve699" // v699 Domain Auto Resolve699
+        const val KEY_V699DOWNLOADAUTOQUEUE699 = "v699downloadAutoQueue699" // v699 Download Auto Queue699
+        const val KEY_V699DRAFTAUTOSAVE699 = "v699draftAutoSave699" // v699 Draft Auto Save699
+        const val KEY_V699DRAGAUTOSCROLL699 = "v699dragAutoScroll699" // v699 Drag Auto Scroll699
+        const val KEY_V699DRAWAUTOANTIALIAS699 = "v699drawAutoAntialias699" // v699 Draw Auto Antialias699
+        const val KEY_V700DIRTYAUTOFLAG700 = "v700dirtyAutoFlag700" // v700 Dirty Auto Flag700
+        const val KEY_V700DISABLEAUTOTOGGLE700 = "v700disableAutoToggle700" // v700 Disable Auto Toggle700
+        const val KEY_V700DISCARDAUTOWARN700 = "v700discardAutoWarn700" // v700 Discard Auto Warn700
+        const val KEY_V700DISCOVERAUTOSCAN700 = "v700discoverAutoScan700" // v700 Discover Auto Scan700
+        const val KEY_V700DISPATCHAUTOEVENT700 = "v700dispatchAutoEvent700" // v700 Dispatch Auto Event700
+        const val KEY_V700DISPLAYAUTOROTATE700 = "v700displayAutoRotate700" // v700 Display Auto Rotate700
+        const val KEY_V700DISPOSEAUTOCLEANUP700 = "v700disposeAutoCleanup700" // v700 Dispose Auto Cleanup700
+        const val KEY_V700DISTAUTOCALC700 = "v700distAutoCalc700" // v700 Dist Auto Calc700
+        const val KEY_V700DIVIDEAUTOSPLIT700 = "v700divideAutoSplit700" // v700 Divide Auto Split700
+        const val KEY_V700DOCUMENTAUTOSAVE700 = "v700documentAutoSave700" // v700 Document Auto Save700
+        const val KEY_V700DOMAINAUTORESOLVE700 = "v700domainAutoResolve700" // v700 Domain Auto Resolve700
+        const val KEY_V700DOWNLOADAUTOQUEUE700 = "v700downloadAutoQueue700" // v700 Download Auto Queue700
+        const val KEY_V700DRAFTAUTOSAVE700 = "v700draftAutoSave700" // v700 Draft Auto Save700
+        const val KEY_V700DRAGAUTOSCROLL700 = "v700dragAutoScroll700" // v700 Drag Auto Scroll700
+        const val KEY_V700DRAWAUTOANTIALIAS700 = "v700drawAutoAntialias700" // v700 Draw Auto Antialias700
     }
 }
