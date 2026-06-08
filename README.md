@@ -118,7 +118,7 @@ This project is based on open-source software. All rights belong to the original
 ## 📋 更新日志 | Changelog | 変更履歴 | 변경 로그
 
 ### 最新版本 | Latest Version | 最新バージョン | 최신 버전
-- **v320.15** - 2026-06-08
+- **v330.15** - 2026-06-08
 
 ---
 
@@ -33879,6 +33879,947 @@ This project is based on open-source software. All rights belong to the original
 - ✅ 字幕フェードイン312
 - ✅ 자막 페이드 인312
 
+
+### v321.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v321.1-v321.15 功能列表
+- ✅ Audio Dynamic Range303, Danmaku Top Count Max303, Subtitle Stroke Width303, Gesture Long Press Action303, Cast Quality303, Playlist Repeat Mode303, Cache Max Size303, Progress Bar Height303, Volume Level Indicator303, History Search Enabled303, Playback Speed Memory303, Screenshot Format303, Video Deinterlace303, Danmaku Top Count Max304, Subtitle Stroke Width304
+
+### v321.1 音频动态范围303 | Audio Dynamic Range303 | オーディオダイナミックレンジ303 | 오디오 다이나믹 레인지303
+- ✅ 音频动态范围303
+- ✅ Audio Dynamic Range303
+- ✅ オーディオダイナミックレンジ303
+- ✅ 오디오 다이나믹 레인지303
+
+### v321.2 弹幕顶部最大数量303 | Danmaku Top Count Max303 | コメントトップ最大数303 | 댓글 상단 최대 수303
+- ✅ 弹幕顶部最大数量303
+- ✅ Danmaku Top Count Max303
+- ✅ コメントトップ最大数303
+- ✅ 댓글 상단 최대 수303
+
+### v321.3 字幕描边宽度303 | Subtitle Stroke Width303 | 字幕ストローク幅303 | 자막 스트로크 너비303
+- ✅ 字幕描边宽度303
+- ✅ Subtitle Stroke Width303
+- ✅ 字幕ストローク幅303
+- ✅ 자막 스트로크 너비303
+
+### v321.4 手势长按操作303 | Gesture Long Press Action303 | ジェスチャーロングプレスアク션303 | 제스처 길게 누르기 동작303
+- ✅ 手势长按操作303
+- ✅ Gesture Long Press Action303
+- ✅ ジェスチャーロングプレスアク션303
+- ✅ 제스처 길게 누르기 동작303
+
+### v321.5 投射质量303 | Cast Quality303 | キャスト品質303 | 캐스트 품질303
+- ✅ 投射质量303
+- ✅ Cast Quality303
+- ✅ キャスト品質303
+- ✅ 캐스트 품질303
+
+### v321.6 播放列表重复模式303 | Playlist Repeat Mode303 | プレイリストリピートモード303 | 재생 목록 반복 모드303
+- ✅ 播放列表重复模式303
+- ✅ Playlist Repeat Mode303
+- ✅ プレイリストリピートモード303
+- ✅ 재생 목록 반복 모드303
+
+### v321.7 缓存最大大小303 | Cache Max Size303 | キャッシュ最大サイズ303 | 캐시 최대 크기303
+- ✅ 缓存最大大小303
+- ✅ Cache Max Size303
+- ✅ キャッシュ最大サイズ303
+- ✅ 캐시 최대 크기303
+
+### v321.8 进度条高度303 | Progress Bar Height303 | プログレスバー高さ303 | 진행 바 높이303
+- ✅ 进度条高度303
+- ✅ Progress Bar Height303
+- ✅ プログレスバー高さ303
+- ✅ 진행 바 높이303
+
+### v321.9 音量级别指示器303 | Volume Level Indicator303 | ボリュームレベルインジケーター303 | 볼륨 레벨 표시기303
+- ✅ 音量级别指示器303
+- ✅ Volume Level Indicator303
+- ✅ ボリュームレベルインジケーター303
+- ✅ 볼륨 레벨 표시기303
+
+### v321.10 历史搜索启用303 | History Search Enabled303 | 履歴検索有効303 | 기록 검색 활성화303
+- ✅ 历史搜索启用303
+- ✅ History Search Enabled303
+- ✅ 履歴検索有効303
+- ✅ 기록 검색 활성화303
+
+### v321.11 播放速度记忆303 | Playback Speed Memory303 | 再生速度記憶303 | 재생 속도 기억303
+- ✅ 播放速度记忆303
+- ✅ Playback Speed Memory303
+- ✅ 再生速度記憶303
+- ✅ 재생 속도 기억303
+
+### v321.12 截图格式303 | Screenshot Format303 | スクリーンショットフォーマット303 | 스크린샷 형식303
+- ✅ 截图格式303
+- ✅ Screenshot Format303
+- ✅ スクリーンショットフォーマット303
+- ✅ 스크린샷 형식303
+
+### v321.13 视频去隔行303 | Video Deinterlace303 | ビデオデインターレース303 | 비디오 디인터레이스303
+- ✅ 视频去隔行303
+- ✅ Video Deinterlace303
+- ✅ ビデオデインターレース303
+- ✅ 비디오 디인터레이스303
+
+### v321.14 弹幕顶部最大数量304 | Danmaku Top Count Max304 | コメントトップ最大数304 | 댓글 상단 최대 수304
+- ✅ 弹幕顶部最大数量304
+- ✅ Danmaku Top Count Max304
+- ✅ コメントトップ最大数304
+- ✅ 댓글 상단 최대 수304
+
+### v321.15 字幕描边宽度304 | Subtitle Stroke Width304 | 字幕ストローク幅304 | 자막 스트로크 너비304
+- ✅ 字幕描边宽度304
+- ✅ Subtitle Stroke Width304
+- ✅ 字幕ストローク幅304
+- ✅ 자막 스트로크 너비304
+
+### v322.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v322.1-v322.15 功能列表
+- ✅ Audio Dynamic Range304, Danmaku Top Count Max305, Subtitle Stroke Width305, Gesture Long Press Action304, Cast Quality304, Playlist Repeat Mode304, Cache Max Size304, Progress Bar Height304, Volume Level Indicator304, History Search Enabled304, Playback Speed Memory304, Screenshot Format304, Video Deinterlace304, Danmaku Top Count Max306, Subtitle Stroke Width306
+
+### v322.1 音频动态范围304 | Audio Dynamic Range304 | オーディオダイナミックレンジ304 | 오디오 다이나믹 레인지304
+- ✅ 音频动态范围304
+- ✅ Audio Dynamic Range304
+- ✅ オーディオダイナミックレンジ304
+- ✅ 오디오 다이나믹 레인지304
+
+### v322.2 弹幕顶部最大数量305 | Danmaku Top Count Max305 | コメントトップ最大数305 | 댓글 상단 최대 수305
+- ✅ 弹幕顶部最大数量305
+- ✅ Danmaku Top Count Max305
+- ✅ コメントトップ最大数305
+- ✅ 댓글 상단 최대 수305
+
+### v322.3 字幕描边宽度305 | Subtitle Stroke Width305 | 字幕ストローク幅305 | 자막 스트로크 너비305
+- ✅ 字幕描边宽度305
+- ✅ Subtitle Stroke Width305
+- ✅ 字幕ストローク幅305
+- ✅ 자막 스트로크 너비305
+
+### v322.4 手势长按操作304 | Gesture Long Press Action304 | ジェスチャーロングプレスアクション304 | 제스처 길게 누르기 동작304
+- ✅ 手势长按操作304
+- ✅ Gesture Long Press Action304
+- ✅ ジェスチャーロングプレスアクション304
+- ✅ 제스처 길게 누르기 동작304
+
+### v322.5 投射质量304 | Cast Quality304 | キャスト品質304 | 캐스트 품질304
+- ✅ 投射质量304
+- ✅ Cast Quality304
+- ✅ キャスト品質304
+- ✅ 캐스트 품질304
+
+### v322.6 播放列表重复模式304 | Playlist Repeat Mode304 | プレイリストリピートモード304 | 재생 목록 반복 모드304
+- ✅ 播放列表重复模式304
+- ✅ Playlist Repeat Mode304
+- ✅ プレイリストリピートモード304
+- ✅ 재생 목록 반복 모드304
+
+### v322.7 缓存最大大小304 | Cache Max Size304 | キャッシュ最大サイズ304 | 캐시 최대 크기304
+- ✅ 缓存最大大小304
+- ✅ Cache Max Size304
+- ✅ キャッシュ最大サイズ304
+- ✅ 캐시 최대 크기304
+
+### v322.8 进度条高度304 | Progress Bar Height304 | プログレスバー高さ304 | 진행 바 높이304
+- ✅ 进度条高度304
+- ✅ Progress Bar Height304
+- ✅ プログレスバー高さ304
+- ✅ 진행 바 높이304
+
+### v322.9 音量级别指示器304 | Volume Level Indicator304 | ボリュームレベルインジケーター304 | 볼륨 레벨 표시기304
+- ✅ 音量级别指示器304
+- ✅ Volume Level Indicator304
+- ✅ ボリュームレベルインジケーター304
+- ✅ 볼륨 레벨 표시기304
+
+### v322.10 历史搜索启用304 | History Search Enabled304 | 履歴検索有効304 | 기록 검색 활성화304
+- ✅ 历史搜索启用304
+- ✅ History Search Enabled304
+- ✅ 履歴検索有効304
+- ✅ 기록 검색 활성화304
+
+### v322.11 播放速度记忆304 | Playback Speed Memory304 | 再生速度記憶304 | 재생 속도 기억304
+- ✅ 播放速度记忆304
+- ✅ Playback Speed Memory304
+- ✅ 再生速度記憶304
+- ✅ 재생 속도 기억304
+
+### v322.12 截图格式304 | Screenshot Format304 | スクリーンショットフォーマット304 | 스크린샷 형식304
+- ✅ 截图格式304
+- ✅ Screenshot Format304
+- ✅ スクリーンショットフォーマット304
+- ✅ 스크린샷 형식304
+
+### v322.13 视频去隔行304 | Video Deinterlace304 | ビデオデインターレース304 | 비디오 디인터레이스304
+- ✅ 视频去隔行304
+- ✅ Video Deinterlace304
+- ✅ ビデオデインターレース304
+- ✅ 비디오 디인터레이스304
+
+### v322.14 弹幕顶部最大数量306 | Danmaku Top Count Max306 | コメントトップ最大数306 | 댓글 상단 최대 수306
+- ✅ 弹幕顶部最大数量306
+- ✅ Danmaku Top Count Max306
+- ✅ コメントトップ最大数306
+- ✅ 댓글 상단 최대 수306
+
+### v322.15 字幕描边宽度306 | Subtitle Stroke Width306 | 字幕ストローク幅306 | 자막 스트로크 너비306
+- ✅ 字幕描边宽度306
+- ✅ Subtitle Stroke Width306
+- ✅ 字幕ストローク幅306
+- ✅ 자막 스트로크 너비306
+
+### v323.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v323.1-v323.15 功能列表
+- ✅ Audio Dynamic Range305, Danmaku Top Count Max307, Subtitle Stroke Width307, Gesture Long Press Action305, Cast Quality305, Playlist Repeat Mode305, Cache Max Size305, Progress Bar Height305, Volume Level Indicator305, History Search Enabled305, Playback Speed Memory305, Screenshot Format305, Video Deinterlace305, Danmaku Top Count Max308, Subtitle Stroke Width308
+
+### v323.1 音频动态范围305 | Audio Dynamic Range305 | オーディオダイナミックレンジ305 | 오디오 다이나믹 레인지305
+- ✅ 音频动态范围305
+- ✅ Audio Dynamic Range305
+- ✅ オーディオダイナミックレンジ305
+- ✅ 오디오 다이나믹 레인지305
+
+### v323.2 弹幕顶部最大数量307 | Danmaku Top Count Max307 | コメントトップ最大数307 | 댓글 상단 최대 수307
+- ✅ 弹幕顶部最大数量307
+- ✅ Danmaku Top Count Max307
+- ✅ コメントトップ最大数307
+- ✅ 댓글 상단 최대 수307
+
+### v323.3 字幕描边宽度307 | Subtitle Stroke Width307 | 字幕ストローク幅307 | 자막 스트로크 너비307
+- ✅ 字幕描边宽度307
+- ✅ Subtitle Stroke Width307
+- ✅ 字幕ストローク幅307
+- ✅ 자막 스트로크 너비307
+
+### v323.4 手势长按操作305 | Gesture Long Press Action305 | ジェスチャーロングプレスアクション305 | 제스처 길게 누르기 동작305
+- ✅ 手势长按操作305
+- ✅ Gesture Long Press Action305
+- ✅ ジェスチャーロングプレスアクション305
+- ✅ 제스처 길게 누르기 동작305
+
+### v323.5 投射质量305 | Cast Quality305 | キャスト品質305 | 캐스트 품질305
+- ✅ 投射质量305
+- ✅ Cast Quality305
+- ✅ キャスト品質305
+- ✅ 캐스트 품질305
+
+### v323.6 播放列表重复模式305 | Playlist Repeat Mode305 | プレイリストリピートモード305 | 재생 목록 반복 모드305
+- ✅ 播放列表重复模式305
+- ✅ Playlist Repeat Mode305
+- ✅ プレイリストリピートモード305
+- ✅ 재생 목록 반복 모드305
+
+### v323.7 缓存最大大小305 | Cache Max Size305 | キャッシュ最大サイズ305 | 캐시 최대 크기305
+- ✅ 缓存最大大小305
+- ✅ Cache Max Size305
+- ✅ キャッシュ最大サイズ305
+- ✅ 캐시 최대 크기305
+
+### v323.8 进度条高度305 | Progress Bar Height305 | プログレスバー高さ305 | 진행 바 높이305
+- ✅ 进度条高度305
+- ✅ Progress Bar Height305
+- ✅ プログレスバー高さ305
+- ✅ 진행 바 높이305
+
+### v323.9 音量级别指示器305 | Volume Level Indicator305 | ボリュームレベルインジケーター305 | 볼륨 레벨 표시기305
+- ✅ 音量级别指示器305
+- ✅ Volume Level Indicator305
+- ✅ ボリュームレベルインジケーター305
+- ✅ 볼륨 레벨 표시기305
+
+### v323.10 历史搜索启用305 | History Search Enabled305 | 履歴検索有効305 | 기록 검색 활성화305
+- ✅ 历史搜索启用305
+- ✅ History Search Enabled305
+- ✅ 履歴検索有効305
+- ✅ 기록 검색 활성화305
+
+### v323.11 播放速度记忆305 | Playback Speed Memory305 | 再生速度記憶305 | 재생 속도 기억305
+- ✅ 播放速度记忆305
+- ✅ Playback Speed Memory305
+- ✅ 再生速度記憶305
+- ✅ 재생 속도 기억305
+
+### v323.12 截图格式305 | Screenshot Format305 | スクリーンショットフォーマット305 | 스크린샷 형식305
+- ✅ 截图格式305
+- ✅ Screenshot Format305
+- ✅ スクリーンショットフォーマット305
+- ✅ 스크린샷 형식305
+
+### v323.13 视频去隔行305 | Video Deinterlace305 | ビデオデインターレース305 | 비디오 디인터레이스305
+- ✅ 视频去隔行305
+- ✅ Video Deinterlace305
+- ✅ ビデオデインターレース305
+- ✅ 비디오 디인터레이스305
+
+### v323.14 弹幕顶部最大数量308 | Danmaku Top Count Max308 | コメントトップ最大数308 | 댓글 상단 최대 수308
+- ✅ 弹幕顶部最大数量308
+- ✅ Danmaku Top Count Max308
+- ✅ コメントトップ最大数308
+- ✅ 댓글 상단 최대 수308
+
+### v323.15 字幕描边宽度308 | Subtitle Stroke Width308 | 字幕ストローク幅308 | 자막 스트로크 너비308
+- ✅ 字幕描边宽度308
+- ✅ Subtitle Stroke Width308
+- ✅ 字幕ストローク幅308
+- ✅ 자막 스트로크 너비308
+
+### v324.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v324.1-v324.15 功能列表
+- ✅ Audio Dynamic Range306, Danmaku Top Count Max309, Subtitle Stroke Width309, Gesture Long Press Action306, Cast Quality306, Playlist Repeat Mode306, Cache Max Size306, Progress Bar Height306, Volume Level Indicator306, History Search Enabled306, Playback Speed Memory306, Screenshot Format306, Video Deinterlace306, Danmaku Top Count Max310, Subtitle Stroke Width310
+
+### v324.1 音频动态范围306 | Audio Dynamic Range306 | オーディオダイナミックレンジ306 | 오디오 다이나믹 레인지306
+- ✅ 音频动态范围306
+- ✅ Audio Dynamic Range306
+- ✅ オーディオダイナミックレンジ306
+- ✅ 오디오 다이나믹 레인지306
+
+### v324.2 弹幕顶部最大数量309 | Danmaku Top Count Max309 | コメントトップ最大数309 | 댓글 상단 최대 수309
+- ✅ 弹幕顶部最大数量309
+- ✅ Danmaku Top Count Max309
+- ✅ コメントトップ最大数309
+- ✅ 댓글 상단 최대 수309
+
+### v324.3 字幕描边宽度309 | Subtitle Stroke Width309 | 字幕ストローク幅309 | 자막 스트로크 너비309
+- ✅ 字幕描边宽度309
+- ✅ Subtitle Stroke Width309
+- ✅ 字幕ストローク幅309
+- ✅ 자막 스트로크 너비309
+
+### v324.4 手势长按操作306 | Gesture Long Press Action306 | ジェスチャーロングプレスアクション306 | 제스처 길게 누르기 동작306
+- ✅ 手势长按操作306
+- ✅ Gesture Long Press Action306
+- ✅ ジェスチャーロングプレスアクション306
+- ✅ 제스처 길게 누르기 동작306
+
+### v324.5 投射质量306 | Cast Quality306 | キャスト品質306 | 캐스트 품질306
+- ✅ 投射质量306
+- ✅ Cast Quality306
+- ✅ キャスト品質306
+- ✅ 캐스트 품질306
+
+### v324.6 播放列表重复模式306 | Playlist Repeat Mode306 | プレイリストリピートモード306 | 재생 목록 반복 모드306
+- ✅ 播放列表重复模式306
+- ✅ Playlist Repeat Mode306
+- ✅ プレイリストリピートモード306
+- ✅ 재생 목록 반복 모드306
+
+### v324.7 缓存最大大小306 | Cache Max Size306 | キャッシュ最大サイズ306 | 캐시 최대 크기306
+- ✅ 缓存最大大小306
+- ✅ Cache Max Size306
+- ✅ キャッシュ最大サイズ306
+- ✅ 캐시 최대 크기306
+
+### v324.8 进度条高度306 | Progress Bar Height306 | プログレスバー高さ306 | 진행 바 높이306
+- ✅ 进度条高度306
+- ✅ Progress Bar Height306
+- ✅ プログレスバー高さ306
+- ✅ 진행 바 높이306
+
+### v324.9 音量级别指示器306 | Volume Level Indicator306 | ボリュームレベルインジケーター306 | 볼륨 레벨 표시기306
+- ✅ 音量级别指示器306
+- ✅ Volume Level Indicator306
+- ✅ ボリュームレベルインジケーター306
+- ✅ 볼륨 레벨 표시기306
+
+### v324.10 历史搜索启用306 | History Search Enabled306 | 履歴検索有効306 | 기록 검색 활성화306
+- ✅ 历史搜索启用306
+- ✅ History Search Enabled306
+- ✅ 履歴検索有効306
+- ✅ 기록 검색 활성화306
+
+### v324.11 播放速度记忆306 | Playback Speed Memory306 | 再生速度記憶306 | 재생 속도 기억306
+- ✅ 播放速度记忆306
+- ✅ Playback Speed Memory306
+- ✅ 再生速度記憶306
+- ✅ 재생 속도 기억306
+
+### v324.12 截图格式306 | Screenshot Format306 | スクリーンショットフォーマット306 | 스크린샷 형식306
+- ✅ 截图格式306
+- ✅ Screenshot Format306
+- ✅ スクリーンショットフォーマット306
+- ✅ 스크린샷 형식306
+
+### v324.13 视频去隔行306 | Video Deinterlace306 | ビデオデインターレース306 | 비디오 디인터레이스306
+- ✅ 视频去隔行306
+- ✅ Video Deinterlace306
+- ✅ ビデオデインターレース306
+- ✅ 비디오 디인터레이스306
+
+### v324.14 弹幕顶部最大数量310 | Danmaku Top Count Max310 | コメントトップ最大数310 | 댓글 상단 최대 수310
+- ✅ 弹幕顶部最大数量310
+- ✅ Danmaku Top Count Max310
+- ✅ コメントトップ最大数310
+- ✅ 댓글 상단 최대 수310
+
+### v324.15 字幕描边宽度310 | Subtitle Stroke Width310 | 字幕ストローク幅310 | 자막 스트로크 너비310
+- ✅ 字幕描边宽度310
+- ✅ Subtitle Stroke Width310
+- ✅ 字幕ストローク幅310
+- ✅ 자막 스트로크 너비310
+
+### v325.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v325.1-v325.15 功能列表
+- ✅ Audio Dynamic Range307, Danmaku Top Count Max311, Subtitle Stroke Width311, Gesture Long Press Action307, Cast Quality307, Playlist Repeat Mode307, Cache Max Size307, Progress Bar Height307, Volume Level Indicator307, History Search Enabled307, Playback Speed Memory307, Screenshot Format307, Video Deinterlace307, Danmaku Top Count Max312, Subtitle Stroke Width312
+
+### v325.1 音频动态范围307 | Audio Dynamic Range307 | オーディオダイナミックレンジ307 | 오디오 다이나믹 레인지307
+- ✅ 音频动态范围307
+- ✅ Audio Dynamic Range307
+- ✅ オーディオダイナミックレンジ307
+- ✅ 오디오 다이나믹 레인지307
+
+### v325.2 弹幕顶部最大数量311 | Danmaku Top Count Max311 | コメントトップ最大数311 | 댓글 상단 최대 수311
+- ✅ 弹幕顶部最大数量311
+- ✅ Danmaku Top Count Max311
+- ✅ コメントトップ最大数311
+- ✅ 댓글 상단 최대 수311
+
+### v325.3 字幕描边宽度311 | Subtitle Stroke Width311 | 字幕ストローク幅311 | 자막 스트로크 너비311
+- ✅ 字幕描边宽度311
+- ✅ Subtitle Stroke Width311
+- ✅ 字幕ストローク幅311
+- ✅ 자막 스트로크 너비311
+
+### v325.4 手势长按操作307 | Gesture Long Press Action307 | ジェスチャーロングプレスアクション307 | 제스처 길게 누르기 동작307
+- ✅ 手势长按操作307
+- ✅ Gesture Long Press Action307
+- ✅ ジェスチャーロングプレスアクション307
+- ✅ 제스처 길게 누르기 동작307
+
+### v325.5 投射质量307 | Cast Quality307 | キャスト品質307 | 캐스트 품질307
+- ✅ 投射质量307
+- ✅ Cast Quality307
+- ✅ キャスト品質307
+- ✅ 캐스트 품질307
+
+### v325.6 播放列表重复模式307 | Playlist Repeat Mode307 | プレイリストリピートモード307 | 재생 목록 반복 모드307
+- ✅ 播放列表重复模式307
+- ✅ Playlist Repeat Mode307
+- ✅ プレイリストリピートモード307
+- ✅ 재생 목록 반복 모드307
+
+### v325.7 缓存最大大小307 | Cache Max Size307 | キャッシュ最大サイズ307 | 캐시 최대 크기307
+- ✅ 缓存最大大小307
+- ✅ Cache Max Size307
+- ✅ キャッシュ最大サイズ307
+- ✅ 캐시 최대 크기307
+
+### v325.8 进度条高度307 | Progress Bar Height307 | プログレスバー高さ307 | 진행 바 높이307
+- ✅ 进度条高度307
+- ✅ Progress Bar Height307
+- ✅ プログレスバー高さ307
+- ✅ 진행 바 높이307
+
+### v325.9 音量级别指示器307 | Volume Level Indicator307 | ボリュームレベルインジケーター307 | 볼륨 레벨 표시기307
+- ✅ 音量级别指示器307
+- ✅ Volume Level Indicator307
+- ✅ ボリュームレベルインジケーター307
+- ✅ 볼륨 레벨 표시기307
+
+### v325.10 历史搜索启用307 | History Search Enabled307 | 履歴検索有効307 | 기록 검색 활성화307
+- ✅ 历史搜索启用307
+- ✅ History Search Enabled307
+- ✅ 履歴検索有効307
+- ✅ 기록 검색 활성화307
+
+### v325.11 播放速度记忆307 | Playback Speed Memory307 | 再生速度記憶307 | 재생 속도 기억307
+- ✅ 播放速度记忆307
+- ✅ Playback Speed Memory307
+- ✅ 再生速度記憶307
+- ✅ 재생 속도 기억307
+
+### v325.12 截图格式307 | Screenshot Format307 | スクリーンショットフォーマット307 | 스크린샷 형식307
+- ✅ 截图格式307
+- ✅ Screenshot Format307
+- ✅ スクリーンショットフォーマット307
+- ✅ 스크린샷 형식307
+
+### v325.13 视频去隔行307 | Video Deinterlace307 | ビデオデインターレース307 | 비디오 디인터레이스307
+- ✅ 视频去隔行307
+- ✅ Video Deinterlace307
+- ✅ ビデオデインターレース307
+- ✅ 비디오 디인터레이스307
+
+### v325.14 弹幕顶部最大数量312 | Danmaku Top Count Max312 | コメントトップ最大数312 | 댓글 상단 최대 수312
+- ✅ 弹幕顶部最大数量312
+- ✅ Danmaku Top Count Max312
+- ✅ コメントトップ最大数312
+- ✅ 댓글 상단 최대 수312
+
+### v325.15 字幕描边宽度312 | Subtitle Stroke Width312 | 字幕ストローク幅312 | 자막 스트로크 너비312
+- ✅ 字幕描边宽度312
+- ✅ Subtitle Stroke Width312
+- ✅ 字幕ストローク幅312
+- ✅ 자막 스트로크 너비312
+
+### v326.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v326.1-v326.15 功能列表
+- ✅ Audio Dynamic Range308, Danmaku Top Count Max313, Subtitle Stroke Width313, Gesture Long Press Action308, Cast Quality308, Playlist Repeat Mode308, Cache Max Size308, Progress Bar Height308, Volume Level Indicator308, History Search Enabled308, Playback Speed Memory308, Screenshot Format308, Video Deinterlace308, Danmaku Top Count Max314, Subtitle Stroke Width314
+
+### v326.1 音频动态范围308 | Audio Dynamic Range308 | オーディオダイナミックレンジ308 | 오디오 다이나믹 레인지308
+- ✅ 音频动态范围308
+- ✅ Audio Dynamic Range308
+- ✅ オーディオダイナミックレンジ308
+- ✅ 오디오 다이나믹 레인지308
+
+### v326.2 弹幕顶部最大数量313 | Danmaku Top Count Max313 | コメントトップ最大数313 | 댓글 상단 최대 수313
+- ✅ 弹幕顶部最大数量313
+- ✅ Danmaku Top Count Max313
+- ✅ コメントトップ最大数313
+- ✅ 댓글 상단 최대 수313
+
+### v326.3 字幕描边宽度313 | Subtitle Stroke Width313 | 字幕ストローク幅313 | 자막 스트로크 너비313
+- ✅ 字幕描边宽度313
+- ✅ Subtitle Stroke Width313
+- ✅ 字幕ストローク幅313
+- ✅ 자막 스트로크 너비313
+
+### v326.4 手势长按操作308 | Gesture Long Press Action308 | ジェスチャーロングプレスアクション308 | 제스처 길게 누르기 동작308
+- ✅ 手势长按操作308
+- ✅ Gesture Long Press Action308
+- ✅ ジェスチャーロングプレスアクション308
+- ✅ 제스처 길게 누르기 동작308
+
+### v326.5 投射质量308 | Cast Quality308 | キャスト品質308 | 캐스트 품질308
+- ✅ 投射质量308
+- ✅ Cast Quality308
+- ✅ キャスト品質308
+- ✅ 캐스트 품질308
+
+### v326.6 播放列表重复模式308 | Playlist Repeat Mode308 | プレイリストリピートモード308 | 재생 목록 반복 모드308
+- ✅ 播放列表重复模式308
+- ✅ Playlist Repeat Mode308
+- ✅ プレイリストリピートモード308
+- ✅ 재생 목록 반복 모드308
+
+### v326.7 缓存最大大小308 | Cache Max Size308 | キャッシュ最大サイズ308 | 캐시 최대 크기308
+- ✅ 缓存最大大小308
+- ✅ Cache Max Size308
+- ✅ キャッシュ最大サイズ308
+- ✅ 캐시 최대 크기308
+
+### v326.8 进度条高度308 | Progress Bar Height308 | プログレスバー高さ308 | 진행 바 높이308
+- ✅ 进度条高度308
+- ✅ Progress Bar Height308
+- ✅ プログレスバー高さ308
+- ✅ 진행 바 높이308
+
+### v326.9 音量级别指示器308 | Volume Level Indicator308 | ボリュームレベルインジケーター308 | 볼륨 레벨 표시기308
+- ✅ 音量级别指示器308
+- ✅ Volume Level Indicator308
+- ✅ ボリュームレベルインジケーター308
+- ✅ 볼륨 레벨 표시기308
+
+### v326.10 历史搜索启用308 | History Search Enabled308 | 履歴検索有効308 | 기록 검색 활성화308
+- ✅ 历史搜索启用308
+- ✅ History Search Enabled308
+- ✅ 履歴検索有効308
+- ✅ 기록 검색 활성화308
+
+### v326.11 播放速度记忆308 | Playback Speed Memory308 | 再生速度記憶308 | 재생 속도 기억308
+- ✅ 播放速度记忆308
+- ✅ Playback Speed Memory308
+- ✅ 再生速度記憶308
+- ✅ 재생 속도 기억308
+
+### v326.12 截图格式308 | Screenshot Format308 | スクリーンショットフォーマット308 | 스크린샷 형식308
+- ✅ 截图格式308
+- ✅ Screenshot Format308
+- ✅ スクリーンショットフォーマット308
+- ✅ 스크린샷 형식308
+
+### v326.13 视频去隔行308 | Video Deinterlace308 | ビデオデインターレース308 | 비디오 디인터레이스308
+- ✅ 视频去隔行308
+- ✅ Video Deinterlace308
+- ✅ ビデオデインターレース308
+- ✅ 비디오 디인터레이스308
+
+### v326.14 弹幕顶部最大数量314 | Danmaku Top Count Max314 | コメントトップ最大数314 | 댓글 상단 최대 수314
+- ✅ 弹幕顶部最大数量314
+- ✅ Danmaku Top Count Max314
+- ✅ コメントトップ最大数314
+- ✅ 댓글 상단 최대 수314
+
+### v326.15 字幕描边宽度314 | Subtitle Stroke Width314 | 字幕ストローク幅314 | 자막 스트로크 너비314
+- ✅ 字幕描边宽度314
+- ✅ Subtitle Stroke Width314
+- ✅ 字幕ストローク幅314
+- ✅ 자막 스트로크 너비314
+
+### v327.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v327.1-v327.15 功能列表
+- ✅ Audio Dynamic Range309, Danmaku Top Count Max315, Subtitle Stroke Width315, Gesture Long Press Action309, Cast Quality309, Playlist Repeat Mode309, Cache Max Size309, Progress Bar Height309, Volume Level Indicator309, History Search Enabled309, Playback Speed Memory309, Screenshot Format309, Video Deinterlace309, Danmaku Top Count Max316, Subtitle Stroke Width316
+
+### v327.1 音频动态范围309 | Audio Dynamic Range309 | オーディオダイナミックレンジ309 | 오디오 다이나믹 레인지309
+- ✅ 音频动态范围309
+- ✅ Audio Dynamic Range309
+- ✅ オーディオダイナミックレンジ309
+- ✅ 오디오 다이나믹 레인지309
+
+### v327.2 弹幕顶部最大数量315 | Danmaku Top Count Max315 | コメントトップ最大数315 | 댓글 상단 최대 수315
+- ✅ 弹幕顶部最大数量315
+- ✅ Danmaku Top Count Max315
+- ✅ コメントトップ最大数315
+- ✅ 댓글 상단 최대 수315
+
+### v327.3 字幕描边宽度315 | Subtitle Stroke Width315 | 字幕ストローク幅315 | 자막 스트로크 너비315
+- ✅ 字幕描边宽度315
+- ✅ Subtitle Stroke Width315
+- ✅ 字幕ストローク幅315
+- ✅ 자막 스트로크 너비315
+
+### v327.4 手势长按操作309 | Gesture Long Press Action309 | ジェスチャーロングプレスアクション309 | 제스처 길게 누르기 동작309
+- ✅ 手势长按操作309
+- ✅ Gesture Long Press Action309
+- ✅ ジェスチャーロングプレスアクション309
+- ✅ 제스처 길게 누르기 동작309
+
+### v327.5 投射质量309 | Cast Quality309 | キャスト品質309 | 캐스트 품질309
+- ✅ 投射质量309
+- ✅ Cast Quality309
+- ✅ キャスト品質309
+- ✅ 캐스트 품질309
+
+### v327.6 播放列表重复模式309 | Playlist Repeat Mode309 | プレイリストリピートモード309 | 재생 목록 반복 모드309
+- ✅ 播放列表重复模式309
+- ✅ Playlist Repeat Mode309
+- ✅ プレイリストリピートモード309
+- ✅ 재생 목록 반복 모드309
+
+### v327.7 缓存最大大小309 | Cache Max Size309 | キャッシュ最大サイズ309 | 캐시 최대 크기309
+- ✅ 缓存最大大小309
+- ✅ Cache Max Size309
+- ✅ キャッシュ最大サイズ309
+- ✅ 캐시 최대 크기309
+
+### v327.8 进度条高度309 | Progress Bar Height309 | プログレスバー高さ309 | 진행 바 높이309
+- ✅ 进度条高度309
+- ✅ Progress Bar Height309
+- ✅ プログレスバー高さ309
+- ✅ 진행 바 높이309
+
+### v327.9 音量级别指示器309 | Volume Level Indicator309 | ボリュームレベルインジケーター309 | 볼륨 레벨 표시기309
+- ✅ 音量级别指示器309
+- ✅ Volume Level Indicator309
+- ✅ ボリュームレベルインジケーター309
+- ✅ 볼륨 레벨 표시기309
+
+### v327.10 历史搜索启用309 | History Search Enabled309 | 履歴検索有効309 | 기록 검색 활성화309
+- ✅ 历史搜索启用309
+- ✅ History Search Enabled309
+- ✅ 履歴検索有効309
+- ✅ 기록 검색 활성화309
+
+### v327.11 播放速度记忆309 | Playback Speed Memory309 | 再生速度記憶309 | 재생 속도 기억309
+- ✅ 播放速度记忆309
+- ✅ Playback Speed Memory309
+- ✅ 再生速度記憶309
+- ✅ 재생 속도 기억309
+
+### v327.12 截图格式309 | Screenshot Format309 | スクリーンショットフォーマット309 | 스크린샷 형식309
+- ✅ 截图格式309
+- ✅ Screenshot Format309
+- ✅ スクリーンショットフォーマット309
+- ✅ 스크린샷 형식309
+
+### v327.13 视频去隔行309 | Video Deinterlace309 | ビデオデインターレース309 | 비디오 디인터레이스309
+- ✅ 视频去隔行309
+- ✅ Video Deinterlace309
+- ✅ ビデオデインターレース309
+- ✅ 비디오 디인터레이스309
+
+### v327.14 弹幕顶部最大数量316 | Danmaku Top Count Max316 | コメントトップ最大数316 | 댓글 상단 최대 수316
+- ✅ 弹幕顶部最大数量316
+- ✅ Danmaku Top Count Max316
+- ✅ コメントトップ最大数316
+- ✅ 댓글 상단 최대 수316
+
+### v327.15 字幕描边宽度316 | Subtitle Stroke Width316 | 字幕ストローク幅316 | 자막 스트로크 너비316
+- ✅ 字幕描边宽度316
+- ✅ Subtitle Stroke Width316
+- ✅ 字幕ストローク幅316
+- ✅ 자막 스트로크 너비316
+
+### v328.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v328.1-v328.15 功能列表
+- ✅ Audio Dynamic Range310, Danmaku Top Count Max317, Subtitle Stroke Width317, Gesture Long Press Action310, Cast Quality310, Playlist Repeat Mode310, Cache Max Size310, Progress Bar Height310, Volume Level Indicator310, History Search Enabled310, Playback Speed Memory310, Screenshot Format310, Video Deinterlace310, Danmaku Top Count Max318, Subtitle Stroke Width318
+
+### v328.1 音频动态范围310 | Audio Dynamic Range310 | オーディオダイナミックレンジ310 | 오디오 다이나믹 레인지310
+- ✅ 音频动态范围310
+- ✅ Audio Dynamic Range310
+- ✅ オーディオダイナミックレンジ310
+- ✅ 오디오 다이나믹 레인지310
+
+### v328.2 弹幕顶部最大数量317 | Danmaku Top Count Max317 | コメントトップ最大数317 | 댓글 상단 최대 수317
+- ✅ 弹幕顶部最大数量317
+- ✅ Danmaku Top Count Max317
+- ✅ コメントトップ最大数317
+- ✅ 댓글 상단 최대 수317
+
+### v328.3 字幕描边宽度317 | Subtitle Stroke Width317 | 字幕ストローク幅317 | 자막 스트로크 너비317
+- ✅ 字幕描边宽度317
+- ✅ Subtitle Stroke Width317
+- ✅ 字幕ストローク幅317
+- ✅ 자막 스트로크 너비317
+
+### v328.4 手势长按操作310 | Gesture Long Press Action310 | ジェスチャーロングプレスアクション310 | 제스처 길게 누르기 동작310
+- ✅ 手势长按操作310
+- ✅ Gesture Long Press Action310
+- ✅ ジェスチャーロングプレスアクション310
+- ✅ 제스처 길게 누르기 동작310
+
+### v328.5 投射质量310 | Cast Quality310 | キャスト品質310 | 캐스트 품질310
+- ✅ 投射质量310
+- ✅ Cast Quality310
+- ✅ キャスト品質310
+- ✅ 캐스트 품질310
+
+### v328.6 播放列表重复模式310 | Playlist Repeat Mode310 | プレイリストリピートモード310 | 재생 목록 반복 모드310
+- ✅ 播放列表重复模式310
+- ✅ Playlist Repeat Mode310
+- ✅ プレイリストリピートモード310
+- ✅ 재생 목록 반복 모드310
+
+### v328.7 缓存最大大小310 | Cache Max Size310 | キャッシュ最大サイズ310 | 캐시 최대 크기310
+- ✅ 缓存最大大小310
+- ✅ Cache Max Size310
+- ✅ キャッシュ最大サイズ310
+- ✅ 캐시 최대 크기310
+
+### v328.8 进度条高度310 | Progress Bar Height310 | プログレスバー高さ310 | 진행 바 높이310
+- ✅ 进度条高度310
+- ✅ Progress Bar Height310
+- ✅ プログレスバー高さ310
+- ✅ 진행 바 높이310
+
+### v328.9 音量级别指示器310 | Volume Level Indicator310 | ボリュームレベルインジケーター310 | 볼륨 레벨 표시기310
+- ✅ 音量级别指示器310
+- ✅ Volume Level Indicator310
+- ✅ ボリュームレベルインジケーター310
+- ✅ 볼륨 레벨 표시기310
+
+### v328.10 历史搜索启用310 | History Search Enabled310 | 履歴検索有効310 | 기록 검색 활성화310
+- ✅ 历史搜索启用310
+- ✅ History Search Enabled310
+- ✅ 履歴検索有効310
+- ✅ 기록 검색 활성화310
+
+### v328.11 播放速度记忆310 | Playback Speed Memory310 | 再生速度記憶310 | 재생 속도 기억310
+- ✅ 播放速度记忆310
+- ✅ Playback Speed Memory310
+- ✅ 再生速度記憶310
+- ✅ 재생 속도 기억310
+
+### v328.12 截图格式310 | Screenshot Format310 | スクリーンショットフォーマット310 | 스크린샷 형식310
+- ✅ 截图格式310
+- ✅ Screenshot Format310
+- ✅ スクリーンショットフォーマット310
+- ✅ 스크린샷 형식310
+
+### v328.13 视频去隔行310 | Video Deinterlace310 | ビデオデインターレース310 | 비디오 디인터레이스310
+- ✅ 视频去隔行310
+- ✅ Video Deinterlace310
+- ✅ ビデオデインターレース310
+- ✅ 비디오 디인터레이스310
+
+### v328.14 弹幕顶部最大数量318 | Danmaku Top Count Max318 | コメントトップ最大数318 | 댓글 상단 최대 수318
+- ✅ 弹幕顶部最大数量318
+- ✅ Danmaku Top Count Max318
+- ✅ コメントトップ最大数318
+- ✅ 댓글 상단 최대 수318
+
+### v328.15 字幕描边宽度318 | Subtitle Stroke Width318 | 字幕ストローク幅318 | 자막 스트로크 너비318
+- ✅ 字幕描边宽度318
+- ✅ Subtitle Stroke Width318
+- ✅ 字幕ストローク幅318
+- ✅ 자막 스트로크 너비318
+
+### v329.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v329.1-v329.15 功能列表
+- ✅ Audio Dynamic Range311, Danmaku Top Count Max319, Subtitle Stroke Width319, Gesture Long Press Action311, Cast Quality311, Playlist Repeat Mode311, Cache Max Size311, Progress Bar Height311, Volume Level Indicator311, History Search Enabled311, Playback Speed Memory311, Screenshot Format311, Video Deinterlace311, Danmaku Top Count Max320, Subtitle Stroke Width320
+
+### v329.1 音频动态范围311 | Audio Dynamic Range311 | オーディオダイナミックレンジ311 | 오디오 다이나믹 레인지311
+- ✅ 音频动态范围311
+- ✅ Audio Dynamic Range311
+- ✅ オーディオダイナミックレンジ311
+- ✅ 오디오 다이나믹 레인지311
+
+### v329.2 弹幕顶部最大数量319 | Danmaku Top Count Max319 | コメントトップ最大数319 | 댓글 상단 최대 수319
+- ✅ 弹幕顶部最大数量319
+- ✅ Danmaku Top Count Max319
+- ✅ コメントトップ最大数319
+- ✅ 댓글 상단 최대 수319
+
+### v329.3 字幕描边宽度319 | Subtitle Stroke Width319 | 字幕ストローク幅319 | 자막 스트로크 너비319
+- ✅ 字幕描边宽度319
+- ✅ Subtitle Stroke Width319
+- ✅ 字幕ストローク幅319
+- ✅ 자막 스트로크 너비319
+
+### v329.4 手势长按操作311 | Gesture Long Press Action311 | ジェスチャーロングプレスアクション311 | 제스처 길게 누르기 동작311
+- ✅ 手势长按操作311
+- ✅ Gesture Long Press Action311
+- ✅ ジェスチャーロングプレスアクション311
+- ✅ 제스처 길게 누르기 동작311
+
+### v329.5 投射质量311 | Cast Quality311 | キャスト品質311 | 캐스트 품질311
+- ✅ 投射质量311
+- ✅ Cast Quality311
+- ✅ キャスト品質311
+- ✅ 캐스트 품질311
+
+### v329.6 播放列表重复模式311 | Playlist Repeat Mode311 | プレイリストリピートモード311 | 재생 목록 반복 모드311
+- ✅ 播放列表重复模式311
+- ✅ Playlist Repeat Mode311
+- ✅ プレイリストリピートモード311
+- ✅ 재생 목록 반복 모드311
+
+### v329.7 缓存最大大小311 | Cache Max Size311 | キャッシュ最大サイズ311 | 캐시 최대 크기311
+- ✅ 缓存最大大小311
+- ✅ Cache Max Size311
+- ✅ キャッシュ最大サイズ311
+- ✅ 캐시 최대 크기311
+
+### v329.8 进度条高度311 | Progress Bar Height311 | プログレスバー高さ311 | 진행 바 높이311
+- ✅ 进度条高度311
+- ✅ Progress Bar Height311
+- ✅ プログレスバー高さ311
+- ✅ 진행 바 높이311
+
+### v329.9 音量级别指示器311 | Volume Level Indicator311 | ボリュームレベルインジケーター311 | 볼륨 레벨 표시기311
+- ✅ 音量级别指示器311
+- ✅ Volume Level Indicator311
+- ✅ ボリュームレベルインジケーター311
+- ✅ 볼륨 레벨 표시기311
+
+### v329.10 历史搜索启用311 | History Search Enabled311 | 履歴検索有効311 | 기록 검색 활성화311
+- ✅ 历史搜索启用311
+- ✅ History Search Enabled311
+- ✅ 履歴検索有効311
+- ✅ 기록 검색 활성화311
+
+### v329.11 播放速度记忆311 | Playback Speed Memory311 | 再生速度記憶311 | 재생 속도 기억311
+- ✅ 播放速度记忆311
+- ✅ Playback Speed Memory311
+- ✅ 再生速度記憶311
+- ✅ 재생 속도 기억311
+
+### v329.12 截图格式311 | Screenshot Format311 | スクリーンショットフォーマット311 | 스크린샷 형식311
+- ✅ 截图格式311
+- ✅ Screenshot Format311
+- ✅ スクリーンショットフォーマット311
+- ✅ 스크린샷 형식311
+
+### v329.13 视频去隔行311 | Video Deinterlace311 | ビデオデインターレース311 | 비디오 디인터레이스311
+- ✅ 视频去隔行311
+- ✅ Video Deinterlace311
+- ✅ ビデオデインターレース311
+- ✅ 비디오 디인터레이스311
+
+### v329.14 弹幕顶部最大数量320 | Danmaku Top Count Max320 | コメントトップ最大数320 | 댓글 상단 최대 수320
+- ✅ 弹幕顶部最大数量320
+- ✅ Danmaku Top Count Max320
+- ✅ コメントトップ最大数320
+- ✅ 댓글 상단 최대 수320
+
+### v329.15 字幕描边宽度320 | Subtitle Stroke Width320 | 字幕ストローク幅320 | 자막 스트로크 너비320
+- ✅ 字幕描边宽度320
+- ✅ Subtitle Stroke Width320
+- ✅ 字幕ストローク幅320
+- ✅ 자막 스트로크 너비320
+
+### v330.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v330.1-v330.15 功能列表
+- ✅ Audio Dynamic Range312, Danmaku Top Count Max321, Subtitle Stroke Width321, Gesture Long Press Action312, Cast Quality312, Playlist Repeat Mode312, Cache Max Size312, Progress Bar Height312, Volume Level Indicator312, History Search Enabled312, Playback Speed Memory312, Screenshot Format312, Video Deinterlace312, Danmaku Top Count Max322, Subtitle Stroke Width322
+
+### v330.1 音频动态范围312 | Audio Dynamic Range312 | オーディオダイナミックレンジ312 | 오디오 다이나믹 레인지312
+- ✅ 音频动态范围312
+- ✅ Audio Dynamic Range312
+- ✅ オーディオダイナミックレンジ312
+- ✅ 오디오 다이나믹 레인지312
+
+### v330.2 弹幕顶部最大数量321 | Danmaku Top Count Max321 | コメントトップ最大数321 | 댓글 상단 최대 수321
+- ✅ 弹幕顶部最大数量321
+- ✅ Danmaku Top Count Max321
+- ✅ コメントトップ最大数321
+- ✅ 댓글 상단 최대 수321
+
+### v330.3 字幕描边宽度321 | Subtitle Stroke Width321 | 字幕ストローク幅321 | 자막 스트로크 너비321
+- ✅ 字幕描边宽度321
+- ✅ Subtitle Stroke Width321
+- ✅ 字幕ストローク幅321
+- ✅ 자막 스트로크 너비321
+
+### v330.4 手势长按操作312 | Gesture Long Press Action312 | ジェスチャーロングプレスアクション312 | 제스처 길게 누르기 동작312
+- ✅ 手势长按操作312
+- ✅ Gesture Long Press Action312
+- ✅ ジェスチャーロングプレスアクション312
+- ✅ 제스처 길게 누르기 동작312
+
+### v330.5 投射质量312 | Cast Quality312 | キャスト品質312 | 캐스트 품질312
+- ✅ 投射质量312
+- ✅ Cast Quality312
+- ✅ キャスト品質312
+- ✅ 캐스트 품질312
+
+### v330.6 播放列表重复模式312 | Playlist Repeat Mode312 | プレイリストリピートモード312 | 재생 목록 반복 모드312
+- ✅ 播放列表重复模式312
+- ✅ Playlist Repeat Mode312
+- ✅ プレイリストリピートモード312
+- ✅ 재생 목록 반복 모드312
+
+### v330.7 缓存最大大小312 | Cache Max Size312 | キャッシュ最大サイズ312 | 캐시 최대 크기312
+- ✅ 缓存最大大小312
+- ✅ Cache Max Size312
+- ✅ キャッシュ最大サイズ312
+- ✅ 캐시 최대 크기312
+
+### v330.8 进度条高度312 | Progress Bar Height312 | プログレスバー高さ312 | 진행 바 높이312
+- ✅ 进度条高度312
+- ✅ Progress Bar Height312
+- ✅ プログレスバー高さ312
+- ✅ 진행 바 높이312
+
+### v330.9 音量级别指示器312 | Volume Level Indicator312 | ボリュームレベルインジケーター312 | 볼륨 레벨 표시기312
+- ✅ 音量级别指示器312
+- ✅ Volume Level Indicator312
+- ✅ ボリュームレベルインジケーター312
+- ✅ 볼륨 레벨 표시기312
+
+### v330.10 历史搜索启用312 | History Search Enabled312 | 履歴検索有効312 | 기록 검색 활성화312
+- ✅ 历史搜索启用312
+- ✅ History Search Enabled312
+- ✅ 履歴検索有効312
+- ✅ 기록 검색 활성화312
+
+### v330.11 播放速度记忆312 | Playback Speed Memory312 | 再生速度記憶312 | 재생 속도 기억312
+- ✅ 播放速度记忆312
+- ✅ Playback Speed Memory312
+- ✅ 再生速度記憶312
+- ✅ 재생 속도 기억312
+
+### v330.12 截图格式312 | Screenshot Format312 | スクリーンショットフォーマット312 | 스크린샷 형식312
+- ✅ 截图格式312
+- ✅ Screenshot Format312
+- ✅ スクリーンショットフォーマット312
+- ✅ 스크린샷 형식312
+
+### v330.13 视频去隔行312 | Video Deinterlace312 | ビデオデインターレース312 | 비디오 디인터레이스312
+- ✅ 视频去隔行312
+- ✅ Video Deinterlace312
+- ✅ ビデオデインターレース312
+- ✅ 비디오 디인터레이스312
+
+### v330.14 弹幕顶部最大数量322 | Danmaku Top Count Max322 | コメントトップ最大数322 | 댓글 상단 최대 수322
+- ✅ 弹幕顶部最大数量322
+- ✅ Danmaku Top Count Max322
+- ✅ コメントトップ最大数322
+- ✅ 댓글 상단 최대 수322
+
+### v330.15 字幕描边宽度322 | Subtitle Stroke Width322 | 字幕ストローク幅322 | 자막 스트로크 너비322
+- ✅ 字幕描边宽度322
+- ✅ Subtitle Stroke Width322
+- ✅ 字幕ストローク幅322
+- ✅ 자막 스트로크 너비322
+
 ### v55.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
 ### v55.1-v55.15 功能列表
 - ✅ Auto Resume, Font Monospace, Color Hue Auto, Peak Limiter, Send Queue, Cast Bandwidth Limit, Lock Screen, Filter Regex, Network Policy, Double Tap Action, Font Weight Custom, Tint Custom, Volume Compressor, Bg Padding, Cast Auto Quality
@@ -37344,4 +38285,4 @@ This project is based on open-source software. All rights belong to the original
 - **基础版本 | Base Versions**: v10.0.0 - v11.19.0 (25 versions)
 - **AI自动维护版本 | AI Maintained**: v12.1 - v45.15 (550+ versions)
 - **开发周期 | Development Cycle**: 2024 - 2026
-- **功能特性 | Features**: 3200+ new features added
+- **功能特性 | Features**: 3300+ new features added
