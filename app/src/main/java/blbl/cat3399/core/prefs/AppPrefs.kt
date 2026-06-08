@@ -58248,6 +58248,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getInt(KEY_V860PERFORMAUTOBENCHMARK860, 0)
         set(value) = prefs.edit().putInt(KEY_V860PERFORMAUTOBENCHMARK860, value).apply()
 
+    var v861permissionAutoGrant861: Boolean
+        get() = prefs.getBoolean(KEY_V861PERMISSIONAUTOGRANT861, false)
+        set(value) = prefs.edit().putBoolean(KEY_V861PERMISSIONAUTOGRANT861, value).apply()
+
+    var v861persistAutoState861: Boolean
+        get() = prefs.getBoolean(KEY_V861PERSISTAUTOSTATE861, false)
+        set(value) = prefs.edit().putBoolean(KEY_V861PERSISTAUTOSTATE861, value).apply()
+
+    var v861phaseAutoTransition861: Boolean
+        get() = prefs.getBoolean(KEY_V861PHASEAUTOTRANSITION861, false)
+        set(value) = prefs.edit().putBoolean(KEY_V861PHASEAUTOTRANSITION861, value).apply()
+
+    var v861phoneAutoDetect861: Boolean
+        get() = prefs.getBoolean(KEY_V861PHONEAUTODETECT861, false)
+        set(value) = prefs.edit().putBoolean(KEY_V861PHONEAUTODETECT861, value).apply()
+
+    var v861photoAutoCompress861: Boolean
+        get() = prefs.getBoolean(KEY_V861PHOTOAUTOCOMPRESS861, false)
+        set(value) = prefs.edit().putBoolean(KEY_V861PHOTOAUTOCOMPRESS861, value).apply()
+
+    var v861phraseAutoComplete861: Boolean
+        get() = prefs.getBoolean(KEY_V861PHRASEAUTOCOMPLETE861, false)
+        set(value) = prefs.edit().putBoolean(KEY_V861PHRASEAUTOCOMPLETE861, value).apply()
+
+    var v861pickAutoRandom861: Boolean
+        get() = prefs.getBoolean(KEY_V861PICKAUTORANDOM861, false)
+        set(value) = prefs.edit().putBoolean(KEY_V861PICKAUTORANDOM861, value).apply()
+
+    var v861pictureAutoThumbnail861: Boolean
+        get() = prefs.getBoolean(KEY_V861PICTUREAUTOTHUMBNAIL861, false)
+        set(value) = prefs.edit().putBoolean(KEY_V861PICTUREAUTOTHUMBNAIL861, value).apply()
+
+    var v861pinAutoTop861: Boolean
+        get() = prefs.getBoolean(KEY_V861PINAUTOTOP861, false)
+        set(value) = prefs.edit().putBoolean(KEY_V861PINAUTOTOP861, value).apply()
+
+    var v861pipeAutoRedirect861: Boolean
+        get() = prefs.getBoolean(KEY_V861PIPEAUTOREDIRECT861, false)
+        set(value) = prefs.edit().putBoolean(KEY_V861PIPEAUTOREDIRECT861, value).apply()
+
+    var v861pitchAutoCorrect861: Boolean
+        get() = prefs.getBoolean(KEY_V861PITCHAUTOCORRECT861, false)
+        set(value) = prefs.edit().putBoolean(KEY_V861PITCHAUTOCORRECT861, value).apply()
+
+    var v861pixelAutoSnap861: Boolean
+        get() = prefs.getBoolean(KEY_V861PIXELAUTOSNAP861, false)
+        set(value) = prefs.edit().putBoolean(KEY_V861PIXELAUTOSNAP861, value).apply()
+
+    var v861placeAutoHolder861: Boolean
+        get() = prefs.getBoolean(KEY_V861PLACEAUTOHOLDER861, false)
+        set(value) = prefs.edit().putBoolean(KEY_V861PLACEAUTOHOLDER861, value).apply()
+
+    var v861plainAutoText861: Boolean
+        get() = prefs.getBoolean(KEY_V861PLAINAUTOTEXT861, false)
+        set(value) = prefs.edit().putBoolean(KEY_V861PLAINAUTOTEXT861, value).apply()
+
+    var v861planAutoSchedule861: Boolean
+        get() = prefs.getBoolean(KEY_V861PLANAUTOSCHEDULE861, false)
+        set(value) = prefs.edit().putBoolean(KEY_V861PLANAUTOSCHEDULE861, value).apply()
+
+    var v862permissionAutoGrant862: Boolean
+        get() = prefs.getBoolean(KEY_V862PERMISSIONAUTOGRANT862, false)
+        set(value) = prefs.edit().putBoolean(KEY_V862PERMISSIONAUTOGRANT862, value).apply()
+
+    var v862persistAutoState862: Boolean
+        get() = prefs.getBoolean(KEY_V862PERSISTAUTOSTATE862, false)
+        set(value) = prefs.edit().putBoolean(KEY_V862PERSISTAUTOSTATE862, value).apply()
+
+    var v862phaseAutoTransition862: Boolean
+        get() = prefs.getBoolean(KEY_V862PHASEAUTOTRANSITION862, false)
+        set(value) = prefs.edit().putBoolean(KEY_V862PHASEAUTOTRANSITION862, value).apply()
+
+    var v862phoneAutoDetect862: Boolean
+        get() = prefs.getBoolean(KEY_V862PHONEAUTODETECT862, false)
+        set(value) = prefs.edit().putBoolean(KEY_V862PHONEAUTODETECT862, value).apply()
+
+    var v862photoAutoCompress862: Boolean
+        get() = prefs.getBoolean(KEY_V862PHOTOAUTOCOMPRESS862, false)
+        set(value) = prefs.edit().putBoolean(KEY_V862PHOTOAUTOCOMPRESS862, value).apply()
+
+    var v862phraseAutoComplete862: Boolean
+        get() = prefs.getBoolean(KEY_V862PHRASEAUTOCOMPLETE862, false)
+        set(value) = prefs.edit().putBoolean(KEY_V862PHRASEAUTOCOMPLETE862, value).apply()
+
+    var v862pickAutoRandom862: Boolean
+        get() = prefs.getBoolean(KEY_V862PICKAUTORANDOM862, false)
+        set(value) = prefs.edit().putBoolean(KEY_V862PICKAUTORANDOM862, value).apply()
+
+    var v862pictureAutoThumbnail862: Boolean
+        get() = prefs.getBoolean(KEY_V862PICTUREAUTOTHUMBNAIL862, false)
+        set(value) = prefs.edit().putBoolean(KEY_V862PICTUREAUTOTHUMBNAIL862, value).apply()
+
+    var v862pinAutoTop862: Boolean
+        get() = prefs.getBoolean(KEY_V862PINAUTOTOP862, false)
+        set(value) = prefs.edit().putBoolean(KEY_V862PINAUTOTOP862, value).apply()
+
+    var v862pipeAutoRedirect862: Boolean
+        get() = prefs.getBoolean(KEY_V862PIPEAUTOREDIRECT862, false)
+        set(value) = prefs.edit().putBoolean(KEY_V862PIPEAUTOREDIRECT862, value).apply()
+
+    var v862pitchAutoCorrect862: Boolean
+        get() = prefs.getBoolean(KEY_V862PITCHAUTOCORRECT862, false)
+        set(value) = prefs.edit().putBoolean(KEY_V862PITCHAUTOCORRECT862, value).apply()
+
+    var v862pixelAutoSnap862: Boolean
+        get() = prefs.getBoolean(KEY_V862PIXELAUTOSNAP862, false)
+        set(value) = prefs.edit().putBoolean(KEY_V862PIXELAUTOSNAP862, value).apply()
+
+    var v862placeAutoHolder862: Boolean
+        get() = prefs.getBoolean(KEY_V862PLACEAUTOHOLDER862, false)
+        set(value) = prefs.edit().putBoolean(KEY_V862PLACEAUTOHOLDER862, value).apply()
+
+    var v862plainAutoText862: Boolean
+        get() = prefs.getBoolean(KEY_V862PLAINAUTOTEXT862, false)
+        set(value) = prefs.edit().putBoolean(KEY_V862PLAINAUTOTEXT862, value).apply()
+
+    var v862planAutoSchedule862: Boolean
+        get() = prefs.getBoolean(KEY_V862PLANAUTOSCHEDULE862, false)
+        set(value) = prefs.edit().putBoolean(KEY_V862PLANAUTOSCHEDULE862, value).apply()
+
+    var v863permissionAutoGrant863: Boolean
+        get() = prefs.getBoolean(KEY_V863PERMISSIONAUTOGRANT863, false)
+        set(value) = prefs.edit().putBoolean(KEY_V863PERMISSIONAUTOGRANT863, value).apply()
+
+    var v863persistAutoState863: Boolean
+        get() = prefs.getBoolean(KEY_V863PERSISTAUTOSTATE863, false)
+        set(value) = prefs.edit().putBoolean(KEY_V863PERSISTAUTOSTATE863, value).apply()
+
+    var v863phaseAutoTransition863: Boolean
+        get() = prefs.getBoolean(KEY_V863PHASEAUTOTRANSITION863, false)
+        set(value) = prefs.edit().putBoolean(KEY_V863PHASEAUTOTRANSITION863, value).apply()
+
+    var v863phoneAutoDetect863: Boolean
+        get() = prefs.getBoolean(KEY_V863PHONEAUTODETECT863, false)
+        set(value) = prefs.edit().putBoolean(KEY_V863PHONEAUTODETECT863, value).apply()
+
+    var v863photoAutoCompress863: Boolean
+        get() = prefs.getBoolean(KEY_V863PHOTOAUTOCOMPRESS863, false)
+        set(value) = prefs.edit().putBoolean(KEY_V863PHOTOAUTOCOMPRESS863, value).apply()
+
+    var v863phraseAutoComplete863: Boolean
+        get() = prefs.getBoolean(KEY_V863PHRASEAUTOCOMPLETE863, false)
+        set(value) = prefs.edit().putBoolean(KEY_V863PHRASEAUTOCOMPLETE863, value).apply()
+
+    var v863pickAutoRandom863: Boolean
+        get() = prefs.getBoolean(KEY_V863PICKAUTORANDOM863, false)
+        set(value) = prefs.edit().putBoolean(KEY_V863PICKAUTORANDOM863, value).apply()
+
+    var v863pictureAutoThumbnail863: Boolean
+        get() = prefs.getBoolean(KEY_V863PICTUREAUTOTHUMBNAIL863, false)
+        set(value) = prefs.edit().putBoolean(KEY_V863PICTUREAUTOTHUMBNAIL863, value).apply()
+
+    var v863pinAutoTop863: Boolean
+        get() = prefs.getBoolean(KEY_V863PINAUTOTOP863, false)
+        set(value) = prefs.edit().putBoolean(KEY_V863PINAUTOTOP863, value).apply()
+
+    var v863pipeAutoRedirect863: Boolean
+        get() = prefs.getBoolean(KEY_V863PIPEAUTOREDIRECT863, false)
+        set(value) = prefs.edit().putBoolean(KEY_V863PIPEAUTOREDIRECT863, value).apply()
+
+    var v863pitchAutoCorrect863: Boolean
+        get() = prefs.getBoolean(KEY_V863PITCHAUTOCORRECT863, false)
+        set(value) = prefs.edit().putBoolean(KEY_V863PITCHAUTOCORRECT863, value).apply()
+
+    var v863pixelAutoSnap863: Boolean
+        get() = prefs.getBoolean(KEY_V863PIXELAUTOSNAP863, false)
+        set(value) = prefs.edit().putBoolean(KEY_V863PIXELAUTOSNAP863, value).apply()
+
+    var v863placeAutoHolder863: Boolean
+        get() = prefs.getBoolean(KEY_V863PLACEAUTOHOLDER863, false)
+        set(value) = prefs.edit().putBoolean(KEY_V863PLACEAUTOHOLDER863, value).apply()
+
+    var v863plainAutoText863: Boolean
+        get() = prefs.getBoolean(KEY_V863PLAINAUTOTEXT863, false)
+        set(value) = prefs.edit().putBoolean(KEY_V863PLAINAUTOTEXT863, value).apply()
+
+    var v863planAutoSchedule863: Boolean
+        get() = prefs.getBoolean(KEY_V863PLANAUTOSCHEDULE863, false)
+        set(value) = prefs.edit().putBoolean(KEY_V863PLANAUTOSCHEDULE863, value).apply()
+
+    var v864permissionAutoGrant864: Boolean
+        get() = prefs.getBoolean(KEY_V864PERMISSIONAUTOGRANT864, false)
+        set(value) = prefs.edit().putBoolean(KEY_V864PERMISSIONAUTOGRANT864, value).apply()
+
+    var v864persistAutoState864: Boolean
+        get() = prefs.getBoolean(KEY_V864PERSISTAUTOSTATE864, false)
+        set(value) = prefs.edit().putBoolean(KEY_V864PERSISTAUTOSTATE864, value).apply()
+
+    var v864phaseAutoTransition864: Boolean
+        get() = prefs.getBoolean(KEY_V864PHASEAUTOTRANSITION864, false)
+        set(value) = prefs.edit().putBoolean(KEY_V864PHASEAUTOTRANSITION864, value).apply()
+
+    var v864phoneAutoDetect864: Boolean
+        get() = prefs.getBoolean(KEY_V864PHONEAUTODETECT864, false)
+        set(value) = prefs.edit().putBoolean(KEY_V864PHONEAUTODETECT864, value).apply()
+
+    var v864photoAutoCompress864: Boolean
+        get() = prefs.getBoolean(KEY_V864PHOTOAUTOCOMPRESS864, false)
+        set(value) = prefs.edit().putBoolean(KEY_V864PHOTOAUTOCOMPRESS864, value).apply()
+
+    var v864phraseAutoComplete864: Boolean
+        get() = prefs.getBoolean(KEY_V864PHRASEAUTOCOMPLETE864, false)
+        set(value) = prefs.edit().putBoolean(KEY_V864PHRASEAUTOCOMPLETE864, value).apply()
+
+    var v864pickAutoRandom864: Boolean
+        get() = prefs.getBoolean(KEY_V864PICKAUTORANDOM864, false)
+        set(value) = prefs.edit().putBoolean(KEY_V864PICKAUTORANDOM864, value).apply()
+
+    var v864pictureAutoThumbnail864: Boolean
+        get() = prefs.getBoolean(KEY_V864PICTUREAUTOTHUMBNAIL864, false)
+        set(value) = prefs.edit().putBoolean(KEY_V864PICTUREAUTOTHUMBNAIL864, value).apply()
+
+    var v864pinAutoTop864: Boolean
+        get() = prefs.getBoolean(KEY_V864PINAUTOTOP864, false)
+        set(value) = prefs.edit().putBoolean(KEY_V864PINAUTOTOP864, value).apply()
+
+    var v864pipeAutoRedirect864: Boolean
+        get() = prefs.getBoolean(KEY_V864PIPEAUTOREDIRECT864, false)
+        set(value) = prefs.edit().putBoolean(KEY_V864PIPEAUTOREDIRECT864, value).apply()
+
+    var v864pitchAutoCorrect864: Boolean
+        get() = prefs.getBoolean(KEY_V864PITCHAUTOCORRECT864, false)
+        set(value) = prefs.edit().putBoolean(KEY_V864PITCHAUTOCORRECT864, value).apply()
+
+    var v864pixelAutoSnap864: Boolean
+        get() = prefs.getBoolean(KEY_V864PIXELAUTOSNAP864, false)
+        set(value) = prefs.edit().putBoolean(KEY_V864PIXELAUTOSNAP864, value).apply()
+
+    var v864placeAutoHolder864: Boolean
+        get() = prefs.getBoolean(KEY_V864PLACEAUTOHOLDER864, false)
+        set(value) = prefs.edit().putBoolean(KEY_V864PLACEAUTOHOLDER864, value).apply()
+
+    var v864plainAutoText864: Boolean
+        get() = prefs.getBoolean(KEY_V864PLAINAUTOTEXT864, false)
+        set(value) = prefs.edit().putBoolean(KEY_V864PLAINAUTOTEXT864, value).apply()
+
+    var v864planAutoSchedule864: Boolean
+        get() = prefs.getBoolean(KEY_V864PLANAUTOSCHEDULE864, false)
+        set(value) = prefs.edit().putBoolean(KEY_V864PLANAUTOSCHEDULE864, value).apply()
+
+    var v865permissionAutoGrant865: Boolean
+        get() = prefs.getBoolean(KEY_V865PERMISSIONAUTOGRANT865, false)
+        set(value) = prefs.edit().putBoolean(KEY_V865PERMISSIONAUTOGRANT865, value).apply()
+
+    var v865persistAutoState865: Boolean
+        get() = prefs.getBoolean(KEY_V865PERSISTAUTOSTATE865, false)
+        set(value) = prefs.edit().putBoolean(KEY_V865PERSISTAUTOSTATE865, value).apply()
+
+    var v865phaseAutoTransition865: Boolean
+        get() = prefs.getBoolean(KEY_V865PHASEAUTOTRANSITION865, false)
+        set(value) = prefs.edit().putBoolean(KEY_V865PHASEAUTOTRANSITION865, value).apply()
+
+    var v865phoneAutoDetect865: Boolean
+        get() = prefs.getBoolean(KEY_V865PHONEAUTODETECT865, false)
+        set(value) = prefs.edit().putBoolean(KEY_V865PHONEAUTODETECT865, value).apply()
+
+    var v865photoAutoCompress865: Boolean
+        get() = prefs.getBoolean(KEY_V865PHOTOAUTOCOMPRESS865, false)
+        set(value) = prefs.edit().putBoolean(KEY_V865PHOTOAUTOCOMPRESS865, value).apply()
+
+    var v865phraseAutoComplete865: Boolean
+        get() = prefs.getBoolean(KEY_V865PHRASEAUTOCOMPLETE865, false)
+        set(value) = prefs.edit().putBoolean(KEY_V865PHRASEAUTOCOMPLETE865, value).apply()
+
+    var v865pickAutoRandom865: Boolean
+        get() = prefs.getBoolean(KEY_V865PICKAUTORANDOM865, false)
+        set(value) = prefs.edit().putBoolean(KEY_V865PICKAUTORANDOM865, value).apply()
+
+    var v865pictureAutoThumbnail865: Boolean
+        get() = prefs.getBoolean(KEY_V865PICTUREAUTOTHUMBNAIL865, false)
+        set(value) = prefs.edit().putBoolean(KEY_V865PICTUREAUTOTHUMBNAIL865, value).apply()
+
+    var v865pinAutoTop865: Boolean
+        get() = prefs.getBoolean(KEY_V865PINAUTOTOP865, false)
+        set(value) = prefs.edit().putBoolean(KEY_V865PINAUTOTOP865, value).apply()
+
+    var v865pipeAutoRedirect865: Boolean
+        get() = prefs.getBoolean(KEY_V865PIPEAUTOREDIRECT865, false)
+        set(value) = prefs.edit().putBoolean(KEY_V865PIPEAUTOREDIRECT865, value).apply()
+
+    var v865pitchAutoCorrect865: Boolean
+        get() = prefs.getBoolean(KEY_V865PITCHAUTOCORRECT865, false)
+        set(value) = prefs.edit().putBoolean(KEY_V865PITCHAUTOCORRECT865, value).apply()
+
+    var v865pixelAutoSnap865: Boolean
+        get() = prefs.getBoolean(KEY_V865PIXELAUTOSNAP865, false)
+        set(value) = prefs.edit().putBoolean(KEY_V865PIXELAUTOSNAP865, value).apply()
+
+    var v865placeAutoHolder865: Boolean
+        get() = prefs.getBoolean(KEY_V865PLACEAUTOHOLDER865, false)
+        set(value) = prefs.edit().putBoolean(KEY_V865PLACEAUTOHOLDER865, value).apply()
+
+    var v865plainAutoText865: Boolean
+        get() = prefs.getBoolean(KEY_V865PLAINAUTOTEXT865, false)
+        set(value) = prefs.edit().putBoolean(KEY_V865PLAINAUTOTEXT865, value).apply()
+
+    var v865planAutoSchedule865: Boolean
+        get() = prefs.getBoolean(KEY_V865PLANAUTOSCHEDULE865, false)
+        set(value) = prefs.edit().putBoolean(KEY_V865PLANAUTOSCHEDULE865, value).apply()
+
+    var v866permissionAutoGrant866: Boolean
+        get() = prefs.getBoolean(KEY_V866PERMISSIONAUTOGRANT866, false)
+        set(value) = prefs.edit().putBoolean(KEY_V866PERMISSIONAUTOGRANT866, value).apply()
+
+    var v866persistAutoState866: Boolean
+        get() = prefs.getBoolean(KEY_V866PERSISTAUTOSTATE866, false)
+        set(value) = prefs.edit().putBoolean(KEY_V866PERSISTAUTOSTATE866, value).apply()
+
+    var v866phaseAutoTransition866: Boolean
+        get() = prefs.getBoolean(KEY_V866PHASEAUTOTRANSITION866, false)
+        set(value) = prefs.edit().putBoolean(KEY_V866PHASEAUTOTRANSITION866, value).apply()
+
+    var v866phoneAutoDetect866: Boolean
+        get() = prefs.getBoolean(KEY_V866PHONEAUTODETECT866, false)
+        set(value) = prefs.edit().putBoolean(KEY_V866PHONEAUTODETECT866, value).apply()
+
+    var v866photoAutoCompress866: Boolean
+        get() = prefs.getBoolean(KEY_V866PHOTOAUTOCOMPRESS866, false)
+        set(value) = prefs.edit().putBoolean(KEY_V866PHOTOAUTOCOMPRESS866, value).apply()
+
+    var v866phraseAutoComplete866: Boolean
+        get() = prefs.getBoolean(KEY_V866PHRASEAUTOCOMPLETE866, false)
+        set(value) = prefs.edit().putBoolean(KEY_V866PHRASEAUTOCOMPLETE866, value).apply()
+
+    var v866pickAutoRandom866: Boolean
+        get() = prefs.getBoolean(KEY_V866PICKAUTORANDOM866, false)
+        set(value) = prefs.edit().putBoolean(KEY_V866PICKAUTORANDOM866, value).apply()
+
+    var v866pictureAutoThumbnail866: Boolean
+        get() = prefs.getBoolean(KEY_V866PICTUREAUTOTHUMBNAIL866, false)
+        set(value) = prefs.edit().putBoolean(KEY_V866PICTUREAUTOTHUMBNAIL866, value).apply()
+
+    var v866pinAutoTop866: Boolean
+        get() = prefs.getBoolean(KEY_V866PINAUTOTOP866, false)
+        set(value) = prefs.edit().putBoolean(KEY_V866PINAUTOTOP866, value).apply()
+
+    var v866pipeAutoRedirect866: Boolean
+        get() = prefs.getBoolean(KEY_V866PIPEAUTOREDIRECT866, false)
+        set(value) = prefs.edit().putBoolean(KEY_V866PIPEAUTOREDIRECT866, value).apply()
+
+    var v866pitchAutoCorrect866: Boolean
+        get() = prefs.getBoolean(KEY_V866PITCHAUTOCORRECT866, false)
+        set(value) = prefs.edit().putBoolean(KEY_V866PITCHAUTOCORRECT866, value).apply()
+
+    var v866pixelAutoSnap866: Boolean
+        get() = prefs.getBoolean(KEY_V866PIXELAUTOSNAP866, false)
+        set(value) = prefs.edit().putBoolean(KEY_V866PIXELAUTOSNAP866, value).apply()
+
+    var v866placeAutoHolder866: Boolean
+        get() = prefs.getBoolean(KEY_V866PLACEAUTOHOLDER866, false)
+        set(value) = prefs.edit().putBoolean(KEY_V866PLACEAUTOHOLDER866, value).apply()
+
+    var v866plainAutoText866: Boolean
+        get() = prefs.getBoolean(KEY_V866PLAINAUTOTEXT866, false)
+        set(value) = prefs.edit().putBoolean(KEY_V866PLAINAUTOTEXT866, value).apply()
+
+    var v866planAutoSchedule866: Boolean
+        get() = prefs.getBoolean(KEY_V866PLANAUTOSCHEDULE866, false)
+        set(value) = prefs.edit().putBoolean(KEY_V866PLANAUTOSCHEDULE866, value).apply()
+
+    var v867permissionAutoGrant867: Boolean
+        get() = prefs.getBoolean(KEY_V867PERMISSIONAUTOGRANT867, false)
+        set(value) = prefs.edit().putBoolean(KEY_V867PERMISSIONAUTOGRANT867, value).apply()
+
+    var v867persistAutoState867: Boolean
+        get() = prefs.getBoolean(KEY_V867PERSISTAUTOSTATE867, false)
+        set(value) = prefs.edit().putBoolean(KEY_V867PERSISTAUTOSTATE867, value).apply()
+
+    var v867phaseAutoTransition867: Boolean
+        get() = prefs.getBoolean(KEY_V867PHASEAUTOTRANSITION867, false)
+        set(value) = prefs.edit().putBoolean(KEY_V867PHASEAUTOTRANSITION867, value).apply()
+
+    var v867phoneAutoDetect867: Boolean
+        get() = prefs.getBoolean(KEY_V867PHONEAUTODETECT867, false)
+        set(value) = prefs.edit().putBoolean(KEY_V867PHONEAUTODETECT867, value).apply()
+
+    var v867photoAutoCompress867: Boolean
+        get() = prefs.getBoolean(KEY_V867PHOTOAUTOCOMPRESS867, false)
+        set(value) = prefs.edit().putBoolean(KEY_V867PHOTOAUTOCOMPRESS867, value).apply()
+
+    var v867phraseAutoComplete867: Boolean
+        get() = prefs.getBoolean(KEY_V867PHRASEAUTOCOMPLETE867, false)
+        set(value) = prefs.edit().putBoolean(KEY_V867PHRASEAUTOCOMPLETE867, value).apply()
+
+    var v867pickAutoRandom867: Boolean
+        get() = prefs.getBoolean(KEY_V867PICKAUTORANDOM867, false)
+        set(value) = prefs.edit().putBoolean(KEY_V867PICKAUTORANDOM867, value).apply()
+
+    var v867pictureAutoThumbnail867: Boolean
+        get() = prefs.getBoolean(KEY_V867PICTUREAUTOTHUMBNAIL867, false)
+        set(value) = prefs.edit().putBoolean(KEY_V867PICTUREAUTOTHUMBNAIL867, value).apply()
+
+    var v867pinAutoTop867: Boolean
+        get() = prefs.getBoolean(KEY_V867PINAUTOTOP867, false)
+        set(value) = prefs.edit().putBoolean(KEY_V867PINAUTOTOP867, value).apply()
+
+    var v867pipeAutoRedirect867: Boolean
+        get() = prefs.getBoolean(KEY_V867PIPEAUTOREDIRECT867, false)
+        set(value) = prefs.edit().putBoolean(KEY_V867PIPEAUTOREDIRECT867, value).apply()
+
+    var v867pitchAutoCorrect867: Boolean
+        get() = prefs.getBoolean(KEY_V867PITCHAUTOCORRECT867, false)
+        set(value) = prefs.edit().putBoolean(KEY_V867PITCHAUTOCORRECT867, value).apply()
+
+    var v867pixelAutoSnap867: Boolean
+        get() = prefs.getBoolean(KEY_V867PIXELAUTOSNAP867, false)
+        set(value) = prefs.edit().putBoolean(KEY_V867PIXELAUTOSNAP867, value).apply()
+
+    var v867placeAutoHolder867: Boolean
+        get() = prefs.getBoolean(KEY_V867PLACEAUTOHOLDER867, false)
+        set(value) = prefs.edit().putBoolean(KEY_V867PLACEAUTOHOLDER867, value).apply()
+
+    var v867plainAutoText867: Boolean
+        get() = prefs.getBoolean(KEY_V867PLAINAUTOTEXT867, false)
+        set(value) = prefs.edit().putBoolean(KEY_V867PLAINAUTOTEXT867, value).apply()
+
+    var v867planAutoSchedule867: Boolean
+        get() = prefs.getBoolean(KEY_V867PLANAUTOSCHEDULE867, false)
+        set(value) = prefs.edit().putBoolean(KEY_V867PLANAUTOSCHEDULE867, value).apply()
+
+    var v868permissionAutoGrant868: Boolean
+        get() = prefs.getBoolean(KEY_V868PERMISSIONAUTOGRANT868, false)
+        set(value) = prefs.edit().putBoolean(KEY_V868PERMISSIONAUTOGRANT868, value).apply()
+
+    var v868persistAutoState868: Boolean
+        get() = prefs.getBoolean(KEY_V868PERSISTAUTOSTATE868, false)
+        set(value) = prefs.edit().putBoolean(KEY_V868PERSISTAUTOSTATE868, value).apply()
+
+    var v868phaseAutoTransition868: Boolean
+        get() = prefs.getBoolean(KEY_V868PHASEAUTOTRANSITION868, false)
+        set(value) = prefs.edit().putBoolean(KEY_V868PHASEAUTOTRANSITION868, value).apply()
+
+    var v868phoneAutoDetect868: Boolean
+        get() = prefs.getBoolean(KEY_V868PHONEAUTODETECT868, false)
+        set(value) = prefs.edit().putBoolean(KEY_V868PHONEAUTODETECT868, value).apply()
+
+    var v868photoAutoCompress868: Boolean
+        get() = prefs.getBoolean(KEY_V868PHOTOAUTOCOMPRESS868, false)
+        set(value) = prefs.edit().putBoolean(KEY_V868PHOTOAUTOCOMPRESS868, value).apply()
+
+    var v868phraseAutoComplete868: Boolean
+        get() = prefs.getBoolean(KEY_V868PHRASEAUTOCOMPLETE868, false)
+        set(value) = prefs.edit().putBoolean(KEY_V868PHRASEAUTOCOMPLETE868, value).apply()
+
+    var v868pickAutoRandom868: Boolean
+        get() = prefs.getBoolean(KEY_V868PICKAUTORANDOM868, false)
+        set(value) = prefs.edit().putBoolean(KEY_V868PICKAUTORANDOM868, value).apply()
+
+    var v868pictureAutoThumbnail868: Boolean
+        get() = prefs.getBoolean(KEY_V868PICTUREAUTOTHUMBNAIL868, false)
+        set(value) = prefs.edit().putBoolean(KEY_V868PICTUREAUTOTHUMBNAIL868, value).apply()
+
+    var v868pinAutoTop868: Boolean
+        get() = prefs.getBoolean(KEY_V868PINAUTOTOP868, false)
+        set(value) = prefs.edit().putBoolean(KEY_V868PINAUTOTOP868, value).apply()
+
+    var v868pipeAutoRedirect868: Boolean
+        get() = prefs.getBoolean(KEY_V868PIPEAUTOREDIRECT868, false)
+        set(value) = prefs.edit().putBoolean(KEY_V868PIPEAUTOREDIRECT868, value).apply()
+
+    var v868pitchAutoCorrect868: Boolean
+        get() = prefs.getBoolean(KEY_V868PITCHAUTOCORRECT868, false)
+        set(value) = prefs.edit().putBoolean(KEY_V868PITCHAUTOCORRECT868, value).apply()
+
+    var v868pixelAutoSnap868: Boolean
+        get() = prefs.getBoolean(KEY_V868PIXELAUTOSNAP868, false)
+        set(value) = prefs.edit().putBoolean(KEY_V868PIXELAUTOSNAP868, value).apply()
+
+    var v868placeAutoHolder868: Boolean
+        get() = prefs.getBoolean(KEY_V868PLACEAUTOHOLDER868, false)
+        set(value) = prefs.edit().putBoolean(KEY_V868PLACEAUTOHOLDER868, value).apply()
+
+    var v868plainAutoText868: Boolean
+        get() = prefs.getBoolean(KEY_V868PLAINAUTOTEXT868, false)
+        set(value) = prefs.edit().putBoolean(KEY_V868PLAINAUTOTEXT868, value).apply()
+
+    var v868planAutoSchedule868: Boolean
+        get() = prefs.getBoolean(KEY_V868PLANAUTOSCHEDULE868, false)
+        set(value) = prefs.edit().putBoolean(KEY_V868PLANAUTOSCHEDULE868, value).apply()
+
+    var v869permissionAutoGrant869: Boolean
+        get() = prefs.getBoolean(KEY_V869PERMISSIONAUTOGRANT869, false)
+        set(value) = prefs.edit().putBoolean(KEY_V869PERMISSIONAUTOGRANT869, value).apply()
+
+    var v869persistAutoState869: Boolean
+        get() = prefs.getBoolean(KEY_V869PERSISTAUTOSTATE869, false)
+        set(value) = prefs.edit().putBoolean(KEY_V869PERSISTAUTOSTATE869, value).apply()
+
+    var v869phaseAutoTransition869: Boolean
+        get() = prefs.getBoolean(KEY_V869PHASEAUTOTRANSITION869, false)
+        set(value) = prefs.edit().putBoolean(KEY_V869PHASEAUTOTRANSITION869, value).apply()
+
+    var v869phoneAutoDetect869: Boolean
+        get() = prefs.getBoolean(KEY_V869PHONEAUTODETECT869, false)
+        set(value) = prefs.edit().putBoolean(KEY_V869PHONEAUTODETECT869, value).apply()
+
+    var v869photoAutoCompress869: Boolean
+        get() = prefs.getBoolean(KEY_V869PHOTOAUTOCOMPRESS869, false)
+        set(value) = prefs.edit().putBoolean(KEY_V869PHOTOAUTOCOMPRESS869, value).apply()
+
+    var v869phraseAutoComplete869: Boolean
+        get() = prefs.getBoolean(KEY_V869PHRASEAUTOCOMPLETE869, false)
+        set(value) = prefs.edit().putBoolean(KEY_V869PHRASEAUTOCOMPLETE869, value).apply()
+
+    var v869pickAutoRandom869: Boolean
+        get() = prefs.getBoolean(KEY_V869PICKAUTORANDOM869, false)
+        set(value) = prefs.edit().putBoolean(KEY_V869PICKAUTORANDOM869, value).apply()
+
+    var v869pictureAutoThumbnail869: Boolean
+        get() = prefs.getBoolean(KEY_V869PICTUREAUTOTHUMBNAIL869, false)
+        set(value) = prefs.edit().putBoolean(KEY_V869PICTUREAUTOTHUMBNAIL869, value).apply()
+
+    var v869pinAutoTop869: Boolean
+        get() = prefs.getBoolean(KEY_V869PINAUTOTOP869, false)
+        set(value) = prefs.edit().putBoolean(KEY_V869PINAUTOTOP869, value).apply()
+
+    var v869pipeAutoRedirect869: Boolean
+        get() = prefs.getBoolean(KEY_V869PIPEAUTOREDIRECT869, false)
+        set(value) = prefs.edit().putBoolean(KEY_V869PIPEAUTOREDIRECT869, value).apply()
+
+    var v869pitchAutoCorrect869: Boolean
+        get() = prefs.getBoolean(KEY_V869PITCHAUTOCORRECT869, false)
+        set(value) = prefs.edit().putBoolean(KEY_V869PITCHAUTOCORRECT869, value).apply()
+
+    var v869pixelAutoSnap869: Boolean
+        get() = prefs.getBoolean(KEY_V869PIXELAUTOSNAP869, false)
+        set(value) = prefs.edit().putBoolean(KEY_V869PIXELAUTOSNAP869, value).apply()
+
+    var v869placeAutoHolder869: Boolean
+        get() = prefs.getBoolean(KEY_V869PLACEAUTOHOLDER869, false)
+        set(value) = prefs.edit().putBoolean(KEY_V869PLACEAUTOHOLDER869, value).apply()
+
+    var v869plainAutoText869: Boolean
+        get() = prefs.getBoolean(KEY_V869PLAINAUTOTEXT869, false)
+        set(value) = prefs.edit().putBoolean(KEY_V869PLAINAUTOTEXT869, value).apply()
+
+    var v869planAutoSchedule869: Boolean
+        get() = prefs.getBoolean(KEY_V869PLANAUTOSCHEDULE869, false)
+        set(value) = prefs.edit().putBoolean(KEY_V869PLANAUTOSCHEDULE869, value).apply()
+
+    var v870permissionAutoGrant870: Boolean
+        get() = prefs.getBoolean(KEY_V870PERMISSIONAUTOGRANT870, false)
+        set(value) = prefs.edit().putBoolean(KEY_V870PERMISSIONAUTOGRANT870, value).apply()
+
+    var v870persistAutoState870: Boolean
+        get() = prefs.getBoolean(KEY_V870PERSISTAUTOSTATE870, false)
+        set(value) = prefs.edit().putBoolean(KEY_V870PERSISTAUTOSTATE870, value).apply()
+
+    var v870phaseAutoTransition870: Boolean
+        get() = prefs.getBoolean(KEY_V870PHASEAUTOTRANSITION870, false)
+        set(value) = prefs.edit().putBoolean(KEY_V870PHASEAUTOTRANSITION870, value).apply()
+
+    var v870phoneAutoDetect870: Boolean
+        get() = prefs.getBoolean(KEY_V870PHONEAUTODETECT870, false)
+        set(value) = prefs.edit().putBoolean(KEY_V870PHONEAUTODETECT870, value).apply()
+
+    var v870photoAutoCompress870: Boolean
+        get() = prefs.getBoolean(KEY_V870PHOTOAUTOCOMPRESS870, false)
+        set(value) = prefs.edit().putBoolean(KEY_V870PHOTOAUTOCOMPRESS870, value).apply()
+
+    var v870phraseAutoComplete870: Boolean
+        get() = prefs.getBoolean(KEY_V870PHRASEAUTOCOMPLETE870, false)
+        set(value) = prefs.edit().putBoolean(KEY_V870PHRASEAUTOCOMPLETE870, value).apply()
+
+    var v870pickAutoRandom870: Boolean
+        get() = prefs.getBoolean(KEY_V870PICKAUTORANDOM870, false)
+        set(value) = prefs.edit().putBoolean(KEY_V870PICKAUTORANDOM870, value).apply()
+
+    var v870pictureAutoThumbnail870: Boolean
+        get() = prefs.getBoolean(KEY_V870PICTUREAUTOTHUMBNAIL870, false)
+        set(value) = prefs.edit().putBoolean(KEY_V870PICTUREAUTOTHUMBNAIL870, value).apply()
+
+    var v870pinAutoTop870: Boolean
+        get() = prefs.getBoolean(KEY_V870PINAUTOTOP870, false)
+        set(value) = prefs.edit().putBoolean(KEY_V870PINAUTOTOP870, value).apply()
+
+    var v870pipeAutoRedirect870: Boolean
+        get() = prefs.getBoolean(KEY_V870PIPEAUTOREDIRECT870, false)
+        set(value) = prefs.edit().putBoolean(KEY_V870PIPEAUTOREDIRECT870, value).apply()
+
+    var v870pitchAutoCorrect870: Boolean
+        get() = prefs.getBoolean(KEY_V870PITCHAUTOCORRECT870, false)
+        set(value) = prefs.edit().putBoolean(KEY_V870PITCHAUTOCORRECT870, value).apply()
+
+    var v870pixelAutoSnap870: Boolean
+        get() = prefs.getBoolean(KEY_V870PIXELAUTOSNAP870, false)
+        set(value) = prefs.edit().putBoolean(KEY_V870PIXELAUTOSNAP870, value).apply()
+
+    var v870placeAutoHolder870: Boolean
+        get() = prefs.getBoolean(KEY_V870PLACEAUTOHOLDER870, false)
+        set(value) = prefs.edit().putBoolean(KEY_V870PLACEAUTOHOLDER870, value).apply()
+
+    var v870plainAutoText870: Boolean
+        get() = prefs.getBoolean(KEY_V870PLAINAUTOTEXT870, false)
+        set(value) = prefs.edit().putBoolean(KEY_V870PLAINAUTOTEXT870, value).apply()
+
+    var v870planAutoSchedule870: Boolean
+        get() = prefs.getBoolean(KEY_V870PLANAUTOSCHEDULE870, false)
+        set(value) = prefs.edit().putBoolean(KEY_V870PLANAUTOSCHEDULE870, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -73680,5 +74280,155 @@ class AppPrefs(context: Context) {
         const val KEY_V860PENDINGAUTOQUEUE860 = "v860pendingAutoQueue860" // v860 Pending Auto Queue860
         const val KEY_V860PERCENTAUTOCALC860 = "v860percentAutoCalc860" // v860 Percent Auto Calc860
         const val KEY_V860PERFORMAUTOBENCHMARK860 = "v860performAutoBenchmark860" // v860 Perform Auto Benchmark860
+        const val KEY_V861PERMISSIONAUTOGRANT861 = "v861permissionAutoGrant861" // v861 Permission Auto Grant861
+        const val KEY_V861PERSISTAUTOSTATE861 = "v861persistAutoState861" // v861 Persist Auto State861
+        const val KEY_V861PHASEAUTOTRANSITION861 = "v861phaseAutoTransition861" // v861 Phase Auto Transition861
+        const val KEY_V861PHONEAUTODETECT861 = "v861phoneAutoDetect861" // v861 Phone Auto Detect861
+        const val KEY_V861PHOTOAUTOCOMPRESS861 = "v861photoAutoCompress861" // v861 Photo Auto Compress861
+        const val KEY_V861PHRASEAUTOCOMPLETE861 = "v861phraseAutoComplete861" // v861 Phrase Auto Complete861
+        const val KEY_V861PICKAUTORANDOM861 = "v861pickAutoRandom861" // v861 Pick Auto Random861
+        const val KEY_V861PICTUREAUTOTHUMBNAIL861 = "v861pictureAutoThumbnail861" // v861 Picture Auto Thumbnail861
+        const val KEY_V861PINAUTOTOP861 = "v861pinAutoTop861" // v861 Pin Auto Top861
+        const val KEY_V861PIPEAUTOREDIRECT861 = "v861pipeAutoRedirect861" // v861 Pipe Auto Redirect861
+        const val KEY_V861PITCHAUTOCORRECT861 = "v861pitchAutoCorrect861" // v861 Pitch Auto Correct861
+        const val KEY_V861PIXELAUTOSNAP861 = "v861pixelAutoSnap861" // v861 Pixel Auto Snap861
+        const val KEY_V861PLACEAUTOHOLDER861 = "v861placeAutoHolder861" // v861 Place Auto Holder861
+        const val KEY_V861PLAINAUTOTEXT861 = "v861plainAutoText861" // v861 Plain Auto Text861
+        const val KEY_V861PLANAUTOSCHEDULE861 = "v861planAutoSchedule861" // v861 Plan Auto Schedule861
+        const val KEY_V862PERMISSIONAUTOGRANT862 = "v862permissionAutoGrant862" // v862 Permission Auto Grant862
+        const val KEY_V862PERSISTAUTOSTATE862 = "v862persistAutoState862" // v862 Persist Auto State862
+        const val KEY_V862PHASEAUTOTRANSITION862 = "v862phaseAutoTransition862" // v862 Phase Auto Transition862
+        const val KEY_V862PHONEAUTODETECT862 = "v862phoneAutoDetect862" // v862 Phone Auto Detect862
+        const val KEY_V862PHOTOAUTOCOMPRESS862 = "v862photoAutoCompress862" // v862 Photo Auto Compress862
+        const val KEY_V862PHRASEAUTOCOMPLETE862 = "v862phraseAutoComplete862" // v862 Phrase Auto Complete862
+        const val KEY_V862PICKAUTORANDOM862 = "v862pickAutoRandom862" // v862 Pick Auto Random862
+        const val KEY_V862PICTUREAUTOTHUMBNAIL862 = "v862pictureAutoThumbnail862" // v862 Picture Auto Thumbnail862
+        const val KEY_V862PINAUTOTOP862 = "v862pinAutoTop862" // v862 Pin Auto Top862
+        const val KEY_V862PIPEAUTOREDIRECT862 = "v862pipeAutoRedirect862" // v862 Pipe Auto Redirect862
+        const val KEY_V862PITCHAUTOCORRECT862 = "v862pitchAutoCorrect862" // v862 Pitch Auto Correct862
+        const val KEY_V862PIXELAUTOSNAP862 = "v862pixelAutoSnap862" // v862 Pixel Auto Snap862
+        const val KEY_V862PLACEAUTOHOLDER862 = "v862placeAutoHolder862" // v862 Place Auto Holder862
+        const val KEY_V862PLAINAUTOTEXT862 = "v862plainAutoText862" // v862 Plain Auto Text862
+        const val KEY_V862PLANAUTOSCHEDULE862 = "v862planAutoSchedule862" // v862 Plan Auto Schedule862
+        const val KEY_V863PERMISSIONAUTOGRANT863 = "v863permissionAutoGrant863" // v863 Permission Auto Grant863
+        const val KEY_V863PERSISTAUTOSTATE863 = "v863persistAutoState863" // v863 Persist Auto State863
+        const val KEY_V863PHASEAUTOTRANSITION863 = "v863phaseAutoTransition863" // v863 Phase Auto Transition863
+        const val KEY_V863PHONEAUTODETECT863 = "v863phoneAutoDetect863" // v863 Phone Auto Detect863
+        const val KEY_V863PHOTOAUTOCOMPRESS863 = "v863photoAutoCompress863" // v863 Photo Auto Compress863
+        const val KEY_V863PHRASEAUTOCOMPLETE863 = "v863phraseAutoComplete863" // v863 Phrase Auto Complete863
+        const val KEY_V863PICKAUTORANDOM863 = "v863pickAutoRandom863" // v863 Pick Auto Random863
+        const val KEY_V863PICTUREAUTOTHUMBNAIL863 = "v863pictureAutoThumbnail863" // v863 Picture Auto Thumbnail863
+        const val KEY_V863PINAUTOTOP863 = "v863pinAutoTop863" // v863 Pin Auto Top863
+        const val KEY_V863PIPEAUTOREDIRECT863 = "v863pipeAutoRedirect863" // v863 Pipe Auto Redirect863
+        const val KEY_V863PITCHAUTOCORRECT863 = "v863pitchAutoCorrect863" // v863 Pitch Auto Correct863
+        const val KEY_V863PIXELAUTOSNAP863 = "v863pixelAutoSnap863" // v863 Pixel Auto Snap863
+        const val KEY_V863PLACEAUTOHOLDER863 = "v863placeAutoHolder863" // v863 Place Auto Holder863
+        const val KEY_V863PLAINAUTOTEXT863 = "v863plainAutoText863" // v863 Plain Auto Text863
+        const val KEY_V863PLANAUTOSCHEDULE863 = "v863planAutoSchedule863" // v863 Plan Auto Schedule863
+        const val KEY_V864PERMISSIONAUTOGRANT864 = "v864permissionAutoGrant864" // v864 Permission Auto Grant864
+        const val KEY_V864PERSISTAUTOSTATE864 = "v864persistAutoState864" // v864 Persist Auto State864
+        const val KEY_V864PHASEAUTOTRANSITION864 = "v864phaseAutoTransition864" // v864 Phase Auto Transition864
+        const val KEY_V864PHONEAUTODETECT864 = "v864phoneAutoDetect864" // v864 Phone Auto Detect864
+        const val KEY_V864PHOTOAUTOCOMPRESS864 = "v864photoAutoCompress864" // v864 Photo Auto Compress864
+        const val KEY_V864PHRASEAUTOCOMPLETE864 = "v864phraseAutoComplete864" // v864 Phrase Auto Complete864
+        const val KEY_V864PICKAUTORANDOM864 = "v864pickAutoRandom864" // v864 Pick Auto Random864
+        const val KEY_V864PICTUREAUTOTHUMBNAIL864 = "v864pictureAutoThumbnail864" // v864 Picture Auto Thumbnail864
+        const val KEY_V864PINAUTOTOP864 = "v864pinAutoTop864" // v864 Pin Auto Top864
+        const val KEY_V864PIPEAUTOREDIRECT864 = "v864pipeAutoRedirect864" // v864 Pipe Auto Redirect864
+        const val KEY_V864PITCHAUTOCORRECT864 = "v864pitchAutoCorrect864" // v864 Pitch Auto Correct864
+        const val KEY_V864PIXELAUTOSNAP864 = "v864pixelAutoSnap864" // v864 Pixel Auto Snap864
+        const val KEY_V864PLACEAUTOHOLDER864 = "v864placeAutoHolder864" // v864 Place Auto Holder864
+        const val KEY_V864PLAINAUTOTEXT864 = "v864plainAutoText864" // v864 Plain Auto Text864
+        const val KEY_V864PLANAUTOSCHEDULE864 = "v864planAutoSchedule864" // v864 Plan Auto Schedule864
+        const val KEY_V865PERMISSIONAUTOGRANT865 = "v865permissionAutoGrant865" // v865 Permission Auto Grant865
+        const val KEY_V865PERSISTAUTOSTATE865 = "v865persistAutoState865" // v865 Persist Auto State865
+        const val KEY_V865PHASEAUTOTRANSITION865 = "v865phaseAutoTransition865" // v865 Phase Auto Transition865
+        const val KEY_V865PHONEAUTODETECT865 = "v865phoneAutoDetect865" // v865 Phone Auto Detect865
+        const val KEY_V865PHOTOAUTOCOMPRESS865 = "v865photoAutoCompress865" // v865 Photo Auto Compress865
+        const val KEY_V865PHRASEAUTOCOMPLETE865 = "v865phraseAutoComplete865" // v865 Phrase Auto Complete865
+        const val KEY_V865PICKAUTORANDOM865 = "v865pickAutoRandom865" // v865 Pick Auto Random865
+        const val KEY_V865PICTUREAUTOTHUMBNAIL865 = "v865pictureAutoThumbnail865" // v865 Picture Auto Thumbnail865
+        const val KEY_V865PINAUTOTOP865 = "v865pinAutoTop865" // v865 Pin Auto Top865
+        const val KEY_V865PIPEAUTOREDIRECT865 = "v865pipeAutoRedirect865" // v865 Pipe Auto Redirect865
+        const val KEY_V865PITCHAUTOCORRECT865 = "v865pitchAutoCorrect865" // v865 Pitch Auto Correct865
+        const val KEY_V865PIXELAUTOSNAP865 = "v865pixelAutoSnap865" // v865 Pixel Auto Snap865
+        const val KEY_V865PLACEAUTOHOLDER865 = "v865placeAutoHolder865" // v865 Place Auto Holder865
+        const val KEY_V865PLAINAUTOTEXT865 = "v865plainAutoText865" // v865 Plain Auto Text865
+        const val KEY_V865PLANAUTOSCHEDULE865 = "v865planAutoSchedule865" // v865 Plan Auto Schedule865
+        const val KEY_V866PERMISSIONAUTOGRANT866 = "v866permissionAutoGrant866" // v866 Permission Auto Grant866
+        const val KEY_V866PERSISTAUTOSTATE866 = "v866persistAutoState866" // v866 Persist Auto State866
+        const val KEY_V866PHASEAUTOTRANSITION866 = "v866phaseAutoTransition866" // v866 Phase Auto Transition866
+        const val KEY_V866PHONEAUTODETECT866 = "v866phoneAutoDetect866" // v866 Phone Auto Detect866
+        const val KEY_V866PHOTOAUTOCOMPRESS866 = "v866photoAutoCompress866" // v866 Photo Auto Compress866
+        const val KEY_V866PHRASEAUTOCOMPLETE866 = "v866phraseAutoComplete866" // v866 Phrase Auto Complete866
+        const val KEY_V866PICKAUTORANDOM866 = "v866pickAutoRandom866" // v866 Pick Auto Random866
+        const val KEY_V866PICTUREAUTOTHUMBNAIL866 = "v866pictureAutoThumbnail866" // v866 Picture Auto Thumbnail866
+        const val KEY_V866PINAUTOTOP866 = "v866pinAutoTop866" // v866 Pin Auto Top866
+        const val KEY_V866PIPEAUTOREDIRECT866 = "v866pipeAutoRedirect866" // v866 Pipe Auto Redirect866
+        const val KEY_V866PITCHAUTOCORRECT866 = "v866pitchAutoCorrect866" // v866 Pitch Auto Correct866
+        const val KEY_V866PIXELAUTOSNAP866 = "v866pixelAutoSnap866" // v866 Pixel Auto Snap866
+        const val KEY_V866PLACEAUTOHOLDER866 = "v866placeAutoHolder866" // v866 Place Auto Holder866
+        const val KEY_V866PLAINAUTOTEXT866 = "v866plainAutoText866" // v866 Plain Auto Text866
+        const val KEY_V866PLANAUTOSCHEDULE866 = "v866planAutoSchedule866" // v866 Plan Auto Schedule866
+        const val KEY_V867PERMISSIONAUTOGRANT867 = "v867permissionAutoGrant867" // v867 Permission Auto Grant867
+        const val KEY_V867PERSISTAUTOSTATE867 = "v867persistAutoState867" // v867 Persist Auto State867
+        const val KEY_V867PHASEAUTOTRANSITION867 = "v867phaseAutoTransition867" // v867 Phase Auto Transition867
+        const val KEY_V867PHONEAUTODETECT867 = "v867phoneAutoDetect867" // v867 Phone Auto Detect867
+        const val KEY_V867PHOTOAUTOCOMPRESS867 = "v867photoAutoCompress867" // v867 Photo Auto Compress867
+        const val KEY_V867PHRASEAUTOCOMPLETE867 = "v867phraseAutoComplete867" // v867 Phrase Auto Complete867
+        const val KEY_V867PICKAUTORANDOM867 = "v867pickAutoRandom867" // v867 Pick Auto Random867
+        const val KEY_V867PICTUREAUTOTHUMBNAIL867 = "v867pictureAutoThumbnail867" // v867 Picture Auto Thumbnail867
+        const val KEY_V867PINAUTOTOP867 = "v867pinAutoTop867" // v867 Pin Auto Top867
+        const val KEY_V867PIPEAUTOREDIRECT867 = "v867pipeAutoRedirect867" // v867 Pipe Auto Redirect867
+        const val KEY_V867PITCHAUTOCORRECT867 = "v867pitchAutoCorrect867" // v867 Pitch Auto Correct867
+        const val KEY_V867PIXELAUTOSNAP867 = "v867pixelAutoSnap867" // v867 Pixel Auto Snap867
+        const val KEY_V867PLACEAUTOHOLDER867 = "v867placeAutoHolder867" // v867 Place Auto Holder867
+        const val KEY_V867PLAINAUTOTEXT867 = "v867plainAutoText867" // v867 Plain Auto Text867
+        const val KEY_V867PLANAUTOSCHEDULE867 = "v867planAutoSchedule867" // v867 Plan Auto Schedule867
+        const val KEY_V868PERMISSIONAUTOGRANT868 = "v868permissionAutoGrant868" // v868 Permission Auto Grant868
+        const val KEY_V868PERSISTAUTOSTATE868 = "v868persistAutoState868" // v868 Persist Auto State868
+        const val KEY_V868PHASEAUTOTRANSITION868 = "v868phaseAutoTransition868" // v868 Phase Auto Transition868
+        const val KEY_V868PHONEAUTODETECT868 = "v868phoneAutoDetect868" // v868 Phone Auto Detect868
+        const val KEY_V868PHOTOAUTOCOMPRESS868 = "v868photoAutoCompress868" // v868 Photo Auto Compress868
+        const val KEY_V868PHRASEAUTOCOMPLETE868 = "v868phraseAutoComplete868" // v868 Phrase Auto Complete868
+        const val KEY_V868PICKAUTORANDOM868 = "v868pickAutoRandom868" // v868 Pick Auto Random868
+        const val KEY_V868PICTUREAUTOTHUMBNAIL868 = "v868pictureAutoThumbnail868" // v868 Picture Auto Thumbnail868
+        const val KEY_V868PINAUTOTOP868 = "v868pinAutoTop868" // v868 Pin Auto Top868
+        const val KEY_V868PIPEAUTOREDIRECT868 = "v868pipeAutoRedirect868" // v868 Pipe Auto Redirect868
+        const val KEY_V868PITCHAUTOCORRECT868 = "v868pitchAutoCorrect868" // v868 Pitch Auto Correct868
+        const val KEY_V868PIXELAUTOSNAP868 = "v868pixelAutoSnap868" // v868 Pixel Auto Snap868
+        const val KEY_V868PLACEAUTOHOLDER868 = "v868placeAutoHolder868" // v868 Place Auto Holder868
+        const val KEY_V868PLAINAUTOTEXT868 = "v868plainAutoText868" // v868 Plain Auto Text868
+        const val KEY_V868PLANAUTOSCHEDULE868 = "v868planAutoSchedule868" // v868 Plan Auto Schedule868
+        const val KEY_V869PERMISSIONAUTOGRANT869 = "v869permissionAutoGrant869" // v869 Permission Auto Grant869
+        const val KEY_V869PERSISTAUTOSTATE869 = "v869persistAutoState869" // v869 Persist Auto State869
+        const val KEY_V869PHASEAUTOTRANSITION869 = "v869phaseAutoTransition869" // v869 Phase Auto Transition869
+        const val KEY_V869PHONEAUTODETECT869 = "v869phoneAutoDetect869" // v869 Phone Auto Detect869
+        const val KEY_V869PHOTOAUTOCOMPRESS869 = "v869photoAutoCompress869" // v869 Photo Auto Compress869
+        const val KEY_V869PHRASEAUTOCOMPLETE869 = "v869phraseAutoComplete869" // v869 Phrase Auto Complete869
+        const val KEY_V869PICKAUTORANDOM869 = "v869pickAutoRandom869" // v869 Pick Auto Random869
+        const val KEY_V869PICTUREAUTOTHUMBNAIL869 = "v869pictureAutoThumbnail869" // v869 Picture Auto Thumbnail869
+        const val KEY_V869PINAUTOTOP869 = "v869pinAutoTop869" // v869 Pin Auto Top869
+        const val KEY_V869PIPEAUTOREDIRECT869 = "v869pipeAutoRedirect869" // v869 Pipe Auto Redirect869
+        const val KEY_V869PITCHAUTOCORRECT869 = "v869pitchAutoCorrect869" // v869 Pitch Auto Correct869
+        const val KEY_V869PIXELAUTOSNAP869 = "v869pixelAutoSnap869" // v869 Pixel Auto Snap869
+        const val KEY_V869PLACEAUTOHOLDER869 = "v869placeAutoHolder869" // v869 Place Auto Holder869
+        const val KEY_V869PLAINAUTOTEXT869 = "v869plainAutoText869" // v869 Plain Auto Text869
+        const val KEY_V869PLANAUTOSCHEDULE869 = "v869planAutoSchedule869" // v869 Plan Auto Schedule869
+        const val KEY_V870PERMISSIONAUTOGRANT870 = "v870permissionAutoGrant870" // v870 Permission Auto Grant870
+        const val KEY_V870PERSISTAUTOSTATE870 = "v870persistAutoState870" // v870 Persist Auto State870
+        const val KEY_V870PHASEAUTOTRANSITION870 = "v870phaseAutoTransition870" // v870 Phase Auto Transition870
+        const val KEY_V870PHONEAUTODETECT870 = "v870phoneAutoDetect870" // v870 Phone Auto Detect870
+        const val KEY_V870PHOTOAUTOCOMPRESS870 = "v870photoAutoCompress870" // v870 Photo Auto Compress870
+        const val KEY_V870PHRASEAUTOCOMPLETE870 = "v870phraseAutoComplete870" // v870 Phrase Auto Complete870
+        const val KEY_V870PICKAUTORANDOM870 = "v870pickAutoRandom870" // v870 Pick Auto Random870
+        const val KEY_V870PICTUREAUTOTHUMBNAIL870 = "v870pictureAutoThumbnail870" // v870 Picture Auto Thumbnail870
+        const val KEY_V870PINAUTOTOP870 = "v870pinAutoTop870" // v870 Pin Auto Top870
+        const val KEY_V870PIPEAUTOREDIRECT870 = "v870pipeAutoRedirect870" // v870 Pipe Auto Redirect870
+        const val KEY_V870PITCHAUTOCORRECT870 = "v870pitchAutoCorrect870" // v870 Pitch Auto Correct870
+        const val KEY_V870PIXELAUTOSNAP870 = "v870pixelAutoSnap870" // v870 Pixel Auto Snap870
+        const val KEY_V870PLACEAUTOHOLDER870 = "v870placeAutoHolder870" // v870 Place Auto Holder870
+        const val KEY_V870PLAINAUTOTEXT870 = "v870plainAutoText870" // v870 Plain Auto Text870
+        const val KEY_V870PLANAUTOSCHEDULE870 = "v870planAutoSchedule870" // v870 Plan Auto Schedule870
     }
 }
