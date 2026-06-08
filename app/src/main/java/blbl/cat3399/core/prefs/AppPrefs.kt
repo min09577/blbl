@@ -49448,6 +49448,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V710ENABLEAUTOFEATURE710, false)
         set(value) = prefs.edit().putBoolean(KEY_V710ENABLEAUTOFEATURE710, value).apply()
 
+    var v711encodeAutoBase64711: Boolean
+        get() = prefs.getBoolean(KEY_V711ENCODEAUTOBASE64711, false)
+        set(value) = prefs.edit().putBoolean(KEY_V711ENCODEAUTOBASE64711, value).apply()
+
+    var v711encryptAutoAes711: Boolean
+        get() = prefs.getBoolean(KEY_V711ENCRYPTAUTOAES711, false)
+        set(value) = prefs.edit().putBoolean(KEY_V711ENCRYPTAUTOAES711, value).apply()
+
+    var v711endAutoCleanup711: Boolean
+        get() = prefs.getBoolean(KEY_V711ENDAUTOCLEANUP711, false)
+        set(value) = prefs.edit().putBoolean(KEY_V711ENDAUTOCLEANUP711, value).apply()
+
+    var v711engineAutoSwitch711: Int
+        get() = prefs.getInt(KEY_V711ENGINEAUTOSWITCH711, 0)
+        set(value) = prefs.edit().putInt(KEY_V711ENGINEAUTOSWITCH711, value).apply()
+
+    var v711enterAutoFullscreen711: Boolean
+        get() = prefs.getBoolean(KEY_V711ENTERAUTOFULLSCREEN711, false)
+        set(value) = prefs.edit().putBoolean(KEY_V711ENTERAUTOFULLSCREEN711, value).apply()
+
+    var v711entryAutoValidate711: Boolean
+        get() = prefs.getBoolean(KEY_V711ENTRYAUTOVALIDATE711, false)
+        set(value) = prefs.edit().putBoolean(KEY_V711ENTRYAUTOVALIDATE711, value).apply()
+
+    var v711envAutoDetect711: Boolean
+        get() = prefs.getBoolean(KEY_V711ENVAUTODETECT711, false)
+        set(value) = prefs.edit().putBoolean(KEY_V711ENVAUTODETECT711, value).apply()
+
+    var v711equalAutoBalance711: Boolean
+        get() = prefs.getBoolean(KEY_V711EQUALAUTOBALANCE711, false)
+        set(value) = prefs.edit().putBoolean(KEY_V711EQUALAUTOBALANCE711, value).apply()
+
+    var v711errorAutoRetry711: Boolean
+        get() = prefs.getBoolean(KEY_V711ERRORAUTORETRY711, false)
+        set(value) = prefs.edit().putBoolean(KEY_V711ERRORAUTORETRY711, value).apply()
+
+    var v711escapeAutoSanitize711: Boolean
+        get() = prefs.getBoolean(KEY_V711ESCAPEAUTOSANITIZE711, false)
+        set(value) = prefs.edit().putBoolean(KEY_V711ESCAPEAUTOSANITIZE711, value).apply()
+
+    var v711eventAutoDispatch711: Boolean
+        get() = prefs.getBoolean(KEY_V711EVENTAUTODISPATCH711, false)
+        set(value) = prefs.edit().putBoolean(KEY_V711EVENTAUTODISPATCH711, value).apply()
+
+    var v711executeAutoTask711: Boolean
+        get() = prefs.getBoolean(KEY_V711EXECUTEAUTOTASK711, false)
+        set(value) = prefs.edit().putBoolean(KEY_V711EXECUTEAUTOTASK711, value).apply()
+
+    var v711exitAutoConfirm711: Boolean
+        get() = prefs.getBoolean(KEY_V711EXITAUTOCONFIRM711, false)
+        set(value) = prefs.edit().putBoolean(KEY_V711EXITAUTOCONFIRM711, value).apply()
+
+    var v711expandAutoPanel711: Boolean
+        get() = prefs.getBoolean(KEY_V711EXPANDAUTOPANEL711, false)
+        set(value) = prefs.edit().putBoolean(KEY_V711EXPANDAUTOPANEL711, value).apply()
+
+    var v711expectAutoTimeout711: Int
+        get() = prefs.getInt(KEY_V711EXPECTAUTOTIMEOUT711, 0)
+        set(value) = prefs.edit().putInt(KEY_V711EXPECTAUTOTIMEOUT711, value).apply()
+
+    var v712encodeAutoBase64712: Boolean
+        get() = prefs.getBoolean(KEY_V712ENCODEAUTOBASE64712, false)
+        set(value) = prefs.edit().putBoolean(KEY_V712ENCODEAUTOBASE64712, value).apply()
+
+    var v712encryptAutoAes712: Boolean
+        get() = prefs.getBoolean(KEY_V712ENCRYPTAUTOAES712, false)
+        set(value) = prefs.edit().putBoolean(KEY_V712ENCRYPTAUTOAES712, value).apply()
+
+    var v712endAutoCleanup712: Boolean
+        get() = prefs.getBoolean(KEY_V712ENDAUTOCLEANUP712, false)
+        set(value) = prefs.edit().putBoolean(KEY_V712ENDAUTOCLEANUP712, value).apply()
+
+    var v712engineAutoSwitch712: Int
+        get() = prefs.getInt(KEY_V712ENGINEAUTOSWITCH712, 0)
+        set(value) = prefs.edit().putInt(KEY_V712ENGINEAUTOSWITCH712, value).apply()
+
+    var v712enterAutoFullscreen712: Boolean
+        get() = prefs.getBoolean(KEY_V712ENTERAUTOFULLSCREEN712, false)
+        set(value) = prefs.edit().putBoolean(KEY_V712ENTERAUTOFULLSCREEN712, value).apply()
+
+    var v712entryAutoValidate712: Boolean
+        get() = prefs.getBoolean(KEY_V712ENTRYAUTOVALIDATE712, false)
+        set(value) = prefs.edit().putBoolean(KEY_V712ENTRYAUTOVALIDATE712, value).apply()
+
+    var v712envAutoDetect712: Boolean
+        get() = prefs.getBoolean(KEY_V712ENVAUTODETECT712, false)
+        set(value) = prefs.edit().putBoolean(KEY_V712ENVAUTODETECT712, value).apply()
+
+    var v712equalAutoBalance712: Boolean
+        get() = prefs.getBoolean(KEY_V712EQUALAUTOBALANCE712, false)
+        set(value) = prefs.edit().putBoolean(KEY_V712EQUALAUTOBALANCE712, value).apply()
+
+    var v712errorAutoRetry712: Boolean
+        get() = prefs.getBoolean(KEY_V712ERRORAUTORETRY712, false)
+        set(value) = prefs.edit().putBoolean(KEY_V712ERRORAUTORETRY712, value).apply()
+
+    var v712escapeAutoSanitize712: Boolean
+        get() = prefs.getBoolean(KEY_V712ESCAPEAUTOSANITIZE712, false)
+        set(value) = prefs.edit().putBoolean(KEY_V712ESCAPEAUTOSANITIZE712, value).apply()
+
+    var v712eventAutoDispatch712: Boolean
+        get() = prefs.getBoolean(KEY_V712EVENTAUTODISPATCH712, false)
+        set(value) = prefs.edit().putBoolean(KEY_V712EVENTAUTODISPATCH712, value).apply()
+
+    var v712executeAutoTask712: Boolean
+        get() = prefs.getBoolean(KEY_V712EXECUTEAUTOTASK712, false)
+        set(value) = prefs.edit().putBoolean(KEY_V712EXECUTEAUTOTASK712, value).apply()
+
+    var v712exitAutoConfirm712: Boolean
+        get() = prefs.getBoolean(KEY_V712EXITAUTOCONFIRM712, false)
+        set(value) = prefs.edit().putBoolean(KEY_V712EXITAUTOCONFIRM712, value).apply()
+
+    var v712expandAutoPanel712: Boolean
+        get() = prefs.getBoolean(KEY_V712EXPANDAUTOPANEL712, false)
+        set(value) = prefs.edit().putBoolean(KEY_V712EXPANDAUTOPANEL712, value).apply()
+
+    var v712expectAutoTimeout712: Int
+        get() = prefs.getInt(KEY_V712EXPECTAUTOTIMEOUT712, 0)
+        set(value) = prefs.edit().putInt(KEY_V712EXPECTAUTOTIMEOUT712, value).apply()
+
+    var v713encodeAutoBase64713: Boolean
+        get() = prefs.getBoolean(KEY_V713ENCODEAUTOBASE64713, false)
+        set(value) = prefs.edit().putBoolean(KEY_V713ENCODEAUTOBASE64713, value).apply()
+
+    var v713encryptAutoAes713: Boolean
+        get() = prefs.getBoolean(KEY_V713ENCRYPTAUTOAES713, false)
+        set(value) = prefs.edit().putBoolean(KEY_V713ENCRYPTAUTOAES713, value).apply()
+
+    var v713endAutoCleanup713: Boolean
+        get() = prefs.getBoolean(KEY_V713ENDAUTOCLEANUP713, false)
+        set(value) = prefs.edit().putBoolean(KEY_V713ENDAUTOCLEANUP713, value).apply()
+
+    var v713engineAutoSwitch713: Int
+        get() = prefs.getInt(KEY_V713ENGINEAUTOSWITCH713, 0)
+        set(value) = prefs.edit().putInt(KEY_V713ENGINEAUTOSWITCH713, value).apply()
+
+    var v713enterAutoFullscreen713: Boolean
+        get() = prefs.getBoolean(KEY_V713ENTERAUTOFULLSCREEN713, false)
+        set(value) = prefs.edit().putBoolean(KEY_V713ENTERAUTOFULLSCREEN713, value).apply()
+
+    var v713entryAutoValidate713: Boolean
+        get() = prefs.getBoolean(KEY_V713ENTRYAUTOVALIDATE713, false)
+        set(value) = prefs.edit().putBoolean(KEY_V713ENTRYAUTOVALIDATE713, value).apply()
+
+    var v713envAutoDetect713: Boolean
+        get() = prefs.getBoolean(KEY_V713ENVAUTODETECT713, false)
+        set(value) = prefs.edit().putBoolean(KEY_V713ENVAUTODETECT713, value).apply()
+
+    var v713equalAutoBalance713: Boolean
+        get() = prefs.getBoolean(KEY_V713EQUALAUTOBALANCE713, false)
+        set(value) = prefs.edit().putBoolean(KEY_V713EQUALAUTOBALANCE713, value).apply()
+
+    var v713errorAutoRetry713: Boolean
+        get() = prefs.getBoolean(KEY_V713ERRORAUTORETRY713, false)
+        set(value) = prefs.edit().putBoolean(KEY_V713ERRORAUTORETRY713, value).apply()
+
+    var v713escapeAutoSanitize713: Boolean
+        get() = prefs.getBoolean(KEY_V713ESCAPEAUTOSANITIZE713, false)
+        set(value) = prefs.edit().putBoolean(KEY_V713ESCAPEAUTOSANITIZE713, value).apply()
+
+    var v713eventAutoDispatch713: Boolean
+        get() = prefs.getBoolean(KEY_V713EVENTAUTODISPATCH713, false)
+        set(value) = prefs.edit().putBoolean(KEY_V713EVENTAUTODISPATCH713, value).apply()
+
+    var v713executeAutoTask713: Boolean
+        get() = prefs.getBoolean(KEY_V713EXECUTEAUTOTASK713, false)
+        set(value) = prefs.edit().putBoolean(KEY_V713EXECUTEAUTOTASK713, value).apply()
+
+    var v713exitAutoConfirm713: Boolean
+        get() = prefs.getBoolean(KEY_V713EXITAUTOCONFIRM713, false)
+        set(value) = prefs.edit().putBoolean(KEY_V713EXITAUTOCONFIRM713, value).apply()
+
+    var v713expandAutoPanel713: Boolean
+        get() = prefs.getBoolean(KEY_V713EXPANDAUTOPANEL713, false)
+        set(value) = prefs.edit().putBoolean(KEY_V713EXPANDAUTOPANEL713, value).apply()
+
+    var v713expectAutoTimeout713: Int
+        get() = prefs.getInt(KEY_V713EXPECTAUTOTIMEOUT713, 0)
+        set(value) = prefs.edit().putInt(KEY_V713EXPECTAUTOTIMEOUT713, value).apply()
+
+    var v714encodeAutoBase64714: Boolean
+        get() = prefs.getBoolean(KEY_V714ENCODEAUTOBASE64714, false)
+        set(value) = prefs.edit().putBoolean(KEY_V714ENCODEAUTOBASE64714, value).apply()
+
+    var v714encryptAutoAes714: Boolean
+        get() = prefs.getBoolean(KEY_V714ENCRYPTAUTOAES714, false)
+        set(value) = prefs.edit().putBoolean(KEY_V714ENCRYPTAUTOAES714, value).apply()
+
+    var v714endAutoCleanup714: Boolean
+        get() = prefs.getBoolean(KEY_V714ENDAUTOCLEANUP714, false)
+        set(value) = prefs.edit().putBoolean(KEY_V714ENDAUTOCLEANUP714, value).apply()
+
+    var v714engineAutoSwitch714: Int
+        get() = prefs.getInt(KEY_V714ENGINEAUTOSWITCH714, 0)
+        set(value) = prefs.edit().putInt(KEY_V714ENGINEAUTOSWITCH714, value).apply()
+
+    var v714enterAutoFullscreen714: Boolean
+        get() = prefs.getBoolean(KEY_V714ENTERAUTOFULLSCREEN714, false)
+        set(value) = prefs.edit().putBoolean(KEY_V714ENTERAUTOFULLSCREEN714, value).apply()
+
+    var v714entryAutoValidate714: Boolean
+        get() = prefs.getBoolean(KEY_V714ENTRYAUTOVALIDATE714, false)
+        set(value) = prefs.edit().putBoolean(KEY_V714ENTRYAUTOVALIDATE714, value).apply()
+
+    var v714envAutoDetect714: Boolean
+        get() = prefs.getBoolean(KEY_V714ENVAUTODETECT714, false)
+        set(value) = prefs.edit().putBoolean(KEY_V714ENVAUTODETECT714, value).apply()
+
+    var v714equalAutoBalance714: Boolean
+        get() = prefs.getBoolean(KEY_V714EQUALAUTOBALANCE714, false)
+        set(value) = prefs.edit().putBoolean(KEY_V714EQUALAUTOBALANCE714, value).apply()
+
+    var v714errorAutoRetry714: Boolean
+        get() = prefs.getBoolean(KEY_V714ERRORAUTORETRY714, false)
+        set(value) = prefs.edit().putBoolean(KEY_V714ERRORAUTORETRY714, value).apply()
+
+    var v714escapeAutoSanitize714: Boolean
+        get() = prefs.getBoolean(KEY_V714ESCAPEAUTOSANITIZE714, false)
+        set(value) = prefs.edit().putBoolean(KEY_V714ESCAPEAUTOSANITIZE714, value).apply()
+
+    var v714eventAutoDispatch714: Boolean
+        get() = prefs.getBoolean(KEY_V714EVENTAUTODISPATCH714, false)
+        set(value) = prefs.edit().putBoolean(KEY_V714EVENTAUTODISPATCH714, value).apply()
+
+    var v714executeAutoTask714: Boolean
+        get() = prefs.getBoolean(KEY_V714EXECUTEAUTOTASK714, false)
+        set(value) = prefs.edit().putBoolean(KEY_V714EXECUTEAUTOTASK714, value).apply()
+
+    var v714exitAutoConfirm714: Boolean
+        get() = prefs.getBoolean(KEY_V714EXITAUTOCONFIRM714, false)
+        set(value) = prefs.edit().putBoolean(KEY_V714EXITAUTOCONFIRM714, value).apply()
+
+    var v714expandAutoPanel714: Boolean
+        get() = prefs.getBoolean(KEY_V714EXPANDAUTOPANEL714, false)
+        set(value) = prefs.edit().putBoolean(KEY_V714EXPANDAUTOPANEL714, value).apply()
+
+    var v714expectAutoTimeout714: Int
+        get() = prefs.getInt(KEY_V714EXPECTAUTOTIMEOUT714, 0)
+        set(value) = prefs.edit().putInt(KEY_V714EXPECTAUTOTIMEOUT714, value).apply()
+
+    var v715encodeAutoBase64715: Boolean
+        get() = prefs.getBoolean(KEY_V715ENCODEAUTOBASE64715, false)
+        set(value) = prefs.edit().putBoolean(KEY_V715ENCODEAUTOBASE64715, value).apply()
+
+    var v715encryptAutoAes715: Boolean
+        get() = prefs.getBoolean(KEY_V715ENCRYPTAUTOAES715, false)
+        set(value) = prefs.edit().putBoolean(KEY_V715ENCRYPTAUTOAES715, value).apply()
+
+    var v715endAutoCleanup715: Boolean
+        get() = prefs.getBoolean(KEY_V715ENDAUTOCLEANUP715, false)
+        set(value) = prefs.edit().putBoolean(KEY_V715ENDAUTOCLEANUP715, value).apply()
+
+    var v715engineAutoSwitch715: Int
+        get() = prefs.getInt(KEY_V715ENGINEAUTOSWITCH715, 0)
+        set(value) = prefs.edit().putInt(KEY_V715ENGINEAUTOSWITCH715, value).apply()
+
+    var v715enterAutoFullscreen715: Boolean
+        get() = prefs.getBoolean(KEY_V715ENTERAUTOFULLSCREEN715, false)
+        set(value) = prefs.edit().putBoolean(KEY_V715ENTERAUTOFULLSCREEN715, value).apply()
+
+    var v715entryAutoValidate715: Boolean
+        get() = prefs.getBoolean(KEY_V715ENTRYAUTOVALIDATE715, false)
+        set(value) = prefs.edit().putBoolean(KEY_V715ENTRYAUTOVALIDATE715, value).apply()
+
+    var v715envAutoDetect715: Boolean
+        get() = prefs.getBoolean(KEY_V715ENVAUTODETECT715, false)
+        set(value) = prefs.edit().putBoolean(KEY_V715ENVAUTODETECT715, value).apply()
+
+    var v715equalAutoBalance715: Boolean
+        get() = prefs.getBoolean(KEY_V715EQUALAUTOBALANCE715, false)
+        set(value) = prefs.edit().putBoolean(KEY_V715EQUALAUTOBALANCE715, value).apply()
+
+    var v715errorAutoRetry715: Boolean
+        get() = prefs.getBoolean(KEY_V715ERRORAUTORETRY715, false)
+        set(value) = prefs.edit().putBoolean(KEY_V715ERRORAUTORETRY715, value).apply()
+
+    var v715escapeAutoSanitize715: Boolean
+        get() = prefs.getBoolean(KEY_V715ESCAPEAUTOSANITIZE715, false)
+        set(value) = prefs.edit().putBoolean(KEY_V715ESCAPEAUTOSANITIZE715, value).apply()
+
+    var v715eventAutoDispatch715: Boolean
+        get() = prefs.getBoolean(KEY_V715EVENTAUTODISPATCH715, false)
+        set(value) = prefs.edit().putBoolean(KEY_V715EVENTAUTODISPATCH715, value).apply()
+
+    var v715executeAutoTask715: Boolean
+        get() = prefs.getBoolean(KEY_V715EXECUTEAUTOTASK715, false)
+        set(value) = prefs.edit().putBoolean(KEY_V715EXECUTEAUTOTASK715, value).apply()
+
+    var v715exitAutoConfirm715: Boolean
+        get() = prefs.getBoolean(KEY_V715EXITAUTOCONFIRM715, false)
+        set(value) = prefs.edit().putBoolean(KEY_V715EXITAUTOCONFIRM715, value).apply()
+
+    var v715expandAutoPanel715: Boolean
+        get() = prefs.getBoolean(KEY_V715EXPANDAUTOPANEL715, false)
+        set(value) = prefs.edit().putBoolean(KEY_V715EXPANDAUTOPANEL715, value).apply()
+
+    var v715expectAutoTimeout715: Int
+        get() = prefs.getInt(KEY_V715EXPECTAUTOTIMEOUT715, 0)
+        set(value) = prefs.edit().putInt(KEY_V715EXPECTAUTOTIMEOUT715, value).apply()
+
+    var v716encodeAutoBase64716: Boolean
+        get() = prefs.getBoolean(KEY_V716ENCODEAUTOBASE64716, false)
+        set(value) = prefs.edit().putBoolean(KEY_V716ENCODEAUTOBASE64716, value).apply()
+
+    var v716encryptAutoAes716: Boolean
+        get() = prefs.getBoolean(KEY_V716ENCRYPTAUTOAES716, false)
+        set(value) = prefs.edit().putBoolean(KEY_V716ENCRYPTAUTOAES716, value).apply()
+
+    var v716endAutoCleanup716: Boolean
+        get() = prefs.getBoolean(KEY_V716ENDAUTOCLEANUP716, false)
+        set(value) = prefs.edit().putBoolean(KEY_V716ENDAUTOCLEANUP716, value).apply()
+
+    var v716engineAutoSwitch716: Int
+        get() = prefs.getInt(KEY_V716ENGINEAUTOSWITCH716, 0)
+        set(value) = prefs.edit().putInt(KEY_V716ENGINEAUTOSWITCH716, value).apply()
+
+    var v716enterAutoFullscreen716: Boolean
+        get() = prefs.getBoolean(KEY_V716ENTERAUTOFULLSCREEN716, false)
+        set(value) = prefs.edit().putBoolean(KEY_V716ENTERAUTOFULLSCREEN716, value).apply()
+
+    var v716entryAutoValidate716: Boolean
+        get() = prefs.getBoolean(KEY_V716ENTRYAUTOVALIDATE716, false)
+        set(value) = prefs.edit().putBoolean(KEY_V716ENTRYAUTOVALIDATE716, value).apply()
+
+    var v716envAutoDetect716: Boolean
+        get() = prefs.getBoolean(KEY_V716ENVAUTODETECT716, false)
+        set(value) = prefs.edit().putBoolean(KEY_V716ENVAUTODETECT716, value).apply()
+
+    var v716equalAutoBalance716: Boolean
+        get() = prefs.getBoolean(KEY_V716EQUALAUTOBALANCE716, false)
+        set(value) = prefs.edit().putBoolean(KEY_V716EQUALAUTOBALANCE716, value).apply()
+
+    var v716errorAutoRetry716: Boolean
+        get() = prefs.getBoolean(KEY_V716ERRORAUTORETRY716, false)
+        set(value) = prefs.edit().putBoolean(KEY_V716ERRORAUTORETRY716, value).apply()
+
+    var v716escapeAutoSanitize716: Boolean
+        get() = prefs.getBoolean(KEY_V716ESCAPEAUTOSANITIZE716, false)
+        set(value) = prefs.edit().putBoolean(KEY_V716ESCAPEAUTOSANITIZE716, value).apply()
+
+    var v716eventAutoDispatch716: Boolean
+        get() = prefs.getBoolean(KEY_V716EVENTAUTODISPATCH716, false)
+        set(value) = prefs.edit().putBoolean(KEY_V716EVENTAUTODISPATCH716, value).apply()
+
+    var v716executeAutoTask716: Boolean
+        get() = prefs.getBoolean(KEY_V716EXECUTEAUTOTASK716, false)
+        set(value) = prefs.edit().putBoolean(KEY_V716EXECUTEAUTOTASK716, value).apply()
+
+    var v716exitAutoConfirm716: Boolean
+        get() = prefs.getBoolean(KEY_V716EXITAUTOCONFIRM716, false)
+        set(value) = prefs.edit().putBoolean(KEY_V716EXITAUTOCONFIRM716, value).apply()
+
+    var v716expandAutoPanel716: Boolean
+        get() = prefs.getBoolean(KEY_V716EXPANDAUTOPANEL716, false)
+        set(value) = prefs.edit().putBoolean(KEY_V716EXPANDAUTOPANEL716, value).apply()
+
+    var v716expectAutoTimeout716: Int
+        get() = prefs.getInt(KEY_V716EXPECTAUTOTIMEOUT716, 0)
+        set(value) = prefs.edit().putInt(KEY_V716EXPECTAUTOTIMEOUT716, value).apply()
+
+    var v717encodeAutoBase64717: Boolean
+        get() = prefs.getBoolean(KEY_V717ENCODEAUTOBASE64717, false)
+        set(value) = prefs.edit().putBoolean(KEY_V717ENCODEAUTOBASE64717, value).apply()
+
+    var v717encryptAutoAes717: Boolean
+        get() = prefs.getBoolean(KEY_V717ENCRYPTAUTOAES717, false)
+        set(value) = prefs.edit().putBoolean(KEY_V717ENCRYPTAUTOAES717, value).apply()
+
+    var v717endAutoCleanup717: Boolean
+        get() = prefs.getBoolean(KEY_V717ENDAUTOCLEANUP717, false)
+        set(value) = prefs.edit().putBoolean(KEY_V717ENDAUTOCLEANUP717, value).apply()
+
+    var v717engineAutoSwitch717: Int
+        get() = prefs.getInt(KEY_V717ENGINEAUTOSWITCH717, 0)
+        set(value) = prefs.edit().putInt(KEY_V717ENGINEAUTOSWITCH717, value).apply()
+
+    var v717enterAutoFullscreen717: Boolean
+        get() = prefs.getBoolean(KEY_V717ENTERAUTOFULLSCREEN717, false)
+        set(value) = prefs.edit().putBoolean(KEY_V717ENTERAUTOFULLSCREEN717, value).apply()
+
+    var v717entryAutoValidate717: Boolean
+        get() = prefs.getBoolean(KEY_V717ENTRYAUTOVALIDATE717, false)
+        set(value) = prefs.edit().putBoolean(KEY_V717ENTRYAUTOVALIDATE717, value).apply()
+
+    var v717envAutoDetect717: Boolean
+        get() = prefs.getBoolean(KEY_V717ENVAUTODETECT717, false)
+        set(value) = prefs.edit().putBoolean(KEY_V717ENVAUTODETECT717, value).apply()
+
+    var v717equalAutoBalance717: Boolean
+        get() = prefs.getBoolean(KEY_V717EQUALAUTOBALANCE717, false)
+        set(value) = prefs.edit().putBoolean(KEY_V717EQUALAUTOBALANCE717, value).apply()
+
+    var v717errorAutoRetry717: Boolean
+        get() = prefs.getBoolean(KEY_V717ERRORAUTORETRY717, false)
+        set(value) = prefs.edit().putBoolean(KEY_V717ERRORAUTORETRY717, value).apply()
+
+    var v717escapeAutoSanitize717: Boolean
+        get() = prefs.getBoolean(KEY_V717ESCAPEAUTOSANITIZE717, false)
+        set(value) = prefs.edit().putBoolean(KEY_V717ESCAPEAUTOSANITIZE717, value).apply()
+
+    var v717eventAutoDispatch717: Boolean
+        get() = prefs.getBoolean(KEY_V717EVENTAUTODISPATCH717, false)
+        set(value) = prefs.edit().putBoolean(KEY_V717EVENTAUTODISPATCH717, value).apply()
+
+    var v717executeAutoTask717: Boolean
+        get() = prefs.getBoolean(KEY_V717EXECUTEAUTOTASK717, false)
+        set(value) = prefs.edit().putBoolean(KEY_V717EXECUTEAUTOTASK717, value).apply()
+
+    var v717exitAutoConfirm717: Boolean
+        get() = prefs.getBoolean(KEY_V717EXITAUTOCONFIRM717, false)
+        set(value) = prefs.edit().putBoolean(KEY_V717EXITAUTOCONFIRM717, value).apply()
+
+    var v717expandAutoPanel717: Boolean
+        get() = prefs.getBoolean(KEY_V717EXPANDAUTOPANEL717, false)
+        set(value) = prefs.edit().putBoolean(KEY_V717EXPANDAUTOPANEL717, value).apply()
+
+    var v717expectAutoTimeout717: Int
+        get() = prefs.getInt(KEY_V717EXPECTAUTOTIMEOUT717, 0)
+        set(value) = prefs.edit().putInt(KEY_V717EXPECTAUTOTIMEOUT717, value).apply()
+
+    var v718encodeAutoBase64718: Boolean
+        get() = prefs.getBoolean(KEY_V718ENCODEAUTOBASE64718, false)
+        set(value) = prefs.edit().putBoolean(KEY_V718ENCODEAUTOBASE64718, value).apply()
+
+    var v718encryptAutoAes718: Boolean
+        get() = prefs.getBoolean(KEY_V718ENCRYPTAUTOAES718, false)
+        set(value) = prefs.edit().putBoolean(KEY_V718ENCRYPTAUTOAES718, value).apply()
+
+    var v718endAutoCleanup718: Boolean
+        get() = prefs.getBoolean(KEY_V718ENDAUTOCLEANUP718, false)
+        set(value) = prefs.edit().putBoolean(KEY_V718ENDAUTOCLEANUP718, value).apply()
+
+    var v718engineAutoSwitch718: Int
+        get() = prefs.getInt(KEY_V718ENGINEAUTOSWITCH718, 0)
+        set(value) = prefs.edit().putInt(KEY_V718ENGINEAUTOSWITCH718, value).apply()
+
+    var v718enterAutoFullscreen718: Boolean
+        get() = prefs.getBoolean(KEY_V718ENTERAUTOFULLSCREEN718, false)
+        set(value) = prefs.edit().putBoolean(KEY_V718ENTERAUTOFULLSCREEN718, value).apply()
+
+    var v718entryAutoValidate718: Boolean
+        get() = prefs.getBoolean(KEY_V718ENTRYAUTOVALIDATE718, false)
+        set(value) = prefs.edit().putBoolean(KEY_V718ENTRYAUTOVALIDATE718, value).apply()
+
+    var v718envAutoDetect718: Boolean
+        get() = prefs.getBoolean(KEY_V718ENVAUTODETECT718, false)
+        set(value) = prefs.edit().putBoolean(KEY_V718ENVAUTODETECT718, value).apply()
+
+    var v718equalAutoBalance718: Boolean
+        get() = prefs.getBoolean(KEY_V718EQUALAUTOBALANCE718, false)
+        set(value) = prefs.edit().putBoolean(KEY_V718EQUALAUTOBALANCE718, value).apply()
+
+    var v718errorAutoRetry718: Boolean
+        get() = prefs.getBoolean(KEY_V718ERRORAUTORETRY718, false)
+        set(value) = prefs.edit().putBoolean(KEY_V718ERRORAUTORETRY718, value).apply()
+
+    var v718escapeAutoSanitize718: Boolean
+        get() = prefs.getBoolean(KEY_V718ESCAPEAUTOSANITIZE718, false)
+        set(value) = prefs.edit().putBoolean(KEY_V718ESCAPEAUTOSANITIZE718, value).apply()
+
+    var v718eventAutoDispatch718: Boolean
+        get() = prefs.getBoolean(KEY_V718EVENTAUTODISPATCH718, false)
+        set(value) = prefs.edit().putBoolean(KEY_V718EVENTAUTODISPATCH718, value).apply()
+
+    var v718executeAutoTask718: Boolean
+        get() = prefs.getBoolean(KEY_V718EXECUTEAUTOTASK718, false)
+        set(value) = prefs.edit().putBoolean(KEY_V718EXECUTEAUTOTASK718, value).apply()
+
+    var v718exitAutoConfirm718: Boolean
+        get() = prefs.getBoolean(KEY_V718EXITAUTOCONFIRM718, false)
+        set(value) = prefs.edit().putBoolean(KEY_V718EXITAUTOCONFIRM718, value).apply()
+
+    var v718expandAutoPanel718: Boolean
+        get() = prefs.getBoolean(KEY_V718EXPANDAUTOPANEL718, false)
+        set(value) = prefs.edit().putBoolean(KEY_V718EXPANDAUTOPANEL718, value).apply()
+
+    var v718expectAutoTimeout718: Int
+        get() = prefs.getInt(KEY_V718EXPECTAUTOTIMEOUT718, 0)
+        set(value) = prefs.edit().putInt(KEY_V718EXPECTAUTOTIMEOUT718, value).apply()
+
+    var v719encodeAutoBase64719: Boolean
+        get() = prefs.getBoolean(KEY_V719ENCODEAUTOBASE64719, false)
+        set(value) = prefs.edit().putBoolean(KEY_V719ENCODEAUTOBASE64719, value).apply()
+
+    var v719encryptAutoAes719: Boolean
+        get() = prefs.getBoolean(KEY_V719ENCRYPTAUTOAES719, false)
+        set(value) = prefs.edit().putBoolean(KEY_V719ENCRYPTAUTOAES719, value).apply()
+
+    var v719endAutoCleanup719: Boolean
+        get() = prefs.getBoolean(KEY_V719ENDAUTOCLEANUP719, false)
+        set(value) = prefs.edit().putBoolean(KEY_V719ENDAUTOCLEANUP719, value).apply()
+
+    var v719engineAutoSwitch719: Int
+        get() = prefs.getInt(KEY_V719ENGINEAUTOSWITCH719, 0)
+        set(value) = prefs.edit().putInt(KEY_V719ENGINEAUTOSWITCH719, value).apply()
+
+    var v719enterAutoFullscreen719: Boolean
+        get() = prefs.getBoolean(KEY_V719ENTERAUTOFULLSCREEN719, false)
+        set(value) = prefs.edit().putBoolean(KEY_V719ENTERAUTOFULLSCREEN719, value).apply()
+
+    var v719entryAutoValidate719: Boolean
+        get() = prefs.getBoolean(KEY_V719ENTRYAUTOVALIDATE719, false)
+        set(value) = prefs.edit().putBoolean(KEY_V719ENTRYAUTOVALIDATE719, value).apply()
+
+    var v719envAutoDetect719: Boolean
+        get() = prefs.getBoolean(KEY_V719ENVAUTODETECT719, false)
+        set(value) = prefs.edit().putBoolean(KEY_V719ENVAUTODETECT719, value).apply()
+
+    var v719equalAutoBalance719: Boolean
+        get() = prefs.getBoolean(KEY_V719EQUALAUTOBALANCE719, false)
+        set(value) = prefs.edit().putBoolean(KEY_V719EQUALAUTOBALANCE719, value).apply()
+
+    var v719errorAutoRetry719: Boolean
+        get() = prefs.getBoolean(KEY_V719ERRORAUTORETRY719, false)
+        set(value) = prefs.edit().putBoolean(KEY_V719ERRORAUTORETRY719, value).apply()
+
+    var v719escapeAutoSanitize719: Boolean
+        get() = prefs.getBoolean(KEY_V719ESCAPEAUTOSANITIZE719, false)
+        set(value) = prefs.edit().putBoolean(KEY_V719ESCAPEAUTOSANITIZE719, value).apply()
+
+    var v719eventAutoDispatch719: Boolean
+        get() = prefs.getBoolean(KEY_V719EVENTAUTODISPATCH719, false)
+        set(value) = prefs.edit().putBoolean(KEY_V719EVENTAUTODISPATCH719, value).apply()
+
+    var v719executeAutoTask719: Boolean
+        get() = prefs.getBoolean(KEY_V719EXECUTEAUTOTASK719, false)
+        set(value) = prefs.edit().putBoolean(KEY_V719EXECUTEAUTOTASK719, value).apply()
+
+    var v719exitAutoConfirm719: Boolean
+        get() = prefs.getBoolean(KEY_V719EXITAUTOCONFIRM719, false)
+        set(value) = prefs.edit().putBoolean(KEY_V719EXITAUTOCONFIRM719, value).apply()
+
+    var v719expandAutoPanel719: Boolean
+        get() = prefs.getBoolean(KEY_V719EXPANDAUTOPANEL719, false)
+        set(value) = prefs.edit().putBoolean(KEY_V719EXPANDAUTOPANEL719, value).apply()
+
+    var v719expectAutoTimeout719: Int
+        get() = prefs.getInt(KEY_V719EXPECTAUTOTIMEOUT719, 0)
+        set(value) = prefs.edit().putInt(KEY_V719EXPECTAUTOTIMEOUT719, value).apply()
+
+    var v720encodeAutoBase64720: Boolean
+        get() = prefs.getBoolean(KEY_V720ENCODEAUTOBASE64720, false)
+        set(value) = prefs.edit().putBoolean(KEY_V720ENCODEAUTOBASE64720, value).apply()
+
+    var v720encryptAutoAes720: Boolean
+        get() = prefs.getBoolean(KEY_V720ENCRYPTAUTOAES720, false)
+        set(value) = prefs.edit().putBoolean(KEY_V720ENCRYPTAUTOAES720, value).apply()
+
+    var v720endAutoCleanup720: Boolean
+        get() = prefs.getBoolean(KEY_V720ENDAUTOCLEANUP720, false)
+        set(value) = prefs.edit().putBoolean(KEY_V720ENDAUTOCLEANUP720, value).apply()
+
+    var v720engineAutoSwitch720: Int
+        get() = prefs.getInt(KEY_V720ENGINEAUTOSWITCH720, 0)
+        set(value) = prefs.edit().putInt(KEY_V720ENGINEAUTOSWITCH720, value).apply()
+
+    var v720enterAutoFullscreen720: Boolean
+        get() = prefs.getBoolean(KEY_V720ENTERAUTOFULLSCREEN720, false)
+        set(value) = prefs.edit().putBoolean(KEY_V720ENTERAUTOFULLSCREEN720, value).apply()
+
+    var v720entryAutoValidate720: Boolean
+        get() = prefs.getBoolean(KEY_V720ENTRYAUTOVALIDATE720, false)
+        set(value) = prefs.edit().putBoolean(KEY_V720ENTRYAUTOVALIDATE720, value).apply()
+
+    var v720envAutoDetect720: Boolean
+        get() = prefs.getBoolean(KEY_V720ENVAUTODETECT720, false)
+        set(value) = prefs.edit().putBoolean(KEY_V720ENVAUTODETECT720, value).apply()
+
+    var v720equalAutoBalance720: Boolean
+        get() = prefs.getBoolean(KEY_V720EQUALAUTOBALANCE720, false)
+        set(value) = prefs.edit().putBoolean(KEY_V720EQUALAUTOBALANCE720, value).apply()
+
+    var v720errorAutoRetry720: Boolean
+        get() = prefs.getBoolean(KEY_V720ERRORAUTORETRY720, false)
+        set(value) = prefs.edit().putBoolean(KEY_V720ERRORAUTORETRY720, value).apply()
+
+    var v720escapeAutoSanitize720: Boolean
+        get() = prefs.getBoolean(KEY_V720ESCAPEAUTOSANITIZE720, false)
+        set(value) = prefs.edit().putBoolean(KEY_V720ESCAPEAUTOSANITIZE720, value).apply()
+
+    var v720eventAutoDispatch720: Boolean
+        get() = prefs.getBoolean(KEY_V720EVENTAUTODISPATCH720, false)
+        set(value) = prefs.edit().putBoolean(KEY_V720EVENTAUTODISPATCH720, value).apply()
+
+    var v720executeAutoTask720: Boolean
+        get() = prefs.getBoolean(KEY_V720EXECUTEAUTOTASK720, false)
+        set(value) = prefs.edit().putBoolean(KEY_V720EXECUTEAUTOTASK720, value).apply()
+
+    var v720exitAutoConfirm720: Boolean
+        get() = prefs.getBoolean(KEY_V720EXITAUTOCONFIRM720, false)
+        set(value) = prefs.edit().putBoolean(KEY_V720EXITAUTOCONFIRM720, value).apply()
+
+    var v720expandAutoPanel720: Boolean
+        get() = prefs.getBoolean(KEY_V720EXPANDAUTOPANEL720, false)
+        set(value) = prefs.edit().putBoolean(KEY_V720EXPANDAUTOPANEL720, value).apply()
+
+    var v720expectAutoTimeout720: Int
+        get() = prefs.getInt(KEY_V720EXPECTAUTOTIMEOUT720, 0)
+        set(value) = prefs.edit().putInt(KEY_V720EXPECTAUTOTIMEOUT720, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -62680,5 +63280,155 @@ class AppPrefs(context: Context) {
         const val KEY_V710EMITAUTOEVENT710 = "v710emitAutoEvent710" // v710 Emit Auto Event710
         const val KEY_V710EMPTYAUTOPLACEHOLDER710 = "v710emptyAutoPlaceholder710" // v710 Empty Auto Placeholder710
         const val KEY_V710ENABLEAUTOFEATURE710 = "v710enableAutoFeature710" // v710 Enable Auto Feature710
+        const val KEY_V711ENCODEAUTOBASE64711 = "v711encodeAutoBase64711" // v711 Encode Auto Base64711
+        const val KEY_V711ENCRYPTAUTOAES711 = "v711encryptAutoAes711" // v711 Encrypt Auto Aes711
+        const val KEY_V711ENDAUTOCLEANUP711 = "v711endAutoCleanup711" // v711 End Auto Cleanup711
+        const val KEY_V711ENGINEAUTOSWITCH711 = "v711engineAutoSwitch711" // v711 Engine Auto Switch711
+        const val KEY_V711ENTERAUTOFULLSCREEN711 = "v711enterAutoFullscreen711" // v711 Enter Auto Fullscreen711
+        const val KEY_V711ENTRYAUTOVALIDATE711 = "v711entryAutoValidate711" // v711 Entry Auto Validate711
+        const val KEY_V711ENVAUTODETECT711 = "v711envAutoDetect711" // v711 Env Auto Detect711
+        const val KEY_V711EQUALAUTOBALANCE711 = "v711equalAutoBalance711" // v711 Equal Auto Balance711
+        const val KEY_V711ERRORAUTORETRY711 = "v711errorAutoRetry711" // v711 Error Auto Retry711
+        const val KEY_V711ESCAPEAUTOSANITIZE711 = "v711escapeAutoSanitize711" // v711 Escape Auto Sanitize711
+        const val KEY_V711EVENTAUTODISPATCH711 = "v711eventAutoDispatch711" // v711 Event Auto Dispatch711
+        const val KEY_V711EXECUTEAUTOTASK711 = "v711executeAutoTask711" // v711 Execute Auto Task711
+        const val KEY_V711EXITAUTOCONFIRM711 = "v711exitAutoConfirm711" // v711 Exit Auto Confirm711
+        const val KEY_V711EXPANDAUTOPANEL711 = "v711expandAutoPanel711" // v711 Expand Auto Panel711
+        const val KEY_V711EXPECTAUTOTIMEOUT711 = "v711expectAutoTimeout711" // v711 Expect Auto Timeout711
+        const val KEY_V712ENCODEAUTOBASE64712 = "v712encodeAutoBase64712" // v712 Encode Auto Base64712
+        const val KEY_V712ENCRYPTAUTOAES712 = "v712encryptAutoAes712" // v712 Encrypt Auto Aes712
+        const val KEY_V712ENDAUTOCLEANUP712 = "v712endAutoCleanup712" // v712 End Auto Cleanup712
+        const val KEY_V712ENGINEAUTOSWITCH712 = "v712engineAutoSwitch712" // v712 Engine Auto Switch712
+        const val KEY_V712ENTERAUTOFULLSCREEN712 = "v712enterAutoFullscreen712" // v712 Enter Auto Fullscreen712
+        const val KEY_V712ENTRYAUTOVALIDATE712 = "v712entryAutoValidate712" // v712 Entry Auto Validate712
+        const val KEY_V712ENVAUTODETECT712 = "v712envAutoDetect712" // v712 Env Auto Detect712
+        const val KEY_V712EQUALAUTOBALANCE712 = "v712equalAutoBalance712" // v712 Equal Auto Balance712
+        const val KEY_V712ERRORAUTORETRY712 = "v712errorAutoRetry712" // v712 Error Auto Retry712
+        const val KEY_V712ESCAPEAUTOSANITIZE712 = "v712escapeAutoSanitize712" // v712 Escape Auto Sanitize712
+        const val KEY_V712EVENTAUTODISPATCH712 = "v712eventAutoDispatch712" // v712 Event Auto Dispatch712
+        const val KEY_V712EXECUTEAUTOTASK712 = "v712executeAutoTask712" // v712 Execute Auto Task712
+        const val KEY_V712EXITAUTOCONFIRM712 = "v712exitAutoConfirm712" // v712 Exit Auto Confirm712
+        const val KEY_V712EXPANDAUTOPANEL712 = "v712expandAutoPanel712" // v712 Expand Auto Panel712
+        const val KEY_V712EXPECTAUTOTIMEOUT712 = "v712expectAutoTimeout712" // v712 Expect Auto Timeout712
+        const val KEY_V713ENCODEAUTOBASE64713 = "v713encodeAutoBase64713" // v713 Encode Auto Base64713
+        const val KEY_V713ENCRYPTAUTOAES713 = "v713encryptAutoAes713" // v713 Encrypt Auto Aes713
+        const val KEY_V713ENDAUTOCLEANUP713 = "v713endAutoCleanup713" // v713 End Auto Cleanup713
+        const val KEY_V713ENGINEAUTOSWITCH713 = "v713engineAutoSwitch713" // v713 Engine Auto Switch713
+        const val KEY_V713ENTERAUTOFULLSCREEN713 = "v713enterAutoFullscreen713" // v713 Enter Auto Fullscreen713
+        const val KEY_V713ENTRYAUTOVALIDATE713 = "v713entryAutoValidate713" // v713 Entry Auto Validate713
+        const val KEY_V713ENVAUTODETECT713 = "v713envAutoDetect713" // v713 Env Auto Detect713
+        const val KEY_V713EQUALAUTOBALANCE713 = "v713equalAutoBalance713" // v713 Equal Auto Balance713
+        const val KEY_V713ERRORAUTORETRY713 = "v713errorAutoRetry713" // v713 Error Auto Retry713
+        const val KEY_V713ESCAPEAUTOSANITIZE713 = "v713escapeAutoSanitize713" // v713 Escape Auto Sanitize713
+        const val KEY_V713EVENTAUTODISPATCH713 = "v713eventAutoDispatch713" // v713 Event Auto Dispatch713
+        const val KEY_V713EXECUTEAUTOTASK713 = "v713executeAutoTask713" // v713 Execute Auto Task713
+        const val KEY_V713EXITAUTOCONFIRM713 = "v713exitAutoConfirm713" // v713 Exit Auto Confirm713
+        const val KEY_V713EXPANDAUTOPANEL713 = "v713expandAutoPanel713" // v713 Expand Auto Panel713
+        const val KEY_V713EXPECTAUTOTIMEOUT713 = "v713expectAutoTimeout713" // v713 Expect Auto Timeout713
+        const val KEY_V714ENCODEAUTOBASE64714 = "v714encodeAutoBase64714" // v714 Encode Auto Base64714
+        const val KEY_V714ENCRYPTAUTOAES714 = "v714encryptAutoAes714" // v714 Encrypt Auto Aes714
+        const val KEY_V714ENDAUTOCLEANUP714 = "v714endAutoCleanup714" // v714 End Auto Cleanup714
+        const val KEY_V714ENGINEAUTOSWITCH714 = "v714engineAutoSwitch714" // v714 Engine Auto Switch714
+        const val KEY_V714ENTERAUTOFULLSCREEN714 = "v714enterAutoFullscreen714" // v714 Enter Auto Fullscreen714
+        const val KEY_V714ENTRYAUTOVALIDATE714 = "v714entryAutoValidate714" // v714 Entry Auto Validate714
+        const val KEY_V714ENVAUTODETECT714 = "v714envAutoDetect714" // v714 Env Auto Detect714
+        const val KEY_V714EQUALAUTOBALANCE714 = "v714equalAutoBalance714" // v714 Equal Auto Balance714
+        const val KEY_V714ERRORAUTORETRY714 = "v714errorAutoRetry714" // v714 Error Auto Retry714
+        const val KEY_V714ESCAPEAUTOSANITIZE714 = "v714escapeAutoSanitize714" // v714 Escape Auto Sanitize714
+        const val KEY_V714EVENTAUTODISPATCH714 = "v714eventAutoDispatch714" // v714 Event Auto Dispatch714
+        const val KEY_V714EXECUTEAUTOTASK714 = "v714executeAutoTask714" // v714 Execute Auto Task714
+        const val KEY_V714EXITAUTOCONFIRM714 = "v714exitAutoConfirm714" // v714 Exit Auto Confirm714
+        const val KEY_V714EXPANDAUTOPANEL714 = "v714expandAutoPanel714" // v714 Expand Auto Panel714
+        const val KEY_V714EXPECTAUTOTIMEOUT714 = "v714expectAutoTimeout714" // v714 Expect Auto Timeout714
+        const val KEY_V715ENCODEAUTOBASE64715 = "v715encodeAutoBase64715" // v715 Encode Auto Base64715
+        const val KEY_V715ENCRYPTAUTOAES715 = "v715encryptAutoAes715" // v715 Encrypt Auto Aes715
+        const val KEY_V715ENDAUTOCLEANUP715 = "v715endAutoCleanup715" // v715 End Auto Cleanup715
+        const val KEY_V715ENGINEAUTOSWITCH715 = "v715engineAutoSwitch715" // v715 Engine Auto Switch715
+        const val KEY_V715ENTERAUTOFULLSCREEN715 = "v715enterAutoFullscreen715" // v715 Enter Auto Fullscreen715
+        const val KEY_V715ENTRYAUTOVALIDATE715 = "v715entryAutoValidate715" // v715 Entry Auto Validate715
+        const val KEY_V715ENVAUTODETECT715 = "v715envAutoDetect715" // v715 Env Auto Detect715
+        const val KEY_V715EQUALAUTOBALANCE715 = "v715equalAutoBalance715" // v715 Equal Auto Balance715
+        const val KEY_V715ERRORAUTORETRY715 = "v715errorAutoRetry715" // v715 Error Auto Retry715
+        const val KEY_V715ESCAPEAUTOSANITIZE715 = "v715escapeAutoSanitize715" // v715 Escape Auto Sanitize715
+        const val KEY_V715EVENTAUTODISPATCH715 = "v715eventAutoDispatch715" // v715 Event Auto Dispatch715
+        const val KEY_V715EXECUTEAUTOTASK715 = "v715executeAutoTask715" // v715 Execute Auto Task715
+        const val KEY_V715EXITAUTOCONFIRM715 = "v715exitAutoConfirm715" // v715 Exit Auto Confirm715
+        const val KEY_V715EXPANDAUTOPANEL715 = "v715expandAutoPanel715" // v715 Expand Auto Panel715
+        const val KEY_V715EXPECTAUTOTIMEOUT715 = "v715expectAutoTimeout715" // v715 Expect Auto Timeout715
+        const val KEY_V716ENCODEAUTOBASE64716 = "v716encodeAutoBase64716" // v716 Encode Auto Base64716
+        const val KEY_V716ENCRYPTAUTOAES716 = "v716encryptAutoAes716" // v716 Encrypt Auto Aes716
+        const val KEY_V716ENDAUTOCLEANUP716 = "v716endAutoCleanup716" // v716 End Auto Cleanup716
+        const val KEY_V716ENGINEAUTOSWITCH716 = "v716engineAutoSwitch716" // v716 Engine Auto Switch716
+        const val KEY_V716ENTERAUTOFULLSCREEN716 = "v716enterAutoFullscreen716" // v716 Enter Auto Fullscreen716
+        const val KEY_V716ENTRYAUTOVALIDATE716 = "v716entryAutoValidate716" // v716 Entry Auto Validate716
+        const val KEY_V716ENVAUTODETECT716 = "v716envAutoDetect716" // v716 Env Auto Detect716
+        const val KEY_V716EQUALAUTOBALANCE716 = "v716equalAutoBalance716" // v716 Equal Auto Balance716
+        const val KEY_V716ERRORAUTORETRY716 = "v716errorAutoRetry716" // v716 Error Auto Retry716
+        const val KEY_V716ESCAPEAUTOSANITIZE716 = "v716escapeAutoSanitize716" // v716 Escape Auto Sanitize716
+        const val KEY_V716EVENTAUTODISPATCH716 = "v716eventAutoDispatch716" // v716 Event Auto Dispatch716
+        const val KEY_V716EXECUTEAUTOTASK716 = "v716executeAutoTask716" // v716 Execute Auto Task716
+        const val KEY_V716EXITAUTOCONFIRM716 = "v716exitAutoConfirm716" // v716 Exit Auto Confirm716
+        const val KEY_V716EXPANDAUTOPANEL716 = "v716expandAutoPanel716" // v716 Expand Auto Panel716
+        const val KEY_V716EXPECTAUTOTIMEOUT716 = "v716expectAutoTimeout716" // v716 Expect Auto Timeout716
+        const val KEY_V717ENCODEAUTOBASE64717 = "v717encodeAutoBase64717" // v717 Encode Auto Base64717
+        const val KEY_V717ENCRYPTAUTOAES717 = "v717encryptAutoAes717" // v717 Encrypt Auto Aes717
+        const val KEY_V717ENDAUTOCLEANUP717 = "v717endAutoCleanup717" // v717 End Auto Cleanup717
+        const val KEY_V717ENGINEAUTOSWITCH717 = "v717engineAutoSwitch717" // v717 Engine Auto Switch717
+        const val KEY_V717ENTERAUTOFULLSCREEN717 = "v717enterAutoFullscreen717" // v717 Enter Auto Fullscreen717
+        const val KEY_V717ENTRYAUTOVALIDATE717 = "v717entryAutoValidate717" // v717 Entry Auto Validate717
+        const val KEY_V717ENVAUTODETECT717 = "v717envAutoDetect717" // v717 Env Auto Detect717
+        const val KEY_V717EQUALAUTOBALANCE717 = "v717equalAutoBalance717" // v717 Equal Auto Balance717
+        const val KEY_V717ERRORAUTORETRY717 = "v717errorAutoRetry717" // v717 Error Auto Retry717
+        const val KEY_V717ESCAPEAUTOSANITIZE717 = "v717escapeAutoSanitize717" // v717 Escape Auto Sanitize717
+        const val KEY_V717EVENTAUTODISPATCH717 = "v717eventAutoDispatch717" // v717 Event Auto Dispatch717
+        const val KEY_V717EXECUTEAUTOTASK717 = "v717executeAutoTask717" // v717 Execute Auto Task717
+        const val KEY_V717EXITAUTOCONFIRM717 = "v717exitAutoConfirm717" // v717 Exit Auto Confirm717
+        const val KEY_V717EXPANDAUTOPANEL717 = "v717expandAutoPanel717" // v717 Expand Auto Panel717
+        const val KEY_V717EXPECTAUTOTIMEOUT717 = "v717expectAutoTimeout717" // v717 Expect Auto Timeout717
+        const val KEY_V718ENCODEAUTOBASE64718 = "v718encodeAutoBase64718" // v718 Encode Auto Base64718
+        const val KEY_V718ENCRYPTAUTOAES718 = "v718encryptAutoAes718" // v718 Encrypt Auto Aes718
+        const val KEY_V718ENDAUTOCLEANUP718 = "v718endAutoCleanup718" // v718 End Auto Cleanup718
+        const val KEY_V718ENGINEAUTOSWITCH718 = "v718engineAutoSwitch718" // v718 Engine Auto Switch718
+        const val KEY_V718ENTERAUTOFULLSCREEN718 = "v718enterAutoFullscreen718" // v718 Enter Auto Fullscreen718
+        const val KEY_V718ENTRYAUTOVALIDATE718 = "v718entryAutoValidate718" // v718 Entry Auto Validate718
+        const val KEY_V718ENVAUTODETECT718 = "v718envAutoDetect718" // v718 Env Auto Detect718
+        const val KEY_V718EQUALAUTOBALANCE718 = "v718equalAutoBalance718" // v718 Equal Auto Balance718
+        const val KEY_V718ERRORAUTORETRY718 = "v718errorAutoRetry718" // v718 Error Auto Retry718
+        const val KEY_V718ESCAPEAUTOSANITIZE718 = "v718escapeAutoSanitize718" // v718 Escape Auto Sanitize718
+        const val KEY_V718EVENTAUTODISPATCH718 = "v718eventAutoDispatch718" // v718 Event Auto Dispatch718
+        const val KEY_V718EXECUTEAUTOTASK718 = "v718executeAutoTask718" // v718 Execute Auto Task718
+        const val KEY_V718EXITAUTOCONFIRM718 = "v718exitAutoConfirm718" // v718 Exit Auto Confirm718
+        const val KEY_V718EXPANDAUTOPANEL718 = "v718expandAutoPanel718" // v718 Expand Auto Panel718
+        const val KEY_V718EXPECTAUTOTIMEOUT718 = "v718expectAutoTimeout718" // v718 Expect Auto Timeout718
+        const val KEY_V719ENCODEAUTOBASE64719 = "v719encodeAutoBase64719" // v719 Encode Auto Base64719
+        const val KEY_V719ENCRYPTAUTOAES719 = "v719encryptAutoAes719" // v719 Encrypt Auto Aes719
+        const val KEY_V719ENDAUTOCLEANUP719 = "v719endAutoCleanup719" // v719 End Auto Cleanup719
+        const val KEY_V719ENGINEAUTOSWITCH719 = "v719engineAutoSwitch719" // v719 Engine Auto Switch719
+        const val KEY_V719ENTERAUTOFULLSCREEN719 = "v719enterAutoFullscreen719" // v719 Enter Auto Fullscreen719
+        const val KEY_V719ENTRYAUTOVALIDATE719 = "v719entryAutoValidate719" // v719 Entry Auto Validate719
+        const val KEY_V719ENVAUTODETECT719 = "v719envAutoDetect719" // v719 Env Auto Detect719
+        const val KEY_V719EQUALAUTOBALANCE719 = "v719equalAutoBalance719" // v719 Equal Auto Balance719
+        const val KEY_V719ERRORAUTORETRY719 = "v719errorAutoRetry719" // v719 Error Auto Retry719
+        const val KEY_V719ESCAPEAUTOSANITIZE719 = "v719escapeAutoSanitize719" // v719 Escape Auto Sanitize719
+        const val KEY_V719EVENTAUTODISPATCH719 = "v719eventAutoDispatch719" // v719 Event Auto Dispatch719
+        const val KEY_V719EXECUTEAUTOTASK719 = "v719executeAutoTask719" // v719 Execute Auto Task719
+        const val KEY_V719EXITAUTOCONFIRM719 = "v719exitAutoConfirm719" // v719 Exit Auto Confirm719
+        const val KEY_V719EXPANDAUTOPANEL719 = "v719expandAutoPanel719" // v719 Expand Auto Panel719
+        const val KEY_V719EXPECTAUTOTIMEOUT719 = "v719expectAutoTimeout719" // v719 Expect Auto Timeout719
+        const val KEY_V720ENCODEAUTOBASE64720 = "v720encodeAutoBase64720" // v720 Encode Auto Base64720
+        const val KEY_V720ENCRYPTAUTOAES720 = "v720encryptAutoAes720" // v720 Encrypt Auto Aes720
+        const val KEY_V720ENDAUTOCLEANUP720 = "v720endAutoCleanup720" // v720 End Auto Cleanup720
+        const val KEY_V720ENGINEAUTOSWITCH720 = "v720engineAutoSwitch720" // v720 Engine Auto Switch720
+        const val KEY_V720ENTERAUTOFULLSCREEN720 = "v720enterAutoFullscreen720" // v720 Enter Auto Fullscreen720
+        const val KEY_V720ENTRYAUTOVALIDATE720 = "v720entryAutoValidate720" // v720 Entry Auto Validate720
+        const val KEY_V720ENVAUTODETECT720 = "v720envAutoDetect720" // v720 Env Auto Detect720
+        const val KEY_V720EQUALAUTOBALANCE720 = "v720equalAutoBalance720" // v720 Equal Auto Balance720
+        const val KEY_V720ERRORAUTORETRY720 = "v720errorAutoRetry720" // v720 Error Auto Retry720
+        const val KEY_V720ESCAPEAUTOSANITIZE720 = "v720escapeAutoSanitize720" // v720 Escape Auto Sanitize720
+        const val KEY_V720EVENTAUTODISPATCH720 = "v720eventAutoDispatch720" // v720 Event Auto Dispatch720
+        const val KEY_V720EXECUTEAUTOTASK720 = "v720executeAutoTask720" // v720 Execute Auto Task720
+        const val KEY_V720EXITAUTOCONFIRM720 = "v720exitAutoConfirm720" // v720 Exit Auto Confirm720
+        const val KEY_V720EXPANDAUTOPANEL720 = "v720expandAutoPanel720" // v720 Expand Auto Panel720
+        const val KEY_V720EXPECTAUTOTIMEOUT720 = "v720expectAutoTimeout720" // v720 Expect Auto Timeout720
     }
 }
