@@ -57048,6 +57048,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V840OPTIONAUTOPERSIST840, false)
         set(value) = prefs.edit().putBoolean(KEY_V840OPTIONAUTOPERSIST840, value).apply()
 
+    var v841orbitAutoPath841: Boolean
+        get() = prefs.getBoolean(KEY_V841ORBITAUTOPATH841, false)
+        set(value) = prefs.edit().putBoolean(KEY_V841ORBITAUTOPATH841, value).apply()
+
+    var v841orderAutoSort841: Boolean
+        get() = prefs.getBoolean(KEY_V841ORDERAUTOSORT841, false)
+        set(value) = prefs.edit().putBoolean(KEY_V841ORDERAUTOSORT841, value).apply()
+
+    var v841originAutoRedirect841: Boolean
+        get() = prefs.getBoolean(KEY_V841ORIGINAUTOREDIRECT841, false)
+        set(value) = prefs.edit().putBoolean(KEY_V841ORIGINAUTOREDIRECT841, value).apply()
+
+    var v841outAutoBound841: Boolean
+        get() = prefs.getBoolean(KEY_V841OUTAUTOBOUND841, false)
+        set(value) = prefs.edit().putBoolean(KEY_V841OUTAUTOBOUND841, value).apply()
+
+    var v841outputAutoBuffer841: Boolean
+        get() = prefs.getBoolean(KEY_V841OUTPUTAUTOBUFFER841, false)
+        set(value) = prefs.edit().putBoolean(KEY_V841OUTPUTAUTOBUFFER841, value).apply()
+
+    var v841overlayAutoDim841: Boolean
+        get() = prefs.getBoolean(KEY_V841OVERLAYAUTODIM841, false)
+        set(value) = prefs.edit().putBoolean(KEY_V841OVERLAYAUTODIM841, value).apply()
+
+    var v841ownerAutoPermission841: Boolean
+        get() = prefs.getBoolean(KEY_V841OWNERAUTOPERMISSION841, false)
+        set(value) = prefs.edit().putBoolean(KEY_V841OWNERAUTOPERMISSION841, value).apply()
+
+    var v841packAutoBundle841: Boolean
+        get() = prefs.getBoolean(KEY_V841PACKAUTOBUNDLE841, false)
+        set(value) = prefs.edit().putBoolean(KEY_V841PACKAUTOBUNDLE841, value).apply()
+
+    var v841packageAutoVerify841: Boolean
+        get() = prefs.getBoolean(KEY_V841PACKAGEAUTOVERIFY841, false)
+        set(value) = prefs.edit().putBoolean(KEY_V841PACKAGEAUTOVERIFY841, value).apply()
+
+    var v841pageAutoScroll841: Boolean
+        get() = prefs.getBoolean(KEY_V841PAGEAUTOSCROLL841, false)
+        set(value) = prefs.edit().putBoolean(KEY_V841PAGEAUTOSCROLL841, value).apply()
+
+    var v841paintAutoStroke841: Boolean
+        get() = prefs.getBoolean(KEY_V841PAINTAUTOSTROKE841, false)
+        set(value) = prefs.edit().putBoolean(KEY_V841PAINTAUTOSTROKE841, value).apply()
+
+    var v841pairAutoSync841: Boolean
+        get() = prefs.getBoolean(KEY_V841PAIRAUTOSYNC841, false)
+        set(value) = prefs.edit().putBoolean(KEY_V841PAIRAUTOSYNC841, value).apply()
+
+    var v841panelAutoSlide841: Boolean
+        get() = prefs.getBoolean(KEY_V841PANELAUTOSLIDE841, false)
+        set(value) = prefs.edit().putBoolean(KEY_V841PANELAUTOSLIDE841, value).apply()
+
+    var v841parallelAutoTask841: Boolean
+        get() = prefs.getBoolean(KEY_V841PARALLELAUTOTASK841, false)
+        set(value) = prefs.edit().putBoolean(KEY_V841PARALLELAUTOTASK841, value).apply()
+
+    var v841paramAutoInject841: Boolean
+        get() = prefs.getBoolean(KEY_V841PARAMAUTOINJECT841, false)
+        set(value) = prefs.edit().putBoolean(KEY_V841PARAMAUTOINJECT841, value).apply()
+
+    var v842orbitAutoPath842: Boolean
+        get() = prefs.getBoolean(KEY_V842ORBITAUTOPATH842, false)
+        set(value) = prefs.edit().putBoolean(KEY_V842ORBITAUTOPATH842, value).apply()
+
+    var v842orderAutoSort842: Boolean
+        get() = prefs.getBoolean(KEY_V842ORDERAUTOSORT842, false)
+        set(value) = prefs.edit().putBoolean(KEY_V842ORDERAUTOSORT842, value).apply()
+
+    var v842originAutoRedirect842: Boolean
+        get() = prefs.getBoolean(KEY_V842ORIGINAUTOREDIRECT842, false)
+        set(value) = prefs.edit().putBoolean(KEY_V842ORIGINAUTOREDIRECT842, value).apply()
+
+    var v842outAutoBound842: Boolean
+        get() = prefs.getBoolean(KEY_V842OUTAUTOBOUND842, false)
+        set(value) = prefs.edit().putBoolean(KEY_V842OUTAUTOBOUND842, value).apply()
+
+    var v842outputAutoBuffer842: Boolean
+        get() = prefs.getBoolean(KEY_V842OUTPUTAUTOBUFFER842, false)
+        set(value) = prefs.edit().putBoolean(KEY_V842OUTPUTAUTOBUFFER842, value).apply()
+
+    var v842overlayAutoDim842: Boolean
+        get() = prefs.getBoolean(KEY_V842OVERLAYAUTODIM842, false)
+        set(value) = prefs.edit().putBoolean(KEY_V842OVERLAYAUTODIM842, value).apply()
+
+    var v842ownerAutoPermission842: Boolean
+        get() = prefs.getBoolean(KEY_V842OWNERAUTOPERMISSION842, false)
+        set(value) = prefs.edit().putBoolean(KEY_V842OWNERAUTOPERMISSION842, value).apply()
+
+    var v842packAutoBundle842: Boolean
+        get() = prefs.getBoolean(KEY_V842PACKAUTOBUNDLE842, false)
+        set(value) = prefs.edit().putBoolean(KEY_V842PACKAUTOBUNDLE842, value).apply()
+
+    var v842packageAutoVerify842: Boolean
+        get() = prefs.getBoolean(KEY_V842PACKAGEAUTOVERIFY842, false)
+        set(value) = prefs.edit().putBoolean(KEY_V842PACKAGEAUTOVERIFY842, value).apply()
+
+    var v842pageAutoScroll842: Boolean
+        get() = prefs.getBoolean(KEY_V842PAGEAUTOSCROLL842, false)
+        set(value) = prefs.edit().putBoolean(KEY_V842PAGEAUTOSCROLL842, value).apply()
+
+    var v842paintAutoStroke842: Boolean
+        get() = prefs.getBoolean(KEY_V842PAINTAUTOSTROKE842, false)
+        set(value) = prefs.edit().putBoolean(KEY_V842PAINTAUTOSTROKE842, value).apply()
+
+    var v842pairAutoSync842: Boolean
+        get() = prefs.getBoolean(KEY_V842PAIRAUTOSYNC842, false)
+        set(value) = prefs.edit().putBoolean(KEY_V842PAIRAUTOSYNC842, value).apply()
+
+    var v842panelAutoSlide842: Boolean
+        get() = prefs.getBoolean(KEY_V842PANELAUTOSLIDE842, false)
+        set(value) = prefs.edit().putBoolean(KEY_V842PANELAUTOSLIDE842, value).apply()
+
+    var v842parallelAutoTask842: Boolean
+        get() = prefs.getBoolean(KEY_V842PARALLELAUTOTASK842, false)
+        set(value) = prefs.edit().putBoolean(KEY_V842PARALLELAUTOTASK842, value).apply()
+
+    var v842paramAutoInject842: Boolean
+        get() = prefs.getBoolean(KEY_V842PARAMAUTOINJECT842, false)
+        set(value) = prefs.edit().putBoolean(KEY_V842PARAMAUTOINJECT842, value).apply()
+
+    var v843orbitAutoPath843: Boolean
+        get() = prefs.getBoolean(KEY_V843ORBITAUTOPATH843, false)
+        set(value) = prefs.edit().putBoolean(KEY_V843ORBITAUTOPATH843, value).apply()
+
+    var v843orderAutoSort843: Boolean
+        get() = prefs.getBoolean(KEY_V843ORDERAUTOSORT843, false)
+        set(value) = prefs.edit().putBoolean(KEY_V843ORDERAUTOSORT843, value).apply()
+
+    var v843originAutoRedirect843: Boolean
+        get() = prefs.getBoolean(KEY_V843ORIGINAUTOREDIRECT843, false)
+        set(value) = prefs.edit().putBoolean(KEY_V843ORIGINAUTOREDIRECT843, value).apply()
+
+    var v843outAutoBound843: Boolean
+        get() = prefs.getBoolean(KEY_V843OUTAUTOBOUND843, false)
+        set(value) = prefs.edit().putBoolean(KEY_V843OUTAUTOBOUND843, value).apply()
+
+    var v843outputAutoBuffer843: Boolean
+        get() = prefs.getBoolean(KEY_V843OUTPUTAUTOBUFFER843, false)
+        set(value) = prefs.edit().putBoolean(KEY_V843OUTPUTAUTOBUFFER843, value).apply()
+
+    var v843overlayAutoDim843: Boolean
+        get() = prefs.getBoolean(KEY_V843OVERLAYAUTODIM843, false)
+        set(value) = prefs.edit().putBoolean(KEY_V843OVERLAYAUTODIM843, value).apply()
+
+    var v843ownerAutoPermission843: Boolean
+        get() = prefs.getBoolean(KEY_V843OWNERAUTOPERMISSION843, false)
+        set(value) = prefs.edit().putBoolean(KEY_V843OWNERAUTOPERMISSION843, value).apply()
+
+    var v843packAutoBundle843: Boolean
+        get() = prefs.getBoolean(KEY_V843PACKAUTOBUNDLE843, false)
+        set(value) = prefs.edit().putBoolean(KEY_V843PACKAUTOBUNDLE843, value).apply()
+
+    var v843packageAutoVerify843: Boolean
+        get() = prefs.getBoolean(KEY_V843PACKAGEAUTOVERIFY843, false)
+        set(value) = prefs.edit().putBoolean(KEY_V843PACKAGEAUTOVERIFY843, value).apply()
+
+    var v843pageAutoScroll843: Boolean
+        get() = prefs.getBoolean(KEY_V843PAGEAUTOSCROLL843, false)
+        set(value) = prefs.edit().putBoolean(KEY_V843PAGEAUTOSCROLL843, value).apply()
+
+    var v843paintAutoStroke843: Boolean
+        get() = prefs.getBoolean(KEY_V843PAINTAUTOSTROKE843, false)
+        set(value) = prefs.edit().putBoolean(KEY_V843PAINTAUTOSTROKE843, value).apply()
+
+    var v843pairAutoSync843: Boolean
+        get() = prefs.getBoolean(KEY_V843PAIRAUTOSYNC843, false)
+        set(value) = prefs.edit().putBoolean(KEY_V843PAIRAUTOSYNC843, value).apply()
+
+    var v843panelAutoSlide843: Boolean
+        get() = prefs.getBoolean(KEY_V843PANELAUTOSLIDE843, false)
+        set(value) = prefs.edit().putBoolean(KEY_V843PANELAUTOSLIDE843, value).apply()
+
+    var v843parallelAutoTask843: Boolean
+        get() = prefs.getBoolean(KEY_V843PARALLELAUTOTASK843, false)
+        set(value) = prefs.edit().putBoolean(KEY_V843PARALLELAUTOTASK843, value).apply()
+
+    var v843paramAutoInject843: Boolean
+        get() = prefs.getBoolean(KEY_V843PARAMAUTOINJECT843, false)
+        set(value) = prefs.edit().putBoolean(KEY_V843PARAMAUTOINJECT843, value).apply()
+
+    var v844orbitAutoPath844: Boolean
+        get() = prefs.getBoolean(KEY_V844ORBITAUTOPATH844, false)
+        set(value) = prefs.edit().putBoolean(KEY_V844ORBITAUTOPATH844, value).apply()
+
+    var v844orderAutoSort844: Boolean
+        get() = prefs.getBoolean(KEY_V844ORDERAUTOSORT844, false)
+        set(value) = prefs.edit().putBoolean(KEY_V844ORDERAUTOSORT844, value).apply()
+
+    var v844originAutoRedirect844: Boolean
+        get() = prefs.getBoolean(KEY_V844ORIGINAUTOREDIRECT844, false)
+        set(value) = prefs.edit().putBoolean(KEY_V844ORIGINAUTOREDIRECT844, value).apply()
+
+    var v844outAutoBound844: Boolean
+        get() = prefs.getBoolean(KEY_V844OUTAUTOBOUND844, false)
+        set(value) = prefs.edit().putBoolean(KEY_V844OUTAUTOBOUND844, value).apply()
+
+    var v844outputAutoBuffer844: Boolean
+        get() = prefs.getBoolean(KEY_V844OUTPUTAUTOBUFFER844, false)
+        set(value) = prefs.edit().putBoolean(KEY_V844OUTPUTAUTOBUFFER844, value).apply()
+
+    var v844overlayAutoDim844: Boolean
+        get() = prefs.getBoolean(KEY_V844OVERLAYAUTODIM844, false)
+        set(value) = prefs.edit().putBoolean(KEY_V844OVERLAYAUTODIM844, value).apply()
+
+    var v844ownerAutoPermission844: Boolean
+        get() = prefs.getBoolean(KEY_V844OWNERAUTOPERMISSION844, false)
+        set(value) = prefs.edit().putBoolean(KEY_V844OWNERAUTOPERMISSION844, value).apply()
+
+    var v844packAutoBundle844: Boolean
+        get() = prefs.getBoolean(KEY_V844PACKAUTOBUNDLE844, false)
+        set(value) = prefs.edit().putBoolean(KEY_V844PACKAUTOBUNDLE844, value).apply()
+
+    var v844packageAutoVerify844: Boolean
+        get() = prefs.getBoolean(KEY_V844PACKAGEAUTOVERIFY844, false)
+        set(value) = prefs.edit().putBoolean(KEY_V844PACKAGEAUTOVERIFY844, value).apply()
+
+    var v844pageAutoScroll844: Boolean
+        get() = prefs.getBoolean(KEY_V844PAGEAUTOSCROLL844, false)
+        set(value) = prefs.edit().putBoolean(KEY_V844PAGEAUTOSCROLL844, value).apply()
+
+    var v844paintAutoStroke844: Boolean
+        get() = prefs.getBoolean(KEY_V844PAINTAUTOSTROKE844, false)
+        set(value) = prefs.edit().putBoolean(KEY_V844PAINTAUTOSTROKE844, value).apply()
+
+    var v844pairAutoSync844: Boolean
+        get() = prefs.getBoolean(KEY_V844PAIRAUTOSYNC844, false)
+        set(value) = prefs.edit().putBoolean(KEY_V844PAIRAUTOSYNC844, value).apply()
+
+    var v844panelAutoSlide844: Boolean
+        get() = prefs.getBoolean(KEY_V844PANELAUTOSLIDE844, false)
+        set(value) = prefs.edit().putBoolean(KEY_V844PANELAUTOSLIDE844, value).apply()
+
+    var v844parallelAutoTask844: Boolean
+        get() = prefs.getBoolean(KEY_V844PARALLELAUTOTASK844, false)
+        set(value) = prefs.edit().putBoolean(KEY_V844PARALLELAUTOTASK844, value).apply()
+
+    var v844paramAutoInject844: Boolean
+        get() = prefs.getBoolean(KEY_V844PARAMAUTOINJECT844, false)
+        set(value) = prefs.edit().putBoolean(KEY_V844PARAMAUTOINJECT844, value).apply()
+
+    var v845orbitAutoPath845: Boolean
+        get() = prefs.getBoolean(KEY_V845ORBITAUTOPATH845, false)
+        set(value) = prefs.edit().putBoolean(KEY_V845ORBITAUTOPATH845, value).apply()
+
+    var v845orderAutoSort845: Boolean
+        get() = prefs.getBoolean(KEY_V845ORDERAUTOSORT845, false)
+        set(value) = prefs.edit().putBoolean(KEY_V845ORDERAUTOSORT845, value).apply()
+
+    var v845originAutoRedirect845: Boolean
+        get() = prefs.getBoolean(KEY_V845ORIGINAUTOREDIRECT845, false)
+        set(value) = prefs.edit().putBoolean(KEY_V845ORIGINAUTOREDIRECT845, value).apply()
+
+    var v845outAutoBound845: Boolean
+        get() = prefs.getBoolean(KEY_V845OUTAUTOBOUND845, false)
+        set(value) = prefs.edit().putBoolean(KEY_V845OUTAUTOBOUND845, value).apply()
+
+    var v845outputAutoBuffer845: Boolean
+        get() = prefs.getBoolean(KEY_V845OUTPUTAUTOBUFFER845, false)
+        set(value) = prefs.edit().putBoolean(KEY_V845OUTPUTAUTOBUFFER845, value).apply()
+
+    var v845overlayAutoDim845: Boolean
+        get() = prefs.getBoolean(KEY_V845OVERLAYAUTODIM845, false)
+        set(value) = prefs.edit().putBoolean(KEY_V845OVERLAYAUTODIM845, value).apply()
+
+    var v845ownerAutoPermission845: Boolean
+        get() = prefs.getBoolean(KEY_V845OWNERAUTOPERMISSION845, false)
+        set(value) = prefs.edit().putBoolean(KEY_V845OWNERAUTOPERMISSION845, value).apply()
+
+    var v845packAutoBundle845: Boolean
+        get() = prefs.getBoolean(KEY_V845PACKAUTOBUNDLE845, false)
+        set(value) = prefs.edit().putBoolean(KEY_V845PACKAUTOBUNDLE845, value).apply()
+
+    var v845packageAutoVerify845: Boolean
+        get() = prefs.getBoolean(KEY_V845PACKAGEAUTOVERIFY845, false)
+        set(value) = prefs.edit().putBoolean(KEY_V845PACKAGEAUTOVERIFY845, value).apply()
+
+    var v845pageAutoScroll845: Boolean
+        get() = prefs.getBoolean(KEY_V845PAGEAUTOSCROLL845, false)
+        set(value) = prefs.edit().putBoolean(KEY_V845PAGEAUTOSCROLL845, value).apply()
+
+    var v845paintAutoStroke845: Boolean
+        get() = prefs.getBoolean(KEY_V845PAINTAUTOSTROKE845, false)
+        set(value) = prefs.edit().putBoolean(KEY_V845PAINTAUTOSTROKE845, value).apply()
+
+    var v845pairAutoSync845: Boolean
+        get() = prefs.getBoolean(KEY_V845PAIRAUTOSYNC845, false)
+        set(value) = prefs.edit().putBoolean(KEY_V845PAIRAUTOSYNC845, value).apply()
+
+    var v845panelAutoSlide845: Boolean
+        get() = prefs.getBoolean(KEY_V845PANELAUTOSLIDE845, false)
+        set(value) = prefs.edit().putBoolean(KEY_V845PANELAUTOSLIDE845, value).apply()
+
+    var v845parallelAutoTask845: Boolean
+        get() = prefs.getBoolean(KEY_V845PARALLELAUTOTASK845, false)
+        set(value) = prefs.edit().putBoolean(KEY_V845PARALLELAUTOTASK845, value).apply()
+
+    var v845paramAutoInject845: Boolean
+        get() = prefs.getBoolean(KEY_V845PARAMAUTOINJECT845, false)
+        set(value) = prefs.edit().putBoolean(KEY_V845PARAMAUTOINJECT845, value).apply()
+
+    var v846orbitAutoPath846: Boolean
+        get() = prefs.getBoolean(KEY_V846ORBITAUTOPATH846, false)
+        set(value) = prefs.edit().putBoolean(KEY_V846ORBITAUTOPATH846, value).apply()
+
+    var v846orderAutoSort846: Boolean
+        get() = prefs.getBoolean(KEY_V846ORDERAUTOSORT846, false)
+        set(value) = prefs.edit().putBoolean(KEY_V846ORDERAUTOSORT846, value).apply()
+
+    var v846originAutoRedirect846: Boolean
+        get() = prefs.getBoolean(KEY_V846ORIGINAUTOREDIRECT846, false)
+        set(value) = prefs.edit().putBoolean(KEY_V846ORIGINAUTOREDIRECT846, value).apply()
+
+    var v846outAutoBound846: Boolean
+        get() = prefs.getBoolean(KEY_V846OUTAUTOBOUND846, false)
+        set(value) = prefs.edit().putBoolean(KEY_V846OUTAUTOBOUND846, value).apply()
+
+    var v846outputAutoBuffer846: Boolean
+        get() = prefs.getBoolean(KEY_V846OUTPUTAUTOBUFFER846, false)
+        set(value) = prefs.edit().putBoolean(KEY_V846OUTPUTAUTOBUFFER846, value).apply()
+
+    var v846overlayAutoDim846: Boolean
+        get() = prefs.getBoolean(KEY_V846OVERLAYAUTODIM846, false)
+        set(value) = prefs.edit().putBoolean(KEY_V846OVERLAYAUTODIM846, value).apply()
+
+    var v846ownerAutoPermission846: Boolean
+        get() = prefs.getBoolean(KEY_V846OWNERAUTOPERMISSION846, false)
+        set(value) = prefs.edit().putBoolean(KEY_V846OWNERAUTOPERMISSION846, value).apply()
+
+    var v846packAutoBundle846: Boolean
+        get() = prefs.getBoolean(KEY_V846PACKAUTOBUNDLE846, false)
+        set(value) = prefs.edit().putBoolean(KEY_V846PACKAUTOBUNDLE846, value).apply()
+
+    var v846packageAutoVerify846: Boolean
+        get() = prefs.getBoolean(KEY_V846PACKAGEAUTOVERIFY846, false)
+        set(value) = prefs.edit().putBoolean(KEY_V846PACKAGEAUTOVERIFY846, value).apply()
+
+    var v846pageAutoScroll846: Boolean
+        get() = prefs.getBoolean(KEY_V846PAGEAUTOSCROLL846, false)
+        set(value) = prefs.edit().putBoolean(KEY_V846PAGEAUTOSCROLL846, value).apply()
+
+    var v846paintAutoStroke846: Boolean
+        get() = prefs.getBoolean(KEY_V846PAINTAUTOSTROKE846, false)
+        set(value) = prefs.edit().putBoolean(KEY_V846PAINTAUTOSTROKE846, value).apply()
+
+    var v846pairAutoSync846: Boolean
+        get() = prefs.getBoolean(KEY_V846PAIRAUTOSYNC846, false)
+        set(value) = prefs.edit().putBoolean(KEY_V846PAIRAUTOSYNC846, value).apply()
+
+    var v846panelAutoSlide846: Boolean
+        get() = prefs.getBoolean(KEY_V846PANELAUTOSLIDE846, false)
+        set(value) = prefs.edit().putBoolean(KEY_V846PANELAUTOSLIDE846, value).apply()
+
+    var v846parallelAutoTask846: Boolean
+        get() = prefs.getBoolean(KEY_V846PARALLELAUTOTASK846, false)
+        set(value) = prefs.edit().putBoolean(KEY_V846PARALLELAUTOTASK846, value).apply()
+
+    var v846paramAutoInject846: Boolean
+        get() = prefs.getBoolean(KEY_V846PARAMAUTOINJECT846, false)
+        set(value) = prefs.edit().putBoolean(KEY_V846PARAMAUTOINJECT846, value).apply()
+
+    var v847orbitAutoPath847: Boolean
+        get() = prefs.getBoolean(KEY_V847ORBITAUTOPATH847, false)
+        set(value) = prefs.edit().putBoolean(KEY_V847ORBITAUTOPATH847, value).apply()
+
+    var v847orderAutoSort847: Boolean
+        get() = prefs.getBoolean(KEY_V847ORDERAUTOSORT847, false)
+        set(value) = prefs.edit().putBoolean(KEY_V847ORDERAUTOSORT847, value).apply()
+
+    var v847originAutoRedirect847: Boolean
+        get() = prefs.getBoolean(KEY_V847ORIGINAUTOREDIRECT847, false)
+        set(value) = prefs.edit().putBoolean(KEY_V847ORIGINAUTOREDIRECT847, value).apply()
+
+    var v847outAutoBound847: Boolean
+        get() = prefs.getBoolean(KEY_V847OUTAUTOBOUND847, false)
+        set(value) = prefs.edit().putBoolean(KEY_V847OUTAUTOBOUND847, value).apply()
+
+    var v847outputAutoBuffer847: Boolean
+        get() = prefs.getBoolean(KEY_V847OUTPUTAUTOBUFFER847, false)
+        set(value) = prefs.edit().putBoolean(KEY_V847OUTPUTAUTOBUFFER847, value).apply()
+
+    var v847overlayAutoDim847: Boolean
+        get() = prefs.getBoolean(KEY_V847OVERLAYAUTODIM847, false)
+        set(value) = prefs.edit().putBoolean(KEY_V847OVERLAYAUTODIM847, value).apply()
+
+    var v847ownerAutoPermission847: Boolean
+        get() = prefs.getBoolean(KEY_V847OWNERAUTOPERMISSION847, false)
+        set(value) = prefs.edit().putBoolean(KEY_V847OWNERAUTOPERMISSION847, value).apply()
+
+    var v847packAutoBundle847: Boolean
+        get() = prefs.getBoolean(KEY_V847PACKAUTOBUNDLE847, false)
+        set(value) = prefs.edit().putBoolean(KEY_V847PACKAUTOBUNDLE847, value).apply()
+
+    var v847packageAutoVerify847: Boolean
+        get() = prefs.getBoolean(KEY_V847PACKAGEAUTOVERIFY847, false)
+        set(value) = prefs.edit().putBoolean(KEY_V847PACKAGEAUTOVERIFY847, value).apply()
+
+    var v847pageAutoScroll847: Boolean
+        get() = prefs.getBoolean(KEY_V847PAGEAUTOSCROLL847, false)
+        set(value) = prefs.edit().putBoolean(KEY_V847PAGEAUTOSCROLL847, value).apply()
+
+    var v847paintAutoStroke847: Boolean
+        get() = prefs.getBoolean(KEY_V847PAINTAUTOSTROKE847, false)
+        set(value) = prefs.edit().putBoolean(KEY_V847PAINTAUTOSTROKE847, value).apply()
+
+    var v847pairAutoSync847: Boolean
+        get() = prefs.getBoolean(KEY_V847PAIRAUTOSYNC847, false)
+        set(value) = prefs.edit().putBoolean(KEY_V847PAIRAUTOSYNC847, value).apply()
+
+    var v847panelAutoSlide847: Boolean
+        get() = prefs.getBoolean(KEY_V847PANELAUTOSLIDE847, false)
+        set(value) = prefs.edit().putBoolean(KEY_V847PANELAUTOSLIDE847, value).apply()
+
+    var v847parallelAutoTask847: Boolean
+        get() = prefs.getBoolean(KEY_V847PARALLELAUTOTASK847, false)
+        set(value) = prefs.edit().putBoolean(KEY_V847PARALLELAUTOTASK847, value).apply()
+
+    var v847paramAutoInject847: Boolean
+        get() = prefs.getBoolean(KEY_V847PARAMAUTOINJECT847, false)
+        set(value) = prefs.edit().putBoolean(KEY_V847PARAMAUTOINJECT847, value).apply()
+
+    var v848orbitAutoPath848: Boolean
+        get() = prefs.getBoolean(KEY_V848ORBITAUTOPATH848, false)
+        set(value) = prefs.edit().putBoolean(KEY_V848ORBITAUTOPATH848, value).apply()
+
+    var v848orderAutoSort848: Boolean
+        get() = prefs.getBoolean(KEY_V848ORDERAUTOSORT848, false)
+        set(value) = prefs.edit().putBoolean(KEY_V848ORDERAUTOSORT848, value).apply()
+
+    var v848originAutoRedirect848: Boolean
+        get() = prefs.getBoolean(KEY_V848ORIGINAUTOREDIRECT848, false)
+        set(value) = prefs.edit().putBoolean(KEY_V848ORIGINAUTOREDIRECT848, value).apply()
+
+    var v848outAutoBound848: Boolean
+        get() = prefs.getBoolean(KEY_V848OUTAUTOBOUND848, false)
+        set(value) = prefs.edit().putBoolean(KEY_V848OUTAUTOBOUND848, value).apply()
+
+    var v848outputAutoBuffer848: Boolean
+        get() = prefs.getBoolean(KEY_V848OUTPUTAUTOBUFFER848, false)
+        set(value) = prefs.edit().putBoolean(KEY_V848OUTPUTAUTOBUFFER848, value).apply()
+
+    var v848overlayAutoDim848: Boolean
+        get() = prefs.getBoolean(KEY_V848OVERLAYAUTODIM848, false)
+        set(value) = prefs.edit().putBoolean(KEY_V848OVERLAYAUTODIM848, value).apply()
+
+    var v848ownerAutoPermission848: Boolean
+        get() = prefs.getBoolean(KEY_V848OWNERAUTOPERMISSION848, false)
+        set(value) = prefs.edit().putBoolean(KEY_V848OWNERAUTOPERMISSION848, value).apply()
+
+    var v848packAutoBundle848: Boolean
+        get() = prefs.getBoolean(KEY_V848PACKAUTOBUNDLE848, false)
+        set(value) = prefs.edit().putBoolean(KEY_V848PACKAUTOBUNDLE848, value).apply()
+
+    var v848packageAutoVerify848: Boolean
+        get() = prefs.getBoolean(KEY_V848PACKAGEAUTOVERIFY848, false)
+        set(value) = prefs.edit().putBoolean(KEY_V848PACKAGEAUTOVERIFY848, value).apply()
+
+    var v848pageAutoScroll848: Boolean
+        get() = prefs.getBoolean(KEY_V848PAGEAUTOSCROLL848, false)
+        set(value) = prefs.edit().putBoolean(KEY_V848PAGEAUTOSCROLL848, value).apply()
+
+    var v848paintAutoStroke848: Boolean
+        get() = prefs.getBoolean(KEY_V848PAINTAUTOSTROKE848, false)
+        set(value) = prefs.edit().putBoolean(KEY_V848PAINTAUTOSTROKE848, value).apply()
+
+    var v848pairAutoSync848: Boolean
+        get() = prefs.getBoolean(KEY_V848PAIRAUTOSYNC848, false)
+        set(value) = prefs.edit().putBoolean(KEY_V848PAIRAUTOSYNC848, value).apply()
+
+    var v848panelAutoSlide848: Boolean
+        get() = prefs.getBoolean(KEY_V848PANELAUTOSLIDE848, false)
+        set(value) = prefs.edit().putBoolean(KEY_V848PANELAUTOSLIDE848, value).apply()
+
+    var v848parallelAutoTask848: Boolean
+        get() = prefs.getBoolean(KEY_V848PARALLELAUTOTASK848, false)
+        set(value) = prefs.edit().putBoolean(KEY_V848PARALLELAUTOTASK848, value).apply()
+
+    var v848paramAutoInject848: Boolean
+        get() = prefs.getBoolean(KEY_V848PARAMAUTOINJECT848, false)
+        set(value) = prefs.edit().putBoolean(KEY_V848PARAMAUTOINJECT848, value).apply()
+
+    var v849orbitAutoPath849: Boolean
+        get() = prefs.getBoolean(KEY_V849ORBITAUTOPATH849, false)
+        set(value) = prefs.edit().putBoolean(KEY_V849ORBITAUTOPATH849, value).apply()
+
+    var v849orderAutoSort849: Boolean
+        get() = prefs.getBoolean(KEY_V849ORDERAUTOSORT849, false)
+        set(value) = prefs.edit().putBoolean(KEY_V849ORDERAUTOSORT849, value).apply()
+
+    var v849originAutoRedirect849: Boolean
+        get() = prefs.getBoolean(KEY_V849ORIGINAUTOREDIRECT849, false)
+        set(value) = prefs.edit().putBoolean(KEY_V849ORIGINAUTOREDIRECT849, value).apply()
+
+    var v849outAutoBound849: Boolean
+        get() = prefs.getBoolean(KEY_V849OUTAUTOBOUND849, false)
+        set(value) = prefs.edit().putBoolean(KEY_V849OUTAUTOBOUND849, value).apply()
+
+    var v849outputAutoBuffer849: Boolean
+        get() = prefs.getBoolean(KEY_V849OUTPUTAUTOBUFFER849, false)
+        set(value) = prefs.edit().putBoolean(KEY_V849OUTPUTAUTOBUFFER849, value).apply()
+
+    var v849overlayAutoDim849: Boolean
+        get() = prefs.getBoolean(KEY_V849OVERLAYAUTODIM849, false)
+        set(value) = prefs.edit().putBoolean(KEY_V849OVERLAYAUTODIM849, value).apply()
+
+    var v849ownerAutoPermission849: Boolean
+        get() = prefs.getBoolean(KEY_V849OWNERAUTOPERMISSION849, false)
+        set(value) = prefs.edit().putBoolean(KEY_V849OWNERAUTOPERMISSION849, value).apply()
+
+    var v849packAutoBundle849: Boolean
+        get() = prefs.getBoolean(KEY_V849PACKAUTOBUNDLE849, false)
+        set(value) = prefs.edit().putBoolean(KEY_V849PACKAUTOBUNDLE849, value).apply()
+
+    var v849packageAutoVerify849: Boolean
+        get() = prefs.getBoolean(KEY_V849PACKAGEAUTOVERIFY849, false)
+        set(value) = prefs.edit().putBoolean(KEY_V849PACKAGEAUTOVERIFY849, value).apply()
+
+    var v849pageAutoScroll849: Boolean
+        get() = prefs.getBoolean(KEY_V849PAGEAUTOSCROLL849, false)
+        set(value) = prefs.edit().putBoolean(KEY_V849PAGEAUTOSCROLL849, value).apply()
+
+    var v849paintAutoStroke849: Boolean
+        get() = prefs.getBoolean(KEY_V849PAINTAUTOSTROKE849, false)
+        set(value) = prefs.edit().putBoolean(KEY_V849PAINTAUTOSTROKE849, value).apply()
+
+    var v849pairAutoSync849: Boolean
+        get() = prefs.getBoolean(KEY_V849PAIRAUTOSYNC849, false)
+        set(value) = prefs.edit().putBoolean(KEY_V849PAIRAUTOSYNC849, value).apply()
+
+    var v849panelAutoSlide849: Boolean
+        get() = prefs.getBoolean(KEY_V849PANELAUTOSLIDE849, false)
+        set(value) = prefs.edit().putBoolean(KEY_V849PANELAUTOSLIDE849, value).apply()
+
+    var v849parallelAutoTask849: Boolean
+        get() = prefs.getBoolean(KEY_V849PARALLELAUTOTASK849, false)
+        set(value) = prefs.edit().putBoolean(KEY_V849PARALLELAUTOTASK849, value).apply()
+
+    var v849paramAutoInject849: Boolean
+        get() = prefs.getBoolean(KEY_V849PARAMAUTOINJECT849, false)
+        set(value) = prefs.edit().putBoolean(KEY_V849PARAMAUTOINJECT849, value).apply()
+
+    var v850orbitAutoPath850: Boolean
+        get() = prefs.getBoolean(KEY_V850ORBITAUTOPATH850, false)
+        set(value) = prefs.edit().putBoolean(KEY_V850ORBITAUTOPATH850, value).apply()
+
+    var v850orderAutoSort850: Boolean
+        get() = prefs.getBoolean(KEY_V850ORDERAUTOSORT850, false)
+        set(value) = prefs.edit().putBoolean(KEY_V850ORDERAUTOSORT850, value).apply()
+
+    var v850originAutoRedirect850: Boolean
+        get() = prefs.getBoolean(KEY_V850ORIGINAUTOREDIRECT850, false)
+        set(value) = prefs.edit().putBoolean(KEY_V850ORIGINAUTOREDIRECT850, value).apply()
+
+    var v850outAutoBound850: Boolean
+        get() = prefs.getBoolean(KEY_V850OUTAUTOBOUND850, false)
+        set(value) = prefs.edit().putBoolean(KEY_V850OUTAUTOBOUND850, value).apply()
+
+    var v850outputAutoBuffer850: Boolean
+        get() = prefs.getBoolean(KEY_V850OUTPUTAUTOBUFFER850, false)
+        set(value) = prefs.edit().putBoolean(KEY_V850OUTPUTAUTOBUFFER850, value).apply()
+
+    var v850overlayAutoDim850: Boolean
+        get() = prefs.getBoolean(KEY_V850OVERLAYAUTODIM850, false)
+        set(value) = prefs.edit().putBoolean(KEY_V850OVERLAYAUTODIM850, value).apply()
+
+    var v850ownerAutoPermission850: Boolean
+        get() = prefs.getBoolean(KEY_V850OWNERAUTOPERMISSION850, false)
+        set(value) = prefs.edit().putBoolean(KEY_V850OWNERAUTOPERMISSION850, value).apply()
+
+    var v850packAutoBundle850: Boolean
+        get() = prefs.getBoolean(KEY_V850PACKAUTOBUNDLE850, false)
+        set(value) = prefs.edit().putBoolean(KEY_V850PACKAUTOBUNDLE850, value).apply()
+
+    var v850packageAutoVerify850: Boolean
+        get() = prefs.getBoolean(KEY_V850PACKAGEAUTOVERIFY850, false)
+        set(value) = prefs.edit().putBoolean(KEY_V850PACKAGEAUTOVERIFY850, value).apply()
+
+    var v850pageAutoScroll850: Boolean
+        get() = prefs.getBoolean(KEY_V850PAGEAUTOSCROLL850, false)
+        set(value) = prefs.edit().putBoolean(KEY_V850PAGEAUTOSCROLL850, value).apply()
+
+    var v850paintAutoStroke850: Boolean
+        get() = prefs.getBoolean(KEY_V850PAINTAUTOSTROKE850, false)
+        set(value) = prefs.edit().putBoolean(KEY_V850PAINTAUTOSTROKE850, value).apply()
+
+    var v850pairAutoSync850: Boolean
+        get() = prefs.getBoolean(KEY_V850PAIRAUTOSYNC850, false)
+        set(value) = prefs.edit().putBoolean(KEY_V850PAIRAUTOSYNC850, value).apply()
+
+    var v850panelAutoSlide850: Boolean
+        get() = prefs.getBoolean(KEY_V850PANELAUTOSLIDE850, false)
+        set(value) = prefs.edit().putBoolean(KEY_V850PANELAUTOSLIDE850, value).apply()
+
+    var v850parallelAutoTask850: Boolean
+        get() = prefs.getBoolean(KEY_V850PARALLELAUTOTASK850, false)
+        set(value) = prefs.edit().putBoolean(KEY_V850PARALLELAUTOTASK850, value).apply()
+
+    var v850paramAutoInject850: Boolean
+        get() = prefs.getBoolean(KEY_V850PARAMAUTOINJECT850, false)
+        set(value) = prefs.edit().putBoolean(KEY_V850PARAMAUTOINJECT850, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -72180,5 +72780,155 @@ class AppPrefs(context: Context) {
         const val KEY_V840OPENAUTOLINK840 = "v840openAutoLink840" // v840 Open Auto Link840
         const val KEY_V840OPERATEAUTOBATCH840 = "v840operateAutoBatch840" // v840 Operate Auto Batch840
         const val KEY_V840OPTIONAUTOPERSIST840 = "v840optionAutoPersist840" // v840 Option Auto Persist840
+        const val KEY_V841ORBITAUTOPATH841 = "v841orbitAutoPath841" // v841 Orbit Auto Path841
+        const val KEY_V841ORDERAUTOSORT841 = "v841orderAutoSort841" // v841 Order Auto Sort841
+        const val KEY_V841ORIGINAUTOREDIRECT841 = "v841originAutoRedirect841" // v841 Origin Auto Redirect841
+        const val KEY_V841OUTAUTOBOUND841 = "v841outAutoBound841" // v841 Out Auto Bound841
+        const val KEY_V841OUTPUTAUTOBUFFER841 = "v841outputAutoBuffer841" // v841 Output Auto Buffer841
+        const val KEY_V841OVERLAYAUTODIM841 = "v841overlayAutoDim841" // v841 Overlay Auto Dim841
+        const val KEY_V841OWNERAUTOPERMISSION841 = "v841ownerAutoPermission841" // v841 Owner Auto Permission841
+        const val KEY_V841PACKAUTOBUNDLE841 = "v841packAutoBundle841" // v841 Pack Auto Bundle841
+        const val KEY_V841PACKAGEAUTOVERIFY841 = "v841packageAutoVerify841" // v841 Package Auto Verify841
+        const val KEY_V841PAGEAUTOSCROLL841 = "v841pageAutoScroll841" // v841 Page Auto Scroll841
+        const val KEY_V841PAINTAUTOSTROKE841 = "v841paintAutoStroke841" // v841 Paint Auto Stroke841
+        const val KEY_V841PAIRAUTOSYNC841 = "v841pairAutoSync841" // v841 Pair Auto Sync841
+        const val KEY_V841PANELAUTOSLIDE841 = "v841panelAutoSlide841" // v841 Panel Auto Slide841
+        const val KEY_V841PARALLELAUTOTASK841 = "v841parallelAutoTask841" // v841 Parallel Auto Task841
+        const val KEY_V841PARAMAUTOINJECT841 = "v841paramAutoInject841" // v841 Param Auto Inject841
+        const val KEY_V842ORBITAUTOPATH842 = "v842orbitAutoPath842" // v842 Orbit Auto Path842
+        const val KEY_V842ORDERAUTOSORT842 = "v842orderAutoSort842" // v842 Order Auto Sort842
+        const val KEY_V842ORIGINAUTOREDIRECT842 = "v842originAutoRedirect842" // v842 Origin Auto Redirect842
+        const val KEY_V842OUTAUTOBOUND842 = "v842outAutoBound842" // v842 Out Auto Bound842
+        const val KEY_V842OUTPUTAUTOBUFFER842 = "v842outputAutoBuffer842" // v842 Output Auto Buffer842
+        const val KEY_V842OVERLAYAUTODIM842 = "v842overlayAutoDim842" // v842 Overlay Auto Dim842
+        const val KEY_V842OWNERAUTOPERMISSION842 = "v842ownerAutoPermission842" // v842 Owner Auto Permission842
+        const val KEY_V842PACKAUTOBUNDLE842 = "v842packAutoBundle842" // v842 Pack Auto Bundle842
+        const val KEY_V842PACKAGEAUTOVERIFY842 = "v842packageAutoVerify842" // v842 Package Auto Verify842
+        const val KEY_V842PAGEAUTOSCROLL842 = "v842pageAutoScroll842" // v842 Page Auto Scroll842
+        const val KEY_V842PAINTAUTOSTROKE842 = "v842paintAutoStroke842" // v842 Paint Auto Stroke842
+        const val KEY_V842PAIRAUTOSYNC842 = "v842pairAutoSync842" // v842 Pair Auto Sync842
+        const val KEY_V842PANELAUTOSLIDE842 = "v842panelAutoSlide842" // v842 Panel Auto Slide842
+        const val KEY_V842PARALLELAUTOTASK842 = "v842parallelAutoTask842" // v842 Parallel Auto Task842
+        const val KEY_V842PARAMAUTOINJECT842 = "v842paramAutoInject842" // v842 Param Auto Inject842
+        const val KEY_V843ORBITAUTOPATH843 = "v843orbitAutoPath843" // v843 Orbit Auto Path843
+        const val KEY_V843ORDERAUTOSORT843 = "v843orderAutoSort843" // v843 Order Auto Sort843
+        const val KEY_V843ORIGINAUTOREDIRECT843 = "v843originAutoRedirect843" // v843 Origin Auto Redirect843
+        const val KEY_V843OUTAUTOBOUND843 = "v843outAutoBound843" // v843 Out Auto Bound843
+        const val KEY_V843OUTPUTAUTOBUFFER843 = "v843outputAutoBuffer843" // v843 Output Auto Buffer843
+        const val KEY_V843OVERLAYAUTODIM843 = "v843overlayAutoDim843" // v843 Overlay Auto Dim843
+        const val KEY_V843OWNERAUTOPERMISSION843 = "v843ownerAutoPermission843" // v843 Owner Auto Permission843
+        const val KEY_V843PACKAUTOBUNDLE843 = "v843packAutoBundle843" // v843 Pack Auto Bundle843
+        const val KEY_V843PACKAGEAUTOVERIFY843 = "v843packageAutoVerify843" // v843 Package Auto Verify843
+        const val KEY_V843PAGEAUTOSCROLL843 = "v843pageAutoScroll843" // v843 Page Auto Scroll843
+        const val KEY_V843PAINTAUTOSTROKE843 = "v843paintAutoStroke843" // v843 Paint Auto Stroke843
+        const val KEY_V843PAIRAUTOSYNC843 = "v843pairAutoSync843" // v843 Pair Auto Sync843
+        const val KEY_V843PANELAUTOSLIDE843 = "v843panelAutoSlide843" // v843 Panel Auto Slide843
+        const val KEY_V843PARALLELAUTOTASK843 = "v843parallelAutoTask843" // v843 Parallel Auto Task843
+        const val KEY_V843PARAMAUTOINJECT843 = "v843paramAutoInject843" // v843 Param Auto Inject843
+        const val KEY_V844ORBITAUTOPATH844 = "v844orbitAutoPath844" // v844 Orbit Auto Path844
+        const val KEY_V844ORDERAUTOSORT844 = "v844orderAutoSort844" // v844 Order Auto Sort844
+        const val KEY_V844ORIGINAUTOREDIRECT844 = "v844originAutoRedirect844" // v844 Origin Auto Redirect844
+        const val KEY_V844OUTAUTOBOUND844 = "v844outAutoBound844" // v844 Out Auto Bound844
+        const val KEY_V844OUTPUTAUTOBUFFER844 = "v844outputAutoBuffer844" // v844 Output Auto Buffer844
+        const val KEY_V844OVERLAYAUTODIM844 = "v844overlayAutoDim844" // v844 Overlay Auto Dim844
+        const val KEY_V844OWNERAUTOPERMISSION844 = "v844ownerAutoPermission844" // v844 Owner Auto Permission844
+        const val KEY_V844PACKAUTOBUNDLE844 = "v844packAutoBundle844" // v844 Pack Auto Bundle844
+        const val KEY_V844PACKAGEAUTOVERIFY844 = "v844packageAutoVerify844" // v844 Package Auto Verify844
+        const val KEY_V844PAGEAUTOSCROLL844 = "v844pageAutoScroll844" // v844 Page Auto Scroll844
+        const val KEY_V844PAINTAUTOSTROKE844 = "v844paintAutoStroke844" // v844 Paint Auto Stroke844
+        const val KEY_V844PAIRAUTOSYNC844 = "v844pairAutoSync844" // v844 Pair Auto Sync844
+        const val KEY_V844PANELAUTOSLIDE844 = "v844panelAutoSlide844" // v844 Panel Auto Slide844
+        const val KEY_V844PARALLELAUTOTASK844 = "v844parallelAutoTask844" // v844 Parallel Auto Task844
+        const val KEY_V844PARAMAUTOINJECT844 = "v844paramAutoInject844" // v844 Param Auto Inject844
+        const val KEY_V845ORBITAUTOPATH845 = "v845orbitAutoPath845" // v845 Orbit Auto Path845
+        const val KEY_V845ORDERAUTOSORT845 = "v845orderAutoSort845" // v845 Order Auto Sort845
+        const val KEY_V845ORIGINAUTOREDIRECT845 = "v845originAutoRedirect845" // v845 Origin Auto Redirect845
+        const val KEY_V845OUTAUTOBOUND845 = "v845outAutoBound845" // v845 Out Auto Bound845
+        const val KEY_V845OUTPUTAUTOBUFFER845 = "v845outputAutoBuffer845" // v845 Output Auto Buffer845
+        const val KEY_V845OVERLAYAUTODIM845 = "v845overlayAutoDim845" // v845 Overlay Auto Dim845
+        const val KEY_V845OWNERAUTOPERMISSION845 = "v845ownerAutoPermission845" // v845 Owner Auto Permission845
+        const val KEY_V845PACKAUTOBUNDLE845 = "v845packAutoBundle845" // v845 Pack Auto Bundle845
+        const val KEY_V845PACKAGEAUTOVERIFY845 = "v845packageAutoVerify845" // v845 Package Auto Verify845
+        const val KEY_V845PAGEAUTOSCROLL845 = "v845pageAutoScroll845" // v845 Page Auto Scroll845
+        const val KEY_V845PAINTAUTOSTROKE845 = "v845paintAutoStroke845" // v845 Paint Auto Stroke845
+        const val KEY_V845PAIRAUTOSYNC845 = "v845pairAutoSync845" // v845 Pair Auto Sync845
+        const val KEY_V845PANELAUTOSLIDE845 = "v845panelAutoSlide845" // v845 Panel Auto Slide845
+        const val KEY_V845PARALLELAUTOTASK845 = "v845parallelAutoTask845" // v845 Parallel Auto Task845
+        const val KEY_V845PARAMAUTOINJECT845 = "v845paramAutoInject845" // v845 Param Auto Inject845
+        const val KEY_V846ORBITAUTOPATH846 = "v846orbitAutoPath846" // v846 Orbit Auto Path846
+        const val KEY_V846ORDERAUTOSORT846 = "v846orderAutoSort846" // v846 Order Auto Sort846
+        const val KEY_V846ORIGINAUTOREDIRECT846 = "v846originAutoRedirect846" // v846 Origin Auto Redirect846
+        const val KEY_V846OUTAUTOBOUND846 = "v846outAutoBound846" // v846 Out Auto Bound846
+        const val KEY_V846OUTPUTAUTOBUFFER846 = "v846outputAutoBuffer846" // v846 Output Auto Buffer846
+        const val KEY_V846OVERLAYAUTODIM846 = "v846overlayAutoDim846" // v846 Overlay Auto Dim846
+        const val KEY_V846OWNERAUTOPERMISSION846 = "v846ownerAutoPermission846" // v846 Owner Auto Permission846
+        const val KEY_V846PACKAUTOBUNDLE846 = "v846packAutoBundle846" // v846 Pack Auto Bundle846
+        const val KEY_V846PACKAGEAUTOVERIFY846 = "v846packageAutoVerify846" // v846 Package Auto Verify846
+        const val KEY_V846PAGEAUTOSCROLL846 = "v846pageAutoScroll846" // v846 Page Auto Scroll846
+        const val KEY_V846PAINTAUTOSTROKE846 = "v846paintAutoStroke846" // v846 Paint Auto Stroke846
+        const val KEY_V846PAIRAUTOSYNC846 = "v846pairAutoSync846" // v846 Pair Auto Sync846
+        const val KEY_V846PANELAUTOSLIDE846 = "v846panelAutoSlide846" // v846 Panel Auto Slide846
+        const val KEY_V846PARALLELAUTOTASK846 = "v846parallelAutoTask846" // v846 Parallel Auto Task846
+        const val KEY_V846PARAMAUTOINJECT846 = "v846paramAutoInject846" // v846 Param Auto Inject846
+        const val KEY_V847ORBITAUTOPATH847 = "v847orbitAutoPath847" // v847 Orbit Auto Path847
+        const val KEY_V847ORDERAUTOSORT847 = "v847orderAutoSort847" // v847 Order Auto Sort847
+        const val KEY_V847ORIGINAUTOREDIRECT847 = "v847originAutoRedirect847" // v847 Origin Auto Redirect847
+        const val KEY_V847OUTAUTOBOUND847 = "v847outAutoBound847" // v847 Out Auto Bound847
+        const val KEY_V847OUTPUTAUTOBUFFER847 = "v847outputAutoBuffer847" // v847 Output Auto Buffer847
+        const val KEY_V847OVERLAYAUTODIM847 = "v847overlayAutoDim847" // v847 Overlay Auto Dim847
+        const val KEY_V847OWNERAUTOPERMISSION847 = "v847ownerAutoPermission847" // v847 Owner Auto Permission847
+        const val KEY_V847PACKAUTOBUNDLE847 = "v847packAutoBundle847" // v847 Pack Auto Bundle847
+        const val KEY_V847PACKAGEAUTOVERIFY847 = "v847packageAutoVerify847" // v847 Package Auto Verify847
+        const val KEY_V847PAGEAUTOSCROLL847 = "v847pageAutoScroll847" // v847 Page Auto Scroll847
+        const val KEY_V847PAINTAUTOSTROKE847 = "v847paintAutoStroke847" // v847 Paint Auto Stroke847
+        const val KEY_V847PAIRAUTOSYNC847 = "v847pairAutoSync847" // v847 Pair Auto Sync847
+        const val KEY_V847PANELAUTOSLIDE847 = "v847panelAutoSlide847" // v847 Panel Auto Slide847
+        const val KEY_V847PARALLELAUTOTASK847 = "v847parallelAutoTask847" // v847 Parallel Auto Task847
+        const val KEY_V847PARAMAUTOINJECT847 = "v847paramAutoInject847" // v847 Param Auto Inject847
+        const val KEY_V848ORBITAUTOPATH848 = "v848orbitAutoPath848" // v848 Orbit Auto Path848
+        const val KEY_V848ORDERAUTOSORT848 = "v848orderAutoSort848" // v848 Order Auto Sort848
+        const val KEY_V848ORIGINAUTOREDIRECT848 = "v848originAutoRedirect848" // v848 Origin Auto Redirect848
+        const val KEY_V848OUTAUTOBOUND848 = "v848outAutoBound848" // v848 Out Auto Bound848
+        const val KEY_V848OUTPUTAUTOBUFFER848 = "v848outputAutoBuffer848" // v848 Output Auto Buffer848
+        const val KEY_V848OVERLAYAUTODIM848 = "v848overlayAutoDim848" // v848 Overlay Auto Dim848
+        const val KEY_V848OWNERAUTOPERMISSION848 = "v848ownerAutoPermission848" // v848 Owner Auto Permission848
+        const val KEY_V848PACKAUTOBUNDLE848 = "v848packAutoBundle848" // v848 Pack Auto Bundle848
+        const val KEY_V848PACKAGEAUTOVERIFY848 = "v848packageAutoVerify848" // v848 Package Auto Verify848
+        const val KEY_V848PAGEAUTOSCROLL848 = "v848pageAutoScroll848" // v848 Page Auto Scroll848
+        const val KEY_V848PAINTAUTOSTROKE848 = "v848paintAutoStroke848" // v848 Paint Auto Stroke848
+        const val KEY_V848PAIRAUTOSYNC848 = "v848pairAutoSync848" // v848 Pair Auto Sync848
+        const val KEY_V848PANELAUTOSLIDE848 = "v848panelAutoSlide848" // v848 Panel Auto Slide848
+        const val KEY_V848PARALLELAUTOTASK848 = "v848parallelAutoTask848" // v848 Parallel Auto Task848
+        const val KEY_V848PARAMAUTOINJECT848 = "v848paramAutoInject848" // v848 Param Auto Inject848
+        const val KEY_V849ORBITAUTOPATH849 = "v849orbitAutoPath849" // v849 Orbit Auto Path849
+        const val KEY_V849ORDERAUTOSORT849 = "v849orderAutoSort849" // v849 Order Auto Sort849
+        const val KEY_V849ORIGINAUTOREDIRECT849 = "v849originAutoRedirect849" // v849 Origin Auto Redirect849
+        const val KEY_V849OUTAUTOBOUND849 = "v849outAutoBound849" // v849 Out Auto Bound849
+        const val KEY_V849OUTPUTAUTOBUFFER849 = "v849outputAutoBuffer849" // v849 Output Auto Buffer849
+        const val KEY_V849OVERLAYAUTODIM849 = "v849overlayAutoDim849" // v849 Overlay Auto Dim849
+        const val KEY_V849OWNERAUTOPERMISSION849 = "v849ownerAutoPermission849" // v849 Owner Auto Permission849
+        const val KEY_V849PACKAUTOBUNDLE849 = "v849packAutoBundle849" // v849 Pack Auto Bundle849
+        const val KEY_V849PACKAGEAUTOVERIFY849 = "v849packageAutoVerify849" // v849 Package Auto Verify849
+        const val KEY_V849PAGEAUTOSCROLL849 = "v849pageAutoScroll849" // v849 Page Auto Scroll849
+        const val KEY_V849PAINTAUTOSTROKE849 = "v849paintAutoStroke849" // v849 Paint Auto Stroke849
+        const val KEY_V849PAIRAUTOSYNC849 = "v849pairAutoSync849" // v849 Pair Auto Sync849
+        const val KEY_V849PANELAUTOSLIDE849 = "v849panelAutoSlide849" // v849 Panel Auto Slide849
+        const val KEY_V849PARALLELAUTOTASK849 = "v849parallelAutoTask849" // v849 Parallel Auto Task849
+        const val KEY_V849PARAMAUTOINJECT849 = "v849paramAutoInject849" // v849 Param Auto Inject849
+        const val KEY_V850ORBITAUTOPATH850 = "v850orbitAutoPath850" // v850 Orbit Auto Path850
+        const val KEY_V850ORDERAUTOSORT850 = "v850orderAutoSort850" // v850 Order Auto Sort850
+        const val KEY_V850ORIGINAUTOREDIRECT850 = "v850originAutoRedirect850" // v850 Origin Auto Redirect850
+        const val KEY_V850OUTAUTOBOUND850 = "v850outAutoBound850" // v850 Out Auto Bound850
+        const val KEY_V850OUTPUTAUTOBUFFER850 = "v850outputAutoBuffer850" // v850 Output Auto Buffer850
+        const val KEY_V850OVERLAYAUTODIM850 = "v850overlayAutoDim850" // v850 Overlay Auto Dim850
+        const val KEY_V850OWNERAUTOPERMISSION850 = "v850ownerAutoPermission850" // v850 Owner Auto Permission850
+        const val KEY_V850PACKAUTOBUNDLE850 = "v850packAutoBundle850" // v850 Pack Auto Bundle850
+        const val KEY_V850PACKAGEAUTOVERIFY850 = "v850packageAutoVerify850" // v850 Package Auto Verify850
+        const val KEY_V850PAGEAUTOSCROLL850 = "v850pageAutoScroll850" // v850 Page Auto Scroll850
+        const val KEY_V850PAINTAUTOSTROKE850 = "v850paintAutoStroke850" // v850 Paint Auto Stroke850
+        const val KEY_V850PAIRAUTOSYNC850 = "v850pairAutoSync850" // v850 Pair Auto Sync850
+        const val KEY_V850PANELAUTOSLIDE850 = "v850panelAutoSlide850" // v850 Panel Auto Slide850
+        const val KEY_V850PARALLELAUTOTASK850 = "v850parallelAutoTask850" // v850 Parallel Auto Task850
+        const val KEY_V850PARAMAUTOINJECT850 = "v850paramAutoInject850" // v850 Param Auto Inject850
     }
 }
