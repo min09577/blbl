@@ -26648,6 +26648,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getInt(KEY_V330SUBTITLESTROKEWIDTH322, 0)
         set(value) = prefs.edit().putInt(KEY_V330SUBTITLESTROKEWIDTH322, value).apply()
 
+    var v331audioStereoWidth313: Int
+        get() = prefs.getInt(KEY_V331AUDIOSTEREOWIDTH313, 0)
+        set(value) = prefs.edit().putInt(KEY_V331AUDIOSTEREOWIDTH313, value).apply()
+
+    var v331danmakuScrollSpeed313: Int
+        get() = prefs.getInt(KEY_V331DANMAKUSCROLLSPEED313, 0)
+        set(value) = prefs.edit().putInt(KEY_V331DANMAKUSCROLLSPEED313, value).apply()
+
+    var v331subtitleDelaySync313: Boolean
+        get() = prefs.getBoolean(KEY_V331SUBTITLEDELAYSYNC313, false)
+        set(value) = prefs.edit().putBoolean(KEY_V331SUBTITLEDELAYSYNC313, value).apply()
+
+    var v331gestureSwipeUpAction313: Int
+        get() = prefs.getInt(KEY_V331GESTURESWIPEUPACTION313, 0)
+        set(value) = prefs.edit().putInt(KEY_V331GESTURESWIPEUPACTION313, value).apply()
+
+    var v331castSubtitles313: Boolean
+        get() = prefs.getBoolean(KEY_V331CASTSUBTITLES313, false)
+        set(value) = prefs.edit().putBoolean(KEY_V331CASTSUBTITLES313, value).apply()
+
+    var v331playlistShuffleMode313: Boolean
+        get() = prefs.getBoolean(KEY_V331PLAYLISTSHUFFLEMODE313, false)
+        set(value) = prefs.edit().putBoolean(KEY_V331PLAYLISTSHUFFLEMODE313, value).apply()
+
+    var v331cacheCleanupInterval313: Int
+        get() = prefs.getInt(KEY_V331CACHECLEANUPINTERVAL313, 0)
+        set(value) = prefs.edit().putInt(KEY_V331CACHECLEANUPINTERVAL313, value).apply()
+
+    var v331progressBarBufferedColor313: Boolean
+        get() = prefs.getBoolean(KEY_V331PROGRESSBARBUFFEREDCOLOR313, false)
+        set(value) = prefs.edit().putBoolean(KEY_V331PROGRESSBARBUFFEREDCOLOR313, value).apply()
+
+    var v331volumeStepSize313: Int
+        get() = prefs.getInt(KEY_V331VOLUMESTEPSIZE313, 0)
+        set(value) = prefs.edit().putInt(KEY_V331VOLUMESTEPSIZE313, value).apply()
+
+    var v331historyGroupByDate313: Boolean
+        get() = prefs.getBoolean(KEY_V331HISTORYGROUPBYDATE313, false)
+        set(value) = prefs.edit().putBoolean(KEY_V331HISTORYGROUPBYDATE313, value).apply()
+
+    var v331playbackAutoResume313: Boolean
+        get() = prefs.getBoolean(KEY_V331PLAYBACKAUTORESUME313, false)
+        set(value) = prefs.edit().putBoolean(KEY_V331PLAYBACKAUTORESUME313, value).apply()
+
+    var v331screenshotNotification313: Boolean
+        get() = prefs.getBoolean(KEY_V331SCREENSHOTNOTIFICATION313, false)
+        set(value) = prefs.edit().putBoolean(KEY_V331SCREENSHOTNOTIFICATION313, value).apply()
+
+    var v331videoCropRatio313: Int
+        get() = prefs.getInt(KEY_V331VIDEOCROPRATIO313, 0)
+        set(value) = prefs.edit().putInt(KEY_V331VIDEOCROPRATIO313, value).apply()
+
+    var v331danmakuScrollSpeed314: Int
+        get() = prefs.getInt(KEY_V331DANMAKUSCROLLSPEED314, 0)
+        set(value) = prefs.edit().putInt(KEY_V331DANMAKUSCROLLSPEED314, value).apply()
+
+    var v331subtitleDelaySync314: Boolean
+        get() = prefs.getBoolean(KEY_V331SUBTITLEDELAYSYNC314, false)
+        set(value) = prefs.edit().putBoolean(KEY_V331SUBTITLEDELAYSYNC314, value).apply()
+
+    var v332audioStereoWidth314: Int
+        get() = prefs.getInt(KEY_V332AUDIOSTEREOWIDTH314, 0)
+        set(value) = prefs.edit().putInt(KEY_V332AUDIOSTEREOWIDTH314, value).apply()
+
+    var v332danmakuScrollSpeed315: Int
+        get() = prefs.getInt(KEY_V332DANMAKUSCROLLSPEED315, 0)
+        set(value) = prefs.edit().putInt(KEY_V332DANMAKUSCROLLSPEED315, value).apply()
+
+    var v332subtitleDelaySync315: Boolean
+        get() = prefs.getBoolean(KEY_V332SUBTITLEDELAYSYNC315, false)
+        set(value) = prefs.edit().putBoolean(KEY_V332SUBTITLEDELAYSYNC315, value).apply()
+
+    var v332gestureSwipeUpAction314: Int
+        get() = prefs.getInt(KEY_V332GESTURESWIPEUPACTION314, 0)
+        set(value) = prefs.edit().putInt(KEY_V332GESTURESWIPEUPACTION314, value).apply()
+
+    var v332castSubtitles314: Boolean
+        get() = prefs.getBoolean(KEY_V332CASTSUBTITLES314, false)
+        set(value) = prefs.edit().putBoolean(KEY_V332CASTSUBTITLES314, value).apply()
+
+    var v332playlistShuffleMode314: Boolean
+        get() = prefs.getBoolean(KEY_V332PLAYLISTSHUFFLEMODE314, false)
+        set(value) = prefs.edit().putBoolean(KEY_V332PLAYLISTSHUFFLEMODE314, value).apply()
+
+    var v332cacheCleanupInterval314: Int
+        get() = prefs.getInt(KEY_V332CACHECLEANUPINTERVAL314, 0)
+        set(value) = prefs.edit().putInt(KEY_V332CACHECLEANUPINTERVAL314, value).apply()
+
+    var v332progressBarBufferedColor314: Boolean
+        get() = prefs.getBoolean(KEY_V332PROGRESSBARBUFFEREDCOLOR314, false)
+        set(value) = prefs.edit().putBoolean(KEY_V332PROGRESSBARBUFFEREDCOLOR314, value).apply()
+
+    var v332volumeStepSize314: Int
+        get() = prefs.getInt(KEY_V332VOLUMESTEPSIZE314, 0)
+        set(value) = prefs.edit().putInt(KEY_V332VOLUMESTEPSIZE314, value).apply()
+
+    var v332historyGroupByDate314: Boolean
+        get() = prefs.getBoolean(KEY_V332HISTORYGROUPBYDATE314, false)
+        set(value) = prefs.edit().putBoolean(KEY_V332HISTORYGROUPBYDATE314, value).apply()
+
+    var v332playbackAutoResume314: Boolean
+        get() = prefs.getBoolean(KEY_V332PLAYBACKAUTORESUME314, false)
+        set(value) = prefs.edit().putBoolean(KEY_V332PLAYBACKAUTORESUME314, value).apply()
+
+    var v332screenshotNotification314: Boolean
+        get() = prefs.getBoolean(KEY_V332SCREENSHOTNOTIFICATION314, false)
+        set(value) = prefs.edit().putBoolean(KEY_V332SCREENSHOTNOTIFICATION314, value).apply()
+
+    var v332videoCropRatio314: Int
+        get() = prefs.getInt(KEY_V332VIDEOCROPRATIO314, 0)
+        set(value) = prefs.edit().putInt(KEY_V332VIDEOCROPRATIO314, value).apply()
+
+    var v332danmakuScrollSpeed316: Int
+        get() = prefs.getInt(KEY_V332DANMAKUSCROLLSPEED316, 0)
+        set(value) = prefs.edit().putInt(KEY_V332DANMAKUSCROLLSPEED316, value).apply()
+
+    var v332subtitleDelaySync316: Boolean
+        get() = prefs.getBoolean(KEY_V332SUBTITLEDELAYSYNC316, false)
+        set(value) = prefs.edit().putBoolean(KEY_V332SUBTITLEDELAYSYNC316, value).apply()
+
+    var v333audioStereoWidth315: Int
+        get() = prefs.getInt(KEY_V333AUDIOSTEREOWIDTH315, 0)
+        set(value) = prefs.edit().putInt(KEY_V333AUDIOSTEREOWIDTH315, value).apply()
+
+    var v333danmakuScrollSpeed317: Int
+        get() = prefs.getInt(KEY_V333DANMAKUSCROLLSPEED317, 0)
+        set(value) = prefs.edit().putInt(KEY_V333DANMAKUSCROLLSPEED317, value).apply()
+
+    var v333subtitleDelaySync317: Boolean
+        get() = prefs.getBoolean(KEY_V333SUBTITLEDELAYSYNC317, false)
+        set(value) = prefs.edit().putBoolean(KEY_V333SUBTITLEDELAYSYNC317, value).apply()
+
+    var v333gestureSwipeUpAction315: Int
+        get() = prefs.getInt(KEY_V333GESTURESWIPEUPACTION315, 0)
+        set(value) = prefs.edit().putInt(KEY_V333GESTURESWIPEUPACTION315, value).apply()
+
+    var v333castSubtitles315: Boolean
+        get() = prefs.getBoolean(KEY_V333CASTSUBTITLES315, false)
+        set(value) = prefs.edit().putBoolean(KEY_V333CASTSUBTITLES315, value).apply()
+
+    var v333playlistShuffleMode315: Boolean
+        get() = prefs.getBoolean(KEY_V333PLAYLISTSHUFFLEMODE315, false)
+        set(value) = prefs.edit().putBoolean(KEY_V333PLAYLISTSHUFFLEMODE315, value).apply()
+
+    var v333cacheCleanupInterval315: Int
+        get() = prefs.getInt(KEY_V333CACHECLEANUPINTERVAL315, 0)
+        set(value) = prefs.edit().putInt(KEY_V333CACHECLEANUPINTERVAL315, value).apply()
+
+    var v333progressBarBufferedColor315: Boolean
+        get() = prefs.getBoolean(KEY_V333PROGRESSBARBUFFEREDCOLOR315, false)
+        set(value) = prefs.edit().putBoolean(KEY_V333PROGRESSBARBUFFEREDCOLOR315, value).apply()
+
+    var v333volumeStepSize315: Int
+        get() = prefs.getInt(KEY_V333VOLUMESTEPSIZE315, 0)
+        set(value) = prefs.edit().putInt(KEY_V333VOLUMESTEPSIZE315, value).apply()
+
+    var v333historyGroupByDate315: Boolean
+        get() = prefs.getBoolean(KEY_V333HISTORYGROUPBYDATE315, false)
+        set(value) = prefs.edit().putBoolean(KEY_V333HISTORYGROUPBYDATE315, value).apply()
+
+    var v333playbackAutoResume315: Boolean
+        get() = prefs.getBoolean(KEY_V333PLAYBACKAUTORESUME315, false)
+        set(value) = prefs.edit().putBoolean(KEY_V333PLAYBACKAUTORESUME315, value).apply()
+
+    var v333screenshotNotification315: Boolean
+        get() = prefs.getBoolean(KEY_V333SCREENSHOTNOTIFICATION315, false)
+        set(value) = prefs.edit().putBoolean(KEY_V333SCREENSHOTNOTIFICATION315, value).apply()
+
+    var v333videoCropRatio315: Int
+        get() = prefs.getInt(KEY_V333VIDEOCROPRATIO315, 0)
+        set(value) = prefs.edit().putInt(KEY_V333VIDEOCROPRATIO315, value).apply()
+
+    var v333danmakuScrollSpeed318: Int
+        get() = prefs.getInt(KEY_V333DANMAKUSCROLLSPEED318, 0)
+        set(value) = prefs.edit().putInt(KEY_V333DANMAKUSCROLLSPEED318, value).apply()
+
+    var v333subtitleDelaySync318: Boolean
+        get() = prefs.getBoolean(KEY_V333SUBTITLEDELAYSYNC318, false)
+        set(value) = prefs.edit().putBoolean(KEY_V333SUBTITLEDELAYSYNC318, value).apply()
+
+    var v334audioStereoWidth316: Int
+        get() = prefs.getInt(KEY_V334AUDIOSTEREOWIDTH316, 0)
+        set(value) = prefs.edit().putInt(KEY_V334AUDIOSTEREOWIDTH316, value).apply()
+
+    var v334danmakuScrollSpeed319: Int
+        get() = prefs.getInt(KEY_V334DANMAKUSCROLLSPEED319, 0)
+        set(value) = prefs.edit().putInt(KEY_V334DANMAKUSCROLLSPEED319, value).apply()
+
+    var v334subtitleDelaySync319: Boolean
+        get() = prefs.getBoolean(KEY_V334SUBTITLEDELAYSYNC319, false)
+        set(value) = prefs.edit().putBoolean(KEY_V334SUBTITLEDELAYSYNC319, value).apply()
+
+    var v334gestureSwipeUpAction316: Int
+        get() = prefs.getInt(KEY_V334GESTURESWIPEUPACTION316, 0)
+        set(value) = prefs.edit().putInt(KEY_V334GESTURESWIPEUPACTION316, value).apply()
+
+    var v334castSubtitles316: Boolean
+        get() = prefs.getBoolean(KEY_V334CASTSUBTITLES316, false)
+        set(value) = prefs.edit().putBoolean(KEY_V334CASTSUBTITLES316, value).apply()
+
+    var v334playlistShuffleMode316: Boolean
+        get() = prefs.getBoolean(KEY_V334PLAYLISTSHUFFLEMODE316, false)
+        set(value) = prefs.edit().putBoolean(KEY_V334PLAYLISTSHUFFLEMODE316, value).apply()
+
+    var v334cacheCleanupInterval316: Int
+        get() = prefs.getInt(KEY_V334CACHECLEANUPINTERVAL316, 0)
+        set(value) = prefs.edit().putInt(KEY_V334CACHECLEANUPINTERVAL316, value).apply()
+
+    var v334progressBarBufferedColor316: Boolean
+        get() = prefs.getBoolean(KEY_V334PROGRESSBARBUFFEREDCOLOR316, false)
+        set(value) = prefs.edit().putBoolean(KEY_V334PROGRESSBARBUFFEREDCOLOR316, value).apply()
+
+    var v334volumeStepSize316: Int
+        get() = prefs.getInt(KEY_V334VOLUMESTEPSIZE316, 0)
+        set(value) = prefs.edit().putInt(KEY_V334VOLUMESTEPSIZE316, value).apply()
+
+    var v334historyGroupByDate316: Boolean
+        get() = prefs.getBoolean(KEY_V334HISTORYGROUPBYDATE316, false)
+        set(value) = prefs.edit().putBoolean(KEY_V334HISTORYGROUPBYDATE316, value).apply()
+
+    var v334playbackAutoResume316: Boolean
+        get() = prefs.getBoolean(KEY_V334PLAYBACKAUTORESUME316, false)
+        set(value) = prefs.edit().putBoolean(KEY_V334PLAYBACKAUTORESUME316, value).apply()
+
+    var v334screenshotNotification316: Boolean
+        get() = prefs.getBoolean(KEY_V334SCREENSHOTNOTIFICATION316, false)
+        set(value) = prefs.edit().putBoolean(KEY_V334SCREENSHOTNOTIFICATION316, value).apply()
+
+    var v334videoCropRatio316: Int
+        get() = prefs.getInt(KEY_V334VIDEOCROPRATIO316, 0)
+        set(value) = prefs.edit().putInt(KEY_V334VIDEOCROPRATIO316, value).apply()
+
+    var v334danmakuScrollSpeed320: Int
+        get() = prefs.getInt(KEY_V334DANMAKUSCROLLSPEED320, 0)
+        set(value) = prefs.edit().putInt(KEY_V334DANMAKUSCROLLSPEED320, value).apply()
+
+    var v334subtitleDelaySync320: Boolean
+        get() = prefs.getBoolean(KEY_V334SUBTITLEDELAYSYNC320, false)
+        set(value) = prefs.edit().putBoolean(KEY_V334SUBTITLEDELAYSYNC320, value).apply()
+
+    var v335audioStereoWidth317: Int
+        get() = prefs.getInt(KEY_V335AUDIOSTEREOWIDTH317, 0)
+        set(value) = prefs.edit().putInt(KEY_V335AUDIOSTEREOWIDTH317, value).apply()
+
+    var v335danmakuScrollSpeed321: Int
+        get() = prefs.getInt(KEY_V335DANMAKUSCROLLSPEED321, 0)
+        set(value) = prefs.edit().putInt(KEY_V335DANMAKUSCROLLSPEED321, value).apply()
+
+    var v335subtitleDelaySync321: Boolean
+        get() = prefs.getBoolean(KEY_V335SUBTITLEDELAYSYNC321, false)
+        set(value) = prefs.edit().putBoolean(KEY_V335SUBTITLEDELAYSYNC321, value).apply()
+
+    var v335gestureSwipeUpAction317: Int
+        get() = prefs.getInt(KEY_V335GESTURESWIPEUPACTION317, 0)
+        set(value) = prefs.edit().putInt(KEY_V335GESTURESWIPEUPACTION317, value).apply()
+
+    var v335castSubtitles317: Boolean
+        get() = prefs.getBoolean(KEY_V335CASTSUBTITLES317, false)
+        set(value) = prefs.edit().putBoolean(KEY_V335CASTSUBTITLES317, value).apply()
+
+    var v335playlistShuffleMode317: Boolean
+        get() = prefs.getBoolean(KEY_V335PLAYLISTSHUFFLEMODE317, false)
+        set(value) = prefs.edit().putBoolean(KEY_V335PLAYLISTSHUFFLEMODE317, value).apply()
+
+    var v335cacheCleanupInterval317: Int
+        get() = prefs.getInt(KEY_V335CACHECLEANUPINTERVAL317, 0)
+        set(value) = prefs.edit().putInt(KEY_V335CACHECLEANUPINTERVAL317, value).apply()
+
+    var v335progressBarBufferedColor317: Boolean
+        get() = prefs.getBoolean(KEY_V335PROGRESSBARBUFFEREDCOLOR317, false)
+        set(value) = prefs.edit().putBoolean(KEY_V335PROGRESSBARBUFFEREDCOLOR317, value).apply()
+
+    var v335volumeStepSize317: Int
+        get() = prefs.getInt(KEY_V335VOLUMESTEPSIZE317, 0)
+        set(value) = prefs.edit().putInt(KEY_V335VOLUMESTEPSIZE317, value).apply()
+
+    var v335historyGroupByDate317: Boolean
+        get() = prefs.getBoolean(KEY_V335HISTORYGROUPBYDATE317, false)
+        set(value) = prefs.edit().putBoolean(KEY_V335HISTORYGROUPBYDATE317, value).apply()
+
+    var v335playbackAutoResume317: Boolean
+        get() = prefs.getBoolean(KEY_V335PLAYBACKAUTORESUME317, false)
+        set(value) = prefs.edit().putBoolean(KEY_V335PLAYBACKAUTORESUME317, value).apply()
+
+    var v335screenshotNotification317: Boolean
+        get() = prefs.getBoolean(KEY_V335SCREENSHOTNOTIFICATION317, false)
+        set(value) = prefs.edit().putBoolean(KEY_V335SCREENSHOTNOTIFICATION317, value).apply()
+
+    var v335videoCropRatio317: Int
+        get() = prefs.getInt(KEY_V335VIDEOCROPRATIO317, 0)
+        set(value) = prefs.edit().putInt(KEY_V335VIDEOCROPRATIO317, value).apply()
+
+    var v335danmakuScrollSpeed322: Int
+        get() = prefs.getInt(KEY_V335DANMAKUSCROLLSPEED322, 0)
+        set(value) = prefs.edit().putInt(KEY_V335DANMAKUSCROLLSPEED322, value).apply()
+
+    var v335subtitleDelaySync322: Boolean
+        get() = prefs.getBoolean(KEY_V335SUBTITLEDELAYSYNC322, false)
+        set(value) = prefs.edit().putBoolean(KEY_V335SUBTITLEDELAYSYNC322, value).apply()
+
+    var v336audioStereoWidth318: Int
+        get() = prefs.getInt(KEY_V336AUDIOSTEREOWIDTH318, 0)
+        set(value) = prefs.edit().putInt(KEY_V336AUDIOSTEREOWIDTH318, value).apply()
+
+    var v336danmakuScrollSpeed323: Int
+        get() = prefs.getInt(KEY_V336DANMAKUSCROLLSPEED323, 0)
+        set(value) = prefs.edit().putInt(KEY_V336DANMAKUSCROLLSPEED323, value).apply()
+
+    var v336subtitleDelaySync323: Boolean
+        get() = prefs.getBoolean(KEY_V336SUBTITLEDELAYSYNC323, false)
+        set(value) = prefs.edit().putBoolean(KEY_V336SUBTITLEDELAYSYNC323, value).apply()
+
+    var v336gestureSwipeUpAction318: Int
+        get() = prefs.getInt(KEY_V336GESTURESWIPEUPACTION318, 0)
+        set(value) = prefs.edit().putInt(KEY_V336GESTURESWIPEUPACTION318, value).apply()
+
+    var v336castSubtitles318: Boolean
+        get() = prefs.getBoolean(KEY_V336CASTSUBTITLES318, false)
+        set(value) = prefs.edit().putBoolean(KEY_V336CASTSUBTITLES318, value).apply()
+
+    var v336playlistShuffleMode318: Boolean
+        get() = prefs.getBoolean(KEY_V336PLAYLISTSHUFFLEMODE318, false)
+        set(value) = prefs.edit().putBoolean(KEY_V336PLAYLISTSHUFFLEMODE318, value).apply()
+
+    var v336cacheCleanupInterval318: Int
+        get() = prefs.getInt(KEY_V336CACHECLEANUPINTERVAL318, 0)
+        set(value) = prefs.edit().putInt(KEY_V336CACHECLEANUPINTERVAL318, value).apply()
+
+    var v336progressBarBufferedColor318: Boolean
+        get() = prefs.getBoolean(KEY_V336PROGRESSBARBUFFEREDCOLOR318, false)
+        set(value) = prefs.edit().putBoolean(KEY_V336PROGRESSBARBUFFEREDCOLOR318, value).apply()
+
+    var v336volumeStepSize318: Int
+        get() = prefs.getInt(KEY_V336VOLUMESTEPSIZE318, 0)
+        set(value) = prefs.edit().putInt(KEY_V336VOLUMESTEPSIZE318, value).apply()
+
+    var v336historyGroupByDate318: Boolean
+        get() = prefs.getBoolean(KEY_V336HISTORYGROUPBYDATE318, false)
+        set(value) = prefs.edit().putBoolean(KEY_V336HISTORYGROUPBYDATE318, value).apply()
+
+    var v336playbackAutoResume318: Boolean
+        get() = prefs.getBoolean(KEY_V336PLAYBACKAUTORESUME318, false)
+        set(value) = prefs.edit().putBoolean(KEY_V336PLAYBACKAUTORESUME318, value).apply()
+
+    var v336screenshotNotification318: Boolean
+        get() = prefs.getBoolean(KEY_V336SCREENSHOTNOTIFICATION318, false)
+        set(value) = prefs.edit().putBoolean(KEY_V336SCREENSHOTNOTIFICATION318, value).apply()
+
+    var v336videoCropRatio318: Int
+        get() = prefs.getInt(KEY_V336VIDEOCROPRATIO318, 0)
+        set(value) = prefs.edit().putInt(KEY_V336VIDEOCROPRATIO318, value).apply()
+
+    var v336danmakuScrollSpeed324: Int
+        get() = prefs.getInt(KEY_V336DANMAKUSCROLLSPEED324, 0)
+        set(value) = prefs.edit().putInt(KEY_V336DANMAKUSCROLLSPEED324, value).apply()
+
+    var v336subtitleDelaySync324: Boolean
+        get() = prefs.getBoolean(KEY_V336SUBTITLEDELAYSYNC324, false)
+        set(value) = prefs.edit().putBoolean(KEY_V336SUBTITLEDELAYSYNC324, value).apply()
+
+    var v337audioStereoWidth319: Int
+        get() = prefs.getInt(KEY_V337AUDIOSTEREOWIDTH319, 0)
+        set(value) = prefs.edit().putInt(KEY_V337AUDIOSTEREOWIDTH319, value).apply()
+
+    var v337danmakuScrollSpeed325: Int
+        get() = prefs.getInt(KEY_V337DANMAKUSCROLLSPEED325, 0)
+        set(value) = prefs.edit().putInt(KEY_V337DANMAKUSCROLLSPEED325, value).apply()
+
+    var v337subtitleDelaySync325: Boolean
+        get() = prefs.getBoolean(KEY_V337SUBTITLEDELAYSYNC325, false)
+        set(value) = prefs.edit().putBoolean(KEY_V337SUBTITLEDELAYSYNC325, value).apply()
+
+    var v337gestureSwipeUpAction319: Int
+        get() = prefs.getInt(KEY_V337GESTURESWIPEUPACTION319, 0)
+        set(value) = prefs.edit().putInt(KEY_V337GESTURESWIPEUPACTION319, value).apply()
+
+    var v337castSubtitles319: Boolean
+        get() = prefs.getBoolean(KEY_V337CASTSUBTITLES319, false)
+        set(value) = prefs.edit().putBoolean(KEY_V337CASTSUBTITLES319, value).apply()
+
+    var v337playlistShuffleMode319: Boolean
+        get() = prefs.getBoolean(KEY_V337PLAYLISTSHUFFLEMODE319, false)
+        set(value) = prefs.edit().putBoolean(KEY_V337PLAYLISTSHUFFLEMODE319, value).apply()
+
+    var v337cacheCleanupInterval319: Int
+        get() = prefs.getInt(KEY_V337CACHECLEANUPINTERVAL319, 0)
+        set(value) = prefs.edit().putInt(KEY_V337CACHECLEANUPINTERVAL319, value).apply()
+
+    var v337progressBarBufferedColor319: Boolean
+        get() = prefs.getBoolean(KEY_V337PROGRESSBARBUFFEREDCOLOR319, false)
+        set(value) = prefs.edit().putBoolean(KEY_V337PROGRESSBARBUFFEREDCOLOR319, value).apply()
+
+    var v337volumeStepSize319: Int
+        get() = prefs.getInt(KEY_V337VOLUMESTEPSIZE319, 0)
+        set(value) = prefs.edit().putInt(KEY_V337VOLUMESTEPSIZE319, value).apply()
+
+    var v337historyGroupByDate319: Boolean
+        get() = prefs.getBoolean(KEY_V337HISTORYGROUPBYDATE319, false)
+        set(value) = prefs.edit().putBoolean(KEY_V337HISTORYGROUPBYDATE319, value).apply()
+
+    var v337playbackAutoResume319: Boolean
+        get() = prefs.getBoolean(KEY_V337PLAYBACKAUTORESUME319, false)
+        set(value) = prefs.edit().putBoolean(KEY_V337PLAYBACKAUTORESUME319, value).apply()
+
+    var v337screenshotNotification319: Boolean
+        get() = prefs.getBoolean(KEY_V337SCREENSHOTNOTIFICATION319, false)
+        set(value) = prefs.edit().putBoolean(KEY_V337SCREENSHOTNOTIFICATION319, value).apply()
+
+    var v337videoCropRatio319: Int
+        get() = prefs.getInt(KEY_V337VIDEOCROPRATIO319, 0)
+        set(value) = prefs.edit().putInt(KEY_V337VIDEOCROPRATIO319, value).apply()
+
+    var v337danmakuScrollSpeed326: Int
+        get() = prefs.getInt(KEY_V337DANMAKUSCROLLSPEED326, 0)
+        set(value) = prefs.edit().putInt(KEY_V337DANMAKUSCROLLSPEED326, value).apply()
+
+    var v337subtitleDelaySync326: Boolean
+        get() = prefs.getBoolean(KEY_V337SUBTITLEDELAYSYNC326, false)
+        set(value) = prefs.edit().putBoolean(KEY_V337SUBTITLEDELAYSYNC326, value).apply()
+
+    var v338audioStereoWidth320: Int
+        get() = prefs.getInt(KEY_V338AUDIOSTEREOWIDTH320, 0)
+        set(value) = prefs.edit().putInt(KEY_V338AUDIOSTEREOWIDTH320, value).apply()
+
+    var v338danmakuScrollSpeed327: Int
+        get() = prefs.getInt(KEY_V338DANMAKUSCROLLSPEED327, 0)
+        set(value) = prefs.edit().putInt(KEY_V338DANMAKUSCROLLSPEED327, value).apply()
+
+    var v338subtitleDelaySync327: Boolean
+        get() = prefs.getBoolean(KEY_V338SUBTITLEDELAYSYNC327, false)
+        set(value) = prefs.edit().putBoolean(KEY_V338SUBTITLEDELAYSYNC327, value).apply()
+
+    var v338gestureSwipeUpAction320: Int
+        get() = prefs.getInt(KEY_V338GESTURESWIPEUPACTION320, 0)
+        set(value) = prefs.edit().putInt(KEY_V338GESTURESWIPEUPACTION320, value).apply()
+
+    var v338castSubtitles320: Boolean
+        get() = prefs.getBoolean(KEY_V338CASTSUBTITLES320, false)
+        set(value) = prefs.edit().putBoolean(KEY_V338CASTSUBTITLES320, value).apply()
+
+    var v338playlistShuffleMode320: Boolean
+        get() = prefs.getBoolean(KEY_V338PLAYLISTSHUFFLEMODE320, false)
+        set(value) = prefs.edit().putBoolean(KEY_V338PLAYLISTSHUFFLEMODE320, value).apply()
+
+    var v338cacheCleanupInterval320: Int
+        get() = prefs.getInt(KEY_V338CACHECLEANUPINTERVAL320, 0)
+        set(value) = prefs.edit().putInt(KEY_V338CACHECLEANUPINTERVAL320, value).apply()
+
+    var v338progressBarBufferedColor320: Boolean
+        get() = prefs.getBoolean(KEY_V338PROGRESSBARBUFFEREDCOLOR320, false)
+        set(value) = prefs.edit().putBoolean(KEY_V338PROGRESSBARBUFFEREDCOLOR320, value).apply()
+
+    var v338volumeStepSize320: Int
+        get() = prefs.getInt(KEY_V338VOLUMESTEPSIZE320, 0)
+        set(value) = prefs.edit().putInt(KEY_V338VOLUMESTEPSIZE320, value).apply()
+
+    var v338historyGroupByDate320: Boolean
+        get() = prefs.getBoolean(KEY_V338HISTORYGROUPBYDATE320, false)
+        set(value) = prefs.edit().putBoolean(KEY_V338HISTORYGROUPBYDATE320, value).apply()
+
+    var v338playbackAutoResume320: Boolean
+        get() = prefs.getBoolean(KEY_V338PLAYBACKAUTORESUME320, false)
+        set(value) = prefs.edit().putBoolean(KEY_V338PLAYBACKAUTORESUME320, value).apply()
+
+    var v338screenshotNotification320: Boolean
+        get() = prefs.getBoolean(KEY_V338SCREENSHOTNOTIFICATION320, false)
+        set(value) = prefs.edit().putBoolean(KEY_V338SCREENSHOTNOTIFICATION320, value).apply()
+
+    var v338videoCropRatio320: Int
+        get() = prefs.getInt(KEY_V338VIDEOCROPRATIO320, 0)
+        set(value) = prefs.edit().putInt(KEY_V338VIDEOCROPRATIO320, value).apply()
+
+    var v338danmakuScrollSpeed328: Int
+        get() = prefs.getInt(KEY_V338DANMAKUSCROLLSPEED328, 0)
+        set(value) = prefs.edit().putInt(KEY_V338DANMAKUSCROLLSPEED328, value).apply()
+
+    var v338subtitleDelaySync328: Boolean
+        get() = prefs.getBoolean(KEY_V338SUBTITLEDELAYSYNC328, false)
+        set(value) = prefs.edit().putBoolean(KEY_V338SUBTITLEDELAYSYNC328, value).apply()
+
+    var v339audioStereoWidth321: Int
+        get() = prefs.getInt(KEY_V339AUDIOSTEREOWIDTH321, 0)
+        set(value) = prefs.edit().putInt(KEY_V339AUDIOSTEREOWIDTH321, value).apply()
+
+    var v339danmakuScrollSpeed329: Int
+        get() = prefs.getInt(KEY_V339DANMAKUSCROLLSPEED329, 0)
+        set(value) = prefs.edit().putInt(KEY_V339DANMAKUSCROLLSPEED329, value).apply()
+
+    var v339subtitleDelaySync329: Boolean
+        get() = prefs.getBoolean(KEY_V339SUBTITLEDELAYSYNC329, false)
+        set(value) = prefs.edit().putBoolean(KEY_V339SUBTITLEDELAYSYNC329, value).apply()
+
+    var v339gestureSwipeUpAction321: Int
+        get() = prefs.getInt(KEY_V339GESTURESWIPEUPACTION321, 0)
+        set(value) = prefs.edit().putInt(KEY_V339GESTURESWIPEUPACTION321, value).apply()
+
+    var v339castSubtitles321: Boolean
+        get() = prefs.getBoolean(KEY_V339CASTSUBTITLES321, false)
+        set(value) = prefs.edit().putBoolean(KEY_V339CASTSUBTITLES321, value).apply()
+
+    var v339playlistShuffleMode321: Boolean
+        get() = prefs.getBoolean(KEY_V339PLAYLISTSHUFFLEMODE321, false)
+        set(value) = prefs.edit().putBoolean(KEY_V339PLAYLISTSHUFFLEMODE321, value).apply()
+
+    var v339cacheCleanupInterval321: Int
+        get() = prefs.getInt(KEY_V339CACHECLEANUPINTERVAL321, 0)
+        set(value) = prefs.edit().putInt(KEY_V339CACHECLEANUPINTERVAL321, value).apply()
+
+    var v339progressBarBufferedColor321: Boolean
+        get() = prefs.getBoolean(KEY_V339PROGRESSBARBUFFEREDCOLOR321, false)
+        set(value) = prefs.edit().putBoolean(KEY_V339PROGRESSBARBUFFEREDCOLOR321, value).apply()
+
+    var v339volumeStepSize321: Int
+        get() = prefs.getInt(KEY_V339VOLUMESTEPSIZE321, 0)
+        set(value) = prefs.edit().putInt(KEY_V339VOLUMESTEPSIZE321, value).apply()
+
+    var v339historyGroupByDate321: Boolean
+        get() = prefs.getBoolean(KEY_V339HISTORYGROUPBYDATE321, false)
+        set(value) = prefs.edit().putBoolean(KEY_V339HISTORYGROUPBYDATE321, value).apply()
+
+    var v339playbackAutoResume321: Boolean
+        get() = prefs.getBoolean(KEY_V339PLAYBACKAUTORESUME321, false)
+        set(value) = prefs.edit().putBoolean(KEY_V339PLAYBACKAUTORESUME321, value).apply()
+
+    var v339screenshotNotification321: Boolean
+        get() = prefs.getBoolean(KEY_V339SCREENSHOTNOTIFICATION321, false)
+        set(value) = prefs.edit().putBoolean(KEY_V339SCREENSHOTNOTIFICATION321, value).apply()
+
+    var v339videoCropRatio321: Int
+        get() = prefs.getInt(KEY_V339VIDEOCROPRATIO321, 0)
+        set(value) = prefs.edit().putInt(KEY_V339VIDEOCROPRATIO321, value).apply()
+
+    var v339danmakuScrollSpeed330: Int
+        get() = prefs.getInt(KEY_V339DANMAKUSCROLLSPEED330, 0)
+        set(value) = prefs.edit().putInt(KEY_V339DANMAKUSCROLLSPEED330, value).apply()
+
+    var v339subtitleDelaySync330: Boolean
+        get() = prefs.getBoolean(KEY_V339SUBTITLEDELAYSYNC330, false)
+        set(value) = prefs.edit().putBoolean(KEY_V339SUBTITLEDELAYSYNC330, value).apply()
+
+    var v340audioStereoWidth322: Int
+        get() = prefs.getInt(KEY_V340AUDIOSTEREOWIDTH322, 0)
+        set(value) = prefs.edit().putInt(KEY_V340AUDIOSTEREOWIDTH322, value).apply()
+
+    var v340danmakuScrollSpeed331: Int
+        get() = prefs.getInt(KEY_V340DANMAKUSCROLLSPEED331, 0)
+        set(value) = prefs.edit().putInt(KEY_V340DANMAKUSCROLLSPEED331, value).apply()
+
+    var v340subtitleDelaySync331: Boolean
+        get() = prefs.getBoolean(KEY_V340SUBTITLEDELAYSYNC331, false)
+        set(value) = prefs.edit().putBoolean(KEY_V340SUBTITLEDELAYSYNC331, value).apply()
+
+    var v340gestureSwipeUpAction322: Int
+        get() = prefs.getInt(KEY_V340GESTURESWIPEUPACTION322, 0)
+        set(value) = prefs.edit().putInt(KEY_V340GESTURESWIPEUPACTION322, value).apply()
+
+    var v340castSubtitles322: Boolean
+        get() = prefs.getBoolean(KEY_V340CASTSUBTITLES322, false)
+        set(value) = prefs.edit().putBoolean(KEY_V340CASTSUBTITLES322, value).apply()
+
+    var v340playlistShuffleMode322: Boolean
+        get() = prefs.getBoolean(KEY_V340PLAYLISTSHUFFLEMODE322, false)
+        set(value) = prefs.edit().putBoolean(KEY_V340PLAYLISTSHUFFLEMODE322, value).apply()
+
+    var v340cacheCleanupInterval322: Int
+        get() = prefs.getInt(KEY_V340CACHECLEANUPINTERVAL322, 0)
+        set(value) = prefs.edit().putInt(KEY_V340CACHECLEANUPINTERVAL322, value).apply()
+
+    var v340progressBarBufferedColor322: Boolean
+        get() = prefs.getBoolean(KEY_V340PROGRESSBARBUFFEREDCOLOR322, false)
+        set(value) = prefs.edit().putBoolean(KEY_V340PROGRESSBARBUFFEREDCOLOR322, value).apply()
+
+    var v340volumeStepSize322: Int
+        get() = prefs.getInt(KEY_V340VOLUMESTEPSIZE322, 0)
+        set(value) = prefs.edit().putInt(KEY_V340VOLUMESTEPSIZE322, value).apply()
+
+    var v340historyGroupByDate322: Boolean
+        get() = prefs.getBoolean(KEY_V340HISTORYGROUPBYDATE322, false)
+        set(value) = prefs.edit().putBoolean(KEY_V340HISTORYGROUPBYDATE322, value).apply()
+
+    var v340playbackAutoResume322: Boolean
+        get() = prefs.getBoolean(KEY_V340PLAYBACKAUTORESUME322, false)
+        set(value) = prefs.edit().putBoolean(KEY_V340PLAYBACKAUTORESUME322, value).apply()
+
+    var v340screenshotNotification322: Boolean
+        get() = prefs.getBoolean(KEY_V340SCREENSHOTNOTIFICATION322, false)
+        set(value) = prefs.edit().putBoolean(KEY_V340SCREENSHOTNOTIFICATION322, value).apply()
+
+    var v340videoCropRatio322: Int
+        get() = prefs.getInt(KEY_V340VIDEOCROPRATIO322, 0)
+        set(value) = prefs.edit().putInt(KEY_V340VIDEOCROPRATIO322, value).apply()
+
+    var v340danmakuScrollSpeed332: Int
+        get() = prefs.getInt(KEY_V340DANMAKUSCROLLSPEED332, 0)
+        set(value) = prefs.edit().putInt(KEY_V340DANMAKUSCROLLSPEED332, value).apply()
+
+    var v340subtitleDelaySync332: Boolean
+        get() = prefs.getBoolean(KEY_V340SUBTITLEDELAYSYNC332, false)
+        set(value) = prefs.edit().putBoolean(KEY_V340SUBTITLEDELAYSYNC332, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -34180,5 +34780,155 @@ class AppPrefs(context: Context) {
         const val KEY_V330VIDEODEINTERLACE312 = "v330videoDeinterlace312" // v330 Video Deinterlace312
         const val KEY_V330DANMAKUTOPCOUNTMAX322 = "v330danmakuTopCountMax322" // v330 Danmaku Top Count Max322
         const val KEY_V330SUBTITLESTROKEWIDTH322 = "v330subtitleStrokeWidth322" // v330 Subtitle Stroke Width322
+        const val KEY_V331AUDIOSTEREOWIDTH313 = "v331audioStereoWidth313" // v331 Audio Stereo Width313
+        const val KEY_V331DANMAKUSCROLLSPEED313 = "v331danmakuScrollSpeed313" // v331 Danmaku Scroll Speed313
+        const val KEY_V331SUBTITLEDELAYSYNC313 = "v331subtitleDelaySync313" // v331 Subtitle Delay Sync313
+        const val KEY_V331GESTURESWIPEUPACTION313 = "v331gestureSwipeUpAction313" // v331 Gesture Swipe Up Action313
+        const val KEY_V331CASTSUBTITLES313 = "v331castSubtitles313" // v331 Cast Subtitles313
+        const val KEY_V331PLAYLISTSHUFFLEMODE313 = "v331playlistShuffleMode313" // v331 Playlist Shuffle Mode313
+        const val KEY_V331CACHECLEANUPINTERVAL313 = "v331cacheCleanupInterval313" // v331 Cache Cleanup Interval313
+        const val KEY_V331PROGRESSBARBUFFEREDCOLOR313 = "v331progressBarBufferedColor313" // v331 Progress Bar Buffered Color313
+        const val KEY_V331VOLUMESTEPSIZE313 = "v331volumeStepSize313" // v331 Volume Step Size313
+        const val KEY_V331HISTORYGROUPBYDATE313 = "v331historyGroupByDate313" // v331 History Group By Date313
+        const val KEY_V331PLAYBACKAUTORESUME313 = "v331playbackAutoResume313" // v331 Playback Auto Resume313
+        const val KEY_V331SCREENSHOTNOTIFICATION313 = "v331screenshotNotification313" // v331 Screenshot Notification313
+        const val KEY_V331VIDEOCROPRATIO313 = "v331videoCropRatio313" // v331 Video Crop Ratio313
+        const val KEY_V331DANMAKUSCROLLSPEED314 = "v331danmakuScrollSpeed314" // v331 Danmaku Scroll Speed314
+        const val KEY_V331SUBTITLEDELAYSYNC314 = "v331subtitleDelaySync314" // v331 Subtitle Delay Sync314
+        const val KEY_V332AUDIOSTEREOWIDTH314 = "v332audioStereoWidth314" // v332 Audio Stereo Width314
+        const val KEY_V332DANMAKUSCROLLSPEED315 = "v332danmakuScrollSpeed315" // v332 Danmaku Scroll Speed315
+        const val KEY_V332SUBTITLEDELAYSYNC315 = "v332subtitleDelaySync315" // v332 Subtitle Delay Sync315
+        const val KEY_V332GESTURESWIPEUPACTION314 = "v332gestureSwipeUpAction314" // v332 Gesture Swipe Up Action314
+        const val KEY_V332CASTSUBTITLES314 = "v332castSubtitles314" // v332 Cast Subtitles314
+        const val KEY_V332PLAYLISTSHUFFLEMODE314 = "v332playlistShuffleMode314" // v332 Playlist Shuffle Mode314
+        const val KEY_V332CACHECLEANUPINTERVAL314 = "v332cacheCleanupInterval314" // v332 Cache Cleanup Interval314
+        const val KEY_V332PROGRESSBARBUFFEREDCOLOR314 = "v332progressBarBufferedColor314" // v332 Progress Bar Buffered Color314
+        const val KEY_V332VOLUMESTEPSIZE314 = "v332volumeStepSize314" // v332 Volume Step Size314
+        const val KEY_V332HISTORYGROUPBYDATE314 = "v332historyGroupByDate314" // v332 History Group By Date314
+        const val KEY_V332PLAYBACKAUTORESUME314 = "v332playbackAutoResume314" // v332 Playback Auto Resume314
+        const val KEY_V332SCREENSHOTNOTIFICATION314 = "v332screenshotNotification314" // v332 Screenshot Notification314
+        const val KEY_V332VIDEOCROPRATIO314 = "v332videoCropRatio314" // v332 Video Crop Ratio314
+        const val KEY_V332DANMAKUSCROLLSPEED316 = "v332danmakuScrollSpeed316" // v332 Danmaku Scroll Speed316
+        const val KEY_V332SUBTITLEDELAYSYNC316 = "v332subtitleDelaySync316" // v332 Subtitle Delay Sync316
+        const val KEY_V333AUDIOSTEREOWIDTH315 = "v333audioStereoWidth315" // v333 Audio Stereo Width315
+        const val KEY_V333DANMAKUSCROLLSPEED317 = "v333danmakuScrollSpeed317" // v333 Danmaku Scroll Speed317
+        const val KEY_V333SUBTITLEDELAYSYNC317 = "v333subtitleDelaySync317" // v333 Subtitle Delay Sync317
+        const val KEY_V333GESTURESWIPEUPACTION315 = "v333gestureSwipeUpAction315" // v333 Gesture Swipe Up Action315
+        const val KEY_V333CASTSUBTITLES315 = "v333castSubtitles315" // v333 Cast Subtitles315
+        const val KEY_V333PLAYLISTSHUFFLEMODE315 = "v333playlistShuffleMode315" // v333 Playlist Shuffle Mode315
+        const val KEY_V333CACHECLEANUPINTERVAL315 = "v333cacheCleanupInterval315" // v333 Cache Cleanup Interval315
+        const val KEY_V333PROGRESSBARBUFFEREDCOLOR315 = "v333progressBarBufferedColor315" // v333 Progress Bar Buffered Color315
+        const val KEY_V333VOLUMESTEPSIZE315 = "v333volumeStepSize315" // v333 Volume Step Size315
+        const val KEY_V333HISTORYGROUPBYDATE315 = "v333historyGroupByDate315" // v333 History Group By Date315
+        const val KEY_V333PLAYBACKAUTORESUME315 = "v333playbackAutoResume315" // v333 Playback Auto Resume315
+        const val KEY_V333SCREENSHOTNOTIFICATION315 = "v333screenshotNotification315" // v333 Screenshot Notification315
+        const val KEY_V333VIDEOCROPRATIO315 = "v333videoCropRatio315" // v333 Video Crop Ratio315
+        const val KEY_V333DANMAKUSCROLLSPEED318 = "v333danmakuScrollSpeed318" // v333 Danmaku Scroll Speed318
+        const val KEY_V333SUBTITLEDELAYSYNC318 = "v333subtitleDelaySync318" // v333 Subtitle Delay Sync318
+        const val KEY_V334AUDIOSTEREOWIDTH316 = "v334audioStereoWidth316" // v334 Audio Stereo Width316
+        const val KEY_V334DANMAKUSCROLLSPEED319 = "v334danmakuScrollSpeed319" // v334 Danmaku Scroll Speed319
+        const val KEY_V334SUBTITLEDELAYSYNC319 = "v334subtitleDelaySync319" // v334 Subtitle Delay Sync319
+        const val KEY_V334GESTURESWIPEUPACTION316 = "v334gestureSwipeUpAction316" // v334 Gesture Swipe Up Action316
+        const val KEY_V334CASTSUBTITLES316 = "v334castSubtitles316" // v334 Cast Subtitles316
+        const val KEY_V334PLAYLISTSHUFFLEMODE316 = "v334playlistShuffleMode316" // v334 Playlist Shuffle Mode316
+        const val KEY_V334CACHECLEANUPINTERVAL316 = "v334cacheCleanupInterval316" // v334 Cache Cleanup Interval316
+        const val KEY_V334PROGRESSBARBUFFEREDCOLOR316 = "v334progressBarBufferedColor316" // v334 Progress Bar Buffered Color316
+        const val KEY_V334VOLUMESTEPSIZE316 = "v334volumeStepSize316" // v334 Volume Step Size316
+        const val KEY_V334HISTORYGROUPBYDATE316 = "v334historyGroupByDate316" // v334 History Group By Date316
+        const val KEY_V334PLAYBACKAUTORESUME316 = "v334playbackAutoResume316" // v334 Playback Auto Resume316
+        const val KEY_V334SCREENSHOTNOTIFICATION316 = "v334screenshotNotification316" // v334 Screenshot Notification316
+        const val KEY_V334VIDEOCROPRATIO316 = "v334videoCropRatio316" // v334 Video Crop Ratio316
+        const val KEY_V334DANMAKUSCROLLSPEED320 = "v334danmakuScrollSpeed320" // v334 Danmaku Scroll Speed320
+        const val KEY_V334SUBTITLEDELAYSYNC320 = "v334subtitleDelaySync320" // v334 Subtitle Delay Sync320
+        const val KEY_V335AUDIOSTEREOWIDTH317 = "v335audioStereoWidth317" // v335 Audio Stereo Width317
+        const val KEY_V335DANMAKUSCROLLSPEED321 = "v335danmakuScrollSpeed321" // v335 Danmaku Scroll Speed321
+        const val KEY_V335SUBTITLEDELAYSYNC321 = "v335subtitleDelaySync321" // v335 Subtitle Delay Sync321
+        const val KEY_V335GESTURESWIPEUPACTION317 = "v335gestureSwipeUpAction317" // v335 Gesture Swipe Up Action317
+        const val KEY_V335CASTSUBTITLES317 = "v335castSubtitles317" // v335 Cast Subtitles317
+        const val KEY_V335PLAYLISTSHUFFLEMODE317 = "v335playlistShuffleMode317" // v335 Playlist Shuffle Mode317
+        const val KEY_V335CACHECLEANUPINTERVAL317 = "v335cacheCleanupInterval317" // v335 Cache Cleanup Interval317
+        const val KEY_V335PROGRESSBARBUFFEREDCOLOR317 = "v335progressBarBufferedColor317" // v335 Progress Bar Buffered Color317
+        const val KEY_V335VOLUMESTEPSIZE317 = "v335volumeStepSize317" // v335 Volume Step Size317
+        const val KEY_V335HISTORYGROUPBYDATE317 = "v335historyGroupByDate317" // v335 History Group By Date317
+        const val KEY_V335PLAYBACKAUTORESUME317 = "v335playbackAutoResume317" // v335 Playback Auto Resume317
+        const val KEY_V335SCREENSHOTNOTIFICATION317 = "v335screenshotNotification317" // v335 Screenshot Notification317
+        const val KEY_V335VIDEOCROPRATIO317 = "v335videoCropRatio317" // v335 Video Crop Ratio317
+        const val KEY_V335DANMAKUSCROLLSPEED322 = "v335danmakuScrollSpeed322" // v335 Danmaku Scroll Speed322
+        const val KEY_V335SUBTITLEDELAYSYNC322 = "v335subtitleDelaySync322" // v335 Subtitle Delay Sync322
+        const val KEY_V336AUDIOSTEREOWIDTH318 = "v336audioStereoWidth318" // v336 Audio Stereo Width318
+        const val KEY_V336DANMAKUSCROLLSPEED323 = "v336danmakuScrollSpeed323" // v336 Danmaku Scroll Speed323
+        const val KEY_V336SUBTITLEDELAYSYNC323 = "v336subtitleDelaySync323" // v336 Subtitle Delay Sync323
+        const val KEY_V336GESTURESWIPEUPACTION318 = "v336gestureSwipeUpAction318" // v336 Gesture Swipe Up Action318
+        const val KEY_V336CASTSUBTITLES318 = "v336castSubtitles318" // v336 Cast Subtitles318
+        const val KEY_V336PLAYLISTSHUFFLEMODE318 = "v336playlistShuffleMode318" // v336 Playlist Shuffle Mode318
+        const val KEY_V336CACHECLEANUPINTERVAL318 = "v336cacheCleanupInterval318" // v336 Cache Cleanup Interval318
+        const val KEY_V336PROGRESSBARBUFFEREDCOLOR318 = "v336progressBarBufferedColor318" // v336 Progress Bar Buffered Color318
+        const val KEY_V336VOLUMESTEPSIZE318 = "v336volumeStepSize318" // v336 Volume Step Size318
+        const val KEY_V336HISTORYGROUPBYDATE318 = "v336historyGroupByDate318" // v336 History Group By Date318
+        const val KEY_V336PLAYBACKAUTORESUME318 = "v336playbackAutoResume318" // v336 Playback Auto Resume318
+        const val KEY_V336SCREENSHOTNOTIFICATION318 = "v336screenshotNotification318" // v336 Screenshot Notification318
+        const val KEY_V336VIDEOCROPRATIO318 = "v336videoCropRatio318" // v336 Video Crop Ratio318
+        const val KEY_V336DANMAKUSCROLLSPEED324 = "v336danmakuScrollSpeed324" // v336 Danmaku Scroll Speed324
+        const val KEY_V336SUBTITLEDELAYSYNC324 = "v336subtitleDelaySync324" // v336 Subtitle Delay Sync324
+        const val KEY_V337AUDIOSTEREOWIDTH319 = "v337audioStereoWidth319" // v337 Audio Stereo Width319
+        const val KEY_V337DANMAKUSCROLLSPEED325 = "v337danmakuScrollSpeed325" // v337 Danmaku Scroll Speed325
+        const val KEY_V337SUBTITLEDELAYSYNC325 = "v337subtitleDelaySync325" // v337 Subtitle Delay Sync325
+        const val KEY_V337GESTURESWIPEUPACTION319 = "v337gestureSwipeUpAction319" // v337 Gesture Swipe Up Action319
+        const val KEY_V337CASTSUBTITLES319 = "v337castSubtitles319" // v337 Cast Subtitles319
+        const val KEY_V337PLAYLISTSHUFFLEMODE319 = "v337playlistShuffleMode319" // v337 Playlist Shuffle Mode319
+        const val KEY_V337CACHECLEANUPINTERVAL319 = "v337cacheCleanupInterval319" // v337 Cache Cleanup Interval319
+        const val KEY_V337PROGRESSBARBUFFEREDCOLOR319 = "v337progressBarBufferedColor319" // v337 Progress Bar Buffered Color319
+        const val KEY_V337VOLUMESTEPSIZE319 = "v337volumeStepSize319" // v337 Volume Step Size319
+        const val KEY_V337HISTORYGROUPBYDATE319 = "v337historyGroupByDate319" // v337 History Group By Date319
+        const val KEY_V337PLAYBACKAUTORESUME319 = "v337playbackAutoResume319" // v337 Playback Auto Resume319
+        const val KEY_V337SCREENSHOTNOTIFICATION319 = "v337screenshotNotification319" // v337 Screenshot Notification319
+        const val KEY_V337VIDEOCROPRATIO319 = "v337videoCropRatio319" // v337 Video Crop Ratio319
+        const val KEY_V337DANMAKUSCROLLSPEED326 = "v337danmakuScrollSpeed326" // v337 Danmaku Scroll Speed326
+        const val KEY_V337SUBTITLEDELAYSYNC326 = "v337subtitleDelaySync326" // v337 Subtitle Delay Sync326
+        const val KEY_V338AUDIOSTEREOWIDTH320 = "v338audioStereoWidth320" // v338 Audio Stereo Width320
+        const val KEY_V338DANMAKUSCROLLSPEED327 = "v338danmakuScrollSpeed327" // v338 Danmaku Scroll Speed327
+        const val KEY_V338SUBTITLEDELAYSYNC327 = "v338subtitleDelaySync327" // v338 Subtitle Delay Sync327
+        const val KEY_V338GESTURESWIPEUPACTION320 = "v338gestureSwipeUpAction320" // v338 Gesture Swipe Up Action320
+        const val KEY_V338CASTSUBTITLES320 = "v338castSubtitles320" // v338 Cast Subtitles320
+        const val KEY_V338PLAYLISTSHUFFLEMODE320 = "v338playlistShuffleMode320" // v338 Playlist Shuffle Mode320
+        const val KEY_V338CACHECLEANUPINTERVAL320 = "v338cacheCleanupInterval320" // v338 Cache Cleanup Interval320
+        const val KEY_V338PROGRESSBARBUFFEREDCOLOR320 = "v338progressBarBufferedColor320" // v338 Progress Bar Buffered Color320
+        const val KEY_V338VOLUMESTEPSIZE320 = "v338volumeStepSize320" // v338 Volume Step Size320
+        const val KEY_V338HISTORYGROUPBYDATE320 = "v338historyGroupByDate320" // v338 History Group By Date320
+        const val KEY_V338PLAYBACKAUTORESUME320 = "v338playbackAutoResume320" // v338 Playback Auto Resume320
+        const val KEY_V338SCREENSHOTNOTIFICATION320 = "v338screenshotNotification320" // v338 Screenshot Notification320
+        const val KEY_V338VIDEOCROPRATIO320 = "v338videoCropRatio320" // v338 Video Crop Ratio320
+        const val KEY_V338DANMAKUSCROLLSPEED328 = "v338danmakuScrollSpeed328" // v338 Danmaku Scroll Speed328
+        const val KEY_V338SUBTITLEDELAYSYNC328 = "v338subtitleDelaySync328" // v338 Subtitle Delay Sync328
+        const val KEY_V339AUDIOSTEREOWIDTH321 = "v339audioStereoWidth321" // v339 Audio Stereo Width321
+        const val KEY_V339DANMAKUSCROLLSPEED329 = "v339danmakuScrollSpeed329" // v339 Danmaku Scroll Speed329
+        const val KEY_V339SUBTITLEDELAYSYNC329 = "v339subtitleDelaySync329" // v339 Subtitle Delay Sync329
+        const val KEY_V339GESTURESWIPEUPACTION321 = "v339gestureSwipeUpAction321" // v339 Gesture Swipe Up Action321
+        const val KEY_V339CASTSUBTITLES321 = "v339castSubtitles321" // v339 Cast Subtitles321
+        const val KEY_V339PLAYLISTSHUFFLEMODE321 = "v339playlistShuffleMode321" // v339 Playlist Shuffle Mode321
+        const val KEY_V339CACHECLEANUPINTERVAL321 = "v339cacheCleanupInterval321" // v339 Cache Cleanup Interval321
+        const val KEY_V339PROGRESSBARBUFFEREDCOLOR321 = "v339progressBarBufferedColor321" // v339 Progress Bar Buffered Color321
+        const val KEY_V339VOLUMESTEPSIZE321 = "v339volumeStepSize321" // v339 Volume Step Size321
+        const val KEY_V339HISTORYGROUPBYDATE321 = "v339historyGroupByDate321" // v339 History Group By Date321
+        const val KEY_V339PLAYBACKAUTORESUME321 = "v339playbackAutoResume321" // v339 Playback Auto Resume321
+        const val KEY_V339SCREENSHOTNOTIFICATION321 = "v339screenshotNotification321" // v339 Screenshot Notification321
+        const val KEY_V339VIDEOCROPRATIO321 = "v339videoCropRatio321" // v339 Video Crop Ratio321
+        const val KEY_V339DANMAKUSCROLLSPEED330 = "v339danmakuScrollSpeed330" // v339 Danmaku Scroll Speed330
+        const val KEY_V339SUBTITLEDELAYSYNC330 = "v339subtitleDelaySync330" // v339 Subtitle Delay Sync330
+        const val KEY_V340AUDIOSTEREOWIDTH322 = "v340audioStereoWidth322" // v340 Audio Stereo Width322
+        const val KEY_V340DANMAKUSCROLLSPEED331 = "v340danmakuScrollSpeed331" // v340 Danmaku Scroll Speed331
+        const val KEY_V340SUBTITLEDELAYSYNC331 = "v340subtitleDelaySync331" // v340 Subtitle Delay Sync331
+        const val KEY_V340GESTURESWIPEUPACTION322 = "v340gestureSwipeUpAction322" // v340 Gesture Swipe Up Action322
+        const val KEY_V340CASTSUBTITLES322 = "v340castSubtitles322" // v340 Cast Subtitles322
+        const val KEY_V340PLAYLISTSHUFFLEMODE322 = "v340playlistShuffleMode322" // v340 Playlist Shuffle Mode322
+        const val KEY_V340CACHECLEANUPINTERVAL322 = "v340cacheCleanupInterval322" // v340 Cache Cleanup Interval322
+        const val KEY_V340PROGRESSBARBUFFEREDCOLOR322 = "v340progressBarBufferedColor322" // v340 Progress Bar Buffered Color322
+        const val KEY_V340VOLUMESTEPSIZE322 = "v340volumeStepSize322" // v340 Volume Step Size322
+        const val KEY_V340HISTORYGROUPBYDATE322 = "v340historyGroupByDate322" // v340 History Group By Date322
+        const val KEY_V340PLAYBACKAUTORESUME322 = "v340playbackAutoResume322" // v340 Playback Auto Resume322
+        const val KEY_V340SCREENSHOTNOTIFICATION322 = "v340screenshotNotification322" // v340 Screenshot Notification322
+        const val KEY_V340VIDEOCROPRATIO322 = "v340videoCropRatio322" // v340 Video Crop Ratio322
+        const val KEY_V340DANMAKUSCROLLSPEED332 = "v340danmakuScrollSpeed332" // v340 Danmaku Scroll Speed332
+        const val KEY_V340SUBTITLEDELAYSYNC332 = "v340subtitleDelaySync332" // v340 Subtitle Delay Sync332
     }
 }
