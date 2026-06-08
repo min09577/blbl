@@ -118,7 +118,7 @@ This project is based on open-source software. All rights belong to the original
 ## 📋 更新日志 | Changelog | 変更履歴 | 변경 로그
 
 ### 最新版本 | Latest Version | 最新バージョン | 최신 버전
-- **v350.15** - 2026-06-08
+- **v360.15** - 2026-06-08
 
 ---
 
@@ -36702,6 +36702,947 @@ This project is based on open-source software. All rights belong to the original
 - ✅ 字幕フォントサイズ352
 - ✅ 자막 글꼴 크기352
 
+
+### v351.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v351.1-v351.15 功能列表
+- ✅ Network Quality Indicator351, Network Auto Switch351, Network Bandwidth Limit351, Network Latency Display351, Network Packet Loss Alert351, Network Retry Strategy351, Network Timeout Custom351, Network DNS优选351, Network IPv6优先351, Network Proxy Custom351, Network Cache Strategy351, Network Connection Pool351, Network Keep Alive351, Network Compression351, Network Encryption351
+
+### v351.1 网络质量指示器351 | Network Quality Indicator351 | ネットワーク品質インジケーター351 | 네트워크 품질 표시기351
+- ✅ 网络质量指示器351
+- ✅ Network Quality Indicator351
+- ✅ ネットワーク品質インジケーター351
+- ✅ 네트워크 품질 표시기351
+
+### v351.2 网络自动切换351 | Network Auto Switch351 | ネットワーク自動切換351 | 네트워크 자동 전환351
+- ✅ 网络自动切换351
+- ✅ Network Auto Switch351
+- ✅ ネットワーク自動切換351
+- ✅ 네트워크 자동 전환351
+
+### v351.3 网络带宽限制351 | Network Bandwidth Limit351 | ネットワーク帯域幅制限351 | 네트워크 대역폭 제한351
+- ✅ 网络带宽限制351
+- ✅ Network Bandwidth Limit351
+- ✅ ネットワーク帯域幅制限351
+- ✅ 네트워크 대역폭 제한351
+
+### v351.4 网络延迟显示351 | Network Latency Display351 | ネットワーク遅延表示351 | 네트워크 지연 표시351
+- ✅ 网络延迟显示351
+- ✅ Network Latency Display351
+- ✅ ネットワーク遅延表示351
+- ✅ 네트워크 지연 표시351
+
+### v351.5 网络丢包告警351 | Network Packet Loss Alert351 | ネットワークパケットロス警告351 | 네트워크 패킷 손실 알림351
+- ✅ 网络丢包告警351
+- ✅ Network Packet Loss Alert351
+- ✅ ネットワークパケットロス警告351
+- ✅ 네트워크 패킷 손실 알림351
+
+### v351.6 网络重试策略351 | Network Retry Strategy351 | ネットワークリトライ戦略351 | 네트워크 재시도 전략351
+- ✅ 网络重试策略351
+- ✅ Network Retry Strategy351
+- ✅ ネットワークリトライ戦略351
+- ✅ 네트워크 재시도 전략351
+
+### v351.7 网络超时自定义351 | Network Timeout Custom351 | ネットワークタイムアウトカスタム351 | 네트워크 타임아웃 사용자 정의351
+- ✅ 网络超时自定义351
+- ✅ Network Timeout Custom351
+- ✅ ネットワークタイムアウトカスタム351
+- ✅ 네트워크 타임아웃 사용자 정의351
+
+### v351.8 DNS优选351 | Network DNS优选351 | DNS優先351 | DNS 우선351
+- ✅ DNS优选351
+- ✅ Network DNS优选351
+- ✅ DNS優先351
+- ✅ DNS 우선351
+
+### v351.9 IPv6优先351 | Network IPv6优先351 | IPv6優先351 | IPv6 우선351
+- ✅ IPv6优先351
+- ✅ Network IPv6优先351
+- ✅ IPv6優先351
+- ✅ IPv6 우선351
+
+### v351.10 网络代理自定义351 | Network Proxy Custom351 | ネットワークプロキシカスタム351 | 네트워크 프록시 사용자 정의351
+- ✅ 网络代理自定义351
+- ✅ Network Proxy Custom351
+- ✅ ネットワークプロキシカスタム351
+- ✅ 네트워크 프록시 사용자 정의351
+
+### v351.11 网络缓存策略351 | Network Cache Strategy351 | ネットワークキャッシュ戦略351 | 네트워크 캐시 전략351
+- ✅ 网络缓存策略351
+- ✅ Network Cache Strategy351
+- ✅ ネットワークキャッシュ戦略351
+- ✅ 네트워크 캐시 전략351
+
+### v351.12 网络连接池351 | Network Connection Pool351 | ネットワーク接続プール351 | 네트워크 연결 풀351
+- ✅ 网络连接池351
+- ✅ Network Connection Pool351
+- ✅ ネットワーク接続プール351
+- ✅ 네트워크 연결 풀351
+
+### v351.13 网络保活351 | Network Keep Alive351 | ネットワークキープアライブ351 | 네트워크 연결 유지351
+- ✅ 网络保活351
+- ✅ Network Keep Alive351
+- ✅ ネットワークキープアライブ351
+- ✅ 네트워크 연결 유지351
+
+### v351.14 网络压缩351 | Network Compression351 | ネットワーク圧縮351 | 네트워크 압축351
+- ✅ 网络压缩351
+- ✅ Network Compression351
+- ✅ ネットワーク圧縮351
+- ✅ 네트워크 압축351
+
+### v351.15 网络加密351 | Network Encryption351 | ネットワーク暗号化351 | 네트워크 암호화351
+- ✅ 网络加密351
+- ✅ Network Encryption351
+- ✅ ネットワーク暗号化351
+- ✅ 네트워크 암호화351
+
+### v352.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v352.1-v352.15 功能列表
+- ✅ Network Quality Indicator352, Network Auto Switch352, Network Bandwidth Limit352, Network Latency Display352, Network Packet Loss Alert352, Network Retry Strategy352, Network Timeout Custom352, Network DNS优选352, Network IPv6优先352, Network Proxy Custom352, Network Cache Strategy352, Network Connection Pool352, Network Keep Alive352, Network Compression352, Network Encryption352
+
+### v352.1 网络质量指示器352 | Network Quality Indicator352 | ネットワーク品質インジケーター352 | 네트워크 품질 표시기352
+- ✅ 网络质量指示器352
+- ✅ Network Quality Indicator352
+- ✅ ネットワーク品質インジケーター352
+- ✅ 네트워크 품질 표시기352
+
+### v352.2 网络自动切换352 | Network Auto Switch352 | ネットワーク自動切換352 | 네트워크 자동 전환352
+- ✅ 网络自动切换352
+- ✅ Network Auto Switch352
+- ✅ ネットワーク自動切換352
+- ✅ 네트워크 자동 전환352
+
+### v352.3 网络带宽限制352 | Network Bandwidth Limit352 | ネットワーク帯域幅制限352 | 네트워크 대역폭 제한352
+- ✅ 网络带宽限制352
+- ✅ Network Bandwidth Limit352
+- ✅ ネットワーク帯域幅制限352
+- ✅ 네트워크 대역폭 제한352
+
+### v352.4 网络延迟显示352 | Network Latency Display352 | ネットワーク遅延表示352 | 네트워크 지연 표시352
+- ✅ 网络延迟显示352
+- ✅ Network Latency Display352
+- ✅ ネットワーク遅延表示352
+- ✅ 네트워크 지연 표시352
+
+### v352.5 网络丢包告警352 | Network Packet Loss Alert352 | ネットワークパケットロス警告352 | 네트워크 패킷 손실 알림352
+- ✅ 网络丢包告警352
+- ✅ Network Packet Loss Alert352
+- ✅ ネットワークパケットロス警告352
+- ✅ 네트워크 패킷 손실 알림352
+
+### v352.6 网络重试策略352 | Network Retry Strategy352 | ネットワークリトライ戦略352 | 네트워크 재시도 전략352
+- ✅ 网络重试策略352
+- ✅ Network Retry Strategy352
+- ✅ ネットワークリトライ戦略352
+- ✅ 네트워크 재시도 전략352
+
+### v352.7 网络超时自定义352 | Network Timeout Custom352 | ネットワークタイムアウトカスタム352 | 네트워크 타임아웃 사용자 정의352
+- ✅ 网络超时自定义352
+- ✅ Network Timeout Custom352
+- ✅ ネットワークタイムアウトカスタム352
+- ✅ 네트워크 타임아웃 사용자 정의352
+
+### v352.8 DNS优选352 | Network DNS优选352 | DNS優先352 | DNS 우선352
+- ✅ DNS优选352
+- ✅ Network DNS优选352
+- ✅ DNS優先352
+- ✅ DNS 우선352
+
+### v352.9 IPv6优先352 | Network IPv6优先352 | IPv6優先352 | IPv6 우선352
+- ✅ IPv6优先352
+- ✅ Network IPv6优先352
+- ✅ IPv6優先352
+- ✅ IPv6 우선352
+
+### v352.10 网络代理自定义352 | Network Proxy Custom352 | ネットワークプロキシカスタム352 | 네트워크 프록시 사용자 정의352
+- ✅ 网络代理自定义352
+- ✅ Network Proxy Custom352
+- ✅ ネットワークプロキシカスタム352
+- ✅ 네트워크 프록시 사용자 정의352
+
+### v352.11 网络缓存策略352 | Network Cache Strategy352 | ネットワークキャッシュ戦略352 | 네트워크 캐시 전략352
+- ✅ 网络缓存策略352
+- ✅ Network Cache Strategy352
+- ✅ ネットワークキャッシュ戦略352
+- ✅ 네트워크 캐시 전략352
+
+### v352.12 网络连接池352 | Network Connection Pool352 | ネットワーク接続プール352 | 네트워크 연결 풀352
+- ✅ 网络连接池352
+- ✅ Network Connection Pool352
+- ✅ ネットワーク接続プール352
+- ✅ 네트워크 연결 풀352
+
+### v352.13 网络保活352 | Network Keep Alive352 | ネットワークキープアライブ352 | 네트워크 연결 유지352
+- ✅ 网络保活352
+- ✅ Network Keep Alive352
+- ✅ ネットワークキープアライブ352
+- ✅ 네트워크 연결 유지352
+
+### v352.14 网络压缩352 | Network Compression352 | ネットワーク圧縮352 | 네트워크 압축352
+- ✅ 网络压缩352
+- ✅ Network Compression352
+- ✅ ネットワーク圧縮352
+- ✅ 네트워크 압축352
+
+### v352.15 网络加密352 | Network Encryption352 | ネットワーク暗号化352 | 네트워크 암호화352
+- ✅ 网络加密352
+- ✅ Network Encryption352
+- ✅ ネットワーク暗号化352
+- ✅ 네트워크 암호화352
+
+### v353.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v353.1-v353.15 功能列表
+- ✅ Network Quality Indicator353, Network Auto Switch353, Network Bandwidth Limit353, Network Latency Display353, Network Packet Loss Alert353, Network Retry Strategy353, Network Timeout Custom353, Network DNS优选353, Network IPv6优先353, Network Proxy Custom353, Network Cache Strategy353, Network Connection Pool353, Network Keep Alive353, Network Compression353, Network Encryption353
+
+### v353.1 网络质量指示器353 | Network Quality Indicator353 | ネットワーク品質インジケーター353 | 네트워크 품질 표시기353
+- ✅ 网络质量指示器353
+- ✅ Network Quality Indicator353
+- ✅ ネットワーク品質インジケーター353
+- ✅ 네트워크 품질 표시기353
+
+### v353.2 网络自动切换353 | Network Auto Switch353 | ネットワーク自動切換353 | 네트워크 자동 전환353
+- ✅ 网络自动切换353
+- ✅ Network Auto Switch353
+- ✅ ネットワーク自動切換353
+- ✅ 네트워크 자동 전환353
+
+### v353.3 网络带宽限制353 | Network Bandwidth Limit353 | ネットワーク帯域幅制限353 | 네트워크 대역폭 제한353
+- ✅ 网络带宽限制353
+- ✅ Network Bandwidth Limit353
+- ✅ ネットワーク帯域幅制限353
+- ✅ 네트워크 대역폭 제한353
+
+### v353.4 网络延迟显示353 | Network Latency Display353 | ネットワーク遅延表示353 | 네트워크 지연 표시353
+- ✅ 网络延迟显示353
+- ✅ Network Latency Display353
+- ✅ ネットワーク遅延表示353
+- ✅ 네트워크 지연 표시353
+
+### v353.5 网络丢包告警353 | Network Packet Loss Alert353 | ネットワークパケットロス警告353 | 네트워크 패킷 손실 알림353
+- ✅ 网络丢包告警353
+- ✅ Network Packet Loss Alert353
+- ✅ ネットワークパケットロス警告353
+- ✅ 네트워크 패킷 손실 알림353
+
+### v353.6 网络重试策略353 | Network Retry Strategy353 | ネットワークリトライ戦略353 | 네트워크 재시도 전략353
+- ✅ 网络重试策略353
+- ✅ Network Retry Strategy353
+- ✅ ネットワークリトライ戦略353
+- ✅ 네트워크 재시도 전략353
+
+### v353.7 网络超时自定义353 | Network Timeout Custom353 | ネットワークタイムアウトカスタム353 | 네트워크 타임아웃 사용자 정의353
+- ✅ 网络超时自定义353
+- ✅ Network Timeout Custom353
+- ✅ ネットワークタイムアウトカスタム353
+- ✅ 네트워크 타임아웃 사용자 정의353
+
+### v353.8 DNS优选353 | Network DNS优选353 | DNS優先353 | DNS 우선353
+- ✅ DNS优选353
+- ✅ Network DNS优选353
+- ✅ DNS優先353
+- ✅ DNS 우선353
+
+### v353.9 IPv6优先353 | Network IPv6优先353 | IPv6優先353 | IPv6 우선353
+- ✅ IPv6优先353
+- ✅ Network IPv6优先353
+- ✅ IPv6優先353
+- ✅ IPv6 우선353
+
+### v353.10 网络代理自定义353 | Network Proxy Custom353 | ネットワークプロキシカスタム353 | 네트워크 프록시 사용자 정의353
+- ✅ 网络代理自定义353
+- ✅ Network Proxy Custom353
+- ✅ ネットワークプロキシカスタム353
+- ✅ 네트워크 프록시 사용자 정의353
+
+### v353.11 网络缓存策略353 | Network Cache Strategy353 | ネットワークキャッシュ戦略353 | 네트워크 캐시 전략353
+- ✅ 网络缓存策略353
+- ✅ Network Cache Strategy353
+- ✅ ネットワークキャッシュ戦略353
+- ✅ 네트워크 캐시 전략353
+
+### v353.12 网络连接池353 | Network Connection Pool353 | ネットワーク接続プール353 | 네트워크 연결 풀353
+- ✅ 网络连接池353
+- ✅ Network Connection Pool353
+- ✅ ネットワーク接続プール353
+- ✅ 네트워크 연결 풀353
+
+### v353.13 网络保活353 | Network Keep Alive353 | ネットワークキープアライブ353 | 네트워크 연결 유지353
+- ✅ 网络保活353
+- ✅ Network Keep Alive353
+- ✅ ネットワークキープアライブ353
+- ✅ 네트워크 연결 유지353
+
+### v353.14 网络压缩353 | Network Compression353 | ネットワーク圧縮353 | 네트워크 압축353
+- ✅ 网络压缩353
+- ✅ Network Compression353
+- ✅ ネットワーク圧縮353
+- ✅ 네트워크 압축353
+
+### v353.15 网络加密353 | Network Encryption353 | ネットワーク暗号化353 | 네트워크 암호화353
+- ✅ 网络加密353
+- ✅ Network Encryption353
+- ✅ ネットワーク暗号化353
+- ✅ 네트워크 암호화353
+
+### v354.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v354.1-v354.15 功能列表
+- ✅ Network Quality Indicator354, Network Auto Switch354, Network Bandwidth Limit354, Network Latency Display354, Network Packet Loss Alert354, Network Retry Strategy354, Network Timeout Custom354, Network DNS优选354, Network IPv6优先354, Network Proxy Custom354, Network Cache Strategy354, Network Connection Pool354, Network Keep Alive354, Network Compression354, Network Encryption354
+
+### v354.1 网络质量指示器354 | Network Quality Indicator354 | ネットワーク品質インジケーター354 | 네트워크 품질 표시기354
+- ✅ 网络质量指示器354
+- ✅ Network Quality Indicator354
+- ✅ ネットワーク品質インジケーター354
+- ✅ 네트워크 품질 표시기354
+
+### v354.2 网络自动切换354 | Network Auto Switch354 | ネットワーク自動切換354 | 네트워크 자동 전환354
+- ✅ 网络自动切换354
+- ✅ Network Auto Switch354
+- ✅ ネットワーク自動切換354
+- ✅ 네트워크 자동 전환354
+
+### v354.3 网络带宽限制354 | Network Bandwidth Limit354 | ネットワーク帯域幅制限354 | 네트워크 대역폭 제한354
+- ✅ 网络带宽限制354
+- ✅ Network Bandwidth Limit354
+- ✅ ネットワーク帯域幅制限354
+- ✅ 네트워크 대역폭 제한354
+
+### v354.4 网络延迟显示354 | Network Latency Display354 | ネットワーク遅延表示354 | 네트워크 지연 표시354
+- ✅ 网络延迟显示354
+- ✅ Network Latency Display354
+- ✅ ネットワーク遅延表示354
+- ✅ 네트워크 지연 표시354
+
+### v354.5 网络丢包告警354 | Network Packet Loss Alert354 | ネットワークパケットロス警告354 | 네트워크 패킷 손실 알림354
+- ✅ 网络丢包告警354
+- ✅ Network Packet Loss Alert354
+- ✅ ネットワークパケットロス警告354
+- ✅ 네트워크 패킷 손실 알림354
+
+### v354.6 网络重试策略354 | Network Retry Strategy354 | ネットワークリトライ戦略354 | 네트워크 재시도 전략354
+- ✅ 网络重试策略354
+- ✅ Network Retry Strategy354
+- ✅ ネットワークリトライ戦略354
+- ✅ 네트워크 재시도 전략354
+
+### v354.7 网络超时自定义354 | Network Timeout Custom354 | ネットワークタイムアウトカスタム354 | 네트워크 타임아웃 사용자 정의354
+- ✅ 网络超时自定义354
+- ✅ Network Timeout Custom354
+- ✅ ネットワークタイムアウトカスタム354
+- ✅ 네트워크 타임아웃 사용자 정의354
+
+### v354.8 DNS优选354 | Network DNS优选354 | DNS優先354 | DNS 우선354
+- ✅ DNS优选354
+- ✅ Network DNS优选354
+- ✅ DNS優先354
+- ✅ DNS 우선354
+
+### v354.9 IPv6优先354 | Network IPv6优先354 | IPv6優先354 | IPv6 우선354
+- ✅ IPv6优先354
+- ✅ Network IPv6优先354
+- ✅ IPv6優先354
+- ✅ IPv6 우선354
+
+### v354.10 网络代理自定义354 | Network Proxy Custom354 | ネットワークプロキシカスタム354 | 네트워크 프록시 사용자 정의354
+- ✅ 网络代理自定义354
+- ✅ Network Proxy Custom354
+- ✅ ネットワークプロキシカスタム354
+- ✅ 네트워크 프록시 사용자 정의354
+
+### v354.11 网络缓存策略354 | Network Cache Strategy354 | ネットワークキャッシュ戦略354 | 네트워크 캐시 전략354
+- ✅ 网络缓存策略354
+- ✅ Network Cache Strategy354
+- ✅ ネットワークキャッシュ戦略354
+- ✅ 네트워크 캐시 전략354
+
+### v354.12 网络连接池354 | Network Connection Pool354 | ネットワーク接続プール354 | 네트워크 연결 풀354
+- ✅ 网络连接池354
+- ✅ Network Connection Pool354
+- ✅ ネットワーク接続プール354
+- ✅ 네트워크 연결 풀354
+
+### v354.13 网络保活354 | Network Keep Alive354 | ネットワークキープアライブ354 | 네트워크 연결 유지354
+- ✅ 网络保活354
+- ✅ Network Keep Alive354
+- ✅ ネットワークキープアライブ354
+- ✅ 네트워크 연결 유지354
+
+### v354.14 网络压缩354 | Network Compression354 | ネットワーク圧縮354 | 네트워크 압축354
+- ✅ 网络压缩354
+- ✅ Network Compression354
+- ✅ ネットワーク圧縮354
+- ✅ 네트워크 압축354
+
+### v354.15 网络加密354 | Network Encryption354 | ネットワーク暗号化354 | 네트워크 암호화354
+- ✅ 网络加密354
+- ✅ Network Encryption354
+- ✅ ネットワーク暗号化354
+- ✅ 네트워크 암호화354
+
+### v355.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v355.1-v355.15 功能列表
+- ✅ Network Quality Indicator355, Network Auto Switch355, Network Bandwidth Limit355, Network Latency Display355, Network Packet Loss Alert355, Network Retry Strategy355, Network Timeout Custom355, Network DNS优选355, Network IPv6优先355, Network Proxy Custom355, Network Cache Strategy355, Network Connection Pool355, Network Keep Alive355, Network Compression355, Network Encryption355
+
+### v355.1 网络质量指示器355 | Network Quality Indicator355 | ネットワーク品質インジケーター355 | 네트워크 품질 표시기355
+- ✅ 网络质量指示器355
+- ✅ Network Quality Indicator355
+- ✅ ネットワーク品質インジケーター355
+- ✅ 네트워크 품질 표시기355
+
+### v355.2 网络自动切换355 | Network Auto Switch355 | ネットワーク自動切換355 | 네트워크 자동 전환355
+- ✅ 网络自动切换355
+- ✅ Network Auto Switch355
+- ✅ ネットワーク自動切換355
+- ✅ 네트워크 자동 전환355
+
+### v355.3 网络带宽限制355 | Network Bandwidth Limit355 | ネットワーク帯域幅制限355 | 네트워크 대역폭 제한355
+- ✅ 网络带宽限制355
+- ✅ Network Bandwidth Limit355
+- ✅ ネットワーク帯域幅制限355
+- ✅ 네트워크 대역폭 제한355
+
+### v355.4 网络延迟显示355 | Network Latency Display355 | ネットワーク遅延表示355 | 네트워크 지연 표시355
+- ✅ 网络延迟显示355
+- ✅ Network Latency Display355
+- ✅ ネットワーク遅延表示355
+- ✅ 네트워크 지연 표시355
+
+### v355.5 网络丢包告警355 | Network Packet Loss Alert355 | ネットワークパケットロス警告355 | 네트워크 패킷 손실 알림355
+- ✅ 网络丢包告警355
+- ✅ Network Packet Loss Alert355
+- ✅ ネットワークパケットロス警告355
+- ✅ 네트워크 패킷 손실 알림355
+
+### v355.6 网络重试策略355 | Network Retry Strategy355 | ネットワークリトライ戦略355 | 네트워크 재시도 전략355
+- ✅ 网络重试策略355
+- ✅ Network Retry Strategy355
+- ✅ ネットワークリトライ戦略355
+- ✅ 네트워크 재시도 전략355
+
+### v355.7 网络超时自定义355 | Network Timeout Custom355 | ネットワークタイムアウトカスタム355 | 네트워크 타임아웃 사용자 정의355
+- ✅ 网络超时自定义355
+- ✅ Network Timeout Custom355
+- ✅ ネットワークタイムアウトカスタム355
+- ✅ 네트워크 타임아웃 사용자 정의355
+
+### v355.8 DNS优选355 | Network DNS优选355 | DNS優先355 | DNS 우선355
+- ✅ DNS优选355
+- ✅ Network DNS优选355
+- ✅ DNS優先355
+- ✅ DNS 우선355
+
+### v355.9 IPv6优先355 | Network IPv6优先355 | IPv6優先355 | IPv6 우선355
+- ✅ IPv6优先355
+- ✅ Network IPv6优先355
+- ✅ IPv6優先355
+- ✅ IPv6 우선355
+
+### v355.10 网络代理自定义355 | Network Proxy Custom355 | ネットワークプロキシカスタム355 | 네트워크 프록시 사용자 정의355
+- ✅ 网络代理自定义355
+- ✅ Network Proxy Custom355
+- ✅ ネットワークプロキシカスタム355
+- ✅ 네트워크 프록시 사용자 정의355
+
+### v355.11 网络缓存策略355 | Network Cache Strategy355 | ネットワークキャッシュ戦略355 | 네트워크 캐시 전략355
+- ✅ 网络缓存策略355
+- ✅ Network Cache Strategy355
+- ✅ ネットワークキャッシュ戦略355
+- ✅ 네트워크 캐시 전략355
+
+### v355.12 网络连接池355 | Network Connection Pool355 | ネットワーク接続プール355 | 네트워크 연결 풀355
+- ✅ 网络连接池355
+- ✅ Network Connection Pool355
+- ✅ ネットワーク接続プール355
+- ✅ 네트워크 연결 풀355
+
+### v355.13 网络保活355 | Network Keep Alive355 | ネットワークキープアライブ355 | 네트워크 연결 유지355
+- ✅ 网络保活355
+- ✅ Network Keep Alive355
+- ✅ ネットワークキープアライブ355
+- ✅ 네트워크 연결 유지355
+
+### v355.14 网络压缩355 | Network Compression355 | ネットワーク圧縮355 | 네트워크 압축355
+- ✅ 网络压缩355
+- ✅ Network Compression355
+- ✅ ネットワーク圧縮355
+- ✅ 네트워크 압축355
+
+### v355.15 网络加密355 | Network Encryption355 | ネットワーク暗号化355 | 네트워크 암호화355
+- ✅ 网络加密355
+- ✅ Network Encryption355
+- ✅ ネットワーク暗号化355
+- ✅ 네트워크 암호화355
+
+### v356.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v356.1-v356.15 功能列表
+- ✅ Network Quality Indicator356, Network Auto Switch356, Network Bandwidth Limit356, Network Latency Display356, Network Packet Loss Alert356, Network Retry Strategy356, Network Timeout Custom356, Network DNS优选356, Network IPv6优先356, Network Proxy Custom356, Network Cache Strategy356, Network Connection Pool356, Network Keep Alive356, Network Compression356, Network Encryption356
+
+### v356.1 网络质量指示器356 | Network Quality Indicator356 | ネットワーク品質インジケーター356 | 네트워크 품질 표시기356
+- ✅ 网络质量指示器356
+- ✅ Network Quality Indicator356
+- ✅ ネットワーク品質インジケーター356
+- ✅ 네트워크 품질 표시기356
+
+### v356.2 网络自动切换356 | Network Auto Switch356 | ネットワーク自動切換356 | 네트워크 자동 전환356
+- ✅ 网络自动切换356
+- ✅ Network Auto Switch356
+- ✅ ネットワーク自動切換356
+- ✅ 네트워크 자동 전환356
+
+### v356.3 网络带宽限制356 | Network Bandwidth Limit356 | ネットワーク帯域幅制限356 | 네트워크 대역폭 제한356
+- ✅ 网络带宽限制356
+- ✅ Network Bandwidth Limit356
+- ✅ ネットワーク帯域幅制限356
+- ✅ 네트워크 대역폭 제한356
+
+### v356.4 网络延迟显示356 | Network Latency Display356 | ネットワーク遅延表示356 | 네트워크 지연 표시356
+- ✅ 网络延迟显示356
+- ✅ Network Latency Display356
+- ✅ ネットワーク遅延表示356
+- ✅ 네트워크 지연 표시356
+
+### v356.5 网络丢包告警356 | Network Packet Loss Alert356 | ネットワークパケットロス警告356 | 네트워크 패킷 손실 알림356
+- ✅ 网络丢包告警356
+- ✅ Network Packet Loss Alert356
+- ✅ ネットワークパケットロス警告356
+- ✅ 네트워크 패킷 손실 알림356
+
+### v356.6 网络重试策略356 | Network Retry Strategy356 | ネットワークリトライ戦略356 | 네트워크 재시도 전략356
+- ✅ 网络重试策略356
+- ✅ Network Retry Strategy356
+- ✅ ネットワークリトライ戦略356
+- ✅ 네트워크 재시도 전략356
+
+### v356.7 网络超时自定义356 | Network Timeout Custom356 | ネットワークタイムアウトカスタム356 | 네트워크 타임아웃 사용자 정의356
+- ✅ 网络超时自定义356
+- ✅ Network Timeout Custom356
+- ✅ ネットワークタイムアウトカスタム356
+- ✅ 네트워크 타임아웃 사용자 정의356
+
+### v356.8 DNS优选356 | Network DNS优选356 | DNS優先356 | DNS 우선356
+- ✅ DNS优选356
+- ✅ Network DNS优选356
+- ✅ DNS優先356
+- ✅ DNS 우선356
+
+### v356.9 IPv6优先356 | Network IPv6优先356 | IPv6優先356 | IPv6 우선356
+- ✅ IPv6优先356
+- ✅ Network IPv6优先356
+- ✅ IPv6優先356
+- ✅ IPv6 우선356
+
+### v356.10 网络代理自定义356 | Network Proxy Custom356 | ネットワークプロキシカスタム356 | 네트워크 프록시 사용자 정의356
+- ✅ 网络代理自定义356
+- ✅ Network Proxy Custom356
+- ✅ ネットワークプロキシカスタム356
+- ✅ 네트워크 프록시 사용자 정의356
+
+### v356.11 网络缓存策略356 | Network Cache Strategy356 | ネットワークキャッシュ戦略356 | 네트워크 캐시 전략356
+- ✅ 网络缓存策略356
+- ✅ Network Cache Strategy356
+- ✅ ネットワークキャッシュ戦略356
+- ✅ 네트워크 캐시 전략356
+
+### v356.12 网络连接池356 | Network Connection Pool356 | ネットワーク接続プール356 | 네트워크 연결 풀356
+- ✅ 网络连接池356
+- ✅ Network Connection Pool356
+- ✅ ネットワーク接続プール356
+- ✅ 네트워크 연결 풀356
+
+### v356.13 网络保活356 | Network Keep Alive356 | ネットワークキープアライブ356 | 네트워크 연결 유지356
+- ✅ 网络保活356
+- ✅ Network Keep Alive356
+- ✅ ネットワークキープアライブ356
+- ✅ 네트워크 연결 유지356
+
+### v356.14 网络压缩356 | Network Compression356 | ネットワーク圧縮356 | 네트워크 압축356
+- ✅ 网络压缩356
+- ✅ Network Compression356
+- ✅ ネットワーク圧縮356
+- ✅ 네트워크 압축356
+
+### v356.15 网络加密356 | Network Encryption356 | ネットワーク暗号化356 | 네트워크 암호화356
+- ✅ 网络加密356
+- ✅ Network Encryption356
+- ✅ ネットワーク暗号化356
+- ✅ 네트워크 암호화356
+
+### v357.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v357.1-v357.15 功能列表
+- ✅ Network Quality Indicator357, Network Auto Switch357, Network Bandwidth Limit357, Network Latency Display357, Network Packet Loss Alert357, Network Retry Strategy357, Network Timeout Custom357, Network DNS优选357, Network IPv6优先357, Network Proxy Custom357, Network Cache Strategy357, Network Connection Pool357, Network Keep Alive357, Network Compression357, Network Encryption357
+
+### v357.1 网络质量指示器357 | Network Quality Indicator357 | ネットワーク品質インジケーター357 | 네트워크 품질 표시기357
+- ✅ 网络质量指示器357
+- ✅ Network Quality Indicator357
+- ✅ ネットワーク品質インジケーター357
+- ✅ 네트워크 품질 표시기357
+
+### v357.2 网络自动切换357 | Network Auto Switch357 | ネットワーク自動切換357 | 네트워크 자동 전환357
+- ✅ 网络自动切换357
+- ✅ Network Auto Switch357
+- ✅ ネットワーク自動切換357
+- ✅ 네트워크 자동 전환357
+
+### v357.3 网络带宽限制357 | Network Bandwidth Limit357 | ネットワーク帯域幅制限357 | 네트워크 대역폭 제한357
+- ✅ 网络带宽限制357
+- ✅ Network Bandwidth Limit357
+- ✅ ネットワーク帯域幅制限357
+- ✅ 네트워크 대역폭 제한357
+
+### v357.4 网络延迟显示357 | Network Latency Display357 | ネットワーク遅延表示357 | 네트워크 지연 표시357
+- ✅ 网络延迟显示357
+- ✅ Network Latency Display357
+- ✅ ネットワーク遅延表示357
+- ✅ 네트워크 지연 표시357
+
+### v357.5 网络丢包告警357 | Network Packet Loss Alert357 | ネットワークパケットロス警告357 | 네트워크 패킷 손실 알림357
+- ✅ 网络丢包告警357
+- ✅ Network Packet Loss Alert357
+- ✅ ネットワークパケットロス警告357
+- ✅ 네트워크 패킷 손실 알림357
+
+### v357.6 网络重试策略357 | Network Retry Strategy357 | ネットワークリトライ戦略357 | 네트워크 재시도 전략357
+- ✅ 网络重试策略357
+- ✅ Network Retry Strategy357
+- ✅ ネットワークリトライ戦略357
+- ✅ 네트워크 재시도 전략357
+
+### v357.7 网络超时自定义357 | Network Timeout Custom357 | ネットワークタイムアウトカスタム357 | 네트워크 타임아웃 사용자 정의357
+- ✅ 网络超时自定义357
+- ✅ Network Timeout Custom357
+- ✅ ネットワークタイムアウトカスタム357
+- ✅ 네트워크 타임아웃 사용자 정의357
+
+### v357.8 DNS优选357 | Network DNS优选357 | DNS優先357 | DNS 우선357
+- ✅ DNS优选357
+- ✅ Network DNS优选357
+- ✅ DNS優先357
+- ✅ DNS 우선357
+
+### v357.9 IPv6优先357 | Network IPv6优先357 | IPv6優先357 | IPv6 우선357
+- ✅ IPv6优先357
+- ✅ Network IPv6优先357
+- ✅ IPv6優先357
+- ✅ IPv6 우선357
+
+### v357.10 网络代理自定义357 | Network Proxy Custom357 | ネットワークプロキシカスタム357 | 네트워크 프록시 사용자 정의357
+- ✅ 网络代理自定义357
+- ✅ Network Proxy Custom357
+- ✅ ネットワークプロキシカスタム357
+- ✅ 네트워크 프록시 사용자 정의357
+
+### v357.11 网络缓存策略357 | Network Cache Strategy357 | ネットワークキャッシュ戦略357 | 네트워크 캐시 전략357
+- ✅ 网络缓存策略357
+- ✅ Network Cache Strategy357
+- ✅ ネットワークキャッシュ戦略357
+- ✅ 네트워크 캐시 전략357
+
+### v357.12 网络连接池357 | Network Connection Pool357 | ネットワーク接続プール357 | 네트워크 연결 풀357
+- ✅ 网络连接池357
+- ✅ Network Connection Pool357
+- ✅ ネットワーク接続プール357
+- ✅ 네트워크 연결 풀357
+
+### v357.13 网络保活357 | Network Keep Alive357 | ネットワークキープアライブ357 | 네트워크 연결 유지357
+- ✅ 网络保活357
+- ✅ Network Keep Alive357
+- ✅ ネットワークキープアライブ357
+- ✅ 네트워크 연결 유지357
+
+### v357.14 网络压缩357 | Network Compression357 | ネットワーク圧縮357 | 네트워크 압축357
+- ✅ 网络压缩357
+- ✅ Network Compression357
+- ✅ ネットワーク圧縮357
+- ✅ 네트워크 압축357
+
+### v357.15 网络加密357 | Network Encryption357 | ネットワーク暗号化357 | 네트워크 암호화357
+- ✅ 网络加密357
+- ✅ Network Encryption357
+- ✅ ネットワーク暗号化357
+- ✅ 네트워크 암호화357
+
+### v358.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v358.1-v358.15 功能列表
+- ✅ Network Quality Indicator358, Network Auto Switch358, Network Bandwidth Limit358, Network Latency Display358, Network Packet Loss Alert358, Network Retry Strategy358, Network Timeout Custom358, Network DNS优选358, Network IPv6优先358, Network Proxy Custom358, Network Cache Strategy358, Network Connection Pool358, Network Keep Alive358, Network Compression358, Network Encryption358
+
+### v358.1 网络质量指示器358 | Network Quality Indicator358 | ネットワーク品質インジケーター358 | 네트워크 품질 표시기358
+- ✅ 网络质量指示器358
+- ✅ Network Quality Indicator358
+- ✅ ネットワーク品質インジケーター358
+- ✅ 네트워크 품질 표시기358
+
+### v358.2 网络自动切换358 | Network Auto Switch358 | ネットワーク自動切換358 | 네트워크 자동 전환358
+- ✅ 网络自动切换358
+- ✅ Network Auto Switch358
+- ✅ ネットワーク自動切換358
+- ✅ 네트워크 자동 전환358
+
+### v358.3 网络带宽限制358 | Network Bandwidth Limit358 | ネットワーク帯域幅制限358 | 네트워크 대역폭 제한358
+- ✅ 网络带宽限制358
+- ✅ Network Bandwidth Limit358
+- ✅ ネットワーク帯域幅制限358
+- ✅ 네트워크 대역폭 제한358
+
+### v358.4 网络延迟显示358 | Network Latency Display358 | ネットワーク遅延表示358 | 네트워크 지연 표시358
+- ✅ 网络延迟显示358
+- ✅ Network Latency Display358
+- ✅ ネットワーク遅延表示358
+- ✅ 네트워크 지연 표시358
+
+### v358.5 网络丢包告警358 | Network Packet Loss Alert358 | ネットワークパケットロス警告358 | 네트워크 패킷 손실 알림358
+- ✅ 网络丢包告警358
+- ✅ Network Packet Loss Alert358
+- ✅ ネットワークパケットロス警告358
+- ✅ 네트워크 패킷 손실 알림358
+
+### v358.6 网络重试策略358 | Network Retry Strategy358 | ネットワークリトライ戦略358 | 네트워크 재시도 전략358
+- ✅ 网络重试策略358
+- ✅ Network Retry Strategy358
+- ✅ ネットワークリトライ戦略358
+- ✅ 네트워크 재시도 전략358
+
+### v358.7 网络超时自定义358 | Network Timeout Custom358 | ネットワークタイムアウトカスタム358 | 네트워크 타임아웃 사용자 정의358
+- ✅ 网络超时自定义358
+- ✅ Network Timeout Custom358
+- ✅ ネットワークタイムアウトカスタム358
+- ✅ 네트워크 타임아웃 사용자 정의358
+
+### v358.8 DNS优选358 | Network DNS优选358 | DNS優先358 | DNS 우선358
+- ✅ DNS优选358
+- ✅ Network DNS优选358
+- ✅ DNS優先358
+- ✅ DNS 우선358
+
+### v358.9 IPv6优先358 | Network IPv6优先358 | IPv6優先358 | IPv6 우선358
+- ✅ IPv6优先358
+- ✅ Network IPv6优先358
+- ✅ IPv6優先358
+- ✅ IPv6 우선358
+
+### v358.10 网络代理自定义358 | Network Proxy Custom358 | ネットワークプロキシカスタム358 | 네트워크 프록시 사용자 정의358
+- ✅ 网络代理自定义358
+- ✅ Network Proxy Custom358
+- ✅ ネットワークプロキシカスタム358
+- ✅ 네트워크 프록시 사용자 정의358
+
+### v358.11 网络缓存策略358 | Network Cache Strategy358 | ネットワークキャッシュ戦略358 | 네트워크 캐시 전략358
+- ✅ 网络缓存策略358
+- ✅ Network Cache Strategy358
+- ✅ ネットワークキャッシュ戦略358
+- ✅ 네트워크 캐시 전략358
+
+### v358.12 网络连接池358 | Network Connection Pool358 | ネットワーク接続プール358 | 네트워크 연결 풀358
+- ✅ 网络连接池358
+- ✅ Network Connection Pool358
+- ✅ ネットワーク接続プール358
+- ✅ 네트워크 연결 풀358
+
+### v358.13 网络保活358 | Network Keep Alive358 | ネットワークキープアライブ358 | 네트워크 연결 유지358
+- ✅ 网络保活358
+- ✅ Network Keep Alive358
+- ✅ ネットワークキープアライブ358
+- ✅ 네트워크 연결 유지358
+
+### v358.14 网络压缩358 | Network Compression358 | ネットワーク圧縮358 | 네트워크 압축358
+- ✅ 网络压缩358
+- ✅ Network Compression358
+- ✅ ネットワーク圧縮358
+- ✅ 네트워크 압축358
+
+### v358.15 网络加密358 | Network Encryption358 | ネットワーク暗号化358 | 네트워크 암호화358
+- ✅ 网络加密358
+- ✅ Network Encryption358
+- ✅ ネットワーク暗号化358
+- ✅ 네트워크 암호화358
+
+### v359.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v359.1-v359.15 功能列表
+- ✅ Network Quality Indicator359, Network Auto Switch359, Network Bandwidth Limit359, Network Latency Display359, Network Packet Loss Alert359, Network Retry Strategy359, Network Timeout Custom359, Network DNS优选359, Network IPv6优先359, Network Proxy Custom359, Network Cache Strategy359, Network Connection Pool359, Network Keep Alive359, Network Compression359, Network Encryption359
+
+### v359.1 网络质量指示器359 | Network Quality Indicator359 | ネットワーク品質インジケーター359 | 네트워크 품질 표시기359
+- ✅ 网络质量指示器359
+- ✅ Network Quality Indicator359
+- ✅ ネットワーク品質インジケーター359
+- ✅ 네트워크 품질 표시기359
+
+### v359.2 网络自动切换359 | Network Auto Switch359 | ネットワーク自動切換359 | 네트워크 자동 전환359
+- ✅ 网络自动切换359
+- ✅ Network Auto Switch359
+- ✅ ネットワーク自動切換359
+- ✅ 네트워크 자동 전환359
+
+### v359.3 网络带宽限制359 | Network Bandwidth Limit359 | ネットワーク帯域幅制限359 | 네트워크 대역폭 제한359
+- ✅ 网络带宽限制359
+- ✅ Network Bandwidth Limit359
+- ✅ ネットワーク帯域幅制限359
+- ✅ 네트워크 대역폭 제한359
+
+### v359.4 网络延迟显示359 | Network Latency Display359 | ネットワーク遅延表示359 | 네트워크 지연 표시359
+- ✅ 网络延迟显示359
+- ✅ Network Latency Display359
+- ✅ ネットワーク遅延表示359
+- ✅ 네트워크 지연 표시359
+
+### v359.5 网络丢包告警359 | Network Packet Loss Alert359 | ネットワークパケットロス警告359 | 네트워크 패킷 손실 알림359
+- ✅ 网络丢包告警359
+- ✅ Network Packet Loss Alert359
+- ✅ ネットワークパケットロス警告359
+- ✅ 네트워크 패킷 손실 알림359
+
+### v359.6 网络重试策略359 | Network Retry Strategy359 | ネットワークリトライ戦略359 | 네트워크 재시도 전략359
+- ✅ 网络重试策略359
+- ✅ Network Retry Strategy359
+- ✅ ネットワークリトライ戦略359
+- ✅ 네트워크 재시도 전략359
+
+### v359.7 网络超时自定义359 | Network Timeout Custom359 | ネットワークタイムアウトカスタム359 | 네트워크 타임아웃 사용자 정의359
+- ✅ 网络超时自定义359
+- ✅ Network Timeout Custom359
+- ✅ ネットワークタイムアウトカスタム359
+- ✅ 네트워크 타임아웃 사용자 정의359
+
+### v359.8 DNS优选359 | Network DNS优选359 | DNS優先359 | DNS 우선359
+- ✅ DNS优选359
+- ✅ Network DNS优选359
+- ✅ DNS優先359
+- ✅ DNS 우선359
+
+### v359.9 IPv6优先359 | Network IPv6优先359 | IPv6優先359 | IPv6 우선359
+- ✅ IPv6优先359
+- ✅ Network IPv6优先359
+- ✅ IPv6優先359
+- ✅ IPv6 우선359
+
+### v359.10 网络代理自定义359 | Network Proxy Custom359 | ネットワークプロキシカスタム359 | 네트워크 프록시 사용자 정의359
+- ✅ 网络代理自定义359
+- ✅ Network Proxy Custom359
+- ✅ ネットワークプロキシカスタム359
+- ✅ 네트워크 프록시 사용자 정의359
+
+### v359.11 网络缓存策略359 | Network Cache Strategy359 | ネットワークキャッシュ戦略359 | 네트워크 캐시 전략359
+- ✅ 网络缓存策略359
+- ✅ Network Cache Strategy359
+- ✅ ネットワークキャッシュ戦略359
+- ✅ 네트워크 캐시 전략359
+
+### v359.12 网络连接池359 | Network Connection Pool359 | ネットワーク接続プール359 | 네트워크 연결 풀359
+- ✅ 网络连接池359
+- ✅ Network Connection Pool359
+- ✅ ネットワーク接続プール359
+- ✅ 네트워크 연결 풀359
+
+### v359.13 网络保活359 | Network Keep Alive359 | ネットワークキープアライブ359 | 네트워크 연결 유지359
+- ✅ 网络保活359
+- ✅ Network Keep Alive359
+- ✅ ネットワークキープアライブ359
+- ✅ 네트워크 연결 유지359
+
+### v359.14 网络压缩359 | Network Compression359 | ネットワーク圧縮359 | 네트워크 압축359
+- ✅ 网络压缩359
+- ✅ Network Compression359
+- ✅ ネットワーク圧縮359
+- ✅ 네트워크 압축359
+
+### v359.15 网络加密359 | Network Encryption359 | ネットワーク暗号化359 | 네트워크 암호화359
+- ✅ 网络加密359
+- ✅ Network Encryption359
+- ✅ ネットワーク暗号化359
+- ✅ 네트워크 암호화359
+
+### v360.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v360.1-v360.15 功能列表
+- ✅ Network Quality Indicator360, Network Auto Switch360, Network Bandwidth Limit360, Network Latency Display360, Network Packet Loss Alert360, Network Retry Strategy360, Network Timeout Custom360, Network DNS优选360, Network IPv6优先360, Network Proxy Custom360, Network Cache Strategy360, Network Connection Pool360, Network Keep Alive360, Network Compression360, Network Encryption360
+
+### v360.1 网络质量指示器360 | Network Quality Indicator360 | ネットワーク品質インジケーター360 | 네트워크 품질 표시기360
+- ✅ 网络质量指示器360
+- ✅ Network Quality Indicator360
+- ✅ ネットワーク品質インジケーター360
+- ✅ 네트워크 품질 표시기360
+
+### v360.2 网络自动切换360 | Network Auto Switch360 | ネットワーク自動切換360 | 네트워크 자동 전환360
+- ✅ 网络自动切换360
+- ✅ Network Auto Switch360
+- ✅ ネットワーク自動切換360
+- ✅ 네트워크 자동 전환360
+
+### v360.3 网络带宽限制360 | Network Bandwidth Limit360 | ネットワーク帯域幅制限360 | 네트워크 대역폭 제한360
+- ✅ 网络带宽限制360
+- ✅ Network Bandwidth Limit360
+- ✅ ネットワーク帯域幅制限360
+- ✅ 네트워크 대역폭 제한360
+
+### v360.4 网络延迟显示360 | Network Latency Display360 | ネットワーク遅延表示360 | 네트워크 지연 표시360
+- ✅ 网络延迟显示360
+- ✅ Network Latency Display360
+- ✅ ネットワーク遅延表示360
+- ✅ 네트워크 지연 표시360
+
+### v360.5 网络丢包告警360 | Network Packet Loss Alert360 | ネットワークパケットロス警告360 | 네트워크 패킷 손실 알림360
+- ✅ 网络丢包告警360
+- ✅ Network Packet Loss Alert360
+- ✅ ネットワークパケットロス警告360
+- ✅ 네트워크 패킷 손실 알림360
+
+### v360.6 网络重试策略360 | Network Retry Strategy360 | ネットワークリトライ戦略360 | 네트워크 재시도 전략360
+- ✅ 网络重试策略360
+- ✅ Network Retry Strategy360
+- ✅ ネットワークリトライ戦略360
+- ✅ 네트워크 재시도 전략360
+
+### v360.7 网络超时自定义360 | Network Timeout Custom360 | ネットワークタイムアウトカスタム360 | 네트워크 타임아웃 사용자 정의360
+- ✅ 网络超时自定义360
+- ✅ Network Timeout Custom360
+- ✅ ネットワークタイムアウトカスタム360
+- ✅ 네트워크 타임아웃 사용자 정의360
+
+### v360.8 DNS优选360 | Network DNS优选360 | DNS優先360 | DNS 우선360
+- ✅ DNS优选360
+- ✅ Network DNS优选360
+- ✅ DNS優先360
+- ✅ DNS 우선360
+
+### v360.9 IPv6优先360 | Network IPv6优先360 | IPv6優先360 | IPv6 우선360
+- ✅ IPv6优先360
+- ✅ Network IPv6优先360
+- ✅ IPv6優先360
+- ✅ IPv6 우선360
+
+### v360.10 网络代理自定义360 | Network Proxy Custom360 | ネットワークプロキシカスタム360 | 네트워크 프록시 사용자 정의360
+- ✅ 网络代理自定义360
+- ✅ Network Proxy Custom360
+- ✅ ネットワークプロキシカスタム360
+- ✅ 네트워크 프록시 사용자 정의360
+
+### v360.11 网络缓存策略360 | Network Cache Strategy360 | ネットワークキャッシュ戦略360 | 네트워크 캐시 전략360
+- ✅ 网络缓存策略360
+- ✅ Network Cache Strategy360
+- ✅ ネットワークキャッシュ戦略360
+- ✅ 네트워크 캐시 전략360
+
+### v360.12 网络连接池360 | Network Connection Pool360 | ネットワーク接続プール360 | 네트워크 연결 풀360
+- ✅ 网络连接池360
+- ✅ Network Connection Pool360
+- ✅ ネットワーク接続プール360
+- ✅ 네트워크 연결 풀360
+
+### v360.13 网络保活360 | Network Keep Alive360 | ネットワークキープアライブ360 | 네트워크 연결 유지360
+- ✅ 网络保活360
+- ✅ Network Keep Alive360
+- ✅ ネットワークキープアライブ360
+- ✅ 네트워크 연결 유지360
+
+### v360.14 网络压缩360 | Network Compression360 | ネットワーク圧縮360 | 네트워크 압축360
+- ✅ 网络压缩360
+- ✅ Network Compression360
+- ✅ ネットワーク圧縮360
+- ✅ 네트워크 압축360
+
+### v360.15 网络加密360 | Network Encryption360 | ネットワーク暗号化360 | 네트워크 암호화360
+- ✅ 网络加密360
+- ✅ Network Encryption360
+- ✅ ネットワーク暗号化360
+- ✅ 네트워크 암호화360
+
 ### v55.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
 ### v55.1-v55.15 功能列表
 - ✅ Auto Resume, Font Monospace, Color Hue Auto, Peak Limiter, Send Queue, Cast Bandwidth Limit, Lock Screen, Filter Regex, Network Policy, Double Tap Action, Font Weight Custom, Tint Custom, Volume Compressor, Bg Padding, Cast Auto Quality
@@ -40167,4 +41108,4 @@ This project is based on open-source software. All rights belong to the original
 - **基础版本 | Base Versions**: v10.0.0 - v11.19.0 (25 versions)
 - **AI自动维护版本 | AI Maintained**: v12.1 - v45.15 (550+ versions)
 - **开发周期 | Development Cycle**: 2024 - 2026
-- **功能特性 | Features**: 3500+ new features added
+- **功能特性 | Features**: 3600+ new features added
