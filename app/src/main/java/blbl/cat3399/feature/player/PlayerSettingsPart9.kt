@@ -13,3003 +13,2065 @@ import blbl.cat3399.feature.player.engine.ExoPlayerEngine
 import blbl.cat3399.feature.player.engine.IjkPlayerPluginUi
 import blbl.cat3399.feature.player.engine.PlayerEngineKind
 
-internal fun PlayerActivity.showV216DanmakuBottomMaxCount240Dialog() {
+
+import blbl.cat3399.core.net.BiliClient
+import blbl.cat3399.core.prefs.AppPrefs
+import blbl.cat3399.core.prefs.PlayerPlaybackModes
+import blbl.cat3399.core.ui.AppToast
+import blbl.cat3399.core.ui.popup.AppPopup
+import blbl.cat3399.feature.player.danmaku.DanmakuFontWeight
+import blbl.cat3399.feature.player.danmaku.DanmakuLaneDensity
+import blbl.cat3399.feature.player.danmaku.DanmakuSessionSettings
+import blbl.cat3399.feature.player.engine.BlblPlayerEngine
+import blbl.cat3399.feature.player.engine.ExoPlayerEngine
+import blbl.cat3399.feature.player.engine.IjkPlayerPluginUi
+import blbl.cat3399.feature.player.engine.PlayerEngineKind
+
+internal fun PlayerActivity.showV135DanmakuFontBgFillShadowType134Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v216danmakuBottomMaxCount240).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v135danmakuFontBgFillShadowType134).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count240",
+        title = "Danmaku Font BG Fill Shadow Type134",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v216danmakuBottomMaxCount240 = value
-        AppToast.show(this, "Danmaku Bottom Max Count240: $value")
+        BiliClient.prefs.v135danmakuFontBgFillShadowType134 = value
+        AppToast.show(this, "Danmaku Font BG Fill Shadow Type134: $value")
     }
-// v217: Danmaku Bottom Max Count241
+}
 
-
-internal fun PlayerActivity.showV217DanmakuBottomMaxCount241Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v217danmakuBottomMaxCount241).takeIf { it >= 0 } ?: 0
+internal fun PlayerActivity.showV135SubtitleAnimationBlur135Dialog() {
+    val options = listOf(0, 25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v135subtitleAnimationBlur135).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count241",
+        title = "Subtitle Animation Blur135",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v217danmakuBottomMaxCount241 = value
-        AppToast.show(this, "Danmaku Bottom Max Count241: $value")
+        BiliClient.prefs.v135subtitleAnimationBlur135 = value
+        AppToast.show(this, "Subtitle Animation Blur135: $value")
     }
-// v217: Gesture Shake Action217
+}
 
-
-internal fun PlayerActivity.showV217GestureShakeAction217Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v217gestureShakeAction217).takeIf { it >= 0 } ?: 0
+internal fun PlayerActivity.showV135GestureTapZoneMinDistanceDialog() {
+    val options = listOf(5, 10, 15, 20, 30)
+    val currentIndex = options.indexOf(BiliClient.prefs.v135gestureTapZoneMinDistance).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Gesture Shake Action217",
+        title = "Gesture Tap Zone Min Distance",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v217gestureShakeAction217 = value
-        AppToast.show(this, "Gesture Shake Action217: $value")
+        BiliClient.prefs.v135gestureTapZoneMinDistance = value
+        AppToast.show(this, "Gesture Tap Zone Min Distance: $value")
     }
-// v217: Cast Audio Volume217
+}
 
+internal fun PlayerActivity.showV135CastVideoPIPFollowScreenToggle() {
+    val current = BiliClient.prefs.v135castVideoPIPFollowScreen
+    BiliClient.prefs.v135castVideoPIPFollowScreen = !current
+    AppToast.show(this, "Cast Video PIP Follow Screen: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV217CastAudioVolume217Dialog() {
+internal fun PlayerActivity.showV135PlaylistAutoGroupByLikeCountToggle() {
+    val current = BiliClient.prefs.v135playlistAutoGroupByLikeCount
+    BiliClient.prefs.v135playlistAutoGroupByLikeCount = !current
+    AppToast.show(this, "Playlist Auto Group By Like Count: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV135CacheSmartPinningOnStorageFreeDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v135cacheSmartPinningOnStorageFree).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Cache Smart Pinning On Storage Free",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v135cacheSmartPinningOnStorageFree = value
+        AppToast.show(this, "Cache Smart Pinning On Storage Free: $value")
+    }
+}
+
+internal fun PlayerActivity.showV135ProgressBarCustomThumbSize135Dialog() {
+    val options = listOf(8, 10, 12, 14, 16)
+    val currentIndex = options.indexOf(BiliClient.prefs.v135progressBarCustomThumbSize135).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Progress Bar Custom Thumb Size135",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v135progressBarCustomThumbSize135 = value
+        AppToast.show(this, "Progress Bar Custom Thumb Size135: $value")
+    }
+}
+
+internal fun PlayerActivity.showV135VolumeNormalizeThresholdDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v135volumeNormalizeThreshold).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Volume Normalize Threshold",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v135volumeNormalizeThreshold = value
+        AppToast.show(this, "Volume Normalize Threshold: $value")
+    }
+}
+
+internal fun PlayerActivity.showV135HistoryAutoClean135Toggle() {
+    val current = BiliClient.prefs.v135historyAutoClean135
+    BiliClient.prefs.v135historyAutoClean135 = !current
+    AppToast.show(this, "History Auto Clean135: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV135PlaybackSpeedPresetsGestureToggle() {
+    val current = BiliClient.prefs.v135playbackSpeedPresetsGesture
+    BiliClient.prefs.v135playbackSpeedPresetsGesture = !current
+    AppToast.show(this, "Playback Speed Presets Gesture: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV135ScreenshotAutoShareTumblrToggle() {
+    val current = BiliClient.prefs.v135screenshotAutoShareTumblr
+    BiliClient.prefs.v135screenshotAutoShareTumblr = !current
+    AppToast.show(this, "Screenshot Auto Share Tumblr: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV135VideoPIPFollowSystemThemeToggle() {
+    val current = BiliClient.prefs.v135videoPIPFollowSystemTheme
+    BiliClient.prefs.v135videoPIPFollowSystemTheme = !current
+    AppToast.show(this, "Video PIP Follow System Theme: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV135DanmakuFontBgFillClipToggleToggle() {
+    val current = BiliClient.prefs.v135danmakuFontBgFillClipToggle
+    BiliClient.prefs.v135danmakuFontBgFillClipToggle = !current
+    AppToast.show(this, "Danmaku Font BG Fill Clip Toggle: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV135SubtitleAnimationFadeIn135Dialog() {
+    val options = listOf(100, 200, 300, 500, 800)
+    val currentIndex = options.indexOf(BiliClient.prefs.v135subtitleAnimationFadeIn135).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Animation Fade In135",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v135subtitleAnimationFadeIn135 = value
+        AppToast.show(this, "Subtitle Animation Fade In135: $value")
+    }
+}
+
+internal fun PlayerActivity.showV136AudioFlangerDepthDialog() {
+    val options = listOf(0, 25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v136audioFlangerDepth).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Audio Flanger Depth",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v136audioFlangerDepth = value
+        AppToast.show(this, "Audio Flanger Depth: $value")
+    }
+}
+
+internal fun PlayerActivity.showV136DanmakuFontBgFillClipPathDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v136danmakuFontBgFillClipPath).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Font BG Fill Clip Path",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v136danmakuFontBgFillClipPath = value
+        AppToast.show(this, "Danmaku Font BG Fill Clip Path: $value")
+    }
+}
+
+internal fun PlayerActivity.showV136SubtitleAnimationFadeIn136Dialog() {
+    val options = listOf(100, 200, 300, 500, 800)
+    val currentIndex = options.indexOf(BiliClient.prefs.v136subtitleAnimationFadeIn136).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Animation Fade In136",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v136subtitleAnimationFadeIn136 = value
+        AppToast.show(this, "Subtitle Animation Fade In136: $value")
+    }
+}
+
+internal fun PlayerActivity.showV136GestureTapZoneVisualStyleDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v136gestureTapZoneVisualStyle).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Gesture Tap Zone Visual Style",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v136gestureTapZoneVisualStyle = value
+        AppToast.show(this, "Gesture Tap Zone Visual Style: $value")
+    }
+}
+
+internal fun PlayerActivity.showV136CastVideoPIPFollowOrientationToggle() {
+    val current = BiliClient.prefs.v136castVideoPIPFollowOrientation
+    BiliClient.prefs.v136castVideoPIPFollowOrientation = !current
+    AppToast.show(this, "Cast Video PIP Follow Orientation: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV136PlaylistAutoGroupByCommentCountToggle() {
+    val current = BiliClient.prefs.v136playlistAutoGroupByCommentCount
+    BiliClient.prefs.v136playlistAutoGroupByCommentCount = !current
+    AppToast.show(this, "Playlist Auto Group By Comment Count: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV136CacheSmartPinningOnNetworkSpeedDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v136cacheSmartPinningOnNetworkSpeed).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Cache Smart Pinning On Network Speed",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v136cacheSmartPinningOnNetworkSpeed = value
+        AppToast.show(this, "Cache Smart Pinning On Network Speed: $value")
+    }
+}
+
+internal fun PlayerActivity.showV136ProgressBarCustomThumbColor136Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v136progressBarCustomThumbColor136).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Progress Bar Custom Thumb Color136",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v136progressBarCustomThumbColor136 = value
+        AppToast.show(this, "Progress Bar Custom Thumb Color136: $value")
+    }
+}
+
+internal fun PlayerActivity.showV136VolumeNormalizeAdaptiveToggle() {
+    val current = BiliClient.prefs.v136volumeNormalizeAdaptive
+    BiliClient.prefs.v136volumeNormalizeAdaptive = !current
+    AppToast.show(this, "Volume Normalize Adaptive: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV136HistoryAutoClean136Toggle() {
+    val current = BiliClient.prefs.v136historyAutoClean136
+    BiliClient.prefs.v136historyAutoClean136 = !current
+    AppToast.show(this, "History Auto Clean136: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV136PlaybackSpeedPresetsQuickAccessToggle() {
+    val current = BiliClient.prefs.v136playbackSpeedPresetsQuickAccess
+    BiliClient.prefs.v136playbackSpeedPresetsQuickAccess = !current
+    AppToast.show(this, "Playback Speed Presets Quick Access: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV136ScreenshotAutoSharePinterestToggle() {
+    val current = BiliClient.prefs.v136screenshotAutoSharePinterest
+    BiliClient.prefs.v136screenshotAutoSharePinterest = !current
+    AppToast.show(this, "Screenshot Auto Share Pinterest: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV136VideoPIPFollowAudioFocusToggle() {
+    val current = BiliClient.prefs.v136videoPIPFollowAudioFocus
+    BiliClient.prefs.v136videoPIPFollowAudioFocus = !current
+    AppToast.show(this, "Video PIP Follow Audio Focus: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV136DanmakuFontBgFillClipPath135Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v136danmakuFontBgFillClipPath135).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Font BG Fill Clip Path135",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v136danmakuFontBgFillClipPath135 = value
+        AppToast.show(this, "Danmaku Font BG Fill Clip Path135: $value")
+    }
+}
+
+internal fun PlayerActivity.showV136SubtitleAnimationFadeOut136Dialog() {
+    val options = listOf(100, 200, 300, 500, 800)
+    val currentIndex = options.indexOf(BiliClient.prefs.v136subtitleAnimationFadeOut136).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Animation Fade Out136",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v136subtitleAnimationFadeOut136 = value
+        AppToast.show(this, "Subtitle Animation Fade Out136: $value")
+    }
+}
+
+internal fun PlayerActivity.showV137AudioFlangerFeedback136Dialog() {
+    val options = listOf(0, 25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v137audioFlangerFeedback136).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Audio Flanger Feedback136",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v137audioFlangerFeedback136 = value
+        AppToast.show(this, "Audio Flanger Feedback136: $value")
+    }
+}
+
+internal fun PlayerActivity.showV137DanmakuFontBgFillClipPath136Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v137danmakuFontBgFillClipPath136).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Font BG Fill Clip Path136",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v137danmakuFontBgFillClipPath136 = value
+        AppToast.show(this, "Danmaku Font BG Fill Clip Path136: $value")
+    }
+}
+
+internal fun PlayerActivity.showV137SubtitleAnimationFadeOut137Dialog() {
+    val options = listOf(100, 200, 300, 500, 800)
+    val currentIndex = options.indexOf(BiliClient.prefs.v137subtitleAnimationFadeOut137).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Animation Fade Out137",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v137subtitleAnimationFadeOut137 = value
+        AppToast.show(this, "Subtitle Animation Fade Out137: $value")
+    }
+}
+
+internal fun PlayerActivity.showV137GestureTapZoneVisualColorDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v137gestureTapZoneVisualColor).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Gesture Tap Zone Visual Color",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v137gestureTapZoneVisualColor = value
+        AppToast.show(this, "Gesture Tap Zone Visual Color: $value")
+    }
+}
+
+internal fun PlayerActivity.showV137CastVideoPIPFollowBatteryToggle() {
+    val current = BiliClient.prefs.v137castVideoPIPFollowBattery
+    BiliClient.prefs.v137castVideoPIPFollowBattery = !current
+    AppToast.show(this, "Cast Video PIP Follow Battery: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV137PlaylistAutoGroupByShareCountToggle() {
+    val current = BiliClient.prefs.v137playlistAutoGroupByShareCount
+    BiliClient.prefs.v137playlistAutoGroupByShareCount = !current
+    AppToast.show(this, "Playlist Auto Group By Share Count: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV137CacheSmartPinningOnNetworkTypeDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v137cacheSmartPinningOnNetworkType).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Cache Smart Pinning On Network Type",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v137cacheSmartPinningOnNetworkType = value
+        AppToast.show(this, "Cache Smart Pinning On Network Type: $value")
+    }
+}
+
+internal fun PlayerActivity.showV137ProgressBarCustomThumbColor137Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v137progressBarCustomThumbColor137).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Progress Bar Custom Thumb Color137",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v137progressBarCustomThumbColor137 = value
+        AppToast.show(this, "Progress Bar Custom Thumb Color137: $value")
+    }
+}
+
+internal fun PlayerActivity.showV137VolumeNormalizeSmoothingDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v137volumeNormalizeSmoothing).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Volume Normalize Smoothing",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v137volumeNormalizeSmoothing = value
+        AppToast.show(this, "Volume Normalize Smoothing: $value")
+    }
+}
+
+internal fun PlayerActivity.showV137HistoryAutoClean137Toggle() {
+    val current = BiliClient.prefs.v137historyAutoClean137
+    BiliClient.prefs.v137historyAutoClean137 = !current
+    AppToast.show(this, "History Auto Clean137: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV137PlaybackSpeedPresetsNotificationToggleToggle() {
+    val current = BiliClient.prefs.v137playbackSpeedPresetsNotificationToggle
+    BiliClient.prefs.v137playbackSpeedPresetsNotificationToggle = !current
+    AppToast.show(this, "Playback Speed Presets Notification Toggle: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV137ScreenshotAutoShareTwitchToggle() {
+    val current = BiliClient.prefs.v137screenshotAutoShareTwitch
+    BiliClient.prefs.v137screenshotAutoShareTwitch = !current
+    AppToast.show(this, "Screenshot Auto Share Twitch: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV137VideoPIPFollowDoNotDisturbToggle() {
+    val current = BiliClient.prefs.v137videoPIPFollowDoNotDisturb
+    BiliClient.prefs.v137videoPIPFollowDoNotDisturb = !current
+    AppToast.show(this, "Video PIP Follow Do Not Disturb: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV137DanmakuFontBgFillClipRadiusDialog() {
+    val options = listOf(0, 2, 4, 6, 8)
+    val currentIndex = options.indexOf(BiliClient.prefs.v137danmakuFontBgFillClipRadius).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Font BG Fill Clip Radius",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v137danmakuFontBgFillClipRadius = value
+        AppToast.show(this, "Danmaku Font BG Fill Clip Radius: $value")
+    }
+}
+
+internal fun PlayerActivity.showV137SubtitleAnimationTranslate137Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v137subtitleAnimationTranslate137).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Animation Translate137",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v137subtitleAnimationTranslate137 = value
+        AppToast.show(this, "Subtitle Animation Translate137: $value")
+    }
+}
+
+internal fun PlayerActivity.showV138AudioPhaserToggle138Toggle() {
+    val current = BiliClient.prefs.v138audioPhaserToggle138
+    BiliClient.prefs.v138audioPhaserToggle138 = !current
+    AppToast.show(this, "Audio Phaser Toggle138: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV138DanmakuFontBgFillClipRadius137Dialog() {
+    val options = listOf(0, 2, 4, 6, 8)
+    val currentIndex = options.indexOf(BiliClient.prefs.v138danmakuFontBgFillClipRadius137).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Font BG Fill Clip Radius137",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v138danmakuFontBgFillClipRadius137 = value
+        AppToast.show(this, "Danmaku Font BG Fill Clip Radius137: $value")
+    }
+}
+
+internal fun PlayerActivity.showV138SubtitleAnimationTranslate138Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v138subtitleAnimationTranslate138).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Animation Translate138",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v138subtitleAnimationTranslate138 = value
+        AppToast.show(this, "Subtitle Animation Translate138: $value")
+    }
+}
+
+internal fun PlayerActivity.showV138GestureTapZoneVisualOpacityDialog() {
     val options = listOf(25, 50, 75, 100)
-    val currentIndex = options.indexOf(BiliClient.prefs.v217castAudioVolume217).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v138gestureTapZoneVisualOpacity).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Cast Audio Volume217",
+        title = "Gesture Tap Zone Visual Opacity",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v217castAudioVolume217 = value
-        AppToast.show(this, "Cast Audio Volume217: $value")
+        BiliClient.prefs.v138gestureTapZoneVisualOpacity = value
+        AppToast.show(this, "Gesture Tap Zone Visual Opacity: $value")
     }
-// v217: Cache Download Speed218
+}
 
+internal fun PlayerActivity.showV138CastVideoPIPFollowStorageToggle() {
+    val current = BiliClient.prefs.v138castVideoPIPFollowStorage
+    BiliClient.prefs.v138castVideoPIPFollowStorage = !current
+    AppToast.show(this, "Cast Video PIP Follow Storage: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV217CacheDownloadSpeed218Dialog() {
+internal fun PlayerActivity.showV138PlaylistAutoGroupByFavCountToggle() {
+    val current = BiliClient.prefs.v138playlistAutoGroupByFavCount
+    BiliClient.prefs.v138playlistAutoGroupByFavCount = !current
+    AppToast.show(this, "Playlist Auto Group By Fav Count: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV138CacheSmartPinningOnStorageReadDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v217cacheDownloadSpeed218).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v138cacheSmartPinningOnStorageRead).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Cache Download Speed218",
+        title = "Cache Smart Pinning On Storage Read",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v217cacheDownloadSpeed218 = value
-        AppToast.show(this, "Cache Download Speed218: $value")
+        BiliClient.prefs.v138cacheSmartPinningOnStorageRead = value
+        AppToast.show(this, "Cache Smart Pinning On Storage Read: $value")
     }
-// v217: Video Color Space217
+}
 
+internal fun PlayerActivity.showV138ProgressBarCustomThumbShadow138Toggle() {
+    val current = BiliClient.prefs.v138progressBarCustomThumbShadow138
+    BiliClient.prefs.v138progressBarCustomThumbShadow138 = !current
+    AppToast.show(this, "Progress Bar Custom Thumb Shadow138: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV217VideoColorSpace217Dialog() {
+internal fun PlayerActivity.showV138VolumeNormalizeGateDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v217videoColorSpace217).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v138volumeNormalizeGate).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Video Color Space217",
+        title = "Volume Normalize Gate",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v217videoColorSpace217 = value
-        AppToast.show(this, "Video Color Space217: $value")
+        BiliClient.prefs.v138volumeNormalizeGate = value
+        AppToast.show(this, "Volume Normalize Gate: $value")
     }
-// v217: Danmaku Bottom Max Count242
+}
 
+internal fun PlayerActivity.showV138HistoryAutoClean138Toggle() {
+    val current = BiliClient.prefs.v138historyAutoClean138
+    BiliClient.prefs.v138historyAutoClean138 = !current
+    AppToast.show(this, "History Auto Clean138: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV217DanmakuBottomMaxCount242Dialog() {
+internal fun PlayerActivity.showV138PlaybackSpeedPresetsDragAdjustToggle() {
+    val current = BiliClient.prefs.v138playbackSpeedPresetsDragAdjust
+    BiliClient.prefs.v138playbackSpeedPresetsDragAdjust = !current
+    AppToast.show(this, "Playback Speed Presets Drag Adjust: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV138ScreenshotAutoShareYouTubeToggle() {
+    val current = BiliClient.prefs.v138screenshotAutoShareYouTube
+    BiliClient.prefs.v138screenshotAutoShareYouTube = !current
+    AppToast.show(this, "Screenshot Auto Share YouTube: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV138VideoPIPFollowBrightnessToggle() {
+    val current = BiliClient.prefs.v138videoPIPFollowBrightness
+    BiliClient.prefs.v138videoPIPFollowBrightness = !current
+    AppToast.show(this, "Video PIP Follow Brightness: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV138DanmakuFontBgFillClipRadius138Dialog() {
+    val options = listOf(0, 2, 4, 6, 8)
+    val currentIndex = options.indexOf(BiliClient.prefs.v138danmakuFontBgFillClipRadius138).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Font BG Fill Clip Radius138",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v138danmakuFontBgFillClipRadius138 = value
+        AppToast.show(this, "Danmaku Font BG Fill Clip Radius138: $value")
+    }
+}
+
+internal fun PlayerActivity.showV138SubtitleAnimationScale138Dialog() {
+    val options = listOf(75, 100, 125, 150, 200)
+    val currentIndex = options.indexOf(BiliClient.prefs.v138subtitleAnimationScale138).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Animation Scale138",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v138subtitleAnimationScale138 = value
+        AppToast.show(this, "Subtitle Animation Scale138: $value")
+    }
+}
+
+internal fun PlayerActivity.showV139AudioPhaserRateDialog() {
+    val options = listOf(0, 25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v139audioPhaserRate).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Audio Phaser Rate",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v139audioPhaserRate = value
+        AppToast.show(this, "Audio Phaser Rate: $value")
+    }
+}
+
+internal fun PlayerActivity.showV139DanmakuFontBgFillClipRadius139Dialog() {
+    val options = listOf(0, 2, 4, 6, 8)
+    val currentIndex = options.indexOf(BiliClient.prefs.v139danmakuFontBgFillClipRadius139).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Font BG Fill Clip Radius139",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v139danmakuFontBgFillClipRadius139 = value
+        AppToast.show(this, "Danmaku Font BG Fill Clip Radius139: $value")
+    }
+}
+
+internal fun PlayerActivity.showV139SubtitleAnimationScale139Dialog() {
+    val options = listOf(75, 100, 125, 150, 200)
+    val currentIndex = options.indexOf(BiliClient.prefs.v139subtitleAnimationScale139).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Animation Scale139",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v139subtitleAnimationScale139 = value
+        AppToast.show(this, "Subtitle Animation Scale139: $value")
+    }
+}
+
+internal fun PlayerActivity.showV139GestureTapZoneVisualDurationDialog() {
+    val options = listOf(100, 200, 300, 400, 500)
+    val currentIndex = options.indexOf(BiliClient.prefs.v139gestureTapZoneVisualDuration).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Gesture Tap Zone Visual Duration",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v139gestureTapZoneVisualDuration = value
+        AppToast.show(this, "Gesture Tap Zone Visual Duration: $value")
+    }
+}
+
+internal fun PlayerActivity.showV139CastVideoPIPFollowVolumeToggle() {
+    val current = BiliClient.prefs.v139castVideoPIPFollowVolume
+    BiliClient.prefs.v139castVideoPIPFollowVolume = !current
+    AppToast.show(this, "Cast Video PIP Follow Volume: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV139PlaylistAutoGroupByDanCountToggle() {
+    val current = BiliClient.prefs.v139playlistAutoGroupByDanCount
+    BiliClient.prefs.v139playlistAutoGroupByDanCount = !current
+    AppToast.show(this, "Playlist Auto Group By Dan Count: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV139CacheSmartPinningOnStorageWriteDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v217danmakuBottomMaxCount242).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v139cacheSmartPinningOnStorageWrite).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count242",
+        title = "Cache Smart Pinning On Storage Write",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v217danmakuBottomMaxCount242 = value
-        AppToast.show(this, "Danmaku Bottom Max Count242: $value")
+        BiliClient.prefs.v139cacheSmartPinningOnStorageWrite = value
+        AppToast.show(this, "Cache Smart Pinning On Storage Write: $value")
     }
-// v218: Danmaku Bottom Max Count243
+}
 
+internal fun PlayerActivity.showV139ProgressBarCustomThumbGlow139Toggle() {
+    val current = BiliClient.prefs.v139progressBarCustomThumbGlow139
+    BiliClient.prefs.v139progressBarCustomThumbGlow139 = !current
+    AppToast.show(this, "Progress Bar Custom Thumb Glow139: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV218DanmakuBottomMaxCount243Dialog() {
+internal fun PlayerActivity.showV139VolumeNormalizeKneeDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v218danmakuBottomMaxCount243).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v139volumeNormalizeKnee).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count243",
+        title = "Volume Normalize Knee",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v218danmakuBottomMaxCount243 = value
-        AppToast.show(this, "Danmaku Bottom Max Count243: $value")
+        BiliClient.prefs.v139volumeNormalizeKnee = value
+        AppToast.show(this, "Volume Normalize Knee: $value")
     }
-// v218: Gesture Shake Action218
+}
 
+internal fun PlayerActivity.showV139HistoryAutoClean139Toggle() {
+    val current = BiliClient.prefs.v139historyAutoClean139
+    BiliClient.prefs.v139historyAutoClean139 = !current
+    AppToast.show(this, "History Auto Clean139: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV218GestureShakeAction218Dialog() {
+internal fun PlayerActivity.showV139PlaybackSpeedPresetsSwipeAdjustToggle() {
+    val current = BiliClient.prefs.v139playbackSpeedPresetsSwipeAdjust
+    BiliClient.prefs.v139playbackSpeedPresetsSwipeAdjust = !current
+    AppToast.show(this, "Playback Speed Presets Swipe Adjust: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV139ScreenshotAutoShareTwitchClipToggle() {
+    val current = BiliClient.prefs.v139screenshotAutoShareTwitchClip
+    BiliClient.prefs.v139screenshotAutoShareTwitchClip = !current
+    AppToast.show(this, "Screenshot Auto Share Twitch Clip: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV139VideoPIPFollowContrastToggle() {
+    val current = BiliClient.prefs.v139videoPIPFollowContrast
+    BiliClient.prefs.v139videoPIPFollowContrast = !current
+    AppToast.show(this, "Video PIP Follow Contrast: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV139DanmakuFontBgFillClipTypeDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v218gestureShakeAction218).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v139danmakuFontBgFillClipType).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Gesture Shake Action218",
+        title = "Danmaku Font BG Fill Clip Type",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v218gestureShakeAction218 = value
-        AppToast.show(this, "Gesture Shake Action218: $value")
+        BiliClient.prefs.v139danmakuFontBgFillClipType = value
+        AppToast.show(this, "Danmaku Font BG Fill Clip Type: $value")
     }
-// v218: Cast Audio Volume218
+}
 
+internal fun PlayerActivity.showV139SubtitleAnimationRotate139Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v139subtitleAnimationRotate139).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Animation Rotate139",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v139subtitleAnimationRotate139 = value
+        AppToast.show(this, "Subtitle Animation Rotate139: $value")
+    }
+}
 
-internal fun PlayerActivity.showV218CastAudioVolume218Dialog() {
+internal fun PlayerActivity.showV140AudioPhaserDepthDialog() {
+    val options = listOf(0, 25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v140audioPhaserDepth).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Audio Phaser Depth",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v140audioPhaserDepth = value
+        AppToast.show(this, "Audio Phaser Depth: $value")
+    }
+}
+
+internal fun PlayerActivity.showV140DanmakuFontBgFillClipType139Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v140danmakuFontBgFillClipType139).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Font BG Fill Clip Type139",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v140danmakuFontBgFillClipType139 = value
+        AppToast.show(this, "Danmaku Font BG Fill Clip Type139: $value")
+    }
+}
+
+internal fun PlayerActivity.showV140SubtitleAnimationRotate140Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v140subtitleAnimationRotate140).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Animation Rotate140",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v140subtitleAnimationRotate140 = value
+        AppToast.show(this, "Subtitle Animation Rotate140: $value")
+    }
+}
+
+internal fun PlayerActivity.showV140GestureTapZoneVisualScaleDialog() {
+    val options = listOf(75, 100, 125, 150, 200)
+    val currentIndex = options.indexOf(BiliClient.prefs.v140gestureTapZoneVisualScale).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Gesture Tap Zone Visual Scale",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v140gestureTapZoneVisualScale = value
+        AppToast.show(this, "Gesture Tap Zone Visual Scale: $value")
+    }
+}
+
+internal fun PlayerActivity.showV140CastVideoPIPFollowSaturationToggle() {
+    val current = BiliClient.prefs.v140castVideoPIPFollowSaturation
+    BiliClient.prefs.v140castVideoPIPFollowSaturation = !current
+    AppToast.show(this, "Cast Video PIP Follow Saturation: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV140PlaylistAutoGroupByGenre140Toggle() {
+    val current = BiliClient.prefs.v140playlistAutoGroupByGenre140
+    BiliClient.prefs.v140playlistAutoGroupByGenre140 = !current
+    AppToast.show(this, "Playlist Auto Group By Genre140: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV140CacheSmartPinningOnStorageIOPSDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v140cacheSmartPinningOnStorageIOPS).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Cache Smart Pinning On Storage IOPS",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v140cacheSmartPinningOnStorageIOPS = value
+        AppToast.show(this, "Cache Smart Pinning On Storage IOPS: $value")
+    }
+}
+
+internal fun PlayerActivity.showV140ProgressBarCustomThumbBorder140Toggle() {
+    val current = BiliClient.prefs.v140progressBarCustomThumbBorder140
+    BiliClient.prefs.v140progressBarCustomThumbBorder140 = !current
+    AppToast.show(this, "Progress Bar Custom Thumb Border140: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV140VolumeNormalizeAttackDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v140volumeNormalizeAttack).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Volume Normalize Attack",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v140volumeNormalizeAttack = value
+        AppToast.show(this, "Volume Normalize Attack: $value")
+    }
+}
+
+internal fun PlayerActivity.showV140HistoryAutoClean140Toggle() {
+    val current = BiliClient.prefs.v140historyAutoClean140
+    BiliClient.prefs.v140historyAutoClean140 = !current
+    AppToast.show(this, "History Auto Clean140: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV140PlaybackSpeedPresetsPinchAdjustToggle() {
+    val current = BiliClient.prefs.v140playbackSpeedPresetsPinchAdjust
+    BiliClient.prefs.v140playbackSpeedPresetsPinchAdjust = !current
+    AppToast.show(this, "Playback Speed Presets Pinch Adjust: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV140ScreenshotAutoShareBilibiliToggle() {
+    val current = BiliClient.prefs.v140screenshotAutoShareBilibili
+    BiliClient.prefs.v140screenshotAutoShareBilibili = !current
+    AppToast.show(this, "Screenshot Auto Share Bilibili: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV140VideoPIPFollowGammaToggle() {
+    val current = BiliClient.prefs.v140videoPIPFollowGamma
+    BiliClient.prefs.v140videoPIPFollowGamma = !current
+    AppToast.show(this, "Video PIP Follow Gamma: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV140DanmakuFontBgFillClipType140Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v140danmakuFontBgFillClipType140).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Font BG Fill Clip Type140",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v140danmakuFontBgFillClipType140 = value
+        AppToast.show(this, "Danmaku Font BG Fill Clip Type140: $value")
+    }
+}
+
+internal fun PlayerActivity.showV140SubtitleAnimationBlur140Dialog() {
+    val options = listOf(0, 25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v140subtitleAnimationBlur140).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Animation Blur140",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v140subtitleAnimationBlur140 = value
+        AppToast.show(this, "Subtitle Animation Blur140: $value")
+    }
+}
+
+internal fun PlayerActivity.showV141AudioPhaserFeedbackDialog() {
+    val options = listOf(0, 25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v141audioPhaserFeedback).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Audio Phaser Feedback",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v141audioPhaserFeedback = value
+        AppToast.show(this, "Audio Phaser Feedback: $value")
+    }
+}
+
+internal fun PlayerActivity.showV141DanmakuFontBgFillClipType140xDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v141danmakuFontBgFillClipType140x).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Font BG Fill Clip Type140x",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v141danmakuFontBgFillClipType140x = value
+        AppToast.show(this, "Danmaku Font BG Fill Clip Type140x: $value")
+    }
+}
+
+internal fun PlayerActivity.showV141SubtitleAnimationBlur141Dialog() {
+    val options = listOf(0, 25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v141subtitleAnimationBlur141).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Animation Blur141",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v141subtitleAnimationBlur141 = value
+        AppToast.show(this, "Subtitle Animation Blur141: $value")
+    }
+}
+
+internal fun PlayerActivity.showV141GestureTapZoneVisualAnimDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v141gestureTapZoneVisualAnim).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Gesture Tap Zone Visual Anim",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v141gestureTapZoneVisualAnim = value
+        AppToast.show(this, "Gesture Tap Zone Visual Anim: $value")
+    }
+}
+
+internal fun PlayerActivity.showV141CastVideoPIPSnapToCornerToggle() {
+    val current = BiliClient.prefs.v141castVideoPIPSnapToCorner
+    BiliClient.prefs.v141castVideoPIPSnapToCorner = !current
+    AppToast.show(this, "Cast Video PIP Snap To Corner: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV141PlaylistAutoGroupByDuration141Toggle() {
+    val current = BiliClient.prefs.v141playlistAutoGroupByDuration141
+    BiliClient.prefs.v141playlistAutoGroupByDuration141 = !current
+    AppToast.show(this, "Playlist Auto Group By Duration141: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV141CacheSmartPinningOnScheduleTypeDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v141cacheSmartPinningOnScheduleType).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Cache Smart Pinning On Schedule Type",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v141cacheSmartPinningOnScheduleType = value
+        AppToast.show(this, "Cache Smart Pinning On Schedule Type: $value")
+    }
+}
+
+internal fun PlayerActivity.showV141ProgressBarCustomThumbAnim141Toggle() {
+    val current = BiliClient.prefs.v141progressBarCustomThumbAnim141
+    BiliClient.prefs.v141progressBarCustomThumbAnim141 = !current
+    AppToast.show(this, "Progress Bar Custom Thumb Anim141: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV141VolumeNormalizeRangeDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v141volumeNormalizeRange).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Volume Normalize Range",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v141volumeNormalizeRange = value
+        AppToast.show(this, "Volume Normalize Range: $value")
+    }
+}
+
+internal fun PlayerActivity.showV141HistoryAutoClean141Toggle() {
+    val current = BiliClient.prefs.v141historyAutoClean141
+    BiliClient.prefs.v141historyAutoClean141 = !current
+    AppToast.show(this, "History Auto Clean141: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV141PlaybackSpeedPresetsShakeAdjustToggle() {
+    val current = BiliClient.prefs.v141playbackSpeedPresetsShakeAdjust
+    BiliClient.prefs.v141playbackSpeedPresetsShakeAdjust = !current
+    AppToast.show(this, "Playback Speed Presets Shake Adjust: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV141ScreenshotAutoShareDiscordToggle() {
+    val current = BiliClient.prefs.v141screenshotAutoShareDiscord
+    BiliClient.prefs.v141screenshotAutoShareDiscord = !current
+    AppToast.show(this, "Screenshot Auto Share Discord: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV141VideoPIPFollowColorTempToggle() {
+    val current = BiliClient.prefs.v141videoPIPFollowColorTemp
+    BiliClient.prefs.v141videoPIPFollowColorTemp = !current
+    AppToast.show(this, "Video PIP Follow Color Temp: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV141DanmakuFontBgFillMaskToggleToggle() {
+    val current = BiliClient.prefs.v141danmakuFontBgFillMaskToggle
+    BiliClient.prefs.v141danmakuFontBgFillMaskToggle = !current
+    AppToast.show(this, "Danmaku Font BG Fill Mask Toggle: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV141SubtitleAnimationFadeIn141Dialog() {
+    val options = listOf(100, 200, 300, 500, 800)
+    val currentIndex = options.indexOf(BiliClient.prefs.v141subtitleAnimationFadeIn141).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Animation Fade In141",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v141subtitleAnimationFadeIn141 = value
+        AppToast.show(this, "Subtitle Animation Fade In141: $value")
+    }
+}
+
+internal fun PlayerActivity.showV142AudioPhaserMixDialog() {
     val options = listOf(25, 50, 75, 100)
-    val currentIndex = options.indexOf(BiliClient.prefs.v218castAudioVolume218).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v142audioPhaserMix).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Cast Audio Volume218",
+        title = "Audio Phaser Mix",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v218castAudioVolume218 = value
-        AppToast.show(this, "Cast Audio Volume218: $value")
+        BiliClient.prefs.v142audioPhaserMix = value
+        AppToast.show(this, "Audio Phaser Mix: $value")
     }
-// v218: Cache Download Speed219
+}
 
-
-internal fun PlayerActivity.showV218CacheDownloadSpeed219Dialog() {
+internal fun PlayerActivity.showV142DanmakuFontBgFillMaskPathDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v218cacheDownloadSpeed219).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v142danmakuFontBgFillMaskPath).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Cache Download Speed219",
+        title = "Danmaku Font BG Fill Mask Path",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v218cacheDownloadSpeed219 = value
-        AppToast.show(this, "Cache Download Speed219: $value")
+        BiliClient.prefs.v142danmakuFontBgFillMaskPath = value
+        AppToast.show(this, "Danmaku Font BG Fill Mask Path: $value")
     }
-// v218: Video Color Space218
+}
 
+internal fun PlayerActivity.showV142SubtitleAnimationFadeIn142Dialog() {
+    val options = listOf(100, 200, 300, 500, 800)
+    val currentIndex = options.indexOf(BiliClient.prefs.v142subtitleAnimationFadeIn142).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Animation Fade In142",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v142subtitleAnimationFadeIn142 = value
+        AppToast.show(this, "Subtitle Animation Fade In142: $value")
+    }
+}
 
-internal fun PlayerActivity.showV218VideoColorSpace218Dialog() {
+internal fun PlayerActivity.showV142GestureTapZoneVisualAnimDurationDialog() {
+    val options = listOf(100, 200, 300, 400, 500)
+    val currentIndex = options.indexOf(BiliClient.prefs.v142gestureTapZoneVisualAnimDuration).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Gesture Tap Zone Visual Anim Duration",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v142gestureTapZoneVisualAnimDuration = value
+        AppToast.show(this, "Gesture Tap Zone Visual Anim Duration: $value")
+    }
+}
+
+internal fun PlayerActivity.showV142CastVideoPIPSnapToEdgeToggle() {
+    val current = BiliClient.prefs.v142castVideoPIPSnapToEdge
+    BiliClient.prefs.v142castVideoPIPSnapToEdge = !current
+    AppToast.show(this, "Cast Video PIP Snap To Edge: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV142PlaylistAutoGroupByDuration142Toggle() {
+    val current = BiliClient.prefs.v142playlistAutoGroupByDuration142
+    BiliClient.prefs.v142playlistAutoGroupByDuration142 = !current
+    AppToast.show(this, "Playlist Auto Group By Duration142: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV142CacheSmartPinningOnScheduleFreqDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v218videoColorSpace218).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v142cacheSmartPinningOnScheduleFreq).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Video Color Space218",
+        title = "Cache Smart Pinning On Schedule Freq",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v218videoColorSpace218 = value
-        AppToast.show(this, "Video Color Space218: $value")
+        BiliClient.prefs.v142cacheSmartPinningOnScheduleFreq = value
+        AppToast.show(this, "Cache Smart Pinning On Schedule Freq: $value")
     }
-// v218: Danmaku Bottom Max Count244
+}
 
+internal fun PlayerActivity.showV142ProgressBarCustomThumbAnim142Toggle() {
+    val current = BiliClient.prefs.v142progressBarCustomThumbAnim142
+    BiliClient.prefs.v142progressBarCustomThumbAnim142 = !current
+    AppToast.show(this, "Progress Bar Custom Thumb Anim142: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV218DanmakuBottomMaxCount244Dialog() {
+internal fun PlayerActivity.showV142VolumeNormalizeStereoToggle() {
+    val current = BiliClient.prefs.v142volumeNormalizeStereo
+    BiliClient.prefs.v142volumeNormalizeStereo = !current
+    AppToast.show(this, "Volume Normalize Stereo: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV142HistoryAutoClean142Toggle() {
+    val current = BiliClient.prefs.v142historyAutoClean142
+    BiliClient.prefs.v142historyAutoClean142 = !current
+    AppToast.show(this, "History Auto Clean142: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV142PlaybackSpeedPresetsTiltAdjustToggle() {
+    val current = BiliClient.prefs.v142playbackSpeedPresetsTiltAdjust
+    BiliClient.prefs.v142playbackSpeedPresetsTiltAdjust = !current
+    AppToast.show(this, "Playback Speed Presets Tilt Adjust: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV142ScreenshotAutoShareWhatsAppToggle() {
+    val current = BiliClient.prefs.v142screenshotAutoShareWhatsApp
+    BiliClient.prefs.v142screenshotAutoShareWhatsApp = !current
+    AppToast.show(this, "Screenshot Auto Share WhatsApp: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV142VideoPIPFollowColorSpaceToggle() {
+    val current = BiliClient.prefs.v142videoPIPFollowColorSpace
+    BiliClient.prefs.v142videoPIPFollowColorSpace = !current
+    AppToast.show(this, "Video PIP Follow Color Space: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV142DanmakuFontBgFillMaskPath141Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v218danmakuBottomMaxCount244).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v142danmakuFontBgFillMaskPath141).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count244",
+        title = "Danmaku Font BG Fill Mask Path141",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v218danmakuBottomMaxCount244 = value
-        AppToast.show(this, "Danmaku Bottom Max Count244: $value")
+        BiliClient.prefs.v142danmakuFontBgFillMaskPath141 = value
+        AppToast.show(this, "Danmaku Font BG Fill Mask Path141: $value")
     }
-// v219: Danmaku Bottom Max Count245
+}
 
+internal fun PlayerActivity.showV142SubtitleAnimationFadeOut142Dialog() {
+    val options = listOf(100, 200, 300, 500, 800)
+    val currentIndex = options.indexOf(BiliClient.prefs.v142subtitleAnimationFadeOut142).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Animation Fade Out142",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v142subtitleAnimationFadeOut142 = value
+        AppToast.show(this, "Subtitle Animation Fade Out142: $value")
+    }
+}
 
-internal fun PlayerActivity.showV219DanmakuBottomMaxCount245Dialog() {
+internal fun PlayerActivity.showV143AudioPhaserStagesDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v219danmakuBottomMaxCount245).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v143audioPhaserStages).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count245",
+        title = "Audio Phaser Stages",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v219danmakuBottomMaxCount245 = value
-        AppToast.show(this, "Danmaku Bottom Max Count245: $value")
+        BiliClient.prefs.v143audioPhaserStages = value
+        AppToast.show(this, "Audio Phaser Stages: $value")
     }
-// v219: Gesture Shake Action219
+}
 
-
-internal fun PlayerActivity.showV219GestureShakeAction219Dialog() {
+internal fun PlayerActivity.showV143DanmakuFontBgFillMaskPath142Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v219gestureShakeAction219).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v143danmakuFontBgFillMaskPath142).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Gesture Shake Action219",
+        title = "Danmaku Font BG Fill Mask Path142",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v219gestureShakeAction219 = value
-        AppToast.show(this, "Gesture Shake Action219: $value")
+        BiliClient.prefs.v143danmakuFontBgFillMaskPath142 = value
+        AppToast.show(this, "Danmaku Font BG Fill Mask Path142: $value")
     }
-// v219: Cast Audio Volume219
+}
 
+internal fun PlayerActivity.showV143SubtitleAnimationFadeOut143Dialog() {
+    val options = listOf(100, 200, 300, 500, 800)
+    val currentIndex = options.indexOf(BiliClient.prefs.v143subtitleAnimationFadeOut143).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Animation Fade Out143",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v143subtitleAnimationFadeOut143 = value
+        AppToast.show(this, "Subtitle Animation Fade Out143: $value")
+    }
+}
 
-internal fun PlayerActivity.showV219CastAudioVolume219Dialog() {
+internal fun PlayerActivity.showV143GestureTapZoneVisualAnimTypeDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v143gestureTapZoneVisualAnimType).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Gesture Tap Zone Visual Anim Type",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v143gestureTapZoneVisualAnimType = value
+        AppToast.show(this, "Gesture Tap Zone Visual Anim Type: $value")
+    }
+}
+
+internal fun PlayerActivity.showV143CastVideoPIPSnapStrengthDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v143castVideoPIPSnapStrength).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Cast Video PIP Snap Strength",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v143castVideoPIPSnapStrength = value
+        AppToast.show(this, "Cast Video PIP Snap Strength: $value")
+    }
+}
+
+internal fun PlayerActivity.showV143PlaylistAutoGroupByResolutionToggle() {
+    val current = BiliClient.prefs.v143playlistAutoGroupByResolution
+    BiliClient.prefs.v143playlistAutoGroupByResolution = !current
+    AppToast.show(this, "Playlist Auto Group By Resolution: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV143CacheSmartPinningOnScheduleTimeDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v143cacheSmartPinningOnScheduleTime).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Cache Smart Pinning On Schedule Time",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v143cacheSmartPinningOnScheduleTime = value
+        AppToast.show(this, "Cache Smart Pinning On Schedule Time: $value")
+    }
+}
+
+internal fun PlayerActivity.showV143ProgressBarCustomThumbSize143Dialog() {
+    val options = listOf(8, 10, 12, 14, 16)
+    val currentIndex = options.indexOf(BiliClient.prefs.v143progressBarCustomThumbSize143).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Progress Bar Custom Thumb Size143",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v143progressBarCustomThumbSize143 = value
+        AppToast.show(this, "Progress Bar Custom Thumb Size143: $value")
+    }
+}
+
+internal fun PlayerActivity.showV143VolumeNormalizeMidSideToggle() {
+    val current = BiliClient.prefs.v143volumeNormalizeMidSide
+    BiliClient.prefs.v143volumeNormalizeMidSide = !current
+    AppToast.show(this, "Volume Normalize Mid Side: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV143HistoryAutoClean143Toggle() {
+    val current = BiliClient.prefs.v143historyAutoClean143
+    BiliClient.prefs.v143historyAutoClean143 = !current
+    AppToast.show(this, "History Auto Clean143: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV143PlaybackSpeedPresetsProximityToggle() {
+    val current = BiliClient.prefs.v143playbackSpeedPresetsProximity
+    BiliClient.prefs.v143playbackSpeedPresetsProximity = !current
+    AppToast.show(this, "Playback Speed Presets Proximity: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV143ScreenshotAutoShareLineToggle() {
+    val current = BiliClient.prefs.v143screenshotAutoShareLine
+    BiliClient.prefs.v143screenshotAutoShareLine = !current
+    AppToast.show(this, "Screenshot Auto Share Line: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV143VideoPIPFollowColorBitToggle() {
+    val current = BiliClient.prefs.v143videoPIPFollowColorBit
+    BiliClient.prefs.v143videoPIPFollowColorBit = !current
+    AppToast.show(this, "Video PIP Follow Color Bit: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV143DanmakuFontBgFillMaskRadiusDialog() {
+    val options = listOf(0, 2, 4, 6, 8)
+    val currentIndex = options.indexOf(BiliClient.prefs.v143danmakuFontBgFillMaskRadius).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Font BG Fill Mask Radius",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v143danmakuFontBgFillMaskRadius = value
+        AppToast.show(this, "Danmaku Font BG Fill Mask Radius: $value")
+    }
+}
+
+internal fun PlayerActivity.showV143SubtitleAnimationTranslate143Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v143subtitleAnimationTranslate143).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Animation Translate143",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v143subtitleAnimationTranslate143 = value
+        AppToast.show(this, "Subtitle Animation Translate143: $value")
+    }
+}
+
+internal fun PlayerActivity.showV144AudioCompressorToggle144Toggle() {
+    val current = BiliClient.prefs.v144audioCompressorToggle144
+    BiliClient.prefs.v144audioCompressorToggle144 = !current
+    AppToast.show(this, "Audio Compressor Toggle144: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV144DanmakuFontBgFillMaskRadius143Dialog() {
+    val options = listOf(0, 2, 4, 6, 8)
+    val currentIndex = options.indexOf(BiliClient.prefs.v144danmakuFontBgFillMaskRadius143).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Font BG Fill Mask Radius143",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v144danmakuFontBgFillMaskRadius143 = value
+        AppToast.show(this, "Danmaku Font BG Fill Mask Radius143: $value")
+    }
+}
+
+internal fun PlayerActivity.showV144SubtitleAnimationTranslate144Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v144subtitleAnimationTranslate144).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Animation Translate144",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v144subtitleAnimationTranslate144 = value
+        AppToast.show(this, "Subtitle Animation Translate144: $value")
+    }
+}
+
+internal fun PlayerActivity.showV144GestureTapZoneVisualAnimScaleDialog() {
+    val options = listOf(75, 100, 125, 150, 200)
+    val currentIndex = options.indexOf(BiliClient.prefs.v144gestureTapZoneVisualAnimScale).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Gesture Tap Zone Visual Anim Scale",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v144gestureTapZoneVisualAnimScale = value
+        AppToast.show(this, "Gesture Tap Zone Visual Anim Scale: $value")
+    }
+}
+
+internal fun PlayerActivity.showV144CastVideoPIPSnapOffsetDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v144castVideoPIPSnapOffset).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Cast Video PIP Snap Offset",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v144castVideoPIPSnapOffset = value
+        AppToast.show(this, "Cast Video PIP Snap Offset: $value")
+    }
+}
+
+internal fun PlayerActivity.showV144PlaylistAutoGroupByCodecToggle() {
+    val current = BiliClient.prefs.v144playlistAutoGroupByCodec
+    BiliClient.prefs.v144playlistAutoGroupByCodec = !current
+    AppToast.show(this, "Playlist Auto Group By Codec: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV144CacheSmartPinningOnScheduleDayDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v144cacheSmartPinningOnScheduleDay).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Cache Smart Pinning On Schedule Day",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v144cacheSmartPinningOnScheduleDay = value
+        AppToast.show(this, "Cache Smart Pinning On Schedule Day: $value")
+    }
+}
+
+internal fun PlayerActivity.showV144ProgressBarCustomThumbColor144Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v144progressBarCustomThumbColor144).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Progress Bar Custom Thumb Color144",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v144progressBarCustomThumbColor144 = value
+        AppToast.show(this, "Progress Bar Custom Thumb Color144: $value")
+    }
+}
+
+internal fun PlayerActivity.showV144VolumeNormalizeMultibandToggle() {
+    val current = BiliClient.prefs.v144volumeNormalizeMultiband
+    BiliClient.prefs.v144volumeNormalizeMultiband = !current
+    AppToast.show(this, "Volume Normalize Multiband: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV144HistoryAutoClean144Toggle() {
+    val current = BiliClient.prefs.v144historyAutoClean144
+    BiliClient.prefs.v144historyAutoClean144 = !current
+    AppToast.show(this, "History Auto Clean144: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV144PlaybackSpeedPresetsLightSensorToggle() {
+    val current = BiliClient.prefs.v144playbackSpeedPresetsLightSensor
+    BiliClient.prefs.v144playbackSpeedPresetsLightSensor = !current
+    AppToast.show(this, "Playback Speed Presets Light Sensor: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV144ScreenshotAutoShareInstagramToggle() {
+    val current = BiliClient.prefs.v144screenshotAutoShareInstagram
+    BiliClient.prefs.v144screenshotAutoShareInstagram = !current
+    AppToast.show(this, "Screenshot Auto Share Instagram: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV144VideoPIPFollowHDRToggle() {
+    val current = BiliClient.prefs.v144videoPIPFollowHDR
+    BiliClient.prefs.v144videoPIPFollowHDR = !current
+    AppToast.show(this, "Video PIP Follow HDR: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV144DanmakuFontBgFillMaskRadius144Dialog() {
+    val options = listOf(0, 2, 4, 6, 8)
+    val currentIndex = options.indexOf(BiliClient.prefs.v144danmakuFontBgFillMaskRadius144).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Font BG Fill Mask Radius144",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v144danmakuFontBgFillMaskRadius144 = value
+        AppToast.show(this, "Danmaku Font BG Fill Mask Radius144: $value")
+    }
+}
+
+internal fun PlayerActivity.showV144SubtitleAnimationScale144Dialog() {
+    val options = listOf(75, 100, 125, 150, 200)
+    val currentIndex = options.indexOf(BiliClient.prefs.v144subtitleAnimationScale144).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Animation Scale144",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v144subtitleAnimationScale144 = value
+        AppToast.show(this, "Subtitle Animation Scale144: $value")
+    }
+}
+
+internal fun PlayerActivity.showV145AudioCompressorThresholdDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v145audioCompressorThreshold).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Audio Compressor Threshold",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v145audioCompressorThreshold = value
+        AppToast.show(this, "Audio Compressor Threshold: $value")
+    }
+}
+
+internal fun PlayerActivity.showV145DanmakuFontBgFillMaskRadius145Dialog() {
+    val options = listOf(0, 2, 4, 6, 8)
+    val currentIndex = options.indexOf(BiliClient.prefs.v145danmakuFontBgFillMaskRadius145).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Font BG Fill Mask Radius145",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v145danmakuFontBgFillMaskRadius145 = value
+        AppToast.show(this, "Danmaku Font BG Fill Mask Radius145: $value")
+    }
+}
+
+internal fun PlayerActivity.showV145SubtitleAnimationScale145Dialog() {
+    val options = listOf(75, 100, 125, 150, 200)
+    val currentIndex = options.indexOf(BiliClient.prefs.v145subtitleAnimationScale145).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Animation Scale145",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v145subtitleAnimationScale145 = value
+        AppToast.show(this, "Subtitle Animation Scale145: $value")
+    }
+}
+
+internal fun PlayerActivity.showV145GestureTapZoneVisualAnimOpacityDialog() {
     val options = listOf(25, 50, 75, 100)
-    val currentIndex = options.indexOf(BiliClient.prefs.v219castAudioVolume219).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v145gestureTapZoneVisualAnimOpacity).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Cast Audio Volume219",
+        title = "Gesture Tap Zone Visual Anim Opacity",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v219castAudioVolume219 = value
-        AppToast.show(this, "Cast Audio Volume219: $value")
+        BiliClient.prefs.v145gestureTapZoneVisualAnimOpacity = value
+        AppToast.show(this, "Gesture Tap Zone Visual Anim Opacity: $value")
     }
-// v219: Cache Download Speed220
+}
 
-
-internal fun PlayerActivity.showV219CacheDownloadSpeed220Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v219cacheDownloadSpeed220).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cache Download Speed220",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v219cacheDownloadSpeed220 = value
-        AppToast.show(this, "Cache Download Speed220: $value")
-    }
-// v219: Video Color Space219
-
-
-internal fun PlayerActivity.showV219VideoColorSpace219Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v219videoColorSpace219).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Video Color Space219",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v219videoColorSpace219 = value
-        AppToast.show(this, "Video Color Space219: $value")
-    }
-// v219: Danmaku Bottom Max Count246
-
-
-internal fun PlayerActivity.showV219DanmakuBottomMaxCount246Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v219danmakuBottomMaxCount246).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count246",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v219danmakuBottomMaxCount246 = value
-        AppToast.show(this, "Danmaku Bottom Max Count246: $value")
-    }
-// v220: Danmaku Bottom Max Count247
-
-
-internal fun PlayerActivity.showV220DanmakuBottomMaxCount247Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v220danmakuBottomMaxCount247).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count247",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v220danmakuBottomMaxCount247 = value
-        AppToast.show(this, "Danmaku Bottom Max Count247: $value")
-    }
-// v220: Gesture Shake Action220
-
-
-internal fun PlayerActivity.showV220GestureShakeAction220Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v220gestureShakeAction220).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Gesture Shake Action220",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v220gestureShakeAction220 = value
-        AppToast.show(this, "Gesture Shake Action220: $value")
-    }
-// v220: Cast Audio Volume220
-
-
-internal fun PlayerActivity.showV220CastAudioVolume220Dialog() {
-    val options = listOf(25, 50, 75, 100)
-    val currentIndex = options.indexOf(BiliClient.prefs.v220castAudioVolume220).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cast Audio Volume220",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v220castAudioVolume220 = value
-        AppToast.show(this, "Cast Audio Volume220: $value")
-    }
-// v220: Cache Download Speed221
-
-
-internal fun PlayerActivity.showV220CacheDownloadSpeed221Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v220cacheDownloadSpeed221).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cache Download Speed221",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v220cacheDownloadSpeed221 = value
-        AppToast.show(this, "Cache Download Speed221: $value")
-    }
-// v220: Video Color Space220
-
-
-internal fun PlayerActivity.showV220VideoColorSpace220Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v220videoColorSpace220).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Video Color Space220",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v220videoColorSpace220 = value
-        AppToast.show(this, "Video Color Space220: $value")
-    }
-// v220: Danmaku Bottom Max Count248
-
-
-internal fun PlayerActivity.showV220DanmakuBottomMaxCount248Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v220danmakuBottomMaxCount248).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count248",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v220danmakuBottomMaxCount248 = value
-        AppToast.show(this, "Danmaku Bottom Max Count248: $value")
-    }
-// v221: Danmaku Bottom Max Count249
-
-
-internal fun PlayerActivity.showV221DanmakuBottomMaxCount249Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v221danmakuBottomMaxCount249).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count249",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v221danmakuBottomMaxCount249 = value
-        AppToast.show(this, "Danmaku Bottom Max Count249: $value")
-    }
-// v221: Gesture Shake Action221
-
-
-internal fun PlayerActivity.showV221GestureShakeAction221Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v221gestureShakeAction221).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Gesture Shake Action221",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v221gestureShakeAction221 = value
-        AppToast.show(this, "Gesture Shake Action221: $value")
-    }
-// v221: Cast Audio Volume221
-
-
-internal fun PlayerActivity.showV221CastAudioVolume221Dialog() {
-    val options = listOf(25, 50, 75, 100)
-    val currentIndex = options.indexOf(BiliClient.prefs.v221castAudioVolume221).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cast Audio Volume221",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v221castAudioVolume221 = value
-        AppToast.show(this, "Cast Audio Volume221: $value")
-    }
-// v221: Cache Download Speed222
-
-
-internal fun PlayerActivity.showV221CacheDownloadSpeed222Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v221cacheDownloadSpeed222).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cache Download Speed222",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v221cacheDownloadSpeed222 = value
-        AppToast.show(this, "Cache Download Speed222: $value")
-    }
-// v221: Video Color Space221
-
-
-internal fun PlayerActivity.showV221VideoColorSpace221Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v221videoColorSpace221).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Video Color Space221",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v221videoColorSpace221 = value
-        AppToast.show(this, "Video Color Space221: $value")
-    }
-// v221: Danmaku Bottom Max Count250
-
-
-internal fun PlayerActivity.showV221DanmakuBottomMaxCount250Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v221danmakuBottomMaxCount250).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count250",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v221danmakuBottomMaxCount250 = value
-        AppToast.show(this, "Danmaku Bottom Max Count250: $value")
-    }
-// v222: Danmaku Bottom Max Count251
-
-
-internal fun PlayerActivity.showV222DanmakuBottomMaxCount251Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v222danmakuBottomMaxCount251).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count251",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v222danmakuBottomMaxCount251 = value
-        AppToast.show(this, "Danmaku Bottom Max Count251: $value")
-    }
-// v222: Gesture Shake Action222
-
-
-internal fun PlayerActivity.showV222GestureShakeAction222Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v222gestureShakeAction222).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Gesture Shake Action222",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v222gestureShakeAction222 = value
-        AppToast.show(this, "Gesture Shake Action222: $value")
-    }
-// v222: Cast Audio Volume222
-
-
-internal fun PlayerActivity.showV222CastAudioVolume222Dialog() {
-    val options = listOf(25, 50, 75, 100)
-    val currentIndex = options.indexOf(BiliClient.prefs.v222castAudioVolume222).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cast Audio Volume222",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v222castAudioVolume222 = value
-        AppToast.show(this, "Cast Audio Volume222: $value")
-    }
-// v222: Cache Download Speed223
-
-
-internal fun PlayerActivity.showV222CacheDownloadSpeed223Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v222cacheDownloadSpeed223).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cache Download Speed223",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v222cacheDownloadSpeed223 = value
-        AppToast.show(this, "Cache Download Speed223: $value")
-    }
-// v222: Video Color Space222
-
-
-internal fun PlayerActivity.showV222VideoColorSpace222Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v222videoColorSpace222).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Video Color Space222",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v222videoColorSpace222 = value
-        AppToast.show(this, "Video Color Space222: $value")
-    }
-// v222: Danmaku Bottom Max Count252
-
-
-internal fun PlayerActivity.showV222DanmakuBottomMaxCount252Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v222danmakuBottomMaxCount252).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count252",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v222danmakuBottomMaxCount252 = value
-        AppToast.show(this, "Danmaku Bottom Max Count252: $value")
-    }
-// v223: Danmaku Bottom Max Count253
-
-
-internal fun PlayerActivity.showV223DanmakuBottomMaxCount253Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v223danmakuBottomMaxCount253).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count253",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v223danmakuBottomMaxCount253 = value
-        AppToast.show(this, "Danmaku Bottom Max Count253: $value")
-    }
-// v223: Gesture Shake Action223
-
-
-internal fun PlayerActivity.showV223GestureShakeAction223Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v223gestureShakeAction223).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Gesture Shake Action223",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v223gestureShakeAction223 = value
-        AppToast.show(this, "Gesture Shake Action223: $value")
-    }
-// v223: Cast Audio Volume223
-
-
-internal fun PlayerActivity.showV223CastAudioVolume223Dialog() {
-    val options = listOf(25, 50, 75, 100)
-    val currentIndex = options.indexOf(BiliClient.prefs.v223castAudioVolume223).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cast Audio Volume223",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v223castAudioVolume223 = value
-        AppToast.show(this, "Cast Audio Volume223: $value")
-    }
-// v223: Cache Download Speed224
-
-
-internal fun PlayerActivity.showV223CacheDownloadSpeed224Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v223cacheDownloadSpeed224).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cache Download Speed224",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v223cacheDownloadSpeed224 = value
-        AppToast.show(this, "Cache Download Speed224: $value")
-    }
-// v223: Video Color Space223
-
-
-internal fun PlayerActivity.showV223VideoColorSpace223Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v223videoColorSpace223).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Video Color Space223",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v223videoColorSpace223 = value
-        AppToast.show(this, "Video Color Space223: $value")
-    }
-// v223: Danmaku Bottom Max Count254
-
-
-internal fun PlayerActivity.showV223DanmakuBottomMaxCount254Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v223danmakuBottomMaxCount254).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count254",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v223danmakuBottomMaxCount254 = value
-        AppToast.show(this, "Danmaku Bottom Max Count254: $value")
-    }
-// v224: Danmaku Bottom Max Count255
-
-
-internal fun PlayerActivity.showV224DanmakuBottomMaxCount255Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v224danmakuBottomMaxCount255).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count255",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v224danmakuBottomMaxCount255 = value
-        AppToast.show(this, "Danmaku Bottom Max Count255: $value")
-    }
-// v224: Gesture Shake Action224
-
-
-internal fun PlayerActivity.showV224GestureShakeAction224Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v224gestureShakeAction224).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Gesture Shake Action224",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v224gestureShakeAction224 = value
-        AppToast.show(this, "Gesture Shake Action224: $value")
-    }
-// v224: Cast Audio Volume224
-
-
-internal fun PlayerActivity.showV224CastAudioVolume224Dialog() {
-    val options = listOf(25, 50, 75, 100)
-    val currentIndex = options.indexOf(BiliClient.prefs.v224castAudioVolume224).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cast Audio Volume224",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v224castAudioVolume224 = value
-        AppToast.show(this, "Cast Audio Volume224: $value")
-    }
-// v224: Cache Download Speed225
-
-
-internal fun PlayerActivity.showV224CacheDownloadSpeed225Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v224cacheDownloadSpeed225).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cache Download Speed225",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v224cacheDownloadSpeed225 = value
-        AppToast.show(this, "Cache Download Speed225: $value")
-    }
-// v224: Video Color Space224
-
-
-internal fun PlayerActivity.showV224VideoColorSpace224Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v224videoColorSpace224).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Video Color Space224",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v224videoColorSpace224 = value
-        AppToast.show(this, "Video Color Space224: $value")
-    }
-// v224: Danmaku Bottom Max Count256
-
-
-internal fun PlayerActivity.showV224DanmakuBottomMaxCount256Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v224danmakuBottomMaxCount256).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count256",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v224danmakuBottomMaxCount256 = value
-        AppToast.show(this, "Danmaku Bottom Max Count256: $value")
-    }
-// v225: Danmaku Bottom Max Count257
-
-
-internal fun PlayerActivity.showV225DanmakuBottomMaxCount257Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v225danmakuBottomMaxCount257).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count257",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v225danmakuBottomMaxCount257 = value
-        AppToast.show(this, "Danmaku Bottom Max Count257: $value")
-    }
-// v225: Gesture Shake Action225
-
-
-internal fun PlayerActivity.showV225GestureShakeAction225Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v225gestureShakeAction225).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Gesture Shake Action225",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v225gestureShakeAction225 = value
-        AppToast.show(this, "Gesture Shake Action225: $value")
-    }
-// v225: Cast Audio Volume225
-
-
-internal fun PlayerActivity.showV225CastAudioVolume225Dialog() {
-    val options = listOf(25, 50, 75, 100)
-    val currentIndex = options.indexOf(BiliClient.prefs.v225castAudioVolume225).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cast Audio Volume225",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v225castAudioVolume225 = value
-        AppToast.show(this, "Cast Audio Volume225: $value")
-    }
-// v225: Cache Download Speed226
-
-
-internal fun PlayerActivity.showV225CacheDownloadSpeed226Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v225cacheDownloadSpeed226).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cache Download Speed226",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v225cacheDownloadSpeed226 = value
-        AppToast.show(this, "Cache Download Speed226: $value")
-    }
-// v225: Video Color Space225
-
-
-internal fun PlayerActivity.showV225VideoColorSpace225Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v225videoColorSpace225).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Video Color Space225",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v225videoColorSpace225 = value
-        AppToast.show(this, "Video Color Space225: $value")
-    }
-// v225: Danmaku Bottom Max Count258
-
-
-internal fun PlayerActivity.showV225DanmakuBottomMaxCount258Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v225danmakuBottomMaxCount258).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count258",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v225danmakuBottomMaxCount258 = value
-        AppToast.show(this, "Danmaku Bottom Max Count258: $value")
-    }
-// v226: Danmaku Bottom Max Count259
-
-
-internal fun PlayerActivity.showV226DanmakuBottomMaxCount259Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v226danmakuBottomMaxCount259).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count259",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v226danmakuBottomMaxCount259 = value
-        AppToast.show(this, "Danmaku Bottom Max Count259: $value")
-    }
-// v226: Gesture Shake Action226
-
-
-internal fun PlayerActivity.showV226GestureShakeAction226Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v226gestureShakeAction226).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Gesture Shake Action226",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v226gestureShakeAction226 = value
-        AppToast.show(this, "Gesture Shake Action226: $value")
-    }
-// v226: Cast Audio Volume226
-
-
-internal fun PlayerActivity.showV226CastAudioVolume226Dialog() {
-    val options = listOf(25, 50, 75, 100)
-    val currentIndex = options.indexOf(BiliClient.prefs.v226castAudioVolume226).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cast Audio Volume226",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v226castAudioVolume226 = value
-        AppToast.show(this, "Cast Audio Volume226: $value")
-    }
-// v226: Cache Download Speed227
-
-
-internal fun PlayerActivity.showV226CacheDownloadSpeed227Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v226cacheDownloadSpeed227).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cache Download Speed227",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v226cacheDownloadSpeed227 = value
-        AppToast.show(this, "Cache Download Speed227: $value")
-    }
-// v226: Video Color Space226
-
-
-internal fun PlayerActivity.showV226VideoColorSpace226Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v226videoColorSpace226).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Video Color Space226",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v226videoColorSpace226 = value
-        AppToast.show(this, "Video Color Space226: $value")
-    }
-// v226: Danmaku Bottom Max Count260
-
-
-internal fun PlayerActivity.showV226DanmakuBottomMaxCount260Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v226danmakuBottomMaxCount260).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count260",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v226danmakuBottomMaxCount260 = value
-        AppToast.show(this, "Danmaku Bottom Max Count260: $value")
-    }
-// v227: Danmaku Bottom Max Count261
-
-
-internal fun PlayerActivity.showV227DanmakuBottomMaxCount261Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v227danmakuBottomMaxCount261).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count261",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v227danmakuBottomMaxCount261 = value
-        AppToast.show(this, "Danmaku Bottom Max Count261: $value")
-    }
-// v227: Gesture Shake Action227
-
-
-internal fun PlayerActivity.showV227GestureShakeAction227Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v227gestureShakeAction227).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Gesture Shake Action227",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v227gestureShakeAction227 = value
-        AppToast.show(this, "Gesture Shake Action227: $value")
-    }
-// v227: Cast Audio Volume227
-
-
-internal fun PlayerActivity.showV227CastAudioVolume227Dialog() {
-    val options = listOf(25, 50, 75, 100)
-    val currentIndex = options.indexOf(BiliClient.prefs.v227castAudioVolume227).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cast Audio Volume227",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v227castAudioVolume227 = value
-        AppToast.show(this, "Cast Audio Volume227: $value")
-    }
-// v227: Cache Download Speed228
-
-
-internal fun PlayerActivity.showV227CacheDownloadSpeed228Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v227cacheDownloadSpeed228).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cache Download Speed228",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v227cacheDownloadSpeed228 = value
-        AppToast.show(this, "Cache Download Speed228: $value")
-    }
-// v227: Video Color Space227
-
-
-internal fun PlayerActivity.showV227VideoColorSpace227Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v227videoColorSpace227).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Video Color Space227",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v227videoColorSpace227 = value
-        AppToast.show(this, "Video Color Space227: $value")
-    }
-// v227: Danmaku Bottom Max Count262
-
-
-internal fun PlayerActivity.showV227DanmakuBottomMaxCount262Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v227danmakuBottomMaxCount262).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count262",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v227danmakuBottomMaxCount262 = value
-        AppToast.show(this, "Danmaku Bottom Max Count262: $value")
-    }
-// v228: Danmaku Bottom Max Count263
-
-
-internal fun PlayerActivity.showV228DanmakuBottomMaxCount263Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v228danmakuBottomMaxCount263).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count263",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v228danmakuBottomMaxCount263 = value
-        AppToast.show(this, "Danmaku Bottom Max Count263: $value")
-    }
-// v228: Gesture Shake Action228
-
-
-internal fun PlayerActivity.showV228GestureShakeAction228Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v228gestureShakeAction228).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Gesture Shake Action228",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v228gestureShakeAction228 = value
-        AppToast.show(this, "Gesture Shake Action228: $value")
-    }
-// v228: Cast Audio Volume228
-
-
-internal fun PlayerActivity.showV228CastAudioVolume228Dialog() {
-    val options = listOf(25, 50, 75, 100)
-    val currentIndex = options.indexOf(BiliClient.prefs.v228castAudioVolume228).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cast Audio Volume228",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v228castAudioVolume228 = value
-        AppToast.show(this, "Cast Audio Volume228: $value")
-    }
-// v228: Cache Download Speed229
-
-
-internal fun PlayerActivity.showV228CacheDownloadSpeed229Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v228cacheDownloadSpeed229).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cache Download Speed229",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v228cacheDownloadSpeed229 = value
-        AppToast.show(this, "Cache Download Speed229: $value")
-    }
-// v228: Video Color Space228
-
-
-internal fun PlayerActivity.showV228VideoColorSpace228Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v228videoColorSpace228).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Video Color Space228",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v228videoColorSpace228 = value
-        AppToast.show(this, "Video Color Space228: $value")
-    }
-// v228: Danmaku Bottom Max Count264
-
-
-internal fun PlayerActivity.showV228DanmakuBottomMaxCount264Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v228danmakuBottomMaxCount264).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count264",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v228danmakuBottomMaxCount264 = value
-        AppToast.show(this, "Danmaku Bottom Max Count264: $value")
-    }
-// v229: Danmaku Bottom Max Count265
-
-
-internal fun PlayerActivity.showV229DanmakuBottomMaxCount265Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v229danmakuBottomMaxCount265).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count265",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v229danmakuBottomMaxCount265 = value
-        AppToast.show(this, "Danmaku Bottom Max Count265: $value")
-    }
-// v229: Gesture Shake Action229
-
-
-internal fun PlayerActivity.showV229GestureShakeAction229Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v229gestureShakeAction229).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Gesture Shake Action229",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v229gestureShakeAction229 = value
-        AppToast.show(this, "Gesture Shake Action229: $value")
-    }
-// v229: Cast Audio Volume229
-
-
-internal fun PlayerActivity.showV229CastAudioVolume229Dialog() {
-    val options = listOf(25, 50, 75, 100)
-    val currentIndex = options.indexOf(BiliClient.prefs.v229castAudioVolume229).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cast Audio Volume229",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v229castAudioVolume229 = value
-        AppToast.show(this, "Cast Audio Volume229: $value")
-    }
-// v229: Cache Download Speed230
-
-
-internal fun PlayerActivity.showV229CacheDownloadSpeed230Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v229cacheDownloadSpeed230).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cache Download Speed230",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v229cacheDownloadSpeed230 = value
-        AppToast.show(this, "Cache Download Speed230: $value")
-    }
-// v229: Video Color Space229
-
-
-internal fun PlayerActivity.showV229VideoColorSpace229Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v229videoColorSpace229).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Video Color Space229",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v229videoColorSpace229 = value
-        AppToast.show(this, "Video Color Space229: $value")
-    }
-// v229: Danmaku Bottom Max Count266
-
-
-internal fun PlayerActivity.showV229DanmakuBottomMaxCount266Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v229danmakuBottomMaxCount266).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count266",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v229danmakuBottomMaxCount266 = value
-        AppToast.show(this, "Danmaku Bottom Max Count266: $value")
-    }
-// v230: Danmaku Bottom Max Count267
-
-
-internal fun PlayerActivity.showV230DanmakuBottomMaxCount267Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v230danmakuBottomMaxCount267).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count267",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v230danmakuBottomMaxCount267 = value
-        AppToast.show(this, "Danmaku Bottom Max Count267: $value")
-    }
-// v230: Gesture Shake Action230
-
-
-internal fun PlayerActivity.showV230GestureShakeAction230Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v230gestureShakeAction230).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Gesture Shake Action230",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v230gestureShakeAction230 = value
-        AppToast.show(this, "Gesture Shake Action230: $value")
-    }
-// v230: Cast Audio Volume230
-
-
-internal fun PlayerActivity.showV230CastAudioVolume230Dialog() {
-    val options = listOf(25, 50, 75, 100)
-    val currentIndex = options.indexOf(BiliClient.prefs.v230castAudioVolume230).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cast Audio Volume230",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v230castAudioVolume230 = value
-        AppToast.show(this, "Cast Audio Volume230: $value")
-    }
-// v230: Cache Download Speed231
-
-
-internal fun PlayerActivity.showV230CacheDownloadSpeed231Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v230cacheDownloadSpeed231).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cache Download Speed231",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v230cacheDownloadSpeed231 = value
-        AppToast.show(this, "Cache Download Speed231: $value")
-    }
-// v230: Video Color Space230
-
-
-internal fun PlayerActivity.showV230VideoColorSpace230Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v230videoColorSpace230).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Video Color Space230",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v230videoColorSpace230 = value
-        AppToast.show(this, "Video Color Space230: $value")
-    }
-// v230: Danmaku Bottom Max Count268
-
-
-internal fun PlayerActivity.showV230DanmakuBottomMaxCount268Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v230danmakuBottomMaxCount268).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count268",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v230danmakuBottomMaxCount268 = value
-        AppToast.show(this, "Danmaku Bottom Max Count268: $value")
-    }
-// v231: Danmaku Bottom Max Count269
-
-
-internal fun PlayerActivity.showV231DanmakuBottomMaxCount269Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v231danmakuBottomMaxCount269).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count269",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v231danmakuBottomMaxCount269 = value
-        AppToast.show(this, "Danmaku Bottom Max Count269: $value")
-    }
-// v231: Gesture Shake Action231
-
-
-internal fun PlayerActivity.showV231GestureShakeAction231Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v231gestureShakeAction231).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Gesture Shake Action231",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v231gestureShakeAction231 = value
-        AppToast.show(this, "Gesture Shake Action231: $value")
-    }
-// v231: Cast Audio Volume231
-
-
-internal fun PlayerActivity.showV231CastAudioVolume231Dialog() {
-    val options = listOf(25, 50, 75, 100)
-    val currentIndex = options.indexOf(BiliClient.prefs.v231castAudioVolume231).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cast Audio Volume231",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v231castAudioVolume231 = value
-        AppToast.show(this, "Cast Audio Volume231: $value")
-    }
-// v231: Cache Download Speed232
-
-
-internal fun PlayerActivity.showV231CacheDownloadSpeed232Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v231cacheDownloadSpeed232).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cache Download Speed232",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v231cacheDownloadSpeed232 = value
-        AppToast.show(this, "Cache Download Speed232: $value")
-    }
-// v231: Video Color Space231
-
-
-internal fun PlayerActivity.showV231VideoColorSpace231Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v231videoColorSpace231).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Video Color Space231",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v231videoColorSpace231 = value
-        AppToast.show(this, "Video Color Space231: $value")
-    }
-// v231: Danmaku Bottom Max Count270
-
-
-internal fun PlayerActivity.showV231DanmakuBottomMaxCount270Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v231danmakuBottomMaxCount270).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count270",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v231danmakuBottomMaxCount270 = value
-        AppToast.show(this, "Danmaku Bottom Max Count270: $value")
-    }
-// v232: Danmaku Bottom Max Count271
-
-
-internal fun PlayerActivity.showV232DanmakuBottomMaxCount271Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v232danmakuBottomMaxCount271).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count271",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v232danmakuBottomMaxCount271 = value
-        AppToast.show(this, "Danmaku Bottom Max Count271: $value")
-    }
-// v232: Gesture Shake Action232
-
-
-internal fun PlayerActivity.showV232GestureShakeAction232Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v232gestureShakeAction232).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Gesture Shake Action232",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v232gestureShakeAction232 = value
-        AppToast.show(this, "Gesture Shake Action232: $value")
-    }
-// v232: Cast Audio Volume232
-
-
-internal fun PlayerActivity.showV232CastAudioVolume232Dialog() {
-    val options = listOf(25, 50, 75, 100)
-    val currentIndex = options.indexOf(BiliClient.prefs.v232castAudioVolume232).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cast Audio Volume232",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v232castAudioVolume232 = value
-        AppToast.show(this, "Cast Audio Volume232: $value")
-    }
-// v232: Cache Download Speed233
-
-
-internal fun PlayerActivity.showV232CacheDownloadSpeed233Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v232cacheDownloadSpeed233).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cache Download Speed233",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v232cacheDownloadSpeed233 = value
-        AppToast.show(this, "Cache Download Speed233: $value")
-    }
-// v232: Video Color Space232
-
-
-internal fun PlayerActivity.showV232VideoColorSpace232Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v232videoColorSpace232).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Video Color Space232",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v232videoColorSpace232 = value
-        AppToast.show(this, "Video Color Space232: $value")
-    }
-// v232: Danmaku Bottom Max Count272
-
-
-internal fun PlayerActivity.showV232DanmakuBottomMaxCount272Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v232danmakuBottomMaxCount272).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count272",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v232danmakuBottomMaxCount272 = value
-        AppToast.show(this, "Danmaku Bottom Max Count272: $value")
-    }
-// v233: Danmaku Bottom Max Count273
-
-
-internal fun PlayerActivity.showV233DanmakuBottomMaxCount273Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v233danmakuBottomMaxCount273).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count273",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v233danmakuBottomMaxCount273 = value
-        AppToast.show(this, "Danmaku Bottom Max Count273: $value")
-    }
-// v233: Gesture Shake Action233
-
-
-internal fun PlayerActivity.showV233GestureShakeAction233Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v233gestureShakeAction233).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Gesture Shake Action233",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v233gestureShakeAction233 = value
-        AppToast.show(this, "Gesture Shake Action233: $value")
-    }
-// v233: Cast Audio Volume233
-
-
-internal fun PlayerActivity.showV233CastAudioVolume233Dialog() {
-    val options = listOf(25, 50, 75, 100)
-    val currentIndex = options.indexOf(BiliClient.prefs.v233castAudioVolume233).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cast Audio Volume233",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v233castAudioVolume233 = value
-        AppToast.show(this, "Cast Audio Volume233: $value")
-    }
-// v233: Cache Download Speed234
-
-
-internal fun PlayerActivity.showV233CacheDownloadSpeed234Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v233cacheDownloadSpeed234).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cache Download Speed234",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v233cacheDownloadSpeed234 = value
-        AppToast.show(this, "Cache Download Speed234: $value")
-    }
-// v233: Video Color Space233
-
-
-internal fun PlayerActivity.showV233VideoColorSpace233Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v233videoColorSpace233).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Video Color Space233",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v233videoColorSpace233 = value
-        AppToast.show(this, "Video Color Space233: $value")
-    }
-// v233: Danmaku Bottom Max Count274
-
-
-internal fun PlayerActivity.showV233DanmakuBottomMaxCount274Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v233danmakuBottomMaxCount274).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count274",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v233danmakuBottomMaxCount274 = value
-        AppToast.show(this, "Danmaku Bottom Max Count274: $value")
-    }
-// v234: Danmaku Bottom Max Count275
-
-
-internal fun PlayerActivity.showV234DanmakuBottomMaxCount275Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v234danmakuBottomMaxCount275).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count275",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v234danmakuBottomMaxCount275 = value
-        AppToast.show(this, "Danmaku Bottom Max Count275: $value")
-    }
-// v234: Gesture Shake Action234
-
-
-internal fun PlayerActivity.showV234GestureShakeAction234Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v234gestureShakeAction234).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Gesture Shake Action234",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v234gestureShakeAction234 = value
-        AppToast.show(this, "Gesture Shake Action234: $value")
-    }
-// v234: Cast Audio Volume234
-
-
-internal fun PlayerActivity.showV234CastAudioVolume234Dialog() {
-    val options = listOf(25, 50, 75, 100)
-    val currentIndex = options.indexOf(BiliClient.prefs.v234castAudioVolume234).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cast Audio Volume234",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v234castAudioVolume234 = value
-        AppToast.show(this, "Cast Audio Volume234: $value")
-    }
-// v234: Cache Download Speed235
-
-
-internal fun PlayerActivity.showV234CacheDownloadSpeed235Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v234cacheDownloadSpeed235).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cache Download Speed235",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v234cacheDownloadSpeed235 = value
-        AppToast.show(this, "Cache Download Speed235: $value")
-    }
-// v234: Video Color Space234
-
-
-internal fun PlayerActivity.showV234VideoColorSpace234Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v234videoColorSpace234).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Video Color Space234",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v234videoColorSpace234 = value
-        AppToast.show(this, "Video Color Space234: $value")
-    }
-// v234: Danmaku Bottom Max Count276
-
-
-internal fun PlayerActivity.showV234DanmakuBottomMaxCount276Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v234danmakuBottomMaxCount276).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count276",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v234danmakuBottomMaxCount276 = value
-        AppToast.show(this, "Danmaku Bottom Max Count276: $value")
-    }
-// v235: Danmaku Bottom Max Count277
-
-
-internal fun PlayerActivity.showV235DanmakuBottomMaxCount277Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v235danmakuBottomMaxCount277).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count277",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v235danmakuBottomMaxCount277 = value
-        AppToast.show(this, "Danmaku Bottom Max Count277: $value")
-    }
-// v235: Gesture Shake Action235
-
-
-internal fun PlayerActivity.showV235GestureShakeAction235Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v235gestureShakeAction235).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Gesture Shake Action235",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v235gestureShakeAction235 = value
-        AppToast.show(this, "Gesture Shake Action235: $value")
-    }
-// v235: Cast Audio Volume235
-
-
-internal fun PlayerActivity.showV235CastAudioVolume235Dialog() {
-    val options = listOf(25, 50, 75, 100)
-    val currentIndex = options.indexOf(BiliClient.prefs.v235castAudioVolume235).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cast Audio Volume235",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v235castAudioVolume235 = value
-        AppToast.show(this, "Cast Audio Volume235: $value")
-    }
-// v235: Cache Download Speed236
-
-
-internal fun PlayerActivity.showV235CacheDownloadSpeed236Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v235cacheDownloadSpeed236).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cache Download Speed236",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v235cacheDownloadSpeed236 = value
-        AppToast.show(this, "Cache Download Speed236: $value")
-    }
-// v235: Video Color Space235
-
-
-internal fun PlayerActivity.showV235VideoColorSpace235Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v235videoColorSpace235).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Video Color Space235",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v235videoColorSpace235 = value
-        AppToast.show(this, "Video Color Space235: $value")
-    }
-// v235: Danmaku Bottom Max Count278
-
-
-internal fun PlayerActivity.showV235DanmakuBottomMaxCount278Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v235danmakuBottomMaxCount278).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count278",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v235danmakuBottomMaxCount278 = value
-        AppToast.show(this, "Danmaku Bottom Max Count278: $value")
-    }
-// v236: Danmaku Bottom Max Count279
-
-
-internal fun PlayerActivity.showV236DanmakuBottomMaxCount279Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v236danmakuBottomMaxCount279).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count279",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v236danmakuBottomMaxCount279 = value
-        AppToast.show(this, "Danmaku Bottom Max Count279: $value")
-    }
-// v236: Gesture Shake Action236
-
-
-internal fun PlayerActivity.showV236GestureShakeAction236Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v236gestureShakeAction236).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Gesture Shake Action236",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v236gestureShakeAction236 = value
-        AppToast.show(this, "Gesture Shake Action236: $value")
-    }
-// v236: Cast Audio Volume236
-
-
-internal fun PlayerActivity.showV236CastAudioVolume236Dialog() {
-    val options = listOf(25, 50, 75, 100)
-    val currentIndex = options.indexOf(BiliClient.prefs.v236castAudioVolume236).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cast Audio Volume236",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v236castAudioVolume236 = value
-        AppToast.show(this, "Cast Audio Volume236: $value")
-    }
-// v236: Cache Download Speed237
-
-
-internal fun PlayerActivity.showV236CacheDownloadSpeed237Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v236cacheDownloadSpeed237).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cache Download Speed237",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v236cacheDownloadSpeed237 = value
-        AppToast.show(this, "Cache Download Speed237: $value")
-    }
-// v236: Video Color Space236
-
-
-internal fun PlayerActivity.showV236VideoColorSpace236Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v236videoColorSpace236).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Video Color Space236",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v236videoColorSpace236 = value
-        AppToast.show(this, "Video Color Space236: $value")
-    }
-// v236: Danmaku Bottom Max Count280
-
-
-internal fun PlayerActivity.showV236DanmakuBottomMaxCount280Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v236danmakuBottomMaxCount280).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count280",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v236danmakuBottomMaxCount280 = value
-        AppToast.show(this, "Danmaku Bottom Max Count280: $value")
-    }
-// v237: Danmaku Bottom Max Count281
-
-
-internal fun PlayerActivity.showV237DanmakuBottomMaxCount281Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v237danmakuBottomMaxCount281).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count281",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v237danmakuBottomMaxCount281 = value
-        AppToast.show(this, "Danmaku Bottom Max Count281: $value")
-    }
-// v237: Gesture Shake Action237
-
-
-internal fun PlayerActivity.showV237GestureShakeAction237Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v237gestureShakeAction237).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Gesture Shake Action237",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v237gestureShakeAction237 = value
-        AppToast.show(this, "Gesture Shake Action237: $value")
-    }
-// v237: Cast Audio Volume237
-
-
-internal fun PlayerActivity.showV237CastAudioVolume237Dialog() {
-    val options = listOf(25, 50, 75, 100)
-    val currentIndex = options.indexOf(BiliClient.prefs.v237castAudioVolume237).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cast Audio Volume237",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v237castAudioVolume237 = value
-        AppToast.show(this, "Cast Audio Volume237: $value")
-    }
-// v237: Cache Download Speed238
-
-
-internal fun PlayerActivity.showV237CacheDownloadSpeed238Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v237cacheDownloadSpeed238).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cache Download Speed238",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v237cacheDownloadSpeed238 = value
-        AppToast.show(this, "Cache Download Speed238: $value")
-    }
-// v237: Video Color Space237
-
-
-internal fun PlayerActivity.showV237VideoColorSpace237Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v237videoColorSpace237).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Video Color Space237",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v237videoColorSpace237 = value
-        AppToast.show(this, "Video Color Space237: $value")
-    }
-// v237: Danmaku Bottom Max Count282
-
-
-internal fun PlayerActivity.showV237DanmakuBottomMaxCount282Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v237danmakuBottomMaxCount282).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count282",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v237danmakuBottomMaxCount282 = value
-        AppToast.show(this, "Danmaku Bottom Max Count282: $value")
-    }
-// v238: Danmaku Bottom Max Count283
-
-
-internal fun PlayerActivity.showV238DanmakuBottomMaxCount283Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v238danmakuBottomMaxCount283).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count283",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v238danmakuBottomMaxCount283 = value
-        AppToast.show(this, "Danmaku Bottom Max Count283: $value")
-    }
-// v238: Gesture Shake Action238
-
-
-internal fun PlayerActivity.showV238GestureShakeAction238Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v238gestureShakeAction238).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Gesture Shake Action238",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v238gestureShakeAction238 = value
-        AppToast.show(this, "Gesture Shake Action238: $value")
-    }
-// v238: Cast Audio Volume238
-
-
-internal fun PlayerActivity.showV238CastAudioVolume238Dialog() {
-    val options = listOf(25, 50, 75, 100)
-    val currentIndex = options.indexOf(BiliClient.prefs.v238castAudioVolume238).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cast Audio Volume238",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v238castAudioVolume238 = value
-        AppToast.show(this, "Cast Audio Volume238: $value")
-    }
-// v238: Cache Download Speed239
-
-
-internal fun PlayerActivity.showV238CacheDownloadSpeed239Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v238cacheDownloadSpeed239).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cache Download Speed239",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v238cacheDownloadSpeed239 = value
-        AppToast.show(this, "Cache Download Speed239: $value")
-    }
-// v238: Video Color Space238
-
-
-internal fun PlayerActivity.showV238VideoColorSpace238Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v238videoColorSpace238).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Video Color Space238",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v238videoColorSpace238 = value
-        AppToast.show(this, "Video Color Space238: $value")
-    }
-// v238: Danmaku Bottom Max Count284
-
-
-internal fun PlayerActivity.showV238DanmakuBottomMaxCount284Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v238danmakuBottomMaxCount284).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count284",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v238danmakuBottomMaxCount284 = value
-        AppToast.show(this, "Danmaku Bottom Max Count284: $value")
-    }
-// v239: Danmaku Bottom Max Count285
-
-
-internal fun PlayerActivity.showV239DanmakuBottomMaxCount285Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v239danmakuBottomMaxCount285).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count285",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v239danmakuBottomMaxCount285 = value
-        AppToast.show(this, "Danmaku Bottom Max Count285: $value")
-    }
-// v239: Gesture Shake Action239
-
-
-internal fun PlayerActivity.showV239GestureShakeAction239Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v239gestureShakeAction239).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Gesture Shake Action239",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v239gestureShakeAction239 = value
-        AppToast.show(this, "Gesture Shake Action239: $value")
-    }
-// v239: Cast Audio Volume239
-
-
-internal fun PlayerActivity.showV239CastAudioVolume239Dialog() {
-    val options = listOf(25, 50, 75, 100)
-    val currentIndex = options.indexOf(BiliClient.prefs.v239castAudioVolume239).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cast Audio Volume239",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v239castAudioVolume239 = value
-        AppToast.show(this, "Cast Audio Volume239: $value")
-    }
-// v239: Cache Download Speed240
-
-
-internal fun PlayerActivity.showV239CacheDownloadSpeed240Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v239cacheDownloadSpeed240).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cache Download Speed240",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v239cacheDownloadSpeed240 = value
-        AppToast.show(this, "Cache Download Speed240: $value")
-    }
-// v239: Video Color Space239
-
-
-internal fun PlayerActivity.showV239VideoColorSpace239Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v239videoColorSpace239).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Video Color Space239",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v239videoColorSpace239 = value
-        AppToast.show(this, "Video Color Space239: $value")
-    }
-// v239: Danmaku Bottom Max Count286
-
-
-internal fun PlayerActivity.showV239DanmakuBottomMaxCount286Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v239danmakuBottomMaxCount286).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count286",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v239danmakuBottomMaxCount286 = value
-        AppToast.show(this, "Danmaku Bottom Max Count286: $value")
-    }
-// v240: Danmaku Bottom Max Count287
-
-
-internal fun PlayerActivity.showV240DanmakuBottomMaxCount287Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v240danmakuBottomMaxCount287).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count287",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v240danmakuBottomMaxCount287 = value
-        AppToast.show(this, "Danmaku Bottom Max Count287: $value")
-    }
-// v240: Gesture Shake Action240
-
-
-internal fun PlayerActivity.showV240GestureShakeAction240Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v240gestureShakeAction240).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Gesture Shake Action240",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v240gestureShakeAction240 = value
-        AppToast.show(this, "Gesture Shake Action240: $value")
-    }
-// v240: Cast Audio Volume240
-
-
-internal fun PlayerActivity.showV240CastAudioVolume240Dialog() {
-    val options = listOf(25, 50, 75, 100)
-    val currentIndex = options.indexOf(BiliClient.prefs.v240castAudioVolume240).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cast Audio Volume240",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v240castAudioVolume240 = value
-        AppToast.show(this, "Cast Audio Volume240: $value")
-    }
-// v240: Cache Download Speed241
-
-
-internal fun PlayerActivity.showV240CacheDownloadSpeed241Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v240cacheDownloadSpeed241).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cache Download Speed241",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v240cacheDownloadSpeed241 = value
-        AppToast.show(this, "Cache Download Speed241: $value")
-    }
-// v240: Video Color Space240
-
-
-internal fun PlayerActivity.showV240VideoColorSpace240Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v240videoColorSpace240).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Video Color Space240",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v240videoColorSpace240 = value
-        AppToast.show(this, "Video Color Space240: $value")
-    }
-// v240: Danmaku Bottom Max Count288
-
-
-internal fun PlayerActivity.showV240DanmakuBottomMaxCount288Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v240danmakuBottomMaxCount288).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count288",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v240danmakuBottomMaxCount288 = value
-        AppToast.show(this, "Danmaku Bottom Max Count288: $value")
-    }
-// v241: Danmaku Bottom Max Count289
-
-
-internal fun PlayerActivity.showV241DanmakuBottomMaxCount289Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v241danmakuBottomMaxCount289).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count289",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v241danmakuBottomMaxCount289 = value
-        AppToast.show(this, "Danmaku Bottom Max Count289: $value")
-    }
-// v241: Gesture Shake Action241
-
-
-internal fun PlayerActivity.showV241GestureShakeAction241Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v241gestureShakeAction241).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Gesture Shake Action241",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v241gestureShakeAction241 = value
-        AppToast.show(this, "Gesture Shake Action241: $value")
-    }
-// v241: Cast Audio Volume241
-
-
-internal fun PlayerActivity.showV241CastAudioVolume241Dialog() {
-    val options = listOf(25, 50, 75, 100)
-    val currentIndex = options.indexOf(BiliClient.prefs.v241castAudioVolume241).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cast Audio Volume241",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v241castAudioVolume241 = value
-        AppToast.show(this, "Cast Audio Volume241: $value")
-    }
-// v241: Cache Download Speed242
-
-
-internal fun PlayerActivity.showV241CacheDownloadSpeed242Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v241cacheDownloadSpeed242).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cache Download Speed242",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v241cacheDownloadSpeed242 = value
-        AppToast.show(this, "Cache Download Speed242: $value")
-    }
-// v241: Video Color Space241
-
-
-internal fun PlayerActivity.showV241VideoColorSpace241Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v241videoColorSpace241).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Video Color Space241",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v241videoColorSpace241 = value
-        AppToast.show(this, "Video Color Space241: $value")
-    }
-// v241: Danmaku Bottom Max Count290
-
-
-internal fun PlayerActivity.showV241DanmakuBottomMaxCount290Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v241danmakuBottomMaxCount290).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count290",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v241danmakuBottomMaxCount290 = value
-        AppToast.show(this, "Danmaku Bottom Max Count290: $value")
-    }
-// v242: Danmaku Bottom Max Count291
-
-
-internal fun PlayerActivity.showV242DanmakuBottomMaxCount291Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v242danmakuBottomMaxCount291).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count291",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v242danmakuBottomMaxCount291 = value
-        AppToast.show(this, "Danmaku Bottom Max Count291: $value")
-    }
-// v242: Gesture Shake Action242
-
-
-internal fun PlayerActivity.showV242GestureShakeAction242Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v242gestureShakeAction242).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Gesture Shake Action242",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v242gestureShakeAction242 = value
-        AppToast.show(this, "Gesture Shake Action242: $value")
-    }
-// v242: Cast Audio Volume242
-
-
-internal fun PlayerActivity.showV242CastAudioVolume242Dialog() {
-    val options = listOf(25, 50, 75, 100)
-    val currentIndex = options.indexOf(BiliClient.prefs.v242castAudioVolume242).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cast Audio Volume242",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v242castAudioVolume242 = value
-        AppToast.show(this, "Cast Audio Volume242: $value")
-    }
-// v242: Cache Download Speed243
-
-
-internal fun PlayerActivity.showV242CacheDownloadSpeed243Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v242cacheDownloadSpeed243).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cache Download Speed243",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v242cacheDownloadSpeed243 = value
-        AppToast.show(this, "Cache Download Speed243: $value")
-    }
-// v242: Video Color Space242
-
-
-internal fun PlayerActivity.showV242VideoColorSpace242Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v242videoColorSpace242).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Video Color Space242",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v242videoColorSpace242 = value
-        AppToast.show(this, "Video Color Space242: $value")
-    }
-// v242: Danmaku Bottom Max Count292
-
-
-internal fun PlayerActivity.showV242DanmakuBottomMaxCount292Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v242danmakuBottomMaxCount292).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count292",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v242danmakuBottomMaxCount292 = value
-        AppToast.show(this, "Danmaku Bottom Max Count292: $value")
-    }
-// v243: Danmaku Bottom Max Count293
-
-
-internal fun PlayerActivity.showV243DanmakuBottomMaxCount293Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v243danmakuBottomMaxCount293).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count293",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v243danmakuBottomMaxCount293 = value
-        AppToast.show(this, "Danmaku Bottom Max Count293: $value")
-    }
-// v243: Gesture Shake Action243
-
-
-internal fun PlayerActivity.showV243GestureShakeAction243Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v243gestureShakeAction243).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Gesture Shake Action243",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v243gestureShakeAction243 = value
-        AppToast.show(this, "Gesture Shake Action243: $value")
-    }
-// v243: Cast Audio Volume243
-
-
-internal fun PlayerActivity.showV243CastAudioVolume243Dialog() {
-    val options = listOf(25, 50, 75, 100)
-    val currentIndex = options.indexOf(BiliClient.prefs.v243castAudioVolume243).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cast Audio Volume243",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v243castAudioVolume243 = value
-        AppToast.show(this, "Cast Audio Volume243: $value")
-    }
-// v243: Cache Download Speed244
-
-
-internal fun PlayerActivity.showV243CacheDownloadSpeed244Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v243cacheDownloadSpeed244).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cache Download Speed244",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v243cacheDownloadSpeed244 = value
-        AppToast.show(this, "Cache Download Speed244: $value")
-    }
-// v243: Video Color Space243
-
-
-internal fun PlayerActivity.showV243VideoColorSpace243Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v243videoColorSpace243).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Video Color Space243",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v243videoColorSpace243 = value
-        AppToast.show(this, "Video Color Space243: $value")
-    }
-// v243: Danmaku Bottom Max Count294
-
-
-internal fun PlayerActivity.showV243DanmakuBottomMaxCount294Dialog() {
+internal fun PlayerActivity.showV145CastVideoPIPSnapDurationDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v243danmakuBottomMaxCount294).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v145castVideoPIPSnapDuration).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count294",
+        title = "Cast Video PIP Snap Duration",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v243danmakuBottomMaxCount294 = value
-        AppToast.show(this, "Danmaku Bottom Max Count294: $value")
+        BiliClient.prefs.v145castVideoPIPSnapDuration = value
+        AppToast.show(this, "Cast Video PIP Snap Duration: $value")
     }
-// v244: Danmaku Bottom Max Count295
+}
 
+internal fun PlayerActivity.showV145PlaylistAutoGroupByBitrateToggle() {
+    val current = BiliClient.prefs.v145playlistAutoGroupByBitrate
+    BiliClient.prefs.v145playlistAutoGroupByBitrate = !current
+    AppToast.show(this, "Playlist Auto Group By Bitrate: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV244DanmakuBottomMaxCount295Dialog() {
+internal fun PlayerActivity.showV145CacheSmartPinningOnScheduleHourDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v244danmakuBottomMaxCount295).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v145cacheSmartPinningOnScheduleHour).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count295",
+        title = "Cache Smart Pinning On Schedule Hour",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v244danmakuBottomMaxCount295 = value
-        AppToast.show(this, "Danmaku Bottom Max Count295: $value")
+        BiliClient.prefs.v145cacheSmartPinningOnScheduleHour = value
+        AppToast.show(this, "Cache Smart Pinning On Schedule Hour: $value")
     }
-// v244: Gesture Shake Action244
+}
 
+internal fun PlayerActivity.showV145ProgressBarCustomThumbGlow145Toggle() {
+    val current = BiliClient.prefs.v145progressBarCustomThumbGlow145
+    BiliClient.prefs.v145progressBarCustomThumbGlow145 = !current
+    AppToast.show(this, "Progress Bar Custom Thumb Glow145: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV244GestureShakeAction244Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v244gestureShakeAction244).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Gesture Shake Action244",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v244gestureShakeAction244 = value
-        AppToast.show(this, "Gesture Shake Action244: $value")
-    }
-// v244: Cast Audio Volume244
-
+internal fun PlayerActivity.showV145VolumeNormalizeAutoGainToggle() {
+    val current = BiliClient.prefs.v145volumeNormalizeAutoGain
+    BiliClient.prefs.v145volumeNormalizeAutoGain = !current
+    AppToast.show(this, "Volume Normalize Auto Gain: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV244CastAudioVolume244Dialog() {
-    val options = listOf(25, 50, 75, 100)
-    val currentIndex = options.indexOf(BiliClient.prefs.v244castAudioVolume244).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cast Audio Volume244",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v244castAudioVolume244 = value
-        AppToast.show(this, "Cast Audio Volume244: $value")
-    }
-// v244: Cache Download Speed245
+internal fun PlayerActivity.showV145HistoryAutoClean145Toggle() {
+    val current = BiliClient.prefs.v145historyAutoClean145
+    BiliClient.prefs.v145historyAutoClean145 = !current
+    AppToast.show(this, "History Auto Clean145: ${if (!current) "ON" else "OFF"}")
+}
 
+internal fun PlayerActivity.showV145PlaybackSpeedPresetsGyroAdjustToggle() {
+    val current = BiliClient.prefs.v145playbackSpeedPresetsGyroAdjust
+    BiliClient.prefs.v145playbackSpeedPresetsGyroAdjust = !current
+    AppToast.show(this, "Playback Speed Presets Gyro Adjust: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV244CacheDownloadSpeed245Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v244cacheDownloadSpeed245).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cache Download Speed245",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v244cacheDownloadSpeed245 = value
-        AppToast.show(this, "Cache Download Speed245: $value")
-    }
-// v244: Video Color Space244
+internal fun PlayerActivity.showV145ScreenshotAutoShareFacebookToggle() {
+    val current = BiliClient.prefs.v145screenshotAutoShareFacebook
+    BiliClient.prefs.v145screenshotAutoShareFacebook = !current
+    AppToast.show(this, "Screenshot Auto Share Facebook: ${if (!current) "ON" else "OFF"}")
+}
 
+internal fun PlayerActivity.showV145VideoPIPFollowHDR10Toggle() {
+    val current = BiliClient.prefs.v145videoPIPFollowHDR10
+    BiliClient.prefs.v145videoPIPFollowHDR10 = !current
+    AppToast.show(this, "Video PIP Follow HDR10: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV244VideoColorSpace244Dialog() {
+internal fun PlayerActivity.showV145DanmakuFontBgFillMaskTypeDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v244videoColorSpace244).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v145danmakuFontBgFillMaskType).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Video Color Space244",
+        title = "Danmaku Font BG Fill Mask Type",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v244videoColorSpace244 = value
-        AppToast.show(this, "Video Color Space244: $value")
+        BiliClient.prefs.v145danmakuFontBgFillMaskType = value
+        AppToast.show(this, "Danmaku Font BG Fill Mask Type: $value")
     }
-// v244: Danmaku Bottom Max Count296
-
+}
 
-internal fun PlayerActivity.showV244DanmakuBottomMaxCount296Dialog() {
+internal fun PlayerActivity.showV145SubtitleAnimationRotate145Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v244danmakuBottomMaxCount296).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v145subtitleAnimationRotate145).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count296",
+        title = "Subtitle Animation Rotate145",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v244danmakuBottomMaxCount296 = value
-        AppToast.show(this, "Danmaku Bottom Max Count296: $value")
+        BiliClient.prefs.v145subtitleAnimationRotate145 = value
+        AppToast.show(this, "Subtitle Animation Rotate145: $value")
     }
-// v245: Danmaku Bottom Max Count297
+}
 
-
-internal fun PlayerActivity.showV245DanmakuBottomMaxCount297Dialog() {
+internal fun PlayerActivity.showV146AudioCompressorRatioDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v245danmakuBottomMaxCount297).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v146audioCompressorRatio).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count297",
+        title = "Audio Compressor Ratio",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v245danmakuBottomMaxCount297 = value
-        AppToast.show(this, "Danmaku Bottom Max Count297: $value")
+        BiliClient.prefs.v146audioCompressorRatio = value
+        AppToast.show(this, "Audio Compressor Ratio: $value")
     }
-// v245: Gesture Shake Action245
-
+}
 
-internal fun PlayerActivity.showV245GestureShakeAction245Dialog() {
+internal fun PlayerActivity.showV146DanmakuFontBgFillMaskType145Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v245gestureShakeAction245).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Gesture Shake Action245",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v245gestureShakeAction245 = value
-        AppToast.show(this, "Gesture Shake Action245: $value")
-    }
-// v245: Cast Audio Volume245
-
-
-internal fun PlayerActivity.showV245CastAudioVolume245Dialog() {
-    val options = listOf(25, 50, 75, 100)
-    val currentIndex = options.indexOf(BiliClient.prefs.v245castAudioVolume245).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v146danmakuFontBgFillMaskType145).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Cast Audio Volume245",
+        title = "Danmaku Font BG Fill Mask Type145",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v245castAudioVolume245 = value
-        AppToast.show(this, "Cast Audio Volume245: $value")
+        BiliClient.prefs.v146danmakuFontBgFillMaskType145 = value
+        AppToast.show(this, "Danmaku Font BG Fill Mask Type145: $value")
     }
-// v245: Cache Download Speed246
+}
 
-
-internal fun PlayerActivity.showV245CacheDownloadSpeed246Dialog() {
+internal fun PlayerActivity.showV146SubtitleAnimationRotate146Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v245cacheDownloadSpeed246).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v146subtitleAnimationRotate146).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Cache Download Speed246",
+        title = "Subtitle Animation Rotate146",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v245cacheDownloadSpeed246 = value
-        AppToast.show(this, "Cache Download Speed246: $value")
+        BiliClient.prefs.v146subtitleAnimationRotate146 = value
+        AppToast.show(this, "Subtitle Animation Rotate146: $value")
     }
-// v245: Video Color Space245
-
+}
 
-internal fun PlayerActivity.showV245VideoColorSpace245Dialog() {
+internal fun PlayerActivity.showV146GestureTapZoneVisualAnimColorDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v245videoColorSpace245).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v146gestureTapZoneVisualAnimColor).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Video Color Space245",
+        title = "Gesture Tap Zone Visual Anim Color",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v245videoColorSpace245 = value
-        AppToast.show(this, "Video Color Space245: $value")
+        BiliClient.prefs.v146gestureTapZoneVisualAnimColor = value
+        AppToast.show(this, "Gesture Tap Zone Visual Anim Color: $value")
     }
-// v245: Danmaku Bottom Max Count298
+}
 
-
-internal fun PlayerActivity.showV245DanmakuBottomMaxCount298Dialog() {
+internal fun PlayerActivity.showV146CastVideoPIPSnapAnimationDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v245danmakuBottomMaxCount298).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v146castVideoPIPSnapAnimation).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count298",
+        title = "Cast Video PIP Snap Animation",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v245danmakuBottomMaxCount298 = value
-        AppToast.show(this, "Danmaku Bottom Max Count298: $value")
+        BiliClient.prefs.v146castVideoPIPSnapAnimation = value
+        AppToast.show(this, "Cast Video PIP Snap Animation: $value")
     }
-// v246: Danmaku Bottom Max Count299
+}
 
+internal fun PlayerActivity.showV146PlaylistAutoGroupByFpsToggle() {
+    val current = BiliClient.prefs.v146playlistAutoGroupByFps
+    BiliClient.prefs.v146playlistAutoGroupByFps = !current
+    AppToast.show(this, "Playlist Auto Group By Fps: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV246DanmakuBottomMaxCount299Dialog() {
+internal fun PlayerActivity.showV146CacheSmartPinningOnScheduleMinuteDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v246danmakuBottomMaxCount299).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v146cacheSmartPinningOnScheduleMinute).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count299",
+        title = "Cache Smart Pinning On Schedule Minute",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v246danmakuBottomMaxCount299 = value
-        AppToast.show(this, "Danmaku Bottom Max Count299: $value")
+        BiliClient.prefs.v146cacheSmartPinningOnScheduleMinute = value
+        AppToast.show(this, "Cache Smart Pinning On Schedule Minute: $value")
     }
-// v246: Gesture Shake Action246
+}
 
+internal fun PlayerActivity.showV146ProgressBarCustomThumbBorder146Toggle() {
+    val current = BiliClient.prefs.v146progressBarCustomThumbBorder146
+    BiliClient.prefs.v146progressBarCustomThumbBorder146 = !current
+    AppToast.show(this, "Progress Bar Custom Thumb Border146: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV246GestureShakeAction246Dialog() {
+internal fun PlayerActivity.showV146VolumeNormalizeLookAheadDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v246gestureShakeAction246).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v146volumeNormalizeLookAhead).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Gesture Shake Action246",
+        title = "Volume Normalize Look Ahead",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v246gestureShakeAction246 = value
-        AppToast.show(this, "Gesture Shake Action246: $value")
+        BiliClient.prefs.v146volumeNormalizeLookAhead = value
+        AppToast.show(this, "Volume Normalize Look Ahead: $value")
     }
-// v246: Cast Audio Volume246
-
+}
 
-internal fun PlayerActivity.showV246CastAudioVolume246Dialog() {
-    val options = listOf(25, 50, 75, 100)
-    val currentIndex = options.indexOf(BiliClient.prefs.v246castAudioVolume246).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cast Audio Volume246",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v246castAudioVolume246 = value
-        AppToast.show(this, "Cast Audio Volume246: $value")
-    }
-// v246: Cache Download Speed247
+internal fun PlayerActivity.showV146HistoryAutoClean146Toggle() {
+    val current = BiliClient.prefs.v146historyAutoClean146
+    BiliClient.prefs.v146historyAutoClean146 = !current
+    AppToast.show(this, "History Auto Clean146: ${if (!current) "ON" else "OFF"}")
+}
 
+internal fun PlayerActivity.showV146PlaybackSpeedPresetsAccelAdjustToggle() {
+    val current = BiliClient.prefs.v146playbackSpeedPresetsAccelAdjust
+    BiliClient.prefs.v146playbackSpeedPresetsAccelAdjust = !current
+    AppToast.show(this, "Playback Speed Presets Accel Adjust: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV246CacheDownloadSpeed247Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v246cacheDownloadSpeed247).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cache Download Speed247",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v246cacheDownloadSpeed247 = value
-        AppToast.show(this, "Cache Download Speed247: $value")
-    }
-// v246: Video Color Space246
+internal fun PlayerActivity.showV146ScreenshotAutoShareTwitterToggle() {
+    val current = BiliClient.prefs.v146screenshotAutoShareTwitter
+    BiliClient.prefs.v146screenshotAutoShareTwitter = !current
+    AppToast.show(this, "Screenshot Auto Share Twitter: ${if (!current) "ON" else "OFF"}")
+}
 
+internal fun PlayerActivity.showV146VideoPIPFollowDolbyToggle() {
+    val current = BiliClient.prefs.v146videoPIPFollowDolby
+    BiliClient.prefs.v146videoPIPFollowDolby = !current
+    AppToast.show(this, "Video PIP Follow Dolby: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV246VideoColorSpace246Dialog() {
+internal fun PlayerActivity.showV146DanmakuFontBgFillMaskType146Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v246videoColorSpace246).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v146danmakuFontBgFillMaskType146).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Video Color Space246",
+        title = "Danmaku Font BG Fill Mask Type146",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v246videoColorSpace246 = value
-        AppToast.show(this, "Video Color Space246: $value")
+        BiliClient.prefs.v146danmakuFontBgFillMaskType146 = value
+        AppToast.show(this, "Danmaku Font BG Fill Mask Type146: $value")
     }
-// v246: Danmaku Bottom Max Count300
-
+}
 
-internal fun PlayerActivity.showV246DanmakuBottomMaxCount300Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v246danmakuBottomMaxCount300).takeIf { it >= 0 } ?: 0
+internal fun PlayerActivity.showV146SubtitleAnimationBlur146Dialog() {
+    val options = listOf(0, 25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v146subtitleAnimationBlur146).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count300",
+        title = "Subtitle Animation Blur146",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v246danmakuBottomMaxCount300 = value
-        AppToast.show(this, "Danmaku Bottom Max Count300: $value")
+        BiliClient.prefs.v146subtitleAnimationBlur146 = value
+        AppToast.show(this, "Subtitle Animation Blur146: $value")
     }
-// v247: Danmaku Bottom Max Count301
-
+}
 
-internal fun PlayerActivity.showV247DanmakuBottomMaxCount301Dialog() {
+internal fun PlayerActivity.showV147AudioCompressorAttackDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v247danmakuBottomMaxCount301).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v147audioCompressorAttack).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count301",
+        title = "Audio Compressor Attack",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v247danmakuBottomMaxCount301 = value
-        AppToast.show(this, "Danmaku Bottom Max Count301: $value")
+        BiliClient.prefs.v147audioCompressorAttack = value
+        AppToast.show(this, "Audio Compressor Attack: $value")
     }
-// v247: Gesture Shake Action247
+}
 
-
-internal fun PlayerActivity.showV247GestureShakeAction247Dialog() {
+internal fun PlayerActivity.showV147DanmakuFontBgFillMaskType147Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v247gestureShakeAction247).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Gesture Shake Action247",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v247gestureShakeAction247 = value
-        AppToast.show(this, "Gesture Shake Action247: $value")
-    }
-// v247: Cast Audio Volume247
-
-
-internal fun PlayerActivity.showV247CastAudioVolume247Dialog() {
-    val options = listOf(25, 50, 75, 100)
-    val currentIndex = options.indexOf(BiliClient.prefs.v247castAudioVolume247).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v147danmakuFontBgFillMaskType147).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Cast Audio Volume247",
+        title = "Danmaku Font BG Fill Mask Type147",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v247castAudioVolume247 = value
-        AppToast.show(this, "Cast Audio Volume247: $value")
+        BiliClient.prefs.v147danmakuFontBgFillMaskType147 = value
+        AppToast.show(this, "Danmaku Font BG Fill Mask Type147: $value")
     }
-// v247: Cache Download Speed248
-
+}
 
-internal fun PlayerActivity.showV247CacheDownloadSpeed248Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v247cacheDownloadSpeed248).takeIf { it >= 0 } ?: 0
+internal fun PlayerActivity.showV147SubtitleAnimationBlur147Dialog() {
+    val options = listOf(0, 25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v147subtitleAnimationBlur147).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Cache Download Speed248",
+        title = "Subtitle Animation Blur147",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v247cacheDownloadSpeed248 = value
-        AppToast.show(this, "Cache Download Speed248: $value")
+        BiliClient.prefs.v147subtitleAnimationBlur147 = value
+        AppToast.show(this, "Subtitle Animation Blur147: $value")
     }
-// v247: Video Color Space247
-
+}
 
-internal fun PlayerActivity.showV247VideoColorSpace247Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v247videoColorSpace247).takeIf { it >= 0 } ?: 0
+internal fun PlayerActivity.showV147GestureTapZoneVisualAnimBlurDialog() {
+    val options = listOf(0, 25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v147gestureTapZoneVisualAnimBlur).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Video Color Space247",
+        title = "Gesture Tap Zone Visual Anim Blur",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v247videoColorSpace247 = value
-        AppToast.show(this, "Video Color Space247: $value")
+        BiliClient.prefs.v147gestureTapZoneVisualAnimBlur = value
+        AppToast.show(this, "Gesture Tap Zone Visual Anim Blur: $value")
     }
-// v247: Danmaku Bottom Max Count302
-
+}
 
-internal fun PlayerActivity.showV247DanmakuBottomMaxCount302Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v247danmakuBottomMaxCount302).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count302",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v247danmakuBottomMaxCount302 = value
-        AppToast.show(this, "Danmaku Bottom Max Count302: $value")
-    }
-// v248: Danmaku Bottom Max Count303
+internal fun PlayerActivity.showV147CastVideoPIPSnapBounceToggle() {
+    val current = BiliClient.prefs.v147castVideoPIPSnapBounce
+    BiliClient.prefs.v147castVideoPIPSnapBounce = !current
+    AppToast.show(this, "Cast Video PIP Snap Bounce: ${if (!current) "ON" else "OFF"}")
+}
 
+internal fun PlayerActivity.showV147PlaylistAutoGroupByAspectRatioToggle() {
+    val current = BiliClient.prefs.v147playlistAutoGroupByAspectRatio
+    BiliClient.prefs.v147playlistAutoGroupByAspectRatio = !current
+    AppToast.show(this, "Playlist Auto Group By Aspect Ratio: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV248DanmakuBottomMaxCount303Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v248danmakuBottomMaxCount303).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count303",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v248danmakuBottomMaxCount303 = value
-        AppToast.show(this, "Danmaku Bottom Max Count303: $value")
-    }
-// v248: Gesture Shake Action248
+internal fun PlayerActivity.showV147CacheSmartPinningOnScheduleRepeatToggle() {
+    val current = BiliClient.prefs.v147cacheSmartPinningOnScheduleRepeat
+    BiliClient.prefs.v147cacheSmartPinningOnScheduleRepeat = !current
+    AppToast.show(this, "Cache Smart Pinning On Schedule Repeat: ${if (!current) "ON" else "OFF"}")
+}
 
+internal fun PlayerActivity.showV147ProgressBarCustomThumbShadow147Toggle() {
+    val current = BiliClient.prefs.v147progressBarCustomThumbShadow147
+    BiliClient.prefs.v147progressBarCustomThumbShadow147 = !current
+    AppToast.show(this, "Progress Bar Custom Thumb Shadow147: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV248GestureShakeAction248Dialog() {
+internal fun PlayerActivity.showV147VolumeNormalizeReleaseDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v248gestureShakeAction248).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v147volumeNormalizeRelease).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Gesture Shake Action248",
+        title = "Volume Normalize Release",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v248gestureShakeAction248 = value
-        AppToast.show(this, "Gesture Shake Action248: $value")
+        BiliClient.prefs.v147volumeNormalizeRelease = value
+        AppToast.show(this, "Volume Normalize Release: $value")
     }
-// v248: Cast Audio Volume248
+}
 
-
-internal fun PlayerActivity.showV248CastAudioVolume248Dialog() {
-    val options = listOf(25, 50, 75, 100)
-    val currentIndex = options.indexOf(BiliClient.prefs.v248castAudioVolume248).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cast Audio Volume248",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v248castAudioVolume248 = value
-        AppToast.show(this, "Cast Audio Volume248: $value")
-    }
-// v248: Cache Download Speed249
-
-
-internal fun PlayerActivity.showV248CacheDownloadSpeed249Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v248cacheDownloadSpeed249).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Cache Download Speed249",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v248cacheDownloadSpeed249 = value
-        AppToast.show(this, "Cache Download Speed249: $value")
-    }
-// v248: Video Color Space248
+internal fun PlayerActivity.showV147HistoryAutoClean147Toggle() {
+    val current = BiliClient.prefs.v147historyAutoClean147
+    BiliClient.prefs.v147historyAutoClean147 = !current
+    AppToast.show(this, "History Auto Clean147: ${if (!current) "ON" else "OFF"}")
+}
 
+internal fun PlayerActivity.showV147PlaybackSpeedPresetsVoiceControlToggle() {
+    val current = BiliClient.prefs.v147playbackSpeedPresetsVoiceControl
+    BiliClient.prefs.v147playbackSpeedPresetsVoiceControl = !current
+    AppToast.show(this, "Playback Speed Presets Voice Control: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV248VideoColorSpace248Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v248videoColorSpace248).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Video Color Space248",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v248videoColorSpace248 = value
-        AppToast.show(this, "Video Color Space248: $value")
-    }
-// v248: Danmaku Bottom Max Count304
+internal fun PlayerActivity.showV147ScreenshotAutoShareLinkedInToggle() {
+    val current = BiliClient.prefs.v147screenshotAutoShareLinkedIn
+    BiliClient.prefs.v147screenshotAutoShareLinkedIn = !current
+    AppToast.show(this, "Screenshot Auto Share LinkedIn: ${if (!current) "ON" else "OFF"}")
+}
 
+internal fun PlayerActivity.showV147VideoPIPFollowDolbyVisionToggle() {
+    val current = BiliClient.prefs.v147videoPIPFollowDolbyVision
+    BiliClient.prefs.v147videoPIPFollowDolbyVision = !current
+    AppToast.show(this, "Video PIP Follow Dolby Vision: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV248DanmakuBottomMaxCount304Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v248danmakuBottomMaxCount304).takeIf { it >= 0 } ?: 0
+internal fun PlayerActivity.showV147DanmakuFontBgFillMaskOpacityDialog() {
+    val options = listOf(0, 25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v147danmakuFontBgFillMaskOpacity).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count304",
+        title = "Danmaku Font BG Fill Mask Opacity",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v248danmakuBottomMaxCount304 = value
-        AppToast.show(this, "Danmaku Bottom Max Count304: $value")
+        BiliClient.prefs.v147danmakuFontBgFillMaskOpacity = value
+        AppToast.show(this, "Danmaku Font BG Fill Mask Opacity: $value")
     }
-// v249: Danmaku Bottom Max Count305
+}
 
-
-internal fun PlayerActivity.showV249DanmakuBottomMaxCount305Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v249danmakuBottomMaxCount305).takeIf { it >= 0 } ?: 0
+internal fun PlayerActivity.showV147SubtitleAnimationFadeIn147Dialog() {
+    val options = listOf(100, 200, 300, 500, 800)
+    val currentIndex = options.indexOf(BiliClient.prefs.v147subtitleAnimationFadeIn147).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count305",
+        title = "Subtitle Animation Fade In147",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v249danmakuBottomMaxCount305 = value
-        AppToast.show(this, "Danmaku Bottom Max Count305: $value")
+        BiliClient.prefs.v147subtitleAnimationFadeIn147 = value
+        AppToast.show(this, "Subtitle Animation Fade In147: $value")
     }
-// v249: Gesture Shake Action249
+}
 
-
-internal fun PlayerActivity.showV249GestureShakeAction249Dialog() {
+internal fun PlayerActivity.showV148AudioCompressorReleaseDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v249gestureShakeAction249).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Gesture Shake Action249",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v249gestureShakeAction249 = value
-        AppToast.show(this, "Gesture Shake Action249: $value")
-    }
-// v249: Cast Audio Volume249
-
-
-internal fun PlayerActivity.showV249CastAudioVolume249Dialog() {
-    val options = listOf(25, 50, 75, 100)
-    val currentIndex = options.indexOf(BiliClient.prefs.v249castAudioVolume249).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v148audioCompressorRelease).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Cast Audio Volume249",
+        title = "Audio Compressor Release",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v249castAudioVolume249 = value
-        AppToast.show(this, "Cast Audio Volume249: $value")
+        BiliClient.prefs.v148audioCompressorRelease = value
+        AppToast.show(this, "Audio Compressor Release: $value")
     }
-// v249: Cache Download Speed250
-
+}
 
-internal fun PlayerActivity.showV249CacheDownloadSpeed250Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v249cacheDownloadSpeed250).takeIf { it >= 0 } ?: 0
+internal fun PlayerActivity.showV148DanmakuFontBgFillMaskOpacity147Dialog() {
+    val options = listOf(0, 25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v148danmakuFontBgFillMaskOpacity147).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Cache Download Speed250",
+        title = "Danmaku Font BG Fill Mask Opacity147",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v249cacheDownloadSpeed250 = value
-        AppToast.show(this, "Cache Download Speed250: $value")
+        BiliClient.prefs.v148danmakuFontBgFillMaskOpacity147 = value
+        AppToast.show(this, "Danmaku Font BG Fill Mask Opacity147: $value")
     }
-// v249: Video Color Space249
-
+}
 
-internal fun PlayerActivity.showV249VideoColorSpace249Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v249videoColorSpace249).takeIf { it >= 0 } ?: 0
+internal fun PlayerActivity.showV148SubtitleAnimationFadeIn148Dialog() {
+    val options = listOf(100, 200, 300, 500, 800)
+    val currentIndex = options.indexOf(BiliClient.prefs.v148subtitleAnimationFadeIn148).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Video Color Space249",
+        title = "Subtitle Animation Fade In148",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v249videoColorSpace249 = value
-        AppToast.show(this, "Video Color Space249: $value")
+        BiliClient.prefs.v148subtitleAnimationFadeIn148 = value
+        AppToast.show(this, "Subtitle Animation Fade In148: $value")
     }
-// v249: Danmaku Bottom Max Count306
-
+}
 
-internal fun PlayerActivity.showV249DanmakuBottomMaxCount306Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v249danmakuBottomMaxCount306).takeIf { it >= 0 } ?: 0
+internal fun PlayerActivity.showV148GestureTapZoneVisualAnimDelayDialog() {
+    val options = listOf(0, 100, 200, 300, 500)
+    val currentIndex = options.indexOf(BiliClient.prefs.v148gestureTapZoneVisualAnimDelay).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count306",
+        title = "Gesture Tap Zone Visual Anim Delay",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v249danmakuBottomMaxCount306 = value
-        AppToast.show(this, "Danmaku Bottom Max Count306: $value")
+        BiliClient.prefs.v148gestureTapZoneVisualAnimDelay = value
+        AppToast.show(this, "Gesture Tap Zone Visual Anim Delay: $value")
     }
-// v250: Danmaku Bottom Max Count307
-
+}
 
-internal fun PlayerActivity.showV250DanmakuBottomMaxCount307Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v250danmakuBottomMaxCount307).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Danmaku Bottom Max Count307",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v250danmakuBottomMaxCount307 = value
-        AppToast.show(this, "Danmaku Bottom Max Count307: $value")
-    }
-// v250: Gesture Shake Action250
+internal fun PlayerActivity.showV148CastVideoPIPSnapElasticToggle() {
+    val current = BiliClient.prefs.v148castVideoPIPSnapElastic
+    BiliClient.prefs.v148castVideoPIPSnapElastic = !current
+    AppToast.show(this, "Cast Video PIP Snap Elastic: ${if (!current) "ON" else "OFF"}")
+}
 
+internal fun PlayerActivity.showV148PlaylistAutoGroupBySizeToggle() {
+    val current = BiliClient.prefs.v148playlistAutoGroupBySize
+    BiliClient.prefs.v148playlistAutoGroupBySize = !current
+    AppToast.show(this, "Playlist Auto Group By Size: ${if (!current) "ON" else "OFF"}")
+}
 

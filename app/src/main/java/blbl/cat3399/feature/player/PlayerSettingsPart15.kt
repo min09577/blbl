@@ -13,3003 +13,1865 @@ import blbl.cat3399.feature.player.engine.ExoPlayerEngine
 import blbl.cat3399.feature.player.engine.IjkPlayerPluginUi
 import blbl.cat3399.feature.player.engine.PlayerEngineKind
 
-internal fun PlayerActivity.showV412EncodeAutoSelect412Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v412encodeAutoSelect412).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Encode Auto Select412",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v412encodeAutoSelect412 = value
-        AppToast.show(this, "Encode Auto Select412: $value")
-    }
-// v413: Display Refresh Rate413
-
-
-internal fun PlayerActivity.showV413DisplayRefreshRate413Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v413displayRefreshRate413).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Display Refresh Rate413",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v413displayRefreshRate413 = value
-        AppToast.show(this, "Display Refresh Rate413: $value")
-    }
-// v413: Display Color Temp413
-
-
-internal fun PlayerActivity.showV413DisplayColorTemp413Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v413displayColorTemp413).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Display Color Temp413",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v413displayColorTemp413 = value
-        AppToast.show(this, "Display Color Temp413: $value")
-    }
-// v413: Encode Auto Select413
-
-
-internal fun PlayerActivity.showV413EncodeAutoSelect413Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v413encodeAutoSelect413).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Encode Auto Select413",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v413encodeAutoSelect413 = value
-        AppToast.show(this, "Encode Auto Select413: $value")
-    }
-// v414: Display Refresh Rate414
-
-
-internal fun PlayerActivity.showV414DisplayRefreshRate414Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v414displayRefreshRate414).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Display Refresh Rate414",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v414displayRefreshRate414 = value
-        AppToast.show(this, "Display Refresh Rate414: $value")
-    }
-// v414: Display Color Temp414
-
-
-internal fun PlayerActivity.showV414DisplayColorTemp414Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v414displayColorTemp414).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Display Color Temp414",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v414displayColorTemp414 = value
-        AppToast.show(this, "Display Color Temp414: $value")
-    }
-// v414: Encode Auto Select414
-
-
-internal fun PlayerActivity.showV414EncodeAutoSelect414Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v414encodeAutoSelect414).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Encode Auto Select414",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v414encodeAutoSelect414 = value
-        AppToast.show(this, "Encode Auto Select414: $value")
-    }
-// v415: Display Refresh Rate415
-
-
-internal fun PlayerActivity.showV415DisplayRefreshRate415Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v415displayRefreshRate415).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Display Refresh Rate415",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v415displayRefreshRate415 = value
-        AppToast.show(this, "Display Refresh Rate415: $value")
-    }
-// v415: Display Color Temp415
-
-
-internal fun PlayerActivity.showV415DisplayColorTemp415Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v415displayColorTemp415).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Display Color Temp415",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v415displayColorTemp415 = value
-        AppToast.show(this, "Display Color Temp415: $value")
-    }
-// v415: Encode Auto Select415
-
-
-internal fun PlayerActivity.showV415EncodeAutoSelect415Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v415encodeAutoSelect415).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Encode Auto Select415",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v415encodeAutoSelect415 = value
-        AppToast.show(this, "Encode Auto Select415: $value")
-    }
-// v416: Display Refresh Rate416
-
-
-internal fun PlayerActivity.showV416DisplayRefreshRate416Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v416displayRefreshRate416).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Display Refresh Rate416",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v416displayRefreshRate416 = value
-        AppToast.show(this, "Display Refresh Rate416: $value")
-    }
-// v416: Display Color Temp416
-
-
-internal fun PlayerActivity.showV416DisplayColorTemp416Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v416displayColorTemp416).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Display Color Temp416",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v416displayColorTemp416 = value
-        AppToast.show(this, "Display Color Temp416: $value")
-    }
-// v416: Encode Auto Select416
-
-
-internal fun PlayerActivity.showV416EncodeAutoSelect416Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v416encodeAutoSelect416).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Encode Auto Select416",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v416encodeAutoSelect416 = value
-        AppToast.show(this, "Encode Auto Select416: $value")
-    }
-// v417: Display Refresh Rate417
-
-
-internal fun PlayerActivity.showV417DisplayRefreshRate417Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v417displayRefreshRate417).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Display Refresh Rate417",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v417displayRefreshRate417 = value
-        AppToast.show(this, "Display Refresh Rate417: $value")
-    }
-// v417: Display Color Temp417
-
-
-internal fun PlayerActivity.showV417DisplayColorTemp417Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v417displayColorTemp417).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Display Color Temp417",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v417displayColorTemp417 = value
-        AppToast.show(this, "Display Color Temp417: $value")
-    }
-// v417: Encode Auto Select417
-
-
-internal fun PlayerActivity.showV417EncodeAutoSelect417Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v417encodeAutoSelect417).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Encode Auto Select417",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v417encodeAutoSelect417 = value
-        AppToast.show(this, "Encode Auto Select417: $value")
-    }
-// v418: Display Refresh Rate418
-
-
-internal fun PlayerActivity.showV418DisplayRefreshRate418Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v418displayRefreshRate418).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Display Refresh Rate418",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v418displayRefreshRate418 = value
-        AppToast.show(this, "Display Refresh Rate418: $value")
-    }
-// v418: Display Color Temp418
-
-
-internal fun PlayerActivity.showV418DisplayColorTemp418Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v418displayColorTemp418).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Display Color Temp418",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v418displayColorTemp418 = value
-        AppToast.show(this, "Display Color Temp418: $value")
-    }
-// v418: Encode Auto Select418
-
-
-internal fun PlayerActivity.showV418EncodeAutoSelect418Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v418encodeAutoSelect418).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Encode Auto Select418",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v418encodeAutoSelect418 = value
-        AppToast.show(this, "Encode Auto Select418: $value")
-    }
-// v419: Display Refresh Rate419
-
-
-internal fun PlayerActivity.showV419DisplayRefreshRate419Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v419displayRefreshRate419).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Display Refresh Rate419",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v419displayRefreshRate419 = value
-        AppToast.show(this, "Display Refresh Rate419: $value")
-    }
-// v419: Display Color Temp419
-
-
-internal fun PlayerActivity.showV419DisplayColorTemp419Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v419displayColorTemp419).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Display Color Temp419",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v419displayColorTemp419 = value
-        AppToast.show(this, "Display Color Temp419: $value")
-    }
-// v419: Encode Auto Select419
-
-
-internal fun PlayerActivity.showV419EncodeAutoSelect419Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v419encodeAutoSelect419).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Encode Auto Select419",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v419encodeAutoSelect419 = value
-        AppToast.show(this, "Encode Auto Select419: $value")
-    }
-// v420: Display Refresh Rate420
-
-
-internal fun PlayerActivity.showV420DisplayRefreshRate420Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v420displayRefreshRate420).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Display Refresh Rate420",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v420displayRefreshRate420 = value
-        AppToast.show(this, "Display Refresh Rate420: $value")
-    }
-// v420: Display Color Temp420
-
-
-internal fun PlayerActivity.showV420DisplayColorTemp420Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v420displayColorTemp420).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Display Color Temp420",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v420displayColorTemp420 = value
-        AppToast.show(this, "Display Color Temp420: $value")
-    }
-// v420: Encode Auto Select420
-
-
-internal fun PlayerActivity.showV420EncodeAutoSelect420Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v420encodeAutoSelect420).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Encode Auto Select420",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v420encodeAutoSelect420 = value
-        AppToast.show(this, "Encode Auto Select420: $value")
-    }
-// v421: Export Format Default421
-
-
-internal fun PlayerActivity.showV421ExportFormatDefault421Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v421exportFormatDefault421).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Export Format Default421",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v421exportFormatDefault421 = value
-        AppToast.show(this, "Export Format Default421: $value")
-    }
-// v421: Feed Layout Style421
-
-
-internal fun PlayerActivity.showV421FeedLayoutStyle421Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v421feedLayoutStyle421).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Feed Layout Style421",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v421feedLayoutStyle421 = value
-        AppToast.show(this, "Feed Layout Style421: $value")
-    }
-// v422: Export Format Default422
-
-
-internal fun PlayerActivity.showV422ExportFormatDefault422Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v422exportFormatDefault422).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Export Format Default422",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v422exportFormatDefault422 = value
-        AppToast.show(this, "Export Format Default422: $value")
-    }
-// v422: Feed Layout Style422
-
-
-internal fun PlayerActivity.showV422FeedLayoutStyle422Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v422feedLayoutStyle422).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Feed Layout Style422",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v422feedLayoutStyle422 = value
-        AppToast.show(this, "Feed Layout Style422: $value")
-    }
-// v423: Export Format Default423
-
-
-internal fun PlayerActivity.showV423ExportFormatDefault423Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v423exportFormatDefault423).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Export Format Default423",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v423exportFormatDefault423 = value
-        AppToast.show(this, "Export Format Default423: $value")
-    }
-// v423: Feed Layout Style423
-
-
-internal fun PlayerActivity.showV423FeedLayoutStyle423Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v423feedLayoutStyle423).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Feed Layout Style423",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v423feedLayoutStyle423 = value
-        AppToast.show(this, "Feed Layout Style423: $value")
-    }
-// v424: Export Format Default424
-
-
-internal fun PlayerActivity.showV424ExportFormatDefault424Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v424exportFormatDefault424).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Export Format Default424",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v424exportFormatDefault424 = value
-        AppToast.show(this, "Export Format Default424: $value")
-    }
-// v424: Feed Layout Style424
-
-
-internal fun PlayerActivity.showV424FeedLayoutStyle424Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v424feedLayoutStyle424).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Feed Layout Style424",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v424feedLayoutStyle424 = value
-        AppToast.show(this, "Feed Layout Style424: $value")
-    }
-// v425: Export Format Default425
-
-
-internal fun PlayerActivity.showV425ExportFormatDefault425Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v425exportFormatDefault425).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Export Format Default425",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v425exportFormatDefault425 = value
-        AppToast.show(this, "Export Format Default425: $value")
-    }
-// v425: Feed Layout Style425
-
-
-internal fun PlayerActivity.showV425FeedLayoutStyle425Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v425feedLayoutStyle425).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Feed Layout Style425",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v425feedLayoutStyle425 = value
-        AppToast.show(this, "Feed Layout Style425: $value")
-    }
-// v426: Export Format Default426
-
-
-internal fun PlayerActivity.showV426ExportFormatDefault426Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v426exportFormatDefault426).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Export Format Default426",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v426exportFormatDefault426 = value
-        AppToast.show(this, "Export Format Default426: $value")
-    }
-// v426: Feed Layout Style426
-
-
-internal fun PlayerActivity.showV426FeedLayoutStyle426Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v426feedLayoutStyle426).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Feed Layout Style426",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v426feedLayoutStyle426 = value
-        AppToast.show(this, "Feed Layout Style426: $value")
-    }
-// v427: Export Format Default427
-
-
-internal fun PlayerActivity.showV427ExportFormatDefault427Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v427exportFormatDefault427).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Export Format Default427",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v427exportFormatDefault427 = value
-        AppToast.show(this, "Export Format Default427: $value")
-    }
-// v427: Feed Layout Style427
-
-
-internal fun PlayerActivity.showV427FeedLayoutStyle427Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v427feedLayoutStyle427).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Feed Layout Style427",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v427feedLayoutStyle427 = value
-        AppToast.show(this, "Feed Layout Style427: $value")
-    }
-// v428: Export Format Default428
-
-
-internal fun PlayerActivity.showV428ExportFormatDefault428Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v428exportFormatDefault428).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Export Format Default428",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v428exportFormatDefault428 = value
-        AppToast.show(this, "Export Format Default428: $value")
-    }
-// v428: Feed Layout Style428
-
-
-internal fun PlayerActivity.showV428FeedLayoutStyle428Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v428feedLayoutStyle428).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Feed Layout Style428",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v428feedLayoutStyle428 = value
-        AppToast.show(this, "Feed Layout Style428: $value")
-    }
-// v429: Export Format Default429
-
-
-internal fun PlayerActivity.showV429ExportFormatDefault429Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v429exportFormatDefault429).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Export Format Default429",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v429exportFormatDefault429 = value
-        AppToast.show(this, "Export Format Default429: $value")
-    }
-// v429: Feed Layout Style429
-
-
-internal fun PlayerActivity.showV429FeedLayoutStyle429Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v429feedLayoutStyle429).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Feed Layout Style429",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v429feedLayoutStyle429 = value
-        AppToast.show(this, "Feed Layout Style429: $value")
-    }
-// v430: Export Format Default430
-
-
-internal fun PlayerActivity.showV430ExportFormatDefault430Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v430exportFormatDefault430).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Export Format Default430",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v430exportFormatDefault430 = value
-        AppToast.show(this, "Export Format Default430: $value")
-    }
-// v430: Feed Layout Style430
-
-
-internal fun PlayerActivity.showV430FeedLayoutStyle430Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v430feedLayoutStyle430).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Feed Layout Style430",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v430feedLayoutStyle430 = value
-        AppToast.show(this, "Feed Layout Style430: $value")
-    }
-// v431: Fly Mode Speed431
-
-
-internal fun PlayerActivity.showV431FlyModeSpeed431Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v431flyModeSpeed431).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Fly Mode Speed431",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v431flyModeSpeed431 = value
-        AppToast.show(this, "Fly Mode Speed431: $value")
-    }
-// v431: Gallery Auto Layout431
-
-
-internal fun PlayerActivity.showV431GalleryAutoLayout431Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v431galleryAutoLayout431).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Gallery Auto Layout431",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v431galleryAutoLayout431 = value
-        AppToast.show(this, "Gallery Auto Layout431: $value")
-    }
-// v432: Fly Mode Speed432
-
-
-internal fun PlayerActivity.showV432FlyModeSpeed432Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v432flyModeSpeed432).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Fly Mode Speed432",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v432flyModeSpeed432 = value
-        AppToast.show(this, "Fly Mode Speed432: $value")
-    }
-// v432: Gallery Auto Layout432
-
-
-internal fun PlayerActivity.showV432GalleryAutoLayout432Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v432galleryAutoLayout432).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Gallery Auto Layout432",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v432galleryAutoLayout432 = value
-        AppToast.show(this, "Gallery Auto Layout432: $value")
-    }
-// v433: Fly Mode Speed433
-
-
-internal fun PlayerActivity.showV433FlyModeSpeed433Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v433flyModeSpeed433).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Fly Mode Speed433",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v433flyModeSpeed433 = value
-        AppToast.show(this, "Fly Mode Speed433: $value")
-    }
-// v433: Gallery Auto Layout433
-
-
-internal fun PlayerActivity.showV433GalleryAutoLayout433Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v433galleryAutoLayout433).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Gallery Auto Layout433",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v433galleryAutoLayout433 = value
-        AppToast.show(this, "Gallery Auto Layout433: $value")
-    }
-// v434: Fly Mode Speed434
-
-
-internal fun PlayerActivity.showV434FlyModeSpeed434Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v434flyModeSpeed434).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Fly Mode Speed434",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v434flyModeSpeed434 = value
-        AppToast.show(this, "Fly Mode Speed434: $value")
-    }
-// v434: Gallery Auto Layout434
-
-
-internal fun PlayerActivity.showV434GalleryAutoLayout434Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v434galleryAutoLayout434).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Gallery Auto Layout434",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v434galleryAutoLayout434 = value
-        AppToast.show(this, "Gallery Auto Layout434: $value")
-    }
-// v435: Fly Mode Speed435
-
-
-internal fun PlayerActivity.showV435FlyModeSpeed435Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v435flyModeSpeed435).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Fly Mode Speed435",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v435flyModeSpeed435 = value
-        AppToast.show(this, "Fly Mode Speed435: $value")
-    }
-// v435: Gallery Auto Layout435
-
-
-internal fun PlayerActivity.showV435GalleryAutoLayout435Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v435galleryAutoLayout435).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Gallery Auto Layout435",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v435galleryAutoLayout435 = value
-        AppToast.show(this, "Gallery Auto Layout435: $value")
-    }
-// v436: Fly Mode Speed436
-
-
-internal fun PlayerActivity.showV436FlyModeSpeed436Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v436flyModeSpeed436).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Fly Mode Speed436",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v436flyModeSpeed436 = value
-        AppToast.show(this, "Fly Mode Speed436: $value")
-    }
-// v436: Gallery Auto Layout436
-
-
-internal fun PlayerActivity.showV436GalleryAutoLayout436Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v436galleryAutoLayout436).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Gallery Auto Layout436",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v436galleryAutoLayout436 = value
-        AppToast.show(this, "Gallery Auto Layout436: $value")
-    }
-// v437: Fly Mode Speed437
-
-
-internal fun PlayerActivity.showV437FlyModeSpeed437Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v437flyModeSpeed437).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Fly Mode Speed437",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v437flyModeSpeed437 = value
-        AppToast.show(this, "Fly Mode Speed437: $value")
-    }
-// v437: Gallery Auto Layout437
-
-
-internal fun PlayerActivity.showV437GalleryAutoLayout437Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v437galleryAutoLayout437).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Gallery Auto Layout437",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v437galleryAutoLayout437 = value
-        AppToast.show(this, "Gallery Auto Layout437: $value")
-    }
-// v438: Fly Mode Speed438
-
-
-internal fun PlayerActivity.showV438FlyModeSpeed438Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v438flyModeSpeed438).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Fly Mode Speed438",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v438flyModeSpeed438 = value
-        AppToast.show(this, "Fly Mode Speed438: $value")
-    }
-// v438: Gallery Auto Layout438
-
-
-internal fun PlayerActivity.showV438GalleryAutoLayout438Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v438galleryAutoLayout438).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Gallery Auto Layout438",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v438galleryAutoLayout438 = value
-        AppToast.show(this, "Gallery Auto Layout438: $value")
-    }
-// v439: Fly Mode Speed439
-
-
-internal fun PlayerActivity.showV439FlyModeSpeed439Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v439flyModeSpeed439).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Fly Mode Speed439",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v439flyModeSpeed439 = value
-        AppToast.show(this, "Fly Mode Speed439: $value")
-    }
-// v439: Gallery Auto Layout439
-
-
-internal fun PlayerActivity.showV439GalleryAutoLayout439Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v439galleryAutoLayout439).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Gallery Auto Layout439",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v439galleryAutoLayout439 = value
-        AppToast.show(this, "Gallery Auto Layout439: $value")
-    }
-// v440: Fly Mode Speed440
-
-
-internal fun PlayerActivity.showV440FlyModeSpeed440Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v440flyModeSpeed440).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Fly Mode Speed440",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v440flyModeSpeed440 = value
-        AppToast.show(this, "Fly Mode Speed440: $value")
-    }
-// v440: Gallery Auto Layout440
-
-
-internal fun PlayerActivity.showV440GalleryAutoLayout440Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v440galleryAutoLayout440).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Gallery Auto Layout440",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v440galleryAutoLayout440 = value
-        AppToast.show(this, "Gallery Auto Layout440: $value")
-    }
-// v441: Hang Detection Ms441
-
-
-internal fun PlayerActivity.showV441HangDetectionMs441Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v441hangDetectionMs441).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Hang Detection Ms441",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v441hangDetectionMs441 = value
-        AppToast.show(this, "Hang Detection Ms441: $value")
-    }
-// v441: Heart Beat Interval441
-
-
-internal fun PlayerActivity.showV441HeartBeatInterval441Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v441heartBeatInterval441).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Heart Beat Interval441",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v441heartBeatInterval441 = value
-        AppToast.show(this, "Heart Beat Interval441: $value")
-    }
-// v442: Hang Detection Ms442
-
-
-internal fun PlayerActivity.showV442HangDetectionMs442Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v442hangDetectionMs442).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Hang Detection Ms442",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v442hangDetectionMs442 = value
-        AppToast.show(this, "Hang Detection Ms442: $value")
-    }
-// v442: Heart Beat Interval442
-
-
-internal fun PlayerActivity.showV442HeartBeatInterval442Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v442heartBeatInterval442).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Heart Beat Interval442",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v442heartBeatInterval442 = value
-        AppToast.show(this, "Heart Beat Interval442: $value")
-    }
-// v443: Hang Detection Ms443
-
-
-internal fun PlayerActivity.showV443HangDetectionMs443Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v443hangDetectionMs443).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Hang Detection Ms443",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v443hangDetectionMs443 = value
-        AppToast.show(this, "Hang Detection Ms443: $value")
-    }
-// v443: Heart Beat Interval443
-
-
-internal fun PlayerActivity.showV443HeartBeatInterval443Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v443heartBeatInterval443).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Heart Beat Interval443",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v443heartBeatInterval443 = value
-        AppToast.show(this, "Heart Beat Interval443: $value")
-    }
-// v444: Hang Detection Ms444
-
-
-internal fun PlayerActivity.showV444HangDetectionMs444Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v444hangDetectionMs444).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Hang Detection Ms444",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v444hangDetectionMs444 = value
-        AppToast.show(this, "Hang Detection Ms444: $value")
-    }
-// v444: Heart Beat Interval444
-
-
-internal fun PlayerActivity.showV444HeartBeatInterval444Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v444heartBeatInterval444).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Heart Beat Interval444",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v444heartBeatInterval444 = value
-        AppToast.show(this, "Heart Beat Interval444: $value")
-    }
-// v445: Hang Detection Ms445
-
-
-internal fun PlayerActivity.showV445HangDetectionMs445Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v445hangDetectionMs445).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Hang Detection Ms445",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v445hangDetectionMs445 = value
-        AppToast.show(this, "Hang Detection Ms445: $value")
-    }
-// v445: Heart Beat Interval445
-
-
-internal fun PlayerActivity.showV445HeartBeatInterval445Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v445heartBeatInterval445).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Heart Beat Interval445",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v445heartBeatInterval445 = value
-        AppToast.show(this, "Heart Beat Interval445: $value")
-    }
-// v446: Hang Detection Ms446
-
-
-internal fun PlayerActivity.showV446HangDetectionMs446Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v446hangDetectionMs446).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Hang Detection Ms446",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v446hangDetectionMs446 = value
-        AppToast.show(this, "Hang Detection Ms446: $value")
-    }
-// v446: Heart Beat Interval446
-
-
-internal fun PlayerActivity.showV446HeartBeatInterval446Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v446heartBeatInterval446).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Heart Beat Interval446",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v446heartBeatInterval446 = value
-        AppToast.show(this, "Heart Beat Interval446: $value")
-    }
-// v447: Hang Detection Ms447
-
-
-internal fun PlayerActivity.showV447HangDetectionMs447Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v447hangDetectionMs447).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Hang Detection Ms447",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v447hangDetectionMs447 = value
-        AppToast.show(this, "Hang Detection Ms447: $value")
-    }
-// v447: Heart Beat Interval447
-
-
-internal fun PlayerActivity.showV447HeartBeatInterval447Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v447heartBeatInterval447).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Heart Beat Interval447",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v447heartBeatInterval447 = value
-        AppToast.show(this, "Heart Beat Interval447: $value")
-    }
-// v448: Hang Detection Ms448
-
-
-internal fun PlayerActivity.showV448HangDetectionMs448Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v448hangDetectionMs448).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Hang Detection Ms448",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v448hangDetectionMs448 = value
-        AppToast.show(this, "Hang Detection Ms448: $value")
-    }
-// v448: Heart Beat Interval448
-
-
-internal fun PlayerActivity.showV448HeartBeatInterval448Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v448heartBeatInterval448).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Heart Beat Interval448",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v448heartBeatInterval448 = value
-        AppToast.show(this, "Heart Beat Interval448: $value")
-    }
-// v449: Hang Detection Ms449
-
-
-internal fun PlayerActivity.showV449HangDetectionMs449Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v449hangDetectionMs449).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Hang Detection Ms449",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v449hangDetectionMs449 = value
-        AppToast.show(this, "Hang Detection Ms449: $value")
-    }
-// v449: Heart Beat Interval449
-
-
-internal fun PlayerActivity.showV449HeartBeatInterval449Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v449heartBeatInterval449).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Heart Beat Interval449",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v449heartBeatInterval449 = value
-        AppToast.show(this, "Heart Beat Interval449: $value")
-    }
-// v450: Hang Detection Ms450
-
-
-internal fun PlayerActivity.showV450HangDetectionMs450Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v450hangDetectionMs450).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Hang Detection Ms450",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v450hangDetectionMs450 = value
-        AppToast.show(this, "Hang Detection Ms450: $value")
-    }
-// v450: Heart Beat Interval450
-
-
-internal fun PlayerActivity.showV450HeartBeatInterval450Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v450heartBeatInterval450).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Heart Beat Interval450",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v450heartBeatInterval450 = value
-        AppToast.show(this, "Heart Beat Interval450: $value")
-    }
-// v451: Icon Pack Custom451
-
-
-internal fun PlayerActivity.showV451IconPackCustom451Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v451iconPackCustom451).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Icon Pack Custom451",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v451iconPackCustom451 = value
-        AppToast.show(this, "Icon Pack Custom451: $value")
-    }
-// v452: Icon Pack Custom452
-
-
-internal fun PlayerActivity.showV452IconPackCustom452Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v452iconPackCustom452).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Icon Pack Custom452",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v452iconPackCustom452 = value
-        AppToast.show(this, "Icon Pack Custom452: $value")
-    }
-// v453: Icon Pack Custom453
-
-
-internal fun PlayerActivity.showV453IconPackCustom453Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v453iconPackCustom453).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Icon Pack Custom453",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v453iconPackCustom453 = value
-        AppToast.show(this, "Icon Pack Custom453: $value")
-    }
-// v454: Icon Pack Custom454
-
-
-internal fun PlayerActivity.showV454IconPackCustom454Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v454iconPackCustom454).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Icon Pack Custom454",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v454iconPackCustom454 = value
-        AppToast.show(this, "Icon Pack Custom454: $value")
-    }
-// v455: Icon Pack Custom455
-
-
-internal fun PlayerActivity.showV455IconPackCustom455Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v455iconPackCustom455).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Icon Pack Custom455",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v455iconPackCustom455 = value
-        AppToast.show(this, "Icon Pack Custom455: $value")
-    }
-// v456: Icon Pack Custom456
 
+import blbl.cat3399.core.net.BiliClient
+import blbl.cat3399.core.prefs.AppPrefs
+import blbl.cat3399.core.prefs.PlayerPlaybackModes
+import blbl.cat3399.core.ui.AppToast
+import blbl.cat3399.core.ui.popup.AppPopup
+import blbl.cat3399.feature.player.danmaku.DanmakuFontWeight
+import blbl.cat3399.feature.player.danmaku.DanmakuLaneDensity
+import blbl.cat3399.feature.player.danmaku.DanmakuSessionSettings
+import blbl.cat3399.feature.player.engine.BlblPlayerEngine
+import blbl.cat3399.feature.player.engine.ExoPlayerEngine
+import blbl.cat3399.feature.player.engine.IjkPlayerPluginUi
+import blbl.cat3399.feature.player.engine.PlayerEngineKind
 
-internal fun PlayerActivity.showV456IconPackCustom456Dialog() {
+internal fun PlayerActivity.showV215DanmakuBottomMaxCount237Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v456iconPackCustom456).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v215danmakuBottomMaxCount237).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Icon Pack Custom456",
+        title = "Danmaku Bottom Max Count237",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v456iconPackCustom456 = value
-        AppToast.show(this, "Icon Pack Custom456: $value")
+        BiliClient.prefs.v215danmakuBottomMaxCount237 = value
+        AppToast.show(this, "Danmaku Bottom Max Count237: $value")
     }
-// v457: Icon Pack Custom457
+}
 
+internal fun PlayerActivity.showV215SubtitleBgBorder244Toggle() {
+    val current = BiliClient.prefs.v215subtitleBgBorder244
+    BiliClient.prefs.v215subtitleBgBorder244 = !current
+    AppToast.show(this, "Subtitle Bg Border244: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV457IconPackCustom457Dialog() {
+internal fun PlayerActivity.showV215GestureShakeAction215Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v457iconPackCustom457).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v215gestureShakeAction215).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Icon Pack Custom457",
+        title = "Gesture Shake Action215",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v457iconPackCustom457 = value
-        AppToast.show(this, "Icon Pack Custom457: $value")
+        BiliClient.prefs.v215gestureShakeAction215 = value
+        AppToast.show(this, "Gesture Shake Action215: $value")
     }
-// v458: Icon Pack Custom458
+}
 
-
-internal fun PlayerActivity.showV458IconPackCustom458Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v458iconPackCustom458).takeIf { it >= 0 } ?: 0
+internal fun PlayerActivity.showV215CastAudioVolume215Dialog() {
+    val options = listOf(25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v215castAudioVolume215).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Icon Pack Custom458",
+        title = "Cast Audio Volume215",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v458iconPackCustom458 = value
-        AppToast.show(this, "Icon Pack Custom458: $value")
+        BiliClient.prefs.v215castAudioVolume215 = value
+        AppToast.show(this, "Cast Audio Volume215: $value")
     }
-// v459: Icon Pack Custom459
+}
 
+internal fun PlayerActivity.showV215PlaylistAutoSkipOutro215Toggle() {
+    val current = BiliClient.prefs.v215playlistAutoSkipOutro215
+    BiliClient.prefs.v215playlistAutoSkipOutro215 = !current
+    AppToast.show(this, "Playlist Auto Skip Outro215: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV459IconPackCustom459Dialog() {
+internal fun PlayerActivity.showV215CacheDownloadSpeed216Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v459iconPackCustom459).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v215cacheDownloadSpeed216).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Icon Pack Custom459",
+        title = "Cache Download Speed216",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v459iconPackCustom459 = value
-        AppToast.show(this, "Icon Pack Custom459: $value")
+        BiliClient.prefs.v215cacheDownloadSpeed216 = value
+        AppToast.show(this, "Cache Download Speed216: $value")
     }
-// v460: Icon Pack Custom460
+}
 
+internal fun PlayerActivity.showV215ProgressBarThumbBorder215Toggle() {
+    val current = BiliClient.prefs.v215progressBarThumbBorder215
+    BiliClient.prefs.v215progressBarThumbBorder215 = !current
+    AppToast.show(this, "Progress Bar Thumb Border215: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV460IconPackCustom460Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v460iconPackCustom460).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Icon Pack Custom460",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v460iconPackCustom460 = value
-        AppToast.show(this, "Icon Pack Custom460: $value")
-    }
-// v461: Level Auto Adjust461
+internal fun PlayerActivity.showV215VolumeBoostPeak215Toggle() {
+    val current = BiliClient.prefs.v215volumeBoostPeak215
+    BiliClient.prefs.v215volumeBoostPeak215 = !current
+    AppToast.show(this, "Volume Boost Peak215: ${if (!current) "ON" else "OFF"}")
+}
 
+internal fun PlayerActivity.showV215HistoryBookmarkExport215Toggle() {
+    val current = BiliClient.prefs.v215historyBookmarkExport215
+    BiliClient.prefs.v215historyBookmarkExport215 = !current
+    AppToast.show(this, "History Bookmark Export215: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV461LevelAutoAdjust461Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v461levelAutoAdjust461).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Level Auto Adjust461",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v461levelAutoAdjust461 = value
-        AppToast.show(this, "Level Auto Adjust461: $value")
-    }
-// v461: Line Spacing Adjust461
+internal fun PlayerActivity.showV215PlaybackChapterSync215Toggle() {
+    val current = BiliClient.prefs.v215playbackChapterSync215
+    BiliClient.prefs.v215playbackChapterSync215 = !current
+    AppToast.show(this, "Playback Chapter Sync215: ${if (!current) "ON" else "OFF"}")
+}
 
+internal fun PlayerActivity.showV215ScreenshotSavePath215Toggle() {
+    val current = BiliClient.prefs.v215screenshotSavePath215
+    BiliClient.prefs.v215screenshotSavePath215 = !current
+    AppToast.show(this, "Screenshot Save Path215: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV461LineSpacingAdjust461Dialog() {
+internal fun PlayerActivity.showV215VideoColorSpace215Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v461lineSpacingAdjust461).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v215videoColorSpace215).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Line Spacing Adjust461",
+        title = "Video Color Space215",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v461lineSpacingAdjust461 = value
-        AppToast.show(this, "Line Spacing Adjust461: $value")
+        BiliClient.prefs.v215videoColorSpace215 = value
+        AppToast.show(this, "Video Color Space215: $value")
     }
-// v462: Level Auto Adjust462
+}
 
-
-internal fun PlayerActivity.showV462LevelAutoAdjust462Dialog() {
+internal fun PlayerActivity.showV215DanmakuBottomMaxCount238Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v462levelAutoAdjust462).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v215danmakuBottomMaxCount238).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Level Auto Adjust462",
+        title = "Danmaku Bottom Max Count238",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v462levelAutoAdjust462 = value
-        AppToast.show(this, "Level Auto Adjust462: $value")
+        BiliClient.prefs.v215danmakuBottomMaxCount238 = value
+        AppToast.show(this, "Danmaku Bottom Max Count238: $value")
     }
-// v462: Line Spacing Adjust462
-
+}
 
-internal fun PlayerActivity.showV462LineSpacingAdjust462Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v462lineSpacingAdjust462).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Line Spacing Adjust462",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v462lineSpacingAdjust462 = value
-        AppToast.show(this, "Line Spacing Adjust462: $value")
-    }
-// v463: Level Auto Adjust463
+internal fun PlayerActivity.showV215SubtitleBgBorder245Toggle() {
+    val current = BiliClient.prefs.v215subtitleBgBorder245
+    BiliClient.prefs.v215subtitleBgBorder245 = !current
+    AppToast.show(this, "Subtitle Bg Border245: ${if (!current) "ON" else "OFF"}")
+}
 
+internal fun PlayerActivity.showV216AudioEQCustom216Toggle() {
+    val current = BiliClient.prefs.v216audioEQCustom216
+    BiliClient.prefs.v216audioEQCustom216 = !current
+    AppToast.show(this, "Audio EQ Custom216: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV463LevelAutoAdjust463Dialog() {
+internal fun PlayerActivity.showV216DanmakuBottomMaxCount239Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v463levelAutoAdjust463).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v216danmakuBottomMaxCount239).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Level Auto Adjust463",
+        title = "Danmaku Bottom Max Count239",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v463levelAutoAdjust463 = value
-        AppToast.show(this, "Level Auto Adjust463: $value")
+        BiliClient.prefs.v216danmakuBottomMaxCount239 = value
+        AppToast.show(this, "Danmaku Bottom Max Count239: $value")
     }
-// v463: Line Spacing Adjust463
+}
 
+internal fun PlayerActivity.showV216SubtitleBgBorder246Toggle() {
+    val current = BiliClient.prefs.v216subtitleBgBorder246
+    BiliClient.prefs.v216subtitleBgBorder246 = !current
+    AppToast.show(this, "Subtitle Bg Border246: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV463LineSpacingAdjust463Dialog() {
+internal fun PlayerActivity.showV216GestureShakeAction216Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v463lineSpacingAdjust463).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v216gestureShakeAction216).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Line Spacing Adjust463",
+        title = "Gesture Shake Action216",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v463lineSpacingAdjust463 = value
-        AppToast.show(this, "Line Spacing Adjust463: $value")
+        BiliClient.prefs.v216gestureShakeAction216 = value
+        AppToast.show(this, "Gesture Shake Action216: $value")
     }
-// v464: Level Auto Adjust464
-
+}
 
-internal fun PlayerActivity.showV464LevelAutoAdjust464Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v464levelAutoAdjust464).takeIf { it >= 0 } ?: 0
+internal fun PlayerActivity.showV216CastAudioVolume216Dialog() {
+    val options = listOf(25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v216castAudioVolume216).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Level Auto Adjust464",
+        title = "Cast Audio Volume216",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v464levelAutoAdjust464 = value
-        AppToast.show(this, "Level Auto Adjust464: $value")
+        BiliClient.prefs.v216castAudioVolume216 = value
+        AppToast.show(this, "Cast Audio Volume216: $value")
     }
-// v464: Line Spacing Adjust464
+}
 
+internal fun PlayerActivity.showV216PlaylistAutoSkipOutro216Toggle() {
+    val current = BiliClient.prefs.v216playlistAutoSkipOutro216
+    BiliClient.prefs.v216playlistAutoSkipOutro216 = !current
+    AppToast.show(this, "Playlist Auto Skip Outro216: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV464LineSpacingAdjust464Dialog() {
+internal fun PlayerActivity.showV216CacheDownloadSpeed217Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v464lineSpacingAdjust464).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v216cacheDownloadSpeed217).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Line Spacing Adjust464",
+        title = "Cache Download Speed217",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v464lineSpacingAdjust464 = value
-        AppToast.show(this, "Line Spacing Adjust464: $value")
+        BiliClient.prefs.v216cacheDownloadSpeed217 = value
+        AppToast.show(this, "Cache Download Speed217: $value")
     }
-// v465: Level Auto Adjust465
+}
 
+internal fun PlayerActivity.showV216ProgressBarThumbBorder216Toggle() {
+    val current = BiliClient.prefs.v216progressBarThumbBorder216
+    BiliClient.prefs.v216progressBarThumbBorder216 = !current
+    AppToast.show(this, "Progress Bar Thumb Border216: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV465LevelAutoAdjust465Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v465levelAutoAdjust465).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Level Auto Adjust465",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v465levelAutoAdjust465 = value
-        AppToast.show(this, "Level Auto Adjust465: $value")
-    }
-// v465: Line Spacing Adjust465
+internal fun PlayerActivity.showV216VolumeBoostPeak216Toggle() {
+    val current = BiliClient.prefs.v216volumeBoostPeak216
+    BiliClient.prefs.v216volumeBoostPeak216 = !current
+    AppToast.show(this, "Volume Boost Peak216: ${if (!current) "ON" else "OFF"}")
+}
 
+internal fun PlayerActivity.showV216HistoryBookmarkExport216Toggle() {
+    val current = BiliClient.prefs.v216historyBookmarkExport216
+    BiliClient.prefs.v216historyBookmarkExport216 = !current
+    AppToast.show(this, "History Bookmark Export216: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV465LineSpacingAdjust465Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v465lineSpacingAdjust465).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Line Spacing Adjust465",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v465lineSpacingAdjust465 = value
-        AppToast.show(this, "Line Spacing Adjust465: $value")
-    }
-// v466: Level Auto Adjust466
+internal fun PlayerActivity.showV216PlaybackChapterSync216Toggle() {
+    val current = BiliClient.prefs.v216playbackChapterSync216
+    BiliClient.prefs.v216playbackChapterSync216 = !current
+    AppToast.show(this, "Playback Chapter Sync216: ${if (!current) "ON" else "OFF"}")
+}
 
+internal fun PlayerActivity.showV216ScreenshotSavePath216Toggle() {
+    val current = BiliClient.prefs.v216screenshotSavePath216
+    BiliClient.prefs.v216screenshotSavePath216 = !current
+    AppToast.show(this, "Screenshot Save Path216: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV466LevelAutoAdjust466Dialog() {
+internal fun PlayerActivity.showV216VideoColorSpace216Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v466levelAutoAdjust466).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v216videoColorSpace216).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Level Auto Adjust466",
+        title = "Video Color Space216",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v466levelAutoAdjust466 = value
-        AppToast.show(this, "Level Auto Adjust466: $value")
+        BiliClient.prefs.v216videoColorSpace216 = value
+        AppToast.show(this, "Video Color Space216: $value")
     }
-// v466: Line Spacing Adjust466
-
+}
 
-internal fun PlayerActivity.showV466LineSpacingAdjust466Dialog() {
+internal fun PlayerActivity.showV216DanmakuBottomMaxCount240Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v466lineSpacingAdjust466).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v216danmakuBottomMaxCount240).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Line Spacing Adjust466",
+        title = "Danmaku Bottom Max Count240",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v466lineSpacingAdjust466 = value
-        AppToast.show(this, "Line Spacing Adjust466: $value")
+        BiliClient.prefs.v216danmakuBottomMaxCount240 = value
+        AppToast.show(this, "Danmaku Bottom Max Count240: $value")
     }
-// v467: Level Auto Adjust467
+}
 
-
-internal fun PlayerActivity.showV467LevelAutoAdjust467Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v467levelAutoAdjust467).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Level Auto Adjust467",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v467levelAutoAdjust467 = value
-        AppToast.show(this, "Level Auto Adjust467: $value")
-    }
-// v467: Line Spacing Adjust467
+internal fun PlayerActivity.showV216SubtitleBgBorder247Toggle() {
+    val current = BiliClient.prefs.v216subtitleBgBorder247
+    BiliClient.prefs.v216subtitleBgBorder247 = !current
+    AppToast.show(this, "Subtitle Bg Border247: ${if (!current) "ON" else "OFF"}")
+}
 
+internal fun PlayerActivity.showV217AudioEQCustom217Toggle() {
+    val current = BiliClient.prefs.v217audioEQCustom217
+    BiliClient.prefs.v217audioEQCustom217 = !current
+    AppToast.show(this, "Audio EQ Custom217: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV467LineSpacingAdjust467Dialog() {
+internal fun PlayerActivity.showV217DanmakuBottomMaxCount241Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v467lineSpacingAdjust467).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v217danmakuBottomMaxCount241).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Line Spacing Adjust467",
+        title = "Danmaku Bottom Max Count241",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v467lineSpacingAdjust467 = value
-        AppToast.show(this, "Line Spacing Adjust467: $value")
+        BiliClient.prefs.v217danmakuBottomMaxCount241 = value
+        AppToast.show(this, "Danmaku Bottom Max Count241: $value")
     }
-// v468: Level Auto Adjust468
+}
 
+internal fun PlayerActivity.showV217SubtitleBgBorder248Toggle() {
+    val current = BiliClient.prefs.v217subtitleBgBorder248
+    BiliClient.prefs.v217subtitleBgBorder248 = !current
+    AppToast.show(this, "Subtitle Bg Border248: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV468LevelAutoAdjust468Dialog() {
+internal fun PlayerActivity.showV217GestureShakeAction217Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v468levelAutoAdjust468).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v217gestureShakeAction217).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Level Auto Adjust468",
+        title = "Gesture Shake Action217",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v468levelAutoAdjust468 = value
-        AppToast.show(this, "Level Auto Adjust468: $value")
+        BiliClient.prefs.v217gestureShakeAction217 = value
+        AppToast.show(this, "Gesture Shake Action217: $value")
     }
-// v468: Line Spacing Adjust468
+}
 
-
-internal fun PlayerActivity.showV468LineSpacingAdjust468Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v468lineSpacingAdjust468).takeIf { it >= 0 } ?: 0
+internal fun PlayerActivity.showV217CastAudioVolume217Dialog() {
+    val options = listOf(25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v217castAudioVolume217).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Line Spacing Adjust468",
+        title = "Cast Audio Volume217",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v468lineSpacingAdjust468 = value
-        AppToast.show(this, "Line Spacing Adjust468: $value")
+        BiliClient.prefs.v217castAudioVolume217 = value
+        AppToast.show(this, "Cast Audio Volume217: $value")
     }
-// v469: Level Auto Adjust469
+}
 
+internal fun PlayerActivity.showV217PlaylistAutoSkipOutro217Toggle() {
+    val current = BiliClient.prefs.v217playlistAutoSkipOutro217
+    BiliClient.prefs.v217playlistAutoSkipOutro217 = !current
+    AppToast.show(this, "Playlist Auto Skip Outro217: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV469LevelAutoAdjust469Dialog() {
+internal fun PlayerActivity.showV217CacheDownloadSpeed218Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v469levelAutoAdjust469).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v217cacheDownloadSpeed218).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Level Auto Adjust469",
+        title = "Cache Download Speed218",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v469levelAutoAdjust469 = value
-        AppToast.show(this, "Level Auto Adjust469: $value")
+        BiliClient.prefs.v217cacheDownloadSpeed218 = value
+        AppToast.show(this, "Cache Download Speed218: $value")
     }
-// v469: Line Spacing Adjust469
+}
 
+internal fun PlayerActivity.showV217ProgressBarThumbBorder217Toggle() {
+    val current = BiliClient.prefs.v217progressBarThumbBorder217
+    BiliClient.prefs.v217progressBarThumbBorder217 = !current
+    AppToast.show(this, "Progress Bar Thumb Border217: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV469LineSpacingAdjust469Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v469lineSpacingAdjust469).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Line Spacing Adjust469",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v469lineSpacingAdjust469 = value
-        AppToast.show(this, "Line Spacing Adjust469: $value")
-    }
-// v470: Level Auto Adjust470
+internal fun PlayerActivity.showV217VolumeBoostPeak217Toggle() {
+    val current = BiliClient.prefs.v217volumeBoostPeak217
+    BiliClient.prefs.v217volumeBoostPeak217 = !current
+    AppToast.show(this, "Volume Boost Peak217: ${if (!current) "ON" else "OFF"}")
+}
 
+internal fun PlayerActivity.showV217HistoryBookmarkExport217Toggle() {
+    val current = BiliClient.prefs.v217historyBookmarkExport217
+    BiliClient.prefs.v217historyBookmarkExport217 = !current
+    AppToast.show(this, "History Bookmark Export217: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV470LevelAutoAdjust470Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v470levelAutoAdjust470).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Level Auto Adjust470",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v470levelAutoAdjust470 = value
-        AppToast.show(this, "Level Auto Adjust470: $value")
-    }
-// v470: Line Spacing Adjust470
+internal fun PlayerActivity.showV217PlaybackChapterSync217Toggle() {
+    val current = BiliClient.prefs.v217playbackChapterSync217
+    BiliClient.prefs.v217playbackChapterSync217 = !current
+    AppToast.show(this, "Playback Chapter Sync217: ${if (!current) "ON" else "OFF"}")
+}
 
+internal fun PlayerActivity.showV217ScreenshotSavePath217Toggle() {
+    val current = BiliClient.prefs.v217screenshotSavePath217
+    BiliClient.prefs.v217screenshotSavePath217 = !current
+    AppToast.show(this, "Screenshot Save Path217: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV470LineSpacingAdjust470Dialog() {
+internal fun PlayerActivity.showV217VideoColorSpace217Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v470lineSpacingAdjust470).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v217videoColorSpace217).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Line Spacing Adjust470",
+        title = "Video Color Space217",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v470lineSpacingAdjust470 = value
-        AppToast.show(this, "Line Spacing Adjust470: $value")
+        BiliClient.prefs.v217videoColorSpace217 = value
+        AppToast.show(this, "Video Color Space217: $value")
     }
-// v471: Matrix Transform471
+}
 
-
-internal fun PlayerActivity.showV471MatrixTransform471Dialog() {
+internal fun PlayerActivity.showV217DanmakuBottomMaxCount242Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v471matrixTransform471).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v217danmakuBottomMaxCount242).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Matrix Transform471",
+        title = "Danmaku Bottom Max Count242",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v471matrixTransform471 = value
-        AppToast.show(this, "Matrix Transform471: $value")
+        BiliClient.prefs.v217danmakuBottomMaxCount242 = value
+        AppToast.show(this, "Danmaku Bottom Max Count242: $value")
     }
-// v471: Max Concurrent Load471
-
+}
 
-internal fun PlayerActivity.showV471MaxConcurrentLoad471Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v471maxConcurrentLoad471).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Max Concurrent Load471",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v471maxConcurrentLoad471 = value
-        AppToast.show(this, "Max Concurrent Load471: $value")
-    }
-// v471: Min Bitrate Auto471
+internal fun PlayerActivity.showV217SubtitleBgBorder249Toggle() {
+    val current = BiliClient.prefs.v217subtitleBgBorder249
+    BiliClient.prefs.v217subtitleBgBorder249 = !current
+    AppToast.show(this, "Subtitle Bg Border249: ${if (!current) "ON" else "OFF"}")
+}
 
+internal fun PlayerActivity.showV218AudioEQCustom218Toggle() {
+    val current = BiliClient.prefs.v218audioEQCustom218
+    BiliClient.prefs.v218audioEQCustom218 = !current
+    AppToast.show(this, "Audio EQ Custom218: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV471MinBitrateAuto471Dialog() {
+internal fun PlayerActivity.showV218DanmakuBottomMaxCount243Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v471minBitrateAuto471).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v218danmakuBottomMaxCount243).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Min Bitrate Auto471",
+        title = "Danmaku Bottom Max Count243",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v471minBitrateAuto471 = value
-        AppToast.show(this, "Min Bitrate Auto471: $value")
+        BiliClient.prefs.v218danmakuBottomMaxCount243 = value
+        AppToast.show(this, "Danmaku Bottom Max Count243: $value")
     }
-// v472: Matrix Transform472
+}
 
+internal fun PlayerActivity.showV218SubtitleBgBorder250Toggle() {
+    val current = BiliClient.prefs.v218subtitleBgBorder250
+    BiliClient.prefs.v218subtitleBgBorder250 = !current
+    AppToast.show(this, "Subtitle Bg Border250: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV472MatrixTransform472Dialog() {
+internal fun PlayerActivity.showV218GestureShakeAction218Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v472matrixTransform472).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v218gestureShakeAction218).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Matrix Transform472",
+        title = "Gesture Shake Action218",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v472matrixTransform472 = value
-        AppToast.show(this, "Matrix Transform472: $value")
+        BiliClient.prefs.v218gestureShakeAction218 = value
+        AppToast.show(this, "Gesture Shake Action218: $value")
     }
-// v472: Max Concurrent Load472
-
+}
 
-internal fun PlayerActivity.showV472MaxConcurrentLoad472Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v472maxConcurrentLoad472).takeIf { it >= 0 } ?: 0
+internal fun PlayerActivity.showV218CastAudioVolume218Dialog() {
+    val options = listOf(25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v218castAudioVolume218).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Max Concurrent Load472",
+        title = "Cast Audio Volume218",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v472maxConcurrentLoad472 = value
-        AppToast.show(this, "Max Concurrent Load472: $value")
+        BiliClient.prefs.v218castAudioVolume218 = value
+        AppToast.show(this, "Cast Audio Volume218: $value")
     }
-// v472: Min Bitrate Auto472
+}
 
+internal fun PlayerActivity.showV218PlaylistAutoSkipOutro218Toggle() {
+    val current = BiliClient.prefs.v218playlistAutoSkipOutro218
+    BiliClient.prefs.v218playlistAutoSkipOutro218 = !current
+    AppToast.show(this, "Playlist Auto Skip Outro218: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV472MinBitrateAuto472Dialog() {
+internal fun PlayerActivity.showV218CacheDownloadSpeed219Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v472minBitrateAuto472).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v218cacheDownloadSpeed219).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Min Bitrate Auto472",
+        title = "Cache Download Speed219",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v472minBitrateAuto472 = value
-        AppToast.show(this, "Min Bitrate Auto472: $value")
+        BiliClient.prefs.v218cacheDownloadSpeed219 = value
+        AppToast.show(this, "Cache Download Speed219: $value")
     }
-// v473: Matrix Transform473
+}
 
+internal fun PlayerActivity.showV218ProgressBarThumbBorder218Toggle() {
+    val current = BiliClient.prefs.v218progressBarThumbBorder218
+    BiliClient.prefs.v218progressBarThumbBorder218 = !current
+    AppToast.show(this, "Progress Bar Thumb Border218: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV473MatrixTransform473Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v473matrixTransform473).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Matrix Transform473",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v473matrixTransform473 = value
-        AppToast.show(this, "Matrix Transform473: $value")
-    }
-// v473: Max Concurrent Load473
+internal fun PlayerActivity.showV218VolumeBoostPeak218Toggle() {
+    val current = BiliClient.prefs.v218volumeBoostPeak218
+    BiliClient.prefs.v218volumeBoostPeak218 = !current
+    AppToast.show(this, "Volume Boost Peak218: ${if (!current) "ON" else "OFF"}")
+}
 
+internal fun PlayerActivity.showV218HistoryBookmarkExport218Toggle() {
+    val current = BiliClient.prefs.v218historyBookmarkExport218
+    BiliClient.prefs.v218historyBookmarkExport218 = !current
+    AppToast.show(this, "History Bookmark Export218: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV473MaxConcurrentLoad473Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v473maxConcurrentLoad473).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Max Concurrent Load473",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v473maxConcurrentLoad473 = value
-        AppToast.show(this, "Max Concurrent Load473: $value")
-    }
-// v473: Min Bitrate Auto473
+internal fun PlayerActivity.showV218PlaybackChapterSync218Toggle() {
+    val current = BiliClient.prefs.v218playbackChapterSync218
+    BiliClient.prefs.v218playbackChapterSync218 = !current
+    AppToast.show(this, "Playback Chapter Sync218: ${if (!current) "ON" else "OFF"}")
+}
 
+internal fun PlayerActivity.showV218ScreenshotSavePath218Toggle() {
+    val current = BiliClient.prefs.v218screenshotSavePath218
+    BiliClient.prefs.v218screenshotSavePath218 = !current
+    AppToast.show(this, "Screenshot Save Path218: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV473MinBitrateAuto473Dialog() {
+internal fun PlayerActivity.showV218VideoColorSpace218Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v473minBitrateAuto473).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v218videoColorSpace218).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Min Bitrate Auto473",
+        title = "Video Color Space218",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v473minBitrateAuto473 = value
-        AppToast.show(this, "Min Bitrate Auto473: $value")
+        BiliClient.prefs.v218videoColorSpace218 = value
+        AppToast.show(this, "Video Color Space218: $value")
     }
-// v474: Matrix Transform474
-
+}
 
-internal fun PlayerActivity.showV474MatrixTransform474Dialog() {
+internal fun PlayerActivity.showV218DanmakuBottomMaxCount244Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v474matrixTransform474).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v218danmakuBottomMaxCount244).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Matrix Transform474",
+        title = "Danmaku Bottom Max Count244",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v474matrixTransform474 = value
-        AppToast.show(this, "Matrix Transform474: $value")
+        BiliClient.prefs.v218danmakuBottomMaxCount244 = value
+        AppToast.show(this, "Danmaku Bottom Max Count244: $value")
     }
-// v474: Max Concurrent Load474
+}
 
+internal fun PlayerActivity.showV218SubtitleBgBorder251Toggle() {
+    val current = BiliClient.prefs.v218subtitleBgBorder251
+    BiliClient.prefs.v218subtitleBgBorder251 = !current
+    AppToast.show(this, "Subtitle Bg Border251: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV474MaxConcurrentLoad474Dialog() {
+internal fun PlayerActivity.showV219AudioEQCustom219Toggle() {
+    val current = BiliClient.prefs.v219audioEQCustom219
+    BiliClient.prefs.v219audioEQCustom219 = !current
+    AppToast.show(this, "Audio EQ Custom219: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV219DanmakuBottomMaxCount245Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v474maxConcurrentLoad474).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v219danmakuBottomMaxCount245).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Max Concurrent Load474",
+        title = "Danmaku Bottom Max Count245",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v474maxConcurrentLoad474 = value
-        AppToast.show(this, "Max Concurrent Load474: $value")
+        BiliClient.prefs.v219danmakuBottomMaxCount245 = value
+        AppToast.show(this, "Danmaku Bottom Max Count245: $value")
     }
-// v474: Min Bitrate Auto474
+}
 
+internal fun PlayerActivity.showV219SubtitleBgBorder252Toggle() {
+    val current = BiliClient.prefs.v219subtitleBgBorder252
+    BiliClient.prefs.v219subtitleBgBorder252 = !current
+    AppToast.show(this, "Subtitle Bg Border252: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV474MinBitrateAuto474Dialog() {
+internal fun PlayerActivity.showV219GestureShakeAction219Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v474minBitrateAuto474).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v219gestureShakeAction219).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Min Bitrate Auto474",
+        title = "Gesture Shake Action219",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v474minBitrateAuto474 = value
-        AppToast.show(this, "Min Bitrate Auto474: $value")
+        BiliClient.prefs.v219gestureShakeAction219 = value
+        AppToast.show(this, "Gesture Shake Action219: $value")
     }
-// v475: Matrix Transform475
-
+}
 
-internal fun PlayerActivity.showV475MatrixTransform475Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v475matrixTransform475).takeIf { it >= 0 } ?: 0
+internal fun PlayerActivity.showV219CastAudioVolume219Dialog() {
+    val options = listOf(25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v219castAudioVolume219).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Matrix Transform475",
+        title = "Cast Audio Volume219",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v475matrixTransform475 = value
-        AppToast.show(this, "Matrix Transform475: $value")
+        BiliClient.prefs.v219castAudioVolume219 = value
+        AppToast.show(this, "Cast Audio Volume219: $value")
     }
-// v475: Max Concurrent Load475
+}
 
+internal fun PlayerActivity.showV219PlaylistAutoSkipOutro219Toggle() {
+    val current = BiliClient.prefs.v219playlistAutoSkipOutro219
+    BiliClient.prefs.v219playlistAutoSkipOutro219 = !current
+    AppToast.show(this, "Playlist Auto Skip Outro219: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV475MaxConcurrentLoad475Dialog() {
+internal fun PlayerActivity.showV219CacheDownloadSpeed220Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v475maxConcurrentLoad475).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v219cacheDownloadSpeed220).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Max Concurrent Load475",
+        title = "Cache Download Speed220",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v475maxConcurrentLoad475 = value
-        AppToast.show(this, "Max Concurrent Load475: $value")
+        BiliClient.prefs.v219cacheDownloadSpeed220 = value
+        AppToast.show(this, "Cache Download Speed220: $value")
     }
-// v475: Min Bitrate Auto475
+}
 
+internal fun PlayerActivity.showV219ProgressBarThumbBorder219Toggle() {
+    val current = BiliClient.prefs.v219progressBarThumbBorder219
+    BiliClient.prefs.v219progressBarThumbBorder219 = !current
+    AppToast.show(this, "Progress Bar Thumb Border219: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV475MinBitrateAuto475Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v475minBitrateAuto475).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Min Bitrate Auto475",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v475minBitrateAuto475 = value
-        AppToast.show(this, "Min Bitrate Auto475: $value")
-    }
-// v476: Matrix Transform476
+internal fun PlayerActivity.showV219VolumeBoostPeak219Toggle() {
+    val current = BiliClient.prefs.v219volumeBoostPeak219
+    BiliClient.prefs.v219volumeBoostPeak219 = !current
+    AppToast.show(this, "Volume Boost Peak219: ${if (!current) "ON" else "OFF"}")
+}
 
+internal fun PlayerActivity.showV219HistoryBookmarkExport219Toggle() {
+    val current = BiliClient.prefs.v219historyBookmarkExport219
+    BiliClient.prefs.v219historyBookmarkExport219 = !current
+    AppToast.show(this, "History Bookmark Export219: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV476MatrixTransform476Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v476matrixTransform476).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Matrix Transform476",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v476matrixTransform476 = value
-        AppToast.show(this, "Matrix Transform476: $value")
-    }
-// v476: Max Concurrent Load476
+internal fun PlayerActivity.showV219PlaybackChapterSync219Toggle() {
+    val current = BiliClient.prefs.v219playbackChapterSync219
+    BiliClient.prefs.v219playbackChapterSync219 = !current
+    AppToast.show(this, "Playback Chapter Sync219: ${if (!current) "ON" else "OFF"}")
+}
 
+internal fun PlayerActivity.showV219ScreenshotSavePath219Toggle() {
+    val current = BiliClient.prefs.v219screenshotSavePath219
+    BiliClient.prefs.v219screenshotSavePath219 = !current
+    AppToast.show(this, "Screenshot Save Path219: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV476MaxConcurrentLoad476Dialog() {
+internal fun PlayerActivity.showV219VideoColorSpace219Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v476maxConcurrentLoad476).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v219videoColorSpace219).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Max Concurrent Load476",
+        title = "Video Color Space219",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v476maxConcurrentLoad476 = value
-        AppToast.show(this, "Max Concurrent Load476: $value")
+        BiliClient.prefs.v219videoColorSpace219 = value
+        AppToast.show(this, "Video Color Space219: $value")
     }
-// v476: Min Bitrate Auto476
-
+}
 
-internal fun PlayerActivity.showV476MinBitrateAuto476Dialog() {
+internal fun PlayerActivity.showV219DanmakuBottomMaxCount246Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v476minBitrateAuto476).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v219danmakuBottomMaxCount246).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Min Bitrate Auto476",
+        title = "Danmaku Bottom Max Count246",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v476minBitrateAuto476 = value
-        AppToast.show(this, "Min Bitrate Auto476: $value")
+        BiliClient.prefs.v219danmakuBottomMaxCount246 = value
+        AppToast.show(this, "Danmaku Bottom Max Count246: $value")
     }
-// v477: Matrix Transform477
+}
 
+internal fun PlayerActivity.showV219SubtitleBgBorder253Toggle() {
+    val current = BiliClient.prefs.v219subtitleBgBorder253
+    BiliClient.prefs.v219subtitleBgBorder253 = !current
+    AppToast.show(this, "Subtitle Bg Border253: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV477MatrixTransform477Dialog() {
+internal fun PlayerActivity.showV220AudioEQCustom220Toggle() {
+    val current = BiliClient.prefs.v220audioEQCustom220
+    BiliClient.prefs.v220audioEQCustom220 = !current
+    AppToast.show(this, "Audio EQ Custom220: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV220DanmakuBottomMaxCount247Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v477matrixTransform477).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v220danmakuBottomMaxCount247).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Matrix Transform477",
+        title = "Danmaku Bottom Max Count247",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v477matrixTransform477 = value
-        AppToast.show(this, "Matrix Transform477: $value")
+        BiliClient.prefs.v220danmakuBottomMaxCount247 = value
+        AppToast.show(this, "Danmaku Bottom Max Count247: $value")
     }
-// v477: Max Concurrent Load477
+}
 
+internal fun PlayerActivity.showV220SubtitleBgBorder254Toggle() {
+    val current = BiliClient.prefs.v220subtitleBgBorder254
+    BiliClient.prefs.v220subtitleBgBorder254 = !current
+    AppToast.show(this, "Subtitle Bg Border254: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV477MaxConcurrentLoad477Dialog() {
+internal fun PlayerActivity.showV220GestureShakeAction220Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v477maxConcurrentLoad477).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v220gestureShakeAction220).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Max Concurrent Load477",
+        title = "Gesture Shake Action220",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v477maxConcurrentLoad477 = value
-        AppToast.show(this, "Max Concurrent Load477: $value")
+        BiliClient.prefs.v220gestureShakeAction220 = value
+        AppToast.show(this, "Gesture Shake Action220: $value")
     }
-// v477: Min Bitrate Auto477
-
+}
 
-internal fun PlayerActivity.showV477MinBitrateAuto477Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v477minBitrateAuto477).takeIf { it >= 0 } ?: 0
+internal fun PlayerActivity.showV220CastAudioVolume220Dialog() {
+    val options = listOf(25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v220castAudioVolume220).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Min Bitrate Auto477",
+        title = "Cast Audio Volume220",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v477minBitrateAuto477 = value
-        AppToast.show(this, "Min Bitrate Auto477: $value")
+        BiliClient.prefs.v220castAudioVolume220 = value
+        AppToast.show(this, "Cast Audio Volume220: $value")
     }
-// v478: Matrix Transform478
+}
 
+internal fun PlayerActivity.showV220PlaylistAutoSkipOutro220Toggle() {
+    val current = BiliClient.prefs.v220playlistAutoSkipOutro220
+    BiliClient.prefs.v220playlistAutoSkipOutro220 = !current
+    AppToast.show(this, "Playlist Auto Skip Outro220: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV478MatrixTransform478Dialog() {
+internal fun PlayerActivity.showV220CacheDownloadSpeed221Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v478matrixTransform478).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v220cacheDownloadSpeed221).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Matrix Transform478",
+        title = "Cache Download Speed221",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v478matrixTransform478 = value
-        AppToast.show(this, "Matrix Transform478: $value")
+        BiliClient.prefs.v220cacheDownloadSpeed221 = value
+        AppToast.show(this, "Cache Download Speed221: $value")
     }
-// v478: Max Concurrent Load478
+}
 
+internal fun PlayerActivity.showV220ProgressBarThumbBorder220Toggle() {
+    val current = BiliClient.prefs.v220progressBarThumbBorder220
+    BiliClient.prefs.v220progressBarThumbBorder220 = !current
+    AppToast.show(this, "Progress Bar Thumb Border220: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV478MaxConcurrentLoad478Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v478maxConcurrentLoad478).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Max Concurrent Load478",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v478maxConcurrentLoad478 = value
-        AppToast.show(this, "Max Concurrent Load478: $value")
-    }
-// v478: Min Bitrate Auto478
+internal fun PlayerActivity.showV220VolumeBoostPeak220Toggle() {
+    val current = BiliClient.prefs.v220volumeBoostPeak220
+    BiliClient.prefs.v220volumeBoostPeak220 = !current
+    AppToast.show(this, "Volume Boost Peak220: ${if (!current) "ON" else "OFF"}")
+}
 
+internal fun PlayerActivity.showV220HistoryBookmarkExport220Toggle() {
+    val current = BiliClient.prefs.v220historyBookmarkExport220
+    BiliClient.prefs.v220historyBookmarkExport220 = !current
+    AppToast.show(this, "History Bookmark Export220: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV478MinBitrateAuto478Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v478minBitrateAuto478).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Min Bitrate Auto478",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v478minBitrateAuto478 = value
-        AppToast.show(this, "Min Bitrate Auto478: $value")
-    }
-// v479: Matrix Transform479
+internal fun PlayerActivity.showV220PlaybackChapterSync220Toggle() {
+    val current = BiliClient.prefs.v220playbackChapterSync220
+    BiliClient.prefs.v220playbackChapterSync220 = !current
+    AppToast.show(this, "Playback Chapter Sync220: ${if (!current) "ON" else "OFF"}")
+}
 
+internal fun PlayerActivity.showV220ScreenshotSavePath220Toggle() {
+    val current = BiliClient.prefs.v220screenshotSavePath220
+    BiliClient.prefs.v220screenshotSavePath220 = !current
+    AppToast.show(this, "Screenshot Save Path220: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV479MatrixTransform479Dialog() {
+internal fun PlayerActivity.showV220VideoColorSpace220Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v479matrixTransform479).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v220videoColorSpace220).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Matrix Transform479",
+        title = "Video Color Space220",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v479matrixTransform479 = value
-        AppToast.show(this, "Matrix Transform479: $value")
+        BiliClient.prefs.v220videoColorSpace220 = value
+        AppToast.show(this, "Video Color Space220: $value")
     }
-// v479: Max Concurrent Load479
-
+}
 
-internal fun PlayerActivity.showV479MaxConcurrentLoad479Dialog() {
+internal fun PlayerActivity.showV220DanmakuBottomMaxCount248Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v479maxConcurrentLoad479).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v220danmakuBottomMaxCount248).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Max Concurrent Load479",
+        title = "Danmaku Bottom Max Count248",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v479maxConcurrentLoad479 = value
-        AppToast.show(this, "Max Concurrent Load479: $value")
+        BiliClient.prefs.v220danmakuBottomMaxCount248 = value
+        AppToast.show(this, "Danmaku Bottom Max Count248: $value")
     }
-// v479: Min Bitrate Auto479
+}
 
+internal fun PlayerActivity.showV220SubtitleBgBorder255Toggle() {
+    val current = BiliClient.prefs.v220subtitleBgBorder255
+    BiliClient.prefs.v220subtitleBgBorder255 = !current
+    AppToast.show(this, "Subtitle Bg Border255: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV479MinBitrateAuto479Dialog() {
+internal fun PlayerActivity.showV221AudioEQCustom221Toggle() {
+    val current = BiliClient.prefs.v221audioEQCustom221
+    BiliClient.prefs.v221audioEQCustom221 = !current
+    AppToast.show(this, "Audio EQ Custom221: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV221DanmakuBottomMaxCount249Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v479minBitrateAuto479).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v221danmakuBottomMaxCount249).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Min Bitrate Auto479",
+        title = "Danmaku Bottom Max Count249",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v479minBitrateAuto479 = value
-        AppToast.show(this, "Min Bitrate Auto479: $value")
+        BiliClient.prefs.v221danmakuBottomMaxCount249 = value
+        AppToast.show(this, "Danmaku Bottom Max Count249: $value")
     }
-// v480: Matrix Transform480
+}
 
+internal fun PlayerActivity.showV221SubtitleBgBorder256Toggle() {
+    val current = BiliClient.prefs.v221subtitleBgBorder256
+    BiliClient.prefs.v221subtitleBgBorder256 = !current
+    AppToast.show(this, "Subtitle Bg Border256: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV480MatrixTransform480Dialog() {
+internal fun PlayerActivity.showV221GestureShakeAction221Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v480matrixTransform480).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v221gestureShakeAction221).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Matrix Transform480",
+        title = "Gesture Shake Action221",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v480matrixTransform480 = value
-        AppToast.show(this, "Matrix Transform480: $value")
+        BiliClient.prefs.v221gestureShakeAction221 = value
+        AppToast.show(this, "Gesture Shake Action221: $value")
     }
-// v480: Max Concurrent Load480
-
+}
 
-internal fun PlayerActivity.showV480MaxConcurrentLoad480Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v480maxConcurrentLoad480).takeIf { it >= 0 } ?: 0
+internal fun PlayerActivity.showV221CastAudioVolume221Dialog() {
+    val options = listOf(25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v221castAudioVolume221).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Max Concurrent Load480",
+        title = "Cast Audio Volume221",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v480maxConcurrentLoad480 = value
-        AppToast.show(this, "Max Concurrent Load480: $value")
+        BiliClient.prefs.v221castAudioVolume221 = value
+        AppToast.show(this, "Cast Audio Volume221: $value")
     }
-// v480: Min Bitrate Auto480
+}
 
+internal fun PlayerActivity.showV221PlaylistAutoSkipOutro221Toggle() {
+    val current = BiliClient.prefs.v221playlistAutoSkipOutro221
+    BiliClient.prefs.v221playlistAutoSkipOutro221 = !current
+    AppToast.show(this, "Playlist Auto Skip Outro221: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV480MinBitrateAuto480Dialog() {
+internal fun PlayerActivity.showV221CacheDownloadSpeed222Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v480minBitrateAuto480).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v221cacheDownloadSpeed222).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Min Bitrate Auto480",
+        title = "Cache Download Speed222",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v480minBitrateAuto480 = value
-        AppToast.show(this, "Min Bitrate Auto480: $value")
+        BiliClient.prefs.v221cacheDownloadSpeed222 = value
+        AppToast.show(this, "Cache Download Speed222: $value")
     }
-// v481: Order Auto Sort481
+}
 
+internal fun PlayerActivity.showV221ProgressBarThumbBorder221Toggle() {
+    val current = BiliClient.prefs.v221progressBarThumbBorder221
+    BiliClient.prefs.v221progressBarThumbBorder221 = !current
+    AppToast.show(this, "Progress Bar Thumb Border221: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV481OrderAutoSort481Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v481orderAutoSort481).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Order Auto Sort481",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v481orderAutoSort481 = value
-        AppToast.show(this, "Order Auto Sort481: $value")
-    }
-// v482: Order Auto Sort482
+internal fun PlayerActivity.showV221VolumeBoostPeak221Toggle() {
+    val current = BiliClient.prefs.v221volumeBoostPeak221
+    BiliClient.prefs.v221volumeBoostPeak221 = !current
+    AppToast.show(this, "Volume Boost Peak221: ${if (!current) "ON" else "OFF"}")
+}
 
+internal fun PlayerActivity.showV221HistoryBookmarkExport221Toggle() {
+    val current = BiliClient.prefs.v221historyBookmarkExport221
+    BiliClient.prefs.v221historyBookmarkExport221 = !current
+    AppToast.show(this, "History Bookmark Export221: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV482OrderAutoSort482Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v482orderAutoSort482).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Order Auto Sort482",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v482orderAutoSort482 = value
-        AppToast.show(this, "Order Auto Sort482: $value")
-    }
-// v483: Order Auto Sort483
+internal fun PlayerActivity.showV221PlaybackChapterSync221Toggle() {
+    val current = BiliClient.prefs.v221playbackChapterSync221
+    BiliClient.prefs.v221playbackChapterSync221 = !current
+    AppToast.show(this, "Playback Chapter Sync221: ${if (!current) "ON" else "OFF"}")
+}
 
+internal fun PlayerActivity.showV221ScreenshotSavePath221Toggle() {
+    val current = BiliClient.prefs.v221screenshotSavePath221
+    BiliClient.prefs.v221screenshotSavePath221 = !current
+    AppToast.show(this, "Screenshot Save Path221: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV483OrderAutoSort483Dialog() {
+internal fun PlayerActivity.showV221VideoColorSpace221Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v483orderAutoSort483).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v221videoColorSpace221).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Order Auto Sort483",
+        title = "Video Color Space221",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v483orderAutoSort483 = value
-        AppToast.show(this, "Order Auto Sort483: $value")
+        BiliClient.prefs.v221videoColorSpace221 = value
+        AppToast.show(this, "Video Color Space221: $value")
     }
-// v484: Order Auto Sort484
-
+}
 
-internal fun PlayerActivity.showV484OrderAutoSort484Dialog() {
+internal fun PlayerActivity.showV221DanmakuBottomMaxCount250Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v484orderAutoSort484).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v221danmakuBottomMaxCount250).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Order Auto Sort484",
+        title = "Danmaku Bottom Max Count250",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v484orderAutoSort484 = value
-        AppToast.show(this, "Order Auto Sort484: $value")
+        BiliClient.prefs.v221danmakuBottomMaxCount250 = value
+        AppToast.show(this, "Danmaku Bottom Max Count250: $value")
     }
-// v485: Order Auto Sort485
+}
 
+internal fun PlayerActivity.showV221SubtitleBgBorder257Toggle() {
+    val current = BiliClient.prefs.v221subtitleBgBorder257
+    BiliClient.prefs.v221subtitleBgBorder257 = !current
+    AppToast.show(this, "Subtitle Bg Border257: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV485OrderAutoSort485Dialog() {
+internal fun PlayerActivity.showV222AudioEQCustom222Toggle() {
+    val current = BiliClient.prefs.v222audioEQCustom222
+    BiliClient.prefs.v222audioEQCustom222 = !current
+    AppToast.show(this, "Audio EQ Custom222: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV222DanmakuBottomMaxCount251Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v485orderAutoSort485).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v222danmakuBottomMaxCount251).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Order Auto Sort485",
+        title = "Danmaku Bottom Max Count251",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v485orderAutoSort485 = value
-        AppToast.show(this, "Order Auto Sort485: $value")
+        BiliClient.prefs.v222danmakuBottomMaxCount251 = value
+        AppToast.show(this, "Danmaku Bottom Max Count251: $value")
     }
-// v486: Order Auto Sort486
+}
 
+internal fun PlayerActivity.showV222SubtitleBgBorder258Toggle() {
+    val current = BiliClient.prefs.v222subtitleBgBorder258
+    BiliClient.prefs.v222subtitleBgBorder258 = !current
+    AppToast.show(this, "Subtitle Bg Border258: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV486OrderAutoSort486Dialog() {
+internal fun PlayerActivity.showV222GestureShakeAction222Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v486orderAutoSort486).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v222gestureShakeAction222).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Order Auto Sort486",
+        title = "Gesture Shake Action222",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v486orderAutoSort486 = value
-        AppToast.show(this, "Order Auto Sort486: $value")
+        BiliClient.prefs.v222gestureShakeAction222 = value
+        AppToast.show(this, "Gesture Shake Action222: $value")
     }
-// v487: Order Auto Sort487
-
+}
 
-internal fun PlayerActivity.showV487OrderAutoSort487Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v487orderAutoSort487).takeIf { it >= 0 } ?: 0
+internal fun PlayerActivity.showV222CastAudioVolume222Dialog() {
+    val options = listOf(25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v222castAudioVolume222).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Order Auto Sort487",
+        title = "Cast Audio Volume222",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v487orderAutoSort487 = value
-        AppToast.show(this, "Order Auto Sort487: $value")
+        BiliClient.prefs.v222castAudioVolume222 = value
+        AppToast.show(this, "Cast Audio Volume222: $value")
     }
-// v488: Order Auto Sort488
+}
 
+internal fun PlayerActivity.showV222PlaylistAutoSkipOutro222Toggle() {
+    val current = BiliClient.prefs.v222playlistAutoSkipOutro222
+    BiliClient.prefs.v222playlistAutoSkipOutro222 = !current
+    AppToast.show(this, "Playlist Auto Skip Outro222: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV488OrderAutoSort488Dialog() {
+internal fun PlayerActivity.showV222CacheDownloadSpeed223Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v488orderAutoSort488).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v222cacheDownloadSpeed223).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Order Auto Sort488",
+        title = "Cache Download Speed223",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v488orderAutoSort488 = value
-        AppToast.show(this, "Order Auto Sort488: $value")
+        BiliClient.prefs.v222cacheDownloadSpeed223 = value
+        AppToast.show(this, "Cache Download Speed223: $value")
     }
-// v489: Order Auto Sort489
+}
 
+internal fun PlayerActivity.showV222ProgressBarThumbBorder222Toggle() {
+    val current = BiliClient.prefs.v222progressBarThumbBorder222
+    BiliClient.prefs.v222progressBarThumbBorder222 = !current
+    AppToast.show(this, "Progress Bar Thumb Border222: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV489OrderAutoSort489Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v489orderAutoSort489).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Order Auto Sort489",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v489orderAutoSort489 = value
-        AppToast.show(this, "Order Auto Sort489: $value")
-    }
-// v490: Order Auto Sort490
+internal fun PlayerActivity.showV222VolumeBoostPeak222Toggle() {
+    val current = BiliClient.prefs.v222volumeBoostPeak222
+    BiliClient.prefs.v222volumeBoostPeak222 = !current
+    AppToast.show(this, "Volume Boost Peak222: ${if (!current) "ON" else "OFF"}")
+}
 
+internal fun PlayerActivity.showV222HistoryBookmarkExport222Toggle() {
+    val current = BiliClient.prefs.v222historyBookmarkExport222
+    BiliClient.prefs.v222historyBookmarkExport222 = !current
+    AppToast.show(this, "History Bookmark Export222: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV490OrderAutoSort490Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v490orderAutoSort490).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Order Auto Sort490",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v490orderAutoSort490 = value
-        AppToast.show(this, "Order Auto Sort490: $value")
-    }
-// v501: Press And Hold Action501
+internal fun PlayerActivity.showV222PlaybackChapterSync222Toggle() {
+    val current = BiliClient.prefs.v222playbackChapterSync222
+    BiliClient.prefs.v222playbackChapterSync222 = !current
+    AppToast.show(this, "Playback Chapter Sync222: ${if (!current) "ON" else "OFF"}")
+}
 
+internal fun PlayerActivity.showV222ScreenshotSavePath222Toggle() {
+    val current = BiliClient.prefs.v222screenshotSavePath222
+    BiliClient.prefs.v222screenshotSavePath222 = !current
+    AppToast.show(this, "Screenshot Save Path222: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV501PressAndHoldAction501Dialog() {
+internal fun PlayerActivity.showV222VideoColorSpace222Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v501pressAndHoldAction501).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v222videoColorSpace222).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Press And Hold Action501",
+        title = "Video Color Space222",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v501pressAndHoldAction501 = value
-        AppToast.show(this, "Press And Hold Action501: $value")
+        BiliClient.prefs.v222videoColorSpace222 = value
+        AppToast.show(this, "Video Color Space222: $value")
     }
-// v501: Primary Audio Track501
-
+}
 
-internal fun PlayerActivity.showV501PrimaryAudioTrack501Dialog() {
+internal fun PlayerActivity.showV222DanmakuBottomMaxCount252Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v501primaryAudioTrack501).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v222danmakuBottomMaxCount252).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Primary Audio Track501",
+        title = "Danmaku Bottom Max Count252",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v501primaryAudioTrack501 = value
-        AppToast.show(this, "Primary Audio Track501: $value")
+        BiliClient.prefs.v222danmakuBottomMaxCount252 = value
+        AppToast.show(this, "Danmaku Bottom Max Count252: $value")
     }
-// v502: Press And Hold Action502
+}
 
+internal fun PlayerActivity.showV222SubtitleBgBorder259Toggle() {
+    val current = BiliClient.prefs.v222subtitleBgBorder259
+    BiliClient.prefs.v222subtitleBgBorder259 = !current
+    AppToast.show(this, "Subtitle Bg Border259: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV502PressAndHoldAction502Dialog() {
+internal fun PlayerActivity.showV223AudioEQCustom223Toggle() {
+    val current = BiliClient.prefs.v223audioEQCustom223
+    BiliClient.prefs.v223audioEQCustom223 = !current
+    AppToast.show(this, "Audio EQ Custom223: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV223DanmakuBottomMaxCount253Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v502pressAndHoldAction502).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v223danmakuBottomMaxCount253).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Press And Hold Action502",
+        title = "Danmaku Bottom Max Count253",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v502pressAndHoldAction502 = value
-        AppToast.show(this, "Press And Hold Action502: $value")
+        BiliClient.prefs.v223danmakuBottomMaxCount253 = value
+        AppToast.show(this, "Danmaku Bottom Max Count253: $value")
     }
-// v502: Primary Audio Track502
+}
 
+internal fun PlayerActivity.showV223SubtitleBgBorder260Toggle() {
+    val current = BiliClient.prefs.v223subtitleBgBorder260
+    BiliClient.prefs.v223subtitleBgBorder260 = !current
+    AppToast.show(this, "Subtitle Bg Border260: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV502PrimaryAudioTrack502Dialog() {
+internal fun PlayerActivity.showV223GestureShakeAction223Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v502primaryAudioTrack502).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v223gestureShakeAction223).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Primary Audio Track502",
+        title = "Gesture Shake Action223",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v502primaryAudioTrack502 = value
-        AppToast.show(this, "Primary Audio Track502: $value")
+        BiliClient.prefs.v223gestureShakeAction223 = value
+        AppToast.show(this, "Gesture Shake Action223: $value")
     }
-// v503: Press And Hold Action503
-
+}
 
-internal fun PlayerActivity.showV503PressAndHoldAction503Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v503pressAndHoldAction503).takeIf { it >= 0 } ?: 0
+internal fun PlayerActivity.showV223CastAudioVolume223Dialog() {
+    val options = listOf(25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v223castAudioVolume223).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Press And Hold Action503",
+        title = "Cast Audio Volume223",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v503pressAndHoldAction503 = value
-        AppToast.show(this, "Press And Hold Action503: $value")
+        BiliClient.prefs.v223castAudioVolume223 = value
+        AppToast.show(this, "Cast Audio Volume223: $value")
     }
-// v503: Primary Audio Track503
+}
 
+internal fun PlayerActivity.showV223PlaylistAutoSkipOutro223Toggle() {
+    val current = BiliClient.prefs.v223playlistAutoSkipOutro223
+    BiliClient.prefs.v223playlistAutoSkipOutro223 = !current
+    AppToast.show(this, "Playlist Auto Skip Outro223: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV503PrimaryAudioTrack503Dialog() {
+internal fun PlayerActivity.showV223CacheDownloadSpeed224Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v503primaryAudioTrack503).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v223cacheDownloadSpeed224).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Primary Audio Track503",
+        title = "Cache Download Speed224",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v503primaryAudioTrack503 = value
-        AppToast.show(this, "Primary Audio Track503: $value")
+        BiliClient.prefs.v223cacheDownloadSpeed224 = value
+        AppToast.show(this, "Cache Download Speed224: $value")
     }
-// v504: Press And Hold Action504
+}
 
+internal fun PlayerActivity.showV223ProgressBarThumbBorder223Toggle() {
+    val current = BiliClient.prefs.v223progressBarThumbBorder223
+    BiliClient.prefs.v223progressBarThumbBorder223 = !current
+    AppToast.show(this, "Progress Bar Thumb Border223: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV504PressAndHoldAction504Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v504pressAndHoldAction504).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Press And Hold Action504",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v504pressAndHoldAction504 = value
-        AppToast.show(this, "Press And Hold Action504: $value")
-    }
-// v504: Primary Audio Track504
+internal fun PlayerActivity.showV223VolumeBoostPeak223Toggle() {
+    val current = BiliClient.prefs.v223volumeBoostPeak223
+    BiliClient.prefs.v223volumeBoostPeak223 = !current
+    AppToast.show(this, "Volume Boost Peak223: ${if (!current) "ON" else "OFF"}")
+}
 
+internal fun PlayerActivity.showV223HistoryBookmarkExport223Toggle() {
+    val current = BiliClient.prefs.v223historyBookmarkExport223
+    BiliClient.prefs.v223historyBookmarkExport223 = !current
+    AppToast.show(this, "History Bookmark Export223: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV504PrimaryAudioTrack504Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v504primaryAudioTrack504).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Primary Audio Track504",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v504primaryAudioTrack504 = value
-        AppToast.show(this, "Primary Audio Track504: $value")
-    }
-// v505: Press And Hold Action505
+internal fun PlayerActivity.showV223PlaybackChapterSync223Toggle() {
+    val current = BiliClient.prefs.v223playbackChapterSync223
+    BiliClient.prefs.v223playbackChapterSync223 = !current
+    AppToast.show(this, "Playback Chapter Sync223: ${if (!current) "ON" else "OFF"}")
+}
 
+internal fun PlayerActivity.showV223ScreenshotSavePath223Toggle() {
+    val current = BiliClient.prefs.v223screenshotSavePath223
+    BiliClient.prefs.v223screenshotSavePath223 = !current
+    AppToast.show(this, "Screenshot Save Path223: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV505PressAndHoldAction505Dialog() {
+internal fun PlayerActivity.showV223VideoColorSpace223Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v505pressAndHoldAction505).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v223videoColorSpace223).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Press And Hold Action505",
+        title = "Video Color Space223",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v505pressAndHoldAction505 = value
-        AppToast.show(this, "Press And Hold Action505: $value")
+        BiliClient.prefs.v223videoColorSpace223 = value
+        AppToast.show(this, "Video Color Space223: $value")
     }
-// v505: Primary Audio Track505
-
+}
 
-internal fun PlayerActivity.showV505PrimaryAudioTrack505Dialog() {
+internal fun PlayerActivity.showV223DanmakuBottomMaxCount254Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v505primaryAudioTrack505).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v223danmakuBottomMaxCount254).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Primary Audio Track505",
+        title = "Danmaku Bottom Max Count254",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v505primaryAudioTrack505 = value
-        AppToast.show(this, "Primary Audio Track505: $value")
+        BiliClient.prefs.v223danmakuBottomMaxCount254 = value
+        AppToast.show(this, "Danmaku Bottom Max Count254: $value")
     }
-// v506: Press And Hold Action506
+}
 
+internal fun PlayerActivity.showV223SubtitleBgBorder261Toggle() {
+    val current = BiliClient.prefs.v223subtitleBgBorder261
+    BiliClient.prefs.v223subtitleBgBorder261 = !current
+    AppToast.show(this, "Subtitle Bg Border261: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV506PressAndHoldAction506Dialog() {
+internal fun PlayerActivity.showV224AudioEQCustom224Toggle() {
+    val current = BiliClient.prefs.v224audioEQCustom224
+    BiliClient.prefs.v224audioEQCustom224 = !current
+    AppToast.show(this, "Audio EQ Custom224: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV224DanmakuBottomMaxCount255Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v506pressAndHoldAction506).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v224danmakuBottomMaxCount255).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Press And Hold Action506",
+        title = "Danmaku Bottom Max Count255",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v506pressAndHoldAction506 = value
-        AppToast.show(this, "Press And Hold Action506: $value")
+        BiliClient.prefs.v224danmakuBottomMaxCount255 = value
+        AppToast.show(this, "Danmaku Bottom Max Count255: $value")
     }
-// v506: Primary Audio Track506
+}
 
+internal fun PlayerActivity.showV224SubtitleBgBorder262Toggle() {
+    val current = BiliClient.prefs.v224subtitleBgBorder262
+    BiliClient.prefs.v224subtitleBgBorder262 = !current
+    AppToast.show(this, "Subtitle Bg Border262: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV506PrimaryAudioTrack506Dialog() {
+internal fun PlayerActivity.showV224GestureShakeAction224Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v506primaryAudioTrack506).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v224gestureShakeAction224).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Primary Audio Track506",
+        title = "Gesture Shake Action224",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v506primaryAudioTrack506 = value
-        AppToast.show(this, "Primary Audio Track506: $value")
+        BiliClient.prefs.v224gestureShakeAction224 = value
+        AppToast.show(this, "Gesture Shake Action224: $value")
     }
-// v507: Press And Hold Action507
-
+}
 
-internal fun PlayerActivity.showV507PressAndHoldAction507Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v507pressAndHoldAction507).takeIf { it >= 0 } ?: 0
+internal fun PlayerActivity.showV224CastAudioVolume224Dialog() {
+    val options = listOf(25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v224castAudioVolume224).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Press And Hold Action507",
+        title = "Cast Audio Volume224",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v507pressAndHoldAction507 = value
-        AppToast.show(this, "Press And Hold Action507: $value")
+        BiliClient.prefs.v224castAudioVolume224 = value
+        AppToast.show(this, "Cast Audio Volume224: $value")
     }
-// v507: Primary Audio Track507
+}
 
+internal fun PlayerActivity.showV224PlaylistAutoSkipOutro224Toggle() {
+    val current = BiliClient.prefs.v224playlistAutoSkipOutro224
+    BiliClient.prefs.v224playlistAutoSkipOutro224 = !current
+    AppToast.show(this, "Playlist Auto Skip Outro224: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV507PrimaryAudioTrack507Dialog() {
+internal fun PlayerActivity.showV224CacheDownloadSpeed225Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v507primaryAudioTrack507).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v224cacheDownloadSpeed225).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Primary Audio Track507",
+        title = "Cache Download Speed225",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v507primaryAudioTrack507 = value
-        AppToast.show(this, "Primary Audio Track507: $value")
+        BiliClient.prefs.v224cacheDownloadSpeed225 = value
+        AppToast.show(this, "Cache Download Speed225: $value")
     }
-// v508: Press And Hold Action508
+}
 
+internal fun PlayerActivity.showV224ProgressBarThumbBorder224Toggle() {
+    val current = BiliClient.prefs.v224progressBarThumbBorder224
+    BiliClient.prefs.v224progressBarThumbBorder224 = !current
+    AppToast.show(this, "Progress Bar Thumb Border224: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV508PressAndHoldAction508Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v508pressAndHoldAction508).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Press And Hold Action508",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v508pressAndHoldAction508 = value
-        AppToast.show(this, "Press And Hold Action508: $value")
-    }
-// v508: Primary Audio Track508
+internal fun PlayerActivity.showV224VolumeBoostPeak224Toggle() {
+    val current = BiliClient.prefs.v224volumeBoostPeak224
+    BiliClient.prefs.v224volumeBoostPeak224 = !current
+    AppToast.show(this, "Volume Boost Peak224: ${if (!current) "ON" else "OFF"}")
+}
 
+internal fun PlayerActivity.showV224HistoryBookmarkExport224Toggle() {
+    val current = BiliClient.prefs.v224historyBookmarkExport224
+    BiliClient.prefs.v224historyBookmarkExport224 = !current
+    AppToast.show(this, "History Bookmark Export224: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV508PrimaryAudioTrack508Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v508primaryAudioTrack508).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Primary Audio Track508",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v508primaryAudioTrack508 = value
-        AppToast.show(this, "Primary Audio Track508: $value")
-    }
-// v509: Press And Hold Action509
+internal fun PlayerActivity.showV224PlaybackChapterSync224Toggle() {
+    val current = BiliClient.prefs.v224playbackChapterSync224
+    BiliClient.prefs.v224playbackChapterSync224 = !current
+    AppToast.show(this, "Playback Chapter Sync224: ${if (!current) "ON" else "OFF"}")
+}
 
+internal fun PlayerActivity.showV224ScreenshotSavePath224Toggle() {
+    val current = BiliClient.prefs.v224screenshotSavePath224
+    BiliClient.prefs.v224screenshotSavePath224 = !current
+    AppToast.show(this, "Screenshot Save Path224: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV509PressAndHoldAction509Dialog() {
+internal fun PlayerActivity.showV224VideoColorSpace224Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v509pressAndHoldAction509).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v224videoColorSpace224).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Press And Hold Action509",
+        title = "Video Color Space224",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v509pressAndHoldAction509 = value
-        AppToast.show(this, "Press And Hold Action509: $value")
+        BiliClient.prefs.v224videoColorSpace224 = value
+        AppToast.show(this, "Video Color Space224: $value")
     }
-// v509: Primary Audio Track509
-
+}
 
-internal fun PlayerActivity.showV509PrimaryAudioTrack509Dialog() {
+internal fun PlayerActivity.showV224DanmakuBottomMaxCount256Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v509primaryAudioTrack509).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v224danmakuBottomMaxCount256).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Primary Audio Track509",
+        title = "Danmaku Bottom Max Count256",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v509primaryAudioTrack509 = value
-        AppToast.show(this, "Primary Audio Track509: $value")
+        BiliClient.prefs.v224danmakuBottomMaxCount256 = value
+        AppToast.show(this, "Danmaku Bottom Max Count256: $value")
     }
-// v510: Press And Hold Action510
+}
 
+internal fun PlayerActivity.showV224SubtitleBgBorder263Toggle() {
+    val current = BiliClient.prefs.v224subtitleBgBorder263
+    BiliClient.prefs.v224subtitleBgBorder263 = !current
+    AppToast.show(this, "Subtitle Bg Border263: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV510PressAndHoldAction510Dialog() {
+internal fun PlayerActivity.showV225AudioEQCustom225Toggle() {
+    val current = BiliClient.prefs.v225audioEQCustom225
+    BiliClient.prefs.v225audioEQCustom225 = !current
+    AppToast.show(this, "Audio EQ Custom225: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV225DanmakuBottomMaxCount257Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v510pressAndHoldAction510).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v225danmakuBottomMaxCount257).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Press And Hold Action510",
+        title = "Danmaku Bottom Max Count257",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v510pressAndHoldAction510 = value
-        AppToast.show(this, "Press And Hold Action510: $value")
+        BiliClient.prefs.v225danmakuBottomMaxCount257 = value
+        AppToast.show(this, "Danmaku Bottom Max Count257: $value")
     }
-// v510: Primary Audio Track510
+}
 
+internal fun PlayerActivity.showV225SubtitleBgBorder264Toggle() {
+    val current = BiliClient.prefs.v225subtitleBgBorder264
+    BiliClient.prefs.v225subtitleBgBorder264 = !current
+    AppToast.show(this, "Subtitle Bg Border264: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV510PrimaryAudioTrack510Dialog() {
+internal fun PlayerActivity.showV225GestureShakeAction225Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v510primaryAudioTrack510).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v225gestureShakeAction225).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Primary Audio Track510",
+        title = "Gesture Shake Action225",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v510primaryAudioTrack510 = value
-        AppToast.show(this, "Primary Audio Track510: $value")
+        BiliClient.prefs.v225gestureShakeAction225 = value
+        AppToast.show(this, "Gesture Shake Action225: $value")
     }
-// v511: Region Auto Select511
-
+}
 
-internal fun PlayerActivity.showV511RegionAutoSelect511Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v511regionAutoSelect511).takeIf { it >= 0 } ?: 0
+internal fun PlayerActivity.showV225CastAudioVolume225Dialog() {
+    val options = listOf(25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v225castAudioVolume225).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Region Auto Select511",
+        title = "Cast Audio Volume225",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v511regionAutoSelect511 = value
-        AppToast.show(this, "Region Auto Select511: $value")
+        BiliClient.prefs.v225castAudioVolume225 = value
+        AppToast.show(this, "Cast Audio Volume225: $value")
     }
-// v512: Region Auto Select512
+}
 
+internal fun PlayerActivity.showV225PlaylistAutoSkipOutro225Toggle() {
+    val current = BiliClient.prefs.v225playlistAutoSkipOutro225
+    BiliClient.prefs.v225playlistAutoSkipOutro225 = !current
+    AppToast.show(this, "Playlist Auto Skip Outro225: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV512RegionAutoSelect512Dialog() {
+internal fun PlayerActivity.showV225CacheDownloadSpeed226Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v512regionAutoSelect512).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v225cacheDownloadSpeed226).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Region Auto Select512",
+        title = "Cache Download Speed226",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v512regionAutoSelect512 = value
-        AppToast.show(this, "Region Auto Select512: $value")
+        BiliClient.prefs.v225cacheDownloadSpeed226 = value
+        AppToast.show(this, "Cache Download Speed226: $value")
     }
-// v513: Region Auto Select513
+}
 
+internal fun PlayerActivity.showV225ProgressBarThumbBorder225Toggle() {
+    val current = BiliClient.prefs.v225progressBarThumbBorder225
+    BiliClient.prefs.v225progressBarThumbBorder225 = !current
+    AppToast.show(this, "Progress Bar Thumb Border225: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV513RegionAutoSelect513Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v513regionAutoSelect513).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Region Auto Select513",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v513regionAutoSelect513 = value
-        AppToast.show(this, "Region Auto Select513: $value")
-    }
-// v514: Region Auto Select514
+internal fun PlayerActivity.showV225VolumeBoostPeak225Toggle() {
+    val current = BiliClient.prefs.v225volumeBoostPeak225
+    BiliClient.prefs.v225volumeBoostPeak225 = !current
+    AppToast.show(this, "Volume Boost Peak225: ${if (!current) "ON" else "OFF"}")
+}
 
+internal fun PlayerActivity.showV225HistoryBookmarkExport225Toggle() {
+    val current = BiliClient.prefs.v225historyBookmarkExport225
+    BiliClient.prefs.v225historyBookmarkExport225 = !current
+    AppToast.show(this, "History Bookmark Export225: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV514RegionAutoSelect514Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v514regionAutoSelect514).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Region Auto Select514",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v514regionAutoSelect514 = value
-        AppToast.show(this, "Region Auto Select514: $value")
-    }
-// v515: Region Auto Select515
+internal fun PlayerActivity.showV225PlaybackChapterSync225Toggle() {
+    val current = BiliClient.prefs.v225playbackChapterSync225
+    BiliClient.prefs.v225playbackChapterSync225 = !current
+    AppToast.show(this, "Playback Chapter Sync225: ${if (!current) "ON" else "OFF"}")
+}
 
+internal fun PlayerActivity.showV225ScreenshotSavePath225Toggle() {
+    val current = BiliClient.prefs.v225screenshotSavePath225
+    BiliClient.prefs.v225screenshotSavePath225 = !current
+    AppToast.show(this, "Screenshot Save Path225: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV515RegionAutoSelect515Dialog() {
+internal fun PlayerActivity.showV225VideoColorSpace225Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v515regionAutoSelect515).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v225videoColorSpace225).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Region Auto Select515",
+        title = "Video Color Space225",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v515regionAutoSelect515 = value
-        AppToast.show(this, "Region Auto Select515: $value")
+        BiliClient.prefs.v225videoColorSpace225 = value
+        AppToast.show(this, "Video Color Space225: $value")
     }
-// v516: Region Auto Select516
-
+}
 
-internal fun PlayerActivity.showV516RegionAutoSelect516Dialog() {
+internal fun PlayerActivity.showV225DanmakuBottomMaxCount258Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v516regionAutoSelect516).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v225danmakuBottomMaxCount258).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Region Auto Select516",
+        title = "Danmaku Bottom Max Count258",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v516regionAutoSelect516 = value
-        AppToast.show(this, "Region Auto Select516: $value")
+        BiliClient.prefs.v225danmakuBottomMaxCount258 = value
+        AppToast.show(this, "Danmaku Bottom Max Count258: $value")
     }
-// v517: Region Auto Select517
+}
 
+internal fun PlayerActivity.showV225SubtitleBgBorder265Toggle() {
+    val current = BiliClient.prefs.v225subtitleBgBorder265
+    BiliClient.prefs.v225subtitleBgBorder265 = !current
+    AppToast.show(this, "Subtitle Bg Border265: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV517RegionAutoSelect517Dialog() {
+internal fun PlayerActivity.showV226AudioEQCustom226Toggle() {
+    val current = BiliClient.prefs.v226audioEQCustom226
+    BiliClient.prefs.v226audioEQCustom226 = !current
+    AppToast.show(this, "Audio EQ Custom226: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV226DanmakuBottomMaxCount259Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v517regionAutoSelect517).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v226danmakuBottomMaxCount259).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Region Auto Select517",
+        title = "Danmaku Bottom Max Count259",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v517regionAutoSelect517 = value
-        AppToast.show(this, "Region Auto Select517: $value")
+        BiliClient.prefs.v226danmakuBottomMaxCount259 = value
+        AppToast.show(this, "Danmaku Bottom Max Count259: $value")
     }
-// v518: Region Auto Select518
+}
 
+internal fun PlayerActivity.showV226SubtitleBgBorder266Toggle() {
+    val current = BiliClient.prefs.v226subtitleBgBorder266
+    BiliClient.prefs.v226subtitleBgBorder266 = !current
+    AppToast.show(this, "Subtitle Bg Border266: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV518RegionAutoSelect518Dialog() {
+internal fun PlayerActivity.showV226GestureShakeAction226Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v518regionAutoSelect518).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v226gestureShakeAction226).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Region Auto Select518",
+        title = "Gesture Shake Action226",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v518regionAutoSelect518 = value
-        AppToast.show(this, "Region Auto Select518: $value")
+        BiliClient.prefs.v226gestureShakeAction226 = value
+        AppToast.show(this, "Gesture Shake Action226: $value")
     }
-// v519: Region Auto Select519
-
+}
 
-internal fun PlayerActivity.showV519RegionAutoSelect519Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v519regionAutoSelect519).takeIf { it >= 0 } ?: 0
+internal fun PlayerActivity.showV226CastAudioVolume226Dialog() {
+    val options = listOf(25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v226castAudioVolume226).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Region Auto Select519",
+        title = "Cast Audio Volume226",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v519regionAutoSelect519 = value
-        AppToast.show(this, "Region Auto Select519: $value")
+        BiliClient.prefs.v226castAudioVolume226 = value
+        AppToast.show(this, "Cast Audio Volume226: $value")
     }
-// v520: Region Auto Select520
+}
 
+internal fun PlayerActivity.showV226PlaylistAutoSkipOutro226Toggle() {
+    val current = BiliClient.prefs.v226playlistAutoSkipOutro226
+    BiliClient.prefs.v226playlistAutoSkipOutro226 = !current
+    AppToast.show(this, "Playlist Auto Skip Outro226: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV520RegionAutoSelect520Dialog() {
+internal fun PlayerActivity.showV226CacheDownloadSpeed227Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v520regionAutoSelect520).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v226cacheDownloadSpeed227).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Region Auto Select520",
+        title = "Cache Download Speed227",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v520regionAutoSelect520 = value
-        AppToast.show(this, "Region Auto Select520: $value")
+        BiliClient.prefs.v226cacheDownloadSpeed227 = value
+        AppToast.show(this, "Cache Download Speed227: $value")
     }
-// v521: Render Auto Quality521
+}
 
+internal fun PlayerActivity.showV226ProgressBarThumbBorder226Toggle() {
+    val current = BiliClient.prefs.v226progressBarThumbBorder226
+    BiliClient.prefs.v226progressBarThumbBorder226 = !current
+    AppToast.show(this, "Progress Bar Thumb Border226: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV521RenderAutoQuality521Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v521renderAutoQuality521).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Render Auto Quality521",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v521renderAutoQuality521 = value
-        AppToast.show(this, "Render Auto Quality521: $value")
-    }
-// v521: Result Auto Sort521
+internal fun PlayerActivity.showV226VolumeBoostPeak226Toggle() {
+    val current = BiliClient.prefs.v226volumeBoostPeak226
+    BiliClient.prefs.v226volumeBoostPeak226 = !current
+    AppToast.show(this, "Volume Boost Peak226: ${if (!current) "ON" else "OFF"}")
+}
 
+internal fun PlayerActivity.showV226HistoryBookmarkExport226Toggle() {
+    val current = BiliClient.prefs.v226historyBookmarkExport226
+    BiliClient.prefs.v226historyBookmarkExport226 = !current
+    AppToast.show(this, "History Bookmark Export226: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV521ResultAutoSort521Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v521resultAutoSort521).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Result Auto Sort521",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v521resultAutoSort521 = value
-        AppToast.show(this, "Result Auto Sort521: $value")
-    }
-// v522: Render Auto Quality522
+internal fun PlayerActivity.showV226PlaybackChapterSync226Toggle() {
+    val current = BiliClient.prefs.v226playbackChapterSync226
+    BiliClient.prefs.v226playbackChapterSync226 = !current
+    AppToast.show(this, "Playback Chapter Sync226: ${if (!current) "ON" else "OFF"}")
+}
 
+internal fun PlayerActivity.showV226ScreenshotSavePath226Toggle() {
+    val current = BiliClient.prefs.v226screenshotSavePath226
+    BiliClient.prefs.v226screenshotSavePath226 = !current
+    AppToast.show(this, "Screenshot Save Path226: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV522RenderAutoQuality522Dialog() {
+internal fun PlayerActivity.showV226VideoColorSpace226Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v522renderAutoQuality522).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v226videoColorSpace226).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Render Auto Quality522",
+        title = "Video Color Space226",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v522renderAutoQuality522 = value
-        AppToast.show(this, "Render Auto Quality522: $value")
+        BiliClient.prefs.v226videoColorSpace226 = value
+        AppToast.show(this, "Video Color Space226: $value")
     }
-// v522: Result Auto Sort522
-
+}
 
-internal fun PlayerActivity.showV522ResultAutoSort522Dialog() {
+internal fun PlayerActivity.showV226DanmakuBottomMaxCount260Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v522resultAutoSort522).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v226danmakuBottomMaxCount260).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Result Auto Sort522",
+        title = "Danmaku Bottom Max Count260",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v522resultAutoSort522 = value
-        AppToast.show(this, "Result Auto Sort522: $value")
+        BiliClient.prefs.v226danmakuBottomMaxCount260 = value
+        AppToast.show(this, "Danmaku Bottom Max Count260: $value")
     }
-// v523: Render Auto Quality523
+}
 
+internal fun PlayerActivity.showV226SubtitleBgBorder267Toggle() {
+    val current = BiliClient.prefs.v226subtitleBgBorder267
+    BiliClient.prefs.v226subtitleBgBorder267 = !current
+    AppToast.show(this, "Subtitle Bg Border267: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV523RenderAutoQuality523Dialog() {
+internal fun PlayerActivity.showV227AudioEQCustom227Toggle() {
+    val current = BiliClient.prefs.v227audioEQCustom227
+    BiliClient.prefs.v227audioEQCustom227 = !current
+    AppToast.show(this, "Audio EQ Custom227: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV227DanmakuBottomMaxCount261Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v523renderAutoQuality523).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v227danmakuBottomMaxCount261).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Render Auto Quality523",
+        title = "Danmaku Bottom Max Count261",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v523renderAutoQuality523 = value
-        AppToast.show(this, "Render Auto Quality523: $value")
+        BiliClient.prefs.v227danmakuBottomMaxCount261 = value
+        AppToast.show(this, "Danmaku Bottom Max Count261: $value")
     }
-// v523: Result Auto Sort523
+}
 
+internal fun PlayerActivity.showV227SubtitleBgBorder268Toggle() {
+    val current = BiliClient.prefs.v227subtitleBgBorder268
+    BiliClient.prefs.v227subtitleBgBorder268 = !current
+    AppToast.show(this, "Subtitle Bg Border268: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV523ResultAutoSort523Dialog() {
+internal fun PlayerActivity.showV227GestureShakeAction227Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v523resultAutoSort523).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v227gestureShakeAction227).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Result Auto Sort523",
+        title = "Gesture Shake Action227",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v523resultAutoSort523 = value
-        AppToast.show(this, "Result Auto Sort523: $value")
+        BiliClient.prefs.v227gestureShakeAction227 = value
+        AppToast.show(this, "Gesture Shake Action227: $value")
     }
-// v524: Render Auto Quality524
-
+}
 
-internal fun PlayerActivity.showV524RenderAutoQuality524Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v524renderAutoQuality524).takeIf { it >= 0 } ?: 0
+internal fun PlayerActivity.showV227CastAudioVolume227Dialog() {
+    val options = listOf(25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v227castAudioVolume227).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Render Auto Quality524",
+        title = "Cast Audio Volume227",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v524renderAutoQuality524 = value
-        AppToast.show(this, "Render Auto Quality524: $value")
+        BiliClient.prefs.v227castAudioVolume227 = value
+        AppToast.show(this, "Cast Audio Volume227: $value")
     }
-// v524: Result Auto Sort524
+}
 
+internal fun PlayerActivity.showV227PlaylistAutoSkipOutro227Toggle() {
+    val current = BiliClient.prefs.v227playlistAutoSkipOutro227
+    BiliClient.prefs.v227playlistAutoSkipOutro227 = !current
+    AppToast.show(this, "Playlist Auto Skip Outro227: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV524ResultAutoSort524Dialog() {
+internal fun PlayerActivity.showV227CacheDownloadSpeed228Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v524resultAutoSort524).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v227cacheDownloadSpeed228).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Result Auto Sort524",
+        title = "Cache Download Speed228",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v524resultAutoSort524 = value
-        AppToast.show(this, "Result Auto Sort524: $value")
+        BiliClient.prefs.v227cacheDownloadSpeed228 = value
+        AppToast.show(this, "Cache Download Speed228: $value")
     }
-// v525: Render Auto Quality525
+}
 
+internal fun PlayerActivity.showV227ProgressBarThumbBorder227Toggle() {
+    val current = BiliClient.prefs.v227progressBarThumbBorder227
+    BiliClient.prefs.v227progressBarThumbBorder227 = !current
+    AppToast.show(this, "Progress Bar Thumb Border227: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV525RenderAutoQuality525Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v525renderAutoQuality525).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Render Auto Quality525",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v525renderAutoQuality525 = value
-        AppToast.show(this, "Render Auto Quality525: $value")
-    }
-// v525: Result Auto Sort525
+internal fun PlayerActivity.showV227VolumeBoostPeak227Toggle() {
+    val current = BiliClient.prefs.v227volumeBoostPeak227
+    BiliClient.prefs.v227volumeBoostPeak227 = !current
+    AppToast.show(this, "Volume Boost Peak227: ${if (!current) "ON" else "OFF"}")
+}
 
+internal fun PlayerActivity.showV227HistoryBookmarkExport227Toggle() {
+    val current = BiliClient.prefs.v227historyBookmarkExport227
+    BiliClient.prefs.v227historyBookmarkExport227 = !current
+    AppToast.show(this, "History Bookmark Export227: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV525ResultAutoSort525Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v525resultAutoSort525).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "Result Auto Sort525",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        BiliClient.prefs.v525resultAutoSort525 = value
-        AppToast.show(this, "Result Auto Sort525: $value")
-    }
-// v526: Render Auto Quality526
+internal fun PlayerActivity.showV227PlaybackChapterSync227Toggle() {
+    val current = BiliClient.prefs.v227playbackChapterSync227
+    BiliClient.prefs.v227playbackChapterSync227 = !current
+    AppToast.show(this, "Playback Chapter Sync227: ${if (!current) "ON" else "OFF"}")
+}
 
+internal fun PlayerActivity.showV227ScreenshotSavePath227Toggle() {
+    val current = BiliClient.prefs.v227screenshotSavePath227
+    BiliClient.prefs.v227screenshotSavePath227 = !current
+    AppToast.show(this, "Screenshot Save Path227: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV526RenderAutoQuality526Dialog() {
+internal fun PlayerActivity.showV227VideoColorSpace227Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v526renderAutoQuality526).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v227videoColorSpace227).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Render Auto Quality526",
+        title = "Video Color Space227",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v526renderAutoQuality526 = value
-        AppToast.show(this, "Render Auto Quality526: $value")
+        BiliClient.prefs.v227videoColorSpace227 = value
+        AppToast.show(this, "Video Color Space227: $value")
     }
-// v526: Result Auto Sort526
-
+}
 
-internal fun PlayerActivity.showV526ResultAutoSort526Dialog() {
+internal fun PlayerActivity.showV227DanmakuBottomMaxCount262Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v526resultAutoSort526).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v227danmakuBottomMaxCount262).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Result Auto Sort526",
+        title = "Danmaku Bottom Max Count262",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v526resultAutoSort526 = value
-        AppToast.show(this, "Result Auto Sort526: $value")
+        BiliClient.prefs.v227danmakuBottomMaxCount262 = value
+        AppToast.show(this, "Danmaku Bottom Max Count262: $value")
     }
-// v527: Render Auto Quality527
+}
 
+internal fun PlayerActivity.showV227SubtitleBgBorder269Toggle() {
+    val current = BiliClient.prefs.v227subtitleBgBorder269
+    BiliClient.prefs.v227subtitleBgBorder269 = !current
+    AppToast.show(this, "Subtitle Bg Border269: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV527RenderAutoQuality527Dialog() {
+internal fun PlayerActivity.showV228AudioEQCustom228Toggle() {
+    val current = BiliClient.prefs.v228audioEQCustom228
+    BiliClient.prefs.v228audioEQCustom228 = !current
+    AppToast.show(this, "Audio EQ Custom228: ${if (!current) "ON" else "OFF"}")
+}
+
+internal fun PlayerActivity.showV228DanmakuBottomMaxCount263Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v527renderAutoQuality527).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v228danmakuBottomMaxCount263).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Render Auto Quality527",
+        title = "Danmaku Bottom Max Count263",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v527renderAutoQuality527 = value
-        AppToast.show(this, "Render Auto Quality527: $value")
+        BiliClient.prefs.v228danmakuBottomMaxCount263 = value
+        AppToast.show(this, "Danmaku Bottom Max Count263: $value")
     }
-// v527: Result Auto Sort527
+}
 
+internal fun PlayerActivity.showV228SubtitleBgBorder270Toggle() {
+    val current = BiliClient.prefs.v228subtitleBgBorder270
+    BiliClient.prefs.v228subtitleBgBorder270 = !current
+    AppToast.show(this, "Subtitle Bg Border270: ${if (!current) "ON" else "OFF"}")
+}
 
-internal fun PlayerActivity.showV527ResultAutoSort527Dialog() {
+internal fun PlayerActivity.showV228GestureShakeAction228Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v527resultAutoSort527).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v228gestureShakeAction228).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Result Auto Sort527",
+        title = "Gesture Shake Action228",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v527resultAutoSort527 = value
-        AppToast.show(this, "Result Auto Sort527: $value")
+        BiliClient.prefs.v228gestureShakeAction228 = value
+        AppToast.show(this, "Gesture Shake Action228: $value")
     }
-// v528: Render Auto Quality528
+}
 
-
-internal fun PlayerActivity.showV528RenderAutoQuality528Dialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v528renderAutoQuality528).takeIf { it >= 0 } ?: 0
+internal fun PlayerActivity.showV228CastAudioVolume228Dialog() {
+    val options = listOf(25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v228castAudioVolume228).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "Render Auto Quality528",
+        title = "Cast Audio Volume228",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v528renderAutoQuality528 = value
-        AppToast.show(this, "Render Auto Quality528: $value")
+        BiliClient.prefs.v228castAudioVolume228 = value
+        AppToast.show(this, "Cast Audio Volume228: $value")
     }
-// v528: Result Auto Sort528
+}
 
+internal fun PlayerActivity.showV228PlaylistAutoSkipOutro228Toggle() {
+    val current = BiliClient.prefs.v228playlistAutoSkipOutro228
+    BiliClient.prefs.v228playlistAutoSkipOutro228 = !current
+    AppToast.show(this, "Playlist Auto Skip Outro228: ${if (!current) "ON" else "OFF"}")
+}
 
