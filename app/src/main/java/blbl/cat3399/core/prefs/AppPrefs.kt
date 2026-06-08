@@ -52248,6 +52248,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V760HISTORYAUTORECORD760, false)
         set(value) = prefs.edit().putBoolean(KEY_V760HISTORYAUTORECORD760, value).apply()
 
+    var v761hitAutoCount761: Boolean
+        get() = prefs.getBoolean(KEY_V761HITAUTOCOUNT761, false)
+        set(value) = prefs.edit().putBoolean(KEY_V761HITAUTOCOUNT761, value).apply()
+
+    var v761holdAutoLock761: Boolean
+        get() = prefs.getBoolean(KEY_V761HOLDAUTOLOCK761, false)
+        set(value) = prefs.edit().putBoolean(KEY_V761HOLDAUTOLOCK761, value).apply()
+
+    var v761hookAutoInject761: Boolean
+        get() = prefs.getBoolean(KEY_V761HOOKAUTOINJECT761, false)
+        set(value) = prefs.edit().putBoolean(KEY_V761HOOKAUTOINJECT761, value).apply()
+
+    var v761hostAutoResolve761: Boolean
+        get() = prefs.getBoolean(KEY_V761HOSTAUTORESOLVE761, false)
+        set(value) = prefs.edit().putBoolean(KEY_V761HOSTAUTORESOLVE761, value).apply()
+
+    var v761hotAutoReload761: Boolean
+        get() = prefs.getBoolean(KEY_V761HOTAUTORELOAD761, false)
+        set(value) = prefs.edit().putBoolean(KEY_V761HOTAUTORELOAD761, value).apply()
+
+    var v761hoverAutoPreview761: Boolean
+        get() = prefs.getBoolean(KEY_V761HOVERAUTOPREVIEW761, false)
+        set(value) = prefs.edit().putBoolean(KEY_V761HOVERAUTOPREVIEW761, value).apply()
+
+    var v761hubAutoConnect761: Boolean
+        get() = prefs.getBoolean(KEY_V761HUBAUTOCONNECT761, false)
+        set(value) = prefs.edit().putBoolean(KEY_V761HUBAUTOCONNECT761, value).apply()
+
+    var v761iconAutoTheme761: Boolean
+        get() = prefs.getBoolean(KEY_V761ICONAUTOTHEME761, false)
+        set(value) = prefs.edit().putBoolean(KEY_V761ICONAUTOTHEME761, value).apply()
+
+    var v761identityAutoVerify761: Boolean
+        get() = prefs.getBoolean(KEY_V761IDENTITYAUTOVERIFY761, false)
+        set(value) = prefs.edit().putBoolean(KEY_V761IDENTITYAUTOVERIFY761, value).apply()
+
+    var v761idleAutoDim761: Boolean
+        get() = prefs.getBoolean(KEY_V761IDLEAUTODIM761, false)
+        set(value) = prefs.edit().putBoolean(KEY_V761IDLEAUTODIM761, value).apply()
+
+    var v761ignoreAutoList761: Boolean
+        get() = prefs.getBoolean(KEY_V761IGNOREAUTOLIST761, false)
+        set(value) = prefs.edit().putBoolean(KEY_V761IGNOREAUTOLIST761, value).apply()
+
+    var v761imageAutoPreload761: Boolean
+        get() = prefs.getBoolean(KEY_V761IMAGEAUTOPRELOAD761, false)
+        set(value) = prefs.edit().putBoolean(KEY_V761IMAGEAUTOPRELOAD761, value).apply()
+
+    var v761importAutoMerge761: Boolean
+        get() = prefs.getBoolean(KEY_V761IMPORTAUTOMERGE761, false)
+        set(value) = prefs.edit().putBoolean(KEY_V761IMPORTAUTOMERGE761, value).apply()
+
+    var v761indexAutoBuild761: Boolean
+        get() = prefs.getBoolean(KEY_V761INDEXAUTOBUILD761, false)
+        set(value) = prefs.edit().putBoolean(KEY_V761INDEXAUTOBUILD761, value).apply()
+
+    var v761infoAutoPopup761: Boolean
+        get() = prefs.getBoolean(KEY_V761INFOAUTOPOPUP761, false)
+        set(value) = prefs.edit().putBoolean(KEY_V761INFOAUTOPOPUP761, value).apply()
+
+    var v762hitAutoCount762: Boolean
+        get() = prefs.getBoolean(KEY_V762HITAUTOCOUNT762, false)
+        set(value) = prefs.edit().putBoolean(KEY_V762HITAUTOCOUNT762, value).apply()
+
+    var v762holdAutoLock762: Boolean
+        get() = prefs.getBoolean(KEY_V762HOLDAUTOLOCK762, false)
+        set(value) = prefs.edit().putBoolean(KEY_V762HOLDAUTOLOCK762, value).apply()
+
+    var v762hookAutoInject762: Boolean
+        get() = prefs.getBoolean(KEY_V762HOOKAUTOINJECT762, false)
+        set(value) = prefs.edit().putBoolean(KEY_V762HOOKAUTOINJECT762, value).apply()
+
+    var v762hostAutoResolve762: Boolean
+        get() = prefs.getBoolean(KEY_V762HOSTAUTORESOLVE762, false)
+        set(value) = prefs.edit().putBoolean(KEY_V762HOSTAUTORESOLVE762, value).apply()
+
+    var v762hotAutoReload762: Boolean
+        get() = prefs.getBoolean(KEY_V762HOTAUTORELOAD762, false)
+        set(value) = prefs.edit().putBoolean(KEY_V762HOTAUTORELOAD762, value).apply()
+
+    var v762hoverAutoPreview762: Boolean
+        get() = prefs.getBoolean(KEY_V762HOVERAUTOPREVIEW762, false)
+        set(value) = prefs.edit().putBoolean(KEY_V762HOVERAUTOPREVIEW762, value).apply()
+
+    var v762hubAutoConnect762: Boolean
+        get() = prefs.getBoolean(KEY_V762HUBAUTOCONNECT762, false)
+        set(value) = prefs.edit().putBoolean(KEY_V762HUBAUTOCONNECT762, value).apply()
+
+    var v762iconAutoTheme762: Boolean
+        get() = prefs.getBoolean(KEY_V762ICONAUTOTHEME762, false)
+        set(value) = prefs.edit().putBoolean(KEY_V762ICONAUTOTHEME762, value).apply()
+
+    var v762identityAutoVerify762: Boolean
+        get() = prefs.getBoolean(KEY_V762IDENTITYAUTOVERIFY762, false)
+        set(value) = prefs.edit().putBoolean(KEY_V762IDENTITYAUTOVERIFY762, value).apply()
+
+    var v762idleAutoDim762: Boolean
+        get() = prefs.getBoolean(KEY_V762IDLEAUTODIM762, false)
+        set(value) = prefs.edit().putBoolean(KEY_V762IDLEAUTODIM762, value).apply()
+
+    var v762ignoreAutoList762: Boolean
+        get() = prefs.getBoolean(KEY_V762IGNOREAUTOLIST762, false)
+        set(value) = prefs.edit().putBoolean(KEY_V762IGNOREAUTOLIST762, value).apply()
+
+    var v762imageAutoPreload762: Boolean
+        get() = prefs.getBoolean(KEY_V762IMAGEAUTOPRELOAD762, false)
+        set(value) = prefs.edit().putBoolean(KEY_V762IMAGEAUTOPRELOAD762, value).apply()
+
+    var v762importAutoMerge762: Boolean
+        get() = prefs.getBoolean(KEY_V762IMPORTAUTOMERGE762, false)
+        set(value) = prefs.edit().putBoolean(KEY_V762IMPORTAUTOMERGE762, value).apply()
+
+    var v762indexAutoBuild762: Boolean
+        get() = prefs.getBoolean(KEY_V762INDEXAUTOBUILD762, false)
+        set(value) = prefs.edit().putBoolean(KEY_V762INDEXAUTOBUILD762, value).apply()
+
+    var v762infoAutoPopup762: Boolean
+        get() = prefs.getBoolean(KEY_V762INFOAUTOPOPUP762, false)
+        set(value) = prefs.edit().putBoolean(KEY_V762INFOAUTOPOPUP762, value).apply()
+
+    var v763hitAutoCount763: Boolean
+        get() = prefs.getBoolean(KEY_V763HITAUTOCOUNT763, false)
+        set(value) = prefs.edit().putBoolean(KEY_V763HITAUTOCOUNT763, value).apply()
+
+    var v763holdAutoLock763: Boolean
+        get() = prefs.getBoolean(KEY_V763HOLDAUTOLOCK763, false)
+        set(value) = prefs.edit().putBoolean(KEY_V763HOLDAUTOLOCK763, value).apply()
+
+    var v763hookAutoInject763: Boolean
+        get() = prefs.getBoolean(KEY_V763HOOKAUTOINJECT763, false)
+        set(value) = prefs.edit().putBoolean(KEY_V763HOOKAUTOINJECT763, value).apply()
+
+    var v763hostAutoResolve763: Boolean
+        get() = prefs.getBoolean(KEY_V763HOSTAUTORESOLVE763, false)
+        set(value) = prefs.edit().putBoolean(KEY_V763HOSTAUTORESOLVE763, value).apply()
+
+    var v763hotAutoReload763: Boolean
+        get() = prefs.getBoolean(KEY_V763HOTAUTORELOAD763, false)
+        set(value) = prefs.edit().putBoolean(KEY_V763HOTAUTORELOAD763, value).apply()
+
+    var v763hoverAutoPreview763: Boolean
+        get() = prefs.getBoolean(KEY_V763HOVERAUTOPREVIEW763, false)
+        set(value) = prefs.edit().putBoolean(KEY_V763HOVERAUTOPREVIEW763, value).apply()
+
+    var v763hubAutoConnect763: Boolean
+        get() = prefs.getBoolean(KEY_V763HUBAUTOCONNECT763, false)
+        set(value) = prefs.edit().putBoolean(KEY_V763HUBAUTOCONNECT763, value).apply()
+
+    var v763iconAutoTheme763: Boolean
+        get() = prefs.getBoolean(KEY_V763ICONAUTOTHEME763, false)
+        set(value) = prefs.edit().putBoolean(KEY_V763ICONAUTOTHEME763, value).apply()
+
+    var v763identityAutoVerify763: Boolean
+        get() = prefs.getBoolean(KEY_V763IDENTITYAUTOVERIFY763, false)
+        set(value) = prefs.edit().putBoolean(KEY_V763IDENTITYAUTOVERIFY763, value).apply()
+
+    var v763idleAutoDim763: Boolean
+        get() = prefs.getBoolean(KEY_V763IDLEAUTODIM763, false)
+        set(value) = prefs.edit().putBoolean(KEY_V763IDLEAUTODIM763, value).apply()
+
+    var v763ignoreAutoList763: Boolean
+        get() = prefs.getBoolean(KEY_V763IGNOREAUTOLIST763, false)
+        set(value) = prefs.edit().putBoolean(KEY_V763IGNOREAUTOLIST763, value).apply()
+
+    var v763imageAutoPreload763: Boolean
+        get() = prefs.getBoolean(KEY_V763IMAGEAUTOPRELOAD763, false)
+        set(value) = prefs.edit().putBoolean(KEY_V763IMAGEAUTOPRELOAD763, value).apply()
+
+    var v763importAutoMerge763: Boolean
+        get() = prefs.getBoolean(KEY_V763IMPORTAUTOMERGE763, false)
+        set(value) = prefs.edit().putBoolean(KEY_V763IMPORTAUTOMERGE763, value).apply()
+
+    var v763indexAutoBuild763: Boolean
+        get() = prefs.getBoolean(KEY_V763INDEXAUTOBUILD763, false)
+        set(value) = prefs.edit().putBoolean(KEY_V763INDEXAUTOBUILD763, value).apply()
+
+    var v763infoAutoPopup763: Boolean
+        get() = prefs.getBoolean(KEY_V763INFOAUTOPOPUP763, false)
+        set(value) = prefs.edit().putBoolean(KEY_V763INFOAUTOPOPUP763, value).apply()
+
+    var v764hitAutoCount764: Boolean
+        get() = prefs.getBoolean(KEY_V764HITAUTOCOUNT764, false)
+        set(value) = prefs.edit().putBoolean(KEY_V764HITAUTOCOUNT764, value).apply()
+
+    var v764holdAutoLock764: Boolean
+        get() = prefs.getBoolean(KEY_V764HOLDAUTOLOCK764, false)
+        set(value) = prefs.edit().putBoolean(KEY_V764HOLDAUTOLOCK764, value).apply()
+
+    var v764hookAutoInject764: Boolean
+        get() = prefs.getBoolean(KEY_V764HOOKAUTOINJECT764, false)
+        set(value) = prefs.edit().putBoolean(KEY_V764HOOKAUTOINJECT764, value).apply()
+
+    var v764hostAutoResolve764: Boolean
+        get() = prefs.getBoolean(KEY_V764HOSTAUTORESOLVE764, false)
+        set(value) = prefs.edit().putBoolean(KEY_V764HOSTAUTORESOLVE764, value).apply()
+
+    var v764hotAutoReload764: Boolean
+        get() = prefs.getBoolean(KEY_V764HOTAUTORELOAD764, false)
+        set(value) = prefs.edit().putBoolean(KEY_V764HOTAUTORELOAD764, value).apply()
+
+    var v764hoverAutoPreview764: Boolean
+        get() = prefs.getBoolean(KEY_V764HOVERAUTOPREVIEW764, false)
+        set(value) = prefs.edit().putBoolean(KEY_V764HOVERAUTOPREVIEW764, value).apply()
+
+    var v764hubAutoConnect764: Boolean
+        get() = prefs.getBoolean(KEY_V764HUBAUTOCONNECT764, false)
+        set(value) = prefs.edit().putBoolean(KEY_V764HUBAUTOCONNECT764, value).apply()
+
+    var v764iconAutoTheme764: Boolean
+        get() = prefs.getBoolean(KEY_V764ICONAUTOTHEME764, false)
+        set(value) = prefs.edit().putBoolean(KEY_V764ICONAUTOTHEME764, value).apply()
+
+    var v764identityAutoVerify764: Boolean
+        get() = prefs.getBoolean(KEY_V764IDENTITYAUTOVERIFY764, false)
+        set(value) = prefs.edit().putBoolean(KEY_V764IDENTITYAUTOVERIFY764, value).apply()
+
+    var v764idleAutoDim764: Boolean
+        get() = prefs.getBoolean(KEY_V764IDLEAUTODIM764, false)
+        set(value) = prefs.edit().putBoolean(KEY_V764IDLEAUTODIM764, value).apply()
+
+    var v764ignoreAutoList764: Boolean
+        get() = prefs.getBoolean(KEY_V764IGNOREAUTOLIST764, false)
+        set(value) = prefs.edit().putBoolean(KEY_V764IGNOREAUTOLIST764, value).apply()
+
+    var v764imageAutoPreload764: Boolean
+        get() = prefs.getBoolean(KEY_V764IMAGEAUTOPRELOAD764, false)
+        set(value) = prefs.edit().putBoolean(KEY_V764IMAGEAUTOPRELOAD764, value).apply()
+
+    var v764importAutoMerge764: Boolean
+        get() = prefs.getBoolean(KEY_V764IMPORTAUTOMERGE764, false)
+        set(value) = prefs.edit().putBoolean(KEY_V764IMPORTAUTOMERGE764, value).apply()
+
+    var v764indexAutoBuild764: Boolean
+        get() = prefs.getBoolean(KEY_V764INDEXAUTOBUILD764, false)
+        set(value) = prefs.edit().putBoolean(KEY_V764INDEXAUTOBUILD764, value).apply()
+
+    var v764infoAutoPopup764: Boolean
+        get() = prefs.getBoolean(KEY_V764INFOAUTOPOPUP764, false)
+        set(value) = prefs.edit().putBoolean(KEY_V764INFOAUTOPOPUP764, value).apply()
+
+    var v765hitAutoCount765: Boolean
+        get() = prefs.getBoolean(KEY_V765HITAUTOCOUNT765, false)
+        set(value) = prefs.edit().putBoolean(KEY_V765HITAUTOCOUNT765, value).apply()
+
+    var v765holdAutoLock765: Boolean
+        get() = prefs.getBoolean(KEY_V765HOLDAUTOLOCK765, false)
+        set(value) = prefs.edit().putBoolean(KEY_V765HOLDAUTOLOCK765, value).apply()
+
+    var v765hookAutoInject765: Boolean
+        get() = prefs.getBoolean(KEY_V765HOOKAUTOINJECT765, false)
+        set(value) = prefs.edit().putBoolean(KEY_V765HOOKAUTOINJECT765, value).apply()
+
+    var v765hostAutoResolve765: Boolean
+        get() = prefs.getBoolean(KEY_V765HOSTAUTORESOLVE765, false)
+        set(value) = prefs.edit().putBoolean(KEY_V765HOSTAUTORESOLVE765, value).apply()
+
+    var v765hotAutoReload765: Boolean
+        get() = prefs.getBoolean(KEY_V765HOTAUTORELOAD765, false)
+        set(value) = prefs.edit().putBoolean(KEY_V765HOTAUTORELOAD765, value).apply()
+
+    var v765hoverAutoPreview765: Boolean
+        get() = prefs.getBoolean(KEY_V765HOVERAUTOPREVIEW765, false)
+        set(value) = prefs.edit().putBoolean(KEY_V765HOVERAUTOPREVIEW765, value).apply()
+
+    var v765hubAutoConnect765: Boolean
+        get() = prefs.getBoolean(KEY_V765HUBAUTOCONNECT765, false)
+        set(value) = prefs.edit().putBoolean(KEY_V765HUBAUTOCONNECT765, value).apply()
+
+    var v765iconAutoTheme765: Boolean
+        get() = prefs.getBoolean(KEY_V765ICONAUTOTHEME765, false)
+        set(value) = prefs.edit().putBoolean(KEY_V765ICONAUTOTHEME765, value).apply()
+
+    var v765identityAutoVerify765: Boolean
+        get() = prefs.getBoolean(KEY_V765IDENTITYAUTOVERIFY765, false)
+        set(value) = prefs.edit().putBoolean(KEY_V765IDENTITYAUTOVERIFY765, value).apply()
+
+    var v765idleAutoDim765: Boolean
+        get() = prefs.getBoolean(KEY_V765IDLEAUTODIM765, false)
+        set(value) = prefs.edit().putBoolean(KEY_V765IDLEAUTODIM765, value).apply()
+
+    var v765ignoreAutoList765: Boolean
+        get() = prefs.getBoolean(KEY_V765IGNOREAUTOLIST765, false)
+        set(value) = prefs.edit().putBoolean(KEY_V765IGNOREAUTOLIST765, value).apply()
+
+    var v765imageAutoPreload765: Boolean
+        get() = prefs.getBoolean(KEY_V765IMAGEAUTOPRELOAD765, false)
+        set(value) = prefs.edit().putBoolean(KEY_V765IMAGEAUTOPRELOAD765, value).apply()
+
+    var v765importAutoMerge765: Boolean
+        get() = prefs.getBoolean(KEY_V765IMPORTAUTOMERGE765, false)
+        set(value) = prefs.edit().putBoolean(KEY_V765IMPORTAUTOMERGE765, value).apply()
+
+    var v765indexAutoBuild765: Boolean
+        get() = prefs.getBoolean(KEY_V765INDEXAUTOBUILD765, false)
+        set(value) = prefs.edit().putBoolean(KEY_V765INDEXAUTOBUILD765, value).apply()
+
+    var v765infoAutoPopup765: Boolean
+        get() = prefs.getBoolean(KEY_V765INFOAUTOPOPUP765, false)
+        set(value) = prefs.edit().putBoolean(KEY_V765INFOAUTOPOPUP765, value).apply()
+
+    var v766hitAutoCount766: Boolean
+        get() = prefs.getBoolean(KEY_V766HITAUTOCOUNT766, false)
+        set(value) = prefs.edit().putBoolean(KEY_V766HITAUTOCOUNT766, value).apply()
+
+    var v766holdAutoLock766: Boolean
+        get() = prefs.getBoolean(KEY_V766HOLDAUTOLOCK766, false)
+        set(value) = prefs.edit().putBoolean(KEY_V766HOLDAUTOLOCK766, value).apply()
+
+    var v766hookAutoInject766: Boolean
+        get() = prefs.getBoolean(KEY_V766HOOKAUTOINJECT766, false)
+        set(value) = prefs.edit().putBoolean(KEY_V766HOOKAUTOINJECT766, value).apply()
+
+    var v766hostAutoResolve766: Boolean
+        get() = prefs.getBoolean(KEY_V766HOSTAUTORESOLVE766, false)
+        set(value) = prefs.edit().putBoolean(KEY_V766HOSTAUTORESOLVE766, value).apply()
+
+    var v766hotAutoReload766: Boolean
+        get() = prefs.getBoolean(KEY_V766HOTAUTORELOAD766, false)
+        set(value) = prefs.edit().putBoolean(KEY_V766HOTAUTORELOAD766, value).apply()
+
+    var v766hoverAutoPreview766: Boolean
+        get() = prefs.getBoolean(KEY_V766HOVERAUTOPREVIEW766, false)
+        set(value) = prefs.edit().putBoolean(KEY_V766HOVERAUTOPREVIEW766, value).apply()
+
+    var v766hubAutoConnect766: Boolean
+        get() = prefs.getBoolean(KEY_V766HUBAUTOCONNECT766, false)
+        set(value) = prefs.edit().putBoolean(KEY_V766HUBAUTOCONNECT766, value).apply()
+
+    var v766iconAutoTheme766: Boolean
+        get() = prefs.getBoolean(KEY_V766ICONAUTOTHEME766, false)
+        set(value) = prefs.edit().putBoolean(KEY_V766ICONAUTOTHEME766, value).apply()
+
+    var v766identityAutoVerify766: Boolean
+        get() = prefs.getBoolean(KEY_V766IDENTITYAUTOVERIFY766, false)
+        set(value) = prefs.edit().putBoolean(KEY_V766IDENTITYAUTOVERIFY766, value).apply()
+
+    var v766idleAutoDim766: Boolean
+        get() = prefs.getBoolean(KEY_V766IDLEAUTODIM766, false)
+        set(value) = prefs.edit().putBoolean(KEY_V766IDLEAUTODIM766, value).apply()
+
+    var v766ignoreAutoList766: Boolean
+        get() = prefs.getBoolean(KEY_V766IGNOREAUTOLIST766, false)
+        set(value) = prefs.edit().putBoolean(KEY_V766IGNOREAUTOLIST766, value).apply()
+
+    var v766imageAutoPreload766: Boolean
+        get() = prefs.getBoolean(KEY_V766IMAGEAUTOPRELOAD766, false)
+        set(value) = prefs.edit().putBoolean(KEY_V766IMAGEAUTOPRELOAD766, value).apply()
+
+    var v766importAutoMerge766: Boolean
+        get() = prefs.getBoolean(KEY_V766IMPORTAUTOMERGE766, false)
+        set(value) = prefs.edit().putBoolean(KEY_V766IMPORTAUTOMERGE766, value).apply()
+
+    var v766indexAutoBuild766: Boolean
+        get() = prefs.getBoolean(KEY_V766INDEXAUTOBUILD766, false)
+        set(value) = prefs.edit().putBoolean(KEY_V766INDEXAUTOBUILD766, value).apply()
+
+    var v766infoAutoPopup766: Boolean
+        get() = prefs.getBoolean(KEY_V766INFOAUTOPOPUP766, false)
+        set(value) = prefs.edit().putBoolean(KEY_V766INFOAUTOPOPUP766, value).apply()
+
+    var v767hitAutoCount767: Boolean
+        get() = prefs.getBoolean(KEY_V767HITAUTOCOUNT767, false)
+        set(value) = prefs.edit().putBoolean(KEY_V767HITAUTOCOUNT767, value).apply()
+
+    var v767holdAutoLock767: Boolean
+        get() = prefs.getBoolean(KEY_V767HOLDAUTOLOCK767, false)
+        set(value) = prefs.edit().putBoolean(KEY_V767HOLDAUTOLOCK767, value).apply()
+
+    var v767hookAutoInject767: Boolean
+        get() = prefs.getBoolean(KEY_V767HOOKAUTOINJECT767, false)
+        set(value) = prefs.edit().putBoolean(KEY_V767HOOKAUTOINJECT767, value).apply()
+
+    var v767hostAutoResolve767: Boolean
+        get() = prefs.getBoolean(KEY_V767HOSTAUTORESOLVE767, false)
+        set(value) = prefs.edit().putBoolean(KEY_V767HOSTAUTORESOLVE767, value).apply()
+
+    var v767hotAutoReload767: Boolean
+        get() = prefs.getBoolean(KEY_V767HOTAUTORELOAD767, false)
+        set(value) = prefs.edit().putBoolean(KEY_V767HOTAUTORELOAD767, value).apply()
+
+    var v767hoverAutoPreview767: Boolean
+        get() = prefs.getBoolean(KEY_V767HOVERAUTOPREVIEW767, false)
+        set(value) = prefs.edit().putBoolean(KEY_V767HOVERAUTOPREVIEW767, value).apply()
+
+    var v767hubAutoConnect767: Boolean
+        get() = prefs.getBoolean(KEY_V767HUBAUTOCONNECT767, false)
+        set(value) = prefs.edit().putBoolean(KEY_V767HUBAUTOCONNECT767, value).apply()
+
+    var v767iconAutoTheme767: Boolean
+        get() = prefs.getBoolean(KEY_V767ICONAUTOTHEME767, false)
+        set(value) = prefs.edit().putBoolean(KEY_V767ICONAUTOTHEME767, value).apply()
+
+    var v767identityAutoVerify767: Boolean
+        get() = prefs.getBoolean(KEY_V767IDENTITYAUTOVERIFY767, false)
+        set(value) = prefs.edit().putBoolean(KEY_V767IDENTITYAUTOVERIFY767, value).apply()
+
+    var v767idleAutoDim767: Boolean
+        get() = prefs.getBoolean(KEY_V767IDLEAUTODIM767, false)
+        set(value) = prefs.edit().putBoolean(KEY_V767IDLEAUTODIM767, value).apply()
+
+    var v767ignoreAutoList767: Boolean
+        get() = prefs.getBoolean(KEY_V767IGNOREAUTOLIST767, false)
+        set(value) = prefs.edit().putBoolean(KEY_V767IGNOREAUTOLIST767, value).apply()
+
+    var v767imageAutoPreload767: Boolean
+        get() = prefs.getBoolean(KEY_V767IMAGEAUTOPRELOAD767, false)
+        set(value) = prefs.edit().putBoolean(KEY_V767IMAGEAUTOPRELOAD767, value).apply()
+
+    var v767importAutoMerge767: Boolean
+        get() = prefs.getBoolean(KEY_V767IMPORTAUTOMERGE767, false)
+        set(value) = prefs.edit().putBoolean(KEY_V767IMPORTAUTOMERGE767, value).apply()
+
+    var v767indexAutoBuild767: Boolean
+        get() = prefs.getBoolean(KEY_V767INDEXAUTOBUILD767, false)
+        set(value) = prefs.edit().putBoolean(KEY_V767INDEXAUTOBUILD767, value).apply()
+
+    var v767infoAutoPopup767: Boolean
+        get() = prefs.getBoolean(KEY_V767INFOAUTOPOPUP767, false)
+        set(value) = prefs.edit().putBoolean(KEY_V767INFOAUTOPOPUP767, value).apply()
+
+    var v768hitAutoCount768: Boolean
+        get() = prefs.getBoolean(KEY_V768HITAUTOCOUNT768, false)
+        set(value) = prefs.edit().putBoolean(KEY_V768HITAUTOCOUNT768, value).apply()
+
+    var v768holdAutoLock768: Boolean
+        get() = prefs.getBoolean(KEY_V768HOLDAUTOLOCK768, false)
+        set(value) = prefs.edit().putBoolean(KEY_V768HOLDAUTOLOCK768, value).apply()
+
+    var v768hookAutoInject768: Boolean
+        get() = prefs.getBoolean(KEY_V768HOOKAUTOINJECT768, false)
+        set(value) = prefs.edit().putBoolean(KEY_V768HOOKAUTOINJECT768, value).apply()
+
+    var v768hostAutoResolve768: Boolean
+        get() = prefs.getBoolean(KEY_V768HOSTAUTORESOLVE768, false)
+        set(value) = prefs.edit().putBoolean(KEY_V768HOSTAUTORESOLVE768, value).apply()
+
+    var v768hotAutoReload768: Boolean
+        get() = prefs.getBoolean(KEY_V768HOTAUTORELOAD768, false)
+        set(value) = prefs.edit().putBoolean(KEY_V768HOTAUTORELOAD768, value).apply()
+
+    var v768hoverAutoPreview768: Boolean
+        get() = prefs.getBoolean(KEY_V768HOVERAUTOPREVIEW768, false)
+        set(value) = prefs.edit().putBoolean(KEY_V768HOVERAUTOPREVIEW768, value).apply()
+
+    var v768hubAutoConnect768: Boolean
+        get() = prefs.getBoolean(KEY_V768HUBAUTOCONNECT768, false)
+        set(value) = prefs.edit().putBoolean(KEY_V768HUBAUTOCONNECT768, value).apply()
+
+    var v768iconAutoTheme768: Boolean
+        get() = prefs.getBoolean(KEY_V768ICONAUTOTHEME768, false)
+        set(value) = prefs.edit().putBoolean(KEY_V768ICONAUTOTHEME768, value).apply()
+
+    var v768identityAutoVerify768: Boolean
+        get() = prefs.getBoolean(KEY_V768IDENTITYAUTOVERIFY768, false)
+        set(value) = prefs.edit().putBoolean(KEY_V768IDENTITYAUTOVERIFY768, value).apply()
+
+    var v768idleAutoDim768: Boolean
+        get() = prefs.getBoolean(KEY_V768IDLEAUTODIM768, false)
+        set(value) = prefs.edit().putBoolean(KEY_V768IDLEAUTODIM768, value).apply()
+
+    var v768ignoreAutoList768: Boolean
+        get() = prefs.getBoolean(KEY_V768IGNOREAUTOLIST768, false)
+        set(value) = prefs.edit().putBoolean(KEY_V768IGNOREAUTOLIST768, value).apply()
+
+    var v768imageAutoPreload768: Boolean
+        get() = prefs.getBoolean(KEY_V768IMAGEAUTOPRELOAD768, false)
+        set(value) = prefs.edit().putBoolean(KEY_V768IMAGEAUTOPRELOAD768, value).apply()
+
+    var v768importAutoMerge768: Boolean
+        get() = prefs.getBoolean(KEY_V768IMPORTAUTOMERGE768, false)
+        set(value) = prefs.edit().putBoolean(KEY_V768IMPORTAUTOMERGE768, value).apply()
+
+    var v768indexAutoBuild768: Boolean
+        get() = prefs.getBoolean(KEY_V768INDEXAUTOBUILD768, false)
+        set(value) = prefs.edit().putBoolean(KEY_V768INDEXAUTOBUILD768, value).apply()
+
+    var v768infoAutoPopup768: Boolean
+        get() = prefs.getBoolean(KEY_V768INFOAUTOPOPUP768, false)
+        set(value) = prefs.edit().putBoolean(KEY_V768INFOAUTOPOPUP768, value).apply()
+
+    var v769hitAutoCount769: Boolean
+        get() = prefs.getBoolean(KEY_V769HITAUTOCOUNT769, false)
+        set(value) = prefs.edit().putBoolean(KEY_V769HITAUTOCOUNT769, value).apply()
+
+    var v769holdAutoLock769: Boolean
+        get() = prefs.getBoolean(KEY_V769HOLDAUTOLOCK769, false)
+        set(value) = prefs.edit().putBoolean(KEY_V769HOLDAUTOLOCK769, value).apply()
+
+    var v769hookAutoInject769: Boolean
+        get() = prefs.getBoolean(KEY_V769HOOKAUTOINJECT769, false)
+        set(value) = prefs.edit().putBoolean(KEY_V769HOOKAUTOINJECT769, value).apply()
+
+    var v769hostAutoResolve769: Boolean
+        get() = prefs.getBoolean(KEY_V769HOSTAUTORESOLVE769, false)
+        set(value) = prefs.edit().putBoolean(KEY_V769HOSTAUTORESOLVE769, value).apply()
+
+    var v769hotAutoReload769: Boolean
+        get() = prefs.getBoolean(KEY_V769HOTAUTORELOAD769, false)
+        set(value) = prefs.edit().putBoolean(KEY_V769HOTAUTORELOAD769, value).apply()
+
+    var v769hoverAutoPreview769: Boolean
+        get() = prefs.getBoolean(KEY_V769HOVERAUTOPREVIEW769, false)
+        set(value) = prefs.edit().putBoolean(KEY_V769HOVERAUTOPREVIEW769, value).apply()
+
+    var v769hubAutoConnect769: Boolean
+        get() = prefs.getBoolean(KEY_V769HUBAUTOCONNECT769, false)
+        set(value) = prefs.edit().putBoolean(KEY_V769HUBAUTOCONNECT769, value).apply()
+
+    var v769iconAutoTheme769: Boolean
+        get() = prefs.getBoolean(KEY_V769ICONAUTOTHEME769, false)
+        set(value) = prefs.edit().putBoolean(KEY_V769ICONAUTOTHEME769, value).apply()
+
+    var v769identityAutoVerify769: Boolean
+        get() = prefs.getBoolean(KEY_V769IDENTITYAUTOVERIFY769, false)
+        set(value) = prefs.edit().putBoolean(KEY_V769IDENTITYAUTOVERIFY769, value).apply()
+
+    var v769idleAutoDim769: Boolean
+        get() = prefs.getBoolean(KEY_V769IDLEAUTODIM769, false)
+        set(value) = prefs.edit().putBoolean(KEY_V769IDLEAUTODIM769, value).apply()
+
+    var v769ignoreAutoList769: Boolean
+        get() = prefs.getBoolean(KEY_V769IGNOREAUTOLIST769, false)
+        set(value) = prefs.edit().putBoolean(KEY_V769IGNOREAUTOLIST769, value).apply()
+
+    var v769imageAutoPreload769: Boolean
+        get() = prefs.getBoolean(KEY_V769IMAGEAUTOPRELOAD769, false)
+        set(value) = prefs.edit().putBoolean(KEY_V769IMAGEAUTOPRELOAD769, value).apply()
+
+    var v769importAutoMerge769: Boolean
+        get() = prefs.getBoolean(KEY_V769IMPORTAUTOMERGE769, false)
+        set(value) = prefs.edit().putBoolean(KEY_V769IMPORTAUTOMERGE769, value).apply()
+
+    var v769indexAutoBuild769: Boolean
+        get() = prefs.getBoolean(KEY_V769INDEXAUTOBUILD769, false)
+        set(value) = prefs.edit().putBoolean(KEY_V769INDEXAUTOBUILD769, value).apply()
+
+    var v769infoAutoPopup769: Boolean
+        get() = prefs.getBoolean(KEY_V769INFOAUTOPOPUP769, false)
+        set(value) = prefs.edit().putBoolean(KEY_V769INFOAUTOPOPUP769, value).apply()
+
+    var v770hitAutoCount770: Boolean
+        get() = prefs.getBoolean(KEY_V770HITAUTOCOUNT770, false)
+        set(value) = prefs.edit().putBoolean(KEY_V770HITAUTOCOUNT770, value).apply()
+
+    var v770holdAutoLock770: Boolean
+        get() = prefs.getBoolean(KEY_V770HOLDAUTOLOCK770, false)
+        set(value) = prefs.edit().putBoolean(KEY_V770HOLDAUTOLOCK770, value).apply()
+
+    var v770hookAutoInject770: Boolean
+        get() = prefs.getBoolean(KEY_V770HOOKAUTOINJECT770, false)
+        set(value) = prefs.edit().putBoolean(KEY_V770HOOKAUTOINJECT770, value).apply()
+
+    var v770hostAutoResolve770: Boolean
+        get() = prefs.getBoolean(KEY_V770HOSTAUTORESOLVE770, false)
+        set(value) = prefs.edit().putBoolean(KEY_V770HOSTAUTORESOLVE770, value).apply()
+
+    var v770hotAutoReload770: Boolean
+        get() = prefs.getBoolean(KEY_V770HOTAUTORELOAD770, false)
+        set(value) = prefs.edit().putBoolean(KEY_V770HOTAUTORELOAD770, value).apply()
+
+    var v770hoverAutoPreview770: Boolean
+        get() = prefs.getBoolean(KEY_V770HOVERAUTOPREVIEW770, false)
+        set(value) = prefs.edit().putBoolean(KEY_V770HOVERAUTOPREVIEW770, value).apply()
+
+    var v770hubAutoConnect770: Boolean
+        get() = prefs.getBoolean(KEY_V770HUBAUTOCONNECT770, false)
+        set(value) = prefs.edit().putBoolean(KEY_V770HUBAUTOCONNECT770, value).apply()
+
+    var v770iconAutoTheme770: Boolean
+        get() = prefs.getBoolean(KEY_V770ICONAUTOTHEME770, false)
+        set(value) = prefs.edit().putBoolean(KEY_V770ICONAUTOTHEME770, value).apply()
+
+    var v770identityAutoVerify770: Boolean
+        get() = prefs.getBoolean(KEY_V770IDENTITYAUTOVERIFY770, false)
+        set(value) = prefs.edit().putBoolean(KEY_V770IDENTITYAUTOVERIFY770, value).apply()
+
+    var v770idleAutoDim770: Boolean
+        get() = prefs.getBoolean(KEY_V770IDLEAUTODIM770, false)
+        set(value) = prefs.edit().putBoolean(KEY_V770IDLEAUTODIM770, value).apply()
+
+    var v770ignoreAutoList770: Boolean
+        get() = prefs.getBoolean(KEY_V770IGNOREAUTOLIST770, false)
+        set(value) = prefs.edit().putBoolean(KEY_V770IGNOREAUTOLIST770, value).apply()
+
+    var v770imageAutoPreload770: Boolean
+        get() = prefs.getBoolean(KEY_V770IMAGEAUTOPRELOAD770, false)
+        set(value) = prefs.edit().putBoolean(KEY_V770IMAGEAUTOPRELOAD770, value).apply()
+
+    var v770importAutoMerge770: Boolean
+        get() = prefs.getBoolean(KEY_V770IMPORTAUTOMERGE770, false)
+        set(value) = prefs.edit().putBoolean(KEY_V770IMPORTAUTOMERGE770, value).apply()
+
+    var v770indexAutoBuild770: Boolean
+        get() = prefs.getBoolean(KEY_V770INDEXAUTOBUILD770, false)
+        set(value) = prefs.edit().putBoolean(KEY_V770INDEXAUTOBUILD770, value).apply()
+
+    var v770infoAutoPopup770: Boolean
+        get() = prefs.getBoolean(KEY_V770INFOAUTOPOPUP770, false)
+        set(value) = prefs.edit().putBoolean(KEY_V770INFOAUTOPOPUP770, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -66180,5 +66780,155 @@ class AppPrefs(context: Context) {
         const val KEY_V760HIGHLIGHTAUTOMARK760 = "v760highlightAutoMark760" // v760 Highlight Auto Mark760
         const val KEY_V760HINTAUTODISPLAY760 = "v760hintAutoDisplay760" // v760 Hint Auto Display760
         const val KEY_V760HISTORYAUTORECORD760 = "v760historyAutoRecord760" // v760 History Auto Record760
+        const val KEY_V761HITAUTOCOUNT761 = "v761hitAutoCount761" // v761 Hit Auto Count761
+        const val KEY_V761HOLDAUTOLOCK761 = "v761holdAutoLock761" // v761 Hold Auto Lock761
+        const val KEY_V761HOOKAUTOINJECT761 = "v761hookAutoInject761" // v761 Hook Auto Inject761
+        const val KEY_V761HOSTAUTORESOLVE761 = "v761hostAutoResolve761" // v761 Host Auto Resolve761
+        const val KEY_V761HOTAUTORELOAD761 = "v761hotAutoReload761" // v761 Hot Auto Reload761
+        const val KEY_V761HOVERAUTOPREVIEW761 = "v761hoverAutoPreview761" // v761 Hover Auto Preview761
+        const val KEY_V761HUBAUTOCONNECT761 = "v761hubAutoConnect761" // v761 Hub Auto Connect761
+        const val KEY_V761ICONAUTOTHEME761 = "v761iconAutoTheme761" // v761 Icon Auto Theme761
+        const val KEY_V761IDENTITYAUTOVERIFY761 = "v761identityAutoVerify761" // v761 Identity Auto Verify761
+        const val KEY_V761IDLEAUTODIM761 = "v761idleAutoDim761" // v761 Idle Auto Dim761
+        const val KEY_V761IGNOREAUTOLIST761 = "v761ignoreAutoList761" // v761 Ignore Auto List761
+        const val KEY_V761IMAGEAUTOPRELOAD761 = "v761imageAutoPreload761" // v761 Image Auto Preload761
+        const val KEY_V761IMPORTAUTOMERGE761 = "v761importAutoMerge761" // v761 Import Auto Merge761
+        const val KEY_V761INDEXAUTOBUILD761 = "v761indexAutoBuild761" // v761 Index Auto Build761
+        const val KEY_V761INFOAUTOPOPUP761 = "v761infoAutoPopup761" // v761 Info Auto Popup761
+        const val KEY_V762HITAUTOCOUNT762 = "v762hitAutoCount762" // v762 Hit Auto Count762
+        const val KEY_V762HOLDAUTOLOCK762 = "v762holdAutoLock762" // v762 Hold Auto Lock762
+        const val KEY_V762HOOKAUTOINJECT762 = "v762hookAutoInject762" // v762 Hook Auto Inject762
+        const val KEY_V762HOSTAUTORESOLVE762 = "v762hostAutoResolve762" // v762 Host Auto Resolve762
+        const val KEY_V762HOTAUTORELOAD762 = "v762hotAutoReload762" // v762 Hot Auto Reload762
+        const val KEY_V762HOVERAUTOPREVIEW762 = "v762hoverAutoPreview762" // v762 Hover Auto Preview762
+        const val KEY_V762HUBAUTOCONNECT762 = "v762hubAutoConnect762" // v762 Hub Auto Connect762
+        const val KEY_V762ICONAUTOTHEME762 = "v762iconAutoTheme762" // v762 Icon Auto Theme762
+        const val KEY_V762IDENTITYAUTOVERIFY762 = "v762identityAutoVerify762" // v762 Identity Auto Verify762
+        const val KEY_V762IDLEAUTODIM762 = "v762idleAutoDim762" // v762 Idle Auto Dim762
+        const val KEY_V762IGNOREAUTOLIST762 = "v762ignoreAutoList762" // v762 Ignore Auto List762
+        const val KEY_V762IMAGEAUTOPRELOAD762 = "v762imageAutoPreload762" // v762 Image Auto Preload762
+        const val KEY_V762IMPORTAUTOMERGE762 = "v762importAutoMerge762" // v762 Import Auto Merge762
+        const val KEY_V762INDEXAUTOBUILD762 = "v762indexAutoBuild762" // v762 Index Auto Build762
+        const val KEY_V762INFOAUTOPOPUP762 = "v762infoAutoPopup762" // v762 Info Auto Popup762
+        const val KEY_V763HITAUTOCOUNT763 = "v763hitAutoCount763" // v763 Hit Auto Count763
+        const val KEY_V763HOLDAUTOLOCK763 = "v763holdAutoLock763" // v763 Hold Auto Lock763
+        const val KEY_V763HOOKAUTOINJECT763 = "v763hookAutoInject763" // v763 Hook Auto Inject763
+        const val KEY_V763HOSTAUTORESOLVE763 = "v763hostAutoResolve763" // v763 Host Auto Resolve763
+        const val KEY_V763HOTAUTORELOAD763 = "v763hotAutoReload763" // v763 Hot Auto Reload763
+        const val KEY_V763HOVERAUTOPREVIEW763 = "v763hoverAutoPreview763" // v763 Hover Auto Preview763
+        const val KEY_V763HUBAUTOCONNECT763 = "v763hubAutoConnect763" // v763 Hub Auto Connect763
+        const val KEY_V763ICONAUTOTHEME763 = "v763iconAutoTheme763" // v763 Icon Auto Theme763
+        const val KEY_V763IDENTITYAUTOVERIFY763 = "v763identityAutoVerify763" // v763 Identity Auto Verify763
+        const val KEY_V763IDLEAUTODIM763 = "v763idleAutoDim763" // v763 Idle Auto Dim763
+        const val KEY_V763IGNOREAUTOLIST763 = "v763ignoreAutoList763" // v763 Ignore Auto List763
+        const val KEY_V763IMAGEAUTOPRELOAD763 = "v763imageAutoPreload763" // v763 Image Auto Preload763
+        const val KEY_V763IMPORTAUTOMERGE763 = "v763importAutoMerge763" // v763 Import Auto Merge763
+        const val KEY_V763INDEXAUTOBUILD763 = "v763indexAutoBuild763" // v763 Index Auto Build763
+        const val KEY_V763INFOAUTOPOPUP763 = "v763infoAutoPopup763" // v763 Info Auto Popup763
+        const val KEY_V764HITAUTOCOUNT764 = "v764hitAutoCount764" // v764 Hit Auto Count764
+        const val KEY_V764HOLDAUTOLOCK764 = "v764holdAutoLock764" // v764 Hold Auto Lock764
+        const val KEY_V764HOOKAUTOINJECT764 = "v764hookAutoInject764" // v764 Hook Auto Inject764
+        const val KEY_V764HOSTAUTORESOLVE764 = "v764hostAutoResolve764" // v764 Host Auto Resolve764
+        const val KEY_V764HOTAUTORELOAD764 = "v764hotAutoReload764" // v764 Hot Auto Reload764
+        const val KEY_V764HOVERAUTOPREVIEW764 = "v764hoverAutoPreview764" // v764 Hover Auto Preview764
+        const val KEY_V764HUBAUTOCONNECT764 = "v764hubAutoConnect764" // v764 Hub Auto Connect764
+        const val KEY_V764ICONAUTOTHEME764 = "v764iconAutoTheme764" // v764 Icon Auto Theme764
+        const val KEY_V764IDENTITYAUTOVERIFY764 = "v764identityAutoVerify764" // v764 Identity Auto Verify764
+        const val KEY_V764IDLEAUTODIM764 = "v764idleAutoDim764" // v764 Idle Auto Dim764
+        const val KEY_V764IGNOREAUTOLIST764 = "v764ignoreAutoList764" // v764 Ignore Auto List764
+        const val KEY_V764IMAGEAUTOPRELOAD764 = "v764imageAutoPreload764" // v764 Image Auto Preload764
+        const val KEY_V764IMPORTAUTOMERGE764 = "v764importAutoMerge764" // v764 Import Auto Merge764
+        const val KEY_V764INDEXAUTOBUILD764 = "v764indexAutoBuild764" // v764 Index Auto Build764
+        const val KEY_V764INFOAUTOPOPUP764 = "v764infoAutoPopup764" // v764 Info Auto Popup764
+        const val KEY_V765HITAUTOCOUNT765 = "v765hitAutoCount765" // v765 Hit Auto Count765
+        const val KEY_V765HOLDAUTOLOCK765 = "v765holdAutoLock765" // v765 Hold Auto Lock765
+        const val KEY_V765HOOKAUTOINJECT765 = "v765hookAutoInject765" // v765 Hook Auto Inject765
+        const val KEY_V765HOSTAUTORESOLVE765 = "v765hostAutoResolve765" // v765 Host Auto Resolve765
+        const val KEY_V765HOTAUTORELOAD765 = "v765hotAutoReload765" // v765 Hot Auto Reload765
+        const val KEY_V765HOVERAUTOPREVIEW765 = "v765hoverAutoPreview765" // v765 Hover Auto Preview765
+        const val KEY_V765HUBAUTOCONNECT765 = "v765hubAutoConnect765" // v765 Hub Auto Connect765
+        const val KEY_V765ICONAUTOTHEME765 = "v765iconAutoTheme765" // v765 Icon Auto Theme765
+        const val KEY_V765IDENTITYAUTOVERIFY765 = "v765identityAutoVerify765" // v765 Identity Auto Verify765
+        const val KEY_V765IDLEAUTODIM765 = "v765idleAutoDim765" // v765 Idle Auto Dim765
+        const val KEY_V765IGNOREAUTOLIST765 = "v765ignoreAutoList765" // v765 Ignore Auto List765
+        const val KEY_V765IMAGEAUTOPRELOAD765 = "v765imageAutoPreload765" // v765 Image Auto Preload765
+        const val KEY_V765IMPORTAUTOMERGE765 = "v765importAutoMerge765" // v765 Import Auto Merge765
+        const val KEY_V765INDEXAUTOBUILD765 = "v765indexAutoBuild765" // v765 Index Auto Build765
+        const val KEY_V765INFOAUTOPOPUP765 = "v765infoAutoPopup765" // v765 Info Auto Popup765
+        const val KEY_V766HITAUTOCOUNT766 = "v766hitAutoCount766" // v766 Hit Auto Count766
+        const val KEY_V766HOLDAUTOLOCK766 = "v766holdAutoLock766" // v766 Hold Auto Lock766
+        const val KEY_V766HOOKAUTOINJECT766 = "v766hookAutoInject766" // v766 Hook Auto Inject766
+        const val KEY_V766HOSTAUTORESOLVE766 = "v766hostAutoResolve766" // v766 Host Auto Resolve766
+        const val KEY_V766HOTAUTORELOAD766 = "v766hotAutoReload766" // v766 Hot Auto Reload766
+        const val KEY_V766HOVERAUTOPREVIEW766 = "v766hoverAutoPreview766" // v766 Hover Auto Preview766
+        const val KEY_V766HUBAUTOCONNECT766 = "v766hubAutoConnect766" // v766 Hub Auto Connect766
+        const val KEY_V766ICONAUTOTHEME766 = "v766iconAutoTheme766" // v766 Icon Auto Theme766
+        const val KEY_V766IDENTITYAUTOVERIFY766 = "v766identityAutoVerify766" // v766 Identity Auto Verify766
+        const val KEY_V766IDLEAUTODIM766 = "v766idleAutoDim766" // v766 Idle Auto Dim766
+        const val KEY_V766IGNOREAUTOLIST766 = "v766ignoreAutoList766" // v766 Ignore Auto List766
+        const val KEY_V766IMAGEAUTOPRELOAD766 = "v766imageAutoPreload766" // v766 Image Auto Preload766
+        const val KEY_V766IMPORTAUTOMERGE766 = "v766importAutoMerge766" // v766 Import Auto Merge766
+        const val KEY_V766INDEXAUTOBUILD766 = "v766indexAutoBuild766" // v766 Index Auto Build766
+        const val KEY_V766INFOAUTOPOPUP766 = "v766infoAutoPopup766" // v766 Info Auto Popup766
+        const val KEY_V767HITAUTOCOUNT767 = "v767hitAutoCount767" // v767 Hit Auto Count767
+        const val KEY_V767HOLDAUTOLOCK767 = "v767holdAutoLock767" // v767 Hold Auto Lock767
+        const val KEY_V767HOOKAUTOINJECT767 = "v767hookAutoInject767" // v767 Hook Auto Inject767
+        const val KEY_V767HOSTAUTORESOLVE767 = "v767hostAutoResolve767" // v767 Host Auto Resolve767
+        const val KEY_V767HOTAUTORELOAD767 = "v767hotAutoReload767" // v767 Hot Auto Reload767
+        const val KEY_V767HOVERAUTOPREVIEW767 = "v767hoverAutoPreview767" // v767 Hover Auto Preview767
+        const val KEY_V767HUBAUTOCONNECT767 = "v767hubAutoConnect767" // v767 Hub Auto Connect767
+        const val KEY_V767ICONAUTOTHEME767 = "v767iconAutoTheme767" // v767 Icon Auto Theme767
+        const val KEY_V767IDENTITYAUTOVERIFY767 = "v767identityAutoVerify767" // v767 Identity Auto Verify767
+        const val KEY_V767IDLEAUTODIM767 = "v767idleAutoDim767" // v767 Idle Auto Dim767
+        const val KEY_V767IGNOREAUTOLIST767 = "v767ignoreAutoList767" // v767 Ignore Auto List767
+        const val KEY_V767IMAGEAUTOPRELOAD767 = "v767imageAutoPreload767" // v767 Image Auto Preload767
+        const val KEY_V767IMPORTAUTOMERGE767 = "v767importAutoMerge767" // v767 Import Auto Merge767
+        const val KEY_V767INDEXAUTOBUILD767 = "v767indexAutoBuild767" // v767 Index Auto Build767
+        const val KEY_V767INFOAUTOPOPUP767 = "v767infoAutoPopup767" // v767 Info Auto Popup767
+        const val KEY_V768HITAUTOCOUNT768 = "v768hitAutoCount768" // v768 Hit Auto Count768
+        const val KEY_V768HOLDAUTOLOCK768 = "v768holdAutoLock768" // v768 Hold Auto Lock768
+        const val KEY_V768HOOKAUTOINJECT768 = "v768hookAutoInject768" // v768 Hook Auto Inject768
+        const val KEY_V768HOSTAUTORESOLVE768 = "v768hostAutoResolve768" // v768 Host Auto Resolve768
+        const val KEY_V768HOTAUTORELOAD768 = "v768hotAutoReload768" // v768 Hot Auto Reload768
+        const val KEY_V768HOVERAUTOPREVIEW768 = "v768hoverAutoPreview768" // v768 Hover Auto Preview768
+        const val KEY_V768HUBAUTOCONNECT768 = "v768hubAutoConnect768" // v768 Hub Auto Connect768
+        const val KEY_V768ICONAUTOTHEME768 = "v768iconAutoTheme768" // v768 Icon Auto Theme768
+        const val KEY_V768IDENTITYAUTOVERIFY768 = "v768identityAutoVerify768" // v768 Identity Auto Verify768
+        const val KEY_V768IDLEAUTODIM768 = "v768idleAutoDim768" // v768 Idle Auto Dim768
+        const val KEY_V768IGNOREAUTOLIST768 = "v768ignoreAutoList768" // v768 Ignore Auto List768
+        const val KEY_V768IMAGEAUTOPRELOAD768 = "v768imageAutoPreload768" // v768 Image Auto Preload768
+        const val KEY_V768IMPORTAUTOMERGE768 = "v768importAutoMerge768" // v768 Import Auto Merge768
+        const val KEY_V768INDEXAUTOBUILD768 = "v768indexAutoBuild768" // v768 Index Auto Build768
+        const val KEY_V768INFOAUTOPOPUP768 = "v768infoAutoPopup768" // v768 Info Auto Popup768
+        const val KEY_V769HITAUTOCOUNT769 = "v769hitAutoCount769" // v769 Hit Auto Count769
+        const val KEY_V769HOLDAUTOLOCK769 = "v769holdAutoLock769" // v769 Hold Auto Lock769
+        const val KEY_V769HOOKAUTOINJECT769 = "v769hookAutoInject769" // v769 Hook Auto Inject769
+        const val KEY_V769HOSTAUTORESOLVE769 = "v769hostAutoResolve769" // v769 Host Auto Resolve769
+        const val KEY_V769HOTAUTORELOAD769 = "v769hotAutoReload769" // v769 Hot Auto Reload769
+        const val KEY_V769HOVERAUTOPREVIEW769 = "v769hoverAutoPreview769" // v769 Hover Auto Preview769
+        const val KEY_V769HUBAUTOCONNECT769 = "v769hubAutoConnect769" // v769 Hub Auto Connect769
+        const val KEY_V769ICONAUTOTHEME769 = "v769iconAutoTheme769" // v769 Icon Auto Theme769
+        const val KEY_V769IDENTITYAUTOVERIFY769 = "v769identityAutoVerify769" // v769 Identity Auto Verify769
+        const val KEY_V769IDLEAUTODIM769 = "v769idleAutoDim769" // v769 Idle Auto Dim769
+        const val KEY_V769IGNOREAUTOLIST769 = "v769ignoreAutoList769" // v769 Ignore Auto List769
+        const val KEY_V769IMAGEAUTOPRELOAD769 = "v769imageAutoPreload769" // v769 Image Auto Preload769
+        const val KEY_V769IMPORTAUTOMERGE769 = "v769importAutoMerge769" // v769 Import Auto Merge769
+        const val KEY_V769INDEXAUTOBUILD769 = "v769indexAutoBuild769" // v769 Index Auto Build769
+        const val KEY_V769INFOAUTOPOPUP769 = "v769infoAutoPopup769" // v769 Info Auto Popup769
+        const val KEY_V770HITAUTOCOUNT770 = "v770hitAutoCount770" // v770 Hit Auto Count770
+        const val KEY_V770HOLDAUTOLOCK770 = "v770holdAutoLock770" // v770 Hold Auto Lock770
+        const val KEY_V770HOOKAUTOINJECT770 = "v770hookAutoInject770" // v770 Hook Auto Inject770
+        const val KEY_V770HOSTAUTORESOLVE770 = "v770hostAutoResolve770" // v770 Host Auto Resolve770
+        const val KEY_V770HOTAUTORELOAD770 = "v770hotAutoReload770" // v770 Hot Auto Reload770
+        const val KEY_V770HOVERAUTOPREVIEW770 = "v770hoverAutoPreview770" // v770 Hover Auto Preview770
+        const val KEY_V770HUBAUTOCONNECT770 = "v770hubAutoConnect770" // v770 Hub Auto Connect770
+        const val KEY_V770ICONAUTOTHEME770 = "v770iconAutoTheme770" // v770 Icon Auto Theme770
+        const val KEY_V770IDENTITYAUTOVERIFY770 = "v770identityAutoVerify770" // v770 Identity Auto Verify770
+        const val KEY_V770IDLEAUTODIM770 = "v770idleAutoDim770" // v770 Idle Auto Dim770
+        const val KEY_V770IGNOREAUTOLIST770 = "v770ignoreAutoList770" // v770 Ignore Auto List770
+        const val KEY_V770IMAGEAUTOPRELOAD770 = "v770imageAutoPreload770" // v770 Image Auto Preload770
+        const val KEY_V770IMPORTAUTOMERGE770 = "v770importAutoMerge770" // v770 Import Auto Merge770
+        const val KEY_V770INDEXAUTOBUILD770 = "v770indexAutoBuild770" // v770 Index Auto Build770
+        const val KEY_V770INFOAUTOPOPUP770 = "v770infoAutoPopup770" // v770 Info Auto Popup770
     }
 }
