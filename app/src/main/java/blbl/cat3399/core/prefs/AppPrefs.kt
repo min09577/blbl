@@ -45248,6 +45248,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V640CATEGORYAUTOSORT640, false)
         set(value) = prefs.edit().putBoolean(KEY_V640CATEGORYAUTOSORT640, value).apply()
 
+    var v641cellAutoMerge641: Boolean
+        get() = prefs.getBoolean(KEY_V641CELLAUTOMERGE641, false)
+        set(value) = prefs.edit().putBoolean(KEY_V641CELLAUTOMERGE641, value).apply()
+
+    var v641centerAutoGravity641: Boolean
+        get() = prefs.getBoolean(KEY_V641CENTERAUTOGRAVITY641, false)
+        set(value) = prefs.edit().putBoolean(KEY_V641CENTERAUTOGRAVITY641, value).apply()
+
+    var v641chainAutoLink641: Boolean
+        get() = prefs.getBoolean(KEY_V641CHAINAUTOLINK641, false)
+        set(value) = prefs.edit().putBoolean(KEY_V641CHAINAUTOLINK641, value).apply()
+
+    var v641challengeAutoJoin641: Boolean
+        get() = prefs.getBoolean(KEY_V641CHALLENGEAUTOJOIN641, false)
+        set(value) = prefs.edit().putBoolean(KEY_V641CHALLENGEAUTOJOIN641, value).apply()
+
+    var v641changeAutoTrack641: Boolean
+        get() = prefs.getBoolean(KEY_V641CHANGEAUTOTRACK641, false)
+        set(value) = prefs.edit().putBoolean(KEY_V641CHANGEAUTOTRACK641, value).apply()
+
+    var v641channelAutoSwitch641: Int
+        get() = prefs.getInt(KEY_V641CHANNELAUTOSWITCH641, 0)
+        set(value) = prefs.edit().putInt(KEY_V641CHANNELAUTOSWITCH641, value).apply()
+
+    var v641chapterAutoMark641: Boolean
+        get() = prefs.getBoolean(KEY_V641CHAPTERAUTOMARK641, false)
+        set(value) = prefs.edit().putBoolean(KEY_V641CHAPTERAUTOMARK641, value).apply()
+
+    var v641chartAutoRender641: Boolean
+        get() = prefs.getBoolean(KEY_V641CHARTAUTORENDER641, false)
+        set(value) = prefs.edit().putBoolean(KEY_V641CHARTAUTORENDER641, value).apply()
+
+    var v641checkAutoVerify641: Boolean
+        get() = prefs.getBoolean(KEY_V641CHECKAUTOVERIFY641, false)
+        set(value) = prefs.edit().putBoolean(KEY_V641CHECKAUTOVERIFY641, value).apply()
+
+    var v641chipAutoTag641: Boolean
+        get() = prefs.getBoolean(KEY_V641CHIPAUTOTAG641, false)
+        set(value) = prefs.edit().putBoolean(KEY_V641CHIPAUTOTAG641, value).apply()
+
+    var v641chunkAutoSplit641: Boolean
+        get() = prefs.getBoolean(KEY_V641CHUNKAUTOSPLIT641, false)
+        set(value) = prefs.edit().putBoolean(KEY_V641CHUNKAUTOSPLIT641, value).apply()
+
+    var v641cipherAutoEncrypt641: Boolean
+        get() = prefs.getBoolean(KEY_V641CIPHERAUTOENCRYPT641, false)
+        set(value) = prefs.edit().putBoolean(KEY_V641CIPHERAUTOENCRYPT641, value).apply()
+
+    var v641circleAutoClip641: Boolean
+        get() = prefs.getBoolean(KEY_V641CIRCLEAUTOCLIP641, false)
+        set(value) = prefs.edit().putBoolean(KEY_V641CIRCLEAUTOCLIP641, value).apply()
+
+    var v641clampAutoValue641: Boolean
+        get() = prefs.getBoolean(KEY_V641CLAMPAUTOVALUE641, false)
+        set(value) = prefs.edit().putBoolean(KEY_V641CLAMPAUTOVALUE641, value).apply()
+
+    var v641classAutoLoad641: Boolean
+        get() = prefs.getBoolean(KEY_V641CLASSAUTOLOAD641, false)
+        set(value) = prefs.edit().putBoolean(KEY_V641CLASSAUTOLOAD641, value).apply()
+
+    var v642cellAutoMerge642: Boolean
+        get() = prefs.getBoolean(KEY_V642CELLAUTOMERGE642, false)
+        set(value) = prefs.edit().putBoolean(KEY_V642CELLAUTOMERGE642, value).apply()
+
+    var v642centerAutoGravity642: Boolean
+        get() = prefs.getBoolean(KEY_V642CENTERAUTOGRAVITY642, false)
+        set(value) = prefs.edit().putBoolean(KEY_V642CENTERAUTOGRAVITY642, value).apply()
+
+    var v642chainAutoLink642: Boolean
+        get() = prefs.getBoolean(KEY_V642CHAINAUTOLINK642, false)
+        set(value) = prefs.edit().putBoolean(KEY_V642CHAINAUTOLINK642, value).apply()
+
+    var v642challengeAutoJoin642: Boolean
+        get() = prefs.getBoolean(KEY_V642CHALLENGEAUTOJOIN642, false)
+        set(value) = prefs.edit().putBoolean(KEY_V642CHALLENGEAUTOJOIN642, value).apply()
+
+    var v642changeAutoTrack642: Boolean
+        get() = prefs.getBoolean(KEY_V642CHANGEAUTOTRACK642, false)
+        set(value) = prefs.edit().putBoolean(KEY_V642CHANGEAUTOTRACK642, value).apply()
+
+    var v642channelAutoSwitch642: Int
+        get() = prefs.getInt(KEY_V642CHANNELAUTOSWITCH642, 0)
+        set(value) = prefs.edit().putInt(KEY_V642CHANNELAUTOSWITCH642, value).apply()
+
+    var v642chapterAutoMark642: Boolean
+        get() = prefs.getBoolean(KEY_V642CHAPTERAUTOMARK642, false)
+        set(value) = prefs.edit().putBoolean(KEY_V642CHAPTERAUTOMARK642, value).apply()
+
+    var v642chartAutoRender642: Boolean
+        get() = prefs.getBoolean(KEY_V642CHARTAUTORENDER642, false)
+        set(value) = prefs.edit().putBoolean(KEY_V642CHARTAUTORENDER642, value).apply()
+
+    var v642checkAutoVerify642: Boolean
+        get() = prefs.getBoolean(KEY_V642CHECKAUTOVERIFY642, false)
+        set(value) = prefs.edit().putBoolean(KEY_V642CHECKAUTOVERIFY642, value).apply()
+
+    var v642chipAutoTag642: Boolean
+        get() = prefs.getBoolean(KEY_V642CHIPAUTOTAG642, false)
+        set(value) = prefs.edit().putBoolean(KEY_V642CHIPAUTOTAG642, value).apply()
+
+    var v642chunkAutoSplit642: Boolean
+        get() = prefs.getBoolean(KEY_V642CHUNKAUTOSPLIT642, false)
+        set(value) = prefs.edit().putBoolean(KEY_V642CHUNKAUTOSPLIT642, value).apply()
+
+    var v642cipherAutoEncrypt642: Boolean
+        get() = prefs.getBoolean(KEY_V642CIPHERAUTOENCRYPT642, false)
+        set(value) = prefs.edit().putBoolean(KEY_V642CIPHERAUTOENCRYPT642, value).apply()
+
+    var v642circleAutoClip642: Boolean
+        get() = prefs.getBoolean(KEY_V642CIRCLEAUTOCLIP642, false)
+        set(value) = prefs.edit().putBoolean(KEY_V642CIRCLEAUTOCLIP642, value).apply()
+
+    var v642clampAutoValue642: Boolean
+        get() = prefs.getBoolean(KEY_V642CLAMPAUTOVALUE642, false)
+        set(value) = prefs.edit().putBoolean(KEY_V642CLAMPAUTOVALUE642, value).apply()
+
+    var v642classAutoLoad642: Boolean
+        get() = prefs.getBoolean(KEY_V642CLASSAUTOLOAD642, false)
+        set(value) = prefs.edit().putBoolean(KEY_V642CLASSAUTOLOAD642, value).apply()
+
+    var v643cellAutoMerge643: Boolean
+        get() = prefs.getBoolean(KEY_V643CELLAUTOMERGE643, false)
+        set(value) = prefs.edit().putBoolean(KEY_V643CELLAUTOMERGE643, value).apply()
+
+    var v643centerAutoGravity643: Boolean
+        get() = prefs.getBoolean(KEY_V643CENTERAUTOGRAVITY643, false)
+        set(value) = prefs.edit().putBoolean(KEY_V643CENTERAUTOGRAVITY643, value).apply()
+
+    var v643chainAutoLink643: Boolean
+        get() = prefs.getBoolean(KEY_V643CHAINAUTOLINK643, false)
+        set(value) = prefs.edit().putBoolean(KEY_V643CHAINAUTOLINK643, value).apply()
+
+    var v643challengeAutoJoin643: Boolean
+        get() = prefs.getBoolean(KEY_V643CHALLENGEAUTOJOIN643, false)
+        set(value) = prefs.edit().putBoolean(KEY_V643CHALLENGEAUTOJOIN643, value).apply()
+
+    var v643changeAutoTrack643: Boolean
+        get() = prefs.getBoolean(KEY_V643CHANGEAUTOTRACK643, false)
+        set(value) = prefs.edit().putBoolean(KEY_V643CHANGEAUTOTRACK643, value).apply()
+
+    var v643channelAutoSwitch643: Int
+        get() = prefs.getInt(KEY_V643CHANNELAUTOSWITCH643, 0)
+        set(value) = prefs.edit().putInt(KEY_V643CHANNELAUTOSWITCH643, value).apply()
+
+    var v643chapterAutoMark643: Boolean
+        get() = prefs.getBoolean(KEY_V643CHAPTERAUTOMARK643, false)
+        set(value) = prefs.edit().putBoolean(KEY_V643CHAPTERAUTOMARK643, value).apply()
+
+    var v643chartAutoRender643: Boolean
+        get() = prefs.getBoolean(KEY_V643CHARTAUTORENDER643, false)
+        set(value) = prefs.edit().putBoolean(KEY_V643CHARTAUTORENDER643, value).apply()
+
+    var v643checkAutoVerify643: Boolean
+        get() = prefs.getBoolean(KEY_V643CHECKAUTOVERIFY643, false)
+        set(value) = prefs.edit().putBoolean(KEY_V643CHECKAUTOVERIFY643, value).apply()
+
+    var v643chipAutoTag643: Boolean
+        get() = prefs.getBoolean(KEY_V643CHIPAUTOTAG643, false)
+        set(value) = prefs.edit().putBoolean(KEY_V643CHIPAUTOTAG643, value).apply()
+
+    var v643chunkAutoSplit643: Boolean
+        get() = prefs.getBoolean(KEY_V643CHUNKAUTOSPLIT643, false)
+        set(value) = prefs.edit().putBoolean(KEY_V643CHUNKAUTOSPLIT643, value).apply()
+
+    var v643cipherAutoEncrypt643: Boolean
+        get() = prefs.getBoolean(KEY_V643CIPHERAUTOENCRYPT643, false)
+        set(value) = prefs.edit().putBoolean(KEY_V643CIPHERAUTOENCRYPT643, value).apply()
+
+    var v643circleAutoClip643: Boolean
+        get() = prefs.getBoolean(KEY_V643CIRCLEAUTOCLIP643, false)
+        set(value) = prefs.edit().putBoolean(KEY_V643CIRCLEAUTOCLIP643, value).apply()
+
+    var v643clampAutoValue643: Boolean
+        get() = prefs.getBoolean(KEY_V643CLAMPAUTOVALUE643, false)
+        set(value) = prefs.edit().putBoolean(KEY_V643CLAMPAUTOVALUE643, value).apply()
+
+    var v643classAutoLoad643: Boolean
+        get() = prefs.getBoolean(KEY_V643CLASSAUTOLOAD643, false)
+        set(value) = prefs.edit().putBoolean(KEY_V643CLASSAUTOLOAD643, value).apply()
+
+    var v644cellAutoMerge644: Boolean
+        get() = prefs.getBoolean(KEY_V644CELLAUTOMERGE644, false)
+        set(value) = prefs.edit().putBoolean(KEY_V644CELLAUTOMERGE644, value).apply()
+
+    var v644centerAutoGravity644: Boolean
+        get() = prefs.getBoolean(KEY_V644CENTERAUTOGRAVITY644, false)
+        set(value) = prefs.edit().putBoolean(KEY_V644CENTERAUTOGRAVITY644, value).apply()
+
+    var v644chainAutoLink644: Boolean
+        get() = prefs.getBoolean(KEY_V644CHAINAUTOLINK644, false)
+        set(value) = prefs.edit().putBoolean(KEY_V644CHAINAUTOLINK644, value).apply()
+
+    var v644challengeAutoJoin644: Boolean
+        get() = prefs.getBoolean(KEY_V644CHALLENGEAUTOJOIN644, false)
+        set(value) = prefs.edit().putBoolean(KEY_V644CHALLENGEAUTOJOIN644, value).apply()
+
+    var v644changeAutoTrack644: Boolean
+        get() = prefs.getBoolean(KEY_V644CHANGEAUTOTRACK644, false)
+        set(value) = prefs.edit().putBoolean(KEY_V644CHANGEAUTOTRACK644, value).apply()
+
+    var v644channelAutoSwitch644: Int
+        get() = prefs.getInt(KEY_V644CHANNELAUTOSWITCH644, 0)
+        set(value) = prefs.edit().putInt(KEY_V644CHANNELAUTOSWITCH644, value).apply()
+
+    var v644chapterAutoMark644: Boolean
+        get() = prefs.getBoolean(KEY_V644CHAPTERAUTOMARK644, false)
+        set(value) = prefs.edit().putBoolean(KEY_V644CHAPTERAUTOMARK644, value).apply()
+
+    var v644chartAutoRender644: Boolean
+        get() = prefs.getBoolean(KEY_V644CHARTAUTORENDER644, false)
+        set(value) = prefs.edit().putBoolean(KEY_V644CHARTAUTORENDER644, value).apply()
+
+    var v644checkAutoVerify644: Boolean
+        get() = prefs.getBoolean(KEY_V644CHECKAUTOVERIFY644, false)
+        set(value) = prefs.edit().putBoolean(KEY_V644CHECKAUTOVERIFY644, value).apply()
+
+    var v644chipAutoTag644: Boolean
+        get() = prefs.getBoolean(KEY_V644CHIPAUTOTAG644, false)
+        set(value) = prefs.edit().putBoolean(KEY_V644CHIPAUTOTAG644, value).apply()
+
+    var v644chunkAutoSplit644: Boolean
+        get() = prefs.getBoolean(KEY_V644CHUNKAUTOSPLIT644, false)
+        set(value) = prefs.edit().putBoolean(KEY_V644CHUNKAUTOSPLIT644, value).apply()
+
+    var v644cipherAutoEncrypt644: Boolean
+        get() = prefs.getBoolean(KEY_V644CIPHERAUTOENCRYPT644, false)
+        set(value) = prefs.edit().putBoolean(KEY_V644CIPHERAUTOENCRYPT644, value).apply()
+
+    var v644circleAutoClip644: Boolean
+        get() = prefs.getBoolean(KEY_V644CIRCLEAUTOCLIP644, false)
+        set(value) = prefs.edit().putBoolean(KEY_V644CIRCLEAUTOCLIP644, value).apply()
+
+    var v644clampAutoValue644: Boolean
+        get() = prefs.getBoolean(KEY_V644CLAMPAUTOVALUE644, false)
+        set(value) = prefs.edit().putBoolean(KEY_V644CLAMPAUTOVALUE644, value).apply()
+
+    var v644classAutoLoad644: Boolean
+        get() = prefs.getBoolean(KEY_V644CLASSAUTOLOAD644, false)
+        set(value) = prefs.edit().putBoolean(KEY_V644CLASSAUTOLOAD644, value).apply()
+
+    var v645cellAutoMerge645: Boolean
+        get() = prefs.getBoolean(KEY_V645CELLAUTOMERGE645, false)
+        set(value) = prefs.edit().putBoolean(KEY_V645CELLAUTOMERGE645, value).apply()
+
+    var v645centerAutoGravity645: Boolean
+        get() = prefs.getBoolean(KEY_V645CENTERAUTOGRAVITY645, false)
+        set(value) = prefs.edit().putBoolean(KEY_V645CENTERAUTOGRAVITY645, value).apply()
+
+    var v645chainAutoLink645: Boolean
+        get() = prefs.getBoolean(KEY_V645CHAINAUTOLINK645, false)
+        set(value) = prefs.edit().putBoolean(KEY_V645CHAINAUTOLINK645, value).apply()
+
+    var v645challengeAutoJoin645: Boolean
+        get() = prefs.getBoolean(KEY_V645CHALLENGEAUTOJOIN645, false)
+        set(value) = prefs.edit().putBoolean(KEY_V645CHALLENGEAUTOJOIN645, value).apply()
+
+    var v645changeAutoTrack645: Boolean
+        get() = prefs.getBoolean(KEY_V645CHANGEAUTOTRACK645, false)
+        set(value) = prefs.edit().putBoolean(KEY_V645CHANGEAUTOTRACK645, value).apply()
+
+    var v645channelAutoSwitch645: Int
+        get() = prefs.getInt(KEY_V645CHANNELAUTOSWITCH645, 0)
+        set(value) = prefs.edit().putInt(KEY_V645CHANNELAUTOSWITCH645, value).apply()
+
+    var v645chapterAutoMark645: Boolean
+        get() = prefs.getBoolean(KEY_V645CHAPTERAUTOMARK645, false)
+        set(value) = prefs.edit().putBoolean(KEY_V645CHAPTERAUTOMARK645, value).apply()
+
+    var v645chartAutoRender645: Boolean
+        get() = prefs.getBoolean(KEY_V645CHARTAUTORENDER645, false)
+        set(value) = prefs.edit().putBoolean(KEY_V645CHARTAUTORENDER645, value).apply()
+
+    var v645checkAutoVerify645: Boolean
+        get() = prefs.getBoolean(KEY_V645CHECKAUTOVERIFY645, false)
+        set(value) = prefs.edit().putBoolean(KEY_V645CHECKAUTOVERIFY645, value).apply()
+
+    var v645chipAutoTag645: Boolean
+        get() = prefs.getBoolean(KEY_V645CHIPAUTOTAG645, false)
+        set(value) = prefs.edit().putBoolean(KEY_V645CHIPAUTOTAG645, value).apply()
+
+    var v645chunkAutoSplit645: Boolean
+        get() = prefs.getBoolean(KEY_V645CHUNKAUTOSPLIT645, false)
+        set(value) = prefs.edit().putBoolean(KEY_V645CHUNKAUTOSPLIT645, value).apply()
+
+    var v645cipherAutoEncrypt645: Boolean
+        get() = prefs.getBoolean(KEY_V645CIPHERAUTOENCRYPT645, false)
+        set(value) = prefs.edit().putBoolean(KEY_V645CIPHERAUTOENCRYPT645, value).apply()
+
+    var v645circleAutoClip645: Boolean
+        get() = prefs.getBoolean(KEY_V645CIRCLEAUTOCLIP645, false)
+        set(value) = prefs.edit().putBoolean(KEY_V645CIRCLEAUTOCLIP645, value).apply()
+
+    var v645clampAutoValue645: Boolean
+        get() = prefs.getBoolean(KEY_V645CLAMPAUTOVALUE645, false)
+        set(value) = prefs.edit().putBoolean(KEY_V645CLAMPAUTOVALUE645, value).apply()
+
+    var v645classAutoLoad645: Boolean
+        get() = prefs.getBoolean(KEY_V645CLASSAUTOLOAD645, false)
+        set(value) = prefs.edit().putBoolean(KEY_V645CLASSAUTOLOAD645, value).apply()
+
+    var v646cellAutoMerge646: Boolean
+        get() = prefs.getBoolean(KEY_V646CELLAUTOMERGE646, false)
+        set(value) = prefs.edit().putBoolean(KEY_V646CELLAUTOMERGE646, value).apply()
+
+    var v646centerAutoGravity646: Boolean
+        get() = prefs.getBoolean(KEY_V646CENTERAUTOGRAVITY646, false)
+        set(value) = prefs.edit().putBoolean(KEY_V646CENTERAUTOGRAVITY646, value).apply()
+
+    var v646chainAutoLink646: Boolean
+        get() = prefs.getBoolean(KEY_V646CHAINAUTOLINK646, false)
+        set(value) = prefs.edit().putBoolean(KEY_V646CHAINAUTOLINK646, value).apply()
+
+    var v646challengeAutoJoin646: Boolean
+        get() = prefs.getBoolean(KEY_V646CHALLENGEAUTOJOIN646, false)
+        set(value) = prefs.edit().putBoolean(KEY_V646CHALLENGEAUTOJOIN646, value).apply()
+
+    var v646changeAutoTrack646: Boolean
+        get() = prefs.getBoolean(KEY_V646CHANGEAUTOTRACK646, false)
+        set(value) = prefs.edit().putBoolean(KEY_V646CHANGEAUTOTRACK646, value).apply()
+
+    var v646channelAutoSwitch646: Int
+        get() = prefs.getInt(KEY_V646CHANNELAUTOSWITCH646, 0)
+        set(value) = prefs.edit().putInt(KEY_V646CHANNELAUTOSWITCH646, value).apply()
+
+    var v646chapterAutoMark646: Boolean
+        get() = prefs.getBoolean(KEY_V646CHAPTERAUTOMARK646, false)
+        set(value) = prefs.edit().putBoolean(KEY_V646CHAPTERAUTOMARK646, value).apply()
+
+    var v646chartAutoRender646: Boolean
+        get() = prefs.getBoolean(KEY_V646CHARTAUTORENDER646, false)
+        set(value) = prefs.edit().putBoolean(KEY_V646CHARTAUTORENDER646, value).apply()
+
+    var v646checkAutoVerify646: Boolean
+        get() = prefs.getBoolean(KEY_V646CHECKAUTOVERIFY646, false)
+        set(value) = prefs.edit().putBoolean(KEY_V646CHECKAUTOVERIFY646, value).apply()
+
+    var v646chipAutoTag646: Boolean
+        get() = prefs.getBoolean(KEY_V646CHIPAUTOTAG646, false)
+        set(value) = prefs.edit().putBoolean(KEY_V646CHIPAUTOTAG646, value).apply()
+
+    var v646chunkAutoSplit646: Boolean
+        get() = prefs.getBoolean(KEY_V646CHUNKAUTOSPLIT646, false)
+        set(value) = prefs.edit().putBoolean(KEY_V646CHUNKAUTOSPLIT646, value).apply()
+
+    var v646cipherAutoEncrypt646: Boolean
+        get() = prefs.getBoolean(KEY_V646CIPHERAUTOENCRYPT646, false)
+        set(value) = prefs.edit().putBoolean(KEY_V646CIPHERAUTOENCRYPT646, value).apply()
+
+    var v646circleAutoClip646: Boolean
+        get() = prefs.getBoolean(KEY_V646CIRCLEAUTOCLIP646, false)
+        set(value) = prefs.edit().putBoolean(KEY_V646CIRCLEAUTOCLIP646, value).apply()
+
+    var v646clampAutoValue646: Boolean
+        get() = prefs.getBoolean(KEY_V646CLAMPAUTOVALUE646, false)
+        set(value) = prefs.edit().putBoolean(KEY_V646CLAMPAUTOVALUE646, value).apply()
+
+    var v646classAutoLoad646: Boolean
+        get() = prefs.getBoolean(KEY_V646CLASSAUTOLOAD646, false)
+        set(value) = prefs.edit().putBoolean(KEY_V646CLASSAUTOLOAD646, value).apply()
+
+    var v647cellAutoMerge647: Boolean
+        get() = prefs.getBoolean(KEY_V647CELLAUTOMERGE647, false)
+        set(value) = prefs.edit().putBoolean(KEY_V647CELLAUTOMERGE647, value).apply()
+
+    var v647centerAutoGravity647: Boolean
+        get() = prefs.getBoolean(KEY_V647CENTERAUTOGRAVITY647, false)
+        set(value) = prefs.edit().putBoolean(KEY_V647CENTERAUTOGRAVITY647, value).apply()
+
+    var v647chainAutoLink647: Boolean
+        get() = prefs.getBoolean(KEY_V647CHAINAUTOLINK647, false)
+        set(value) = prefs.edit().putBoolean(KEY_V647CHAINAUTOLINK647, value).apply()
+
+    var v647challengeAutoJoin647: Boolean
+        get() = prefs.getBoolean(KEY_V647CHALLENGEAUTOJOIN647, false)
+        set(value) = prefs.edit().putBoolean(KEY_V647CHALLENGEAUTOJOIN647, value).apply()
+
+    var v647changeAutoTrack647: Boolean
+        get() = prefs.getBoolean(KEY_V647CHANGEAUTOTRACK647, false)
+        set(value) = prefs.edit().putBoolean(KEY_V647CHANGEAUTOTRACK647, value).apply()
+
+    var v647channelAutoSwitch647: Int
+        get() = prefs.getInt(KEY_V647CHANNELAUTOSWITCH647, 0)
+        set(value) = prefs.edit().putInt(KEY_V647CHANNELAUTOSWITCH647, value).apply()
+
+    var v647chapterAutoMark647: Boolean
+        get() = prefs.getBoolean(KEY_V647CHAPTERAUTOMARK647, false)
+        set(value) = prefs.edit().putBoolean(KEY_V647CHAPTERAUTOMARK647, value).apply()
+
+    var v647chartAutoRender647: Boolean
+        get() = prefs.getBoolean(KEY_V647CHARTAUTORENDER647, false)
+        set(value) = prefs.edit().putBoolean(KEY_V647CHARTAUTORENDER647, value).apply()
+
+    var v647checkAutoVerify647: Boolean
+        get() = prefs.getBoolean(KEY_V647CHECKAUTOVERIFY647, false)
+        set(value) = prefs.edit().putBoolean(KEY_V647CHECKAUTOVERIFY647, value).apply()
+
+    var v647chipAutoTag647: Boolean
+        get() = prefs.getBoolean(KEY_V647CHIPAUTOTAG647, false)
+        set(value) = prefs.edit().putBoolean(KEY_V647CHIPAUTOTAG647, value).apply()
+
+    var v647chunkAutoSplit647: Boolean
+        get() = prefs.getBoolean(KEY_V647CHUNKAUTOSPLIT647, false)
+        set(value) = prefs.edit().putBoolean(KEY_V647CHUNKAUTOSPLIT647, value).apply()
+
+    var v647cipherAutoEncrypt647: Boolean
+        get() = prefs.getBoolean(KEY_V647CIPHERAUTOENCRYPT647, false)
+        set(value) = prefs.edit().putBoolean(KEY_V647CIPHERAUTOENCRYPT647, value).apply()
+
+    var v647circleAutoClip647: Boolean
+        get() = prefs.getBoolean(KEY_V647CIRCLEAUTOCLIP647, false)
+        set(value) = prefs.edit().putBoolean(KEY_V647CIRCLEAUTOCLIP647, value).apply()
+
+    var v647clampAutoValue647: Boolean
+        get() = prefs.getBoolean(KEY_V647CLAMPAUTOVALUE647, false)
+        set(value) = prefs.edit().putBoolean(KEY_V647CLAMPAUTOVALUE647, value).apply()
+
+    var v647classAutoLoad647: Boolean
+        get() = prefs.getBoolean(KEY_V647CLASSAUTOLOAD647, false)
+        set(value) = prefs.edit().putBoolean(KEY_V647CLASSAUTOLOAD647, value).apply()
+
+    var v648cellAutoMerge648: Boolean
+        get() = prefs.getBoolean(KEY_V648CELLAUTOMERGE648, false)
+        set(value) = prefs.edit().putBoolean(KEY_V648CELLAUTOMERGE648, value).apply()
+
+    var v648centerAutoGravity648: Boolean
+        get() = prefs.getBoolean(KEY_V648CENTERAUTOGRAVITY648, false)
+        set(value) = prefs.edit().putBoolean(KEY_V648CENTERAUTOGRAVITY648, value).apply()
+
+    var v648chainAutoLink648: Boolean
+        get() = prefs.getBoolean(KEY_V648CHAINAUTOLINK648, false)
+        set(value) = prefs.edit().putBoolean(KEY_V648CHAINAUTOLINK648, value).apply()
+
+    var v648challengeAutoJoin648: Boolean
+        get() = prefs.getBoolean(KEY_V648CHALLENGEAUTOJOIN648, false)
+        set(value) = prefs.edit().putBoolean(KEY_V648CHALLENGEAUTOJOIN648, value).apply()
+
+    var v648changeAutoTrack648: Boolean
+        get() = prefs.getBoolean(KEY_V648CHANGEAUTOTRACK648, false)
+        set(value) = prefs.edit().putBoolean(KEY_V648CHANGEAUTOTRACK648, value).apply()
+
+    var v648channelAutoSwitch648: Int
+        get() = prefs.getInt(KEY_V648CHANNELAUTOSWITCH648, 0)
+        set(value) = prefs.edit().putInt(KEY_V648CHANNELAUTOSWITCH648, value).apply()
+
+    var v648chapterAutoMark648: Boolean
+        get() = prefs.getBoolean(KEY_V648CHAPTERAUTOMARK648, false)
+        set(value) = prefs.edit().putBoolean(KEY_V648CHAPTERAUTOMARK648, value).apply()
+
+    var v648chartAutoRender648: Boolean
+        get() = prefs.getBoolean(KEY_V648CHARTAUTORENDER648, false)
+        set(value) = prefs.edit().putBoolean(KEY_V648CHARTAUTORENDER648, value).apply()
+
+    var v648checkAutoVerify648: Boolean
+        get() = prefs.getBoolean(KEY_V648CHECKAUTOVERIFY648, false)
+        set(value) = prefs.edit().putBoolean(KEY_V648CHECKAUTOVERIFY648, value).apply()
+
+    var v648chipAutoTag648: Boolean
+        get() = prefs.getBoolean(KEY_V648CHIPAUTOTAG648, false)
+        set(value) = prefs.edit().putBoolean(KEY_V648CHIPAUTOTAG648, value).apply()
+
+    var v648chunkAutoSplit648: Boolean
+        get() = prefs.getBoolean(KEY_V648CHUNKAUTOSPLIT648, false)
+        set(value) = prefs.edit().putBoolean(KEY_V648CHUNKAUTOSPLIT648, value).apply()
+
+    var v648cipherAutoEncrypt648: Boolean
+        get() = prefs.getBoolean(KEY_V648CIPHERAUTOENCRYPT648, false)
+        set(value) = prefs.edit().putBoolean(KEY_V648CIPHERAUTOENCRYPT648, value).apply()
+
+    var v648circleAutoClip648: Boolean
+        get() = prefs.getBoolean(KEY_V648CIRCLEAUTOCLIP648, false)
+        set(value) = prefs.edit().putBoolean(KEY_V648CIRCLEAUTOCLIP648, value).apply()
+
+    var v648clampAutoValue648: Boolean
+        get() = prefs.getBoolean(KEY_V648CLAMPAUTOVALUE648, false)
+        set(value) = prefs.edit().putBoolean(KEY_V648CLAMPAUTOVALUE648, value).apply()
+
+    var v648classAutoLoad648: Boolean
+        get() = prefs.getBoolean(KEY_V648CLASSAUTOLOAD648, false)
+        set(value) = prefs.edit().putBoolean(KEY_V648CLASSAUTOLOAD648, value).apply()
+
+    var v649cellAutoMerge649: Boolean
+        get() = prefs.getBoolean(KEY_V649CELLAUTOMERGE649, false)
+        set(value) = prefs.edit().putBoolean(KEY_V649CELLAUTOMERGE649, value).apply()
+
+    var v649centerAutoGravity649: Boolean
+        get() = prefs.getBoolean(KEY_V649CENTERAUTOGRAVITY649, false)
+        set(value) = prefs.edit().putBoolean(KEY_V649CENTERAUTOGRAVITY649, value).apply()
+
+    var v649chainAutoLink649: Boolean
+        get() = prefs.getBoolean(KEY_V649CHAINAUTOLINK649, false)
+        set(value) = prefs.edit().putBoolean(KEY_V649CHAINAUTOLINK649, value).apply()
+
+    var v649challengeAutoJoin649: Boolean
+        get() = prefs.getBoolean(KEY_V649CHALLENGEAUTOJOIN649, false)
+        set(value) = prefs.edit().putBoolean(KEY_V649CHALLENGEAUTOJOIN649, value).apply()
+
+    var v649changeAutoTrack649: Boolean
+        get() = prefs.getBoolean(KEY_V649CHANGEAUTOTRACK649, false)
+        set(value) = prefs.edit().putBoolean(KEY_V649CHANGEAUTOTRACK649, value).apply()
+
+    var v649channelAutoSwitch649: Int
+        get() = prefs.getInt(KEY_V649CHANNELAUTOSWITCH649, 0)
+        set(value) = prefs.edit().putInt(KEY_V649CHANNELAUTOSWITCH649, value).apply()
+
+    var v649chapterAutoMark649: Boolean
+        get() = prefs.getBoolean(KEY_V649CHAPTERAUTOMARK649, false)
+        set(value) = prefs.edit().putBoolean(KEY_V649CHAPTERAUTOMARK649, value).apply()
+
+    var v649chartAutoRender649: Boolean
+        get() = prefs.getBoolean(KEY_V649CHARTAUTORENDER649, false)
+        set(value) = prefs.edit().putBoolean(KEY_V649CHARTAUTORENDER649, value).apply()
+
+    var v649checkAutoVerify649: Boolean
+        get() = prefs.getBoolean(KEY_V649CHECKAUTOVERIFY649, false)
+        set(value) = prefs.edit().putBoolean(KEY_V649CHECKAUTOVERIFY649, value).apply()
+
+    var v649chipAutoTag649: Boolean
+        get() = prefs.getBoolean(KEY_V649CHIPAUTOTAG649, false)
+        set(value) = prefs.edit().putBoolean(KEY_V649CHIPAUTOTAG649, value).apply()
+
+    var v649chunkAutoSplit649: Boolean
+        get() = prefs.getBoolean(KEY_V649CHUNKAUTOSPLIT649, false)
+        set(value) = prefs.edit().putBoolean(KEY_V649CHUNKAUTOSPLIT649, value).apply()
+
+    var v649cipherAutoEncrypt649: Boolean
+        get() = prefs.getBoolean(KEY_V649CIPHERAUTOENCRYPT649, false)
+        set(value) = prefs.edit().putBoolean(KEY_V649CIPHERAUTOENCRYPT649, value).apply()
+
+    var v649circleAutoClip649: Boolean
+        get() = prefs.getBoolean(KEY_V649CIRCLEAUTOCLIP649, false)
+        set(value) = prefs.edit().putBoolean(KEY_V649CIRCLEAUTOCLIP649, value).apply()
+
+    var v649clampAutoValue649: Boolean
+        get() = prefs.getBoolean(KEY_V649CLAMPAUTOVALUE649, false)
+        set(value) = prefs.edit().putBoolean(KEY_V649CLAMPAUTOVALUE649, value).apply()
+
+    var v649classAutoLoad649: Boolean
+        get() = prefs.getBoolean(KEY_V649CLASSAUTOLOAD649, false)
+        set(value) = prefs.edit().putBoolean(KEY_V649CLASSAUTOLOAD649, value).apply()
+
+    var v650cellAutoMerge650: Boolean
+        get() = prefs.getBoolean(KEY_V650CELLAUTOMERGE650, false)
+        set(value) = prefs.edit().putBoolean(KEY_V650CELLAUTOMERGE650, value).apply()
+
+    var v650centerAutoGravity650: Boolean
+        get() = prefs.getBoolean(KEY_V650CENTERAUTOGRAVITY650, false)
+        set(value) = prefs.edit().putBoolean(KEY_V650CENTERAUTOGRAVITY650, value).apply()
+
+    var v650chainAutoLink650: Boolean
+        get() = prefs.getBoolean(KEY_V650CHAINAUTOLINK650, false)
+        set(value) = prefs.edit().putBoolean(KEY_V650CHAINAUTOLINK650, value).apply()
+
+    var v650challengeAutoJoin650: Boolean
+        get() = prefs.getBoolean(KEY_V650CHALLENGEAUTOJOIN650, false)
+        set(value) = prefs.edit().putBoolean(KEY_V650CHALLENGEAUTOJOIN650, value).apply()
+
+    var v650changeAutoTrack650: Boolean
+        get() = prefs.getBoolean(KEY_V650CHANGEAUTOTRACK650, false)
+        set(value) = prefs.edit().putBoolean(KEY_V650CHANGEAUTOTRACK650, value).apply()
+
+    var v650channelAutoSwitch650: Int
+        get() = prefs.getInt(KEY_V650CHANNELAUTOSWITCH650, 0)
+        set(value) = prefs.edit().putInt(KEY_V650CHANNELAUTOSWITCH650, value).apply()
+
+    var v650chapterAutoMark650: Boolean
+        get() = prefs.getBoolean(KEY_V650CHAPTERAUTOMARK650, false)
+        set(value) = prefs.edit().putBoolean(KEY_V650CHAPTERAUTOMARK650, value).apply()
+
+    var v650chartAutoRender650: Boolean
+        get() = prefs.getBoolean(KEY_V650CHARTAUTORENDER650, false)
+        set(value) = prefs.edit().putBoolean(KEY_V650CHARTAUTORENDER650, value).apply()
+
+    var v650checkAutoVerify650: Boolean
+        get() = prefs.getBoolean(KEY_V650CHECKAUTOVERIFY650, false)
+        set(value) = prefs.edit().putBoolean(KEY_V650CHECKAUTOVERIFY650, value).apply()
+
+    var v650chipAutoTag650: Boolean
+        get() = prefs.getBoolean(KEY_V650CHIPAUTOTAG650, false)
+        set(value) = prefs.edit().putBoolean(KEY_V650CHIPAUTOTAG650, value).apply()
+
+    var v650chunkAutoSplit650: Boolean
+        get() = prefs.getBoolean(KEY_V650CHUNKAUTOSPLIT650, false)
+        set(value) = prefs.edit().putBoolean(KEY_V650CHUNKAUTOSPLIT650, value).apply()
+
+    var v650cipherAutoEncrypt650: Boolean
+        get() = prefs.getBoolean(KEY_V650CIPHERAUTOENCRYPT650, false)
+        set(value) = prefs.edit().putBoolean(KEY_V650CIPHERAUTOENCRYPT650, value).apply()
+
+    var v650circleAutoClip650: Boolean
+        get() = prefs.getBoolean(KEY_V650CIRCLEAUTOCLIP650, false)
+        set(value) = prefs.edit().putBoolean(KEY_V650CIRCLEAUTOCLIP650, value).apply()
+
+    var v650clampAutoValue650: Boolean
+        get() = prefs.getBoolean(KEY_V650CLAMPAUTOVALUE650, false)
+        set(value) = prefs.edit().putBoolean(KEY_V650CLAMPAUTOVALUE650, value).apply()
+
+    var v650classAutoLoad650: Boolean
+        get() = prefs.getBoolean(KEY_V650CLASSAUTOLOAD650, false)
+        set(value) = prefs.edit().putBoolean(KEY_V650CLASSAUTOLOAD650, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -57430,5 +58030,155 @@ class AppPrefs(context: Context) {
         const val KEY_V640CARETAUTOBLINK640 = "v640caretAutoBlink640" // v640 Caret Auto Blink640
         const val KEY_V640CASEAUTOCONVERT640 = "v640caseAutoConvert640" // v640 Case Auto Convert640
         const val KEY_V640CATEGORYAUTOSORT640 = "v640categoryAutoSort640" // v640 Category Auto Sort640
+        const val KEY_V641CELLAUTOMERGE641 = "v641cellAutoMerge641" // v641 Cell Auto Merge641
+        const val KEY_V641CENTERAUTOGRAVITY641 = "v641centerAutoGravity641" // v641 Center Auto Gravity641
+        const val KEY_V641CHAINAUTOLINK641 = "v641chainAutoLink641" // v641 Chain Auto Link641
+        const val KEY_V641CHALLENGEAUTOJOIN641 = "v641challengeAutoJoin641" // v641 Challenge Auto Join641
+        const val KEY_V641CHANGEAUTOTRACK641 = "v641changeAutoTrack641" // v641 Change Auto Track641
+        const val KEY_V641CHANNELAUTOSWITCH641 = "v641channelAutoSwitch641" // v641 Channel Auto Switch641
+        const val KEY_V641CHAPTERAUTOMARK641 = "v641chapterAutoMark641" // v641 Chapter Auto Mark641
+        const val KEY_V641CHARTAUTORENDER641 = "v641chartAutoRender641" // v641 Chart Auto Render641
+        const val KEY_V641CHECKAUTOVERIFY641 = "v641checkAutoVerify641" // v641 Check Auto Verify641
+        const val KEY_V641CHIPAUTOTAG641 = "v641chipAutoTag641" // v641 Chip Auto Tag641
+        const val KEY_V641CHUNKAUTOSPLIT641 = "v641chunkAutoSplit641" // v641 Chunk Auto Split641
+        const val KEY_V641CIPHERAUTOENCRYPT641 = "v641cipherAutoEncrypt641" // v641 Cipher Auto Encrypt641
+        const val KEY_V641CIRCLEAUTOCLIP641 = "v641circleAutoClip641" // v641 Circle Auto Clip641
+        const val KEY_V641CLAMPAUTOVALUE641 = "v641clampAutoValue641" // v641 Clamp Auto Value641
+        const val KEY_V641CLASSAUTOLOAD641 = "v641classAutoLoad641" // v641 Class Auto Load641
+        const val KEY_V642CELLAUTOMERGE642 = "v642cellAutoMerge642" // v642 Cell Auto Merge642
+        const val KEY_V642CENTERAUTOGRAVITY642 = "v642centerAutoGravity642" // v642 Center Auto Gravity642
+        const val KEY_V642CHAINAUTOLINK642 = "v642chainAutoLink642" // v642 Chain Auto Link642
+        const val KEY_V642CHALLENGEAUTOJOIN642 = "v642challengeAutoJoin642" // v642 Challenge Auto Join642
+        const val KEY_V642CHANGEAUTOTRACK642 = "v642changeAutoTrack642" // v642 Change Auto Track642
+        const val KEY_V642CHANNELAUTOSWITCH642 = "v642channelAutoSwitch642" // v642 Channel Auto Switch642
+        const val KEY_V642CHAPTERAUTOMARK642 = "v642chapterAutoMark642" // v642 Chapter Auto Mark642
+        const val KEY_V642CHARTAUTORENDER642 = "v642chartAutoRender642" // v642 Chart Auto Render642
+        const val KEY_V642CHECKAUTOVERIFY642 = "v642checkAutoVerify642" // v642 Check Auto Verify642
+        const val KEY_V642CHIPAUTOTAG642 = "v642chipAutoTag642" // v642 Chip Auto Tag642
+        const val KEY_V642CHUNKAUTOSPLIT642 = "v642chunkAutoSplit642" // v642 Chunk Auto Split642
+        const val KEY_V642CIPHERAUTOENCRYPT642 = "v642cipherAutoEncrypt642" // v642 Cipher Auto Encrypt642
+        const val KEY_V642CIRCLEAUTOCLIP642 = "v642circleAutoClip642" // v642 Circle Auto Clip642
+        const val KEY_V642CLAMPAUTOVALUE642 = "v642clampAutoValue642" // v642 Clamp Auto Value642
+        const val KEY_V642CLASSAUTOLOAD642 = "v642classAutoLoad642" // v642 Class Auto Load642
+        const val KEY_V643CELLAUTOMERGE643 = "v643cellAutoMerge643" // v643 Cell Auto Merge643
+        const val KEY_V643CENTERAUTOGRAVITY643 = "v643centerAutoGravity643" // v643 Center Auto Gravity643
+        const val KEY_V643CHAINAUTOLINK643 = "v643chainAutoLink643" // v643 Chain Auto Link643
+        const val KEY_V643CHALLENGEAUTOJOIN643 = "v643challengeAutoJoin643" // v643 Challenge Auto Join643
+        const val KEY_V643CHANGEAUTOTRACK643 = "v643changeAutoTrack643" // v643 Change Auto Track643
+        const val KEY_V643CHANNELAUTOSWITCH643 = "v643channelAutoSwitch643" // v643 Channel Auto Switch643
+        const val KEY_V643CHAPTERAUTOMARK643 = "v643chapterAutoMark643" // v643 Chapter Auto Mark643
+        const val KEY_V643CHARTAUTORENDER643 = "v643chartAutoRender643" // v643 Chart Auto Render643
+        const val KEY_V643CHECKAUTOVERIFY643 = "v643checkAutoVerify643" // v643 Check Auto Verify643
+        const val KEY_V643CHIPAUTOTAG643 = "v643chipAutoTag643" // v643 Chip Auto Tag643
+        const val KEY_V643CHUNKAUTOSPLIT643 = "v643chunkAutoSplit643" // v643 Chunk Auto Split643
+        const val KEY_V643CIPHERAUTOENCRYPT643 = "v643cipherAutoEncrypt643" // v643 Cipher Auto Encrypt643
+        const val KEY_V643CIRCLEAUTOCLIP643 = "v643circleAutoClip643" // v643 Circle Auto Clip643
+        const val KEY_V643CLAMPAUTOVALUE643 = "v643clampAutoValue643" // v643 Clamp Auto Value643
+        const val KEY_V643CLASSAUTOLOAD643 = "v643classAutoLoad643" // v643 Class Auto Load643
+        const val KEY_V644CELLAUTOMERGE644 = "v644cellAutoMerge644" // v644 Cell Auto Merge644
+        const val KEY_V644CENTERAUTOGRAVITY644 = "v644centerAutoGravity644" // v644 Center Auto Gravity644
+        const val KEY_V644CHAINAUTOLINK644 = "v644chainAutoLink644" // v644 Chain Auto Link644
+        const val KEY_V644CHALLENGEAUTOJOIN644 = "v644challengeAutoJoin644" // v644 Challenge Auto Join644
+        const val KEY_V644CHANGEAUTOTRACK644 = "v644changeAutoTrack644" // v644 Change Auto Track644
+        const val KEY_V644CHANNELAUTOSWITCH644 = "v644channelAutoSwitch644" // v644 Channel Auto Switch644
+        const val KEY_V644CHAPTERAUTOMARK644 = "v644chapterAutoMark644" // v644 Chapter Auto Mark644
+        const val KEY_V644CHARTAUTORENDER644 = "v644chartAutoRender644" // v644 Chart Auto Render644
+        const val KEY_V644CHECKAUTOVERIFY644 = "v644checkAutoVerify644" // v644 Check Auto Verify644
+        const val KEY_V644CHIPAUTOTAG644 = "v644chipAutoTag644" // v644 Chip Auto Tag644
+        const val KEY_V644CHUNKAUTOSPLIT644 = "v644chunkAutoSplit644" // v644 Chunk Auto Split644
+        const val KEY_V644CIPHERAUTOENCRYPT644 = "v644cipherAutoEncrypt644" // v644 Cipher Auto Encrypt644
+        const val KEY_V644CIRCLEAUTOCLIP644 = "v644circleAutoClip644" // v644 Circle Auto Clip644
+        const val KEY_V644CLAMPAUTOVALUE644 = "v644clampAutoValue644" // v644 Clamp Auto Value644
+        const val KEY_V644CLASSAUTOLOAD644 = "v644classAutoLoad644" // v644 Class Auto Load644
+        const val KEY_V645CELLAUTOMERGE645 = "v645cellAutoMerge645" // v645 Cell Auto Merge645
+        const val KEY_V645CENTERAUTOGRAVITY645 = "v645centerAutoGravity645" // v645 Center Auto Gravity645
+        const val KEY_V645CHAINAUTOLINK645 = "v645chainAutoLink645" // v645 Chain Auto Link645
+        const val KEY_V645CHALLENGEAUTOJOIN645 = "v645challengeAutoJoin645" // v645 Challenge Auto Join645
+        const val KEY_V645CHANGEAUTOTRACK645 = "v645changeAutoTrack645" // v645 Change Auto Track645
+        const val KEY_V645CHANNELAUTOSWITCH645 = "v645channelAutoSwitch645" // v645 Channel Auto Switch645
+        const val KEY_V645CHAPTERAUTOMARK645 = "v645chapterAutoMark645" // v645 Chapter Auto Mark645
+        const val KEY_V645CHARTAUTORENDER645 = "v645chartAutoRender645" // v645 Chart Auto Render645
+        const val KEY_V645CHECKAUTOVERIFY645 = "v645checkAutoVerify645" // v645 Check Auto Verify645
+        const val KEY_V645CHIPAUTOTAG645 = "v645chipAutoTag645" // v645 Chip Auto Tag645
+        const val KEY_V645CHUNKAUTOSPLIT645 = "v645chunkAutoSplit645" // v645 Chunk Auto Split645
+        const val KEY_V645CIPHERAUTOENCRYPT645 = "v645cipherAutoEncrypt645" // v645 Cipher Auto Encrypt645
+        const val KEY_V645CIRCLEAUTOCLIP645 = "v645circleAutoClip645" // v645 Circle Auto Clip645
+        const val KEY_V645CLAMPAUTOVALUE645 = "v645clampAutoValue645" // v645 Clamp Auto Value645
+        const val KEY_V645CLASSAUTOLOAD645 = "v645classAutoLoad645" // v645 Class Auto Load645
+        const val KEY_V646CELLAUTOMERGE646 = "v646cellAutoMerge646" // v646 Cell Auto Merge646
+        const val KEY_V646CENTERAUTOGRAVITY646 = "v646centerAutoGravity646" // v646 Center Auto Gravity646
+        const val KEY_V646CHAINAUTOLINK646 = "v646chainAutoLink646" // v646 Chain Auto Link646
+        const val KEY_V646CHALLENGEAUTOJOIN646 = "v646challengeAutoJoin646" // v646 Challenge Auto Join646
+        const val KEY_V646CHANGEAUTOTRACK646 = "v646changeAutoTrack646" // v646 Change Auto Track646
+        const val KEY_V646CHANNELAUTOSWITCH646 = "v646channelAutoSwitch646" // v646 Channel Auto Switch646
+        const val KEY_V646CHAPTERAUTOMARK646 = "v646chapterAutoMark646" // v646 Chapter Auto Mark646
+        const val KEY_V646CHARTAUTORENDER646 = "v646chartAutoRender646" // v646 Chart Auto Render646
+        const val KEY_V646CHECKAUTOVERIFY646 = "v646checkAutoVerify646" // v646 Check Auto Verify646
+        const val KEY_V646CHIPAUTOTAG646 = "v646chipAutoTag646" // v646 Chip Auto Tag646
+        const val KEY_V646CHUNKAUTOSPLIT646 = "v646chunkAutoSplit646" // v646 Chunk Auto Split646
+        const val KEY_V646CIPHERAUTOENCRYPT646 = "v646cipherAutoEncrypt646" // v646 Cipher Auto Encrypt646
+        const val KEY_V646CIRCLEAUTOCLIP646 = "v646circleAutoClip646" // v646 Circle Auto Clip646
+        const val KEY_V646CLAMPAUTOVALUE646 = "v646clampAutoValue646" // v646 Clamp Auto Value646
+        const val KEY_V646CLASSAUTOLOAD646 = "v646classAutoLoad646" // v646 Class Auto Load646
+        const val KEY_V647CELLAUTOMERGE647 = "v647cellAutoMerge647" // v647 Cell Auto Merge647
+        const val KEY_V647CENTERAUTOGRAVITY647 = "v647centerAutoGravity647" // v647 Center Auto Gravity647
+        const val KEY_V647CHAINAUTOLINK647 = "v647chainAutoLink647" // v647 Chain Auto Link647
+        const val KEY_V647CHALLENGEAUTOJOIN647 = "v647challengeAutoJoin647" // v647 Challenge Auto Join647
+        const val KEY_V647CHANGEAUTOTRACK647 = "v647changeAutoTrack647" // v647 Change Auto Track647
+        const val KEY_V647CHANNELAUTOSWITCH647 = "v647channelAutoSwitch647" // v647 Channel Auto Switch647
+        const val KEY_V647CHAPTERAUTOMARK647 = "v647chapterAutoMark647" // v647 Chapter Auto Mark647
+        const val KEY_V647CHARTAUTORENDER647 = "v647chartAutoRender647" // v647 Chart Auto Render647
+        const val KEY_V647CHECKAUTOVERIFY647 = "v647checkAutoVerify647" // v647 Check Auto Verify647
+        const val KEY_V647CHIPAUTOTAG647 = "v647chipAutoTag647" // v647 Chip Auto Tag647
+        const val KEY_V647CHUNKAUTOSPLIT647 = "v647chunkAutoSplit647" // v647 Chunk Auto Split647
+        const val KEY_V647CIPHERAUTOENCRYPT647 = "v647cipherAutoEncrypt647" // v647 Cipher Auto Encrypt647
+        const val KEY_V647CIRCLEAUTOCLIP647 = "v647circleAutoClip647" // v647 Circle Auto Clip647
+        const val KEY_V647CLAMPAUTOVALUE647 = "v647clampAutoValue647" // v647 Clamp Auto Value647
+        const val KEY_V647CLASSAUTOLOAD647 = "v647classAutoLoad647" // v647 Class Auto Load647
+        const val KEY_V648CELLAUTOMERGE648 = "v648cellAutoMerge648" // v648 Cell Auto Merge648
+        const val KEY_V648CENTERAUTOGRAVITY648 = "v648centerAutoGravity648" // v648 Center Auto Gravity648
+        const val KEY_V648CHAINAUTOLINK648 = "v648chainAutoLink648" // v648 Chain Auto Link648
+        const val KEY_V648CHALLENGEAUTOJOIN648 = "v648challengeAutoJoin648" // v648 Challenge Auto Join648
+        const val KEY_V648CHANGEAUTOTRACK648 = "v648changeAutoTrack648" // v648 Change Auto Track648
+        const val KEY_V648CHANNELAUTOSWITCH648 = "v648channelAutoSwitch648" // v648 Channel Auto Switch648
+        const val KEY_V648CHAPTERAUTOMARK648 = "v648chapterAutoMark648" // v648 Chapter Auto Mark648
+        const val KEY_V648CHARTAUTORENDER648 = "v648chartAutoRender648" // v648 Chart Auto Render648
+        const val KEY_V648CHECKAUTOVERIFY648 = "v648checkAutoVerify648" // v648 Check Auto Verify648
+        const val KEY_V648CHIPAUTOTAG648 = "v648chipAutoTag648" // v648 Chip Auto Tag648
+        const val KEY_V648CHUNKAUTOSPLIT648 = "v648chunkAutoSplit648" // v648 Chunk Auto Split648
+        const val KEY_V648CIPHERAUTOENCRYPT648 = "v648cipherAutoEncrypt648" // v648 Cipher Auto Encrypt648
+        const val KEY_V648CIRCLEAUTOCLIP648 = "v648circleAutoClip648" // v648 Circle Auto Clip648
+        const val KEY_V648CLAMPAUTOVALUE648 = "v648clampAutoValue648" // v648 Clamp Auto Value648
+        const val KEY_V648CLASSAUTOLOAD648 = "v648classAutoLoad648" // v648 Class Auto Load648
+        const val KEY_V649CELLAUTOMERGE649 = "v649cellAutoMerge649" // v649 Cell Auto Merge649
+        const val KEY_V649CENTERAUTOGRAVITY649 = "v649centerAutoGravity649" // v649 Center Auto Gravity649
+        const val KEY_V649CHAINAUTOLINK649 = "v649chainAutoLink649" // v649 Chain Auto Link649
+        const val KEY_V649CHALLENGEAUTOJOIN649 = "v649challengeAutoJoin649" // v649 Challenge Auto Join649
+        const val KEY_V649CHANGEAUTOTRACK649 = "v649changeAutoTrack649" // v649 Change Auto Track649
+        const val KEY_V649CHANNELAUTOSWITCH649 = "v649channelAutoSwitch649" // v649 Channel Auto Switch649
+        const val KEY_V649CHAPTERAUTOMARK649 = "v649chapterAutoMark649" // v649 Chapter Auto Mark649
+        const val KEY_V649CHARTAUTORENDER649 = "v649chartAutoRender649" // v649 Chart Auto Render649
+        const val KEY_V649CHECKAUTOVERIFY649 = "v649checkAutoVerify649" // v649 Check Auto Verify649
+        const val KEY_V649CHIPAUTOTAG649 = "v649chipAutoTag649" // v649 Chip Auto Tag649
+        const val KEY_V649CHUNKAUTOSPLIT649 = "v649chunkAutoSplit649" // v649 Chunk Auto Split649
+        const val KEY_V649CIPHERAUTOENCRYPT649 = "v649cipherAutoEncrypt649" // v649 Cipher Auto Encrypt649
+        const val KEY_V649CIRCLEAUTOCLIP649 = "v649circleAutoClip649" // v649 Circle Auto Clip649
+        const val KEY_V649CLAMPAUTOVALUE649 = "v649clampAutoValue649" // v649 Clamp Auto Value649
+        const val KEY_V649CLASSAUTOLOAD649 = "v649classAutoLoad649" // v649 Class Auto Load649
+        const val KEY_V650CELLAUTOMERGE650 = "v650cellAutoMerge650" // v650 Cell Auto Merge650
+        const val KEY_V650CENTERAUTOGRAVITY650 = "v650centerAutoGravity650" // v650 Center Auto Gravity650
+        const val KEY_V650CHAINAUTOLINK650 = "v650chainAutoLink650" // v650 Chain Auto Link650
+        const val KEY_V650CHALLENGEAUTOJOIN650 = "v650challengeAutoJoin650" // v650 Challenge Auto Join650
+        const val KEY_V650CHANGEAUTOTRACK650 = "v650changeAutoTrack650" // v650 Change Auto Track650
+        const val KEY_V650CHANNELAUTOSWITCH650 = "v650channelAutoSwitch650" // v650 Channel Auto Switch650
+        const val KEY_V650CHAPTERAUTOMARK650 = "v650chapterAutoMark650" // v650 Chapter Auto Mark650
+        const val KEY_V650CHARTAUTORENDER650 = "v650chartAutoRender650" // v650 Chart Auto Render650
+        const val KEY_V650CHECKAUTOVERIFY650 = "v650checkAutoVerify650" // v650 Check Auto Verify650
+        const val KEY_V650CHIPAUTOTAG650 = "v650chipAutoTag650" // v650 Chip Auto Tag650
+        const val KEY_V650CHUNKAUTOSPLIT650 = "v650chunkAutoSplit650" // v650 Chunk Auto Split650
+        const val KEY_V650CIPHERAUTOENCRYPT650 = "v650cipherAutoEncrypt650" // v650 Cipher Auto Encrypt650
+        const val KEY_V650CIRCLEAUTOCLIP650 = "v650circleAutoClip650" // v650 Circle Auto Clip650
+        const val KEY_V650CLAMPAUTOVALUE650 = "v650clampAutoValue650" // v650 Clamp Auto Value650
+        const val KEY_V650CLASSAUTOLOAD650 = "v650classAutoLoad650" // v650 Class Auto Load650
     }
 }
