@@ -53448,6 +53448,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V780JSONAUTOPRETTY780, false)
         set(value) = prefs.edit().putBoolean(KEY_V780JSONAUTOPRETTY780, value).apply()
 
+    var v781jumpAutoSeek781: Boolean
+        get() = prefs.getBoolean(KEY_V781JUMPAUTOSEEK781, false)
+        set(value) = prefs.edit().putBoolean(KEY_V781JUMPAUTOSEEK781, value).apply()
+
+    var v781kernelAutoTune781: Boolean
+        get() = prefs.getBoolean(KEY_V781KERNELAUTOTUNE781, false)
+        set(value) = prefs.edit().putBoolean(KEY_V781KERNELAUTOTUNE781, value).apply()
+
+    var v781keyAutoBind781: Boolean
+        get() = prefs.getBoolean(KEY_V781KEYAUTOBIND781, false)
+        set(value) = prefs.edit().putBoolean(KEY_V781KEYAUTOBIND781, value).apply()
+
+    var v781killAutoProcess781: Boolean
+        get() = prefs.getBoolean(KEY_V781KILLAUTOPROCESS781, false)
+        set(value) = prefs.edit().putBoolean(KEY_V781KILLAUTOPROCESS781, value).apply()
+
+    var v781kitAutoLoad781: Boolean
+        get() = prefs.getBoolean(KEY_V781KITAUTOLOAD781, false)
+        set(value) = prefs.edit().putBoolean(KEY_V781KITAUTOLOAD781, value).apply()
+
+    var v781labelAutoTag781: Boolean
+        get() = prefs.getBoolean(KEY_V781LABELAUTOTAG781, false)
+        set(value) = prefs.edit().putBoolean(KEY_V781LABELAUTOTAG781, value).apply()
+
+    var v781lagAutoCompensate781: Boolean
+        get() = prefs.getBoolean(KEY_V781LAGAUTOCOMPENSATE781, false)
+        set(value) = prefs.edit().putBoolean(KEY_V781LAGAUTOCOMPENSATE781, value).apply()
+
+    var v781languageAutoDetect781: Boolean
+        get() = prefs.getBoolean(KEY_V781LANGUAGEAUTODETECT781, false)
+        set(value) = prefs.edit().putBoolean(KEY_V781LANGUAGEAUTODETECT781, value).apply()
+
+    var v781layerAutoZOrder781: Int
+        get() = prefs.getInt(KEY_V781LAYERAUTOZORDER781, 0)
+        set(value) = prefs.edit().putInt(KEY_V781LAYERAUTOZORDER781, value).apply()
+
+    var v781layoutAutoReflow781: Boolean
+        get() = prefs.getBoolean(KEY_V781LAYOUTAUTOREFLOW781, false)
+        set(value) = prefs.edit().putBoolean(KEY_V781LAYOUTAUTOREFLOW781, value).apply()
+
+    var v781lazyAutoInit781: Boolean
+        get() = prefs.getBoolean(KEY_V781LAZYAUTOINIT781, false)
+        set(value) = prefs.edit().putBoolean(KEY_V781LAZYAUTOINIT781, value).apply()
+
+    var v781leadAutoFollow781: Boolean
+        get() = prefs.getBoolean(KEY_V781LEADAUTOFOLLOW781, false)
+        set(value) = prefs.edit().putBoolean(KEY_V781LEADAUTOFOLLOW781, value).apply()
+
+    var v781leafAutoNode781: Boolean
+        get() = prefs.getBoolean(KEY_V781LEAFAUTONODE781, false)
+        set(value) = prefs.edit().putBoolean(KEY_V781LEAFAUTONODE781, value).apply()
+
+    var v781learnAutoAdapt781: Boolean
+        get() = prefs.getBoolean(KEY_V781LEARNAUTOADAPT781, false)
+        set(value) = prefs.edit().putBoolean(KEY_V781LEARNAUTOADAPT781, value).apply()
+
+    var v781leftAutoPanel781: Boolean
+        get() = prefs.getBoolean(KEY_V781LEFTAUTOPANEL781, false)
+        set(value) = prefs.edit().putBoolean(KEY_V781LEFTAUTOPANEL781, value).apply()
+
+    var v782jumpAutoSeek782: Boolean
+        get() = prefs.getBoolean(KEY_V782JUMPAUTOSEEK782, false)
+        set(value) = prefs.edit().putBoolean(KEY_V782JUMPAUTOSEEK782, value).apply()
+
+    var v782kernelAutoTune782: Boolean
+        get() = prefs.getBoolean(KEY_V782KERNELAUTOTUNE782, false)
+        set(value) = prefs.edit().putBoolean(KEY_V782KERNELAUTOTUNE782, value).apply()
+
+    var v782keyAutoBind782: Boolean
+        get() = prefs.getBoolean(KEY_V782KEYAUTOBIND782, false)
+        set(value) = prefs.edit().putBoolean(KEY_V782KEYAUTOBIND782, value).apply()
+
+    var v782killAutoProcess782: Boolean
+        get() = prefs.getBoolean(KEY_V782KILLAUTOPROCESS782, false)
+        set(value) = prefs.edit().putBoolean(KEY_V782KILLAUTOPROCESS782, value).apply()
+
+    var v782kitAutoLoad782: Boolean
+        get() = prefs.getBoolean(KEY_V782KITAUTOLOAD782, false)
+        set(value) = prefs.edit().putBoolean(KEY_V782KITAUTOLOAD782, value).apply()
+
+    var v782labelAutoTag782: Boolean
+        get() = prefs.getBoolean(KEY_V782LABELAUTOTAG782, false)
+        set(value) = prefs.edit().putBoolean(KEY_V782LABELAUTOTAG782, value).apply()
+
+    var v782lagAutoCompensate782: Boolean
+        get() = prefs.getBoolean(KEY_V782LAGAUTOCOMPENSATE782, false)
+        set(value) = prefs.edit().putBoolean(KEY_V782LAGAUTOCOMPENSATE782, value).apply()
+
+    var v782languageAutoDetect782: Boolean
+        get() = prefs.getBoolean(KEY_V782LANGUAGEAUTODETECT782, false)
+        set(value) = prefs.edit().putBoolean(KEY_V782LANGUAGEAUTODETECT782, value).apply()
+
+    var v782layerAutoZOrder782: Int
+        get() = prefs.getInt(KEY_V782LAYERAUTOZORDER782, 0)
+        set(value) = prefs.edit().putInt(KEY_V782LAYERAUTOZORDER782, value).apply()
+
+    var v782layoutAutoReflow782: Boolean
+        get() = prefs.getBoolean(KEY_V782LAYOUTAUTOREFLOW782, false)
+        set(value) = prefs.edit().putBoolean(KEY_V782LAYOUTAUTOREFLOW782, value).apply()
+
+    var v782lazyAutoInit782: Boolean
+        get() = prefs.getBoolean(KEY_V782LAZYAUTOINIT782, false)
+        set(value) = prefs.edit().putBoolean(KEY_V782LAZYAUTOINIT782, value).apply()
+
+    var v782leadAutoFollow782: Boolean
+        get() = prefs.getBoolean(KEY_V782LEADAUTOFOLLOW782, false)
+        set(value) = prefs.edit().putBoolean(KEY_V782LEADAUTOFOLLOW782, value).apply()
+
+    var v782leafAutoNode782: Boolean
+        get() = prefs.getBoolean(KEY_V782LEAFAUTONODE782, false)
+        set(value) = prefs.edit().putBoolean(KEY_V782LEAFAUTONODE782, value).apply()
+
+    var v782learnAutoAdapt782: Boolean
+        get() = prefs.getBoolean(KEY_V782LEARNAUTOADAPT782, false)
+        set(value) = prefs.edit().putBoolean(KEY_V782LEARNAUTOADAPT782, value).apply()
+
+    var v782leftAutoPanel782: Boolean
+        get() = prefs.getBoolean(KEY_V782LEFTAUTOPANEL782, false)
+        set(value) = prefs.edit().putBoolean(KEY_V782LEFTAUTOPANEL782, value).apply()
+
+    var v783jumpAutoSeek783: Boolean
+        get() = prefs.getBoolean(KEY_V783JUMPAUTOSEEK783, false)
+        set(value) = prefs.edit().putBoolean(KEY_V783JUMPAUTOSEEK783, value).apply()
+
+    var v783kernelAutoTune783: Boolean
+        get() = prefs.getBoolean(KEY_V783KERNELAUTOTUNE783, false)
+        set(value) = prefs.edit().putBoolean(KEY_V783KERNELAUTOTUNE783, value).apply()
+
+    var v783keyAutoBind783: Boolean
+        get() = prefs.getBoolean(KEY_V783KEYAUTOBIND783, false)
+        set(value) = prefs.edit().putBoolean(KEY_V783KEYAUTOBIND783, value).apply()
+
+    var v783killAutoProcess783: Boolean
+        get() = prefs.getBoolean(KEY_V783KILLAUTOPROCESS783, false)
+        set(value) = prefs.edit().putBoolean(KEY_V783KILLAUTOPROCESS783, value).apply()
+
+    var v783kitAutoLoad783: Boolean
+        get() = prefs.getBoolean(KEY_V783KITAUTOLOAD783, false)
+        set(value) = prefs.edit().putBoolean(KEY_V783KITAUTOLOAD783, value).apply()
+
+    var v783labelAutoTag783: Boolean
+        get() = prefs.getBoolean(KEY_V783LABELAUTOTAG783, false)
+        set(value) = prefs.edit().putBoolean(KEY_V783LABELAUTOTAG783, value).apply()
+
+    var v783lagAutoCompensate783: Boolean
+        get() = prefs.getBoolean(KEY_V783LAGAUTOCOMPENSATE783, false)
+        set(value) = prefs.edit().putBoolean(KEY_V783LAGAUTOCOMPENSATE783, value).apply()
+
+    var v783languageAutoDetect783: Boolean
+        get() = prefs.getBoolean(KEY_V783LANGUAGEAUTODETECT783, false)
+        set(value) = prefs.edit().putBoolean(KEY_V783LANGUAGEAUTODETECT783, value).apply()
+
+    var v783layerAutoZOrder783: Int
+        get() = prefs.getInt(KEY_V783LAYERAUTOZORDER783, 0)
+        set(value) = prefs.edit().putInt(KEY_V783LAYERAUTOZORDER783, value).apply()
+
+    var v783layoutAutoReflow783: Boolean
+        get() = prefs.getBoolean(KEY_V783LAYOUTAUTOREFLOW783, false)
+        set(value) = prefs.edit().putBoolean(KEY_V783LAYOUTAUTOREFLOW783, value).apply()
+
+    var v783lazyAutoInit783: Boolean
+        get() = prefs.getBoolean(KEY_V783LAZYAUTOINIT783, false)
+        set(value) = prefs.edit().putBoolean(KEY_V783LAZYAUTOINIT783, value).apply()
+
+    var v783leadAutoFollow783: Boolean
+        get() = prefs.getBoolean(KEY_V783LEADAUTOFOLLOW783, false)
+        set(value) = prefs.edit().putBoolean(KEY_V783LEADAUTOFOLLOW783, value).apply()
+
+    var v783leafAutoNode783: Boolean
+        get() = prefs.getBoolean(KEY_V783LEAFAUTONODE783, false)
+        set(value) = prefs.edit().putBoolean(KEY_V783LEAFAUTONODE783, value).apply()
+
+    var v783learnAutoAdapt783: Boolean
+        get() = prefs.getBoolean(KEY_V783LEARNAUTOADAPT783, false)
+        set(value) = prefs.edit().putBoolean(KEY_V783LEARNAUTOADAPT783, value).apply()
+
+    var v783leftAutoPanel783: Boolean
+        get() = prefs.getBoolean(KEY_V783LEFTAUTOPANEL783, false)
+        set(value) = prefs.edit().putBoolean(KEY_V783LEFTAUTOPANEL783, value).apply()
+
+    var v784jumpAutoSeek784: Boolean
+        get() = prefs.getBoolean(KEY_V784JUMPAUTOSEEK784, false)
+        set(value) = prefs.edit().putBoolean(KEY_V784JUMPAUTOSEEK784, value).apply()
+
+    var v784kernelAutoTune784: Boolean
+        get() = prefs.getBoolean(KEY_V784KERNELAUTOTUNE784, false)
+        set(value) = prefs.edit().putBoolean(KEY_V784KERNELAUTOTUNE784, value).apply()
+
+    var v784keyAutoBind784: Boolean
+        get() = prefs.getBoolean(KEY_V784KEYAUTOBIND784, false)
+        set(value) = prefs.edit().putBoolean(KEY_V784KEYAUTOBIND784, value).apply()
+
+    var v784killAutoProcess784: Boolean
+        get() = prefs.getBoolean(KEY_V784KILLAUTOPROCESS784, false)
+        set(value) = prefs.edit().putBoolean(KEY_V784KILLAUTOPROCESS784, value).apply()
+
+    var v784kitAutoLoad784: Boolean
+        get() = prefs.getBoolean(KEY_V784KITAUTOLOAD784, false)
+        set(value) = prefs.edit().putBoolean(KEY_V784KITAUTOLOAD784, value).apply()
+
+    var v784labelAutoTag784: Boolean
+        get() = prefs.getBoolean(KEY_V784LABELAUTOTAG784, false)
+        set(value) = prefs.edit().putBoolean(KEY_V784LABELAUTOTAG784, value).apply()
+
+    var v784lagAutoCompensate784: Boolean
+        get() = prefs.getBoolean(KEY_V784LAGAUTOCOMPENSATE784, false)
+        set(value) = prefs.edit().putBoolean(KEY_V784LAGAUTOCOMPENSATE784, value).apply()
+
+    var v784languageAutoDetect784: Boolean
+        get() = prefs.getBoolean(KEY_V784LANGUAGEAUTODETECT784, false)
+        set(value) = prefs.edit().putBoolean(KEY_V784LANGUAGEAUTODETECT784, value).apply()
+
+    var v784layerAutoZOrder784: Int
+        get() = prefs.getInt(KEY_V784LAYERAUTOZORDER784, 0)
+        set(value) = prefs.edit().putInt(KEY_V784LAYERAUTOZORDER784, value).apply()
+
+    var v784layoutAutoReflow784: Boolean
+        get() = prefs.getBoolean(KEY_V784LAYOUTAUTOREFLOW784, false)
+        set(value) = prefs.edit().putBoolean(KEY_V784LAYOUTAUTOREFLOW784, value).apply()
+
+    var v784lazyAutoInit784: Boolean
+        get() = prefs.getBoolean(KEY_V784LAZYAUTOINIT784, false)
+        set(value) = prefs.edit().putBoolean(KEY_V784LAZYAUTOINIT784, value).apply()
+
+    var v784leadAutoFollow784: Boolean
+        get() = prefs.getBoolean(KEY_V784LEADAUTOFOLLOW784, false)
+        set(value) = prefs.edit().putBoolean(KEY_V784LEADAUTOFOLLOW784, value).apply()
+
+    var v784leafAutoNode784: Boolean
+        get() = prefs.getBoolean(KEY_V784LEAFAUTONODE784, false)
+        set(value) = prefs.edit().putBoolean(KEY_V784LEAFAUTONODE784, value).apply()
+
+    var v784learnAutoAdapt784: Boolean
+        get() = prefs.getBoolean(KEY_V784LEARNAUTOADAPT784, false)
+        set(value) = prefs.edit().putBoolean(KEY_V784LEARNAUTOADAPT784, value).apply()
+
+    var v784leftAutoPanel784: Boolean
+        get() = prefs.getBoolean(KEY_V784LEFTAUTOPANEL784, false)
+        set(value) = prefs.edit().putBoolean(KEY_V784LEFTAUTOPANEL784, value).apply()
+
+    var v785jumpAutoSeek785: Boolean
+        get() = prefs.getBoolean(KEY_V785JUMPAUTOSEEK785, false)
+        set(value) = prefs.edit().putBoolean(KEY_V785JUMPAUTOSEEK785, value).apply()
+
+    var v785kernelAutoTune785: Boolean
+        get() = prefs.getBoolean(KEY_V785KERNELAUTOTUNE785, false)
+        set(value) = prefs.edit().putBoolean(KEY_V785KERNELAUTOTUNE785, value).apply()
+
+    var v785keyAutoBind785: Boolean
+        get() = prefs.getBoolean(KEY_V785KEYAUTOBIND785, false)
+        set(value) = prefs.edit().putBoolean(KEY_V785KEYAUTOBIND785, value).apply()
+
+    var v785killAutoProcess785: Boolean
+        get() = prefs.getBoolean(KEY_V785KILLAUTOPROCESS785, false)
+        set(value) = prefs.edit().putBoolean(KEY_V785KILLAUTOPROCESS785, value).apply()
+
+    var v785kitAutoLoad785: Boolean
+        get() = prefs.getBoolean(KEY_V785KITAUTOLOAD785, false)
+        set(value) = prefs.edit().putBoolean(KEY_V785KITAUTOLOAD785, value).apply()
+
+    var v785labelAutoTag785: Boolean
+        get() = prefs.getBoolean(KEY_V785LABELAUTOTAG785, false)
+        set(value) = prefs.edit().putBoolean(KEY_V785LABELAUTOTAG785, value).apply()
+
+    var v785lagAutoCompensate785: Boolean
+        get() = prefs.getBoolean(KEY_V785LAGAUTOCOMPENSATE785, false)
+        set(value) = prefs.edit().putBoolean(KEY_V785LAGAUTOCOMPENSATE785, value).apply()
+
+    var v785languageAutoDetect785: Boolean
+        get() = prefs.getBoolean(KEY_V785LANGUAGEAUTODETECT785, false)
+        set(value) = prefs.edit().putBoolean(KEY_V785LANGUAGEAUTODETECT785, value).apply()
+
+    var v785layerAutoZOrder785: Int
+        get() = prefs.getInt(KEY_V785LAYERAUTOZORDER785, 0)
+        set(value) = prefs.edit().putInt(KEY_V785LAYERAUTOZORDER785, value).apply()
+
+    var v785layoutAutoReflow785: Boolean
+        get() = prefs.getBoolean(KEY_V785LAYOUTAUTOREFLOW785, false)
+        set(value) = prefs.edit().putBoolean(KEY_V785LAYOUTAUTOREFLOW785, value).apply()
+
+    var v785lazyAutoInit785: Boolean
+        get() = prefs.getBoolean(KEY_V785LAZYAUTOINIT785, false)
+        set(value) = prefs.edit().putBoolean(KEY_V785LAZYAUTOINIT785, value).apply()
+
+    var v785leadAutoFollow785: Boolean
+        get() = prefs.getBoolean(KEY_V785LEADAUTOFOLLOW785, false)
+        set(value) = prefs.edit().putBoolean(KEY_V785LEADAUTOFOLLOW785, value).apply()
+
+    var v785leafAutoNode785: Boolean
+        get() = prefs.getBoolean(KEY_V785LEAFAUTONODE785, false)
+        set(value) = prefs.edit().putBoolean(KEY_V785LEAFAUTONODE785, value).apply()
+
+    var v785learnAutoAdapt785: Boolean
+        get() = prefs.getBoolean(KEY_V785LEARNAUTOADAPT785, false)
+        set(value) = prefs.edit().putBoolean(KEY_V785LEARNAUTOADAPT785, value).apply()
+
+    var v785leftAutoPanel785: Boolean
+        get() = prefs.getBoolean(KEY_V785LEFTAUTOPANEL785, false)
+        set(value) = prefs.edit().putBoolean(KEY_V785LEFTAUTOPANEL785, value).apply()
+
+    var v786jumpAutoSeek786: Boolean
+        get() = prefs.getBoolean(KEY_V786JUMPAUTOSEEK786, false)
+        set(value) = prefs.edit().putBoolean(KEY_V786JUMPAUTOSEEK786, value).apply()
+
+    var v786kernelAutoTune786: Boolean
+        get() = prefs.getBoolean(KEY_V786KERNELAUTOTUNE786, false)
+        set(value) = prefs.edit().putBoolean(KEY_V786KERNELAUTOTUNE786, value).apply()
+
+    var v786keyAutoBind786: Boolean
+        get() = prefs.getBoolean(KEY_V786KEYAUTOBIND786, false)
+        set(value) = prefs.edit().putBoolean(KEY_V786KEYAUTOBIND786, value).apply()
+
+    var v786killAutoProcess786: Boolean
+        get() = prefs.getBoolean(KEY_V786KILLAUTOPROCESS786, false)
+        set(value) = prefs.edit().putBoolean(KEY_V786KILLAUTOPROCESS786, value).apply()
+
+    var v786kitAutoLoad786: Boolean
+        get() = prefs.getBoolean(KEY_V786KITAUTOLOAD786, false)
+        set(value) = prefs.edit().putBoolean(KEY_V786KITAUTOLOAD786, value).apply()
+
+    var v786labelAutoTag786: Boolean
+        get() = prefs.getBoolean(KEY_V786LABELAUTOTAG786, false)
+        set(value) = prefs.edit().putBoolean(KEY_V786LABELAUTOTAG786, value).apply()
+
+    var v786lagAutoCompensate786: Boolean
+        get() = prefs.getBoolean(KEY_V786LAGAUTOCOMPENSATE786, false)
+        set(value) = prefs.edit().putBoolean(KEY_V786LAGAUTOCOMPENSATE786, value).apply()
+
+    var v786languageAutoDetect786: Boolean
+        get() = prefs.getBoolean(KEY_V786LANGUAGEAUTODETECT786, false)
+        set(value) = prefs.edit().putBoolean(KEY_V786LANGUAGEAUTODETECT786, value).apply()
+
+    var v786layerAutoZOrder786: Int
+        get() = prefs.getInt(KEY_V786LAYERAUTOZORDER786, 0)
+        set(value) = prefs.edit().putInt(KEY_V786LAYERAUTOZORDER786, value).apply()
+
+    var v786layoutAutoReflow786: Boolean
+        get() = prefs.getBoolean(KEY_V786LAYOUTAUTOREFLOW786, false)
+        set(value) = prefs.edit().putBoolean(KEY_V786LAYOUTAUTOREFLOW786, value).apply()
+
+    var v786lazyAutoInit786: Boolean
+        get() = prefs.getBoolean(KEY_V786LAZYAUTOINIT786, false)
+        set(value) = prefs.edit().putBoolean(KEY_V786LAZYAUTOINIT786, value).apply()
+
+    var v786leadAutoFollow786: Boolean
+        get() = prefs.getBoolean(KEY_V786LEADAUTOFOLLOW786, false)
+        set(value) = prefs.edit().putBoolean(KEY_V786LEADAUTOFOLLOW786, value).apply()
+
+    var v786leafAutoNode786: Boolean
+        get() = prefs.getBoolean(KEY_V786LEAFAUTONODE786, false)
+        set(value) = prefs.edit().putBoolean(KEY_V786LEAFAUTONODE786, value).apply()
+
+    var v786learnAutoAdapt786: Boolean
+        get() = prefs.getBoolean(KEY_V786LEARNAUTOADAPT786, false)
+        set(value) = prefs.edit().putBoolean(KEY_V786LEARNAUTOADAPT786, value).apply()
+
+    var v786leftAutoPanel786: Boolean
+        get() = prefs.getBoolean(KEY_V786LEFTAUTOPANEL786, false)
+        set(value) = prefs.edit().putBoolean(KEY_V786LEFTAUTOPANEL786, value).apply()
+
+    var v787jumpAutoSeek787: Boolean
+        get() = prefs.getBoolean(KEY_V787JUMPAUTOSEEK787, false)
+        set(value) = prefs.edit().putBoolean(KEY_V787JUMPAUTOSEEK787, value).apply()
+
+    var v787kernelAutoTune787: Boolean
+        get() = prefs.getBoolean(KEY_V787KERNELAUTOTUNE787, false)
+        set(value) = prefs.edit().putBoolean(KEY_V787KERNELAUTOTUNE787, value).apply()
+
+    var v787keyAutoBind787: Boolean
+        get() = prefs.getBoolean(KEY_V787KEYAUTOBIND787, false)
+        set(value) = prefs.edit().putBoolean(KEY_V787KEYAUTOBIND787, value).apply()
+
+    var v787killAutoProcess787: Boolean
+        get() = prefs.getBoolean(KEY_V787KILLAUTOPROCESS787, false)
+        set(value) = prefs.edit().putBoolean(KEY_V787KILLAUTOPROCESS787, value).apply()
+
+    var v787kitAutoLoad787: Boolean
+        get() = prefs.getBoolean(KEY_V787KITAUTOLOAD787, false)
+        set(value) = prefs.edit().putBoolean(KEY_V787KITAUTOLOAD787, value).apply()
+
+    var v787labelAutoTag787: Boolean
+        get() = prefs.getBoolean(KEY_V787LABELAUTOTAG787, false)
+        set(value) = prefs.edit().putBoolean(KEY_V787LABELAUTOTAG787, value).apply()
+
+    var v787lagAutoCompensate787: Boolean
+        get() = prefs.getBoolean(KEY_V787LAGAUTOCOMPENSATE787, false)
+        set(value) = prefs.edit().putBoolean(KEY_V787LAGAUTOCOMPENSATE787, value).apply()
+
+    var v787languageAutoDetect787: Boolean
+        get() = prefs.getBoolean(KEY_V787LANGUAGEAUTODETECT787, false)
+        set(value) = prefs.edit().putBoolean(KEY_V787LANGUAGEAUTODETECT787, value).apply()
+
+    var v787layerAutoZOrder787: Int
+        get() = prefs.getInt(KEY_V787LAYERAUTOZORDER787, 0)
+        set(value) = prefs.edit().putInt(KEY_V787LAYERAUTOZORDER787, value).apply()
+
+    var v787layoutAutoReflow787: Boolean
+        get() = prefs.getBoolean(KEY_V787LAYOUTAUTOREFLOW787, false)
+        set(value) = prefs.edit().putBoolean(KEY_V787LAYOUTAUTOREFLOW787, value).apply()
+
+    var v787lazyAutoInit787: Boolean
+        get() = prefs.getBoolean(KEY_V787LAZYAUTOINIT787, false)
+        set(value) = prefs.edit().putBoolean(KEY_V787LAZYAUTOINIT787, value).apply()
+
+    var v787leadAutoFollow787: Boolean
+        get() = prefs.getBoolean(KEY_V787LEADAUTOFOLLOW787, false)
+        set(value) = prefs.edit().putBoolean(KEY_V787LEADAUTOFOLLOW787, value).apply()
+
+    var v787leafAutoNode787: Boolean
+        get() = prefs.getBoolean(KEY_V787LEAFAUTONODE787, false)
+        set(value) = prefs.edit().putBoolean(KEY_V787LEAFAUTONODE787, value).apply()
+
+    var v787learnAutoAdapt787: Boolean
+        get() = prefs.getBoolean(KEY_V787LEARNAUTOADAPT787, false)
+        set(value) = prefs.edit().putBoolean(KEY_V787LEARNAUTOADAPT787, value).apply()
+
+    var v787leftAutoPanel787: Boolean
+        get() = prefs.getBoolean(KEY_V787LEFTAUTOPANEL787, false)
+        set(value) = prefs.edit().putBoolean(KEY_V787LEFTAUTOPANEL787, value).apply()
+
+    var v788jumpAutoSeek788: Boolean
+        get() = prefs.getBoolean(KEY_V788JUMPAUTOSEEK788, false)
+        set(value) = prefs.edit().putBoolean(KEY_V788JUMPAUTOSEEK788, value).apply()
+
+    var v788kernelAutoTune788: Boolean
+        get() = prefs.getBoolean(KEY_V788KERNELAUTOTUNE788, false)
+        set(value) = prefs.edit().putBoolean(KEY_V788KERNELAUTOTUNE788, value).apply()
+
+    var v788keyAutoBind788: Boolean
+        get() = prefs.getBoolean(KEY_V788KEYAUTOBIND788, false)
+        set(value) = prefs.edit().putBoolean(KEY_V788KEYAUTOBIND788, value).apply()
+
+    var v788killAutoProcess788: Boolean
+        get() = prefs.getBoolean(KEY_V788KILLAUTOPROCESS788, false)
+        set(value) = prefs.edit().putBoolean(KEY_V788KILLAUTOPROCESS788, value).apply()
+
+    var v788kitAutoLoad788: Boolean
+        get() = prefs.getBoolean(KEY_V788KITAUTOLOAD788, false)
+        set(value) = prefs.edit().putBoolean(KEY_V788KITAUTOLOAD788, value).apply()
+
+    var v788labelAutoTag788: Boolean
+        get() = prefs.getBoolean(KEY_V788LABELAUTOTAG788, false)
+        set(value) = prefs.edit().putBoolean(KEY_V788LABELAUTOTAG788, value).apply()
+
+    var v788lagAutoCompensate788: Boolean
+        get() = prefs.getBoolean(KEY_V788LAGAUTOCOMPENSATE788, false)
+        set(value) = prefs.edit().putBoolean(KEY_V788LAGAUTOCOMPENSATE788, value).apply()
+
+    var v788languageAutoDetect788: Boolean
+        get() = prefs.getBoolean(KEY_V788LANGUAGEAUTODETECT788, false)
+        set(value) = prefs.edit().putBoolean(KEY_V788LANGUAGEAUTODETECT788, value).apply()
+
+    var v788layerAutoZOrder788: Int
+        get() = prefs.getInt(KEY_V788LAYERAUTOZORDER788, 0)
+        set(value) = prefs.edit().putInt(KEY_V788LAYERAUTOZORDER788, value).apply()
+
+    var v788layoutAutoReflow788: Boolean
+        get() = prefs.getBoolean(KEY_V788LAYOUTAUTOREFLOW788, false)
+        set(value) = prefs.edit().putBoolean(KEY_V788LAYOUTAUTOREFLOW788, value).apply()
+
+    var v788lazyAutoInit788: Boolean
+        get() = prefs.getBoolean(KEY_V788LAZYAUTOINIT788, false)
+        set(value) = prefs.edit().putBoolean(KEY_V788LAZYAUTOINIT788, value).apply()
+
+    var v788leadAutoFollow788: Boolean
+        get() = prefs.getBoolean(KEY_V788LEADAUTOFOLLOW788, false)
+        set(value) = prefs.edit().putBoolean(KEY_V788LEADAUTOFOLLOW788, value).apply()
+
+    var v788leafAutoNode788: Boolean
+        get() = prefs.getBoolean(KEY_V788LEAFAUTONODE788, false)
+        set(value) = prefs.edit().putBoolean(KEY_V788LEAFAUTONODE788, value).apply()
+
+    var v788learnAutoAdapt788: Boolean
+        get() = prefs.getBoolean(KEY_V788LEARNAUTOADAPT788, false)
+        set(value) = prefs.edit().putBoolean(KEY_V788LEARNAUTOADAPT788, value).apply()
+
+    var v788leftAutoPanel788: Boolean
+        get() = prefs.getBoolean(KEY_V788LEFTAUTOPANEL788, false)
+        set(value) = prefs.edit().putBoolean(KEY_V788LEFTAUTOPANEL788, value).apply()
+
+    var v789jumpAutoSeek789: Boolean
+        get() = prefs.getBoolean(KEY_V789JUMPAUTOSEEK789, false)
+        set(value) = prefs.edit().putBoolean(KEY_V789JUMPAUTOSEEK789, value).apply()
+
+    var v789kernelAutoTune789: Boolean
+        get() = prefs.getBoolean(KEY_V789KERNELAUTOTUNE789, false)
+        set(value) = prefs.edit().putBoolean(KEY_V789KERNELAUTOTUNE789, value).apply()
+
+    var v789keyAutoBind789: Boolean
+        get() = prefs.getBoolean(KEY_V789KEYAUTOBIND789, false)
+        set(value) = prefs.edit().putBoolean(KEY_V789KEYAUTOBIND789, value).apply()
+
+    var v789killAutoProcess789: Boolean
+        get() = prefs.getBoolean(KEY_V789KILLAUTOPROCESS789, false)
+        set(value) = prefs.edit().putBoolean(KEY_V789KILLAUTOPROCESS789, value).apply()
+
+    var v789kitAutoLoad789: Boolean
+        get() = prefs.getBoolean(KEY_V789KITAUTOLOAD789, false)
+        set(value) = prefs.edit().putBoolean(KEY_V789KITAUTOLOAD789, value).apply()
+
+    var v789labelAutoTag789: Boolean
+        get() = prefs.getBoolean(KEY_V789LABELAUTOTAG789, false)
+        set(value) = prefs.edit().putBoolean(KEY_V789LABELAUTOTAG789, value).apply()
+
+    var v789lagAutoCompensate789: Boolean
+        get() = prefs.getBoolean(KEY_V789LAGAUTOCOMPENSATE789, false)
+        set(value) = prefs.edit().putBoolean(KEY_V789LAGAUTOCOMPENSATE789, value).apply()
+
+    var v789languageAutoDetect789: Boolean
+        get() = prefs.getBoolean(KEY_V789LANGUAGEAUTODETECT789, false)
+        set(value) = prefs.edit().putBoolean(KEY_V789LANGUAGEAUTODETECT789, value).apply()
+
+    var v789layerAutoZOrder789: Int
+        get() = prefs.getInt(KEY_V789LAYERAUTOZORDER789, 0)
+        set(value) = prefs.edit().putInt(KEY_V789LAYERAUTOZORDER789, value).apply()
+
+    var v789layoutAutoReflow789: Boolean
+        get() = prefs.getBoolean(KEY_V789LAYOUTAUTOREFLOW789, false)
+        set(value) = prefs.edit().putBoolean(KEY_V789LAYOUTAUTOREFLOW789, value).apply()
+
+    var v789lazyAutoInit789: Boolean
+        get() = prefs.getBoolean(KEY_V789LAZYAUTOINIT789, false)
+        set(value) = prefs.edit().putBoolean(KEY_V789LAZYAUTOINIT789, value).apply()
+
+    var v789leadAutoFollow789: Boolean
+        get() = prefs.getBoolean(KEY_V789LEADAUTOFOLLOW789, false)
+        set(value) = prefs.edit().putBoolean(KEY_V789LEADAUTOFOLLOW789, value).apply()
+
+    var v789leafAutoNode789: Boolean
+        get() = prefs.getBoolean(KEY_V789LEAFAUTONODE789, false)
+        set(value) = prefs.edit().putBoolean(KEY_V789LEAFAUTONODE789, value).apply()
+
+    var v789learnAutoAdapt789: Boolean
+        get() = prefs.getBoolean(KEY_V789LEARNAUTOADAPT789, false)
+        set(value) = prefs.edit().putBoolean(KEY_V789LEARNAUTOADAPT789, value).apply()
+
+    var v789leftAutoPanel789: Boolean
+        get() = prefs.getBoolean(KEY_V789LEFTAUTOPANEL789, false)
+        set(value) = prefs.edit().putBoolean(KEY_V789LEFTAUTOPANEL789, value).apply()
+
+    var v790jumpAutoSeek790: Boolean
+        get() = prefs.getBoolean(KEY_V790JUMPAUTOSEEK790, false)
+        set(value) = prefs.edit().putBoolean(KEY_V790JUMPAUTOSEEK790, value).apply()
+
+    var v790kernelAutoTune790: Boolean
+        get() = prefs.getBoolean(KEY_V790KERNELAUTOTUNE790, false)
+        set(value) = prefs.edit().putBoolean(KEY_V790KERNELAUTOTUNE790, value).apply()
+
+    var v790keyAutoBind790: Boolean
+        get() = prefs.getBoolean(KEY_V790KEYAUTOBIND790, false)
+        set(value) = prefs.edit().putBoolean(KEY_V790KEYAUTOBIND790, value).apply()
+
+    var v790killAutoProcess790: Boolean
+        get() = prefs.getBoolean(KEY_V790KILLAUTOPROCESS790, false)
+        set(value) = prefs.edit().putBoolean(KEY_V790KILLAUTOPROCESS790, value).apply()
+
+    var v790kitAutoLoad790: Boolean
+        get() = prefs.getBoolean(KEY_V790KITAUTOLOAD790, false)
+        set(value) = prefs.edit().putBoolean(KEY_V790KITAUTOLOAD790, value).apply()
+
+    var v790labelAutoTag790: Boolean
+        get() = prefs.getBoolean(KEY_V790LABELAUTOTAG790, false)
+        set(value) = prefs.edit().putBoolean(KEY_V790LABELAUTOTAG790, value).apply()
+
+    var v790lagAutoCompensate790: Boolean
+        get() = prefs.getBoolean(KEY_V790LAGAUTOCOMPENSATE790, false)
+        set(value) = prefs.edit().putBoolean(KEY_V790LAGAUTOCOMPENSATE790, value).apply()
+
+    var v790languageAutoDetect790: Boolean
+        get() = prefs.getBoolean(KEY_V790LANGUAGEAUTODETECT790, false)
+        set(value) = prefs.edit().putBoolean(KEY_V790LANGUAGEAUTODETECT790, value).apply()
+
+    var v790layerAutoZOrder790: Int
+        get() = prefs.getInt(KEY_V790LAYERAUTOZORDER790, 0)
+        set(value) = prefs.edit().putInt(KEY_V790LAYERAUTOZORDER790, value).apply()
+
+    var v790layoutAutoReflow790: Boolean
+        get() = prefs.getBoolean(KEY_V790LAYOUTAUTOREFLOW790, false)
+        set(value) = prefs.edit().putBoolean(KEY_V790LAYOUTAUTOREFLOW790, value).apply()
+
+    var v790lazyAutoInit790: Boolean
+        get() = prefs.getBoolean(KEY_V790LAZYAUTOINIT790, false)
+        set(value) = prefs.edit().putBoolean(KEY_V790LAZYAUTOINIT790, value).apply()
+
+    var v790leadAutoFollow790: Boolean
+        get() = prefs.getBoolean(KEY_V790LEADAUTOFOLLOW790, false)
+        set(value) = prefs.edit().putBoolean(KEY_V790LEADAUTOFOLLOW790, value).apply()
+
+    var v790leafAutoNode790: Boolean
+        get() = prefs.getBoolean(KEY_V790LEAFAUTONODE790, false)
+        set(value) = prefs.edit().putBoolean(KEY_V790LEAFAUTONODE790, value).apply()
+
+    var v790learnAutoAdapt790: Boolean
+        get() = prefs.getBoolean(KEY_V790LEARNAUTOADAPT790, false)
+        set(value) = prefs.edit().putBoolean(KEY_V790LEARNAUTOADAPT790, value).apply()
+
+    var v790leftAutoPanel790: Boolean
+        get() = prefs.getBoolean(KEY_V790LEFTAUTOPANEL790, false)
+        set(value) = prefs.edit().putBoolean(KEY_V790LEFTAUTOPANEL790, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -67680,5 +68280,155 @@ class AppPrefs(context: Context) {
         const val KEY_V780ITERATEAUTOPAGINATE780 = "v780iterateAutoPaginate780" // v780 Iterate Auto Paginate780
         const val KEY_V780JOINAUTOMERGE780 = "v780joinAutoMerge780" // v780 Join Auto Merge780
         const val KEY_V780JSONAUTOPRETTY780 = "v780jsonAutoPretty780" // v780 Json Auto Pretty780
+        const val KEY_V781JUMPAUTOSEEK781 = "v781jumpAutoSeek781" // v781 Jump Auto Seek781
+        const val KEY_V781KERNELAUTOTUNE781 = "v781kernelAutoTune781" // v781 Kernel Auto Tune781
+        const val KEY_V781KEYAUTOBIND781 = "v781keyAutoBind781" // v781 Key Auto Bind781
+        const val KEY_V781KILLAUTOPROCESS781 = "v781killAutoProcess781" // v781 Kill Auto Process781
+        const val KEY_V781KITAUTOLOAD781 = "v781kitAutoLoad781" // v781 Kit Auto Load781
+        const val KEY_V781LABELAUTOTAG781 = "v781labelAutoTag781" // v781 Label Auto Tag781
+        const val KEY_V781LAGAUTOCOMPENSATE781 = "v781lagAutoCompensate781" // v781 Lag Auto Compensate781
+        const val KEY_V781LANGUAGEAUTODETECT781 = "v781languageAutoDetect781" // v781 Language Auto Detect781
+        const val KEY_V781LAYERAUTOZORDER781 = "v781layerAutoZOrder781" // v781 Layer Auto ZOrder781
+        const val KEY_V781LAYOUTAUTOREFLOW781 = "v781layoutAutoReflow781" // v781 Layout Auto Reflow781
+        const val KEY_V781LAZYAUTOINIT781 = "v781lazyAutoInit781" // v781 Lazy Auto Init781
+        const val KEY_V781LEADAUTOFOLLOW781 = "v781leadAutoFollow781" // v781 Lead Auto Follow781
+        const val KEY_V781LEAFAUTONODE781 = "v781leafAutoNode781" // v781 Leaf Auto Node781
+        const val KEY_V781LEARNAUTOADAPT781 = "v781learnAutoAdapt781" // v781 Learn Auto Adapt781
+        const val KEY_V781LEFTAUTOPANEL781 = "v781leftAutoPanel781" // v781 Left Auto Panel781
+        const val KEY_V782JUMPAUTOSEEK782 = "v782jumpAutoSeek782" // v782 Jump Auto Seek782
+        const val KEY_V782KERNELAUTOTUNE782 = "v782kernelAutoTune782" // v782 Kernel Auto Tune782
+        const val KEY_V782KEYAUTOBIND782 = "v782keyAutoBind782" // v782 Key Auto Bind782
+        const val KEY_V782KILLAUTOPROCESS782 = "v782killAutoProcess782" // v782 Kill Auto Process782
+        const val KEY_V782KITAUTOLOAD782 = "v782kitAutoLoad782" // v782 Kit Auto Load782
+        const val KEY_V782LABELAUTOTAG782 = "v782labelAutoTag782" // v782 Label Auto Tag782
+        const val KEY_V782LAGAUTOCOMPENSATE782 = "v782lagAutoCompensate782" // v782 Lag Auto Compensate782
+        const val KEY_V782LANGUAGEAUTODETECT782 = "v782languageAutoDetect782" // v782 Language Auto Detect782
+        const val KEY_V782LAYERAUTOZORDER782 = "v782layerAutoZOrder782" // v782 Layer Auto ZOrder782
+        const val KEY_V782LAYOUTAUTOREFLOW782 = "v782layoutAutoReflow782" // v782 Layout Auto Reflow782
+        const val KEY_V782LAZYAUTOINIT782 = "v782lazyAutoInit782" // v782 Lazy Auto Init782
+        const val KEY_V782LEADAUTOFOLLOW782 = "v782leadAutoFollow782" // v782 Lead Auto Follow782
+        const val KEY_V782LEAFAUTONODE782 = "v782leafAutoNode782" // v782 Leaf Auto Node782
+        const val KEY_V782LEARNAUTOADAPT782 = "v782learnAutoAdapt782" // v782 Learn Auto Adapt782
+        const val KEY_V782LEFTAUTOPANEL782 = "v782leftAutoPanel782" // v782 Left Auto Panel782
+        const val KEY_V783JUMPAUTOSEEK783 = "v783jumpAutoSeek783" // v783 Jump Auto Seek783
+        const val KEY_V783KERNELAUTOTUNE783 = "v783kernelAutoTune783" // v783 Kernel Auto Tune783
+        const val KEY_V783KEYAUTOBIND783 = "v783keyAutoBind783" // v783 Key Auto Bind783
+        const val KEY_V783KILLAUTOPROCESS783 = "v783killAutoProcess783" // v783 Kill Auto Process783
+        const val KEY_V783KITAUTOLOAD783 = "v783kitAutoLoad783" // v783 Kit Auto Load783
+        const val KEY_V783LABELAUTOTAG783 = "v783labelAutoTag783" // v783 Label Auto Tag783
+        const val KEY_V783LAGAUTOCOMPENSATE783 = "v783lagAutoCompensate783" // v783 Lag Auto Compensate783
+        const val KEY_V783LANGUAGEAUTODETECT783 = "v783languageAutoDetect783" // v783 Language Auto Detect783
+        const val KEY_V783LAYERAUTOZORDER783 = "v783layerAutoZOrder783" // v783 Layer Auto ZOrder783
+        const val KEY_V783LAYOUTAUTOREFLOW783 = "v783layoutAutoReflow783" // v783 Layout Auto Reflow783
+        const val KEY_V783LAZYAUTOINIT783 = "v783lazyAutoInit783" // v783 Lazy Auto Init783
+        const val KEY_V783LEADAUTOFOLLOW783 = "v783leadAutoFollow783" // v783 Lead Auto Follow783
+        const val KEY_V783LEAFAUTONODE783 = "v783leafAutoNode783" // v783 Leaf Auto Node783
+        const val KEY_V783LEARNAUTOADAPT783 = "v783learnAutoAdapt783" // v783 Learn Auto Adapt783
+        const val KEY_V783LEFTAUTOPANEL783 = "v783leftAutoPanel783" // v783 Left Auto Panel783
+        const val KEY_V784JUMPAUTOSEEK784 = "v784jumpAutoSeek784" // v784 Jump Auto Seek784
+        const val KEY_V784KERNELAUTOTUNE784 = "v784kernelAutoTune784" // v784 Kernel Auto Tune784
+        const val KEY_V784KEYAUTOBIND784 = "v784keyAutoBind784" // v784 Key Auto Bind784
+        const val KEY_V784KILLAUTOPROCESS784 = "v784killAutoProcess784" // v784 Kill Auto Process784
+        const val KEY_V784KITAUTOLOAD784 = "v784kitAutoLoad784" // v784 Kit Auto Load784
+        const val KEY_V784LABELAUTOTAG784 = "v784labelAutoTag784" // v784 Label Auto Tag784
+        const val KEY_V784LAGAUTOCOMPENSATE784 = "v784lagAutoCompensate784" // v784 Lag Auto Compensate784
+        const val KEY_V784LANGUAGEAUTODETECT784 = "v784languageAutoDetect784" // v784 Language Auto Detect784
+        const val KEY_V784LAYERAUTOZORDER784 = "v784layerAutoZOrder784" // v784 Layer Auto ZOrder784
+        const val KEY_V784LAYOUTAUTOREFLOW784 = "v784layoutAutoReflow784" // v784 Layout Auto Reflow784
+        const val KEY_V784LAZYAUTOINIT784 = "v784lazyAutoInit784" // v784 Lazy Auto Init784
+        const val KEY_V784LEADAUTOFOLLOW784 = "v784leadAutoFollow784" // v784 Lead Auto Follow784
+        const val KEY_V784LEAFAUTONODE784 = "v784leafAutoNode784" // v784 Leaf Auto Node784
+        const val KEY_V784LEARNAUTOADAPT784 = "v784learnAutoAdapt784" // v784 Learn Auto Adapt784
+        const val KEY_V784LEFTAUTOPANEL784 = "v784leftAutoPanel784" // v784 Left Auto Panel784
+        const val KEY_V785JUMPAUTOSEEK785 = "v785jumpAutoSeek785" // v785 Jump Auto Seek785
+        const val KEY_V785KERNELAUTOTUNE785 = "v785kernelAutoTune785" // v785 Kernel Auto Tune785
+        const val KEY_V785KEYAUTOBIND785 = "v785keyAutoBind785" // v785 Key Auto Bind785
+        const val KEY_V785KILLAUTOPROCESS785 = "v785killAutoProcess785" // v785 Kill Auto Process785
+        const val KEY_V785KITAUTOLOAD785 = "v785kitAutoLoad785" // v785 Kit Auto Load785
+        const val KEY_V785LABELAUTOTAG785 = "v785labelAutoTag785" // v785 Label Auto Tag785
+        const val KEY_V785LAGAUTOCOMPENSATE785 = "v785lagAutoCompensate785" // v785 Lag Auto Compensate785
+        const val KEY_V785LANGUAGEAUTODETECT785 = "v785languageAutoDetect785" // v785 Language Auto Detect785
+        const val KEY_V785LAYERAUTOZORDER785 = "v785layerAutoZOrder785" // v785 Layer Auto ZOrder785
+        const val KEY_V785LAYOUTAUTOREFLOW785 = "v785layoutAutoReflow785" // v785 Layout Auto Reflow785
+        const val KEY_V785LAZYAUTOINIT785 = "v785lazyAutoInit785" // v785 Lazy Auto Init785
+        const val KEY_V785LEADAUTOFOLLOW785 = "v785leadAutoFollow785" // v785 Lead Auto Follow785
+        const val KEY_V785LEAFAUTONODE785 = "v785leafAutoNode785" // v785 Leaf Auto Node785
+        const val KEY_V785LEARNAUTOADAPT785 = "v785learnAutoAdapt785" // v785 Learn Auto Adapt785
+        const val KEY_V785LEFTAUTOPANEL785 = "v785leftAutoPanel785" // v785 Left Auto Panel785
+        const val KEY_V786JUMPAUTOSEEK786 = "v786jumpAutoSeek786" // v786 Jump Auto Seek786
+        const val KEY_V786KERNELAUTOTUNE786 = "v786kernelAutoTune786" // v786 Kernel Auto Tune786
+        const val KEY_V786KEYAUTOBIND786 = "v786keyAutoBind786" // v786 Key Auto Bind786
+        const val KEY_V786KILLAUTOPROCESS786 = "v786killAutoProcess786" // v786 Kill Auto Process786
+        const val KEY_V786KITAUTOLOAD786 = "v786kitAutoLoad786" // v786 Kit Auto Load786
+        const val KEY_V786LABELAUTOTAG786 = "v786labelAutoTag786" // v786 Label Auto Tag786
+        const val KEY_V786LAGAUTOCOMPENSATE786 = "v786lagAutoCompensate786" // v786 Lag Auto Compensate786
+        const val KEY_V786LANGUAGEAUTODETECT786 = "v786languageAutoDetect786" // v786 Language Auto Detect786
+        const val KEY_V786LAYERAUTOZORDER786 = "v786layerAutoZOrder786" // v786 Layer Auto ZOrder786
+        const val KEY_V786LAYOUTAUTOREFLOW786 = "v786layoutAutoReflow786" // v786 Layout Auto Reflow786
+        const val KEY_V786LAZYAUTOINIT786 = "v786lazyAutoInit786" // v786 Lazy Auto Init786
+        const val KEY_V786LEADAUTOFOLLOW786 = "v786leadAutoFollow786" // v786 Lead Auto Follow786
+        const val KEY_V786LEAFAUTONODE786 = "v786leafAutoNode786" // v786 Leaf Auto Node786
+        const val KEY_V786LEARNAUTOADAPT786 = "v786learnAutoAdapt786" // v786 Learn Auto Adapt786
+        const val KEY_V786LEFTAUTOPANEL786 = "v786leftAutoPanel786" // v786 Left Auto Panel786
+        const val KEY_V787JUMPAUTOSEEK787 = "v787jumpAutoSeek787" // v787 Jump Auto Seek787
+        const val KEY_V787KERNELAUTOTUNE787 = "v787kernelAutoTune787" // v787 Kernel Auto Tune787
+        const val KEY_V787KEYAUTOBIND787 = "v787keyAutoBind787" // v787 Key Auto Bind787
+        const val KEY_V787KILLAUTOPROCESS787 = "v787killAutoProcess787" // v787 Kill Auto Process787
+        const val KEY_V787KITAUTOLOAD787 = "v787kitAutoLoad787" // v787 Kit Auto Load787
+        const val KEY_V787LABELAUTOTAG787 = "v787labelAutoTag787" // v787 Label Auto Tag787
+        const val KEY_V787LAGAUTOCOMPENSATE787 = "v787lagAutoCompensate787" // v787 Lag Auto Compensate787
+        const val KEY_V787LANGUAGEAUTODETECT787 = "v787languageAutoDetect787" // v787 Language Auto Detect787
+        const val KEY_V787LAYERAUTOZORDER787 = "v787layerAutoZOrder787" // v787 Layer Auto ZOrder787
+        const val KEY_V787LAYOUTAUTOREFLOW787 = "v787layoutAutoReflow787" // v787 Layout Auto Reflow787
+        const val KEY_V787LAZYAUTOINIT787 = "v787lazyAutoInit787" // v787 Lazy Auto Init787
+        const val KEY_V787LEADAUTOFOLLOW787 = "v787leadAutoFollow787" // v787 Lead Auto Follow787
+        const val KEY_V787LEAFAUTONODE787 = "v787leafAutoNode787" // v787 Leaf Auto Node787
+        const val KEY_V787LEARNAUTOADAPT787 = "v787learnAutoAdapt787" // v787 Learn Auto Adapt787
+        const val KEY_V787LEFTAUTOPANEL787 = "v787leftAutoPanel787" // v787 Left Auto Panel787
+        const val KEY_V788JUMPAUTOSEEK788 = "v788jumpAutoSeek788" // v788 Jump Auto Seek788
+        const val KEY_V788KERNELAUTOTUNE788 = "v788kernelAutoTune788" // v788 Kernel Auto Tune788
+        const val KEY_V788KEYAUTOBIND788 = "v788keyAutoBind788" // v788 Key Auto Bind788
+        const val KEY_V788KILLAUTOPROCESS788 = "v788killAutoProcess788" // v788 Kill Auto Process788
+        const val KEY_V788KITAUTOLOAD788 = "v788kitAutoLoad788" // v788 Kit Auto Load788
+        const val KEY_V788LABELAUTOTAG788 = "v788labelAutoTag788" // v788 Label Auto Tag788
+        const val KEY_V788LAGAUTOCOMPENSATE788 = "v788lagAutoCompensate788" // v788 Lag Auto Compensate788
+        const val KEY_V788LANGUAGEAUTODETECT788 = "v788languageAutoDetect788" // v788 Language Auto Detect788
+        const val KEY_V788LAYERAUTOZORDER788 = "v788layerAutoZOrder788" // v788 Layer Auto ZOrder788
+        const val KEY_V788LAYOUTAUTOREFLOW788 = "v788layoutAutoReflow788" // v788 Layout Auto Reflow788
+        const val KEY_V788LAZYAUTOINIT788 = "v788lazyAutoInit788" // v788 Lazy Auto Init788
+        const val KEY_V788LEADAUTOFOLLOW788 = "v788leadAutoFollow788" // v788 Lead Auto Follow788
+        const val KEY_V788LEAFAUTONODE788 = "v788leafAutoNode788" // v788 Leaf Auto Node788
+        const val KEY_V788LEARNAUTOADAPT788 = "v788learnAutoAdapt788" // v788 Learn Auto Adapt788
+        const val KEY_V788LEFTAUTOPANEL788 = "v788leftAutoPanel788" // v788 Left Auto Panel788
+        const val KEY_V789JUMPAUTOSEEK789 = "v789jumpAutoSeek789" // v789 Jump Auto Seek789
+        const val KEY_V789KERNELAUTOTUNE789 = "v789kernelAutoTune789" // v789 Kernel Auto Tune789
+        const val KEY_V789KEYAUTOBIND789 = "v789keyAutoBind789" // v789 Key Auto Bind789
+        const val KEY_V789KILLAUTOPROCESS789 = "v789killAutoProcess789" // v789 Kill Auto Process789
+        const val KEY_V789KITAUTOLOAD789 = "v789kitAutoLoad789" // v789 Kit Auto Load789
+        const val KEY_V789LABELAUTOTAG789 = "v789labelAutoTag789" // v789 Label Auto Tag789
+        const val KEY_V789LAGAUTOCOMPENSATE789 = "v789lagAutoCompensate789" // v789 Lag Auto Compensate789
+        const val KEY_V789LANGUAGEAUTODETECT789 = "v789languageAutoDetect789" // v789 Language Auto Detect789
+        const val KEY_V789LAYERAUTOZORDER789 = "v789layerAutoZOrder789" // v789 Layer Auto ZOrder789
+        const val KEY_V789LAYOUTAUTOREFLOW789 = "v789layoutAutoReflow789" // v789 Layout Auto Reflow789
+        const val KEY_V789LAZYAUTOINIT789 = "v789lazyAutoInit789" // v789 Lazy Auto Init789
+        const val KEY_V789LEADAUTOFOLLOW789 = "v789leadAutoFollow789" // v789 Lead Auto Follow789
+        const val KEY_V789LEAFAUTONODE789 = "v789leafAutoNode789" // v789 Leaf Auto Node789
+        const val KEY_V789LEARNAUTOADAPT789 = "v789learnAutoAdapt789" // v789 Learn Auto Adapt789
+        const val KEY_V789LEFTAUTOPANEL789 = "v789leftAutoPanel789" // v789 Left Auto Panel789
+        const val KEY_V790JUMPAUTOSEEK790 = "v790jumpAutoSeek790" // v790 Jump Auto Seek790
+        const val KEY_V790KERNELAUTOTUNE790 = "v790kernelAutoTune790" // v790 Kernel Auto Tune790
+        const val KEY_V790KEYAUTOBIND790 = "v790keyAutoBind790" // v790 Key Auto Bind790
+        const val KEY_V790KILLAUTOPROCESS790 = "v790killAutoProcess790" // v790 Kill Auto Process790
+        const val KEY_V790KITAUTOLOAD790 = "v790kitAutoLoad790" // v790 Kit Auto Load790
+        const val KEY_V790LABELAUTOTAG790 = "v790labelAutoTag790" // v790 Label Auto Tag790
+        const val KEY_V790LAGAUTOCOMPENSATE790 = "v790lagAutoCompensate790" // v790 Lag Auto Compensate790
+        const val KEY_V790LANGUAGEAUTODETECT790 = "v790languageAutoDetect790" // v790 Language Auto Detect790
+        const val KEY_V790LAYERAUTOZORDER790 = "v790layerAutoZOrder790" // v790 Layer Auto ZOrder790
+        const val KEY_V790LAYOUTAUTOREFLOW790 = "v790layoutAutoReflow790" // v790 Layout Auto Reflow790
+        const val KEY_V790LAZYAUTOINIT790 = "v790lazyAutoInit790" // v790 Lazy Auto Init790
+        const val KEY_V790LEADAUTOFOLLOW790 = "v790leadAutoFollow790" // v790 Lead Auto Follow790
+        const val KEY_V790LEAFAUTONODE790 = "v790leafAutoNode790" // v790 Leaf Auto Node790
+        const val KEY_V790LEARNAUTOADAPT790 = "v790learnAutoAdapt790" // v790 Learn Auto Adapt790
+        const val KEY_V790LEFTAUTOPANEL790 = "v790leftAutoPanel790" // v790 Left Auto Panel790
     }
 }
