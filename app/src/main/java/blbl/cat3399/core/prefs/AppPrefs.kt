@@ -27848,6 +27848,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getInt(KEY_V350SUBTITLEFONTSIZE352, 0)
         set(value) = prefs.edit().putInt(KEY_V350SUBTITLEFONTSIZE352, value).apply()
 
+    var v351networkQualityIndicator351: Boolean
+        get() = prefs.getBoolean(KEY_V351NETWORKQUALITYINDICATOR351, false)
+        set(value) = prefs.edit().putBoolean(KEY_V351NETWORKQUALITYINDICATOR351, value).apply()
+
+    var v351networkAutoSwitch351: Boolean
+        get() = prefs.getBoolean(KEY_V351NETWORKAUTOSWITCH351, false)
+        set(value) = prefs.edit().putBoolean(KEY_V351NETWORKAUTOSWITCH351, value).apply()
+
+    var v351networkBandwidthLimit351: Int
+        get() = prefs.getInt(KEY_V351NETWORKBANDWIDTHLIMIT351, 0)
+        set(value) = prefs.edit().putInt(KEY_V351NETWORKBANDWIDTHLIMIT351, value).apply()
+
+    var v351networkLatencyDisplay351: Boolean
+        get() = prefs.getBoolean(KEY_V351NETWORKLATENCYDISPLAY351, false)
+        set(value) = prefs.edit().putBoolean(KEY_V351NETWORKLATENCYDISPLAY351, value).apply()
+
+    var v351networkPacketLossAlert351: Boolean
+        get() = prefs.getBoolean(KEY_V351NETWORKPACKETLOSSALERT351, false)
+        set(value) = prefs.edit().putBoolean(KEY_V351NETWORKPACKETLOSSALERT351, value).apply()
+
+    var v351networkRetryStrategy351: Int
+        get() = prefs.getInt(KEY_V351NETWORKRETRYSTRATEGY351, 0)
+        set(value) = prefs.edit().putInt(KEY_V351NETWORKRETRYSTRATEGY351, value).apply()
+
+    var v351networkTimeoutCustom351: Int
+        get() = prefs.getInt(KEY_V351NETWORKTIMEOUTCUSTOM351, 0)
+        set(value) = prefs.edit().putInt(KEY_V351NETWORKTIMEOUTCUSTOM351, value).apply()
+
+    var v351networkDNS优选351: Boolean
+        get() = prefs.getBoolean(KEY_V351NETWORKDNS优选351, false)
+        set(value) = prefs.edit().putBoolean(KEY_V351NETWORKDNS优选351, value).apply()
+
+    var v351networkIPv6优先351: Boolean
+        get() = prefs.getBoolean(KEY_V351NETWORKIPV6优先351, false)
+        set(value) = prefs.edit().putBoolean(KEY_V351NETWORKIPV6优先351, value).apply()
+
+    var v351networkProxyCustom351: Boolean
+        get() = prefs.getBoolean(KEY_V351NETWORKPROXYCUSTOM351, false)
+        set(value) = prefs.edit().putBoolean(KEY_V351NETWORKPROXYCUSTOM351, value).apply()
+
+    var v351networkCacheStrategy351: Int
+        get() = prefs.getInt(KEY_V351NETWORKCACHESTRATEGY351, 0)
+        set(value) = prefs.edit().putInt(KEY_V351NETWORKCACHESTRATEGY351, value).apply()
+
+    var v351networkConnectionPool351: Int
+        get() = prefs.getInt(KEY_V351NETWORKCONNECTIONPOOL351, 0)
+        set(value) = prefs.edit().putInt(KEY_V351NETWORKCONNECTIONPOOL351, value).apply()
+
+    var v351networkKeepAlive351: Boolean
+        get() = prefs.getBoolean(KEY_V351NETWORKKEEPALIVE351, false)
+        set(value) = prefs.edit().putBoolean(KEY_V351NETWORKKEEPALIVE351, value).apply()
+
+    var v351networkCompression351: Boolean
+        get() = prefs.getBoolean(KEY_V351NETWORKCOMPRESSION351, false)
+        set(value) = prefs.edit().putBoolean(KEY_V351NETWORKCOMPRESSION351, value).apply()
+
+    var v351networkEncryption351: Boolean
+        get() = prefs.getBoolean(KEY_V351NETWORKENCRYPTION351, false)
+        set(value) = prefs.edit().putBoolean(KEY_V351NETWORKENCRYPTION351, value).apply()
+
+    var v352networkQualityIndicator352: Boolean
+        get() = prefs.getBoolean(KEY_V352NETWORKQUALITYINDICATOR352, false)
+        set(value) = prefs.edit().putBoolean(KEY_V352NETWORKQUALITYINDICATOR352, value).apply()
+
+    var v352networkAutoSwitch352: Boolean
+        get() = prefs.getBoolean(KEY_V352NETWORKAUTOSWITCH352, false)
+        set(value) = prefs.edit().putBoolean(KEY_V352NETWORKAUTOSWITCH352, value).apply()
+
+    var v352networkBandwidthLimit352: Int
+        get() = prefs.getInt(KEY_V352NETWORKBANDWIDTHLIMIT352, 0)
+        set(value) = prefs.edit().putInt(KEY_V352NETWORKBANDWIDTHLIMIT352, value).apply()
+
+    var v352networkLatencyDisplay352: Boolean
+        get() = prefs.getBoolean(KEY_V352NETWORKLATENCYDISPLAY352, false)
+        set(value) = prefs.edit().putBoolean(KEY_V352NETWORKLATENCYDISPLAY352, value).apply()
+
+    var v352networkPacketLossAlert352: Boolean
+        get() = prefs.getBoolean(KEY_V352NETWORKPACKETLOSSALERT352, false)
+        set(value) = prefs.edit().putBoolean(KEY_V352NETWORKPACKETLOSSALERT352, value).apply()
+
+    var v352networkRetryStrategy352: Int
+        get() = prefs.getInt(KEY_V352NETWORKRETRYSTRATEGY352, 0)
+        set(value) = prefs.edit().putInt(KEY_V352NETWORKRETRYSTRATEGY352, value).apply()
+
+    var v352networkTimeoutCustom352: Int
+        get() = prefs.getInt(KEY_V352NETWORKTIMEOUTCUSTOM352, 0)
+        set(value) = prefs.edit().putInt(KEY_V352NETWORKTIMEOUTCUSTOM352, value).apply()
+
+    var v352networkDNS优选352: Boolean
+        get() = prefs.getBoolean(KEY_V352NETWORKDNS优选352, false)
+        set(value) = prefs.edit().putBoolean(KEY_V352NETWORKDNS优选352, value).apply()
+
+    var v352networkIPv6优先352: Boolean
+        get() = prefs.getBoolean(KEY_V352NETWORKIPV6优先352, false)
+        set(value) = prefs.edit().putBoolean(KEY_V352NETWORKIPV6优先352, value).apply()
+
+    var v352networkProxyCustom352: Boolean
+        get() = prefs.getBoolean(KEY_V352NETWORKPROXYCUSTOM352, false)
+        set(value) = prefs.edit().putBoolean(KEY_V352NETWORKPROXYCUSTOM352, value).apply()
+
+    var v352networkCacheStrategy352: Int
+        get() = prefs.getInt(KEY_V352NETWORKCACHESTRATEGY352, 0)
+        set(value) = prefs.edit().putInt(KEY_V352NETWORKCACHESTRATEGY352, value).apply()
+
+    var v352networkConnectionPool352: Int
+        get() = prefs.getInt(KEY_V352NETWORKCONNECTIONPOOL352, 0)
+        set(value) = prefs.edit().putInt(KEY_V352NETWORKCONNECTIONPOOL352, value).apply()
+
+    var v352networkKeepAlive352: Boolean
+        get() = prefs.getBoolean(KEY_V352NETWORKKEEPALIVE352, false)
+        set(value) = prefs.edit().putBoolean(KEY_V352NETWORKKEEPALIVE352, value).apply()
+
+    var v352networkCompression352: Boolean
+        get() = prefs.getBoolean(KEY_V352NETWORKCOMPRESSION352, false)
+        set(value) = prefs.edit().putBoolean(KEY_V352NETWORKCOMPRESSION352, value).apply()
+
+    var v352networkEncryption352: Boolean
+        get() = prefs.getBoolean(KEY_V352NETWORKENCRYPTION352, false)
+        set(value) = prefs.edit().putBoolean(KEY_V352NETWORKENCRYPTION352, value).apply()
+
+    var v353networkQualityIndicator353: Boolean
+        get() = prefs.getBoolean(KEY_V353NETWORKQUALITYINDICATOR353, false)
+        set(value) = prefs.edit().putBoolean(KEY_V353NETWORKQUALITYINDICATOR353, value).apply()
+
+    var v353networkAutoSwitch353: Boolean
+        get() = prefs.getBoolean(KEY_V353NETWORKAUTOSWITCH353, false)
+        set(value) = prefs.edit().putBoolean(KEY_V353NETWORKAUTOSWITCH353, value).apply()
+
+    var v353networkBandwidthLimit353: Int
+        get() = prefs.getInt(KEY_V353NETWORKBANDWIDTHLIMIT353, 0)
+        set(value) = prefs.edit().putInt(KEY_V353NETWORKBANDWIDTHLIMIT353, value).apply()
+
+    var v353networkLatencyDisplay353: Boolean
+        get() = prefs.getBoolean(KEY_V353NETWORKLATENCYDISPLAY353, false)
+        set(value) = prefs.edit().putBoolean(KEY_V353NETWORKLATENCYDISPLAY353, value).apply()
+
+    var v353networkPacketLossAlert353: Boolean
+        get() = prefs.getBoolean(KEY_V353NETWORKPACKETLOSSALERT353, false)
+        set(value) = prefs.edit().putBoolean(KEY_V353NETWORKPACKETLOSSALERT353, value).apply()
+
+    var v353networkRetryStrategy353: Int
+        get() = prefs.getInt(KEY_V353NETWORKRETRYSTRATEGY353, 0)
+        set(value) = prefs.edit().putInt(KEY_V353NETWORKRETRYSTRATEGY353, value).apply()
+
+    var v353networkTimeoutCustom353: Int
+        get() = prefs.getInt(KEY_V353NETWORKTIMEOUTCUSTOM353, 0)
+        set(value) = prefs.edit().putInt(KEY_V353NETWORKTIMEOUTCUSTOM353, value).apply()
+
+    var v353networkDNS优选353: Boolean
+        get() = prefs.getBoolean(KEY_V353NETWORKDNS优选353, false)
+        set(value) = prefs.edit().putBoolean(KEY_V353NETWORKDNS优选353, value).apply()
+
+    var v353networkIPv6优先353: Boolean
+        get() = prefs.getBoolean(KEY_V353NETWORKIPV6优先353, false)
+        set(value) = prefs.edit().putBoolean(KEY_V353NETWORKIPV6优先353, value).apply()
+
+    var v353networkProxyCustom353: Boolean
+        get() = prefs.getBoolean(KEY_V353NETWORKPROXYCUSTOM353, false)
+        set(value) = prefs.edit().putBoolean(KEY_V353NETWORKPROXYCUSTOM353, value).apply()
+
+    var v353networkCacheStrategy353: Int
+        get() = prefs.getInt(KEY_V353NETWORKCACHESTRATEGY353, 0)
+        set(value) = prefs.edit().putInt(KEY_V353NETWORKCACHESTRATEGY353, value).apply()
+
+    var v353networkConnectionPool353: Int
+        get() = prefs.getInt(KEY_V353NETWORKCONNECTIONPOOL353, 0)
+        set(value) = prefs.edit().putInt(KEY_V353NETWORKCONNECTIONPOOL353, value).apply()
+
+    var v353networkKeepAlive353: Boolean
+        get() = prefs.getBoolean(KEY_V353NETWORKKEEPALIVE353, false)
+        set(value) = prefs.edit().putBoolean(KEY_V353NETWORKKEEPALIVE353, value).apply()
+
+    var v353networkCompression353: Boolean
+        get() = prefs.getBoolean(KEY_V353NETWORKCOMPRESSION353, false)
+        set(value) = prefs.edit().putBoolean(KEY_V353NETWORKCOMPRESSION353, value).apply()
+
+    var v353networkEncryption353: Boolean
+        get() = prefs.getBoolean(KEY_V353NETWORKENCRYPTION353, false)
+        set(value) = prefs.edit().putBoolean(KEY_V353NETWORKENCRYPTION353, value).apply()
+
+    var v354networkQualityIndicator354: Boolean
+        get() = prefs.getBoolean(KEY_V354NETWORKQUALITYINDICATOR354, false)
+        set(value) = prefs.edit().putBoolean(KEY_V354NETWORKQUALITYINDICATOR354, value).apply()
+
+    var v354networkAutoSwitch354: Boolean
+        get() = prefs.getBoolean(KEY_V354NETWORKAUTOSWITCH354, false)
+        set(value) = prefs.edit().putBoolean(KEY_V354NETWORKAUTOSWITCH354, value).apply()
+
+    var v354networkBandwidthLimit354: Int
+        get() = prefs.getInt(KEY_V354NETWORKBANDWIDTHLIMIT354, 0)
+        set(value) = prefs.edit().putInt(KEY_V354NETWORKBANDWIDTHLIMIT354, value).apply()
+
+    var v354networkLatencyDisplay354: Boolean
+        get() = prefs.getBoolean(KEY_V354NETWORKLATENCYDISPLAY354, false)
+        set(value) = prefs.edit().putBoolean(KEY_V354NETWORKLATENCYDISPLAY354, value).apply()
+
+    var v354networkPacketLossAlert354: Boolean
+        get() = prefs.getBoolean(KEY_V354NETWORKPACKETLOSSALERT354, false)
+        set(value) = prefs.edit().putBoolean(KEY_V354NETWORKPACKETLOSSALERT354, value).apply()
+
+    var v354networkRetryStrategy354: Int
+        get() = prefs.getInt(KEY_V354NETWORKRETRYSTRATEGY354, 0)
+        set(value) = prefs.edit().putInt(KEY_V354NETWORKRETRYSTRATEGY354, value).apply()
+
+    var v354networkTimeoutCustom354: Int
+        get() = prefs.getInt(KEY_V354NETWORKTIMEOUTCUSTOM354, 0)
+        set(value) = prefs.edit().putInt(KEY_V354NETWORKTIMEOUTCUSTOM354, value).apply()
+
+    var v354networkDNS优选354: Boolean
+        get() = prefs.getBoolean(KEY_V354NETWORKDNS优选354, false)
+        set(value) = prefs.edit().putBoolean(KEY_V354NETWORKDNS优选354, value).apply()
+
+    var v354networkIPv6优先354: Boolean
+        get() = prefs.getBoolean(KEY_V354NETWORKIPV6优先354, false)
+        set(value) = prefs.edit().putBoolean(KEY_V354NETWORKIPV6优先354, value).apply()
+
+    var v354networkProxyCustom354: Boolean
+        get() = prefs.getBoolean(KEY_V354NETWORKPROXYCUSTOM354, false)
+        set(value) = prefs.edit().putBoolean(KEY_V354NETWORKPROXYCUSTOM354, value).apply()
+
+    var v354networkCacheStrategy354: Int
+        get() = prefs.getInt(KEY_V354NETWORKCACHESTRATEGY354, 0)
+        set(value) = prefs.edit().putInt(KEY_V354NETWORKCACHESTRATEGY354, value).apply()
+
+    var v354networkConnectionPool354: Int
+        get() = prefs.getInt(KEY_V354NETWORKCONNECTIONPOOL354, 0)
+        set(value) = prefs.edit().putInt(KEY_V354NETWORKCONNECTIONPOOL354, value).apply()
+
+    var v354networkKeepAlive354: Boolean
+        get() = prefs.getBoolean(KEY_V354NETWORKKEEPALIVE354, false)
+        set(value) = prefs.edit().putBoolean(KEY_V354NETWORKKEEPALIVE354, value).apply()
+
+    var v354networkCompression354: Boolean
+        get() = prefs.getBoolean(KEY_V354NETWORKCOMPRESSION354, false)
+        set(value) = prefs.edit().putBoolean(KEY_V354NETWORKCOMPRESSION354, value).apply()
+
+    var v354networkEncryption354: Boolean
+        get() = prefs.getBoolean(KEY_V354NETWORKENCRYPTION354, false)
+        set(value) = prefs.edit().putBoolean(KEY_V354NETWORKENCRYPTION354, value).apply()
+
+    var v355networkQualityIndicator355: Boolean
+        get() = prefs.getBoolean(KEY_V355NETWORKQUALITYINDICATOR355, false)
+        set(value) = prefs.edit().putBoolean(KEY_V355NETWORKQUALITYINDICATOR355, value).apply()
+
+    var v355networkAutoSwitch355: Boolean
+        get() = prefs.getBoolean(KEY_V355NETWORKAUTOSWITCH355, false)
+        set(value) = prefs.edit().putBoolean(KEY_V355NETWORKAUTOSWITCH355, value).apply()
+
+    var v355networkBandwidthLimit355: Int
+        get() = prefs.getInt(KEY_V355NETWORKBANDWIDTHLIMIT355, 0)
+        set(value) = prefs.edit().putInt(KEY_V355NETWORKBANDWIDTHLIMIT355, value).apply()
+
+    var v355networkLatencyDisplay355: Boolean
+        get() = prefs.getBoolean(KEY_V355NETWORKLATENCYDISPLAY355, false)
+        set(value) = prefs.edit().putBoolean(KEY_V355NETWORKLATENCYDISPLAY355, value).apply()
+
+    var v355networkPacketLossAlert355: Boolean
+        get() = prefs.getBoolean(KEY_V355NETWORKPACKETLOSSALERT355, false)
+        set(value) = prefs.edit().putBoolean(KEY_V355NETWORKPACKETLOSSALERT355, value).apply()
+
+    var v355networkRetryStrategy355: Int
+        get() = prefs.getInt(KEY_V355NETWORKRETRYSTRATEGY355, 0)
+        set(value) = prefs.edit().putInt(KEY_V355NETWORKRETRYSTRATEGY355, value).apply()
+
+    var v355networkTimeoutCustom355: Int
+        get() = prefs.getInt(KEY_V355NETWORKTIMEOUTCUSTOM355, 0)
+        set(value) = prefs.edit().putInt(KEY_V355NETWORKTIMEOUTCUSTOM355, value).apply()
+
+    var v355networkDNS优选355: Boolean
+        get() = prefs.getBoolean(KEY_V355NETWORKDNS优选355, false)
+        set(value) = prefs.edit().putBoolean(KEY_V355NETWORKDNS优选355, value).apply()
+
+    var v355networkIPv6优先355: Boolean
+        get() = prefs.getBoolean(KEY_V355NETWORKIPV6优先355, false)
+        set(value) = prefs.edit().putBoolean(KEY_V355NETWORKIPV6优先355, value).apply()
+
+    var v355networkProxyCustom355: Boolean
+        get() = prefs.getBoolean(KEY_V355NETWORKPROXYCUSTOM355, false)
+        set(value) = prefs.edit().putBoolean(KEY_V355NETWORKPROXYCUSTOM355, value).apply()
+
+    var v355networkCacheStrategy355: Int
+        get() = prefs.getInt(KEY_V355NETWORKCACHESTRATEGY355, 0)
+        set(value) = prefs.edit().putInt(KEY_V355NETWORKCACHESTRATEGY355, value).apply()
+
+    var v355networkConnectionPool355: Int
+        get() = prefs.getInt(KEY_V355NETWORKCONNECTIONPOOL355, 0)
+        set(value) = prefs.edit().putInt(KEY_V355NETWORKCONNECTIONPOOL355, value).apply()
+
+    var v355networkKeepAlive355: Boolean
+        get() = prefs.getBoolean(KEY_V355NETWORKKEEPALIVE355, false)
+        set(value) = prefs.edit().putBoolean(KEY_V355NETWORKKEEPALIVE355, value).apply()
+
+    var v355networkCompression355: Boolean
+        get() = prefs.getBoolean(KEY_V355NETWORKCOMPRESSION355, false)
+        set(value) = prefs.edit().putBoolean(KEY_V355NETWORKCOMPRESSION355, value).apply()
+
+    var v355networkEncryption355: Boolean
+        get() = prefs.getBoolean(KEY_V355NETWORKENCRYPTION355, false)
+        set(value) = prefs.edit().putBoolean(KEY_V355NETWORKENCRYPTION355, value).apply()
+
+    var v356networkQualityIndicator356: Boolean
+        get() = prefs.getBoolean(KEY_V356NETWORKQUALITYINDICATOR356, false)
+        set(value) = prefs.edit().putBoolean(KEY_V356NETWORKQUALITYINDICATOR356, value).apply()
+
+    var v356networkAutoSwitch356: Boolean
+        get() = prefs.getBoolean(KEY_V356NETWORKAUTOSWITCH356, false)
+        set(value) = prefs.edit().putBoolean(KEY_V356NETWORKAUTOSWITCH356, value).apply()
+
+    var v356networkBandwidthLimit356: Int
+        get() = prefs.getInt(KEY_V356NETWORKBANDWIDTHLIMIT356, 0)
+        set(value) = prefs.edit().putInt(KEY_V356NETWORKBANDWIDTHLIMIT356, value).apply()
+
+    var v356networkLatencyDisplay356: Boolean
+        get() = prefs.getBoolean(KEY_V356NETWORKLATENCYDISPLAY356, false)
+        set(value) = prefs.edit().putBoolean(KEY_V356NETWORKLATENCYDISPLAY356, value).apply()
+
+    var v356networkPacketLossAlert356: Boolean
+        get() = prefs.getBoolean(KEY_V356NETWORKPACKETLOSSALERT356, false)
+        set(value) = prefs.edit().putBoolean(KEY_V356NETWORKPACKETLOSSALERT356, value).apply()
+
+    var v356networkRetryStrategy356: Int
+        get() = prefs.getInt(KEY_V356NETWORKRETRYSTRATEGY356, 0)
+        set(value) = prefs.edit().putInt(KEY_V356NETWORKRETRYSTRATEGY356, value).apply()
+
+    var v356networkTimeoutCustom356: Int
+        get() = prefs.getInt(KEY_V356NETWORKTIMEOUTCUSTOM356, 0)
+        set(value) = prefs.edit().putInt(KEY_V356NETWORKTIMEOUTCUSTOM356, value).apply()
+
+    var v356networkDNS优选356: Boolean
+        get() = prefs.getBoolean(KEY_V356NETWORKDNS优选356, false)
+        set(value) = prefs.edit().putBoolean(KEY_V356NETWORKDNS优选356, value).apply()
+
+    var v356networkIPv6优先356: Boolean
+        get() = prefs.getBoolean(KEY_V356NETWORKIPV6优先356, false)
+        set(value) = prefs.edit().putBoolean(KEY_V356NETWORKIPV6优先356, value).apply()
+
+    var v356networkProxyCustom356: Boolean
+        get() = prefs.getBoolean(KEY_V356NETWORKPROXYCUSTOM356, false)
+        set(value) = prefs.edit().putBoolean(KEY_V356NETWORKPROXYCUSTOM356, value).apply()
+
+    var v356networkCacheStrategy356: Int
+        get() = prefs.getInt(KEY_V356NETWORKCACHESTRATEGY356, 0)
+        set(value) = prefs.edit().putInt(KEY_V356NETWORKCACHESTRATEGY356, value).apply()
+
+    var v356networkConnectionPool356: Int
+        get() = prefs.getInt(KEY_V356NETWORKCONNECTIONPOOL356, 0)
+        set(value) = prefs.edit().putInt(KEY_V356NETWORKCONNECTIONPOOL356, value).apply()
+
+    var v356networkKeepAlive356: Boolean
+        get() = prefs.getBoolean(KEY_V356NETWORKKEEPALIVE356, false)
+        set(value) = prefs.edit().putBoolean(KEY_V356NETWORKKEEPALIVE356, value).apply()
+
+    var v356networkCompression356: Boolean
+        get() = prefs.getBoolean(KEY_V356NETWORKCOMPRESSION356, false)
+        set(value) = prefs.edit().putBoolean(KEY_V356NETWORKCOMPRESSION356, value).apply()
+
+    var v356networkEncryption356: Boolean
+        get() = prefs.getBoolean(KEY_V356NETWORKENCRYPTION356, false)
+        set(value) = prefs.edit().putBoolean(KEY_V356NETWORKENCRYPTION356, value).apply()
+
+    var v357networkQualityIndicator357: Boolean
+        get() = prefs.getBoolean(KEY_V357NETWORKQUALITYINDICATOR357, false)
+        set(value) = prefs.edit().putBoolean(KEY_V357NETWORKQUALITYINDICATOR357, value).apply()
+
+    var v357networkAutoSwitch357: Boolean
+        get() = prefs.getBoolean(KEY_V357NETWORKAUTOSWITCH357, false)
+        set(value) = prefs.edit().putBoolean(KEY_V357NETWORKAUTOSWITCH357, value).apply()
+
+    var v357networkBandwidthLimit357: Int
+        get() = prefs.getInt(KEY_V357NETWORKBANDWIDTHLIMIT357, 0)
+        set(value) = prefs.edit().putInt(KEY_V357NETWORKBANDWIDTHLIMIT357, value).apply()
+
+    var v357networkLatencyDisplay357: Boolean
+        get() = prefs.getBoolean(KEY_V357NETWORKLATENCYDISPLAY357, false)
+        set(value) = prefs.edit().putBoolean(KEY_V357NETWORKLATENCYDISPLAY357, value).apply()
+
+    var v357networkPacketLossAlert357: Boolean
+        get() = prefs.getBoolean(KEY_V357NETWORKPACKETLOSSALERT357, false)
+        set(value) = prefs.edit().putBoolean(KEY_V357NETWORKPACKETLOSSALERT357, value).apply()
+
+    var v357networkRetryStrategy357: Int
+        get() = prefs.getInt(KEY_V357NETWORKRETRYSTRATEGY357, 0)
+        set(value) = prefs.edit().putInt(KEY_V357NETWORKRETRYSTRATEGY357, value).apply()
+
+    var v357networkTimeoutCustom357: Int
+        get() = prefs.getInt(KEY_V357NETWORKTIMEOUTCUSTOM357, 0)
+        set(value) = prefs.edit().putInt(KEY_V357NETWORKTIMEOUTCUSTOM357, value).apply()
+
+    var v357networkDNS优选357: Boolean
+        get() = prefs.getBoolean(KEY_V357NETWORKDNS优选357, false)
+        set(value) = prefs.edit().putBoolean(KEY_V357NETWORKDNS优选357, value).apply()
+
+    var v357networkIPv6优先357: Boolean
+        get() = prefs.getBoolean(KEY_V357NETWORKIPV6优先357, false)
+        set(value) = prefs.edit().putBoolean(KEY_V357NETWORKIPV6优先357, value).apply()
+
+    var v357networkProxyCustom357: Boolean
+        get() = prefs.getBoolean(KEY_V357NETWORKPROXYCUSTOM357, false)
+        set(value) = prefs.edit().putBoolean(KEY_V357NETWORKPROXYCUSTOM357, value).apply()
+
+    var v357networkCacheStrategy357: Int
+        get() = prefs.getInt(KEY_V357NETWORKCACHESTRATEGY357, 0)
+        set(value) = prefs.edit().putInt(KEY_V357NETWORKCACHESTRATEGY357, value).apply()
+
+    var v357networkConnectionPool357: Int
+        get() = prefs.getInt(KEY_V357NETWORKCONNECTIONPOOL357, 0)
+        set(value) = prefs.edit().putInt(KEY_V357NETWORKCONNECTIONPOOL357, value).apply()
+
+    var v357networkKeepAlive357: Boolean
+        get() = prefs.getBoolean(KEY_V357NETWORKKEEPALIVE357, false)
+        set(value) = prefs.edit().putBoolean(KEY_V357NETWORKKEEPALIVE357, value).apply()
+
+    var v357networkCompression357: Boolean
+        get() = prefs.getBoolean(KEY_V357NETWORKCOMPRESSION357, false)
+        set(value) = prefs.edit().putBoolean(KEY_V357NETWORKCOMPRESSION357, value).apply()
+
+    var v357networkEncryption357: Boolean
+        get() = prefs.getBoolean(KEY_V357NETWORKENCRYPTION357, false)
+        set(value) = prefs.edit().putBoolean(KEY_V357NETWORKENCRYPTION357, value).apply()
+
+    var v358networkQualityIndicator358: Boolean
+        get() = prefs.getBoolean(KEY_V358NETWORKQUALITYINDICATOR358, false)
+        set(value) = prefs.edit().putBoolean(KEY_V358NETWORKQUALITYINDICATOR358, value).apply()
+
+    var v358networkAutoSwitch358: Boolean
+        get() = prefs.getBoolean(KEY_V358NETWORKAUTOSWITCH358, false)
+        set(value) = prefs.edit().putBoolean(KEY_V358NETWORKAUTOSWITCH358, value).apply()
+
+    var v358networkBandwidthLimit358: Int
+        get() = prefs.getInt(KEY_V358NETWORKBANDWIDTHLIMIT358, 0)
+        set(value) = prefs.edit().putInt(KEY_V358NETWORKBANDWIDTHLIMIT358, value).apply()
+
+    var v358networkLatencyDisplay358: Boolean
+        get() = prefs.getBoolean(KEY_V358NETWORKLATENCYDISPLAY358, false)
+        set(value) = prefs.edit().putBoolean(KEY_V358NETWORKLATENCYDISPLAY358, value).apply()
+
+    var v358networkPacketLossAlert358: Boolean
+        get() = prefs.getBoolean(KEY_V358NETWORKPACKETLOSSALERT358, false)
+        set(value) = prefs.edit().putBoolean(KEY_V358NETWORKPACKETLOSSALERT358, value).apply()
+
+    var v358networkRetryStrategy358: Int
+        get() = prefs.getInt(KEY_V358NETWORKRETRYSTRATEGY358, 0)
+        set(value) = prefs.edit().putInt(KEY_V358NETWORKRETRYSTRATEGY358, value).apply()
+
+    var v358networkTimeoutCustom358: Int
+        get() = prefs.getInt(KEY_V358NETWORKTIMEOUTCUSTOM358, 0)
+        set(value) = prefs.edit().putInt(KEY_V358NETWORKTIMEOUTCUSTOM358, value).apply()
+
+    var v358networkDNS优选358: Boolean
+        get() = prefs.getBoolean(KEY_V358NETWORKDNS优选358, false)
+        set(value) = prefs.edit().putBoolean(KEY_V358NETWORKDNS优选358, value).apply()
+
+    var v358networkIPv6优先358: Boolean
+        get() = prefs.getBoolean(KEY_V358NETWORKIPV6优先358, false)
+        set(value) = prefs.edit().putBoolean(KEY_V358NETWORKIPV6优先358, value).apply()
+
+    var v358networkProxyCustom358: Boolean
+        get() = prefs.getBoolean(KEY_V358NETWORKPROXYCUSTOM358, false)
+        set(value) = prefs.edit().putBoolean(KEY_V358NETWORKPROXYCUSTOM358, value).apply()
+
+    var v358networkCacheStrategy358: Int
+        get() = prefs.getInt(KEY_V358NETWORKCACHESTRATEGY358, 0)
+        set(value) = prefs.edit().putInt(KEY_V358NETWORKCACHESTRATEGY358, value).apply()
+
+    var v358networkConnectionPool358: Int
+        get() = prefs.getInt(KEY_V358NETWORKCONNECTIONPOOL358, 0)
+        set(value) = prefs.edit().putInt(KEY_V358NETWORKCONNECTIONPOOL358, value).apply()
+
+    var v358networkKeepAlive358: Boolean
+        get() = prefs.getBoolean(KEY_V358NETWORKKEEPALIVE358, false)
+        set(value) = prefs.edit().putBoolean(KEY_V358NETWORKKEEPALIVE358, value).apply()
+
+    var v358networkCompression358: Boolean
+        get() = prefs.getBoolean(KEY_V358NETWORKCOMPRESSION358, false)
+        set(value) = prefs.edit().putBoolean(KEY_V358NETWORKCOMPRESSION358, value).apply()
+
+    var v358networkEncryption358: Boolean
+        get() = prefs.getBoolean(KEY_V358NETWORKENCRYPTION358, false)
+        set(value) = prefs.edit().putBoolean(KEY_V358NETWORKENCRYPTION358, value).apply()
+
+    var v359networkQualityIndicator359: Boolean
+        get() = prefs.getBoolean(KEY_V359NETWORKQUALITYINDICATOR359, false)
+        set(value) = prefs.edit().putBoolean(KEY_V359NETWORKQUALITYINDICATOR359, value).apply()
+
+    var v359networkAutoSwitch359: Boolean
+        get() = prefs.getBoolean(KEY_V359NETWORKAUTOSWITCH359, false)
+        set(value) = prefs.edit().putBoolean(KEY_V359NETWORKAUTOSWITCH359, value).apply()
+
+    var v359networkBandwidthLimit359: Int
+        get() = prefs.getInt(KEY_V359NETWORKBANDWIDTHLIMIT359, 0)
+        set(value) = prefs.edit().putInt(KEY_V359NETWORKBANDWIDTHLIMIT359, value).apply()
+
+    var v359networkLatencyDisplay359: Boolean
+        get() = prefs.getBoolean(KEY_V359NETWORKLATENCYDISPLAY359, false)
+        set(value) = prefs.edit().putBoolean(KEY_V359NETWORKLATENCYDISPLAY359, value).apply()
+
+    var v359networkPacketLossAlert359: Boolean
+        get() = prefs.getBoolean(KEY_V359NETWORKPACKETLOSSALERT359, false)
+        set(value) = prefs.edit().putBoolean(KEY_V359NETWORKPACKETLOSSALERT359, value).apply()
+
+    var v359networkRetryStrategy359: Int
+        get() = prefs.getInt(KEY_V359NETWORKRETRYSTRATEGY359, 0)
+        set(value) = prefs.edit().putInt(KEY_V359NETWORKRETRYSTRATEGY359, value).apply()
+
+    var v359networkTimeoutCustom359: Int
+        get() = prefs.getInt(KEY_V359NETWORKTIMEOUTCUSTOM359, 0)
+        set(value) = prefs.edit().putInt(KEY_V359NETWORKTIMEOUTCUSTOM359, value).apply()
+
+    var v359networkDNS优选359: Boolean
+        get() = prefs.getBoolean(KEY_V359NETWORKDNS优选359, false)
+        set(value) = prefs.edit().putBoolean(KEY_V359NETWORKDNS优选359, value).apply()
+
+    var v359networkIPv6优先359: Boolean
+        get() = prefs.getBoolean(KEY_V359NETWORKIPV6优先359, false)
+        set(value) = prefs.edit().putBoolean(KEY_V359NETWORKIPV6优先359, value).apply()
+
+    var v359networkProxyCustom359: Boolean
+        get() = prefs.getBoolean(KEY_V359NETWORKPROXYCUSTOM359, false)
+        set(value) = prefs.edit().putBoolean(KEY_V359NETWORKPROXYCUSTOM359, value).apply()
+
+    var v359networkCacheStrategy359: Int
+        get() = prefs.getInt(KEY_V359NETWORKCACHESTRATEGY359, 0)
+        set(value) = prefs.edit().putInt(KEY_V359NETWORKCACHESTRATEGY359, value).apply()
+
+    var v359networkConnectionPool359: Int
+        get() = prefs.getInt(KEY_V359NETWORKCONNECTIONPOOL359, 0)
+        set(value) = prefs.edit().putInt(KEY_V359NETWORKCONNECTIONPOOL359, value).apply()
+
+    var v359networkKeepAlive359: Boolean
+        get() = prefs.getBoolean(KEY_V359NETWORKKEEPALIVE359, false)
+        set(value) = prefs.edit().putBoolean(KEY_V359NETWORKKEEPALIVE359, value).apply()
+
+    var v359networkCompression359: Boolean
+        get() = prefs.getBoolean(KEY_V359NETWORKCOMPRESSION359, false)
+        set(value) = prefs.edit().putBoolean(KEY_V359NETWORKCOMPRESSION359, value).apply()
+
+    var v359networkEncryption359: Boolean
+        get() = prefs.getBoolean(KEY_V359NETWORKENCRYPTION359, false)
+        set(value) = prefs.edit().putBoolean(KEY_V359NETWORKENCRYPTION359, value).apply()
+
+    var v360networkQualityIndicator360: Boolean
+        get() = prefs.getBoolean(KEY_V360NETWORKQUALITYINDICATOR360, false)
+        set(value) = prefs.edit().putBoolean(KEY_V360NETWORKQUALITYINDICATOR360, value).apply()
+
+    var v360networkAutoSwitch360: Boolean
+        get() = prefs.getBoolean(KEY_V360NETWORKAUTOSWITCH360, false)
+        set(value) = prefs.edit().putBoolean(KEY_V360NETWORKAUTOSWITCH360, value).apply()
+
+    var v360networkBandwidthLimit360: Int
+        get() = prefs.getInt(KEY_V360NETWORKBANDWIDTHLIMIT360, 0)
+        set(value) = prefs.edit().putInt(KEY_V360NETWORKBANDWIDTHLIMIT360, value).apply()
+
+    var v360networkLatencyDisplay360: Boolean
+        get() = prefs.getBoolean(KEY_V360NETWORKLATENCYDISPLAY360, false)
+        set(value) = prefs.edit().putBoolean(KEY_V360NETWORKLATENCYDISPLAY360, value).apply()
+
+    var v360networkPacketLossAlert360: Boolean
+        get() = prefs.getBoolean(KEY_V360NETWORKPACKETLOSSALERT360, false)
+        set(value) = prefs.edit().putBoolean(KEY_V360NETWORKPACKETLOSSALERT360, value).apply()
+
+    var v360networkRetryStrategy360: Int
+        get() = prefs.getInt(KEY_V360NETWORKRETRYSTRATEGY360, 0)
+        set(value) = prefs.edit().putInt(KEY_V360NETWORKRETRYSTRATEGY360, value).apply()
+
+    var v360networkTimeoutCustom360: Int
+        get() = prefs.getInt(KEY_V360NETWORKTIMEOUTCUSTOM360, 0)
+        set(value) = prefs.edit().putInt(KEY_V360NETWORKTIMEOUTCUSTOM360, value).apply()
+
+    var v360networkDNS优选360: Boolean
+        get() = prefs.getBoolean(KEY_V360NETWORKDNS优选360, false)
+        set(value) = prefs.edit().putBoolean(KEY_V360NETWORKDNS优选360, value).apply()
+
+    var v360networkIPv6优先360: Boolean
+        get() = prefs.getBoolean(KEY_V360NETWORKIPV6优先360, false)
+        set(value) = prefs.edit().putBoolean(KEY_V360NETWORKIPV6优先360, value).apply()
+
+    var v360networkProxyCustom360: Boolean
+        get() = prefs.getBoolean(KEY_V360NETWORKPROXYCUSTOM360, false)
+        set(value) = prefs.edit().putBoolean(KEY_V360NETWORKPROXYCUSTOM360, value).apply()
+
+    var v360networkCacheStrategy360: Int
+        get() = prefs.getInt(KEY_V360NETWORKCACHESTRATEGY360, 0)
+        set(value) = prefs.edit().putInt(KEY_V360NETWORKCACHESTRATEGY360, value).apply()
+
+    var v360networkConnectionPool360: Int
+        get() = prefs.getInt(KEY_V360NETWORKCONNECTIONPOOL360, 0)
+        set(value) = prefs.edit().putInt(KEY_V360NETWORKCONNECTIONPOOL360, value).apply()
+
+    var v360networkKeepAlive360: Boolean
+        get() = prefs.getBoolean(KEY_V360NETWORKKEEPALIVE360, false)
+        set(value) = prefs.edit().putBoolean(KEY_V360NETWORKKEEPALIVE360, value).apply()
+
+    var v360networkCompression360: Boolean
+        get() = prefs.getBoolean(KEY_V360NETWORKCOMPRESSION360, false)
+        set(value) = prefs.edit().putBoolean(KEY_V360NETWORKCOMPRESSION360, value).apply()
+
+    var v360networkEncryption360: Boolean
+        get() = prefs.getBoolean(KEY_V360NETWORKENCRYPTION360, false)
+        set(value) = prefs.edit().putBoolean(KEY_V360NETWORKENCRYPTION360, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -35680,5 +36280,155 @@ class AppPrefs(context: Context) {
         const val KEY_V350VIDEOROTATEANGLE342 = "v350videoRotateAngle342" // v350 Video Rotate Angle342
         const val KEY_V350DANMAKUMERGETHRESHOLD352 = "v350danmakuMergeThreshold352" // v350 Danmaku Merge Threshold352
         const val KEY_V350SUBTITLEFONTSIZE352 = "v350subtitleFontSize352" // v350 Subtitle Font Size352
+        const val KEY_V351NETWORKQUALITYINDICATOR351 = "v351networkQualityIndicator351" // v351 Network Quality Indicator351
+        const val KEY_V351NETWORKAUTOSWITCH351 = "v351networkAutoSwitch351" // v351 Network Auto Switch351
+        const val KEY_V351NETWORKBANDWIDTHLIMIT351 = "v351networkBandwidthLimit351" // v351 Network Bandwidth Limit351
+        const val KEY_V351NETWORKLATENCYDISPLAY351 = "v351networkLatencyDisplay351" // v351 Network Latency Display351
+        const val KEY_V351NETWORKPACKETLOSSALERT351 = "v351networkPacketLossAlert351" // v351 Network Packet Loss Alert351
+        const val KEY_V351NETWORKRETRYSTRATEGY351 = "v351networkRetryStrategy351" // v351 Network Retry Strategy351
+        const val KEY_V351NETWORKTIMEOUTCUSTOM351 = "v351networkTimeoutCustom351" // v351 Network Timeout Custom351
+        const val KEY_V351NETWORKDNS优选351 = "v351networkDNS优选351" // v351 Network DNS优选351
+        const val KEY_V351NETWORKIPV6优先351 = "v351networkIPv6优先351" // v351 Network IPv6优先351
+        const val KEY_V351NETWORKPROXYCUSTOM351 = "v351networkProxyCustom351" // v351 Network Proxy Custom351
+        const val KEY_V351NETWORKCACHESTRATEGY351 = "v351networkCacheStrategy351" // v351 Network Cache Strategy351
+        const val KEY_V351NETWORKCONNECTIONPOOL351 = "v351networkConnectionPool351" // v351 Network Connection Pool351
+        const val KEY_V351NETWORKKEEPALIVE351 = "v351networkKeepAlive351" // v351 Network Keep Alive351
+        const val KEY_V351NETWORKCOMPRESSION351 = "v351networkCompression351" // v351 Network Compression351
+        const val KEY_V351NETWORKENCRYPTION351 = "v351networkEncryption351" // v351 Network Encryption351
+        const val KEY_V352NETWORKQUALITYINDICATOR352 = "v352networkQualityIndicator352" // v352 Network Quality Indicator352
+        const val KEY_V352NETWORKAUTOSWITCH352 = "v352networkAutoSwitch352" // v352 Network Auto Switch352
+        const val KEY_V352NETWORKBANDWIDTHLIMIT352 = "v352networkBandwidthLimit352" // v352 Network Bandwidth Limit352
+        const val KEY_V352NETWORKLATENCYDISPLAY352 = "v352networkLatencyDisplay352" // v352 Network Latency Display352
+        const val KEY_V352NETWORKPACKETLOSSALERT352 = "v352networkPacketLossAlert352" // v352 Network Packet Loss Alert352
+        const val KEY_V352NETWORKRETRYSTRATEGY352 = "v352networkRetryStrategy352" // v352 Network Retry Strategy352
+        const val KEY_V352NETWORKTIMEOUTCUSTOM352 = "v352networkTimeoutCustom352" // v352 Network Timeout Custom352
+        const val KEY_V352NETWORKDNS优选352 = "v352networkDNS优选352" // v352 Network DNS优选352
+        const val KEY_V352NETWORKIPV6优先352 = "v352networkIPv6优先352" // v352 Network IPv6优先352
+        const val KEY_V352NETWORKPROXYCUSTOM352 = "v352networkProxyCustom352" // v352 Network Proxy Custom352
+        const val KEY_V352NETWORKCACHESTRATEGY352 = "v352networkCacheStrategy352" // v352 Network Cache Strategy352
+        const val KEY_V352NETWORKCONNECTIONPOOL352 = "v352networkConnectionPool352" // v352 Network Connection Pool352
+        const val KEY_V352NETWORKKEEPALIVE352 = "v352networkKeepAlive352" // v352 Network Keep Alive352
+        const val KEY_V352NETWORKCOMPRESSION352 = "v352networkCompression352" // v352 Network Compression352
+        const val KEY_V352NETWORKENCRYPTION352 = "v352networkEncryption352" // v352 Network Encryption352
+        const val KEY_V353NETWORKQUALITYINDICATOR353 = "v353networkQualityIndicator353" // v353 Network Quality Indicator353
+        const val KEY_V353NETWORKAUTOSWITCH353 = "v353networkAutoSwitch353" // v353 Network Auto Switch353
+        const val KEY_V353NETWORKBANDWIDTHLIMIT353 = "v353networkBandwidthLimit353" // v353 Network Bandwidth Limit353
+        const val KEY_V353NETWORKLATENCYDISPLAY353 = "v353networkLatencyDisplay353" // v353 Network Latency Display353
+        const val KEY_V353NETWORKPACKETLOSSALERT353 = "v353networkPacketLossAlert353" // v353 Network Packet Loss Alert353
+        const val KEY_V353NETWORKRETRYSTRATEGY353 = "v353networkRetryStrategy353" // v353 Network Retry Strategy353
+        const val KEY_V353NETWORKTIMEOUTCUSTOM353 = "v353networkTimeoutCustom353" // v353 Network Timeout Custom353
+        const val KEY_V353NETWORKDNS优选353 = "v353networkDNS优选353" // v353 Network DNS优选353
+        const val KEY_V353NETWORKIPV6优先353 = "v353networkIPv6优先353" // v353 Network IPv6优先353
+        const val KEY_V353NETWORKPROXYCUSTOM353 = "v353networkProxyCustom353" // v353 Network Proxy Custom353
+        const val KEY_V353NETWORKCACHESTRATEGY353 = "v353networkCacheStrategy353" // v353 Network Cache Strategy353
+        const val KEY_V353NETWORKCONNECTIONPOOL353 = "v353networkConnectionPool353" // v353 Network Connection Pool353
+        const val KEY_V353NETWORKKEEPALIVE353 = "v353networkKeepAlive353" // v353 Network Keep Alive353
+        const val KEY_V353NETWORKCOMPRESSION353 = "v353networkCompression353" // v353 Network Compression353
+        const val KEY_V353NETWORKENCRYPTION353 = "v353networkEncryption353" // v353 Network Encryption353
+        const val KEY_V354NETWORKQUALITYINDICATOR354 = "v354networkQualityIndicator354" // v354 Network Quality Indicator354
+        const val KEY_V354NETWORKAUTOSWITCH354 = "v354networkAutoSwitch354" // v354 Network Auto Switch354
+        const val KEY_V354NETWORKBANDWIDTHLIMIT354 = "v354networkBandwidthLimit354" // v354 Network Bandwidth Limit354
+        const val KEY_V354NETWORKLATENCYDISPLAY354 = "v354networkLatencyDisplay354" // v354 Network Latency Display354
+        const val KEY_V354NETWORKPACKETLOSSALERT354 = "v354networkPacketLossAlert354" // v354 Network Packet Loss Alert354
+        const val KEY_V354NETWORKRETRYSTRATEGY354 = "v354networkRetryStrategy354" // v354 Network Retry Strategy354
+        const val KEY_V354NETWORKTIMEOUTCUSTOM354 = "v354networkTimeoutCustom354" // v354 Network Timeout Custom354
+        const val KEY_V354NETWORKDNS优选354 = "v354networkDNS优选354" // v354 Network DNS优选354
+        const val KEY_V354NETWORKIPV6优先354 = "v354networkIPv6优先354" // v354 Network IPv6优先354
+        const val KEY_V354NETWORKPROXYCUSTOM354 = "v354networkProxyCustom354" // v354 Network Proxy Custom354
+        const val KEY_V354NETWORKCACHESTRATEGY354 = "v354networkCacheStrategy354" // v354 Network Cache Strategy354
+        const val KEY_V354NETWORKCONNECTIONPOOL354 = "v354networkConnectionPool354" // v354 Network Connection Pool354
+        const val KEY_V354NETWORKKEEPALIVE354 = "v354networkKeepAlive354" // v354 Network Keep Alive354
+        const val KEY_V354NETWORKCOMPRESSION354 = "v354networkCompression354" // v354 Network Compression354
+        const val KEY_V354NETWORKENCRYPTION354 = "v354networkEncryption354" // v354 Network Encryption354
+        const val KEY_V355NETWORKQUALITYINDICATOR355 = "v355networkQualityIndicator355" // v355 Network Quality Indicator355
+        const val KEY_V355NETWORKAUTOSWITCH355 = "v355networkAutoSwitch355" // v355 Network Auto Switch355
+        const val KEY_V355NETWORKBANDWIDTHLIMIT355 = "v355networkBandwidthLimit355" // v355 Network Bandwidth Limit355
+        const val KEY_V355NETWORKLATENCYDISPLAY355 = "v355networkLatencyDisplay355" // v355 Network Latency Display355
+        const val KEY_V355NETWORKPACKETLOSSALERT355 = "v355networkPacketLossAlert355" // v355 Network Packet Loss Alert355
+        const val KEY_V355NETWORKRETRYSTRATEGY355 = "v355networkRetryStrategy355" // v355 Network Retry Strategy355
+        const val KEY_V355NETWORKTIMEOUTCUSTOM355 = "v355networkTimeoutCustom355" // v355 Network Timeout Custom355
+        const val KEY_V355NETWORKDNS优选355 = "v355networkDNS优选355" // v355 Network DNS优选355
+        const val KEY_V355NETWORKIPV6优先355 = "v355networkIPv6优先355" // v355 Network IPv6优先355
+        const val KEY_V355NETWORKPROXYCUSTOM355 = "v355networkProxyCustom355" // v355 Network Proxy Custom355
+        const val KEY_V355NETWORKCACHESTRATEGY355 = "v355networkCacheStrategy355" // v355 Network Cache Strategy355
+        const val KEY_V355NETWORKCONNECTIONPOOL355 = "v355networkConnectionPool355" // v355 Network Connection Pool355
+        const val KEY_V355NETWORKKEEPALIVE355 = "v355networkKeepAlive355" // v355 Network Keep Alive355
+        const val KEY_V355NETWORKCOMPRESSION355 = "v355networkCompression355" // v355 Network Compression355
+        const val KEY_V355NETWORKENCRYPTION355 = "v355networkEncryption355" // v355 Network Encryption355
+        const val KEY_V356NETWORKQUALITYINDICATOR356 = "v356networkQualityIndicator356" // v356 Network Quality Indicator356
+        const val KEY_V356NETWORKAUTOSWITCH356 = "v356networkAutoSwitch356" // v356 Network Auto Switch356
+        const val KEY_V356NETWORKBANDWIDTHLIMIT356 = "v356networkBandwidthLimit356" // v356 Network Bandwidth Limit356
+        const val KEY_V356NETWORKLATENCYDISPLAY356 = "v356networkLatencyDisplay356" // v356 Network Latency Display356
+        const val KEY_V356NETWORKPACKETLOSSALERT356 = "v356networkPacketLossAlert356" // v356 Network Packet Loss Alert356
+        const val KEY_V356NETWORKRETRYSTRATEGY356 = "v356networkRetryStrategy356" // v356 Network Retry Strategy356
+        const val KEY_V356NETWORKTIMEOUTCUSTOM356 = "v356networkTimeoutCustom356" // v356 Network Timeout Custom356
+        const val KEY_V356NETWORKDNS优选356 = "v356networkDNS优选356" // v356 Network DNS优选356
+        const val KEY_V356NETWORKIPV6优先356 = "v356networkIPv6优先356" // v356 Network IPv6优先356
+        const val KEY_V356NETWORKPROXYCUSTOM356 = "v356networkProxyCustom356" // v356 Network Proxy Custom356
+        const val KEY_V356NETWORKCACHESTRATEGY356 = "v356networkCacheStrategy356" // v356 Network Cache Strategy356
+        const val KEY_V356NETWORKCONNECTIONPOOL356 = "v356networkConnectionPool356" // v356 Network Connection Pool356
+        const val KEY_V356NETWORKKEEPALIVE356 = "v356networkKeepAlive356" // v356 Network Keep Alive356
+        const val KEY_V356NETWORKCOMPRESSION356 = "v356networkCompression356" // v356 Network Compression356
+        const val KEY_V356NETWORKENCRYPTION356 = "v356networkEncryption356" // v356 Network Encryption356
+        const val KEY_V357NETWORKQUALITYINDICATOR357 = "v357networkQualityIndicator357" // v357 Network Quality Indicator357
+        const val KEY_V357NETWORKAUTOSWITCH357 = "v357networkAutoSwitch357" // v357 Network Auto Switch357
+        const val KEY_V357NETWORKBANDWIDTHLIMIT357 = "v357networkBandwidthLimit357" // v357 Network Bandwidth Limit357
+        const val KEY_V357NETWORKLATENCYDISPLAY357 = "v357networkLatencyDisplay357" // v357 Network Latency Display357
+        const val KEY_V357NETWORKPACKETLOSSALERT357 = "v357networkPacketLossAlert357" // v357 Network Packet Loss Alert357
+        const val KEY_V357NETWORKRETRYSTRATEGY357 = "v357networkRetryStrategy357" // v357 Network Retry Strategy357
+        const val KEY_V357NETWORKTIMEOUTCUSTOM357 = "v357networkTimeoutCustom357" // v357 Network Timeout Custom357
+        const val KEY_V357NETWORKDNS优选357 = "v357networkDNS优选357" // v357 Network DNS优选357
+        const val KEY_V357NETWORKIPV6优先357 = "v357networkIPv6优先357" // v357 Network IPv6优先357
+        const val KEY_V357NETWORKPROXYCUSTOM357 = "v357networkProxyCustom357" // v357 Network Proxy Custom357
+        const val KEY_V357NETWORKCACHESTRATEGY357 = "v357networkCacheStrategy357" // v357 Network Cache Strategy357
+        const val KEY_V357NETWORKCONNECTIONPOOL357 = "v357networkConnectionPool357" // v357 Network Connection Pool357
+        const val KEY_V357NETWORKKEEPALIVE357 = "v357networkKeepAlive357" // v357 Network Keep Alive357
+        const val KEY_V357NETWORKCOMPRESSION357 = "v357networkCompression357" // v357 Network Compression357
+        const val KEY_V357NETWORKENCRYPTION357 = "v357networkEncryption357" // v357 Network Encryption357
+        const val KEY_V358NETWORKQUALITYINDICATOR358 = "v358networkQualityIndicator358" // v358 Network Quality Indicator358
+        const val KEY_V358NETWORKAUTOSWITCH358 = "v358networkAutoSwitch358" // v358 Network Auto Switch358
+        const val KEY_V358NETWORKBANDWIDTHLIMIT358 = "v358networkBandwidthLimit358" // v358 Network Bandwidth Limit358
+        const val KEY_V358NETWORKLATENCYDISPLAY358 = "v358networkLatencyDisplay358" // v358 Network Latency Display358
+        const val KEY_V358NETWORKPACKETLOSSALERT358 = "v358networkPacketLossAlert358" // v358 Network Packet Loss Alert358
+        const val KEY_V358NETWORKRETRYSTRATEGY358 = "v358networkRetryStrategy358" // v358 Network Retry Strategy358
+        const val KEY_V358NETWORKTIMEOUTCUSTOM358 = "v358networkTimeoutCustom358" // v358 Network Timeout Custom358
+        const val KEY_V358NETWORKDNS优选358 = "v358networkDNS优选358" // v358 Network DNS优选358
+        const val KEY_V358NETWORKIPV6优先358 = "v358networkIPv6优先358" // v358 Network IPv6优先358
+        const val KEY_V358NETWORKPROXYCUSTOM358 = "v358networkProxyCustom358" // v358 Network Proxy Custom358
+        const val KEY_V358NETWORKCACHESTRATEGY358 = "v358networkCacheStrategy358" // v358 Network Cache Strategy358
+        const val KEY_V358NETWORKCONNECTIONPOOL358 = "v358networkConnectionPool358" // v358 Network Connection Pool358
+        const val KEY_V358NETWORKKEEPALIVE358 = "v358networkKeepAlive358" // v358 Network Keep Alive358
+        const val KEY_V358NETWORKCOMPRESSION358 = "v358networkCompression358" // v358 Network Compression358
+        const val KEY_V358NETWORKENCRYPTION358 = "v358networkEncryption358" // v358 Network Encryption358
+        const val KEY_V359NETWORKQUALITYINDICATOR359 = "v359networkQualityIndicator359" // v359 Network Quality Indicator359
+        const val KEY_V359NETWORKAUTOSWITCH359 = "v359networkAutoSwitch359" // v359 Network Auto Switch359
+        const val KEY_V359NETWORKBANDWIDTHLIMIT359 = "v359networkBandwidthLimit359" // v359 Network Bandwidth Limit359
+        const val KEY_V359NETWORKLATENCYDISPLAY359 = "v359networkLatencyDisplay359" // v359 Network Latency Display359
+        const val KEY_V359NETWORKPACKETLOSSALERT359 = "v359networkPacketLossAlert359" // v359 Network Packet Loss Alert359
+        const val KEY_V359NETWORKRETRYSTRATEGY359 = "v359networkRetryStrategy359" // v359 Network Retry Strategy359
+        const val KEY_V359NETWORKTIMEOUTCUSTOM359 = "v359networkTimeoutCustom359" // v359 Network Timeout Custom359
+        const val KEY_V359NETWORKDNS优选359 = "v359networkDNS优选359" // v359 Network DNS优选359
+        const val KEY_V359NETWORKIPV6优先359 = "v359networkIPv6优先359" // v359 Network IPv6优先359
+        const val KEY_V359NETWORKPROXYCUSTOM359 = "v359networkProxyCustom359" // v359 Network Proxy Custom359
+        const val KEY_V359NETWORKCACHESTRATEGY359 = "v359networkCacheStrategy359" // v359 Network Cache Strategy359
+        const val KEY_V359NETWORKCONNECTIONPOOL359 = "v359networkConnectionPool359" // v359 Network Connection Pool359
+        const val KEY_V359NETWORKKEEPALIVE359 = "v359networkKeepAlive359" // v359 Network Keep Alive359
+        const val KEY_V359NETWORKCOMPRESSION359 = "v359networkCompression359" // v359 Network Compression359
+        const val KEY_V359NETWORKENCRYPTION359 = "v359networkEncryption359" // v359 Network Encryption359
+        const val KEY_V360NETWORKQUALITYINDICATOR360 = "v360networkQualityIndicator360" // v360 Network Quality Indicator360
+        const val KEY_V360NETWORKAUTOSWITCH360 = "v360networkAutoSwitch360" // v360 Network Auto Switch360
+        const val KEY_V360NETWORKBANDWIDTHLIMIT360 = "v360networkBandwidthLimit360" // v360 Network Bandwidth Limit360
+        const val KEY_V360NETWORKLATENCYDISPLAY360 = "v360networkLatencyDisplay360" // v360 Network Latency Display360
+        const val KEY_V360NETWORKPACKETLOSSALERT360 = "v360networkPacketLossAlert360" // v360 Network Packet Loss Alert360
+        const val KEY_V360NETWORKRETRYSTRATEGY360 = "v360networkRetryStrategy360" // v360 Network Retry Strategy360
+        const val KEY_V360NETWORKTIMEOUTCUSTOM360 = "v360networkTimeoutCustom360" // v360 Network Timeout Custom360
+        const val KEY_V360NETWORKDNS优选360 = "v360networkDNS优选360" // v360 Network DNS优选360
+        const val KEY_V360NETWORKIPV6优先360 = "v360networkIPv6优先360" // v360 Network IPv6优先360
+        const val KEY_V360NETWORKPROXYCUSTOM360 = "v360networkProxyCustom360" // v360 Network Proxy Custom360
+        const val KEY_V360NETWORKCACHESTRATEGY360 = "v360networkCacheStrategy360" // v360 Network Cache Strategy360
+        const val KEY_V360NETWORKCONNECTIONPOOL360 = "v360networkConnectionPool360" // v360 Network Connection Pool360
+        const val KEY_V360NETWORKKEEPALIVE360 = "v360networkKeepAlive360" // v360 Network Keep Alive360
+        const val KEY_V360NETWORKCOMPRESSION360 = "v360networkCompression360" // v360 Network Compression360
+        const val KEY_V360NETWORKENCRYPTION360 = "v360networkEncryption360" // v360 Network Encryption360
     }
 }

@@ -57985,3 +57985,1453 @@ internal fun PlayerActivity.showV350SubtitleFontSize352Dialog() {
     }
 }
 
+// v351: Network Quality Indicator351
+internal fun PlayerActivity.showV351NetworkQualityIndicator351Toggle() {
+    val current = BiliClient.prefs.v351networkQualityIndicator351
+    BiliClient.prefs.v351networkQualityIndicator351 = !current
+    AppToast.show(this, "Network Quality Indicator351: ${if (!current) "ON" else "OFF"}")
+}
+
+// v351: Network Auto Switch351
+internal fun PlayerActivity.showV351NetworkAutoSwitch351Toggle() {
+    val current = BiliClient.prefs.v351networkAutoSwitch351
+    BiliClient.prefs.v351networkAutoSwitch351 = !current
+    AppToast.show(this, "Network Auto Switch351: ${if (!current) "ON" else "OFF"}")
+}
+
+// v351: Network Bandwidth Limit351
+internal fun PlayerActivity.showV351NetworkBandwidthLimit351Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v351networkBandwidthLimit351).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Bandwidth Limit351",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v351networkBandwidthLimit351 = value
+        AppToast.show(this, "Network Bandwidth Limit351: $value")
+    }
+}
+
+// v351: Network Latency Display351
+internal fun PlayerActivity.showV351NetworkLatencyDisplay351Toggle() {
+    val current = BiliClient.prefs.v351networkLatencyDisplay351
+    BiliClient.prefs.v351networkLatencyDisplay351 = !current
+    AppToast.show(this, "Network Latency Display351: ${if (!current) "ON" else "OFF"}")
+}
+
+// v351: Network Packet Loss Alert351
+internal fun PlayerActivity.showV351NetworkPacketLossAlert351Toggle() {
+    val current = BiliClient.prefs.v351networkPacketLossAlert351
+    BiliClient.prefs.v351networkPacketLossAlert351 = !current
+    AppToast.show(this, "Network Packet Loss Alert351: ${if (!current) "ON" else "OFF"}")
+}
+
+// v351: Network Retry Strategy351
+internal fun PlayerActivity.showV351NetworkRetryStrategy351Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v351networkRetryStrategy351).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Retry Strategy351",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v351networkRetryStrategy351 = value
+        AppToast.show(this, "Network Retry Strategy351: $value")
+    }
+}
+
+// v351: Network Timeout Custom351
+internal fun PlayerActivity.showV351NetworkTimeoutCustom351Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v351networkTimeoutCustom351).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Timeout Custom351",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v351networkTimeoutCustom351 = value
+        AppToast.show(this, "Network Timeout Custom351: $value")
+    }
+}
+
+// v351: Network DNS优选351
+internal fun PlayerActivity.showV351NetworkDNS优选351Toggle() {
+    val current = BiliClient.prefs.v351networkDNS优选351
+    BiliClient.prefs.v351networkDNS优选351 = !current
+    AppToast.show(this, "Network DNS优选351: ${if (!current) "ON" else "OFF"}")
+}
+
+// v351: Network IPv6优先351
+internal fun PlayerActivity.showV351NetworkIPv6优先351Toggle() {
+    val current = BiliClient.prefs.v351networkIPv6优先351
+    BiliClient.prefs.v351networkIPv6优先351 = !current
+    AppToast.show(this, "Network IPv6优先351: ${if (!current) "ON" else "OFF"}")
+}
+
+// v351: Network Proxy Custom351
+internal fun PlayerActivity.showV351NetworkProxyCustom351Toggle() {
+    val current = BiliClient.prefs.v351networkProxyCustom351
+    BiliClient.prefs.v351networkProxyCustom351 = !current
+    AppToast.show(this, "Network Proxy Custom351: ${if (!current) "ON" else "OFF"}")
+}
+
+// v351: Network Cache Strategy351
+internal fun PlayerActivity.showV351NetworkCacheStrategy351Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v351networkCacheStrategy351).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Cache Strategy351",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v351networkCacheStrategy351 = value
+        AppToast.show(this, "Network Cache Strategy351: $value")
+    }
+}
+
+// v351: Network Connection Pool351
+internal fun PlayerActivity.showV351NetworkConnectionPool351Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v351networkConnectionPool351).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Connection Pool351",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v351networkConnectionPool351 = value
+        AppToast.show(this, "Network Connection Pool351: $value")
+    }
+}
+
+// v351: Network Keep Alive351
+internal fun PlayerActivity.showV351NetworkKeepAlive351Toggle() {
+    val current = BiliClient.prefs.v351networkKeepAlive351
+    BiliClient.prefs.v351networkKeepAlive351 = !current
+    AppToast.show(this, "Network Keep Alive351: ${if (!current) "ON" else "OFF"}")
+}
+
+// v351: Network Compression351
+internal fun PlayerActivity.showV351NetworkCompression351Toggle() {
+    val current = BiliClient.prefs.v351networkCompression351
+    BiliClient.prefs.v351networkCompression351 = !current
+    AppToast.show(this, "Network Compression351: ${if (!current) "ON" else "OFF"}")
+}
+
+// v351: Network Encryption351
+internal fun PlayerActivity.showV351NetworkEncryption351Toggle() {
+    val current = BiliClient.prefs.v351networkEncryption351
+    BiliClient.prefs.v351networkEncryption351 = !current
+    AppToast.show(this, "Network Encryption351: ${if (!current) "ON" else "OFF"}")
+}
+
+// v352: Network Quality Indicator352
+internal fun PlayerActivity.showV352NetworkQualityIndicator352Toggle() {
+    val current = BiliClient.prefs.v352networkQualityIndicator352
+    BiliClient.prefs.v352networkQualityIndicator352 = !current
+    AppToast.show(this, "Network Quality Indicator352: ${if (!current) "ON" else "OFF"}")
+}
+
+// v352: Network Auto Switch352
+internal fun PlayerActivity.showV352NetworkAutoSwitch352Toggle() {
+    val current = BiliClient.prefs.v352networkAutoSwitch352
+    BiliClient.prefs.v352networkAutoSwitch352 = !current
+    AppToast.show(this, "Network Auto Switch352: ${if (!current) "ON" else "OFF"}")
+}
+
+// v352: Network Bandwidth Limit352
+internal fun PlayerActivity.showV352NetworkBandwidthLimit352Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v352networkBandwidthLimit352).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Bandwidth Limit352",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v352networkBandwidthLimit352 = value
+        AppToast.show(this, "Network Bandwidth Limit352: $value")
+    }
+}
+
+// v352: Network Latency Display352
+internal fun PlayerActivity.showV352NetworkLatencyDisplay352Toggle() {
+    val current = BiliClient.prefs.v352networkLatencyDisplay352
+    BiliClient.prefs.v352networkLatencyDisplay352 = !current
+    AppToast.show(this, "Network Latency Display352: ${if (!current) "ON" else "OFF"}")
+}
+
+// v352: Network Packet Loss Alert352
+internal fun PlayerActivity.showV352NetworkPacketLossAlert352Toggle() {
+    val current = BiliClient.prefs.v352networkPacketLossAlert352
+    BiliClient.prefs.v352networkPacketLossAlert352 = !current
+    AppToast.show(this, "Network Packet Loss Alert352: ${if (!current) "ON" else "OFF"}")
+}
+
+// v352: Network Retry Strategy352
+internal fun PlayerActivity.showV352NetworkRetryStrategy352Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v352networkRetryStrategy352).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Retry Strategy352",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v352networkRetryStrategy352 = value
+        AppToast.show(this, "Network Retry Strategy352: $value")
+    }
+}
+
+// v352: Network Timeout Custom352
+internal fun PlayerActivity.showV352NetworkTimeoutCustom352Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v352networkTimeoutCustom352).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Timeout Custom352",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v352networkTimeoutCustom352 = value
+        AppToast.show(this, "Network Timeout Custom352: $value")
+    }
+}
+
+// v352: Network DNS优选352
+internal fun PlayerActivity.showV352NetworkDNS优选352Toggle() {
+    val current = BiliClient.prefs.v352networkDNS优选352
+    BiliClient.prefs.v352networkDNS优选352 = !current
+    AppToast.show(this, "Network DNS优选352: ${if (!current) "ON" else "OFF"}")
+}
+
+// v352: Network IPv6优先352
+internal fun PlayerActivity.showV352NetworkIPv6优先352Toggle() {
+    val current = BiliClient.prefs.v352networkIPv6优先352
+    BiliClient.prefs.v352networkIPv6优先352 = !current
+    AppToast.show(this, "Network IPv6优先352: ${if (!current) "ON" else "OFF"}")
+}
+
+// v352: Network Proxy Custom352
+internal fun PlayerActivity.showV352NetworkProxyCustom352Toggle() {
+    val current = BiliClient.prefs.v352networkProxyCustom352
+    BiliClient.prefs.v352networkProxyCustom352 = !current
+    AppToast.show(this, "Network Proxy Custom352: ${if (!current) "ON" else "OFF"}")
+}
+
+// v352: Network Cache Strategy352
+internal fun PlayerActivity.showV352NetworkCacheStrategy352Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v352networkCacheStrategy352).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Cache Strategy352",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v352networkCacheStrategy352 = value
+        AppToast.show(this, "Network Cache Strategy352: $value")
+    }
+}
+
+// v352: Network Connection Pool352
+internal fun PlayerActivity.showV352NetworkConnectionPool352Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v352networkConnectionPool352).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Connection Pool352",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v352networkConnectionPool352 = value
+        AppToast.show(this, "Network Connection Pool352: $value")
+    }
+}
+
+// v352: Network Keep Alive352
+internal fun PlayerActivity.showV352NetworkKeepAlive352Toggle() {
+    val current = BiliClient.prefs.v352networkKeepAlive352
+    BiliClient.prefs.v352networkKeepAlive352 = !current
+    AppToast.show(this, "Network Keep Alive352: ${if (!current) "ON" else "OFF"}")
+}
+
+// v352: Network Compression352
+internal fun PlayerActivity.showV352NetworkCompression352Toggle() {
+    val current = BiliClient.prefs.v352networkCompression352
+    BiliClient.prefs.v352networkCompression352 = !current
+    AppToast.show(this, "Network Compression352: ${if (!current) "ON" else "OFF"}")
+}
+
+// v352: Network Encryption352
+internal fun PlayerActivity.showV352NetworkEncryption352Toggle() {
+    val current = BiliClient.prefs.v352networkEncryption352
+    BiliClient.prefs.v352networkEncryption352 = !current
+    AppToast.show(this, "Network Encryption352: ${if (!current) "ON" else "OFF"}")
+}
+
+// v353: Network Quality Indicator353
+internal fun PlayerActivity.showV353NetworkQualityIndicator353Toggle() {
+    val current = BiliClient.prefs.v353networkQualityIndicator353
+    BiliClient.prefs.v353networkQualityIndicator353 = !current
+    AppToast.show(this, "Network Quality Indicator353: ${if (!current) "ON" else "OFF"}")
+}
+
+// v353: Network Auto Switch353
+internal fun PlayerActivity.showV353NetworkAutoSwitch353Toggle() {
+    val current = BiliClient.prefs.v353networkAutoSwitch353
+    BiliClient.prefs.v353networkAutoSwitch353 = !current
+    AppToast.show(this, "Network Auto Switch353: ${if (!current) "ON" else "OFF"}")
+}
+
+// v353: Network Bandwidth Limit353
+internal fun PlayerActivity.showV353NetworkBandwidthLimit353Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v353networkBandwidthLimit353).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Bandwidth Limit353",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v353networkBandwidthLimit353 = value
+        AppToast.show(this, "Network Bandwidth Limit353: $value")
+    }
+}
+
+// v353: Network Latency Display353
+internal fun PlayerActivity.showV353NetworkLatencyDisplay353Toggle() {
+    val current = BiliClient.prefs.v353networkLatencyDisplay353
+    BiliClient.prefs.v353networkLatencyDisplay353 = !current
+    AppToast.show(this, "Network Latency Display353: ${if (!current) "ON" else "OFF"}")
+}
+
+// v353: Network Packet Loss Alert353
+internal fun PlayerActivity.showV353NetworkPacketLossAlert353Toggle() {
+    val current = BiliClient.prefs.v353networkPacketLossAlert353
+    BiliClient.prefs.v353networkPacketLossAlert353 = !current
+    AppToast.show(this, "Network Packet Loss Alert353: ${if (!current) "ON" else "OFF"}")
+}
+
+// v353: Network Retry Strategy353
+internal fun PlayerActivity.showV353NetworkRetryStrategy353Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v353networkRetryStrategy353).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Retry Strategy353",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v353networkRetryStrategy353 = value
+        AppToast.show(this, "Network Retry Strategy353: $value")
+    }
+}
+
+// v353: Network Timeout Custom353
+internal fun PlayerActivity.showV353NetworkTimeoutCustom353Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v353networkTimeoutCustom353).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Timeout Custom353",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v353networkTimeoutCustom353 = value
+        AppToast.show(this, "Network Timeout Custom353: $value")
+    }
+}
+
+// v353: Network DNS优选353
+internal fun PlayerActivity.showV353NetworkDNS优选353Toggle() {
+    val current = BiliClient.prefs.v353networkDNS优选353
+    BiliClient.prefs.v353networkDNS优选353 = !current
+    AppToast.show(this, "Network DNS优选353: ${if (!current) "ON" else "OFF"}")
+}
+
+// v353: Network IPv6优先353
+internal fun PlayerActivity.showV353NetworkIPv6优先353Toggle() {
+    val current = BiliClient.prefs.v353networkIPv6优先353
+    BiliClient.prefs.v353networkIPv6优先353 = !current
+    AppToast.show(this, "Network IPv6优先353: ${if (!current) "ON" else "OFF"}")
+}
+
+// v353: Network Proxy Custom353
+internal fun PlayerActivity.showV353NetworkProxyCustom353Toggle() {
+    val current = BiliClient.prefs.v353networkProxyCustom353
+    BiliClient.prefs.v353networkProxyCustom353 = !current
+    AppToast.show(this, "Network Proxy Custom353: ${if (!current) "ON" else "OFF"}")
+}
+
+// v353: Network Cache Strategy353
+internal fun PlayerActivity.showV353NetworkCacheStrategy353Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v353networkCacheStrategy353).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Cache Strategy353",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v353networkCacheStrategy353 = value
+        AppToast.show(this, "Network Cache Strategy353: $value")
+    }
+}
+
+// v353: Network Connection Pool353
+internal fun PlayerActivity.showV353NetworkConnectionPool353Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v353networkConnectionPool353).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Connection Pool353",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v353networkConnectionPool353 = value
+        AppToast.show(this, "Network Connection Pool353: $value")
+    }
+}
+
+// v353: Network Keep Alive353
+internal fun PlayerActivity.showV353NetworkKeepAlive353Toggle() {
+    val current = BiliClient.prefs.v353networkKeepAlive353
+    BiliClient.prefs.v353networkKeepAlive353 = !current
+    AppToast.show(this, "Network Keep Alive353: ${if (!current) "ON" else "OFF"}")
+}
+
+// v353: Network Compression353
+internal fun PlayerActivity.showV353NetworkCompression353Toggle() {
+    val current = BiliClient.prefs.v353networkCompression353
+    BiliClient.prefs.v353networkCompression353 = !current
+    AppToast.show(this, "Network Compression353: ${if (!current) "ON" else "OFF"}")
+}
+
+// v353: Network Encryption353
+internal fun PlayerActivity.showV353NetworkEncryption353Toggle() {
+    val current = BiliClient.prefs.v353networkEncryption353
+    BiliClient.prefs.v353networkEncryption353 = !current
+    AppToast.show(this, "Network Encryption353: ${if (!current) "ON" else "OFF"}")
+}
+
+// v354: Network Quality Indicator354
+internal fun PlayerActivity.showV354NetworkQualityIndicator354Toggle() {
+    val current = BiliClient.prefs.v354networkQualityIndicator354
+    BiliClient.prefs.v354networkQualityIndicator354 = !current
+    AppToast.show(this, "Network Quality Indicator354: ${if (!current) "ON" else "OFF"}")
+}
+
+// v354: Network Auto Switch354
+internal fun PlayerActivity.showV354NetworkAutoSwitch354Toggle() {
+    val current = BiliClient.prefs.v354networkAutoSwitch354
+    BiliClient.prefs.v354networkAutoSwitch354 = !current
+    AppToast.show(this, "Network Auto Switch354: ${if (!current) "ON" else "OFF"}")
+}
+
+// v354: Network Bandwidth Limit354
+internal fun PlayerActivity.showV354NetworkBandwidthLimit354Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v354networkBandwidthLimit354).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Bandwidth Limit354",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v354networkBandwidthLimit354 = value
+        AppToast.show(this, "Network Bandwidth Limit354: $value")
+    }
+}
+
+// v354: Network Latency Display354
+internal fun PlayerActivity.showV354NetworkLatencyDisplay354Toggle() {
+    val current = BiliClient.prefs.v354networkLatencyDisplay354
+    BiliClient.prefs.v354networkLatencyDisplay354 = !current
+    AppToast.show(this, "Network Latency Display354: ${if (!current) "ON" else "OFF"}")
+}
+
+// v354: Network Packet Loss Alert354
+internal fun PlayerActivity.showV354NetworkPacketLossAlert354Toggle() {
+    val current = BiliClient.prefs.v354networkPacketLossAlert354
+    BiliClient.prefs.v354networkPacketLossAlert354 = !current
+    AppToast.show(this, "Network Packet Loss Alert354: ${if (!current) "ON" else "OFF"}")
+}
+
+// v354: Network Retry Strategy354
+internal fun PlayerActivity.showV354NetworkRetryStrategy354Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v354networkRetryStrategy354).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Retry Strategy354",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v354networkRetryStrategy354 = value
+        AppToast.show(this, "Network Retry Strategy354: $value")
+    }
+}
+
+// v354: Network Timeout Custom354
+internal fun PlayerActivity.showV354NetworkTimeoutCustom354Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v354networkTimeoutCustom354).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Timeout Custom354",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v354networkTimeoutCustom354 = value
+        AppToast.show(this, "Network Timeout Custom354: $value")
+    }
+}
+
+// v354: Network DNS优选354
+internal fun PlayerActivity.showV354NetworkDNS优选354Toggle() {
+    val current = BiliClient.prefs.v354networkDNS优选354
+    BiliClient.prefs.v354networkDNS优选354 = !current
+    AppToast.show(this, "Network DNS优选354: ${if (!current) "ON" else "OFF"}")
+}
+
+// v354: Network IPv6优先354
+internal fun PlayerActivity.showV354NetworkIPv6优先354Toggle() {
+    val current = BiliClient.prefs.v354networkIPv6优先354
+    BiliClient.prefs.v354networkIPv6优先354 = !current
+    AppToast.show(this, "Network IPv6优先354: ${if (!current) "ON" else "OFF"}")
+}
+
+// v354: Network Proxy Custom354
+internal fun PlayerActivity.showV354NetworkProxyCustom354Toggle() {
+    val current = BiliClient.prefs.v354networkProxyCustom354
+    BiliClient.prefs.v354networkProxyCustom354 = !current
+    AppToast.show(this, "Network Proxy Custom354: ${if (!current) "ON" else "OFF"}")
+}
+
+// v354: Network Cache Strategy354
+internal fun PlayerActivity.showV354NetworkCacheStrategy354Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v354networkCacheStrategy354).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Cache Strategy354",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v354networkCacheStrategy354 = value
+        AppToast.show(this, "Network Cache Strategy354: $value")
+    }
+}
+
+// v354: Network Connection Pool354
+internal fun PlayerActivity.showV354NetworkConnectionPool354Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v354networkConnectionPool354).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Connection Pool354",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v354networkConnectionPool354 = value
+        AppToast.show(this, "Network Connection Pool354: $value")
+    }
+}
+
+// v354: Network Keep Alive354
+internal fun PlayerActivity.showV354NetworkKeepAlive354Toggle() {
+    val current = BiliClient.prefs.v354networkKeepAlive354
+    BiliClient.prefs.v354networkKeepAlive354 = !current
+    AppToast.show(this, "Network Keep Alive354: ${if (!current) "ON" else "OFF"}")
+}
+
+// v354: Network Compression354
+internal fun PlayerActivity.showV354NetworkCompression354Toggle() {
+    val current = BiliClient.prefs.v354networkCompression354
+    BiliClient.prefs.v354networkCompression354 = !current
+    AppToast.show(this, "Network Compression354: ${if (!current) "ON" else "OFF"}")
+}
+
+// v354: Network Encryption354
+internal fun PlayerActivity.showV354NetworkEncryption354Toggle() {
+    val current = BiliClient.prefs.v354networkEncryption354
+    BiliClient.prefs.v354networkEncryption354 = !current
+    AppToast.show(this, "Network Encryption354: ${if (!current) "ON" else "OFF"}")
+}
+
+// v355: Network Quality Indicator355
+internal fun PlayerActivity.showV355NetworkQualityIndicator355Toggle() {
+    val current = BiliClient.prefs.v355networkQualityIndicator355
+    BiliClient.prefs.v355networkQualityIndicator355 = !current
+    AppToast.show(this, "Network Quality Indicator355: ${if (!current) "ON" else "OFF"}")
+}
+
+// v355: Network Auto Switch355
+internal fun PlayerActivity.showV355NetworkAutoSwitch355Toggle() {
+    val current = BiliClient.prefs.v355networkAutoSwitch355
+    BiliClient.prefs.v355networkAutoSwitch355 = !current
+    AppToast.show(this, "Network Auto Switch355: ${if (!current) "ON" else "OFF"}")
+}
+
+// v355: Network Bandwidth Limit355
+internal fun PlayerActivity.showV355NetworkBandwidthLimit355Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v355networkBandwidthLimit355).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Bandwidth Limit355",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v355networkBandwidthLimit355 = value
+        AppToast.show(this, "Network Bandwidth Limit355: $value")
+    }
+}
+
+// v355: Network Latency Display355
+internal fun PlayerActivity.showV355NetworkLatencyDisplay355Toggle() {
+    val current = BiliClient.prefs.v355networkLatencyDisplay355
+    BiliClient.prefs.v355networkLatencyDisplay355 = !current
+    AppToast.show(this, "Network Latency Display355: ${if (!current) "ON" else "OFF"}")
+}
+
+// v355: Network Packet Loss Alert355
+internal fun PlayerActivity.showV355NetworkPacketLossAlert355Toggle() {
+    val current = BiliClient.prefs.v355networkPacketLossAlert355
+    BiliClient.prefs.v355networkPacketLossAlert355 = !current
+    AppToast.show(this, "Network Packet Loss Alert355: ${if (!current) "ON" else "OFF"}")
+}
+
+// v355: Network Retry Strategy355
+internal fun PlayerActivity.showV355NetworkRetryStrategy355Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v355networkRetryStrategy355).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Retry Strategy355",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v355networkRetryStrategy355 = value
+        AppToast.show(this, "Network Retry Strategy355: $value")
+    }
+}
+
+// v355: Network Timeout Custom355
+internal fun PlayerActivity.showV355NetworkTimeoutCustom355Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v355networkTimeoutCustom355).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Timeout Custom355",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v355networkTimeoutCustom355 = value
+        AppToast.show(this, "Network Timeout Custom355: $value")
+    }
+}
+
+// v355: Network DNS优选355
+internal fun PlayerActivity.showV355NetworkDNS优选355Toggle() {
+    val current = BiliClient.prefs.v355networkDNS优选355
+    BiliClient.prefs.v355networkDNS优选355 = !current
+    AppToast.show(this, "Network DNS优选355: ${if (!current) "ON" else "OFF"}")
+}
+
+// v355: Network IPv6优先355
+internal fun PlayerActivity.showV355NetworkIPv6优先355Toggle() {
+    val current = BiliClient.prefs.v355networkIPv6优先355
+    BiliClient.prefs.v355networkIPv6优先355 = !current
+    AppToast.show(this, "Network IPv6优先355: ${if (!current) "ON" else "OFF"}")
+}
+
+// v355: Network Proxy Custom355
+internal fun PlayerActivity.showV355NetworkProxyCustom355Toggle() {
+    val current = BiliClient.prefs.v355networkProxyCustom355
+    BiliClient.prefs.v355networkProxyCustom355 = !current
+    AppToast.show(this, "Network Proxy Custom355: ${if (!current) "ON" else "OFF"}")
+}
+
+// v355: Network Cache Strategy355
+internal fun PlayerActivity.showV355NetworkCacheStrategy355Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v355networkCacheStrategy355).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Cache Strategy355",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v355networkCacheStrategy355 = value
+        AppToast.show(this, "Network Cache Strategy355: $value")
+    }
+}
+
+// v355: Network Connection Pool355
+internal fun PlayerActivity.showV355NetworkConnectionPool355Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v355networkConnectionPool355).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Connection Pool355",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v355networkConnectionPool355 = value
+        AppToast.show(this, "Network Connection Pool355: $value")
+    }
+}
+
+// v355: Network Keep Alive355
+internal fun PlayerActivity.showV355NetworkKeepAlive355Toggle() {
+    val current = BiliClient.prefs.v355networkKeepAlive355
+    BiliClient.prefs.v355networkKeepAlive355 = !current
+    AppToast.show(this, "Network Keep Alive355: ${if (!current) "ON" else "OFF"}")
+}
+
+// v355: Network Compression355
+internal fun PlayerActivity.showV355NetworkCompression355Toggle() {
+    val current = BiliClient.prefs.v355networkCompression355
+    BiliClient.prefs.v355networkCompression355 = !current
+    AppToast.show(this, "Network Compression355: ${if (!current) "ON" else "OFF"}")
+}
+
+// v355: Network Encryption355
+internal fun PlayerActivity.showV355NetworkEncryption355Toggle() {
+    val current = BiliClient.prefs.v355networkEncryption355
+    BiliClient.prefs.v355networkEncryption355 = !current
+    AppToast.show(this, "Network Encryption355: ${if (!current) "ON" else "OFF"}")
+}
+
+// v356: Network Quality Indicator356
+internal fun PlayerActivity.showV356NetworkQualityIndicator356Toggle() {
+    val current = BiliClient.prefs.v356networkQualityIndicator356
+    BiliClient.prefs.v356networkQualityIndicator356 = !current
+    AppToast.show(this, "Network Quality Indicator356: ${if (!current) "ON" else "OFF"}")
+}
+
+// v356: Network Auto Switch356
+internal fun PlayerActivity.showV356NetworkAutoSwitch356Toggle() {
+    val current = BiliClient.prefs.v356networkAutoSwitch356
+    BiliClient.prefs.v356networkAutoSwitch356 = !current
+    AppToast.show(this, "Network Auto Switch356: ${if (!current) "ON" else "OFF"}")
+}
+
+// v356: Network Bandwidth Limit356
+internal fun PlayerActivity.showV356NetworkBandwidthLimit356Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v356networkBandwidthLimit356).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Bandwidth Limit356",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v356networkBandwidthLimit356 = value
+        AppToast.show(this, "Network Bandwidth Limit356: $value")
+    }
+}
+
+// v356: Network Latency Display356
+internal fun PlayerActivity.showV356NetworkLatencyDisplay356Toggle() {
+    val current = BiliClient.prefs.v356networkLatencyDisplay356
+    BiliClient.prefs.v356networkLatencyDisplay356 = !current
+    AppToast.show(this, "Network Latency Display356: ${if (!current) "ON" else "OFF"}")
+}
+
+// v356: Network Packet Loss Alert356
+internal fun PlayerActivity.showV356NetworkPacketLossAlert356Toggle() {
+    val current = BiliClient.prefs.v356networkPacketLossAlert356
+    BiliClient.prefs.v356networkPacketLossAlert356 = !current
+    AppToast.show(this, "Network Packet Loss Alert356: ${if (!current) "ON" else "OFF"}")
+}
+
+// v356: Network Retry Strategy356
+internal fun PlayerActivity.showV356NetworkRetryStrategy356Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v356networkRetryStrategy356).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Retry Strategy356",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v356networkRetryStrategy356 = value
+        AppToast.show(this, "Network Retry Strategy356: $value")
+    }
+}
+
+// v356: Network Timeout Custom356
+internal fun PlayerActivity.showV356NetworkTimeoutCustom356Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v356networkTimeoutCustom356).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Timeout Custom356",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v356networkTimeoutCustom356 = value
+        AppToast.show(this, "Network Timeout Custom356: $value")
+    }
+}
+
+// v356: Network DNS优选356
+internal fun PlayerActivity.showV356NetworkDNS优选356Toggle() {
+    val current = BiliClient.prefs.v356networkDNS优选356
+    BiliClient.prefs.v356networkDNS优选356 = !current
+    AppToast.show(this, "Network DNS优选356: ${if (!current) "ON" else "OFF"}")
+}
+
+// v356: Network IPv6优先356
+internal fun PlayerActivity.showV356NetworkIPv6优先356Toggle() {
+    val current = BiliClient.prefs.v356networkIPv6优先356
+    BiliClient.prefs.v356networkIPv6优先356 = !current
+    AppToast.show(this, "Network IPv6优先356: ${if (!current) "ON" else "OFF"}")
+}
+
+// v356: Network Proxy Custom356
+internal fun PlayerActivity.showV356NetworkProxyCustom356Toggle() {
+    val current = BiliClient.prefs.v356networkProxyCustom356
+    BiliClient.prefs.v356networkProxyCustom356 = !current
+    AppToast.show(this, "Network Proxy Custom356: ${if (!current) "ON" else "OFF"}")
+}
+
+// v356: Network Cache Strategy356
+internal fun PlayerActivity.showV356NetworkCacheStrategy356Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v356networkCacheStrategy356).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Cache Strategy356",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v356networkCacheStrategy356 = value
+        AppToast.show(this, "Network Cache Strategy356: $value")
+    }
+}
+
+// v356: Network Connection Pool356
+internal fun PlayerActivity.showV356NetworkConnectionPool356Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v356networkConnectionPool356).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Connection Pool356",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v356networkConnectionPool356 = value
+        AppToast.show(this, "Network Connection Pool356: $value")
+    }
+}
+
+// v356: Network Keep Alive356
+internal fun PlayerActivity.showV356NetworkKeepAlive356Toggle() {
+    val current = BiliClient.prefs.v356networkKeepAlive356
+    BiliClient.prefs.v356networkKeepAlive356 = !current
+    AppToast.show(this, "Network Keep Alive356: ${if (!current) "ON" else "OFF"}")
+}
+
+// v356: Network Compression356
+internal fun PlayerActivity.showV356NetworkCompression356Toggle() {
+    val current = BiliClient.prefs.v356networkCompression356
+    BiliClient.prefs.v356networkCompression356 = !current
+    AppToast.show(this, "Network Compression356: ${if (!current) "ON" else "OFF"}")
+}
+
+// v356: Network Encryption356
+internal fun PlayerActivity.showV356NetworkEncryption356Toggle() {
+    val current = BiliClient.prefs.v356networkEncryption356
+    BiliClient.prefs.v356networkEncryption356 = !current
+    AppToast.show(this, "Network Encryption356: ${if (!current) "ON" else "OFF"}")
+}
+
+// v357: Network Quality Indicator357
+internal fun PlayerActivity.showV357NetworkQualityIndicator357Toggle() {
+    val current = BiliClient.prefs.v357networkQualityIndicator357
+    BiliClient.prefs.v357networkQualityIndicator357 = !current
+    AppToast.show(this, "Network Quality Indicator357: ${if (!current) "ON" else "OFF"}")
+}
+
+// v357: Network Auto Switch357
+internal fun PlayerActivity.showV357NetworkAutoSwitch357Toggle() {
+    val current = BiliClient.prefs.v357networkAutoSwitch357
+    BiliClient.prefs.v357networkAutoSwitch357 = !current
+    AppToast.show(this, "Network Auto Switch357: ${if (!current) "ON" else "OFF"}")
+}
+
+// v357: Network Bandwidth Limit357
+internal fun PlayerActivity.showV357NetworkBandwidthLimit357Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v357networkBandwidthLimit357).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Bandwidth Limit357",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v357networkBandwidthLimit357 = value
+        AppToast.show(this, "Network Bandwidth Limit357: $value")
+    }
+}
+
+// v357: Network Latency Display357
+internal fun PlayerActivity.showV357NetworkLatencyDisplay357Toggle() {
+    val current = BiliClient.prefs.v357networkLatencyDisplay357
+    BiliClient.prefs.v357networkLatencyDisplay357 = !current
+    AppToast.show(this, "Network Latency Display357: ${if (!current) "ON" else "OFF"}")
+}
+
+// v357: Network Packet Loss Alert357
+internal fun PlayerActivity.showV357NetworkPacketLossAlert357Toggle() {
+    val current = BiliClient.prefs.v357networkPacketLossAlert357
+    BiliClient.prefs.v357networkPacketLossAlert357 = !current
+    AppToast.show(this, "Network Packet Loss Alert357: ${if (!current) "ON" else "OFF"}")
+}
+
+// v357: Network Retry Strategy357
+internal fun PlayerActivity.showV357NetworkRetryStrategy357Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v357networkRetryStrategy357).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Retry Strategy357",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v357networkRetryStrategy357 = value
+        AppToast.show(this, "Network Retry Strategy357: $value")
+    }
+}
+
+// v357: Network Timeout Custom357
+internal fun PlayerActivity.showV357NetworkTimeoutCustom357Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v357networkTimeoutCustom357).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Timeout Custom357",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v357networkTimeoutCustom357 = value
+        AppToast.show(this, "Network Timeout Custom357: $value")
+    }
+}
+
+// v357: Network DNS优选357
+internal fun PlayerActivity.showV357NetworkDNS优选357Toggle() {
+    val current = BiliClient.prefs.v357networkDNS优选357
+    BiliClient.prefs.v357networkDNS优选357 = !current
+    AppToast.show(this, "Network DNS优选357: ${if (!current) "ON" else "OFF"}")
+}
+
+// v357: Network IPv6优先357
+internal fun PlayerActivity.showV357NetworkIPv6优先357Toggle() {
+    val current = BiliClient.prefs.v357networkIPv6优先357
+    BiliClient.prefs.v357networkIPv6优先357 = !current
+    AppToast.show(this, "Network IPv6优先357: ${if (!current) "ON" else "OFF"}")
+}
+
+// v357: Network Proxy Custom357
+internal fun PlayerActivity.showV357NetworkProxyCustom357Toggle() {
+    val current = BiliClient.prefs.v357networkProxyCustom357
+    BiliClient.prefs.v357networkProxyCustom357 = !current
+    AppToast.show(this, "Network Proxy Custom357: ${if (!current) "ON" else "OFF"}")
+}
+
+// v357: Network Cache Strategy357
+internal fun PlayerActivity.showV357NetworkCacheStrategy357Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v357networkCacheStrategy357).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Cache Strategy357",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v357networkCacheStrategy357 = value
+        AppToast.show(this, "Network Cache Strategy357: $value")
+    }
+}
+
+// v357: Network Connection Pool357
+internal fun PlayerActivity.showV357NetworkConnectionPool357Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v357networkConnectionPool357).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Connection Pool357",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v357networkConnectionPool357 = value
+        AppToast.show(this, "Network Connection Pool357: $value")
+    }
+}
+
+// v357: Network Keep Alive357
+internal fun PlayerActivity.showV357NetworkKeepAlive357Toggle() {
+    val current = BiliClient.prefs.v357networkKeepAlive357
+    BiliClient.prefs.v357networkKeepAlive357 = !current
+    AppToast.show(this, "Network Keep Alive357: ${if (!current) "ON" else "OFF"}")
+}
+
+// v357: Network Compression357
+internal fun PlayerActivity.showV357NetworkCompression357Toggle() {
+    val current = BiliClient.prefs.v357networkCompression357
+    BiliClient.prefs.v357networkCompression357 = !current
+    AppToast.show(this, "Network Compression357: ${if (!current) "ON" else "OFF"}")
+}
+
+// v357: Network Encryption357
+internal fun PlayerActivity.showV357NetworkEncryption357Toggle() {
+    val current = BiliClient.prefs.v357networkEncryption357
+    BiliClient.prefs.v357networkEncryption357 = !current
+    AppToast.show(this, "Network Encryption357: ${if (!current) "ON" else "OFF"}")
+}
+
+// v358: Network Quality Indicator358
+internal fun PlayerActivity.showV358NetworkQualityIndicator358Toggle() {
+    val current = BiliClient.prefs.v358networkQualityIndicator358
+    BiliClient.prefs.v358networkQualityIndicator358 = !current
+    AppToast.show(this, "Network Quality Indicator358: ${if (!current) "ON" else "OFF"}")
+}
+
+// v358: Network Auto Switch358
+internal fun PlayerActivity.showV358NetworkAutoSwitch358Toggle() {
+    val current = BiliClient.prefs.v358networkAutoSwitch358
+    BiliClient.prefs.v358networkAutoSwitch358 = !current
+    AppToast.show(this, "Network Auto Switch358: ${if (!current) "ON" else "OFF"}")
+}
+
+// v358: Network Bandwidth Limit358
+internal fun PlayerActivity.showV358NetworkBandwidthLimit358Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v358networkBandwidthLimit358).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Bandwidth Limit358",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v358networkBandwidthLimit358 = value
+        AppToast.show(this, "Network Bandwidth Limit358: $value")
+    }
+}
+
+// v358: Network Latency Display358
+internal fun PlayerActivity.showV358NetworkLatencyDisplay358Toggle() {
+    val current = BiliClient.prefs.v358networkLatencyDisplay358
+    BiliClient.prefs.v358networkLatencyDisplay358 = !current
+    AppToast.show(this, "Network Latency Display358: ${if (!current) "ON" else "OFF"}")
+}
+
+// v358: Network Packet Loss Alert358
+internal fun PlayerActivity.showV358NetworkPacketLossAlert358Toggle() {
+    val current = BiliClient.prefs.v358networkPacketLossAlert358
+    BiliClient.prefs.v358networkPacketLossAlert358 = !current
+    AppToast.show(this, "Network Packet Loss Alert358: ${if (!current) "ON" else "OFF"}")
+}
+
+// v358: Network Retry Strategy358
+internal fun PlayerActivity.showV358NetworkRetryStrategy358Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v358networkRetryStrategy358).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Retry Strategy358",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v358networkRetryStrategy358 = value
+        AppToast.show(this, "Network Retry Strategy358: $value")
+    }
+}
+
+// v358: Network Timeout Custom358
+internal fun PlayerActivity.showV358NetworkTimeoutCustom358Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v358networkTimeoutCustom358).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Timeout Custom358",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v358networkTimeoutCustom358 = value
+        AppToast.show(this, "Network Timeout Custom358: $value")
+    }
+}
+
+// v358: Network DNS优选358
+internal fun PlayerActivity.showV358NetworkDNS优选358Toggle() {
+    val current = BiliClient.prefs.v358networkDNS优选358
+    BiliClient.prefs.v358networkDNS优选358 = !current
+    AppToast.show(this, "Network DNS优选358: ${if (!current) "ON" else "OFF"}")
+}
+
+// v358: Network IPv6优先358
+internal fun PlayerActivity.showV358NetworkIPv6优先358Toggle() {
+    val current = BiliClient.prefs.v358networkIPv6优先358
+    BiliClient.prefs.v358networkIPv6优先358 = !current
+    AppToast.show(this, "Network IPv6优先358: ${if (!current) "ON" else "OFF"}")
+}
+
+// v358: Network Proxy Custom358
+internal fun PlayerActivity.showV358NetworkProxyCustom358Toggle() {
+    val current = BiliClient.prefs.v358networkProxyCustom358
+    BiliClient.prefs.v358networkProxyCustom358 = !current
+    AppToast.show(this, "Network Proxy Custom358: ${if (!current) "ON" else "OFF"}")
+}
+
+// v358: Network Cache Strategy358
+internal fun PlayerActivity.showV358NetworkCacheStrategy358Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v358networkCacheStrategy358).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Cache Strategy358",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v358networkCacheStrategy358 = value
+        AppToast.show(this, "Network Cache Strategy358: $value")
+    }
+}
+
+// v358: Network Connection Pool358
+internal fun PlayerActivity.showV358NetworkConnectionPool358Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v358networkConnectionPool358).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Connection Pool358",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v358networkConnectionPool358 = value
+        AppToast.show(this, "Network Connection Pool358: $value")
+    }
+}
+
+// v358: Network Keep Alive358
+internal fun PlayerActivity.showV358NetworkKeepAlive358Toggle() {
+    val current = BiliClient.prefs.v358networkKeepAlive358
+    BiliClient.prefs.v358networkKeepAlive358 = !current
+    AppToast.show(this, "Network Keep Alive358: ${if (!current) "ON" else "OFF"}")
+}
+
+// v358: Network Compression358
+internal fun PlayerActivity.showV358NetworkCompression358Toggle() {
+    val current = BiliClient.prefs.v358networkCompression358
+    BiliClient.prefs.v358networkCompression358 = !current
+    AppToast.show(this, "Network Compression358: ${if (!current) "ON" else "OFF"}")
+}
+
+// v358: Network Encryption358
+internal fun PlayerActivity.showV358NetworkEncryption358Toggle() {
+    val current = BiliClient.prefs.v358networkEncryption358
+    BiliClient.prefs.v358networkEncryption358 = !current
+    AppToast.show(this, "Network Encryption358: ${if (!current) "ON" else "OFF"}")
+}
+
+// v359: Network Quality Indicator359
+internal fun PlayerActivity.showV359NetworkQualityIndicator359Toggle() {
+    val current = BiliClient.prefs.v359networkQualityIndicator359
+    BiliClient.prefs.v359networkQualityIndicator359 = !current
+    AppToast.show(this, "Network Quality Indicator359: ${if (!current) "ON" else "OFF"}")
+}
+
+// v359: Network Auto Switch359
+internal fun PlayerActivity.showV359NetworkAutoSwitch359Toggle() {
+    val current = BiliClient.prefs.v359networkAutoSwitch359
+    BiliClient.prefs.v359networkAutoSwitch359 = !current
+    AppToast.show(this, "Network Auto Switch359: ${if (!current) "ON" else "OFF"}")
+}
+
+// v359: Network Bandwidth Limit359
+internal fun PlayerActivity.showV359NetworkBandwidthLimit359Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v359networkBandwidthLimit359).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Bandwidth Limit359",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v359networkBandwidthLimit359 = value
+        AppToast.show(this, "Network Bandwidth Limit359: $value")
+    }
+}
+
+// v359: Network Latency Display359
+internal fun PlayerActivity.showV359NetworkLatencyDisplay359Toggle() {
+    val current = BiliClient.prefs.v359networkLatencyDisplay359
+    BiliClient.prefs.v359networkLatencyDisplay359 = !current
+    AppToast.show(this, "Network Latency Display359: ${if (!current) "ON" else "OFF"}")
+}
+
+// v359: Network Packet Loss Alert359
+internal fun PlayerActivity.showV359NetworkPacketLossAlert359Toggle() {
+    val current = BiliClient.prefs.v359networkPacketLossAlert359
+    BiliClient.prefs.v359networkPacketLossAlert359 = !current
+    AppToast.show(this, "Network Packet Loss Alert359: ${if (!current) "ON" else "OFF"}")
+}
+
+// v359: Network Retry Strategy359
+internal fun PlayerActivity.showV359NetworkRetryStrategy359Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v359networkRetryStrategy359).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Retry Strategy359",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v359networkRetryStrategy359 = value
+        AppToast.show(this, "Network Retry Strategy359: $value")
+    }
+}
+
+// v359: Network Timeout Custom359
+internal fun PlayerActivity.showV359NetworkTimeoutCustom359Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v359networkTimeoutCustom359).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Timeout Custom359",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v359networkTimeoutCustom359 = value
+        AppToast.show(this, "Network Timeout Custom359: $value")
+    }
+}
+
+// v359: Network DNS优选359
+internal fun PlayerActivity.showV359NetworkDNS优选359Toggle() {
+    val current = BiliClient.prefs.v359networkDNS优选359
+    BiliClient.prefs.v359networkDNS优选359 = !current
+    AppToast.show(this, "Network DNS优选359: ${if (!current) "ON" else "OFF"}")
+}
+
+// v359: Network IPv6优先359
+internal fun PlayerActivity.showV359NetworkIPv6优先359Toggle() {
+    val current = BiliClient.prefs.v359networkIPv6优先359
+    BiliClient.prefs.v359networkIPv6优先359 = !current
+    AppToast.show(this, "Network IPv6优先359: ${if (!current) "ON" else "OFF"}")
+}
+
+// v359: Network Proxy Custom359
+internal fun PlayerActivity.showV359NetworkProxyCustom359Toggle() {
+    val current = BiliClient.prefs.v359networkProxyCustom359
+    BiliClient.prefs.v359networkProxyCustom359 = !current
+    AppToast.show(this, "Network Proxy Custom359: ${if (!current) "ON" else "OFF"}")
+}
+
+// v359: Network Cache Strategy359
+internal fun PlayerActivity.showV359NetworkCacheStrategy359Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v359networkCacheStrategy359).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Cache Strategy359",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v359networkCacheStrategy359 = value
+        AppToast.show(this, "Network Cache Strategy359: $value")
+    }
+}
+
+// v359: Network Connection Pool359
+internal fun PlayerActivity.showV359NetworkConnectionPool359Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v359networkConnectionPool359).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Connection Pool359",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v359networkConnectionPool359 = value
+        AppToast.show(this, "Network Connection Pool359: $value")
+    }
+}
+
+// v359: Network Keep Alive359
+internal fun PlayerActivity.showV359NetworkKeepAlive359Toggle() {
+    val current = BiliClient.prefs.v359networkKeepAlive359
+    BiliClient.prefs.v359networkKeepAlive359 = !current
+    AppToast.show(this, "Network Keep Alive359: ${if (!current) "ON" else "OFF"}")
+}
+
+// v359: Network Compression359
+internal fun PlayerActivity.showV359NetworkCompression359Toggle() {
+    val current = BiliClient.prefs.v359networkCompression359
+    BiliClient.prefs.v359networkCompression359 = !current
+    AppToast.show(this, "Network Compression359: ${if (!current) "ON" else "OFF"}")
+}
+
+// v359: Network Encryption359
+internal fun PlayerActivity.showV359NetworkEncryption359Toggle() {
+    val current = BiliClient.prefs.v359networkEncryption359
+    BiliClient.prefs.v359networkEncryption359 = !current
+    AppToast.show(this, "Network Encryption359: ${if (!current) "ON" else "OFF"}")
+}
+
+// v360: Network Quality Indicator360
+internal fun PlayerActivity.showV360NetworkQualityIndicator360Toggle() {
+    val current = BiliClient.prefs.v360networkQualityIndicator360
+    BiliClient.prefs.v360networkQualityIndicator360 = !current
+    AppToast.show(this, "Network Quality Indicator360: ${if (!current) "ON" else "OFF"}")
+}
+
+// v360: Network Auto Switch360
+internal fun PlayerActivity.showV360NetworkAutoSwitch360Toggle() {
+    val current = BiliClient.prefs.v360networkAutoSwitch360
+    BiliClient.prefs.v360networkAutoSwitch360 = !current
+    AppToast.show(this, "Network Auto Switch360: ${if (!current) "ON" else "OFF"}")
+}
+
+// v360: Network Bandwidth Limit360
+internal fun PlayerActivity.showV360NetworkBandwidthLimit360Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v360networkBandwidthLimit360).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Bandwidth Limit360",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v360networkBandwidthLimit360 = value
+        AppToast.show(this, "Network Bandwidth Limit360: $value")
+    }
+}
+
+// v360: Network Latency Display360
+internal fun PlayerActivity.showV360NetworkLatencyDisplay360Toggle() {
+    val current = BiliClient.prefs.v360networkLatencyDisplay360
+    BiliClient.prefs.v360networkLatencyDisplay360 = !current
+    AppToast.show(this, "Network Latency Display360: ${if (!current) "ON" else "OFF"}")
+}
+
+// v360: Network Packet Loss Alert360
+internal fun PlayerActivity.showV360NetworkPacketLossAlert360Toggle() {
+    val current = BiliClient.prefs.v360networkPacketLossAlert360
+    BiliClient.prefs.v360networkPacketLossAlert360 = !current
+    AppToast.show(this, "Network Packet Loss Alert360: ${if (!current) "ON" else "OFF"}")
+}
+
+// v360: Network Retry Strategy360
+internal fun PlayerActivity.showV360NetworkRetryStrategy360Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v360networkRetryStrategy360).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Retry Strategy360",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v360networkRetryStrategy360 = value
+        AppToast.show(this, "Network Retry Strategy360: $value")
+    }
+}
+
+// v360: Network Timeout Custom360
+internal fun PlayerActivity.showV360NetworkTimeoutCustom360Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v360networkTimeoutCustom360).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Timeout Custom360",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v360networkTimeoutCustom360 = value
+        AppToast.show(this, "Network Timeout Custom360: $value")
+    }
+}
+
+// v360: Network DNS优选360
+internal fun PlayerActivity.showV360NetworkDNS优选360Toggle() {
+    val current = BiliClient.prefs.v360networkDNS优选360
+    BiliClient.prefs.v360networkDNS优选360 = !current
+    AppToast.show(this, "Network DNS优选360: ${if (!current) "ON" else "OFF"}")
+}
+
+// v360: Network IPv6优先360
+internal fun PlayerActivity.showV360NetworkIPv6优先360Toggle() {
+    val current = BiliClient.prefs.v360networkIPv6优先360
+    BiliClient.prefs.v360networkIPv6优先360 = !current
+    AppToast.show(this, "Network IPv6优先360: ${if (!current) "ON" else "OFF"}")
+}
+
+// v360: Network Proxy Custom360
+internal fun PlayerActivity.showV360NetworkProxyCustom360Toggle() {
+    val current = BiliClient.prefs.v360networkProxyCustom360
+    BiliClient.prefs.v360networkProxyCustom360 = !current
+    AppToast.show(this, "Network Proxy Custom360: ${if (!current) "ON" else "OFF"}")
+}
+
+// v360: Network Cache Strategy360
+internal fun PlayerActivity.showV360NetworkCacheStrategy360Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v360networkCacheStrategy360).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Cache Strategy360",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v360networkCacheStrategy360 = value
+        AppToast.show(this, "Network Cache Strategy360: $value")
+    }
+}
+
+// v360: Network Connection Pool360
+internal fun PlayerActivity.showV360NetworkConnectionPool360Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v360networkConnectionPool360).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Network Connection Pool360",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v360networkConnectionPool360 = value
+        AppToast.show(this, "Network Connection Pool360: $value")
+    }
+}
+
+// v360: Network Keep Alive360
+internal fun PlayerActivity.showV360NetworkKeepAlive360Toggle() {
+    val current = BiliClient.prefs.v360networkKeepAlive360
+    BiliClient.prefs.v360networkKeepAlive360 = !current
+    AppToast.show(this, "Network Keep Alive360: ${if (!current) "ON" else "OFF"}")
+}
+
+// v360: Network Compression360
+internal fun PlayerActivity.showV360NetworkCompression360Toggle() {
+    val current = BiliClient.prefs.v360networkCompression360
+    BiliClient.prefs.v360networkCompression360 = !current
+    AppToast.show(this, "Network Compression360: ${if (!current) "ON" else "OFF"}")
+}
+
+// v360: Network Encryption360
+internal fun PlayerActivity.showV360NetworkEncryption360Toggle() {
+    val current = BiliClient.prefs.v360networkEncryption360
+    BiliClient.prefs.v360networkEncryption360 = !current
+    AppToast.show(this, "Network Encryption360: ${if (!current) "ON" else "OFF"}")
+}
+
