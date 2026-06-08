@@ -54048,6 +54048,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V790LEFTAUTOPANEL790, false)
         set(value) = prefs.edit().putBoolean(KEY_V790LEFTAUTOPANEL790, value).apply()
 
+    var v791lengthAutoLimit791: Int
+        get() = prefs.getInt(KEY_V791LENGTHAUTOLIMIT791, 0)
+        set(value) = prefs.edit().putInt(KEY_V791LENGTHAUTOLIMIT791, value).apply()
+
+    var v791levelAutoTier791: Int
+        get() = prefs.getInt(KEY_V791LEVELAUTOTIER791, 0)
+        set(value) = prefs.edit().putInt(KEY_V791LEVELAUTOTIER791, value).apply()
+
+    var v791libraryAutoImport791: Boolean
+        get() = prefs.getBoolean(KEY_V791LIBRARYAUTOIMPORT791, false)
+        set(value) = prefs.edit().putBoolean(KEY_V791LIBRARYAUTOIMPORT791, value).apply()
+
+    var v791licenseAutoVerify791: Boolean
+        get() = prefs.getBoolean(KEY_V791LICENSEAUTOVERIFY791, false)
+        set(value) = prefs.edit().putBoolean(KEY_V791LICENSEAUTOVERIFY791, value).apply()
+
+    var v791lifeAutoCycle791: Boolean
+        get() = prefs.getBoolean(KEY_V791LIFEAUTOCYCLE791, false)
+        set(value) = prefs.edit().putBoolean(KEY_V791LIFEAUTOCYCLE791, value).apply()
+
+    var v791lifetimeAutoManage791: Boolean
+        get() = prefs.getBoolean(KEY_V791LIFETIMEAUTOMANAGE791, false)
+        set(value) = prefs.edit().putBoolean(KEY_V791LIFETIMEAUTOMANAGE791, value).apply()
+
+    var v791lightAutoTheme791: Boolean
+        get() = prefs.getBoolean(KEY_V791LIGHTAUTOTHEME791, false)
+        set(value) = prefs.edit().putBoolean(KEY_V791LIGHTAUTOTHEME791, value).apply()
+
+    var v791limitAutoRate791: Boolean
+        get() = prefs.getBoolean(KEY_V791LIMITAUTORATE791, false)
+        set(value) = prefs.edit().putBoolean(KEY_V791LIMITAUTORATE791, value).apply()
+
+    var v791lineAutoWrap791: Boolean
+        get() = prefs.getBoolean(KEY_V791LINEAUTOWRAP791, false)
+        set(value) = prefs.edit().putBoolean(KEY_V791LINEAUTOWRAP791, value).apply()
+
+    var v791linkAutoPreview791: Boolean
+        get() = prefs.getBoolean(KEY_V791LINKAUTOPREVIEW791, false)
+        set(value) = prefs.edit().putBoolean(KEY_V791LINKAUTOPREVIEW791, value).apply()
+
+    var v791listAutoVirtualize791: Boolean
+        get() = prefs.getBoolean(KEY_V791LISTAUTOVIRTUALIZE791, false)
+        set(value) = prefs.edit().putBoolean(KEY_V791LISTAUTOVIRTUALIZE791, value).apply()
+
+    var v791liveAutoReconnect791: Boolean
+        get() = prefs.getBoolean(KEY_V791LIVEAUTORECONNECT791, false)
+        set(value) = prefs.edit().putBoolean(KEY_V791LIVEAUTORECONNECT791, value).apply()
+
+    var v791loadAutoBalance791: Boolean
+        get() = prefs.getBoolean(KEY_V791LOADAUTOBALANCE791, false)
+        set(value) = prefs.edit().putBoolean(KEY_V791LOADAUTOBALANCE791, value).apply()
+
+    var v791localAutoCache791: Boolean
+        get() = prefs.getBoolean(KEY_V791LOCALAUTOCACHE791, false)
+        set(value) = prefs.edit().putBoolean(KEY_V791LOCALAUTOCACHE791, value).apply()
+
+    var v791lockAutoScreen791: Boolean
+        get() = prefs.getBoolean(KEY_V791LOCKAUTOSCREEN791, false)
+        set(value) = prefs.edit().putBoolean(KEY_V791LOCKAUTOSCREEN791, value).apply()
+
+    var v792lengthAutoLimit792: Int
+        get() = prefs.getInt(KEY_V792LENGTHAUTOLIMIT792, 0)
+        set(value) = prefs.edit().putInt(KEY_V792LENGTHAUTOLIMIT792, value).apply()
+
+    var v792levelAutoTier792: Int
+        get() = prefs.getInt(KEY_V792LEVELAUTOTIER792, 0)
+        set(value) = prefs.edit().putInt(KEY_V792LEVELAUTOTIER792, value).apply()
+
+    var v792libraryAutoImport792: Boolean
+        get() = prefs.getBoolean(KEY_V792LIBRARYAUTOIMPORT792, false)
+        set(value) = prefs.edit().putBoolean(KEY_V792LIBRARYAUTOIMPORT792, value).apply()
+
+    var v792licenseAutoVerify792: Boolean
+        get() = prefs.getBoolean(KEY_V792LICENSEAUTOVERIFY792, false)
+        set(value) = prefs.edit().putBoolean(KEY_V792LICENSEAUTOVERIFY792, value).apply()
+
+    var v792lifeAutoCycle792: Boolean
+        get() = prefs.getBoolean(KEY_V792LIFEAUTOCYCLE792, false)
+        set(value) = prefs.edit().putBoolean(KEY_V792LIFEAUTOCYCLE792, value).apply()
+
+    var v792lifetimeAutoManage792: Boolean
+        get() = prefs.getBoolean(KEY_V792LIFETIMEAUTOMANAGE792, false)
+        set(value) = prefs.edit().putBoolean(KEY_V792LIFETIMEAUTOMANAGE792, value).apply()
+
+    var v792lightAutoTheme792: Boolean
+        get() = prefs.getBoolean(KEY_V792LIGHTAUTOTHEME792, false)
+        set(value) = prefs.edit().putBoolean(KEY_V792LIGHTAUTOTHEME792, value).apply()
+
+    var v792limitAutoRate792: Boolean
+        get() = prefs.getBoolean(KEY_V792LIMITAUTORATE792, false)
+        set(value) = prefs.edit().putBoolean(KEY_V792LIMITAUTORATE792, value).apply()
+
+    var v792lineAutoWrap792: Boolean
+        get() = prefs.getBoolean(KEY_V792LINEAUTOWRAP792, false)
+        set(value) = prefs.edit().putBoolean(KEY_V792LINEAUTOWRAP792, value).apply()
+
+    var v792linkAutoPreview792: Boolean
+        get() = prefs.getBoolean(KEY_V792LINKAUTOPREVIEW792, false)
+        set(value) = prefs.edit().putBoolean(KEY_V792LINKAUTOPREVIEW792, value).apply()
+
+    var v792listAutoVirtualize792: Boolean
+        get() = prefs.getBoolean(KEY_V792LISTAUTOVIRTUALIZE792, false)
+        set(value) = prefs.edit().putBoolean(KEY_V792LISTAUTOVIRTUALIZE792, value).apply()
+
+    var v792liveAutoReconnect792: Boolean
+        get() = prefs.getBoolean(KEY_V792LIVEAUTORECONNECT792, false)
+        set(value) = prefs.edit().putBoolean(KEY_V792LIVEAUTORECONNECT792, value).apply()
+
+    var v792loadAutoBalance792: Boolean
+        get() = prefs.getBoolean(KEY_V792LOADAUTOBALANCE792, false)
+        set(value) = prefs.edit().putBoolean(KEY_V792LOADAUTOBALANCE792, value).apply()
+
+    var v792localAutoCache792: Boolean
+        get() = prefs.getBoolean(KEY_V792LOCALAUTOCACHE792, false)
+        set(value) = prefs.edit().putBoolean(KEY_V792LOCALAUTOCACHE792, value).apply()
+
+    var v792lockAutoScreen792: Boolean
+        get() = prefs.getBoolean(KEY_V792LOCKAUTOSCREEN792, false)
+        set(value) = prefs.edit().putBoolean(KEY_V792LOCKAUTOSCREEN792, value).apply()
+
+    var v793lengthAutoLimit793: Int
+        get() = prefs.getInt(KEY_V793LENGTHAUTOLIMIT793, 0)
+        set(value) = prefs.edit().putInt(KEY_V793LENGTHAUTOLIMIT793, value).apply()
+
+    var v793levelAutoTier793: Int
+        get() = prefs.getInt(KEY_V793LEVELAUTOTIER793, 0)
+        set(value) = prefs.edit().putInt(KEY_V793LEVELAUTOTIER793, value).apply()
+
+    var v793libraryAutoImport793: Boolean
+        get() = prefs.getBoolean(KEY_V793LIBRARYAUTOIMPORT793, false)
+        set(value) = prefs.edit().putBoolean(KEY_V793LIBRARYAUTOIMPORT793, value).apply()
+
+    var v793licenseAutoVerify793: Boolean
+        get() = prefs.getBoolean(KEY_V793LICENSEAUTOVERIFY793, false)
+        set(value) = prefs.edit().putBoolean(KEY_V793LICENSEAUTOVERIFY793, value).apply()
+
+    var v793lifeAutoCycle793: Boolean
+        get() = prefs.getBoolean(KEY_V793LIFEAUTOCYCLE793, false)
+        set(value) = prefs.edit().putBoolean(KEY_V793LIFEAUTOCYCLE793, value).apply()
+
+    var v793lifetimeAutoManage793: Boolean
+        get() = prefs.getBoolean(KEY_V793LIFETIMEAUTOMANAGE793, false)
+        set(value) = prefs.edit().putBoolean(KEY_V793LIFETIMEAUTOMANAGE793, value).apply()
+
+    var v793lightAutoTheme793: Boolean
+        get() = prefs.getBoolean(KEY_V793LIGHTAUTOTHEME793, false)
+        set(value) = prefs.edit().putBoolean(KEY_V793LIGHTAUTOTHEME793, value).apply()
+
+    var v793limitAutoRate793: Boolean
+        get() = prefs.getBoolean(KEY_V793LIMITAUTORATE793, false)
+        set(value) = prefs.edit().putBoolean(KEY_V793LIMITAUTORATE793, value).apply()
+
+    var v793lineAutoWrap793: Boolean
+        get() = prefs.getBoolean(KEY_V793LINEAUTOWRAP793, false)
+        set(value) = prefs.edit().putBoolean(KEY_V793LINEAUTOWRAP793, value).apply()
+
+    var v793linkAutoPreview793: Boolean
+        get() = prefs.getBoolean(KEY_V793LINKAUTOPREVIEW793, false)
+        set(value) = prefs.edit().putBoolean(KEY_V793LINKAUTOPREVIEW793, value).apply()
+
+    var v793listAutoVirtualize793: Boolean
+        get() = prefs.getBoolean(KEY_V793LISTAUTOVIRTUALIZE793, false)
+        set(value) = prefs.edit().putBoolean(KEY_V793LISTAUTOVIRTUALIZE793, value).apply()
+
+    var v793liveAutoReconnect793: Boolean
+        get() = prefs.getBoolean(KEY_V793LIVEAUTORECONNECT793, false)
+        set(value) = prefs.edit().putBoolean(KEY_V793LIVEAUTORECONNECT793, value).apply()
+
+    var v793loadAutoBalance793: Boolean
+        get() = prefs.getBoolean(KEY_V793LOADAUTOBALANCE793, false)
+        set(value) = prefs.edit().putBoolean(KEY_V793LOADAUTOBALANCE793, value).apply()
+
+    var v793localAutoCache793: Boolean
+        get() = prefs.getBoolean(KEY_V793LOCALAUTOCACHE793, false)
+        set(value) = prefs.edit().putBoolean(KEY_V793LOCALAUTOCACHE793, value).apply()
+
+    var v793lockAutoScreen793: Boolean
+        get() = prefs.getBoolean(KEY_V793LOCKAUTOSCREEN793, false)
+        set(value) = prefs.edit().putBoolean(KEY_V793LOCKAUTOSCREEN793, value).apply()
+
+    var v794lengthAutoLimit794: Int
+        get() = prefs.getInt(KEY_V794LENGTHAUTOLIMIT794, 0)
+        set(value) = prefs.edit().putInt(KEY_V794LENGTHAUTOLIMIT794, value).apply()
+
+    var v794levelAutoTier794: Int
+        get() = prefs.getInt(KEY_V794LEVELAUTOTIER794, 0)
+        set(value) = prefs.edit().putInt(KEY_V794LEVELAUTOTIER794, value).apply()
+
+    var v794libraryAutoImport794: Boolean
+        get() = prefs.getBoolean(KEY_V794LIBRARYAUTOIMPORT794, false)
+        set(value) = prefs.edit().putBoolean(KEY_V794LIBRARYAUTOIMPORT794, value).apply()
+
+    var v794licenseAutoVerify794: Boolean
+        get() = prefs.getBoolean(KEY_V794LICENSEAUTOVERIFY794, false)
+        set(value) = prefs.edit().putBoolean(KEY_V794LICENSEAUTOVERIFY794, value).apply()
+
+    var v794lifeAutoCycle794: Boolean
+        get() = prefs.getBoolean(KEY_V794LIFEAUTOCYCLE794, false)
+        set(value) = prefs.edit().putBoolean(KEY_V794LIFEAUTOCYCLE794, value).apply()
+
+    var v794lifetimeAutoManage794: Boolean
+        get() = prefs.getBoolean(KEY_V794LIFETIMEAUTOMANAGE794, false)
+        set(value) = prefs.edit().putBoolean(KEY_V794LIFETIMEAUTOMANAGE794, value).apply()
+
+    var v794lightAutoTheme794: Boolean
+        get() = prefs.getBoolean(KEY_V794LIGHTAUTOTHEME794, false)
+        set(value) = prefs.edit().putBoolean(KEY_V794LIGHTAUTOTHEME794, value).apply()
+
+    var v794limitAutoRate794: Boolean
+        get() = prefs.getBoolean(KEY_V794LIMITAUTORATE794, false)
+        set(value) = prefs.edit().putBoolean(KEY_V794LIMITAUTORATE794, value).apply()
+
+    var v794lineAutoWrap794: Boolean
+        get() = prefs.getBoolean(KEY_V794LINEAUTOWRAP794, false)
+        set(value) = prefs.edit().putBoolean(KEY_V794LINEAUTOWRAP794, value).apply()
+
+    var v794linkAutoPreview794: Boolean
+        get() = prefs.getBoolean(KEY_V794LINKAUTOPREVIEW794, false)
+        set(value) = prefs.edit().putBoolean(KEY_V794LINKAUTOPREVIEW794, value).apply()
+
+    var v794listAutoVirtualize794: Boolean
+        get() = prefs.getBoolean(KEY_V794LISTAUTOVIRTUALIZE794, false)
+        set(value) = prefs.edit().putBoolean(KEY_V794LISTAUTOVIRTUALIZE794, value).apply()
+
+    var v794liveAutoReconnect794: Boolean
+        get() = prefs.getBoolean(KEY_V794LIVEAUTORECONNECT794, false)
+        set(value) = prefs.edit().putBoolean(KEY_V794LIVEAUTORECONNECT794, value).apply()
+
+    var v794loadAutoBalance794: Boolean
+        get() = prefs.getBoolean(KEY_V794LOADAUTOBALANCE794, false)
+        set(value) = prefs.edit().putBoolean(KEY_V794LOADAUTOBALANCE794, value).apply()
+
+    var v794localAutoCache794: Boolean
+        get() = prefs.getBoolean(KEY_V794LOCALAUTOCACHE794, false)
+        set(value) = prefs.edit().putBoolean(KEY_V794LOCALAUTOCACHE794, value).apply()
+
+    var v794lockAutoScreen794: Boolean
+        get() = prefs.getBoolean(KEY_V794LOCKAUTOSCREEN794, false)
+        set(value) = prefs.edit().putBoolean(KEY_V794LOCKAUTOSCREEN794, value).apply()
+
+    var v795lengthAutoLimit795: Int
+        get() = prefs.getInt(KEY_V795LENGTHAUTOLIMIT795, 0)
+        set(value) = prefs.edit().putInt(KEY_V795LENGTHAUTOLIMIT795, value).apply()
+
+    var v795levelAutoTier795: Int
+        get() = prefs.getInt(KEY_V795LEVELAUTOTIER795, 0)
+        set(value) = prefs.edit().putInt(KEY_V795LEVELAUTOTIER795, value).apply()
+
+    var v795libraryAutoImport795: Boolean
+        get() = prefs.getBoolean(KEY_V795LIBRARYAUTOIMPORT795, false)
+        set(value) = prefs.edit().putBoolean(KEY_V795LIBRARYAUTOIMPORT795, value).apply()
+
+    var v795licenseAutoVerify795: Boolean
+        get() = prefs.getBoolean(KEY_V795LICENSEAUTOVERIFY795, false)
+        set(value) = prefs.edit().putBoolean(KEY_V795LICENSEAUTOVERIFY795, value).apply()
+
+    var v795lifeAutoCycle795: Boolean
+        get() = prefs.getBoolean(KEY_V795LIFEAUTOCYCLE795, false)
+        set(value) = prefs.edit().putBoolean(KEY_V795LIFEAUTOCYCLE795, value).apply()
+
+    var v795lifetimeAutoManage795: Boolean
+        get() = prefs.getBoolean(KEY_V795LIFETIMEAUTOMANAGE795, false)
+        set(value) = prefs.edit().putBoolean(KEY_V795LIFETIMEAUTOMANAGE795, value).apply()
+
+    var v795lightAutoTheme795: Boolean
+        get() = prefs.getBoolean(KEY_V795LIGHTAUTOTHEME795, false)
+        set(value) = prefs.edit().putBoolean(KEY_V795LIGHTAUTOTHEME795, value).apply()
+
+    var v795limitAutoRate795: Boolean
+        get() = prefs.getBoolean(KEY_V795LIMITAUTORATE795, false)
+        set(value) = prefs.edit().putBoolean(KEY_V795LIMITAUTORATE795, value).apply()
+
+    var v795lineAutoWrap795: Boolean
+        get() = prefs.getBoolean(KEY_V795LINEAUTOWRAP795, false)
+        set(value) = prefs.edit().putBoolean(KEY_V795LINEAUTOWRAP795, value).apply()
+
+    var v795linkAutoPreview795: Boolean
+        get() = prefs.getBoolean(KEY_V795LINKAUTOPREVIEW795, false)
+        set(value) = prefs.edit().putBoolean(KEY_V795LINKAUTOPREVIEW795, value).apply()
+
+    var v795listAutoVirtualize795: Boolean
+        get() = prefs.getBoolean(KEY_V795LISTAUTOVIRTUALIZE795, false)
+        set(value) = prefs.edit().putBoolean(KEY_V795LISTAUTOVIRTUALIZE795, value).apply()
+
+    var v795liveAutoReconnect795: Boolean
+        get() = prefs.getBoolean(KEY_V795LIVEAUTORECONNECT795, false)
+        set(value) = prefs.edit().putBoolean(KEY_V795LIVEAUTORECONNECT795, value).apply()
+
+    var v795loadAutoBalance795: Boolean
+        get() = prefs.getBoolean(KEY_V795LOADAUTOBALANCE795, false)
+        set(value) = prefs.edit().putBoolean(KEY_V795LOADAUTOBALANCE795, value).apply()
+
+    var v795localAutoCache795: Boolean
+        get() = prefs.getBoolean(KEY_V795LOCALAUTOCACHE795, false)
+        set(value) = prefs.edit().putBoolean(KEY_V795LOCALAUTOCACHE795, value).apply()
+
+    var v795lockAutoScreen795: Boolean
+        get() = prefs.getBoolean(KEY_V795LOCKAUTOSCREEN795, false)
+        set(value) = prefs.edit().putBoolean(KEY_V795LOCKAUTOSCREEN795, value).apply()
+
+    var v796lengthAutoLimit796: Int
+        get() = prefs.getInt(KEY_V796LENGTHAUTOLIMIT796, 0)
+        set(value) = prefs.edit().putInt(KEY_V796LENGTHAUTOLIMIT796, value).apply()
+
+    var v796levelAutoTier796: Int
+        get() = prefs.getInt(KEY_V796LEVELAUTOTIER796, 0)
+        set(value) = prefs.edit().putInt(KEY_V796LEVELAUTOTIER796, value).apply()
+
+    var v796libraryAutoImport796: Boolean
+        get() = prefs.getBoolean(KEY_V796LIBRARYAUTOIMPORT796, false)
+        set(value) = prefs.edit().putBoolean(KEY_V796LIBRARYAUTOIMPORT796, value).apply()
+
+    var v796licenseAutoVerify796: Boolean
+        get() = prefs.getBoolean(KEY_V796LICENSEAUTOVERIFY796, false)
+        set(value) = prefs.edit().putBoolean(KEY_V796LICENSEAUTOVERIFY796, value).apply()
+
+    var v796lifeAutoCycle796: Boolean
+        get() = prefs.getBoolean(KEY_V796LIFEAUTOCYCLE796, false)
+        set(value) = prefs.edit().putBoolean(KEY_V796LIFEAUTOCYCLE796, value).apply()
+
+    var v796lifetimeAutoManage796: Boolean
+        get() = prefs.getBoolean(KEY_V796LIFETIMEAUTOMANAGE796, false)
+        set(value) = prefs.edit().putBoolean(KEY_V796LIFETIMEAUTOMANAGE796, value).apply()
+
+    var v796lightAutoTheme796: Boolean
+        get() = prefs.getBoolean(KEY_V796LIGHTAUTOTHEME796, false)
+        set(value) = prefs.edit().putBoolean(KEY_V796LIGHTAUTOTHEME796, value).apply()
+
+    var v796limitAutoRate796: Boolean
+        get() = prefs.getBoolean(KEY_V796LIMITAUTORATE796, false)
+        set(value) = prefs.edit().putBoolean(KEY_V796LIMITAUTORATE796, value).apply()
+
+    var v796lineAutoWrap796: Boolean
+        get() = prefs.getBoolean(KEY_V796LINEAUTOWRAP796, false)
+        set(value) = prefs.edit().putBoolean(KEY_V796LINEAUTOWRAP796, value).apply()
+
+    var v796linkAutoPreview796: Boolean
+        get() = prefs.getBoolean(KEY_V796LINKAUTOPREVIEW796, false)
+        set(value) = prefs.edit().putBoolean(KEY_V796LINKAUTOPREVIEW796, value).apply()
+
+    var v796listAutoVirtualize796: Boolean
+        get() = prefs.getBoolean(KEY_V796LISTAUTOVIRTUALIZE796, false)
+        set(value) = prefs.edit().putBoolean(KEY_V796LISTAUTOVIRTUALIZE796, value).apply()
+
+    var v796liveAutoReconnect796: Boolean
+        get() = prefs.getBoolean(KEY_V796LIVEAUTORECONNECT796, false)
+        set(value) = prefs.edit().putBoolean(KEY_V796LIVEAUTORECONNECT796, value).apply()
+
+    var v796loadAutoBalance796: Boolean
+        get() = prefs.getBoolean(KEY_V796LOADAUTOBALANCE796, false)
+        set(value) = prefs.edit().putBoolean(KEY_V796LOADAUTOBALANCE796, value).apply()
+
+    var v796localAutoCache796: Boolean
+        get() = prefs.getBoolean(KEY_V796LOCALAUTOCACHE796, false)
+        set(value) = prefs.edit().putBoolean(KEY_V796LOCALAUTOCACHE796, value).apply()
+
+    var v796lockAutoScreen796: Boolean
+        get() = prefs.getBoolean(KEY_V796LOCKAUTOSCREEN796, false)
+        set(value) = prefs.edit().putBoolean(KEY_V796LOCKAUTOSCREEN796, value).apply()
+
+    var v797lengthAutoLimit797: Int
+        get() = prefs.getInt(KEY_V797LENGTHAUTOLIMIT797, 0)
+        set(value) = prefs.edit().putInt(KEY_V797LENGTHAUTOLIMIT797, value).apply()
+
+    var v797levelAutoTier797: Int
+        get() = prefs.getInt(KEY_V797LEVELAUTOTIER797, 0)
+        set(value) = prefs.edit().putInt(KEY_V797LEVELAUTOTIER797, value).apply()
+
+    var v797libraryAutoImport797: Boolean
+        get() = prefs.getBoolean(KEY_V797LIBRARYAUTOIMPORT797, false)
+        set(value) = prefs.edit().putBoolean(KEY_V797LIBRARYAUTOIMPORT797, value).apply()
+
+    var v797licenseAutoVerify797: Boolean
+        get() = prefs.getBoolean(KEY_V797LICENSEAUTOVERIFY797, false)
+        set(value) = prefs.edit().putBoolean(KEY_V797LICENSEAUTOVERIFY797, value).apply()
+
+    var v797lifeAutoCycle797: Boolean
+        get() = prefs.getBoolean(KEY_V797LIFEAUTOCYCLE797, false)
+        set(value) = prefs.edit().putBoolean(KEY_V797LIFEAUTOCYCLE797, value).apply()
+
+    var v797lifetimeAutoManage797: Boolean
+        get() = prefs.getBoolean(KEY_V797LIFETIMEAUTOMANAGE797, false)
+        set(value) = prefs.edit().putBoolean(KEY_V797LIFETIMEAUTOMANAGE797, value).apply()
+
+    var v797lightAutoTheme797: Boolean
+        get() = prefs.getBoolean(KEY_V797LIGHTAUTOTHEME797, false)
+        set(value) = prefs.edit().putBoolean(KEY_V797LIGHTAUTOTHEME797, value).apply()
+
+    var v797limitAutoRate797: Boolean
+        get() = prefs.getBoolean(KEY_V797LIMITAUTORATE797, false)
+        set(value) = prefs.edit().putBoolean(KEY_V797LIMITAUTORATE797, value).apply()
+
+    var v797lineAutoWrap797: Boolean
+        get() = prefs.getBoolean(KEY_V797LINEAUTOWRAP797, false)
+        set(value) = prefs.edit().putBoolean(KEY_V797LINEAUTOWRAP797, value).apply()
+
+    var v797linkAutoPreview797: Boolean
+        get() = prefs.getBoolean(KEY_V797LINKAUTOPREVIEW797, false)
+        set(value) = prefs.edit().putBoolean(KEY_V797LINKAUTOPREVIEW797, value).apply()
+
+    var v797listAutoVirtualize797: Boolean
+        get() = prefs.getBoolean(KEY_V797LISTAUTOVIRTUALIZE797, false)
+        set(value) = prefs.edit().putBoolean(KEY_V797LISTAUTOVIRTUALIZE797, value).apply()
+
+    var v797liveAutoReconnect797: Boolean
+        get() = prefs.getBoolean(KEY_V797LIVEAUTORECONNECT797, false)
+        set(value) = prefs.edit().putBoolean(KEY_V797LIVEAUTORECONNECT797, value).apply()
+
+    var v797loadAutoBalance797: Boolean
+        get() = prefs.getBoolean(KEY_V797LOADAUTOBALANCE797, false)
+        set(value) = prefs.edit().putBoolean(KEY_V797LOADAUTOBALANCE797, value).apply()
+
+    var v797localAutoCache797: Boolean
+        get() = prefs.getBoolean(KEY_V797LOCALAUTOCACHE797, false)
+        set(value) = prefs.edit().putBoolean(KEY_V797LOCALAUTOCACHE797, value).apply()
+
+    var v797lockAutoScreen797: Boolean
+        get() = prefs.getBoolean(KEY_V797LOCKAUTOSCREEN797, false)
+        set(value) = prefs.edit().putBoolean(KEY_V797LOCKAUTOSCREEN797, value).apply()
+
+    var v798lengthAutoLimit798: Int
+        get() = prefs.getInt(KEY_V798LENGTHAUTOLIMIT798, 0)
+        set(value) = prefs.edit().putInt(KEY_V798LENGTHAUTOLIMIT798, value).apply()
+
+    var v798levelAutoTier798: Int
+        get() = prefs.getInt(KEY_V798LEVELAUTOTIER798, 0)
+        set(value) = prefs.edit().putInt(KEY_V798LEVELAUTOTIER798, value).apply()
+
+    var v798libraryAutoImport798: Boolean
+        get() = prefs.getBoolean(KEY_V798LIBRARYAUTOIMPORT798, false)
+        set(value) = prefs.edit().putBoolean(KEY_V798LIBRARYAUTOIMPORT798, value).apply()
+
+    var v798licenseAutoVerify798: Boolean
+        get() = prefs.getBoolean(KEY_V798LICENSEAUTOVERIFY798, false)
+        set(value) = prefs.edit().putBoolean(KEY_V798LICENSEAUTOVERIFY798, value).apply()
+
+    var v798lifeAutoCycle798: Boolean
+        get() = prefs.getBoolean(KEY_V798LIFEAUTOCYCLE798, false)
+        set(value) = prefs.edit().putBoolean(KEY_V798LIFEAUTOCYCLE798, value).apply()
+
+    var v798lifetimeAutoManage798: Boolean
+        get() = prefs.getBoolean(KEY_V798LIFETIMEAUTOMANAGE798, false)
+        set(value) = prefs.edit().putBoolean(KEY_V798LIFETIMEAUTOMANAGE798, value).apply()
+
+    var v798lightAutoTheme798: Boolean
+        get() = prefs.getBoolean(KEY_V798LIGHTAUTOTHEME798, false)
+        set(value) = prefs.edit().putBoolean(KEY_V798LIGHTAUTOTHEME798, value).apply()
+
+    var v798limitAutoRate798: Boolean
+        get() = prefs.getBoolean(KEY_V798LIMITAUTORATE798, false)
+        set(value) = prefs.edit().putBoolean(KEY_V798LIMITAUTORATE798, value).apply()
+
+    var v798lineAutoWrap798: Boolean
+        get() = prefs.getBoolean(KEY_V798LINEAUTOWRAP798, false)
+        set(value) = prefs.edit().putBoolean(KEY_V798LINEAUTOWRAP798, value).apply()
+
+    var v798linkAutoPreview798: Boolean
+        get() = prefs.getBoolean(KEY_V798LINKAUTOPREVIEW798, false)
+        set(value) = prefs.edit().putBoolean(KEY_V798LINKAUTOPREVIEW798, value).apply()
+
+    var v798listAutoVirtualize798: Boolean
+        get() = prefs.getBoolean(KEY_V798LISTAUTOVIRTUALIZE798, false)
+        set(value) = prefs.edit().putBoolean(KEY_V798LISTAUTOVIRTUALIZE798, value).apply()
+
+    var v798liveAutoReconnect798: Boolean
+        get() = prefs.getBoolean(KEY_V798LIVEAUTORECONNECT798, false)
+        set(value) = prefs.edit().putBoolean(KEY_V798LIVEAUTORECONNECT798, value).apply()
+
+    var v798loadAutoBalance798: Boolean
+        get() = prefs.getBoolean(KEY_V798LOADAUTOBALANCE798, false)
+        set(value) = prefs.edit().putBoolean(KEY_V798LOADAUTOBALANCE798, value).apply()
+
+    var v798localAutoCache798: Boolean
+        get() = prefs.getBoolean(KEY_V798LOCALAUTOCACHE798, false)
+        set(value) = prefs.edit().putBoolean(KEY_V798LOCALAUTOCACHE798, value).apply()
+
+    var v798lockAutoScreen798: Boolean
+        get() = prefs.getBoolean(KEY_V798LOCKAUTOSCREEN798, false)
+        set(value) = prefs.edit().putBoolean(KEY_V798LOCKAUTOSCREEN798, value).apply()
+
+    var v799lengthAutoLimit799: Int
+        get() = prefs.getInt(KEY_V799LENGTHAUTOLIMIT799, 0)
+        set(value) = prefs.edit().putInt(KEY_V799LENGTHAUTOLIMIT799, value).apply()
+
+    var v799levelAutoTier799: Int
+        get() = prefs.getInt(KEY_V799LEVELAUTOTIER799, 0)
+        set(value) = prefs.edit().putInt(KEY_V799LEVELAUTOTIER799, value).apply()
+
+    var v799libraryAutoImport799: Boolean
+        get() = prefs.getBoolean(KEY_V799LIBRARYAUTOIMPORT799, false)
+        set(value) = prefs.edit().putBoolean(KEY_V799LIBRARYAUTOIMPORT799, value).apply()
+
+    var v799licenseAutoVerify799: Boolean
+        get() = prefs.getBoolean(KEY_V799LICENSEAUTOVERIFY799, false)
+        set(value) = prefs.edit().putBoolean(KEY_V799LICENSEAUTOVERIFY799, value).apply()
+
+    var v799lifeAutoCycle799: Boolean
+        get() = prefs.getBoolean(KEY_V799LIFEAUTOCYCLE799, false)
+        set(value) = prefs.edit().putBoolean(KEY_V799LIFEAUTOCYCLE799, value).apply()
+
+    var v799lifetimeAutoManage799: Boolean
+        get() = prefs.getBoolean(KEY_V799LIFETIMEAUTOMANAGE799, false)
+        set(value) = prefs.edit().putBoolean(KEY_V799LIFETIMEAUTOMANAGE799, value).apply()
+
+    var v799lightAutoTheme799: Boolean
+        get() = prefs.getBoolean(KEY_V799LIGHTAUTOTHEME799, false)
+        set(value) = prefs.edit().putBoolean(KEY_V799LIGHTAUTOTHEME799, value).apply()
+
+    var v799limitAutoRate799: Boolean
+        get() = prefs.getBoolean(KEY_V799LIMITAUTORATE799, false)
+        set(value) = prefs.edit().putBoolean(KEY_V799LIMITAUTORATE799, value).apply()
+
+    var v799lineAutoWrap799: Boolean
+        get() = prefs.getBoolean(KEY_V799LINEAUTOWRAP799, false)
+        set(value) = prefs.edit().putBoolean(KEY_V799LINEAUTOWRAP799, value).apply()
+
+    var v799linkAutoPreview799: Boolean
+        get() = prefs.getBoolean(KEY_V799LINKAUTOPREVIEW799, false)
+        set(value) = prefs.edit().putBoolean(KEY_V799LINKAUTOPREVIEW799, value).apply()
+
+    var v799listAutoVirtualize799: Boolean
+        get() = prefs.getBoolean(KEY_V799LISTAUTOVIRTUALIZE799, false)
+        set(value) = prefs.edit().putBoolean(KEY_V799LISTAUTOVIRTUALIZE799, value).apply()
+
+    var v799liveAutoReconnect799: Boolean
+        get() = prefs.getBoolean(KEY_V799LIVEAUTORECONNECT799, false)
+        set(value) = prefs.edit().putBoolean(KEY_V799LIVEAUTORECONNECT799, value).apply()
+
+    var v799loadAutoBalance799: Boolean
+        get() = prefs.getBoolean(KEY_V799LOADAUTOBALANCE799, false)
+        set(value) = prefs.edit().putBoolean(KEY_V799LOADAUTOBALANCE799, value).apply()
+
+    var v799localAutoCache799: Boolean
+        get() = prefs.getBoolean(KEY_V799LOCALAUTOCACHE799, false)
+        set(value) = prefs.edit().putBoolean(KEY_V799LOCALAUTOCACHE799, value).apply()
+
+    var v799lockAutoScreen799: Boolean
+        get() = prefs.getBoolean(KEY_V799LOCKAUTOSCREEN799, false)
+        set(value) = prefs.edit().putBoolean(KEY_V799LOCKAUTOSCREEN799, value).apply()
+
+    var v800lengthAutoLimit800: Int
+        get() = prefs.getInt(KEY_V800LENGTHAUTOLIMIT800, 0)
+        set(value) = prefs.edit().putInt(KEY_V800LENGTHAUTOLIMIT800, value).apply()
+
+    var v800levelAutoTier800: Int
+        get() = prefs.getInt(KEY_V800LEVELAUTOTIER800, 0)
+        set(value) = prefs.edit().putInt(KEY_V800LEVELAUTOTIER800, value).apply()
+
+    var v800libraryAutoImport800: Boolean
+        get() = prefs.getBoolean(KEY_V800LIBRARYAUTOIMPORT800, false)
+        set(value) = prefs.edit().putBoolean(KEY_V800LIBRARYAUTOIMPORT800, value).apply()
+
+    var v800licenseAutoVerify800: Boolean
+        get() = prefs.getBoolean(KEY_V800LICENSEAUTOVERIFY800, false)
+        set(value) = prefs.edit().putBoolean(KEY_V800LICENSEAUTOVERIFY800, value).apply()
+
+    var v800lifeAutoCycle800: Boolean
+        get() = prefs.getBoolean(KEY_V800LIFEAUTOCYCLE800, false)
+        set(value) = prefs.edit().putBoolean(KEY_V800LIFEAUTOCYCLE800, value).apply()
+
+    var v800lifetimeAutoManage800: Boolean
+        get() = prefs.getBoolean(KEY_V800LIFETIMEAUTOMANAGE800, false)
+        set(value) = prefs.edit().putBoolean(KEY_V800LIFETIMEAUTOMANAGE800, value).apply()
+
+    var v800lightAutoTheme800: Boolean
+        get() = prefs.getBoolean(KEY_V800LIGHTAUTOTHEME800, false)
+        set(value) = prefs.edit().putBoolean(KEY_V800LIGHTAUTOTHEME800, value).apply()
+
+    var v800limitAutoRate800: Boolean
+        get() = prefs.getBoolean(KEY_V800LIMITAUTORATE800, false)
+        set(value) = prefs.edit().putBoolean(KEY_V800LIMITAUTORATE800, value).apply()
+
+    var v800lineAutoWrap800: Boolean
+        get() = prefs.getBoolean(KEY_V800LINEAUTOWRAP800, false)
+        set(value) = prefs.edit().putBoolean(KEY_V800LINEAUTOWRAP800, value).apply()
+
+    var v800linkAutoPreview800: Boolean
+        get() = prefs.getBoolean(KEY_V800LINKAUTOPREVIEW800, false)
+        set(value) = prefs.edit().putBoolean(KEY_V800LINKAUTOPREVIEW800, value).apply()
+
+    var v800listAutoVirtualize800: Boolean
+        get() = prefs.getBoolean(KEY_V800LISTAUTOVIRTUALIZE800, false)
+        set(value) = prefs.edit().putBoolean(KEY_V800LISTAUTOVIRTUALIZE800, value).apply()
+
+    var v800liveAutoReconnect800: Boolean
+        get() = prefs.getBoolean(KEY_V800LIVEAUTORECONNECT800, false)
+        set(value) = prefs.edit().putBoolean(KEY_V800LIVEAUTORECONNECT800, value).apply()
+
+    var v800loadAutoBalance800: Boolean
+        get() = prefs.getBoolean(KEY_V800LOADAUTOBALANCE800, false)
+        set(value) = prefs.edit().putBoolean(KEY_V800LOADAUTOBALANCE800, value).apply()
+
+    var v800localAutoCache800: Boolean
+        get() = prefs.getBoolean(KEY_V800LOCALAUTOCACHE800, false)
+        set(value) = prefs.edit().putBoolean(KEY_V800LOCALAUTOCACHE800, value).apply()
+
+    var v800lockAutoScreen800: Boolean
+        get() = prefs.getBoolean(KEY_V800LOCKAUTOSCREEN800, false)
+        set(value) = prefs.edit().putBoolean(KEY_V800LOCKAUTOSCREEN800, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -68430,5 +69030,155 @@ class AppPrefs(context: Context) {
         const val KEY_V790LEAFAUTONODE790 = "v790leafAutoNode790" // v790 Leaf Auto Node790
         const val KEY_V790LEARNAUTOADAPT790 = "v790learnAutoAdapt790" // v790 Learn Auto Adapt790
         const val KEY_V790LEFTAUTOPANEL790 = "v790leftAutoPanel790" // v790 Left Auto Panel790
+        const val KEY_V791LENGTHAUTOLIMIT791 = "v791lengthAutoLimit791" // v791 Length Auto Limit791
+        const val KEY_V791LEVELAUTOTIER791 = "v791levelAutoTier791" // v791 Level Auto Tier791
+        const val KEY_V791LIBRARYAUTOIMPORT791 = "v791libraryAutoImport791" // v791 Library Auto Import791
+        const val KEY_V791LICENSEAUTOVERIFY791 = "v791licenseAutoVerify791" // v791 License Auto Verify791
+        const val KEY_V791LIFEAUTOCYCLE791 = "v791lifeAutoCycle791" // v791 Life Auto Cycle791
+        const val KEY_V791LIFETIMEAUTOMANAGE791 = "v791lifetimeAutoManage791" // v791 Lifetime Auto Manage791
+        const val KEY_V791LIGHTAUTOTHEME791 = "v791lightAutoTheme791" // v791 Light Auto Theme791
+        const val KEY_V791LIMITAUTORATE791 = "v791limitAutoRate791" // v791 Limit Auto Rate791
+        const val KEY_V791LINEAUTOWRAP791 = "v791lineAutoWrap791" // v791 Line Auto Wrap791
+        const val KEY_V791LINKAUTOPREVIEW791 = "v791linkAutoPreview791" // v791 Link Auto Preview791
+        const val KEY_V791LISTAUTOVIRTUALIZE791 = "v791listAutoVirtualize791" // v791 List Auto Virtualize791
+        const val KEY_V791LIVEAUTORECONNECT791 = "v791liveAutoReconnect791" // v791 Live Auto Reconnect791
+        const val KEY_V791LOADAUTOBALANCE791 = "v791loadAutoBalance791" // v791 Load Auto Balance791
+        const val KEY_V791LOCALAUTOCACHE791 = "v791localAutoCache791" // v791 Local Auto Cache791
+        const val KEY_V791LOCKAUTOSCREEN791 = "v791lockAutoScreen791" // v791 Lock Auto Screen791
+        const val KEY_V792LENGTHAUTOLIMIT792 = "v792lengthAutoLimit792" // v792 Length Auto Limit792
+        const val KEY_V792LEVELAUTOTIER792 = "v792levelAutoTier792" // v792 Level Auto Tier792
+        const val KEY_V792LIBRARYAUTOIMPORT792 = "v792libraryAutoImport792" // v792 Library Auto Import792
+        const val KEY_V792LICENSEAUTOVERIFY792 = "v792licenseAutoVerify792" // v792 License Auto Verify792
+        const val KEY_V792LIFEAUTOCYCLE792 = "v792lifeAutoCycle792" // v792 Life Auto Cycle792
+        const val KEY_V792LIFETIMEAUTOMANAGE792 = "v792lifetimeAutoManage792" // v792 Lifetime Auto Manage792
+        const val KEY_V792LIGHTAUTOTHEME792 = "v792lightAutoTheme792" // v792 Light Auto Theme792
+        const val KEY_V792LIMITAUTORATE792 = "v792limitAutoRate792" // v792 Limit Auto Rate792
+        const val KEY_V792LINEAUTOWRAP792 = "v792lineAutoWrap792" // v792 Line Auto Wrap792
+        const val KEY_V792LINKAUTOPREVIEW792 = "v792linkAutoPreview792" // v792 Link Auto Preview792
+        const val KEY_V792LISTAUTOVIRTUALIZE792 = "v792listAutoVirtualize792" // v792 List Auto Virtualize792
+        const val KEY_V792LIVEAUTORECONNECT792 = "v792liveAutoReconnect792" // v792 Live Auto Reconnect792
+        const val KEY_V792LOADAUTOBALANCE792 = "v792loadAutoBalance792" // v792 Load Auto Balance792
+        const val KEY_V792LOCALAUTOCACHE792 = "v792localAutoCache792" // v792 Local Auto Cache792
+        const val KEY_V792LOCKAUTOSCREEN792 = "v792lockAutoScreen792" // v792 Lock Auto Screen792
+        const val KEY_V793LENGTHAUTOLIMIT793 = "v793lengthAutoLimit793" // v793 Length Auto Limit793
+        const val KEY_V793LEVELAUTOTIER793 = "v793levelAutoTier793" // v793 Level Auto Tier793
+        const val KEY_V793LIBRARYAUTOIMPORT793 = "v793libraryAutoImport793" // v793 Library Auto Import793
+        const val KEY_V793LICENSEAUTOVERIFY793 = "v793licenseAutoVerify793" // v793 License Auto Verify793
+        const val KEY_V793LIFEAUTOCYCLE793 = "v793lifeAutoCycle793" // v793 Life Auto Cycle793
+        const val KEY_V793LIFETIMEAUTOMANAGE793 = "v793lifetimeAutoManage793" // v793 Lifetime Auto Manage793
+        const val KEY_V793LIGHTAUTOTHEME793 = "v793lightAutoTheme793" // v793 Light Auto Theme793
+        const val KEY_V793LIMITAUTORATE793 = "v793limitAutoRate793" // v793 Limit Auto Rate793
+        const val KEY_V793LINEAUTOWRAP793 = "v793lineAutoWrap793" // v793 Line Auto Wrap793
+        const val KEY_V793LINKAUTOPREVIEW793 = "v793linkAutoPreview793" // v793 Link Auto Preview793
+        const val KEY_V793LISTAUTOVIRTUALIZE793 = "v793listAutoVirtualize793" // v793 List Auto Virtualize793
+        const val KEY_V793LIVEAUTORECONNECT793 = "v793liveAutoReconnect793" // v793 Live Auto Reconnect793
+        const val KEY_V793LOADAUTOBALANCE793 = "v793loadAutoBalance793" // v793 Load Auto Balance793
+        const val KEY_V793LOCALAUTOCACHE793 = "v793localAutoCache793" // v793 Local Auto Cache793
+        const val KEY_V793LOCKAUTOSCREEN793 = "v793lockAutoScreen793" // v793 Lock Auto Screen793
+        const val KEY_V794LENGTHAUTOLIMIT794 = "v794lengthAutoLimit794" // v794 Length Auto Limit794
+        const val KEY_V794LEVELAUTOTIER794 = "v794levelAutoTier794" // v794 Level Auto Tier794
+        const val KEY_V794LIBRARYAUTOIMPORT794 = "v794libraryAutoImport794" // v794 Library Auto Import794
+        const val KEY_V794LICENSEAUTOVERIFY794 = "v794licenseAutoVerify794" // v794 License Auto Verify794
+        const val KEY_V794LIFEAUTOCYCLE794 = "v794lifeAutoCycle794" // v794 Life Auto Cycle794
+        const val KEY_V794LIFETIMEAUTOMANAGE794 = "v794lifetimeAutoManage794" // v794 Lifetime Auto Manage794
+        const val KEY_V794LIGHTAUTOTHEME794 = "v794lightAutoTheme794" // v794 Light Auto Theme794
+        const val KEY_V794LIMITAUTORATE794 = "v794limitAutoRate794" // v794 Limit Auto Rate794
+        const val KEY_V794LINEAUTOWRAP794 = "v794lineAutoWrap794" // v794 Line Auto Wrap794
+        const val KEY_V794LINKAUTOPREVIEW794 = "v794linkAutoPreview794" // v794 Link Auto Preview794
+        const val KEY_V794LISTAUTOVIRTUALIZE794 = "v794listAutoVirtualize794" // v794 List Auto Virtualize794
+        const val KEY_V794LIVEAUTORECONNECT794 = "v794liveAutoReconnect794" // v794 Live Auto Reconnect794
+        const val KEY_V794LOADAUTOBALANCE794 = "v794loadAutoBalance794" // v794 Load Auto Balance794
+        const val KEY_V794LOCALAUTOCACHE794 = "v794localAutoCache794" // v794 Local Auto Cache794
+        const val KEY_V794LOCKAUTOSCREEN794 = "v794lockAutoScreen794" // v794 Lock Auto Screen794
+        const val KEY_V795LENGTHAUTOLIMIT795 = "v795lengthAutoLimit795" // v795 Length Auto Limit795
+        const val KEY_V795LEVELAUTOTIER795 = "v795levelAutoTier795" // v795 Level Auto Tier795
+        const val KEY_V795LIBRARYAUTOIMPORT795 = "v795libraryAutoImport795" // v795 Library Auto Import795
+        const val KEY_V795LICENSEAUTOVERIFY795 = "v795licenseAutoVerify795" // v795 License Auto Verify795
+        const val KEY_V795LIFEAUTOCYCLE795 = "v795lifeAutoCycle795" // v795 Life Auto Cycle795
+        const val KEY_V795LIFETIMEAUTOMANAGE795 = "v795lifetimeAutoManage795" // v795 Lifetime Auto Manage795
+        const val KEY_V795LIGHTAUTOTHEME795 = "v795lightAutoTheme795" // v795 Light Auto Theme795
+        const val KEY_V795LIMITAUTORATE795 = "v795limitAutoRate795" // v795 Limit Auto Rate795
+        const val KEY_V795LINEAUTOWRAP795 = "v795lineAutoWrap795" // v795 Line Auto Wrap795
+        const val KEY_V795LINKAUTOPREVIEW795 = "v795linkAutoPreview795" // v795 Link Auto Preview795
+        const val KEY_V795LISTAUTOVIRTUALIZE795 = "v795listAutoVirtualize795" // v795 List Auto Virtualize795
+        const val KEY_V795LIVEAUTORECONNECT795 = "v795liveAutoReconnect795" // v795 Live Auto Reconnect795
+        const val KEY_V795LOADAUTOBALANCE795 = "v795loadAutoBalance795" // v795 Load Auto Balance795
+        const val KEY_V795LOCALAUTOCACHE795 = "v795localAutoCache795" // v795 Local Auto Cache795
+        const val KEY_V795LOCKAUTOSCREEN795 = "v795lockAutoScreen795" // v795 Lock Auto Screen795
+        const val KEY_V796LENGTHAUTOLIMIT796 = "v796lengthAutoLimit796" // v796 Length Auto Limit796
+        const val KEY_V796LEVELAUTOTIER796 = "v796levelAutoTier796" // v796 Level Auto Tier796
+        const val KEY_V796LIBRARYAUTOIMPORT796 = "v796libraryAutoImport796" // v796 Library Auto Import796
+        const val KEY_V796LICENSEAUTOVERIFY796 = "v796licenseAutoVerify796" // v796 License Auto Verify796
+        const val KEY_V796LIFEAUTOCYCLE796 = "v796lifeAutoCycle796" // v796 Life Auto Cycle796
+        const val KEY_V796LIFETIMEAUTOMANAGE796 = "v796lifetimeAutoManage796" // v796 Lifetime Auto Manage796
+        const val KEY_V796LIGHTAUTOTHEME796 = "v796lightAutoTheme796" // v796 Light Auto Theme796
+        const val KEY_V796LIMITAUTORATE796 = "v796limitAutoRate796" // v796 Limit Auto Rate796
+        const val KEY_V796LINEAUTOWRAP796 = "v796lineAutoWrap796" // v796 Line Auto Wrap796
+        const val KEY_V796LINKAUTOPREVIEW796 = "v796linkAutoPreview796" // v796 Link Auto Preview796
+        const val KEY_V796LISTAUTOVIRTUALIZE796 = "v796listAutoVirtualize796" // v796 List Auto Virtualize796
+        const val KEY_V796LIVEAUTORECONNECT796 = "v796liveAutoReconnect796" // v796 Live Auto Reconnect796
+        const val KEY_V796LOADAUTOBALANCE796 = "v796loadAutoBalance796" // v796 Load Auto Balance796
+        const val KEY_V796LOCALAUTOCACHE796 = "v796localAutoCache796" // v796 Local Auto Cache796
+        const val KEY_V796LOCKAUTOSCREEN796 = "v796lockAutoScreen796" // v796 Lock Auto Screen796
+        const val KEY_V797LENGTHAUTOLIMIT797 = "v797lengthAutoLimit797" // v797 Length Auto Limit797
+        const val KEY_V797LEVELAUTOTIER797 = "v797levelAutoTier797" // v797 Level Auto Tier797
+        const val KEY_V797LIBRARYAUTOIMPORT797 = "v797libraryAutoImport797" // v797 Library Auto Import797
+        const val KEY_V797LICENSEAUTOVERIFY797 = "v797licenseAutoVerify797" // v797 License Auto Verify797
+        const val KEY_V797LIFEAUTOCYCLE797 = "v797lifeAutoCycle797" // v797 Life Auto Cycle797
+        const val KEY_V797LIFETIMEAUTOMANAGE797 = "v797lifetimeAutoManage797" // v797 Lifetime Auto Manage797
+        const val KEY_V797LIGHTAUTOTHEME797 = "v797lightAutoTheme797" // v797 Light Auto Theme797
+        const val KEY_V797LIMITAUTORATE797 = "v797limitAutoRate797" // v797 Limit Auto Rate797
+        const val KEY_V797LINEAUTOWRAP797 = "v797lineAutoWrap797" // v797 Line Auto Wrap797
+        const val KEY_V797LINKAUTOPREVIEW797 = "v797linkAutoPreview797" // v797 Link Auto Preview797
+        const val KEY_V797LISTAUTOVIRTUALIZE797 = "v797listAutoVirtualize797" // v797 List Auto Virtualize797
+        const val KEY_V797LIVEAUTORECONNECT797 = "v797liveAutoReconnect797" // v797 Live Auto Reconnect797
+        const val KEY_V797LOADAUTOBALANCE797 = "v797loadAutoBalance797" // v797 Load Auto Balance797
+        const val KEY_V797LOCALAUTOCACHE797 = "v797localAutoCache797" // v797 Local Auto Cache797
+        const val KEY_V797LOCKAUTOSCREEN797 = "v797lockAutoScreen797" // v797 Lock Auto Screen797
+        const val KEY_V798LENGTHAUTOLIMIT798 = "v798lengthAutoLimit798" // v798 Length Auto Limit798
+        const val KEY_V798LEVELAUTOTIER798 = "v798levelAutoTier798" // v798 Level Auto Tier798
+        const val KEY_V798LIBRARYAUTOIMPORT798 = "v798libraryAutoImport798" // v798 Library Auto Import798
+        const val KEY_V798LICENSEAUTOVERIFY798 = "v798licenseAutoVerify798" // v798 License Auto Verify798
+        const val KEY_V798LIFEAUTOCYCLE798 = "v798lifeAutoCycle798" // v798 Life Auto Cycle798
+        const val KEY_V798LIFETIMEAUTOMANAGE798 = "v798lifetimeAutoManage798" // v798 Lifetime Auto Manage798
+        const val KEY_V798LIGHTAUTOTHEME798 = "v798lightAutoTheme798" // v798 Light Auto Theme798
+        const val KEY_V798LIMITAUTORATE798 = "v798limitAutoRate798" // v798 Limit Auto Rate798
+        const val KEY_V798LINEAUTOWRAP798 = "v798lineAutoWrap798" // v798 Line Auto Wrap798
+        const val KEY_V798LINKAUTOPREVIEW798 = "v798linkAutoPreview798" // v798 Link Auto Preview798
+        const val KEY_V798LISTAUTOVIRTUALIZE798 = "v798listAutoVirtualize798" // v798 List Auto Virtualize798
+        const val KEY_V798LIVEAUTORECONNECT798 = "v798liveAutoReconnect798" // v798 Live Auto Reconnect798
+        const val KEY_V798LOADAUTOBALANCE798 = "v798loadAutoBalance798" // v798 Load Auto Balance798
+        const val KEY_V798LOCALAUTOCACHE798 = "v798localAutoCache798" // v798 Local Auto Cache798
+        const val KEY_V798LOCKAUTOSCREEN798 = "v798lockAutoScreen798" // v798 Lock Auto Screen798
+        const val KEY_V799LENGTHAUTOLIMIT799 = "v799lengthAutoLimit799" // v799 Length Auto Limit799
+        const val KEY_V799LEVELAUTOTIER799 = "v799levelAutoTier799" // v799 Level Auto Tier799
+        const val KEY_V799LIBRARYAUTOIMPORT799 = "v799libraryAutoImport799" // v799 Library Auto Import799
+        const val KEY_V799LICENSEAUTOVERIFY799 = "v799licenseAutoVerify799" // v799 License Auto Verify799
+        const val KEY_V799LIFEAUTOCYCLE799 = "v799lifeAutoCycle799" // v799 Life Auto Cycle799
+        const val KEY_V799LIFETIMEAUTOMANAGE799 = "v799lifetimeAutoManage799" // v799 Lifetime Auto Manage799
+        const val KEY_V799LIGHTAUTOTHEME799 = "v799lightAutoTheme799" // v799 Light Auto Theme799
+        const val KEY_V799LIMITAUTORATE799 = "v799limitAutoRate799" // v799 Limit Auto Rate799
+        const val KEY_V799LINEAUTOWRAP799 = "v799lineAutoWrap799" // v799 Line Auto Wrap799
+        const val KEY_V799LINKAUTOPREVIEW799 = "v799linkAutoPreview799" // v799 Link Auto Preview799
+        const val KEY_V799LISTAUTOVIRTUALIZE799 = "v799listAutoVirtualize799" // v799 List Auto Virtualize799
+        const val KEY_V799LIVEAUTORECONNECT799 = "v799liveAutoReconnect799" // v799 Live Auto Reconnect799
+        const val KEY_V799LOADAUTOBALANCE799 = "v799loadAutoBalance799" // v799 Load Auto Balance799
+        const val KEY_V799LOCALAUTOCACHE799 = "v799localAutoCache799" // v799 Local Auto Cache799
+        const val KEY_V799LOCKAUTOSCREEN799 = "v799lockAutoScreen799" // v799 Lock Auto Screen799
+        const val KEY_V800LENGTHAUTOLIMIT800 = "v800lengthAutoLimit800" // v800 Length Auto Limit800
+        const val KEY_V800LEVELAUTOTIER800 = "v800levelAutoTier800" // v800 Level Auto Tier800
+        const val KEY_V800LIBRARYAUTOIMPORT800 = "v800libraryAutoImport800" // v800 Library Auto Import800
+        const val KEY_V800LICENSEAUTOVERIFY800 = "v800licenseAutoVerify800" // v800 License Auto Verify800
+        const val KEY_V800LIFEAUTOCYCLE800 = "v800lifeAutoCycle800" // v800 Life Auto Cycle800
+        const val KEY_V800LIFETIMEAUTOMANAGE800 = "v800lifetimeAutoManage800" // v800 Lifetime Auto Manage800
+        const val KEY_V800LIGHTAUTOTHEME800 = "v800lightAutoTheme800" // v800 Light Auto Theme800
+        const val KEY_V800LIMITAUTORATE800 = "v800limitAutoRate800" // v800 Limit Auto Rate800
+        const val KEY_V800LINEAUTOWRAP800 = "v800lineAutoWrap800" // v800 Line Auto Wrap800
+        const val KEY_V800LINKAUTOPREVIEW800 = "v800linkAutoPreview800" // v800 Link Auto Preview800
+        const val KEY_V800LISTAUTOVIRTUALIZE800 = "v800listAutoVirtualize800" // v800 List Auto Virtualize800
+        const val KEY_V800LIVEAUTORECONNECT800 = "v800liveAutoReconnect800" // v800 Live Auto Reconnect800
+        const val KEY_V800LOADAUTOBALANCE800 = "v800loadAutoBalance800" // v800 Load Auto Balance800
+        const val KEY_V800LOCALAUTOCACHE800 = "v800localAutoCache800" // v800 Local Auto Cache800
+        const val KEY_V800LOCKAUTOSCREEN800 = "v800lockAutoScreen800" // v800 Lock Auto Screen800
     }
 }
