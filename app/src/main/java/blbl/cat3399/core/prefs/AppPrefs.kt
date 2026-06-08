@@ -60648,6 +60648,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getInt(KEY_V900QUEUEAUTOPRIORITY900, 0)
         set(value) = prefs.edit().putInt(KEY_V900QUEUEAUTOPRIORITY900, value).apply()
 
+    var v901quickAutoAction901: Boolean
+        get() = prefs.getBoolean(KEY_V901QUICKAUTOACTION901, false)
+        set(value) = prefs.edit().putBoolean(KEY_V901QUICKAUTOACTION901, value).apply()
+
+    var v901quitAutoSave901: Boolean
+        get() = prefs.getBoolean(KEY_V901QUITAUTOSAVE901, false)
+        set(value) = prefs.edit().putBoolean(KEY_V901QUITAUTOSAVE901, value).apply()
+
+    var v901quoteAutoFormat901: Boolean
+        get() = prefs.getBoolean(KEY_V901QUOTEAUTOFORMAT901, false)
+        set(value) = prefs.edit().putBoolean(KEY_V901QUOTEAUTOFORMAT901, value).apply()
+
+    var v901raceAutoCondition901: Boolean
+        get() = prefs.getBoolean(KEY_V901RACEAUTOCONDITION901, false)
+        set(value) = prefs.edit().putBoolean(KEY_V901RACEAUTOCONDITION901, value).apply()
+
+    var v901randomAutoShuffle901: Boolean
+        get() = prefs.getBoolean(KEY_V901RANDOMAUTOSHUFFLE901, false)
+        set(value) = prefs.edit().putBoolean(KEY_V901RANDOMAUTOSHUFFLE901, value).apply()
+
+    var v901rangeAutoSlider901: Boolean
+        get() = prefs.getBoolean(KEY_V901RANGEAUTOSLIDER901, false)
+        set(value) = prefs.edit().putBoolean(KEY_V901RANGEAUTOSLIDER901, value).apply()
+
+    var v901rateAutoLimit901: Int
+        get() = prefs.getInt(KEY_V901RATEAUTOLIMIT901, 0)
+        set(value) = prefs.edit().putInt(KEY_V901RATEAUTOLIMIT901, value).apply()
+
+    var v901rawAutoDecode901: Boolean
+        get() = prefs.getBoolean(KEY_V901RAWAUTODECODE901, false)
+        set(value) = prefs.edit().putBoolean(KEY_V901RAWAUTODECODE901, value).apply()
+
+    var v901readAutoBookmark901: Boolean
+        get() = prefs.getBoolean(KEY_V901READAUTOBOOKMARK901, false)
+        set(value) = prefs.edit().putBoolean(KEY_V901READAUTOBOOKMARK901, value).apply()
+
+    var v901readyAutoCheck901: Boolean
+        get() = prefs.getBoolean(KEY_V901READYAUTOCHECK901, false)
+        set(value) = prefs.edit().putBoolean(KEY_V901READYAUTOCHECK901, value).apply()
+
+    var v901realAutoTime901: Boolean
+        get() = prefs.getBoolean(KEY_V901REALAUTOTIME901, false)
+        set(value) = prefs.edit().putBoolean(KEY_V901REALAUTOTIME901, value).apply()
+
+    var v901rebuildAutoIndex901: Boolean
+        get() = prefs.getBoolean(KEY_V901REBUILDAUTOINDEX901, false)
+        set(value) = prefs.edit().putBoolean(KEY_V901REBUILDAUTOINDEX901, value).apply()
+
+    var v901recordAutoHistory901: Boolean
+        get() = prefs.getBoolean(KEY_V901RECORDAUTOHISTORY901, false)
+        set(value) = prefs.edit().putBoolean(KEY_V901RECORDAUTOHISTORY901, value).apply()
+
+    var v901recoverAutoSession901: Boolean
+        get() = prefs.getBoolean(KEY_V901RECOVERAUTOSESSION901, false)
+        set(value) = prefs.edit().putBoolean(KEY_V901RECOVERAUTOSESSION901, value).apply()
+
+    var v901recycleAutoBin901: Boolean
+        get() = prefs.getBoolean(KEY_V901RECYCLEAUTOBIN901, false)
+        set(value) = prefs.edit().putBoolean(KEY_V901RECYCLEAUTOBIN901, value).apply()
+
+    var v902quickAutoAction902: Boolean
+        get() = prefs.getBoolean(KEY_V902QUICKAUTOACTION902, false)
+        set(value) = prefs.edit().putBoolean(KEY_V902QUICKAUTOACTION902, value).apply()
+
+    var v902quitAutoSave902: Boolean
+        get() = prefs.getBoolean(KEY_V902QUITAUTOSAVE902, false)
+        set(value) = prefs.edit().putBoolean(KEY_V902QUITAUTOSAVE902, value).apply()
+
+    var v902quoteAutoFormat902: Boolean
+        get() = prefs.getBoolean(KEY_V902QUOTEAUTOFORMAT902, false)
+        set(value) = prefs.edit().putBoolean(KEY_V902QUOTEAUTOFORMAT902, value).apply()
+
+    var v902raceAutoCondition902: Boolean
+        get() = prefs.getBoolean(KEY_V902RACEAUTOCONDITION902, false)
+        set(value) = prefs.edit().putBoolean(KEY_V902RACEAUTOCONDITION902, value).apply()
+
+    var v902randomAutoShuffle902: Boolean
+        get() = prefs.getBoolean(KEY_V902RANDOMAUTOSHUFFLE902, false)
+        set(value) = prefs.edit().putBoolean(KEY_V902RANDOMAUTOSHUFFLE902, value).apply()
+
+    var v902rangeAutoSlider902: Boolean
+        get() = prefs.getBoolean(KEY_V902RANGEAUTOSLIDER902, false)
+        set(value) = prefs.edit().putBoolean(KEY_V902RANGEAUTOSLIDER902, value).apply()
+
+    var v902rateAutoLimit902: Int
+        get() = prefs.getInt(KEY_V902RATEAUTOLIMIT902, 0)
+        set(value) = prefs.edit().putInt(KEY_V902RATEAUTOLIMIT902, value).apply()
+
+    var v902rawAutoDecode902: Boolean
+        get() = prefs.getBoolean(KEY_V902RAWAUTODECODE902, false)
+        set(value) = prefs.edit().putBoolean(KEY_V902RAWAUTODECODE902, value).apply()
+
+    var v902readAutoBookmark902: Boolean
+        get() = prefs.getBoolean(KEY_V902READAUTOBOOKMARK902, false)
+        set(value) = prefs.edit().putBoolean(KEY_V902READAUTOBOOKMARK902, value).apply()
+
+    var v902readyAutoCheck902: Boolean
+        get() = prefs.getBoolean(KEY_V902READYAUTOCHECK902, false)
+        set(value) = prefs.edit().putBoolean(KEY_V902READYAUTOCHECK902, value).apply()
+
+    var v902realAutoTime902: Boolean
+        get() = prefs.getBoolean(KEY_V902REALAUTOTIME902, false)
+        set(value) = prefs.edit().putBoolean(KEY_V902REALAUTOTIME902, value).apply()
+
+    var v902rebuildAutoIndex902: Boolean
+        get() = prefs.getBoolean(KEY_V902REBUILDAUTOINDEX902, false)
+        set(value) = prefs.edit().putBoolean(KEY_V902REBUILDAUTOINDEX902, value).apply()
+
+    var v902recordAutoHistory902: Boolean
+        get() = prefs.getBoolean(KEY_V902RECORDAUTOHISTORY902, false)
+        set(value) = prefs.edit().putBoolean(KEY_V902RECORDAUTOHISTORY902, value).apply()
+
+    var v902recoverAutoSession902: Boolean
+        get() = prefs.getBoolean(KEY_V902RECOVERAUTOSESSION902, false)
+        set(value) = prefs.edit().putBoolean(KEY_V902RECOVERAUTOSESSION902, value).apply()
+
+    var v902recycleAutoBin902: Boolean
+        get() = prefs.getBoolean(KEY_V902RECYCLEAUTOBIN902, false)
+        set(value) = prefs.edit().putBoolean(KEY_V902RECYCLEAUTOBIN902, value).apply()
+
+    var v903quickAutoAction903: Boolean
+        get() = prefs.getBoolean(KEY_V903QUICKAUTOACTION903, false)
+        set(value) = prefs.edit().putBoolean(KEY_V903QUICKAUTOACTION903, value).apply()
+
+    var v903quitAutoSave903: Boolean
+        get() = prefs.getBoolean(KEY_V903QUITAUTOSAVE903, false)
+        set(value) = prefs.edit().putBoolean(KEY_V903QUITAUTOSAVE903, value).apply()
+
+    var v903quoteAutoFormat903: Boolean
+        get() = prefs.getBoolean(KEY_V903QUOTEAUTOFORMAT903, false)
+        set(value) = prefs.edit().putBoolean(KEY_V903QUOTEAUTOFORMAT903, value).apply()
+
+    var v903raceAutoCondition903: Boolean
+        get() = prefs.getBoolean(KEY_V903RACEAUTOCONDITION903, false)
+        set(value) = prefs.edit().putBoolean(KEY_V903RACEAUTOCONDITION903, value).apply()
+
+    var v903randomAutoShuffle903: Boolean
+        get() = prefs.getBoolean(KEY_V903RANDOMAUTOSHUFFLE903, false)
+        set(value) = prefs.edit().putBoolean(KEY_V903RANDOMAUTOSHUFFLE903, value).apply()
+
+    var v903rangeAutoSlider903: Boolean
+        get() = prefs.getBoolean(KEY_V903RANGEAUTOSLIDER903, false)
+        set(value) = prefs.edit().putBoolean(KEY_V903RANGEAUTOSLIDER903, value).apply()
+
+    var v903rateAutoLimit903: Int
+        get() = prefs.getInt(KEY_V903RATEAUTOLIMIT903, 0)
+        set(value) = prefs.edit().putInt(KEY_V903RATEAUTOLIMIT903, value).apply()
+
+    var v903rawAutoDecode903: Boolean
+        get() = prefs.getBoolean(KEY_V903RAWAUTODECODE903, false)
+        set(value) = prefs.edit().putBoolean(KEY_V903RAWAUTODECODE903, value).apply()
+
+    var v903readAutoBookmark903: Boolean
+        get() = prefs.getBoolean(KEY_V903READAUTOBOOKMARK903, false)
+        set(value) = prefs.edit().putBoolean(KEY_V903READAUTOBOOKMARK903, value).apply()
+
+    var v903readyAutoCheck903: Boolean
+        get() = prefs.getBoolean(KEY_V903READYAUTOCHECK903, false)
+        set(value) = prefs.edit().putBoolean(KEY_V903READYAUTOCHECK903, value).apply()
+
+    var v903realAutoTime903: Boolean
+        get() = prefs.getBoolean(KEY_V903REALAUTOTIME903, false)
+        set(value) = prefs.edit().putBoolean(KEY_V903REALAUTOTIME903, value).apply()
+
+    var v903rebuildAutoIndex903: Boolean
+        get() = prefs.getBoolean(KEY_V903REBUILDAUTOINDEX903, false)
+        set(value) = prefs.edit().putBoolean(KEY_V903REBUILDAUTOINDEX903, value).apply()
+
+    var v903recordAutoHistory903: Boolean
+        get() = prefs.getBoolean(KEY_V903RECORDAUTOHISTORY903, false)
+        set(value) = prefs.edit().putBoolean(KEY_V903RECORDAUTOHISTORY903, value).apply()
+
+    var v903recoverAutoSession903: Boolean
+        get() = prefs.getBoolean(KEY_V903RECOVERAUTOSESSION903, false)
+        set(value) = prefs.edit().putBoolean(KEY_V903RECOVERAUTOSESSION903, value).apply()
+
+    var v903recycleAutoBin903: Boolean
+        get() = prefs.getBoolean(KEY_V903RECYCLEAUTOBIN903, false)
+        set(value) = prefs.edit().putBoolean(KEY_V903RECYCLEAUTOBIN903, value).apply()
+
+    var v904quickAutoAction904: Boolean
+        get() = prefs.getBoolean(KEY_V904QUICKAUTOACTION904, false)
+        set(value) = prefs.edit().putBoolean(KEY_V904QUICKAUTOACTION904, value).apply()
+
+    var v904quitAutoSave904: Boolean
+        get() = prefs.getBoolean(KEY_V904QUITAUTOSAVE904, false)
+        set(value) = prefs.edit().putBoolean(KEY_V904QUITAUTOSAVE904, value).apply()
+
+    var v904quoteAutoFormat904: Boolean
+        get() = prefs.getBoolean(KEY_V904QUOTEAUTOFORMAT904, false)
+        set(value) = prefs.edit().putBoolean(KEY_V904QUOTEAUTOFORMAT904, value).apply()
+
+    var v904raceAutoCondition904: Boolean
+        get() = prefs.getBoolean(KEY_V904RACEAUTOCONDITION904, false)
+        set(value) = prefs.edit().putBoolean(KEY_V904RACEAUTOCONDITION904, value).apply()
+
+    var v904randomAutoShuffle904: Boolean
+        get() = prefs.getBoolean(KEY_V904RANDOMAUTOSHUFFLE904, false)
+        set(value) = prefs.edit().putBoolean(KEY_V904RANDOMAUTOSHUFFLE904, value).apply()
+
+    var v904rangeAutoSlider904: Boolean
+        get() = prefs.getBoolean(KEY_V904RANGEAUTOSLIDER904, false)
+        set(value) = prefs.edit().putBoolean(KEY_V904RANGEAUTOSLIDER904, value).apply()
+
+    var v904rateAutoLimit904: Int
+        get() = prefs.getInt(KEY_V904RATEAUTOLIMIT904, 0)
+        set(value) = prefs.edit().putInt(KEY_V904RATEAUTOLIMIT904, value).apply()
+
+    var v904rawAutoDecode904: Boolean
+        get() = prefs.getBoolean(KEY_V904RAWAUTODECODE904, false)
+        set(value) = prefs.edit().putBoolean(KEY_V904RAWAUTODECODE904, value).apply()
+
+    var v904readAutoBookmark904: Boolean
+        get() = prefs.getBoolean(KEY_V904READAUTOBOOKMARK904, false)
+        set(value) = prefs.edit().putBoolean(KEY_V904READAUTOBOOKMARK904, value).apply()
+
+    var v904readyAutoCheck904: Boolean
+        get() = prefs.getBoolean(KEY_V904READYAUTOCHECK904, false)
+        set(value) = prefs.edit().putBoolean(KEY_V904READYAUTOCHECK904, value).apply()
+
+    var v904realAutoTime904: Boolean
+        get() = prefs.getBoolean(KEY_V904REALAUTOTIME904, false)
+        set(value) = prefs.edit().putBoolean(KEY_V904REALAUTOTIME904, value).apply()
+
+    var v904rebuildAutoIndex904: Boolean
+        get() = prefs.getBoolean(KEY_V904REBUILDAUTOINDEX904, false)
+        set(value) = prefs.edit().putBoolean(KEY_V904REBUILDAUTOINDEX904, value).apply()
+
+    var v904recordAutoHistory904: Boolean
+        get() = prefs.getBoolean(KEY_V904RECORDAUTOHISTORY904, false)
+        set(value) = prefs.edit().putBoolean(KEY_V904RECORDAUTOHISTORY904, value).apply()
+
+    var v904recoverAutoSession904: Boolean
+        get() = prefs.getBoolean(KEY_V904RECOVERAUTOSESSION904, false)
+        set(value) = prefs.edit().putBoolean(KEY_V904RECOVERAUTOSESSION904, value).apply()
+
+    var v904recycleAutoBin904: Boolean
+        get() = prefs.getBoolean(KEY_V904RECYCLEAUTOBIN904, false)
+        set(value) = prefs.edit().putBoolean(KEY_V904RECYCLEAUTOBIN904, value).apply()
+
+    var v905quickAutoAction905: Boolean
+        get() = prefs.getBoolean(KEY_V905QUICKAUTOACTION905, false)
+        set(value) = prefs.edit().putBoolean(KEY_V905QUICKAUTOACTION905, value).apply()
+
+    var v905quitAutoSave905: Boolean
+        get() = prefs.getBoolean(KEY_V905QUITAUTOSAVE905, false)
+        set(value) = prefs.edit().putBoolean(KEY_V905QUITAUTOSAVE905, value).apply()
+
+    var v905quoteAutoFormat905: Boolean
+        get() = prefs.getBoolean(KEY_V905QUOTEAUTOFORMAT905, false)
+        set(value) = prefs.edit().putBoolean(KEY_V905QUOTEAUTOFORMAT905, value).apply()
+
+    var v905raceAutoCondition905: Boolean
+        get() = prefs.getBoolean(KEY_V905RACEAUTOCONDITION905, false)
+        set(value) = prefs.edit().putBoolean(KEY_V905RACEAUTOCONDITION905, value).apply()
+
+    var v905randomAutoShuffle905: Boolean
+        get() = prefs.getBoolean(KEY_V905RANDOMAUTOSHUFFLE905, false)
+        set(value) = prefs.edit().putBoolean(KEY_V905RANDOMAUTOSHUFFLE905, value).apply()
+
+    var v905rangeAutoSlider905: Boolean
+        get() = prefs.getBoolean(KEY_V905RANGEAUTOSLIDER905, false)
+        set(value) = prefs.edit().putBoolean(KEY_V905RANGEAUTOSLIDER905, value).apply()
+
+    var v905rateAutoLimit905: Int
+        get() = prefs.getInt(KEY_V905RATEAUTOLIMIT905, 0)
+        set(value) = prefs.edit().putInt(KEY_V905RATEAUTOLIMIT905, value).apply()
+
+    var v905rawAutoDecode905: Boolean
+        get() = prefs.getBoolean(KEY_V905RAWAUTODECODE905, false)
+        set(value) = prefs.edit().putBoolean(KEY_V905RAWAUTODECODE905, value).apply()
+
+    var v905readAutoBookmark905: Boolean
+        get() = prefs.getBoolean(KEY_V905READAUTOBOOKMARK905, false)
+        set(value) = prefs.edit().putBoolean(KEY_V905READAUTOBOOKMARK905, value).apply()
+
+    var v905readyAutoCheck905: Boolean
+        get() = prefs.getBoolean(KEY_V905READYAUTOCHECK905, false)
+        set(value) = prefs.edit().putBoolean(KEY_V905READYAUTOCHECK905, value).apply()
+
+    var v905realAutoTime905: Boolean
+        get() = prefs.getBoolean(KEY_V905REALAUTOTIME905, false)
+        set(value) = prefs.edit().putBoolean(KEY_V905REALAUTOTIME905, value).apply()
+
+    var v905rebuildAutoIndex905: Boolean
+        get() = prefs.getBoolean(KEY_V905REBUILDAUTOINDEX905, false)
+        set(value) = prefs.edit().putBoolean(KEY_V905REBUILDAUTOINDEX905, value).apply()
+
+    var v905recordAutoHistory905: Boolean
+        get() = prefs.getBoolean(KEY_V905RECORDAUTOHISTORY905, false)
+        set(value) = prefs.edit().putBoolean(KEY_V905RECORDAUTOHISTORY905, value).apply()
+
+    var v905recoverAutoSession905: Boolean
+        get() = prefs.getBoolean(KEY_V905RECOVERAUTOSESSION905, false)
+        set(value) = prefs.edit().putBoolean(KEY_V905RECOVERAUTOSESSION905, value).apply()
+
+    var v905recycleAutoBin905: Boolean
+        get() = prefs.getBoolean(KEY_V905RECYCLEAUTOBIN905, false)
+        set(value) = prefs.edit().putBoolean(KEY_V905RECYCLEAUTOBIN905, value).apply()
+
+    var v906quickAutoAction906: Boolean
+        get() = prefs.getBoolean(KEY_V906QUICKAUTOACTION906, false)
+        set(value) = prefs.edit().putBoolean(KEY_V906QUICKAUTOACTION906, value).apply()
+
+    var v906quitAutoSave906: Boolean
+        get() = prefs.getBoolean(KEY_V906QUITAUTOSAVE906, false)
+        set(value) = prefs.edit().putBoolean(KEY_V906QUITAUTOSAVE906, value).apply()
+
+    var v906quoteAutoFormat906: Boolean
+        get() = prefs.getBoolean(KEY_V906QUOTEAUTOFORMAT906, false)
+        set(value) = prefs.edit().putBoolean(KEY_V906QUOTEAUTOFORMAT906, value).apply()
+
+    var v906raceAutoCondition906: Boolean
+        get() = prefs.getBoolean(KEY_V906RACEAUTOCONDITION906, false)
+        set(value) = prefs.edit().putBoolean(KEY_V906RACEAUTOCONDITION906, value).apply()
+
+    var v906randomAutoShuffle906: Boolean
+        get() = prefs.getBoolean(KEY_V906RANDOMAUTOSHUFFLE906, false)
+        set(value) = prefs.edit().putBoolean(KEY_V906RANDOMAUTOSHUFFLE906, value).apply()
+
+    var v906rangeAutoSlider906: Boolean
+        get() = prefs.getBoolean(KEY_V906RANGEAUTOSLIDER906, false)
+        set(value) = prefs.edit().putBoolean(KEY_V906RANGEAUTOSLIDER906, value).apply()
+
+    var v906rateAutoLimit906: Int
+        get() = prefs.getInt(KEY_V906RATEAUTOLIMIT906, 0)
+        set(value) = prefs.edit().putInt(KEY_V906RATEAUTOLIMIT906, value).apply()
+
+    var v906rawAutoDecode906: Boolean
+        get() = prefs.getBoolean(KEY_V906RAWAUTODECODE906, false)
+        set(value) = prefs.edit().putBoolean(KEY_V906RAWAUTODECODE906, value).apply()
+
+    var v906readAutoBookmark906: Boolean
+        get() = prefs.getBoolean(KEY_V906READAUTOBOOKMARK906, false)
+        set(value) = prefs.edit().putBoolean(KEY_V906READAUTOBOOKMARK906, value).apply()
+
+    var v906readyAutoCheck906: Boolean
+        get() = prefs.getBoolean(KEY_V906READYAUTOCHECK906, false)
+        set(value) = prefs.edit().putBoolean(KEY_V906READYAUTOCHECK906, value).apply()
+
+    var v906realAutoTime906: Boolean
+        get() = prefs.getBoolean(KEY_V906REALAUTOTIME906, false)
+        set(value) = prefs.edit().putBoolean(KEY_V906REALAUTOTIME906, value).apply()
+
+    var v906rebuildAutoIndex906: Boolean
+        get() = prefs.getBoolean(KEY_V906REBUILDAUTOINDEX906, false)
+        set(value) = prefs.edit().putBoolean(KEY_V906REBUILDAUTOINDEX906, value).apply()
+
+    var v906recordAutoHistory906: Boolean
+        get() = prefs.getBoolean(KEY_V906RECORDAUTOHISTORY906, false)
+        set(value) = prefs.edit().putBoolean(KEY_V906RECORDAUTOHISTORY906, value).apply()
+
+    var v906recoverAutoSession906: Boolean
+        get() = prefs.getBoolean(KEY_V906RECOVERAUTOSESSION906, false)
+        set(value) = prefs.edit().putBoolean(KEY_V906RECOVERAUTOSESSION906, value).apply()
+
+    var v906recycleAutoBin906: Boolean
+        get() = prefs.getBoolean(KEY_V906RECYCLEAUTOBIN906, false)
+        set(value) = prefs.edit().putBoolean(KEY_V906RECYCLEAUTOBIN906, value).apply()
+
+    var v907quickAutoAction907: Boolean
+        get() = prefs.getBoolean(KEY_V907QUICKAUTOACTION907, false)
+        set(value) = prefs.edit().putBoolean(KEY_V907QUICKAUTOACTION907, value).apply()
+
+    var v907quitAutoSave907: Boolean
+        get() = prefs.getBoolean(KEY_V907QUITAUTOSAVE907, false)
+        set(value) = prefs.edit().putBoolean(KEY_V907QUITAUTOSAVE907, value).apply()
+
+    var v907quoteAutoFormat907: Boolean
+        get() = prefs.getBoolean(KEY_V907QUOTEAUTOFORMAT907, false)
+        set(value) = prefs.edit().putBoolean(KEY_V907QUOTEAUTOFORMAT907, value).apply()
+
+    var v907raceAutoCondition907: Boolean
+        get() = prefs.getBoolean(KEY_V907RACEAUTOCONDITION907, false)
+        set(value) = prefs.edit().putBoolean(KEY_V907RACEAUTOCONDITION907, value).apply()
+
+    var v907randomAutoShuffle907: Boolean
+        get() = prefs.getBoolean(KEY_V907RANDOMAUTOSHUFFLE907, false)
+        set(value) = prefs.edit().putBoolean(KEY_V907RANDOMAUTOSHUFFLE907, value).apply()
+
+    var v907rangeAutoSlider907: Boolean
+        get() = prefs.getBoolean(KEY_V907RANGEAUTOSLIDER907, false)
+        set(value) = prefs.edit().putBoolean(KEY_V907RANGEAUTOSLIDER907, value).apply()
+
+    var v907rateAutoLimit907: Int
+        get() = prefs.getInt(KEY_V907RATEAUTOLIMIT907, 0)
+        set(value) = prefs.edit().putInt(KEY_V907RATEAUTOLIMIT907, value).apply()
+
+    var v907rawAutoDecode907: Boolean
+        get() = prefs.getBoolean(KEY_V907RAWAUTODECODE907, false)
+        set(value) = prefs.edit().putBoolean(KEY_V907RAWAUTODECODE907, value).apply()
+
+    var v907readAutoBookmark907: Boolean
+        get() = prefs.getBoolean(KEY_V907READAUTOBOOKMARK907, false)
+        set(value) = prefs.edit().putBoolean(KEY_V907READAUTOBOOKMARK907, value).apply()
+
+    var v907readyAutoCheck907: Boolean
+        get() = prefs.getBoolean(KEY_V907READYAUTOCHECK907, false)
+        set(value) = prefs.edit().putBoolean(KEY_V907READYAUTOCHECK907, value).apply()
+
+    var v907realAutoTime907: Boolean
+        get() = prefs.getBoolean(KEY_V907REALAUTOTIME907, false)
+        set(value) = prefs.edit().putBoolean(KEY_V907REALAUTOTIME907, value).apply()
+
+    var v907rebuildAutoIndex907: Boolean
+        get() = prefs.getBoolean(KEY_V907REBUILDAUTOINDEX907, false)
+        set(value) = prefs.edit().putBoolean(KEY_V907REBUILDAUTOINDEX907, value).apply()
+
+    var v907recordAutoHistory907: Boolean
+        get() = prefs.getBoolean(KEY_V907RECORDAUTOHISTORY907, false)
+        set(value) = prefs.edit().putBoolean(KEY_V907RECORDAUTOHISTORY907, value).apply()
+
+    var v907recoverAutoSession907: Boolean
+        get() = prefs.getBoolean(KEY_V907RECOVERAUTOSESSION907, false)
+        set(value) = prefs.edit().putBoolean(KEY_V907RECOVERAUTOSESSION907, value).apply()
+
+    var v907recycleAutoBin907: Boolean
+        get() = prefs.getBoolean(KEY_V907RECYCLEAUTOBIN907, false)
+        set(value) = prefs.edit().putBoolean(KEY_V907RECYCLEAUTOBIN907, value).apply()
+
+    var v908quickAutoAction908: Boolean
+        get() = prefs.getBoolean(KEY_V908QUICKAUTOACTION908, false)
+        set(value) = prefs.edit().putBoolean(KEY_V908QUICKAUTOACTION908, value).apply()
+
+    var v908quitAutoSave908: Boolean
+        get() = prefs.getBoolean(KEY_V908QUITAUTOSAVE908, false)
+        set(value) = prefs.edit().putBoolean(KEY_V908QUITAUTOSAVE908, value).apply()
+
+    var v908quoteAutoFormat908: Boolean
+        get() = prefs.getBoolean(KEY_V908QUOTEAUTOFORMAT908, false)
+        set(value) = prefs.edit().putBoolean(KEY_V908QUOTEAUTOFORMAT908, value).apply()
+
+    var v908raceAutoCondition908: Boolean
+        get() = prefs.getBoolean(KEY_V908RACEAUTOCONDITION908, false)
+        set(value) = prefs.edit().putBoolean(KEY_V908RACEAUTOCONDITION908, value).apply()
+
+    var v908randomAutoShuffle908: Boolean
+        get() = prefs.getBoolean(KEY_V908RANDOMAUTOSHUFFLE908, false)
+        set(value) = prefs.edit().putBoolean(KEY_V908RANDOMAUTOSHUFFLE908, value).apply()
+
+    var v908rangeAutoSlider908: Boolean
+        get() = prefs.getBoolean(KEY_V908RANGEAUTOSLIDER908, false)
+        set(value) = prefs.edit().putBoolean(KEY_V908RANGEAUTOSLIDER908, value).apply()
+
+    var v908rateAutoLimit908: Int
+        get() = prefs.getInt(KEY_V908RATEAUTOLIMIT908, 0)
+        set(value) = prefs.edit().putInt(KEY_V908RATEAUTOLIMIT908, value).apply()
+
+    var v908rawAutoDecode908: Boolean
+        get() = prefs.getBoolean(KEY_V908RAWAUTODECODE908, false)
+        set(value) = prefs.edit().putBoolean(KEY_V908RAWAUTODECODE908, value).apply()
+
+    var v908readAutoBookmark908: Boolean
+        get() = prefs.getBoolean(KEY_V908READAUTOBOOKMARK908, false)
+        set(value) = prefs.edit().putBoolean(KEY_V908READAUTOBOOKMARK908, value).apply()
+
+    var v908readyAutoCheck908: Boolean
+        get() = prefs.getBoolean(KEY_V908READYAUTOCHECK908, false)
+        set(value) = prefs.edit().putBoolean(KEY_V908READYAUTOCHECK908, value).apply()
+
+    var v908realAutoTime908: Boolean
+        get() = prefs.getBoolean(KEY_V908REALAUTOTIME908, false)
+        set(value) = prefs.edit().putBoolean(KEY_V908REALAUTOTIME908, value).apply()
+
+    var v908rebuildAutoIndex908: Boolean
+        get() = prefs.getBoolean(KEY_V908REBUILDAUTOINDEX908, false)
+        set(value) = prefs.edit().putBoolean(KEY_V908REBUILDAUTOINDEX908, value).apply()
+
+    var v908recordAutoHistory908: Boolean
+        get() = prefs.getBoolean(KEY_V908RECORDAUTOHISTORY908, false)
+        set(value) = prefs.edit().putBoolean(KEY_V908RECORDAUTOHISTORY908, value).apply()
+
+    var v908recoverAutoSession908: Boolean
+        get() = prefs.getBoolean(KEY_V908RECOVERAUTOSESSION908, false)
+        set(value) = prefs.edit().putBoolean(KEY_V908RECOVERAUTOSESSION908, value).apply()
+
+    var v908recycleAutoBin908: Boolean
+        get() = prefs.getBoolean(KEY_V908RECYCLEAUTOBIN908, false)
+        set(value) = prefs.edit().putBoolean(KEY_V908RECYCLEAUTOBIN908, value).apply()
+
+    var v909quickAutoAction909: Boolean
+        get() = prefs.getBoolean(KEY_V909QUICKAUTOACTION909, false)
+        set(value) = prefs.edit().putBoolean(KEY_V909QUICKAUTOACTION909, value).apply()
+
+    var v909quitAutoSave909: Boolean
+        get() = prefs.getBoolean(KEY_V909QUITAUTOSAVE909, false)
+        set(value) = prefs.edit().putBoolean(KEY_V909QUITAUTOSAVE909, value).apply()
+
+    var v909quoteAutoFormat909: Boolean
+        get() = prefs.getBoolean(KEY_V909QUOTEAUTOFORMAT909, false)
+        set(value) = prefs.edit().putBoolean(KEY_V909QUOTEAUTOFORMAT909, value).apply()
+
+    var v909raceAutoCondition909: Boolean
+        get() = prefs.getBoolean(KEY_V909RACEAUTOCONDITION909, false)
+        set(value) = prefs.edit().putBoolean(KEY_V909RACEAUTOCONDITION909, value).apply()
+
+    var v909randomAutoShuffle909: Boolean
+        get() = prefs.getBoolean(KEY_V909RANDOMAUTOSHUFFLE909, false)
+        set(value) = prefs.edit().putBoolean(KEY_V909RANDOMAUTOSHUFFLE909, value).apply()
+
+    var v909rangeAutoSlider909: Boolean
+        get() = prefs.getBoolean(KEY_V909RANGEAUTOSLIDER909, false)
+        set(value) = prefs.edit().putBoolean(KEY_V909RANGEAUTOSLIDER909, value).apply()
+
+    var v909rateAutoLimit909: Int
+        get() = prefs.getInt(KEY_V909RATEAUTOLIMIT909, 0)
+        set(value) = prefs.edit().putInt(KEY_V909RATEAUTOLIMIT909, value).apply()
+
+    var v909rawAutoDecode909: Boolean
+        get() = prefs.getBoolean(KEY_V909RAWAUTODECODE909, false)
+        set(value) = prefs.edit().putBoolean(KEY_V909RAWAUTODECODE909, value).apply()
+
+    var v909readAutoBookmark909: Boolean
+        get() = prefs.getBoolean(KEY_V909READAUTOBOOKMARK909, false)
+        set(value) = prefs.edit().putBoolean(KEY_V909READAUTOBOOKMARK909, value).apply()
+
+    var v909readyAutoCheck909: Boolean
+        get() = prefs.getBoolean(KEY_V909READYAUTOCHECK909, false)
+        set(value) = prefs.edit().putBoolean(KEY_V909READYAUTOCHECK909, value).apply()
+
+    var v909realAutoTime909: Boolean
+        get() = prefs.getBoolean(KEY_V909REALAUTOTIME909, false)
+        set(value) = prefs.edit().putBoolean(KEY_V909REALAUTOTIME909, value).apply()
+
+    var v909rebuildAutoIndex909: Boolean
+        get() = prefs.getBoolean(KEY_V909REBUILDAUTOINDEX909, false)
+        set(value) = prefs.edit().putBoolean(KEY_V909REBUILDAUTOINDEX909, value).apply()
+
+    var v909recordAutoHistory909: Boolean
+        get() = prefs.getBoolean(KEY_V909RECORDAUTOHISTORY909, false)
+        set(value) = prefs.edit().putBoolean(KEY_V909RECORDAUTOHISTORY909, value).apply()
+
+    var v909recoverAutoSession909: Boolean
+        get() = prefs.getBoolean(KEY_V909RECOVERAUTOSESSION909, false)
+        set(value) = prefs.edit().putBoolean(KEY_V909RECOVERAUTOSESSION909, value).apply()
+
+    var v909recycleAutoBin909: Boolean
+        get() = prefs.getBoolean(KEY_V909RECYCLEAUTOBIN909, false)
+        set(value) = prefs.edit().putBoolean(KEY_V909RECYCLEAUTOBIN909, value).apply()
+
+    var v910quickAutoAction910: Boolean
+        get() = prefs.getBoolean(KEY_V910QUICKAUTOACTION910, false)
+        set(value) = prefs.edit().putBoolean(KEY_V910QUICKAUTOACTION910, value).apply()
+
+    var v910quitAutoSave910: Boolean
+        get() = prefs.getBoolean(KEY_V910QUITAUTOSAVE910, false)
+        set(value) = prefs.edit().putBoolean(KEY_V910QUITAUTOSAVE910, value).apply()
+
+    var v910quoteAutoFormat910: Boolean
+        get() = prefs.getBoolean(KEY_V910QUOTEAUTOFORMAT910, false)
+        set(value) = prefs.edit().putBoolean(KEY_V910QUOTEAUTOFORMAT910, value).apply()
+
+    var v910raceAutoCondition910: Boolean
+        get() = prefs.getBoolean(KEY_V910RACEAUTOCONDITION910, false)
+        set(value) = prefs.edit().putBoolean(KEY_V910RACEAUTOCONDITION910, value).apply()
+
+    var v910randomAutoShuffle910: Boolean
+        get() = prefs.getBoolean(KEY_V910RANDOMAUTOSHUFFLE910, false)
+        set(value) = prefs.edit().putBoolean(KEY_V910RANDOMAUTOSHUFFLE910, value).apply()
+
+    var v910rangeAutoSlider910: Boolean
+        get() = prefs.getBoolean(KEY_V910RANGEAUTOSLIDER910, false)
+        set(value) = prefs.edit().putBoolean(KEY_V910RANGEAUTOSLIDER910, value).apply()
+
+    var v910rateAutoLimit910: Int
+        get() = prefs.getInt(KEY_V910RATEAUTOLIMIT910, 0)
+        set(value) = prefs.edit().putInt(KEY_V910RATEAUTOLIMIT910, value).apply()
+
+    var v910rawAutoDecode910: Boolean
+        get() = prefs.getBoolean(KEY_V910RAWAUTODECODE910, false)
+        set(value) = prefs.edit().putBoolean(KEY_V910RAWAUTODECODE910, value).apply()
+
+    var v910readAutoBookmark910: Boolean
+        get() = prefs.getBoolean(KEY_V910READAUTOBOOKMARK910, false)
+        set(value) = prefs.edit().putBoolean(KEY_V910READAUTOBOOKMARK910, value).apply()
+
+    var v910readyAutoCheck910: Boolean
+        get() = prefs.getBoolean(KEY_V910READYAUTOCHECK910, false)
+        set(value) = prefs.edit().putBoolean(KEY_V910READYAUTOCHECK910, value).apply()
+
+    var v910realAutoTime910: Boolean
+        get() = prefs.getBoolean(KEY_V910REALAUTOTIME910, false)
+        set(value) = prefs.edit().putBoolean(KEY_V910REALAUTOTIME910, value).apply()
+
+    var v910rebuildAutoIndex910: Boolean
+        get() = prefs.getBoolean(KEY_V910REBUILDAUTOINDEX910, false)
+        set(value) = prefs.edit().putBoolean(KEY_V910REBUILDAUTOINDEX910, value).apply()
+
+    var v910recordAutoHistory910: Boolean
+        get() = prefs.getBoolean(KEY_V910RECORDAUTOHISTORY910, false)
+        set(value) = prefs.edit().putBoolean(KEY_V910RECORDAUTOHISTORY910, value).apply()
+
+    var v910recoverAutoSession910: Boolean
+        get() = prefs.getBoolean(KEY_V910RECOVERAUTOSESSION910, false)
+        set(value) = prefs.edit().putBoolean(KEY_V910RECOVERAUTOSESSION910, value).apply()
+
+    var v910recycleAutoBin910: Boolean
+        get() = prefs.getBoolean(KEY_V910RECYCLEAUTOBIN910, false)
+        set(value) = prefs.edit().putBoolean(KEY_V910RECYCLEAUTOBIN910, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -76680,5 +77280,155 @@ class AppPrefs(context: Context) {
         const val KEY_V900PUSHAUTONOTIFY900 = "v900pushAutoNotify900" // v900 Push Auto Notify900
         const val KEY_V900QUERYAUTOOPTIMIZE900 = "v900queryAutoOptimize900" // v900 Query Auto Optimize900
         const val KEY_V900QUEUEAUTOPRIORITY900 = "v900queueAutoPriority900" // v900 Queue Auto Priority900
+        const val KEY_V901QUICKAUTOACTION901 = "v901quickAutoAction901" // v901 Quick Auto Action901
+        const val KEY_V901QUITAUTOSAVE901 = "v901quitAutoSave901" // v901 Quit Auto Save901
+        const val KEY_V901QUOTEAUTOFORMAT901 = "v901quoteAutoFormat901" // v901 Quote Auto Format901
+        const val KEY_V901RACEAUTOCONDITION901 = "v901raceAutoCondition901" // v901 Race Auto Condition901
+        const val KEY_V901RANDOMAUTOSHUFFLE901 = "v901randomAutoShuffle901" // v901 Random Auto Shuffle901
+        const val KEY_V901RANGEAUTOSLIDER901 = "v901rangeAutoSlider901" // v901 Range Auto Slider901
+        const val KEY_V901RATEAUTOLIMIT901 = "v901rateAutoLimit901" // v901 Rate Auto Limit901
+        const val KEY_V901RAWAUTODECODE901 = "v901rawAutoDecode901" // v901 Raw Auto Decode901
+        const val KEY_V901READAUTOBOOKMARK901 = "v901readAutoBookmark901" // v901 Read Auto Bookmark901
+        const val KEY_V901READYAUTOCHECK901 = "v901readyAutoCheck901" // v901 Ready Auto Check901
+        const val KEY_V901REALAUTOTIME901 = "v901realAutoTime901" // v901 Real Auto Time901
+        const val KEY_V901REBUILDAUTOINDEX901 = "v901rebuildAutoIndex901" // v901 Rebuild Auto Index901
+        const val KEY_V901RECORDAUTOHISTORY901 = "v901recordAutoHistory901" // v901 Record Auto History901
+        const val KEY_V901RECOVERAUTOSESSION901 = "v901recoverAutoSession901" // v901 Recover Auto Session901
+        const val KEY_V901RECYCLEAUTOBIN901 = "v901recycleAutoBin901" // v901 Recycle Auto Bin901
+        const val KEY_V902QUICKAUTOACTION902 = "v902quickAutoAction902" // v902 Quick Auto Action902
+        const val KEY_V902QUITAUTOSAVE902 = "v902quitAutoSave902" // v902 Quit Auto Save902
+        const val KEY_V902QUOTEAUTOFORMAT902 = "v902quoteAutoFormat902" // v902 Quote Auto Format902
+        const val KEY_V902RACEAUTOCONDITION902 = "v902raceAutoCondition902" // v902 Race Auto Condition902
+        const val KEY_V902RANDOMAUTOSHUFFLE902 = "v902randomAutoShuffle902" // v902 Random Auto Shuffle902
+        const val KEY_V902RANGEAUTOSLIDER902 = "v902rangeAutoSlider902" // v902 Range Auto Slider902
+        const val KEY_V902RATEAUTOLIMIT902 = "v902rateAutoLimit902" // v902 Rate Auto Limit902
+        const val KEY_V902RAWAUTODECODE902 = "v902rawAutoDecode902" // v902 Raw Auto Decode902
+        const val KEY_V902READAUTOBOOKMARK902 = "v902readAutoBookmark902" // v902 Read Auto Bookmark902
+        const val KEY_V902READYAUTOCHECK902 = "v902readyAutoCheck902" // v902 Ready Auto Check902
+        const val KEY_V902REALAUTOTIME902 = "v902realAutoTime902" // v902 Real Auto Time902
+        const val KEY_V902REBUILDAUTOINDEX902 = "v902rebuildAutoIndex902" // v902 Rebuild Auto Index902
+        const val KEY_V902RECORDAUTOHISTORY902 = "v902recordAutoHistory902" // v902 Record Auto History902
+        const val KEY_V902RECOVERAUTOSESSION902 = "v902recoverAutoSession902" // v902 Recover Auto Session902
+        const val KEY_V902RECYCLEAUTOBIN902 = "v902recycleAutoBin902" // v902 Recycle Auto Bin902
+        const val KEY_V903QUICKAUTOACTION903 = "v903quickAutoAction903" // v903 Quick Auto Action903
+        const val KEY_V903QUITAUTOSAVE903 = "v903quitAutoSave903" // v903 Quit Auto Save903
+        const val KEY_V903QUOTEAUTOFORMAT903 = "v903quoteAutoFormat903" // v903 Quote Auto Format903
+        const val KEY_V903RACEAUTOCONDITION903 = "v903raceAutoCondition903" // v903 Race Auto Condition903
+        const val KEY_V903RANDOMAUTOSHUFFLE903 = "v903randomAutoShuffle903" // v903 Random Auto Shuffle903
+        const val KEY_V903RANGEAUTOSLIDER903 = "v903rangeAutoSlider903" // v903 Range Auto Slider903
+        const val KEY_V903RATEAUTOLIMIT903 = "v903rateAutoLimit903" // v903 Rate Auto Limit903
+        const val KEY_V903RAWAUTODECODE903 = "v903rawAutoDecode903" // v903 Raw Auto Decode903
+        const val KEY_V903READAUTOBOOKMARK903 = "v903readAutoBookmark903" // v903 Read Auto Bookmark903
+        const val KEY_V903READYAUTOCHECK903 = "v903readyAutoCheck903" // v903 Ready Auto Check903
+        const val KEY_V903REALAUTOTIME903 = "v903realAutoTime903" // v903 Real Auto Time903
+        const val KEY_V903REBUILDAUTOINDEX903 = "v903rebuildAutoIndex903" // v903 Rebuild Auto Index903
+        const val KEY_V903RECORDAUTOHISTORY903 = "v903recordAutoHistory903" // v903 Record Auto History903
+        const val KEY_V903RECOVERAUTOSESSION903 = "v903recoverAutoSession903" // v903 Recover Auto Session903
+        const val KEY_V903RECYCLEAUTOBIN903 = "v903recycleAutoBin903" // v903 Recycle Auto Bin903
+        const val KEY_V904QUICKAUTOACTION904 = "v904quickAutoAction904" // v904 Quick Auto Action904
+        const val KEY_V904QUITAUTOSAVE904 = "v904quitAutoSave904" // v904 Quit Auto Save904
+        const val KEY_V904QUOTEAUTOFORMAT904 = "v904quoteAutoFormat904" // v904 Quote Auto Format904
+        const val KEY_V904RACEAUTOCONDITION904 = "v904raceAutoCondition904" // v904 Race Auto Condition904
+        const val KEY_V904RANDOMAUTOSHUFFLE904 = "v904randomAutoShuffle904" // v904 Random Auto Shuffle904
+        const val KEY_V904RANGEAUTOSLIDER904 = "v904rangeAutoSlider904" // v904 Range Auto Slider904
+        const val KEY_V904RATEAUTOLIMIT904 = "v904rateAutoLimit904" // v904 Rate Auto Limit904
+        const val KEY_V904RAWAUTODECODE904 = "v904rawAutoDecode904" // v904 Raw Auto Decode904
+        const val KEY_V904READAUTOBOOKMARK904 = "v904readAutoBookmark904" // v904 Read Auto Bookmark904
+        const val KEY_V904READYAUTOCHECK904 = "v904readyAutoCheck904" // v904 Ready Auto Check904
+        const val KEY_V904REALAUTOTIME904 = "v904realAutoTime904" // v904 Real Auto Time904
+        const val KEY_V904REBUILDAUTOINDEX904 = "v904rebuildAutoIndex904" // v904 Rebuild Auto Index904
+        const val KEY_V904RECORDAUTOHISTORY904 = "v904recordAutoHistory904" // v904 Record Auto History904
+        const val KEY_V904RECOVERAUTOSESSION904 = "v904recoverAutoSession904" // v904 Recover Auto Session904
+        const val KEY_V904RECYCLEAUTOBIN904 = "v904recycleAutoBin904" // v904 Recycle Auto Bin904
+        const val KEY_V905QUICKAUTOACTION905 = "v905quickAutoAction905" // v905 Quick Auto Action905
+        const val KEY_V905QUITAUTOSAVE905 = "v905quitAutoSave905" // v905 Quit Auto Save905
+        const val KEY_V905QUOTEAUTOFORMAT905 = "v905quoteAutoFormat905" // v905 Quote Auto Format905
+        const val KEY_V905RACEAUTOCONDITION905 = "v905raceAutoCondition905" // v905 Race Auto Condition905
+        const val KEY_V905RANDOMAUTOSHUFFLE905 = "v905randomAutoShuffle905" // v905 Random Auto Shuffle905
+        const val KEY_V905RANGEAUTOSLIDER905 = "v905rangeAutoSlider905" // v905 Range Auto Slider905
+        const val KEY_V905RATEAUTOLIMIT905 = "v905rateAutoLimit905" // v905 Rate Auto Limit905
+        const val KEY_V905RAWAUTODECODE905 = "v905rawAutoDecode905" // v905 Raw Auto Decode905
+        const val KEY_V905READAUTOBOOKMARK905 = "v905readAutoBookmark905" // v905 Read Auto Bookmark905
+        const val KEY_V905READYAUTOCHECK905 = "v905readyAutoCheck905" // v905 Ready Auto Check905
+        const val KEY_V905REALAUTOTIME905 = "v905realAutoTime905" // v905 Real Auto Time905
+        const val KEY_V905REBUILDAUTOINDEX905 = "v905rebuildAutoIndex905" // v905 Rebuild Auto Index905
+        const val KEY_V905RECORDAUTOHISTORY905 = "v905recordAutoHistory905" // v905 Record Auto History905
+        const val KEY_V905RECOVERAUTOSESSION905 = "v905recoverAutoSession905" // v905 Recover Auto Session905
+        const val KEY_V905RECYCLEAUTOBIN905 = "v905recycleAutoBin905" // v905 Recycle Auto Bin905
+        const val KEY_V906QUICKAUTOACTION906 = "v906quickAutoAction906" // v906 Quick Auto Action906
+        const val KEY_V906QUITAUTOSAVE906 = "v906quitAutoSave906" // v906 Quit Auto Save906
+        const val KEY_V906QUOTEAUTOFORMAT906 = "v906quoteAutoFormat906" // v906 Quote Auto Format906
+        const val KEY_V906RACEAUTOCONDITION906 = "v906raceAutoCondition906" // v906 Race Auto Condition906
+        const val KEY_V906RANDOMAUTOSHUFFLE906 = "v906randomAutoShuffle906" // v906 Random Auto Shuffle906
+        const val KEY_V906RANGEAUTOSLIDER906 = "v906rangeAutoSlider906" // v906 Range Auto Slider906
+        const val KEY_V906RATEAUTOLIMIT906 = "v906rateAutoLimit906" // v906 Rate Auto Limit906
+        const val KEY_V906RAWAUTODECODE906 = "v906rawAutoDecode906" // v906 Raw Auto Decode906
+        const val KEY_V906READAUTOBOOKMARK906 = "v906readAutoBookmark906" // v906 Read Auto Bookmark906
+        const val KEY_V906READYAUTOCHECK906 = "v906readyAutoCheck906" // v906 Ready Auto Check906
+        const val KEY_V906REALAUTOTIME906 = "v906realAutoTime906" // v906 Real Auto Time906
+        const val KEY_V906REBUILDAUTOINDEX906 = "v906rebuildAutoIndex906" // v906 Rebuild Auto Index906
+        const val KEY_V906RECORDAUTOHISTORY906 = "v906recordAutoHistory906" // v906 Record Auto History906
+        const val KEY_V906RECOVERAUTOSESSION906 = "v906recoverAutoSession906" // v906 Recover Auto Session906
+        const val KEY_V906RECYCLEAUTOBIN906 = "v906recycleAutoBin906" // v906 Recycle Auto Bin906
+        const val KEY_V907QUICKAUTOACTION907 = "v907quickAutoAction907" // v907 Quick Auto Action907
+        const val KEY_V907QUITAUTOSAVE907 = "v907quitAutoSave907" // v907 Quit Auto Save907
+        const val KEY_V907QUOTEAUTOFORMAT907 = "v907quoteAutoFormat907" // v907 Quote Auto Format907
+        const val KEY_V907RACEAUTOCONDITION907 = "v907raceAutoCondition907" // v907 Race Auto Condition907
+        const val KEY_V907RANDOMAUTOSHUFFLE907 = "v907randomAutoShuffle907" // v907 Random Auto Shuffle907
+        const val KEY_V907RANGEAUTOSLIDER907 = "v907rangeAutoSlider907" // v907 Range Auto Slider907
+        const val KEY_V907RATEAUTOLIMIT907 = "v907rateAutoLimit907" // v907 Rate Auto Limit907
+        const val KEY_V907RAWAUTODECODE907 = "v907rawAutoDecode907" // v907 Raw Auto Decode907
+        const val KEY_V907READAUTOBOOKMARK907 = "v907readAutoBookmark907" // v907 Read Auto Bookmark907
+        const val KEY_V907READYAUTOCHECK907 = "v907readyAutoCheck907" // v907 Ready Auto Check907
+        const val KEY_V907REALAUTOTIME907 = "v907realAutoTime907" // v907 Real Auto Time907
+        const val KEY_V907REBUILDAUTOINDEX907 = "v907rebuildAutoIndex907" // v907 Rebuild Auto Index907
+        const val KEY_V907RECORDAUTOHISTORY907 = "v907recordAutoHistory907" // v907 Record Auto History907
+        const val KEY_V907RECOVERAUTOSESSION907 = "v907recoverAutoSession907" // v907 Recover Auto Session907
+        const val KEY_V907RECYCLEAUTOBIN907 = "v907recycleAutoBin907" // v907 Recycle Auto Bin907
+        const val KEY_V908QUICKAUTOACTION908 = "v908quickAutoAction908" // v908 Quick Auto Action908
+        const val KEY_V908QUITAUTOSAVE908 = "v908quitAutoSave908" // v908 Quit Auto Save908
+        const val KEY_V908QUOTEAUTOFORMAT908 = "v908quoteAutoFormat908" // v908 Quote Auto Format908
+        const val KEY_V908RACEAUTOCONDITION908 = "v908raceAutoCondition908" // v908 Race Auto Condition908
+        const val KEY_V908RANDOMAUTOSHUFFLE908 = "v908randomAutoShuffle908" // v908 Random Auto Shuffle908
+        const val KEY_V908RANGEAUTOSLIDER908 = "v908rangeAutoSlider908" // v908 Range Auto Slider908
+        const val KEY_V908RATEAUTOLIMIT908 = "v908rateAutoLimit908" // v908 Rate Auto Limit908
+        const val KEY_V908RAWAUTODECODE908 = "v908rawAutoDecode908" // v908 Raw Auto Decode908
+        const val KEY_V908READAUTOBOOKMARK908 = "v908readAutoBookmark908" // v908 Read Auto Bookmark908
+        const val KEY_V908READYAUTOCHECK908 = "v908readyAutoCheck908" // v908 Ready Auto Check908
+        const val KEY_V908REALAUTOTIME908 = "v908realAutoTime908" // v908 Real Auto Time908
+        const val KEY_V908REBUILDAUTOINDEX908 = "v908rebuildAutoIndex908" // v908 Rebuild Auto Index908
+        const val KEY_V908RECORDAUTOHISTORY908 = "v908recordAutoHistory908" // v908 Record Auto History908
+        const val KEY_V908RECOVERAUTOSESSION908 = "v908recoverAutoSession908" // v908 Recover Auto Session908
+        const val KEY_V908RECYCLEAUTOBIN908 = "v908recycleAutoBin908" // v908 Recycle Auto Bin908
+        const val KEY_V909QUICKAUTOACTION909 = "v909quickAutoAction909" // v909 Quick Auto Action909
+        const val KEY_V909QUITAUTOSAVE909 = "v909quitAutoSave909" // v909 Quit Auto Save909
+        const val KEY_V909QUOTEAUTOFORMAT909 = "v909quoteAutoFormat909" // v909 Quote Auto Format909
+        const val KEY_V909RACEAUTOCONDITION909 = "v909raceAutoCondition909" // v909 Race Auto Condition909
+        const val KEY_V909RANDOMAUTOSHUFFLE909 = "v909randomAutoShuffle909" // v909 Random Auto Shuffle909
+        const val KEY_V909RANGEAUTOSLIDER909 = "v909rangeAutoSlider909" // v909 Range Auto Slider909
+        const val KEY_V909RATEAUTOLIMIT909 = "v909rateAutoLimit909" // v909 Rate Auto Limit909
+        const val KEY_V909RAWAUTODECODE909 = "v909rawAutoDecode909" // v909 Raw Auto Decode909
+        const val KEY_V909READAUTOBOOKMARK909 = "v909readAutoBookmark909" // v909 Read Auto Bookmark909
+        const val KEY_V909READYAUTOCHECK909 = "v909readyAutoCheck909" // v909 Ready Auto Check909
+        const val KEY_V909REALAUTOTIME909 = "v909realAutoTime909" // v909 Real Auto Time909
+        const val KEY_V909REBUILDAUTOINDEX909 = "v909rebuildAutoIndex909" // v909 Rebuild Auto Index909
+        const val KEY_V909RECORDAUTOHISTORY909 = "v909recordAutoHistory909" // v909 Record Auto History909
+        const val KEY_V909RECOVERAUTOSESSION909 = "v909recoverAutoSession909" // v909 Recover Auto Session909
+        const val KEY_V909RECYCLEAUTOBIN909 = "v909recycleAutoBin909" // v909 Recycle Auto Bin909
+        const val KEY_V910QUICKAUTOACTION910 = "v910quickAutoAction910" // v910 Quick Auto Action910
+        const val KEY_V910QUITAUTOSAVE910 = "v910quitAutoSave910" // v910 Quit Auto Save910
+        const val KEY_V910QUOTEAUTOFORMAT910 = "v910quoteAutoFormat910" // v910 Quote Auto Format910
+        const val KEY_V910RACEAUTOCONDITION910 = "v910raceAutoCondition910" // v910 Race Auto Condition910
+        const val KEY_V910RANDOMAUTOSHUFFLE910 = "v910randomAutoShuffle910" // v910 Random Auto Shuffle910
+        const val KEY_V910RANGEAUTOSLIDER910 = "v910rangeAutoSlider910" // v910 Range Auto Slider910
+        const val KEY_V910RATEAUTOLIMIT910 = "v910rateAutoLimit910" // v910 Rate Auto Limit910
+        const val KEY_V910RAWAUTODECODE910 = "v910rawAutoDecode910" // v910 Raw Auto Decode910
+        const val KEY_V910READAUTOBOOKMARK910 = "v910readAutoBookmark910" // v910 Read Auto Bookmark910
+        const val KEY_V910READYAUTOCHECK910 = "v910readyAutoCheck910" // v910 Ready Auto Check910
+        const val KEY_V910REALAUTOTIME910 = "v910realAutoTime910" // v910 Real Auto Time910
+        const val KEY_V910REBUILDAUTOINDEX910 = "v910rebuildAutoIndex910" // v910 Rebuild Auto Index910
+        const val KEY_V910RECORDAUTOHISTORY910 = "v910recordAutoHistory910" // v910 Record Auto History910
+        const val KEY_V910RECOVERAUTOSESSION910 = "v910recoverAutoSession910" // v910 Recover Auto Session910
+        const val KEY_V910RECYCLEAUTOBIN910 = "v910recycleAutoBin910" // v910 Recycle Auto Bin910
     }
 }
