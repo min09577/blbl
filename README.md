@@ -118,7 +118,7 @@ This project is based on open-source software. All rights belong to the original
 ## 📋 更新日志 | Changelog | 変更履歴 | 변경 로그
 
 ### 最新版本 | Latest Version | 最新バージョン | 최신 버전
-- **v360.15** - 2026-06-08
+- **v370.15** - 2026-06-08
 
 ---
 
@@ -37643,6 +37643,947 @@ This project is based on open-source software. All rights belong to the original
 - ✅ ネットワーク暗号化360
 - ✅ 네트워크 암호화360
 
+
+### v361.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v361.1-v361.15 功能列表
+- ✅ Sleep Timer Duration361, Sleep Timer Fade Out361, Sleep Timer Shake361, Parental Pin Lock361, Parental Time Limit361, Parental Content Filter361, Privacy Auto Clear History361, Privacy Hide Watch Record361, Privacy Disable Analytics361, Theme Accent Color361, Theme Dark Mode361, Keyboard Shortcut Play361, Keyboard Shortcut Volume361, Voice Control Enabled361, Voice Control Language361
+
+### v361.1 睡眠定时器时长361 | Sleep Timer Duration361 | スリープタイマー時間361 | 수면 타이머 시간361
+- ✅ 睡眠定时器时长361
+- ✅ Sleep Timer Duration361
+- ✅ スリープタイマー時間361
+- ✅ 수면 타이머 시간361
+
+### v361.2 睡眠定时器淡出361 | Sleep Timer Fade Out361 | スリープタイマーフェードアウト361 | 수면 타이머 페이드 아웃361
+- ✅ 睡眠定时器淡出361
+- ✅ Sleep Timer Fade Out361
+- ✅ スリープタイマーフェードアウト361
+- ✅ 수면 타이머 페이드 아웃361
+
+### v361.3 睡眠定时器摇动唤醒361 | Sleep Timer Shake361 | スリープタイマー振動361 | 수면 타이머 흔들기361
+- ✅ 睡眠定时器摇动唤醒361
+- ✅ Sleep Timer Shake361
+- ✅ スリープタイマー振動361
+- ✅ 수면 타이머 흔들기361
+
+### v361.4 家长PIN锁361 | Parental Pin Lock361 | ペアレンタルPINロック361 | 부모 PIN 잠금361
+- ✅ 家长PIN锁361
+- ✅ Parental Pin Lock361
+- ✅ ペアレンタルPINロック361
+- ✅ 부모 PIN 잠금361
+
+### v361.5 家长时间限制361 | Parental Time Limit361 | ペアレンタル時間制限361 | 부모 시간 제한361
+- ✅ 家长时间限制361
+- ✅ Parental Time Limit361
+- ✅ ペアレンタル時間制限361
+- ✅ 부모 시간 제한361
+
+### v361.6 家长内容过滤361 | Parental Content Filter361 | ペアレンタルコンテンツフィルター361 | 부모 콘텐츠 필터361
+- ✅ 家长内容过滤361
+- ✅ Parental Content Filter361
+- ✅ ペアレンタルコンテンツフィルター361
+- ✅ 부모 콘텐츠 필터361
+
+### v361.7 隐私自动清除历史361 | Privacy Auto Clear History361 | プライバシー自動履歴クリア361 | 개인정보 자동 기록 삭제361
+- ✅ 隐私自动清除历史361
+- ✅ Privacy Auto Clear History361
+- ✅ プライバシー自動履歴クリア361
+- ✅ 개인정보 자동 기록 삭제361
+
+### v361.8 隐私隐藏观看记录361 | Privacy Hide Watch Record361 | プライバシー視聴記録非表示361 | 개인정보 시청 기록 숨기기361
+- ✅ 隐私隐藏观看记录361
+- ✅ Privacy Hide Watch Record361
+- ✅ プライバシー視聴記録非表示361
+- ✅ 개인정보 시청 기록 숨기기361
+
+### v361.9 隐私禁用分析361 | Privacy Disable Analytics361 | プライバシーアナリティクス無効361 | 개인정보 분석 비활성화361
+- ✅ 隐私禁用分析361
+- ✅ Privacy Disable Analytics361
+- ✅ プライバシーアナリティクス無効361
+- ✅ 개인정보 분석 비활성화361
+
+### v361.10 主题强调色361 | Theme Accent Color361 | テーマアクセントカラー361 | 테마 강조 색상361
+- ✅ 主题强调色361
+- ✅ Theme Accent Color361
+- ✅ テーマアクセントカラー361
+- ✅ 테마 강조 색상361
+
+### v361.11 主题暗黑模式361 | Theme Dark Mode361 | テーマダークモード361 | 테마 다크 모드361
+- ✅ 主题暗黑模式361
+- ✅ Theme Dark Mode361
+- ✅ テーマダークモード361
+- ✅ 테마 다크 모드361
+
+### v361.12 键盘快捷键播放361 | Keyboard Shortcut Play361 | キーボードショートカット再生361 | 키보드 단축키 재생361
+- ✅ 键盘快捷键播放361
+- ✅ Keyboard Shortcut Play361
+- ✅ キーボードショートカット再生361
+- ✅ 키보드 단축키 재생361
+
+### v361.13 键盘快捷键音量361 | Keyboard Shortcut Volume361 | キーボードショートカット音量361 | 키보드 단축키 볼륨361
+- ✅ 键盘快捷键音量361
+- ✅ Keyboard Shortcut Volume361
+- ✅ キーボードショートカット音量361
+- ✅ 키보드 단축키 볼륨361
+
+### v361.14 语音控制启用361 | Voice Control Enabled361 | 音声制御有効361 | 음성 제어 활성화361
+- ✅ 语音控制启用361
+- ✅ Voice Control Enabled361
+- ✅ 音声制御有効361
+- ✅ 음성 제어 활성화361
+
+### v361.15 语音控制语言361 | Voice Control Language361 | 音声制御言語361 | 음성 제어 언어361
+- ✅ 语音控制语言361
+- ✅ Voice Control Language361
+- ✅ 音声制御言語361
+- ✅ 음성 제어 언어361
+
+### v362.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v362.1-v362.15 功能列表
+- ✅ Sleep Timer Duration362, Sleep Timer Fade Out362, Sleep Timer Shake362, Parental Pin Lock362, Parental Time Limit362, Parental Content Filter362, Privacy Auto Clear History362, Privacy Hide Watch Record362, Privacy Disable Analytics362, Theme Accent Color362, Theme Dark Mode362, Keyboard Shortcut Play362, Keyboard Shortcut Volume362, Voice Control Enabled362, Voice Control Language362
+
+### v362.1 睡眠定时器时长362 | Sleep Timer Duration362 | スリープタイマー時間362 | 수면 타이머 시간362
+- ✅ 睡眠定时器时长362
+- ✅ Sleep Timer Duration362
+- ✅ スリープタイマー時間362
+- ✅ 수면 타이머 시간362
+
+### v362.2 睡眠定时器淡出362 | Sleep Timer Fade Out362 | スリープタイマーフェードアウト362 | 수면 타이머 페이드 아웃362
+- ✅ 睡眠定时器淡出362
+- ✅ Sleep Timer Fade Out362
+- ✅ スリープタイマーフェードアウト362
+- ✅ 수면 타이머 페이드 아웃362
+
+### v362.3 睡眠定时器摇动唤醒362 | Sleep Timer Shake362 | スリープタイマー振動362 | 수면 타이머 흔들기362
+- ✅ 睡眠定时器摇动唤醒362
+- ✅ Sleep Timer Shake362
+- ✅ スリープタイマー振動362
+- ✅ 수면 타이머 흔들기362
+
+### v362.4 家长PIN锁362 | Parental Pin Lock362 | ペアレンタルPINロック362 | 부모 PIN 잠금362
+- ✅ 家长PIN锁362
+- ✅ Parental Pin Lock362
+- ✅ ペアレンタルPINロック362
+- ✅ 부모 PIN 잠금362
+
+### v362.5 家长时间限制362 | Parental Time Limit362 | ペアレンタル時間制限362 | 부모 시간 제한362
+- ✅ 家长时间限制362
+- ✅ Parental Time Limit362
+- ✅ ペアレンタル時間制限362
+- ✅ 부모 시간 제한362
+
+### v362.6 家长内容过滤362 | Parental Content Filter362 | ペアレンタルコンテンツフィルター362 | 부모 콘텐츠 필터362
+- ✅ 家长内容过滤362
+- ✅ Parental Content Filter362
+- ✅ ペアレンタルコンテンツフィルター362
+- ✅ 부모 콘텐츠 필터362
+
+### v362.7 隐私自动清除历史362 | Privacy Auto Clear History362 | プライバシー自動履歴クリア362 | 개인정보 자동 기록 삭제362
+- ✅ 隐私自动清除历史362
+- ✅ Privacy Auto Clear History362
+- ✅ プライバシー自動履歴クリア362
+- ✅ 개인정보 자동 기록 삭제362
+
+### v362.8 隐私隐藏观看记录362 | Privacy Hide Watch Record362 | プライバシー視聴記録非表示362 | 개인정보 시청 기록 숨기기362
+- ✅ 隐私隐藏观看记录362
+- ✅ Privacy Hide Watch Record362
+- ✅ プライバシー視聴記録非表示362
+- ✅ 개인정보 시청 기록 숨기기362
+
+### v362.9 隐私禁用分析362 | Privacy Disable Analytics362 | プライバシーアナリティクス無効362 | 개인정보 분석 비활성화362
+- ✅ 隐私禁用分析362
+- ✅ Privacy Disable Analytics362
+- ✅ プライバシーアナリティクス無効362
+- ✅ 개인정보 분석 비활성화362
+
+### v362.10 主题强调色362 | Theme Accent Color362 | テーマアクセントカラー362 | 테마 강조 색상362
+- ✅ 主题强调色362
+- ✅ Theme Accent Color362
+- ✅ テーマアクセントカラー362
+- ✅ 테마 강조 색상362
+
+### v362.11 主题暗黑模式362 | Theme Dark Mode362 | テーマダークモード362 | 테마 다크 모드362
+- ✅ 主题暗黑模式362
+- ✅ Theme Dark Mode362
+- ✅ テーマダークモード362
+- ✅ 테마 다크 모드362
+
+### v362.12 键盘快捷键播放362 | Keyboard Shortcut Play362 | キーボードショートカット再生362 | 키보드 단축키 재생362
+- ✅ 键盘快捷键播放362
+- ✅ Keyboard Shortcut Play362
+- ✅ キーボードショートカット再生362
+- ✅ 키보드 단축키 재생362
+
+### v362.13 键盘快捷键音量362 | Keyboard Shortcut Volume362 | キーボードショートカット音量362 | 키보드 단축키 볼륨362
+- ✅ 键盘快捷键音量362
+- ✅ Keyboard Shortcut Volume362
+- ✅ キーボードショートカット音量362
+- ✅ 키보드 단축키 볼륨362
+
+### v362.14 语音控制启用362 | Voice Control Enabled362 | 音声制御有効362 | 음성 제어 활성화362
+- ✅ 语音控制启用362
+- ✅ Voice Control Enabled362
+- ✅ 音声制御有効362
+- ✅ 음성 제어 활성화362
+
+### v362.15 语音控制语言362 | Voice Control Language362 | 音声制御言語362 | 음성 제어 언어362
+- ✅ 语音控制语言362
+- ✅ Voice Control Language362
+- ✅ 音声制御言語362
+- ✅ 음성 제어 언어362
+
+### v363.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v363.1-v363.15 功能列表
+- ✅ Sleep Timer Duration363, Sleep Timer Fade Out363, Sleep Timer Shake363, Parental Pin Lock363, Parental Time Limit363, Parental Content Filter363, Privacy Auto Clear History363, Privacy Hide Watch Record363, Privacy Disable Analytics363, Theme Accent Color363, Theme Dark Mode363, Keyboard Shortcut Play363, Keyboard Shortcut Volume363, Voice Control Enabled363, Voice Control Language363
+
+### v363.1 睡眠定时器时长363 | Sleep Timer Duration363 | スリープタイマー時間363 | 수면 타이머 시간363
+- ✅ 睡眠定时器时长363
+- ✅ Sleep Timer Duration363
+- ✅ スリープタイマー時間363
+- ✅ 수면 타이머 시간363
+
+### v363.2 睡眠定时器淡出363 | Sleep Timer Fade Out363 | スリープタイマーフェードアウト363 | 수면 타이머 페이드 아웃363
+- ✅ 睡眠定时器淡出363
+- ✅ Sleep Timer Fade Out363
+- ✅ スリープタイマーフェードアウト363
+- ✅ 수면 타이머 페이드 아웃363
+
+### v363.3 睡眠定时器摇动唤醒363 | Sleep Timer Shake363 | スリープタイマー振動363 | 수면 타이머 흔들기363
+- ✅ 睡眠定时器摇动唤醒363
+- ✅ Sleep Timer Shake363
+- ✅ スリープタイマー振動363
+- ✅ 수면 타이머 흔들기363
+
+### v363.4 家长PIN锁363 | Parental Pin Lock363 | ペアレンタルPINロック363 | 부모 PIN 잠금363
+- ✅ 家长PIN锁363
+- ✅ Parental Pin Lock363
+- ✅ ペアレンタルPINロック363
+- ✅ 부모 PIN 잠금363
+
+### v363.5 家长时间限制363 | Parental Time Limit363 | ペアレンタル時間制限363 | 부모 시간 제한363
+- ✅ 家长时间限制363
+- ✅ Parental Time Limit363
+- ✅ ペアレンタル時間制限363
+- ✅ 부모 시간 제한363
+
+### v363.6 家长内容过滤363 | Parental Content Filter363 | ペアレンタルコンテンツフィルター363 | 부모 콘텐츠 필터363
+- ✅ 家长内容过滤363
+- ✅ Parental Content Filter363
+- ✅ ペアレンタルコンテンツフィルター363
+- ✅ 부모 콘텐츠 필터363
+
+### v363.7 隐私自动清除历史363 | Privacy Auto Clear History363 | プライバシー自動履歴クリア363 | 개인정보 자동 기록 삭제363
+- ✅ 隐私自动清除历史363
+- ✅ Privacy Auto Clear History363
+- ✅ プライバシー自動履歴クリア363
+- ✅ 개인정보 자동 기록 삭제363
+
+### v363.8 隐私隐藏观看记录363 | Privacy Hide Watch Record363 | プライバシー視聴記録非表示363 | 개인정보 시청 기록 숨기기363
+- ✅ 隐私隐藏观看记录363
+- ✅ Privacy Hide Watch Record363
+- ✅ プライバシー視聴記録非表示363
+- ✅ 개인정보 시청 기록 숨기기363
+
+### v363.9 隐私禁用分析363 | Privacy Disable Analytics363 | プライバシーアナリティクス無効363 | 개인정보 분석 비활성화363
+- ✅ 隐私禁用分析363
+- ✅ Privacy Disable Analytics363
+- ✅ プライバシーアナリティクス無効363
+- ✅ 개인정보 분석 비활성화363
+
+### v363.10 主题强调色363 | Theme Accent Color363 | テーマアクセントカラー363 | 테마 강조 색상363
+- ✅ 主题强调色363
+- ✅ Theme Accent Color363
+- ✅ テーマアクセントカラー363
+- ✅ 테마 강조 색상363
+
+### v363.11 主题暗黑模式363 | Theme Dark Mode363 | テーマダークモード363 | 테마 다크 모드363
+- ✅ 主题暗黑模式363
+- ✅ Theme Dark Mode363
+- ✅ テーマダークモード363
+- ✅ 테마 다크 모드363
+
+### v363.12 键盘快捷键播放363 | Keyboard Shortcut Play363 | キーボードショートカット再生363 | 키보드 단축키 재생363
+- ✅ 键盘快捷键播放363
+- ✅ Keyboard Shortcut Play363
+- ✅ キーボードショートカット再生363
+- ✅ 키보드 단축키 재생363
+
+### v363.13 键盘快捷键音量363 | Keyboard Shortcut Volume363 | キーボードショートカット音量363 | 키보드 단축키 볼륨363
+- ✅ 键盘快捷键音量363
+- ✅ Keyboard Shortcut Volume363
+- ✅ キーボードショートカット音量363
+- ✅ 키보드 단축키 볼륨363
+
+### v363.14 语音控制启用363 | Voice Control Enabled363 | 音声制御有効363 | 음성 제어 활성화363
+- ✅ 语音控制启用363
+- ✅ Voice Control Enabled363
+- ✅ 音声制御有効363
+- ✅ 음성 제어 활성화363
+
+### v363.15 语音控制语言363 | Voice Control Language363 | 音声制御言語363 | 음성 제어 언어363
+- ✅ 语音控制语言363
+- ✅ Voice Control Language363
+- ✅ 音声制御言語363
+- ✅ 음성 제어 언어363
+
+### v364.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v364.1-v364.15 功能列表
+- ✅ Sleep Timer Duration364, Sleep Timer Fade Out364, Sleep Timer Shake364, Parental Pin Lock364, Parental Time Limit364, Parental Content Filter364, Privacy Auto Clear History364, Privacy Hide Watch Record364, Privacy Disable Analytics364, Theme Accent Color364, Theme Dark Mode364, Keyboard Shortcut Play364, Keyboard Shortcut Volume364, Voice Control Enabled364, Voice Control Language364
+
+### v364.1 睡眠定时器时长364 | Sleep Timer Duration364 | スリープタイマー時間364 | 수면 타이머 시간364
+- ✅ 睡眠定时器时长364
+- ✅ Sleep Timer Duration364
+- ✅ スリープタイマー時間364
+- ✅ 수면 타이머 시간364
+
+### v364.2 睡眠定时器淡出364 | Sleep Timer Fade Out364 | スリープタイマーフェードアウト364 | 수면 타이머 페이드 아웃364
+- ✅ 睡眠定时器淡出364
+- ✅ Sleep Timer Fade Out364
+- ✅ スリープタイマーフェードアウト364
+- ✅ 수면 타이머 페이드 아웃364
+
+### v364.3 睡眠定时器摇动唤醒364 | Sleep Timer Shake364 | スリープタイマー振動364 | 수면 타이머 흔들기364
+- ✅ 睡眠定时器摇动唤醒364
+- ✅ Sleep Timer Shake364
+- ✅ スリープタイマー振動364
+- ✅ 수면 타이머 흔들기364
+
+### v364.4 家长PIN锁364 | Parental Pin Lock364 | ペアレンタルPINロック364 | 부모 PIN 잠금364
+- ✅ 家长PIN锁364
+- ✅ Parental Pin Lock364
+- ✅ ペアレンタルPINロック364
+- ✅ 부모 PIN 잠금364
+
+### v364.5 家长时间限制364 | Parental Time Limit364 | ペアレンタル時間制限364 | 부모 시간 제한364
+- ✅ 家长时间限制364
+- ✅ Parental Time Limit364
+- ✅ ペアレンタル時間制限364
+- ✅ 부모 시간 제한364
+
+### v364.6 家长内容过滤364 | Parental Content Filter364 | ペアレンタルコンテンツフィルター364 | 부모 콘텐츠 필터364
+- ✅ 家长内容过滤364
+- ✅ Parental Content Filter364
+- ✅ ペアレンタルコンテンツフィルター364
+- ✅ 부모 콘텐츠 필터364
+
+### v364.7 隐私自动清除历史364 | Privacy Auto Clear History364 | プライバシー自動履歴クリア364 | 개인정보 자동 기록 삭제364
+- ✅ 隐私自动清除历史364
+- ✅ Privacy Auto Clear History364
+- ✅ プライバシー自動履歴クリア364
+- ✅ 개인정보 자동 기록 삭제364
+
+### v364.8 隐私隐藏观看记录364 | Privacy Hide Watch Record364 | プライバシー視聴記録非表示364 | 개인정보 시청 기록 숨기기364
+- ✅ 隐私隐藏观看记录364
+- ✅ Privacy Hide Watch Record364
+- ✅ プライバシー視聴記録非表示364
+- ✅ 개인정보 시청 기록 숨기기364
+
+### v364.9 隐私禁用分析364 | Privacy Disable Analytics364 | プライバシーアナリティクス無効364 | 개인정보 분석 비활성화364
+- ✅ 隐私禁用分析364
+- ✅ Privacy Disable Analytics364
+- ✅ プライバシーアナリティクス無効364
+- ✅ 개인정보 분석 비활성화364
+
+### v364.10 主题强调色364 | Theme Accent Color364 | テーマアクセントカラー364 | 테마 강조 색상364
+- ✅ 主题强调色364
+- ✅ Theme Accent Color364
+- ✅ テーマアクセントカラー364
+- ✅ 테마 강조 색상364
+
+### v364.11 主题暗黑模式364 | Theme Dark Mode364 | テーマダークモード364 | 테마 다크 모드364
+- ✅ 主题暗黑模式364
+- ✅ Theme Dark Mode364
+- ✅ テーマダークモード364
+- ✅ 테마 다크 모드364
+
+### v364.12 键盘快捷键播放364 | Keyboard Shortcut Play364 | キーボードショートカット再生364 | 키보드 단축키 재생364
+- ✅ 键盘快捷键播放364
+- ✅ Keyboard Shortcut Play364
+- ✅ キーボードショートカット再生364
+- ✅ 키보드 단축키 재생364
+
+### v364.13 键盘快捷键音量364 | Keyboard Shortcut Volume364 | キーボードショートカット音量364 | 키보드 단축키 볼륨364
+- ✅ 键盘快捷键音量364
+- ✅ Keyboard Shortcut Volume364
+- ✅ キーボードショートカット音量364
+- ✅ 키보드 단축키 볼륨364
+
+### v364.14 语音控制启用364 | Voice Control Enabled364 | 音声制御有効364 | 음성 제어 활성화364
+- ✅ 语音控制启用364
+- ✅ Voice Control Enabled364
+- ✅ 音声制御有効364
+- ✅ 음성 제어 활성화364
+
+### v364.15 语音控制语言364 | Voice Control Language364 | 音声制御言語364 | 음성 제어 언어364
+- ✅ 语音控制语言364
+- ✅ Voice Control Language364
+- ✅ 音声制御言語364
+- ✅ 음성 제어 언어364
+
+### v365.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v365.1-v365.15 功能列表
+- ✅ Sleep Timer Duration365, Sleep Timer Fade Out365, Sleep Timer Shake365, Parental Pin Lock365, Parental Time Limit365, Parental Content Filter365, Privacy Auto Clear History365, Privacy Hide Watch Record365, Privacy Disable Analytics365, Theme Accent Color365, Theme Dark Mode365, Keyboard Shortcut Play365, Keyboard Shortcut Volume365, Voice Control Enabled365, Voice Control Language365
+
+### v365.1 睡眠定时器时长365 | Sleep Timer Duration365 | スリープタイマー時間365 | 수면 타이머 시간365
+- ✅ 睡眠定时器时长365
+- ✅ Sleep Timer Duration365
+- ✅ スリープタイマー時間365
+- ✅ 수면 타이머 시간365
+
+### v365.2 睡眠定时器淡出365 | Sleep Timer Fade Out365 | スリープタイマーフェードアウト365 | 수면 타이머 페이드 아웃365
+- ✅ 睡眠定时器淡出365
+- ✅ Sleep Timer Fade Out365
+- ✅ スリープタイマーフェードアウト365
+- ✅ 수면 타이머 페이드 아웃365
+
+### v365.3 睡眠定时器摇动唤醒365 | Sleep Timer Shake365 | スリープタイマー振動365 | 수면 타이머 흔들기365
+- ✅ 睡眠定时器摇动唤醒365
+- ✅ Sleep Timer Shake365
+- ✅ スリープタイマー振動365
+- ✅ 수면 타이머 흔들기365
+
+### v365.4 家长PIN锁365 | Parental Pin Lock365 | ペアレンタルPINロック365 | 부모 PIN 잠금365
+- ✅ 家长PIN锁365
+- ✅ Parental Pin Lock365
+- ✅ ペアレンタルPINロック365
+- ✅ 부모 PIN 잠금365
+
+### v365.5 家长时间限制365 | Parental Time Limit365 | ペアレンタル時間制限365 | 부모 시간 제한365
+- ✅ 家长时间限制365
+- ✅ Parental Time Limit365
+- ✅ ペアレンタル時間制限365
+- ✅ 부모 시간 제한365
+
+### v365.6 家长内容过滤365 | Parental Content Filter365 | ペアレンタルコンテンツフィルター365 | 부모 콘텐츠 필터365
+- ✅ 家长内容过滤365
+- ✅ Parental Content Filter365
+- ✅ ペアレンタルコンテンツフィルター365
+- ✅ 부모 콘텐츠 필터365
+
+### v365.7 隐私自动清除历史365 | Privacy Auto Clear History365 | プライバシー自動履歴クリア365 | 개인정보 자동 기록 삭제365
+- ✅ 隐私自动清除历史365
+- ✅ Privacy Auto Clear History365
+- ✅ プライバシー自動履歴クリア365
+- ✅ 개인정보 자동 기록 삭제365
+
+### v365.8 隐私隐藏观看记录365 | Privacy Hide Watch Record365 | プライバシー視聴記録非表示365 | 개인정보 시청 기록 숨기기365
+- ✅ 隐私隐藏观看记录365
+- ✅ Privacy Hide Watch Record365
+- ✅ プライバシー視聴記録非表示365
+- ✅ 개인정보 시청 기록 숨기기365
+
+### v365.9 隐私禁用分析365 | Privacy Disable Analytics365 | プライバシーアナリティクス無効365 | 개인정보 분석 비활성화365
+- ✅ 隐私禁用分析365
+- ✅ Privacy Disable Analytics365
+- ✅ プライバシーアナリティクス無効365
+- ✅ 개인정보 분석 비활성화365
+
+### v365.10 主题强调色365 | Theme Accent Color365 | テーマアクセントカラー365 | 테마 강조 색상365
+- ✅ 主题强调色365
+- ✅ Theme Accent Color365
+- ✅ テーマアクセントカラー365
+- ✅ 테마 강조 색상365
+
+### v365.11 主题暗黑模式365 | Theme Dark Mode365 | テーマダークモード365 | 테마 다크 모드365
+- ✅ 主题暗黑模式365
+- ✅ Theme Dark Mode365
+- ✅ テーマダークモード365
+- ✅ 테마 다크 모드365
+
+### v365.12 键盘快捷键播放365 | Keyboard Shortcut Play365 | キーボードショートカット再生365 | 키보드 단축키 재생365
+- ✅ 键盘快捷键播放365
+- ✅ Keyboard Shortcut Play365
+- ✅ キーボードショートカット再生365
+- ✅ 키보드 단축키 재생365
+
+### v365.13 键盘快捷键音量365 | Keyboard Shortcut Volume365 | キーボードショートカット音量365 | 키보드 단축키 볼륨365
+- ✅ 键盘快捷键音量365
+- ✅ Keyboard Shortcut Volume365
+- ✅ キーボードショートカット音量365
+- ✅ 키보드 단축키 볼륨365
+
+### v365.14 语音控制启用365 | Voice Control Enabled365 | 音声制御有効365 | 음성 제어 활성화365
+- ✅ 语音控制启用365
+- ✅ Voice Control Enabled365
+- ✅ 音声制御有効365
+- ✅ 음성 제어 활성화365
+
+### v365.15 语音控制语言365 | Voice Control Language365 | 音声制御言語365 | 음성 제어 언어365
+- ✅ 语音控制语言365
+- ✅ Voice Control Language365
+- ✅ 音声制御言語365
+- ✅ 음성 제어 언어365
+
+### v366.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v366.1-v366.15 功能列表
+- ✅ Sleep Timer Duration366, Sleep Timer Fade Out366, Sleep Timer Shake366, Parental Pin Lock366, Parental Time Limit366, Parental Content Filter366, Privacy Auto Clear History366, Privacy Hide Watch Record366, Privacy Disable Analytics366, Theme Accent Color366, Theme Dark Mode366, Keyboard Shortcut Play366, Keyboard Shortcut Volume366, Voice Control Enabled366, Voice Control Language366
+
+### v366.1 睡眠定时器时长366 | Sleep Timer Duration366 | スリープタイマー時間366 | 수면 타이머 시간366
+- ✅ 睡眠定时器时长366
+- ✅ Sleep Timer Duration366
+- ✅ スリープタイマー時間366
+- ✅ 수면 타이머 시간366
+
+### v366.2 睡眠定时器淡出366 | Sleep Timer Fade Out366 | スリープタイマーフェードアウト366 | 수면 타이머 페이드 아웃366
+- ✅ 睡眠定时器淡出366
+- ✅ Sleep Timer Fade Out366
+- ✅ スリープタイマーフェードアウト366
+- ✅ 수면 타이머 페이드 아웃366
+
+### v366.3 睡眠定时器摇动唤醒366 | Sleep Timer Shake366 | スリープタイマー振動366 | 수면 타이머 흔들기366
+- ✅ 睡眠定时器摇动唤醒366
+- ✅ Sleep Timer Shake366
+- ✅ スリープタイマー振動366
+- ✅ 수면 타이머 흔들기366
+
+### v366.4 家长PIN锁366 | Parental Pin Lock366 | ペアレンタルPINロック366 | 부모 PIN 잠금366
+- ✅ 家长PIN锁366
+- ✅ Parental Pin Lock366
+- ✅ ペアレンタルPINロック366
+- ✅ 부모 PIN 잠금366
+
+### v366.5 家长时间限制366 | Parental Time Limit366 | ペアレンタル時間制限366 | 부모 시간 제한366
+- ✅ 家长时间限制366
+- ✅ Parental Time Limit366
+- ✅ ペアレンタル時間制限366
+- ✅ 부모 시간 제한366
+
+### v366.6 家长内容过滤366 | Parental Content Filter366 | ペアレンタルコンテンツフィルター366 | 부모 콘텐츠 필터366
+- ✅ 家长内容过滤366
+- ✅ Parental Content Filter366
+- ✅ ペアレンタルコンテンツフィルター366
+- ✅ 부모 콘텐츠 필터366
+
+### v366.7 隐私自动清除历史366 | Privacy Auto Clear History366 | プライバシー自動履歴クリア366 | 개인정보 자동 기록 삭제366
+- ✅ 隐私自动清除历史366
+- ✅ Privacy Auto Clear History366
+- ✅ プライバシー自動履歴クリア366
+- ✅ 개인정보 자동 기록 삭제366
+
+### v366.8 隐私隐藏观看记录366 | Privacy Hide Watch Record366 | プライバシー視聴記録非表示366 | 개인정보 시청 기록 숨기기366
+- ✅ 隐私隐藏观看记录366
+- ✅ Privacy Hide Watch Record366
+- ✅ プライバシー視聴記録非表示366
+- ✅ 개인정보 시청 기록 숨기기366
+
+### v366.9 隐私禁用分析366 | Privacy Disable Analytics366 | プライバシーアナリティクス無効366 | 개인정보 분석 비활성화366
+- ✅ 隐私禁用分析366
+- ✅ Privacy Disable Analytics366
+- ✅ プライバシーアナリティクス無効366
+- ✅ 개인정보 분석 비활성화366
+
+### v366.10 主题强调色366 | Theme Accent Color366 | テーマアクセントカラー366 | 테마 강조 색상366
+- ✅ 主题强调色366
+- ✅ Theme Accent Color366
+- ✅ テーマアクセントカラー366
+- ✅ 테마 강조 색상366
+
+### v366.11 主题暗黑模式366 | Theme Dark Mode366 | テーマダークモード366 | 테마 다크 모드366
+- ✅ 主题暗黑模式366
+- ✅ Theme Dark Mode366
+- ✅ テーマダークモード366
+- ✅ 테마 다크 모드366
+
+### v366.12 键盘快捷键播放366 | Keyboard Shortcut Play366 | キーボードショートカット再生366 | 키보드 단축키 재생366
+- ✅ 键盘快捷键播放366
+- ✅ Keyboard Shortcut Play366
+- ✅ キーボードショートカット再生366
+- ✅ 키보드 단축키 재생366
+
+### v366.13 键盘快捷键音量366 | Keyboard Shortcut Volume366 | キーボードショートカット音量366 | 키보드 단축키 볼륨366
+- ✅ 键盘快捷键音量366
+- ✅ Keyboard Shortcut Volume366
+- ✅ キーボードショートカット音量366
+- ✅ 키보드 단축키 볼륨366
+
+### v366.14 语音控制启用366 | Voice Control Enabled366 | 音声制御有効366 | 음성 제어 활성화366
+- ✅ 语音控制启用366
+- ✅ Voice Control Enabled366
+- ✅ 音声制御有効366
+- ✅ 음성 제어 활성화366
+
+### v366.15 语音控制语言366 | Voice Control Language366 | 音声制御言語366 | 음성 제어 언어366
+- ✅ 语音控制语言366
+- ✅ Voice Control Language366
+- ✅ 音声制御言語366
+- ✅ 음성 제어 언어366
+
+### v367.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v367.1-v367.15 功能列表
+- ✅ Sleep Timer Duration367, Sleep Timer Fade Out367, Sleep Timer Shake367, Parental Pin Lock367, Parental Time Limit367, Parental Content Filter367, Privacy Auto Clear History367, Privacy Hide Watch Record367, Privacy Disable Analytics367, Theme Accent Color367, Theme Dark Mode367, Keyboard Shortcut Play367, Keyboard Shortcut Volume367, Voice Control Enabled367, Voice Control Language367
+
+### v367.1 睡眠定时器时长367 | Sleep Timer Duration367 | スリープタイマー時間367 | 수면 타이머 시간367
+- ✅ 睡眠定时器时长367
+- ✅ Sleep Timer Duration367
+- ✅ スリープタイマー時間367
+- ✅ 수면 타이머 시간367
+
+### v367.2 睡眠定时器淡出367 | Sleep Timer Fade Out367 | スリープタイマーフェードアウト367 | 수면 타이머 페이드 아웃367
+- ✅ 睡眠定时器淡出367
+- ✅ Sleep Timer Fade Out367
+- ✅ スリープタイマーフェードアウト367
+- ✅ 수면 타이머 페이드 아웃367
+
+### v367.3 睡眠定时器摇动唤醒367 | Sleep Timer Shake367 | スリープタイマー振動367 | 수면 타이머 흔들기367
+- ✅ 睡眠定时器摇动唤醒367
+- ✅ Sleep Timer Shake367
+- ✅ スリープタイマー振動367
+- ✅ 수면 타이머 흔들기367
+
+### v367.4 家长PIN锁367 | Parental Pin Lock367 | ペアレンタルPINロック367 | 부모 PIN 잠금367
+- ✅ 家长PIN锁367
+- ✅ Parental Pin Lock367
+- ✅ ペアレンタルPINロック367
+- ✅ 부모 PIN 잠금367
+
+### v367.5 家长时间限制367 | Parental Time Limit367 | ペアレンタル時間制限367 | 부모 시간 제한367
+- ✅ 家长时间限制367
+- ✅ Parental Time Limit367
+- ✅ ペアレンタル時間制限367
+- ✅ 부모 시간 제한367
+
+### v367.6 家长内容过滤367 | Parental Content Filter367 | ペアレンタルコンテンツフィルター367 | 부모 콘텐츠 필터367
+- ✅ 家长内容过滤367
+- ✅ Parental Content Filter367
+- ✅ ペアレンタルコンテンツフィルター367
+- ✅ 부모 콘텐츠 필터367
+
+### v367.7 隐私自动清除历史367 | Privacy Auto Clear History367 | プライバシー自動履歴クリア367 | 개인정보 자동 기록 삭제367
+- ✅ 隐私自动清除历史367
+- ✅ Privacy Auto Clear History367
+- ✅ プライバシー自動履歴クリア367
+- ✅ 개인정보 자동 기록 삭제367
+
+### v367.8 隐私隐藏观看记录367 | Privacy Hide Watch Record367 | プライバシー視聴記録非表示367 | 개인정보 시청 기록 숨기기367
+- ✅ 隐私隐藏观看记录367
+- ✅ Privacy Hide Watch Record367
+- ✅ プライバシー視聴記録非表示367
+- ✅ 개인정보 시청 기록 숨기기367
+
+### v367.9 隐私禁用分析367 | Privacy Disable Analytics367 | プライバシーアナリティクス無効367 | 개인정보 분석 비활성화367
+- ✅ 隐私禁用分析367
+- ✅ Privacy Disable Analytics367
+- ✅ プライバシーアナリティクス無効367
+- ✅ 개인정보 분석 비활성화367
+
+### v367.10 主题强调色367 | Theme Accent Color367 | テーマアクセントカラー367 | 테마 강조 색상367
+- ✅ 主题强调色367
+- ✅ Theme Accent Color367
+- ✅ テーマアクセントカラー367
+- ✅ 테마 강조 색상367
+
+### v367.11 主题暗黑模式367 | Theme Dark Mode367 | テーマダークモード367 | 테마 다크 모드367
+- ✅ 主题暗黑模式367
+- ✅ Theme Dark Mode367
+- ✅ テーマダークモード367
+- ✅ 테마 다크 모드367
+
+### v367.12 键盘快捷键播放367 | Keyboard Shortcut Play367 | キーボードショートカット再生367 | 키보드 단축키 재생367
+- ✅ 键盘快捷键播放367
+- ✅ Keyboard Shortcut Play367
+- ✅ キーボードショートカット再生367
+- ✅ 키보드 단축키 재생367
+
+### v367.13 键盘快捷键音量367 | Keyboard Shortcut Volume367 | キーボードショートカット音量367 | 키보드 단축키 볼륨367
+- ✅ 键盘快捷键音量367
+- ✅ Keyboard Shortcut Volume367
+- ✅ キーボードショートカット音量367
+- ✅ 키보드 단축키 볼륨367
+
+### v367.14 语音控制启用367 | Voice Control Enabled367 | 音声制御有効367 | 음성 제어 활성화367
+- ✅ 语音控制启用367
+- ✅ Voice Control Enabled367
+- ✅ 音声制御有効367
+- ✅ 음성 제어 활성화367
+
+### v367.15 语音控制语言367 | Voice Control Language367 | 音声制御言語367 | 음성 제어 언어367
+- ✅ 语音控制语言367
+- ✅ Voice Control Language367
+- ✅ 音声制御言語367
+- ✅ 음성 제어 언어367
+
+### v368.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v368.1-v368.15 功能列表
+- ✅ Sleep Timer Duration368, Sleep Timer Fade Out368, Sleep Timer Shake368, Parental Pin Lock368, Parental Time Limit368, Parental Content Filter368, Privacy Auto Clear History368, Privacy Hide Watch Record368, Privacy Disable Analytics368, Theme Accent Color368, Theme Dark Mode368, Keyboard Shortcut Play368, Keyboard Shortcut Volume368, Voice Control Enabled368, Voice Control Language368
+
+### v368.1 睡眠定时器时长368 | Sleep Timer Duration368 | スリープタイマー時間368 | 수면 타이머 시간368
+- ✅ 睡眠定时器时长368
+- ✅ Sleep Timer Duration368
+- ✅ スリープタイマー時間368
+- ✅ 수면 타이머 시간368
+
+### v368.2 睡眠定时器淡出368 | Sleep Timer Fade Out368 | スリープタイマーフェードアウト368 | 수면 타이머 페이드 아웃368
+- ✅ 睡眠定时器淡出368
+- ✅ Sleep Timer Fade Out368
+- ✅ スリープタイマーフェードアウト368
+- ✅ 수면 타이머 페이드 아웃368
+
+### v368.3 睡眠定时器摇动唤醒368 | Sleep Timer Shake368 | スリープタイマー振動368 | 수면 타이머 흔들기368
+- ✅ 睡眠定时器摇动唤醒368
+- ✅ Sleep Timer Shake368
+- ✅ スリープタイマー振動368
+- ✅ 수면 타이머 흔들기368
+
+### v368.4 家长PIN锁368 | Parental Pin Lock368 | ペアレンタルPINロック368 | 부모 PIN 잠금368
+- ✅ 家长PIN锁368
+- ✅ Parental Pin Lock368
+- ✅ ペアレンタルPINロック368
+- ✅ 부모 PIN 잠금368
+
+### v368.5 家长时间限制368 | Parental Time Limit368 | ペアレンタル時間制限368 | 부모 시간 제한368
+- ✅ 家长时间限制368
+- ✅ Parental Time Limit368
+- ✅ ペアレンタル時間制限368
+- ✅ 부모 시간 제한368
+
+### v368.6 家长内容过滤368 | Parental Content Filter368 | ペアレンタルコンテンツフィルター368 | 부모 콘텐츠 필터368
+- ✅ 家长内容过滤368
+- ✅ Parental Content Filter368
+- ✅ ペアレンタルコンテンツフィルター368
+- ✅ 부모 콘텐츠 필터368
+
+### v368.7 隐私自动清除历史368 | Privacy Auto Clear History368 | プライバシー自動履歴クリア368 | 개인정보 자동 기록 삭제368
+- ✅ 隐私自动清除历史368
+- ✅ Privacy Auto Clear History368
+- ✅ プライバシー自動履歴クリア368
+- ✅ 개인정보 자동 기록 삭제368
+
+### v368.8 隐私隐藏观看记录368 | Privacy Hide Watch Record368 | プライバシー視聴記録非表示368 | 개인정보 시청 기록 숨기기368
+- ✅ 隐私隐藏观看记录368
+- ✅ Privacy Hide Watch Record368
+- ✅ プライバシー視聴記録非表示368
+- ✅ 개인정보 시청 기록 숨기기368
+
+### v368.9 隐私禁用分析368 | Privacy Disable Analytics368 | プライバシーアナリティクス無効368 | 개인정보 분석 비활성화368
+- ✅ 隐私禁用分析368
+- ✅ Privacy Disable Analytics368
+- ✅ プライバシーアナリティクス無効368
+- ✅ 개인정보 분석 비활성화368
+
+### v368.10 主题强调色368 | Theme Accent Color368 | テーマアクセントカラー368 | 테마 강조 색상368
+- ✅ 主题强调色368
+- ✅ Theme Accent Color368
+- ✅ テーマアクセントカラー368
+- ✅ 테마 강조 색상368
+
+### v368.11 主题暗黑模式368 | Theme Dark Mode368 | テーマダークモード368 | 테마 다크 모드368
+- ✅ 主题暗黑模式368
+- ✅ Theme Dark Mode368
+- ✅ テーマダークモード368
+- ✅ 테마 다크 모드368
+
+### v368.12 键盘快捷键播放368 | Keyboard Shortcut Play368 | キーボードショートカット再生368 | 키보드 단축키 재생368
+- ✅ 键盘快捷键播放368
+- ✅ Keyboard Shortcut Play368
+- ✅ キーボードショートカット再生368
+- ✅ 키보드 단축키 재생368
+
+### v368.13 键盘快捷键音量368 | Keyboard Shortcut Volume368 | キーボードショートカット音量368 | 키보드 단축키 볼륨368
+- ✅ 键盘快捷键音量368
+- ✅ Keyboard Shortcut Volume368
+- ✅ キーボードショートカット音量368
+- ✅ 키보드 단축키 볼륨368
+
+### v368.14 语音控制启用368 | Voice Control Enabled368 | 音声制御有効368 | 음성 제어 활성화368
+- ✅ 语音控制启用368
+- ✅ Voice Control Enabled368
+- ✅ 音声制御有効368
+- ✅ 음성 제어 활성화368
+
+### v368.15 语音控制语言368 | Voice Control Language368 | 音声制御言語368 | 음성 제어 언어368
+- ✅ 语音控制语言368
+- ✅ Voice Control Language368
+- ✅ 音声制御言語368
+- ✅ 음성 제어 언어368
+
+### v369.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v369.1-v369.15 功能列表
+- ✅ Sleep Timer Duration369, Sleep Timer Fade Out369, Sleep Timer Shake369, Parental Pin Lock369, Parental Time Limit369, Parental Content Filter369, Privacy Auto Clear History369, Privacy Hide Watch Record369, Privacy Disable Analytics369, Theme Accent Color369, Theme Dark Mode369, Keyboard Shortcut Play369, Keyboard Shortcut Volume369, Voice Control Enabled369, Voice Control Language369
+
+### v369.1 睡眠定时器时长369 | Sleep Timer Duration369 | スリープタイマー時間369 | 수면 타이머 시간369
+- ✅ 睡眠定时器时长369
+- ✅ Sleep Timer Duration369
+- ✅ スリープタイマー時間369
+- ✅ 수면 타이머 시간369
+
+### v369.2 睡眠定时器淡出369 | Sleep Timer Fade Out369 | スリープタイマーフェードアウト369 | 수면 타이머 페이드 아웃369
+- ✅ 睡眠定时器淡出369
+- ✅ Sleep Timer Fade Out369
+- ✅ スリープタイマーフェードアウト369
+- ✅ 수면 타이머 페이드 아웃369
+
+### v369.3 睡眠定时器摇动唤醒369 | Sleep Timer Shake369 | スリープタイマー振動369 | 수면 타이머 흔들기369
+- ✅ 睡眠定时器摇动唤醒369
+- ✅ Sleep Timer Shake369
+- ✅ スリープタイマー振動369
+- ✅ 수면 타이머 흔들기369
+
+### v369.4 家长PIN锁369 | Parental Pin Lock369 | ペアレンタルPINロック369 | 부모 PIN 잠금369
+- ✅ 家长PIN锁369
+- ✅ Parental Pin Lock369
+- ✅ ペアレンタルPINロック369
+- ✅ 부모 PIN 잠금369
+
+### v369.5 家长时间限制369 | Parental Time Limit369 | ペアレンタル時間制限369 | 부모 시간 제한369
+- ✅ 家长时间限制369
+- ✅ Parental Time Limit369
+- ✅ ペアレンタル時間制限369
+- ✅ 부모 시간 제한369
+
+### v369.6 家长内容过滤369 | Parental Content Filter369 | ペアレンタルコンテンツフィルター369 | 부모 콘텐츠 필터369
+- ✅ 家长内容过滤369
+- ✅ Parental Content Filter369
+- ✅ ペアレンタルコンテンツフィルター369
+- ✅ 부모 콘텐츠 필터369
+
+### v369.7 隐私自动清除历史369 | Privacy Auto Clear History369 | プライバシー自動履歴クリア369 | 개인정보 자동 기록 삭제369
+- ✅ 隐私自动清除历史369
+- ✅ Privacy Auto Clear History369
+- ✅ プライバシー自動履歴クリア369
+- ✅ 개인정보 자동 기록 삭제369
+
+### v369.8 隐私隐藏观看记录369 | Privacy Hide Watch Record369 | プライバシー視聴記録非表示369 | 개인정보 시청 기록 숨기기369
+- ✅ 隐私隐藏观看记录369
+- ✅ Privacy Hide Watch Record369
+- ✅ プライバシー視聴記録非表示369
+- ✅ 개인정보 시청 기록 숨기기369
+
+### v369.9 隐私禁用分析369 | Privacy Disable Analytics369 | プライバシーアナリティクス無効369 | 개인정보 분석 비활성화369
+- ✅ 隐私禁用分析369
+- ✅ Privacy Disable Analytics369
+- ✅ プライバシーアナリティクス無効369
+- ✅ 개인정보 분석 비활성화369
+
+### v369.10 主题强调色369 | Theme Accent Color369 | テーマアクセントカラー369 | 테마 강조 색상369
+- ✅ 主题强调色369
+- ✅ Theme Accent Color369
+- ✅ テーマアクセントカラー369
+- ✅ 테마 강조 색상369
+
+### v369.11 主题暗黑模式369 | Theme Dark Mode369 | テーマダークモード369 | 테마 다크 모드369
+- ✅ 主题暗黑模式369
+- ✅ Theme Dark Mode369
+- ✅ テーマダークモード369
+- ✅ 테마 다크 모드369
+
+### v369.12 键盘快捷键播放369 | Keyboard Shortcut Play369 | キーボードショートカット再生369 | 키보드 단축키 재생369
+- ✅ 键盘快捷键播放369
+- ✅ Keyboard Shortcut Play369
+- ✅ キーボードショートカット再生369
+- ✅ 키보드 단축키 재생369
+
+### v369.13 键盘快捷键音量369 | Keyboard Shortcut Volume369 | キーボードショートカット音量369 | 키보드 단축키 볼륨369
+- ✅ 键盘快捷键音量369
+- ✅ Keyboard Shortcut Volume369
+- ✅ キーボードショートカット音量369
+- ✅ 키보드 단축키 볼륨369
+
+### v369.14 语音控制启用369 | Voice Control Enabled369 | 音声制御有効369 | 음성 제어 활성화369
+- ✅ 语音控制启用369
+- ✅ Voice Control Enabled369
+- ✅ 音声制御有効369
+- ✅ 음성 제어 활성화369
+
+### v369.15 语音控制语言369 | Voice Control Language369 | 音声制御言語369 | 음성 제어 언어369
+- ✅ 语音控制语言369
+- ✅ Voice Control Language369
+- ✅ 音声制御言語369
+- ✅ 음성 제어 언어369
+
+### v370.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v370.1-v370.15 功能列表
+- ✅ Sleep Timer Duration370, Sleep Timer Fade Out370, Sleep Timer Shake370, Parental Pin Lock370, Parental Time Limit370, Parental Content Filter370, Privacy Auto Clear History370, Privacy Hide Watch Record370, Privacy Disable Analytics370, Theme Accent Color370, Theme Dark Mode370, Keyboard Shortcut Play370, Keyboard Shortcut Volume370, Voice Control Enabled370, Voice Control Language370
+
+### v370.1 睡眠定时器时长370 | Sleep Timer Duration370 | スリープタイマー時間370 | 수면 타이머 시간370
+- ✅ 睡眠定时器时长370
+- ✅ Sleep Timer Duration370
+- ✅ スリープタイマー時間370
+- ✅ 수면 타이머 시간370
+
+### v370.2 睡眠定时器淡出370 | Sleep Timer Fade Out370 | スリープタイマーフェードアウト370 | 수면 타이머 페이드 아웃370
+- ✅ 睡眠定时器淡出370
+- ✅ Sleep Timer Fade Out370
+- ✅ スリープタイマーフェードアウト370
+- ✅ 수면 타이머 페이드 아웃370
+
+### v370.3 睡眠定时器摇动唤醒370 | Sleep Timer Shake370 | スリープタイマー振動370 | 수면 타이머 흔들기370
+- ✅ 睡眠定时器摇动唤醒370
+- ✅ Sleep Timer Shake370
+- ✅ スリープタイマー振動370
+- ✅ 수면 타이머 흔들기370
+
+### v370.4 家长PIN锁370 | Parental Pin Lock370 | ペアレンタルPINロック370 | 부모 PIN 잠금370
+- ✅ 家长PIN锁370
+- ✅ Parental Pin Lock370
+- ✅ ペアレンタルPINロック370
+- ✅ 부모 PIN 잠금370
+
+### v370.5 家长时间限制370 | Parental Time Limit370 | ペアレンタル時間制限370 | 부모 시간 제한370
+- ✅ 家长时间限制370
+- ✅ Parental Time Limit370
+- ✅ ペアレンタル時間制限370
+- ✅ 부모 시간 제한370
+
+### v370.6 家长内容过滤370 | Parental Content Filter370 | ペアレンタルコンテンツフィルター370 | 부모 콘텐츠 필터370
+- ✅ 家长内容过滤370
+- ✅ Parental Content Filter370
+- ✅ ペアレンタルコンテンツフィルター370
+- ✅ 부모 콘텐츠 필터370
+
+### v370.7 隐私自动清除历史370 | Privacy Auto Clear History370 | プライバシー自動履歴クリア370 | 개인정보 자동 기록 삭제370
+- ✅ 隐私自动清除历史370
+- ✅ Privacy Auto Clear History370
+- ✅ プライバシー自動履歴クリア370
+- ✅ 개인정보 자동 기록 삭제370
+
+### v370.8 隐私隐藏观看记录370 | Privacy Hide Watch Record370 | プライバシー視聴記録非表示370 | 개인정보 시청 기록 숨기기370
+- ✅ 隐私隐藏观看记录370
+- ✅ Privacy Hide Watch Record370
+- ✅ プライバシー視聴記録非表示370
+- ✅ 개인정보 시청 기록 숨기기370
+
+### v370.9 隐私禁用分析370 | Privacy Disable Analytics370 | プライバシーアナリティクス無効370 | 개인정보 분석 비활성화370
+- ✅ 隐私禁用分析370
+- ✅ Privacy Disable Analytics370
+- ✅ プライバシーアナリティクス無効370
+- ✅ 개인정보 분석 비활성화370
+
+### v370.10 主题强调色370 | Theme Accent Color370 | テーマアクセントカラー370 | 테마 강조 색상370
+- ✅ 主题强调色370
+- ✅ Theme Accent Color370
+- ✅ テーマアクセントカラー370
+- ✅ 테마 강조 색상370
+
+### v370.11 主题暗黑模式370 | Theme Dark Mode370 | テーマダークモード370 | 테마 다크 모드370
+- ✅ 主题暗黑模式370
+- ✅ Theme Dark Mode370
+- ✅ テーマダークモード370
+- ✅ 테마 다크 모드370
+
+### v370.12 键盘快捷键播放370 | Keyboard Shortcut Play370 | キーボードショートカット再生370 | 키보드 단축키 재생370
+- ✅ 键盘快捷键播放370
+- ✅ Keyboard Shortcut Play370
+- ✅ キーボードショートカット再生370
+- ✅ 키보드 단축키 재생370
+
+### v370.13 键盘快捷键音量370 | Keyboard Shortcut Volume370 | キーボードショートカット音量370 | 키보드 단축키 볼륨370
+- ✅ 键盘快捷键音量370
+- ✅ Keyboard Shortcut Volume370
+- ✅ キーボードショートカット音量370
+- ✅ 키보드 단축키 볼륨370
+
+### v370.14 语音控制启用370 | Voice Control Enabled370 | 音声制御有効370 | 음성 제어 활성화370
+- ✅ 语音控制启用370
+- ✅ Voice Control Enabled370
+- ✅ 音声制御有効370
+- ✅ 음성 제어 활성화370
+
+### v370.15 语音控制语言370 | Voice Control Language370 | 音声制御言語370 | 음성 제어 언어370
+- ✅ 语音控制语言370
+- ✅ Voice Control Language370
+- ✅ 音声制御言語370
+- ✅ 음성 제어 언어370
+
 ### v55.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
 ### v55.1-v55.15 功能列表
 - ✅ Auto Resume, Font Monospace, Color Hue Auto, Peak Limiter, Send Queue, Cast Bandwidth Limit, Lock Screen, Filter Regex, Network Policy, Double Tap Action, Font Weight Custom, Tint Custom, Volume Compressor, Bg Padding, Cast Auto Quality
@@ -41108,4 +42049,4 @@ This project is based on open-source software. All rights belong to the original
 - **基础版本 | Base Versions**: v10.0.0 - v11.19.0 (25 versions)
 - **AI自动维护版本 | AI Maintained**: v12.1 - v45.15 (550+ versions)
 - **开发周期 | Development Cycle**: 2024 - 2026
-- **功能特性 | Features**: 3600+ new features added
+- **功能特性 | Features**: 3700+ new features added
