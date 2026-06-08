@@ -118,7 +118,7 @@ This project is based on open-source software. All rights belong to the original
 ## 📋 更新日志 | Changelog | 変更履歴 | 변경 로그
 
 ### 最新版本 | Latest Version | 最新バージョン | 최신 버전
-- **v340.15** - 2026-06-08
+- **v350.15** - 2026-06-08
 
 ---
 
@@ -35761,6 +35761,947 @@ This project is based on open-source software. All rights belong to the original
 - ✅ 字幕遅延同期332
 - ✅ 자막 지연 동기화332
 
+
+### v341.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v341.1-v341.15 功能列表
+- ✅ Audio Bass Extract323, Danmaku Merge Threshold333, Subtitle Font Size333, Gesture Double Tap Rewind333, Cast Audio Delay333, Playlist Auto Mark Watched333, Cache Preload On Wifi333, Progress Bar Show Chapter333, Volume Balance LR333, History Max Items333, Playback AB Repeat333, Screenshot Share Target333, Video Rotate Angle333, Danmaku Merge Threshold334, Subtitle Font Size334
+
+### v341.1 音频低音提取323 | Audio Bass Extract323 | オーディオバスエクストラクト323 | 오디오 베이스 추출323
+- ✅ 音频低音提取323
+- ✅ Audio Bass Extract323
+- ✅ オーディオバスエクストラクト323
+- ✅ 오디오 베이스 추출323
+
+### v341.2 弹幕合并阈值333 | Danmaku Merge Threshold333 | コメントマージ閾値333 | 댓글 병합 임계값333
+- ✅ 弹幕合并阈值333
+- ✅ Danmaku Merge Threshold333
+- ✅ コメントマージ閾値333
+- ✅ 댓글 병합 임계값333
+
+### v341.3 字幕字体大小333 | Subtitle Font Size333 | 字幕フォントサイズ333 | 자막 글꼴 크기333
+- ✅ 字幕字体大小333
+- ✅ Subtitle Font Size333
+- ✅ 字幕フォントサイズ333
+- ✅ 자막 글꼴 크기333
+
+### v341.4 手势双击快退333 | Gesture Double Tap Rewind333 | ジェスチャーダブルタップ巻き戻し333 | 제스처 더블 탭 되감기333
+- ✅ 手势双击快退333
+- ✅ Gesture Double Tap Rewind333
+- ✅ ジェスチャーダブルタップ巻き戻し333
+- ✅ 제스처 더블 탭 되감기333
+
+### v341.5 投射音频延迟333 | Cast Audio Delay333 | キャストオーディオ遅延333 | 캐스트 오디오 지연333
+- ✅ 投射音频延迟333
+- ✅ Cast Audio Delay333
+- ✅ キャストオーディオ遅延333
+- ✅ 캐스트 오디오 지연333
+
+### v341.6 播放列表自动标记已看333 | Playlist Auto Mark Watched333 | プレイリスト自動視聴済みマーク333 | 재생 목록 자동 시청 완료 표시333
+- ✅ 播放列表自动标记已看333
+- ✅ Playlist Auto Mark Watched333
+- ✅ プレイリスト自動視聴済みマーク333
+- ✅ 재생 목록 자동 시청 완료 표시333
+
+### v341.7 WiFi下缓存预加载333 | Cache Preload On Wifi333 | WiFi時キャッシュプリロード333 | WiFi 시 캐시 프리로드333
+- ✅ WiFi下缓存预加载333
+- ✅ Cache Preload On Wifi333
+- ✅ WiFi時キャッシュプリロード333
+- ✅ WiFi 시 캐시 프리로드333
+
+### v341.8 进度条显示章节333 | Progress Bar Show Chapter333 | プログレスバーチャプター表示333 | 진행 바 챕터 표시333
+- ✅ 进度条显示章节333
+- ✅ Progress Bar Show Chapter333
+- ✅ プログレスバーチャプター表示333
+- ✅ 진행 바 챕터 표시333
+
+### v341.9 音量左右平衡333 | Volume Balance LR333 | ボリュームLRバランス333 | 볼륨 LR 밸런스333
+- ✅ 音量左右平衡333
+- ✅ Volume Balance LR333
+- ✅ ボリュームLRバランス333
+- ✅ 볼륨 LR 밸런스333
+
+### v341.10 历史最大条目333 | History Max Items333 | 履歴最大アイテム数333 | 기록 최대 항목333
+- ✅ 历史最大条目333
+- ✅ History Max Items333
+- ✅ 履歴最大アイテム数333
+- ✅ 기록 최대 항목333
+
+### v341.11 播放AB重复333 | Playback AB Repeat333 | 再生ABリピート333 | 재생 AB 반복333
+- ✅ 播放AB重复333
+- ✅ Playback AB Repeat333
+- ✅ 再生ABリピート333
+- ✅ 재생 AB 반복333
+
+### v341.12 截图分享目标333 | Screenshot Share Target333 | スクリーンショット共有ターゲット333 | 스크린샷 공유 대상333
+- ✅ 截图分享目标333
+- ✅ Screenshot Share Target333
+- ✅ スクリーンショット共有ターゲット333
+- ✅ 스크린샷 공유 대상333
+
+### v341.13 视频旋转角度333 | Video Rotate Angle333 | ビデオ回転角度333 | 비디오 회전 각도333
+- ✅ 视频旋转角度333
+- ✅ Video Rotate Angle333
+- ✅ ビデオ回転角度333
+- ✅ 비디오 회전 각도333
+
+### v341.14 弹幕合并阈值334 | Danmaku Merge Threshold334 | コメントマージ閾値334 | 댓글 병합 임계값334
+- ✅ 弹幕合并阈值334
+- ✅ Danmaku Merge Threshold334
+- ✅ コメントマージ閾値334
+- ✅ 댓글 병합 임계값334
+
+### v341.15 字幕字体大小334 | Subtitle Font Size334 | 字幕フォントサイズ334 | 자막 글꼴 크기334
+- ✅ 字幕字体大小334
+- ✅ Subtitle Font Size334
+- ✅ 字幕フォントサイズ334
+- ✅ 자막 글꼴 크기334
+
+### v342.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v342.1-v342.15 功能列表
+- ✅ Audio Bass Extract324, Danmaku Merge Threshold335, Subtitle Font Size335, Gesture Double Tap Rewind334, Cast Audio Delay334, Playlist Auto Mark Watched334, Cache Preload On Wifi334, Progress Bar Show Chapter334, Volume Balance LR334, History Max Items334, Playback AB Repeat334, Screenshot Share Target334, Video Rotate Angle334, Danmaku Merge Threshold336, Subtitle Font Size336
+
+### v342.1 音频低音提取324 | Audio Bass Extract324 | オーディオバスエクストラクト324 | 오디오 베이스 추출324
+- ✅ 音频低音提取324
+- ✅ Audio Bass Extract324
+- ✅ オーディオバスエクストラクト324
+- ✅ 오디오 베이스 추출324
+
+### v342.2 弹幕合并阈值335 | Danmaku Merge Threshold335 | コメントマージ閾値335 | 댓글 병합 임계값335
+- ✅ 弹幕合并阈值335
+- ✅ Danmaku Merge Threshold335
+- ✅ コメントマージ閾値335
+- ✅ 댓글 병합 임계값335
+
+### v342.3 字幕字体大小335 | Subtitle Font Size335 | 字幕フォントサイズ335 | 자막 글꼴 크기335
+- ✅ 字幕字体大小335
+- ✅ Subtitle Font Size335
+- ✅ 字幕フォントサイズ335
+- ✅ 자막 글꼴 크기335
+
+### v342.4 手势双击快退334 | Gesture Double Tap Rewind334 | ジェスチャーダブルタップ巻き戻し334 | 제스처 더블 탭 되감기334
+- ✅ 手势双击快退334
+- ✅ Gesture Double Tap Rewind334
+- ✅ ジェスチャーダブルタップ巻き戻し334
+- ✅ 제스처 더블 탭 되감기334
+
+### v342.5 投射音频延迟334 | Cast Audio Delay334 | キャストオーディオ遅延334 | 캐스트 오디오 지연334
+- ✅ 投射音频延迟334
+- ✅ Cast Audio Delay334
+- ✅ キャストオーディオ遅延334
+- ✅ 캐스트 오디오 지연334
+
+### v342.6 播放列表自动标记已看334 | Playlist Auto Mark Watched334 | プレイリスト自動視聴済みマーク334 | 재생 목록 자동 시청 완료 표시334
+- ✅ 播放列表自动标记已看334
+- ✅ Playlist Auto Mark Watched334
+- ✅ プレイリスト自動視聴済みマーク334
+- ✅ 재생 목록 자동 시청 완료 표시334
+
+### v342.7 WiFi下缓存预加载334 | Cache Preload On Wifi334 | WiFi時キャッシュプリロード334 | WiFi 시 캐시 프리로드334
+- ✅ WiFi下缓存预加载334
+- ✅ Cache Preload On Wifi334
+- ✅ WiFi時キャッシュプリロード334
+- ✅ WiFi 시 캐시 프리로드334
+
+### v342.8 进度条显示章节334 | Progress Bar Show Chapter334 | プログレスバーチャプター表示334 | 진행 바 챕터 표시334
+- ✅ 进度条显示章节334
+- ✅ Progress Bar Show Chapter334
+- ✅ プログレスバーチャプター表示334
+- ✅ 진행 바 챕터 표시334
+
+### v342.9 音量左右平衡334 | Volume Balance LR334 | ボリュームLRバランス334 | 볼륨 LR 밸런스334
+- ✅ 音量左右平衡334
+- ✅ Volume Balance LR334
+- ✅ ボリュームLRバランス334
+- ✅ 볼륨 LR 밸런스334
+
+### v342.10 历史最大条目334 | History Max Items334 | 履歴最大アイテム数334 | 기록 최대 항목334
+- ✅ 历史最大条目334
+- ✅ History Max Items334
+- ✅ 履歴最大アイテム数334
+- ✅ 기록 최대 항목334
+
+### v342.11 播放AB重复334 | Playback AB Repeat334 | 再生ABリピート334 | 재생 AB 반복334
+- ✅ 播放AB重复334
+- ✅ Playback AB Repeat334
+- ✅ 再生ABリピート334
+- ✅ 재생 AB 반복334
+
+### v342.12 截图分享目标334 | Screenshot Share Target334 | スクリーンショット共有ターゲット334 | 스크린샷 공유 대상334
+- ✅ 截图分享目标334
+- ✅ Screenshot Share Target334
+- ✅ スクリーンショット共有ターゲット334
+- ✅ 스크린샷 공유 대상334
+
+### v342.13 视频旋转角度334 | Video Rotate Angle334 | ビデオ回転角度334 | 비디오 회전 각도334
+- ✅ 视频旋转角度334
+- ✅ Video Rotate Angle334
+- ✅ ビデオ回転角度334
+- ✅ 비디오 회전 각도334
+
+### v342.14 弹幕合并阈值336 | Danmaku Merge Threshold336 | コメントマージ閾値336 | 댓글 병합 임계값336
+- ✅ 弹幕合并阈值336
+- ✅ Danmaku Merge Threshold336
+- ✅ コメントマージ閾値336
+- ✅ 댓글 병합 임계값336
+
+### v342.15 字幕字体大小336 | Subtitle Font Size336 | 字幕フォントサイズ336 | 자막 글꼴 크기336
+- ✅ 字幕字体大小336
+- ✅ Subtitle Font Size336
+- ✅ 字幕フォントサイズ336
+- ✅ 자막 글꼴 크기336
+
+### v343.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v343.1-v343.15 功能列表
+- ✅ Audio Bass Extract325, Danmaku Merge Threshold337, Subtitle Font Size337, Gesture Double Tap Rewind335, Cast Audio Delay335, Playlist Auto Mark Watched335, Cache Preload On Wifi335, Progress Bar Show Chapter335, Volume Balance LR335, History Max Items335, Playback AB Repeat335, Screenshot Share Target335, Video Rotate Angle335, Danmaku Merge Threshold338, Subtitle Font Size338
+
+### v343.1 音频低音提取325 | Audio Bass Extract325 | オーディオバスエクストラクト325 | 오디오 베이스 추출325
+- ✅ 音频低音提取325
+- ✅ Audio Bass Extract325
+- ✅ オーディオバスエクストラクト325
+- ✅ 오디오 베이스 추출325
+
+### v343.2 弹幕合并阈值337 | Danmaku Merge Threshold337 | コメントマージ閾値337 | 댓글 병합 임계값337
+- ✅ 弹幕合并阈值337
+- ✅ Danmaku Merge Threshold337
+- ✅ コメントマージ閾値337
+- ✅ 댓글 병합 임계값337
+
+### v343.3 字幕字体大小337 | Subtitle Font Size337 | 字幕フォントサイズ337 | 자막 글꼴 크기337
+- ✅ 字幕字体大小337
+- ✅ Subtitle Font Size337
+- ✅ 字幕フォントサイズ337
+- ✅ 자막 글꼴 크기337
+
+### v343.4 手势双击快退335 | Gesture Double Tap Rewind335 | ジェスチャーダブルタップ巻き戻し335 | 제스처 더블 탭 되감기335
+- ✅ 手势双击快退335
+- ✅ Gesture Double Tap Rewind335
+- ✅ ジェスチャーダブルタップ巻き戻し335
+- ✅ 제스처 더블 탭 되감기335
+
+### v343.5 投射音频延迟335 | Cast Audio Delay335 | キャストオーディオ遅延335 | 캐스트 오디오 지연335
+- ✅ 投射音频延迟335
+- ✅ Cast Audio Delay335
+- ✅ キャストオーディオ遅延335
+- ✅ 캐스트 오디오 지연335
+
+### v343.6 播放列表自动标记已看335 | Playlist Auto Mark Watched335 | プレイリスト自動視聴済みマーク335 | 재생 목록 자동 시청 완료 표시335
+- ✅ 播放列表自动标记已看335
+- ✅ Playlist Auto Mark Watched335
+- ✅ プレイリスト自動視聴済みマーク335
+- ✅ 재생 목록 자동 시청 완료 표시335
+
+### v343.7 WiFi下缓存预加载335 | Cache Preload On Wifi335 | WiFi時キャッシュプリロード335 | WiFi 시 캐시 프리로드335
+- ✅ WiFi下缓存预加载335
+- ✅ Cache Preload On Wifi335
+- ✅ WiFi時キャッシュプリロード335
+- ✅ WiFi 시 캐시 프리로드335
+
+### v343.8 进度条显示章节335 | Progress Bar Show Chapter335 | プログレスバーチャプター表示335 | 진행 바 챕터 표시335
+- ✅ 进度条显示章节335
+- ✅ Progress Bar Show Chapter335
+- ✅ プログレスバーチャプター表示335
+- ✅ 진행 바 챕터 표시335
+
+### v343.9 音量左右平衡335 | Volume Balance LR335 | ボリュームLRバランス335 | 볼륨 LR 밸런스335
+- ✅ 音量左右平衡335
+- ✅ Volume Balance LR335
+- ✅ ボリュームLRバランス335
+- ✅ 볼륨 LR 밸런스335
+
+### v343.10 历史最大条目335 | History Max Items335 | 履歴最大アイテム数335 | 기록 최대 항목335
+- ✅ 历史最大条目335
+- ✅ History Max Items335
+- ✅ 履歴最大アイテム数335
+- ✅ 기록 최대 항목335
+
+### v343.11 播放AB重复335 | Playback AB Repeat335 | 再生ABリピート335 | 재생 AB 반복335
+- ✅ 播放AB重复335
+- ✅ Playback AB Repeat335
+- ✅ 再生ABリピート335
+- ✅ 재생 AB 반복335
+
+### v343.12 截图分享目标335 | Screenshot Share Target335 | スクリーンショット共有ターゲット335 | 스크린샷 공유 대상335
+- ✅ 截图分享目标335
+- ✅ Screenshot Share Target335
+- ✅ スクリーンショット共有ターゲット335
+- ✅ 스크린샷 공유 대상335
+
+### v343.13 视频旋转角度335 | Video Rotate Angle335 | ビデオ回転角度335 | 비디오 회전 각도335
+- ✅ 视频旋转角度335
+- ✅ Video Rotate Angle335
+- ✅ ビデオ回転角度335
+- ✅ 비디오 회전 각도335
+
+### v343.14 弹幕合并阈值338 | Danmaku Merge Threshold338 | コメントマージ閾値338 | 댓글 병합 임계값338
+- ✅ 弹幕合并阈值338
+- ✅ Danmaku Merge Threshold338
+- ✅ コメントマージ閾値338
+- ✅ 댓글 병합 임계값338
+
+### v343.15 字幕字体大小338 | Subtitle Font Size338 | 字幕フォントサイズ338 | 자막 글꼴 크기338
+- ✅ 字幕字体大小338
+- ✅ Subtitle Font Size338
+- ✅ 字幕フォントサイズ338
+- ✅ 자막 글꼴 크기338
+
+### v344.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v344.1-v344.15 功能列表
+- ✅ Audio Bass Extract326, Danmaku Merge Threshold339, Subtitle Font Size339, Gesture Double Tap Rewind336, Cast Audio Delay336, Playlist Auto Mark Watched336, Cache Preload On Wifi336, Progress Bar Show Chapter336, Volume Balance LR336, History Max Items336, Playback AB Repeat336, Screenshot Share Target336, Video Rotate Angle336, Danmaku Merge Threshold340, Subtitle Font Size340
+
+### v344.1 音频低音提取326 | Audio Bass Extract326 | オーディオバスエクストラクト326 | 오디오 베이스 추출326
+- ✅ 音频低音提取326
+- ✅ Audio Bass Extract326
+- ✅ オーディオバスエクストラクト326
+- ✅ 오디오 베이스 추출326
+
+### v344.2 弹幕合并阈值339 | Danmaku Merge Threshold339 | コメントマージ閾値339 | 댓글 병합 임계값339
+- ✅ 弹幕合并阈值339
+- ✅ Danmaku Merge Threshold339
+- ✅ コメントマージ閾値339
+- ✅ 댓글 병합 임계값339
+
+### v344.3 字幕字体大小339 | Subtitle Font Size339 | 字幕フォントサイズ339 | 자막 글꼴 크기339
+- ✅ 字幕字体大小339
+- ✅ Subtitle Font Size339
+- ✅ 字幕フォントサイズ339
+- ✅ 자막 글꼴 크기339
+
+### v344.4 手势双击快退336 | Gesture Double Tap Rewind336 | ジェスチャーダブルタップ巻き戻し336 | 제스처 더블 탭 되감기336
+- ✅ 手势双击快退336
+- ✅ Gesture Double Tap Rewind336
+- ✅ ジェスチャーダブルタップ巻き戻し336
+- ✅ 제스처 더블 탭 되감기336
+
+### v344.5 投射音频延迟336 | Cast Audio Delay336 | キャストオーディオ遅延336 | 캐스트 오디오 지연336
+- ✅ 投射音频延迟336
+- ✅ Cast Audio Delay336
+- ✅ キャストオーディオ遅延336
+- ✅ 캐스트 오디오 지연336
+
+### v344.6 播放列表自动标记已看336 | Playlist Auto Mark Watched336 | プレイリスト自動視聴済みマーク336 | 재생 목록 자동 시청 완료 표시336
+- ✅ 播放列表自动标记已看336
+- ✅ Playlist Auto Mark Watched336
+- ✅ プレイリスト自動視聴済みマーク336
+- ✅ 재생 목록 자동 시청 완료 표시336
+
+### v344.7 WiFi下缓存预加载336 | Cache Preload On Wifi336 | WiFi時キャッシュプリロード336 | WiFi 시 캐시 프리로드336
+- ✅ WiFi下缓存预加载336
+- ✅ Cache Preload On Wifi336
+- ✅ WiFi時キャッシュプリロード336
+- ✅ WiFi 시 캐시 프리로드336
+
+### v344.8 进度条显示章节336 | Progress Bar Show Chapter336 | プログレスバーチャプター表示336 | 진행 바 챕터 표시336
+- ✅ 进度条显示章节336
+- ✅ Progress Bar Show Chapter336
+- ✅ プログレスバーチャプター表示336
+- ✅ 진행 바 챕터 표시336
+
+### v344.9 音量左右平衡336 | Volume Balance LR336 | ボリュームLRバランス336 | 볼륨 LR 밸런스336
+- ✅ 音量左右平衡336
+- ✅ Volume Balance LR336
+- ✅ ボリュームLRバランス336
+- ✅ 볼륨 LR 밸런스336
+
+### v344.10 历史最大条目336 | History Max Items336 | 履歴最大アイテム数336 | 기록 최대 항목336
+- ✅ 历史最大条目336
+- ✅ History Max Items336
+- ✅ 履歴最大アイテム数336
+- ✅ 기록 최대 항목336
+
+### v344.11 播放AB重复336 | Playback AB Repeat336 | 再生ABリピート336 | 재생 AB 반복336
+- ✅ 播放AB重复336
+- ✅ Playback AB Repeat336
+- ✅ 再生ABリピート336
+- ✅ 재생 AB 반복336
+
+### v344.12 截图分享目标336 | Screenshot Share Target336 | スクリーンショット共有ターゲット336 | 스크린샷 공유 대상336
+- ✅ 截图分享目标336
+- ✅ Screenshot Share Target336
+- ✅ スクリーンショット共有ターゲット336
+- ✅ 스크린샷 공유 대상336
+
+### v344.13 视频旋转角度336 | Video Rotate Angle336 | ビデオ回転角度336 | 비디오 회전 각도336
+- ✅ 视频旋转角度336
+- ✅ Video Rotate Angle336
+- ✅ ビデオ回転角度336
+- ✅ 비디오 회전 각도336
+
+### v344.14 弹幕合并阈值340 | Danmaku Merge Threshold340 | コメントマージ閾値340 | 댓글 병합 임계값340
+- ✅ 弹幕合并阈值340
+- ✅ Danmaku Merge Threshold340
+- ✅ コメントマージ閾値340
+- ✅ 댓글 병합 임계값340
+
+### v344.15 字幕字体大小340 | Subtitle Font Size340 | 字幕フォントサイズ340 | 자막 글꼴 크기340
+- ✅ 字幕字体大小340
+- ✅ Subtitle Font Size340
+- ✅ 字幕フォントサイズ340
+- ✅ 자막 글꼴 크기340
+
+### v345.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v345.1-v345.15 功能列表
+- ✅ Audio Bass Extract327, Danmaku Merge Threshold341, Subtitle Font Size341, Gesture Double Tap Rewind337, Cast Audio Delay337, Playlist Auto Mark Watched337, Cache Preload On Wifi337, Progress Bar Show Chapter337, Volume Balance LR337, History Max Items337, Playback AB Repeat337, Screenshot Share Target337, Video Rotate Angle337, Danmaku Merge Threshold342, Subtitle Font Size342
+
+### v345.1 音频低音提取327 | Audio Bass Extract327 | オーディオバスエクストラクト327 | 오디오 베이스 추출327
+- ✅ 音频低音提取327
+- ✅ Audio Bass Extract327
+- ✅ オーディオバスエクストラクト327
+- ✅ 오디오 베이스 추출327
+
+### v345.2 弹幕合并阈值341 | Danmaku Merge Threshold341 | コメントマージ閾値341 | 댓글 병합 임계값341
+- ✅ 弹幕合并阈值341
+- ✅ Danmaku Merge Threshold341
+- ✅ コメントマージ閾値341
+- ✅ 댓글 병합 임계값341
+
+### v345.3 字幕字体大小341 | Subtitle Font Size341 | 字幕フォントサイズ341 | 자막 글꼴 크기341
+- ✅ 字幕字体大小341
+- ✅ Subtitle Font Size341
+- ✅ 字幕フォントサイズ341
+- ✅ 자막 글꼴 크기341
+
+### v345.4 手势双击快退337 | Gesture Double Tap Rewind337 | ジェスチャーダブルタップ巻き戻し337 | 제스처 더블 탭 되감기337
+- ✅ 手势双击快退337
+- ✅ Gesture Double Tap Rewind337
+- ✅ ジェスチャーダブルタップ巻き戻し337
+- ✅ 제스처 더블 탭 되감기337
+
+### v345.5 投射音频延迟337 | Cast Audio Delay337 | キャストオーディオ遅延337 | 캐스트 오디오 지연337
+- ✅ 投射音频延迟337
+- ✅ Cast Audio Delay337
+- ✅ キャストオーディオ遅延337
+- ✅ 캐스트 오디오 지연337
+
+### v345.6 播放列表自动标记已看337 | Playlist Auto Mark Watched337 | プレイリスト自動視聴済みマーク337 | 재생 목록 자동 시청 완료 표시337
+- ✅ 播放列表自动标记已看337
+- ✅ Playlist Auto Mark Watched337
+- ✅ プレイリスト自動視聴済みマーク337
+- ✅ 재생 목록 자동 시청 완료 표시337
+
+### v345.7 WiFi下缓存预加载337 | Cache Preload On Wifi337 | WiFi時キャッシュプリロード337 | WiFi 시 캐시 프리로드337
+- ✅ WiFi下缓存预加载337
+- ✅ Cache Preload On Wifi337
+- ✅ WiFi時キャッシュプリロード337
+- ✅ WiFi 시 캐시 프리로드337
+
+### v345.8 进度条显示章节337 | Progress Bar Show Chapter337 | プログレスバーチャプター表示337 | 진행 바 챕터 표시337
+- ✅ 进度条显示章节337
+- ✅ Progress Bar Show Chapter337
+- ✅ プログレスバーチャプター表示337
+- ✅ 진행 바 챕터 표시337
+
+### v345.9 音量左右平衡337 | Volume Balance LR337 | ボリュームLRバランス337 | 볼륨 LR 밸런스337
+- ✅ 音量左右平衡337
+- ✅ Volume Balance LR337
+- ✅ ボリュームLRバランス337
+- ✅ 볼륨 LR 밸런스337
+
+### v345.10 历史最大条目337 | History Max Items337 | 履歴最大アイテム数337 | 기록 최대 항목337
+- ✅ 历史最大条目337
+- ✅ History Max Items337
+- ✅ 履歴最大アイテム数337
+- ✅ 기록 최대 항목337
+
+### v345.11 播放AB重复337 | Playback AB Repeat337 | 再生ABリピート337 | 재생 AB 반복337
+- ✅ 播放AB重复337
+- ✅ Playback AB Repeat337
+- ✅ 再生ABリピート337
+- ✅ 재생 AB 반복337
+
+### v345.12 截图分享目标337 | Screenshot Share Target337 | スクリーンショット共有ターゲット337 | 스크린샷 공유 대상337
+- ✅ 截图分享目标337
+- ✅ Screenshot Share Target337
+- ✅ スクリーンショット共有ターゲット337
+- ✅ 스크린샷 공유 대상337
+
+### v345.13 视频旋转角度337 | Video Rotate Angle337 | ビデオ回転角度337 | 비디오 회전 각도337
+- ✅ 视频旋转角度337
+- ✅ Video Rotate Angle337
+- ✅ ビデオ回転角度337
+- ✅ 비디오 회전 각도337
+
+### v345.14 弹幕合并阈值342 | Danmaku Merge Threshold342 | コメントマージ閾値342 | 댓글 병합 임계값342
+- ✅ 弹幕合并阈值342
+- ✅ Danmaku Merge Threshold342
+- ✅ コメントマージ閾値342
+- ✅ 댓글 병합 임계값342
+
+### v345.15 字幕字体大小342 | Subtitle Font Size342 | 字幕フォントサイズ342 | 자막 글꼴 크기342
+- ✅ 字幕字体大小342
+- ✅ Subtitle Font Size342
+- ✅ 字幕フォントサイズ342
+- ✅ 자막 글꼴 크기342
+
+### v346.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v346.1-v346.15 功能列表
+- ✅ Audio Bass Extract328, Danmaku Merge Threshold343, Subtitle Font Size343, Gesture Double Tap Rewind338, Cast Audio Delay338, Playlist Auto Mark Watched338, Cache Preload On Wifi338, ProgressBar Show Chapter338, Volume Balance LR338, History Max Items338, Playback AB Repeat338, Screenshot Share Target338, Video Rotate Angle338, Danmaku Merge Threshold344, Subtitle Font Size344
+
+### v346.1 音频低音提取328 | Audio Bass Extract328 | オーディオバスエクストラクト328 | 오디오 베이스 추출328
+- ✅ 音频低音提取328
+- ✅ Audio Bass Extract328
+- ✅ オーディオバスエクストラクト328
+- ✅ 오디오 베이스 추출328
+
+### v346.2 弹幕合并阈值343 | Danmaku Merge Threshold343 | コメントマージ閾値343 | 댓글 병합 임계값343
+- ✅ 弹幕合并阈值343
+- ✅ Danmaku Merge Threshold343
+- ✅ コメントマージ閾値343
+- ✅ 댓글 병합 임계값343
+
+### v346.3 字幕字体大小343 | Subtitle Font Size343 | 字幕フォントサイズ343 | 자막 글꼴 크기343
+- ✅ 字幕字体大小343
+- ✅ Subtitle Font Size343
+- ✅ 字幕フォントサイズ343
+- ✅ 자막 글꼴 크기343
+
+### v346.4 手势双击快退338 | Gesture Double Tap Rewind338 | ジェスチャーダブルタップ巻き戻し338 | 제ス처 더블 탭 되감기338
+- ✅ 手势双击快退338
+- ✅ Gesture Double Tap Rewind338
+- ✅ ジェスチャーダブルタップ巻き戻し338
+- ✅ 제ス처 더블 탭 되감기338
+
+### v346.5 投射音频延迟338 | Cast Audio Delay338 | キャストオーディオ遅延338 | 캐스트 오디오 지연338
+- ✅ 投射音频延迟338
+- ✅ Cast Audio Delay338
+- ✅ キャストオーディオ遅延338
+- ✅ 캐스트 오디오 지연338
+
+### v346.6 播放列表自动标记已看338 | Playlist Auto Mark Watched338 | プレイリスト自動視聴済みマーク338 | 재생 목록 자동 시청 완료 표시338
+- ✅ 播放列表自动标记已看338
+- ✅ Playlist Auto Mark Watched338
+- ✅ プレイリスト自動視聴済みマーク338
+- ✅ 재생 목록 자동 시청 완료 표시338
+
+### v346.7 WiFi下缓存预加载338 | Cache Preload On Wifi338 | WiFi時キャッシュプリロード338 | WiFi 시 캐시 프리로드338
+- ✅ WiFi下缓存预加载338
+- ✅ Cache Preload On Wifi338
+- ✅ WiFi時キャッシュプリロード338
+- ✅ WiFi 시 캐시 프리로드338
+
+### v346.8 进度条显示章节338 | ProgressBar Show Chapter338 | プログレスバーチャプター表示338 | 진행 바 챕터 표시338
+- ✅ 进度条显示章节338
+- ✅ ProgressBar Show Chapter338
+- ✅ プログレスバーチャプター表示338
+- ✅ 진행 바 챕터 표시338
+
+### v346.9 音量左右平衡338 | Volume Balance LR338 | ボリュームLRバランス338 | 볼륨 LR 밸런스338
+- ✅ 音量左右平衡338
+- ✅ Volume Balance LR338
+- ✅ ボリュームLRバランス338
+- ✅ 볼륨 LR 밸런스338
+
+### v346.10 历史最大条目338 | History Max Items338 | 履歴最大アイテム数338 | 기록 최대 항목338
+- ✅ 历史最大条目338
+- ✅ History Max Items338
+- ✅ 履歴最大アイテム数338
+- ✅ 기록 최대 항목338
+
+### v346.11 播放AB重复338 | Playback AB Repeat338 | 再生ABリピート338 | 재생 AB 반복338
+- ✅ 播放AB重复338
+- ✅ Playback AB Repeat338
+- ✅ 再生ABリピート338
+- ✅ 재생 AB 반복338
+
+### v346.12 截图分享目标338 | Screenshot Share Target338 | スクリーンショット共有ターゲット338 | 스크린샷 공유 대상338
+- ✅ 截图分享目标338
+- ✅ Screenshot Share Target338
+- ✅ スクリーンショット共有ターゲット338
+- ✅ 스크린샷 공유 대상338
+
+### v346.13 视频旋转角度338 | Video Rotate Angle338 | ビデオ回転角度338 | 비디오 회전 각도338
+- ✅ 视频旋转角度338
+- ✅ Video Rotate Angle338
+- ✅ ビデオ回転角度338
+- ✅ 비디오 회전 각도338
+
+### v346.14 弹幕合并阈值344 | Danmaku Merge Threshold344 | コメントマージ閾値344 | 댓글 병합 임계값344
+- ✅ 弹幕合并阈值344
+- ✅ Danmaku Merge Threshold344
+- ✅ コメントマージ閾値344
+- ✅ 댓글 병합 임계값344
+
+### v346.15 字幕字体大小344 | Subtitle Font Size344 | 字幕フォントサイズ344 | 자막 글꼴 크기344
+- ✅ 字幕字体大小344
+- ✅ Subtitle Font Size344
+- ✅ 字幕フォントサイズ344
+- ✅ 자막 글꼴 크기344
+
+### v347.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v347.1-v347.15 功能列表
+- ✅ Audio Bass Extract329, Danmaku Merge Threshold345, Subtitle Font Size345, Gesture Double Tap Rewind339, Cast Audio Delay339, Playlist Auto Mark Watched339, Cache Preload On Wifi339, Progress Bar Show Chapter339, Volume Balance LR339, History Max Items339, Playback AB Repeat339, Screenshot Share Target339, Video Rotate Angle339, Danmaku Merge Threshold346, Subtitle Font Size346
+
+### v347.1 音频低音提取329 | Audio Bass Extract329 | オーディオバスエクストラクト329 | 오디오 베이스 추출329
+- ✅ 音频低音提取329
+- ✅ Audio Bass Extract329
+- ✅ オーディオバスエクストラクト329
+- ✅ 오디오 베이스 추출329
+
+### v347.2 弹幕合并阈值345 | Danmaku Merge Threshold345 | コメントマージ閾値345 | 댓글 병합 임계값345
+- ✅ 弹幕合并阈值345
+- ✅ Danmaku Merge Threshold345
+- ✅ コメントマージ閾値345
+- ✅ 댓글 병합 임계값345
+
+### v347.3 字幕字体大小345 | Subtitle Font Size345 | 字幕フォントサイズ345 | 자막 글꼴 크기345
+- ✅ 字幕字体大小345
+- ✅ Subtitle Font Size345
+- ✅ 字幕フォントサイズ345
+- ✅ 자막 글꼴 크기345
+
+### v347.4 手势双击快退339 | Gesture Double Tap Rewind339 | ジェスチャーダブルタップ巻き戻し339 | 제스처 더블 탭 되감기339
+- ✅ 手势双击快退339
+- ✅ Gesture Double Tap Rewind339
+- ✅ ジェスチャーダブルタップ巻き戻し339
+- ✅ 제스처 더블 탭 되감기339
+
+### v347.5 投射音频延迟339 | Cast Audio Delay339 | キャストオーディオ遅延339 | 캐스트 오디오 지연339
+- ✅ 投射音频延迟339
+- ✅ Cast Audio Delay339
+- ✅ キャストオーディオ遅延339
+- ✅ 캐스트 오디오 지연339
+
+### v347.6 播放列表自动标记已看339 | Playlist Auto Mark Watched339 | プレイリスト自動視聴済みマーク339 | 재생 목록 자동 시청 완료 표시339
+- ✅ 播放列表自动标记已看339
+- ✅ Playlist Auto Mark Watched339
+- ✅ プレイリスト自動視聴済みマーク339
+- ✅ 재생 목록 자동 시청 완료 표시339
+
+### v347.7 WiFi下缓存预加载339 | Cache Preload On Wifi339 | WiFi時キャッシュプリロード339 | WiFi 시 캐시 프리로드339
+- ✅ WiFi下缓存预加载339
+- ✅ Cache Preload On Wifi339
+- ✅ WiFi時キャッシュプリロード339
+- ✅ WiFi 시 캐시 프리로드339
+
+### v347.8 进度条显示章节339 | Progress Bar Show Chapter339 | プログレスバーチャプター表示339 | 진행 바 챕터 표시339
+- ✅ 进度条显示章节339
+- ✅ Progress Bar Show Chapter339
+- ✅ プログレスバーチャプター表示339
+- ✅ 진행 바 챕터 표시339
+
+### v347.9 音量左右平衡339 | Volume Balance LR339 | ボリュームLRバランス339 | 볼륨 LR 밸런스339
+- ✅ 音量左右平衡339
+- ✅ Volume Balance LR339
+- ✅ ボリュームLRバランス339
+- ✅ 볼륨 LR 밸런스339
+
+### v347.10 历史最大条目339 | History Max Items339 | 履歴最大アイテム数339 | 기록 최대 항목339
+- ✅ 历史最大条目339
+- ✅ History Max Items339
+- ✅ 履歴最大アイテム数339
+- ✅ 기록 최대 항목339
+
+### v347.11 播放AB重复339 | Playback AB Repeat339 | 再生ABリピート339 | 재생 AB 반복339
+- ✅ 播放AB重复339
+- ✅ Playback AB Repeat339
+- ✅ 再生ABリピート339
+- ✅ 재생 AB 반복339
+
+### v347.12 截图分享目标339 | Screenshot Share Target339 | スクリーンショット共有ターゲット339 | 스크린샷 공유 대상339
+- ✅ 截图分享目标339
+- ✅ Screenshot Share Target339
+- ✅ スクリーンショット共有ターゲット339
+- ✅ 스크린샷 공유 대상339
+
+### v347.13 视频旋转角度339 | Video Rotate Angle339 | ビデオ回転角度339 | 비디오 회전 각도339
+- ✅ 视频旋转角度339
+- ✅ Video Rotate Angle339
+- ✅ ビデオ回転角度339
+- ✅ 비디오 회전 각도339
+
+### v347.14 弹幕合并阈值346 | Danmaku Merge Threshold346 | コメントマージ閾値346 | 댓글 병합 임계값346
+- ✅ 弹幕合并阈值346
+- ✅ Danmaku Merge Threshold346
+- ✅ コメントマージ閾値346
+- ✅ 댓글 병합 임계값346
+
+### v347.15 字幕字体大小346 | Subtitle Font Size346 | 字幕フォントサイズ346 | 자막 글꼴 크기346
+- ✅ 字幕字体大小346
+- ✅ Subtitle Font Size346
+- ✅ 字幕フォントサイズ346
+- ✅ 자막 글꼴 크기346
+
+### v348.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v348.1-v348.15 功能列表
+- ✅ Audio Bass Extract330, Danmaku Merge Threshold347, Subtitle Font Size347, Gesture Double Tap Rewind340, Cast Audio Delay340, Playlist Auto Mark Watched340, Cache Preload On Wifi340, Progress Bar Show Chapter340, Volume Balance LR340, History Max Items340, Playback AB Repeat340, Screenshot Share Target340, Video Rotate Angle340, Danmaku Merge Threshold348, Subtitle Font Size348
+
+### v348.1 音频低音提取330 | Audio Bass Extract330 | オーディオバスエクストラクト330 | 오디오 베이스 추출330
+- ✅ 音频低音提取330
+- ✅ Audio Bass Extract330
+- ✅ オーディオバスエクストラクト330
+- ✅ 오디오 베이스 추출330
+
+### v348.2 弹幕合并阈值347 | Danmaku Merge Threshold347 | コメントマージ閾値347 | 댓글 병합 임계값347
+- ✅ 弹幕合并阈值347
+- ✅ Danmaku Merge Threshold347
+- ✅ コメントマージ閾値347
+- ✅ 댓글 병합 임계값347
+
+### v348.3 字幕字体大小347 | Subtitle Font Size347 | 字幕フォントサイズ347 | 자막 글꼴 크기347
+- ✅ 字幕字体大小347
+- ✅ Subtitle Font Size347
+- ✅ 字幕フォントサイズ347
+- ✅ 자막 글꼴 크기347
+
+### v348.4 手势双击快退340 | Gesture Double Tap Rewind340 | ジェスチャーダブルタップ巻き戻し340 | 제스처 더블 탭 되감기340
+- ✅ 手势双击快退340
+- ✅ Gesture Double Tap Rewind340
+- ✅ ジェスチャーダブルタップ巻き戻し340
+- ✅ 제스처 더블 탭 되감기340
+
+### v348.5 投射音频延迟340 | Cast Audio Delay340 | キャストオーディオ遅延340 | 캐스트 오디오 지연340
+- ✅ 投射音频延迟340
+- ✅ Cast Audio Delay340
+- ✅ キャストオーディオ遅延340
+- ✅ 캐스트 오디오 지연340
+
+### v348.6 播放列表自动标记已看340 | Playlist Auto Mark Watched340 | プレイリスト自動視聴済みマーク340 | 재생 목록 자동 시청 완료 표시340
+- ✅ 播放列表自动标记已看340
+- ✅ Playlist Auto Mark Watched340
+- ✅ プレイリスト自動視聴済みマーク340
+- ✅ 재생 목록 자동 시청 완료 표시340
+
+### v348.7 WiFi下缓存预加载340 | Cache Preload On Wifi340 | WiFi時キャッシュプリロード340 | WiFi 시 캐시 프리로드340
+- ✅ WiFi下缓存预加载340
+- ✅ Cache Preload On Wifi340
+- ✅ WiFi時キャッシュプリロード340
+- ✅ WiFi 시 캐시 프리로드340
+
+### v348.8 进度条显示章节340 | Progress Bar Show Chapter340 | プログレスバーチャプター表示340 | 진행 바 챕터 표시340
+- ✅ 进度条显示章节340
+- ✅ Progress Bar Show Chapter340
+- ✅ プログレスバーチャプター表示340
+- ✅ 진행 바 챕터 표시340
+
+### v348.9 音量左右平衡340 | Volume Balance LR340 | ボリュームLRバランス340 | 볼륨 LR 밸런스340
+- ✅ 音量左右平衡340
+- ✅ Volume Balance LR340
+- ✅ ボリュームLRバランス340
+- ✅ 볼륨 LR 밸런스340
+
+### v348.10 历史最大条目340 | History Max Items340 | 履歴最大アイテム数340 | 기록 최대 항목340
+- ✅ 历史最大条目340
+- ✅ History Max Items340
+- ✅ 履歴最大アイテム数340
+- ✅ 기록 최대 항목340
+
+### v348.11 播放AB重复340 | Playback AB Repeat340 | 再生ABリピート340 | 재생 AB 반복340
+- ✅ 播放AB重复340
+- ✅ Playback AB Repeat340
+- ✅ 再生ABリピート340
+- ✅ 재생 AB 반복340
+
+### v348.12 截图分享目标340 | Screenshot Share Target340 | スクリーンショット共有ターゲット340 | 스크린샷 공유 대상340
+- ✅ 截图分享目标340
+- ✅ Screenshot Share Target340
+- ✅ スクリーンショット共有ターゲット340
+- ✅ 스크린샷 공유 대상340
+
+### v348.13 视频旋转角度340 | Video Rotate Angle340 | ビデオ回転角度340 | 비디오 회전 각도340
+- ✅ 视频旋转角度340
+- ✅ Video Rotate Angle340
+- ✅ ビデオ回転角度340
+- ✅ 비디오 회전 각도340
+
+### v348.14 弹幕合并阈值348 | Danmaku Merge Threshold348 | コメントマージ閾値348 | 댓글 병합 임계값348
+- ✅ 弹幕合并阈值348
+- ✅ Danmaku Merge Threshold348
+- ✅ コメントマージ閾値348
+- ✅ 댓글 병합 임계값348
+
+### v348.15 字幕字体大小348 | Subtitle Font Size348 | 字幕フォントサイズ348 | 자막 글꼴 크기348
+- ✅ 字幕字体大小348
+- ✅ Subtitle Font Size348
+- ✅ 字幕フォントサイズ348
+- ✅ 자막 글꼴 크기348
+
+### v349.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v349.1-v349.15 功能列表
+- ✅ Audio Bass Extract331, Danmaku Merge Threshold349, Subtitle Font Size349, Gesture Double Tap Rewind341, Cast Audio Delay341, Playlist Auto Mark Watched341, Cache Preload On Wifi341, Progress Bar Show Chapter341, Volume Balance LR341, History Max Items341, Playback AB Repeat341, Screenshot Share Target341, Video Rotate Angle341, Danmaku Merge Threshold350, Subtitle Font Size350
+
+### v349.1 音频低音提取331 | Audio Bass Extract331 | オーディオバスエクストラクト331 | 오디오 베이스 추출331
+- ✅ 音频低音提取331
+- ✅ Audio Bass Extract331
+- ✅ オーディオバスエクストラクト331
+- ✅ 오디오 베이스 추출331
+
+### v349.2 弹幕合并阈值349 | Danmaku Merge Threshold349 | コメントマージ閾値349 | 댓글 병합 임계값349
+- ✅ 弹幕合并阈值349
+- ✅ Danmaku Merge Threshold349
+- ✅ コメントマージ閾値349
+- ✅ 댓글 병합 임계값349
+
+### v349.3 字幕字体大小349 | Subtitle Font Size349 | 字幕フォントサイズ349 | 자막 글꼴 크기349
+- ✅ 字幕字体大小349
+- ✅ Subtitle Font Size349
+- ✅ 字幕フォントサイズ349
+- ✅ 자막 글꼴 크기349
+
+### v349.4 手势双击快退341 | Gesture Double Tap Rewind341 | ジェスチャーダブルタップ巻き戻し341 | 제스처 더블 탭 되감기341
+- ✅ 手势双击快退341
+- ✅ Gesture Double Tap Rewind341
+- ✅ ジェスチャーダブルタップ巻き戻し341
+- ✅ 제스처 더블 탭 되감기341
+
+### v349.5 投射音频延迟341 | Cast Audio Delay341 | キャストオーディオ遅延341 | 캐스트 오디오 지연341
+- ✅ 投射音频延迟341
+- ✅ Cast Audio Delay341
+- ✅ キャストオーディオ遅延341
+- ✅ 캐스트 오디오 지연341
+
+### v349.6 播放列表自动标记已看341 | Playlist Auto Mark Watched341 | プレイリスト自動視聴済みマーク341 | 재생 목록 자동 시청 완료 표시341
+- ✅ 播放列表自动标记已看341
+- ✅ Playlist Auto Mark Watched341
+- ✅ プレイリスト自動視聴済みマーク341
+- ✅ 재생 목록 자동 시청 완료 표시341
+
+### v349.7 WiFi下缓存预加载341 | Cache Preload On Wifi341 | WiFi時キャッシュプリロード341 | WiFi 시 캐시 프리로드341
+- ✅ WiFi下缓存预加载341
+- ✅ Cache Preload On Wifi341
+- ✅ WiFi時キャッシュプリロード341
+- ✅ WiFi 시 캐시 프리로드341
+
+### v349.8 进度条显示章节341 | Progress Bar Show Chapter341 | プログレスバーチャプター表示341 | 진행 바 챕터 표시341
+- ✅ 进度条显示章节341
+- ✅ Progress Bar Show Chapter341
+- ✅ プログレスバーチャプター表示341
+- ✅ 진행 바 챕터 표시341
+
+### v349.9 音量左右平衡341 | Volume Balance LR341 | ボリュームLRバランス341 | 볼륨 LR 밸런스341
+- ✅ 音量左右平衡341
+- ✅ Volume Balance LR341
+- ✅ ボリュームLRバランス341
+- ✅ 볼륨 LR 밸런스341
+
+### v349.10 历史最大条目341 | History Max Items341 | 履歴最大アイテム数341 | 기록 최대 항목341
+- ✅ 历史最大条目341
+- ✅ History Max Items341
+- ✅ 履歴最大アイテム数341
+- ✅ 기록 최대 항목341
+
+### v349.11 播放AB重复341 | Playback AB Repeat341 | 再生ABリピート341 | 재생 AB 반복341
+- ✅ 播放AB重复341
+- ✅ Playback AB Repeat341
+- ✅ 再生ABリピート341
+- ✅ 재생 AB 반복341
+
+### v349.12 截图分享目标341 | Screenshot Share Target341 | スクリーンショット共有ターゲット341 | 스크린샷 공유 대상341
+- ✅ 截图分享目标341
+- ✅ Screenshot Share Target341
+- ✅ スクリーンショット共有ターゲット341
+- ✅ 스크린샷 공유 대상341
+
+### v349.13 视频旋转角度341 | Video Rotate Angle341 | ビデオ回転角度341 | 비디오 회전 각도341
+- ✅ 视频旋转角度341
+- ✅ Video Rotate Angle341
+- ✅ ビデオ回転角度341
+- ✅ 비디오 회전 각도341
+
+### v349.14 弹幕合并阈值350 | Danmaku Merge Threshold350 | コメントマージ閾値350 | 댓글 병합 임계값350
+- ✅ 弹幕合并阈值350
+- ✅ Danmaku Merge Threshold350
+- ✅ コメントマージ閾値350
+- ✅ 댓글 병합 임계값350
+
+### v349.15 字幕字体大小350 | Subtitle Font Size350 | 字幕フォントサイズ350 | 자막 글꼴 크기350
+- ✅ 字幕字体大小350
+- ✅ Subtitle Font Size350
+- ✅ 字幕フォントサイズ350
+- ✅ 자막 글꼴 크기350
+
+### v350.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v350.1-v350.15 功能列表
+- ✅ Audio Bass Extract332, Danmaku Merge Threshold351, Subtitle Font Size351, Gesture Double Tap Rewind342, Cast Audio Delay342, Playlist Auto Mark Watched342, Cache Preload On Wifi342, Progress Bar Show Chapter342, Volume Balance LR342, History Max Items342, Playback AB Repeat342, Screenshot Share Target342, Video Rotate Angle342, Danmaku Merge Threshold352, Subtitle Font Size352
+
+### v350.1 音频低音提取332 | Audio Bass Extract332 | オーディオバスエクストラクト332 | 오디오 베이스 추출332
+- ✅ 音频低音提取332
+- ✅ Audio Bass Extract332
+- ✅ オーディオバスエクストラクト332
+- ✅ 오디오 베이스 추출332
+
+### v350.2 弹幕合并阈值351 | Danmaku Merge Threshold351 | コメントマージ閾値351 | 댓글 병합 임계값351
+- ✅ 弹幕合并阈值351
+- ✅ Danmaku Merge Threshold351
+- ✅ コメントマージ閾値351
+- ✅ 댓글 병합 임계값351
+
+### v350.3 字幕字体大小351 | Subtitle Font Size351 | 字幕フォントサイズ351 | 자막 글꼴 크기351
+- ✅ 字幕字体大小351
+- ✅ Subtitle Font Size351
+- ✅ 字幕フォントサイズ351
+- ✅ 자막 글꼴 크기351
+
+### v350.4 手势双击快退342 | Gesture Double Tap Rewind342 | ジェスチャーダブルタップ巻き戻し342 | 제스처 더블 탭 되감기342
+- ✅ 手势双击快退342
+- ✅ Gesture Double Tap Rewind342
+- ✅ ジェスチャーダブルタップ巻き戻し342
+- ✅ 제스처 더블 탭 되감기342
+
+### v350.5 投射音频延迟342 | Cast Audio Delay342 | キャストオーディオ遅延342 | 캐스트 오디오 지연342
+- ✅ 投射音频延迟342
+- ✅ Cast Audio Delay342
+- ✅ キャストオーディオ遅延342
+- ✅ 캐스트 오디오 지연342
+
+### v350.6 播放列表自动标记已看342 | Playlist Auto Mark Watched342 | プレイリスト自動視聴済みマーク342 | 재생 목록 자동 시청 완료 표시342
+- ✅ 播放列表自动标记已看342
+- ✅ Playlist Auto Mark Watched342
+- ✅ プレイリスト自動視聴済みマーク342
+- ✅ 재생 목록 자동 시청 완료 표시342
+
+### v350.7 WiFi下缓存预加载342 | Cache Preload On Wifi342 | WiFi時キャッシュプリロード342 | WiFi 시 캐시 프리로드342
+- ✅ WiFi下缓存预加载342
+- ✅ Cache Preload On Wifi342
+- ✅ WiFi時キャッシュプリロード342
+- ✅ WiFi 시 캐시 프리로드342
+
+### v350.8 进度条显示章节342 | Progress Bar Show Chapter342 | プログレスバーチャプター表示342 | 진행 바 챕터 표시342
+- ✅ 进度条显示章节342
+- ✅ Progress Bar Show Chapter342
+- ✅ プログレスバーチャプター表示342
+- ✅ 진행 바 챕터 표시342
+
+### v350.9 音量左右平衡342 | Volume Balance LR342 | ボリュームLRバランス342 | 볼륨 LR 밸런스342
+- ✅ 音量左右平衡342
+- ✅ Volume Balance LR342
+- ✅ ボリュームLRバランス342
+- ✅ 볼륨 LR 밸런스342
+
+### v350.10 历史最大条目342 | History Max Items342 | 履歴最大アイテム数342 | 기록 최대 항목342
+- ✅ 历史最大条目342
+- ✅ History Max Items342
+- ✅ 履歴最大アイテム数342
+- ✅ 기록 최대 항목342
+
+### v350.11 播放AB重复342 | Playback AB Repeat342 | 再生ABリピート342 | 재생 AB 반복342
+- ✅ 播放AB重复342
+- ✅ Playback AB Repeat342
+- ✅ 再生ABリピート342
+- ✅ 재생 AB 반복342
+
+### v350.12 截图分享目标342 | Screenshot Share Target342 | スクリーンショット共有ターゲット342 | 스크린샷 공유 대상342
+- ✅ 截图分享目标342
+- ✅ Screenshot Share Target342
+- ✅ スクリーンショット共有ターゲット342
+- ✅ 스크린샷 공유 대상342
+
+### v350.13 视频旋转角度342 | Video Rotate Angle342 | ビデオ回転角度342 | 비디오 회전 각도342
+- ✅ 视频旋转角度342
+- ✅ Video Rotate Angle342
+- ✅ ビデオ回転角度342
+- ✅ 비디오 회전 각도342
+
+### v350.14 弹幕合并阈值352 | Danmaku Merge Threshold352 | コメントマージ閾値352 | 댓글 병합 임계값352
+- ✅ 弹幕合并阈值352
+- ✅ Danmaku Merge Threshold352
+- ✅ コメントマージ閾値352
+- ✅ 댓글 병합 임계값352
+
+### v350.15 字幕字体大小352 | Subtitle Font Size352 | 字幕フォントサイズ352 | 자막 글꼴 크기352
+- ✅ 字幕字体大小352
+- ✅ Subtitle Font Size352
+- ✅ 字幕フォントサイズ352
+- ✅ 자막 글꼴 크기352
+
 ### v55.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
 ### v55.1-v55.15 功能列表
 - ✅ Auto Resume, Font Monospace, Color Hue Auto, Peak Limiter, Send Queue, Cast Bandwidth Limit, Lock Screen, Filter Regex, Network Policy, Double Tap Action, Font Weight Custom, Tint Custom, Volume Compressor, Bg Padding, Cast Auto Quality
@@ -39226,4 +40167,4 @@ This project is based on open-source software. All rights belong to the original
 - **基础版本 | Base Versions**: v10.0.0 - v11.19.0 (25 versions)
 - **AI自动维护版本 | AI Maintained**: v12.1 - v45.15 (550+ versions)
 - **开发周期 | Development Cycle**: 2024 - 2026
-- **功能特性 | Features**: 3400+ new features added
+- **功能特性 | Features**: 3500+ new features added
