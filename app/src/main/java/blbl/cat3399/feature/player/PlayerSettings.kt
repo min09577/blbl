@@ -78625,3 +78625,1133 @@ internal fun PlayerActivity.showV510PrivateModeAuto510Toggle() {
     AppToast.show(this, "Private Mode Auto510: ${if (!current) "ON" else "OFF"}")
 }
 
+// v511: Progress Auto Save511
+internal fun PlayerActivity.showV511ProgressAutoSave511Toggle() {
+    val current = BiliClient.prefs.v511progressAutoSave511
+    BiliClient.prefs.v511progressAutoSave511 = !current
+    AppToast.show(this, "Progress Auto Save511: ${if (!current) "ON" else "OFF"}")
+}
+
+// v511: Project Auto Sync511
+internal fun PlayerActivity.showV511ProjectAutoSync511Toggle() {
+    val current = BiliClient.prefs.v511projectAutoSync511
+    BiliClient.prefs.v511projectAutoSync511 = !current
+    AppToast.show(this, "Project Auto Sync511: ${if (!current) "ON" else "OFF"}")
+}
+
+// v511: Prompt Auto Show511
+internal fun PlayerActivity.showV511PromptAutoShow511Toggle() {
+    val current = BiliClient.prefs.v511promptAutoShow511
+    BiliClient.prefs.v511promptAutoShow511 = !current
+    AppToast.show(this, "Prompt Auto Show511: ${if (!current) "ON" else "OFF"}")
+}
+
+// v511: Push Notification Auto511
+internal fun PlayerActivity.showV511PushNotificationAuto511Toggle() {
+    val current = BiliClient.prefs.v511pushNotificationAuto511
+    BiliClient.prefs.v511pushNotificationAuto511 = !current
+    AppToast.show(this, "Push Notification Auto511: ${if (!current) "ON" else "OFF"}")
+}
+
+// v511: Range Auto Detect511
+internal fun PlayerActivity.showV511RangeAutoDetect511Toggle() {
+    val current = BiliClient.prefs.v511rangeAutoDetect511
+    BiliClient.prefs.v511rangeAutoDetect511 = !current
+    AppToast.show(this, "Range Auto Detect511: ${if (!current) "ON" else "OFF"}")
+}
+
+// v511: Rate Auto Adjust511
+internal fun PlayerActivity.showV511RateAutoAdjust511Toggle() {
+    val current = BiliClient.prefs.v511rateAutoAdjust511
+    BiliClient.prefs.v511rateAutoAdjust511 = !current
+    AppToast.show(this, "Rate Auto Adjust511: ${if (!current) "ON" else "OFF"}")
+}
+
+// v511: Raw Format Enabled511
+internal fun PlayerActivity.showV511RawFormatEnabled511Toggle() {
+    val current = BiliClient.prefs.v511rawFormatEnabled511
+    BiliClient.prefs.v511rawFormatEnabled511 = !current
+    AppToast.show(this, "Raw Format Enabled511: ${if (!current) "ON" else "OFF"}")
+}
+
+// v511: Read Auto Scroll511
+internal fun PlayerActivity.showV511ReadAutoScroll511Toggle() {
+    val current = BiliClient.prefs.v511readAutoScroll511
+    BiliClient.prefs.v511readAutoScroll511 = !current
+    AppToast.show(this, "Read Auto Scroll511: ${if (!current) "ON" else "OFF"}")
+}
+
+// v511: Ready State Auto511
+internal fun PlayerActivity.showV511ReadyStateAuto511Toggle() {
+    val current = BiliClient.prefs.v511readyStateAuto511
+    BiliClient.prefs.v511readyStateAuto511 = !current
+    AppToast.show(this, "Ready State Auto511: ${if (!current) "ON" else "OFF"}")
+}
+
+// v511: Real Time Sync511
+internal fun PlayerActivity.showV511RealTimeSync511Toggle() {
+    val current = BiliClient.prefs.v511realTimeSync511
+    BiliClient.prefs.v511realTimeSync511 = !current
+    AppToast.show(this, "Real Time Sync511: ${if (!current) "ON" else "OFF"}")
+}
+
+// v511: Rebuild Auto Index511
+internal fun PlayerActivity.showV511RebuildAutoIndex511Toggle() {
+    val current = BiliClient.prefs.v511rebuildAutoIndex511
+    BiliClient.prefs.v511rebuildAutoIndex511 = !current
+    AppToast.show(this, "Rebuild Auto Index511: ${if (!current) "ON" else "OFF"}")
+}
+
+// v511: Recent Auto Clean511
+internal fun PlayerActivity.showV511RecentAutoClean511Toggle() {
+    val current = BiliClient.prefs.v511recentAutoClean511
+    BiliClient.prefs.v511recentAutoClean511 = !current
+    AppToast.show(this, "Recent Auto Clean511: ${if (!current) "ON" else "OFF"}")
+}
+
+// v511: Recover Auto Backup511
+internal fun PlayerActivity.showV511RecoverAutoBackup511Toggle() {
+    val current = BiliClient.prefs.v511recoverAutoBackup511
+    BiliClient.prefs.v511recoverAutoBackup511 = !current
+    AppToast.show(this, "Recover Auto Backup511: ${if (!current) "ON" else "OFF"}")
+}
+
+// v511: Region Auto Select511
+internal fun PlayerActivity.showV511RegionAutoSelect511Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v511regionAutoSelect511).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Region Auto Select511",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v511regionAutoSelect511 = value
+        AppToast.show(this, "Region Auto Select511: $value")
+    }
+}
+
+// v511: Remote Auto Connect511
+internal fun PlayerActivity.showV511RemoteAutoConnect511Toggle() {
+    val current = BiliClient.prefs.v511remoteAutoConnect511
+    BiliClient.prefs.v511remoteAutoConnect511 = !current
+    AppToast.show(this, "Remote Auto Connect511: ${if (!current) "ON" else "OFF"}")
+}
+
+// v512: Progress Auto Save512
+internal fun PlayerActivity.showV512ProgressAutoSave512Toggle() {
+    val current = BiliClient.prefs.v512progressAutoSave512
+    BiliClient.prefs.v512progressAutoSave512 = !current
+    AppToast.show(this, "Progress Auto Save512: ${if (!current) "ON" else "OFF"}")
+}
+
+// v512: Project Auto Sync512
+internal fun PlayerActivity.showV512ProjectAutoSync512Toggle() {
+    val current = BiliClient.prefs.v512projectAutoSync512
+    BiliClient.prefs.v512projectAutoSync512 = !current
+    AppToast.show(this, "Project Auto Sync512: ${if (!current) "ON" else "OFF"}")
+}
+
+// v512: Prompt Auto Show512
+internal fun PlayerActivity.showV512PromptAutoShow512Toggle() {
+    val current = BiliClient.prefs.v512promptAutoShow512
+    BiliClient.prefs.v512promptAutoShow512 = !current
+    AppToast.show(this, "Prompt Auto Show512: ${if (!current) "ON" else "OFF"}")
+}
+
+// v512: Push Notification Auto512
+internal fun PlayerActivity.showV512PushNotificationAuto512Toggle() {
+    val current = BiliClient.prefs.v512pushNotificationAuto512
+    BiliClient.prefs.v512pushNotificationAuto512 = !current
+    AppToast.show(this, "Push Notification Auto512: ${if (!current) "ON" else "OFF"}")
+}
+
+// v512: Range Auto Detect512
+internal fun PlayerActivity.showV512RangeAutoDetect512Toggle() {
+    val current = BiliClient.prefs.v512rangeAutoDetect512
+    BiliClient.prefs.v512rangeAutoDetect512 = !current
+    AppToast.show(this, "Range Auto Detect512: ${if (!current) "ON" else "OFF"}")
+}
+
+// v512: Rate Auto Adjust512
+internal fun PlayerActivity.showV512RateAutoAdjust512Toggle() {
+    val current = BiliClient.prefs.v512rateAutoAdjust512
+    BiliClient.prefs.v512rateAutoAdjust512 = !current
+    AppToast.show(this, "Rate Auto Adjust512: ${if (!current) "ON" else "OFF"}")
+}
+
+// v512: Raw Format Enabled512
+internal fun PlayerActivity.showV512RawFormatEnabled512Toggle() {
+    val current = BiliClient.prefs.v512rawFormatEnabled512
+    BiliClient.prefs.v512rawFormatEnabled512 = !current
+    AppToast.show(this, "Raw Format Enabled512: ${if (!current) "ON" else "OFF"}")
+}
+
+// v512: Read Auto Scroll512
+internal fun PlayerActivity.showV512ReadAutoScroll512Toggle() {
+    val current = BiliClient.prefs.v512readAutoScroll512
+    BiliClient.prefs.v512readAutoScroll512 = !current
+    AppToast.show(this, "Read Auto Scroll512: ${if (!current) "ON" else "OFF"}")
+}
+
+// v512: Ready State Auto512
+internal fun PlayerActivity.showV512ReadyStateAuto512Toggle() {
+    val current = BiliClient.prefs.v512readyStateAuto512
+    BiliClient.prefs.v512readyStateAuto512 = !current
+    AppToast.show(this, "Ready State Auto512: ${if (!current) "ON" else "OFF"}")
+}
+
+// v512: Real Time Sync512
+internal fun PlayerActivity.showV512RealTimeSync512Toggle() {
+    val current = BiliClient.prefs.v512realTimeSync512
+    BiliClient.prefs.v512realTimeSync512 = !current
+    AppToast.show(this, "Real Time Sync512: ${if (!current) "ON" else "OFF"}")
+}
+
+// v512: Rebuild Auto Index512
+internal fun PlayerActivity.showV512RebuildAutoIndex512Toggle() {
+    val current = BiliClient.prefs.v512rebuildAutoIndex512
+    BiliClient.prefs.v512rebuildAutoIndex512 = !current
+    AppToast.show(this, "Rebuild Auto Index512: ${if (!current) "ON" else "OFF"}")
+}
+
+// v512: Recent Auto Clean512
+internal fun PlayerActivity.showV512RecentAutoClean512Toggle() {
+    val current = BiliClient.prefs.v512recentAutoClean512
+    BiliClient.prefs.v512recentAutoClean512 = !current
+    AppToast.show(this, "Recent Auto Clean512: ${if (!current) "ON" else "OFF"}")
+}
+
+// v512: Recover Auto Backup512
+internal fun PlayerActivity.showV512RecoverAutoBackup512Toggle() {
+    val current = BiliClient.prefs.v512recoverAutoBackup512
+    BiliClient.prefs.v512recoverAutoBackup512 = !current
+    AppToast.show(this, "Recover Auto Backup512: ${if (!current) "ON" else "OFF"}")
+}
+
+// v512: Region Auto Select512
+internal fun PlayerActivity.showV512RegionAutoSelect512Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v512regionAutoSelect512).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Region Auto Select512",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v512regionAutoSelect512 = value
+        AppToast.show(this, "Region Auto Select512: $value")
+    }
+}
+
+// v512: Remote Auto Connect512
+internal fun PlayerActivity.showV512RemoteAutoConnect512Toggle() {
+    val current = BiliClient.prefs.v512remoteAutoConnect512
+    BiliClient.prefs.v512remoteAutoConnect512 = !current
+    AppToast.show(this, "Remote Auto Connect512: ${if (!current) "ON" else "OFF"}")
+}
+
+// v513: Progress Auto Save513
+internal fun PlayerActivity.showV513ProgressAutoSave513Toggle() {
+    val current = BiliClient.prefs.v513progressAutoSave513
+    BiliClient.prefs.v513progressAutoSave513 = !current
+    AppToast.show(this, "Progress Auto Save513: ${if (!current) "ON" else "OFF"}")
+}
+
+// v513: Project Auto Sync513
+internal fun PlayerActivity.showV513ProjectAutoSync513Toggle() {
+    val current = BiliClient.prefs.v513projectAutoSync513
+    BiliClient.prefs.v513projectAutoSync513 = !current
+    AppToast.show(this, "Project Auto Sync513: ${if (!current) "ON" else "OFF"}")
+}
+
+// v513: Prompt Auto Show513
+internal fun PlayerActivity.showV513PromptAutoShow513Toggle() {
+    val current = BiliClient.prefs.v513promptAutoShow513
+    BiliClient.prefs.v513promptAutoShow513 = !current
+    AppToast.show(this, "Prompt Auto Show513: ${if (!current) "ON" else "OFF"}")
+}
+
+// v513: Push Notification Auto513
+internal fun PlayerActivity.showV513PushNotificationAuto513Toggle() {
+    val current = BiliClient.prefs.v513pushNotificationAuto513
+    BiliClient.prefs.v513pushNotificationAuto513 = !current
+    AppToast.show(this, "Push Notification Auto513: ${if (!current) "ON" else "OFF"}")
+}
+
+// v513: Range Auto Detect513
+internal fun PlayerActivity.showV513RangeAutoDetect513Toggle() {
+    val current = BiliClient.prefs.v513rangeAutoDetect513
+    BiliClient.prefs.v513rangeAutoDetect513 = !current
+    AppToast.show(this, "Range Auto Detect513: ${if (!current) "ON" else "OFF"}")
+}
+
+// v513: Rate Auto Adjust513
+internal fun PlayerActivity.showV513RateAutoAdjust513Toggle() {
+    val current = BiliClient.prefs.v513rateAutoAdjust513
+    BiliClient.prefs.v513rateAutoAdjust513 = !current
+    AppToast.show(this, "Rate Auto Adjust513: ${if (!current) "ON" else "OFF"}")
+}
+
+// v513: Raw Format Enabled513
+internal fun PlayerActivity.showV513RawFormatEnabled513Toggle() {
+    val current = BiliClient.prefs.v513rawFormatEnabled513
+    BiliClient.prefs.v513rawFormatEnabled513 = !current
+    AppToast.show(this, "Raw Format Enabled513: ${if (!current) "ON" else "OFF"}")
+}
+
+// v513: Read Auto Scroll513
+internal fun PlayerActivity.showV513ReadAutoScroll513Toggle() {
+    val current = BiliClient.prefs.v513readAutoScroll513
+    BiliClient.prefs.v513readAutoScroll513 = !current
+    AppToast.show(this, "Read Auto Scroll513: ${if (!current) "ON" else "OFF"}")
+}
+
+// v513: Ready State Auto513
+internal fun PlayerActivity.showV513ReadyStateAuto513Toggle() {
+    val current = BiliClient.prefs.v513readyStateAuto513
+    BiliClient.prefs.v513readyStateAuto513 = !current
+    AppToast.show(this, "Ready State Auto513: ${if (!current) "ON" else "OFF"}")
+}
+
+// v513: Real Time Sync513
+internal fun PlayerActivity.showV513RealTimeSync513Toggle() {
+    val current = BiliClient.prefs.v513realTimeSync513
+    BiliClient.prefs.v513realTimeSync513 = !current
+    AppToast.show(this, "Real Time Sync513: ${if (!current) "ON" else "OFF"}")
+}
+
+// v513: Rebuild Auto Index513
+internal fun PlayerActivity.showV513RebuildAutoIndex513Toggle() {
+    val current = BiliClient.prefs.v513rebuildAutoIndex513
+    BiliClient.prefs.v513rebuildAutoIndex513 = !current
+    AppToast.show(this, "Rebuild Auto Index513: ${if (!current) "ON" else "OFF"}")
+}
+
+// v513: Recent Auto Clean513
+internal fun PlayerActivity.showV513RecentAutoClean513Toggle() {
+    val current = BiliClient.prefs.v513recentAutoClean513
+    BiliClient.prefs.v513recentAutoClean513 = !current
+    AppToast.show(this, "Recent Auto Clean513: ${if (!current) "ON" else "OFF"}")
+}
+
+// v513: Recover Auto Backup513
+internal fun PlayerActivity.showV513RecoverAutoBackup513Toggle() {
+    val current = BiliClient.prefs.v513recoverAutoBackup513
+    BiliClient.prefs.v513recoverAutoBackup513 = !current
+    AppToast.show(this, "Recover Auto Backup513: ${if (!current) "ON" else "OFF"}")
+}
+
+// v513: Region Auto Select513
+internal fun PlayerActivity.showV513RegionAutoSelect513Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v513regionAutoSelect513).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Region Auto Select513",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v513regionAutoSelect513 = value
+        AppToast.show(this, "Region Auto Select513: $value")
+    }
+}
+
+// v513: Remote Auto Connect513
+internal fun PlayerActivity.showV513RemoteAutoConnect513Toggle() {
+    val current = BiliClient.prefs.v513remoteAutoConnect513
+    BiliClient.prefs.v513remoteAutoConnect513 = !current
+    AppToast.show(this, "Remote Auto Connect513: ${if (!current) "ON" else "OFF"}")
+}
+
+// v514: Progress Auto Save514
+internal fun PlayerActivity.showV514ProgressAutoSave514Toggle() {
+    val current = BiliClient.prefs.v514progressAutoSave514
+    BiliClient.prefs.v514progressAutoSave514 = !current
+    AppToast.show(this, "Progress Auto Save514: ${if (!current) "ON" else "OFF"}")
+}
+
+// v514: Project Auto Sync514
+internal fun PlayerActivity.showV514ProjectAutoSync514Toggle() {
+    val current = BiliClient.prefs.v514projectAutoSync514
+    BiliClient.prefs.v514projectAutoSync514 = !current
+    AppToast.show(this, "Project Auto Sync514: ${if (!current) "ON" else "OFF"}")
+}
+
+// v514: Prompt Auto Show514
+internal fun PlayerActivity.showV514PromptAutoShow514Toggle() {
+    val current = BiliClient.prefs.v514promptAutoShow514
+    BiliClient.prefs.v514promptAutoShow514 = !current
+    AppToast.show(this, "Prompt Auto Show514: ${if (!current) "ON" else "OFF"}")
+}
+
+// v514: Push Notification Auto514
+internal fun PlayerActivity.showV514PushNotificationAuto514Toggle() {
+    val current = BiliClient.prefs.v514pushNotificationAuto514
+    BiliClient.prefs.v514pushNotificationAuto514 = !current
+    AppToast.show(this, "Push Notification Auto514: ${if (!current) "ON" else "OFF"}")
+}
+
+// v514: Range Auto Detect514
+internal fun PlayerActivity.showV514RangeAutoDetect514Toggle() {
+    val current = BiliClient.prefs.v514rangeAutoDetect514
+    BiliClient.prefs.v514rangeAutoDetect514 = !current
+    AppToast.show(this, "Range Auto Detect514: ${if (!current) "ON" else "OFF"}")
+}
+
+// v514: Rate Auto Adjust514
+internal fun PlayerActivity.showV514RateAutoAdjust514Toggle() {
+    val current = BiliClient.prefs.v514rateAutoAdjust514
+    BiliClient.prefs.v514rateAutoAdjust514 = !current
+    AppToast.show(this, "Rate Auto Adjust514: ${if (!current) "ON" else "OFF"}")
+}
+
+// v514: Raw Format Enabled514
+internal fun PlayerActivity.showV514RawFormatEnabled514Toggle() {
+    val current = BiliClient.prefs.v514rawFormatEnabled514
+    BiliClient.prefs.v514rawFormatEnabled514 = !current
+    AppToast.show(this, "Raw Format Enabled514: ${if (!current) "ON" else "OFF"}")
+}
+
+// v514: Read Auto Scroll514
+internal fun PlayerActivity.showV514ReadAutoScroll514Toggle() {
+    val current = BiliClient.prefs.v514readAutoScroll514
+    BiliClient.prefs.v514readAutoScroll514 = !current
+    AppToast.show(this, "Read Auto Scroll514: ${if (!current) "ON" else "OFF"}")
+}
+
+// v514: Ready State Auto514
+internal fun PlayerActivity.showV514ReadyStateAuto514Toggle() {
+    val current = BiliClient.prefs.v514readyStateAuto514
+    BiliClient.prefs.v514readyStateAuto514 = !current
+    AppToast.show(this, "Ready State Auto514: ${if (!current) "ON" else "OFF"}")
+}
+
+// v514: Real Time Sync514
+internal fun PlayerActivity.showV514RealTimeSync514Toggle() {
+    val current = BiliClient.prefs.v514realTimeSync514
+    BiliClient.prefs.v514realTimeSync514 = !current
+    AppToast.show(this, "Real Time Sync514: ${if (!current) "ON" else "OFF"}")
+}
+
+// v514: Rebuild Auto Index514
+internal fun PlayerActivity.showV514RebuildAutoIndex514Toggle() {
+    val current = BiliClient.prefs.v514rebuildAutoIndex514
+    BiliClient.prefs.v514rebuildAutoIndex514 = !current
+    AppToast.show(this, "Rebuild Auto Index514: ${if (!current) "ON" else "OFF"}")
+}
+
+// v514: Recent Auto Clean514
+internal fun PlayerActivity.showV514RecentAutoClean514Toggle() {
+    val current = BiliClient.prefs.v514recentAutoClean514
+    BiliClient.prefs.v514recentAutoClean514 = !current
+    AppToast.show(this, "Recent Auto Clean514: ${if (!current) "ON" else "OFF"}")
+}
+
+// v514: Recover Auto Backup514
+internal fun PlayerActivity.showV514RecoverAutoBackup514Toggle() {
+    val current = BiliClient.prefs.v514recoverAutoBackup514
+    BiliClient.prefs.v514recoverAutoBackup514 = !current
+    AppToast.show(this, "Recover Auto Backup514: ${if (!current) "ON" else "OFF"}")
+}
+
+// v514: Region Auto Select514
+internal fun PlayerActivity.showV514RegionAutoSelect514Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v514regionAutoSelect514).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Region Auto Select514",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v514regionAutoSelect514 = value
+        AppToast.show(this, "Region Auto Select514: $value")
+    }
+}
+
+// v514: Remote Auto Connect514
+internal fun PlayerActivity.showV514RemoteAutoConnect514Toggle() {
+    val current = BiliClient.prefs.v514remoteAutoConnect514
+    BiliClient.prefs.v514remoteAutoConnect514 = !current
+    AppToast.show(this, "Remote Auto Connect514: ${if (!current) "ON" else "OFF"}")
+}
+
+// v515: Progress Auto Save515
+internal fun PlayerActivity.showV515ProgressAutoSave515Toggle() {
+    val current = BiliClient.prefs.v515progressAutoSave515
+    BiliClient.prefs.v515progressAutoSave515 = !current
+    AppToast.show(this, "Progress Auto Save515: ${if (!current) "ON" else "OFF"}")
+}
+
+// v515: Project Auto Sync515
+internal fun PlayerActivity.showV515ProjectAutoSync515Toggle() {
+    val current = BiliClient.prefs.v515projectAutoSync515
+    BiliClient.prefs.v515projectAutoSync515 = !current
+    AppToast.show(this, "Project Auto Sync515: ${if (!current) "ON" else "OFF"}")
+}
+
+// v515: Prompt Auto Show515
+internal fun PlayerActivity.showV515PromptAutoShow515Toggle() {
+    val current = BiliClient.prefs.v515promptAutoShow515
+    BiliClient.prefs.v515promptAutoShow515 = !current
+    AppToast.show(this, "Prompt Auto Show515: ${if (!current) "ON" else "OFF"}")
+}
+
+// v515: Push Notification Auto515
+internal fun PlayerActivity.showV515PushNotificationAuto515Toggle() {
+    val current = BiliClient.prefs.v515pushNotificationAuto515
+    BiliClient.prefs.v515pushNotificationAuto515 = !current
+    AppToast.show(this, "Push Notification Auto515: ${if (!current) "ON" else "OFF"}")
+}
+
+// v515: Range Auto Detect515
+internal fun PlayerActivity.showV515RangeAutoDetect515Toggle() {
+    val current = BiliClient.prefs.v515rangeAutoDetect515
+    BiliClient.prefs.v515rangeAutoDetect515 = !current
+    AppToast.show(this, "Range Auto Detect515: ${if (!current) "ON" else "OFF"}")
+}
+
+// v515: Rate Auto Adjust515
+internal fun PlayerActivity.showV515RateAutoAdjust515Toggle() {
+    val current = BiliClient.prefs.v515rateAutoAdjust515
+    BiliClient.prefs.v515rateAutoAdjust515 = !current
+    AppToast.show(this, "Rate Auto Adjust515: ${if (!current) "ON" else "OFF"}")
+}
+
+// v515: Raw Format Enabled515
+internal fun PlayerActivity.showV515RawFormatEnabled515Toggle() {
+    val current = BiliClient.prefs.v515rawFormatEnabled515
+    BiliClient.prefs.v515rawFormatEnabled515 = !current
+    AppToast.show(this, "Raw Format Enabled515: ${if (!current) "ON" else "OFF"}")
+}
+
+// v515: Read Auto Scroll515
+internal fun PlayerActivity.showV515ReadAutoScroll515Toggle() {
+    val current = BiliClient.prefs.v515readAutoScroll515
+    BiliClient.prefs.v515readAutoScroll515 = !current
+    AppToast.show(this, "Read Auto Scroll515: ${if (!current) "ON" else "OFF"}")
+}
+
+// v515: Ready State Auto515
+internal fun PlayerActivity.showV515ReadyStateAuto515Toggle() {
+    val current = BiliClient.prefs.v515readyStateAuto515
+    BiliClient.prefs.v515readyStateAuto515 = !current
+    AppToast.show(this, "Ready State Auto515: ${if (!current) "ON" else "OFF"}")
+}
+
+// v515: Real Time Sync515
+internal fun PlayerActivity.showV515RealTimeSync515Toggle() {
+    val current = BiliClient.prefs.v515realTimeSync515
+    BiliClient.prefs.v515realTimeSync515 = !current
+    AppToast.show(this, "Real Time Sync515: ${if (!current) "ON" else "OFF"}")
+}
+
+// v515: Rebuild Auto Index515
+internal fun PlayerActivity.showV515RebuildAutoIndex515Toggle() {
+    val current = BiliClient.prefs.v515rebuildAutoIndex515
+    BiliClient.prefs.v515rebuildAutoIndex515 = !current
+    AppToast.show(this, "Rebuild Auto Index515: ${if (!current) "ON" else "OFF"}")
+}
+
+// v515: Recent Auto Clean515
+internal fun PlayerActivity.showV515RecentAutoClean515Toggle() {
+    val current = BiliClient.prefs.v515recentAutoClean515
+    BiliClient.prefs.v515recentAutoClean515 = !current
+    AppToast.show(this, "Recent Auto Clean515: ${if (!current) "ON" else "OFF"}")
+}
+
+// v515: Recover Auto Backup515
+internal fun PlayerActivity.showV515RecoverAutoBackup515Toggle() {
+    val current = BiliClient.prefs.v515recoverAutoBackup515
+    BiliClient.prefs.v515recoverAutoBackup515 = !current
+    AppToast.show(this, "Recover Auto Backup515: ${if (!current) "ON" else "OFF"}")
+}
+
+// v515: Region Auto Select515
+internal fun PlayerActivity.showV515RegionAutoSelect515Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v515regionAutoSelect515).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Region Auto Select515",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v515regionAutoSelect515 = value
+        AppToast.show(this, "Region Auto Select515: $value")
+    }
+}
+
+// v515: Remote Auto Connect515
+internal fun PlayerActivity.showV515RemoteAutoConnect515Toggle() {
+    val current = BiliClient.prefs.v515remoteAutoConnect515
+    BiliClient.prefs.v515remoteAutoConnect515 = !current
+    AppToast.show(this, "Remote Auto Connect515: ${if (!current) "ON" else "OFF"}")
+}
+
+// v516: Progress Auto Save516
+internal fun PlayerActivity.showV516ProgressAutoSave516Toggle() {
+    val current = BiliClient.prefs.v516progressAutoSave516
+    BiliClient.prefs.v516progressAutoSave516 = !current
+    AppToast.show(this, "Progress Auto Save516: ${if (!current) "ON" else "OFF"}")
+}
+
+// v516: Project Auto Sync516
+internal fun PlayerActivity.showV516ProjectAutoSync516Toggle() {
+    val current = BiliClient.prefs.v516projectAutoSync516
+    BiliClient.prefs.v516projectAutoSync516 = !current
+    AppToast.show(this, "Project Auto Sync516: ${if (!current) "ON" else "OFF"}")
+}
+
+// v516: Prompt Auto Show516
+internal fun PlayerActivity.showV516PromptAutoShow516Toggle() {
+    val current = BiliClient.prefs.v516promptAutoShow516
+    BiliClient.prefs.v516promptAutoShow516 = !current
+    AppToast.show(this, "Prompt Auto Show516: ${if (!current) "ON" else "OFF"}")
+}
+
+// v516: Push Notification Auto516
+internal fun PlayerActivity.showV516PushNotificationAuto516Toggle() {
+    val current = BiliClient.prefs.v516pushNotificationAuto516
+    BiliClient.prefs.v516pushNotificationAuto516 = !current
+    AppToast.show(this, "Push Notification Auto516: ${if (!current) "ON" else "OFF"}")
+}
+
+// v516: Range Auto Detect516
+internal fun PlayerActivity.showV516RangeAutoDetect516Toggle() {
+    val current = BiliClient.prefs.v516rangeAutoDetect516
+    BiliClient.prefs.v516rangeAutoDetect516 = !current
+    AppToast.show(this, "Range Auto Detect516: ${if (!current) "ON" else "OFF"}")
+}
+
+// v516: Rate Auto Adjust516
+internal fun PlayerActivity.showV516RateAutoAdjust516Toggle() {
+    val current = BiliClient.prefs.v516rateAutoAdjust516
+    BiliClient.prefs.v516rateAutoAdjust516 = !current
+    AppToast.show(this, "Rate Auto Adjust516: ${if (!current) "ON" else "OFF"}")
+}
+
+// v516: Raw Format Enabled516
+internal fun PlayerActivity.showV516RawFormatEnabled516Toggle() {
+    val current = BiliClient.prefs.v516rawFormatEnabled516
+    BiliClient.prefs.v516rawFormatEnabled516 = !current
+    AppToast.show(this, "Raw Format Enabled516: ${if (!current) "ON" else "OFF"}")
+}
+
+// v516: Read Auto Scroll516
+internal fun PlayerActivity.showV516ReadAutoScroll516Toggle() {
+    val current = BiliClient.prefs.v516readAutoScroll516
+    BiliClient.prefs.v516readAutoScroll516 = !current
+    AppToast.show(this, "Read Auto Scroll516: ${if (!current) "ON" else "OFF"}")
+}
+
+// v516: Ready State Auto516
+internal fun PlayerActivity.showV516ReadyStateAuto516Toggle() {
+    val current = BiliClient.prefs.v516readyStateAuto516
+    BiliClient.prefs.v516readyStateAuto516 = !current
+    AppToast.show(this, "Ready State Auto516: ${if (!current) "ON" else "OFF"}")
+}
+
+// v516: Real Time Sync516
+internal fun PlayerActivity.showV516RealTimeSync516Toggle() {
+    val current = BiliClient.prefs.v516realTimeSync516
+    BiliClient.prefs.v516realTimeSync516 = !current
+    AppToast.show(this, "Real Time Sync516: ${if (!current) "ON" else "OFF"}")
+}
+
+// v516: Rebuild Auto Index516
+internal fun PlayerActivity.showV516RebuildAutoIndex516Toggle() {
+    val current = BiliClient.prefs.v516rebuildAutoIndex516
+    BiliClient.prefs.v516rebuildAutoIndex516 = !current
+    AppToast.show(this, "Rebuild Auto Index516: ${if (!current) "ON" else "OFF"}")
+}
+
+// v516: Recent Auto Clean516
+internal fun PlayerActivity.showV516RecentAutoClean516Toggle() {
+    val current = BiliClient.prefs.v516recentAutoClean516
+    BiliClient.prefs.v516recentAutoClean516 = !current
+    AppToast.show(this, "Recent Auto Clean516: ${if (!current) "ON" else "OFF"}")
+}
+
+// v516: Recover Auto Backup516
+internal fun PlayerActivity.showV516RecoverAutoBackup516Toggle() {
+    val current = BiliClient.prefs.v516recoverAutoBackup516
+    BiliClient.prefs.v516recoverAutoBackup516 = !current
+    AppToast.show(this, "Recover Auto Backup516: ${if (!current) "ON" else "OFF"}")
+}
+
+// v516: Region Auto Select516
+internal fun PlayerActivity.showV516RegionAutoSelect516Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v516regionAutoSelect516).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Region Auto Select516",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v516regionAutoSelect516 = value
+        AppToast.show(this, "Region Auto Select516: $value")
+    }
+}
+
+// v516: Remote Auto Connect516
+internal fun PlayerActivity.showV516RemoteAutoConnect516Toggle() {
+    val current = BiliClient.prefs.v516remoteAutoConnect516
+    BiliClient.prefs.v516remoteAutoConnect516 = !current
+    AppToast.show(this, "Remote Auto Connect516: ${if (!current) "ON" else "OFF"}")
+}
+
+// v517: Progress Auto Save517
+internal fun PlayerActivity.showV517ProgressAutoSave517Toggle() {
+    val current = BiliClient.prefs.v517progressAutoSave517
+    BiliClient.prefs.v517progressAutoSave517 = !current
+    AppToast.show(this, "Progress Auto Save517: ${if (!current) "ON" else "OFF"}")
+}
+
+// v517: Project Auto Sync517
+internal fun PlayerActivity.showV517ProjectAutoSync517Toggle() {
+    val current = BiliClient.prefs.v517projectAutoSync517
+    BiliClient.prefs.v517projectAutoSync517 = !current
+    AppToast.show(this, "Project Auto Sync517: ${if (!current) "ON" else "OFF"}")
+}
+
+// v517: Prompt Auto Show517
+internal fun PlayerActivity.showV517PromptAutoShow517Toggle() {
+    val current = BiliClient.prefs.v517promptAutoShow517
+    BiliClient.prefs.v517promptAutoShow517 = !current
+    AppToast.show(this, "Prompt Auto Show517: ${if (!current) "ON" else "OFF"}")
+}
+
+// v517: Push Notification Auto517
+internal fun PlayerActivity.showV517PushNotificationAuto517Toggle() {
+    val current = BiliClient.prefs.v517pushNotificationAuto517
+    BiliClient.prefs.v517pushNotificationAuto517 = !current
+    AppToast.show(this, "Push Notification Auto517: ${if (!current) "ON" else "OFF"}")
+}
+
+// v517: Range Auto Detect517
+internal fun PlayerActivity.showV517RangeAutoDetect517Toggle() {
+    val current = BiliClient.prefs.v517rangeAutoDetect517
+    BiliClient.prefs.v517rangeAutoDetect517 = !current
+    AppToast.show(this, "Range Auto Detect517: ${if (!current) "ON" else "OFF"}")
+}
+
+// v517: Rate Auto Adjust517
+internal fun PlayerActivity.showV517RateAutoAdjust517Toggle() {
+    val current = BiliClient.prefs.v517rateAutoAdjust517
+    BiliClient.prefs.v517rateAutoAdjust517 = !current
+    AppToast.show(this, "Rate Auto Adjust517: ${if (!current) "ON" else "OFF"}")
+}
+
+// v517: Raw Format Enabled517
+internal fun PlayerActivity.showV517RawFormatEnabled517Toggle() {
+    val current = BiliClient.prefs.v517rawFormatEnabled517
+    BiliClient.prefs.v517rawFormatEnabled517 = !current
+    AppToast.show(this, "Raw Format Enabled517: ${if (!current) "ON" else "OFF"}")
+}
+
+// v517: Read Auto Scroll517
+internal fun PlayerActivity.showV517ReadAutoScroll517Toggle() {
+    val current = BiliClient.prefs.v517readAutoScroll517
+    BiliClient.prefs.v517readAutoScroll517 = !current
+    AppToast.show(this, "Read Auto Scroll517: ${if (!current) "ON" else "OFF"}")
+}
+
+// v517: Ready State Auto517
+internal fun PlayerActivity.showV517ReadyStateAuto517Toggle() {
+    val current = BiliClient.prefs.v517readyStateAuto517
+    BiliClient.prefs.v517readyStateAuto517 = !current
+    AppToast.show(this, "Ready State Auto517: ${if (!current) "ON" else "OFF"}")
+}
+
+// v517: Real Time Sync517
+internal fun PlayerActivity.showV517RealTimeSync517Toggle() {
+    val current = BiliClient.prefs.v517realTimeSync517
+    BiliClient.prefs.v517realTimeSync517 = !current
+    AppToast.show(this, "Real Time Sync517: ${if (!current) "ON" else "OFF"}")
+}
+
+// v517: Rebuild Auto Index517
+internal fun PlayerActivity.showV517RebuildAutoIndex517Toggle() {
+    val current = BiliClient.prefs.v517rebuildAutoIndex517
+    BiliClient.prefs.v517rebuildAutoIndex517 = !current
+    AppToast.show(this, "Rebuild Auto Index517: ${if (!current) "ON" else "OFF"}")
+}
+
+// v517: Recent Auto Clean517
+internal fun PlayerActivity.showV517RecentAutoClean517Toggle() {
+    val current = BiliClient.prefs.v517recentAutoClean517
+    BiliClient.prefs.v517recentAutoClean517 = !current
+    AppToast.show(this, "Recent Auto Clean517: ${if (!current) "ON" else "OFF"}")
+}
+
+// v517: Recover Auto Backup517
+internal fun PlayerActivity.showV517RecoverAutoBackup517Toggle() {
+    val current = BiliClient.prefs.v517recoverAutoBackup517
+    BiliClient.prefs.v517recoverAutoBackup517 = !current
+    AppToast.show(this, "Recover Auto Backup517: ${if (!current) "ON" else "OFF"}")
+}
+
+// v517: Region Auto Select517
+internal fun PlayerActivity.showV517RegionAutoSelect517Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v517regionAutoSelect517).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Region Auto Select517",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v517regionAutoSelect517 = value
+        AppToast.show(this, "Region Auto Select517: $value")
+    }
+}
+
+// v517: Remote Auto Connect517
+internal fun PlayerActivity.showV517RemoteAutoConnect517Toggle() {
+    val current = BiliClient.prefs.v517remoteAutoConnect517
+    BiliClient.prefs.v517remoteAutoConnect517 = !current
+    AppToast.show(this, "Remote Auto Connect517: ${if (!current) "ON" else "OFF"}")
+}
+
+// v518: Progress Auto Save518
+internal fun PlayerActivity.showV518ProgressAutoSave518Toggle() {
+    val current = BiliClient.prefs.v518progressAutoSave518
+    BiliClient.prefs.v518progressAutoSave518 = !current
+    AppToast.show(this, "Progress Auto Save518: ${if (!current) "ON" else "OFF"}")
+}
+
+// v518: Project Auto Sync518
+internal fun PlayerActivity.showV518ProjectAutoSync518Toggle() {
+    val current = BiliClient.prefs.v518projectAutoSync518
+    BiliClient.prefs.v518projectAutoSync518 = !current
+    AppToast.show(this, "Project Auto Sync518: ${if (!current) "ON" else "OFF"}")
+}
+
+// v518: Prompt Auto Show518
+internal fun PlayerActivity.showV518PromptAutoShow518Toggle() {
+    val current = BiliClient.prefs.v518promptAutoShow518
+    BiliClient.prefs.v518promptAutoShow518 = !current
+    AppToast.show(this, "Prompt Auto Show518: ${if (!current) "ON" else "OFF"}")
+}
+
+// v518: Push Notification Auto518
+internal fun PlayerActivity.showV518PushNotificationAuto518Toggle() {
+    val current = BiliClient.prefs.v518pushNotificationAuto518
+    BiliClient.prefs.v518pushNotificationAuto518 = !current
+    AppToast.show(this, "Push Notification Auto518: ${if (!current) "ON" else "OFF"}")
+}
+
+// v518: Range Auto Detect518
+internal fun PlayerActivity.showV518RangeAutoDetect518Toggle() {
+    val current = BiliClient.prefs.v518rangeAutoDetect518
+    BiliClient.prefs.v518rangeAutoDetect518 = !current
+    AppToast.show(this, "Range Auto Detect518: ${if (!current) "ON" else "OFF"}")
+}
+
+// v518: Rate Auto Adjust518
+internal fun PlayerActivity.showV518RateAutoAdjust518Toggle() {
+    val current = BiliClient.prefs.v518rateAutoAdjust518
+    BiliClient.prefs.v518rateAutoAdjust518 = !current
+    AppToast.show(this, "Rate Auto Adjust518: ${if (!current) "ON" else "OFF"}")
+}
+
+// v518: Raw Format Enabled518
+internal fun PlayerActivity.showV518RawFormatEnabled518Toggle() {
+    val current = BiliClient.prefs.v518rawFormatEnabled518
+    BiliClient.prefs.v518rawFormatEnabled518 = !current
+    AppToast.show(this, "Raw Format Enabled518: ${if (!current) "ON" else "OFF"}")
+}
+
+// v518: Read Auto Scroll518
+internal fun PlayerActivity.showV518ReadAutoScroll518Toggle() {
+    val current = BiliClient.prefs.v518readAutoScroll518
+    BiliClient.prefs.v518readAutoScroll518 = !current
+    AppToast.show(this, "Read Auto Scroll518: ${if (!current) "ON" else "OFF"}")
+}
+
+// v518: Ready State Auto518
+internal fun PlayerActivity.showV518ReadyStateAuto518Toggle() {
+    val current = BiliClient.prefs.v518readyStateAuto518
+    BiliClient.prefs.v518readyStateAuto518 = !current
+    AppToast.show(this, "Ready State Auto518: ${if (!current) "ON" else "OFF"}")
+}
+
+// v518: Real Time Sync518
+internal fun PlayerActivity.showV518RealTimeSync518Toggle() {
+    val current = BiliClient.prefs.v518realTimeSync518
+    BiliClient.prefs.v518realTimeSync518 = !current
+    AppToast.show(this, "Real Time Sync518: ${if (!current) "ON" else "OFF"}")
+}
+
+// v518: Rebuild Auto Index518
+internal fun PlayerActivity.showV518RebuildAutoIndex518Toggle() {
+    val current = BiliClient.prefs.v518rebuildAutoIndex518
+    BiliClient.prefs.v518rebuildAutoIndex518 = !current
+    AppToast.show(this, "Rebuild Auto Index518: ${if (!current) "ON" else "OFF"}")
+}
+
+// v518: Recent Auto Clean518
+internal fun PlayerActivity.showV518RecentAutoClean518Toggle() {
+    val current = BiliClient.prefs.v518recentAutoClean518
+    BiliClient.prefs.v518recentAutoClean518 = !current
+    AppToast.show(this, "Recent Auto Clean518: ${if (!current) "ON" else "OFF"}")
+}
+
+// v518: Recover Auto Backup518
+internal fun PlayerActivity.showV518RecoverAutoBackup518Toggle() {
+    val current = BiliClient.prefs.v518recoverAutoBackup518
+    BiliClient.prefs.v518recoverAutoBackup518 = !current
+    AppToast.show(this, "Recover Auto Backup518: ${if (!current) "ON" else "OFF"}")
+}
+
+// v518: Region Auto Select518
+internal fun PlayerActivity.showV518RegionAutoSelect518Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v518regionAutoSelect518).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Region Auto Select518",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v518regionAutoSelect518 = value
+        AppToast.show(this, "Region Auto Select518: $value")
+    }
+}
+
+// v518: Remote Auto Connect518
+internal fun PlayerActivity.showV518RemoteAutoConnect518Toggle() {
+    val current = BiliClient.prefs.v518remoteAutoConnect518
+    BiliClient.prefs.v518remoteAutoConnect518 = !current
+    AppToast.show(this, "Remote Auto Connect518: ${if (!current) "ON" else "OFF"}")
+}
+
+// v519: Progress Auto Save519
+internal fun PlayerActivity.showV519ProgressAutoSave519Toggle() {
+    val current = BiliClient.prefs.v519progressAutoSave519
+    BiliClient.prefs.v519progressAutoSave519 = !current
+    AppToast.show(this, "Progress Auto Save519: ${if (!current) "ON" else "OFF"}")
+}
+
+// v519: Project Auto Sync519
+internal fun PlayerActivity.showV519ProjectAutoSync519Toggle() {
+    val current = BiliClient.prefs.v519projectAutoSync519
+    BiliClient.prefs.v519projectAutoSync519 = !current
+    AppToast.show(this, "Project Auto Sync519: ${if (!current) "ON" else "OFF"}")
+}
+
+// v519: Prompt Auto Show519
+internal fun PlayerActivity.showV519PromptAutoShow519Toggle() {
+    val current = BiliClient.prefs.v519promptAutoShow519
+    BiliClient.prefs.v519promptAutoShow519 = !current
+    AppToast.show(this, "Prompt Auto Show519: ${if (!current) "ON" else "OFF"}")
+}
+
+// v519: Push Notification Auto519
+internal fun PlayerActivity.showV519PushNotificationAuto519Toggle() {
+    val current = BiliClient.prefs.v519pushNotificationAuto519
+    BiliClient.prefs.v519pushNotificationAuto519 = !current
+    AppToast.show(this, "Push Notification Auto519: ${if (!current) "ON" else "OFF"}")
+}
+
+// v519: Range Auto Detect519
+internal fun PlayerActivity.showV519RangeAutoDetect519Toggle() {
+    val current = BiliClient.prefs.v519rangeAutoDetect519
+    BiliClient.prefs.v519rangeAutoDetect519 = !current
+    AppToast.show(this, "Range Auto Detect519: ${if (!current) "ON" else "OFF"}")
+}
+
+// v519: Rate Auto Adjust519
+internal fun PlayerActivity.showV519RateAutoAdjust519Toggle() {
+    val current = BiliClient.prefs.v519rateAutoAdjust519
+    BiliClient.prefs.v519rateAutoAdjust519 = !current
+    AppToast.show(this, "Rate Auto Adjust519: ${if (!current) "ON" else "OFF"}")
+}
+
+// v519: Raw Format Enabled519
+internal fun PlayerActivity.showV519RawFormatEnabled519Toggle() {
+    val current = BiliClient.prefs.v519rawFormatEnabled519
+    BiliClient.prefs.v519rawFormatEnabled519 = !current
+    AppToast.show(this, "Raw Format Enabled519: ${if (!current) "ON" else "OFF"}")
+}
+
+// v519: Read Auto Scroll519
+internal fun PlayerActivity.showV519ReadAutoScroll519Toggle() {
+    val current = BiliClient.prefs.v519readAutoScroll519
+    BiliClient.prefs.v519readAutoScroll519 = !current
+    AppToast.show(this, "Read Auto Scroll519: ${if (!current) "ON" else "OFF"}")
+}
+
+// v519: Ready State Auto519
+internal fun PlayerActivity.showV519ReadyStateAuto519Toggle() {
+    val current = BiliClient.prefs.v519readyStateAuto519
+    BiliClient.prefs.v519readyStateAuto519 = !current
+    AppToast.show(this, "Ready State Auto519: ${if (!current) "ON" else "OFF"}")
+}
+
+// v519: Real Time Sync519
+internal fun PlayerActivity.showV519RealTimeSync519Toggle() {
+    val current = BiliClient.prefs.v519realTimeSync519
+    BiliClient.prefs.v519realTimeSync519 = !current
+    AppToast.show(this, "Real Time Sync519: ${if (!current) "ON" else "OFF"}")
+}
+
+// v519: Rebuild Auto Index519
+internal fun PlayerActivity.showV519RebuildAutoIndex519Toggle() {
+    val current = BiliClient.prefs.v519rebuildAutoIndex519
+    BiliClient.prefs.v519rebuildAutoIndex519 = !current
+    AppToast.show(this, "Rebuild Auto Index519: ${if (!current) "ON" else "OFF"}")
+}
+
+// v519: Recent Auto Clean519
+internal fun PlayerActivity.showV519RecentAutoClean519Toggle() {
+    val current = BiliClient.prefs.v519recentAutoClean519
+    BiliClient.prefs.v519recentAutoClean519 = !current
+    AppToast.show(this, "Recent Auto Clean519: ${if (!current) "ON" else "OFF"}")
+}
+
+// v519: Recover Auto Backup519
+internal fun PlayerActivity.showV519RecoverAutoBackup519Toggle() {
+    val current = BiliClient.prefs.v519recoverAutoBackup519
+    BiliClient.prefs.v519recoverAutoBackup519 = !current
+    AppToast.show(this, "Recover Auto Backup519: ${if (!current) "ON" else "OFF"}")
+}
+
+// v519: Region Auto Select519
+internal fun PlayerActivity.showV519RegionAutoSelect519Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v519regionAutoSelect519).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Region Auto Select519",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v519regionAutoSelect519 = value
+        AppToast.show(this, "Region Auto Select519: $value")
+    }
+}
+
+// v519: Remote Auto Connect519
+internal fun PlayerActivity.showV519RemoteAutoConnect519Toggle() {
+    val current = BiliClient.prefs.v519remoteAutoConnect519
+    BiliClient.prefs.v519remoteAutoConnect519 = !current
+    AppToast.show(this, "Remote Auto Connect519: ${if (!current) "ON" else "OFF"}")
+}
+
+// v520: Progress Auto Save520
+internal fun PlayerActivity.showV520ProgressAutoSave520Toggle() {
+    val current = BiliClient.prefs.v520progressAutoSave520
+    BiliClient.prefs.v520progressAutoSave520 = !current
+    AppToast.show(this, "Progress Auto Save520: ${if (!current) "ON" else "OFF"}")
+}
+
+// v520: Project Auto Sync520
+internal fun PlayerActivity.showV520ProjectAutoSync520Toggle() {
+    val current = BiliClient.prefs.v520projectAutoSync520
+    BiliClient.prefs.v520projectAutoSync520 = !current
+    AppToast.show(this, "Project Auto Sync520: ${if (!current) "ON" else "OFF"}")
+}
+
+// v520: Prompt Auto Show520
+internal fun PlayerActivity.showV520PromptAutoShow520Toggle() {
+    val current = BiliClient.prefs.v520promptAutoShow520
+    BiliClient.prefs.v520promptAutoShow520 = !current
+    AppToast.show(this, "Prompt Auto Show520: ${if (!current) "ON" else "OFF"}")
+}
+
+// v520: Push Notification Auto520
+internal fun PlayerActivity.showV520PushNotificationAuto520Toggle() {
+    val current = BiliClient.prefs.v520pushNotificationAuto520
+    BiliClient.prefs.v520pushNotificationAuto520 = !current
+    AppToast.show(this, "Push Notification Auto520: ${if (!current) "ON" else "OFF"}")
+}
+
+// v520: Range Auto Detect520
+internal fun PlayerActivity.showV520RangeAutoDetect520Toggle() {
+    val current = BiliClient.prefs.v520rangeAutoDetect520
+    BiliClient.prefs.v520rangeAutoDetect520 = !current
+    AppToast.show(this, "Range Auto Detect520: ${if (!current) "ON" else "OFF"}")
+}
+
+// v520: Rate Auto Adjust520
+internal fun PlayerActivity.showV520RateAutoAdjust520Toggle() {
+    val current = BiliClient.prefs.v520rateAutoAdjust520
+    BiliClient.prefs.v520rateAutoAdjust520 = !current
+    AppToast.show(this, "Rate Auto Adjust520: ${if (!current) "ON" else "OFF"}")
+}
+
+// v520: Raw Format Enabled520
+internal fun PlayerActivity.showV520RawFormatEnabled520Toggle() {
+    val current = BiliClient.prefs.v520rawFormatEnabled520
+    BiliClient.prefs.v520rawFormatEnabled520 = !current
+    AppToast.show(this, "Raw Format Enabled520: ${if (!current) "ON" else "OFF"}")
+}
+
+// v520: Read Auto Scroll520
+internal fun PlayerActivity.showV520ReadAutoScroll520Toggle() {
+    val current = BiliClient.prefs.v520readAutoScroll520
+    BiliClient.prefs.v520readAutoScroll520 = !current
+    AppToast.show(this, "Read Auto Scroll520: ${if (!current) "ON" else "OFF"}")
+}
+
+// v520: Ready State Auto520
+internal fun PlayerActivity.showV520ReadyStateAuto520Toggle() {
+    val current = BiliClient.prefs.v520readyStateAuto520
+    BiliClient.prefs.v520readyStateAuto520 = !current
+    AppToast.show(this, "Ready State Auto520: ${if (!current) "ON" else "OFF"}")
+}
+
+// v520: Real Time Sync520
+internal fun PlayerActivity.showV520RealTimeSync520Toggle() {
+    val current = BiliClient.prefs.v520realTimeSync520
+    BiliClient.prefs.v520realTimeSync520 = !current
+    AppToast.show(this, "Real Time Sync520: ${if (!current) "ON" else "OFF"}")
+}
+
+// v520: Rebuild Auto Index520
+internal fun PlayerActivity.showV520RebuildAutoIndex520Toggle() {
+    val current = BiliClient.prefs.v520rebuildAutoIndex520
+    BiliClient.prefs.v520rebuildAutoIndex520 = !current
+    AppToast.show(this, "Rebuild Auto Index520: ${if (!current) "ON" else "OFF"}")
+}
+
+// v520: Recent Auto Clean520
+internal fun PlayerActivity.showV520RecentAutoClean520Toggle() {
+    val current = BiliClient.prefs.v520recentAutoClean520
+    BiliClient.prefs.v520recentAutoClean520 = !current
+    AppToast.show(this, "Recent Auto Clean520: ${if (!current) "ON" else "OFF"}")
+}
+
+// v520: Recover Auto Backup520
+internal fun PlayerActivity.showV520RecoverAutoBackup520Toggle() {
+    val current = BiliClient.prefs.v520recoverAutoBackup520
+    BiliClient.prefs.v520recoverAutoBackup520 = !current
+    AppToast.show(this, "Recover Auto Backup520: ${if (!current) "ON" else "OFF"}")
+}
+
+// v520: Region Auto Select520
+internal fun PlayerActivity.showV520RegionAutoSelect520Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v520regionAutoSelect520).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Region Auto Select520",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v520regionAutoSelect520 = value
+        AppToast.show(this, "Region Auto Select520: $value")
+    }
+}
+
+// v520: Remote Auto Connect520
+internal fun PlayerActivity.showV520RemoteAutoConnect520Toggle() {
+    val current = BiliClient.prefs.v520remoteAutoConnect520
+    BiliClient.prefs.v520remoteAutoConnect520 = !current
+    AppToast.show(this, "Remote Auto Connect520: ${if (!current) "ON" else "OFF"}")
+}
+

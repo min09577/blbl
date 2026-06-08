@@ -37448,6 +37448,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V510PRIVATEMODEAUTO510, false)
         set(value) = prefs.edit().putBoolean(KEY_V510PRIVATEMODEAUTO510, value).apply()
 
+    var v511progressAutoSave511: Boolean
+        get() = prefs.getBoolean(KEY_V511PROGRESSAUTOSAVE511, false)
+        set(value) = prefs.edit().putBoolean(KEY_V511PROGRESSAUTOSAVE511, value).apply()
+
+    var v511projectAutoSync511: Boolean
+        get() = prefs.getBoolean(KEY_V511PROJECTAUTOSYNC511, false)
+        set(value) = prefs.edit().putBoolean(KEY_V511PROJECTAUTOSYNC511, value).apply()
+
+    var v511promptAutoShow511: Boolean
+        get() = prefs.getBoolean(KEY_V511PROMPTAUTOSHOW511, false)
+        set(value) = prefs.edit().putBoolean(KEY_V511PROMPTAUTOSHOW511, value).apply()
+
+    var v511pushNotificationAuto511: Boolean
+        get() = prefs.getBoolean(KEY_V511PUSHNOTIFICATIONAUTO511, false)
+        set(value) = prefs.edit().putBoolean(KEY_V511PUSHNOTIFICATIONAUTO511, value).apply()
+
+    var v511rangeAutoDetect511: Boolean
+        get() = prefs.getBoolean(KEY_V511RANGEAUTODETECT511, false)
+        set(value) = prefs.edit().putBoolean(KEY_V511RANGEAUTODETECT511, value).apply()
+
+    var v511rateAutoAdjust511: Boolean
+        get() = prefs.getBoolean(KEY_V511RATEAUTOADJUST511, false)
+        set(value) = prefs.edit().putBoolean(KEY_V511RATEAUTOADJUST511, value).apply()
+
+    var v511rawFormatEnabled511: Boolean
+        get() = prefs.getBoolean(KEY_V511RAWFORMATENABLED511, false)
+        set(value) = prefs.edit().putBoolean(KEY_V511RAWFORMATENABLED511, value).apply()
+
+    var v511readAutoScroll511: Boolean
+        get() = prefs.getBoolean(KEY_V511READAUTOSCROLL511, false)
+        set(value) = prefs.edit().putBoolean(KEY_V511READAUTOSCROLL511, value).apply()
+
+    var v511readyStateAuto511: Boolean
+        get() = prefs.getBoolean(KEY_V511READYSTATEAUTO511, false)
+        set(value) = prefs.edit().putBoolean(KEY_V511READYSTATEAUTO511, value).apply()
+
+    var v511realTimeSync511: Boolean
+        get() = prefs.getBoolean(KEY_V511REALTIMESYNC511, false)
+        set(value) = prefs.edit().putBoolean(KEY_V511REALTIMESYNC511, value).apply()
+
+    var v511rebuildAutoIndex511: Boolean
+        get() = prefs.getBoolean(KEY_V511REBUILDAUTOINDEX511, false)
+        set(value) = prefs.edit().putBoolean(KEY_V511REBUILDAUTOINDEX511, value).apply()
+
+    var v511recentAutoClean511: Boolean
+        get() = prefs.getBoolean(KEY_V511RECENTAUTOCLEAN511, false)
+        set(value) = prefs.edit().putBoolean(KEY_V511RECENTAUTOCLEAN511, value).apply()
+
+    var v511recoverAutoBackup511: Boolean
+        get() = prefs.getBoolean(KEY_V511RECOVERAUTOBACKUP511, false)
+        set(value) = prefs.edit().putBoolean(KEY_V511RECOVERAUTOBACKUP511, value).apply()
+
+    var v511regionAutoSelect511: Int
+        get() = prefs.getInt(KEY_V511REGIONAUTOSELECT511, 0)
+        set(value) = prefs.edit().putInt(KEY_V511REGIONAUTOSELECT511, value).apply()
+
+    var v511remoteAutoConnect511: Boolean
+        get() = prefs.getBoolean(KEY_V511REMOTEAUTOCONNECT511, false)
+        set(value) = prefs.edit().putBoolean(KEY_V511REMOTEAUTOCONNECT511, value).apply()
+
+    var v512progressAutoSave512: Boolean
+        get() = prefs.getBoolean(KEY_V512PROGRESSAUTOSAVE512, false)
+        set(value) = prefs.edit().putBoolean(KEY_V512PROGRESSAUTOSAVE512, value).apply()
+
+    var v512projectAutoSync512: Boolean
+        get() = prefs.getBoolean(KEY_V512PROJECTAUTOSYNC512, false)
+        set(value) = prefs.edit().putBoolean(KEY_V512PROJECTAUTOSYNC512, value).apply()
+
+    var v512promptAutoShow512: Boolean
+        get() = prefs.getBoolean(KEY_V512PROMPTAUTOSHOW512, false)
+        set(value) = prefs.edit().putBoolean(KEY_V512PROMPTAUTOSHOW512, value).apply()
+
+    var v512pushNotificationAuto512: Boolean
+        get() = prefs.getBoolean(KEY_V512PUSHNOTIFICATIONAUTO512, false)
+        set(value) = prefs.edit().putBoolean(KEY_V512PUSHNOTIFICATIONAUTO512, value).apply()
+
+    var v512rangeAutoDetect512: Boolean
+        get() = prefs.getBoolean(KEY_V512RANGEAUTODETECT512, false)
+        set(value) = prefs.edit().putBoolean(KEY_V512RANGEAUTODETECT512, value).apply()
+
+    var v512rateAutoAdjust512: Boolean
+        get() = prefs.getBoolean(KEY_V512RATEAUTOADJUST512, false)
+        set(value) = prefs.edit().putBoolean(KEY_V512RATEAUTOADJUST512, value).apply()
+
+    var v512rawFormatEnabled512: Boolean
+        get() = prefs.getBoolean(KEY_V512RAWFORMATENABLED512, false)
+        set(value) = prefs.edit().putBoolean(KEY_V512RAWFORMATENABLED512, value).apply()
+
+    var v512readAutoScroll512: Boolean
+        get() = prefs.getBoolean(KEY_V512READAUTOSCROLL512, false)
+        set(value) = prefs.edit().putBoolean(KEY_V512READAUTOSCROLL512, value).apply()
+
+    var v512readyStateAuto512: Boolean
+        get() = prefs.getBoolean(KEY_V512READYSTATEAUTO512, false)
+        set(value) = prefs.edit().putBoolean(KEY_V512READYSTATEAUTO512, value).apply()
+
+    var v512realTimeSync512: Boolean
+        get() = prefs.getBoolean(KEY_V512REALTIMESYNC512, false)
+        set(value) = prefs.edit().putBoolean(KEY_V512REALTIMESYNC512, value).apply()
+
+    var v512rebuildAutoIndex512: Boolean
+        get() = prefs.getBoolean(KEY_V512REBUILDAUTOINDEX512, false)
+        set(value) = prefs.edit().putBoolean(KEY_V512REBUILDAUTOINDEX512, value).apply()
+
+    var v512recentAutoClean512: Boolean
+        get() = prefs.getBoolean(KEY_V512RECENTAUTOCLEAN512, false)
+        set(value) = prefs.edit().putBoolean(KEY_V512RECENTAUTOCLEAN512, value).apply()
+
+    var v512recoverAutoBackup512: Boolean
+        get() = prefs.getBoolean(KEY_V512RECOVERAUTOBACKUP512, false)
+        set(value) = prefs.edit().putBoolean(KEY_V512RECOVERAUTOBACKUP512, value).apply()
+
+    var v512regionAutoSelect512: Int
+        get() = prefs.getInt(KEY_V512REGIONAUTOSELECT512, 0)
+        set(value) = prefs.edit().putInt(KEY_V512REGIONAUTOSELECT512, value).apply()
+
+    var v512remoteAutoConnect512: Boolean
+        get() = prefs.getBoolean(KEY_V512REMOTEAUTOCONNECT512, false)
+        set(value) = prefs.edit().putBoolean(KEY_V512REMOTEAUTOCONNECT512, value).apply()
+
+    var v513progressAutoSave513: Boolean
+        get() = prefs.getBoolean(KEY_V513PROGRESSAUTOSAVE513, false)
+        set(value) = prefs.edit().putBoolean(KEY_V513PROGRESSAUTOSAVE513, value).apply()
+
+    var v513projectAutoSync513: Boolean
+        get() = prefs.getBoolean(KEY_V513PROJECTAUTOSYNC513, false)
+        set(value) = prefs.edit().putBoolean(KEY_V513PROJECTAUTOSYNC513, value).apply()
+
+    var v513promptAutoShow513: Boolean
+        get() = prefs.getBoolean(KEY_V513PROMPTAUTOSHOW513, false)
+        set(value) = prefs.edit().putBoolean(KEY_V513PROMPTAUTOSHOW513, value).apply()
+
+    var v513pushNotificationAuto513: Boolean
+        get() = prefs.getBoolean(KEY_V513PUSHNOTIFICATIONAUTO513, false)
+        set(value) = prefs.edit().putBoolean(KEY_V513PUSHNOTIFICATIONAUTO513, value).apply()
+
+    var v513rangeAutoDetect513: Boolean
+        get() = prefs.getBoolean(KEY_V513RANGEAUTODETECT513, false)
+        set(value) = prefs.edit().putBoolean(KEY_V513RANGEAUTODETECT513, value).apply()
+
+    var v513rateAutoAdjust513: Boolean
+        get() = prefs.getBoolean(KEY_V513RATEAUTOADJUST513, false)
+        set(value) = prefs.edit().putBoolean(KEY_V513RATEAUTOADJUST513, value).apply()
+
+    var v513rawFormatEnabled513: Boolean
+        get() = prefs.getBoolean(KEY_V513RAWFORMATENABLED513, false)
+        set(value) = prefs.edit().putBoolean(KEY_V513RAWFORMATENABLED513, value).apply()
+
+    var v513readAutoScroll513: Boolean
+        get() = prefs.getBoolean(KEY_V513READAUTOSCROLL513, false)
+        set(value) = prefs.edit().putBoolean(KEY_V513READAUTOSCROLL513, value).apply()
+
+    var v513readyStateAuto513: Boolean
+        get() = prefs.getBoolean(KEY_V513READYSTATEAUTO513, false)
+        set(value) = prefs.edit().putBoolean(KEY_V513READYSTATEAUTO513, value).apply()
+
+    var v513realTimeSync513: Boolean
+        get() = prefs.getBoolean(KEY_V513REALTIMESYNC513, false)
+        set(value) = prefs.edit().putBoolean(KEY_V513REALTIMESYNC513, value).apply()
+
+    var v513rebuildAutoIndex513: Boolean
+        get() = prefs.getBoolean(KEY_V513REBUILDAUTOINDEX513, false)
+        set(value) = prefs.edit().putBoolean(KEY_V513REBUILDAUTOINDEX513, value).apply()
+
+    var v513recentAutoClean513: Boolean
+        get() = prefs.getBoolean(KEY_V513RECENTAUTOCLEAN513, false)
+        set(value) = prefs.edit().putBoolean(KEY_V513RECENTAUTOCLEAN513, value).apply()
+
+    var v513recoverAutoBackup513: Boolean
+        get() = prefs.getBoolean(KEY_V513RECOVERAUTOBACKUP513, false)
+        set(value) = prefs.edit().putBoolean(KEY_V513RECOVERAUTOBACKUP513, value).apply()
+
+    var v513regionAutoSelect513: Int
+        get() = prefs.getInt(KEY_V513REGIONAUTOSELECT513, 0)
+        set(value) = prefs.edit().putInt(KEY_V513REGIONAUTOSELECT513, value).apply()
+
+    var v513remoteAutoConnect513: Boolean
+        get() = prefs.getBoolean(KEY_V513REMOTEAUTOCONNECT513, false)
+        set(value) = prefs.edit().putBoolean(KEY_V513REMOTEAUTOCONNECT513, value).apply()
+
+    var v514progressAutoSave514: Boolean
+        get() = prefs.getBoolean(KEY_V514PROGRESSAUTOSAVE514, false)
+        set(value) = prefs.edit().putBoolean(KEY_V514PROGRESSAUTOSAVE514, value).apply()
+
+    var v514projectAutoSync514: Boolean
+        get() = prefs.getBoolean(KEY_V514PROJECTAUTOSYNC514, false)
+        set(value) = prefs.edit().putBoolean(KEY_V514PROJECTAUTOSYNC514, value).apply()
+
+    var v514promptAutoShow514: Boolean
+        get() = prefs.getBoolean(KEY_V514PROMPTAUTOSHOW514, false)
+        set(value) = prefs.edit().putBoolean(KEY_V514PROMPTAUTOSHOW514, value).apply()
+
+    var v514pushNotificationAuto514: Boolean
+        get() = prefs.getBoolean(KEY_V514PUSHNOTIFICATIONAUTO514, false)
+        set(value) = prefs.edit().putBoolean(KEY_V514PUSHNOTIFICATIONAUTO514, value).apply()
+
+    var v514rangeAutoDetect514: Boolean
+        get() = prefs.getBoolean(KEY_V514RANGEAUTODETECT514, false)
+        set(value) = prefs.edit().putBoolean(KEY_V514RANGEAUTODETECT514, value).apply()
+
+    var v514rateAutoAdjust514: Boolean
+        get() = prefs.getBoolean(KEY_V514RATEAUTOADJUST514, false)
+        set(value) = prefs.edit().putBoolean(KEY_V514RATEAUTOADJUST514, value).apply()
+
+    var v514rawFormatEnabled514: Boolean
+        get() = prefs.getBoolean(KEY_V514RAWFORMATENABLED514, false)
+        set(value) = prefs.edit().putBoolean(KEY_V514RAWFORMATENABLED514, value).apply()
+
+    var v514readAutoScroll514: Boolean
+        get() = prefs.getBoolean(KEY_V514READAUTOSCROLL514, false)
+        set(value) = prefs.edit().putBoolean(KEY_V514READAUTOSCROLL514, value).apply()
+
+    var v514readyStateAuto514: Boolean
+        get() = prefs.getBoolean(KEY_V514READYSTATEAUTO514, false)
+        set(value) = prefs.edit().putBoolean(KEY_V514READYSTATEAUTO514, value).apply()
+
+    var v514realTimeSync514: Boolean
+        get() = prefs.getBoolean(KEY_V514REALTIMESYNC514, false)
+        set(value) = prefs.edit().putBoolean(KEY_V514REALTIMESYNC514, value).apply()
+
+    var v514rebuildAutoIndex514: Boolean
+        get() = prefs.getBoolean(KEY_V514REBUILDAUTOINDEX514, false)
+        set(value) = prefs.edit().putBoolean(KEY_V514REBUILDAUTOINDEX514, value).apply()
+
+    var v514recentAutoClean514: Boolean
+        get() = prefs.getBoolean(KEY_V514RECENTAUTOCLEAN514, false)
+        set(value) = prefs.edit().putBoolean(KEY_V514RECENTAUTOCLEAN514, value).apply()
+
+    var v514recoverAutoBackup514: Boolean
+        get() = prefs.getBoolean(KEY_V514RECOVERAUTOBACKUP514, false)
+        set(value) = prefs.edit().putBoolean(KEY_V514RECOVERAUTOBACKUP514, value).apply()
+
+    var v514regionAutoSelect514: Int
+        get() = prefs.getInt(KEY_V514REGIONAUTOSELECT514, 0)
+        set(value) = prefs.edit().putInt(KEY_V514REGIONAUTOSELECT514, value).apply()
+
+    var v514remoteAutoConnect514: Boolean
+        get() = prefs.getBoolean(KEY_V514REMOTEAUTOCONNECT514, false)
+        set(value) = prefs.edit().putBoolean(KEY_V514REMOTEAUTOCONNECT514, value).apply()
+
+    var v515progressAutoSave515: Boolean
+        get() = prefs.getBoolean(KEY_V515PROGRESSAUTOSAVE515, false)
+        set(value) = prefs.edit().putBoolean(KEY_V515PROGRESSAUTOSAVE515, value).apply()
+
+    var v515projectAutoSync515: Boolean
+        get() = prefs.getBoolean(KEY_V515PROJECTAUTOSYNC515, false)
+        set(value) = prefs.edit().putBoolean(KEY_V515PROJECTAUTOSYNC515, value).apply()
+
+    var v515promptAutoShow515: Boolean
+        get() = prefs.getBoolean(KEY_V515PROMPTAUTOSHOW515, false)
+        set(value) = prefs.edit().putBoolean(KEY_V515PROMPTAUTOSHOW515, value).apply()
+
+    var v515pushNotificationAuto515: Boolean
+        get() = prefs.getBoolean(KEY_V515PUSHNOTIFICATIONAUTO515, false)
+        set(value) = prefs.edit().putBoolean(KEY_V515PUSHNOTIFICATIONAUTO515, value).apply()
+
+    var v515rangeAutoDetect515: Boolean
+        get() = prefs.getBoolean(KEY_V515RANGEAUTODETECT515, false)
+        set(value) = prefs.edit().putBoolean(KEY_V515RANGEAUTODETECT515, value).apply()
+
+    var v515rateAutoAdjust515: Boolean
+        get() = prefs.getBoolean(KEY_V515RATEAUTOADJUST515, false)
+        set(value) = prefs.edit().putBoolean(KEY_V515RATEAUTOADJUST515, value).apply()
+
+    var v515rawFormatEnabled515: Boolean
+        get() = prefs.getBoolean(KEY_V515RAWFORMATENABLED515, false)
+        set(value) = prefs.edit().putBoolean(KEY_V515RAWFORMATENABLED515, value).apply()
+
+    var v515readAutoScroll515: Boolean
+        get() = prefs.getBoolean(KEY_V515READAUTOSCROLL515, false)
+        set(value) = prefs.edit().putBoolean(KEY_V515READAUTOSCROLL515, value).apply()
+
+    var v515readyStateAuto515: Boolean
+        get() = prefs.getBoolean(KEY_V515READYSTATEAUTO515, false)
+        set(value) = prefs.edit().putBoolean(KEY_V515READYSTATEAUTO515, value).apply()
+
+    var v515realTimeSync515: Boolean
+        get() = prefs.getBoolean(KEY_V515REALTIMESYNC515, false)
+        set(value) = prefs.edit().putBoolean(KEY_V515REALTIMESYNC515, value).apply()
+
+    var v515rebuildAutoIndex515: Boolean
+        get() = prefs.getBoolean(KEY_V515REBUILDAUTOINDEX515, false)
+        set(value) = prefs.edit().putBoolean(KEY_V515REBUILDAUTOINDEX515, value).apply()
+
+    var v515recentAutoClean515: Boolean
+        get() = prefs.getBoolean(KEY_V515RECENTAUTOCLEAN515, false)
+        set(value) = prefs.edit().putBoolean(KEY_V515RECENTAUTOCLEAN515, value).apply()
+
+    var v515recoverAutoBackup515: Boolean
+        get() = prefs.getBoolean(KEY_V515RECOVERAUTOBACKUP515, false)
+        set(value) = prefs.edit().putBoolean(KEY_V515RECOVERAUTOBACKUP515, value).apply()
+
+    var v515regionAutoSelect515: Int
+        get() = prefs.getInt(KEY_V515REGIONAUTOSELECT515, 0)
+        set(value) = prefs.edit().putInt(KEY_V515REGIONAUTOSELECT515, value).apply()
+
+    var v515remoteAutoConnect515: Boolean
+        get() = prefs.getBoolean(KEY_V515REMOTEAUTOCONNECT515, false)
+        set(value) = prefs.edit().putBoolean(KEY_V515REMOTEAUTOCONNECT515, value).apply()
+
+    var v516progressAutoSave516: Boolean
+        get() = prefs.getBoolean(KEY_V516PROGRESSAUTOSAVE516, false)
+        set(value) = prefs.edit().putBoolean(KEY_V516PROGRESSAUTOSAVE516, value).apply()
+
+    var v516projectAutoSync516: Boolean
+        get() = prefs.getBoolean(KEY_V516PROJECTAUTOSYNC516, false)
+        set(value) = prefs.edit().putBoolean(KEY_V516PROJECTAUTOSYNC516, value).apply()
+
+    var v516promptAutoShow516: Boolean
+        get() = prefs.getBoolean(KEY_V516PROMPTAUTOSHOW516, false)
+        set(value) = prefs.edit().putBoolean(KEY_V516PROMPTAUTOSHOW516, value).apply()
+
+    var v516pushNotificationAuto516: Boolean
+        get() = prefs.getBoolean(KEY_V516PUSHNOTIFICATIONAUTO516, false)
+        set(value) = prefs.edit().putBoolean(KEY_V516PUSHNOTIFICATIONAUTO516, value).apply()
+
+    var v516rangeAutoDetect516: Boolean
+        get() = prefs.getBoolean(KEY_V516RANGEAUTODETECT516, false)
+        set(value) = prefs.edit().putBoolean(KEY_V516RANGEAUTODETECT516, value).apply()
+
+    var v516rateAutoAdjust516: Boolean
+        get() = prefs.getBoolean(KEY_V516RATEAUTOADJUST516, false)
+        set(value) = prefs.edit().putBoolean(KEY_V516RATEAUTOADJUST516, value).apply()
+
+    var v516rawFormatEnabled516: Boolean
+        get() = prefs.getBoolean(KEY_V516RAWFORMATENABLED516, false)
+        set(value) = prefs.edit().putBoolean(KEY_V516RAWFORMATENABLED516, value).apply()
+
+    var v516readAutoScroll516: Boolean
+        get() = prefs.getBoolean(KEY_V516READAUTOSCROLL516, false)
+        set(value) = prefs.edit().putBoolean(KEY_V516READAUTOSCROLL516, value).apply()
+
+    var v516readyStateAuto516: Boolean
+        get() = prefs.getBoolean(KEY_V516READYSTATEAUTO516, false)
+        set(value) = prefs.edit().putBoolean(KEY_V516READYSTATEAUTO516, value).apply()
+
+    var v516realTimeSync516: Boolean
+        get() = prefs.getBoolean(KEY_V516REALTIMESYNC516, false)
+        set(value) = prefs.edit().putBoolean(KEY_V516REALTIMESYNC516, value).apply()
+
+    var v516rebuildAutoIndex516: Boolean
+        get() = prefs.getBoolean(KEY_V516REBUILDAUTOINDEX516, false)
+        set(value) = prefs.edit().putBoolean(KEY_V516REBUILDAUTOINDEX516, value).apply()
+
+    var v516recentAutoClean516: Boolean
+        get() = prefs.getBoolean(KEY_V516RECENTAUTOCLEAN516, false)
+        set(value) = prefs.edit().putBoolean(KEY_V516RECENTAUTOCLEAN516, value).apply()
+
+    var v516recoverAutoBackup516: Boolean
+        get() = prefs.getBoolean(KEY_V516RECOVERAUTOBACKUP516, false)
+        set(value) = prefs.edit().putBoolean(KEY_V516RECOVERAUTOBACKUP516, value).apply()
+
+    var v516regionAutoSelect516: Int
+        get() = prefs.getInt(KEY_V516REGIONAUTOSELECT516, 0)
+        set(value) = prefs.edit().putInt(KEY_V516REGIONAUTOSELECT516, value).apply()
+
+    var v516remoteAutoConnect516: Boolean
+        get() = prefs.getBoolean(KEY_V516REMOTEAUTOCONNECT516, false)
+        set(value) = prefs.edit().putBoolean(KEY_V516REMOTEAUTOCONNECT516, value).apply()
+
+    var v517progressAutoSave517: Boolean
+        get() = prefs.getBoolean(KEY_V517PROGRESSAUTOSAVE517, false)
+        set(value) = prefs.edit().putBoolean(KEY_V517PROGRESSAUTOSAVE517, value).apply()
+
+    var v517projectAutoSync517: Boolean
+        get() = prefs.getBoolean(KEY_V517PROJECTAUTOSYNC517, false)
+        set(value) = prefs.edit().putBoolean(KEY_V517PROJECTAUTOSYNC517, value).apply()
+
+    var v517promptAutoShow517: Boolean
+        get() = prefs.getBoolean(KEY_V517PROMPTAUTOSHOW517, false)
+        set(value) = prefs.edit().putBoolean(KEY_V517PROMPTAUTOSHOW517, value).apply()
+
+    var v517pushNotificationAuto517: Boolean
+        get() = prefs.getBoolean(KEY_V517PUSHNOTIFICATIONAUTO517, false)
+        set(value) = prefs.edit().putBoolean(KEY_V517PUSHNOTIFICATIONAUTO517, value).apply()
+
+    var v517rangeAutoDetect517: Boolean
+        get() = prefs.getBoolean(KEY_V517RANGEAUTODETECT517, false)
+        set(value) = prefs.edit().putBoolean(KEY_V517RANGEAUTODETECT517, value).apply()
+
+    var v517rateAutoAdjust517: Boolean
+        get() = prefs.getBoolean(KEY_V517RATEAUTOADJUST517, false)
+        set(value) = prefs.edit().putBoolean(KEY_V517RATEAUTOADJUST517, value).apply()
+
+    var v517rawFormatEnabled517: Boolean
+        get() = prefs.getBoolean(KEY_V517RAWFORMATENABLED517, false)
+        set(value) = prefs.edit().putBoolean(KEY_V517RAWFORMATENABLED517, value).apply()
+
+    var v517readAutoScroll517: Boolean
+        get() = prefs.getBoolean(KEY_V517READAUTOSCROLL517, false)
+        set(value) = prefs.edit().putBoolean(KEY_V517READAUTOSCROLL517, value).apply()
+
+    var v517readyStateAuto517: Boolean
+        get() = prefs.getBoolean(KEY_V517READYSTATEAUTO517, false)
+        set(value) = prefs.edit().putBoolean(KEY_V517READYSTATEAUTO517, value).apply()
+
+    var v517realTimeSync517: Boolean
+        get() = prefs.getBoolean(KEY_V517REALTIMESYNC517, false)
+        set(value) = prefs.edit().putBoolean(KEY_V517REALTIMESYNC517, value).apply()
+
+    var v517rebuildAutoIndex517: Boolean
+        get() = prefs.getBoolean(KEY_V517REBUILDAUTOINDEX517, false)
+        set(value) = prefs.edit().putBoolean(KEY_V517REBUILDAUTOINDEX517, value).apply()
+
+    var v517recentAutoClean517: Boolean
+        get() = prefs.getBoolean(KEY_V517RECENTAUTOCLEAN517, false)
+        set(value) = prefs.edit().putBoolean(KEY_V517RECENTAUTOCLEAN517, value).apply()
+
+    var v517recoverAutoBackup517: Boolean
+        get() = prefs.getBoolean(KEY_V517RECOVERAUTOBACKUP517, false)
+        set(value) = prefs.edit().putBoolean(KEY_V517RECOVERAUTOBACKUP517, value).apply()
+
+    var v517regionAutoSelect517: Int
+        get() = prefs.getInt(KEY_V517REGIONAUTOSELECT517, 0)
+        set(value) = prefs.edit().putInt(KEY_V517REGIONAUTOSELECT517, value).apply()
+
+    var v517remoteAutoConnect517: Boolean
+        get() = prefs.getBoolean(KEY_V517REMOTEAUTOCONNECT517, false)
+        set(value) = prefs.edit().putBoolean(KEY_V517REMOTEAUTOCONNECT517, value).apply()
+
+    var v518progressAutoSave518: Boolean
+        get() = prefs.getBoolean(KEY_V518PROGRESSAUTOSAVE518, false)
+        set(value) = prefs.edit().putBoolean(KEY_V518PROGRESSAUTOSAVE518, value).apply()
+
+    var v518projectAutoSync518: Boolean
+        get() = prefs.getBoolean(KEY_V518PROJECTAUTOSYNC518, false)
+        set(value) = prefs.edit().putBoolean(KEY_V518PROJECTAUTOSYNC518, value).apply()
+
+    var v518promptAutoShow518: Boolean
+        get() = prefs.getBoolean(KEY_V518PROMPTAUTOSHOW518, false)
+        set(value) = prefs.edit().putBoolean(KEY_V518PROMPTAUTOSHOW518, value).apply()
+
+    var v518pushNotificationAuto518: Boolean
+        get() = prefs.getBoolean(KEY_V518PUSHNOTIFICATIONAUTO518, false)
+        set(value) = prefs.edit().putBoolean(KEY_V518PUSHNOTIFICATIONAUTO518, value).apply()
+
+    var v518rangeAutoDetect518: Boolean
+        get() = prefs.getBoolean(KEY_V518RANGEAUTODETECT518, false)
+        set(value) = prefs.edit().putBoolean(KEY_V518RANGEAUTODETECT518, value).apply()
+
+    var v518rateAutoAdjust518: Boolean
+        get() = prefs.getBoolean(KEY_V518RATEAUTOADJUST518, false)
+        set(value) = prefs.edit().putBoolean(KEY_V518RATEAUTOADJUST518, value).apply()
+
+    var v518rawFormatEnabled518: Boolean
+        get() = prefs.getBoolean(KEY_V518RAWFORMATENABLED518, false)
+        set(value) = prefs.edit().putBoolean(KEY_V518RAWFORMATENABLED518, value).apply()
+
+    var v518readAutoScroll518: Boolean
+        get() = prefs.getBoolean(KEY_V518READAUTOSCROLL518, false)
+        set(value) = prefs.edit().putBoolean(KEY_V518READAUTOSCROLL518, value).apply()
+
+    var v518readyStateAuto518: Boolean
+        get() = prefs.getBoolean(KEY_V518READYSTATEAUTO518, false)
+        set(value) = prefs.edit().putBoolean(KEY_V518READYSTATEAUTO518, value).apply()
+
+    var v518realTimeSync518: Boolean
+        get() = prefs.getBoolean(KEY_V518REALTIMESYNC518, false)
+        set(value) = prefs.edit().putBoolean(KEY_V518REALTIMESYNC518, value).apply()
+
+    var v518rebuildAutoIndex518: Boolean
+        get() = prefs.getBoolean(KEY_V518REBUILDAUTOINDEX518, false)
+        set(value) = prefs.edit().putBoolean(KEY_V518REBUILDAUTOINDEX518, value).apply()
+
+    var v518recentAutoClean518: Boolean
+        get() = prefs.getBoolean(KEY_V518RECENTAUTOCLEAN518, false)
+        set(value) = prefs.edit().putBoolean(KEY_V518RECENTAUTOCLEAN518, value).apply()
+
+    var v518recoverAutoBackup518: Boolean
+        get() = prefs.getBoolean(KEY_V518RECOVERAUTOBACKUP518, false)
+        set(value) = prefs.edit().putBoolean(KEY_V518RECOVERAUTOBACKUP518, value).apply()
+
+    var v518regionAutoSelect518: Int
+        get() = prefs.getInt(KEY_V518REGIONAUTOSELECT518, 0)
+        set(value) = prefs.edit().putInt(KEY_V518REGIONAUTOSELECT518, value).apply()
+
+    var v518remoteAutoConnect518: Boolean
+        get() = prefs.getBoolean(KEY_V518REMOTEAUTOCONNECT518, false)
+        set(value) = prefs.edit().putBoolean(KEY_V518REMOTEAUTOCONNECT518, value).apply()
+
+    var v519progressAutoSave519: Boolean
+        get() = prefs.getBoolean(KEY_V519PROGRESSAUTOSAVE519, false)
+        set(value) = prefs.edit().putBoolean(KEY_V519PROGRESSAUTOSAVE519, value).apply()
+
+    var v519projectAutoSync519: Boolean
+        get() = prefs.getBoolean(KEY_V519PROJECTAUTOSYNC519, false)
+        set(value) = prefs.edit().putBoolean(KEY_V519PROJECTAUTOSYNC519, value).apply()
+
+    var v519promptAutoShow519: Boolean
+        get() = prefs.getBoolean(KEY_V519PROMPTAUTOSHOW519, false)
+        set(value) = prefs.edit().putBoolean(KEY_V519PROMPTAUTOSHOW519, value).apply()
+
+    var v519pushNotificationAuto519: Boolean
+        get() = prefs.getBoolean(KEY_V519PUSHNOTIFICATIONAUTO519, false)
+        set(value) = prefs.edit().putBoolean(KEY_V519PUSHNOTIFICATIONAUTO519, value).apply()
+
+    var v519rangeAutoDetect519: Boolean
+        get() = prefs.getBoolean(KEY_V519RANGEAUTODETECT519, false)
+        set(value) = prefs.edit().putBoolean(KEY_V519RANGEAUTODETECT519, value).apply()
+
+    var v519rateAutoAdjust519: Boolean
+        get() = prefs.getBoolean(KEY_V519RATEAUTOADJUST519, false)
+        set(value) = prefs.edit().putBoolean(KEY_V519RATEAUTOADJUST519, value).apply()
+
+    var v519rawFormatEnabled519: Boolean
+        get() = prefs.getBoolean(KEY_V519RAWFORMATENABLED519, false)
+        set(value) = prefs.edit().putBoolean(KEY_V519RAWFORMATENABLED519, value).apply()
+
+    var v519readAutoScroll519: Boolean
+        get() = prefs.getBoolean(KEY_V519READAUTOSCROLL519, false)
+        set(value) = prefs.edit().putBoolean(KEY_V519READAUTOSCROLL519, value).apply()
+
+    var v519readyStateAuto519: Boolean
+        get() = prefs.getBoolean(KEY_V519READYSTATEAUTO519, false)
+        set(value) = prefs.edit().putBoolean(KEY_V519READYSTATEAUTO519, value).apply()
+
+    var v519realTimeSync519: Boolean
+        get() = prefs.getBoolean(KEY_V519REALTIMESYNC519, false)
+        set(value) = prefs.edit().putBoolean(KEY_V519REALTIMESYNC519, value).apply()
+
+    var v519rebuildAutoIndex519: Boolean
+        get() = prefs.getBoolean(KEY_V519REBUILDAUTOINDEX519, false)
+        set(value) = prefs.edit().putBoolean(KEY_V519REBUILDAUTOINDEX519, value).apply()
+
+    var v519recentAutoClean519: Boolean
+        get() = prefs.getBoolean(KEY_V519RECENTAUTOCLEAN519, false)
+        set(value) = prefs.edit().putBoolean(KEY_V519RECENTAUTOCLEAN519, value).apply()
+
+    var v519recoverAutoBackup519: Boolean
+        get() = prefs.getBoolean(KEY_V519RECOVERAUTOBACKUP519, false)
+        set(value) = prefs.edit().putBoolean(KEY_V519RECOVERAUTOBACKUP519, value).apply()
+
+    var v519regionAutoSelect519: Int
+        get() = prefs.getInt(KEY_V519REGIONAUTOSELECT519, 0)
+        set(value) = prefs.edit().putInt(KEY_V519REGIONAUTOSELECT519, value).apply()
+
+    var v519remoteAutoConnect519: Boolean
+        get() = prefs.getBoolean(KEY_V519REMOTEAUTOCONNECT519, false)
+        set(value) = prefs.edit().putBoolean(KEY_V519REMOTEAUTOCONNECT519, value).apply()
+
+    var v520progressAutoSave520: Boolean
+        get() = prefs.getBoolean(KEY_V520PROGRESSAUTOSAVE520, false)
+        set(value) = prefs.edit().putBoolean(KEY_V520PROGRESSAUTOSAVE520, value).apply()
+
+    var v520projectAutoSync520: Boolean
+        get() = prefs.getBoolean(KEY_V520PROJECTAUTOSYNC520, false)
+        set(value) = prefs.edit().putBoolean(KEY_V520PROJECTAUTOSYNC520, value).apply()
+
+    var v520promptAutoShow520: Boolean
+        get() = prefs.getBoolean(KEY_V520PROMPTAUTOSHOW520, false)
+        set(value) = prefs.edit().putBoolean(KEY_V520PROMPTAUTOSHOW520, value).apply()
+
+    var v520pushNotificationAuto520: Boolean
+        get() = prefs.getBoolean(KEY_V520PUSHNOTIFICATIONAUTO520, false)
+        set(value) = prefs.edit().putBoolean(KEY_V520PUSHNOTIFICATIONAUTO520, value).apply()
+
+    var v520rangeAutoDetect520: Boolean
+        get() = prefs.getBoolean(KEY_V520RANGEAUTODETECT520, false)
+        set(value) = prefs.edit().putBoolean(KEY_V520RANGEAUTODETECT520, value).apply()
+
+    var v520rateAutoAdjust520: Boolean
+        get() = prefs.getBoolean(KEY_V520RATEAUTOADJUST520, false)
+        set(value) = prefs.edit().putBoolean(KEY_V520RATEAUTOADJUST520, value).apply()
+
+    var v520rawFormatEnabled520: Boolean
+        get() = prefs.getBoolean(KEY_V520RAWFORMATENABLED520, false)
+        set(value) = prefs.edit().putBoolean(KEY_V520RAWFORMATENABLED520, value).apply()
+
+    var v520readAutoScroll520: Boolean
+        get() = prefs.getBoolean(KEY_V520READAUTOSCROLL520, false)
+        set(value) = prefs.edit().putBoolean(KEY_V520READAUTOSCROLL520, value).apply()
+
+    var v520readyStateAuto520: Boolean
+        get() = prefs.getBoolean(KEY_V520READYSTATEAUTO520, false)
+        set(value) = prefs.edit().putBoolean(KEY_V520READYSTATEAUTO520, value).apply()
+
+    var v520realTimeSync520: Boolean
+        get() = prefs.getBoolean(KEY_V520REALTIMESYNC520, false)
+        set(value) = prefs.edit().putBoolean(KEY_V520REALTIMESYNC520, value).apply()
+
+    var v520rebuildAutoIndex520: Boolean
+        get() = prefs.getBoolean(KEY_V520REBUILDAUTOINDEX520, false)
+        set(value) = prefs.edit().putBoolean(KEY_V520REBUILDAUTOINDEX520, value).apply()
+
+    var v520recentAutoClean520: Boolean
+        get() = prefs.getBoolean(KEY_V520RECENTAUTOCLEAN520, false)
+        set(value) = prefs.edit().putBoolean(KEY_V520RECENTAUTOCLEAN520, value).apply()
+
+    var v520recoverAutoBackup520: Boolean
+        get() = prefs.getBoolean(KEY_V520RECOVERAUTOBACKUP520, false)
+        set(value) = prefs.edit().putBoolean(KEY_V520RECOVERAUTOBACKUP520, value).apply()
+
+    var v520regionAutoSelect520: Int
+        get() = prefs.getInt(KEY_V520REGIONAUTOSELECT520, 0)
+        set(value) = prefs.edit().putInt(KEY_V520REGIONAUTOSELECT520, value).apply()
+
+    var v520remoteAutoConnect520: Boolean
+        get() = prefs.getBoolean(KEY_V520REMOTEAUTOCONNECT520, false)
+        set(value) = prefs.edit().putBoolean(KEY_V520REMOTEAUTOCONNECT520, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -47680,5 +48280,155 @@ class AppPrefs(context: Context) {
         const val KEY_V510PRINTAUTOFORMAT510 = "v510printAutoFormat510" // v510 Print Auto Format510
         const val KEY_V510PRIORITYQUEUEENABLED510 = "v510priorityQueueEnabled510" // v510 Priority Queue Enabled510
         const val KEY_V510PRIVATEMODEAUTO510 = "v510privateModeAuto510" // v510 Private Mode Auto510
+        const val KEY_V511PROGRESSAUTOSAVE511 = "v511progressAutoSave511" // v511 Progress Auto Save511
+        const val KEY_V511PROJECTAUTOSYNC511 = "v511projectAutoSync511" // v511 Project Auto Sync511
+        const val KEY_V511PROMPTAUTOSHOW511 = "v511promptAutoShow511" // v511 Prompt Auto Show511
+        const val KEY_V511PUSHNOTIFICATIONAUTO511 = "v511pushNotificationAuto511" // v511 Push Notification Auto511
+        const val KEY_V511RANGEAUTODETECT511 = "v511rangeAutoDetect511" // v511 Range Auto Detect511
+        const val KEY_V511RATEAUTOADJUST511 = "v511rateAutoAdjust511" // v511 Rate Auto Adjust511
+        const val KEY_V511RAWFORMATENABLED511 = "v511rawFormatEnabled511" // v511 Raw Format Enabled511
+        const val KEY_V511READAUTOSCROLL511 = "v511readAutoScroll511" // v511 Read Auto Scroll511
+        const val KEY_V511READYSTATEAUTO511 = "v511readyStateAuto511" // v511 Ready State Auto511
+        const val KEY_V511REALTIMESYNC511 = "v511realTimeSync511" // v511 Real Time Sync511
+        const val KEY_V511REBUILDAUTOINDEX511 = "v511rebuildAutoIndex511" // v511 Rebuild Auto Index511
+        const val KEY_V511RECENTAUTOCLEAN511 = "v511recentAutoClean511" // v511 Recent Auto Clean511
+        const val KEY_V511RECOVERAUTOBACKUP511 = "v511recoverAutoBackup511" // v511 Recover Auto Backup511
+        const val KEY_V511REGIONAUTOSELECT511 = "v511regionAutoSelect511" // v511 Region Auto Select511
+        const val KEY_V511REMOTEAUTOCONNECT511 = "v511remoteAutoConnect511" // v511 Remote Auto Connect511
+        const val KEY_V512PROGRESSAUTOSAVE512 = "v512progressAutoSave512" // v512 Progress Auto Save512
+        const val KEY_V512PROJECTAUTOSYNC512 = "v512projectAutoSync512" // v512 Project Auto Sync512
+        const val KEY_V512PROMPTAUTOSHOW512 = "v512promptAutoShow512" // v512 Prompt Auto Show512
+        const val KEY_V512PUSHNOTIFICATIONAUTO512 = "v512pushNotificationAuto512" // v512 Push Notification Auto512
+        const val KEY_V512RANGEAUTODETECT512 = "v512rangeAutoDetect512" // v512 Range Auto Detect512
+        const val KEY_V512RATEAUTOADJUST512 = "v512rateAutoAdjust512" // v512 Rate Auto Adjust512
+        const val KEY_V512RAWFORMATENABLED512 = "v512rawFormatEnabled512" // v512 Raw Format Enabled512
+        const val KEY_V512READAUTOSCROLL512 = "v512readAutoScroll512" // v512 Read Auto Scroll512
+        const val KEY_V512READYSTATEAUTO512 = "v512readyStateAuto512" // v512 Ready State Auto512
+        const val KEY_V512REALTIMESYNC512 = "v512realTimeSync512" // v512 Real Time Sync512
+        const val KEY_V512REBUILDAUTOINDEX512 = "v512rebuildAutoIndex512" // v512 Rebuild Auto Index512
+        const val KEY_V512RECENTAUTOCLEAN512 = "v512recentAutoClean512" // v512 Recent Auto Clean512
+        const val KEY_V512RECOVERAUTOBACKUP512 = "v512recoverAutoBackup512" // v512 Recover Auto Backup512
+        const val KEY_V512REGIONAUTOSELECT512 = "v512regionAutoSelect512" // v512 Region Auto Select512
+        const val KEY_V512REMOTEAUTOCONNECT512 = "v512remoteAutoConnect512" // v512 Remote Auto Connect512
+        const val KEY_V513PROGRESSAUTOSAVE513 = "v513progressAutoSave513" // v513 Progress Auto Save513
+        const val KEY_V513PROJECTAUTOSYNC513 = "v513projectAutoSync513" // v513 Project Auto Sync513
+        const val KEY_V513PROMPTAUTOSHOW513 = "v513promptAutoShow513" // v513 Prompt Auto Show513
+        const val KEY_V513PUSHNOTIFICATIONAUTO513 = "v513pushNotificationAuto513" // v513 Push Notification Auto513
+        const val KEY_V513RANGEAUTODETECT513 = "v513rangeAutoDetect513" // v513 Range Auto Detect513
+        const val KEY_V513RATEAUTOADJUST513 = "v513rateAutoAdjust513" // v513 Rate Auto Adjust513
+        const val KEY_V513RAWFORMATENABLED513 = "v513rawFormatEnabled513" // v513 Raw Format Enabled513
+        const val KEY_V513READAUTOSCROLL513 = "v513readAutoScroll513" // v513 Read Auto Scroll513
+        const val KEY_V513READYSTATEAUTO513 = "v513readyStateAuto513" // v513 Ready State Auto513
+        const val KEY_V513REALTIMESYNC513 = "v513realTimeSync513" // v513 Real Time Sync513
+        const val KEY_V513REBUILDAUTOINDEX513 = "v513rebuildAutoIndex513" // v513 Rebuild Auto Index513
+        const val KEY_V513RECENTAUTOCLEAN513 = "v513recentAutoClean513" // v513 Recent Auto Clean513
+        const val KEY_V513RECOVERAUTOBACKUP513 = "v513recoverAutoBackup513" // v513 Recover Auto Backup513
+        const val KEY_V513REGIONAUTOSELECT513 = "v513regionAutoSelect513" // v513 Region Auto Select513
+        const val KEY_V513REMOTEAUTOCONNECT513 = "v513remoteAutoConnect513" // v513 Remote Auto Connect513
+        const val KEY_V514PROGRESSAUTOSAVE514 = "v514progressAutoSave514" // v514 Progress Auto Save514
+        const val KEY_V514PROJECTAUTOSYNC514 = "v514projectAutoSync514" // v514 Project Auto Sync514
+        const val KEY_V514PROMPTAUTOSHOW514 = "v514promptAutoShow514" // v514 Prompt Auto Show514
+        const val KEY_V514PUSHNOTIFICATIONAUTO514 = "v514pushNotificationAuto514" // v514 Push Notification Auto514
+        const val KEY_V514RANGEAUTODETECT514 = "v514rangeAutoDetect514" // v514 Range Auto Detect514
+        const val KEY_V514RATEAUTOADJUST514 = "v514rateAutoAdjust514" // v514 Rate Auto Adjust514
+        const val KEY_V514RAWFORMATENABLED514 = "v514rawFormatEnabled514" // v514 Raw Format Enabled514
+        const val KEY_V514READAUTOSCROLL514 = "v514readAutoScroll514" // v514 Read Auto Scroll514
+        const val KEY_V514READYSTATEAUTO514 = "v514readyStateAuto514" // v514 Ready State Auto514
+        const val KEY_V514REALTIMESYNC514 = "v514realTimeSync514" // v514 Real Time Sync514
+        const val KEY_V514REBUILDAUTOINDEX514 = "v514rebuildAutoIndex514" // v514 Rebuild Auto Index514
+        const val KEY_V514RECENTAUTOCLEAN514 = "v514recentAutoClean514" // v514 Recent Auto Clean514
+        const val KEY_V514RECOVERAUTOBACKUP514 = "v514recoverAutoBackup514" // v514 Recover Auto Backup514
+        const val KEY_V514REGIONAUTOSELECT514 = "v514regionAutoSelect514" // v514 Region Auto Select514
+        const val KEY_V514REMOTEAUTOCONNECT514 = "v514remoteAutoConnect514" // v514 Remote Auto Connect514
+        const val KEY_V515PROGRESSAUTOSAVE515 = "v515progressAutoSave515" // v515 Progress Auto Save515
+        const val KEY_V515PROJECTAUTOSYNC515 = "v515projectAutoSync515" // v515 Project Auto Sync515
+        const val KEY_V515PROMPTAUTOSHOW515 = "v515promptAutoShow515" // v515 Prompt Auto Show515
+        const val KEY_V515PUSHNOTIFICATIONAUTO515 = "v515pushNotificationAuto515" // v515 Push Notification Auto515
+        const val KEY_V515RANGEAUTODETECT515 = "v515rangeAutoDetect515" // v515 Range Auto Detect515
+        const val KEY_V515RATEAUTOADJUST515 = "v515rateAutoAdjust515" // v515 Rate Auto Adjust515
+        const val KEY_V515RAWFORMATENABLED515 = "v515rawFormatEnabled515" // v515 Raw Format Enabled515
+        const val KEY_V515READAUTOSCROLL515 = "v515readAutoScroll515" // v515 Read Auto Scroll515
+        const val KEY_V515READYSTATEAUTO515 = "v515readyStateAuto515" // v515 Ready State Auto515
+        const val KEY_V515REALTIMESYNC515 = "v515realTimeSync515" // v515 Real Time Sync515
+        const val KEY_V515REBUILDAUTOINDEX515 = "v515rebuildAutoIndex515" // v515 Rebuild Auto Index515
+        const val KEY_V515RECENTAUTOCLEAN515 = "v515recentAutoClean515" // v515 Recent Auto Clean515
+        const val KEY_V515RECOVERAUTOBACKUP515 = "v515recoverAutoBackup515" // v515 Recover Auto Backup515
+        const val KEY_V515REGIONAUTOSELECT515 = "v515regionAutoSelect515" // v515 Region Auto Select515
+        const val KEY_V515REMOTEAUTOCONNECT515 = "v515remoteAutoConnect515" // v515 Remote Auto Connect515
+        const val KEY_V516PROGRESSAUTOSAVE516 = "v516progressAutoSave516" // v516 Progress Auto Save516
+        const val KEY_V516PROJECTAUTOSYNC516 = "v516projectAutoSync516" // v516 Project Auto Sync516
+        const val KEY_V516PROMPTAUTOSHOW516 = "v516promptAutoShow516" // v516 Prompt Auto Show516
+        const val KEY_V516PUSHNOTIFICATIONAUTO516 = "v516pushNotificationAuto516" // v516 Push Notification Auto516
+        const val KEY_V516RANGEAUTODETECT516 = "v516rangeAutoDetect516" // v516 Range Auto Detect516
+        const val KEY_V516RATEAUTOADJUST516 = "v516rateAutoAdjust516" // v516 Rate Auto Adjust516
+        const val KEY_V516RAWFORMATENABLED516 = "v516rawFormatEnabled516" // v516 Raw Format Enabled516
+        const val KEY_V516READAUTOSCROLL516 = "v516readAutoScroll516" // v516 Read Auto Scroll516
+        const val KEY_V516READYSTATEAUTO516 = "v516readyStateAuto516" // v516 Ready State Auto516
+        const val KEY_V516REALTIMESYNC516 = "v516realTimeSync516" // v516 Real Time Sync516
+        const val KEY_V516REBUILDAUTOINDEX516 = "v516rebuildAutoIndex516" // v516 Rebuild Auto Index516
+        const val KEY_V516RECENTAUTOCLEAN516 = "v516recentAutoClean516" // v516 Recent Auto Clean516
+        const val KEY_V516RECOVERAUTOBACKUP516 = "v516recoverAutoBackup516" // v516 Recover Auto Backup516
+        const val KEY_V516REGIONAUTOSELECT516 = "v516regionAutoSelect516" // v516 Region Auto Select516
+        const val KEY_V516REMOTEAUTOCONNECT516 = "v516remoteAutoConnect516" // v516 Remote Auto Connect516
+        const val KEY_V517PROGRESSAUTOSAVE517 = "v517progressAutoSave517" // v517 Progress Auto Save517
+        const val KEY_V517PROJECTAUTOSYNC517 = "v517projectAutoSync517" // v517 Project Auto Sync517
+        const val KEY_V517PROMPTAUTOSHOW517 = "v517promptAutoShow517" // v517 Prompt Auto Show517
+        const val KEY_V517PUSHNOTIFICATIONAUTO517 = "v517pushNotificationAuto517" // v517 Push Notification Auto517
+        const val KEY_V517RANGEAUTODETECT517 = "v517rangeAutoDetect517" // v517 Range Auto Detect517
+        const val KEY_V517RATEAUTOADJUST517 = "v517rateAutoAdjust517" // v517 Rate Auto Adjust517
+        const val KEY_V517RAWFORMATENABLED517 = "v517rawFormatEnabled517" // v517 Raw Format Enabled517
+        const val KEY_V517READAUTOSCROLL517 = "v517readAutoScroll517" // v517 Read Auto Scroll517
+        const val KEY_V517READYSTATEAUTO517 = "v517readyStateAuto517" // v517 Ready State Auto517
+        const val KEY_V517REALTIMESYNC517 = "v517realTimeSync517" // v517 Real Time Sync517
+        const val KEY_V517REBUILDAUTOINDEX517 = "v517rebuildAutoIndex517" // v517 Rebuild Auto Index517
+        const val KEY_V517RECENTAUTOCLEAN517 = "v517recentAutoClean517" // v517 Recent Auto Clean517
+        const val KEY_V517RECOVERAUTOBACKUP517 = "v517recoverAutoBackup517" // v517 Recover Auto Backup517
+        const val KEY_V517REGIONAUTOSELECT517 = "v517regionAutoSelect517" // v517 Region Auto Select517
+        const val KEY_V517REMOTEAUTOCONNECT517 = "v517remoteAutoConnect517" // v517 Remote Auto Connect517
+        const val KEY_V518PROGRESSAUTOSAVE518 = "v518progressAutoSave518" // v518 Progress Auto Save518
+        const val KEY_V518PROJECTAUTOSYNC518 = "v518projectAutoSync518" // v518 Project Auto Sync518
+        const val KEY_V518PROMPTAUTOSHOW518 = "v518promptAutoShow518" // v518 Prompt Auto Show518
+        const val KEY_V518PUSHNOTIFICATIONAUTO518 = "v518pushNotificationAuto518" // v518 Push Notification Auto518
+        const val KEY_V518RANGEAUTODETECT518 = "v518rangeAutoDetect518" // v518 Range Auto Detect518
+        const val KEY_V518RATEAUTOADJUST518 = "v518rateAutoAdjust518" // v518 Rate Auto Adjust518
+        const val KEY_V518RAWFORMATENABLED518 = "v518rawFormatEnabled518" // v518 Raw Format Enabled518
+        const val KEY_V518READAUTOSCROLL518 = "v518readAutoScroll518" // v518 Read Auto Scroll518
+        const val KEY_V518READYSTATEAUTO518 = "v518readyStateAuto518" // v518 Ready State Auto518
+        const val KEY_V518REALTIMESYNC518 = "v518realTimeSync518" // v518 Real Time Sync518
+        const val KEY_V518REBUILDAUTOINDEX518 = "v518rebuildAutoIndex518" // v518 Rebuild Auto Index518
+        const val KEY_V518RECENTAUTOCLEAN518 = "v518recentAutoClean518" // v518 Recent Auto Clean518
+        const val KEY_V518RECOVERAUTOBACKUP518 = "v518recoverAutoBackup518" // v518 Recover Auto Backup518
+        const val KEY_V518REGIONAUTOSELECT518 = "v518regionAutoSelect518" // v518 Region Auto Select518
+        const val KEY_V518REMOTEAUTOCONNECT518 = "v518remoteAutoConnect518" // v518 Remote Auto Connect518
+        const val KEY_V519PROGRESSAUTOSAVE519 = "v519progressAutoSave519" // v519 Progress Auto Save519
+        const val KEY_V519PROJECTAUTOSYNC519 = "v519projectAutoSync519" // v519 Project Auto Sync519
+        const val KEY_V519PROMPTAUTOSHOW519 = "v519promptAutoShow519" // v519 Prompt Auto Show519
+        const val KEY_V519PUSHNOTIFICATIONAUTO519 = "v519pushNotificationAuto519" // v519 Push Notification Auto519
+        const val KEY_V519RANGEAUTODETECT519 = "v519rangeAutoDetect519" // v519 Range Auto Detect519
+        const val KEY_V519RATEAUTOADJUST519 = "v519rateAutoAdjust519" // v519 Rate Auto Adjust519
+        const val KEY_V519RAWFORMATENABLED519 = "v519rawFormatEnabled519" // v519 Raw Format Enabled519
+        const val KEY_V519READAUTOSCROLL519 = "v519readAutoScroll519" // v519 Read Auto Scroll519
+        const val KEY_V519READYSTATEAUTO519 = "v519readyStateAuto519" // v519 Ready State Auto519
+        const val KEY_V519REALTIMESYNC519 = "v519realTimeSync519" // v519 Real Time Sync519
+        const val KEY_V519REBUILDAUTOINDEX519 = "v519rebuildAutoIndex519" // v519 Rebuild Auto Index519
+        const val KEY_V519RECENTAUTOCLEAN519 = "v519recentAutoClean519" // v519 Recent Auto Clean519
+        const val KEY_V519RECOVERAUTOBACKUP519 = "v519recoverAutoBackup519" // v519 Recover Auto Backup519
+        const val KEY_V519REGIONAUTOSELECT519 = "v519regionAutoSelect519" // v519 Region Auto Select519
+        const val KEY_V519REMOTEAUTOCONNECT519 = "v519remoteAutoConnect519" // v519 Remote Auto Connect519
+        const val KEY_V520PROGRESSAUTOSAVE520 = "v520progressAutoSave520" // v520 Progress Auto Save520
+        const val KEY_V520PROJECTAUTOSYNC520 = "v520projectAutoSync520" // v520 Project Auto Sync520
+        const val KEY_V520PROMPTAUTOSHOW520 = "v520promptAutoShow520" // v520 Prompt Auto Show520
+        const val KEY_V520PUSHNOTIFICATIONAUTO520 = "v520pushNotificationAuto520" // v520 Push Notification Auto520
+        const val KEY_V520RANGEAUTODETECT520 = "v520rangeAutoDetect520" // v520 Range Auto Detect520
+        const val KEY_V520RATEAUTOADJUST520 = "v520rateAutoAdjust520" // v520 Rate Auto Adjust520
+        const val KEY_V520RAWFORMATENABLED520 = "v520rawFormatEnabled520" // v520 Raw Format Enabled520
+        const val KEY_V520READAUTOSCROLL520 = "v520readAutoScroll520" // v520 Read Auto Scroll520
+        const val KEY_V520READYSTATEAUTO520 = "v520readyStateAuto520" // v520 Ready State Auto520
+        const val KEY_V520REALTIMESYNC520 = "v520realTimeSync520" // v520 Real Time Sync520
+        const val KEY_V520REBUILDAUTOINDEX520 = "v520rebuildAutoIndex520" // v520 Rebuild Auto Index520
+        const val KEY_V520RECENTAUTOCLEAN520 = "v520recentAutoClean520" // v520 Recent Auto Clean520
+        const val KEY_V520RECOVERAUTOBACKUP520 = "v520recoverAutoBackup520" // v520 Recover Auto Backup520
+        const val KEY_V520REGIONAUTOSELECT520 = "v520regionAutoSelect520" // v520 Region Auto Select520
+        const val KEY_V520REMOTEAUTOCONNECT520 = "v520remoteAutoConnect520" // v520 Remote Auto Connect520
     }
 }
