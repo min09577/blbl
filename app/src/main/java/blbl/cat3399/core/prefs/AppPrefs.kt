@@ -41648,6 +41648,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V580TYPEAUTOINFER580, false)
         set(value) = prefs.edit().putBoolean(KEY_V580TYPEAUTOINFER580, value).apply()
 
+    var v581updateAutoDownload581: Boolean
+        get() = prefs.getBoolean(KEY_V581UPDATEAUTODOWNLOAD581, false)
+        set(value) = prefs.edit().putBoolean(KEY_V581UPDATEAUTODOWNLOAD581, value).apply()
+
+    var v581uploadAutoRetry581: Boolean
+        get() = prefs.getBoolean(KEY_V581UPLOADAUTORETRY581, false)
+        set(value) = prefs.edit().putBoolean(KEY_V581UPLOADAUTORETRY581, value).apply()
+
+    var v581upscaleAutoEnhance581: Boolean
+        get() = prefs.getBoolean(KEY_V581UPSCALEAUTOENHANCE581, false)
+        set(value) = prefs.edit().putBoolean(KEY_V581UPSCALEAUTOENHANCE581, value).apply()
+
+    var v581useAutoOptimize581: Boolean
+        get() = prefs.getBoolean(KEY_V581USEAUTOOPTIMIZE581, false)
+        set(value) = prefs.edit().putBoolean(KEY_V581USEAUTOOPTIMIZE581, value).apply()
+
+    var v581valueAutoBind581: Boolean
+        get() = prefs.getBoolean(KEY_V581VALUEAUTOBIND581, false)
+        set(value) = prefs.edit().putBoolean(KEY_V581VALUEAUTOBIND581, value).apply()
+
+    var v581verifyAutoChecksum581: Boolean
+        get() = prefs.getBoolean(KEY_V581VERIFYAUTOCHECKSUM581, false)
+        set(value) = prefs.edit().putBoolean(KEY_V581VERIFYAUTOCHECKSUM581, value).apply()
+
+    var v581versionAutoCheck581: Boolean
+        get() = prefs.getBoolean(KEY_V581VERSIONAUTOCHECK581, false)
+        set(value) = prefs.edit().putBoolean(KEY_V581VERSIONAUTOCHECK581, value).apply()
+
+    var v581viewAutoSwitch581: Int
+        get() = prefs.getInt(KEY_V581VIEWAUTOSWITCH581, 0)
+        set(value) = prefs.edit().putInt(KEY_V581VIEWAUTOSWITCH581, value).apply()
+
+    var v581virtualDisplay581: Boolean
+        get() = prefs.getBoolean(KEY_V581VIRTUALDISPLAY581, false)
+        set(value) = prefs.edit().putBoolean(KEY_V581VIRTUALDISPLAY581, value).apply()
+
+    var v581visibleAutoToggle581: Boolean
+        get() = prefs.getBoolean(KEY_V581VISIBLEAUTOTOGGLE581, false)
+        set(value) = prefs.edit().putBoolean(KEY_V581VISIBLEAUTOTOGGLE581, value).apply()
+
+    var v581voiceAutoRecognize581: Boolean
+        get() = prefs.getBoolean(KEY_V581VOICEAUTORECOGNIZE581, false)
+        set(value) = prefs.edit().putBoolean(KEY_V581VOICEAUTORECOGNIZE581, value).apply()
+
+    var v581waitAutoTimeout581: Int
+        get() = prefs.getInt(KEY_V581WAITAUTOTIMEOUT581, 0)
+        set(value) = prefs.edit().putInt(KEY_V581WAITAUTOTIMEOUT581, value).apply()
+
+    var v581warmAutoStart581: Boolean
+        get() = prefs.getBoolean(KEY_V581WARMAUTOSTART581, false)
+        set(value) = prefs.edit().putBoolean(KEY_V581WARMAUTOSTART581, value).apply()
+
+    var v581warningAutoAlert581: Boolean
+        get() = prefs.getBoolean(KEY_V581WARNINGAUTOALERT581, false)
+        set(value) = prefs.edit().putBoolean(KEY_V581WARNINGAUTOALERT581, value).apply()
+
+    var v581watchAutoSync581: Boolean
+        get() = prefs.getBoolean(KEY_V581WATCHAUTOSYNC581, false)
+        set(value) = prefs.edit().putBoolean(KEY_V581WATCHAUTOSYNC581, value).apply()
+
+    var v582updateAutoDownload582: Boolean
+        get() = prefs.getBoolean(KEY_V582UPDATEAUTODOWNLOAD582, false)
+        set(value) = prefs.edit().putBoolean(KEY_V582UPDATEAUTODOWNLOAD582, value).apply()
+
+    var v582uploadAutoRetry582: Boolean
+        get() = prefs.getBoolean(KEY_V582UPLOADAUTORETRY582, false)
+        set(value) = prefs.edit().putBoolean(KEY_V582UPLOADAUTORETRY582, value).apply()
+
+    var v582upscaleAutoEnhance582: Boolean
+        get() = prefs.getBoolean(KEY_V582UPSCALEAUTOENHANCE582, false)
+        set(value) = prefs.edit().putBoolean(KEY_V582UPSCALEAUTOENHANCE582, value).apply()
+
+    var v582useAutoOptimize582: Boolean
+        get() = prefs.getBoolean(KEY_V582USEAUTOOPTIMIZE582, false)
+        set(value) = prefs.edit().putBoolean(KEY_V582USEAUTOOPTIMIZE582, value).apply()
+
+    var v582valueAutoBind582: Boolean
+        get() = prefs.getBoolean(KEY_V582VALUEAUTOBIND582, false)
+        set(value) = prefs.edit().putBoolean(KEY_V582VALUEAUTOBIND582, value).apply()
+
+    var v582verifyAutoChecksum582: Boolean
+        get() = prefs.getBoolean(KEY_V582VERIFYAUTOCHECKSUM582, false)
+        set(value) = prefs.edit().putBoolean(KEY_V582VERIFYAUTOCHECKSUM582, value).apply()
+
+    var v582versionAutoCheck582: Boolean
+        get() = prefs.getBoolean(KEY_V582VERSIONAUTOCHECK582, false)
+        set(value) = prefs.edit().putBoolean(KEY_V582VERSIONAUTOCHECK582, value).apply()
+
+    var v582viewAutoSwitch582: Int
+        get() = prefs.getInt(KEY_V582VIEWAUTOSWITCH582, 0)
+        set(value) = prefs.edit().putInt(KEY_V582VIEWAUTOSWITCH582, value).apply()
+
+    var v582virtualDisplay582: Boolean
+        get() = prefs.getBoolean(KEY_V582VIRTUALDISPLAY582, false)
+        set(value) = prefs.edit().putBoolean(KEY_V582VIRTUALDISPLAY582, value).apply()
+
+    var v582visibleAutoToggle582: Boolean
+        get() = prefs.getBoolean(KEY_V582VISIBLEAUTOTOGGLE582, false)
+        set(value) = prefs.edit().putBoolean(KEY_V582VISIBLEAUTOTOGGLE582, value).apply()
+
+    var v582voiceAutoRecognize582: Boolean
+        get() = prefs.getBoolean(KEY_V582VOICEAUTORECOGNIZE582, false)
+        set(value) = prefs.edit().putBoolean(KEY_V582VOICEAUTORECOGNIZE582, value).apply()
+
+    var v582waitAutoTimeout582: Int
+        get() = prefs.getInt(KEY_V582WAITAUTOTIMEOUT582, 0)
+        set(value) = prefs.edit().putInt(KEY_V582WAITAUTOTIMEOUT582, value).apply()
+
+    var v582warmAutoStart582: Boolean
+        get() = prefs.getBoolean(KEY_V582WARMAUTOSTART582, false)
+        set(value) = prefs.edit().putBoolean(KEY_V582WARMAUTOSTART582, value).apply()
+
+    var v582warningAutoAlert582: Boolean
+        get() = prefs.getBoolean(KEY_V582WARNINGAUTOALERT582, false)
+        set(value) = prefs.edit().putBoolean(KEY_V582WARNINGAUTOALERT582, value).apply()
+
+    var v582watchAutoSync582: Boolean
+        get() = prefs.getBoolean(KEY_V582WATCHAUTOSYNC582, false)
+        set(value) = prefs.edit().putBoolean(KEY_V582WATCHAUTOSYNC582, value).apply()
+
+    var v583updateAutoDownload583: Boolean
+        get() = prefs.getBoolean(KEY_V583UPDATEAUTODOWNLOAD583, false)
+        set(value) = prefs.edit().putBoolean(KEY_V583UPDATEAUTODOWNLOAD583, value).apply()
+
+    var v583uploadAutoRetry583: Boolean
+        get() = prefs.getBoolean(KEY_V583UPLOADAUTORETRY583, false)
+        set(value) = prefs.edit().putBoolean(KEY_V583UPLOADAUTORETRY583, value).apply()
+
+    var v583upscaleAutoEnhance583: Boolean
+        get() = prefs.getBoolean(KEY_V583UPSCALEAUTOENHANCE583, false)
+        set(value) = prefs.edit().putBoolean(KEY_V583UPSCALEAUTOENHANCE583, value).apply()
+
+    var v583useAutoOptimize583: Boolean
+        get() = prefs.getBoolean(KEY_V583USEAUTOOPTIMIZE583, false)
+        set(value) = prefs.edit().putBoolean(KEY_V583USEAUTOOPTIMIZE583, value).apply()
+
+    var v583valueAutoBind583: Boolean
+        get() = prefs.getBoolean(KEY_V583VALUEAUTOBIND583, false)
+        set(value) = prefs.edit().putBoolean(KEY_V583VALUEAUTOBIND583, value).apply()
+
+    var v583verifyAutoChecksum583: Boolean
+        get() = prefs.getBoolean(KEY_V583VERIFYAUTOCHECKSUM583, false)
+        set(value) = prefs.edit().putBoolean(KEY_V583VERIFYAUTOCHECKSUM583, value).apply()
+
+    var v583versionAutoCheck583: Boolean
+        get() = prefs.getBoolean(KEY_V583VERSIONAUTOCHECK583, false)
+        set(value) = prefs.edit().putBoolean(KEY_V583VERSIONAUTOCHECK583, value).apply()
+
+    var v583viewAutoSwitch583: Int
+        get() = prefs.getInt(KEY_V583VIEWAUTOSWITCH583, 0)
+        set(value) = prefs.edit().putInt(KEY_V583VIEWAUTOSWITCH583, value).apply()
+
+    var v583virtualDisplay583: Boolean
+        get() = prefs.getBoolean(KEY_V583VIRTUALDISPLAY583, false)
+        set(value) = prefs.edit().putBoolean(KEY_V583VIRTUALDISPLAY583, value).apply()
+
+    var v583visibleAutoToggle583: Boolean
+        get() = prefs.getBoolean(KEY_V583VISIBLEAUTOTOGGLE583, false)
+        set(value) = prefs.edit().putBoolean(KEY_V583VISIBLEAUTOTOGGLE583, value).apply()
+
+    var v583voiceAutoRecognize583: Boolean
+        get() = prefs.getBoolean(KEY_V583VOICEAUTORECOGNIZE583, false)
+        set(value) = prefs.edit().putBoolean(KEY_V583VOICEAUTORECOGNIZE583, value).apply()
+
+    var v583waitAutoTimeout583: Int
+        get() = prefs.getInt(KEY_V583WAITAUTOTIMEOUT583, 0)
+        set(value) = prefs.edit().putInt(KEY_V583WAITAUTOTIMEOUT583, value).apply()
+
+    var v583warmAutoStart583: Boolean
+        get() = prefs.getBoolean(KEY_V583WARMAUTOSTART583, false)
+        set(value) = prefs.edit().putBoolean(KEY_V583WARMAUTOSTART583, value).apply()
+
+    var v583warningAutoAlert583: Boolean
+        get() = prefs.getBoolean(KEY_V583WARNINGAUTOALERT583, false)
+        set(value) = prefs.edit().putBoolean(KEY_V583WARNINGAUTOALERT583, value).apply()
+
+    var v583watchAutoSync583: Boolean
+        get() = prefs.getBoolean(KEY_V583WATCHAUTOSYNC583, false)
+        set(value) = prefs.edit().putBoolean(KEY_V583WATCHAUTOSYNC583, value).apply()
+
+    var v584updateAutoDownload584: Boolean
+        get() = prefs.getBoolean(KEY_V584UPDATEAUTODOWNLOAD584, false)
+        set(value) = prefs.edit().putBoolean(KEY_V584UPDATEAUTODOWNLOAD584, value).apply()
+
+    var v584uploadAutoRetry584: Boolean
+        get() = prefs.getBoolean(KEY_V584UPLOADAUTORETRY584, false)
+        set(value) = prefs.edit().putBoolean(KEY_V584UPLOADAUTORETRY584, value).apply()
+
+    var v584upscaleAutoEnhance584: Boolean
+        get() = prefs.getBoolean(KEY_V584UPSCALEAUTOENHANCE584, false)
+        set(value) = prefs.edit().putBoolean(KEY_V584UPSCALEAUTOENHANCE584, value).apply()
+
+    var v584useAutoOptimize584: Boolean
+        get() = prefs.getBoolean(KEY_V584USEAUTOOPTIMIZE584, false)
+        set(value) = prefs.edit().putBoolean(KEY_V584USEAUTOOPTIMIZE584, value).apply()
+
+    var v584valueAutoBind584: Boolean
+        get() = prefs.getBoolean(KEY_V584VALUEAUTOBIND584, false)
+        set(value) = prefs.edit().putBoolean(KEY_V584VALUEAUTOBIND584, value).apply()
+
+    var v584verifyAutoChecksum584: Boolean
+        get() = prefs.getBoolean(KEY_V584VERIFYAUTOCHECKSUM584, false)
+        set(value) = prefs.edit().putBoolean(KEY_V584VERIFYAUTOCHECKSUM584, value).apply()
+
+    var v584versionAutoCheck584: Boolean
+        get() = prefs.getBoolean(KEY_V584VERSIONAUTOCHECK584, false)
+        set(value) = prefs.edit().putBoolean(KEY_V584VERSIONAUTOCHECK584, value).apply()
+
+    var v584viewAutoSwitch584: Int
+        get() = prefs.getInt(KEY_V584VIEWAUTOSWITCH584, 0)
+        set(value) = prefs.edit().putInt(KEY_V584VIEWAUTOSWITCH584, value).apply()
+
+    var v584virtualDisplay584: Boolean
+        get() = prefs.getBoolean(KEY_V584VIRTUALDISPLAY584, false)
+        set(value) = prefs.edit().putBoolean(KEY_V584VIRTUALDISPLAY584, value).apply()
+
+    var v584visibleAutoToggle584: Boolean
+        get() = prefs.getBoolean(KEY_V584VISIBLEAUTOTOGGLE584, false)
+        set(value) = prefs.edit().putBoolean(KEY_V584VISIBLEAUTOTOGGLE584, value).apply()
+
+    var v584voiceAutoRecognize584: Boolean
+        get() = prefs.getBoolean(KEY_V584VOICEAUTORECOGNIZE584, false)
+        set(value) = prefs.edit().putBoolean(KEY_V584VOICEAUTORECOGNIZE584, value).apply()
+
+    var v584waitAutoTimeout584: Int
+        get() = prefs.getInt(KEY_V584WAITAUTOTIMEOUT584, 0)
+        set(value) = prefs.edit().putInt(KEY_V584WAITAUTOTIMEOUT584, value).apply()
+
+    var v584warmAutoStart584: Boolean
+        get() = prefs.getBoolean(KEY_V584WARMAUTOSTART584, false)
+        set(value) = prefs.edit().putBoolean(KEY_V584WARMAUTOSTART584, value).apply()
+
+    var v584warningAutoAlert584: Boolean
+        get() = prefs.getBoolean(KEY_V584WARNINGAUTOALERT584, false)
+        set(value) = prefs.edit().putBoolean(KEY_V584WARNINGAUTOALERT584, value).apply()
+
+    var v584watchAutoSync584: Boolean
+        get() = prefs.getBoolean(KEY_V584WATCHAUTOSYNC584, false)
+        set(value) = prefs.edit().putBoolean(KEY_V584WATCHAUTOSYNC584, value).apply()
+
+    var v585updateAutoDownload585: Boolean
+        get() = prefs.getBoolean(KEY_V585UPDATEAUTODOWNLOAD585, false)
+        set(value) = prefs.edit().putBoolean(KEY_V585UPDATEAUTODOWNLOAD585, value).apply()
+
+    var v585uploadAutoRetry585: Boolean
+        get() = prefs.getBoolean(KEY_V585UPLOADAUTORETRY585, false)
+        set(value) = prefs.edit().putBoolean(KEY_V585UPLOADAUTORETRY585, value).apply()
+
+    var v585upscaleAutoEnhance585: Boolean
+        get() = prefs.getBoolean(KEY_V585UPSCALEAUTOENHANCE585, false)
+        set(value) = prefs.edit().putBoolean(KEY_V585UPSCALEAUTOENHANCE585, value).apply()
+
+    var v585useAutoOptimize585: Boolean
+        get() = prefs.getBoolean(KEY_V585USEAUTOOPTIMIZE585, false)
+        set(value) = prefs.edit().putBoolean(KEY_V585USEAUTOOPTIMIZE585, value).apply()
+
+    var v585valueAutoBind585: Boolean
+        get() = prefs.getBoolean(KEY_V585VALUEAUTOBIND585, false)
+        set(value) = prefs.edit().putBoolean(KEY_V585VALUEAUTOBIND585, value).apply()
+
+    var v585verifyAutoChecksum585: Boolean
+        get() = prefs.getBoolean(KEY_V585VERIFYAUTOCHECKSUM585, false)
+        set(value) = prefs.edit().putBoolean(KEY_V585VERIFYAUTOCHECKSUM585, value).apply()
+
+    var v585versionAutoCheck585: Boolean
+        get() = prefs.getBoolean(KEY_V585VERSIONAUTOCHECK585, false)
+        set(value) = prefs.edit().putBoolean(KEY_V585VERSIONAUTOCHECK585, value).apply()
+
+    var v585viewAutoSwitch585: Int
+        get() = prefs.getInt(KEY_V585VIEWAUTOSWITCH585, 0)
+        set(value) = prefs.edit().putInt(KEY_V585VIEWAUTOSWITCH585, value).apply()
+
+    var v585virtualDisplay585: Boolean
+        get() = prefs.getBoolean(KEY_V585VIRTUALDISPLAY585, false)
+        set(value) = prefs.edit().putBoolean(KEY_V585VIRTUALDISPLAY585, value).apply()
+
+    var v585visibleAutoToggle585: Boolean
+        get() = prefs.getBoolean(KEY_V585VISIBLEAUTOTOGGLE585, false)
+        set(value) = prefs.edit().putBoolean(KEY_V585VISIBLEAUTOTOGGLE585, value).apply()
+
+    var v585voiceAutoRecognize585: Boolean
+        get() = prefs.getBoolean(KEY_V585VOICEAUTORECOGNIZE585, false)
+        set(value) = prefs.edit().putBoolean(KEY_V585VOICEAUTORECOGNIZE585, value).apply()
+
+    var v585waitAutoTimeout585: Int
+        get() = prefs.getInt(KEY_V585WAITAUTOTIMEOUT585, 0)
+        set(value) = prefs.edit().putInt(KEY_V585WAITAUTOTIMEOUT585, value).apply()
+
+    var v585warmAutoStart585: Boolean
+        get() = prefs.getBoolean(KEY_V585WARMAUTOSTART585, false)
+        set(value) = prefs.edit().putBoolean(KEY_V585WARMAUTOSTART585, value).apply()
+
+    var v585warningAutoAlert585: Boolean
+        get() = prefs.getBoolean(KEY_V585WARNINGAUTOALERT585, false)
+        set(value) = prefs.edit().putBoolean(KEY_V585WARNINGAUTOALERT585, value).apply()
+
+    var v585watchAutoSync585: Boolean
+        get() = prefs.getBoolean(KEY_V585WATCHAUTOSYNC585, false)
+        set(value) = prefs.edit().putBoolean(KEY_V585WATCHAUTOSYNC585, value).apply()
+
+    var v586updateAutoDownload586: Boolean
+        get() = prefs.getBoolean(KEY_V586UPDATEAUTODOWNLOAD586, false)
+        set(value) = prefs.edit().putBoolean(KEY_V586UPDATEAUTODOWNLOAD586, value).apply()
+
+    var v586uploadAutoRetry586: Boolean
+        get() = prefs.getBoolean(KEY_V586UPLOADAUTORETRY586, false)
+        set(value) = prefs.edit().putBoolean(KEY_V586UPLOADAUTORETRY586, value).apply()
+
+    var v586upscaleAutoEnhance586: Boolean
+        get() = prefs.getBoolean(KEY_V586UPSCALEAUTOENHANCE586, false)
+        set(value) = prefs.edit().putBoolean(KEY_V586UPSCALEAUTOENHANCE586, value).apply()
+
+    var v586useAutoOptimize586: Boolean
+        get() = prefs.getBoolean(KEY_V586USEAUTOOPTIMIZE586, false)
+        set(value) = prefs.edit().putBoolean(KEY_V586USEAUTOOPTIMIZE586, value).apply()
+
+    var v586valueAutoBind586: Boolean
+        get() = prefs.getBoolean(KEY_V586VALUEAUTOBIND586, false)
+        set(value) = prefs.edit().putBoolean(KEY_V586VALUEAUTOBIND586, value).apply()
+
+    var v586verifyAutoChecksum586: Boolean
+        get() = prefs.getBoolean(KEY_V586VERIFYAUTOCHECKSUM586, false)
+        set(value) = prefs.edit().putBoolean(KEY_V586VERIFYAUTOCHECKSUM586, value).apply()
+
+    var v586versionAutoCheck586: Boolean
+        get() = prefs.getBoolean(KEY_V586VERSIONAUTOCHECK586, false)
+        set(value) = prefs.edit().putBoolean(KEY_V586VERSIONAUTOCHECK586, value).apply()
+
+    var v586viewAutoSwitch586: Int
+        get() = prefs.getInt(KEY_V586VIEWAUTOSWITCH586, 0)
+        set(value) = prefs.edit().putInt(KEY_V586VIEWAUTOSWITCH586, value).apply()
+
+    var v586virtualDisplay586: Boolean
+        get() = prefs.getBoolean(KEY_V586VIRTUALDISPLAY586, false)
+        set(value) = prefs.edit().putBoolean(KEY_V586VIRTUALDISPLAY586, value).apply()
+
+    var v586visibleAutoToggle586: Boolean
+        get() = prefs.getBoolean(KEY_V586VISIBLEAUTOTOGGLE586, false)
+        set(value) = prefs.edit().putBoolean(KEY_V586VISIBLEAUTOTOGGLE586, value).apply()
+
+    var v586voiceAutoRecognize586: Boolean
+        get() = prefs.getBoolean(KEY_V586VOICEAUTORECOGNIZE586, false)
+        set(value) = prefs.edit().putBoolean(KEY_V586VOICEAUTORECOGNIZE586, value).apply()
+
+    var v586waitAutoTimeout586: Int
+        get() = prefs.getInt(KEY_V586WAITAUTOTIMEOUT586, 0)
+        set(value) = prefs.edit().putInt(KEY_V586WAITAUTOTIMEOUT586, value).apply()
+
+    var v586warmAutoStart586: Boolean
+        get() = prefs.getBoolean(KEY_V586WARMAUTOSTART586, false)
+        set(value) = prefs.edit().putBoolean(KEY_V586WARMAUTOSTART586, value).apply()
+
+    var v586warningAutoAlert586: Boolean
+        get() = prefs.getBoolean(KEY_V586WARNINGAUTOALERT586, false)
+        set(value) = prefs.edit().putBoolean(KEY_V586WARNINGAUTOALERT586, value).apply()
+
+    var v586watchAutoSync586: Boolean
+        get() = prefs.getBoolean(KEY_V586WATCHAUTOSYNC586, false)
+        set(value) = prefs.edit().putBoolean(KEY_V586WATCHAUTOSYNC586, value).apply()
+
+    var v587updateAutoDownload587: Boolean
+        get() = prefs.getBoolean(KEY_V587UPDATEAUTODOWNLOAD587, false)
+        set(value) = prefs.edit().putBoolean(KEY_V587UPDATEAUTODOWNLOAD587, value).apply()
+
+    var v587uploadAutoRetry587: Boolean
+        get() = prefs.getBoolean(KEY_V587UPLOADAUTORETRY587, false)
+        set(value) = prefs.edit().putBoolean(KEY_V587UPLOADAUTORETRY587, value).apply()
+
+    var v587upscaleAutoEnhance587: Boolean
+        get() = prefs.getBoolean(KEY_V587UPSCALEAUTOENHANCE587, false)
+        set(value) = prefs.edit().putBoolean(KEY_V587UPSCALEAUTOENHANCE587, value).apply()
+
+    var v587useAutoOptimize587: Boolean
+        get() = prefs.getBoolean(KEY_V587USEAUTOOPTIMIZE587, false)
+        set(value) = prefs.edit().putBoolean(KEY_V587USEAUTOOPTIMIZE587, value).apply()
+
+    var v587valueAutoBind587: Boolean
+        get() = prefs.getBoolean(KEY_V587VALUEAUTOBIND587, false)
+        set(value) = prefs.edit().putBoolean(KEY_V587VALUEAUTOBIND587, value).apply()
+
+    var v587verifyAutoChecksum587: Boolean
+        get() = prefs.getBoolean(KEY_V587VERIFYAUTOCHECKSUM587, false)
+        set(value) = prefs.edit().putBoolean(KEY_V587VERIFYAUTOCHECKSUM587, value).apply()
+
+    var v587versionAutoCheck587: Boolean
+        get() = prefs.getBoolean(KEY_V587VERSIONAUTOCHECK587, false)
+        set(value) = prefs.edit().putBoolean(KEY_V587VERSIONAUTOCHECK587, value).apply()
+
+    var v587viewAutoSwitch587: Int
+        get() = prefs.getInt(KEY_V587VIEWAUTOSWITCH587, 0)
+        set(value) = prefs.edit().putInt(KEY_V587VIEWAUTOSWITCH587, value).apply()
+
+    var v587virtualDisplay587: Boolean
+        get() = prefs.getBoolean(KEY_V587VIRTUALDISPLAY587, false)
+        set(value) = prefs.edit().putBoolean(KEY_V587VIRTUALDISPLAY587, value).apply()
+
+    var v587visibleAutoToggle587: Boolean
+        get() = prefs.getBoolean(KEY_V587VISIBLEAUTOTOGGLE587, false)
+        set(value) = prefs.edit().putBoolean(KEY_V587VISIBLEAUTOTOGGLE587, value).apply()
+
+    var v587voiceAutoRecognize587: Boolean
+        get() = prefs.getBoolean(KEY_V587VOICEAUTORECOGNIZE587, false)
+        set(value) = prefs.edit().putBoolean(KEY_V587VOICEAUTORECOGNIZE587, value).apply()
+
+    var v587waitAutoTimeout587: Int
+        get() = prefs.getInt(KEY_V587WAITAUTOTIMEOUT587, 0)
+        set(value) = prefs.edit().putInt(KEY_V587WAITAUTOTIMEOUT587, value).apply()
+
+    var v587warmAutoStart587: Boolean
+        get() = prefs.getBoolean(KEY_V587WARMAUTOSTART587, false)
+        set(value) = prefs.edit().putBoolean(KEY_V587WARMAUTOSTART587, value).apply()
+
+    var v587warningAutoAlert587: Boolean
+        get() = prefs.getBoolean(KEY_V587WARNINGAUTOALERT587, false)
+        set(value) = prefs.edit().putBoolean(KEY_V587WARNINGAUTOALERT587, value).apply()
+
+    var v587watchAutoSync587: Boolean
+        get() = prefs.getBoolean(KEY_V587WATCHAUTOSYNC587, false)
+        set(value) = prefs.edit().putBoolean(KEY_V587WATCHAUTOSYNC587, value).apply()
+
+    var v588updateAutoDownload588: Boolean
+        get() = prefs.getBoolean(KEY_V588UPDATEAUTODOWNLOAD588, false)
+        set(value) = prefs.edit().putBoolean(KEY_V588UPDATEAUTODOWNLOAD588, value).apply()
+
+    var v588uploadAutoRetry588: Boolean
+        get() = prefs.getBoolean(KEY_V588UPLOADAUTORETRY588, false)
+        set(value) = prefs.edit().putBoolean(KEY_V588UPLOADAUTORETRY588, value).apply()
+
+    var v588upscaleAutoEnhance588: Boolean
+        get() = prefs.getBoolean(KEY_V588UPSCALEAUTOENHANCE588, false)
+        set(value) = prefs.edit().putBoolean(KEY_V588UPSCALEAUTOENHANCE588, value).apply()
+
+    var v588useAutoOptimize588: Boolean
+        get() = prefs.getBoolean(KEY_V588USEAUTOOPTIMIZE588, false)
+        set(value) = prefs.edit().putBoolean(KEY_V588USEAUTOOPTIMIZE588, value).apply()
+
+    var v588valueAutoBind588: Boolean
+        get() = prefs.getBoolean(KEY_V588VALUEAUTOBIND588, false)
+        set(value) = prefs.edit().putBoolean(KEY_V588VALUEAUTOBIND588, value).apply()
+
+    var v588verifyAutoChecksum588: Boolean
+        get() = prefs.getBoolean(KEY_V588VERIFYAUTOCHECKSUM588, false)
+        set(value) = prefs.edit().putBoolean(KEY_V588VERIFYAUTOCHECKSUM588, value).apply()
+
+    var v588versionAutoCheck588: Boolean
+        get() = prefs.getBoolean(KEY_V588VERSIONAUTOCHECK588, false)
+        set(value) = prefs.edit().putBoolean(KEY_V588VERSIONAUTOCHECK588, value).apply()
+
+    var v588viewAutoSwitch588: Int
+        get() = prefs.getInt(KEY_V588VIEWAUTOSWITCH588, 0)
+        set(value) = prefs.edit().putInt(KEY_V588VIEWAUTOSWITCH588, value).apply()
+
+    var v588virtualDisplay588: Boolean
+        get() = prefs.getBoolean(KEY_V588VIRTUALDISPLAY588, false)
+        set(value) = prefs.edit().putBoolean(KEY_V588VIRTUALDISPLAY588, value).apply()
+
+    var v588visibleAutoToggle588: Boolean
+        get() = prefs.getBoolean(KEY_V588VISIBLEAUTOTOGGLE588, false)
+        set(value) = prefs.edit().putBoolean(KEY_V588VISIBLEAUTOTOGGLE588, value).apply()
+
+    var v588voiceAutoRecognize588: Boolean
+        get() = prefs.getBoolean(KEY_V588VOICEAUTORECOGNIZE588, false)
+        set(value) = prefs.edit().putBoolean(KEY_V588VOICEAUTORECOGNIZE588, value).apply()
+
+    var v588waitAutoTimeout588: Int
+        get() = prefs.getInt(KEY_V588WAITAUTOTIMEOUT588, 0)
+        set(value) = prefs.edit().putInt(KEY_V588WAITAUTOTIMEOUT588, value).apply()
+
+    var v588warmAutoStart588: Boolean
+        get() = prefs.getBoolean(KEY_V588WARMAUTOSTART588, false)
+        set(value) = prefs.edit().putBoolean(KEY_V588WARMAUTOSTART588, value).apply()
+
+    var v588warningAutoAlert588: Boolean
+        get() = prefs.getBoolean(KEY_V588WARNINGAUTOALERT588, false)
+        set(value) = prefs.edit().putBoolean(KEY_V588WARNINGAUTOALERT588, value).apply()
+
+    var v588watchAutoSync588: Boolean
+        get() = prefs.getBoolean(KEY_V588WATCHAUTOSYNC588, false)
+        set(value) = prefs.edit().putBoolean(KEY_V588WATCHAUTOSYNC588, value).apply()
+
+    var v589updateAutoDownload589: Boolean
+        get() = prefs.getBoolean(KEY_V589UPDATEAUTODOWNLOAD589, false)
+        set(value) = prefs.edit().putBoolean(KEY_V589UPDATEAUTODOWNLOAD589, value).apply()
+
+    var v589uploadAutoRetry589: Boolean
+        get() = prefs.getBoolean(KEY_V589UPLOADAUTORETRY589, false)
+        set(value) = prefs.edit().putBoolean(KEY_V589UPLOADAUTORETRY589, value).apply()
+
+    var v589upscaleAutoEnhance589: Boolean
+        get() = prefs.getBoolean(KEY_V589UPSCALEAUTOENHANCE589, false)
+        set(value) = prefs.edit().putBoolean(KEY_V589UPSCALEAUTOENHANCE589, value).apply()
+
+    var v589useAutoOptimize589: Boolean
+        get() = prefs.getBoolean(KEY_V589USEAUTOOPTIMIZE589, false)
+        set(value) = prefs.edit().putBoolean(KEY_V589USEAUTOOPTIMIZE589, value).apply()
+
+    var v589valueAutoBind589: Boolean
+        get() = prefs.getBoolean(KEY_V589VALUEAUTOBIND589, false)
+        set(value) = prefs.edit().putBoolean(KEY_V589VALUEAUTOBIND589, value).apply()
+
+    var v589verifyAutoChecksum589: Boolean
+        get() = prefs.getBoolean(KEY_V589VERIFYAUTOCHECKSUM589, false)
+        set(value) = prefs.edit().putBoolean(KEY_V589VERIFYAUTOCHECKSUM589, value).apply()
+
+    var v589versionAutoCheck589: Boolean
+        get() = prefs.getBoolean(KEY_V589VERSIONAUTOCHECK589, false)
+        set(value) = prefs.edit().putBoolean(KEY_V589VERSIONAUTOCHECK589, value).apply()
+
+    var v589viewAutoSwitch589: Int
+        get() = prefs.getInt(KEY_V589VIEWAUTOSWITCH589, 0)
+        set(value) = prefs.edit().putInt(KEY_V589VIEWAUTOSWITCH589, value).apply()
+
+    var v589virtualDisplay589: Boolean
+        get() = prefs.getBoolean(KEY_V589VIRTUALDISPLAY589, false)
+        set(value) = prefs.edit().putBoolean(KEY_V589VIRTUALDISPLAY589, value).apply()
+
+    var v589visibleAutoToggle589: Boolean
+        get() = prefs.getBoolean(KEY_V589VISIBLEAUTOTOGGLE589, false)
+        set(value) = prefs.edit().putBoolean(KEY_V589VISIBLEAUTOTOGGLE589, value).apply()
+
+    var v589voiceAutoRecognize589: Boolean
+        get() = prefs.getBoolean(KEY_V589VOICEAUTORECOGNIZE589, false)
+        set(value) = prefs.edit().putBoolean(KEY_V589VOICEAUTORECOGNIZE589, value).apply()
+
+    var v589waitAutoTimeout589: Int
+        get() = prefs.getInt(KEY_V589WAITAUTOTIMEOUT589, 0)
+        set(value) = prefs.edit().putInt(KEY_V589WAITAUTOTIMEOUT589, value).apply()
+
+    var v589warmAutoStart589: Boolean
+        get() = prefs.getBoolean(KEY_V589WARMAUTOSTART589, false)
+        set(value) = prefs.edit().putBoolean(KEY_V589WARMAUTOSTART589, value).apply()
+
+    var v589warningAutoAlert589: Boolean
+        get() = prefs.getBoolean(KEY_V589WARNINGAUTOALERT589, false)
+        set(value) = prefs.edit().putBoolean(KEY_V589WARNINGAUTOALERT589, value).apply()
+
+    var v589watchAutoSync589: Boolean
+        get() = prefs.getBoolean(KEY_V589WATCHAUTOSYNC589, false)
+        set(value) = prefs.edit().putBoolean(KEY_V589WATCHAUTOSYNC589, value).apply()
+
+    var v590updateAutoDownload590: Boolean
+        get() = prefs.getBoolean(KEY_V590UPDATEAUTODOWNLOAD590, false)
+        set(value) = prefs.edit().putBoolean(KEY_V590UPDATEAUTODOWNLOAD590, value).apply()
+
+    var v590uploadAutoRetry590: Boolean
+        get() = prefs.getBoolean(KEY_V590UPLOADAUTORETRY590, false)
+        set(value) = prefs.edit().putBoolean(KEY_V590UPLOADAUTORETRY590, value).apply()
+
+    var v590upscaleAutoEnhance590: Boolean
+        get() = prefs.getBoolean(KEY_V590UPSCALEAUTOENHANCE590, false)
+        set(value) = prefs.edit().putBoolean(KEY_V590UPSCALEAUTOENHANCE590, value).apply()
+
+    var v590useAutoOptimize590: Boolean
+        get() = prefs.getBoolean(KEY_V590USEAUTOOPTIMIZE590, false)
+        set(value) = prefs.edit().putBoolean(KEY_V590USEAUTOOPTIMIZE590, value).apply()
+
+    var v590valueAutoBind590: Boolean
+        get() = prefs.getBoolean(KEY_V590VALUEAUTOBIND590, false)
+        set(value) = prefs.edit().putBoolean(KEY_V590VALUEAUTOBIND590, value).apply()
+
+    var v590verifyAutoChecksum590: Boolean
+        get() = prefs.getBoolean(KEY_V590VERIFYAUTOCHECKSUM590, false)
+        set(value) = prefs.edit().putBoolean(KEY_V590VERIFYAUTOCHECKSUM590, value).apply()
+
+    var v590versionAutoCheck590: Boolean
+        get() = prefs.getBoolean(KEY_V590VERSIONAUTOCHECK590, false)
+        set(value) = prefs.edit().putBoolean(KEY_V590VERSIONAUTOCHECK590, value).apply()
+
+    var v590viewAutoSwitch590: Int
+        get() = prefs.getInt(KEY_V590VIEWAUTOSWITCH590, 0)
+        set(value) = prefs.edit().putInt(KEY_V590VIEWAUTOSWITCH590, value).apply()
+
+    var v590virtualDisplay590: Boolean
+        get() = prefs.getBoolean(KEY_V590VIRTUALDISPLAY590, false)
+        set(value) = prefs.edit().putBoolean(KEY_V590VIRTUALDISPLAY590, value).apply()
+
+    var v590visibleAutoToggle590: Boolean
+        get() = prefs.getBoolean(KEY_V590VISIBLEAUTOTOGGLE590, false)
+        set(value) = prefs.edit().putBoolean(KEY_V590VISIBLEAUTOTOGGLE590, value).apply()
+
+    var v590voiceAutoRecognize590: Boolean
+        get() = prefs.getBoolean(KEY_V590VOICEAUTORECOGNIZE590, false)
+        set(value) = prefs.edit().putBoolean(KEY_V590VOICEAUTORECOGNIZE590, value).apply()
+
+    var v590waitAutoTimeout590: Int
+        get() = prefs.getInt(KEY_V590WAITAUTOTIMEOUT590, 0)
+        set(value) = prefs.edit().putInt(KEY_V590WAITAUTOTIMEOUT590, value).apply()
+
+    var v590warmAutoStart590: Boolean
+        get() = prefs.getBoolean(KEY_V590WARMAUTOSTART590, false)
+        set(value) = prefs.edit().putBoolean(KEY_V590WARMAUTOSTART590, value).apply()
+
+    var v590warningAutoAlert590: Boolean
+        get() = prefs.getBoolean(KEY_V590WARNINGAUTOALERT590, false)
+        set(value) = prefs.edit().putBoolean(KEY_V590WARNINGAUTOALERT590, value).apply()
+
+    var v590watchAutoSync590: Boolean
+        get() = prefs.getBoolean(KEY_V590WATCHAUTOSYNC590, false)
+        set(value) = prefs.edit().putBoolean(KEY_V590WATCHAUTOSYNC590, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -52930,5 +53530,155 @@ class AppPrefs(context: Context) {
         const val KEY_V580TRIMAUTOCLEAN580 = "v580trimAutoClean580" // v580 Trim Auto Clean580
         const val KEY_V580TUNEAUTOEQUALIZER580 = "v580tuneAutoEqualizer580" // v580 Tune Auto Equalizer580
         const val KEY_V580TYPEAUTOINFER580 = "v580typeAutoInfer580" // v580 Type Auto Infer580
+        const val KEY_V581UPDATEAUTODOWNLOAD581 = "v581updateAutoDownload581" // v581 Update Auto Download581
+        const val KEY_V581UPLOADAUTORETRY581 = "v581uploadAutoRetry581" // v581 Upload Auto Retry581
+        const val KEY_V581UPSCALEAUTOENHANCE581 = "v581upscaleAutoEnhance581" // v581 Upscale Auto Enhance581
+        const val KEY_V581USEAUTOOPTIMIZE581 = "v581useAutoOptimize581" // v581 Use Auto Optimize581
+        const val KEY_V581VALUEAUTOBIND581 = "v581valueAutoBind581" // v581 Value Auto Bind581
+        const val KEY_V581VERIFYAUTOCHECKSUM581 = "v581verifyAutoChecksum581" // v581 Verify Auto Checksum581
+        const val KEY_V581VERSIONAUTOCHECK581 = "v581versionAutoCheck581" // v581 Version Auto Check581
+        const val KEY_V581VIEWAUTOSWITCH581 = "v581viewAutoSwitch581" // v581 View Auto Switch581
+        const val KEY_V581VIRTUALDISPLAY581 = "v581virtualDisplay581" // v581 Virtual Display581
+        const val KEY_V581VISIBLEAUTOTOGGLE581 = "v581visibleAutoToggle581" // v581 Visible Auto Toggle581
+        const val KEY_V581VOICEAUTORECOGNIZE581 = "v581voiceAutoRecognize581" // v581 Voice Auto Recognize581
+        const val KEY_V581WAITAUTOTIMEOUT581 = "v581waitAutoTimeout581" // v581 Wait Auto Timeout581
+        const val KEY_V581WARMAUTOSTART581 = "v581warmAutoStart581" // v581 Warm Auto Start581
+        const val KEY_V581WARNINGAUTOALERT581 = "v581warningAutoAlert581" // v581 Warning Auto Alert581
+        const val KEY_V581WATCHAUTOSYNC581 = "v581watchAutoSync581" // v581 Watch Auto Sync581
+        const val KEY_V582UPDATEAUTODOWNLOAD582 = "v582updateAutoDownload582" // v582 Update Auto Download582
+        const val KEY_V582UPLOADAUTORETRY582 = "v582uploadAutoRetry582" // v582 Upload Auto Retry582
+        const val KEY_V582UPSCALEAUTOENHANCE582 = "v582upscaleAutoEnhance582" // v582 Upscale Auto Enhance582
+        const val KEY_V582USEAUTOOPTIMIZE582 = "v582useAutoOptimize582" // v582 Use Auto Optimize582
+        const val KEY_V582VALUEAUTOBIND582 = "v582valueAutoBind582" // v582 Value Auto Bind582
+        const val KEY_V582VERIFYAUTOCHECKSUM582 = "v582verifyAutoChecksum582" // v582 Verify Auto Checksum582
+        const val KEY_V582VERSIONAUTOCHECK582 = "v582versionAutoCheck582" // v582 Version Auto Check582
+        const val KEY_V582VIEWAUTOSWITCH582 = "v582viewAutoSwitch582" // v582 View Auto Switch582
+        const val KEY_V582VIRTUALDISPLAY582 = "v582virtualDisplay582" // v582 Virtual Display582
+        const val KEY_V582VISIBLEAUTOTOGGLE582 = "v582visibleAutoToggle582" // v582 Visible Auto Toggle582
+        const val KEY_V582VOICEAUTORECOGNIZE582 = "v582voiceAutoRecognize582" // v582 Voice Auto Recognize582
+        const val KEY_V582WAITAUTOTIMEOUT582 = "v582waitAutoTimeout582" // v582 Wait Auto Timeout582
+        const val KEY_V582WARMAUTOSTART582 = "v582warmAutoStart582" // v582 Warm Auto Start582
+        const val KEY_V582WARNINGAUTOALERT582 = "v582warningAutoAlert582" // v582 Warning Auto Alert582
+        const val KEY_V582WATCHAUTOSYNC582 = "v582watchAutoSync582" // v582 Watch Auto Sync582
+        const val KEY_V583UPDATEAUTODOWNLOAD583 = "v583updateAutoDownload583" // v583 Update Auto Download583
+        const val KEY_V583UPLOADAUTORETRY583 = "v583uploadAutoRetry583" // v583 Upload Auto Retry583
+        const val KEY_V583UPSCALEAUTOENHANCE583 = "v583upscaleAutoEnhance583" // v583 Upscale Auto Enhance583
+        const val KEY_V583USEAUTOOPTIMIZE583 = "v583useAutoOptimize583" // v583 Use Auto Optimize583
+        const val KEY_V583VALUEAUTOBIND583 = "v583valueAutoBind583" // v583 Value Auto Bind583
+        const val KEY_V583VERIFYAUTOCHECKSUM583 = "v583verifyAutoChecksum583" // v583 Verify Auto Checksum583
+        const val KEY_V583VERSIONAUTOCHECK583 = "v583versionAutoCheck583" // v583 Version Auto Check583
+        const val KEY_V583VIEWAUTOSWITCH583 = "v583viewAutoSwitch583" // v583 View Auto Switch583
+        const val KEY_V583VIRTUALDISPLAY583 = "v583virtualDisplay583" // v583 Virtual Display583
+        const val KEY_V583VISIBLEAUTOTOGGLE583 = "v583visibleAutoToggle583" // v583 Visible Auto Toggle583
+        const val KEY_V583VOICEAUTORECOGNIZE583 = "v583voiceAutoRecognize583" // v583 Voice Auto Recognize583
+        const val KEY_V583WAITAUTOTIMEOUT583 = "v583waitAutoTimeout583" // v583 Wait Auto Timeout583
+        const val KEY_V583WARMAUTOSTART583 = "v583warmAutoStart583" // v583 Warm Auto Start583
+        const val KEY_V583WARNINGAUTOALERT583 = "v583warningAutoAlert583" // v583 Warning Auto Alert583
+        const val KEY_V583WATCHAUTOSYNC583 = "v583watchAutoSync583" // v583 Watch Auto Sync583
+        const val KEY_V584UPDATEAUTODOWNLOAD584 = "v584updateAutoDownload584" // v584 Update Auto Download584
+        const val KEY_V584UPLOADAUTORETRY584 = "v584uploadAutoRetry584" // v584 Upload Auto Retry584
+        const val KEY_V584UPSCALEAUTOENHANCE584 = "v584upscaleAutoEnhance584" // v584 Upscale Auto Enhance584
+        const val KEY_V584USEAUTOOPTIMIZE584 = "v584useAutoOptimize584" // v584 Use Auto Optimize584
+        const val KEY_V584VALUEAUTOBIND584 = "v584valueAutoBind584" // v584 Value Auto Bind584
+        const val KEY_V584VERIFYAUTOCHECKSUM584 = "v584verifyAutoChecksum584" // v584 Verify Auto Checksum584
+        const val KEY_V584VERSIONAUTOCHECK584 = "v584versionAutoCheck584" // v584 Version Auto Check584
+        const val KEY_V584VIEWAUTOSWITCH584 = "v584viewAutoSwitch584" // v584 View Auto Switch584
+        const val KEY_V584VIRTUALDISPLAY584 = "v584virtualDisplay584" // v584 Virtual Display584
+        const val KEY_V584VISIBLEAUTOTOGGLE584 = "v584visibleAutoToggle584" // v584 Visible Auto Toggle584
+        const val KEY_V584VOICEAUTORECOGNIZE584 = "v584voiceAutoRecognize584" // v584 Voice Auto Recognize584
+        const val KEY_V584WAITAUTOTIMEOUT584 = "v584waitAutoTimeout584" // v584 Wait Auto Timeout584
+        const val KEY_V584WARMAUTOSTART584 = "v584warmAutoStart584" // v584 Warm Auto Start584
+        const val KEY_V584WARNINGAUTOALERT584 = "v584warningAutoAlert584" // v584 Warning Auto Alert584
+        const val KEY_V584WATCHAUTOSYNC584 = "v584watchAutoSync584" // v584 Watch Auto Sync584
+        const val KEY_V585UPDATEAUTODOWNLOAD585 = "v585updateAutoDownload585" // v585 Update Auto Download585
+        const val KEY_V585UPLOADAUTORETRY585 = "v585uploadAutoRetry585" // v585 Upload Auto Retry585
+        const val KEY_V585UPSCALEAUTOENHANCE585 = "v585upscaleAutoEnhance585" // v585 Upscale Auto Enhance585
+        const val KEY_V585USEAUTOOPTIMIZE585 = "v585useAutoOptimize585" // v585 Use Auto Optimize585
+        const val KEY_V585VALUEAUTOBIND585 = "v585valueAutoBind585" // v585 Value Auto Bind585
+        const val KEY_V585VERIFYAUTOCHECKSUM585 = "v585verifyAutoChecksum585" // v585 Verify Auto Checksum585
+        const val KEY_V585VERSIONAUTOCHECK585 = "v585versionAutoCheck585" // v585 Version Auto Check585
+        const val KEY_V585VIEWAUTOSWITCH585 = "v585viewAutoSwitch585" // v585 View Auto Switch585
+        const val KEY_V585VIRTUALDISPLAY585 = "v585virtualDisplay585" // v585 Virtual Display585
+        const val KEY_V585VISIBLEAUTOTOGGLE585 = "v585visibleAutoToggle585" // v585 Visible Auto Toggle585
+        const val KEY_V585VOICEAUTORECOGNIZE585 = "v585voiceAutoRecognize585" // v585 Voice Auto Recognize585
+        const val KEY_V585WAITAUTOTIMEOUT585 = "v585waitAutoTimeout585" // v585 Wait Auto Timeout585
+        const val KEY_V585WARMAUTOSTART585 = "v585warmAutoStart585" // v585 Warm Auto Start585
+        const val KEY_V585WARNINGAUTOALERT585 = "v585warningAutoAlert585" // v585 Warning Auto Alert585
+        const val KEY_V585WATCHAUTOSYNC585 = "v585watchAutoSync585" // v585 Watch Auto Sync585
+        const val KEY_V586UPDATEAUTODOWNLOAD586 = "v586updateAutoDownload586" // v586 Update Auto Download586
+        const val KEY_V586UPLOADAUTORETRY586 = "v586uploadAutoRetry586" // v586 Upload Auto Retry586
+        const val KEY_V586UPSCALEAUTOENHANCE586 = "v586upscaleAutoEnhance586" // v586 Upscale Auto Enhance586
+        const val KEY_V586USEAUTOOPTIMIZE586 = "v586useAutoOptimize586" // v586 Use Auto Optimize586
+        const val KEY_V586VALUEAUTOBIND586 = "v586valueAutoBind586" // v586 Value Auto Bind586
+        const val KEY_V586VERIFYAUTOCHECKSUM586 = "v586verifyAutoChecksum586" // v586 Verify Auto Checksum586
+        const val KEY_V586VERSIONAUTOCHECK586 = "v586versionAutoCheck586" // v586 Version Auto Check586
+        const val KEY_V586VIEWAUTOSWITCH586 = "v586viewAutoSwitch586" // v586 View Auto Switch586
+        const val KEY_V586VIRTUALDISPLAY586 = "v586virtualDisplay586" // v586 Virtual Display586
+        const val KEY_V586VISIBLEAUTOTOGGLE586 = "v586visibleAutoToggle586" // v586 Visible Auto Toggle586
+        const val KEY_V586VOICEAUTORECOGNIZE586 = "v586voiceAutoRecognize586" // v586 Voice Auto Recognize586
+        const val KEY_V586WAITAUTOTIMEOUT586 = "v586waitAutoTimeout586" // v586 Wait Auto Timeout586
+        const val KEY_V586WARMAUTOSTART586 = "v586warmAutoStart586" // v586 Warm Auto Start586
+        const val KEY_V586WARNINGAUTOALERT586 = "v586warningAutoAlert586" // v586 Warning Auto Alert586
+        const val KEY_V586WATCHAUTOSYNC586 = "v586watchAutoSync586" // v586 Watch Auto Sync586
+        const val KEY_V587UPDATEAUTODOWNLOAD587 = "v587updateAutoDownload587" // v587 Update Auto Download587
+        const val KEY_V587UPLOADAUTORETRY587 = "v587uploadAutoRetry587" // v587 Upload Auto Retry587
+        const val KEY_V587UPSCALEAUTOENHANCE587 = "v587upscaleAutoEnhance587" // v587 Upscale Auto Enhance587
+        const val KEY_V587USEAUTOOPTIMIZE587 = "v587useAutoOptimize587" // v587 Use Auto Optimize587
+        const val KEY_V587VALUEAUTOBIND587 = "v587valueAutoBind587" // v587 Value Auto Bind587
+        const val KEY_V587VERIFYAUTOCHECKSUM587 = "v587verifyAutoChecksum587" // v587 Verify Auto Checksum587
+        const val KEY_V587VERSIONAUTOCHECK587 = "v587versionAutoCheck587" // v587 Version Auto Check587
+        const val KEY_V587VIEWAUTOSWITCH587 = "v587viewAutoSwitch587" // v587 View Auto Switch587
+        const val KEY_V587VIRTUALDISPLAY587 = "v587virtualDisplay587" // v587 Virtual Display587
+        const val KEY_V587VISIBLEAUTOTOGGLE587 = "v587visibleAutoToggle587" // v587 Visible Auto Toggle587
+        const val KEY_V587VOICEAUTORECOGNIZE587 = "v587voiceAutoRecognize587" // v587 Voice Auto Recognize587
+        const val KEY_V587WAITAUTOTIMEOUT587 = "v587waitAutoTimeout587" // v587 Wait Auto Timeout587
+        const val KEY_V587WARMAUTOSTART587 = "v587warmAutoStart587" // v587 Warm Auto Start587
+        const val KEY_V587WARNINGAUTOALERT587 = "v587warningAutoAlert587" // v587 Warning Auto Alert587
+        const val KEY_V587WATCHAUTOSYNC587 = "v587watchAutoSync587" // v587 Watch Auto Sync587
+        const val KEY_V588UPDATEAUTODOWNLOAD588 = "v588updateAutoDownload588" // v588 Update Auto Download588
+        const val KEY_V588UPLOADAUTORETRY588 = "v588uploadAutoRetry588" // v588 Upload Auto Retry588
+        const val KEY_V588UPSCALEAUTOENHANCE588 = "v588upscaleAutoEnhance588" // v588 Upscale Auto Enhance588
+        const val KEY_V588USEAUTOOPTIMIZE588 = "v588useAutoOptimize588" // v588 Use Auto Optimize588
+        const val KEY_V588VALUEAUTOBIND588 = "v588valueAutoBind588" // v588 Value Auto Bind588
+        const val KEY_V588VERIFYAUTOCHECKSUM588 = "v588verifyAutoChecksum588" // v588 Verify Auto Checksum588
+        const val KEY_V588VERSIONAUTOCHECK588 = "v588versionAutoCheck588" // v588 Version Auto Check588
+        const val KEY_V588VIEWAUTOSWITCH588 = "v588viewAutoSwitch588" // v588 View Auto Switch588
+        const val KEY_V588VIRTUALDISPLAY588 = "v588virtualDisplay588" // v588 Virtual Display588
+        const val KEY_V588VISIBLEAUTOTOGGLE588 = "v588visibleAutoToggle588" // v588 Visible Auto Toggle588
+        const val KEY_V588VOICEAUTORECOGNIZE588 = "v588voiceAutoRecognize588" // v588 Voice Auto Recognize588
+        const val KEY_V588WAITAUTOTIMEOUT588 = "v588waitAutoTimeout588" // v588 Wait Auto Timeout588
+        const val KEY_V588WARMAUTOSTART588 = "v588warmAutoStart588" // v588 Warm Auto Start588
+        const val KEY_V588WARNINGAUTOALERT588 = "v588warningAutoAlert588" // v588 Warning Auto Alert588
+        const val KEY_V588WATCHAUTOSYNC588 = "v588watchAutoSync588" // v588 Watch Auto Sync588
+        const val KEY_V589UPDATEAUTODOWNLOAD589 = "v589updateAutoDownload589" // v589 Update Auto Download589
+        const val KEY_V589UPLOADAUTORETRY589 = "v589uploadAutoRetry589" // v589 Upload Auto Retry589
+        const val KEY_V589UPSCALEAUTOENHANCE589 = "v589upscaleAutoEnhance589" // v589 Upscale Auto Enhance589
+        const val KEY_V589USEAUTOOPTIMIZE589 = "v589useAutoOptimize589" // v589 Use Auto Optimize589
+        const val KEY_V589VALUEAUTOBIND589 = "v589valueAutoBind589" // v589 Value Auto Bind589
+        const val KEY_V589VERIFYAUTOCHECKSUM589 = "v589verifyAutoChecksum589" // v589 Verify Auto Checksum589
+        const val KEY_V589VERSIONAUTOCHECK589 = "v589versionAutoCheck589" // v589 Version Auto Check589
+        const val KEY_V589VIEWAUTOSWITCH589 = "v589viewAutoSwitch589" // v589 View Auto Switch589
+        const val KEY_V589VIRTUALDISPLAY589 = "v589virtualDisplay589" // v589 Virtual Display589
+        const val KEY_V589VISIBLEAUTOTOGGLE589 = "v589visibleAutoToggle589" // v589 Visible Auto Toggle589
+        const val KEY_V589VOICEAUTORECOGNIZE589 = "v589voiceAutoRecognize589" // v589 Voice Auto Recognize589
+        const val KEY_V589WAITAUTOTIMEOUT589 = "v589waitAutoTimeout589" // v589 Wait Auto Timeout589
+        const val KEY_V589WARMAUTOSTART589 = "v589warmAutoStart589" // v589 Warm Auto Start589
+        const val KEY_V589WARNINGAUTOALERT589 = "v589warningAutoAlert589" // v589 Warning Auto Alert589
+        const val KEY_V589WATCHAUTOSYNC589 = "v589watchAutoSync589" // v589 Watch Auto Sync589
+        const val KEY_V590UPDATEAUTODOWNLOAD590 = "v590updateAutoDownload590" // v590 Update Auto Download590
+        const val KEY_V590UPLOADAUTORETRY590 = "v590uploadAutoRetry590" // v590 Upload Auto Retry590
+        const val KEY_V590UPSCALEAUTOENHANCE590 = "v590upscaleAutoEnhance590" // v590 Upscale Auto Enhance590
+        const val KEY_V590USEAUTOOPTIMIZE590 = "v590useAutoOptimize590" // v590 Use Auto Optimize590
+        const val KEY_V590VALUEAUTOBIND590 = "v590valueAutoBind590" // v590 Value Auto Bind590
+        const val KEY_V590VERIFYAUTOCHECKSUM590 = "v590verifyAutoChecksum590" // v590 Verify Auto Checksum590
+        const val KEY_V590VERSIONAUTOCHECK590 = "v590versionAutoCheck590" // v590 Version Auto Check590
+        const val KEY_V590VIEWAUTOSWITCH590 = "v590viewAutoSwitch590" // v590 View Auto Switch590
+        const val KEY_V590VIRTUALDISPLAY590 = "v590virtualDisplay590" // v590 Virtual Display590
+        const val KEY_V590VISIBLEAUTOTOGGLE590 = "v590visibleAutoToggle590" // v590 Visible Auto Toggle590
+        const val KEY_V590VOICEAUTORECOGNIZE590 = "v590voiceAutoRecognize590" // v590 Voice Auto Recognize590
+        const val KEY_V590WAITAUTOTIMEOUT590 = "v590waitAutoTimeout590" // v590 Wait Auto Timeout590
+        const val KEY_V590WARMAUTOSTART590 = "v590warmAutoStart590" // v590 Warm Auto Start590
+        const val KEY_V590WARNINGAUTOALERT590 = "v590warningAutoAlert590" // v590 Warning Auto Alert590
+        const val KEY_V590WATCHAUTOSYNC590 = "v590watchAutoSync590" // v590 Watch Auto Sync590
     }
 }

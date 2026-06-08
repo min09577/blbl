@@ -86615,3 +86615,1213 @@ internal fun PlayerActivity.showV580TypeAutoInfer580Toggle() {
     AppToast.show(this, "Type Auto Infer580: ${if (!current) "ON" else "OFF"}")
 }
 
+// v581: Update Auto Download581
+internal fun PlayerActivity.showV581UpdateAutoDownload581Toggle() {
+    val current = BiliClient.prefs.v581updateAutoDownload581
+    BiliClient.prefs.v581updateAutoDownload581 = !current
+    AppToast.show(this, "Update Auto Download581: ${if (!current) "ON" else "OFF"}")
+}
+
+// v581: Upload Auto Retry581
+internal fun PlayerActivity.showV581UploadAutoRetry581Toggle() {
+    val current = BiliClient.prefs.v581uploadAutoRetry581
+    BiliClient.prefs.v581uploadAutoRetry581 = !current
+    AppToast.show(this, "Upload Auto Retry581: ${if (!current) "ON" else "OFF"}")
+}
+
+// v581: Upscale Auto Enhance581
+internal fun PlayerActivity.showV581UpscaleAutoEnhance581Toggle() {
+    val current = BiliClient.prefs.v581upscaleAutoEnhance581
+    BiliClient.prefs.v581upscaleAutoEnhance581 = !current
+    AppToast.show(this, "Upscale Auto Enhance581: ${if (!current) "ON" else "OFF"}")
+}
+
+// v581: Use Auto Optimize581
+internal fun PlayerActivity.showV581UseAutoOptimize581Toggle() {
+    val current = BiliClient.prefs.v581useAutoOptimize581
+    BiliClient.prefs.v581useAutoOptimize581 = !current
+    AppToast.show(this, "Use Auto Optimize581: ${if (!current) "ON" else "OFF"}")
+}
+
+// v581: Value Auto Bind581
+internal fun PlayerActivity.showV581ValueAutoBind581Toggle() {
+    val current = BiliClient.prefs.v581valueAutoBind581
+    BiliClient.prefs.v581valueAutoBind581 = !current
+    AppToast.show(this, "Value Auto Bind581: ${if (!current) "ON" else "OFF"}")
+}
+
+// v581: Verify Auto Checksum581
+internal fun PlayerActivity.showV581VerifyAutoChecksum581Toggle() {
+    val current = BiliClient.prefs.v581verifyAutoChecksum581
+    BiliClient.prefs.v581verifyAutoChecksum581 = !current
+    AppToast.show(this, "Verify Auto Checksum581: ${if (!current) "ON" else "OFF"}")
+}
+
+// v581: Version Auto Check581
+internal fun PlayerActivity.showV581VersionAutoCheck581Toggle() {
+    val current = BiliClient.prefs.v581versionAutoCheck581
+    BiliClient.prefs.v581versionAutoCheck581 = !current
+    AppToast.show(this, "Version Auto Check581: ${if (!current) "ON" else "OFF"}")
+}
+
+// v581: View Auto Switch581
+internal fun PlayerActivity.showV581ViewAutoSwitch581Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v581viewAutoSwitch581).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "View Auto Switch581",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v581viewAutoSwitch581 = value
+        AppToast.show(this, "View Auto Switch581: $value")
+    }
+}
+
+// v581: Virtual Display581
+internal fun PlayerActivity.showV581VirtualDisplay581Toggle() {
+    val current = BiliClient.prefs.v581virtualDisplay581
+    BiliClient.prefs.v581virtualDisplay581 = !current
+    AppToast.show(this, "Virtual Display581: ${if (!current) "ON" else "OFF"}")
+}
+
+// v581: Visible Auto Toggle581
+internal fun PlayerActivity.showV581VisibleAutoToggle581Toggle() {
+    val current = BiliClient.prefs.v581visibleAutoToggle581
+    BiliClient.prefs.v581visibleAutoToggle581 = !current
+    AppToast.show(this, "Visible Auto Toggle581: ${if (!current) "ON" else "OFF"}")
+}
+
+// v581: Voice Auto Recognize581
+internal fun PlayerActivity.showV581VoiceAutoRecognize581Toggle() {
+    val current = BiliClient.prefs.v581voiceAutoRecognize581
+    BiliClient.prefs.v581voiceAutoRecognize581 = !current
+    AppToast.show(this, "Voice Auto Recognize581: ${if (!current) "ON" else "OFF"}")
+}
+
+// v581: Wait Auto Timeout581
+internal fun PlayerActivity.showV581WaitAutoTimeout581Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v581waitAutoTimeout581).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Wait Auto Timeout581",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v581waitAutoTimeout581 = value
+        AppToast.show(this, "Wait Auto Timeout581: $value")
+    }
+}
+
+// v581: Warm Auto Start581
+internal fun PlayerActivity.showV581WarmAutoStart581Toggle() {
+    val current = BiliClient.prefs.v581warmAutoStart581
+    BiliClient.prefs.v581warmAutoStart581 = !current
+    AppToast.show(this, "Warm Auto Start581: ${if (!current) "ON" else "OFF"}")
+}
+
+// v581: Warning Auto Alert581
+internal fun PlayerActivity.showV581WarningAutoAlert581Toggle() {
+    val current = BiliClient.prefs.v581warningAutoAlert581
+    BiliClient.prefs.v581warningAutoAlert581 = !current
+    AppToast.show(this, "Warning Auto Alert581: ${if (!current) "ON" else "OFF"}")
+}
+
+// v581: Watch Auto Sync581
+internal fun PlayerActivity.showV581WatchAutoSync581Toggle() {
+    val current = BiliClient.prefs.v581watchAutoSync581
+    BiliClient.prefs.v581watchAutoSync581 = !current
+    AppToast.show(this, "Watch Auto Sync581: ${if (!current) "ON" else "OFF"}")
+}
+
+// v582: Update Auto Download582
+internal fun PlayerActivity.showV582UpdateAutoDownload582Toggle() {
+    val current = BiliClient.prefs.v582updateAutoDownload582
+    BiliClient.prefs.v582updateAutoDownload582 = !current
+    AppToast.show(this, "Update Auto Download582: ${if (!current) "ON" else "OFF"}")
+}
+
+// v582: Upload Auto Retry582
+internal fun PlayerActivity.showV582UploadAutoRetry582Toggle() {
+    val current = BiliClient.prefs.v582uploadAutoRetry582
+    BiliClient.prefs.v582uploadAutoRetry582 = !current
+    AppToast.show(this, "Upload Auto Retry582: ${if (!current) "ON" else "OFF"}")
+}
+
+// v582: Upscale Auto Enhance582
+internal fun PlayerActivity.showV582UpscaleAutoEnhance582Toggle() {
+    val current = BiliClient.prefs.v582upscaleAutoEnhance582
+    BiliClient.prefs.v582upscaleAutoEnhance582 = !current
+    AppToast.show(this, "Upscale Auto Enhance582: ${if (!current) "ON" else "OFF"}")
+}
+
+// v582: Use Auto Optimize582
+internal fun PlayerActivity.showV582UseAutoOptimize582Toggle() {
+    val current = BiliClient.prefs.v582useAutoOptimize582
+    BiliClient.prefs.v582useAutoOptimize582 = !current
+    AppToast.show(this, "Use Auto Optimize582: ${if (!current) "ON" else "OFF"}")
+}
+
+// v582: Value Auto Bind582
+internal fun PlayerActivity.showV582ValueAutoBind582Toggle() {
+    val current = BiliClient.prefs.v582valueAutoBind582
+    BiliClient.prefs.v582valueAutoBind582 = !current
+    AppToast.show(this, "Value Auto Bind582: ${if (!current) "ON" else "OFF"}")
+}
+
+// v582: Verify Auto Checksum582
+internal fun PlayerActivity.showV582VerifyAutoChecksum582Toggle() {
+    val current = BiliClient.prefs.v582verifyAutoChecksum582
+    BiliClient.prefs.v582verifyAutoChecksum582 = !current
+    AppToast.show(this, "Verify Auto Checksum582: ${if (!current) "ON" else "OFF"}")
+}
+
+// v582: Version Auto Check582
+internal fun PlayerActivity.showV582VersionAutoCheck582Toggle() {
+    val current = BiliClient.prefs.v582versionAutoCheck582
+    BiliClient.prefs.v582versionAutoCheck582 = !current
+    AppToast.show(this, "Version Auto Check582: ${if (!current) "ON" else "OFF"}")
+}
+
+// v582: View Auto Switch582
+internal fun PlayerActivity.showV582ViewAutoSwitch582Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v582viewAutoSwitch582).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "View Auto Switch582",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v582viewAutoSwitch582 = value
+        AppToast.show(this, "View Auto Switch582: $value")
+    }
+}
+
+// v582: Virtual Display582
+internal fun PlayerActivity.showV582VirtualDisplay582Toggle() {
+    val current = BiliClient.prefs.v582virtualDisplay582
+    BiliClient.prefs.v582virtualDisplay582 = !current
+    AppToast.show(this, "Virtual Display582: ${if (!current) "ON" else "OFF"}")
+}
+
+// v582: Visible Auto Toggle582
+internal fun PlayerActivity.showV582VisibleAutoToggle582Toggle() {
+    val current = BiliClient.prefs.v582visibleAutoToggle582
+    BiliClient.prefs.v582visibleAutoToggle582 = !current
+    AppToast.show(this, "Visible Auto Toggle582: ${if (!current) "ON" else "OFF"}")
+}
+
+// v582: Voice Auto Recognize582
+internal fun PlayerActivity.showV582VoiceAutoRecognize582Toggle() {
+    val current = BiliClient.prefs.v582voiceAutoRecognize582
+    BiliClient.prefs.v582voiceAutoRecognize582 = !current
+    AppToast.show(this, "Voice Auto Recognize582: ${if (!current) "ON" else "OFF"}")
+}
+
+// v582: Wait Auto Timeout582
+internal fun PlayerActivity.showV582WaitAutoTimeout582Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v582waitAutoTimeout582).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Wait Auto Timeout582",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v582waitAutoTimeout582 = value
+        AppToast.show(this, "Wait Auto Timeout582: $value")
+    }
+}
+
+// v582: Warm Auto Start582
+internal fun PlayerActivity.showV582WarmAutoStart582Toggle() {
+    val current = BiliClient.prefs.v582warmAutoStart582
+    BiliClient.prefs.v582warmAutoStart582 = !current
+    AppToast.show(this, "Warm Auto Start582: ${if (!current) "ON" else "OFF"}")
+}
+
+// v582: Warning Auto Alert582
+internal fun PlayerActivity.showV582WarningAutoAlert582Toggle() {
+    val current = BiliClient.prefs.v582warningAutoAlert582
+    BiliClient.prefs.v582warningAutoAlert582 = !current
+    AppToast.show(this, "Warning Auto Alert582: ${if (!current) "ON" else "OFF"}")
+}
+
+// v582: Watch Auto Sync582
+internal fun PlayerActivity.showV582WatchAutoSync582Toggle() {
+    val current = BiliClient.prefs.v582watchAutoSync582
+    BiliClient.prefs.v582watchAutoSync582 = !current
+    AppToast.show(this, "Watch Auto Sync582: ${if (!current) "ON" else "OFF"}")
+}
+
+// v583: Update Auto Download583
+internal fun PlayerActivity.showV583UpdateAutoDownload583Toggle() {
+    val current = BiliClient.prefs.v583updateAutoDownload583
+    BiliClient.prefs.v583updateAutoDownload583 = !current
+    AppToast.show(this, "Update Auto Download583: ${if (!current) "ON" else "OFF"}")
+}
+
+// v583: Upload Auto Retry583
+internal fun PlayerActivity.showV583UploadAutoRetry583Toggle() {
+    val current = BiliClient.prefs.v583uploadAutoRetry583
+    BiliClient.prefs.v583uploadAutoRetry583 = !current
+    AppToast.show(this, "Upload Auto Retry583: ${if (!current) "ON" else "OFF"}")
+}
+
+// v583: Upscale Auto Enhance583
+internal fun PlayerActivity.showV583UpscaleAutoEnhance583Toggle() {
+    val current = BiliClient.prefs.v583upscaleAutoEnhance583
+    BiliClient.prefs.v583upscaleAutoEnhance583 = !current
+    AppToast.show(this, "Upscale Auto Enhance583: ${if (!current) "ON" else "OFF"}")
+}
+
+// v583: Use Auto Optimize583
+internal fun PlayerActivity.showV583UseAutoOptimize583Toggle() {
+    val current = BiliClient.prefs.v583useAutoOptimize583
+    BiliClient.prefs.v583useAutoOptimize583 = !current
+    AppToast.show(this, "Use Auto Optimize583: ${if (!current) "ON" else "OFF"}")
+}
+
+// v583: Value Auto Bind583
+internal fun PlayerActivity.showV583ValueAutoBind583Toggle() {
+    val current = BiliClient.prefs.v583valueAutoBind583
+    BiliClient.prefs.v583valueAutoBind583 = !current
+    AppToast.show(this, "Value Auto Bind583: ${if (!current) "ON" else "OFF"}")
+}
+
+// v583: Verify Auto Checksum583
+internal fun PlayerActivity.showV583VerifyAutoChecksum583Toggle() {
+    val current = BiliClient.prefs.v583verifyAutoChecksum583
+    BiliClient.prefs.v583verifyAutoChecksum583 = !current
+    AppToast.show(this, "Verify Auto Checksum583: ${if (!current) "ON" else "OFF"}")
+}
+
+// v583: Version Auto Check583
+internal fun PlayerActivity.showV583VersionAutoCheck583Toggle() {
+    val current = BiliClient.prefs.v583versionAutoCheck583
+    BiliClient.prefs.v583versionAutoCheck583 = !current
+    AppToast.show(this, "Version Auto Check583: ${if (!current) "ON" else "OFF"}")
+}
+
+// v583: View Auto Switch583
+internal fun PlayerActivity.showV583ViewAutoSwitch583Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v583viewAutoSwitch583).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "View Auto Switch583",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v583viewAutoSwitch583 = value
+        AppToast.show(this, "View Auto Switch583: $value")
+    }
+}
+
+// v583: Virtual Display583
+internal fun PlayerActivity.showV583VirtualDisplay583Toggle() {
+    val current = BiliClient.prefs.v583virtualDisplay583
+    BiliClient.prefs.v583virtualDisplay583 = !current
+    AppToast.show(this, "Virtual Display583: ${if (!current) "ON" else "OFF"}")
+}
+
+// v583: Visible Auto Toggle583
+internal fun PlayerActivity.showV583VisibleAutoToggle583Toggle() {
+    val current = BiliClient.prefs.v583visibleAutoToggle583
+    BiliClient.prefs.v583visibleAutoToggle583 = !current
+    AppToast.show(this, "Visible Auto Toggle583: ${if (!current) "ON" else "OFF"}")
+}
+
+// v583: Voice Auto Recognize583
+internal fun PlayerActivity.showV583VoiceAutoRecognize583Toggle() {
+    val current = BiliClient.prefs.v583voiceAutoRecognize583
+    BiliClient.prefs.v583voiceAutoRecognize583 = !current
+    AppToast.show(this, "Voice Auto Recognize583: ${if (!current) "ON" else "OFF"}")
+}
+
+// v583: Wait Auto Timeout583
+internal fun PlayerActivity.showV583WaitAutoTimeout583Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v583waitAutoTimeout583).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Wait Auto Timeout583",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v583waitAutoTimeout583 = value
+        AppToast.show(this, "Wait Auto Timeout583: $value")
+    }
+}
+
+// v583: Warm Auto Start583
+internal fun PlayerActivity.showV583WarmAutoStart583Toggle() {
+    val current = BiliClient.prefs.v583warmAutoStart583
+    BiliClient.prefs.v583warmAutoStart583 = !current
+    AppToast.show(this, "Warm Auto Start583: ${if (!current) "ON" else "OFF"}")
+}
+
+// v583: Warning Auto Alert583
+internal fun PlayerActivity.showV583WarningAutoAlert583Toggle() {
+    val current = BiliClient.prefs.v583warningAutoAlert583
+    BiliClient.prefs.v583warningAutoAlert583 = !current
+    AppToast.show(this, "Warning Auto Alert583: ${if (!current) "ON" else "OFF"}")
+}
+
+// v583: Watch Auto Sync583
+internal fun PlayerActivity.showV583WatchAutoSync583Toggle() {
+    val current = BiliClient.prefs.v583watchAutoSync583
+    BiliClient.prefs.v583watchAutoSync583 = !current
+    AppToast.show(this, "Watch Auto Sync583: ${if (!current) "ON" else "OFF"}")
+}
+
+// v584: Update Auto Download584
+internal fun PlayerActivity.showV584UpdateAutoDownload584Toggle() {
+    val current = BiliClient.prefs.v584updateAutoDownload584
+    BiliClient.prefs.v584updateAutoDownload584 = !current
+    AppToast.show(this, "Update Auto Download584: ${if (!current) "ON" else "OFF"}")
+}
+
+// v584: Upload Auto Retry584
+internal fun PlayerActivity.showV584UploadAutoRetry584Toggle() {
+    val current = BiliClient.prefs.v584uploadAutoRetry584
+    BiliClient.prefs.v584uploadAutoRetry584 = !current
+    AppToast.show(this, "Upload Auto Retry584: ${if (!current) "ON" else "OFF"}")
+}
+
+// v584: Upscale Auto Enhance584
+internal fun PlayerActivity.showV584UpscaleAutoEnhance584Toggle() {
+    val current = BiliClient.prefs.v584upscaleAutoEnhance584
+    BiliClient.prefs.v584upscaleAutoEnhance584 = !current
+    AppToast.show(this, "Upscale Auto Enhance584: ${if (!current) "ON" else "OFF"}")
+}
+
+// v584: Use Auto Optimize584
+internal fun PlayerActivity.showV584UseAutoOptimize584Toggle() {
+    val current = BiliClient.prefs.v584useAutoOptimize584
+    BiliClient.prefs.v584useAutoOptimize584 = !current
+    AppToast.show(this, "Use Auto Optimize584: ${if (!current) "ON" else "OFF"}")
+}
+
+// v584: Value Auto Bind584
+internal fun PlayerActivity.showV584ValueAutoBind584Toggle() {
+    val current = BiliClient.prefs.v584valueAutoBind584
+    BiliClient.prefs.v584valueAutoBind584 = !current
+    AppToast.show(this, "Value Auto Bind584: ${if (!current) "ON" else "OFF"}")
+}
+
+// v584: Verify Auto Checksum584
+internal fun PlayerActivity.showV584VerifyAutoChecksum584Toggle() {
+    val current = BiliClient.prefs.v584verifyAutoChecksum584
+    BiliClient.prefs.v584verifyAutoChecksum584 = !current
+    AppToast.show(this, "Verify Auto Checksum584: ${if (!current) "ON" else "OFF"}")
+}
+
+// v584: Version Auto Check584
+internal fun PlayerActivity.showV584VersionAutoCheck584Toggle() {
+    val current = BiliClient.prefs.v584versionAutoCheck584
+    BiliClient.prefs.v584versionAutoCheck584 = !current
+    AppToast.show(this, "Version Auto Check584: ${if (!current) "ON" else "OFF"}")
+}
+
+// v584: View Auto Switch584
+internal fun PlayerActivity.showV584ViewAutoSwitch584Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v584viewAutoSwitch584).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "View Auto Switch584",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v584viewAutoSwitch584 = value
+        AppToast.show(this, "View Auto Switch584: $value")
+    }
+}
+
+// v584: Virtual Display584
+internal fun PlayerActivity.showV584VirtualDisplay584Toggle() {
+    val current = BiliClient.prefs.v584virtualDisplay584
+    BiliClient.prefs.v584virtualDisplay584 = !current
+    AppToast.show(this, "Virtual Display584: ${if (!current) "ON" else "OFF"}")
+}
+
+// v584: Visible Auto Toggle584
+internal fun PlayerActivity.showV584VisibleAutoToggle584Toggle() {
+    val current = BiliClient.prefs.v584visibleAutoToggle584
+    BiliClient.prefs.v584visibleAutoToggle584 = !current
+    AppToast.show(this, "Visible Auto Toggle584: ${if (!current) "ON" else "OFF"}")
+}
+
+// v584: Voice Auto Recognize584
+internal fun PlayerActivity.showV584VoiceAutoRecognize584Toggle() {
+    val current = BiliClient.prefs.v584voiceAutoRecognize584
+    BiliClient.prefs.v584voiceAutoRecognize584 = !current
+    AppToast.show(this, "Voice Auto Recognize584: ${if (!current) "ON" else "OFF"}")
+}
+
+// v584: Wait Auto Timeout584
+internal fun PlayerActivity.showV584WaitAutoTimeout584Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v584waitAutoTimeout584).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Wait Auto Timeout584",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v584waitAutoTimeout584 = value
+        AppToast.show(this, "Wait Auto Timeout584: $value")
+    }
+}
+
+// v584: Warm Auto Start584
+internal fun PlayerActivity.showV584WarmAutoStart584Toggle() {
+    val current = BiliClient.prefs.v584warmAutoStart584
+    BiliClient.prefs.v584warmAutoStart584 = !current
+    AppToast.show(this, "Warm Auto Start584: ${if (!current) "ON" else "OFF"}")
+}
+
+// v584: Warning Auto Alert584
+internal fun PlayerActivity.showV584WarningAutoAlert584Toggle() {
+    val current = BiliClient.prefs.v584warningAutoAlert584
+    BiliClient.prefs.v584warningAutoAlert584 = !current
+    AppToast.show(this, "Warning Auto Alert584: ${if (!current) "ON" else "OFF"}")
+}
+
+// v584: Watch Auto Sync584
+internal fun PlayerActivity.showV584WatchAutoSync584Toggle() {
+    val current = BiliClient.prefs.v584watchAutoSync584
+    BiliClient.prefs.v584watchAutoSync584 = !current
+    AppToast.show(this, "Watch Auto Sync584: ${if (!current) "ON" else "OFF"}")
+}
+
+// v585: Update Auto Download585
+internal fun PlayerActivity.showV585UpdateAutoDownload585Toggle() {
+    val current = BiliClient.prefs.v585updateAutoDownload585
+    BiliClient.prefs.v585updateAutoDownload585 = !current
+    AppToast.show(this, "Update Auto Download585: ${if (!current) "ON" else "OFF"}")
+}
+
+// v585: Upload Auto Retry585
+internal fun PlayerActivity.showV585UploadAutoRetry585Toggle() {
+    val current = BiliClient.prefs.v585uploadAutoRetry585
+    BiliClient.prefs.v585uploadAutoRetry585 = !current
+    AppToast.show(this, "Upload Auto Retry585: ${if (!current) "ON" else "OFF"}")
+}
+
+// v585: Upscale Auto Enhance585
+internal fun PlayerActivity.showV585UpscaleAutoEnhance585Toggle() {
+    val current = BiliClient.prefs.v585upscaleAutoEnhance585
+    BiliClient.prefs.v585upscaleAutoEnhance585 = !current
+    AppToast.show(this, "Upscale Auto Enhance585: ${if (!current) "ON" else "OFF"}")
+}
+
+// v585: Use Auto Optimize585
+internal fun PlayerActivity.showV585UseAutoOptimize585Toggle() {
+    val current = BiliClient.prefs.v585useAutoOptimize585
+    BiliClient.prefs.v585useAutoOptimize585 = !current
+    AppToast.show(this, "Use Auto Optimize585: ${if (!current) "ON" else "OFF"}")
+}
+
+// v585: Value Auto Bind585
+internal fun PlayerActivity.showV585ValueAutoBind585Toggle() {
+    val current = BiliClient.prefs.v585valueAutoBind585
+    BiliClient.prefs.v585valueAutoBind585 = !current
+    AppToast.show(this, "Value Auto Bind585: ${if (!current) "ON" else "OFF"}")
+}
+
+// v585: Verify Auto Checksum585
+internal fun PlayerActivity.showV585VerifyAutoChecksum585Toggle() {
+    val current = BiliClient.prefs.v585verifyAutoChecksum585
+    BiliClient.prefs.v585verifyAutoChecksum585 = !current
+    AppToast.show(this, "Verify Auto Checksum585: ${if (!current) "ON" else "OFF"}")
+}
+
+// v585: Version Auto Check585
+internal fun PlayerActivity.showV585VersionAutoCheck585Toggle() {
+    val current = BiliClient.prefs.v585versionAutoCheck585
+    BiliClient.prefs.v585versionAutoCheck585 = !current
+    AppToast.show(this, "Version Auto Check585: ${if (!current) "ON" else "OFF"}")
+}
+
+// v585: View Auto Switch585
+internal fun PlayerActivity.showV585ViewAutoSwitch585Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v585viewAutoSwitch585).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "View Auto Switch585",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v585viewAutoSwitch585 = value
+        AppToast.show(this, "View Auto Switch585: $value")
+    }
+}
+
+// v585: Virtual Display585
+internal fun PlayerActivity.showV585VirtualDisplay585Toggle() {
+    val current = BiliClient.prefs.v585virtualDisplay585
+    BiliClient.prefs.v585virtualDisplay585 = !current
+    AppToast.show(this, "Virtual Display585: ${if (!current) "ON" else "OFF"}")
+}
+
+// v585: Visible Auto Toggle585
+internal fun PlayerActivity.showV585VisibleAutoToggle585Toggle() {
+    val current = BiliClient.prefs.v585visibleAutoToggle585
+    BiliClient.prefs.v585visibleAutoToggle585 = !current
+    AppToast.show(this, "Visible Auto Toggle585: ${if (!current) "ON" else "OFF"}")
+}
+
+// v585: Voice Auto Recognize585
+internal fun PlayerActivity.showV585VoiceAutoRecognize585Toggle() {
+    val current = BiliClient.prefs.v585voiceAutoRecognize585
+    BiliClient.prefs.v585voiceAutoRecognize585 = !current
+    AppToast.show(this, "Voice Auto Recognize585: ${if (!current) "ON" else "OFF"}")
+}
+
+// v585: Wait Auto Timeout585
+internal fun PlayerActivity.showV585WaitAutoTimeout585Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v585waitAutoTimeout585).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Wait Auto Timeout585",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v585waitAutoTimeout585 = value
+        AppToast.show(this, "Wait Auto Timeout585: $value")
+    }
+}
+
+// v585: Warm Auto Start585
+internal fun PlayerActivity.showV585WarmAutoStart585Toggle() {
+    val current = BiliClient.prefs.v585warmAutoStart585
+    BiliClient.prefs.v585warmAutoStart585 = !current
+    AppToast.show(this, "Warm Auto Start585: ${if (!current) "ON" else "OFF"}")
+}
+
+// v585: Warning Auto Alert585
+internal fun PlayerActivity.showV585WarningAutoAlert585Toggle() {
+    val current = BiliClient.prefs.v585warningAutoAlert585
+    BiliClient.prefs.v585warningAutoAlert585 = !current
+    AppToast.show(this, "Warning Auto Alert585: ${if (!current) "ON" else "OFF"}")
+}
+
+// v585: Watch Auto Sync585
+internal fun PlayerActivity.showV585WatchAutoSync585Toggle() {
+    val current = BiliClient.prefs.v585watchAutoSync585
+    BiliClient.prefs.v585watchAutoSync585 = !current
+    AppToast.show(this, "Watch Auto Sync585: ${if (!current) "ON" else "OFF"}")
+}
+
+// v586: Update Auto Download586
+internal fun PlayerActivity.showV586UpdateAutoDownload586Toggle() {
+    val current = BiliClient.prefs.v586updateAutoDownload586
+    BiliClient.prefs.v586updateAutoDownload586 = !current
+    AppToast.show(this, "Update Auto Download586: ${if (!current) "ON" else "OFF"}")
+}
+
+// v586: Upload Auto Retry586
+internal fun PlayerActivity.showV586UploadAutoRetry586Toggle() {
+    val current = BiliClient.prefs.v586uploadAutoRetry586
+    BiliClient.prefs.v586uploadAutoRetry586 = !current
+    AppToast.show(this, "Upload Auto Retry586: ${if (!current) "ON" else "OFF"}")
+}
+
+// v586: Upscale Auto Enhance586
+internal fun PlayerActivity.showV586UpscaleAutoEnhance586Toggle() {
+    val current = BiliClient.prefs.v586upscaleAutoEnhance586
+    BiliClient.prefs.v586upscaleAutoEnhance586 = !current
+    AppToast.show(this, "Upscale Auto Enhance586: ${if (!current) "ON" else "OFF"}")
+}
+
+// v586: Use Auto Optimize586
+internal fun PlayerActivity.showV586UseAutoOptimize586Toggle() {
+    val current = BiliClient.prefs.v586useAutoOptimize586
+    BiliClient.prefs.v586useAutoOptimize586 = !current
+    AppToast.show(this, "Use Auto Optimize586: ${if (!current) "ON" else "OFF"}")
+}
+
+// v586: Value Auto Bind586
+internal fun PlayerActivity.showV586ValueAutoBind586Toggle() {
+    val current = BiliClient.prefs.v586valueAutoBind586
+    BiliClient.prefs.v586valueAutoBind586 = !current
+    AppToast.show(this, "Value Auto Bind586: ${if (!current) "ON" else "OFF"}")
+}
+
+// v586: Verify Auto Checksum586
+internal fun PlayerActivity.showV586VerifyAutoChecksum586Toggle() {
+    val current = BiliClient.prefs.v586verifyAutoChecksum586
+    BiliClient.prefs.v586verifyAutoChecksum586 = !current
+    AppToast.show(this, "Verify Auto Checksum586: ${if (!current) "ON" else "OFF"}")
+}
+
+// v586: Version Auto Check586
+internal fun PlayerActivity.showV586VersionAutoCheck586Toggle() {
+    val current = BiliClient.prefs.v586versionAutoCheck586
+    BiliClient.prefs.v586versionAutoCheck586 = !current
+    AppToast.show(this, "Version Auto Check586: ${if (!current) "ON" else "OFF"}")
+}
+
+// v586: View Auto Switch586
+internal fun PlayerActivity.showV586ViewAutoSwitch586Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v586viewAutoSwitch586).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "View Auto Switch586",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v586viewAutoSwitch586 = value
+        AppToast.show(this, "View Auto Switch586: $value")
+    }
+}
+
+// v586: Virtual Display586
+internal fun PlayerActivity.showV586VirtualDisplay586Toggle() {
+    val current = BiliClient.prefs.v586virtualDisplay586
+    BiliClient.prefs.v586virtualDisplay586 = !current
+    AppToast.show(this, "Virtual Display586: ${if (!current) "ON" else "OFF"}")
+}
+
+// v586: Visible Auto Toggle586
+internal fun PlayerActivity.showV586VisibleAutoToggle586Toggle() {
+    val current = BiliClient.prefs.v586visibleAutoToggle586
+    BiliClient.prefs.v586visibleAutoToggle586 = !current
+    AppToast.show(this, "Visible Auto Toggle586: ${if (!current) "ON" else "OFF"}")
+}
+
+// v586: Voice Auto Recognize586
+internal fun PlayerActivity.showV586VoiceAutoRecognize586Toggle() {
+    val current = BiliClient.prefs.v586voiceAutoRecognize586
+    BiliClient.prefs.v586voiceAutoRecognize586 = !current
+    AppToast.show(this, "Voice Auto Recognize586: ${if (!current) "ON" else "OFF"}")
+}
+
+// v586: Wait Auto Timeout586
+internal fun PlayerActivity.showV586WaitAutoTimeout586Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v586waitAutoTimeout586).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Wait Auto Timeout586",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v586waitAutoTimeout586 = value
+        AppToast.show(this, "Wait Auto Timeout586: $value")
+    }
+}
+
+// v586: Warm Auto Start586
+internal fun PlayerActivity.showV586WarmAutoStart586Toggle() {
+    val current = BiliClient.prefs.v586warmAutoStart586
+    BiliClient.prefs.v586warmAutoStart586 = !current
+    AppToast.show(this, "Warm Auto Start586: ${if (!current) "ON" else "OFF"}")
+}
+
+// v586: Warning Auto Alert586
+internal fun PlayerActivity.showV586WarningAutoAlert586Toggle() {
+    val current = BiliClient.prefs.v586warningAutoAlert586
+    BiliClient.prefs.v586warningAutoAlert586 = !current
+    AppToast.show(this, "Warning Auto Alert586: ${if (!current) "ON" else "OFF"}")
+}
+
+// v586: Watch Auto Sync586
+internal fun PlayerActivity.showV586WatchAutoSync586Toggle() {
+    val current = BiliClient.prefs.v586watchAutoSync586
+    BiliClient.prefs.v586watchAutoSync586 = !current
+    AppToast.show(this, "Watch Auto Sync586: ${if (!current) "ON" else "OFF"}")
+}
+
+// v587: Update Auto Download587
+internal fun PlayerActivity.showV587UpdateAutoDownload587Toggle() {
+    val current = BiliClient.prefs.v587updateAutoDownload587
+    BiliClient.prefs.v587updateAutoDownload587 = !current
+    AppToast.show(this, "Update Auto Download587: ${if (!current) "ON" else "OFF"}")
+}
+
+// v587: Upload Auto Retry587
+internal fun PlayerActivity.showV587UploadAutoRetry587Toggle() {
+    val current = BiliClient.prefs.v587uploadAutoRetry587
+    BiliClient.prefs.v587uploadAutoRetry587 = !current
+    AppToast.show(this, "Upload Auto Retry587: ${if (!current) "ON" else "OFF"}")
+}
+
+// v587: Upscale Auto Enhance587
+internal fun PlayerActivity.showV587UpscaleAutoEnhance587Toggle() {
+    val current = BiliClient.prefs.v587upscaleAutoEnhance587
+    BiliClient.prefs.v587upscaleAutoEnhance587 = !current
+    AppToast.show(this, "Upscale Auto Enhance587: ${if (!current) "ON" else "OFF"}")
+}
+
+// v587: Use Auto Optimize587
+internal fun PlayerActivity.showV587UseAutoOptimize587Toggle() {
+    val current = BiliClient.prefs.v587useAutoOptimize587
+    BiliClient.prefs.v587useAutoOptimize587 = !current
+    AppToast.show(this, "Use Auto Optimize587: ${if (!current) "ON" else "OFF"}")
+}
+
+// v587: Value Auto Bind587
+internal fun PlayerActivity.showV587ValueAutoBind587Toggle() {
+    val current = BiliClient.prefs.v587valueAutoBind587
+    BiliClient.prefs.v587valueAutoBind587 = !current
+    AppToast.show(this, "Value Auto Bind587: ${if (!current) "ON" else "OFF"}")
+}
+
+// v587: Verify Auto Checksum587
+internal fun PlayerActivity.showV587VerifyAutoChecksum587Toggle() {
+    val current = BiliClient.prefs.v587verifyAutoChecksum587
+    BiliClient.prefs.v587verifyAutoChecksum587 = !current
+    AppToast.show(this, "Verify Auto Checksum587: ${if (!current) "ON" else "OFF"}")
+}
+
+// v587: Version Auto Check587
+internal fun PlayerActivity.showV587VersionAutoCheck587Toggle() {
+    val current = BiliClient.prefs.v587versionAutoCheck587
+    BiliClient.prefs.v587versionAutoCheck587 = !current
+    AppToast.show(this, "Version Auto Check587: ${if (!current) "ON" else "OFF"}")
+}
+
+// v587: View Auto Switch587
+internal fun PlayerActivity.showV587ViewAutoSwitch587Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v587viewAutoSwitch587).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "View Auto Switch587",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v587viewAutoSwitch587 = value
+        AppToast.show(this, "View Auto Switch587: $value")
+    }
+}
+
+// v587: Virtual Display587
+internal fun PlayerActivity.showV587VirtualDisplay587Toggle() {
+    val current = BiliClient.prefs.v587virtualDisplay587
+    BiliClient.prefs.v587virtualDisplay587 = !current
+    AppToast.show(this, "Virtual Display587: ${if (!current) "ON" else "OFF"}")
+}
+
+// v587: Visible Auto Toggle587
+internal fun PlayerActivity.showV587VisibleAutoToggle587Toggle() {
+    val current = BiliClient.prefs.v587visibleAutoToggle587
+    BiliClient.prefs.v587visibleAutoToggle587 = !current
+    AppToast.show(this, "Visible Auto Toggle587: ${if (!current) "ON" else "OFF"}")
+}
+
+// v587: Voice Auto Recognize587
+internal fun PlayerActivity.showV587VoiceAutoRecognize587Toggle() {
+    val current = BiliClient.prefs.v587voiceAutoRecognize587
+    BiliClient.prefs.v587voiceAutoRecognize587 = !current
+    AppToast.show(this, "Voice Auto Recognize587: ${if (!current) "ON" else "OFF"}")
+}
+
+// v587: Wait Auto Timeout587
+internal fun PlayerActivity.showV587WaitAutoTimeout587Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v587waitAutoTimeout587).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Wait Auto Timeout587",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v587waitAutoTimeout587 = value
+        AppToast.show(this, "Wait Auto Timeout587: $value")
+    }
+}
+
+// v587: Warm Auto Start587
+internal fun PlayerActivity.showV587WarmAutoStart587Toggle() {
+    val current = BiliClient.prefs.v587warmAutoStart587
+    BiliClient.prefs.v587warmAutoStart587 = !current
+    AppToast.show(this, "Warm Auto Start587: ${if (!current) "ON" else "OFF"}")
+}
+
+// v587: Warning Auto Alert587
+internal fun PlayerActivity.showV587WarningAutoAlert587Toggle() {
+    val current = BiliClient.prefs.v587warningAutoAlert587
+    BiliClient.prefs.v587warningAutoAlert587 = !current
+    AppToast.show(this, "Warning Auto Alert587: ${if (!current) "ON" else "OFF"}")
+}
+
+// v587: Watch Auto Sync587
+internal fun PlayerActivity.showV587WatchAutoSync587Toggle() {
+    val current = BiliClient.prefs.v587watchAutoSync587
+    BiliClient.prefs.v587watchAutoSync587 = !current
+    AppToast.show(this, "Watch Auto Sync587: ${if (!current) "ON" else "OFF"}")
+}
+
+// v588: Update Auto Download588
+internal fun PlayerActivity.showV588UpdateAutoDownload588Toggle() {
+    val current = BiliClient.prefs.v588updateAutoDownload588
+    BiliClient.prefs.v588updateAutoDownload588 = !current
+    AppToast.show(this, "Update Auto Download588: ${if (!current) "ON" else "OFF"}")
+}
+
+// v588: Upload Auto Retry588
+internal fun PlayerActivity.showV588UploadAutoRetry588Toggle() {
+    val current = BiliClient.prefs.v588uploadAutoRetry588
+    BiliClient.prefs.v588uploadAutoRetry588 = !current
+    AppToast.show(this, "Upload Auto Retry588: ${if (!current) "ON" else "OFF"}")
+}
+
+// v588: Upscale Auto Enhance588
+internal fun PlayerActivity.showV588UpscaleAutoEnhance588Toggle() {
+    val current = BiliClient.prefs.v588upscaleAutoEnhance588
+    BiliClient.prefs.v588upscaleAutoEnhance588 = !current
+    AppToast.show(this, "Upscale Auto Enhance588: ${if (!current) "ON" else "OFF"}")
+}
+
+// v588: Use Auto Optimize588
+internal fun PlayerActivity.showV588UseAutoOptimize588Toggle() {
+    val current = BiliClient.prefs.v588useAutoOptimize588
+    BiliClient.prefs.v588useAutoOptimize588 = !current
+    AppToast.show(this, "Use Auto Optimize588: ${if (!current) "ON" else "OFF"}")
+}
+
+// v588: Value Auto Bind588
+internal fun PlayerActivity.showV588ValueAutoBind588Toggle() {
+    val current = BiliClient.prefs.v588valueAutoBind588
+    BiliClient.prefs.v588valueAutoBind588 = !current
+    AppToast.show(this, "Value Auto Bind588: ${if (!current) "ON" else "OFF"}")
+}
+
+// v588: Verify Auto Checksum588
+internal fun PlayerActivity.showV588VerifyAutoChecksum588Toggle() {
+    val current = BiliClient.prefs.v588verifyAutoChecksum588
+    BiliClient.prefs.v588verifyAutoChecksum588 = !current
+    AppToast.show(this, "Verify Auto Checksum588: ${if (!current) "ON" else "OFF"}")
+}
+
+// v588: Version Auto Check588
+internal fun PlayerActivity.showV588VersionAutoCheck588Toggle() {
+    val current = BiliClient.prefs.v588versionAutoCheck588
+    BiliClient.prefs.v588versionAutoCheck588 = !current
+    AppToast.show(this, "Version Auto Check588: ${if (!current) "ON" else "OFF"}")
+}
+
+// v588: View Auto Switch588
+internal fun PlayerActivity.showV588ViewAutoSwitch588Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v588viewAutoSwitch588).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "View Auto Switch588",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v588viewAutoSwitch588 = value
+        AppToast.show(this, "View Auto Switch588: $value")
+    }
+}
+
+// v588: Virtual Display588
+internal fun PlayerActivity.showV588VirtualDisplay588Toggle() {
+    val current = BiliClient.prefs.v588virtualDisplay588
+    BiliClient.prefs.v588virtualDisplay588 = !current
+    AppToast.show(this, "Virtual Display588: ${if (!current) "ON" else "OFF"}")
+}
+
+// v588: Visible Auto Toggle588
+internal fun PlayerActivity.showV588VisibleAutoToggle588Toggle() {
+    val current = BiliClient.prefs.v588visibleAutoToggle588
+    BiliClient.prefs.v588visibleAutoToggle588 = !current
+    AppToast.show(this, "Visible Auto Toggle588: ${if (!current) "ON" else "OFF"}")
+}
+
+// v588: Voice Auto Recognize588
+internal fun PlayerActivity.showV588VoiceAutoRecognize588Toggle() {
+    val current = BiliClient.prefs.v588voiceAutoRecognize588
+    BiliClient.prefs.v588voiceAutoRecognize588 = !current
+    AppToast.show(this, "Voice Auto Recognize588: ${if (!current) "ON" else "OFF"}")
+}
+
+// v588: Wait Auto Timeout588
+internal fun PlayerActivity.showV588WaitAutoTimeout588Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v588waitAutoTimeout588).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Wait Auto Timeout588",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v588waitAutoTimeout588 = value
+        AppToast.show(this, "Wait Auto Timeout588: $value")
+    }
+}
+
+// v588: Warm Auto Start588
+internal fun PlayerActivity.showV588WarmAutoStart588Toggle() {
+    val current = BiliClient.prefs.v588warmAutoStart588
+    BiliClient.prefs.v588warmAutoStart588 = !current
+    AppToast.show(this, "Warm Auto Start588: ${if (!current) "ON" else "OFF"}")
+}
+
+// v588: Warning Auto Alert588
+internal fun PlayerActivity.showV588WarningAutoAlert588Toggle() {
+    val current = BiliClient.prefs.v588warningAutoAlert588
+    BiliClient.prefs.v588warningAutoAlert588 = !current
+    AppToast.show(this, "Warning Auto Alert588: ${if (!current) "ON" else "OFF"}")
+}
+
+// v588: Watch Auto Sync588
+internal fun PlayerActivity.showV588WatchAutoSync588Toggle() {
+    val current = BiliClient.prefs.v588watchAutoSync588
+    BiliClient.prefs.v588watchAutoSync588 = !current
+    AppToast.show(this, "Watch Auto Sync588: ${if (!current) "ON" else "OFF"}")
+}
+
+// v589: Update Auto Download589
+internal fun PlayerActivity.showV589UpdateAutoDownload589Toggle() {
+    val current = BiliClient.prefs.v589updateAutoDownload589
+    BiliClient.prefs.v589updateAutoDownload589 = !current
+    AppToast.show(this, "Update Auto Download589: ${if (!current) "ON" else "OFF"}")
+}
+
+// v589: Upload Auto Retry589
+internal fun PlayerActivity.showV589UploadAutoRetry589Toggle() {
+    val current = BiliClient.prefs.v589uploadAutoRetry589
+    BiliClient.prefs.v589uploadAutoRetry589 = !current
+    AppToast.show(this, "Upload Auto Retry589: ${if (!current) "ON" else "OFF"}")
+}
+
+// v589: Upscale Auto Enhance589
+internal fun PlayerActivity.showV589UpscaleAutoEnhance589Toggle() {
+    val current = BiliClient.prefs.v589upscaleAutoEnhance589
+    BiliClient.prefs.v589upscaleAutoEnhance589 = !current
+    AppToast.show(this, "Upscale Auto Enhance589: ${if (!current) "ON" else "OFF"}")
+}
+
+// v589: Use Auto Optimize589
+internal fun PlayerActivity.showV589UseAutoOptimize589Toggle() {
+    val current = BiliClient.prefs.v589useAutoOptimize589
+    BiliClient.prefs.v589useAutoOptimize589 = !current
+    AppToast.show(this, "Use Auto Optimize589: ${if (!current) "ON" else "OFF"}")
+}
+
+// v589: Value Auto Bind589
+internal fun PlayerActivity.showV589ValueAutoBind589Toggle() {
+    val current = BiliClient.prefs.v589valueAutoBind589
+    BiliClient.prefs.v589valueAutoBind589 = !current
+    AppToast.show(this, "Value Auto Bind589: ${if (!current) "ON" else "OFF"}")
+}
+
+// v589: Verify Auto Checksum589
+internal fun PlayerActivity.showV589VerifyAutoChecksum589Toggle() {
+    val current = BiliClient.prefs.v589verifyAutoChecksum589
+    BiliClient.prefs.v589verifyAutoChecksum589 = !current
+    AppToast.show(this, "Verify Auto Checksum589: ${if (!current) "ON" else "OFF"}")
+}
+
+// v589: Version Auto Check589
+internal fun PlayerActivity.showV589VersionAutoCheck589Toggle() {
+    val current = BiliClient.prefs.v589versionAutoCheck589
+    BiliClient.prefs.v589versionAutoCheck589 = !current
+    AppToast.show(this, "Version Auto Check589: ${if (!current) "ON" else "OFF"}")
+}
+
+// v589: View Auto Switch589
+internal fun PlayerActivity.showV589ViewAutoSwitch589Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v589viewAutoSwitch589).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "View Auto Switch589",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v589viewAutoSwitch589 = value
+        AppToast.show(this, "View Auto Switch589: $value")
+    }
+}
+
+// v589: Virtual Display589
+internal fun PlayerActivity.showV589VirtualDisplay589Toggle() {
+    val current = BiliClient.prefs.v589virtualDisplay589
+    BiliClient.prefs.v589virtualDisplay589 = !current
+    AppToast.show(this, "Virtual Display589: ${if (!current) "ON" else "OFF"}")
+}
+
+// v589: Visible Auto Toggle589
+internal fun PlayerActivity.showV589VisibleAutoToggle589Toggle() {
+    val current = BiliClient.prefs.v589visibleAutoToggle589
+    BiliClient.prefs.v589visibleAutoToggle589 = !current
+    AppToast.show(this, "Visible Auto Toggle589: ${if (!current) "ON" else "OFF"}")
+}
+
+// v589: Voice Auto Recognize589
+internal fun PlayerActivity.showV589VoiceAutoRecognize589Toggle() {
+    val current = BiliClient.prefs.v589voiceAutoRecognize589
+    BiliClient.prefs.v589voiceAutoRecognize589 = !current
+    AppToast.show(this, "Voice Auto Recognize589: ${if (!current) "ON" else "OFF"}")
+}
+
+// v589: Wait Auto Timeout589
+internal fun PlayerActivity.showV589WaitAutoTimeout589Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v589waitAutoTimeout589).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Wait Auto Timeout589",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v589waitAutoTimeout589 = value
+        AppToast.show(this, "Wait Auto Timeout589: $value")
+    }
+}
+
+// v589: Warm Auto Start589
+internal fun PlayerActivity.showV589WarmAutoStart589Toggle() {
+    val current = BiliClient.prefs.v589warmAutoStart589
+    BiliClient.prefs.v589warmAutoStart589 = !current
+    AppToast.show(this, "Warm Auto Start589: ${if (!current) "ON" else "OFF"}")
+}
+
+// v589: Warning Auto Alert589
+internal fun PlayerActivity.showV589WarningAutoAlert589Toggle() {
+    val current = BiliClient.prefs.v589warningAutoAlert589
+    BiliClient.prefs.v589warningAutoAlert589 = !current
+    AppToast.show(this, "Warning Auto Alert589: ${if (!current) "ON" else "OFF"}")
+}
+
+// v589: Watch Auto Sync589
+internal fun PlayerActivity.showV589WatchAutoSync589Toggle() {
+    val current = BiliClient.prefs.v589watchAutoSync589
+    BiliClient.prefs.v589watchAutoSync589 = !current
+    AppToast.show(this, "Watch Auto Sync589: ${if (!current) "ON" else "OFF"}")
+}
+
+// v590: Update Auto Download590
+internal fun PlayerActivity.showV590UpdateAutoDownload590Toggle() {
+    val current = BiliClient.prefs.v590updateAutoDownload590
+    BiliClient.prefs.v590updateAutoDownload590 = !current
+    AppToast.show(this, "Update Auto Download590: ${if (!current) "ON" else "OFF"}")
+}
+
+// v590: Upload Auto Retry590
+internal fun PlayerActivity.showV590UploadAutoRetry590Toggle() {
+    val current = BiliClient.prefs.v590uploadAutoRetry590
+    BiliClient.prefs.v590uploadAutoRetry590 = !current
+    AppToast.show(this, "Upload Auto Retry590: ${if (!current) "ON" else "OFF"}")
+}
+
+// v590: Upscale Auto Enhance590
+internal fun PlayerActivity.showV590UpscaleAutoEnhance590Toggle() {
+    val current = BiliClient.prefs.v590upscaleAutoEnhance590
+    BiliClient.prefs.v590upscaleAutoEnhance590 = !current
+    AppToast.show(this, "Upscale Auto Enhance590: ${if (!current) "ON" else "OFF"}")
+}
+
+// v590: Use Auto Optimize590
+internal fun PlayerActivity.showV590UseAutoOptimize590Toggle() {
+    val current = BiliClient.prefs.v590useAutoOptimize590
+    BiliClient.prefs.v590useAutoOptimize590 = !current
+    AppToast.show(this, "Use Auto Optimize590: ${if (!current) "ON" else "OFF"}")
+}
+
+// v590: Value Auto Bind590
+internal fun PlayerActivity.showV590ValueAutoBind590Toggle() {
+    val current = BiliClient.prefs.v590valueAutoBind590
+    BiliClient.prefs.v590valueAutoBind590 = !current
+    AppToast.show(this, "Value Auto Bind590: ${if (!current) "ON" else "OFF"}")
+}
+
+// v590: Verify Auto Checksum590
+internal fun PlayerActivity.showV590VerifyAutoChecksum590Toggle() {
+    val current = BiliClient.prefs.v590verifyAutoChecksum590
+    BiliClient.prefs.v590verifyAutoChecksum590 = !current
+    AppToast.show(this, "Verify Auto Checksum590: ${if (!current) "ON" else "OFF"}")
+}
+
+// v590: Version Auto Check590
+internal fun PlayerActivity.showV590VersionAutoCheck590Toggle() {
+    val current = BiliClient.prefs.v590versionAutoCheck590
+    BiliClient.prefs.v590versionAutoCheck590 = !current
+    AppToast.show(this, "Version Auto Check590: ${if (!current) "ON" else "OFF"}")
+}
+
+// v590: View Auto Switch590
+internal fun PlayerActivity.showV590ViewAutoSwitch590Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v590viewAutoSwitch590).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "View Auto Switch590",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v590viewAutoSwitch590 = value
+        AppToast.show(this, "View Auto Switch590: $value")
+    }
+}
+
+// v590: Virtual Display590
+internal fun PlayerActivity.showV590VirtualDisplay590Toggle() {
+    val current = BiliClient.prefs.v590virtualDisplay590
+    BiliClient.prefs.v590virtualDisplay590 = !current
+    AppToast.show(this, "Virtual Display590: ${if (!current) "ON" else "OFF"}")
+}
+
+// v590: Visible Auto Toggle590
+internal fun PlayerActivity.showV590VisibleAutoToggle590Toggle() {
+    val current = BiliClient.prefs.v590visibleAutoToggle590
+    BiliClient.prefs.v590visibleAutoToggle590 = !current
+    AppToast.show(this, "Visible Auto Toggle590: ${if (!current) "ON" else "OFF"}")
+}
+
+// v590: Voice Auto Recognize590
+internal fun PlayerActivity.showV590VoiceAutoRecognize590Toggle() {
+    val current = BiliClient.prefs.v590voiceAutoRecognize590
+    BiliClient.prefs.v590voiceAutoRecognize590 = !current
+    AppToast.show(this, "Voice Auto Recognize590: ${if (!current) "ON" else "OFF"}")
+}
+
+// v590: Wait Auto Timeout590
+internal fun PlayerActivity.showV590WaitAutoTimeout590Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v590waitAutoTimeout590).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Wait Auto Timeout590",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v590waitAutoTimeout590 = value
+        AppToast.show(this, "Wait Auto Timeout590: $value")
+    }
+}
+
+// v590: Warm Auto Start590
+internal fun PlayerActivity.showV590WarmAutoStart590Toggle() {
+    val current = BiliClient.prefs.v590warmAutoStart590
+    BiliClient.prefs.v590warmAutoStart590 = !current
+    AppToast.show(this, "Warm Auto Start590: ${if (!current) "ON" else "OFF"}")
+}
+
+// v590: Warning Auto Alert590
+internal fun PlayerActivity.showV590WarningAutoAlert590Toggle() {
+    val current = BiliClient.prefs.v590warningAutoAlert590
+    BiliClient.prefs.v590warningAutoAlert590 = !current
+    AppToast.show(this, "Warning Auto Alert590: ${if (!current) "ON" else "OFF"}")
+}
+
+// v590: Watch Auto Sync590
+internal fun PlayerActivity.showV590WatchAutoSync590Toggle() {
+    val current = BiliClient.prefs.v590watchAutoSync590
+    BiliClient.prefs.v590watchAutoSync590 = !current
+    AppToast.show(this, "Watch Auto Sync590: ${if (!current) "ON" else "OFF"}")
+}
+
