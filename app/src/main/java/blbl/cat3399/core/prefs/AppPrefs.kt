@@ -65448,6 +65448,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V980STANDARDAUTOCOMPLIANCE980, false)
         set(value) = prefs.edit().putBoolean(KEY_V980STANDARDAUTOCOMPLIANCE980, value).apply()
 
+    var v981starAutoFavorite981: Boolean
+        get() = prefs.getBoolean(KEY_V981STARAUTOFAVORITE981, false)
+        set(value) = prefs.edit().putBoolean(KEY_V981STARAUTOFAVORITE981, value).apply()
+
+    var v981startAutoLaunch981: Boolean
+        get() = prefs.getBoolean(KEY_V981STARTAUTOLAUNCH981, false)
+        set(value) = prefs.edit().putBoolean(KEY_V981STARTAUTOLAUNCH981, value).apply()
+
+    var v981stateAutoPersist981: Boolean
+        get() = prefs.getBoolean(KEY_V981STATEAUTOPERSIST981, false)
+        set(value) = prefs.edit().putBoolean(KEY_V981STATEAUTOPERSIST981, value).apply()
+
+    var v981staticAutoConst981: Boolean
+        get() = prefs.getBoolean(KEY_V981STATICAUTOCONST981, false)
+        set(value) = prefs.edit().putBoolean(KEY_V981STATICAUTOCONST981, value).apply()
+
+    var v981statusAutoBadge981: Boolean
+        get() = prefs.getBoolean(KEY_V981STATUSAUTOBADGE981, false)
+        set(value) = prefs.edit().putBoolean(KEY_V981STATUSAUTOBADGE981, value).apply()
+
+    var v981stepAutoGuide981: Boolean
+        get() = prefs.getBoolean(KEY_V981STEPAUTOGUIDE981, false)
+        set(value) = prefs.edit().putBoolean(KEY_V981STEPAUTOGUIDE981, value).apply()
+
+    var v981stopAutoCleanup981: Boolean
+        get() = prefs.getBoolean(KEY_V981STOPAUTOCLEANUP981, false)
+        set(value) = prefs.edit().putBoolean(KEY_V981STOPAUTOCLEANUP981, value).apply()
+
+    var v981storageAutoQuota981: Boolean
+        get() = prefs.getBoolean(KEY_V981STORAGEAUTOQUOTA981, false)
+        set(value) = prefs.edit().putBoolean(KEY_V981STORAGEAUTOQUOTA981, value).apply()
+
+    var v981storeAutoPersist981: Boolean
+        get() = prefs.getBoolean(KEY_V981STOREAUTOPERSIST981, false)
+        set(value) = prefs.edit().putBoolean(KEY_V981STOREAUTOPERSIST981, value).apply()
+
+    var v981streamAutoBuffer981: Boolean
+        get() = prefs.getBoolean(KEY_V981STREAMAUTOBUFFER981, false)
+        set(value) = prefs.edit().putBoolean(KEY_V981STREAMAUTOBUFFER981, value).apply()
+
+    var v981stretchAutoFill981: Boolean
+        get() = prefs.getBoolean(KEY_V981STRETCHAUTOFILL981, false)
+        set(value) = prefs.edit().putBoolean(KEY_V981STRETCHAUTOFILL981, value).apply()
+
+    var v981strictAutoMode981: Boolean
+        get() = prefs.getBoolean(KEY_V981STRICTAUTOMODE981, false)
+        set(value) = prefs.edit().putBoolean(KEY_V981STRICTAUTOMODE981, value).apply()
+
+    var v981stringAutoEscape981: Boolean
+        get() = prefs.getBoolean(KEY_V981STRINGAUTOESCAPE981, false)
+        set(value) = prefs.edit().putBoolean(KEY_V981STRINGAUTOESCAPE981, value).apply()
+
+    var v981stripAutoWhitespace981: Boolean
+        get() = prefs.getBoolean(KEY_V981STRIPAUTOWHITESPACE981, false)
+        set(value) = prefs.edit().putBoolean(KEY_V981STRIPAUTOWHITESPACE981, value).apply()
+
+    var v981strokeAutoWidth981: Int
+        get() = prefs.getInt(KEY_V981STROKEAUTOWIDTH981, 0)
+        set(value) = prefs.edit().putInt(KEY_V981STROKEAUTOWIDTH981, value).apply()
+
+    var v982starAutoFavorite982: Boolean
+        get() = prefs.getBoolean(KEY_V982STARAUTOFAVORITE982, false)
+        set(value) = prefs.edit().putBoolean(KEY_V982STARAUTOFAVORITE982, value).apply()
+
+    var v982startAutoLaunch982: Boolean
+        get() = prefs.getBoolean(KEY_V982STARTAUTOLAUNCH982, false)
+        set(value) = prefs.edit().putBoolean(KEY_V982STARTAUTOLAUNCH982, value).apply()
+
+    var v982stateAutoPersist982: Boolean
+        get() = prefs.getBoolean(KEY_V982STATEAUTOPERSIST982, false)
+        set(value) = prefs.edit().putBoolean(KEY_V982STATEAUTOPERSIST982, value).apply()
+
+    var v982staticAutoConst982: Boolean
+        get() = prefs.getBoolean(KEY_V982STATICAUTOCONST982, false)
+        set(value) = prefs.edit().putBoolean(KEY_V982STATICAUTOCONST982, value).apply()
+
+    var v982statusAutoBadge982: Boolean
+        get() = prefs.getBoolean(KEY_V982STATUSAUTOBADGE982, false)
+        set(value) = prefs.edit().putBoolean(KEY_V982STATUSAUTOBADGE982, value).apply()
+
+    var v982stepAutoGuide982: Boolean
+        get() = prefs.getBoolean(KEY_V982STEPAUTOGUIDE982, false)
+        set(value) = prefs.edit().putBoolean(KEY_V982STEPAUTOGUIDE982, value).apply()
+
+    var v982stopAutoCleanup982: Boolean
+        get() = prefs.getBoolean(KEY_V982STOPAUTOCLEANUP982, false)
+        set(value) = prefs.edit().putBoolean(KEY_V982STOPAUTOCLEANUP982, value).apply()
+
+    var v982storageAutoQuota982: Boolean
+        get() = prefs.getBoolean(KEY_V982STORAGEAUTOQUOTA982, false)
+        set(value) = prefs.edit().putBoolean(KEY_V982STORAGEAUTOQUOTA982, value).apply()
+
+    var v982storeAutoPersist982: Boolean
+        get() = prefs.getBoolean(KEY_V982STOREAUTOPERSIST982, false)
+        set(value) = prefs.edit().putBoolean(KEY_V982STOREAUTOPERSIST982, value).apply()
+
+    var v982streamAutoBuffer982: Boolean
+        get() = prefs.getBoolean(KEY_V982STREAMAUTOBUFFER982, false)
+        set(value) = prefs.edit().putBoolean(KEY_V982STREAMAUTOBUFFER982, value).apply()
+
+    var v982stretchAutoFill982: Boolean
+        get() = prefs.getBoolean(KEY_V982STRETCHAUTOFILL982, false)
+        set(value) = prefs.edit().putBoolean(KEY_V982STRETCHAUTOFILL982, value).apply()
+
+    var v982strictAutoMode982: Boolean
+        get() = prefs.getBoolean(KEY_V982STRICTAUTOMODE982, false)
+        set(value) = prefs.edit().putBoolean(KEY_V982STRICTAUTOMODE982, value).apply()
+
+    var v982stringAutoEscape982: Boolean
+        get() = prefs.getBoolean(KEY_V982STRINGAUTOESCAPE982, false)
+        set(value) = prefs.edit().putBoolean(KEY_V982STRINGAUTOESCAPE982, value).apply()
+
+    var v982stripAutoWhitespace982: Boolean
+        get() = prefs.getBoolean(KEY_V982STRIPAUTOWHITESPACE982, false)
+        set(value) = prefs.edit().putBoolean(KEY_V982STRIPAUTOWHITESPACE982, value).apply()
+
+    var v982strokeAutoWidth982: Int
+        get() = prefs.getInt(KEY_V982STROKEAUTOWIDTH982, 0)
+        set(value) = prefs.edit().putInt(KEY_V982STROKEAUTOWIDTH982, value).apply()
+
+    var v983starAutoFavorite983: Boolean
+        get() = prefs.getBoolean(KEY_V983STARAUTOFAVORITE983, false)
+        set(value) = prefs.edit().putBoolean(KEY_V983STARAUTOFAVORITE983, value).apply()
+
+    var v983startAutoLaunch983: Boolean
+        get() = prefs.getBoolean(KEY_V983STARTAUTOLAUNCH983, false)
+        set(value) = prefs.edit().putBoolean(KEY_V983STARTAUTOLAUNCH983, value).apply()
+
+    var v983stateAutoPersist983: Boolean
+        get() = prefs.getBoolean(KEY_V983STATEAUTOPERSIST983, false)
+        set(value) = prefs.edit().putBoolean(KEY_V983STATEAUTOPERSIST983, value).apply()
+
+    var v983staticAutoConst983: Boolean
+        get() = prefs.getBoolean(KEY_V983STATICAUTOCONST983, false)
+        set(value) = prefs.edit().putBoolean(KEY_V983STATICAUTOCONST983, value).apply()
+
+    var v983statusAutoBadge983: Boolean
+        get() = prefs.getBoolean(KEY_V983STATUSAUTOBADGE983, false)
+        set(value) = prefs.edit().putBoolean(KEY_V983STATUSAUTOBADGE983, value).apply()
+
+    var v983stepAutoGuide983: Boolean
+        get() = prefs.getBoolean(KEY_V983STEPAUTOGUIDE983, false)
+        set(value) = prefs.edit().putBoolean(KEY_V983STEPAUTOGUIDE983, value).apply()
+
+    var v983stopAutoCleanup983: Boolean
+        get() = prefs.getBoolean(KEY_V983STOPAUTOCLEANUP983, false)
+        set(value) = prefs.edit().putBoolean(KEY_V983STOPAUTOCLEANUP983, value).apply()
+
+    var v983storageAutoQuota983: Boolean
+        get() = prefs.getBoolean(KEY_V983STORAGEAUTOQUOTA983, false)
+        set(value) = prefs.edit().putBoolean(KEY_V983STORAGEAUTOQUOTA983, value).apply()
+
+    var v983storeAutoPersist983: Boolean
+        get() = prefs.getBoolean(KEY_V983STOREAUTOPERSIST983, false)
+        set(value) = prefs.edit().putBoolean(KEY_V983STOREAUTOPERSIST983, value).apply()
+
+    var v983streamAutoBuffer983: Boolean
+        get() = prefs.getBoolean(KEY_V983STREAMAUTOBUFFER983, false)
+        set(value) = prefs.edit().putBoolean(KEY_V983STREAMAUTOBUFFER983, value).apply()
+
+    var v983stretchAutoFill983: Boolean
+        get() = prefs.getBoolean(KEY_V983STRETCHAUTOFILL983, false)
+        set(value) = prefs.edit().putBoolean(KEY_V983STRETCHAUTOFILL983, value).apply()
+
+    var v983strictAutoMode983: Boolean
+        get() = prefs.getBoolean(KEY_V983STRICTAUTOMODE983, false)
+        set(value) = prefs.edit().putBoolean(KEY_V983STRICTAUTOMODE983, value).apply()
+
+    var v983stringAutoEscape983: Boolean
+        get() = prefs.getBoolean(KEY_V983STRINGAUTOESCAPE983, false)
+        set(value) = prefs.edit().putBoolean(KEY_V983STRINGAUTOESCAPE983, value).apply()
+
+    var v983stripAutoWhitespace983: Boolean
+        get() = prefs.getBoolean(KEY_V983STRIPAUTOWHITESPACE983, false)
+        set(value) = prefs.edit().putBoolean(KEY_V983STRIPAUTOWHITESPACE983, value).apply()
+
+    var v983strokeAutoWidth983: Int
+        get() = prefs.getInt(KEY_V983STROKEAUTOWIDTH983, 0)
+        set(value) = prefs.edit().putInt(KEY_V983STROKEAUTOWIDTH983, value).apply()
+
+    var v984starAutoFavorite984: Boolean
+        get() = prefs.getBoolean(KEY_V984STARAUTOFAVORITE984, false)
+        set(value) = prefs.edit().putBoolean(KEY_V984STARAUTOFAVORITE984, value).apply()
+
+    var v984startAutoLaunch984: Boolean
+        get() = prefs.getBoolean(KEY_V984STARTAUTOLAUNCH984, false)
+        set(value) = prefs.edit().putBoolean(KEY_V984STARTAUTOLAUNCH984, value).apply()
+
+    var v984stateAutoPersist984: Boolean
+        get() = prefs.getBoolean(KEY_V984STATEAUTOPERSIST984, false)
+        set(value) = prefs.edit().putBoolean(KEY_V984STATEAUTOPERSIST984, value).apply()
+
+    var v984staticAutoConst984: Boolean
+        get() = prefs.getBoolean(KEY_V984STATICAUTOCONST984, false)
+        set(value) = prefs.edit().putBoolean(KEY_V984STATICAUTOCONST984, value).apply()
+
+    var v984statusAutoBadge984: Boolean
+        get() = prefs.getBoolean(KEY_V984STATUSAUTOBADGE984, false)
+        set(value) = prefs.edit().putBoolean(KEY_V984STATUSAUTOBADGE984, value).apply()
+
+    var v984stepAutoGuide984: Boolean
+        get() = prefs.getBoolean(KEY_V984STEPAUTOGUIDE984, false)
+        set(value) = prefs.edit().putBoolean(KEY_V984STEPAUTOGUIDE984, value).apply()
+
+    var v984stopAutoCleanup984: Boolean
+        get() = prefs.getBoolean(KEY_V984STOPAUTOCLEANUP984, false)
+        set(value) = prefs.edit().putBoolean(KEY_V984STOPAUTOCLEANUP984, value).apply()
+
+    var v984storageAutoQuota984: Boolean
+        get() = prefs.getBoolean(KEY_V984STORAGEAUTOQUOTA984, false)
+        set(value) = prefs.edit().putBoolean(KEY_V984STORAGEAUTOQUOTA984, value).apply()
+
+    var v984storeAutoPersist984: Boolean
+        get() = prefs.getBoolean(KEY_V984STOREAUTOPERSIST984, false)
+        set(value) = prefs.edit().putBoolean(KEY_V984STOREAUTOPERSIST984, value).apply()
+
+    var v984streamAutoBuffer984: Boolean
+        get() = prefs.getBoolean(KEY_V984STREAMAUTOBUFFER984, false)
+        set(value) = prefs.edit().putBoolean(KEY_V984STREAMAUTOBUFFER984, value).apply()
+
+    var v984stretchAutoFill984: Boolean
+        get() = prefs.getBoolean(KEY_V984STRETCHAUTOFILL984, false)
+        set(value) = prefs.edit().putBoolean(KEY_V984STRETCHAUTOFILL984, value).apply()
+
+    var v984strictAutoMode984: Boolean
+        get() = prefs.getBoolean(KEY_V984STRICTAUTOMODE984, false)
+        set(value) = prefs.edit().putBoolean(KEY_V984STRICTAUTOMODE984, value).apply()
+
+    var v984stringAutoEscape984: Boolean
+        get() = prefs.getBoolean(KEY_V984STRINGAUTOESCAPE984, false)
+        set(value) = prefs.edit().putBoolean(KEY_V984STRINGAUTOESCAPE984, value).apply()
+
+    var v984stripAutoWhitespace984: Boolean
+        get() = prefs.getBoolean(KEY_V984STRIPAUTOWHITESPACE984, false)
+        set(value) = prefs.edit().putBoolean(KEY_V984STRIPAUTOWHITESPACE984, value).apply()
+
+    var v984strokeAutoWidth984: Int
+        get() = prefs.getInt(KEY_V984STROKEAUTOWIDTH984, 0)
+        set(value) = prefs.edit().putInt(KEY_V984STROKEAUTOWIDTH984, value).apply()
+
+    var v985starAutoFavorite985: Boolean
+        get() = prefs.getBoolean(KEY_V985STARAUTOFAVORITE985, false)
+        set(value) = prefs.edit().putBoolean(KEY_V985STARAUTOFAVORITE985, value).apply()
+
+    var v985startAutoLaunch985: Boolean
+        get() = prefs.getBoolean(KEY_V985STARTAUTOLAUNCH985, false)
+        set(value) = prefs.edit().putBoolean(KEY_V985STARTAUTOLAUNCH985, value).apply()
+
+    var v985stateAutoPersist985: Boolean
+        get() = prefs.getBoolean(KEY_V985STATEAUTOPERSIST985, false)
+        set(value) = prefs.edit().putBoolean(KEY_V985STATEAUTOPERSIST985, value).apply()
+
+    var v985staticAutoConst985: Boolean
+        get() = prefs.getBoolean(KEY_V985STATICAUTOCONST985, false)
+        set(value) = prefs.edit().putBoolean(KEY_V985STATICAUTOCONST985, value).apply()
+
+    var v985statusAutoBadge985: Boolean
+        get() = prefs.getBoolean(KEY_V985STATUSAUTOBADGE985, false)
+        set(value) = prefs.edit().putBoolean(KEY_V985STATUSAUTOBADGE985, value).apply()
+
+    var v985stepAutoGuide985: Boolean
+        get() = prefs.getBoolean(KEY_V985STEPAUTOGUIDE985, false)
+        set(value) = prefs.edit().putBoolean(KEY_V985STEPAUTOGUIDE985, value).apply()
+
+    var v985stopAutoCleanup985: Boolean
+        get() = prefs.getBoolean(KEY_V985STOPAUTOCLEANUP985, false)
+        set(value) = prefs.edit().putBoolean(KEY_V985STOPAUTOCLEANUP985, value).apply()
+
+    var v985storageAutoQuota985: Boolean
+        get() = prefs.getBoolean(KEY_V985STORAGEAUTOQUOTA985, false)
+        set(value) = prefs.edit().putBoolean(KEY_V985STORAGEAUTOQUOTA985, value).apply()
+
+    var v985storeAutoPersist985: Boolean
+        get() = prefs.getBoolean(KEY_V985STOREAUTOPERSIST985, false)
+        set(value) = prefs.edit().putBoolean(KEY_V985STOREAUTOPERSIST985, value).apply()
+
+    var v985streamAutoBuffer985: Boolean
+        get() = prefs.getBoolean(KEY_V985STREAMAUTOBUFFER985, false)
+        set(value) = prefs.edit().putBoolean(KEY_V985STREAMAUTOBUFFER985, value).apply()
+
+    var v985stretchAutoFill985: Boolean
+        get() = prefs.getBoolean(KEY_V985STRETCHAUTOFILL985, false)
+        set(value) = prefs.edit().putBoolean(KEY_V985STRETCHAUTOFILL985, value).apply()
+
+    var v985strictAutoMode985: Boolean
+        get() = prefs.getBoolean(KEY_V985STRICTAUTOMODE985, false)
+        set(value) = prefs.edit().putBoolean(KEY_V985STRICTAUTOMODE985, value).apply()
+
+    var v985stringAutoEscape985: Boolean
+        get() = prefs.getBoolean(KEY_V985STRINGAUTOESCAPE985, false)
+        set(value) = prefs.edit().putBoolean(KEY_V985STRINGAUTOESCAPE985, value).apply()
+
+    var v985stripAutoWhitespace985: Boolean
+        get() = prefs.getBoolean(KEY_V985STRIPAUTOWHITESPACE985, false)
+        set(value) = prefs.edit().putBoolean(KEY_V985STRIPAUTOWHITESPACE985, value).apply()
+
+    var v985strokeAutoWidth985: Int
+        get() = prefs.getInt(KEY_V985STROKEAUTOWIDTH985, 0)
+        set(value) = prefs.edit().putInt(KEY_V985STROKEAUTOWIDTH985, value).apply()
+
+    var v986starAutoFavorite986: Boolean
+        get() = prefs.getBoolean(KEY_V986STARAUTOFAVORITE986, false)
+        set(value) = prefs.edit().putBoolean(KEY_V986STARAUTOFAVORITE986, value).apply()
+
+    var v986startAutoLaunch986: Boolean
+        get() = prefs.getBoolean(KEY_V986STARTAUTOLAUNCH986, false)
+        set(value) = prefs.edit().putBoolean(KEY_V986STARTAUTOLAUNCH986, value).apply()
+
+    var v986stateAutoPersist986: Boolean
+        get() = prefs.getBoolean(KEY_V986STATEAUTOPERSIST986, false)
+        set(value) = prefs.edit().putBoolean(KEY_V986STATEAUTOPERSIST986, value).apply()
+
+    var v986staticAutoConst986: Boolean
+        get() = prefs.getBoolean(KEY_V986STATICAUTOCONST986, false)
+        set(value) = prefs.edit().putBoolean(KEY_V986STATICAUTOCONST986, value).apply()
+
+    var v986statusAutoBadge986: Boolean
+        get() = prefs.getBoolean(KEY_V986STATUSAUTOBADGE986, false)
+        set(value) = prefs.edit().putBoolean(KEY_V986STATUSAUTOBADGE986, value).apply()
+
+    var v986stepAutoGuide986: Boolean
+        get() = prefs.getBoolean(KEY_V986STEPAUTOGUIDE986, false)
+        set(value) = prefs.edit().putBoolean(KEY_V986STEPAUTOGUIDE986, value).apply()
+
+    var v986stopAutoCleanup986: Boolean
+        get() = prefs.getBoolean(KEY_V986STOPAUTOCLEANUP986, false)
+        set(value) = prefs.edit().putBoolean(KEY_V986STOPAUTOCLEANUP986, value).apply()
+
+    var v986storageAutoQuota986: Boolean
+        get() = prefs.getBoolean(KEY_V986STORAGEAUTOQUOTA986, false)
+        set(value) = prefs.edit().putBoolean(KEY_V986STORAGEAUTOQUOTA986, value).apply()
+
+    var v986storeAutoPersist986: Boolean
+        get() = prefs.getBoolean(KEY_V986STOREAUTOPERSIST986, false)
+        set(value) = prefs.edit().putBoolean(KEY_V986STOREAUTOPERSIST986, value).apply()
+
+    var v986streamAutoBuffer986: Boolean
+        get() = prefs.getBoolean(KEY_V986STREAMAUTOBUFFER986, false)
+        set(value) = prefs.edit().putBoolean(KEY_V986STREAMAUTOBUFFER986, value).apply()
+
+    var v986stretchAutoFill986: Boolean
+        get() = prefs.getBoolean(KEY_V986STRETCHAUTOFILL986, false)
+        set(value) = prefs.edit().putBoolean(KEY_V986STRETCHAUTOFILL986, value).apply()
+
+    var v986strictAutoMode986: Boolean
+        get() = prefs.getBoolean(KEY_V986STRICTAUTOMODE986, false)
+        set(value) = prefs.edit().putBoolean(KEY_V986STRICTAUTOMODE986, value).apply()
+
+    var v986stringAutoEscape986: Boolean
+        get() = prefs.getBoolean(KEY_V986STRINGAUTOESCAPE986, false)
+        set(value) = prefs.edit().putBoolean(KEY_V986STRINGAUTOESCAPE986, value).apply()
+
+    var v986stripAutoWhitespace986: Boolean
+        get() = prefs.getBoolean(KEY_V986STRIPAUTOWHITESPACE986, false)
+        set(value) = prefs.edit().putBoolean(KEY_V986STRIPAUTOWHITESPACE986, value).apply()
+
+    var v986strokeAutoWidth986: Int
+        get() = prefs.getInt(KEY_V986STROKEAUTOWIDTH986, 0)
+        set(value) = prefs.edit().putInt(KEY_V986STROKEAUTOWIDTH986, value).apply()
+
+    var v987starAutoFavorite987: Boolean
+        get() = prefs.getBoolean(KEY_V987STARAUTOFAVORITE987, false)
+        set(value) = prefs.edit().putBoolean(KEY_V987STARAUTOFAVORITE987, value).apply()
+
+    var v987startAutoLaunch987: Boolean
+        get() = prefs.getBoolean(KEY_V987STARTAUTOLAUNCH987, false)
+        set(value) = prefs.edit().putBoolean(KEY_V987STARTAUTOLAUNCH987, value).apply()
+
+    var v987stateAutoPersist987: Boolean
+        get() = prefs.getBoolean(KEY_V987STATEAUTOPERSIST987, false)
+        set(value) = prefs.edit().putBoolean(KEY_V987STATEAUTOPERSIST987, value).apply()
+
+    var v987staticAutoConst987: Boolean
+        get() = prefs.getBoolean(KEY_V987STATICAUTOCONST987, false)
+        set(value) = prefs.edit().putBoolean(KEY_V987STATICAUTOCONST987, value).apply()
+
+    var v987statusAutoBadge987: Boolean
+        get() = prefs.getBoolean(KEY_V987STATUSAUTOBADGE987, false)
+        set(value) = prefs.edit().putBoolean(KEY_V987STATUSAUTOBADGE987, value).apply()
+
+    var v987stepAutoGuide987: Boolean
+        get() = prefs.getBoolean(KEY_V987STEPAUTOGUIDE987, false)
+        set(value) = prefs.edit().putBoolean(KEY_V987STEPAUTOGUIDE987, value).apply()
+
+    var v987stopAutoCleanup987: Boolean
+        get() = prefs.getBoolean(KEY_V987STOPAUTOCLEANUP987, false)
+        set(value) = prefs.edit().putBoolean(KEY_V987STOPAUTOCLEANUP987, value).apply()
+
+    var v987storageAutoQuota987: Boolean
+        get() = prefs.getBoolean(KEY_V987STORAGEAUTOQUOTA987, false)
+        set(value) = prefs.edit().putBoolean(KEY_V987STORAGEAUTOQUOTA987, value).apply()
+
+    var v987storeAutoPersist987: Boolean
+        get() = prefs.getBoolean(KEY_V987STOREAUTOPERSIST987, false)
+        set(value) = prefs.edit().putBoolean(KEY_V987STOREAUTOPERSIST987, value).apply()
+
+    var v987streamAutoBuffer987: Boolean
+        get() = prefs.getBoolean(KEY_V987STREAMAUTOBUFFER987, false)
+        set(value) = prefs.edit().putBoolean(KEY_V987STREAMAUTOBUFFER987, value).apply()
+
+    var v987stretchAutoFill987: Boolean
+        get() = prefs.getBoolean(KEY_V987STRETCHAUTOFILL987, false)
+        set(value) = prefs.edit().putBoolean(KEY_V987STRETCHAUTOFILL987, value).apply()
+
+    var v987strictAutoMode987: Boolean
+        get() = prefs.getBoolean(KEY_V987STRICTAUTOMODE987, false)
+        set(value) = prefs.edit().putBoolean(KEY_V987STRICTAUTOMODE987, value).apply()
+
+    var v987stringAutoEscape987: Boolean
+        get() = prefs.getBoolean(KEY_V987STRINGAUTOESCAPE987, false)
+        set(value) = prefs.edit().putBoolean(KEY_V987STRINGAUTOESCAPE987, value).apply()
+
+    var v987stripAutoWhitespace987: Boolean
+        get() = prefs.getBoolean(KEY_V987STRIPAUTOWHITESPACE987, false)
+        set(value) = prefs.edit().putBoolean(KEY_V987STRIPAUTOWHITESPACE987, value).apply()
+
+    var v987strokeAutoWidth987: Int
+        get() = prefs.getInt(KEY_V987STROKEAUTOWIDTH987, 0)
+        set(value) = prefs.edit().putInt(KEY_V987STROKEAUTOWIDTH987, value).apply()
+
+    var v988starAutoFavorite988: Boolean
+        get() = prefs.getBoolean(KEY_V988STARAUTOFAVORITE988, false)
+        set(value) = prefs.edit().putBoolean(KEY_V988STARAUTOFAVORITE988, value).apply()
+
+    var v988startAutoLaunch988: Boolean
+        get() = prefs.getBoolean(KEY_V988STARTAUTOLAUNCH988, false)
+        set(value) = prefs.edit().putBoolean(KEY_V988STARTAUTOLAUNCH988, value).apply()
+
+    var v988stateAutoPersist988: Boolean
+        get() = prefs.getBoolean(KEY_V988STATEAUTOPERSIST988, false)
+        set(value) = prefs.edit().putBoolean(KEY_V988STATEAUTOPERSIST988, value).apply()
+
+    var v988staticAutoConst988: Boolean
+        get() = prefs.getBoolean(KEY_V988STATICAUTOCONST988, false)
+        set(value) = prefs.edit().putBoolean(KEY_V988STATICAUTOCONST988, value).apply()
+
+    var v988statusAutoBadge988: Boolean
+        get() = prefs.getBoolean(KEY_V988STATUSAUTOBADGE988, false)
+        set(value) = prefs.edit().putBoolean(KEY_V988STATUSAUTOBADGE988, value).apply()
+
+    var v988stepAutoGuide988: Boolean
+        get() = prefs.getBoolean(KEY_V988STEPAUTOGUIDE988, false)
+        set(value) = prefs.edit().putBoolean(KEY_V988STEPAUTOGUIDE988, value).apply()
+
+    var v988stopAutoCleanup988: Boolean
+        get() = prefs.getBoolean(KEY_V988STOPAUTOCLEANUP988, false)
+        set(value) = prefs.edit().putBoolean(KEY_V988STOPAUTOCLEANUP988, value).apply()
+
+    var v988storageAutoQuota988: Boolean
+        get() = prefs.getBoolean(KEY_V988STORAGEAUTOQUOTA988, false)
+        set(value) = prefs.edit().putBoolean(KEY_V988STORAGEAUTOQUOTA988, value).apply()
+
+    var v988storeAutoPersist988: Boolean
+        get() = prefs.getBoolean(KEY_V988STOREAUTOPERSIST988, false)
+        set(value) = prefs.edit().putBoolean(KEY_V988STOREAUTOPERSIST988, value).apply()
+
+    var v988streamAutoBuffer988: Boolean
+        get() = prefs.getBoolean(KEY_V988STREAMAUTOBUFFER988, false)
+        set(value) = prefs.edit().putBoolean(KEY_V988STREAMAUTOBUFFER988, value).apply()
+
+    var v988stretchAutoFill988: Boolean
+        get() = prefs.getBoolean(KEY_V988STRETCHAUTOFILL988, false)
+        set(value) = prefs.edit().putBoolean(KEY_V988STRETCHAUTOFILL988, value).apply()
+
+    var v988strictAutoMode988: Boolean
+        get() = prefs.getBoolean(KEY_V988STRICTAUTOMODE988, false)
+        set(value) = prefs.edit().putBoolean(KEY_V988STRICTAUTOMODE988, value).apply()
+
+    var v988stringAutoEscape988: Boolean
+        get() = prefs.getBoolean(KEY_V988STRINGAUTOESCAPE988, false)
+        set(value) = prefs.edit().putBoolean(KEY_V988STRINGAUTOESCAPE988, value).apply()
+
+    var v988stripAutoWhitespace988: Boolean
+        get() = prefs.getBoolean(KEY_V988STRIPAUTOWHITESPACE988, false)
+        set(value) = prefs.edit().putBoolean(KEY_V988STRIPAUTOWHITESPACE988, value).apply()
+
+    var v988strokeAutoWidth988: Int
+        get() = prefs.getInt(KEY_V988STROKEAUTOWIDTH988, 0)
+        set(value) = prefs.edit().putInt(KEY_V988STROKEAUTOWIDTH988, value).apply()
+
+    var v989starAutoFavorite989: Boolean
+        get() = prefs.getBoolean(KEY_V989STARAUTOFAVORITE989, false)
+        set(value) = prefs.edit().putBoolean(KEY_V989STARAUTOFAVORITE989, value).apply()
+
+    var v989startAutoLaunch989: Boolean
+        get() = prefs.getBoolean(KEY_V989STARTAUTOLAUNCH989, false)
+        set(value) = prefs.edit().putBoolean(KEY_V989STARTAUTOLAUNCH989, value).apply()
+
+    var v989stateAutoPersist989: Boolean
+        get() = prefs.getBoolean(KEY_V989STATEAUTOPERSIST989, false)
+        set(value) = prefs.edit().putBoolean(KEY_V989STATEAUTOPERSIST989, value).apply()
+
+    var v989staticAutoConst989: Boolean
+        get() = prefs.getBoolean(KEY_V989STATICAUTOCONST989, false)
+        set(value) = prefs.edit().putBoolean(KEY_V989STATICAUTOCONST989, value).apply()
+
+    var v989statusAutoBadge989: Boolean
+        get() = prefs.getBoolean(KEY_V989STATUSAUTOBADGE989, false)
+        set(value) = prefs.edit().putBoolean(KEY_V989STATUSAUTOBADGE989, value).apply()
+
+    var v989stepAutoGuide989: Boolean
+        get() = prefs.getBoolean(KEY_V989STEPAUTOGUIDE989, false)
+        set(value) = prefs.edit().putBoolean(KEY_V989STEPAUTOGUIDE989, value).apply()
+
+    var v989stopAutoCleanup989: Boolean
+        get() = prefs.getBoolean(KEY_V989STOPAUTOCLEANUP989, false)
+        set(value) = prefs.edit().putBoolean(KEY_V989STOPAUTOCLEANUP989, value).apply()
+
+    var v989storageAutoQuota989: Boolean
+        get() = prefs.getBoolean(KEY_V989STORAGEAUTOQUOTA989, false)
+        set(value) = prefs.edit().putBoolean(KEY_V989STORAGEAUTOQUOTA989, value).apply()
+
+    var v989storeAutoPersist989: Boolean
+        get() = prefs.getBoolean(KEY_V989STOREAUTOPERSIST989, false)
+        set(value) = prefs.edit().putBoolean(KEY_V989STOREAUTOPERSIST989, value).apply()
+
+    var v989streamAutoBuffer989: Boolean
+        get() = prefs.getBoolean(KEY_V989STREAMAUTOBUFFER989, false)
+        set(value) = prefs.edit().putBoolean(KEY_V989STREAMAUTOBUFFER989, value).apply()
+
+    var v989stretchAutoFill989: Boolean
+        get() = prefs.getBoolean(KEY_V989STRETCHAUTOFILL989, false)
+        set(value) = prefs.edit().putBoolean(KEY_V989STRETCHAUTOFILL989, value).apply()
+
+    var v989strictAutoMode989: Boolean
+        get() = prefs.getBoolean(KEY_V989STRICTAUTOMODE989, false)
+        set(value) = prefs.edit().putBoolean(KEY_V989STRICTAUTOMODE989, value).apply()
+
+    var v989stringAutoEscape989: Boolean
+        get() = prefs.getBoolean(KEY_V989STRINGAUTOESCAPE989, false)
+        set(value) = prefs.edit().putBoolean(KEY_V989STRINGAUTOESCAPE989, value).apply()
+
+    var v989stripAutoWhitespace989: Boolean
+        get() = prefs.getBoolean(KEY_V989STRIPAUTOWHITESPACE989, false)
+        set(value) = prefs.edit().putBoolean(KEY_V989STRIPAUTOWHITESPACE989, value).apply()
+
+    var v989strokeAutoWidth989: Int
+        get() = prefs.getInt(KEY_V989STROKEAUTOWIDTH989, 0)
+        set(value) = prefs.edit().putInt(KEY_V989STROKEAUTOWIDTH989, value).apply()
+
+    var v990starAutoFavorite990: Boolean
+        get() = prefs.getBoolean(KEY_V990STARAUTOFAVORITE990, false)
+        set(value) = prefs.edit().putBoolean(KEY_V990STARAUTOFAVORITE990, value).apply()
+
+    var v990startAutoLaunch990: Boolean
+        get() = prefs.getBoolean(KEY_V990STARTAUTOLAUNCH990, false)
+        set(value) = prefs.edit().putBoolean(KEY_V990STARTAUTOLAUNCH990, value).apply()
+
+    var v990stateAutoPersist990: Boolean
+        get() = prefs.getBoolean(KEY_V990STATEAUTOPERSIST990, false)
+        set(value) = prefs.edit().putBoolean(KEY_V990STATEAUTOPERSIST990, value).apply()
+
+    var v990staticAutoConst990: Boolean
+        get() = prefs.getBoolean(KEY_V990STATICAUTOCONST990, false)
+        set(value) = prefs.edit().putBoolean(KEY_V990STATICAUTOCONST990, value).apply()
+
+    var v990statusAutoBadge990: Boolean
+        get() = prefs.getBoolean(KEY_V990STATUSAUTOBADGE990, false)
+        set(value) = prefs.edit().putBoolean(KEY_V990STATUSAUTOBADGE990, value).apply()
+
+    var v990stepAutoGuide990: Boolean
+        get() = prefs.getBoolean(KEY_V990STEPAUTOGUIDE990, false)
+        set(value) = prefs.edit().putBoolean(KEY_V990STEPAUTOGUIDE990, value).apply()
+
+    var v990stopAutoCleanup990: Boolean
+        get() = prefs.getBoolean(KEY_V990STOPAUTOCLEANUP990, false)
+        set(value) = prefs.edit().putBoolean(KEY_V990STOPAUTOCLEANUP990, value).apply()
+
+    var v990storageAutoQuota990: Boolean
+        get() = prefs.getBoolean(KEY_V990STORAGEAUTOQUOTA990, false)
+        set(value) = prefs.edit().putBoolean(KEY_V990STORAGEAUTOQUOTA990, value).apply()
+
+    var v990storeAutoPersist990: Boolean
+        get() = prefs.getBoolean(KEY_V990STOREAUTOPERSIST990, false)
+        set(value) = prefs.edit().putBoolean(KEY_V990STOREAUTOPERSIST990, value).apply()
+
+    var v990streamAutoBuffer990: Boolean
+        get() = prefs.getBoolean(KEY_V990STREAMAUTOBUFFER990, false)
+        set(value) = prefs.edit().putBoolean(KEY_V990STREAMAUTOBUFFER990, value).apply()
+
+    var v990stretchAutoFill990: Boolean
+        get() = prefs.getBoolean(KEY_V990STRETCHAUTOFILL990, false)
+        set(value) = prefs.edit().putBoolean(KEY_V990STRETCHAUTOFILL990, value).apply()
+
+    var v990strictAutoMode990: Boolean
+        get() = prefs.getBoolean(KEY_V990STRICTAUTOMODE990, false)
+        set(value) = prefs.edit().putBoolean(KEY_V990STRICTAUTOMODE990, value).apply()
+
+    var v990stringAutoEscape990: Boolean
+        get() = prefs.getBoolean(KEY_V990STRINGAUTOESCAPE990, false)
+        set(value) = prefs.edit().putBoolean(KEY_V990STRINGAUTOESCAPE990, value).apply()
+
+    var v990stripAutoWhitespace990: Boolean
+        get() = prefs.getBoolean(KEY_V990STRIPAUTOWHITESPACE990, false)
+        set(value) = prefs.edit().putBoolean(KEY_V990STRIPAUTOWHITESPACE990, value).apply()
+
+    var v990strokeAutoWidth990: Int
+        get() = prefs.getInt(KEY_V990STROKEAUTOWIDTH990, 0)
+        set(value) = prefs.edit().putInt(KEY_V990STROKEAUTOWIDTH990, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -82680,5 +83280,155 @@ class AppPrefs(context: Context) {
         const val KEY_V980STACKAUTOTRACE980 = "v980stackAutoTrace980" // v980 Stack Auto Trace980
         const val KEY_V980STAGEAUTOPROGRESS980 = "v980stageAutoProgress980" // v980 Stage Auto Progress980
         const val KEY_V980STANDARDAUTOCOMPLIANCE980 = "v980standardAutoCompliance980" // v980 Standard Auto Compliance980
+        const val KEY_V981STARAUTOFAVORITE981 = "v981starAutoFavorite981" // v981 Star Auto Favorite981
+        const val KEY_V981STARTAUTOLAUNCH981 = "v981startAutoLaunch981" // v981 Start Auto Launch981
+        const val KEY_V981STATEAUTOPERSIST981 = "v981stateAutoPersist981" // v981 State Auto Persist981
+        const val KEY_V981STATICAUTOCONST981 = "v981staticAutoConst981" // v981 Static Auto Const981
+        const val KEY_V981STATUSAUTOBADGE981 = "v981statusAutoBadge981" // v981 Status Auto Badge981
+        const val KEY_V981STEPAUTOGUIDE981 = "v981stepAutoGuide981" // v981 Step Auto Guide981
+        const val KEY_V981STOPAUTOCLEANUP981 = "v981stopAutoCleanup981" // v981 Stop Auto Cleanup981
+        const val KEY_V981STORAGEAUTOQUOTA981 = "v981storageAutoQuota981" // v981 Storage Auto Quota981
+        const val KEY_V981STOREAUTOPERSIST981 = "v981storeAutoPersist981" // v981 Store Auto Persist981
+        const val KEY_V981STREAMAUTOBUFFER981 = "v981streamAutoBuffer981" // v981 Stream Auto Buffer981
+        const val KEY_V981STRETCHAUTOFILL981 = "v981stretchAutoFill981" // v981 Stretch Auto Fill981
+        const val KEY_V981STRICTAUTOMODE981 = "v981strictAutoMode981" // v981 Strict Auto Mode981
+        const val KEY_V981STRINGAUTOESCAPE981 = "v981stringAutoEscape981" // v981 String Auto Escape981
+        const val KEY_V981STRIPAUTOWHITESPACE981 = "v981stripAutoWhitespace981" // v981 Strip Auto Whitespace981
+        const val KEY_V981STROKEAUTOWIDTH981 = "v981strokeAutoWidth981" // v981 Stroke Auto Width981
+        const val KEY_V982STARAUTOFAVORITE982 = "v982starAutoFavorite982" // v982 Star Auto Favorite982
+        const val KEY_V982STARTAUTOLAUNCH982 = "v982startAutoLaunch982" // v982 Start Auto Launch982
+        const val KEY_V982STATEAUTOPERSIST982 = "v982stateAutoPersist982" // v982 State Auto Persist982
+        const val KEY_V982STATICAUTOCONST982 = "v982staticAutoConst982" // v982 Static Auto Const982
+        const val KEY_V982STATUSAUTOBADGE982 = "v982statusAutoBadge982" // v982 Status Auto Badge982
+        const val KEY_V982STEPAUTOGUIDE982 = "v982stepAutoGuide982" // v982 Step Auto Guide982
+        const val KEY_V982STOPAUTOCLEANUP982 = "v982stopAutoCleanup982" // v982 Stop Auto Cleanup982
+        const val KEY_V982STORAGEAUTOQUOTA982 = "v982storageAutoQuota982" // v982 Storage Auto Quota982
+        const val KEY_V982STOREAUTOPERSIST982 = "v982storeAutoPersist982" // v982 Store Auto Persist982
+        const val KEY_V982STREAMAUTOBUFFER982 = "v982streamAutoBuffer982" // v982 Stream Auto Buffer982
+        const val KEY_V982STRETCHAUTOFILL982 = "v982stretchAutoFill982" // v982 Stretch Auto Fill982
+        const val KEY_V982STRICTAUTOMODE982 = "v982strictAutoMode982" // v982 Strict Auto Mode982
+        const val KEY_V982STRINGAUTOESCAPE982 = "v982stringAutoEscape982" // v982 String Auto Escape982
+        const val KEY_V982STRIPAUTOWHITESPACE982 = "v982stripAutoWhitespace982" // v982 Strip Auto Whitespace982
+        const val KEY_V982STROKEAUTOWIDTH982 = "v982strokeAutoWidth982" // v982 Stroke Auto Width982
+        const val KEY_V983STARAUTOFAVORITE983 = "v983starAutoFavorite983" // v983 Star Auto Favorite983
+        const val KEY_V983STARTAUTOLAUNCH983 = "v983startAutoLaunch983" // v983 Start Auto Launch983
+        const val KEY_V983STATEAUTOPERSIST983 = "v983stateAutoPersist983" // v983 State Auto Persist983
+        const val KEY_V983STATICAUTOCONST983 = "v983staticAutoConst983" // v983 Static Auto Const983
+        const val KEY_V983STATUSAUTOBADGE983 = "v983statusAutoBadge983" // v983 Status Auto Badge983
+        const val KEY_V983STEPAUTOGUIDE983 = "v983stepAutoGuide983" // v983 Step Auto Guide983
+        const val KEY_V983STOPAUTOCLEANUP983 = "v983stopAutoCleanup983" // v983 Stop Auto Cleanup983
+        const val KEY_V983STORAGEAUTOQUOTA983 = "v983storageAutoQuota983" // v983 Storage Auto Quota983
+        const val KEY_V983STOREAUTOPERSIST983 = "v983storeAutoPersist983" // v983 Store Auto Persist983
+        const val KEY_V983STREAMAUTOBUFFER983 = "v983streamAutoBuffer983" // v983 Stream Auto Buffer983
+        const val KEY_V983STRETCHAUTOFILL983 = "v983stretchAutoFill983" // v983 Stretch Auto Fill983
+        const val KEY_V983STRICTAUTOMODE983 = "v983strictAutoMode983" // v983 Strict Auto Mode983
+        const val KEY_V983STRINGAUTOESCAPE983 = "v983stringAutoEscape983" // v983 String Auto Escape983
+        const val KEY_V983STRIPAUTOWHITESPACE983 = "v983stripAutoWhitespace983" // v983 Strip Auto Whitespace983
+        const val KEY_V983STROKEAUTOWIDTH983 = "v983strokeAutoWidth983" // v983 Stroke Auto Width983
+        const val KEY_V984STARAUTOFAVORITE984 = "v984starAutoFavorite984" // v984 Star Auto Favorite984
+        const val KEY_V984STARTAUTOLAUNCH984 = "v984startAutoLaunch984" // v984 Start Auto Launch984
+        const val KEY_V984STATEAUTOPERSIST984 = "v984stateAutoPersist984" // v984 State Auto Persist984
+        const val KEY_V984STATICAUTOCONST984 = "v984staticAutoConst984" // v984 Static Auto Const984
+        const val KEY_V984STATUSAUTOBADGE984 = "v984statusAutoBadge984" // v984 Status Auto Badge984
+        const val KEY_V984STEPAUTOGUIDE984 = "v984stepAutoGuide984" // v984 Step Auto Guide984
+        const val KEY_V984STOPAUTOCLEANUP984 = "v984stopAutoCleanup984" // v984 Stop Auto Cleanup984
+        const val KEY_V984STORAGEAUTOQUOTA984 = "v984storageAutoQuota984" // v984 Storage Auto Quota984
+        const val KEY_V984STOREAUTOPERSIST984 = "v984storeAutoPersist984" // v984 Store Auto Persist984
+        const val KEY_V984STREAMAUTOBUFFER984 = "v984streamAutoBuffer984" // v984 Stream Auto Buffer984
+        const val KEY_V984STRETCHAUTOFILL984 = "v984stretchAutoFill984" // v984 Stretch Auto Fill984
+        const val KEY_V984STRICTAUTOMODE984 = "v984strictAutoMode984" // v984 Strict Auto Mode984
+        const val KEY_V984STRINGAUTOESCAPE984 = "v984stringAutoEscape984" // v984 String Auto Escape984
+        const val KEY_V984STRIPAUTOWHITESPACE984 = "v984stripAutoWhitespace984" // v984 Strip Auto Whitespace984
+        const val KEY_V984STROKEAUTOWIDTH984 = "v984strokeAutoWidth984" // v984 Stroke Auto Width984
+        const val KEY_V985STARAUTOFAVORITE985 = "v985starAutoFavorite985" // v985 Star Auto Favorite985
+        const val KEY_V985STARTAUTOLAUNCH985 = "v985startAutoLaunch985" // v985 Start Auto Launch985
+        const val KEY_V985STATEAUTOPERSIST985 = "v985stateAutoPersist985" // v985 State Auto Persist985
+        const val KEY_V985STATICAUTOCONST985 = "v985staticAutoConst985" // v985 Static Auto Const985
+        const val KEY_V985STATUSAUTOBADGE985 = "v985statusAutoBadge985" // v985 Status Auto Badge985
+        const val KEY_V985STEPAUTOGUIDE985 = "v985stepAutoGuide985" // v985 Step Auto Guide985
+        const val KEY_V985STOPAUTOCLEANUP985 = "v985stopAutoCleanup985" // v985 Stop Auto Cleanup985
+        const val KEY_V985STORAGEAUTOQUOTA985 = "v985storageAutoQuota985" // v985 Storage Auto Quota985
+        const val KEY_V985STOREAUTOPERSIST985 = "v985storeAutoPersist985" // v985 Store Auto Persist985
+        const val KEY_V985STREAMAUTOBUFFER985 = "v985streamAutoBuffer985" // v985 Stream Auto Buffer985
+        const val KEY_V985STRETCHAUTOFILL985 = "v985stretchAutoFill985" // v985 Stretch Auto Fill985
+        const val KEY_V985STRICTAUTOMODE985 = "v985strictAutoMode985" // v985 Strict Auto Mode985
+        const val KEY_V985STRINGAUTOESCAPE985 = "v985stringAutoEscape985" // v985 String Auto Escape985
+        const val KEY_V985STRIPAUTOWHITESPACE985 = "v985stripAutoWhitespace985" // v985 Strip Auto Whitespace985
+        const val KEY_V985STROKEAUTOWIDTH985 = "v985strokeAutoWidth985" // v985 Stroke Auto Width985
+        const val KEY_V986STARAUTOFAVORITE986 = "v986starAutoFavorite986" // v986 Star Auto Favorite986
+        const val KEY_V986STARTAUTOLAUNCH986 = "v986startAutoLaunch986" // v986 Start Auto Launch986
+        const val KEY_V986STATEAUTOPERSIST986 = "v986stateAutoPersist986" // v986 State Auto Persist986
+        const val KEY_V986STATICAUTOCONST986 = "v986staticAutoConst986" // v986 Static Auto Const986
+        const val KEY_V986STATUSAUTOBADGE986 = "v986statusAutoBadge986" // v986 Status Auto Badge986
+        const val KEY_V986STEPAUTOGUIDE986 = "v986stepAutoGuide986" // v986 Step Auto Guide986
+        const val KEY_V986STOPAUTOCLEANUP986 = "v986stopAutoCleanup986" // v986 Stop Auto Cleanup986
+        const val KEY_V986STORAGEAUTOQUOTA986 = "v986storageAutoQuota986" // v986 Storage Auto Quota986
+        const val KEY_V986STOREAUTOPERSIST986 = "v986storeAutoPersist986" // v986 Store Auto Persist986
+        const val KEY_V986STREAMAUTOBUFFER986 = "v986streamAutoBuffer986" // v986 Stream Auto Buffer986
+        const val KEY_V986STRETCHAUTOFILL986 = "v986stretchAutoFill986" // v986 Stretch Auto Fill986
+        const val KEY_V986STRICTAUTOMODE986 = "v986strictAutoMode986" // v986 Strict Auto Mode986
+        const val KEY_V986STRINGAUTOESCAPE986 = "v986stringAutoEscape986" // v986 String Auto Escape986
+        const val KEY_V986STRIPAUTOWHITESPACE986 = "v986stripAutoWhitespace986" // v986 Strip Auto Whitespace986
+        const val KEY_V986STROKEAUTOWIDTH986 = "v986strokeAutoWidth986" // v986 Stroke Auto Width986
+        const val KEY_V987STARAUTOFAVORITE987 = "v987starAutoFavorite987" // v987 Star Auto Favorite987
+        const val KEY_V987STARTAUTOLAUNCH987 = "v987startAutoLaunch987" // v987 Start Auto Launch987
+        const val KEY_V987STATEAUTOPERSIST987 = "v987stateAutoPersist987" // v987 State Auto Persist987
+        const val KEY_V987STATICAUTOCONST987 = "v987staticAutoConst987" // v987 Static Auto Const987
+        const val KEY_V987STATUSAUTOBADGE987 = "v987statusAutoBadge987" // v987 Status Auto Badge987
+        const val KEY_V987STEPAUTOGUIDE987 = "v987stepAutoGuide987" // v987 Step Auto Guide987
+        const val KEY_V987STOPAUTOCLEANUP987 = "v987stopAutoCleanup987" // v987 Stop Auto Cleanup987
+        const val KEY_V987STORAGEAUTOQUOTA987 = "v987storageAutoQuota987" // v987 Storage Auto Quota987
+        const val KEY_V987STOREAUTOPERSIST987 = "v987storeAutoPersist987" // v987 Store Auto Persist987
+        const val KEY_V987STREAMAUTOBUFFER987 = "v987streamAutoBuffer987" // v987 Stream Auto Buffer987
+        const val KEY_V987STRETCHAUTOFILL987 = "v987stretchAutoFill987" // v987 Stretch Auto Fill987
+        const val KEY_V987STRICTAUTOMODE987 = "v987strictAutoMode987" // v987 Strict Auto Mode987
+        const val KEY_V987STRINGAUTOESCAPE987 = "v987stringAutoEscape987" // v987 String Auto Escape987
+        const val KEY_V987STRIPAUTOWHITESPACE987 = "v987stripAutoWhitespace987" // v987 Strip Auto Whitespace987
+        const val KEY_V987STROKEAUTOWIDTH987 = "v987strokeAutoWidth987" // v987 Stroke Auto Width987
+        const val KEY_V988STARAUTOFAVORITE988 = "v988starAutoFavorite988" // v988 Star Auto Favorite988
+        const val KEY_V988STARTAUTOLAUNCH988 = "v988startAutoLaunch988" // v988 Start Auto Launch988
+        const val KEY_V988STATEAUTOPERSIST988 = "v988stateAutoPersist988" // v988 State Auto Persist988
+        const val KEY_V988STATICAUTOCONST988 = "v988staticAutoConst988" // v988 Static Auto Const988
+        const val KEY_V988STATUSAUTOBADGE988 = "v988statusAutoBadge988" // v988 Status Auto Badge988
+        const val KEY_V988STEPAUTOGUIDE988 = "v988stepAutoGuide988" // v988 Step Auto Guide988
+        const val KEY_V988STOPAUTOCLEANUP988 = "v988stopAutoCleanup988" // v988 Stop Auto Cleanup988
+        const val KEY_V988STORAGEAUTOQUOTA988 = "v988storageAutoQuota988" // v988 Storage Auto Quota988
+        const val KEY_V988STOREAUTOPERSIST988 = "v988storeAutoPersist988" // v988 Store Auto Persist988
+        const val KEY_V988STREAMAUTOBUFFER988 = "v988streamAutoBuffer988" // v988 Stream Auto Buffer988
+        const val KEY_V988STRETCHAUTOFILL988 = "v988stretchAutoFill988" // v988 Stretch Auto Fill988
+        const val KEY_V988STRICTAUTOMODE988 = "v988strictAutoMode988" // v988 Strict Auto Mode988
+        const val KEY_V988STRINGAUTOESCAPE988 = "v988stringAutoEscape988" // v988 String Auto Escape988
+        const val KEY_V988STRIPAUTOWHITESPACE988 = "v988stripAutoWhitespace988" // v988 Strip Auto Whitespace988
+        const val KEY_V988STROKEAUTOWIDTH988 = "v988strokeAutoWidth988" // v988 Stroke Auto Width988
+        const val KEY_V989STARAUTOFAVORITE989 = "v989starAutoFavorite989" // v989 Star Auto Favorite989
+        const val KEY_V989STARTAUTOLAUNCH989 = "v989startAutoLaunch989" // v989 Start Auto Launch989
+        const val KEY_V989STATEAUTOPERSIST989 = "v989stateAutoPersist989" // v989 State Auto Persist989
+        const val KEY_V989STATICAUTOCONST989 = "v989staticAutoConst989" // v989 Static Auto Const989
+        const val KEY_V989STATUSAUTOBADGE989 = "v989statusAutoBadge989" // v989 Status Auto Badge989
+        const val KEY_V989STEPAUTOGUIDE989 = "v989stepAutoGuide989" // v989 Step Auto Guide989
+        const val KEY_V989STOPAUTOCLEANUP989 = "v989stopAutoCleanup989" // v989 Stop Auto Cleanup989
+        const val KEY_V989STORAGEAUTOQUOTA989 = "v989storageAutoQuota989" // v989 Storage Auto Quota989
+        const val KEY_V989STOREAUTOPERSIST989 = "v989storeAutoPersist989" // v989 Store Auto Persist989
+        const val KEY_V989STREAMAUTOBUFFER989 = "v989streamAutoBuffer989" // v989 Stream Auto Buffer989
+        const val KEY_V989STRETCHAUTOFILL989 = "v989stretchAutoFill989" // v989 Stretch Auto Fill989
+        const val KEY_V989STRICTAUTOMODE989 = "v989strictAutoMode989" // v989 Strict Auto Mode989
+        const val KEY_V989STRINGAUTOESCAPE989 = "v989stringAutoEscape989" // v989 String Auto Escape989
+        const val KEY_V989STRIPAUTOWHITESPACE989 = "v989stripAutoWhitespace989" // v989 Strip Auto Whitespace989
+        const val KEY_V989STROKEAUTOWIDTH989 = "v989strokeAutoWidth989" // v989 Stroke Auto Width989
+        const val KEY_V990STARAUTOFAVORITE990 = "v990starAutoFavorite990" // v990 Star Auto Favorite990
+        const val KEY_V990STARTAUTOLAUNCH990 = "v990startAutoLaunch990" // v990 Start Auto Launch990
+        const val KEY_V990STATEAUTOPERSIST990 = "v990stateAutoPersist990" // v990 State Auto Persist990
+        const val KEY_V990STATICAUTOCONST990 = "v990staticAutoConst990" // v990 Static Auto Const990
+        const val KEY_V990STATUSAUTOBADGE990 = "v990statusAutoBadge990" // v990 Status Auto Badge990
+        const val KEY_V990STEPAUTOGUIDE990 = "v990stepAutoGuide990" // v990 Step Auto Guide990
+        const val KEY_V990STOPAUTOCLEANUP990 = "v990stopAutoCleanup990" // v990 Stop Auto Cleanup990
+        const val KEY_V990STORAGEAUTOQUOTA990 = "v990storageAutoQuota990" // v990 Storage Auto Quota990
+        const val KEY_V990STOREAUTOPERSIST990 = "v990storeAutoPersist990" // v990 Store Auto Persist990
+        const val KEY_V990STREAMAUTOBUFFER990 = "v990streamAutoBuffer990" // v990 Stream Auto Buffer990
+        const val KEY_V990STRETCHAUTOFILL990 = "v990stretchAutoFill990" // v990 Stretch Auto Fill990
+        const val KEY_V990STRICTAUTOMODE990 = "v990strictAutoMode990" // v990 Strict Auto Mode990
+        const val KEY_V990STRINGAUTOESCAPE990 = "v990stringAutoEscape990" // v990 String Auto Escape990
+        const val KEY_V990STRIPAUTOWHITESPACE990 = "v990stripAutoWhitespace990" // v990 Strip Auto Whitespace990
+        const val KEY_V990STROKEAUTOWIDTH990 = "v990strokeAutoWidth990" // v990 Stroke Auto Width990
     }
 }
