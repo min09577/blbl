@@ -55848,6 +55848,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V820MODELAUTODETECT820, false)
         set(value) = prefs.edit().putBoolean(KEY_V820MODELAUTODETECT820, value).apply()
 
+    var v821modifyAutoPatch821: Boolean
+        get() = prefs.getBoolean(KEY_V821MODIFYAUTOPATCH821, false)
+        set(value) = prefs.edit().putBoolean(KEY_V821MODIFYAUTOPATCH821, value).apply()
+
+    var v821moduleAutoLoad821: Boolean
+        get() = prefs.getBoolean(KEY_V821MODULEAUTOLOAD821, false)
+        set(value) = prefs.edit().putBoolean(KEY_V821MODULEAUTOLOAD821, value).apply()
+
+    var v821momentAutoCapture821: Boolean
+        get() = prefs.getBoolean(KEY_V821MOMENTAUTOCAPTURE821, false)
+        set(value) = prefs.edit().putBoolean(KEY_V821MOMENTAUTOCAPTURE821, value).apply()
+
+    var v821monitorAutoWatchdog821: Boolean
+        get() = prefs.getBoolean(KEY_V821MONITORAUTOWATCHDOG821, false)
+        set(value) = prefs.edit().putBoolean(KEY_V821MONITORAUTOWATCHDOG821, value).apply()
+
+    var v821motionAutoBlur821: Boolean
+        get() = prefs.getBoolean(KEY_V821MOTIONAUTOBLUR821, false)
+        set(value) = prefs.edit().putBoolean(KEY_V821MOTIONAUTOBLUR821, value).apply()
+
+    var v821mountAutoBind821: Boolean
+        get() = prefs.getBoolean(KEY_V821MOUNTAUTOBIND821, false)
+        set(value) = prefs.edit().putBoolean(KEY_V821MOUNTAUTOBIND821, value).apply()
+
+    var v821mouseAutoScroll821: Boolean
+        get() = prefs.getBoolean(KEY_V821MOUSEAUTOSCROLL821, false)
+        set(value) = prefs.edit().putBoolean(KEY_V821MOUSEAUTOSCROLL821, value).apply()
+
+    var v821moveAutoTransition821: Boolean
+        get() = prefs.getBoolean(KEY_V821MOVEAUTOTRANSITION821, false)
+        set(value) = prefs.edit().putBoolean(KEY_V821MOVEAUTOTRANSITION821, value).apply()
+
+    var v821multiAutoThread821: Boolean
+        get() = prefs.getBoolean(KEY_V821MULTIAUTOTHREAD821, false)
+        set(value) = prefs.edit().putBoolean(KEY_V821MULTIAUTOTHREAD821, value).apply()
+
+    var v821nameAutoResolve821: Boolean
+        get() = prefs.getBoolean(KEY_V821NAMEAUTORESOLVE821, false)
+        set(value) = prefs.edit().putBoolean(KEY_V821NAMEAUTORESOLVE821, value).apply()
+
+    var v821nativeAutoBridge821: Boolean
+        get() = prefs.getBoolean(KEY_V821NATIVEAUTOBRIDGE821, false)
+        set(value) = prefs.edit().putBoolean(KEY_V821NATIVEAUTOBRIDGE821, value).apply()
+
+    var v821navigateAutoBack821: Boolean
+        get() = prefs.getBoolean(KEY_V821NAVIGATEAUTOBACK821, false)
+        set(value) = prefs.edit().putBoolean(KEY_V821NAVIGATEAUTOBACK821, value).apply()
+
+    var v821nearAutoDetect821: Boolean
+        get() = prefs.getBoolean(KEY_V821NEARAUTODETECT821, false)
+        set(value) = prefs.edit().putBoolean(KEY_V821NEARAUTODETECT821, value).apply()
+
+    var v821netAutoThrottle821: Boolean
+        get() = prefs.getBoolean(KEY_V821NETAUTOTHROTTLE821, false)
+        set(value) = prefs.edit().putBoolean(KEY_V821NETAUTOTHROTTLE821, value).apply()
+
+    var v821networkAutoPing821: Boolean
+        get() = prefs.getBoolean(KEY_V821NETWORKAUTOPING821, false)
+        set(value) = prefs.edit().putBoolean(KEY_V821NETWORKAUTOPING821, value).apply()
+
+    var v822modifyAutoPatch822: Boolean
+        get() = prefs.getBoolean(KEY_V822MODIFYAUTOPATCH822, false)
+        set(value) = prefs.edit().putBoolean(KEY_V822MODIFYAUTOPATCH822, value).apply()
+
+    var v822moduleAutoLoad822: Boolean
+        get() = prefs.getBoolean(KEY_V822MODULEAUTOLOAD822, false)
+        set(value) = prefs.edit().putBoolean(KEY_V822MODULEAUTOLOAD822, value).apply()
+
+    var v822momentAutoCapture822: Boolean
+        get() = prefs.getBoolean(KEY_V822MOMENTAUTOCAPTURE822, false)
+        set(value) = prefs.edit().putBoolean(KEY_V822MOMENTAUTOCAPTURE822, value).apply()
+
+    var v822monitorAutoWatchdog822: Boolean
+        get() = prefs.getBoolean(KEY_V822MONITORAUTOWATCHDOG822, false)
+        set(value) = prefs.edit().putBoolean(KEY_V822MONITORAUTOWATCHDOG822, value).apply()
+
+    var v822motionAutoBlur822: Boolean
+        get() = prefs.getBoolean(KEY_V822MOTIONAUTOBLUR822, false)
+        set(value) = prefs.edit().putBoolean(KEY_V822MOTIONAUTOBLUR822, value).apply()
+
+    var v822mountAutoBind822: Boolean
+        get() = prefs.getBoolean(KEY_V822MOUNTAUTOBIND822, false)
+        set(value) = prefs.edit().putBoolean(KEY_V822MOUNTAUTOBIND822, value).apply()
+
+    var v822mouseAutoScroll822: Boolean
+        get() = prefs.getBoolean(KEY_V822MOUSEAUTOSCROLL822, false)
+        set(value) = prefs.edit().putBoolean(KEY_V822MOUSEAUTOSCROLL822, value).apply()
+
+    var v822moveAutoTransition822: Boolean
+        get() = prefs.getBoolean(KEY_V822MOVEAUTOTRANSITION822, false)
+        set(value) = prefs.edit().putBoolean(KEY_V822MOVEAUTOTRANSITION822, value).apply()
+
+    var v822multiAutoThread822: Boolean
+        get() = prefs.getBoolean(KEY_V822MULTIAUTOTHREAD822, false)
+        set(value) = prefs.edit().putBoolean(KEY_V822MULTIAUTOTHREAD822, value).apply()
+
+    var v822nameAutoResolve822: Boolean
+        get() = prefs.getBoolean(KEY_V822NAMEAUTORESOLVE822, false)
+        set(value) = prefs.edit().putBoolean(KEY_V822NAMEAUTORESOLVE822, value).apply()
+
+    var v822nativeAutoBridge822: Boolean
+        get() = prefs.getBoolean(KEY_V822NATIVEAUTOBRIDGE822, false)
+        set(value) = prefs.edit().putBoolean(KEY_V822NATIVEAUTOBRIDGE822, value).apply()
+
+    var v822navigateAutoBack822: Boolean
+        get() = prefs.getBoolean(KEY_V822NAVIGATEAUTOBACK822, false)
+        set(value) = prefs.edit().putBoolean(KEY_V822NAVIGATEAUTOBACK822, value).apply()
+
+    var v822nearAutoDetect822: Boolean
+        get() = prefs.getBoolean(KEY_V822NEARAUTODETECT822, false)
+        set(value) = prefs.edit().putBoolean(KEY_V822NEARAUTODETECT822, value).apply()
+
+    var v822netAutoThrottle822: Boolean
+        get() = prefs.getBoolean(KEY_V822NETAUTOTHROTTLE822, false)
+        set(value) = prefs.edit().putBoolean(KEY_V822NETAUTOTHROTTLE822, value).apply()
+
+    var v822networkAutoPing822: Boolean
+        get() = prefs.getBoolean(KEY_V822NETWORKAUTOPING822, false)
+        set(value) = prefs.edit().putBoolean(KEY_V822NETWORKAUTOPING822, value).apply()
+
+    var v823modifyAutoPatch823: Boolean
+        get() = prefs.getBoolean(KEY_V823MODIFYAUTOPATCH823, false)
+        set(value) = prefs.edit().putBoolean(KEY_V823MODIFYAUTOPATCH823, value).apply()
+
+    var v823moduleAutoLoad823: Boolean
+        get() = prefs.getBoolean(KEY_V823MODULEAUTOLOAD823, false)
+        set(value) = prefs.edit().putBoolean(KEY_V823MODULEAUTOLOAD823, value).apply()
+
+    var v823momentAutoCapture823: Boolean
+        get() = prefs.getBoolean(KEY_V823MOMENTAUTOCAPTURE823, false)
+        set(value) = prefs.edit().putBoolean(KEY_V823MOMENTAUTOCAPTURE823, value).apply()
+
+    var v823monitorAutoWatchdog823: Boolean
+        get() = prefs.getBoolean(KEY_V823MONITORAUTOWATCHDOG823, false)
+        set(value) = prefs.edit().putBoolean(KEY_V823MONITORAUTOWATCHDOG823, value).apply()
+
+    var v823motionAutoBlur823: Boolean
+        get() = prefs.getBoolean(KEY_V823MOTIONAUTOBLUR823, false)
+        set(value) = prefs.edit().putBoolean(KEY_V823MOTIONAUTOBLUR823, value).apply()
+
+    var v823mountAutoBind823: Boolean
+        get() = prefs.getBoolean(KEY_V823MOUNTAUTOBIND823, false)
+        set(value) = prefs.edit().putBoolean(KEY_V823MOUNTAUTOBIND823, value).apply()
+
+    var v823mouseAutoScroll823: Boolean
+        get() = prefs.getBoolean(KEY_V823MOUSEAUTOSCROLL823, false)
+        set(value) = prefs.edit().putBoolean(KEY_V823MOUSEAUTOSCROLL823, value).apply()
+
+    var v823moveAutoTransition823: Boolean
+        get() = prefs.getBoolean(KEY_V823MOVEAUTOTRANSITION823, false)
+        set(value) = prefs.edit().putBoolean(KEY_V823MOVEAUTOTRANSITION823, value).apply()
+
+    var v823multiAutoThread823: Boolean
+        get() = prefs.getBoolean(KEY_V823MULTIAUTOTHREAD823, false)
+        set(value) = prefs.edit().putBoolean(KEY_V823MULTIAUTOTHREAD823, value).apply()
+
+    var v823nameAutoResolve823: Boolean
+        get() = prefs.getBoolean(KEY_V823NAMEAUTORESOLVE823, false)
+        set(value) = prefs.edit().putBoolean(KEY_V823NAMEAUTORESOLVE823, value).apply()
+
+    var v823nativeAutoBridge823: Boolean
+        get() = prefs.getBoolean(KEY_V823NATIVEAUTOBRIDGE823, false)
+        set(value) = prefs.edit().putBoolean(KEY_V823NATIVEAUTOBRIDGE823, value).apply()
+
+    var v823navigateAutoBack823: Boolean
+        get() = prefs.getBoolean(KEY_V823NAVIGATEAUTOBACK823, false)
+        set(value) = prefs.edit().putBoolean(KEY_V823NAVIGATEAUTOBACK823, value).apply()
+
+    var v823nearAutoDetect823: Boolean
+        get() = prefs.getBoolean(KEY_V823NEARAUTODETECT823, false)
+        set(value) = prefs.edit().putBoolean(KEY_V823NEARAUTODETECT823, value).apply()
+
+    var v823netAutoThrottle823: Boolean
+        get() = prefs.getBoolean(KEY_V823NETAUTOTHROTTLE823, false)
+        set(value) = prefs.edit().putBoolean(KEY_V823NETAUTOTHROTTLE823, value).apply()
+
+    var v823networkAutoPing823: Boolean
+        get() = prefs.getBoolean(KEY_V823NETWORKAUTOPING823, false)
+        set(value) = prefs.edit().putBoolean(KEY_V823NETWORKAUTOPING823, value).apply()
+
+    var v824modifyAutoPatch824: Boolean
+        get() = prefs.getBoolean(KEY_V824MODIFYAUTOPATCH824, false)
+        set(value) = prefs.edit().putBoolean(KEY_V824MODIFYAUTOPATCH824, value).apply()
+
+    var v824moduleAutoLoad824: Boolean
+        get() = prefs.getBoolean(KEY_V824MODULEAUTOLOAD824, false)
+        set(value) = prefs.edit().putBoolean(KEY_V824MODULEAUTOLOAD824, value).apply()
+
+    var v824momentAutoCapture824: Boolean
+        get() = prefs.getBoolean(KEY_V824MOMENTAUTOCAPTURE824, false)
+        set(value) = prefs.edit().putBoolean(KEY_V824MOMENTAUTOCAPTURE824, value).apply()
+
+    var v824monitorAutoWatchdog824: Boolean
+        get() = prefs.getBoolean(KEY_V824MONITORAUTOWATCHDOG824, false)
+        set(value) = prefs.edit().putBoolean(KEY_V824MONITORAUTOWATCHDOG824, value).apply()
+
+    var v824motionAutoBlur824: Boolean
+        get() = prefs.getBoolean(KEY_V824MOTIONAUTOBLUR824, false)
+        set(value) = prefs.edit().putBoolean(KEY_V824MOTIONAUTOBLUR824, value).apply()
+
+    var v824mountAutoBind824: Boolean
+        get() = prefs.getBoolean(KEY_V824MOUNTAUTOBIND824, false)
+        set(value) = prefs.edit().putBoolean(KEY_V824MOUNTAUTOBIND824, value).apply()
+
+    var v824mouseAutoScroll824: Boolean
+        get() = prefs.getBoolean(KEY_V824MOUSEAUTOSCROLL824, false)
+        set(value) = prefs.edit().putBoolean(KEY_V824MOUSEAUTOSCROLL824, value).apply()
+
+    var v824moveAutoTransition824: Boolean
+        get() = prefs.getBoolean(KEY_V824MOVEAUTOTRANSITION824, false)
+        set(value) = prefs.edit().putBoolean(KEY_V824MOVEAUTOTRANSITION824, value).apply()
+
+    var v824multiAutoThread824: Boolean
+        get() = prefs.getBoolean(KEY_V824MULTIAUTOTHREAD824, false)
+        set(value) = prefs.edit().putBoolean(KEY_V824MULTIAUTOTHREAD824, value).apply()
+
+    var v824nameAutoResolve824: Boolean
+        get() = prefs.getBoolean(KEY_V824NAMEAUTORESOLVE824, false)
+        set(value) = prefs.edit().putBoolean(KEY_V824NAMEAUTORESOLVE824, value).apply()
+
+    var v824nativeAutoBridge824: Boolean
+        get() = prefs.getBoolean(KEY_V824NATIVEAUTOBRIDGE824, false)
+        set(value) = prefs.edit().putBoolean(KEY_V824NATIVEAUTOBRIDGE824, value).apply()
+
+    var v824navigateAutoBack824: Boolean
+        get() = prefs.getBoolean(KEY_V824NAVIGATEAUTOBACK824, false)
+        set(value) = prefs.edit().putBoolean(KEY_V824NAVIGATEAUTOBACK824, value).apply()
+
+    var v824nearAutoDetect824: Boolean
+        get() = prefs.getBoolean(KEY_V824NEARAUTODETECT824, false)
+        set(value) = prefs.edit().putBoolean(KEY_V824NEARAUTODETECT824, value).apply()
+
+    var v824netAutoThrottle824: Boolean
+        get() = prefs.getBoolean(KEY_V824NETAUTOTHROTTLE824, false)
+        set(value) = prefs.edit().putBoolean(KEY_V824NETAUTOTHROTTLE824, value).apply()
+
+    var v824networkAutoPing824: Boolean
+        get() = prefs.getBoolean(KEY_V824NETWORKAUTOPING824, false)
+        set(value) = prefs.edit().putBoolean(KEY_V824NETWORKAUTOPING824, value).apply()
+
+    var v825modifyAutoPatch825: Boolean
+        get() = prefs.getBoolean(KEY_V825MODIFYAUTOPATCH825, false)
+        set(value) = prefs.edit().putBoolean(KEY_V825MODIFYAUTOPATCH825, value).apply()
+
+    var v825moduleAutoLoad825: Boolean
+        get() = prefs.getBoolean(KEY_V825MODULEAUTOLOAD825, false)
+        set(value) = prefs.edit().putBoolean(KEY_V825MODULEAUTOLOAD825, value).apply()
+
+    var v825momentAutoCapture825: Boolean
+        get() = prefs.getBoolean(KEY_V825MOMENTAUTOCAPTURE825, false)
+        set(value) = prefs.edit().putBoolean(KEY_V825MOMENTAUTOCAPTURE825, value).apply()
+
+    var v825monitorAutoWatchdog825: Boolean
+        get() = prefs.getBoolean(KEY_V825MONITORAUTOWATCHDOG825, false)
+        set(value) = prefs.edit().putBoolean(KEY_V825MONITORAUTOWATCHDOG825, value).apply()
+
+    var v825motionAutoBlur825: Boolean
+        get() = prefs.getBoolean(KEY_V825MOTIONAUTOBLUR825, false)
+        set(value) = prefs.edit().putBoolean(KEY_V825MOTIONAUTOBLUR825, value).apply()
+
+    var v825mountAutoBind825: Boolean
+        get() = prefs.getBoolean(KEY_V825MOUNTAUTOBIND825, false)
+        set(value) = prefs.edit().putBoolean(KEY_V825MOUNTAUTOBIND825, value).apply()
+
+    var v825mouseAutoScroll825: Boolean
+        get() = prefs.getBoolean(KEY_V825MOUSEAUTOSCROLL825, false)
+        set(value) = prefs.edit().putBoolean(KEY_V825MOUSEAUTOSCROLL825, value).apply()
+
+    var v825moveAutoTransition825: Boolean
+        get() = prefs.getBoolean(KEY_V825MOVEAUTOTRANSITION825, false)
+        set(value) = prefs.edit().putBoolean(KEY_V825MOVEAUTOTRANSITION825, value).apply()
+
+    var v825multiAutoThread825: Boolean
+        get() = prefs.getBoolean(KEY_V825MULTIAUTOTHREAD825, false)
+        set(value) = prefs.edit().putBoolean(KEY_V825MULTIAUTOTHREAD825, value).apply()
+
+    var v825nameAutoResolve825: Boolean
+        get() = prefs.getBoolean(KEY_V825NAMEAUTORESOLVE825, false)
+        set(value) = prefs.edit().putBoolean(KEY_V825NAMEAUTORESOLVE825, value).apply()
+
+    var v825nativeAutoBridge825: Boolean
+        get() = prefs.getBoolean(KEY_V825NATIVEAUTOBRIDGE825, false)
+        set(value) = prefs.edit().putBoolean(KEY_V825NATIVEAUTOBRIDGE825, value).apply()
+
+    var v825navigateAutoBack825: Boolean
+        get() = prefs.getBoolean(KEY_V825NAVIGATEAUTOBACK825, false)
+        set(value) = prefs.edit().putBoolean(KEY_V825NAVIGATEAUTOBACK825, value).apply()
+
+    var v825nearAutoDetect825: Boolean
+        get() = prefs.getBoolean(KEY_V825NEARAUTODETECT825, false)
+        set(value) = prefs.edit().putBoolean(KEY_V825NEARAUTODETECT825, value).apply()
+
+    var v825netAutoThrottle825: Boolean
+        get() = prefs.getBoolean(KEY_V825NETAUTOTHROTTLE825, false)
+        set(value) = prefs.edit().putBoolean(KEY_V825NETAUTOTHROTTLE825, value).apply()
+
+    var v825networkAutoPing825: Boolean
+        get() = prefs.getBoolean(KEY_V825NETWORKAUTOPING825, false)
+        set(value) = prefs.edit().putBoolean(KEY_V825NETWORKAUTOPING825, value).apply()
+
+    var v826modifyAutoPatch826: Boolean
+        get() = prefs.getBoolean(KEY_V826MODIFYAUTOPATCH826, false)
+        set(value) = prefs.edit().putBoolean(KEY_V826MODIFYAUTOPATCH826, value).apply()
+
+    var v826moduleAutoLoad826: Boolean
+        get() = prefs.getBoolean(KEY_V826MODULEAUTOLOAD826, false)
+        set(value) = prefs.edit().putBoolean(KEY_V826MODULEAUTOLOAD826, value).apply()
+
+    var v826momentAutoCapture826: Boolean
+        get() = prefs.getBoolean(KEY_V826MOMENTAUTOCAPTURE826, false)
+        set(value) = prefs.edit().putBoolean(KEY_V826MOMENTAUTOCAPTURE826, value).apply()
+
+    var v826monitorAutoWatchdog826: Boolean
+        get() = prefs.getBoolean(KEY_V826MONITORAUTOWATCHDOG826, false)
+        set(value) = prefs.edit().putBoolean(KEY_V826MONITORAUTOWATCHDOG826, value).apply()
+
+    var v826motionAutoBlur826: Boolean
+        get() = prefs.getBoolean(KEY_V826MOTIONAUTOBLUR826, false)
+        set(value) = prefs.edit().putBoolean(KEY_V826MOTIONAUTOBLUR826, value).apply()
+
+    var v826mountAutoBind826: Boolean
+        get() = prefs.getBoolean(KEY_V826MOUNTAUTOBIND826, false)
+        set(value) = prefs.edit().putBoolean(KEY_V826MOUNTAUTOBIND826, value).apply()
+
+    var v826mouseAutoScroll826: Boolean
+        get() = prefs.getBoolean(KEY_V826MOUSEAUTOSCROLL826, false)
+        set(value) = prefs.edit().putBoolean(KEY_V826MOUSEAUTOSCROLL826, value).apply()
+
+    var v826moveAutoTransition826: Boolean
+        get() = prefs.getBoolean(KEY_V826MOVEAUTOTRANSITION826, false)
+        set(value) = prefs.edit().putBoolean(KEY_V826MOVEAUTOTRANSITION826, value).apply()
+
+    var v826multiAutoThread826: Boolean
+        get() = prefs.getBoolean(KEY_V826MULTIAUTOTHREAD826, false)
+        set(value) = prefs.edit().putBoolean(KEY_V826MULTIAUTOTHREAD826, value).apply()
+
+    var v826nameAutoResolve826: Boolean
+        get() = prefs.getBoolean(KEY_V826NAMEAUTORESOLVE826, false)
+        set(value) = prefs.edit().putBoolean(KEY_V826NAMEAUTORESOLVE826, value).apply()
+
+    var v826nativeAutoBridge826: Boolean
+        get() = prefs.getBoolean(KEY_V826NATIVEAUTOBRIDGE826, false)
+        set(value) = prefs.edit().putBoolean(KEY_V826NATIVEAUTOBRIDGE826, value).apply()
+
+    var v826navigateAutoBack826: Boolean
+        get() = prefs.getBoolean(KEY_V826NAVIGATEAUTOBACK826, false)
+        set(value) = prefs.edit().putBoolean(KEY_V826NAVIGATEAUTOBACK826, value).apply()
+
+    var v826nearAutoDetect826: Boolean
+        get() = prefs.getBoolean(KEY_V826NEARAUTODETECT826, false)
+        set(value) = prefs.edit().putBoolean(KEY_V826NEARAUTODETECT826, value).apply()
+
+    var v826netAutoThrottle826: Boolean
+        get() = prefs.getBoolean(KEY_V826NETAUTOTHROTTLE826, false)
+        set(value) = prefs.edit().putBoolean(KEY_V826NETAUTOTHROTTLE826, value).apply()
+
+    var v826networkAutoPing826: Boolean
+        get() = prefs.getBoolean(KEY_V826NETWORKAUTOPING826, false)
+        set(value) = prefs.edit().putBoolean(KEY_V826NETWORKAUTOPING826, value).apply()
+
+    var v827modifyAutoPatch827: Boolean
+        get() = prefs.getBoolean(KEY_V827MODIFYAUTOPATCH827, false)
+        set(value) = prefs.edit().putBoolean(KEY_V827MODIFYAUTOPATCH827, value).apply()
+
+    var v827moduleAutoLoad827: Boolean
+        get() = prefs.getBoolean(KEY_V827MODULEAUTOLOAD827, false)
+        set(value) = prefs.edit().putBoolean(KEY_V827MODULEAUTOLOAD827, value).apply()
+
+    var v827momentAutoCapture827: Boolean
+        get() = prefs.getBoolean(KEY_V827MOMENTAUTOCAPTURE827, false)
+        set(value) = prefs.edit().putBoolean(KEY_V827MOMENTAUTOCAPTURE827, value).apply()
+
+    var v827monitorAutoWatchdog827: Boolean
+        get() = prefs.getBoolean(KEY_V827MONITORAUTOWATCHDOG827, false)
+        set(value) = prefs.edit().putBoolean(KEY_V827MONITORAUTOWATCHDOG827, value).apply()
+
+    var v827motionAutoBlur827: Boolean
+        get() = prefs.getBoolean(KEY_V827MOTIONAUTOBLUR827, false)
+        set(value) = prefs.edit().putBoolean(KEY_V827MOTIONAUTOBLUR827, value).apply()
+
+    var v827mountAutoBind827: Boolean
+        get() = prefs.getBoolean(KEY_V827MOUNTAUTOBIND827, false)
+        set(value) = prefs.edit().putBoolean(KEY_V827MOUNTAUTOBIND827, value).apply()
+
+    var v827mouseAutoScroll827: Boolean
+        get() = prefs.getBoolean(KEY_V827MOUSEAUTOSCROLL827, false)
+        set(value) = prefs.edit().putBoolean(KEY_V827MOUSEAUTOSCROLL827, value).apply()
+
+    var v827moveAutoTransition827: Boolean
+        get() = prefs.getBoolean(KEY_V827MOVEAUTOTRANSITION827, false)
+        set(value) = prefs.edit().putBoolean(KEY_V827MOVEAUTOTRANSITION827, value).apply()
+
+    var v827multiAutoThread827: Boolean
+        get() = prefs.getBoolean(KEY_V827MULTIAUTOTHREAD827, false)
+        set(value) = prefs.edit().putBoolean(KEY_V827MULTIAUTOTHREAD827, value).apply()
+
+    var v827nameAutoResolve827: Boolean
+        get() = prefs.getBoolean(KEY_V827NAMEAUTORESOLVE827, false)
+        set(value) = prefs.edit().putBoolean(KEY_V827NAMEAUTORESOLVE827, value).apply()
+
+    var v827nativeAutoBridge827: Boolean
+        get() = prefs.getBoolean(KEY_V827NATIVEAUTOBRIDGE827, false)
+        set(value) = prefs.edit().putBoolean(KEY_V827NATIVEAUTOBRIDGE827, value).apply()
+
+    var v827navigateAutoBack827: Boolean
+        get() = prefs.getBoolean(KEY_V827NAVIGATEAUTOBACK827, false)
+        set(value) = prefs.edit().putBoolean(KEY_V827NAVIGATEAUTOBACK827, value).apply()
+
+    var v827nearAutoDetect827: Boolean
+        get() = prefs.getBoolean(KEY_V827NEARAUTODETECT827, false)
+        set(value) = prefs.edit().putBoolean(KEY_V827NEARAUTODETECT827, value).apply()
+
+    var v827netAutoThrottle827: Boolean
+        get() = prefs.getBoolean(KEY_V827NETAUTOTHROTTLE827, false)
+        set(value) = prefs.edit().putBoolean(KEY_V827NETAUTOTHROTTLE827, value).apply()
+
+    var v827networkAutoPing827: Boolean
+        get() = prefs.getBoolean(KEY_V827NETWORKAUTOPING827, false)
+        set(value) = prefs.edit().putBoolean(KEY_V827NETWORKAUTOPING827, value).apply()
+
+    var v828modifyAutoPatch828: Boolean
+        get() = prefs.getBoolean(KEY_V828MODIFYAUTOPATCH828, false)
+        set(value) = prefs.edit().putBoolean(KEY_V828MODIFYAUTOPATCH828, value).apply()
+
+    var v828moduleAutoLoad828: Boolean
+        get() = prefs.getBoolean(KEY_V828MODULEAUTOLOAD828, false)
+        set(value) = prefs.edit().putBoolean(KEY_V828MODULEAUTOLOAD828, value).apply()
+
+    var v828momentAutoCapture828: Boolean
+        get() = prefs.getBoolean(KEY_V828MOMENTAUTOCAPTURE828, false)
+        set(value) = prefs.edit().putBoolean(KEY_V828MOMENTAUTOCAPTURE828, value).apply()
+
+    var v828monitorAutoWatchdog828: Boolean
+        get() = prefs.getBoolean(KEY_V828MONITORAUTOWATCHDOG828, false)
+        set(value) = prefs.edit().putBoolean(KEY_V828MONITORAUTOWATCHDOG828, value).apply()
+
+    var v828motionAutoBlur828: Boolean
+        get() = prefs.getBoolean(KEY_V828MOTIONAUTOBLUR828, false)
+        set(value) = prefs.edit().putBoolean(KEY_V828MOTIONAUTOBLUR828, value).apply()
+
+    var v828mountAutoBind828: Boolean
+        get() = prefs.getBoolean(KEY_V828MOUNTAUTOBIND828, false)
+        set(value) = prefs.edit().putBoolean(KEY_V828MOUNTAUTOBIND828, value).apply()
+
+    var v828mouseAutoScroll828: Boolean
+        get() = prefs.getBoolean(KEY_V828MOUSEAUTOSCROLL828, false)
+        set(value) = prefs.edit().putBoolean(KEY_V828MOUSEAUTOSCROLL828, value).apply()
+
+    var v828moveAutoTransition828: Boolean
+        get() = prefs.getBoolean(KEY_V828MOVEAUTOTRANSITION828, false)
+        set(value) = prefs.edit().putBoolean(KEY_V828MOVEAUTOTRANSITION828, value).apply()
+
+    var v828multiAutoThread828: Boolean
+        get() = prefs.getBoolean(KEY_V828MULTIAUTOTHREAD828, false)
+        set(value) = prefs.edit().putBoolean(KEY_V828MULTIAUTOTHREAD828, value).apply()
+
+    var v828nameAutoResolve828: Boolean
+        get() = prefs.getBoolean(KEY_V828NAMEAUTORESOLVE828, false)
+        set(value) = prefs.edit().putBoolean(KEY_V828NAMEAUTORESOLVE828, value).apply()
+
+    var v828nativeAutoBridge828: Boolean
+        get() = prefs.getBoolean(KEY_V828NATIVEAUTOBRIDGE828, false)
+        set(value) = prefs.edit().putBoolean(KEY_V828NATIVEAUTOBRIDGE828, value).apply()
+
+    var v828navigateAutoBack828: Boolean
+        get() = prefs.getBoolean(KEY_V828NAVIGATEAUTOBACK828, false)
+        set(value) = prefs.edit().putBoolean(KEY_V828NAVIGATEAUTOBACK828, value).apply()
+
+    var v828nearAutoDetect828: Boolean
+        get() = prefs.getBoolean(KEY_V828NEARAUTODETECT828, false)
+        set(value) = prefs.edit().putBoolean(KEY_V828NEARAUTODETECT828, value).apply()
+
+    var v828netAutoThrottle828: Boolean
+        get() = prefs.getBoolean(KEY_V828NETAUTOTHROTTLE828, false)
+        set(value) = prefs.edit().putBoolean(KEY_V828NETAUTOTHROTTLE828, value).apply()
+
+    var v828networkAutoPing828: Boolean
+        get() = prefs.getBoolean(KEY_V828NETWORKAUTOPING828, false)
+        set(value) = prefs.edit().putBoolean(KEY_V828NETWORKAUTOPING828, value).apply()
+
+    var v829modifyAutoPatch829: Boolean
+        get() = prefs.getBoolean(KEY_V829MODIFYAUTOPATCH829, false)
+        set(value) = prefs.edit().putBoolean(KEY_V829MODIFYAUTOPATCH829, value).apply()
+
+    var v829moduleAutoLoad829: Boolean
+        get() = prefs.getBoolean(KEY_V829MODULEAUTOLOAD829, false)
+        set(value) = prefs.edit().putBoolean(KEY_V829MODULEAUTOLOAD829, value).apply()
+
+    var v829momentAutoCapture829: Boolean
+        get() = prefs.getBoolean(KEY_V829MOMENTAUTOCAPTURE829, false)
+        set(value) = prefs.edit().putBoolean(KEY_V829MOMENTAUTOCAPTURE829, value).apply()
+
+    var v829monitorAutoWatchdog829: Boolean
+        get() = prefs.getBoolean(KEY_V829MONITORAUTOWATCHDOG829, false)
+        set(value) = prefs.edit().putBoolean(KEY_V829MONITORAUTOWATCHDOG829, value).apply()
+
+    var v829motionAutoBlur829: Boolean
+        get() = prefs.getBoolean(KEY_V829MOTIONAUTOBLUR829, false)
+        set(value) = prefs.edit().putBoolean(KEY_V829MOTIONAUTOBLUR829, value).apply()
+
+    var v829mountAutoBind829: Boolean
+        get() = prefs.getBoolean(KEY_V829MOUNTAUTOBIND829, false)
+        set(value) = prefs.edit().putBoolean(KEY_V829MOUNTAUTOBIND829, value).apply()
+
+    var v829mouseAutoScroll829: Boolean
+        get() = prefs.getBoolean(KEY_V829MOUSEAUTOSCROLL829, false)
+        set(value) = prefs.edit().putBoolean(KEY_V829MOUSEAUTOSCROLL829, value).apply()
+
+    var v829moveAutoTransition829: Boolean
+        get() = prefs.getBoolean(KEY_V829MOVEAUTOTRANSITION829, false)
+        set(value) = prefs.edit().putBoolean(KEY_V829MOVEAUTOTRANSITION829, value).apply()
+
+    var v829multiAutoThread829: Boolean
+        get() = prefs.getBoolean(KEY_V829MULTIAUTOTHREAD829, false)
+        set(value) = prefs.edit().putBoolean(KEY_V829MULTIAUTOTHREAD829, value).apply()
+
+    var v829nameAutoResolve829: Boolean
+        get() = prefs.getBoolean(KEY_V829NAMEAUTORESOLVE829, false)
+        set(value) = prefs.edit().putBoolean(KEY_V829NAMEAUTORESOLVE829, value).apply()
+
+    var v829nativeAutoBridge829: Boolean
+        get() = prefs.getBoolean(KEY_V829NATIVEAUTOBRIDGE829, false)
+        set(value) = prefs.edit().putBoolean(KEY_V829NATIVEAUTOBRIDGE829, value).apply()
+
+    var v829navigateAutoBack829: Boolean
+        get() = prefs.getBoolean(KEY_V829NAVIGATEAUTOBACK829, false)
+        set(value) = prefs.edit().putBoolean(KEY_V829NAVIGATEAUTOBACK829, value).apply()
+
+    var v829nearAutoDetect829: Boolean
+        get() = prefs.getBoolean(KEY_V829NEARAUTODETECT829, false)
+        set(value) = prefs.edit().putBoolean(KEY_V829NEARAUTODETECT829, value).apply()
+
+    var v829netAutoThrottle829: Boolean
+        get() = prefs.getBoolean(KEY_V829NETAUTOTHROTTLE829, false)
+        set(value) = prefs.edit().putBoolean(KEY_V829NETAUTOTHROTTLE829, value).apply()
+
+    var v829networkAutoPing829: Boolean
+        get() = prefs.getBoolean(KEY_V829NETWORKAUTOPING829, false)
+        set(value) = prefs.edit().putBoolean(KEY_V829NETWORKAUTOPING829, value).apply()
+
+    var v830modifyAutoPatch830: Boolean
+        get() = prefs.getBoolean(KEY_V830MODIFYAUTOPATCH830, false)
+        set(value) = prefs.edit().putBoolean(KEY_V830MODIFYAUTOPATCH830, value).apply()
+
+    var v830moduleAutoLoad830: Boolean
+        get() = prefs.getBoolean(KEY_V830MODULEAUTOLOAD830, false)
+        set(value) = prefs.edit().putBoolean(KEY_V830MODULEAUTOLOAD830, value).apply()
+
+    var v830momentAutoCapture830: Boolean
+        get() = prefs.getBoolean(KEY_V830MOMENTAUTOCAPTURE830, false)
+        set(value) = prefs.edit().putBoolean(KEY_V830MOMENTAUTOCAPTURE830, value).apply()
+
+    var v830monitorAutoWatchdog830: Boolean
+        get() = prefs.getBoolean(KEY_V830MONITORAUTOWATCHDOG830, false)
+        set(value) = prefs.edit().putBoolean(KEY_V830MONITORAUTOWATCHDOG830, value).apply()
+
+    var v830motionAutoBlur830: Boolean
+        get() = prefs.getBoolean(KEY_V830MOTIONAUTOBLUR830, false)
+        set(value) = prefs.edit().putBoolean(KEY_V830MOTIONAUTOBLUR830, value).apply()
+
+    var v830mountAutoBind830: Boolean
+        get() = prefs.getBoolean(KEY_V830MOUNTAUTOBIND830, false)
+        set(value) = prefs.edit().putBoolean(KEY_V830MOUNTAUTOBIND830, value).apply()
+
+    var v830mouseAutoScroll830: Boolean
+        get() = prefs.getBoolean(KEY_V830MOUSEAUTOSCROLL830, false)
+        set(value) = prefs.edit().putBoolean(KEY_V830MOUSEAUTOSCROLL830, value).apply()
+
+    var v830moveAutoTransition830: Boolean
+        get() = prefs.getBoolean(KEY_V830MOVEAUTOTRANSITION830, false)
+        set(value) = prefs.edit().putBoolean(KEY_V830MOVEAUTOTRANSITION830, value).apply()
+
+    var v830multiAutoThread830: Boolean
+        get() = prefs.getBoolean(KEY_V830MULTIAUTOTHREAD830, false)
+        set(value) = prefs.edit().putBoolean(KEY_V830MULTIAUTOTHREAD830, value).apply()
+
+    var v830nameAutoResolve830: Boolean
+        get() = prefs.getBoolean(KEY_V830NAMEAUTORESOLVE830, false)
+        set(value) = prefs.edit().putBoolean(KEY_V830NAMEAUTORESOLVE830, value).apply()
+
+    var v830nativeAutoBridge830: Boolean
+        get() = prefs.getBoolean(KEY_V830NATIVEAUTOBRIDGE830, false)
+        set(value) = prefs.edit().putBoolean(KEY_V830NATIVEAUTOBRIDGE830, value).apply()
+
+    var v830navigateAutoBack830: Boolean
+        get() = prefs.getBoolean(KEY_V830NAVIGATEAUTOBACK830, false)
+        set(value) = prefs.edit().putBoolean(KEY_V830NAVIGATEAUTOBACK830, value).apply()
+
+    var v830nearAutoDetect830: Boolean
+        get() = prefs.getBoolean(KEY_V830NEARAUTODETECT830, false)
+        set(value) = prefs.edit().putBoolean(KEY_V830NEARAUTODETECT830, value).apply()
+
+    var v830netAutoThrottle830: Boolean
+        get() = prefs.getBoolean(KEY_V830NETAUTOTHROTTLE830, false)
+        set(value) = prefs.edit().putBoolean(KEY_V830NETAUTOTHROTTLE830, value).apply()
+
+    var v830networkAutoPing830: Boolean
+        get() = prefs.getBoolean(KEY_V830NETWORKAUTOPING830, false)
+        set(value) = prefs.edit().putBoolean(KEY_V830NETWORKAUTOPING830, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -70680,5 +71280,155 @@ class AppPrefs(context: Context) {
         const val KEY_V820MINAUTOTHRESHOLD820 = "v820minAutoThreshold820" // v820 Min Auto Threshold820
         const val KEY_V820MODEAUTOADAPTIVE820 = "v820modeAutoAdaptive820" // v820 Mode Auto Adaptive820
         const val KEY_V820MODELAUTODETECT820 = "v820modelAutoDetect820" // v820 Model Auto Detect820
+        const val KEY_V821MODIFYAUTOPATCH821 = "v821modifyAutoPatch821" // v821 Modify Auto Patch821
+        const val KEY_V821MODULEAUTOLOAD821 = "v821moduleAutoLoad821" // v821 Module Auto Load821
+        const val KEY_V821MOMENTAUTOCAPTURE821 = "v821momentAutoCapture821" // v821 Moment Auto Capture821
+        const val KEY_V821MONITORAUTOWATCHDOG821 = "v821monitorAutoWatchdog821" // v821 Monitor Auto Watchdog821
+        const val KEY_V821MOTIONAUTOBLUR821 = "v821motionAutoBlur821" // v821 Motion Auto Blur821
+        const val KEY_V821MOUNTAUTOBIND821 = "v821mountAutoBind821" // v821 Mount Auto Bind821
+        const val KEY_V821MOUSEAUTOSCROLL821 = "v821mouseAutoScroll821" // v821 Mouse Auto Scroll821
+        const val KEY_V821MOVEAUTOTRANSITION821 = "v821moveAutoTransition821" // v821 Move Auto Transition821
+        const val KEY_V821MULTIAUTOTHREAD821 = "v821multiAutoThread821" // v821 Multi Auto Thread821
+        const val KEY_V821NAMEAUTORESOLVE821 = "v821nameAutoResolve821" // v821 Name Auto Resolve821
+        const val KEY_V821NATIVEAUTOBRIDGE821 = "v821nativeAutoBridge821" // v821 Native Auto Bridge821
+        const val KEY_V821NAVIGATEAUTOBACK821 = "v821navigateAutoBack821" // v821 Navigate Auto Back821
+        const val KEY_V821NEARAUTODETECT821 = "v821nearAutoDetect821" // v821 Near Auto Detect821
+        const val KEY_V821NETAUTOTHROTTLE821 = "v821netAutoThrottle821" // v821 Net Auto Throttle821
+        const val KEY_V821NETWORKAUTOPING821 = "v821networkAutoPing821" // v821 Network Auto Ping821
+        const val KEY_V822MODIFYAUTOPATCH822 = "v822modifyAutoPatch822" // v822 Modify Auto Patch822
+        const val KEY_V822MODULEAUTOLOAD822 = "v822moduleAutoLoad822" // v822 Module Auto Load822
+        const val KEY_V822MOMENTAUTOCAPTURE822 = "v822momentAutoCapture822" // v822 Moment Auto Capture822
+        const val KEY_V822MONITORAUTOWATCHDOG822 = "v822monitorAutoWatchdog822" // v822 Monitor Auto Watchdog822
+        const val KEY_V822MOTIONAUTOBLUR822 = "v822motionAutoBlur822" // v822 Motion Auto Blur822
+        const val KEY_V822MOUNTAUTOBIND822 = "v822mountAutoBind822" // v822 Mount Auto Bind822
+        const val KEY_V822MOUSEAUTOSCROLL822 = "v822mouseAutoScroll822" // v822 Mouse Auto Scroll822
+        const val KEY_V822MOVEAUTOTRANSITION822 = "v822moveAutoTransition822" // v822 Move Auto Transition822
+        const val KEY_V822MULTIAUTOTHREAD822 = "v822multiAutoThread822" // v822 Multi Auto Thread822
+        const val KEY_V822NAMEAUTORESOLVE822 = "v822nameAutoResolve822" // v822 Name Auto Resolve822
+        const val KEY_V822NATIVEAUTOBRIDGE822 = "v822nativeAutoBridge822" // v822 Native Auto Bridge822
+        const val KEY_V822NAVIGATEAUTOBACK822 = "v822navigateAutoBack822" // v822 Navigate Auto Back822
+        const val KEY_V822NEARAUTODETECT822 = "v822nearAutoDetect822" // v822 Near Auto Detect822
+        const val KEY_V822NETAUTOTHROTTLE822 = "v822netAutoThrottle822" // v822 Net Auto Throttle822
+        const val KEY_V822NETWORKAUTOPING822 = "v822networkAutoPing822" // v822 Network Auto Ping822
+        const val KEY_V823MODIFYAUTOPATCH823 = "v823modifyAutoPatch823" // v823 Modify Auto Patch823
+        const val KEY_V823MODULEAUTOLOAD823 = "v823moduleAutoLoad823" // v823 Module Auto Load823
+        const val KEY_V823MOMENTAUTOCAPTURE823 = "v823momentAutoCapture823" // v823 Moment Auto Capture823
+        const val KEY_V823MONITORAUTOWATCHDOG823 = "v823monitorAutoWatchdog823" // v823 Monitor Auto Watchdog823
+        const val KEY_V823MOTIONAUTOBLUR823 = "v823motionAutoBlur823" // v823 Motion Auto Blur823
+        const val KEY_V823MOUNTAUTOBIND823 = "v823mountAutoBind823" // v823 Mount Auto Bind823
+        const val KEY_V823MOUSEAUTOSCROLL823 = "v823mouseAutoScroll823" // v823 Mouse Auto Scroll823
+        const val KEY_V823MOVEAUTOTRANSITION823 = "v823moveAutoTransition823" // v823 Move Auto Transition823
+        const val KEY_V823MULTIAUTOTHREAD823 = "v823multiAutoThread823" // v823 Multi Auto Thread823
+        const val KEY_V823NAMEAUTORESOLVE823 = "v823nameAutoResolve823" // v823 Name Auto Resolve823
+        const val KEY_V823NATIVEAUTOBRIDGE823 = "v823nativeAutoBridge823" // v823 Native Auto Bridge823
+        const val KEY_V823NAVIGATEAUTOBACK823 = "v823navigateAutoBack823" // v823 Navigate Auto Back823
+        const val KEY_V823NEARAUTODETECT823 = "v823nearAutoDetect823" // v823 Near Auto Detect823
+        const val KEY_V823NETAUTOTHROTTLE823 = "v823netAutoThrottle823" // v823 Net Auto Throttle823
+        const val KEY_V823NETWORKAUTOPING823 = "v823networkAutoPing823" // v823 Network Auto Ping823
+        const val KEY_V824MODIFYAUTOPATCH824 = "v824modifyAutoPatch824" // v824 Modify Auto Patch824
+        const val KEY_V824MODULEAUTOLOAD824 = "v824moduleAutoLoad824" // v824 Module Auto Load824
+        const val KEY_V824MOMENTAUTOCAPTURE824 = "v824momentAutoCapture824" // v824 Moment Auto Capture824
+        const val KEY_V824MONITORAUTOWATCHDOG824 = "v824monitorAutoWatchdog824" // v824 Monitor Auto Watchdog824
+        const val KEY_V824MOTIONAUTOBLUR824 = "v824motionAutoBlur824" // v824 Motion Auto Blur824
+        const val KEY_V824MOUNTAUTOBIND824 = "v824mountAutoBind824" // v824 Mount Auto Bind824
+        const val KEY_V824MOUSEAUTOSCROLL824 = "v824mouseAutoScroll824" // v824 Mouse Auto Scroll824
+        const val KEY_V824MOVEAUTOTRANSITION824 = "v824moveAutoTransition824" // v824 Move Auto Transition824
+        const val KEY_V824MULTIAUTOTHREAD824 = "v824multiAutoThread824" // v824 Multi Auto Thread824
+        const val KEY_V824NAMEAUTORESOLVE824 = "v824nameAutoResolve824" // v824 Name Auto Resolve824
+        const val KEY_V824NATIVEAUTOBRIDGE824 = "v824nativeAutoBridge824" // v824 Native Auto Bridge824
+        const val KEY_V824NAVIGATEAUTOBACK824 = "v824navigateAutoBack824" // v824 Navigate Auto Back824
+        const val KEY_V824NEARAUTODETECT824 = "v824nearAutoDetect824" // v824 Near Auto Detect824
+        const val KEY_V824NETAUTOTHROTTLE824 = "v824netAutoThrottle824" // v824 Net Auto Throttle824
+        const val KEY_V824NETWORKAUTOPING824 = "v824networkAutoPing824" // v824 Network Auto Ping824
+        const val KEY_V825MODIFYAUTOPATCH825 = "v825modifyAutoPatch825" // v825 Modify Auto Patch825
+        const val KEY_V825MODULEAUTOLOAD825 = "v825moduleAutoLoad825" // v825 Module Auto Load825
+        const val KEY_V825MOMENTAUTOCAPTURE825 = "v825momentAutoCapture825" // v825 Moment Auto Capture825
+        const val KEY_V825MONITORAUTOWATCHDOG825 = "v825monitorAutoWatchdog825" // v825 Monitor Auto Watchdog825
+        const val KEY_V825MOTIONAUTOBLUR825 = "v825motionAutoBlur825" // v825 Motion Auto Blur825
+        const val KEY_V825MOUNTAUTOBIND825 = "v825mountAutoBind825" // v825 Mount Auto Bind825
+        const val KEY_V825MOUSEAUTOSCROLL825 = "v825mouseAutoScroll825" // v825 Mouse Auto Scroll825
+        const val KEY_V825MOVEAUTOTRANSITION825 = "v825moveAutoTransition825" // v825 Move Auto Transition825
+        const val KEY_V825MULTIAUTOTHREAD825 = "v825multiAutoThread825" // v825 Multi Auto Thread825
+        const val KEY_V825NAMEAUTORESOLVE825 = "v825nameAutoResolve825" // v825 Name Auto Resolve825
+        const val KEY_V825NATIVEAUTOBRIDGE825 = "v825nativeAutoBridge825" // v825 Native Auto Bridge825
+        const val KEY_V825NAVIGATEAUTOBACK825 = "v825navigateAutoBack825" // v825 Navigate Auto Back825
+        const val KEY_V825NEARAUTODETECT825 = "v825nearAutoDetect825" // v825 Near Auto Detect825
+        const val KEY_V825NETAUTOTHROTTLE825 = "v825netAutoThrottle825" // v825 Net Auto Throttle825
+        const val KEY_V825NETWORKAUTOPING825 = "v825networkAutoPing825" // v825 Network Auto Ping825
+        const val KEY_V826MODIFYAUTOPATCH826 = "v826modifyAutoPatch826" // v826 Modify Auto Patch826
+        const val KEY_V826MODULEAUTOLOAD826 = "v826moduleAutoLoad826" // v826 Module Auto Load826
+        const val KEY_V826MOMENTAUTOCAPTURE826 = "v826momentAutoCapture826" // v826 Moment Auto Capture826
+        const val KEY_V826MONITORAUTOWATCHDOG826 = "v826monitorAutoWatchdog826" // v826 Monitor Auto Watchdog826
+        const val KEY_V826MOTIONAUTOBLUR826 = "v826motionAutoBlur826" // v826 Motion Auto Blur826
+        const val KEY_V826MOUNTAUTOBIND826 = "v826mountAutoBind826" // v826 Mount Auto Bind826
+        const val KEY_V826MOUSEAUTOSCROLL826 = "v826mouseAutoScroll826" // v826 Mouse Auto Scroll826
+        const val KEY_V826MOVEAUTOTRANSITION826 = "v826moveAutoTransition826" // v826 Move Auto Transition826
+        const val KEY_V826MULTIAUTOTHREAD826 = "v826multiAutoThread826" // v826 Multi Auto Thread826
+        const val KEY_V826NAMEAUTORESOLVE826 = "v826nameAutoResolve826" // v826 Name Auto Resolve826
+        const val KEY_V826NATIVEAUTOBRIDGE826 = "v826nativeAutoBridge826" // v826 Native Auto Bridge826
+        const val KEY_V826NAVIGATEAUTOBACK826 = "v826navigateAutoBack826" // v826 Navigate Auto Back826
+        const val KEY_V826NEARAUTODETECT826 = "v826nearAutoDetect826" // v826 Near Auto Detect826
+        const val KEY_V826NETAUTOTHROTTLE826 = "v826netAutoThrottle826" // v826 Net Auto Throttle826
+        const val KEY_V826NETWORKAUTOPING826 = "v826networkAutoPing826" // v826 Network Auto Ping826
+        const val KEY_V827MODIFYAUTOPATCH827 = "v827modifyAutoPatch827" // v827 Modify Auto Patch827
+        const val KEY_V827MODULEAUTOLOAD827 = "v827moduleAutoLoad827" // v827 Module Auto Load827
+        const val KEY_V827MOMENTAUTOCAPTURE827 = "v827momentAutoCapture827" // v827 Moment Auto Capture827
+        const val KEY_V827MONITORAUTOWATCHDOG827 = "v827monitorAutoWatchdog827" // v827 Monitor Auto Watchdog827
+        const val KEY_V827MOTIONAUTOBLUR827 = "v827motionAutoBlur827" // v827 Motion Auto Blur827
+        const val KEY_V827MOUNTAUTOBIND827 = "v827mountAutoBind827" // v827 Mount Auto Bind827
+        const val KEY_V827MOUSEAUTOSCROLL827 = "v827mouseAutoScroll827" // v827 Mouse Auto Scroll827
+        const val KEY_V827MOVEAUTOTRANSITION827 = "v827moveAutoTransition827" // v827 Move Auto Transition827
+        const val KEY_V827MULTIAUTOTHREAD827 = "v827multiAutoThread827" // v827 Multi Auto Thread827
+        const val KEY_V827NAMEAUTORESOLVE827 = "v827nameAutoResolve827" // v827 Name Auto Resolve827
+        const val KEY_V827NATIVEAUTOBRIDGE827 = "v827nativeAutoBridge827" // v827 Native Auto Bridge827
+        const val KEY_V827NAVIGATEAUTOBACK827 = "v827navigateAutoBack827" // v827 Navigate Auto Back827
+        const val KEY_V827NEARAUTODETECT827 = "v827nearAutoDetect827" // v827 Near Auto Detect827
+        const val KEY_V827NETAUTOTHROTTLE827 = "v827netAutoThrottle827" // v827 Net Auto Throttle827
+        const val KEY_V827NETWORKAUTOPING827 = "v827networkAutoPing827" // v827 Network Auto Ping827
+        const val KEY_V828MODIFYAUTOPATCH828 = "v828modifyAutoPatch828" // v828 Modify Auto Patch828
+        const val KEY_V828MODULEAUTOLOAD828 = "v828moduleAutoLoad828" // v828 Module Auto Load828
+        const val KEY_V828MOMENTAUTOCAPTURE828 = "v828momentAutoCapture828" // v828 Moment Auto Capture828
+        const val KEY_V828MONITORAUTOWATCHDOG828 = "v828monitorAutoWatchdog828" // v828 Monitor Auto Watchdog828
+        const val KEY_V828MOTIONAUTOBLUR828 = "v828motionAutoBlur828" // v828 Motion Auto Blur828
+        const val KEY_V828MOUNTAUTOBIND828 = "v828mountAutoBind828" // v828 Mount Auto Bind828
+        const val KEY_V828MOUSEAUTOSCROLL828 = "v828mouseAutoScroll828" // v828 Mouse Auto Scroll828
+        const val KEY_V828MOVEAUTOTRANSITION828 = "v828moveAutoTransition828" // v828 Move Auto Transition828
+        const val KEY_V828MULTIAUTOTHREAD828 = "v828multiAutoThread828" // v828 Multi Auto Thread828
+        const val KEY_V828NAMEAUTORESOLVE828 = "v828nameAutoResolve828" // v828 Name Auto Resolve828
+        const val KEY_V828NATIVEAUTOBRIDGE828 = "v828nativeAutoBridge828" // v828 Native Auto Bridge828
+        const val KEY_V828NAVIGATEAUTOBACK828 = "v828navigateAutoBack828" // v828 Navigate Auto Back828
+        const val KEY_V828NEARAUTODETECT828 = "v828nearAutoDetect828" // v828 Near Auto Detect828
+        const val KEY_V828NETAUTOTHROTTLE828 = "v828netAutoThrottle828" // v828 Net Auto Throttle828
+        const val KEY_V828NETWORKAUTOPING828 = "v828networkAutoPing828" // v828 Network Auto Ping828
+        const val KEY_V829MODIFYAUTOPATCH829 = "v829modifyAutoPatch829" // v829 Modify Auto Patch829
+        const val KEY_V829MODULEAUTOLOAD829 = "v829moduleAutoLoad829" // v829 Module Auto Load829
+        const val KEY_V829MOMENTAUTOCAPTURE829 = "v829momentAutoCapture829" // v829 Moment Auto Capture829
+        const val KEY_V829MONITORAUTOWATCHDOG829 = "v829monitorAutoWatchdog829" // v829 Monitor Auto Watchdog829
+        const val KEY_V829MOTIONAUTOBLUR829 = "v829motionAutoBlur829" // v829 Motion Auto Blur829
+        const val KEY_V829MOUNTAUTOBIND829 = "v829mountAutoBind829" // v829 Mount Auto Bind829
+        const val KEY_V829MOUSEAUTOSCROLL829 = "v829mouseAutoScroll829" // v829 Mouse Auto Scroll829
+        const val KEY_V829MOVEAUTOTRANSITION829 = "v829moveAutoTransition829" // v829 Move Auto Transition829
+        const val KEY_V829MULTIAUTOTHREAD829 = "v829multiAutoThread829" // v829 Multi Auto Thread829
+        const val KEY_V829NAMEAUTORESOLVE829 = "v829nameAutoResolve829" // v829 Name Auto Resolve829
+        const val KEY_V829NATIVEAUTOBRIDGE829 = "v829nativeAutoBridge829" // v829 Native Auto Bridge829
+        const val KEY_V829NAVIGATEAUTOBACK829 = "v829navigateAutoBack829" // v829 Navigate Auto Back829
+        const val KEY_V829NEARAUTODETECT829 = "v829nearAutoDetect829" // v829 Near Auto Detect829
+        const val KEY_V829NETAUTOTHROTTLE829 = "v829netAutoThrottle829" // v829 Net Auto Throttle829
+        const val KEY_V829NETWORKAUTOPING829 = "v829networkAutoPing829" // v829 Network Auto Ping829
+        const val KEY_V830MODIFYAUTOPATCH830 = "v830modifyAutoPatch830" // v830 Modify Auto Patch830
+        const val KEY_V830MODULEAUTOLOAD830 = "v830moduleAutoLoad830" // v830 Module Auto Load830
+        const val KEY_V830MOMENTAUTOCAPTURE830 = "v830momentAutoCapture830" // v830 Moment Auto Capture830
+        const val KEY_V830MONITORAUTOWATCHDOG830 = "v830monitorAutoWatchdog830" // v830 Monitor Auto Watchdog830
+        const val KEY_V830MOTIONAUTOBLUR830 = "v830motionAutoBlur830" // v830 Motion Auto Blur830
+        const val KEY_V830MOUNTAUTOBIND830 = "v830mountAutoBind830" // v830 Mount Auto Bind830
+        const val KEY_V830MOUSEAUTOSCROLL830 = "v830mouseAutoScroll830" // v830 Mouse Auto Scroll830
+        const val KEY_V830MOVEAUTOTRANSITION830 = "v830moveAutoTransition830" // v830 Move Auto Transition830
+        const val KEY_V830MULTIAUTOTHREAD830 = "v830multiAutoThread830" // v830 Multi Auto Thread830
+        const val KEY_V830NAMEAUTORESOLVE830 = "v830nameAutoResolve830" // v830 Name Auto Resolve830
+        const val KEY_V830NATIVEAUTOBRIDGE830 = "v830nativeAutoBridge830" // v830 Native Auto Bridge830
+        const val KEY_V830NAVIGATEAUTOBACK830 = "v830navigateAutoBack830" // v830 Navigate Auto Back830
+        const val KEY_V830NEARAUTODETECT830 = "v830nearAutoDetect830" // v830 Near Auto Detect830
+        const val KEY_V830NETAUTOTHROTTLE830 = "v830netAutoThrottle830" // v830 Net Auto Throttle830
+        const val KEY_V830NETWORKAUTOPING830 = "v830networkAutoPing830" // v830 Network Auto Ping830
     }
 }
