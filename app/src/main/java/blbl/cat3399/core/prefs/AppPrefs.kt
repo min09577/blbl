@@ -30248,6 +30248,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V390IMAGEENHANCEDENOISE390, false)
         set(value) = prefs.edit().putBoolean(KEY_V390IMAGEENHANCEDENOISE390, value).apply()
 
+    var v391aiAutoTagGenerate391: Boolean
+        get() = prefs.getBoolean(KEY_V391AIAUTOTAGGENERATE391, false)
+        set(value) = prefs.edit().putBoolean(KEY_V391AIAUTOTAGGENERATE391, value).apply()
+
+    var v391aiSmartRecommend391: Boolean
+        get() = prefs.getBoolean(KEY_V391AISMARTRECOMMEND391, false)
+        set(value) = prefs.edit().putBoolean(KEY_V391AISMARTRECOMMEND391, value).apply()
+
+    var v391aiContentAnalysis391: Int
+        get() = prefs.getInt(KEY_V391AICONTENTANALYSIS391, 0)
+        set(value) = prefs.edit().putInt(KEY_V391AICONTENTANALYSIS391, value).apply()
+
+    var v391bannerAutoRotate391: Boolean
+        get() = prefs.getBoolean(KEY_V391BANNERAUTOROTATE391, false)
+        set(value) = prefs.edit().putBoolean(KEY_V391BANNERAUTOROTATE391, value).apply()
+
+    var v391bannerPosition391: Int
+        get() = prefs.getInt(KEY_V391BANNERPOSITION391, 0)
+        set(value) = prefs.edit().putInt(KEY_V391BANNERPOSITION391, value).apply()
+
+    var v391batchDownloadLimit391: Int
+        get() = prefs.getInt(KEY_V391BATCHDOWNLOADLIMIT391, 0)
+        set(value) = prefs.edit().putInt(KEY_V391BATCHDOWNLOADLIMIT391, value).apply()
+
+    var v391batchOperationConfirm391: Boolean
+        get() = prefs.getBoolean(KEY_V391BATCHOPERATIONCONFIRM391, false)
+        set(value) = prefs.edit().putBoolean(KEY_V391BATCHOPERATIONCONFIRM391, value).apply()
+
+    var v391blockAutoHide391: Boolean
+        get() = prefs.getBoolean(KEY_V391BLOCKAUTOHIDE391, false)
+        set(value) = prefs.edit().putBoolean(KEY_V391BLOCKAUTOHIDE391, value).apply()
+
+    var v391boostModeEnabled391: Boolean
+        get() = prefs.getBoolean(KEY_V391BOOSTMODEENABLED391, false)
+        set(value) = prefs.edit().putBoolean(KEY_V391BOOSTMODEENABLED391, value).apply()
+
+    var v391botAutoReply391: Boolean
+        get() = prefs.getBoolean(KEY_V391BOTAUTOREPLY391, false)
+        set(value) = prefs.edit().putBoolean(KEY_V391BOTAUTOREPLY391, value).apply()
+
+    var v391bubbleAnimation391: Boolean
+        get() = prefs.getBoolean(KEY_V391BUBBLEANIMATION391, false)
+        set(value) = prefs.edit().putBoolean(KEY_V391BUBBLEANIMATION391, value).apply()
+
+    var v391bufferPrefetchSize391: Int
+        get() = prefs.getInt(KEY_V391BUFFERPREFETCHSIZE391, 0)
+        set(value) = prefs.edit().putInt(KEY_V391BUFFERPREFETCHSIZE391, value).apply()
+
+    var v391calendarSyncEnabled391: Boolean
+        get() = prefs.getBoolean(KEY_V391CALENDARSYNCENABLED391, false)
+        set(value) = prefs.edit().putBoolean(KEY_V391CALENDARSYNCENABLED391, value).apply()
+
+    var v391cardLayoutStyle391: Int
+        get() = prefs.getInt(KEY_V391CARDLAYOUTSTYLE391, 0)
+        set(value) = prefs.edit().putInt(KEY_V391CARDLAYOUTSTYLE391, value).apply()
+
+    var v391chatAutoScroll391: Boolean
+        get() = prefs.getBoolean(KEY_V391CHATAUTOSCROLL391, false)
+        set(value) = prefs.edit().putBoolean(KEY_V391CHATAUTOSCROLL391, value).apply()
+
+    var v392aiAutoTagGenerate392: Boolean
+        get() = prefs.getBoolean(KEY_V392AIAUTOTAGGENERATE392, false)
+        set(value) = prefs.edit().putBoolean(KEY_V392AIAUTOTAGGENERATE392, value).apply()
+
+    var v392aiSmartRecommend392: Boolean
+        get() = prefs.getBoolean(KEY_V392AISMARTRECOMMEND392, false)
+        set(value) = prefs.edit().putBoolean(KEY_V392AISMARTRECOMMEND392, value).apply()
+
+    var v392aiContentAnalysis392: Int
+        get() = prefs.getInt(KEY_V392AICONTENTANALYSIS392, 0)
+        set(value) = prefs.edit().putInt(KEY_V392AICONTENTANALYSIS392, value).apply()
+
+    var v392bannerAutoRotate392: Boolean
+        get() = prefs.getBoolean(KEY_V392BANNERAUTOROTATE392, false)
+        set(value) = prefs.edit().putBoolean(KEY_V392BANNERAUTOROTATE392, value).apply()
+
+    var v392bannerPosition392: Int
+        get() = prefs.getInt(KEY_V392BANNERPOSITION392, 0)
+        set(value) = prefs.edit().putInt(KEY_V392BANNERPOSITION392, value).apply()
+
+    var v392batchDownloadLimit392: Int
+        get() = prefs.getInt(KEY_V392BATCHDOWNLOADLIMIT392, 0)
+        set(value) = prefs.edit().putInt(KEY_V392BATCHDOWNLOADLIMIT392, value).apply()
+
+    var v392batchOperationConfirm392: Boolean
+        get() = prefs.getBoolean(KEY_V392BATCHOPERATIONCONFIRM392, false)
+        set(value) = prefs.edit().putBoolean(KEY_V392BATCHOPERATIONCONFIRM392, value).apply()
+
+    var v392blockAutoHide392: Boolean
+        get() = prefs.getBoolean(KEY_V392BLOCKAUTOHIDE392, false)
+        set(value) = prefs.edit().putBoolean(KEY_V392BLOCKAUTOHIDE392, value).apply()
+
+    var v392boostModeEnabled392: Boolean
+        get() = prefs.getBoolean(KEY_V392BOOSTMODEENABLED392, false)
+        set(value) = prefs.edit().putBoolean(KEY_V392BOOSTMODEENABLED392, value).apply()
+
+    var v392botAutoReply392: Boolean
+        get() = prefs.getBoolean(KEY_V392BOTAUTOREPLY392, false)
+        set(value) = prefs.edit().putBoolean(KEY_V392BOTAUTOREPLY392, value).apply()
+
+    var v392bubbleAnimation392: Boolean
+        get() = prefs.getBoolean(KEY_V392BUBBLEANIMATION392, false)
+        set(value) = prefs.edit().putBoolean(KEY_V392BUBBLEANIMATION392, value).apply()
+
+    var v392bufferPrefetchSize392: Int
+        get() = prefs.getInt(KEY_V392BUFFERPREFETCHSIZE392, 0)
+        set(value) = prefs.edit().putInt(KEY_V392BUFFERPREFETCHSIZE392, value).apply()
+
+    var v392calendarSyncEnabled392: Boolean
+        get() = prefs.getBoolean(KEY_V392CALENDARSYNCENABLED392, false)
+        set(value) = prefs.edit().putBoolean(KEY_V392CALENDARSYNCENABLED392, value).apply()
+
+    var v392cardLayoutStyle392: Int
+        get() = prefs.getInt(KEY_V392CARDLAYOUTSTYLE392, 0)
+        set(value) = prefs.edit().putInt(KEY_V392CARDLAYOUTSTYLE392, value).apply()
+
+    var v392chatAutoScroll392: Boolean
+        get() = prefs.getBoolean(KEY_V392CHATAUTOSCROLL392, false)
+        set(value) = prefs.edit().putBoolean(KEY_V392CHATAUTOSCROLL392, value).apply()
+
+    var v393aiAutoTagGenerate393: Boolean
+        get() = prefs.getBoolean(KEY_V393AIAUTOTAGGENERATE393, false)
+        set(value) = prefs.edit().putBoolean(KEY_V393AIAUTOTAGGENERATE393, value).apply()
+
+    var v393aiSmartRecommend393: Boolean
+        get() = prefs.getBoolean(KEY_V393AISMARTRECOMMEND393, false)
+        set(value) = prefs.edit().putBoolean(KEY_V393AISMARTRECOMMEND393, value).apply()
+
+    var v393aiContentAnalysis393: Int
+        get() = prefs.getInt(KEY_V393AICONTENTANALYSIS393, 0)
+        set(value) = prefs.edit().putInt(KEY_V393AICONTENTANALYSIS393, value).apply()
+
+    var v393bannerAutoRotate393: Boolean
+        get() = prefs.getBoolean(KEY_V393BANNERAUTOROTATE393, false)
+        set(value) = prefs.edit().putBoolean(KEY_V393BANNERAUTOROTATE393, value).apply()
+
+    var v393bannerPosition393: Int
+        get() = prefs.getInt(KEY_V393BANNERPOSITION393, 0)
+        set(value) = prefs.edit().putInt(KEY_V393BANNERPOSITION393, value).apply()
+
+    var v393batchDownloadLimit393: Int
+        get() = prefs.getInt(KEY_V393BATCHDOWNLOADLIMIT393, 0)
+        set(value) = prefs.edit().putInt(KEY_V393BATCHDOWNLOADLIMIT393, value).apply()
+
+    var v393batchOperationConfirm393: Boolean
+        get() = prefs.getBoolean(KEY_V393BATCHOPERATIONCONFIRM393, false)
+        set(value) = prefs.edit().putBoolean(KEY_V393BATCHOPERATIONCONFIRM393, value).apply()
+
+    var v393blockAutoHide393: Boolean
+        get() = prefs.getBoolean(KEY_V393BLOCKAUTOHIDE393, false)
+        set(value) = prefs.edit().putBoolean(KEY_V393BLOCKAUTOHIDE393, value).apply()
+
+    var v393boostModeEnabled393: Boolean
+        get() = prefs.getBoolean(KEY_V393BOOSTMODEENABLED393, false)
+        set(value) = prefs.edit().putBoolean(KEY_V393BOOSTMODEENABLED393, value).apply()
+
+    var v393botAutoReply393: Boolean
+        get() = prefs.getBoolean(KEY_V393BOTAUTOREPLY393, false)
+        set(value) = prefs.edit().putBoolean(KEY_V393BOTAUTOREPLY393, value).apply()
+
+    var v393bubbleAnimation393: Boolean
+        get() = prefs.getBoolean(KEY_V393BUBBLEANIMATION393, false)
+        set(value) = prefs.edit().putBoolean(KEY_V393BUBBLEANIMATION393, value).apply()
+
+    var v393bufferPrefetchSize393: Int
+        get() = prefs.getInt(KEY_V393BUFFERPREFETCHSIZE393, 0)
+        set(value) = prefs.edit().putInt(KEY_V393BUFFERPREFETCHSIZE393, value).apply()
+
+    var v393calendarSyncEnabled393: Boolean
+        get() = prefs.getBoolean(KEY_V393CALENDARSYNCENABLED393, false)
+        set(value) = prefs.edit().putBoolean(KEY_V393CALENDARSYNCENABLED393, value).apply()
+
+    var v393cardLayoutStyle393: Int
+        get() = prefs.getInt(KEY_V393CARDLAYOUTSTYLE393, 0)
+        set(value) = prefs.edit().putInt(KEY_V393CARDLAYOUTSTYLE393, value).apply()
+
+    var v393chatAutoScroll393: Boolean
+        get() = prefs.getBoolean(KEY_V393CHATAUTOSCROLL393, false)
+        set(value) = prefs.edit().putBoolean(KEY_V393CHATAUTOSCROLL393, value).apply()
+
+    var v394aiAutoTagGenerate394: Boolean
+        get() = prefs.getBoolean(KEY_V394AIAUTOTAGGENERATE394, false)
+        set(value) = prefs.edit().putBoolean(KEY_V394AIAUTOTAGGENERATE394, value).apply()
+
+    var v394aiSmartRecommend394: Boolean
+        get() = prefs.getBoolean(KEY_V394AISMARTRECOMMEND394, false)
+        set(value) = prefs.edit().putBoolean(KEY_V394AISMARTRECOMMEND394, value).apply()
+
+    var v394aiContentAnalysis394: Int
+        get() = prefs.getInt(KEY_V394AICONTENTANALYSIS394, 0)
+        set(value) = prefs.edit().putInt(KEY_V394AICONTENTANALYSIS394, value).apply()
+
+    var v394bannerAutoRotate394: Boolean
+        get() = prefs.getBoolean(KEY_V394BANNERAUTOROTATE394, false)
+        set(value) = prefs.edit().putBoolean(KEY_V394BANNERAUTOROTATE394, value).apply()
+
+    var v394bannerPosition394: Int
+        get() = prefs.getInt(KEY_V394BANNERPOSITION394, 0)
+        set(value) = prefs.edit().putInt(KEY_V394BANNERPOSITION394, value).apply()
+
+    var v394batchDownloadLimit394: Int
+        get() = prefs.getInt(KEY_V394BATCHDOWNLOADLIMIT394, 0)
+        set(value) = prefs.edit().putInt(KEY_V394BATCHDOWNLOADLIMIT394, value).apply()
+
+    var v394batchOperationConfirm394: Boolean
+        get() = prefs.getBoolean(KEY_V394BATCHOPERATIONCONFIRM394, false)
+        set(value) = prefs.edit().putBoolean(KEY_V394BATCHOPERATIONCONFIRM394, value).apply()
+
+    var v394blockAutoHide394: Boolean
+        get() = prefs.getBoolean(KEY_V394BLOCKAUTOHIDE394, false)
+        set(value) = prefs.edit().putBoolean(KEY_V394BLOCKAUTOHIDE394, value).apply()
+
+    var v394boostModeEnabled394: Boolean
+        get() = prefs.getBoolean(KEY_V394BOOSTMODEENABLED394, false)
+        set(value) = prefs.edit().putBoolean(KEY_V394BOOSTMODEENABLED394, value).apply()
+
+    var v394botAutoReply394: Boolean
+        get() = prefs.getBoolean(KEY_V394BOTAUTOREPLY394, false)
+        set(value) = prefs.edit().putBoolean(KEY_V394BOTAUTOREPLY394, value).apply()
+
+    var v394bubbleAnimation394: Boolean
+        get() = prefs.getBoolean(KEY_V394BUBBLEANIMATION394, false)
+        set(value) = prefs.edit().putBoolean(KEY_V394BUBBLEANIMATION394, value).apply()
+
+    var v394bufferPrefetchSize394: Int
+        get() = prefs.getInt(KEY_V394BUFFERPREFETCHSIZE394, 0)
+        set(value) = prefs.edit().putInt(KEY_V394BUFFERPREFETCHSIZE394, value).apply()
+
+    var v394calendarSyncEnabled394: Boolean
+        get() = prefs.getBoolean(KEY_V394CALENDARSYNCENABLED394, false)
+        set(value) = prefs.edit().putBoolean(KEY_V394CALENDARSYNCENABLED394, value).apply()
+
+    var v394cardLayoutStyle394: Int
+        get() = prefs.getInt(KEY_V394CARDLAYOUTSTYLE394, 0)
+        set(value) = prefs.edit().putInt(KEY_V394CARDLAYOUTSTYLE394, value).apply()
+
+    var v394chatAutoScroll394: Boolean
+        get() = prefs.getBoolean(KEY_V394CHATAUTOSCROLL394, false)
+        set(value) = prefs.edit().putBoolean(KEY_V394CHATAUTOSCROLL394, value).apply()
+
+    var v395aiAutoTagGenerate395: Boolean
+        get() = prefs.getBoolean(KEY_V395AIAUTOTAGGENERATE395, false)
+        set(value) = prefs.edit().putBoolean(KEY_V395AIAUTOTAGGENERATE395, value).apply()
+
+    var v395aiSmartRecommend395: Boolean
+        get() = prefs.getBoolean(KEY_V395AISMARTRECOMMEND395, false)
+        set(value) = prefs.edit().putBoolean(KEY_V395AISMARTRECOMMEND395, value).apply()
+
+    var v395aiContentAnalysis395: Int
+        get() = prefs.getInt(KEY_V395AICONTENTANALYSIS395, 0)
+        set(value) = prefs.edit().putInt(KEY_V395AICONTENTANALYSIS395, value).apply()
+
+    var v395bannerAutoRotate395: Boolean
+        get() = prefs.getBoolean(KEY_V395BANNERAUTOROTATE395, false)
+        set(value) = prefs.edit().putBoolean(KEY_V395BANNERAUTOROTATE395, value).apply()
+
+    var v395bannerPosition395: Int
+        get() = prefs.getInt(KEY_V395BANNERPOSITION395, 0)
+        set(value) = prefs.edit().putInt(KEY_V395BANNERPOSITION395, value).apply()
+
+    var v395batchDownloadLimit395: Int
+        get() = prefs.getInt(KEY_V395BATCHDOWNLOADLIMIT395, 0)
+        set(value) = prefs.edit().putInt(KEY_V395BATCHDOWNLOADLIMIT395, value).apply()
+
+    var v395batchOperationConfirm395: Boolean
+        get() = prefs.getBoolean(KEY_V395BATCHOPERATIONCONFIRM395, false)
+        set(value) = prefs.edit().putBoolean(KEY_V395BATCHOPERATIONCONFIRM395, value).apply()
+
+    var v395blockAutoHide395: Boolean
+        get() = prefs.getBoolean(KEY_V395BLOCKAUTOHIDE395, false)
+        set(value) = prefs.edit().putBoolean(KEY_V395BLOCKAUTOHIDE395, value).apply()
+
+    var v395boostModeEnabled395: Boolean
+        get() = prefs.getBoolean(KEY_V395BOOSTMODEENABLED395, false)
+        set(value) = prefs.edit().putBoolean(KEY_V395BOOSTMODEENABLED395, value).apply()
+
+    var v395botAutoReply395: Boolean
+        get() = prefs.getBoolean(KEY_V395BOTAUTOREPLY395, false)
+        set(value) = prefs.edit().putBoolean(KEY_V395BOTAUTOREPLY395, value).apply()
+
+    var v395bubbleAnimation395: Boolean
+        get() = prefs.getBoolean(KEY_V395BUBBLEANIMATION395, false)
+        set(value) = prefs.edit().putBoolean(KEY_V395BUBBLEANIMATION395, value).apply()
+
+    var v395bufferPrefetchSize395: Int
+        get() = prefs.getInt(KEY_V395BUFFERPREFETCHSIZE395, 0)
+        set(value) = prefs.edit().putInt(KEY_V395BUFFERPREFETCHSIZE395, value).apply()
+
+    var v395calendarSyncEnabled395: Boolean
+        get() = prefs.getBoolean(KEY_V395CALENDARSYNCENABLED395, false)
+        set(value) = prefs.edit().putBoolean(KEY_V395CALENDARSYNCENABLED395, value).apply()
+
+    var v395cardLayoutStyle395: Int
+        get() = prefs.getInt(KEY_V395CARDLAYOUTSTYLE395, 0)
+        set(value) = prefs.edit().putInt(KEY_V395CARDLAYOUTSTYLE395, value).apply()
+
+    var v395chatAutoScroll395: Boolean
+        get() = prefs.getBoolean(KEY_V395CHATAUTOSCROLL395, false)
+        set(value) = prefs.edit().putBoolean(KEY_V395CHATAUTOSCROLL395, value).apply()
+
+    var v396aiAutoTagGenerate396: Boolean
+        get() = prefs.getBoolean(KEY_V396AIAUTOTAGGENERATE396, false)
+        set(value) = prefs.edit().putBoolean(KEY_V396AIAUTOTAGGENERATE396, value).apply()
+
+    var v396aiSmartRecommend396: Boolean
+        get() = prefs.getBoolean(KEY_V396AISMARTRECOMMEND396, false)
+        set(value) = prefs.edit().putBoolean(KEY_V396AISMARTRECOMMEND396, value).apply()
+
+    var v396aiContentAnalysis396: Int
+        get() = prefs.getInt(KEY_V396AICONTENTANALYSIS396, 0)
+        set(value) = prefs.edit().putInt(KEY_V396AICONTENTANALYSIS396, value).apply()
+
+    var v396bannerAutoRotate396: Boolean
+        get() = prefs.getBoolean(KEY_V396BANNERAUTOROTATE396, false)
+        set(value) = prefs.edit().putBoolean(KEY_V396BANNERAUTOROTATE396, value).apply()
+
+    var v396bannerPosition396: Int
+        get() = prefs.getInt(KEY_V396BANNERPOSITION396, 0)
+        set(value) = prefs.edit().putInt(KEY_V396BANNERPOSITION396, value).apply()
+
+    var v396batchDownloadLimit396: Int
+        get() = prefs.getInt(KEY_V396BATCHDOWNLOADLIMIT396, 0)
+        set(value) = prefs.edit().putInt(KEY_V396BATCHDOWNLOADLIMIT396, value).apply()
+
+    var v396batchOperationConfirm396: Boolean
+        get() = prefs.getBoolean(KEY_V396BATCHOPERATIONCONFIRM396, false)
+        set(value) = prefs.edit().putBoolean(KEY_V396BATCHOPERATIONCONFIRM396, value).apply()
+
+    var v396blockAutoHide396: Boolean
+        get() = prefs.getBoolean(KEY_V396BLOCKAUTOHIDE396, false)
+        set(value) = prefs.edit().putBoolean(KEY_V396BLOCKAUTOHIDE396, value).apply()
+
+    var v396boostModeEnabled396: Boolean
+        get() = prefs.getBoolean(KEY_V396BOOSTMODEENABLED396, false)
+        set(value) = prefs.edit().putBoolean(KEY_V396BOOSTMODEENABLED396, value).apply()
+
+    var v396botAutoReply396: Boolean
+        get() = prefs.getBoolean(KEY_V396BOTAUTOREPLY396, false)
+        set(value) = prefs.edit().putBoolean(KEY_V396BOTAUTOREPLY396, value).apply()
+
+    var v396bubbleAnimation396: Boolean
+        get() = prefs.getBoolean(KEY_V396BUBBLEANIMATION396, false)
+        set(value) = prefs.edit().putBoolean(KEY_V396BUBBLEANIMATION396, value).apply()
+
+    var v396bufferPrefetchSize396: Int
+        get() = prefs.getInt(KEY_V396BUFFERPREFETCHSIZE396, 0)
+        set(value) = prefs.edit().putInt(KEY_V396BUFFERPREFETCHSIZE396, value).apply()
+
+    var v396calendarSyncEnabled396: Boolean
+        get() = prefs.getBoolean(KEY_V396CALENDARSYNCENABLED396, false)
+        set(value) = prefs.edit().putBoolean(KEY_V396CALENDARSYNCENABLED396, value).apply()
+
+    var v396cardLayoutStyle396: Int
+        get() = prefs.getInt(KEY_V396CARDLAYOUTSTYLE396, 0)
+        set(value) = prefs.edit().putInt(KEY_V396CARDLAYOUTSTYLE396, value).apply()
+
+    var v396chatAutoScroll396: Boolean
+        get() = prefs.getBoolean(KEY_V396CHATAUTOSCROLL396, false)
+        set(value) = prefs.edit().putBoolean(KEY_V396CHATAUTOSCROLL396, value).apply()
+
+    var v397aiAutoTagGenerate397: Boolean
+        get() = prefs.getBoolean(KEY_V397AIAUTOTAGGENERATE397, false)
+        set(value) = prefs.edit().putBoolean(KEY_V397AIAUTOTAGGENERATE397, value).apply()
+
+    var v397aiSmartRecommend397: Boolean
+        get() = prefs.getBoolean(KEY_V397AISMARTRECOMMEND397, false)
+        set(value) = prefs.edit().putBoolean(KEY_V397AISMARTRECOMMEND397, value).apply()
+
+    var v397aiContentAnalysis397: Int
+        get() = prefs.getInt(KEY_V397AICONTENTANALYSIS397, 0)
+        set(value) = prefs.edit().putInt(KEY_V397AICONTENTANALYSIS397, value).apply()
+
+    var v397bannerAutoRotate397: Boolean
+        get() = prefs.getBoolean(KEY_V397BANNERAUTOROTATE397, false)
+        set(value) = prefs.edit().putBoolean(KEY_V397BANNERAUTOROTATE397, value).apply()
+
+    var v397bannerPosition397: Int
+        get() = prefs.getInt(KEY_V397BANNERPOSITION397, 0)
+        set(value) = prefs.edit().putInt(KEY_V397BANNERPOSITION397, value).apply()
+
+    var v397batchDownloadLimit397: Int
+        get() = prefs.getInt(KEY_V397BATCHDOWNLOADLIMIT397, 0)
+        set(value) = prefs.edit().putInt(KEY_V397BATCHDOWNLOADLIMIT397, value).apply()
+
+    var v397batchOperationConfirm397: Boolean
+        get() = prefs.getBoolean(KEY_V397BATCHOPERATIONCONFIRM397, false)
+        set(value) = prefs.edit().putBoolean(KEY_V397BATCHOPERATIONCONFIRM397, value).apply()
+
+    var v397blockAutoHide397: Boolean
+        get() = prefs.getBoolean(KEY_V397BLOCKAUTOHIDE397, false)
+        set(value) = prefs.edit().putBoolean(KEY_V397BLOCKAUTOHIDE397, value).apply()
+
+    var v397boostModeEnabled397: Boolean
+        get() = prefs.getBoolean(KEY_V397BOOSTMODEENABLED397, false)
+        set(value) = prefs.edit().putBoolean(KEY_V397BOOSTMODEENABLED397, value).apply()
+
+    var v397botAutoReply397: Boolean
+        get() = prefs.getBoolean(KEY_V397BOTAUTOREPLY397, false)
+        set(value) = prefs.edit().putBoolean(KEY_V397BOTAUTOREPLY397, value).apply()
+
+    var v397bubbleAnimation397: Boolean
+        get() = prefs.getBoolean(KEY_V397BUBBLEANIMATION397, false)
+        set(value) = prefs.edit().putBoolean(KEY_V397BUBBLEANIMATION397, value).apply()
+
+    var v397bufferPrefetchSize397: Int
+        get() = prefs.getInt(KEY_V397BUFFERPREFETCHSIZE397, 0)
+        set(value) = prefs.edit().putInt(KEY_V397BUFFERPREFETCHSIZE397, value).apply()
+
+    var v397calendarSyncEnabled397: Boolean
+        get() = prefs.getBoolean(KEY_V397CALENDARSYNCENABLED397, false)
+        set(value) = prefs.edit().putBoolean(KEY_V397CALENDARSYNCENABLED397, value).apply()
+
+    var v397cardLayoutStyle397: Int
+        get() = prefs.getInt(KEY_V397CARDLAYOUTSTYLE397, 0)
+        set(value) = prefs.edit().putInt(KEY_V397CARDLAYOUTSTYLE397, value).apply()
+
+    var v397chatAutoScroll397: Boolean
+        get() = prefs.getBoolean(KEY_V397CHATAUTOSCROLL397, false)
+        set(value) = prefs.edit().putBoolean(KEY_V397CHATAUTOSCROLL397, value).apply()
+
+    var v398aiAutoTagGenerate398: Boolean
+        get() = prefs.getBoolean(KEY_V398AIAUTOTAGGENERATE398, false)
+        set(value) = prefs.edit().putBoolean(KEY_V398AIAUTOTAGGENERATE398, value).apply()
+
+    var v398aiSmartRecommend398: Boolean
+        get() = prefs.getBoolean(KEY_V398AISMARTRECOMMEND398, false)
+        set(value) = prefs.edit().putBoolean(KEY_V398AISMARTRECOMMEND398, value).apply()
+
+    var v398aiContentAnalysis398: Int
+        get() = prefs.getInt(KEY_V398AICONTENTANALYSIS398, 0)
+        set(value) = prefs.edit().putInt(KEY_V398AICONTENTANALYSIS398, value).apply()
+
+    var v398bannerAutoRotate398: Boolean
+        get() = prefs.getBoolean(KEY_V398BANNERAUTOROTATE398, false)
+        set(value) = prefs.edit().putBoolean(KEY_V398BANNERAUTOROTATE398, value).apply()
+
+    var v398bannerPosition398: Int
+        get() = prefs.getInt(KEY_V398BANNERPOSITION398, 0)
+        set(value) = prefs.edit().putInt(KEY_V398BANNERPOSITION398, value).apply()
+
+    var v398batchDownloadLimit398: Int
+        get() = prefs.getInt(KEY_V398BATCHDOWNLOADLIMIT398, 0)
+        set(value) = prefs.edit().putInt(KEY_V398BATCHDOWNLOADLIMIT398, value).apply()
+
+    var v398batchOperationConfirm398: Boolean
+        get() = prefs.getBoolean(KEY_V398BATCHOPERATIONCONFIRM398, false)
+        set(value) = prefs.edit().putBoolean(KEY_V398BATCHOPERATIONCONFIRM398, value).apply()
+
+    var v398blockAutoHide398: Boolean
+        get() = prefs.getBoolean(KEY_V398BLOCKAUTOHIDE398, false)
+        set(value) = prefs.edit().putBoolean(KEY_V398BLOCKAUTOHIDE398, value).apply()
+
+    var v398boostModeEnabled398: Boolean
+        get() = prefs.getBoolean(KEY_V398BOOSTMODEENABLED398, false)
+        set(value) = prefs.edit().putBoolean(KEY_V398BOOSTMODEENABLED398, value).apply()
+
+    var v398botAutoReply398: Boolean
+        get() = prefs.getBoolean(KEY_V398BOTAUTOREPLY398, false)
+        set(value) = prefs.edit().putBoolean(KEY_V398BOTAUTOREPLY398, value).apply()
+
+    var v398bubbleAnimation398: Boolean
+        get() = prefs.getBoolean(KEY_V398BUBBLEANIMATION398, false)
+        set(value) = prefs.edit().putBoolean(KEY_V398BUBBLEANIMATION398, value).apply()
+
+    var v398bufferPrefetchSize398: Int
+        get() = prefs.getInt(KEY_V398BUFFERPREFETCHSIZE398, 0)
+        set(value) = prefs.edit().putInt(KEY_V398BUFFERPREFETCHSIZE398, value).apply()
+
+    var v398calendarSyncEnabled398: Boolean
+        get() = prefs.getBoolean(KEY_V398CALENDARSYNCENABLED398, false)
+        set(value) = prefs.edit().putBoolean(KEY_V398CALENDARSYNCENABLED398, value).apply()
+
+    var v398cardLayoutStyle398: Int
+        get() = prefs.getInt(KEY_V398CARDLAYOUTSTYLE398, 0)
+        set(value) = prefs.edit().putInt(KEY_V398CARDLAYOUTSTYLE398, value).apply()
+
+    var v398chatAutoScroll398: Boolean
+        get() = prefs.getBoolean(KEY_V398CHATAUTOSCROLL398, false)
+        set(value) = prefs.edit().putBoolean(KEY_V398CHATAUTOSCROLL398, value).apply()
+
+    var v399aiAutoTagGenerate399: Boolean
+        get() = prefs.getBoolean(KEY_V399AIAUTOTAGGENERATE399, false)
+        set(value) = prefs.edit().putBoolean(KEY_V399AIAUTOTAGGENERATE399, value).apply()
+
+    var v399aiSmartRecommend399: Boolean
+        get() = prefs.getBoolean(KEY_V399AISMARTRECOMMEND399, false)
+        set(value) = prefs.edit().putBoolean(KEY_V399AISMARTRECOMMEND399, value).apply()
+
+    var v399aiContentAnalysis399: Int
+        get() = prefs.getInt(KEY_V399AICONTENTANALYSIS399, 0)
+        set(value) = prefs.edit().putInt(KEY_V399AICONTENTANALYSIS399, value).apply()
+
+    var v399bannerAutoRotate399: Boolean
+        get() = prefs.getBoolean(KEY_V399BANNERAUTOROTATE399, false)
+        set(value) = prefs.edit().putBoolean(KEY_V399BANNERAUTOROTATE399, value).apply()
+
+    var v399bannerPosition399: Int
+        get() = prefs.getInt(KEY_V399BANNERPOSITION399, 0)
+        set(value) = prefs.edit().putInt(KEY_V399BANNERPOSITION399, value).apply()
+
+    var v399batchDownloadLimit399: Int
+        get() = prefs.getInt(KEY_V399BATCHDOWNLOADLIMIT399, 0)
+        set(value) = prefs.edit().putInt(KEY_V399BATCHDOWNLOADLIMIT399, value).apply()
+
+    var v399batchOperationConfirm399: Boolean
+        get() = prefs.getBoolean(KEY_V399BATCHOPERATIONCONFIRM399, false)
+        set(value) = prefs.edit().putBoolean(KEY_V399BATCHOPERATIONCONFIRM399, value).apply()
+
+    var v399blockAutoHide399: Boolean
+        get() = prefs.getBoolean(KEY_V399BLOCKAUTOHIDE399, false)
+        set(value) = prefs.edit().putBoolean(KEY_V399BLOCKAUTOHIDE399, value).apply()
+
+    var v399boostModeEnabled399: Boolean
+        get() = prefs.getBoolean(KEY_V399BOOSTMODEENABLED399, false)
+        set(value) = prefs.edit().putBoolean(KEY_V399BOOSTMODEENABLED399, value).apply()
+
+    var v399botAutoReply399: Boolean
+        get() = prefs.getBoolean(KEY_V399BOTAUTOREPLY399, false)
+        set(value) = prefs.edit().putBoolean(KEY_V399BOTAUTOREPLY399, value).apply()
+
+    var v399bubbleAnimation399: Boolean
+        get() = prefs.getBoolean(KEY_V399BUBBLEANIMATION399, false)
+        set(value) = prefs.edit().putBoolean(KEY_V399BUBBLEANIMATION399, value).apply()
+
+    var v399bufferPrefetchSize399: Int
+        get() = prefs.getInt(KEY_V399BUFFERPREFETCHSIZE399, 0)
+        set(value) = prefs.edit().putInt(KEY_V399BUFFERPREFETCHSIZE399, value).apply()
+
+    var v399calendarSyncEnabled399: Boolean
+        get() = prefs.getBoolean(KEY_V399CALENDARSYNCENABLED399, false)
+        set(value) = prefs.edit().putBoolean(KEY_V399CALENDARSYNCENABLED399, value).apply()
+
+    var v399cardLayoutStyle399: Int
+        get() = prefs.getInt(KEY_V399CARDLAYOUTSTYLE399, 0)
+        set(value) = prefs.edit().putInt(KEY_V399CARDLAYOUTSTYLE399, value).apply()
+
+    var v399chatAutoScroll399: Boolean
+        get() = prefs.getBoolean(KEY_V399CHATAUTOSCROLL399, false)
+        set(value) = prefs.edit().putBoolean(KEY_V399CHATAUTOSCROLL399, value).apply()
+
+    var v400aiAutoTagGenerate400: Boolean
+        get() = prefs.getBoolean(KEY_V400AIAUTOTAGGENERATE400, false)
+        set(value) = prefs.edit().putBoolean(KEY_V400AIAUTOTAGGENERATE400, value).apply()
+
+    var v400aiSmartRecommend400: Boolean
+        get() = prefs.getBoolean(KEY_V400AISMARTRECOMMEND400, false)
+        set(value) = prefs.edit().putBoolean(KEY_V400AISMARTRECOMMEND400, value).apply()
+
+    var v400aiContentAnalysis400: Int
+        get() = prefs.getInt(KEY_V400AICONTENTANALYSIS400, 0)
+        set(value) = prefs.edit().putInt(KEY_V400AICONTENTANALYSIS400, value).apply()
+
+    var v400bannerAutoRotate400: Boolean
+        get() = prefs.getBoolean(KEY_V400BANNERAUTOROTATE400, false)
+        set(value) = prefs.edit().putBoolean(KEY_V400BANNERAUTOROTATE400, value).apply()
+
+    var v400bannerPosition400: Int
+        get() = prefs.getInt(KEY_V400BANNERPOSITION400, 0)
+        set(value) = prefs.edit().putInt(KEY_V400BANNERPOSITION400, value).apply()
+
+    var v400batchDownloadLimit400: Int
+        get() = prefs.getInt(KEY_V400BATCHDOWNLOADLIMIT400, 0)
+        set(value) = prefs.edit().putInt(KEY_V400BATCHDOWNLOADLIMIT400, value).apply()
+
+    var v400batchOperationConfirm400: Boolean
+        get() = prefs.getBoolean(KEY_V400BATCHOPERATIONCONFIRM400, false)
+        set(value) = prefs.edit().putBoolean(KEY_V400BATCHOPERATIONCONFIRM400, value).apply()
+
+    var v400blockAutoHide400: Boolean
+        get() = prefs.getBoolean(KEY_V400BLOCKAUTOHIDE400, false)
+        set(value) = prefs.edit().putBoolean(KEY_V400BLOCKAUTOHIDE400, value).apply()
+
+    var v400boostModeEnabled400: Boolean
+        get() = prefs.getBoolean(KEY_V400BOOSTMODEENABLED400, false)
+        set(value) = prefs.edit().putBoolean(KEY_V400BOOSTMODEENABLED400, value).apply()
+
+    var v400botAutoReply400: Boolean
+        get() = prefs.getBoolean(KEY_V400BOTAUTOREPLY400, false)
+        set(value) = prefs.edit().putBoolean(KEY_V400BOTAUTOREPLY400, value).apply()
+
+    var v400bubbleAnimation400: Boolean
+        get() = prefs.getBoolean(KEY_V400BUBBLEANIMATION400, false)
+        set(value) = prefs.edit().putBoolean(KEY_V400BUBBLEANIMATION400, value).apply()
+
+    var v400bufferPrefetchSize400: Int
+        get() = prefs.getInt(KEY_V400BUFFERPREFETCHSIZE400, 0)
+        set(value) = prefs.edit().putInt(KEY_V400BUFFERPREFETCHSIZE400, value).apply()
+
+    var v400calendarSyncEnabled400: Boolean
+        get() = prefs.getBoolean(KEY_V400CALENDARSYNCENABLED400, false)
+        set(value) = prefs.edit().putBoolean(KEY_V400CALENDARSYNCENABLED400, value).apply()
+
+    var v400cardLayoutStyle400: Int
+        get() = prefs.getInt(KEY_V400CARDLAYOUTSTYLE400, 0)
+        set(value) = prefs.edit().putInt(KEY_V400CARDLAYOUTSTYLE400, value).apply()
+
+    var v400chatAutoScroll400: Boolean
+        get() = prefs.getBoolean(KEY_V400CHATAUTOSCROLL400, false)
+        set(value) = prefs.edit().putBoolean(KEY_V400CHATAUTOSCROLL400, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -38680,5 +39280,155 @@ class AppPrefs(context: Context) {
         const val KEY_V390RECORDAUTOSAVE390 = "v390recordAutoSave390" // v390 Record Auto Save390
         const val KEY_V390IMAGEENHANCESHARP390 = "v390imageEnhanceSharp390" // v390 Image Enhance Sharp390
         const val KEY_V390IMAGEENHANCEDENOISE390 = "v390imageEnhanceDenoise390" // v390 Image Enhance Denoise390
+        const val KEY_V391AIAUTOTAGGENERATE391 = "v391aiAutoTagGenerate391" // v391 AI Auto Tag Generate391
+        const val KEY_V391AISMARTRECOMMEND391 = "v391aiSmartRecommend391" // v391 AI Smart Recommend391
+        const val KEY_V391AICONTENTANALYSIS391 = "v391aiContentAnalysis391" // v391 AI Content Analysis391
+        const val KEY_V391BANNERAUTOROTATE391 = "v391bannerAutoRotate391" // v391 Banner Auto Rotate391
+        const val KEY_V391BANNERPOSITION391 = "v391bannerPosition391" // v391 Banner Position391
+        const val KEY_V391BATCHDOWNLOADLIMIT391 = "v391batchDownloadLimit391" // v391 Batch Download Limit391
+        const val KEY_V391BATCHOPERATIONCONFIRM391 = "v391batchOperationConfirm391" // v391 Batch Operation Confirm391
+        const val KEY_V391BLOCKAUTOHIDE391 = "v391blockAutoHide391" // v391 Block Auto Hide391
+        const val KEY_V391BOOSTMODEENABLED391 = "v391boostModeEnabled391" // v391 Boost Mode Enabled391
+        const val KEY_V391BOTAUTOREPLY391 = "v391botAutoReply391" // v391 Bot Auto Reply391
+        const val KEY_V391BUBBLEANIMATION391 = "v391bubbleAnimation391" // v391 Bubble Animation391
+        const val KEY_V391BUFFERPREFETCHSIZE391 = "v391bufferPrefetchSize391" // v391 Buffer Prefetch Size391
+        const val KEY_V391CALENDARSYNCENABLED391 = "v391calendarSyncEnabled391" // v391 Calendar Sync Enabled391
+        const val KEY_V391CARDLAYOUTSTYLE391 = "v391cardLayoutStyle391" // v391 Card Layout Style391
+        const val KEY_V391CHATAUTOSCROLL391 = "v391chatAutoScroll391" // v391 Chat Auto Scroll391
+        const val KEY_V392AIAUTOTAGGENERATE392 = "v392aiAutoTagGenerate392" // v392 AI Auto Tag Generate392
+        const val KEY_V392AISMARTRECOMMEND392 = "v392aiSmartRecommend392" // v392 AI Smart Recommend392
+        const val KEY_V392AICONTENTANALYSIS392 = "v392aiContentAnalysis392" // v392 AI Content Analysis392
+        const val KEY_V392BANNERAUTOROTATE392 = "v392bannerAutoRotate392" // v392 Banner Auto Rotate392
+        const val KEY_V392BANNERPOSITION392 = "v392bannerPosition392" // v392 Banner Position392
+        const val KEY_V392BATCHDOWNLOADLIMIT392 = "v392batchDownloadLimit392" // v392 Batch Download Limit392
+        const val KEY_V392BATCHOPERATIONCONFIRM392 = "v392batchOperationConfirm392" // v392 Batch Operation Confirm392
+        const val KEY_V392BLOCKAUTOHIDE392 = "v392blockAutoHide392" // v392 Block Auto Hide392
+        const val KEY_V392BOOSTMODEENABLED392 = "v392boostModeEnabled392" // v392 Boost Mode Enabled392
+        const val KEY_V392BOTAUTOREPLY392 = "v392botAutoReply392" // v392 Bot Auto Reply392
+        const val KEY_V392BUBBLEANIMATION392 = "v392bubbleAnimation392" // v392 Bubble Animation392
+        const val KEY_V392BUFFERPREFETCHSIZE392 = "v392bufferPrefetchSize392" // v392 Buffer Prefetch Size392
+        const val KEY_V392CALENDARSYNCENABLED392 = "v392calendarSyncEnabled392" // v392 Calendar Sync Enabled392
+        const val KEY_V392CARDLAYOUTSTYLE392 = "v392cardLayoutStyle392" // v392 Card Layout Style392
+        const val KEY_V392CHATAUTOSCROLL392 = "v392chatAutoScroll392" // v392 Chat Auto Scroll392
+        const val KEY_V393AIAUTOTAGGENERATE393 = "v393aiAutoTagGenerate393" // v393 AI Auto Tag Generate393
+        const val KEY_V393AISMARTRECOMMEND393 = "v393aiSmartRecommend393" // v393 AI Smart Recommend393
+        const val KEY_V393AICONTENTANALYSIS393 = "v393aiContentAnalysis393" // v393 AI Content Analysis393
+        const val KEY_V393BANNERAUTOROTATE393 = "v393bannerAutoRotate393" // v393 Banner Auto Rotate393
+        const val KEY_V393BANNERPOSITION393 = "v393bannerPosition393" // v393 Banner Position393
+        const val KEY_V393BATCHDOWNLOADLIMIT393 = "v393batchDownloadLimit393" // v393 Batch Download Limit393
+        const val KEY_V393BATCHOPERATIONCONFIRM393 = "v393batchOperationConfirm393" // v393 Batch Operation Confirm393
+        const val KEY_V393BLOCKAUTOHIDE393 = "v393blockAutoHide393" // v393 Block Auto Hide393
+        const val KEY_V393BOOSTMODEENABLED393 = "v393boostModeEnabled393" // v393 Boost Mode Enabled393
+        const val KEY_V393BOTAUTOREPLY393 = "v393botAutoReply393" // v393 Bot Auto Reply393
+        const val KEY_V393BUBBLEANIMATION393 = "v393bubbleAnimation393" // v393 Bubble Animation393
+        const val KEY_V393BUFFERPREFETCHSIZE393 = "v393bufferPrefetchSize393" // v393 Buffer Prefetch Size393
+        const val KEY_V393CALENDARSYNCENABLED393 = "v393calendarSyncEnabled393" // v393 Calendar Sync Enabled393
+        const val KEY_V393CARDLAYOUTSTYLE393 = "v393cardLayoutStyle393" // v393 Card Layout Style393
+        const val KEY_V393CHATAUTOSCROLL393 = "v393chatAutoScroll393" // v393 Chat Auto Scroll393
+        const val KEY_V394AIAUTOTAGGENERATE394 = "v394aiAutoTagGenerate394" // v394 AI Auto Tag Generate394
+        const val KEY_V394AISMARTRECOMMEND394 = "v394aiSmartRecommend394" // v394 AI Smart Recommend394
+        const val KEY_V394AICONTENTANALYSIS394 = "v394aiContentAnalysis394" // v394 AI Content Analysis394
+        const val KEY_V394BANNERAUTOROTATE394 = "v394bannerAutoRotate394" // v394 Banner Auto Rotate394
+        const val KEY_V394BANNERPOSITION394 = "v394bannerPosition394" // v394 Banner Position394
+        const val KEY_V394BATCHDOWNLOADLIMIT394 = "v394batchDownloadLimit394" // v394 Batch Download Limit394
+        const val KEY_V394BATCHOPERATIONCONFIRM394 = "v394batchOperationConfirm394" // v394 Batch Operation Confirm394
+        const val KEY_V394BLOCKAUTOHIDE394 = "v394blockAutoHide394" // v394 Block Auto Hide394
+        const val KEY_V394BOOSTMODEENABLED394 = "v394boostModeEnabled394" // v394 Boost Mode Enabled394
+        const val KEY_V394BOTAUTOREPLY394 = "v394botAutoReply394" // v394 Bot Auto Reply394
+        const val KEY_V394BUBBLEANIMATION394 = "v394bubbleAnimation394" // v394 Bubble Animation394
+        const val KEY_V394BUFFERPREFETCHSIZE394 = "v394bufferPrefetchSize394" // v394 Buffer Prefetch Size394
+        const val KEY_V394CALENDARSYNCENABLED394 = "v394calendarSyncEnabled394" // v394 Calendar Sync Enabled394
+        const val KEY_V394CARDLAYOUTSTYLE394 = "v394cardLayoutStyle394" // v394 Card Layout Style394
+        const val KEY_V394CHATAUTOSCROLL394 = "v394chatAutoScroll394" // v394 Chat Auto Scroll394
+        const val KEY_V395AIAUTOTAGGENERATE395 = "v395aiAutoTagGenerate395" // v395 AI Auto Tag Generate395
+        const val KEY_V395AISMARTRECOMMEND395 = "v395aiSmartRecommend395" // v395 AI Smart Recommend395
+        const val KEY_V395AICONTENTANALYSIS395 = "v395aiContentAnalysis395" // v395 AI Content Analysis395
+        const val KEY_V395BANNERAUTOROTATE395 = "v395bannerAutoRotate395" // v395 Banner Auto Rotate395
+        const val KEY_V395BANNERPOSITION395 = "v395bannerPosition395" // v395 Banner Position395
+        const val KEY_V395BATCHDOWNLOADLIMIT395 = "v395batchDownloadLimit395" // v395 Batch Download Limit395
+        const val KEY_V395BATCHOPERATIONCONFIRM395 = "v395batchOperationConfirm395" // v395 Batch Operation Confirm395
+        const val KEY_V395BLOCKAUTOHIDE395 = "v395blockAutoHide395" // v395 Block Auto Hide395
+        const val KEY_V395BOOSTMODEENABLED395 = "v395boostModeEnabled395" // v395 Boost Mode Enabled395
+        const val KEY_V395BOTAUTOREPLY395 = "v395botAutoReply395" // v395 Bot Auto Reply395
+        const val KEY_V395BUBBLEANIMATION395 = "v395bubbleAnimation395" // v395 Bubble Animation395
+        const val KEY_V395BUFFERPREFETCHSIZE395 = "v395bufferPrefetchSize395" // v395 Buffer Prefetch Size395
+        const val KEY_V395CALENDARSYNCENABLED395 = "v395calendarSyncEnabled395" // v395 Calendar Sync Enabled395
+        const val KEY_V395CARDLAYOUTSTYLE395 = "v395cardLayoutStyle395" // v395 Card Layout Style395
+        const val KEY_V395CHATAUTOSCROLL395 = "v395chatAutoScroll395" // v395 Chat Auto Scroll395
+        const val KEY_V396AIAUTOTAGGENERATE396 = "v396aiAutoTagGenerate396" // v396 AI Auto Tag Generate396
+        const val KEY_V396AISMARTRECOMMEND396 = "v396aiSmartRecommend396" // v396 AI Smart Recommend396
+        const val KEY_V396AICONTENTANALYSIS396 = "v396aiContentAnalysis396" // v396 AI Content Analysis396
+        const val KEY_V396BANNERAUTOROTATE396 = "v396bannerAutoRotate396" // v396 Banner Auto Rotate396
+        const val KEY_V396BANNERPOSITION396 = "v396bannerPosition396" // v396 Banner Position396
+        const val KEY_V396BATCHDOWNLOADLIMIT396 = "v396batchDownloadLimit396" // v396 Batch Download Limit396
+        const val KEY_V396BATCHOPERATIONCONFIRM396 = "v396batchOperationConfirm396" // v396 Batch Operation Confirm396
+        const val KEY_V396BLOCKAUTOHIDE396 = "v396blockAutoHide396" // v396 Block Auto Hide396
+        const val KEY_V396BOOSTMODEENABLED396 = "v396boostModeEnabled396" // v396 Boost Mode Enabled396
+        const val KEY_V396BOTAUTOREPLY396 = "v396botAutoReply396" // v396 Bot Auto Reply396
+        const val KEY_V396BUBBLEANIMATION396 = "v396bubbleAnimation396" // v396 Bubble Animation396
+        const val KEY_V396BUFFERPREFETCHSIZE396 = "v396bufferPrefetchSize396" // v396 Buffer Prefetch Size396
+        const val KEY_V396CALENDARSYNCENABLED396 = "v396calendarSyncEnabled396" // v396 Calendar Sync Enabled396
+        const val KEY_V396CARDLAYOUTSTYLE396 = "v396cardLayoutStyle396" // v396 Card Layout Style396
+        const val KEY_V396CHATAUTOSCROLL396 = "v396chatAutoScroll396" // v396 Chat Auto Scroll396
+        const val KEY_V397AIAUTOTAGGENERATE397 = "v397aiAutoTagGenerate397" // v397 AI Auto Tag Generate397
+        const val KEY_V397AISMARTRECOMMEND397 = "v397aiSmartRecommend397" // v397 AI Smart Recommend397
+        const val KEY_V397AICONTENTANALYSIS397 = "v397aiContentAnalysis397" // v397 AI Content Analysis397
+        const val KEY_V397BANNERAUTOROTATE397 = "v397bannerAutoRotate397" // v397 Banner Auto Rotate397
+        const val KEY_V397BANNERPOSITION397 = "v397bannerPosition397" // v397 Banner Position397
+        const val KEY_V397BATCHDOWNLOADLIMIT397 = "v397batchDownloadLimit397" // v397 Batch Download Limit397
+        const val KEY_V397BATCHOPERATIONCONFIRM397 = "v397batchOperationConfirm397" // v397 Batch Operation Confirm397
+        const val KEY_V397BLOCKAUTOHIDE397 = "v397blockAutoHide397" // v397 Block Auto Hide397
+        const val KEY_V397BOOSTMODEENABLED397 = "v397boostModeEnabled397" // v397 Boost Mode Enabled397
+        const val KEY_V397BOTAUTOREPLY397 = "v397botAutoReply397" // v397 Bot Auto Reply397
+        const val KEY_V397BUBBLEANIMATION397 = "v397bubbleAnimation397" // v397 Bubble Animation397
+        const val KEY_V397BUFFERPREFETCHSIZE397 = "v397bufferPrefetchSize397" // v397 Buffer Prefetch Size397
+        const val KEY_V397CALENDARSYNCENABLED397 = "v397calendarSyncEnabled397" // v397 Calendar Sync Enabled397
+        const val KEY_V397CARDLAYOUTSTYLE397 = "v397cardLayoutStyle397" // v397 Card Layout Style397
+        const val KEY_V397CHATAUTOSCROLL397 = "v397chatAutoScroll397" // v397 Chat Auto Scroll397
+        const val KEY_V398AIAUTOTAGGENERATE398 = "v398aiAutoTagGenerate398" // v398 AI Auto Tag Generate398
+        const val KEY_V398AISMARTRECOMMEND398 = "v398aiSmartRecommend398" // v398 AI Smart Recommend398
+        const val KEY_V398AICONTENTANALYSIS398 = "v398aiContentAnalysis398" // v398 AI Content Analysis398
+        const val KEY_V398BANNERAUTOROTATE398 = "v398bannerAutoRotate398" // v398 Banner Auto Rotate398
+        const val KEY_V398BANNERPOSITION398 = "v398bannerPosition398" // v398 Banner Position398
+        const val KEY_V398BATCHDOWNLOADLIMIT398 = "v398batchDownloadLimit398" // v398 Batch Download Limit398
+        const val KEY_V398BATCHOPERATIONCONFIRM398 = "v398batchOperationConfirm398" // v398 Batch Operation Confirm398
+        const val KEY_V398BLOCKAUTOHIDE398 = "v398blockAutoHide398" // v398 Block Auto Hide398
+        const val KEY_V398BOOSTMODEENABLED398 = "v398boostModeEnabled398" // v398 Boost Mode Enabled398
+        const val KEY_V398BOTAUTOREPLY398 = "v398botAutoReply398" // v398 Bot Auto Reply398
+        const val KEY_V398BUBBLEANIMATION398 = "v398bubbleAnimation398" // v398 Bubble Animation398
+        const val KEY_V398BUFFERPREFETCHSIZE398 = "v398bufferPrefetchSize398" // v398 Buffer Prefetch Size398
+        const val KEY_V398CALENDARSYNCENABLED398 = "v398calendarSyncEnabled398" // v398 Calendar Sync Enabled398
+        const val KEY_V398CARDLAYOUTSTYLE398 = "v398cardLayoutStyle398" // v398 Card Layout Style398
+        const val KEY_V398CHATAUTOSCROLL398 = "v398chatAutoScroll398" // v398 Chat Auto Scroll398
+        const val KEY_V399AIAUTOTAGGENERATE399 = "v399aiAutoTagGenerate399" // v399 AI Auto Tag Generate399
+        const val KEY_V399AISMARTRECOMMEND399 = "v399aiSmartRecommend399" // v399 AI Smart Recommend399
+        const val KEY_V399AICONTENTANALYSIS399 = "v399aiContentAnalysis399" // v399 AI Content Analysis399
+        const val KEY_V399BANNERAUTOROTATE399 = "v399bannerAutoRotate399" // v399 Banner Auto Rotate399
+        const val KEY_V399BANNERPOSITION399 = "v399bannerPosition399" // v399 Banner Position399
+        const val KEY_V399BATCHDOWNLOADLIMIT399 = "v399batchDownloadLimit399" // v399 Batch Download Limit399
+        const val KEY_V399BATCHOPERATIONCONFIRM399 = "v399batchOperationConfirm399" // v399 Batch Operation Confirm399
+        const val KEY_V399BLOCKAUTOHIDE399 = "v399blockAutoHide399" // v399 Block Auto Hide399
+        const val KEY_V399BOOSTMODEENABLED399 = "v399boostModeEnabled399" // v399 Boost Mode Enabled399
+        const val KEY_V399BOTAUTOREPLY399 = "v399botAutoReply399" // v399 Bot Auto Reply399
+        const val KEY_V399BUBBLEANIMATION399 = "v399bubbleAnimation399" // v399 Bubble Animation399
+        const val KEY_V399BUFFERPREFETCHSIZE399 = "v399bufferPrefetchSize399" // v399 Buffer Prefetch Size399
+        const val KEY_V399CALENDARSYNCENABLED399 = "v399calendarSyncEnabled399" // v399 Calendar Sync Enabled399
+        const val KEY_V399CARDLAYOUTSTYLE399 = "v399cardLayoutStyle399" // v399 Card Layout Style399
+        const val KEY_V399CHATAUTOSCROLL399 = "v399chatAutoScroll399" // v399 Chat Auto Scroll399
+        const val KEY_V400AIAUTOTAGGENERATE400 = "v400aiAutoTagGenerate400" // v400 AI Auto Tag Generate400
+        const val KEY_V400AISMARTRECOMMEND400 = "v400aiSmartRecommend400" // v400 AI Smart Recommend400
+        const val KEY_V400AICONTENTANALYSIS400 = "v400aiContentAnalysis400" // v400 AI Content Analysis400
+        const val KEY_V400BANNERAUTOROTATE400 = "v400bannerAutoRotate400" // v400 Banner Auto Rotate400
+        const val KEY_V400BANNERPOSITION400 = "v400bannerPosition400" // v400 Banner Position400
+        const val KEY_V400BATCHDOWNLOADLIMIT400 = "v400batchDownloadLimit400" // v400 Batch Download Limit400
+        const val KEY_V400BATCHOPERATIONCONFIRM400 = "v400batchOperationConfirm400" // v400 Batch Operation Confirm400
+        const val KEY_V400BLOCKAUTOHIDE400 = "v400blockAutoHide400" // v400 Block Auto Hide400
+        const val KEY_V400BOOSTMODEENABLED400 = "v400boostModeEnabled400" // v400 Boost Mode Enabled400
+        const val KEY_V400BOTAUTOREPLY400 = "v400botAutoReply400" // v400 Bot Auto Reply400
+        const val KEY_V400BUBBLEANIMATION400 = "v400bubbleAnimation400" // v400 Bubble Animation400
+        const val KEY_V400BUFFERPREFETCHSIZE400 = "v400bufferPrefetchSize400" // v400 Buffer Prefetch Size400
+        const val KEY_V400CALENDARSYNCENABLED400 = "v400calendarSyncEnabled400" // v400 Calendar Sync Enabled400
+        const val KEY_V400CARDLAYOUTSTYLE400 = "v400cardLayoutStyle400" // v400 Card Layout Style400
+        const val KEY_V400CHATAUTOSCROLL400 = "v400chatAutoScroll400" // v400 Chat Auto Scroll400
     }
 }

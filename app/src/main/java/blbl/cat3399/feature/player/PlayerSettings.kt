@@ -63865,3 +63865,1453 @@ internal fun PlayerActivity.showV390ImageEnhanceDenoise390Toggle() {
     AppToast.show(this, "Image Enhance Denoise390: ${if (!current) "ON" else "OFF"}")
 }
 
+// v391: AI Auto Tag Generate391
+internal fun PlayerActivity.showV391AiAutoTagGenerate391Toggle() {
+    val current = BiliClient.prefs.v391aiAutoTagGenerate391
+    BiliClient.prefs.v391aiAutoTagGenerate391 = !current
+    AppToast.show(this, "AI Auto Tag Generate391: ${if (!current) "ON" else "OFF"}")
+}
+
+// v391: AI Smart Recommend391
+internal fun PlayerActivity.showV391AiSmartRecommend391Toggle() {
+    val current = BiliClient.prefs.v391aiSmartRecommend391
+    BiliClient.prefs.v391aiSmartRecommend391 = !current
+    AppToast.show(this, "AI Smart Recommend391: ${if (!current) "ON" else "OFF"}")
+}
+
+// v391: AI Content Analysis391
+internal fun PlayerActivity.showV391AiContentAnalysis391Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v391aiContentAnalysis391).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "AI Content Analysis391",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v391aiContentAnalysis391 = value
+        AppToast.show(this, "AI Content Analysis391: $value")
+    }
+}
+
+// v391: Banner Auto Rotate391
+internal fun PlayerActivity.showV391BannerAutoRotate391Toggle() {
+    val current = BiliClient.prefs.v391bannerAutoRotate391
+    BiliClient.prefs.v391bannerAutoRotate391 = !current
+    AppToast.show(this, "Banner Auto Rotate391: ${if (!current) "ON" else "OFF"}")
+}
+
+// v391: Banner Position391
+internal fun PlayerActivity.showV391BannerPosition391Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v391bannerPosition391).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Banner Position391",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v391bannerPosition391 = value
+        AppToast.show(this, "Banner Position391: $value")
+    }
+}
+
+// v391: Batch Download Limit391
+internal fun PlayerActivity.showV391BatchDownloadLimit391Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v391batchDownloadLimit391).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Batch Download Limit391",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v391batchDownloadLimit391 = value
+        AppToast.show(this, "Batch Download Limit391: $value")
+    }
+}
+
+// v391: Batch Operation Confirm391
+internal fun PlayerActivity.showV391BatchOperationConfirm391Toggle() {
+    val current = BiliClient.prefs.v391batchOperationConfirm391
+    BiliClient.prefs.v391batchOperationConfirm391 = !current
+    AppToast.show(this, "Batch Operation Confirm391: ${if (!current) "ON" else "OFF"}")
+}
+
+// v391: Block Auto Hide391
+internal fun PlayerActivity.showV391BlockAutoHide391Toggle() {
+    val current = BiliClient.prefs.v391blockAutoHide391
+    BiliClient.prefs.v391blockAutoHide391 = !current
+    AppToast.show(this, "Block Auto Hide391: ${if (!current) "ON" else "OFF"}")
+}
+
+// v391: Boost Mode Enabled391
+internal fun PlayerActivity.showV391BoostModeEnabled391Toggle() {
+    val current = BiliClient.prefs.v391boostModeEnabled391
+    BiliClient.prefs.v391boostModeEnabled391 = !current
+    AppToast.show(this, "Boost Mode Enabled391: ${if (!current) "ON" else "OFF"}")
+}
+
+// v391: Bot Auto Reply391
+internal fun PlayerActivity.showV391BotAutoReply391Toggle() {
+    val current = BiliClient.prefs.v391botAutoReply391
+    BiliClient.prefs.v391botAutoReply391 = !current
+    AppToast.show(this, "Bot Auto Reply391: ${if (!current) "ON" else "OFF"}")
+}
+
+// v391: Bubble Animation391
+internal fun PlayerActivity.showV391BubbleAnimation391Toggle() {
+    val current = BiliClient.prefs.v391bubbleAnimation391
+    BiliClient.prefs.v391bubbleAnimation391 = !current
+    AppToast.show(this, "Bubble Animation391: ${if (!current) "ON" else "OFF"}")
+}
+
+// v391: Buffer Prefetch Size391
+internal fun PlayerActivity.showV391BufferPrefetchSize391Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v391bufferPrefetchSize391).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Buffer Prefetch Size391",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v391bufferPrefetchSize391 = value
+        AppToast.show(this, "Buffer Prefetch Size391: $value")
+    }
+}
+
+// v391: Calendar Sync Enabled391
+internal fun PlayerActivity.showV391CalendarSyncEnabled391Toggle() {
+    val current = BiliClient.prefs.v391calendarSyncEnabled391
+    BiliClient.prefs.v391calendarSyncEnabled391 = !current
+    AppToast.show(this, "Calendar Sync Enabled391: ${if (!current) "ON" else "OFF"}")
+}
+
+// v391: Card Layout Style391
+internal fun PlayerActivity.showV391CardLayoutStyle391Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v391cardLayoutStyle391).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Card Layout Style391",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v391cardLayoutStyle391 = value
+        AppToast.show(this, "Card Layout Style391: $value")
+    }
+}
+
+// v391: Chat Auto Scroll391
+internal fun PlayerActivity.showV391ChatAutoScroll391Toggle() {
+    val current = BiliClient.prefs.v391chatAutoScroll391
+    BiliClient.prefs.v391chatAutoScroll391 = !current
+    AppToast.show(this, "Chat Auto Scroll391: ${if (!current) "ON" else "OFF"}")
+}
+
+// v392: AI Auto Tag Generate392
+internal fun PlayerActivity.showV392AiAutoTagGenerate392Toggle() {
+    val current = BiliClient.prefs.v392aiAutoTagGenerate392
+    BiliClient.prefs.v392aiAutoTagGenerate392 = !current
+    AppToast.show(this, "AI Auto Tag Generate392: ${if (!current) "ON" else "OFF"}")
+}
+
+// v392: AI Smart Recommend392
+internal fun PlayerActivity.showV392AiSmartRecommend392Toggle() {
+    val current = BiliClient.prefs.v392aiSmartRecommend392
+    BiliClient.prefs.v392aiSmartRecommend392 = !current
+    AppToast.show(this, "AI Smart Recommend392: ${if (!current) "ON" else "OFF"}")
+}
+
+// v392: AI Content Analysis392
+internal fun PlayerActivity.showV392AiContentAnalysis392Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v392aiContentAnalysis392).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "AI Content Analysis392",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v392aiContentAnalysis392 = value
+        AppToast.show(this, "AI Content Analysis392: $value")
+    }
+}
+
+// v392: Banner Auto Rotate392
+internal fun PlayerActivity.showV392BannerAutoRotate392Toggle() {
+    val current = BiliClient.prefs.v392bannerAutoRotate392
+    BiliClient.prefs.v392bannerAutoRotate392 = !current
+    AppToast.show(this, "Banner Auto Rotate392: ${if (!current) "ON" else "OFF"}")
+}
+
+// v392: Banner Position392
+internal fun PlayerActivity.showV392BannerPosition392Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v392bannerPosition392).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Banner Position392",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v392bannerPosition392 = value
+        AppToast.show(this, "Banner Position392: $value")
+    }
+}
+
+// v392: Batch Download Limit392
+internal fun PlayerActivity.showV392BatchDownloadLimit392Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v392batchDownloadLimit392).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Batch Download Limit392",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v392batchDownloadLimit392 = value
+        AppToast.show(this, "Batch Download Limit392: $value")
+    }
+}
+
+// v392: Batch Operation Confirm392
+internal fun PlayerActivity.showV392BatchOperationConfirm392Toggle() {
+    val current = BiliClient.prefs.v392batchOperationConfirm392
+    BiliClient.prefs.v392batchOperationConfirm392 = !current
+    AppToast.show(this, "Batch Operation Confirm392: ${if (!current) "ON" else "OFF"}")
+}
+
+// v392: Block Auto Hide392
+internal fun PlayerActivity.showV392BlockAutoHide392Toggle() {
+    val current = BiliClient.prefs.v392blockAutoHide392
+    BiliClient.prefs.v392blockAutoHide392 = !current
+    AppToast.show(this, "Block Auto Hide392: ${if (!current) "ON" else "OFF"}")
+}
+
+// v392: Boost Mode Enabled392
+internal fun PlayerActivity.showV392BoostModeEnabled392Toggle() {
+    val current = BiliClient.prefs.v392boostModeEnabled392
+    BiliClient.prefs.v392boostModeEnabled392 = !current
+    AppToast.show(this, "Boost Mode Enabled392: ${if (!current) "ON" else "OFF"}")
+}
+
+// v392: Bot Auto Reply392
+internal fun PlayerActivity.showV392BotAutoReply392Toggle() {
+    val current = BiliClient.prefs.v392botAutoReply392
+    BiliClient.prefs.v392botAutoReply392 = !current
+    AppToast.show(this, "Bot Auto Reply392: ${if (!current) "ON" else "OFF"}")
+}
+
+// v392: Bubble Animation392
+internal fun PlayerActivity.showV392BubbleAnimation392Toggle() {
+    val current = BiliClient.prefs.v392bubbleAnimation392
+    BiliClient.prefs.v392bubbleAnimation392 = !current
+    AppToast.show(this, "Bubble Animation392: ${if (!current) "ON" else "OFF"}")
+}
+
+// v392: Buffer Prefetch Size392
+internal fun PlayerActivity.showV392BufferPrefetchSize392Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v392bufferPrefetchSize392).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Buffer Prefetch Size392",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v392bufferPrefetchSize392 = value
+        AppToast.show(this, "Buffer Prefetch Size392: $value")
+    }
+}
+
+// v392: Calendar Sync Enabled392
+internal fun PlayerActivity.showV392CalendarSyncEnabled392Toggle() {
+    val current = BiliClient.prefs.v392calendarSyncEnabled392
+    BiliClient.prefs.v392calendarSyncEnabled392 = !current
+    AppToast.show(this, "Calendar Sync Enabled392: ${if (!current) "ON" else "OFF"}")
+}
+
+// v392: Card Layout Style392
+internal fun PlayerActivity.showV392CardLayoutStyle392Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v392cardLayoutStyle392).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Card Layout Style392",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v392cardLayoutStyle392 = value
+        AppToast.show(this, "Card Layout Style392: $value")
+    }
+}
+
+// v392: Chat Auto Scroll392
+internal fun PlayerActivity.showV392ChatAutoScroll392Toggle() {
+    val current = BiliClient.prefs.v392chatAutoScroll392
+    BiliClient.prefs.v392chatAutoScroll392 = !current
+    AppToast.show(this, "Chat Auto Scroll392: ${if (!current) "ON" else "OFF"}")
+}
+
+// v393: AI Auto Tag Generate393
+internal fun PlayerActivity.showV393AiAutoTagGenerate393Toggle() {
+    val current = BiliClient.prefs.v393aiAutoTagGenerate393
+    BiliClient.prefs.v393aiAutoTagGenerate393 = !current
+    AppToast.show(this, "AI Auto Tag Generate393: ${if (!current) "ON" else "OFF"}")
+}
+
+// v393: AI Smart Recommend393
+internal fun PlayerActivity.showV393AiSmartRecommend393Toggle() {
+    val current = BiliClient.prefs.v393aiSmartRecommend393
+    BiliClient.prefs.v393aiSmartRecommend393 = !current
+    AppToast.show(this, "AI Smart Recommend393: ${if (!current) "ON" else "OFF"}")
+}
+
+// v393: AI Content Analysis393
+internal fun PlayerActivity.showV393AiContentAnalysis393Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v393aiContentAnalysis393).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "AI Content Analysis393",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v393aiContentAnalysis393 = value
+        AppToast.show(this, "AI Content Analysis393: $value")
+    }
+}
+
+// v393: Banner Auto Rotate393
+internal fun PlayerActivity.showV393BannerAutoRotate393Toggle() {
+    val current = BiliClient.prefs.v393bannerAutoRotate393
+    BiliClient.prefs.v393bannerAutoRotate393 = !current
+    AppToast.show(this, "Banner Auto Rotate393: ${if (!current) "ON" else "OFF"}")
+}
+
+// v393: Banner Position393
+internal fun PlayerActivity.showV393BannerPosition393Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v393bannerPosition393).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Banner Position393",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v393bannerPosition393 = value
+        AppToast.show(this, "Banner Position393: $value")
+    }
+}
+
+// v393: Batch Download Limit393
+internal fun PlayerActivity.showV393BatchDownloadLimit393Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v393batchDownloadLimit393).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Batch Download Limit393",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v393batchDownloadLimit393 = value
+        AppToast.show(this, "Batch Download Limit393: $value")
+    }
+}
+
+// v393: Batch Operation Confirm393
+internal fun PlayerActivity.showV393BatchOperationConfirm393Toggle() {
+    val current = BiliClient.prefs.v393batchOperationConfirm393
+    BiliClient.prefs.v393batchOperationConfirm393 = !current
+    AppToast.show(this, "Batch Operation Confirm393: ${if (!current) "ON" else "OFF"}")
+}
+
+// v393: Block Auto Hide393
+internal fun PlayerActivity.showV393BlockAutoHide393Toggle() {
+    val current = BiliClient.prefs.v393blockAutoHide393
+    BiliClient.prefs.v393blockAutoHide393 = !current
+    AppToast.show(this, "Block Auto Hide393: ${if (!current) "ON" else "OFF"}")
+}
+
+// v393: Boost Mode Enabled393
+internal fun PlayerActivity.showV393BoostModeEnabled393Toggle() {
+    val current = BiliClient.prefs.v393boostModeEnabled393
+    BiliClient.prefs.v393boostModeEnabled393 = !current
+    AppToast.show(this, "Boost Mode Enabled393: ${if (!current) "ON" else "OFF"}")
+}
+
+// v393: Bot Auto Reply393
+internal fun PlayerActivity.showV393BotAutoReply393Toggle() {
+    val current = BiliClient.prefs.v393botAutoReply393
+    BiliClient.prefs.v393botAutoReply393 = !current
+    AppToast.show(this, "Bot Auto Reply393: ${if (!current) "ON" else "OFF"}")
+}
+
+// v393: Bubble Animation393
+internal fun PlayerActivity.showV393BubbleAnimation393Toggle() {
+    val current = BiliClient.prefs.v393bubbleAnimation393
+    BiliClient.prefs.v393bubbleAnimation393 = !current
+    AppToast.show(this, "Bubble Animation393: ${if (!current) "ON" else "OFF"}")
+}
+
+// v393: Buffer Prefetch Size393
+internal fun PlayerActivity.showV393BufferPrefetchSize393Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v393bufferPrefetchSize393).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Buffer Prefetch Size393",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v393bufferPrefetchSize393 = value
+        AppToast.show(this, "Buffer Prefetch Size393: $value")
+    }
+}
+
+// v393: Calendar Sync Enabled393
+internal fun PlayerActivity.showV393CalendarSyncEnabled393Toggle() {
+    val current = BiliClient.prefs.v393calendarSyncEnabled393
+    BiliClient.prefs.v393calendarSyncEnabled393 = !current
+    AppToast.show(this, "Calendar Sync Enabled393: ${if (!current) "ON" else "OFF"}")
+}
+
+// v393: Card Layout Style393
+internal fun PlayerActivity.showV393CardLayoutStyle393Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v393cardLayoutStyle393).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Card Layout Style393",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v393cardLayoutStyle393 = value
+        AppToast.show(this, "Card Layout Style393: $value")
+    }
+}
+
+// v393: Chat Auto Scroll393
+internal fun PlayerActivity.showV393ChatAutoScroll393Toggle() {
+    val current = BiliClient.prefs.v393chatAutoScroll393
+    BiliClient.prefs.v393chatAutoScroll393 = !current
+    AppToast.show(this, "Chat Auto Scroll393: ${if (!current) "ON" else "OFF"}")
+}
+
+// v394: AI Auto Tag Generate394
+internal fun PlayerActivity.showV394AiAutoTagGenerate394Toggle() {
+    val current = BiliClient.prefs.v394aiAutoTagGenerate394
+    BiliClient.prefs.v394aiAutoTagGenerate394 = !current
+    AppToast.show(this, "AI Auto Tag Generate394: ${if (!current) "ON" else "OFF"}")
+}
+
+// v394: AI Smart Recommend394
+internal fun PlayerActivity.showV394AiSmartRecommend394Toggle() {
+    val current = BiliClient.prefs.v394aiSmartRecommend394
+    BiliClient.prefs.v394aiSmartRecommend394 = !current
+    AppToast.show(this, "AI Smart Recommend394: ${if (!current) "ON" else "OFF"}")
+}
+
+// v394: AI Content Analysis394
+internal fun PlayerActivity.showV394AiContentAnalysis394Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v394aiContentAnalysis394).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "AI Content Analysis394",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v394aiContentAnalysis394 = value
+        AppToast.show(this, "AI Content Analysis394: $value")
+    }
+}
+
+// v394: Banner Auto Rotate394
+internal fun PlayerActivity.showV394BannerAutoRotate394Toggle() {
+    val current = BiliClient.prefs.v394bannerAutoRotate394
+    BiliClient.prefs.v394bannerAutoRotate394 = !current
+    AppToast.show(this, "Banner Auto Rotate394: ${if (!current) "ON" else "OFF"}")
+}
+
+// v394: Banner Position394
+internal fun PlayerActivity.showV394BannerPosition394Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v394bannerPosition394).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Banner Position394",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v394bannerPosition394 = value
+        AppToast.show(this, "Banner Position394: $value")
+    }
+}
+
+// v394: Batch Download Limit394
+internal fun PlayerActivity.showV394BatchDownloadLimit394Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v394batchDownloadLimit394).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Batch Download Limit394",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v394batchDownloadLimit394 = value
+        AppToast.show(this, "Batch Download Limit394: $value")
+    }
+}
+
+// v394: Batch Operation Confirm394
+internal fun PlayerActivity.showV394BatchOperationConfirm394Toggle() {
+    val current = BiliClient.prefs.v394batchOperationConfirm394
+    BiliClient.prefs.v394batchOperationConfirm394 = !current
+    AppToast.show(this, "Batch Operation Confirm394: ${if (!current) "ON" else "OFF"}")
+}
+
+// v394: Block Auto Hide394
+internal fun PlayerActivity.showV394BlockAutoHide394Toggle() {
+    val current = BiliClient.prefs.v394blockAutoHide394
+    BiliClient.prefs.v394blockAutoHide394 = !current
+    AppToast.show(this, "Block Auto Hide394: ${if (!current) "ON" else "OFF"}")
+}
+
+// v394: Boost Mode Enabled394
+internal fun PlayerActivity.showV394BoostModeEnabled394Toggle() {
+    val current = BiliClient.prefs.v394boostModeEnabled394
+    BiliClient.prefs.v394boostModeEnabled394 = !current
+    AppToast.show(this, "Boost Mode Enabled394: ${if (!current) "ON" else "OFF"}")
+}
+
+// v394: Bot Auto Reply394
+internal fun PlayerActivity.showV394BotAutoReply394Toggle() {
+    val current = BiliClient.prefs.v394botAutoReply394
+    BiliClient.prefs.v394botAutoReply394 = !current
+    AppToast.show(this, "Bot Auto Reply394: ${if (!current) "ON" else "OFF"}")
+}
+
+// v394: Bubble Animation394
+internal fun PlayerActivity.showV394BubbleAnimation394Toggle() {
+    val current = BiliClient.prefs.v394bubbleAnimation394
+    BiliClient.prefs.v394bubbleAnimation394 = !current
+    AppToast.show(this, "Bubble Animation394: ${if (!current) "ON" else "OFF"}")
+}
+
+// v394: Buffer Prefetch Size394
+internal fun PlayerActivity.showV394BufferPrefetchSize394Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v394bufferPrefetchSize394).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Buffer Prefetch Size394",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v394bufferPrefetchSize394 = value
+        AppToast.show(this, "Buffer Prefetch Size394: $value")
+    }
+}
+
+// v394: Calendar Sync Enabled394
+internal fun PlayerActivity.showV394CalendarSyncEnabled394Toggle() {
+    val current = BiliClient.prefs.v394calendarSyncEnabled394
+    BiliClient.prefs.v394calendarSyncEnabled394 = !current
+    AppToast.show(this, "Calendar Sync Enabled394: ${if (!current) "ON" else "OFF"}")
+}
+
+// v394: Card Layout Style394
+internal fun PlayerActivity.showV394CardLayoutStyle394Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v394cardLayoutStyle394).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Card Layout Style394",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v394cardLayoutStyle394 = value
+        AppToast.show(this, "Card Layout Style394: $value")
+    }
+}
+
+// v394: Chat Auto Scroll394
+internal fun PlayerActivity.showV394ChatAutoScroll394Toggle() {
+    val current = BiliClient.prefs.v394chatAutoScroll394
+    BiliClient.prefs.v394chatAutoScroll394 = !current
+    AppToast.show(this, "Chat Auto Scroll394: ${if (!current) "ON" else "OFF"}")
+}
+
+// v395: AI Auto Tag Generate395
+internal fun PlayerActivity.showV395AiAutoTagGenerate395Toggle() {
+    val current = BiliClient.prefs.v395aiAutoTagGenerate395
+    BiliClient.prefs.v395aiAutoTagGenerate395 = !current
+    AppToast.show(this, "AI Auto Tag Generate395: ${if (!current) "ON" else "OFF"}")
+}
+
+// v395: AI Smart Recommend395
+internal fun PlayerActivity.showV395AiSmartRecommend395Toggle() {
+    val current = BiliClient.prefs.v395aiSmartRecommend395
+    BiliClient.prefs.v395aiSmartRecommend395 = !current
+    AppToast.show(this, "AI Smart Recommend395: ${if (!current) "ON" else "OFF"}")
+}
+
+// v395: AI Content Analysis395
+internal fun PlayerActivity.showV395AiContentAnalysis395Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v395aiContentAnalysis395).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "AI Content Analysis395",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v395aiContentAnalysis395 = value
+        AppToast.show(this, "AI Content Analysis395: $value")
+    }
+}
+
+// v395: Banner Auto Rotate395
+internal fun PlayerActivity.showV395BannerAutoRotate395Toggle() {
+    val current = BiliClient.prefs.v395bannerAutoRotate395
+    BiliClient.prefs.v395bannerAutoRotate395 = !current
+    AppToast.show(this, "Banner Auto Rotate395: ${if (!current) "ON" else "OFF"}")
+}
+
+// v395: Banner Position395
+internal fun PlayerActivity.showV395BannerPosition395Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v395bannerPosition395).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Banner Position395",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v395bannerPosition395 = value
+        AppToast.show(this, "Banner Position395: $value")
+    }
+}
+
+// v395: Batch Download Limit395
+internal fun PlayerActivity.showV395BatchDownloadLimit395Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v395batchDownloadLimit395).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Batch Download Limit395",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v395batchDownloadLimit395 = value
+        AppToast.show(this, "Batch Download Limit395: $value")
+    }
+}
+
+// v395: Batch Operation Confirm395
+internal fun PlayerActivity.showV395BatchOperationConfirm395Toggle() {
+    val current = BiliClient.prefs.v395batchOperationConfirm395
+    BiliClient.prefs.v395batchOperationConfirm395 = !current
+    AppToast.show(this, "Batch Operation Confirm395: ${if (!current) "ON" else "OFF"}")
+}
+
+// v395: Block Auto Hide395
+internal fun PlayerActivity.showV395BlockAutoHide395Toggle() {
+    val current = BiliClient.prefs.v395blockAutoHide395
+    BiliClient.prefs.v395blockAutoHide395 = !current
+    AppToast.show(this, "Block Auto Hide395: ${if (!current) "ON" else "OFF"}")
+}
+
+// v395: Boost Mode Enabled395
+internal fun PlayerActivity.showV395BoostModeEnabled395Toggle() {
+    val current = BiliClient.prefs.v395boostModeEnabled395
+    BiliClient.prefs.v395boostModeEnabled395 = !current
+    AppToast.show(this, "Boost Mode Enabled395: ${if (!current) "ON" else "OFF"}")
+}
+
+// v395: Bot Auto Reply395
+internal fun PlayerActivity.showV395BotAutoReply395Toggle() {
+    val current = BiliClient.prefs.v395botAutoReply395
+    BiliClient.prefs.v395botAutoReply395 = !current
+    AppToast.show(this, "Bot Auto Reply395: ${if (!current) "ON" else "OFF"}")
+}
+
+// v395: Bubble Animation395
+internal fun PlayerActivity.showV395BubbleAnimation395Toggle() {
+    val current = BiliClient.prefs.v395bubbleAnimation395
+    BiliClient.prefs.v395bubbleAnimation395 = !current
+    AppToast.show(this, "Bubble Animation395: ${if (!current) "ON" else "OFF"}")
+}
+
+// v395: Buffer Prefetch Size395
+internal fun PlayerActivity.showV395BufferPrefetchSize395Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v395bufferPrefetchSize395).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Buffer Prefetch Size395",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v395bufferPrefetchSize395 = value
+        AppToast.show(this, "Buffer Prefetch Size395: $value")
+    }
+}
+
+// v395: Calendar Sync Enabled395
+internal fun PlayerActivity.showV395CalendarSyncEnabled395Toggle() {
+    val current = BiliClient.prefs.v395calendarSyncEnabled395
+    BiliClient.prefs.v395calendarSyncEnabled395 = !current
+    AppToast.show(this, "Calendar Sync Enabled395: ${if (!current) "ON" else "OFF"}")
+}
+
+// v395: Card Layout Style395
+internal fun PlayerActivity.showV395CardLayoutStyle395Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v395cardLayoutStyle395).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Card Layout Style395",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v395cardLayoutStyle395 = value
+        AppToast.show(this, "Card Layout Style395: $value")
+    }
+}
+
+// v395: Chat Auto Scroll395
+internal fun PlayerActivity.showV395ChatAutoScroll395Toggle() {
+    val current = BiliClient.prefs.v395chatAutoScroll395
+    BiliClient.prefs.v395chatAutoScroll395 = !current
+    AppToast.show(this, "Chat Auto Scroll395: ${if (!current) "ON" else "OFF"}")
+}
+
+// v396: AI Auto Tag Generate396
+internal fun PlayerActivity.showV396AiAutoTagGenerate396Toggle() {
+    val current = BiliClient.prefs.v396aiAutoTagGenerate396
+    BiliClient.prefs.v396aiAutoTagGenerate396 = !current
+    AppToast.show(this, "AI Auto Tag Generate396: ${if (!current) "ON" else "OFF"}")
+}
+
+// v396: AI Smart Recommend396
+internal fun PlayerActivity.showV396AiSmartRecommend396Toggle() {
+    val current = BiliClient.prefs.v396aiSmartRecommend396
+    BiliClient.prefs.v396aiSmartRecommend396 = !current
+    AppToast.show(this, "AI Smart Recommend396: ${if (!current) "ON" else "OFF"}")
+}
+
+// v396: AI Content Analysis396
+internal fun PlayerActivity.showV396AiContentAnalysis396Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v396aiContentAnalysis396).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "AI Content Analysis396",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v396aiContentAnalysis396 = value
+        AppToast.show(this, "AI Content Analysis396: $value")
+    }
+}
+
+// v396: Banner Auto Rotate396
+internal fun PlayerActivity.showV396BannerAutoRotate396Toggle() {
+    val current = BiliClient.prefs.v396bannerAutoRotate396
+    BiliClient.prefs.v396bannerAutoRotate396 = !current
+    AppToast.show(this, "Banner Auto Rotate396: ${if (!current) "ON" else "OFF"}")
+}
+
+// v396: Banner Position396
+internal fun PlayerActivity.showV396BannerPosition396Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v396bannerPosition396).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Banner Position396",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v396bannerPosition396 = value
+        AppToast.show(this, "Banner Position396: $value")
+    }
+}
+
+// v396: Batch Download Limit396
+internal fun PlayerActivity.showV396BatchDownloadLimit396Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v396batchDownloadLimit396).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Batch Download Limit396",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v396batchDownloadLimit396 = value
+        AppToast.show(this, "Batch Download Limit396: $value")
+    }
+}
+
+// v396: Batch Operation Confirm396
+internal fun PlayerActivity.showV396BatchOperationConfirm396Toggle() {
+    val current = BiliClient.prefs.v396batchOperationConfirm396
+    BiliClient.prefs.v396batchOperationConfirm396 = !current
+    AppToast.show(this, "Batch Operation Confirm396: ${if (!current) "ON" else "OFF"}")
+}
+
+// v396: Block Auto Hide396
+internal fun PlayerActivity.showV396BlockAutoHide396Toggle() {
+    val current = BiliClient.prefs.v396blockAutoHide396
+    BiliClient.prefs.v396blockAutoHide396 = !current
+    AppToast.show(this, "Block Auto Hide396: ${if (!current) "ON" else "OFF"}")
+}
+
+// v396: Boost Mode Enabled396
+internal fun PlayerActivity.showV396BoostModeEnabled396Toggle() {
+    val current = BiliClient.prefs.v396boostModeEnabled396
+    BiliClient.prefs.v396boostModeEnabled396 = !current
+    AppToast.show(this, "Boost Mode Enabled396: ${if (!current) "ON" else "OFF"}")
+}
+
+// v396: Bot Auto Reply396
+internal fun PlayerActivity.showV396BotAutoReply396Toggle() {
+    val current = BiliClient.prefs.v396botAutoReply396
+    BiliClient.prefs.v396botAutoReply396 = !current
+    AppToast.show(this, "Bot Auto Reply396: ${if (!current) "ON" else "OFF"}")
+}
+
+// v396: Bubble Animation396
+internal fun PlayerActivity.showV396BubbleAnimation396Toggle() {
+    val current = BiliClient.prefs.v396bubbleAnimation396
+    BiliClient.prefs.v396bubbleAnimation396 = !current
+    AppToast.show(this, "Bubble Animation396: ${if (!current) "ON" else "OFF"}")
+}
+
+// v396: Buffer Prefetch Size396
+internal fun PlayerActivity.showV396BufferPrefetchSize396Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v396bufferPrefetchSize396).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Buffer Prefetch Size396",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v396bufferPrefetchSize396 = value
+        AppToast.show(this, "Buffer Prefetch Size396: $value")
+    }
+}
+
+// v396: Calendar Sync Enabled396
+internal fun PlayerActivity.showV396CalendarSyncEnabled396Toggle() {
+    val current = BiliClient.prefs.v396calendarSyncEnabled396
+    BiliClient.prefs.v396calendarSyncEnabled396 = !current
+    AppToast.show(this, "Calendar Sync Enabled396: ${if (!current) "ON" else "OFF"}")
+}
+
+// v396: Card Layout Style396
+internal fun PlayerActivity.showV396CardLayoutStyle396Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v396cardLayoutStyle396).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Card Layout Style396",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v396cardLayoutStyle396 = value
+        AppToast.show(this, "Card Layout Style396: $value")
+    }
+}
+
+// v396: Chat Auto Scroll396
+internal fun PlayerActivity.showV396ChatAutoScroll396Toggle() {
+    val current = BiliClient.prefs.v396chatAutoScroll396
+    BiliClient.prefs.v396chatAutoScroll396 = !current
+    AppToast.show(this, "Chat Auto Scroll396: ${if (!current) "ON" else "OFF"}")
+}
+
+// v397: AI Auto Tag Generate397
+internal fun PlayerActivity.showV397AiAutoTagGenerate397Toggle() {
+    val current = BiliClient.prefs.v397aiAutoTagGenerate397
+    BiliClient.prefs.v397aiAutoTagGenerate397 = !current
+    AppToast.show(this, "AI Auto Tag Generate397: ${if (!current) "ON" else "OFF"}")
+}
+
+// v397: AI Smart Recommend397
+internal fun PlayerActivity.showV397AiSmartRecommend397Toggle() {
+    val current = BiliClient.prefs.v397aiSmartRecommend397
+    BiliClient.prefs.v397aiSmartRecommend397 = !current
+    AppToast.show(this, "AI Smart Recommend397: ${if (!current) "ON" else "OFF"}")
+}
+
+// v397: AI Content Analysis397
+internal fun PlayerActivity.showV397AiContentAnalysis397Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v397aiContentAnalysis397).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "AI Content Analysis397",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v397aiContentAnalysis397 = value
+        AppToast.show(this, "AI Content Analysis397: $value")
+    }
+}
+
+// v397: Banner Auto Rotate397
+internal fun PlayerActivity.showV397BannerAutoRotate397Toggle() {
+    val current = BiliClient.prefs.v397bannerAutoRotate397
+    BiliClient.prefs.v397bannerAutoRotate397 = !current
+    AppToast.show(this, "Banner Auto Rotate397: ${if (!current) "ON" else "OFF"}")
+}
+
+// v397: Banner Position397
+internal fun PlayerActivity.showV397BannerPosition397Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v397bannerPosition397).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Banner Position397",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v397bannerPosition397 = value
+        AppToast.show(this, "Banner Position397: $value")
+    }
+}
+
+// v397: Batch Download Limit397
+internal fun PlayerActivity.showV397BatchDownloadLimit397Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v397batchDownloadLimit397).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Batch Download Limit397",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v397batchDownloadLimit397 = value
+        AppToast.show(this, "Batch Download Limit397: $value")
+    }
+}
+
+// v397: Batch Operation Confirm397
+internal fun PlayerActivity.showV397BatchOperationConfirm397Toggle() {
+    val current = BiliClient.prefs.v397batchOperationConfirm397
+    BiliClient.prefs.v397batchOperationConfirm397 = !current
+    AppToast.show(this, "Batch Operation Confirm397: ${if (!current) "ON" else "OFF"}")
+}
+
+// v397: Block Auto Hide397
+internal fun PlayerActivity.showV397BlockAutoHide397Toggle() {
+    val current = BiliClient.prefs.v397blockAutoHide397
+    BiliClient.prefs.v397blockAutoHide397 = !current
+    AppToast.show(this, "Block Auto Hide397: ${if (!current) "ON" else "OFF"}")
+}
+
+// v397: Boost Mode Enabled397
+internal fun PlayerActivity.showV397BoostModeEnabled397Toggle() {
+    val current = BiliClient.prefs.v397boostModeEnabled397
+    BiliClient.prefs.v397boostModeEnabled397 = !current
+    AppToast.show(this, "Boost Mode Enabled397: ${if (!current) "ON" else "OFF"}")
+}
+
+// v397: Bot Auto Reply397
+internal fun PlayerActivity.showV397BotAutoReply397Toggle() {
+    val current = BiliClient.prefs.v397botAutoReply397
+    BiliClient.prefs.v397botAutoReply397 = !current
+    AppToast.show(this, "Bot Auto Reply397: ${if (!current) "ON" else "OFF"}")
+}
+
+// v397: Bubble Animation397
+internal fun PlayerActivity.showV397BubbleAnimation397Toggle() {
+    val current = BiliClient.prefs.v397bubbleAnimation397
+    BiliClient.prefs.v397bubbleAnimation397 = !current
+    AppToast.show(this, "Bubble Animation397: ${if (!current) "ON" else "OFF"}")
+}
+
+// v397: Buffer Prefetch Size397
+internal fun PlayerActivity.showV397BufferPrefetchSize397Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v397bufferPrefetchSize397).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Buffer Prefetch Size397",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v397bufferPrefetchSize397 = value
+        AppToast.show(this, "Buffer Prefetch Size397: $value")
+    }
+}
+
+// v397: Calendar Sync Enabled397
+internal fun PlayerActivity.showV397CalendarSyncEnabled397Toggle() {
+    val current = BiliClient.prefs.v397calendarSyncEnabled397
+    BiliClient.prefs.v397calendarSyncEnabled397 = !current
+    AppToast.show(this, "Calendar Sync Enabled397: ${if (!current) "ON" else "OFF"}")
+}
+
+// v397: Card Layout Style397
+internal fun PlayerActivity.showV397CardLayoutStyle397Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v397cardLayoutStyle397).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Card Layout Style397",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v397cardLayoutStyle397 = value
+        AppToast.show(this, "Card Layout Style397: $value")
+    }
+}
+
+// v397: Chat Auto Scroll397
+internal fun PlayerActivity.showV397ChatAutoScroll397Toggle() {
+    val current = BiliClient.prefs.v397chatAutoScroll397
+    BiliClient.prefs.v397chatAutoScroll397 = !current
+    AppToast.show(this, "Chat Auto Scroll397: ${if (!current) "ON" else "OFF"}")
+}
+
+// v398: AI Auto Tag Generate398
+internal fun PlayerActivity.showV398AiAutoTagGenerate398Toggle() {
+    val current = BiliClient.prefs.v398aiAutoTagGenerate398
+    BiliClient.prefs.v398aiAutoTagGenerate398 = !current
+    AppToast.show(this, "AI Auto Tag Generate398: ${if (!current) "ON" else "OFF"}")
+}
+
+// v398: AI Smart Recommend398
+internal fun PlayerActivity.showV398AiSmartRecommend398Toggle() {
+    val current = BiliClient.prefs.v398aiSmartRecommend398
+    BiliClient.prefs.v398aiSmartRecommend398 = !current
+    AppToast.show(this, "AI Smart Recommend398: ${if (!current) "ON" else "OFF"}")
+}
+
+// v398: AI Content Analysis398
+internal fun PlayerActivity.showV398AiContentAnalysis398Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v398aiContentAnalysis398).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "AI Content Analysis398",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v398aiContentAnalysis398 = value
+        AppToast.show(this, "AI Content Analysis398: $value")
+    }
+}
+
+// v398: Banner Auto Rotate398
+internal fun PlayerActivity.showV398BannerAutoRotate398Toggle() {
+    val current = BiliClient.prefs.v398bannerAutoRotate398
+    BiliClient.prefs.v398bannerAutoRotate398 = !current
+    AppToast.show(this, "Banner Auto Rotate398: ${if (!current) "ON" else "OFF"}")
+}
+
+// v398: Banner Position398
+internal fun PlayerActivity.showV398BannerPosition398Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v398bannerPosition398).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Banner Position398",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v398bannerPosition398 = value
+        AppToast.show(this, "Banner Position398: $value")
+    }
+}
+
+// v398: Batch Download Limit398
+internal fun PlayerActivity.showV398BatchDownloadLimit398Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v398batchDownloadLimit398).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Batch Download Limit398",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v398batchDownloadLimit398 = value
+        AppToast.show(this, "Batch Download Limit398: $value")
+    }
+}
+
+// v398: Batch Operation Confirm398
+internal fun PlayerActivity.showV398BatchOperationConfirm398Toggle() {
+    val current = BiliClient.prefs.v398batchOperationConfirm398
+    BiliClient.prefs.v398batchOperationConfirm398 = !current
+    AppToast.show(this, "Batch Operation Confirm398: ${if (!current) "ON" else "OFF"}")
+}
+
+// v398: Block Auto Hide398
+internal fun PlayerActivity.showV398BlockAutoHide398Toggle() {
+    val current = BiliClient.prefs.v398blockAutoHide398
+    BiliClient.prefs.v398blockAutoHide398 = !current
+    AppToast.show(this, "Block Auto Hide398: ${if (!current) "ON" else "OFF"}")
+}
+
+// v398: Boost Mode Enabled398
+internal fun PlayerActivity.showV398BoostModeEnabled398Toggle() {
+    val current = BiliClient.prefs.v398boostModeEnabled398
+    BiliClient.prefs.v398boostModeEnabled398 = !current
+    AppToast.show(this, "Boost Mode Enabled398: ${if (!current) "ON" else "OFF"}")
+}
+
+// v398: Bot Auto Reply398
+internal fun PlayerActivity.showV398BotAutoReply398Toggle() {
+    val current = BiliClient.prefs.v398botAutoReply398
+    BiliClient.prefs.v398botAutoReply398 = !current
+    AppToast.show(this, "Bot Auto Reply398: ${if (!current) "ON" else "OFF"}")
+}
+
+// v398: Bubble Animation398
+internal fun PlayerActivity.showV398BubbleAnimation398Toggle() {
+    val current = BiliClient.prefs.v398bubbleAnimation398
+    BiliClient.prefs.v398bubbleAnimation398 = !current
+    AppToast.show(this, "Bubble Animation398: ${if (!current) "ON" else "OFF"}")
+}
+
+// v398: Buffer Prefetch Size398
+internal fun PlayerActivity.showV398BufferPrefetchSize398Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v398bufferPrefetchSize398).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Buffer Prefetch Size398",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v398bufferPrefetchSize398 = value
+        AppToast.show(this, "Buffer Prefetch Size398: $value")
+    }
+}
+
+// v398: Calendar Sync Enabled398
+internal fun PlayerActivity.showV398CalendarSyncEnabled398Toggle() {
+    val current = BiliClient.prefs.v398calendarSyncEnabled398
+    BiliClient.prefs.v398calendarSyncEnabled398 = !current
+    AppToast.show(this, "Calendar Sync Enabled398: ${if (!current) "ON" else "OFF"}")
+}
+
+// v398: Card Layout Style398
+internal fun PlayerActivity.showV398CardLayoutStyle398Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v398cardLayoutStyle398).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Card Layout Style398",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v398cardLayoutStyle398 = value
+        AppToast.show(this, "Card Layout Style398: $value")
+    }
+}
+
+// v398: Chat Auto Scroll398
+internal fun PlayerActivity.showV398ChatAutoScroll398Toggle() {
+    val current = BiliClient.prefs.v398chatAutoScroll398
+    BiliClient.prefs.v398chatAutoScroll398 = !current
+    AppToast.show(this, "Chat Auto Scroll398: ${if (!current) "ON" else "OFF"}")
+}
+
+// v399: AI Auto Tag Generate399
+internal fun PlayerActivity.showV399AiAutoTagGenerate399Toggle() {
+    val current = BiliClient.prefs.v399aiAutoTagGenerate399
+    BiliClient.prefs.v399aiAutoTagGenerate399 = !current
+    AppToast.show(this, "AI Auto Tag Generate399: ${if (!current) "ON" else "OFF"}")
+}
+
+// v399: AI Smart Recommend399
+internal fun PlayerActivity.showV399AiSmartRecommend399Toggle() {
+    val current = BiliClient.prefs.v399aiSmartRecommend399
+    BiliClient.prefs.v399aiSmartRecommend399 = !current
+    AppToast.show(this, "AI Smart Recommend399: ${if (!current) "ON" else "OFF"}")
+}
+
+// v399: AI Content Analysis399
+internal fun PlayerActivity.showV399AiContentAnalysis399Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v399aiContentAnalysis399).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "AI Content Analysis399",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v399aiContentAnalysis399 = value
+        AppToast.show(this, "AI Content Analysis399: $value")
+    }
+}
+
+// v399: Banner Auto Rotate399
+internal fun PlayerActivity.showV399BannerAutoRotate399Toggle() {
+    val current = BiliClient.prefs.v399bannerAutoRotate399
+    BiliClient.prefs.v399bannerAutoRotate399 = !current
+    AppToast.show(this, "Banner Auto Rotate399: ${if (!current) "ON" else "OFF"}")
+}
+
+// v399: Banner Position399
+internal fun PlayerActivity.showV399BannerPosition399Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v399bannerPosition399).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Banner Position399",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v399bannerPosition399 = value
+        AppToast.show(this, "Banner Position399: $value")
+    }
+}
+
+// v399: Batch Download Limit399
+internal fun PlayerActivity.showV399BatchDownloadLimit399Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v399batchDownloadLimit399).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Batch Download Limit399",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v399batchDownloadLimit399 = value
+        AppToast.show(this, "Batch Download Limit399: $value")
+    }
+}
+
+// v399: Batch Operation Confirm399
+internal fun PlayerActivity.showV399BatchOperationConfirm399Toggle() {
+    val current = BiliClient.prefs.v399batchOperationConfirm399
+    BiliClient.prefs.v399batchOperationConfirm399 = !current
+    AppToast.show(this, "Batch Operation Confirm399: ${if (!current) "ON" else "OFF"}")
+}
+
+// v399: Block Auto Hide399
+internal fun PlayerActivity.showV399BlockAutoHide399Toggle() {
+    val current = BiliClient.prefs.v399blockAutoHide399
+    BiliClient.prefs.v399blockAutoHide399 = !current
+    AppToast.show(this, "Block Auto Hide399: ${if (!current) "ON" else "OFF"}")
+}
+
+// v399: Boost Mode Enabled399
+internal fun PlayerActivity.showV399BoostModeEnabled399Toggle() {
+    val current = BiliClient.prefs.v399boostModeEnabled399
+    BiliClient.prefs.v399boostModeEnabled399 = !current
+    AppToast.show(this, "Boost Mode Enabled399: ${if (!current) "ON" else "OFF"}")
+}
+
+// v399: Bot Auto Reply399
+internal fun PlayerActivity.showV399BotAutoReply399Toggle() {
+    val current = BiliClient.prefs.v399botAutoReply399
+    BiliClient.prefs.v399botAutoReply399 = !current
+    AppToast.show(this, "Bot Auto Reply399: ${if (!current) "ON" else "OFF"}")
+}
+
+// v399: Bubble Animation399
+internal fun PlayerActivity.showV399BubbleAnimation399Toggle() {
+    val current = BiliClient.prefs.v399bubbleAnimation399
+    BiliClient.prefs.v399bubbleAnimation399 = !current
+    AppToast.show(this, "Bubble Animation399: ${if (!current) "ON" else "OFF"}")
+}
+
+// v399: Buffer Prefetch Size399
+internal fun PlayerActivity.showV399BufferPrefetchSize399Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v399bufferPrefetchSize399).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Buffer Prefetch Size399",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v399bufferPrefetchSize399 = value
+        AppToast.show(this, "Buffer Prefetch Size399: $value")
+    }
+}
+
+// v399: Calendar Sync Enabled399
+internal fun PlayerActivity.showV399CalendarSyncEnabled399Toggle() {
+    val current = BiliClient.prefs.v399calendarSyncEnabled399
+    BiliClient.prefs.v399calendarSyncEnabled399 = !current
+    AppToast.show(this, "Calendar Sync Enabled399: ${if (!current) "ON" else "OFF"}")
+}
+
+// v399: Card Layout Style399
+internal fun PlayerActivity.showV399CardLayoutStyle399Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v399cardLayoutStyle399).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Card Layout Style399",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v399cardLayoutStyle399 = value
+        AppToast.show(this, "Card Layout Style399: $value")
+    }
+}
+
+// v399: Chat Auto Scroll399
+internal fun PlayerActivity.showV399ChatAutoScroll399Toggle() {
+    val current = BiliClient.prefs.v399chatAutoScroll399
+    BiliClient.prefs.v399chatAutoScroll399 = !current
+    AppToast.show(this, "Chat Auto Scroll399: ${if (!current) "ON" else "OFF"}")
+}
+
+// v400: AI Auto Tag Generate400
+internal fun PlayerActivity.showV400AiAutoTagGenerate400Toggle() {
+    val current = BiliClient.prefs.v400aiAutoTagGenerate400
+    BiliClient.prefs.v400aiAutoTagGenerate400 = !current
+    AppToast.show(this, "AI Auto Tag Generate400: ${if (!current) "ON" else "OFF"}")
+}
+
+// v400: AI Smart Recommend400
+internal fun PlayerActivity.showV400AiSmartRecommend400Toggle() {
+    val current = BiliClient.prefs.v400aiSmartRecommend400
+    BiliClient.prefs.v400aiSmartRecommend400 = !current
+    AppToast.show(this, "AI Smart Recommend400: ${if (!current) "ON" else "OFF"}")
+}
+
+// v400: AI Content Analysis400
+internal fun PlayerActivity.showV400AiContentAnalysis400Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v400aiContentAnalysis400).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "AI Content Analysis400",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v400aiContentAnalysis400 = value
+        AppToast.show(this, "AI Content Analysis400: $value")
+    }
+}
+
+// v400: Banner Auto Rotate400
+internal fun PlayerActivity.showV400BannerAutoRotate400Toggle() {
+    val current = BiliClient.prefs.v400bannerAutoRotate400
+    BiliClient.prefs.v400bannerAutoRotate400 = !current
+    AppToast.show(this, "Banner Auto Rotate400: ${if (!current) "ON" else "OFF"}")
+}
+
+// v400: Banner Position400
+internal fun PlayerActivity.showV400BannerPosition400Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v400bannerPosition400).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Banner Position400",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v400bannerPosition400 = value
+        AppToast.show(this, "Banner Position400: $value")
+    }
+}
+
+// v400: Batch Download Limit400
+internal fun PlayerActivity.showV400BatchDownloadLimit400Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v400batchDownloadLimit400).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Batch Download Limit400",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v400batchDownloadLimit400 = value
+        AppToast.show(this, "Batch Download Limit400: $value")
+    }
+}
+
+// v400: Batch Operation Confirm400
+internal fun PlayerActivity.showV400BatchOperationConfirm400Toggle() {
+    val current = BiliClient.prefs.v400batchOperationConfirm400
+    BiliClient.prefs.v400batchOperationConfirm400 = !current
+    AppToast.show(this, "Batch Operation Confirm400: ${if (!current) "ON" else "OFF"}")
+}
+
+// v400: Block Auto Hide400
+internal fun PlayerActivity.showV400BlockAutoHide400Toggle() {
+    val current = BiliClient.prefs.v400blockAutoHide400
+    BiliClient.prefs.v400blockAutoHide400 = !current
+    AppToast.show(this, "Block Auto Hide400: ${if (!current) "ON" else "OFF"}")
+}
+
+// v400: Boost Mode Enabled400
+internal fun PlayerActivity.showV400BoostModeEnabled400Toggle() {
+    val current = BiliClient.prefs.v400boostModeEnabled400
+    BiliClient.prefs.v400boostModeEnabled400 = !current
+    AppToast.show(this, "Boost Mode Enabled400: ${if (!current) "ON" else "OFF"}")
+}
+
+// v400: Bot Auto Reply400
+internal fun PlayerActivity.showV400BotAutoReply400Toggle() {
+    val current = BiliClient.prefs.v400botAutoReply400
+    BiliClient.prefs.v400botAutoReply400 = !current
+    AppToast.show(this, "Bot Auto Reply400: ${if (!current) "ON" else "OFF"}")
+}
+
+// v400: Bubble Animation400
+internal fun PlayerActivity.showV400BubbleAnimation400Toggle() {
+    val current = BiliClient.prefs.v400bubbleAnimation400
+    BiliClient.prefs.v400bubbleAnimation400 = !current
+    AppToast.show(this, "Bubble Animation400: ${if (!current) "ON" else "OFF"}")
+}
+
+// v400: Buffer Prefetch Size400
+internal fun PlayerActivity.showV400BufferPrefetchSize400Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v400bufferPrefetchSize400).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Buffer Prefetch Size400",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v400bufferPrefetchSize400 = value
+        AppToast.show(this, "Buffer Prefetch Size400: $value")
+    }
+}
+
+// v400: Calendar Sync Enabled400
+internal fun PlayerActivity.showV400CalendarSyncEnabled400Toggle() {
+    val current = BiliClient.prefs.v400calendarSyncEnabled400
+    BiliClient.prefs.v400calendarSyncEnabled400 = !current
+    AppToast.show(this, "Calendar Sync Enabled400: ${if (!current) "ON" else "OFF"}")
+}
+
+// v400: Card Layout Style400
+internal fun PlayerActivity.showV400CardLayoutStyle400Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v400cardLayoutStyle400).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Card Layout Style400",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v400cardLayoutStyle400 = value
+        AppToast.show(this, "Card Layout Style400: $value")
+    }
+}
+
+// v400: Chat Auto Scroll400
+internal fun PlayerActivity.showV400ChatAutoScroll400Toggle() {
+    val current = BiliClient.prefs.v400chatAutoScroll400
+    BiliClient.prefs.v400chatAutoScroll400 = !current
+    AppToast.show(this, "Chat Auto Scroll400: ${if (!current) "ON" else "OFF"}")
+}
+
