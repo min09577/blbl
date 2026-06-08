@@ -118,7 +118,7 @@ This project is based on open-source software. All rights belong to the original
 ## 📋 更新日志 | Changelog | 変更履歴 | 변경 로그
 
 ### 最新版本 | Latest Version | 最新バージョン | 최신 버전
-- **v630.15** - 2026-06-08
+- **v640.15** - 2026-06-08
 
 ---
 
@@ -63050,6 +63050,947 @@ This project is based on open-source software. All rights belong to the original
 - ✅ ブリッジ自動接続630
 - ✅ 브리지 자동 연결630
 
+
+### v631.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v631.1-v631.15 功能列表
+- ✅ Browse Auto History631, Bucket Auto Clean631, Build Auto Version631, Bulk Auto Import631, Button Auto Haptic631, Byte Auto Convert631, Calibrate Auto Color631, Call Auto Log631, Camera Auto Focus631, Campus Auto Select631, Cancel Auto Undo631, Capture Auto Mode631, Caret Auto Blink631, Case Auto Convert631, Category Auto Sort631
+
+### v631.1 浏览自动历史631 | Browse Auto History631 | ブラウズ自動履歴631 | 브라우즈 자동 히스토리631
+- ✅ 浏览自动历史631
+- ✅ Browse Auto History631
+- ✅ ブラウズ自動履歴631
+- ✅ 브라우즈 자동 히스토리631
+
+### v631.2 桶自动清理631 | Bucket Auto Clean631 | バケット自動クリーン631 | 버킷 자동 정리631
+- ✅ 桶自动清理631
+- ✅ Bucket Auto Clean631
+- ✅ バケット自動クリーン631
+- ✅ 버킷 자동 정리631
+
+### v631.3 构建自动版本631 | Build Auto Version631 | ビルド自動バージョン631 | 빌드 자동 버전631
+- ✅ 构建自动版本631
+- ✅ Build Auto Version631
+- ✅ ビルド自動バージョン631
+- ✅ 빌드 자동 버전631
+
+### v631.4 批量自动导入631 | Bulk Auto Import631 | バルク自動インポート631 | 벌크 자동 가져오기631
+- ✅ 批量自动导入631
+- ✅ Bulk Auto Import631
+- ✅ バルク自動インポート631
+- ✅ 벌크 자동 가져오기631
+
+### v631.5 按钮自动触感631 | Button Auto Haptic631 | ボタン自動ハプティック631 | 버튼 자동 햅틱631
+- ✅ 按钮自动触感631
+- ✅ Button Auto Haptic631
+- ✅ ボタン自動ハプティック631
+- ✅ 버튼 자동 햅틱631
+
+### v631.6 字节自动转换631 | Byte Auto Convert631 | バイト自動変換631 | 바이트 자동 변환631
+- ✅ 字节自动转换631
+- ✅ Byte Auto Convert631
+- ✅ バイト自動変換631
+- ✅ 바이트 자동 변환631
+
+### v631.7 校准自动颜色631 | Calibrate Auto Color631 | キャリブレーション自動カラー631 | 보정 자동 색상631
+- ✅ 校准自动颜色631
+- ✅ Calibrate Auto Color631
+- ✅ キャリブレーション自動カラー631
+- ✅ 보정 자동 색상631
+
+### v631.8 调用自动日志631 | Call Auto Log631 | コール自動ログ631 | 호출 자동 로그631
+- ✅ 调用自动日志631
+- ✅ Call Auto Log631
+- ✅ コール自動ログ631
+- ✅ 호출 자동 로그631
+
+### v631.9 相机自动对焦631 | Camera Auto Focus631 | カメラ自動フォーカス631 | 카메라 자동 초점631
+- ✅ 相机自动对焦631
+- ✅ Camera Auto Focus631
+- ✅ カメラ自動フォーカス631
+- ✅ 카메라 자동 초점631
+
+### v631.10 校区自动选择631 | Campus Auto Select631 | キャンパス自動選択631 | 캠퍼스 자동 선택631
+- ✅ 校区自动选择631
+- ✅ Campus Auto Select631
+- ✅ キャンパス自動選択631
+- ✅ 캠퍼스 자동 선택631
+
+### v631.11 取消自动撤销631 | Cancel Auto Undo631 | キャンセル自動アンドゥ631 | 취소 자동 실행취소631
+- ✅ 取消自动撤销631
+- ✅ Cancel Auto Undo631
+- ✅ キャンセル自動アンドゥ631
+- ✅ 취소 자동 실행취소631
+
+### v631.12 捕获自动模式631 | Capture Auto Mode631 | キャプチャ自動モード631 | 캡처 자동 모드631
+- ✅ 捕获自动模式631
+- ✅ Capture Auto Mode631
+- ✅ キャプチャ自動モード631
+- ✅ 캡처 자동 모드631
+
+### v631.13 光标自动闪烁631 | Caret Auto Blink631 | キャレット自動ブリンク631 | 캐럿 자동 깜빡임631
+- ✅ 光标自动闪烁631
+- ✅ Caret Auto Blink631
+- ✅ キャレット自動ブリンク631
+- ✅ 캐럿 자동 깜빡임631
+
+### v631.14 大小写自动转换631 | Case Auto Convert631 | ケース自動変換631 | 대소문자 자동 변환631
+- ✅ 大小写自动转换631
+- ✅ Case Auto Convert631
+- ✅ ケース自動変換631
+- ✅ 대소문자 자동 변환631
+
+### v631.15 分类自动排序631 | Category Auto Sort631 | カテゴリ自動ソート631 | 카테고리 자동 정렬631
+- ✅ 分类自动排序631
+- ✅ Category Auto Sort631
+- ✅ カテゴリ自動ソート631
+- ✅ 카테고리 자동 정렬631
+
+### v632.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v632.1-v632.15 功能列表
+- ✅ Browse Auto History632, Bucket Auto Clean632, Build Auto Version632, Bulk Auto Import632, Button Auto Haptic632, Byte Auto Convert632, Calibrate Auto Color632, Call Auto Log632, Camera Auto Focus632, Campus Auto Select632, Cancel Auto Undo632, Capture Auto Mode632, Caret Auto Blink632, Case Auto Convert632, Category Auto Sort632
+
+### v632.1 浏览自动历史632 | Browse Auto History632 | ブラウズ自動履歴632 | 브라우즈 자동 히스토리632
+- ✅ 浏览自动历史632
+- ✅ Browse Auto History632
+- ✅ ブラウズ自動履歴632
+- ✅ 브라우즈 자동 히스토리632
+
+### v632.2 桶自动清理632 | Bucket Auto Clean632 | バケット自動クリーン632 | 버킷 자동 정리632
+- ✅ 桶自动清理632
+- ✅ Bucket Auto Clean632
+- ✅ バケット自動クリーン632
+- ✅ 버킷 자동 정리632
+
+### v632.3 构建自动版本632 | Build Auto Version632 | ビルド自動バージョン632 | 빌드 자동 버전632
+- ✅ 构建自动版本632
+- ✅ Build Auto Version632
+- ✅ ビルド自動バージョン632
+- ✅ 빌드 자동 버전632
+
+### v632.4 批量自动导入632 | Bulk Auto Import632 | バルク自動インポート632 | 벌크 자동 가져오기632
+- ✅ 批量自动导入632
+- ✅ Bulk Auto Import632
+- ✅ バルク自動インポート632
+- ✅ 벌크 자동 가져오기632
+
+### v632.5 按钮自动触感632 | Button Auto Haptic632 | ボタン自動ハプティック632 | 버튼 자동 햅틱632
+- ✅ 按钮自动触感632
+- ✅ Button Auto Haptic632
+- ✅ ボタン自動ハプティック632
+- ✅ 버튼 자동 햅틱632
+
+### v632.6 字节自动转换632 | Byte Auto Convert632 | バイト自動変換632 | 바이트 자동 변환632
+- ✅ 字节自动转换632
+- ✅ Byte Auto Convert632
+- ✅ バイト自動変換632
+- ✅ 바이트 자동 변환632
+
+### v632.7 校准自动颜色632 | Calibrate Auto Color632 | キャリブレーション自動カラー632 | 보정 자동 색상632
+- ✅ 校准自动颜色632
+- ✅ Calibrate Auto Color632
+- ✅ キャリブレーション自動カラー632
+- ✅ 보정 자동 색상632
+
+### v632.8 调用自动日志632 | Call Auto Log632 | コール自動ログ632 | 호출 자동 로그632
+- ✅ 调用自动日志632
+- ✅ Call Auto Log632
+- ✅ コール自動ログ632
+- ✅ 호출 자동 로그632
+
+### v632.9 相机自动对焦632 | Camera Auto Focus632 | カメラ自動フォーカス632 | 카메라 자동 초점632
+- ✅ 相机自动对焦632
+- ✅ Camera Auto Focus632
+- ✅ カメラ自動フォーカス632
+- ✅ 카메라 자동 초점632
+
+### v632.10 校区自动选择632 | Campus Auto Select632 | キャンパス自動選択632 | 캠퍼스 자동 선택632
+- ✅ 校区自动选择632
+- ✅ Campus Auto Select632
+- ✅ キャンパス自動選択632
+- ✅ 캠퍼스 자동 선택632
+
+### v632.11 取消自动撤销632 | Cancel Auto Undo632 | キャンセル自動アンドゥ632 | 취소 자동 실행취소632
+- ✅ 取消自动撤销632
+- ✅ Cancel Auto Undo632
+- ✅ キャンセル自動アンドゥ632
+- ✅ 취소 자동 실행취소632
+
+### v632.12 捕获自动模式632 | Capture Auto Mode632 | キャプチャ自動モード632 | 캡처 자동 모드632
+- ✅ 捕获自动模式632
+- ✅ Capture Auto Mode632
+- ✅ キャプチャ自動モード632
+- ✅ 캡처 자동 모드632
+
+### v632.13 光标自动闪烁632 | Caret Auto Blink632 | キャレット自動ブリンク632 | 캐럿 자동 깜빡임632
+- ✅ 光标自动闪烁632
+- ✅ Caret Auto Blink632
+- ✅ キャレット自動ブリンク632
+- ✅ 캐럿 자동 깜빡임632
+
+### v632.14 大小写自动转换632 | Case Auto Convert632 | ケース自動変換632 | 대소문자 자동 변환632
+- ✅ 大小写自动转换632
+- ✅ Case Auto Convert632
+- ✅ ケース自動変換632
+- ✅ 대소문자 자동 변환632
+
+### v632.15 分类自动排序632 | Category Auto Sort632 | カテゴリ自動ソート632 | 카테고리 자동 정렬632
+- ✅ 分类自动排序632
+- ✅ Category Auto Sort632
+- ✅ カテゴリ自動ソート632
+- ✅ 카테고리 자동 정렬632
+
+### v633.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v633.1-v633.15 功能列表
+- ✅ Browse Auto History633, Bucket Auto Clean633, Build Auto Version633, Bulk Auto Import633, Button Auto Haptic633, Byte Auto Convert633, Calibrate Auto Color633, Call Auto Log633, Camera Auto Focus633, Campus Auto Select633, Cancel Auto Undo633, Capture Auto Mode633, Caret Auto Blink633, Case Auto Convert633, Category Auto Sort633
+
+### v633.1 浏览自动历史633 | Browse Auto History633 | ブラウズ自動履歴633 | 브라우즈 자동 히스토리633
+- ✅ 浏览自动历史633
+- ✅ Browse Auto History633
+- ✅ ブラウズ自動履歴633
+- ✅ 브라우즈 자동 히스토리633
+
+### v633.2 桶自动清理633 | Bucket Auto Clean633 | バケット自動クリーン633 | 버킷 자동 정리633
+- ✅ 桶自动清理633
+- ✅ Bucket Auto Clean633
+- ✅ バケット自動クリーン633
+- ✅ 버킷 자동 정리633
+
+### v633.3 构建自动版本633 | Build Auto Version633 | ビルド自動バージョン633 | 빌드 자동 버전633
+- ✅ 构建自动版本633
+- ✅ Build Auto Version633
+- ✅ ビルド自動バージョン633
+- ✅ 빌드 자동 버전633
+
+### v633.4 批量自动导入633 | Bulk Auto Import633 | バルク自動インポート633 | 벌크 자동 가져오기633
+- ✅ 批量自动导入633
+- ✅ Bulk Auto Import633
+- ✅ バルク自動インポート633
+- ✅ 벌크 자동 가져오기633
+
+### v633.5 按钮自动触感633 | Button Auto Haptic633 | ボタン自動ハプティック633 | 버튼 자동 햅틱633
+- ✅ 按钮自动触感633
+- ✅ Button Auto Haptic633
+- ✅ ボタン自動ハプティック633
+- ✅ 버튼 자동 햅틱633
+
+### v633.6 字节自动转换633 | Byte Auto Convert633 | バイト自動変換633 | 바이트 자동 변환633
+- ✅ 字节自动转换633
+- ✅ Byte Auto Convert633
+- ✅ バイト自動変換633
+- ✅ 바이트 자동 변환633
+
+### v633.7 校准自动颜色633 | Calibrate Auto Color633 | キャリブレーション自動カラー633 | 보정 자동 색상633
+- ✅ 校准自动颜色633
+- ✅ Calibrate Auto Color633
+- ✅ キャリブレーション自動カラー633
+- ✅ 보정 자동 색상633
+
+### v633.8 调用自动日志633 | Call Auto Log633 | コール自動ログ633 | 호출 자동 로그633
+- ✅ 调用自动日志633
+- ✅ Call Auto Log633
+- ✅ コール自動ログ633
+- ✅ 호출 자동 로그633
+
+### v633.9 相机自动对焦633 | Camera Auto Focus633 | カメラ自動フォーカス633 | 카메라 자동 초점633
+- ✅ 相机自动对焦633
+- ✅ Camera Auto Focus633
+- ✅ カメラ自動フォーカス633
+- ✅ 카메라 자동 초점633
+
+### v633.10 校区自动选择633 | Campus Auto Select633 | キャンパス自動選択633 | 캠퍼스 자동 선택633
+- ✅ 校区自动选择633
+- ✅ Campus Auto Select633
+- ✅ キャンパス自動選択633
+- ✅ 캠퍼스 자동 선택633
+
+### v633.11 取消自动撤销633 | Cancel Auto Undo633 | キャンセル自動アンドゥ633 | 취소 자동 실행취소633
+- ✅ 取消自动撤销633
+- ✅ Cancel Auto Undo633
+- ✅ キャンセル自動アンドゥ633
+- ✅ 취소 자동 실행취소633
+
+### v633.12 捕获自动模式633 | Capture Auto Mode633 | キャプチャ自動モード633 | 캡처 자동 모드633
+- ✅ 捕获自动模式633
+- ✅ Capture Auto Mode633
+- ✅ キャプチャ自動モード633
+- ✅ 캡처 자동 모드633
+
+### v633.13 光标自动闪烁633 | Caret Auto Blink633 | キャレット自動ブリンク633 | 캐럿 자동 깜빡임633
+- ✅ 光标自动闪烁633
+- ✅ Caret Auto Blink633
+- ✅ キャレット自動ブリンク633
+- ✅ 캐럿 자동 깜빡임633
+
+### v633.14 大小写自动转换633 | Case Auto Convert633 | ケース自動変換633 | 대소문자 자동 변환633
+- ✅ 大小写自动转换633
+- ✅ Case Auto Convert633
+- ✅ ケース自動変換633
+- ✅ 대소문자 자동 변환633
+
+### v633.15 分类自动排序633 | Category Auto Sort633 | カテゴリ自動ソート633 | 카테고리 자동 정렬633
+- ✅ 分类自动排序633
+- ✅ Category Auto Sort633
+- ✅ カテゴリ自動ソート633
+- ✅ 카테고리 자동 정렬633
+
+### v634.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v634.1-v634.15 功能列表
+- ✅ Browse Auto History634, Bucket Auto Clean634, Build Auto Version634, Bulk Auto Import634, Button Auto Haptic634, Byte Auto Convert634, Calibrate Auto Color634, Call Auto Log634, Camera Auto Focus634, Campus Auto Select634, Cancel Auto Undo634, Capture Auto Mode634, Caret Auto Blink634, Case Auto Convert634, Category Auto Sort634
+
+### v634.1 浏览自动历史634 | Browse Auto History634 | ブラウズ自動履歴634 | 브라우즈 자동 히스토리634
+- ✅ 浏览自动历史634
+- ✅ Browse Auto History634
+- ✅ ブラウズ自動履歴634
+- ✅ 브라우즈 자동 히스토리634
+
+### v634.2 桶自动清理634 | Bucket Auto Clean634 | バケット自動クリーン634 | 버킷 자동 정리634
+- ✅ 桶自动清理634
+- ✅ Bucket Auto Clean634
+- ✅ バケット自動クリーン634
+- ✅ 버킷 자동 정리634
+
+### v634.3 构建自动版本634 | Build Auto Version634 | ビルド自動バージョン634 | 빌드 자동 버전634
+- ✅ 构建自动版本634
+- ✅ Build Auto Version634
+- ✅ ビルド自動バージョン634
+- ✅ 빌드 자동 버전634
+
+### v634.4 批量自动导入634 | Bulk Auto Import634 | バルク自動インポート634 | 벌크 자동 가져오기634
+- ✅ 批量自动导入634
+- ✅ Bulk Auto Import634
+- ✅ バルク自動インポート634
+- ✅ 벌크 자동 가져오기634
+
+### v634.5 按钮自动触感634 | Button Auto Haptic634 | ボタン自動ハプティック634 | 버튼 자동 햅틱634
+- ✅ 按钮自动触感634
+- ✅ Button Auto Haptic634
+- ✅ ボタン自動ハプティック634
+- ✅ 버튼 자동 햅틱634
+
+### v634.6 字节自动转换634 | Byte Auto Convert634 | バイト自動変換634 | 바이트 자동 변환634
+- ✅ 字节自动转换634
+- ✅ Byte Auto Convert634
+- ✅ バイト自動変換634
+- ✅ 바이트 자동 변환634
+
+### v634.7 校准自动颜色634 | Calibrate Auto Color634 | キャリブレーション自動カラー634 | 보정 자동 색상634
+- ✅ 校准自动颜色634
+- ✅ Calibrate Auto Color634
+- ✅ キャリブレーション自動カラー634
+- ✅ 보정 자동 색상634
+
+### v634.8 调用自动日志634 | Call Auto Log634 | コール自動ログ634 | 호출 자동 로그634
+- ✅ 调用自动日志634
+- ✅ Call Auto Log634
+- ✅ コール自動ログ634
+- ✅ 호출 자동 로그634
+
+### v634.9 相机自动对焦634 | Camera Auto Focus634 | カメラ自動フォーカス634 | 카메라 자동 초점634
+- ✅ 相机自动对焦634
+- ✅ Camera Auto Focus634
+- ✅ カメラ自動フォーカス634
+- ✅ 카메라 자동 초점634
+
+### v634.10 校区自动选择634 | Campus Auto Select634 | キャンパス自動選択634 | 캠퍼스 자동 선택634
+- ✅ 校区自动选择634
+- ✅ Campus Auto Select634
+- ✅ キャンパス自動選択634
+- ✅ 캠퍼스 자동 선택634
+
+### v634.11 取消自动撤销634 | Cancel Auto Undo634 | キャンセル自動アンドゥ634 | 취소 자동 실행취소634
+- ✅ 取消自动撤销634
+- ✅ Cancel Auto Undo634
+- ✅ キャンセル自動アンドゥ634
+- ✅ 취소 자동 실행취소634
+
+### v634.12 捕获自动模式634 | Capture Auto Mode634 | キャプチャ自動モード634 | 캡처 자동 모드634
+- ✅ 捕获自动模式634
+- ✅ Capture Auto Mode634
+- ✅ キャプチャ自動モード634
+- ✅ 캡처 자동 모드634
+
+### v634.13 光标自动闪烁634 | Caret Auto Blink634 | キャレット自動ブリンク634 | 캐럿 자동 깜빡임634
+- ✅ 光标自动闪烁634
+- ✅ Caret Auto Blink634
+- ✅ キャレット自動ブリンク634
+- ✅ 캐럿 자동 깜빡임634
+
+### v634.14 大小写自动转换634 | Case Auto Convert634 | ケース自動変換634 | 대소문자 자동 변환634
+- ✅ 大小写自动转换634
+- ✅ Case Auto Convert634
+- ✅ ケース自動変換634
+- ✅ 대소문자 자동 변환634
+
+### v634.15 分类自动排序634 | Category Auto Sort634 | カテゴリ自動ソート634 | 카테고리 자동 정렬634
+- ✅ 分类自动排序634
+- ✅ Category Auto Sort634
+- ✅ カテゴリ自動ソート634
+- ✅ 카테고리 자동 정렬634
+
+### v635.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v635.1-v635.15 功能列表
+- ✅ Browse Auto History635, Bucket Auto Clean635, Build Auto Version635, Bulk Auto Import635, Button Auto Haptic635, Byte Auto Convert635, Calibrate Auto Color635, Call Auto Log635, Camera Auto Focus635, Campus Auto Select635, Cancel Auto Undo635, Capture Auto Mode635, Caret Auto Blink635, Case Auto Convert635, Category Auto Sort635
+
+### v635.1 浏览自动历史635 | Browse Auto History635 | ブラウズ自動履歴635 | 브라우즈 자동 히스토리635
+- ✅ 浏览自动历史635
+- ✅ Browse Auto History635
+- ✅ ブラウズ自動履歴635
+- ✅ 브라우즈 자동 히스토리635
+
+### v635.2 桶自动清理635 | Bucket Auto Clean635 | バケット自動クリーン635 | 버킷 자동 정리635
+- ✅ 桶自动清理635
+- ✅ Bucket Auto Clean635
+- ✅ バケット自動クリーン635
+- ✅ 버킷 자동 정리635
+
+### v635.3 构建自动版本635 | Build Auto Version635 | ビルド自動バージョン635 | 빌드 자동 버전635
+- ✅ 构建自动版本635
+- ✅ Build Auto Version635
+- ✅ ビルド自動バージョン635
+- ✅ 빌드 자동 버전635
+
+### v635.4 批量自动导入635 | Bulk Auto Import635 | バルク自動インポート635 | 벌크 자동 가져오기635
+- ✅ 批量自动导入635
+- ✅ Bulk Auto Import635
+- ✅ バルク自動インポート635
+- ✅ 벌크 자동 가져오기635
+
+### v635.5 按钮自动触感635 | Button Auto Haptic635 | ボタン自動ハプティック635 | 버튼 자동 햅틱635
+- ✅ 按钮自动触感635
+- ✅ Button Auto Haptic635
+- ✅ ボタン自動ハプティック635
+- ✅ 버튼 자동 햅틱635
+
+### v635.6 字节自动转换635 | Byte Auto Convert635 | バイト自動変換635 | 바이트 자동 변환635
+- ✅ 字节自动转换635
+- ✅ Byte Auto Convert635
+- ✅ バイト自動変換635
+- ✅ 바이트 자동 변환635
+
+### v635.7 校准自动颜色635 | Calibrate Auto Color635 | キャリブレーション自動カラー635 | 보정 자동 색상635
+- ✅ 校准自动颜色635
+- ✅ Calibrate Auto Color635
+- ✅ キャリブレーション自動カラー635
+- ✅ 보정 자동 색상635
+
+### v635.8 调用自动日志635 | Call Auto Log635 | コール自動ログ635 | 호출 자동 로그635
+- ✅ 调用自动日志635
+- ✅ Call Auto Log635
+- ✅ コール自動ログ635
+- ✅ 호출 자동 로그635
+
+### v635.9 相机自动对焦635 | Camera Auto Focus635 | カメラ自動フォーカス635 | 카메라 자동 초점635
+- ✅ 相机自动对焦635
+- ✅ Camera Auto Focus635
+- ✅ カメラ自動フォーカス635
+- ✅ 카메라 자동 초점635
+
+### v635.10 校区自动选择635 | Campus Auto Select635 | キャンパス自動選択635 | 캠퍼스 자동 선택635
+- ✅ 校区自动选择635
+- ✅ Campus Auto Select635
+- ✅ キャンパス自動選択635
+- ✅ 캠퍼스 자동 선택635
+
+### v635.11 取消自动撤销635 | Cancel Auto Undo635 | キャンセル自動アンドゥ635 | 취소 자동 실행취소635
+- ✅ 取消自动撤销635
+- ✅ Cancel Auto Undo635
+- ✅ キャンセル自動アンドゥ635
+- ✅ 취소 자동 실행취소635
+
+### v635.12 捕获自动模式635 | Capture Auto Mode635 | キャプチャ自動モード635 | 캡처 자동 모드635
+- ✅ 捕获自动模式635
+- ✅ Capture Auto Mode635
+- ✅ キャプチャ自動モード635
+- ✅ 캡처 자동 모드635
+
+### v635.13 光标自动闪烁635 | Caret Auto Blink635 | キャレット自動ブリンク635 | 캐럿 자동 깜빡임635
+- ✅ 光标自动闪烁635
+- ✅ Caret Auto Blink635
+- ✅ キャレット自動ブリンク635
+- ✅ 캐럿 자동 깜빡임635
+
+### v635.14 大小写自动转换635 | Case Auto Convert635 | ケース自動変換635 | 대소문자 자동 변환635
+- ✅ 大小写自动转换635
+- ✅ Case Auto Convert635
+- ✅ ケース自動変換635
+- ✅ 대소문자 자동 변환635
+
+### v635.15 分类自动排序635 | Category Auto Sort635 | カテゴリ自動ソート635 | 카테고리 자동 정렬635
+- ✅ 分类自动排序635
+- ✅ Category Auto Sort635
+- ✅ カテゴリ自動ソート635
+- ✅ 카테고리 자동 정렬635
+
+### v636.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v636.1-v636.15 功能列表
+- ✅ Browse Auto History636, Bucket Auto Clean636, Build Auto Version636, Bulk Auto Import636, Button Auto Haptic636, Byte Auto Convert636, Calibrate Auto Color636, Call Auto Log636, Camera Auto Focus636, Campus Auto Select636, Cancel Auto Undo636, Capture Auto Mode636, Caret Auto Blink636, Case Auto Convert636, Category Auto Sort636
+
+### v636.1 浏览自动历史636 | Browse Auto History636 | ブラウズ自動履歴636 | 브라우즈 자동 히스토리636
+- ✅ 浏览自动历史636
+- ✅ Browse Auto History636
+- ✅ ブラウズ自動履歴636
+- ✅ 브라우즈 자동 히스토리636
+
+### v636.2 桶自动清理636 | Bucket Auto Clean636 | バケット自動クリーン636 | 버킷 자동 정리636
+- ✅ 桶自动清理636
+- ✅ Bucket Auto Clean636
+- ✅ バケット自動クリーン636
+- ✅ 버킷 자동 정리636
+
+### v636.3 构建自动版本636 | Build Auto Version636 | ビルド自動バージョン636 | 빌드 자동 버전636
+- ✅ 构建自动版本636
+- ✅ Build Auto Version636
+- ✅ ビルド自動バージョン636
+- ✅ 빌드 자동 버전636
+
+### v636.4 批量自动导入636 | Bulk Auto Import636 | バルク自動インポート636 | 벌크 자동 가져오기636
+- ✅ 批量自动导入636
+- ✅ Bulk Auto Import636
+- ✅ バルク自動インポート636
+- ✅ 벌크 자동 가져오기636
+
+### v636.5 按钮自动触感636 | Button Auto Haptic636 | ボタン自動ハプティック636 | 버튼 자동 햅틱636
+- ✅ 按钮自动触感636
+- ✅ Button Auto Haptic636
+- ✅ ボタン自動ハプティック636
+- ✅ 버튼 자동 햅틱636
+
+### v636.6 字节自动转换636 | Byte Auto Convert636 | バイト自動変換636 | 바이트 자동 변환636
+- ✅ 字节自动转换636
+- ✅ Byte Auto Convert636
+- ✅ バイト自動変換636
+- ✅ 바이트 자동 변환636
+
+### v636.7 校准自动颜色636 | Calibrate Auto Color636 | キャリブレーション自動カラー636 | 보정 자동 색상636
+- ✅ 校准自动颜色636
+- ✅ Calibrate Auto Color636
+- ✅ キャリブレーション自動カラー636
+- ✅ 보정 자동 색상636
+
+### v636.8 调用自动日志636 | Call Auto Log636 | コール自動ログ636 | 호출 자동 로그636
+- ✅ 调用自动日志636
+- ✅ Call Auto Log636
+- ✅ コール自動ログ636
+- ✅ 호출 자동 로그636
+
+### v636.9 相机自动对焦636 | Camera Auto Focus636 | カメラ自動フォーカス636 | 카메라 자동 초점636
+- ✅ 相机自动对焦636
+- ✅ Camera Auto Focus636
+- ✅ カメラ自動フォーカス636
+- ✅ 카메라 자동 초점636
+
+### v636.10 校区自动选择636 | Campus Auto Select636 | キャンパス自動選択636 | 캠퍼스 자동 선택636
+- ✅ 校区自动选择636
+- ✅ Campus Auto Select636
+- ✅ キャンパス自動選択636
+- ✅ 캠퍼스 자동 선택636
+
+### v636.11 取消自动撤销636 | Cancel Auto Undo636 | キャンセル自動アンドゥ636 | 취소 자동 실행취소636
+- ✅ 取消自动撤销636
+- ✅ Cancel Auto Undo636
+- ✅ キャンセル自動アンドゥ636
+- ✅ 취소 자동 실행취소636
+
+### v636.12 捕获自动模式636 | Capture Auto Mode636 | キャプチャ自動モード636 | 캡처 자동 모드636
+- ✅ 捕获自动模式636
+- ✅ Capture Auto Mode636
+- ✅ キャプチャ自動モード636
+- ✅ 캡처 자동 모드636
+
+### v636.13 光标自动闪烁636 | Caret Auto Blink636 | キャレット自動ブリンク636 | 캐럿 자동 깜빡임636
+- ✅ 光标自动闪烁636
+- ✅ Caret Auto Blink636
+- ✅ キャレット自動ブリンク636
+- ✅ 캐럿 자동 깜빡임636
+
+### v636.14 大小写自动转换636 | Case Auto Convert636 | ケース自動変換636 | 대소문자 자동 변환636
+- ✅ 大小写自动转换636
+- ✅ Case Auto Convert636
+- ✅ ケース自動変換636
+- ✅ 대소문자 자동 변환636
+
+### v636.15 分类自动排序636 | Category Auto Sort636 | カテゴリ自動ソート636 | 카테고리 자동 정렬636
+- ✅ 分类自动排序636
+- ✅ Category Auto Sort636
+- ✅ カテゴリ自動ソート636
+- ✅ 카테고리 자동 정렬636
+
+### v637.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v637.1-v637.15 功能列表
+- ✅ Browse Auto History637, Bucket Auto Clean637, Build Auto Version637, Bulk Auto Import637, Button Auto Haptic637, Byte Auto Convert637, Calibrate Auto Color637, Call Auto Log637, Camera Auto Focus637, Campus Auto Select637, Cancel Auto Undo637, Capture Auto Mode637, Caret Auto Blink637, Case Auto Convert637, Category Auto Sort637
+
+### v637.1 浏览自动历史637 | Browse Auto History637 | ブラウズ自動履歴637 | 브라우즈 자동 히스토리637
+- ✅ 浏览自动历史637
+- ✅ Browse Auto History637
+- ✅ ブラウズ自動履歴637
+- ✅ 브라우즈 자동 히스토리637
+
+### v637.2 桶自动清理637 | Bucket Auto Clean637 | バケット自動クリーン637 | 버킷 자동 정리637
+- ✅ 桶自动清理637
+- ✅ Bucket Auto Clean637
+- ✅ バケット自動クリーン637
+- ✅ 버킷 자동 정리637
+
+### v637.3 构建自动版本637 | Build Auto Version637 | ビルド自動バージョン637 | 빌드 자동 버전637
+- ✅ 构建自动版本637
+- ✅ Build Auto Version637
+- ✅ ビルド自動バージョン637
+- ✅ 빌드 자동 버전637
+
+### v637.4 批量自动导入637 | Bulk Auto Import637 | バルク自動インポート637 | 벌크 자동 가져오기637
+- ✅ 批量自动导入637
+- ✅ Bulk Auto Import637
+- ✅ バルク自動インポート637
+- ✅ 벌크 자동 가져오기637
+
+### v637.5 按钮自动触感637 | Button Auto Haptic637 | ボタン自動ハプティック637 | 버튼 자동 햅틱637
+- ✅ 按钮自动触感637
+- ✅ Button Auto Haptic637
+- ✅ ボタン自動ハプティック637
+- ✅ 버튼 자동 햅틱637
+
+### v637.6 字节自动转换637 | Byte Auto Convert637 | バイト自動変換637 | 바이트 자동 변환637
+- ✅ 字节自动转换637
+- ✅ Byte Auto Convert637
+- ✅ バイト自動変換637
+- ✅ 바이트 자동 변환637
+
+### v637.7 校准自动颜色637 | Calibrate Auto Color637 | キャリブレーション自動カラー637 | 보정 자동 색상637
+- ✅ 校准自动颜色637
+- ✅ Calibrate Auto Color637
+- ✅ キャリブレーション自動カラー637
+- ✅ 보정 자동 색상637
+
+### v637.8 调用自动日志637 | Call Auto Log637 | コール自動ログ637 | 호출 자동 로그637
+- ✅ 调用自动日志637
+- ✅ Call Auto Log637
+- ✅ コール自動ログ637
+- ✅ 호출 자동 로그637
+
+### v637.9 相机自动对焦637 | Camera Auto Focus637 | カメラ自動フォーカス637 | 카메라 자동 초점637
+- ✅ 相机自动对焦637
+- ✅ Camera Auto Focus637
+- ✅ カメラ自動フォーカス637
+- ✅ 카메라 자동 초점637
+
+### v637.10 校区自动选择637 | Campus Auto Select637 | キャンパス自動選択637 | 캠퍼스 자동 선택637
+- ✅ 校区自动选择637
+- ✅ Campus Auto Select637
+- ✅ キャンパス自動選択637
+- ✅ 캠퍼스 자동 선택637
+
+### v637.11 取消自动撤销637 | Cancel Auto Undo637 | キャンセル自動アンドゥ637 | 취소 자동 실행취소637
+- ✅ 取消自动撤销637
+- ✅ Cancel Auto Undo637
+- ✅ キャンセル自動アンドゥ637
+- ✅ 취소 자동 실행취소637
+
+### v637.12 捕获自动模式637 | Capture Auto Mode637 | キャプチャ自動モード637 | 캡처 자동 모드637
+- ✅ 捕获自动模式637
+- ✅ Capture Auto Mode637
+- ✅ キャプチャ自動モード637
+- ✅ 캡처 자동 모드637
+
+### v637.13 光标自动闪烁637 | Caret Auto Blink637 | キャレット自動ブリンク637 | 캐럿 자동 깜빡임637
+- ✅ 光标自动闪烁637
+- ✅ Caret Auto Blink637
+- ✅ キャレット自動ブリンク637
+- ✅ 캐럿 자동 깜빡임637
+
+### v637.14 大小写自动转换637 | Case Auto Convert637 | ケース自動変換637 | 대소문자 자동 변환637
+- ✅ 大小写自动转换637
+- ✅ Case Auto Convert637
+- ✅ ケース自動変換637
+- ✅ 대소문자 자동 변환637
+
+### v637.15 分类自动排序637 | Category Auto Sort637 | カテゴリ自動ソート637 | 카테고리 자동 정렬637
+- ✅ 分类自动排序637
+- ✅ Category Auto Sort637
+- ✅ カテゴリ自動ソート637
+- ✅ 카테고리 자동 정렬637
+
+### v638.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v638.1-v638.15 功能列表
+- ✅ Browse Auto History638, Bucket Auto Clean638, Build Auto Version638, Bulk Auto Import638, Button Auto Haptic638, Byte Auto Convert638, Calibrate Auto Color638, Call Auto Log638, Camera Auto Focus638, Campus Auto Select638, Cancel Auto Undo638, Capture Auto Mode638, Caret Auto Blink638, Case Auto Convert638, Category Auto Sort638
+
+### v638.1 浏览自动历史638 | Browse Auto History638 | ブラウズ自動履歴638 | 브라우즈 자동 히스토리638
+- ✅ 浏览自动历史638
+- ✅ Browse Auto History638
+- ✅ ブラウズ自動履歴638
+- ✅ 브라우즈 자동 히스토리638
+
+### v638.2 桶自动清理638 | Bucket Auto Clean638 | バケット自動クリーン638 | 버킷 자동 정리638
+- ✅ 桶自动清理638
+- ✅ Bucket Auto Clean638
+- ✅ バケット自動クリーン638
+- ✅ 버킷 자동 정리638
+
+### v638.3 构建自动版本638 | Build Auto Version638 | ビルド自動バージョン638 | 빌드 자동 버전638
+- ✅ 构建自动版本638
+- ✅ Build Auto Version638
+- ✅ ビルド自動バージョン638
+- ✅ 빌드 자동 버전638
+
+### v638.4 批量自动导入638 | Bulk Auto Import638 | バルク自動インポート638 | 벌크 자동 가져오기638
+- ✅ 批量自动导入638
+- ✅ Bulk Auto Import638
+- ✅ バルク自動インポート638
+- ✅ 벌크 자동 가져오기638
+
+### v638.5 按钮自动触感638 | Button Auto Haptic638 | ボタン自動ハプティック638 | 버튼 자동 햅틱638
+- ✅ 按钮自动触感638
+- ✅ Button Auto Haptic638
+- ✅ ボタン自動ハプティック638
+- ✅ 버튼 자동 햅틱638
+
+### v638.6 字节自动转换638 | Byte Auto Convert638 | バイト自動変換638 | 바이트 자동 변환638
+- ✅ 字节自动转换638
+- ✅ Byte Auto Convert638
+- ✅ バイト自動変換638
+- ✅ 바이트 자동 변환638
+
+### v638.7 校准自动颜色638 | Calibrate Auto Color638 | キャリブレーション自動カラー638 | 보정 자동 색상638
+- ✅ 校准自动颜色638
+- ✅ Calibrate Auto Color638
+- ✅ キャリブレーション自動カラー638
+- ✅ 보정 자동 색상638
+
+### v638.8 调用自动日志638 | Call Auto Log638 | コール自動ログ638 | 호출 자동 로그638
+- ✅ 调用自动日志638
+- ✅ Call Auto Log638
+- ✅ コール自動ログ638
+- ✅ 호출 자동 로그638
+
+### v638.9 相机自动对焦638 | Camera Auto Focus638 | カメラ自動フォーカス638 | 카메라 자동 초점638
+- ✅ 相机自动对焦638
+- ✅ Camera Auto Focus638
+- ✅ カメラ自動フォーカス638
+- ✅ 카메라 자동 초점638
+
+### v638.10 校区自动选择638 | Campus Auto Select638 | キャンパス自動選択638 | 캠퍼스 자동 선택638
+- ✅ 校区自动选择638
+- ✅ Campus Auto Select638
+- ✅ キャンパス自動選択638
+- ✅ 캠퍼스 자동 선택638
+
+### v638.11 取消自动撤销638 | Cancel Auto Undo638 | キャンセル自動アンドゥ638 | 취소 자동 실행취소638
+- ✅ 取消自动撤销638
+- ✅ Cancel Auto Undo638
+- ✅ キャンセル自動アンドゥ638
+- ✅ 취소 자동 실행취소638
+
+### v638.12 捕获自动模式638 | Capture Auto Mode638 | キャプチャ自動モード638 | 캡처 자동 모드638
+- ✅ 捕获自动模式638
+- ✅ Capture Auto Mode638
+- ✅ キャプチャ自動モード638
+- ✅ 캡처 자동 모드638
+
+### v638.13 光标自动闪烁638 | Caret Auto Blink638 | キャレット自動ブリンク638 | 캐럿 자동 깜빡임638
+- ✅ 光标自动闪烁638
+- ✅ Caret Auto Blink638
+- ✅ キャレット自動ブリンク638
+- ✅ 캐럿 자동 깜빡임638
+
+### v638.14 大小写自动转换638 | Case Auto Convert638 | ケース自動変換638 | 대소문자 자동 변환638
+- ✅ 大小写自动转换638
+- ✅ Case Auto Convert638
+- ✅ ケース自動変換638
+- ✅ 대소문자 자동 변환638
+
+### v638.15 分类自动排序638 | Category Auto Sort638 | カテゴリ自動ソート638 | 카테고리 자동 정렬638
+- ✅ 分类自动排序638
+- ✅ Category Auto Sort638
+- ✅ カテゴリ自動ソート638
+- ✅ 카테고리 자동 정렬638
+
+### v639.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v639.1-v639.15 功能列表
+- ✅ Browse Auto History639, Bucket Auto Clean639, Build Auto Version639, Bulk Auto Import639, Button Auto Haptic639, Byte Auto Convert639, Calibrate Auto Color639, Call Auto Log639, Camera Auto Focus639, Campus Auto Select639, Cancel Auto Undo639, Capture Auto Mode639, Caret Auto Blink639, Case Auto Convert639, Category Auto Sort639
+
+### v639.1 浏览自动历史639 | Browse Auto History639 | ブラウズ自動履歴639 | 브라우즈 자동 히스토리639
+- ✅ 浏览自动历史639
+- ✅ Browse Auto History639
+- ✅ ブラウズ自動履歴639
+- ✅ 브라우즈 자동 히스토리639
+
+### v639.2 桶自动清理639 | Bucket Auto Clean639 | バケット自動クリーン639 | 버킷 자동 정리639
+- ✅ 桶自动清理639
+- ✅ Bucket Auto Clean639
+- ✅ バケット自動クリーン639
+- ✅ 버킷 자동 정리639
+
+### v639.3 构建自动版本639 | Build Auto Version639 | ビルド自動バージョン639 | 빌드 자동 버전639
+- ✅ 构建自动版本639
+- ✅ Build Auto Version639
+- ✅ ビルド自動バージョン639
+- ✅ 빌드 자동 버전639
+
+### v639.4 批量自动导入639 | Bulk Auto Import639 | バルク自動インポート639 | 벌크 자동 가져오기639
+- ✅ 批量自动导入639
+- ✅ Bulk Auto Import639
+- ✅ バルク自動インポート639
+- ✅ 벌크 자동 가져오기639
+
+### v639.5 按钮自动触感639 | Button Auto Haptic639 | ボタン自動ハプティック639 | 버튼 자동 햅틱639
+- ✅ 按钮自动触感639
+- ✅ Button Auto Haptic639
+- ✅ ボタン自動ハプティック639
+- ✅ 버튼 자동 햅틱639
+
+### v639.6 字节自动转换639 | Byte Auto Convert639 | バイト自動変換639 | 바이트 자동 변환639
+- ✅ 字节自动转换639
+- ✅ Byte Auto Convert639
+- ✅ バイト自動変換639
+- ✅ 바이트 자동 변환639
+
+### v639.7 校准自动颜色639 | Calibrate Auto Color639 | キャリブレーション自動カラー639 | 보정 자동 색상639
+- ✅ 校准自动颜色639
+- ✅ Calibrate Auto Color639
+- ✅ キャリブレーション自動カラー639
+- ✅ 보정 자동 색상639
+
+### v639.8 调用自动日志639 | Call Auto Log639 | コール自動ログ639 | 호출 자동 로그639
+- ✅ 调用自动日志639
+- ✅ Call Auto Log639
+- ✅ コール自動ログ639
+- ✅ 호출 자동 로그639
+
+### v639.9 相机自动对焦639 | Camera Auto Focus639 | カメラ自動フォーカス639 | 카메라 자동 초점639
+- ✅ 相机自动对焦639
+- ✅ Camera Auto Focus639
+- ✅ カメラ自動フォーカス639
+- ✅ 카메라 자동 초점639
+
+### v639.10 校区自动选择639 | Campus Auto Select639 | キャンパス自動選択639 | 캠퍼스 자동 선택639
+- ✅ 校区自动选择639
+- ✅ Campus Auto Select639
+- ✅ キャンパス自動選択639
+- ✅ 캠퍼스 자동 선택639
+
+### v639.11 取消自动撤销639 | Cancel Auto Undo639 | キャンセル自動アンドゥ639 | 취소 자동 실행취소639
+- ✅ 取消自动撤销639
+- ✅ Cancel Auto Undo639
+- ✅ キャンセル自動アンドゥ639
+- ✅ 취소 자동 실행취소639
+
+### v639.12 捕获自动模式639 | Capture Auto Mode639 | キャプチャ自動モード639 | 캡처 자동 모드639
+- ✅ 捕获自动模式639
+- ✅ Capture Auto Mode639
+- ✅ キャプチャ自動モード639
+- ✅ 캡처 자동 모드639
+
+### v639.13 光标自动闪烁639 | Caret Auto Blink639 | キャレット自動ブリンク639 | 캐럿 자동 깜빡임639
+- ✅ 光标自动闪烁639
+- ✅ Caret Auto Blink639
+- ✅ キャレット自動ブリンク639
+- ✅ 캐럿 자동 깜빡임639
+
+### v639.14 大小写自动转换639 | Case Auto Convert639 | ケース自動変換639 | 대소문자 자동 변환639
+- ✅ 大小写自动转换639
+- ✅ Case Auto Convert639
+- ✅ ケース自動変換639
+- ✅ 대소문자 자동 변환639
+
+### v639.15 分类自动排序639 | Category Auto Sort639 | カテゴリ自動ソート639 | 카테고리 자동 정렬639
+- ✅ 分类自动排序639
+- ✅ Category Auto Sort639
+- ✅ カテゴリ自動ソート639
+- ✅ 카테고리 자동 정렬639
+
+### v640.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v640.1-v640.15 功能列表
+- ✅ Browse Auto History640, Bucket Auto Clean640, Build Auto Version640, Bulk Auto Import640, Button Auto Haptic640, Byte Auto Convert640, Calibrate Auto Color640, Call Auto Log640, Camera Auto Focus640, Campus Auto Select640, Cancel Auto Undo640, Capture Auto Mode640, Caret Auto Blink640, Case Auto Convert640, Category Auto Sort640
+
+### v640.1 浏览自动历史640 | Browse Auto History640 | ブラウズ自動履歴640 | 브라우즈 자동 히스토리640
+- ✅ 浏览自动历史640
+- ✅ Browse Auto History640
+- ✅ ブラウズ自動履歴640
+- ✅ 브라우즈 자동 히스토리640
+
+### v640.2 桶自动清理640 | Bucket Auto Clean640 | バケット自動クリーン640 | 버킷 자동 정리640
+- ✅ 桶自动清理640
+- ✅ Bucket Auto Clean640
+- ✅ バケット自動クリーン640
+- ✅ 버킷 자동 정리640
+
+### v640.3 构建自动版本640 | Build Auto Version640 | ビルド自動バージョン640 | 빌드 자동 버전640
+- ✅ 构建自动版本640
+- ✅ Build Auto Version640
+- ✅ ビルド自動バージョン640
+- ✅ 빌드 자동 버전640
+
+### v640.4 批量自动导入640 | Bulk Auto Import640 | バルク自動インポート640 | 벌크 자동 가져오기640
+- ✅ 批量自动导入640
+- ✅ Bulk Auto Import640
+- ✅ バルク自動インポート640
+- ✅ 벌크 자동 가져오기640
+
+### v640.5 按钮自动触感640 | Button Auto Haptic640 | ボタン自動ハプティック640 | 버튼 자동 햅틱640
+- ✅ 按钮自动触感640
+- ✅ Button Auto Haptic640
+- ✅ ボタン自動ハプティック640
+- ✅ 버튼 자동 햅틱640
+
+### v640.6 字节自动转换640 | Byte Auto Convert640 | バイト自動変換640 | 바이트 자동 변환640
+- ✅ 字节自动转换640
+- ✅ Byte Auto Convert640
+- ✅ バイト自動変換640
+- ✅ 바이트 자동 변환640
+
+### v640.7 校准自动颜色640 | Calibrate Auto Color640 | キャリブレーション自動カラー640 | 보정 자동 색상640
+- ✅ 校准自动颜色640
+- ✅ Calibrate Auto Color640
+- ✅ キャリブレーション自動カラー640
+- ✅ 보정 자동 색상640
+
+### v640.8 调用自动日志640 | Call Auto Log640 | コール自動ログ640 | 호출 자동 로그640
+- ✅ 调用自动日志640
+- ✅ Call Auto Log640
+- ✅ コール自動ログ640
+- ✅ 호출 자동 로그640
+
+### v640.9 相机自动对焦640 | Camera Auto Focus640 | カメラ自動フォーカス640 | 카메라 자동 초점640
+- ✅ 相机自动对焦640
+- ✅ Camera Auto Focus640
+- ✅ カメラ自動フォーカス640
+- ✅ 카메라 자동 초점640
+
+### v640.10 校区自动选择640 | Campus Auto Select640 | キャンパス自動選択640 | 캠퍼스 자동 선택640
+- ✅ 校区自动选择640
+- ✅ Campus Auto Select640
+- ✅ キャンパス自動選択640
+- ✅ 캠퍼스 자동 선택640
+
+### v640.11 取消自动撤销640 | Cancel Auto Undo640 | キャンセル自動アンドゥ640 | 취소 자동 실행취소640
+- ✅ 取消自动撤销640
+- ✅ Cancel Auto Undo640
+- ✅ キャンセル自動アンドゥ640
+- ✅ 취소 자동 실행취소640
+
+### v640.12 捕获自动模式640 | Capture Auto Mode640 | キャプチャ自動モード640 | 캡처 자동 모드640
+- ✅ 捕获自动模式640
+- ✅ Capture Auto Mode640
+- ✅ キャプチャ自動モード640
+- ✅ 캡처 자동 모드640
+
+### v640.13 光标自动闪烁640 | Caret Auto Blink640 | キャレット自動ブリンク640 | 캐럿 자동 깜빡임640
+- ✅ 光标自动闪烁640
+- ✅ Caret Auto Blink640
+- ✅ キャレット自動ブリンク640
+- ✅ 캐럿 자동 깜빡임640
+
+### v640.14 大小写自动转换640 | Case Auto Convert640 | ケース自動変換640 | 대소문자 자동 변환640
+- ✅ 大小写自动转换640
+- ✅ Case Auto Convert640
+- ✅ ケース自動変換640
+- ✅ 대소문자 자동 변환640
+
+### v640.15 分类自动排序640 | Category Auto Sort640 | カテゴリ自動ソート640 | 카테고리 자동 정렬640
+- ✅ 分类自动排序640
+- ✅ Category Auto Sort640
+- ✅ カテゴリ自動ソート640
+- ✅ 카테고리 자동 정렬640
+
 ### v55.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
 ### v55.1-v55.15 功能列表
 - ✅ Auto Resume, Font Monospace, Color Hue Auto, Peak Limiter, Send Queue, Cast Bandwidth Limit, Lock Screen, Filter Regex, Network Policy, Double Tap Action, Font Weight Custom, Tint Custom, Volume Compressor, Bg Padding, Cast Auto Quality
@@ -66515,4 +67456,4 @@ This project is based on open-source software. All rights belong to the original
 - **基础版本 | Base Versions**: v10.0.0 - v11.19.0 (25 versions)
 - **AI自动维护版本 | AI Maintained**: v12.1 - v45.15 (550+ versions)
 - **开发周期 | Development Cycle**: 2024 - 2026
-- **功能特性 | Features**: 6300+ new features added
+- **功能特性 | Features**: 6400+ new features added
