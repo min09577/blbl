@@ -17048,6 +17048,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V170SUBTITLEKARAOKEBORDER, false)
         set(value) = prefs.edit().putBoolean(KEY_V170SUBTITLEKARAOKEBORDER, value).apply()
 
+    var v171audioNormalizerToggle171: Boolean
+        get() = prefs.getBoolean(KEY_V171AUDIONORMALIZERTOGGLE171, false)
+        set(value) = prefs.edit().putBoolean(KEY_V171AUDIONORMALIZERTOGGLE171, value).apply()
+
+    var v171danmakuScrollDirection: Int
+        get() = prefs.getInt(KEY_V171DANMAKUSCROLLDIRECTION, 0)
+        set(value) = prefs.edit().putInt(KEY_V171DANMAKUSCROLLDIRECTION, value).apply()
+
+    var v171subtitleFontSpacing: Int
+        get() = prefs.getInt(KEY_V171SUBTITLEFONTSPACING, 0)
+        set(value) = prefs.edit().putInt(KEY_V171SUBTITLEFONTSPACING, value).apply()
+
+    var v171gestureTapDoubleAction: Int
+        get() = prefs.getInt(KEY_V171GESTURETAPDOUBLEACTION, 0)
+        set(value) = prefs.edit().putInt(KEY_V171GESTURETAPDOUBLEACTION, value).apply()
+
+    var v171castVideoPIPFPSLimit: Int
+        get() = prefs.getInt(KEY_V171CASTVIDEOPIPFPSLIMIT, 0)
+        set(value) = prefs.edit().putInt(KEY_V171CASTVIDEOPIPFPSLIMIT, value).apply()
+
+    var v171playlistAutoAddRelated: Boolean
+        get() = prefs.getBoolean(KEY_V171PLAYLISTAUTOADDRELATED, false)
+        set(value) = prefs.edit().putBoolean(KEY_V171PLAYLISTAUTOADDRELATED, value).apply()
+
+    var v171cacheDiskQuotaMB: Int
+        get() = prefs.getInt(KEY_V171CACHEDISKQUOTAMB, 0)
+        set(value) = prefs.edit().putInt(KEY_V171CACHEDISKQUOTAMB, value).apply()
+
+    var v171progressBarScrubPreview: Boolean
+        get() = prefs.getBoolean(KEY_V171PROGRESSBARSCRUBPREVIEW, false)
+        set(value) = prefs.edit().putBoolean(KEY_V171PROGRESSBARSCRUBPREVIEW, value).apply()
+
+    var v171volumeBalanceLR: Int
+        get() = prefs.getInt(KEY_V171VOLUMEBALANCELR, 50)
+        set(value) = prefs.edit().putInt(KEY_V171VOLUMEBALANCELR, value).apply()
+
+    var v171historyGroupByDate: Boolean
+        get() = prefs.getBoolean(KEY_V171HISTORYGROUPBYDATE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V171HISTORYGROUPBYDATE, value).apply()
+
+    var v171playbackAudioOffset: Int
+        get() = prefs.getInt(KEY_V171PLAYBACKAUDIOOFFSET, 0)
+        set(value) = prefs.edit().putInt(KEY_V171PLAYBACKAUDIOOFFSET, value).apply()
+
+    var v171screenshotOverlayInfo: Boolean
+        get() = prefs.getBoolean(KEY_V171SCREENSHOTOVERLAYINFO, false)
+        set(value) = prefs.edit().putBoolean(KEY_V171SCREENSHOTOVERLAYINFO, value).apply()
+
+    var v171videoContrastToggle171: Boolean
+        get() = prefs.getBoolean(KEY_V171VIDEOCONTRASTTOGGLE171, false)
+        set(value) = prefs.edit().putBoolean(KEY_V171VIDEOCONTRASTTOGGLE171, value).apply()
+
+    var v171danmakuScrollSpeed: Int
+        get() = prefs.getInt(KEY_V171DANMAKUSCROLLSPEED, 0)
+        set(value) = prefs.edit().putInt(KEY_V171DANMAKUSCROLLSPEED, value).apply()
+
+    var v171subtitleLineSpacing: Int
+        get() = prefs.getInt(KEY_V171SUBTITLELINESPACING, 0)
+        set(value) = prefs.edit().putInt(KEY_V171SUBTITLELINESPACING, value).apply()
+
+    var v172audioNormalizerTarget172: Int
+        get() = prefs.getInt(KEY_V172AUDIONORMALIZERTARGET172, 0)
+        set(value) = prefs.edit().putInt(KEY_V172AUDIONORMALIZERTARGET172, value).apply()
+
+    var v172danmakuScrollSpeed172: Int
+        get() = prefs.getInt(KEY_V172DANMAKUSCROLLSPEED172, 0)
+        set(value) = prefs.edit().putInt(KEY_V172DANMAKUSCROLLSPEED172, value).apply()
+
+    var v172subtitleLineSpacing172: Int
+        get() = prefs.getInt(KEY_V172SUBTITLELINESPACING172, 0)
+        set(value) = prefs.edit().putInt(KEY_V172SUBTITLELINESPACING172, value).apply()
+
+    var v172gestureTapDoubleAction172: Int
+        get() = prefs.getInt(KEY_V172GESTURETAPDOUBLEACTION172, 0)
+        set(value) = prefs.edit().putInt(KEY_V172GESTURETAPDOUBLEACTION172, value).apply()
+
+    var v172castVideoPIPFPSLimit172: Int
+        get() = prefs.getInt(KEY_V172CASTVIDEOPIPFPSLIMIT172, 0)
+        set(value) = prefs.edit().putInt(KEY_V172CASTVIDEOPIPFPSLIMIT172, value).apply()
+
+    var v172playlistAutoAddRelated172: Boolean
+        get() = prefs.getBoolean(KEY_V172PLAYLISTAUTOADDRELATED172, false)
+        set(value) = prefs.edit().putBoolean(KEY_V172PLAYLISTAUTOADDRELATED172, value).apply()
+
+    var v172cacheDiskQuotaMB172: Int
+        get() = prefs.getInt(KEY_V172CACHEDISKQUOTAMB172, 0)
+        set(value) = prefs.edit().putInt(KEY_V172CACHEDISKQUOTAMB172, value).apply()
+
+    var v172progressBarScrubPreview172: Boolean
+        get() = prefs.getBoolean(KEY_V172PROGRESSBARSCRUBPREVIEW172, false)
+        set(value) = prefs.edit().putBoolean(KEY_V172PROGRESSBARSCRUBPREVIEW172, value).apply()
+
+    var v172volumeBalanceLR172: Int
+        get() = prefs.getInt(KEY_V172VOLUMEBALANCELR172, 50)
+        set(value) = prefs.edit().putInt(KEY_V172VOLUMEBALANCELR172, value).apply()
+
+    var v172historyGroupByDate172: Boolean
+        get() = prefs.getBoolean(KEY_V172HISTORYGROUPBYDATE172, false)
+        set(value) = prefs.edit().putBoolean(KEY_V172HISTORYGROUPBYDATE172, value).apply()
+
+    var v172playbackAudioOffset172: Int
+        get() = prefs.getInt(KEY_V172PLAYBACKAUDIOOFFSET172, 0)
+        set(value) = prefs.edit().putInt(KEY_V172PLAYBACKAUDIOOFFSET172, value).apply()
+
+    var v172screenshotOverlayInfo172: Boolean
+        get() = prefs.getBoolean(KEY_V172SCREENSHOTOVERLAYINFO172, false)
+        set(value) = prefs.edit().putBoolean(KEY_V172SCREENSHOTOVERLAYINFO172, value).apply()
+
+    var v172videoContrastLevel172: Int
+        get() = prefs.getInt(KEY_V172VIDEOCONTRASTLEVEL172, 0)
+        set(value) = prefs.edit().putInt(KEY_V172VIDEOCONTRASTLEVEL172, value).apply()
+
+    var v172danmakuScrollOverlap: Boolean
+        get() = prefs.getBoolean(KEY_V172DANMAKUSCROLLOVERLAP, false)
+        set(value) = prefs.edit().putBoolean(KEY_V172DANMAKUSCROLLOVERLAP, value).apply()
+
+    var v172subtitleBackgroundPadding: Int
+        get() = prefs.getInt(KEY_V172SUBTITLEBACKGROUNDPADDING, 0)
+        set(value) = prefs.edit().putInt(KEY_V172SUBTITLEBACKGROUNDPADDING, value).apply()
+
+    var v173audioNormalizerStrength173: Int
+        get() = prefs.getInt(KEY_V173AUDIONORMALIZERSTRENGTH173, 0)
+        set(value) = prefs.edit().putInt(KEY_V173AUDIONORMALIZERSTRENGTH173, value).apply()
+
+    var v173danmakuScrollOverlap173: Boolean
+        get() = prefs.getBoolean(KEY_V173DANMAKUSCROLLOVERLAP173, false)
+        set(value) = prefs.edit().putBoolean(KEY_V173DANMAKUSCROLLOVERLAP173, value).apply()
+
+    var v173subtitleBackgroundPadding173: Int
+        get() = prefs.getInt(KEY_V173SUBTITLEBACKGROUNDPADDING173, 0)
+        set(value) = prefs.edit().putInt(KEY_V173SUBTITLEBACKGROUNDPADDING173, value).apply()
+
+    var v173gestureTapTripleAction: Int
+        get() = prefs.getInt(KEY_V173GESTURETAPTRIPLEACTION, 0)
+        set(value) = prefs.edit().putInt(KEY_V173GESTURETAPTRIPLEACTION, value).apply()
+
+    var v173castVideoPIPConnectAuto: Boolean
+        get() = prefs.getBoolean(KEY_V173CASTVIDEOPIPCONNECTAUTO, false)
+        set(value) = prefs.edit().putBoolean(KEY_V173CASTVIDEOPIPCONNECTAUTO, value).apply()
+
+    var v173playlistAutoNextOnEnd: Boolean
+        get() = prefs.getBoolean(KEY_V173PLAYLISTAUTONEXTONEND, false)
+        set(value) = prefs.edit().putBoolean(KEY_V173PLAYLISTAUTONEXTONEND, value).apply()
+
+    var v173cacheCompressToggle173: Boolean
+        get() = prefs.getBoolean(KEY_V173CACHECOMPRESSTOGGLE173, false)
+        set(value) = prefs.edit().putBoolean(KEY_V173CACHECOMPRESSTOGGLE173, value).apply()
+
+    var v173progressBarScrubPreviewSize: Int
+        get() = prefs.getInt(KEY_V173PROGRESSBARSCRUBPREVIEWSIZE, 0)
+        set(value) = prefs.edit().putInt(KEY_V173PROGRESSBARSCRUBPREVIEWSIZE, value).apply()
+
+    var v173volumeNormalizeTrack: Boolean
+        get() = prefs.getBoolean(KEY_V173VOLUMENORMALIZETRACK, false)
+        set(value) = prefs.edit().putBoolean(KEY_V173VOLUMENORMALIZETRACK, value).apply()
+
+    var v173historyGroupByUploader: Boolean
+        get() = prefs.getBoolean(KEY_V173HISTORYGROUPBYUPLOADER, false)
+        set(value) = prefs.edit().putBoolean(KEY_V173HISTORYGROUPBYUPLOADER, value).apply()
+
+    var v173playbackSubtitleOffset: Int
+        get() = prefs.getInt(KEY_V173PLAYBACKSUBTITLEOFFSET, 0)
+        set(value) = prefs.edit().putInt(KEY_V173PLAYBACKSUBTITLEOFFSET, value).apply()
+
+    var v173screenshotOverlayDate: Boolean
+        get() = prefs.getBoolean(KEY_V173SCREENSHOTOVERLAYDATE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V173SCREENSHOTOVERLAYDATE, value).apply()
+
+    var v173videoContrastLevel173: Int
+        get() = prefs.getInt(KEY_V173VIDEOCONTRASTLEVEL173, 0)
+        set(value) = prefs.edit().putInt(KEY_V173VIDEOCONTRASTLEVEL173, value).apply()
+
+    var v173danmakuScrollMaxLines: Int
+        get() = prefs.getInt(KEY_V173DANMAKUSCROLLMAXLINES, 0)
+        set(value) = prefs.edit().putInt(KEY_V173DANMAKUSCROLLMAXLINES, value).apply()
+
+    var v173subtitleBackgroundRound: Int
+        get() = prefs.getInt(KEY_V173SUBTITLEBACKGROUNDROUND, 0)
+        set(value) = prefs.edit().putInt(KEY_V173SUBTITLEBACKGROUNDROUND, value).apply()
+
+    var v174audioNormalizerAttack174: Int
+        get() = prefs.getInt(KEY_V174AUDIONORMALIZERATTACK174, 0)
+        set(value) = prefs.edit().putInt(KEY_V174AUDIONORMALIZERATTACK174, value).apply()
+
+    var v174danmakuScrollMaxLines174: Int
+        get() = prefs.getInt(KEY_V174DANMAKUSCROLLMAXLINES174, 0)
+        set(value) = prefs.edit().putInt(KEY_V174DANMAKUSCROLLMAXLINES174, value).apply()
+
+    var v174subtitleBackgroundRound174: Int
+        get() = prefs.getInt(KEY_V174SUBTITLEBACKGROUNDROUND174, 0)
+        set(value) = prefs.edit().putInt(KEY_V174SUBTITLEBACKGROUNDROUND174, value).apply()
+
+    var v174gestureTapTripleAction174: Int
+        get() = prefs.getInt(KEY_V174GESTURETAPTRIPLEACTION174, 0)
+        set(value) = prefs.edit().putInt(KEY_V174GESTURETAPTRIPLEACTION174, value).apply()
+
+    var v174castVideoPIPConnectAuto174: Boolean
+        get() = prefs.getBoolean(KEY_V174CASTVIDEOPIPCONNECTAUTO174, false)
+        set(value) = prefs.edit().putBoolean(KEY_V174CASTVIDEOPIPCONNECTAUTO174, value).apply()
+
+    var v174playlistAutoNextOnEnd174: Boolean
+        get() = prefs.getBoolean(KEY_V174PLAYLISTAUTONEXTONEND174, false)
+        set(value) = prefs.edit().putBoolean(KEY_V174PLAYLISTAUTONEXTONEND174, value).apply()
+
+    var v174cacheCompressLevel174: Int
+        get() = prefs.getInt(KEY_V174CACHECOMPRESSLEVEL174, 0)
+        set(value) = prefs.edit().putInt(KEY_V174CACHECOMPRESSLEVEL174, value).apply()
+
+    var v174progressBarScrubPreviewText: Boolean
+        get() = prefs.getBoolean(KEY_V174PROGRESSBARSCRUBPREVIEWTEXT, false)
+        set(value) = prefs.edit().putBoolean(KEY_V174PROGRESSBARSCRUBPREVIEWTEXT, value).apply()
+
+    var v174volumeNormalizeTrack174: Boolean
+        get() = prefs.getBoolean(KEY_V174VOLUMENORMALIZETRACK174, false)
+        set(value) = prefs.edit().putBoolean(KEY_V174VOLUMENORMALIZETRACK174, value).apply()
+
+    var v174historyGroupByUploader174: Boolean
+        get() = prefs.getBoolean(KEY_V174HISTORYGROUPBYUPLOADER174, false)
+        set(value) = prefs.edit().putBoolean(KEY_V174HISTORYGROUPBYUPLOADER174, value).apply()
+
+    var v174playbackSubtitleOffset174: Int
+        get() = prefs.getInt(KEY_V174PLAYBACKSUBTITLEOFFSET174, 0)
+        set(value) = prefs.edit().putInt(KEY_V174PLAYBACKSUBTITLEOFFSET174, value).apply()
+
+    var v174screenshotOverlayTitle: Boolean
+        get() = prefs.getBoolean(KEY_V174SCREENSHOTOVERLAYTITLE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V174SCREENSHOTOVERLAYTITLE, value).apply()
+
+    var v174videoSaturationToggle174: Boolean
+        get() = prefs.getBoolean(KEY_V174VIDEOSATURATIONTOGGLE174, false)
+        set(value) = prefs.edit().putBoolean(KEY_V174VIDEOSATURATIONTOGGLE174, value).apply()
+
+    var v174danmakuScrollOverlapMode: Int
+        get() = prefs.getInt(KEY_V174DANMAKUSCROLLOVERLAPMODE, 0)
+        set(value) = prefs.edit().putInt(KEY_V174DANMAKUSCROLLOVERLAPMODE, value).apply()
+
+    var v174subtitleShadowToggle174: Boolean
+        get() = prefs.getBoolean(KEY_V174SUBTITLESHADOWTOGGLE174, false)
+        set(value) = prefs.edit().putBoolean(KEY_V174SUBTITLESHADOWTOGGLE174, value).apply()
+
+    var v175audioCompressorRatio175: Int
+        get() = prefs.getInt(KEY_V175AUDIOCOMPRESSORRATIO175, 0)
+        set(value) = prefs.edit().putInt(KEY_V175AUDIOCOMPRESSORRATIO175, value).apply()
+
+    var v175danmakuScrollOverlapMode175: Int
+        get() = prefs.getInt(KEY_V175DANMAKUSCROLLOVERLAPMODE175, 0)
+        set(value) = prefs.edit().putInt(KEY_V175DANMAKUSCROLLOVERLAPMODE175, value).apply()
+
+    var v175subtitleShadowToggle175: Boolean
+        get() = prefs.getBoolean(KEY_V175SUBTITLESHADOWTOGGLE175, false)
+        set(value) = prefs.edit().putBoolean(KEY_V175SUBTITLESHADOWTOGGLE175, value).apply()
+
+    var v175gestureDoubleTapSeek: Int
+        get() = prefs.getInt(KEY_V175GESTUREDOUBLETAPSEEK, 0)
+        set(value) = prefs.edit().putInt(KEY_V175GESTUREDOUBLETAPSEEK, value).apply()
+
+    var v175castVideoPIPDisconnectAction: Int
+        get() = prefs.getInt(KEY_V175CASTVIDEOPIPDISCONNECTACTION, 0)
+        set(value) = prefs.edit().putInt(KEY_V175CASTVIDEOPIPDISCONNECTACTION, value).apply()
+
+    var v175playlistSkipOnError: Boolean
+        get() = prefs.getBoolean(KEY_V175PLAYLISTSKIPONERROR, false)
+        set(value) = prefs.edit().putBoolean(KEY_V175PLAYLISTSKIPONERROR, value).apply()
+
+    var v175cacheCompressLevel175: Int
+        get() = prefs.getInt(KEY_V175CACHECOMPRESSLEVEL175, 0)
+        set(value) = prefs.edit().putInt(KEY_V175CACHECOMPRESSLEVEL175, value).apply()
+
+    var v175progressBarScrubHaptic: Boolean
+        get() = prefs.getBoolean(KEY_V175PROGRESSBARSCRUBHAPTIC, false)
+        set(value) = prefs.edit().putBoolean(KEY_V175PROGRESSBARSCRUBHAPTIC, value).apply()
+
+    var v175volumeNormalizeAlbum: Boolean
+        get() = prefs.getBoolean(KEY_V175VOLUMENORMALIZEALBUM, false)
+        set(value) = prefs.edit().putBoolean(KEY_V175VOLUMENORMALIZEALBUM, value).apply()
+
+    var v175historyFilterByDuration: Boolean
+        get() = prefs.getBoolean(KEY_V175HISTORYFILTERBYDURATION, false)
+        set(value) = prefs.edit().putBoolean(KEY_V175HISTORYFILTERBYDURATION, value).apply()
+
+    var v175playbackVideoOffset: Int
+        get() = prefs.getInt(KEY_V175PLAYBACKVIDEOOFFSET, 0)
+        set(value) = prefs.edit().putInt(KEY_V175PLAYBACKVIDEOOFFSET, value).apply()
+
+    var v175screenshotOverlayChannel: Boolean
+        get() = prefs.getBoolean(KEY_V175SCREENSHOTOVERLAYCHANNEL, false)
+        set(value) = prefs.edit().putBoolean(KEY_V175SCREENSHOTOVERLAYCHANNEL, value).apply()
+
+    var v175videoSaturationLevel175: Int
+        get() = prefs.getInt(KEY_V175VIDEOSATURATIONLEVEL175, 0)
+        set(value) = prefs.edit().putInt(KEY_V175VIDEOSATURATIONLEVEL175, value).apply()
+
+    var v175danmakuScrollFilter: Int
+        get() = prefs.getInt(KEY_V175DANMAKUSCROLLFILTER, 0)
+        set(value) = prefs.edit().putInt(KEY_V175DANMAKUSCROLLFILTER, value).apply()
+
+    var v175subtitleShadowColor: Int
+        get() = prefs.getInt(KEY_V175SUBTITLESHADOWCOLOR, 0)
+        set(value) = prefs.edit().putInt(KEY_V175SUBTITLESHADOWCOLOR, value).apply()
+
+    var v176audioCompressorRatio176: Int
+        get() = prefs.getInt(KEY_V176AUDIOCOMPRESSORRATIO176, 0)
+        set(value) = prefs.edit().putInt(KEY_V176AUDIOCOMPRESSORRATIO176, value).apply()
+
+    var v176danmakuScrollFilter176: Int
+        get() = prefs.getInt(KEY_V176DANMAKUSCROLLFILTER176, 0)
+        set(value) = prefs.edit().putInt(KEY_V176DANMAKUSCROLLFILTER176, value).apply()
+
+    var v176subtitleShadowColor176: Int
+        get() = prefs.getInt(KEY_V176SUBTITLESHADOWCOLOR176, 0)
+        set(value) = prefs.edit().putInt(KEY_V176SUBTITLESHADOWCOLOR176, value).apply()
+
+    var v176gestureDoubleTapSeek176: Int
+        get() = prefs.getInt(KEY_V176GESTUREDOUBLETAPSEEK176, 0)
+        set(value) = prefs.edit().putInt(KEY_V176GESTUREDOUBLETAPSEEK176, value).apply()
+
+    var v176castVideoPIPReconnect: Boolean
+        get() = prefs.getBoolean(KEY_V176CASTVIDEOPIPRECONNECT, false)
+        set(value) = prefs.edit().putBoolean(KEY_V176CASTVIDEOPIPRECONNECT, value).apply()
+
+    var v176playlistSkipOnError176: Boolean
+        get() = prefs.getBoolean(KEY_V176PLAYLISTSKIPONERROR176, false)
+        set(value) = prefs.edit().putBoolean(KEY_V176PLAYLISTSKIPONERROR176, value).apply()
+
+    var v176cacheStreamBufferSize: Int
+        get() = prefs.getInt(KEY_V176CACHESTREAMBUFFERSIZE, 0)
+        set(value) = prefs.edit().putInt(KEY_V176CACHESTREAMBUFFERSIZE, value).apply()
+
+    var v176progressBarScrubHaptic176: Boolean
+        get() = prefs.getBoolean(KEY_V176PROGRESSBARSCRUBHAPTIC176, false)
+        set(value) = prefs.edit().putBoolean(KEY_V176PROGRESSBARSCRUBHAPTIC176, value).apply()
+
+    var v176volumeNormalizeAlbum176: Boolean
+        get() = prefs.getBoolean(KEY_V176VOLUMENORMALIZEALBUM176, false)
+        set(value) = prefs.edit().putBoolean(KEY_V176VOLUMENORMALIZEALBUM176, value).apply()
+
+    var v176historyFilterByDuration176: Boolean
+        get() = prefs.getBoolean(KEY_V176HISTORYFILTERBYDURATION176, false)
+        set(value) = prefs.edit().putBoolean(KEY_V176HISTORYFILTERBYDURATION176, value).apply()
+
+    var v176playbackVideoOffset176: Int
+        get() = prefs.getInt(KEY_V176PLAYBACKVIDEOOFFSET176, 0)
+        set(value) = prefs.edit().putInt(KEY_V176PLAYBACKVIDEOOFFSET176, value).apply()
+
+    var v176screenshotOverlayQuality: Boolean
+        get() = prefs.getBoolean(KEY_V176SCREENSHOTOVERLAYQUALITY, false)
+        set(value) = prefs.edit().putBoolean(KEY_V176SCREENSHOTOVERLAYQUALITY, value).apply()
+
+    var v176videoSaturationLevel176: Int
+        get() = prefs.getInt(KEY_V176VIDEOSATURATIONLEVEL176, 0)
+        set(value) = prefs.edit().putInt(KEY_V176VIDEOSATURATIONLEVEL176, value).apply()
+
+    var v176danmakuScrollHideOnAction: Boolean
+        get() = prefs.getBoolean(KEY_V176DANMAKUSCROLLHIDEONACTION, false)
+        set(value) = prefs.edit().putBoolean(KEY_V176DANMAKUSCROLLHIDEONACTION, value).apply()
+
+    var v176subtitleShadowBlur: Int
+        get() = prefs.getInt(KEY_V176SUBTITLESHADOWBLUR, 0)
+        set(value) = prefs.edit().putInt(KEY_V176SUBTITLESHADOWBLUR, value).apply()
+
+    var v177audioCompressorKnee177: Int
+        get() = prefs.getInt(KEY_V177AUDIOCOMPRESSORKNEE177, 0)
+        set(value) = prefs.edit().putInt(KEY_V177AUDIOCOMPRESSORKNEE177, value).apply()
+
+    var v177danmakuScrollHideOnAction177: Boolean
+        get() = prefs.getBoolean(KEY_V177DANMAKUSCROLLHIDEONACTION177, false)
+        set(value) = prefs.edit().putBoolean(KEY_V177DANMAKUSCROLLHIDEONACTION177, value).apply()
+
+    var v177subtitleShadowBlur177: Int
+        get() = prefs.getInt(KEY_V177SUBTITLESHADOWBLUR177, 0)
+        set(value) = prefs.edit().putInt(KEY_V177SUBTITLESHADOWBLUR177, value).apply()
+
+    var v177gestureDoubleTapPlayPause: Boolean
+        get() = prefs.getBoolean(KEY_V177GESTUREDOUBLETAPPLAYPAUSE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V177GESTUREDOUBLETAPPLAYPAUSE, value).apply()
+
+    var v177castVideoPIPReconnect177: Boolean
+        get() = prefs.getBoolean(KEY_V177CASTVIDEOPIPRECONNECT177, false)
+        set(value) = prefs.edit().putBoolean(KEY_V177CASTVIDEOPIPRECONNECT177, value).apply()
+
+    var v177playlistMaxHistorySize: Int
+        get() = prefs.getInt(KEY_V177PLAYLISTMAXHISTORYSIZE, 0)
+        set(value) = prefs.edit().putInt(KEY_V177PLAYLISTMAXHISTORYSIZE, value).apply()
+
+    var v177cacheStreamBufferSize177: Int
+        get() = prefs.getInt(KEY_V177CACHESTREAMBUFFERSIZE177, 0)
+        set(value) = prefs.edit().putInt(KEY_V177CACHESTREAMBUFFERSIZE177, value).apply()
+
+    var v177progressBarScrubTimeline: Boolean
+        get() = prefs.getBoolean(KEY_V177PROGRESSBARSCRUBTIMELINE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V177PROGRESSBARSCRUBTIMELINE, value).apply()
+
+    var v177volumeNormalizeTrack177: Boolean
+        get() = prefs.getBoolean(KEY_V177VOLUMENORMALIZETRACK177, false)
+        set(value) = prefs.edit().putBoolean(KEY_V177VOLUMENORMALIZETRACK177, value).apply()
+
+    var v177historyFilterByUploader: Boolean
+        get() = prefs.getBoolean(KEY_V177HISTORYFILTERBYUPLOADER, false)
+        set(value) = prefs.edit().putBoolean(KEY_V177HISTORYFILTERBYUPLOADER, value).apply()
+
+    var v177playbackDeinterlaceToggle: Boolean
+        get() = prefs.getBoolean(KEY_V177PLAYBACKDEINTERLACETOGGLE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V177PLAYBACKDEINTERLACETOGGLE, value).apply()
+
+    var v177screenshotOverlayBitrate: Boolean
+        get() = prefs.getBoolean(KEY_V177SCREENSHOTOVERLAYBITRATE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V177SCREENSHOTOVERLAYBITRATE, value).apply()
+
+    var v177videoBrightnessToggle177: Boolean
+        get() = prefs.getBoolean(KEY_V177VIDEOBRIGHTNESSTOGGLE177, false)
+        set(value) = prefs.edit().putBoolean(KEY_V177VIDEOBRIGHTNESSTOGGLE177, value).apply()
+
+    var v177danmakuScrollAutoSpeed: Boolean
+        get() = prefs.getBoolean(KEY_V177DANMAKUSCROLLAUTOSPEED, false)
+        set(value) = prefs.edit().putBoolean(KEY_V177DANMAKUSCROLLAUTOSPEED, value).apply()
+
+    var v177subtitleShadowOffset: Int
+        get() = prefs.getInt(KEY_V177SUBTITLESHADOWOFFSET, 0)
+        set(value) = prefs.edit().putInt(KEY_V177SUBTITLESHADOWOFFSET, value).apply()
+
+    var v178audioCompressorAttack178: Int
+        get() = prefs.getInt(KEY_V178AUDIOCOMPRESSORATTACK178, 0)
+        set(value) = prefs.edit().putInt(KEY_V178AUDIOCOMPRESSORATTACK178, value).apply()
+
+    var v178danmakuScrollAutoSpeed178: Boolean
+        get() = prefs.getBoolean(KEY_V178DANMAKUSCROLLAUTOSPEED178, false)
+        set(value) = prefs.edit().putBoolean(KEY_V178DANMAKUSCROLLAUTOSPEED178, value).apply()
+
+    var v178subtitleShadowOffset178: Int
+        get() = prefs.getInt(KEY_V178SUBTITLESHADOWOFFSET178, 0)
+        set(value) = prefs.edit().putInt(KEY_V178SUBTITLESHADOWOFFSET178, value).apply()
+
+    var v178gestureDoubleTapPlayPause178: Boolean
+        get() = prefs.getBoolean(KEY_V178GESTUREDOUBLETAPPLAYPAUSE178, false)
+        set(value) = prefs.edit().putBoolean(KEY_V178GESTUREDOUBLETAPPLAYPAUSE178, value).apply()
+
+    var v178castVideoPIPResolutionLock: Boolean
+        get() = prefs.getBoolean(KEY_V178CASTVIDEOPIPRESOLUTIONLOCK, false)
+        set(value) = prefs.edit().putBoolean(KEY_V178CASTVIDEOPIPRESOLUTIONLOCK, value).apply()
+
+    var v178playlistMaxHistorySize178: Int
+        get() = prefs.getInt(KEY_V178PLAYLISTMAXHISTORYSIZE178, 0)
+        set(value) = prefs.edit().putInt(KEY_V178PLAYLISTMAXHISTORYSIZE178, value).apply()
+
+    var v178cacheStreamPrefetch: Boolean
+        get() = prefs.getBoolean(KEY_V178CACHESTREAMPREFETCH, false)
+        set(value) = prefs.edit().putBoolean(KEY_V178CACHESTREAMPREFETCH, value).apply()
+
+    var v178progressBarScrubTimeline178: Boolean
+        get() = prefs.getBoolean(KEY_V178PROGRESSBARSCRUBTIMELINE178, false)
+        set(value) = prefs.edit().putBoolean(KEY_V178PROGRESSBARSCRUBTIMELINE178, value).apply()
+
+    var v178volumeNormalizeTrack178: Boolean
+        get() = prefs.getBoolean(KEY_V178VOLUMENORMALIZETRACK178, false)
+        set(value) = prefs.edit().putBoolean(KEY_V178VOLUMENORMALIZETRACK178, value).apply()
+
+    var v178historyFilterByUploader178: Boolean
+        get() = prefs.getBoolean(KEY_V178HISTORYFILTERBYUPLOADER178, false)
+        set(value) = prefs.edit().putBoolean(KEY_V178HISTORYFILTERBYUPLOADER178, value).apply()
+
+    var v178playbackDeinterlaceToggle178: Boolean
+        get() = prefs.getBoolean(KEY_V178PLAYBACKDEINTERLACETOGGLE178, false)
+        set(value) = prefs.edit().putBoolean(KEY_V178PLAYBACKDEINTERLACETOGGLE178, value).apply()
+
+    var v178screenshotOverlayFPS: Boolean
+        get() = prefs.getBoolean(KEY_V178SCREENSHOTOVERLAYFPS, false)
+        set(value) = prefs.edit().putBoolean(KEY_V178SCREENSHOTOVERLAYFPS, value).apply()
+
+    var v178videoBrightnessLevel178: Int
+        get() = prefs.getInt(KEY_V178VIDEOBRIGHTNESSLEVEL178, 0)
+        set(value) = prefs.edit().putInt(KEY_V178VIDEOBRIGHTNESSLEVEL178, value).apply()
+
+    var v178danmakuScrollPriority: Int
+        get() = prefs.getInt(KEY_V178DANMAKUSCROLLPRIORITY, 0)
+        set(value) = prefs.edit().putInt(KEY_V178DANMAKUSCROLLPRIORITY, value).apply()
+
+    var v178subtitleOutlineToggle178: Boolean
+        get() = prefs.getBoolean(KEY_V178SUBTITLEOUTLINETOGGLE178, false)
+        set(value) = prefs.edit().putBoolean(KEY_V178SUBTITLEOUTLINETOGGLE178, value).apply()
+
+    var v179audioCompressorRelease179: Int
+        get() = prefs.getInt(KEY_V179AUDIOCOMPRESSORRELEASE179, 0)
+        set(value) = prefs.edit().putInt(KEY_V179AUDIOCOMPRESSORRELEASE179, value).apply()
+
+    var v179danmakuScrollPriority179: Int
+        get() = prefs.getInt(KEY_V179DANMAKUSCROLLPRIORITY179, 0)
+        set(value) = prefs.edit().putInt(KEY_V179DANMAKUSCROLLPRIORITY179, value).apply()
+
+    var v179subtitleOutlineToggle179: Boolean
+        get() = prefs.getBoolean(KEY_V179SUBTITLEOUTLINETOGGLE179, false)
+        set(value) = prefs.edit().putBoolean(KEY_V179SUBTITLEOUTLINETOGGLE179, value).apply()
+
+    var v179gestureTapFeedback: Boolean
+        get() = prefs.getBoolean(KEY_V179GESTURETAPFEEDBACK, false)
+        set(value) = prefs.edit().putBoolean(KEY_V179GESTURETAPFEEDBACK, value).apply()
+
+    var v179castVideoPIPResolutionLock179: Boolean
+        get() = prefs.getBoolean(KEY_V179CASTVIDEOPIPRESOLUTIONLOCK179, false)
+        set(value) = prefs.edit().putBoolean(KEY_V179CASTVIDEOPIPRESOLUTIONLOCK179, value).apply()
+
+    var v179playlistSmartQueue: Boolean
+        get() = prefs.getBoolean(KEY_V179PLAYLISTSMARTQUEUE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V179PLAYLISTSMARTQUEUE, value).apply()
+
+    var v179cacheStreamPrefetch179: Boolean
+        get() = prefs.getBoolean(KEY_V179CACHESTREAMPREFETCH179, false)
+        set(value) = prefs.edit().putBoolean(KEY_V179CACHESTREAMPREFETCH179, value).apply()
+
+    var v179progressBarScrubGesture: Int
+        get() = prefs.getInt(KEY_V179PROGRESSBARSCRUBGESTURE, 0)
+        set(value) = prefs.edit().putInt(KEY_V179PROGRESSBARSCRUBGESTURE, value).apply()
+
+    var v179volumeNormalizeTrack179: Boolean
+        get() = prefs.getBoolean(KEY_V179VOLUMENORMALIZETRACK179, false)
+        set(value) = prefs.edit().putBoolean(KEY_V179VOLUMENORMALIZETRACK179, value).apply()
+
+    var v179historyFilterByQuality: Boolean
+        get() = prefs.getBoolean(KEY_V179HISTORYFILTERBYQUALITY, false)
+        set(value) = prefs.edit().putBoolean(KEY_V179HISTORYFILTERBYQUALITY, value).apply()
+
+    var v179playbackRotateVideo: Int
+        get() = prefs.getInt(KEY_V179PLAYBACKROTATEVIDEO, 0)
+        set(value) = prefs.edit().putInt(KEY_V179PLAYBACKROTATEVIDEO, value).apply()
+
+    var v179screenshotOverlayFPS179: Boolean
+        get() = prefs.getBoolean(KEY_V179SCREENSHOTOVERLAYFPS179, false)
+        set(value) = prefs.edit().putBoolean(KEY_V179SCREENSHOTOVERLAYFPS179, value).apply()
+
+    var v179videoBrightnessLevel179: Int
+        get() = prefs.getInt(KEY_V179VIDEOBRIGHTNESSLEVEL179, 0)
+        set(value) = prefs.edit().putInt(KEY_V179VIDEOBRIGHTNESSLEVEL179, value).apply()
+
+    var v179danmakuScrollMerge: Boolean
+        get() = prefs.getBoolean(KEY_V179DANMAKUSCROLLMERGE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V179DANMAKUSCROLLMERGE, value).apply()
+
+    var v179subtitleOutlineColor179: Int
+        get() = prefs.getInt(KEY_V179SUBTITLEOUTLINECOLOR179, 0)
+        set(value) = prefs.edit().putInt(KEY_V179SUBTITLEOUTLINECOLOR179, value).apply()
+
+    var v180audioCompressorMix180: Int
+        get() = prefs.getInt(KEY_V180AUDIOCOMPRESSORMIX180, 50)
+        set(value) = prefs.edit().putInt(KEY_V180AUDIOCOMPRESSORMIX180, value).apply()
+
+    var v180danmakuScrollMerge180: Boolean
+        get() = prefs.getBoolean(KEY_V180DANMAKUSCROLLMERGE180, false)
+        set(value) = prefs.edit().putBoolean(KEY_V180DANMAKUSCROLLMERGE180, value).apply()
+
+    var v180subtitleOutlineColor180: Int
+        get() = prefs.getInt(KEY_V180SUBTITLEOUTLINECOLOR180, 0)
+        set(value) = prefs.edit().putInt(KEY_V180SUBTITLEOUTLINECOLOR180, value).apply()
+
+    var v180gestureTapFeedback180: Boolean
+        get() = prefs.getBoolean(KEY_V180GESTURETAPFEEDBACK180, false)
+        set(value) = prefs.edit().putBoolean(KEY_V180GESTURETAPFEEDBACK180, value).apply()
+
+    var v180castVideoPIPSyncMode: Int
+        get() = prefs.getInt(KEY_V180CASTVIDEOPIPSYNCMODE, 0)
+        set(value) = prefs.edit().putInt(KEY_V180CASTVIDEOPIPSYNCMODE, value).apply()
+
+    var v180playlistSmartQueue180: Boolean
+        get() = prefs.getBoolean(KEY_V180PLAYLISTSMARTQUEUE180, false)
+        set(value) = prefs.edit().putBoolean(KEY_V180PLAYLISTSMARTQUEUE180, value).apply()
+
+    var v180cacheStreamReadAhead: Boolean
+        get() = prefs.getBoolean(KEY_V180CACHESTREAMREADAHEAD, false)
+        set(value) = prefs.edit().putBoolean(KEY_V180CACHESTREAMREADAHEAD, value).apply()
+
+    var v180progressBarScrubGesture180: Int
+        get() = prefs.getInt(KEY_V180PROGRESSBARSCRUBGESTURE180, 0)
+        set(value) = prefs.edit().putInt(KEY_V180PROGRESSBARSCRUBGESTURE180, value).apply()
+
+    var v180volumeNormalizeTrack180: Boolean
+        get() = prefs.getBoolean(KEY_V180VOLUMENORMALIZETRACK180, false)
+        set(value) = prefs.edit().putBoolean(KEY_V180VOLUMENORMALIZETRACK180, value).apply()
+
+    var v180historyFilterByQuality180: Boolean
+        get() = prefs.getBoolean(KEY_V180HISTORYFILTERBYQUALITY180, false)
+        set(value) = prefs.edit().putBoolean(KEY_V180HISTORYFILTERBYQUALITY180, value).apply()
+
+    var v180playbackRotateVideo180: Int
+        get() = prefs.getInt(KEY_V180PLAYBACKROTATEVIDEO180, 0)
+        set(value) = prefs.edit().putInt(KEY_V180PLAYBACKROTATEVIDEO180, value).apply()
+
+    var v180screenshotOverlayCodec: Boolean
+        get() = prefs.getBoolean(KEY_V180SCREENSHOTOVERLAYCODEC, false)
+        set(value) = prefs.edit().putBoolean(KEY_V180SCREENSHOTOVERLAYCODEC, value).apply()
+
+    var v180videoGammaToggle180: Boolean
+        get() = prefs.getBoolean(KEY_V180VIDEOGAMMATOGGLE180, false)
+        set(value) = prefs.edit().putBoolean(KEY_V180VIDEOGAMMATOGGLE180, value).apply()
+
+    var v180danmakuScrollMergeMode: Int
+        get() = prefs.getInt(KEY_V180DANMAKUSCROLLMERGEMODE, 0)
+        set(value) = prefs.edit().putInt(KEY_V180DANMAKUSCROLLMERGEMODE, value).apply()
+
+    var v180subtitleOutlineWidth180: Int
+        get() = prefs.getInt(KEY_V180SUBTITLEOUTLINEWIDTH180, 0)
+        set(value) = prefs.edit().putInt(KEY_V180SUBTITLEOUTLINEWIDTH180, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -22180,5 +22780,155 @@ class AppPrefs(context: Context) {
         const val KEY_V170VIDEOSHARPENTHRESHOLD170 = "v170videoSharpenThreshold170" // v170 Video Sharpen Threshold170
         const val KEY_V170DANMAKURENDERFLUSHALL = "v170danmakuRenderFlushAll" // v170 Danmaku Render Flush All
         const val KEY_V170SUBTITLEKARAOKEBORDER = "v170subtitleKaraokeBorder" // v170 Subtitle Karaoke Border
+        const val KEY_V171AUDIONORMALIZERTOGGLE171 = "v171audioNormalizerToggle171" // v171 Audio Normalizer Toggle171
+        const val KEY_V171DANMAKUSCROLLDIRECTION = "v171danmakuScrollDirection" // v171 Danmaku Scroll Direction
+        const val KEY_V171SUBTITLEFONTSPACING = "v171subtitleFontSpacing" // v171 Subtitle Font Spacing
+        const val KEY_V171GESTURETAPDOUBLEACTION = "v171gestureTapDoubleAction" // v171 Gesture Tap Double Action
+        const val KEY_V171CASTVIDEOPIPFPSLIMIT = "v171castVideoPIPFPSLimit" // v171 Cast Video PIP FPS Limit
+        const val KEY_V171PLAYLISTAUTOADDRELATED = "v171playlistAutoAddRelated" // v171 Playlist Auto Add Related
+        const val KEY_V171CACHEDISKQUOTAMB = "v171cacheDiskQuotaMB" // v171 Cache Disk Quota MB
+        const val KEY_V171PROGRESSBARSCRUBPREVIEW = "v171progressBarScrubPreview" // v171 Progress Bar Scrub Preview
+        const val KEY_V171VOLUMEBALANCELR = "v171volumeBalanceLR" // v171 Volume Balance LR
+        const val KEY_V171HISTORYGROUPBYDATE = "v171historyGroupByDate" // v171 History Group By Date
+        const val KEY_V171PLAYBACKAUDIOOFFSET = "v171playbackAudioOffset" // v171 Playback Audio Offset
+        const val KEY_V171SCREENSHOTOVERLAYINFO = "v171screenshotOverlayInfo" // v171 Screenshot Overlay Info
+        const val KEY_V171VIDEOCONTRASTTOGGLE171 = "v171videoContrastToggle171" // v171 Video Contrast Toggle171
+        const val KEY_V171DANMAKUSCROLLSPEED = "v171danmakuScrollSpeed" // v171 Danmaku Scroll Speed
+        const val KEY_V171SUBTITLELINESPACING = "v171subtitleLineSpacing" // v171 Subtitle Line Spacing
+        const val KEY_V172AUDIONORMALIZERTARGET172 = "v172audioNormalizerTarget172" // v172 Audio Normalizer Target172
+        const val KEY_V172DANMAKUSCROLLSPEED172 = "v172danmakuScrollSpeed172" // v172 Danmaku Scroll Speed172
+        const val KEY_V172SUBTITLELINESPACING172 = "v172subtitleLineSpacing172" // v172 Subtitle Line Spacing172
+        const val KEY_V172GESTURETAPDOUBLEACTION172 = "v172gestureTapDoubleAction172" // v172 Gesture Tap Double Action172
+        const val KEY_V172CASTVIDEOPIPFPSLIMIT172 = "v172castVideoPIPFPSLimit172" // v172 Cast Video PIP FPS Limit172
+        const val KEY_V172PLAYLISTAUTOADDRELATED172 = "v172playlistAutoAddRelated172" // v172 Playlist Auto Add Related172
+        const val KEY_V172CACHEDISKQUOTAMB172 = "v172cacheDiskQuotaMB172" // v172 Cache Disk Quota MB172
+        const val KEY_V172PROGRESSBARSCRUBPREVIEW172 = "v172progressBarScrubPreview172" // v172 Progress Bar Scrub Preview172
+        const val KEY_V172VOLUMEBALANCELR172 = "v172volumeBalanceLR172" // v172 Volume Balance LR172
+        const val KEY_V172HISTORYGROUPBYDATE172 = "v172historyGroupByDate172" // v172 History Group By Date172
+        const val KEY_V172PLAYBACKAUDIOOFFSET172 = "v172playbackAudioOffset172" // v172 Playback Audio Offset172
+        const val KEY_V172SCREENSHOTOVERLAYINFO172 = "v172screenshotOverlayInfo172" // v172 Screenshot Overlay Info172
+        const val KEY_V172VIDEOCONTRASTLEVEL172 = "v172videoContrastLevel172" // v172 Video Contrast Level172
+        const val KEY_V172DANMAKUSCROLLOVERLAP = "v172danmakuScrollOverlap" // v172 Danmaku Scroll Overlap
+        const val KEY_V172SUBTITLEBACKGROUNDPADDING = "v172subtitleBackgroundPadding" // v172 Subtitle Background Padding
+        const val KEY_V173AUDIONORMALIZERSTRENGTH173 = "v173audioNormalizerStrength173" // v173 Audio Normalizer Strength173
+        const val KEY_V173DANMAKUSCROLLOVERLAP173 = "v173danmakuScrollOverlap173" // v173 Danmaku Scroll Overlap173
+        const val KEY_V173SUBTITLEBACKGROUNDPADDING173 = "v173subtitleBackgroundPadding173" // v173 Subtitle Background Padding173
+        const val KEY_V173GESTURETAPTRIPLEACTION = "v173gestureTapTripleAction" // v173 Gesture Tap Triple Action
+        const val KEY_V173CASTVIDEOPIPCONNECTAUTO = "v173castVideoPIPConnectAuto" // v173 Cast Video PIP Connect Auto
+        const val KEY_V173PLAYLISTAUTONEXTONEND = "v173playlistAutoNextOnEnd" // v173 Playlist Auto Next On End
+        const val KEY_V173CACHECOMPRESSTOGGLE173 = "v173cacheCompressToggle173" // v173 Cache Compress Toggle173
+        const val KEY_V173PROGRESSBARSCRUBPREVIEWSIZE = "v173progressBarScrubPreviewSize" // v173 Progress Bar Scrub Preview Size
+        const val KEY_V173VOLUMENORMALIZETRACK = "v173volumeNormalizeTrack" // v173 Volume Normalize Track
+        const val KEY_V173HISTORYGROUPBYUPLOADER = "v173historyGroupByUploader" // v173 History Group By Uploader
+        const val KEY_V173PLAYBACKSUBTITLEOFFSET = "v173playbackSubtitleOffset" // v173 Playback Subtitle Offset
+        const val KEY_V173SCREENSHOTOVERLAYDATE = "v173screenshotOverlayDate" // v173 Screenshot Overlay Date
+        const val KEY_V173VIDEOCONTRASTLEVEL173 = "v173videoContrastLevel173" // v173 Video Contrast Level173
+        const val KEY_V173DANMAKUSCROLLMAXLINES = "v173danmakuScrollMaxLines" // v173 Danmaku Scroll Max Lines
+        const val KEY_V173SUBTITLEBACKGROUNDROUND = "v173subtitleBackgroundRound" // v173 Subtitle Background Round
+        const val KEY_V174AUDIONORMALIZERATTACK174 = "v174audioNormalizerAttack174" // v174 Audio Normalizer Attack174
+        const val KEY_V174DANMAKUSCROLLMAXLINES174 = "v174danmakuScrollMaxLines174" // v174 Danmaku Scroll Max Lines174
+        const val KEY_V174SUBTITLEBACKGROUNDROUND174 = "v174subtitleBackgroundRound174" // v174 Subtitle Background Round174
+        const val KEY_V174GESTURETAPTRIPLEACTION174 = "v174gestureTapTripleAction174" // v174 Gesture Tap Triple Action174
+        const val KEY_V174CASTVIDEOPIPCONNECTAUTO174 = "v174castVideoPIPConnectAuto174" // v174 Cast Video PIP Connect Auto174
+        const val KEY_V174PLAYLISTAUTONEXTONEND174 = "v174playlistAutoNextOnEnd174" // v174 Playlist Auto Next On End174
+        const val KEY_V174CACHECOMPRESSLEVEL174 = "v174cacheCompressLevel174" // v174 Cache Compress Level174
+        const val KEY_V174PROGRESSBARSCRUBPREVIEWTEXT = "v174progressBarScrubPreviewText" // v174 Progress Bar Scrub Preview Text
+        const val KEY_V174VOLUMENORMALIZETRACK174 = "v174volumeNormalizeTrack174" // v174 Volume Normalize Track174
+        const val KEY_V174HISTORYGROUPBYUPLOADER174 = "v174historyGroupByUploader174" // v174 History Group By Uploader174
+        const val KEY_V174PLAYBACKSUBTITLEOFFSET174 = "v174playbackSubtitleOffset174" // v174 Playback Subtitle Offset174
+        const val KEY_V174SCREENSHOTOVERLAYTITLE = "v174screenshotOverlayTitle" // v174 Screenshot Overlay Title
+        const val KEY_V174VIDEOSATURATIONTOGGLE174 = "v174videoSaturationToggle174" // v174 Video Saturation Toggle174
+        const val KEY_V174DANMAKUSCROLLOVERLAPMODE = "v174danmakuScrollOverlapMode" // v174 Danmaku Scroll Overlap Mode
+        const val KEY_V174SUBTITLESHADOWTOGGLE174 = "v174subtitleShadowToggle174" // v174 Subtitle Shadow Toggle174
+        const val KEY_V175AUDIOCOMPRESSORRATIO175 = "v175audioCompressorRatio175" // v175 Audio Compressor Ratio175
+        const val KEY_V175DANMAKUSCROLLOVERLAPMODE175 = "v175danmakuScrollOverlapMode175" // v175 Danmaku Scroll Overlap Mode175
+        const val KEY_V175SUBTITLESHADOWTOGGLE175 = "v175subtitleShadowToggle175" // v175 Subtitle Shadow Toggle175
+        const val KEY_V175GESTUREDOUBLETAPSEEK = "v175gestureDoubleTapSeek" // v175 Gesture Double Tap Seek
+        const val KEY_V175CASTVIDEOPIPDISCONNECTACTION = "v175castVideoPIPDisconnectAction" // v175 Cast Video PIP Disconnect Action
+        const val KEY_V175PLAYLISTSKIPONERROR = "v175playlistSkipOnError" // v175 Playlist Skip On Error
+        const val KEY_V175CACHECOMPRESSLEVEL175 = "v175cacheCompressLevel175" // v175 Cache Compress Level175
+        const val KEY_V175PROGRESSBARSCRUBHAPTIC = "v175progressBarScrubHaptic" // v175 Progress Bar Scrub Haptic
+        const val KEY_V175VOLUMENORMALIZEALBUM = "v175volumeNormalizeAlbum" // v175 Volume Normalize Album
+        const val KEY_V175HISTORYFILTERBYDURATION = "v175historyFilterByDuration" // v175 History Filter By Duration
+        const val KEY_V175PLAYBACKVIDEOOFFSET = "v175playbackVideoOffset" // v175 Playback Video Offset
+        const val KEY_V175SCREENSHOTOVERLAYCHANNEL = "v175screenshotOverlayChannel" // v175 Screenshot Overlay Channel
+        const val KEY_V175VIDEOSATURATIONLEVEL175 = "v175videoSaturationLevel175" // v175 Video Saturation Level175
+        const val KEY_V175DANMAKUSCROLLFILTER = "v175danmakuScrollFilter" // v175 Danmaku Scroll Filter
+        const val KEY_V175SUBTITLESHADOWCOLOR = "v175subtitleShadowColor" // v175 Subtitle Shadow Color
+        const val KEY_V176AUDIOCOMPRESSORRATIO176 = "v176audioCompressorRatio176" // v176 Audio Compressor Ratio176
+        const val KEY_V176DANMAKUSCROLLFILTER176 = "v176danmakuScrollFilter176" // v176 Danmaku Scroll Filter176
+        const val KEY_V176SUBTITLESHADOWCOLOR176 = "v176subtitleShadowColor176" // v176 Subtitle Shadow Color176
+        const val KEY_V176GESTUREDOUBLETAPSEEK176 = "v176gestureDoubleTapSeek176" // v176 Gesture Double Tap Seek176
+        const val KEY_V176CASTVIDEOPIPRECONNECT = "v176castVideoPIPReconnect" // v176 Cast Video PIP Reconnect
+        const val KEY_V176PLAYLISTSKIPONERROR176 = "v176playlistSkipOnError176" // v176 Playlist Skip On Error176
+        const val KEY_V176CACHESTREAMBUFFERSIZE = "v176cacheStreamBufferSize" // v176 Cache Stream Buffer Size
+        const val KEY_V176PROGRESSBARSCRUBHAPTIC176 = "v176progressBarScrubHaptic176" // v176 Progress Bar Scrub Haptic176
+        const val KEY_V176VOLUMENORMALIZEALBUM176 = "v176volumeNormalizeAlbum176" // v176 Volume Normalize Album176
+        const val KEY_V176HISTORYFILTERBYDURATION176 = "v176historyFilterByDuration176" // v176 History Filter By Duration176
+        const val KEY_V176PLAYBACKVIDEOOFFSET176 = "v176playbackVideoOffset176" // v176 Playback Video Offset176
+        const val KEY_V176SCREENSHOTOVERLAYQUALITY = "v176screenshotOverlayQuality" // v176 Screenshot Overlay Quality
+        const val KEY_V176VIDEOSATURATIONLEVEL176 = "v176videoSaturationLevel176" // v176 Video Saturation Level176
+        const val KEY_V176DANMAKUSCROLLHIDEONACTION = "v176danmakuScrollHideOnAction" // v176 Danmaku Scroll Hide On Action
+        const val KEY_V176SUBTITLESHADOWBLUR = "v176subtitleShadowBlur" // v176 Subtitle Shadow Blur
+        const val KEY_V177AUDIOCOMPRESSORKNEE177 = "v177audioCompressorKnee177" // v177 Audio Compressor Knee177
+        const val KEY_V177DANMAKUSCROLLHIDEONACTION177 = "v177danmakuScrollHideOnAction177" // v177 Danmaku Scroll Hide On Action177
+        const val KEY_V177SUBTITLESHADOWBLUR177 = "v177subtitleShadowBlur177" // v177 Subtitle Shadow Blur177
+        const val KEY_V177GESTUREDOUBLETAPPLAYPAUSE = "v177gestureDoubleTapPlayPause" // v177 Gesture Double Tap Play Pause
+        const val KEY_V177CASTVIDEOPIPRECONNECT177 = "v177castVideoPIPReconnect177" // v177 Cast Video PIP Reconnect177
+        const val KEY_V177PLAYLISTMAXHISTORYSIZE = "v177playlistMaxHistorySize" // v177 Playlist Max History Size
+        const val KEY_V177CACHESTREAMBUFFERSIZE177 = "v177cacheStreamBufferSize177" // v177 Cache Stream Buffer Size177
+        const val KEY_V177PROGRESSBARSCRUBTIMELINE = "v177progressBarScrubTimeline" // v177 Progress Bar Scrub Timeline
+        const val KEY_V177VOLUMENORMALIZETRACK177 = "v177volumeNormalizeTrack177" // v177 Volume Normalize Track177
+        const val KEY_V177HISTORYFILTERBYUPLOADER = "v177historyFilterByUploader" // v177 History Filter By Uploader
+        const val KEY_V177PLAYBACKDEINTERLACETOGGLE = "v177playbackDeinterlaceToggle" // v177 Playback Deinterlace Toggle
+        const val KEY_V177SCREENSHOTOVERLAYBITRATE = "v177screenshotOverlayBitrate" // v177 Screenshot Overlay Bitrate
+        const val KEY_V177VIDEOBRIGHTNESSTOGGLE177 = "v177videoBrightnessToggle177" // v177 Video Brightness Toggle177
+        const val KEY_V177DANMAKUSCROLLAUTOSPEED = "v177danmakuScrollAutoSpeed" // v177 Danmaku Scroll Auto Speed
+        const val KEY_V177SUBTITLESHADOWOFFSET = "v177subtitleShadowOffset" // v177 Subtitle Shadow Offset
+        const val KEY_V178AUDIOCOMPRESSORATTACK178 = "v178audioCompressorAttack178" // v178 Audio Compressor Attack178
+        const val KEY_V178DANMAKUSCROLLAUTOSPEED178 = "v178danmakuScrollAutoSpeed178" // v178 Danmaku Scroll Auto Speed178
+        const val KEY_V178SUBTITLESHADOWOFFSET178 = "v178subtitleShadowOffset178" // v178 Subtitle Shadow Offset178
+        const val KEY_V178GESTUREDOUBLETAPPLAYPAUSE178 = "v178gestureDoubleTapPlayPause178" // v178 Gesture Double Tap Play Pause178
+        const val KEY_V178CASTVIDEOPIPRESOLUTIONLOCK = "v178castVideoPIPResolutionLock" // v178 Cast Video PIP Resolution Lock
+        const val KEY_V178PLAYLISTMAXHISTORYSIZE178 = "v178playlistMaxHistorySize178" // v178 Playlist Max History Size178
+        const val KEY_V178CACHESTREAMPREFETCH = "v178cacheStreamPrefetch" // v178 Cache Stream Prefetch
+        const val KEY_V178PROGRESSBARSCRUBTIMELINE178 = "v178progressBarScrubTimeline178" // v178 Progress Bar Scrub Timeline178
+        const val KEY_V178VOLUMENORMALIZETRACK178 = "v178volumeNormalizeTrack178" // v178 Volume Normalize Track178
+        const val KEY_V178HISTORYFILTERBYUPLOADER178 = "v178historyFilterByUploader178" // v178 History Filter By Uploader178
+        const val KEY_V178PLAYBACKDEINTERLACETOGGLE178 = "v178playbackDeinterlaceToggle178" // v178 Playback Deinterlace Toggle178
+        const val KEY_V178SCREENSHOTOVERLAYFPS = "v178screenshotOverlayFPS" // v178 Screenshot Overlay FPS
+        const val KEY_V178VIDEOBRIGHTNESSLEVEL178 = "v178videoBrightnessLevel178" // v178 Video Brightness Level178
+        const val KEY_V178DANMAKUSCROLLPRIORITY = "v178danmakuScrollPriority" // v178 Danmaku Scroll Priority
+        const val KEY_V178SUBTITLEOUTLINETOGGLE178 = "v178subtitleOutlineToggle178" // v178 Subtitle Outline Toggle178
+        const val KEY_V179AUDIOCOMPRESSORRELEASE179 = "v179audioCompressorRelease179" // v179 Audio Compressor Release179
+        const val KEY_V179DANMAKUSCROLLPRIORITY179 = "v179danmakuScrollPriority179" // v179 Danmaku Scroll Priority179
+        const val KEY_V179SUBTITLEOUTLINETOGGLE179 = "v179subtitleOutlineToggle179" // v179 Subtitle Outline Toggle179
+        const val KEY_V179GESTURETAPFEEDBACK = "v179gestureTapFeedback" // v179 Gesture Tap Feedback
+        const val KEY_V179CASTVIDEOPIPRESOLUTIONLOCK179 = "v179castVideoPIPResolutionLock179" // v179 Cast Video PIP Resolution Lock179
+        const val KEY_V179PLAYLISTSMARTQUEUE = "v179playlistSmartQueue" // v179 Playlist Smart Queue
+        const val KEY_V179CACHESTREAMPREFETCH179 = "v179cacheStreamPrefetch179" // v179 Cache Stream Prefetch179
+        const val KEY_V179PROGRESSBARSCRUBGESTURE = "v179progressBarScrubGesture" // v179 Progress Bar Scrub Gesture
+        const val KEY_V179VOLUMENORMALIZETRACK179 = "v179volumeNormalizeTrack179" // v179 Volume Normalize Track179
+        const val KEY_V179HISTORYFILTERBYQUALITY = "v179historyFilterByQuality" // v179 History Filter By Quality
+        const val KEY_V179PLAYBACKROTATEVIDEO = "v179playbackRotateVideo" // v179 Playback Rotate Video
+        const val KEY_V179SCREENSHOTOVERLAYFPS179 = "v179screenshotOverlayFPS179" // v179 Screenshot Overlay FPS179
+        const val KEY_V179VIDEOBRIGHTNESSLEVEL179 = "v179videoBrightnessLevel179" // v179 Video Brightness Level179
+        const val KEY_V179DANMAKUSCROLLMERGE = "v179danmakuScrollMerge" // v179 Danmaku Scroll Merge
+        const val KEY_V179SUBTITLEOUTLINECOLOR179 = "v179subtitleOutlineColor179" // v179 Subtitle Outline Color179
+        const val KEY_V180AUDIOCOMPRESSORMIX180 = "v180audioCompressorMix180" // v180 Audio Compressor Mix180
+        const val KEY_V180DANMAKUSCROLLMERGE180 = "v180danmakuScrollMerge180" // v180 Danmaku Scroll Merge180
+        const val KEY_V180SUBTITLEOUTLINECOLOR180 = "v180subtitleOutlineColor180" // v180 Subtitle Outline Color180
+        const val KEY_V180GESTURETAPFEEDBACK180 = "v180gestureTapFeedback180" // v180 Gesture Tap Feedback180
+        const val KEY_V180CASTVIDEOPIPSYNCMODE = "v180castVideoPIPSyncMode" // v180 Cast Video PIP Sync Mode
+        const val KEY_V180PLAYLISTSMARTQUEUE180 = "v180playlistSmartQueue180" // v180 Playlist Smart Queue180
+        const val KEY_V180CACHESTREAMREADAHEAD = "v180cacheStreamReadAhead" // v180 Cache Stream Read Ahead
+        const val KEY_V180PROGRESSBARSCRUBGESTURE180 = "v180progressBarScrubGesture180" // v180 Progress Bar Scrub Gesture180
+        const val KEY_V180VOLUMENORMALIZETRACK180 = "v180volumeNormalizeTrack180" // v180 Volume Normalize Track180
+        const val KEY_V180HISTORYFILTERBYQUALITY180 = "v180historyFilterByQuality180" // v180 History Filter By Quality180
+        const val KEY_V180PLAYBACKROTATEVIDEO180 = "v180playbackRotateVideo180" // v180 Playback Rotate Video180
+        const val KEY_V180SCREENSHOTOVERLAYCODEC = "v180screenshotOverlayCodec" // v180 Screenshot Overlay Codec
+        const val KEY_V180VIDEOGAMMATOGGLE180 = "v180videoGammaToggle180" // v180 Video Gamma Toggle180
+        const val KEY_V180DANMAKUSCROLLMERGEMODE = "v180danmakuScrollMergeMode" // v180 Danmaku Scroll Merge Mode
+        const val KEY_V180SUBTITLEOUTLINEWIDTH180 = "v180subtitleOutlineWidth180" // v180 Subtitle Outline Width180
     }
 }
