@@ -61248,6 +61248,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V910RECYCLEAUTOBIN910, false)
         set(value) = prefs.edit().putBoolean(KEY_V910RECYCLEAUTOBIN910, value).apply()
 
+    var v911redirectAutoUrl911: Boolean
+        get() = prefs.getBoolean(KEY_V911REDIRECTAUTOURL911, false)
+        set(value) = prefs.edit().putBoolean(KEY_V911REDIRECTAUTOURL911, value).apply()
+
+    var v911reduceAutoMotion911: Boolean
+        get() = prefs.getBoolean(KEY_V911REDUCEAUTOMOTION911, false)
+        set(value) = prefs.edit().putBoolean(KEY_V911REDUCEAUTOMOTION911, value).apply()
+
+    var v911refAutoCount911: Boolean
+        get() = prefs.getBoolean(KEY_V911REFAUTOCOUNT911, false)
+        set(value) = prefs.edit().putBoolean(KEY_V911REFAUTOCOUNT911, value).apply()
+
+    var v911referenceAutoLink911: Boolean
+        get() = prefs.getBoolean(KEY_V911REFERENCEAUTOLINK911, false)
+        set(value) = prefs.edit().putBoolean(KEY_V911REFERENCEAUTOLINK911, value).apply()
+
+    var v911refreshAutoRate911: Int
+        get() = prefs.getInt(KEY_V911REFRESHAUTORATE911, 0)
+        set(value) = prefs.edit().putInt(KEY_V911REFRESHAUTORATE911, value).apply()
+
+    var v911registerAutoCallback911: Boolean
+        get() = prefs.getBoolean(KEY_V911REGISTERAUTOCALLBACK911, false)
+        set(value) = prefs.edit().putBoolean(KEY_V911REGISTERAUTOCALLBACK911, value).apply()
+
+    var v911regularAutoExpression911: Boolean
+        get() = prefs.getBoolean(KEY_V911REGULARAUTOEXPRESSION911, false)
+        set(value) = prefs.edit().putBoolean(KEY_V911REGULARAUTOEXPRESSION911, value).apply()
+
+    var v911rejectAutoBlock911: Boolean
+        get() = prefs.getBoolean(KEY_V911REJECTAUTOBLOCK911, false)
+        set(value) = prefs.edit().putBoolean(KEY_V911REJECTAUTOBLOCK911, value).apply()
+
+    var v911relateAutoSuggest911: Boolean
+        get() = prefs.getBoolean(KEY_V911RELATEAUTOSUGGEST911, false)
+        set(value) = prefs.edit().putBoolean(KEY_V911RELATEAUTOSUGGEST911, value).apply()
+
+    var v911releaseAutoLock911: Boolean
+        get() = prefs.getBoolean(KEY_V911RELEASEAUTOLOCK911, false)
+        set(value) = prefs.edit().putBoolean(KEY_V911RELEASEAUTOLOCK911, value).apply()
+
+    var v911remoteAutoCast911: Boolean
+        get() = prefs.getBoolean(KEY_V911REMOTEAUTOCAST911, false)
+        set(value) = prefs.edit().putBoolean(KEY_V911REMOTEAUTOCAST911, value).apply()
+
+    var v911removeAutoClean911: Boolean
+        get() = prefs.getBoolean(KEY_V911REMOVEAUTOCLEAN911, false)
+        set(value) = prefs.edit().putBoolean(KEY_V911REMOVEAUTOCLEAN911, value).apply()
+
+    var v911renameAutoLabel911: Boolean
+        get() = prefs.getBoolean(KEY_V911RENAMEAUTOLABEL911, false)
+        set(value) = prefs.edit().putBoolean(KEY_V911RENAMEAUTOLABEL911, value).apply()
+
+    var v911renderAutoFrame911: Boolean
+        get() = prefs.getBoolean(KEY_V911RENDERAUTOFRAME911, false)
+        set(value) = prefs.edit().putBoolean(KEY_V911RENDERAUTOFRAME911, value).apply()
+
+    var v911repeatAutoLoop911: Boolean
+        get() = prefs.getBoolean(KEY_V911REPEATAUTOLOOP911, false)
+        set(value) = prefs.edit().putBoolean(KEY_V911REPEATAUTOLOOP911, value).apply()
+
+    var v912redirectAutoUrl912: Boolean
+        get() = prefs.getBoolean(KEY_V912REDIRECTAUTOURL912, false)
+        set(value) = prefs.edit().putBoolean(KEY_V912REDIRECTAUTOURL912, value).apply()
+
+    var v912reduceAutoMotion912: Boolean
+        get() = prefs.getBoolean(KEY_V912REDUCEAUTOMOTION912, false)
+        set(value) = prefs.edit().putBoolean(KEY_V912REDUCEAUTOMOTION912, value).apply()
+
+    var v912refAutoCount912: Boolean
+        get() = prefs.getBoolean(KEY_V912REFAUTOCOUNT912, false)
+        set(value) = prefs.edit().putBoolean(KEY_V912REFAUTOCOUNT912, value).apply()
+
+    var v912referenceAutoLink912: Boolean
+        get() = prefs.getBoolean(KEY_V912REFERENCEAUTOLINK912, false)
+        set(value) = prefs.edit().putBoolean(KEY_V912REFERENCEAUTOLINK912, value).apply()
+
+    var v912refreshAutoRate912: Int
+        get() = prefs.getInt(KEY_V912REFRESHAUTORATE912, 0)
+        set(value) = prefs.edit().putInt(KEY_V912REFRESHAUTORATE912, value).apply()
+
+    var v912registerAutoCallback912: Boolean
+        get() = prefs.getBoolean(KEY_V912REGISTERAUTOCALLBACK912, false)
+        set(value) = prefs.edit().putBoolean(KEY_V912REGISTERAUTOCALLBACK912, value).apply()
+
+    var v912regularAutoExpression912: Boolean
+        get() = prefs.getBoolean(KEY_V912REGULARAUTOEXPRESSION912, false)
+        set(value) = prefs.edit().putBoolean(KEY_V912REGULARAUTOEXPRESSION912, value).apply()
+
+    var v912rejectAutoBlock912: Boolean
+        get() = prefs.getBoolean(KEY_V912REJECTAUTOBLOCK912, false)
+        set(value) = prefs.edit().putBoolean(KEY_V912REJECTAUTOBLOCK912, value).apply()
+
+    var v912relateAutoSuggest912: Boolean
+        get() = prefs.getBoolean(KEY_V912RELATEAUTOSUGGEST912, false)
+        set(value) = prefs.edit().putBoolean(KEY_V912RELATEAUTOSUGGEST912, value).apply()
+
+    var v912releaseAutoLock912: Boolean
+        get() = prefs.getBoolean(KEY_V912RELEASEAUTOLOCK912, false)
+        set(value) = prefs.edit().putBoolean(KEY_V912RELEASEAUTOLOCK912, value).apply()
+
+    var v912remoteAutoCast912: Boolean
+        get() = prefs.getBoolean(KEY_V912REMOTEAUTOCAST912, false)
+        set(value) = prefs.edit().putBoolean(KEY_V912REMOTEAUTOCAST912, value).apply()
+
+    var v912removeAutoClean912: Boolean
+        get() = prefs.getBoolean(KEY_V912REMOVEAUTOCLEAN912, false)
+        set(value) = prefs.edit().putBoolean(KEY_V912REMOVEAUTOCLEAN912, value).apply()
+
+    var v912renameAutoLabel912: Boolean
+        get() = prefs.getBoolean(KEY_V912RENAMEAUTOLABEL912, false)
+        set(value) = prefs.edit().putBoolean(KEY_V912RENAMEAUTOLABEL912, value).apply()
+
+    var v912renderAutoFrame912: Boolean
+        get() = prefs.getBoolean(KEY_V912RENDERAUTOFRAME912, false)
+        set(value) = prefs.edit().putBoolean(KEY_V912RENDERAUTOFRAME912, value).apply()
+
+    var v912repeatAutoLoop912: Boolean
+        get() = prefs.getBoolean(KEY_V912REPEATAUTOLOOP912, false)
+        set(value) = prefs.edit().putBoolean(KEY_V912REPEATAUTOLOOP912, value).apply()
+
+    var v913redirectAutoUrl913: Boolean
+        get() = prefs.getBoolean(KEY_V913REDIRECTAUTOURL913, false)
+        set(value) = prefs.edit().putBoolean(KEY_V913REDIRECTAUTOURL913, value).apply()
+
+    var v913reduceAutoMotion913: Boolean
+        get() = prefs.getBoolean(KEY_V913REDUCEAUTOMOTION913, false)
+        set(value) = prefs.edit().putBoolean(KEY_V913REDUCEAUTOMOTION913, value).apply()
+
+    var v913refAutoCount913: Boolean
+        get() = prefs.getBoolean(KEY_V913REFAUTOCOUNT913, false)
+        set(value) = prefs.edit().putBoolean(KEY_V913REFAUTOCOUNT913, value).apply()
+
+    var v913referenceAutoLink913: Boolean
+        get() = prefs.getBoolean(KEY_V913REFERENCEAUTOLINK913, false)
+        set(value) = prefs.edit().putBoolean(KEY_V913REFERENCEAUTOLINK913, value).apply()
+
+    var v913refreshAutoRate913: Int
+        get() = prefs.getInt(KEY_V913REFRESHAUTORATE913, 0)
+        set(value) = prefs.edit().putInt(KEY_V913REFRESHAUTORATE913, value).apply()
+
+    var v913registerAutoCallback913: Boolean
+        get() = prefs.getBoolean(KEY_V913REGISTERAUTOCALLBACK913, false)
+        set(value) = prefs.edit().putBoolean(KEY_V913REGISTERAUTOCALLBACK913, value).apply()
+
+    var v913regularAutoExpression913: Boolean
+        get() = prefs.getBoolean(KEY_V913REGULARAUTOEXPRESSION913, false)
+        set(value) = prefs.edit().putBoolean(KEY_V913REGULARAUTOEXPRESSION913, value).apply()
+
+    var v913rejectAutoBlock913: Boolean
+        get() = prefs.getBoolean(KEY_V913REJECTAUTOBLOCK913, false)
+        set(value) = prefs.edit().putBoolean(KEY_V913REJECTAUTOBLOCK913, value).apply()
+
+    var v913relateAutoSuggest913: Boolean
+        get() = prefs.getBoolean(KEY_V913RELATEAUTOSUGGEST913, false)
+        set(value) = prefs.edit().putBoolean(KEY_V913RELATEAUTOSUGGEST913, value).apply()
+
+    var v913releaseAutoLock913: Boolean
+        get() = prefs.getBoolean(KEY_V913RELEASEAUTOLOCK913, false)
+        set(value) = prefs.edit().putBoolean(KEY_V913RELEASEAUTOLOCK913, value).apply()
+
+    var v913remoteAutoCast913: Boolean
+        get() = prefs.getBoolean(KEY_V913REMOTEAUTOCAST913, false)
+        set(value) = prefs.edit().putBoolean(KEY_V913REMOTEAUTOCAST913, value).apply()
+
+    var v913removeAutoClean913: Boolean
+        get() = prefs.getBoolean(KEY_V913REMOVEAUTOCLEAN913, false)
+        set(value) = prefs.edit().putBoolean(KEY_V913REMOVEAUTOCLEAN913, value).apply()
+
+    var v913renameAutoLabel913: Boolean
+        get() = prefs.getBoolean(KEY_V913RENAMEAUTOLABEL913, false)
+        set(value) = prefs.edit().putBoolean(KEY_V913RENAMEAUTOLABEL913, value).apply()
+
+    var v913renderAutoFrame913: Boolean
+        get() = prefs.getBoolean(KEY_V913RENDERAUTOFRAME913, false)
+        set(value) = prefs.edit().putBoolean(KEY_V913RENDERAUTOFRAME913, value).apply()
+
+    var v913repeatAutoLoop913: Boolean
+        get() = prefs.getBoolean(KEY_V913REPEATAUTOLOOP913, false)
+        set(value) = prefs.edit().putBoolean(KEY_V913REPEATAUTOLOOP913, value).apply()
+
+    var v914redirectAutoUrl914: Boolean
+        get() = prefs.getBoolean(KEY_V914REDIRECTAUTOURL914, false)
+        set(value) = prefs.edit().putBoolean(KEY_V914REDIRECTAUTOURL914, value).apply()
+
+    var v914reduceAutoMotion914: Boolean
+        get() = prefs.getBoolean(KEY_V914REDUCEAUTOMOTION914, false)
+        set(value) = prefs.edit().putBoolean(KEY_V914REDUCEAUTOMOTION914, value).apply()
+
+    var v914refAutoCount914: Boolean
+        get() = prefs.getBoolean(KEY_V914REFAUTOCOUNT914, false)
+        set(value) = prefs.edit().putBoolean(KEY_V914REFAUTOCOUNT914, value).apply()
+
+    var v914referenceAutoLink914: Boolean
+        get() = prefs.getBoolean(KEY_V914REFERENCEAUTOLINK914, false)
+        set(value) = prefs.edit().putBoolean(KEY_V914REFERENCEAUTOLINK914, value).apply()
+
+    var v914refreshAutoRate914: Int
+        get() = prefs.getInt(KEY_V914REFRESHAUTORATE914, 0)
+        set(value) = prefs.edit().putInt(KEY_V914REFRESHAUTORATE914, value).apply()
+
+    var v914registerAutoCallback914: Boolean
+        get() = prefs.getBoolean(KEY_V914REGISTERAUTOCALLBACK914, false)
+        set(value) = prefs.edit().putBoolean(KEY_V914REGISTERAUTOCALLBACK914, value).apply()
+
+    var v914regularAutoExpression914: Boolean
+        get() = prefs.getBoolean(KEY_V914REGULARAUTOEXPRESSION914, false)
+        set(value) = prefs.edit().putBoolean(KEY_V914REGULARAUTOEXPRESSION914, value).apply()
+
+    var v914rejectAutoBlock914: Boolean
+        get() = prefs.getBoolean(KEY_V914REJECTAUTOBLOCK914, false)
+        set(value) = prefs.edit().putBoolean(KEY_V914REJECTAUTOBLOCK914, value).apply()
+
+    var v914relateAutoSuggest914: Boolean
+        get() = prefs.getBoolean(KEY_V914RELATEAUTOSUGGEST914, false)
+        set(value) = prefs.edit().putBoolean(KEY_V914RELATEAUTOSUGGEST914, value).apply()
+
+    var v914releaseAutoLock914: Boolean
+        get() = prefs.getBoolean(KEY_V914RELEASEAUTOLOCK914, false)
+        set(value) = prefs.edit().putBoolean(KEY_V914RELEASEAUTOLOCK914, value).apply()
+
+    var v914remoteAutoCast914: Boolean
+        get() = prefs.getBoolean(KEY_V914REMOTEAUTOCAST914, false)
+        set(value) = prefs.edit().putBoolean(KEY_V914REMOTEAUTOCAST914, value).apply()
+
+    var v914removeAutoClean914: Boolean
+        get() = prefs.getBoolean(KEY_V914REMOVEAUTOCLEAN914, false)
+        set(value) = prefs.edit().putBoolean(KEY_V914REMOVEAUTOCLEAN914, value).apply()
+
+    var v914renameAutoLabel914: Boolean
+        get() = prefs.getBoolean(KEY_V914RENAMEAUTOLABEL914, false)
+        set(value) = prefs.edit().putBoolean(KEY_V914RENAMEAUTOLABEL914, value).apply()
+
+    var v914renderAutoFrame914: Boolean
+        get() = prefs.getBoolean(KEY_V914RENDERAUTOFRAME914, false)
+        set(value) = prefs.edit().putBoolean(KEY_V914RENDERAUTOFRAME914, value).apply()
+
+    var v914repeatAutoLoop914: Boolean
+        get() = prefs.getBoolean(KEY_V914REPEATAUTOLOOP914, false)
+        set(value) = prefs.edit().putBoolean(KEY_V914REPEATAUTOLOOP914, value).apply()
+
+    var v915redirectAutoUrl915: Boolean
+        get() = prefs.getBoolean(KEY_V915REDIRECTAUTOURL915, false)
+        set(value) = prefs.edit().putBoolean(KEY_V915REDIRECTAUTOURL915, value).apply()
+
+    var v915reduceAutoMotion915: Boolean
+        get() = prefs.getBoolean(KEY_V915REDUCEAUTOMOTION915, false)
+        set(value) = prefs.edit().putBoolean(KEY_V915REDUCEAUTOMOTION915, value).apply()
+
+    var v915refAutoCount915: Boolean
+        get() = prefs.getBoolean(KEY_V915REFAUTOCOUNT915, false)
+        set(value) = prefs.edit().putBoolean(KEY_V915REFAUTOCOUNT915, value).apply()
+
+    var v915referenceAutoLink915: Boolean
+        get() = prefs.getBoolean(KEY_V915REFERENCEAUTOLINK915, false)
+        set(value) = prefs.edit().putBoolean(KEY_V915REFERENCEAUTOLINK915, value).apply()
+
+    var v915refreshAutoRate915: Int
+        get() = prefs.getInt(KEY_V915REFRESHAUTORATE915, 0)
+        set(value) = prefs.edit().putInt(KEY_V915REFRESHAUTORATE915, value).apply()
+
+    var v915registerAutoCallback915: Boolean
+        get() = prefs.getBoolean(KEY_V915REGISTERAUTOCALLBACK915, false)
+        set(value) = prefs.edit().putBoolean(KEY_V915REGISTERAUTOCALLBACK915, value).apply()
+
+    var v915regularAutoExpression915: Boolean
+        get() = prefs.getBoolean(KEY_V915REGULARAUTOEXPRESSION915, false)
+        set(value) = prefs.edit().putBoolean(KEY_V915REGULARAUTOEXPRESSION915, value).apply()
+
+    var v915rejectAutoBlock915: Boolean
+        get() = prefs.getBoolean(KEY_V915REJECTAUTOBLOCK915, false)
+        set(value) = prefs.edit().putBoolean(KEY_V915REJECTAUTOBLOCK915, value).apply()
+
+    var v915relateAutoSuggest915: Boolean
+        get() = prefs.getBoolean(KEY_V915RELATEAUTOSUGGEST915, false)
+        set(value) = prefs.edit().putBoolean(KEY_V915RELATEAUTOSUGGEST915, value).apply()
+
+    var v915releaseAutoLock915: Boolean
+        get() = prefs.getBoolean(KEY_V915RELEASEAUTOLOCK915, false)
+        set(value) = prefs.edit().putBoolean(KEY_V915RELEASEAUTOLOCK915, value).apply()
+
+    var v915remoteAutoCast915: Boolean
+        get() = prefs.getBoolean(KEY_V915REMOTEAUTOCAST915, false)
+        set(value) = prefs.edit().putBoolean(KEY_V915REMOTEAUTOCAST915, value).apply()
+
+    var v915removeAutoClean915: Boolean
+        get() = prefs.getBoolean(KEY_V915REMOVEAUTOCLEAN915, false)
+        set(value) = prefs.edit().putBoolean(KEY_V915REMOVEAUTOCLEAN915, value).apply()
+
+    var v915renameAutoLabel915: Boolean
+        get() = prefs.getBoolean(KEY_V915RENAMEAUTOLABEL915, false)
+        set(value) = prefs.edit().putBoolean(KEY_V915RENAMEAUTOLABEL915, value).apply()
+
+    var v915renderAutoFrame915: Boolean
+        get() = prefs.getBoolean(KEY_V915RENDERAUTOFRAME915, false)
+        set(value) = prefs.edit().putBoolean(KEY_V915RENDERAUTOFRAME915, value).apply()
+
+    var v915repeatAutoLoop915: Boolean
+        get() = prefs.getBoolean(KEY_V915REPEATAUTOLOOP915, false)
+        set(value) = prefs.edit().putBoolean(KEY_V915REPEATAUTOLOOP915, value).apply()
+
+    var v916redirectAutoUrl916: Boolean
+        get() = prefs.getBoolean(KEY_V916REDIRECTAUTOURL916, false)
+        set(value) = prefs.edit().putBoolean(KEY_V916REDIRECTAUTOURL916, value).apply()
+
+    var v916reduceAutoMotion916: Boolean
+        get() = prefs.getBoolean(KEY_V916REDUCEAUTOMOTION916, false)
+        set(value) = prefs.edit().putBoolean(KEY_V916REDUCEAUTOMOTION916, value).apply()
+
+    var v916refAutoCount916: Boolean
+        get() = prefs.getBoolean(KEY_V916REFAUTOCOUNT916, false)
+        set(value) = prefs.edit().putBoolean(KEY_V916REFAUTOCOUNT916, value).apply()
+
+    var v916referenceAutoLink916: Boolean
+        get() = prefs.getBoolean(KEY_V916REFERENCEAUTOLINK916, false)
+        set(value) = prefs.edit().putBoolean(KEY_V916REFERENCEAUTOLINK916, value).apply()
+
+    var v916refreshAutoRate916: Int
+        get() = prefs.getInt(KEY_V916REFRESHAUTORATE916, 0)
+        set(value) = prefs.edit().putInt(KEY_V916REFRESHAUTORATE916, value).apply()
+
+    var v916registerAutoCallback916: Boolean
+        get() = prefs.getBoolean(KEY_V916REGISTERAUTOCALLBACK916, false)
+        set(value) = prefs.edit().putBoolean(KEY_V916REGISTERAUTOCALLBACK916, value).apply()
+
+    var v916regularAutoExpression916: Boolean
+        get() = prefs.getBoolean(KEY_V916REGULARAUTOEXPRESSION916, false)
+        set(value) = prefs.edit().putBoolean(KEY_V916REGULARAUTOEXPRESSION916, value).apply()
+
+    var v916rejectAutoBlock916: Boolean
+        get() = prefs.getBoolean(KEY_V916REJECTAUTOBLOCK916, false)
+        set(value) = prefs.edit().putBoolean(KEY_V916REJECTAUTOBLOCK916, value).apply()
+
+    var v916relateAutoSuggest916: Boolean
+        get() = prefs.getBoolean(KEY_V916RELATEAUTOSUGGEST916, false)
+        set(value) = prefs.edit().putBoolean(KEY_V916RELATEAUTOSUGGEST916, value).apply()
+
+    var v916releaseAutoLock916: Boolean
+        get() = prefs.getBoolean(KEY_V916RELEASEAUTOLOCK916, false)
+        set(value) = prefs.edit().putBoolean(KEY_V916RELEASEAUTOLOCK916, value).apply()
+
+    var v916remoteAutoCast916: Boolean
+        get() = prefs.getBoolean(KEY_V916REMOTEAUTOCAST916, false)
+        set(value) = prefs.edit().putBoolean(KEY_V916REMOTEAUTOCAST916, value).apply()
+
+    var v916removeAutoClean916: Boolean
+        get() = prefs.getBoolean(KEY_V916REMOVEAUTOCLEAN916, false)
+        set(value) = prefs.edit().putBoolean(KEY_V916REMOVEAUTOCLEAN916, value).apply()
+
+    var v916renameAutoLabel916: Boolean
+        get() = prefs.getBoolean(KEY_V916RENAMEAUTOLABEL916, false)
+        set(value) = prefs.edit().putBoolean(KEY_V916RENAMEAUTOLABEL916, value).apply()
+
+    var v916renderAutoFrame916: Boolean
+        get() = prefs.getBoolean(KEY_V916RENDERAUTOFRAME916, false)
+        set(value) = prefs.edit().putBoolean(KEY_V916RENDERAUTOFRAME916, value).apply()
+
+    var v916repeatAutoLoop916: Boolean
+        get() = prefs.getBoolean(KEY_V916REPEATAUTOLOOP916, false)
+        set(value) = prefs.edit().putBoolean(KEY_V916REPEATAUTOLOOP916, value).apply()
+
+    var v917redirectAutoUrl917: Boolean
+        get() = prefs.getBoolean(KEY_V917REDIRECTAUTOURL917, false)
+        set(value) = prefs.edit().putBoolean(KEY_V917REDIRECTAUTOURL917, value).apply()
+
+    var v917reduceAutoMotion917: Boolean
+        get() = prefs.getBoolean(KEY_V917REDUCEAUTOMOTION917, false)
+        set(value) = prefs.edit().putBoolean(KEY_V917REDUCEAUTOMOTION917, value).apply()
+
+    var v917refAutoCount917: Boolean
+        get() = prefs.getBoolean(KEY_V917REFAUTOCOUNT917, false)
+        set(value) = prefs.edit().putBoolean(KEY_V917REFAUTOCOUNT917, value).apply()
+
+    var v917referenceAutoLink917: Boolean
+        get() = prefs.getBoolean(KEY_V917REFERENCEAUTOLINK917, false)
+        set(value) = prefs.edit().putBoolean(KEY_V917REFERENCEAUTOLINK917, value).apply()
+
+    var v917refreshAutoRate917: Int
+        get() = prefs.getInt(KEY_V917REFRESHAUTORATE917, 0)
+        set(value) = prefs.edit().putInt(KEY_V917REFRESHAUTORATE917, value).apply()
+
+    var v917registerAutoCallback917: Boolean
+        get() = prefs.getBoolean(KEY_V917REGISTERAUTOCALLBACK917, false)
+        set(value) = prefs.edit().putBoolean(KEY_V917REGISTERAUTOCALLBACK917, value).apply()
+
+    var v917regularAutoExpression917: Boolean
+        get() = prefs.getBoolean(KEY_V917REGULARAUTOEXPRESSION917, false)
+        set(value) = prefs.edit().putBoolean(KEY_V917REGULARAUTOEXPRESSION917, value).apply()
+
+    var v917rejectAutoBlock917: Boolean
+        get() = prefs.getBoolean(KEY_V917REJECTAUTOBLOCK917, false)
+        set(value) = prefs.edit().putBoolean(KEY_V917REJECTAUTOBLOCK917, value).apply()
+
+    var v917relateAutoSuggest917: Boolean
+        get() = prefs.getBoolean(KEY_V917RELATEAUTOSUGGEST917, false)
+        set(value) = prefs.edit().putBoolean(KEY_V917RELATEAUTOSUGGEST917, value).apply()
+
+    var v917releaseAutoLock917: Boolean
+        get() = prefs.getBoolean(KEY_V917RELEASEAUTOLOCK917, false)
+        set(value) = prefs.edit().putBoolean(KEY_V917RELEASEAUTOLOCK917, value).apply()
+
+    var v917remoteAutoCast917: Boolean
+        get() = prefs.getBoolean(KEY_V917REMOTEAUTOCAST917, false)
+        set(value) = prefs.edit().putBoolean(KEY_V917REMOTEAUTOCAST917, value).apply()
+
+    var v917removeAutoClean917: Boolean
+        get() = prefs.getBoolean(KEY_V917REMOVEAUTOCLEAN917, false)
+        set(value) = prefs.edit().putBoolean(KEY_V917REMOVEAUTOCLEAN917, value).apply()
+
+    var v917renameAutoLabel917: Boolean
+        get() = prefs.getBoolean(KEY_V917RENAMEAUTOLABEL917, false)
+        set(value) = prefs.edit().putBoolean(KEY_V917RENAMEAUTOLABEL917, value).apply()
+
+    var v917renderAutoFrame917: Boolean
+        get() = prefs.getBoolean(KEY_V917RENDERAUTOFRAME917, false)
+        set(value) = prefs.edit().putBoolean(KEY_V917RENDERAUTOFRAME917, value).apply()
+
+    var v917repeatAutoLoop917: Boolean
+        get() = prefs.getBoolean(KEY_V917REPEATAUTOLOOP917, false)
+        set(value) = prefs.edit().putBoolean(KEY_V917REPEATAUTOLOOP917, value).apply()
+
+    var v918redirectAutoUrl918: Boolean
+        get() = prefs.getBoolean(KEY_V918REDIRECTAUTOURL918, false)
+        set(value) = prefs.edit().putBoolean(KEY_V918REDIRECTAUTOURL918, value).apply()
+
+    var v918reduceAutoMotion918: Boolean
+        get() = prefs.getBoolean(KEY_V918REDUCEAUTOMOTION918, false)
+        set(value) = prefs.edit().putBoolean(KEY_V918REDUCEAUTOMOTION918, value).apply()
+
+    var v918refAutoCount918: Boolean
+        get() = prefs.getBoolean(KEY_V918REFAUTOCOUNT918, false)
+        set(value) = prefs.edit().putBoolean(KEY_V918REFAUTOCOUNT918, value).apply()
+
+    var v918referenceAutoLink918: Boolean
+        get() = prefs.getBoolean(KEY_V918REFERENCEAUTOLINK918, false)
+        set(value) = prefs.edit().putBoolean(KEY_V918REFERENCEAUTOLINK918, value).apply()
+
+    var v918refreshAutoRate918: Int
+        get() = prefs.getInt(KEY_V918REFRESHAUTORATE918, 0)
+        set(value) = prefs.edit().putInt(KEY_V918REFRESHAUTORATE918, value).apply()
+
+    var v918registerAutoCallback918: Boolean
+        get() = prefs.getBoolean(KEY_V918REGISTERAUTOCALLBACK918, false)
+        set(value) = prefs.edit().putBoolean(KEY_V918REGISTERAUTOCALLBACK918, value).apply()
+
+    var v918regularAutoExpression918: Boolean
+        get() = prefs.getBoolean(KEY_V918REGULARAUTOEXPRESSION918, false)
+        set(value) = prefs.edit().putBoolean(KEY_V918REGULARAUTOEXPRESSION918, value).apply()
+
+    var v918rejectAutoBlock918: Boolean
+        get() = prefs.getBoolean(KEY_V918REJECTAUTOBLOCK918, false)
+        set(value) = prefs.edit().putBoolean(KEY_V918REJECTAUTOBLOCK918, value).apply()
+
+    var v918relateAutoSuggest918: Boolean
+        get() = prefs.getBoolean(KEY_V918RELATEAUTOSUGGEST918, false)
+        set(value) = prefs.edit().putBoolean(KEY_V918RELATEAUTOSUGGEST918, value).apply()
+
+    var v918releaseAutoLock918: Boolean
+        get() = prefs.getBoolean(KEY_V918RELEASEAUTOLOCK918, false)
+        set(value) = prefs.edit().putBoolean(KEY_V918RELEASEAUTOLOCK918, value).apply()
+
+    var v918remoteAutoCast918: Boolean
+        get() = prefs.getBoolean(KEY_V918REMOTEAUTOCAST918, false)
+        set(value) = prefs.edit().putBoolean(KEY_V918REMOTEAUTOCAST918, value).apply()
+
+    var v918removeAutoClean918: Boolean
+        get() = prefs.getBoolean(KEY_V918REMOVEAUTOCLEAN918, false)
+        set(value) = prefs.edit().putBoolean(KEY_V918REMOVEAUTOCLEAN918, value).apply()
+
+    var v918renameAutoLabel918: Boolean
+        get() = prefs.getBoolean(KEY_V918RENAMEAUTOLABEL918, false)
+        set(value) = prefs.edit().putBoolean(KEY_V918RENAMEAUTOLABEL918, value).apply()
+
+    var v918renderAutoFrame918: Boolean
+        get() = prefs.getBoolean(KEY_V918RENDERAUTOFRAME918, false)
+        set(value) = prefs.edit().putBoolean(KEY_V918RENDERAUTOFRAME918, value).apply()
+
+    var v918repeatAutoLoop918: Boolean
+        get() = prefs.getBoolean(KEY_V918REPEATAUTOLOOP918, false)
+        set(value) = prefs.edit().putBoolean(KEY_V918REPEATAUTOLOOP918, value).apply()
+
+    var v919redirectAutoUrl919: Boolean
+        get() = prefs.getBoolean(KEY_V919REDIRECTAUTOURL919, false)
+        set(value) = prefs.edit().putBoolean(KEY_V919REDIRECTAUTOURL919, value).apply()
+
+    var v919reduceAutoMotion919: Boolean
+        get() = prefs.getBoolean(KEY_V919REDUCEAUTOMOTION919, false)
+        set(value) = prefs.edit().putBoolean(KEY_V919REDUCEAUTOMOTION919, value).apply()
+
+    var v919refAutoCount919: Boolean
+        get() = prefs.getBoolean(KEY_V919REFAUTOCOUNT919, false)
+        set(value) = prefs.edit().putBoolean(KEY_V919REFAUTOCOUNT919, value).apply()
+
+    var v919referenceAutoLink919: Boolean
+        get() = prefs.getBoolean(KEY_V919REFERENCEAUTOLINK919, false)
+        set(value) = prefs.edit().putBoolean(KEY_V919REFERENCEAUTOLINK919, value).apply()
+
+    var v919refreshAutoRate919: Int
+        get() = prefs.getInt(KEY_V919REFRESHAUTORATE919, 0)
+        set(value) = prefs.edit().putInt(KEY_V919REFRESHAUTORATE919, value).apply()
+
+    var v919registerAutoCallback919: Boolean
+        get() = prefs.getBoolean(KEY_V919REGISTERAUTOCALLBACK919, false)
+        set(value) = prefs.edit().putBoolean(KEY_V919REGISTERAUTOCALLBACK919, value).apply()
+
+    var v919regularAutoExpression919: Boolean
+        get() = prefs.getBoolean(KEY_V919REGULARAUTOEXPRESSION919, false)
+        set(value) = prefs.edit().putBoolean(KEY_V919REGULARAUTOEXPRESSION919, value).apply()
+
+    var v919rejectAutoBlock919: Boolean
+        get() = prefs.getBoolean(KEY_V919REJECTAUTOBLOCK919, false)
+        set(value) = prefs.edit().putBoolean(KEY_V919REJECTAUTOBLOCK919, value).apply()
+
+    var v919relateAutoSuggest919: Boolean
+        get() = prefs.getBoolean(KEY_V919RELATEAUTOSUGGEST919, false)
+        set(value) = prefs.edit().putBoolean(KEY_V919RELATEAUTOSUGGEST919, value).apply()
+
+    var v919releaseAutoLock919: Boolean
+        get() = prefs.getBoolean(KEY_V919RELEASEAUTOLOCK919, false)
+        set(value) = prefs.edit().putBoolean(KEY_V919RELEASEAUTOLOCK919, value).apply()
+
+    var v919remoteAutoCast919: Boolean
+        get() = prefs.getBoolean(KEY_V919REMOTEAUTOCAST919, false)
+        set(value) = prefs.edit().putBoolean(KEY_V919REMOTEAUTOCAST919, value).apply()
+
+    var v919removeAutoClean919: Boolean
+        get() = prefs.getBoolean(KEY_V919REMOVEAUTOCLEAN919, false)
+        set(value) = prefs.edit().putBoolean(KEY_V919REMOVEAUTOCLEAN919, value).apply()
+
+    var v919renameAutoLabel919: Boolean
+        get() = prefs.getBoolean(KEY_V919RENAMEAUTOLABEL919, false)
+        set(value) = prefs.edit().putBoolean(KEY_V919RENAMEAUTOLABEL919, value).apply()
+
+    var v919renderAutoFrame919: Boolean
+        get() = prefs.getBoolean(KEY_V919RENDERAUTOFRAME919, false)
+        set(value) = prefs.edit().putBoolean(KEY_V919RENDERAUTOFRAME919, value).apply()
+
+    var v919repeatAutoLoop919: Boolean
+        get() = prefs.getBoolean(KEY_V919REPEATAUTOLOOP919, false)
+        set(value) = prefs.edit().putBoolean(KEY_V919REPEATAUTOLOOP919, value).apply()
+
+    var v920redirectAutoUrl920: Boolean
+        get() = prefs.getBoolean(KEY_V920REDIRECTAUTOURL920, false)
+        set(value) = prefs.edit().putBoolean(KEY_V920REDIRECTAUTOURL920, value).apply()
+
+    var v920reduceAutoMotion920: Boolean
+        get() = prefs.getBoolean(KEY_V920REDUCEAUTOMOTION920, false)
+        set(value) = prefs.edit().putBoolean(KEY_V920REDUCEAUTOMOTION920, value).apply()
+
+    var v920refAutoCount920: Boolean
+        get() = prefs.getBoolean(KEY_V920REFAUTOCOUNT920, false)
+        set(value) = prefs.edit().putBoolean(KEY_V920REFAUTOCOUNT920, value).apply()
+
+    var v920referenceAutoLink920: Boolean
+        get() = prefs.getBoolean(KEY_V920REFERENCEAUTOLINK920, false)
+        set(value) = prefs.edit().putBoolean(KEY_V920REFERENCEAUTOLINK920, value).apply()
+
+    var v920refreshAutoRate920: Int
+        get() = prefs.getInt(KEY_V920REFRESHAUTORATE920, 0)
+        set(value) = prefs.edit().putInt(KEY_V920REFRESHAUTORATE920, value).apply()
+
+    var v920registerAutoCallback920: Boolean
+        get() = prefs.getBoolean(KEY_V920REGISTERAUTOCALLBACK920, false)
+        set(value) = prefs.edit().putBoolean(KEY_V920REGISTERAUTOCALLBACK920, value).apply()
+
+    var v920regularAutoExpression920: Boolean
+        get() = prefs.getBoolean(KEY_V920REGULARAUTOEXPRESSION920, false)
+        set(value) = prefs.edit().putBoolean(KEY_V920REGULARAUTOEXPRESSION920, value).apply()
+
+    var v920rejectAutoBlock920: Boolean
+        get() = prefs.getBoolean(KEY_V920REJECTAUTOBLOCK920, false)
+        set(value) = prefs.edit().putBoolean(KEY_V920REJECTAUTOBLOCK920, value).apply()
+
+    var v920relateAutoSuggest920: Boolean
+        get() = prefs.getBoolean(KEY_V920RELATEAUTOSUGGEST920, false)
+        set(value) = prefs.edit().putBoolean(KEY_V920RELATEAUTOSUGGEST920, value).apply()
+
+    var v920releaseAutoLock920: Boolean
+        get() = prefs.getBoolean(KEY_V920RELEASEAUTOLOCK920, false)
+        set(value) = prefs.edit().putBoolean(KEY_V920RELEASEAUTOLOCK920, value).apply()
+
+    var v920remoteAutoCast920: Boolean
+        get() = prefs.getBoolean(KEY_V920REMOTEAUTOCAST920, false)
+        set(value) = prefs.edit().putBoolean(KEY_V920REMOTEAUTOCAST920, value).apply()
+
+    var v920removeAutoClean920: Boolean
+        get() = prefs.getBoolean(KEY_V920REMOVEAUTOCLEAN920, false)
+        set(value) = prefs.edit().putBoolean(KEY_V920REMOVEAUTOCLEAN920, value).apply()
+
+    var v920renameAutoLabel920: Boolean
+        get() = prefs.getBoolean(KEY_V920RENAMEAUTOLABEL920, false)
+        set(value) = prefs.edit().putBoolean(KEY_V920RENAMEAUTOLABEL920, value).apply()
+
+    var v920renderAutoFrame920: Boolean
+        get() = prefs.getBoolean(KEY_V920RENDERAUTOFRAME920, false)
+        set(value) = prefs.edit().putBoolean(KEY_V920RENDERAUTOFRAME920, value).apply()
+
+    var v920repeatAutoLoop920: Boolean
+        get() = prefs.getBoolean(KEY_V920REPEATAUTOLOOP920, false)
+        set(value) = prefs.edit().putBoolean(KEY_V920REPEATAUTOLOOP920, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -77430,5 +78030,155 @@ class AppPrefs(context: Context) {
         const val KEY_V910RECORDAUTOHISTORY910 = "v910recordAutoHistory910" // v910 Record Auto History910
         const val KEY_V910RECOVERAUTOSESSION910 = "v910recoverAutoSession910" // v910 Recover Auto Session910
         const val KEY_V910RECYCLEAUTOBIN910 = "v910recycleAutoBin910" // v910 Recycle Auto Bin910
+        const val KEY_V911REDIRECTAUTOURL911 = "v911redirectAutoUrl911" // v911 Redirect Auto Url911
+        const val KEY_V911REDUCEAUTOMOTION911 = "v911reduceAutoMotion911" // v911 Reduce Auto Motion911
+        const val KEY_V911REFAUTOCOUNT911 = "v911refAutoCount911" // v911 Ref Auto Count911
+        const val KEY_V911REFERENCEAUTOLINK911 = "v911referenceAutoLink911" // v911 Reference Auto Link911
+        const val KEY_V911REFRESHAUTORATE911 = "v911refreshAutoRate911" // v911 Refresh Auto Rate911
+        const val KEY_V911REGISTERAUTOCALLBACK911 = "v911registerAutoCallback911" // v911 Register Auto Callback911
+        const val KEY_V911REGULARAUTOEXPRESSION911 = "v911regularAutoExpression911" // v911 Regular Auto Expression911
+        const val KEY_V911REJECTAUTOBLOCK911 = "v911rejectAutoBlock911" // v911 Reject Auto Block911
+        const val KEY_V911RELATEAUTOSUGGEST911 = "v911relateAutoSuggest911" // v911 Relate Auto Suggest911
+        const val KEY_V911RELEASEAUTOLOCK911 = "v911releaseAutoLock911" // v911 Release Auto Lock911
+        const val KEY_V911REMOTEAUTOCAST911 = "v911remoteAutoCast911" // v911 Remote Auto Cast911
+        const val KEY_V911REMOVEAUTOCLEAN911 = "v911removeAutoClean911" // v911 Remove Auto Clean911
+        const val KEY_V911RENAMEAUTOLABEL911 = "v911renameAutoLabel911" // v911 Rename Auto Label911
+        const val KEY_V911RENDERAUTOFRAME911 = "v911renderAutoFrame911" // v911 Render Auto Frame911
+        const val KEY_V911REPEATAUTOLOOP911 = "v911repeatAutoLoop911" // v911 Repeat Auto Loop911
+        const val KEY_V912REDIRECTAUTOURL912 = "v912redirectAutoUrl912" // v912 Redirect Auto Url912
+        const val KEY_V912REDUCEAUTOMOTION912 = "v912reduceAutoMotion912" // v912 Reduce Auto Motion912
+        const val KEY_V912REFAUTOCOUNT912 = "v912refAutoCount912" // v912 Ref Auto Count912
+        const val KEY_V912REFERENCEAUTOLINK912 = "v912referenceAutoLink912" // v912 Reference Auto Link912
+        const val KEY_V912REFRESHAUTORATE912 = "v912refreshAutoRate912" // v912 Refresh Auto Rate912
+        const val KEY_V912REGISTERAUTOCALLBACK912 = "v912registerAutoCallback912" // v912 Register Auto Callback912
+        const val KEY_V912REGULARAUTOEXPRESSION912 = "v912regularAutoExpression912" // v912 Regular Auto Expression912
+        const val KEY_V912REJECTAUTOBLOCK912 = "v912rejectAutoBlock912" // v912 Reject Auto Block912
+        const val KEY_V912RELATEAUTOSUGGEST912 = "v912relateAutoSuggest912" // v912 Relate Auto Suggest912
+        const val KEY_V912RELEASEAUTOLOCK912 = "v912releaseAutoLock912" // v912 Release Auto Lock912
+        const val KEY_V912REMOTEAUTOCAST912 = "v912remoteAutoCast912" // v912 Remote Auto Cast912
+        const val KEY_V912REMOVEAUTOCLEAN912 = "v912removeAutoClean912" // v912 Remove Auto Clean912
+        const val KEY_V912RENAMEAUTOLABEL912 = "v912renameAutoLabel912" // v912 Rename Auto Label912
+        const val KEY_V912RENDERAUTOFRAME912 = "v912renderAutoFrame912" // v912 Render Auto Frame912
+        const val KEY_V912REPEATAUTOLOOP912 = "v912repeatAutoLoop912" // v912 Repeat Auto Loop912
+        const val KEY_V913REDIRECTAUTOURL913 = "v913redirectAutoUrl913" // v913 Redirect Auto Url913
+        const val KEY_V913REDUCEAUTOMOTION913 = "v913reduceAutoMotion913" // v913 Reduce Auto Motion913
+        const val KEY_V913REFAUTOCOUNT913 = "v913refAutoCount913" // v913 Ref Auto Count913
+        const val KEY_V913REFERENCEAUTOLINK913 = "v913referenceAutoLink913" // v913 Reference Auto Link913
+        const val KEY_V913REFRESHAUTORATE913 = "v913refreshAutoRate913" // v913 Refresh Auto Rate913
+        const val KEY_V913REGISTERAUTOCALLBACK913 = "v913registerAutoCallback913" // v913 Register Auto Callback913
+        const val KEY_V913REGULARAUTOEXPRESSION913 = "v913regularAutoExpression913" // v913 Regular Auto Expression913
+        const val KEY_V913REJECTAUTOBLOCK913 = "v913rejectAutoBlock913" // v913 Reject Auto Block913
+        const val KEY_V913RELATEAUTOSUGGEST913 = "v913relateAutoSuggest913" // v913 Relate Auto Suggest913
+        const val KEY_V913RELEASEAUTOLOCK913 = "v913releaseAutoLock913" // v913 Release Auto Lock913
+        const val KEY_V913REMOTEAUTOCAST913 = "v913remoteAutoCast913" // v913 Remote Auto Cast913
+        const val KEY_V913REMOVEAUTOCLEAN913 = "v913removeAutoClean913" // v913 Remove Auto Clean913
+        const val KEY_V913RENAMEAUTOLABEL913 = "v913renameAutoLabel913" // v913 Rename Auto Label913
+        const val KEY_V913RENDERAUTOFRAME913 = "v913renderAutoFrame913" // v913 Render Auto Frame913
+        const val KEY_V913REPEATAUTOLOOP913 = "v913repeatAutoLoop913" // v913 Repeat Auto Loop913
+        const val KEY_V914REDIRECTAUTOURL914 = "v914redirectAutoUrl914" // v914 Redirect Auto Url914
+        const val KEY_V914REDUCEAUTOMOTION914 = "v914reduceAutoMotion914" // v914 Reduce Auto Motion914
+        const val KEY_V914REFAUTOCOUNT914 = "v914refAutoCount914" // v914 Ref Auto Count914
+        const val KEY_V914REFERENCEAUTOLINK914 = "v914referenceAutoLink914" // v914 Reference Auto Link914
+        const val KEY_V914REFRESHAUTORATE914 = "v914refreshAutoRate914" // v914 Refresh Auto Rate914
+        const val KEY_V914REGISTERAUTOCALLBACK914 = "v914registerAutoCallback914" // v914 Register Auto Callback914
+        const val KEY_V914REGULARAUTOEXPRESSION914 = "v914regularAutoExpression914" // v914 Regular Auto Expression914
+        const val KEY_V914REJECTAUTOBLOCK914 = "v914rejectAutoBlock914" // v914 Reject Auto Block914
+        const val KEY_V914RELATEAUTOSUGGEST914 = "v914relateAutoSuggest914" // v914 Relate Auto Suggest914
+        const val KEY_V914RELEASEAUTOLOCK914 = "v914releaseAutoLock914" // v914 Release Auto Lock914
+        const val KEY_V914REMOTEAUTOCAST914 = "v914remoteAutoCast914" // v914 Remote Auto Cast914
+        const val KEY_V914REMOVEAUTOCLEAN914 = "v914removeAutoClean914" // v914 Remove Auto Clean914
+        const val KEY_V914RENAMEAUTOLABEL914 = "v914renameAutoLabel914" // v914 Rename Auto Label914
+        const val KEY_V914RENDERAUTOFRAME914 = "v914renderAutoFrame914" // v914 Render Auto Frame914
+        const val KEY_V914REPEATAUTOLOOP914 = "v914repeatAutoLoop914" // v914 Repeat Auto Loop914
+        const val KEY_V915REDIRECTAUTOURL915 = "v915redirectAutoUrl915" // v915 Redirect Auto Url915
+        const val KEY_V915REDUCEAUTOMOTION915 = "v915reduceAutoMotion915" // v915 Reduce Auto Motion915
+        const val KEY_V915REFAUTOCOUNT915 = "v915refAutoCount915" // v915 Ref Auto Count915
+        const val KEY_V915REFERENCEAUTOLINK915 = "v915referenceAutoLink915" // v915 Reference Auto Link915
+        const val KEY_V915REFRESHAUTORATE915 = "v915refreshAutoRate915" // v915 Refresh Auto Rate915
+        const val KEY_V915REGISTERAUTOCALLBACK915 = "v915registerAutoCallback915" // v915 Register Auto Callback915
+        const val KEY_V915REGULARAUTOEXPRESSION915 = "v915regularAutoExpression915" // v915 Regular Auto Expression915
+        const val KEY_V915REJECTAUTOBLOCK915 = "v915rejectAutoBlock915" // v915 Reject Auto Block915
+        const val KEY_V915RELATEAUTOSUGGEST915 = "v915relateAutoSuggest915" // v915 Relate Auto Suggest915
+        const val KEY_V915RELEASEAUTOLOCK915 = "v915releaseAutoLock915" // v915 Release Auto Lock915
+        const val KEY_V915REMOTEAUTOCAST915 = "v915remoteAutoCast915" // v915 Remote Auto Cast915
+        const val KEY_V915REMOVEAUTOCLEAN915 = "v915removeAutoClean915" // v915 Remove Auto Clean915
+        const val KEY_V915RENAMEAUTOLABEL915 = "v915renameAutoLabel915" // v915 Rename Auto Label915
+        const val KEY_V915RENDERAUTOFRAME915 = "v915renderAutoFrame915" // v915 Render Auto Frame915
+        const val KEY_V915REPEATAUTOLOOP915 = "v915repeatAutoLoop915" // v915 Repeat Auto Loop915
+        const val KEY_V916REDIRECTAUTOURL916 = "v916redirectAutoUrl916" // v916 Redirect Auto Url916
+        const val KEY_V916REDUCEAUTOMOTION916 = "v916reduceAutoMotion916" // v916 Reduce Auto Motion916
+        const val KEY_V916REFAUTOCOUNT916 = "v916refAutoCount916" // v916 Ref Auto Count916
+        const val KEY_V916REFERENCEAUTOLINK916 = "v916referenceAutoLink916" // v916 Reference Auto Link916
+        const val KEY_V916REFRESHAUTORATE916 = "v916refreshAutoRate916" // v916 Refresh Auto Rate916
+        const val KEY_V916REGISTERAUTOCALLBACK916 = "v916registerAutoCallback916" // v916 Register Auto Callback916
+        const val KEY_V916REGULARAUTOEXPRESSION916 = "v916regularAutoExpression916" // v916 Regular Auto Expression916
+        const val KEY_V916REJECTAUTOBLOCK916 = "v916rejectAutoBlock916" // v916 Reject Auto Block916
+        const val KEY_V916RELATEAUTOSUGGEST916 = "v916relateAutoSuggest916" // v916 Relate Auto Suggest916
+        const val KEY_V916RELEASEAUTOLOCK916 = "v916releaseAutoLock916" // v916 Release Auto Lock916
+        const val KEY_V916REMOTEAUTOCAST916 = "v916remoteAutoCast916" // v916 Remote Auto Cast916
+        const val KEY_V916REMOVEAUTOCLEAN916 = "v916removeAutoClean916" // v916 Remove Auto Clean916
+        const val KEY_V916RENAMEAUTOLABEL916 = "v916renameAutoLabel916" // v916 Rename Auto Label916
+        const val KEY_V916RENDERAUTOFRAME916 = "v916renderAutoFrame916" // v916 Render Auto Frame916
+        const val KEY_V916REPEATAUTOLOOP916 = "v916repeatAutoLoop916" // v916 Repeat Auto Loop916
+        const val KEY_V917REDIRECTAUTOURL917 = "v917redirectAutoUrl917" // v917 Redirect Auto Url917
+        const val KEY_V917REDUCEAUTOMOTION917 = "v917reduceAutoMotion917" // v917 Reduce Auto Motion917
+        const val KEY_V917REFAUTOCOUNT917 = "v917refAutoCount917" // v917 Ref Auto Count917
+        const val KEY_V917REFERENCEAUTOLINK917 = "v917referenceAutoLink917" // v917 Reference Auto Link917
+        const val KEY_V917REFRESHAUTORATE917 = "v917refreshAutoRate917" // v917 Refresh Auto Rate917
+        const val KEY_V917REGISTERAUTOCALLBACK917 = "v917registerAutoCallback917" // v917 Register Auto Callback917
+        const val KEY_V917REGULARAUTOEXPRESSION917 = "v917regularAutoExpression917" // v917 Regular Auto Expression917
+        const val KEY_V917REJECTAUTOBLOCK917 = "v917rejectAutoBlock917" // v917 Reject Auto Block917
+        const val KEY_V917RELATEAUTOSUGGEST917 = "v917relateAutoSuggest917" // v917 Relate Auto Suggest917
+        const val KEY_V917RELEASEAUTOLOCK917 = "v917releaseAutoLock917" // v917 Release Auto Lock917
+        const val KEY_V917REMOTEAUTOCAST917 = "v917remoteAutoCast917" // v917 Remote Auto Cast917
+        const val KEY_V917REMOVEAUTOCLEAN917 = "v917removeAutoClean917" // v917 Remove Auto Clean917
+        const val KEY_V917RENAMEAUTOLABEL917 = "v917renameAutoLabel917" // v917 Rename Auto Label917
+        const val KEY_V917RENDERAUTOFRAME917 = "v917renderAutoFrame917" // v917 Render Auto Frame917
+        const val KEY_V917REPEATAUTOLOOP917 = "v917repeatAutoLoop917" // v917 Repeat Auto Loop917
+        const val KEY_V918REDIRECTAUTOURL918 = "v918redirectAutoUrl918" // v918 Redirect Auto Url918
+        const val KEY_V918REDUCEAUTOMOTION918 = "v918reduceAutoMotion918" // v918 Reduce Auto Motion918
+        const val KEY_V918REFAUTOCOUNT918 = "v918refAutoCount918" // v918 Ref Auto Count918
+        const val KEY_V918REFERENCEAUTOLINK918 = "v918referenceAutoLink918" // v918 Reference Auto Link918
+        const val KEY_V918REFRESHAUTORATE918 = "v918refreshAutoRate918" // v918 Refresh Auto Rate918
+        const val KEY_V918REGISTERAUTOCALLBACK918 = "v918registerAutoCallback918" // v918 Register Auto Callback918
+        const val KEY_V918REGULARAUTOEXPRESSION918 = "v918regularAutoExpression918" // v918 Regular Auto Expression918
+        const val KEY_V918REJECTAUTOBLOCK918 = "v918rejectAutoBlock918" // v918 Reject Auto Block918
+        const val KEY_V918RELATEAUTOSUGGEST918 = "v918relateAutoSuggest918" // v918 Relate Auto Suggest918
+        const val KEY_V918RELEASEAUTOLOCK918 = "v918releaseAutoLock918" // v918 Release Auto Lock918
+        const val KEY_V918REMOTEAUTOCAST918 = "v918remoteAutoCast918" // v918 Remote Auto Cast918
+        const val KEY_V918REMOVEAUTOCLEAN918 = "v918removeAutoClean918" // v918 Remove Auto Clean918
+        const val KEY_V918RENAMEAUTOLABEL918 = "v918renameAutoLabel918" // v918 Rename Auto Label918
+        const val KEY_V918RENDERAUTOFRAME918 = "v918renderAutoFrame918" // v918 Render Auto Frame918
+        const val KEY_V918REPEATAUTOLOOP918 = "v918repeatAutoLoop918" // v918 Repeat Auto Loop918
+        const val KEY_V919REDIRECTAUTOURL919 = "v919redirectAutoUrl919" // v919 Redirect Auto Url919
+        const val KEY_V919REDUCEAUTOMOTION919 = "v919reduceAutoMotion919" // v919 Reduce Auto Motion919
+        const val KEY_V919REFAUTOCOUNT919 = "v919refAutoCount919" // v919 Ref Auto Count919
+        const val KEY_V919REFERENCEAUTOLINK919 = "v919referenceAutoLink919" // v919 Reference Auto Link919
+        const val KEY_V919REFRESHAUTORATE919 = "v919refreshAutoRate919" // v919 Refresh Auto Rate919
+        const val KEY_V919REGISTERAUTOCALLBACK919 = "v919registerAutoCallback919" // v919 Register Auto Callback919
+        const val KEY_V919REGULARAUTOEXPRESSION919 = "v919regularAutoExpression919" // v919 Regular Auto Expression919
+        const val KEY_V919REJECTAUTOBLOCK919 = "v919rejectAutoBlock919" // v919 Reject Auto Block919
+        const val KEY_V919RELATEAUTOSUGGEST919 = "v919relateAutoSuggest919" // v919 Relate Auto Suggest919
+        const val KEY_V919RELEASEAUTOLOCK919 = "v919releaseAutoLock919" // v919 Release Auto Lock919
+        const val KEY_V919REMOTEAUTOCAST919 = "v919remoteAutoCast919" // v919 Remote Auto Cast919
+        const val KEY_V919REMOVEAUTOCLEAN919 = "v919removeAutoClean919" // v919 Remove Auto Clean919
+        const val KEY_V919RENAMEAUTOLABEL919 = "v919renameAutoLabel919" // v919 Rename Auto Label919
+        const val KEY_V919RENDERAUTOFRAME919 = "v919renderAutoFrame919" // v919 Render Auto Frame919
+        const val KEY_V919REPEATAUTOLOOP919 = "v919repeatAutoLoop919" // v919 Repeat Auto Loop919
+        const val KEY_V920REDIRECTAUTOURL920 = "v920redirectAutoUrl920" // v920 Redirect Auto Url920
+        const val KEY_V920REDUCEAUTOMOTION920 = "v920reduceAutoMotion920" // v920 Reduce Auto Motion920
+        const val KEY_V920REFAUTOCOUNT920 = "v920refAutoCount920" // v920 Ref Auto Count920
+        const val KEY_V920REFERENCEAUTOLINK920 = "v920referenceAutoLink920" // v920 Reference Auto Link920
+        const val KEY_V920REFRESHAUTORATE920 = "v920refreshAutoRate920" // v920 Refresh Auto Rate920
+        const val KEY_V920REGISTERAUTOCALLBACK920 = "v920registerAutoCallback920" // v920 Register Auto Callback920
+        const val KEY_V920REGULARAUTOEXPRESSION920 = "v920regularAutoExpression920" // v920 Regular Auto Expression920
+        const val KEY_V920REJECTAUTOBLOCK920 = "v920rejectAutoBlock920" // v920 Reject Auto Block920
+        const val KEY_V920RELATEAUTOSUGGEST920 = "v920relateAutoSuggest920" // v920 Relate Auto Suggest920
+        const val KEY_V920RELEASEAUTOLOCK920 = "v920releaseAutoLock920" // v920 Release Auto Lock920
+        const val KEY_V920REMOTEAUTOCAST920 = "v920remoteAutoCast920" // v920 Remote Auto Cast920
+        const val KEY_V920REMOVEAUTOCLEAN920 = "v920removeAutoClean920" // v920 Remove Auto Clean920
+        const val KEY_V920RENAMEAUTOLABEL920 = "v920renameAutoLabel920" // v920 Rename Auto Label920
+        const val KEY_V920RENDERAUTOFRAME920 = "v920renderAutoFrame920" // v920 Render Auto Frame920
+        const val KEY_V920REPEATAUTOLOOP920 = "v920repeatAutoLoop920" // v920 Repeat Auto Loop920
     }
 }
