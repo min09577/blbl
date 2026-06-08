@@ -23648,6 +23648,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V280SUBTITLEBGBORDER375, false)
         set(value) = prefs.edit().putBoolean(KEY_V280SUBTITLEBGBORDER375, value).apply()
 
+    var v281audioEQCustom281: Boolean
+        get() = prefs.getBoolean(KEY_V281AUDIOEQCUSTOM281, false)
+        set(value) = prefs.edit().putBoolean(KEY_V281AUDIOEQCUSTOM281, value).apply()
+
+    var v281danmakuBottomMaxCount369: Int
+        get() = prefs.getInt(KEY_V281DANMAKUBOTTOMMAXCOUNT369, 0)
+        set(value) = prefs.edit().putInt(KEY_V281DANMAKUBOTTOMMAXCOUNT369, value).apply()
+
+    var v281subtitleBgBorder376: Boolean
+        get() = prefs.getBoolean(KEY_V281SUBTITLEBGBORDER376, false)
+        set(value) = prefs.edit().putBoolean(KEY_V281SUBTITLEBGBORDER376, value).apply()
+
+    var v281gestureShakeAction281: Int
+        get() = prefs.getInt(KEY_V281GESTURESHAKEACTION281, 0)
+        set(value) = prefs.edit().putInt(KEY_V281GESTURESHAKEACTION281, value).apply()
+
+    var v281castAudioVolume281: Int
+        get() = prefs.getInt(KEY_V281CASTAUDIOVOLUME281, 100)
+        set(value) = prefs.edit().putInt(KEY_V281CASTAUDIOVOLUME281, value).apply()
+
+    var v281playlistAutoSkipOutro281: Boolean
+        get() = prefs.getBoolean(KEY_V281PLAYLISTAUTOSKIPOUTRO281, false)
+        set(value) = prefs.edit().putBoolean(KEY_V281PLAYLISTAUTOSKIPOUTRO281, value).apply()
+
+    var v281cacheDownloadSpeed282: Int
+        get() = prefs.getInt(KEY_V281CACHEDOWNLOADSPEED282, 0)
+        set(value) = prefs.edit().putInt(KEY_V281CACHEDOWNLOADSPEED282, value).apply()
+
+    var v281progressBarThumbBorder281: Boolean
+        get() = prefs.getBoolean(KEY_V281PROGRESSBARTHUMBBORDER281, false)
+        set(value) = prefs.edit().putBoolean(KEY_V281PROGRESSBARTHUMBBORDER281, value).apply()
+
+    var v281volumeBoostPeak281: Boolean
+        get() = prefs.getBoolean(KEY_V281VOLUMEBOOSTPEAK281, false)
+        set(value) = prefs.edit().putBoolean(KEY_V281VOLUMEBOOSTPEAK281, value).apply()
+
+    var v281historyBookmarkExport281: Boolean
+        get() = prefs.getBoolean(KEY_V281HISTORYBOOKMARKEXPORT281, false)
+        set(value) = prefs.edit().putBoolean(KEY_V281HISTORYBOOKMARKEXPORT281, value).apply()
+
+    var v281playbackChapterSync281: Boolean
+        get() = prefs.getBoolean(KEY_V281PLAYBACKCHAPTERSYNC281, false)
+        set(value) = prefs.edit().putBoolean(KEY_V281PLAYBACKCHAPTERSYNC281, value).apply()
+
+    var v281screenshotSavePath281: Boolean
+        get() = prefs.getBoolean(KEY_V281SCREENSHOTSAVEPATH281, false)
+        set(value) = prefs.edit().putBoolean(KEY_V281SCREENSHOTSAVEPATH281, value).apply()
+
+    var v281videoColorSpace281: Int
+        get() = prefs.getInt(KEY_V281VIDEOCOLORSPACE281, 0)
+        set(value) = prefs.edit().putInt(KEY_V281VIDEOCOLORSPACE281, value).apply()
+
+    var v281danmakuBottomMaxCount370: Int
+        get() = prefs.getInt(KEY_V281DANMAKUBOTTOMMAXCOUNT370, 0)
+        set(value) = prefs.edit().putInt(KEY_V281DANMAKUBOTTOMMAXCOUNT370, value).apply()
+
+    var v281subtitleBgBorder377: Boolean
+        get() = prefs.getBoolean(KEY_V281SUBTITLEBGBORDER377, false)
+        set(value) = prefs.edit().putBoolean(KEY_V281SUBTITLEBGBORDER377, value).apply()
+
+    var v282audioEQCustom282: Boolean
+        get() = prefs.getBoolean(KEY_V282AUDIOEQCUSTOM282, false)
+        set(value) = prefs.edit().putBoolean(KEY_V282AUDIOEQCUSTOM282, value).apply()
+
+    var v282danmakuBottomMaxCount371: Int
+        get() = prefs.getInt(KEY_V282DANMAKUBOTTOMMAXCOUNT371, 0)
+        set(value) = prefs.edit().putInt(KEY_V282DANMAKUBOTTOMMAXCOUNT371, value).apply()
+
+    var v282subtitleBgBorder378: Boolean
+        get() = prefs.getBoolean(KEY_V282SUBTITLEBGBORDER378, false)
+        set(value) = prefs.edit().putBoolean(KEY_V282SUBTITLEBGBORDER378, value).apply()
+
+    var v282gestureShakeAction282: Int
+        get() = prefs.getInt(KEY_V282GESTURESHAKEACTION282, 0)
+        set(value) = prefs.edit().putInt(KEY_V282GESTURESHAKEACTION282, value).apply()
+
+    var v282castAudioVolume282: Int
+        get() = prefs.getInt(KEY_V282CASTAUDIOVOLUME282, 100)
+        set(value) = prefs.edit().putInt(KEY_V282CASTAUDIOVOLUME282, value).apply()
+
+    var v282playlistAutoSkipOutro282: Boolean
+        get() = prefs.getBoolean(KEY_V282PLAYLISTAUTOSKIPOUTRO282, false)
+        set(value) = prefs.edit().putBoolean(KEY_V282PLAYLISTAUTOSKIPOUTRO282, value).apply()
+
+    var v282cacheDownloadSpeed283: Int
+        get() = prefs.getInt(KEY_V282CACHEDOWNLOADSPEED283, 0)
+        set(value) = prefs.edit().putInt(KEY_V282CACHEDOWNLOADSPEED283, value).apply()
+
+    var v282progressBarThumbBorder282: Boolean
+        get() = prefs.getBoolean(KEY_V282PROGRESSBARTHUMBBORDER282, false)
+        set(value) = prefs.edit().putBoolean(KEY_V282PROGRESSBARTHUMBBORDER282, value).apply()
+
+    var v282volumeBoostPeak282: Boolean
+        get() = prefs.getBoolean(KEY_V282VOLUMEBOOSTPEAK282, false)
+        set(value) = prefs.edit().putBoolean(KEY_V282VOLUMEBOOSTPEAK282, value).apply()
+
+    var v282historyBookmarkExport282: Boolean
+        get() = prefs.getBoolean(KEY_V282HISTORYBOOKMARKEXPORT282, false)
+        set(value) = prefs.edit().putBoolean(KEY_V282HISTORYBOOKMARKEXPORT282, value).apply()
+
+    var v282playbackChapterSync282: Boolean
+        get() = prefs.getBoolean(KEY_V282PLAYBACKCHAPTERSYNC282, false)
+        set(value) = prefs.edit().putBoolean(KEY_V282PLAYBACKCHAPTERSYNC282, value).apply()
+
+    var v282screenshotSavePath282: Boolean
+        get() = prefs.getBoolean(KEY_V282SCREENSHOTSAVEPATH282, false)
+        set(value) = prefs.edit().putBoolean(KEY_V282SCREENSHOTSAVEPATH282, value).apply()
+
+    var v282videoColorSpace282: Int
+        get() = prefs.getInt(KEY_V282VIDEOCOLORSPACE282, 0)
+        set(value) = prefs.edit().putInt(KEY_V282VIDEOCOLORSPACE282, value).apply()
+
+    var v282danmakuBottomMaxCount372: Int
+        get() = prefs.getInt(KEY_V282DANMAKUBOTTOMMAXCOUNT372, 0)
+        set(value) = prefs.edit().putInt(KEY_V282DANMAKUBOTTOMMAXCOUNT372, value).apply()
+
+    var v282subtitleBgBorder379: Boolean
+        get() = prefs.getBoolean(KEY_V282SUBTITLEBGBORDER379, false)
+        set(value) = prefs.edit().putBoolean(KEY_V282SUBTITLEBGBORDER379, value).apply()
+
+    var v283audioEQCustom283: Boolean
+        get() = prefs.getBoolean(KEY_V283AUDIOEQCUSTOM283, false)
+        set(value) = prefs.edit().putBoolean(KEY_V283AUDIOEQCUSTOM283, value).apply()
+
+    var v283danmakuBottomMaxCount373: Int
+        get() = prefs.getInt(KEY_V283DANMAKUBOTTOMMAXCOUNT373, 0)
+        set(value) = prefs.edit().putInt(KEY_V283DANMAKUBOTTOMMAXCOUNT373, value).apply()
+
+    var v283subtitleBgBorder380: Boolean
+        get() = prefs.getBoolean(KEY_V283SUBTITLEBGBORDER380, false)
+        set(value) = prefs.edit().putBoolean(KEY_V283SUBTITLEBGBORDER380, value).apply()
+
+    var v283gestureShakeAction283: Int
+        get() = prefs.getInt(KEY_V283GESTURESHAKEACTION283, 0)
+        set(value) = prefs.edit().putInt(KEY_V283GESTURESHAKEACTION283, value).apply()
+
+    var v283castAudioVolume283: Int
+        get() = prefs.getInt(KEY_V283CASTAUDIOVOLUME283, 100)
+        set(value) = prefs.edit().putInt(KEY_V283CASTAUDIOVOLUME283, value).apply()
+
+    var v283playlistAutoSkipOutro283: Boolean
+        get() = prefs.getBoolean(KEY_V283PLAYLISTAUTOSKIPOUTRO283, false)
+        set(value) = prefs.edit().putBoolean(KEY_V283PLAYLISTAUTOSKIPOUTRO283, value).apply()
+
+    var v283cacheDownloadSpeed284: Int
+        get() = prefs.getInt(KEY_V283CACHEDOWNLOADSPEED284, 0)
+        set(value) = prefs.edit().putInt(KEY_V283CACHEDOWNLOADSPEED284, value).apply()
+
+    var v283progressBarThumbBorder283: Boolean
+        get() = prefs.getBoolean(KEY_V283PROGRESSBARTHUMBBORDER283, false)
+        set(value) = prefs.edit().putBoolean(KEY_V283PROGRESSBARTHUMBBORDER283, value).apply()
+
+    var v283volumeBoostPeak283: Boolean
+        get() = prefs.getBoolean(KEY_V283VOLUMEBOOSTPEAK283, false)
+        set(value) = prefs.edit().putBoolean(KEY_V283VOLUMEBOOSTPEAK283, value).apply()
+
+    var v283historyBookmarkExport283: Boolean
+        get() = prefs.getBoolean(KEY_V283HISTORYBOOKMARKEXPORT283, false)
+        set(value) = prefs.edit().putBoolean(KEY_V283HISTORYBOOKMARKEXPORT283, value).apply()
+
+    var v283playbackChapterSync283: Boolean
+        get() = prefs.getBoolean(KEY_V283PLAYBACKCHAPTERSYNC283, false)
+        set(value) = prefs.edit().putBoolean(KEY_V283PLAYBACKCHAPTERSYNC283, value).apply()
+
+    var v283screenshotSavePath283: Boolean
+        get() = prefs.getBoolean(KEY_V283SCREENSHOTSAVEPATH283, false)
+        set(value) = prefs.edit().putBoolean(KEY_V283SCREENSHOTSAVEPATH283, value).apply()
+
+    var v283videoColorSpace283: Int
+        get() = prefs.getInt(KEY_V283VIDEOCOLORSPACE283, 0)
+        set(value) = prefs.edit().putInt(KEY_V283VIDEOCOLORSPACE283, value).apply()
+
+    var v283danmakuBottomMaxCount374: Int
+        get() = prefs.getInt(KEY_V283DANMAKUBOTTOMMAXCOUNT374, 0)
+        set(value) = prefs.edit().putInt(KEY_V283DANMAKUBOTTOMMAXCOUNT374, value).apply()
+
+    var v283subtitleBgBorder381: Boolean
+        get() = prefs.getBoolean(KEY_V283SUBTITLEBGBORDER381, false)
+        set(value) = prefs.edit().putBoolean(KEY_V283SUBTITLEBGBORDER381, value).apply()
+
+    var v284audioEQCustom284: Boolean
+        get() = prefs.getBoolean(KEY_V284AUDIOEQCUSTOM284, false)
+        set(value) = prefs.edit().putBoolean(KEY_V284AUDIOEQCUSTOM284, value).apply()
+
+    var v284danmakuBottomMaxCount375: Int
+        get() = prefs.getInt(KEY_V284DANMAKUBOTTOMMAXCOUNT375, 0)
+        set(value) = prefs.edit().putInt(KEY_V284DANMAKUBOTTOMMAXCOUNT375, value).apply()
+
+    var v284subtitleBgBorder382: Boolean
+        get() = prefs.getBoolean(KEY_V284SUBTITLEBGBORDER382, false)
+        set(value) = prefs.edit().putBoolean(KEY_V284SUBTITLEBGBORDER382, value).apply()
+
+    var v284gestureShakeAction284: Int
+        get() = prefs.getInt(KEY_V284GESTURESHAKEACTION284, 0)
+        set(value) = prefs.edit().putInt(KEY_V284GESTURESHAKEACTION284, value).apply()
+
+    var v284castAudioVolume284: Int
+        get() = prefs.getInt(KEY_V284CASTAUDIOVOLUME284, 100)
+        set(value) = prefs.edit().putInt(KEY_V284CASTAUDIOVOLUME284, value).apply()
+
+    var v284playlistAutoSkipOutro284: Boolean
+        get() = prefs.getBoolean(KEY_V284PLAYLISTAUTOSKIPOUTRO284, false)
+        set(value) = prefs.edit().putBoolean(KEY_V284PLAYLISTAUTOSKIPOUTRO284, value).apply()
+
+    var v284cacheDownloadSpeed285: Int
+        get() = prefs.getInt(KEY_V284CACHEDOWNLOADSPEED285, 0)
+        set(value) = prefs.edit().putInt(KEY_V284CACHEDOWNLOADSPEED285, value).apply()
+
+    var v284progressBarThumbBorder284: Boolean
+        get() = prefs.getBoolean(KEY_V284PROGRESSBARTHUMBBORDER284, false)
+        set(value) = prefs.edit().putBoolean(KEY_V284PROGRESSBARTHUMBBORDER284, value).apply()
+
+    var v284volumeBoostPeak284: Boolean
+        get() = prefs.getBoolean(KEY_V284VOLUMEBOOSTPEAK284, false)
+        set(value) = prefs.edit().putBoolean(KEY_V284VOLUMEBOOSTPEAK284, value).apply()
+
+    var v284historyBookmarkExport284: Boolean
+        get() = prefs.getBoolean(KEY_V284HISTORYBOOKMARKEXPORT284, false)
+        set(value) = prefs.edit().putBoolean(KEY_V284HISTORYBOOKMARKEXPORT284, value).apply()
+
+    var v284playbackChapterSync284: Boolean
+        get() = prefs.getBoolean(KEY_V284PLAYBACKCHAPTERSYNC284, false)
+        set(value) = prefs.edit().putBoolean(KEY_V284PLAYBACKCHAPTERSYNC284, value).apply()
+
+    var v284screenshotSavePath284: Boolean
+        get() = prefs.getBoolean(KEY_V284SCREENSHOTSAVEPATH284, false)
+        set(value) = prefs.edit().putBoolean(KEY_V284SCREENSHOTSAVEPATH284, value).apply()
+
+    var v284videoColorSpace284: Int
+        get() = prefs.getInt(KEY_V284VIDEOCOLORSPACE284, 0)
+        set(value) = prefs.edit().putInt(KEY_V284VIDEOCOLORSPACE284, value).apply()
+
+    var v284danmakuBottomMaxCount376: Int
+        get() = prefs.getInt(KEY_V284DANMAKUBOTTOMMAXCOUNT376, 0)
+        set(value) = prefs.edit().putInt(KEY_V284DANMAKUBOTTOMMAXCOUNT376, value).apply()
+
+    var v284subtitleBgBorder383: Boolean
+        get() = prefs.getBoolean(KEY_V284SUBTITLEBGBORDER383, false)
+        set(value) = prefs.edit().putBoolean(KEY_V284SUBTITLEBGBORDER383, value).apply()
+
+    var v285audioEQCustom285: Boolean
+        get() = prefs.getBoolean(KEY_V285AUDIOEQCUSTOM285, false)
+        set(value) = prefs.edit().putBoolean(KEY_V285AUDIOEQCUSTOM285, value).apply()
+
+    var v285danmakuBottomMaxCount377: Int
+        get() = prefs.getInt(KEY_V285DANMAKUBOTTOMMAXCOUNT377, 0)
+        set(value) = prefs.edit().putInt(KEY_V285DANMAKUBOTTOMMAXCOUNT377, value).apply()
+
+    var v285subtitleBgBorder384: Boolean
+        get() = prefs.getBoolean(KEY_V285SUBTITLEBGBORDER384, false)
+        set(value) = prefs.edit().putBoolean(KEY_V285SUBTITLEBGBORDER384, value).apply()
+
+    var v285gestureShakeAction285: Int
+        get() = prefs.getInt(KEY_V285GESTURESHAKEACTION285, 0)
+        set(value) = prefs.edit().putInt(KEY_V285GESTURESHAKEACTION285, value).apply()
+
+    var v285castAudioVolume285: Int
+        get() = prefs.getInt(KEY_V285CASTAUDIOVOLUME285, 100)
+        set(value) = prefs.edit().putInt(KEY_V285CASTAUDIOVOLUME285, value).apply()
+
+    var v285playlistAutoSkipOutro285: Boolean
+        get() = prefs.getBoolean(KEY_V285PLAYLISTAUTOSKIPOUTRO285, false)
+        set(value) = prefs.edit().putBoolean(KEY_V285PLAYLISTAUTOSKIPOUTRO285, value).apply()
+
+    var v285cacheDownloadSpeed286: Int
+        get() = prefs.getInt(KEY_V285CACHEDOWNLOADSPEED286, 0)
+        set(value) = prefs.edit().putInt(KEY_V285CACHEDOWNLOADSPEED286, value).apply()
+
+    var v285progressBarThumbBorder285: Boolean
+        get() = prefs.getBoolean(KEY_V285PROGRESSBARTHUMBBORDER285, false)
+        set(value) = prefs.edit().putBoolean(KEY_V285PROGRESSBARTHUMBBORDER285, value).apply()
+
+    var v285volumeBoostPeak285: Boolean
+        get() = prefs.getBoolean(KEY_V285VOLUMEBOOSTPEAK285, false)
+        set(value) = prefs.edit().putBoolean(KEY_V285VOLUMEBOOSTPEAK285, value).apply()
+
+    var v285historyBookmarkExport285: Boolean
+        get() = prefs.getBoolean(KEY_V285HISTORYBOOKMARKEXPORT285, false)
+        set(value) = prefs.edit().putBoolean(KEY_V285HISTORYBOOKMARKEXPORT285, value).apply()
+
+    var v285playbackChapterSync285: Boolean
+        get() = prefs.getBoolean(KEY_V285PLAYBACKCHAPTERSYNC285, false)
+        set(value) = prefs.edit().putBoolean(KEY_V285PLAYBACKCHAPTERSYNC285, value).apply()
+
+    var v285screenshotSavePath285: Boolean
+        get() = prefs.getBoolean(KEY_V285SCREENSHOTSAVEPATH285, false)
+        set(value) = prefs.edit().putBoolean(KEY_V285SCREENSHOTSAVEPATH285, value).apply()
+
+    var v285videoColorSpace285: Int
+        get() = prefs.getInt(KEY_V285VIDEOCOLORSPACE285, 0)
+        set(value) = prefs.edit().putInt(KEY_V285VIDEOCOLORSPACE285, value).apply()
+
+    var v285danmakuBottomMaxCount378: Int
+        get() = prefs.getInt(KEY_V285DANMAKUBOTTOMMAXCOUNT378, 0)
+        set(value) = prefs.edit().putInt(KEY_V285DANMAKUBOTTOMMAXCOUNT378, value).apply()
+
+    var v285subtitleBgBorder385: Boolean
+        get() = prefs.getBoolean(KEY_V285SUBTITLEBGBORDER385, false)
+        set(value) = prefs.edit().putBoolean(KEY_V285SUBTITLEBGBORDER385, value).apply()
+
+    var v286audioEQCustom286: Boolean
+        get() = prefs.getBoolean(KEY_V286AUDIOEQCUSTOM286, false)
+        set(value) = prefs.edit().putBoolean(KEY_V286AUDIOEQCUSTOM286, value).apply()
+
+    var v286danmakuBottomMaxCount379: Int
+        get() = prefs.getInt(KEY_V286DANMAKUBOTTOMMAXCOUNT379, 0)
+        set(value) = prefs.edit().putInt(KEY_V286DANMAKUBOTTOMMAXCOUNT379, value).apply()
+
+    var v286subtitleBgBorder386: Boolean
+        get() = prefs.getBoolean(KEY_V286SUBTITLEBGBORDER386, false)
+        set(value) = prefs.edit().putBoolean(KEY_V286SUBTITLEBGBORDER386, value).apply()
+
+    var v286gestureShakeAction286: Int
+        get() = prefs.getInt(KEY_V286GESTURESHAKEACTION286, 0)
+        set(value) = prefs.edit().putInt(KEY_V286GESTURESHAKEACTION286, value).apply()
+
+    var v286castAudioVolume286: Int
+        get() = prefs.getInt(KEY_V286CASTAUDIOVOLUME286, 100)
+        set(value) = prefs.edit().putInt(KEY_V286CASTAUDIOVOLUME286, value).apply()
+
+    var v286playlistAutoSkipOutro286: Boolean
+        get() = prefs.getBoolean(KEY_V286PLAYLISTAUTOSKIPOUTRO286, false)
+        set(value) = prefs.edit().putBoolean(KEY_V286PLAYLISTAUTOSKIPOUTRO286, value).apply()
+
+    var v286cacheDownloadSpeed287: Int
+        get() = prefs.getInt(KEY_V286CACHEDOWNLOADSPEED287, 0)
+        set(value) = prefs.edit().putInt(KEY_V286CACHEDOWNLOADSPEED287, value).apply()
+
+    var v286progressBarThumbBorder286: Boolean
+        get() = prefs.getBoolean(KEY_V286PROGRESSBARTHUMBBORDER286, false)
+        set(value) = prefs.edit().putBoolean(KEY_V286PROGRESSBARTHUMBBORDER286, value).apply()
+
+    var v286volumeBoostPeak286: Boolean
+        get() = prefs.getBoolean(KEY_V286VOLUMEBOOSTPEAK286, false)
+        set(value) = prefs.edit().putBoolean(KEY_V286VOLUMEBOOSTPEAK286, value).apply()
+
+    var v286historyBookmarkExport286: Boolean
+        get() = prefs.getBoolean(KEY_V286HISTORYBOOKMARKEXPORT286, false)
+        set(value) = prefs.edit().putBoolean(KEY_V286HISTORYBOOKMARKEXPORT286, value).apply()
+
+    var v286playbackChapterSync286: Boolean
+        get() = prefs.getBoolean(KEY_V286PLAYBACKCHAPTERSYNC286, false)
+        set(value) = prefs.edit().putBoolean(KEY_V286PLAYBACKCHAPTERSYNC286, value).apply()
+
+    var v286screenshotSavePath286: Boolean
+        get() = prefs.getBoolean(KEY_V286SCREENSHOTSAVEPATH286, false)
+        set(value) = prefs.edit().putBoolean(KEY_V286SCREENSHOTSAVEPATH286, value).apply()
+
+    var v286videoColorSpace286: Int
+        get() = prefs.getInt(KEY_V286VIDEOCOLORSPACE286, 0)
+        set(value) = prefs.edit().putInt(KEY_V286VIDEOCOLORSPACE286, value).apply()
+
+    var v286danmakuBottomMaxCount380: Int
+        get() = prefs.getInt(KEY_V286DANMAKUBOTTOMMAXCOUNT380, 0)
+        set(value) = prefs.edit().putInt(KEY_V286DANMAKUBOTTOMMAXCOUNT380, value).apply()
+
+    var v286subtitleBgBorder387: Boolean
+        get() = prefs.getBoolean(KEY_V286SUBTITLEBGBORDER387, false)
+        set(value) = prefs.edit().putBoolean(KEY_V286SUBTITLEBGBORDER387, value).apply()
+
+    var v287audioEQCustom287: Boolean
+        get() = prefs.getBoolean(KEY_V287AUDIOEQCUSTOM287, false)
+        set(value) = prefs.edit().putBoolean(KEY_V287AUDIOEQCUSTOM287, value).apply()
+
+    var v287danmakuBottomMaxCount381: Int
+        get() = prefs.getInt(KEY_V287DANMAKUBOTTOMMAXCOUNT381, 0)
+        set(value) = prefs.edit().putInt(KEY_V287DANMAKUBOTTOMMAXCOUNT381, value).apply()
+
+    var v287subtitleBgBorder388: Boolean
+        get() = prefs.getBoolean(KEY_V287SUBTITLEBGBORDER388, false)
+        set(value) = prefs.edit().putBoolean(KEY_V287SUBTITLEBGBORDER388, value).apply()
+
+    var v287gestureShakeAction287: Int
+        get() = prefs.getInt(KEY_V287GESTURESHAKEACTION287, 0)
+        set(value) = prefs.edit().putInt(KEY_V287GESTURESHAKEACTION287, value).apply()
+
+    var v287castAudioVolume287: Int
+        get() = prefs.getInt(KEY_V287CASTAUDIOVOLUME287, 100)
+        set(value) = prefs.edit().putInt(KEY_V287CASTAUDIOVOLUME287, value).apply()
+
+    var v287playlistAutoSkipOutro287: Boolean
+        get() = prefs.getBoolean(KEY_V287PLAYLISTAUTOSKIPOUTRO287, false)
+        set(value) = prefs.edit().putBoolean(KEY_V287PLAYLISTAUTOSKIPOUTRO287, value).apply()
+
+    var v287cacheDownloadSpeed288: Int
+        get() = prefs.getInt(KEY_V287CACHEDOWNLOADSPEED288, 0)
+        set(value) = prefs.edit().putInt(KEY_V287CACHEDOWNLOADSPEED288, value).apply()
+
+    var v287progressBarThumbBorder287: Boolean
+        get() = prefs.getBoolean(KEY_V287PROGRESSBARTHUMBBORDER287, false)
+        set(value) = prefs.edit().putBoolean(KEY_V287PROGRESSBARTHUMBBORDER287, value).apply()
+
+    var v287volumeBoostPeak287: Boolean
+        get() = prefs.getBoolean(KEY_V287VOLUMEBOOSTPEAK287, false)
+        set(value) = prefs.edit().putBoolean(KEY_V287VOLUMEBOOSTPEAK287, value).apply()
+
+    var v287historyBookmarkExport287: Boolean
+        get() = prefs.getBoolean(KEY_V287HISTORYBOOKMARKEXPORT287, false)
+        set(value) = prefs.edit().putBoolean(KEY_V287HISTORYBOOKMARKEXPORT287, value).apply()
+
+    var v287playbackChapterSync287: Boolean
+        get() = prefs.getBoolean(KEY_V287PLAYBACKCHAPTERSYNC287, false)
+        set(value) = prefs.edit().putBoolean(KEY_V287PLAYBACKCHAPTERSYNC287, value).apply()
+
+    var v287screenshotSavePath287: Boolean
+        get() = prefs.getBoolean(KEY_V287SCREENSHOTSAVEPATH287, false)
+        set(value) = prefs.edit().putBoolean(KEY_V287SCREENSHOTSAVEPATH287, value).apply()
+
+    var v287videoColorSpace287: Int
+        get() = prefs.getInt(KEY_V287VIDEOCOLORSPACE287, 0)
+        set(value) = prefs.edit().putInt(KEY_V287VIDEOCOLORSPACE287, value).apply()
+
+    var v287danmakuBottomMaxCount382: Int
+        get() = prefs.getInt(KEY_V287DANMAKUBOTTOMMAXCOUNT382, 0)
+        set(value) = prefs.edit().putInt(KEY_V287DANMAKUBOTTOMMAXCOUNT382, value).apply()
+
+    var v287subtitleBgBorder389: Boolean
+        get() = prefs.getBoolean(KEY_V287SUBTITLEBGBORDER389, false)
+        set(value) = prefs.edit().putBoolean(KEY_V287SUBTITLEBGBORDER389, value).apply()
+
+    var v288audioEQCustom288: Boolean
+        get() = prefs.getBoolean(KEY_V288AUDIOEQCUSTOM288, false)
+        set(value) = prefs.edit().putBoolean(KEY_V288AUDIOEQCUSTOM288, value).apply()
+
+    var v288danmakuBottomMaxCount383: Int
+        get() = prefs.getInt(KEY_V288DANMAKUBOTTOMMAXCOUNT383, 0)
+        set(value) = prefs.edit().putInt(KEY_V288DANMAKUBOTTOMMAXCOUNT383, value).apply()
+
+    var v288subtitleBgBorder390: Boolean
+        get() = prefs.getBoolean(KEY_V288SUBTITLEBGBORDER390, false)
+        set(value) = prefs.edit().putBoolean(KEY_V288SUBTITLEBGBORDER390, value).apply()
+
+    var v288gestureShakeAction288: Int
+        get() = prefs.getInt(KEY_V288GESTURESHAKEACTION288, 0)
+        set(value) = prefs.edit().putInt(KEY_V288GESTURESHAKEACTION288, value).apply()
+
+    var v288castAudioVolume288: Int
+        get() = prefs.getInt(KEY_V288CASTAUDIOVOLUME288, 100)
+        set(value) = prefs.edit().putInt(KEY_V288CASTAUDIOVOLUME288, value).apply()
+
+    var v288playlistAutoSkipOutro288: Boolean
+        get() = prefs.getBoolean(KEY_V288PLAYLISTAUTOSKIPOUTRO288, false)
+        set(value) = prefs.edit().putBoolean(KEY_V288PLAYLISTAUTOSKIPOUTRO288, value).apply()
+
+    var v288cacheDownloadSpeed289: Int
+        get() = prefs.getInt(KEY_V288CACHEDOWNLOADSPEED289, 0)
+        set(value) = prefs.edit().putInt(KEY_V288CACHEDOWNLOADSPEED289, value).apply()
+
+    var v288progressBarThumbBorder288: Boolean
+        get() = prefs.getBoolean(KEY_V288PROGRESSBARTHUMBBORDER288, false)
+        set(value) = prefs.edit().putBoolean(KEY_V288PROGRESSBARTHUMBBORDER288, value).apply()
+
+    var v288volumeBoostPeak288: Boolean
+        get() = prefs.getBoolean(KEY_V288VOLUMEBOOSTPEAK288, false)
+        set(value) = prefs.edit().putBoolean(KEY_V288VOLUMEBOOSTPEAK288, value).apply()
+
+    var v288historyBookmarkExport288: Boolean
+        get() = prefs.getBoolean(KEY_V288HISTORYBOOKMARKEXPORT288, false)
+        set(value) = prefs.edit().putBoolean(KEY_V288HISTORYBOOKMARKEXPORT288, value).apply()
+
+    var v288playbackChapterSync288: Boolean
+        get() = prefs.getBoolean(KEY_V288PLAYBACKCHAPTERSYNC288, false)
+        set(value) = prefs.edit().putBoolean(KEY_V288PLAYBACKCHAPTERSYNC288, value).apply()
+
+    var v288screenshotSavePath288: Boolean
+        get() = prefs.getBoolean(KEY_V288SCREENSHOTSAVEPATH288, false)
+        set(value) = prefs.edit().putBoolean(KEY_V288SCREENSHOTSAVEPATH288, value).apply()
+
+    var v288videoColorSpace288: Int
+        get() = prefs.getInt(KEY_V288VIDEOCOLORSPACE288, 0)
+        set(value) = prefs.edit().putInt(KEY_V288VIDEOCOLORSPACE288, value).apply()
+
+    var v288danmakuBottomMaxCount384: Int
+        get() = prefs.getInt(KEY_V288DANMAKUBOTTOMMAXCOUNT384, 0)
+        set(value) = prefs.edit().putInt(KEY_V288DANMAKUBOTTOMMAXCOUNT384, value).apply()
+
+    var v288subtitleBgBorder391: Boolean
+        get() = prefs.getBoolean(KEY_V288SUBTITLEBGBORDER391, false)
+        set(value) = prefs.edit().putBoolean(KEY_V288SUBTITLEBGBORDER391, value).apply()
+
+    var v289audioEQCustom289: Boolean
+        get() = prefs.getBoolean(KEY_V289AUDIOEQCUSTOM289, false)
+        set(value) = prefs.edit().putBoolean(KEY_V289AUDIOEQCUSTOM289, value).apply()
+
+    var v289danmakuBottomMaxCount385: Int
+        get() = prefs.getInt(KEY_V289DANMAKUBOTTOMMAXCOUNT385, 0)
+        set(value) = prefs.edit().putInt(KEY_V289DANMAKUBOTTOMMAXCOUNT385, value).apply()
+
+    var v289subtitleBgBorder392: Boolean
+        get() = prefs.getBoolean(KEY_V289SUBTITLEBGBORDER392, false)
+        set(value) = prefs.edit().putBoolean(KEY_V289SUBTITLEBGBORDER392, value).apply()
+
+    var v289gestureShakeAction289: Int
+        get() = prefs.getInt(KEY_V289GESTURESHAKEACTION289, 0)
+        set(value) = prefs.edit().putInt(KEY_V289GESTURESHAKEACTION289, value).apply()
+
+    var v289castAudioVolume289: Int
+        get() = prefs.getInt(KEY_V289CASTAUDIOVOLUME289, 100)
+        set(value) = prefs.edit().putInt(KEY_V289CASTAUDIOVOLUME289, value).apply()
+
+    var v289playlistAutoSkipOutro289: Boolean
+        get() = prefs.getBoolean(KEY_V289PLAYLISTAUTOSKIPOUTRO289, false)
+        set(value) = prefs.edit().putBoolean(KEY_V289PLAYLISTAUTOSKIPOUTRO289, value).apply()
+
+    var v289cacheDownloadSpeed290: Int
+        get() = prefs.getInt(KEY_V289CACHEDOWNLOADSPEED290, 0)
+        set(value) = prefs.edit().putInt(KEY_V289CACHEDOWNLOADSPEED290, value).apply()
+
+    var v289progressBarThumbBorder289: Boolean
+        get() = prefs.getBoolean(KEY_V289PROGRESSBARTHUMBBORDER289, false)
+        set(value) = prefs.edit().putBoolean(KEY_V289PROGRESSBARTHUMBBORDER289, value).apply()
+
+    var v289volumeBoostPeak289: Boolean
+        get() = prefs.getBoolean(KEY_V289VOLUMEBOOSTPEAK289, false)
+        set(value) = prefs.edit().putBoolean(KEY_V289VOLUMEBOOSTPEAK289, value).apply()
+
+    var v289historyBookmarkExport289: Boolean
+        get() = prefs.getBoolean(KEY_V289HISTORYBOOKMARKEXPORT289, false)
+        set(value) = prefs.edit().putBoolean(KEY_V289HISTORYBOOKMARKEXPORT289, value).apply()
+
+    var v289playbackChapterSync289: Boolean
+        get() = prefs.getBoolean(KEY_V289PLAYBACKCHAPTERSYNC289, false)
+        set(value) = prefs.edit().putBoolean(KEY_V289PLAYBACKCHAPTERSYNC289, value).apply()
+
+    var v289screenshotSavePath289: Boolean
+        get() = prefs.getBoolean(KEY_V289SCREENSHOTSAVEPATH289, false)
+        set(value) = prefs.edit().putBoolean(KEY_V289SCREENSHOTSAVEPATH289, value).apply()
+
+    var v289videoColorSpace289: Int
+        get() = prefs.getInt(KEY_V289VIDEOCOLORSPACE289, 0)
+        set(value) = prefs.edit().putInt(KEY_V289VIDEOCOLORSPACE289, value).apply()
+
+    var v289danmakuBottomMaxCount386: Int
+        get() = prefs.getInt(KEY_V289DANMAKUBOTTOMMAXCOUNT386, 0)
+        set(value) = prefs.edit().putInt(KEY_V289DANMAKUBOTTOMMAXCOUNT386, value).apply()
+
+    var v289subtitleBgBorder393: Boolean
+        get() = prefs.getBoolean(KEY_V289SUBTITLEBGBORDER393, false)
+        set(value) = prefs.edit().putBoolean(KEY_V289SUBTITLEBGBORDER393, value).apply()
+
+    var v290audioEQCustom290: Boolean
+        get() = prefs.getBoolean(KEY_V290AUDIOEQCUSTOM290, false)
+        set(value) = prefs.edit().putBoolean(KEY_V290AUDIOEQCUSTOM290, value).apply()
+
+    var v290danmakuBottomMaxCount387: Int
+        get() = prefs.getInt(KEY_V290DANMAKUBOTTOMMAXCOUNT387, 0)
+        set(value) = prefs.edit().putInt(KEY_V290DANMAKUBOTTOMMAXCOUNT387, value).apply()
+
+    var v290subtitleBgBorder394: Boolean
+        get() = prefs.getBoolean(KEY_V290SUBTITLEBGBORDER394, false)
+        set(value) = prefs.edit().putBoolean(KEY_V290SUBTITLEBGBORDER394, value).apply()
+
+    var v290gestureShakeAction290: Int
+        get() = prefs.getInt(KEY_V290GESTURESHAKEACTION290, 0)
+        set(value) = prefs.edit().putInt(KEY_V290GESTURESHAKEACTION290, value).apply()
+
+    var v290castAudioVolume290: Int
+        get() = prefs.getInt(KEY_V290CASTAUDIOVOLUME290, 100)
+        set(value) = prefs.edit().putInt(KEY_V290CASTAUDIOVOLUME290, value).apply()
+
+    var v290playlistAutoSkipOutro290: Boolean
+        get() = prefs.getBoolean(KEY_V290PLAYLISTAUTOSKIPOUTRO290, false)
+        set(value) = prefs.edit().putBoolean(KEY_V290PLAYLISTAUTOSKIPOUTRO290, value).apply()
+
+    var v290cacheDownloadSpeed291: Int
+        get() = prefs.getInt(KEY_V290CACHEDOWNLOADSPEED291, 0)
+        set(value) = prefs.edit().putInt(KEY_V290CACHEDOWNLOADSPEED291, value).apply()
+
+    var v290progressBarThumbBorder290: Boolean
+        get() = prefs.getBoolean(KEY_V290PROGRESSBARTHUMBBORDER290, false)
+        set(value) = prefs.edit().putBoolean(KEY_V290PROGRESSBARTHUMBBORDER290, value).apply()
+
+    var v290volumeBoostPeak290: Boolean
+        get() = prefs.getBoolean(KEY_V290VOLUMEBOOSTPEAK290, false)
+        set(value) = prefs.edit().putBoolean(KEY_V290VOLUMEBOOSTPEAK290, value).apply()
+
+    var v290historyBookmarkExport290: Boolean
+        get() = prefs.getBoolean(KEY_V290HISTORYBOOKMARKEXPORT290, false)
+        set(value) = prefs.edit().putBoolean(KEY_V290HISTORYBOOKMARKEXPORT290, value).apply()
+
+    var v290playbackChapterSync290: Boolean
+        get() = prefs.getBoolean(KEY_V290PLAYBACKCHAPTERSYNC290, false)
+        set(value) = prefs.edit().putBoolean(KEY_V290PLAYBACKCHAPTERSYNC290, value).apply()
+
+    var v290screenshotSavePath290: Boolean
+        get() = prefs.getBoolean(KEY_V290SCREENSHOTSAVEPATH290, false)
+        set(value) = prefs.edit().putBoolean(KEY_V290SCREENSHOTSAVEPATH290, value).apply()
+
+    var v290videoColorSpace290: Int
+        get() = prefs.getInt(KEY_V290VIDEOCOLORSPACE290, 0)
+        set(value) = prefs.edit().putInt(KEY_V290VIDEOCOLORSPACE290, value).apply()
+
+    var v290danmakuBottomMaxCount388: Int
+        get() = prefs.getInt(KEY_V290DANMAKUBOTTOMMAXCOUNT388, 0)
+        set(value) = prefs.edit().putInt(KEY_V290DANMAKUBOTTOMMAXCOUNT388, value).apply()
+
+    var v290subtitleBgBorder395: Boolean
+        get() = prefs.getBoolean(KEY_V290SUBTITLEBGBORDER395, false)
+        set(value) = prefs.edit().putBoolean(KEY_V290SUBTITLEBGBORDER395, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -30430,5 +31030,155 @@ class AppPrefs(context: Context) {
         const val KEY_V280VIDEOCOLORSPACE280 = "v280videoColorSpace280" // v280 Video Color Space280
         const val KEY_V280DANMAKUBOTTOMMAXCOUNT368 = "v280danmakuBottomMaxCount368" // v280 Danmaku Bottom Max Count368
         const val KEY_V280SUBTITLEBGBORDER375 = "v280subtitleBgBorder375" // v280 Subtitle Bg Border375
+        const val KEY_V281AUDIOEQCUSTOM281 = "v281audioEQCustom281" // v281 Audio EQ Custom281
+        const val KEY_V281DANMAKUBOTTOMMAXCOUNT369 = "v281danmakuBottomMaxCount369" // v281 Danmaku Bottom Max Count369
+        const val KEY_V281SUBTITLEBGBORDER376 = "v281subtitleBgBorder376" // v281 Subtitle Bg Border376
+        const val KEY_V281GESTURESHAKEACTION281 = "v281gestureShakeAction281" // v281 Gesture Shake Action281
+        const val KEY_V281CASTAUDIOVOLUME281 = "v281castAudioVolume281" // v281 Cast Audio Volume281
+        const val KEY_V281PLAYLISTAUTOSKIPOUTRO281 = "v281playlistAutoSkipOutro281" // v281 Playlist Auto Skip Outro281
+        const val KEY_V281CACHEDOWNLOADSPEED282 = "v281cacheDownloadSpeed282" // v281 Cache Download Speed282
+        const val KEY_V281PROGRESSBARTHUMBBORDER281 = "v281progressBarThumbBorder281" // v281 Progress Bar Thumb Border281
+        const val KEY_V281VOLUMEBOOSTPEAK281 = "v281volumeBoostPeak281" // v281 Volume Boost Peak281
+        const val KEY_V281HISTORYBOOKMARKEXPORT281 = "v281historyBookmarkExport281" // v281 History Bookmark Export281
+        const val KEY_V281PLAYBACKCHAPTERSYNC281 = "v281playbackChapterSync281" // v281 Playback Chapter Sync281
+        const val KEY_V281SCREENSHOTSAVEPATH281 = "v281screenshotSavePath281" // v281 Screenshot Save Path281
+        const val KEY_V281VIDEOCOLORSPACE281 = "v281videoColorSpace281" // v281 Video Color Space281
+        const val KEY_V281DANMAKUBOTTOMMAXCOUNT370 = "v281danmakuBottomMaxCount370" // v281 Danmaku Bottom Max Count370
+        const val KEY_V281SUBTITLEBGBORDER377 = "v281subtitleBgBorder377" // v281 Subtitle Bg Border377
+        const val KEY_V282AUDIOEQCUSTOM282 = "v282audioEQCustom282" // v282 Audio EQ Custom282
+        const val KEY_V282DANMAKUBOTTOMMAXCOUNT371 = "v282danmakuBottomMaxCount371" // v282 Danmaku Bottom Max Count371
+        const val KEY_V282SUBTITLEBGBORDER378 = "v282subtitleBgBorder378" // v282 Subtitle Bg Border378
+        const val KEY_V282GESTURESHAKEACTION282 = "v282gestureShakeAction282" // v282 Gesture Shake Action282
+        const val KEY_V282CASTAUDIOVOLUME282 = "v282castAudioVolume282" // v282 Cast Audio Volume282
+        const val KEY_V282PLAYLISTAUTOSKIPOUTRO282 = "v282playlistAutoSkipOutro282" // v282 Playlist Auto Skip Outro282
+        const val KEY_V282CACHEDOWNLOADSPEED283 = "v282cacheDownloadSpeed283" // v282 Cache Download Speed283
+        const val KEY_V282PROGRESSBARTHUMBBORDER282 = "v282progressBarThumbBorder282" // v282 Progress Bar Thumb Border282
+        const val KEY_V282VOLUMEBOOSTPEAK282 = "v282volumeBoostPeak282" // v282 Volume Boost Peak282
+        const val KEY_V282HISTORYBOOKMARKEXPORT282 = "v282historyBookmarkExport282" // v282 History Bookmark Export282
+        const val KEY_V282PLAYBACKCHAPTERSYNC282 = "v282playbackChapterSync282" // v282 Playback Chapter Sync282
+        const val KEY_V282SCREENSHOTSAVEPATH282 = "v282screenshotSavePath282" // v282 Screenshot Save Path282
+        const val KEY_V282VIDEOCOLORSPACE282 = "v282videoColorSpace282" // v282 Video Color Space282
+        const val KEY_V282DANMAKUBOTTOMMAXCOUNT372 = "v282danmakuBottomMaxCount372" // v282 Danmaku Bottom Max Count372
+        const val KEY_V282SUBTITLEBGBORDER379 = "v282subtitleBgBorder379" // v282 Subtitle Bg Border379
+        const val KEY_V283AUDIOEQCUSTOM283 = "v283audioEQCustom283" // v283 Audio EQ Custom283
+        const val KEY_V283DANMAKUBOTTOMMAXCOUNT373 = "v283danmakuBottomMaxCount373" // v283 Danmaku Bottom Max Count373
+        const val KEY_V283SUBTITLEBGBORDER380 = "v283subtitleBgBorder380" // v283 Subtitle Bg Border380
+        const val KEY_V283GESTURESHAKEACTION283 = "v283gestureShakeAction283" // v283 Gesture Shake Action283
+        const val KEY_V283CASTAUDIOVOLUME283 = "v283castAudioVolume283" // v283 Cast Audio Volume283
+        const val KEY_V283PLAYLISTAUTOSKIPOUTRO283 = "v283playlistAutoSkipOutro283" // v283 Playlist Auto Skip Outro283
+        const val KEY_V283CACHEDOWNLOADSPEED284 = "v283cacheDownloadSpeed284" // v283 Cache Download Speed284
+        const val KEY_V283PROGRESSBARTHUMBBORDER283 = "v283progressBarThumbBorder283" // v283 Progress Bar Thumb Border283
+        const val KEY_V283VOLUMEBOOSTPEAK283 = "v283volumeBoostPeak283" // v283 Volume Boost Peak283
+        const val KEY_V283HISTORYBOOKMARKEXPORT283 = "v283historyBookmarkExport283" // v283 History Bookmark Export283
+        const val KEY_V283PLAYBACKCHAPTERSYNC283 = "v283playbackChapterSync283" // v283 Playback Chapter Sync283
+        const val KEY_V283SCREENSHOTSAVEPATH283 = "v283screenshotSavePath283" // v283 Screenshot Save Path283
+        const val KEY_V283VIDEOCOLORSPACE283 = "v283videoColorSpace283" // v283 Video Color Space283
+        const val KEY_V283DANMAKUBOTTOMMAXCOUNT374 = "v283danmakuBottomMaxCount374" // v283 Danmaku Bottom Max Count374
+        const val KEY_V283SUBTITLEBGBORDER381 = "v283subtitleBgBorder381" // v283 Subtitle Bg Border381
+        const val KEY_V284AUDIOEQCUSTOM284 = "v284audioEQCustom284" // v284 Audio EQ Custom284
+        const val KEY_V284DANMAKUBOTTOMMAXCOUNT375 = "v284danmakuBottomMaxCount375" // v284 Danmaku Bottom Max Count375
+        const val KEY_V284SUBTITLEBGBORDER382 = "v284subtitleBgBorder382" // v284 Subtitle Bg Border382
+        const val KEY_V284GESTURESHAKEACTION284 = "v284gestureShakeAction284" // v284 Gesture Shake Action284
+        const val KEY_V284CASTAUDIOVOLUME284 = "v284castAudioVolume284" // v284 Cast Audio Volume284
+        const val KEY_V284PLAYLISTAUTOSKIPOUTRO284 = "v284playlistAutoSkipOutro284" // v284 Playlist Auto Skip Outro284
+        const val KEY_V284CACHEDOWNLOADSPEED285 = "v284cacheDownloadSpeed285" // v284 Cache Download Speed285
+        const val KEY_V284PROGRESSBARTHUMBBORDER284 = "v284progressBarThumbBorder284" // v284 Progress Bar Thumb Border284
+        const val KEY_V284VOLUMEBOOSTPEAK284 = "v284volumeBoostPeak284" // v284 Volume Boost Peak284
+        const val KEY_V284HISTORYBOOKMARKEXPORT284 = "v284historyBookmarkExport284" // v284 History Bookmark Export284
+        const val KEY_V284PLAYBACKCHAPTERSYNC284 = "v284playbackChapterSync284" // v284 Playback Chapter Sync284
+        const val KEY_V284SCREENSHOTSAVEPATH284 = "v284screenshotSavePath284" // v284 Screenshot Save Path284
+        const val KEY_V284VIDEOCOLORSPACE284 = "v284videoColorSpace284" // v284 Video Color Space284
+        const val KEY_V284DANMAKUBOTTOMMAXCOUNT376 = "v284danmakuBottomMaxCount376" // v284 Danmaku Bottom Max Count376
+        const val KEY_V284SUBTITLEBGBORDER383 = "v284subtitleBgBorder383" // v284 Subtitle Bg Border383
+        const val KEY_V285AUDIOEQCUSTOM285 = "v285audioEQCustom285" // v285 Audio EQ Custom285
+        const val KEY_V285DANMAKUBOTTOMMAXCOUNT377 = "v285danmakuBottomMaxCount377" // v285 Danmaku Bottom Max Count377
+        const val KEY_V285SUBTITLEBGBORDER384 = "v285subtitleBgBorder384" // v285 Subtitle Bg Border384
+        const val KEY_V285GESTURESHAKEACTION285 = "v285gestureShakeAction285" // v285 Gesture Shake Action285
+        const val KEY_V285CASTAUDIOVOLUME285 = "v285castAudioVolume285" // v285 Cast Audio Volume285
+        const val KEY_V285PLAYLISTAUTOSKIPOUTRO285 = "v285playlistAutoSkipOutro285" // v285 Playlist Auto Skip Outro285
+        const val KEY_V285CACHEDOWNLOADSPEED286 = "v285cacheDownloadSpeed286" // v285 Cache Download Speed286
+        const val KEY_V285PROGRESSBARTHUMBBORDER285 = "v285progressBarThumbBorder285" // v285 Progress Bar Thumb Border285
+        const val KEY_V285VOLUMEBOOSTPEAK285 = "v285volumeBoostPeak285" // v285 Volume Boost Peak285
+        const val KEY_V285HISTORYBOOKMARKEXPORT285 = "v285historyBookmarkExport285" // v285 History Bookmark Export285
+        const val KEY_V285PLAYBACKCHAPTERSYNC285 = "v285playbackChapterSync285" // v285 Playback Chapter Sync285
+        const val KEY_V285SCREENSHOTSAVEPATH285 = "v285screenshotSavePath285" // v285 Screenshot Save Path285
+        const val KEY_V285VIDEOCOLORSPACE285 = "v285videoColorSpace285" // v285 Video Color Space285
+        const val KEY_V285DANMAKUBOTTOMMAXCOUNT378 = "v285danmakuBottomMaxCount378" // v285 Danmaku Bottom Max Count378
+        const val KEY_V285SUBTITLEBGBORDER385 = "v285subtitleBgBorder385" // v285 Subtitle Bg Border385
+        const val KEY_V286AUDIOEQCUSTOM286 = "v286audioEQCustom286" // v286 Audio EQ Custom286
+        const val KEY_V286DANMAKUBOTTOMMAXCOUNT379 = "v286danmakuBottomMaxCount379" // v286 Danmaku Bottom Max Count379
+        const val KEY_V286SUBTITLEBGBORDER386 = "v286subtitleBgBorder386" // v286 Subtitle Bg Border386
+        const val KEY_V286GESTURESHAKEACTION286 = "v286gestureShakeAction286" // v286 Gesture Shake Action286
+        const val KEY_V286CASTAUDIOVOLUME286 = "v286castAudioVolume286" // v286 Cast Audio Volume286
+        const val KEY_V286PLAYLISTAUTOSKIPOUTRO286 = "v286playlistAutoSkipOutro286" // v286 Playlist Auto Skip Outro286
+        const val KEY_V286CACHEDOWNLOADSPEED287 = "v286cacheDownloadSpeed287" // v286 Cache Download Speed287
+        const val KEY_V286PROGRESSBARTHUMBBORDER286 = "v286progressBarThumbBorder286" // v286 Progress Bar Thumb Border286
+        const val KEY_V286VOLUMEBOOSTPEAK286 = "v286volumeBoostPeak286" // v286 Volume Boost Peak286
+        const val KEY_V286HISTORYBOOKMARKEXPORT286 = "v286historyBookmarkExport286" // v286 History Bookmark Export286
+        const val KEY_V286PLAYBACKCHAPTERSYNC286 = "v286playbackChapterSync286" // v286 Playback Chapter Sync286
+        const val KEY_V286SCREENSHOTSAVEPATH286 = "v286screenshotSavePath286" // v286 Screenshot Save Path286
+        const val KEY_V286VIDEOCOLORSPACE286 = "v286videoColorSpace286" // v286 Video Color Space286
+        const val KEY_V286DANMAKUBOTTOMMAXCOUNT380 = "v286danmakuBottomMaxCount380" // v286 Danmaku Bottom Max Count380
+        const val KEY_V286SUBTITLEBGBORDER387 = "v286subtitleBgBorder387" // v286 Subtitle Bg Border387
+        const val KEY_V287AUDIOEQCUSTOM287 = "v287audioEQCustom287" // v287 Audio EQ Custom287
+        const val KEY_V287DANMAKUBOTTOMMAXCOUNT381 = "v287danmakuBottomMaxCount381" // v287 Danmaku Bottom Max Count381
+        const val KEY_V287SUBTITLEBGBORDER388 = "v287subtitleBgBorder388" // v287 Subtitle Bg Border388
+        const val KEY_V287GESTURESHAKEACTION287 = "v287gestureShakeAction287" // v287 Gesture Shake Action287
+        const val KEY_V287CASTAUDIOVOLUME287 = "v287castAudioVolume287" // v287 Cast Audio Volume287
+        const val KEY_V287PLAYLISTAUTOSKIPOUTRO287 = "v287playlistAutoSkipOutro287" // v287 Playlist Auto Skip Outro287
+        const val KEY_V287CACHEDOWNLOADSPEED288 = "v287cacheDownloadSpeed288" // v287 Cache Download Speed288
+        const val KEY_V287PROGRESSBARTHUMBBORDER287 = "v287progressBarThumbBorder287" // v287 Progress Bar Thumb Border287
+        const val KEY_V287VOLUMEBOOSTPEAK287 = "v287volumeBoostPeak287" // v287 Volume Boost Peak287
+        const val KEY_V287HISTORYBOOKMARKEXPORT287 = "v287historyBookmarkExport287" // v287 History Bookmark Export287
+        const val KEY_V287PLAYBACKCHAPTERSYNC287 = "v287playbackChapterSync287" // v287 Playback Chapter Sync287
+        const val KEY_V287SCREENSHOTSAVEPATH287 = "v287screenshotSavePath287" // v287 Screenshot Save Path287
+        const val KEY_V287VIDEOCOLORSPACE287 = "v287videoColorSpace287" // v287 Video Color Space287
+        const val KEY_V287DANMAKUBOTTOMMAXCOUNT382 = "v287danmakuBottomMaxCount382" // v287 Danmaku Bottom Max Count382
+        const val KEY_V287SUBTITLEBGBORDER389 = "v287subtitleBgBorder389" // v287 Subtitle Bg Border389
+        const val KEY_V288AUDIOEQCUSTOM288 = "v288audioEQCustom288" // v288 Audio EQ Custom288
+        const val KEY_V288DANMAKUBOTTOMMAXCOUNT383 = "v288danmakuBottomMaxCount383" // v288 Danmaku Bottom Max Count383
+        const val KEY_V288SUBTITLEBGBORDER390 = "v288subtitleBgBorder390" // v288 Subtitle Bg Border390
+        const val KEY_V288GESTURESHAKEACTION288 = "v288gestureShakeAction288" // v288 Gesture Shake Action288
+        const val KEY_V288CASTAUDIOVOLUME288 = "v288castAudioVolume288" // v288 Cast Audio Volume288
+        const val KEY_V288PLAYLISTAUTOSKIPOUTRO288 = "v288playlistAutoSkipOutro288" // v288 Playlist Auto Skip Outro288
+        const val KEY_V288CACHEDOWNLOADSPEED289 = "v288cacheDownloadSpeed289" // v288 Cache Download Speed289
+        const val KEY_V288PROGRESSBARTHUMBBORDER288 = "v288progressBarThumbBorder288" // v288 Progress Bar Thumb Border288
+        const val KEY_V288VOLUMEBOOSTPEAK288 = "v288volumeBoostPeak288" // v288 Volume Boost Peak288
+        const val KEY_V288HISTORYBOOKMARKEXPORT288 = "v288historyBookmarkExport288" // v288 History Bookmark Export288
+        const val KEY_V288PLAYBACKCHAPTERSYNC288 = "v288playbackChapterSync288" // v288 Playback Chapter Sync288
+        const val KEY_V288SCREENSHOTSAVEPATH288 = "v288screenshotSavePath288" // v288 Screenshot Save Path288
+        const val KEY_V288VIDEOCOLORSPACE288 = "v288videoColorSpace288" // v288 Video Color Space288
+        const val KEY_V288DANMAKUBOTTOMMAXCOUNT384 = "v288danmakuBottomMaxCount384" // v288 Danmaku Bottom Max Count384
+        const val KEY_V288SUBTITLEBGBORDER391 = "v288subtitleBgBorder391" // v288 Subtitle Bg Border391
+        const val KEY_V289AUDIOEQCUSTOM289 = "v289audioEQCustom289" // v289 Audio EQ Custom289
+        const val KEY_V289DANMAKUBOTTOMMAXCOUNT385 = "v289danmakuBottomMaxCount385" // v289 Danmaku Bottom Max Count385
+        const val KEY_V289SUBTITLEBGBORDER392 = "v289subtitleBgBorder392" // v289 Subtitle Bg Border392
+        const val KEY_V289GESTURESHAKEACTION289 = "v289gestureShakeAction289" // v289 Gesture Shake Action289
+        const val KEY_V289CASTAUDIOVOLUME289 = "v289castAudioVolume289" // v289 Cast Audio Volume289
+        const val KEY_V289PLAYLISTAUTOSKIPOUTRO289 = "v289playlistAutoSkipOutro289" // v289 Playlist Auto Skip Outro289
+        const val KEY_V289CACHEDOWNLOADSPEED290 = "v289cacheDownloadSpeed290" // v289 Cache Download Speed290
+        const val KEY_V289PROGRESSBARTHUMBBORDER289 = "v289progressBarThumbBorder289" // v289 Progress Bar Thumb Border289
+        const val KEY_V289VOLUMEBOOSTPEAK289 = "v289volumeBoostPeak289" // v289 Volume Boost Peak289
+        const val KEY_V289HISTORYBOOKMARKEXPORT289 = "v289historyBookmarkExport289" // v289 History Bookmark Export289
+        const val KEY_V289PLAYBACKCHAPTERSYNC289 = "v289playbackChapterSync289" // v289 Playback Chapter Sync289
+        const val KEY_V289SCREENSHOTSAVEPATH289 = "v289screenshotSavePath289" // v289 Screenshot Save Path289
+        const val KEY_V289VIDEOCOLORSPACE289 = "v289videoColorSpace289" // v289 Video Color Space289
+        const val KEY_V289DANMAKUBOTTOMMAXCOUNT386 = "v289danmakuBottomMaxCount386" // v289 Danmaku Bottom Max Count386
+        const val KEY_V289SUBTITLEBGBORDER393 = "v289subtitleBgBorder393" // v289 Subtitle Bg Border393
+        const val KEY_V290AUDIOEQCUSTOM290 = "v290audioEQCustom290" // v290 Audio EQ Custom290
+        const val KEY_V290DANMAKUBOTTOMMAXCOUNT387 = "v290danmakuBottomMaxCount387" // v290 Danmaku Bottom Max Count387
+        const val KEY_V290SUBTITLEBGBORDER394 = "v290subtitleBgBorder394" // v290 Subtitle Bg Border394
+        const val KEY_V290GESTURESHAKEACTION290 = "v290gestureShakeAction290" // v290 Gesture Shake Action290
+        const val KEY_V290CASTAUDIOVOLUME290 = "v290castAudioVolume290" // v290 Cast Audio Volume290
+        const val KEY_V290PLAYLISTAUTOSKIPOUTRO290 = "v290playlistAutoSkipOutro290" // v290 Playlist Auto Skip Outro290
+        const val KEY_V290CACHEDOWNLOADSPEED291 = "v290cacheDownloadSpeed291" // v290 Cache Download Speed291
+        const val KEY_V290PROGRESSBARTHUMBBORDER290 = "v290progressBarThumbBorder290" // v290 Progress Bar Thumb Border290
+        const val KEY_V290VOLUMEBOOSTPEAK290 = "v290volumeBoostPeak290" // v290 Volume Boost Peak290
+        const val KEY_V290HISTORYBOOKMARKEXPORT290 = "v290historyBookmarkExport290" // v290 History Bookmark Export290
+        const val KEY_V290PLAYBACKCHAPTERSYNC290 = "v290playbackChapterSync290" // v290 Playback Chapter Sync290
+        const val KEY_V290SCREENSHOTSAVEPATH290 = "v290screenshotSavePath290" // v290 Screenshot Save Path290
+        const val KEY_V290VIDEOCOLORSPACE290 = "v290videoColorSpace290" // v290 Video Color Space290
+        const val KEY_V290DANMAKUBOTTOMMAXCOUNT388 = "v290danmakuBottomMaxCount388" // v290 Danmaku Bottom Max Count388
+        const val KEY_V290SUBTITLEBGBORDER395 = "v290subtitleBgBorder395" // v290 Subtitle Bg Border395
     }
 }
