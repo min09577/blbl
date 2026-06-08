@@ -51648,6 +51648,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V750GROWAUTOANIMATE750, false)
         set(value) = prefs.edit().putBoolean(KEY_V750GROWAUTOANIMATE750, value).apply()
 
+    var v751guardAutoProtect751: Boolean
+        get() = prefs.getBoolean(KEY_V751GUARDAUTOPROTECT751, false)
+        set(value) = prefs.edit().putBoolean(KEY_V751GUARDAUTOPROTECT751, value).apply()
+
+    var v751guideAutoOverlay751: Boolean
+        get() = prefs.getBoolean(KEY_V751GUIDEAUTOOVERLAY751, false)
+        set(value) = prefs.edit().putBoolean(KEY_V751GUIDEAUTOOVERLAY751, value).apply()
+
+    var v751handleAutoProcess751: Boolean
+        get() = prefs.getBoolean(KEY_V751HANDLEAUTOPROCESS751, false)
+        set(value) = prefs.edit().putBoolean(KEY_V751HANDLEAUTOPROCESS751, value).apply()
+
+    var v751handlerAutoDispatch751: Boolean
+        get() = prefs.getBoolean(KEY_V751HANDLERAUTODISPATCH751, false)
+        set(value) = prefs.edit().putBoolean(KEY_V751HANDLERAUTODISPATCH751, value).apply()
+
+    var v751hashAutoVerify751: Boolean
+        get() = prefs.getBoolean(KEY_V751HASHAUTOVERIFY751, false)
+        set(value) = prefs.edit().putBoolean(KEY_V751HASHAUTOVERIFY751, value).apply()
+
+    var v751headAutoDetect751: Boolean
+        get() = prefs.getBoolean(KEY_V751HEADAUTODETECT751, false)
+        set(value) = prefs.edit().putBoolean(KEY_V751HEADAUTODETECT751, value).apply()
+
+    var v751headerAutoPin751: Boolean
+        get() = prefs.getBoolean(KEY_V751HEADERAUTOPIN751, false)
+        set(value) = prefs.edit().putBoolean(KEY_V751HEADERAUTOPIN751, value).apply()
+
+    var v751heapAutoCompact751: Boolean
+        get() = prefs.getBoolean(KEY_V751HEAPAUTOCOMPACT751, false)
+        set(value) = prefs.edit().putBoolean(KEY_V751HEAPAUTOCOMPACT751, value).apply()
+
+    var v751heightAutoAdjust751: Int
+        get() = prefs.getInt(KEY_V751HEIGHTAUTOADJUST751, 0)
+        set(value) = prefs.edit().putInt(KEY_V751HEIGHTAUTOADJUST751, value).apply()
+
+    var v751helpAutoTooltip751: Boolean
+        get() = prefs.getBoolean(KEY_V751HELPAUTOTOOLTIP751, false)
+        set(value) = prefs.edit().putBoolean(KEY_V751HELPAUTOTOOLTIP751, value).apply()
+
+    var v751hiddenAutoReveal751: Boolean
+        get() = prefs.getBoolean(KEY_V751HIDDENAUTOREVEAL751, false)
+        set(value) = prefs.edit().putBoolean(KEY_V751HIDDENAUTOREVEAL751, value).apply()
+
+    var v751hideAutoOnScroll751: Boolean
+        get() = prefs.getBoolean(KEY_V751HIDEAUTOONSCROLL751, false)
+        set(value) = prefs.edit().putBoolean(KEY_V751HIDEAUTOONSCROLL751, value).apply()
+
+    var v751highlightAutoMark751: Boolean
+        get() = prefs.getBoolean(KEY_V751HIGHLIGHTAUTOMARK751, false)
+        set(value) = prefs.edit().putBoolean(KEY_V751HIGHLIGHTAUTOMARK751, value).apply()
+
+    var v751hintAutoDisplay751: Boolean
+        get() = prefs.getBoolean(KEY_V751HINTAUTODISPLAY751, false)
+        set(value) = prefs.edit().putBoolean(KEY_V751HINTAUTODISPLAY751, value).apply()
+
+    var v751historyAutoRecord751: Boolean
+        get() = prefs.getBoolean(KEY_V751HISTORYAUTORECORD751, false)
+        set(value) = prefs.edit().putBoolean(KEY_V751HISTORYAUTORECORD751, value).apply()
+
+    var v752guardAutoProtect752: Boolean
+        get() = prefs.getBoolean(KEY_V752GUARDAUTOPROTECT752, false)
+        set(value) = prefs.edit().putBoolean(KEY_V752GUARDAUTOPROTECT752, value).apply()
+
+    var v752guideAutoOverlay752: Boolean
+        get() = prefs.getBoolean(KEY_V752GUIDEAUTOOVERLAY752, false)
+        set(value) = prefs.edit().putBoolean(KEY_V752GUIDEAUTOOVERLAY752, value).apply()
+
+    var v752handleAutoProcess752: Boolean
+        get() = prefs.getBoolean(KEY_V752HANDLEAUTOPROCESS752, false)
+        set(value) = prefs.edit().putBoolean(KEY_V752HANDLEAUTOPROCESS752, value).apply()
+
+    var v752handlerAutoDispatch752: Boolean
+        get() = prefs.getBoolean(KEY_V752HANDLERAUTODISPATCH752, false)
+        set(value) = prefs.edit().putBoolean(KEY_V752HANDLERAUTODISPATCH752, value).apply()
+
+    var v752hashAutoVerify752: Boolean
+        get() = prefs.getBoolean(KEY_V752HASHAUTOVERIFY752, false)
+        set(value) = prefs.edit().putBoolean(KEY_V752HASHAUTOVERIFY752, value).apply()
+
+    var v752headAutoDetect752: Boolean
+        get() = prefs.getBoolean(KEY_V752HEADAUTODETECT752, false)
+        set(value) = prefs.edit().putBoolean(KEY_V752HEADAUTODETECT752, value).apply()
+
+    var v752headerAutoPin752: Boolean
+        get() = prefs.getBoolean(KEY_V752HEADERAUTOPIN752, false)
+        set(value) = prefs.edit().putBoolean(KEY_V752HEADERAUTOPIN752, value).apply()
+
+    var v752heapAutoCompact752: Boolean
+        get() = prefs.getBoolean(KEY_V752HEAPAUTOCOMPACT752, false)
+        set(value) = prefs.edit().putBoolean(KEY_V752HEAPAUTOCOMPACT752, value).apply()
+
+    var v752heightAutoAdjust752: Int
+        get() = prefs.getInt(KEY_V752HEIGHTAUTOADJUST752, 0)
+        set(value) = prefs.edit().putInt(KEY_V752HEIGHTAUTOADJUST752, value).apply()
+
+    var v752helpAutoTooltip752: Boolean
+        get() = prefs.getBoolean(KEY_V752HELPAUTOTOOLTIP752, false)
+        set(value) = prefs.edit().putBoolean(KEY_V752HELPAUTOTOOLTIP752, value).apply()
+
+    var v752hiddenAutoReveal752: Boolean
+        get() = prefs.getBoolean(KEY_V752HIDDENAUTOREVEAL752, false)
+        set(value) = prefs.edit().putBoolean(KEY_V752HIDDENAUTOREVEAL752, value).apply()
+
+    var v752hideAutoOnScroll752: Boolean
+        get() = prefs.getBoolean(KEY_V752HIDEAUTOONSCROLL752, false)
+        set(value) = prefs.edit().putBoolean(KEY_V752HIDEAUTOONSCROLL752, value).apply()
+
+    var v752highlightAutoMark752: Boolean
+        get() = prefs.getBoolean(KEY_V752HIGHLIGHTAUTOMARK752, false)
+        set(value) = prefs.edit().putBoolean(KEY_V752HIGHLIGHTAUTOMARK752, value).apply()
+
+    var v752hintAutoDisplay752: Boolean
+        get() = prefs.getBoolean(KEY_V752HINTAUTODISPLAY752, false)
+        set(value) = prefs.edit().putBoolean(KEY_V752HINTAUTODISPLAY752, value).apply()
+
+    var v752historyAutoRecord752: Boolean
+        get() = prefs.getBoolean(KEY_V752HISTORYAUTORECORD752, false)
+        set(value) = prefs.edit().putBoolean(KEY_V752HISTORYAUTORECORD752, value).apply()
+
+    var v753guardAutoProtect753: Boolean
+        get() = prefs.getBoolean(KEY_V753GUARDAUTOPROTECT753, false)
+        set(value) = prefs.edit().putBoolean(KEY_V753GUARDAUTOPROTECT753, value).apply()
+
+    var v753guideAutoOverlay753: Boolean
+        get() = prefs.getBoolean(KEY_V753GUIDEAUTOOVERLAY753, false)
+        set(value) = prefs.edit().putBoolean(KEY_V753GUIDEAUTOOVERLAY753, value).apply()
+
+    var v753handleAutoProcess753: Boolean
+        get() = prefs.getBoolean(KEY_V753HANDLEAUTOPROCESS753, false)
+        set(value) = prefs.edit().putBoolean(KEY_V753HANDLEAUTOPROCESS753, value).apply()
+
+    var v753handlerAutoDispatch753: Boolean
+        get() = prefs.getBoolean(KEY_V753HANDLERAUTODISPATCH753, false)
+        set(value) = prefs.edit().putBoolean(KEY_V753HANDLERAUTODISPATCH753, value).apply()
+
+    var v753hashAutoVerify753: Boolean
+        get() = prefs.getBoolean(KEY_V753HASHAUTOVERIFY753, false)
+        set(value) = prefs.edit().putBoolean(KEY_V753HASHAUTOVERIFY753, value).apply()
+
+    var v753headAutoDetect753: Boolean
+        get() = prefs.getBoolean(KEY_V753HEADAUTODETECT753, false)
+        set(value) = prefs.edit().putBoolean(KEY_V753HEADAUTODETECT753, value).apply()
+
+    var v753headerAutoPin753: Boolean
+        get() = prefs.getBoolean(KEY_V753HEADERAUTOPIN753, false)
+        set(value) = prefs.edit().putBoolean(KEY_V753HEADERAUTOPIN753, value).apply()
+
+    var v753heapAutoCompact753: Boolean
+        get() = prefs.getBoolean(KEY_V753HEAPAUTOCOMPACT753, false)
+        set(value) = prefs.edit().putBoolean(KEY_V753HEAPAUTOCOMPACT753, value).apply()
+
+    var v753heightAutoAdjust753: Int
+        get() = prefs.getInt(KEY_V753HEIGHTAUTOADJUST753, 0)
+        set(value) = prefs.edit().putInt(KEY_V753HEIGHTAUTOADJUST753, value).apply()
+
+    var v753helpAutoTooltip753: Boolean
+        get() = prefs.getBoolean(KEY_V753HELPAUTOTOOLTIP753, false)
+        set(value) = prefs.edit().putBoolean(KEY_V753HELPAUTOTOOLTIP753, value).apply()
+
+    var v753hiddenAutoReveal753: Boolean
+        get() = prefs.getBoolean(KEY_V753HIDDENAUTOREVEAL753, false)
+        set(value) = prefs.edit().putBoolean(KEY_V753HIDDENAUTOREVEAL753, value).apply()
+
+    var v753hideAutoOnScroll753: Boolean
+        get() = prefs.getBoolean(KEY_V753HIDEAUTOONSCROLL753, false)
+        set(value) = prefs.edit().putBoolean(KEY_V753HIDEAUTOONSCROLL753, value).apply()
+
+    var v753highlightAutoMark753: Boolean
+        get() = prefs.getBoolean(KEY_V753HIGHLIGHTAUTOMARK753, false)
+        set(value) = prefs.edit().putBoolean(KEY_V753HIGHLIGHTAUTOMARK753, value).apply()
+
+    var v753hintAutoDisplay753: Boolean
+        get() = prefs.getBoolean(KEY_V753HINTAUTODISPLAY753, false)
+        set(value) = prefs.edit().putBoolean(KEY_V753HINTAUTODISPLAY753, value).apply()
+
+    var v753historyAutoRecord753: Boolean
+        get() = prefs.getBoolean(KEY_V753HISTORYAUTORECORD753, false)
+        set(value) = prefs.edit().putBoolean(KEY_V753HISTORYAUTORECORD753, value).apply()
+
+    var v754guardAutoProtect754: Boolean
+        get() = prefs.getBoolean(KEY_V754GUARDAUTOPROTECT754, false)
+        set(value) = prefs.edit().putBoolean(KEY_V754GUARDAUTOPROTECT754, value).apply()
+
+    var v754guideAutoOverlay754: Boolean
+        get() = prefs.getBoolean(KEY_V754GUIDEAUTOOVERLAY754, false)
+        set(value) = prefs.edit().putBoolean(KEY_V754GUIDEAUTOOVERLAY754, value).apply()
+
+    var v754handleAutoProcess754: Boolean
+        get() = prefs.getBoolean(KEY_V754HANDLEAUTOPROCESS754, false)
+        set(value) = prefs.edit().putBoolean(KEY_V754HANDLEAUTOPROCESS754, value).apply()
+
+    var v754handlerAutoDispatch754: Boolean
+        get() = prefs.getBoolean(KEY_V754HANDLERAUTODISPATCH754, false)
+        set(value) = prefs.edit().putBoolean(KEY_V754HANDLERAUTODISPATCH754, value).apply()
+
+    var v754hashAutoVerify754: Boolean
+        get() = prefs.getBoolean(KEY_V754HASHAUTOVERIFY754, false)
+        set(value) = prefs.edit().putBoolean(KEY_V754HASHAUTOVERIFY754, value).apply()
+
+    var v754headAutoDetect754: Boolean
+        get() = prefs.getBoolean(KEY_V754HEADAUTODETECT754, false)
+        set(value) = prefs.edit().putBoolean(KEY_V754HEADAUTODETECT754, value).apply()
+
+    var v754headerAutoPin754: Boolean
+        get() = prefs.getBoolean(KEY_V754HEADERAUTOPIN754, false)
+        set(value) = prefs.edit().putBoolean(KEY_V754HEADERAUTOPIN754, value).apply()
+
+    var v754heapAutoCompact754: Boolean
+        get() = prefs.getBoolean(KEY_V754HEAPAUTOCOMPACT754, false)
+        set(value) = prefs.edit().putBoolean(KEY_V754HEAPAUTOCOMPACT754, value).apply()
+
+    var v754heightAutoAdjust754: Int
+        get() = prefs.getInt(KEY_V754HEIGHTAUTOADJUST754, 0)
+        set(value) = prefs.edit().putInt(KEY_V754HEIGHTAUTOADJUST754, value).apply()
+
+    var v754helpAutoTooltip754: Boolean
+        get() = prefs.getBoolean(KEY_V754HELPAUTOTOOLTIP754, false)
+        set(value) = prefs.edit().putBoolean(KEY_V754HELPAUTOTOOLTIP754, value).apply()
+
+    var v754hiddenAutoReveal754: Boolean
+        get() = prefs.getBoolean(KEY_V754HIDDENAUTOREVEAL754, false)
+        set(value) = prefs.edit().putBoolean(KEY_V754HIDDENAUTOREVEAL754, value).apply()
+
+    var v754hideAutoOnScroll754: Boolean
+        get() = prefs.getBoolean(KEY_V754HIDEAUTOONSCROLL754, false)
+        set(value) = prefs.edit().putBoolean(KEY_V754HIDEAUTOONSCROLL754, value).apply()
+
+    var v754highlightAutoMark754: Boolean
+        get() = prefs.getBoolean(KEY_V754HIGHLIGHTAUTOMARK754, false)
+        set(value) = prefs.edit().putBoolean(KEY_V754HIGHLIGHTAUTOMARK754, value).apply()
+
+    var v754hintAutoDisplay754: Boolean
+        get() = prefs.getBoolean(KEY_V754HINTAUTODISPLAY754, false)
+        set(value) = prefs.edit().putBoolean(KEY_V754HINTAUTODISPLAY754, value).apply()
+
+    var v754historyAutoRecord754: Boolean
+        get() = prefs.getBoolean(KEY_V754HISTORYAUTORECORD754, false)
+        set(value) = prefs.edit().putBoolean(KEY_V754HISTORYAUTORECORD754, value).apply()
+
+    var v755guardAutoProtect755: Boolean
+        get() = prefs.getBoolean(KEY_V755GUARDAUTOPROTECT755, false)
+        set(value) = prefs.edit().putBoolean(KEY_V755GUARDAUTOPROTECT755, value).apply()
+
+    var v755guideAutoOverlay755: Boolean
+        get() = prefs.getBoolean(KEY_V755GUIDEAUTOOVERLAY755, false)
+        set(value) = prefs.edit().putBoolean(KEY_V755GUIDEAUTOOVERLAY755, value).apply()
+
+    var v755handleAutoProcess755: Boolean
+        get() = prefs.getBoolean(KEY_V755HANDLEAUTOPROCESS755, false)
+        set(value) = prefs.edit().putBoolean(KEY_V755HANDLEAUTOPROCESS755, value).apply()
+
+    var v755handlerAutoDispatch755: Boolean
+        get() = prefs.getBoolean(KEY_V755HANDLERAUTODISPATCH755, false)
+        set(value) = prefs.edit().putBoolean(KEY_V755HANDLERAUTODISPATCH755, value).apply()
+
+    var v755hashAutoVerify755: Boolean
+        get() = prefs.getBoolean(KEY_V755HASHAUTOVERIFY755, false)
+        set(value) = prefs.edit().putBoolean(KEY_V755HASHAUTOVERIFY755, value).apply()
+
+    var v755headAutoDetect755: Boolean
+        get() = prefs.getBoolean(KEY_V755HEADAUTODETECT755, false)
+        set(value) = prefs.edit().putBoolean(KEY_V755HEADAUTODETECT755, value).apply()
+
+    var v755headerAutoPin755: Boolean
+        get() = prefs.getBoolean(KEY_V755HEADERAUTOPIN755, false)
+        set(value) = prefs.edit().putBoolean(KEY_V755HEADERAUTOPIN755, value).apply()
+
+    var v755heapAutoCompact755: Boolean
+        get() = prefs.getBoolean(KEY_V755HEAPAUTOCOMPACT755, false)
+        set(value) = prefs.edit().putBoolean(KEY_V755HEAPAUTOCOMPACT755, value).apply()
+
+    var v755heightAutoAdjust755: Int
+        get() = prefs.getInt(KEY_V755HEIGHTAUTOADJUST755, 0)
+        set(value) = prefs.edit().putInt(KEY_V755HEIGHTAUTOADJUST755, value).apply()
+
+    var v755helpAutoTooltip755: Boolean
+        get() = prefs.getBoolean(KEY_V755HELPAUTOTOOLTIP755, false)
+        set(value) = prefs.edit().putBoolean(KEY_V755HELPAUTOTOOLTIP755, value).apply()
+
+    var v755hiddenAutoReveal755: Boolean
+        get() = prefs.getBoolean(KEY_V755HIDDENAUTOREVEAL755, false)
+        set(value) = prefs.edit().putBoolean(KEY_V755HIDDENAUTOREVEAL755, value).apply()
+
+    var v755hideAutoOnScroll755: Boolean
+        get() = prefs.getBoolean(KEY_V755HIDEAUTOONSCROLL755, false)
+        set(value) = prefs.edit().putBoolean(KEY_V755HIDEAUTOONSCROLL755, value).apply()
+
+    var v755highlightAutoMark755: Boolean
+        get() = prefs.getBoolean(KEY_V755HIGHLIGHTAUTOMARK755, false)
+        set(value) = prefs.edit().putBoolean(KEY_V755HIGHLIGHTAUTOMARK755, value).apply()
+
+    var v755hintAutoDisplay755: Boolean
+        get() = prefs.getBoolean(KEY_V755HINTAUTODISPLAY755, false)
+        set(value) = prefs.edit().putBoolean(KEY_V755HINTAUTODISPLAY755, value).apply()
+
+    var v755historyAutoRecord755: Boolean
+        get() = prefs.getBoolean(KEY_V755HISTORYAUTORECORD755, false)
+        set(value) = prefs.edit().putBoolean(KEY_V755HISTORYAUTORECORD755, value).apply()
+
+    var v756guardAutoProtect756: Boolean
+        get() = prefs.getBoolean(KEY_V756GUARDAUTOPROTECT756, false)
+        set(value) = prefs.edit().putBoolean(KEY_V756GUARDAUTOPROTECT756, value).apply()
+
+    var v756guideAutoOverlay756: Boolean
+        get() = prefs.getBoolean(KEY_V756GUIDEAUTOOVERLAY756, false)
+        set(value) = prefs.edit().putBoolean(KEY_V756GUIDEAUTOOVERLAY756, value).apply()
+
+    var v756handleAutoProcess756: Boolean
+        get() = prefs.getBoolean(KEY_V756HANDLEAUTOPROCESS756, false)
+        set(value) = prefs.edit().putBoolean(KEY_V756HANDLEAUTOPROCESS756, value).apply()
+
+    var v756handlerAutoDispatch756: Boolean
+        get() = prefs.getBoolean(KEY_V756HANDLERAUTODISPATCH756, false)
+        set(value) = prefs.edit().putBoolean(KEY_V756HANDLERAUTODISPATCH756, value).apply()
+
+    var v756hashAutoVerify756: Boolean
+        get() = prefs.getBoolean(KEY_V756HASHAUTOVERIFY756, false)
+        set(value) = prefs.edit().putBoolean(KEY_V756HASHAUTOVERIFY756, value).apply()
+
+    var v756headAutoDetect756: Boolean
+        get() = prefs.getBoolean(KEY_V756HEADAUTODETECT756, false)
+        set(value) = prefs.edit().putBoolean(KEY_V756HEADAUTODETECT756, value).apply()
+
+    var v756headerAutoPin756: Boolean
+        get() = prefs.getBoolean(KEY_V756HEADERAUTOPIN756, false)
+        set(value) = prefs.edit().putBoolean(KEY_V756HEADERAUTOPIN756, value).apply()
+
+    var v756heapAutoCompact756: Boolean
+        get() = prefs.getBoolean(KEY_V756HEAPAUTOCOMPACT756, false)
+        set(value) = prefs.edit().putBoolean(KEY_V756HEAPAUTOCOMPACT756, value).apply()
+
+    var v756heightAutoAdjust756: Int
+        get() = prefs.getInt(KEY_V756HEIGHTAUTOADJUST756, 0)
+        set(value) = prefs.edit().putInt(KEY_V756HEIGHTAUTOADJUST756, value).apply()
+
+    var v756helpAutoTooltip756: Boolean
+        get() = prefs.getBoolean(KEY_V756HELPAUTOTOOLTIP756, false)
+        set(value) = prefs.edit().putBoolean(KEY_V756HELPAUTOTOOLTIP756, value).apply()
+
+    var v756hiddenAutoReveal756: Boolean
+        get() = prefs.getBoolean(KEY_V756HIDDENAUTOREVEAL756, false)
+        set(value) = prefs.edit().putBoolean(KEY_V756HIDDENAUTOREVEAL756, value).apply()
+
+    var v756hideAutoOnScroll756: Boolean
+        get() = prefs.getBoolean(KEY_V756HIDEAUTOONSCROLL756, false)
+        set(value) = prefs.edit().putBoolean(KEY_V756HIDEAUTOONSCROLL756, value).apply()
+
+    var v756highlightAutoMark756: Boolean
+        get() = prefs.getBoolean(KEY_V756HIGHLIGHTAUTOMARK756, false)
+        set(value) = prefs.edit().putBoolean(KEY_V756HIGHLIGHTAUTOMARK756, value).apply()
+
+    var v756hintAutoDisplay756: Boolean
+        get() = prefs.getBoolean(KEY_V756HINTAUTODISPLAY756, false)
+        set(value) = prefs.edit().putBoolean(KEY_V756HINTAUTODISPLAY756, value).apply()
+
+    var v756historyAutoRecord756: Boolean
+        get() = prefs.getBoolean(KEY_V756HISTORYAUTORECORD756, false)
+        set(value) = prefs.edit().putBoolean(KEY_V756HISTORYAUTORECORD756, value).apply()
+
+    var v757guardAutoProtect757: Boolean
+        get() = prefs.getBoolean(KEY_V757GUARDAUTOPROTECT757, false)
+        set(value) = prefs.edit().putBoolean(KEY_V757GUARDAUTOPROTECT757, value).apply()
+
+    var v757guideAutoOverlay757: Boolean
+        get() = prefs.getBoolean(KEY_V757GUIDEAUTOOVERLAY757, false)
+        set(value) = prefs.edit().putBoolean(KEY_V757GUIDEAUTOOVERLAY757, value).apply()
+
+    var v757handleAutoProcess757: Boolean
+        get() = prefs.getBoolean(KEY_V757HANDLEAUTOPROCESS757, false)
+        set(value) = prefs.edit().putBoolean(KEY_V757HANDLEAUTOPROCESS757, value).apply()
+
+    var v757handlerAutoDispatch757: Boolean
+        get() = prefs.getBoolean(KEY_V757HANDLERAUTODISPATCH757, false)
+        set(value) = prefs.edit().putBoolean(KEY_V757HANDLERAUTODISPATCH757, value).apply()
+
+    var v757hashAutoVerify757: Boolean
+        get() = prefs.getBoolean(KEY_V757HASHAUTOVERIFY757, false)
+        set(value) = prefs.edit().putBoolean(KEY_V757HASHAUTOVERIFY757, value).apply()
+
+    var v757headAutoDetect757: Boolean
+        get() = prefs.getBoolean(KEY_V757HEADAUTODETECT757, false)
+        set(value) = prefs.edit().putBoolean(KEY_V757HEADAUTODETECT757, value).apply()
+
+    var v757headerAutoPin757: Boolean
+        get() = prefs.getBoolean(KEY_V757HEADERAUTOPIN757, false)
+        set(value) = prefs.edit().putBoolean(KEY_V757HEADERAUTOPIN757, value).apply()
+
+    var v757heapAutoCompact757: Boolean
+        get() = prefs.getBoolean(KEY_V757HEAPAUTOCOMPACT757, false)
+        set(value) = prefs.edit().putBoolean(KEY_V757HEAPAUTOCOMPACT757, value).apply()
+
+    var v757heightAutoAdjust757: Int
+        get() = prefs.getInt(KEY_V757HEIGHTAUTOADJUST757, 0)
+        set(value) = prefs.edit().putInt(KEY_V757HEIGHTAUTOADJUST757, value).apply()
+
+    var v757helpAutoTooltip757: Boolean
+        get() = prefs.getBoolean(KEY_V757HELPAUTOTOOLTIP757, false)
+        set(value) = prefs.edit().putBoolean(KEY_V757HELPAUTOTOOLTIP757, value).apply()
+
+    var v757hiddenAutoReveal757: Boolean
+        get() = prefs.getBoolean(KEY_V757HIDDENAUTOREVEAL757, false)
+        set(value) = prefs.edit().putBoolean(KEY_V757HIDDENAUTOREVEAL757, value).apply()
+
+    var v757hideAutoOnScroll757: Boolean
+        get() = prefs.getBoolean(KEY_V757HIDEAUTOONSCROLL757, false)
+        set(value) = prefs.edit().putBoolean(KEY_V757HIDEAUTOONSCROLL757, value).apply()
+
+    var v757highlightAutoMark757: Boolean
+        get() = prefs.getBoolean(KEY_V757HIGHLIGHTAUTOMARK757, false)
+        set(value) = prefs.edit().putBoolean(KEY_V757HIGHLIGHTAUTOMARK757, value).apply()
+
+    var v757hintAutoDisplay757: Boolean
+        get() = prefs.getBoolean(KEY_V757HINTAUTODISPLAY757, false)
+        set(value) = prefs.edit().putBoolean(KEY_V757HINTAUTODISPLAY757, value).apply()
+
+    var v757historyAutoRecord757: Boolean
+        get() = prefs.getBoolean(KEY_V757HISTORYAUTORECORD757, false)
+        set(value) = prefs.edit().putBoolean(KEY_V757HISTORYAUTORECORD757, value).apply()
+
+    var v758guardAutoProtect758: Boolean
+        get() = prefs.getBoolean(KEY_V758GUARDAUTOPROTECT758, false)
+        set(value) = prefs.edit().putBoolean(KEY_V758GUARDAUTOPROTECT758, value).apply()
+
+    var v758guideAutoOverlay758: Boolean
+        get() = prefs.getBoolean(KEY_V758GUIDEAUTOOVERLAY758, false)
+        set(value) = prefs.edit().putBoolean(KEY_V758GUIDEAUTOOVERLAY758, value).apply()
+
+    var v758handleAutoProcess758: Boolean
+        get() = prefs.getBoolean(KEY_V758HANDLEAUTOPROCESS758, false)
+        set(value) = prefs.edit().putBoolean(KEY_V758HANDLEAUTOPROCESS758, value).apply()
+
+    var v758handlerAutoDispatch758: Boolean
+        get() = prefs.getBoolean(KEY_V758HANDLERAUTODISPATCH758, false)
+        set(value) = prefs.edit().putBoolean(KEY_V758HANDLERAUTODISPATCH758, value).apply()
+
+    var v758hashAutoVerify758: Boolean
+        get() = prefs.getBoolean(KEY_V758HASHAUTOVERIFY758, false)
+        set(value) = prefs.edit().putBoolean(KEY_V758HASHAUTOVERIFY758, value).apply()
+
+    var v758headAutoDetect758: Boolean
+        get() = prefs.getBoolean(KEY_V758HEADAUTODETECT758, false)
+        set(value) = prefs.edit().putBoolean(KEY_V758HEADAUTODETECT758, value).apply()
+
+    var v758headerAutoPin758: Boolean
+        get() = prefs.getBoolean(KEY_V758HEADERAUTOPIN758, false)
+        set(value) = prefs.edit().putBoolean(KEY_V758HEADERAUTOPIN758, value).apply()
+
+    var v758heapAutoCompact758: Boolean
+        get() = prefs.getBoolean(KEY_V758HEAPAUTOCOMPACT758, false)
+        set(value) = prefs.edit().putBoolean(KEY_V758HEAPAUTOCOMPACT758, value).apply()
+
+    var v758heightAutoAdjust758: Int
+        get() = prefs.getInt(KEY_V758HEIGHTAUTOADJUST758, 0)
+        set(value) = prefs.edit().putInt(KEY_V758HEIGHTAUTOADJUST758, value).apply()
+
+    var v758helpAutoTooltip758: Boolean
+        get() = prefs.getBoolean(KEY_V758HELPAUTOTOOLTIP758, false)
+        set(value) = prefs.edit().putBoolean(KEY_V758HELPAUTOTOOLTIP758, value).apply()
+
+    var v758hiddenAutoReveal758: Boolean
+        get() = prefs.getBoolean(KEY_V758HIDDENAUTOREVEAL758, false)
+        set(value) = prefs.edit().putBoolean(KEY_V758HIDDENAUTOREVEAL758, value).apply()
+
+    var v758hideAutoOnScroll758: Boolean
+        get() = prefs.getBoolean(KEY_V758HIDEAUTOONSCROLL758, false)
+        set(value) = prefs.edit().putBoolean(KEY_V758HIDEAUTOONSCROLL758, value).apply()
+
+    var v758highlightAutoMark758: Boolean
+        get() = prefs.getBoolean(KEY_V758HIGHLIGHTAUTOMARK758, false)
+        set(value) = prefs.edit().putBoolean(KEY_V758HIGHLIGHTAUTOMARK758, value).apply()
+
+    var v758hintAutoDisplay758: Boolean
+        get() = prefs.getBoolean(KEY_V758HINTAUTODISPLAY758, false)
+        set(value) = prefs.edit().putBoolean(KEY_V758HINTAUTODISPLAY758, value).apply()
+
+    var v758historyAutoRecord758: Boolean
+        get() = prefs.getBoolean(KEY_V758HISTORYAUTORECORD758, false)
+        set(value) = prefs.edit().putBoolean(KEY_V758HISTORYAUTORECORD758, value).apply()
+
+    var v759guardAutoProtect759: Boolean
+        get() = prefs.getBoolean(KEY_V759GUARDAUTOPROTECT759, false)
+        set(value) = prefs.edit().putBoolean(KEY_V759GUARDAUTOPROTECT759, value).apply()
+
+    var v759guideAutoOverlay759: Boolean
+        get() = prefs.getBoolean(KEY_V759GUIDEAUTOOVERLAY759, false)
+        set(value) = prefs.edit().putBoolean(KEY_V759GUIDEAUTOOVERLAY759, value).apply()
+
+    var v759handleAutoProcess759: Boolean
+        get() = prefs.getBoolean(KEY_V759HANDLEAUTOPROCESS759, false)
+        set(value) = prefs.edit().putBoolean(KEY_V759HANDLEAUTOPROCESS759, value).apply()
+
+    var v759handlerAutoDispatch759: Boolean
+        get() = prefs.getBoolean(KEY_V759HANDLERAUTODISPATCH759, false)
+        set(value) = prefs.edit().putBoolean(KEY_V759HANDLERAUTODISPATCH759, value).apply()
+
+    var v759hashAutoVerify759: Boolean
+        get() = prefs.getBoolean(KEY_V759HASHAUTOVERIFY759, false)
+        set(value) = prefs.edit().putBoolean(KEY_V759HASHAUTOVERIFY759, value).apply()
+
+    var v759headAutoDetect759: Boolean
+        get() = prefs.getBoolean(KEY_V759HEADAUTODETECT759, false)
+        set(value) = prefs.edit().putBoolean(KEY_V759HEADAUTODETECT759, value).apply()
+
+    var v759headerAutoPin759: Boolean
+        get() = prefs.getBoolean(KEY_V759HEADERAUTOPIN759, false)
+        set(value) = prefs.edit().putBoolean(KEY_V759HEADERAUTOPIN759, value).apply()
+
+    var v759heapAutoCompact759: Boolean
+        get() = prefs.getBoolean(KEY_V759HEAPAUTOCOMPACT759, false)
+        set(value) = prefs.edit().putBoolean(KEY_V759HEAPAUTOCOMPACT759, value).apply()
+
+    var v759heightAutoAdjust759: Int
+        get() = prefs.getInt(KEY_V759HEIGHTAUTOADJUST759, 0)
+        set(value) = prefs.edit().putInt(KEY_V759HEIGHTAUTOADJUST759, value).apply()
+
+    var v759helpAutoTooltip759: Boolean
+        get() = prefs.getBoolean(KEY_V759HELPAUTOTOOLTIP759, false)
+        set(value) = prefs.edit().putBoolean(KEY_V759HELPAUTOTOOLTIP759, value).apply()
+
+    var v759hiddenAutoReveal759: Boolean
+        get() = prefs.getBoolean(KEY_V759HIDDENAUTOREVEAL759, false)
+        set(value) = prefs.edit().putBoolean(KEY_V759HIDDENAUTOREVEAL759, value).apply()
+
+    var v759hideAutoOnScroll759: Boolean
+        get() = prefs.getBoolean(KEY_V759HIDEAUTOONSCROLL759, false)
+        set(value) = prefs.edit().putBoolean(KEY_V759HIDEAUTOONSCROLL759, value).apply()
+
+    var v759highlightAutoMark759: Boolean
+        get() = prefs.getBoolean(KEY_V759HIGHLIGHTAUTOMARK759, false)
+        set(value) = prefs.edit().putBoolean(KEY_V759HIGHLIGHTAUTOMARK759, value).apply()
+
+    var v759hintAutoDisplay759: Boolean
+        get() = prefs.getBoolean(KEY_V759HINTAUTODISPLAY759, false)
+        set(value) = prefs.edit().putBoolean(KEY_V759HINTAUTODISPLAY759, value).apply()
+
+    var v759historyAutoRecord759: Boolean
+        get() = prefs.getBoolean(KEY_V759HISTORYAUTORECORD759, false)
+        set(value) = prefs.edit().putBoolean(KEY_V759HISTORYAUTORECORD759, value).apply()
+
+    var v760guardAutoProtect760: Boolean
+        get() = prefs.getBoolean(KEY_V760GUARDAUTOPROTECT760, false)
+        set(value) = prefs.edit().putBoolean(KEY_V760GUARDAUTOPROTECT760, value).apply()
+
+    var v760guideAutoOverlay760: Boolean
+        get() = prefs.getBoolean(KEY_V760GUIDEAUTOOVERLAY760, false)
+        set(value) = prefs.edit().putBoolean(KEY_V760GUIDEAUTOOVERLAY760, value).apply()
+
+    var v760handleAutoProcess760: Boolean
+        get() = prefs.getBoolean(KEY_V760HANDLEAUTOPROCESS760, false)
+        set(value) = prefs.edit().putBoolean(KEY_V760HANDLEAUTOPROCESS760, value).apply()
+
+    var v760handlerAutoDispatch760: Boolean
+        get() = prefs.getBoolean(KEY_V760HANDLERAUTODISPATCH760, false)
+        set(value) = prefs.edit().putBoolean(KEY_V760HANDLERAUTODISPATCH760, value).apply()
+
+    var v760hashAutoVerify760: Boolean
+        get() = prefs.getBoolean(KEY_V760HASHAUTOVERIFY760, false)
+        set(value) = prefs.edit().putBoolean(KEY_V760HASHAUTOVERIFY760, value).apply()
+
+    var v760headAutoDetect760: Boolean
+        get() = prefs.getBoolean(KEY_V760HEADAUTODETECT760, false)
+        set(value) = prefs.edit().putBoolean(KEY_V760HEADAUTODETECT760, value).apply()
+
+    var v760headerAutoPin760: Boolean
+        get() = prefs.getBoolean(KEY_V760HEADERAUTOPIN760, false)
+        set(value) = prefs.edit().putBoolean(KEY_V760HEADERAUTOPIN760, value).apply()
+
+    var v760heapAutoCompact760: Boolean
+        get() = prefs.getBoolean(KEY_V760HEAPAUTOCOMPACT760, false)
+        set(value) = prefs.edit().putBoolean(KEY_V760HEAPAUTOCOMPACT760, value).apply()
+
+    var v760heightAutoAdjust760: Int
+        get() = prefs.getInt(KEY_V760HEIGHTAUTOADJUST760, 0)
+        set(value) = prefs.edit().putInt(KEY_V760HEIGHTAUTOADJUST760, value).apply()
+
+    var v760helpAutoTooltip760: Boolean
+        get() = prefs.getBoolean(KEY_V760HELPAUTOTOOLTIP760, false)
+        set(value) = prefs.edit().putBoolean(KEY_V760HELPAUTOTOOLTIP760, value).apply()
+
+    var v760hiddenAutoReveal760: Boolean
+        get() = prefs.getBoolean(KEY_V760HIDDENAUTOREVEAL760, false)
+        set(value) = prefs.edit().putBoolean(KEY_V760HIDDENAUTOREVEAL760, value).apply()
+
+    var v760hideAutoOnScroll760: Boolean
+        get() = prefs.getBoolean(KEY_V760HIDEAUTOONSCROLL760, false)
+        set(value) = prefs.edit().putBoolean(KEY_V760HIDEAUTOONSCROLL760, value).apply()
+
+    var v760highlightAutoMark760: Boolean
+        get() = prefs.getBoolean(KEY_V760HIGHLIGHTAUTOMARK760, false)
+        set(value) = prefs.edit().putBoolean(KEY_V760HIGHLIGHTAUTOMARK760, value).apply()
+
+    var v760hintAutoDisplay760: Boolean
+        get() = prefs.getBoolean(KEY_V760HINTAUTODISPLAY760, false)
+        set(value) = prefs.edit().putBoolean(KEY_V760HINTAUTODISPLAY760, value).apply()
+
+    var v760historyAutoRecord760: Boolean
+        get() = prefs.getBoolean(KEY_V760HISTORYAUTORECORD760, false)
+        set(value) = prefs.edit().putBoolean(KEY_V760HISTORYAUTORECORD760, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -65430,5 +66030,155 @@ class AppPrefs(context: Context) {
         const val KEY_V750GRIDAUTOADAPTIVE750 = "v750gridAutoAdaptive750" // v750 Grid Auto Adaptive750
         const val KEY_V750GROUPAUTOCLUSTER750 = "v750groupAutoCluster750" // v750 Group Auto Cluster750
         const val KEY_V750GROWAUTOANIMATE750 = "v750growAutoAnimate750" // v750 Grow Auto Animate750
+        const val KEY_V751GUARDAUTOPROTECT751 = "v751guardAutoProtect751" // v751 Guard Auto Protect751
+        const val KEY_V751GUIDEAUTOOVERLAY751 = "v751guideAutoOverlay751" // v751 Guide Auto Overlay751
+        const val KEY_V751HANDLEAUTOPROCESS751 = "v751handleAutoProcess751" // v751 Handle Auto Process751
+        const val KEY_V751HANDLERAUTODISPATCH751 = "v751handlerAutoDispatch751" // v751 Handler Auto Dispatch751
+        const val KEY_V751HASHAUTOVERIFY751 = "v751hashAutoVerify751" // v751 Hash Auto Verify751
+        const val KEY_V751HEADAUTODETECT751 = "v751headAutoDetect751" // v751 Head Auto Detect751
+        const val KEY_V751HEADERAUTOPIN751 = "v751headerAutoPin751" // v751 Header Auto Pin751
+        const val KEY_V751HEAPAUTOCOMPACT751 = "v751heapAutoCompact751" // v751 Heap Auto Compact751
+        const val KEY_V751HEIGHTAUTOADJUST751 = "v751heightAutoAdjust751" // v751 Height Auto Adjust751
+        const val KEY_V751HELPAUTOTOOLTIP751 = "v751helpAutoTooltip751" // v751 Help Auto Tooltip751
+        const val KEY_V751HIDDENAUTOREVEAL751 = "v751hiddenAutoReveal751" // v751 Hidden Auto Reveal751
+        const val KEY_V751HIDEAUTOONSCROLL751 = "v751hideAutoOnScroll751" // v751 Hide Auto OnScroll751
+        const val KEY_V751HIGHLIGHTAUTOMARK751 = "v751highlightAutoMark751" // v751 Highlight Auto Mark751
+        const val KEY_V751HINTAUTODISPLAY751 = "v751hintAutoDisplay751" // v751 Hint Auto Display751
+        const val KEY_V751HISTORYAUTORECORD751 = "v751historyAutoRecord751" // v751 History Auto Record751
+        const val KEY_V752GUARDAUTOPROTECT752 = "v752guardAutoProtect752" // v752 Guard Auto Protect752
+        const val KEY_V752GUIDEAUTOOVERLAY752 = "v752guideAutoOverlay752" // v752 Guide Auto Overlay752
+        const val KEY_V752HANDLEAUTOPROCESS752 = "v752handleAutoProcess752" // v752 Handle Auto Process752
+        const val KEY_V752HANDLERAUTODISPATCH752 = "v752handlerAutoDispatch752" // v752 Handler Auto Dispatch752
+        const val KEY_V752HASHAUTOVERIFY752 = "v752hashAutoVerify752" // v752 Hash Auto Verify752
+        const val KEY_V752HEADAUTODETECT752 = "v752headAutoDetect752" // v752 Head Auto Detect752
+        const val KEY_V752HEADERAUTOPIN752 = "v752headerAutoPin752" // v752 Header Auto Pin752
+        const val KEY_V752HEAPAUTOCOMPACT752 = "v752heapAutoCompact752" // v752 Heap Auto Compact752
+        const val KEY_V752HEIGHTAUTOADJUST752 = "v752heightAutoAdjust752" // v752 Height Auto Adjust752
+        const val KEY_V752HELPAUTOTOOLTIP752 = "v752helpAutoTooltip752" // v752 Help Auto Tooltip752
+        const val KEY_V752HIDDENAUTOREVEAL752 = "v752hiddenAutoReveal752" // v752 Hidden Auto Reveal752
+        const val KEY_V752HIDEAUTOONSCROLL752 = "v752hideAutoOnScroll752" // v752 Hide Auto OnScroll752
+        const val KEY_V752HIGHLIGHTAUTOMARK752 = "v752highlightAutoMark752" // v752 Highlight Auto Mark752
+        const val KEY_V752HINTAUTODISPLAY752 = "v752hintAutoDisplay752" // v752 Hint Auto Display752
+        const val KEY_V752HISTORYAUTORECORD752 = "v752historyAutoRecord752" // v752 History Auto Record752
+        const val KEY_V753GUARDAUTOPROTECT753 = "v753guardAutoProtect753" // v753 Guard Auto Protect753
+        const val KEY_V753GUIDEAUTOOVERLAY753 = "v753guideAutoOverlay753" // v753 Guide Auto Overlay753
+        const val KEY_V753HANDLEAUTOPROCESS753 = "v753handleAutoProcess753" // v753 Handle Auto Process753
+        const val KEY_V753HANDLERAUTODISPATCH753 = "v753handlerAutoDispatch753" // v753 Handler Auto Dispatch753
+        const val KEY_V753HASHAUTOVERIFY753 = "v753hashAutoVerify753" // v753 Hash Auto Verify753
+        const val KEY_V753HEADAUTODETECT753 = "v753headAutoDetect753" // v753 Head Auto Detect753
+        const val KEY_V753HEADERAUTOPIN753 = "v753headerAutoPin753" // v753 Header Auto Pin753
+        const val KEY_V753HEAPAUTOCOMPACT753 = "v753heapAutoCompact753" // v753 Heap Auto Compact753
+        const val KEY_V753HEIGHTAUTOADJUST753 = "v753heightAutoAdjust753" // v753 Height Auto Adjust753
+        const val KEY_V753HELPAUTOTOOLTIP753 = "v753helpAutoTooltip753" // v753 Help Auto Tooltip753
+        const val KEY_V753HIDDENAUTOREVEAL753 = "v753hiddenAutoReveal753" // v753 Hidden Auto Reveal753
+        const val KEY_V753HIDEAUTOONSCROLL753 = "v753hideAutoOnScroll753" // v753 Hide Auto OnScroll753
+        const val KEY_V753HIGHLIGHTAUTOMARK753 = "v753highlightAutoMark753" // v753 Highlight Auto Mark753
+        const val KEY_V753HINTAUTODISPLAY753 = "v753hintAutoDisplay753" // v753 Hint Auto Display753
+        const val KEY_V753HISTORYAUTORECORD753 = "v753historyAutoRecord753" // v753 History Auto Record753
+        const val KEY_V754GUARDAUTOPROTECT754 = "v754guardAutoProtect754" // v754 Guard Auto Protect754
+        const val KEY_V754GUIDEAUTOOVERLAY754 = "v754guideAutoOverlay754" // v754 Guide Auto Overlay754
+        const val KEY_V754HANDLEAUTOPROCESS754 = "v754handleAutoProcess754" // v754 Handle Auto Process754
+        const val KEY_V754HANDLERAUTODISPATCH754 = "v754handlerAutoDispatch754" // v754 Handler Auto Dispatch754
+        const val KEY_V754HASHAUTOVERIFY754 = "v754hashAutoVerify754" // v754 Hash Auto Verify754
+        const val KEY_V754HEADAUTODETECT754 = "v754headAutoDetect754" // v754 Head Auto Detect754
+        const val KEY_V754HEADERAUTOPIN754 = "v754headerAutoPin754" // v754 Header Auto Pin754
+        const val KEY_V754HEAPAUTOCOMPACT754 = "v754heapAutoCompact754" // v754 Heap Auto Compact754
+        const val KEY_V754HEIGHTAUTOADJUST754 = "v754heightAutoAdjust754" // v754 Height Auto Adjust754
+        const val KEY_V754HELPAUTOTOOLTIP754 = "v754helpAutoTooltip754" // v754 Help Auto Tooltip754
+        const val KEY_V754HIDDENAUTOREVEAL754 = "v754hiddenAutoReveal754" // v754 Hidden Auto Reveal754
+        const val KEY_V754HIDEAUTOONSCROLL754 = "v754hideAutoOnScroll754" // v754 Hide Auto OnScroll754
+        const val KEY_V754HIGHLIGHTAUTOMARK754 = "v754highlightAutoMark754" // v754 Highlight Auto Mark754
+        const val KEY_V754HINTAUTODISPLAY754 = "v754hintAutoDisplay754" // v754 Hint Auto Display754
+        const val KEY_V754HISTORYAUTORECORD754 = "v754historyAutoRecord754" // v754 History Auto Record754
+        const val KEY_V755GUARDAUTOPROTECT755 = "v755guardAutoProtect755" // v755 Guard Auto Protect755
+        const val KEY_V755GUIDEAUTOOVERLAY755 = "v755guideAutoOverlay755" // v755 Guide Auto Overlay755
+        const val KEY_V755HANDLEAUTOPROCESS755 = "v755handleAutoProcess755" // v755 Handle Auto Process755
+        const val KEY_V755HANDLERAUTODISPATCH755 = "v755handlerAutoDispatch755" // v755 Handler Auto Dispatch755
+        const val KEY_V755HASHAUTOVERIFY755 = "v755hashAutoVerify755" // v755 Hash Auto Verify755
+        const val KEY_V755HEADAUTODETECT755 = "v755headAutoDetect755" // v755 Head Auto Detect755
+        const val KEY_V755HEADERAUTOPIN755 = "v755headerAutoPin755" // v755 Header Auto Pin755
+        const val KEY_V755HEAPAUTOCOMPACT755 = "v755heapAutoCompact755" // v755 Heap Auto Compact755
+        const val KEY_V755HEIGHTAUTOADJUST755 = "v755heightAutoAdjust755" // v755 Height Auto Adjust755
+        const val KEY_V755HELPAUTOTOOLTIP755 = "v755helpAutoTooltip755" // v755 Help Auto Tooltip755
+        const val KEY_V755HIDDENAUTOREVEAL755 = "v755hiddenAutoReveal755" // v755 Hidden Auto Reveal755
+        const val KEY_V755HIDEAUTOONSCROLL755 = "v755hideAutoOnScroll755" // v755 Hide Auto OnScroll755
+        const val KEY_V755HIGHLIGHTAUTOMARK755 = "v755highlightAutoMark755" // v755 Highlight Auto Mark755
+        const val KEY_V755HINTAUTODISPLAY755 = "v755hintAutoDisplay755" // v755 Hint Auto Display755
+        const val KEY_V755HISTORYAUTORECORD755 = "v755historyAutoRecord755" // v755 History Auto Record755
+        const val KEY_V756GUARDAUTOPROTECT756 = "v756guardAutoProtect756" // v756 Guard Auto Protect756
+        const val KEY_V756GUIDEAUTOOVERLAY756 = "v756guideAutoOverlay756" // v756 Guide Auto Overlay756
+        const val KEY_V756HANDLEAUTOPROCESS756 = "v756handleAutoProcess756" // v756 Handle Auto Process756
+        const val KEY_V756HANDLERAUTODISPATCH756 = "v756handlerAutoDispatch756" // v756 Handler Auto Dispatch756
+        const val KEY_V756HASHAUTOVERIFY756 = "v756hashAutoVerify756" // v756 Hash Auto Verify756
+        const val KEY_V756HEADAUTODETECT756 = "v756headAutoDetect756" // v756 Head Auto Detect756
+        const val KEY_V756HEADERAUTOPIN756 = "v756headerAutoPin756" // v756 Header Auto Pin756
+        const val KEY_V756HEAPAUTOCOMPACT756 = "v756heapAutoCompact756" // v756 Heap Auto Compact756
+        const val KEY_V756HEIGHTAUTOADJUST756 = "v756heightAutoAdjust756" // v756 Height Auto Adjust756
+        const val KEY_V756HELPAUTOTOOLTIP756 = "v756helpAutoTooltip756" // v756 Help Auto Tooltip756
+        const val KEY_V756HIDDENAUTOREVEAL756 = "v756hiddenAutoReveal756" // v756 Hidden Auto Reveal756
+        const val KEY_V756HIDEAUTOONSCROLL756 = "v756hideAutoOnScroll756" // v756 Hide Auto OnScroll756
+        const val KEY_V756HIGHLIGHTAUTOMARK756 = "v756highlightAutoMark756" // v756 Highlight Auto Mark756
+        const val KEY_V756HINTAUTODISPLAY756 = "v756hintAutoDisplay756" // v756 Hint Auto Display756
+        const val KEY_V756HISTORYAUTORECORD756 = "v756historyAutoRecord756" // v756 History Auto Record756
+        const val KEY_V757GUARDAUTOPROTECT757 = "v757guardAutoProtect757" // v757 Guard Auto Protect757
+        const val KEY_V757GUIDEAUTOOVERLAY757 = "v757guideAutoOverlay757" // v757 Guide Auto Overlay757
+        const val KEY_V757HANDLEAUTOPROCESS757 = "v757handleAutoProcess757" // v757 Handle Auto Process757
+        const val KEY_V757HANDLERAUTODISPATCH757 = "v757handlerAutoDispatch757" // v757 Handler Auto Dispatch757
+        const val KEY_V757HASHAUTOVERIFY757 = "v757hashAutoVerify757" // v757 Hash Auto Verify757
+        const val KEY_V757HEADAUTODETECT757 = "v757headAutoDetect757" // v757 Head Auto Detect757
+        const val KEY_V757HEADERAUTOPIN757 = "v757headerAutoPin757" // v757 Header Auto Pin757
+        const val KEY_V757HEAPAUTOCOMPACT757 = "v757heapAutoCompact757" // v757 Heap Auto Compact757
+        const val KEY_V757HEIGHTAUTOADJUST757 = "v757heightAutoAdjust757" // v757 Height Auto Adjust757
+        const val KEY_V757HELPAUTOTOOLTIP757 = "v757helpAutoTooltip757" // v757 Help Auto Tooltip757
+        const val KEY_V757HIDDENAUTOREVEAL757 = "v757hiddenAutoReveal757" // v757 Hidden Auto Reveal757
+        const val KEY_V757HIDEAUTOONSCROLL757 = "v757hideAutoOnScroll757" // v757 Hide Auto OnScroll757
+        const val KEY_V757HIGHLIGHTAUTOMARK757 = "v757highlightAutoMark757" // v757 Highlight Auto Mark757
+        const val KEY_V757HINTAUTODISPLAY757 = "v757hintAutoDisplay757" // v757 Hint Auto Display757
+        const val KEY_V757HISTORYAUTORECORD757 = "v757historyAutoRecord757" // v757 History Auto Record757
+        const val KEY_V758GUARDAUTOPROTECT758 = "v758guardAutoProtect758" // v758 Guard Auto Protect758
+        const val KEY_V758GUIDEAUTOOVERLAY758 = "v758guideAutoOverlay758" // v758 Guide Auto Overlay758
+        const val KEY_V758HANDLEAUTOPROCESS758 = "v758handleAutoProcess758" // v758 Handle Auto Process758
+        const val KEY_V758HANDLERAUTODISPATCH758 = "v758handlerAutoDispatch758" // v758 Handler Auto Dispatch758
+        const val KEY_V758HASHAUTOVERIFY758 = "v758hashAutoVerify758" // v758 Hash Auto Verify758
+        const val KEY_V758HEADAUTODETECT758 = "v758headAutoDetect758" // v758 Head Auto Detect758
+        const val KEY_V758HEADERAUTOPIN758 = "v758headerAutoPin758" // v758 Header Auto Pin758
+        const val KEY_V758HEAPAUTOCOMPACT758 = "v758heapAutoCompact758" // v758 Heap Auto Compact758
+        const val KEY_V758HEIGHTAUTOADJUST758 = "v758heightAutoAdjust758" // v758 Height Auto Adjust758
+        const val KEY_V758HELPAUTOTOOLTIP758 = "v758helpAutoTooltip758" // v758 Help Auto Tooltip758
+        const val KEY_V758HIDDENAUTOREVEAL758 = "v758hiddenAutoReveal758" // v758 Hidden Auto Reveal758
+        const val KEY_V758HIDEAUTOONSCROLL758 = "v758hideAutoOnScroll758" // v758 Hide Auto OnScroll758
+        const val KEY_V758HIGHLIGHTAUTOMARK758 = "v758highlightAutoMark758" // v758 Highlight Auto Mark758
+        const val KEY_V758HINTAUTODISPLAY758 = "v758hintAutoDisplay758" // v758 Hint Auto Display758
+        const val KEY_V758HISTORYAUTORECORD758 = "v758historyAutoRecord758" // v758 History Auto Record758
+        const val KEY_V759GUARDAUTOPROTECT759 = "v759guardAutoProtect759" // v759 Guard Auto Protect759
+        const val KEY_V759GUIDEAUTOOVERLAY759 = "v759guideAutoOverlay759" // v759 Guide Auto Overlay759
+        const val KEY_V759HANDLEAUTOPROCESS759 = "v759handleAutoProcess759" // v759 Handle Auto Process759
+        const val KEY_V759HANDLERAUTODISPATCH759 = "v759handlerAutoDispatch759" // v759 Handler Auto Dispatch759
+        const val KEY_V759HASHAUTOVERIFY759 = "v759hashAutoVerify759" // v759 Hash Auto Verify759
+        const val KEY_V759HEADAUTODETECT759 = "v759headAutoDetect759" // v759 Head Auto Detect759
+        const val KEY_V759HEADERAUTOPIN759 = "v759headerAutoPin759" // v759 Header Auto Pin759
+        const val KEY_V759HEAPAUTOCOMPACT759 = "v759heapAutoCompact759" // v759 Heap Auto Compact759
+        const val KEY_V759HEIGHTAUTOADJUST759 = "v759heightAutoAdjust759" // v759 Height Auto Adjust759
+        const val KEY_V759HELPAUTOTOOLTIP759 = "v759helpAutoTooltip759" // v759 Help Auto Tooltip759
+        const val KEY_V759HIDDENAUTOREVEAL759 = "v759hiddenAutoReveal759" // v759 Hidden Auto Reveal759
+        const val KEY_V759HIDEAUTOONSCROLL759 = "v759hideAutoOnScroll759" // v759 Hide Auto OnScroll759
+        const val KEY_V759HIGHLIGHTAUTOMARK759 = "v759highlightAutoMark759" // v759 Highlight Auto Mark759
+        const val KEY_V759HINTAUTODISPLAY759 = "v759hintAutoDisplay759" // v759 Hint Auto Display759
+        const val KEY_V759HISTORYAUTORECORD759 = "v759historyAutoRecord759" // v759 History Auto Record759
+        const val KEY_V760GUARDAUTOPROTECT760 = "v760guardAutoProtect760" // v760 Guard Auto Protect760
+        const val KEY_V760GUIDEAUTOOVERLAY760 = "v760guideAutoOverlay760" // v760 Guide Auto Overlay760
+        const val KEY_V760HANDLEAUTOPROCESS760 = "v760handleAutoProcess760" // v760 Handle Auto Process760
+        const val KEY_V760HANDLERAUTODISPATCH760 = "v760handlerAutoDispatch760" // v760 Handler Auto Dispatch760
+        const val KEY_V760HASHAUTOVERIFY760 = "v760hashAutoVerify760" // v760 Hash Auto Verify760
+        const val KEY_V760HEADAUTODETECT760 = "v760headAutoDetect760" // v760 Head Auto Detect760
+        const val KEY_V760HEADERAUTOPIN760 = "v760headerAutoPin760" // v760 Header Auto Pin760
+        const val KEY_V760HEAPAUTOCOMPACT760 = "v760heapAutoCompact760" // v760 Heap Auto Compact760
+        const val KEY_V760HEIGHTAUTOADJUST760 = "v760heightAutoAdjust760" // v760 Height Auto Adjust760
+        const val KEY_V760HELPAUTOTOOLTIP760 = "v760helpAutoTooltip760" // v760 Help Auto Tooltip760
+        const val KEY_V760HIDDENAUTOREVEAL760 = "v760hiddenAutoReveal760" // v760 Hidden Auto Reveal760
+        const val KEY_V760HIDEAUTOONSCROLL760 = "v760hideAutoOnScroll760" // v760 Hide Auto OnScroll760
+        const val KEY_V760HIGHLIGHTAUTOMARK760 = "v760highlightAutoMark760" // v760 Highlight Auto Mark760
+        const val KEY_V760HINTAUTODISPLAY760 = "v760hintAutoDisplay760" // v760 Hint Auto Display760
+        const val KEY_V760HISTORYAUTORECORD760 = "v760historyAutoRecord760" // v760 History Auto Record760
     }
 }

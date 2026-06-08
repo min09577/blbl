@@ -1,5 +1,5 @@
-"""Batch generate v721-v750 features (3 batches of 150 each)."""
-import re, os
+"""Batch generate v751-v780 features."""
+import re, os, subprocess
 os.chdir(r"C:\Users\Min\.qwenpaw\workspaces\7fuwpJ\blbl")
 
 existing_funcs = set()
@@ -14,80 +14,68 @@ with open('app/src/main/java/blbl/cat3399/core/prefs/AppPrefs.kt', 'r', encoding
 existing_props = set(re.findall(r'var (v\d+\w+):', ap))
 existing_keys = set(re.findall(r'const val (KEY_V\d+\w+)', ap))
 
-BATCHES = {
-    721: [
-        ("exportAutoXml"+str(v),"bool",False,None,"Export Auto Xml"+str(v)) for v in range(721,726)
-    ] + [
-        ("extendAutoList"+str(v),"bool",False,None,"Extend Auto List"+str(v)) for v in range(721,726)
-    ] + [
-        ("externalAutoLink"+str(v),"bool",False,None,"External Auto Link"+str(v)) for v in range(721,726)
-    ] + [
-        ("extractAutoData"+str(v),"bool",False,None,"Extract Auto Data"+str(v)) for v in range(721,726)
-    ] + [
-        ("factorAutoScale"+str(v),"int",0,[0,1,2,3],"Factor Auto Scale"+str(v)) for v in range(721,726)
-    ],
-}
-
-# v726-v730
-for ver in range(726, 731):
-    BATCHES[721] += [
-        ("fadeAutoIn"+str(ver),"bool",False,None,"Fade Auto In"+str(ver)),
-        ("fallbackAutoRoute"+str(ver),"bool",False,None,"Fallback Auto Route"+str(ver)),
-        ("familyAutoGroup"+str(ver),"bool",False,None,"Family Auto Group"+str(ver)),
-        ("featureAutoToggle"+str(ver),"bool",False,None,"Feature Auto Toggle"+str(ver)),
-        ("fieldAutoSelect"+str(ver),"bool",False,None,"Field Auto Select"+str(ver)),
-        ("fileAutoCompress"+str(ver),"bool",False,None,"File Auto Compress"+str(ver)),
-        ("filterAutoApply"+str(ver),"bool",False,None,"Filter Auto Apply"+str(ver)),
-        ("finalAutoReview"+str(ver),"bool",False,None,"Final Auto Review"+str(ver)),
-        ("findAutoMatch"+str(ver),"bool",False,None,"Find Auto Match"+str(ver)),
-        ("fireAutoEvent"+str(ver),"bool",False,None,"Fire Auto Event"+str(ver)),
-        ("firmwareAutoUpdate"+str(ver),"int",0,[0,1,2,3],"Firmware Auto Update"+str(ver)),
-        ("flagAutoSet"+str(ver),"bool",False,None,"Flag Auto Set"+str(ver)),
-        ("flashAutoMode"+str(ver),"bool",False,None,"Flash Auto Mode"+str(ver)),
-        ("flatAutoLayout"+str(ver),"bool",False,None,"Flat Auto Layout"+str(ver)),
-        ("flipAutoHorizontal"+str(ver),"bool",False,None,"Flip Auto Horizontal"+str(ver)),
+BATCHES = {}
+# v751-v760
+BATCHES[751] = []
+for ver in range(751, 761):
+    BATCHES[751] += [
+        ("guardAutoProtect"+str(ver),"bool",False,None,"Guard Auto Protect"+str(ver)),
+        ("guideAutoOverlay"+str(ver),"bool",False,None,"Guide Auto Overlay"+str(ver)),
+        ("handleAutoProcess"+str(ver),"bool",False,None,"Handle Auto Process"+str(ver)),
+        ("handlerAutoDispatch"+str(ver),"bool",False,None,"Handler Auto Dispatch"+str(ver)),
+        ("hashAutoVerify"+str(ver),"bool",False,None,"Hash Auto Verify"+str(ver)),
+        ("headAutoDetect"+str(ver),"bool",False,None,"Head Auto Detect"+str(ver)),
+        ("headerAutoPin"+str(ver),"bool",False,None,"Header Auto Pin"+str(ver)),
+        ("heapAutoCompact"+str(ver),"bool",False,None,"Heap Auto Compact"+str(ver)),
+        ("heightAutoAdjust"+str(ver),"int",0,[0,1,2,3],"Height Auto Adjust"+str(ver)),
+        ("helpAutoTooltip"+str(ver),"bool",False,None,"Help Auto Tooltip"+str(ver)),
+        ("hiddenAutoReveal"+str(ver),"bool",False,None,"Hidden Auto Reveal"+str(ver)),
+        ("hideAutoOnScroll"+str(ver),"bool",False,None,"Hide Auto OnScroll"+str(ver)),
+        ("highlightAutoMark"+str(ver),"bool",False,None,"Highlight Auto Mark"+str(ver)),
+        ("hintAutoDisplay"+str(ver),"bool",False,None,"Hint Auto Display"+str(ver)),
+        ("historyAutoRecord"+str(ver),"bool",False,None,"History Auto Record"+str(ver)),
     ]
 
-# v731-v740
-BATCHES[731] = []
-for ver in range(731, 741):
-    BATCHES[731] += [
-        ("floatAutoAnchor"+str(ver),"bool",False,None,"Float Auto Anchor"+str(ver)),
-        ("flushAutoBuffer"+str(ver),"bool",False,None,"Flush Auto Buffer"+str(ver)),
-        ("focusAutoFollow"+str(ver),"bool",False,None,"Focus Auto Follow"+str(ver)),
-        ("foldAutoCollapse"+str(ver),"bool",False,None,"Fold Auto Collapse"+str(ver)),
-        ("fontAutoHinting"+str(ver),"bool",False,None,"Font Auto Hinting"+str(ver)),
-        ("footerAutoHide"+str(ver),"bool",False,None,"Footer Auto Hide"+str(ver)),
-        ("forceAutoReload"+str(ver),"bool",False,None,"Force Auto Reload"+str(ver)),
-        ("formatAutoConvert"+str(ver),"int",0,[0,1,2,3],"Format Auto Convert"+str(ver)),
-        ("fragmentAutoLazy"+str(ver),"bool",False,None,"Fragment Auto Lazy"+str(ver)),
-        ("frameAutoDrop"+str(ver),"bool",False,None,"Frame Auto Drop"+str(ver)),
-        ("freeAutoMemory"+str(ver),"bool",False,None,"Free Auto Memory"+str(ver)),
-        ("frequencyAutoHz"+str(ver),"int",0,[0,1,2,3],"Frequency Auto Hz"+str(ver)),
-        ("frontAutoCamera"+str(ver),"bool",False,None,"Front Auto Camera"+str(ver)),
-        ("fullAutoScreen"+str(ver),"bool",False,None,"Full Auto Screen"+str(ver)),
-        ("functionAutoInline"+str(ver),"bool",False,None,"Function Auto Inline"+str(ver)),
+# v761-v770
+BATCHES[761] = []
+for ver in range(761, 771):
+    BATCHES[761] += [
+        ("hitAutoCount"+str(ver),"bool",False,None,"Hit Auto Count"+str(ver)),
+        ("holdAutoLock"+str(ver),"bool",False,None,"Hold Auto Lock"+str(ver)),
+        ("hookAutoInject"+str(ver),"bool",False,None,"Hook Auto Inject"+str(ver)),
+        ("hostAutoResolve"+str(ver),"bool",False,None,"Host Auto Resolve"+str(ver)),
+        ("hotAutoReload"+str(ver),"bool",False,None,"Hot Auto Reload"+str(ver)),
+        ("hoverAutoPreview"+str(ver),"bool",False,None,"Hover Auto Preview"+str(ver)),
+        ("hubAutoConnect"+str(ver),"bool",False,None,"Hub Auto Connect"+str(ver)),
+        ("iconAutoTheme"+str(ver),"bool",False,None,"Icon Auto Theme"+str(ver)),
+        ("identityAutoVerify"+str(ver),"bool",False,None,"Identity Auto Verify"+str(ver)),
+        ("idleAutoDim"+str(ver),"bool",False,None,"Idle Auto Dim"+str(ver)),
+        ("ignoreAutoList"+str(ver),"bool",False,None,"Ignore Auto List"+str(ver)),
+        ("imageAutoPreload"+str(ver),"bool",False,None,"Image Auto Preload"+str(ver)),
+        ("importAutoMerge"+str(ver),"bool",False,None,"Import Auto Merge"+str(ver)),
+        ("indexAutoBuild"+str(ver),"bool",False,None,"Index Auto Build"+str(ver)),
+        ("infoAutoPopup"+str(ver),"bool",False,None,"Info Auto Popup"+str(ver)),
     ]
 
-# v741-v750
-BATCHES[741] = []
-for ver in range(741, 751):
-    BATCHES[741] += [
-        ("gainAutoLevel"+str(ver),"int",0,[0,1,2,3],"Gain Auto Level"+str(ver)),
-        ("gammaAutoCorrect"+str(ver),"bool",False,None,"Gamma Auto Correct"+str(ver)),
-        ("gapAutoFill"+str(ver),"bool",False,None,"Gap Auto Fill"+str(ver)),
-        ("gateAutoControl"+str(ver),"bool",False,None,"Gate Auto Control"+str(ver)),
-        ("generateAutoReport"+str(ver),"bool",False,None,"Generate Auto Report"+str(ver)),
-        ("gestureAutoSwipe"+str(ver),"bool",False,None,"Gesture Auto Swipe"+str(ver)),
-        ("globalAutoSync"+str(ver),"bool",False,None,"Global Auto Sync"+str(ver)),
-        ("glyphAutoRender"+str(ver),"bool",False,None,"Glyph Auto Render"+str(ver)),
-        ("gradientAutoColor"+str(ver),"bool",False,None,"Gradient Auto Color"+str(ver)),
-        ("grantAutoAccess"+str(ver),"bool",False,None,"Grant Auto Access"+str(ver)),
-        ("graphAutoLayout"+str(ver),"bool",False,None,"Graph Auto Layout"+str(ver)),
-        ("gravityAutoSensor"+str(ver),"bool",False,None,"Gravity Auto Sensor"+str(ver)),
-        ("gridAutoAdaptive"+str(ver),"bool",False,None,"Grid Auto Adaptive"+str(ver)),
-        ("groupAutoCluster"+str(ver),"int",0,[0,1,2,3],"Group Auto Cluster"+str(ver)),
-        ("growAutoAnimate"+str(ver),"bool",False,None,"Grow Auto Animate"+str(ver)),
+# v771-v780
+BATCHES[771] = []
+for ver in range(771, 781):
+    BATCHES[771] += [
+        ("initAutoLazy"+str(ver),"bool",False,None,"Init Auto Lazy"+str(ver)),
+        ("inputAutoValidate"+str(ver),"bool",False,None,"Input Auto Validate"+str(ver)),
+        ("insertAutoPosition"+str(ver),"bool",False,None,"Insert Auto Position"+str(ver)),
+        ("installAutoCheck"+str(ver),"bool",False,None,"Install Auto Check"+str(ver)),
+        ("instanceAutoPool"+str(ver),"bool",False,None,"Instance Auto Pool"+str(ver)),
+        ("intentAutoRoute"+str(ver),"bool",False,None,"Intent Auto Route"+str(ver)),
+        ("interactAutoHaptic"+str(ver),"bool",False,None,"Interact Auto Haptic"+str(ver)),
+        ("interfaceAutoSwitch"+str(ver),"int",0,[0,1,2,3],"Interface Auto Switch"+str(ver)),
+        ("internalAutoDebug"+str(ver),"bool",False,None,"Internal Auto Debug"+str(ver)),
+        ("intervalAutoThrottle"+str(ver),"bool",False,None,"Interval Auto Throttle"+str(ver)),
+        ("invokeAutoReflect"+str(ver),"bool",False,None,"Invoke Auto Reflect"+str(ver)),
+        ("itemAutoRecycle"+str(ver),"bool",False,None,"Item Auto Recycle"+str(ver)),
+        ("iterateAutoPaginate"+str(ver),"bool",False,None,"Iterate Auto Paginate"+str(ver)),
+        ("joinAutoMerge"+str(ver),"bool",False,None,"Join Auto Merge"+str(ver)),
+        ("jsonAutoPretty"+str(ver),"bool",False,None,"Json Auto Pretty"+str(ver)),
     ]
 
 HEADER = """package blbl.cat3399.feature.player
@@ -109,28 +97,24 @@ import blbl.cat3399.feature.player.engine.PlayerEngineKind
 
 AP_PATH = 'app/src/main/java/blbl/cat3399/core/prefs/AppPrefs.kt'
 
-for start_ver in [721, 731, 741]:
+for start_ver in [751, 761, 771]:
     features = BATCHES[start_ver]
     end_ver = start_ver + 9
     
     print(f"\n=== Processing v{start_ver}-v{end_ver} ===")
     
-    # Check duplicates
     duplicates = []
     for name_lower, ftype, default, opts, desc in features:
         ver_match = re.search(r'(\d{3,})$', name_lower)
         ver = int(ver_match.group(1)) if ver_match else start_ver
         prop_name = f"v{ver}{name_lower}"
-        if prop_name in existing_props:
-            duplicates.append(f"PROP: {prop_name}")
+        if prop_name in existing_props: duplicates.append(f"PROP: {prop_name}")
         key_name = f"KEY_V{ver}{name_lower.upper()}"
-        if key_name in existing_keys:
-            duplicates.append(f"KEY: {key_name}")
+        if key_name in existing_keys: duplicates.append(f"KEY: {key_name}")
         u = name_lower[0].upper() + name_lower[1:]
         for suffix in ["Toggle", "Dialog"]:
             fn = f"showV{ver}{u}{suffix}"
-            if fn in existing_funcs:
-                duplicates.append(f"FUNC: {fn}")
+            if fn in existing_funcs: duplicates.append(f"FUNC: {fn}")
     
     if duplicates:
         print(f"FOUND {len(duplicates)} DUPLICATES:")
@@ -138,14 +122,12 @@ for start_ver in [721, 731, 741]:
         exit(1)
     print(f"ALL {len(features)} FEATURES UNIQUE!")
     
-    # Add to AppPrefs
     with open(AP_PATH, 'r', encoding='utf-8') as f:
         lines = f.readlines()
     
     companion_idx = None
     for i, line in enumerate(lines):
-        if 'companion object' in line:
-            companion_idx = i; break
+        if 'companion object' in line: companion_idx = i; break
     assert companion_idx is not None
     
     prop_lines, key_lines = [], []
@@ -172,15 +154,12 @@ for start_ver in [721, 731, 741]:
         if closing_idx is not None: break
     for idx, line in enumerate(key_lines): lines.insert(closing_idx + idx, line)
     with open(AP_PATH, 'w', encoding='utf-8') as f: f.writelines(lines)
-    print(f"AppPrefs.kt: +{len(prop_lines)} props, +{len(key_lines)} keys")
     
-    # Update existing sets
     with open(AP_PATH, 'r', encoding='utf-8') as f:
         ap = f.read()
     existing_props = set(re.findall(r'var (v\d+\w+):', ap))
     existing_keys = set(re.findall(r'const val (KEY_V\d+\w+)', ap))
     
-    # Generate functions
     func_lines = []
     for name_lower, ftype, default, opts, desc in features:
         ver_match = re.search(r'(\d{3,})$', name_lower)
@@ -196,7 +175,6 @@ for start_ver in [721, 731, 741]:
             func_lines.append(f'// v{ver}: {desc}\ninternal fun PlayerActivity.{fn}() {{\n    val options = listOf({", ".join(str(o) for o in opts)})\n    val currentIndex = options.indexOf(BiliClient.prefs.{prop_name}).takeIf {{ it >= 0 }} ?: 0\n    showSettingsChoiceDialog(\n        title = "{desc}",\n        options = options,\n        checkedIndex = currentIndex,\n        label = {{ "$it" }},\n    ) {{ value ->\n        BiliClient.prefs.{prop_name} = value\n        AppToast.show(this, "{desc}: $value")\n    }}\n}}\n\n')
             existing_funcs.add(fn)
     
-    # Append to Part file
     last_part_num = 0
     for f in os.listdir(ps_dir):
         if f.startswith('PlayerSettingsPart') and f.endswith('.kt'):
@@ -218,8 +196,6 @@ for start_ver in [721, 731, 741]:
             f.write(HEADER + ''.join(func_lines))
         print(f"Created PlayerSettingsPart{last_part_num+1}.kt")
     
-    # Commit and tag
-    import subprocess
     subprocess.run(['git', 'add', '-A'], check=True)
     subprocess.run(['git', 'commit', '-m', f'Release v{end_ver}.15.0 - Add v{start_ver}-v{end_ver} unique features ({len(features)} features)'], check=True)
     subprocess.run(['git', 'push', 'origin', 'main'], check=True)
@@ -227,4 +203,4 @@ for start_ver in [721, 731, 741]:
     subprocess.run(['git', 'push', 'origin', f'v{end_ver}.15.0'], check=True)
     print(f"Committed and tagged v{end_ver}.15.0")
 
-print("\nDone! All 3 batches completed.")
+print("\nDone! v751-v780 completed.")
