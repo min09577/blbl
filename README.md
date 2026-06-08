@@ -118,7 +118,7 @@ This project is based on open-source software. All rights belong to the original
 ## 📋 更新日志 | Changelog | 変更履歴 | 변경 로그
 
 ### 最新版本 | Latest Version | 最新バージョン | 최신 버전
-- **v110.15** - 2026-06-08
+- **v120.15** - 2026-06-08
 
 ---
 
@@ -14118,6 +14118,947 @@ This project is based on open-source software. All rights belong to the original
 - ✅ 字幕フォント大文字小文字上書き110
 - ✅ 자막 글꼴 대소문자 오버라이드110
 
+
+### v111.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v111.1-v111.15 功能列表
+- ✅ Audio Delay Sync Custom, Danmaku Font Blur Toggle111, Subtitle BG Shadow Size, Gesture Tap Seek Step, Cast Video Saturation Custom, Playlist Auto Shuffle On Repeat, Cache Download Bandwidth Limit, Progress Bar Custom Buffer Color, Volume Loudness Target, History Auto Backup Toggle111, Playback Speed Auto Adjust, Screenshot Auto Share Weibo, Video Blend Mode Custom, Danmaku Font Drop Shadow Toggle, Subtitle BG Border Color Auto
+
+### v111.1 音频延迟同步自定义 | Audio Delay Sync Custom | オーディオ遅延同期カスタム | 오디오 지연 동기화 사용자 정의
+- ✅ 音频延迟同步自定义
+- ✅ Audio Delay Sync Custom
+- ✅ オーディオ遅延同期カスタム
+- ✅ 오디오 지연 동기화 사용자 정의
+
+### v111.2 弹幕字体模糊开关111 | Danmaku Font Blur Toggle111 | コメントフォントブラー切替111 | 댓글 글꼴 블러 전환111
+- ✅ 弹幕字体模糊开关111
+- ✅ Danmaku Font Blur Toggle111
+- ✅ コメントフォントブラー切替111
+- ✅ 댓글 글꼴 블러 전환111
+
+### v111.3 字幕背景阴影大小 | Subtitle BG Shadow Size | 字幕BGシャドウサイズ | 자막 배경 그림자 크기
+- ✅ 字幕背景阴影大小
+- ✅ Subtitle BG Shadow Size
+- ✅ 字幕BGシャドウサイズ
+- ✅ 자막 배경 그림자 크기
+
+### v111.4 手势点击跳转步长 | Gesture Tap Seek Step | ジェスチャータップシークステップ | 제스처 탭 탐색 단계
+- ✅ 手势点击跳转步长
+- ✅ Gesture Tap Seek Step
+- ✅ ジェスチャータップシークステップ
+- ✅ 제스처 탭 탐색 단계
+
+### v111.5 投射视频饱和度自定义 | Cast Video Saturation Custom | キャストビデオ彩度カスタム | 캐스트 비디오 채도 사용자 정의
+- ✅ 投射视频饱和度自定义
+- ✅ Cast Video Saturation Custom
+- ✅ キャストビデオ彩度カスタム
+- ✅ 캐스트 비디오 채도 사용자 정의
+
+### v111.6 播放列表重复时自动随机 | Playlist Auto Shuffle On Repeat | プレイリストリピート時自動シャッフル | 재생 목록 반복 시 자동 셔플
+- ✅ 播放列表重复时自动随机
+- ✅ Playlist Auto Shuffle On Repeat
+- ✅ プレイリストリピート時自動シャッフル
+- ✅ 재생 목록 반복 시 자동 셔플
+
+### v111.7 缓存下载带宽限制 | Cache Download Bandwidth Limit | キャッシュダウンロード帯域制限 | 캐시 다운로드 대역폭 제한
+- ✅ 缓存下载带宽限制
+- ✅ Cache Download Bandwidth Limit
+- ✅ キャッシュダウンロード帯域制限
+- ✅ 캐시 다운로드 대역폭 제한
+
+### v111.8 进度条自定义缓冲颜色 | Progress Bar Custom Buffer Color | プログレスバーカスタムバッファ色 | 진행 바 사용자 정의 버퍼 색상
+- ✅ 进度条自定义缓冲颜色
+- ✅ Progress Bar Custom Buffer Color
+- ✅ プログレスバーカスタムバッファ色
+- ✅ 진행 바 사용자 정의 버퍼 색상
+
+### v111.9 音量响度目标 | Volume Loudness Target | 音量ラウドネス目標 | 볼륨 음량 목표
+- ✅ 音量响度目标
+- ✅ Volume Loudness Target
+- ✅ 音量ラウドネス目標
+- ✅ 볼륨 음량 목표
+
+### v111.10 历史记录自动备份开关111 | History Auto Backup Toggle111 | 履歴自動バックアップ切替111 | 기록 자동 백업 전환111
+- ✅ 历史记录自动备份开关111
+- ✅ History Auto Backup Toggle111
+- ✅ 履歴自動バックアップ切替111
+- ✅ 기록 자동 백업 전환111
+
+### v111.11 播放速度自动调整 | Playback Speed Auto Adjust | 再生速度自動調整 | 재생 속도 자동 조정
+- ✅ 播放速度自动调整
+- ✅ Playback Speed Auto Adjust
+- ✅ 再生速度自動調整
+- ✅ 재생 속도 자동 조정
+
+### v111.12 截图自动分享微博 | Screenshot Auto Share Weibo | スクリーンショット自動Weibo共有 | 스크린샷 자동 Weibo 공유
+- ✅ 截图自动分享微博
+- ✅ Screenshot Auto Share Weibo
+- ✅ スクリーンショット自動Weibo共有
+- ✅ 스크린샷 자동 Weibo 공유
+
+### v111.13 视频混合模式自定义 | Video Blend Mode Custom | ビデオブレンドモードカスタム | 비디오 블렌드 모드 사용자 정의
+- ✅ 视频混合模式自定义
+- ✅ Video Blend Mode Custom
+- ✅ ビデオブレンドモードカスタム
+- ✅ 비디오 블렌드 모드 사용자 정의
+
+### v111.14 弹幕字体投影开关 | Danmaku Font Drop Shadow Toggle | コメントフォントドロップシャドウ切替 | 댓글 글꼴 드롭섀도우 전환
+- ✅ 弹幕字体投影开关
+- ✅ Danmaku Font Drop Shadow Toggle
+- ✅ コメントフォントドロップシャドウ切替
+- ✅ 댓글 글꼴 드롭섀도우 전환
+
+### v111.15 字幕背景边框颜色自动 | Subtitle BG Border Color Auto | 字幕BGボーダー色自動 | 자막 배경 테두리 색상 자동
+- ✅ 字幕背景边框颜色自动
+- ✅ Subtitle BG Border Color Auto
+- ✅ 字幕BGボーダー色自動
+- ✅ 자막 배경 테두리 색상 자동
+
+### v112.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v112.1-v112.15 功能列表
+- ✅ Audio Crossfeed Toggle112, Danmaku Font Drop Shadow X, Subtitle BG Border Color Contrast, Gesture Tap Volume Step, Cast Video Contrast Custom, Playlist Auto Next On Wifi, Cache Smart Prefetch Toggle112, Progress Bar Custom Chapter Style, Volume Dynamic Range Control, History Auto Backup Interval, Playback Speed Auto Adjust Range, Screenshot Auto Share Twitter, Video Color LUT Custom, Danmaku Font Drop Shadow Y, Subtitle BG Border Color Auto Threshold
+
+### v112.1 音频交叉馈送开关112 | Audio Crossfeed Toggle112 | オーディオクロスフィード切替112 | 오디오 크로스피드 전환112
+- ✅ 音频交叉馈送开关112
+- ✅ Audio Crossfeed Toggle112
+- ✅ オーディオクロスフィード切替112
+- ✅ 오디오 크로스피드 전환112
+
+### v112.2 弹幕字体投影X偏移 | Danmaku Font Drop Shadow X | コメントフォントドロップシャドウX | 댓글 글꼴 드롭섀도우 X
+- ✅ 弹幕字体投影X偏移
+- ✅ Danmaku Font Drop Shadow X
+- ✅ コメントフォントドロップシャドウX
+- ✅ 댓글 글꼴 드롭섀도우 X
+
+### v112.3 字幕背景边框颜色对比度 | Subtitle BG Border Color Contrast | 字幕BGボーダー色コントラスト | 자막 배경 테두리 색상 대비
+- ✅ 字幕背景边框颜色对比度
+- ✅ Subtitle BG Border Color Contrast
+- ✅ 字幕BGボーダー色コントラスト
+- ✅ 자막 배경 테두리 색상 대비
+
+### v112.4 手势点击音量步长 | Gesture Tap Volume Step | ジェスチャータップ音量ステップ | 제스처 탭 볼륨 단계
+- ✅ 手势点击音量步长
+- ✅ Gesture Tap Volume Step
+- ✅ ジェスチャータップ音量ステップ
+- ✅ 제스처 탭 볼륨 단계
+
+### v112.5 投射视频对比度自定义 | Cast Video Contrast Custom | キャストビデオコントラストカスタム | 캐스트 비디오 대비 사용자 정의
+- ✅ 投射视频对比度自定义
+- ✅ Cast Video Contrast Custom
+- ✅ キャストビデオコントラストカスタム
+- ✅ 캐스트 비디오 대비 사용자 정의
+
+### v112.6 播放列表WiFi时自动下一个 | Playlist Auto Next On Wifi | プレイリストWiFi時自動次再生 | 재생 목록 WiFi 시 자동 다음
+- ✅ 播放列表WiFi时自动下一个
+- ✅ Playlist Auto Next On Wifi
+- ✅ プレイリストWiFi時自動次再生
+- ✅ 재생 목록 WiFi 시 자동 다음
+
+### v112.7 缓存智能预取开关112 | Cache Smart Prefetch Toggle112 | キャッシュスマートプリフェッチ切替112 | 캐시 스마트 프리페치 전환112
+- ✅ 缓存智能预取开关112
+- ✅ Cache Smart Prefetch Toggle112
+- ✅ キャッシュスマートプリフェッチ切替112
+- ✅ 캐시 스마트 프리페치 전환112
+
+### v112.8 进度条自定义章节样式 | Progress Bar Custom Chapter Style | プログレスバーカスタムチャプタースタイル | 진행 바 사용자 정의 챕터 스타일
+- ✅ 进度条自定义章节样式
+- ✅ Progress Bar Custom Chapter Style
+- ✅ プログレスバーカスタムチャプタースタイル
+- ✅ 진행 바 사용자 정의 챕터 스타일
+
+### v112.9 音量动态范围控制 | Volume Dynamic Range Control | 音量ダイナミックレンジ制御 | 볼륨 다이나믹 레인지 제어
+- ✅ 音量动态范围控制
+- ✅ Volume Dynamic Range Control
+- ✅ 音量ダイナミックレンジ制御
+- ✅ 볼륨 다이나믹 레인지 제어
+
+### v112.10 历史记录自动备份间隔 | History Auto Backup Interval | 履歴自動バックアップ間隔 | 기록 자동 백업 간격
+- ✅ 历史记录自动备份间隔
+- ✅ History Auto Backup Interval
+- ✅ 履歴自動バックアップ間隔
+- ✅ 기록 자동 백업 간격
+
+### v112.11 播放速度自动调整范围 | Playback Speed Auto Adjust Range | 再生速度自動調整範囲 | 재생 속도 자동 조정 범위
+- ✅ 播放速度自动调整范围
+- ✅ Playback Speed Auto Adjust Range
+- ✅ 再生速度自動調整範囲
+- ✅ 재생 속도 자동 조정 범위
+
+### v112.12 截图自动分享推特 | Screenshot Auto Share Twitter | スクリーンショット自動Twitter共有 | 스크린샷 자동 Twitter 공유
+- ✅ 截图自动分享推特
+- ✅ Screenshot Auto Share Twitter
+- ✅ スクリーンショット自動Twitter共有
+- ✅ 스크린샷 자동 Twitter 공유
+
+### v112.13 视频色彩LUT自定义 | Video Color LUT Custom | ビデオカラールートカスタム | 비디오 컬러 LUT 사용자 정의
+- ✅ 视频色彩LUT自定义
+- ✅ Video Color LUT Custom
+- ✅ ビデオカラールートカスタム
+- ✅ 비디오 컬러 LUT 사용자 정의
+
+### v112.14 弹幕字体投影Y偏移 | Danmaku Font Drop Shadow Y | コメントフォントドロップシャドウY | 댓글 글꼴 드롭섀도우 Y
+- ✅ 弹幕字体投影Y偏移
+- ✅ Danmaku Font Drop Shadow Y
+- ✅ コメントフォントドロップシャドウY
+- ✅ 댓글 글꼴 드롭섀도우 Y
+
+### v112.15 字幕背景边框颜色自动阈值 | Subtitle BG Border Color Auto Threshold | 字幕BGボーダー色自動しきい値 | 자막 배경 테두리 색상 자동 임계값
+- ✅ 字幕背景边框颜色自动阈值
+- ✅ Subtitle BG Border Color Auto Threshold
+- ✅ 字幕BGボーダー色自動しきい値
+- ✅ 자막 배경 테두리 색상 자동 임계값
+
+### v113.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v113.1-v113.15 功能列表
+- ✅ Audio Crossfeed Strength, Danmaku Font Drop Shadow Blur, Subtitle Font Weight Custom, Gesture Tap Brightness Step, Cast Video Brightness Custom, Playlist Auto Play On Connect, Cache Cleanup On Start Toggle113, Progress Bar Custom Live Edge Style, Volume Auto Gain Compensation, History Auto Backup Cloud, Playback Speed Auto Adjust Silence, Screenshot Auto Share Instagram, Video Color Temperature Custom113, Danmaku Font Drop Shadow Color, Subtitle Font Stretch Custom
+
+### v113.1 音频交叉馈送强度 | Audio Crossfeed Strength | オーディオクロスフィード強度 | 오디오 크로스피드 강도
+- ✅ 音频交叉馈送强度
+- ✅ Audio Crossfeed Strength
+- ✅ オーディオクロスフィード強度
+- ✅ 오디오 크로스피드 강도
+
+### v113.2 弹幕字体投影模糊 | Danmaku Font Drop Shadow Blur | コメントフォントドロップシャドウブラー | 댓글 글꼴 드롭섀도우 블러
+- ✅ 弹幕字体投影模糊
+- ✅ Danmaku Font Drop Shadow Blur
+- ✅ コメントフォントドロップシャドウブラー
+- ✅ 댓글 글꼴 드롭섀도우 블러
+
+### v113.3 字幕字体粗细自定义 | Subtitle Font Weight Custom | 字幕フォントウェイトカスタム | 자막 글꼴 굵기 사용자 정의
+- ✅ 字幕字体粗细自定义
+- ✅ Subtitle Font Weight Custom
+- ✅ 字幕フォントウェイトカスタム
+- ✅ 자막 글꼴 굵기 사용자 정의
+
+### v113.4 手势点击亮度步长 | Gesture Tap Brightness Step | ジェスチャータップ明るさステップ | 제스처 탭 밝기 단계
+- ✅ 手势点击亮度步长
+- ✅ Gesture Tap Brightness Step
+- ✅ ジェスチャータップ明るさステップ
+- ✅ 제스처 탭 밝기 단계
+
+### v113.5 投射视频亮度自定义 | Cast Video Brightness Custom | キャストビデオ輝度カスタム | 캐스트 비디오 밝기 사용자 정의
+- ✅ 投射视频亮度自定义
+- ✅ Cast Video Brightness Custom
+- ✅ キャストビデオ輝度カスタム
+- ✅ 캐스트 비디오 밝기 사용자 정의
+
+### v113.6 播放列表连接时自动播放 | Playlist Auto Play On Connect | プレイリスト接続時自動再生 | 재생 목록 연결 시 자동 재생
+- ✅ 播放列表连接时自动播放
+- ✅ Playlist Auto Play On Connect
+- ✅ プレイリスト接続時自動再生
+- ✅ 재생 목록 연결 시 자동 재생
+
+### v113.7 缓存启动时清理开关113 | Cache Cleanup On Start Toggle113 | キャッシュ起動時クリーンアップ切替113 | 캐시 시작 시 정리 전환113
+- ✅ 缓存启动时清理开关113
+- ✅ Cache Cleanup On Start Toggle113
+- ✅ キャッシュ起動時クリーンアップ切替113
+- ✅ 캐시 시작 시 정리 전환113
+
+### v113.8 进度条自定义直播边缘样式 | Progress Bar Custom Live Edge Style | プログレスバーカスタムライブエッジスタイル | 진행 바 사용자 정의 라이브 엣지 스타일
+- ✅ 进度条自定义直播边缘样式
+- ✅ Progress Bar Custom Live Edge Style
+- ✅ プログレスバーカスタムライブエッジスタイル
+- ✅ 진행 바 사용자 정의 라이브 엣지 스타일
+
+### v113.9 音量自动增益补偿 | Volume Auto Gain Compensation | 音量自動ゲイン補償 | 볼륨 자동 게인 보상
+- ✅ 音量自动增益补偿
+- ✅ Volume Auto Gain Compensation
+- ✅ 音量自動ゲイン補償
+- ✅ 볼륨 자동 게인 보상
+
+### v113.10 历史记录自动备份云端 | History Auto Backup Cloud | 履歴自動バックアップクラウド | 기록 자동 백업 클라우드
+- ✅ 历史记录自动备份云端
+- ✅ History Auto Backup Cloud
+- ✅ 履歴自動バックアップクラウド
+- ✅ 기록 자동 백업 클라우드
+
+### v113.11 播放速度自动调整静音 | Playback Speed Auto Adjust Silence | 再生速度自動調整無音 | 재생 속도 자동 조정 무음
+- ✅ 播放速度自动调整静音
+- ✅ Playback Speed Auto Adjust Silence
+- ✅ 再生速度自動調整無音
+- ✅ 재생 속도 자동 조정 무음
+
+### v113.12 截图自动分享Instagram | Screenshot Auto Share Instagram | スクリーンショット自動Instagram共有 | 스크린샷 자동 Instagram 공유
+- ✅ 截图自动分享Instagram
+- ✅ Screenshot Auto Share Instagram
+- ✅ スクリーンショット自動Instagram共有
+- ✅ 스크린샷 자동 Instagram 공유
+
+### v113.13 视频色温自定义113 | Video Color Temperature Custom113 | ビデオ色温度カスタム113 | 비디오 색온도 사용자 정의113
+- ✅ 视频色温自定义113
+- ✅ Video Color Temperature Custom113
+- ✅ ビデオ色温度カスタム113
+- ✅ 비디오 색온도 사용자 정의113
+
+### v113.14 弹幕字体投影颜色 | Danmaku Font Drop Shadow Color | コメントフォントドロップシャドウ色 | 댓글 글꼴 드롭섀도우 색상
+- ✅ 弹幕字体投影颜色
+- ✅ Danmaku Font Drop Shadow Color
+- ✅ コメントフォントドロップシャドウ色
+- ✅ 댓글 글꼴 드롭섀도우 색상
+
+### v113.15 字幕字体拉伸自定义 | Subtitle Font Stretch Custom | 字幕フォントストレッチカスタム | 자막 글꼴 스트레치 사용자 정의
+- ✅ 字幕字体拉伸自定义
+- ✅ Subtitle Font Stretch Custom
+- ✅ 字幕フォントストレッチカスタム
+- ✅ 자막 글꼴 스트레치 사용자 정의
+
+### v114.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v114.1-v114.15 功能列表
+- ✅ Audio Dynamic Bass Boost, Danmaku Font Drop Shadow Opacity, Subtitle Font Letter Spacing114, Gesture Tap Play Pause Toggle, Cast Video Gamma Custom, Playlist Auto Pause On Headset, Cache Write Buffer Size, Progress Bar Custom Thumb Opacity, Volume Fade In On Resume, History Auto Backup File, Playback Speed Auto Adjust Pitch, Screenshot Auto Share Facebook, Video Tint Custom114, Danmaku Font BG Opacity Custom114, Subtitle Font Word Spacing114
+
+### v114.1 音频动态低音增强 | Audio Dynamic Bass Boost | オーディオダイナミックバスブースト | 오디오 다이나믹 저음 강화
+- ✅ 音频动态低音增强
+- ✅ Audio Dynamic Bass Boost
+- ✅ オーディオダイナミックバスブースト
+- ✅ 오디오 다이나믹 저음 강화
+
+### v114.2 弹幕字体投影透明度 | Danmaku Font Drop Shadow Opacity | コメントフォントドロップシャドウ透明度 | 댓글 글꼴 드롭섀도우 불투명도
+- ✅ 弹幕字体投影透明度
+- ✅ Danmaku Font Drop Shadow Opacity
+- ✅ コメントフォントドロップシャドウ透明度
+- ✅ 댓글 글꼴 드롭섀도우 불투명도
+
+### v114.3 字幕字体字间距114 | Subtitle Font Letter Spacing114 | 字幕フォントレタースペーシング114 | 자막 글꼴 자간114
+- ✅ 字幕字体字间距114
+- ✅ Subtitle Font Letter Spacing114
+- ✅ 字幕フォントレタースペーシング114
+- ✅ 자막 글꼴 자간114
+
+### v114.4 手势点击播放暂停开关 | Gesture Tap Play Pause Toggle | ジェスチャータップ再生一時停止切替 | 제스처 탭 재생 일시정지 전환
+- ✅ 手势点击播放暂停开关
+- ✅ Gesture Tap Play Pause Toggle
+- ✅ ジェスチャータップ再生一時停止切替
+- ✅ 제스처 탭 재생 일시정지 전환
+
+### v114.5 投射视频伽马自定义 | Cast Video Gamma Custom | キャストビデオガンマカスタム | 캐스트 비디오 감마 사용자 정의
+- ✅ 投射视频伽马自定义
+- ✅ Cast Video Gamma Custom
+- ✅ キャストビデオガンマカスタム
+- ✅ 캐스트 비디오 감마 사용자 정의
+
+### v114.6 播放列表耳机时自动暂停 | Playlist Auto Pause On Headset | プレイリストヘッドセット時自動一時停止 | 재생 목록 헤드셋 시 자동 일시정지
+- ✅ 播放列表耳机时自动暂停
+- ✅ Playlist Auto Pause On Headset
+- ✅ プレイリストヘッドセット時自動一時停止
+- ✅ 재생 목록 헤드셋 시 자동 일시정지
+
+### v114.7 缓存写入缓冲大小 | Cache Write Buffer Size | キャッシュライトバッファサイズ | 캐시 쓰기 버퍼 크기
+- ✅ 缓存写入缓冲大小
+- ✅ Cache Write Buffer Size
+- ✅ キャッシュライトバッファサイズ
+- ✅ 캐시 쓰기 버퍼 크기
+
+### v114.8 进度条自定义滑块透明度 | Progress Bar Custom Thumb Opacity | プログレスバーカスタムサム透明度 | 진행 바 사용자 정의 썸 불투명도
+- ✅ 进度条自定义滑块透明度
+- ✅ Progress Bar Custom Thumb Opacity
+- ✅ プログレスバーカスタムサム透明度
+- ✅ 진행 바 사용자 정의 썸 불투명도
+
+### v114.9 音量恢复时淡入 | Volume Fade In On Resume | 音量再開時フェードイン | 볼륨 재개 시 페이드인
+- ✅ 音量恢复时淡入
+- ✅ Volume Fade In On Resume
+- ✅ 音量再開時フェードイン
+- ✅ 볼륨 재개 시 페이드인
+
+### v114.10 历史记录自动备份文件 | History Auto Backup File | 履歴自動バックアップファイル | 기록 자동 백업 파일
+- ✅ 历史记录自动备份文件
+- ✅ History Auto Backup File
+- ✅ 履歴自動バックアップファイル
+- ✅ 기록 자동 백업 파일
+
+### v114.11 播放速度自动调整音高 | Playback Speed Auto Adjust Pitch | 再生速度自動調整ピッチ | 재생 속도 자동 조정 피치
+- ✅ 播放速度自动调整音高
+- ✅ Playback Speed Auto Adjust Pitch
+- ✅ 再生速度自動調整ピッチ
+- ✅ 재생 속도 자동 조정 피치
+
+### v114.12 截图自动分享Facebook | Screenshot Auto Share Facebook | スクリーンショット自動Facebook共有 | 스크린샷 자동 Facebook 공유
+- ✅ 截图自动分享Facebook
+- ✅ Screenshot Auto Share Facebook
+- ✅ スクリーンショット自動Facebook共有
+- ✅ 스크린샷 자동 Facebook 공유
+
+### v114.13 视频色调自定义114 | Video Tint Custom114 | ビデオチントカスタム114 | 비디오 틴트 사용자 정의114
+- ✅ 视频色调自定义114
+- ✅ Video Tint Custom114
+- ✅ ビデオチントカスタム114
+- ✅ 비디오 틴트 사용자 정의114
+
+### v114.14 弹幕字体背景透明度自定义114 | Danmaku Font BG Opacity Custom114 | コメントフォントBG透明度カスタム114 | 댓글 글꼴 배경 불투명도 사용자 정의114
+- ✅ 弹幕字体背景透明度自定义114
+- ✅ Danmaku Font BG Opacity Custom114
+- ✅ コメントフォントBG透明度カスタム114
+- ✅ 댓글 글꼴 배경 불투명도 사용자 정의114
+
+### v114.15 字幕字体词间距114 | Subtitle Font Word Spacing114 | 字幕フォントワードスペーシング114 | 자막 글꼴 단어 간격114
+- ✅ 字幕字体词间距114
+- ✅ Subtitle Font Word Spacing114
+- ✅ 字幕フォントワードスペーシング114
+- ✅ 자막 글꼴 단어 간격114
+
+### v115.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v115.1-v115.15 功能列表
+- ✅ Audio Dynamic Treble Boost, Danmaku Font BG Border Toggle115, Subtitle Font Word Spacing115, Gesture Tap Double Action, Cast Video Tint Custom, Playlist Auto Resume On Launch, Cache Read Buffer Size, Progress Bar Custom Chapter Opacity, Volume Fade Out On Pause, History Search Auto Complete, Playback Speed Auto Adjust Min, Screenshot Auto Share LinkedIn, Video Split Screen Custom, Danmaku Font BG Border Width115, Subtitle Font Features115
+
+### v115.1 音频动态高音增强 | Audio Dynamic Treble Boost | オーディオダイナミックトレブルブースト | 오디오 다이나믹 고음 강화
+- ✅ 音频动态高音增强
+- ✅ Audio Dynamic Treble Boost
+- ✅ オーディオダイナミックトレブルブースト
+- ✅ 오디오 다이나믹 고음 강화
+
+### v115.2 弹幕字体背景边框开关115 | Danmaku Font BG Border Toggle115 | コメントフォントBGボーダー切替115 | 댓글 글꼴 배경 테두리 전환115
+- ✅ 弹幕字体背景边框开关115
+- ✅ Danmaku Font BG Border Toggle115
+- ✅ コメントフォントBGボーダー切替115
+- ✅ 댓글 글꼴 배경 테두리 전환115
+
+### v115.3 字幕字体词间距115 | Subtitle Font Word Spacing115 | 字幕フォントワードスペーシング115 | 자막 글꼴 단어 간격115
+- ✅ 字幕字体词间距115
+- ✅ Subtitle Font Word Spacing115
+- ✅ 字幕フォントワードスペーシング115
+- ✅ 자막 글꼴 단어 간격115
+
+### v115.4 手势点击双击动作 | Gesture Tap Double Action | ジェスチャータップダブルアクション | 제스처 탭 더블 동작
+- ✅ 手势点击双击动作
+- ✅ Gesture Tap Double Action
+- ✅ ジェスチャータップダブルアクション
+- ✅ 제스처 탭 더블 동작
+
+### v115.5 投射视频色调自定义 | Cast Video Tint Custom | キャストビデオチントカスタム | 캐스트 비디오 틴트 사용자 정의
+- ✅ 投射视频色调自定义
+- ✅ Cast Video Tint Custom
+- ✅ キャストビデオチントカスタム
+- ✅ 캐스트 비디오 틴트 사용자 정의
+
+### v115.6 播放列表启动时自动恢复 | Playlist Auto Resume On Launch | プレイリスト起動時自動再開 | 재생 목록 시작 시 자동 재개
+- ✅ 播放列表启动时自动恢复
+- ✅ Playlist Auto Resume On Launch
+- ✅ プレイリスト起動時自動再開
+- ✅ 재생 목록 시작 시 자동 재개
+
+### v115.7 缓存读取缓冲大小 | Cache Read Buffer Size | キャッシュリードバッファサイズ | 캐시 읽기 버퍼 크기
+- ✅ 缓存读取缓冲大小
+- ✅ Cache Read Buffer Size
+- ✅ キャッシュリードバッファサイズ
+- ✅ 캐시 읽기 버퍼 크기
+
+### v115.8 进度条自定义章节透明度 | Progress Bar Custom Chapter Opacity | プログレスバーカスタムチャプター透明度 | 진행 바 사용자 정의 챕터 불투명도
+- ✅ 进度条自定义章节透明度
+- ✅ Progress Bar Custom Chapter Opacity
+- ✅ プログレスバーカスタムチャプター透明度
+- ✅ 진행 바 사용자 정의 챕터 불투명도
+
+### v115.9 音量暂停时淡出 | Volume Fade Out On Pause | 音量一時停止時フェードアウト | 볼륨 일시정지 시 페이드아웃
+- ✅ 音量暂停时淡出
+- ✅ Volume Fade Out On Pause
+- ✅ 音量一時停止時フェードアウト
+- ✅ 볼륨 일시정지 시 페이드아웃
+
+### v115.10 历史记录搜索自动补全 | History Search Auto Complete | 履歴検索自動補完 | 기록 검색 자동 완성
+- ✅ 历史记录搜索自动补全
+- ✅ History Search Auto Complete
+- ✅ 履歴検索自動補完
+- ✅ 기록 검색 자동 완성
+
+### v115.11 播放速度自动调整最小 | Playback Speed Auto Adjust Min | 再生速度自動調整最小 | 재생 속도 자동 조정 최소
+- ✅ 播放速度自动调整最小
+- ✅ Playback Speed Auto Adjust Min
+- ✅ 再生速度自動調整最小
+- ✅ 재생 속도 자동 조정 최소
+
+### v115.12 截图自动分享LinkedIn | Screenshot Auto Share LinkedIn | スクリーンショット自動LinkedIn共有 | 스크린샷 자동 LinkedIn 공유
+- ✅ 截图自动分享LinkedIn
+- ✅ Screenshot Auto Share LinkedIn
+- ✅ スクリーンショット自動LinkedIn共有
+- ✅ 스크린샷 자동 LinkedIn 공유
+
+### v115.13 视频分屏自定义 | Video Split Screen Custom | ビデオ分割画面カスタム | 비디오 분할 화면 사용자 정의
+- ✅ 视频分屏自定义
+- ✅ Video Split Screen Custom
+- ✅ ビデオ分割画面カスタム
+- ✅ 비디오 분할 화면 사용자 정의
+
+### v115.14 弹幕字体背景边框宽度115 | Danmaku Font BG Border Width115 | コメントフォントBGボーダー幅115 | 댓글 글꼴 배경 테두리 너비115
+- ✅ 弹幕字体背景边框宽度115
+- ✅ Danmaku Font BG Border Width115
+- ✅ コメントフォントBGボーダー幅115
+- ✅ 댓글 글꼴 배경 테두리 너비115
+
+### v115.15 字幕字体特性115 | Subtitle Font Features115 | 字幕フォントフィーチャー115 | 자막 글꼴 기능115
+- ✅ 字幕字体特性115
+- ✅ Subtitle Font Features115
+- ✅ 字幕フォントフィーチャー115
+- ✅ 자막 글꼴 기능115
+
+### v116.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v116.1-v116.15 功能列表
+- ✅ Audio Dynamic Compressor Toggle116, Danmaku Font BG Border Color115, Subtitle Font Features116, Gesture Tap Triple Action, Cast Video Sepia Custom, Playlist Auto Shuffle Seed, Cache Preload On Start Toggle, Progress Bar Custom Buffer Opacity, Volume Fade Duration Custom, History Search Scope Custom, Playback Speed Auto Adjust Max, Screenshot Auto Share WhatsApp, Video PIP Mode Custom, Danmaku Font BG Border Radius115, Subtitle Animation Type116
+
+### v116.1 音频动态压缩器开关116 | Audio Dynamic Compressor Toggle116 | オーディオダイナミックコンプレッサー切替116 | 오디오 다이나믹 컴프레서 전환116
+- ✅ 音频动态压缩器开关116
+- ✅ Audio Dynamic Compressor Toggle116
+- ✅ オーディオダイナミックコンプレッサー切替116
+- ✅ 오디오 다이나믹 컴프레서 전환116
+
+### v116.2 弹幕字体背景边框颜色115 | Danmaku Font BG Border Color115 | コメントフォントBGボーダー色115 | 댓글 글꼴 배경 테두리 색상115
+- ✅ 弹幕字体背景边框颜色115
+- ✅ Danmaku Font BG Border Color115
+- ✅ コメントフォントBGボーダー色115
+- ✅ 댓글 글꼴 배경 테두리 색상115
+
+### v116.3 字幕字体特性116 | Subtitle Font Features116 | 字幕フォントフィーチャー116 | 자막 글꼴 기능116
+- ✅ 字幕字体特性116
+- ✅ Subtitle Font Features116
+- ✅ 字幕フォントフィーチャー116
+- ✅ 자막 글꼴 기능116
+
+### v116.4 手势点击三击动作 | Gesture Tap Triple Action | ジェスチャータップトリプルアクション | 제스처 탭 트리플 동작
+- ✅ 手势点击三击动作
+- ✅ Gesture Tap Triple Action
+- ✅ ジェスチャータップトリプルアクション
+- ✅ 제스처 탭 트리플 동작
+
+### v116.5 投射视频怀旧自定义 | Cast Video Sepia Custom | キャストビデオセピアカスタム | 캐스트 비디오 세피아 사용자 정의
+- ✅ 投射视频怀旧自定义
+- ✅ Cast Video Sepia Custom
+- ✅ キャストビデオセピアカスタム
+- ✅ 캐스트 비디오 세피아 사용자 정의
+
+### v116.6 播放列表自动随机种子 | Playlist Auto Shuffle Seed | プレイリスト自動シャッフルシード | 재생 목록 자동 셔플 시드
+- ✅ 播放列表自动随机种子
+- ✅ Playlist Auto Shuffle Seed
+- ✅ プレイリスト自動シャッフルシード
+- ✅ 재생 목록 자동 셔플 시드
+
+### v116.7 缓存启动时预加载开关 | Cache Preload On Start Toggle | キャッシュ起動時プリロード切替 | 캐시 시작 시 프리로드 전환
+- ✅ 缓存启动时预加载开关
+- ✅ Cache Preload On Start Toggle
+- ✅ キャッシュ起動時プリロード切替
+- ✅ 캐시 시작 시 프리로드 전환
+
+### v116.8 进度条自定义缓冲透明度 | Progress Bar Custom Buffer Opacity | プログレスバーカスタムバッファ透明度 | 진행 바 사용자 정의 버퍼 불투명도
+- ✅ 进度条自定义缓冲透明度
+- ✅ Progress Bar Custom Buffer Opacity
+- ✅ プログレスバーカスタムバッファ透明度
+- ✅ 진행 바 사용자 정의 버퍼 불투명도
+
+### v116.9 音量淡入淡出时间自定义 | Volume Fade Duration Custom | 音量フェード時間カスタム | 볼륨 페이드 시간 사용자 정의
+- ✅ 音量淡入淡出时间自定义
+- ✅ Volume Fade Duration Custom
+- ✅ 音量フェード時間カスタム
+- ✅ 볼륨 페이드 시간 사용자 정의
+
+### v116.10 历史记录搜索范围自定义 | History Search Scope Custom | 履歴検索範囲カスタム | 기록 검색 범위 사용자 정의
+- ✅ 历史记录搜索范围自定义
+- ✅ History Search Scope Custom
+- ✅ 履歴検索範囲カスタム
+- ✅ 기록 검색 범위 사용자 정의
+
+### v116.11 播放速度自动调整最大 | Playback Speed Auto Adjust Max | 再生速度自動調整最大 | 재생 속도 자동 조정 최대
+- ✅ 播放速度自动调整最大
+- ✅ Playback Speed Auto Adjust Max
+- ✅ 再生速度自動調整最大
+- ✅ 재생 속도 자동 조정 최대
+
+### v116.12 截图自动分享WhatsApp | Screenshot Auto Share WhatsApp | スクリーンショット自動WhatsApp共有 | 스크린샷 자동 WhatsApp 공유
+- ✅ 截图自动分享WhatsApp
+- ✅ Screenshot Auto Share WhatsApp
+- ✅ スクリーンショット自動WhatsApp共有
+- ✅ 스크린샷 자동 WhatsApp 공유
+
+### v116.13 视频画中画模式自定义 | Video PIP Mode Custom | ビデオPIPモードカスタム | 비디오 PIP 모드 사용자 정의
+- ✅ 视频画中画模式自定义
+- ✅ Video PIP Mode Custom
+- ✅ ビデオPIPモードカスタム
+- ✅ 비디오 PIP 모드 사용자 정의
+
+### v116.14 弹幕字体背景边框圆角115 | Danmaku Font BG Border Radius115 | コメントフォントBGボーダー角丸115 | 댓글 글꼴 배경 테두리 반경115
+- ✅ 弹幕字体背景边框圆角115
+- ✅ Danmaku Font BG Border Radius115
+- ✅ コメントフォントBGボーダー角丸115
+- ✅ 댓글 글꼴 배경 테두리 반경115
+
+### v116.15 字幕动画类型116 | Subtitle Animation Type116 | 字幕アニメーションタイプ116 | 자막 애니메이션 유형116
+- ✅ 字幕动画类型116
+- ✅ Subtitle Animation Type116
+- ✅ 字幕アニメーションタイプ116
+- ✅ 자막 애니메이션 유형116
+
+### v117.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v117.1-v117.15 功能列表
+- ✅ Audio Dynamic EQ Toggle117, Danmaku Font BG Border Radius116, Subtitle Animation Duration117, Gesture Tap Quadruple Action, Cast Video Negative Custom, Playlist Auto Skip On Low Battery, Cache Preload On Wifi Toggle, Progress Bar Custom Live Edge Opacity, Volume Smooth Fade Toggle, History Search Regex Toggle, Playback Speed Auto Adjust Active, Screenshot Auto Share Telegram, Video PIP Size Custom, Danmaku Font BG Border Opacity116, Subtitle Animation Speed117
+
+### v117.1 音频动态均衡器开关117 | Audio Dynamic EQ Toggle117 | オーディオダイナミックEQ切替117 | 오디오 다이나믹 EQ 전환117
+- ✅ 音频动态均衡器开关117
+- ✅ Audio Dynamic EQ Toggle117
+- ✅ オーディオダイナミックEQ切替117
+- ✅ 오디오 다이나믹 EQ 전환117
+
+### v117.2 弹幕字体背景边框圆角116 | Danmaku Font BG Border Radius116 | コメントフォントBGボーダー角丸116 | 댓글 글꼴 배경 테두리 반경116
+- ✅ 弹幕字体背景边框圆角116
+- ✅ Danmaku Font BG Border Radius116
+- ✅ コメントフォントBGボーダー角丸116
+- ✅ 댓글 글꼴 배경 테두리 반경116
+
+### v117.3 字幕动画持续时间117 | Subtitle Animation Duration117 | 字幕アニメーション持続時間117 | 자막 애니메이션 지속 시간117
+- ✅ 字幕动画持续时间117
+- ✅ Subtitle Animation Duration117
+- ✅ 字幕アニメーション持続時間117
+- ✅ 자막 애니메이션 지속 시간117
+
+### v117.4 手势点击四击动作 | Gesture Tap Quadruple Action | ジェスチャータップクアドラプルアクション | 제스처 탭 쿼드러플 동작
+- ✅ 手势点击四击动作
+- ✅ Gesture Tap Quadruple Action
+- ✅ ジェスチャータップクアドラプルアクション
+- ✅ 제스처 탭 쿼드러플 동작
+
+### v117.5 投射视频负片自定义 | Cast Video Negative Custom | キャストビデオネガティブカスタム | 캐스트 비디오 네거티브 사용자 정의
+- ✅ 投射视频负片自定义
+- ✅ Cast Video Negative Custom
+- ✅ キャストビデオネガティブカスタム
+- ✅ 캐스트 비디오 네거티브 사용자 정의
+
+### v117.6 播放列表低电量自动跳过 | Playlist Auto Skip On Low Battery | プレイリストバッテリー残量低時スキップ | 재생 목록 저전력 시 자동 건너뛰기
+- ✅ 播放列表低电量自动跳过
+- ✅ Playlist Auto Skip On Low Battery
+- ✅ プレイリストバッテリー残量低時スキップ
+- ✅ 재생 목록 저전력 시 자동 건너뛰기
+
+### v117.7 缓存WiFi预加载开关 | Cache Preload On Wifi Toggle | キャッシュWiFi時プリロード切替 | 캐시 WiFi 프리로드 전환
+- ✅ 缓存WiFi预加载开关
+- ✅ Cache Preload On Wifi Toggle
+- ✅ キャッシュWiFi時プリロード切替
+- ✅ 캐시 WiFi 프리로드 전환
+
+### v117.8 进度条自定义直播边缘透明度 | Progress Bar Custom Live Edge Opacity | プログレスバーカスタムライブエッジ透明度 | 진행 바 사용자 정의 라이브 엣지 불투명도
+- ✅ 进度条自定义直播边缘透明度
+- ✅ Progress Bar Custom Live Edge Opacity
+- ✅ プログレスバーカスタムライブエッジ透明度
+- ✅ 진행 바 사용자 정의 라이브 엣지 불투명도
+
+### v117.9 音量平滑淡入淡出开关 | Volume Smooth Fade Toggle | 音量スムーズフェード切替 | 볼륨 스무스 페이드 전환
+- ✅ 音量平滑淡入淡出开关
+- ✅ Volume Smooth Fade Toggle
+- ✅ 音量スムーズフェード切替
+- ✅ 볼륨 스무스 페이드 전환
+
+### v117.10 历史记录搜索正则开关 | History Search Regex Toggle | 履歴検索正規表現切替 | 기록 검색 정규식 전환
+- ✅ 历史记录搜索正则开关
+- ✅ History Search Regex Toggle
+- ✅ 履歴検索正規表現切替
+- ✅ 기록 검색 정규식 전환
+
+### v117.11 播放速度自动调整激活 | Playback Speed Auto Adjust Active | 再生速度自動調整アクティブ | 재생 속도 자동 조정 활성
+- ✅ 播放速度自动调整激活
+- ✅ Playback Speed Auto Adjust Active
+- ✅ 再生速度自動調整アクティブ
+- ✅ 재생 속도 자동 조정 활성
+
+### v117.12 截图自动分享Telegram | Screenshot Auto Share Telegram | スクリーンショット自動Telegram共有 | 스크린샷 자동 Telegram 공유
+- ✅ 截图自动分享Telegram
+- ✅ Screenshot Auto Share Telegram
+- ✅ スクリーンショット自動Telegram共有
+- ✅ 스크린샷 자동 Telegram 공유
+
+### v117.13 视频画中画大小自定义 | Video PIP Size Custom | ビデオPIPサイズカスタム | 비디오 PIP 크기 사용자 정의
+- ✅ 视频画中画大小自定义
+- ✅ Video PIP Size Custom
+- ✅ ビデオPIPサイズカスタム
+- ✅ 비디오 PIP 크기 사용자 정의
+
+### v117.14 弹幕字体背景边框透明度116 | Danmaku Font BG Border Opacity116 | コメントフォントBGボーダー透明度116 | 댓글 글꼴 배경 테두리 불투명도116
+- ✅ 弹幕字体背景边框透明度116
+- ✅ Danmaku Font BG Border Opacity116
+- ✅ コメントフォントBGボーダー透明度116
+- ✅ 댓글 글꼴 배경 테두리 불투명도116
+
+### v117.15 字幕动画速度117 | Subtitle Animation Speed117 | 字幕アニメーション速度117 | 자막 애니메이션 속도117
+- ✅ 字幕动画速度117
+- ✅ Subtitle Animation Speed117
+- ✅ 字幕アニメーション速度117
+- ✅ 자막 애니메이션 속도117
+
+### v118.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v118.1-v118.15 功能列表
+- ✅ Audio Dynamic Range Expand, Danmaku Font BG Border Opacity117, Subtitle Animation Speed118, Gesture Tap Hold Action, Cast Video Posterize Custom, Playlist Auto Load Metadata, Cache Smart Eviction Toggle, Progress Bar Custom Scale Type, Volume Spatial Audio Mode, History Search Fuzzy Match, Playback Speed Auto Adjust Buffer, Screenshot Auto Share Discord, Video PIP Position Custom, Danmaku Font BG Fill Mode117, Subtitle Animation Easing118
+
+### v118.1 音频动态范围扩展 | Audio Dynamic Range Expand | オーディオダイナミックレンジ拡張 | 오디오 다이나믹 레인지 확장
+- ✅ 音频动态范围扩展
+- ✅ Audio Dynamic Range Expand
+- ✅ オーディオダイナミックレンジ拡張
+- ✅ 오디오 다이나믹 레인지 확장
+
+### v118.2 弹幕字体背景边框透明度117 | Danmaku Font BG Border Opacity117 | コメントフォントBGボーダー透明度117 | 댓글 글꼴 배경 테두리 불투명도117
+- ✅ 弹幕字体背景边框透明度117
+- ✅ Danmaku Font BG Border Opacity117
+- ✅ コメントフォントBGボーダー透明度117
+- ✅ 댓글 글꼴 배경 테두리 불투명도117
+
+### v118.3 字幕动画速度118 | Subtitle Animation Speed118 | 字幕アニメーション速度118 | 자막 애니메이션 속도118
+- ✅ 字幕动画速度118
+- ✅ Subtitle Animation Speed118
+- ✅ 字幕アニメーション速度118
+- ✅ 자막 애니메이션 속도118
+
+### v118.4 手势点击长按动作 | Gesture Tap Hold Action | ジェスチャータップホールドアクション | 제스처 탭 홀드 동작
+- ✅ 手势点击长按动作
+- ✅ Gesture Tap Hold Action
+- ✅ ジェスチャータップホールドアクション
+- ✅ 제스처 탭 홀드 동작
+
+### v118.5 投射视频色调分离自定义 | Cast Video Posterize Custom | キャストビデオポスタリーズカスタム | 캐스트 비디오 포스터라이즈 사용자 정의
+- ✅ 投射视频色调分离自定义
+- ✅ Cast Video Posterize Custom
+- ✅ キャストビデオポスタリーズカスタム
+- ✅ 캐스트 비디오 포스터라이즈 사용자 정의
+
+### v118.6 播放列表自动加载元数据 | Playlist Auto Load Metadata | プレイリスト自動メタデータ読み込み | 재생 목록 자동 메타데이터 로드
+- ✅ 播放列表自动加载元数据
+- ✅ Playlist Auto Load Metadata
+- ✅ プレイリスト自動メタデータ読み込み
+- ✅ 재생 목록 자동 메타데이터 로드
+
+### v118.7 缓存智能淘汰开关 | Cache Smart Eviction Toggle | キャッシュスマートエビクション切替 | 캐시 스마트 제거 전환
+- ✅ 缓存智能淘汰开关
+- ✅ Cache Smart Eviction Toggle
+- ✅ キャッシュスマートエビクション切替
+- ✅ 캐시 스마트 제거 전환
+
+### v118.8 进度条自定义比例类型 | Progress Bar Custom Scale Type | プログレスバーカスタムスケールタイプ | 진행 바 사용자 정의 스케일 유형
+- ✅ 进度条自定义比例类型
+- ✅ Progress Bar Custom Scale Type
+- ✅ プログレスバーカスタムスケールタイプ
+- ✅ 진행 바 사용자 정의 스케일 유형
+
+### v118.9 音量空间音频模式 | Volume Spatial Audio Mode | 音量空間オーディオモード | 볼륨 공간 오디오 모드
+- ✅ 音量空间音频模式
+- ✅ Volume Spatial Audio Mode
+- ✅ 音量空間オーディオモード
+- ✅ 볼륨 공간 오디오 모드
+
+### v118.10 历史记录搜索模糊匹配 | History Search Fuzzy Match | 履歴検索あいまい一致 | 기록 검색 퍼지 매칭
+- ✅ 历史记录搜索模糊匹配
+- ✅ History Search Fuzzy Match
+- ✅ 履歴検索あいまい一致
+- ✅ 기록 검색 퍼지 매칭
+
+### v118.11 播放速度自动调整缓冲 | Playback Speed Auto Adjust Buffer | 再生速度自動調整バッファ | 재생 속도 자동 조정 버퍼
+- ✅ 播放速度自动调整缓冲
+- ✅ Playback Speed Auto Adjust Buffer
+- ✅ 再生速度自動調整バッファ
+- ✅ 재생 속도 자동 조정 버퍼
+
+### v118.12 截图自动分享Discord | Screenshot Auto Share Discord | スクリーンショット自動Discord共有 | 스크린샷 자동 Discord 공유
+- ✅ 截图自动分享Discord
+- ✅ Screenshot Auto Share Discord
+- ✅ スクリーンショット自動Discord共有
+- ✅ 스크린샷 자동 Discord 공유
+
+### v118.13 视频画中画位置自定义 | Video PIP Position Custom | ビデオPIP位置カスタム | 비디오 PIP 위치 사용자 정의
+- ✅ 视频画中画位置自定义
+- ✅ Video PIP Position Custom
+- ✅ ビデオPIP位置カスタム
+- ✅ 비디오 PIP 위치 사용자 정의
+
+### v118.14 弹幕字体背景填充模式117 | Danmaku Font BG Fill Mode117 | コメントフォントBGフィルモード117 | 댓글 글꼴 배경 채우기 모드117
+- ✅ 弹幕字体背景填充模式117
+- ✅ Danmaku Font BG Fill Mode117
+- ✅ コメントフォントBGフィルモード117
+- ✅ 댓글 글꼴 배경 채우기 모드117
+
+### v118.15 字幕动画缓动118 | Subtitle Animation Easing118 | 字幕アニメーションイージング118 | 자막 애니메이션 이징118
+- ✅ 字幕动画缓动118
+- ✅ Subtitle Animation Easing118
+- ✅ 字幕アニメーションイージング118
+- ✅ 자막 애니메이션 이징118
+
+### v119.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v119.1-v119.15 功能列表
+- ✅ Audio Dynamic Stereo Width, Danmaku Font BG Fill Mode118, Subtitle Animation Easing119, Gesture Tap Release Action, Cast Video Solarize Custom, Playlist Auto Save Position, Cache Verify Integrity Toggle, Progress Bar Custom Scale Min, Volume Stereo Pan Custom, History Search Match Case, Playback Speed Auto Adjust Network, Screenshot Auto Share Line, Video PIP Corner Radius, Danmaku Font BG Fill Opacity118, Subtitle Animation Loop119
+
+### v119.1 音频动态立体声宽度 | Audio Dynamic Stereo Width | オーディオダイナミックステレオ幅 | 오디오 다이나믹 스테레오 너비
+- ✅ 音频动态立体声宽度
+- ✅ Audio Dynamic Stereo Width
+- ✅ オーディオダイナミックステレオ幅
+- ✅ 오디오 다이나믹 스테레오 너비
+
+### v119.2 弹幕字体背景填充模式118 | Danmaku Font BG Fill Mode118 | コメントフォントBGフィルモード118 | 댓글 글꼴 배경 채우기 모드118
+- ✅ 弹幕字体背景填充模式118
+- ✅ Danmaku Font BG Fill Mode118
+- ✅ コメントフォントBGフィルモード118
+- ✅ 댓글 글꼴 배경 채우기 모드118
+
+### v119.3 字幕动画缓动119 | Subtitle Animation Easing119 | 字幕アニメーションイージング119 | 자막 애니메이션 이징119
+- ✅ 字幕动画缓动119
+- ✅ Subtitle Animation Easing119
+- ✅ 字幕アニメーションイージング119
+- ✅ 자막 애니메이션 이징119
+
+### v119.4 手势点击释放动作 | Gesture Tap Release Action | ジェスチャータップリリースアクション | 제스처 탭 릴리즈 동작
+- ✅ 手势点击释放动作
+- ✅ Gesture Tap Release Action
+- ✅ ジェスチャータップリリースアクション
+- ✅ 제스처 탭 릴리즈 동작
+
+### v119.5 投射视频曝光过度自定义 | Cast Video Solarize Custom | キャストビデオソラライズカスタム | 캐스트 비디오 솔라라이즈 사용자 정의
+- ✅ 投射视频曝光过度自定义
+- ✅ Cast Video Solarize Custom
+- ✅ キャストビデオソラライズカスタム
+- ✅ 캐스트 비디오 솔라라이즈 사용자 정의
+
+### v119.6 播放列表自动保存位置 | Playlist Auto Save Position | プレイリスト自動位置保存 | 재생 목록 자동 위치 저장
+- ✅ 播放列表自动保存位置
+- ✅ Playlist Auto Save Position
+- ✅ プレイリスト自動位置保存
+- ✅ 재생 목록 자동 위치 저장
+
+### v119.7 缓存完整性验证开关 | Cache Verify Integrity Toggle | キャッシュ整合性検証切替 | 캐시 무결성 검증 전환
+- ✅ 缓存完整性验证开关
+- ✅ Cache Verify Integrity Toggle
+- ✅ キャッシュ整合性検証切替
+- ✅ 캐시 무결성 검증 전환
+
+### v119.8 进度条自定义比例最小 | Progress Bar Custom Scale Min | プログレスバーカスタムスケール最小 | 진행 바 사용자 정의 스케일 최소
+- ✅ 进度条自定义比例最小
+- ✅ Progress Bar Custom Scale Min
+- ✅ プログレスバーカスタムスケール最小
+- ✅ 진행 바 사용자 정의 스케일 최소
+
+### v119.9 音量立体声声像自定义 | Volume Stereo Pan Custom | 音量ステレオパンカスタム | 볼륨 스테레오 팬 사용자 정의
+- ✅ 音量立体声声像自定义
+- ✅ Volume Stereo Pan Custom
+- ✅ 音量ステレオパンカスタム
+- ✅ 볼륨 스테레오 팬 사용자 정의
+
+### v119.10 历史记录搜索区分大小写 | History Search Match Case | 履歴検索大文字小文字区別 | 기록 검색 대소문자 구분
+- ✅ 历史记录搜索区分大小写
+- ✅ History Search Match Case
+- ✅ 履歴検索大文字小文字区別
+- ✅ 기록 검색 대소문자 구분
+
+### v119.11 播放速度自动调整网络 | Playback Speed Auto Adjust Network | 再生速度自動調整ネットワーク | 재생 속도 자동 조정 네트워크
+- ✅ 播放速度自动调整网络
+- ✅ Playback Speed Auto Adjust Network
+- ✅ 再生速度自動調整ネットワーク
+- ✅ 재생 속도 자동 조정 네트워크
+
+### v119.12 截图自动分享Line | Screenshot Auto Share Line | スクリーンショット自動Line共有 | 스크린샷 자동 Line 공유
+- ✅ 截图自动分享Line
+- ✅ Screenshot Auto Share Line
+- ✅ スクリーンショット自動Line共有
+- ✅ 스크린샷 자동 Line 공유
+
+### v119.13 视频画中画圆角 | Video PIP Corner Radius | ビデオPIP角丸半径 | 비디오 PIP 모서리 반경
+- ✅ 视频画中画圆角
+- ✅ Video PIP Corner Radius
+- ✅ ビデオPIP角丸半径
+- ✅ 비디오 PIP 모서리 반경
+
+### v119.14 弹幕字体背景填充透明度118 | Danmaku Font BG Fill Opacity118 | コメントフォントBGフィル透明度118 | 댓글 글꼴 배경 채우기 불투명도118
+- ✅ 弹幕字体背景填充透明度118
+- ✅ Danmaku Font BG Fill Opacity118
+- ✅ コメントフォントBGフィル透明度118
+- ✅ 댓글 글꼴 배경 채우기 불투명도118
+
+### v119.15 字幕动画循环119 | Subtitle Animation Loop119 | 字幕アニメーションループ119 | 자막 애니메이션 반복119
+- ✅ 字幕动画循环119
+- ✅ Subtitle Animation Loop119
+- ✅ 字幕アニメーションループ119
+- ✅ 자막 애니메이션 반복119
+
+### v120.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v120.1-v120.15 功能列表
+- ✅ Audio Dynamic Mono Fold, Danmaku Font BG Fill Opacity119, Subtitle Animation Loop120, Gesture Tap Custom Action, Cast Video Duotone Custom, Playlist Auto Save Position Toggle, Cache Verify Integrity On Start, Progress Bar Custom Scale Max, Volume Stereo Width Custom, History Search Whole Word, Playback Speed Auto Adjust Quality, Screenshot Auto Share KakaoTalk, Video PIP Opacity Custom, Danmaku Font BG Fill Angle119, Subtitle Animation Delay120
+
+### v120.1 音频动态单声道折叠 | Audio Dynamic Mono Fold | オーディオダイナミックモノフォールド | 오디오 다이나믹 모노 폴드
+- ✅ 音频动态单声道折叠
+- ✅ Audio Dynamic Mono Fold
+- ✅ オーディオダイナミックモノフォールド
+- ✅ 오디오 다이나믹 모노 폴드
+
+### v120.2 弹幕字体背景填充透明度119 | Danmaku Font BG Fill Opacity119 | コメントフォントBGフィル透明度119 | 댓글 글꼴 배경 채우기 불투명도119
+- ✅ 弹幕字体背景填充透明度119
+- ✅ Danmaku Font BG Fill Opacity119
+- ✅ コメントフォントBGフィル透明度119
+- ✅ 댓글 글꼴 배경 채우기 불투명도119
+
+### v120.3 字幕动画循环120 | Subtitle Animation Loop120 | 字幕アニメーションループ120 | 자막 애니메이션 반복120
+- ✅ 字幕动画循环120
+- ✅ Subtitle Animation Loop120
+- ✅ 字幕アニメーションループ120
+- ✅ 자막 애니메이션 반복120
+
+### v120.4 手势点击自定义动作 | Gesture Tap Custom Action | ジェスチャータップカスタムアクション | 제스처 탭 사용자 정의 동작
+- ✅ 手势点击自定义动作
+- ✅ Gesture Tap Custom Action
+- ✅ ジェスチャータップカスタムアクション
+- ✅ 제스처 탭 사용자 정의 동작
+
+### v120.5 投射视频双色调自定义 | Cast Video Duotone Custom | キャストビデオデュオトーンカスタム | 캐스트 비디오 듀오톤 사용자 정의
+- ✅ 投射视频双色调自定义
+- ✅ Cast Video Duotone Custom
+- ✅ キャストビデオデュオトーンカスタム
+- ✅ 캐스트 비디오 듀오톤 사용자 정의
+
+### v120.6 播放列表自动保存位置开关 | Playlist Auto Save Position Toggle | プレイリスト自動位置保存切替 | 재생 목록 자동 위치 저장 전환
+- ✅ 播放列表自动保存位置开关
+- ✅ Playlist Auto Save Position Toggle
+- ✅ プレイリスト自動位置保存切替
+- ✅ 재생 목록 자동 위치 저장 전환
+
+### v120.7 缓存启动时验证完整性 | Cache Verify Integrity On Start | キャッシュ起動時整合性検証 | 캐시 시작 시 무결성 검증
+- ✅ 缓存启动时验证完整性
+- ✅ Cache Verify Integrity On Start
+- ✅ キャッシュ起動時整合性検証
+- ✅ 캐시 시작 시 무결성 검증
+
+### v120.8 进度条自定义比例最大 | Progress Bar Custom Scale Max | プログレスバーカスタムスケール最大 | 진행 바 사용자 정의 스케일 최대
+- ✅ 进度条自定义比例最大
+- ✅ Progress Bar Custom Scale Max
+- ✅ プログレスバーカスタムスケール最大
+- ✅ 진행 바 사용자 정의 스케일 최대
+
+### v120.9 音量立体声宽度自定义 | Volume Stereo Width Custom | 音量ステレオ幅カスタム | 볼륨 스테레오 너비 사용자 정의
+- ✅ 音量立体声宽度自定义
+- ✅ Volume Stereo Width Custom
+- ✅ 音量ステレオ幅カスタム
+- ✅ 볼륨 스테레오 너비 사용자 정의
+
+### v120.10 历史记录搜索整词 | History Search Whole Word | 履歴検索完全一致 | 기록 검색 전체 단어
+- ✅ 历史记录搜索整词
+- ✅ History Search Whole Word
+- ✅ 履歴検索完全一致
+- ✅ 기록 검색 전체 단어
+
+### v120.11 播放速度自动调整画质 | Playback Speed Auto Adjust Quality | 再生速度自動調整画質 | 재생 속도 자동 조정 화질
+- ✅ 播放速度自动调整画质
+- ✅ Playback Speed Auto Adjust Quality
+- ✅ 再生速度自動調整画質
+- ✅ 재생 속도 자동 조정 화질
+
+### v120.12 截图自动分享KakaoTalk | Screenshot Auto Share KakaoTalk | スクリーンショット自動KakaoTalk共有 | 스크린샷 자동 KakaoTalk 공유
+- ✅ 截图自动分享KakaoTalk
+- ✅ Screenshot Auto Share KakaoTalk
+- ✅ スクリーンショット自動KakaoTalk共有
+- ✅ 스크린샷 자동 KakaoTalk 공유
+
+### v120.13 视频画中画透明度自定义 | Video PIP Opacity Custom | ビデオPIP透明度カスタム | 비디오 PIP 불투명도 사용자 정의
+- ✅ 视频画中画透明度自定义
+- ✅ Video PIP Opacity Custom
+- ✅ ビデオPIP透明度カスタム
+- ✅ 비디오 PIP 불투명도 사용자 정의
+
+### v120.14 弹幕字体背景填充角度119 | Danmaku Font BG Fill Angle119 | コメントフォントBGフィル角度119 | 댓글 글꼴 배경 채우기 각도119
+- ✅ 弹幕字体背景填充角度119
+- ✅ Danmaku Font BG Fill Angle119
+- ✅ コメントフォントBGフィル角度119
+- ✅ 댓글 글꼴 배경 채우기 각도119
+
+### v120.15 字幕动画延迟120 | Subtitle Animation Delay120 | 字幕アニメーション遅延120 | 자막 애니메이션 지연120
+- ✅ 字幕动画延迟120
+- ✅ Subtitle Animation Delay120
+- ✅ 字幕アニメーション遅延120
+- ✅ 자막 애니메이션 지연120
+
 ### v55.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
 ### v55.1-v55.15 功能列表
 - ✅ Auto Resume, Font Monospace, Color Hue Auto, Peak Limiter, Send Queue, Cast Bandwidth Limit, Lock Screen, Filter Regex, Network Policy, Double Tap Action, Font Weight Custom, Tint Custom, Volume Compressor, Bg Padding, Cast Auto Quality
@@ -17583,4 +18524,4 @@ This project is based on open-source software. All rights belong to the original
 - **基础版本 | Base Versions**: v10.0.0 - v11.19.0 (25 versions)
 - **AI自动维护版本 | AI Maintained**: v12.1 - v45.15 (550+ versions)
 - **开发周期 | Development Cycle**: 2024 - 2026
-- **功能特性 | Features**: 1100+ new features added
+- **功能特性 | Features**: 1200+ new features added
