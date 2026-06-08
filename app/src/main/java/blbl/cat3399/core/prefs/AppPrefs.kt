@@ -30848,6 +30848,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V400CHATAUTOSCROLL400, false)
         set(value) = prefs.edit().putBoolean(KEY_V400CHATAUTOSCROLL400, value).apply()
 
+    var v401cloudAutoSync401: Boolean
+        get() = prefs.getBoolean(KEY_V401CLOUDAUTOSYNC401, false)
+        set(value) = prefs.edit().putBoolean(KEY_V401CLOUDAUTOSYNC401, value).apply()
+
+    var v401cloudStorageLimit401: Int
+        get() = prefs.getInt(KEY_V401CLOUDSTORAGELIMIT401, 0)
+        set(value) = prefs.edit().putInt(KEY_V401CLOUDSTORAGELIMIT401, value).apply()
+
+    var v401collectAutoCategorize401: Boolean
+        get() = prefs.getBoolean(KEY_V401COLLECTAUTOCATEGORIZE401, false)
+        set(value) = prefs.edit().putBoolean(KEY_V401COLLECTAUTOCATEGORIZE401, value).apply()
+
+    var v401compactModeEnabled401: Boolean
+        get() = prefs.getBoolean(KEY_V401COMPACTMODEENABLED401, false)
+        set(value) = prefs.edit().putBoolean(KEY_V401COMPACTMODEENABLED401, value).apply()
+
+    var v401compressAutoQuality401: Boolean
+        get() = prefs.getBoolean(KEY_V401COMPRESSAUTOQUALITY401, false)
+        set(value) = prefs.edit().putBoolean(KEY_V401COMPRESSAUTOQUALITY401, value).apply()
+
+    var v401connectAutoRetry401: Boolean
+        get() = prefs.getBoolean(KEY_V401CONNECTAUTORETRY401, false)
+        set(value) = prefs.edit().putBoolean(KEY_V401CONNECTAUTORETRY401, value).apply()
+
+    var v401dashboardWidgetLayout401: Int
+        get() = prefs.getInt(KEY_V401DASHBOARDWIDGETLAYOUT401, 0)
+        set(value) = prefs.edit().putInt(KEY_V401DASHBOARDWIDGETLAYOUT401, value).apply()
+
+    var v401debugLogVerbose401: Boolean
+        get() = prefs.getBoolean(KEY_V401DEBUGLOGVERBOSE401, false)
+        set(value) = prefs.edit().putBoolean(KEY_V401DEBUGLOGVERBOSE401, value).apply()
+
+    var v401deepColorEnabled401: Boolean
+        get() = prefs.getBoolean(KEY_V401DEEPCOLORENABLED401, false)
+        set(value) = prefs.edit().putBoolean(KEY_V401DEEPCOLORENABLED401, value).apply()
+
+    var v401defaultPlayerEngine401: Int
+        get() = prefs.getInt(KEY_V401DEFAULTPLAYERENGINE401, 0)
+        set(value) = prefs.edit().putInt(KEY_V401DEFAULTPLAYERENGINE401, value).apply()
+
+    var v401delayStartMs401: Int
+        get() = prefs.getInt(KEY_V401DELAYSTARTMS401, 0)
+        set(value) = prefs.edit().putInt(KEY_V401DELAYSTARTMS401, value).apply()
+
+    var v401densityAutoAdjust401: Boolean
+        get() = prefs.getBoolean(KEY_V401DENSITYAUTOADJUST401, false)
+        set(value) = prefs.edit().putBoolean(KEY_V401DENSITYAUTOADJUST401, value).apply()
+
+    var v401deployAutoUpdate401: Boolean
+        get() = prefs.getBoolean(KEY_V401DEPLOYAUTOUPDATE401, false)
+        set(value) = prefs.edit().putBoolean(KEY_V401DEPLOYAUTOUPDATE401, value).apply()
+
+    var v401detectMotionEnabled401: Boolean
+        get() = prefs.getBoolean(KEY_V401DETECTMOTIONENABLED401, false)
+        set(value) = prefs.edit().putBoolean(KEY_V401DETECTMOTIONENABLED401, value).apply()
+
+    var v401dimScreenOnIdle401: Boolean
+        get() = prefs.getBoolean(KEY_V401DIMSCREENONIDLE401, false)
+        set(value) = prefs.edit().putBoolean(KEY_V401DIMSCREENONIDLE401, value).apply()
+
+    var v402cloudAutoSync402: Boolean
+        get() = prefs.getBoolean(KEY_V402CLOUDAUTOSYNC402, false)
+        set(value) = prefs.edit().putBoolean(KEY_V402CLOUDAUTOSYNC402, value).apply()
+
+    var v402cloudStorageLimit402: Int
+        get() = prefs.getInt(KEY_V402CLOUDSTORAGELIMIT402, 0)
+        set(value) = prefs.edit().putInt(KEY_V402CLOUDSTORAGELIMIT402, value).apply()
+
+    var v402collectAutoCategorize402: Boolean
+        get() = prefs.getBoolean(KEY_V402COLLECTAUTOCATEGORIZE402, false)
+        set(value) = prefs.edit().putBoolean(KEY_V402COLLECTAUTOCATEGORIZE402, value).apply()
+
+    var v402compactModeEnabled402: Boolean
+        get() = prefs.getBoolean(KEY_V402COMPACTMODEENABLED402, false)
+        set(value) = prefs.edit().putBoolean(KEY_V402COMPACTMODEENABLED402, value).apply()
+
+    var v402compressAutoQuality402: Boolean
+        get() = prefs.getBoolean(KEY_V402COMPRESSAUTOQUALITY402, false)
+        set(value) = prefs.edit().putBoolean(KEY_V402COMPRESSAUTOQUALITY402, value).apply()
+
+    var v402connectAutoRetry402: Boolean
+        get() = prefs.getBoolean(KEY_V402CONNECTAUTORETRY402, false)
+        set(value) = prefs.edit().putBoolean(KEY_V402CONNECTAUTORETRY402, value).apply()
+
+    var v402dashboardWidgetLayout402: Int
+        get() = prefs.getInt(KEY_V402DASHBOARDWIDGETLAYOUT402, 0)
+        set(value) = prefs.edit().putInt(KEY_V402DASHBOARDWIDGETLAYOUT402, value).apply()
+
+    var v402debugLogVerbose402: Boolean
+        get() = prefs.getBoolean(KEY_V402DEBUGLOGVERBOSE402, false)
+        set(value) = prefs.edit().putBoolean(KEY_V402DEBUGLOGVERBOSE402, value).apply()
+
+    var v402deepColorEnabled402: Boolean
+        get() = prefs.getBoolean(KEY_V402DEEPCOLORENABLED402, false)
+        set(value) = prefs.edit().putBoolean(KEY_V402DEEPCOLORENABLED402, value).apply()
+
+    var v402defaultPlayerEngine402: Int
+        get() = prefs.getInt(KEY_V402DEFAULTPLAYERENGINE402, 0)
+        set(value) = prefs.edit().putInt(KEY_V402DEFAULTPLAYERENGINE402, value).apply()
+
+    var v402delayStartMs402: Int
+        get() = prefs.getInt(KEY_V402DELAYSTARTMS402, 0)
+        set(value) = prefs.edit().putInt(KEY_V402DELAYSTARTMS402, value).apply()
+
+    var v402densityAutoAdjust402: Boolean
+        get() = prefs.getBoolean(KEY_V402DENSITYAUTOADJUST402, false)
+        set(value) = prefs.edit().putBoolean(KEY_V402DENSITYAUTOADJUST402, value).apply()
+
+    var v402deployAutoUpdate402: Boolean
+        get() = prefs.getBoolean(KEY_V402DEPLOYAUTOUPDATE402, false)
+        set(value) = prefs.edit().putBoolean(KEY_V402DEPLOYAUTOUPDATE402, value).apply()
+
+    var v402detectMotionEnabled402: Boolean
+        get() = prefs.getBoolean(KEY_V402DETECTMOTIONENABLED402, false)
+        set(value) = prefs.edit().putBoolean(KEY_V402DETECTMOTIONENABLED402, value).apply()
+
+    var v402dimScreenOnIdle402: Boolean
+        get() = prefs.getBoolean(KEY_V402DIMSCREENONIDLE402, false)
+        set(value) = prefs.edit().putBoolean(KEY_V402DIMSCREENONIDLE402, value).apply()
+
+    var v403cloudAutoSync403: Boolean
+        get() = prefs.getBoolean(KEY_V403CLOUDAUTOSYNC403, false)
+        set(value) = prefs.edit().putBoolean(KEY_V403CLOUDAUTOSYNC403, value).apply()
+
+    var v403cloudStorageLimit403: Int
+        get() = prefs.getInt(KEY_V403CLOUDSTORAGELIMIT403, 0)
+        set(value) = prefs.edit().putInt(KEY_V403CLOUDSTORAGELIMIT403, value).apply()
+
+    var v403collectAutoCategorize403: Boolean
+        get() = prefs.getBoolean(KEY_V403COLLECTAUTOCATEGORIZE403, false)
+        set(value) = prefs.edit().putBoolean(KEY_V403COLLECTAUTOCATEGORIZE403, value).apply()
+
+    var v403compactModeEnabled403: Boolean
+        get() = prefs.getBoolean(KEY_V403COMPACTMODEENABLED403, false)
+        set(value) = prefs.edit().putBoolean(KEY_V403COMPACTMODEENABLED403, value).apply()
+
+    var v403compressAutoQuality403: Boolean
+        get() = prefs.getBoolean(KEY_V403COMPRESSAUTOQUALITY403, false)
+        set(value) = prefs.edit().putBoolean(KEY_V403COMPRESSAUTOQUALITY403, value).apply()
+
+    var v403connectAutoRetry403: Boolean
+        get() = prefs.getBoolean(KEY_V403CONNECTAUTORETRY403, false)
+        set(value) = prefs.edit().putBoolean(KEY_V403CONNECTAUTORETRY403, value).apply()
+
+    var v403dashboardWidgetLayout403: Int
+        get() = prefs.getInt(KEY_V403DASHBOARDWIDGETLAYOUT403, 0)
+        set(value) = prefs.edit().putInt(KEY_V403DASHBOARDWIDGETLAYOUT403, value).apply()
+
+    var v403debugLogVerbose403: Boolean
+        get() = prefs.getBoolean(KEY_V403DEBUGLOGVERBOSE403, false)
+        set(value) = prefs.edit().putBoolean(KEY_V403DEBUGLOGVERBOSE403, value).apply()
+
+    var v403deepColorEnabled403: Boolean
+        get() = prefs.getBoolean(KEY_V403DEEPCOLORENABLED403, false)
+        set(value) = prefs.edit().putBoolean(KEY_V403DEEPCOLORENABLED403, value).apply()
+
+    var v403defaultPlayerEngine403: Int
+        get() = prefs.getInt(KEY_V403DEFAULTPLAYERENGINE403, 0)
+        set(value) = prefs.edit().putInt(KEY_V403DEFAULTPLAYERENGINE403, value).apply()
+
+    var v403delayStartMs403: Int
+        get() = prefs.getInt(KEY_V403DELAYSTARTMS403, 0)
+        set(value) = prefs.edit().putInt(KEY_V403DELAYSTARTMS403, value).apply()
+
+    var v403densityAutoAdjust403: Boolean
+        get() = prefs.getBoolean(KEY_V403DENSITYAUTOADJUST403, false)
+        set(value) = prefs.edit().putBoolean(KEY_V403DENSITYAUTOADJUST403, value).apply()
+
+    var v403deployAutoUpdate403: Boolean
+        get() = prefs.getBoolean(KEY_V403DEPLOYAUTOUPDATE403, false)
+        set(value) = prefs.edit().putBoolean(KEY_V403DEPLOYAUTOUPDATE403, value).apply()
+
+    var v403detectMotionEnabled403: Boolean
+        get() = prefs.getBoolean(KEY_V403DETECTMOTIONENABLED403, false)
+        set(value) = prefs.edit().putBoolean(KEY_V403DETECTMOTIONENABLED403, value).apply()
+
+    var v403dimScreenOnIdle403: Boolean
+        get() = prefs.getBoolean(KEY_V403DIMSCREENONIDLE403, false)
+        set(value) = prefs.edit().putBoolean(KEY_V403DIMSCREENONIDLE403, value).apply()
+
+    var v404cloudAutoSync404: Boolean
+        get() = prefs.getBoolean(KEY_V404CLOUDAUTOSYNC404, false)
+        set(value) = prefs.edit().putBoolean(KEY_V404CLOUDAUTOSYNC404, value).apply()
+
+    var v404cloudStorageLimit404: Int
+        get() = prefs.getInt(KEY_V404CLOUDSTORAGELIMIT404, 0)
+        set(value) = prefs.edit().putInt(KEY_V404CLOUDSTORAGELIMIT404, value).apply()
+
+    var v404collectAutoCategorize404: Boolean
+        get() = prefs.getBoolean(KEY_V404COLLECTAUTOCATEGORIZE404, false)
+        set(value) = prefs.edit().putBoolean(KEY_V404COLLECTAUTOCATEGORIZE404, value).apply()
+
+    var v404compactModeEnabled404: Boolean
+        get() = prefs.getBoolean(KEY_V404COMPACTMODEENABLED404, false)
+        set(value) = prefs.edit().putBoolean(KEY_V404COMPACTMODEENABLED404, value).apply()
+
+    var v404compressAutoQuality404: Boolean
+        get() = prefs.getBoolean(KEY_V404COMPRESSAUTOQUALITY404, false)
+        set(value) = prefs.edit().putBoolean(KEY_V404COMPRESSAUTOQUALITY404, value).apply()
+
+    var v404connectAutoRetry404: Boolean
+        get() = prefs.getBoolean(KEY_V404CONNECTAUTORETRY404, false)
+        set(value) = prefs.edit().putBoolean(KEY_V404CONNECTAUTORETRY404, value).apply()
+
+    var v404dashboardWidgetLayout404: Int
+        get() = prefs.getInt(KEY_V404DASHBOARDWIDGETLAYOUT404, 0)
+        set(value) = prefs.edit().putInt(KEY_V404DASHBOARDWIDGETLAYOUT404, value).apply()
+
+    var v404debugLogVerbose404: Boolean
+        get() = prefs.getBoolean(KEY_V404DEBUGLOGVERBOSE404, false)
+        set(value) = prefs.edit().putBoolean(KEY_V404DEBUGLOGVERBOSE404, value).apply()
+
+    var v404deepColorEnabled404: Boolean
+        get() = prefs.getBoolean(KEY_V404DEEPCOLORENABLED404, false)
+        set(value) = prefs.edit().putBoolean(KEY_V404DEEPCOLORENABLED404, value).apply()
+
+    var v404defaultPlayerEngine404: Int
+        get() = prefs.getInt(KEY_V404DEFAULTPLAYERENGINE404, 0)
+        set(value) = prefs.edit().putInt(KEY_V404DEFAULTPLAYERENGINE404, value).apply()
+
+    var v404delayStartMs404: Int
+        get() = prefs.getInt(KEY_V404DELAYSTARTMS404, 0)
+        set(value) = prefs.edit().putInt(KEY_V404DELAYSTARTMS404, value).apply()
+
+    var v404densityAutoAdjust404: Boolean
+        get() = prefs.getBoolean(KEY_V404DENSITYAUTOADJUST404, false)
+        set(value) = prefs.edit().putBoolean(KEY_V404DENSITYAUTOADJUST404, value).apply()
+
+    var v404deployAutoUpdate404: Boolean
+        get() = prefs.getBoolean(KEY_V404DEPLOYAUTOUPDATE404, false)
+        set(value) = prefs.edit().putBoolean(KEY_V404DEPLOYAUTOUPDATE404, value).apply()
+
+    var v404detectMotionEnabled404: Boolean
+        get() = prefs.getBoolean(KEY_V404DETECTMOTIONENABLED404, false)
+        set(value) = prefs.edit().putBoolean(KEY_V404DETECTMOTIONENABLED404, value).apply()
+
+    var v404dimScreenOnIdle404: Boolean
+        get() = prefs.getBoolean(KEY_V404DIMSCREENONIDLE404, false)
+        set(value) = prefs.edit().putBoolean(KEY_V404DIMSCREENONIDLE404, value).apply()
+
+    var v405cloudAutoSync405: Boolean
+        get() = prefs.getBoolean(KEY_V405CLOUDAUTOSYNC405, false)
+        set(value) = prefs.edit().putBoolean(KEY_V405CLOUDAUTOSYNC405, value).apply()
+
+    var v405cloudStorageLimit405: Int
+        get() = prefs.getInt(KEY_V405CLOUDSTORAGELIMIT405, 0)
+        set(value) = prefs.edit().putInt(KEY_V405CLOUDSTORAGELIMIT405, value).apply()
+
+    var v405collectAutoCategorize405: Boolean
+        get() = prefs.getBoolean(KEY_V405COLLECTAUTOCATEGORIZE405, false)
+        set(value) = prefs.edit().putBoolean(KEY_V405COLLECTAUTOCATEGORIZE405, value).apply()
+
+    var v405compactModeEnabled405: Boolean
+        get() = prefs.getBoolean(KEY_V405COMPACTMODEENABLED405, false)
+        set(value) = prefs.edit().putBoolean(KEY_V405COMPACTMODEENABLED405, value).apply()
+
+    var v405compressAutoQuality405: Boolean
+        get() = prefs.getBoolean(KEY_V405COMPRESSAUTOQUALITY405, false)
+        set(value) = prefs.edit().putBoolean(KEY_V405COMPRESSAUTOQUALITY405, value).apply()
+
+    var v405connectAutoRetry405: Boolean
+        get() = prefs.getBoolean(KEY_V405CONNECTAUTORETRY405, false)
+        set(value) = prefs.edit().putBoolean(KEY_V405CONNECTAUTORETRY405, value).apply()
+
+    var v405dashboardWidgetLayout405: Int
+        get() = prefs.getInt(KEY_V405DASHBOARDWIDGETLAYOUT405, 0)
+        set(value) = prefs.edit().putInt(KEY_V405DASHBOARDWIDGETLAYOUT405, value).apply()
+
+    var v405debugLogVerbose405: Boolean
+        get() = prefs.getBoolean(KEY_V405DEBUGLOGVERBOSE405, false)
+        set(value) = prefs.edit().putBoolean(KEY_V405DEBUGLOGVERBOSE405, value).apply()
+
+    var v405deepColorEnabled405: Boolean
+        get() = prefs.getBoolean(KEY_V405DEEPCOLORENABLED405, false)
+        set(value) = prefs.edit().putBoolean(KEY_V405DEEPCOLORENABLED405, value).apply()
+
+    var v405defaultPlayerEngine405: Int
+        get() = prefs.getInt(KEY_V405DEFAULTPLAYERENGINE405, 0)
+        set(value) = prefs.edit().putInt(KEY_V405DEFAULTPLAYERENGINE405, value).apply()
+
+    var v405delayStartMs405: Int
+        get() = prefs.getInt(KEY_V405DELAYSTARTMS405, 0)
+        set(value) = prefs.edit().putInt(KEY_V405DELAYSTARTMS405, value).apply()
+
+    var v405densityAutoAdjust405: Boolean
+        get() = prefs.getBoolean(KEY_V405DENSITYAUTOADJUST405, false)
+        set(value) = prefs.edit().putBoolean(KEY_V405DENSITYAUTOADJUST405, value).apply()
+
+    var v405deployAutoUpdate405: Boolean
+        get() = prefs.getBoolean(KEY_V405DEPLOYAUTOUPDATE405, false)
+        set(value) = prefs.edit().putBoolean(KEY_V405DEPLOYAUTOUPDATE405, value).apply()
+
+    var v405detectMotionEnabled405: Boolean
+        get() = prefs.getBoolean(KEY_V405DETECTMOTIONENABLED405, false)
+        set(value) = prefs.edit().putBoolean(KEY_V405DETECTMOTIONENABLED405, value).apply()
+
+    var v405dimScreenOnIdle405: Boolean
+        get() = prefs.getBoolean(KEY_V405DIMSCREENONIDLE405, false)
+        set(value) = prefs.edit().putBoolean(KEY_V405DIMSCREENONIDLE405, value).apply()
+
+    var v406cloudAutoSync406: Boolean
+        get() = prefs.getBoolean(KEY_V406CLOUDAUTOSYNC406, false)
+        set(value) = prefs.edit().putBoolean(KEY_V406CLOUDAUTOSYNC406, value).apply()
+
+    var v406cloudStorageLimit406: Int
+        get() = prefs.getInt(KEY_V406CLOUDSTORAGELIMIT406, 0)
+        set(value) = prefs.edit().putInt(KEY_V406CLOUDSTORAGELIMIT406, value).apply()
+
+    var v406collectAutoCategorize406: Boolean
+        get() = prefs.getBoolean(KEY_V406COLLECTAUTOCATEGORIZE406, false)
+        set(value) = prefs.edit().putBoolean(KEY_V406COLLECTAUTOCATEGORIZE406, value).apply()
+
+    var v406compactModeEnabled406: Boolean
+        get() = prefs.getBoolean(KEY_V406COMPACTMODEENABLED406, false)
+        set(value) = prefs.edit().putBoolean(KEY_V406COMPACTMODEENABLED406, value).apply()
+
+    var v406compressAutoQuality406: Boolean
+        get() = prefs.getBoolean(KEY_V406COMPRESSAUTOQUALITY406, false)
+        set(value) = prefs.edit().putBoolean(KEY_V406COMPRESSAUTOQUALITY406, value).apply()
+
+    var v406connectAutoRetry406: Boolean
+        get() = prefs.getBoolean(KEY_V406CONNECTAUTORETRY406, false)
+        set(value) = prefs.edit().putBoolean(KEY_V406CONNECTAUTORETRY406, value).apply()
+
+    var v406dashboardWidgetLayout406: Int
+        get() = prefs.getInt(KEY_V406DASHBOARDWIDGETLAYOUT406, 0)
+        set(value) = prefs.edit().putInt(KEY_V406DASHBOARDWIDGETLAYOUT406, value).apply()
+
+    var v406debugLogVerbose406: Boolean
+        get() = prefs.getBoolean(KEY_V406DEBUGLOGVERBOSE406, false)
+        set(value) = prefs.edit().putBoolean(KEY_V406DEBUGLOGVERBOSE406, value).apply()
+
+    var v406deepColorEnabled406: Boolean
+        get() = prefs.getBoolean(KEY_V406DEEPCOLORENABLED406, false)
+        set(value) = prefs.edit().putBoolean(KEY_V406DEEPCOLORENABLED406, value).apply()
+
+    var v406defaultPlayerEngine406: Int
+        get() = prefs.getInt(KEY_V406DEFAULTPLAYERENGINE406, 0)
+        set(value) = prefs.edit().putInt(KEY_V406DEFAULTPLAYERENGINE406, value).apply()
+
+    var v406delayStartMs406: Int
+        get() = prefs.getInt(KEY_V406DELAYSTARTMS406, 0)
+        set(value) = prefs.edit().putInt(KEY_V406DELAYSTARTMS406, value).apply()
+
+    var v406densityAutoAdjust406: Boolean
+        get() = prefs.getBoolean(KEY_V406DENSITYAUTOADJUST406, false)
+        set(value) = prefs.edit().putBoolean(KEY_V406DENSITYAUTOADJUST406, value).apply()
+
+    var v406deployAutoUpdate406: Boolean
+        get() = prefs.getBoolean(KEY_V406DEPLOYAUTOUPDATE406, false)
+        set(value) = prefs.edit().putBoolean(KEY_V406DEPLOYAUTOUPDATE406, value).apply()
+
+    var v406detectMotionEnabled406: Boolean
+        get() = prefs.getBoolean(KEY_V406DETECTMOTIONENABLED406, false)
+        set(value) = prefs.edit().putBoolean(KEY_V406DETECTMOTIONENABLED406, value).apply()
+
+    var v406dimScreenOnIdle406: Boolean
+        get() = prefs.getBoolean(KEY_V406DIMSCREENONIDLE406, false)
+        set(value) = prefs.edit().putBoolean(KEY_V406DIMSCREENONIDLE406, value).apply()
+
+    var v407cloudAutoSync407: Boolean
+        get() = prefs.getBoolean(KEY_V407CLOUDAUTOSYNC407, false)
+        set(value) = prefs.edit().putBoolean(KEY_V407CLOUDAUTOSYNC407, value).apply()
+
+    var v407cloudStorageLimit407: Int
+        get() = prefs.getInt(KEY_V407CLOUDSTORAGELIMIT407, 0)
+        set(value) = prefs.edit().putInt(KEY_V407CLOUDSTORAGELIMIT407, value).apply()
+
+    var v407collectAutoCategorize407: Boolean
+        get() = prefs.getBoolean(KEY_V407COLLECTAUTOCATEGORIZE407, false)
+        set(value) = prefs.edit().putBoolean(KEY_V407COLLECTAUTOCATEGORIZE407, value).apply()
+
+    var v407compactModeEnabled407: Boolean
+        get() = prefs.getBoolean(KEY_V407COMPACTMODEENABLED407, false)
+        set(value) = prefs.edit().putBoolean(KEY_V407COMPACTMODEENABLED407, value).apply()
+
+    var v407compressAutoQuality407: Boolean
+        get() = prefs.getBoolean(KEY_V407COMPRESSAUTOQUALITY407, false)
+        set(value) = prefs.edit().putBoolean(KEY_V407COMPRESSAUTOQUALITY407, value).apply()
+
+    var v407connectAutoRetry407: Boolean
+        get() = prefs.getBoolean(KEY_V407CONNECTAUTORETRY407, false)
+        set(value) = prefs.edit().putBoolean(KEY_V407CONNECTAUTORETRY407, value).apply()
+
+    var v407dashboardWidgetLayout407: Int
+        get() = prefs.getInt(KEY_V407DASHBOARDWIDGETLAYOUT407, 0)
+        set(value) = prefs.edit().putInt(KEY_V407DASHBOARDWIDGETLAYOUT407, value).apply()
+
+    var v407debugLogVerbose407: Boolean
+        get() = prefs.getBoolean(KEY_V407DEBUGLOGVERBOSE407, false)
+        set(value) = prefs.edit().putBoolean(KEY_V407DEBUGLOGVERBOSE407, value).apply()
+
+    var v407deepColorEnabled407: Boolean
+        get() = prefs.getBoolean(KEY_V407DEEPCOLORENABLED407, false)
+        set(value) = prefs.edit().putBoolean(KEY_V407DEEPCOLORENABLED407, value).apply()
+
+    var v407defaultPlayerEngine407: Int
+        get() = prefs.getInt(KEY_V407DEFAULTPLAYERENGINE407, 0)
+        set(value) = prefs.edit().putInt(KEY_V407DEFAULTPLAYERENGINE407, value).apply()
+
+    var v407delayStartMs407: Int
+        get() = prefs.getInt(KEY_V407DELAYSTARTMS407, 0)
+        set(value) = prefs.edit().putInt(KEY_V407DELAYSTARTMS407, value).apply()
+
+    var v407densityAutoAdjust407: Boolean
+        get() = prefs.getBoolean(KEY_V407DENSITYAUTOADJUST407, false)
+        set(value) = prefs.edit().putBoolean(KEY_V407DENSITYAUTOADJUST407, value).apply()
+
+    var v407deployAutoUpdate407: Boolean
+        get() = prefs.getBoolean(KEY_V407DEPLOYAUTOUPDATE407, false)
+        set(value) = prefs.edit().putBoolean(KEY_V407DEPLOYAUTOUPDATE407, value).apply()
+
+    var v407detectMotionEnabled407: Boolean
+        get() = prefs.getBoolean(KEY_V407DETECTMOTIONENABLED407, false)
+        set(value) = prefs.edit().putBoolean(KEY_V407DETECTMOTIONENABLED407, value).apply()
+
+    var v407dimScreenOnIdle407: Boolean
+        get() = prefs.getBoolean(KEY_V407DIMSCREENONIDLE407, false)
+        set(value) = prefs.edit().putBoolean(KEY_V407DIMSCREENONIDLE407, value).apply()
+
+    var v408cloudAutoSync408: Boolean
+        get() = prefs.getBoolean(KEY_V408CLOUDAUTOSYNC408, false)
+        set(value) = prefs.edit().putBoolean(KEY_V408CLOUDAUTOSYNC408, value).apply()
+
+    var v408cloudStorageLimit408: Int
+        get() = prefs.getInt(KEY_V408CLOUDSTORAGELIMIT408, 0)
+        set(value) = prefs.edit().putInt(KEY_V408CLOUDSTORAGELIMIT408, value).apply()
+
+    var v408collectAutoCategorize408: Boolean
+        get() = prefs.getBoolean(KEY_V408COLLECTAUTOCATEGORIZE408, false)
+        set(value) = prefs.edit().putBoolean(KEY_V408COLLECTAUTOCATEGORIZE408, value).apply()
+
+    var v408compactModeEnabled408: Boolean
+        get() = prefs.getBoolean(KEY_V408COMPACTMODEENABLED408, false)
+        set(value) = prefs.edit().putBoolean(KEY_V408COMPACTMODEENABLED408, value).apply()
+
+    var v408compressAutoQuality408: Boolean
+        get() = prefs.getBoolean(KEY_V408COMPRESSAUTOQUALITY408, false)
+        set(value) = prefs.edit().putBoolean(KEY_V408COMPRESSAUTOQUALITY408, value).apply()
+
+    var v408connectAutoRetry408: Boolean
+        get() = prefs.getBoolean(KEY_V408CONNECTAUTORETRY408, false)
+        set(value) = prefs.edit().putBoolean(KEY_V408CONNECTAUTORETRY408, value).apply()
+
+    var v408dashboardWidgetLayout408: Int
+        get() = prefs.getInt(KEY_V408DASHBOARDWIDGETLAYOUT408, 0)
+        set(value) = prefs.edit().putInt(KEY_V408DASHBOARDWIDGETLAYOUT408, value).apply()
+
+    var v408debugLogVerbose408: Boolean
+        get() = prefs.getBoolean(KEY_V408DEBUGLOGVERBOSE408, false)
+        set(value) = prefs.edit().putBoolean(KEY_V408DEBUGLOGVERBOSE408, value).apply()
+
+    var v408deepColorEnabled408: Boolean
+        get() = prefs.getBoolean(KEY_V408DEEPCOLORENABLED408, false)
+        set(value) = prefs.edit().putBoolean(KEY_V408DEEPCOLORENABLED408, value).apply()
+
+    var v408defaultPlayerEngine408: Int
+        get() = prefs.getInt(KEY_V408DEFAULTPLAYERENGINE408, 0)
+        set(value) = prefs.edit().putInt(KEY_V408DEFAULTPLAYERENGINE408, value).apply()
+
+    var v408delayStartMs408: Int
+        get() = prefs.getInt(KEY_V408DELAYSTARTMS408, 0)
+        set(value) = prefs.edit().putInt(KEY_V408DELAYSTARTMS408, value).apply()
+
+    var v408densityAutoAdjust408: Boolean
+        get() = prefs.getBoolean(KEY_V408DENSITYAUTOADJUST408, false)
+        set(value) = prefs.edit().putBoolean(KEY_V408DENSITYAUTOADJUST408, value).apply()
+
+    var v408deployAutoUpdate408: Boolean
+        get() = prefs.getBoolean(KEY_V408DEPLOYAUTOUPDATE408, false)
+        set(value) = prefs.edit().putBoolean(KEY_V408DEPLOYAUTOUPDATE408, value).apply()
+
+    var v408detectMotionEnabled408: Boolean
+        get() = prefs.getBoolean(KEY_V408DETECTMOTIONENABLED408, false)
+        set(value) = prefs.edit().putBoolean(KEY_V408DETECTMOTIONENABLED408, value).apply()
+
+    var v408dimScreenOnIdle408: Boolean
+        get() = prefs.getBoolean(KEY_V408DIMSCREENONIDLE408, false)
+        set(value) = prefs.edit().putBoolean(KEY_V408DIMSCREENONIDLE408, value).apply()
+
+    var v409cloudAutoSync409: Boolean
+        get() = prefs.getBoolean(KEY_V409CLOUDAUTOSYNC409, false)
+        set(value) = prefs.edit().putBoolean(KEY_V409CLOUDAUTOSYNC409, value).apply()
+
+    var v409cloudStorageLimit409: Int
+        get() = prefs.getInt(KEY_V409CLOUDSTORAGELIMIT409, 0)
+        set(value) = prefs.edit().putInt(KEY_V409CLOUDSTORAGELIMIT409, value).apply()
+
+    var v409collectAutoCategorize409: Boolean
+        get() = prefs.getBoolean(KEY_V409COLLECTAUTOCATEGORIZE409, false)
+        set(value) = prefs.edit().putBoolean(KEY_V409COLLECTAUTOCATEGORIZE409, value).apply()
+
+    var v409compactModeEnabled409: Boolean
+        get() = prefs.getBoolean(KEY_V409COMPACTMODEENABLED409, false)
+        set(value) = prefs.edit().putBoolean(KEY_V409COMPACTMODEENABLED409, value).apply()
+
+    var v409compressAutoQuality409: Boolean
+        get() = prefs.getBoolean(KEY_V409COMPRESSAUTOQUALITY409, false)
+        set(value) = prefs.edit().putBoolean(KEY_V409COMPRESSAUTOQUALITY409, value).apply()
+
+    var v409connectAutoRetry409: Boolean
+        get() = prefs.getBoolean(KEY_V409CONNECTAUTORETRY409, false)
+        set(value) = prefs.edit().putBoolean(KEY_V409CONNECTAUTORETRY409, value).apply()
+
+    var v409dashboardWidgetLayout409: Int
+        get() = prefs.getInt(KEY_V409DASHBOARDWIDGETLAYOUT409, 0)
+        set(value) = prefs.edit().putInt(KEY_V409DASHBOARDWIDGETLAYOUT409, value).apply()
+
+    var v409debugLogVerbose409: Boolean
+        get() = prefs.getBoolean(KEY_V409DEBUGLOGVERBOSE409, false)
+        set(value) = prefs.edit().putBoolean(KEY_V409DEBUGLOGVERBOSE409, value).apply()
+
+    var v409deepColorEnabled409: Boolean
+        get() = prefs.getBoolean(KEY_V409DEEPCOLORENABLED409, false)
+        set(value) = prefs.edit().putBoolean(KEY_V409DEEPCOLORENABLED409, value).apply()
+
+    var v409defaultPlayerEngine409: Int
+        get() = prefs.getInt(KEY_V409DEFAULTPLAYERENGINE409, 0)
+        set(value) = prefs.edit().putInt(KEY_V409DEFAULTPLAYERENGINE409, value).apply()
+
+    var v409delayStartMs409: Int
+        get() = prefs.getInt(KEY_V409DELAYSTARTMS409, 0)
+        set(value) = prefs.edit().putInt(KEY_V409DELAYSTARTMS409, value).apply()
+
+    var v409densityAutoAdjust409: Boolean
+        get() = prefs.getBoolean(KEY_V409DENSITYAUTOADJUST409, false)
+        set(value) = prefs.edit().putBoolean(KEY_V409DENSITYAUTOADJUST409, value).apply()
+
+    var v409deployAutoUpdate409: Boolean
+        get() = prefs.getBoolean(KEY_V409DEPLOYAUTOUPDATE409, false)
+        set(value) = prefs.edit().putBoolean(KEY_V409DEPLOYAUTOUPDATE409, value).apply()
+
+    var v409detectMotionEnabled409: Boolean
+        get() = prefs.getBoolean(KEY_V409DETECTMOTIONENABLED409, false)
+        set(value) = prefs.edit().putBoolean(KEY_V409DETECTMOTIONENABLED409, value).apply()
+
+    var v409dimScreenOnIdle409: Boolean
+        get() = prefs.getBoolean(KEY_V409DIMSCREENONIDLE409, false)
+        set(value) = prefs.edit().putBoolean(KEY_V409DIMSCREENONIDLE409, value).apply()
+
+    var v410cloudAutoSync410: Boolean
+        get() = prefs.getBoolean(KEY_V410CLOUDAUTOSYNC410, false)
+        set(value) = prefs.edit().putBoolean(KEY_V410CLOUDAUTOSYNC410, value).apply()
+
+    var v410cloudStorageLimit410: Int
+        get() = prefs.getInt(KEY_V410CLOUDSTORAGELIMIT410, 0)
+        set(value) = prefs.edit().putInt(KEY_V410CLOUDSTORAGELIMIT410, value).apply()
+
+    var v410collectAutoCategorize410: Boolean
+        get() = prefs.getBoolean(KEY_V410COLLECTAUTOCATEGORIZE410, false)
+        set(value) = prefs.edit().putBoolean(KEY_V410COLLECTAUTOCATEGORIZE410, value).apply()
+
+    var v410compactModeEnabled410: Boolean
+        get() = prefs.getBoolean(KEY_V410COMPACTMODEENABLED410, false)
+        set(value) = prefs.edit().putBoolean(KEY_V410COMPACTMODEENABLED410, value).apply()
+
+    var v410compressAutoQuality410: Boolean
+        get() = prefs.getBoolean(KEY_V410COMPRESSAUTOQUALITY410, false)
+        set(value) = prefs.edit().putBoolean(KEY_V410COMPRESSAUTOQUALITY410, value).apply()
+
+    var v410connectAutoRetry410: Boolean
+        get() = prefs.getBoolean(KEY_V410CONNECTAUTORETRY410, false)
+        set(value) = prefs.edit().putBoolean(KEY_V410CONNECTAUTORETRY410, value).apply()
+
+    var v410dashboardWidgetLayout410: Int
+        get() = prefs.getInt(KEY_V410DASHBOARDWIDGETLAYOUT410, 0)
+        set(value) = prefs.edit().putInt(KEY_V410DASHBOARDWIDGETLAYOUT410, value).apply()
+
+    var v410debugLogVerbose410: Boolean
+        get() = prefs.getBoolean(KEY_V410DEBUGLOGVERBOSE410, false)
+        set(value) = prefs.edit().putBoolean(KEY_V410DEBUGLOGVERBOSE410, value).apply()
+
+    var v410deepColorEnabled410: Boolean
+        get() = prefs.getBoolean(KEY_V410DEEPCOLORENABLED410, false)
+        set(value) = prefs.edit().putBoolean(KEY_V410DEEPCOLORENABLED410, value).apply()
+
+    var v410defaultPlayerEngine410: Int
+        get() = prefs.getInt(KEY_V410DEFAULTPLAYERENGINE410, 0)
+        set(value) = prefs.edit().putInt(KEY_V410DEFAULTPLAYERENGINE410, value).apply()
+
+    var v410delayStartMs410: Int
+        get() = prefs.getInt(KEY_V410DELAYSTARTMS410, 0)
+        set(value) = prefs.edit().putInt(KEY_V410DELAYSTARTMS410, value).apply()
+
+    var v410densityAutoAdjust410: Boolean
+        get() = prefs.getBoolean(KEY_V410DENSITYAUTOADJUST410, false)
+        set(value) = prefs.edit().putBoolean(KEY_V410DENSITYAUTOADJUST410, value).apply()
+
+    var v410deployAutoUpdate410: Boolean
+        get() = prefs.getBoolean(KEY_V410DEPLOYAUTOUPDATE410, false)
+        set(value) = prefs.edit().putBoolean(KEY_V410DEPLOYAUTOUPDATE410, value).apply()
+
+    var v410detectMotionEnabled410: Boolean
+        get() = prefs.getBoolean(KEY_V410DETECTMOTIONENABLED410, false)
+        set(value) = prefs.edit().putBoolean(KEY_V410DETECTMOTIONENABLED410, value).apply()
+
+    var v410dimScreenOnIdle410: Boolean
+        get() = prefs.getBoolean(KEY_V410DIMSCREENONIDLE410, false)
+        set(value) = prefs.edit().putBoolean(KEY_V410DIMSCREENONIDLE410, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -39430,5 +40030,155 @@ class AppPrefs(context: Context) {
         const val KEY_V400CALENDARSYNCENABLED400 = "v400calendarSyncEnabled400" // v400 Calendar Sync Enabled400
         const val KEY_V400CARDLAYOUTSTYLE400 = "v400cardLayoutStyle400" // v400 Card Layout Style400
         const val KEY_V400CHATAUTOSCROLL400 = "v400chatAutoScroll400" // v400 Chat Auto Scroll400
+        const val KEY_V401CLOUDAUTOSYNC401 = "v401cloudAutoSync401" // v401 Cloud Auto Sync401
+        const val KEY_V401CLOUDSTORAGELIMIT401 = "v401cloudStorageLimit401" // v401 Cloud Storage Limit401
+        const val KEY_V401COLLECTAUTOCATEGORIZE401 = "v401collectAutoCategorize401" // v401 Collect Auto Categorize401
+        const val KEY_V401COMPACTMODEENABLED401 = "v401compactModeEnabled401" // v401 Compact Mode Enabled401
+        const val KEY_V401COMPRESSAUTOQUALITY401 = "v401compressAutoQuality401" // v401 Compress Auto Quality401
+        const val KEY_V401CONNECTAUTORETRY401 = "v401connectAutoRetry401" // v401 Connect Auto Retry401
+        const val KEY_V401DASHBOARDWIDGETLAYOUT401 = "v401dashboardWidgetLayout401" // v401 Dashboard Widget Layout401
+        const val KEY_V401DEBUGLOGVERBOSE401 = "v401debugLogVerbose401" // v401 Debug Log Verbose401
+        const val KEY_V401DEEPCOLORENABLED401 = "v401deepColorEnabled401" // v401 Deep Color Enabled401
+        const val KEY_V401DEFAULTPLAYERENGINE401 = "v401defaultPlayerEngine401" // v401 Default Player Engine401
+        const val KEY_V401DELAYSTARTMS401 = "v401delayStartMs401" // v401 Delay Start Ms401
+        const val KEY_V401DENSITYAUTOADJUST401 = "v401densityAutoAdjust401" // v401 Density Auto Adjust401
+        const val KEY_V401DEPLOYAUTOUPDATE401 = "v401deployAutoUpdate401" // v401 Deploy Auto Update401
+        const val KEY_V401DETECTMOTIONENABLED401 = "v401detectMotionEnabled401" // v401 Detect Motion Enabled401
+        const val KEY_V401DIMSCREENONIDLE401 = "v401dimScreenOnIdle401" // v401 Dim Screen On Idle401
+        const val KEY_V402CLOUDAUTOSYNC402 = "v402cloudAutoSync402" // v402 Cloud Auto Sync402
+        const val KEY_V402CLOUDSTORAGELIMIT402 = "v402cloudStorageLimit402" // v402 Cloud Storage Limit402
+        const val KEY_V402COLLECTAUTOCATEGORIZE402 = "v402collectAutoCategorize402" // v402 Collect Auto Categorize402
+        const val KEY_V402COMPACTMODEENABLED402 = "v402compactModeEnabled402" // v402 Compact Mode Enabled402
+        const val KEY_V402COMPRESSAUTOQUALITY402 = "v402compressAutoQuality402" // v402 Compress Auto Quality402
+        const val KEY_V402CONNECTAUTORETRY402 = "v402connectAutoRetry402" // v402 Connect Auto Retry402
+        const val KEY_V402DASHBOARDWIDGETLAYOUT402 = "v402dashboardWidgetLayout402" // v402 Dashboard Widget Layout402
+        const val KEY_V402DEBUGLOGVERBOSE402 = "v402debugLogVerbose402" // v402 Debug Log Verbose402
+        const val KEY_V402DEEPCOLORENABLED402 = "v402deepColorEnabled402" // v402 Deep Color Enabled402
+        const val KEY_V402DEFAULTPLAYERENGINE402 = "v402defaultPlayerEngine402" // v402 Default Player Engine402
+        const val KEY_V402DELAYSTARTMS402 = "v402delayStartMs402" // v402 Delay Start Ms402
+        const val KEY_V402DENSITYAUTOADJUST402 = "v402densityAutoAdjust402" // v402 Density Auto Adjust402
+        const val KEY_V402DEPLOYAUTOUPDATE402 = "v402deployAutoUpdate402" // v402 Deploy Auto Update402
+        const val KEY_V402DETECTMOTIONENABLED402 = "v402detectMotionEnabled402" // v402 Detect Motion Enabled402
+        const val KEY_V402DIMSCREENONIDLE402 = "v402dimScreenOnIdle402" // v402 Dim Screen On Idle402
+        const val KEY_V403CLOUDAUTOSYNC403 = "v403cloudAutoSync403" // v403 Cloud Auto Sync403
+        const val KEY_V403CLOUDSTORAGELIMIT403 = "v403cloudStorageLimit403" // v403 Cloud Storage Limit403
+        const val KEY_V403COLLECTAUTOCATEGORIZE403 = "v403collectAutoCategorize403" // v403 Collect Auto Categorize403
+        const val KEY_V403COMPACTMODEENABLED403 = "v403compactModeEnabled403" // v403 Compact Mode Enabled403
+        const val KEY_V403COMPRESSAUTOQUALITY403 = "v403compressAutoQuality403" // v403 Compress Auto Quality403
+        const val KEY_V403CONNECTAUTORETRY403 = "v403connectAutoRetry403" // v403 Connect Auto Retry403
+        const val KEY_V403DASHBOARDWIDGETLAYOUT403 = "v403dashboardWidgetLayout403" // v403 Dashboard Widget Layout403
+        const val KEY_V403DEBUGLOGVERBOSE403 = "v403debugLogVerbose403" // v403 Debug Log Verbose403
+        const val KEY_V403DEEPCOLORENABLED403 = "v403deepColorEnabled403" // v403 Deep Color Enabled403
+        const val KEY_V403DEFAULTPLAYERENGINE403 = "v403defaultPlayerEngine403" // v403 Default Player Engine403
+        const val KEY_V403DELAYSTARTMS403 = "v403delayStartMs403" // v403 Delay Start Ms403
+        const val KEY_V403DENSITYAUTOADJUST403 = "v403densityAutoAdjust403" // v403 Density Auto Adjust403
+        const val KEY_V403DEPLOYAUTOUPDATE403 = "v403deployAutoUpdate403" // v403 Deploy Auto Update403
+        const val KEY_V403DETECTMOTIONENABLED403 = "v403detectMotionEnabled403" // v403 Detect Motion Enabled403
+        const val KEY_V403DIMSCREENONIDLE403 = "v403dimScreenOnIdle403" // v403 Dim Screen On Idle403
+        const val KEY_V404CLOUDAUTOSYNC404 = "v404cloudAutoSync404" // v404 Cloud Auto Sync404
+        const val KEY_V404CLOUDSTORAGELIMIT404 = "v404cloudStorageLimit404" // v404 Cloud Storage Limit404
+        const val KEY_V404COLLECTAUTOCATEGORIZE404 = "v404collectAutoCategorize404" // v404 Collect Auto Categorize404
+        const val KEY_V404COMPACTMODEENABLED404 = "v404compactModeEnabled404" // v404 Compact Mode Enabled404
+        const val KEY_V404COMPRESSAUTOQUALITY404 = "v404compressAutoQuality404" // v404 Compress Auto Quality404
+        const val KEY_V404CONNECTAUTORETRY404 = "v404connectAutoRetry404" // v404 Connect Auto Retry404
+        const val KEY_V404DASHBOARDWIDGETLAYOUT404 = "v404dashboardWidgetLayout404" // v404 Dashboard Widget Layout404
+        const val KEY_V404DEBUGLOGVERBOSE404 = "v404debugLogVerbose404" // v404 Debug Log Verbose404
+        const val KEY_V404DEEPCOLORENABLED404 = "v404deepColorEnabled404" // v404 Deep Color Enabled404
+        const val KEY_V404DEFAULTPLAYERENGINE404 = "v404defaultPlayerEngine404" // v404 Default Player Engine404
+        const val KEY_V404DELAYSTARTMS404 = "v404delayStartMs404" // v404 Delay Start Ms404
+        const val KEY_V404DENSITYAUTOADJUST404 = "v404densityAutoAdjust404" // v404 Density Auto Adjust404
+        const val KEY_V404DEPLOYAUTOUPDATE404 = "v404deployAutoUpdate404" // v404 Deploy Auto Update404
+        const val KEY_V404DETECTMOTIONENABLED404 = "v404detectMotionEnabled404" // v404 Detect Motion Enabled404
+        const val KEY_V404DIMSCREENONIDLE404 = "v404dimScreenOnIdle404" // v404 Dim Screen On Idle404
+        const val KEY_V405CLOUDAUTOSYNC405 = "v405cloudAutoSync405" // v405 Cloud Auto Sync405
+        const val KEY_V405CLOUDSTORAGELIMIT405 = "v405cloudStorageLimit405" // v405 Cloud Storage Limit405
+        const val KEY_V405COLLECTAUTOCATEGORIZE405 = "v405collectAutoCategorize405" // v405 Collect Auto Categorize405
+        const val KEY_V405COMPACTMODEENABLED405 = "v405compactModeEnabled405" // v405 Compact Mode Enabled405
+        const val KEY_V405COMPRESSAUTOQUALITY405 = "v405compressAutoQuality405" // v405 Compress Auto Quality405
+        const val KEY_V405CONNECTAUTORETRY405 = "v405connectAutoRetry405" // v405 Connect Auto Retry405
+        const val KEY_V405DASHBOARDWIDGETLAYOUT405 = "v405dashboardWidgetLayout405" // v405 Dashboard Widget Layout405
+        const val KEY_V405DEBUGLOGVERBOSE405 = "v405debugLogVerbose405" // v405 Debug Log Verbose405
+        const val KEY_V405DEEPCOLORENABLED405 = "v405deepColorEnabled405" // v405 Deep Color Enabled405
+        const val KEY_V405DEFAULTPLAYERENGINE405 = "v405defaultPlayerEngine405" // v405 Default Player Engine405
+        const val KEY_V405DELAYSTARTMS405 = "v405delayStartMs405" // v405 Delay Start Ms405
+        const val KEY_V405DENSITYAUTOADJUST405 = "v405densityAutoAdjust405" // v405 Density Auto Adjust405
+        const val KEY_V405DEPLOYAUTOUPDATE405 = "v405deployAutoUpdate405" // v405 Deploy Auto Update405
+        const val KEY_V405DETECTMOTIONENABLED405 = "v405detectMotionEnabled405" // v405 Detect Motion Enabled405
+        const val KEY_V405DIMSCREENONIDLE405 = "v405dimScreenOnIdle405" // v405 Dim Screen On Idle405
+        const val KEY_V406CLOUDAUTOSYNC406 = "v406cloudAutoSync406" // v406 Cloud Auto Sync406
+        const val KEY_V406CLOUDSTORAGELIMIT406 = "v406cloudStorageLimit406" // v406 Cloud Storage Limit406
+        const val KEY_V406COLLECTAUTOCATEGORIZE406 = "v406collectAutoCategorize406" // v406 Collect Auto Categorize406
+        const val KEY_V406COMPACTMODEENABLED406 = "v406compactModeEnabled406" // v406 Compact Mode Enabled406
+        const val KEY_V406COMPRESSAUTOQUALITY406 = "v406compressAutoQuality406" // v406 Compress Auto Quality406
+        const val KEY_V406CONNECTAUTORETRY406 = "v406connectAutoRetry406" // v406 Connect Auto Retry406
+        const val KEY_V406DASHBOARDWIDGETLAYOUT406 = "v406dashboardWidgetLayout406" // v406 Dashboard Widget Layout406
+        const val KEY_V406DEBUGLOGVERBOSE406 = "v406debugLogVerbose406" // v406 Debug Log Verbose406
+        const val KEY_V406DEEPCOLORENABLED406 = "v406deepColorEnabled406" // v406 Deep Color Enabled406
+        const val KEY_V406DEFAULTPLAYERENGINE406 = "v406defaultPlayerEngine406" // v406 Default Player Engine406
+        const val KEY_V406DELAYSTARTMS406 = "v406delayStartMs406" // v406 Delay Start Ms406
+        const val KEY_V406DENSITYAUTOADJUST406 = "v406densityAutoAdjust406" // v406 Density Auto Adjust406
+        const val KEY_V406DEPLOYAUTOUPDATE406 = "v406deployAutoUpdate406" // v406 Deploy Auto Update406
+        const val KEY_V406DETECTMOTIONENABLED406 = "v406detectMotionEnabled406" // v406 Detect Motion Enabled406
+        const val KEY_V406DIMSCREENONIDLE406 = "v406dimScreenOnIdle406" // v406 Dim Screen On Idle406
+        const val KEY_V407CLOUDAUTOSYNC407 = "v407cloudAutoSync407" // v407 Cloud Auto Sync407
+        const val KEY_V407CLOUDSTORAGELIMIT407 = "v407cloudStorageLimit407" // v407 Cloud Storage Limit407
+        const val KEY_V407COLLECTAUTOCATEGORIZE407 = "v407collectAutoCategorize407" // v407 Collect Auto Categorize407
+        const val KEY_V407COMPACTMODEENABLED407 = "v407compactModeEnabled407" // v407 Compact Mode Enabled407
+        const val KEY_V407COMPRESSAUTOQUALITY407 = "v407compressAutoQuality407" // v407 Compress Auto Quality407
+        const val KEY_V407CONNECTAUTORETRY407 = "v407connectAutoRetry407" // v407 Connect Auto Retry407
+        const val KEY_V407DASHBOARDWIDGETLAYOUT407 = "v407dashboardWidgetLayout407" // v407 Dashboard Widget Layout407
+        const val KEY_V407DEBUGLOGVERBOSE407 = "v407debugLogVerbose407" // v407 Debug Log Verbose407
+        const val KEY_V407DEEPCOLORENABLED407 = "v407deepColorEnabled407" // v407 Deep Color Enabled407
+        const val KEY_V407DEFAULTPLAYERENGINE407 = "v407defaultPlayerEngine407" // v407 Default Player Engine407
+        const val KEY_V407DELAYSTARTMS407 = "v407delayStartMs407" // v407 Delay Start Ms407
+        const val KEY_V407DENSITYAUTOADJUST407 = "v407densityAutoAdjust407" // v407 Density Auto Adjust407
+        const val KEY_V407DEPLOYAUTOUPDATE407 = "v407deployAutoUpdate407" // v407 Deploy Auto Update407
+        const val KEY_V407DETECTMOTIONENABLED407 = "v407detectMotionEnabled407" // v407 Detect Motion Enabled407
+        const val KEY_V407DIMSCREENONIDLE407 = "v407dimScreenOnIdle407" // v407 Dim Screen On Idle407
+        const val KEY_V408CLOUDAUTOSYNC408 = "v408cloudAutoSync408" // v408 Cloud Auto Sync408
+        const val KEY_V408CLOUDSTORAGELIMIT408 = "v408cloudStorageLimit408" // v408 Cloud Storage Limit408
+        const val KEY_V408COLLECTAUTOCATEGORIZE408 = "v408collectAutoCategorize408" // v408 Collect Auto Categorize408
+        const val KEY_V408COMPACTMODEENABLED408 = "v408compactModeEnabled408" // v408 Compact Mode Enabled408
+        const val KEY_V408COMPRESSAUTOQUALITY408 = "v408compressAutoQuality408" // v408 Compress Auto Quality408
+        const val KEY_V408CONNECTAUTORETRY408 = "v408connectAutoRetry408" // v408 Connect Auto Retry408
+        const val KEY_V408DASHBOARDWIDGETLAYOUT408 = "v408dashboardWidgetLayout408" // v408 Dashboard Widget Layout408
+        const val KEY_V408DEBUGLOGVERBOSE408 = "v408debugLogVerbose408" // v408 Debug Log Verbose408
+        const val KEY_V408DEEPCOLORENABLED408 = "v408deepColorEnabled408" // v408 Deep Color Enabled408
+        const val KEY_V408DEFAULTPLAYERENGINE408 = "v408defaultPlayerEngine408" // v408 Default Player Engine408
+        const val KEY_V408DELAYSTARTMS408 = "v408delayStartMs408" // v408 Delay Start Ms408
+        const val KEY_V408DENSITYAUTOADJUST408 = "v408densityAutoAdjust408" // v408 Density Auto Adjust408
+        const val KEY_V408DEPLOYAUTOUPDATE408 = "v408deployAutoUpdate408" // v408 Deploy Auto Update408
+        const val KEY_V408DETECTMOTIONENABLED408 = "v408detectMotionEnabled408" // v408 Detect Motion Enabled408
+        const val KEY_V408DIMSCREENONIDLE408 = "v408dimScreenOnIdle408" // v408 Dim Screen On Idle408
+        const val KEY_V409CLOUDAUTOSYNC409 = "v409cloudAutoSync409" // v409 Cloud Auto Sync409
+        const val KEY_V409CLOUDSTORAGELIMIT409 = "v409cloudStorageLimit409" // v409 Cloud Storage Limit409
+        const val KEY_V409COLLECTAUTOCATEGORIZE409 = "v409collectAutoCategorize409" // v409 Collect Auto Categorize409
+        const val KEY_V409COMPACTMODEENABLED409 = "v409compactModeEnabled409" // v409 Compact Mode Enabled409
+        const val KEY_V409COMPRESSAUTOQUALITY409 = "v409compressAutoQuality409" // v409 Compress Auto Quality409
+        const val KEY_V409CONNECTAUTORETRY409 = "v409connectAutoRetry409" // v409 Connect Auto Retry409
+        const val KEY_V409DASHBOARDWIDGETLAYOUT409 = "v409dashboardWidgetLayout409" // v409 Dashboard Widget Layout409
+        const val KEY_V409DEBUGLOGVERBOSE409 = "v409debugLogVerbose409" // v409 Debug Log Verbose409
+        const val KEY_V409DEEPCOLORENABLED409 = "v409deepColorEnabled409" // v409 Deep Color Enabled409
+        const val KEY_V409DEFAULTPLAYERENGINE409 = "v409defaultPlayerEngine409" // v409 Default Player Engine409
+        const val KEY_V409DELAYSTARTMS409 = "v409delayStartMs409" // v409 Delay Start Ms409
+        const val KEY_V409DENSITYAUTOADJUST409 = "v409densityAutoAdjust409" // v409 Density Auto Adjust409
+        const val KEY_V409DEPLOYAUTOUPDATE409 = "v409deployAutoUpdate409" // v409 Deploy Auto Update409
+        const val KEY_V409DETECTMOTIONENABLED409 = "v409detectMotionEnabled409" // v409 Detect Motion Enabled409
+        const val KEY_V409DIMSCREENONIDLE409 = "v409dimScreenOnIdle409" // v409 Dim Screen On Idle409
+        const val KEY_V410CLOUDAUTOSYNC410 = "v410cloudAutoSync410" // v410 Cloud Auto Sync410
+        const val KEY_V410CLOUDSTORAGELIMIT410 = "v410cloudStorageLimit410" // v410 Cloud Storage Limit410
+        const val KEY_V410COLLECTAUTOCATEGORIZE410 = "v410collectAutoCategorize410" // v410 Collect Auto Categorize410
+        const val KEY_V410COMPACTMODEENABLED410 = "v410compactModeEnabled410" // v410 Compact Mode Enabled410
+        const val KEY_V410COMPRESSAUTOQUALITY410 = "v410compressAutoQuality410" // v410 Compress Auto Quality410
+        const val KEY_V410CONNECTAUTORETRY410 = "v410connectAutoRetry410" // v410 Connect Auto Retry410
+        const val KEY_V410DASHBOARDWIDGETLAYOUT410 = "v410dashboardWidgetLayout410" // v410 Dashboard Widget Layout410
+        const val KEY_V410DEBUGLOGVERBOSE410 = "v410debugLogVerbose410" // v410 Debug Log Verbose410
+        const val KEY_V410DEEPCOLORENABLED410 = "v410deepColorEnabled410" // v410 Deep Color Enabled410
+        const val KEY_V410DEFAULTPLAYERENGINE410 = "v410defaultPlayerEngine410" // v410 Default Player Engine410
+        const val KEY_V410DELAYSTARTMS410 = "v410delayStartMs410" // v410 Delay Start Ms410
+        const val KEY_V410DENSITYAUTOADJUST410 = "v410densityAutoAdjust410" // v410 Density Auto Adjust410
+        const val KEY_V410DEPLOYAUTOUPDATE410 = "v410deployAutoUpdate410" // v410 Deploy Auto Update410
+        const val KEY_V410DETECTMOTIONENABLED410 = "v410detectMotionEnabled410" // v410 Detect Motion Enabled410
+        const val KEY_V410DIMSCREENONIDLE410 = "v410dimScreenOnIdle410" // v410 Dim Screen On Idle410
     }
 }
