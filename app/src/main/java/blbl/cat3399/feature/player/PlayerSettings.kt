@@ -23491,14 +23491,14 @@ internal fun PlayerActivity.showV135AudioFlangerRateDialog() {
 // v135: Danmaku Font BG Fill Shadow Type134
 internal fun PlayerActivity.showV135DanmakuFontBgFillShadowType134Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v134danmakuFontBgFillShadowType134).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v135danmakuFontBgFillShadowType134).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
         title = "Danmaku Font BG Fill Shadow Type134",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v134danmakuFontBgFillShadowType134 = value
+        BiliClient.prefs.v135danmakuFontBgFillShadowType134 = value
         AppToast.show(this, "Danmaku Font BG Fill Shadow Type134: $value")
     }
 }
@@ -23829,14 +23829,14 @@ internal fun PlayerActivity.showV137AudioFlangerFeedback136Dialog() {
 // v137: Danmaku Font BG Fill Clip Path136
 internal fun PlayerActivity.showV137DanmakuFontBgFillClipPath136Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v136danmakuFontBgFillClipPath136).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v137danmakuFontBgFillClipPath136).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
         title = "Danmaku Font BG Fill Clip Path136",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v136danmakuFontBgFillClipPath136 = value
+        BiliClient.prefs.v137danmakuFontBgFillClipPath136 = value
         AppToast.show(this, "Danmaku Font BG Fill Clip Path136: $value")
     }
 }
@@ -23998,14 +23998,14 @@ internal fun PlayerActivity.showV138AudioPhaserToggle138Toggle() {
 // v138: Danmaku Font BG Fill Clip Radius137
 internal fun PlayerActivity.showV138DanmakuFontBgFillClipRadius137Dialog() {
     val options = listOf(0, 2, 4, 6, 8)
-    val currentIndex = options.indexOf(BiliClient.prefs.v137danmakuFontBgFillClipRadius137).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v138danmakuFontBgFillClipRadius137).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
         title = "Danmaku Font BG Fill Clip Radius137",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v137danmakuFontBgFillClipRadius137 = value
+        BiliClient.prefs.v138danmakuFontBgFillClipRadius137 = value
         AppToast.show(this, "Danmaku Font BG Fill Clip Radius137: $value")
     }
 }
@@ -24122,14 +24122,14 @@ internal fun PlayerActivity.showV138VideoPIPFollowBrightnessToggle() {
 // v138: Danmaku Font BG Fill Clip Radius138
 internal fun PlayerActivity.showV138DanmakuFontBgFillClipRadius138Dialog() {
     val options = listOf(0, 2, 4, 6, 8)
-    val currentIndex = options.indexOf(BiliClient.prefs.v137danmakuFontBgFillClipRadius138).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v138danmakuFontBgFillClipRadius138).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
         title = "Danmaku Font BG Fill Clip Radius138",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v137danmakuFontBgFillClipRadius138 = value
+        BiliClient.prefs.v138danmakuFontBgFillClipRadius138 = value
         AppToast.show(this, "Danmaku Font BG Fill Clip Radius138: $value")
     }
 }
@@ -24167,14 +24167,14 @@ internal fun PlayerActivity.showV139AudioPhaserRateDialog() {
 // v139: Danmaku Font BG Fill Clip Radius139
 internal fun PlayerActivity.showV139DanmakuFontBgFillClipRadius139Dialog() {
     val options = listOf(0, 2, 4, 6, 8)
-    val currentIndex = options.indexOf(BiliClient.prefs.v137danmakuFontBgFillClipRadius139).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v139danmakuFontBgFillClipRadius139).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
         title = "Danmaku Font BG Fill Clip Radius139",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v137danmakuFontBgFillClipRadius139 = value
+        BiliClient.prefs.v139danmakuFontBgFillClipRadius139 = value
         AppToast.show(this, "Danmaku Font BG Fill Clip Radius139: $value")
     }
 }
@@ -24276,8 +24276,8 @@ internal fun PlayerActivity.showV139PlaybackSpeedPresetsSwipeAdjustToggle() {
 
 // v139: Screenshot Auto Share Twitch Clip
 internal fun PlayerActivity.showV139ScreenshotAutoShareTwitchClipToggle() {
-    val current = BiliClient.prefs.v137screenshotAutoShareTwitchClip
-    BiliClient.prefs.v137screenshotAutoShareTwitchClip = !current
+    val current = BiliClient.prefs.v139screenshotAutoShareTwitchClip
+    BiliClient.prefs.v139screenshotAutoShareTwitchClip = !current
     AppToast.show(this, "Screenshot Auto Share Twitch Clip: ${if (!current) "ON" else "OFF"}")
 }
 
@@ -24336,14 +24336,14 @@ internal fun PlayerActivity.showV140AudioPhaserDepthDialog() {
 // v140: Danmaku Font BG Fill Clip Type139
 internal fun PlayerActivity.showV140DanmakuFontBgFillClipType139Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v139danmakuFontBgFillClipType139).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v140danmakuFontBgFillClipType139).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
         title = "Danmaku Font BG Fill Clip Type139",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v139danmakuFontBgFillClipType139 = value
+        BiliClient.prefs.v140danmakuFontBgFillClipType139 = value
         AppToast.show(this, "Danmaku Font BG Fill Clip Type139: $value")
     }
 }
@@ -24387,8 +24387,8 @@ internal fun PlayerActivity.showV140CastVideoPIPFollowSaturationToggle() {
 
 // v140: Playlist Auto Group By Genre140
 internal fun PlayerActivity.showV140PlaylistAutoGroupByGenre140Toggle() {
-    val current = BiliClient.prefs.v131playlistAutoGroupByGenre140
-    BiliClient.prefs.v131playlistAutoGroupByGenre140 = !current
+    val current = BiliClient.prefs.v140playlistAutoGroupByGenre140
+    BiliClient.prefs.v140playlistAutoGroupByGenre140 = !current
     AppToast.show(this, "Playlist Auto Group By Genre140: ${if (!current) "ON" else "OFF"}")
 }
 
@@ -24460,14 +24460,14 @@ internal fun PlayerActivity.showV140VideoPIPFollowGammaToggle() {
 // v140: Danmaku Font BG Fill Clip Type140
 internal fun PlayerActivity.showV140DanmakuFontBgFillClipType140Dialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(BiliClient.prefs.v139danmakuFontBgFillClipType140).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(BiliClient.prefs.v140danmakuFontBgFillClipType140).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
         title = "Danmaku Font BG Fill Clip Type140",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        BiliClient.prefs.v139danmakuFontBgFillClipType140 = value
+        BiliClient.prefs.v140danmakuFontBgFillClipType140 = value
         AppToast.show(this, "Danmaku Font BG Fill Clip Type140: $value")
     }
 }
