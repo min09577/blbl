@@ -42248,6 +42248,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V590WATCHAUTOSYNC590, false)
         set(value) = prefs.edit().putBoolean(KEY_V590WATCHAUTOSYNC590, value).apply()
 
+    var v591webAutoRedirect591: Boolean
+        get() = prefs.getBoolean(KEY_V591WEBAUTOREDIRECT591, false)
+        set(value) = prefs.edit().putBoolean(KEY_V591WEBAUTOREDIRECT591, value).apply()
+
+    var v591widgetAutoRefresh591: Boolean
+        get() = prefs.getBoolean(KEY_V591WIDGETAUTOREFRESH591, false)
+        set(value) = prefs.edit().putBoolean(KEY_V591WIDGETAUTOREFRESH591, value).apply()
+
+    var v591windowAutoSnap591: Boolean
+        get() = prefs.getBoolean(KEY_V591WINDOWAUTOSNAP591, false)
+        set(value) = prefs.edit().putBoolean(KEY_V591WINDOWAUTOSNAP591, value).apply()
+
+    var v591wrapAutoBreak591: Boolean
+        get() = prefs.getBoolean(KEY_V591WRAPAUTOBREAK591, false)
+        set(value) = prefs.edit().putBoolean(KEY_V591WRAPAUTOBREAK591, value).apply()
+
+    var v591zoneAutoDetect591: Boolean
+        get() = prefs.getBoolean(KEY_V591ZONEAUTODETECT591, false)
+        set(value) = prefs.edit().putBoolean(KEY_V591ZONEAUTODETECT591, value).apply()
+
+    var v591anchorAutoPin591: Boolean
+        get() = prefs.getBoolean(KEY_V591ANCHORAUTOPIN591, false)
+        set(value) = prefs.edit().putBoolean(KEY_V591ANCHORAUTOPIN591, value).apply()
+
+    var v591aspectAutoRatio591: Int
+        get() = prefs.getInt(KEY_V591ASPECTAUTORATIO591, 0)
+        set(value) = prefs.edit().putInt(KEY_V591ASPECTAUTORATIO591, value).apply()
+
+    var v591attachAutoEmbed591: Boolean
+        get() = prefs.getBoolean(KEY_V591ATTACHAUTOEMBED591, false)
+        set(value) = prefs.edit().putBoolean(KEY_V591ATTACHAUTOEMBED591, value).apply()
+
+    var v591audioAutoNormalize591: Boolean
+        get() = prefs.getBoolean(KEY_V591AUDIOAUTONORMALIZE591, false)
+        set(value) = prefs.edit().putBoolean(KEY_V591AUDIOAUTONORMALIZE591, value).apply()
+
+    var v591axisAutoAlign591: Boolean
+        get() = prefs.getBoolean(KEY_V591AXISAUTOALIGN591, false)
+        set(value) = prefs.edit().putBoolean(KEY_V591AXISAUTOALIGN591, value).apply()
+
+    var v591badgeAutoCount591: Boolean
+        get() = prefs.getBoolean(KEY_V591BADGEAUTOCOUNT591, false)
+        set(value) = prefs.edit().putBoolean(KEY_V591BADGEAUTOCOUNT591, value).apply()
+
+    var v591baselineAutoSync591: Boolean
+        get() = prefs.getBoolean(KEY_V591BASELINEAUTOSYNC591, false)
+        set(value) = prefs.edit().putBoolean(KEY_V591BASELINEAUTOSYNC591, value).apply()
+
+    var v591bindAutoLink591: Boolean
+        get() = prefs.getBoolean(KEY_V591BINDAUTOLINK591, false)
+        set(value) = prefs.edit().putBoolean(KEY_V591BINDAUTOLINK591, value).apply()
+
+    var v591bitrateAutoScale591: Int
+        get() = prefs.getInt(KEY_V591BITRATEAUTOSCALE591, 0)
+        set(value) = prefs.edit().putInt(KEY_V591BITRATEAUTOSCALE591, value).apply()
+
+    var v591blendAutoMode591: Int
+        get() = prefs.getInt(KEY_V591BLENDAUTOMODE591, 0)
+        set(value) = prefs.edit().putInt(KEY_V591BLENDAUTOMODE591, value).apply()
+
+    var v592webAutoRedirect592: Boolean
+        get() = prefs.getBoolean(KEY_V592WEBAUTOREDIRECT592, false)
+        set(value) = prefs.edit().putBoolean(KEY_V592WEBAUTOREDIRECT592, value).apply()
+
+    var v592widgetAutoRefresh592: Boolean
+        get() = prefs.getBoolean(KEY_V592WIDGETAUTOREFRESH592, false)
+        set(value) = prefs.edit().putBoolean(KEY_V592WIDGETAUTOREFRESH592, value).apply()
+
+    var v592windowAutoSnap592: Boolean
+        get() = prefs.getBoolean(KEY_V592WINDOWAUTOSNAP592, false)
+        set(value) = prefs.edit().putBoolean(KEY_V592WINDOWAUTOSNAP592, value).apply()
+
+    var v592wrapAutoBreak592: Boolean
+        get() = prefs.getBoolean(KEY_V592WRAPAUTOBREAK592, false)
+        set(value) = prefs.edit().putBoolean(KEY_V592WRAPAUTOBREAK592, value).apply()
+
+    var v592zoneAutoDetect592: Boolean
+        get() = prefs.getBoolean(KEY_V592ZONEAUTODETECT592, false)
+        set(value) = prefs.edit().putBoolean(KEY_V592ZONEAUTODETECT592, value).apply()
+
+    var v592anchorAutoPin592: Boolean
+        get() = prefs.getBoolean(KEY_V592ANCHORAUTOPIN592, false)
+        set(value) = prefs.edit().putBoolean(KEY_V592ANCHORAUTOPIN592, value).apply()
+
+    var v592aspectAutoRatio592: Int
+        get() = prefs.getInt(KEY_V592ASPECTAUTORATIO592, 0)
+        set(value) = prefs.edit().putInt(KEY_V592ASPECTAUTORATIO592, value).apply()
+
+    var v592attachAutoEmbed592: Boolean
+        get() = prefs.getBoolean(KEY_V592ATTACHAUTOEMBED592, false)
+        set(value) = prefs.edit().putBoolean(KEY_V592ATTACHAUTOEMBED592, value).apply()
+
+    var v592audioAutoNormalize592: Boolean
+        get() = prefs.getBoolean(KEY_V592AUDIOAUTONORMALIZE592, false)
+        set(value) = prefs.edit().putBoolean(KEY_V592AUDIOAUTONORMALIZE592, value).apply()
+
+    var v592axisAutoAlign592: Boolean
+        get() = prefs.getBoolean(KEY_V592AXISAUTOALIGN592, false)
+        set(value) = prefs.edit().putBoolean(KEY_V592AXISAUTOALIGN592, value).apply()
+
+    var v592badgeAutoCount592: Boolean
+        get() = prefs.getBoolean(KEY_V592BADGEAUTOCOUNT592, false)
+        set(value) = prefs.edit().putBoolean(KEY_V592BADGEAUTOCOUNT592, value).apply()
+
+    var v592baselineAutoSync592: Boolean
+        get() = prefs.getBoolean(KEY_V592BASELINEAUTOSYNC592, false)
+        set(value) = prefs.edit().putBoolean(KEY_V592BASELINEAUTOSYNC592, value).apply()
+
+    var v592bindAutoLink592: Boolean
+        get() = prefs.getBoolean(KEY_V592BINDAUTOLINK592, false)
+        set(value) = prefs.edit().putBoolean(KEY_V592BINDAUTOLINK592, value).apply()
+
+    var v592bitrateAutoScale592: Int
+        get() = prefs.getInt(KEY_V592BITRATEAUTOSCALE592, 0)
+        set(value) = prefs.edit().putInt(KEY_V592BITRATEAUTOSCALE592, value).apply()
+
+    var v592blendAutoMode592: Int
+        get() = prefs.getInt(KEY_V592BLENDAUTOMODE592, 0)
+        set(value) = prefs.edit().putInt(KEY_V592BLENDAUTOMODE592, value).apply()
+
+    var v593webAutoRedirect593: Boolean
+        get() = prefs.getBoolean(KEY_V593WEBAUTOREDIRECT593, false)
+        set(value) = prefs.edit().putBoolean(KEY_V593WEBAUTOREDIRECT593, value).apply()
+
+    var v593widgetAutoRefresh593: Boolean
+        get() = prefs.getBoolean(KEY_V593WIDGETAUTOREFRESH593, false)
+        set(value) = prefs.edit().putBoolean(KEY_V593WIDGETAUTOREFRESH593, value).apply()
+
+    var v593windowAutoSnap593: Boolean
+        get() = prefs.getBoolean(KEY_V593WINDOWAUTOSNAP593, false)
+        set(value) = prefs.edit().putBoolean(KEY_V593WINDOWAUTOSNAP593, value).apply()
+
+    var v593wrapAutoBreak593: Boolean
+        get() = prefs.getBoolean(KEY_V593WRAPAUTOBREAK593, false)
+        set(value) = prefs.edit().putBoolean(KEY_V593WRAPAUTOBREAK593, value).apply()
+
+    var v593zoneAutoDetect593: Boolean
+        get() = prefs.getBoolean(KEY_V593ZONEAUTODETECT593, false)
+        set(value) = prefs.edit().putBoolean(KEY_V593ZONEAUTODETECT593, value).apply()
+
+    var v593anchorAutoPin593: Boolean
+        get() = prefs.getBoolean(KEY_V593ANCHORAUTOPIN593, false)
+        set(value) = prefs.edit().putBoolean(KEY_V593ANCHORAUTOPIN593, value).apply()
+
+    var v593aspectAutoRatio593: Int
+        get() = prefs.getInt(KEY_V593ASPECTAUTORATIO593, 0)
+        set(value) = prefs.edit().putInt(KEY_V593ASPECTAUTORATIO593, value).apply()
+
+    var v593attachAutoEmbed593: Boolean
+        get() = prefs.getBoolean(KEY_V593ATTACHAUTOEMBED593, false)
+        set(value) = prefs.edit().putBoolean(KEY_V593ATTACHAUTOEMBED593, value).apply()
+
+    var v593audioAutoNormalize593: Boolean
+        get() = prefs.getBoolean(KEY_V593AUDIOAUTONORMALIZE593, false)
+        set(value) = prefs.edit().putBoolean(KEY_V593AUDIOAUTONORMALIZE593, value).apply()
+
+    var v593axisAutoAlign593: Boolean
+        get() = prefs.getBoolean(KEY_V593AXISAUTOALIGN593, false)
+        set(value) = prefs.edit().putBoolean(KEY_V593AXISAUTOALIGN593, value).apply()
+
+    var v593badgeAutoCount593: Boolean
+        get() = prefs.getBoolean(KEY_V593BADGEAUTOCOUNT593, false)
+        set(value) = prefs.edit().putBoolean(KEY_V593BADGEAUTOCOUNT593, value).apply()
+
+    var v593baselineAutoSync593: Boolean
+        get() = prefs.getBoolean(KEY_V593BASELINEAUTOSYNC593, false)
+        set(value) = prefs.edit().putBoolean(KEY_V593BASELINEAUTOSYNC593, value).apply()
+
+    var v593bindAutoLink593: Boolean
+        get() = prefs.getBoolean(KEY_V593BINDAUTOLINK593, false)
+        set(value) = prefs.edit().putBoolean(KEY_V593BINDAUTOLINK593, value).apply()
+
+    var v593bitrateAutoScale593: Int
+        get() = prefs.getInt(KEY_V593BITRATEAUTOSCALE593, 0)
+        set(value) = prefs.edit().putInt(KEY_V593BITRATEAUTOSCALE593, value).apply()
+
+    var v593blendAutoMode593: Int
+        get() = prefs.getInt(KEY_V593BLENDAUTOMODE593, 0)
+        set(value) = prefs.edit().putInt(KEY_V593BLENDAUTOMODE593, value).apply()
+
+    var v594webAutoRedirect594: Boolean
+        get() = prefs.getBoolean(KEY_V594WEBAUTOREDIRECT594, false)
+        set(value) = prefs.edit().putBoolean(KEY_V594WEBAUTOREDIRECT594, value).apply()
+
+    var v594widgetAutoRefresh594: Boolean
+        get() = prefs.getBoolean(KEY_V594WIDGETAUTOREFRESH594, false)
+        set(value) = prefs.edit().putBoolean(KEY_V594WIDGETAUTOREFRESH594, value).apply()
+
+    var v594windowAutoSnap594: Boolean
+        get() = prefs.getBoolean(KEY_V594WINDOWAUTOSNAP594, false)
+        set(value) = prefs.edit().putBoolean(KEY_V594WINDOWAUTOSNAP594, value).apply()
+
+    var v594wrapAutoBreak594: Boolean
+        get() = prefs.getBoolean(KEY_V594WRAPAUTOBREAK594, false)
+        set(value) = prefs.edit().putBoolean(KEY_V594WRAPAUTOBREAK594, value).apply()
+
+    var v594zoneAutoDetect594: Boolean
+        get() = prefs.getBoolean(KEY_V594ZONEAUTODETECT594, false)
+        set(value) = prefs.edit().putBoolean(KEY_V594ZONEAUTODETECT594, value).apply()
+
+    var v594anchorAutoPin594: Boolean
+        get() = prefs.getBoolean(KEY_V594ANCHORAUTOPIN594, false)
+        set(value) = prefs.edit().putBoolean(KEY_V594ANCHORAUTOPIN594, value).apply()
+
+    var v594aspectAutoRatio594: Int
+        get() = prefs.getInt(KEY_V594ASPECTAUTORATIO594, 0)
+        set(value) = prefs.edit().putInt(KEY_V594ASPECTAUTORATIO594, value).apply()
+
+    var v594attachAutoEmbed594: Boolean
+        get() = prefs.getBoolean(KEY_V594ATTACHAUTOEMBED594, false)
+        set(value) = prefs.edit().putBoolean(KEY_V594ATTACHAUTOEMBED594, value).apply()
+
+    var v594audioAutoNormalize594: Boolean
+        get() = prefs.getBoolean(KEY_V594AUDIOAUTONORMALIZE594, false)
+        set(value) = prefs.edit().putBoolean(KEY_V594AUDIOAUTONORMALIZE594, value).apply()
+
+    var v594axisAutoAlign594: Boolean
+        get() = prefs.getBoolean(KEY_V594AXISAUTOALIGN594, false)
+        set(value) = prefs.edit().putBoolean(KEY_V594AXISAUTOALIGN594, value).apply()
+
+    var v594badgeAutoCount594: Boolean
+        get() = prefs.getBoolean(KEY_V594BADGEAUTOCOUNT594, false)
+        set(value) = prefs.edit().putBoolean(KEY_V594BADGEAUTOCOUNT594, value).apply()
+
+    var v594baselineAutoSync594: Boolean
+        get() = prefs.getBoolean(KEY_V594BASELINEAUTOSYNC594, false)
+        set(value) = prefs.edit().putBoolean(KEY_V594BASELINEAUTOSYNC594, value).apply()
+
+    var v594bindAutoLink594: Boolean
+        get() = prefs.getBoolean(KEY_V594BINDAUTOLINK594, false)
+        set(value) = prefs.edit().putBoolean(KEY_V594BINDAUTOLINK594, value).apply()
+
+    var v594bitrateAutoScale594: Int
+        get() = prefs.getInt(KEY_V594BITRATEAUTOSCALE594, 0)
+        set(value) = prefs.edit().putInt(KEY_V594BITRATEAUTOSCALE594, value).apply()
+
+    var v594blendAutoMode594: Int
+        get() = prefs.getInt(KEY_V594BLENDAUTOMODE594, 0)
+        set(value) = prefs.edit().putInt(KEY_V594BLENDAUTOMODE594, value).apply()
+
+    var v595webAutoRedirect595: Boolean
+        get() = prefs.getBoolean(KEY_V595WEBAUTOREDIRECT595, false)
+        set(value) = prefs.edit().putBoolean(KEY_V595WEBAUTOREDIRECT595, value).apply()
+
+    var v595widgetAutoRefresh595: Boolean
+        get() = prefs.getBoolean(KEY_V595WIDGETAUTOREFRESH595, false)
+        set(value) = prefs.edit().putBoolean(KEY_V595WIDGETAUTOREFRESH595, value).apply()
+
+    var v595windowAutoSnap595: Boolean
+        get() = prefs.getBoolean(KEY_V595WINDOWAUTOSNAP595, false)
+        set(value) = prefs.edit().putBoolean(KEY_V595WINDOWAUTOSNAP595, value).apply()
+
+    var v595wrapAutoBreak595: Boolean
+        get() = prefs.getBoolean(KEY_V595WRAPAUTOBREAK595, false)
+        set(value) = prefs.edit().putBoolean(KEY_V595WRAPAUTOBREAK595, value).apply()
+
+    var v595zoneAutoDetect595: Boolean
+        get() = prefs.getBoolean(KEY_V595ZONEAUTODETECT595, false)
+        set(value) = prefs.edit().putBoolean(KEY_V595ZONEAUTODETECT595, value).apply()
+
+    var v595anchorAutoPin595: Boolean
+        get() = prefs.getBoolean(KEY_V595ANCHORAUTOPIN595, false)
+        set(value) = prefs.edit().putBoolean(KEY_V595ANCHORAUTOPIN595, value).apply()
+
+    var v595aspectAutoRatio595: Int
+        get() = prefs.getInt(KEY_V595ASPECTAUTORATIO595, 0)
+        set(value) = prefs.edit().putInt(KEY_V595ASPECTAUTORATIO595, value).apply()
+
+    var v595attachAutoEmbed595: Boolean
+        get() = prefs.getBoolean(KEY_V595ATTACHAUTOEMBED595, false)
+        set(value) = prefs.edit().putBoolean(KEY_V595ATTACHAUTOEMBED595, value).apply()
+
+    var v595audioAutoNormalize595: Boolean
+        get() = prefs.getBoolean(KEY_V595AUDIOAUTONORMALIZE595, false)
+        set(value) = prefs.edit().putBoolean(KEY_V595AUDIOAUTONORMALIZE595, value).apply()
+
+    var v595axisAutoAlign595: Boolean
+        get() = prefs.getBoolean(KEY_V595AXISAUTOALIGN595, false)
+        set(value) = prefs.edit().putBoolean(KEY_V595AXISAUTOALIGN595, value).apply()
+
+    var v595badgeAutoCount595: Boolean
+        get() = prefs.getBoolean(KEY_V595BADGEAUTOCOUNT595, false)
+        set(value) = prefs.edit().putBoolean(KEY_V595BADGEAUTOCOUNT595, value).apply()
+
+    var v595baselineAutoSync595: Boolean
+        get() = prefs.getBoolean(KEY_V595BASELINEAUTOSYNC595, false)
+        set(value) = prefs.edit().putBoolean(KEY_V595BASELINEAUTOSYNC595, value).apply()
+
+    var v595bindAutoLink595: Boolean
+        get() = prefs.getBoolean(KEY_V595BINDAUTOLINK595, false)
+        set(value) = prefs.edit().putBoolean(KEY_V595BINDAUTOLINK595, value).apply()
+
+    var v595bitrateAutoScale595: Int
+        get() = prefs.getInt(KEY_V595BITRATEAUTOSCALE595, 0)
+        set(value) = prefs.edit().putInt(KEY_V595BITRATEAUTOSCALE595, value).apply()
+
+    var v595blendAutoMode595: Int
+        get() = prefs.getInt(KEY_V595BLENDAUTOMODE595, 0)
+        set(value) = prefs.edit().putInt(KEY_V595BLENDAUTOMODE595, value).apply()
+
+    var v596webAutoRedirect596: Boolean
+        get() = prefs.getBoolean(KEY_V596WEBAUTOREDIRECT596, false)
+        set(value) = prefs.edit().putBoolean(KEY_V596WEBAUTOREDIRECT596, value).apply()
+
+    var v596widgetAutoRefresh596: Boolean
+        get() = prefs.getBoolean(KEY_V596WIDGETAUTOREFRESH596, false)
+        set(value) = prefs.edit().putBoolean(KEY_V596WIDGETAUTOREFRESH596, value).apply()
+
+    var v596windowAutoSnap596: Boolean
+        get() = prefs.getBoolean(KEY_V596WINDOWAUTOSNAP596, false)
+        set(value) = prefs.edit().putBoolean(KEY_V596WINDOWAUTOSNAP596, value).apply()
+
+    var v596wrapAutoBreak596: Boolean
+        get() = prefs.getBoolean(KEY_V596WRAPAUTOBREAK596, false)
+        set(value) = prefs.edit().putBoolean(KEY_V596WRAPAUTOBREAK596, value).apply()
+
+    var v596zoneAutoDetect596: Boolean
+        get() = prefs.getBoolean(KEY_V596ZONEAUTODETECT596, false)
+        set(value) = prefs.edit().putBoolean(KEY_V596ZONEAUTODETECT596, value).apply()
+
+    var v596anchorAutoPin596: Boolean
+        get() = prefs.getBoolean(KEY_V596ANCHORAUTOPIN596, false)
+        set(value) = prefs.edit().putBoolean(KEY_V596ANCHORAUTOPIN596, value).apply()
+
+    var v596aspectAutoRatio596: Int
+        get() = prefs.getInt(KEY_V596ASPECTAUTORATIO596, 0)
+        set(value) = prefs.edit().putInt(KEY_V596ASPECTAUTORATIO596, value).apply()
+
+    var v596attachAutoEmbed596: Boolean
+        get() = prefs.getBoolean(KEY_V596ATTACHAUTOEMBED596, false)
+        set(value) = prefs.edit().putBoolean(KEY_V596ATTACHAUTOEMBED596, value).apply()
+
+    var v596audioAutoNormalize596: Boolean
+        get() = prefs.getBoolean(KEY_V596AUDIOAUTONORMALIZE596, false)
+        set(value) = prefs.edit().putBoolean(KEY_V596AUDIOAUTONORMALIZE596, value).apply()
+
+    var v596axisAutoAlign596: Boolean
+        get() = prefs.getBoolean(KEY_V596AXISAUTOALIGN596, false)
+        set(value) = prefs.edit().putBoolean(KEY_V596AXISAUTOALIGN596, value).apply()
+
+    var v596badgeAutoCount596: Boolean
+        get() = prefs.getBoolean(KEY_V596BADGEAUTOCOUNT596, false)
+        set(value) = prefs.edit().putBoolean(KEY_V596BADGEAUTOCOUNT596, value).apply()
+
+    var v596baselineAutoSync596: Boolean
+        get() = prefs.getBoolean(KEY_V596BASELINEAUTOSYNC596, false)
+        set(value) = prefs.edit().putBoolean(KEY_V596BASELINEAUTOSYNC596, value).apply()
+
+    var v596bindAutoLink596: Boolean
+        get() = prefs.getBoolean(KEY_V596BINDAUTOLINK596, false)
+        set(value) = prefs.edit().putBoolean(KEY_V596BINDAUTOLINK596, value).apply()
+
+    var v596bitrateAutoScale596: Int
+        get() = prefs.getInt(KEY_V596BITRATEAUTOSCALE596, 0)
+        set(value) = prefs.edit().putInt(KEY_V596BITRATEAUTOSCALE596, value).apply()
+
+    var v596blendAutoMode596: Int
+        get() = prefs.getInt(KEY_V596BLENDAUTOMODE596, 0)
+        set(value) = prefs.edit().putInt(KEY_V596BLENDAUTOMODE596, value).apply()
+
+    var v597webAutoRedirect597: Boolean
+        get() = prefs.getBoolean(KEY_V597WEBAUTOREDIRECT597, false)
+        set(value) = prefs.edit().putBoolean(KEY_V597WEBAUTOREDIRECT597, value).apply()
+
+    var v597widgetAutoRefresh597: Boolean
+        get() = prefs.getBoolean(KEY_V597WIDGETAUTOREFRESH597, false)
+        set(value) = prefs.edit().putBoolean(KEY_V597WIDGETAUTOREFRESH597, value).apply()
+
+    var v597windowAutoSnap597: Boolean
+        get() = prefs.getBoolean(KEY_V597WINDOWAUTOSNAP597, false)
+        set(value) = prefs.edit().putBoolean(KEY_V597WINDOWAUTOSNAP597, value).apply()
+
+    var v597wrapAutoBreak597: Boolean
+        get() = prefs.getBoolean(KEY_V597WRAPAUTOBREAK597, false)
+        set(value) = prefs.edit().putBoolean(KEY_V597WRAPAUTOBREAK597, value).apply()
+
+    var v597zoneAutoDetect597: Boolean
+        get() = prefs.getBoolean(KEY_V597ZONEAUTODETECT597, false)
+        set(value) = prefs.edit().putBoolean(KEY_V597ZONEAUTODETECT597, value).apply()
+
+    var v597anchorAutoPin597: Boolean
+        get() = prefs.getBoolean(KEY_V597ANCHORAUTOPIN597, false)
+        set(value) = prefs.edit().putBoolean(KEY_V597ANCHORAUTOPIN597, value).apply()
+
+    var v597aspectAutoRatio597: Int
+        get() = prefs.getInt(KEY_V597ASPECTAUTORATIO597, 0)
+        set(value) = prefs.edit().putInt(KEY_V597ASPECTAUTORATIO597, value).apply()
+
+    var v597attachAutoEmbed597: Boolean
+        get() = prefs.getBoolean(KEY_V597ATTACHAUTOEMBED597, false)
+        set(value) = prefs.edit().putBoolean(KEY_V597ATTACHAUTOEMBED597, value).apply()
+
+    var v597audioAutoNormalize597: Boolean
+        get() = prefs.getBoolean(KEY_V597AUDIOAUTONORMALIZE597, false)
+        set(value) = prefs.edit().putBoolean(KEY_V597AUDIOAUTONORMALIZE597, value).apply()
+
+    var v597axisAutoAlign597: Boolean
+        get() = prefs.getBoolean(KEY_V597AXISAUTOALIGN597, false)
+        set(value) = prefs.edit().putBoolean(KEY_V597AXISAUTOALIGN597, value).apply()
+
+    var v597badgeAutoCount597: Boolean
+        get() = prefs.getBoolean(KEY_V597BADGEAUTOCOUNT597, false)
+        set(value) = prefs.edit().putBoolean(KEY_V597BADGEAUTOCOUNT597, value).apply()
+
+    var v597baselineAutoSync597: Boolean
+        get() = prefs.getBoolean(KEY_V597BASELINEAUTOSYNC597, false)
+        set(value) = prefs.edit().putBoolean(KEY_V597BASELINEAUTOSYNC597, value).apply()
+
+    var v597bindAutoLink597: Boolean
+        get() = prefs.getBoolean(KEY_V597BINDAUTOLINK597, false)
+        set(value) = prefs.edit().putBoolean(KEY_V597BINDAUTOLINK597, value).apply()
+
+    var v597bitrateAutoScale597: Int
+        get() = prefs.getInt(KEY_V597BITRATEAUTOSCALE597, 0)
+        set(value) = prefs.edit().putInt(KEY_V597BITRATEAUTOSCALE597, value).apply()
+
+    var v597blendAutoMode597: Int
+        get() = prefs.getInt(KEY_V597BLENDAUTOMODE597, 0)
+        set(value) = prefs.edit().putInt(KEY_V597BLENDAUTOMODE597, value).apply()
+
+    var v598webAutoRedirect598: Boolean
+        get() = prefs.getBoolean(KEY_V598WEBAUTOREDIRECT598, false)
+        set(value) = prefs.edit().putBoolean(KEY_V598WEBAUTOREDIRECT598, value).apply()
+
+    var v598widgetAutoRefresh598: Boolean
+        get() = prefs.getBoolean(KEY_V598WIDGETAUTOREFRESH598, false)
+        set(value) = prefs.edit().putBoolean(KEY_V598WIDGETAUTOREFRESH598, value).apply()
+
+    var v598windowAutoSnap598: Boolean
+        get() = prefs.getBoolean(KEY_V598WINDOWAUTOSNAP598, false)
+        set(value) = prefs.edit().putBoolean(KEY_V598WINDOWAUTOSNAP598, value).apply()
+
+    var v598wrapAutoBreak598: Boolean
+        get() = prefs.getBoolean(KEY_V598WRAPAUTOBREAK598, false)
+        set(value) = prefs.edit().putBoolean(KEY_V598WRAPAUTOBREAK598, value).apply()
+
+    var v598zoneAutoDetect598: Boolean
+        get() = prefs.getBoolean(KEY_V598ZONEAUTODETECT598, false)
+        set(value) = prefs.edit().putBoolean(KEY_V598ZONEAUTODETECT598, value).apply()
+
+    var v598anchorAutoPin598: Boolean
+        get() = prefs.getBoolean(KEY_V598ANCHORAUTOPIN598, false)
+        set(value) = prefs.edit().putBoolean(KEY_V598ANCHORAUTOPIN598, value).apply()
+
+    var v598aspectAutoRatio598: Int
+        get() = prefs.getInt(KEY_V598ASPECTAUTORATIO598, 0)
+        set(value) = prefs.edit().putInt(KEY_V598ASPECTAUTORATIO598, value).apply()
+
+    var v598attachAutoEmbed598: Boolean
+        get() = prefs.getBoolean(KEY_V598ATTACHAUTOEMBED598, false)
+        set(value) = prefs.edit().putBoolean(KEY_V598ATTACHAUTOEMBED598, value).apply()
+
+    var v598audioAutoNormalize598: Boolean
+        get() = prefs.getBoolean(KEY_V598AUDIOAUTONORMALIZE598, false)
+        set(value) = prefs.edit().putBoolean(KEY_V598AUDIOAUTONORMALIZE598, value).apply()
+
+    var v598axisAutoAlign598: Boolean
+        get() = prefs.getBoolean(KEY_V598AXISAUTOALIGN598, false)
+        set(value) = prefs.edit().putBoolean(KEY_V598AXISAUTOALIGN598, value).apply()
+
+    var v598badgeAutoCount598: Boolean
+        get() = prefs.getBoolean(KEY_V598BADGEAUTOCOUNT598, false)
+        set(value) = prefs.edit().putBoolean(KEY_V598BADGEAUTOCOUNT598, value).apply()
+
+    var v598baselineAutoSync598: Boolean
+        get() = prefs.getBoolean(KEY_V598BASELINEAUTOSYNC598, false)
+        set(value) = prefs.edit().putBoolean(KEY_V598BASELINEAUTOSYNC598, value).apply()
+
+    var v598bindAutoLink598: Boolean
+        get() = prefs.getBoolean(KEY_V598BINDAUTOLINK598, false)
+        set(value) = prefs.edit().putBoolean(KEY_V598BINDAUTOLINK598, value).apply()
+
+    var v598bitrateAutoScale598: Int
+        get() = prefs.getInt(KEY_V598BITRATEAUTOSCALE598, 0)
+        set(value) = prefs.edit().putInt(KEY_V598BITRATEAUTOSCALE598, value).apply()
+
+    var v598blendAutoMode598: Int
+        get() = prefs.getInt(KEY_V598BLENDAUTOMODE598, 0)
+        set(value) = prefs.edit().putInt(KEY_V598BLENDAUTOMODE598, value).apply()
+
+    var v599webAutoRedirect599: Boolean
+        get() = prefs.getBoolean(KEY_V599WEBAUTOREDIRECT599, false)
+        set(value) = prefs.edit().putBoolean(KEY_V599WEBAUTOREDIRECT599, value).apply()
+
+    var v599widgetAutoRefresh599: Boolean
+        get() = prefs.getBoolean(KEY_V599WIDGETAUTOREFRESH599, false)
+        set(value) = prefs.edit().putBoolean(KEY_V599WIDGETAUTOREFRESH599, value).apply()
+
+    var v599windowAutoSnap599: Boolean
+        get() = prefs.getBoolean(KEY_V599WINDOWAUTOSNAP599, false)
+        set(value) = prefs.edit().putBoolean(KEY_V599WINDOWAUTOSNAP599, value).apply()
+
+    var v599wrapAutoBreak599: Boolean
+        get() = prefs.getBoolean(KEY_V599WRAPAUTOBREAK599, false)
+        set(value) = prefs.edit().putBoolean(KEY_V599WRAPAUTOBREAK599, value).apply()
+
+    var v599zoneAutoDetect599: Boolean
+        get() = prefs.getBoolean(KEY_V599ZONEAUTODETECT599, false)
+        set(value) = prefs.edit().putBoolean(KEY_V599ZONEAUTODETECT599, value).apply()
+
+    var v599anchorAutoPin599: Boolean
+        get() = prefs.getBoolean(KEY_V599ANCHORAUTOPIN599, false)
+        set(value) = prefs.edit().putBoolean(KEY_V599ANCHORAUTOPIN599, value).apply()
+
+    var v599aspectAutoRatio599: Int
+        get() = prefs.getInt(KEY_V599ASPECTAUTORATIO599, 0)
+        set(value) = prefs.edit().putInt(KEY_V599ASPECTAUTORATIO599, value).apply()
+
+    var v599attachAutoEmbed599: Boolean
+        get() = prefs.getBoolean(KEY_V599ATTACHAUTOEMBED599, false)
+        set(value) = prefs.edit().putBoolean(KEY_V599ATTACHAUTOEMBED599, value).apply()
+
+    var v599audioAutoNormalize599: Boolean
+        get() = prefs.getBoolean(KEY_V599AUDIOAUTONORMALIZE599, false)
+        set(value) = prefs.edit().putBoolean(KEY_V599AUDIOAUTONORMALIZE599, value).apply()
+
+    var v599axisAutoAlign599: Boolean
+        get() = prefs.getBoolean(KEY_V599AXISAUTOALIGN599, false)
+        set(value) = prefs.edit().putBoolean(KEY_V599AXISAUTOALIGN599, value).apply()
+
+    var v599badgeAutoCount599: Boolean
+        get() = prefs.getBoolean(KEY_V599BADGEAUTOCOUNT599, false)
+        set(value) = prefs.edit().putBoolean(KEY_V599BADGEAUTOCOUNT599, value).apply()
+
+    var v599baselineAutoSync599: Boolean
+        get() = prefs.getBoolean(KEY_V599BASELINEAUTOSYNC599, false)
+        set(value) = prefs.edit().putBoolean(KEY_V599BASELINEAUTOSYNC599, value).apply()
+
+    var v599bindAutoLink599: Boolean
+        get() = prefs.getBoolean(KEY_V599BINDAUTOLINK599, false)
+        set(value) = prefs.edit().putBoolean(KEY_V599BINDAUTOLINK599, value).apply()
+
+    var v599bitrateAutoScale599: Int
+        get() = prefs.getInt(KEY_V599BITRATEAUTOSCALE599, 0)
+        set(value) = prefs.edit().putInt(KEY_V599BITRATEAUTOSCALE599, value).apply()
+
+    var v599blendAutoMode599: Int
+        get() = prefs.getInt(KEY_V599BLENDAUTOMODE599, 0)
+        set(value) = prefs.edit().putInt(KEY_V599BLENDAUTOMODE599, value).apply()
+
+    var v600webAutoRedirect600: Boolean
+        get() = prefs.getBoolean(KEY_V600WEBAUTOREDIRECT600, false)
+        set(value) = prefs.edit().putBoolean(KEY_V600WEBAUTOREDIRECT600, value).apply()
+
+    var v600widgetAutoRefresh600: Boolean
+        get() = prefs.getBoolean(KEY_V600WIDGETAUTOREFRESH600, false)
+        set(value) = prefs.edit().putBoolean(KEY_V600WIDGETAUTOREFRESH600, value).apply()
+
+    var v600windowAutoSnap600: Boolean
+        get() = prefs.getBoolean(KEY_V600WINDOWAUTOSNAP600, false)
+        set(value) = prefs.edit().putBoolean(KEY_V600WINDOWAUTOSNAP600, value).apply()
+
+    var v600wrapAutoBreak600: Boolean
+        get() = prefs.getBoolean(KEY_V600WRAPAUTOBREAK600, false)
+        set(value) = prefs.edit().putBoolean(KEY_V600WRAPAUTOBREAK600, value).apply()
+
+    var v600zoneAutoDetect600: Boolean
+        get() = prefs.getBoolean(KEY_V600ZONEAUTODETECT600, false)
+        set(value) = prefs.edit().putBoolean(KEY_V600ZONEAUTODETECT600, value).apply()
+
+    var v600anchorAutoPin600: Boolean
+        get() = prefs.getBoolean(KEY_V600ANCHORAUTOPIN600, false)
+        set(value) = prefs.edit().putBoolean(KEY_V600ANCHORAUTOPIN600, value).apply()
+
+    var v600aspectAutoRatio600: Int
+        get() = prefs.getInt(KEY_V600ASPECTAUTORATIO600, 0)
+        set(value) = prefs.edit().putInt(KEY_V600ASPECTAUTORATIO600, value).apply()
+
+    var v600attachAutoEmbed600: Boolean
+        get() = prefs.getBoolean(KEY_V600ATTACHAUTOEMBED600, false)
+        set(value) = prefs.edit().putBoolean(KEY_V600ATTACHAUTOEMBED600, value).apply()
+
+    var v600audioAutoNormalize600: Boolean
+        get() = prefs.getBoolean(KEY_V600AUDIOAUTONORMALIZE600, false)
+        set(value) = prefs.edit().putBoolean(KEY_V600AUDIOAUTONORMALIZE600, value).apply()
+
+    var v600axisAutoAlign600: Boolean
+        get() = prefs.getBoolean(KEY_V600AXISAUTOALIGN600, false)
+        set(value) = prefs.edit().putBoolean(KEY_V600AXISAUTOALIGN600, value).apply()
+
+    var v600badgeAutoCount600: Boolean
+        get() = prefs.getBoolean(KEY_V600BADGEAUTOCOUNT600, false)
+        set(value) = prefs.edit().putBoolean(KEY_V600BADGEAUTOCOUNT600, value).apply()
+
+    var v600baselineAutoSync600: Boolean
+        get() = prefs.getBoolean(KEY_V600BASELINEAUTOSYNC600, false)
+        set(value) = prefs.edit().putBoolean(KEY_V600BASELINEAUTOSYNC600, value).apply()
+
+    var v600bindAutoLink600: Boolean
+        get() = prefs.getBoolean(KEY_V600BINDAUTOLINK600, false)
+        set(value) = prefs.edit().putBoolean(KEY_V600BINDAUTOLINK600, value).apply()
+
+    var v600bitrateAutoScale600: Int
+        get() = prefs.getInt(KEY_V600BITRATEAUTOSCALE600, 0)
+        set(value) = prefs.edit().putInt(KEY_V600BITRATEAUTOSCALE600, value).apply()
+
+    var v600blendAutoMode600: Int
+        get() = prefs.getInt(KEY_V600BLENDAUTOMODE600, 0)
+        set(value) = prefs.edit().putInt(KEY_V600BLENDAUTOMODE600, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -53680,5 +54280,155 @@ class AppPrefs(context: Context) {
         const val KEY_V590WARMAUTOSTART590 = "v590warmAutoStart590" // v590 Warm Auto Start590
         const val KEY_V590WARNINGAUTOALERT590 = "v590warningAutoAlert590" // v590 Warning Auto Alert590
         const val KEY_V590WATCHAUTOSYNC590 = "v590watchAutoSync590" // v590 Watch Auto Sync590
+        const val KEY_V591WEBAUTOREDIRECT591 = "v591webAutoRedirect591" // v591 Web Auto Redirect591
+        const val KEY_V591WIDGETAUTOREFRESH591 = "v591widgetAutoRefresh591" // v591 Widget Auto Refresh591
+        const val KEY_V591WINDOWAUTOSNAP591 = "v591windowAutoSnap591" // v591 Window Auto Snap591
+        const val KEY_V591WRAPAUTOBREAK591 = "v591wrapAutoBreak591" // v591 Wrap Auto Break591
+        const val KEY_V591ZONEAUTODETECT591 = "v591zoneAutoDetect591" // v591 Zone Auto Detect591
+        const val KEY_V591ANCHORAUTOPIN591 = "v591anchorAutoPin591" // v591 Anchor Auto Pin591
+        const val KEY_V591ASPECTAUTORATIO591 = "v591aspectAutoRatio591" // v591 Aspect Auto Ratio591
+        const val KEY_V591ATTACHAUTOEMBED591 = "v591attachAutoEmbed591" // v591 Attach Auto Embed591
+        const val KEY_V591AUDIOAUTONORMALIZE591 = "v591audioAutoNormalize591" // v591 Audio Auto Normalize591
+        const val KEY_V591AXISAUTOALIGN591 = "v591axisAutoAlign591" // v591 Axis Auto Align591
+        const val KEY_V591BADGEAUTOCOUNT591 = "v591badgeAutoCount591" // v591 Badge Auto Count591
+        const val KEY_V591BASELINEAUTOSYNC591 = "v591baselineAutoSync591" // v591 Baseline Auto Sync591
+        const val KEY_V591BINDAUTOLINK591 = "v591bindAutoLink591" // v591 Bind Auto Link591
+        const val KEY_V591BITRATEAUTOSCALE591 = "v591bitrateAutoScale591" // v591 Bitrate Auto Scale591
+        const val KEY_V591BLENDAUTOMODE591 = "v591blendAutoMode591" // v591 Blend Auto Mode591
+        const val KEY_V592WEBAUTOREDIRECT592 = "v592webAutoRedirect592" // v592 Web Auto Redirect592
+        const val KEY_V592WIDGETAUTOREFRESH592 = "v592widgetAutoRefresh592" // v592 Widget Auto Refresh592
+        const val KEY_V592WINDOWAUTOSNAP592 = "v592windowAutoSnap592" // v592 Window Auto Snap592
+        const val KEY_V592WRAPAUTOBREAK592 = "v592wrapAutoBreak592" // v592 Wrap Auto Break592
+        const val KEY_V592ZONEAUTODETECT592 = "v592zoneAutoDetect592" // v592 Zone Auto Detect592
+        const val KEY_V592ANCHORAUTOPIN592 = "v592anchorAutoPin592" // v592 Anchor Auto Pin592
+        const val KEY_V592ASPECTAUTORATIO592 = "v592aspectAutoRatio592" // v592 Aspect Auto Ratio592
+        const val KEY_V592ATTACHAUTOEMBED592 = "v592attachAutoEmbed592" // v592 Attach Auto Embed592
+        const val KEY_V592AUDIOAUTONORMALIZE592 = "v592audioAutoNormalize592" // v592 Audio Auto Normalize592
+        const val KEY_V592AXISAUTOALIGN592 = "v592axisAutoAlign592" // v592 Axis Auto Align592
+        const val KEY_V592BADGEAUTOCOUNT592 = "v592badgeAutoCount592" // v592 Badge Auto Count592
+        const val KEY_V592BASELINEAUTOSYNC592 = "v592baselineAutoSync592" // v592 Baseline Auto Sync592
+        const val KEY_V592BINDAUTOLINK592 = "v592bindAutoLink592" // v592 Bind Auto Link592
+        const val KEY_V592BITRATEAUTOSCALE592 = "v592bitrateAutoScale592" // v592 Bitrate Auto Scale592
+        const val KEY_V592BLENDAUTOMODE592 = "v592blendAutoMode592" // v592 Blend Auto Mode592
+        const val KEY_V593WEBAUTOREDIRECT593 = "v593webAutoRedirect593" // v593 Web Auto Redirect593
+        const val KEY_V593WIDGETAUTOREFRESH593 = "v593widgetAutoRefresh593" // v593 Widget Auto Refresh593
+        const val KEY_V593WINDOWAUTOSNAP593 = "v593windowAutoSnap593" // v593 Window Auto Snap593
+        const val KEY_V593WRAPAUTOBREAK593 = "v593wrapAutoBreak593" // v593 Wrap Auto Break593
+        const val KEY_V593ZONEAUTODETECT593 = "v593zoneAutoDetect593" // v593 Zone Auto Detect593
+        const val KEY_V593ANCHORAUTOPIN593 = "v593anchorAutoPin593" // v593 Anchor Auto Pin593
+        const val KEY_V593ASPECTAUTORATIO593 = "v593aspectAutoRatio593" // v593 Aspect Auto Ratio593
+        const val KEY_V593ATTACHAUTOEMBED593 = "v593attachAutoEmbed593" // v593 Attach Auto Embed593
+        const val KEY_V593AUDIOAUTONORMALIZE593 = "v593audioAutoNormalize593" // v593 Audio Auto Normalize593
+        const val KEY_V593AXISAUTOALIGN593 = "v593axisAutoAlign593" // v593 Axis Auto Align593
+        const val KEY_V593BADGEAUTOCOUNT593 = "v593badgeAutoCount593" // v593 Badge Auto Count593
+        const val KEY_V593BASELINEAUTOSYNC593 = "v593baselineAutoSync593" // v593 Baseline Auto Sync593
+        const val KEY_V593BINDAUTOLINK593 = "v593bindAutoLink593" // v593 Bind Auto Link593
+        const val KEY_V593BITRATEAUTOSCALE593 = "v593bitrateAutoScale593" // v593 Bitrate Auto Scale593
+        const val KEY_V593BLENDAUTOMODE593 = "v593blendAutoMode593" // v593 Blend Auto Mode593
+        const val KEY_V594WEBAUTOREDIRECT594 = "v594webAutoRedirect594" // v594 Web Auto Redirect594
+        const val KEY_V594WIDGETAUTOREFRESH594 = "v594widgetAutoRefresh594" // v594 Widget Auto Refresh594
+        const val KEY_V594WINDOWAUTOSNAP594 = "v594windowAutoSnap594" // v594 Window Auto Snap594
+        const val KEY_V594WRAPAUTOBREAK594 = "v594wrapAutoBreak594" // v594 Wrap Auto Break594
+        const val KEY_V594ZONEAUTODETECT594 = "v594zoneAutoDetect594" // v594 Zone Auto Detect594
+        const val KEY_V594ANCHORAUTOPIN594 = "v594anchorAutoPin594" // v594 Anchor Auto Pin594
+        const val KEY_V594ASPECTAUTORATIO594 = "v594aspectAutoRatio594" // v594 Aspect Auto Ratio594
+        const val KEY_V594ATTACHAUTOEMBED594 = "v594attachAutoEmbed594" // v594 Attach Auto Embed594
+        const val KEY_V594AUDIOAUTONORMALIZE594 = "v594audioAutoNormalize594" // v594 Audio Auto Normalize594
+        const val KEY_V594AXISAUTOALIGN594 = "v594axisAutoAlign594" // v594 Axis Auto Align594
+        const val KEY_V594BADGEAUTOCOUNT594 = "v594badgeAutoCount594" // v594 Badge Auto Count594
+        const val KEY_V594BASELINEAUTOSYNC594 = "v594baselineAutoSync594" // v594 Baseline Auto Sync594
+        const val KEY_V594BINDAUTOLINK594 = "v594bindAutoLink594" // v594 Bind Auto Link594
+        const val KEY_V594BITRATEAUTOSCALE594 = "v594bitrateAutoScale594" // v594 Bitrate Auto Scale594
+        const val KEY_V594BLENDAUTOMODE594 = "v594blendAutoMode594" // v594 Blend Auto Mode594
+        const val KEY_V595WEBAUTOREDIRECT595 = "v595webAutoRedirect595" // v595 Web Auto Redirect595
+        const val KEY_V595WIDGETAUTOREFRESH595 = "v595widgetAutoRefresh595" // v595 Widget Auto Refresh595
+        const val KEY_V595WINDOWAUTOSNAP595 = "v595windowAutoSnap595" // v595 Window Auto Snap595
+        const val KEY_V595WRAPAUTOBREAK595 = "v595wrapAutoBreak595" // v595 Wrap Auto Break595
+        const val KEY_V595ZONEAUTODETECT595 = "v595zoneAutoDetect595" // v595 Zone Auto Detect595
+        const val KEY_V595ANCHORAUTOPIN595 = "v595anchorAutoPin595" // v595 Anchor Auto Pin595
+        const val KEY_V595ASPECTAUTORATIO595 = "v595aspectAutoRatio595" // v595 Aspect Auto Ratio595
+        const val KEY_V595ATTACHAUTOEMBED595 = "v595attachAutoEmbed595" // v595 Attach Auto Embed595
+        const val KEY_V595AUDIOAUTONORMALIZE595 = "v595audioAutoNormalize595" // v595 Audio Auto Normalize595
+        const val KEY_V595AXISAUTOALIGN595 = "v595axisAutoAlign595" // v595 Axis Auto Align595
+        const val KEY_V595BADGEAUTOCOUNT595 = "v595badgeAutoCount595" // v595 Badge Auto Count595
+        const val KEY_V595BASELINEAUTOSYNC595 = "v595baselineAutoSync595" // v595 Baseline Auto Sync595
+        const val KEY_V595BINDAUTOLINK595 = "v595bindAutoLink595" // v595 Bind Auto Link595
+        const val KEY_V595BITRATEAUTOSCALE595 = "v595bitrateAutoScale595" // v595 Bitrate Auto Scale595
+        const val KEY_V595BLENDAUTOMODE595 = "v595blendAutoMode595" // v595 Blend Auto Mode595
+        const val KEY_V596WEBAUTOREDIRECT596 = "v596webAutoRedirect596" // v596 Web Auto Redirect596
+        const val KEY_V596WIDGETAUTOREFRESH596 = "v596widgetAutoRefresh596" // v596 Widget Auto Refresh596
+        const val KEY_V596WINDOWAUTOSNAP596 = "v596windowAutoSnap596" // v596 Window Auto Snap596
+        const val KEY_V596WRAPAUTOBREAK596 = "v596wrapAutoBreak596" // v596 Wrap Auto Break596
+        const val KEY_V596ZONEAUTODETECT596 = "v596zoneAutoDetect596" // v596 Zone Auto Detect596
+        const val KEY_V596ANCHORAUTOPIN596 = "v596anchorAutoPin596" // v596 Anchor Auto Pin596
+        const val KEY_V596ASPECTAUTORATIO596 = "v596aspectAutoRatio596" // v596 Aspect Auto Ratio596
+        const val KEY_V596ATTACHAUTOEMBED596 = "v596attachAutoEmbed596" // v596 Attach Auto Embed596
+        const val KEY_V596AUDIOAUTONORMALIZE596 = "v596audioAutoNormalize596" // v596 Audio Auto Normalize596
+        const val KEY_V596AXISAUTOALIGN596 = "v596axisAutoAlign596" // v596 Axis Auto Align596
+        const val KEY_V596BADGEAUTOCOUNT596 = "v596badgeAutoCount596" // v596 Badge Auto Count596
+        const val KEY_V596BASELINEAUTOSYNC596 = "v596baselineAutoSync596" // v596 Baseline Auto Sync596
+        const val KEY_V596BINDAUTOLINK596 = "v596bindAutoLink596" // v596 Bind Auto Link596
+        const val KEY_V596BITRATEAUTOSCALE596 = "v596bitrateAutoScale596" // v596 Bitrate Auto Scale596
+        const val KEY_V596BLENDAUTOMODE596 = "v596blendAutoMode596" // v596 Blend Auto Mode596
+        const val KEY_V597WEBAUTOREDIRECT597 = "v597webAutoRedirect597" // v597 Web Auto Redirect597
+        const val KEY_V597WIDGETAUTOREFRESH597 = "v597widgetAutoRefresh597" // v597 Widget Auto Refresh597
+        const val KEY_V597WINDOWAUTOSNAP597 = "v597windowAutoSnap597" // v597 Window Auto Snap597
+        const val KEY_V597WRAPAUTOBREAK597 = "v597wrapAutoBreak597" // v597 Wrap Auto Break597
+        const val KEY_V597ZONEAUTODETECT597 = "v597zoneAutoDetect597" // v597 Zone Auto Detect597
+        const val KEY_V597ANCHORAUTOPIN597 = "v597anchorAutoPin597" // v597 Anchor Auto Pin597
+        const val KEY_V597ASPECTAUTORATIO597 = "v597aspectAutoRatio597" // v597 Aspect Auto Ratio597
+        const val KEY_V597ATTACHAUTOEMBED597 = "v597attachAutoEmbed597" // v597 Attach Auto Embed597
+        const val KEY_V597AUDIOAUTONORMALIZE597 = "v597audioAutoNormalize597" // v597 Audio Auto Normalize597
+        const val KEY_V597AXISAUTOALIGN597 = "v597axisAutoAlign597" // v597 Axis Auto Align597
+        const val KEY_V597BADGEAUTOCOUNT597 = "v597badgeAutoCount597" // v597 Badge Auto Count597
+        const val KEY_V597BASELINEAUTOSYNC597 = "v597baselineAutoSync597" // v597 Baseline Auto Sync597
+        const val KEY_V597BINDAUTOLINK597 = "v597bindAutoLink597" // v597 Bind Auto Link597
+        const val KEY_V597BITRATEAUTOSCALE597 = "v597bitrateAutoScale597" // v597 Bitrate Auto Scale597
+        const val KEY_V597BLENDAUTOMODE597 = "v597blendAutoMode597" // v597 Blend Auto Mode597
+        const val KEY_V598WEBAUTOREDIRECT598 = "v598webAutoRedirect598" // v598 Web Auto Redirect598
+        const val KEY_V598WIDGETAUTOREFRESH598 = "v598widgetAutoRefresh598" // v598 Widget Auto Refresh598
+        const val KEY_V598WINDOWAUTOSNAP598 = "v598windowAutoSnap598" // v598 Window Auto Snap598
+        const val KEY_V598WRAPAUTOBREAK598 = "v598wrapAutoBreak598" // v598 Wrap Auto Break598
+        const val KEY_V598ZONEAUTODETECT598 = "v598zoneAutoDetect598" // v598 Zone Auto Detect598
+        const val KEY_V598ANCHORAUTOPIN598 = "v598anchorAutoPin598" // v598 Anchor Auto Pin598
+        const val KEY_V598ASPECTAUTORATIO598 = "v598aspectAutoRatio598" // v598 Aspect Auto Ratio598
+        const val KEY_V598ATTACHAUTOEMBED598 = "v598attachAutoEmbed598" // v598 Attach Auto Embed598
+        const val KEY_V598AUDIOAUTONORMALIZE598 = "v598audioAutoNormalize598" // v598 Audio Auto Normalize598
+        const val KEY_V598AXISAUTOALIGN598 = "v598axisAutoAlign598" // v598 Axis Auto Align598
+        const val KEY_V598BADGEAUTOCOUNT598 = "v598badgeAutoCount598" // v598 Badge Auto Count598
+        const val KEY_V598BASELINEAUTOSYNC598 = "v598baselineAutoSync598" // v598 Baseline Auto Sync598
+        const val KEY_V598BINDAUTOLINK598 = "v598bindAutoLink598" // v598 Bind Auto Link598
+        const val KEY_V598BITRATEAUTOSCALE598 = "v598bitrateAutoScale598" // v598 Bitrate Auto Scale598
+        const val KEY_V598BLENDAUTOMODE598 = "v598blendAutoMode598" // v598 Blend Auto Mode598
+        const val KEY_V599WEBAUTOREDIRECT599 = "v599webAutoRedirect599" // v599 Web Auto Redirect599
+        const val KEY_V599WIDGETAUTOREFRESH599 = "v599widgetAutoRefresh599" // v599 Widget Auto Refresh599
+        const val KEY_V599WINDOWAUTOSNAP599 = "v599windowAutoSnap599" // v599 Window Auto Snap599
+        const val KEY_V599WRAPAUTOBREAK599 = "v599wrapAutoBreak599" // v599 Wrap Auto Break599
+        const val KEY_V599ZONEAUTODETECT599 = "v599zoneAutoDetect599" // v599 Zone Auto Detect599
+        const val KEY_V599ANCHORAUTOPIN599 = "v599anchorAutoPin599" // v599 Anchor Auto Pin599
+        const val KEY_V599ASPECTAUTORATIO599 = "v599aspectAutoRatio599" // v599 Aspect Auto Ratio599
+        const val KEY_V599ATTACHAUTOEMBED599 = "v599attachAutoEmbed599" // v599 Attach Auto Embed599
+        const val KEY_V599AUDIOAUTONORMALIZE599 = "v599audioAutoNormalize599" // v599 Audio Auto Normalize599
+        const val KEY_V599AXISAUTOALIGN599 = "v599axisAutoAlign599" // v599 Axis Auto Align599
+        const val KEY_V599BADGEAUTOCOUNT599 = "v599badgeAutoCount599" // v599 Badge Auto Count599
+        const val KEY_V599BASELINEAUTOSYNC599 = "v599baselineAutoSync599" // v599 Baseline Auto Sync599
+        const val KEY_V599BINDAUTOLINK599 = "v599bindAutoLink599" // v599 Bind Auto Link599
+        const val KEY_V599BITRATEAUTOSCALE599 = "v599bitrateAutoScale599" // v599 Bitrate Auto Scale599
+        const val KEY_V599BLENDAUTOMODE599 = "v599blendAutoMode599" // v599 Blend Auto Mode599
+        const val KEY_V600WEBAUTOREDIRECT600 = "v600webAutoRedirect600" // v600 Web Auto Redirect600
+        const val KEY_V600WIDGETAUTOREFRESH600 = "v600widgetAutoRefresh600" // v600 Widget Auto Refresh600
+        const val KEY_V600WINDOWAUTOSNAP600 = "v600windowAutoSnap600" // v600 Window Auto Snap600
+        const val KEY_V600WRAPAUTOBREAK600 = "v600wrapAutoBreak600" // v600 Wrap Auto Break600
+        const val KEY_V600ZONEAUTODETECT600 = "v600zoneAutoDetect600" // v600 Zone Auto Detect600
+        const val KEY_V600ANCHORAUTOPIN600 = "v600anchorAutoPin600" // v600 Anchor Auto Pin600
+        const val KEY_V600ASPECTAUTORATIO600 = "v600aspectAutoRatio600" // v600 Aspect Auto Ratio600
+        const val KEY_V600ATTACHAUTOEMBED600 = "v600attachAutoEmbed600" // v600 Attach Auto Embed600
+        const val KEY_V600AUDIOAUTONORMALIZE600 = "v600audioAutoNormalize600" // v600 Audio Auto Normalize600
+        const val KEY_V600AXISAUTOALIGN600 = "v600axisAutoAlign600" // v600 Axis Auto Align600
+        const val KEY_V600BADGEAUTOCOUNT600 = "v600badgeAutoCount600" // v600 Badge Auto Count600
+        const val KEY_V600BASELINEAUTOSYNC600 = "v600baselineAutoSync600" // v600 Baseline Auto Sync600
+        const val KEY_V600BINDAUTOLINK600 = "v600bindAutoLink600" // v600 Bind Auto Link600
+        const val KEY_V600BITRATEAUTOSCALE600 = "v600bitrateAutoScale600" // v600 Bitrate Auto Scale600
+        const val KEY_V600BLENDAUTOMODE600 = "v600blendAutoMode600" // v600 Blend Auto Mode600
     }
 }

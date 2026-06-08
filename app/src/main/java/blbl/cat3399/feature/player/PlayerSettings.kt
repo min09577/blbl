@@ -87825,3 +87825,1293 @@ internal fun PlayerActivity.showV590WatchAutoSync590Toggle() {
     AppToast.show(this, "Watch Auto Sync590: ${if (!current) "ON" else "OFF"}")
 }
 
+// v591: Web Auto Redirect591
+internal fun PlayerActivity.showV591WebAutoRedirect591Toggle() {
+    val current = BiliClient.prefs.v591webAutoRedirect591
+    BiliClient.prefs.v591webAutoRedirect591 = !current
+    AppToast.show(this, "Web Auto Redirect591: ${if (!current) "ON" else "OFF"}")
+}
+
+// v591: Widget Auto Refresh591
+internal fun PlayerActivity.showV591WidgetAutoRefresh591Toggle() {
+    val current = BiliClient.prefs.v591widgetAutoRefresh591
+    BiliClient.prefs.v591widgetAutoRefresh591 = !current
+    AppToast.show(this, "Widget Auto Refresh591: ${if (!current) "ON" else "OFF"}")
+}
+
+// v591: Window Auto Snap591
+internal fun PlayerActivity.showV591WindowAutoSnap591Toggle() {
+    val current = BiliClient.prefs.v591windowAutoSnap591
+    BiliClient.prefs.v591windowAutoSnap591 = !current
+    AppToast.show(this, "Window Auto Snap591: ${if (!current) "ON" else "OFF"}")
+}
+
+// v591: Wrap Auto Break591
+internal fun PlayerActivity.showV591WrapAutoBreak591Toggle() {
+    val current = BiliClient.prefs.v591wrapAutoBreak591
+    BiliClient.prefs.v591wrapAutoBreak591 = !current
+    AppToast.show(this, "Wrap Auto Break591: ${if (!current) "ON" else "OFF"}")
+}
+
+// v591: Zone Auto Detect591
+internal fun PlayerActivity.showV591ZoneAutoDetect591Toggle() {
+    val current = BiliClient.prefs.v591zoneAutoDetect591
+    BiliClient.prefs.v591zoneAutoDetect591 = !current
+    AppToast.show(this, "Zone Auto Detect591: ${if (!current) "ON" else "OFF"}")
+}
+
+// v591: Anchor Auto Pin591
+internal fun PlayerActivity.showV591AnchorAutoPin591Toggle() {
+    val current = BiliClient.prefs.v591anchorAutoPin591
+    BiliClient.prefs.v591anchorAutoPin591 = !current
+    AppToast.show(this, "Anchor Auto Pin591: ${if (!current) "ON" else "OFF"}")
+}
+
+// v591: Aspect Auto Ratio591
+internal fun PlayerActivity.showV591AspectAutoRatio591Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v591aspectAutoRatio591).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Aspect Auto Ratio591",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v591aspectAutoRatio591 = value
+        AppToast.show(this, "Aspect Auto Ratio591: $value")
+    }
+}
+
+// v591: Attach Auto Embed591
+internal fun PlayerActivity.showV591AttachAutoEmbed591Toggle() {
+    val current = BiliClient.prefs.v591attachAutoEmbed591
+    BiliClient.prefs.v591attachAutoEmbed591 = !current
+    AppToast.show(this, "Attach Auto Embed591: ${if (!current) "ON" else "OFF"}")
+}
+
+// v591: Audio Auto Normalize591
+internal fun PlayerActivity.showV591AudioAutoNormalize591Toggle() {
+    val current = BiliClient.prefs.v591audioAutoNormalize591
+    BiliClient.prefs.v591audioAutoNormalize591 = !current
+    AppToast.show(this, "Audio Auto Normalize591: ${if (!current) "ON" else "OFF"}")
+}
+
+// v591: Axis Auto Align591
+internal fun PlayerActivity.showV591AxisAutoAlign591Toggle() {
+    val current = BiliClient.prefs.v591axisAutoAlign591
+    BiliClient.prefs.v591axisAutoAlign591 = !current
+    AppToast.show(this, "Axis Auto Align591: ${if (!current) "ON" else "OFF"}")
+}
+
+// v591: Badge Auto Count591
+internal fun PlayerActivity.showV591BadgeAutoCount591Toggle() {
+    val current = BiliClient.prefs.v591badgeAutoCount591
+    BiliClient.prefs.v591badgeAutoCount591 = !current
+    AppToast.show(this, "Badge Auto Count591: ${if (!current) "ON" else "OFF"}")
+}
+
+// v591: Baseline Auto Sync591
+internal fun PlayerActivity.showV591BaselineAutoSync591Toggle() {
+    val current = BiliClient.prefs.v591baselineAutoSync591
+    BiliClient.prefs.v591baselineAutoSync591 = !current
+    AppToast.show(this, "Baseline Auto Sync591: ${if (!current) "ON" else "OFF"}")
+}
+
+// v591: Bind Auto Link591
+internal fun PlayerActivity.showV591BindAutoLink591Toggle() {
+    val current = BiliClient.prefs.v591bindAutoLink591
+    BiliClient.prefs.v591bindAutoLink591 = !current
+    AppToast.show(this, "Bind Auto Link591: ${if (!current) "ON" else "OFF"}")
+}
+
+// v591: Bitrate Auto Scale591
+internal fun PlayerActivity.showV591BitrateAutoScale591Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v591bitrateAutoScale591).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Bitrate Auto Scale591",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v591bitrateAutoScale591 = value
+        AppToast.show(this, "Bitrate Auto Scale591: $value")
+    }
+}
+
+// v591: Blend Auto Mode591
+internal fun PlayerActivity.showV591BlendAutoMode591Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v591blendAutoMode591).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Blend Auto Mode591",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v591blendAutoMode591 = value
+        AppToast.show(this, "Blend Auto Mode591: $value")
+    }
+}
+
+// v592: Web Auto Redirect592
+internal fun PlayerActivity.showV592WebAutoRedirect592Toggle() {
+    val current = BiliClient.prefs.v592webAutoRedirect592
+    BiliClient.prefs.v592webAutoRedirect592 = !current
+    AppToast.show(this, "Web Auto Redirect592: ${if (!current) "ON" else "OFF"}")
+}
+
+// v592: Widget Auto Refresh592
+internal fun PlayerActivity.showV592WidgetAutoRefresh592Toggle() {
+    val current = BiliClient.prefs.v592widgetAutoRefresh592
+    BiliClient.prefs.v592widgetAutoRefresh592 = !current
+    AppToast.show(this, "Widget Auto Refresh592: ${if (!current) "ON" else "OFF"}")
+}
+
+// v592: Window Auto Snap592
+internal fun PlayerActivity.showV592WindowAutoSnap592Toggle() {
+    val current = BiliClient.prefs.v592windowAutoSnap592
+    BiliClient.prefs.v592windowAutoSnap592 = !current
+    AppToast.show(this, "Window Auto Snap592: ${if (!current) "ON" else "OFF"}")
+}
+
+// v592: Wrap Auto Break592
+internal fun PlayerActivity.showV592WrapAutoBreak592Toggle() {
+    val current = BiliClient.prefs.v592wrapAutoBreak592
+    BiliClient.prefs.v592wrapAutoBreak592 = !current
+    AppToast.show(this, "Wrap Auto Break592: ${if (!current) "ON" else "OFF"}")
+}
+
+// v592: Zone Auto Detect592
+internal fun PlayerActivity.showV592ZoneAutoDetect592Toggle() {
+    val current = BiliClient.prefs.v592zoneAutoDetect592
+    BiliClient.prefs.v592zoneAutoDetect592 = !current
+    AppToast.show(this, "Zone Auto Detect592: ${if (!current) "ON" else "OFF"}")
+}
+
+// v592: Anchor Auto Pin592
+internal fun PlayerActivity.showV592AnchorAutoPin592Toggle() {
+    val current = BiliClient.prefs.v592anchorAutoPin592
+    BiliClient.prefs.v592anchorAutoPin592 = !current
+    AppToast.show(this, "Anchor Auto Pin592: ${if (!current) "ON" else "OFF"}")
+}
+
+// v592: Aspect Auto Ratio592
+internal fun PlayerActivity.showV592AspectAutoRatio592Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v592aspectAutoRatio592).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Aspect Auto Ratio592",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v592aspectAutoRatio592 = value
+        AppToast.show(this, "Aspect Auto Ratio592: $value")
+    }
+}
+
+// v592: Attach Auto Embed592
+internal fun PlayerActivity.showV592AttachAutoEmbed592Toggle() {
+    val current = BiliClient.prefs.v592attachAutoEmbed592
+    BiliClient.prefs.v592attachAutoEmbed592 = !current
+    AppToast.show(this, "Attach Auto Embed592: ${if (!current) "ON" else "OFF"}")
+}
+
+// v592: Audio Auto Normalize592
+internal fun PlayerActivity.showV592AudioAutoNormalize592Toggle() {
+    val current = BiliClient.prefs.v592audioAutoNormalize592
+    BiliClient.prefs.v592audioAutoNormalize592 = !current
+    AppToast.show(this, "Audio Auto Normalize592: ${if (!current) "ON" else "OFF"}")
+}
+
+// v592: Axis Auto Align592
+internal fun PlayerActivity.showV592AxisAutoAlign592Toggle() {
+    val current = BiliClient.prefs.v592axisAutoAlign592
+    BiliClient.prefs.v592axisAutoAlign592 = !current
+    AppToast.show(this, "Axis Auto Align592: ${if (!current) "ON" else "OFF"}")
+}
+
+// v592: Badge Auto Count592
+internal fun PlayerActivity.showV592BadgeAutoCount592Toggle() {
+    val current = BiliClient.prefs.v592badgeAutoCount592
+    BiliClient.prefs.v592badgeAutoCount592 = !current
+    AppToast.show(this, "Badge Auto Count592: ${if (!current) "ON" else "OFF"}")
+}
+
+// v592: Baseline Auto Sync592
+internal fun PlayerActivity.showV592BaselineAutoSync592Toggle() {
+    val current = BiliClient.prefs.v592baselineAutoSync592
+    BiliClient.prefs.v592baselineAutoSync592 = !current
+    AppToast.show(this, "Baseline Auto Sync592: ${if (!current) "ON" else "OFF"}")
+}
+
+// v592: Bind Auto Link592
+internal fun PlayerActivity.showV592BindAutoLink592Toggle() {
+    val current = BiliClient.prefs.v592bindAutoLink592
+    BiliClient.prefs.v592bindAutoLink592 = !current
+    AppToast.show(this, "Bind Auto Link592: ${if (!current) "ON" else "OFF"}")
+}
+
+// v592: Bitrate Auto Scale592
+internal fun PlayerActivity.showV592BitrateAutoScale592Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v592bitrateAutoScale592).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Bitrate Auto Scale592",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v592bitrateAutoScale592 = value
+        AppToast.show(this, "Bitrate Auto Scale592: $value")
+    }
+}
+
+// v592: Blend Auto Mode592
+internal fun PlayerActivity.showV592BlendAutoMode592Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v592blendAutoMode592).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Blend Auto Mode592",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v592blendAutoMode592 = value
+        AppToast.show(this, "Blend Auto Mode592: $value")
+    }
+}
+
+// v593: Web Auto Redirect593
+internal fun PlayerActivity.showV593WebAutoRedirect593Toggle() {
+    val current = BiliClient.prefs.v593webAutoRedirect593
+    BiliClient.prefs.v593webAutoRedirect593 = !current
+    AppToast.show(this, "Web Auto Redirect593: ${if (!current) "ON" else "OFF"}")
+}
+
+// v593: Widget Auto Refresh593
+internal fun PlayerActivity.showV593WidgetAutoRefresh593Toggle() {
+    val current = BiliClient.prefs.v593widgetAutoRefresh593
+    BiliClient.prefs.v593widgetAutoRefresh593 = !current
+    AppToast.show(this, "Widget Auto Refresh593: ${if (!current) "ON" else "OFF"}")
+}
+
+// v593: Window Auto Snap593
+internal fun PlayerActivity.showV593WindowAutoSnap593Toggle() {
+    val current = BiliClient.prefs.v593windowAutoSnap593
+    BiliClient.prefs.v593windowAutoSnap593 = !current
+    AppToast.show(this, "Window Auto Snap593: ${if (!current) "ON" else "OFF"}")
+}
+
+// v593: Wrap Auto Break593
+internal fun PlayerActivity.showV593WrapAutoBreak593Toggle() {
+    val current = BiliClient.prefs.v593wrapAutoBreak593
+    BiliClient.prefs.v593wrapAutoBreak593 = !current
+    AppToast.show(this, "Wrap Auto Break593: ${if (!current) "ON" else "OFF"}")
+}
+
+// v593: Zone Auto Detect593
+internal fun PlayerActivity.showV593ZoneAutoDetect593Toggle() {
+    val current = BiliClient.prefs.v593zoneAutoDetect593
+    BiliClient.prefs.v593zoneAutoDetect593 = !current
+    AppToast.show(this, "Zone Auto Detect593: ${if (!current) "ON" else "OFF"}")
+}
+
+// v593: Anchor Auto Pin593
+internal fun PlayerActivity.showV593AnchorAutoPin593Toggle() {
+    val current = BiliClient.prefs.v593anchorAutoPin593
+    BiliClient.prefs.v593anchorAutoPin593 = !current
+    AppToast.show(this, "Anchor Auto Pin593: ${if (!current) "ON" else "OFF"}")
+}
+
+// v593: Aspect Auto Ratio593
+internal fun PlayerActivity.showV593AspectAutoRatio593Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v593aspectAutoRatio593).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Aspect Auto Ratio593",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v593aspectAutoRatio593 = value
+        AppToast.show(this, "Aspect Auto Ratio593: $value")
+    }
+}
+
+// v593: Attach Auto Embed593
+internal fun PlayerActivity.showV593AttachAutoEmbed593Toggle() {
+    val current = BiliClient.prefs.v593attachAutoEmbed593
+    BiliClient.prefs.v593attachAutoEmbed593 = !current
+    AppToast.show(this, "Attach Auto Embed593: ${if (!current) "ON" else "OFF"}")
+}
+
+// v593: Audio Auto Normalize593
+internal fun PlayerActivity.showV593AudioAutoNormalize593Toggle() {
+    val current = BiliClient.prefs.v593audioAutoNormalize593
+    BiliClient.prefs.v593audioAutoNormalize593 = !current
+    AppToast.show(this, "Audio Auto Normalize593: ${if (!current) "ON" else "OFF"}")
+}
+
+// v593: Axis Auto Align593
+internal fun PlayerActivity.showV593AxisAutoAlign593Toggle() {
+    val current = BiliClient.prefs.v593axisAutoAlign593
+    BiliClient.prefs.v593axisAutoAlign593 = !current
+    AppToast.show(this, "Axis Auto Align593: ${if (!current) "ON" else "OFF"}")
+}
+
+// v593: Badge Auto Count593
+internal fun PlayerActivity.showV593BadgeAutoCount593Toggle() {
+    val current = BiliClient.prefs.v593badgeAutoCount593
+    BiliClient.prefs.v593badgeAutoCount593 = !current
+    AppToast.show(this, "Badge Auto Count593: ${if (!current) "ON" else "OFF"}")
+}
+
+// v593: Baseline Auto Sync593
+internal fun PlayerActivity.showV593BaselineAutoSync593Toggle() {
+    val current = BiliClient.prefs.v593baselineAutoSync593
+    BiliClient.prefs.v593baselineAutoSync593 = !current
+    AppToast.show(this, "Baseline Auto Sync593: ${if (!current) "ON" else "OFF"}")
+}
+
+// v593: Bind Auto Link593
+internal fun PlayerActivity.showV593BindAutoLink593Toggle() {
+    val current = BiliClient.prefs.v593bindAutoLink593
+    BiliClient.prefs.v593bindAutoLink593 = !current
+    AppToast.show(this, "Bind Auto Link593: ${if (!current) "ON" else "OFF"}")
+}
+
+// v593: Bitrate Auto Scale593
+internal fun PlayerActivity.showV593BitrateAutoScale593Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v593bitrateAutoScale593).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Bitrate Auto Scale593",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v593bitrateAutoScale593 = value
+        AppToast.show(this, "Bitrate Auto Scale593: $value")
+    }
+}
+
+// v593: Blend Auto Mode593
+internal fun PlayerActivity.showV593BlendAutoMode593Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v593blendAutoMode593).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Blend Auto Mode593",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v593blendAutoMode593 = value
+        AppToast.show(this, "Blend Auto Mode593: $value")
+    }
+}
+
+// v594: Web Auto Redirect594
+internal fun PlayerActivity.showV594WebAutoRedirect594Toggle() {
+    val current = BiliClient.prefs.v594webAutoRedirect594
+    BiliClient.prefs.v594webAutoRedirect594 = !current
+    AppToast.show(this, "Web Auto Redirect594: ${if (!current) "ON" else "OFF"}")
+}
+
+// v594: Widget Auto Refresh594
+internal fun PlayerActivity.showV594WidgetAutoRefresh594Toggle() {
+    val current = BiliClient.prefs.v594widgetAutoRefresh594
+    BiliClient.prefs.v594widgetAutoRefresh594 = !current
+    AppToast.show(this, "Widget Auto Refresh594: ${if (!current) "ON" else "OFF"}")
+}
+
+// v594: Window Auto Snap594
+internal fun PlayerActivity.showV594WindowAutoSnap594Toggle() {
+    val current = BiliClient.prefs.v594windowAutoSnap594
+    BiliClient.prefs.v594windowAutoSnap594 = !current
+    AppToast.show(this, "Window Auto Snap594: ${if (!current) "ON" else "OFF"}")
+}
+
+// v594: Wrap Auto Break594
+internal fun PlayerActivity.showV594WrapAutoBreak594Toggle() {
+    val current = BiliClient.prefs.v594wrapAutoBreak594
+    BiliClient.prefs.v594wrapAutoBreak594 = !current
+    AppToast.show(this, "Wrap Auto Break594: ${if (!current) "ON" else "OFF"}")
+}
+
+// v594: Zone Auto Detect594
+internal fun PlayerActivity.showV594ZoneAutoDetect594Toggle() {
+    val current = BiliClient.prefs.v594zoneAutoDetect594
+    BiliClient.prefs.v594zoneAutoDetect594 = !current
+    AppToast.show(this, "Zone Auto Detect594: ${if (!current) "ON" else "OFF"}")
+}
+
+// v594: Anchor Auto Pin594
+internal fun PlayerActivity.showV594AnchorAutoPin594Toggle() {
+    val current = BiliClient.prefs.v594anchorAutoPin594
+    BiliClient.prefs.v594anchorAutoPin594 = !current
+    AppToast.show(this, "Anchor Auto Pin594: ${if (!current) "ON" else "OFF"}")
+}
+
+// v594: Aspect Auto Ratio594
+internal fun PlayerActivity.showV594AspectAutoRatio594Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v594aspectAutoRatio594).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Aspect Auto Ratio594",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v594aspectAutoRatio594 = value
+        AppToast.show(this, "Aspect Auto Ratio594: $value")
+    }
+}
+
+// v594: Attach Auto Embed594
+internal fun PlayerActivity.showV594AttachAutoEmbed594Toggle() {
+    val current = BiliClient.prefs.v594attachAutoEmbed594
+    BiliClient.prefs.v594attachAutoEmbed594 = !current
+    AppToast.show(this, "Attach Auto Embed594: ${if (!current) "ON" else "OFF"}")
+}
+
+// v594: Audio Auto Normalize594
+internal fun PlayerActivity.showV594AudioAutoNormalize594Toggle() {
+    val current = BiliClient.prefs.v594audioAutoNormalize594
+    BiliClient.prefs.v594audioAutoNormalize594 = !current
+    AppToast.show(this, "Audio Auto Normalize594: ${if (!current) "ON" else "OFF"}")
+}
+
+// v594: Axis Auto Align594
+internal fun PlayerActivity.showV594AxisAutoAlign594Toggle() {
+    val current = BiliClient.prefs.v594axisAutoAlign594
+    BiliClient.prefs.v594axisAutoAlign594 = !current
+    AppToast.show(this, "Axis Auto Align594: ${if (!current) "ON" else "OFF"}")
+}
+
+// v594: Badge Auto Count594
+internal fun PlayerActivity.showV594BadgeAutoCount594Toggle() {
+    val current = BiliClient.prefs.v594badgeAutoCount594
+    BiliClient.prefs.v594badgeAutoCount594 = !current
+    AppToast.show(this, "Badge Auto Count594: ${if (!current) "ON" else "OFF"}")
+}
+
+// v594: Baseline Auto Sync594
+internal fun PlayerActivity.showV594BaselineAutoSync594Toggle() {
+    val current = BiliClient.prefs.v594baselineAutoSync594
+    BiliClient.prefs.v594baselineAutoSync594 = !current
+    AppToast.show(this, "Baseline Auto Sync594: ${if (!current) "ON" else "OFF"}")
+}
+
+// v594: Bind Auto Link594
+internal fun PlayerActivity.showV594BindAutoLink594Toggle() {
+    val current = BiliClient.prefs.v594bindAutoLink594
+    BiliClient.prefs.v594bindAutoLink594 = !current
+    AppToast.show(this, "Bind Auto Link594: ${if (!current) "ON" else "OFF"}")
+}
+
+// v594: Bitrate Auto Scale594
+internal fun PlayerActivity.showV594BitrateAutoScale594Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v594bitrateAutoScale594).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Bitrate Auto Scale594",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v594bitrateAutoScale594 = value
+        AppToast.show(this, "Bitrate Auto Scale594: $value")
+    }
+}
+
+// v594: Blend Auto Mode594
+internal fun PlayerActivity.showV594BlendAutoMode594Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v594blendAutoMode594).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Blend Auto Mode594",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v594blendAutoMode594 = value
+        AppToast.show(this, "Blend Auto Mode594: $value")
+    }
+}
+
+// v595: Web Auto Redirect595
+internal fun PlayerActivity.showV595WebAutoRedirect595Toggle() {
+    val current = BiliClient.prefs.v595webAutoRedirect595
+    BiliClient.prefs.v595webAutoRedirect595 = !current
+    AppToast.show(this, "Web Auto Redirect595: ${if (!current) "ON" else "OFF"}")
+}
+
+// v595: Widget Auto Refresh595
+internal fun PlayerActivity.showV595WidgetAutoRefresh595Toggle() {
+    val current = BiliClient.prefs.v595widgetAutoRefresh595
+    BiliClient.prefs.v595widgetAutoRefresh595 = !current
+    AppToast.show(this, "Widget Auto Refresh595: ${if (!current) "ON" else "OFF"}")
+}
+
+// v595: Window Auto Snap595
+internal fun PlayerActivity.showV595WindowAutoSnap595Toggle() {
+    val current = BiliClient.prefs.v595windowAutoSnap595
+    BiliClient.prefs.v595windowAutoSnap595 = !current
+    AppToast.show(this, "Window Auto Snap595: ${if (!current) "ON" else "OFF"}")
+}
+
+// v595: Wrap Auto Break595
+internal fun PlayerActivity.showV595WrapAutoBreak595Toggle() {
+    val current = BiliClient.prefs.v595wrapAutoBreak595
+    BiliClient.prefs.v595wrapAutoBreak595 = !current
+    AppToast.show(this, "Wrap Auto Break595: ${if (!current) "ON" else "OFF"}")
+}
+
+// v595: Zone Auto Detect595
+internal fun PlayerActivity.showV595ZoneAutoDetect595Toggle() {
+    val current = BiliClient.prefs.v595zoneAutoDetect595
+    BiliClient.prefs.v595zoneAutoDetect595 = !current
+    AppToast.show(this, "Zone Auto Detect595: ${if (!current) "ON" else "OFF"}")
+}
+
+// v595: Anchor Auto Pin595
+internal fun PlayerActivity.showV595AnchorAutoPin595Toggle() {
+    val current = BiliClient.prefs.v595anchorAutoPin595
+    BiliClient.prefs.v595anchorAutoPin595 = !current
+    AppToast.show(this, "Anchor Auto Pin595: ${if (!current) "ON" else "OFF"}")
+}
+
+// v595: Aspect Auto Ratio595
+internal fun PlayerActivity.showV595AspectAutoRatio595Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v595aspectAutoRatio595).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Aspect Auto Ratio595",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v595aspectAutoRatio595 = value
+        AppToast.show(this, "Aspect Auto Ratio595: $value")
+    }
+}
+
+// v595: Attach Auto Embed595
+internal fun PlayerActivity.showV595AttachAutoEmbed595Toggle() {
+    val current = BiliClient.prefs.v595attachAutoEmbed595
+    BiliClient.prefs.v595attachAutoEmbed595 = !current
+    AppToast.show(this, "Attach Auto Embed595: ${if (!current) "ON" else "OFF"}")
+}
+
+// v595: Audio Auto Normalize595
+internal fun PlayerActivity.showV595AudioAutoNormalize595Toggle() {
+    val current = BiliClient.prefs.v595audioAutoNormalize595
+    BiliClient.prefs.v595audioAutoNormalize595 = !current
+    AppToast.show(this, "Audio Auto Normalize595: ${if (!current) "ON" else "OFF"}")
+}
+
+// v595: Axis Auto Align595
+internal fun PlayerActivity.showV595AxisAutoAlign595Toggle() {
+    val current = BiliClient.prefs.v595axisAutoAlign595
+    BiliClient.prefs.v595axisAutoAlign595 = !current
+    AppToast.show(this, "Axis Auto Align595: ${if (!current) "ON" else "OFF"}")
+}
+
+// v595: Badge Auto Count595
+internal fun PlayerActivity.showV595BadgeAutoCount595Toggle() {
+    val current = BiliClient.prefs.v595badgeAutoCount595
+    BiliClient.prefs.v595badgeAutoCount595 = !current
+    AppToast.show(this, "Badge Auto Count595: ${if (!current) "ON" else "OFF"}")
+}
+
+// v595: Baseline Auto Sync595
+internal fun PlayerActivity.showV595BaselineAutoSync595Toggle() {
+    val current = BiliClient.prefs.v595baselineAutoSync595
+    BiliClient.prefs.v595baselineAutoSync595 = !current
+    AppToast.show(this, "Baseline Auto Sync595: ${if (!current) "ON" else "OFF"}")
+}
+
+// v595: Bind Auto Link595
+internal fun PlayerActivity.showV595BindAutoLink595Toggle() {
+    val current = BiliClient.prefs.v595bindAutoLink595
+    BiliClient.prefs.v595bindAutoLink595 = !current
+    AppToast.show(this, "Bind Auto Link595: ${if (!current) "ON" else "OFF"}")
+}
+
+// v595: Bitrate Auto Scale595
+internal fun PlayerActivity.showV595BitrateAutoScale595Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v595bitrateAutoScale595).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Bitrate Auto Scale595",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v595bitrateAutoScale595 = value
+        AppToast.show(this, "Bitrate Auto Scale595: $value")
+    }
+}
+
+// v595: Blend Auto Mode595
+internal fun PlayerActivity.showV595BlendAutoMode595Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v595blendAutoMode595).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Blend Auto Mode595",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v595blendAutoMode595 = value
+        AppToast.show(this, "Blend Auto Mode595: $value")
+    }
+}
+
+// v596: Web Auto Redirect596
+internal fun PlayerActivity.showV596WebAutoRedirect596Toggle() {
+    val current = BiliClient.prefs.v596webAutoRedirect596
+    BiliClient.prefs.v596webAutoRedirect596 = !current
+    AppToast.show(this, "Web Auto Redirect596: ${if (!current) "ON" else "OFF"}")
+}
+
+// v596: Widget Auto Refresh596
+internal fun PlayerActivity.showV596WidgetAutoRefresh596Toggle() {
+    val current = BiliClient.prefs.v596widgetAutoRefresh596
+    BiliClient.prefs.v596widgetAutoRefresh596 = !current
+    AppToast.show(this, "Widget Auto Refresh596: ${if (!current) "ON" else "OFF"}")
+}
+
+// v596: Window Auto Snap596
+internal fun PlayerActivity.showV596WindowAutoSnap596Toggle() {
+    val current = BiliClient.prefs.v596windowAutoSnap596
+    BiliClient.prefs.v596windowAutoSnap596 = !current
+    AppToast.show(this, "Window Auto Snap596: ${if (!current) "ON" else "OFF"}")
+}
+
+// v596: Wrap Auto Break596
+internal fun PlayerActivity.showV596WrapAutoBreak596Toggle() {
+    val current = BiliClient.prefs.v596wrapAutoBreak596
+    BiliClient.prefs.v596wrapAutoBreak596 = !current
+    AppToast.show(this, "Wrap Auto Break596: ${if (!current) "ON" else "OFF"}")
+}
+
+// v596: Zone Auto Detect596
+internal fun PlayerActivity.showV596ZoneAutoDetect596Toggle() {
+    val current = BiliClient.prefs.v596zoneAutoDetect596
+    BiliClient.prefs.v596zoneAutoDetect596 = !current
+    AppToast.show(this, "Zone Auto Detect596: ${if (!current) "ON" else "OFF"}")
+}
+
+// v596: Anchor Auto Pin596
+internal fun PlayerActivity.showV596AnchorAutoPin596Toggle() {
+    val current = BiliClient.prefs.v596anchorAutoPin596
+    BiliClient.prefs.v596anchorAutoPin596 = !current
+    AppToast.show(this, "Anchor Auto Pin596: ${if (!current) "ON" else "OFF"}")
+}
+
+// v596: Aspect Auto Ratio596
+internal fun PlayerActivity.showV596AspectAutoRatio596Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v596aspectAutoRatio596).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Aspect Auto Ratio596",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v596aspectAutoRatio596 = value
+        AppToast.show(this, "Aspect Auto Ratio596: $value")
+    }
+}
+
+// v596: Attach Auto Embed596
+internal fun PlayerActivity.showV596AttachAutoEmbed596Toggle() {
+    val current = BiliClient.prefs.v596attachAutoEmbed596
+    BiliClient.prefs.v596attachAutoEmbed596 = !current
+    AppToast.show(this, "Attach Auto Embed596: ${if (!current) "ON" else "OFF"}")
+}
+
+// v596: Audio Auto Normalize596
+internal fun PlayerActivity.showV596AudioAutoNormalize596Toggle() {
+    val current = BiliClient.prefs.v596audioAutoNormalize596
+    BiliClient.prefs.v596audioAutoNormalize596 = !current
+    AppToast.show(this, "Audio Auto Normalize596: ${if (!current) "ON" else "OFF"}")
+}
+
+// v596: Axis Auto Align596
+internal fun PlayerActivity.showV596AxisAutoAlign596Toggle() {
+    val current = BiliClient.prefs.v596axisAutoAlign596
+    BiliClient.prefs.v596axisAutoAlign596 = !current
+    AppToast.show(this, "Axis Auto Align596: ${if (!current) "ON" else "OFF"}")
+}
+
+// v596: Badge Auto Count596
+internal fun PlayerActivity.showV596BadgeAutoCount596Toggle() {
+    val current = BiliClient.prefs.v596badgeAutoCount596
+    BiliClient.prefs.v596badgeAutoCount596 = !current
+    AppToast.show(this, "Badge Auto Count596: ${if (!current) "ON" else "OFF"}")
+}
+
+// v596: Baseline Auto Sync596
+internal fun PlayerActivity.showV596BaselineAutoSync596Toggle() {
+    val current = BiliClient.prefs.v596baselineAutoSync596
+    BiliClient.prefs.v596baselineAutoSync596 = !current
+    AppToast.show(this, "Baseline Auto Sync596: ${if (!current) "ON" else "OFF"}")
+}
+
+// v596: Bind Auto Link596
+internal fun PlayerActivity.showV596BindAutoLink596Toggle() {
+    val current = BiliClient.prefs.v596bindAutoLink596
+    BiliClient.prefs.v596bindAutoLink596 = !current
+    AppToast.show(this, "Bind Auto Link596: ${if (!current) "ON" else "OFF"}")
+}
+
+// v596: Bitrate Auto Scale596
+internal fun PlayerActivity.showV596BitrateAutoScale596Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v596bitrateAutoScale596).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Bitrate Auto Scale596",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v596bitrateAutoScale596 = value
+        AppToast.show(this, "Bitrate Auto Scale596: $value")
+    }
+}
+
+// v596: Blend Auto Mode596
+internal fun PlayerActivity.showV596BlendAutoMode596Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v596blendAutoMode596).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Blend Auto Mode596",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v596blendAutoMode596 = value
+        AppToast.show(this, "Blend Auto Mode596: $value")
+    }
+}
+
+// v597: Web Auto Redirect597
+internal fun PlayerActivity.showV597WebAutoRedirect597Toggle() {
+    val current = BiliClient.prefs.v597webAutoRedirect597
+    BiliClient.prefs.v597webAutoRedirect597 = !current
+    AppToast.show(this, "Web Auto Redirect597: ${if (!current) "ON" else "OFF"}")
+}
+
+// v597: Widget Auto Refresh597
+internal fun PlayerActivity.showV597WidgetAutoRefresh597Toggle() {
+    val current = BiliClient.prefs.v597widgetAutoRefresh597
+    BiliClient.prefs.v597widgetAutoRefresh597 = !current
+    AppToast.show(this, "Widget Auto Refresh597: ${if (!current) "ON" else "OFF"}")
+}
+
+// v597: Window Auto Snap597
+internal fun PlayerActivity.showV597WindowAutoSnap597Toggle() {
+    val current = BiliClient.prefs.v597windowAutoSnap597
+    BiliClient.prefs.v597windowAutoSnap597 = !current
+    AppToast.show(this, "Window Auto Snap597: ${if (!current) "ON" else "OFF"}")
+}
+
+// v597: Wrap Auto Break597
+internal fun PlayerActivity.showV597WrapAutoBreak597Toggle() {
+    val current = BiliClient.prefs.v597wrapAutoBreak597
+    BiliClient.prefs.v597wrapAutoBreak597 = !current
+    AppToast.show(this, "Wrap Auto Break597: ${if (!current) "ON" else "OFF"}")
+}
+
+// v597: Zone Auto Detect597
+internal fun PlayerActivity.showV597ZoneAutoDetect597Toggle() {
+    val current = BiliClient.prefs.v597zoneAutoDetect597
+    BiliClient.prefs.v597zoneAutoDetect597 = !current
+    AppToast.show(this, "Zone Auto Detect597: ${if (!current) "ON" else "OFF"}")
+}
+
+// v597: Anchor Auto Pin597
+internal fun PlayerActivity.showV597AnchorAutoPin597Toggle() {
+    val current = BiliClient.prefs.v597anchorAutoPin597
+    BiliClient.prefs.v597anchorAutoPin597 = !current
+    AppToast.show(this, "Anchor Auto Pin597: ${if (!current) "ON" else "OFF"}")
+}
+
+// v597: Aspect Auto Ratio597
+internal fun PlayerActivity.showV597AspectAutoRatio597Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v597aspectAutoRatio597).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Aspect Auto Ratio597",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v597aspectAutoRatio597 = value
+        AppToast.show(this, "Aspect Auto Ratio597: $value")
+    }
+}
+
+// v597: Attach Auto Embed597
+internal fun PlayerActivity.showV597AttachAutoEmbed597Toggle() {
+    val current = BiliClient.prefs.v597attachAutoEmbed597
+    BiliClient.prefs.v597attachAutoEmbed597 = !current
+    AppToast.show(this, "Attach Auto Embed597: ${if (!current) "ON" else "OFF"}")
+}
+
+// v597: Audio Auto Normalize597
+internal fun PlayerActivity.showV597AudioAutoNormalize597Toggle() {
+    val current = BiliClient.prefs.v597audioAutoNormalize597
+    BiliClient.prefs.v597audioAutoNormalize597 = !current
+    AppToast.show(this, "Audio Auto Normalize597: ${if (!current) "ON" else "OFF"}")
+}
+
+// v597: Axis Auto Align597
+internal fun PlayerActivity.showV597AxisAutoAlign597Toggle() {
+    val current = BiliClient.prefs.v597axisAutoAlign597
+    BiliClient.prefs.v597axisAutoAlign597 = !current
+    AppToast.show(this, "Axis Auto Align597: ${if (!current) "ON" else "OFF"}")
+}
+
+// v597: Badge Auto Count597
+internal fun PlayerActivity.showV597BadgeAutoCount597Toggle() {
+    val current = BiliClient.prefs.v597badgeAutoCount597
+    BiliClient.prefs.v597badgeAutoCount597 = !current
+    AppToast.show(this, "Badge Auto Count597: ${if (!current) "ON" else "OFF"}")
+}
+
+// v597: Baseline Auto Sync597
+internal fun PlayerActivity.showV597BaselineAutoSync597Toggle() {
+    val current = BiliClient.prefs.v597baselineAutoSync597
+    BiliClient.prefs.v597baselineAutoSync597 = !current
+    AppToast.show(this, "Baseline Auto Sync597: ${if (!current) "ON" else "OFF"}")
+}
+
+// v597: Bind Auto Link597
+internal fun PlayerActivity.showV597BindAutoLink597Toggle() {
+    val current = BiliClient.prefs.v597bindAutoLink597
+    BiliClient.prefs.v597bindAutoLink597 = !current
+    AppToast.show(this, "Bind Auto Link597: ${if (!current) "ON" else "OFF"}")
+}
+
+// v597: Bitrate Auto Scale597
+internal fun PlayerActivity.showV597BitrateAutoScale597Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v597bitrateAutoScale597).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Bitrate Auto Scale597",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v597bitrateAutoScale597 = value
+        AppToast.show(this, "Bitrate Auto Scale597: $value")
+    }
+}
+
+// v597: Blend Auto Mode597
+internal fun PlayerActivity.showV597BlendAutoMode597Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v597blendAutoMode597).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Blend Auto Mode597",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v597blendAutoMode597 = value
+        AppToast.show(this, "Blend Auto Mode597: $value")
+    }
+}
+
+// v598: Web Auto Redirect598
+internal fun PlayerActivity.showV598WebAutoRedirect598Toggle() {
+    val current = BiliClient.prefs.v598webAutoRedirect598
+    BiliClient.prefs.v598webAutoRedirect598 = !current
+    AppToast.show(this, "Web Auto Redirect598: ${if (!current) "ON" else "OFF"}")
+}
+
+// v598: Widget Auto Refresh598
+internal fun PlayerActivity.showV598WidgetAutoRefresh598Toggle() {
+    val current = BiliClient.prefs.v598widgetAutoRefresh598
+    BiliClient.prefs.v598widgetAutoRefresh598 = !current
+    AppToast.show(this, "Widget Auto Refresh598: ${if (!current) "ON" else "OFF"}")
+}
+
+// v598: Window Auto Snap598
+internal fun PlayerActivity.showV598WindowAutoSnap598Toggle() {
+    val current = BiliClient.prefs.v598windowAutoSnap598
+    BiliClient.prefs.v598windowAutoSnap598 = !current
+    AppToast.show(this, "Window Auto Snap598: ${if (!current) "ON" else "OFF"}")
+}
+
+// v598: Wrap Auto Break598
+internal fun PlayerActivity.showV598WrapAutoBreak598Toggle() {
+    val current = BiliClient.prefs.v598wrapAutoBreak598
+    BiliClient.prefs.v598wrapAutoBreak598 = !current
+    AppToast.show(this, "Wrap Auto Break598: ${if (!current) "ON" else "OFF"}")
+}
+
+// v598: Zone Auto Detect598
+internal fun PlayerActivity.showV598ZoneAutoDetect598Toggle() {
+    val current = BiliClient.prefs.v598zoneAutoDetect598
+    BiliClient.prefs.v598zoneAutoDetect598 = !current
+    AppToast.show(this, "Zone Auto Detect598: ${if (!current) "ON" else "OFF"}")
+}
+
+// v598: Anchor Auto Pin598
+internal fun PlayerActivity.showV598AnchorAutoPin598Toggle() {
+    val current = BiliClient.prefs.v598anchorAutoPin598
+    BiliClient.prefs.v598anchorAutoPin598 = !current
+    AppToast.show(this, "Anchor Auto Pin598: ${if (!current) "ON" else "OFF"}")
+}
+
+// v598: Aspect Auto Ratio598
+internal fun PlayerActivity.showV598AspectAutoRatio598Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v598aspectAutoRatio598).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Aspect Auto Ratio598",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v598aspectAutoRatio598 = value
+        AppToast.show(this, "Aspect Auto Ratio598: $value")
+    }
+}
+
+// v598: Attach Auto Embed598
+internal fun PlayerActivity.showV598AttachAutoEmbed598Toggle() {
+    val current = BiliClient.prefs.v598attachAutoEmbed598
+    BiliClient.prefs.v598attachAutoEmbed598 = !current
+    AppToast.show(this, "Attach Auto Embed598: ${if (!current) "ON" else "OFF"}")
+}
+
+// v598: Audio Auto Normalize598
+internal fun PlayerActivity.showV598AudioAutoNormalize598Toggle() {
+    val current = BiliClient.prefs.v598audioAutoNormalize598
+    BiliClient.prefs.v598audioAutoNormalize598 = !current
+    AppToast.show(this, "Audio Auto Normalize598: ${if (!current) "ON" else "OFF"}")
+}
+
+// v598: Axis Auto Align598
+internal fun PlayerActivity.showV598AxisAutoAlign598Toggle() {
+    val current = BiliClient.prefs.v598axisAutoAlign598
+    BiliClient.prefs.v598axisAutoAlign598 = !current
+    AppToast.show(this, "Axis Auto Align598: ${if (!current) "ON" else "OFF"}")
+}
+
+// v598: Badge Auto Count598
+internal fun PlayerActivity.showV598BadgeAutoCount598Toggle() {
+    val current = BiliClient.prefs.v598badgeAutoCount598
+    BiliClient.prefs.v598badgeAutoCount598 = !current
+    AppToast.show(this, "Badge Auto Count598: ${if (!current) "ON" else "OFF"}")
+}
+
+// v598: Baseline Auto Sync598
+internal fun PlayerActivity.showV598BaselineAutoSync598Toggle() {
+    val current = BiliClient.prefs.v598baselineAutoSync598
+    BiliClient.prefs.v598baselineAutoSync598 = !current
+    AppToast.show(this, "Baseline Auto Sync598: ${if (!current) "ON" else "OFF"}")
+}
+
+// v598: Bind Auto Link598
+internal fun PlayerActivity.showV598BindAutoLink598Toggle() {
+    val current = BiliClient.prefs.v598bindAutoLink598
+    BiliClient.prefs.v598bindAutoLink598 = !current
+    AppToast.show(this, "Bind Auto Link598: ${if (!current) "ON" else "OFF"}")
+}
+
+// v598: Bitrate Auto Scale598
+internal fun PlayerActivity.showV598BitrateAutoScale598Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v598bitrateAutoScale598).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Bitrate Auto Scale598",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v598bitrateAutoScale598 = value
+        AppToast.show(this, "Bitrate Auto Scale598: $value")
+    }
+}
+
+// v598: Blend Auto Mode598
+internal fun PlayerActivity.showV598BlendAutoMode598Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v598blendAutoMode598).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Blend Auto Mode598",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v598blendAutoMode598 = value
+        AppToast.show(this, "Blend Auto Mode598: $value")
+    }
+}
+
+// v599: Web Auto Redirect599
+internal fun PlayerActivity.showV599WebAutoRedirect599Toggle() {
+    val current = BiliClient.prefs.v599webAutoRedirect599
+    BiliClient.prefs.v599webAutoRedirect599 = !current
+    AppToast.show(this, "Web Auto Redirect599: ${if (!current) "ON" else "OFF"}")
+}
+
+// v599: Widget Auto Refresh599
+internal fun PlayerActivity.showV599WidgetAutoRefresh599Toggle() {
+    val current = BiliClient.prefs.v599widgetAutoRefresh599
+    BiliClient.prefs.v599widgetAutoRefresh599 = !current
+    AppToast.show(this, "Widget Auto Refresh599: ${if (!current) "ON" else "OFF"}")
+}
+
+// v599: Window Auto Snap599
+internal fun PlayerActivity.showV599WindowAutoSnap599Toggle() {
+    val current = BiliClient.prefs.v599windowAutoSnap599
+    BiliClient.prefs.v599windowAutoSnap599 = !current
+    AppToast.show(this, "Window Auto Snap599: ${if (!current) "ON" else "OFF"}")
+}
+
+// v599: Wrap Auto Break599
+internal fun PlayerActivity.showV599WrapAutoBreak599Toggle() {
+    val current = BiliClient.prefs.v599wrapAutoBreak599
+    BiliClient.prefs.v599wrapAutoBreak599 = !current
+    AppToast.show(this, "Wrap Auto Break599: ${if (!current) "ON" else "OFF"}")
+}
+
+// v599: Zone Auto Detect599
+internal fun PlayerActivity.showV599ZoneAutoDetect599Toggle() {
+    val current = BiliClient.prefs.v599zoneAutoDetect599
+    BiliClient.prefs.v599zoneAutoDetect599 = !current
+    AppToast.show(this, "Zone Auto Detect599: ${if (!current) "ON" else "OFF"}")
+}
+
+// v599: Anchor Auto Pin599
+internal fun PlayerActivity.showV599AnchorAutoPin599Toggle() {
+    val current = BiliClient.prefs.v599anchorAutoPin599
+    BiliClient.prefs.v599anchorAutoPin599 = !current
+    AppToast.show(this, "Anchor Auto Pin599: ${if (!current) "ON" else "OFF"}")
+}
+
+// v599: Aspect Auto Ratio599
+internal fun PlayerActivity.showV599AspectAutoRatio599Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v599aspectAutoRatio599).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Aspect Auto Ratio599",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v599aspectAutoRatio599 = value
+        AppToast.show(this, "Aspect Auto Ratio599: $value")
+    }
+}
+
+// v599: Attach Auto Embed599
+internal fun PlayerActivity.showV599AttachAutoEmbed599Toggle() {
+    val current = BiliClient.prefs.v599attachAutoEmbed599
+    BiliClient.prefs.v599attachAutoEmbed599 = !current
+    AppToast.show(this, "Attach Auto Embed599: ${if (!current) "ON" else "OFF"}")
+}
+
+// v599: Audio Auto Normalize599
+internal fun PlayerActivity.showV599AudioAutoNormalize599Toggle() {
+    val current = BiliClient.prefs.v599audioAutoNormalize599
+    BiliClient.prefs.v599audioAutoNormalize599 = !current
+    AppToast.show(this, "Audio Auto Normalize599: ${if (!current) "ON" else "OFF"}")
+}
+
+// v599: Axis Auto Align599
+internal fun PlayerActivity.showV599AxisAutoAlign599Toggle() {
+    val current = BiliClient.prefs.v599axisAutoAlign599
+    BiliClient.prefs.v599axisAutoAlign599 = !current
+    AppToast.show(this, "Axis Auto Align599: ${if (!current) "ON" else "OFF"}")
+}
+
+// v599: Badge Auto Count599
+internal fun PlayerActivity.showV599BadgeAutoCount599Toggle() {
+    val current = BiliClient.prefs.v599badgeAutoCount599
+    BiliClient.prefs.v599badgeAutoCount599 = !current
+    AppToast.show(this, "Badge Auto Count599: ${if (!current) "ON" else "OFF"}")
+}
+
+// v599: Baseline Auto Sync599
+internal fun PlayerActivity.showV599BaselineAutoSync599Toggle() {
+    val current = BiliClient.prefs.v599baselineAutoSync599
+    BiliClient.prefs.v599baselineAutoSync599 = !current
+    AppToast.show(this, "Baseline Auto Sync599: ${if (!current) "ON" else "OFF"}")
+}
+
+// v599: Bind Auto Link599
+internal fun PlayerActivity.showV599BindAutoLink599Toggle() {
+    val current = BiliClient.prefs.v599bindAutoLink599
+    BiliClient.prefs.v599bindAutoLink599 = !current
+    AppToast.show(this, "Bind Auto Link599: ${if (!current) "ON" else "OFF"}")
+}
+
+// v599: Bitrate Auto Scale599
+internal fun PlayerActivity.showV599BitrateAutoScale599Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v599bitrateAutoScale599).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Bitrate Auto Scale599",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v599bitrateAutoScale599 = value
+        AppToast.show(this, "Bitrate Auto Scale599: $value")
+    }
+}
+
+// v599: Blend Auto Mode599
+internal fun PlayerActivity.showV599BlendAutoMode599Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v599blendAutoMode599).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Blend Auto Mode599",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v599blendAutoMode599 = value
+        AppToast.show(this, "Blend Auto Mode599: $value")
+    }
+}
+
+// v600: Web Auto Redirect600
+internal fun PlayerActivity.showV600WebAutoRedirect600Toggle() {
+    val current = BiliClient.prefs.v600webAutoRedirect600
+    BiliClient.prefs.v600webAutoRedirect600 = !current
+    AppToast.show(this, "Web Auto Redirect600: ${if (!current) "ON" else "OFF"}")
+}
+
+// v600: Widget Auto Refresh600
+internal fun PlayerActivity.showV600WidgetAutoRefresh600Toggle() {
+    val current = BiliClient.prefs.v600widgetAutoRefresh600
+    BiliClient.prefs.v600widgetAutoRefresh600 = !current
+    AppToast.show(this, "Widget Auto Refresh600: ${if (!current) "ON" else "OFF"}")
+}
+
+// v600: Window Auto Snap600
+internal fun PlayerActivity.showV600WindowAutoSnap600Toggle() {
+    val current = BiliClient.prefs.v600windowAutoSnap600
+    BiliClient.prefs.v600windowAutoSnap600 = !current
+    AppToast.show(this, "Window Auto Snap600: ${if (!current) "ON" else "OFF"}")
+}
+
+// v600: Wrap Auto Break600
+internal fun PlayerActivity.showV600WrapAutoBreak600Toggle() {
+    val current = BiliClient.prefs.v600wrapAutoBreak600
+    BiliClient.prefs.v600wrapAutoBreak600 = !current
+    AppToast.show(this, "Wrap Auto Break600: ${if (!current) "ON" else "OFF"}")
+}
+
+// v600: Zone Auto Detect600
+internal fun PlayerActivity.showV600ZoneAutoDetect600Toggle() {
+    val current = BiliClient.prefs.v600zoneAutoDetect600
+    BiliClient.prefs.v600zoneAutoDetect600 = !current
+    AppToast.show(this, "Zone Auto Detect600: ${if (!current) "ON" else "OFF"}")
+}
+
+// v600: Anchor Auto Pin600
+internal fun PlayerActivity.showV600AnchorAutoPin600Toggle() {
+    val current = BiliClient.prefs.v600anchorAutoPin600
+    BiliClient.prefs.v600anchorAutoPin600 = !current
+    AppToast.show(this, "Anchor Auto Pin600: ${if (!current) "ON" else "OFF"}")
+}
+
+// v600: Aspect Auto Ratio600
+internal fun PlayerActivity.showV600AspectAutoRatio600Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v600aspectAutoRatio600).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Aspect Auto Ratio600",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v600aspectAutoRatio600 = value
+        AppToast.show(this, "Aspect Auto Ratio600: $value")
+    }
+}
+
+// v600: Attach Auto Embed600
+internal fun PlayerActivity.showV600AttachAutoEmbed600Toggle() {
+    val current = BiliClient.prefs.v600attachAutoEmbed600
+    BiliClient.prefs.v600attachAutoEmbed600 = !current
+    AppToast.show(this, "Attach Auto Embed600: ${if (!current) "ON" else "OFF"}")
+}
+
+// v600: Audio Auto Normalize600
+internal fun PlayerActivity.showV600AudioAutoNormalize600Toggle() {
+    val current = BiliClient.prefs.v600audioAutoNormalize600
+    BiliClient.prefs.v600audioAutoNormalize600 = !current
+    AppToast.show(this, "Audio Auto Normalize600: ${if (!current) "ON" else "OFF"}")
+}
+
+// v600: Axis Auto Align600
+internal fun PlayerActivity.showV600AxisAutoAlign600Toggle() {
+    val current = BiliClient.prefs.v600axisAutoAlign600
+    BiliClient.prefs.v600axisAutoAlign600 = !current
+    AppToast.show(this, "Axis Auto Align600: ${if (!current) "ON" else "OFF"}")
+}
+
+// v600: Badge Auto Count600
+internal fun PlayerActivity.showV600BadgeAutoCount600Toggle() {
+    val current = BiliClient.prefs.v600badgeAutoCount600
+    BiliClient.prefs.v600badgeAutoCount600 = !current
+    AppToast.show(this, "Badge Auto Count600: ${if (!current) "ON" else "OFF"}")
+}
+
+// v600: Baseline Auto Sync600
+internal fun PlayerActivity.showV600BaselineAutoSync600Toggle() {
+    val current = BiliClient.prefs.v600baselineAutoSync600
+    BiliClient.prefs.v600baselineAutoSync600 = !current
+    AppToast.show(this, "Baseline Auto Sync600: ${if (!current) "ON" else "OFF"}")
+}
+
+// v600: Bind Auto Link600
+internal fun PlayerActivity.showV600BindAutoLink600Toggle() {
+    val current = BiliClient.prefs.v600bindAutoLink600
+    BiliClient.prefs.v600bindAutoLink600 = !current
+    AppToast.show(this, "Bind Auto Link600: ${if (!current) "ON" else "OFF"}")
+}
+
+// v600: Bitrate Auto Scale600
+internal fun PlayerActivity.showV600BitrateAutoScale600Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v600bitrateAutoScale600).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Bitrate Auto Scale600",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v600bitrateAutoScale600 = value
+        AppToast.show(this, "Bitrate Auto Scale600: $value")
+    }
+}
+
+// v600: Blend Auto Mode600
+internal fun PlayerActivity.showV600BlendAutoMode600Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v600blendAutoMode600).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Blend Auto Mode600",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v600blendAutoMode600 = value
+        AppToast.show(this, "Blend Auto Mode600: $value")
+    }
+}
+
