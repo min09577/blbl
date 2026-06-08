@@ -51048,6 +51048,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V740FUNCTIONAUTOINLINE740, false)
         set(value) = prefs.edit().putBoolean(KEY_V740FUNCTIONAUTOINLINE740, value).apply()
 
+    var v741gainAutoLevel741: Int
+        get() = prefs.getInt(KEY_V741GAINAUTOLEVEL741, 0)
+        set(value) = prefs.edit().putInt(KEY_V741GAINAUTOLEVEL741, value).apply()
+
+    var v741gammaAutoCorrect741: Boolean
+        get() = prefs.getBoolean(KEY_V741GAMMAAUTOCORRECT741, false)
+        set(value) = prefs.edit().putBoolean(KEY_V741GAMMAAUTOCORRECT741, value).apply()
+
+    var v741gapAutoFill741: Boolean
+        get() = prefs.getBoolean(KEY_V741GAPAUTOFILL741, false)
+        set(value) = prefs.edit().putBoolean(KEY_V741GAPAUTOFILL741, value).apply()
+
+    var v741gateAutoControl741: Boolean
+        get() = prefs.getBoolean(KEY_V741GATEAUTOCONTROL741, false)
+        set(value) = prefs.edit().putBoolean(KEY_V741GATEAUTOCONTROL741, value).apply()
+
+    var v741generateAutoReport741: Boolean
+        get() = prefs.getBoolean(KEY_V741GENERATEAUTOREPORT741, false)
+        set(value) = prefs.edit().putBoolean(KEY_V741GENERATEAUTOREPORT741, value).apply()
+
+    var v741gestureAutoSwipe741: Boolean
+        get() = prefs.getBoolean(KEY_V741GESTUREAUTOSWIPE741, false)
+        set(value) = prefs.edit().putBoolean(KEY_V741GESTUREAUTOSWIPE741, value).apply()
+
+    var v741globalAutoSync741: Boolean
+        get() = prefs.getBoolean(KEY_V741GLOBALAUTOSYNC741, false)
+        set(value) = prefs.edit().putBoolean(KEY_V741GLOBALAUTOSYNC741, value).apply()
+
+    var v741glyphAutoRender741: Boolean
+        get() = prefs.getBoolean(KEY_V741GLYPHAUTORENDER741, false)
+        set(value) = prefs.edit().putBoolean(KEY_V741GLYPHAUTORENDER741, value).apply()
+
+    var v741gradientAutoColor741: Boolean
+        get() = prefs.getBoolean(KEY_V741GRADIENTAUTOCOLOR741, false)
+        set(value) = prefs.edit().putBoolean(KEY_V741GRADIENTAUTOCOLOR741, value).apply()
+
+    var v741grantAutoAccess741: Boolean
+        get() = prefs.getBoolean(KEY_V741GRANTAUTOACCESS741, false)
+        set(value) = prefs.edit().putBoolean(KEY_V741GRANTAUTOACCESS741, value).apply()
+
+    var v741graphAutoLayout741: Boolean
+        get() = prefs.getBoolean(KEY_V741GRAPHAUTOLAYOUT741, false)
+        set(value) = prefs.edit().putBoolean(KEY_V741GRAPHAUTOLAYOUT741, value).apply()
+
+    var v741gravityAutoSensor741: Boolean
+        get() = prefs.getBoolean(KEY_V741GRAVITYAUTOSENSOR741, false)
+        set(value) = prefs.edit().putBoolean(KEY_V741GRAVITYAUTOSENSOR741, value).apply()
+
+    var v741gridAutoAdaptive741: Boolean
+        get() = prefs.getBoolean(KEY_V741GRIDAUTOADAPTIVE741, false)
+        set(value) = prefs.edit().putBoolean(KEY_V741GRIDAUTOADAPTIVE741, value).apply()
+
+    var v741groupAutoCluster741: Int
+        get() = prefs.getInt(KEY_V741GROUPAUTOCLUSTER741, 0)
+        set(value) = prefs.edit().putInt(KEY_V741GROUPAUTOCLUSTER741, value).apply()
+
+    var v741growAutoAnimate741: Boolean
+        get() = prefs.getBoolean(KEY_V741GROWAUTOANIMATE741, false)
+        set(value) = prefs.edit().putBoolean(KEY_V741GROWAUTOANIMATE741, value).apply()
+
+    var v742gainAutoLevel742: Int
+        get() = prefs.getInt(KEY_V742GAINAUTOLEVEL742, 0)
+        set(value) = prefs.edit().putInt(KEY_V742GAINAUTOLEVEL742, value).apply()
+
+    var v742gammaAutoCorrect742: Boolean
+        get() = prefs.getBoolean(KEY_V742GAMMAAUTOCORRECT742, false)
+        set(value) = prefs.edit().putBoolean(KEY_V742GAMMAAUTOCORRECT742, value).apply()
+
+    var v742gapAutoFill742: Boolean
+        get() = prefs.getBoolean(KEY_V742GAPAUTOFILL742, false)
+        set(value) = prefs.edit().putBoolean(KEY_V742GAPAUTOFILL742, value).apply()
+
+    var v742gateAutoControl742: Boolean
+        get() = prefs.getBoolean(KEY_V742GATEAUTOCONTROL742, false)
+        set(value) = prefs.edit().putBoolean(KEY_V742GATEAUTOCONTROL742, value).apply()
+
+    var v742generateAutoReport742: Boolean
+        get() = prefs.getBoolean(KEY_V742GENERATEAUTOREPORT742, false)
+        set(value) = prefs.edit().putBoolean(KEY_V742GENERATEAUTOREPORT742, value).apply()
+
+    var v742gestureAutoSwipe742: Boolean
+        get() = prefs.getBoolean(KEY_V742GESTUREAUTOSWIPE742, false)
+        set(value) = prefs.edit().putBoolean(KEY_V742GESTUREAUTOSWIPE742, value).apply()
+
+    var v742globalAutoSync742: Boolean
+        get() = prefs.getBoolean(KEY_V742GLOBALAUTOSYNC742, false)
+        set(value) = prefs.edit().putBoolean(KEY_V742GLOBALAUTOSYNC742, value).apply()
+
+    var v742glyphAutoRender742: Boolean
+        get() = prefs.getBoolean(KEY_V742GLYPHAUTORENDER742, false)
+        set(value) = prefs.edit().putBoolean(KEY_V742GLYPHAUTORENDER742, value).apply()
+
+    var v742gradientAutoColor742: Boolean
+        get() = prefs.getBoolean(KEY_V742GRADIENTAUTOCOLOR742, false)
+        set(value) = prefs.edit().putBoolean(KEY_V742GRADIENTAUTOCOLOR742, value).apply()
+
+    var v742grantAutoAccess742: Boolean
+        get() = prefs.getBoolean(KEY_V742GRANTAUTOACCESS742, false)
+        set(value) = prefs.edit().putBoolean(KEY_V742GRANTAUTOACCESS742, value).apply()
+
+    var v742graphAutoLayout742: Boolean
+        get() = prefs.getBoolean(KEY_V742GRAPHAUTOLAYOUT742, false)
+        set(value) = prefs.edit().putBoolean(KEY_V742GRAPHAUTOLAYOUT742, value).apply()
+
+    var v742gravityAutoSensor742: Boolean
+        get() = prefs.getBoolean(KEY_V742GRAVITYAUTOSENSOR742, false)
+        set(value) = prefs.edit().putBoolean(KEY_V742GRAVITYAUTOSENSOR742, value).apply()
+
+    var v742gridAutoAdaptive742: Boolean
+        get() = prefs.getBoolean(KEY_V742GRIDAUTOADAPTIVE742, false)
+        set(value) = prefs.edit().putBoolean(KEY_V742GRIDAUTOADAPTIVE742, value).apply()
+
+    var v742groupAutoCluster742: Int
+        get() = prefs.getInt(KEY_V742GROUPAUTOCLUSTER742, 0)
+        set(value) = prefs.edit().putInt(KEY_V742GROUPAUTOCLUSTER742, value).apply()
+
+    var v742growAutoAnimate742: Boolean
+        get() = prefs.getBoolean(KEY_V742GROWAUTOANIMATE742, false)
+        set(value) = prefs.edit().putBoolean(KEY_V742GROWAUTOANIMATE742, value).apply()
+
+    var v743gainAutoLevel743: Int
+        get() = prefs.getInt(KEY_V743GAINAUTOLEVEL743, 0)
+        set(value) = prefs.edit().putInt(KEY_V743GAINAUTOLEVEL743, value).apply()
+
+    var v743gammaAutoCorrect743: Boolean
+        get() = prefs.getBoolean(KEY_V743GAMMAAUTOCORRECT743, false)
+        set(value) = prefs.edit().putBoolean(KEY_V743GAMMAAUTOCORRECT743, value).apply()
+
+    var v743gapAutoFill743: Boolean
+        get() = prefs.getBoolean(KEY_V743GAPAUTOFILL743, false)
+        set(value) = prefs.edit().putBoolean(KEY_V743GAPAUTOFILL743, value).apply()
+
+    var v743gateAutoControl743: Boolean
+        get() = prefs.getBoolean(KEY_V743GATEAUTOCONTROL743, false)
+        set(value) = prefs.edit().putBoolean(KEY_V743GATEAUTOCONTROL743, value).apply()
+
+    var v743generateAutoReport743: Boolean
+        get() = prefs.getBoolean(KEY_V743GENERATEAUTOREPORT743, false)
+        set(value) = prefs.edit().putBoolean(KEY_V743GENERATEAUTOREPORT743, value).apply()
+
+    var v743gestureAutoSwipe743: Boolean
+        get() = prefs.getBoolean(KEY_V743GESTUREAUTOSWIPE743, false)
+        set(value) = prefs.edit().putBoolean(KEY_V743GESTUREAUTOSWIPE743, value).apply()
+
+    var v743globalAutoSync743: Boolean
+        get() = prefs.getBoolean(KEY_V743GLOBALAUTOSYNC743, false)
+        set(value) = prefs.edit().putBoolean(KEY_V743GLOBALAUTOSYNC743, value).apply()
+
+    var v743glyphAutoRender743: Boolean
+        get() = prefs.getBoolean(KEY_V743GLYPHAUTORENDER743, false)
+        set(value) = prefs.edit().putBoolean(KEY_V743GLYPHAUTORENDER743, value).apply()
+
+    var v743gradientAutoColor743: Boolean
+        get() = prefs.getBoolean(KEY_V743GRADIENTAUTOCOLOR743, false)
+        set(value) = prefs.edit().putBoolean(KEY_V743GRADIENTAUTOCOLOR743, value).apply()
+
+    var v743grantAutoAccess743: Boolean
+        get() = prefs.getBoolean(KEY_V743GRANTAUTOACCESS743, false)
+        set(value) = prefs.edit().putBoolean(KEY_V743GRANTAUTOACCESS743, value).apply()
+
+    var v743graphAutoLayout743: Boolean
+        get() = prefs.getBoolean(KEY_V743GRAPHAUTOLAYOUT743, false)
+        set(value) = prefs.edit().putBoolean(KEY_V743GRAPHAUTOLAYOUT743, value).apply()
+
+    var v743gravityAutoSensor743: Boolean
+        get() = prefs.getBoolean(KEY_V743GRAVITYAUTOSENSOR743, false)
+        set(value) = prefs.edit().putBoolean(KEY_V743GRAVITYAUTOSENSOR743, value).apply()
+
+    var v743gridAutoAdaptive743: Boolean
+        get() = prefs.getBoolean(KEY_V743GRIDAUTOADAPTIVE743, false)
+        set(value) = prefs.edit().putBoolean(KEY_V743GRIDAUTOADAPTIVE743, value).apply()
+
+    var v743groupAutoCluster743: Int
+        get() = prefs.getInt(KEY_V743GROUPAUTOCLUSTER743, 0)
+        set(value) = prefs.edit().putInt(KEY_V743GROUPAUTOCLUSTER743, value).apply()
+
+    var v743growAutoAnimate743: Boolean
+        get() = prefs.getBoolean(KEY_V743GROWAUTOANIMATE743, false)
+        set(value) = prefs.edit().putBoolean(KEY_V743GROWAUTOANIMATE743, value).apply()
+
+    var v744gainAutoLevel744: Int
+        get() = prefs.getInt(KEY_V744GAINAUTOLEVEL744, 0)
+        set(value) = prefs.edit().putInt(KEY_V744GAINAUTOLEVEL744, value).apply()
+
+    var v744gammaAutoCorrect744: Boolean
+        get() = prefs.getBoolean(KEY_V744GAMMAAUTOCORRECT744, false)
+        set(value) = prefs.edit().putBoolean(KEY_V744GAMMAAUTOCORRECT744, value).apply()
+
+    var v744gapAutoFill744: Boolean
+        get() = prefs.getBoolean(KEY_V744GAPAUTOFILL744, false)
+        set(value) = prefs.edit().putBoolean(KEY_V744GAPAUTOFILL744, value).apply()
+
+    var v744gateAutoControl744: Boolean
+        get() = prefs.getBoolean(KEY_V744GATEAUTOCONTROL744, false)
+        set(value) = prefs.edit().putBoolean(KEY_V744GATEAUTOCONTROL744, value).apply()
+
+    var v744generateAutoReport744: Boolean
+        get() = prefs.getBoolean(KEY_V744GENERATEAUTOREPORT744, false)
+        set(value) = prefs.edit().putBoolean(KEY_V744GENERATEAUTOREPORT744, value).apply()
+
+    var v744gestureAutoSwipe744: Boolean
+        get() = prefs.getBoolean(KEY_V744GESTUREAUTOSWIPE744, false)
+        set(value) = prefs.edit().putBoolean(KEY_V744GESTUREAUTOSWIPE744, value).apply()
+
+    var v744globalAutoSync744: Boolean
+        get() = prefs.getBoolean(KEY_V744GLOBALAUTOSYNC744, false)
+        set(value) = prefs.edit().putBoolean(KEY_V744GLOBALAUTOSYNC744, value).apply()
+
+    var v744glyphAutoRender744: Boolean
+        get() = prefs.getBoolean(KEY_V744GLYPHAUTORENDER744, false)
+        set(value) = prefs.edit().putBoolean(KEY_V744GLYPHAUTORENDER744, value).apply()
+
+    var v744gradientAutoColor744: Boolean
+        get() = prefs.getBoolean(KEY_V744GRADIENTAUTOCOLOR744, false)
+        set(value) = prefs.edit().putBoolean(KEY_V744GRADIENTAUTOCOLOR744, value).apply()
+
+    var v744grantAutoAccess744: Boolean
+        get() = prefs.getBoolean(KEY_V744GRANTAUTOACCESS744, false)
+        set(value) = prefs.edit().putBoolean(KEY_V744GRANTAUTOACCESS744, value).apply()
+
+    var v744graphAutoLayout744: Boolean
+        get() = prefs.getBoolean(KEY_V744GRAPHAUTOLAYOUT744, false)
+        set(value) = prefs.edit().putBoolean(KEY_V744GRAPHAUTOLAYOUT744, value).apply()
+
+    var v744gravityAutoSensor744: Boolean
+        get() = prefs.getBoolean(KEY_V744GRAVITYAUTOSENSOR744, false)
+        set(value) = prefs.edit().putBoolean(KEY_V744GRAVITYAUTOSENSOR744, value).apply()
+
+    var v744gridAutoAdaptive744: Boolean
+        get() = prefs.getBoolean(KEY_V744GRIDAUTOADAPTIVE744, false)
+        set(value) = prefs.edit().putBoolean(KEY_V744GRIDAUTOADAPTIVE744, value).apply()
+
+    var v744groupAutoCluster744: Int
+        get() = prefs.getInt(KEY_V744GROUPAUTOCLUSTER744, 0)
+        set(value) = prefs.edit().putInt(KEY_V744GROUPAUTOCLUSTER744, value).apply()
+
+    var v744growAutoAnimate744: Boolean
+        get() = prefs.getBoolean(KEY_V744GROWAUTOANIMATE744, false)
+        set(value) = prefs.edit().putBoolean(KEY_V744GROWAUTOANIMATE744, value).apply()
+
+    var v745gainAutoLevel745: Int
+        get() = prefs.getInt(KEY_V745GAINAUTOLEVEL745, 0)
+        set(value) = prefs.edit().putInt(KEY_V745GAINAUTOLEVEL745, value).apply()
+
+    var v745gammaAutoCorrect745: Boolean
+        get() = prefs.getBoolean(KEY_V745GAMMAAUTOCORRECT745, false)
+        set(value) = prefs.edit().putBoolean(KEY_V745GAMMAAUTOCORRECT745, value).apply()
+
+    var v745gapAutoFill745: Boolean
+        get() = prefs.getBoolean(KEY_V745GAPAUTOFILL745, false)
+        set(value) = prefs.edit().putBoolean(KEY_V745GAPAUTOFILL745, value).apply()
+
+    var v745gateAutoControl745: Boolean
+        get() = prefs.getBoolean(KEY_V745GATEAUTOCONTROL745, false)
+        set(value) = prefs.edit().putBoolean(KEY_V745GATEAUTOCONTROL745, value).apply()
+
+    var v745generateAutoReport745: Boolean
+        get() = prefs.getBoolean(KEY_V745GENERATEAUTOREPORT745, false)
+        set(value) = prefs.edit().putBoolean(KEY_V745GENERATEAUTOREPORT745, value).apply()
+
+    var v745gestureAutoSwipe745: Boolean
+        get() = prefs.getBoolean(KEY_V745GESTUREAUTOSWIPE745, false)
+        set(value) = prefs.edit().putBoolean(KEY_V745GESTUREAUTOSWIPE745, value).apply()
+
+    var v745globalAutoSync745: Boolean
+        get() = prefs.getBoolean(KEY_V745GLOBALAUTOSYNC745, false)
+        set(value) = prefs.edit().putBoolean(KEY_V745GLOBALAUTOSYNC745, value).apply()
+
+    var v745glyphAutoRender745: Boolean
+        get() = prefs.getBoolean(KEY_V745GLYPHAUTORENDER745, false)
+        set(value) = prefs.edit().putBoolean(KEY_V745GLYPHAUTORENDER745, value).apply()
+
+    var v745gradientAutoColor745: Boolean
+        get() = prefs.getBoolean(KEY_V745GRADIENTAUTOCOLOR745, false)
+        set(value) = prefs.edit().putBoolean(KEY_V745GRADIENTAUTOCOLOR745, value).apply()
+
+    var v745grantAutoAccess745: Boolean
+        get() = prefs.getBoolean(KEY_V745GRANTAUTOACCESS745, false)
+        set(value) = prefs.edit().putBoolean(KEY_V745GRANTAUTOACCESS745, value).apply()
+
+    var v745graphAutoLayout745: Boolean
+        get() = prefs.getBoolean(KEY_V745GRAPHAUTOLAYOUT745, false)
+        set(value) = prefs.edit().putBoolean(KEY_V745GRAPHAUTOLAYOUT745, value).apply()
+
+    var v745gravityAutoSensor745: Boolean
+        get() = prefs.getBoolean(KEY_V745GRAVITYAUTOSENSOR745, false)
+        set(value) = prefs.edit().putBoolean(KEY_V745GRAVITYAUTOSENSOR745, value).apply()
+
+    var v745gridAutoAdaptive745: Boolean
+        get() = prefs.getBoolean(KEY_V745GRIDAUTOADAPTIVE745, false)
+        set(value) = prefs.edit().putBoolean(KEY_V745GRIDAUTOADAPTIVE745, value).apply()
+
+    var v745groupAutoCluster745: Int
+        get() = prefs.getInt(KEY_V745GROUPAUTOCLUSTER745, 0)
+        set(value) = prefs.edit().putInt(KEY_V745GROUPAUTOCLUSTER745, value).apply()
+
+    var v745growAutoAnimate745: Boolean
+        get() = prefs.getBoolean(KEY_V745GROWAUTOANIMATE745, false)
+        set(value) = prefs.edit().putBoolean(KEY_V745GROWAUTOANIMATE745, value).apply()
+
+    var v746gainAutoLevel746: Int
+        get() = prefs.getInt(KEY_V746GAINAUTOLEVEL746, 0)
+        set(value) = prefs.edit().putInt(KEY_V746GAINAUTOLEVEL746, value).apply()
+
+    var v746gammaAutoCorrect746: Boolean
+        get() = prefs.getBoolean(KEY_V746GAMMAAUTOCORRECT746, false)
+        set(value) = prefs.edit().putBoolean(KEY_V746GAMMAAUTOCORRECT746, value).apply()
+
+    var v746gapAutoFill746: Boolean
+        get() = prefs.getBoolean(KEY_V746GAPAUTOFILL746, false)
+        set(value) = prefs.edit().putBoolean(KEY_V746GAPAUTOFILL746, value).apply()
+
+    var v746gateAutoControl746: Boolean
+        get() = prefs.getBoolean(KEY_V746GATEAUTOCONTROL746, false)
+        set(value) = prefs.edit().putBoolean(KEY_V746GATEAUTOCONTROL746, value).apply()
+
+    var v746generateAutoReport746: Boolean
+        get() = prefs.getBoolean(KEY_V746GENERATEAUTOREPORT746, false)
+        set(value) = prefs.edit().putBoolean(KEY_V746GENERATEAUTOREPORT746, value).apply()
+
+    var v746gestureAutoSwipe746: Boolean
+        get() = prefs.getBoolean(KEY_V746GESTUREAUTOSWIPE746, false)
+        set(value) = prefs.edit().putBoolean(KEY_V746GESTUREAUTOSWIPE746, value).apply()
+
+    var v746globalAutoSync746: Boolean
+        get() = prefs.getBoolean(KEY_V746GLOBALAUTOSYNC746, false)
+        set(value) = prefs.edit().putBoolean(KEY_V746GLOBALAUTOSYNC746, value).apply()
+
+    var v746glyphAutoRender746: Boolean
+        get() = prefs.getBoolean(KEY_V746GLYPHAUTORENDER746, false)
+        set(value) = prefs.edit().putBoolean(KEY_V746GLYPHAUTORENDER746, value).apply()
+
+    var v746gradientAutoColor746: Boolean
+        get() = prefs.getBoolean(KEY_V746GRADIENTAUTOCOLOR746, false)
+        set(value) = prefs.edit().putBoolean(KEY_V746GRADIENTAUTOCOLOR746, value).apply()
+
+    var v746grantAutoAccess746: Boolean
+        get() = prefs.getBoolean(KEY_V746GRANTAUTOACCESS746, false)
+        set(value) = prefs.edit().putBoolean(KEY_V746GRANTAUTOACCESS746, value).apply()
+
+    var v746graphAutoLayout746: Boolean
+        get() = prefs.getBoolean(KEY_V746GRAPHAUTOLAYOUT746, false)
+        set(value) = prefs.edit().putBoolean(KEY_V746GRAPHAUTOLAYOUT746, value).apply()
+
+    var v746gravityAutoSensor746: Boolean
+        get() = prefs.getBoolean(KEY_V746GRAVITYAUTOSENSOR746, false)
+        set(value) = prefs.edit().putBoolean(KEY_V746GRAVITYAUTOSENSOR746, value).apply()
+
+    var v746gridAutoAdaptive746: Boolean
+        get() = prefs.getBoolean(KEY_V746GRIDAUTOADAPTIVE746, false)
+        set(value) = prefs.edit().putBoolean(KEY_V746GRIDAUTOADAPTIVE746, value).apply()
+
+    var v746groupAutoCluster746: Int
+        get() = prefs.getInt(KEY_V746GROUPAUTOCLUSTER746, 0)
+        set(value) = prefs.edit().putInt(KEY_V746GROUPAUTOCLUSTER746, value).apply()
+
+    var v746growAutoAnimate746: Boolean
+        get() = prefs.getBoolean(KEY_V746GROWAUTOANIMATE746, false)
+        set(value) = prefs.edit().putBoolean(KEY_V746GROWAUTOANIMATE746, value).apply()
+
+    var v747gainAutoLevel747: Int
+        get() = prefs.getInt(KEY_V747GAINAUTOLEVEL747, 0)
+        set(value) = prefs.edit().putInt(KEY_V747GAINAUTOLEVEL747, value).apply()
+
+    var v747gammaAutoCorrect747: Boolean
+        get() = prefs.getBoolean(KEY_V747GAMMAAUTOCORRECT747, false)
+        set(value) = prefs.edit().putBoolean(KEY_V747GAMMAAUTOCORRECT747, value).apply()
+
+    var v747gapAutoFill747: Boolean
+        get() = prefs.getBoolean(KEY_V747GAPAUTOFILL747, false)
+        set(value) = prefs.edit().putBoolean(KEY_V747GAPAUTOFILL747, value).apply()
+
+    var v747gateAutoControl747: Boolean
+        get() = prefs.getBoolean(KEY_V747GATEAUTOCONTROL747, false)
+        set(value) = prefs.edit().putBoolean(KEY_V747GATEAUTOCONTROL747, value).apply()
+
+    var v747generateAutoReport747: Boolean
+        get() = prefs.getBoolean(KEY_V747GENERATEAUTOREPORT747, false)
+        set(value) = prefs.edit().putBoolean(KEY_V747GENERATEAUTOREPORT747, value).apply()
+
+    var v747gestureAutoSwipe747: Boolean
+        get() = prefs.getBoolean(KEY_V747GESTUREAUTOSWIPE747, false)
+        set(value) = prefs.edit().putBoolean(KEY_V747GESTUREAUTOSWIPE747, value).apply()
+
+    var v747globalAutoSync747: Boolean
+        get() = prefs.getBoolean(KEY_V747GLOBALAUTOSYNC747, false)
+        set(value) = prefs.edit().putBoolean(KEY_V747GLOBALAUTOSYNC747, value).apply()
+
+    var v747glyphAutoRender747: Boolean
+        get() = prefs.getBoolean(KEY_V747GLYPHAUTORENDER747, false)
+        set(value) = prefs.edit().putBoolean(KEY_V747GLYPHAUTORENDER747, value).apply()
+
+    var v747gradientAutoColor747: Boolean
+        get() = prefs.getBoolean(KEY_V747GRADIENTAUTOCOLOR747, false)
+        set(value) = prefs.edit().putBoolean(KEY_V747GRADIENTAUTOCOLOR747, value).apply()
+
+    var v747grantAutoAccess747: Boolean
+        get() = prefs.getBoolean(KEY_V747GRANTAUTOACCESS747, false)
+        set(value) = prefs.edit().putBoolean(KEY_V747GRANTAUTOACCESS747, value).apply()
+
+    var v747graphAutoLayout747: Boolean
+        get() = prefs.getBoolean(KEY_V747GRAPHAUTOLAYOUT747, false)
+        set(value) = prefs.edit().putBoolean(KEY_V747GRAPHAUTOLAYOUT747, value).apply()
+
+    var v747gravityAutoSensor747: Boolean
+        get() = prefs.getBoolean(KEY_V747GRAVITYAUTOSENSOR747, false)
+        set(value) = prefs.edit().putBoolean(KEY_V747GRAVITYAUTOSENSOR747, value).apply()
+
+    var v747gridAutoAdaptive747: Boolean
+        get() = prefs.getBoolean(KEY_V747GRIDAUTOADAPTIVE747, false)
+        set(value) = prefs.edit().putBoolean(KEY_V747GRIDAUTOADAPTIVE747, value).apply()
+
+    var v747groupAutoCluster747: Int
+        get() = prefs.getInt(KEY_V747GROUPAUTOCLUSTER747, 0)
+        set(value) = prefs.edit().putInt(KEY_V747GROUPAUTOCLUSTER747, value).apply()
+
+    var v747growAutoAnimate747: Boolean
+        get() = prefs.getBoolean(KEY_V747GROWAUTOANIMATE747, false)
+        set(value) = prefs.edit().putBoolean(KEY_V747GROWAUTOANIMATE747, value).apply()
+
+    var v748gainAutoLevel748: Int
+        get() = prefs.getInt(KEY_V748GAINAUTOLEVEL748, 0)
+        set(value) = prefs.edit().putInt(KEY_V748GAINAUTOLEVEL748, value).apply()
+
+    var v748gammaAutoCorrect748: Boolean
+        get() = prefs.getBoolean(KEY_V748GAMMAAUTOCORRECT748, false)
+        set(value) = prefs.edit().putBoolean(KEY_V748GAMMAAUTOCORRECT748, value).apply()
+
+    var v748gapAutoFill748: Boolean
+        get() = prefs.getBoolean(KEY_V748GAPAUTOFILL748, false)
+        set(value) = prefs.edit().putBoolean(KEY_V748GAPAUTOFILL748, value).apply()
+
+    var v748gateAutoControl748: Boolean
+        get() = prefs.getBoolean(KEY_V748GATEAUTOCONTROL748, false)
+        set(value) = prefs.edit().putBoolean(KEY_V748GATEAUTOCONTROL748, value).apply()
+
+    var v748generateAutoReport748: Boolean
+        get() = prefs.getBoolean(KEY_V748GENERATEAUTOREPORT748, false)
+        set(value) = prefs.edit().putBoolean(KEY_V748GENERATEAUTOREPORT748, value).apply()
+
+    var v748gestureAutoSwipe748: Boolean
+        get() = prefs.getBoolean(KEY_V748GESTUREAUTOSWIPE748, false)
+        set(value) = prefs.edit().putBoolean(KEY_V748GESTUREAUTOSWIPE748, value).apply()
+
+    var v748globalAutoSync748: Boolean
+        get() = prefs.getBoolean(KEY_V748GLOBALAUTOSYNC748, false)
+        set(value) = prefs.edit().putBoolean(KEY_V748GLOBALAUTOSYNC748, value).apply()
+
+    var v748glyphAutoRender748: Boolean
+        get() = prefs.getBoolean(KEY_V748GLYPHAUTORENDER748, false)
+        set(value) = prefs.edit().putBoolean(KEY_V748GLYPHAUTORENDER748, value).apply()
+
+    var v748gradientAutoColor748: Boolean
+        get() = prefs.getBoolean(KEY_V748GRADIENTAUTOCOLOR748, false)
+        set(value) = prefs.edit().putBoolean(KEY_V748GRADIENTAUTOCOLOR748, value).apply()
+
+    var v748grantAutoAccess748: Boolean
+        get() = prefs.getBoolean(KEY_V748GRANTAUTOACCESS748, false)
+        set(value) = prefs.edit().putBoolean(KEY_V748GRANTAUTOACCESS748, value).apply()
+
+    var v748graphAutoLayout748: Boolean
+        get() = prefs.getBoolean(KEY_V748GRAPHAUTOLAYOUT748, false)
+        set(value) = prefs.edit().putBoolean(KEY_V748GRAPHAUTOLAYOUT748, value).apply()
+
+    var v748gravityAutoSensor748: Boolean
+        get() = prefs.getBoolean(KEY_V748GRAVITYAUTOSENSOR748, false)
+        set(value) = prefs.edit().putBoolean(KEY_V748GRAVITYAUTOSENSOR748, value).apply()
+
+    var v748gridAutoAdaptive748: Boolean
+        get() = prefs.getBoolean(KEY_V748GRIDAUTOADAPTIVE748, false)
+        set(value) = prefs.edit().putBoolean(KEY_V748GRIDAUTOADAPTIVE748, value).apply()
+
+    var v748groupAutoCluster748: Int
+        get() = prefs.getInt(KEY_V748GROUPAUTOCLUSTER748, 0)
+        set(value) = prefs.edit().putInt(KEY_V748GROUPAUTOCLUSTER748, value).apply()
+
+    var v748growAutoAnimate748: Boolean
+        get() = prefs.getBoolean(KEY_V748GROWAUTOANIMATE748, false)
+        set(value) = prefs.edit().putBoolean(KEY_V748GROWAUTOANIMATE748, value).apply()
+
+    var v749gainAutoLevel749: Int
+        get() = prefs.getInt(KEY_V749GAINAUTOLEVEL749, 0)
+        set(value) = prefs.edit().putInt(KEY_V749GAINAUTOLEVEL749, value).apply()
+
+    var v749gammaAutoCorrect749: Boolean
+        get() = prefs.getBoolean(KEY_V749GAMMAAUTOCORRECT749, false)
+        set(value) = prefs.edit().putBoolean(KEY_V749GAMMAAUTOCORRECT749, value).apply()
+
+    var v749gapAutoFill749: Boolean
+        get() = prefs.getBoolean(KEY_V749GAPAUTOFILL749, false)
+        set(value) = prefs.edit().putBoolean(KEY_V749GAPAUTOFILL749, value).apply()
+
+    var v749gateAutoControl749: Boolean
+        get() = prefs.getBoolean(KEY_V749GATEAUTOCONTROL749, false)
+        set(value) = prefs.edit().putBoolean(KEY_V749GATEAUTOCONTROL749, value).apply()
+
+    var v749generateAutoReport749: Boolean
+        get() = prefs.getBoolean(KEY_V749GENERATEAUTOREPORT749, false)
+        set(value) = prefs.edit().putBoolean(KEY_V749GENERATEAUTOREPORT749, value).apply()
+
+    var v749gestureAutoSwipe749: Boolean
+        get() = prefs.getBoolean(KEY_V749GESTUREAUTOSWIPE749, false)
+        set(value) = prefs.edit().putBoolean(KEY_V749GESTUREAUTOSWIPE749, value).apply()
+
+    var v749globalAutoSync749: Boolean
+        get() = prefs.getBoolean(KEY_V749GLOBALAUTOSYNC749, false)
+        set(value) = prefs.edit().putBoolean(KEY_V749GLOBALAUTOSYNC749, value).apply()
+
+    var v749glyphAutoRender749: Boolean
+        get() = prefs.getBoolean(KEY_V749GLYPHAUTORENDER749, false)
+        set(value) = prefs.edit().putBoolean(KEY_V749GLYPHAUTORENDER749, value).apply()
+
+    var v749gradientAutoColor749: Boolean
+        get() = prefs.getBoolean(KEY_V749GRADIENTAUTOCOLOR749, false)
+        set(value) = prefs.edit().putBoolean(KEY_V749GRADIENTAUTOCOLOR749, value).apply()
+
+    var v749grantAutoAccess749: Boolean
+        get() = prefs.getBoolean(KEY_V749GRANTAUTOACCESS749, false)
+        set(value) = prefs.edit().putBoolean(KEY_V749GRANTAUTOACCESS749, value).apply()
+
+    var v749graphAutoLayout749: Boolean
+        get() = prefs.getBoolean(KEY_V749GRAPHAUTOLAYOUT749, false)
+        set(value) = prefs.edit().putBoolean(KEY_V749GRAPHAUTOLAYOUT749, value).apply()
+
+    var v749gravityAutoSensor749: Boolean
+        get() = prefs.getBoolean(KEY_V749GRAVITYAUTOSENSOR749, false)
+        set(value) = prefs.edit().putBoolean(KEY_V749GRAVITYAUTOSENSOR749, value).apply()
+
+    var v749gridAutoAdaptive749: Boolean
+        get() = prefs.getBoolean(KEY_V749GRIDAUTOADAPTIVE749, false)
+        set(value) = prefs.edit().putBoolean(KEY_V749GRIDAUTOADAPTIVE749, value).apply()
+
+    var v749groupAutoCluster749: Int
+        get() = prefs.getInt(KEY_V749GROUPAUTOCLUSTER749, 0)
+        set(value) = prefs.edit().putInt(KEY_V749GROUPAUTOCLUSTER749, value).apply()
+
+    var v749growAutoAnimate749: Boolean
+        get() = prefs.getBoolean(KEY_V749GROWAUTOANIMATE749, false)
+        set(value) = prefs.edit().putBoolean(KEY_V749GROWAUTOANIMATE749, value).apply()
+
+    var v750gainAutoLevel750: Int
+        get() = prefs.getInt(KEY_V750GAINAUTOLEVEL750, 0)
+        set(value) = prefs.edit().putInt(KEY_V750GAINAUTOLEVEL750, value).apply()
+
+    var v750gammaAutoCorrect750: Boolean
+        get() = prefs.getBoolean(KEY_V750GAMMAAUTOCORRECT750, false)
+        set(value) = prefs.edit().putBoolean(KEY_V750GAMMAAUTOCORRECT750, value).apply()
+
+    var v750gapAutoFill750: Boolean
+        get() = prefs.getBoolean(KEY_V750GAPAUTOFILL750, false)
+        set(value) = prefs.edit().putBoolean(KEY_V750GAPAUTOFILL750, value).apply()
+
+    var v750gateAutoControl750: Boolean
+        get() = prefs.getBoolean(KEY_V750GATEAUTOCONTROL750, false)
+        set(value) = prefs.edit().putBoolean(KEY_V750GATEAUTOCONTROL750, value).apply()
+
+    var v750generateAutoReport750: Boolean
+        get() = prefs.getBoolean(KEY_V750GENERATEAUTOREPORT750, false)
+        set(value) = prefs.edit().putBoolean(KEY_V750GENERATEAUTOREPORT750, value).apply()
+
+    var v750gestureAutoSwipe750: Boolean
+        get() = prefs.getBoolean(KEY_V750GESTUREAUTOSWIPE750, false)
+        set(value) = prefs.edit().putBoolean(KEY_V750GESTUREAUTOSWIPE750, value).apply()
+
+    var v750globalAutoSync750: Boolean
+        get() = prefs.getBoolean(KEY_V750GLOBALAUTOSYNC750, false)
+        set(value) = prefs.edit().putBoolean(KEY_V750GLOBALAUTOSYNC750, value).apply()
+
+    var v750glyphAutoRender750: Boolean
+        get() = prefs.getBoolean(KEY_V750GLYPHAUTORENDER750, false)
+        set(value) = prefs.edit().putBoolean(KEY_V750GLYPHAUTORENDER750, value).apply()
+
+    var v750gradientAutoColor750: Boolean
+        get() = prefs.getBoolean(KEY_V750GRADIENTAUTOCOLOR750, false)
+        set(value) = prefs.edit().putBoolean(KEY_V750GRADIENTAUTOCOLOR750, value).apply()
+
+    var v750grantAutoAccess750: Boolean
+        get() = prefs.getBoolean(KEY_V750GRANTAUTOACCESS750, false)
+        set(value) = prefs.edit().putBoolean(KEY_V750GRANTAUTOACCESS750, value).apply()
+
+    var v750graphAutoLayout750: Boolean
+        get() = prefs.getBoolean(KEY_V750GRAPHAUTOLAYOUT750, false)
+        set(value) = prefs.edit().putBoolean(KEY_V750GRAPHAUTOLAYOUT750, value).apply()
+
+    var v750gravityAutoSensor750: Boolean
+        get() = prefs.getBoolean(KEY_V750GRAVITYAUTOSENSOR750, false)
+        set(value) = prefs.edit().putBoolean(KEY_V750GRAVITYAUTOSENSOR750, value).apply()
+
+    var v750gridAutoAdaptive750: Boolean
+        get() = prefs.getBoolean(KEY_V750GRIDAUTOADAPTIVE750, false)
+        set(value) = prefs.edit().putBoolean(KEY_V750GRIDAUTOADAPTIVE750, value).apply()
+
+    var v750groupAutoCluster750: Int
+        get() = prefs.getInt(KEY_V750GROUPAUTOCLUSTER750, 0)
+        set(value) = prefs.edit().putInt(KEY_V750GROUPAUTOCLUSTER750, value).apply()
+
+    var v750growAutoAnimate750: Boolean
+        get() = prefs.getBoolean(KEY_V750GROWAUTOANIMATE750, false)
+        set(value) = prefs.edit().putBoolean(KEY_V750GROWAUTOANIMATE750, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -64680,5 +65280,155 @@ class AppPrefs(context: Context) {
         const val KEY_V740FRONTAUTOCAMERA740 = "v740frontAutoCamera740" // v740 Front Auto Camera740
         const val KEY_V740FULLAUTOSCREEN740 = "v740fullAutoScreen740" // v740 Full Auto Screen740
         const val KEY_V740FUNCTIONAUTOINLINE740 = "v740functionAutoInline740" // v740 Function Auto Inline740
+        const val KEY_V741GAINAUTOLEVEL741 = "v741gainAutoLevel741" // v741 Gain Auto Level741
+        const val KEY_V741GAMMAAUTOCORRECT741 = "v741gammaAutoCorrect741" // v741 Gamma Auto Correct741
+        const val KEY_V741GAPAUTOFILL741 = "v741gapAutoFill741" // v741 Gap Auto Fill741
+        const val KEY_V741GATEAUTOCONTROL741 = "v741gateAutoControl741" // v741 Gate Auto Control741
+        const val KEY_V741GENERATEAUTOREPORT741 = "v741generateAutoReport741" // v741 Generate Auto Report741
+        const val KEY_V741GESTUREAUTOSWIPE741 = "v741gestureAutoSwipe741" // v741 Gesture Auto Swipe741
+        const val KEY_V741GLOBALAUTOSYNC741 = "v741globalAutoSync741" // v741 Global Auto Sync741
+        const val KEY_V741GLYPHAUTORENDER741 = "v741glyphAutoRender741" // v741 Glyph Auto Render741
+        const val KEY_V741GRADIENTAUTOCOLOR741 = "v741gradientAutoColor741" // v741 Gradient Auto Color741
+        const val KEY_V741GRANTAUTOACCESS741 = "v741grantAutoAccess741" // v741 Grant Auto Access741
+        const val KEY_V741GRAPHAUTOLAYOUT741 = "v741graphAutoLayout741" // v741 Graph Auto Layout741
+        const val KEY_V741GRAVITYAUTOSENSOR741 = "v741gravityAutoSensor741" // v741 Gravity Auto Sensor741
+        const val KEY_V741GRIDAUTOADAPTIVE741 = "v741gridAutoAdaptive741" // v741 Grid Auto Adaptive741
+        const val KEY_V741GROUPAUTOCLUSTER741 = "v741groupAutoCluster741" // v741 Group Auto Cluster741
+        const val KEY_V741GROWAUTOANIMATE741 = "v741growAutoAnimate741" // v741 Grow Auto Animate741
+        const val KEY_V742GAINAUTOLEVEL742 = "v742gainAutoLevel742" // v742 Gain Auto Level742
+        const val KEY_V742GAMMAAUTOCORRECT742 = "v742gammaAutoCorrect742" // v742 Gamma Auto Correct742
+        const val KEY_V742GAPAUTOFILL742 = "v742gapAutoFill742" // v742 Gap Auto Fill742
+        const val KEY_V742GATEAUTOCONTROL742 = "v742gateAutoControl742" // v742 Gate Auto Control742
+        const val KEY_V742GENERATEAUTOREPORT742 = "v742generateAutoReport742" // v742 Generate Auto Report742
+        const val KEY_V742GESTUREAUTOSWIPE742 = "v742gestureAutoSwipe742" // v742 Gesture Auto Swipe742
+        const val KEY_V742GLOBALAUTOSYNC742 = "v742globalAutoSync742" // v742 Global Auto Sync742
+        const val KEY_V742GLYPHAUTORENDER742 = "v742glyphAutoRender742" // v742 Glyph Auto Render742
+        const val KEY_V742GRADIENTAUTOCOLOR742 = "v742gradientAutoColor742" // v742 Gradient Auto Color742
+        const val KEY_V742GRANTAUTOACCESS742 = "v742grantAutoAccess742" // v742 Grant Auto Access742
+        const val KEY_V742GRAPHAUTOLAYOUT742 = "v742graphAutoLayout742" // v742 Graph Auto Layout742
+        const val KEY_V742GRAVITYAUTOSENSOR742 = "v742gravityAutoSensor742" // v742 Gravity Auto Sensor742
+        const val KEY_V742GRIDAUTOADAPTIVE742 = "v742gridAutoAdaptive742" // v742 Grid Auto Adaptive742
+        const val KEY_V742GROUPAUTOCLUSTER742 = "v742groupAutoCluster742" // v742 Group Auto Cluster742
+        const val KEY_V742GROWAUTOANIMATE742 = "v742growAutoAnimate742" // v742 Grow Auto Animate742
+        const val KEY_V743GAINAUTOLEVEL743 = "v743gainAutoLevel743" // v743 Gain Auto Level743
+        const val KEY_V743GAMMAAUTOCORRECT743 = "v743gammaAutoCorrect743" // v743 Gamma Auto Correct743
+        const val KEY_V743GAPAUTOFILL743 = "v743gapAutoFill743" // v743 Gap Auto Fill743
+        const val KEY_V743GATEAUTOCONTROL743 = "v743gateAutoControl743" // v743 Gate Auto Control743
+        const val KEY_V743GENERATEAUTOREPORT743 = "v743generateAutoReport743" // v743 Generate Auto Report743
+        const val KEY_V743GESTUREAUTOSWIPE743 = "v743gestureAutoSwipe743" // v743 Gesture Auto Swipe743
+        const val KEY_V743GLOBALAUTOSYNC743 = "v743globalAutoSync743" // v743 Global Auto Sync743
+        const val KEY_V743GLYPHAUTORENDER743 = "v743glyphAutoRender743" // v743 Glyph Auto Render743
+        const val KEY_V743GRADIENTAUTOCOLOR743 = "v743gradientAutoColor743" // v743 Gradient Auto Color743
+        const val KEY_V743GRANTAUTOACCESS743 = "v743grantAutoAccess743" // v743 Grant Auto Access743
+        const val KEY_V743GRAPHAUTOLAYOUT743 = "v743graphAutoLayout743" // v743 Graph Auto Layout743
+        const val KEY_V743GRAVITYAUTOSENSOR743 = "v743gravityAutoSensor743" // v743 Gravity Auto Sensor743
+        const val KEY_V743GRIDAUTOADAPTIVE743 = "v743gridAutoAdaptive743" // v743 Grid Auto Adaptive743
+        const val KEY_V743GROUPAUTOCLUSTER743 = "v743groupAutoCluster743" // v743 Group Auto Cluster743
+        const val KEY_V743GROWAUTOANIMATE743 = "v743growAutoAnimate743" // v743 Grow Auto Animate743
+        const val KEY_V744GAINAUTOLEVEL744 = "v744gainAutoLevel744" // v744 Gain Auto Level744
+        const val KEY_V744GAMMAAUTOCORRECT744 = "v744gammaAutoCorrect744" // v744 Gamma Auto Correct744
+        const val KEY_V744GAPAUTOFILL744 = "v744gapAutoFill744" // v744 Gap Auto Fill744
+        const val KEY_V744GATEAUTOCONTROL744 = "v744gateAutoControl744" // v744 Gate Auto Control744
+        const val KEY_V744GENERATEAUTOREPORT744 = "v744generateAutoReport744" // v744 Generate Auto Report744
+        const val KEY_V744GESTUREAUTOSWIPE744 = "v744gestureAutoSwipe744" // v744 Gesture Auto Swipe744
+        const val KEY_V744GLOBALAUTOSYNC744 = "v744globalAutoSync744" // v744 Global Auto Sync744
+        const val KEY_V744GLYPHAUTORENDER744 = "v744glyphAutoRender744" // v744 Glyph Auto Render744
+        const val KEY_V744GRADIENTAUTOCOLOR744 = "v744gradientAutoColor744" // v744 Gradient Auto Color744
+        const val KEY_V744GRANTAUTOACCESS744 = "v744grantAutoAccess744" // v744 Grant Auto Access744
+        const val KEY_V744GRAPHAUTOLAYOUT744 = "v744graphAutoLayout744" // v744 Graph Auto Layout744
+        const val KEY_V744GRAVITYAUTOSENSOR744 = "v744gravityAutoSensor744" // v744 Gravity Auto Sensor744
+        const val KEY_V744GRIDAUTOADAPTIVE744 = "v744gridAutoAdaptive744" // v744 Grid Auto Adaptive744
+        const val KEY_V744GROUPAUTOCLUSTER744 = "v744groupAutoCluster744" // v744 Group Auto Cluster744
+        const val KEY_V744GROWAUTOANIMATE744 = "v744growAutoAnimate744" // v744 Grow Auto Animate744
+        const val KEY_V745GAINAUTOLEVEL745 = "v745gainAutoLevel745" // v745 Gain Auto Level745
+        const val KEY_V745GAMMAAUTOCORRECT745 = "v745gammaAutoCorrect745" // v745 Gamma Auto Correct745
+        const val KEY_V745GAPAUTOFILL745 = "v745gapAutoFill745" // v745 Gap Auto Fill745
+        const val KEY_V745GATEAUTOCONTROL745 = "v745gateAutoControl745" // v745 Gate Auto Control745
+        const val KEY_V745GENERATEAUTOREPORT745 = "v745generateAutoReport745" // v745 Generate Auto Report745
+        const val KEY_V745GESTUREAUTOSWIPE745 = "v745gestureAutoSwipe745" // v745 Gesture Auto Swipe745
+        const val KEY_V745GLOBALAUTOSYNC745 = "v745globalAutoSync745" // v745 Global Auto Sync745
+        const val KEY_V745GLYPHAUTORENDER745 = "v745glyphAutoRender745" // v745 Glyph Auto Render745
+        const val KEY_V745GRADIENTAUTOCOLOR745 = "v745gradientAutoColor745" // v745 Gradient Auto Color745
+        const val KEY_V745GRANTAUTOACCESS745 = "v745grantAutoAccess745" // v745 Grant Auto Access745
+        const val KEY_V745GRAPHAUTOLAYOUT745 = "v745graphAutoLayout745" // v745 Graph Auto Layout745
+        const val KEY_V745GRAVITYAUTOSENSOR745 = "v745gravityAutoSensor745" // v745 Gravity Auto Sensor745
+        const val KEY_V745GRIDAUTOADAPTIVE745 = "v745gridAutoAdaptive745" // v745 Grid Auto Adaptive745
+        const val KEY_V745GROUPAUTOCLUSTER745 = "v745groupAutoCluster745" // v745 Group Auto Cluster745
+        const val KEY_V745GROWAUTOANIMATE745 = "v745growAutoAnimate745" // v745 Grow Auto Animate745
+        const val KEY_V746GAINAUTOLEVEL746 = "v746gainAutoLevel746" // v746 Gain Auto Level746
+        const val KEY_V746GAMMAAUTOCORRECT746 = "v746gammaAutoCorrect746" // v746 Gamma Auto Correct746
+        const val KEY_V746GAPAUTOFILL746 = "v746gapAutoFill746" // v746 Gap Auto Fill746
+        const val KEY_V746GATEAUTOCONTROL746 = "v746gateAutoControl746" // v746 Gate Auto Control746
+        const val KEY_V746GENERATEAUTOREPORT746 = "v746generateAutoReport746" // v746 Generate Auto Report746
+        const val KEY_V746GESTUREAUTOSWIPE746 = "v746gestureAutoSwipe746" // v746 Gesture Auto Swipe746
+        const val KEY_V746GLOBALAUTOSYNC746 = "v746globalAutoSync746" // v746 Global Auto Sync746
+        const val KEY_V746GLYPHAUTORENDER746 = "v746glyphAutoRender746" // v746 Glyph Auto Render746
+        const val KEY_V746GRADIENTAUTOCOLOR746 = "v746gradientAutoColor746" // v746 Gradient Auto Color746
+        const val KEY_V746GRANTAUTOACCESS746 = "v746grantAutoAccess746" // v746 Grant Auto Access746
+        const val KEY_V746GRAPHAUTOLAYOUT746 = "v746graphAutoLayout746" // v746 Graph Auto Layout746
+        const val KEY_V746GRAVITYAUTOSENSOR746 = "v746gravityAutoSensor746" // v746 Gravity Auto Sensor746
+        const val KEY_V746GRIDAUTOADAPTIVE746 = "v746gridAutoAdaptive746" // v746 Grid Auto Adaptive746
+        const val KEY_V746GROUPAUTOCLUSTER746 = "v746groupAutoCluster746" // v746 Group Auto Cluster746
+        const val KEY_V746GROWAUTOANIMATE746 = "v746growAutoAnimate746" // v746 Grow Auto Animate746
+        const val KEY_V747GAINAUTOLEVEL747 = "v747gainAutoLevel747" // v747 Gain Auto Level747
+        const val KEY_V747GAMMAAUTOCORRECT747 = "v747gammaAutoCorrect747" // v747 Gamma Auto Correct747
+        const val KEY_V747GAPAUTOFILL747 = "v747gapAutoFill747" // v747 Gap Auto Fill747
+        const val KEY_V747GATEAUTOCONTROL747 = "v747gateAutoControl747" // v747 Gate Auto Control747
+        const val KEY_V747GENERATEAUTOREPORT747 = "v747generateAutoReport747" // v747 Generate Auto Report747
+        const val KEY_V747GESTUREAUTOSWIPE747 = "v747gestureAutoSwipe747" // v747 Gesture Auto Swipe747
+        const val KEY_V747GLOBALAUTOSYNC747 = "v747globalAutoSync747" // v747 Global Auto Sync747
+        const val KEY_V747GLYPHAUTORENDER747 = "v747glyphAutoRender747" // v747 Glyph Auto Render747
+        const val KEY_V747GRADIENTAUTOCOLOR747 = "v747gradientAutoColor747" // v747 Gradient Auto Color747
+        const val KEY_V747GRANTAUTOACCESS747 = "v747grantAutoAccess747" // v747 Grant Auto Access747
+        const val KEY_V747GRAPHAUTOLAYOUT747 = "v747graphAutoLayout747" // v747 Graph Auto Layout747
+        const val KEY_V747GRAVITYAUTOSENSOR747 = "v747gravityAutoSensor747" // v747 Gravity Auto Sensor747
+        const val KEY_V747GRIDAUTOADAPTIVE747 = "v747gridAutoAdaptive747" // v747 Grid Auto Adaptive747
+        const val KEY_V747GROUPAUTOCLUSTER747 = "v747groupAutoCluster747" // v747 Group Auto Cluster747
+        const val KEY_V747GROWAUTOANIMATE747 = "v747growAutoAnimate747" // v747 Grow Auto Animate747
+        const val KEY_V748GAINAUTOLEVEL748 = "v748gainAutoLevel748" // v748 Gain Auto Level748
+        const val KEY_V748GAMMAAUTOCORRECT748 = "v748gammaAutoCorrect748" // v748 Gamma Auto Correct748
+        const val KEY_V748GAPAUTOFILL748 = "v748gapAutoFill748" // v748 Gap Auto Fill748
+        const val KEY_V748GATEAUTOCONTROL748 = "v748gateAutoControl748" // v748 Gate Auto Control748
+        const val KEY_V748GENERATEAUTOREPORT748 = "v748generateAutoReport748" // v748 Generate Auto Report748
+        const val KEY_V748GESTUREAUTOSWIPE748 = "v748gestureAutoSwipe748" // v748 Gesture Auto Swipe748
+        const val KEY_V748GLOBALAUTOSYNC748 = "v748globalAutoSync748" // v748 Global Auto Sync748
+        const val KEY_V748GLYPHAUTORENDER748 = "v748glyphAutoRender748" // v748 Glyph Auto Render748
+        const val KEY_V748GRADIENTAUTOCOLOR748 = "v748gradientAutoColor748" // v748 Gradient Auto Color748
+        const val KEY_V748GRANTAUTOACCESS748 = "v748grantAutoAccess748" // v748 Grant Auto Access748
+        const val KEY_V748GRAPHAUTOLAYOUT748 = "v748graphAutoLayout748" // v748 Graph Auto Layout748
+        const val KEY_V748GRAVITYAUTOSENSOR748 = "v748gravityAutoSensor748" // v748 Gravity Auto Sensor748
+        const val KEY_V748GRIDAUTOADAPTIVE748 = "v748gridAutoAdaptive748" // v748 Grid Auto Adaptive748
+        const val KEY_V748GROUPAUTOCLUSTER748 = "v748groupAutoCluster748" // v748 Group Auto Cluster748
+        const val KEY_V748GROWAUTOANIMATE748 = "v748growAutoAnimate748" // v748 Grow Auto Animate748
+        const val KEY_V749GAINAUTOLEVEL749 = "v749gainAutoLevel749" // v749 Gain Auto Level749
+        const val KEY_V749GAMMAAUTOCORRECT749 = "v749gammaAutoCorrect749" // v749 Gamma Auto Correct749
+        const val KEY_V749GAPAUTOFILL749 = "v749gapAutoFill749" // v749 Gap Auto Fill749
+        const val KEY_V749GATEAUTOCONTROL749 = "v749gateAutoControl749" // v749 Gate Auto Control749
+        const val KEY_V749GENERATEAUTOREPORT749 = "v749generateAutoReport749" // v749 Generate Auto Report749
+        const val KEY_V749GESTUREAUTOSWIPE749 = "v749gestureAutoSwipe749" // v749 Gesture Auto Swipe749
+        const val KEY_V749GLOBALAUTOSYNC749 = "v749globalAutoSync749" // v749 Global Auto Sync749
+        const val KEY_V749GLYPHAUTORENDER749 = "v749glyphAutoRender749" // v749 Glyph Auto Render749
+        const val KEY_V749GRADIENTAUTOCOLOR749 = "v749gradientAutoColor749" // v749 Gradient Auto Color749
+        const val KEY_V749GRANTAUTOACCESS749 = "v749grantAutoAccess749" // v749 Grant Auto Access749
+        const val KEY_V749GRAPHAUTOLAYOUT749 = "v749graphAutoLayout749" // v749 Graph Auto Layout749
+        const val KEY_V749GRAVITYAUTOSENSOR749 = "v749gravityAutoSensor749" // v749 Gravity Auto Sensor749
+        const val KEY_V749GRIDAUTOADAPTIVE749 = "v749gridAutoAdaptive749" // v749 Grid Auto Adaptive749
+        const val KEY_V749GROUPAUTOCLUSTER749 = "v749groupAutoCluster749" // v749 Group Auto Cluster749
+        const val KEY_V749GROWAUTOANIMATE749 = "v749growAutoAnimate749" // v749 Grow Auto Animate749
+        const val KEY_V750GAINAUTOLEVEL750 = "v750gainAutoLevel750" // v750 Gain Auto Level750
+        const val KEY_V750GAMMAAUTOCORRECT750 = "v750gammaAutoCorrect750" // v750 Gamma Auto Correct750
+        const val KEY_V750GAPAUTOFILL750 = "v750gapAutoFill750" // v750 Gap Auto Fill750
+        const val KEY_V750GATEAUTOCONTROL750 = "v750gateAutoControl750" // v750 Gate Auto Control750
+        const val KEY_V750GENERATEAUTOREPORT750 = "v750generateAutoReport750" // v750 Generate Auto Report750
+        const val KEY_V750GESTUREAUTOSWIPE750 = "v750gestureAutoSwipe750" // v750 Gesture Auto Swipe750
+        const val KEY_V750GLOBALAUTOSYNC750 = "v750globalAutoSync750" // v750 Global Auto Sync750
+        const val KEY_V750GLYPHAUTORENDER750 = "v750glyphAutoRender750" // v750 Glyph Auto Render750
+        const val KEY_V750GRADIENTAUTOCOLOR750 = "v750gradientAutoColor750" // v750 Gradient Auto Color750
+        const val KEY_V750GRANTAUTOACCESS750 = "v750grantAutoAccess750" // v750 Grant Auto Access750
+        const val KEY_V750GRAPHAUTOLAYOUT750 = "v750graphAutoLayout750" // v750 Graph Auto Layout750
+        const val KEY_V750GRAVITYAUTOSENSOR750 = "v750gravityAutoSensor750" // v750 Gravity Auto Sensor750
+        const val KEY_V750GRIDAUTOADAPTIVE750 = "v750gridAutoAdaptive750" // v750 Grid Auto Adaptive750
+        const val KEY_V750GROUPAUTOCLUSTER750 = "v750groupAutoCluster750" // v750 Group Auto Cluster750
+        const val KEY_V750GROWAUTOANIMATE750 = "v750growAutoAnimate750" // v750 Grow Auto Animate750
     }
 }
