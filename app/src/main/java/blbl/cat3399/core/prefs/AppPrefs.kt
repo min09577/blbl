@@ -61848,6 +61848,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V920REPEATAUTOLOOP920, false)
         set(value) = prefs.edit().putBoolean(KEY_V920REPEATAUTOLOOP920, value).apply()
 
+    var v921replaceAutoRegex921: Boolean
+        get() = prefs.getBoolean(KEY_V921REPLACEAUTOREGEX921, false)
+        set(value) = prefs.edit().putBoolean(KEY_V921REPLACEAUTOREGEX921, value).apply()
+
+    var v921reportAutoCrash921: Boolean
+        get() = prefs.getBoolean(KEY_V921REPORTAUTOCRASH921, false)
+        set(value) = prefs.edit().putBoolean(KEY_V921REPORTAUTOCRASH921, value).apply()
+
+    var v921requestAutoRetry921: Boolean
+        get() = prefs.getBoolean(KEY_V921REQUESTAUTORETRY921, false)
+        set(value) = prefs.edit().putBoolean(KEY_V921REQUESTAUTORETRY921, value).apply()
+
+    var v921requireAutoAuth921: Boolean
+        get() = prefs.getBoolean(KEY_V921REQUIREAUTOAUTH921, false)
+        set(value) = prefs.edit().putBoolean(KEY_V921REQUIREAUTOAUTH921, value).apply()
+
+    var v921resetAutoDefault921: Boolean
+        get() = prefs.getBoolean(KEY_V921RESETAUTODEFAULT921, false)
+        set(value) = prefs.edit().putBoolean(KEY_V921RESETAUTODEFAULT921, value).apply()
+
+    var v921resizeAutoFit921: Boolean
+        get() = prefs.getBoolean(KEY_V921RESIZEAUTOFIT921, false)
+        set(value) = prefs.edit().putBoolean(KEY_V921RESIZEAUTOFIT921, value).apply()
+
+    var v921resolveAutoDns921: Boolean
+        get() = prefs.getBoolean(KEY_V921RESOLVEAUTODNS921, false)
+        set(value) = prefs.edit().putBoolean(KEY_V921RESOLVEAUTODNS921, value).apply()
+
+    var v921resourceAutoPool921: Boolean
+        get() = prefs.getBoolean(KEY_V921RESOURCEAUTOPOOL921, false)
+        set(value) = prefs.edit().putBoolean(KEY_V921RESOURCEAUTOPOOL921, value).apply()
+
+    var v921responseAutoCache921: Boolean
+        get() = prefs.getBoolean(KEY_V921RESPONSEAUTOCACHE921, false)
+        set(value) = prefs.edit().putBoolean(KEY_V921RESPONSEAUTOCACHE921, value).apply()
+
+    var v921restartAutoRecover921: Boolean
+        get() = prefs.getBoolean(KEY_V921RESTARTAUTORECOVER921, false)
+        set(value) = prefs.edit().putBoolean(KEY_V921RESTARTAUTORECOVER921, value).apply()
+
+    var v921restoreAutoBackup921: Boolean
+        get() = prefs.getBoolean(KEY_V921RESTOREAUTOBACKUP921, false)
+        set(value) = prefs.edit().putBoolean(KEY_V921RESTOREAUTOBACKUP921, value).apply()
+
+    var v921resultAutoSort921: Boolean
+        get() = prefs.getBoolean(KEY_V921RESULTAUTOSORT921, false)
+        set(value) = prefs.edit().putBoolean(KEY_V921RESULTAUTOSORT921, value).apply()
+
+    var v921retryAutoBackoff921: Int
+        get() = prefs.getInt(KEY_V921RETRYAUTOBACKOFF921, 0)
+        set(value) = prefs.edit().putInt(KEY_V921RETRYAUTOBACKOFF921, value).apply()
+
+    var v921returnAutoHome921: Boolean
+        get() = prefs.getBoolean(KEY_V921RETURNAUTOHOME921, false)
+        set(value) = prefs.edit().putBoolean(KEY_V921RETURNAUTOHOME921, value).apply()
+
+    var v921reverseAutoOrder921: Boolean
+        get() = prefs.getBoolean(KEY_V921REVERSEAUTOORDER921, false)
+        set(value) = prefs.edit().putBoolean(KEY_V921REVERSEAUTOORDER921, value).apply()
+
+    var v922replaceAutoRegex922: Boolean
+        get() = prefs.getBoolean(KEY_V922REPLACEAUTOREGEX922, false)
+        set(value) = prefs.edit().putBoolean(KEY_V922REPLACEAUTOREGEX922, value).apply()
+
+    var v922reportAutoCrash922: Boolean
+        get() = prefs.getBoolean(KEY_V922REPORTAUTOCRASH922, false)
+        set(value) = prefs.edit().putBoolean(KEY_V922REPORTAUTOCRASH922, value).apply()
+
+    var v922requestAutoRetry922: Boolean
+        get() = prefs.getBoolean(KEY_V922REQUESTAUTORETRY922, false)
+        set(value) = prefs.edit().putBoolean(KEY_V922REQUESTAUTORETRY922, value).apply()
+
+    var v922requireAutoAuth922: Boolean
+        get() = prefs.getBoolean(KEY_V922REQUIREAUTOAUTH922, false)
+        set(value) = prefs.edit().putBoolean(KEY_V922REQUIREAUTOAUTH922, value).apply()
+
+    var v922resetAutoDefault922: Boolean
+        get() = prefs.getBoolean(KEY_V922RESETAUTODEFAULT922, false)
+        set(value) = prefs.edit().putBoolean(KEY_V922RESETAUTODEFAULT922, value).apply()
+
+    var v922resizeAutoFit922: Boolean
+        get() = prefs.getBoolean(KEY_V922RESIZEAUTOFIT922, false)
+        set(value) = prefs.edit().putBoolean(KEY_V922RESIZEAUTOFIT922, value).apply()
+
+    var v922resolveAutoDns922: Boolean
+        get() = prefs.getBoolean(KEY_V922RESOLVEAUTODNS922, false)
+        set(value) = prefs.edit().putBoolean(KEY_V922RESOLVEAUTODNS922, value).apply()
+
+    var v922resourceAutoPool922: Boolean
+        get() = prefs.getBoolean(KEY_V922RESOURCEAUTOPOOL922, false)
+        set(value) = prefs.edit().putBoolean(KEY_V922RESOURCEAUTOPOOL922, value).apply()
+
+    var v922responseAutoCache922: Boolean
+        get() = prefs.getBoolean(KEY_V922RESPONSEAUTOCACHE922, false)
+        set(value) = prefs.edit().putBoolean(KEY_V922RESPONSEAUTOCACHE922, value).apply()
+
+    var v922restartAutoRecover922: Boolean
+        get() = prefs.getBoolean(KEY_V922RESTARTAUTORECOVER922, false)
+        set(value) = prefs.edit().putBoolean(KEY_V922RESTARTAUTORECOVER922, value).apply()
+
+    var v922restoreAutoBackup922: Boolean
+        get() = prefs.getBoolean(KEY_V922RESTOREAUTOBACKUP922, false)
+        set(value) = prefs.edit().putBoolean(KEY_V922RESTOREAUTOBACKUP922, value).apply()
+
+    var v922resultAutoSort922: Boolean
+        get() = prefs.getBoolean(KEY_V922RESULTAUTOSORT922, false)
+        set(value) = prefs.edit().putBoolean(KEY_V922RESULTAUTOSORT922, value).apply()
+
+    var v922retryAutoBackoff922: Int
+        get() = prefs.getInt(KEY_V922RETRYAUTOBACKOFF922, 0)
+        set(value) = prefs.edit().putInt(KEY_V922RETRYAUTOBACKOFF922, value).apply()
+
+    var v922returnAutoHome922: Boolean
+        get() = prefs.getBoolean(KEY_V922RETURNAUTOHOME922, false)
+        set(value) = prefs.edit().putBoolean(KEY_V922RETURNAUTOHOME922, value).apply()
+
+    var v922reverseAutoOrder922: Boolean
+        get() = prefs.getBoolean(KEY_V922REVERSEAUTOORDER922, false)
+        set(value) = prefs.edit().putBoolean(KEY_V922REVERSEAUTOORDER922, value).apply()
+
+    var v923replaceAutoRegex923: Boolean
+        get() = prefs.getBoolean(KEY_V923REPLACEAUTOREGEX923, false)
+        set(value) = prefs.edit().putBoolean(KEY_V923REPLACEAUTOREGEX923, value).apply()
+
+    var v923reportAutoCrash923: Boolean
+        get() = prefs.getBoolean(KEY_V923REPORTAUTOCRASH923, false)
+        set(value) = prefs.edit().putBoolean(KEY_V923REPORTAUTOCRASH923, value).apply()
+
+    var v923requestAutoRetry923: Boolean
+        get() = prefs.getBoolean(KEY_V923REQUESTAUTORETRY923, false)
+        set(value) = prefs.edit().putBoolean(KEY_V923REQUESTAUTORETRY923, value).apply()
+
+    var v923requireAutoAuth923: Boolean
+        get() = prefs.getBoolean(KEY_V923REQUIREAUTOAUTH923, false)
+        set(value) = prefs.edit().putBoolean(KEY_V923REQUIREAUTOAUTH923, value).apply()
+
+    var v923resetAutoDefault923: Boolean
+        get() = prefs.getBoolean(KEY_V923RESETAUTODEFAULT923, false)
+        set(value) = prefs.edit().putBoolean(KEY_V923RESETAUTODEFAULT923, value).apply()
+
+    var v923resizeAutoFit923: Boolean
+        get() = prefs.getBoolean(KEY_V923RESIZEAUTOFIT923, false)
+        set(value) = prefs.edit().putBoolean(KEY_V923RESIZEAUTOFIT923, value).apply()
+
+    var v923resolveAutoDns923: Boolean
+        get() = prefs.getBoolean(KEY_V923RESOLVEAUTODNS923, false)
+        set(value) = prefs.edit().putBoolean(KEY_V923RESOLVEAUTODNS923, value).apply()
+
+    var v923resourceAutoPool923: Boolean
+        get() = prefs.getBoolean(KEY_V923RESOURCEAUTOPOOL923, false)
+        set(value) = prefs.edit().putBoolean(KEY_V923RESOURCEAUTOPOOL923, value).apply()
+
+    var v923responseAutoCache923: Boolean
+        get() = prefs.getBoolean(KEY_V923RESPONSEAUTOCACHE923, false)
+        set(value) = prefs.edit().putBoolean(KEY_V923RESPONSEAUTOCACHE923, value).apply()
+
+    var v923restartAutoRecover923: Boolean
+        get() = prefs.getBoolean(KEY_V923RESTARTAUTORECOVER923, false)
+        set(value) = prefs.edit().putBoolean(KEY_V923RESTARTAUTORECOVER923, value).apply()
+
+    var v923restoreAutoBackup923: Boolean
+        get() = prefs.getBoolean(KEY_V923RESTOREAUTOBACKUP923, false)
+        set(value) = prefs.edit().putBoolean(KEY_V923RESTOREAUTOBACKUP923, value).apply()
+
+    var v923resultAutoSort923: Boolean
+        get() = prefs.getBoolean(KEY_V923RESULTAUTOSORT923, false)
+        set(value) = prefs.edit().putBoolean(KEY_V923RESULTAUTOSORT923, value).apply()
+
+    var v923retryAutoBackoff923: Int
+        get() = prefs.getInt(KEY_V923RETRYAUTOBACKOFF923, 0)
+        set(value) = prefs.edit().putInt(KEY_V923RETRYAUTOBACKOFF923, value).apply()
+
+    var v923returnAutoHome923: Boolean
+        get() = prefs.getBoolean(KEY_V923RETURNAUTOHOME923, false)
+        set(value) = prefs.edit().putBoolean(KEY_V923RETURNAUTOHOME923, value).apply()
+
+    var v923reverseAutoOrder923: Boolean
+        get() = prefs.getBoolean(KEY_V923REVERSEAUTOORDER923, false)
+        set(value) = prefs.edit().putBoolean(KEY_V923REVERSEAUTOORDER923, value).apply()
+
+    var v924replaceAutoRegex924: Boolean
+        get() = prefs.getBoolean(KEY_V924REPLACEAUTOREGEX924, false)
+        set(value) = prefs.edit().putBoolean(KEY_V924REPLACEAUTOREGEX924, value).apply()
+
+    var v924reportAutoCrash924: Boolean
+        get() = prefs.getBoolean(KEY_V924REPORTAUTOCRASH924, false)
+        set(value) = prefs.edit().putBoolean(KEY_V924REPORTAUTOCRASH924, value).apply()
+
+    var v924requestAutoRetry924: Boolean
+        get() = prefs.getBoolean(KEY_V924REQUESTAUTORETRY924, false)
+        set(value) = prefs.edit().putBoolean(KEY_V924REQUESTAUTORETRY924, value).apply()
+
+    var v924requireAutoAuth924: Boolean
+        get() = prefs.getBoolean(KEY_V924REQUIREAUTOAUTH924, false)
+        set(value) = prefs.edit().putBoolean(KEY_V924REQUIREAUTOAUTH924, value).apply()
+
+    var v924resetAutoDefault924: Boolean
+        get() = prefs.getBoolean(KEY_V924RESETAUTODEFAULT924, false)
+        set(value) = prefs.edit().putBoolean(KEY_V924RESETAUTODEFAULT924, value).apply()
+
+    var v924resizeAutoFit924: Boolean
+        get() = prefs.getBoolean(KEY_V924RESIZEAUTOFIT924, false)
+        set(value) = prefs.edit().putBoolean(KEY_V924RESIZEAUTOFIT924, value).apply()
+
+    var v924resolveAutoDns924: Boolean
+        get() = prefs.getBoolean(KEY_V924RESOLVEAUTODNS924, false)
+        set(value) = prefs.edit().putBoolean(KEY_V924RESOLVEAUTODNS924, value).apply()
+
+    var v924resourceAutoPool924: Boolean
+        get() = prefs.getBoolean(KEY_V924RESOURCEAUTOPOOL924, false)
+        set(value) = prefs.edit().putBoolean(KEY_V924RESOURCEAUTOPOOL924, value).apply()
+
+    var v924responseAutoCache924: Boolean
+        get() = prefs.getBoolean(KEY_V924RESPONSEAUTOCACHE924, false)
+        set(value) = prefs.edit().putBoolean(KEY_V924RESPONSEAUTOCACHE924, value).apply()
+
+    var v924restartAutoRecover924: Boolean
+        get() = prefs.getBoolean(KEY_V924RESTARTAUTORECOVER924, false)
+        set(value) = prefs.edit().putBoolean(KEY_V924RESTARTAUTORECOVER924, value).apply()
+
+    var v924restoreAutoBackup924: Boolean
+        get() = prefs.getBoolean(KEY_V924RESTOREAUTOBACKUP924, false)
+        set(value) = prefs.edit().putBoolean(KEY_V924RESTOREAUTOBACKUP924, value).apply()
+
+    var v924resultAutoSort924: Boolean
+        get() = prefs.getBoolean(KEY_V924RESULTAUTOSORT924, false)
+        set(value) = prefs.edit().putBoolean(KEY_V924RESULTAUTOSORT924, value).apply()
+
+    var v924retryAutoBackoff924: Int
+        get() = prefs.getInt(KEY_V924RETRYAUTOBACKOFF924, 0)
+        set(value) = prefs.edit().putInt(KEY_V924RETRYAUTOBACKOFF924, value).apply()
+
+    var v924returnAutoHome924: Boolean
+        get() = prefs.getBoolean(KEY_V924RETURNAUTOHOME924, false)
+        set(value) = prefs.edit().putBoolean(KEY_V924RETURNAUTOHOME924, value).apply()
+
+    var v924reverseAutoOrder924: Boolean
+        get() = prefs.getBoolean(KEY_V924REVERSEAUTOORDER924, false)
+        set(value) = prefs.edit().putBoolean(KEY_V924REVERSEAUTOORDER924, value).apply()
+
+    var v925replaceAutoRegex925: Boolean
+        get() = prefs.getBoolean(KEY_V925REPLACEAUTOREGEX925, false)
+        set(value) = prefs.edit().putBoolean(KEY_V925REPLACEAUTOREGEX925, value).apply()
+
+    var v925reportAutoCrash925: Boolean
+        get() = prefs.getBoolean(KEY_V925REPORTAUTOCRASH925, false)
+        set(value) = prefs.edit().putBoolean(KEY_V925REPORTAUTOCRASH925, value).apply()
+
+    var v925requestAutoRetry925: Boolean
+        get() = prefs.getBoolean(KEY_V925REQUESTAUTORETRY925, false)
+        set(value) = prefs.edit().putBoolean(KEY_V925REQUESTAUTORETRY925, value).apply()
+
+    var v925requireAutoAuth925: Boolean
+        get() = prefs.getBoolean(KEY_V925REQUIREAUTOAUTH925, false)
+        set(value) = prefs.edit().putBoolean(KEY_V925REQUIREAUTOAUTH925, value).apply()
+
+    var v925resetAutoDefault925: Boolean
+        get() = prefs.getBoolean(KEY_V925RESETAUTODEFAULT925, false)
+        set(value) = prefs.edit().putBoolean(KEY_V925RESETAUTODEFAULT925, value).apply()
+
+    var v925resizeAutoFit925: Boolean
+        get() = prefs.getBoolean(KEY_V925RESIZEAUTOFIT925, false)
+        set(value) = prefs.edit().putBoolean(KEY_V925RESIZEAUTOFIT925, value).apply()
+
+    var v925resolveAutoDns925: Boolean
+        get() = prefs.getBoolean(KEY_V925RESOLVEAUTODNS925, false)
+        set(value) = prefs.edit().putBoolean(KEY_V925RESOLVEAUTODNS925, value).apply()
+
+    var v925resourceAutoPool925: Boolean
+        get() = prefs.getBoolean(KEY_V925RESOURCEAUTOPOOL925, false)
+        set(value) = prefs.edit().putBoolean(KEY_V925RESOURCEAUTOPOOL925, value).apply()
+
+    var v925responseAutoCache925: Boolean
+        get() = prefs.getBoolean(KEY_V925RESPONSEAUTOCACHE925, false)
+        set(value) = prefs.edit().putBoolean(KEY_V925RESPONSEAUTOCACHE925, value).apply()
+
+    var v925restartAutoRecover925: Boolean
+        get() = prefs.getBoolean(KEY_V925RESTARTAUTORECOVER925, false)
+        set(value) = prefs.edit().putBoolean(KEY_V925RESTARTAUTORECOVER925, value).apply()
+
+    var v925restoreAutoBackup925: Boolean
+        get() = prefs.getBoolean(KEY_V925RESTOREAUTOBACKUP925, false)
+        set(value) = prefs.edit().putBoolean(KEY_V925RESTOREAUTOBACKUP925, value).apply()
+
+    var v925resultAutoSort925: Boolean
+        get() = prefs.getBoolean(KEY_V925RESULTAUTOSORT925, false)
+        set(value) = prefs.edit().putBoolean(KEY_V925RESULTAUTOSORT925, value).apply()
+
+    var v925retryAutoBackoff925: Int
+        get() = prefs.getInt(KEY_V925RETRYAUTOBACKOFF925, 0)
+        set(value) = prefs.edit().putInt(KEY_V925RETRYAUTOBACKOFF925, value).apply()
+
+    var v925returnAutoHome925: Boolean
+        get() = prefs.getBoolean(KEY_V925RETURNAUTOHOME925, false)
+        set(value) = prefs.edit().putBoolean(KEY_V925RETURNAUTOHOME925, value).apply()
+
+    var v925reverseAutoOrder925: Boolean
+        get() = prefs.getBoolean(KEY_V925REVERSEAUTOORDER925, false)
+        set(value) = prefs.edit().putBoolean(KEY_V925REVERSEAUTOORDER925, value).apply()
+
+    var v926replaceAutoRegex926: Boolean
+        get() = prefs.getBoolean(KEY_V926REPLACEAUTOREGEX926, false)
+        set(value) = prefs.edit().putBoolean(KEY_V926REPLACEAUTOREGEX926, value).apply()
+
+    var v926reportAutoCrash926: Boolean
+        get() = prefs.getBoolean(KEY_V926REPORTAUTOCRASH926, false)
+        set(value) = prefs.edit().putBoolean(KEY_V926REPORTAUTOCRASH926, value).apply()
+
+    var v926requestAutoRetry926: Boolean
+        get() = prefs.getBoolean(KEY_V926REQUESTAUTORETRY926, false)
+        set(value) = prefs.edit().putBoolean(KEY_V926REQUESTAUTORETRY926, value).apply()
+
+    var v926requireAutoAuth926: Boolean
+        get() = prefs.getBoolean(KEY_V926REQUIREAUTOAUTH926, false)
+        set(value) = prefs.edit().putBoolean(KEY_V926REQUIREAUTOAUTH926, value).apply()
+
+    var v926resetAutoDefault926: Boolean
+        get() = prefs.getBoolean(KEY_V926RESETAUTODEFAULT926, false)
+        set(value) = prefs.edit().putBoolean(KEY_V926RESETAUTODEFAULT926, value).apply()
+
+    var v926resizeAutoFit926: Boolean
+        get() = prefs.getBoolean(KEY_V926RESIZEAUTOFIT926, false)
+        set(value) = prefs.edit().putBoolean(KEY_V926RESIZEAUTOFIT926, value).apply()
+
+    var v926resolveAutoDns926: Boolean
+        get() = prefs.getBoolean(KEY_V926RESOLVEAUTODNS926, false)
+        set(value) = prefs.edit().putBoolean(KEY_V926RESOLVEAUTODNS926, value).apply()
+
+    var v926resourceAutoPool926: Boolean
+        get() = prefs.getBoolean(KEY_V926RESOURCEAUTOPOOL926, false)
+        set(value) = prefs.edit().putBoolean(KEY_V926RESOURCEAUTOPOOL926, value).apply()
+
+    var v926responseAutoCache926: Boolean
+        get() = prefs.getBoolean(KEY_V926RESPONSEAUTOCACHE926, false)
+        set(value) = prefs.edit().putBoolean(KEY_V926RESPONSEAUTOCACHE926, value).apply()
+
+    var v926restartAutoRecover926: Boolean
+        get() = prefs.getBoolean(KEY_V926RESTARTAUTORECOVER926, false)
+        set(value) = prefs.edit().putBoolean(KEY_V926RESTARTAUTORECOVER926, value).apply()
+
+    var v926restoreAutoBackup926: Boolean
+        get() = prefs.getBoolean(KEY_V926RESTOREAUTOBACKUP926, false)
+        set(value) = prefs.edit().putBoolean(KEY_V926RESTOREAUTOBACKUP926, value).apply()
+
+    var v926resultAutoSort926: Boolean
+        get() = prefs.getBoolean(KEY_V926RESULTAUTOSORT926, false)
+        set(value) = prefs.edit().putBoolean(KEY_V926RESULTAUTOSORT926, value).apply()
+
+    var v926retryAutoBackoff926: Int
+        get() = prefs.getInt(KEY_V926RETRYAUTOBACKOFF926, 0)
+        set(value) = prefs.edit().putInt(KEY_V926RETRYAUTOBACKOFF926, value).apply()
+
+    var v926returnAutoHome926: Boolean
+        get() = prefs.getBoolean(KEY_V926RETURNAUTOHOME926, false)
+        set(value) = prefs.edit().putBoolean(KEY_V926RETURNAUTOHOME926, value).apply()
+
+    var v926reverseAutoOrder926: Boolean
+        get() = prefs.getBoolean(KEY_V926REVERSEAUTOORDER926, false)
+        set(value) = prefs.edit().putBoolean(KEY_V926REVERSEAUTOORDER926, value).apply()
+
+    var v927replaceAutoRegex927: Boolean
+        get() = prefs.getBoolean(KEY_V927REPLACEAUTOREGEX927, false)
+        set(value) = prefs.edit().putBoolean(KEY_V927REPLACEAUTOREGEX927, value).apply()
+
+    var v927reportAutoCrash927: Boolean
+        get() = prefs.getBoolean(KEY_V927REPORTAUTOCRASH927, false)
+        set(value) = prefs.edit().putBoolean(KEY_V927REPORTAUTOCRASH927, value).apply()
+
+    var v927requestAutoRetry927: Boolean
+        get() = prefs.getBoolean(KEY_V927REQUESTAUTORETRY927, false)
+        set(value) = prefs.edit().putBoolean(KEY_V927REQUESTAUTORETRY927, value).apply()
+
+    var v927requireAutoAuth927: Boolean
+        get() = prefs.getBoolean(KEY_V927REQUIREAUTOAUTH927, false)
+        set(value) = prefs.edit().putBoolean(KEY_V927REQUIREAUTOAUTH927, value).apply()
+
+    var v927resetAutoDefault927: Boolean
+        get() = prefs.getBoolean(KEY_V927RESETAUTODEFAULT927, false)
+        set(value) = prefs.edit().putBoolean(KEY_V927RESETAUTODEFAULT927, value).apply()
+
+    var v927resizeAutoFit927: Boolean
+        get() = prefs.getBoolean(KEY_V927RESIZEAUTOFIT927, false)
+        set(value) = prefs.edit().putBoolean(KEY_V927RESIZEAUTOFIT927, value).apply()
+
+    var v927resolveAutoDns927: Boolean
+        get() = prefs.getBoolean(KEY_V927RESOLVEAUTODNS927, false)
+        set(value) = prefs.edit().putBoolean(KEY_V927RESOLVEAUTODNS927, value).apply()
+
+    var v927resourceAutoPool927: Boolean
+        get() = prefs.getBoolean(KEY_V927RESOURCEAUTOPOOL927, false)
+        set(value) = prefs.edit().putBoolean(KEY_V927RESOURCEAUTOPOOL927, value).apply()
+
+    var v927responseAutoCache927: Boolean
+        get() = prefs.getBoolean(KEY_V927RESPONSEAUTOCACHE927, false)
+        set(value) = prefs.edit().putBoolean(KEY_V927RESPONSEAUTOCACHE927, value).apply()
+
+    var v927restartAutoRecover927: Boolean
+        get() = prefs.getBoolean(KEY_V927RESTARTAUTORECOVER927, false)
+        set(value) = prefs.edit().putBoolean(KEY_V927RESTARTAUTORECOVER927, value).apply()
+
+    var v927restoreAutoBackup927: Boolean
+        get() = prefs.getBoolean(KEY_V927RESTOREAUTOBACKUP927, false)
+        set(value) = prefs.edit().putBoolean(KEY_V927RESTOREAUTOBACKUP927, value).apply()
+
+    var v927resultAutoSort927: Boolean
+        get() = prefs.getBoolean(KEY_V927RESULTAUTOSORT927, false)
+        set(value) = prefs.edit().putBoolean(KEY_V927RESULTAUTOSORT927, value).apply()
+
+    var v927retryAutoBackoff927: Int
+        get() = prefs.getInt(KEY_V927RETRYAUTOBACKOFF927, 0)
+        set(value) = prefs.edit().putInt(KEY_V927RETRYAUTOBACKOFF927, value).apply()
+
+    var v927returnAutoHome927: Boolean
+        get() = prefs.getBoolean(KEY_V927RETURNAUTOHOME927, false)
+        set(value) = prefs.edit().putBoolean(KEY_V927RETURNAUTOHOME927, value).apply()
+
+    var v927reverseAutoOrder927: Boolean
+        get() = prefs.getBoolean(KEY_V927REVERSEAUTOORDER927, false)
+        set(value) = prefs.edit().putBoolean(KEY_V927REVERSEAUTOORDER927, value).apply()
+
+    var v928replaceAutoRegex928: Boolean
+        get() = prefs.getBoolean(KEY_V928REPLACEAUTOREGEX928, false)
+        set(value) = prefs.edit().putBoolean(KEY_V928REPLACEAUTOREGEX928, value).apply()
+
+    var v928reportAutoCrash928: Boolean
+        get() = prefs.getBoolean(KEY_V928REPORTAUTOCRASH928, false)
+        set(value) = prefs.edit().putBoolean(KEY_V928REPORTAUTOCRASH928, value).apply()
+
+    var v928requestAutoRetry928: Boolean
+        get() = prefs.getBoolean(KEY_V928REQUESTAUTORETRY928, false)
+        set(value) = prefs.edit().putBoolean(KEY_V928REQUESTAUTORETRY928, value).apply()
+
+    var v928requireAutoAuth928: Boolean
+        get() = prefs.getBoolean(KEY_V928REQUIREAUTOAUTH928, false)
+        set(value) = prefs.edit().putBoolean(KEY_V928REQUIREAUTOAUTH928, value).apply()
+
+    var v928resetAutoDefault928: Boolean
+        get() = prefs.getBoolean(KEY_V928RESETAUTODEFAULT928, false)
+        set(value) = prefs.edit().putBoolean(KEY_V928RESETAUTODEFAULT928, value).apply()
+
+    var v928resizeAutoFit928: Boolean
+        get() = prefs.getBoolean(KEY_V928RESIZEAUTOFIT928, false)
+        set(value) = prefs.edit().putBoolean(KEY_V928RESIZEAUTOFIT928, value).apply()
+
+    var v928resolveAutoDns928: Boolean
+        get() = prefs.getBoolean(KEY_V928RESOLVEAUTODNS928, false)
+        set(value) = prefs.edit().putBoolean(KEY_V928RESOLVEAUTODNS928, value).apply()
+
+    var v928resourceAutoPool928: Boolean
+        get() = prefs.getBoolean(KEY_V928RESOURCEAUTOPOOL928, false)
+        set(value) = prefs.edit().putBoolean(KEY_V928RESOURCEAUTOPOOL928, value).apply()
+
+    var v928responseAutoCache928: Boolean
+        get() = prefs.getBoolean(KEY_V928RESPONSEAUTOCACHE928, false)
+        set(value) = prefs.edit().putBoolean(KEY_V928RESPONSEAUTOCACHE928, value).apply()
+
+    var v928restartAutoRecover928: Boolean
+        get() = prefs.getBoolean(KEY_V928RESTARTAUTORECOVER928, false)
+        set(value) = prefs.edit().putBoolean(KEY_V928RESTARTAUTORECOVER928, value).apply()
+
+    var v928restoreAutoBackup928: Boolean
+        get() = prefs.getBoolean(KEY_V928RESTOREAUTOBACKUP928, false)
+        set(value) = prefs.edit().putBoolean(KEY_V928RESTOREAUTOBACKUP928, value).apply()
+
+    var v928resultAutoSort928: Boolean
+        get() = prefs.getBoolean(KEY_V928RESULTAUTOSORT928, false)
+        set(value) = prefs.edit().putBoolean(KEY_V928RESULTAUTOSORT928, value).apply()
+
+    var v928retryAutoBackoff928: Int
+        get() = prefs.getInt(KEY_V928RETRYAUTOBACKOFF928, 0)
+        set(value) = prefs.edit().putInt(KEY_V928RETRYAUTOBACKOFF928, value).apply()
+
+    var v928returnAutoHome928: Boolean
+        get() = prefs.getBoolean(KEY_V928RETURNAUTOHOME928, false)
+        set(value) = prefs.edit().putBoolean(KEY_V928RETURNAUTOHOME928, value).apply()
+
+    var v928reverseAutoOrder928: Boolean
+        get() = prefs.getBoolean(KEY_V928REVERSEAUTOORDER928, false)
+        set(value) = prefs.edit().putBoolean(KEY_V928REVERSEAUTOORDER928, value).apply()
+
+    var v929replaceAutoRegex929: Boolean
+        get() = prefs.getBoolean(KEY_V929REPLACEAUTOREGEX929, false)
+        set(value) = prefs.edit().putBoolean(KEY_V929REPLACEAUTOREGEX929, value).apply()
+
+    var v929reportAutoCrash929: Boolean
+        get() = prefs.getBoolean(KEY_V929REPORTAUTOCRASH929, false)
+        set(value) = prefs.edit().putBoolean(KEY_V929REPORTAUTOCRASH929, value).apply()
+
+    var v929requestAutoRetry929: Boolean
+        get() = prefs.getBoolean(KEY_V929REQUESTAUTORETRY929, false)
+        set(value) = prefs.edit().putBoolean(KEY_V929REQUESTAUTORETRY929, value).apply()
+
+    var v929requireAutoAuth929: Boolean
+        get() = prefs.getBoolean(KEY_V929REQUIREAUTOAUTH929, false)
+        set(value) = prefs.edit().putBoolean(KEY_V929REQUIREAUTOAUTH929, value).apply()
+
+    var v929resetAutoDefault929: Boolean
+        get() = prefs.getBoolean(KEY_V929RESETAUTODEFAULT929, false)
+        set(value) = prefs.edit().putBoolean(KEY_V929RESETAUTODEFAULT929, value).apply()
+
+    var v929resizeAutoFit929: Boolean
+        get() = prefs.getBoolean(KEY_V929RESIZEAUTOFIT929, false)
+        set(value) = prefs.edit().putBoolean(KEY_V929RESIZEAUTOFIT929, value).apply()
+
+    var v929resolveAutoDns929: Boolean
+        get() = prefs.getBoolean(KEY_V929RESOLVEAUTODNS929, false)
+        set(value) = prefs.edit().putBoolean(KEY_V929RESOLVEAUTODNS929, value).apply()
+
+    var v929resourceAutoPool929: Boolean
+        get() = prefs.getBoolean(KEY_V929RESOURCEAUTOPOOL929, false)
+        set(value) = prefs.edit().putBoolean(KEY_V929RESOURCEAUTOPOOL929, value).apply()
+
+    var v929responseAutoCache929: Boolean
+        get() = prefs.getBoolean(KEY_V929RESPONSEAUTOCACHE929, false)
+        set(value) = prefs.edit().putBoolean(KEY_V929RESPONSEAUTOCACHE929, value).apply()
+
+    var v929restartAutoRecover929: Boolean
+        get() = prefs.getBoolean(KEY_V929RESTARTAUTORECOVER929, false)
+        set(value) = prefs.edit().putBoolean(KEY_V929RESTARTAUTORECOVER929, value).apply()
+
+    var v929restoreAutoBackup929: Boolean
+        get() = prefs.getBoolean(KEY_V929RESTOREAUTOBACKUP929, false)
+        set(value) = prefs.edit().putBoolean(KEY_V929RESTOREAUTOBACKUP929, value).apply()
+
+    var v929resultAutoSort929: Boolean
+        get() = prefs.getBoolean(KEY_V929RESULTAUTOSORT929, false)
+        set(value) = prefs.edit().putBoolean(KEY_V929RESULTAUTOSORT929, value).apply()
+
+    var v929retryAutoBackoff929: Int
+        get() = prefs.getInt(KEY_V929RETRYAUTOBACKOFF929, 0)
+        set(value) = prefs.edit().putInt(KEY_V929RETRYAUTOBACKOFF929, value).apply()
+
+    var v929returnAutoHome929: Boolean
+        get() = prefs.getBoolean(KEY_V929RETURNAUTOHOME929, false)
+        set(value) = prefs.edit().putBoolean(KEY_V929RETURNAUTOHOME929, value).apply()
+
+    var v929reverseAutoOrder929: Boolean
+        get() = prefs.getBoolean(KEY_V929REVERSEAUTOORDER929, false)
+        set(value) = prefs.edit().putBoolean(KEY_V929REVERSEAUTOORDER929, value).apply()
+
+    var v930replaceAutoRegex930: Boolean
+        get() = prefs.getBoolean(KEY_V930REPLACEAUTOREGEX930, false)
+        set(value) = prefs.edit().putBoolean(KEY_V930REPLACEAUTOREGEX930, value).apply()
+
+    var v930reportAutoCrash930: Boolean
+        get() = prefs.getBoolean(KEY_V930REPORTAUTOCRASH930, false)
+        set(value) = prefs.edit().putBoolean(KEY_V930REPORTAUTOCRASH930, value).apply()
+
+    var v930requestAutoRetry930: Boolean
+        get() = prefs.getBoolean(KEY_V930REQUESTAUTORETRY930, false)
+        set(value) = prefs.edit().putBoolean(KEY_V930REQUESTAUTORETRY930, value).apply()
+
+    var v930requireAutoAuth930: Boolean
+        get() = prefs.getBoolean(KEY_V930REQUIREAUTOAUTH930, false)
+        set(value) = prefs.edit().putBoolean(KEY_V930REQUIREAUTOAUTH930, value).apply()
+
+    var v930resetAutoDefault930: Boolean
+        get() = prefs.getBoolean(KEY_V930RESETAUTODEFAULT930, false)
+        set(value) = prefs.edit().putBoolean(KEY_V930RESETAUTODEFAULT930, value).apply()
+
+    var v930resizeAutoFit930: Boolean
+        get() = prefs.getBoolean(KEY_V930RESIZEAUTOFIT930, false)
+        set(value) = prefs.edit().putBoolean(KEY_V930RESIZEAUTOFIT930, value).apply()
+
+    var v930resolveAutoDns930: Boolean
+        get() = prefs.getBoolean(KEY_V930RESOLVEAUTODNS930, false)
+        set(value) = prefs.edit().putBoolean(KEY_V930RESOLVEAUTODNS930, value).apply()
+
+    var v930resourceAutoPool930: Boolean
+        get() = prefs.getBoolean(KEY_V930RESOURCEAUTOPOOL930, false)
+        set(value) = prefs.edit().putBoolean(KEY_V930RESOURCEAUTOPOOL930, value).apply()
+
+    var v930responseAutoCache930: Boolean
+        get() = prefs.getBoolean(KEY_V930RESPONSEAUTOCACHE930, false)
+        set(value) = prefs.edit().putBoolean(KEY_V930RESPONSEAUTOCACHE930, value).apply()
+
+    var v930restartAutoRecover930: Boolean
+        get() = prefs.getBoolean(KEY_V930RESTARTAUTORECOVER930, false)
+        set(value) = prefs.edit().putBoolean(KEY_V930RESTARTAUTORECOVER930, value).apply()
+
+    var v930restoreAutoBackup930: Boolean
+        get() = prefs.getBoolean(KEY_V930RESTOREAUTOBACKUP930, false)
+        set(value) = prefs.edit().putBoolean(KEY_V930RESTOREAUTOBACKUP930, value).apply()
+
+    var v930resultAutoSort930: Boolean
+        get() = prefs.getBoolean(KEY_V930RESULTAUTOSORT930, false)
+        set(value) = prefs.edit().putBoolean(KEY_V930RESULTAUTOSORT930, value).apply()
+
+    var v930retryAutoBackoff930: Int
+        get() = prefs.getInt(KEY_V930RETRYAUTOBACKOFF930, 0)
+        set(value) = prefs.edit().putInt(KEY_V930RETRYAUTOBACKOFF930, value).apply()
+
+    var v930returnAutoHome930: Boolean
+        get() = prefs.getBoolean(KEY_V930RETURNAUTOHOME930, false)
+        set(value) = prefs.edit().putBoolean(KEY_V930RETURNAUTOHOME930, value).apply()
+
+    var v930reverseAutoOrder930: Boolean
+        get() = prefs.getBoolean(KEY_V930REVERSEAUTOORDER930, false)
+        set(value) = prefs.edit().putBoolean(KEY_V930REVERSEAUTOORDER930, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -78180,5 +78780,155 @@ class AppPrefs(context: Context) {
         const val KEY_V920RENAMEAUTOLABEL920 = "v920renameAutoLabel920" // v920 Rename Auto Label920
         const val KEY_V920RENDERAUTOFRAME920 = "v920renderAutoFrame920" // v920 Render Auto Frame920
         const val KEY_V920REPEATAUTOLOOP920 = "v920repeatAutoLoop920" // v920 Repeat Auto Loop920
+        const val KEY_V921REPLACEAUTOREGEX921 = "v921replaceAutoRegex921" // v921 Replace Auto Regex921
+        const val KEY_V921REPORTAUTOCRASH921 = "v921reportAutoCrash921" // v921 Report Auto Crash921
+        const val KEY_V921REQUESTAUTORETRY921 = "v921requestAutoRetry921" // v921 Request Auto Retry921
+        const val KEY_V921REQUIREAUTOAUTH921 = "v921requireAutoAuth921" // v921 Require Auto Auth921
+        const val KEY_V921RESETAUTODEFAULT921 = "v921resetAutoDefault921" // v921 Reset Auto Default921
+        const val KEY_V921RESIZEAUTOFIT921 = "v921resizeAutoFit921" // v921 Resize Auto Fit921
+        const val KEY_V921RESOLVEAUTODNS921 = "v921resolveAutoDns921" // v921 Resolve Auto Dns921
+        const val KEY_V921RESOURCEAUTOPOOL921 = "v921resourceAutoPool921" // v921 Resource Auto Pool921
+        const val KEY_V921RESPONSEAUTOCACHE921 = "v921responseAutoCache921" // v921 Response Auto Cache921
+        const val KEY_V921RESTARTAUTORECOVER921 = "v921restartAutoRecover921" // v921 Restart Auto Recover921
+        const val KEY_V921RESTOREAUTOBACKUP921 = "v921restoreAutoBackup921" // v921 Restore Auto Backup921
+        const val KEY_V921RESULTAUTOSORT921 = "v921resultAutoSort921" // v921 Result Auto Sort921
+        const val KEY_V921RETRYAUTOBACKOFF921 = "v921retryAutoBackoff921" // v921 Retry Auto Backoff921
+        const val KEY_V921RETURNAUTOHOME921 = "v921returnAutoHome921" // v921 Return Auto Home921
+        const val KEY_V921REVERSEAUTOORDER921 = "v921reverseAutoOrder921" // v921 Reverse Auto Order921
+        const val KEY_V922REPLACEAUTOREGEX922 = "v922replaceAutoRegex922" // v922 Replace Auto Regex922
+        const val KEY_V922REPORTAUTOCRASH922 = "v922reportAutoCrash922" // v922 Report Auto Crash922
+        const val KEY_V922REQUESTAUTORETRY922 = "v922requestAutoRetry922" // v922 Request Auto Retry922
+        const val KEY_V922REQUIREAUTOAUTH922 = "v922requireAutoAuth922" // v922 Require Auto Auth922
+        const val KEY_V922RESETAUTODEFAULT922 = "v922resetAutoDefault922" // v922 Reset Auto Default922
+        const val KEY_V922RESIZEAUTOFIT922 = "v922resizeAutoFit922" // v922 Resize Auto Fit922
+        const val KEY_V922RESOLVEAUTODNS922 = "v922resolveAutoDns922" // v922 Resolve Auto Dns922
+        const val KEY_V922RESOURCEAUTOPOOL922 = "v922resourceAutoPool922" // v922 Resource Auto Pool922
+        const val KEY_V922RESPONSEAUTOCACHE922 = "v922responseAutoCache922" // v922 Response Auto Cache922
+        const val KEY_V922RESTARTAUTORECOVER922 = "v922restartAutoRecover922" // v922 Restart Auto Recover922
+        const val KEY_V922RESTOREAUTOBACKUP922 = "v922restoreAutoBackup922" // v922 Restore Auto Backup922
+        const val KEY_V922RESULTAUTOSORT922 = "v922resultAutoSort922" // v922 Result Auto Sort922
+        const val KEY_V922RETRYAUTOBACKOFF922 = "v922retryAutoBackoff922" // v922 Retry Auto Backoff922
+        const val KEY_V922RETURNAUTOHOME922 = "v922returnAutoHome922" // v922 Return Auto Home922
+        const val KEY_V922REVERSEAUTOORDER922 = "v922reverseAutoOrder922" // v922 Reverse Auto Order922
+        const val KEY_V923REPLACEAUTOREGEX923 = "v923replaceAutoRegex923" // v923 Replace Auto Regex923
+        const val KEY_V923REPORTAUTOCRASH923 = "v923reportAutoCrash923" // v923 Report Auto Crash923
+        const val KEY_V923REQUESTAUTORETRY923 = "v923requestAutoRetry923" // v923 Request Auto Retry923
+        const val KEY_V923REQUIREAUTOAUTH923 = "v923requireAutoAuth923" // v923 Require Auto Auth923
+        const val KEY_V923RESETAUTODEFAULT923 = "v923resetAutoDefault923" // v923 Reset Auto Default923
+        const val KEY_V923RESIZEAUTOFIT923 = "v923resizeAutoFit923" // v923 Resize Auto Fit923
+        const val KEY_V923RESOLVEAUTODNS923 = "v923resolveAutoDns923" // v923 Resolve Auto Dns923
+        const val KEY_V923RESOURCEAUTOPOOL923 = "v923resourceAutoPool923" // v923 Resource Auto Pool923
+        const val KEY_V923RESPONSEAUTOCACHE923 = "v923responseAutoCache923" // v923 Response Auto Cache923
+        const val KEY_V923RESTARTAUTORECOVER923 = "v923restartAutoRecover923" // v923 Restart Auto Recover923
+        const val KEY_V923RESTOREAUTOBACKUP923 = "v923restoreAutoBackup923" // v923 Restore Auto Backup923
+        const val KEY_V923RESULTAUTOSORT923 = "v923resultAutoSort923" // v923 Result Auto Sort923
+        const val KEY_V923RETRYAUTOBACKOFF923 = "v923retryAutoBackoff923" // v923 Retry Auto Backoff923
+        const val KEY_V923RETURNAUTOHOME923 = "v923returnAutoHome923" // v923 Return Auto Home923
+        const val KEY_V923REVERSEAUTOORDER923 = "v923reverseAutoOrder923" // v923 Reverse Auto Order923
+        const val KEY_V924REPLACEAUTOREGEX924 = "v924replaceAutoRegex924" // v924 Replace Auto Regex924
+        const val KEY_V924REPORTAUTOCRASH924 = "v924reportAutoCrash924" // v924 Report Auto Crash924
+        const val KEY_V924REQUESTAUTORETRY924 = "v924requestAutoRetry924" // v924 Request Auto Retry924
+        const val KEY_V924REQUIREAUTOAUTH924 = "v924requireAutoAuth924" // v924 Require Auto Auth924
+        const val KEY_V924RESETAUTODEFAULT924 = "v924resetAutoDefault924" // v924 Reset Auto Default924
+        const val KEY_V924RESIZEAUTOFIT924 = "v924resizeAutoFit924" // v924 Resize Auto Fit924
+        const val KEY_V924RESOLVEAUTODNS924 = "v924resolveAutoDns924" // v924 Resolve Auto Dns924
+        const val KEY_V924RESOURCEAUTOPOOL924 = "v924resourceAutoPool924" // v924 Resource Auto Pool924
+        const val KEY_V924RESPONSEAUTOCACHE924 = "v924responseAutoCache924" // v924 Response Auto Cache924
+        const val KEY_V924RESTARTAUTORECOVER924 = "v924restartAutoRecover924" // v924 Restart Auto Recover924
+        const val KEY_V924RESTOREAUTOBACKUP924 = "v924restoreAutoBackup924" // v924 Restore Auto Backup924
+        const val KEY_V924RESULTAUTOSORT924 = "v924resultAutoSort924" // v924 Result Auto Sort924
+        const val KEY_V924RETRYAUTOBACKOFF924 = "v924retryAutoBackoff924" // v924 Retry Auto Backoff924
+        const val KEY_V924RETURNAUTOHOME924 = "v924returnAutoHome924" // v924 Return Auto Home924
+        const val KEY_V924REVERSEAUTOORDER924 = "v924reverseAutoOrder924" // v924 Reverse Auto Order924
+        const val KEY_V925REPLACEAUTOREGEX925 = "v925replaceAutoRegex925" // v925 Replace Auto Regex925
+        const val KEY_V925REPORTAUTOCRASH925 = "v925reportAutoCrash925" // v925 Report Auto Crash925
+        const val KEY_V925REQUESTAUTORETRY925 = "v925requestAutoRetry925" // v925 Request Auto Retry925
+        const val KEY_V925REQUIREAUTOAUTH925 = "v925requireAutoAuth925" // v925 Require Auto Auth925
+        const val KEY_V925RESETAUTODEFAULT925 = "v925resetAutoDefault925" // v925 Reset Auto Default925
+        const val KEY_V925RESIZEAUTOFIT925 = "v925resizeAutoFit925" // v925 Resize Auto Fit925
+        const val KEY_V925RESOLVEAUTODNS925 = "v925resolveAutoDns925" // v925 Resolve Auto Dns925
+        const val KEY_V925RESOURCEAUTOPOOL925 = "v925resourceAutoPool925" // v925 Resource Auto Pool925
+        const val KEY_V925RESPONSEAUTOCACHE925 = "v925responseAutoCache925" // v925 Response Auto Cache925
+        const val KEY_V925RESTARTAUTORECOVER925 = "v925restartAutoRecover925" // v925 Restart Auto Recover925
+        const val KEY_V925RESTOREAUTOBACKUP925 = "v925restoreAutoBackup925" // v925 Restore Auto Backup925
+        const val KEY_V925RESULTAUTOSORT925 = "v925resultAutoSort925" // v925 Result Auto Sort925
+        const val KEY_V925RETRYAUTOBACKOFF925 = "v925retryAutoBackoff925" // v925 Retry Auto Backoff925
+        const val KEY_V925RETURNAUTOHOME925 = "v925returnAutoHome925" // v925 Return Auto Home925
+        const val KEY_V925REVERSEAUTOORDER925 = "v925reverseAutoOrder925" // v925 Reverse Auto Order925
+        const val KEY_V926REPLACEAUTOREGEX926 = "v926replaceAutoRegex926" // v926 Replace Auto Regex926
+        const val KEY_V926REPORTAUTOCRASH926 = "v926reportAutoCrash926" // v926 Report Auto Crash926
+        const val KEY_V926REQUESTAUTORETRY926 = "v926requestAutoRetry926" // v926 Request Auto Retry926
+        const val KEY_V926REQUIREAUTOAUTH926 = "v926requireAutoAuth926" // v926 Require Auto Auth926
+        const val KEY_V926RESETAUTODEFAULT926 = "v926resetAutoDefault926" // v926 Reset Auto Default926
+        const val KEY_V926RESIZEAUTOFIT926 = "v926resizeAutoFit926" // v926 Resize Auto Fit926
+        const val KEY_V926RESOLVEAUTODNS926 = "v926resolveAutoDns926" // v926 Resolve Auto Dns926
+        const val KEY_V926RESOURCEAUTOPOOL926 = "v926resourceAutoPool926" // v926 Resource Auto Pool926
+        const val KEY_V926RESPONSEAUTOCACHE926 = "v926responseAutoCache926" // v926 Response Auto Cache926
+        const val KEY_V926RESTARTAUTORECOVER926 = "v926restartAutoRecover926" // v926 Restart Auto Recover926
+        const val KEY_V926RESTOREAUTOBACKUP926 = "v926restoreAutoBackup926" // v926 Restore Auto Backup926
+        const val KEY_V926RESULTAUTOSORT926 = "v926resultAutoSort926" // v926 Result Auto Sort926
+        const val KEY_V926RETRYAUTOBACKOFF926 = "v926retryAutoBackoff926" // v926 Retry Auto Backoff926
+        const val KEY_V926RETURNAUTOHOME926 = "v926returnAutoHome926" // v926 Return Auto Home926
+        const val KEY_V926REVERSEAUTOORDER926 = "v926reverseAutoOrder926" // v926 Reverse Auto Order926
+        const val KEY_V927REPLACEAUTOREGEX927 = "v927replaceAutoRegex927" // v927 Replace Auto Regex927
+        const val KEY_V927REPORTAUTOCRASH927 = "v927reportAutoCrash927" // v927 Report Auto Crash927
+        const val KEY_V927REQUESTAUTORETRY927 = "v927requestAutoRetry927" // v927 Request Auto Retry927
+        const val KEY_V927REQUIREAUTOAUTH927 = "v927requireAutoAuth927" // v927 Require Auto Auth927
+        const val KEY_V927RESETAUTODEFAULT927 = "v927resetAutoDefault927" // v927 Reset Auto Default927
+        const val KEY_V927RESIZEAUTOFIT927 = "v927resizeAutoFit927" // v927 Resize Auto Fit927
+        const val KEY_V927RESOLVEAUTODNS927 = "v927resolveAutoDns927" // v927 Resolve Auto Dns927
+        const val KEY_V927RESOURCEAUTOPOOL927 = "v927resourceAutoPool927" // v927 Resource Auto Pool927
+        const val KEY_V927RESPONSEAUTOCACHE927 = "v927responseAutoCache927" // v927 Response Auto Cache927
+        const val KEY_V927RESTARTAUTORECOVER927 = "v927restartAutoRecover927" // v927 Restart Auto Recover927
+        const val KEY_V927RESTOREAUTOBACKUP927 = "v927restoreAutoBackup927" // v927 Restore Auto Backup927
+        const val KEY_V927RESULTAUTOSORT927 = "v927resultAutoSort927" // v927 Result Auto Sort927
+        const val KEY_V927RETRYAUTOBACKOFF927 = "v927retryAutoBackoff927" // v927 Retry Auto Backoff927
+        const val KEY_V927RETURNAUTOHOME927 = "v927returnAutoHome927" // v927 Return Auto Home927
+        const val KEY_V927REVERSEAUTOORDER927 = "v927reverseAutoOrder927" // v927 Reverse Auto Order927
+        const val KEY_V928REPLACEAUTOREGEX928 = "v928replaceAutoRegex928" // v928 Replace Auto Regex928
+        const val KEY_V928REPORTAUTOCRASH928 = "v928reportAutoCrash928" // v928 Report Auto Crash928
+        const val KEY_V928REQUESTAUTORETRY928 = "v928requestAutoRetry928" // v928 Request Auto Retry928
+        const val KEY_V928REQUIREAUTOAUTH928 = "v928requireAutoAuth928" // v928 Require Auto Auth928
+        const val KEY_V928RESETAUTODEFAULT928 = "v928resetAutoDefault928" // v928 Reset Auto Default928
+        const val KEY_V928RESIZEAUTOFIT928 = "v928resizeAutoFit928" // v928 Resize Auto Fit928
+        const val KEY_V928RESOLVEAUTODNS928 = "v928resolveAutoDns928" // v928 Resolve Auto Dns928
+        const val KEY_V928RESOURCEAUTOPOOL928 = "v928resourceAutoPool928" // v928 Resource Auto Pool928
+        const val KEY_V928RESPONSEAUTOCACHE928 = "v928responseAutoCache928" // v928 Response Auto Cache928
+        const val KEY_V928RESTARTAUTORECOVER928 = "v928restartAutoRecover928" // v928 Restart Auto Recover928
+        const val KEY_V928RESTOREAUTOBACKUP928 = "v928restoreAutoBackup928" // v928 Restore Auto Backup928
+        const val KEY_V928RESULTAUTOSORT928 = "v928resultAutoSort928" // v928 Result Auto Sort928
+        const val KEY_V928RETRYAUTOBACKOFF928 = "v928retryAutoBackoff928" // v928 Retry Auto Backoff928
+        const val KEY_V928RETURNAUTOHOME928 = "v928returnAutoHome928" // v928 Return Auto Home928
+        const val KEY_V928REVERSEAUTOORDER928 = "v928reverseAutoOrder928" // v928 Reverse Auto Order928
+        const val KEY_V929REPLACEAUTOREGEX929 = "v929replaceAutoRegex929" // v929 Replace Auto Regex929
+        const val KEY_V929REPORTAUTOCRASH929 = "v929reportAutoCrash929" // v929 Report Auto Crash929
+        const val KEY_V929REQUESTAUTORETRY929 = "v929requestAutoRetry929" // v929 Request Auto Retry929
+        const val KEY_V929REQUIREAUTOAUTH929 = "v929requireAutoAuth929" // v929 Require Auto Auth929
+        const val KEY_V929RESETAUTODEFAULT929 = "v929resetAutoDefault929" // v929 Reset Auto Default929
+        const val KEY_V929RESIZEAUTOFIT929 = "v929resizeAutoFit929" // v929 Resize Auto Fit929
+        const val KEY_V929RESOLVEAUTODNS929 = "v929resolveAutoDns929" // v929 Resolve Auto Dns929
+        const val KEY_V929RESOURCEAUTOPOOL929 = "v929resourceAutoPool929" // v929 Resource Auto Pool929
+        const val KEY_V929RESPONSEAUTOCACHE929 = "v929responseAutoCache929" // v929 Response Auto Cache929
+        const val KEY_V929RESTARTAUTORECOVER929 = "v929restartAutoRecover929" // v929 Restart Auto Recover929
+        const val KEY_V929RESTOREAUTOBACKUP929 = "v929restoreAutoBackup929" // v929 Restore Auto Backup929
+        const val KEY_V929RESULTAUTOSORT929 = "v929resultAutoSort929" // v929 Result Auto Sort929
+        const val KEY_V929RETRYAUTOBACKOFF929 = "v929retryAutoBackoff929" // v929 Retry Auto Backoff929
+        const val KEY_V929RETURNAUTOHOME929 = "v929returnAutoHome929" // v929 Return Auto Home929
+        const val KEY_V929REVERSEAUTOORDER929 = "v929reverseAutoOrder929" // v929 Reverse Auto Order929
+        const val KEY_V930REPLACEAUTOREGEX930 = "v930replaceAutoRegex930" // v930 Replace Auto Regex930
+        const val KEY_V930REPORTAUTOCRASH930 = "v930reportAutoCrash930" // v930 Report Auto Crash930
+        const val KEY_V930REQUESTAUTORETRY930 = "v930requestAutoRetry930" // v930 Request Auto Retry930
+        const val KEY_V930REQUIREAUTOAUTH930 = "v930requireAutoAuth930" // v930 Require Auto Auth930
+        const val KEY_V930RESETAUTODEFAULT930 = "v930resetAutoDefault930" // v930 Reset Auto Default930
+        const val KEY_V930RESIZEAUTOFIT930 = "v930resizeAutoFit930" // v930 Resize Auto Fit930
+        const val KEY_V930RESOLVEAUTODNS930 = "v930resolveAutoDns930" // v930 Resolve Auto Dns930
+        const val KEY_V930RESOURCEAUTOPOOL930 = "v930resourceAutoPool930" // v930 Resource Auto Pool930
+        const val KEY_V930RESPONSEAUTOCACHE930 = "v930responseAutoCache930" // v930 Response Auto Cache930
+        const val KEY_V930RESTARTAUTORECOVER930 = "v930restartAutoRecover930" // v930 Restart Auto Recover930
+        const val KEY_V930RESTOREAUTOBACKUP930 = "v930restoreAutoBackup930" // v930 Restore Auto Backup930
+        const val KEY_V930RESULTAUTOSORT930 = "v930resultAutoSort930" // v930 Result Auto Sort930
+        const val KEY_V930RETRYAUTOBACKOFF930 = "v930retryAutoBackoff930" // v930 Retry Auto Backoff930
+        const val KEY_V930RETURNAUTOHOME930 = "v930returnAutoHome930" // v930 Return Auto Home930
+        const val KEY_V930REVERSEAUTOORDER930 = "v930reverseAutoOrder930" // v930 Reverse Auto Order930
     }
 }
