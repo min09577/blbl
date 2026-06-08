@@ -118,7 +118,7 @@ This project is based on open-source software. All rights belong to the original
 ## 📋 更新日志 | Changelog | 変更履歴 | 변경 로그
 
 ### 最新版本 | Latest Version | 最新バージョン | 최신 버전
-- **v120.15** - 2026-06-08
+- **v130.15** - 2026-06-08
 
 ---
 
@@ -15059,6 +15059,947 @@ This project is based on open-source software. All rights belong to the original
 - ✅ 字幕アニメーション遅延120
 - ✅ 자막 애니메이션 지연120
 
+
+### v121.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v121.1-v121.15 功能列表
+- ✅ Audio Ducking Ratio Custom, Danmaku Font BG Fill Angle120, Subtitle Animation Delay121, Gesture Tap Shift Action, Cast Video Flip Horizontal, Playlist Auto Resume Queue, Cache Smart Pinning Toggle, Progress Bar Custom Live Color, Volume Mono Downmix Toggle, History Search Scope121, Playback Speed Presets Custom, Screenshot Auto Share QQ, Video PIP Swipe Dismiss, Danmaku Font BG Fill Start Color, Subtitle Animation Fade In121
+
+### v121.1 音频闪避比率自定义 | Audio Ducking Ratio Custom | オーディオダッキング比率カスタム | 오디오 덕킹 비율 사용자 정의
+- ✅ 音频闪避比率自定义
+- ✅ Audio Ducking Ratio Custom
+- ✅ オーディオダッキング比率カスタム
+- ✅ 오디오 덕킹 비율 사용자 정의
+
+### v121.2 弹幕字体背景填充角度120 | Danmaku Font BG Fill Angle120 | コメントフォントBGフィル角度120 | 댓글 글꼴 배경 채우기 각도120
+- ✅ 弹幕字体背景填充角度120
+- ✅ Danmaku Font BG Fill Angle120
+- ✅ コメントフォントBGフィル角度120
+- ✅ 댓글 글꼴 배경 채우기 각도120
+
+### v121.3 字幕动画延迟121 | Subtitle Animation Delay121 | 字幕アニメーション遅延121 | 자막 애니메이션 지연121
+- ✅ 字幕动画延迟121
+- ✅ Subtitle Animation Delay121
+- ✅ 字幕アニメーション遅延121
+- ✅ 자막 애니메이션 지연121
+
+### v121.4 手势点击Shift动作 | Gesture Tap Shift Action | ジェスチャータップシフトアクション | 제스처 탭 시프트 동작
+- ✅ 手势点击Shift动作
+- ✅ Gesture Tap Shift Action
+- ✅ ジェスチャータップシフトアクション
+- ✅ 제스처 탭 시프트 동작
+
+### v121.5 投射视频水平翻转 | Cast Video Flip Horizontal | キャストビデオ水平反転 | 캐스트 비디오 수평 뒤집기
+- ✅ 投射视频水平翻转
+- ✅ Cast Video Flip Horizontal
+- ✅ キャストビデオ水平反転
+- ✅ 캐스트 비디오 수평 뒤집기
+
+### v121.6 播放列表自动恢复队列 | Playlist Auto Resume Queue | プレイリスト自動キュー再開 | 재생 목록 자동 큐 재개
+- ✅ 播放列表自动恢复队列
+- ✅ Playlist Auto Resume Queue
+- ✅ プレイリスト自動キュー再開
+- ✅ 재생 목록 자동 큐 재개
+
+### v121.7 缓存智能固定开关 | Cache Smart Pinning Toggle | キャッシュスマートピンニング切替 | 캐시 스마트 고정 전환
+- ✅ 缓存智能固定开关
+- ✅ Cache Smart Pinning Toggle
+- ✅ キャッシュスマートピンニング切替
+- ✅ 캐시 스마트 고정 전환
+
+### v121.8 进度条自定义直播颜色 | Progress Bar Custom Live Color | プログレスバーカスタムライブ色 | 진행 바 사용자 정의 라이브 색상
+- ✅ 进度条自定义直播颜色
+- ✅ Progress Bar Custom Live Color
+- ✅ プログレスバーカスタムライブ色
+- ✅ 진행 바 사용자 정의 라이브 색상
+
+### v121.9 音量单声道下混开关 | Volume Mono Downmix Toggle | 音量モノダウンミックス切替 | 볼륨 모노 다운믹스 전환
+- ✅ 音量单声道下混开关
+- ✅ Volume Mono Downmix Toggle
+- ✅ 音量モノダウンミックス切替
+- ✅ 볼륨 모노 다운믹스 전환
+
+### v121.10 历史记录搜索范围121 | History Search Scope121 | 履歴検索範囲121 | 기록 검색 범위121
+- ✅ 历史记录搜索范围121
+- ✅ History Search Scope121
+- ✅ 履歴検索範囲121
+- ✅ 기록 검색 범위121
+
+### v121.11 播放速度预设自定义 | Playback Speed Presets Custom | 再生速度プリセットカスタム | 재생 속도 프리셋 사용자 정의
+- ✅ 播放速度预设自定义
+- ✅ Playback Speed Presets Custom
+- ✅ 再生速度プリセットカスタム
+- ✅ 재생 속도 프리셋 사용자 정의
+
+### v121.12 截图自动分享QQ | Screenshot Auto Share QQ | スクリーンショット自動QQ共有 | 스크린샷 자동 QQ 공유
+- ✅ 截图自动分享QQ
+- ✅ Screenshot Auto Share QQ
+- ✅ スクリーンショット自動QQ共有
+- ✅ 스크린샷 자동 QQ 공유
+
+### v121.13 视频画中画滑动关闭 | Video PIP Swipe Dismiss | ビデオPIPスワイプ閉じる | 비디오 PIP 스와이프 닫기
+- ✅ 视频画中画滑动关闭
+- ✅ Video PIP Swipe Dismiss
+- ✅ ビデオPIPスワイプ閉じる
+- ✅ 비디오 PIP 스와이프 닫기
+
+### v121.14 弹幕字体背景填充起始颜色 | Danmaku Font BG Fill Start Color | コメントフォントBGフィル開始色 | 댓글 글꼴 배경 채우기 시작 색상
+- ✅ 弹幕字体背景填充起始颜色
+- ✅ Danmaku Font BG Fill Start Color
+- ✅ コメントフォントBGフィル開始色
+- ✅ 댓글 글꼴 배경 채우기 시작 색상
+
+### v121.15 字幕动画淡入121 | Subtitle Animation Fade In121 | 字幕アニメーションフェードイン121 | 자막 애니메이션 페이드인121
+- ✅ 字幕动画淡入121
+- ✅ Subtitle Animation Fade In121
+- ✅ 字幕アニメーションフェードイン121
+- ✅ 자막 애니메이션 페이드인121
+
+### v122.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v122.1-v122.15 功能列表
+- ✅ Audio Fade In Duration122, Danmaku Font BG Fill End Color, Subtitle Animation Fade Out122, Gesture Tap Ctrl Action, Cast Video Flip Vertical, Playlist Auto Resume Last Position, Cache Smart Pinning Max Size, Progress Bar Custom Live Width, Volume Mono Downmix Balance, History Search Scope122, Playback Speed Presets List, Screenshot Auto Share WeChat, Video PIP Always On Top, Danmaku Font BG Fill Radius, Subtitle Animation Fade Out121
+
+### v122.1 音频淡入时间122 | Audio Fade In Duration122 | オーディオフェードイン時間122 | 오디오 페이드인 시간122
+- ✅ 音频淡入时间122
+- ✅ Audio Fade In Duration122
+- ✅ オーディオフェードイン時間122
+- ✅ 오디오 페이드인 시간122
+
+### v122.2 弹幕字体背景填充结束颜色 | Danmaku Font BG Fill End Color | コメントフォントBGフィル終了色 | 댓글 글꼴 배경 채우기 종료 색상
+- ✅ 弹幕字体背景填充结束颜色
+- ✅ Danmaku Font BG Fill End Color
+- ✅ コメントフォントBGフィル終了色
+- ✅ 댓글 글꼴 배경 채우기 종료 색상
+
+### v122.3 字幕动画淡出122 | Subtitle Animation Fade Out122 | 字幕アニメーションフェードアウト122 | 자막 애니메이션 페이드아웃122
+- ✅ 字幕动画淡出122
+- ✅ Subtitle Animation Fade Out122
+- ✅ 字幕アニメーションフェードアウト122
+- ✅ 자막 애니메이션 페이드아웃122
+
+### v122.4 手势点击Ctrl动作 | Gesture Tap Ctrl Action | ジェスチャータップCtrlアクション | 제스처 탭 Ctrl 동작
+- ✅ 手势点击Ctrl动作
+- ✅ Gesture Tap Ctrl Action
+- ✅ ジェスチャータップCtrlアクション
+- ✅ 제스처 탭 Ctrl 동작
+
+### v122.5 投射视频垂直翻转 | Cast Video Flip Vertical | キャストビデオ垂直反転 | 캐스트 비디오 수직 뒤집기
+- ✅ 投射视频垂直翻转
+- ✅ Cast Video Flip Vertical
+- ✅ キャストビデオ垂直反転
+- ✅ 캐스트 비디오 수직 뒤집기
+
+### v122.6 播放列表自动恢复上次位置 | Playlist Auto Resume Last Position | プレイリスト自動前回位置再開 | 재생 목록 자동 이전 위치 재개
+- ✅ 播放列表自动恢复上次位置
+- ✅ Playlist Auto Resume Last Position
+- ✅ プレイリスト自動前回位置再開
+- ✅ 재생 목록 자동 이전 위치 재개
+
+### v122.7 缓存智能固定最大大小 | Cache Smart Pinning Max Size | キャッシュスマートピンニング最大サイズ | 캐시 스마트 고정 최대 크기
+- ✅ 缓存智能固定最大大小
+- ✅ Cache Smart Pinning Max Size
+- ✅ キャッシュスマートピンニング最大サイズ
+- ✅ 캐시 스마트 고정 최대 크기
+
+### v122.8 进度条自定义直播宽度 | Progress Bar Custom Live Width | プログレスバーカスタムライブ幅 | 진행 바 사용자 정의 라이브 너비
+- ✅ 进度条自定义直播宽度
+- ✅ Progress Bar Custom Live Width
+- ✅ プログレスバーカスタムライブ幅
+- ✅ 진행 바 사용자 정의 라이브 너비
+
+### v122.9 音量单声道下混平衡 | Volume Mono Downmix Balance | 音量モノダウンミックスバランス | 볼륨 모노 다운믹스 밸런스
+- ✅ 音量单声道下混平衡
+- ✅ Volume Mono Downmix Balance
+- ✅ 音量モノダウンミックスバランス
+- ✅ 볼륨 모노 다운믹스 밸런스
+
+### v122.10 历史记录搜索范围122 | History Search Scope122 | 履歴検索範囲122 | 기록 검색 범위122
+- ✅ 历史记录搜索范围122
+- ✅ History Search Scope122
+- ✅ 履歴検索範囲122
+- ✅ 기록 검색 범위122
+
+### v122.11 播放速度预设列表 | Playback Speed Presets List | 再生速度プリセットリスト | 재생 속도 프리셋 목록
+- ✅ 播放速度预设列表
+- ✅ Playback Speed Presets List
+- ✅ 再生速度プリセットリスト
+- ✅ 재생 속도 프리셋 목록
+
+### v122.12 截图自动分享微信 | Screenshot Auto Share WeChat | スクリーンショット自動WeChat共有 | 스크린샷 자동 WeChat 공유
+- ✅ 截图自动分享微信
+- ✅ Screenshot Auto Share WeChat
+- ✅ スクリーンショット自動WeChat共有
+- ✅ 스크린샷 자동 WeChat 공유
+
+### v122.13 视频画中画总在最前 | Video PIP Always On Top | ビデオPIP常に最前面 | 비디오 PIP 항상 위
+- ✅ 视频画中画总在最前
+- ✅ Video PIP Always On Top
+- ✅ ビデオPIP常に最前面
+- ✅ 비디오 PIP 항상 위
+
+### v122.14 弹幕字体背景填充半径 | Danmaku Font BG Fill Radius | コメントフォントBGフィル半径 | 댓글 글꼴 배경 채우기 반경
+- ✅ 弹幕字体背景填充半径
+- ✅ Danmaku Font BG Fill Radius
+- ✅ コメントフォントBGフィル半径
+- ✅ 댓글 글꼴 배경 채우기 반경
+
+### v122.15 字幕动画淡出121 | Subtitle Animation Fade Out121 | 字幕アニメーションフェードアウト121 | 자막 애니메이션 페이드아웃121
+- ✅ 字幕动画淡出121
+- ✅ Subtitle Animation Fade Out121
+- ✅ 字幕アニメーションフェードアウト121
+- ✅ 자막 애니메이션 페이드아웃121
+
+### v123.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v123.1-v123.15 功能列表
+- ✅ Audio Fade Out Duration123, Danmaku Font BG Fill Opacity120, Subtitle Animation Fade In123, Gesture Tap Alt Action, Cast Video Rotate Custom, Playlist Auto Sort By Length, Cache Smart Pinning Expire, Progress Bar Custom Live Height, Volume Headroom Custom, History Auto Clean123, Playback Speed Presets Custom123, Screenshot Auto Share Douyin, Video PIP Resize Handle, Danmaku Font BG Fill Border Toggle, Subtitle Animation Fade Out123
+
+### v123.1 音频淡出时间123 | Audio Fade Out Duration123 | オーディオフェードアウト時間123 | 오디오 페이드아웃 시간123
+- ✅ 音频淡出时间123
+- ✅ Audio Fade Out Duration123
+- ✅ オーディオフェードアウト時間123
+- ✅ 오디오 페이드아웃 시간123
+
+### v123.2 弹幕字体背景填充透明度120 | Danmaku Font BG Fill Opacity120 | コメントフォントBGフィル透明度120 | 댓글 글꼴 배경 채우기 불투명도120
+- ✅ 弹幕字体背景填充透明度120
+- ✅ Danmaku Font BG Fill Opacity120
+- ✅ コメントフォントBGフィル透明度120
+- ✅ 댓글 글꼴 배경 채우기 불투명도120
+
+### v123.3 字幕动画淡入123 | Subtitle Animation Fade In123 | 字幕アニメーションフェードイン123 | 자막 애니메이션 페이드인123
+- ✅ 字幕动画淡入123
+- ✅ Subtitle Animation Fade In123
+- ✅ 字幕アニメーションフェードイン123
+- ✅ 자막 애니메이션 페이드인123
+
+### v123.4 手势点击Alt动作 | Gesture Tap Alt Action | ジェスチャータップAltアクション | 제스처 탭 Alt 동작
+- ✅ 手势点击Alt动作
+- ✅ Gesture Tap Alt Action
+- ✅ ジェスチャータップAltアクション
+- ✅ 제스처 탭 Alt 동작
+
+### v123.5 投射视频旋转自定义 | Cast Video Rotate Custom | キャストビデオ回転カスタム | 캐스트 비디오 회전 사용자 정의
+- ✅ 投射视频旋转自定义
+- ✅ Cast Video Rotate Custom
+- ✅ キャストビデオ回転カスタム
+- ✅ 캐스트 비디오 회전 사용자 정의
+
+### v123.6 播放列表按长度排序 | Playlist Auto Sort By Length | プレイリスト長さ順ソート | 재생 목록 길이순 정렬
+- ✅ 播放列表按长度排序
+- ✅ Playlist Auto Sort By Length
+- ✅ プレイリスト長さ順ソート
+- ✅ 재생 목록 길이순 정렬
+
+### v123.7 缓存智能固定过期 | Cache Smart Pinning Expire | キャッシュスマートピンニング期限切れ | 캐시 스마트 고정 만료
+- ✅ 缓存智能固定过期
+- ✅ Cache Smart Pinning Expire
+- ✅ キャッシュスマートピンニング期限切れ
+- ✅ 캐시 스마트 고정 만료
+
+### v123.8 进度条自定义直播高度 | Progress Bar Custom Live Height | プログレスバーカスタムライブ高さ | 진행 바 사용자 정의 라이브 높이
+- ✅ 进度条自定义直播高度
+- ✅ Progress Bar Custom Live Height
+- ✅ プログレスバーカスタムライブ高さ
+- ✅ 진행 바 사용자 정의 라이브 높이
+
+### v123.9 音量净空自定义 | Volume Headroom Custom | 音量ヘッドルームカスタム | 볼륨 헤드룸 사용자 정의
+- ✅ 音量净空自定义
+- ✅ Volume Headroom Custom
+- ✅ 音量ヘッドルームカスタム
+- ✅ 볼륨 헤드룸 사용자 정의
+
+### v123.10 历史记录自动清理123 | History Auto Clean123 | 履歴自動クリーンアップ123 | 기록 자동 정리123
+- ✅ 历史记录自动清理123
+- ✅ History Auto Clean123
+- ✅ 履歴自動クリーンアップ123
+- ✅ 기록 자동 정리123
+
+### v123.11 播放速度预设自定义123 | Playback Speed Presets Custom123 | 再生速度プリセットカスタム123 | 재생 속도 프리셋 사용자 정의123
+- ✅ 播放速度预设自定义123
+- ✅ Playback Speed Presets Custom123
+- ✅ 再生速度プリセットカスタム123
+- ✅ 재생 속도 프리셋 사용자 정의123
+
+### v123.12 截图自动分享抖音 | Screenshot Auto Share Douyin | スクリーンショット自動Douyin共有 | 스크린샷 자동 Douyin 공유
+- ✅ 截图自动分享抖音
+- ✅ Screenshot Auto Share Douyin
+- ✅ スクリーンショット自動Douyin共有
+- ✅ 스크린샷 자동 Douyin 공유
+
+### v123.13 视频画中画调整大小手柄 | Video PIP Resize Handle | ビデオPIPリサイズハンドル | 비디오 PIP 크기 조절 핸들
+- ✅ 视频画中画调整大小手柄
+- ✅ Video PIP Resize Handle
+- ✅ ビデオPIPリサイズハンドル
+- ✅ 비디오 PIP 크기 조절 핸들
+
+### v123.14 弹幕字体背景填充边框开关 | Danmaku Font BG Fill Border Toggle | コメントフォントBGフィルボーダー切替 | 댓글 글꼴 배경 채우기 테두리 전환
+- ✅ 弹幕字体背景填充边框开关
+- ✅ Danmaku Font BG Fill Border Toggle
+- ✅ コメントフォントBGフィルボーダー切替
+- ✅ 댓글 글꼴 배경 채우기 테두리 전환
+
+### v123.15 字幕动画淡出123 | Subtitle Animation Fade Out123 | 字幕アニメーションフェードアウト123 | 자막 애니메이션 페이드아웃123
+- ✅ 字幕动画淡出123
+- ✅ Subtitle Animation Fade Out123
+- ✅ 字幕アニメーションフェードアウト123
+- ✅ 자막 애니메이션 페이드아웃123
+
+### v124.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v124.1-v124.15 功能列表
+- ✅ Audio Reverb Preset Custom, Danmaku Font BG Fill Border Width, Subtitle Animation Scale124, Gesture Tap Shift Ctrl Action, Cast Video Crop Custom, Playlist Auto Sort By Title, Cache Smart Pinning Priority, Progress Bar Custom Thumb Color124, Volume Replay Gain Album, History Auto Clean124, Playback Speed Presets Toggle, Screenshot Auto Share TikTok, Video PIP Keyboard Control, Danmaku Font BG Fill Border Color, Subtitle Animation Scale125
+
+### v124.1 音频混响预设自定义 | Audio Reverb Preset Custom | オーディオリバーブプリセットカスタム | 오디오 리버브 프리셋 사용자 정의
+- ✅ 音频混响预设自定义
+- ✅ Audio Reverb Preset Custom
+- ✅ オーディオリバーブプリセットカスタム
+- ✅ 오디오 리버브 프리셋 사용자 정의
+
+### v124.2 弹幕字体背景填充边框宽度 | Danmaku Font BG Fill Border Width | コメントフォントBGフィルボーダー幅 | 댓글 글꼴 배경 채우기 테두리 너비
+- ✅ 弹幕字体背景填充边框宽度
+- ✅ Danmaku Font BG Fill Border Width
+- ✅ コメントフォントBGフィルボーダー幅
+- ✅ 댓글 글꼴 배경 채우기 테두리 너비
+
+### v124.3 字幕动画缩放124 | Subtitle Animation Scale124 | 字幕アニメーションスケール124 | 자막 애니메이션 스케일124
+- ✅ 字幕动画缩放124
+- ✅ Subtitle Animation Scale124
+- ✅ 字幕アニメーションスケール124
+- ✅ 자막 애니메이션 스케일124
+
+### v124.4 手势点击Shift Ctrl动作 | Gesture Tap Shift Ctrl Action | ジェスチャータップシフトCtrlアクション | 제스처 탭 시프트 Ctrl 동작
+- ✅ 手势点击Shift Ctrl动作
+- ✅ Gesture Tap Shift Ctrl Action
+- ✅ ジェスチャータップシフトCtrlアクション
+- ✅ 제스처 탭 시프트 Ctrl 동작
+
+### v124.5 投射视频裁剪自定义 | Cast Video Crop Custom | キャストビデオクロップカスタム | 캐스트 비디오 크롭 사용자 정의
+- ✅ 投射视频裁剪自定义
+- ✅ Cast Video Crop Custom
+- ✅ キャストビデオクロップカスタム
+- ✅ 캐스트 비디오 크롭 사용자 정의
+
+### v124.6 播放列表按标题排序 | Playlist Auto Sort By Title | プレイリストタイトル順ソート | 재생 목록 제목순 정렬
+- ✅ 播放列表按标题排序
+- ✅ Playlist Auto Sort By Title
+- ✅ プレイリストタイトル順ソート
+- ✅ 재생 목록 제목순 정렬
+
+### v124.7 缓存智能固定优先级 | Cache Smart Pinning Priority | キャッシュスマートピンニング優先度 | 캐시 스마트 고정 우선순위
+- ✅ 缓存智能固定优先级
+- ✅ Cache Smart Pinning Priority
+- ✅ キャッシュスマートピンニング優先度
+- ✅ 캐시 스마트 고정 우선순위
+
+### v124.8 进度条自定义滑块颜色124 | Progress Bar Custom Thumb Color124 | プログレスバーカスタムサム色124 | 진행 바 사용자 정의 썸 색상124
+- ✅ 进度条自定义滑块颜色124
+- ✅ Progress Bar Custom Thumb Color124
+- ✅ プログレスバーカスタムサム色124
+- ✅ 진행 바 사용자 정의 썸 색상124
+
+### v124.9 音量回放增益专辑 | Volume Replay Gain Album | 音量リプレイゲインアルバム | 볼륨 리플레이 게인 앨범
+- ✅ 音量回放增益专辑
+- ✅ Volume Replay Gain Album
+- ✅ 音量リプレイゲインアルバム
+- ✅ 볼륨 리플레이 게인 앨범
+
+### v124.10 历史记录自动清理124 | History Auto Clean124 | 履歴自動クリーンアップ124 | 기록 자동 정리124
+- ✅ 历史记录自动清理124
+- ✅ History Auto Clean124
+- ✅ 履歴自動クリーンアップ124
+- ✅ 기록 자동 정리124
+
+### v124.11 播放速度预设开关 | Playback Speed Presets Toggle | 再生速度プリセット切替 | 재생 속도 프리셋 전환
+- ✅ 播放速度预设开关
+- ✅ Playback Speed Presets Toggle
+- ✅ 再生速度プリセット切替
+- ✅ 재생 속도 프리셋 전환
+
+### v124.12 截图自动分享TikTok | Screenshot Auto Share TikTok | スクリーンショット自動TikTok共有 | 스크린샷 자동 TikTok 공유
+- ✅ 截图自动分享TikTok
+- ✅ Screenshot Auto Share TikTok
+- ✅ スクリーンショット自動TikTok共有
+- ✅ 스크린샷 자동 TikTok 공유
+
+### v124.13 视频画中画键盘控制 | Video PIP Keyboard Control | ビデオPIPキーボード制御 | 비디오 PIP 키보드 제어
+- ✅ 视频画中画键盘控制
+- ✅ Video PIP Keyboard Control
+- ✅ ビデオPIPキーボード制御
+- ✅ 비디오 PIP 키보드 제어
+
+### v124.14 弹幕字体背景填充边框颜色 | Danmaku Font BG Fill Border Color | コメントフォントBGフィルボーダー色 | 댓글 글꼴 배경 채우기 테두리 색상
+- ✅ 弹幕字体背景填充边框颜色
+- ✅ Danmaku Font BG Fill Border Color
+- ✅ コメントフォントBGフィルボーダー色
+- ✅ 댓글 글꼴 배경 채우기 테두리 색상
+
+### v124.15 字幕动画缩放125 | Subtitle Animation Scale125 | 字幕アニメーションスケール125 | 자막 애니메이션 스케일125
+- ✅ 字幕动画缩放125
+- ✅ Subtitle Animation Scale125
+- ✅ 字幕アニメーションスケール125
+- ✅ 자막 애니메이션 스케일125
+
+### v125.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v125.1-v125.15 功能列表
+- ✅ Audio Reverb Room Size, Danmaku Font BG Fill Border Radius, Subtitle Animation Translate125, Gesture Tap Shift Alt Action, Cast Video Scale Custom, Playlist Auto Sort By Upload Date, Cache Smart Pinning Refresh, Progress Bar Custom Thumb Shape125, Volume Replay Gain Track, History Auto Clean125, Playback Speed Presets Range, Screenshot Auto Share Snapchat, Video PIP Auto Hide Delay, Danmaku Font BG Fill Border Opacity, Subtitle Animation Rotate125
+
+### v125.1 音频混响房间大小 | Audio Reverb Room Size | オーディオリバーブルームサイズ | 오디오 리버브 룸 크기
+- ✅ 音频混响房间大小
+- ✅ Audio Reverb Room Size
+- ✅ オーディオリバーブルームサイズ
+- ✅ 오디오 리버브 룸 크기
+
+### v125.2 弹幕字体背景填充边框圆角 | Danmaku Font BG Fill Border Radius | コメントフォントBGフィルボーダー角丸 | 댓글 글꼴 배경 채우기 테두리 반경
+- ✅ 弹幕字体背景填充边框圆角
+- ✅ Danmaku Font BG Fill Border Radius
+- ✅ コメントフォントBGフィルボーダー角丸
+- ✅ 댓글 글꼴 배경 채우기 테두리 반경
+
+### v125.3 字幕动画平移125 | Subtitle Animation Translate125 | 字幕アニメーショントランスレート125 | 자막 애니메이션 이동125
+- ✅ 字幕动画平移125
+- ✅ Subtitle Animation Translate125
+- ✅ 字幕アニメーショントランスレート125
+- ✅ 자막 애니메이션 이동125
+
+### v125.4 手势点击Shift Alt动作 | Gesture Tap Shift Alt Action | ジェスチャータップシフトAltアクション | 제스처 탭 시프트 Alt 동작
+- ✅ 手势点击Shift Alt动作
+- ✅ Gesture Tap Shift Alt Action
+- ✅ ジェスチャータップシフトAltアクション
+- ✅ 제스처 탭 시프트 Alt 동작
+
+### v125.5 投射视频缩放自定义 | Cast Video Scale Custom | キャストビデオスケールカスタム | 캐스트 비디오 스케일 사용자 정의
+- ✅ 投射视频缩放自定义
+- ✅ Cast Video Scale Custom
+- ✅ キャストビデオスケールカスタム
+- ✅ 캐스트 비디오 스케일 사용자 정의
+
+### v125.6 播放列表按上传日期排序 | Playlist Auto Sort By Upload Date | プレイリストアップロード日順ソート | 재생 목록 업로드 날짜순 정렬
+- ✅ 播放列表按上传日期排序
+- ✅ Playlist Auto Sort By Upload Date
+- ✅ プレイリストアップロード日順ソート
+- ✅ 재생 목록 업로드 날짜순 정렬
+
+### v125.7 缓存智能固定刷新 | Cache Smart Pinning Refresh | キャッシュスマートピンニング更新 | 캐시 스마트 고정 새로고침
+- ✅ 缓存智能固定刷新
+- ✅ Cache Smart Pinning Refresh
+- ✅ キャッシュスマートピンニング更新
+- ✅ 캐시 스마트 고정 새로고침
+
+### v125.8 进度条自定义滑块形状125 | Progress Bar Custom Thumb Shape125 | プログレスバーカスタムサム形状125 | 진행 바 사용자 정의 썸 모양125
+- ✅ 进度条自定义滑块形状125
+- ✅ Progress Bar Custom Thumb Shape125
+- ✅ プログレスバーカスタムサム形状125
+- ✅ 진행 바 사용자 정의 썸 모양125
+
+### v125.9 音量回放增益单曲 | Volume Replay Gain Track | 音量リプレイゲイントラック | 볼륨 리플레이 게인 트랙
+- ✅ 音量回放增益单曲
+- ✅ Volume Replay Gain Track
+- ✅ 音量リプレイゲイントラック
+- ✅ 볼륨 리플레이 게인 트랙
+
+### v125.10 历史记录自动清理125 | History Auto Clean125 | 履歴自動クリーンアップ125 | 기록 자동 정리125
+- ✅ 历史记录自动清理125
+- ✅ History Auto Clean125
+- ✅ 履歴自動クリーンアップ125
+- ✅ 기록 자동 정리125
+
+### v125.11 播放速度预设范围 | Playback Speed Presets Range | 再生速度プリセット範囲 | 재생 속도 프리셋 범위
+- ✅ 播放速度预设范围
+- ✅ Playback Speed Presets Range
+- ✅ 再生速度プリセット範囲
+- ✅ 재생 속도 프리셋 범위
+
+### v125.12 截图自动分享Snapchat | Screenshot Auto Share Snapchat | スクリーンショット自動Snapchat共有 | 스크린샷 자동 Snapchat 공유
+- ✅ 截图自动分享Snapchat
+- ✅ Screenshot Auto Share Snapchat
+- ✅ スクリーンショット自動Snapchat共有
+- ✅ 스크린샷 자동 Snapchat 공유
+
+### v125.13 视频画中画自动隐藏延迟 | Video PIP Auto Hide Delay | ビデオPIP自動非表示遅延 | 비디오 PIP 자동 숨기기 지연
+- ✅ 视频画中画自动隐藏延迟
+- ✅ Video PIP Auto Hide Delay
+- ✅ ビデオPIP自動非表示遅延
+- ✅ 비디오 PIP 자동 숨기기 지연
+
+### v125.14 弹幕字体背景填充边框透明度 | Danmaku Font BG Fill Border Opacity | コメントフォントBGフィルボーダー透明度 | 댓글 글꼴 배경 채우기 테두리 불투명도
+- ✅ 弹幕字体背景填充边框透明度
+- ✅ Danmaku Font BG Fill Border Opacity
+- ✅ コメントフォントBGフィルボーダー透明度
+- ✅ 댓글 글꼴 배경 채우기 테두리 불투명도
+
+### v125.15 字幕动画旋转125 | Subtitle Animation Rotate125 | 字幕アニメーションローテート125 | 자막 애니메이션 회전125
+- ✅ 字幕动画旋转125
+- ✅ Subtitle Animation Rotate125
+- ✅ 字幕アニメーションローテート125
+- ✅ 자막 애니메이션 회전125
+
+### v126.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v126.1-v126.15 功能列表
+- ✅ Audio Reverb Damping, Danmaku Font BG Fill Border Dash Toggle, Subtitle Animation Rotate126, Gesture Tap Ctrl Alt Action, Cast Video Mirror Flip, Playlist Auto Sort By Random, Cache Smart Pinning On Low Space, Progress Bar Custom Thumb Glow126, Volume Replay Gain Preamp, History Auto Clean126, Playback Speed Presets Label, Screenshot Auto Share Reddit, Video PIP Follow Scroll, Danmaku Font BG Fill Border Dash Width, Subtitle Animation Translate126
+
+### v126.1 音频混响阻尼 | Audio Reverb Damping | オーディオリバーブダンピング | 오디오 리버브 댐핑
+- ✅ 音频混响阻尼
+- ✅ Audio Reverb Damping
+- ✅ オーディオリバーブダンピング
+- ✅ 오디오 리버브 댐핑
+
+### v126.2 弹幕字体背景填充边框虚线开关 | Danmaku Font BG Fill Border Dash Toggle | コメントフォントBGフィルボーダーダッシュ切替 | 댓글 글꼴 배경 채우기 테두리 점선 전환
+- ✅ 弹幕字体背景填充边框虚线开关
+- ✅ Danmaku Font BG Fill Border Dash Toggle
+- ✅ コメントフォントBGフィルボーダーダッシュ切替
+- ✅ 댓글 글꼴 배경 채우기 테두리 점선 전환
+
+### v126.3 字幕动画旋转126 | Subtitle Animation Rotate126 | 字幕アニメーションローテート126 | 자막 애니메이션 회전126
+- ✅ 字幕动画旋转126
+- ✅ Subtitle Animation Rotate126
+- ✅ 字幕アニメーションローテート126
+- ✅ 자막 애니메이션 회전126
+
+### v126.4 手势点击Ctrl Alt动作 | Gesture Tap Ctrl Alt Action | ジェスチャータップCtrl Altアクション | 제스처 탭 Ctrl Alt 동작
+- ✅ 手势点击Ctrl Alt动作
+- ✅ Gesture Tap Ctrl Alt Action
+- ✅ ジェスチャータップCtrl Altアクション
+- ✅ 제스처 탭 Ctrl Alt 동작
+
+### v126.5 投射视频镜像翻转 | Cast Video Mirror Flip | キャストビデオミラーフリップ | 캐스트 비디오 미러 플립
+- ✅ 投射视频镜像翻转
+- ✅ Cast Video Mirror Flip
+- ✅ キャストビデオミラーフリップ
+- ✅ 캐스트 비디오 미러 플립
+
+### v126.6 播放列表随机排序 | Playlist Auto Sort By Random | プレイリストランダムソート | 재생 목록 무작위 정렬
+- ✅ 播放列表随机排序
+- ✅ Playlist Auto Sort By Random
+- ✅ プレイリストランダムソート
+- ✅ 재생 목록 무작위 정렬
+
+### v126.7 缓存低空间时智能固定 | Cache Smart Pinning On Low Space | キャッシュ低容量時スマートピンニング | 캐시 저용량 시 스마트 고정
+- ✅ 缓存低空间时智能固定
+- ✅ Cache Smart Pinning On Low Space
+- ✅ キャッシュ低容量時スマートピンニング
+- ✅ 캐시 저용량 시 스마트 고정
+
+### v126.8 进度条自定义滑块发光126 | Progress Bar Custom Thumb Glow126 | プログレスバーカスタムサムグロウ126 | 진행 바 사용자 정의 썸 글로우126
+- ✅ 进度条自定义滑块发光126
+- ✅ Progress Bar Custom Thumb Glow126
+- ✅ プログレスバーカスタムサムグロウ126
+- ✅ 진행 바 사용자 정의 썸 글로우126
+
+### v126.9 音量回放增益前置放大 | Volume Replay Gain Preamp | 音量リプレイゲインプリアンプ | 볼륨 리플레이 게인 프리앰프
+- ✅ 音量回放增益前置放大
+- ✅ Volume Replay Gain Preamp
+- ✅ 音量リプレイゲインプリアンプ
+- ✅ 볼륨 리플레이 게인 프리앰프
+
+### v126.10 历史记录自动清理126 | History Auto Clean126 | 履歴自動クリーンアップ126 | 기록 자동 정리126
+- ✅ 历史记录自动清理126
+- ✅ History Auto Clean126
+- ✅ 履歴自動クリーンアップ126
+- ✅ 기록 자동 정리126
+
+### v126.11 播放速度预设标签 | Playback Speed Presets Label | 再生速度プリセットラベル | 재생 속도 프리셋 라벨
+- ✅ 播放速度预设标签
+- ✅ Playback Speed Presets Label
+- ✅ 再生速度プリセットラベル
+- ✅ 재생 속도 프리셋 라벨
+
+### v126.12 截图自动分享Reddit | Screenshot Auto Share Reddit | スクリーンショット自動Reddit共有 | 스크린샷 자동 Reddit 공유
+- ✅ 截图自动分享Reddit
+- ✅ Screenshot Auto Share Reddit
+- ✅ スクリーンショット自動Reddit共有
+- ✅ 스크린샷 자동 Reddit 공유
+
+### v126.13 视频画中画跟随滚动 | Video PIP Follow Scroll | ビデオPIPスクロール追従 | 비디오 PIP 스크롤 팔로우
+- ✅ 视频画中画跟随滚动
+- ✅ Video PIP Follow Scroll
+- ✅ ビデオPIPスクロール追従
+- ✅ 비디오 PIP 스크롤 팔로우
+
+### v126.14 弹幕字体背景填充边框虚线宽度 | Danmaku Font BG Fill Border Dash Width | コメントフォントBGフィルボーダーダッシュ幅 | 댓글 글꼴 배경 채우기 테두리 점선 너비
+- ✅ 弹幕字体背景填充边框虚线宽度
+- ✅ Danmaku Font BG Fill Border Dash Width
+- ✅ コメントフォントBGフィルボーダーダッシュ幅
+- ✅ 댓글 글꼴 배경 채우기 테두리 점선 너비
+
+### v126.15 字幕动画平移126 | Subtitle Animation Translate126 | 字幕アニメーショントランスレート126 | 자막 애니메이션 이동126
+- ✅ 字幕动画平移126
+- ✅ Subtitle Animation Translate126
+- ✅ 字幕アニメーショントランスレート126
+- ✅ 자막 애니메이션 이동126
+
+### v127.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v127.1-v127.15 功能列表
+- ✅ Audio Reverb Wet Dry Mix, Danmaku Font BG Fill Border Dash Gap, Subtitle Animation Blur127, Gesture Tap Multi Finger Action, Cast Video Zoom Custom, Playlist Auto Group By Similarity, Cache Smart Pinning Alert, Progress Bar Custom Thumb Shadow127, Volume Replay Gain Clip Protect, History Auto Clean127, Playback Speed Presets Adaptive, Screenshot Auto Share VK, Video PIP Snap To Edge, Danmaku Font BG Fill Border Type, Subtitle Animation Blur128
+
+### v127.1 音频混响干湿混合 | Audio Reverb Wet Dry Mix | オーディオリバーブウェットドライミックス | 오디오 리버브 웨트 드라이 믹스
+- ✅ 音频混响干湿混合
+- ✅ Audio Reverb Wet Dry Mix
+- ✅ オーディオリバーブウェットドライミックス
+- ✅ 오디오 리버브 웨트 드라이 믹스
+
+### v127.2 弹幕字体背景填充边框虚线间距 | Danmaku Font BG Fill Border Dash Gap | コメントフォントBGフィルボーダーダッシュギャップ | 댓글 글꼴 배경 채우기 테두리 점선 간격
+- ✅ 弹幕字体背景填充边框虚线间距
+- ✅ Danmaku Font BG Fill Border Dash Gap
+- ✅ コメントフォントBGフィルボーダーダッシュギャップ
+- ✅ 댓글 글꼴 배경 채우기 테두리 점선 간격
+
+### v127.3 字幕动画模糊127 | Subtitle Animation Blur127 | 字幕アニメーションブラー127 | 자막 애니메이션 블러127
+- ✅ 字幕动画模糊127
+- ✅ Subtitle Animation Blur127
+- ✅ 字幕アニメーションブラー127
+- ✅ 자막 애니메이션 블러127
+
+### v127.4 手势点击多指动作 | Gesture Tap Multi Finger Action | ジェスチャータップマルチフィンガーアクション | 제스처 탭 다중 손가락 동작
+- ✅ 手势点击多指动作
+- ✅ Gesture Tap Multi Finger Action
+- ✅ ジェスチャータップマルチフィンガーアクション
+- ✅ 제스처 탭 다중 손가락 동작
+
+### v127.5 投射视频缩放自定义 | Cast Video Zoom Custom | キャストビデオズームカスタム | 캐스트 비디오 줌 사용자 정의
+- ✅ 投射视频缩放自定义
+- ✅ Cast Video Zoom Custom
+- ✅ キャストビデオズームカスタム
+- ✅ 캐스트 비디오 줌 사용자 정의
+
+### v127.6 播放列表按相似度分组 | Playlist Auto Group By Similarity | プレイリスト類似性別グループ化 | 재생 목록 유사도별 그룹화
+- ✅ 播放列表按相似度分组
+- ✅ Playlist Auto Group By Similarity
+- ✅ プレイリスト類似性別グループ化
+- ✅ 재생 목록 유사도별 그룹화
+
+### v127.7 缓存智能固定提醒 | Cache Smart Pinning Alert | キャッシュスマートピンニングアラート | 캐시 스마트 고정 알림
+- ✅ 缓存智能固定提醒
+- ✅ Cache Smart Pinning Alert
+- ✅ キャッシュスマートピンニングアラート
+- ✅ 캐시 스마트 고정 알림
+
+### v127.8 进度条自定义滑块阴影127 | Progress Bar Custom Thumb Shadow127 | プログレスバーカスタムサムシャドウ127 | 진행 바 사용자 정의 썸 그림자127
+- ✅ 进度条自定义滑块阴影127
+- ✅ Progress Bar Custom Thumb Shadow127
+- ✅ プログレスバーカスタムサムシャドウ127
+- ✅ 진행 바 사용자 정의 썸 그림자127
+
+### v127.9 音量回放增益削波保护 | Volume Replay Gain Clip Protect | 音量リプレイゲインクリッププロテクト | 볼륨 리플레이 게인 클립 보호
+- ✅ 音量回放增益削波保护
+- ✅ Volume Replay Gain Clip Protect
+- ✅ 音量リプレイゲインクリッププロテクト
+- ✅ 볼륨 리플레이 게인 클립 보호
+
+### v127.10 历史记录自动清理127 | History Auto Clean127 | 履歴自動クリーンアップ127 | 기록 자동 정리127
+- ✅ 历史记录自动清理127
+- ✅ History Auto Clean127
+- ✅ 履歴自動クリーンアップ127
+- ✅ 기록 자동 정리127
+
+### v127.11 播放速度预设自适应 | Playback Speed Presets Adaptive | 再生速度プリセットアダプティブ | 재생 속도 프리셋 적응형
+- ✅ 播放速度预设自适应
+- ✅ Playback Speed Presets Adaptive
+- ✅ 再生速度プリセットアダプティブ
+- ✅ 재생 속도 프리셋 적응형
+
+### v127.12 截图自动分享VK | Screenshot Auto Share VK | スクリーンショット自動VK共有 | 스크린샷 자동 VK 공유
+- ✅ 截图自动分享VK
+- ✅ Screenshot Auto Share VK
+- ✅ スクリーンショット自動VK共有
+- ✅ 스크린샷 자동 VK 공유
+
+### v127.13 视频画中画吸附边缘 | Video PIP Snap To Edge | ビデオPIPエッジにスナップ | 비디오 PIP 가장자리에 스냅
+- ✅ 视频画中画吸附边缘
+- ✅ Video PIP Snap To Edge
+- ✅ ビデオPIPエッジにスナップ
+- ✅ 비디오 PIP 가장자리에 스냅
+
+### v127.14 弹幕字体背景填充边框类型 | Danmaku Font BG Fill Border Type | コメントフォントBGフィルボーダータイプ | 댓글 글꼴 배경 채우기 테두리 유형
+- ✅ 弹幕字体背景填充边框类型
+- ✅ Danmaku Font BG Fill Border Type
+- ✅ コメントフォントBGフィルボーダータイプ
+- ✅ 댓글 글꼴 배경 채우기 테두리 유형
+
+### v127.15 字幕动画模糊128 | Subtitle Animation Blur128 | 字幕アニメーションブラー128 | 자막 애니메이션 블러128
+- ✅ 字幕动画模糊128
+- ✅ Subtitle Animation Blur128
+- ✅ 字幕アニメーションブラー128
+- ✅ 자막 애니메이션 블러128
+
+### v128.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v128.1-v128.15 功能列表
+- ✅ Audio Reverb Pre Delay, Danmaku Font BG Fill Border Type127, Subtitle Animation Blur129, Gesture Tap Finger Count, Cast Video PIP Mode, Playlist Auto Group By Topic, Cache Smart Pinning On Wifi, Progress Bar Custom Thumb Border128, Volume Normalize Per Track, History Auto Clean128, Playback Speed Presets Display, Screenshot Auto Share Telegram Channel, Video PIP Minimize To Notification, Danmaku Font BG Fill Border Join, Subtitle Animation Translate128
+
+### v128.1 音频混响预延迟 | Audio Reverb Pre Delay | オーディオリバーブプリディレイ | 오디오 리버브 프리 딜레이
+- ✅ 音频混响预延迟
+- ✅ Audio Reverb Pre Delay
+- ✅ オーディオリバーブプリディレイ
+- ✅ 오디오 리버브 프리 딜레이
+
+### v128.2 弹幕字体背景填充边框类型127 | Danmaku Font BG Fill Border Type127 | コメントフォントBGフィルボーダータイプ127 | 댓글 글꼴 배경 채우기 테두리 유형127
+- ✅ 弹幕字体背景填充边框类型127
+- ✅ Danmaku Font BG Fill Border Type127
+- ✅ コメントフォントBGフィルボーダータイプ127
+- ✅ 댓글 글꼴 배경 채우기 테두리 유형127
+
+### v128.3 字幕动画模糊129 | Subtitle Animation Blur129 | 字幕アニメーションブラー129 | 자막 애니메이션 블러129
+- ✅ 字幕动画模糊129
+- ✅ Subtitle Animation Blur129
+- ✅ 字幕アニメーションブラー129
+- ✅ 자막 애니메이션 블러129
+
+### v128.4 手势点击手指数 | Gesture Tap Finger Count | ジェスチャータップ指の数 | 제스처 탭 손가락 수
+- ✅ 手势点击手指数
+- ✅ Gesture Tap Finger Count
+- ✅ ジェスチャータップ指の数
+- ✅ 제스처 탭 손가락 수
+
+### v128.5 投射视频画中画模式 | Cast Video PIP Mode | キャストビデオPIPモード | 캐스트 비디오 PIP 모드
+- ✅ 投射视频画中画模式
+- ✅ Cast Video PIP Mode
+- ✅ キャストビデオPIPモード
+- ✅ 캐스트 비디오 PIP 모드
+
+### v128.6 播放列表按话题分组 | Playlist Auto Group By Topic | プレイリストトピック別グループ化 | 재생 목록 주제별 그룹화
+- ✅ 播放列表按话题分组
+- ✅ Playlist Auto Group By Topic
+- ✅ プレイリストトピック別グループ化
+- ✅ 재생 목록 주제별 그룹화
+
+### v128.7 缓存WiFi时智能固定 | Cache Smart Pinning On Wifi | キャッシュWiFi時スマートピンニング | 캐시 WiFi 시 스마트 고정
+- ✅ 缓存WiFi时智能固定
+- ✅ Cache Smart Pinning On Wifi
+- ✅ キャッシュWiFi時スマートピンニング
+- ✅ 캐시 WiFi 시 스마트 고정
+
+### v128.8 进度条自定义滑块边框128 | Progress Bar Custom Thumb Border128 | プログレスバーカスタムサムボーダー128 | 진행 바 사용자 정의 썸 테두리128
+- ✅ 进度条自定义滑块边框128
+- ✅ Progress Bar Custom Thumb Border128
+- ✅ プログレスバーカスタムサムボーダー128
+- ✅ 진행 바 사용자 정의 썸 테두리128
+
+### v128.9 音量每首曲目标准化 | Volume Normalize Per Track | 音量トラック別正規化 | 볼륨 트랙별 정규화
+- ✅ 音量每首曲目标准化
+- ✅ Volume Normalize Per Track
+- ✅ 音量トラック別正規化
+- ✅ 볼륨 트랙별 정규화
+
+### v128.10 历史记录自动清理128 | History Auto Clean128 | 履歴自動クリーンアップ128 | 기록 자동 정리128
+- ✅ 历史记录自动清理128
+- ✅ History Auto Clean128
+- ✅ 履歴自動クリーンアップ128
+- ✅ 기록 자동 정리128
+
+### v128.11 播放速度预设显示 | Playback Speed Presets Display | 再生速度プリセット表示 | 재생 속도 프리셋 표시
+- ✅ 播放速度预设显示
+- ✅ Playback Speed Presets Display
+- ✅ 再生速度プリセット表示
+- ✅ 재생 속도 프리셋 표시
+
+### v128.12 截图自动分享Telegram频道 | Screenshot Auto Share Telegram Channel | スクリーンショット自動Telegramチャネル共有 | 스크린샷 자동 Telegram 채널 공유
+- ✅ 截图自动分享Telegram频道
+- ✅ Screenshot Auto Share Telegram Channel
+- ✅ スクリーンショット自動Telegramチャネル共有
+- ✅ 스크린샷 자동 Telegram 채널 공유
+
+### v128.13 视频画中画最小化到通知 | Video PIP Minimize To Notification | ビデオPIP通知に最小化 | 비디오 PIP 알림으로 최소화
+- ✅ 视频画中画最小化到通知
+- ✅ Video PIP Minimize To Notification
+- ✅ ビデオPIP通知に最小化
+- ✅ 비디오 PIP 알림으로 최소화
+
+### v128.14 弹幕字体背景填充边框连接 | Danmaku Font BG Fill Border Join | コメントフォントBGフィルボーダージョイン | 댓글 글꼴 배경 채우기 테두리 연결
+- ✅ 弹幕字体背景填充边框连接
+- ✅ Danmaku Font BG Fill Border Join
+- ✅ コメントフォントBGフィルボーダージョイン
+- ✅ 댓글 글꼴 배경 채우기 테두리 연결
+
+### v128.15 字幕动画平移128 | Subtitle Animation Translate128 | 字幕アニメーショントランスレート128 | 자막 애니메이션 이동128
+- ✅ 字幕动画平移128
+- ✅ Subtitle Animation Translate128
+- ✅ 字幕アニメーショントランスレート128
+- ✅ 자막 애니메이션 이동128
+
+### v129.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v129.1-v129.15 功能列表
+- ✅ Audio Chorus Toggle129, Danmaku Font BG Fill Border Join128, Subtitle Animation Translate129, Gesture Tap Zone Custom, Cast Video PIP Size, Playlist Auto Group By Mood, Cache Smart Pinning On Charging, Progress Bar Custom Thumb Border129, Volume Normalize Album, History Auto Clean129, Playback Speed Presets Notification, Screenshot Auto Share Slack, Video PIP Transition Animation, Danmaku Font BG Fill Border Miter Limit, Subtitle Animation Scale129
+
+### v129.1 音频合唱开关129 | Audio Chorus Toggle129 | オーディオコーラス切替129 | 오디오 코러스 전환129
+- ✅ 音频合唱开关129
+- ✅ Audio Chorus Toggle129
+- ✅ オーディオコーラス切替129
+- ✅ 오디오 코러스 전환129
+
+### v129.2 弹幕字体背景填充边框连接128 | Danmaku Font BG Fill Border Join128 | コメントフォントBGフィルボーダージョイン128 | 댓글 글꼴 배경 채우기 테두리 연결128
+- ✅ 弹幕字体背景填充边框连接128
+- ✅ Danmaku Font BG Fill Border Join128
+- ✅ コメントフォントBGフィルボーダージョイン128
+- ✅ 댓글 글꼴 배경 채우기 테두리 연결128
+
+### v129.3 字幕动画平移129 | Subtitle Animation Translate129 | 字幕アニメーショントランスレート129 | 자막 애니메이션 이동129
+- ✅ 字幕动画平移129
+- ✅ Subtitle Animation Translate129
+- ✅ 字幕アニメーショントランスレート129
+- ✅ 자막 애니메이션 이동129
+
+### v129.4 手势点击区域自定义 | Gesture Tap Zone Custom | ジェスチャータップゾーンカスタム | 제스처 탭 영역 사용자 정의
+- ✅ 手势点击区域自定义
+- ✅ Gesture Tap Zone Custom
+- ✅ ジェスチャータップゾーンカスタム
+- ✅ 제스처 탭 영역 사용자 정의
+
+### v129.5 投射视频画中画大小 | Cast Video PIP Size | キャストビデオPIPサイズ | 캐스트 비디오 PIP 크기
+- ✅ 投射视频画中画大小
+- ✅ Cast Video PIP Size
+- ✅ キャストビデオPIPサイズ
+- ✅ 캐스트 비디오 PIP 크기
+
+### v129.6 播放列表按心情分组 | Playlist Auto Group By Mood | プレイリスト気分別グループ化 | 재생 목록 기분별 그룹화
+- ✅ 播放列表按心情分组
+- ✅ Playlist Auto Group By Mood
+- ✅ プレイリスト気分別グループ化
+- ✅ 재생 목록 기분별 그룹화
+
+### v129.7 缓存充电时智能固定 | Cache Smart Pinning On Charging | キャッシュ充電時スマートピンニング | 캐시 충전 시 스마트 고정
+- ✅ 缓存充电时智能固定
+- ✅ Cache Smart Pinning On Charging
+- ✅ キャッシュ充電時スマートピンニング
+- ✅ 캐시 충전 시 스마트 고정
+
+### v129.8 进度条自定义滑块边框129 | Progress Bar Custom Thumb Border129 | プログレスバーカスタムサムボーダー129 | 진행 바 사용자 정의 썸 테두리129
+- ✅ 进度条自定义滑块边框129
+- ✅ Progress Bar Custom Thumb Border129
+- ✅ プログレスバーカスタムサムボーダー129
+- ✅ 진행 바 사용자 정의 썸 테두리129
+
+### v129.9 音量专辑标准化 | Volume Normalize Album | 音量アルバム正規化 | 볼륨 앨범 정규화
+- ✅ 音量专辑标准化
+- ✅ Volume Normalize Album
+- ✅ 音量アルバム正規化
+- ✅ 볼륨 앨범 정규화
+
+### v129.10 历史记录自动清理129 | History Auto Clean129 | 履歴自動クリーンアップ129 | 기록 자동 정리129
+- ✅ 历史记录自动清理129
+- ✅ History Auto Clean129
+- ✅ 履歴自動クリーンアップ129
+- ✅ 기록 자동 정리129
+
+### v129.11 播放速度预设通知 | Playback Speed Presets Notification | 再生速度プリセット通知 | 재생 속도 프리셋 알림
+- ✅ 播放速度预设通知
+- ✅ Playback Speed Presets Notification
+- ✅ 再生速度プリセット通知
+- ✅ 재생 속도 프리셋 알림
+
+### v129.12 截图自动分享Slack | Screenshot Auto Share Slack | スクリーンショット自動Slack共有 | 스크린샷 자동 Slack 공유
+- ✅ 截图自动分享Slack
+- ✅ Screenshot Auto Share Slack
+- ✅ スクリーンショット自動Slack共有
+- ✅ 스크린샷 자동 Slack 공유
+
+### v129.13 视频画中画过渡动画 | Video PIP Transition Animation | ビデオPIPトランジションアニメーション | 비디오 PIP 전환 애니메이션
+- ✅ 视频画中画过渡动画
+- ✅ Video PIP Transition Animation
+- ✅ ビデオPIPトランジションアニメーション
+- ✅ 비디오 PIP 전환 애니메이션
+
+### v129.14 弹幕字体背景填充边框斜接限制 | Danmaku Font BG Fill Border Miter Limit | コメントフォントBGフィルボーダーマイター制限 | 댓글 글꼴 배경 채우기 테두리 마이터 제한
+- ✅ 弹幕字体背景填充边框斜接限制
+- ✅ Danmaku Font BG Fill Border Miter Limit
+- ✅ コメントフォントBGフィルボーダーマイター制限
+- ✅ 댓글 글꼴 배경 채우기 테두리 마이터 제한
+
+### v129.15 字幕动画缩放129 | Subtitle Animation Scale129 | 字幕アニメーションスケール129 | 자막 애니메이션 스케일129
+- ✅ 字幕动画缩放129
+- ✅ Subtitle Animation Scale129
+- ✅ 字幕アニメーションスケール129
+- ✅ 자막 애니메이션 스케일129
+
+### v130.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v130.1-v130.15 功能列表
+- ✅ Audio Chorus Rate, Danmaku Font BG Fill Border Miter129, Subtitle Animation Scale130, Gesture Tap Zone Dead Zone, Cast Video PIP Position, Playlist Auto Group By Language, Cache Smart Pinning On Idle, Progress Bar Custom Thumb Color130, Volume Normalize Track, History Auto Clean130, Playback Speed Presets Widget, Screenshot Auto Share Teams, Video PIP Opacity On Drag, Danmaku Font BG Fill Shadow Toggle, Subtitle Animation Rotate130
+
+### v130.1 音频合唱速率 | Audio Chorus Rate | オーディオコーラスレート | 오디오 코러스 속도
+- ✅ 音频合唱速率
+- ✅ Audio Chorus Rate
+- ✅ オーディオコーラスレート
+- ✅ 오디오 코러스 속도
+
+### v130.2 弹幕字体背景填充边框斜接129 | Danmaku Font BG Fill Border Miter129 | コメントフォントBGフィルボーダーマイター129 | 댓글 글꼴 배경 채우기 테두리 마이터129
+- ✅ 弹幕字体背景填充边框斜接129
+- ✅ Danmaku Font BG Fill Border Miter129
+- ✅ コメントフォントBGフィルボーダーマイター129
+- ✅ 댓글 글꼴 배경 채우기 테두리 마이터129
+
+### v130.3 字幕动画缩放130 | Subtitle Animation Scale130 | 字幕アニメーションスケール130 | 자막 애니메이션 스케일130
+- ✅ 字幕动画缩放130
+- ✅ Subtitle Animation Scale130
+- ✅ 字幕アニメーションスケール130
+- ✅ 자막 애니메이션 스케일130
+
+### v130.4 手势点击区域死区 | Gesture Tap Zone Dead Zone | ジェスチャータップゾーンデッドゾーン | 제스처 탭 영역 데드존
+- ✅ 手势点击区域死区
+- ✅ Gesture Tap Zone Dead Zone
+- ✅ ジェスチャータップゾーンデッドゾーン
+- ✅ 제스처 탭 영역 데드존
+
+### v130.5 投射视频画中画位置 | Cast Video PIP Position | キャストビデオPIP位置 | 캐스트 비디오 PIP 위치
+- ✅ 投射视频画中画位置
+- ✅ Cast Video PIP Position
+- ✅ キャストビデオPIP位置
+- ✅ 캐스트 비디오 PIP 위치
+
+### v130.6 播放列表按语言分组 | Playlist Auto Group By Language | プレイリスト言語別グループ化 | 재생 목록 언어별 그룹화
+- ✅ 播放列表按语言分组
+- ✅ Playlist Auto Group By Language
+- ✅ プレイリスト言語別グループ化
+- ✅ 재생 목록 언어별 그룹화
+
+### v130.7 缓存空闲时智能固定 | Cache Smart Pinning On Idle | キャッシュアイドル時スマートピンニング | 캐시 유휴 시 스마트 고정
+- ✅ 缓存空闲时智能固定
+- ✅ Cache Smart Pinning On Idle
+- ✅ キャッシュアイドル時スマートピンニング
+- ✅ 캐시 유휴 시 스마트 고정
+
+### v130.8 进度条自定义滑块颜色130 | Progress Bar Custom Thumb Color130 | プログレスバーカスタムサム色130 | 진행 바 사용자 정의 썸 색상130
+- ✅ 进度条自定义滑块颜色130
+- ✅ Progress Bar Custom Thumb Color130
+- ✅ プログレスバーカスタムサム色130
+- ✅ 진행 바 사용자 정의 썸 색상130
+
+### v130.9 音量单曲标准化 | Volume Normalize Track | 音量トラック正規化 | 볼륨 트랙 정규화
+- ✅ 音量单曲标准化
+- ✅ Volume Normalize Track
+- ✅ 音量トラック正規化
+- ✅ 볼륨 트랙 정규화
+
+### v130.10 历史记录自动清理130 | History Auto Clean130 | 履歴自動クリーンアップ130 | 기록 자동 정리130
+- ✅ 历史记录自动清理130
+- ✅ History Auto Clean130
+- ✅ 履歴自動クリーンアップ130
+- ✅ 기록 자동 정리130
+
+### v130.11 播放速度预设小部件 | Playback Speed Presets Widget | 再生速度プリセットウィジェット | 재생 속도 프리셋 위젯
+- ✅ 播放速度预设小部件
+- ✅ Playback Speed Presets Widget
+- ✅ 再生速度プリセットウィジェット
+- ✅ 재생 속도 프리셋 위젯
+
+### v130.12 截图自动分享Teams | Screenshot Auto Share Teams | スクリーンショット自動Teams共有 | 스크린샷 자동 Teams 공유
+- ✅ 截图自动分享Teams
+- ✅ Screenshot Auto Share Teams
+- ✅ スクリーンショット自動Teams共有
+- ✅ 스크린샷 자동 Teams 공유
+
+### v130.13 视频画中画拖动透明度 | Video PIP Opacity On Drag | ビデオPIPドラッグ時透明度 | 비디오 PIP 드래그 시 불투명도
+- ✅ 视频画中画拖动透明度
+- ✅ Video PIP Opacity On Drag
+- ✅ ビデオPIPドラッグ時透明度
+- ✅ 비디오 PIP 드래그 시 불투명도
+
+### v130.14 弹幕字体背景填充阴影开关 | Danmaku Font BG Fill Shadow Toggle | コメントフォントBGフィルシャドウ切替 | 댓글 글꼴 배경 채우기 그림자 전환
+- ✅ 弹幕字体背景填充阴影开关
+- ✅ Danmaku Font BG Fill Shadow Toggle
+- ✅ コメントフォントBGフィルシャドウ切替
+- ✅ 댓글 글꼴 배경 채우기 그림자 전환
+
+### v130.15 字幕动画旋转130 | Subtitle Animation Rotate130 | 字幕アニメーションローテート130 | 자막 애니메이션 회전130
+- ✅ 字幕动画旋转130
+- ✅ Subtitle Animation Rotate130
+- ✅ 字幕アニメーションローテート130
+- ✅ 자막 애니메이션 회전130
+
 ### v55.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
 ### v55.1-v55.15 功能列表
 - ✅ Auto Resume, Font Monospace, Color Hue Auto, Peak Limiter, Send Queue, Cast Bandwidth Limit, Lock Screen, Filter Regex, Network Policy, Double Tap Action, Font Weight Custom, Tint Custom, Volume Compressor, Bg Padding, Cast Auto Quality
@@ -18524,4 +19465,4 @@ This project is based on open-source software. All rights belong to the original
 - **基础版本 | Base Versions**: v10.0.0 - v11.19.0 (25 versions)
 - **AI自动维护版本 | AI Maintained**: v12.1 - v45.15 (550+ versions)
 - **开发周期 | Development Cycle**: 2024 - 2026
-- **功能特性 | Features**: 1200+ new features added
+- **功能特性 | Features**: 1300+ new features added
