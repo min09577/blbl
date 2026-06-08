@@ -62415,3 +62415,1453 @@ internal fun PlayerActivity.showV380ThumbnailPreview380Toggle() {
     AppToast.show(this, "Thumbnail Preview380: ${if (!current) "ON" else "OFF"}")
 }
 
+// v381: Grid Layout Columns381
+internal fun PlayerActivity.showV381GridLayoutColumns381Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v381gridLayoutColumns381).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Grid Layout Columns381",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v381gridLayoutColumns381 = value
+        AppToast.show(this, "Grid Layout Columns381: $value")
+    }
+}
+
+// v381: Grid Layout Spacing381
+internal fun PlayerActivity.showV381GridLayoutSpacing381Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v381gridLayoutSpacing381).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Grid Layout Spacing381",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v381gridLayoutSpacing381 = value
+        AppToast.show(this, "Grid Layout Spacing381: $value")
+    }
+}
+
+// v381: Grid Layout Animation381
+internal fun PlayerActivity.showV381GridLayoutAnimation381Toggle() {
+    val current = BiliClient.prefs.v381gridLayoutAnimation381
+    BiliClient.prefs.v381gridLayoutAnimation381 = !current
+    AppToast.show(this, "Grid Layout Animation381: ${if (!current) "ON" else "OFF"}")
+}
+
+// v381: Page Size Limit381
+internal fun PlayerActivity.showV381PageSizeLimit381Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v381pageSizeLimit381).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Page Size Limit381",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v381pageSizeLimit381 = value
+        AppToast.show(this, "Page Size Limit381: $value")
+    }
+}
+
+// v381: Page Auto Load381
+internal fun PlayerActivity.showV381PageAutoLoad381Toggle() {
+    val current = BiliClient.prefs.v381pageAutoLoad381
+    BiliClient.prefs.v381pageAutoLoad381 = !current
+    AppToast.show(this, "Page Auto Load381: ${if (!current) "ON" else "OFF"}")
+}
+
+// v381: Panel Auto Hide381
+internal fun PlayerActivity.showV381PanelAutoHide381Toggle() {
+    val current = BiliClient.prefs.v381panelAutoHide381
+    BiliClient.prefs.v381panelAutoHide381 = !current
+    AppToast.show(this, "Panel Auto Hide381: ${if (!current) "ON" else "OFF"}")
+}
+
+// v381: Panel Position381
+internal fun PlayerActivity.showV381PanelPosition381Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v381panelPosition381).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Panel Position381",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v381panelPosition381 = value
+        AppToast.show(this, "Panel Position381: $value")
+    }
+}
+
+// v381: SubList Auto Collapse381
+internal fun PlayerActivity.showV381SubListAutoCollapse381Toggle() {
+    val current = BiliClient.prefs.v381subListAutoCollapse381
+    BiliClient.prefs.v381subListAutoCollapse381 = !current
+    AppToast.show(this, "SubList Auto Collapse381: ${if (!current) "ON" else "OFF"}")
+}
+
+// v381: SyncPlay Latency381
+internal fun PlayerActivity.showV381SyncPlayLatency381Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v381syncPlayLatency381).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "SyncPlay Latency381",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v381syncPlayLatency381 = value
+        AppToast.show(this, "SyncPlay Latency381: $value")
+    }
+}
+
+// v381: SyncPlay Auto Join381
+internal fun PlayerActivity.showV381SyncPlayAutoJoin381Toggle() {
+    val current = BiliClient.prefs.v381syncPlayAutoJoin381
+    BiliClient.prefs.v381syncPlayAutoJoin381 = !current
+    AppToast.show(this, "SyncPlay Auto Join381: ${if (!current) "ON" else "OFF"}")
+}
+
+// v381: Proxy Auto Detect381
+internal fun PlayerActivity.showV381ProxyAutoDetect381Toggle() {
+    val current = BiliClient.prefs.v381proxyAutoDetect381
+    BiliClient.prefs.v381proxyAutoDetect381 = !current
+    AppToast.show(this, "Proxy Auto Detect381: ${if (!current) "ON" else "OFF"}")
+}
+
+// v381: Queue Auto Sort381
+internal fun PlayerActivity.showV381QueueAutoSort381Toggle() {
+    val current = BiliClient.prefs.v381queueAutoSort381
+    BiliClient.prefs.v381queueAutoSort381 = !current
+    AppToast.show(this, "Queue Auto Sort381: ${if (!current) "ON" else "OFF"}")
+}
+
+// v381: Record Auto Save381
+internal fun PlayerActivity.showV381RecordAutoSave381Toggle() {
+    val current = BiliClient.prefs.v381recordAutoSave381
+    BiliClient.prefs.v381recordAutoSave381 = !current
+    AppToast.show(this, "Record Auto Save381: ${if (!current) "ON" else "OFF"}")
+}
+
+// v381: Image Enhance Sharp381
+internal fun PlayerActivity.showV381ImageEnhanceSharp381Toggle() {
+    val current = BiliClient.prefs.v381imageEnhanceSharp381
+    BiliClient.prefs.v381imageEnhanceSharp381 = !current
+    AppToast.show(this, "Image Enhance Sharp381: ${if (!current) "ON" else "OFF"}")
+}
+
+// v381: Image Enhance Denoise381
+internal fun PlayerActivity.showV381ImageEnhanceDenoise381Toggle() {
+    val current = BiliClient.prefs.v381imageEnhanceDenoise381
+    BiliClient.prefs.v381imageEnhanceDenoise381 = !current
+    AppToast.show(this, "Image Enhance Denoise381: ${if (!current) "ON" else "OFF"}")
+}
+
+// v382: Grid Layout Columns382
+internal fun PlayerActivity.showV382GridLayoutColumns382Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v382gridLayoutColumns382).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Grid Layout Columns382",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v382gridLayoutColumns382 = value
+        AppToast.show(this, "Grid Layout Columns382: $value")
+    }
+}
+
+// v382: Grid Layout Spacing382
+internal fun PlayerActivity.showV382GridLayoutSpacing382Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v382gridLayoutSpacing382).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Grid Layout Spacing382",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v382gridLayoutSpacing382 = value
+        AppToast.show(this, "Grid Layout Spacing382: $value")
+    }
+}
+
+// v382: Grid Layout Animation382
+internal fun PlayerActivity.showV382GridLayoutAnimation382Toggle() {
+    val current = BiliClient.prefs.v382gridLayoutAnimation382
+    BiliClient.prefs.v382gridLayoutAnimation382 = !current
+    AppToast.show(this, "Grid Layout Animation382: ${if (!current) "ON" else "OFF"}")
+}
+
+// v382: Page Size Limit382
+internal fun PlayerActivity.showV382PageSizeLimit382Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v382pageSizeLimit382).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Page Size Limit382",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v382pageSizeLimit382 = value
+        AppToast.show(this, "Page Size Limit382: $value")
+    }
+}
+
+// v382: Page Auto Load382
+internal fun PlayerActivity.showV382PageAutoLoad382Toggle() {
+    val current = BiliClient.prefs.v382pageAutoLoad382
+    BiliClient.prefs.v382pageAutoLoad382 = !current
+    AppToast.show(this, "Page Auto Load382: ${if (!current) "ON" else "OFF"}")
+}
+
+// v382: Panel Auto Hide382
+internal fun PlayerActivity.showV382PanelAutoHide382Toggle() {
+    val current = BiliClient.prefs.v382panelAutoHide382
+    BiliClient.prefs.v382panelAutoHide382 = !current
+    AppToast.show(this, "Panel Auto Hide382: ${if (!current) "ON" else "OFF"}")
+}
+
+// v382: Panel Position382
+internal fun PlayerActivity.showV382PanelPosition382Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v382panelPosition382).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Panel Position382",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v382panelPosition382 = value
+        AppToast.show(this, "Panel Position382: $value")
+    }
+}
+
+// v382: SubList Auto Collapse382
+internal fun PlayerActivity.showV382SubListAutoCollapse382Toggle() {
+    val current = BiliClient.prefs.v382subListAutoCollapse382
+    BiliClient.prefs.v382subListAutoCollapse382 = !current
+    AppToast.show(this, "SubList Auto Collapse382: ${if (!current) "ON" else "OFF"}")
+}
+
+// v382: SyncPlay Latency382
+internal fun PlayerActivity.showV382SyncPlayLatency382Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v382syncPlayLatency382).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "SyncPlay Latency382",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v382syncPlayLatency382 = value
+        AppToast.show(this, "SyncPlay Latency382: $value")
+    }
+}
+
+// v382: SyncPlay Auto Join382
+internal fun PlayerActivity.showV382SyncPlayAutoJoin382Toggle() {
+    val current = BiliClient.prefs.v382syncPlayAutoJoin382
+    BiliClient.prefs.v382syncPlayAutoJoin382 = !current
+    AppToast.show(this, "SyncPlay Auto Join382: ${if (!current) "ON" else "OFF"}")
+}
+
+// v382: Proxy Auto Detect382
+internal fun PlayerActivity.showV382ProxyAutoDetect382Toggle() {
+    val current = BiliClient.prefs.v382proxyAutoDetect382
+    BiliClient.prefs.v382proxyAutoDetect382 = !current
+    AppToast.show(this, "Proxy Auto Detect382: ${if (!current) "ON" else "OFF"}")
+}
+
+// v382: Queue Auto Sort382
+internal fun PlayerActivity.showV382QueueAutoSort382Toggle() {
+    val current = BiliClient.prefs.v382queueAutoSort382
+    BiliClient.prefs.v382queueAutoSort382 = !current
+    AppToast.show(this, "Queue Auto Sort382: ${if (!current) "ON" else "OFF"}")
+}
+
+// v382: Record Auto Save382
+internal fun PlayerActivity.showV382RecordAutoSave382Toggle() {
+    val current = BiliClient.prefs.v382recordAutoSave382
+    BiliClient.prefs.v382recordAutoSave382 = !current
+    AppToast.show(this, "Record Auto Save382: ${if (!current) "ON" else "OFF"}")
+}
+
+// v382: Image Enhance Sharp382
+internal fun PlayerActivity.showV382ImageEnhanceSharp382Toggle() {
+    val current = BiliClient.prefs.v382imageEnhanceSharp382
+    BiliClient.prefs.v382imageEnhanceSharp382 = !current
+    AppToast.show(this, "Image Enhance Sharp382: ${if (!current) "ON" else "OFF"}")
+}
+
+// v382: Image Enhance Denoise382
+internal fun PlayerActivity.showV382ImageEnhanceDenoise382Toggle() {
+    val current = BiliClient.prefs.v382imageEnhanceDenoise382
+    BiliClient.prefs.v382imageEnhanceDenoise382 = !current
+    AppToast.show(this, "Image Enhance Denoise382: ${if (!current) "ON" else "OFF"}")
+}
+
+// v383: Grid Layout Columns383
+internal fun PlayerActivity.showV383GridLayoutColumns383Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v383gridLayoutColumns383).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Grid Layout Columns383",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v383gridLayoutColumns383 = value
+        AppToast.show(this, "Grid Layout Columns383: $value")
+    }
+}
+
+// v383: Grid Layout Spacing383
+internal fun PlayerActivity.showV383GridLayoutSpacing383Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v383gridLayoutSpacing383).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Grid Layout Spacing383",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v383gridLayoutSpacing383 = value
+        AppToast.show(this, "Grid Layout Spacing383: $value")
+    }
+}
+
+// v383: Grid Layout Animation383
+internal fun PlayerActivity.showV383GridLayoutAnimation383Toggle() {
+    val current = BiliClient.prefs.v383gridLayoutAnimation383
+    BiliClient.prefs.v383gridLayoutAnimation383 = !current
+    AppToast.show(this, "Grid Layout Animation383: ${if (!current) "ON" else "OFF"}")
+}
+
+// v383: Page Size Limit383
+internal fun PlayerActivity.showV383PageSizeLimit383Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v383pageSizeLimit383).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Page Size Limit383",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v383pageSizeLimit383 = value
+        AppToast.show(this, "Page Size Limit383: $value")
+    }
+}
+
+// v383: Page Auto Load383
+internal fun PlayerActivity.showV383PageAutoLoad383Toggle() {
+    val current = BiliClient.prefs.v383pageAutoLoad383
+    BiliClient.prefs.v383pageAutoLoad383 = !current
+    AppToast.show(this, "Page Auto Load383: ${if (!current) "ON" else "OFF"}")
+}
+
+// v383: Panel Auto Hide383
+internal fun PlayerActivity.showV383PanelAutoHide383Toggle() {
+    val current = BiliClient.prefs.v383panelAutoHide383
+    BiliClient.prefs.v383panelAutoHide383 = !current
+    AppToast.show(this, "Panel Auto Hide383: ${if (!current) "ON" else "OFF"}")
+}
+
+// v383: Panel Position383
+internal fun PlayerActivity.showV383PanelPosition383Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v383panelPosition383).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Panel Position383",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v383panelPosition383 = value
+        AppToast.show(this, "Panel Position383: $value")
+    }
+}
+
+// v383: SubList Auto Collapse383
+internal fun PlayerActivity.showV383SubListAutoCollapse383Toggle() {
+    val current = BiliClient.prefs.v383subListAutoCollapse383
+    BiliClient.prefs.v383subListAutoCollapse383 = !current
+    AppToast.show(this, "SubList Auto Collapse383: ${if (!current) "ON" else "OFF"}")
+}
+
+// v383: SyncPlay Latency383
+internal fun PlayerActivity.showV383SyncPlayLatency383Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v383syncPlayLatency383).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "SyncPlay Latency383",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v383syncPlayLatency383 = value
+        AppToast.show(this, "SyncPlay Latency383: $value")
+    }
+}
+
+// v383: SyncPlay Auto Join383
+internal fun PlayerActivity.showV383SyncPlayAutoJoin383Toggle() {
+    val current = BiliClient.prefs.v383syncPlayAutoJoin383
+    BiliClient.prefs.v383syncPlayAutoJoin383 = !current
+    AppToast.show(this, "SyncPlay Auto Join383: ${if (!current) "ON" else "OFF"}")
+}
+
+// v383: Proxy Auto Detect383
+internal fun PlayerActivity.showV383ProxyAutoDetect383Toggle() {
+    val current = BiliClient.prefs.v383proxyAutoDetect383
+    BiliClient.prefs.v383proxyAutoDetect383 = !current
+    AppToast.show(this, "Proxy Auto Detect383: ${if (!current) "ON" else "OFF"}")
+}
+
+// v383: Queue Auto Sort383
+internal fun PlayerActivity.showV383QueueAutoSort383Toggle() {
+    val current = BiliClient.prefs.v383queueAutoSort383
+    BiliClient.prefs.v383queueAutoSort383 = !current
+    AppToast.show(this, "Queue Auto Sort383: ${if (!current) "ON" else "OFF"}")
+}
+
+// v383: Record Auto Save383
+internal fun PlayerActivity.showV383RecordAutoSave383Toggle() {
+    val current = BiliClient.prefs.v383recordAutoSave383
+    BiliClient.prefs.v383recordAutoSave383 = !current
+    AppToast.show(this, "Record Auto Save383: ${if (!current) "ON" else "OFF"}")
+}
+
+// v383: Image Enhance Sharp383
+internal fun PlayerActivity.showV383ImageEnhanceSharp383Toggle() {
+    val current = BiliClient.prefs.v383imageEnhanceSharp383
+    BiliClient.prefs.v383imageEnhanceSharp383 = !current
+    AppToast.show(this, "Image Enhance Sharp383: ${if (!current) "ON" else "OFF"}")
+}
+
+// v383: Image Enhance Denoise383
+internal fun PlayerActivity.showV383ImageEnhanceDenoise383Toggle() {
+    val current = BiliClient.prefs.v383imageEnhanceDenoise383
+    BiliClient.prefs.v383imageEnhanceDenoise383 = !current
+    AppToast.show(this, "Image Enhance Denoise383: ${if (!current) "ON" else "OFF"}")
+}
+
+// v384: Grid Layout Columns384
+internal fun PlayerActivity.showV384GridLayoutColumns384Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v384gridLayoutColumns384).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Grid Layout Columns384",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v384gridLayoutColumns384 = value
+        AppToast.show(this, "Grid Layout Columns384: $value")
+    }
+}
+
+// v384: Grid Layout Spacing384
+internal fun PlayerActivity.showV384GridLayoutSpacing384Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v384gridLayoutSpacing384).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Grid Layout Spacing384",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v384gridLayoutSpacing384 = value
+        AppToast.show(this, "Grid Layout Spacing384: $value")
+    }
+}
+
+// v384: Grid Layout Animation384
+internal fun PlayerActivity.showV384GridLayoutAnimation384Toggle() {
+    val current = BiliClient.prefs.v384gridLayoutAnimation384
+    BiliClient.prefs.v384gridLayoutAnimation384 = !current
+    AppToast.show(this, "Grid Layout Animation384: ${if (!current) "ON" else "OFF"}")
+}
+
+// v384: Page Size Limit384
+internal fun PlayerActivity.showV384PageSizeLimit384Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v384pageSizeLimit384).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Page Size Limit384",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v384pageSizeLimit384 = value
+        AppToast.show(this, "Page Size Limit384: $value")
+    }
+}
+
+// v384: Page Auto Load384
+internal fun PlayerActivity.showV384PageAutoLoad384Toggle() {
+    val current = BiliClient.prefs.v384pageAutoLoad384
+    BiliClient.prefs.v384pageAutoLoad384 = !current
+    AppToast.show(this, "Page Auto Load384: ${if (!current) "ON" else "OFF"}")
+}
+
+// v384: Panel Auto Hide384
+internal fun PlayerActivity.showV384PanelAutoHide384Toggle() {
+    val current = BiliClient.prefs.v384panelAutoHide384
+    BiliClient.prefs.v384panelAutoHide384 = !current
+    AppToast.show(this, "Panel Auto Hide384: ${if (!current) "ON" else "OFF"}")
+}
+
+// v384: Panel Position384
+internal fun PlayerActivity.showV384PanelPosition384Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v384panelPosition384).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Panel Position384",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v384panelPosition384 = value
+        AppToast.show(this, "Panel Position384: $value")
+    }
+}
+
+// v384: SubList Auto Collapse384
+internal fun PlayerActivity.showV384SubListAutoCollapse384Toggle() {
+    val current = BiliClient.prefs.v384subListAutoCollapse384
+    BiliClient.prefs.v384subListAutoCollapse384 = !current
+    AppToast.show(this, "SubList Auto Collapse384: ${if (!current) "ON" else "OFF"}")
+}
+
+// v384: SyncPlay Latency384
+internal fun PlayerActivity.showV384SyncPlayLatency384Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v384syncPlayLatency384).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "SyncPlay Latency384",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v384syncPlayLatency384 = value
+        AppToast.show(this, "SyncPlay Latency384: $value")
+    }
+}
+
+// v384: SyncPlay Auto Join384
+internal fun PlayerActivity.showV384SyncPlayAutoJoin384Toggle() {
+    val current = BiliClient.prefs.v384syncPlayAutoJoin384
+    BiliClient.prefs.v384syncPlayAutoJoin384 = !current
+    AppToast.show(this, "SyncPlay Auto Join384: ${if (!current) "ON" else "OFF"}")
+}
+
+// v384: Proxy Auto Detect384
+internal fun PlayerActivity.showV384ProxyAutoDetect384Toggle() {
+    val current = BiliClient.prefs.v384proxyAutoDetect384
+    BiliClient.prefs.v384proxyAutoDetect384 = !current
+    AppToast.show(this, "Proxy Auto Detect384: ${if (!current) "ON" else "OFF"}")
+}
+
+// v384: Queue Auto Sort384
+internal fun PlayerActivity.showV384QueueAutoSort384Toggle() {
+    val current = BiliClient.prefs.v384queueAutoSort384
+    BiliClient.prefs.v384queueAutoSort384 = !current
+    AppToast.show(this, "Queue Auto Sort384: ${if (!current) "ON" else "OFF"}")
+}
+
+// v384: Record Auto Save384
+internal fun PlayerActivity.showV384RecordAutoSave384Toggle() {
+    val current = BiliClient.prefs.v384recordAutoSave384
+    BiliClient.prefs.v384recordAutoSave384 = !current
+    AppToast.show(this, "Record Auto Save384: ${if (!current) "ON" else "OFF"}")
+}
+
+// v384: Image Enhance Sharp384
+internal fun PlayerActivity.showV384ImageEnhanceSharp384Toggle() {
+    val current = BiliClient.prefs.v384imageEnhanceSharp384
+    BiliClient.prefs.v384imageEnhanceSharp384 = !current
+    AppToast.show(this, "Image Enhance Sharp384: ${if (!current) "ON" else "OFF"}")
+}
+
+// v384: Image Enhance Denoise384
+internal fun PlayerActivity.showV384ImageEnhanceDenoise384Toggle() {
+    val current = BiliClient.prefs.v384imageEnhanceDenoise384
+    BiliClient.prefs.v384imageEnhanceDenoise384 = !current
+    AppToast.show(this, "Image Enhance Denoise384: ${if (!current) "ON" else "OFF"}")
+}
+
+// v385: Grid Layout Columns385
+internal fun PlayerActivity.showV385GridLayoutColumns385Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v385gridLayoutColumns385).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Grid Layout Columns385",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v385gridLayoutColumns385 = value
+        AppToast.show(this, "Grid Layout Columns385: $value")
+    }
+}
+
+// v385: Grid Layout Spacing385
+internal fun PlayerActivity.showV385GridLayoutSpacing385Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v385gridLayoutSpacing385).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Grid Layout Spacing385",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v385gridLayoutSpacing385 = value
+        AppToast.show(this, "Grid Layout Spacing385: $value")
+    }
+}
+
+// v385: Grid Layout Animation385
+internal fun PlayerActivity.showV385GridLayoutAnimation385Toggle() {
+    val current = BiliClient.prefs.v385gridLayoutAnimation385
+    BiliClient.prefs.v385gridLayoutAnimation385 = !current
+    AppToast.show(this, "Grid Layout Animation385: ${if (!current) "ON" else "OFF"}")
+}
+
+// v385: Page Size Limit385
+internal fun PlayerActivity.showV385PageSizeLimit385Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v385pageSizeLimit385).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Page Size Limit385",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v385pageSizeLimit385 = value
+        AppToast.show(this, "Page Size Limit385: $value")
+    }
+}
+
+// v385: Page Auto Load385
+internal fun PlayerActivity.showV385PageAutoLoad385Toggle() {
+    val current = BiliClient.prefs.v385pageAutoLoad385
+    BiliClient.prefs.v385pageAutoLoad385 = !current
+    AppToast.show(this, "Page Auto Load385: ${if (!current) "ON" else "OFF"}")
+}
+
+// v385: Panel Auto Hide385
+internal fun PlayerActivity.showV385PanelAutoHide385Toggle() {
+    val current = BiliClient.prefs.v385panelAutoHide385
+    BiliClient.prefs.v385panelAutoHide385 = !current
+    AppToast.show(this, "Panel Auto Hide385: ${if (!current) "ON" else "OFF"}")
+}
+
+// v385: Panel Position385
+internal fun PlayerActivity.showV385PanelPosition385Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v385panelPosition385).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Panel Position385",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v385panelPosition385 = value
+        AppToast.show(this, "Panel Position385: $value")
+    }
+}
+
+// v385: SubList Auto Collapse385
+internal fun PlayerActivity.showV385SubListAutoCollapse385Toggle() {
+    val current = BiliClient.prefs.v385subListAutoCollapse385
+    BiliClient.prefs.v385subListAutoCollapse385 = !current
+    AppToast.show(this, "SubList Auto Collapse385: ${if (!current) "ON" else "OFF"}")
+}
+
+// v385: SyncPlay Latency385
+internal fun PlayerActivity.showV385SyncPlayLatency385Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v385syncPlayLatency385).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "SyncPlay Latency385",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v385syncPlayLatency385 = value
+        AppToast.show(this, "SyncPlay Latency385: $value")
+    }
+}
+
+// v385: SyncPlay Auto Join385
+internal fun PlayerActivity.showV385SyncPlayAutoJoin385Toggle() {
+    val current = BiliClient.prefs.v385syncPlayAutoJoin385
+    BiliClient.prefs.v385syncPlayAutoJoin385 = !current
+    AppToast.show(this, "SyncPlay Auto Join385: ${if (!current) "ON" else "OFF"}")
+}
+
+// v385: Proxy Auto Detect385
+internal fun PlayerActivity.showV385ProxyAutoDetect385Toggle() {
+    val current = BiliClient.prefs.v385proxyAutoDetect385
+    BiliClient.prefs.v385proxyAutoDetect385 = !current
+    AppToast.show(this, "Proxy Auto Detect385: ${if (!current) "ON" else "OFF"}")
+}
+
+// v385: Queue Auto Sort385
+internal fun PlayerActivity.showV385QueueAutoSort385Toggle() {
+    val current = BiliClient.prefs.v385queueAutoSort385
+    BiliClient.prefs.v385queueAutoSort385 = !current
+    AppToast.show(this, "Queue Auto Sort385: ${if (!current) "ON" else "OFF"}")
+}
+
+// v385: Record Auto Save385
+internal fun PlayerActivity.showV385RecordAutoSave385Toggle() {
+    val current = BiliClient.prefs.v385recordAutoSave385
+    BiliClient.prefs.v385recordAutoSave385 = !current
+    AppToast.show(this, "Record Auto Save385: ${if (!current) "ON" else "OFF"}")
+}
+
+// v385: Image Enhance Sharp385
+internal fun PlayerActivity.showV385ImageEnhanceSharp385Toggle() {
+    val current = BiliClient.prefs.v385imageEnhanceSharp385
+    BiliClient.prefs.v385imageEnhanceSharp385 = !current
+    AppToast.show(this, "Image Enhance Sharp385: ${if (!current) "ON" else "OFF"}")
+}
+
+// v385: Image Enhance Denoise385
+internal fun PlayerActivity.showV385ImageEnhanceDenoise385Toggle() {
+    val current = BiliClient.prefs.v385imageEnhanceDenoise385
+    BiliClient.prefs.v385imageEnhanceDenoise385 = !current
+    AppToast.show(this, "Image Enhance Denoise385: ${if (!current) "ON" else "OFF"}")
+}
+
+// v386: Grid Layout Columns386
+internal fun PlayerActivity.showV386GridLayoutColumns386Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v386gridLayoutColumns386).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Grid Layout Columns386",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v386gridLayoutColumns386 = value
+        AppToast.show(this, "Grid Layout Columns386: $value")
+    }
+}
+
+// v386: Grid Layout Spacing386
+internal fun PlayerActivity.showV386GridLayoutSpacing386Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v386gridLayoutSpacing386).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Grid Layout Spacing386",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v386gridLayoutSpacing386 = value
+        AppToast.show(this, "Grid Layout Spacing386: $value")
+    }
+}
+
+// v386: Grid Layout Animation386
+internal fun PlayerActivity.showV386GridLayoutAnimation386Toggle() {
+    val current = BiliClient.prefs.v386gridLayoutAnimation386
+    BiliClient.prefs.v386gridLayoutAnimation386 = !current
+    AppToast.show(this, "Grid Layout Animation386: ${if (!current) "ON" else "OFF"}")
+}
+
+// v386: Page Size Limit386
+internal fun PlayerActivity.showV386PageSizeLimit386Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v386pageSizeLimit386).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Page Size Limit386",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v386pageSizeLimit386 = value
+        AppToast.show(this, "Page Size Limit386: $value")
+    }
+}
+
+// v386: Page Auto Load386
+internal fun PlayerActivity.showV386PageAutoLoad386Toggle() {
+    val current = BiliClient.prefs.v386pageAutoLoad386
+    BiliClient.prefs.v386pageAutoLoad386 = !current
+    AppToast.show(this, "Page Auto Load386: ${if (!current) "ON" else "OFF"}")
+}
+
+// v386: Panel Auto Hide386
+internal fun PlayerActivity.showV386PanelAutoHide386Toggle() {
+    val current = BiliClient.prefs.v386panelAutoHide386
+    BiliClient.prefs.v386panelAutoHide386 = !current
+    AppToast.show(this, "Panel Auto Hide386: ${if (!current) "ON" else "OFF"}")
+}
+
+// v386: Panel Position386
+internal fun PlayerActivity.showV386PanelPosition386Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v386panelPosition386).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Panel Position386",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v386panelPosition386 = value
+        AppToast.show(this, "Panel Position386: $value")
+    }
+}
+
+// v386: SubList Auto Collapse386
+internal fun PlayerActivity.showV386SubListAutoCollapse386Toggle() {
+    val current = BiliClient.prefs.v386subListAutoCollapse386
+    BiliClient.prefs.v386subListAutoCollapse386 = !current
+    AppToast.show(this, "SubList Auto Collapse386: ${if (!current) "ON" else "OFF"}")
+}
+
+// v386: SyncPlay Latency386
+internal fun PlayerActivity.showV386SyncPlayLatency386Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v386syncPlayLatency386).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "SyncPlay Latency386",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v386syncPlayLatency386 = value
+        AppToast.show(this, "SyncPlay Latency386: $value")
+    }
+}
+
+// v386: SyncPlay Auto Join386
+internal fun PlayerActivity.showV386SyncPlayAutoJoin386Toggle() {
+    val current = BiliClient.prefs.v386syncPlayAutoJoin386
+    BiliClient.prefs.v386syncPlayAutoJoin386 = !current
+    AppToast.show(this, "SyncPlay Auto Join386: ${if (!current) "ON" else "OFF"}")
+}
+
+// v386: Proxy Auto Detect386
+internal fun PlayerActivity.showV386ProxyAutoDetect386Toggle() {
+    val current = BiliClient.prefs.v386proxyAutoDetect386
+    BiliClient.prefs.v386proxyAutoDetect386 = !current
+    AppToast.show(this, "Proxy Auto Detect386: ${if (!current) "ON" else "OFF"}")
+}
+
+// v386: Queue Auto Sort386
+internal fun PlayerActivity.showV386QueueAutoSort386Toggle() {
+    val current = BiliClient.prefs.v386queueAutoSort386
+    BiliClient.prefs.v386queueAutoSort386 = !current
+    AppToast.show(this, "Queue Auto Sort386: ${if (!current) "ON" else "OFF"}")
+}
+
+// v386: Record Auto Save386
+internal fun PlayerActivity.showV386RecordAutoSave386Toggle() {
+    val current = BiliClient.prefs.v386recordAutoSave386
+    BiliClient.prefs.v386recordAutoSave386 = !current
+    AppToast.show(this, "Record Auto Save386: ${if (!current) "ON" else "OFF"}")
+}
+
+// v386: Image Enhance Sharp386
+internal fun PlayerActivity.showV386ImageEnhanceSharp386Toggle() {
+    val current = BiliClient.prefs.v386imageEnhanceSharp386
+    BiliClient.prefs.v386imageEnhanceSharp386 = !current
+    AppToast.show(this, "Image Enhance Sharp386: ${if (!current) "ON" else "OFF"}")
+}
+
+// v386: Image Enhance Denoise386
+internal fun PlayerActivity.showV386ImageEnhanceDenoise386Toggle() {
+    val current = BiliClient.prefs.v386imageEnhanceDenoise386
+    BiliClient.prefs.v386imageEnhanceDenoise386 = !current
+    AppToast.show(this, "Image Enhance Denoise386: ${if (!current) "ON" else "OFF"}")
+}
+
+// v387: Grid Layout Columns387
+internal fun PlayerActivity.showV387GridLayoutColumns387Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v387gridLayoutColumns387).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Grid Layout Columns387",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v387gridLayoutColumns387 = value
+        AppToast.show(this, "Grid Layout Columns387: $value")
+    }
+}
+
+// v387: Grid Layout Spacing387
+internal fun PlayerActivity.showV387GridLayoutSpacing387Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v387gridLayoutSpacing387).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Grid Layout Spacing387",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v387gridLayoutSpacing387 = value
+        AppToast.show(this, "Grid Layout Spacing387: $value")
+    }
+}
+
+// v387: Grid Layout Animation387
+internal fun PlayerActivity.showV387GridLayoutAnimation387Toggle() {
+    val current = BiliClient.prefs.v387gridLayoutAnimation387
+    BiliClient.prefs.v387gridLayoutAnimation387 = !current
+    AppToast.show(this, "Grid Layout Animation387: ${if (!current) "ON" else "OFF"}")
+}
+
+// v387: Page Size Limit387
+internal fun PlayerActivity.showV387PageSizeLimit387Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v387pageSizeLimit387).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Page Size Limit387",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v387pageSizeLimit387 = value
+        AppToast.show(this, "Page Size Limit387: $value")
+    }
+}
+
+// v387: Page Auto Load387
+internal fun PlayerActivity.showV387PageAutoLoad387Toggle() {
+    val current = BiliClient.prefs.v387pageAutoLoad387
+    BiliClient.prefs.v387pageAutoLoad387 = !current
+    AppToast.show(this, "Page Auto Load387: ${if (!current) "ON" else "OFF"}")
+}
+
+// v387: Panel Auto Hide387
+internal fun PlayerActivity.showV387PanelAutoHide387Toggle() {
+    val current = BiliClient.prefs.v387panelAutoHide387
+    BiliClient.prefs.v387panelAutoHide387 = !current
+    AppToast.show(this, "Panel Auto Hide387: ${if (!current) "ON" else "OFF"}")
+}
+
+// v387: Panel Position387
+internal fun PlayerActivity.showV387PanelPosition387Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v387panelPosition387).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Panel Position387",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v387panelPosition387 = value
+        AppToast.show(this, "Panel Position387: $value")
+    }
+}
+
+// v387: SubList Auto Collapse387
+internal fun PlayerActivity.showV387SubListAutoCollapse387Toggle() {
+    val current = BiliClient.prefs.v387subListAutoCollapse387
+    BiliClient.prefs.v387subListAutoCollapse387 = !current
+    AppToast.show(this, "SubList Auto Collapse387: ${if (!current) "ON" else "OFF"}")
+}
+
+// v387: SyncPlay Latency387
+internal fun PlayerActivity.showV387SyncPlayLatency387Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v387syncPlayLatency387).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "SyncPlay Latency387",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v387syncPlayLatency387 = value
+        AppToast.show(this, "SyncPlay Latency387: $value")
+    }
+}
+
+// v387: SyncPlay Auto Join387
+internal fun PlayerActivity.showV387SyncPlayAutoJoin387Toggle() {
+    val current = BiliClient.prefs.v387syncPlayAutoJoin387
+    BiliClient.prefs.v387syncPlayAutoJoin387 = !current
+    AppToast.show(this, "SyncPlay Auto Join387: ${if (!current) "ON" else "OFF"}")
+}
+
+// v387: Proxy Auto Detect387
+internal fun PlayerActivity.showV387ProxyAutoDetect387Toggle() {
+    val current = BiliClient.prefs.v387proxyAutoDetect387
+    BiliClient.prefs.v387proxyAutoDetect387 = !current
+    AppToast.show(this, "Proxy Auto Detect387: ${if (!current) "ON" else "OFF"}")
+}
+
+// v387: Queue Auto Sort387
+internal fun PlayerActivity.showV387QueueAutoSort387Toggle() {
+    val current = BiliClient.prefs.v387queueAutoSort387
+    BiliClient.prefs.v387queueAutoSort387 = !current
+    AppToast.show(this, "Queue Auto Sort387: ${if (!current) "ON" else "OFF"}")
+}
+
+// v387: Record Auto Save387
+internal fun PlayerActivity.showV387RecordAutoSave387Toggle() {
+    val current = BiliClient.prefs.v387recordAutoSave387
+    BiliClient.prefs.v387recordAutoSave387 = !current
+    AppToast.show(this, "Record Auto Save387: ${if (!current) "ON" else "OFF"}")
+}
+
+// v387: Image Enhance Sharp387
+internal fun PlayerActivity.showV387ImageEnhanceSharp387Toggle() {
+    val current = BiliClient.prefs.v387imageEnhanceSharp387
+    BiliClient.prefs.v387imageEnhanceSharp387 = !current
+    AppToast.show(this, "Image Enhance Sharp387: ${if (!current) "ON" else "OFF"}")
+}
+
+// v387: Image Enhance Denoise387
+internal fun PlayerActivity.showV387ImageEnhanceDenoise387Toggle() {
+    val current = BiliClient.prefs.v387imageEnhanceDenoise387
+    BiliClient.prefs.v387imageEnhanceDenoise387 = !current
+    AppToast.show(this, "Image Enhance Denoise387: ${if (!current) "ON" else "OFF"}")
+}
+
+// v388: Grid Layout Columns388
+internal fun PlayerActivity.showV388GridLayoutColumns388Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v388gridLayoutColumns388).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Grid Layout Columns388",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v388gridLayoutColumns388 = value
+        AppToast.show(this, "Grid Layout Columns388: $value")
+    }
+}
+
+// v388: Grid Layout Spacing388
+internal fun PlayerActivity.showV388GridLayoutSpacing388Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v388gridLayoutSpacing388).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Grid Layout Spacing388",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v388gridLayoutSpacing388 = value
+        AppToast.show(this, "Grid Layout Spacing388: $value")
+    }
+}
+
+// v388: Grid Layout Animation388
+internal fun PlayerActivity.showV388GridLayoutAnimation388Toggle() {
+    val current = BiliClient.prefs.v388gridLayoutAnimation388
+    BiliClient.prefs.v388gridLayoutAnimation388 = !current
+    AppToast.show(this, "Grid Layout Animation388: ${if (!current) "ON" else "OFF"}")
+}
+
+// v388: Page Size Limit388
+internal fun PlayerActivity.showV388PageSizeLimit388Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v388pageSizeLimit388).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Page Size Limit388",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v388pageSizeLimit388 = value
+        AppToast.show(this, "Page Size Limit388: $value")
+    }
+}
+
+// v388: Page Auto Load388
+internal fun PlayerActivity.showV388PageAutoLoad388Toggle() {
+    val current = BiliClient.prefs.v388pageAutoLoad388
+    BiliClient.prefs.v388pageAutoLoad388 = !current
+    AppToast.show(this, "Page Auto Load388: ${if (!current) "ON" else "OFF"}")
+}
+
+// v388: Panel Auto Hide388
+internal fun PlayerActivity.showV388PanelAutoHide388Toggle() {
+    val current = BiliClient.prefs.v388panelAutoHide388
+    BiliClient.prefs.v388panelAutoHide388 = !current
+    AppToast.show(this, "Panel Auto Hide388: ${if (!current) "ON" else "OFF"}")
+}
+
+// v388: Panel Position388
+internal fun PlayerActivity.showV388PanelPosition388Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v388panelPosition388).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Panel Position388",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v388panelPosition388 = value
+        AppToast.show(this, "Panel Position388: $value")
+    }
+}
+
+// v388: SubList Auto Collapse388
+internal fun PlayerActivity.showV388SubListAutoCollapse388Toggle() {
+    val current = BiliClient.prefs.v388subListAutoCollapse388
+    BiliClient.prefs.v388subListAutoCollapse388 = !current
+    AppToast.show(this, "SubList Auto Collapse388: ${if (!current) "ON" else "OFF"}")
+}
+
+// v388: SyncPlay Latency388
+internal fun PlayerActivity.showV388SyncPlayLatency388Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v388syncPlayLatency388).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "SyncPlay Latency388",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v388syncPlayLatency388 = value
+        AppToast.show(this, "SyncPlay Latency388: $value")
+    }
+}
+
+// v388: SyncPlay Auto Join388
+internal fun PlayerActivity.showV388SyncPlayAutoJoin388Toggle() {
+    val current = BiliClient.prefs.v388syncPlayAutoJoin388
+    BiliClient.prefs.v388syncPlayAutoJoin388 = !current
+    AppToast.show(this, "SyncPlay Auto Join388: ${if (!current) "ON" else "OFF"}")
+}
+
+// v388: Proxy Auto Detect388
+internal fun PlayerActivity.showV388ProxyAutoDetect388Toggle() {
+    val current = BiliClient.prefs.v388proxyAutoDetect388
+    BiliClient.prefs.v388proxyAutoDetect388 = !current
+    AppToast.show(this, "Proxy Auto Detect388: ${if (!current) "ON" else "OFF"}")
+}
+
+// v388: Queue Auto Sort388
+internal fun PlayerActivity.showV388QueueAutoSort388Toggle() {
+    val current = BiliClient.prefs.v388queueAutoSort388
+    BiliClient.prefs.v388queueAutoSort388 = !current
+    AppToast.show(this, "Queue Auto Sort388: ${if (!current) "ON" else "OFF"}")
+}
+
+// v388: Record Auto Save388
+internal fun PlayerActivity.showV388RecordAutoSave388Toggle() {
+    val current = BiliClient.prefs.v388recordAutoSave388
+    BiliClient.prefs.v388recordAutoSave388 = !current
+    AppToast.show(this, "Record Auto Save388: ${if (!current) "ON" else "OFF"}")
+}
+
+// v388: Image Enhance Sharp388
+internal fun PlayerActivity.showV388ImageEnhanceSharp388Toggle() {
+    val current = BiliClient.prefs.v388imageEnhanceSharp388
+    BiliClient.prefs.v388imageEnhanceSharp388 = !current
+    AppToast.show(this, "Image Enhance Sharp388: ${if (!current) "ON" else "OFF"}")
+}
+
+// v388: Image Enhance Denoise388
+internal fun PlayerActivity.showV388ImageEnhanceDenoise388Toggle() {
+    val current = BiliClient.prefs.v388imageEnhanceDenoise388
+    BiliClient.prefs.v388imageEnhanceDenoise388 = !current
+    AppToast.show(this, "Image Enhance Denoise388: ${if (!current) "ON" else "OFF"}")
+}
+
+// v389: Grid Layout Columns389
+internal fun PlayerActivity.showV389GridLayoutColumns389Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v389gridLayoutColumns389).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Grid Layout Columns389",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v389gridLayoutColumns389 = value
+        AppToast.show(this, "Grid Layout Columns389: $value")
+    }
+}
+
+// v389: Grid Layout Spacing389
+internal fun PlayerActivity.showV389GridLayoutSpacing389Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v389gridLayoutSpacing389).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Grid Layout Spacing389",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v389gridLayoutSpacing389 = value
+        AppToast.show(this, "Grid Layout Spacing389: $value")
+    }
+}
+
+// v389: Grid Layout Animation389
+internal fun PlayerActivity.showV389GridLayoutAnimation389Toggle() {
+    val current = BiliClient.prefs.v389gridLayoutAnimation389
+    BiliClient.prefs.v389gridLayoutAnimation389 = !current
+    AppToast.show(this, "Grid Layout Animation389: ${if (!current) "ON" else "OFF"}")
+}
+
+// v389: Page Size Limit389
+internal fun PlayerActivity.showV389PageSizeLimit389Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v389pageSizeLimit389).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Page Size Limit389",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v389pageSizeLimit389 = value
+        AppToast.show(this, "Page Size Limit389: $value")
+    }
+}
+
+// v389: Page Auto Load389
+internal fun PlayerActivity.showV389PageAutoLoad389Toggle() {
+    val current = BiliClient.prefs.v389pageAutoLoad389
+    BiliClient.prefs.v389pageAutoLoad389 = !current
+    AppToast.show(this, "Page Auto Load389: ${if (!current) "ON" else "OFF"}")
+}
+
+// v389: Panel Auto Hide389
+internal fun PlayerActivity.showV389PanelAutoHide389Toggle() {
+    val current = BiliClient.prefs.v389panelAutoHide389
+    BiliClient.prefs.v389panelAutoHide389 = !current
+    AppToast.show(this, "Panel Auto Hide389: ${if (!current) "ON" else "OFF"}")
+}
+
+// v389: Panel Position389
+internal fun PlayerActivity.showV389PanelPosition389Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v389panelPosition389).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Panel Position389",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v389panelPosition389 = value
+        AppToast.show(this, "Panel Position389: $value")
+    }
+}
+
+// v389: SubList Auto Collapse389
+internal fun PlayerActivity.showV389SubListAutoCollapse389Toggle() {
+    val current = BiliClient.prefs.v389subListAutoCollapse389
+    BiliClient.prefs.v389subListAutoCollapse389 = !current
+    AppToast.show(this, "SubList Auto Collapse389: ${if (!current) "ON" else "OFF"}")
+}
+
+// v389: SyncPlay Latency389
+internal fun PlayerActivity.showV389SyncPlayLatency389Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v389syncPlayLatency389).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "SyncPlay Latency389",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v389syncPlayLatency389 = value
+        AppToast.show(this, "SyncPlay Latency389: $value")
+    }
+}
+
+// v389: SyncPlay Auto Join389
+internal fun PlayerActivity.showV389SyncPlayAutoJoin389Toggle() {
+    val current = BiliClient.prefs.v389syncPlayAutoJoin389
+    BiliClient.prefs.v389syncPlayAutoJoin389 = !current
+    AppToast.show(this, "SyncPlay Auto Join389: ${if (!current) "ON" else "OFF"}")
+}
+
+// v389: Proxy Auto Detect389
+internal fun PlayerActivity.showV389ProxyAutoDetect389Toggle() {
+    val current = BiliClient.prefs.v389proxyAutoDetect389
+    BiliClient.prefs.v389proxyAutoDetect389 = !current
+    AppToast.show(this, "Proxy Auto Detect389: ${if (!current) "ON" else "OFF"}")
+}
+
+// v389: Queue Auto Sort389
+internal fun PlayerActivity.showV389QueueAutoSort389Toggle() {
+    val current = BiliClient.prefs.v389queueAutoSort389
+    BiliClient.prefs.v389queueAutoSort389 = !current
+    AppToast.show(this, "Queue Auto Sort389: ${if (!current) "ON" else "OFF"}")
+}
+
+// v389: Record Auto Save389
+internal fun PlayerActivity.showV389RecordAutoSave389Toggle() {
+    val current = BiliClient.prefs.v389recordAutoSave389
+    BiliClient.prefs.v389recordAutoSave389 = !current
+    AppToast.show(this, "Record Auto Save389: ${if (!current) "ON" else "OFF"}")
+}
+
+// v389: Image Enhance Sharp389
+internal fun PlayerActivity.showV389ImageEnhanceSharp389Toggle() {
+    val current = BiliClient.prefs.v389imageEnhanceSharp389
+    BiliClient.prefs.v389imageEnhanceSharp389 = !current
+    AppToast.show(this, "Image Enhance Sharp389: ${if (!current) "ON" else "OFF"}")
+}
+
+// v389: Image Enhance Denoise389
+internal fun PlayerActivity.showV389ImageEnhanceDenoise389Toggle() {
+    val current = BiliClient.prefs.v389imageEnhanceDenoise389
+    BiliClient.prefs.v389imageEnhanceDenoise389 = !current
+    AppToast.show(this, "Image Enhance Denoise389: ${if (!current) "ON" else "OFF"}")
+}
+
+// v390: Grid Layout Columns390
+internal fun PlayerActivity.showV390GridLayoutColumns390Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v390gridLayoutColumns390).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Grid Layout Columns390",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v390gridLayoutColumns390 = value
+        AppToast.show(this, "Grid Layout Columns390: $value")
+    }
+}
+
+// v390: Grid Layout Spacing390
+internal fun PlayerActivity.showV390GridLayoutSpacing390Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v390gridLayoutSpacing390).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Grid Layout Spacing390",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v390gridLayoutSpacing390 = value
+        AppToast.show(this, "Grid Layout Spacing390: $value")
+    }
+}
+
+// v390: Grid Layout Animation390
+internal fun PlayerActivity.showV390GridLayoutAnimation390Toggle() {
+    val current = BiliClient.prefs.v390gridLayoutAnimation390
+    BiliClient.prefs.v390gridLayoutAnimation390 = !current
+    AppToast.show(this, "Grid Layout Animation390: ${if (!current) "ON" else "OFF"}")
+}
+
+// v390: Page Size Limit390
+internal fun PlayerActivity.showV390PageSizeLimit390Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v390pageSizeLimit390).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Page Size Limit390",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v390pageSizeLimit390 = value
+        AppToast.show(this, "Page Size Limit390: $value")
+    }
+}
+
+// v390: Page Auto Load390
+internal fun PlayerActivity.showV390PageAutoLoad390Toggle() {
+    val current = BiliClient.prefs.v390pageAutoLoad390
+    BiliClient.prefs.v390pageAutoLoad390 = !current
+    AppToast.show(this, "Page Auto Load390: ${if (!current) "ON" else "OFF"}")
+}
+
+// v390: Panel Auto Hide390
+internal fun PlayerActivity.showV390PanelAutoHide390Toggle() {
+    val current = BiliClient.prefs.v390panelAutoHide390
+    BiliClient.prefs.v390panelAutoHide390 = !current
+    AppToast.show(this, "Panel Auto Hide390: ${if (!current) "ON" else "OFF"}")
+}
+
+// v390: Panel Position390
+internal fun PlayerActivity.showV390PanelPosition390Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v390panelPosition390).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Panel Position390",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v390panelPosition390 = value
+        AppToast.show(this, "Panel Position390: $value")
+    }
+}
+
+// v390: SubList Auto Collapse390
+internal fun PlayerActivity.showV390SubListAutoCollapse390Toggle() {
+    val current = BiliClient.prefs.v390subListAutoCollapse390
+    BiliClient.prefs.v390subListAutoCollapse390 = !current
+    AppToast.show(this, "SubList Auto Collapse390: ${if (!current) "ON" else "OFF"}")
+}
+
+// v390: SyncPlay Latency390
+internal fun PlayerActivity.showV390SyncPlayLatency390Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v390syncPlayLatency390).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "SyncPlay Latency390",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v390syncPlayLatency390 = value
+        AppToast.show(this, "SyncPlay Latency390: $value")
+    }
+}
+
+// v390: SyncPlay Auto Join390
+internal fun PlayerActivity.showV390SyncPlayAutoJoin390Toggle() {
+    val current = BiliClient.prefs.v390syncPlayAutoJoin390
+    BiliClient.prefs.v390syncPlayAutoJoin390 = !current
+    AppToast.show(this, "SyncPlay Auto Join390: ${if (!current) "ON" else "OFF"}")
+}
+
+// v390: Proxy Auto Detect390
+internal fun PlayerActivity.showV390ProxyAutoDetect390Toggle() {
+    val current = BiliClient.prefs.v390proxyAutoDetect390
+    BiliClient.prefs.v390proxyAutoDetect390 = !current
+    AppToast.show(this, "Proxy Auto Detect390: ${if (!current) "ON" else "OFF"}")
+}
+
+// v390: Queue Auto Sort390
+internal fun PlayerActivity.showV390QueueAutoSort390Toggle() {
+    val current = BiliClient.prefs.v390queueAutoSort390
+    BiliClient.prefs.v390queueAutoSort390 = !current
+    AppToast.show(this, "Queue Auto Sort390: ${if (!current) "ON" else "OFF"}")
+}
+
+// v390: Record Auto Save390
+internal fun PlayerActivity.showV390RecordAutoSave390Toggle() {
+    val current = BiliClient.prefs.v390recordAutoSave390
+    BiliClient.prefs.v390recordAutoSave390 = !current
+    AppToast.show(this, "Record Auto Save390: ${if (!current) "ON" else "OFF"}")
+}
+
+// v390: Image Enhance Sharp390
+internal fun PlayerActivity.showV390ImageEnhanceSharp390Toggle() {
+    val current = BiliClient.prefs.v390imageEnhanceSharp390
+    BiliClient.prefs.v390imageEnhanceSharp390 = !current
+    AppToast.show(this, "Image Enhance Sharp390: ${if (!current) "ON" else "OFF"}")
+}
+
+// v390: Image Enhance Denoise390
+internal fun PlayerActivity.showV390ImageEnhanceDenoise390Toggle() {
+    val current = BiliClient.prefs.v390imageEnhanceDenoise390
+    BiliClient.prefs.v390imageEnhanceDenoise390 = !current
+    AppToast.show(this, "Image Enhance Denoise390: ${if (!current) "ON" else "OFF"}")
+}
+
