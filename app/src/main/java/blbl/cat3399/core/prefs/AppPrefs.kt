@@ -40448,6 +40448,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V560STATEAUTOPERSIST560, false)
         set(value) = prefs.edit().putBoolean(KEY_V560STATEAUTOPERSIST560, value).apply()
 
+    var v561staticIpAutoDetect561: Boolean
+        get() = prefs.getBoolean(KEY_V561STATICIPAUTODETECT561, false)
+        set(value) = prefs.edit().putBoolean(KEY_V561STATICIPAUTODETECT561, value).apply()
+
+    var v561stepAutoIncrement561: Int
+        get() = prefs.getInt(KEY_V561STEPAUTOINCREMENT561, 0)
+        set(value) = prefs.edit().putInt(KEY_V561STEPAUTOINCREMENT561, value).apply()
+
+    var v561stopAutoConfirm561: Boolean
+        get() = prefs.getBoolean(KEY_V561STOPAUTOCONFIRM561, false)
+        set(value) = prefs.edit().putBoolean(KEY_V561STOPAUTOCONFIRM561, value).apply()
+
+    var v561storeAutoSync561: Boolean
+        get() = prefs.getBoolean(KEY_V561STOREAUTOSYNC561, false)
+        set(value) = prefs.edit().putBoolean(KEY_V561STOREAUTOSYNC561, value).apply()
+
+    var v561styleAutoTheme561: Boolean
+        get() = prefs.getBoolean(KEY_V561STYLEAUTOTHEME561, false)
+        set(value) = prefs.edit().putBoolean(KEY_V561STYLEAUTOTHEME561, value).apply()
+
+    var v561submitAutoValidate561: Boolean
+        get() = prefs.getBoolean(KEY_V561SUBMITAUTOVALIDATE561, false)
+        set(value) = prefs.edit().putBoolean(KEY_V561SUBMITAUTOVALIDATE561, value).apply()
+
+    var v561suffixAutoAppend561: Boolean
+        get() = prefs.getBoolean(KEY_V561SUFFIXAUTOAPPEND561, false)
+        set(value) = prefs.edit().putBoolean(KEY_V561SUFFIXAUTOAPPEND561, value).apply()
+
+    var v561summaryAutoGenerate561: Boolean
+        get() = prefs.getBoolean(KEY_V561SUMMARYAUTOGENERATE561, false)
+        set(value) = prefs.edit().putBoolean(KEY_V561SUMMARYAUTOGENERATE561, value).apply()
+
+    var v561swapAutoChannel561: Boolean
+        get() = prefs.getBoolean(KEY_V561SWAPAUTOCHANNEL561, false)
+        set(value) = prefs.edit().putBoolean(KEY_V561SWAPAUTOCHANNEL561, value).apply()
+
+    var v561switchAutoProfile561: Boolean
+        get() = prefs.getBoolean(KEY_V561SWITCHAUTOPROFILE561, false)
+        set(value) = prefs.edit().putBoolean(KEY_V561SWITCHAUTOPROFILE561, value).apply()
+
+    var v561tabAutoRestore561: Boolean
+        get() = prefs.getBoolean(KEY_V561TABAUTORESTORE561, false)
+        set(value) = prefs.edit().putBoolean(KEY_V561TABAUTORESTORE561, value).apply()
+
+    var v561tagAutoExtract561: Boolean
+        get() = prefs.getBoolean(KEY_V561TAGAUTOEXTRACT561, false)
+        set(value) = prefs.edit().putBoolean(KEY_V561TAGAUTOEXTRACT561, value).apply()
+
+    var v561targetAutoLock561: Boolean
+        get() = prefs.getBoolean(KEY_V561TARGETAUTOLOCK561, false)
+        set(value) = prefs.edit().putBoolean(KEY_V561TARGETAUTOLOCK561, value).apply()
+
+    var v561templateAutoFill561: Boolean
+        get() = prefs.getBoolean(KEY_V561TEMPLATEAUTOFILL561, false)
+        set(value) = prefs.edit().putBoolean(KEY_V561TEMPLATEAUTOFILL561, value).apply()
+
+    var v561testAutoRun561: Boolean
+        get() = prefs.getBoolean(KEY_V561TESTAUTORUN561, false)
+        set(value) = prefs.edit().putBoolean(KEY_V561TESTAUTORUN561, value).apply()
+
+    var v562staticIpAutoDetect562: Boolean
+        get() = prefs.getBoolean(KEY_V562STATICIPAUTODETECT562, false)
+        set(value) = prefs.edit().putBoolean(KEY_V562STATICIPAUTODETECT562, value).apply()
+
+    var v562stepAutoIncrement562: Int
+        get() = prefs.getInt(KEY_V562STEPAUTOINCREMENT562, 0)
+        set(value) = prefs.edit().putInt(KEY_V562STEPAUTOINCREMENT562, value).apply()
+
+    var v562stopAutoConfirm562: Boolean
+        get() = prefs.getBoolean(KEY_V562STOPAUTOCONFIRM562, false)
+        set(value) = prefs.edit().putBoolean(KEY_V562STOPAUTOCONFIRM562, value).apply()
+
+    var v562storeAutoSync562: Boolean
+        get() = prefs.getBoolean(KEY_V562STOREAUTOSYNC562, false)
+        set(value) = prefs.edit().putBoolean(KEY_V562STOREAUTOSYNC562, value).apply()
+
+    var v562styleAutoTheme562: Boolean
+        get() = prefs.getBoolean(KEY_V562STYLEAUTOTHEME562, false)
+        set(value) = prefs.edit().putBoolean(KEY_V562STYLEAUTOTHEME562, value).apply()
+
+    var v562submitAutoValidate562: Boolean
+        get() = prefs.getBoolean(KEY_V562SUBMITAUTOVALIDATE562, false)
+        set(value) = prefs.edit().putBoolean(KEY_V562SUBMITAUTOVALIDATE562, value).apply()
+
+    var v562suffixAutoAppend562: Boolean
+        get() = prefs.getBoolean(KEY_V562SUFFIXAUTOAPPEND562, false)
+        set(value) = prefs.edit().putBoolean(KEY_V562SUFFIXAUTOAPPEND562, value).apply()
+
+    var v562summaryAutoGenerate562: Boolean
+        get() = prefs.getBoolean(KEY_V562SUMMARYAUTOGENERATE562, false)
+        set(value) = prefs.edit().putBoolean(KEY_V562SUMMARYAUTOGENERATE562, value).apply()
+
+    var v562swapAutoChannel562: Boolean
+        get() = prefs.getBoolean(KEY_V562SWAPAUTOCHANNEL562, false)
+        set(value) = prefs.edit().putBoolean(KEY_V562SWAPAUTOCHANNEL562, value).apply()
+
+    var v562switchAutoProfile562: Boolean
+        get() = prefs.getBoolean(KEY_V562SWITCHAUTOPROFILE562, false)
+        set(value) = prefs.edit().putBoolean(KEY_V562SWITCHAUTOPROFILE562, value).apply()
+
+    var v562tabAutoRestore562: Boolean
+        get() = prefs.getBoolean(KEY_V562TABAUTORESTORE562, false)
+        set(value) = prefs.edit().putBoolean(KEY_V562TABAUTORESTORE562, value).apply()
+
+    var v562tagAutoExtract562: Boolean
+        get() = prefs.getBoolean(KEY_V562TAGAUTOEXTRACT562, false)
+        set(value) = prefs.edit().putBoolean(KEY_V562TAGAUTOEXTRACT562, value).apply()
+
+    var v562targetAutoLock562: Boolean
+        get() = prefs.getBoolean(KEY_V562TARGETAUTOLOCK562, false)
+        set(value) = prefs.edit().putBoolean(KEY_V562TARGETAUTOLOCK562, value).apply()
+
+    var v562templateAutoFill562: Boolean
+        get() = prefs.getBoolean(KEY_V562TEMPLATEAUTOFILL562, false)
+        set(value) = prefs.edit().putBoolean(KEY_V562TEMPLATEAUTOFILL562, value).apply()
+
+    var v562testAutoRun562: Boolean
+        get() = prefs.getBoolean(KEY_V562TESTAUTORUN562, false)
+        set(value) = prefs.edit().putBoolean(KEY_V562TESTAUTORUN562, value).apply()
+
+    var v563staticIpAutoDetect563: Boolean
+        get() = prefs.getBoolean(KEY_V563STATICIPAUTODETECT563, false)
+        set(value) = prefs.edit().putBoolean(KEY_V563STATICIPAUTODETECT563, value).apply()
+
+    var v563stepAutoIncrement563: Int
+        get() = prefs.getInt(KEY_V563STEPAUTOINCREMENT563, 0)
+        set(value) = prefs.edit().putInt(KEY_V563STEPAUTOINCREMENT563, value).apply()
+
+    var v563stopAutoConfirm563: Boolean
+        get() = prefs.getBoolean(KEY_V563STOPAUTOCONFIRM563, false)
+        set(value) = prefs.edit().putBoolean(KEY_V563STOPAUTOCONFIRM563, value).apply()
+
+    var v563storeAutoSync563: Boolean
+        get() = prefs.getBoolean(KEY_V563STOREAUTOSYNC563, false)
+        set(value) = prefs.edit().putBoolean(KEY_V563STOREAUTOSYNC563, value).apply()
+
+    var v563styleAutoTheme563: Boolean
+        get() = prefs.getBoolean(KEY_V563STYLEAUTOTHEME563, false)
+        set(value) = prefs.edit().putBoolean(KEY_V563STYLEAUTOTHEME563, value).apply()
+
+    var v563submitAutoValidate563: Boolean
+        get() = prefs.getBoolean(KEY_V563SUBMITAUTOVALIDATE563, false)
+        set(value) = prefs.edit().putBoolean(KEY_V563SUBMITAUTOVALIDATE563, value).apply()
+
+    var v563suffixAutoAppend563: Boolean
+        get() = prefs.getBoolean(KEY_V563SUFFIXAUTOAPPEND563, false)
+        set(value) = prefs.edit().putBoolean(KEY_V563SUFFIXAUTOAPPEND563, value).apply()
+
+    var v563summaryAutoGenerate563: Boolean
+        get() = prefs.getBoolean(KEY_V563SUMMARYAUTOGENERATE563, false)
+        set(value) = prefs.edit().putBoolean(KEY_V563SUMMARYAUTOGENERATE563, value).apply()
+
+    var v563swapAutoChannel563: Boolean
+        get() = prefs.getBoolean(KEY_V563SWAPAUTOCHANNEL563, false)
+        set(value) = prefs.edit().putBoolean(KEY_V563SWAPAUTOCHANNEL563, value).apply()
+
+    var v563switchAutoProfile563: Boolean
+        get() = prefs.getBoolean(KEY_V563SWITCHAUTOPROFILE563, false)
+        set(value) = prefs.edit().putBoolean(KEY_V563SWITCHAUTOPROFILE563, value).apply()
+
+    var v563tabAutoRestore563: Boolean
+        get() = prefs.getBoolean(KEY_V563TABAUTORESTORE563, false)
+        set(value) = prefs.edit().putBoolean(KEY_V563TABAUTORESTORE563, value).apply()
+
+    var v563tagAutoExtract563: Boolean
+        get() = prefs.getBoolean(KEY_V563TAGAUTOEXTRACT563, false)
+        set(value) = prefs.edit().putBoolean(KEY_V563TAGAUTOEXTRACT563, value).apply()
+
+    var v563targetAutoLock563: Boolean
+        get() = prefs.getBoolean(KEY_V563TARGETAUTOLOCK563, false)
+        set(value) = prefs.edit().putBoolean(KEY_V563TARGETAUTOLOCK563, value).apply()
+
+    var v563templateAutoFill563: Boolean
+        get() = prefs.getBoolean(KEY_V563TEMPLATEAUTOFILL563, false)
+        set(value) = prefs.edit().putBoolean(KEY_V563TEMPLATEAUTOFILL563, value).apply()
+
+    var v563testAutoRun563: Boolean
+        get() = prefs.getBoolean(KEY_V563TESTAUTORUN563, false)
+        set(value) = prefs.edit().putBoolean(KEY_V563TESTAUTORUN563, value).apply()
+
+    var v564staticIpAutoDetect564: Boolean
+        get() = prefs.getBoolean(KEY_V564STATICIPAUTODETECT564, false)
+        set(value) = prefs.edit().putBoolean(KEY_V564STATICIPAUTODETECT564, value).apply()
+
+    var v564stepAutoIncrement564: Int
+        get() = prefs.getInt(KEY_V564STEPAUTOINCREMENT564, 0)
+        set(value) = prefs.edit().putInt(KEY_V564STEPAUTOINCREMENT564, value).apply()
+
+    var v564stopAutoConfirm564: Boolean
+        get() = prefs.getBoolean(KEY_V564STOPAUTOCONFIRM564, false)
+        set(value) = prefs.edit().putBoolean(KEY_V564STOPAUTOCONFIRM564, value).apply()
+
+    var v564storeAutoSync564: Boolean
+        get() = prefs.getBoolean(KEY_V564STOREAUTOSYNC564, false)
+        set(value) = prefs.edit().putBoolean(KEY_V564STOREAUTOSYNC564, value).apply()
+
+    var v564styleAutoTheme564: Boolean
+        get() = prefs.getBoolean(KEY_V564STYLEAUTOTHEME564, false)
+        set(value) = prefs.edit().putBoolean(KEY_V564STYLEAUTOTHEME564, value).apply()
+
+    var v564submitAutoValidate564: Boolean
+        get() = prefs.getBoolean(KEY_V564SUBMITAUTOVALIDATE564, false)
+        set(value) = prefs.edit().putBoolean(KEY_V564SUBMITAUTOVALIDATE564, value).apply()
+
+    var v564suffixAutoAppend564: Boolean
+        get() = prefs.getBoolean(KEY_V564SUFFIXAUTOAPPEND564, false)
+        set(value) = prefs.edit().putBoolean(KEY_V564SUFFIXAUTOAPPEND564, value).apply()
+
+    var v564summaryAutoGenerate564: Boolean
+        get() = prefs.getBoolean(KEY_V564SUMMARYAUTOGENERATE564, false)
+        set(value) = prefs.edit().putBoolean(KEY_V564SUMMARYAUTOGENERATE564, value).apply()
+
+    var v564swapAutoChannel564: Boolean
+        get() = prefs.getBoolean(KEY_V564SWAPAUTOCHANNEL564, false)
+        set(value) = prefs.edit().putBoolean(KEY_V564SWAPAUTOCHANNEL564, value).apply()
+
+    var v564switchAutoProfile564: Boolean
+        get() = prefs.getBoolean(KEY_V564SWITCHAUTOPROFILE564, false)
+        set(value) = prefs.edit().putBoolean(KEY_V564SWITCHAUTOPROFILE564, value).apply()
+
+    var v564tabAutoRestore564: Boolean
+        get() = prefs.getBoolean(KEY_V564TABAUTORESTORE564, false)
+        set(value) = prefs.edit().putBoolean(KEY_V564TABAUTORESTORE564, value).apply()
+
+    var v564tagAutoExtract564: Boolean
+        get() = prefs.getBoolean(KEY_V564TAGAUTOEXTRACT564, false)
+        set(value) = prefs.edit().putBoolean(KEY_V564TAGAUTOEXTRACT564, value).apply()
+
+    var v564targetAutoLock564: Boolean
+        get() = prefs.getBoolean(KEY_V564TARGETAUTOLOCK564, false)
+        set(value) = prefs.edit().putBoolean(KEY_V564TARGETAUTOLOCK564, value).apply()
+
+    var v564templateAutoFill564: Boolean
+        get() = prefs.getBoolean(KEY_V564TEMPLATEAUTOFILL564, false)
+        set(value) = prefs.edit().putBoolean(KEY_V564TEMPLATEAUTOFILL564, value).apply()
+
+    var v564testAutoRun564: Boolean
+        get() = prefs.getBoolean(KEY_V564TESTAUTORUN564, false)
+        set(value) = prefs.edit().putBoolean(KEY_V564TESTAUTORUN564, value).apply()
+
+    var v565staticIpAutoDetect565: Boolean
+        get() = prefs.getBoolean(KEY_V565STATICIPAUTODETECT565, false)
+        set(value) = prefs.edit().putBoolean(KEY_V565STATICIPAUTODETECT565, value).apply()
+
+    var v565stepAutoIncrement565: Int
+        get() = prefs.getInt(KEY_V565STEPAUTOINCREMENT565, 0)
+        set(value) = prefs.edit().putInt(KEY_V565STEPAUTOINCREMENT565, value).apply()
+
+    var v565stopAutoConfirm565: Boolean
+        get() = prefs.getBoolean(KEY_V565STOPAUTOCONFIRM565, false)
+        set(value) = prefs.edit().putBoolean(KEY_V565STOPAUTOCONFIRM565, value).apply()
+
+    var v565storeAutoSync565: Boolean
+        get() = prefs.getBoolean(KEY_V565STOREAUTOSYNC565, false)
+        set(value) = prefs.edit().putBoolean(KEY_V565STOREAUTOSYNC565, value).apply()
+
+    var v565styleAutoTheme565: Boolean
+        get() = prefs.getBoolean(KEY_V565STYLEAUTOTHEME565, false)
+        set(value) = prefs.edit().putBoolean(KEY_V565STYLEAUTOTHEME565, value).apply()
+
+    var v565submitAutoValidate565: Boolean
+        get() = prefs.getBoolean(KEY_V565SUBMITAUTOVALIDATE565, false)
+        set(value) = prefs.edit().putBoolean(KEY_V565SUBMITAUTOVALIDATE565, value).apply()
+
+    var v565suffixAutoAppend565: Boolean
+        get() = prefs.getBoolean(KEY_V565SUFFIXAUTOAPPEND565, false)
+        set(value) = prefs.edit().putBoolean(KEY_V565SUFFIXAUTOAPPEND565, value).apply()
+
+    var v565summaryAutoGenerate565: Boolean
+        get() = prefs.getBoolean(KEY_V565SUMMARYAUTOGENERATE565, false)
+        set(value) = prefs.edit().putBoolean(KEY_V565SUMMARYAUTOGENERATE565, value).apply()
+
+    var v565swapAutoChannel565: Boolean
+        get() = prefs.getBoolean(KEY_V565SWAPAUTOCHANNEL565, false)
+        set(value) = prefs.edit().putBoolean(KEY_V565SWAPAUTOCHANNEL565, value).apply()
+
+    var v565switchAutoProfile565: Boolean
+        get() = prefs.getBoolean(KEY_V565SWITCHAUTOPROFILE565, false)
+        set(value) = prefs.edit().putBoolean(KEY_V565SWITCHAUTOPROFILE565, value).apply()
+
+    var v565tabAutoRestore565: Boolean
+        get() = prefs.getBoolean(KEY_V565TABAUTORESTORE565, false)
+        set(value) = prefs.edit().putBoolean(KEY_V565TABAUTORESTORE565, value).apply()
+
+    var v565tagAutoExtract565: Boolean
+        get() = prefs.getBoolean(KEY_V565TAGAUTOEXTRACT565, false)
+        set(value) = prefs.edit().putBoolean(KEY_V565TAGAUTOEXTRACT565, value).apply()
+
+    var v565targetAutoLock565: Boolean
+        get() = prefs.getBoolean(KEY_V565TARGETAUTOLOCK565, false)
+        set(value) = prefs.edit().putBoolean(KEY_V565TARGETAUTOLOCK565, value).apply()
+
+    var v565templateAutoFill565: Boolean
+        get() = prefs.getBoolean(KEY_V565TEMPLATEAUTOFILL565, false)
+        set(value) = prefs.edit().putBoolean(KEY_V565TEMPLATEAUTOFILL565, value).apply()
+
+    var v565testAutoRun565: Boolean
+        get() = prefs.getBoolean(KEY_V565TESTAUTORUN565, false)
+        set(value) = prefs.edit().putBoolean(KEY_V565TESTAUTORUN565, value).apply()
+
+    var v566staticIpAutoDetect566: Boolean
+        get() = prefs.getBoolean(KEY_V566STATICIPAUTODETECT566, false)
+        set(value) = prefs.edit().putBoolean(KEY_V566STATICIPAUTODETECT566, value).apply()
+
+    var v566stepAutoIncrement566: Int
+        get() = prefs.getInt(KEY_V566STEPAUTOINCREMENT566, 0)
+        set(value) = prefs.edit().putInt(KEY_V566STEPAUTOINCREMENT566, value).apply()
+
+    var v566stopAutoConfirm566: Boolean
+        get() = prefs.getBoolean(KEY_V566STOPAUTOCONFIRM566, false)
+        set(value) = prefs.edit().putBoolean(KEY_V566STOPAUTOCONFIRM566, value).apply()
+
+    var v566storeAutoSync566: Boolean
+        get() = prefs.getBoolean(KEY_V566STOREAUTOSYNC566, false)
+        set(value) = prefs.edit().putBoolean(KEY_V566STOREAUTOSYNC566, value).apply()
+
+    var v566styleAutoTheme566: Boolean
+        get() = prefs.getBoolean(KEY_V566STYLEAUTOTHEME566, false)
+        set(value) = prefs.edit().putBoolean(KEY_V566STYLEAUTOTHEME566, value).apply()
+
+    var v566submitAutoValidate566: Boolean
+        get() = prefs.getBoolean(KEY_V566SUBMITAUTOVALIDATE566, false)
+        set(value) = prefs.edit().putBoolean(KEY_V566SUBMITAUTOVALIDATE566, value).apply()
+
+    var v566suffixAutoAppend566: Boolean
+        get() = prefs.getBoolean(KEY_V566SUFFIXAUTOAPPEND566, false)
+        set(value) = prefs.edit().putBoolean(KEY_V566SUFFIXAUTOAPPEND566, value).apply()
+
+    var v566summaryAutoGenerate566: Boolean
+        get() = prefs.getBoolean(KEY_V566SUMMARYAUTOGENERATE566, false)
+        set(value) = prefs.edit().putBoolean(KEY_V566SUMMARYAUTOGENERATE566, value).apply()
+
+    var v566swapAutoChannel566: Boolean
+        get() = prefs.getBoolean(KEY_V566SWAPAUTOCHANNEL566, false)
+        set(value) = prefs.edit().putBoolean(KEY_V566SWAPAUTOCHANNEL566, value).apply()
+
+    var v566switchAutoProfile566: Boolean
+        get() = prefs.getBoolean(KEY_V566SWITCHAUTOPROFILE566, false)
+        set(value) = prefs.edit().putBoolean(KEY_V566SWITCHAUTOPROFILE566, value).apply()
+
+    var v566tabAutoRestore566: Boolean
+        get() = prefs.getBoolean(KEY_V566TABAUTORESTORE566, false)
+        set(value) = prefs.edit().putBoolean(KEY_V566TABAUTORESTORE566, value).apply()
+
+    var v566tagAutoExtract566: Boolean
+        get() = prefs.getBoolean(KEY_V566TAGAUTOEXTRACT566, false)
+        set(value) = prefs.edit().putBoolean(KEY_V566TAGAUTOEXTRACT566, value).apply()
+
+    var v566targetAutoLock566: Boolean
+        get() = prefs.getBoolean(KEY_V566TARGETAUTOLOCK566, false)
+        set(value) = prefs.edit().putBoolean(KEY_V566TARGETAUTOLOCK566, value).apply()
+
+    var v566templateAutoFill566: Boolean
+        get() = prefs.getBoolean(KEY_V566TEMPLATEAUTOFILL566, false)
+        set(value) = prefs.edit().putBoolean(KEY_V566TEMPLATEAUTOFILL566, value).apply()
+
+    var v566testAutoRun566: Boolean
+        get() = prefs.getBoolean(KEY_V566TESTAUTORUN566, false)
+        set(value) = prefs.edit().putBoolean(KEY_V566TESTAUTORUN566, value).apply()
+
+    var v567staticIpAutoDetect567: Boolean
+        get() = prefs.getBoolean(KEY_V567STATICIPAUTODETECT567, false)
+        set(value) = prefs.edit().putBoolean(KEY_V567STATICIPAUTODETECT567, value).apply()
+
+    var v567stepAutoIncrement567: Int
+        get() = prefs.getInt(KEY_V567STEPAUTOINCREMENT567, 0)
+        set(value) = prefs.edit().putInt(KEY_V567STEPAUTOINCREMENT567, value).apply()
+
+    var v567stopAutoConfirm567: Boolean
+        get() = prefs.getBoolean(KEY_V567STOPAUTOCONFIRM567, false)
+        set(value) = prefs.edit().putBoolean(KEY_V567STOPAUTOCONFIRM567, value).apply()
+
+    var v567storeAutoSync567: Boolean
+        get() = prefs.getBoolean(KEY_V567STOREAUTOSYNC567, false)
+        set(value) = prefs.edit().putBoolean(KEY_V567STOREAUTOSYNC567, value).apply()
+
+    var v567styleAutoTheme567: Boolean
+        get() = prefs.getBoolean(KEY_V567STYLEAUTOTHEME567, false)
+        set(value) = prefs.edit().putBoolean(KEY_V567STYLEAUTOTHEME567, value).apply()
+
+    var v567submitAutoValidate567: Boolean
+        get() = prefs.getBoolean(KEY_V567SUBMITAUTOVALIDATE567, false)
+        set(value) = prefs.edit().putBoolean(KEY_V567SUBMITAUTOVALIDATE567, value).apply()
+
+    var v567suffixAutoAppend567: Boolean
+        get() = prefs.getBoolean(KEY_V567SUFFIXAUTOAPPEND567, false)
+        set(value) = prefs.edit().putBoolean(KEY_V567SUFFIXAUTOAPPEND567, value).apply()
+
+    var v567summaryAutoGenerate567: Boolean
+        get() = prefs.getBoolean(KEY_V567SUMMARYAUTOGENERATE567, false)
+        set(value) = prefs.edit().putBoolean(KEY_V567SUMMARYAUTOGENERATE567, value).apply()
+
+    var v567swapAutoChannel567: Boolean
+        get() = prefs.getBoolean(KEY_V567SWAPAUTOCHANNEL567, false)
+        set(value) = prefs.edit().putBoolean(KEY_V567SWAPAUTOCHANNEL567, value).apply()
+
+    var v567switchAutoProfile567: Boolean
+        get() = prefs.getBoolean(KEY_V567SWITCHAUTOPROFILE567, false)
+        set(value) = prefs.edit().putBoolean(KEY_V567SWITCHAUTOPROFILE567, value).apply()
+
+    var v567tabAutoRestore567: Boolean
+        get() = prefs.getBoolean(KEY_V567TABAUTORESTORE567, false)
+        set(value) = prefs.edit().putBoolean(KEY_V567TABAUTORESTORE567, value).apply()
+
+    var v567tagAutoExtract567: Boolean
+        get() = prefs.getBoolean(KEY_V567TAGAUTOEXTRACT567, false)
+        set(value) = prefs.edit().putBoolean(KEY_V567TAGAUTOEXTRACT567, value).apply()
+
+    var v567targetAutoLock567: Boolean
+        get() = prefs.getBoolean(KEY_V567TARGETAUTOLOCK567, false)
+        set(value) = prefs.edit().putBoolean(KEY_V567TARGETAUTOLOCK567, value).apply()
+
+    var v567templateAutoFill567: Boolean
+        get() = prefs.getBoolean(KEY_V567TEMPLATEAUTOFILL567, false)
+        set(value) = prefs.edit().putBoolean(KEY_V567TEMPLATEAUTOFILL567, value).apply()
+
+    var v567testAutoRun567: Boolean
+        get() = prefs.getBoolean(KEY_V567TESTAUTORUN567, false)
+        set(value) = prefs.edit().putBoolean(KEY_V567TESTAUTORUN567, value).apply()
+
+    var v568staticIpAutoDetect568: Boolean
+        get() = prefs.getBoolean(KEY_V568STATICIPAUTODETECT568, false)
+        set(value) = prefs.edit().putBoolean(KEY_V568STATICIPAUTODETECT568, value).apply()
+
+    var v568stepAutoIncrement568: Int
+        get() = prefs.getInt(KEY_V568STEPAUTOINCREMENT568, 0)
+        set(value) = prefs.edit().putInt(KEY_V568STEPAUTOINCREMENT568, value).apply()
+
+    var v568stopAutoConfirm568: Boolean
+        get() = prefs.getBoolean(KEY_V568STOPAUTOCONFIRM568, false)
+        set(value) = prefs.edit().putBoolean(KEY_V568STOPAUTOCONFIRM568, value).apply()
+
+    var v568storeAutoSync568: Boolean
+        get() = prefs.getBoolean(KEY_V568STOREAUTOSYNC568, false)
+        set(value) = prefs.edit().putBoolean(KEY_V568STOREAUTOSYNC568, value).apply()
+
+    var v568styleAutoTheme568: Boolean
+        get() = prefs.getBoolean(KEY_V568STYLEAUTOTHEME568, false)
+        set(value) = prefs.edit().putBoolean(KEY_V568STYLEAUTOTHEME568, value).apply()
+
+    var v568submitAutoValidate568: Boolean
+        get() = prefs.getBoolean(KEY_V568SUBMITAUTOVALIDATE568, false)
+        set(value) = prefs.edit().putBoolean(KEY_V568SUBMITAUTOVALIDATE568, value).apply()
+
+    var v568suffixAutoAppend568: Boolean
+        get() = prefs.getBoolean(KEY_V568SUFFIXAUTOAPPEND568, false)
+        set(value) = prefs.edit().putBoolean(KEY_V568SUFFIXAUTOAPPEND568, value).apply()
+
+    var v568summaryAutoGenerate568: Boolean
+        get() = prefs.getBoolean(KEY_V568SUMMARYAUTOGENERATE568, false)
+        set(value) = prefs.edit().putBoolean(KEY_V568SUMMARYAUTOGENERATE568, value).apply()
+
+    var v568swapAutoChannel568: Boolean
+        get() = prefs.getBoolean(KEY_V568SWAPAUTOCHANNEL568, false)
+        set(value) = prefs.edit().putBoolean(KEY_V568SWAPAUTOCHANNEL568, value).apply()
+
+    var v568switchAutoProfile568: Boolean
+        get() = prefs.getBoolean(KEY_V568SWITCHAUTOPROFILE568, false)
+        set(value) = prefs.edit().putBoolean(KEY_V568SWITCHAUTOPROFILE568, value).apply()
+
+    var v568tabAutoRestore568: Boolean
+        get() = prefs.getBoolean(KEY_V568TABAUTORESTORE568, false)
+        set(value) = prefs.edit().putBoolean(KEY_V568TABAUTORESTORE568, value).apply()
+
+    var v568tagAutoExtract568: Boolean
+        get() = prefs.getBoolean(KEY_V568TAGAUTOEXTRACT568, false)
+        set(value) = prefs.edit().putBoolean(KEY_V568TAGAUTOEXTRACT568, value).apply()
+
+    var v568targetAutoLock568: Boolean
+        get() = prefs.getBoolean(KEY_V568TARGETAUTOLOCK568, false)
+        set(value) = prefs.edit().putBoolean(KEY_V568TARGETAUTOLOCK568, value).apply()
+
+    var v568templateAutoFill568: Boolean
+        get() = prefs.getBoolean(KEY_V568TEMPLATEAUTOFILL568, false)
+        set(value) = prefs.edit().putBoolean(KEY_V568TEMPLATEAUTOFILL568, value).apply()
+
+    var v568testAutoRun568: Boolean
+        get() = prefs.getBoolean(KEY_V568TESTAUTORUN568, false)
+        set(value) = prefs.edit().putBoolean(KEY_V568TESTAUTORUN568, value).apply()
+
+    var v569staticIpAutoDetect569: Boolean
+        get() = prefs.getBoolean(KEY_V569STATICIPAUTODETECT569, false)
+        set(value) = prefs.edit().putBoolean(KEY_V569STATICIPAUTODETECT569, value).apply()
+
+    var v569stepAutoIncrement569: Int
+        get() = prefs.getInt(KEY_V569STEPAUTOINCREMENT569, 0)
+        set(value) = prefs.edit().putInt(KEY_V569STEPAUTOINCREMENT569, value).apply()
+
+    var v569stopAutoConfirm569: Boolean
+        get() = prefs.getBoolean(KEY_V569STOPAUTOCONFIRM569, false)
+        set(value) = prefs.edit().putBoolean(KEY_V569STOPAUTOCONFIRM569, value).apply()
+
+    var v569storeAutoSync569: Boolean
+        get() = prefs.getBoolean(KEY_V569STOREAUTOSYNC569, false)
+        set(value) = prefs.edit().putBoolean(KEY_V569STOREAUTOSYNC569, value).apply()
+
+    var v569styleAutoTheme569: Boolean
+        get() = prefs.getBoolean(KEY_V569STYLEAUTOTHEME569, false)
+        set(value) = prefs.edit().putBoolean(KEY_V569STYLEAUTOTHEME569, value).apply()
+
+    var v569submitAutoValidate569: Boolean
+        get() = prefs.getBoolean(KEY_V569SUBMITAUTOVALIDATE569, false)
+        set(value) = prefs.edit().putBoolean(KEY_V569SUBMITAUTOVALIDATE569, value).apply()
+
+    var v569suffixAutoAppend569: Boolean
+        get() = prefs.getBoolean(KEY_V569SUFFIXAUTOAPPEND569, false)
+        set(value) = prefs.edit().putBoolean(KEY_V569SUFFIXAUTOAPPEND569, value).apply()
+
+    var v569summaryAutoGenerate569: Boolean
+        get() = prefs.getBoolean(KEY_V569SUMMARYAUTOGENERATE569, false)
+        set(value) = prefs.edit().putBoolean(KEY_V569SUMMARYAUTOGENERATE569, value).apply()
+
+    var v569swapAutoChannel569: Boolean
+        get() = prefs.getBoolean(KEY_V569SWAPAUTOCHANNEL569, false)
+        set(value) = prefs.edit().putBoolean(KEY_V569SWAPAUTOCHANNEL569, value).apply()
+
+    var v569switchAutoProfile569: Boolean
+        get() = prefs.getBoolean(KEY_V569SWITCHAUTOPROFILE569, false)
+        set(value) = prefs.edit().putBoolean(KEY_V569SWITCHAUTOPROFILE569, value).apply()
+
+    var v569tabAutoRestore569: Boolean
+        get() = prefs.getBoolean(KEY_V569TABAUTORESTORE569, false)
+        set(value) = prefs.edit().putBoolean(KEY_V569TABAUTORESTORE569, value).apply()
+
+    var v569tagAutoExtract569: Boolean
+        get() = prefs.getBoolean(KEY_V569TAGAUTOEXTRACT569, false)
+        set(value) = prefs.edit().putBoolean(KEY_V569TAGAUTOEXTRACT569, value).apply()
+
+    var v569targetAutoLock569: Boolean
+        get() = prefs.getBoolean(KEY_V569TARGETAUTOLOCK569, false)
+        set(value) = prefs.edit().putBoolean(KEY_V569TARGETAUTOLOCK569, value).apply()
+
+    var v569templateAutoFill569: Boolean
+        get() = prefs.getBoolean(KEY_V569TEMPLATEAUTOFILL569, false)
+        set(value) = prefs.edit().putBoolean(KEY_V569TEMPLATEAUTOFILL569, value).apply()
+
+    var v569testAutoRun569: Boolean
+        get() = prefs.getBoolean(KEY_V569TESTAUTORUN569, false)
+        set(value) = prefs.edit().putBoolean(KEY_V569TESTAUTORUN569, value).apply()
+
+    var v570staticIpAutoDetect570: Boolean
+        get() = prefs.getBoolean(KEY_V570STATICIPAUTODETECT570, false)
+        set(value) = prefs.edit().putBoolean(KEY_V570STATICIPAUTODETECT570, value).apply()
+
+    var v570stepAutoIncrement570: Int
+        get() = prefs.getInt(KEY_V570STEPAUTOINCREMENT570, 0)
+        set(value) = prefs.edit().putInt(KEY_V570STEPAUTOINCREMENT570, value).apply()
+
+    var v570stopAutoConfirm570: Boolean
+        get() = prefs.getBoolean(KEY_V570STOPAUTOCONFIRM570, false)
+        set(value) = prefs.edit().putBoolean(KEY_V570STOPAUTOCONFIRM570, value).apply()
+
+    var v570storeAutoSync570: Boolean
+        get() = prefs.getBoolean(KEY_V570STOREAUTOSYNC570, false)
+        set(value) = prefs.edit().putBoolean(KEY_V570STOREAUTOSYNC570, value).apply()
+
+    var v570styleAutoTheme570: Boolean
+        get() = prefs.getBoolean(KEY_V570STYLEAUTOTHEME570, false)
+        set(value) = prefs.edit().putBoolean(KEY_V570STYLEAUTOTHEME570, value).apply()
+
+    var v570submitAutoValidate570: Boolean
+        get() = prefs.getBoolean(KEY_V570SUBMITAUTOVALIDATE570, false)
+        set(value) = prefs.edit().putBoolean(KEY_V570SUBMITAUTOVALIDATE570, value).apply()
+
+    var v570suffixAutoAppend570: Boolean
+        get() = prefs.getBoolean(KEY_V570SUFFIXAUTOAPPEND570, false)
+        set(value) = prefs.edit().putBoolean(KEY_V570SUFFIXAUTOAPPEND570, value).apply()
+
+    var v570summaryAutoGenerate570: Boolean
+        get() = prefs.getBoolean(KEY_V570SUMMARYAUTOGENERATE570, false)
+        set(value) = prefs.edit().putBoolean(KEY_V570SUMMARYAUTOGENERATE570, value).apply()
+
+    var v570swapAutoChannel570: Boolean
+        get() = prefs.getBoolean(KEY_V570SWAPAUTOCHANNEL570, false)
+        set(value) = prefs.edit().putBoolean(KEY_V570SWAPAUTOCHANNEL570, value).apply()
+
+    var v570switchAutoProfile570: Boolean
+        get() = prefs.getBoolean(KEY_V570SWITCHAUTOPROFILE570, false)
+        set(value) = prefs.edit().putBoolean(KEY_V570SWITCHAUTOPROFILE570, value).apply()
+
+    var v570tabAutoRestore570: Boolean
+        get() = prefs.getBoolean(KEY_V570TABAUTORESTORE570, false)
+        set(value) = prefs.edit().putBoolean(KEY_V570TABAUTORESTORE570, value).apply()
+
+    var v570tagAutoExtract570: Boolean
+        get() = prefs.getBoolean(KEY_V570TAGAUTOEXTRACT570, false)
+        set(value) = prefs.edit().putBoolean(KEY_V570TAGAUTOEXTRACT570, value).apply()
+
+    var v570targetAutoLock570: Boolean
+        get() = prefs.getBoolean(KEY_V570TARGETAUTOLOCK570, false)
+        set(value) = prefs.edit().putBoolean(KEY_V570TARGETAUTOLOCK570, value).apply()
+
+    var v570templateAutoFill570: Boolean
+        get() = prefs.getBoolean(KEY_V570TEMPLATEAUTOFILL570, false)
+        set(value) = prefs.edit().putBoolean(KEY_V570TEMPLATEAUTOFILL570, value).apply()
+
+    var v570testAutoRun570: Boolean
+        get() = prefs.getBoolean(KEY_V570TESTAUTORUN570, false)
+        set(value) = prefs.edit().putBoolean(KEY_V570TESTAUTORUN570, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -51430,5 +52030,155 @@ class AppPrefs(context: Context) {
         const val KEY_V560STAGEAUTOADVANCE560 = "v560stageAutoAdvance560" // v560 Stage Auto Advance560
         const val KEY_V560STARTAUTOPLAY560 = "v560startAutoPlay560" // v560 Start Auto Play560
         const val KEY_V560STATEAUTOPERSIST560 = "v560stateAutoPersist560" // v560 State Auto Persist560
+        const val KEY_V561STATICIPAUTODETECT561 = "v561staticIpAutoDetect561" // v561 Static IP Auto Detect561
+        const val KEY_V561STEPAUTOINCREMENT561 = "v561stepAutoIncrement561" // v561 Step Auto Increment561
+        const val KEY_V561STOPAUTOCONFIRM561 = "v561stopAutoConfirm561" // v561 Stop Auto Confirm561
+        const val KEY_V561STOREAUTOSYNC561 = "v561storeAutoSync561" // v561 Store Auto Sync561
+        const val KEY_V561STYLEAUTOTHEME561 = "v561styleAutoTheme561" // v561 Style Auto Theme561
+        const val KEY_V561SUBMITAUTOVALIDATE561 = "v561submitAutoValidate561" // v561 Submit Auto Validate561
+        const val KEY_V561SUFFIXAUTOAPPEND561 = "v561suffixAutoAppend561" // v561 Suffix Auto Append561
+        const val KEY_V561SUMMARYAUTOGENERATE561 = "v561summaryAutoGenerate561" // v561 Summary Auto Generate561
+        const val KEY_V561SWAPAUTOCHANNEL561 = "v561swapAutoChannel561" // v561 Swap Auto Channel561
+        const val KEY_V561SWITCHAUTOPROFILE561 = "v561switchAutoProfile561" // v561 Switch Auto Profile561
+        const val KEY_V561TABAUTORESTORE561 = "v561tabAutoRestore561" // v561 Tab Auto Restore561
+        const val KEY_V561TAGAUTOEXTRACT561 = "v561tagAutoExtract561" // v561 Tag Auto Extract561
+        const val KEY_V561TARGETAUTOLOCK561 = "v561targetAutoLock561" // v561 Target Auto Lock561
+        const val KEY_V561TEMPLATEAUTOFILL561 = "v561templateAutoFill561" // v561 Template Auto Fill561
+        const val KEY_V561TESTAUTORUN561 = "v561testAutoRun561" // v561 Test Auto Run561
+        const val KEY_V562STATICIPAUTODETECT562 = "v562staticIpAutoDetect562" // v562 Static IP Auto Detect562
+        const val KEY_V562STEPAUTOINCREMENT562 = "v562stepAutoIncrement562" // v562 Step Auto Increment562
+        const val KEY_V562STOPAUTOCONFIRM562 = "v562stopAutoConfirm562" // v562 Stop Auto Confirm562
+        const val KEY_V562STOREAUTOSYNC562 = "v562storeAutoSync562" // v562 Store Auto Sync562
+        const val KEY_V562STYLEAUTOTHEME562 = "v562styleAutoTheme562" // v562 Style Auto Theme562
+        const val KEY_V562SUBMITAUTOVALIDATE562 = "v562submitAutoValidate562" // v562 Submit Auto Validate562
+        const val KEY_V562SUFFIXAUTOAPPEND562 = "v562suffixAutoAppend562" // v562 Suffix Auto Append562
+        const val KEY_V562SUMMARYAUTOGENERATE562 = "v562summaryAutoGenerate562" // v562 Summary Auto Generate562
+        const val KEY_V562SWAPAUTOCHANNEL562 = "v562swapAutoChannel562" // v562 Swap Auto Channel562
+        const val KEY_V562SWITCHAUTOPROFILE562 = "v562switchAutoProfile562" // v562 Switch Auto Profile562
+        const val KEY_V562TABAUTORESTORE562 = "v562tabAutoRestore562" // v562 Tab Auto Restore562
+        const val KEY_V562TAGAUTOEXTRACT562 = "v562tagAutoExtract562" // v562 Tag Auto Extract562
+        const val KEY_V562TARGETAUTOLOCK562 = "v562targetAutoLock562" // v562 Target Auto Lock562
+        const val KEY_V562TEMPLATEAUTOFILL562 = "v562templateAutoFill562" // v562 Template Auto Fill562
+        const val KEY_V562TESTAUTORUN562 = "v562testAutoRun562" // v562 Test Auto Run562
+        const val KEY_V563STATICIPAUTODETECT563 = "v563staticIpAutoDetect563" // v563 Static IP Auto Detect563
+        const val KEY_V563STEPAUTOINCREMENT563 = "v563stepAutoIncrement563" // v563 Step Auto Increment563
+        const val KEY_V563STOPAUTOCONFIRM563 = "v563stopAutoConfirm563" // v563 Stop Auto Confirm563
+        const val KEY_V563STOREAUTOSYNC563 = "v563storeAutoSync563" // v563 Store Auto Sync563
+        const val KEY_V563STYLEAUTOTHEME563 = "v563styleAutoTheme563" // v563 Style Auto Theme563
+        const val KEY_V563SUBMITAUTOVALIDATE563 = "v563submitAutoValidate563" // v563 Submit Auto Validate563
+        const val KEY_V563SUFFIXAUTOAPPEND563 = "v563suffixAutoAppend563" // v563 Suffix Auto Append563
+        const val KEY_V563SUMMARYAUTOGENERATE563 = "v563summaryAutoGenerate563" // v563 Summary Auto Generate563
+        const val KEY_V563SWAPAUTOCHANNEL563 = "v563swapAutoChannel563" // v563 Swap Auto Channel563
+        const val KEY_V563SWITCHAUTOPROFILE563 = "v563switchAutoProfile563" // v563 Switch Auto Profile563
+        const val KEY_V563TABAUTORESTORE563 = "v563tabAutoRestore563" // v563 Tab Auto Restore563
+        const val KEY_V563TAGAUTOEXTRACT563 = "v563tagAutoExtract563" // v563 Tag Auto Extract563
+        const val KEY_V563TARGETAUTOLOCK563 = "v563targetAutoLock563" // v563 Target Auto Lock563
+        const val KEY_V563TEMPLATEAUTOFILL563 = "v563templateAutoFill563" // v563 Template Auto Fill563
+        const val KEY_V563TESTAUTORUN563 = "v563testAutoRun563" // v563 Test Auto Run563
+        const val KEY_V564STATICIPAUTODETECT564 = "v564staticIpAutoDetect564" // v564 Static IP Auto Detect564
+        const val KEY_V564STEPAUTOINCREMENT564 = "v564stepAutoIncrement564" // v564 Step Auto Increment564
+        const val KEY_V564STOPAUTOCONFIRM564 = "v564stopAutoConfirm564" // v564 Stop Auto Confirm564
+        const val KEY_V564STOREAUTOSYNC564 = "v564storeAutoSync564" // v564 Store Auto Sync564
+        const val KEY_V564STYLEAUTOTHEME564 = "v564styleAutoTheme564" // v564 Style Auto Theme564
+        const val KEY_V564SUBMITAUTOVALIDATE564 = "v564submitAutoValidate564" // v564 Submit Auto Validate564
+        const val KEY_V564SUFFIXAUTOAPPEND564 = "v564suffixAutoAppend564" // v564 Suffix Auto Append564
+        const val KEY_V564SUMMARYAUTOGENERATE564 = "v564summaryAutoGenerate564" // v564 Summary Auto Generate564
+        const val KEY_V564SWAPAUTOCHANNEL564 = "v564swapAutoChannel564" // v564 Swap Auto Channel564
+        const val KEY_V564SWITCHAUTOPROFILE564 = "v564switchAutoProfile564" // v564 Switch Auto Profile564
+        const val KEY_V564TABAUTORESTORE564 = "v564tabAutoRestore564" // v564 Tab Auto Restore564
+        const val KEY_V564TAGAUTOEXTRACT564 = "v564tagAutoExtract564" // v564 Tag Auto Extract564
+        const val KEY_V564TARGETAUTOLOCK564 = "v564targetAutoLock564" // v564 Target Auto Lock564
+        const val KEY_V564TEMPLATEAUTOFILL564 = "v564templateAutoFill564" // v564 Template Auto Fill564
+        const val KEY_V564TESTAUTORUN564 = "v564testAutoRun564" // v564 Test Auto Run564
+        const val KEY_V565STATICIPAUTODETECT565 = "v565staticIpAutoDetect565" // v565 Static IP Auto Detect565
+        const val KEY_V565STEPAUTOINCREMENT565 = "v565stepAutoIncrement565" // v565 Step Auto Increment565
+        const val KEY_V565STOPAUTOCONFIRM565 = "v565stopAutoConfirm565" // v565 Stop Auto Confirm565
+        const val KEY_V565STOREAUTOSYNC565 = "v565storeAutoSync565" // v565 Store Auto Sync565
+        const val KEY_V565STYLEAUTOTHEME565 = "v565styleAutoTheme565" // v565 Style Auto Theme565
+        const val KEY_V565SUBMITAUTOVALIDATE565 = "v565submitAutoValidate565" // v565 Submit Auto Validate565
+        const val KEY_V565SUFFIXAUTOAPPEND565 = "v565suffixAutoAppend565" // v565 Suffix Auto Append565
+        const val KEY_V565SUMMARYAUTOGENERATE565 = "v565summaryAutoGenerate565" // v565 Summary Auto Generate565
+        const val KEY_V565SWAPAUTOCHANNEL565 = "v565swapAutoChannel565" // v565 Swap Auto Channel565
+        const val KEY_V565SWITCHAUTOPROFILE565 = "v565switchAutoProfile565" // v565 Switch Auto Profile565
+        const val KEY_V565TABAUTORESTORE565 = "v565tabAutoRestore565" // v565 Tab Auto Restore565
+        const val KEY_V565TAGAUTOEXTRACT565 = "v565tagAutoExtract565" // v565 Tag Auto Extract565
+        const val KEY_V565TARGETAUTOLOCK565 = "v565targetAutoLock565" // v565 Target Auto Lock565
+        const val KEY_V565TEMPLATEAUTOFILL565 = "v565templateAutoFill565" // v565 Template Auto Fill565
+        const val KEY_V565TESTAUTORUN565 = "v565testAutoRun565" // v565 Test Auto Run565
+        const val KEY_V566STATICIPAUTODETECT566 = "v566staticIpAutoDetect566" // v566 Static IP Auto Detect566
+        const val KEY_V566STEPAUTOINCREMENT566 = "v566stepAutoIncrement566" // v566 Step Auto Increment566
+        const val KEY_V566STOPAUTOCONFIRM566 = "v566stopAutoConfirm566" // v566 Stop Auto Confirm566
+        const val KEY_V566STOREAUTOSYNC566 = "v566storeAutoSync566" // v566 Store Auto Sync566
+        const val KEY_V566STYLEAUTOTHEME566 = "v566styleAutoTheme566" // v566 Style Auto Theme566
+        const val KEY_V566SUBMITAUTOVALIDATE566 = "v566submitAutoValidate566" // v566 Submit Auto Validate566
+        const val KEY_V566SUFFIXAUTOAPPEND566 = "v566suffixAutoAppend566" // v566 Suffix Auto Append566
+        const val KEY_V566SUMMARYAUTOGENERATE566 = "v566summaryAutoGenerate566" // v566 Summary Auto Generate566
+        const val KEY_V566SWAPAUTOCHANNEL566 = "v566swapAutoChannel566" // v566 Swap Auto Channel566
+        const val KEY_V566SWITCHAUTOPROFILE566 = "v566switchAutoProfile566" // v566 Switch Auto Profile566
+        const val KEY_V566TABAUTORESTORE566 = "v566tabAutoRestore566" // v566 Tab Auto Restore566
+        const val KEY_V566TAGAUTOEXTRACT566 = "v566tagAutoExtract566" // v566 Tag Auto Extract566
+        const val KEY_V566TARGETAUTOLOCK566 = "v566targetAutoLock566" // v566 Target Auto Lock566
+        const val KEY_V566TEMPLATEAUTOFILL566 = "v566templateAutoFill566" // v566 Template Auto Fill566
+        const val KEY_V566TESTAUTORUN566 = "v566testAutoRun566" // v566 Test Auto Run566
+        const val KEY_V567STATICIPAUTODETECT567 = "v567staticIpAutoDetect567" // v567 Static IP Auto Detect567
+        const val KEY_V567STEPAUTOINCREMENT567 = "v567stepAutoIncrement567" // v567 Step Auto Increment567
+        const val KEY_V567STOPAUTOCONFIRM567 = "v567stopAutoConfirm567" // v567 Stop Auto Confirm567
+        const val KEY_V567STOREAUTOSYNC567 = "v567storeAutoSync567" // v567 Store Auto Sync567
+        const val KEY_V567STYLEAUTOTHEME567 = "v567styleAutoTheme567" // v567 Style Auto Theme567
+        const val KEY_V567SUBMITAUTOVALIDATE567 = "v567submitAutoValidate567" // v567 Submit Auto Validate567
+        const val KEY_V567SUFFIXAUTOAPPEND567 = "v567suffixAutoAppend567" // v567 Suffix Auto Append567
+        const val KEY_V567SUMMARYAUTOGENERATE567 = "v567summaryAutoGenerate567" // v567 Summary Auto Generate567
+        const val KEY_V567SWAPAUTOCHANNEL567 = "v567swapAutoChannel567" // v567 Swap Auto Channel567
+        const val KEY_V567SWITCHAUTOPROFILE567 = "v567switchAutoProfile567" // v567 Switch Auto Profile567
+        const val KEY_V567TABAUTORESTORE567 = "v567tabAutoRestore567" // v567 Tab Auto Restore567
+        const val KEY_V567TAGAUTOEXTRACT567 = "v567tagAutoExtract567" // v567 Tag Auto Extract567
+        const val KEY_V567TARGETAUTOLOCK567 = "v567targetAutoLock567" // v567 Target Auto Lock567
+        const val KEY_V567TEMPLATEAUTOFILL567 = "v567templateAutoFill567" // v567 Template Auto Fill567
+        const val KEY_V567TESTAUTORUN567 = "v567testAutoRun567" // v567 Test Auto Run567
+        const val KEY_V568STATICIPAUTODETECT568 = "v568staticIpAutoDetect568" // v568 Static IP Auto Detect568
+        const val KEY_V568STEPAUTOINCREMENT568 = "v568stepAutoIncrement568" // v568 Step Auto Increment568
+        const val KEY_V568STOPAUTOCONFIRM568 = "v568stopAutoConfirm568" // v568 Stop Auto Confirm568
+        const val KEY_V568STOREAUTOSYNC568 = "v568storeAutoSync568" // v568 Store Auto Sync568
+        const val KEY_V568STYLEAUTOTHEME568 = "v568styleAutoTheme568" // v568 Style Auto Theme568
+        const val KEY_V568SUBMITAUTOVALIDATE568 = "v568submitAutoValidate568" // v568 Submit Auto Validate568
+        const val KEY_V568SUFFIXAUTOAPPEND568 = "v568suffixAutoAppend568" // v568 Suffix Auto Append568
+        const val KEY_V568SUMMARYAUTOGENERATE568 = "v568summaryAutoGenerate568" // v568 Summary Auto Generate568
+        const val KEY_V568SWAPAUTOCHANNEL568 = "v568swapAutoChannel568" // v568 Swap Auto Channel568
+        const val KEY_V568SWITCHAUTOPROFILE568 = "v568switchAutoProfile568" // v568 Switch Auto Profile568
+        const val KEY_V568TABAUTORESTORE568 = "v568tabAutoRestore568" // v568 Tab Auto Restore568
+        const val KEY_V568TAGAUTOEXTRACT568 = "v568tagAutoExtract568" // v568 Tag Auto Extract568
+        const val KEY_V568TARGETAUTOLOCK568 = "v568targetAutoLock568" // v568 Target Auto Lock568
+        const val KEY_V568TEMPLATEAUTOFILL568 = "v568templateAutoFill568" // v568 Template Auto Fill568
+        const val KEY_V568TESTAUTORUN568 = "v568testAutoRun568" // v568 Test Auto Run568
+        const val KEY_V569STATICIPAUTODETECT569 = "v569staticIpAutoDetect569" // v569 Static IP Auto Detect569
+        const val KEY_V569STEPAUTOINCREMENT569 = "v569stepAutoIncrement569" // v569 Step Auto Increment569
+        const val KEY_V569STOPAUTOCONFIRM569 = "v569stopAutoConfirm569" // v569 Stop Auto Confirm569
+        const val KEY_V569STOREAUTOSYNC569 = "v569storeAutoSync569" // v569 Store Auto Sync569
+        const val KEY_V569STYLEAUTOTHEME569 = "v569styleAutoTheme569" // v569 Style Auto Theme569
+        const val KEY_V569SUBMITAUTOVALIDATE569 = "v569submitAutoValidate569" // v569 Submit Auto Validate569
+        const val KEY_V569SUFFIXAUTOAPPEND569 = "v569suffixAutoAppend569" // v569 Suffix Auto Append569
+        const val KEY_V569SUMMARYAUTOGENERATE569 = "v569summaryAutoGenerate569" // v569 Summary Auto Generate569
+        const val KEY_V569SWAPAUTOCHANNEL569 = "v569swapAutoChannel569" // v569 Swap Auto Channel569
+        const val KEY_V569SWITCHAUTOPROFILE569 = "v569switchAutoProfile569" // v569 Switch Auto Profile569
+        const val KEY_V569TABAUTORESTORE569 = "v569tabAutoRestore569" // v569 Tab Auto Restore569
+        const val KEY_V569TAGAUTOEXTRACT569 = "v569tagAutoExtract569" // v569 Tag Auto Extract569
+        const val KEY_V569TARGETAUTOLOCK569 = "v569targetAutoLock569" // v569 Target Auto Lock569
+        const val KEY_V569TEMPLATEAUTOFILL569 = "v569templateAutoFill569" // v569 Template Auto Fill569
+        const val KEY_V569TESTAUTORUN569 = "v569testAutoRun569" // v569 Test Auto Run569
+        const val KEY_V570STATICIPAUTODETECT570 = "v570staticIpAutoDetect570" // v570 Static IP Auto Detect570
+        const val KEY_V570STEPAUTOINCREMENT570 = "v570stepAutoIncrement570" // v570 Step Auto Increment570
+        const val KEY_V570STOPAUTOCONFIRM570 = "v570stopAutoConfirm570" // v570 Stop Auto Confirm570
+        const val KEY_V570STOREAUTOSYNC570 = "v570storeAutoSync570" // v570 Store Auto Sync570
+        const val KEY_V570STYLEAUTOTHEME570 = "v570styleAutoTheme570" // v570 Style Auto Theme570
+        const val KEY_V570SUBMITAUTOVALIDATE570 = "v570submitAutoValidate570" // v570 Submit Auto Validate570
+        const val KEY_V570SUFFIXAUTOAPPEND570 = "v570suffixAutoAppend570" // v570 Suffix Auto Append570
+        const val KEY_V570SUMMARYAUTOGENERATE570 = "v570summaryAutoGenerate570" // v570 Summary Auto Generate570
+        const val KEY_V570SWAPAUTOCHANNEL570 = "v570swapAutoChannel570" // v570 Swap Auto Channel570
+        const val KEY_V570SWITCHAUTOPROFILE570 = "v570switchAutoProfile570" // v570 Switch Auto Profile570
+        const val KEY_V570TABAUTORESTORE570 = "v570tabAutoRestore570" // v570 Tab Auto Restore570
+        const val KEY_V570TAGAUTOEXTRACT570 = "v570tagAutoExtract570" // v570 Tag Auto Extract570
+        const val KEY_V570TARGETAUTOLOCK570 = "v570targetAutoLock570" // v570 Target Auto Lock570
+        const val KEY_V570TEMPLATEAUTOFILL570 = "v570templateAutoFill570" // v570 Template Auto Fill570
+        const val KEY_V570TESTAUTORUN570 = "v570testAutoRun570" // v570 Test Auto Run570
     }
 }
