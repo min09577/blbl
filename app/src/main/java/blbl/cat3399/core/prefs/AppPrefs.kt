@@ -33248,6 +33248,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getInt(KEY_V440GALLERYAUTOLAYOUT440, 0)
         set(value) = prefs.edit().putInt(KEY_V440GALLERYAUTOLAYOUT440, value).apply()
 
+    var v441gateAutoAuth441: Boolean
+        get() = prefs.getBoolean(KEY_V441GATEAUTOAUTH441, false)
+        set(value) = prefs.edit().putBoolean(KEY_V441GATEAUTOAUTH441, value).apply()
+
+    var v441globalSyncEnabled441: Boolean
+        get() = prefs.getBoolean(KEY_V441GLOBALSYNCENABLED441, false)
+        set(value) = prefs.edit().putBoolean(KEY_V441GLOBALSYNCENABLED441, value).apply()
+
+    var v441groupAutoCreate441: Boolean
+        get() = prefs.getBoolean(KEY_V441GROUPAUTOCREATE441, false)
+        set(value) = prefs.edit().putBoolean(KEY_V441GROUPAUTOCREATE441, value).apply()
+
+    var v441growShrinkEnabled441: Boolean
+        get() = prefs.getBoolean(KEY_V441GROWSHRINKENABLED441, false)
+        set(value) = prefs.edit().putBoolean(KEY_V441GROWSHRINKENABLED441, value).apply()
+
+    var v441guideAutoShow441: Boolean
+        get() = prefs.getBoolean(KEY_V441GUIDEAUTOSHOW441, false)
+        set(value) = prefs.edit().putBoolean(KEY_V441GUIDEAUTOSHOW441, value).apply()
+
+    var v441hangDetectionMs441: Int
+        get() = prefs.getInt(KEY_V441HANGDETECTIONMS441, 0)
+        set(value) = prefs.edit().putInt(KEY_V441HANGDETECTIONMS441, value).apply()
+
+    var v441hashVerifyAuto441: Boolean
+        get() = prefs.getBoolean(KEY_V441HASHVERIFYAUTO441, false)
+        set(value) = prefs.edit().putBoolean(KEY_V441HASHVERIFYAUTO441, value).apply()
+
+    var v441headPhoneAutoPause441: Boolean
+        get() = prefs.getBoolean(KEY_V441HEADPHONEAUTOPAUSE441, false)
+        set(value) = prefs.edit().putBoolean(KEY_V441HEADPHONEAUTOPAUSE441, value).apply()
+
+    var v441heartBeatInterval441: Int
+        get() = prefs.getInt(KEY_V441HEARTBEATINTERVAL441, 0)
+        set(value) = prefs.edit().putInt(KEY_V441HEARTBEATINTERVAL441, value).apply()
+
+    var v441heatMonitorEnabled441: Boolean
+        get() = prefs.getBoolean(KEY_V441HEATMONITORENABLED441, false)
+        set(value) = prefs.edit().putBoolean(KEY_V441HEATMONITORENABLED441, value).apply()
+
+    var v441hideOnScroll441: Boolean
+        get() = prefs.getBoolean(KEY_V441HIDEONSCROLL441, false)
+        set(value) = prefs.edit().putBoolean(KEY_V441HIDEONSCROLL441, value).apply()
+
+    var v441holdToFastForward441: Boolean
+        get() = prefs.getBoolean(KEY_V441HOLDTOFASTFORWARD441, false)
+        set(value) = prefs.edit().putBoolean(KEY_V441HOLDTOFASTFORWARD441, value).apply()
+
+    var v441hookAutoRegister441: Boolean
+        get() = prefs.getBoolean(KEY_V441HOOKAUTOREGISTER441, false)
+        set(value) = prefs.edit().putBoolean(KEY_V441HOOKAUTOREGISTER441, value).apply()
+
+    var v441hotReloadEnabled441: Boolean
+        get() = prefs.getBoolean(KEY_V441HOTRELOADENABLED441, false)
+        set(value) = prefs.edit().putBoolean(KEY_V441HOTRELOADENABLED441, value).apply()
+
+    var v441hubAutoDiscover441: Boolean
+        get() = prefs.getBoolean(KEY_V441HUBAUTODISCOVER441, false)
+        set(value) = prefs.edit().putBoolean(KEY_V441HUBAUTODISCOVER441, value).apply()
+
+    var v442gateAutoAuth442: Boolean
+        get() = prefs.getBoolean(KEY_V442GATEAUTOAUTH442, false)
+        set(value) = prefs.edit().putBoolean(KEY_V442GATEAUTOAUTH442, value).apply()
+
+    var v442globalSyncEnabled442: Boolean
+        get() = prefs.getBoolean(KEY_V442GLOBALSYNCENABLED442, false)
+        set(value) = prefs.edit().putBoolean(KEY_V442GLOBALSYNCENABLED442, value).apply()
+
+    var v442groupAutoCreate442: Boolean
+        get() = prefs.getBoolean(KEY_V442GROUPAUTOCREATE442, false)
+        set(value) = prefs.edit().putBoolean(KEY_V442GROUPAUTOCREATE442, value).apply()
+
+    var v442growShrinkEnabled442: Boolean
+        get() = prefs.getBoolean(KEY_V442GROWSHRINKENABLED442, false)
+        set(value) = prefs.edit().putBoolean(KEY_V442GROWSHRINKENABLED442, value).apply()
+
+    var v442guideAutoShow442: Boolean
+        get() = prefs.getBoolean(KEY_V442GUIDEAUTOSHOW442, false)
+        set(value) = prefs.edit().putBoolean(KEY_V442GUIDEAUTOSHOW442, value).apply()
+
+    var v442hangDetectionMs442: Int
+        get() = prefs.getInt(KEY_V442HANGDETECTIONMS442, 0)
+        set(value) = prefs.edit().putInt(KEY_V442HANGDETECTIONMS442, value).apply()
+
+    var v442hashVerifyAuto442: Boolean
+        get() = prefs.getBoolean(KEY_V442HASHVERIFYAUTO442, false)
+        set(value) = prefs.edit().putBoolean(KEY_V442HASHVERIFYAUTO442, value).apply()
+
+    var v442headPhoneAutoPause442: Boolean
+        get() = prefs.getBoolean(KEY_V442HEADPHONEAUTOPAUSE442, false)
+        set(value) = prefs.edit().putBoolean(KEY_V442HEADPHONEAUTOPAUSE442, value).apply()
+
+    var v442heartBeatInterval442: Int
+        get() = prefs.getInt(KEY_V442HEARTBEATINTERVAL442, 0)
+        set(value) = prefs.edit().putInt(KEY_V442HEARTBEATINTERVAL442, value).apply()
+
+    var v442heatMonitorEnabled442: Boolean
+        get() = prefs.getBoolean(KEY_V442HEATMONITORENABLED442, false)
+        set(value) = prefs.edit().putBoolean(KEY_V442HEATMONITORENABLED442, value).apply()
+
+    var v442hideOnScroll442: Boolean
+        get() = prefs.getBoolean(KEY_V442HIDEONSCROLL442, false)
+        set(value) = prefs.edit().putBoolean(KEY_V442HIDEONSCROLL442, value).apply()
+
+    var v442holdToFastForward442: Boolean
+        get() = prefs.getBoolean(KEY_V442HOLDTOFASTFORWARD442, false)
+        set(value) = prefs.edit().putBoolean(KEY_V442HOLDTOFASTFORWARD442, value).apply()
+
+    var v442hookAutoRegister442: Boolean
+        get() = prefs.getBoolean(KEY_V442HOOKAUTOREGISTER442, false)
+        set(value) = prefs.edit().putBoolean(KEY_V442HOOKAUTOREGISTER442, value).apply()
+
+    var v442hotReloadEnabled442: Boolean
+        get() = prefs.getBoolean(KEY_V442HOTRELOADENABLED442, false)
+        set(value) = prefs.edit().putBoolean(KEY_V442HOTRELOADENABLED442, value).apply()
+
+    var v442hubAutoDiscover442: Boolean
+        get() = prefs.getBoolean(KEY_V442HUBAUTODISCOVER442, false)
+        set(value) = prefs.edit().putBoolean(KEY_V442HUBAUTODISCOVER442, value).apply()
+
+    var v443gateAutoAuth443: Boolean
+        get() = prefs.getBoolean(KEY_V443GATEAUTOAUTH443, false)
+        set(value) = prefs.edit().putBoolean(KEY_V443GATEAUTOAUTH443, value).apply()
+
+    var v443globalSyncEnabled443: Boolean
+        get() = prefs.getBoolean(KEY_V443GLOBALSYNCENABLED443, false)
+        set(value) = prefs.edit().putBoolean(KEY_V443GLOBALSYNCENABLED443, value).apply()
+
+    var v443groupAutoCreate443: Boolean
+        get() = prefs.getBoolean(KEY_V443GROUPAUTOCREATE443, false)
+        set(value) = prefs.edit().putBoolean(KEY_V443GROUPAUTOCREATE443, value).apply()
+
+    var v443growShrinkEnabled443: Boolean
+        get() = prefs.getBoolean(KEY_V443GROWSHRINKENABLED443, false)
+        set(value) = prefs.edit().putBoolean(KEY_V443GROWSHRINKENABLED443, value).apply()
+
+    var v443guideAutoShow443: Boolean
+        get() = prefs.getBoolean(KEY_V443GUIDEAUTOSHOW443, false)
+        set(value) = prefs.edit().putBoolean(KEY_V443GUIDEAUTOSHOW443, value).apply()
+
+    var v443hangDetectionMs443: Int
+        get() = prefs.getInt(KEY_V443HANGDETECTIONMS443, 0)
+        set(value) = prefs.edit().putInt(KEY_V443HANGDETECTIONMS443, value).apply()
+
+    var v443hashVerifyAuto443: Boolean
+        get() = prefs.getBoolean(KEY_V443HASHVERIFYAUTO443, false)
+        set(value) = prefs.edit().putBoolean(KEY_V443HASHVERIFYAUTO443, value).apply()
+
+    var v443headPhoneAutoPause443: Boolean
+        get() = prefs.getBoolean(KEY_V443HEADPHONEAUTOPAUSE443, false)
+        set(value) = prefs.edit().putBoolean(KEY_V443HEADPHONEAUTOPAUSE443, value).apply()
+
+    var v443heartBeatInterval443: Int
+        get() = prefs.getInt(KEY_V443HEARTBEATINTERVAL443, 0)
+        set(value) = prefs.edit().putInt(KEY_V443HEARTBEATINTERVAL443, value).apply()
+
+    var v443heatMonitorEnabled443: Boolean
+        get() = prefs.getBoolean(KEY_V443HEATMONITORENABLED443, false)
+        set(value) = prefs.edit().putBoolean(KEY_V443HEATMONITORENABLED443, value).apply()
+
+    var v443hideOnScroll443: Boolean
+        get() = prefs.getBoolean(KEY_V443HIDEONSCROLL443, false)
+        set(value) = prefs.edit().putBoolean(KEY_V443HIDEONSCROLL443, value).apply()
+
+    var v443holdToFastForward443: Boolean
+        get() = prefs.getBoolean(KEY_V443HOLDTOFASTFORWARD443, false)
+        set(value) = prefs.edit().putBoolean(KEY_V443HOLDTOFASTFORWARD443, value).apply()
+
+    var v443hookAutoRegister443: Boolean
+        get() = prefs.getBoolean(KEY_V443HOOKAUTOREGISTER443, false)
+        set(value) = prefs.edit().putBoolean(KEY_V443HOOKAUTOREGISTER443, value).apply()
+
+    var v443hotReloadEnabled443: Boolean
+        get() = prefs.getBoolean(KEY_V443HOTRELOADENABLED443, false)
+        set(value) = prefs.edit().putBoolean(KEY_V443HOTRELOADENABLED443, value).apply()
+
+    var v443hubAutoDiscover443: Boolean
+        get() = prefs.getBoolean(KEY_V443HUBAUTODISCOVER443, false)
+        set(value) = prefs.edit().putBoolean(KEY_V443HUBAUTODISCOVER443, value).apply()
+
+    var v444gateAutoAuth444: Boolean
+        get() = prefs.getBoolean(KEY_V444GATEAUTOAUTH444, false)
+        set(value) = prefs.edit().putBoolean(KEY_V444GATEAUTOAUTH444, value).apply()
+
+    var v444globalSyncEnabled444: Boolean
+        get() = prefs.getBoolean(KEY_V444GLOBALSYNCENABLED444, false)
+        set(value) = prefs.edit().putBoolean(KEY_V444GLOBALSYNCENABLED444, value).apply()
+
+    var v444groupAutoCreate444: Boolean
+        get() = prefs.getBoolean(KEY_V444GROUPAUTOCREATE444, false)
+        set(value) = prefs.edit().putBoolean(KEY_V444GROUPAUTOCREATE444, value).apply()
+
+    var v444growShrinkEnabled444: Boolean
+        get() = prefs.getBoolean(KEY_V444GROWSHRINKENABLED444, false)
+        set(value) = prefs.edit().putBoolean(KEY_V444GROWSHRINKENABLED444, value).apply()
+
+    var v444guideAutoShow444: Boolean
+        get() = prefs.getBoolean(KEY_V444GUIDEAUTOSHOW444, false)
+        set(value) = prefs.edit().putBoolean(KEY_V444GUIDEAUTOSHOW444, value).apply()
+
+    var v444hangDetectionMs444: Int
+        get() = prefs.getInt(KEY_V444HANGDETECTIONMS444, 0)
+        set(value) = prefs.edit().putInt(KEY_V444HANGDETECTIONMS444, value).apply()
+
+    var v444hashVerifyAuto444: Boolean
+        get() = prefs.getBoolean(KEY_V444HASHVERIFYAUTO444, false)
+        set(value) = prefs.edit().putBoolean(KEY_V444HASHVERIFYAUTO444, value).apply()
+
+    var v444headPhoneAutoPause444: Boolean
+        get() = prefs.getBoolean(KEY_V444HEADPHONEAUTOPAUSE444, false)
+        set(value) = prefs.edit().putBoolean(KEY_V444HEADPHONEAUTOPAUSE444, value).apply()
+
+    var v444heartBeatInterval444: Int
+        get() = prefs.getInt(KEY_V444HEARTBEATINTERVAL444, 0)
+        set(value) = prefs.edit().putInt(KEY_V444HEARTBEATINTERVAL444, value).apply()
+
+    var v444heatMonitorEnabled444: Boolean
+        get() = prefs.getBoolean(KEY_V444HEATMONITORENABLED444, false)
+        set(value) = prefs.edit().putBoolean(KEY_V444HEATMONITORENABLED444, value).apply()
+
+    var v444hideOnScroll444: Boolean
+        get() = prefs.getBoolean(KEY_V444HIDEONSCROLL444, false)
+        set(value) = prefs.edit().putBoolean(KEY_V444HIDEONSCROLL444, value).apply()
+
+    var v444holdToFastForward444: Boolean
+        get() = prefs.getBoolean(KEY_V444HOLDTOFASTFORWARD444, false)
+        set(value) = prefs.edit().putBoolean(KEY_V444HOLDTOFASTFORWARD444, value).apply()
+
+    var v444hookAutoRegister444: Boolean
+        get() = prefs.getBoolean(KEY_V444HOOKAUTOREGISTER444, false)
+        set(value) = prefs.edit().putBoolean(KEY_V444HOOKAUTOREGISTER444, value).apply()
+
+    var v444hotReloadEnabled444: Boolean
+        get() = prefs.getBoolean(KEY_V444HOTRELOADENABLED444, false)
+        set(value) = prefs.edit().putBoolean(KEY_V444HOTRELOADENABLED444, value).apply()
+
+    var v444hubAutoDiscover444: Boolean
+        get() = prefs.getBoolean(KEY_V444HUBAUTODISCOVER444, false)
+        set(value) = prefs.edit().putBoolean(KEY_V444HUBAUTODISCOVER444, value).apply()
+
+    var v445gateAutoAuth445: Boolean
+        get() = prefs.getBoolean(KEY_V445GATEAUTOAUTH445, false)
+        set(value) = prefs.edit().putBoolean(KEY_V445GATEAUTOAUTH445, value).apply()
+
+    var v445globalSyncEnabled445: Boolean
+        get() = prefs.getBoolean(KEY_V445GLOBALSYNCENABLED445, false)
+        set(value) = prefs.edit().putBoolean(KEY_V445GLOBALSYNCENABLED445, value).apply()
+
+    var v445groupAutoCreate445: Boolean
+        get() = prefs.getBoolean(KEY_V445GROUPAUTOCREATE445, false)
+        set(value) = prefs.edit().putBoolean(KEY_V445GROUPAUTOCREATE445, value).apply()
+
+    var v445growShrinkEnabled445: Boolean
+        get() = prefs.getBoolean(KEY_V445GROWSHRINKENABLED445, false)
+        set(value) = prefs.edit().putBoolean(KEY_V445GROWSHRINKENABLED445, value).apply()
+
+    var v445guideAutoShow445: Boolean
+        get() = prefs.getBoolean(KEY_V445GUIDEAUTOSHOW445, false)
+        set(value) = prefs.edit().putBoolean(KEY_V445GUIDEAUTOSHOW445, value).apply()
+
+    var v445hangDetectionMs445: Int
+        get() = prefs.getInt(KEY_V445HANGDETECTIONMS445, 0)
+        set(value) = prefs.edit().putInt(KEY_V445HANGDETECTIONMS445, value).apply()
+
+    var v445hashVerifyAuto445: Boolean
+        get() = prefs.getBoolean(KEY_V445HASHVERIFYAUTO445, false)
+        set(value) = prefs.edit().putBoolean(KEY_V445HASHVERIFYAUTO445, value).apply()
+
+    var v445headPhoneAutoPause445: Boolean
+        get() = prefs.getBoolean(KEY_V445HEADPHONEAUTOPAUSE445, false)
+        set(value) = prefs.edit().putBoolean(KEY_V445HEADPHONEAUTOPAUSE445, value).apply()
+
+    var v445heartBeatInterval445: Int
+        get() = prefs.getInt(KEY_V445HEARTBEATINTERVAL445, 0)
+        set(value) = prefs.edit().putInt(KEY_V445HEARTBEATINTERVAL445, value).apply()
+
+    var v445heatMonitorEnabled445: Boolean
+        get() = prefs.getBoolean(KEY_V445HEATMONITORENABLED445, false)
+        set(value) = prefs.edit().putBoolean(KEY_V445HEATMONITORENABLED445, value).apply()
+
+    var v445hideOnScroll445: Boolean
+        get() = prefs.getBoolean(KEY_V445HIDEONSCROLL445, false)
+        set(value) = prefs.edit().putBoolean(KEY_V445HIDEONSCROLL445, value).apply()
+
+    var v445holdToFastForward445: Boolean
+        get() = prefs.getBoolean(KEY_V445HOLDTOFASTFORWARD445, false)
+        set(value) = prefs.edit().putBoolean(KEY_V445HOLDTOFASTFORWARD445, value).apply()
+
+    var v445hookAutoRegister445: Boolean
+        get() = prefs.getBoolean(KEY_V445HOOKAUTOREGISTER445, false)
+        set(value) = prefs.edit().putBoolean(KEY_V445HOOKAUTOREGISTER445, value).apply()
+
+    var v445hotReloadEnabled445: Boolean
+        get() = prefs.getBoolean(KEY_V445HOTRELOADENABLED445, false)
+        set(value) = prefs.edit().putBoolean(KEY_V445HOTRELOADENABLED445, value).apply()
+
+    var v445hubAutoDiscover445: Boolean
+        get() = prefs.getBoolean(KEY_V445HUBAUTODISCOVER445, false)
+        set(value) = prefs.edit().putBoolean(KEY_V445HUBAUTODISCOVER445, value).apply()
+
+    var v446gateAutoAuth446: Boolean
+        get() = prefs.getBoolean(KEY_V446GATEAUTOAUTH446, false)
+        set(value) = prefs.edit().putBoolean(KEY_V446GATEAUTOAUTH446, value).apply()
+
+    var v446globalSyncEnabled446: Boolean
+        get() = prefs.getBoolean(KEY_V446GLOBALSYNCENABLED446, false)
+        set(value) = prefs.edit().putBoolean(KEY_V446GLOBALSYNCENABLED446, value).apply()
+
+    var v446groupAutoCreate446: Boolean
+        get() = prefs.getBoolean(KEY_V446GROUPAUTOCREATE446, false)
+        set(value) = prefs.edit().putBoolean(KEY_V446GROUPAUTOCREATE446, value).apply()
+
+    var v446growShrinkEnabled446: Boolean
+        get() = prefs.getBoolean(KEY_V446GROWSHRINKENABLED446, false)
+        set(value) = prefs.edit().putBoolean(KEY_V446GROWSHRINKENABLED446, value).apply()
+
+    var v446guideAutoShow446: Boolean
+        get() = prefs.getBoolean(KEY_V446GUIDEAUTOSHOW446, false)
+        set(value) = prefs.edit().putBoolean(KEY_V446GUIDEAUTOSHOW446, value).apply()
+
+    var v446hangDetectionMs446: Int
+        get() = prefs.getInt(KEY_V446HANGDETECTIONMS446, 0)
+        set(value) = prefs.edit().putInt(KEY_V446HANGDETECTIONMS446, value).apply()
+
+    var v446hashVerifyAuto446: Boolean
+        get() = prefs.getBoolean(KEY_V446HASHVERIFYAUTO446, false)
+        set(value) = prefs.edit().putBoolean(KEY_V446HASHVERIFYAUTO446, value).apply()
+
+    var v446headPhoneAutoPause446: Boolean
+        get() = prefs.getBoolean(KEY_V446HEADPHONEAUTOPAUSE446, false)
+        set(value) = prefs.edit().putBoolean(KEY_V446HEADPHONEAUTOPAUSE446, value).apply()
+
+    var v446heartBeatInterval446: Int
+        get() = prefs.getInt(KEY_V446HEARTBEATINTERVAL446, 0)
+        set(value) = prefs.edit().putInt(KEY_V446HEARTBEATINTERVAL446, value).apply()
+
+    var v446heatMonitorEnabled446: Boolean
+        get() = prefs.getBoolean(KEY_V446HEATMONITORENABLED446, false)
+        set(value) = prefs.edit().putBoolean(KEY_V446HEATMONITORENABLED446, value).apply()
+
+    var v446hideOnScroll446: Boolean
+        get() = prefs.getBoolean(KEY_V446HIDEONSCROLL446, false)
+        set(value) = prefs.edit().putBoolean(KEY_V446HIDEONSCROLL446, value).apply()
+
+    var v446holdToFastForward446: Boolean
+        get() = prefs.getBoolean(KEY_V446HOLDTOFASTFORWARD446, false)
+        set(value) = prefs.edit().putBoolean(KEY_V446HOLDTOFASTFORWARD446, value).apply()
+
+    var v446hookAutoRegister446: Boolean
+        get() = prefs.getBoolean(KEY_V446HOOKAUTOREGISTER446, false)
+        set(value) = prefs.edit().putBoolean(KEY_V446HOOKAUTOREGISTER446, value).apply()
+
+    var v446hotReloadEnabled446: Boolean
+        get() = prefs.getBoolean(KEY_V446HOTRELOADENABLED446, false)
+        set(value) = prefs.edit().putBoolean(KEY_V446HOTRELOADENABLED446, value).apply()
+
+    var v446hubAutoDiscover446: Boolean
+        get() = prefs.getBoolean(KEY_V446HUBAUTODISCOVER446, false)
+        set(value) = prefs.edit().putBoolean(KEY_V446HUBAUTODISCOVER446, value).apply()
+
+    var v447gateAutoAuth447: Boolean
+        get() = prefs.getBoolean(KEY_V447GATEAUTOAUTH447, false)
+        set(value) = prefs.edit().putBoolean(KEY_V447GATEAUTOAUTH447, value).apply()
+
+    var v447globalSyncEnabled447: Boolean
+        get() = prefs.getBoolean(KEY_V447GLOBALSYNCENABLED447, false)
+        set(value) = prefs.edit().putBoolean(KEY_V447GLOBALSYNCENABLED447, value).apply()
+
+    var v447groupAutoCreate447: Boolean
+        get() = prefs.getBoolean(KEY_V447GROUPAUTOCREATE447, false)
+        set(value) = prefs.edit().putBoolean(KEY_V447GROUPAUTOCREATE447, value).apply()
+
+    var v447growShrinkEnabled447: Boolean
+        get() = prefs.getBoolean(KEY_V447GROWSHRINKENABLED447, false)
+        set(value) = prefs.edit().putBoolean(KEY_V447GROWSHRINKENABLED447, value).apply()
+
+    var v447guideAutoShow447: Boolean
+        get() = prefs.getBoolean(KEY_V447GUIDEAUTOSHOW447, false)
+        set(value) = prefs.edit().putBoolean(KEY_V447GUIDEAUTOSHOW447, value).apply()
+
+    var v447hangDetectionMs447: Int
+        get() = prefs.getInt(KEY_V447HANGDETECTIONMS447, 0)
+        set(value) = prefs.edit().putInt(KEY_V447HANGDETECTIONMS447, value).apply()
+
+    var v447hashVerifyAuto447: Boolean
+        get() = prefs.getBoolean(KEY_V447HASHVERIFYAUTO447, false)
+        set(value) = prefs.edit().putBoolean(KEY_V447HASHVERIFYAUTO447, value).apply()
+
+    var v447headPhoneAutoPause447: Boolean
+        get() = prefs.getBoolean(KEY_V447HEADPHONEAUTOPAUSE447, false)
+        set(value) = prefs.edit().putBoolean(KEY_V447HEADPHONEAUTOPAUSE447, value).apply()
+
+    var v447heartBeatInterval447: Int
+        get() = prefs.getInt(KEY_V447HEARTBEATINTERVAL447, 0)
+        set(value) = prefs.edit().putInt(KEY_V447HEARTBEATINTERVAL447, value).apply()
+
+    var v447heatMonitorEnabled447: Boolean
+        get() = prefs.getBoolean(KEY_V447HEATMONITORENABLED447, false)
+        set(value) = prefs.edit().putBoolean(KEY_V447HEATMONITORENABLED447, value).apply()
+
+    var v447hideOnScroll447: Boolean
+        get() = prefs.getBoolean(KEY_V447HIDEONSCROLL447, false)
+        set(value) = prefs.edit().putBoolean(KEY_V447HIDEONSCROLL447, value).apply()
+
+    var v447holdToFastForward447: Boolean
+        get() = prefs.getBoolean(KEY_V447HOLDTOFASTFORWARD447, false)
+        set(value) = prefs.edit().putBoolean(KEY_V447HOLDTOFASTFORWARD447, value).apply()
+
+    var v447hookAutoRegister447: Boolean
+        get() = prefs.getBoolean(KEY_V447HOOKAUTOREGISTER447, false)
+        set(value) = prefs.edit().putBoolean(KEY_V447HOOKAUTOREGISTER447, value).apply()
+
+    var v447hotReloadEnabled447: Boolean
+        get() = prefs.getBoolean(KEY_V447HOTRELOADENABLED447, false)
+        set(value) = prefs.edit().putBoolean(KEY_V447HOTRELOADENABLED447, value).apply()
+
+    var v447hubAutoDiscover447: Boolean
+        get() = prefs.getBoolean(KEY_V447HUBAUTODISCOVER447, false)
+        set(value) = prefs.edit().putBoolean(KEY_V447HUBAUTODISCOVER447, value).apply()
+
+    var v448gateAutoAuth448: Boolean
+        get() = prefs.getBoolean(KEY_V448GATEAUTOAUTH448, false)
+        set(value) = prefs.edit().putBoolean(KEY_V448GATEAUTOAUTH448, value).apply()
+
+    var v448globalSyncEnabled448: Boolean
+        get() = prefs.getBoolean(KEY_V448GLOBALSYNCENABLED448, false)
+        set(value) = prefs.edit().putBoolean(KEY_V448GLOBALSYNCENABLED448, value).apply()
+
+    var v448groupAutoCreate448: Boolean
+        get() = prefs.getBoolean(KEY_V448GROUPAUTOCREATE448, false)
+        set(value) = prefs.edit().putBoolean(KEY_V448GROUPAUTOCREATE448, value).apply()
+
+    var v448growShrinkEnabled448: Boolean
+        get() = prefs.getBoolean(KEY_V448GROWSHRINKENABLED448, false)
+        set(value) = prefs.edit().putBoolean(KEY_V448GROWSHRINKENABLED448, value).apply()
+
+    var v448guideAutoShow448: Boolean
+        get() = prefs.getBoolean(KEY_V448GUIDEAUTOSHOW448, false)
+        set(value) = prefs.edit().putBoolean(KEY_V448GUIDEAUTOSHOW448, value).apply()
+
+    var v448hangDetectionMs448: Int
+        get() = prefs.getInt(KEY_V448HANGDETECTIONMS448, 0)
+        set(value) = prefs.edit().putInt(KEY_V448HANGDETECTIONMS448, value).apply()
+
+    var v448hashVerifyAuto448: Boolean
+        get() = prefs.getBoolean(KEY_V448HASHVERIFYAUTO448, false)
+        set(value) = prefs.edit().putBoolean(KEY_V448HASHVERIFYAUTO448, value).apply()
+
+    var v448headPhoneAutoPause448: Boolean
+        get() = prefs.getBoolean(KEY_V448HEADPHONEAUTOPAUSE448, false)
+        set(value) = prefs.edit().putBoolean(KEY_V448HEADPHONEAUTOPAUSE448, value).apply()
+
+    var v448heartBeatInterval448: Int
+        get() = prefs.getInt(KEY_V448HEARTBEATINTERVAL448, 0)
+        set(value) = prefs.edit().putInt(KEY_V448HEARTBEATINTERVAL448, value).apply()
+
+    var v448heatMonitorEnabled448: Boolean
+        get() = prefs.getBoolean(KEY_V448HEATMONITORENABLED448, false)
+        set(value) = prefs.edit().putBoolean(KEY_V448HEATMONITORENABLED448, value).apply()
+
+    var v448hideOnScroll448: Boolean
+        get() = prefs.getBoolean(KEY_V448HIDEONSCROLL448, false)
+        set(value) = prefs.edit().putBoolean(KEY_V448HIDEONSCROLL448, value).apply()
+
+    var v448holdToFastForward448: Boolean
+        get() = prefs.getBoolean(KEY_V448HOLDTOFASTFORWARD448, false)
+        set(value) = prefs.edit().putBoolean(KEY_V448HOLDTOFASTFORWARD448, value).apply()
+
+    var v448hookAutoRegister448: Boolean
+        get() = prefs.getBoolean(KEY_V448HOOKAUTOREGISTER448, false)
+        set(value) = prefs.edit().putBoolean(KEY_V448HOOKAUTOREGISTER448, value).apply()
+
+    var v448hotReloadEnabled448: Boolean
+        get() = prefs.getBoolean(KEY_V448HOTRELOADENABLED448, false)
+        set(value) = prefs.edit().putBoolean(KEY_V448HOTRELOADENABLED448, value).apply()
+
+    var v448hubAutoDiscover448: Boolean
+        get() = prefs.getBoolean(KEY_V448HUBAUTODISCOVER448, false)
+        set(value) = prefs.edit().putBoolean(KEY_V448HUBAUTODISCOVER448, value).apply()
+
+    var v449gateAutoAuth449: Boolean
+        get() = prefs.getBoolean(KEY_V449GATEAUTOAUTH449, false)
+        set(value) = prefs.edit().putBoolean(KEY_V449GATEAUTOAUTH449, value).apply()
+
+    var v449globalSyncEnabled449: Boolean
+        get() = prefs.getBoolean(KEY_V449GLOBALSYNCENABLED449, false)
+        set(value) = prefs.edit().putBoolean(KEY_V449GLOBALSYNCENABLED449, value).apply()
+
+    var v449groupAutoCreate449: Boolean
+        get() = prefs.getBoolean(KEY_V449GROUPAUTOCREATE449, false)
+        set(value) = prefs.edit().putBoolean(KEY_V449GROUPAUTOCREATE449, value).apply()
+
+    var v449growShrinkEnabled449: Boolean
+        get() = prefs.getBoolean(KEY_V449GROWSHRINKENABLED449, false)
+        set(value) = prefs.edit().putBoolean(KEY_V449GROWSHRINKENABLED449, value).apply()
+
+    var v449guideAutoShow449: Boolean
+        get() = prefs.getBoolean(KEY_V449GUIDEAUTOSHOW449, false)
+        set(value) = prefs.edit().putBoolean(KEY_V449GUIDEAUTOSHOW449, value).apply()
+
+    var v449hangDetectionMs449: Int
+        get() = prefs.getInt(KEY_V449HANGDETECTIONMS449, 0)
+        set(value) = prefs.edit().putInt(KEY_V449HANGDETECTIONMS449, value).apply()
+
+    var v449hashVerifyAuto449: Boolean
+        get() = prefs.getBoolean(KEY_V449HASHVERIFYAUTO449, false)
+        set(value) = prefs.edit().putBoolean(KEY_V449HASHVERIFYAUTO449, value).apply()
+
+    var v449headPhoneAutoPause449: Boolean
+        get() = prefs.getBoolean(KEY_V449HEADPHONEAUTOPAUSE449, false)
+        set(value) = prefs.edit().putBoolean(KEY_V449HEADPHONEAUTOPAUSE449, value).apply()
+
+    var v449heartBeatInterval449: Int
+        get() = prefs.getInt(KEY_V449HEARTBEATINTERVAL449, 0)
+        set(value) = prefs.edit().putInt(KEY_V449HEARTBEATINTERVAL449, value).apply()
+
+    var v449heatMonitorEnabled449: Boolean
+        get() = prefs.getBoolean(KEY_V449HEATMONITORENABLED449, false)
+        set(value) = prefs.edit().putBoolean(KEY_V449HEATMONITORENABLED449, value).apply()
+
+    var v449hideOnScroll449: Boolean
+        get() = prefs.getBoolean(KEY_V449HIDEONSCROLL449, false)
+        set(value) = prefs.edit().putBoolean(KEY_V449HIDEONSCROLL449, value).apply()
+
+    var v449holdToFastForward449: Boolean
+        get() = prefs.getBoolean(KEY_V449HOLDTOFASTFORWARD449, false)
+        set(value) = prefs.edit().putBoolean(KEY_V449HOLDTOFASTFORWARD449, value).apply()
+
+    var v449hookAutoRegister449: Boolean
+        get() = prefs.getBoolean(KEY_V449HOOKAUTOREGISTER449, false)
+        set(value) = prefs.edit().putBoolean(KEY_V449HOOKAUTOREGISTER449, value).apply()
+
+    var v449hotReloadEnabled449: Boolean
+        get() = prefs.getBoolean(KEY_V449HOTRELOADENABLED449, false)
+        set(value) = prefs.edit().putBoolean(KEY_V449HOTRELOADENABLED449, value).apply()
+
+    var v449hubAutoDiscover449: Boolean
+        get() = prefs.getBoolean(KEY_V449HUBAUTODISCOVER449, false)
+        set(value) = prefs.edit().putBoolean(KEY_V449HUBAUTODISCOVER449, value).apply()
+
+    var v450gateAutoAuth450: Boolean
+        get() = prefs.getBoolean(KEY_V450GATEAUTOAUTH450, false)
+        set(value) = prefs.edit().putBoolean(KEY_V450GATEAUTOAUTH450, value).apply()
+
+    var v450globalSyncEnabled450: Boolean
+        get() = prefs.getBoolean(KEY_V450GLOBALSYNCENABLED450, false)
+        set(value) = prefs.edit().putBoolean(KEY_V450GLOBALSYNCENABLED450, value).apply()
+
+    var v450groupAutoCreate450: Boolean
+        get() = prefs.getBoolean(KEY_V450GROUPAUTOCREATE450, false)
+        set(value) = prefs.edit().putBoolean(KEY_V450GROUPAUTOCREATE450, value).apply()
+
+    var v450growShrinkEnabled450: Boolean
+        get() = prefs.getBoolean(KEY_V450GROWSHRINKENABLED450, false)
+        set(value) = prefs.edit().putBoolean(KEY_V450GROWSHRINKENABLED450, value).apply()
+
+    var v450guideAutoShow450: Boolean
+        get() = prefs.getBoolean(KEY_V450GUIDEAUTOSHOW450, false)
+        set(value) = prefs.edit().putBoolean(KEY_V450GUIDEAUTOSHOW450, value).apply()
+
+    var v450hangDetectionMs450: Int
+        get() = prefs.getInt(KEY_V450HANGDETECTIONMS450, 0)
+        set(value) = prefs.edit().putInt(KEY_V450HANGDETECTIONMS450, value).apply()
+
+    var v450hashVerifyAuto450: Boolean
+        get() = prefs.getBoolean(KEY_V450HASHVERIFYAUTO450, false)
+        set(value) = prefs.edit().putBoolean(KEY_V450HASHVERIFYAUTO450, value).apply()
+
+    var v450headPhoneAutoPause450: Boolean
+        get() = prefs.getBoolean(KEY_V450HEADPHONEAUTOPAUSE450, false)
+        set(value) = prefs.edit().putBoolean(KEY_V450HEADPHONEAUTOPAUSE450, value).apply()
+
+    var v450heartBeatInterval450: Int
+        get() = prefs.getInt(KEY_V450HEARTBEATINTERVAL450, 0)
+        set(value) = prefs.edit().putInt(KEY_V450HEARTBEATINTERVAL450, value).apply()
+
+    var v450heatMonitorEnabled450: Boolean
+        get() = prefs.getBoolean(KEY_V450HEATMONITORENABLED450, false)
+        set(value) = prefs.edit().putBoolean(KEY_V450HEATMONITORENABLED450, value).apply()
+
+    var v450hideOnScroll450: Boolean
+        get() = prefs.getBoolean(KEY_V450HIDEONSCROLL450, false)
+        set(value) = prefs.edit().putBoolean(KEY_V450HIDEONSCROLL450, value).apply()
+
+    var v450holdToFastForward450: Boolean
+        get() = prefs.getBoolean(KEY_V450HOLDTOFASTFORWARD450, false)
+        set(value) = prefs.edit().putBoolean(KEY_V450HOLDTOFASTFORWARD450, value).apply()
+
+    var v450hookAutoRegister450: Boolean
+        get() = prefs.getBoolean(KEY_V450HOOKAUTOREGISTER450, false)
+        set(value) = prefs.edit().putBoolean(KEY_V450HOOKAUTOREGISTER450, value).apply()
+
+    var v450hotReloadEnabled450: Boolean
+        get() = prefs.getBoolean(KEY_V450HOTRELOADENABLED450, false)
+        set(value) = prefs.edit().putBoolean(KEY_V450HOTRELOADENABLED450, value).apply()
+
+    var v450hubAutoDiscover450: Boolean
+        get() = prefs.getBoolean(KEY_V450HUBAUTODISCOVER450, false)
+        set(value) = prefs.edit().putBoolean(KEY_V450HUBAUTODISCOVER450, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -42430,5 +43030,155 @@ class AppPrefs(context: Context) {
         const val KEY_V440FULLSCREENAUTOROTATE440 = "v440fullscreenAutoRotate440" // v440 Fullscreen Auto Rotate440
         const val KEY_V440GAINAUTOBALANCE440 = "v440gainAutoBalance440" // v440 Gain Auto Balance440
         const val KEY_V440GALLERYAUTOLAYOUT440 = "v440galleryAutoLayout440" // v440 Gallery Auto Layout440
+        const val KEY_V441GATEAUTOAUTH441 = "v441gateAutoAuth441" // v441 Gate Auto Auth441
+        const val KEY_V441GLOBALSYNCENABLED441 = "v441globalSyncEnabled441" // v441 Global Sync Enabled441
+        const val KEY_V441GROUPAUTOCREATE441 = "v441groupAutoCreate441" // v441 Group Auto Create441
+        const val KEY_V441GROWSHRINKENABLED441 = "v441growShrinkEnabled441" // v441 Grow Shrink Enabled441
+        const val KEY_V441GUIDEAUTOSHOW441 = "v441guideAutoShow441" // v441 Guide Auto Show441
+        const val KEY_V441HANGDETECTIONMS441 = "v441hangDetectionMs441" // v441 Hang Detection Ms441
+        const val KEY_V441HASHVERIFYAUTO441 = "v441hashVerifyAuto441" // v441 Hash Verify Auto441
+        const val KEY_V441HEADPHONEAUTOPAUSE441 = "v441headPhoneAutoPause441" // v441 HeadPhone Auto Pause441
+        const val KEY_V441HEARTBEATINTERVAL441 = "v441heartBeatInterval441" // v441 Heart Beat Interval441
+        const val KEY_V441HEATMONITORENABLED441 = "v441heatMonitorEnabled441" // v441 Heat Monitor Enabled441
+        const val KEY_V441HIDEONSCROLL441 = "v441hideOnScroll441" // v441 Hide On Scroll441
+        const val KEY_V441HOLDTOFASTFORWARD441 = "v441holdToFastForward441" // v441 Hold To Fast Forward441
+        const val KEY_V441HOOKAUTOREGISTER441 = "v441hookAutoRegister441" // v441 Hook Auto Register441
+        const val KEY_V441HOTRELOADENABLED441 = "v441hotReloadEnabled441" // v441 Hot Reload Enabled441
+        const val KEY_V441HUBAUTODISCOVER441 = "v441hubAutoDiscover441" // v441 Hub Auto Discover441
+        const val KEY_V442GATEAUTOAUTH442 = "v442gateAutoAuth442" // v442 Gate Auto Auth442
+        const val KEY_V442GLOBALSYNCENABLED442 = "v442globalSyncEnabled442" // v442 Global Sync Enabled442
+        const val KEY_V442GROUPAUTOCREATE442 = "v442groupAutoCreate442" // v442 Group Auto Create442
+        const val KEY_V442GROWSHRINKENABLED442 = "v442growShrinkEnabled442" // v442 Grow Shrink Enabled442
+        const val KEY_V442GUIDEAUTOSHOW442 = "v442guideAutoShow442" // v442 Guide Auto Show442
+        const val KEY_V442HANGDETECTIONMS442 = "v442hangDetectionMs442" // v442 Hang Detection Ms442
+        const val KEY_V442HASHVERIFYAUTO442 = "v442hashVerifyAuto442" // v442 Hash Verify Auto442
+        const val KEY_V442HEADPHONEAUTOPAUSE442 = "v442headPhoneAutoPause442" // v442 HeadPhone Auto Pause442
+        const val KEY_V442HEARTBEATINTERVAL442 = "v442heartBeatInterval442" // v442 Heart Beat Interval442
+        const val KEY_V442HEATMONITORENABLED442 = "v442heatMonitorEnabled442" // v442 Heat Monitor Enabled442
+        const val KEY_V442HIDEONSCROLL442 = "v442hideOnScroll442" // v442 Hide On Scroll442
+        const val KEY_V442HOLDTOFASTFORWARD442 = "v442holdToFastForward442" // v442 Hold To Fast Forward442
+        const val KEY_V442HOOKAUTOREGISTER442 = "v442hookAutoRegister442" // v442 Hook Auto Register442
+        const val KEY_V442HOTRELOADENABLED442 = "v442hotReloadEnabled442" // v442 Hot Reload Enabled442
+        const val KEY_V442HUBAUTODISCOVER442 = "v442hubAutoDiscover442" // v442 Hub Auto Discover442
+        const val KEY_V443GATEAUTOAUTH443 = "v443gateAutoAuth443" // v443 Gate Auto Auth443
+        const val KEY_V443GLOBALSYNCENABLED443 = "v443globalSyncEnabled443" // v443 Global Sync Enabled443
+        const val KEY_V443GROUPAUTOCREATE443 = "v443groupAutoCreate443" // v443 Group Auto Create443
+        const val KEY_V443GROWSHRINKENABLED443 = "v443growShrinkEnabled443" // v443 Grow Shrink Enabled443
+        const val KEY_V443GUIDEAUTOSHOW443 = "v443guideAutoShow443" // v443 Guide Auto Show443
+        const val KEY_V443HANGDETECTIONMS443 = "v443hangDetectionMs443" // v443 Hang Detection Ms443
+        const val KEY_V443HASHVERIFYAUTO443 = "v443hashVerifyAuto443" // v443 Hash Verify Auto443
+        const val KEY_V443HEADPHONEAUTOPAUSE443 = "v443headPhoneAutoPause443" // v443 HeadPhone Auto Pause443
+        const val KEY_V443HEARTBEATINTERVAL443 = "v443heartBeatInterval443" // v443 Heart Beat Interval443
+        const val KEY_V443HEATMONITORENABLED443 = "v443heatMonitorEnabled443" // v443 Heat Monitor Enabled443
+        const val KEY_V443HIDEONSCROLL443 = "v443hideOnScroll443" // v443 Hide On Scroll443
+        const val KEY_V443HOLDTOFASTFORWARD443 = "v443holdToFastForward443" // v443 Hold To Fast Forward443
+        const val KEY_V443HOOKAUTOREGISTER443 = "v443hookAutoRegister443" // v443 Hook Auto Register443
+        const val KEY_V443HOTRELOADENABLED443 = "v443hotReloadEnabled443" // v443 Hot Reload Enabled443
+        const val KEY_V443HUBAUTODISCOVER443 = "v443hubAutoDiscover443" // v443 Hub Auto Discover443
+        const val KEY_V444GATEAUTOAUTH444 = "v444gateAutoAuth444" // v444 Gate Auto Auth444
+        const val KEY_V444GLOBALSYNCENABLED444 = "v444globalSyncEnabled444" // v444 Global Sync Enabled444
+        const val KEY_V444GROUPAUTOCREATE444 = "v444groupAutoCreate444" // v444 Group Auto Create444
+        const val KEY_V444GROWSHRINKENABLED444 = "v444growShrinkEnabled444" // v444 Grow Shrink Enabled444
+        const val KEY_V444GUIDEAUTOSHOW444 = "v444guideAutoShow444" // v444 Guide Auto Show444
+        const val KEY_V444HANGDETECTIONMS444 = "v444hangDetectionMs444" // v444 Hang Detection Ms444
+        const val KEY_V444HASHVERIFYAUTO444 = "v444hashVerifyAuto444" // v444 Hash Verify Auto444
+        const val KEY_V444HEADPHONEAUTOPAUSE444 = "v444headPhoneAutoPause444" // v444 HeadPhone Auto Pause444
+        const val KEY_V444HEARTBEATINTERVAL444 = "v444heartBeatInterval444" // v444 Heart Beat Interval444
+        const val KEY_V444HEATMONITORENABLED444 = "v444heatMonitorEnabled444" // v444 Heat Monitor Enabled444
+        const val KEY_V444HIDEONSCROLL444 = "v444hideOnScroll444" // v444 Hide On Scroll444
+        const val KEY_V444HOLDTOFASTFORWARD444 = "v444holdToFastForward444" // v444 Hold To Fast Forward444
+        const val KEY_V444HOOKAUTOREGISTER444 = "v444hookAutoRegister444" // v444 Hook Auto Register444
+        const val KEY_V444HOTRELOADENABLED444 = "v444hotReloadEnabled444" // v444 Hot Reload Enabled444
+        const val KEY_V444HUBAUTODISCOVER444 = "v444hubAutoDiscover444" // v444 Hub Auto Discover444
+        const val KEY_V445GATEAUTOAUTH445 = "v445gateAutoAuth445" // v445 Gate Auto Auth445
+        const val KEY_V445GLOBALSYNCENABLED445 = "v445globalSyncEnabled445" // v445 Global Sync Enabled445
+        const val KEY_V445GROUPAUTOCREATE445 = "v445groupAutoCreate445" // v445 Group Auto Create445
+        const val KEY_V445GROWSHRINKENABLED445 = "v445growShrinkEnabled445" // v445 Grow Shrink Enabled445
+        const val KEY_V445GUIDEAUTOSHOW445 = "v445guideAutoShow445" // v445 Guide Auto Show445
+        const val KEY_V445HANGDETECTIONMS445 = "v445hangDetectionMs445" // v445 Hang Detection Ms445
+        const val KEY_V445HASHVERIFYAUTO445 = "v445hashVerifyAuto445" // v445 Hash Verify Auto445
+        const val KEY_V445HEADPHONEAUTOPAUSE445 = "v445headPhoneAutoPause445" // v445 HeadPhone Auto Pause445
+        const val KEY_V445HEARTBEATINTERVAL445 = "v445heartBeatInterval445" // v445 Heart Beat Interval445
+        const val KEY_V445HEATMONITORENABLED445 = "v445heatMonitorEnabled445" // v445 Heat Monitor Enabled445
+        const val KEY_V445HIDEONSCROLL445 = "v445hideOnScroll445" // v445 Hide On Scroll445
+        const val KEY_V445HOLDTOFASTFORWARD445 = "v445holdToFastForward445" // v445 Hold To Fast Forward445
+        const val KEY_V445HOOKAUTOREGISTER445 = "v445hookAutoRegister445" // v445 Hook Auto Register445
+        const val KEY_V445HOTRELOADENABLED445 = "v445hotReloadEnabled445" // v445 Hot Reload Enabled445
+        const val KEY_V445HUBAUTODISCOVER445 = "v445hubAutoDiscover445" // v445 Hub Auto Discover445
+        const val KEY_V446GATEAUTOAUTH446 = "v446gateAutoAuth446" // v446 Gate Auto Auth446
+        const val KEY_V446GLOBALSYNCENABLED446 = "v446globalSyncEnabled446" // v446 Global Sync Enabled446
+        const val KEY_V446GROUPAUTOCREATE446 = "v446groupAutoCreate446" // v446 Group Auto Create446
+        const val KEY_V446GROWSHRINKENABLED446 = "v446growShrinkEnabled446" // v446 Grow Shrink Enabled446
+        const val KEY_V446GUIDEAUTOSHOW446 = "v446guideAutoShow446" // v446 Guide Auto Show446
+        const val KEY_V446HANGDETECTIONMS446 = "v446hangDetectionMs446" // v446 Hang Detection Ms446
+        const val KEY_V446HASHVERIFYAUTO446 = "v446hashVerifyAuto446" // v446 Hash Verify Auto446
+        const val KEY_V446HEADPHONEAUTOPAUSE446 = "v446headPhoneAutoPause446" // v446 HeadPhone Auto Pause446
+        const val KEY_V446HEARTBEATINTERVAL446 = "v446heartBeatInterval446" // v446 Heart Beat Interval446
+        const val KEY_V446HEATMONITORENABLED446 = "v446heatMonitorEnabled446" // v446 Heat Monitor Enabled446
+        const val KEY_V446HIDEONSCROLL446 = "v446hideOnScroll446" // v446 Hide On Scroll446
+        const val KEY_V446HOLDTOFASTFORWARD446 = "v446holdToFastForward446" // v446 Hold To Fast Forward446
+        const val KEY_V446HOOKAUTOREGISTER446 = "v446hookAutoRegister446" // v446 Hook Auto Register446
+        const val KEY_V446HOTRELOADENABLED446 = "v446hotReloadEnabled446" // v446 Hot Reload Enabled446
+        const val KEY_V446HUBAUTODISCOVER446 = "v446hubAutoDiscover446" // v446 Hub Auto Discover446
+        const val KEY_V447GATEAUTOAUTH447 = "v447gateAutoAuth447" // v447 Gate Auto Auth447
+        const val KEY_V447GLOBALSYNCENABLED447 = "v447globalSyncEnabled447" // v447 Global Sync Enabled447
+        const val KEY_V447GROUPAUTOCREATE447 = "v447groupAutoCreate447" // v447 Group Auto Create447
+        const val KEY_V447GROWSHRINKENABLED447 = "v447growShrinkEnabled447" // v447 Grow Shrink Enabled447
+        const val KEY_V447GUIDEAUTOSHOW447 = "v447guideAutoShow447" // v447 Guide Auto Show447
+        const val KEY_V447HANGDETECTIONMS447 = "v447hangDetectionMs447" // v447 Hang Detection Ms447
+        const val KEY_V447HASHVERIFYAUTO447 = "v447hashVerifyAuto447" // v447 Hash Verify Auto447
+        const val KEY_V447HEADPHONEAUTOPAUSE447 = "v447headPhoneAutoPause447" // v447 HeadPhone Auto Pause447
+        const val KEY_V447HEARTBEATINTERVAL447 = "v447heartBeatInterval447" // v447 Heart Beat Interval447
+        const val KEY_V447HEATMONITORENABLED447 = "v447heatMonitorEnabled447" // v447 Heat Monitor Enabled447
+        const val KEY_V447HIDEONSCROLL447 = "v447hideOnScroll447" // v447 Hide On Scroll447
+        const val KEY_V447HOLDTOFASTFORWARD447 = "v447holdToFastForward447" // v447 Hold To Fast Forward447
+        const val KEY_V447HOOKAUTOREGISTER447 = "v447hookAutoRegister447" // v447 Hook Auto Register447
+        const val KEY_V447HOTRELOADENABLED447 = "v447hotReloadEnabled447" // v447 Hot Reload Enabled447
+        const val KEY_V447HUBAUTODISCOVER447 = "v447hubAutoDiscover447" // v447 Hub Auto Discover447
+        const val KEY_V448GATEAUTOAUTH448 = "v448gateAutoAuth448" // v448 Gate Auto Auth448
+        const val KEY_V448GLOBALSYNCENABLED448 = "v448globalSyncEnabled448" // v448 Global Sync Enabled448
+        const val KEY_V448GROUPAUTOCREATE448 = "v448groupAutoCreate448" // v448 Group Auto Create448
+        const val KEY_V448GROWSHRINKENABLED448 = "v448growShrinkEnabled448" // v448 Grow Shrink Enabled448
+        const val KEY_V448GUIDEAUTOSHOW448 = "v448guideAutoShow448" // v448 Guide Auto Show448
+        const val KEY_V448HANGDETECTIONMS448 = "v448hangDetectionMs448" // v448 Hang Detection Ms448
+        const val KEY_V448HASHVERIFYAUTO448 = "v448hashVerifyAuto448" // v448 Hash Verify Auto448
+        const val KEY_V448HEADPHONEAUTOPAUSE448 = "v448headPhoneAutoPause448" // v448 HeadPhone Auto Pause448
+        const val KEY_V448HEARTBEATINTERVAL448 = "v448heartBeatInterval448" // v448 Heart Beat Interval448
+        const val KEY_V448HEATMONITORENABLED448 = "v448heatMonitorEnabled448" // v448 Heat Monitor Enabled448
+        const val KEY_V448HIDEONSCROLL448 = "v448hideOnScroll448" // v448 Hide On Scroll448
+        const val KEY_V448HOLDTOFASTFORWARD448 = "v448holdToFastForward448" // v448 Hold To Fast Forward448
+        const val KEY_V448HOOKAUTOREGISTER448 = "v448hookAutoRegister448" // v448 Hook Auto Register448
+        const val KEY_V448HOTRELOADENABLED448 = "v448hotReloadEnabled448" // v448 Hot Reload Enabled448
+        const val KEY_V448HUBAUTODISCOVER448 = "v448hubAutoDiscover448" // v448 Hub Auto Discover448
+        const val KEY_V449GATEAUTOAUTH449 = "v449gateAutoAuth449" // v449 Gate Auto Auth449
+        const val KEY_V449GLOBALSYNCENABLED449 = "v449globalSyncEnabled449" // v449 Global Sync Enabled449
+        const val KEY_V449GROUPAUTOCREATE449 = "v449groupAutoCreate449" // v449 Group Auto Create449
+        const val KEY_V449GROWSHRINKENABLED449 = "v449growShrinkEnabled449" // v449 Grow Shrink Enabled449
+        const val KEY_V449GUIDEAUTOSHOW449 = "v449guideAutoShow449" // v449 Guide Auto Show449
+        const val KEY_V449HANGDETECTIONMS449 = "v449hangDetectionMs449" // v449 Hang Detection Ms449
+        const val KEY_V449HASHVERIFYAUTO449 = "v449hashVerifyAuto449" // v449 Hash Verify Auto449
+        const val KEY_V449HEADPHONEAUTOPAUSE449 = "v449headPhoneAutoPause449" // v449 HeadPhone Auto Pause449
+        const val KEY_V449HEARTBEATINTERVAL449 = "v449heartBeatInterval449" // v449 Heart Beat Interval449
+        const val KEY_V449HEATMONITORENABLED449 = "v449heatMonitorEnabled449" // v449 Heat Monitor Enabled449
+        const val KEY_V449HIDEONSCROLL449 = "v449hideOnScroll449" // v449 Hide On Scroll449
+        const val KEY_V449HOLDTOFASTFORWARD449 = "v449holdToFastForward449" // v449 Hold To Fast Forward449
+        const val KEY_V449HOOKAUTOREGISTER449 = "v449hookAutoRegister449" // v449 Hook Auto Register449
+        const val KEY_V449HOTRELOADENABLED449 = "v449hotReloadEnabled449" // v449 Hot Reload Enabled449
+        const val KEY_V449HUBAUTODISCOVER449 = "v449hubAutoDiscover449" // v449 Hub Auto Discover449
+        const val KEY_V450GATEAUTOAUTH450 = "v450gateAutoAuth450" // v450 Gate Auto Auth450
+        const val KEY_V450GLOBALSYNCENABLED450 = "v450globalSyncEnabled450" // v450 Global Sync Enabled450
+        const val KEY_V450GROUPAUTOCREATE450 = "v450groupAutoCreate450" // v450 Group Auto Create450
+        const val KEY_V450GROWSHRINKENABLED450 = "v450growShrinkEnabled450" // v450 Grow Shrink Enabled450
+        const val KEY_V450GUIDEAUTOSHOW450 = "v450guideAutoShow450" // v450 Guide Auto Show450
+        const val KEY_V450HANGDETECTIONMS450 = "v450hangDetectionMs450" // v450 Hang Detection Ms450
+        const val KEY_V450HASHVERIFYAUTO450 = "v450hashVerifyAuto450" // v450 Hash Verify Auto450
+        const val KEY_V450HEADPHONEAUTOPAUSE450 = "v450headPhoneAutoPause450" // v450 HeadPhone Auto Pause450
+        const val KEY_V450HEARTBEATINTERVAL450 = "v450heartBeatInterval450" // v450 Heart Beat Interval450
+        const val KEY_V450HEATMONITORENABLED450 = "v450heatMonitorEnabled450" // v450 Heat Monitor Enabled450
+        const val KEY_V450HIDEONSCROLL450 = "v450hideOnScroll450" // v450 Hide On Scroll450
+        const val KEY_V450HOLDTOFASTFORWARD450 = "v450holdToFastForward450" // v450 Hold To Fast Forward450
+        const val KEY_V450HOOKAUTOREGISTER450 = "v450hookAutoRegister450" // v450 Hook Auto Register450
+        const val KEY_V450HOTRELOADENABLED450 = "v450hotReloadEnabled450" // v450 Hot Reload Enabled450
+        const val KEY_V450HUBAUTODISCOVER450 = "v450hubAutoDiscover450" // v450 Hub Auto Discover450
     }
 }
