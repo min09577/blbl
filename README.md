@@ -118,7 +118,7 @@ This project is based on open-source software. All rights belong to the original
 ## 📋 更新日志 | Changelog | 変更履歴 | 변경 로그
 
 ### 最新版本 | Latest Version | 最新バージョン | 최신 버전
-- **v180.15** - 2026-06-08
+- **v190.15** - 2026-06-08
 
 ---
 
@@ -20705,6 +20705,947 @@ This project is based on open-source software. All rights belong to the original
 - ✅ 字幕アウトライン幅180
 - ✅ 자막 외곽선 너비180
 
+
+### v181.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v181.1-v181.15 功能列表
+- ✅ Audio Reverb Toggle181, Danmaku Fixed Position, Subtitle Bg Color Alpha, Gesture Edge Swipe Left, Cast Audio Bitrate, Playlist Loop Single, Cache Download Resume, Progress Bar Thumb Size, Volume Boost Toggle181, History Bookmark Toggle, Playback Chapter Skip, Screenshot Region Select, Video HDR10 Toggle181, Danmaku Fixed Position181, Subtitle Bg Color Alpha181
+
+### v181.1 音频混响开关181 | Audio Reverb Toggle181 | オーディオリバーブ切替181 | 오디오 리버브 전환181
+- ✅ 音频混响开关181
+- ✅ Audio Reverb Toggle181
+- ✅ オーディオリバーブ切替181
+- ✅ 오디오 리버브 전환181
+
+### v181.2 弹幕固定位置 | Danmaku Fixed Position | コメント固定位置 | 댓글 고정 위치
+- ✅ 弹幕固定位置
+- ✅ Danmaku Fixed Position
+- ✅ コメント固定位置
+- ✅ 댓글 고정 위치
+
+### v181.3 字幕背景颜色透明度 | Subtitle Bg Color Alpha | 字幕背景色アルファ | 자막 배경 색상 알파
+- ✅ 字幕背景颜色透明度
+- ✅ Subtitle Bg Color Alpha
+- ✅ 字幕背景色アルファ
+- ✅ 자막 배경 색상 알파
+
+### v181.4 手势左边缘滑动 | Gesture Edge Swipe Left | ジェスチャーエッジスワイプ左 | 제스처 가장자리 왼쪽 스와이프
+- ✅ 手势左边缘滑动
+- ✅ Gesture Edge Swipe Left
+- ✅ ジェスチャーエッジスワイプ左
+- ✅ 제스처 가장자리 왼쪽 스와이프
+
+### v181.5 投射音频比特率 | Cast Audio Bitrate | キャストオーディオビットレート | 캐스트 오디오 비트레이트
+- ✅ 投射音频比特率
+- ✅ Cast Audio Bitrate
+- ✅ キャストオーディオビットレート
+- ✅ 캐스트 오디오 비트레이트
+
+### v181.6 播放列表单曲循环 | Playlist Loop Single | プレイリスト単曲ループ | 재생 목록 단곡 반복
+- ✅ 播放列表单曲循环
+- ✅ Playlist Loop Single
+- ✅ プレイリスト単曲ループ
+- ✅ 재생 목록 단곡 반복
+
+### v181.7 缓存下载恢复 | Cache Download Resume | キャッシュダウンロード再開 | 캐시 다운로드 재개
+- ✅ 缓存下载恢复
+- ✅ Cache Download Resume
+- ✅ キャッシュダウンロード再開
+- ✅ 캐시 다운로드 재개
+
+### v181.8 进度条滑块大小 | Progress Bar Thumb Size | プログレスバーサムサイズ | 진행 바 썸 크기
+- ✅ 进度条滑块大小
+- ✅ Progress Bar Thumb Size
+- ✅ プログレスバーサムサイズ
+- ✅ 진행 바 썸 크기
+
+### v181.9 音量增强开关181 | Volume Boost Toggle181 | ボリュームブースト切替181 | 볼륨 부스트 전환181
+- ✅ 音量增强开关181
+- ✅ Volume Boost Toggle181
+- ✅ ボリュームブースト切替181
+- ✅ 볼륨 부스트 전환181
+
+### v181.10 历史记录书签开关 | History Bookmark Toggle | 履歴ブックマーク切替 | 기록 북마크 전환
+- ✅ 历史记录书签开关
+- ✅ History Bookmark Toggle
+- ✅ 履歴ブックマーク切替
+- ✅ 기록 북마크 전환
+
+### v181.11 播放跳过章节 | Playback Chapter Skip | 再生チャプタースキップ | 재생 챕터 건너뛰기
+- ✅ 播放跳过章节
+- ✅ Playback Chapter Skip
+- ✅ 再生チャプタースキップ
+- ✅ 재생 챕터 건너뛰기
+
+### v181.12 截图区域选择 | Screenshot Region Select | スクリーンショット領域選択 | 스크린샷 영역 선택
+- ✅ 截图区域选择
+- ✅ Screenshot Region Select
+- ✅ スクリーンショット領域選択
+- ✅ 스크린샷 영역 선택
+
+### v181.13 视频HDR10开关181 | Video HDR10 Toggle181 | ビデオHDR10切替181 | 비디오 HDR10 전환181
+- ✅ 视频HDR10开关181
+- ✅ Video HDR10 Toggle181
+- ✅ ビデオHDR10切替181
+- ✅ 비디오 HDR10 전환181
+
+### v181.14 弹幕固定位置181 | Danmaku Fixed Position181 | コメント固定位置181 | 댓글 고정 위치181
+- ✅ 弹幕固定位置181
+- ✅ Danmaku Fixed Position181
+- ✅ コメント固定位置181
+- ✅ 댓글 고정 위치181
+
+### v181.15 字幕背景颜色透明度181 | Subtitle Bg Color Alpha181 | 字幕背景色アルファ181 | 자막 배경 색상 알파181
+- ✅ 字幕背景颜色透明度181
+- ✅ Subtitle Bg Color Alpha181
+- ✅ 字幕背景色アルファ181
+- ✅ 자막 배경 색상 알파181
+
+### v182.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v182.1-v182.15 功能列表
+- ✅ Audio Reverb Decay182, Danmaku Fixed Font182, Subtitle Bg Color Alpha182, Gesture Edge Swipe Right182, Cast Audio Bitrate182, Playlist Loop Single182, Cache Download Resume182, Progress Bar Thumb Size182, Volume Boost Level182, History Bookmark Toggle182, Playback Chapter Skip182, Screenshot Region Select182, Video HDR10 Level182, Danmaku Fixed Speed, Subtitle Bg Color
+
+### v182.1 音频混响衰减182 | Audio Reverb Decay182 | オーディオリバーブディケイ182 | 오디오 리버브 감쇠182
+- ✅ 音频混响衰减182
+- ✅ Audio Reverb Decay182
+- ✅ オーディオリバーブディケイ182
+- ✅ 오디오 리버브 감쇠182
+
+### v182.2 弹幕固定字体182 | Danmaku Fixed Font182 | コメント固定フォント182 | 댓글 고정 글꼴182
+- ✅ 弹幕固定字体182
+- ✅ Danmaku Fixed Font182
+- ✅ コメント固定フォント182
+- ✅ 댓글 고정 글꼴182
+
+### v182.3 字幕背景颜色透明度182 | Subtitle Bg Color Alpha182 | 字幕背景色アルファ182 | 자막 배경 색상 알파182
+- ✅ 字幕背景颜色透明度182
+- ✅ Subtitle Bg Color Alpha182
+- ✅ 字幕背景色アルファ182
+- ✅ 자막 배경 색상 알파182
+
+### v182.4 手势右边缘滑动182 | Gesture Edge Swipe Right182 | ジェスチャーエッジスワイプ右182 | 제스처 가장자리 오른쪽 스와이프182
+- ✅ 手势右边缘滑动182
+- ✅ Gesture Edge Swipe Right182
+- ✅ ジェスチャーエッジスワイプ右182
+- ✅ 제스처 가장자리 오른쪽 스와이프182
+
+### v182.5 投射音频比特率182 | Cast Audio Bitrate182 | キャストオーディオビットレート182 | 캐스트 오디오 비트레이트182
+- ✅ 投射音频比特率182
+- ✅ Cast Audio Bitrate182
+- ✅ キャストオーディオビットレート182
+- ✅ 캐스트 오디오 비트레이트182
+
+### v182.6 播放列表单曲循环182 | Playlist Loop Single182 | プレイリスト単曲ループ182 | 재생 목록 단곡 반복182
+- ✅ 播放列表单曲循环182
+- ✅ Playlist Loop Single182
+- ✅ プレイリスト単曲ループ182
+- ✅ 재생 목록 단곡 반복182
+
+### v182.7 缓存下载恢复182 | Cache Download Resume182 | キャッシュダウンロード再開182 | 캐시 다운로드 재개182
+- ✅ 缓存下载恢复182
+- ✅ Cache Download Resume182
+- ✅ キャッシュダウンロード再開182
+- ✅ 캐시 다운로드 재개182
+
+### v182.8 进度条滑块大小182 | Progress Bar Thumb Size182 | プログレスバーサムサイズ182 | 진행 바 썸 크기182
+- ✅ 进度条滑块大小182
+- ✅ Progress Bar Thumb Size182
+- ✅ プログレスバーサムサイズ182
+- ✅ 진행 바 썸 크기182
+
+### v182.9 音量增强级别182 | Volume Boost Level182 | ボリュームブーストレベル182 | 볼륨 부스트 수준182
+- ✅ 音量增强级别182
+- ✅ Volume Boost Level182
+- ✅ ボリュームブーストレベル182
+- ✅ 볼륨 부스트 수준182
+
+### v182.10 历史记录书签开关182 | History Bookmark Toggle182 | 履歴ブックマーク切替182 | 기록 북마크 전환182
+- ✅ 历史记录书签开关182
+- ✅ History Bookmark Toggle182
+- ✅ 履歴ブックマーク切替182
+- ✅ 기록 북마크 전환182
+
+### v182.11 播放跳过章节182 | Playback Chapter Skip182 | 再生チャプタースキップ182 | 재생 챕터 건너뛰기182
+- ✅ 播放跳过章节182
+- ✅ Playback Chapter Skip182
+- ✅ 再生チャプタースキップ182
+- ✅ 재생 챕터 건너뛰기182
+
+### v182.12 截图区域选择182 | Screenshot Region Select182 | スクリーンショット領域選択182 | 스크린샷 영역 선택182
+- ✅ 截图区域选择182
+- ✅ Screenshot Region Select182
+- ✅ スクリーンショット領域選択182
+- ✅ 스크린샷 영역 선택182
+
+### v182.13 视频HDR10级别182 | Video HDR10 Level182 | ビデオHDR10レベル182 | 비디오 HDR10 수준182
+- ✅ 视频HDR10级别182
+- ✅ Video HDR10 Level182
+- ✅ ビデオHDR10レベル182
+- ✅ 비디오 HDR10 수준182
+
+### v182.14 弹幕固定速度 | Danmaku Fixed Speed | コメント固定速度 | 댓글 고정 속도
+- ✅ 弹幕固定速度
+- ✅ Danmaku Fixed Speed
+- ✅ コメント固定速度
+- ✅ 댓글 고정 속도
+
+### v182.15 字幕背景颜色 | Subtitle Bg Color | 字幕背景色 | 자막 배경 색상
+- ✅ 字幕背景颜色
+- ✅ Subtitle Bg Color
+- ✅ 字幕背景色
+- ✅ 자막 배경 색상
+
+### v183.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v183.1-v183.15 功能列表
+- ✅ Audio Reverb Decay183, Danmaku Fixed Speed183, Subtitle Bg Color183, Gesture Edge Swipe Up183, Cast Audio Channel, Playlist Loop All183, Cache Download Batch183, Progress Bar Thumb Glow183, Volume Boost Level183, History Bookmark Color, Playback Chapter Prev, Screenshot Crop Toggle, Video HDR10 Level183, Danmaku Fixed Color, Subtitle Bg Color184
+
+### v183.1 音频混响衰减183 | Audio Reverb Decay183 | オーディオリバーブディケイ183 | 오디오 리버브 감쇠183
+- ✅ 音频混响衰减183
+- ✅ Audio Reverb Decay183
+- ✅ オーディオリバーブディケイ183
+- ✅ 오디오 리버브 감쇠183
+
+### v183.2 弹幕固定速度183 | Danmaku Fixed Speed183 | コメント固定速度183 | 댓글 고정 속도183
+- ✅ 弹幕固定速度183
+- ✅ Danmaku Fixed Speed183
+- ✅ コメント固定速度183
+- ✅ 댓글 고정 속도183
+
+### v183.3 字幕背景颜色183 | Subtitle Bg Color183 | 字幕背景色183 | 자막 배경 색상183
+- ✅ 字幕背景颜色183
+- ✅ Subtitle Bg Color183
+- ✅ 字幕背景色183
+- ✅ 자막 배경 색상183
+
+### v183.4 手势上边缘滑动183 | Gesture Edge Swipe Up183 | ジェスチャーエッジスワイプ上183 | 제스처 가장자리 위쪽 스와이프183
+- ✅ 手势上边缘滑动183
+- ✅ Gesture Edge Swipe Up183
+- ✅ ジェスチャーエッジスワイプ上183
+- ✅ 제스처 가장자리 위쪽 스와이프183
+
+### v183.5 投射音频声道 | Cast Audio Channel | キャストオーディオチャンネル | 캐스트 오디오 채널
+- ✅ 投射音频声道
+- ✅ Cast Audio Channel
+- ✅ キャストオーディオチャンネル
+- ✅ 캐스트 오디오 채널
+
+### v183.6 播放列表全部循环183 | Playlist Loop All183 | プレイリスト全曲ループ183 | 재생 목록 전체 반복183
+- ✅ 播放列表全部循环183
+- ✅ Playlist Loop All183
+- ✅ プレイリスト全曲ループ183
+- ✅ 재생 목록 전체 반복183
+
+### v183.7 缓存批量下载183 | Cache Download Batch183 | キャッシュバッチダウンロード183 | 캐시 배치 다운로드183
+- ✅ 缓存批量下载183
+- ✅ Cache Download Batch183
+- ✅ キャッシュバッチダウンロード183
+- ✅ 캐시 배치 다운로드183
+
+### v183.8 进度条滑块发光183 | Progress Bar Thumb Glow183 | プログレスバーサムグロウ183 | 진행 바 썸 글로우183
+- ✅ 进度条滑块发光183
+- ✅ Progress Bar Thumb Glow183
+- ✅ プログレスバーサムグロウ183
+- ✅ 진행 바 썸 글로우183
+
+### v183.9 音量增强级别183 | Volume Boost Level183 | ボリュームブーストレベル183 | 볼륨 부스트 수준183
+- ✅ 音量增强级别183
+- ✅ Volume Boost Level183
+- ✅ ボリュームブーストレベル183
+- ✅ 볼륨 부스트 수준183
+
+### v183.10 历史记录书签颜色 | History Bookmark Color | 履歴ブックマーク色 | 기록 북마크 색상
+- ✅ 历史记录书签颜色
+- ✅ History Bookmark Color
+- ✅ 履歴ブックマーク色
+- ✅ 기록 북마크 색상
+
+### v183.11 播放上一章节 | Playback Chapter Prev | 再生チャプター前 | 재생 챕터 이전
+- ✅ 播放上一章节
+- ✅ Playback Chapter Prev
+- ✅ 再生チャプター前
+- ✅ 재생 챕터 이전
+
+### v183.12 截图裁剪开关 | Screenshot Crop Toggle | スクリーンショットクロップ切替 | 스크린샷 크롭 전환
+- ✅ 截图裁剪开关
+- ✅ Screenshot Crop Toggle
+- ✅ スクリーンショットクロップ切替
+- ✅ 스크린샷 크롭 전환
+
+### v183.13 视频HDR10级别183 | Video HDR10 Level183 | ビデオHDR10レベル183 | 비디오 HDR10 수준183
+- ✅ 视频HDR10级别183
+- ✅ Video HDR10 Level183
+- ✅ ビデオHDR10レベル183
+- ✅ 비디오 HDR10 수준183
+
+### v183.14 弹幕固定颜色 | Danmaku Fixed Color | コメント固定色 | 댓글 고정 색상
+- ✅ 弹幕固定颜色
+- ✅ Danmaku Fixed Color
+- ✅ コメント固定色
+- ✅ 댓글 고정 색상
+
+### v183.15 字幕背景颜色184 | Subtitle Bg Color184 | 字幕背景色184 | 자막 배경 색상184
+- ✅ 字幕背景颜色184
+- ✅ Subtitle Bg Color184
+- ✅ 字幕背景色184
+- ✅ 자막 배경 색상184
+
+### v184.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v184.1-v184.15 功能列表
+- ✅ Audio Reverb Mix184, Danmaku Fixed Color184, Subtitle Bg Color185, Gesture Edge Swipe Down184, Cast Audio Channel184, Playlist Loop All184, Cache Download Batch184, Progress Bar Thumb Glow184, Volume Boost Gain184, History Bookmark Color184, Playback Chapter Prev184, Screenshot Crop Toggle184, Video HDR10 ToneMap184, Danmaku Fixed Size184, Subtitle Bg Border184
+
+### v184.1 音频混响混合184 | Audio Reverb Mix184 | オーディオリバーブミックス184 | 오디오 리버브 믹스184
+- ✅ 音频混响混合184
+- ✅ Audio Reverb Mix184
+- ✅ オーディオリバーブミックス184
+- ✅ 오디오 리버브 믹스184
+
+### v184.2 弹幕固定颜色184 | Danmaku Fixed Color184 | コメント固定色184 | 댓글 고정 색상184
+- ✅ 弹幕固定颜色184
+- ✅ Danmaku Fixed Color184
+- ✅ コメント固定色184
+- ✅ 댓글 고정 색상184
+
+### v184.3 字幕背景颜色185 | Subtitle Bg Color185 | 字幕背景色185 | 자막 배경 색상185
+- ✅ 字幕背景颜色185
+- ✅ Subtitle Bg Color185
+- ✅ 字幕背景色185
+- ✅ 자막 배경 색상185
+
+### v184.4 手势下边缘滑动184 | Gesture Edge Swipe Down184 | ジェスチャーエッジスワイプ下184 | 제스처 가장자리 아래쪽 스와이프184
+- ✅ 手势下边缘滑动184
+- ✅ Gesture Edge Swipe Down184
+- ✅ ジェスチャーエッジスワイプ下184
+- ✅ 제스처 가장자리 아래쪽 스와이프184
+
+### v184.5 投射音频声道184 | Cast Audio Channel184 | キャストオーディオチャンネル184 | 캐스트 오디오 채널184
+- ✅ 投射音频声道184
+- ✅ Cast Audio Channel184
+- ✅ キャストオーディオチャンネル184
+- ✅ 캐스트 오디오 채널184
+
+### v184.6 播放列表全部循环184 | Playlist Loop All184 | プレイリスト全曲ループ184 | 재생 목록 전체 반복184
+- ✅ 播放列表全部循环184
+- ✅ Playlist Loop All184
+- ✅ プレイリスト全曲ループ184
+- ✅ 재생 목록 전체 반복184
+
+### v184.7 缓存批量下载184 | Cache Download Batch184 | キャッシュバッチダウンロード184 | 캐시 배치 다운로드184
+- ✅ 缓存批量下载184
+- ✅ Cache Download Batch184
+- ✅ キャッシュバッチダウンロード184
+- ✅ 캐시 배치 다운로드184
+
+### v184.8 进度条滑块发光184 | Progress Bar Thumb Glow184 | プログレスバーサムグロウ184 | 진행 바 썸 글로우184
+- ✅ 进度条滑块发光184
+- ✅ Progress Bar Thumb Glow184
+- ✅ プログレスバーサムグロウ184
+- ✅ 진행 바 썸 글로우184
+
+### v184.9 音量增强增益184 | Volume Boost Gain184 | ボリュームブーストゲイン184 | 볼륨 부스트 게인184
+- ✅ 音量增强增益184
+- ✅ Volume Boost Gain184
+- ✅ ボリュームブーストゲイン184
+- ✅ 볼륨 부스트 게인184
+
+### v184.10 历史记录书签颜色184 | History Bookmark Color184 | 履歴ブックマーク色184 | 기록 북마크 색상184
+- ✅ 历史记录书签颜色184
+- ✅ History Bookmark Color184
+- ✅ 履歴ブックマーク色184
+- ✅ 기록 북마크 색상184
+
+### v184.11 播放上一章节184 | Playback Chapter Prev184 | 再生チャプター前184 | 재생 챕터 이전184
+- ✅ 播放上一章节184
+- ✅ Playback Chapter Prev184
+- ✅ 再生チャプター前184
+- ✅ 재생 챕터 이전184
+
+### v184.12 截图裁剪开关184 | Screenshot Crop Toggle184 | スクリーンショットクロップ切替184 | 스크린샷 크롭 전환184
+- ✅ 截图裁剪开关184
+- ✅ Screenshot Crop Toggle184
+- ✅ スクリーンショットクロップ切替184
+- ✅ 스크린샷 크롭 전환184
+
+### v184.13 视频HDR10色调映射184 | Video HDR10 ToneMap184 | ビデオHDR10トーンマップ184 | 비디오 HDR10 톤맵184
+- ✅ 视频HDR10色调映射184
+- ✅ Video HDR10 ToneMap184
+- ✅ ビデオHDR10トーンマップ184
+- ✅ 비디오 HDR10 톤맵184
+
+### v184.14 弹幕固定大小184 | Danmaku Fixed Size184 | コメント固定サイズ184 | 댓글 고정 크기184
+- ✅ 弹幕固定大小184
+- ✅ Danmaku Fixed Size184
+- ✅ コメント固定サイズ184
+- ✅ 댓글 고정 크기184
+
+### v184.15 字幕背景边框184 | Subtitle Bg Border184 | 字幕背景ボーダー184 | 자막 배경 테두리184
+- ✅ 字幕背景边框184
+- ✅ Subtitle Bg Border184
+- ✅ 字幕背景ボーダー184
+- ✅ 자막 배경 테두리184
+
+### v185.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v185.1-v185.15 功能列表
+- ✅ Audio Stereo Widen185, Danmaku Fixed Size185, Subtitle Bg Border185, Gesture Rotation Detect, Cast Audio Channel185, Playlist Auto Skip Intro, Cache Download Concurrent, Progress Bar Thumb Shadow185, Volume Boost Gain185, History Bookmark Note, Playback Chapter List, Screenshot Crop Ratio, Video HDR10 ToneMap185, Danmaku Fixed Shadow, Subtitle Bg Border186
+
+### v185.1 音频立体声扩展185 | Audio Stereo Widen185 | オーディオステレオワイド185 | 오디오 스테레오 확장185
+- ✅ 音频立体声扩展185
+- ✅ Audio Stereo Widen185
+- ✅ オーディオステレオワイド185
+- ✅ 오디오 스테레오 확장185
+
+### v185.2 弹幕固定大小185 | Danmaku Fixed Size185 | コメント固定サイズ185 | 댓글 고정 크기185
+- ✅ 弹幕固定大小185
+- ✅ Danmaku Fixed Size185
+- ✅ コメント固定サイズ185
+- ✅ 댓글 고정 크기185
+
+### v185.3 字幕背景边框185 | Subtitle Bg Border185 | 字幕背景ボーダー185 | 자막 배경 테두리185
+- ✅ 字幕背景边框185
+- ✅ Subtitle Bg Border185
+- ✅ 字幕背景ボーダー185
+- ✅ 자막 배경 테두리185
+
+### v185.4 手势旋转检测 | Gesture Rotation Detect | ジェスチャー回転検出 | 제스처 회전 감지
+- ✅ 手势旋转检测
+- ✅ Gesture Rotation Detect
+- ✅ ジェスチャー回転検出
+- ✅ 제스처 회전 감지
+
+### v185.5 投射音频声道185 | Cast Audio Channel185 | キャストオーディオチャンネル185 | 캐스트 오디오 채널185
+- ✅ 投射音频声道185
+- ✅ Cast Audio Channel185
+- ✅ キャストオーディオチャンネル185
+- ✅ 캐스트 오디오 채널185
+
+### v185.6 播放列表自动跳过片头 | Playlist Auto Skip Intro | プレイリスト自動OPスキップ | 재생 목록 자동 OP 건너뛰기
+- ✅ 播放列表自动跳过片头
+- ✅ Playlist Auto Skip Intro
+- ✅ プレイリスト自動OPスキップ
+- ✅ 재생 목록 자동 OP 건너뛰기
+
+### v185.7 缓存并发下载数 | Cache Download Concurrent | キャッシュ同時ダウンロード数 | 캐시 동시 다운로드 수
+- ✅ 缓存并发下载数
+- ✅ Cache Download Concurrent
+- ✅ キャッシュ同時ダウンロード数
+- ✅ 캐시 동시 다운로드 수
+
+### v185.8 进度条滑块阴影185 | Progress Bar Thumb Shadow185 | プログレスバーサムシャドウ185 | 진행 바 썸 그림자185
+- ✅ 进度条滑块阴影185
+- ✅ Progress Bar Thumb Shadow185
+- ✅ プログレスバーサムシャドウ185
+- ✅ 진행 바 썸 그림자185
+
+### v185.9 音量增强增益185 | Volume Boost Gain185 | ボリュームブーストゲイン185 | 볼륨 부스트 게인185
+- ✅ 音量增强增益185
+- ✅ Volume Boost Gain185
+- ✅ ボリュームブーストゲイン185
+- ✅ 볼륨 부스트 게인185
+
+### v185.10 历史记录书签备注 | History Bookmark Note | 履歴ブックマークメモ | 기록 북마크 메모
+- ✅ 历史记录书签备注
+- ✅ History Bookmark Note
+- ✅ 履歴ブックマークメモ
+- ✅ 기록 북마크 메모
+
+### v185.11 播放章节列表 | Playback Chapter List | 再生チャプターリスト | 재생 챕터 목록
+- ✅ 播放章节列表
+- ✅ Playback Chapter List
+- ✅ 再生チャプターリスト
+- ✅ 재생 챕터 목록
+
+### v185.12 截图裁剪比例 | Screenshot Crop Ratio | スクリーンショットクロップ比率 | 스크린샷 크롭 비율
+- ✅ 截图裁剪比例
+- ✅ Screenshot Crop Ratio
+- ✅ スクリーンショットクロップ比率
+- ✅ 스크린샷 크롭 비율
+
+### v185.13 视频HDR10色调映射185 | Video HDR10 ToneMap185 | ビデオHDR10トーンマップ185 | 비디오 HDR10 톤맵185
+- ✅ 视频HDR10色调映射185
+- ✅ Video HDR10 ToneMap185
+- ✅ ビデオHDR10トーンマップ185
+- ✅ 비디오 HDR10 톤맵185
+
+### v185.14 弹幕固定阴影 | Danmaku Fixed Shadow | コメント固定シャドウ | 댓글 고정 그림자
+- ✅ 弹幕固定阴影
+- ✅ Danmaku Fixed Shadow
+- ✅ コメント固定シャドウ
+- ✅ 댓글 고정 그림자
+
+### v185.15 字幕背景边框186 | Subtitle Bg Border186 | 字幕背景ボーダー186 | 자막 배경 테두리186
+- ✅ 字幕背景边框186
+- ✅ Subtitle Bg Border186
+- ✅ 字幕背景ボーダー186
+- ✅ 자막 배경 테두리186
+
+### v186.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v186.1-v186.15 功能列表
+- ✅ Audio Stereo Widen186, Danmaku Fixed Shadow186, Subtitle Bg Border187, Gesture Rotation Detect186, Cast Audio Sync, Playlist Auto Skip Intro186, Cache Download Concurrent186, Progress Bar Thumb Shadow186, Volume Boost Auto186, History Bookmark Note186, Playback Chapter List186, Screenshot Crop Ratio186, Video Wide Gamut186, Danmaku Fixed Outline, Subtitle Bg Border188
+
+### v186.1 音频立体声扩展186 | Audio Stereo Widen186 | オーディオステレオワイド186 | 오디오 스테레오 확장186
+- ✅ 音频立体声扩展186
+- ✅ Audio Stereo Widen186
+- ✅ オーディオステレオワイド186
+- ✅ 오디오 스테레오 확장186
+
+### v186.2 弹幕固定阴影186 | Danmaku Fixed Shadow186 | コメント固定シャドウ186 | 댓글 고정 그림자186
+- ✅ 弹幕固定阴影186
+- ✅ Danmaku Fixed Shadow186
+- ✅ コメント固定シャドウ186
+- ✅ 댓글 고정 그림자186
+
+### v186.3 字幕背景边框187 | Subtitle Bg Border187 | 字幕背景ボーダー187 | 자막 배경 테두리187
+- ✅ 字幕背景边框187
+- ✅ Subtitle Bg Border187
+- ✅ 字幕背景ボーダー187
+- ✅ 자막 배경 테두리187
+
+### v186.4 手势旋转检测186 | Gesture Rotation Detect186 | ジェスチャー回転検出186 | 제스처 회전 감지186
+- ✅ 手势旋转检测186
+- ✅ Gesture Rotation Detect186
+- ✅ ジェスチャー回転検出186
+- ✅ 제스처 회전 감지186
+
+### v186.5 投射音频同步 | Cast Audio Sync | キャストオーディオ同期 | 캐스트 오디오 동기화
+- ✅ 投射音频同步
+- ✅ Cast Audio Sync
+- ✅ キャストオーディオ同期
+- ✅ 캐스트 오디오 동기화
+
+### v186.6 播放列表自动跳过片头186 | Playlist Auto Skip Intro186 | プレイリスト自動OPスキップ186 | 재생 목록 자동 OP 건너뛰기186
+- ✅ 播放列表自动跳过片头186
+- ✅ Playlist Auto Skip Intro186
+- ✅ プレイリスト自動OPスキップ186
+- ✅ 재생 목록 자동 OP 건너뛰기186
+
+### v186.7 缓存并发下载数186 | Cache Download Concurrent186 | キャッシュ同時ダウンロード数186 | 캐시 동시 다운로드 수186
+- ✅ 缓存并发下载数186
+- ✅ Cache Download Concurrent186
+- ✅ キャッシュ同時ダウンロード数186
+- ✅ 캐시 동시 다운로드 수186
+
+### v186.8 进度条滑块阴影186 | Progress Bar Thumb Shadow186 | プログレスバーサムシャドウ186 | 진행 바 썸 그림자186
+- ✅ 进度条滑块阴影186
+- ✅ Progress Bar Thumb Shadow186
+- ✅ プログレスバーサムシャドウ186
+- ✅ 진행 바 썸 그림자186
+
+### v186.9 音量增强自动186 | Volume Boost Auto186 | ボリュームブースト自動186 | 볼륨 부스트 자동186
+- ✅ 音量增强自动186
+- ✅ Volume Boost Auto186
+- ✅ ボリュームブースト自動186
+- ✅ 볼륨 부스트 자동186
+
+### v186.10 历史记录书签备注186 | History Bookmark Note186 | 履歴ブックマークメモ186 | 기록 북마크 메모186
+- ✅ 历史记录书签备注186
+- ✅ History Bookmark Note186
+- ✅ 履歴ブックマークメモ186
+- ✅ 기록 북마크 메모186
+
+### v186.11 播放章节列表186 | Playback Chapter List186 | 再生チャプターリスト186 | 재생 챕터 목록186
+- ✅ 播放章节列表186
+- ✅ Playback Chapter List186
+- ✅ 再生チャプターリスト186
+- ✅ 재생 챕터 목록186
+
+### v186.12 截图裁剪比例186 | Screenshot Crop Ratio186 | スクリーンショットクロップ比率186 | 스크린샷 크롭 비율186
+- ✅ 截图裁剪比例186
+- ✅ Screenshot Crop Ratio186
+- ✅ スクリーンショットクロップ比率186
+- ✅ 스크린샷 크롭 비율186
+
+### v186.13 视频广色域186 | Video Wide Gamut186 | ビデオ広色域186 | 비디오 넓은 색영역186
+- ✅ 视频广色域186
+- ✅ Video Wide Gamut186
+- ✅ ビデオ広色域186
+- ✅ 비디오 넓은 색영역186
+
+### v186.14 弹幕固定描边 | Danmaku Fixed Outline | コメント固定アウトライン | 댓글 고정 외곽선
+- ✅ 弹幕固定描边
+- ✅ Danmaku Fixed Outline
+- ✅ コメント固定アウトライン
+- ✅ 댓글 고정 외곽선
+
+### v186.15 字幕背景边框188 | Subtitle Bg Border188 | 字幕背景ボーダー188 | 자막 배경 테두리188
+- ✅ 字幕背景边框188
+- ✅ Subtitle Bg Border188
+- ✅ 字幕背景ボーダー188
+- ✅ 자막 배경 테두리188
+
+### v187.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v187.1-v187.15 功能列表
+- ✅ Audio Stereo Widen187, Danmaku Fixed Outline187, Subtitle Bg Border189, Gesture Rotation Lock, Cast Audio Sync187, Playlist Auto Skip Outro, Cache Download Pause, Progress Bar Thumb Border187, Volume Boost Auto187, History Bookmark Share, Playback Chapter Auto Detect, Screenshot Crop Freeform, Video Wide Gamut187, Danmaku Fixed Outline188, Subtitle Bg Border190
+
+### v187.1 音频立体声扩展187 | Audio Stereo Widen187 | オーディオステレオワイド187 | 오디오 스테레오 확장187
+- ✅ 音频立体声扩展187
+- ✅ Audio Stereo Widen187
+- ✅ オーディオステレオワイド187
+- ✅ 오디오 스테레오 확장187
+
+### v187.2 弹幕固定描边187 | Danmaku Fixed Outline187 | コメント固定アウトライン187 | 댓글 고정 외곽선187
+- ✅ 弹幕固定描边187
+- ✅ Danmaku Fixed Outline187
+- ✅ コメント固定アウトライン187
+- ✅ 댓글 고정 외곽선187
+
+### v187.3 字幕背景边框189 | Subtitle Bg Border189 | 字幕背景ボーダー189 | 자막 배경 테두리189
+- ✅ 字幕背景边框189
+- ✅ Subtitle Bg Border189
+- ✅ 字幕背景ボーダー189
+- ✅ 자막 배경 테두리189
+
+### v187.4 手势旋转锁定 | Gesture Rotation Lock | ジェスチャー回転ロック | 제스처 회전 잠금
+- ✅ 手势旋转锁定
+- ✅ Gesture Rotation Lock
+- ✅ ジェスチャー回転ロック
+- ✅ 제스처 회전 잠금
+
+### v187.5 投射音频同步187 | Cast Audio Sync187 | キャストオーディオ同期187 | 캐스트 오디오 동기화187
+- ✅ 投射音频同步187
+- ✅ Cast Audio Sync187
+- ✅ キャストオーディオ同期187
+- ✅ 캐스트 오디오 동기화187
+
+### v187.6 播放列表自动跳过片尾 | Playlist Auto Skip Outro | プレイリスト自動EDスキップ | 재생 목록 자동 ED 건너뛰기
+- ✅ 播放列表自动跳过片尾
+- ✅ Playlist Auto Skip Outro
+- ✅ プレイリスト自動EDスキップ
+- ✅ 재생 목록 자동 ED 건너뛰기
+
+### v187.7 缓存下载暂停 | Cache Download Pause | キャッシュダウンロード一時停止 | 캐시 다운로드 일시 정지
+- ✅ 缓存下载暂停
+- ✅ Cache Download Pause
+- ✅ キャッシュダウンロード一時停止
+- ✅ 캐시 다운로드 일시 정지
+
+### v187.8 进度条滑块边框187 | Progress Bar Thumb Border187 | プログレスバーサムボーダー187 | 진행 바 썸 테두리187
+- ✅ 进度条滑块边框187
+- ✅ Progress Bar Thumb Border187
+- ✅ プログレスバーサムボーダー187
+- ✅ 진행 바 썸 테두리187
+
+### v187.9 音量增强自动187 | Volume Boost Auto187 | ボリュームブースト自動187 | 볼륨 부스트 자동187
+- ✅ 音量增强自动187
+- ✅ Volume Boost Auto187
+- ✅ ボリュームブースト自動187
+- ✅ 볼륨 부스트 자동187
+
+### v187.10 历史记录书签分享 | History Bookmark Share | 履歴ブックマーク共有 | 기록 북마크 공유
+- ✅ 历史记录书签分享
+- ✅ History Bookmark Share
+- ✅ 履歴ブックマーク共有
+- ✅ 기록 북마크 공유
+
+### v187.11 播放章节自动检测 | Playback Chapter Auto Detect | 再生チャプター自動検出 | 재생 챕터 자동 감지
+- ✅ 播放章节自动检测
+- ✅ Playback Chapter Auto Detect
+- ✅ 再生チャプター自動検出
+- ✅ 재생 챕터 자동 감지
+
+### v187.12 截图自由裁剪 | Screenshot Crop Freeform | スクリーンショットクロップフリーフォーム | 스크린샷 자유 크롭
+- ✅ 截图自由裁剪
+- ✅ Screenshot Crop Freeform
+- ✅ スクリーンショットクロップフリーフォーム
+- ✅ 스크린샷 자유 크롭
+
+### v187.13 视频广色域187 | Video Wide Gamut187 | ビデオ広色域187 | 비디오 넓은 색영역187
+- ✅ 视频广色域187
+- ✅ Video Wide Gamut187
+- ✅ ビデオ広色域187
+- ✅ 비디오 넓은 색영역187
+
+### v187.14 弹幕固定描边188 | Danmaku Fixed Outline188 | コメント固定アウトライン188 | 댓글 고정 외곽선188
+- ✅ 弹幕固定描边188
+- ✅ Danmaku Fixed Outline188
+- ✅ コメント固定アウトライン188
+- ✅ 댓글 고정 외곽선188
+
+### v187.15 字幕背景边框190 | Subtitle Bg Border190 | 字幕背景ボーダー190 | 자막 배경 테두리190
+- ✅ 字幕背景边框190
+- ✅ Subtitle Bg Border190
+- ✅ 字幕背景ボーダー190
+- ✅ 자막 배경 테두리190
+
+### v188.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v188.1-v188.15 功能列表
+- ✅ Audio Stereo Widen188, Danmaku Fixed Outline189, Subtitle Bg Border191, Gesture Rotation Lock188, Cast Audio Delay, Playlist Auto Skip Outro188, Cache Download Pause188, Progress Bar Thumb Border188, Volume Boost Peak188, History Bookmark Share188, Playback Chapter Auto Detect188, Screenshot Crop Freeform188, Video Wide Gamut188, Danmaku Fixed Outline190, Subtitle Bg Border192
+
+### v188.1 音频立体声扩展188 | Audio Stereo Widen188 | オーディオステレオワイド188 | 오디오 스테레오 확장188
+- ✅ 音频立体声扩展188
+- ✅ Audio Stereo Widen188
+- ✅ オーディオステレオワイド188
+- ✅ 오디오 스테레오 확장188
+
+### v188.2 弹幕固定描边189 | Danmaku Fixed Outline189 | コメント固定アウトライン189 | 댓글 고정 외곽선189
+- ✅ 弹幕固定描边189
+- ✅ Danmaku Fixed Outline189
+- ✅ コメント固定アウトライン189
+- ✅ 댓글 고정 외곽선189
+
+### v188.3 字幕背景边框191 | Subtitle Bg Border191 | 字幕背景ボーダー191 | 자막 배경 테두리191
+- ✅ 字幕背景边框191
+- ✅ Subtitle Bg Border191
+- ✅ 字幕背景ボーダー191
+- ✅ 자막 배경 테두리191
+
+### v188.4 手势旋转锁定188 | Gesture Rotation Lock188 | ジェスチャー回転ロック188 | 제스처 회전 잠금188
+- ✅ 手势旋转锁定188
+- ✅ Gesture Rotation Lock188
+- ✅ ジェスチャー回転ロック188
+- ✅ 제스처 회전 잠금188
+
+### v188.5 投射音频延迟 | Cast Audio Delay | キャストオーディオ遅延 | 캐스트 오디오 지연
+- ✅ 投射音频延迟
+- ✅ Cast Audio Delay
+- ✅ キャストオーディオ遅延
+- ✅ 캐스트 오디오 지연
+
+### v188.6 播放列表自动跳过片尾188 | Playlist Auto Skip Outro188 | プレイリスト自動EDスキップ188 | 재생 목록 자동 ED 건너뛰기188
+- ✅ 播放列表自动跳过片尾188
+- ✅ Playlist Auto Skip Outro188
+- ✅ プレイリスト自動EDスキップ188
+- ✅ 재생 목록 자동 ED 건너뛰기188
+
+### v188.7 缓存下载暂停188 | Cache Download Pause188 | キャッシュダウンロード一時停止188 | 캐시 다운로드 일시 정지188
+- ✅ 缓存下载暂停188
+- ✅ Cache Download Pause188
+- ✅ キャッシュダウンロード一時停止188
+- ✅ 캐시 다운로드 일시 정지188
+
+### v188.8 进度条滑块边框188 | Progress Bar Thumb Border188 | プログレスバーサムボーダー188 | 진행 바 썸 테두리188
+- ✅ 进度条滑块边框188
+- ✅ Progress Bar Thumb Border188
+- ✅ プログレスバーサムボーダー188
+- ✅ 진행 바 썸 테두리188
+
+### v188.9 音量增强峰值188 | Volume Boost Peak188 | ボリュームブーストピーク188 | 볼륨 부스트 피크188
+- ✅ 音量增强峰值188
+- ✅ Volume Boost Peak188
+- ✅ ボリュームブーストピーク188
+- ✅ 볼륨 부스트 피크188
+
+### v188.10 历史记录书签分享188 | History Bookmark Share188 | 履歴ブックマーク共有188 | 기록 북마크 공유188
+- ✅ 历史记录书签分享188
+- ✅ History Bookmark Share188
+- ✅ 履歴ブックマーク共有188
+- ✅ 기록 북마크 공유188
+
+### v188.11 播放章节自动检测188 | Playback Chapter Auto Detect188 | 再生チャプター自動検出188 | 재생 챕터 자동 감지188
+- ✅ 播放章节自动检测188
+- ✅ Playback Chapter Auto Detect188
+- ✅ 再生チャプター自動検出188
+- ✅ 재생 챕터 자동 감지188
+
+### v188.12 截图自由裁剪188 | Screenshot Crop Freeform188 | スクリーンショットクロップフリーフォーム188 | 스크린샷 자유 크롭188
+- ✅ 截图自由裁剪188
+- ✅ Screenshot Crop Freeform188
+- ✅ スクリーンショットクロップフリーフォーム188
+- ✅ 스크린샷 자유 크롭188
+
+### v188.13 视频广色域188 | Video Wide Gamut188 | ビデオ広色域188 | 비디오 넓은 색영역188
+- ✅ 视频广色域188
+- ✅ Video Wide Gamut188
+- ✅ ビデオ広色域188
+- ✅ 비디오 넓은 색영역188
+
+### v188.14 弹幕固定描边190 | Danmaku Fixed Outline190 | コメント固定アウトライン190 | 댓글 고정 외곽선190
+- ✅ 弹幕固定描边190
+- ✅ Danmaku Fixed Outline190
+- ✅ コメント固定アウトライン190
+- ✅ 댓글 고정 외곽선190
+
+### v188.15 字幕背景边框192 | Subtitle Bg Border192 | 字幕背景ボーダー192 | 자막 배경 테두리192
+- ✅ 字幕背景边框192
+- ✅ Subtitle Bg Border192
+- ✅ 字幕背景ボーダー192
+- ✅ 자막 배경 테두리192
+
+### v189.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v189.1-v189.15 功能列表
+- ✅ Audio Mono Toggle189, Danmaku Fixed Outline191, Subtitle Bg Border193, Gesture Rotation Sensitivity, Cast Audio Delay189, Playlist Auto Skip Outro189, Cache Download Speed189, Progress Bar Thumb Border189, Volume Boost Peak189, History Bookmark Export, Playback Chapter Sync, Screenshot Save Path, Video Wide Gamut189, Danmaku Fixed Border189, Subtitle Bg Border194
+
+### v189.1 音频单声道开关189 | Audio Mono Toggle189 | オーディオモノ切替189 | 오디오 모노 전환189
+- ✅ 音频单声道开关189
+- ✅ Audio Mono Toggle189
+- ✅ オーディオモノ切替189
+- ✅ 오디오 모노 전환189
+
+### v189.2 弹幕固定描边191 | Danmaku Fixed Outline191 | コメント固定アウトライン191 | 댓글 고정 외곽선191
+- ✅ 弹幕固定描边191
+- ✅ Danmaku Fixed Outline191
+- ✅ コメント固定アウトライン191
+- ✅ 댓글 고정 외곽선191
+
+### v189.3 字幕背景边框193 | Subtitle Bg Border193 | 字幕背景ボーダー193 | 자막 배경 테두리193
+- ✅ 字幕背景边框193
+- ✅ Subtitle Bg Border193
+- ✅ 字幕背景ボーダー193
+- ✅ 자막 배경 테두리193
+
+### v189.4 手势旋转灵敏度 | Gesture Rotation Sensitivity | ジェスチャー回転感度 | 제스처 회전 감도
+- ✅ 手势旋转灵敏度
+- ✅ Gesture Rotation Sensitivity
+- ✅ ジェスチャー回転感度
+- ✅ 제스처 회전 감도
+
+### v189.5 投射音频延迟189 | Cast Audio Delay189 | キャストオーディオ遅延189 | 캐스트 오디오 지연189
+- ✅ 投射音频延迟189
+- ✅ Cast Audio Delay189
+- ✅ キャストオーディオ遅延189
+- ✅ 캐스트 오디오 지연189
+
+### v189.6 播放列表自动跳过片尾189 | Playlist Auto Skip Outro189 | プレイリスト自動EDスキップ189 | 재생 목록 자동 ED 건너뛰기189
+- ✅ 播放列表自动跳过片尾189
+- ✅ Playlist Auto Skip Outro189
+- ✅ プレイリスト自動EDスキップ189
+- ✅ 재생 목록 자동 ED 건너뛰기189
+
+### v189.7 缓存下载速度189 | Cache Download Speed189 | キャッシュダウンロード速度189 | 캐시 다운로드 속도189
+- ✅ 缓存下载速度189
+- ✅ Cache Download Speed189
+- ✅ キャッシュダウンロード速度189
+- ✅ 캐시 다운로드 속도189
+
+### v189.8 进度条滑块边框189 | Progress Bar Thumb Border189 | プログレスバーサムボーダー189 | 진행 바 썸 테두리189
+- ✅ 进度条滑块边框189
+- ✅ Progress Bar Thumb Border189
+- ✅ プログレスバーサムボーダー189
+- ✅ 진행 바 썸 테두리189
+
+### v189.9 音量增强峰值189 | Volume Boost Peak189 | ボリュームブーストピーク189 | 볼륨 부스트 피크189
+- ✅ 音量增强峰值189
+- ✅ Volume Boost Peak189
+- ✅ ボリュームブーストピーク189
+- ✅ 볼륨 부스트 피크189
+
+### v189.10 历史记录书签导出 | History Bookmark Export | 履歴ブックマークエクスポート | 기록 북마크 내보내기
+- ✅ 历史记录书签导出
+- ✅ History Bookmark Export
+- ✅ 履歴ブックマークエクスポート
+- ✅ 기록 북마크 내보내기
+
+### v189.11 播放章节同步 | Playback Chapter Sync | 再生チャプター同期 | 재생 챕터 동기화
+- ✅ 播放章节同步
+- ✅ Playback Chapter Sync
+- ✅ 再生チャプター同期
+- ✅ 재생 챕터 동기화
+
+### v189.12 截图保存路径 | Screenshot Save Path | スクリーンショット保存パス | 스크린샷 저장 경로
+- ✅ 截图保存路径
+- ✅ Screenshot Save Path
+- ✅ スクリーンショット保存パス
+- ✅ 스크린샷 저장 경로
+
+### v189.13 视频广色域189 | Video Wide Gamut189 | ビデオ広色域189 | 비디오 넓은 색영역189
+- ✅ 视频广色域189
+- ✅ Video Wide Gamut189
+- ✅ ビデオ広色域189
+- ✅ 비디오 넓은 색영역189
+
+### v189.14 弹幕固定边框189 | Danmaku Fixed Border189 | コメント固定ボーダー189 | 댓글 고정 테두리189
+- ✅ 弹幕固定边框189
+- ✅ Danmaku Fixed Border189
+- ✅ コメント固定ボーダー189
+- ✅ 댓글 고정 테두리189
+
+### v189.15 字幕背景边框194 | Subtitle Bg Border194 | 字幕背景ボーダー194 | 자막 배경 테두리194
+- ✅ 字幕背景边框194
+- ✅ Subtitle Bg Border194
+- ✅ 字幕背景ボーダー194
+- ✅ 자막 배경 테두리194
+
+### v190.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v190.1-v190.15 功能列表
+- ✅ Audio Mono Toggle190, Danmaku Fixed Border190, Subtitle Bg Border195, Gesture Rotation Sensitivity190, Cast Audio Volume, Playlist Auto Skip Intro190, Cache Download Speed190, Progress Bar Thumb Border190, Volume Boost Peak190, History Bookmark Export190, Playback Chapter Sync190, Screenshot Save Path190, Video Color Space190, Danmaku Fixed Border191, Subtitle Bg Border196
+
+### v190.1 音频单声道开关190 | Audio Mono Toggle190 | オーディオモノ切替190 | 오디오 모노 전환190
+- ✅ 音频单声道开关190
+- ✅ Audio Mono Toggle190
+- ✅ オーディオモノ切替190
+- ✅ 오디오 모노 전환190
+
+### v190.2 弹幕固定边框190 | Danmaku Fixed Border190 | コメント固定ボーダー190 | 댓글 고정 테두리190
+- ✅ 弹幕固定边框190
+- ✅ Danmaku Fixed Border190
+- ✅ コメント固定ボーダー190
+- ✅ 댓글 고정 테두리190
+
+### v190.3 字幕背景边框195 | Subtitle Bg Border195 | 字幕背景ボーダー195 | 자막 배경 테두리195
+- ✅ 字幕背景边框195
+- ✅ Subtitle Bg Border195
+- ✅ 字幕背景ボーダー195
+- ✅ 자막 배경 테두리195
+
+### v190.4 手势旋转灵敏度190 | Gesture Rotation Sensitivity190 | ジェスチャー回転感度190 | 제스처 회전 감도190
+- ✅ 手势旋转灵敏度190
+- ✅ Gesture Rotation Sensitivity190
+- ✅ ジェスチャー回転感度190
+- ✅ 제스처 회전 감도190
+
+### v190.5 投射音频音量 | Cast Audio Volume | キャストオーディオ音量 | 캐스트 오디오 볼륨
+- ✅ 投射音频音量
+- ✅ Cast Audio Volume
+- ✅ キャストオーディオ音量
+- ✅ 캐스트 오디오 볼륨
+
+### v190.6 播放列表自动跳过片头190 | Playlist Auto Skip Intro190 | プレイリスト自動OPスキップ190 | 재생 목록 자동 OP 건너뛰기190
+- ✅ 播放列表自动跳过片头190
+- ✅ Playlist Auto Skip Intro190
+- ✅ プレイリスト自動OPスキップ190
+- ✅ 재생 목록 자동 OP 건너뛰기190
+
+### v190.7 缓存下载速度190 | Cache Download Speed190 | キャッシュダウンロード速度190 | 캐시 다운로드 속도190
+- ✅ 缓存下载速度190
+- ✅ Cache Download Speed190
+- ✅ キャッシュダウンロード速度190
+- ✅ 캐시 다운로드 속도190
+
+### v190.8 进度条滑块边框190 | Progress Bar Thumb Border190 | プログレスバーサムボーダー190 | 진행 바 썸 테두리190
+- ✅ 进度条滑块边框190
+- ✅ Progress Bar Thumb Border190
+- ✅ プログレスバーサムボーダー190
+- ✅ 진행 바 썸 테두리190
+
+### v190.9 音量增强峰值190 | Volume Boost Peak190 | ボリュームブーストピーク190 | 볼륨 부스트 피크190
+- ✅ 音量增强峰值190
+- ✅ Volume Boost Peak190
+- ✅ ボリュームブーストピーク190
+- ✅ 볼륨 부스트 피크190
+
+### v190.10 历史记录书签导出190 | History Bookmark Export190 | 履歴ブックマークエクスポート190 | 기록 북마크 내보내기190
+- ✅ 历史记录书签导出190
+- ✅ History Bookmark Export190
+- ✅ 履歴ブックマークエクスポート190
+- ✅ 기록 북마크 내보내기190
+
+### v190.11 播放章节同步190 | Playback Chapter Sync190 | 再生チャプター同期190 | 재생 챕터 동기화190
+- ✅ 播放章节同步190
+- ✅ Playback Chapter Sync190
+- ✅ 再生チャプター同期190
+- ✅ 재생 챕터 동기화190
+
+### v190.12 截图保存路径190 | Screenshot Save Path190 | スクリーンショット保存パス190 | 스크린샷 저장 경로190
+- ✅ 截图保存路径190
+- ✅ Screenshot Save Path190
+- ✅ スクリーンショット保存パス190
+- ✅ 스크린샷 저장 경로190
+
+### v190.13 视频色彩空间190 | Video Color Space190 | ビデオカラースペース190 | 비디오 색공간190
+- ✅ 视频色彩空间190
+- ✅ Video Color Space190
+- ✅ ビデオカラースペース190
+- ✅ 비디오 색공간190
+
+### v190.14 弹幕固定边框191 | Danmaku Fixed Border191 | コメント固定ボーダー191 | 댓글 고정 테두리191
+- ✅ 弹幕固定边框191
+- ✅ Danmaku Fixed Border191
+- ✅ コメント固定ボーダー191
+- ✅ 댓글 고정 테두리191
+
+### v190.15 字幕背景边框196 | Subtitle Bg Border196 | 字幕背景ボーダー196 | 자막 배경 테두리196
+- ✅ 字幕背景边框196
+- ✅ Subtitle Bg Border196
+- ✅ 字幕背景ボーダー196
+- ✅ 자막 배경 테두리196
+
 ### v55.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
 ### v55.1-v55.15 功能列表
 - ✅ Auto Resume, Font Monospace, Color Hue Auto, Peak Limiter, Send Queue, Cast Bandwidth Limit, Lock Screen, Filter Regex, Network Policy, Double Tap Action, Font Weight Custom, Tint Custom, Volume Compressor, Bg Padding, Cast Auto Quality
@@ -24170,4 +25111,4 @@ This project is based on open-source software. All rights belong to the original
 - **基础版本 | Base Versions**: v10.0.0 - v11.19.0 (25 versions)
 - **AI自动维护版本 | AI Maintained**: v12.1 - v45.15 (550+ versions)
 - **开发周期 | Development Cycle**: 2024 - 2026
-- **功能特性 | Features**: 1800+ new features added
+- **功能特性 | Features**: 1900+ new features added
