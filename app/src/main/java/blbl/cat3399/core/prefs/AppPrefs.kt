@@ -38048,6 +38048,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V520REMOTEAUTOCONNECT520, false)
         set(value) = prefs.edit().putBoolean(KEY_V520REMOTEAUTOCONNECT520, value).apply()
 
+    var v521removeAutoConfirm521: Boolean
+        get() = prefs.getBoolean(KEY_V521REMOVEAUTOCONFIRM521, false)
+        set(value) = prefs.edit().putBoolean(KEY_V521REMOVEAUTOCONFIRM521, value).apply()
+
+    var v521renderAutoQuality521: Int
+        get() = prefs.getInt(KEY_V521RENDERAUTOQUALITY521, 0)
+        set(value) = prefs.edit().putInt(KEY_V521RENDERAUTOQUALITY521, value).apply()
+
+    var v521requestAutoRetry521: Boolean
+        get() = prefs.getBoolean(KEY_V521REQUESTAUTORETRY521, false)
+        set(value) = prefs.edit().putBoolean(KEY_V521REQUESTAUTORETRY521, value).apply()
+
+    var v521resetAutoDefault521: Boolean
+        get() = prefs.getBoolean(KEY_V521RESETAUTODEFAULT521, false)
+        set(value) = prefs.edit().putBoolean(KEY_V521RESETAUTODEFAULT521, value).apply()
+
+    var v521resizeAutoScale521: Boolean
+        get() = prefs.getBoolean(KEY_V521RESIZEAUTOSCALE521, false)
+        set(value) = prefs.edit().putBoolean(KEY_V521RESIZEAUTOSCALE521, value).apply()
+
+    var v521responseAutoCache521: Boolean
+        get() = prefs.getBoolean(KEY_V521RESPONSEAUTOCACHE521, false)
+        set(value) = prefs.edit().putBoolean(KEY_V521RESPONSEAUTOCACHE521, value).apply()
+
+    var v521restoreAutoState521: Boolean
+        get() = prefs.getBoolean(KEY_V521RESTOREAUTOSTATE521, false)
+        set(value) = prefs.edit().putBoolean(KEY_V521RESTOREAUTOSTATE521, value).apply()
+
+    var v521resultAutoSort521: Int
+        get() = prefs.getInt(KEY_V521RESULTAUTOSORT521, 0)
+        set(value) = prefs.edit().putInt(KEY_V521RESULTAUTOSORT521, value).apply()
+
+    var v521returnToTop521: Boolean
+        get() = prefs.getBoolean(KEY_V521RETURNTOTOP521, false)
+        set(value) = prefs.edit().putBoolean(KEY_V521RETURNTOTOP521, value).apply()
+
+    var v521richTextEnabled521: Boolean
+        get() = prefs.getBoolean(KEY_V521RICHTEXTENABLED521, false)
+        set(value) = prefs.edit().putBoolean(KEY_V521RICHTEXTENABLED521, value).apply()
+
+    var v521ringAutoVibrate521: Boolean
+        get() = prefs.getBoolean(KEY_V521RINGAUTOVIBRATE521, false)
+        set(value) = prefs.edit().putBoolean(KEY_V521RINGAUTOVIBRATE521, value).apply()
+
+    var v521rootAutoDetect521: Boolean
+        get() = prefs.getBoolean(KEY_V521ROOTAUTODETECT521, false)
+        set(value) = prefs.edit().putBoolean(KEY_V521ROOTAUTODETECT521, value).apply()
+
+    var v521roundCornerEnabled521: Boolean
+        get() = prefs.getBoolean(KEY_V521ROUNDCORNERENABLED521, false)
+        set(value) = prefs.edit().putBoolean(KEY_V521ROUNDCORNERENABLED521, value).apply()
+
+    var v521rowAutoExpand521: Boolean
+        get() = prefs.getBoolean(KEY_V521ROWAUTOEXPAND521, false)
+        set(value) = prefs.edit().putBoolean(KEY_V521ROWAUTOEXPAND521, value).apply()
+
+    var v521ruleAutoApply521: Boolean
+        get() = prefs.getBoolean(KEY_V521RULEAUTOAPPLY521, false)
+        set(value) = prefs.edit().putBoolean(KEY_V521RULEAUTOAPPLY521, value).apply()
+
+    var v522removeAutoConfirm522: Boolean
+        get() = prefs.getBoolean(KEY_V522REMOVEAUTOCONFIRM522, false)
+        set(value) = prefs.edit().putBoolean(KEY_V522REMOVEAUTOCONFIRM522, value).apply()
+
+    var v522renderAutoQuality522: Int
+        get() = prefs.getInt(KEY_V522RENDERAUTOQUALITY522, 0)
+        set(value) = prefs.edit().putInt(KEY_V522RENDERAUTOQUALITY522, value).apply()
+
+    var v522requestAutoRetry522: Boolean
+        get() = prefs.getBoolean(KEY_V522REQUESTAUTORETRY522, false)
+        set(value) = prefs.edit().putBoolean(KEY_V522REQUESTAUTORETRY522, value).apply()
+
+    var v522resetAutoDefault522: Boolean
+        get() = prefs.getBoolean(KEY_V522RESETAUTODEFAULT522, false)
+        set(value) = prefs.edit().putBoolean(KEY_V522RESETAUTODEFAULT522, value).apply()
+
+    var v522resizeAutoScale522: Boolean
+        get() = prefs.getBoolean(KEY_V522RESIZEAUTOSCALE522, false)
+        set(value) = prefs.edit().putBoolean(KEY_V522RESIZEAUTOSCALE522, value).apply()
+
+    var v522responseAutoCache522: Boolean
+        get() = prefs.getBoolean(KEY_V522RESPONSEAUTOCACHE522, false)
+        set(value) = prefs.edit().putBoolean(KEY_V522RESPONSEAUTOCACHE522, value).apply()
+
+    var v522restoreAutoState522: Boolean
+        get() = prefs.getBoolean(KEY_V522RESTOREAUTOSTATE522, false)
+        set(value) = prefs.edit().putBoolean(KEY_V522RESTOREAUTOSTATE522, value).apply()
+
+    var v522resultAutoSort522: Int
+        get() = prefs.getInt(KEY_V522RESULTAUTOSORT522, 0)
+        set(value) = prefs.edit().putInt(KEY_V522RESULTAUTOSORT522, value).apply()
+
+    var v522returnToTop522: Boolean
+        get() = prefs.getBoolean(KEY_V522RETURNTOTOP522, false)
+        set(value) = prefs.edit().putBoolean(KEY_V522RETURNTOTOP522, value).apply()
+
+    var v522richTextEnabled522: Boolean
+        get() = prefs.getBoolean(KEY_V522RICHTEXTENABLED522, false)
+        set(value) = prefs.edit().putBoolean(KEY_V522RICHTEXTENABLED522, value).apply()
+
+    var v522ringAutoVibrate522: Boolean
+        get() = prefs.getBoolean(KEY_V522RINGAUTOVIBRATE522, false)
+        set(value) = prefs.edit().putBoolean(KEY_V522RINGAUTOVIBRATE522, value).apply()
+
+    var v522rootAutoDetect522: Boolean
+        get() = prefs.getBoolean(KEY_V522ROOTAUTODETECT522, false)
+        set(value) = prefs.edit().putBoolean(KEY_V522ROOTAUTODETECT522, value).apply()
+
+    var v522roundCornerEnabled522: Boolean
+        get() = prefs.getBoolean(KEY_V522ROUNDCORNERENABLED522, false)
+        set(value) = prefs.edit().putBoolean(KEY_V522ROUNDCORNERENABLED522, value).apply()
+
+    var v522rowAutoExpand522: Boolean
+        get() = prefs.getBoolean(KEY_V522ROWAUTOEXPAND522, false)
+        set(value) = prefs.edit().putBoolean(KEY_V522ROWAUTOEXPAND522, value).apply()
+
+    var v522ruleAutoApply522: Boolean
+        get() = prefs.getBoolean(KEY_V522RULEAUTOAPPLY522, false)
+        set(value) = prefs.edit().putBoolean(KEY_V522RULEAUTOAPPLY522, value).apply()
+
+    var v523removeAutoConfirm523: Boolean
+        get() = prefs.getBoolean(KEY_V523REMOVEAUTOCONFIRM523, false)
+        set(value) = prefs.edit().putBoolean(KEY_V523REMOVEAUTOCONFIRM523, value).apply()
+
+    var v523renderAutoQuality523: Int
+        get() = prefs.getInt(KEY_V523RENDERAUTOQUALITY523, 0)
+        set(value) = prefs.edit().putInt(KEY_V523RENDERAUTOQUALITY523, value).apply()
+
+    var v523requestAutoRetry523: Boolean
+        get() = prefs.getBoolean(KEY_V523REQUESTAUTORETRY523, false)
+        set(value) = prefs.edit().putBoolean(KEY_V523REQUESTAUTORETRY523, value).apply()
+
+    var v523resetAutoDefault523: Boolean
+        get() = prefs.getBoolean(KEY_V523RESETAUTODEFAULT523, false)
+        set(value) = prefs.edit().putBoolean(KEY_V523RESETAUTODEFAULT523, value).apply()
+
+    var v523resizeAutoScale523: Boolean
+        get() = prefs.getBoolean(KEY_V523RESIZEAUTOSCALE523, false)
+        set(value) = prefs.edit().putBoolean(KEY_V523RESIZEAUTOSCALE523, value).apply()
+
+    var v523responseAutoCache523: Boolean
+        get() = prefs.getBoolean(KEY_V523RESPONSEAUTOCACHE523, false)
+        set(value) = prefs.edit().putBoolean(KEY_V523RESPONSEAUTOCACHE523, value).apply()
+
+    var v523restoreAutoState523: Boolean
+        get() = prefs.getBoolean(KEY_V523RESTOREAUTOSTATE523, false)
+        set(value) = prefs.edit().putBoolean(KEY_V523RESTOREAUTOSTATE523, value).apply()
+
+    var v523resultAutoSort523: Int
+        get() = prefs.getInt(KEY_V523RESULTAUTOSORT523, 0)
+        set(value) = prefs.edit().putInt(KEY_V523RESULTAUTOSORT523, value).apply()
+
+    var v523returnToTop523: Boolean
+        get() = prefs.getBoolean(KEY_V523RETURNTOTOP523, false)
+        set(value) = prefs.edit().putBoolean(KEY_V523RETURNTOTOP523, value).apply()
+
+    var v523richTextEnabled523: Boolean
+        get() = prefs.getBoolean(KEY_V523RICHTEXTENABLED523, false)
+        set(value) = prefs.edit().putBoolean(KEY_V523RICHTEXTENABLED523, value).apply()
+
+    var v523ringAutoVibrate523: Boolean
+        get() = prefs.getBoolean(KEY_V523RINGAUTOVIBRATE523, false)
+        set(value) = prefs.edit().putBoolean(KEY_V523RINGAUTOVIBRATE523, value).apply()
+
+    var v523rootAutoDetect523: Boolean
+        get() = prefs.getBoolean(KEY_V523ROOTAUTODETECT523, false)
+        set(value) = prefs.edit().putBoolean(KEY_V523ROOTAUTODETECT523, value).apply()
+
+    var v523roundCornerEnabled523: Boolean
+        get() = prefs.getBoolean(KEY_V523ROUNDCORNERENABLED523, false)
+        set(value) = prefs.edit().putBoolean(KEY_V523ROUNDCORNERENABLED523, value).apply()
+
+    var v523rowAutoExpand523: Boolean
+        get() = prefs.getBoolean(KEY_V523ROWAUTOEXPAND523, false)
+        set(value) = prefs.edit().putBoolean(KEY_V523ROWAUTOEXPAND523, value).apply()
+
+    var v523ruleAutoApply523: Boolean
+        get() = prefs.getBoolean(KEY_V523RULEAUTOAPPLY523, false)
+        set(value) = prefs.edit().putBoolean(KEY_V523RULEAUTOAPPLY523, value).apply()
+
+    var v524removeAutoConfirm524: Boolean
+        get() = prefs.getBoolean(KEY_V524REMOVEAUTOCONFIRM524, false)
+        set(value) = prefs.edit().putBoolean(KEY_V524REMOVEAUTOCONFIRM524, value).apply()
+
+    var v524renderAutoQuality524: Int
+        get() = prefs.getInt(KEY_V524RENDERAUTOQUALITY524, 0)
+        set(value) = prefs.edit().putInt(KEY_V524RENDERAUTOQUALITY524, value).apply()
+
+    var v524requestAutoRetry524: Boolean
+        get() = prefs.getBoolean(KEY_V524REQUESTAUTORETRY524, false)
+        set(value) = prefs.edit().putBoolean(KEY_V524REQUESTAUTORETRY524, value).apply()
+
+    var v524resetAutoDefault524: Boolean
+        get() = prefs.getBoolean(KEY_V524RESETAUTODEFAULT524, false)
+        set(value) = prefs.edit().putBoolean(KEY_V524RESETAUTODEFAULT524, value).apply()
+
+    var v524resizeAutoScale524: Boolean
+        get() = prefs.getBoolean(KEY_V524RESIZEAUTOSCALE524, false)
+        set(value) = prefs.edit().putBoolean(KEY_V524RESIZEAUTOSCALE524, value).apply()
+
+    var v524responseAutoCache524: Boolean
+        get() = prefs.getBoolean(KEY_V524RESPONSEAUTOCACHE524, false)
+        set(value) = prefs.edit().putBoolean(KEY_V524RESPONSEAUTOCACHE524, value).apply()
+
+    var v524restoreAutoState524: Boolean
+        get() = prefs.getBoolean(KEY_V524RESTOREAUTOSTATE524, false)
+        set(value) = prefs.edit().putBoolean(KEY_V524RESTOREAUTOSTATE524, value).apply()
+
+    var v524resultAutoSort524: Int
+        get() = prefs.getInt(KEY_V524RESULTAUTOSORT524, 0)
+        set(value) = prefs.edit().putInt(KEY_V524RESULTAUTOSORT524, value).apply()
+
+    var v524returnToTop524: Boolean
+        get() = prefs.getBoolean(KEY_V524RETURNTOTOP524, false)
+        set(value) = prefs.edit().putBoolean(KEY_V524RETURNTOTOP524, value).apply()
+
+    var v524richTextEnabled524: Boolean
+        get() = prefs.getBoolean(KEY_V524RICHTEXTENABLED524, false)
+        set(value) = prefs.edit().putBoolean(KEY_V524RICHTEXTENABLED524, value).apply()
+
+    var v524ringAutoVibrate524: Boolean
+        get() = prefs.getBoolean(KEY_V524RINGAUTOVIBRATE524, false)
+        set(value) = prefs.edit().putBoolean(KEY_V524RINGAUTOVIBRATE524, value).apply()
+
+    var v524rootAutoDetect524: Boolean
+        get() = prefs.getBoolean(KEY_V524ROOTAUTODETECT524, false)
+        set(value) = prefs.edit().putBoolean(KEY_V524ROOTAUTODETECT524, value).apply()
+
+    var v524roundCornerEnabled524: Boolean
+        get() = prefs.getBoolean(KEY_V524ROUNDCORNERENABLED524, false)
+        set(value) = prefs.edit().putBoolean(KEY_V524ROUNDCORNERENABLED524, value).apply()
+
+    var v524rowAutoExpand524: Boolean
+        get() = prefs.getBoolean(KEY_V524ROWAUTOEXPAND524, false)
+        set(value) = prefs.edit().putBoolean(KEY_V524ROWAUTOEXPAND524, value).apply()
+
+    var v524ruleAutoApply524: Boolean
+        get() = prefs.getBoolean(KEY_V524RULEAUTOAPPLY524, false)
+        set(value) = prefs.edit().putBoolean(KEY_V524RULEAUTOAPPLY524, value).apply()
+
+    var v525removeAutoConfirm525: Boolean
+        get() = prefs.getBoolean(KEY_V525REMOVEAUTOCONFIRM525, false)
+        set(value) = prefs.edit().putBoolean(KEY_V525REMOVEAUTOCONFIRM525, value).apply()
+
+    var v525renderAutoQuality525: Int
+        get() = prefs.getInt(KEY_V525RENDERAUTOQUALITY525, 0)
+        set(value) = prefs.edit().putInt(KEY_V525RENDERAUTOQUALITY525, value).apply()
+
+    var v525requestAutoRetry525: Boolean
+        get() = prefs.getBoolean(KEY_V525REQUESTAUTORETRY525, false)
+        set(value) = prefs.edit().putBoolean(KEY_V525REQUESTAUTORETRY525, value).apply()
+
+    var v525resetAutoDefault525: Boolean
+        get() = prefs.getBoolean(KEY_V525RESETAUTODEFAULT525, false)
+        set(value) = prefs.edit().putBoolean(KEY_V525RESETAUTODEFAULT525, value).apply()
+
+    var v525resizeAutoScale525: Boolean
+        get() = prefs.getBoolean(KEY_V525RESIZEAUTOSCALE525, false)
+        set(value) = prefs.edit().putBoolean(KEY_V525RESIZEAUTOSCALE525, value).apply()
+
+    var v525responseAutoCache525: Boolean
+        get() = prefs.getBoolean(KEY_V525RESPONSEAUTOCACHE525, false)
+        set(value) = prefs.edit().putBoolean(KEY_V525RESPONSEAUTOCACHE525, value).apply()
+
+    var v525restoreAutoState525: Boolean
+        get() = prefs.getBoolean(KEY_V525RESTOREAUTOSTATE525, false)
+        set(value) = prefs.edit().putBoolean(KEY_V525RESTOREAUTOSTATE525, value).apply()
+
+    var v525resultAutoSort525: Int
+        get() = prefs.getInt(KEY_V525RESULTAUTOSORT525, 0)
+        set(value) = prefs.edit().putInt(KEY_V525RESULTAUTOSORT525, value).apply()
+
+    var v525returnToTop525: Boolean
+        get() = prefs.getBoolean(KEY_V525RETURNTOTOP525, false)
+        set(value) = prefs.edit().putBoolean(KEY_V525RETURNTOTOP525, value).apply()
+
+    var v525richTextEnabled525: Boolean
+        get() = prefs.getBoolean(KEY_V525RICHTEXTENABLED525, false)
+        set(value) = prefs.edit().putBoolean(KEY_V525RICHTEXTENABLED525, value).apply()
+
+    var v525ringAutoVibrate525: Boolean
+        get() = prefs.getBoolean(KEY_V525RINGAUTOVIBRATE525, false)
+        set(value) = prefs.edit().putBoolean(KEY_V525RINGAUTOVIBRATE525, value).apply()
+
+    var v525rootAutoDetect525: Boolean
+        get() = prefs.getBoolean(KEY_V525ROOTAUTODETECT525, false)
+        set(value) = prefs.edit().putBoolean(KEY_V525ROOTAUTODETECT525, value).apply()
+
+    var v525roundCornerEnabled525: Boolean
+        get() = prefs.getBoolean(KEY_V525ROUNDCORNERENABLED525, false)
+        set(value) = prefs.edit().putBoolean(KEY_V525ROUNDCORNERENABLED525, value).apply()
+
+    var v525rowAutoExpand525: Boolean
+        get() = prefs.getBoolean(KEY_V525ROWAUTOEXPAND525, false)
+        set(value) = prefs.edit().putBoolean(KEY_V525ROWAUTOEXPAND525, value).apply()
+
+    var v525ruleAutoApply525: Boolean
+        get() = prefs.getBoolean(KEY_V525RULEAUTOAPPLY525, false)
+        set(value) = prefs.edit().putBoolean(KEY_V525RULEAUTOAPPLY525, value).apply()
+
+    var v526removeAutoConfirm526: Boolean
+        get() = prefs.getBoolean(KEY_V526REMOVEAUTOCONFIRM526, false)
+        set(value) = prefs.edit().putBoolean(KEY_V526REMOVEAUTOCONFIRM526, value).apply()
+
+    var v526renderAutoQuality526: Int
+        get() = prefs.getInt(KEY_V526RENDERAUTOQUALITY526, 0)
+        set(value) = prefs.edit().putInt(KEY_V526RENDERAUTOQUALITY526, value).apply()
+
+    var v526requestAutoRetry526: Boolean
+        get() = prefs.getBoolean(KEY_V526REQUESTAUTORETRY526, false)
+        set(value) = prefs.edit().putBoolean(KEY_V526REQUESTAUTORETRY526, value).apply()
+
+    var v526resetAutoDefault526: Boolean
+        get() = prefs.getBoolean(KEY_V526RESETAUTODEFAULT526, false)
+        set(value) = prefs.edit().putBoolean(KEY_V526RESETAUTODEFAULT526, value).apply()
+
+    var v526resizeAutoScale526: Boolean
+        get() = prefs.getBoolean(KEY_V526RESIZEAUTOSCALE526, false)
+        set(value) = prefs.edit().putBoolean(KEY_V526RESIZEAUTOSCALE526, value).apply()
+
+    var v526responseAutoCache526: Boolean
+        get() = prefs.getBoolean(KEY_V526RESPONSEAUTOCACHE526, false)
+        set(value) = prefs.edit().putBoolean(KEY_V526RESPONSEAUTOCACHE526, value).apply()
+
+    var v526restoreAutoState526: Boolean
+        get() = prefs.getBoolean(KEY_V526RESTOREAUTOSTATE526, false)
+        set(value) = prefs.edit().putBoolean(KEY_V526RESTOREAUTOSTATE526, value).apply()
+
+    var v526resultAutoSort526: Int
+        get() = prefs.getInt(KEY_V526RESULTAUTOSORT526, 0)
+        set(value) = prefs.edit().putInt(KEY_V526RESULTAUTOSORT526, value).apply()
+
+    var v526returnToTop526: Boolean
+        get() = prefs.getBoolean(KEY_V526RETURNTOTOP526, false)
+        set(value) = prefs.edit().putBoolean(KEY_V526RETURNTOTOP526, value).apply()
+
+    var v526richTextEnabled526: Boolean
+        get() = prefs.getBoolean(KEY_V526RICHTEXTENABLED526, false)
+        set(value) = prefs.edit().putBoolean(KEY_V526RICHTEXTENABLED526, value).apply()
+
+    var v526ringAutoVibrate526: Boolean
+        get() = prefs.getBoolean(KEY_V526RINGAUTOVIBRATE526, false)
+        set(value) = prefs.edit().putBoolean(KEY_V526RINGAUTOVIBRATE526, value).apply()
+
+    var v526rootAutoDetect526: Boolean
+        get() = prefs.getBoolean(KEY_V526ROOTAUTODETECT526, false)
+        set(value) = prefs.edit().putBoolean(KEY_V526ROOTAUTODETECT526, value).apply()
+
+    var v526roundCornerEnabled526: Boolean
+        get() = prefs.getBoolean(KEY_V526ROUNDCORNERENABLED526, false)
+        set(value) = prefs.edit().putBoolean(KEY_V526ROUNDCORNERENABLED526, value).apply()
+
+    var v526rowAutoExpand526: Boolean
+        get() = prefs.getBoolean(KEY_V526ROWAUTOEXPAND526, false)
+        set(value) = prefs.edit().putBoolean(KEY_V526ROWAUTOEXPAND526, value).apply()
+
+    var v526ruleAutoApply526: Boolean
+        get() = prefs.getBoolean(KEY_V526RULEAUTOAPPLY526, false)
+        set(value) = prefs.edit().putBoolean(KEY_V526RULEAUTOAPPLY526, value).apply()
+
+    var v527removeAutoConfirm527: Boolean
+        get() = prefs.getBoolean(KEY_V527REMOVEAUTOCONFIRM527, false)
+        set(value) = prefs.edit().putBoolean(KEY_V527REMOVEAUTOCONFIRM527, value).apply()
+
+    var v527renderAutoQuality527: Int
+        get() = prefs.getInt(KEY_V527RENDERAUTOQUALITY527, 0)
+        set(value) = prefs.edit().putInt(KEY_V527RENDERAUTOQUALITY527, value).apply()
+
+    var v527requestAutoRetry527: Boolean
+        get() = prefs.getBoolean(KEY_V527REQUESTAUTORETRY527, false)
+        set(value) = prefs.edit().putBoolean(KEY_V527REQUESTAUTORETRY527, value).apply()
+
+    var v527resetAutoDefault527: Boolean
+        get() = prefs.getBoolean(KEY_V527RESETAUTODEFAULT527, false)
+        set(value) = prefs.edit().putBoolean(KEY_V527RESETAUTODEFAULT527, value).apply()
+
+    var v527resizeAutoScale527: Boolean
+        get() = prefs.getBoolean(KEY_V527RESIZEAUTOSCALE527, false)
+        set(value) = prefs.edit().putBoolean(KEY_V527RESIZEAUTOSCALE527, value).apply()
+
+    var v527responseAutoCache527: Boolean
+        get() = prefs.getBoolean(KEY_V527RESPONSEAUTOCACHE527, false)
+        set(value) = prefs.edit().putBoolean(KEY_V527RESPONSEAUTOCACHE527, value).apply()
+
+    var v527restoreAutoState527: Boolean
+        get() = prefs.getBoolean(KEY_V527RESTOREAUTOSTATE527, false)
+        set(value) = prefs.edit().putBoolean(KEY_V527RESTOREAUTOSTATE527, value).apply()
+
+    var v527resultAutoSort527: Int
+        get() = prefs.getInt(KEY_V527RESULTAUTOSORT527, 0)
+        set(value) = prefs.edit().putInt(KEY_V527RESULTAUTOSORT527, value).apply()
+
+    var v527returnToTop527: Boolean
+        get() = prefs.getBoolean(KEY_V527RETURNTOTOP527, false)
+        set(value) = prefs.edit().putBoolean(KEY_V527RETURNTOTOP527, value).apply()
+
+    var v527richTextEnabled527: Boolean
+        get() = prefs.getBoolean(KEY_V527RICHTEXTENABLED527, false)
+        set(value) = prefs.edit().putBoolean(KEY_V527RICHTEXTENABLED527, value).apply()
+
+    var v527ringAutoVibrate527: Boolean
+        get() = prefs.getBoolean(KEY_V527RINGAUTOVIBRATE527, false)
+        set(value) = prefs.edit().putBoolean(KEY_V527RINGAUTOVIBRATE527, value).apply()
+
+    var v527rootAutoDetect527: Boolean
+        get() = prefs.getBoolean(KEY_V527ROOTAUTODETECT527, false)
+        set(value) = prefs.edit().putBoolean(KEY_V527ROOTAUTODETECT527, value).apply()
+
+    var v527roundCornerEnabled527: Boolean
+        get() = prefs.getBoolean(KEY_V527ROUNDCORNERENABLED527, false)
+        set(value) = prefs.edit().putBoolean(KEY_V527ROUNDCORNERENABLED527, value).apply()
+
+    var v527rowAutoExpand527: Boolean
+        get() = prefs.getBoolean(KEY_V527ROWAUTOEXPAND527, false)
+        set(value) = prefs.edit().putBoolean(KEY_V527ROWAUTOEXPAND527, value).apply()
+
+    var v527ruleAutoApply527: Boolean
+        get() = prefs.getBoolean(KEY_V527RULEAUTOAPPLY527, false)
+        set(value) = prefs.edit().putBoolean(KEY_V527RULEAUTOAPPLY527, value).apply()
+
+    var v528removeAutoConfirm528: Boolean
+        get() = prefs.getBoolean(KEY_V528REMOVEAUTOCONFIRM528, false)
+        set(value) = prefs.edit().putBoolean(KEY_V528REMOVEAUTOCONFIRM528, value).apply()
+
+    var v528renderAutoQuality528: Int
+        get() = prefs.getInt(KEY_V528RENDERAUTOQUALITY528, 0)
+        set(value) = prefs.edit().putInt(KEY_V528RENDERAUTOQUALITY528, value).apply()
+
+    var v528requestAutoRetry528: Boolean
+        get() = prefs.getBoolean(KEY_V528REQUESTAUTORETRY528, false)
+        set(value) = prefs.edit().putBoolean(KEY_V528REQUESTAUTORETRY528, value).apply()
+
+    var v528resetAutoDefault528: Boolean
+        get() = prefs.getBoolean(KEY_V528RESETAUTODEFAULT528, false)
+        set(value) = prefs.edit().putBoolean(KEY_V528RESETAUTODEFAULT528, value).apply()
+
+    var v528resizeAutoScale528: Boolean
+        get() = prefs.getBoolean(KEY_V528RESIZEAUTOSCALE528, false)
+        set(value) = prefs.edit().putBoolean(KEY_V528RESIZEAUTOSCALE528, value).apply()
+
+    var v528responseAutoCache528: Boolean
+        get() = prefs.getBoolean(KEY_V528RESPONSEAUTOCACHE528, false)
+        set(value) = prefs.edit().putBoolean(KEY_V528RESPONSEAUTOCACHE528, value).apply()
+
+    var v528restoreAutoState528: Boolean
+        get() = prefs.getBoolean(KEY_V528RESTOREAUTOSTATE528, false)
+        set(value) = prefs.edit().putBoolean(KEY_V528RESTOREAUTOSTATE528, value).apply()
+
+    var v528resultAutoSort528: Int
+        get() = prefs.getInt(KEY_V528RESULTAUTOSORT528, 0)
+        set(value) = prefs.edit().putInt(KEY_V528RESULTAUTOSORT528, value).apply()
+
+    var v528returnToTop528: Boolean
+        get() = prefs.getBoolean(KEY_V528RETURNTOTOP528, false)
+        set(value) = prefs.edit().putBoolean(KEY_V528RETURNTOTOP528, value).apply()
+
+    var v528richTextEnabled528: Boolean
+        get() = prefs.getBoolean(KEY_V528RICHTEXTENABLED528, false)
+        set(value) = prefs.edit().putBoolean(KEY_V528RICHTEXTENABLED528, value).apply()
+
+    var v528ringAutoVibrate528: Boolean
+        get() = prefs.getBoolean(KEY_V528RINGAUTOVIBRATE528, false)
+        set(value) = prefs.edit().putBoolean(KEY_V528RINGAUTOVIBRATE528, value).apply()
+
+    var v528rootAutoDetect528: Boolean
+        get() = prefs.getBoolean(KEY_V528ROOTAUTODETECT528, false)
+        set(value) = prefs.edit().putBoolean(KEY_V528ROOTAUTODETECT528, value).apply()
+
+    var v528roundCornerEnabled528: Boolean
+        get() = prefs.getBoolean(KEY_V528ROUNDCORNERENABLED528, false)
+        set(value) = prefs.edit().putBoolean(KEY_V528ROUNDCORNERENABLED528, value).apply()
+
+    var v528rowAutoExpand528: Boolean
+        get() = prefs.getBoolean(KEY_V528ROWAUTOEXPAND528, false)
+        set(value) = prefs.edit().putBoolean(KEY_V528ROWAUTOEXPAND528, value).apply()
+
+    var v528ruleAutoApply528: Boolean
+        get() = prefs.getBoolean(KEY_V528RULEAUTOAPPLY528, false)
+        set(value) = prefs.edit().putBoolean(KEY_V528RULEAUTOAPPLY528, value).apply()
+
+    var v529removeAutoConfirm529: Boolean
+        get() = prefs.getBoolean(KEY_V529REMOVEAUTOCONFIRM529, false)
+        set(value) = prefs.edit().putBoolean(KEY_V529REMOVEAUTOCONFIRM529, value).apply()
+
+    var v529renderAutoQuality529: Int
+        get() = prefs.getInt(KEY_V529RENDERAUTOQUALITY529, 0)
+        set(value) = prefs.edit().putInt(KEY_V529RENDERAUTOQUALITY529, value).apply()
+
+    var v529requestAutoRetry529: Boolean
+        get() = prefs.getBoolean(KEY_V529REQUESTAUTORETRY529, false)
+        set(value) = prefs.edit().putBoolean(KEY_V529REQUESTAUTORETRY529, value).apply()
+
+    var v529resetAutoDefault529: Boolean
+        get() = prefs.getBoolean(KEY_V529RESETAUTODEFAULT529, false)
+        set(value) = prefs.edit().putBoolean(KEY_V529RESETAUTODEFAULT529, value).apply()
+
+    var v529resizeAutoScale529: Boolean
+        get() = prefs.getBoolean(KEY_V529RESIZEAUTOSCALE529, false)
+        set(value) = prefs.edit().putBoolean(KEY_V529RESIZEAUTOSCALE529, value).apply()
+
+    var v529responseAutoCache529: Boolean
+        get() = prefs.getBoolean(KEY_V529RESPONSEAUTOCACHE529, false)
+        set(value) = prefs.edit().putBoolean(KEY_V529RESPONSEAUTOCACHE529, value).apply()
+
+    var v529restoreAutoState529: Boolean
+        get() = prefs.getBoolean(KEY_V529RESTOREAUTOSTATE529, false)
+        set(value) = prefs.edit().putBoolean(KEY_V529RESTOREAUTOSTATE529, value).apply()
+
+    var v529resultAutoSort529: Int
+        get() = prefs.getInt(KEY_V529RESULTAUTOSORT529, 0)
+        set(value) = prefs.edit().putInt(KEY_V529RESULTAUTOSORT529, value).apply()
+
+    var v529returnToTop529: Boolean
+        get() = prefs.getBoolean(KEY_V529RETURNTOTOP529, false)
+        set(value) = prefs.edit().putBoolean(KEY_V529RETURNTOTOP529, value).apply()
+
+    var v529richTextEnabled529: Boolean
+        get() = prefs.getBoolean(KEY_V529RICHTEXTENABLED529, false)
+        set(value) = prefs.edit().putBoolean(KEY_V529RICHTEXTENABLED529, value).apply()
+
+    var v529ringAutoVibrate529: Boolean
+        get() = prefs.getBoolean(KEY_V529RINGAUTOVIBRATE529, false)
+        set(value) = prefs.edit().putBoolean(KEY_V529RINGAUTOVIBRATE529, value).apply()
+
+    var v529rootAutoDetect529: Boolean
+        get() = prefs.getBoolean(KEY_V529ROOTAUTODETECT529, false)
+        set(value) = prefs.edit().putBoolean(KEY_V529ROOTAUTODETECT529, value).apply()
+
+    var v529roundCornerEnabled529: Boolean
+        get() = prefs.getBoolean(KEY_V529ROUNDCORNERENABLED529, false)
+        set(value) = prefs.edit().putBoolean(KEY_V529ROUNDCORNERENABLED529, value).apply()
+
+    var v529rowAutoExpand529: Boolean
+        get() = prefs.getBoolean(KEY_V529ROWAUTOEXPAND529, false)
+        set(value) = prefs.edit().putBoolean(KEY_V529ROWAUTOEXPAND529, value).apply()
+
+    var v529ruleAutoApply529: Boolean
+        get() = prefs.getBoolean(KEY_V529RULEAUTOAPPLY529, false)
+        set(value) = prefs.edit().putBoolean(KEY_V529RULEAUTOAPPLY529, value).apply()
+
+    var v530removeAutoConfirm530: Boolean
+        get() = prefs.getBoolean(KEY_V530REMOVEAUTOCONFIRM530, false)
+        set(value) = prefs.edit().putBoolean(KEY_V530REMOVEAUTOCONFIRM530, value).apply()
+
+    var v530renderAutoQuality530: Int
+        get() = prefs.getInt(KEY_V530RENDERAUTOQUALITY530, 0)
+        set(value) = prefs.edit().putInt(KEY_V530RENDERAUTOQUALITY530, value).apply()
+
+    var v530requestAutoRetry530: Boolean
+        get() = prefs.getBoolean(KEY_V530REQUESTAUTORETRY530, false)
+        set(value) = prefs.edit().putBoolean(KEY_V530REQUESTAUTORETRY530, value).apply()
+
+    var v530resetAutoDefault530: Boolean
+        get() = prefs.getBoolean(KEY_V530RESETAUTODEFAULT530, false)
+        set(value) = prefs.edit().putBoolean(KEY_V530RESETAUTODEFAULT530, value).apply()
+
+    var v530resizeAutoScale530: Boolean
+        get() = prefs.getBoolean(KEY_V530RESIZEAUTOSCALE530, false)
+        set(value) = prefs.edit().putBoolean(KEY_V530RESIZEAUTOSCALE530, value).apply()
+
+    var v530responseAutoCache530: Boolean
+        get() = prefs.getBoolean(KEY_V530RESPONSEAUTOCACHE530, false)
+        set(value) = prefs.edit().putBoolean(KEY_V530RESPONSEAUTOCACHE530, value).apply()
+
+    var v530restoreAutoState530: Boolean
+        get() = prefs.getBoolean(KEY_V530RESTOREAUTOSTATE530, false)
+        set(value) = prefs.edit().putBoolean(KEY_V530RESTOREAUTOSTATE530, value).apply()
+
+    var v530resultAutoSort530: Int
+        get() = prefs.getInt(KEY_V530RESULTAUTOSORT530, 0)
+        set(value) = prefs.edit().putInt(KEY_V530RESULTAUTOSORT530, value).apply()
+
+    var v530returnToTop530: Boolean
+        get() = prefs.getBoolean(KEY_V530RETURNTOTOP530, false)
+        set(value) = prefs.edit().putBoolean(KEY_V530RETURNTOTOP530, value).apply()
+
+    var v530richTextEnabled530: Boolean
+        get() = prefs.getBoolean(KEY_V530RICHTEXTENABLED530, false)
+        set(value) = prefs.edit().putBoolean(KEY_V530RICHTEXTENABLED530, value).apply()
+
+    var v530ringAutoVibrate530: Boolean
+        get() = prefs.getBoolean(KEY_V530RINGAUTOVIBRATE530, false)
+        set(value) = prefs.edit().putBoolean(KEY_V530RINGAUTOVIBRATE530, value).apply()
+
+    var v530rootAutoDetect530: Boolean
+        get() = prefs.getBoolean(KEY_V530ROOTAUTODETECT530, false)
+        set(value) = prefs.edit().putBoolean(KEY_V530ROOTAUTODETECT530, value).apply()
+
+    var v530roundCornerEnabled530: Boolean
+        get() = prefs.getBoolean(KEY_V530ROUNDCORNERENABLED530, false)
+        set(value) = prefs.edit().putBoolean(KEY_V530ROUNDCORNERENABLED530, value).apply()
+
+    var v530rowAutoExpand530: Boolean
+        get() = prefs.getBoolean(KEY_V530ROWAUTOEXPAND530, false)
+        set(value) = prefs.edit().putBoolean(KEY_V530ROWAUTOEXPAND530, value).apply()
+
+    var v530ruleAutoApply530: Boolean
+        get() = prefs.getBoolean(KEY_V530RULEAUTOAPPLY530, false)
+        set(value) = prefs.edit().putBoolean(KEY_V530RULEAUTOAPPLY530, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -48430,5 +49030,155 @@ class AppPrefs(context: Context) {
         const val KEY_V520RECOVERAUTOBACKUP520 = "v520recoverAutoBackup520" // v520 Recover Auto Backup520
         const val KEY_V520REGIONAUTOSELECT520 = "v520regionAutoSelect520" // v520 Region Auto Select520
         const val KEY_V520REMOTEAUTOCONNECT520 = "v520remoteAutoConnect520" // v520 Remote Auto Connect520
+        const val KEY_V521REMOVEAUTOCONFIRM521 = "v521removeAutoConfirm521" // v521 Remove Auto Confirm521
+        const val KEY_V521RENDERAUTOQUALITY521 = "v521renderAutoQuality521" // v521 Render Auto Quality521
+        const val KEY_V521REQUESTAUTORETRY521 = "v521requestAutoRetry521" // v521 Request Auto Retry521
+        const val KEY_V521RESETAUTODEFAULT521 = "v521resetAutoDefault521" // v521 Reset Auto Default521
+        const val KEY_V521RESIZEAUTOSCALE521 = "v521resizeAutoScale521" // v521 Resize Auto Scale521
+        const val KEY_V521RESPONSEAUTOCACHE521 = "v521responseAutoCache521" // v521 Response Auto Cache521
+        const val KEY_V521RESTOREAUTOSTATE521 = "v521restoreAutoState521" // v521 Restore Auto State521
+        const val KEY_V521RESULTAUTOSORT521 = "v521resultAutoSort521" // v521 Result Auto Sort521
+        const val KEY_V521RETURNTOTOP521 = "v521returnToTop521" // v521 Return To Top521
+        const val KEY_V521RICHTEXTENABLED521 = "v521richTextEnabled521" // v521 Rich Text Enabled521
+        const val KEY_V521RINGAUTOVIBRATE521 = "v521ringAutoVibrate521" // v521 Ring Auto Vibrate521
+        const val KEY_V521ROOTAUTODETECT521 = "v521rootAutoDetect521" // v521 Root Auto Detect521
+        const val KEY_V521ROUNDCORNERENABLED521 = "v521roundCornerEnabled521" // v521 Round Corner Enabled521
+        const val KEY_V521ROWAUTOEXPAND521 = "v521rowAutoExpand521" // v521 Row Auto Expand521
+        const val KEY_V521RULEAUTOAPPLY521 = "v521ruleAutoApply521" // v521 Rule Auto Apply521
+        const val KEY_V522REMOVEAUTOCONFIRM522 = "v522removeAutoConfirm522" // v522 Remove Auto Confirm522
+        const val KEY_V522RENDERAUTOQUALITY522 = "v522renderAutoQuality522" // v522 Render Auto Quality522
+        const val KEY_V522REQUESTAUTORETRY522 = "v522requestAutoRetry522" // v522 Request Auto Retry522
+        const val KEY_V522RESETAUTODEFAULT522 = "v522resetAutoDefault522" // v522 Reset Auto Default522
+        const val KEY_V522RESIZEAUTOSCALE522 = "v522resizeAutoScale522" // v522 Resize Auto Scale522
+        const val KEY_V522RESPONSEAUTOCACHE522 = "v522responseAutoCache522" // v522 Response Auto Cache522
+        const val KEY_V522RESTOREAUTOSTATE522 = "v522restoreAutoState522" // v522 Restore Auto State522
+        const val KEY_V522RESULTAUTOSORT522 = "v522resultAutoSort522" // v522 Result Auto Sort522
+        const val KEY_V522RETURNTOTOP522 = "v522returnToTop522" // v522 Return To Top522
+        const val KEY_V522RICHTEXTENABLED522 = "v522richTextEnabled522" // v522 Rich Text Enabled522
+        const val KEY_V522RINGAUTOVIBRATE522 = "v522ringAutoVibrate522" // v522 Ring Auto Vibrate522
+        const val KEY_V522ROOTAUTODETECT522 = "v522rootAutoDetect522" // v522 Root Auto Detect522
+        const val KEY_V522ROUNDCORNERENABLED522 = "v522roundCornerEnabled522" // v522 Round Corner Enabled522
+        const val KEY_V522ROWAUTOEXPAND522 = "v522rowAutoExpand522" // v522 Row Auto Expand522
+        const val KEY_V522RULEAUTOAPPLY522 = "v522ruleAutoApply522" // v522 Rule Auto Apply522
+        const val KEY_V523REMOVEAUTOCONFIRM523 = "v523removeAutoConfirm523" // v523 Remove Auto Confirm523
+        const val KEY_V523RENDERAUTOQUALITY523 = "v523renderAutoQuality523" // v523 Render Auto Quality523
+        const val KEY_V523REQUESTAUTORETRY523 = "v523requestAutoRetry523" // v523 Request Auto Retry523
+        const val KEY_V523RESETAUTODEFAULT523 = "v523resetAutoDefault523" // v523 Reset Auto Default523
+        const val KEY_V523RESIZEAUTOSCALE523 = "v523resizeAutoScale523" // v523 Resize Auto Scale523
+        const val KEY_V523RESPONSEAUTOCACHE523 = "v523responseAutoCache523" // v523 Response Auto Cache523
+        const val KEY_V523RESTOREAUTOSTATE523 = "v523restoreAutoState523" // v523 Restore Auto State523
+        const val KEY_V523RESULTAUTOSORT523 = "v523resultAutoSort523" // v523 Result Auto Sort523
+        const val KEY_V523RETURNTOTOP523 = "v523returnToTop523" // v523 Return To Top523
+        const val KEY_V523RICHTEXTENABLED523 = "v523richTextEnabled523" // v523 Rich Text Enabled523
+        const val KEY_V523RINGAUTOVIBRATE523 = "v523ringAutoVibrate523" // v523 Ring Auto Vibrate523
+        const val KEY_V523ROOTAUTODETECT523 = "v523rootAutoDetect523" // v523 Root Auto Detect523
+        const val KEY_V523ROUNDCORNERENABLED523 = "v523roundCornerEnabled523" // v523 Round Corner Enabled523
+        const val KEY_V523ROWAUTOEXPAND523 = "v523rowAutoExpand523" // v523 Row Auto Expand523
+        const val KEY_V523RULEAUTOAPPLY523 = "v523ruleAutoApply523" // v523 Rule Auto Apply523
+        const val KEY_V524REMOVEAUTOCONFIRM524 = "v524removeAutoConfirm524" // v524 Remove Auto Confirm524
+        const val KEY_V524RENDERAUTOQUALITY524 = "v524renderAutoQuality524" // v524 Render Auto Quality524
+        const val KEY_V524REQUESTAUTORETRY524 = "v524requestAutoRetry524" // v524 Request Auto Retry524
+        const val KEY_V524RESETAUTODEFAULT524 = "v524resetAutoDefault524" // v524 Reset Auto Default524
+        const val KEY_V524RESIZEAUTOSCALE524 = "v524resizeAutoScale524" // v524 Resize Auto Scale524
+        const val KEY_V524RESPONSEAUTOCACHE524 = "v524responseAutoCache524" // v524 Response Auto Cache524
+        const val KEY_V524RESTOREAUTOSTATE524 = "v524restoreAutoState524" // v524 Restore Auto State524
+        const val KEY_V524RESULTAUTOSORT524 = "v524resultAutoSort524" // v524 Result Auto Sort524
+        const val KEY_V524RETURNTOTOP524 = "v524returnToTop524" // v524 Return To Top524
+        const val KEY_V524RICHTEXTENABLED524 = "v524richTextEnabled524" // v524 Rich Text Enabled524
+        const val KEY_V524RINGAUTOVIBRATE524 = "v524ringAutoVibrate524" // v524 Ring Auto Vibrate524
+        const val KEY_V524ROOTAUTODETECT524 = "v524rootAutoDetect524" // v524 Root Auto Detect524
+        const val KEY_V524ROUNDCORNERENABLED524 = "v524roundCornerEnabled524" // v524 Round Corner Enabled524
+        const val KEY_V524ROWAUTOEXPAND524 = "v524rowAutoExpand524" // v524 Row Auto Expand524
+        const val KEY_V524RULEAUTOAPPLY524 = "v524ruleAutoApply524" // v524 Rule Auto Apply524
+        const val KEY_V525REMOVEAUTOCONFIRM525 = "v525removeAutoConfirm525" // v525 Remove Auto Confirm525
+        const val KEY_V525RENDERAUTOQUALITY525 = "v525renderAutoQuality525" // v525 Render Auto Quality525
+        const val KEY_V525REQUESTAUTORETRY525 = "v525requestAutoRetry525" // v525 Request Auto Retry525
+        const val KEY_V525RESETAUTODEFAULT525 = "v525resetAutoDefault525" // v525 Reset Auto Default525
+        const val KEY_V525RESIZEAUTOSCALE525 = "v525resizeAutoScale525" // v525 Resize Auto Scale525
+        const val KEY_V525RESPONSEAUTOCACHE525 = "v525responseAutoCache525" // v525 Response Auto Cache525
+        const val KEY_V525RESTOREAUTOSTATE525 = "v525restoreAutoState525" // v525 Restore Auto State525
+        const val KEY_V525RESULTAUTOSORT525 = "v525resultAutoSort525" // v525 Result Auto Sort525
+        const val KEY_V525RETURNTOTOP525 = "v525returnToTop525" // v525 Return To Top525
+        const val KEY_V525RICHTEXTENABLED525 = "v525richTextEnabled525" // v525 Rich Text Enabled525
+        const val KEY_V525RINGAUTOVIBRATE525 = "v525ringAutoVibrate525" // v525 Ring Auto Vibrate525
+        const val KEY_V525ROOTAUTODETECT525 = "v525rootAutoDetect525" // v525 Root Auto Detect525
+        const val KEY_V525ROUNDCORNERENABLED525 = "v525roundCornerEnabled525" // v525 Round Corner Enabled525
+        const val KEY_V525ROWAUTOEXPAND525 = "v525rowAutoExpand525" // v525 Row Auto Expand525
+        const val KEY_V525RULEAUTOAPPLY525 = "v525ruleAutoApply525" // v525 Rule Auto Apply525
+        const val KEY_V526REMOVEAUTOCONFIRM526 = "v526removeAutoConfirm526" // v526 Remove Auto Confirm526
+        const val KEY_V526RENDERAUTOQUALITY526 = "v526renderAutoQuality526" // v526 Render Auto Quality526
+        const val KEY_V526REQUESTAUTORETRY526 = "v526requestAutoRetry526" // v526 Request Auto Retry526
+        const val KEY_V526RESETAUTODEFAULT526 = "v526resetAutoDefault526" // v526 Reset Auto Default526
+        const val KEY_V526RESIZEAUTOSCALE526 = "v526resizeAutoScale526" // v526 Resize Auto Scale526
+        const val KEY_V526RESPONSEAUTOCACHE526 = "v526responseAutoCache526" // v526 Response Auto Cache526
+        const val KEY_V526RESTOREAUTOSTATE526 = "v526restoreAutoState526" // v526 Restore Auto State526
+        const val KEY_V526RESULTAUTOSORT526 = "v526resultAutoSort526" // v526 Result Auto Sort526
+        const val KEY_V526RETURNTOTOP526 = "v526returnToTop526" // v526 Return To Top526
+        const val KEY_V526RICHTEXTENABLED526 = "v526richTextEnabled526" // v526 Rich Text Enabled526
+        const val KEY_V526RINGAUTOVIBRATE526 = "v526ringAutoVibrate526" // v526 Ring Auto Vibrate526
+        const val KEY_V526ROOTAUTODETECT526 = "v526rootAutoDetect526" // v526 Root Auto Detect526
+        const val KEY_V526ROUNDCORNERENABLED526 = "v526roundCornerEnabled526" // v526 Round Corner Enabled526
+        const val KEY_V526ROWAUTOEXPAND526 = "v526rowAutoExpand526" // v526 Row Auto Expand526
+        const val KEY_V526RULEAUTOAPPLY526 = "v526ruleAutoApply526" // v526 Rule Auto Apply526
+        const val KEY_V527REMOVEAUTOCONFIRM527 = "v527removeAutoConfirm527" // v527 Remove Auto Confirm527
+        const val KEY_V527RENDERAUTOQUALITY527 = "v527renderAutoQuality527" // v527 Render Auto Quality527
+        const val KEY_V527REQUESTAUTORETRY527 = "v527requestAutoRetry527" // v527 Request Auto Retry527
+        const val KEY_V527RESETAUTODEFAULT527 = "v527resetAutoDefault527" // v527 Reset Auto Default527
+        const val KEY_V527RESIZEAUTOSCALE527 = "v527resizeAutoScale527" // v527 Resize Auto Scale527
+        const val KEY_V527RESPONSEAUTOCACHE527 = "v527responseAutoCache527" // v527 Response Auto Cache527
+        const val KEY_V527RESTOREAUTOSTATE527 = "v527restoreAutoState527" // v527 Restore Auto State527
+        const val KEY_V527RESULTAUTOSORT527 = "v527resultAutoSort527" // v527 Result Auto Sort527
+        const val KEY_V527RETURNTOTOP527 = "v527returnToTop527" // v527 Return To Top527
+        const val KEY_V527RICHTEXTENABLED527 = "v527richTextEnabled527" // v527 Rich Text Enabled527
+        const val KEY_V527RINGAUTOVIBRATE527 = "v527ringAutoVibrate527" // v527 Ring Auto Vibrate527
+        const val KEY_V527ROOTAUTODETECT527 = "v527rootAutoDetect527" // v527 Root Auto Detect527
+        const val KEY_V527ROUNDCORNERENABLED527 = "v527roundCornerEnabled527" // v527 Round Corner Enabled527
+        const val KEY_V527ROWAUTOEXPAND527 = "v527rowAutoExpand527" // v527 Row Auto Expand527
+        const val KEY_V527RULEAUTOAPPLY527 = "v527ruleAutoApply527" // v527 Rule Auto Apply527
+        const val KEY_V528REMOVEAUTOCONFIRM528 = "v528removeAutoConfirm528" // v528 Remove Auto Confirm528
+        const val KEY_V528RENDERAUTOQUALITY528 = "v528renderAutoQuality528" // v528 Render Auto Quality528
+        const val KEY_V528REQUESTAUTORETRY528 = "v528requestAutoRetry528" // v528 Request Auto Retry528
+        const val KEY_V528RESETAUTODEFAULT528 = "v528resetAutoDefault528" // v528 Reset Auto Default528
+        const val KEY_V528RESIZEAUTOSCALE528 = "v528resizeAutoScale528" // v528 Resize Auto Scale528
+        const val KEY_V528RESPONSEAUTOCACHE528 = "v528responseAutoCache528" // v528 Response Auto Cache528
+        const val KEY_V528RESTOREAUTOSTATE528 = "v528restoreAutoState528" // v528 Restore Auto State528
+        const val KEY_V528RESULTAUTOSORT528 = "v528resultAutoSort528" // v528 Result Auto Sort528
+        const val KEY_V528RETURNTOTOP528 = "v528returnToTop528" // v528 Return To Top528
+        const val KEY_V528RICHTEXTENABLED528 = "v528richTextEnabled528" // v528 Rich Text Enabled528
+        const val KEY_V528RINGAUTOVIBRATE528 = "v528ringAutoVibrate528" // v528 Ring Auto Vibrate528
+        const val KEY_V528ROOTAUTODETECT528 = "v528rootAutoDetect528" // v528 Root Auto Detect528
+        const val KEY_V528ROUNDCORNERENABLED528 = "v528roundCornerEnabled528" // v528 Round Corner Enabled528
+        const val KEY_V528ROWAUTOEXPAND528 = "v528rowAutoExpand528" // v528 Row Auto Expand528
+        const val KEY_V528RULEAUTOAPPLY528 = "v528ruleAutoApply528" // v528 Rule Auto Apply528
+        const val KEY_V529REMOVEAUTOCONFIRM529 = "v529removeAutoConfirm529" // v529 Remove Auto Confirm529
+        const val KEY_V529RENDERAUTOQUALITY529 = "v529renderAutoQuality529" // v529 Render Auto Quality529
+        const val KEY_V529REQUESTAUTORETRY529 = "v529requestAutoRetry529" // v529 Request Auto Retry529
+        const val KEY_V529RESETAUTODEFAULT529 = "v529resetAutoDefault529" // v529 Reset Auto Default529
+        const val KEY_V529RESIZEAUTOSCALE529 = "v529resizeAutoScale529" // v529 Resize Auto Scale529
+        const val KEY_V529RESPONSEAUTOCACHE529 = "v529responseAutoCache529" // v529 Response Auto Cache529
+        const val KEY_V529RESTOREAUTOSTATE529 = "v529restoreAutoState529" // v529 Restore Auto State529
+        const val KEY_V529RESULTAUTOSORT529 = "v529resultAutoSort529" // v529 Result Auto Sort529
+        const val KEY_V529RETURNTOTOP529 = "v529returnToTop529" // v529 Return To Top529
+        const val KEY_V529RICHTEXTENABLED529 = "v529richTextEnabled529" // v529 Rich Text Enabled529
+        const val KEY_V529RINGAUTOVIBRATE529 = "v529ringAutoVibrate529" // v529 Ring Auto Vibrate529
+        const val KEY_V529ROOTAUTODETECT529 = "v529rootAutoDetect529" // v529 Root Auto Detect529
+        const val KEY_V529ROUNDCORNERENABLED529 = "v529roundCornerEnabled529" // v529 Round Corner Enabled529
+        const val KEY_V529ROWAUTOEXPAND529 = "v529rowAutoExpand529" // v529 Row Auto Expand529
+        const val KEY_V529RULEAUTOAPPLY529 = "v529ruleAutoApply529" // v529 Rule Auto Apply529
+        const val KEY_V530REMOVEAUTOCONFIRM530 = "v530removeAutoConfirm530" // v530 Remove Auto Confirm530
+        const val KEY_V530RENDERAUTOQUALITY530 = "v530renderAutoQuality530" // v530 Render Auto Quality530
+        const val KEY_V530REQUESTAUTORETRY530 = "v530requestAutoRetry530" // v530 Request Auto Retry530
+        const val KEY_V530RESETAUTODEFAULT530 = "v530resetAutoDefault530" // v530 Reset Auto Default530
+        const val KEY_V530RESIZEAUTOSCALE530 = "v530resizeAutoScale530" // v530 Resize Auto Scale530
+        const val KEY_V530RESPONSEAUTOCACHE530 = "v530responseAutoCache530" // v530 Response Auto Cache530
+        const val KEY_V530RESTOREAUTOSTATE530 = "v530restoreAutoState530" // v530 Restore Auto State530
+        const val KEY_V530RESULTAUTOSORT530 = "v530resultAutoSort530" // v530 Result Auto Sort530
+        const val KEY_V530RETURNTOTOP530 = "v530returnToTop530" // v530 Return To Top530
+        const val KEY_V530RICHTEXTENABLED530 = "v530richTextEnabled530" // v530 Rich Text Enabled530
+        const val KEY_V530RINGAUTOVIBRATE530 = "v530ringAutoVibrate530" // v530 Ring Auto Vibrate530
+        const val KEY_V530ROOTAUTODETECT530 = "v530rootAutoDetect530" // v530 Root Auto Detect530
+        const val KEY_V530ROUNDCORNERENABLED530 = "v530roundCornerEnabled530" // v530 Round Corner Enabled530
+        const val KEY_V530ROWAUTOEXPAND530 = "v530rowAutoExpand530" // v530 Row Auto Expand530
+        const val KEY_V530RULEAUTOAPPLY530 = "v530ruleAutoApply530" // v530 Rule Auto Apply530
     }
 }
