@@ -118,7 +118,7 @@ This project is based on open-source software. All rights belong to the original
 ## 📋 更新日志 | Changelog | 変更履歴 | 변경 로그
 
 ### 最新版本 | Latest Version | 最新バージョン | 최신 버전
-- **v140.15** - 2026-06-08
+- **v150.15** - 2026-06-08
 
 ---
 
@@ -16941,6 +16941,947 @@ This project is based on open-source software. All rights belong to the original
 - ✅ 字幕アニメーションブラー140
 - ✅ 자막 애니메이션 블러140
 
+
+### v141.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v141.1-v141.15 功能列表
+- ✅ Audio Phaser Feedback, Danmaku Font BG Fill Clip Type140x, Subtitle Animation Blur141, Gesture Tap Zone Visual Anim, Cast Video PIP Snap To Corner, Playlist Auto Group By Duration141, Cache Smart Pinning On Schedule Type, Progress Bar Custom Thumb Anim141, Volume Normalize Range, History Auto Clean141, Playback Speed Presets Shake Adjust, Screenshot Auto Share Discord, Video PIP Follow Color Temp, Danmaku Font BG Fill Mask Toggle, Subtitle Animation Fade In141
+
+### v141.1 音频相位器反馈 | Audio Phaser Feedback | オーディオフェーザーフィードバック | 오디오 페이저 피드백
+- ✅ 音频相位器反馈
+- ✅ Audio Phaser Feedback
+- ✅ オーディオフェーザーフィードバック
+- ✅ 오디오 페이저 피드백
+
+### v141.2 弹幕字体背景填充裁剪类型140x | Danmaku Font BG Fill Clip Type140x | コメントフォントBGフィルクリップタイプ140x | 댓글 글꼴 배경 채우기 클립 유형140x
+- ✅ 弹幕字体背景填充裁剪类型140x
+- ✅ Danmaku Font BG Fill Clip Type140x
+- ✅ コメントフォントBGフィルクリップタイプ140x
+- ✅ 댓글 글꼴 배경 채우기 클립 유형140x
+
+### v141.3 字幕动画模糊141 | Subtitle Animation Blur141 | 字幕アニメーションブラー141 | 자막 애니메이션 블러141
+- ✅ 字幕动画模糊141
+- ✅ Subtitle Animation Blur141
+- ✅ 字幕アニメーションブラー141
+- ✅ 자막 애니메이션 블러141
+
+### v141.4 手势点击区域视觉动画 | Gesture Tap Zone Visual Anim | ジェスチャータップゾーン視覚アニメーション | 제스처 탭 영역 시각 애니메이션
+- ✅ 手势点击区域视觉动画
+- ✅ Gesture Tap Zone Visual Anim
+- ✅ ジェスチャータップゾーン視覚アニメーション
+- ✅ 제스처 탭 영역 시각 애니메이션
+
+### v141.5 投射视频画中画吸附角落 | Cast Video PIP Snap To Corner | キャストビデオPIPコーナーにスナップ | 캐스트 비디오 PIP 코너에 스냅
+- ✅ 投射视频画中画吸附角落
+- ✅ Cast Video PIP Snap To Corner
+- ✅ キャストビデオPIPコーナーにスナップ
+- ✅ 캐스트 비디오 PIP 코너에 스냅
+
+### v141.6 播放列表按时长自动分组141 | Playlist Auto Group By Duration141 | プレイリスト再生時間別自動グループ化141 | 재생 목록 재생 시간별 자동 그룹화141
+- ✅ 播放列表按时长自动分组141
+- ✅ Playlist Auto Group By Duration141
+- ✅ プレイリスト再生時間別自動グループ化141
+- ✅ 재생 목록 재생 시간별 자동 그룹화141
+
+### v141.7 缓存计划类型时智能固定 | Cache Smart Pinning On Schedule Type | キャッシュスケジュールタイプスマートピンニング | 캐시 스케줄 유형 시 스마트 고정
+- ✅ 缓存计划类型时智能固定
+- ✅ Cache Smart Pinning On Schedule Type
+- ✅ キャッシュスケジュールタイプスマートピンニング
+- ✅ 캐시 스케줄 유형 시 스마트 고정
+
+### v141.8 进度条自定义滑块动画141 | Progress Bar Custom Thumb Anim141 | プログレスバーカスタムサムアニメーション141 | 진행 바 사용자 정의 썸 애니메이션141
+- ✅ 进度条自定义滑块动画141
+- ✅ Progress Bar Custom Thumb Anim141
+- ✅ プログレスバーカスタムサムアニメーション141
+- ✅ 진행 바 사용자 정의 썸 애니메이션141
+
+### v141.9 音量标准化范围 | Volume Normalize Range | 音量正規化範囲 | 볼륨 정규화 범위
+- ✅ 音量标准化范围
+- ✅ Volume Normalize Range
+- ✅ 音量正規化範囲
+- ✅ 볼륨 정규화 범위
+
+### v141.10 历史记录自动清理141 | History Auto Clean141 | 履歴自動クリーンアップ141 | 기록 자동 정리141
+- ✅ 历史记录自动清理141
+- ✅ History Auto Clean141
+- ✅ 履歴自動クリーンアップ141
+- ✅ 기록 자동 정리141
+
+### v141.11 播放速度预设摇动调整 | Playback Speed Presets Shake Adjust | 再生速度プリセットシェイク調整 | 재생 속도 프리셋 흔들기 조정
+- ✅ 播放速度预设摇动调整
+- ✅ Playback Speed Presets Shake Adjust
+- ✅ 再生速度プリセットシェイク調整
+- ✅ 재생 속도 프리셋 흔들기 조정
+
+### v141.12 截图自动分享Discord | Screenshot Auto Share Discord | スクリーンショット自動Discord共有 | 스크린샷 자동 Discord 공유
+- ✅ 截图自动分享Discord
+- ✅ Screenshot Auto Share Discord
+- ✅ スクリーンショット自動Discord共有
+- ✅ 스크린샷 자동 Discord 공유
+
+### v141.13 视频画中画跟随色温 | Video PIP Follow Color Temp | ビデオPIP色温度追従 | 비디오 PIP 색온도 팔로우
+- ✅ 视频画中画跟随色温
+- ✅ Video PIP Follow Color Temp
+- ✅ ビデオPIP色温度追従
+- ✅ 비디오 PIP 색온도 팔로우
+
+### v141.14 弹幕字体背景填充遮罩开关 | Danmaku Font BG Fill Mask Toggle | コメントフォントBGフィルマスク切替 | 댓글 글꼴 배경 채우기 마스크 전환
+- ✅ 弹幕字体背景填充遮罩开关
+- ✅ Danmaku Font BG Fill Mask Toggle
+- ✅ コメントフォントBGフィルマスク切替
+- ✅ 댓글 글꼴 배경 채우기 마스크 전환
+
+### v141.15 字幕动画淡入141 | Subtitle Animation Fade In141 | 字幕アニメーションフェードイン141 | 자막 애니메이션 페이드인141
+- ✅ 字幕动画淡入141
+- ✅ Subtitle Animation Fade In141
+- ✅ 字幕アニメーションフェードイン141
+- ✅ 자막 애니메이션 페이드인141
+
+### v142.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v142.1-v142.15 功能列表
+- ✅ Audio Phaser Mix, Danmaku Font BG Fill Mask Path, Subtitle Animation Fade In142, Gesture Tap Zone Visual Anim Duration, Cast Video PIP Snap To Edge, Playlist Auto Group By Duration142, Cache Smart Pinning On Schedule Freq, Progress Bar Custom Thumb Anim142, Volume Normalize Stereo, History Auto Clean142, Playback Speed Presets Tilt Adjust, Screenshot Auto Share WhatsApp, Video PIP Follow Color Space, Danmaku Font BG Fill Mask Path141, Subtitle Animation Fade Out142
+
+### v142.1 音频相位器混合 | Audio Phaser Mix | オーディオフェーザーミックス | 오디오 페이저 믹스
+- ✅ 音频相位器混合
+- ✅ Audio Phaser Mix
+- ✅ オーディオフェーザーミックス
+- ✅ 오디오 페이저 믹스
+
+### v142.2 弹幕字体背景填充遮罩路径 | Danmaku Font BG Fill Mask Path | コメントフォントBGフィルマスクパス | 댓글 글꼴 배경 채우기 마스크 패스
+- ✅ 弹幕字体背景填充遮罩路径
+- ✅ Danmaku Font BG Fill Mask Path
+- ✅ コメントフォントBGフィルマスクパス
+- ✅ 댓글 글꼴 배경 채우기 마스크 패스
+
+### v142.3 字幕动画淡入142 | Subtitle Animation Fade In142 | 字幕アニメーションフェードイン142 | 자막 애니메이션 페이드인142
+- ✅ 字幕动画淡入142
+- ✅ Subtitle Animation Fade In142
+- ✅ 字幕アニメーションフェードイン142
+- ✅ 자막 애니메이션 페이드인142
+
+### v142.4 手势点击区域视觉动画持续 | Gesture Tap Zone Visual Anim Duration | ジェスチャータップゾーン視覚アニメーション持続 | 제스처 탭 영역 시각 애니메이션 지속
+- ✅ 手势点击区域视觉动画持续
+- ✅ Gesture Tap Zone Visual Anim Duration
+- ✅ ジェスチャータップゾーン視覚アニメーション持続
+- ✅ 제스처 탭 영역 시각 애니메이션 지속
+
+### v142.5 投射视频画中画吸附边缘 | Cast Video PIP Snap To Edge | キャストビデオPIPエッジにスナップ | 캐스트 비디오 PIP 가장자리에 스냅
+- ✅ 投射视频画中画吸附边缘
+- ✅ Cast Video PIP Snap To Edge
+- ✅ キャストビデオPIPエッジにスナップ
+- ✅ 캐스트 비디오 PIP 가장자리에 스냅
+
+### v142.6 播放列表按时长自动分组142 | Playlist Auto Group By Duration142 | プレイリスト再生時間別自動グループ化142 | 재생 목록 재생 시간별 자동 그룹화142
+- ✅ 播放列表按时长自动分组142
+- ✅ Playlist Auto Group By Duration142
+- ✅ プレイリスト再生時間別自動グループ化142
+- ✅ 재생 목록 재생 시간별 자동 그룹화142
+
+### v142.7 缓存计划频率时智能固定 | Cache Smart Pinning On Schedule Freq | キャッシュスケジュール頻度スマートピンニング | 캐시 스케줄 빈도 시 스마트 고정
+- ✅ 缓存计划频率时智能固定
+- ✅ Cache Smart Pinning On Schedule Freq
+- ✅ キャッシュスケジュール頻度スマートピンニング
+- ✅ 캐시 스케줄 빈도 시 스마트 고정
+
+### v142.8 进度条自定义滑块动画142 | Progress Bar Custom Thumb Anim142 | プログレスバーカスタムサムアニメーション142 | 진행 바 사용자 정의 썸 애니메이션142
+- ✅ 进度条自定义滑块动画142
+- ✅ Progress Bar Custom Thumb Anim142
+- ✅ プログレスバーカスタムサムアニメーション142
+- ✅ 진행 바 사용자 정의 썸 애니메이션142
+
+### v142.9 音量标准化立体声 | Volume Normalize Stereo | 音量正規化ステレオ | 볼륨 정규화 스테레오
+- ✅ 音量标准化立体声
+- ✅ Volume Normalize Stereo
+- ✅ 音量正規化ステレオ
+- ✅ 볼륨 정규화 스테레오
+
+### v142.10 历史记录自动清理142 | History Auto Clean142 | 履歴自動クリーンアップ142 | 기록 자동 정리142
+- ✅ 历史记录自动清理142
+- ✅ History Auto Clean142
+- ✅ 履歴自動クリーンアップ142
+- ✅ 기록 자동 정리142
+
+### v142.11 播放速度预设倾斜调整 | Playback Speed Presets Tilt Adjust | 再生速度プリセットチルト調整 | 재생 속도 프리셋 기울기 조정
+- ✅ 播放速度预设倾斜调整
+- ✅ Playback Speed Presets Tilt Adjust
+- ✅ 再生速度プリセットチルト調整
+- ✅ 재생 속도 프리셋 기울기 조정
+
+### v142.12 截图自动分享WhatsApp | Screenshot Auto Share WhatsApp | スクリーンショット自動WhatsApp共有 | 스크린샷 자동 WhatsApp 공유
+- ✅ 截图自动分享WhatsApp
+- ✅ Screenshot Auto Share WhatsApp
+- ✅ スクリーンショット自動WhatsApp共有
+- ✅ 스크린샷 자동 WhatsApp 공유
+
+### v142.13 视频画中画跟随色彩空间 | Video PIP Follow Color Space | ビデオPIPカラースペース追従 | 비디오 PIP 컬러 스페이스 팔로우
+- ✅ 视频画中画跟随色彩空间
+- ✅ Video PIP Follow Color Space
+- ✅ ビデオPIPカラースペース追従
+- ✅ 비디오 PIP 컬러 스페이스 팔로우
+
+### v142.14 弹幕字体背景填充遮罩路径141 | Danmaku Font BG Fill Mask Path141 | コメントフォントBGフィルマスクパス141 | 댓글 글꼴 배경 채우기 마스크 패스141
+- ✅ 弹幕字体背景填充遮罩路径141
+- ✅ Danmaku Font BG Fill Mask Path141
+- ✅ コメントフォントBGフィルマスクパス141
+- ✅ 댓글 글꼴 배경 채우기 마스크 패스141
+
+### v142.15 字幕动画淡出142 | Subtitle Animation Fade Out142 | 字幕アニメーションフェードアウト142 | 자막 애니메이션 페이드아웃142
+- ✅ 字幕动画淡出142
+- ✅ Subtitle Animation Fade Out142
+- ✅ 字幕アニメーションフェードアウト142
+- ✅ 자막 애니메이션 페이드아웃142
+
+### v143.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v143.1-v143.15 功能列表
+- ✅ Audio Phaser Stages, Danmaku Font BG Fill Mask Path142, Subtitle Animation Fade Out143, Gesture Tap Zone Visual Anim Type, Cast Video PIP Snap Strength, Playlist Auto Group By Resolution, Cache Smart Pinning On Schedule Time, Progress Bar Custom Thumb Size143, Volume Normalize Mid Side, History Auto Clean143, Playback Speed Presets Proximity, Screenshot Auto Share Line, Video PIP Follow Color Bit, Danmaku Font BG Fill Mask Radius, Subtitle Animation Translate143
+
+### v143.1 音频相位器阶段 | Audio Phaser Stages | オーディオフェーザーステージ | 오디오 페이저 스테이지
+- ✅ 音频相位器阶段
+- ✅ Audio Phaser Stages
+- ✅ オーディオフェーザーステージ
+- ✅ 오디오 페이저 스테이지
+
+### v143.2 弹幕字体背景填充遮罩路径142 | Danmaku Font BG Fill Mask Path142 | コメントフォントBGフィルマスクパス142 | 댓글 글꼴 배경 채우기 마스크 패스142
+- ✅ 弹幕字体背景填充遮罩路径142
+- ✅ Danmaku Font BG Fill Mask Path142
+- ✅ コメントフォントBGフィルマスクパス142
+- ✅ 댓글 글꼴 배경 채우기 마스크 패스142
+
+### v143.3 字幕动画淡出143 | Subtitle Animation Fade Out143 | 字幕アニメーションフェードアウト143 | 자막 애니메이션 페이드아웃143
+- ✅ 字幕动画淡出143
+- ✅ Subtitle Animation Fade Out143
+- ✅ 字幕アニメーションフェードアウト143
+- ✅ 자막 애니메이션 페이드아웃143
+
+### v143.4 手势点击区域视觉动画类型 | Gesture Tap Zone Visual Anim Type | ジェスチャータップゾーン視覚アニメーションタイプ | 제스처 탭 영역 시각 애니메이션 유형
+- ✅ 手势点击区域视觉动画类型
+- ✅ Gesture Tap Zone Visual Anim Type
+- ✅ ジェスチャータップゾーン視覚アニメーションタイプ
+- ✅ 제스처 탭 영역 시각 애니메이션 유형
+
+### v143.5 投射视频画中画吸附强度 | Cast Video PIP Snap Strength | キャストビデオPIPスナップ強度 | 캐스트 비디오 PIP 스냅 강도
+- ✅ 投射视频画中画吸附强度
+- ✅ Cast Video PIP Snap Strength
+- ✅ キャストビデオPIPスナップ強度
+- ✅ 캐스트 비디오 PIP 스냅 강도
+
+### v143.6 播放列表按分辨率分组 | Playlist Auto Group By Resolution | プレイリスト解像度別グループ化 | 재생 목록 해상도별 그룹화
+- ✅ 播放列表按分辨率分组
+- ✅ Playlist Auto Group By Resolution
+- ✅ プレイリスト解像度別グループ化
+- ✅ 재생 목록 해상도별 그룹화
+
+### v143.7 缓存计划时间时智能固定 | Cache Smart Pinning On Schedule Time | キャッシュスケジュール時間スマートピンニング | 캐시 스케줄 시간 시 스마트 고정
+- ✅ 缓存计划时间时智能固定
+- ✅ Cache Smart Pinning On Schedule Time
+- ✅ キャッシュスケジュール時間スマートピンニング
+- ✅ 캐시 스케줄 시간 시 스마트 고정
+
+### v143.8 进度条自定义滑块大小143 | Progress Bar Custom Thumb Size143 | プログレスバーカスタムサムサイズ143 | 진행 바 사용자 정의 썸 크기143
+- ✅ 进度条自定义滑块大小143
+- ✅ Progress Bar Custom Thumb Size143
+- ✅ プログレスバーカスタムサムサイズ143
+- ✅ 진행 바 사용자 정의 썸 크기143
+
+### v143.9 音量标准化中侧 | Volume Normalize Mid Side | 音量正規化ミッドサイド | 볼륨 정규화 미드 사이드
+- ✅ 音量标准化中侧
+- ✅ Volume Normalize Mid Side
+- ✅ 音量正規化ミッドサイド
+- ✅ 볼륨 정규화 미드 사이드
+
+### v143.10 历史记录自动清理143 | History Auto Clean143 | 履歴自動クリーンアップ143 | 기록 자동 정리143
+- ✅ 历史记录自动清理143
+- ✅ History Auto Clean143
+- ✅ 履歴自動クリーンアップ143
+- ✅ 기록 자동 정리143
+
+### v143.11 播放速度预设接近感应 | Playback Speed Presets Proximity | 再生速度プリセット近接センサー | 재생 속도 프리셋 근접 센서
+- ✅ 播放速度预设接近感应
+- ✅ Playback Speed Presets Proximity
+- ✅ 再生速度プリセット近接センサー
+- ✅ 재생 속도 프리셋 근접 센서
+
+### v143.12 截图自动分享Line | Screenshot Auto Share Line | スクリーンショット自動Line共有 | 스크린샷 자동 Line 공유
+- ✅ 截图自动分享Line
+- ✅ Screenshot Auto Share Line
+- ✅ スクリーンショット自動Line共有
+- ✅ 스크린샷 자동 Line 공유
+
+### v143.13 视频画中画跟随色深 | Video PIP Follow Color Bit | ビデオPIPカラービット追従 | 비디오 PIP 컬러 비트 팔로우
+- ✅ 视频画中画跟随色深
+- ✅ Video PIP Follow Color Bit
+- ✅ ビデオPIPカラービット追従
+- ✅ 비디오 PIP 컬러 비트 팔로우
+
+### v143.14 弹幕字体背景填充遮罩半径 | Danmaku Font BG Fill Mask Radius | コメントフォントBGフィルマスク半径 | 댓글 글꼴 배경 채우기 마스크 반경
+- ✅ 弹幕字体背景填充遮罩半径
+- ✅ Danmaku Font BG Fill Mask Radius
+- ✅ コメントフォントBGフィルマスク半径
+- ✅ 댓글 글꼴 배경 채우기 마스크 반경
+
+### v143.15 字幕动画平移143 | Subtitle Animation Translate143 | 字幕アニメーショントランスレート143 | 자막 애니메이션 이동143
+- ✅ 字幕动画平移143
+- ✅ Subtitle Animation Translate143
+- ✅ 字幕アニメーショントランスレート143
+- ✅ 자막 애니메이션 이동143
+
+### v144.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v144.1-v144.15 功能列表
+- ✅ Audio Compressor Toggle144, Danmaku Font BG Fill Mask Radius143, Subtitle Animation Translate144, Gesture Tap Zone Visual Anim Scale, Cast Video PIP Snap Offset, Playlist Auto Group By Codec, Cache Smart Pinning On Schedule Day, Progress Bar Custom Thumb Color144, Volume Normalize Multiband, History Auto Clean144, Playback Speed Presets Light Sensor, Screenshot Auto Share Instagram, Video PIP Follow HDR, Danmaku Font BG Fill Mask Radius144, Subtitle Animation Scale144
+
+### v144.1 音频压缩器开关144 | Audio Compressor Toggle144 | オーディオコンプレッサー切替144 | 오디오 컴프레서 전환144
+- ✅ 音频压缩器开关144
+- ✅ Audio Compressor Toggle144
+- ✅ オーディオコンプレッサー切替144
+- ✅ 오디오 컴프레서 전환144
+
+### v144.2 弹幕字体背景填充遮罩半径143 | Danmaku Font BG Fill Mask Radius143 | コメントフォントBGフィルマスク半径143 | 댓글 글꼴 배경 채우기 마스크 반경143
+- ✅ 弹幕字体背景填充遮罩半径143
+- ✅ Danmaku Font BG Fill Mask Radius143
+- ✅ コメントフォントBGフィルマスク半径143
+- ✅ 댓글 글꼴 배경 채우기 마스크 반경143
+
+### v144.3 字幕动画平移144 | Subtitle Animation Translate144 | 字幕アニメーショントランスレート144 | 자막 애니메이션 이동144
+- ✅ 字幕动画平移144
+- ✅ Subtitle Animation Translate144
+- ✅ 字幕アニメーショントランスレート144
+- ✅ 자막 애니메이션 이동144
+
+### v144.4 手势点击区域视觉动画缩放 | Gesture Tap Zone Visual Anim Scale | ジェスチャータップゾーン視覚アニメーションスケール | 제스처 탭 영역 시각 애니메이션 스케일
+- ✅ 手势点击区域视觉动画缩放
+- ✅ Gesture Tap Zone Visual Anim Scale
+- ✅ ジェスチャータップゾーン視覚アニメーションスケール
+- ✅ 제스처 탭 영역 시각 애니메이션 스케일
+
+### v144.5 投射视频画中画吸附偏移 | Cast Video PIP Snap Offset | キャストビデオPIPスナップオフセット | 캐스트 비디오 PIP 스냅 오프셋
+- ✅ 投射视频画中画吸附偏移
+- ✅ Cast Video PIP Snap Offset
+- ✅ キャストビデオPIPスナップオフセット
+- ✅ 캐스트 비디오 PIP 스냅 오프셋
+
+### v144.6 播放列表按编解码器分组 | Playlist Auto Group By Codec | プレイリストコーデック別グループ化 | 재생 목록 코덱별 그룹화
+- ✅ 播放列表按编解码器分组
+- ✅ Playlist Auto Group By Codec
+- ✅ プレイリストコーデック別グループ化
+- ✅ 재생 목록 코덱별 그룹화
+
+### v144.7 缓存计划日时智能固定 | Cache Smart Pinning On Schedule Day | キャッシュスケジュール日スマートピンニング | 캐시 스케줄 일 시 스마트 고정
+- ✅ 缓存计划日时智能固定
+- ✅ Cache Smart Pinning On Schedule Day
+- ✅ キャッシュスケジュール日スマートピンニング
+- ✅ 캐시 스케줄 일 시 스마트 고정
+
+### v144.8 进度条自定义滑块颜色144 | Progress Bar Custom Thumb Color144 | プログレスバーカスタムサム色144 | 진행 바 사용자 정의 썸 색상144
+- ✅ 进度条自定义滑块颜色144
+- ✅ Progress Bar Custom Thumb Color144
+- ✅ プログレスバーカスタムサム色144
+- ✅ 진행 바 사용자 정의 썸 색상144
+
+### v144.9 音量标准化多频段 | Volume Normalize Multiband | 音量正規化マルチバンド | 볼륨 정규화 멀티밴드
+- ✅ 音量标准化多频段
+- ✅ Volume Normalize Multiband
+- ✅ 音量正規化マルチバンド
+- ✅ 볼륨 정규화 멀티밴드
+
+### v144.10 历史记录自动清理144 | History Auto Clean144 | 履歴自動クリーンアップ144 | 기록 자동 정리144
+- ✅ 历史记录自动清理144
+- ✅ History Auto Clean144
+- ✅ 履歴自動クリーンアップ144
+- ✅ 기록 자동 정리144
+
+### v144.11 播放速度预设光线传感器 | Playback Speed Presets Light Sensor | 再生速度プリセット光センサー | 재생 속도 프리셋 광 센서
+- ✅ 播放速度预设光线传感器
+- ✅ Playback Speed Presets Light Sensor
+- ✅ 再生速度プリセット光センサー
+- ✅ 재생 속도 프리셋 광 센서
+
+### v144.12 截图自动分享Instagram | Screenshot Auto Share Instagram | スクリーンショット自動Instagram共有 | 스크린샷 자동 Instagram 공유
+- ✅ 截图自动分享Instagram
+- ✅ Screenshot Auto Share Instagram
+- ✅ スクリーンショット自動Instagram共有
+- ✅ 스크린샷 자동 Instagram 공유
+
+### v144.13 视频画中画跟随HDR | Video PIP Follow HDR | ビデオPIP HDR追従 | 비디오 PIP HDR 팔로우
+- ✅ 视频画中画跟随HDR
+- ✅ Video PIP Follow HDR
+- ✅ ビデオPIP HDR追従
+- ✅ 비디오 PIP HDR 팔로우
+
+### v144.14 弹幕字体背景填充遮罩半径144 | Danmaku Font BG Fill Mask Radius144 | コメントフォントBGフィルマスク半径144 | 댓글 글꼴 배경 채우기 마스크 반경144
+- ✅ 弹幕字体背景填充遮罩半径144
+- ✅ Danmaku Font BG Fill Mask Radius144
+- ✅ コメントフォントBGフィルマスク半径144
+- ✅ 댓글 글꼴 배경 채우기 마스크 반경144
+
+### v144.15 字幕动画缩放144 | Subtitle Animation Scale144 | 字幕アニメーションスケール144 | 자막 애니메이션 스케일144
+- ✅ 字幕动画缩放144
+- ✅ Subtitle Animation Scale144
+- ✅ 字幕アニメーションスケール144
+- ✅ 자막 애니메이션 스케일144
+
+### v145.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v145.1-v145.15 功能列表
+- ✅ Audio Compressor Threshold, Danmaku Font BG Fill Mask Radius145, Subtitle Animation Scale145, Gesture Tap Zone Visual Anim Opacity, Cast Video PIP Snap Duration, Playlist Auto Group By Bitrate, Cache Smart Pinning On Schedule Hour, Progress Bar Custom Thumb Glow145, Volume Normalize Auto Gain, History Auto Clean145, Playback Speed Presets Gyro Adjust, Screenshot Auto Share Facebook, Video PIP Follow HDR10, Danmaku Font BG Fill Mask Type, Subtitle Animation Rotate145
+
+### v145.1 音频压缩器阈值 | Audio Compressor Threshold | オーディオコンプレッサーしきい値 | 오디오 컴프레서 임계값
+- ✅ 音频压缩器阈值
+- ✅ Audio Compressor Threshold
+- ✅ オーディオコンプレッサーしきい値
+- ✅ 오디오 컴프레서 임계값
+
+### v145.2 弹幕字体背景填充遮罩半径145 | Danmaku Font BG Fill Mask Radius145 | コメントフォントBGフィルマスク半径145 | 댓글 글꼴 배경 채우기 마스크 반경145
+- ✅ 弹幕字体背景填充遮罩半径145
+- ✅ Danmaku Font BG Fill Mask Radius145
+- ✅ コメントフォントBGフィルマスク半径145
+- ✅ 댓글 글꼴 배경 채우기 마스크 반경145
+
+### v145.3 字幕动画缩放145 | Subtitle Animation Scale145 | 字幕アニメーションスケール145 | 자막 애니메이션 스케일145
+- ✅ 字幕动画缩放145
+- ✅ Subtitle Animation Scale145
+- ✅ 字幕アニメーションスケール145
+- ✅ 자막 애니메이션 스케일145
+
+### v145.4 手势点击区域视觉动画透明度 | Gesture Tap Zone Visual Anim Opacity | ジェスチャータップゾーン視覚アニメーション透明度 | 제스처 탭 영역 시각 애니메이션 불투명도
+- ✅ 手势点击区域视觉动画透明度
+- ✅ Gesture Tap Zone Visual Anim Opacity
+- ✅ ジェスチャータップゾーン視覚アニメーション透明度
+- ✅ 제스처 탭 영역 시각 애니메이션 불투명도
+
+### v145.5 投射视频画中画吸附持续 | Cast Video PIP Snap Duration | キャストビデオPIPスナップ持続時間 | 캐스트 비디오 PIP 스냅 지속 시간
+- ✅ 投射视频画中画吸附持续
+- ✅ Cast Video PIP Snap Duration
+- ✅ キャストビデオPIPスナップ持続時間
+- ✅ 캐스트 비디오 PIP 스냅 지속 시간
+
+### v145.6 播放列表按比特率分组 | Playlist Auto Group By Bitrate | プレイリストビットレート別グループ化 | 재생 목록 비트레이트별 그룹화
+- ✅ 播放列表按比特率分组
+- ✅ Playlist Auto Group By Bitrate
+- ✅ プレイリストビットレート別グループ化
+- ✅ 재생 목록 비트레이트별 그룹화
+
+### v145.7 缓存计划小时时智能固定 | Cache Smart Pinning On Schedule Hour | キャッシュスケジュール時間スマートピンニング | 캐시 스케줄 시간 시 스마트 고정
+- ✅ 缓存计划小时时智能固定
+- ✅ Cache Smart Pinning On Schedule Hour
+- ✅ キャッシュスケジュール時間スマートピンニング
+- ✅ 캐시 스케줄 시간 시 스마트 고정
+
+### v145.8 进度条自定义滑块发光145 | Progress Bar Custom Thumb Glow145 | プログレスバーカスタムサムグロウ145 | 진행 바 사용자 정의 썸 글로우145
+- ✅ 进度条自定义滑块发光145
+- ✅ Progress Bar Custom Thumb Glow145
+- ✅ プログレスバーカスタムサムグロウ145
+- ✅ 진행 바 사용자 정의 썸 글로우145
+
+### v145.9 音量标准化自动增益 | Volume Normalize Auto Gain | 音量正規化自動ゲイン | 볼륨 정규화 자동 게인
+- ✅ 音量标准化自动增益
+- ✅ Volume Normalize Auto Gain
+- ✅ 音量正規化自動ゲイン
+- ✅ 볼륨 정규화 자동 게인
+
+### v145.10 历史记录自动清理145 | History Auto Clean145 | 履歴自動クリーンアップ145 | 기록 자동 정리145
+- ✅ 历史记录自动清理145
+- ✅ History Auto Clean145
+- ✅ 履歴自動クリーンアップ145
+- ✅ 기록 자동 정리145
+
+### v145.11 播放速度预设陀螺仪调整 | Playback Speed Presets Gyro Adjust | 再生速度プリセットジャイロ調整 | 재생 속도 프리셋 자이로 조정
+- ✅ 播放速度预设陀螺仪调整
+- ✅ Playback Speed Presets Gyro Adjust
+- ✅ 再生速度プリセットジャイロ調整
+- ✅ 재생 속도 프리셋 자이로 조정
+
+### v145.12 截图自动分享Facebook | Screenshot Auto Share Facebook | スクリーンショット自動Facebook共有 | 스크린샷 자동 Facebook 공유
+- ✅ 截图自动分享Facebook
+- ✅ Screenshot Auto Share Facebook
+- ✅ スクリーンショット自動Facebook共有
+- ✅ 스크린샷 자동 Facebook 공유
+
+### v145.13 视频画中画跟随HDR10 | Video PIP Follow HDR10 | ビデオPIP HDR10追従 | 비디오 PIP HDR10 팔로우
+- ✅ 视频画中画跟随HDR10
+- ✅ Video PIP Follow HDR10
+- ✅ ビデオPIP HDR10追従
+- ✅ 비디오 PIP HDR10 팔로우
+
+### v145.14 弹幕字体背景填充遮罩类型 | Danmaku Font BG Fill Mask Type | コメントフォントBGフィルマスクタイプ | 댓글 글꼴 배경 채우기 마스크 유형
+- ✅ 弹幕字体背景填充遮罩类型
+- ✅ Danmaku Font BG Fill Mask Type
+- ✅ コメントフォントBGフィルマスクタイプ
+- ✅ 댓글 글꼴 배경 채우기 마스크 유형
+
+### v145.15 字幕动画旋转145 | Subtitle Animation Rotate145 | 字幕アニメーションローテート145 | 자막 애니메이션 회전145
+- ✅ 字幕动画旋转145
+- ✅ Subtitle Animation Rotate145
+- ✅ 字幕アニメーションローテート145
+- ✅ 자막 애니메이션 회전145
+
+### v146.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v146.1-v146.15 功能列表
+- ✅ Audio Compressor Ratio, Danmaku Font BG Fill Mask Type145, Subtitle Animation Rotate146, Gesture Tap Zone Visual Anim Color, Cast Video PIP Snap Animation, Playlist Auto Group By Fps, Cache Smart Pinning On Schedule Minute, Progress Bar Custom Thumb Border146, Volume Normalize Look Ahead, History Auto Clean146, Playback Speed Presets Accel Adjust, Screenshot Auto Share Twitter, Video PIP Follow Dolby, Danmaku Font BG Fill Mask Type146, Subtitle Animation Blur146
+
+### v146.1 音频压缩器比率 | Audio Compressor Ratio | オーディオコンプレッサー比率 | 오디오 컴프레서 비율
+- ✅ 音频压缩器比率
+- ✅ Audio Compressor Ratio
+- ✅ オーディオコンプレッサー比率
+- ✅ 오디오 컴프레서 비율
+
+### v146.2 弹幕字体背景填充遮罩类型145 | Danmaku Font BG Fill Mask Type145 | コメントフォントBGフィルマスクタイプ145 | 댓글 글꼴 배경 채우기 마스크 유형145
+- ✅ 弹幕字体背景填充遮罩类型145
+- ✅ Danmaku Font BG Fill Mask Type145
+- ✅ コメントフォントBGフィルマスクタイプ145
+- ✅ 댓글 글꼴 배경 채우기 마스크 유형145
+
+### v146.3 字幕动画旋转146 | Subtitle Animation Rotate146 | 字幕アニメーションローテート146 | 자막 애니메이션 회전146
+- ✅ 字幕动画旋转146
+- ✅ Subtitle Animation Rotate146
+- ✅ 字幕アニメーションローテート146
+- ✅ 자막 애니메이션 회전146
+
+### v146.4 手势点击区域视觉动画颜色 | Gesture Tap Zone Visual Anim Color | ジェスチャータップゾーン視覚アニメーション色 | 제스처 탭 영역 시각 애니메이션 색상
+- ✅ 手势点击区域视觉动画颜色
+- ✅ Gesture Tap Zone Visual Anim Color
+- ✅ ジェスチャータップゾーン視覚アニメーション色
+- ✅ 제스처 탭 영역 시각 애니메이션 색상
+
+### v146.5 投射视频画中画吸附动画 | Cast Video PIP Snap Animation | キャストビデオPIPスナップアニメーション | 캐스트 비디오 PIP 스냅 애니메이션
+- ✅ 投射视频画中画吸附动画
+- ✅ Cast Video PIP Snap Animation
+- ✅ キャストビデオPIPスナップアニメーション
+- ✅ 캐스트 비디오 PIP 스냅 애니메이션
+
+### v146.6 播放列表按帧率分组 | Playlist Auto Group By Fps | プレイリストフレームレート別グループ化 | 재생 목록 프레임레이트별 그룹화
+- ✅ 播放列表按帧率分组
+- ✅ Playlist Auto Group By Fps
+- ✅ プレイリストフレームレート別グループ化
+- ✅ 재생 목록 프레임레이트별 그룹화
+
+### v146.7 缓存计划分钟时智能固定 | Cache Smart Pinning On Schedule Minute | キャッシュスケジュール分スマートピンニング | 캐시 스케줄 분 시 스마트 고정
+- ✅ 缓存计划分钟时智能固定
+- ✅ Cache Smart Pinning On Schedule Minute
+- ✅ キャッシュスケジュール分スマートピンニング
+- ✅ 캐시 스케줄 분 시 스마트 고정
+
+### v146.8 进度条自定义滑块边框146 | Progress Bar Custom Thumb Border146 | プログレスバーカスタムサムボーダー146 | 진행 바 사용자 정의 썸 테두리146
+- ✅ 进度条自定义滑块边框146
+- ✅ Progress Bar Custom Thumb Border146
+- ✅ プログレスバーカスタムサムボーダー146
+- ✅ 진행 바 사용자 정의 썸 테두리146
+
+### v146.9 音量标准化前瞻 | Volume Normalize Look Ahead | 音量正規化ルックアヘッド | 볼륨 정규화 룩어헤드
+- ✅ 音量标准化前瞻
+- ✅ Volume Normalize Look Ahead
+- ✅ 音量正規化ルックアヘッド
+- ✅ 볼륨 정규화 룩어헤드
+
+### v146.10 历史记录自动清理146 | History Auto Clean146 | 履歴自動クリーンアップ146 | 기록 자동 정리146
+- ✅ 历史记录自动清理146
+- ✅ History Auto Clean146
+- ✅ 履歴自動クリーンアップ146
+- ✅ 기록 자동 정리146
+
+### v146.11 播放速度预设加速度调整 | Playback Speed Presets Accel Adjust | 再生速度プリセット加速度調整 | 재생 속도 프리셋 가속도 조정
+- ✅ 播放速度预设加速度调整
+- ✅ Playback Speed Presets Accel Adjust
+- ✅ 再生速度プリセット加速度調整
+- ✅ 재생 속도 프리셋 가속도 조정
+
+### v146.12 截图自动分享Twitter | Screenshot Auto Share Twitter | スクリーンショット自動Twitter共有 | 스크린샷 자동 Twitter 공유
+- ✅ 截图自动分享Twitter
+- ✅ Screenshot Auto Share Twitter
+- ✅ スクリーンショット自動Twitter共有
+- ✅ 스크린샷 자동 Twitter 공유
+
+### v146.13 视频画中画跟随杜比 | Video PIP Follow Dolby | ビデオドルビー追従 | 비디오 PIP 돌비 팔로우
+- ✅ 视频画中画跟随杜比
+- ✅ Video PIP Follow Dolby
+- ✅ ビデオドルビー追従
+- ✅ 비디오 PIP 돌비 팔로우
+
+### v146.14 弹幕字体背景填充遮罩类型146 | Danmaku Font BG Fill Mask Type146 | コメントフォントBGフィルマスクタイプ146 | 댓글 글꼴 배경 채우기 마스크 유형146
+- ✅ 弹幕字体背景填充遮罩类型146
+- ✅ Danmaku Font BG Fill Mask Type146
+- ✅ コメントフォントBGフィルマスクタイプ146
+- ✅ 댓글 글꼴 배경 채우기 마스크 유형146
+
+### v146.15 字幕动画模糊146 | Subtitle Animation Blur146 | 字幕アニメーションブラー146 | 자막 애니메이션 블러146
+- ✅ 字幕动画模糊146
+- ✅ Subtitle Animation Blur146
+- ✅ 字幕アニメーションブラー146
+- ✅ 자막 애니메이션 블러146
+
+### v147.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v147.1-v147.15 功能列表
+- ✅ Audio Compressor Attack, Danmaku Font BG Fill Mask Type147, Subtitle Animation Blur147, Gesture Tap Zone Visual Anim Blur, Cast Video PIP Snap Bounce, Playlist Auto Group By Aspect Ratio, Cache Smart Pinning On Schedule Repeat, Progress Bar Custom Thumb Shadow147, Volume Normalize Release, History Auto Clean147, Playback Speed Presets Voice Control, Screenshot Auto Share LinkedIn, Video PIP Follow Dolby Vision, Danmaku Font BG Fill Mask Opacity, Subtitle Animation Fade In147
+
+### v147.1 音频压缩器起音 | Audio Compressor Attack | オーディオコンプレッサーアタック | 오디오 컴프레서 어택
+- ✅ 音频压缩器起音
+- ✅ Audio Compressor Attack
+- ✅ オーディオコンプレッサーアタック
+- ✅ 오디오 컴프레서 어택
+
+### v147.2 弹幕字体背景填充遮罩类型147 | Danmaku Font BG Fill Mask Type147 | コメントフォントBGフィルマスクタイプ147 | 댓글 글꼴 배경 채우기 마스크 유형147
+- ✅ 弹幕字体背景填充遮罩类型147
+- ✅ Danmaku Font BG Fill Mask Type147
+- ✅ コメントフォントBGフィルマスクタイプ147
+- ✅ 댓글 글꼴 배경 채우기 마스크 유형147
+
+### v147.3 字幕动画模糊147 | Subtitle Animation Blur147 | 字幕アニメーションブラー147 | 자막 애니메이션 블러147
+- ✅ 字幕动画模糊147
+- ✅ Subtitle Animation Blur147
+- ✅ 字幕アニメーションブラー147
+- ✅ 자막 애니메이션 블러147
+
+### v147.4 手势点击区域视觉动画模糊 | Gesture Tap Zone Visual Anim Blur | ジェスチャータップゾーン視覚アニメーションブラー | 제스처 탭 영역 시각 애니메이션 블러
+- ✅ 手势点击区域视觉动画模糊
+- ✅ Gesture Tap Zone Visual Anim Blur
+- ✅ ジェスチャータップゾーン視覚アニメーションブラー
+- ✅ 제스처 탭 영역 시각 애니메이션 블러
+
+### v147.5 投射视频画中画吸附弹跳 | Cast Video PIP Snap Bounce | キャストビデオPIPスナップバウンス | 캐스트 비디오 PIP 스냅 바운스
+- ✅ 投射视频画中画吸附弹跳
+- ✅ Cast Video PIP Snap Bounce
+- ✅ キャストビデオPIPスナップバウンス
+- ✅ 캐스트 비디오 PIP 스냅 바운스
+
+### v147.6 播放列表按宽高比分组 | Playlist Auto Group By Aspect Ratio | プレイリストアスペクト比別グループ化 | 재생 목록 종횡비별 그룹화
+- ✅ 播放列表按宽高比分组
+- ✅ Playlist Auto Group By Aspect Ratio
+- ✅ プレイリストアスペクト比別グループ化
+- ✅ 재생 목록 종횡비별 그룹화
+
+### v147.7 缓存计划重复时智能固定 | Cache Smart Pinning On Schedule Repeat | キャッシュスケジュール繰り返しスマートピンニング | 캐시 스케줄 반복 시 스마트 고정
+- ✅ 缓存计划重复时智能固定
+- ✅ Cache Smart Pinning On Schedule Repeat
+- ✅ キャッシュスケジュール繰り返しスマートピンニング
+- ✅ 캐시 스케줄 반복 시 스마트 고정
+
+### v147.8 进度条自定义滑块阴影147 | Progress Bar Custom Thumb Shadow147 | プログレスバーカスタムサムシャドウ147 | 진행 바 사용자 정의 썸 그림자147
+- ✅ 进度条自定义滑块阴影147
+- ✅ Progress Bar Custom Thumb Shadow147
+- ✅ プログレスバーカスタムサムシャドウ147
+- ✅ 진행 바 사용자 정의 썸 그림자147
+
+### v147.9 音量标准化释放 | Volume Normalize Release | 音量正規化リリース | 볼륨 정규화 릴리스
+- ✅ 音量标准化释放
+- ✅ Volume Normalize Release
+- ✅ 音量正規化リリース
+- ✅ 볼륨 정규화 릴리스
+
+### v147.10 历史记录自动清理147 | History Auto Clean147 | 履歴自動クリーンアップ147 | 기록 자동 정리147
+- ✅ 历史记录自动清理147
+- ✅ History Auto Clean147
+- ✅ 履歴自動クリーンアップ147
+- ✅ 기록 자동 정리147
+
+### v147.11 播放速度预设语音控制 | Playback Speed Presets Voice Control | 再生速度プリセット音声制御 | 재생 속도 프리셋 음성 제어
+- ✅ 播放速度预设语音控制
+- ✅ Playback Speed Presets Voice Control
+- ✅ 再生速度プリセット音声制御
+- ✅ 재생 속도 프리셋 음성 제어
+
+### v147.12 截图自动分享LinkedIn | Screenshot Auto Share LinkedIn | スクリーンショット自動LinkedIn共有 | 스크린샷 자동 LinkedIn 공유
+- ✅ 截图自动分享LinkedIn
+- ✅ Screenshot Auto Share LinkedIn
+- ✅ スクリーンショット自動LinkedIn共有
+- ✅ 스크린샷 자동 LinkedIn 공유
+
+### v147.13 视频画中画跟随杜比视界 | Video PIP Follow Dolby Vision | ビデオPIPドルビービジョン追従 | 비디오 PIP 돌비 비전 팔로우
+- ✅ 视频画中画跟随杜比视界
+- ✅ Video PIP Follow Dolby Vision
+- ✅ ビデオPIPドルビービジョン追従
+- ✅ 비디오 PIP 돌비 비전 팔로우
+
+### v147.14 弹幕字体背景填充遮罩透明度 | Danmaku Font BG Fill Mask Opacity | コメントフォントBGフィルマスク透明度 | 댓글 글꼴 배경 채우기 마스크 불투명도
+- ✅ 弹幕字体背景填充遮罩透明度
+- ✅ Danmaku Font BG Fill Mask Opacity
+- ✅ コメントフォントBGフィルマスク透明度
+- ✅ 댓글 글꼴 배경 채우기 마스크 불투명도
+
+### v147.15 字幕动画淡入147 | Subtitle Animation Fade In147 | 字幕アニメーションフェードイン147 | 자막 애니메이션 페이드인147
+- ✅ 字幕动画淡入147
+- ✅ Subtitle Animation Fade In147
+- ✅ 字幕アニメーションフェードイン147
+- ✅ 자막 애니메이션 페이드인147
+
+### v148.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v148.1-v148.15 功能列表
+- ✅ Audio Compressor Release, Danmaku Font BG Fill Mask Opacity147, Subtitle Animation Fade In148, Gesture Tap Zone Visual Anim Delay, Cast Video PIP Snap Elastic, Playlist Auto Group By Size, Cache Smart Pinning On Schedule Notify, Progress Bar Custom Thumb Glow148, Volume Normalize Knee Width, History Auto Clean148, Playback Speed Presets Face Detect, Screenshot Auto Share Pinterest148, Video PIP Follow Atmos, Danmaku Font BG Fill Mask Opacity148, Subtitle Animation Fade Out148
+
+### v148.1 音频压缩器释放 | Audio Compressor Release | オーディオコンプレッサーリリース | 오디오 컴프레서 릴리스
+- ✅ 音频压缩器释放
+- ✅ Audio Compressor Release
+- ✅ オーディオコンプレッサーリリース
+- ✅ 오디오 컴프레서 릴리스
+
+### v148.2 弹幕字体背景填充遮罩透明度147 | Danmaku Font BG Fill Mask Opacity147 | コメントフォントBGフィルマスク透明度147 | 댓글 글꼴 배경 채우기 마스크 불투명도147
+- ✅ 弹幕字体背景填充遮罩透明度147
+- ✅ Danmaku Font BG Fill Mask Opacity147
+- ✅ コメントフォントBGフィルマスク透明度147
+- ✅ 댓글 글꼴 배경 채우기 마스크 불투명도147
+
+### v148.3 字幕动画淡入148 | Subtitle Animation Fade In148 | 字幕アニメーションフェードイン148 | 자막 애니메이션 페이드인148
+- ✅ 字幕动画淡入148
+- ✅ Subtitle Animation Fade In148
+- ✅ 字幕アニメーションフェードイン148
+- ✅ 자막 애니메이션 페이드인148
+
+### v148.4 手势点击区域视觉动画延迟 | Gesture Tap Zone Visual Anim Delay | ジェスチャータップゾーン視覚アニメーション遅延 | 제스처 탭 영역 시각 애니메이션 지연
+- ✅ 手势点击区域视觉动画延迟
+- ✅ Gesture Tap Zone Visual Anim Delay
+- ✅ ジェスチャータップゾーン視覚アニメーション遅延
+- ✅ 제스처 탭 영역 시각 애니메이션 지연
+
+### v148.5 投射视频画中画吸附弹性 | Cast Video PIP Snap Elastic | キャストビデオPIPスナップエラスティック | 캐스트 비디오 PIP 스냅 탄성
+- ✅ 投射视频画中画吸附弹性
+- ✅ Cast Video PIP Snap Elastic
+- ✅ キャストビデオPIPスナップエラスティック
+- ✅ 캐스트 비디오 PIP 스냅 탄성
+
+### v148.6 播放列表按大小分组 | Playlist Auto Group By Size | プレイリストサイズ別グループ化 | 재생 목록 크기별 그룹화
+- ✅ 播放列表按大小分组
+- ✅ Playlist Auto Group By Size
+- ✅ プレイリストサイズ別グループ化
+- ✅ 재생 목록 크기별 그룹화
+
+### v148.7 缓存计划通知时智能固定 | Cache Smart Pinning On Schedule Notify | キャッシュスケジュール通知スマートピンニング | 캐시 스케줄 알림 시 스마트 고정
+- ✅ 缓存计划通知时智能固定
+- ✅ Cache Smart Pinning On Schedule Notify
+- ✅ キャッシュスケジュール通知スマートピンニング
+- ✅ 캐시 스케줄 알림 시 스마트 고정
+
+### v148.8 进度条自定义滑块发光148 | Progress Bar Custom Thumb Glow148 | プログレスバーカスタムサムグロウ148 | 진행 바 사용자 정의 썸 글로우148
+- ✅ 进度条自定义滑块发光148
+- ✅ Progress Bar Custom Thumb Glow148
+- ✅ プログレスバーカスタムサムグロウ148
+- ✅ 진행 바 사용자 정의 썸 글로우148
+
+### v148.9 音量标准化拐点宽度 | Volume Normalize Knee Width | 音量正規化ニーウィズ | 볼륨 정규화 니 너비
+- ✅ 音量标准化拐点宽度
+- ✅ Volume Normalize Knee Width
+- ✅ 音量正規化ニーウィズ
+- ✅ 볼륨 정규화 니 너비
+
+### v148.10 历史记录自动清理148 | History Auto Clean148 | 履歴自動クリーンアップ148 | 기록 자동 정리148
+- ✅ 历史记录自动清理148
+- ✅ History Auto Clean148
+- ✅ 履歴自動クリーンアップ148
+- ✅ 기록 자동 정리148
+
+### v148.11 播放速度预设面部检测 | Playback Speed Presets Face Detect | 再生速度プリセット顔検出 | 재생 속도 프리셋 얼굴 감지
+- ✅ 播放速度预设面部检测
+- ✅ Playback Speed Presets Face Detect
+- ✅ 再生速度プリセット顔検出
+- ✅ 재생 속도 프리셋 얼굴 감지
+
+### v148.12 截图自动分享Pinterest148 | Screenshot Auto Share Pinterest148 | スクリーンショット自動Pinterest148共有 | 스크린샷 자동 Pinterest148 공유
+- ✅ 截图自动分享Pinterest148
+- ✅ Screenshot Auto Share Pinterest148
+- ✅ スクリーンショット自動Pinterest148共有
+- ✅ 스크린샷 자동 Pinterest148 공유
+
+### v148.13 视频画中画跟随Atmos | Video PIP Follow Atmos | ビデオPIP Atmos追従 | 비디오 PIP Atmos 팔로우
+- ✅ 视频画中画跟随Atmos
+- ✅ Video PIP Follow Atmos
+- ✅ ビデオPIP Atmos追従
+- ✅ 비디오 PIP Atmos 팔로우
+
+### v148.14 弹幕字体背景填充遮罩透明度148 | Danmaku Font BG Fill Mask Opacity148 | コメントフォントBGフィルマスク透明度148 | 댓글 글꼴 배경 채우기 마스크 불투명도148
+- ✅ 弹幕字体背景填充遮罩透明度148
+- ✅ Danmaku Font BG Fill Mask Opacity148
+- ✅ コメントフォントBGフィルマスク透明度148
+- ✅ 댓글 글꼴 배경 채우기 마스크 불투명도148
+
+### v148.15 字幕动画淡出148 | Subtitle Animation Fade Out148 | 字幕アニメーションフェードアウト148 | 자막 애니메이션 페이드아웃148
+- ✅ 字幕动画淡出148
+- ✅ Subtitle Animation Fade Out148
+- ✅ 字幕アニメーションフェードアウト148
+- ✅ 자막 애니메이션 페이드아웃148
+
+### v149.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v149.1-v149.15 功能列表
+- ✅ Audio Compressor Knee, Danmaku Font BG Fill Mask Blend Mode, Subtitle Animation Fade Out149, Gesture Tap Zone Visual Anim Repeat, Cast Video PIP Snap Friction, Playlist Auto Group By Length149, Cache Smart Pinning On Schedule Log, Progress Bar Custom Thumb Border149, Volume Normalize Link Channels, History Auto Clean149, Playback Speed Presets Eye Track, Screenshot Auto Share VK149, Video PIP Follow Spatial, Danmaku Font BG Fill Mask Blend Mode149, Subtitle Animation Translate149
+
+### v149.1 音频压缩器拐点 | Audio Compressor Knee | オーディオコンプレッサーニー | 오디오 컴프레서 니
+- ✅ 音频压缩器拐点
+- ✅ Audio Compressor Knee
+- ✅ オーディオコンプレッサーニー
+- ✅ 오디오 컴프레서 니
+
+### v149.2 弹幕字体背景填充遮罩混合模式 | Danmaku Font BG Fill Mask Blend Mode | コメントフォントBGフィルマスクブレンドモード | 댓글 글꼴 배경 채우기 마스크 블렌드 모드
+- ✅ 弹幕字体背景填充遮罩混合模式
+- ✅ Danmaku Font BG Fill Mask Blend Mode
+- ✅ コメントフォントBGフィルマスクブレンドモード
+- ✅ 댓글 글꼴 배경 채우기 마스크 블렌드 모드
+
+### v149.3 字幕动画淡出149 | Subtitle Animation Fade Out149 | 字幕アニメーションフェードアウト149 | 자막 애니메이션 페이드아웃149
+- ✅ 字幕动画淡出149
+- ✅ Subtitle Animation Fade Out149
+- ✅ 字幕アニメーションフェードアウト149
+- ✅ 자막 애니메이션 페이드아웃149
+
+### v149.4 手势点击区域视觉动画重复 | Gesture Tap Zone Visual Anim Repeat | ジェスチャータップゾーン視覚アニメーション繰り返し | 제스처 탭 영역 시각 애니메이션 반복
+- ✅ 手势点击区域视觉动画重复
+- ✅ Gesture Tap Zone Visual Anim Repeat
+- ✅ ジェスチャータップゾーン視覚アニメーション繰り返し
+- ✅ 제스처 탭 영역 시각 애니메이션 반복
+
+### v149.5 投射视频画中画吸附摩擦 | Cast Video PIP Snap Friction | キャストビデオPIPスナップ摩擦 | 캐스트 비디오 PIP 스냅 마찰
+- ✅ 投射视频画中画吸附摩擦
+- ✅ Cast Video PIP Snap Friction
+- ✅ キャストビデオPIPスナップ摩擦
+- ✅ 캐스트 비디오 PIP 스냅 마찰
+
+### v149.6 播放列表按时长自动分组149 | Playlist Auto Group By Length149 | プレイリスト長さ別自動グループ化149 | 재생 목록 길이별 자동 그룹화149
+- ✅ 播放列表按时长自动分组149
+- ✅ Playlist Auto Group By Length149
+- ✅ プレイリスト長さ別自動グループ化149
+- ✅ 재생 목록 길이별 자동 그룹화149
+
+### v149.7 缓存计划日志时智能固定 | Cache Smart Pinning On Schedule Log | キャッシュスケジュールログスマートピンニング | 캐시 스케줄 로그 시 스마트 고정
+- ✅ 缓存计划日志时智能固定
+- ✅ Cache Smart Pinning On Schedule Log
+- ✅ キャッシュスケジュールログスマートピンニング
+- ✅ 캐시 스케줄 로그 시 스마트 고정
+
+### v149.8 进度条自定义滑块边框149 | Progress Bar Custom Thumb Border149 | プログレスバーカスタムサムボーダー149 | 진행 바 사용자 정의 썸 테두리149
+- ✅ 进度条自定义滑块边框149
+- ✅ Progress Bar Custom Thumb Border149
+- ✅ プログレスバーカスタムサムボーダー149
+- ✅ 진행 바 사용자 정의 썸 테두리149
+
+### v149.9 音量标准化链接通道 | Volume Normalize Link Channels | 音量正規化リンクチャネル | 볼륨 정규화 링크 채널
+- ✅ 音量标准化链接通道
+- ✅ Volume Normalize Link Channels
+- ✅ 音量正規化リンクチャネル
+- ✅ 볼륨 정규화 링크 채널
+
+### v149.10 历史记录自动清理149 | History Auto Clean149 | 履歴自動クリーンアップ149 | 기록 자동 정리149
+- ✅ 历史记录自动清理149
+- ✅ History Auto Clean149
+- ✅ 履歴自動クリーンアップ149
+- ✅ 기록 자동 정리149
+
+### v149.11 播放速度预设眼动追踪 | Playback Speed Presets Eye Track | 再生速度プリセットアイトラッキング | 재생 속도 프리셋 아이 트래킹
+- ✅ 播放速度预设眼动追踪
+- ✅ Playback Speed Presets Eye Track
+- ✅ 再生速度プリセットアイトラッキング
+- ✅ 재생 속도 프리셋 아이 트래킹
+
+### v149.12 截图自动分享VK149 | Screenshot Auto Share VK149 | スクリーンショット自動VK149共有 | 스크린샷 자동 VK149 공유
+- ✅ 截图自动分享VK149
+- ✅ Screenshot Auto Share VK149
+- ✅ スクリーンショット自動VK149共有
+- ✅ 스크린샷 자동 VK149 공유
+
+### v149.13 视频画中画跟随空间音频 | Video PIP Follow Spatial | ビデオPIP空間オーディオ追従 | 비디오 PIP 공간 오디오 팔로우
+- ✅ 视频画中画跟随空间音频
+- ✅ Video PIP Follow Spatial
+- ✅ ビデオPIP空間オーディオ追従
+- ✅ 비디오 PIP 공간 오디오 팔로우
+
+### v149.14 弹幕字体背景填充遮罩混合模式149 | Danmaku Font BG Fill Mask Blend Mode149 | コメントフォントBGフィルマスクブレンドモード149 | 댓글 글꼴 배경 채우기 마스크 블렌드 모드149
+- ✅ 弹幕字体背景填充遮罩混合模式149
+- ✅ Danmaku Font BG Fill Mask Blend Mode149
+- ✅ コメントフォントBGフィルマスクブレンドモード149
+- ✅ 댓글 글꼴 배경 채우기 마스크 블렌드 모드149
+
+### v149.15 字幕动画平移149 | Subtitle Animation Translate149 | 字幕アニメーショントランスレート149 | 자막 애니메이션 이동149
+- ✅ 字幕动画平移149
+- ✅ Subtitle Animation Translate149
+- ✅ 字幕アニメーショントランスレート149
+- ✅ 자막 애니메이션 이동149
+
+### v150.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v150.1-v150.15 功能列表
+- ✅ Audio Limiter Toggle150, Danmaku Font BG Fill Mask Blend Mode150, Subtitle Animation Translate150, Gesture Tap Zone Visual Anim Loop, Cast Video PIP Snap Tension, Playlist Auto Group By Date150, Cache Smart Pinning On Schedule Retry, Progress Bar Custom Thumb Color150, Volume Normalize Bypass, History Auto Clean150, Playback Speed Presets Biometric, Screenshot Auto Share Email, Video PIP Follow Immersive, Danmaku Font BG Fill Mask Invert, Subtitle Animation Scale150
+
+### v150.1 音频限制器开关150 | Audio Limiter Toggle150 | オーディオリミッター切替150 | 오디오 리미터 전환150
+- ✅ 音频限制器开关150
+- ✅ Audio Limiter Toggle150
+- ✅ オーディオリミッター切替150
+- ✅ 오디오 리미터 전환150
+
+### v150.2 弹幕字体背景填充遮罩混合模式150 | Danmaku Font BG Fill Mask Blend Mode150 | コメントフォントBGフィルマスクブレンドモード150 | 댓글 글꼴 배경 채우기 마스크 블렌드 모드150
+- ✅ 弹幕字体背景填充遮罩混合模式150
+- ✅ Danmaku Font BG Fill Mask Blend Mode150
+- ✅ コメントフォントBGフィルマスクブレンドモード150
+- ✅ 댓글 글꼴 배경 채우기 마스크 블렌드 모드150
+
+### v150.3 字幕动画平移150 | Subtitle Animation Translate150 | 字幕アニメーショントランスレート150 | 자막 애니메이션 이동150
+- ✅ 字幕动画平移150
+- ✅ Subtitle Animation Translate150
+- ✅ 字幕アニメーショントランスレート150
+- ✅ 자막 애니메이션 이동150
+
+### v150.4 手势点击区域视觉动画循环 | Gesture Tap Zone Visual Anim Loop | ジェスチャータップゾーン視覚アニメーションループ | 제스처 탭 영역 시각 애니메이션 루프
+- ✅ 手势点击区域视觉动画循环
+- ✅ Gesture Tap Zone Visual Anim Loop
+- ✅ ジェスチャータップゾーン視覚アニメーションループ
+- ✅ 제스처 탭 영역 시각 애니메이션 루프
+
+### v150.5 投射视频画中画吸附张力 | Cast Video PIP Snap Tension | キャストビデオPIPスナップテンション | 캐스트 비디오 PIP 스냅 장력
+- ✅ 投射视频画中画吸附张力
+- ✅ Cast Video PIP Snap Tension
+- ✅ キャストビデオPIPスナップテンション
+- ✅ 캐스트 비디오 PIP 스냅 장력
+
+### v150.6 播放列表按日期自动分组150 | Playlist Auto Group By Date150 | プレイリスト日付別自動グループ化150 | 재생 목록 날짜별 자동 그룹화150
+- ✅ 播放列表按日期自动分组150
+- ✅ Playlist Auto Group By Date150
+- ✅ プレイリスト日付別自動グループ化150
+- ✅ 재생 목록 날짜별 자동 그룹화150
+
+### v150.7 缓存计划重试时智能固定 | Cache Smart Pinning On Schedule Retry | キャッシュスケジュールリトライスマートピンニング | 캐시 스케줄 재시도 시 스마트 고정
+- ✅ 缓存计划重试时智能固定
+- ✅ Cache Smart Pinning On Schedule Retry
+- ✅ キャッシュスケジュールリトライスマートピンニング
+- ✅ 캐시 스케줄 재시도 시 스마트 고정
+
+### v150.8 进度条自定义滑块颜色150 | Progress Bar Custom Thumb Color150 | プログレスバーカスタムサム色150 | 진행 바 사용자 정의 썸 색상150
+- ✅ 进度条自定义滑块颜色150
+- ✅ Progress Bar Custom Thumb Color150
+- ✅ プログレスバーカスタムサム色150
+- ✅ 진행 바 사용자 정의 썸 색상150
+
+### v150.9 音量标准化旁路 | Volume Normalize Bypass | 音量正規化バイパス | 볼륨 정규화 바이패스
+- ✅ 音量标准化旁路
+- ✅ Volume Normalize Bypass
+- ✅ 音量正規化バイパス
+- ✅ 볼륨 정규화 바이패스
+
+### v150.10 历史记录自动清理150 | History Auto Clean150 | 履歴自動クリーンアップ150 | 기록 자동 정리150
+- ✅ 历史记录自动清理150
+- ✅ History Auto Clean150
+- ✅ 履歴自動クリーンアップ150
+- ✅ 기록 자동 정리150
+
+### v150.11 播放速度预设生物识别 | Playback Speed Presets Biometric | 再生速度プリセットバイオメトリック | 재생 속도 프리셋 바이오메트릭
+- ✅ 播放速度预设生物识别
+- ✅ Playback Speed Presets Biometric
+- ✅ 再生速度プリセットバイオメトリック
+- ✅ 재생 속도 프리셋 바이오메트릭
+
+### v150.12 截图自动分享邮件 | Screenshot Auto Share Email | スクリーンショット自動メール共有 | 스크린샷 자동 이메일 공유
+- ✅ 截图自动分享邮件
+- ✅ Screenshot Auto Share Email
+- ✅ スクリーンショット自動メール共有
+- ✅ 스크린샷 자동 이메일 공유
+
+### v150.13 视频画中画跟随沉浸模式 | Video PIP Follow Immersive | ビデオPIP没入モード追従 | 비디오 PIP 몰입 모드 팔로우
+- ✅ 视频画中画跟随沉浸模式
+- ✅ Video PIP Follow Immersive
+- ✅ ビデオPIP没入モード追従
+- ✅ 비디오 PIP 몰입 모드 팔로우
+
+### v150.14 弹幕字体背景填充遮罩反转 | Danmaku Font BG Fill Mask Invert | コメントフォントBGフィルマスク反転 | 댓글 글꼴 배경 채우기 마스크 반전
+- ✅ 弹幕字体背景填充遮罩反转
+- ✅ Danmaku Font BG Fill Mask Invert
+- ✅ コメントフォントBGフィルマスク反転
+- ✅ 댓글 글꼴 배경 채우기 마스크 반전
+
+### v150.15 字幕动画缩放150 | Subtitle Animation Scale150 | 字幕アニメーションスケール150 | 자막 애니메이션 스케일150
+- ✅ 字幕动画缩放150
+- ✅ Subtitle Animation Scale150
+- ✅ 字幕アニメーションスケール150
+- ✅ 자막 애니메이션 스케일150
+
 ### v55.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
 ### v55.1-v55.15 功能列表
 - ✅ Auto Resume, Font Monospace, Color Hue Auto, Peak Limiter, Send Queue, Cast Bandwidth Limit, Lock Screen, Filter Regex, Network Policy, Double Tap Action, Font Weight Custom, Tint Custom, Volume Compressor, Bg Padding, Cast Auto Quality
@@ -20406,4 +21347,4 @@ This project is based on open-source software. All rights belong to the original
 - **基础版本 | Base Versions**: v10.0.0 - v11.19.0 (25 versions)
 - **AI自动维护版本 | AI Maintained**: v12.1 - v45.15 (550+ versions)
 - **开发周期 | Development Cycle**: 2024 - 2026
-- **功能特性 | Features**: 1400+ new features added
+- **功能特性 | Features**: 1500+ new features added
