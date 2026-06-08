@@ -118,7 +118,7 @@ This project is based on open-source software. All rights belong to the original
 ## 📋 更新日志 | Changelog | 変更履歴 | 변경 로그
 
 ### 最新版本 | Latest Version | 最新バージョン | 최신 버전
-- **v450.15** - 2026-06-08
+- **v460.15** - 2026-06-08
 
 ---
 
@@ -46112,6 +46112,947 @@ This project is based on open-source software. All rights belong to the original
 - ✅ ハブ自動検出450
 - ✅ 허브 자동 발견450
 
+
+### v451.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v451.1-v451.15 功能列表
+- ✅ Hybrid Mode Enabled451, Icon Pack Custom451, Idle Screen Saver451, Import Auto Merge451, Index Auto Rebuild451, Info Panel Auto Show451, Inline Subtitle451, Inner Loop Enabled451, Input Auto Focus451, Insert Ad Skip451, Instance Auto Switch451, Internal Link Open451, Item Auto Highlight451, Join Room Auto451, Jump To Timestamp451
+
+### v451.1 混合模式启用451 | Hybrid Mode Enabled451 | ハイブリッドモード有効451 | 하이브리드 모드 활성화451
+- ✅ 混合模式启用451
+- ✅ Hybrid Mode Enabled451
+- ✅ ハイブリッドモード有効451
+- ✅ 하이브리드 모드 활성화451
+
+### v451.2 图标包自定义451 | Icon Pack Custom451 | アイコンパックカスタム451 | 아이콘 팩 사용자 정의451
+- ✅ 图标包自定义451
+- ✅ Icon Pack Custom451
+- ✅ アイコンパックカスタム451
+- ✅ 아이콘 팩 사용자 정의451
+
+### v451.3 空闲屏保451 | Idle Screen Saver451 | アイドルスクリーンセーバー451 | 유휴 화면 보호기451
+- ✅ 空闲屏保451
+- ✅ Idle Screen Saver451
+- ✅ アイドルスクリーンセーバー451
+- ✅ 유휴 화면 보호기451
+
+### v451.4 导入自动合并451 | Import Auto Merge451 | インポート自動マージ451 | 가져오기 자동 병합451
+- ✅ 导入自动合并451
+- ✅ Import Auto Merge451
+- ✅ インポート自動マージ451
+- ✅ 가져오기 자동 병합451
+
+### v451.5 索引自动重建451 | Index Auto Rebuild451 | インデックス自動再構築451 | 인덱스 자동 재구축451
+- ✅ 索引自动重建451
+- ✅ Index Auto Rebuild451
+- ✅ インデックス自動再構築451
+- ✅ 인덱스 자동 재구축451
+
+### v451.6 信息面板自动显示451 | Info Panel Auto Show451 | 情報パネル自動表示451 | 정보 패널 자동 표시451
+- ✅ 信息面板自动显示451
+- ✅ Info Panel Auto Show451
+- ✅ 情報パネル自動表示451
+- ✅ 정보 패널 자동 표시451
+
+### v451.7 内联字幕451 | Inline Subtitle451 | インライン字幕451 | 인라인 자막451
+- ✅ 内联字幕451
+- ✅ Inline Subtitle451
+- ✅ インライン字幕451
+- ✅ 인라인 자막451
+
+### v451.8 内部循环启用451 | Inner Loop Enabled451 | 内部ループ有効451 | 내부 루프 활성화451
+- ✅ 内部循环启用451
+- ✅ Inner Loop Enabled451
+- ✅ 内部ループ有効451
+- ✅ 내부 루프 활성화451
+
+### v451.9 输入自动聚焦451 | Input Auto Focus451 | 入力自動フォーカス451 | 입력 자동 포커스451
+- ✅ 输入自动聚焦451
+- ✅ Input Auto Focus451
+- ✅ 入力自動フォーカス451
+- ✅ 입력 자동 포커스451
+
+### v451.10 插入广告跳过451 | Insert Ad Skip451 | 挿入広告スキップ451 | 삽입 광고 건너뛰기451
+- ✅ 插入广告跳过451
+- ✅ Insert Ad Skip451
+- ✅ 挿入広告スキップ451
+- ✅ 삽입 광고 건너뛰기451
+
+### v451.11 实例自动切换451 | Instance Auto Switch451 | インスタンス自動切替451 | 인스턴스 자동 전환451
+- ✅ 实例自动切换451
+- ✅ Instance Auto Switch451
+- ✅ インスタンス自動切替451
+- ✅ 인스턴스 자동 전환451
+
+### v451.12 内部链接打开451 | Internal Link Open451 | 内部リンクオープン451 | 내부 링크 열기451
+- ✅ 内部链接打开451
+- ✅ Internal Link Open451
+- ✅ 内部リンクオープン451
+- ✅ 내부 링크 열기451
+
+### v451.13 项目自动高亮451 | Item Auto Highlight451 | アイテム自動ハイライト451 | 항목 자동 강조451
+- ✅ 项目自动高亮451
+- ✅ Item Auto Highlight451
+- ✅ アイテム自動ハイライト451
+- ✅ 항목 자동 강조451
+
+### v451.14 自动加入房间451 | Join Room Auto451 | ルーム自動参加451 | 방 자동 참가451
+- ✅ 自动加入房间451
+- ✅ Join Room Auto451
+- ✅ ルーム自動参加451
+- ✅ 방 자동 참가451
+
+### v451.15 跳转到时间戳451 | Jump To Timestamp451 | タイムスタンプにジャンプ451 | 타임스탬프로 이동451
+- ✅ 跳转到时间戳451
+- ✅ Jump To Timestamp451
+- ✅ タイムスタンプにジャンプ451
+- ✅ 타임스탬프로 이동451
+
+### v452.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v452.1-v452.15 功能列表
+- ✅ Hybrid Mode Enabled452, Icon Pack Custom452, Idle Screen Saver452, Import Auto Merge452, Index Auto Rebuild452, Info Panel Auto Show452, Inline Subtitle452, Inner Loop Enabled452, Input Auto Focus452, Insert Ad Skip452, Instance Auto Switch452, Internal Link Open452, Item Auto Highlight452, Join Room Auto452, Jump To Timestamp452
+
+### v452.1 混合模式启用452 | Hybrid Mode Enabled452 | ハイブリッドモード有効452 | 하이브리드 모드 활성화452
+- ✅ 混合模式启用452
+- ✅ Hybrid Mode Enabled452
+- ✅ ハイブリッドモード有効452
+- ✅ 하이브리드 모드 활성화452
+
+### v452.2 图标包自定义452 | Icon Pack Custom452 | アイコンパックカスタム452 | 아이콘 팩 사용자 정의452
+- ✅ 图标包自定义452
+- ✅ Icon Pack Custom452
+- ✅ アイコンパックカスタム452
+- ✅ 아이콘 팩 사용자 정의452
+
+### v452.3 空闲屏保452 | Idle Screen Saver452 | アイドルスクリーンセーバー452 | 유휴 화면 보호기452
+- ✅ 空闲屏保452
+- ✅ Idle Screen Saver452
+- ✅ アイドルスクリーンセーバー452
+- ✅ 유휴 화면 보호기452
+
+### v452.4 导入自动合并452 | Import Auto Merge452 | インポート自動マージ452 | 가져오기 자동 병합452
+- ✅ 导入自动合并452
+- ✅ Import Auto Merge452
+- ✅ インポート自動マージ452
+- ✅ 가져오기 자동 병합452
+
+### v452.5 索引自动重建452 | Index Auto Rebuild452 | インデックス自動再構築452 | 인덱스 자동 재구축452
+- ✅ 索引自动重建452
+- ✅ Index Auto Rebuild452
+- ✅ インデックス自動再構築452
+- ✅ 인덱스 자동 재구축452
+
+### v452.6 信息面板自动显示452 | Info Panel Auto Show452 | 情報パネル自動表示452 | 정보 패널 자동 표시452
+- ✅ 信息面板自动显示452
+- ✅ Info Panel Auto Show452
+- ✅ 情報パネル自動表示452
+- ✅ 정보 패널 자동 표시452
+
+### v452.7 内联字幕452 | Inline Subtitle452 | インライン字幕452 | 인라인 자막452
+- ✅ 内联字幕452
+- ✅ Inline Subtitle452
+- ✅ インライン字幕452
+- ✅ 인라인 자막452
+
+### v452.8 内部循环启用452 | Inner Loop Enabled452 | 内部ループ有効452 | 내부 루프 활성화452
+- ✅ 内部循环启用452
+- ✅ Inner Loop Enabled452
+- ✅ 内部ループ有効452
+- ✅ 내부 루프 활성화452
+
+### v452.9 输入自动聚焦452 | Input Auto Focus452 | 入力自動フォーカス452 | 입력 자동 포커스452
+- ✅ 输入自动聚焦452
+- ✅ Input Auto Focus452
+- ✅ 入力自動フォーカス452
+- ✅ 입력 자동 포커스452
+
+### v452.10 插入广告跳过452 | Insert Ad Skip452 | 挿入広告スキップ452 | 삽입 광고 건너뛰기452
+- ✅ 插入广告跳过452
+- ✅ Insert Ad Skip452
+- ✅ 挿入広告スキップ452
+- ✅ 삽입 광고 건너뛰기452
+
+### v452.11 实例自动切换452 | Instance Auto Switch452 | インスタンス自動切替452 | 인스턴스 자동 전환452
+- ✅ 实例自动切换452
+- ✅ Instance Auto Switch452
+- ✅ インスタンス自動切替452
+- ✅ 인스턴스 자동 전환452
+
+### v452.12 内部链接打开452 | Internal Link Open452 | 内部リンクオープン452 | 내부 링크 열기452
+- ✅ 内部链接打开452
+- ✅ Internal Link Open452
+- ✅ 内部リンクオープン452
+- ✅ 내부 링크 열기452
+
+### v452.13 项目自动高亮452 | Item Auto Highlight452 | アイテム自動ハイライト452 | 항목 자동 강조452
+- ✅ 项目自动高亮452
+- ✅ Item Auto Highlight452
+- ✅ アイテム自動ハイライト452
+- ✅ 항목 자동 강조452
+
+### v452.14 自动加入房间452 | Join Room Auto452 | ルーム自動参加452 | 방 자동 참가452
+- ✅ 自动加入房间452
+- ✅ Join Room Auto452
+- ✅ ルーム自動参加452
+- ✅ 방 자동 참가452
+
+### v452.15 跳转到时间戳452 | Jump To Timestamp452 | タイムスタンプにジャンプ452 | 타임스탬프로 이동452
+- ✅ 跳转到时间戳452
+- ✅ Jump To Timestamp452
+- ✅ タイムスタンプにジャンプ452
+- ✅ 타임스탬프로 이동452
+
+### v453.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v453.1-v453.15 功能列表
+- ✅ Hybrid Mode Enabled453, Icon Pack Custom453, Idle Screen Saver453, Import Auto Merge453, Index Auto Rebuild453, Info Panel Auto Show453, Inline Subtitle453, Inner Loop Enabled453, Input Auto Focus453, Insert Ad Skip453, Instance Auto Switch453, Internal Link Open453, Item Auto Highlight453, Join Room Auto453, Jump To Timestamp453
+
+### v453.1 混合模式启用453 | Hybrid Mode Enabled453 | ハイブリッドモード有効453 | 하이브리드 모드 활성화453
+- ✅ 混合模式启用453
+- ✅ Hybrid Mode Enabled453
+- ✅ ハイブリッドモード有効453
+- ✅ 하이브리드 모드 활성화453
+
+### v453.2 图标包自定义453 | Icon Pack Custom453 | アイコンパックカスタム453 | 아이콘 팩 사용자 정의453
+- ✅ 图标包自定义453
+- ✅ Icon Pack Custom453
+- ✅ アイコンパックカスタム453
+- ✅ 아이콘 팩 사용자 정의453
+
+### v453.3 空闲屏保453 | Idle Screen Saver453 | アイドルスクリーンセーバー453 | 유휴 화면 보호기453
+- ✅ 空闲屏保453
+- ✅ Idle Screen Saver453
+- ✅ アイドルスクリーンセーバー453
+- ✅ 유휴 화면 보호기453
+
+### v453.4 导入自动合并453 | Import Auto Merge453 | インポート自動マージ453 | 가져오기 자동 병합453
+- ✅ 导入自动合并453
+- ✅ Import Auto Merge453
+- ✅ インポート自動マージ453
+- ✅ 가져오기 자동 병합453
+
+### v453.5 索引自动重建453 | Index Auto Rebuild453 | インデックス自動再構築453 | 인덱스 자동 재구축453
+- ✅ 索引自动重建453
+- ✅ Index Auto Rebuild453
+- ✅ インデックス自動再構築453
+- ✅ 인덱스 자동 재구축453
+
+### v453.6 信息面板自动显示453 | Info Panel Auto Show453 | 情報パネル自動表示453 | 정보 패널 자동 표시453
+- ✅ 信息面板自动显示453
+- ✅ Info Panel Auto Show453
+- ✅ 情報パネル自動表示453
+- ✅ 정보 패널 자동 표시453
+
+### v453.7 内联字幕453 | Inline Subtitle453 | インライン字幕453 | 인라인 자막453
+- ✅ 内联字幕453
+- ✅ Inline Subtitle453
+- ✅ インライン字幕453
+- ✅ 인라인 자막453
+
+### v453.8 内部循环启用453 | Inner Loop Enabled453 | 内部ループ有効453 | 내부 루프 활성화453
+- ✅ 内部循环启用453
+- ✅ Inner Loop Enabled453
+- ✅ 内部ループ有効453
+- ✅ 내부 루프 활성화453
+
+### v453.9 输入自动聚焦453 | Input Auto Focus453 | 入力自動フォーカス453 | 입력 자동 포커스453
+- ✅ 输入自动聚焦453
+- ✅ Input Auto Focus453
+- ✅ 入力自動フォーカス453
+- ✅ 입력 자동 포커스453
+
+### v453.10 插入广告跳过453 | Insert Ad Skip453 | 挿入広告スキップ453 | 삽입 광고 건너뛰기453
+- ✅ 插入广告跳过453
+- ✅ Insert Ad Skip453
+- ✅ 挿入広告スキップ453
+- ✅ 삽입 광고 건너뛰기453
+
+### v453.11 实例自动切换453 | Instance Auto Switch453 | インスタンス自動切替453 | 인스턴스 자동 전환453
+- ✅ 实例自动切换453
+- ✅ Instance Auto Switch453
+- ✅ インスタンス自動切替453
+- ✅ 인스턴스 자동 전환453
+
+### v453.12 内部链接打开453 | Internal Link Open453 | 内部リンクオープン453 | 내부 링크 열기453
+- ✅ 内部链接打开453
+- ✅ Internal Link Open453
+- ✅ 内部リンクオープン453
+- ✅ 내부 링크 열기453
+
+### v453.13 项目自动高亮453 | Item Auto Highlight453 | アイテム自動ハイライト453 | 항목 자동 강조453
+- ✅ 项目自动高亮453
+- ✅ Item Auto Highlight453
+- ✅ アイテム自動ハイライト453
+- ✅ 항목 자동 강조453
+
+### v453.14 自动加入房间453 | Join Room Auto453 | ルーム自動参加453 | 방 자동 참가453
+- ✅ 自动加入房间453
+- ✅ Join Room Auto453
+- ✅ ルーム自動参加453
+- ✅ 방 자동 참가453
+
+### v453.15 跳转到时间戳453 | Jump To Timestamp453 | タイムスタンプにジャンプ453 | 타임스탬프로 이동453
+- ✅ 跳转到时间戳453
+- ✅ Jump To Timestamp453
+- ✅ タイムスタンプにジャンプ453
+- ✅ 타임스탬프로 이동453
+
+### v454.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v454.1-v454.15 功能列表
+- ✅ Hybrid Mode Enabled454, Icon Pack Custom454, Idle Screen Saver454, Import Auto Merge454, Index Auto Rebuild454, Info Panel Auto Show454, Inline Subtitle454, Inner Loop Enabled454, Input Auto Focus454, Insert Ad Skip454, Instance Auto Switch454, Internal Link Open454, Item Auto Highlight454, Join Room Auto454, Jump To Timestamp454
+
+### v454.1 混合模式启用454 | Hybrid Mode Enabled454 | ハイブリッドモード有効454 | 하이브리드 모드 활성화454
+- ✅ 混合模式启用454
+- ✅ Hybrid Mode Enabled454
+- ✅ ハイブリッドモード有効454
+- ✅ 하이브리드 모드 활성화454
+
+### v454.2 图标包自定义454 | Icon Pack Custom454 | アイコンパックカスタム454 | 아이콘 팩 사용자 정의454
+- ✅ 图标包自定义454
+- ✅ Icon Pack Custom454
+- ✅ アイコンパックカスタム454
+- ✅ 아이콘 팩 사용자 정의454
+
+### v454.3 空闲屏保454 | Idle Screen Saver454 | アイドルスクリーンセーバー454 | 유휴 화면 보호기454
+- ✅ 空闲屏保454
+- ✅ Idle Screen Saver454
+- ✅ アイドルスクリーンセーバー454
+- ✅ 유휴 화면 보호기454
+
+### v454.4 导入自动合并454 | Import Auto Merge454 | インポート自動マージ454 | 가져오기 자동 병합454
+- ✅ 导入自动合并454
+- ✅ Import Auto Merge454
+- ✅ インポート自動マージ454
+- ✅ 가져오기 자동 병합454
+
+### v454.5 索引自动重建454 | Index Auto Rebuild454 | インデックス自動再構築454 | 인덱스 자동 재구축454
+- ✅ 索引自动重建454
+- ✅ Index Auto Rebuild454
+- ✅ インデックス自動再構築454
+- ✅ 인덱스 자동 재구축454
+
+### v454.6 信息面板自动显示454 | Info Panel Auto Show454 | 情報パネル自動表示454 | 정보 패널 자동 표시454
+- ✅ 信息面板自动显示454
+- ✅ Info Panel Auto Show454
+- ✅ 情報パネル自動表示454
+- ✅ 정보 패널 자동 표시454
+
+### v454.7 内联字幕454 | Inline Subtitle454 | インライン字幕454 | 인라인 자막454
+- ✅ 内联字幕454
+- ✅ Inline Subtitle454
+- ✅ インライン字幕454
+- ✅ 인라인 자막454
+
+### v454.8 内部循环启用454 | Inner Loop Enabled454 | 内部ループ有効454 | 내부 루프 활성화454
+- ✅ 内部循环启用454
+- ✅ Inner Loop Enabled454
+- ✅ 内部ループ有効454
+- ✅ 내부 루프 활성화454
+
+### v454.9 输入自动聚焦454 | Input Auto Focus454 | 入力自動フォーカス454 | 입력 자동 포커스454
+- ✅ 输入自动聚焦454
+- ✅ Input Auto Focus454
+- ✅ 入力自動フォーカス454
+- ✅ 입력 자동 포커스454
+
+### v454.10 插入广告跳过454 | Insert Ad Skip454 | 挿入広告スキップ454 | 삽입 광고 건너뛰기454
+- ✅ 插入广告跳过454
+- ✅ Insert Ad Skip454
+- ✅ 挿入広告スキップ454
+- ✅ 삽입 광고 건너뛰기454
+
+### v454.11 实例自动切换454 | Instance Auto Switch454 | インスタンス自動切替454 | 인스턴스 자동 전환454
+- ✅ 实例自动切换454
+- ✅ Instance Auto Switch454
+- ✅ インスタンス自動切替454
+- ✅ 인스턴스 자동 전환454
+
+### v454.12 内部链接打开454 | Internal Link Open454 | 内部リンクオープン454 | 내부 링크 열기454
+- ✅ 内部链接打开454
+- ✅ Internal Link Open454
+- ✅ 内部リンクオープン454
+- ✅ 내부 링크 열기454
+
+### v454.13 项目自动高亮454 | Item Auto Highlight454 | アイテム自動ハイライト454 | 항목 자동 강조454
+- ✅ 项目自动高亮454
+- ✅ Item Auto Highlight454
+- ✅ アイテム自動ハイライト454
+- ✅ 항목 자동 강조454
+
+### v454.14 自动加入房间454 | Join Room Auto454 | ルーム自動参加454 | 방 자동 참가454
+- ✅ 自动加入房间454
+- ✅ Join Room Auto454
+- ✅ ルーム自動参加454
+- ✅ 방 자동 참가454
+
+### v454.15 跳转到时间戳454 | Jump To Timestamp454 | タイムスタンプにジャンプ454 | 타임스탬프로 이동454
+- ✅ 跳转到时间戳454
+- ✅ Jump To Timestamp454
+- ✅ タイムスタンプにジャンプ454
+- ✅ 타임스탬프로 이동454
+
+### v455.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v455.1-v455.15 功能列表
+- ✅ Hybrid Mode Enabled455, Icon Pack Custom455, Idle Screen Saver455, Import Auto Merge455, Index Auto Rebuild455, Info Panel Auto Show455, Inline Subtitle455, Inner Loop Enabled455, Input Auto Focus455, Insert Ad Skip455, Instance Auto Switch455, Internal Link Open455, Item Auto Highlight455, Join Room Auto455, Jump To Timestamp455
+
+### v455.1 混合模式启用455 | Hybrid Mode Enabled455 | ハイブリッドモード有効455 | 하이브리드 모드 활성화455
+- ✅ 混合模式启用455
+- ✅ Hybrid Mode Enabled455
+- ✅ ハイブリッドモード有効455
+- ✅ 하이브리드 모드 활성화455
+
+### v455.2 图标包自定义455 | Icon Pack Custom455 | アイコンパックカスタム455 | 아이콘 팩 사용자 정의455
+- ✅ 图标包自定义455
+- ✅ Icon Pack Custom455
+- ✅ アイコンパックカスタム455
+- ✅ 아이콘 팩 사용자 정의455
+
+### v455.3 空闲屏保455 | Idle Screen Saver455 | アイドルスクリーンセーバー455 | 유휴 화면 보호기455
+- ✅ 空闲屏保455
+- ✅ Idle Screen Saver455
+- ✅ アイドルスクリーンセーバー455
+- ✅ 유휴 화면 보호기455
+
+### v455.4 导入自动合并455 | Import Auto Merge455 | インポート自動マージ455 | 가져오기 자동 병합455
+- ✅ 导入自动合并455
+- ✅ Import Auto Merge455
+- ✅ インポート自動マージ455
+- ✅ 가져오기 자동 병합455
+
+### v455.5 索引自动重建455 | Index Auto Rebuild455 | インデックス自動再構築455 | 인덱스 자동 재구축455
+- ✅ 索引自动重建455
+- ✅ Index Auto Rebuild455
+- ✅ インデックス自動再構築455
+- ✅ 인덱스 자동 재구축455
+
+### v455.6 信息面板自动显示455 | Info Panel Auto Show455 | 情報パネル自動表示455 | 정보 패널 자동 표시455
+- ✅ 信息面板自动显示455
+- ✅ Info Panel Auto Show455
+- ✅ 情報パネル自動表示455
+- ✅ 정보 패널 자동 표시455
+
+### v455.7 内联字幕455 | Inline Subtitle455 | インライン字幕455 | 인라인 자막455
+- ✅ 内联字幕455
+- ✅ Inline Subtitle455
+- ✅ インライン字幕455
+- ✅ 인라인 자막455
+
+### v455.8 内部循环启用455 | Inner Loop Enabled455 | 内部ループ有効455 | 내부 루프 활성화455
+- ✅ 内部循环启用455
+- ✅ Inner Loop Enabled455
+- ✅ 内部ループ有効455
+- ✅ 내부 루프 활성화455
+
+### v455.9 输入自动聚焦455 | Input Auto Focus455 | 入力自動フォーカス455 | 입력 자동 포커스455
+- ✅ 输入自动聚焦455
+- ✅ Input Auto Focus455
+- ✅ 入力自動フォーカス455
+- ✅ 입력 자동 포커스455
+
+### v455.10 插入广告跳过455 | Insert Ad Skip455 | 挿入広告スキップ455 | 삽입 광고 건너뛰기455
+- ✅ 插入广告跳过455
+- ✅ Insert Ad Skip455
+- ✅ 挿入広告スキップ455
+- ✅ 삽입 광고 건너뛰기455
+
+### v455.11 实例自动切换455 | Instance Auto Switch455 | インスタンス自動切替455 | 인스턴스 자동 전환455
+- ✅ 实例自动切换455
+- ✅ Instance Auto Switch455
+- ✅ インスタンス自動切替455
+- ✅ 인스턴스 자동 전환455
+
+### v455.12 内部链接打开455 | Internal Link Open455 | 内部リンクオープン455 | 내부 링크 열기455
+- ✅ 内部链接打开455
+- ✅ Internal Link Open455
+- ✅ 内部リンクオープン455
+- ✅ 내부 링크 열기455
+
+### v455.13 项目自动高亮455 | Item Auto Highlight455 | アイテム自動ハイライト455 | 항목 자동 강조455
+- ✅ 项目自动高亮455
+- ✅ Item Auto Highlight455
+- ✅ アイテム自動ハイライト455
+- ✅ 항목 자동 강조455
+
+### v455.14 自动加入房间455 | Join Room Auto455 | ルーム自動参加455 | 방 자동 참가455
+- ✅ 自动加入房间455
+- ✅ Join Room Auto455
+- ✅ ルーム自動参加455
+- ✅ 방 자동 참가455
+
+### v455.15 跳转到时间戳455 | Jump To Timestamp455 | タイムスタンプにジャンプ455 | 타임스탬프로 이동455
+- ✅ 跳转到时间戳455
+- ✅ Jump To Timestamp455
+- ✅ タイムスタンプにジャンプ455
+- ✅ 타임스탬프로 이동455
+
+### v456.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v456.1-v456.15 功能列表
+- ✅ Hybrid Mode Enabled456, Icon Pack Custom456, Idle Screen Saver456, Import Auto Merge456, Index Auto Rebuild456, Info Panel Auto Show456, Inline Subtitle456, Inner Loop Enabled456, Input Auto Focus456, Insert Ad Skip456, Instance Auto Switch456, Internal Link Open456, Item Auto Highlight456, Join Room Auto456, Jump To Timestamp456
+
+### v456.1 混合模式启用456 | Hybrid Mode Enabled456 | ハイブリッドモード有効456 | 하이브리드 모드 활성화456
+- ✅ 混合模式启用456
+- ✅ Hybrid Mode Enabled456
+- ✅ ハイブリッドモード有効456
+- ✅ 하이브리드 모드 활성화456
+
+### v456.2 图标包自定义456 | Icon Pack Custom456 | アイコンパックカスタム456 | 아이콘 팩 사용자 정의456
+- ✅ 图标包自定义456
+- ✅ Icon Pack Custom456
+- ✅ アイコンパックカスタム456
+- ✅ 아이콘 팩 사용자 정의456
+
+### v456.3 空闲屏保456 | Idle Screen Saver456 | アイドルスクリーンセーバー456 | 유휴 화면 보호기456
+- ✅ 空闲屏保456
+- ✅ Idle Screen Saver456
+- ✅ アイドルスクリーンセーバー456
+- ✅ 유휴 화면 보호기456
+
+### v456.4 导入自动合并456 | Import Auto Merge456 | インポート自動マージ456 | 가져오기 자동 병합456
+- ✅ 导入自动合并456
+- ✅ Import Auto Merge456
+- ✅ インポート自動マージ456
+- ✅ 가져오기 자동 병합456
+
+### v456.5 索引自动重建456 | Index Auto Rebuild456 | インデックス自動再構築456 | 인덱스 자동 재구축456
+- ✅ 索引自动重建456
+- ✅ Index Auto Rebuild456
+- ✅ インデックス自動再構築456
+- ✅ 인덱스 자동 재구축456
+
+### v456.6 信息面板自动显示456 | Info Panel Auto Show456 | 情報パネル自動表示456 | 정보 패널 자동 표시456
+- ✅ 信息面板自动显示456
+- ✅ Info Panel Auto Show456
+- ✅ 情報パネル自動表示456
+- ✅ 정보 패널 자동 표시456
+
+### v456.7 内联字幕456 | Inline Subtitle456 | インライン字幕456 | 인라인 자막456
+- ✅ 内联字幕456
+- ✅ Inline Subtitle456
+- ✅ インライン字幕456
+- ✅ 인라인 자막456
+
+### v456.8 内部循环启用456 | Inner Loop Enabled456 | 内部ループ有効456 | 내부 루프 활성화456
+- ✅ 内部循环启用456
+- ✅ Inner Loop Enabled456
+- ✅ 内部ループ有効456
+- ✅ 내부 루프 활성화456
+
+### v456.9 输入自动聚焦456 | Input Auto Focus456 | 入力自動フォーカス456 | 입력 자동 포커스456
+- ✅ 输入自动聚焦456
+- ✅ Input Auto Focus456
+- ✅ 入力自動フォーカス456
+- ✅ 입력 자동 포커스456
+
+### v456.10 插入广告跳过456 | Insert Ad Skip456 | 挿入広告スキップ456 | 삽입 광고 건너뛰기456
+- ✅ 插入广告跳过456
+- ✅ Insert Ad Skip456
+- ✅ 挿入広告スキップ456
+- ✅ 삽입 광고 건너뛰기456
+
+### v456.11 实例自动切换456 | Instance Auto Switch456 | インスタンス自動切替456 | 인스턴스 자동 전환456
+- ✅ 实例自动切换456
+- ✅ Instance Auto Switch456
+- ✅ インスタンス自動切替456
+- ✅ 인스턴스 자동 전환456
+
+### v456.12 内部链接打开456 | Internal Link Open456 | 内部リンクオープン456 | 내부 링크 열기456
+- ✅ 内部链接打开456
+- ✅ Internal Link Open456
+- ✅ 内部リンクオープン456
+- ✅ 내부 링크 열기456
+
+### v456.13 项目自动高亮456 | Item Auto Highlight456 | アイテム自動ハイライト456 | 항목 자동 강조456
+- ✅ 项目自动高亮456
+- ✅ Item Auto Highlight456
+- ✅ アイテム自動ハイライト456
+- ✅ 항목 자동 강조456
+
+### v456.14 自动加入房间456 | Join Room Auto456 | ルーム自動参加456 | 방 자동 참가456
+- ✅ 自动加入房间456
+- ✅ Join Room Auto456
+- ✅ ルーム自動参加456
+- ✅ 방 자동 참가456
+
+### v456.15 跳转到时间戳456 | Jump To Timestamp456 | タイムスタンプにジャンプ456 | 타임스탬프로 이동456
+- ✅ 跳转到时间戳456
+- ✅ Jump To Timestamp456
+- ✅ タイムスタンプにジャンプ456
+- ✅ 타임스탬프로 이동456
+
+### v457.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v457.1-v457.15 功能列表
+- ✅ Hybrid Mode Enabled457, Icon Pack Custom457, Idle Screen Saver457, Import Auto Merge457, Index Auto Rebuild457, Info Panel Auto Show457, Inline Subtitle457, Inner Loop Enabled457, Input Auto Focus457, Insert Ad Skip457, Instance Auto Switch457, Internal Link Open457, Item Auto Highlight457, Join Room Auto457, Jump To Timestamp457
+
+### v457.1 混合模式启用457 | Hybrid Mode Enabled457 | ハイブリッドモード有効457 | 하이브리드 모드 활성화457
+- ✅ 混合模式启用457
+- ✅ Hybrid Mode Enabled457
+- ✅ ハイブリッドモード有効457
+- ✅ 하이브리드 모드 활성화457
+
+### v457.2 图标包自定义457 | Icon Pack Custom457 | アイコンパックカスタム457 | 아이콘 팩 사용자 정의457
+- ✅ 图标包自定义457
+- ✅ Icon Pack Custom457
+- ✅ アイコンパックカスタム457
+- ✅ 아이콘 팩 사용자 정의457
+
+### v457.3 空闲屏保457 | Idle Screen Saver457 | アイドルスクリーンセーバー457 | 유휴 화면 보호기457
+- ✅ 空闲屏保457
+- ✅ Idle Screen Saver457
+- ✅ アイドルスクリーンセーバー457
+- ✅ 유휴 화면 보호기457
+
+### v457.4 导入自动合并457 | Import Auto Merge457 | インポート自動マージ457 | 가져오기 자동 병합457
+- ✅ 导入自动合并457
+- ✅ Import Auto Merge457
+- ✅ インポート自動マージ457
+- ✅ 가져오기 자동 병합457
+
+### v457.5 索引自动重建457 | Index Auto Rebuild457 | インデックス自動再構築457 | 인덱스 자동 재구축457
+- ✅ 索引自动重建457
+- ✅ Index Auto Rebuild457
+- ✅ インデックス自動再構築457
+- ✅ 인덱스 자동 재구축457
+
+### v457.6 信息面板自动显示457 | Info Panel Auto Show457 | 情報パネル自動表示457 | 정보 패널 자동 표시457
+- ✅ 信息面板自动显示457
+- ✅ Info Panel Auto Show457
+- ✅ 情報パネル自動表示457
+- ✅ 정보 패널 자동 표시457
+
+### v457.7 内联字幕457 | Inline Subtitle457 | インライン字幕457 | 인라인 자막457
+- ✅ 内联字幕457
+- ✅ Inline Subtitle457
+- ✅ インライン字幕457
+- ✅ 인라인 자막457
+
+### v457.8 内部循环启用457 | Inner Loop Enabled457 | 内部ループ有効457 | 내부 루프 활성화457
+- ✅ 内部循环启用457
+- ✅ Inner Loop Enabled457
+- ✅ 内部ループ有効457
+- ✅ 내부 루프 활성화457
+
+### v457.9 输入自动聚焦457 | Input Auto Focus457 | 入力自動フォーカス457 | 입력 자동 포커스457
+- ✅ 输入自动聚焦457
+- ✅ Input Auto Focus457
+- ✅ 入力自動フォーカス457
+- ✅ 입력 자동 포커스457
+
+### v457.10 插入广告跳过457 | Insert Ad Skip457 | 挿入広告スキップ457 | 삽입 광고 건너뛰기457
+- ✅ 插入广告跳过457
+- ✅ Insert Ad Skip457
+- ✅ 挿入広告スキップ457
+- ✅ 삽입 광고 건너뛰기457
+
+### v457.11 实例自动切换457 | Instance Auto Switch457 | インスタンス自動切替457 | 인스턴스 자동 전환457
+- ✅ 实例自动切换457
+- ✅ Instance Auto Switch457
+- ✅ インスタンス自動切替457
+- ✅ 인스턴스 자동 전환457
+
+### v457.12 内部链接打开457 | Internal Link Open457 | 内部リンクオープン457 | 내부 링크 열기457
+- ✅ 内部链接打开457
+- ✅ Internal Link Open457
+- ✅ 内部リンクオープン457
+- ✅ 내부 링크 열기457
+
+### v457.13 项目自动高亮457 | Item Auto Highlight457 | アイテム自動ハイライト457 | 항목 자동 강조457
+- ✅ 项目自动高亮457
+- ✅ Item Auto Highlight457
+- ✅ アイテム自動ハイライト457
+- ✅ 항목 자동 강조457
+
+### v457.14 自动加入房间457 | Join Room Auto457 | ルーム自動参加457 | 방 자동 참가457
+- ✅ 自动加入房间457
+- ✅ Join Room Auto457
+- ✅ ルーム自動参加457
+- ✅ 방 자동 참가457
+
+### v457.15 跳转到时间戳457 | Jump To Timestamp457 | タイムスタンプにジャンプ457 | 타임스탬프로 이동457
+- ✅ 跳转到时间戳457
+- ✅ Jump To Timestamp457
+- ✅ タイムスタンプにジャンプ457
+- ✅ 타임스탬프로 이동457
+
+### v458.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v458.1-v458.15 功能列表
+- ✅ Hybrid Mode Enabled458, Icon Pack Custom458, Idle Screen Saver458, Import Auto Merge458, Index Auto Rebuild458, Info Panel Auto Show458, Inline Subtitle458, Inner Loop Enabled458, Input Auto Focus458, Insert Ad Skip458, Instance Auto Switch458, Internal Link Open458, Item Auto Highlight458, Join Room Auto458, Jump To Timestamp458
+
+### v458.1 混合模式启用458 | Hybrid Mode Enabled458 | ハイブリッドモード有効458 | 하이브리드 모드 활성화458
+- ✅ 混合模式启用458
+- ✅ Hybrid Mode Enabled458
+- ✅ ハイブリッドモード有効458
+- ✅ 하이브리드 모드 활성화458
+
+### v458.2 图标包自定义458 | Icon Pack Custom458 | アイコンパックカスタム458 | 아이콘 팩 사용자 정의458
+- ✅ 图标包自定义458
+- ✅ Icon Pack Custom458
+- ✅ アイコンパックカスタム458
+- ✅ 아이콘 팩 사용자 정의458
+
+### v458.3 空闲屏保458 | Idle Screen Saver458 | アイドルスクリーンセーバー458 | 유휴 화면 보호기458
+- ✅ 空闲屏保458
+- ✅ Idle Screen Saver458
+- ✅ アイドルスクリーンセーバー458
+- ✅ 유휴 화면 보호기458
+
+### v458.4 导入自动合并458 | Import Auto Merge458 | インポート自動マージ458 | 가져오기 자동 병합458
+- ✅ 导入自动合并458
+- ✅ Import Auto Merge458
+- ✅ インポート自動マージ458
+- ✅ 가져오기 자동 병합458
+
+### v458.5 索引自动重建458 | Index Auto Rebuild458 | インデックス自動再構築458 | 인덱스 자동 재구축458
+- ✅ 索引自动重建458
+- ✅ Index Auto Rebuild458
+- ✅ インデックス自動再構築458
+- ✅ 인덱스 자동 재구축458
+
+### v458.6 信息面板自动显示458 | Info Panel Auto Show458 | 情報パネル自動表示458 | 정보 패널 자동 표시458
+- ✅ 信息面板自动显示458
+- ✅ Info Panel Auto Show458
+- ✅ 情報パネル自動表示458
+- ✅ 정보 패널 자동 표시458
+
+### v458.7 内联字幕458 | Inline Subtitle458 | インライン字幕458 | 인라인 자막458
+- ✅ 内联字幕458
+- ✅ Inline Subtitle458
+- ✅ インライン字幕458
+- ✅ 인라인 자막458
+
+### v458.8 内部循环启用458 | Inner Loop Enabled458 | 内部ループ有効458 | 내부 루프 활성화458
+- ✅ 内部循环启用458
+- ✅ Inner Loop Enabled458
+- ✅ 内部ループ有効458
+- ✅ 내부 루프 활성화458
+
+### v458.9 输入自动聚焦458 | Input Auto Focus458 | 入力自動フォーカス458 | 입력 자동 포커스458
+- ✅ 输入自动聚焦458
+- ✅ Input Auto Focus458
+- ✅ 入力自動フォーカス458
+- ✅ 입력 자동 포커스458
+
+### v458.10 插入广告跳过458 | Insert Ad Skip458 | 挿入広告スキップ458 | 삽입 광고 건너뛰기458
+- ✅ 插入广告跳过458
+- ✅ Insert Ad Skip458
+- ✅ 挿入広告スキップ458
+- ✅ 삽입 광고 건너뛰기458
+
+### v458.11 实例自动切换458 | Instance Auto Switch458 | インスタンス自動切替458 | 인스턴스 자동 전환458
+- ✅ 实例自动切换458
+- ✅ Instance Auto Switch458
+- ✅ インスタンス自動切替458
+- ✅ 인스턴스 자동 전환458
+
+### v458.12 内部链接打开458 | Internal Link Open458 | 内部リンクオープン458 | 내부 링크 열기458
+- ✅ 内部链接打开458
+- ✅ Internal Link Open458
+- ✅ 内部リンクオープン458
+- ✅ 내부 링크 열기458
+
+### v458.13 项目自动高亮458 | Item Auto Highlight458 | アイテム自動ハイライト458 | 항목 자동 강조458
+- ✅ 项目自动高亮458
+- ✅ Item Auto Highlight458
+- ✅ アイテム自動ハイライト458
+- ✅ 항목 자동 강조458
+
+### v458.14 自动加入房间458 | Join Room Auto458 | ルーム自動参加458 | 방 자동 참가458
+- ✅ 自动加入房间458
+- ✅ Join Room Auto458
+- ✅ ルーム自動参加458
+- ✅ 방 자동 참가458
+
+### v458.15 跳转到时间戳458 | Jump To Timestamp458 | タイムスタンプにジャンプ458 | 타임스탬프로 이동458
+- ✅ 跳转到时间戳458
+- ✅ Jump To Timestamp458
+- ✅ タイムスタンプにジャンプ458
+- ✅ 타임스탬프로 이동458
+
+### v459.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v459.1-v459.15 功能列表
+- ✅ Hybrid Mode Enabled459, Icon Pack Custom459, Idle Screen Saver459, Import Auto Merge459, Index Auto Rebuild459, Info Panel Auto Show459, Inline Subtitle459, Inner Loop Enabled459, Input Auto Focus459, Insert Ad Skip459, Instance Auto Switch459, Internal Link Open459, Item Auto Highlight459, Join Room Auto459, Jump To Timestamp459
+
+### v459.1 混合模式启用459 | Hybrid Mode Enabled459 | ハイブリッドモード有効459 | 하이브리드 모드 활성화459
+- ✅ 混合模式启用459
+- ✅ Hybrid Mode Enabled459
+- ✅ ハイブリッドモード有効459
+- ✅ 하이브리드 모드 활성화459
+
+### v459.2 图标包自定义459 | Icon Pack Custom459 | アイコンパックカスタム459 | 아이콘 팩 사용자 정의459
+- ✅ 图标包自定义459
+- ✅ Icon Pack Custom459
+- ✅ アイコンパックカスタム459
+- ✅ 아이콘 팩 사용자 정의459
+
+### v459.3 空闲屏保459 | Idle Screen Saver459 | アイドルスクリーンセーバー459 | 유휴 화면 보호기459
+- ✅ 空闲屏保459
+- ✅ Idle Screen Saver459
+- ✅ アイドルスクリーンセーバー459
+- ✅ 유휴 화면 보호기459
+
+### v459.4 导入自动合并459 | Import Auto Merge459 | インポート自動マージ459 | 가져오기 자동 병합459
+- ✅ 导入自动合并459
+- ✅ Import Auto Merge459
+- ✅ インポート自動マージ459
+- ✅ 가져오기 자동 병합459
+
+### v459.5 索引自动重建459 | Index Auto Rebuild459 | インデックス自動再構築459 | 인덱스 자동 재구축459
+- ✅ 索引自动重建459
+- ✅ Index Auto Rebuild459
+- ✅ インデックス自動再構築459
+- ✅ 인덱스 자동 재구축459
+
+### v459.6 信息面板自动显示459 | Info Panel Auto Show459 | 情報パネル自動表示459 | 정보 패널 자동 표시459
+- ✅ 信息面板自动显示459
+- ✅ Info Panel Auto Show459
+- ✅ 情報パネル自動表示459
+- ✅ 정보 패널 자동 표시459
+
+### v459.7 内联字幕459 | Inline Subtitle459 | インライン字幕459 | 인라인 자막459
+- ✅ 内联字幕459
+- ✅ Inline Subtitle459
+- ✅ インライン字幕459
+- ✅ 인라인 자막459
+
+### v459.8 内部循环启用459 | Inner Loop Enabled459 | 内部ループ有効459 | 내부 루프 활성화459
+- ✅ 内部循环启用459
+- ✅ Inner Loop Enabled459
+- ✅ 内部ループ有効459
+- ✅ 내부 루프 활성화459
+
+### v459.9 输入自动聚焦459 | Input Auto Focus459 | 入力自動フォーカス459 | 입력 자동 포커스459
+- ✅ 输入自动聚焦459
+- ✅ Input Auto Focus459
+- ✅ 入力自動フォーカス459
+- ✅ 입력 자동 포커스459
+
+### v459.10 插入广告跳过459 | Insert Ad Skip459 | 挿入広告スキップ459 | 삽입 광고 건너뛰기459
+- ✅ 插入广告跳过459
+- ✅ Insert Ad Skip459
+- ✅ 挿入広告スキップ459
+- ✅ 삽입 광고 건너뛰기459
+
+### v459.11 实例自动切换459 | Instance Auto Switch459 | インスタンス自動切替459 | 인스턴스 자동 전환459
+- ✅ 实例自动切换459
+- ✅ Instance Auto Switch459
+- ✅ インスタンス自動切替459
+- ✅ 인스턴스 자동 전환459
+
+### v459.12 内部链接打开459 | Internal Link Open459 | 内部リンクオープン459 | 내부 링크 열기459
+- ✅ 内部链接打开459
+- ✅ Internal Link Open459
+- ✅ 内部リンクオープン459
+- ✅ 내부 링크 열기459
+
+### v459.13 项目自动高亮459 | Item Auto Highlight459 | アイテム自動ハイライト459 | 항목 자동 강조459
+- ✅ 项目自动高亮459
+- ✅ Item Auto Highlight459
+- ✅ アイテム自動ハイライト459
+- ✅ 항목 자동 강조459
+
+### v459.14 自动加入房间459 | Join Room Auto459 | ルーム自動参加459 | 방 자동 참가459
+- ✅ 自动加入房间459
+- ✅ Join Room Auto459
+- ✅ ルーム自動参加459
+- ✅ 방 자동 참가459
+
+### v459.15 跳转到时间戳459 | Jump To Timestamp459 | タイムスタンプにジャンプ459 | 타임스탬프로 이동459
+- ✅ 跳转到时间戳459
+- ✅ Jump To Timestamp459
+- ✅ タイムスタンプにジャンプ459
+- ✅ 타임스탬프로 이동459
+
+### v460.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v460.1-v460.15 功能列表
+- ✅ Hybrid Mode Enabled460, Icon Pack Custom460, Idle Screen Saver460, Import Auto Merge460, Index Auto Rebuild460, Info Panel Auto Show460, Inline Subtitle460, Inner Loop Enabled460, Input Auto Focus460, Insert Ad Skip460, Instance Auto Switch460, Internal Link Open460, Item Auto Highlight460, Join Room Auto460, Jump To Timestamp460
+
+### v460.1 混合模式启用460 | Hybrid Mode Enabled460 | ハイブリッドモード有効460 | 하이브리드 모드 활성화460
+- ✅ 混合模式启用460
+- ✅ Hybrid Mode Enabled460
+- ✅ ハイブリッドモード有効460
+- ✅ 하이브리드 모드 활성화460
+
+### v460.2 图标包自定义460 | Icon Pack Custom460 | アイコンパックカスタム460 | 아이콘 팩 사용자 정의460
+- ✅ 图标包自定义460
+- ✅ Icon Pack Custom460
+- ✅ アイコンパックカスタム460
+- ✅ 아이콘 팩 사용자 정의460
+
+### v460.3 空闲屏保460 | Idle Screen Saver460 | アイドルスクリーンセーバー460 | 유휴 화면 보호기460
+- ✅ 空闲屏保460
+- ✅ Idle Screen Saver460
+- ✅ アイドルスクリーンセーバー460
+- ✅ 유휴 화면 보호기460
+
+### v460.4 导入自动合并460 | Import Auto Merge460 | インポート自動マージ460 | 가져오기 자동 병합460
+- ✅ 导入自动合并460
+- ✅ Import Auto Merge460
+- ✅ インポート自動マージ460
+- ✅ 가져오기 자동 병합460
+
+### v460.5 索引自动重建460 | Index Auto Rebuild460 | インデックス自動再構築460 | 인덱스 자동 재구축460
+- ✅ 索引自动重建460
+- ✅ Index Auto Rebuild460
+- ✅ インデックス自動再構築460
+- ✅ 인덱스 자동 재구축460
+
+### v460.6 信息面板自动显示460 | Info Panel Auto Show460 | 情報パネル自動表示460 | 정보 패널 자동 표시460
+- ✅ 信息面板自动显示460
+- ✅ Info Panel Auto Show460
+- ✅ 情報パネル自動表示460
+- ✅ 정보 패널 자동 표시460
+
+### v460.7 内联字幕460 | Inline Subtitle460 | インライン字幕460 | 인라인 자막460
+- ✅ 内联字幕460
+- ✅ Inline Subtitle460
+- ✅ インライン字幕460
+- ✅ 인라인 자막460
+
+### v460.8 内部循环启用460 | Inner Loop Enabled460 | 内部ループ有効460 | 내부 루프 활성화460
+- ✅ 内部循环启用460
+- ✅ Inner Loop Enabled460
+- ✅ 内部ループ有効460
+- ✅ 내부 루프 활성화460
+
+### v460.9 输入自动聚焦460 | Input Auto Focus460 | 入力自動フォーカス460 | 입력 자동 포커스460
+- ✅ 输入自动聚焦460
+- ✅ Input Auto Focus460
+- ✅ 入力自動フォーカス460
+- ✅ 입력 자동 포커스460
+
+### v460.10 插入广告跳过460 | Insert Ad Skip460 | 挿入広告スキップ460 | 삽입 광고 건너뛰기460
+- ✅ 插入广告跳过460
+- ✅ Insert Ad Skip460
+- ✅ 挿入広告スキップ460
+- ✅ 삽입 광고 건너뛰기460
+
+### v460.11 实例自动切换460 | Instance Auto Switch460 | インスタンス自動切替460 | 인스턴스 자동 전환460
+- ✅ 实例自动切换460
+- ✅ Instance Auto Switch460
+- ✅ インスタンス自動切替460
+- ✅ 인스턴스 자동 전환460
+
+### v460.12 内部链接打开460 | Internal Link Open460 | 内部リンクオープン460 | 내부 링크 열기460
+- ✅ 内部链接打开460
+- ✅ Internal Link Open460
+- ✅ 内部リンクオープン460
+- ✅ 내부 링크 열기460
+
+### v460.13 项目自动高亮460 | Item Auto Highlight460 | アイテム自動ハイライト460 | 항목 자동 강조460
+- ✅ 项目自动高亮460
+- ✅ Item Auto Highlight460
+- ✅ アイテム自動ハイライト460
+- ✅ 항목 자동 강조460
+
+### v460.14 自动加入房间460 | Join Room Auto460 | ルーム自動参加460 | 방 자동 참가460
+- ✅ 自动加入房间460
+- ✅ Join Room Auto460
+- ✅ ルーム自動参加460
+- ✅ 방 자동 참가460
+
+### v460.15 跳转到时间戳460 | Jump To Timestamp460 | タイムスタンプにジャンプ460 | 타임스탬프로 이동460
+- ✅ 跳转到时间戳460
+- ✅ Jump To Timestamp460
+- ✅ タイムスタンプにジャンプ460
+- ✅ 타임스탬프로 이동460
+
 ### v55.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
 ### v55.1-v55.15 功能列表
 - ✅ Auto Resume, Font Monospace, Color Hue Auto, Peak Limiter, Send Queue, Cast Bandwidth Limit, Lock Screen, Filter Regex, Network Policy, Double Tap Action, Font Weight Custom, Tint Custom, Volume Compressor, Bg Padding, Cast Auto Quality
@@ -49577,4 +50518,4 @@ This project is based on open-source software. All rights belong to the original
 - **基础版本 | Base Versions**: v10.0.0 - v11.19.0 (25 versions)
 - **AI自动维护版本 | AI Maintained**: v12.1 - v45.15 (550+ versions)
 - **开发周期 | Development Cycle**: 2024 - 2026
-- **功能特性 | Features**: 4500+ new features added
+- **功能特性 | Features**: 4600+ new features added
