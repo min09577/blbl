@@ -64848,6 +64848,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V970SMARTAUTOSUGGEST970, false)
         set(value) = prefs.edit().putBoolean(KEY_V970SMARTAUTOSUGGEST970, value).apply()
 
+    var v971smoothAutoScroll971: Boolean
+        get() = prefs.getBoolean(KEY_V971SMOOTHAUTOSCROLL971, false)
+        set(value) = prefs.edit().putBoolean(KEY_V971SMOOTHAUTOSCROLL971, value).apply()
+
+    var v971snapAutoGrid971: Boolean
+        get() = prefs.getBoolean(KEY_V971SNAPAUTOGRID971, false)
+        set(value) = prefs.edit().putBoolean(KEY_V971SNAPAUTOGRID971, value).apply()
+
+    var v971socketAutoKeepAlive971: Boolean
+        get() = prefs.getBoolean(KEY_V971SOCKETAUTOKEEPALIVE971, false)
+        set(value) = prefs.edit().putBoolean(KEY_V971SOCKETAUTOKEEPALIVE971, value).apply()
+
+    var v971softAutoKeyboard971: Boolean
+        get() = prefs.getBoolean(KEY_V971SOFTAUTOKEYBOARD971, false)
+        set(value) = prefs.edit().putBoolean(KEY_V971SOFTAUTOKEYBOARD971, value).apply()
+
+    var v971sortAutoAlgorithm971: Int
+        get() = prefs.getInt(KEY_V971SORTAUTOALGORITHM971, 0)
+        set(value) = prefs.edit().putInt(KEY_V971SORTAUTOALGORITHM971, value).apply()
+
+    var v971sourceAutoSelect971: Boolean
+        get() = prefs.getBoolean(KEY_V971SOURCEAUTOSELECT971, false)
+        set(value) = prefs.edit().putBoolean(KEY_V971SOURCEAUTOSELECT971, value).apply()
+
+    var v971spaceAutoCompact971: Boolean
+        get() = prefs.getBoolean(KEY_V971SPACEAUTOCOMPACT971, false)
+        set(value) = prefs.edit().putBoolean(KEY_V971SPACEAUTOCOMPACT971, value).apply()
+
+    var v971spanAutoColumn971: Boolean
+        get() = prefs.getBoolean(KEY_V971SPANAUTOCOLUMN971, false)
+        set(value) = prefs.edit().putBoolean(KEY_V971SPANAUTOCOLUMN971, value).apply()
+
+    var v971spawnAutoWorker971: Boolean
+        get() = prefs.getBoolean(KEY_V971SPAWNAUTOWORKER971, false)
+        set(value) = prefs.edit().putBoolean(KEY_V971SPAWNAUTOWORKER971, value).apply()
+
+    var v971speedAutoAdaptive971: Boolean
+        get() = prefs.getBoolean(KEY_V971SPEEDAUTOADAPTIVE971, false)
+        set(value) = prefs.edit().putBoolean(KEY_V971SPEEDAUTOADAPTIVE971, value).apply()
+
+    var v971splitAutoPane971: Boolean
+        get() = prefs.getBoolean(KEY_V971SPLITAUTOPANE971, false)
+        set(value) = prefs.edit().putBoolean(KEY_V971SPLITAUTOPANE971, value).apply()
+
+    var v971spotAutoLight971: Boolean
+        get() = prefs.getBoolean(KEY_V971SPOTAUTOLIGHT971, false)
+        set(value) = prefs.edit().putBoolean(KEY_V971SPOTAUTOLIGHT971, value).apply()
+
+    var v971stackAutoTrace971: Boolean
+        get() = prefs.getBoolean(KEY_V971STACKAUTOTRACE971, false)
+        set(value) = prefs.edit().putBoolean(KEY_V971STACKAUTOTRACE971, value).apply()
+
+    var v971stageAutoProgress971: Boolean
+        get() = prefs.getBoolean(KEY_V971STAGEAUTOPROGRESS971, false)
+        set(value) = prefs.edit().putBoolean(KEY_V971STAGEAUTOPROGRESS971, value).apply()
+
+    var v971standardAutoCompliance971: Boolean
+        get() = prefs.getBoolean(KEY_V971STANDARDAUTOCOMPLIANCE971, false)
+        set(value) = prefs.edit().putBoolean(KEY_V971STANDARDAUTOCOMPLIANCE971, value).apply()
+
+    var v972smoothAutoScroll972: Boolean
+        get() = prefs.getBoolean(KEY_V972SMOOTHAUTOSCROLL972, false)
+        set(value) = prefs.edit().putBoolean(KEY_V972SMOOTHAUTOSCROLL972, value).apply()
+
+    var v972snapAutoGrid972: Boolean
+        get() = prefs.getBoolean(KEY_V972SNAPAUTOGRID972, false)
+        set(value) = prefs.edit().putBoolean(KEY_V972SNAPAUTOGRID972, value).apply()
+
+    var v972socketAutoKeepAlive972: Boolean
+        get() = prefs.getBoolean(KEY_V972SOCKETAUTOKEEPALIVE972, false)
+        set(value) = prefs.edit().putBoolean(KEY_V972SOCKETAUTOKEEPALIVE972, value).apply()
+
+    var v972softAutoKeyboard972: Boolean
+        get() = prefs.getBoolean(KEY_V972SOFTAUTOKEYBOARD972, false)
+        set(value) = prefs.edit().putBoolean(KEY_V972SOFTAUTOKEYBOARD972, value).apply()
+
+    var v972sortAutoAlgorithm972: Int
+        get() = prefs.getInt(KEY_V972SORTAUTOALGORITHM972, 0)
+        set(value) = prefs.edit().putInt(KEY_V972SORTAUTOALGORITHM972, value).apply()
+
+    var v972sourceAutoSelect972: Boolean
+        get() = prefs.getBoolean(KEY_V972SOURCEAUTOSELECT972, false)
+        set(value) = prefs.edit().putBoolean(KEY_V972SOURCEAUTOSELECT972, value).apply()
+
+    var v972spaceAutoCompact972: Boolean
+        get() = prefs.getBoolean(KEY_V972SPACEAUTOCOMPACT972, false)
+        set(value) = prefs.edit().putBoolean(KEY_V972SPACEAUTOCOMPACT972, value).apply()
+
+    var v972spanAutoColumn972: Boolean
+        get() = prefs.getBoolean(KEY_V972SPANAUTOCOLUMN972, false)
+        set(value) = prefs.edit().putBoolean(KEY_V972SPANAUTOCOLUMN972, value).apply()
+
+    var v972spawnAutoWorker972: Boolean
+        get() = prefs.getBoolean(KEY_V972SPAWNAUTOWORKER972, false)
+        set(value) = prefs.edit().putBoolean(KEY_V972SPAWNAUTOWORKER972, value).apply()
+
+    var v972speedAutoAdaptive972: Boolean
+        get() = prefs.getBoolean(KEY_V972SPEEDAUTOADAPTIVE972, false)
+        set(value) = prefs.edit().putBoolean(KEY_V972SPEEDAUTOADAPTIVE972, value).apply()
+
+    var v972splitAutoPane972: Boolean
+        get() = prefs.getBoolean(KEY_V972SPLITAUTOPANE972, false)
+        set(value) = prefs.edit().putBoolean(KEY_V972SPLITAUTOPANE972, value).apply()
+
+    var v972spotAutoLight972: Boolean
+        get() = prefs.getBoolean(KEY_V972SPOTAUTOLIGHT972, false)
+        set(value) = prefs.edit().putBoolean(KEY_V972SPOTAUTOLIGHT972, value).apply()
+
+    var v972stackAutoTrace972: Boolean
+        get() = prefs.getBoolean(KEY_V972STACKAUTOTRACE972, false)
+        set(value) = prefs.edit().putBoolean(KEY_V972STACKAUTOTRACE972, value).apply()
+
+    var v972stageAutoProgress972: Boolean
+        get() = prefs.getBoolean(KEY_V972STAGEAUTOPROGRESS972, false)
+        set(value) = prefs.edit().putBoolean(KEY_V972STAGEAUTOPROGRESS972, value).apply()
+
+    var v972standardAutoCompliance972: Boolean
+        get() = prefs.getBoolean(KEY_V972STANDARDAUTOCOMPLIANCE972, false)
+        set(value) = prefs.edit().putBoolean(KEY_V972STANDARDAUTOCOMPLIANCE972, value).apply()
+
+    var v973smoothAutoScroll973: Boolean
+        get() = prefs.getBoolean(KEY_V973SMOOTHAUTOSCROLL973, false)
+        set(value) = prefs.edit().putBoolean(KEY_V973SMOOTHAUTOSCROLL973, value).apply()
+
+    var v973snapAutoGrid973: Boolean
+        get() = prefs.getBoolean(KEY_V973SNAPAUTOGRID973, false)
+        set(value) = prefs.edit().putBoolean(KEY_V973SNAPAUTOGRID973, value).apply()
+
+    var v973socketAutoKeepAlive973: Boolean
+        get() = prefs.getBoolean(KEY_V973SOCKETAUTOKEEPALIVE973, false)
+        set(value) = prefs.edit().putBoolean(KEY_V973SOCKETAUTOKEEPALIVE973, value).apply()
+
+    var v973softAutoKeyboard973: Boolean
+        get() = prefs.getBoolean(KEY_V973SOFTAUTOKEYBOARD973, false)
+        set(value) = prefs.edit().putBoolean(KEY_V973SOFTAUTOKEYBOARD973, value).apply()
+
+    var v973sortAutoAlgorithm973: Int
+        get() = prefs.getInt(KEY_V973SORTAUTOALGORITHM973, 0)
+        set(value) = prefs.edit().putInt(KEY_V973SORTAUTOALGORITHM973, value).apply()
+
+    var v973sourceAutoSelect973: Boolean
+        get() = prefs.getBoolean(KEY_V973SOURCEAUTOSELECT973, false)
+        set(value) = prefs.edit().putBoolean(KEY_V973SOURCEAUTOSELECT973, value).apply()
+
+    var v973spaceAutoCompact973: Boolean
+        get() = prefs.getBoolean(KEY_V973SPACEAUTOCOMPACT973, false)
+        set(value) = prefs.edit().putBoolean(KEY_V973SPACEAUTOCOMPACT973, value).apply()
+
+    var v973spanAutoColumn973: Boolean
+        get() = prefs.getBoolean(KEY_V973SPANAUTOCOLUMN973, false)
+        set(value) = prefs.edit().putBoolean(KEY_V973SPANAUTOCOLUMN973, value).apply()
+
+    var v973spawnAutoWorker973: Boolean
+        get() = prefs.getBoolean(KEY_V973SPAWNAUTOWORKER973, false)
+        set(value) = prefs.edit().putBoolean(KEY_V973SPAWNAUTOWORKER973, value).apply()
+
+    var v973speedAutoAdaptive973: Boolean
+        get() = prefs.getBoolean(KEY_V973SPEEDAUTOADAPTIVE973, false)
+        set(value) = prefs.edit().putBoolean(KEY_V973SPEEDAUTOADAPTIVE973, value).apply()
+
+    var v973splitAutoPane973: Boolean
+        get() = prefs.getBoolean(KEY_V973SPLITAUTOPANE973, false)
+        set(value) = prefs.edit().putBoolean(KEY_V973SPLITAUTOPANE973, value).apply()
+
+    var v973spotAutoLight973: Boolean
+        get() = prefs.getBoolean(KEY_V973SPOTAUTOLIGHT973, false)
+        set(value) = prefs.edit().putBoolean(KEY_V973SPOTAUTOLIGHT973, value).apply()
+
+    var v973stackAutoTrace973: Boolean
+        get() = prefs.getBoolean(KEY_V973STACKAUTOTRACE973, false)
+        set(value) = prefs.edit().putBoolean(KEY_V973STACKAUTOTRACE973, value).apply()
+
+    var v973stageAutoProgress973: Boolean
+        get() = prefs.getBoolean(KEY_V973STAGEAUTOPROGRESS973, false)
+        set(value) = prefs.edit().putBoolean(KEY_V973STAGEAUTOPROGRESS973, value).apply()
+
+    var v973standardAutoCompliance973: Boolean
+        get() = prefs.getBoolean(KEY_V973STANDARDAUTOCOMPLIANCE973, false)
+        set(value) = prefs.edit().putBoolean(KEY_V973STANDARDAUTOCOMPLIANCE973, value).apply()
+
+    var v974smoothAutoScroll974: Boolean
+        get() = prefs.getBoolean(KEY_V974SMOOTHAUTOSCROLL974, false)
+        set(value) = prefs.edit().putBoolean(KEY_V974SMOOTHAUTOSCROLL974, value).apply()
+
+    var v974snapAutoGrid974: Boolean
+        get() = prefs.getBoolean(KEY_V974SNAPAUTOGRID974, false)
+        set(value) = prefs.edit().putBoolean(KEY_V974SNAPAUTOGRID974, value).apply()
+
+    var v974socketAutoKeepAlive974: Boolean
+        get() = prefs.getBoolean(KEY_V974SOCKETAUTOKEEPALIVE974, false)
+        set(value) = prefs.edit().putBoolean(KEY_V974SOCKETAUTOKEEPALIVE974, value).apply()
+
+    var v974softAutoKeyboard974: Boolean
+        get() = prefs.getBoolean(KEY_V974SOFTAUTOKEYBOARD974, false)
+        set(value) = prefs.edit().putBoolean(KEY_V974SOFTAUTOKEYBOARD974, value).apply()
+
+    var v974sortAutoAlgorithm974: Int
+        get() = prefs.getInt(KEY_V974SORTAUTOALGORITHM974, 0)
+        set(value) = prefs.edit().putInt(KEY_V974SORTAUTOALGORITHM974, value).apply()
+
+    var v974sourceAutoSelect974: Boolean
+        get() = prefs.getBoolean(KEY_V974SOURCEAUTOSELECT974, false)
+        set(value) = prefs.edit().putBoolean(KEY_V974SOURCEAUTOSELECT974, value).apply()
+
+    var v974spaceAutoCompact974: Boolean
+        get() = prefs.getBoolean(KEY_V974SPACEAUTOCOMPACT974, false)
+        set(value) = prefs.edit().putBoolean(KEY_V974SPACEAUTOCOMPACT974, value).apply()
+
+    var v974spanAutoColumn974: Boolean
+        get() = prefs.getBoolean(KEY_V974SPANAUTOCOLUMN974, false)
+        set(value) = prefs.edit().putBoolean(KEY_V974SPANAUTOCOLUMN974, value).apply()
+
+    var v974spawnAutoWorker974: Boolean
+        get() = prefs.getBoolean(KEY_V974SPAWNAUTOWORKER974, false)
+        set(value) = prefs.edit().putBoolean(KEY_V974SPAWNAUTOWORKER974, value).apply()
+
+    var v974speedAutoAdaptive974: Boolean
+        get() = prefs.getBoolean(KEY_V974SPEEDAUTOADAPTIVE974, false)
+        set(value) = prefs.edit().putBoolean(KEY_V974SPEEDAUTOADAPTIVE974, value).apply()
+
+    var v974splitAutoPane974: Boolean
+        get() = prefs.getBoolean(KEY_V974SPLITAUTOPANE974, false)
+        set(value) = prefs.edit().putBoolean(KEY_V974SPLITAUTOPANE974, value).apply()
+
+    var v974spotAutoLight974: Boolean
+        get() = prefs.getBoolean(KEY_V974SPOTAUTOLIGHT974, false)
+        set(value) = prefs.edit().putBoolean(KEY_V974SPOTAUTOLIGHT974, value).apply()
+
+    var v974stackAutoTrace974: Boolean
+        get() = prefs.getBoolean(KEY_V974STACKAUTOTRACE974, false)
+        set(value) = prefs.edit().putBoolean(KEY_V974STACKAUTOTRACE974, value).apply()
+
+    var v974stageAutoProgress974: Boolean
+        get() = prefs.getBoolean(KEY_V974STAGEAUTOPROGRESS974, false)
+        set(value) = prefs.edit().putBoolean(KEY_V974STAGEAUTOPROGRESS974, value).apply()
+
+    var v974standardAutoCompliance974: Boolean
+        get() = prefs.getBoolean(KEY_V974STANDARDAUTOCOMPLIANCE974, false)
+        set(value) = prefs.edit().putBoolean(KEY_V974STANDARDAUTOCOMPLIANCE974, value).apply()
+
+    var v975smoothAutoScroll975: Boolean
+        get() = prefs.getBoolean(KEY_V975SMOOTHAUTOSCROLL975, false)
+        set(value) = prefs.edit().putBoolean(KEY_V975SMOOTHAUTOSCROLL975, value).apply()
+
+    var v975snapAutoGrid975: Boolean
+        get() = prefs.getBoolean(KEY_V975SNAPAUTOGRID975, false)
+        set(value) = prefs.edit().putBoolean(KEY_V975SNAPAUTOGRID975, value).apply()
+
+    var v975socketAutoKeepAlive975: Boolean
+        get() = prefs.getBoolean(KEY_V975SOCKETAUTOKEEPALIVE975, false)
+        set(value) = prefs.edit().putBoolean(KEY_V975SOCKETAUTOKEEPALIVE975, value).apply()
+
+    var v975softAutoKeyboard975: Boolean
+        get() = prefs.getBoolean(KEY_V975SOFTAUTOKEYBOARD975, false)
+        set(value) = prefs.edit().putBoolean(KEY_V975SOFTAUTOKEYBOARD975, value).apply()
+
+    var v975sortAutoAlgorithm975: Int
+        get() = prefs.getInt(KEY_V975SORTAUTOALGORITHM975, 0)
+        set(value) = prefs.edit().putInt(KEY_V975SORTAUTOALGORITHM975, value).apply()
+
+    var v975sourceAutoSelect975: Boolean
+        get() = prefs.getBoolean(KEY_V975SOURCEAUTOSELECT975, false)
+        set(value) = prefs.edit().putBoolean(KEY_V975SOURCEAUTOSELECT975, value).apply()
+
+    var v975spaceAutoCompact975: Boolean
+        get() = prefs.getBoolean(KEY_V975SPACEAUTOCOMPACT975, false)
+        set(value) = prefs.edit().putBoolean(KEY_V975SPACEAUTOCOMPACT975, value).apply()
+
+    var v975spanAutoColumn975: Boolean
+        get() = prefs.getBoolean(KEY_V975SPANAUTOCOLUMN975, false)
+        set(value) = prefs.edit().putBoolean(KEY_V975SPANAUTOCOLUMN975, value).apply()
+
+    var v975spawnAutoWorker975: Boolean
+        get() = prefs.getBoolean(KEY_V975SPAWNAUTOWORKER975, false)
+        set(value) = prefs.edit().putBoolean(KEY_V975SPAWNAUTOWORKER975, value).apply()
+
+    var v975speedAutoAdaptive975: Boolean
+        get() = prefs.getBoolean(KEY_V975SPEEDAUTOADAPTIVE975, false)
+        set(value) = prefs.edit().putBoolean(KEY_V975SPEEDAUTOADAPTIVE975, value).apply()
+
+    var v975splitAutoPane975: Boolean
+        get() = prefs.getBoolean(KEY_V975SPLITAUTOPANE975, false)
+        set(value) = prefs.edit().putBoolean(KEY_V975SPLITAUTOPANE975, value).apply()
+
+    var v975spotAutoLight975: Boolean
+        get() = prefs.getBoolean(KEY_V975SPOTAUTOLIGHT975, false)
+        set(value) = prefs.edit().putBoolean(KEY_V975SPOTAUTOLIGHT975, value).apply()
+
+    var v975stackAutoTrace975: Boolean
+        get() = prefs.getBoolean(KEY_V975STACKAUTOTRACE975, false)
+        set(value) = prefs.edit().putBoolean(KEY_V975STACKAUTOTRACE975, value).apply()
+
+    var v975stageAutoProgress975: Boolean
+        get() = prefs.getBoolean(KEY_V975STAGEAUTOPROGRESS975, false)
+        set(value) = prefs.edit().putBoolean(KEY_V975STAGEAUTOPROGRESS975, value).apply()
+
+    var v975standardAutoCompliance975: Boolean
+        get() = prefs.getBoolean(KEY_V975STANDARDAUTOCOMPLIANCE975, false)
+        set(value) = prefs.edit().putBoolean(KEY_V975STANDARDAUTOCOMPLIANCE975, value).apply()
+
+    var v976smoothAutoScroll976: Boolean
+        get() = prefs.getBoolean(KEY_V976SMOOTHAUTOSCROLL976, false)
+        set(value) = prefs.edit().putBoolean(KEY_V976SMOOTHAUTOSCROLL976, value).apply()
+
+    var v976snapAutoGrid976: Boolean
+        get() = prefs.getBoolean(KEY_V976SNAPAUTOGRID976, false)
+        set(value) = prefs.edit().putBoolean(KEY_V976SNAPAUTOGRID976, value).apply()
+
+    var v976socketAutoKeepAlive976: Boolean
+        get() = prefs.getBoolean(KEY_V976SOCKETAUTOKEEPALIVE976, false)
+        set(value) = prefs.edit().putBoolean(KEY_V976SOCKETAUTOKEEPALIVE976, value).apply()
+
+    var v976softAutoKeyboard976: Boolean
+        get() = prefs.getBoolean(KEY_V976SOFTAUTOKEYBOARD976, false)
+        set(value) = prefs.edit().putBoolean(KEY_V976SOFTAUTOKEYBOARD976, value).apply()
+
+    var v976sortAutoAlgorithm976: Int
+        get() = prefs.getInt(KEY_V976SORTAUTOALGORITHM976, 0)
+        set(value) = prefs.edit().putInt(KEY_V976SORTAUTOALGORITHM976, value).apply()
+
+    var v976sourceAutoSelect976: Boolean
+        get() = prefs.getBoolean(KEY_V976SOURCEAUTOSELECT976, false)
+        set(value) = prefs.edit().putBoolean(KEY_V976SOURCEAUTOSELECT976, value).apply()
+
+    var v976spaceAutoCompact976: Boolean
+        get() = prefs.getBoolean(KEY_V976SPACEAUTOCOMPACT976, false)
+        set(value) = prefs.edit().putBoolean(KEY_V976SPACEAUTOCOMPACT976, value).apply()
+
+    var v976spanAutoColumn976: Boolean
+        get() = prefs.getBoolean(KEY_V976SPANAUTOCOLUMN976, false)
+        set(value) = prefs.edit().putBoolean(KEY_V976SPANAUTOCOLUMN976, value).apply()
+
+    var v976spawnAutoWorker976: Boolean
+        get() = prefs.getBoolean(KEY_V976SPAWNAUTOWORKER976, false)
+        set(value) = prefs.edit().putBoolean(KEY_V976SPAWNAUTOWORKER976, value).apply()
+
+    var v976speedAutoAdaptive976: Boolean
+        get() = prefs.getBoolean(KEY_V976SPEEDAUTOADAPTIVE976, false)
+        set(value) = prefs.edit().putBoolean(KEY_V976SPEEDAUTOADAPTIVE976, value).apply()
+
+    var v976splitAutoPane976: Boolean
+        get() = prefs.getBoolean(KEY_V976SPLITAUTOPANE976, false)
+        set(value) = prefs.edit().putBoolean(KEY_V976SPLITAUTOPANE976, value).apply()
+
+    var v976spotAutoLight976: Boolean
+        get() = prefs.getBoolean(KEY_V976SPOTAUTOLIGHT976, false)
+        set(value) = prefs.edit().putBoolean(KEY_V976SPOTAUTOLIGHT976, value).apply()
+
+    var v976stackAutoTrace976: Boolean
+        get() = prefs.getBoolean(KEY_V976STACKAUTOTRACE976, false)
+        set(value) = prefs.edit().putBoolean(KEY_V976STACKAUTOTRACE976, value).apply()
+
+    var v976stageAutoProgress976: Boolean
+        get() = prefs.getBoolean(KEY_V976STAGEAUTOPROGRESS976, false)
+        set(value) = prefs.edit().putBoolean(KEY_V976STAGEAUTOPROGRESS976, value).apply()
+
+    var v976standardAutoCompliance976: Boolean
+        get() = prefs.getBoolean(KEY_V976STANDARDAUTOCOMPLIANCE976, false)
+        set(value) = prefs.edit().putBoolean(KEY_V976STANDARDAUTOCOMPLIANCE976, value).apply()
+
+    var v977smoothAutoScroll977: Boolean
+        get() = prefs.getBoolean(KEY_V977SMOOTHAUTOSCROLL977, false)
+        set(value) = prefs.edit().putBoolean(KEY_V977SMOOTHAUTOSCROLL977, value).apply()
+
+    var v977snapAutoGrid977: Boolean
+        get() = prefs.getBoolean(KEY_V977SNAPAUTOGRID977, false)
+        set(value) = prefs.edit().putBoolean(KEY_V977SNAPAUTOGRID977, value).apply()
+
+    var v977socketAutoKeepAlive977: Boolean
+        get() = prefs.getBoolean(KEY_V977SOCKETAUTOKEEPALIVE977, false)
+        set(value) = prefs.edit().putBoolean(KEY_V977SOCKETAUTOKEEPALIVE977, value).apply()
+
+    var v977softAutoKeyboard977: Boolean
+        get() = prefs.getBoolean(KEY_V977SOFTAUTOKEYBOARD977, false)
+        set(value) = prefs.edit().putBoolean(KEY_V977SOFTAUTOKEYBOARD977, value).apply()
+
+    var v977sortAutoAlgorithm977: Int
+        get() = prefs.getInt(KEY_V977SORTAUTOALGORITHM977, 0)
+        set(value) = prefs.edit().putInt(KEY_V977SORTAUTOALGORITHM977, value).apply()
+
+    var v977sourceAutoSelect977: Boolean
+        get() = prefs.getBoolean(KEY_V977SOURCEAUTOSELECT977, false)
+        set(value) = prefs.edit().putBoolean(KEY_V977SOURCEAUTOSELECT977, value).apply()
+
+    var v977spaceAutoCompact977: Boolean
+        get() = prefs.getBoolean(KEY_V977SPACEAUTOCOMPACT977, false)
+        set(value) = prefs.edit().putBoolean(KEY_V977SPACEAUTOCOMPACT977, value).apply()
+
+    var v977spanAutoColumn977: Boolean
+        get() = prefs.getBoolean(KEY_V977SPANAUTOCOLUMN977, false)
+        set(value) = prefs.edit().putBoolean(KEY_V977SPANAUTOCOLUMN977, value).apply()
+
+    var v977spawnAutoWorker977: Boolean
+        get() = prefs.getBoolean(KEY_V977SPAWNAUTOWORKER977, false)
+        set(value) = prefs.edit().putBoolean(KEY_V977SPAWNAUTOWORKER977, value).apply()
+
+    var v977speedAutoAdaptive977: Boolean
+        get() = prefs.getBoolean(KEY_V977SPEEDAUTOADAPTIVE977, false)
+        set(value) = prefs.edit().putBoolean(KEY_V977SPEEDAUTOADAPTIVE977, value).apply()
+
+    var v977splitAutoPane977: Boolean
+        get() = prefs.getBoolean(KEY_V977SPLITAUTOPANE977, false)
+        set(value) = prefs.edit().putBoolean(KEY_V977SPLITAUTOPANE977, value).apply()
+
+    var v977spotAutoLight977: Boolean
+        get() = prefs.getBoolean(KEY_V977SPOTAUTOLIGHT977, false)
+        set(value) = prefs.edit().putBoolean(KEY_V977SPOTAUTOLIGHT977, value).apply()
+
+    var v977stackAutoTrace977: Boolean
+        get() = prefs.getBoolean(KEY_V977STACKAUTOTRACE977, false)
+        set(value) = prefs.edit().putBoolean(KEY_V977STACKAUTOTRACE977, value).apply()
+
+    var v977stageAutoProgress977: Boolean
+        get() = prefs.getBoolean(KEY_V977STAGEAUTOPROGRESS977, false)
+        set(value) = prefs.edit().putBoolean(KEY_V977STAGEAUTOPROGRESS977, value).apply()
+
+    var v977standardAutoCompliance977: Boolean
+        get() = prefs.getBoolean(KEY_V977STANDARDAUTOCOMPLIANCE977, false)
+        set(value) = prefs.edit().putBoolean(KEY_V977STANDARDAUTOCOMPLIANCE977, value).apply()
+
+    var v978smoothAutoScroll978: Boolean
+        get() = prefs.getBoolean(KEY_V978SMOOTHAUTOSCROLL978, false)
+        set(value) = prefs.edit().putBoolean(KEY_V978SMOOTHAUTOSCROLL978, value).apply()
+
+    var v978snapAutoGrid978: Boolean
+        get() = prefs.getBoolean(KEY_V978SNAPAUTOGRID978, false)
+        set(value) = prefs.edit().putBoolean(KEY_V978SNAPAUTOGRID978, value).apply()
+
+    var v978socketAutoKeepAlive978: Boolean
+        get() = prefs.getBoolean(KEY_V978SOCKETAUTOKEEPALIVE978, false)
+        set(value) = prefs.edit().putBoolean(KEY_V978SOCKETAUTOKEEPALIVE978, value).apply()
+
+    var v978softAutoKeyboard978: Boolean
+        get() = prefs.getBoolean(KEY_V978SOFTAUTOKEYBOARD978, false)
+        set(value) = prefs.edit().putBoolean(KEY_V978SOFTAUTOKEYBOARD978, value).apply()
+
+    var v978sortAutoAlgorithm978: Int
+        get() = prefs.getInt(KEY_V978SORTAUTOALGORITHM978, 0)
+        set(value) = prefs.edit().putInt(KEY_V978SORTAUTOALGORITHM978, value).apply()
+
+    var v978sourceAutoSelect978: Boolean
+        get() = prefs.getBoolean(KEY_V978SOURCEAUTOSELECT978, false)
+        set(value) = prefs.edit().putBoolean(KEY_V978SOURCEAUTOSELECT978, value).apply()
+
+    var v978spaceAutoCompact978: Boolean
+        get() = prefs.getBoolean(KEY_V978SPACEAUTOCOMPACT978, false)
+        set(value) = prefs.edit().putBoolean(KEY_V978SPACEAUTOCOMPACT978, value).apply()
+
+    var v978spanAutoColumn978: Boolean
+        get() = prefs.getBoolean(KEY_V978SPANAUTOCOLUMN978, false)
+        set(value) = prefs.edit().putBoolean(KEY_V978SPANAUTOCOLUMN978, value).apply()
+
+    var v978spawnAutoWorker978: Boolean
+        get() = prefs.getBoolean(KEY_V978SPAWNAUTOWORKER978, false)
+        set(value) = prefs.edit().putBoolean(KEY_V978SPAWNAUTOWORKER978, value).apply()
+
+    var v978speedAutoAdaptive978: Boolean
+        get() = prefs.getBoolean(KEY_V978SPEEDAUTOADAPTIVE978, false)
+        set(value) = prefs.edit().putBoolean(KEY_V978SPEEDAUTOADAPTIVE978, value).apply()
+
+    var v978splitAutoPane978: Boolean
+        get() = prefs.getBoolean(KEY_V978SPLITAUTOPANE978, false)
+        set(value) = prefs.edit().putBoolean(KEY_V978SPLITAUTOPANE978, value).apply()
+
+    var v978spotAutoLight978: Boolean
+        get() = prefs.getBoolean(KEY_V978SPOTAUTOLIGHT978, false)
+        set(value) = prefs.edit().putBoolean(KEY_V978SPOTAUTOLIGHT978, value).apply()
+
+    var v978stackAutoTrace978: Boolean
+        get() = prefs.getBoolean(KEY_V978STACKAUTOTRACE978, false)
+        set(value) = prefs.edit().putBoolean(KEY_V978STACKAUTOTRACE978, value).apply()
+
+    var v978stageAutoProgress978: Boolean
+        get() = prefs.getBoolean(KEY_V978STAGEAUTOPROGRESS978, false)
+        set(value) = prefs.edit().putBoolean(KEY_V978STAGEAUTOPROGRESS978, value).apply()
+
+    var v978standardAutoCompliance978: Boolean
+        get() = prefs.getBoolean(KEY_V978STANDARDAUTOCOMPLIANCE978, false)
+        set(value) = prefs.edit().putBoolean(KEY_V978STANDARDAUTOCOMPLIANCE978, value).apply()
+
+    var v979smoothAutoScroll979: Boolean
+        get() = prefs.getBoolean(KEY_V979SMOOTHAUTOSCROLL979, false)
+        set(value) = prefs.edit().putBoolean(KEY_V979SMOOTHAUTOSCROLL979, value).apply()
+
+    var v979snapAutoGrid979: Boolean
+        get() = prefs.getBoolean(KEY_V979SNAPAUTOGRID979, false)
+        set(value) = prefs.edit().putBoolean(KEY_V979SNAPAUTOGRID979, value).apply()
+
+    var v979socketAutoKeepAlive979: Boolean
+        get() = prefs.getBoolean(KEY_V979SOCKETAUTOKEEPALIVE979, false)
+        set(value) = prefs.edit().putBoolean(KEY_V979SOCKETAUTOKEEPALIVE979, value).apply()
+
+    var v979softAutoKeyboard979: Boolean
+        get() = prefs.getBoolean(KEY_V979SOFTAUTOKEYBOARD979, false)
+        set(value) = prefs.edit().putBoolean(KEY_V979SOFTAUTOKEYBOARD979, value).apply()
+
+    var v979sortAutoAlgorithm979: Int
+        get() = prefs.getInt(KEY_V979SORTAUTOALGORITHM979, 0)
+        set(value) = prefs.edit().putInt(KEY_V979SORTAUTOALGORITHM979, value).apply()
+
+    var v979sourceAutoSelect979: Boolean
+        get() = prefs.getBoolean(KEY_V979SOURCEAUTOSELECT979, false)
+        set(value) = prefs.edit().putBoolean(KEY_V979SOURCEAUTOSELECT979, value).apply()
+
+    var v979spaceAutoCompact979: Boolean
+        get() = prefs.getBoolean(KEY_V979SPACEAUTOCOMPACT979, false)
+        set(value) = prefs.edit().putBoolean(KEY_V979SPACEAUTOCOMPACT979, value).apply()
+
+    var v979spanAutoColumn979: Boolean
+        get() = prefs.getBoolean(KEY_V979SPANAUTOCOLUMN979, false)
+        set(value) = prefs.edit().putBoolean(KEY_V979SPANAUTOCOLUMN979, value).apply()
+
+    var v979spawnAutoWorker979: Boolean
+        get() = prefs.getBoolean(KEY_V979SPAWNAUTOWORKER979, false)
+        set(value) = prefs.edit().putBoolean(KEY_V979SPAWNAUTOWORKER979, value).apply()
+
+    var v979speedAutoAdaptive979: Boolean
+        get() = prefs.getBoolean(KEY_V979SPEEDAUTOADAPTIVE979, false)
+        set(value) = prefs.edit().putBoolean(KEY_V979SPEEDAUTOADAPTIVE979, value).apply()
+
+    var v979splitAutoPane979: Boolean
+        get() = prefs.getBoolean(KEY_V979SPLITAUTOPANE979, false)
+        set(value) = prefs.edit().putBoolean(KEY_V979SPLITAUTOPANE979, value).apply()
+
+    var v979spotAutoLight979: Boolean
+        get() = prefs.getBoolean(KEY_V979SPOTAUTOLIGHT979, false)
+        set(value) = prefs.edit().putBoolean(KEY_V979SPOTAUTOLIGHT979, value).apply()
+
+    var v979stackAutoTrace979: Boolean
+        get() = prefs.getBoolean(KEY_V979STACKAUTOTRACE979, false)
+        set(value) = prefs.edit().putBoolean(KEY_V979STACKAUTOTRACE979, value).apply()
+
+    var v979stageAutoProgress979: Boolean
+        get() = prefs.getBoolean(KEY_V979STAGEAUTOPROGRESS979, false)
+        set(value) = prefs.edit().putBoolean(KEY_V979STAGEAUTOPROGRESS979, value).apply()
+
+    var v979standardAutoCompliance979: Boolean
+        get() = prefs.getBoolean(KEY_V979STANDARDAUTOCOMPLIANCE979, false)
+        set(value) = prefs.edit().putBoolean(KEY_V979STANDARDAUTOCOMPLIANCE979, value).apply()
+
+    var v980smoothAutoScroll980: Boolean
+        get() = prefs.getBoolean(KEY_V980SMOOTHAUTOSCROLL980, false)
+        set(value) = prefs.edit().putBoolean(KEY_V980SMOOTHAUTOSCROLL980, value).apply()
+
+    var v980snapAutoGrid980: Boolean
+        get() = prefs.getBoolean(KEY_V980SNAPAUTOGRID980, false)
+        set(value) = prefs.edit().putBoolean(KEY_V980SNAPAUTOGRID980, value).apply()
+
+    var v980socketAutoKeepAlive980: Boolean
+        get() = prefs.getBoolean(KEY_V980SOCKETAUTOKEEPALIVE980, false)
+        set(value) = prefs.edit().putBoolean(KEY_V980SOCKETAUTOKEEPALIVE980, value).apply()
+
+    var v980softAutoKeyboard980: Boolean
+        get() = prefs.getBoolean(KEY_V980SOFTAUTOKEYBOARD980, false)
+        set(value) = prefs.edit().putBoolean(KEY_V980SOFTAUTOKEYBOARD980, value).apply()
+
+    var v980sortAutoAlgorithm980: Int
+        get() = prefs.getInt(KEY_V980SORTAUTOALGORITHM980, 0)
+        set(value) = prefs.edit().putInt(KEY_V980SORTAUTOALGORITHM980, value).apply()
+
+    var v980sourceAutoSelect980: Boolean
+        get() = prefs.getBoolean(KEY_V980SOURCEAUTOSELECT980, false)
+        set(value) = prefs.edit().putBoolean(KEY_V980SOURCEAUTOSELECT980, value).apply()
+
+    var v980spaceAutoCompact980: Boolean
+        get() = prefs.getBoolean(KEY_V980SPACEAUTOCOMPACT980, false)
+        set(value) = prefs.edit().putBoolean(KEY_V980SPACEAUTOCOMPACT980, value).apply()
+
+    var v980spanAutoColumn980: Boolean
+        get() = prefs.getBoolean(KEY_V980SPANAUTOCOLUMN980, false)
+        set(value) = prefs.edit().putBoolean(KEY_V980SPANAUTOCOLUMN980, value).apply()
+
+    var v980spawnAutoWorker980: Boolean
+        get() = prefs.getBoolean(KEY_V980SPAWNAUTOWORKER980, false)
+        set(value) = prefs.edit().putBoolean(KEY_V980SPAWNAUTOWORKER980, value).apply()
+
+    var v980speedAutoAdaptive980: Boolean
+        get() = prefs.getBoolean(KEY_V980SPEEDAUTOADAPTIVE980, false)
+        set(value) = prefs.edit().putBoolean(KEY_V980SPEEDAUTOADAPTIVE980, value).apply()
+
+    var v980splitAutoPane980: Boolean
+        get() = prefs.getBoolean(KEY_V980SPLITAUTOPANE980, false)
+        set(value) = prefs.edit().putBoolean(KEY_V980SPLITAUTOPANE980, value).apply()
+
+    var v980spotAutoLight980: Boolean
+        get() = prefs.getBoolean(KEY_V980SPOTAUTOLIGHT980, false)
+        set(value) = prefs.edit().putBoolean(KEY_V980SPOTAUTOLIGHT980, value).apply()
+
+    var v980stackAutoTrace980: Boolean
+        get() = prefs.getBoolean(KEY_V980STACKAUTOTRACE980, false)
+        set(value) = prefs.edit().putBoolean(KEY_V980STACKAUTOTRACE980, value).apply()
+
+    var v980stageAutoProgress980: Boolean
+        get() = prefs.getBoolean(KEY_V980STAGEAUTOPROGRESS980, false)
+        set(value) = prefs.edit().putBoolean(KEY_V980STAGEAUTOPROGRESS980, value).apply()
+
+    var v980standardAutoCompliance980: Boolean
+        get() = prefs.getBoolean(KEY_V980STANDARDAUTOCOMPLIANCE980, false)
+        set(value) = prefs.edit().putBoolean(KEY_V980STANDARDAUTOCOMPLIANCE980, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -81930,5 +82530,155 @@ class AppPrefs(context: Context) {
         const val KEY_V970SLOWAUTOMOTION970 = "v970slowAutoMotion970" // v970 Slow Auto Motion970
         const val KEY_V970SMALLAUTOWINDOW970 = "v970smallAutoWindow970" // v970 Small Auto Window970
         const val KEY_V970SMARTAUTOSUGGEST970 = "v970smartAutoSuggest970" // v970 Smart Auto Suggest970
+        const val KEY_V971SMOOTHAUTOSCROLL971 = "v971smoothAutoScroll971" // v971 Smooth Auto Scroll971
+        const val KEY_V971SNAPAUTOGRID971 = "v971snapAutoGrid971" // v971 Snap Auto Grid971
+        const val KEY_V971SOCKETAUTOKEEPALIVE971 = "v971socketAutoKeepAlive971" // v971 Socket Auto KeepAlive971
+        const val KEY_V971SOFTAUTOKEYBOARD971 = "v971softAutoKeyboard971" // v971 Soft Auto Keyboard971
+        const val KEY_V971SORTAUTOALGORITHM971 = "v971sortAutoAlgorithm971" // v971 Sort Auto Algorithm971
+        const val KEY_V971SOURCEAUTOSELECT971 = "v971sourceAutoSelect971" // v971 Source Auto Select971
+        const val KEY_V971SPACEAUTOCOMPACT971 = "v971spaceAutoCompact971" // v971 Space Auto Compact971
+        const val KEY_V971SPANAUTOCOLUMN971 = "v971spanAutoColumn971" // v971 Span Auto Column971
+        const val KEY_V971SPAWNAUTOWORKER971 = "v971spawnAutoWorker971" // v971 Spawn Auto Worker971
+        const val KEY_V971SPEEDAUTOADAPTIVE971 = "v971speedAutoAdaptive971" // v971 Speed Auto Adaptive971
+        const val KEY_V971SPLITAUTOPANE971 = "v971splitAutoPane971" // v971 Split Auto Pane971
+        const val KEY_V971SPOTAUTOLIGHT971 = "v971spotAutoLight971" // v971 Spot Auto Light971
+        const val KEY_V971STACKAUTOTRACE971 = "v971stackAutoTrace971" // v971 Stack Auto Trace971
+        const val KEY_V971STAGEAUTOPROGRESS971 = "v971stageAutoProgress971" // v971 Stage Auto Progress971
+        const val KEY_V971STANDARDAUTOCOMPLIANCE971 = "v971standardAutoCompliance971" // v971 Standard Auto Compliance971
+        const val KEY_V972SMOOTHAUTOSCROLL972 = "v972smoothAutoScroll972" // v972 Smooth Auto Scroll972
+        const val KEY_V972SNAPAUTOGRID972 = "v972snapAutoGrid972" // v972 Snap Auto Grid972
+        const val KEY_V972SOCKETAUTOKEEPALIVE972 = "v972socketAutoKeepAlive972" // v972 Socket Auto KeepAlive972
+        const val KEY_V972SOFTAUTOKEYBOARD972 = "v972softAutoKeyboard972" // v972 Soft Auto Keyboard972
+        const val KEY_V972SORTAUTOALGORITHM972 = "v972sortAutoAlgorithm972" // v972 Sort Auto Algorithm972
+        const val KEY_V972SOURCEAUTOSELECT972 = "v972sourceAutoSelect972" // v972 Source Auto Select972
+        const val KEY_V972SPACEAUTOCOMPACT972 = "v972spaceAutoCompact972" // v972 Space Auto Compact972
+        const val KEY_V972SPANAUTOCOLUMN972 = "v972spanAutoColumn972" // v972 Span Auto Column972
+        const val KEY_V972SPAWNAUTOWORKER972 = "v972spawnAutoWorker972" // v972 Spawn Auto Worker972
+        const val KEY_V972SPEEDAUTOADAPTIVE972 = "v972speedAutoAdaptive972" // v972 Speed Auto Adaptive972
+        const val KEY_V972SPLITAUTOPANE972 = "v972splitAutoPane972" // v972 Split Auto Pane972
+        const val KEY_V972SPOTAUTOLIGHT972 = "v972spotAutoLight972" // v972 Spot Auto Light972
+        const val KEY_V972STACKAUTOTRACE972 = "v972stackAutoTrace972" // v972 Stack Auto Trace972
+        const val KEY_V972STAGEAUTOPROGRESS972 = "v972stageAutoProgress972" // v972 Stage Auto Progress972
+        const val KEY_V972STANDARDAUTOCOMPLIANCE972 = "v972standardAutoCompliance972" // v972 Standard Auto Compliance972
+        const val KEY_V973SMOOTHAUTOSCROLL973 = "v973smoothAutoScroll973" // v973 Smooth Auto Scroll973
+        const val KEY_V973SNAPAUTOGRID973 = "v973snapAutoGrid973" // v973 Snap Auto Grid973
+        const val KEY_V973SOCKETAUTOKEEPALIVE973 = "v973socketAutoKeepAlive973" // v973 Socket Auto KeepAlive973
+        const val KEY_V973SOFTAUTOKEYBOARD973 = "v973softAutoKeyboard973" // v973 Soft Auto Keyboard973
+        const val KEY_V973SORTAUTOALGORITHM973 = "v973sortAutoAlgorithm973" // v973 Sort Auto Algorithm973
+        const val KEY_V973SOURCEAUTOSELECT973 = "v973sourceAutoSelect973" // v973 Source Auto Select973
+        const val KEY_V973SPACEAUTOCOMPACT973 = "v973spaceAutoCompact973" // v973 Space Auto Compact973
+        const val KEY_V973SPANAUTOCOLUMN973 = "v973spanAutoColumn973" // v973 Span Auto Column973
+        const val KEY_V973SPAWNAUTOWORKER973 = "v973spawnAutoWorker973" // v973 Spawn Auto Worker973
+        const val KEY_V973SPEEDAUTOADAPTIVE973 = "v973speedAutoAdaptive973" // v973 Speed Auto Adaptive973
+        const val KEY_V973SPLITAUTOPANE973 = "v973splitAutoPane973" // v973 Split Auto Pane973
+        const val KEY_V973SPOTAUTOLIGHT973 = "v973spotAutoLight973" // v973 Spot Auto Light973
+        const val KEY_V973STACKAUTOTRACE973 = "v973stackAutoTrace973" // v973 Stack Auto Trace973
+        const val KEY_V973STAGEAUTOPROGRESS973 = "v973stageAutoProgress973" // v973 Stage Auto Progress973
+        const val KEY_V973STANDARDAUTOCOMPLIANCE973 = "v973standardAutoCompliance973" // v973 Standard Auto Compliance973
+        const val KEY_V974SMOOTHAUTOSCROLL974 = "v974smoothAutoScroll974" // v974 Smooth Auto Scroll974
+        const val KEY_V974SNAPAUTOGRID974 = "v974snapAutoGrid974" // v974 Snap Auto Grid974
+        const val KEY_V974SOCKETAUTOKEEPALIVE974 = "v974socketAutoKeepAlive974" // v974 Socket Auto KeepAlive974
+        const val KEY_V974SOFTAUTOKEYBOARD974 = "v974softAutoKeyboard974" // v974 Soft Auto Keyboard974
+        const val KEY_V974SORTAUTOALGORITHM974 = "v974sortAutoAlgorithm974" // v974 Sort Auto Algorithm974
+        const val KEY_V974SOURCEAUTOSELECT974 = "v974sourceAutoSelect974" // v974 Source Auto Select974
+        const val KEY_V974SPACEAUTOCOMPACT974 = "v974spaceAutoCompact974" // v974 Space Auto Compact974
+        const val KEY_V974SPANAUTOCOLUMN974 = "v974spanAutoColumn974" // v974 Span Auto Column974
+        const val KEY_V974SPAWNAUTOWORKER974 = "v974spawnAutoWorker974" // v974 Spawn Auto Worker974
+        const val KEY_V974SPEEDAUTOADAPTIVE974 = "v974speedAutoAdaptive974" // v974 Speed Auto Adaptive974
+        const val KEY_V974SPLITAUTOPANE974 = "v974splitAutoPane974" // v974 Split Auto Pane974
+        const val KEY_V974SPOTAUTOLIGHT974 = "v974spotAutoLight974" // v974 Spot Auto Light974
+        const val KEY_V974STACKAUTOTRACE974 = "v974stackAutoTrace974" // v974 Stack Auto Trace974
+        const val KEY_V974STAGEAUTOPROGRESS974 = "v974stageAutoProgress974" // v974 Stage Auto Progress974
+        const val KEY_V974STANDARDAUTOCOMPLIANCE974 = "v974standardAutoCompliance974" // v974 Standard Auto Compliance974
+        const val KEY_V975SMOOTHAUTOSCROLL975 = "v975smoothAutoScroll975" // v975 Smooth Auto Scroll975
+        const val KEY_V975SNAPAUTOGRID975 = "v975snapAutoGrid975" // v975 Snap Auto Grid975
+        const val KEY_V975SOCKETAUTOKEEPALIVE975 = "v975socketAutoKeepAlive975" // v975 Socket Auto KeepAlive975
+        const val KEY_V975SOFTAUTOKEYBOARD975 = "v975softAutoKeyboard975" // v975 Soft Auto Keyboard975
+        const val KEY_V975SORTAUTOALGORITHM975 = "v975sortAutoAlgorithm975" // v975 Sort Auto Algorithm975
+        const val KEY_V975SOURCEAUTOSELECT975 = "v975sourceAutoSelect975" // v975 Source Auto Select975
+        const val KEY_V975SPACEAUTOCOMPACT975 = "v975spaceAutoCompact975" // v975 Space Auto Compact975
+        const val KEY_V975SPANAUTOCOLUMN975 = "v975spanAutoColumn975" // v975 Span Auto Column975
+        const val KEY_V975SPAWNAUTOWORKER975 = "v975spawnAutoWorker975" // v975 Spawn Auto Worker975
+        const val KEY_V975SPEEDAUTOADAPTIVE975 = "v975speedAutoAdaptive975" // v975 Speed Auto Adaptive975
+        const val KEY_V975SPLITAUTOPANE975 = "v975splitAutoPane975" // v975 Split Auto Pane975
+        const val KEY_V975SPOTAUTOLIGHT975 = "v975spotAutoLight975" // v975 Spot Auto Light975
+        const val KEY_V975STACKAUTOTRACE975 = "v975stackAutoTrace975" // v975 Stack Auto Trace975
+        const val KEY_V975STAGEAUTOPROGRESS975 = "v975stageAutoProgress975" // v975 Stage Auto Progress975
+        const val KEY_V975STANDARDAUTOCOMPLIANCE975 = "v975standardAutoCompliance975" // v975 Standard Auto Compliance975
+        const val KEY_V976SMOOTHAUTOSCROLL976 = "v976smoothAutoScroll976" // v976 Smooth Auto Scroll976
+        const val KEY_V976SNAPAUTOGRID976 = "v976snapAutoGrid976" // v976 Snap Auto Grid976
+        const val KEY_V976SOCKETAUTOKEEPALIVE976 = "v976socketAutoKeepAlive976" // v976 Socket Auto KeepAlive976
+        const val KEY_V976SOFTAUTOKEYBOARD976 = "v976softAutoKeyboard976" // v976 Soft Auto Keyboard976
+        const val KEY_V976SORTAUTOALGORITHM976 = "v976sortAutoAlgorithm976" // v976 Sort Auto Algorithm976
+        const val KEY_V976SOURCEAUTOSELECT976 = "v976sourceAutoSelect976" // v976 Source Auto Select976
+        const val KEY_V976SPACEAUTOCOMPACT976 = "v976spaceAutoCompact976" // v976 Space Auto Compact976
+        const val KEY_V976SPANAUTOCOLUMN976 = "v976spanAutoColumn976" // v976 Span Auto Column976
+        const val KEY_V976SPAWNAUTOWORKER976 = "v976spawnAutoWorker976" // v976 Spawn Auto Worker976
+        const val KEY_V976SPEEDAUTOADAPTIVE976 = "v976speedAutoAdaptive976" // v976 Speed Auto Adaptive976
+        const val KEY_V976SPLITAUTOPANE976 = "v976splitAutoPane976" // v976 Split Auto Pane976
+        const val KEY_V976SPOTAUTOLIGHT976 = "v976spotAutoLight976" // v976 Spot Auto Light976
+        const val KEY_V976STACKAUTOTRACE976 = "v976stackAutoTrace976" // v976 Stack Auto Trace976
+        const val KEY_V976STAGEAUTOPROGRESS976 = "v976stageAutoProgress976" // v976 Stage Auto Progress976
+        const val KEY_V976STANDARDAUTOCOMPLIANCE976 = "v976standardAutoCompliance976" // v976 Standard Auto Compliance976
+        const val KEY_V977SMOOTHAUTOSCROLL977 = "v977smoothAutoScroll977" // v977 Smooth Auto Scroll977
+        const val KEY_V977SNAPAUTOGRID977 = "v977snapAutoGrid977" // v977 Snap Auto Grid977
+        const val KEY_V977SOCKETAUTOKEEPALIVE977 = "v977socketAutoKeepAlive977" // v977 Socket Auto KeepAlive977
+        const val KEY_V977SOFTAUTOKEYBOARD977 = "v977softAutoKeyboard977" // v977 Soft Auto Keyboard977
+        const val KEY_V977SORTAUTOALGORITHM977 = "v977sortAutoAlgorithm977" // v977 Sort Auto Algorithm977
+        const val KEY_V977SOURCEAUTOSELECT977 = "v977sourceAutoSelect977" // v977 Source Auto Select977
+        const val KEY_V977SPACEAUTOCOMPACT977 = "v977spaceAutoCompact977" // v977 Space Auto Compact977
+        const val KEY_V977SPANAUTOCOLUMN977 = "v977spanAutoColumn977" // v977 Span Auto Column977
+        const val KEY_V977SPAWNAUTOWORKER977 = "v977spawnAutoWorker977" // v977 Spawn Auto Worker977
+        const val KEY_V977SPEEDAUTOADAPTIVE977 = "v977speedAutoAdaptive977" // v977 Speed Auto Adaptive977
+        const val KEY_V977SPLITAUTOPANE977 = "v977splitAutoPane977" // v977 Split Auto Pane977
+        const val KEY_V977SPOTAUTOLIGHT977 = "v977spotAutoLight977" // v977 Spot Auto Light977
+        const val KEY_V977STACKAUTOTRACE977 = "v977stackAutoTrace977" // v977 Stack Auto Trace977
+        const val KEY_V977STAGEAUTOPROGRESS977 = "v977stageAutoProgress977" // v977 Stage Auto Progress977
+        const val KEY_V977STANDARDAUTOCOMPLIANCE977 = "v977standardAutoCompliance977" // v977 Standard Auto Compliance977
+        const val KEY_V978SMOOTHAUTOSCROLL978 = "v978smoothAutoScroll978" // v978 Smooth Auto Scroll978
+        const val KEY_V978SNAPAUTOGRID978 = "v978snapAutoGrid978" // v978 Snap Auto Grid978
+        const val KEY_V978SOCKETAUTOKEEPALIVE978 = "v978socketAutoKeepAlive978" // v978 Socket Auto KeepAlive978
+        const val KEY_V978SOFTAUTOKEYBOARD978 = "v978softAutoKeyboard978" // v978 Soft Auto Keyboard978
+        const val KEY_V978SORTAUTOALGORITHM978 = "v978sortAutoAlgorithm978" // v978 Sort Auto Algorithm978
+        const val KEY_V978SOURCEAUTOSELECT978 = "v978sourceAutoSelect978" // v978 Source Auto Select978
+        const val KEY_V978SPACEAUTOCOMPACT978 = "v978spaceAutoCompact978" // v978 Space Auto Compact978
+        const val KEY_V978SPANAUTOCOLUMN978 = "v978spanAutoColumn978" // v978 Span Auto Column978
+        const val KEY_V978SPAWNAUTOWORKER978 = "v978spawnAutoWorker978" // v978 Spawn Auto Worker978
+        const val KEY_V978SPEEDAUTOADAPTIVE978 = "v978speedAutoAdaptive978" // v978 Speed Auto Adaptive978
+        const val KEY_V978SPLITAUTOPANE978 = "v978splitAutoPane978" // v978 Split Auto Pane978
+        const val KEY_V978SPOTAUTOLIGHT978 = "v978spotAutoLight978" // v978 Spot Auto Light978
+        const val KEY_V978STACKAUTOTRACE978 = "v978stackAutoTrace978" // v978 Stack Auto Trace978
+        const val KEY_V978STAGEAUTOPROGRESS978 = "v978stageAutoProgress978" // v978 Stage Auto Progress978
+        const val KEY_V978STANDARDAUTOCOMPLIANCE978 = "v978standardAutoCompliance978" // v978 Standard Auto Compliance978
+        const val KEY_V979SMOOTHAUTOSCROLL979 = "v979smoothAutoScroll979" // v979 Smooth Auto Scroll979
+        const val KEY_V979SNAPAUTOGRID979 = "v979snapAutoGrid979" // v979 Snap Auto Grid979
+        const val KEY_V979SOCKETAUTOKEEPALIVE979 = "v979socketAutoKeepAlive979" // v979 Socket Auto KeepAlive979
+        const val KEY_V979SOFTAUTOKEYBOARD979 = "v979softAutoKeyboard979" // v979 Soft Auto Keyboard979
+        const val KEY_V979SORTAUTOALGORITHM979 = "v979sortAutoAlgorithm979" // v979 Sort Auto Algorithm979
+        const val KEY_V979SOURCEAUTOSELECT979 = "v979sourceAutoSelect979" // v979 Source Auto Select979
+        const val KEY_V979SPACEAUTOCOMPACT979 = "v979spaceAutoCompact979" // v979 Space Auto Compact979
+        const val KEY_V979SPANAUTOCOLUMN979 = "v979spanAutoColumn979" // v979 Span Auto Column979
+        const val KEY_V979SPAWNAUTOWORKER979 = "v979spawnAutoWorker979" // v979 Spawn Auto Worker979
+        const val KEY_V979SPEEDAUTOADAPTIVE979 = "v979speedAutoAdaptive979" // v979 Speed Auto Adaptive979
+        const val KEY_V979SPLITAUTOPANE979 = "v979splitAutoPane979" // v979 Split Auto Pane979
+        const val KEY_V979SPOTAUTOLIGHT979 = "v979spotAutoLight979" // v979 Spot Auto Light979
+        const val KEY_V979STACKAUTOTRACE979 = "v979stackAutoTrace979" // v979 Stack Auto Trace979
+        const val KEY_V979STAGEAUTOPROGRESS979 = "v979stageAutoProgress979" // v979 Stage Auto Progress979
+        const val KEY_V979STANDARDAUTOCOMPLIANCE979 = "v979standardAutoCompliance979" // v979 Standard Auto Compliance979
+        const val KEY_V980SMOOTHAUTOSCROLL980 = "v980smoothAutoScroll980" // v980 Smooth Auto Scroll980
+        const val KEY_V980SNAPAUTOGRID980 = "v980snapAutoGrid980" // v980 Snap Auto Grid980
+        const val KEY_V980SOCKETAUTOKEEPALIVE980 = "v980socketAutoKeepAlive980" // v980 Socket Auto KeepAlive980
+        const val KEY_V980SOFTAUTOKEYBOARD980 = "v980softAutoKeyboard980" // v980 Soft Auto Keyboard980
+        const val KEY_V980SORTAUTOALGORITHM980 = "v980sortAutoAlgorithm980" // v980 Sort Auto Algorithm980
+        const val KEY_V980SOURCEAUTOSELECT980 = "v980sourceAutoSelect980" // v980 Source Auto Select980
+        const val KEY_V980SPACEAUTOCOMPACT980 = "v980spaceAutoCompact980" // v980 Space Auto Compact980
+        const val KEY_V980SPANAUTOCOLUMN980 = "v980spanAutoColumn980" // v980 Span Auto Column980
+        const val KEY_V980SPAWNAUTOWORKER980 = "v980spawnAutoWorker980" // v980 Spawn Auto Worker980
+        const val KEY_V980SPEEDAUTOADAPTIVE980 = "v980speedAutoAdaptive980" // v980 Speed Auto Adaptive980
+        const val KEY_V980SPLITAUTOPANE980 = "v980splitAutoPane980" // v980 Split Auto Pane980
+        const val KEY_V980SPOTAUTOLIGHT980 = "v980spotAutoLight980" // v980 Spot Auto Light980
+        const val KEY_V980STACKAUTOTRACE980 = "v980stackAutoTrace980" // v980 Stack Auto Trace980
+        const val KEY_V980STAGEAUTOPROGRESS980 = "v980stageAutoProgress980" // v980 Stage Auto Progress980
+        const val KEY_V980STANDARDAUTOCOMPLIANCE980 = "v980standardAutoCompliance980" // v980 Standard Auto Compliance980
     }
 }
