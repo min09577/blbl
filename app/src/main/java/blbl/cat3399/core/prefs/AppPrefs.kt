@@ -14648,6 +14648,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getInt(KEY_V130SUBTITLEANIMATIONROTATE130, 0)
         set(value) = prefs.edit().putInt(KEY_V130SUBTITLEANIMATIONROTATE130, value).apply()
 
+    var v131audioChorusDepth: Int
+        get() = mSharedPreferences.getInt(KEY_V131AUDIOCHORUSDEPTH, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V131AUDIOCHORUSDEPTH, value).apply()
+
+    var v131danmakuFontBgFillShadowColor: Int
+        get() = mSharedPreferences.getInt(KEY_V131DANMAKUFONTBGFILLSHADOWCOLOR, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V131DANMAKUFONTBGFILLSHADOWCOLOR, value).apply()
+
+    var v131subtitleAnimationRotate131: Int
+        get() = mSharedPreferences.getInt(KEY_V131SUBTITLEANIMATIONROTATE131, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V131SUBTITLEANIMATIONROTATE131, value).apply()
+
+    var v131gestureTapZoneSensitivity: Int
+        get() = mSharedPreferences.getInt(KEY_V131GESTURETAPZONESENSITIVITY, 50)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V131GESTURETAPZONESENSITIVITY, value).apply()
+
+    var v131castVideoPIPFollowMain: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V131CASTVIDEOPIPFOLLOWMAIN, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V131CASTVIDEOPIPFOLLOWMAIN, value).apply()
+
+    var v131playlistAutoGroupByGenre: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V131PLAYLISTAUTOGROUPBYGENRE, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V131PLAYLISTAUTOGROUPBYGENRE, value).apply()
+
+    var v131cacheSmartPinningOnSchedule: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V131CACHESMARTPINNINGONSCHEDULE, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V131CACHESMARTPINNINGONSCHEDULE, value).apply()
+
+    var v131progressBarCustomThumbShadow131: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V131PROGRESSBARCUSTOMTHUMBSHADOW131, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V131PROGRESSBARCUSTOMTHUMBSHADOW131, value).apply()
+
+    var v131volumeNormalizeMode: Int
+        get() = mSharedPreferences.getInt(KEY_V131VOLUMENORMALIZEMODE, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V131VOLUMENORMALIZEMODE, value).apply()
+
+    var v131historyAutoClean131: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V131HISTORYAUTOCLEAN131, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V131HISTORYAUTOCLEAN131, value).apply()
+
+    var v131playbackSpeedPresetsQuickSwitch: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V131PLAYBACKSPEEDPRESETSQUICKSWITCH, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V131PLAYBACKSPEEDPRESETSQUICKSWITCH, value).apply()
+
+    var v131screenshotAutoShareMessenger: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V131SCREENSHOTAUTOSHAREMESSENGER, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V131SCREENSHOTAUTOSHAREMESSENGER, value).apply()
+
+    var v131videoPIPTransitionSpeed: Int
+        get() = mSharedPreferences.getInt(KEY_V131VIDEOPIPTRANSITIONSPEED, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V131VIDEOPIPTRANSITIONSPEED, value).apply()
+
+    var v131danmakuFontBgFillShadowOffsetX: Int
+        get() = mSharedPreferences.getInt(KEY_V131DANMAKUFONTBGFILLSHADOWOFFSETX, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V131DANMAKUFONTBGFILLSHADOWOFFSETX, value).apply()
+
+    var v131subtitleAnimationTranslate131: Int
+        get() = mSharedPreferences.getInt(KEY_V131SUBTITLEANIMATIONTRANSLATE131, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V131SUBTITLEANIMATIONTRANSLATE131, value).apply()
+
+    var v132audioChorusFeedback: Int
+        get() = mSharedPreferences.getInt(KEY_V132AUDIOCHORUSFEEDBACK, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V132AUDIOCHORUSFEEDBACK, value).apply()
+
+    var v132danmakuFontBgFillShadowOffsetY: Int
+        get() = mSharedPreferences.getInt(KEY_V132DANMAKUFONTBGFILLSHADOWOFFSETY, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V132DANMAKUFONTBGFILLSHADOWOFFSETY, value).apply()
+
+    var v132subtitleAnimationTranslate132: Int
+        get() = mSharedPreferences.getInt(KEY_V132SUBTITLEANIMATIONTRANSLATE132, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V132SUBTITLEANIMATIONTRANSLATE132, value).apply()
+
+    var v132gestureTapZoneVisualFeedback: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V132GESTURETAPZONEVISUALFEEDBACK, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V132GESTURETAPZONEVISUALFEEDBACK, value).apply()
+
+    var v132castVideoPIPFollowFullscreen: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V132CASTVIDEOPIPFOLLOWFULLSCREEN, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V132CASTVIDEOPIPFOLLOWFULLSCREEN, value).apply()
+
+    var v132playlistAutoGroupBySeries132: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V132PLAYLISTAUTOGROUPBYSERIES132, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V132PLAYLISTAUTOGROUPBYSERIES132, value).apply()
+
+    var v132cacheSmartPinningOnNetworkChange: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V132CACHESMARTPINNINGONNETWORKCHANGE, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V132CACHESMARTPINNINGONNETWORKCHANGE, value).apply()
+
+    var v132progressBarCustomThumbGlow132: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V132PROGRESSBARCUSTOMTHUMBGLOW132, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V132PROGRESSBARCUSTOMTHUMBGLOW132, value).apply()
+
+    var v132volumeNormalizeTarget: Int
+        get() = mSharedPreferences.getInt(KEY_V132VOLUMENORMALIZETARGET, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V132VOLUMENORMALIZETARGET, value).apply()
+
+    var v132historyAutoClean132: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V132HISTORYAUTOCLEAN132, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V132HISTORYAUTOCLEAN132, value).apply()
+
+    var v132playbackSpeedPresetsLongPress: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V132PLAYBACKSPEEDPRESETSLONGPRESS, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V132PLAYBACKSPEEDPRESETSLONGPRESS, value).apply()
+
+    var v132screenshotAutoShareViber: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V132SCREENSHOTAUTOSHAREVIBER, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V132SCREENSHOTAUTOSHAREVIBER, value).apply()
+
+    var v132videoPIPTransitionType: Int
+        get() = mSharedPreferences.getInt(KEY_V132VIDEOPIPTRANSITIONTYPE, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V132VIDEOPIPTRANSITIONTYPE, value).apply()
+
+    var v132danmakuFontBgFillShadowBlur: Int
+        get() = mSharedPreferences.getInt(KEY_V132DANMAKUFONTBGFILLSHADOWBLUR, 2)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V132DANMAKUFONTBGFILLSHADOWBLUR, value).apply()
+
+    var v132subtitleAnimationScale132: Int
+        get() = mSharedPreferences.getInt(KEY_V132SUBTITLEANIMATIONSCALE132, 100)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V132SUBTITLEANIMATIONSCALE132, value).apply()
+
+    var v133audioChorusMix: Int
+        get() = mSharedPreferences.getInt(KEY_V133AUDIOCHORUSMIX, 50)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V133AUDIOCHORUSMIX, value).apply()
+
+    var v133danmakuFontBgFillShadowOpacity: Int
+        get() = mSharedPreferences.getInt(KEY_V133DANMAKUFONTBGFILLSHADOWOPACITY, 50)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V133DANMAKUFONTBGFILLSHADOWOPACITY, value).apply()
+
+    var v133subtitleAnimationScale133: Int
+        get() = mSharedPreferences.getInt(KEY_V133SUBTITLEANIMATIONSCALE133, 100)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V133SUBTITLEANIMATIONSCALE133, value).apply()
+
+    var v133gestureTapZoneHapticFeedback: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V133GESTURETAPZONEHAPTICFEEDBACK, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V133GESTURETAPZONEHAPTICFEEDBACK, value).apply()
+
+    var v133castVideoPIPFollowPlayback: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V133CASTVIDEOPIPFOLLOWPLAYBACK, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V133CASTVIDEOPIPFOLLOWPLAYBACK, value).apply()
+
+    var v133playlistAutoGroupByDateRange: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V133PLAYLISTAUTOGROUPBYDATERANGE, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V133PLAYLISTAUTOGROUPBYDATERANGE, value).apply()
+
+    var v133cacheSmartPinningOnBatteryLevel: Int
+        get() = mSharedPreferences.getInt(KEY_V133CACHESMARTPINNINGONBATTERYLEVEL, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V133CACHESMARTPINNINGONBATTERYLEVEL, value).apply()
+
+    var v133progressBarCustomThumbBorder133: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V133PROGRESSBARCUSTOMTHUMBBORDER133, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V133PROGRESSBARCUSTOMTHUMBBORDER133, value).apply()
+
+    var v133volumeNormalizeCeiling: Int
+        get() = mSharedPreferences.getInt(KEY_V133VOLUMENORMALIZECEILING, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V133VOLUMENORMALIZECEILING, value).apply()
+
+    var v133historyAutoClean133: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V133HISTORYAUTOCLEAN133, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V133HISTORYAUTOCLEAN133, value).apply()
+
+    var v133playbackSpeedPresetsDoubleTap: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V133PLAYBACKSPEEDPRESETSDOUBLETAP, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V133PLAYBACKSPEEDPRESETSDOUBLETAP, value).apply()
+
+    var v133screenshotAutoShareSignal: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V133SCREENSHOTAUTOSHARESIGNAL, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V133SCREENSHOTAUTOSHARESIGNAL, value).apply()
+
+    var v133videoPIPBackgroundOpacity: Int
+        get() = mSharedPreferences.getInt(KEY_V133VIDEOPIPBACKGROUNDOPACITY, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V133VIDEOPIPBACKGROUNDOPACITY, value).apply()
+
+    var v133danmakuFontBgFillShadowSpread: Int
+        get() = mSharedPreferences.getInt(KEY_V133DANMAKUFONTBGFILLSHADOWSPREAD, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V133DANMAKUFONTBGFILLSHADOWSPREAD, value).apply()
+
+    var v133subtitleAnimationRotate133: Int
+        get() = mSharedPreferences.getInt(KEY_V133SUBTITLEANIMATIONROTATE133, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V133SUBTITLEANIMATIONROTATE133, value).apply()
+
+    var v134audioFlangerToggle134: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V134AUDIOFLANGERTOGGLE134, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V134AUDIOFLANGERTOGGLE134, value).apply()
+
+    var v134danmakuFontBgFillShadowType: Int
+        get() = mSharedPreferences.getInt(KEY_V134DANMAKUFONTBGFILLSHADOWTYPE, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V134DANMAKUFONTBGFILLSHADOWTYPE, value).apply()
+
+    var v134subtitleAnimationRotate134: Int
+        get() = mSharedPreferences.getInt(KEY_V134SUBTITLEANIMATIONROTATE134, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V134SUBTITLEANIMATIONROTATE134, value).apply()
+
+    var v134gestureTapZoneTimeout: Int
+        get() = mSharedPreferences.getInt(KEY_V134GESTURETAPZONETIMEOUT, 500)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V134GESTURETAPZONETIMEOUT, value).apply()
+
+    var v134castVideoPIPFollowGesture: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V134CASTVIDEOPIPFOLLOWGESTURE, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V134CASTVIDEOPIPFOLLOWGESTURE, value).apply()
+
+    var v134playlistAutoGroupByWatchCount: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V134PLAYLISTAUTOGROUPBYWATCHCOUNT, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V134PLAYLISTAUTOGROUPBYWATCHCOUNT, value).apply()
+
+    var v134cacheSmartPinningOnStorageType: Int
+        get() = mSharedPreferences.getInt(KEY_V134CACHESMARTPINNINGONSTORAGETYPE, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V134CACHESMARTPINNINGONSTORAGETYPE, value).apply()
+
+    var v134progressBarCustomThumbSize134: Int
+        get() = mSharedPreferences.getInt(KEY_V134PROGRESSBARCUSTOMTHUMBSIZE134, 12)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V134PROGRESSBARCUSTOMTHUMBSIZE134, value).apply()
+
+    var v134volumeNormalizeWindow: Int
+        get() = mSharedPreferences.getInt(KEY_V134VOLUMENORMALIZEWINDOW, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V134VOLUMENORMALIZEWINDOW, value).apply()
+
+    var v134historyAutoClean134: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V134HISTORYAUTOCLEAN134, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V134HISTORYAUTOCLEAN134, value).apply()
+
+    var v134playbackSpeedPresetsTripleTap: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V134PLAYBACKSPEEDPRESETSTRIPLETAP, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V134PLAYBACKSPEEDPRESETSTRIPLETAP, value).apply()
+
+    var v134screenshotAutoShareX: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V134SCREENSHOTAUTOSHAREX, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V134SCREENSHOTAUTOSHAREX, value).apply()
+
+    var v134videoPIPFollowOrientation: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V134VIDEOPIPFOLLOWORIENTATION, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V134VIDEOPIPFOLLOWORIENTATION, value).apply()
+
+    var v134danmakuFontBgFillShadowType133: Int
+        get() = mSharedPreferences.getInt(KEY_V134DANMAKUFONTBGFILLSHADOWTYPE133, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V134DANMAKUFONTBGFILLSHADOWTYPE133, value).apply()
+
+    var v134subtitleAnimationBlur134: Int
+        get() = mSharedPreferences.getInt(KEY_V134SUBTITLEANIMATIONBLUR134, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V134SUBTITLEANIMATIONBLUR134, value).apply()
+
+    var v135audioFlangerRate: Int
+        get() = mSharedPreferences.getInt(KEY_V135AUDIOFLANGERRATE, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V135AUDIOFLANGERRATE, value).apply()
+
+    var v135danmakuFontBgFillShadowType134: Int
+        get() = mSharedPreferences.getInt(KEY_V135DANMAKUFONTBGFILLSHADOWTYPE134, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V135DANMAKUFONTBGFILLSHADOWTYPE134, value).apply()
+
+    var v135subtitleAnimationBlur135: Int
+        get() = mSharedPreferences.getInt(KEY_V135SUBTITLEANIMATIONBLUR135, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V135SUBTITLEANIMATIONBLUR135, value).apply()
+
+    var v135gestureTapZoneMinDistance: Int
+        get() = mSharedPreferences.getInt(KEY_V135GESTURETAPZONEMINDISTANCE, 10)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V135GESTURETAPZONEMINDISTANCE, value).apply()
+
+    var v135castVideoPIPFollowScreen: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V135CASTVIDEOPIPFOLLOWSCREEN, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V135CASTVIDEOPIPFOLLOWSCREEN, value).apply()
+
+    var v135playlistAutoGroupByLikeCount: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V135PLAYLISTAUTOGROUPBYLIKECOUNT, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V135PLAYLISTAUTOGROUPBYLIKECOUNT, value).apply()
+
+    var v135cacheSmartPinningOnStorageFree: Int
+        get() = mSharedPreferences.getInt(KEY_V135CACHESMARTPINNINGONSTORAGEFREE, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V135CACHESMARTPINNINGONSTORAGEFREE, value).apply()
+
+    var v135progressBarCustomThumbSize135: Int
+        get() = mSharedPreferences.getInt(KEY_V135PROGRESSBARCUSTOMTHUMBSIZE135, 12)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V135PROGRESSBARCUSTOMTHUMBSIZE135, value).apply()
+
+    var v135volumeNormalizeThreshold: Int
+        get() = mSharedPreferences.getInt(KEY_V135VOLUMENORMALIZETHRESHOLD, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V135VOLUMENORMALIZETHRESHOLD, value).apply()
+
+    var v135historyAutoClean135: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V135HISTORYAUTOCLEAN135, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V135HISTORYAUTOCLEAN135, value).apply()
+
+    var v135playbackSpeedPresetsGesture: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V135PLAYBACKSPEEDPRESETSGESTURE, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V135PLAYBACKSPEEDPRESETSGESTURE, value).apply()
+
+    var v135screenshotAutoShareTumblr: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V135SCREENSHOTAUTOSHARETUMBLR, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V135SCREENSHOTAUTOSHARETUMBLR, value).apply()
+
+    var v135videoPIPFollowSystemTheme: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V135VIDEOPIPFOLLOWSYSTEMTHEME, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V135VIDEOPIPFOLLOWSYSTEMTHEME, value).apply()
+
+    var v135danmakuFontBgFillClipToggle: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V135DANMAKUFONTBGFILLCLIPTOGGLE, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V135DANMAKUFONTBGFILLCLIPTOGGLE, value).apply()
+
+    var v135subtitleAnimationFadeIn135: Int
+        get() = mSharedPreferences.getInt(KEY_V135SUBTITLEANIMATIONFADEIN135, 300)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V135SUBTITLEANIMATIONFADEIN135, value).apply()
+
+    var v136audioFlangerDepth: Int
+        get() = mSharedPreferences.getInt(KEY_V136AUDIOFLANGERDEPTH, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V136AUDIOFLANGERDEPTH, value).apply()
+
+    var v136danmakuFontBgFillClipPath: Int
+        get() = mSharedPreferences.getInt(KEY_V136DANMAKUFONTBGFILLCLIPPATH, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V136DANMAKUFONTBGFILLCLIPPATH, value).apply()
+
+    var v136subtitleAnimationFadeIn136: Int
+        get() = mSharedPreferences.getInt(KEY_V136SUBTITLEANIMATIONFADEIN136, 300)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V136SUBTITLEANIMATIONFADEIN136, value).apply()
+
+    var v136gestureTapZoneVisualStyle: Int
+        get() = mSharedPreferences.getInt(KEY_V136GESTURETAPZONEVISUALSTYLE, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V136GESTURETAPZONEVISUALSTYLE, value).apply()
+
+    var v136castVideoPIPFollowOrientation: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V136CASTVIDEOPIPFOLLOWORIENTATION, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V136CASTVIDEOPIPFOLLOWORIENTATION, value).apply()
+
+    var v136playlistAutoGroupByCommentCount: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V136PLAYLISTAUTOGROUPBYCOMMENTCOUNT, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V136PLAYLISTAUTOGROUPBYCOMMENTCOUNT, value).apply()
+
+    var v136cacheSmartPinningOnNetworkSpeed: Int
+        get() = mSharedPreferences.getInt(KEY_V136CACHESMARTPINNINGONNETWORKSPEED, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V136CACHESMARTPINNINGONNETWORKSPEED, value).apply()
+
+    var v136progressBarCustomThumbColor136: Int
+        get() = mSharedPreferences.getInt(KEY_V136PROGRESSBARCUSTOMTHUMBCOLOR136, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V136PROGRESSBARCUSTOMTHUMBCOLOR136, value).apply()
+
+    var v136volumeNormalizeAdaptive: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V136VOLUMENORMALIZEADAPTIVE, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V136VOLUMENORMALIZEADAPTIVE, value).apply()
+
+    var v136historyAutoClean136: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V136HISTORYAUTOCLEAN136, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V136HISTORYAUTOCLEAN136, value).apply()
+
+    var v136playbackSpeedPresetsQuickAccess: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V136PLAYBACKSPEEDPRESETSQUICKACCESS, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V136PLAYBACKSPEEDPRESETSQUICKACCESS, value).apply()
+
+    var v136screenshotAutoSharePinterest: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V136SCREENSHOTAUTOSHAREPINTEREST, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V136SCREENSHOTAUTOSHAREPINTEREST, value).apply()
+
+    var v136videoPIPFollowAudioFocus: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V136VIDEOPIPFOLLOWAUDIOFOCUS, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V136VIDEOPIPFOLLOWAUDIOFOCUS, value).apply()
+
+    var v136danmakuFontBgFillClipPath135: Int
+        get() = mSharedPreferences.getInt(KEY_V136DANMAKUFONTBGFILLCLIPPATH135, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V136DANMAKUFONTBGFILLCLIPPATH135, value).apply()
+
+    var v136subtitleAnimationFadeOut136: Int
+        get() = mSharedPreferences.getInt(KEY_V136SUBTITLEANIMATIONFADEOUT136, 300)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V136SUBTITLEANIMATIONFADEOUT136, value).apply()
+
+    var v137audioFlangerFeedback136: Int
+        get() = mSharedPreferences.getInt(KEY_V137AUDIOFLANGERFEEDBACK136, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V137AUDIOFLANGERFEEDBACK136, value).apply()
+
+    var v137danmakuFontBgFillClipPath136: Int
+        get() = mSharedPreferences.getInt(KEY_V137DANMAKUFONTBGFILLCLIPPATH136, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V137DANMAKUFONTBGFILLCLIPPATH136, value).apply()
+
+    var v137subtitleAnimationFadeOut137: Int
+        get() = mSharedPreferences.getInt(KEY_V137SUBTITLEANIMATIONFADEOUT137, 300)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V137SUBTITLEANIMATIONFADEOUT137, value).apply()
+
+    var v137gestureTapZoneVisualColor: Int
+        get() = mSharedPreferences.getInt(KEY_V137GESTURETAPZONEVISUALCOLOR, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V137GESTURETAPZONEVISUALCOLOR, value).apply()
+
+    var v137castVideoPIPFollowBattery: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V137CASTVIDEOPIPFOLLOWBATTERY, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V137CASTVIDEOPIPFOLLOWBATTERY, value).apply()
+
+    var v137playlistAutoGroupByShareCount: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V137PLAYLISTAUTOGROUPBYSHARECOUNT, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V137PLAYLISTAUTOGROUPBYSHARECOUNT, value).apply()
+
+    var v137cacheSmartPinningOnNetworkType: Int
+        get() = mSharedPreferences.getInt(KEY_V137CACHESMARTPINNINGONNETWORKTYPE, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V137CACHESMARTPINNINGONNETWORKTYPE, value).apply()
+
+    var v137progressBarCustomThumbColor137: Int
+        get() = mSharedPreferences.getInt(KEY_V137PROGRESSBARCUSTOMTHUMBCOLOR137, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V137PROGRESSBARCUSTOMTHUMBCOLOR137, value).apply()
+
+    var v137volumeNormalizeSmoothing: Int
+        get() = mSharedPreferences.getInt(KEY_V137VOLUMENORMALIZESMOOTHING, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V137VOLUMENORMALIZESMOOTHING, value).apply()
+
+    var v137historyAutoClean137: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V137HISTORYAUTOCLEAN137, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V137HISTORYAUTOCLEAN137, value).apply()
+
+    var v137playbackSpeedPresetsNotificationToggle: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V137PLAYBACKSPEEDPRESETSNOTIFICATIONTOGGLE, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V137PLAYBACKSPEEDPRESETSNOTIFICATIONTOGGLE, value).apply()
+
+    var v137screenshotAutoShareTwitch: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V137SCREENSHOTAUTOSHARETWITCH, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V137SCREENSHOTAUTOSHARETWITCH, value).apply()
+
+    var v137videoPIPFollowDoNotDisturb: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V137VIDEOPIPFOLLOWDONOTDISTURB, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V137VIDEOPIPFOLLOWDONOTDISTURB, value).apply()
+
+    var v137danmakuFontBgFillClipRadius: Int
+        get() = mSharedPreferences.getInt(KEY_V137DANMAKUFONTBGFILLCLIPRADIUS, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V137DANMAKUFONTBGFILLCLIPRADIUS, value).apply()
+
+    var v137subtitleAnimationTranslate137: Int
+        get() = mSharedPreferences.getInt(KEY_V137SUBTITLEANIMATIONTRANSLATE137, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V137SUBTITLEANIMATIONTRANSLATE137, value).apply()
+
+    var v138audioPhaserToggle138: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V138AUDIOPHASERTOGGLE138, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V138AUDIOPHASERTOGGLE138, value).apply()
+
+    var v138danmakuFontBgFillClipRadius137: Int
+        get() = mSharedPreferences.getInt(KEY_V138DANMAKUFONTBGFILLCLIPRADIUS137, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V138DANMAKUFONTBGFILLCLIPRADIUS137, value).apply()
+
+    var v138subtitleAnimationTranslate138: Int
+        get() = mSharedPreferences.getInt(KEY_V138SUBTITLEANIMATIONTRANSLATE138, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V138SUBTITLEANIMATIONTRANSLATE138, value).apply()
+
+    var v138gestureTapZoneVisualOpacity: Int
+        get() = mSharedPreferences.getInt(KEY_V138GESTURETAPZONEVISUALOPACITY, 50)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V138GESTURETAPZONEVISUALOPACITY, value).apply()
+
+    var v138castVideoPIPFollowStorage: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V138CASTVIDEOPIPFOLLOWSTORAGE, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V138CASTVIDEOPIPFOLLOWSTORAGE, value).apply()
+
+    var v138playlistAutoGroupByFavCount: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V138PLAYLISTAUTOGROUPBYFAVCOUNT, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V138PLAYLISTAUTOGROUPBYFAVCOUNT, value).apply()
+
+    var v138cacheSmartPinningOnStorageRead: Int
+        get() = mSharedPreferences.getInt(KEY_V138CACHESMARTPINNINGONSTORAGEREAD, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V138CACHESMARTPINNINGONSTORAGEREAD, value).apply()
+
+    var v138progressBarCustomThumbShadow138: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V138PROGRESSBARCUSTOMTHUMBSHADOW138, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V138PROGRESSBARCUSTOMTHUMBSHADOW138, value).apply()
+
+    var v138volumeNormalizeGate: Int
+        get() = mSharedPreferences.getInt(KEY_V138VOLUMENORMALIZEGATE, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V138VOLUMENORMALIZEGATE, value).apply()
+
+    var v138historyAutoClean138: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V138HISTORYAUTOCLEAN138, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V138HISTORYAUTOCLEAN138, value).apply()
+
+    var v138playbackSpeedPresetsDragAdjust: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V138PLAYBACKSPEEDPRESETSDRAGADJUST, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V138PLAYBACKSPEEDPRESETSDRAGADJUST, value).apply()
+
+    var v138screenshotAutoShareYouTube: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V138SCREENSHOTAUTOSHAREYOUTUBE, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V138SCREENSHOTAUTOSHAREYOUTUBE, value).apply()
+
+    var v138videoPIPFollowBrightness: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V138VIDEOPIPFOLLOWBRIGHTNESS, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V138VIDEOPIPFOLLOWBRIGHTNESS, value).apply()
+
+    var v138danmakuFontBgFillClipRadius138: Int
+        get() = mSharedPreferences.getInt(KEY_V138DANMAKUFONTBGFILLCLIPRADIUS138, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V138DANMAKUFONTBGFILLCLIPRADIUS138, value).apply()
+
+    var v138subtitleAnimationScale138: Int
+        get() = mSharedPreferences.getInt(KEY_V138SUBTITLEANIMATIONSCALE138, 100)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V138SUBTITLEANIMATIONSCALE138, value).apply()
+
+    var v139audioPhaserRate: Int
+        get() = mSharedPreferences.getInt(KEY_V139AUDIOPHASERRATE, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V139AUDIOPHASERRATE, value).apply()
+
+    var v139danmakuFontBgFillClipRadius139: Int
+        get() = mSharedPreferences.getInt(KEY_V139DANMAKUFONTBGFILLCLIPRADIUS139, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V139DANMAKUFONTBGFILLCLIPRADIUS139, value).apply()
+
+    var v139subtitleAnimationScale139: Int
+        get() = mSharedPreferences.getInt(KEY_V139SUBTITLEANIMATIONSCALE139, 100)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V139SUBTITLEANIMATIONSCALE139, value).apply()
+
+    var v139gestureTapZoneVisualDuration: Int
+        get() = mSharedPreferences.getInt(KEY_V139GESTURETAPZONEVISUALDURATION, 200)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V139GESTURETAPZONEVISUALDURATION, value).apply()
+
+    var v139castVideoPIPFollowVolume: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V139CASTVIDEOPIPFOLLOWVOLUME, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V139CASTVIDEOPIPFOLLOWVOLUME, value).apply()
+
+    var v139playlistAutoGroupByDanCount: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V139PLAYLISTAUTOGROUPBYDANCOUNT, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V139PLAYLISTAUTOGROUPBYDANCOUNT, value).apply()
+
+    var v139cacheSmartPinningOnStorageWrite: Int
+        get() = mSharedPreferences.getInt(KEY_V139CACHESMARTPINNINGONSTORAGEWRITE, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V139CACHESMARTPINNINGONSTORAGEWRITE, value).apply()
+
+    var v139progressBarCustomThumbGlow139: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V139PROGRESSBARCUSTOMTHUMBGLOW139, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V139PROGRESSBARCUSTOMTHUMBGLOW139, value).apply()
+
+    var v139volumeNormalizeKnee: Int
+        get() = mSharedPreferences.getInt(KEY_V139VOLUMENORMALIZEKNEE, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V139VOLUMENORMALIZEKNEE, value).apply()
+
+    var v139historyAutoClean139: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V139HISTORYAUTOCLEAN139, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V139HISTORYAUTOCLEAN139, value).apply()
+
+    var v139playbackSpeedPresetsSwipeAdjust: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V139PLAYBACKSPEEDPRESETSSWIPEADJUST, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V139PLAYBACKSPEEDPRESETSSWIPEADJUST, value).apply()
+
+    var v139screenshotAutoShareTwitchClip: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V139SCREENSHOTAUTOSHARETWITCHCLIP, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V139SCREENSHOTAUTOSHARETWITCHCLIP, value).apply()
+
+    var v139videoPIPFollowContrast: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V139VIDEOPIPFOLLOWCONTRAST, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V139VIDEOPIPFOLLOWCONTRAST, value).apply()
+
+    var v139danmakuFontBgFillClipType: Int
+        get() = mSharedPreferences.getInt(KEY_V139DANMAKUFONTBGFILLCLIPTYPE, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V139DANMAKUFONTBGFILLCLIPTYPE, value).apply()
+
+    var v139subtitleAnimationRotate139: Int
+        get() = mSharedPreferences.getInt(KEY_V139SUBTITLEANIMATIONROTATE139, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V139SUBTITLEANIMATIONROTATE139, value).apply()
+
+    var v140audioPhaserDepth: Int
+        get() = mSharedPreferences.getInt(KEY_V140AUDIOPHASERDEPTH, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V140AUDIOPHASERDEPTH, value).apply()
+
+    var v140danmakuFontBgFillClipType139: Int
+        get() = mSharedPreferences.getInt(KEY_V140DANMAKUFONTBGFILLCLIPTYPE139, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V140DANMAKUFONTBGFILLCLIPTYPE139, value).apply()
+
+    var v140subtitleAnimationRotate140: Int
+        get() = mSharedPreferences.getInt(KEY_V140SUBTITLEANIMATIONROTATE140, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V140SUBTITLEANIMATIONROTATE140, value).apply()
+
+    var v140gestureTapZoneVisualScale: Int
+        get() = mSharedPreferences.getInt(KEY_V140GESTURETAPZONEVISUALSCALE, 100)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V140GESTURETAPZONEVISUALSCALE, value).apply()
+
+    var v140castVideoPIPFollowSaturation: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V140CASTVIDEOPIPFOLLOWSATURATION, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V140CASTVIDEOPIPFOLLOWSATURATION, value).apply()
+
+    var v140playlistAutoGroupByGenre140: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V140PLAYLISTAUTOGROUPBYGENRE140, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V140PLAYLISTAUTOGROUPBYGENRE140, value).apply()
+
+    var v140cacheSmartPinningOnStorageIOPS: Int
+        get() = mSharedPreferences.getInt(KEY_V140CACHESMARTPINNINGONSTORAGEIOPS, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V140CACHESMARTPINNINGONSTORAGEIOPS, value).apply()
+
+    var v140progressBarCustomThumbBorder140: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V140PROGRESSBARCUSTOMTHUMBBORDER140, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V140PROGRESSBARCUSTOMTHUMBBORDER140, value).apply()
+
+    var v140volumeNormalizeAttack: Int
+        get() = mSharedPreferences.getInt(KEY_V140VOLUMENORMALIZEATTACK, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V140VOLUMENORMALIZEATTACK, value).apply()
+
+    var v140historyAutoClean140: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V140HISTORYAUTOCLEAN140, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V140HISTORYAUTOCLEAN140, value).apply()
+
+    var v140playbackSpeedPresetsPinchAdjust: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V140PLAYBACKSPEEDPRESETSPINCHADJUST, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V140PLAYBACKSPEEDPRESETSPINCHADJUST, value).apply()
+
+    var v140screenshotAutoShareBilibili: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V140SCREENSHOTAUTOSHAREBILIBILI, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V140SCREENSHOTAUTOSHAREBILIBILI, value).apply()
+
+    var v140videoPIPFollowGamma: Boolean
+        get() = mSharedPreferences.getBoolean(KEY_V140VIDEOPIPFOLLOWGAMMA, false)
+        set(value) = mSharedPreferences.edit().putBoolean(KEY_V140VIDEOPIPFOLLOWGAMMA, value).apply()
+
+    var v140danmakuFontBgFillClipType140: Int
+        get() = mSharedPreferences.getInt(KEY_V140DANMAKUFONTBGFILLCLIPTYPE140, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V140DANMAKUFONTBGFILLCLIPTYPE140, value).apply()
+
+    var v140subtitleAnimationBlur140: Int
+        get() = mSharedPreferences.getInt(KEY_V140SUBTITLEANIMATIONBLUR140, 0)
+        set(value) = mSharedPreferences.edit().putInt(KEY_V140SUBTITLEANIMATIONBLUR140, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -19181,4 +19781,154 @@ class AppPrefs(context: Context) {
         const val KEY_V130DANMAKUFONTBGFILLSHADOWTOGGLE = "v130danmakuFontBgFillShadowToggle"
         const val KEY_V130SUBTITLEANIMATIONROTATE130 = "v130subtitleAnimationRotate130"
     }
+        const val KEY_V131AUDIOCHORUSDEPTH = "KEY_V131AUDIOCHORUSDEPTH" // v131 Audio Chorus Depth
+        const val KEY_V131DANMAKUFONTBGFILLSHADOWCOLOR = "KEY_V131DANMAKUFONTBGFILLSHADOWCOLOR" // v131 Danmaku Font BG Fill Shadow Color
+        const val KEY_V131SUBTITLEANIMATIONROTATE131 = "KEY_V131SUBTITLEANIMATIONROTATE131" // v131 Subtitle Animation Rotate131
+        const val KEY_V131GESTURETAPZONESENSITIVITY = "KEY_V131GESTURETAPZONESENSITIVITY" // v131 Gesture Tap Zone Sensitivity
+        const val KEY_V131CASTVIDEOPIPFOLLOWMAIN = "KEY_V131CASTVIDEOPIPFOLLOWMAIN" // v131 Cast Video PIP Follow Main
+        const val KEY_V131PLAYLISTAUTOGROUPBYGENRE = "KEY_V131PLAYLISTAUTOGROUPBYGENRE" // v131 Playlist Auto Group By Genre
+        const val KEY_V131CACHESMARTPINNINGONSCHEDULE = "KEY_V131CACHESMARTPINNINGONSCHEDULE" // v131 Cache Smart Pinning On Schedule
+        const val KEY_V131PROGRESSBARCUSTOMTHUMBSHADOW131 = "KEY_V131PROGRESSBARCUSTOMTHUMBSHADOW131" // v131 Progress Bar Custom Thumb Shadow131
+        const val KEY_V131VOLUMENORMALIZEMODE = "KEY_V131VOLUMENORMALIZEMODE" // v131 Volume Normalize Mode
+        const val KEY_V131HISTORYAUTOCLEAN131 = "KEY_V131HISTORYAUTOCLEAN131" // v131 History Auto Clean131
+        const val KEY_V131PLAYBACKSPEEDPRESETSQUICKSWITCH = "KEY_V131PLAYBACKSPEEDPRESETSQUICKSWITCH" // v131 Playback Speed Presets Quick Switch
+        const val KEY_V131SCREENSHOTAUTOSHAREMESSENGER = "KEY_V131SCREENSHOTAUTOSHAREMESSENGER" // v131 Screenshot Auto Share Messenger
+        const val KEY_V131VIDEOPIPTRANSITIONSPEED = "KEY_V131VIDEOPIPTRANSITIONSPEED" // v131 Video PIP Transition Speed
+        const val KEY_V131DANMAKUFONTBGFILLSHADOWOFFSETX = "KEY_V131DANMAKUFONTBGFILLSHADOWOFFSETX" // v131 Danmaku Font BG Fill Shadow Offset X
+        const val KEY_V131SUBTITLEANIMATIONTRANSLATE131 = "KEY_V131SUBTITLEANIMATIONTRANSLATE131" // v131 Subtitle Animation Translate131
+        const val KEY_V132AUDIOCHORUSFEEDBACK = "KEY_V132AUDIOCHORUSFEEDBACK" // v132 Audio Chorus Feedback
+        const val KEY_V132DANMAKUFONTBGFILLSHADOWOFFSETY = "KEY_V132DANMAKUFONTBGFILLSHADOWOFFSETY" // v132 Danmaku Font BG Fill Shadow Offset Y
+        const val KEY_V132SUBTITLEANIMATIONTRANSLATE132 = "KEY_V132SUBTITLEANIMATIONTRANSLATE132" // v132 Subtitle Animation Translate132
+        const val KEY_V132GESTURETAPZONEVISUALFEEDBACK = "KEY_V132GESTURETAPZONEVISUALFEEDBACK" // v132 Gesture Tap Zone Visual Feedback
+        const val KEY_V132CASTVIDEOPIPFOLLOWFULLSCREEN = "KEY_V132CASTVIDEOPIPFOLLOWFULLSCREEN" // v132 Cast Video PIP Follow Fullscreen
+        const val KEY_V132PLAYLISTAUTOGROUPBYSERIES132 = "KEY_V132PLAYLISTAUTOGROUPBYSERIES132" // v132 Playlist Auto Group By Series132
+        const val KEY_V132CACHESMARTPINNINGONNETWORKCHANGE = "KEY_V132CACHESMARTPINNINGONNETWORKCHANGE" // v132 Cache Smart Pinning On Network Change
+        const val KEY_V132PROGRESSBARCUSTOMTHUMBGLOW132 = "KEY_V132PROGRESSBARCUSTOMTHUMBGLOW132" // v132 Progress Bar Custom Thumb Glow132
+        const val KEY_V132VOLUMENORMALIZETARGET = "KEY_V132VOLUMENORMALIZETARGET" // v132 Volume Normalize Target
+        const val KEY_V132HISTORYAUTOCLEAN132 = "KEY_V132HISTORYAUTOCLEAN132" // v132 History Auto Clean132
+        const val KEY_V132PLAYBACKSPEEDPRESETSLONGPRESS = "KEY_V132PLAYBACKSPEEDPRESETSLONGPRESS" // v132 Playback Speed Presets Long Press
+        const val KEY_V132SCREENSHOTAUTOSHAREVIBER = "KEY_V132SCREENSHOTAUTOSHAREVIBER" // v132 Screenshot Auto Share Viber
+        const val KEY_V132VIDEOPIPTRANSITIONTYPE = "KEY_V132VIDEOPIPTRANSITIONTYPE" // v132 Video PIP Transition Type
+        const val KEY_V132DANMAKUFONTBGFILLSHADOWBLUR = "KEY_V132DANMAKUFONTBGFILLSHADOWBLUR" // v132 Danmaku Font BG Fill Shadow Blur
+        const val KEY_V132SUBTITLEANIMATIONSCALE132 = "KEY_V132SUBTITLEANIMATIONSCALE132" // v132 Subtitle Animation Scale132
+        const val KEY_V133AUDIOCHORUSMIX = "KEY_V133AUDIOCHORUSMIX" // v133 Audio Chorus Mix
+        const val KEY_V133DANMAKUFONTBGFILLSHADOWOPACITY = "KEY_V133DANMAKUFONTBGFILLSHADOWOPACITY" // v133 Danmaku Font BG Fill Shadow Opacity
+        const val KEY_V133SUBTITLEANIMATIONSCALE133 = "KEY_V133SUBTITLEANIMATIONSCALE133" // v133 Subtitle Animation Scale133
+        const val KEY_V133GESTURETAPZONEHAPTICFEEDBACK = "KEY_V133GESTURETAPZONEHAPTICFEEDBACK" // v133 Gesture Tap Zone Haptic Feedback
+        const val KEY_V133CASTVIDEOPIPFOLLOWPLAYBACK = "KEY_V133CASTVIDEOPIPFOLLOWPLAYBACK" // v133 Cast Video PIP Follow Playback
+        const val KEY_V133PLAYLISTAUTOGROUPBYDATERANGE = "KEY_V133PLAYLISTAUTOGROUPBYDATERANGE" // v133 Playlist Auto Group By Date Range
+        const val KEY_V133CACHESMARTPINNINGONBATTERYLEVEL = "KEY_V133CACHESMARTPINNINGONBATTERYLEVEL" // v133 Cache Smart Pinning On Battery Level
+        const val KEY_V133PROGRESSBARCUSTOMTHUMBBORDER133 = "KEY_V133PROGRESSBARCUSTOMTHUMBBORDER133" // v133 Progress Bar Custom Thumb Border133
+        const val KEY_V133VOLUMENORMALIZECEILING = "KEY_V133VOLUMENORMALIZECEILING" // v133 Volume Normalize Ceiling
+        const val KEY_V133HISTORYAUTOCLEAN133 = "KEY_V133HISTORYAUTOCLEAN133" // v133 History Auto Clean133
+        const val KEY_V133PLAYBACKSPEEDPRESETSDOUBLETAP = "KEY_V133PLAYBACKSPEEDPRESETSDOUBLETAP" // v133 Playback Speed Presets Double Tap
+        const val KEY_V133SCREENSHOTAUTOSHARESIGNAL = "KEY_V133SCREENSHOTAUTOSHARESIGNAL" // v133 Screenshot Auto Share Signal
+        const val KEY_V133VIDEOPIPBACKGROUNDOPACITY = "KEY_V133VIDEOPIPBACKGROUNDOPACITY" // v133 Video PIP Background Opacity
+        const val KEY_V133DANMAKUFONTBGFILLSHADOWSPREAD = "KEY_V133DANMAKUFONTBGFILLSHADOWSPREAD" // v133 Danmaku Font BG Fill Shadow Spread
+        const val KEY_V133SUBTITLEANIMATIONROTATE133 = "KEY_V133SUBTITLEANIMATIONROTATE133" // v133 Subtitle Animation Rotate133
+        const val KEY_V134AUDIOFLANGERTOGGLE134 = "KEY_V134AUDIOFLANGERTOGGLE134" // v134 Audio Flanger Toggle134
+        const val KEY_V134DANMAKUFONTBGFILLSHADOWTYPE = "KEY_V134DANMAKUFONTBGFILLSHADOWTYPE" // v134 Danmaku Font BG Fill Shadow Type
+        const val KEY_V134SUBTITLEANIMATIONROTATE134 = "KEY_V134SUBTITLEANIMATIONROTATE134" // v134 Subtitle Animation Rotate134
+        const val KEY_V134GESTURETAPZONETIMEOUT = "KEY_V134GESTURETAPZONETIMEOUT" // v134 Gesture Tap Zone Timeout
+        const val KEY_V134CASTVIDEOPIPFOLLOWGESTURE = "KEY_V134CASTVIDEOPIPFOLLOWGESTURE" // v134 Cast Video PIP Follow Gesture
+        const val KEY_V134PLAYLISTAUTOGROUPBYWATCHCOUNT = "KEY_V134PLAYLISTAUTOGROUPBYWATCHCOUNT" // v134 Playlist Auto Group By Watch Count
+        const val KEY_V134CACHESMARTPINNINGONSTORAGETYPE = "KEY_V134CACHESMARTPINNINGONSTORAGETYPE" // v134 Cache Smart Pinning On Storage Type
+        const val KEY_V134PROGRESSBARCUSTOMTHUMBSIZE134 = "KEY_V134PROGRESSBARCUSTOMTHUMBSIZE134" // v134 Progress Bar Custom Thumb Size134
+        const val KEY_V134VOLUMENORMALIZEWINDOW = "KEY_V134VOLUMENORMALIZEWINDOW" // v134 Volume Normalize Window
+        const val KEY_V134HISTORYAUTOCLEAN134 = "KEY_V134HISTORYAUTOCLEAN134" // v134 History Auto Clean134
+        const val KEY_V134PLAYBACKSPEEDPRESETSTRIPLETAP = "KEY_V134PLAYBACKSPEEDPRESETSTRIPLETAP" // v134 Playback Speed Presets Triple Tap
+        const val KEY_V134SCREENSHOTAUTOSHAREX = "KEY_V134SCREENSHOTAUTOSHAREX" // v134 Screenshot Auto Share X
+        const val KEY_V134VIDEOPIPFOLLOWORIENTATION = "KEY_V134VIDEOPIPFOLLOWORIENTATION" // v134 Video PIP Follow Orientation
+        const val KEY_V134DANMAKUFONTBGFILLSHADOWTYPE133 = "KEY_V134DANMAKUFONTBGFILLSHADOWTYPE133" // v134 Danmaku Font BG Fill Shadow Type133
+        const val KEY_V134SUBTITLEANIMATIONBLUR134 = "KEY_V134SUBTITLEANIMATIONBLUR134" // v134 Subtitle Animation Blur134
+        const val KEY_V135AUDIOFLANGERRATE = "KEY_V135AUDIOFLANGERRATE" // v135 Audio Flanger Rate
+        const val KEY_V135DANMAKUFONTBGFILLSHADOWTYPE134 = "KEY_V135DANMAKUFONTBGFILLSHADOWTYPE134" // v135 Danmaku Font BG Fill Shadow Type134
+        const val KEY_V135SUBTITLEANIMATIONBLUR135 = "KEY_V135SUBTITLEANIMATIONBLUR135" // v135 Subtitle Animation Blur135
+        const val KEY_V135GESTURETAPZONEMINDISTANCE = "KEY_V135GESTURETAPZONEMINDISTANCE" // v135 Gesture Tap Zone Min Distance
+        const val KEY_V135CASTVIDEOPIPFOLLOWSCREEN = "KEY_V135CASTVIDEOPIPFOLLOWSCREEN" // v135 Cast Video PIP Follow Screen
+        const val KEY_V135PLAYLISTAUTOGROUPBYLIKECOUNT = "KEY_V135PLAYLISTAUTOGROUPBYLIKECOUNT" // v135 Playlist Auto Group By Like Count
+        const val KEY_V135CACHESMARTPINNINGONSTORAGEFREE = "KEY_V135CACHESMARTPINNINGONSTORAGEFREE" // v135 Cache Smart Pinning On Storage Free
+        const val KEY_V135PROGRESSBARCUSTOMTHUMBSIZE135 = "KEY_V135PROGRESSBARCUSTOMTHUMBSIZE135" // v135 Progress Bar Custom Thumb Size135
+        const val KEY_V135VOLUMENORMALIZETHRESHOLD = "KEY_V135VOLUMENORMALIZETHRESHOLD" // v135 Volume Normalize Threshold
+        const val KEY_V135HISTORYAUTOCLEAN135 = "KEY_V135HISTORYAUTOCLEAN135" // v135 History Auto Clean135
+        const val KEY_V135PLAYBACKSPEEDPRESETSGESTURE = "KEY_V135PLAYBACKSPEEDPRESETSGESTURE" // v135 Playback Speed Presets Gesture
+        const val KEY_V135SCREENSHOTAUTOSHARETUMBLR = "KEY_V135SCREENSHOTAUTOSHARETUMBLR" // v135 Screenshot Auto Share Tumblr
+        const val KEY_V135VIDEOPIPFOLLOWSYSTEMTHEME = "KEY_V135VIDEOPIPFOLLOWSYSTEMTHEME" // v135 Video PIP Follow System Theme
+        const val KEY_V135DANMAKUFONTBGFILLCLIPTOGGLE = "KEY_V135DANMAKUFONTBGFILLCLIPTOGGLE" // v135 Danmaku Font BG Fill Clip Toggle
+        const val KEY_V135SUBTITLEANIMATIONFADEIN135 = "KEY_V135SUBTITLEANIMATIONFADEIN135" // v135 Subtitle Animation Fade In135
+        const val KEY_V136AUDIOFLANGERDEPTH = "KEY_V136AUDIOFLANGERDEPTH" // v136 Audio Flanger Depth
+        const val KEY_V136DANMAKUFONTBGFILLCLIPPATH = "KEY_V136DANMAKUFONTBGFILLCLIPPATH" // v136 Danmaku Font BG Fill Clip Path
+        const val KEY_V136SUBTITLEANIMATIONFADEIN136 = "KEY_V136SUBTITLEANIMATIONFADEIN136" // v136 Subtitle Animation Fade In136
+        const val KEY_V136GESTURETAPZONEVISUALSTYLE = "KEY_V136GESTURETAPZONEVISUALSTYLE" // v136 Gesture Tap Zone Visual Style
+        const val KEY_V136CASTVIDEOPIPFOLLOWORIENTATION = "KEY_V136CASTVIDEOPIPFOLLOWORIENTATION" // v136 Cast Video PIP Follow Orientation
+        const val KEY_V136PLAYLISTAUTOGROUPBYCOMMENTCOUNT = "KEY_V136PLAYLISTAUTOGROUPBYCOMMENTCOUNT" // v136 Playlist Auto Group By Comment Count
+        const val KEY_V136CACHESMARTPINNINGONNETWORKSPEED = "KEY_V136CACHESMARTPINNINGONNETWORKSPEED" // v136 Cache Smart Pinning On Network Speed
+        const val KEY_V136PROGRESSBARCUSTOMTHUMBCOLOR136 = "KEY_V136PROGRESSBARCUSTOMTHUMBCOLOR136" // v136 Progress Bar Custom Thumb Color136
+        const val KEY_V136VOLUMENORMALIZEADAPTIVE = "KEY_V136VOLUMENORMALIZEADAPTIVE" // v136 Volume Normalize Adaptive
+        const val KEY_V136HISTORYAUTOCLEAN136 = "KEY_V136HISTORYAUTOCLEAN136" // v136 History Auto Clean136
+        const val KEY_V136PLAYBACKSPEEDPRESETSQUICKACCESS = "KEY_V136PLAYBACKSPEEDPRESETSQUICKACCESS" // v136 Playback Speed Presets Quick Access
+        const val KEY_V136SCREENSHOTAUTOSHAREPINTEREST = "KEY_V136SCREENSHOTAUTOSHAREPINTEREST" // v136 Screenshot Auto Share Pinterest
+        const val KEY_V136VIDEOPIPFOLLOWAUDIOFOCUS = "KEY_V136VIDEOPIPFOLLOWAUDIOFOCUS" // v136 Video PIP Follow Audio Focus
+        const val KEY_V136DANMAKUFONTBGFILLCLIPPATH135 = "KEY_V136DANMAKUFONTBGFILLCLIPPATH135" // v136 Danmaku Font BG Fill Clip Path135
+        const val KEY_V136SUBTITLEANIMATIONFADEOUT136 = "KEY_V136SUBTITLEANIMATIONFADEOUT136" // v136 Subtitle Animation Fade Out136
+        const val KEY_V137AUDIOFLANGERFEEDBACK136 = "KEY_V137AUDIOFLANGERFEEDBACK136" // v137 Audio Flanger Feedback136
+        const val KEY_V137DANMAKUFONTBGFILLCLIPPATH136 = "KEY_V137DANMAKUFONTBGFILLCLIPPATH136" // v137 Danmaku Font BG Fill Clip Path136
+        const val KEY_V137SUBTITLEANIMATIONFADEOUT137 = "KEY_V137SUBTITLEANIMATIONFADEOUT137" // v137 Subtitle Animation Fade Out137
+        const val KEY_V137GESTURETAPZONEVISUALCOLOR = "KEY_V137GESTURETAPZONEVISUALCOLOR" // v137 Gesture Tap Zone Visual Color
+        const val KEY_V137CASTVIDEOPIPFOLLOWBATTERY = "KEY_V137CASTVIDEOPIPFOLLOWBATTERY" // v137 Cast Video PIP Follow Battery
+        const val KEY_V137PLAYLISTAUTOGROUPBYSHARECOUNT = "KEY_V137PLAYLISTAUTOGROUPBYSHARECOUNT" // v137 Playlist Auto Group By Share Count
+        const val KEY_V137CACHESMARTPINNINGONNETWORKTYPE = "KEY_V137CACHESMARTPINNINGONNETWORKTYPE" // v137 Cache Smart Pinning On Network Type
+        const val KEY_V137PROGRESSBARCUSTOMTHUMBCOLOR137 = "KEY_V137PROGRESSBARCUSTOMTHUMBCOLOR137" // v137 Progress Bar Custom Thumb Color137
+        const val KEY_V137VOLUMENORMALIZESMOOTHING = "KEY_V137VOLUMENORMALIZESMOOTHING" // v137 Volume Normalize Smoothing
+        const val KEY_V137HISTORYAUTOCLEAN137 = "KEY_V137HISTORYAUTOCLEAN137" // v137 History Auto Clean137
+        const val KEY_V137PLAYBACKSPEEDPRESETSNOTIFICATIONTOGGLE = "KEY_V137PLAYBACKSPEEDPRESETSNOTIFICATIONTOGGLE" // v137 Playback Speed Presets Notification Toggle
+        const val KEY_V137SCREENSHOTAUTOSHARETWITCH = "KEY_V137SCREENSHOTAUTOSHARETWITCH" // v137 Screenshot Auto Share Twitch
+        const val KEY_V137VIDEOPIPFOLLOWDONOTDISTURB = "KEY_V137VIDEOPIPFOLLOWDONOTDISTURB" // v137 Video PIP Follow Do Not Disturb
+        const val KEY_V137DANMAKUFONTBGFILLCLIPRADIUS = "KEY_V137DANMAKUFONTBGFILLCLIPRADIUS" // v137 Danmaku Font BG Fill Clip Radius
+        const val KEY_V137SUBTITLEANIMATIONTRANSLATE137 = "KEY_V137SUBTITLEANIMATIONTRANSLATE137" // v137 Subtitle Animation Translate137
+        const val KEY_V138AUDIOPHASERTOGGLE138 = "KEY_V138AUDIOPHASERTOGGLE138" // v138 Audio Phaser Toggle138
+        const val KEY_V138DANMAKUFONTBGFILLCLIPRADIUS137 = "KEY_V138DANMAKUFONTBGFILLCLIPRADIUS137" // v138 Danmaku Font BG Fill Clip Radius137
+        const val KEY_V138SUBTITLEANIMATIONTRANSLATE138 = "KEY_V138SUBTITLEANIMATIONTRANSLATE138" // v138 Subtitle Animation Translate138
+        const val KEY_V138GESTURETAPZONEVISUALOPACITY = "KEY_V138GESTURETAPZONEVISUALOPACITY" // v138 Gesture Tap Zone Visual Opacity
+        const val KEY_V138CASTVIDEOPIPFOLLOWSTORAGE = "KEY_V138CASTVIDEOPIPFOLLOWSTORAGE" // v138 Cast Video PIP Follow Storage
+        const val KEY_V138PLAYLISTAUTOGROUPBYFAVCOUNT = "KEY_V138PLAYLISTAUTOGROUPBYFAVCOUNT" // v138 Playlist Auto Group By Fav Count
+        const val KEY_V138CACHESMARTPINNINGONSTORAGEREAD = "KEY_V138CACHESMARTPINNINGONSTORAGEREAD" // v138 Cache Smart Pinning On Storage Read
+        const val KEY_V138PROGRESSBARCUSTOMTHUMBSHADOW138 = "KEY_V138PROGRESSBARCUSTOMTHUMBSHADOW138" // v138 Progress Bar Custom Thumb Shadow138
+        const val KEY_V138VOLUMENORMALIZEGATE = "KEY_V138VOLUMENORMALIZEGATE" // v138 Volume Normalize Gate
+        const val KEY_V138HISTORYAUTOCLEAN138 = "KEY_V138HISTORYAUTOCLEAN138" // v138 History Auto Clean138
+        const val KEY_V138PLAYBACKSPEEDPRESETSDRAGADJUST = "KEY_V138PLAYBACKSPEEDPRESETSDRAGADJUST" // v138 Playback Speed Presets Drag Adjust
+        const val KEY_V138SCREENSHOTAUTOSHAREYOUTUBE = "KEY_V138SCREENSHOTAUTOSHAREYOUTUBE" // v138 Screenshot Auto Share YouTube
+        const val KEY_V138VIDEOPIPFOLLOWBRIGHTNESS = "KEY_V138VIDEOPIPFOLLOWBRIGHTNESS" // v138 Video PIP Follow Brightness
+        const val KEY_V138DANMAKUFONTBGFILLCLIPRADIUS138 = "KEY_V138DANMAKUFONTBGFILLCLIPRADIUS138" // v138 Danmaku Font BG Fill Clip Radius138
+        const val KEY_V138SUBTITLEANIMATIONSCALE138 = "KEY_V138SUBTITLEANIMATIONSCALE138" // v138 Subtitle Animation Scale138
+        const val KEY_V139AUDIOPHASERRATE = "KEY_V139AUDIOPHASERRATE" // v139 Audio Phaser Rate
+        const val KEY_V139DANMAKUFONTBGFILLCLIPRADIUS139 = "KEY_V139DANMAKUFONTBGFILLCLIPRADIUS139" // v139 Danmaku Font BG Fill Clip Radius139
+        const val KEY_V139SUBTITLEANIMATIONSCALE139 = "KEY_V139SUBTITLEANIMATIONSCALE139" // v139 Subtitle Animation Scale139
+        const val KEY_V139GESTURETAPZONEVISUALDURATION = "KEY_V139GESTURETAPZONEVISUALDURATION" // v139 Gesture Tap Zone Visual Duration
+        const val KEY_V139CASTVIDEOPIPFOLLOWVOLUME = "KEY_V139CASTVIDEOPIPFOLLOWVOLUME" // v139 Cast Video PIP Follow Volume
+        const val KEY_V139PLAYLISTAUTOGROUPBYDANCOUNT = "KEY_V139PLAYLISTAUTOGROUPBYDANCOUNT" // v139 Playlist Auto Group By Dan Count
+        const val KEY_V139CACHESMARTPINNINGONSTORAGEWRITE = "KEY_V139CACHESMARTPINNINGONSTORAGEWRITE" // v139 Cache Smart Pinning On Storage Write
+        const val KEY_V139PROGRESSBARCUSTOMTHUMBGLOW139 = "KEY_V139PROGRESSBARCUSTOMTHUMBGLOW139" // v139 Progress Bar Custom Thumb Glow139
+        const val KEY_V139VOLUMENORMALIZEKNEE = "KEY_V139VOLUMENORMALIZEKNEE" // v139 Volume Normalize Knee
+        const val KEY_V139HISTORYAUTOCLEAN139 = "KEY_V139HISTORYAUTOCLEAN139" // v139 History Auto Clean139
+        const val KEY_V139PLAYBACKSPEEDPRESETSSWIPEADJUST = "KEY_V139PLAYBACKSPEEDPRESETSSWIPEADJUST" // v139 Playback Speed Presets Swipe Adjust
+        const val KEY_V139SCREENSHOTAUTOSHARETWITCHCLIP = "KEY_V139SCREENSHOTAUTOSHARETWITCHCLIP" // v139 Screenshot Auto Share Twitch Clip
+        const val KEY_V139VIDEOPIPFOLLOWCONTRAST = "KEY_V139VIDEOPIPFOLLOWCONTRAST" // v139 Video PIP Follow Contrast
+        const val KEY_V139DANMAKUFONTBGFILLCLIPTYPE = "KEY_V139DANMAKUFONTBGFILLCLIPTYPE" // v139 Danmaku Font BG Fill Clip Type
+        const val KEY_V139SUBTITLEANIMATIONROTATE139 = "KEY_V139SUBTITLEANIMATIONROTATE139" // v139 Subtitle Animation Rotate139
+        const val KEY_V140AUDIOPHASERDEPTH = "KEY_V140AUDIOPHASERDEPTH" // v140 Audio Phaser Depth
+        const val KEY_V140DANMAKUFONTBGFILLCLIPTYPE139 = "KEY_V140DANMAKUFONTBGFILLCLIPTYPE139" // v140 Danmaku Font BG Fill Clip Type139
+        const val KEY_V140SUBTITLEANIMATIONROTATE140 = "KEY_V140SUBTITLEANIMATIONROTATE140" // v140 Subtitle Animation Rotate140
+        const val KEY_V140GESTURETAPZONEVISUALSCALE = "KEY_V140GESTURETAPZONEVISUALSCALE" // v140 Gesture Tap Zone Visual Scale
+        const val KEY_V140CASTVIDEOPIPFOLLOWSATURATION = "KEY_V140CASTVIDEOPIPFOLLOWSATURATION" // v140 Cast Video PIP Follow Saturation
+        const val KEY_V140PLAYLISTAUTOGROUPBYGENRE140 = "KEY_V140PLAYLISTAUTOGROUPBYGENRE140" // v140 Playlist Auto Group By Genre140
+        const val KEY_V140CACHESMARTPINNINGONSTORAGEIOPS = "KEY_V140CACHESMARTPINNINGONSTORAGEIOPS" // v140 Cache Smart Pinning On Storage IOPS
+        const val KEY_V140PROGRESSBARCUSTOMTHUMBBORDER140 = "KEY_V140PROGRESSBARCUSTOMTHUMBBORDER140" // v140 Progress Bar Custom Thumb Border140
+        const val KEY_V140VOLUMENORMALIZEATTACK = "KEY_V140VOLUMENORMALIZEATTACK" // v140 Volume Normalize Attack
+        const val KEY_V140HISTORYAUTOCLEAN140 = "KEY_V140HISTORYAUTOCLEAN140" // v140 History Auto Clean140
+        const val KEY_V140PLAYBACKSPEEDPRESETSPINCHADJUST = "KEY_V140PLAYBACKSPEEDPRESETSPINCHADJUST" // v140 Playback Speed Presets Pinch Adjust
+        const val KEY_V140SCREENSHOTAUTOSHAREBILIBILI = "KEY_V140SCREENSHOTAUTOSHAREBILIBILI" // v140 Screenshot Auto Share Bilibili
+        const val KEY_V140VIDEOPIPFOLLOWGAMMA = "KEY_V140VIDEOPIPFOLLOWGAMMA" // v140 Video PIP Follow Gamma
+        const val KEY_V140DANMAKUFONTBGFILLCLIPTYPE140 = "KEY_V140DANMAKUFONTBGFILLCLIPTYPE140" // v140 Danmaku Font BG Fill Clip Type140
+        const val KEY_V140SUBTITLEANIMATIONBLUR140 = "KEY_V140SUBTITLEANIMATIONBLUR140" // v140 Subtitle Animation Blur140
 }
