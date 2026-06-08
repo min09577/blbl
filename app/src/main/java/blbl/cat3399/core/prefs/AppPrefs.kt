@@ -58848,6 +58848,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V870PLANAUTOSCHEDULE870, false)
         set(value) = prefs.edit().putBoolean(KEY_V870PLANAUTOSCHEDULE870, value).apply()
 
+    var v871platformAutoDetect871: Boolean
+        get() = prefs.getBoolean(KEY_V871PLATFORMAUTODETECT871, false)
+        set(value) = prefs.edit().putBoolean(KEY_V871PLATFORMAUTODETECT871, value).apply()
+
+    var v871playAutoResume871: Boolean
+        get() = prefs.getBoolean(KEY_V871PLAYAUTORESUME871, false)
+        set(value) = prefs.edit().putBoolean(KEY_V871PLAYAUTORESUME871, value).apply()
+
+    var v871pointerAutoLock871: Boolean
+        get() = prefs.getBoolean(KEY_V871POINTERAUTOLOCK871, false)
+        set(value) = prefs.edit().putBoolean(KEY_V871POINTERAUTOLOCK871, value).apply()
+
+    var v871pollAutoInterval871: Boolean
+        get() = prefs.getBoolean(KEY_V871POLLAUTOINTERVAL871, false)
+        set(value) = prefs.edit().putBoolean(KEY_V871POLLAUTOINTERVAL871, value).apply()
+
+    var v871poolAutoRecycle871: Boolean
+        get() = prefs.getBoolean(KEY_V871POOLAUTORECYCLE871, false)
+        set(value) = prefs.edit().putBoolean(KEY_V871POOLAUTORECYCLE871, value).apply()
+
+    var v871popAutoDismiss871: Boolean
+        get() = prefs.getBoolean(KEY_V871POPAUTODISMISS871, false)
+        set(value) = prefs.edit().putBoolean(KEY_V871POPAUTODISMISS871, value).apply()
+
+    var v871portAutoForward871: Boolean
+        get() = prefs.getBoolean(KEY_V871PORTAUTOFORWARD871, false)
+        set(value) = prefs.edit().putBoolean(KEY_V871PORTAUTOFORWARD871, value).apply()
+
+    var v871positionAutoSave871: Boolean
+        get() = prefs.getBoolean(KEY_V871POSITIONAUTOSAVE871, false)
+        set(value) = prefs.edit().putBoolean(KEY_V871POSITIONAUTOSAVE871, value).apply()
+
+    var v871postAutoSchedule871: Boolean
+        get() = prefs.getBoolean(KEY_V871POSTAUTOSCHEDULE871, false)
+        set(value) = prefs.edit().putBoolean(KEY_V871POSTAUTOSCHEDULE871, value).apply()
+
+    var v871powerAutoSave871: Boolean
+        get() = prefs.getBoolean(KEY_V871POWERAUTOSAVE871, false)
+        set(value) = prefs.edit().putBoolean(KEY_V871POWERAUTOSAVE871, value).apply()
+
+    var v871preAutoLoad871: Boolean
+        get() = prefs.getBoolean(KEY_V871PREAUTOLOAD871, false)
+        set(value) = prefs.edit().putBoolean(KEY_V871PREAUTOLOAD871, value).apply()
+
+    var v871precisionAutoRound871: Boolean
+        get() = prefs.getBoolean(KEY_V871PRECISIONAUTOROUND871, false)
+        set(value) = prefs.edit().putBoolean(KEY_V871PRECISIONAUTOROUND871, value).apply()
+
+    var v871predictAutoPrefetch871: Boolean
+        get() = prefs.getBoolean(KEY_V871PREDICTAUTOPREFETCH871, false)
+        set(value) = prefs.edit().putBoolean(KEY_V871PREDICTAUTOPREFETCH871, value).apply()
+
+    var v871prefixAutoTrim871: Boolean
+        get() = prefs.getBoolean(KEY_V871PREFIXAUTOTRIM871, false)
+        set(value) = prefs.edit().putBoolean(KEY_V871PREFIXAUTOTRIM871, value).apply()
+
+    var v871preloadAutoCache871: Boolean
+        get() = prefs.getBoolean(KEY_V871PRELOADAUTOCACHE871, false)
+        set(value) = prefs.edit().putBoolean(KEY_V871PRELOADAUTOCACHE871, value).apply()
+
+    var v872platformAutoDetect872: Boolean
+        get() = prefs.getBoolean(KEY_V872PLATFORMAUTODETECT872, false)
+        set(value) = prefs.edit().putBoolean(KEY_V872PLATFORMAUTODETECT872, value).apply()
+
+    var v872playAutoResume872: Boolean
+        get() = prefs.getBoolean(KEY_V872PLAYAUTORESUME872, false)
+        set(value) = prefs.edit().putBoolean(KEY_V872PLAYAUTORESUME872, value).apply()
+
+    var v872pointerAutoLock872: Boolean
+        get() = prefs.getBoolean(KEY_V872POINTERAUTOLOCK872, false)
+        set(value) = prefs.edit().putBoolean(KEY_V872POINTERAUTOLOCK872, value).apply()
+
+    var v872pollAutoInterval872: Boolean
+        get() = prefs.getBoolean(KEY_V872POLLAUTOINTERVAL872, false)
+        set(value) = prefs.edit().putBoolean(KEY_V872POLLAUTOINTERVAL872, value).apply()
+
+    var v872poolAutoRecycle872: Boolean
+        get() = prefs.getBoolean(KEY_V872POOLAUTORECYCLE872, false)
+        set(value) = prefs.edit().putBoolean(KEY_V872POOLAUTORECYCLE872, value).apply()
+
+    var v872popAutoDismiss872: Boolean
+        get() = prefs.getBoolean(KEY_V872POPAUTODISMISS872, false)
+        set(value) = prefs.edit().putBoolean(KEY_V872POPAUTODISMISS872, value).apply()
+
+    var v872portAutoForward872: Boolean
+        get() = prefs.getBoolean(KEY_V872PORTAUTOFORWARD872, false)
+        set(value) = prefs.edit().putBoolean(KEY_V872PORTAUTOFORWARD872, value).apply()
+
+    var v872positionAutoSave872: Boolean
+        get() = prefs.getBoolean(KEY_V872POSITIONAUTOSAVE872, false)
+        set(value) = prefs.edit().putBoolean(KEY_V872POSITIONAUTOSAVE872, value).apply()
+
+    var v872postAutoSchedule872: Boolean
+        get() = prefs.getBoolean(KEY_V872POSTAUTOSCHEDULE872, false)
+        set(value) = prefs.edit().putBoolean(KEY_V872POSTAUTOSCHEDULE872, value).apply()
+
+    var v872powerAutoSave872: Boolean
+        get() = prefs.getBoolean(KEY_V872POWERAUTOSAVE872, false)
+        set(value) = prefs.edit().putBoolean(KEY_V872POWERAUTOSAVE872, value).apply()
+
+    var v872preAutoLoad872: Boolean
+        get() = prefs.getBoolean(KEY_V872PREAUTOLOAD872, false)
+        set(value) = prefs.edit().putBoolean(KEY_V872PREAUTOLOAD872, value).apply()
+
+    var v872precisionAutoRound872: Boolean
+        get() = prefs.getBoolean(KEY_V872PRECISIONAUTOROUND872, false)
+        set(value) = prefs.edit().putBoolean(KEY_V872PRECISIONAUTOROUND872, value).apply()
+
+    var v872predictAutoPrefetch872: Boolean
+        get() = prefs.getBoolean(KEY_V872PREDICTAUTOPREFETCH872, false)
+        set(value) = prefs.edit().putBoolean(KEY_V872PREDICTAUTOPREFETCH872, value).apply()
+
+    var v872prefixAutoTrim872: Boolean
+        get() = prefs.getBoolean(KEY_V872PREFIXAUTOTRIM872, false)
+        set(value) = prefs.edit().putBoolean(KEY_V872PREFIXAUTOTRIM872, value).apply()
+
+    var v872preloadAutoCache872: Boolean
+        get() = prefs.getBoolean(KEY_V872PRELOADAUTOCACHE872, false)
+        set(value) = prefs.edit().putBoolean(KEY_V872PRELOADAUTOCACHE872, value).apply()
+
+    var v873platformAutoDetect873: Boolean
+        get() = prefs.getBoolean(KEY_V873PLATFORMAUTODETECT873, false)
+        set(value) = prefs.edit().putBoolean(KEY_V873PLATFORMAUTODETECT873, value).apply()
+
+    var v873playAutoResume873: Boolean
+        get() = prefs.getBoolean(KEY_V873PLAYAUTORESUME873, false)
+        set(value) = prefs.edit().putBoolean(KEY_V873PLAYAUTORESUME873, value).apply()
+
+    var v873pointerAutoLock873: Boolean
+        get() = prefs.getBoolean(KEY_V873POINTERAUTOLOCK873, false)
+        set(value) = prefs.edit().putBoolean(KEY_V873POINTERAUTOLOCK873, value).apply()
+
+    var v873pollAutoInterval873: Boolean
+        get() = prefs.getBoolean(KEY_V873POLLAUTOINTERVAL873, false)
+        set(value) = prefs.edit().putBoolean(KEY_V873POLLAUTOINTERVAL873, value).apply()
+
+    var v873poolAutoRecycle873: Boolean
+        get() = prefs.getBoolean(KEY_V873POOLAUTORECYCLE873, false)
+        set(value) = prefs.edit().putBoolean(KEY_V873POOLAUTORECYCLE873, value).apply()
+
+    var v873popAutoDismiss873: Boolean
+        get() = prefs.getBoolean(KEY_V873POPAUTODISMISS873, false)
+        set(value) = prefs.edit().putBoolean(KEY_V873POPAUTODISMISS873, value).apply()
+
+    var v873portAutoForward873: Boolean
+        get() = prefs.getBoolean(KEY_V873PORTAUTOFORWARD873, false)
+        set(value) = prefs.edit().putBoolean(KEY_V873PORTAUTOFORWARD873, value).apply()
+
+    var v873positionAutoSave873: Boolean
+        get() = prefs.getBoolean(KEY_V873POSITIONAUTOSAVE873, false)
+        set(value) = prefs.edit().putBoolean(KEY_V873POSITIONAUTOSAVE873, value).apply()
+
+    var v873postAutoSchedule873: Boolean
+        get() = prefs.getBoolean(KEY_V873POSTAUTOSCHEDULE873, false)
+        set(value) = prefs.edit().putBoolean(KEY_V873POSTAUTOSCHEDULE873, value).apply()
+
+    var v873powerAutoSave873: Boolean
+        get() = prefs.getBoolean(KEY_V873POWERAUTOSAVE873, false)
+        set(value) = prefs.edit().putBoolean(KEY_V873POWERAUTOSAVE873, value).apply()
+
+    var v873preAutoLoad873: Boolean
+        get() = prefs.getBoolean(KEY_V873PREAUTOLOAD873, false)
+        set(value) = prefs.edit().putBoolean(KEY_V873PREAUTOLOAD873, value).apply()
+
+    var v873precisionAutoRound873: Boolean
+        get() = prefs.getBoolean(KEY_V873PRECISIONAUTOROUND873, false)
+        set(value) = prefs.edit().putBoolean(KEY_V873PRECISIONAUTOROUND873, value).apply()
+
+    var v873predictAutoPrefetch873: Boolean
+        get() = prefs.getBoolean(KEY_V873PREDICTAUTOPREFETCH873, false)
+        set(value) = prefs.edit().putBoolean(KEY_V873PREDICTAUTOPREFETCH873, value).apply()
+
+    var v873prefixAutoTrim873: Boolean
+        get() = prefs.getBoolean(KEY_V873PREFIXAUTOTRIM873, false)
+        set(value) = prefs.edit().putBoolean(KEY_V873PREFIXAUTOTRIM873, value).apply()
+
+    var v873preloadAutoCache873: Boolean
+        get() = prefs.getBoolean(KEY_V873PRELOADAUTOCACHE873, false)
+        set(value) = prefs.edit().putBoolean(KEY_V873PRELOADAUTOCACHE873, value).apply()
+
+    var v874platformAutoDetect874: Boolean
+        get() = prefs.getBoolean(KEY_V874PLATFORMAUTODETECT874, false)
+        set(value) = prefs.edit().putBoolean(KEY_V874PLATFORMAUTODETECT874, value).apply()
+
+    var v874playAutoResume874: Boolean
+        get() = prefs.getBoolean(KEY_V874PLAYAUTORESUME874, false)
+        set(value) = prefs.edit().putBoolean(KEY_V874PLAYAUTORESUME874, value).apply()
+
+    var v874pointerAutoLock874: Boolean
+        get() = prefs.getBoolean(KEY_V874POINTERAUTOLOCK874, false)
+        set(value) = prefs.edit().putBoolean(KEY_V874POINTERAUTOLOCK874, value).apply()
+
+    var v874pollAutoInterval874: Boolean
+        get() = prefs.getBoolean(KEY_V874POLLAUTOINTERVAL874, false)
+        set(value) = prefs.edit().putBoolean(KEY_V874POLLAUTOINTERVAL874, value).apply()
+
+    var v874poolAutoRecycle874: Boolean
+        get() = prefs.getBoolean(KEY_V874POOLAUTORECYCLE874, false)
+        set(value) = prefs.edit().putBoolean(KEY_V874POOLAUTORECYCLE874, value).apply()
+
+    var v874popAutoDismiss874: Boolean
+        get() = prefs.getBoolean(KEY_V874POPAUTODISMISS874, false)
+        set(value) = prefs.edit().putBoolean(KEY_V874POPAUTODISMISS874, value).apply()
+
+    var v874portAutoForward874: Boolean
+        get() = prefs.getBoolean(KEY_V874PORTAUTOFORWARD874, false)
+        set(value) = prefs.edit().putBoolean(KEY_V874PORTAUTOFORWARD874, value).apply()
+
+    var v874positionAutoSave874: Boolean
+        get() = prefs.getBoolean(KEY_V874POSITIONAUTOSAVE874, false)
+        set(value) = prefs.edit().putBoolean(KEY_V874POSITIONAUTOSAVE874, value).apply()
+
+    var v874postAutoSchedule874: Boolean
+        get() = prefs.getBoolean(KEY_V874POSTAUTOSCHEDULE874, false)
+        set(value) = prefs.edit().putBoolean(KEY_V874POSTAUTOSCHEDULE874, value).apply()
+
+    var v874powerAutoSave874: Boolean
+        get() = prefs.getBoolean(KEY_V874POWERAUTOSAVE874, false)
+        set(value) = prefs.edit().putBoolean(KEY_V874POWERAUTOSAVE874, value).apply()
+
+    var v874preAutoLoad874: Boolean
+        get() = prefs.getBoolean(KEY_V874PREAUTOLOAD874, false)
+        set(value) = prefs.edit().putBoolean(KEY_V874PREAUTOLOAD874, value).apply()
+
+    var v874precisionAutoRound874: Boolean
+        get() = prefs.getBoolean(KEY_V874PRECISIONAUTOROUND874, false)
+        set(value) = prefs.edit().putBoolean(KEY_V874PRECISIONAUTOROUND874, value).apply()
+
+    var v874predictAutoPrefetch874: Boolean
+        get() = prefs.getBoolean(KEY_V874PREDICTAUTOPREFETCH874, false)
+        set(value) = prefs.edit().putBoolean(KEY_V874PREDICTAUTOPREFETCH874, value).apply()
+
+    var v874prefixAutoTrim874: Boolean
+        get() = prefs.getBoolean(KEY_V874PREFIXAUTOTRIM874, false)
+        set(value) = prefs.edit().putBoolean(KEY_V874PREFIXAUTOTRIM874, value).apply()
+
+    var v874preloadAutoCache874: Boolean
+        get() = prefs.getBoolean(KEY_V874PRELOADAUTOCACHE874, false)
+        set(value) = prefs.edit().putBoolean(KEY_V874PRELOADAUTOCACHE874, value).apply()
+
+    var v875platformAutoDetect875: Boolean
+        get() = prefs.getBoolean(KEY_V875PLATFORMAUTODETECT875, false)
+        set(value) = prefs.edit().putBoolean(KEY_V875PLATFORMAUTODETECT875, value).apply()
+
+    var v875playAutoResume875: Boolean
+        get() = prefs.getBoolean(KEY_V875PLAYAUTORESUME875, false)
+        set(value) = prefs.edit().putBoolean(KEY_V875PLAYAUTORESUME875, value).apply()
+
+    var v875pointerAutoLock875: Boolean
+        get() = prefs.getBoolean(KEY_V875POINTERAUTOLOCK875, false)
+        set(value) = prefs.edit().putBoolean(KEY_V875POINTERAUTOLOCK875, value).apply()
+
+    var v875pollAutoInterval875: Boolean
+        get() = prefs.getBoolean(KEY_V875POLLAUTOINTERVAL875, false)
+        set(value) = prefs.edit().putBoolean(KEY_V875POLLAUTOINTERVAL875, value).apply()
+
+    var v875poolAutoRecycle875: Boolean
+        get() = prefs.getBoolean(KEY_V875POOLAUTORECYCLE875, false)
+        set(value) = prefs.edit().putBoolean(KEY_V875POOLAUTORECYCLE875, value).apply()
+
+    var v875popAutoDismiss875: Boolean
+        get() = prefs.getBoolean(KEY_V875POPAUTODISMISS875, false)
+        set(value) = prefs.edit().putBoolean(KEY_V875POPAUTODISMISS875, value).apply()
+
+    var v875portAutoForward875: Boolean
+        get() = prefs.getBoolean(KEY_V875PORTAUTOFORWARD875, false)
+        set(value) = prefs.edit().putBoolean(KEY_V875PORTAUTOFORWARD875, value).apply()
+
+    var v875positionAutoSave875: Boolean
+        get() = prefs.getBoolean(KEY_V875POSITIONAUTOSAVE875, false)
+        set(value) = prefs.edit().putBoolean(KEY_V875POSITIONAUTOSAVE875, value).apply()
+
+    var v875postAutoSchedule875: Boolean
+        get() = prefs.getBoolean(KEY_V875POSTAUTOSCHEDULE875, false)
+        set(value) = prefs.edit().putBoolean(KEY_V875POSTAUTOSCHEDULE875, value).apply()
+
+    var v875powerAutoSave875: Boolean
+        get() = prefs.getBoolean(KEY_V875POWERAUTOSAVE875, false)
+        set(value) = prefs.edit().putBoolean(KEY_V875POWERAUTOSAVE875, value).apply()
+
+    var v875preAutoLoad875: Boolean
+        get() = prefs.getBoolean(KEY_V875PREAUTOLOAD875, false)
+        set(value) = prefs.edit().putBoolean(KEY_V875PREAUTOLOAD875, value).apply()
+
+    var v875precisionAutoRound875: Boolean
+        get() = prefs.getBoolean(KEY_V875PRECISIONAUTOROUND875, false)
+        set(value) = prefs.edit().putBoolean(KEY_V875PRECISIONAUTOROUND875, value).apply()
+
+    var v875predictAutoPrefetch875: Boolean
+        get() = prefs.getBoolean(KEY_V875PREDICTAUTOPREFETCH875, false)
+        set(value) = prefs.edit().putBoolean(KEY_V875PREDICTAUTOPREFETCH875, value).apply()
+
+    var v875prefixAutoTrim875: Boolean
+        get() = prefs.getBoolean(KEY_V875PREFIXAUTOTRIM875, false)
+        set(value) = prefs.edit().putBoolean(KEY_V875PREFIXAUTOTRIM875, value).apply()
+
+    var v875preloadAutoCache875: Boolean
+        get() = prefs.getBoolean(KEY_V875PRELOADAUTOCACHE875, false)
+        set(value) = prefs.edit().putBoolean(KEY_V875PRELOADAUTOCACHE875, value).apply()
+
+    var v876platformAutoDetect876: Boolean
+        get() = prefs.getBoolean(KEY_V876PLATFORMAUTODETECT876, false)
+        set(value) = prefs.edit().putBoolean(KEY_V876PLATFORMAUTODETECT876, value).apply()
+
+    var v876playAutoResume876: Boolean
+        get() = prefs.getBoolean(KEY_V876PLAYAUTORESUME876, false)
+        set(value) = prefs.edit().putBoolean(KEY_V876PLAYAUTORESUME876, value).apply()
+
+    var v876pointerAutoLock876: Boolean
+        get() = prefs.getBoolean(KEY_V876POINTERAUTOLOCK876, false)
+        set(value) = prefs.edit().putBoolean(KEY_V876POINTERAUTOLOCK876, value).apply()
+
+    var v876pollAutoInterval876: Boolean
+        get() = prefs.getBoolean(KEY_V876POLLAUTOINTERVAL876, false)
+        set(value) = prefs.edit().putBoolean(KEY_V876POLLAUTOINTERVAL876, value).apply()
+
+    var v876poolAutoRecycle876: Boolean
+        get() = prefs.getBoolean(KEY_V876POOLAUTORECYCLE876, false)
+        set(value) = prefs.edit().putBoolean(KEY_V876POOLAUTORECYCLE876, value).apply()
+
+    var v876popAutoDismiss876: Boolean
+        get() = prefs.getBoolean(KEY_V876POPAUTODISMISS876, false)
+        set(value) = prefs.edit().putBoolean(KEY_V876POPAUTODISMISS876, value).apply()
+
+    var v876portAutoForward876: Boolean
+        get() = prefs.getBoolean(KEY_V876PORTAUTOFORWARD876, false)
+        set(value) = prefs.edit().putBoolean(KEY_V876PORTAUTOFORWARD876, value).apply()
+
+    var v876positionAutoSave876: Boolean
+        get() = prefs.getBoolean(KEY_V876POSITIONAUTOSAVE876, false)
+        set(value) = prefs.edit().putBoolean(KEY_V876POSITIONAUTOSAVE876, value).apply()
+
+    var v876postAutoSchedule876: Boolean
+        get() = prefs.getBoolean(KEY_V876POSTAUTOSCHEDULE876, false)
+        set(value) = prefs.edit().putBoolean(KEY_V876POSTAUTOSCHEDULE876, value).apply()
+
+    var v876powerAutoSave876: Boolean
+        get() = prefs.getBoolean(KEY_V876POWERAUTOSAVE876, false)
+        set(value) = prefs.edit().putBoolean(KEY_V876POWERAUTOSAVE876, value).apply()
+
+    var v876preAutoLoad876: Boolean
+        get() = prefs.getBoolean(KEY_V876PREAUTOLOAD876, false)
+        set(value) = prefs.edit().putBoolean(KEY_V876PREAUTOLOAD876, value).apply()
+
+    var v876precisionAutoRound876: Boolean
+        get() = prefs.getBoolean(KEY_V876PRECISIONAUTOROUND876, false)
+        set(value) = prefs.edit().putBoolean(KEY_V876PRECISIONAUTOROUND876, value).apply()
+
+    var v876predictAutoPrefetch876: Boolean
+        get() = prefs.getBoolean(KEY_V876PREDICTAUTOPREFETCH876, false)
+        set(value) = prefs.edit().putBoolean(KEY_V876PREDICTAUTOPREFETCH876, value).apply()
+
+    var v876prefixAutoTrim876: Boolean
+        get() = prefs.getBoolean(KEY_V876PREFIXAUTOTRIM876, false)
+        set(value) = prefs.edit().putBoolean(KEY_V876PREFIXAUTOTRIM876, value).apply()
+
+    var v876preloadAutoCache876: Boolean
+        get() = prefs.getBoolean(KEY_V876PRELOADAUTOCACHE876, false)
+        set(value) = prefs.edit().putBoolean(KEY_V876PRELOADAUTOCACHE876, value).apply()
+
+    var v877platformAutoDetect877: Boolean
+        get() = prefs.getBoolean(KEY_V877PLATFORMAUTODETECT877, false)
+        set(value) = prefs.edit().putBoolean(KEY_V877PLATFORMAUTODETECT877, value).apply()
+
+    var v877playAutoResume877: Boolean
+        get() = prefs.getBoolean(KEY_V877PLAYAUTORESUME877, false)
+        set(value) = prefs.edit().putBoolean(KEY_V877PLAYAUTORESUME877, value).apply()
+
+    var v877pointerAutoLock877: Boolean
+        get() = prefs.getBoolean(KEY_V877POINTERAUTOLOCK877, false)
+        set(value) = prefs.edit().putBoolean(KEY_V877POINTERAUTOLOCK877, value).apply()
+
+    var v877pollAutoInterval877: Boolean
+        get() = prefs.getBoolean(KEY_V877POLLAUTOINTERVAL877, false)
+        set(value) = prefs.edit().putBoolean(KEY_V877POLLAUTOINTERVAL877, value).apply()
+
+    var v877poolAutoRecycle877: Boolean
+        get() = prefs.getBoolean(KEY_V877POOLAUTORECYCLE877, false)
+        set(value) = prefs.edit().putBoolean(KEY_V877POOLAUTORECYCLE877, value).apply()
+
+    var v877popAutoDismiss877: Boolean
+        get() = prefs.getBoolean(KEY_V877POPAUTODISMISS877, false)
+        set(value) = prefs.edit().putBoolean(KEY_V877POPAUTODISMISS877, value).apply()
+
+    var v877portAutoForward877: Boolean
+        get() = prefs.getBoolean(KEY_V877PORTAUTOFORWARD877, false)
+        set(value) = prefs.edit().putBoolean(KEY_V877PORTAUTOFORWARD877, value).apply()
+
+    var v877positionAutoSave877: Boolean
+        get() = prefs.getBoolean(KEY_V877POSITIONAUTOSAVE877, false)
+        set(value) = prefs.edit().putBoolean(KEY_V877POSITIONAUTOSAVE877, value).apply()
+
+    var v877postAutoSchedule877: Boolean
+        get() = prefs.getBoolean(KEY_V877POSTAUTOSCHEDULE877, false)
+        set(value) = prefs.edit().putBoolean(KEY_V877POSTAUTOSCHEDULE877, value).apply()
+
+    var v877powerAutoSave877: Boolean
+        get() = prefs.getBoolean(KEY_V877POWERAUTOSAVE877, false)
+        set(value) = prefs.edit().putBoolean(KEY_V877POWERAUTOSAVE877, value).apply()
+
+    var v877preAutoLoad877: Boolean
+        get() = prefs.getBoolean(KEY_V877PREAUTOLOAD877, false)
+        set(value) = prefs.edit().putBoolean(KEY_V877PREAUTOLOAD877, value).apply()
+
+    var v877precisionAutoRound877: Boolean
+        get() = prefs.getBoolean(KEY_V877PRECISIONAUTOROUND877, false)
+        set(value) = prefs.edit().putBoolean(KEY_V877PRECISIONAUTOROUND877, value).apply()
+
+    var v877predictAutoPrefetch877: Boolean
+        get() = prefs.getBoolean(KEY_V877PREDICTAUTOPREFETCH877, false)
+        set(value) = prefs.edit().putBoolean(KEY_V877PREDICTAUTOPREFETCH877, value).apply()
+
+    var v877prefixAutoTrim877: Boolean
+        get() = prefs.getBoolean(KEY_V877PREFIXAUTOTRIM877, false)
+        set(value) = prefs.edit().putBoolean(KEY_V877PREFIXAUTOTRIM877, value).apply()
+
+    var v877preloadAutoCache877: Boolean
+        get() = prefs.getBoolean(KEY_V877PRELOADAUTOCACHE877, false)
+        set(value) = prefs.edit().putBoolean(KEY_V877PRELOADAUTOCACHE877, value).apply()
+
+    var v878platformAutoDetect878: Boolean
+        get() = prefs.getBoolean(KEY_V878PLATFORMAUTODETECT878, false)
+        set(value) = prefs.edit().putBoolean(KEY_V878PLATFORMAUTODETECT878, value).apply()
+
+    var v878playAutoResume878: Boolean
+        get() = prefs.getBoolean(KEY_V878PLAYAUTORESUME878, false)
+        set(value) = prefs.edit().putBoolean(KEY_V878PLAYAUTORESUME878, value).apply()
+
+    var v878pointerAutoLock878: Boolean
+        get() = prefs.getBoolean(KEY_V878POINTERAUTOLOCK878, false)
+        set(value) = prefs.edit().putBoolean(KEY_V878POINTERAUTOLOCK878, value).apply()
+
+    var v878pollAutoInterval878: Boolean
+        get() = prefs.getBoolean(KEY_V878POLLAUTOINTERVAL878, false)
+        set(value) = prefs.edit().putBoolean(KEY_V878POLLAUTOINTERVAL878, value).apply()
+
+    var v878poolAutoRecycle878: Boolean
+        get() = prefs.getBoolean(KEY_V878POOLAUTORECYCLE878, false)
+        set(value) = prefs.edit().putBoolean(KEY_V878POOLAUTORECYCLE878, value).apply()
+
+    var v878popAutoDismiss878: Boolean
+        get() = prefs.getBoolean(KEY_V878POPAUTODISMISS878, false)
+        set(value) = prefs.edit().putBoolean(KEY_V878POPAUTODISMISS878, value).apply()
+
+    var v878portAutoForward878: Boolean
+        get() = prefs.getBoolean(KEY_V878PORTAUTOFORWARD878, false)
+        set(value) = prefs.edit().putBoolean(KEY_V878PORTAUTOFORWARD878, value).apply()
+
+    var v878positionAutoSave878: Boolean
+        get() = prefs.getBoolean(KEY_V878POSITIONAUTOSAVE878, false)
+        set(value) = prefs.edit().putBoolean(KEY_V878POSITIONAUTOSAVE878, value).apply()
+
+    var v878postAutoSchedule878: Boolean
+        get() = prefs.getBoolean(KEY_V878POSTAUTOSCHEDULE878, false)
+        set(value) = prefs.edit().putBoolean(KEY_V878POSTAUTOSCHEDULE878, value).apply()
+
+    var v878powerAutoSave878: Boolean
+        get() = prefs.getBoolean(KEY_V878POWERAUTOSAVE878, false)
+        set(value) = prefs.edit().putBoolean(KEY_V878POWERAUTOSAVE878, value).apply()
+
+    var v878preAutoLoad878: Boolean
+        get() = prefs.getBoolean(KEY_V878PREAUTOLOAD878, false)
+        set(value) = prefs.edit().putBoolean(KEY_V878PREAUTOLOAD878, value).apply()
+
+    var v878precisionAutoRound878: Boolean
+        get() = prefs.getBoolean(KEY_V878PRECISIONAUTOROUND878, false)
+        set(value) = prefs.edit().putBoolean(KEY_V878PRECISIONAUTOROUND878, value).apply()
+
+    var v878predictAutoPrefetch878: Boolean
+        get() = prefs.getBoolean(KEY_V878PREDICTAUTOPREFETCH878, false)
+        set(value) = prefs.edit().putBoolean(KEY_V878PREDICTAUTOPREFETCH878, value).apply()
+
+    var v878prefixAutoTrim878: Boolean
+        get() = prefs.getBoolean(KEY_V878PREFIXAUTOTRIM878, false)
+        set(value) = prefs.edit().putBoolean(KEY_V878PREFIXAUTOTRIM878, value).apply()
+
+    var v878preloadAutoCache878: Boolean
+        get() = prefs.getBoolean(KEY_V878PRELOADAUTOCACHE878, false)
+        set(value) = prefs.edit().putBoolean(KEY_V878PRELOADAUTOCACHE878, value).apply()
+
+    var v879platformAutoDetect879: Boolean
+        get() = prefs.getBoolean(KEY_V879PLATFORMAUTODETECT879, false)
+        set(value) = prefs.edit().putBoolean(KEY_V879PLATFORMAUTODETECT879, value).apply()
+
+    var v879playAutoResume879: Boolean
+        get() = prefs.getBoolean(KEY_V879PLAYAUTORESUME879, false)
+        set(value) = prefs.edit().putBoolean(KEY_V879PLAYAUTORESUME879, value).apply()
+
+    var v879pointerAutoLock879: Boolean
+        get() = prefs.getBoolean(KEY_V879POINTERAUTOLOCK879, false)
+        set(value) = prefs.edit().putBoolean(KEY_V879POINTERAUTOLOCK879, value).apply()
+
+    var v879pollAutoInterval879: Boolean
+        get() = prefs.getBoolean(KEY_V879POLLAUTOINTERVAL879, false)
+        set(value) = prefs.edit().putBoolean(KEY_V879POLLAUTOINTERVAL879, value).apply()
+
+    var v879poolAutoRecycle879: Boolean
+        get() = prefs.getBoolean(KEY_V879POOLAUTORECYCLE879, false)
+        set(value) = prefs.edit().putBoolean(KEY_V879POOLAUTORECYCLE879, value).apply()
+
+    var v879popAutoDismiss879: Boolean
+        get() = prefs.getBoolean(KEY_V879POPAUTODISMISS879, false)
+        set(value) = prefs.edit().putBoolean(KEY_V879POPAUTODISMISS879, value).apply()
+
+    var v879portAutoForward879: Boolean
+        get() = prefs.getBoolean(KEY_V879PORTAUTOFORWARD879, false)
+        set(value) = prefs.edit().putBoolean(KEY_V879PORTAUTOFORWARD879, value).apply()
+
+    var v879positionAutoSave879: Boolean
+        get() = prefs.getBoolean(KEY_V879POSITIONAUTOSAVE879, false)
+        set(value) = prefs.edit().putBoolean(KEY_V879POSITIONAUTOSAVE879, value).apply()
+
+    var v879postAutoSchedule879: Boolean
+        get() = prefs.getBoolean(KEY_V879POSTAUTOSCHEDULE879, false)
+        set(value) = prefs.edit().putBoolean(KEY_V879POSTAUTOSCHEDULE879, value).apply()
+
+    var v879powerAutoSave879: Boolean
+        get() = prefs.getBoolean(KEY_V879POWERAUTOSAVE879, false)
+        set(value) = prefs.edit().putBoolean(KEY_V879POWERAUTOSAVE879, value).apply()
+
+    var v879preAutoLoad879: Boolean
+        get() = prefs.getBoolean(KEY_V879PREAUTOLOAD879, false)
+        set(value) = prefs.edit().putBoolean(KEY_V879PREAUTOLOAD879, value).apply()
+
+    var v879precisionAutoRound879: Boolean
+        get() = prefs.getBoolean(KEY_V879PRECISIONAUTOROUND879, false)
+        set(value) = prefs.edit().putBoolean(KEY_V879PRECISIONAUTOROUND879, value).apply()
+
+    var v879predictAutoPrefetch879: Boolean
+        get() = prefs.getBoolean(KEY_V879PREDICTAUTOPREFETCH879, false)
+        set(value) = prefs.edit().putBoolean(KEY_V879PREDICTAUTOPREFETCH879, value).apply()
+
+    var v879prefixAutoTrim879: Boolean
+        get() = prefs.getBoolean(KEY_V879PREFIXAUTOTRIM879, false)
+        set(value) = prefs.edit().putBoolean(KEY_V879PREFIXAUTOTRIM879, value).apply()
+
+    var v879preloadAutoCache879: Boolean
+        get() = prefs.getBoolean(KEY_V879PRELOADAUTOCACHE879, false)
+        set(value) = prefs.edit().putBoolean(KEY_V879PRELOADAUTOCACHE879, value).apply()
+
+    var v880platformAutoDetect880: Boolean
+        get() = prefs.getBoolean(KEY_V880PLATFORMAUTODETECT880, false)
+        set(value) = prefs.edit().putBoolean(KEY_V880PLATFORMAUTODETECT880, value).apply()
+
+    var v880playAutoResume880: Boolean
+        get() = prefs.getBoolean(KEY_V880PLAYAUTORESUME880, false)
+        set(value) = prefs.edit().putBoolean(KEY_V880PLAYAUTORESUME880, value).apply()
+
+    var v880pointerAutoLock880: Boolean
+        get() = prefs.getBoolean(KEY_V880POINTERAUTOLOCK880, false)
+        set(value) = prefs.edit().putBoolean(KEY_V880POINTERAUTOLOCK880, value).apply()
+
+    var v880pollAutoInterval880: Boolean
+        get() = prefs.getBoolean(KEY_V880POLLAUTOINTERVAL880, false)
+        set(value) = prefs.edit().putBoolean(KEY_V880POLLAUTOINTERVAL880, value).apply()
+
+    var v880poolAutoRecycle880: Boolean
+        get() = prefs.getBoolean(KEY_V880POOLAUTORECYCLE880, false)
+        set(value) = prefs.edit().putBoolean(KEY_V880POOLAUTORECYCLE880, value).apply()
+
+    var v880popAutoDismiss880: Boolean
+        get() = prefs.getBoolean(KEY_V880POPAUTODISMISS880, false)
+        set(value) = prefs.edit().putBoolean(KEY_V880POPAUTODISMISS880, value).apply()
+
+    var v880portAutoForward880: Boolean
+        get() = prefs.getBoolean(KEY_V880PORTAUTOFORWARD880, false)
+        set(value) = prefs.edit().putBoolean(KEY_V880PORTAUTOFORWARD880, value).apply()
+
+    var v880positionAutoSave880: Boolean
+        get() = prefs.getBoolean(KEY_V880POSITIONAUTOSAVE880, false)
+        set(value) = prefs.edit().putBoolean(KEY_V880POSITIONAUTOSAVE880, value).apply()
+
+    var v880postAutoSchedule880: Boolean
+        get() = prefs.getBoolean(KEY_V880POSTAUTOSCHEDULE880, false)
+        set(value) = prefs.edit().putBoolean(KEY_V880POSTAUTOSCHEDULE880, value).apply()
+
+    var v880powerAutoSave880: Boolean
+        get() = prefs.getBoolean(KEY_V880POWERAUTOSAVE880, false)
+        set(value) = prefs.edit().putBoolean(KEY_V880POWERAUTOSAVE880, value).apply()
+
+    var v880preAutoLoad880: Boolean
+        get() = prefs.getBoolean(KEY_V880PREAUTOLOAD880, false)
+        set(value) = prefs.edit().putBoolean(KEY_V880PREAUTOLOAD880, value).apply()
+
+    var v880precisionAutoRound880: Boolean
+        get() = prefs.getBoolean(KEY_V880PRECISIONAUTOROUND880, false)
+        set(value) = prefs.edit().putBoolean(KEY_V880PRECISIONAUTOROUND880, value).apply()
+
+    var v880predictAutoPrefetch880: Boolean
+        get() = prefs.getBoolean(KEY_V880PREDICTAUTOPREFETCH880, false)
+        set(value) = prefs.edit().putBoolean(KEY_V880PREDICTAUTOPREFETCH880, value).apply()
+
+    var v880prefixAutoTrim880: Boolean
+        get() = prefs.getBoolean(KEY_V880PREFIXAUTOTRIM880, false)
+        set(value) = prefs.edit().putBoolean(KEY_V880PREFIXAUTOTRIM880, value).apply()
+
+    var v880preloadAutoCache880: Boolean
+        get() = prefs.getBoolean(KEY_V880PRELOADAUTOCACHE880, false)
+        set(value) = prefs.edit().putBoolean(KEY_V880PRELOADAUTOCACHE880, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -74430,5 +75030,155 @@ class AppPrefs(context: Context) {
         const val KEY_V870PLACEAUTOHOLDER870 = "v870placeAutoHolder870" // v870 Place Auto Holder870
         const val KEY_V870PLAINAUTOTEXT870 = "v870plainAutoText870" // v870 Plain Auto Text870
         const val KEY_V870PLANAUTOSCHEDULE870 = "v870planAutoSchedule870" // v870 Plan Auto Schedule870
+        const val KEY_V871PLATFORMAUTODETECT871 = "v871platformAutoDetect871" // v871 Platform Auto Detect871
+        const val KEY_V871PLAYAUTORESUME871 = "v871playAutoResume871" // v871 Play Auto Resume871
+        const val KEY_V871POINTERAUTOLOCK871 = "v871pointerAutoLock871" // v871 Pointer Auto Lock871
+        const val KEY_V871POLLAUTOINTERVAL871 = "v871pollAutoInterval871" // v871 Poll Auto Interval871
+        const val KEY_V871POOLAUTORECYCLE871 = "v871poolAutoRecycle871" // v871 Pool Auto Recycle871
+        const val KEY_V871POPAUTODISMISS871 = "v871popAutoDismiss871" // v871 Pop Auto Dismiss871
+        const val KEY_V871PORTAUTOFORWARD871 = "v871portAutoForward871" // v871 Port Auto Forward871
+        const val KEY_V871POSITIONAUTOSAVE871 = "v871positionAutoSave871" // v871 Position Auto Save871
+        const val KEY_V871POSTAUTOSCHEDULE871 = "v871postAutoSchedule871" // v871 Post Auto Schedule871
+        const val KEY_V871POWERAUTOSAVE871 = "v871powerAutoSave871" // v871 Power Auto Save871
+        const val KEY_V871PREAUTOLOAD871 = "v871preAutoLoad871" // v871 Pre Auto Load871
+        const val KEY_V871PRECISIONAUTOROUND871 = "v871precisionAutoRound871" // v871 Precision Auto Round871
+        const val KEY_V871PREDICTAUTOPREFETCH871 = "v871predictAutoPrefetch871" // v871 Predict Auto Prefetch871
+        const val KEY_V871PREFIXAUTOTRIM871 = "v871prefixAutoTrim871" // v871 Prefix Auto Trim871
+        const val KEY_V871PRELOADAUTOCACHE871 = "v871preloadAutoCache871" // v871 Preload Auto Cache871
+        const val KEY_V872PLATFORMAUTODETECT872 = "v872platformAutoDetect872" // v872 Platform Auto Detect872
+        const val KEY_V872PLAYAUTORESUME872 = "v872playAutoResume872" // v872 Play Auto Resume872
+        const val KEY_V872POINTERAUTOLOCK872 = "v872pointerAutoLock872" // v872 Pointer Auto Lock872
+        const val KEY_V872POLLAUTOINTERVAL872 = "v872pollAutoInterval872" // v872 Poll Auto Interval872
+        const val KEY_V872POOLAUTORECYCLE872 = "v872poolAutoRecycle872" // v872 Pool Auto Recycle872
+        const val KEY_V872POPAUTODISMISS872 = "v872popAutoDismiss872" // v872 Pop Auto Dismiss872
+        const val KEY_V872PORTAUTOFORWARD872 = "v872portAutoForward872" // v872 Port Auto Forward872
+        const val KEY_V872POSITIONAUTOSAVE872 = "v872positionAutoSave872" // v872 Position Auto Save872
+        const val KEY_V872POSTAUTOSCHEDULE872 = "v872postAutoSchedule872" // v872 Post Auto Schedule872
+        const val KEY_V872POWERAUTOSAVE872 = "v872powerAutoSave872" // v872 Power Auto Save872
+        const val KEY_V872PREAUTOLOAD872 = "v872preAutoLoad872" // v872 Pre Auto Load872
+        const val KEY_V872PRECISIONAUTOROUND872 = "v872precisionAutoRound872" // v872 Precision Auto Round872
+        const val KEY_V872PREDICTAUTOPREFETCH872 = "v872predictAutoPrefetch872" // v872 Predict Auto Prefetch872
+        const val KEY_V872PREFIXAUTOTRIM872 = "v872prefixAutoTrim872" // v872 Prefix Auto Trim872
+        const val KEY_V872PRELOADAUTOCACHE872 = "v872preloadAutoCache872" // v872 Preload Auto Cache872
+        const val KEY_V873PLATFORMAUTODETECT873 = "v873platformAutoDetect873" // v873 Platform Auto Detect873
+        const val KEY_V873PLAYAUTORESUME873 = "v873playAutoResume873" // v873 Play Auto Resume873
+        const val KEY_V873POINTERAUTOLOCK873 = "v873pointerAutoLock873" // v873 Pointer Auto Lock873
+        const val KEY_V873POLLAUTOINTERVAL873 = "v873pollAutoInterval873" // v873 Poll Auto Interval873
+        const val KEY_V873POOLAUTORECYCLE873 = "v873poolAutoRecycle873" // v873 Pool Auto Recycle873
+        const val KEY_V873POPAUTODISMISS873 = "v873popAutoDismiss873" // v873 Pop Auto Dismiss873
+        const val KEY_V873PORTAUTOFORWARD873 = "v873portAutoForward873" // v873 Port Auto Forward873
+        const val KEY_V873POSITIONAUTOSAVE873 = "v873positionAutoSave873" // v873 Position Auto Save873
+        const val KEY_V873POSTAUTOSCHEDULE873 = "v873postAutoSchedule873" // v873 Post Auto Schedule873
+        const val KEY_V873POWERAUTOSAVE873 = "v873powerAutoSave873" // v873 Power Auto Save873
+        const val KEY_V873PREAUTOLOAD873 = "v873preAutoLoad873" // v873 Pre Auto Load873
+        const val KEY_V873PRECISIONAUTOROUND873 = "v873precisionAutoRound873" // v873 Precision Auto Round873
+        const val KEY_V873PREDICTAUTOPREFETCH873 = "v873predictAutoPrefetch873" // v873 Predict Auto Prefetch873
+        const val KEY_V873PREFIXAUTOTRIM873 = "v873prefixAutoTrim873" // v873 Prefix Auto Trim873
+        const val KEY_V873PRELOADAUTOCACHE873 = "v873preloadAutoCache873" // v873 Preload Auto Cache873
+        const val KEY_V874PLATFORMAUTODETECT874 = "v874platformAutoDetect874" // v874 Platform Auto Detect874
+        const val KEY_V874PLAYAUTORESUME874 = "v874playAutoResume874" // v874 Play Auto Resume874
+        const val KEY_V874POINTERAUTOLOCK874 = "v874pointerAutoLock874" // v874 Pointer Auto Lock874
+        const val KEY_V874POLLAUTOINTERVAL874 = "v874pollAutoInterval874" // v874 Poll Auto Interval874
+        const val KEY_V874POOLAUTORECYCLE874 = "v874poolAutoRecycle874" // v874 Pool Auto Recycle874
+        const val KEY_V874POPAUTODISMISS874 = "v874popAutoDismiss874" // v874 Pop Auto Dismiss874
+        const val KEY_V874PORTAUTOFORWARD874 = "v874portAutoForward874" // v874 Port Auto Forward874
+        const val KEY_V874POSITIONAUTOSAVE874 = "v874positionAutoSave874" // v874 Position Auto Save874
+        const val KEY_V874POSTAUTOSCHEDULE874 = "v874postAutoSchedule874" // v874 Post Auto Schedule874
+        const val KEY_V874POWERAUTOSAVE874 = "v874powerAutoSave874" // v874 Power Auto Save874
+        const val KEY_V874PREAUTOLOAD874 = "v874preAutoLoad874" // v874 Pre Auto Load874
+        const val KEY_V874PRECISIONAUTOROUND874 = "v874precisionAutoRound874" // v874 Precision Auto Round874
+        const val KEY_V874PREDICTAUTOPREFETCH874 = "v874predictAutoPrefetch874" // v874 Predict Auto Prefetch874
+        const val KEY_V874PREFIXAUTOTRIM874 = "v874prefixAutoTrim874" // v874 Prefix Auto Trim874
+        const val KEY_V874PRELOADAUTOCACHE874 = "v874preloadAutoCache874" // v874 Preload Auto Cache874
+        const val KEY_V875PLATFORMAUTODETECT875 = "v875platformAutoDetect875" // v875 Platform Auto Detect875
+        const val KEY_V875PLAYAUTORESUME875 = "v875playAutoResume875" // v875 Play Auto Resume875
+        const val KEY_V875POINTERAUTOLOCK875 = "v875pointerAutoLock875" // v875 Pointer Auto Lock875
+        const val KEY_V875POLLAUTOINTERVAL875 = "v875pollAutoInterval875" // v875 Poll Auto Interval875
+        const val KEY_V875POOLAUTORECYCLE875 = "v875poolAutoRecycle875" // v875 Pool Auto Recycle875
+        const val KEY_V875POPAUTODISMISS875 = "v875popAutoDismiss875" // v875 Pop Auto Dismiss875
+        const val KEY_V875PORTAUTOFORWARD875 = "v875portAutoForward875" // v875 Port Auto Forward875
+        const val KEY_V875POSITIONAUTOSAVE875 = "v875positionAutoSave875" // v875 Position Auto Save875
+        const val KEY_V875POSTAUTOSCHEDULE875 = "v875postAutoSchedule875" // v875 Post Auto Schedule875
+        const val KEY_V875POWERAUTOSAVE875 = "v875powerAutoSave875" // v875 Power Auto Save875
+        const val KEY_V875PREAUTOLOAD875 = "v875preAutoLoad875" // v875 Pre Auto Load875
+        const val KEY_V875PRECISIONAUTOROUND875 = "v875precisionAutoRound875" // v875 Precision Auto Round875
+        const val KEY_V875PREDICTAUTOPREFETCH875 = "v875predictAutoPrefetch875" // v875 Predict Auto Prefetch875
+        const val KEY_V875PREFIXAUTOTRIM875 = "v875prefixAutoTrim875" // v875 Prefix Auto Trim875
+        const val KEY_V875PRELOADAUTOCACHE875 = "v875preloadAutoCache875" // v875 Preload Auto Cache875
+        const val KEY_V876PLATFORMAUTODETECT876 = "v876platformAutoDetect876" // v876 Platform Auto Detect876
+        const val KEY_V876PLAYAUTORESUME876 = "v876playAutoResume876" // v876 Play Auto Resume876
+        const val KEY_V876POINTERAUTOLOCK876 = "v876pointerAutoLock876" // v876 Pointer Auto Lock876
+        const val KEY_V876POLLAUTOINTERVAL876 = "v876pollAutoInterval876" // v876 Poll Auto Interval876
+        const val KEY_V876POOLAUTORECYCLE876 = "v876poolAutoRecycle876" // v876 Pool Auto Recycle876
+        const val KEY_V876POPAUTODISMISS876 = "v876popAutoDismiss876" // v876 Pop Auto Dismiss876
+        const val KEY_V876PORTAUTOFORWARD876 = "v876portAutoForward876" // v876 Port Auto Forward876
+        const val KEY_V876POSITIONAUTOSAVE876 = "v876positionAutoSave876" // v876 Position Auto Save876
+        const val KEY_V876POSTAUTOSCHEDULE876 = "v876postAutoSchedule876" // v876 Post Auto Schedule876
+        const val KEY_V876POWERAUTOSAVE876 = "v876powerAutoSave876" // v876 Power Auto Save876
+        const val KEY_V876PREAUTOLOAD876 = "v876preAutoLoad876" // v876 Pre Auto Load876
+        const val KEY_V876PRECISIONAUTOROUND876 = "v876precisionAutoRound876" // v876 Precision Auto Round876
+        const val KEY_V876PREDICTAUTOPREFETCH876 = "v876predictAutoPrefetch876" // v876 Predict Auto Prefetch876
+        const val KEY_V876PREFIXAUTOTRIM876 = "v876prefixAutoTrim876" // v876 Prefix Auto Trim876
+        const val KEY_V876PRELOADAUTOCACHE876 = "v876preloadAutoCache876" // v876 Preload Auto Cache876
+        const val KEY_V877PLATFORMAUTODETECT877 = "v877platformAutoDetect877" // v877 Platform Auto Detect877
+        const val KEY_V877PLAYAUTORESUME877 = "v877playAutoResume877" // v877 Play Auto Resume877
+        const val KEY_V877POINTERAUTOLOCK877 = "v877pointerAutoLock877" // v877 Pointer Auto Lock877
+        const val KEY_V877POLLAUTOINTERVAL877 = "v877pollAutoInterval877" // v877 Poll Auto Interval877
+        const val KEY_V877POOLAUTORECYCLE877 = "v877poolAutoRecycle877" // v877 Pool Auto Recycle877
+        const val KEY_V877POPAUTODISMISS877 = "v877popAutoDismiss877" // v877 Pop Auto Dismiss877
+        const val KEY_V877PORTAUTOFORWARD877 = "v877portAutoForward877" // v877 Port Auto Forward877
+        const val KEY_V877POSITIONAUTOSAVE877 = "v877positionAutoSave877" // v877 Position Auto Save877
+        const val KEY_V877POSTAUTOSCHEDULE877 = "v877postAutoSchedule877" // v877 Post Auto Schedule877
+        const val KEY_V877POWERAUTOSAVE877 = "v877powerAutoSave877" // v877 Power Auto Save877
+        const val KEY_V877PREAUTOLOAD877 = "v877preAutoLoad877" // v877 Pre Auto Load877
+        const val KEY_V877PRECISIONAUTOROUND877 = "v877precisionAutoRound877" // v877 Precision Auto Round877
+        const val KEY_V877PREDICTAUTOPREFETCH877 = "v877predictAutoPrefetch877" // v877 Predict Auto Prefetch877
+        const val KEY_V877PREFIXAUTOTRIM877 = "v877prefixAutoTrim877" // v877 Prefix Auto Trim877
+        const val KEY_V877PRELOADAUTOCACHE877 = "v877preloadAutoCache877" // v877 Preload Auto Cache877
+        const val KEY_V878PLATFORMAUTODETECT878 = "v878platformAutoDetect878" // v878 Platform Auto Detect878
+        const val KEY_V878PLAYAUTORESUME878 = "v878playAutoResume878" // v878 Play Auto Resume878
+        const val KEY_V878POINTERAUTOLOCK878 = "v878pointerAutoLock878" // v878 Pointer Auto Lock878
+        const val KEY_V878POLLAUTOINTERVAL878 = "v878pollAutoInterval878" // v878 Poll Auto Interval878
+        const val KEY_V878POOLAUTORECYCLE878 = "v878poolAutoRecycle878" // v878 Pool Auto Recycle878
+        const val KEY_V878POPAUTODISMISS878 = "v878popAutoDismiss878" // v878 Pop Auto Dismiss878
+        const val KEY_V878PORTAUTOFORWARD878 = "v878portAutoForward878" // v878 Port Auto Forward878
+        const val KEY_V878POSITIONAUTOSAVE878 = "v878positionAutoSave878" // v878 Position Auto Save878
+        const val KEY_V878POSTAUTOSCHEDULE878 = "v878postAutoSchedule878" // v878 Post Auto Schedule878
+        const val KEY_V878POWERAUTOSAVE878 = "v878powerAutoSave878" // v878 Power Auto Save878
+        const val KEY_V878PREAUTOLOAD878 = "v878preAutoLoad878" // v878 Pre Auto Load878
+        const val KEY_V878PRECISIONAUTOROUND878 = "v878precisionAutoRound878" // v878 Precision Auto Round878
+        const val KEY_V878PREDICTAUTOPREFETCH878 = "v878predictAutoPrefetch878" // v878 Predict Auto Prefetch878
+        const val KEY_V878PREFIXAUTOTRIM878 = "v878prefixAutoTrim878" // v878 Prefix Auto Trim878
+        const val KEY_V878PRELOADAUTOCACHE878 = "v878preloadAutoCache878" // v878 Preload Auto Cache878
+        const val KEY_V879PLATFORMAUTODETECT879 = "v879platformAutoDetect879" // v879 Platform Auto Detect879
+        const val KEY_V879PLAYAUTORESUME879 = "v879playAutoResume879" // v879 Play Auto Resume879
+        const val KEY_V879POINTERAUTOLOCK879 = "v879pointerAutoLock879" // v879 Pointer Auto Lock879
+        const val KEY_V879POLLAUTOINTERVAL879 = "v879pollAutoInterval879" // v879 Poll Auto Interval879
+        const val KEY_V879POOLAUTORECYCLE879 = "v879poolAutoRecycle879" // v879 Pool Auto Recycle879
+        const val KEY_V879POPAUTODISMISS879 = "v879popAutoDismiss879" // v879 Pop Auto Dismiss879
+        const val KEY_V879PORTAUTOFORWARD879 = "v879portAutoForward879" // v879 Port Auto Forward879
+        const val KEY_V879POSITIONAUTOSAVE879 = "v879positionAutoSave879" // v879 Position Auto Save879
+        const val KEY_V879POSTAUTOSCHEDULE879 = "v879postAutoSchedule879" // v879 Post Auto Schedule879
+        const val KEY_V879POWERAUTOSAVE879 = "v879powerAutoSave879" // v879 Power Auto Save879
+        const val KEY_V879PREAUTOLOAD879 = "v879preAutoLoad879" // v879 Pre Auto Load879
+        const val KEY_V879PRECISIONAUTOROUND879 = "v879precisionAutoRound879" // v879 Precision Auto Round879
+        const val KEY_V879PREDICTAUTOPREFETCH879 = "v879predictAutoPrefetch879" // v879 Predict Auto Prefetch879
+        const val KEY_V879PREFIXAUTOTRIM879 = "v879prefixAutoTrim879" // v879 Prefix Auto Trim879
+        const val KEY_V879PRELOADAUTOCACHE879 = "v879preloadAutoCache879" // v879 Preload Auto Cache879
+        const val KEY_V880PLATFORMAUTODETECT880 = "v880platformAutoDetect880" // v880 Platform Auto Detect880
+        const val KEY_V880PLAYAUTORESUME880 = "v880playAutoResume880" // v880 Play Auto Resume880
+        const val KEY_V880POINTERAUTOLOCK880 = "v880pointerAutoLock880" // v880 Pointer Auto Lock880
+        const val KEY_V880POLLAUTOINTERVAL880 = "v880pollAutoInterval880" // v880 Poll Auto Interval880
+        const val KEY_V880POOLAUTORECYCLE880 = "v880poolAutoRecycle880" // v880 Pool Auto Recycle880
+        const val KEY_V880POPAUTODISMISS880 = "v880popAutoDismiss880" // v880 Pop Auto Dismiss880
+        const val KEY_V880PORTAUTOFORWARD880 = "v880portAutoForward880" // v880 Port Auto Forward880
+        const val KEY_V880POSITIONAUTOSAVE880 = "v880positionAutoSave880" // v880 Position Auto Save880
+        const val KEY_V880POSTAUTOSCHEDULE880 = "v880postAutoSchedule880" // v880 Post Auto Schedule880
+        const val KEY_V880POWERAUTOSAVE880 = "v880powerAutoSave880" // v880 Power Auto Save880
+        const val KEY_V880PREAUTOLOAD880 = "v880preAutoLoad880" // v880 Pre Auto Load880
+        const val KEY_V880PRECISIONAUTOROUND880 = "v880precisionAutoRound880" // v880 Precision Auto Round880
+        const val KEY_V880PREDICTAUTOPREFETCH880 = "v880predictAutoPrefetch880" // v880 Predict Auto Prefetch880
+        const val KEY_V880PREFIXAUTOTRIM880 = "v880prefixAutoTrim880" // v880 Prefix Auto Trim880
+        const val KEY_V880PRELOADAUTOCACHE880 = "v880preloadAutoCache880" // v880 Preload Auto Cache880
     }
 }

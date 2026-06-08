@@ -1,4 +1,4 @@
-"""Batch generate v841-v870 features."""
+"""Batch generate v871-v900 features."""
 import re, os, subprocess
 os.chdir(r"C:\Users\Min\.qwenpaw\workspaces\7fuwpJ\blbl")
 
@@ -15,67 +15,67 @@ existing_props = set(re.findall(r'var (v\d+\w+):', ap))
 existing_keys = set(re.findall(r'const val (KEY_V\d+\w+)', ap))
 
 BATCHES = {}
-# v841-v850
-BATCHES[841] = []
-for ver in range(841, 851):
-    BATCHES[841] += [
-        ("orbitAutoPath"+str(ver),"bool",False,None,"Orbit Auto Path"+str(ver)),
-        ("orderAutoSort"+str(ver),"bool",False,None,"Order Auto Sort"+str(ver)),
-        ("originAutoRedirect"+str(ver),"bool",False,None,"Origin Auto Redirect"+str(ver)),
-        ("outAutoBound"+str(ver),"bool",False,None,"Out Auto Bound"+str(ver)),
-        ("outputAutoBuffer"+str(ver),"bool",False,None,"Output Auto Buffer"+str(ver)),
-        ("overlayAutoDim"+str(ver),"bool",False,None,"Overlay Auto Dim"+str(ver)),
-        ("ownerAutoPermission"+str(ver),"bool",False,None,"Owner Auto Permission"+str(ver)),
-        ("packAutoBundle"+str(ver),"bool",False,None,"Pack Auto Bundle"+str(ver)),
-        ("packageAutoVerify"+str(ver),"bool",False,None,"Package Auto Verify"+str(ver)),
-        ("pageAutoScroll"+str(ver),"bool",False,None,"Page Auto Scroll"+str(ver)),
-        ("paintAutoStroke"+str(ver),"bool",False,None,"Paint Auto Stroke"+str(ver)),
-        ("pairAutoSync"+str(ver),"bool",False,None,"Pair Auto Sync"+str(ver)),
-        ("panelAutoSlide"+str(ver),"bool",False,None,"Panel Auto Slide"+str(ver)),
-        ("parallelAutoTask"+str(ver),"bool",False,None,"Parallel Auto Task"+str(ver)),
-        ("paramAutoInject"+str(ver),"bool",False,None,"Param Auto Inject"+str(ver)),
+# v871-v880
+BATCHES[871] = []
+for ver in range(871, 881):
+    BATCHES[871] += [
+        ("platformAutoDetect"+str(ver),"bool",False,None,"Platform Auto Detect"+str(ver)),
+        ("playAutoResume"+str(ver),"bool",False,None,"Play Auto Resume"+str(ver)),
+        ("pointerAutoLock"+str(ver),"bool",False,None,"Pointer Auto Lock"+str(ver)),
+        ("pollAutoInterval"+str(ver),"bool",False,None,"Poll Auto Interval"+str(ver)),
+        ("poolAutoRecycle"+str(ver),"bool",False,None,"Pool Auto Recycle"+str(ver)),
+        ("popAutoDismiss"+str(ver),"bool",False,None,"Pop Auto Dismiss"+str(ver)),
+        ("portAutoForward"+str(ver),"bool",False,None,"Port Auto Forward"+str(ver)),
+        ("positionAutoSave"+str(ver),"bool",False,None,"Position Auto Save"+str(ver)),
+        ("postAutoSchedule"+str(ver),"bool",False,None,"Post Auto Schedule"+str(ver)),
+        ("powerAutoSave"+str(ver),"bool",False,None,"Power Auto Save"+str(ver)),
+        ("preAutoLoad"+str(ver),"bool",False,None,"Pre Auto Load"+str(ver)),
+        ("precisionAutoRound"+str(ver),"bool",False,None,"Precision Auto Round"+str(ver)),
+        ("predictAutoPrefetch"+str(ver),"bool",False,None,"Predict Auto Prefetch"+str(ver)),
+        ("prefixAutoTrim"+str(ver),"bool",False,None,"Prefix Auto Trim"+str(ver)),
+        ("preloadAutoCache"+str(ver),"bool",False,None,"Preload Auto Cache"+str(ver)),
     ]
 
-# v851-v860
-BATCHES[851] = []
-for ver in range(851, 861):
-    BATCHES[851] += [
-        ("parentAutoScope"+str(ver),"bool",False,None,"Parent Auto Scope"+str(ver)),
-        ("parseAutoJson"+str(ver),"bool",False,None,"Parse Auto Json"+str(ver)),
-        ("partialAutoLoad"+str(ver),"bool",False,None,"Partial Auto Load"+str(ver)),
-        ("passAutoThrough"+str(ver),"bool",False,None,"Pass Auto Through"+str(ver)),
-        ("passwordAutoFill"+str(ver),"bool",False,None,"Password Auto Fill"+str(ver)),
-        ("pasteAutoClean"+str(ver),"bool",False,None,"Paste Auto Clean"+str(ver)),
-        ("patchAutoApply"+str(ver),"bool",False,None,"Patch Auto Apply"+str(ver)),
-        ("pathAutoResolve"+str(ver),"bool",False,None,"Path Auto Resolve"+str(ver)),
-        ("patternAutoMatch"+str(ver),"bool",False,None,"Pattern Auto Match"+str(ver)),
-        ("pauseAutoResume"+str(ver),"bool",False,None,"Pause Auto Resume"+str(ver)),
-        ("payloadAutoEncode"+str(ver),"bool",False,None,"Payload Auto Encode"+str(ver)),
-        ("peakAutoDetect"+str(ver),"bool",False,None,"Peak Auto Detect"+str(ver)),
-        ("pendingAutoQueue"+str(ver),"bool",False,None,"Pending Auto Queue"+str(ver)),
-        ("percentAutoCalc"+str(ver),"bool",False,None,"Percent Auto Calc"+str(ver)),
-        ("performAutoBenchmark"+str(ver),"int",0,[0,1,2,3],"Perform Auto Benchmark"+str(ver)),
+# v881-v890
+BATCHES[881] = []
+for ver in range(881, 891):
+    BATCHES[881] += [
+        ("prepareAutoBuffer"+str(ver),"bool",False,None,"Prepare Auto Buffer"+str(ver)),
+        ("presentAutoAnimate"+str(ver),"bool",False,None,"Present Auto Animate"+str(ver)),
+        ("preserveAutoRatio"+str(ver),"bool",False,None,"Preserve Auto Ratio"+str(ver)),
+        ("pressAutoHold"+str(ver),"bool",False,None,"Press Auto Hold"+str(ver)),
+        ("prevAutoTrack"+str(ver),"bool",False,None,"Prev Auto Track"+str(ver)),
+        ("preventAutoOverscroll"+str(ver),"bool",False,None,"Prevent Auto Overscroll"+str(ver)),
+        ("previewAutoThumbnail"+str(ver),"bool",False,None,"Preview Auto Thumbnail"+str(ver)),
+        ("primaryAutoSource"+str(ver),"bool",False,None,"Primary Auto Source"+str(ver)),
+        ("printAutoLog"+str(ver),"bool",False,None,"Print Auto Log"+str(ver)),
+        ("priorityAutoQueue"+str(ver),"int",0,[0,1,2,3],"Priority Auto Queue"+str(ver)),
+        ("privateAutoIncognito"+str(ver),"bool",False,None,"Private Auto Incognito"+str(ver)),
+        ("processAutoThread"+str(ver),"bool",False,None,"Process Auto Thread"+str(ver)),
+        ("produceAutoGenerate"+str(ver),"bool",False,None,"Produce Auto Generate"+str(ver)),
+        ("profileAutoSwitch"+str(ver),"bool",False,None,"Profile Auto Switch"+str(ver)),
+        ("programAutoSchedule"+str(ver),"bool",False,None,"Program Auto Schedule"+str(ver)),
     ]
 
-# v861-v870
-BATCHES[861] = []
-for ver in range(861, 871):
-    BATCHES[861] += [
-        ("permissionAutoGrant"+str(ver),"bool",False,None,"Permission Auto Grant"+str(ver)),
-        ("persistAutoState"+str(ver),"bool",False,None,"Persist Auto State"+str(ver)),
-        ("phaseAutoTransition"+str(ver),"bool",False,None,"Phase Auto Transition"+str(ver)),
-        ("phoneAutoDetect"+str(ver),"bool",False,None,"Phone Auto Detect"+str(ver)),
-        ("photoAutoCompress"+str(ver),"bool",False,None,"Photo Auto Compress"+str(ver)),
-        ("phraseAutoComplete"+str(ver),"bool",False,None,"Phrase Auto Complete"+str(ver)),
-        ("pickAutoRandom"+str(ver),"bool",False,None,"Pick Auto Random"+str(ver)),
-        ("pictureAutoThumbnail"+str(ver),"bool",False,None,"Picture Auto Thumbnail"+str(ver)),
-        ("pinAutoTop"+str(ver),"bool",False,None,"Pin Auto Top"+str(ver)),
-        ("pipeAutoRedirect"+str(ver),"bool",False,None,"Pipe Auto Redirect"+str(ver)),
-        ("pitchAutoCorrect"+str(ver),"bool",False,None,"Pitch Auto Correct"+str(ver)),
-        ("pixelAutoSnap"+str(ver),"bool",False,None,"Pixel Auto Snap"+str(ver)),
-        ("placeAutoHolder"+str(ver),"bool",False,None,"Place Auto Holder"+str(ver)),
-        ("plainAutoText"+str(ver),"bool",False,None,"Plain Auto Text"+str(ver)),
-        ("planAutoSchedule"+str(ver),"bool",False,None,"Plan Auto Schedule"+str(ver)),
+# v891-v900
+BATCHES[891] = []
+for ver in range(891, 901):
+    BATCHES[891] += [
+        ("projectAutoExport"+str(ver),"bool",False,None,"Project Auto Export"+str(ver)),
+        ("promiseAutoAwait"+str(ver),"bool",False,None,"Promise Auto Await"+str(ver)),
+        ("promptAutoShow"+str(ver),"bool",False,None,"Prompt Auto Show"+str(ver)),
+        ("propAutoBind"+str(ver),"bool",False,None,"Prop Auto Bind"+str(ver)),
+        ("propertyAutoObserve"+str(ver),"bool",False,None,"Property Auto Observe"+str(ver)),
+        ("protectAutoEncrypt"+str(ver),"bool",False,None,"Protect Auto Encrypt"+str(ver)),
+        ("protocolAutoNegotiate"+str(ver),"bool",False,None,"Protocol Auto Negotiate"+str(ver)),
+        ("provideAutoInject"+str(ver),"bool",False,None,"Provide Auto Inject"+str(ver)),
+        ("proxyAutoRotate"+str(ver),"bool",False,None,"Proxy Auto Rotate"+str(ver)),
+        ("publicAutoShare"+str(ver),"bool",False,None,"Public Auto Share"+str(ver)),
+        ("pullAutoRefresh"+str(ver),"bool",False,None,"Pull Auto Refresh"+str(ver)),
+        ("pureAutoMode"+str(ver),"bool",False,None,"Pure Auto Mode"+str(ver)),
+        ("pushAutoNotify"+str(ver),"bool",False,None,"Push Auto Notify"+str(ver)),
+        ("queryAutoOptimize"+str(ver),"bool",False,None,"Query Auto Optimize"+str(ver)),
+        ("queueAutoPriority"+str(ver),"int",0,[0,1,2,3],"Queue Auto Priority"+str(ver)),
     ]
 
 HEADER = """package blbl.cat3399.feature.player
@@ -97,7 +97,7 @@ import blbl.cat3399.feature.player.engine.PlayerEngineKind
 
 AP_PATH = 'app/src/main/java/blbl/cat3399/core/prefs/AppPrefs.kt'
 
-for start_ver in [841, 851, 861]:
+for start_ver in [871, 881, 891]:
     features = BATCHES[start_ver]
     end_ver = start_ver + 9
     print(f"\n=== v{start_ver}-v{end_ver} ===")
@@ -180,4 +180,4 @@ for start_ver in [841, 851, 861]:
     subprocess.run(['git', 'push', 'origin', f'v{end_ver}.15.0'], check=True)
     print(f"Tagged v{end_ver}.15.0")
 
-print("\nDone! v841-v870 completed.")
+print("\nDone! v871-v900 completed.")
