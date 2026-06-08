@@ -118,7 +118,7 @@ This project is based on open-source software. All rights belong to the original
 ## 📋 更新日志 | Changelog | 変更履歴 | 변경 로그
 
 ### 最新版本 | Latest Version | 最新バージョン | 최신 버전
-- **v160.15** - 2026-06-08
+- **v170.15** - 2026-06-08
 
 ---
 
@@ -18823,6 +18823,947 @@ This project is based on open-source software. All rights belong to the original
 - ✅ 字幕アニメーショントランスレート160
 - ✅ 자막 애니메이션 이동160
 
+
+### v161.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v161.1-v161.15 功能列表
+- ✅ Audio Gate Toggle161, Danmaku Render Batch Size, Subtitle Position Anchor, Gesture Long Press Action, Cast Video PIP Max Resolution, Playlist Continue Play Next, Cache Preload Next Episode, Progress Bar Buffered Color, Volume Fade In On Resume, History Import Export, Playback Auto Rotate Landscape, Screenshot Format PNG, Video Denoise Toggle161, Danmaku Render Thread Count, Subtitle Karaoke Highlight
+
+### v161.1 音频门限开关161 | Audio Gate Toggle161 | オーディオゲート切替161 | 오디오 게이트 전환161
+- ✅ 音频门限开关161
+- ✅ Audio Gate Toggle161
+- ✅ オーディオゲート切替161
+- ✅ 오디오 게이트 전환161
+
+### v161.2 弹幕渲染批量大小 | Danmaku Render Batch Size | コメントレンダリングバッチサイズ | 댓글 렌더링 배치 크기
+- ✅ 弹幕渲染批量大小
+- ✅ Danmaku Render Batch Size
+- ✅ コメントレンダリングバッチサイズ
+- ✅ 댓글 렌더링 배치 크기
+
+### v161.3 字幕位置锚点 | Subtitle Position Anchor | 字幕位置アンカー | 자막 위치 앵커
+- ✅ 字幕位置锚点
+- ✅ Subtitle Position Anchor
+- ✅ 字幕位置アンカー
+- ✅ 자막 위치 앵커
+
+### v161.4 手势长按操作 | Gesture Long Press Action | ジェスチャー長押しアクション | 제스처 길게 누르기 동작
+- ✅ 手势长按操作
+- ✅ Gesture Long Press Action
+- ✅ ジェスチャー長押しアクション
+- ✅ 제스처 길게 누르기 동작
+
+### v161.5 投射视频画中画最大分辨率 | Cast Video PIP Max Resolution | キャストビデオPIP最大解像度 | 캐스트 비디오 PIP 최대 해상도
+- ✅ 投射视频画中画最大分辨率
+- ✅ Cast Video PIP Max Resolution
+- ✅ キャストビデオPIP最大解像度
+- ✅ 캐스트 비디오 PIP 최대 해상도
+
+### v161.6 播放列表自动播放下一个 | Playlist Continue Play Next | プレイリスト次曲自動再生 | 재생 목록 다음곡 자동 재생
+- ✅ 播放列表自动播放下一个
+- ✅ Playlist Continue Play Next
+- ✅ プレイリスト次曲自動再生
+- ✅ 재생 목록 다음곡 자동 재생
+
+### v161.7 缓存预加载下一集 | Cache Preload Next Episode | キャッシュ次エピソードプリロード | 캐시 다음 에피소드 프리로드
+- ✅ 缓存预加载下一集
+- ✅ Cache Preload Next Episode
+- ✅ キャッシュ次エピソードプリロード
+- ✅ 캐시 다음 에피소드 프리로드
+
+### v161.8 进度条缓冲区颜色 | Progress Bar Buffered Color | プログレスバーバッファ色 | 진행 바 버퍼 색상
+- ✅ 进度条缓冲区颜色
+- ✅ Progress Bar Buffered Color
+- ✅ プログレスバーバッファ色
+- ✅ 진행 바 버퍼 색상
+
+### v161.9 恢复播放时音量淡入 | Volume Fade In On Resume | 再生再開時ボリュームフェードイン | 재생 재개 시 볼륨 페이드인
+- ✅ 恢复播放时音量淡入
+- ✅ Volume Fade In On Resume
+- ✅ 再生再開時ボリュームフェードイン
+- ✅ 재생 재개 시 볼륨 페이드인
+
+### v161.10 历史记录导入导出 | History Import Export | 履歴インポート/エクスポート | 기록 가져오기/내보내기
+- ✅ 历史记录导入导出
+- ✅ History Import Export
+- ✅ 履歴インポート/エクスポート
+- ✅ 기록 가져오기/내보내기
+
+### v161.11 播放自动旋转横屏 | Playback Auto Rotate Landscape | 再生時自動横向回転 | 재생 시 자동 가로 회전
+- ✅ 播放自动旋转横屏
+- ✅ Playback Auto Rotate Landscape
+- ✅ 再生時自動横向回転
+- ✅ 재생 시 자동 가로 회전
+
+### v161.12 截图格式PNG | Screenshot Format PNG | スクリーンショット形式PNG | 스크린샷 형식 PNG
+- ✅ 截图格式PNG
+- ✅ Screenshot Format PNG
+- ✅ スクリーンショット形式PNG
+- ✅ 스크린샷 형식 PNG
+
+### v161.13 视频降噪开关161 | Video Denoise Toggle161 | ビデオノイズ除去切替161 | 비디오 노이즈 제거 전환161
+- ✅ 视频降噪开关161
+- ✅ Video Denoise Toggle161
+- ✅ ビデオノイズ除去切替161
+- ✅ 비디오 노이즈 제거 전환161
+
+### v161.14 弹幕渲染线程数 | Danmaku Render Thread Count | コメントレンダリングスレッド数 | 댓글 렌더링 스레드 수
+- ✅ 弹幕渲染线程数
+- ✅ Danmaku Render Thread Count
+- ✅ コメントレンダリングスレッド数
+- ✅ 댓글 렌더링 스레드 수
+
+### v161.15 字幕卡拉OK高亮 | Subtitle Karaoke Highlight | 字幕カラオケハイライト | 자막 가라오케 하이라이트
+- ✅ 字幕卡拉OK高亮
+- ✅ Subtitle Karaoke Highlight
+- ✅ 字幕カラオケハイライト
+- ✅ 자막 가라오케 하이라이트
+
+### v162.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v162.1-v162.15 功能列表
+- ✅ Audio Gate Threshold162, Danmaku Render Thread Count162, Subtitle Karaoke Highlight162, Gesture Long Press Duration, Cast Video PIP Max Resolution162, Playlist Continue Play Next162, Cache Preload Next Episode162, Progress Bar Buffered Color162, Volume Fade In On Resume162, History Import Export162, Playback Auto Rotate Landscape162, Screenshot Format JPEG, Video Denoise Strength162, Danmaku Render Cache Toggle, Subtitle Karaoke Speed
+
+### v162.1 音频门限阈值162 | Audio Gate Threshold162 | オーディオゲートしきい値162 | 오디오 게이트 임계값162
+- ✅ 音频门限阈值162
+- ✅ Audio Gate Threshold162
+- ✅ オーディオゲートしきい値162
+- ✅ 오디오 게이트 임계값162
+
+### v162.2 弹幕渲染线程数162 | Danmaku Render Thread Count162 | コメントレンダリングスレッド数162 | 댓글 렌더링 스레드 수162
+- ✅ 弹幕渲染线程数162
+- ✅ Danmaku Render Thread Count162
+- ✅ コメントレンダリングスレッド数162
+- ✅ 댓글 렌더링 스레드 수162
+
+### v162.3 字幕卡拉OK高亮162 | Subtitle Karaoke Highlight162 | 字幕カラオケハイライト162 | 자막 가라오케 하이라이트162
+- ✅ 字幕卡拉OK高亮162
+- ✅ Subtitle Karaoke Highlight162
+- ✅ 字幕カラオケハイライト162
+- ✅ 자막 가라오케 하이라이트162
+
+### v162.4 手势长按持续时间 | Gesture Long Press Duration | ジェスチャー長押し持続時間 | 제스처 길게 누르기 지속 시간
+- ✅ 手势长按持续时间
+- ✅ Gesture Long Press Duration
+- ✅ ジェスチャー長押し持続時間
+- ✅ 제스처 길게 누르기 지속 시간
+
+### v162.5 投射视频画中画最大分辨率162 | Cast Video PIP Max Resolution162 | キャストビデオPIP最大解像度162 | 캐스트 비디오 PIP 최대 해상도162
+- ✅ 投射视频画中画最大分辨率162
+- ✅ Cast Video PIP Max Resolution162
+- ✅ キャストビデオPIP最大解像度162
+- ✅ 캐스트 비디오 PIP 최대 해상도162
+
+### v162.6 播放列表自动播放下一个162 | Playlist Continue Play Next162 | プレイリスト次曲自動再生162 | 재생 목록 다음곡 자동 재생162
+- ✅ 播放列表自动播放下一个162
+- ✅ Playlist Continue Play Next162
+- ✅ プレイリスト次曲自動再生162
+- ✅ 재생 목록 다음곡 자동 재생162
+
+### v162.7 缓存预加载下一集162 | Cache Preload Next Episode162 | キャッシュ次エピソードプリロード162 | 캐시 다음 에피소드 프리로드162
+- ✅ 缓存预加载下一集162
+- ✅ Cache Preload Next Episode162
+- ✅ キャッシュ次エピソードプリロード162
+- ✅ 캐시 다음 에피소드 프리로드162
+
+### v162.8 进度条缓冲区颜色162 | Progress Bar Buffered Color162 | プログレスバーバッファ色162 | 진행 바 버퍼 색상162
+- ✅ 进度条缓冲区颜色162
+- ✅ Progress Bar Buffered Color162
+- ✅ プログレスバーバッファ色162
+- ✅ 진행 바 버퍼 색상162
+
+### v162.9 恢复播放时音量淡入162 | Volume Fade In On Resume162 | 再生再開時ボリュームフェードイン162 | 재생 재개 시 볼륨 페이드인162
+- ✅ 恢复播放时音量淡入162
+- ✅ Volume Fade In On Resume162
+- ✅ 再生再開時ボリュームフェードイン162
+- ✅ 재생 재개 시 볼륨 페이드인162
+
+### v162.10 历史记录导入导出162 | History Import Export162 | 履歴インポート/エクスポート162 | 기록 가져오기/내보내기162
+- ✅ 历史记录导入导出162
+- ✅ History Import Export162
+- ✅ 履歴インポート/エクスポート162
+- ✅ 기록 가져오기/내보내기162
+
+### v162.11 播放自动旋转横屏162 | Playback Auto Rotate Landscape162 | 再生時自動横向回転162 | 재생 시 자동 가로 회전162
+- ✅ 播放自动旋转横屏162
+- ✅ Playback Auto Rotate Landscape162
+- ✅ 再生時自動横向回転162
+- ✅ 재생 시 자동 가로 회전162
+
+### v162.12 截图格式JPEG | Screenshot Format JPEG | スクリーンショット形式JPEG | 스크린샷 형식 JPEG
+- ✅ 截图格式JPEG
+- ✅ Screenshot Format JPEG
+- ✅ スクリーンショット形式JPEG
+- ✅ 스크린샷 형식 JPEG
+
+### v162.13 视频降噪强度162 | Video Denoise Strength162 | ビデオノイズ除去強度162 | 비디오 노이즈 제거 강도162
+- ✅ 视频降噪强度162
+- ✅ Video Denoise Strength162
+- ✅ ビデオノイズ除去強度162
+- ✅ 비디오 노이즈 제거 강도162
+
+### v162.14 弹幕渲染缓存开关 | Danmaku Render Cache Toggle | コメントレンダリングキャッシュ切替 | 댓글 렌더링 캐시 전환
+- ✅ 弹幕渲染缓存开关
+- ✅ Danmaku Render Cache Toggle
+- ✅ コメントレンダリングキャッシュ切替
+- ✅ 댓글 렌더링 캐시 전환
+
+### v162.15 字幕卡拉OK速度 | Subtitle Karaoke Speed | 字幕カラオケ速度 | 자막 가라오케 속도
+- ✅ 字幕卡拉OK速度
+- ✅ Subtitle Karaoke Speed
+- ✅ 字幕カラオケ速度
+- ✅ 자막 가라오케 속도
+
+### v163.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v163.1-v163.15 功能列表
+- ✅ Audio Gate Release163, Danmaku Render Cache Toggle163, Subtitle Karaoke Speed163, Gesture Long Press Vibrate, Cast Video PIP Bitrate Limit, Playlist Continue On Wifi, Cache Preload Size MB, Progress Bar Buffered Width, Volume Fade Out On Pause, History Sync Cloud, Playback Auto Rotate Portrait, Screenshot Quality Level, Video Denoise Strength163, Danmaku Render Cache Size, Subtitle Karaoke Color
+
+### v163.1 音频门限释放163 | Audio Gate Release163 | オーディオゲートリリース163 | 오디오 게이트 릴리스163
+- ✅ 音频门限释放163
+- ✅ Audio Gate Release163
+- ✅ オーディオゲートリリース163
+- ✅ 오디오 게이트 릴리스163
+
+### v163.2 弹幕渲染缓存开关163 | Danmaku Render Cache Toggle163 | コメントレンダリングキャッシュ切替163 | 댓글 렌더링 캐시 전환163
+- ✅ 弹幕渲染缓存开关163
+- ✅ Danmaku Render Cache Toggle163
+- ✅ コメントレンダリングキャッシュ切替163
+- ✅ 댓글 렌더링 캐시 전환163
+
+### v163.3 字幕卡拉OK速度163 | Subtitle Karaoke Speed163 | 字幕カラオケ速度163 | 자막 가라오케 속도163
+- ✅ 字幕卡拉OK速度163
+- ✅ Subtitle Karaoke Speed163
+- ✅ 字幕カラオケ速度163
+- ✅ 자막 가라오케 속도163
+
+### v163.4 手势长按振动 | Gesture Long Press Vibrate | ジェスチャー長押し振動 | 제스처 길게 누르기 진동
+- ✅ 手势长按振动
+- ✅ Gesture Long Press Vibrate
+- ✅ ジェスチャー長押し振動
+- ✅ 제스처 길게 누르기 진동
+
+### v163.5 投射视频画中画比特率限制 | Cast Video PIP Bitrate Limit | キャストビデオPIPビットレート制限 | 캐스트 비디오 PIP 비트레이트 제한
+- ✅ 投射视频画中画比特率限制
+- ✅ Cast Video PIP Bitrate Limit
+- ✅ キャストビデオPIPビットレート制限
+- ✅ 캐스트 비디오 PIP 비트레이트 제한
+
+### v163.6 播放列表WiFi时继续播放 | Playlist Continue On Wifi | プレイリストWiFi時継続再生 | 재생 목록 WiFi 시 계속 재생
+- ✅ 播放列表WiFi时继续播放
+- ✅ Playlist Continue On Wifi
+- ✅ プレイリストWiFi時継続再生
+- ✅ 재생 목록 WiFi 시 계속 재생
+
+### v163.7 缓存预加载大小MB | Cache Preload Size MB | キャッシュプリロードサイズMB | 캐시 프리로드 크기 MB
+- ✅ 缓存预加载大小MB
+- ✅ Cache Preload Size MB
+- ✅ キャッシュプリロードサイズMB
+- ✅ 캐시 프리로드 크기 MB
+
+### v163.8 进度条缓冲区宽度 | Progress Bar Buffered Width | プログレスバーバッファ幅 | 진행 바 버퍼 너비
+- ✅ 进度条缓冲区宽度
+- ✅ Progress Bar Buffered Width
+- ✅ プログレスバーバッファ幅
+- ✅ 진행 바 버퍼 너비
+
+### v163.9 暂停时音量淡出 | Volume Fade Out On Pause | 一時停止時ボリュームフェードアウト | 일시 정지 시 볼륨 페이드아웃
+- ✅ 暂停时音量淡出
+- ✅ Volume Fade Out On Pause
+- ✅ 一時停止時ボリュームフェードアウト
+- ✅ 일시 정지 시 볼륨 페이드아웃
+
+### v163.10 历史记录云同步 | History Sync Cloud | 履歴クラウド同期 | 기록 클라우드 동기화
+- ✅ 历史记录云同步
+- ✅ History Sync Cloud
+- ✅ 履歴クラウド同期
+- ✅ 기록 클라우드 동기화
+
+### v163.11 播放自动旋转竖屏 | Playback Auto Rotate Portrait | 再生時自動縦向回転 | 재생 시 자동 세로 회전
+- ✅ 播放自动旋转竖屏
+- ✅ Playback Auto Rotate Portrait
+- ✅ 再生時自動縦向回転
+- ✅ 재생 시 자동 세로 회전
+
+### v163.12 截图质量级别 | Screenshot Quality Level | スクリーンショット品質レベル | 스크린샷 품질 수준
+- ✅ 截图质量级别
+- ✅ Screenshot Quality Level
+- ✅ スクリーンショット品質レベル
+- ✅ 스크린샷 품질 수준
+
+### v163.13 视频降噪强度163 | Video Denoise Strength163 | ビデオノイズ除去強度163 | 비디오 노이즈 제거 강도163
+- ✅ 视频降噪强度163
+- ✅ Video Denoise Strength163
+- ✅ ビデオノイズ除去強度163
+- ✅ 비디오 노이즈 제거 강도163
+
+### v163.14 弹幕渲染缓存大小 | Danmaku Render Cache Size | コメントレンダリングキャッシュサイズ | 댓글 렌더링 캐시 크기
+- ✅ 弹幕渲染缓存大小
+- ✅ Danmaku Render Cache Size
+- ✅ コメントレンダリングキャッシュサイズ
+- ✅ 댓글 렌더링 캐시 크기
+
+### v163.15 字幕卡拉OK颜色 | Subtitle Karaoke Color | 字幕カラオケ色 | 자막 가라오케 색상
+- ✅ 字幕卡拉OK颜色
+- ✅ Subtitle Karaoke Color
+- ✅ 字幕カラオケ色
+- ✅ 자막 가라오케 색상
+
+### v164.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v164.1-v164.15 功能列表
+- ✅ Audio Gate Range164, Danmaku Render Cache Size164, Subtitle Karaoke Color164, Gesture Long Press Vibrate164, Cast Video PIP Bitrate Limit164, Playlist Continue On Wifi164, Cache Preload On Wifi, Progress Bar Buffered Opacity, Volume Fade Out On Pause164, History Sync Cloud164, Playback Remember Speed, Screenshot Auto Name, Video Sharpen Toggle164, Danmaku Render Cache Policy, Subtitle Karaoke Font
+
+### v164.1 音频门限范围164 | Audio Gate Range164 | オーディオゲートレンジ164 | 오디오 게이트 범위164
+- ✅ 音频门限范围164
+- ✅ Audio Gate Range164
+- ✅ オーディオゲートレンジ164
+- ✅ 오디오 게이트 범위164
+
+### v164.2 弹幕渲染缓存大小164 | Danmaku Render Cache Size164 | コメントレンダリングキャッシュサイズ164 | 댓글 렌더링 캐시 크기164
+- ✅ 弹幕渲染缓存大小164
+- ✅ Danmaku Render Cache Size164
+- ✅ コメントレンダリングキャッシュサイズ164
+- ✅ 댓글 렌더링 캐시 크기164
+
+### v164.3 字幕卡拉OK颜色164 | Subtitle Karaoke Color164 | 字幕カラオケ色164 | 자막 가라오케 색상164
+- ✅ 字幕卡拉OK颜色164
+- ✅ Subtitle Karaoke Color164
+- ✅ 字幕カラオケ色164
+- ✅ 자막 가라오케 색상164
+
+### v164.4 手势长按振动164 | Gesture Long Press Vibrate164 | ジェスチャー長押し振動164 | 제스처 길게 누르기 진동164
+- ✅ 手势长按振动164
+- ✅ Gesture Long Press Vibrate164
+- ✅ ジェスチャー長押し振動164
+- ✅ 제스처 길게 누르기 진동164
+
+### v164.5 投射视频画中画比特率限制164 | Cast Video PIP Bitrate Limit164 | キャストビデオPIPビットレート制限164 | 캐스트 비디오 PIP 비트레이트 제한164
+- ✅ 投射视频画中画比特率限制164
+- ✅ Cast Video PIP Bitrate Limit164
+- ✅ キャストビデオPIPビットレート制限164
+- ✅ 캐스트 비디오 PIP 비트레이트 제한164
+
+### v164.6 播放列表WiFi时继续播放164 | Playlist Continue On Wifi164 | プレイリストWiFi時継続再生164 | 재생 목록 WiFi 시 계속 재생164
+- ✅ 播放列表WiFi时继续播放164
+- ✅ Playlist Continue On Wifi164
+- ✅ プレイリストWiFi時継続再生164
+- ✅ 재생 목록 WiFi 시 계속 재생164
+
+### v164.7 缓存仅WiFi预加载 | Cache Preload On Wifi | キャッシュWiFi時プリロード | 캐시 WiFi 시 프리로드
+- ✅ 缓存仅WiFi预加载
+- ✅ Cache Preload On Wifi
+- ✅ キャッシュWiFi時プリロード
+- ✅ 캐시 WiFi 시 프리로드
+
+### v164.8 进度条缓冲区透明度 | Progress Bar Buffered Opacity | プログレスバーバッファ透明度 | 진행 바 버퍼 불투명도
+- ✅ 进度条缓冲区透明度
+- ✅ Progress Bar Buffered Opacity
+- ✅ プログレスバーバッファ透明度
+- ✅ 진행 바 버퍼 불투명도
+
+### v164.9 暂停时音量淡出164 | Volume Fade Out On Pause164 | 一時停止時ボリュームフェードアウト164 | 일시 정지 시 볼륨 페이드아웃164
+- ✅ 暂停时音量淡出164
+- ✅ Volume Fade Out On Pause164
+- ✅ 一時停止時ボリュームフェードアウト164
+- ✅ 일시 정지 시 볼륨 페이드아웃164
+
+### v164.10 历史记录云同步164 | History Sync Cloud164 | 履歴クラウド同期164 | 기록 클라우드 동기화164
+- ✅ 历史记录云同步164
+- ✅ History Sync Cloud164
+- ✅ 履歴クラウド同期164
+- ✅ 기록 클라우드 동기화164
+
+### v164.11 播放记住速度 | Playback Remember Speed | 再生速度記憶 | 재생 속도 기억
+- ✅ 播放记住速度
+- ✅ Playback Remember Speed
+- ✅ 再生速度記憶
+- ✅ 재생 속도 기억
+
+### v164.12 截图自动命名 | Screenshot Auto Name | スクリーンショット自動命名 | 스크린샷 자동 이름
+- ✅ 截图自动命名
+- ✅ Screenshot Auto Name
+- ✅ スクリーンショット自動命名
+- ✅ 스크린샷 자동 이름
+
+### v164.13 视频锐化开关164 | Video Sharpen Toggle164 | ビデオシャープン切替164 | 비디오 선명화 전환164
+- ✅ 视频锐化开关164
+- ✅ Video Sharpen Toggle164
+- ✅ ビデオシャープン切替164
+- ✅ 비디오 선명화 전환164
+
+### v164.14 弹幕渲染缓存策略 | Danmaku Render Cache Policy | コメントレンダリングキャッシュポリシー | 댓글 렌더링 캐시 정책
+- ✅ 弹幕渲染缓存策略
+- ✅ Danmaku Render Cache Policy
+- ✅ コメントレンダリングキャッシュポリシー
+- ✅ 댓글 렌더링 캐시 정책
+
+### v164.15 字幕卡拉OK字体 | Subtitle Karaoke Font | 字幕カラオケフォント | 자막 가라오케 글꼴
+- ✅ 字幕卡拉OK字体
+- ✅ Subtitle Karaoke Font
+- ✅ 字幕カラオケフォント
+- ✅ 자막 가라오케 글꼴
+
+### v165.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v165.1-v165.15 功能列表
+- ✅ Audio Gate Attack165, Danmaku Render Cache Policy165, Subtitle Karaoke Font165, Gesture Swipe Left Action, Cast Video PIP Frame Drop, Playlist Shuffle Mode, Cache Preload On Wifi165, Progress Bar Buffered Anim, Volume Fade Duration, History Sync Wifi, Playback Remember Speed165, Screenshot Auto Name165, Video Sharpen Strength165, Danmaku Render Batch, Subtitle Karaoke Timing
+
+### v165.1 音频门限启动165 | Audio Gate Attack165 | オーディオゲートアタック165 | 오디오 게이트 어택165
+- ✅ 音频门限启动165
+- ✅ Audio Gate Attack165
+- ✅ オーディオゲートアタック165
+- ✅ 오디오 게이트 어택165
+
+### v165.2 弹幕渲染缓存策略165 | Danmaku Render Cache Policy165 | コメントレンダリングキャッシュポリシー165 | 댓글 렌더링 캐시 정책165
+- ✅ 弹幕渲染缓存策略165
+- ✅ Danmaku Render Cache Policy165
+- ✅ コメントレンダリングキャッシュポリシー165
+- ✅ 댓글 렌더링 캐시 정책165
+
+### v165.3 字幕卡拉OK字体165 | Subtitle Karaoke Font165 | 字幕カラオケフォント165 | 자막 가라오케 글꼴165
+- ✅ 字幕卡拉OK字体165
+- ✅ Subtitle Karaoke Font165
+- ✅ 字幕カラオケフォント165
+- ✅ 자막 가라오케 글꼴165
+
+### v165.4 手势左滑操作 | Gesture Swipe Left Action | ジェスチャースワイプ左アクション | 제스처 왼쪽 스와이프 동작
+- ✅ 手势左滑操作
+- ✅ Gesture Swipe Left Action
+- ✅ ジェスチャースワイプ左アクション
+- ✅ 제스처 왼쪽 스와이프 동작
+
+### v165.5 投射视频画中画丢帧 | Cast Video PIP Frame Drop | キャストビデオPIPフレームドロップ | 캐스트 비디오 PIP 프레임 드롭
+- ✅ 投射视频画中画丢帧
+- ✅ Cast Video PIP Frame Drop
+- ✅ キャストビデオPIPフレームドロップ
+- ✅ 캐스트 비디오 PIP 프레임 드롭
+
+### v165.6 播放列表随机模式 | Playlist Shuffle Mode | プレイリストシャッフルモード | 재생 목록 셔플 모드
+- ✅ 播放列表随机模式
+- ✅ Playlist Shuffle Mode
+- ✅ プレイリストシャッフルモード
+- ✅ 재생 목록 셔플 모드
+
+### v165.7 缓存仅WiFi预加载165 | Cache Preload On Wifi165 | キャッシュWiFi時プリロード165 | 캐시 WiFi 시 프리로드165
+- ✅ 缓存仅WiFi预加载165
+- ✅ Cache Preload On Wifi165
+- ✅ キャッシュWiFi時プリロード165
+- ✅ 캐시 WiFi 시 프리로드165
+
+### v165.8 进度条缓冲区动画 | Progress Bar Buffered Anim | プログレスバーバッファアニメーション | 진행 바 버퍼 애니메이션
+- ✅ 进度条缓冲区动画
+- ✅ Progress Bar Buffered Anim
+- ✅ プログレスバーバッファアニメーション
+- ✅ 진행 바 버퍼 애니메이션
+
+### v165.9 音量淡入淡出持续 | Volume Fade Duration | ボリュームフェード持続時間 | 볼륨 페이드 지속 시간
+- ✅ 音量淡入淡出持续
+- ✅ Volume Fade Duration
+- ✅ ボリュームフェード持続時間
+- ✅ 볼륨 페이드 지속 시간
+
+### v165.10 历史记录WiFi同步 | History Sync Wifi | 履歴WiFi同期 | 기록 WiFi 동기화
+- ✅ 历史记录WiFi同步
+- ✅ History Sync Wifi
+- ✅ 履歴WiFi同期
+- ✅ 기록 WiFi 동기화
+
+### v165.11 播放记住速度165 | Playback Remember Speed165 | 再生速度記憶165 | 재생 속도 기억165
+- ✅ 播放记住速度165
+- ✅ Playback Remember Speed165
+- ✅ 再生速度記憶165
+- ✅ 재생 속도 기억165
+
+### v165.12 截图自动命名165 | Screenshot Auto Name165 | スクリーンショット自動命名165 | 스크린샷 자동 이름165
+- ✅ 截图自动命名165
+- ✅ Screenshot Auto Name165
+- ✅ スクリーンショット自動命名165
+- ✅ 스크린샷 자동 이름165
+
+### v165.13 视频锐化强度165 | Video Sharpen Strength165 | ビデオシャープン強度165 | 비디오 선명화 강도165
+- ✅ 视频锐化强度165
+- ✅ Video Sharpen Strength165
+- ✅ ビデオシャープン強度165
+- ✅ 비디오 선명화 강도165
+
+### v165.14 弹幕批量渲染 | Danmaku Render Batch | コメントバッチレンダリング | 댓글 배치 렌더링
+- ✅ 弹幕批量渲染
+- ✅ Danmaku Render Batch
+- ✅ コメントバッチレンダリング
+- ✅ 댓글 배치 렌더링
+
+### v165.15 字幕卡拉OK时间轴 | Subtitle Karaoke Timing | 字幕カラオケタイミング | 자막 가라오케 타이밍
+- ✅ 字幕卡拉OK时间轴
+- ✅ Subtitle Karaoke Timing
+- ✅ 字幕カラオケタイミング
+- ✅ 자막 가라오케 타이밍
+
+### v166.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v166.1-v166.15 功能列表
+- ✅ Audio Gate Hysteresis, Danmaku Render Batch166, Subtitle Karaoke Timing166, Gesture Swipe Right Action, Cast Video PIP Frame Drop166, Playlist Shuffle Mode166, Cache Preload Priority, Progress Bar Buffered Anim166, Volume Fade Duration166, History Sync Wifi166, Playback Remember Quality, Screenshot Prefix Custom, Video Sharpen Strength166, Danmaku Render Batch Size166, Subtitle Karaoke Mode
+
+### v166.1 音频门限滞后 | Audio Gate Hysteresis | オーディオゲートヒステリシス | 오디오 게이트 히스테리시스
+- ✅ 音频门限滞后
+- ✅ Audio Gate Hysteresis
+- ✅ オーディオゲートヒステリシス
+- ✅ 오디오 게이트 히스테리시스
+
+### v166.2 弹幕批量渲染166 | Danmaku Render Batch166 | コメントバッチレンダリング166 | 댓글 배치 렌더링166
+- ✅ 弹幕批量渲染166
+- ✅ Danmaku Render Batch166
+- ✅ コメントバッチレンダリング166
+- ✅ 댓글 배치 렌더링166
+
+### v166.3 字幕卡拉OK时间轴166 | Subtitle Karaoke Timing166 | 字幕カラオケタイミング166 | 자막 가라오케 타이밍166
+- ✅ 字幕卡拉OK时间轴166
+- ✅ Subtitle Karaoke Timing166
+- ✅ 字幕カラオケタイミング166
+- ✅ 자막 가라오케 타이밍166
+
+### v166.4 手势右滑操作 | Gesture Swipe Right Action | ジェスチャースワイプ右アクション | 제스처 오른쪽 스와이프 동작
+- ✅ 手势右滑操作
+- ✅ Gesture Swipe Right Action
+- ✅ ジェスチャースワイプ右アクション
+- ✅ 제스처 오른쪽 스와이프 동작
+
+### v166.5 投射视频画中画丢帧166 | Cast Video PIP Frame Drop166 | キャストビデオPIPフレームドロップ166 | 캐스트 비디오 PIP 프레임 드롭166
+- ✅ 投射视频画中画丢帧166
+- ✅ Cast Video PIP Frame Drop166
+- ✅ キャストビデオPIPフレームドロップ166
+- ✅ 캐스트 비디오 PIP 프레임 드롭166
+
+### v166.6 播放列表随机模式166 | Playlist Shuffle Mode166 | プレイリストシャッフルモード166 | 재생 목록 셔플 모드166
+- ✅ 播放列表随机模式166
+- ✅ Playlist Shuffle Mode166
+- ✅ プレイリストシャッフルモード166
+- ✅ 재생 목록 셔플 모드166
+
+### v166.7 缓存预加载优先级 | Cache Preload Priority | キャッシュプリロード優先度 | 캐시 프리로드 우선순위
+- ✅ 缓存预加载优先级
+- ✅ Cache Preload Priority
+- ✅ キャッシュプリロード優先度
+- ✅ 캐시 프리로드 우선순위
+
+### v166.8 进度条缓冲区动画166 | Progress Bar Buffered Anim166 | プログレスバーバッファアニメーション166 | 진행 바 버퍼 애니메이션166
+- ✅ 进度条缓冲区动画166
+- ✅ Progress Bar Buffered Anim166
+- ✅ プログレスバーバッファアニメーション166
+- ✅ 진행 바 버퍼 애니메이션166
+
+### v166.9 音量淡入淡出持续166 | Volume Fade Duration166 | ボリュームフェード持続時間166 | 볼륨 페이드 지속 시간166
+- ✅ 音量淡入淡出持续166
+- ✅ Volume Fade Duration166
+- ✅ ボリュームフェード持続時間166
+- ✅ 볼륨 페이드 지속 시간166
+
+### v166.10 历史记录WiFi同步166 | History Sync Wifi166 | 履歴WiFi同期166 | 기록 WiFi 동기화166
+- ✅ 历史记录WiFi同步166
+- ✅ History Sync Wifi166
+- ✅ 履歴WiFi同期166
+- ✅ 기록 WiFi 동기화166
+
+### v166.11 播放记住画质 | Playback Remember Quality | 再生画質記憶 | 재생 화질 기억
+- ✅ 播放记住画质
+- ✅ Playback Remember Quality
+- ✅ 再生画質記憶
+- ✅ 재생 화질 기억
+
+### v166.12 截图前缀自定义 | Screenshot Prefix Custom | スクリーンショットプレフィックスカスタム | 스크린샷 접두사 사용자 정의
+- ✅ 截图前缀自定义
+- ✅ Screenshot Prefix Custom
+- ✅ スクリーンショットプレフィックスカスタム
+- ✅ 스크린샷 접두사 사용자 정의
+
+### v166.13 视频锐化强度166 | Video Sharpen Strength166 | ビデオシャープン強度166 | 비디오 선명화 강도166
+- ✅ 视频锐化强度166
+- ✅ Video Sharpen Strength166
+- ✅ ビデオシャープン強度166
+- ✅ 비디오 선명화 강도166
+
+### v166.14 弹幕渲染批量大小166 | Danmaku Render Batch Size166 | コメントレンダリングバッチサイズ166 | 댓글 렌더링 배치 크기166
+- ✅ 弹幕渲染批量大小166
+- ✅ Danmaku Render Batch Size166
+- ✅ コメントレンダリングバッチサイズ166
+- ✅ 댓글 렌더링 배치 크기166
+
+### v166.15 字幕卡拉OK模式 | Subtitle Karaoke Mode | 字幕カラオケモード | 자막 가라오케 모드
+- ✅ 字幕卡拉OK模式
+- ✅ Subtitle Karaoke Mode
+- ✅ 字幕カラオケモード
+- ✅ 자막 가라오케 모드
+
+### v167.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v167.1-v167.15 功能列表
+- ✅ Audio Gate Ratio, Danmaku Render Batch Size167, Subtitle Karaoke Mode167, Gesture Swipe Up Action, Cast Video PIP Adaptive Bitrate, Playlist Repeat Mode, Cache Preload Priority167, Progress Bar Loaded Color, Volume Fade Curve, History Sync Bluetooth, Playback Remember Quality167, Screenshot Prefix Custom167, Video Sharpen Radius, Danmaku Render Batch Timeout, Subtitle Karaoke Font Size
+
+### v167.1 音频门限比率 | Audio Gate Ratio | オーディオゲートレシオ | 오디오 게이트 비율
+- ✅ 音频门限比率
+- ✅ Audio Gate Ratio
+- ✅ オーディオゲートレシオ
+- ✅ 오디오 게이트 비율
+
+### v167.2 弹幕渲染批量大小167 | Danmaku Render Batch Size167 | コメントレンダリングバッチサイズ167 | 댓글 렌더링 배치 크기167
+- ✅ 弹幕渲染批量大小167
+- ✅ Danmaku Render Batch Size167
+- ✅ コメントレンダリングバッチサイズ167
+- ✅ 댓글 렌더링 배치 크기167
+
+### v167.3 字幕卡拉OK模式167 | Subtitle Karaoke Mode167 | 字幕カラオケモード167 | 자막 가라오케 모드167
+- ✅ 字幕卡拉OK模式167
+- ✅ Subtitle Karaoke Mode167
+- ✅ 字幕カラオケモード167
+- ✅ 자막 가라오케 모드167
+
+### v167.4 手势上滑操作 | Gesture Swipe Up Action | ジェスチャースワイプ上アクション | 제스처 위쪽 스와이프 동작
+- ✅ 手势上滑操作
+- ✅ Gesture Swipe Up Action
+- ✅ ジェスチャースワイプ上アクション
+- ✅ 제스처 위쪽 스와이프 동작
+
+### v167.5 投射视频画中画自适应比特率 | Cast Video PIP Adaptive Bitrate | キャストビデオPIPアダプティブビットレート | 캐스트 비디오 PIP 적응형 비트레이트
+- ✅ 投射视频画中画自适应比特率
+- ✅ Cast Video PIP Adaptive Bitrate
+- ✅ キャストビデオPIPアダプティブビットレート
+- ✅ 캐스트 비디오 PIP 적응형 비트레이트
+
+### v167.6 播放列表循环模式 | Playlist Repeat Mode | プレイリストリピートモード | 재생 목록 반복 모드
+- ✅ 播放列表循环模式
+- ✅ Playlist Repeat Mode
+- ✅ プレイリストリピートモード
+- ✅ 재생 목록 반복 모드
+
+### v167.7 缓存预加载优先级167 | Cache Preload Priority167 | キャッシュプリロード優先度167 | 캐시 프리로드 우선순위167
+- ✅ 缓存预加载优先级167
+- ✅ Cache Preload Priority167
+- ✅ キャッシュプリロード優先度167
+- ✅ 캐시 프리로드 우선순위167
+
+### v167.8 进度条已加载颜色 | Progress Bar Loaded Color | プログレスバー読み込み済み色 | 진행 바 로드 완료 색상
+- ✅ 进度条已加载颜色
+- ✅ Progress Bar Loaded Color
+- ✅ プログレスバー読み込み済み色
+- ✅ 진행 바 로드 완료 색상
+
+### v167.9 音量淡入淡出曲线 | Volume Fade Curve | ボリュームフェードカーブ | 볼륨 페이드 커브
+- ✅ 音量淡入淡出曲线
+- ✅ Volume Fade Curve
+- ✅ ボリュームフェードカーブ
+- ✅ 볼륨 페이드 커브
+
+### v167.10 历史记录蓝牙同步 | History Sync Bluetooth | 履歴Bluetooth同期 | 기록 블루투스 동기화
+- ✅ 历史记录蓝牙同步
+- ✅ History Sync Bluetooth
+- ✅ 履歴Bluetooth同期
+- ✅ 기록 블루투스 동기화
+
+### v167.11 播放记住画质167 | Playback Remember Quality167 | 再生画質記憶167 | 재생 화질 기억167
+- ✅ 播放记住画质167
+- ✅ Playback Remember Quality167
+- ✅ 再生画質記憶167
+- ✅ 재생 화질 기억167
+
+### v167.12 截图前缀自定义167 | Screenshot Prefix Custom167 | スクリーンショットプレフィックスカスタム167 | 스크린샷 접두사 사용자 정의167
+- ✅ 截图前缀自定义167
+- ✅ Screenshot Prefix Custom167
+- ✅ スクリーンショットプレフィックスカスタム167
+- ✅ 스크린샷 접두사 사용자 정의167
+
+### v167.13 视频锐化半径 | Video Sharpen Radius | ビデオシャープン半径 | 비디오 선명화 반경
+- ✅ 视频锐化半径
+- ✅ Video Sharpen Radius
+- ✅ ビデオシャープン半径
+- ✅ 비디오 선명화 반경
+
+### v167.14 弹幕渲染批量超时 | Danmaku Render Batch Timeout | コメントレンダリングバッチタイムアウト | 댓글 렌더링 배치 타임아웃
+- ✅ 弹幕渲染批量超时
+- ✅ Danmaku Render Batch Timeout
+- ✅ コメントレンダリングバッチタイムアウト
+- ✅ 댓글 렌더링 배치 타임아웃
+
+### v167.15 字幕卡拉OK字号 | Subtitle Karaoke Font Size | 字幕カラオケフォントサイズ | 자막 가라오케 글꼴 크기
+- ✅ 字幕卡拉OK字号
+- ✅ Subtitle Karaoke Font Size
+- ✅ 字幕カラオケフォントサイズ
+- ✅ 자막 가라오케 글꼴 크기
+
+### v168.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v168.1-v168.15 功能列表
+- ✅ Audio Gate Range168, Danmaku Render Batch Timeout168, Subtitle Karaoke Font Size168, Gesture Swipe Down Action, Cast Video PIP Adaptive Bitrate168, Playlist Repeat Mode168, Cache Cleanup On Low Storage, Progress Bar Loaded Color168, Volume Fade Curve168, History Sync Bluetooth168, Playback Auto Next, screenshotTimestampToggle, Video Sharpen Radius168, Danmaku Render Flush Policy, Subtitle Karaoke Align
+
+### v168.1 音频门限范围168 | Audio Gate Range168 | オーディオゲートレンジ168 | 오디오 게이트 범위168
+- ✅ 音频门限范围168
+- ✅ Audio Gate Range168
+- ✅ オーディオゲートレンジ168
+- ✅ 오디오 게이트 범위168
+
+### v168.2 弹幕渲染批量超时168 | Danmaku Render Batch Timeout168 | コメントレンダリングバッチタイムアウト168 | 댓글 렌더링 배치 타임아웃168
+- ✅ 弹幕渲染批量超时168
+- ✅ Danmaku Render Batch Timeout168
+- ✅ コメントレンダリングバッチタイムアウト168
+- ✅ 댓글 렌더링 배치 타임아웃168
+
+### v168.3 字幕卡拉OK字号168 | Subtitle Karaoke Font Size168 | 字幕カラオケフォントサイズ168 | 자막 가라오케 글꼴 크기168
+- ✅ 字幕卡拉OK字号168
+- ✅ Subtitle Karaoke Font Size168
+- ✅ 字幕カラオケフォントサイズ168
+- ✅ 자막 가라오케 글꼴 크기168
+
+### v168.4 手势下滑操作 | Gesture Swipe Down Action | ジェスチャースワイプ下アクション | 제스처 아래쪽 스와이프 동작
+- ✅ 手势下滑操作
+- ✅ Gesture Swipe Down Action
+- ✅ ジェスチャースワイプ下アクション
+- ✅ 제스처 아래쪽 스와이프 동작
+
+### v168.5 投射视频画中画自适应比特率168 | Cast Video PIP Adaptive Bitrate168 | キャストビデオPIPアダプティブビットレート168 | 캐스트 비디오 PIP 적응형 비트레이트168
+- ✅ 投射视频画中画自适应比特率168
+- ✅ Cast Video PIP Adaptive Bitrate168
+- ✅ キャストビデオPIPアダプティブビットレート168
+- ✅ 캐스트 비디오 PIP 적응형 비트레이트168
+
+### v168.6 播放列表循环模式168 | Playlist Repeat Mode168 | プレイリストリピートモード168 | 재생 목록 반복 모드168
+- ✅ 播放列表循环模式168
+- ✅ Playlist Repeat Mode168
+- ✅ プレイリストリピートモード168
+- ✅ 재생 목록 반복 모드168
+
+### v168.7 存储不足时清理缓存 | Cache Cleanup On Low Storage | 低ストレージ時キャッシュクリーンアップ | 저장 공간 부족 시 캐시 정리
+- ✅ 存储不足时清理缓存
+- ✅ Cache Cleanup On Low Storage
+- ✅ 低ストレージ時キャッシュクリーンアップ
+- ✅ 저장 공간 부족 시 캐시 정리
+
+### v168.8 进度条已加载颜色168 | Progress Bar Loaded Color168 | プログレスバー読み込み済み色168 | 진행 바 로드 완료 색상168
+- ✅ 进度条已加载颜色168
+- ✅ Progress Bar Loaded Color168
+- ✅ プログレスバー読み込み済み色168
+- ✅ 진행 바 로드 완료 색상168
+
+### v168.9 音量淡入淡出曲线168 | Volume Fade Curve168 | ボリュームフェードカーブ168 | 볼륨 페이드 커브168
+- ✅ 音量淡入淡出曲线168
+- ✅ Volume Fade Curve168
+- ✅ ボリュームフェードカーブ168
+- ✅ 볼륨 페이드 커브168
+
+### v168.10 历史记录蓝牙同步168 | History Sync Bluetooth168 | 履歴Bluetooth同期168 | 기록 블루투스 동기화168
+- ✅ 历史记录蓝牙同步168
+- ✅ History Sync Bluetooth168
+- ✅ 履歴Bluetooth同期168
+- ✅ 기록 블루투스 동기화168
+
+### v168.11 播放自动下一曲 | Playback Auto Next | 再生時自動次曲 | 재생 시 자동 다음곡
+- ✅ 播放自动下一曲
+- ✅ Playback Auto Next
+- ✅ 再生時自動次曲
+- ✅ 재생 시 자동 다음곡
+
+### v168.12 截图时间戳开关 | screenshotTimestampToggle | スクリーンショットタイムスタンプ切替 | 스크린샷 타임스탬프 전환
+- ✅ 截图时间戳开关
+- ✅ screenshotTimestampToggle
+- ✅ スクリーンショットタイムスタンプ切替
+- ✅ 스크린샷 타임스탬프 전환
+
+### v168.13 视频锐化半径168 | Video Sharpen Radius168 | ビデオシャープン半径168 | 비디오 선명화 반경168
+- ✅ 视频锐化半径168
+- ✅ Video Sharpen Radius168
+- ✅ ビデオシャープン半径168
+- ✅ 비디오 선명화 반경168
+
+### v168.14 弹幕渲染刷新策略 | Danmaku Render Flush Policy | コメントレンダリングフラッシュポリシー | 댓글 렌더링 플러시 정책
+- ✅ 弹幕渲染刷新策略
+- ✅ Danmaku Render Flush Policy
+- ✅ コメントレンダリングフラッシュポリシー
+- ✅ 댓글 렌더링 플러시 정책
+
+### v168.15 字幕卡拉OK对齐 | Subtitle Karaoke Align | 字幕カラオケアライン | 자막 가라오케 정렬
+- ✅ 字幕卡拉OK对齐
+- ✅ Subtitle Karaoke Align
+- ✅ 字幕カラオケアライン
+- ✅ 자막 가라오케 정렬
+
+### v169.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v169.1-v169.15 功能列表
+- ✅ Audio Gate Knee, Danmaku Render Flush Policy169, Subtitle Karaoke Align169, Gesture Pinch In Action, Cast Video PIP Resolution Scale, Playlist Auto Play Related, Cache Cleanup On Low Storage169, Progress Bar Loaded Opacity, Volume Spatial Toggle169, History Search Full Text, Playback Auto Next169, Screenshot Timestamp Toggle169, Video Sharpen Threshold, Danmaku Render Flush Interval, Subtitle Karaoke Shadow
+
+### v169.1 音频门限拐点 | Audio Gate Knee | オーディオゲートニー | 오디오 게이트 니
+- ✅ 音频门限拐点
+- ✅ Audio Gate Knee
+- ✅ オーディオゲートニー
+- ✅ 오디오 게이트 니
+
+### v169.2 弹幕渲染刷新策略169 | Danmaku Render Flush Policy169 | コメントレンダリングフラッシュポリシー169 | 댓글 렌더링 플러시 정책169
+- ✅ 弹幕渲染刷新策略169
+- ✅ Danmaku Render Flush Policy169
+- ✅ コメントレンダリングフラッシュポリシー169
+- ✅ 댓글 렌더링 플러시 정책169
+
+### v169.3 字幕卡拉OK对齐169 | Subtitle Karaoke Align169 | 字幕カラオケアライン169 | 자막 가라오케 정렬169
+- ✅ 字幕卡拉OK对齐169
+- ✅ Subtitle Karaoke Align169
+- ✅ 字幕カラオケアライン169
+- ✅ 자막 가라오케 정렬169
+
+### v169.4 手势捏合操作 | Gesture Pinch In Action | ジェスチャーピンチインアクション | 제스처 핀치인 동작
+- ✅ 手势捏合操作
+- ✅ Gesture Pinch In Action
+- ✅ ジェスチャーピンチインアクション
+- ✅ 제스처 핀치인 동작
+
+### v169.5 投射视频画中画分辨率缩放 | Cast Video PIP Resolution Scale | キャストビデオPIP解像度スケール | 캐스트 비디오 PIP 해상도 스케일
+- ✅ 投射视频画中画分辨率缩放
+- ✅ Cast Video PIP Resolution Scale
+- ✅ キャストビデオPIP解像度スケール
+- ✅ 캐스트 비디오 PIP 해상도 스케일
+
+### v169.6 播放列表自动播放相关 | Playlist Auto Play Related | プレイリスト関連曲自動再生 | 재생 목록 관련곡 자동 재생
+- ✅ 播放列表自动播放相关
+- ✅ Playlist Auto Play Related
+- ✅ プレイリスト関連曲自動再生
+- ✅ 재생 목록 관련곡 자동 재생
+
+### v169.7 存储不足时清理缓存169 | Cache Cleanup On Low Storage169 | 低ストレージ時キャッシュクリーンアップ169 | 저장 공간 부족 시 캐시 정리169
+- ✅ 存储不足时清理缓存169
+- ✅ Cache Cleanup On Low Storage169
+- ✅ 低ストレージ時キャッシュクリーンアップ169
+- ✅ 저장 공간 부족 시 캐시 정리169
+
+### v169.8 进度条已加载透明度 | Progress Bar Loaded Opacity | プログレスバー読み込み済み透明度 | 진행 바 로드 완료 불투명도
+- ✅ 进度条已加载透明度
+- ✅ Progress Bar Loaded Opacity
+- ✅ プログレスバー読み込み済み透明度
+- ✅ 진행 바 로드 완료 불투명도
+
+### v169.9 音量空间音频开关169 | Volume Spatial Toggle169 | ボリューム空間オーディオ切替169 | 볼륨 공간 오디오 전환169
+- ✅ 音量空间音频开关169
+- ✅ Volume Spatial Toggle169
+- ✅ ボリューム空間オーディオ切替169
+- ✅ 볼륨 공간 오디오 전환169
+
+### v169.10 历史记录全文搜索 | History Search Full Text | 履歴全文検索 | 기록 전문 검색
+- ✅ 历史记录全文搜索
+- ✅ History Search Full Text
+- ✅ 履歴全文検索
+- ✅ 기록 전문 검색
+
+### v169.11 播放自动下一曲169 | Playback Auto Next169 | 再生時自動次曲169 | 재생 시 자동 다음곡169
+- ✅ 播放自动下一曲169
+- ✅ Playback Auto Next169
+- ✅ 再生時自動次曲169
+- ✅ 재생 시 자동 다음곡169
+
+### v169.12 截图时间戳开关169 | Screenshot Timestamp Toggle169 | スクリーンショットタイムスタンプ切替169 | 스크린샷 타임스탬프 전환169
+- ✅ 截图时间戳开关169
+- ✅ Screenshot Timestamp Toggle169
+- ✅ スクリーンショットタイムスタンプ切替169
+- ✅ 스크린샷 타임스탬프 전환169
+
+### v169.13 视频锐化阈值 | Video Sharpen Threshold | ビデオシャープンしきい値 | 비디오 선명화 임계값
+- ✅ 视频锐化阈值
+- ✅ Video Sharpen Threshold
+- ✅ ビデオシャープンしきい値
+- ✅ 비디오 선명화 임계값
+
+### v169.14 弹幕渲染刷新间隔 | Danmaku Render Flush Interval | コメントレンダリングフラッシュ間隔 | 댓글 렌더링 플러시 간격
+- ✅ 弹幕渲染刷新间隔
+- ✅ Danmaku Render Flush Interval
+- ✅ コメントレンダリングフラッシュ間隔
+- ✅ 댓글 렌더링 플러시 간격
+
+### v169.15 字幕卡拉OK阴影 | Subtitle Karaoke Shadow | 字幕カラオケシャドウ | 자막 가라오케 그림자
+- ✅ 字幕卡拉OK阴影
+- ✅ Subtitle Karaoke Shadow
+- ✅ 字幕カラオケシャドウ
+- ✅ 자막 가라오케 그림자
+
+### v170.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v170.1-v170.15 功能列表
+- ✅ Audio Gate Mix, Danmaku Render Flush Interval170, Subtitle Karaoke Shadow170, Gesture Pinch Out Action, Cast Video PIP Resolution Scale170, Playlist Auto Play Related170, Cache Cleanup Max Age, Progress Bar Loaded Opacity170, Volume Spatial Mode, History Search Full Text170, Playback Loop AB Toggle170, Screenshot Watermark Toggle170, Video Sharpen Threshold170, Danmaku Render Flush All, Subtitle Karaoke Border
+
+### v170.1 音频门限混合比 | Audio Gate Mix | オーディオゲートミックス | 오디오 게이트 믹스
+- ✅ 音频门限混合比
+- ✅ Audio Gate Mix
+- ✅ オーディオゲートミックス
+- ✅ 오디오 게이트 믹스
+
+### v170.2 弹幕渲染刷新间隔170 | Danmaku Render Flush Interval170 | コメントレンダリングフラッシュ間隔170 | 댓글 렌더링 플러시 간격170
+- ✅ 弹幕渲染刷新间隔170
+- ✅ Danmaku Render Flush Interval170
+- ✅ コメントレンダリングフラッシュ間隔170
+- ✅ 댓글 렌더링 플러시 간격170
+
+### v170.3 字幕卡拉OK阴影170 | Subtitle Karaoke Shadow170 | 字幕カラオケシャドウ170 | 자막 가라오케 그림자170
+- ✅ 字幕卡拉OK阴影170
+- ✅ Subtitle Karaoke Shadow170
+- ✅ 字幕カラオケシャドウ170
+- ✅ 자막 가라오케 그림자170
+
+### v170.4 手势张开操作 | Gesture Pinch Out Action | ジェスチャーピンチアウトアクション | 제스처 핀치아웃 동작
+- ✅ 手势张开操作
+- ✅ Gesture Pinch Out Action
+- ✅ ジェスチャーピンチアウトアクション
+- ✅ 제스처 핀치아웃 동작
+
+### v170.5 投射视频画中画分辨率缩放170 | Cast Video PIP Resolution Scale170 | キャストビデオPIP解像度スケール170 | 캐스트 비디오 PIP 해상도 스케일170
+- ✅ 投射视频画中画分辨率缩放170
+- ✅ Cast Video PIP Resolution Scale170
+- ✅ キャストビデオPIP解像度スケール170
+- ✅ 캐스트 비디오 PIP 해상도 스케일170
+
+### v170.6 播放列表自动播放相关170 | Playlist Auto Play Related170 | プレイリスト関連曲自動再生170 | 재생 목록 관련곡 자동 재생170
+- ✅ 播放列表自动播放相关170
+- ✅ Playlist Auto Play Related170
+- ✅ プレイリスト関連曲自動再生170
+- ✅ 재생 목록 관련곡 자동 재생170
+
+### v170.7 缓存清理最大保存时间 | Cache Cleanup Max Age | キャッシュクリーンアップ最大経過時間 | 캐시 정리 최대 보존 기간
+- ✅ 缓存清理最大保存时间
+- ✅ Cache Cleanup Max Age
+- ✅ キャッシュクリーンアップ最大経過時間
+- ✅ 캐시 정리 최대 보존 기간
+
+### v170.8 进度条已加载透明度170 | Progress Bar Loaded Opacity170 | プログレスバー読み込み済み透明度170 | 진행 바 로드 완료 불투명도170
+- ✅ 进度条已加载透明度170
+- ✅ Progress Bar Loaded Opacity170
+- ✅ プログレスバー読み込み済み透明度170
+- ✅ 진행 바 로드 완료 불투명도170
+
+### v170.9 音量空间音频模式 | Volume Spatial Mode | ボリューム空間オーディオモード | 볼륨 공간 오디오 모드
+- ✅ 音量空间音频模式
+- ✅ Volume Spatial Mode
+- ✅ ボリューム空間オーディオモード
+- ✅ 볼륨 공간 오디오 모드
+
+### v170.10 历史记录全文搜索170 | History Search Full Text170 | 履歴全文検索170 | 기록 전문 검색170
+- ✅ 历史记录全文搜索170
+- ✅ History Search Full Text170
+- ✅ 履歴全文検索170
+- ✅ 기록 전문 검색170
+
+### v170.11 播放AB循环开关170 | Playback Loop AB Toggle170 | 再生ABループ切替170 | 재생 AB 루프 전환170
+- ✅ 播放AB循环开关170
+- ✅ Playback Loop AB Toggle170
+- ✅ 再生ABループ切替170
+- ✅ 재생 AB 루프 전환170
+
+### v170.12 截图水印开关170 | Screenshot Watermark Toggle170 | スクリーンショット透かし切替170 | 스크린샷 워터마크 전환170
+- ✅ 截图水印开关170
+- ✅ Screenshot Watermark Toggle170
+- ✅ スクリーンショット透かし切替170
+- ✅ 스크린샷 워터마크 전환170
+
+### v170.13 视频锐化阈值170 | Video Sharpen Threshold170 | ビデオシャープンしきい値170 | 비디오 선명화 임계값170
+- ✅ 视频锐化阈值170
+- ✅ Video Sharpen Threshold170
+- ✅ ビデオシャープンしきい値170
+- ✅ 비디오 선명화 임계값170
+
+### v170.14 弹幕渲染全部刷新 | Danmaku Render Flush All | コメントレンダリングフラッシュオール | 댓글 렌더링 전체 플러시
+- ✅ 弹幕渲染全部刷新
+- ✅ Danmaku Render Flush All
+- ✅ コメントレンダリングフラッシュオール
+- ✅ 댓글 렌더링 전체 플러시
+
+### v170.15 字幕卡拉OK边框 | Subtitle Karaoke Border | 字幕カラオケボーダー | 자막 가라오케 테두리
+- ✅ 字幕卡拉OK边框
+- ✅ Subtitle Karaoke Border
+- ✅ 字幕カラオケボーダー
+- ✅ 자막 가라오케 테두리
+
 ### v55.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
 ### v55.1-v55.15 功能列表
 - ✅ Auto Resume, Font Monospace, Color Hue Auto, Peak Limiter, Send Queue, Cast Bandwidth Limit, Lock Screen, Filter Regex, Network Policy, Double Tap Action, Font Weight Custom, Tint Custom, Volume Compressor, Bg Padding, Cast Auto Quality
@@ -22288,4 +23229,4 @@ This project is based on open-source software. All rights belong to the original
 - **基础版本 | Base Versions**: v10.0.0 - v11.19.0 (25 versions)
 - **AI自动维护版本 | AI Maintained**: v12.1 - v45.15 (550+ versions)
 - **开发周期 | Development Cycle**: 2024 - 2026
-- **功能特性 | Features**: 1600+ new features added
+- **功能特性 | Features**: 1700+ new features added
