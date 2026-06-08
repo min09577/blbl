@@ -42848,6 +42848,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getInt(KEY_V600BLENDAUTOMODE600, 0)
         set(value) = prefs.edit().putInt(KEY_V600BLENDAUTOMODE600, value).apply()
 
+    var v601actionAutoRepeat601: Boolean
+        get() = prefs.getBoolean(KEY_V601ACTIONAUTOREPEAT601, false)
+        set(value) = prefs.edit().putBoolean(KEY_V601ACTIONAUTOREPEAT601, value).apply()
+
+    var v601adapterAutoSwitch601: Boolean
+        get() = prefs.getBoolean(KEY_V601ADAPTERAUTOSWITCH601, false)
+        set(value) = prefs.edit().putBoolean(KEY_V601ADAPTERAUTOSWITCH601, value).apply()
+
+    var v601agentAutoConnect601: Boolean
+        get() = prefs.getBoolean(KEY_V601AGENTAUTOCONNECT601, false)
+        set(value) = prefs.edit().putBoolean(KEY_V601AGENTAUTOCONNECT601, value).apply()
+
+    var v601aliasAutoResolve601: Boolean
+        get() = prefs.getBoolean(KEY_V601ALIASAUTORESOLVE601, false)
+        set(value) = prefs.edit().putBoolean(KEY_V601ALIASAUTORESOLVE601, value).apply()
+
+    var v601alignAutoCenter601: Int
+        get() = prefs.getInt(KEY_V601ALIGNAUTOCENTER601, 0)
+        set(value) = prefs.edit().putInt(KEY_V601ALIGNAUTOCENTER601, value).apply()
+
+    var v601aliveAutoKeep601: Boolean
+        get() = prefs.getBoolean(KEY_V601ALIVEAUTOKEEP601, false)
+        set(value) = prefs.edit().putBoolean(KEY_V601ALIVEAUTOKEEP601, value).apply()
+
+    var v601alphaAutoFade601: Boolean
+        get() = prefs.getBoolean(KEY_V601ALPHAAUTOFADE601, false)
+        set(value) = prefs.edit().putBoolean(KEY_V601ALPHAAUTOFADE601, value).apply()
+
+    var v601ambientAutoLight601: Boolean
+        get() = prefs.getBoolean(KEY_V601AMBIENTAUTOLIGHT601, false)
+        set(value) = prefs.edit().putBoolean(KEY_V601AMBIENTAUTOLIGHT601, value).apply()
+
+    var v601amountAutoLimit601: Int
+        get() = prefs.getInt(KEY_V601AMOUNTAUTOLIMIT601, 0)
+        set(value) = prefs.edit().putInt(KEY_V601AMOUNTAUTOLIMIT601, value).apply()
+
+    var v601angleAutoRotate601: Boolean
+        get() = prefs.getBoolean(KEY_V601ANGLEAUTOROTATE601, false)
+        set(value) = prefs.edit().putBoolean(KEY_V601ANGLEAUTOROTATE601, value).apply()
+
+    var v601answerAutoReply601: Boolean
+        get() = prefs.getBoolean(KEY_V601ANSWERAUTOREPLY601, false)
+        set(value) = prefs.edit().putBoolean(KEY_V601ANSWERAUTOREPLY601, value).apply()
+
+    var v601apiAutoCall601: Boolean
+        get() = prefs.getBoolean(KEY_V601APIAUTOCALL601, false)
+        set(value) = prefs.edit().putBoolean(KEY_V601APIAUTOCALL601, value).apply()
+
+    var v601archiveAutoSave601: Boolean
+        get() = prefs.getBoolean(KEY_V601ARCHIVEAUTOSAVE601, false)
+        set(value) = prefs.edit().putBoolean(KEY_V601ARCHIVEAUTOSAVE601, value).apply()
+
+    var v601areaAutoDetect601: Boolean
+        get() = prefs.getBoolean(KEY_V601AREAAUTODETECT601, false)
+        set(value) = prefs.edit().putBoolean(KEY_V601AREAAUTODETECT601, value).apply()
+
+    var v601arrayAutoSort601: Boolean
+        get() = prefs.getBoolean(KEY_V601ARRAYAUTOSORT601, false)
+        set(value) = prefs.edit().putBoolean(KEY_V601ARRAYAUTOSORT601, value).apply()
+
+    var v602actionAutoRepeat602: Boolean
+        get() = prefs.getBoolean(KEY_V602ACTIONAUTOREPEAT602, false)
+        set(value) = prefs.edit().putBoolean(KEY_V602ACTIONAUTOREPEAT602, value).apply()
+
+    var v602adapterAutoSwitch602: Boolean
+        get() = prefs.getBoolean(KEY_V602ADAPTERAUTOSWITCH602, false)
+        set(value) = prefs.edit().putBoolean(KEY_V602ADAPTERAUTOSWITCH602, value).apply()
+
+    var v602agentAutoConnect602: Boolean
+        get() = prefs.getBoolean(KEY_V602AGENTAUTOCONNECT602, false)
+        set(value) = prefs.edit().putBoolean(KEY_V602AGENTAUTOCONNECT602, value).apply()
+
+    var v602aliasAutoResolve602: Boolean
+        get() = prefs.getBoolean(KEY_V602ALIASAUTORESOLVE602, false)
+        set(value) = prefs.edit().putBoolean(KEY_V602ALIASAUTORESOLVE602, value).apply()
+
+    var v602alignAutoCenter602: Int
+        get() = prefs.getInt(KEY_V602ALIGNAUTOCENTER602, 0)
+        set(value) = prefs.edit().putInt(KEY_V602ALIGNAUTOCENTER602, value).apply()
+
+    var v602aliveAutoKeep602: Boolean
+        get() = prefs.getBoolean(KEY_V602ALIVEAUTOKEEP602, false)
+        set(value) = prefs.edit().putBoolean(KEY_V602ALIVEAUTOKEEP602, value).apply()
+
+    var v602alphaAutoFade602: Boolean
+        get() = prefs.getBoolean(KEY_V602ALPHAAUTOFADE602, false)
+        set(value) = prefs.edit().putBoolean(KEY_V602ALPHAAUTOFADE602, value).apply()
+
+    var v602ambientAutoLight602: Boolean
+        get() = prefs.getBoolean(KEY_V602AMBIENTAUTOLIGHT602, false)
+        set(value) = prefs.edit().putBoolean(KEY_V602AMBIENTAUTOLIGHT602, value).apply()
+
+    var v602amountAutoLimit602: Int
+        get() = prefs.getInt(KEY_V602AMOUNTAUTOLIMIT602, 0)
+        set(value) = prefs.edit().putInt(KEY_V602AMOUNTAUTOLIMIT602, value).apply()
+
+    var v602angleAutoRotate602: Boolean
+        get() = prefs.getBoolean(KEY_V602ANGLEAUTOROTATE602, false)
+        set(value) = prefs.edit().putBoolean(KEY_V602ANGLEAUTOROTATE602, value).apply()
+
+    var v602answerAutoReply602: Boolean
+        get() = prefs.getBoolean(KEY_V602ANSWERAUTOREPLY602, false)
+        set(value) = prefs.edit().putBoolean(KEY_V602ANSWERAUTOREPLY602, value).apply()
+
+    var v602apiAutoCall602: Boolean
+        get() = prefs.getBoolean(KEY_V602APIAUTOCALL602, false)
+        set(value) = prefs.edit().putBoolean(KEY_V602APIAUTOCALL602, value).apply()
+
+    var v602archiveAutoSave602: Boolean
+        get() = prefs.getBoolean(KEY_V602ARCHIVEAUTOSAVE602, false)
+        set(value) = prefs.edit().putBoolean(KEY_V602ARCHIVEAUTOSAVE602, value).apply()
+
+    var v602areaAutoDetect602: Boolean
+        get() = prefs.getBoolean(KEY_V602AREAAUTODETECT602, false)
+        set(value) = prefs.edit().putBoolean(KEY_V602AREAAUTODETECT602, value).apply()
+
+    var v602arrayAutoSort602: Boolean
+        get() = prefs.getBoolean(KEY_V602ARRAYAUTOSORT602, false)
+        set(value) = prefs.edit().putBoolean(KEY_V602ARRAYAUTOSORT602, value).apply()
+
+    var v603actionAutoRepeat603: Boolean
+        get() = prefs.getBoolean(KEY_V603ACTIONAUTOREPEAT603, false)
+        set(value) = prefs.edit().putBoolean(KEY_V603ACTIONAUTOREPEAT603, value).apply()
+
+    var v603adapterAutoSwitch603: Boolean
+        get() = prefs.getBoolean(KEY_V603ADAPTERAUTOSWITCH603, false)
+        set(value) = prefs.edit().putBoolean(KEY_V603ADAPTERAUTOSWITCH603, value).apply()
+
+    var v603agentAutoConnect603: Boolean
+        get() = prefs.getBoolean(KEY_V603AGENTAUTOCONNECT603, false)
+        set(value) = prefs.edit().putBoolean(KEY_V603AGENTAUTOCONNECT603, value).apply()
+
+    var v603aliasAutoResolve603: Boolean
+        get() = prefs.getBoolean(KEY_V603ALIASAUTORESOLVE603, false)
+        set(value) = prefs.edit().putBoolean(KEY_V603ALIASAUTORESOLVE603, value).apply()
+
+    var v603alignAutoCenter603: Int
+        get() = prefs.getInt(KEY_V603ALIGNAUTOCENTER603, 0)
+        set(value) = prefs.edit().putInt(KEY_V603ALIGNAUTOCENTER603, value).apply()
+
+    var v603aliveAutoKeep603: Boolean
+        get() = prefs.getBoolean(KEY_V603ALIVEAUTOKEEP603, false)
+        set(value) = prefs.edit().putBoolean(KEY_V603ALIVEAUTOKEEP603, value).apply()
+
+    var v603alphaAutoFade603: Boolean
+        get() = prefs.getBoolean(KEY_V603ALPHAAUTOFADE603, false)
+        set(value) = prefs.edit().putBoolean(KEY_V603ALPHAAUTOFADE603, value).apply()
+
+    var v603ambientAutoLight603: Boolean
+        get() = prefs.getBoolean(KEY_V603AMBIENTAUTOLIGHT603, false)
+        set(value) = prefs.edit().putBoolean(KEY_V603AMBIENTAUTOLIGHT603, value).apply()
+
+    var v603amountAutoLimit603: Int
+        get() = prefs.getInt(KEY_V603AMOUNTAUTOLIMIT603, 0)
+        set(value) = prefs.edit().putInt(KEY_V603AMOUNTAUTOLIMIT603, value).apply()
+
+    var v603angleAutoRotate603: Boolean
+        get() = prefs.getBoolean(KEY_V603ANGLEAUTOROTATE603, false)
+        set(value) = prefs.edit().putBoolean(KEY_V603ANGLEAUTOROTATE603, value).apply()
+
+    var v603answerAutoReply603: Boolean
+        get() = prefs.getBoolean(KEY_V603ANSWERAUTOREPLY603, false)
+        set(value) = prefs.edit().putBoolean(KEY_V603ANSWERAUTOREPLY603, value).apply()
+
+    var v603apiAutoCall603: Boolean
+        get() = prefs.getBoolean(KEY_V603APIAUTOCALL603, false)
+        set(value) = prefs.edit().putBoolean(KEY_V603APIAUTOCALL603, value).apply()
+
+    var v603archiveAutoSave603: Boolean
+        get() = prefs.getBoolean(KEY_V603ARCHIVEAUTOSAVE603, false)
+        set(value) = prefs.edit().putBoolean(KEY_V603ARCHIVEAUTOSAVE603, value).apply()
+
+    var v603areaAutoDetect603: Boolean
+        get() = prefs.getBoolean(KEY_V603AREAAUTODETECT603, false)
+        set(value) = prefs.edit().putBoolean(KEY_V603AREAAUTODETECT603, value).apply()
+
+    var v603arrayAutoSort603: Boolean
+        get() = prefs.getBoolean(KEY_V603ARRAYAUTOSORT603, false)
+        set(value) = prefs.edit().putBoolean(KEY_V603ARRAYAUTOSORT603, value).apply()
+
+    var v604actionAutoRepeat604: Boolean
+        get() = prefs.getBoolean(KEY_V604ACTIONAUTOREPEAT604, false)
+        set(value) = prefs.edit().putBoolean(KEY_V604ACTIONAUTOREPEAT604, value).apply()
+
+    var v604adapterAutoSwitch604: Boolean
+        get() = prefs.getBoolean(KEY_V604ADAPTERAUTOSWITCH604, false)
+        set(value) = prefs.edit().putBoolean(KEY_V604ADAPTERAUTOSWITCH604, value).apply()
+
+    var v604agentAutoConnect604: Boolean
+        get() = prefs.getBoolean(KEY_V604AGENTAUTOCONNECT604, false)
+        set(value) = prefs.edit().putBoolean(KEY_V604AGENTAUTOCONNECT604, value).apply()
+
+    var v604aliasAutoResolve604: Boolean
+        get() = prefs.getBoolean(KEY_V604ALIASAUTORESOLVE604, false)
+        set(value) = prefs.edit().putBoolean(KEY_V604ALIASAUTORESOLVE604, value).apply()
+
+    var v604alignAutoCenter604: Int
+        get() = prefs.getInt(KEY_V604ALIGNAUTOCENTER604, 0)
+        set(value) = prefs.edit().putInt(KEY_V604ALIGNAUTOCENTER604, value).apply()
+
+    var v604aliveAutoKeep604: Boolean
+        get() = prefs.getBoolean(KEY_V604ALIVEAUTOKEEP604, false)
+        set(value) = prefs.edit().putBoolean(KEY_V604ALIVEAUTOKEEP604, value).apply()
+
+    var v604alphaAutoFade604: Boolean
+        get() = prefs.getBoolean(KEY_V604ALPHAAUTOFADE604, false)
+        set(value) = prefs.edit().putBoolean(KEY_V604ALPHAAUTOFADE604, value).apply()
+
+    var v604ambientAutoLight604: Boolean
+        get() = prefs.getBoolean(KEY_V604AMBIENTAUTOLIGHT604, false)
+        set(value) = prefs.edit().putBoolean(KEY_V604AMBIENTAUTOLIGHT604, value).apply()
+
+    var v604amountAutoLimit604: Int
+        get() = prefs.getInt(KEY_V604AMOUNTAUTOLIMIT604, 0)
+        set(value) = prefs.edit().putInt(KEY_V604AMOUNTAUTOLIMIT604, value).apply()
+
+    var v604angleAutoRotate604: Boolean
+        get() = prefs.getBoolean(KEY_V604ANGLEAUTOROTATE604, false)
+        set(value) = prefs.edit().putBoolean(KEY_V604ANGLEAUTOROTATE604, value).apply()
+
+    var v604answerAutoReply604: Boolean
+        get() = prefs.getBoolean(KEY_V604ANSWERAUTOREPLY604, false)
+        set(value) = prefs.edit().putBoolean(KEY_V604ANSWERAUTOREPLY604, value).apply()
+
+    var v604apiAutoCall604: Boolean
+        get() = prefs.getBoolean(KEY_V604APIAUTOCALL604, false)
+        set(value) = prefs.edit().putBoolean(KEY_V604APIAUTOCALL604, value).apply()
+
+    var v604archiveAutoSave604: Boolean
+        get() = prefs.getBoolean(KEY_V604ARCHIVEAUTOSAVE604, false)
+        set(value) = prefs.edit().putBoolean(KEY_V604ARCHIVEAUTOSAVE604, value).apply()
+
+    var v604areaAutoDetect604: Boolean
+        get() = prefs.getBoolean(KEY_V604AREAAUTODETECT604, false)
+        set(value) = prefs.edit().putBoolean(KEY_V604AREAAUTODETECT604, value).apply()
+
+    var v604arrayAutoSort604: Boolean
+        get() = prefs.getBoolean(KEY_V604ARRAYAUTOSORT604, false)
+        set(value) = prefs.edit().putBoolean(KEY_V604ARRAYAUTOSORT604, value).apply()
+
+    var v605actionAutoRepeat605: Boolean
+        get() = prefs.getBoolean(KEY_V605ACTIONAUTOREPEAT605, false)
+        set(value) = prefs.edit().putBoolean(KEY_V605ACTIONAUTOREPEAT605, value).apply()
+
+    var v605adapterAutoSwitch605: Boolean
+        get() = prefs.getBoolean(KEY_V605ADAPTERAUTOSWITCH605, false)
+        set(value) = prefs.edit().putBoolean(KEY_V605ADAPTERAUTOSWITCH605, value).apply()
+
+    var v605agentAutoConnect605: Boolean
+        get() = prefs.getBoolean(KEY_V605AGENTAUTOCONNECT605, false)
+        set(value) = prefs.edit().putBoolean(KEY_V605AGENTAUTOCONNECT605, value).apply()
+
+    var v605aliasAutoResolve605: Boolean
+        get() = prefs.getBoolean(KEY_V605ALIASAUTORESOLVE605, false)
+        set(value) = prefs.edit().putBoolean(KEY_V605ALIASAUTORESOLVE605, value).apply()
+
+    var v605alignAutoCenter605: Int
+        get() = prefs.getInt(KEY_V605ALIGNAUTOCENTER605, 0)
+        set(value) = prefs.edit().putInt(KEY_V605ALIGNAUTOCENTER605, value).apply()
+
+    var v605aliveAutoKeep605: Boolean
+        get() = prefs.getBoolean(KEY_V605ALIVEAUTOKEEP605, false)
+        set(value) = prefs.edit().putBoolean(KEY_V605ALIVEAUTOKEEP605, value).apply()
+
+    var v605alphaAutoFade605: Boolean
+        get() = prefs.getBoolean(KEY_V605ALPHAAUTOFADE605, false)
+        set(value) = prefs.edit().putBoolean(KEY_V605ALPHAAUTOFADE605, value).apply()
+
+    var v605ambientAutoLight605: Boolean
+        get() = prefs.getBoolean(KEY_V605AMBIENTAUTOLIGHT605, false)
+        set(value) = prefs.edit().putBoolean(KEY_V605AMBIENTAUTOLIGHT605, value).apply()
+
+    var v605amountAutoLimit605: Int
+        get() = prefs.getInt(KEY_V605AMOUNTAUTOLIMIT605, 0)
+        set(value) = prefs.edit().putInt(KEY_V605AMOUNTAUTOLIMIT605, value).apply()
+
+    var v605angleAutoRotate605: Boolean
+        get() = prefs.getBoolean(KEY_V605ANGLEAUTOROTATE605, false)
+        set(value) = prefs.edit().putBoolean(KEY_V605ANGLEAUTOROTATE605, value).apply()
+
+    var v605answerAutoReply605: Boolean
+        get() = prefs.getBoolean(KEY_V605ANSWERAUTOREPLY605, false)
+        set(value) = prefs.edit().putBoolean(KEY_V605ANSWERAUTOREPLY605, value).apply()
+
+    var v605apiAutoCall605: Boolean
+        get() = prefs.getBoolean(KEY_V605APIAUTOCALL605, false)
+        set(value) = prefs.edit().putBoolean(KEY_V605APIAUTOCALL605, value).apply()
+
+    var v605archiveAutoSave605: Boolean
+        get() = prefs.getBoolean(KEY_V605ARCHIVEAUTOSAVE605, false)
+        set(value) = prefs.edit().putBoolean(KEY_V605ARCHIVEAUTOSAVE605, value).apply()
+
+    var v605areaAutoDetect605: Boolean
+        get() = prefs.getBoolean(KEY_V605AREAAUTODETECT605, false)
+        set(value) = prefs.edit().putBoolean(KEY_V605AREAAUTODETECT605, value).apply()
+
+    var v605arrayAutoSort605: Boolean
+        get() = prefs.getBoolean(KEY_V605ARRAYAUTOSORT605, false)
+        set(value) = prefs.edit().putBoolean(KEY_V605ARRAYAUTOSORT605, value).apply()
+
+    var v606actionAutoRepeat606: Boolean
+        get() = prefs.getBoolean(KEY_V606ACTIONAUTOREPEAT606, false)
+        set(value) = prefs.edit().putBoolean(KEY_V606ACTIONAUTOREPEAT606, value).apply()
+
+    var v606adapterAutoSwitch606: Boolean
+        get() = prefs.getBoolean(KEY_V606ADAPTERAUTOSWITCH606, false)
+        set(value) = prefs.edit().putBoolean(KEY_V606ADAPTERAUTOSWITCH606, value).apply()
+
+    var v606agentAutoConnect606: Boolean
+        get() = prefs.getBoolean(KEY_V606AGENTAUTOCONNECT606, false)
+        set(value) = prefs.edit().putBoolean(KEY_V606AGENTAUTOCONNECT606, value).apply()
+
+    var v606aliasAutoResolve606: Boolean
+        get() = prefs.getBoolean(KEY_V606ALIASAUTORESOLVE606, false)
+        set(value) = prefs.edit().putBoolean(KEY_V606ALIASAUTORESOLVE606, value).apply()
+
+    var v606alignAutoCenter606: Int
+        get() = prefs.getInt(KEY_V606ALIGNAUTOCENTER606, 0)
+        set(value) = prefs.edit().putInt(KEY_V606ALIGNAUTOCENTER606, value).apply()
+
+    var v606aliveAutoKeep606: Boolean
+        get() = prefs.getBoolean(KEY_V606ALIVEAUTOKEEP606, false)
+        set(value) = prefs.edit().putBoolean(KEY_V606ALIVEAUTOKEEP606, value).apply()
+
+    var v606alphaAutoFade606: Boolean
+        get() = prefs.getBoolean(KEY_V606ALPHAAUTOFADE606, false)
+        set(value) = prefs.edit().putBoolean(KEY_V606ALPHAAUTOFADE606, value).apply()
+
+    var v606ambientAutoLight606: Boolean
+        get() = prefs.getBoolean(KEY_V606AMBIENTAUTOLIGHT606, false)
+        set(value) = prefs.edit().putBoolean(KEY_V606AMBIENTAUTOLIGHT606, value).apply()
+
+    var v606amountAutoLimit606: Int
+        get() = prefs.getInt(KEY_V606AMOUNTAUTOLIMIT606, 0)
+        set(value) = prefs.edit().putInt(KEY_V606AMOUNTAUTOLIMIT606, value).apply()
+
+    var v606angleAutoRotate606: Boolean
+        get() = prefs.getBoolean(KEY_V606ANGLEAUTOROTATE606, false)
+        set(value) = prefs.edit().putBoolean(KEY_V606ANGLEAUTOROTATE606, value).apply()
+
+    var v606answerAutoReply606: Boolean
+        get() = prefs.getBoolean(KEY_V606ANSWERAUTOREPLY606, false)
+        set(value) = prefs.edit().putBoolean(KEY_V606ANSWERAUTOREPLY606, value).apply()
+
+    var v606apiAutoCall606: Boolean
+        get() = prefs.getBoolean(KEY_V606APIAUTOCALL606, false)
+        set(value) = prefs.edit().putBoolean(KEY_V606APIAUTOCALL606, value).apply()
+
+    var v606archiveAutoSave606: Boolean
+        get() = prefs.getBoolean(KEY_V606ARCHIVEAUTOSAVE606, false)
+        set(value) = prefs.edit().putBoolean(KEY_V606ARCHIVEAUTOSAVE606, value).apply()
+
+    var v606areaAutoDetect606: Boolean
+        get() = prefs.getBoolean(KEY_V606AREAAUTODETECT606, false)
+        set(value) = prefs.edit().putBoolean(KEY_V606AREAAUTODETECT606, value).apply()
+
+    var v606arrayAutoSort606: Boolean
+        get() = prefs.getBoolean(KEY_V606ARRAYAUTOSORT606, false)
+        set(value) = prefs.edit().putBoolean(KEY_V606ARRAYAUTOSORT606, value).apply()
+
+    var v607actionAutoRepeat607: Boolean
+        get() = prefs.getBoolean(KEY_V607ACTIONAUTOREPEAT607, false)
+        set(value) = prefs.edit().putBoolean(KEY_V607ACTIONAUTOREPEAT607, value).apply()
+
+    var v607adapterAutoSwitch607: Boolean
+        get() = prefs.getBoolean(KEY_V607ADAPTERAUTOSWITCH607, false)
+        set(value) = prefs.edit().putBoolean(KEY_V607ADAPTERAUTOSWITCH607, value).apply()
+
+    var v607agentAutoConnect607: Boolean
+        get() = prefs.getBoolean(KEY_V607AGENTAUTOCONNECT607, false)
+        set(value) = prefs.edit().putBoolean(KEY_V607AGENTAUTOCONNECT607, value).apply()
+
+    var v607aliasAutoResolve607: Boolean
+        get() = prefs.getBoolean(KEY_V607ALIASAUTORESOLVE607, false)
+        set(value) = prefs.edit().putBoolean(KEY_V607ALIASAUTORESOLVE607, value).apply()
+
+    var v607alignAutoCenter607: Int
+        get() = prefs.getInt(KEY_V607ALIGNAUTOCENTER607, 0)
+        set(value) = prefs.edit().putInt(KEY_V607ALIGNAUTOCENTER607, value).apply()
+
+    var v607aliveAutoKeep607: Boolean
+        get() = prefs.getBoolean(KEY_V607ALIVEAUTOKEEP607, false)
+        set(value) = prefs.edit().putBoolean(KEY_V607ALIVEAUTOKEEP607, value).apply()
+
+    var v607alphaAutoFade607: Boolean
+        get() = prefs.getBoolean(KEY_V607ALPHAAUTOFADE607, false)
+        set(value) = prefs.edit().putBoolean(KEY_V607ALPHAAUTOFADE607, value).apply()
+
+    var v607ambientAutoLight607: Boolean
+        get() = prefs.getBoolean(KEY_V607AMBIENTAUTOLIGHT607, false)
+        set(value) = prefs.edit().putBoolean(KEY_V607AMBIENTAUTOLIGHT607, value).apply()
+
+    var v607amountAutoLimit607: Int
+        get() = prefs.getInt(KEY_V607AMOUNTAUTOLIMIT607, 0)
+        set(value) = prefs.edit().putInt(KEY_V607AMOUNTAUTOLIMIT607, value).apply()
+
+    var v607angleAutoRotate607: Boolean
+        get() = prefs.getBoolean(KEY_V607ANGLEAUTOROTATE607, false)
+        set(value) = prefs.edit().putBoolean(KEY_V607ANGLEAUTOROTATE607, value).apply()
+
+    var v607answerAutoReply607: Boolean
+        get() = prefs.getBoolean(KEY_V607ANSWERAUTOREPLY607, false)
+        set(value) = prefs.edit().putBoolean(KEY_V607ANSWERAUTOREPLY607, value).apply()
+
+    var v607apiAutoCall607: Boolean
+        get() = prefs.getBoolean(KEY_V607APIAUTOCALL607, false)
+        set(value) = prefs.edit().putBoolean(KEY_V607APIAUTOCALL607, value).apply()
+
+    var v607archiveAutoSave607: Boolean
+        get() = prefs.getBoolean(KEY_V607ARCHIVEAUTOSAVE607, false)
+        set(value) = prefs.edit().putBoolean(KEY_V607ARCHIVEAUTOSAVE607, value).apply()
+
+    var v607areaAutoDetect607: Boolean
+        get() = prefs.getBoolean(KEY_V607AREAAUTODETECT607, false)
+        set(value) = prefs.edit().putBoolean(KEY_V607AREAAUTODETECT607, value).apply()
+
+    var v607arrayAutoSort607: Boolean
+        get() = prefs.getBoolean(KEY_V607ARRAYAUTOSORT607, false)
+        set(value) = prefs.edit().putBoolean(KEY_V607ARRAYAUTOSORT607, value).apply()
+
+    var v608actionAutoRepeat608: Boolean
+        get() = prefs.getBoolean(KEY_V608ACTIONAUTOREPEAT608, false)
+        set(value) = prefs.edit().putBoolean(KEY_V608ACTIONAUTOREPEAT608, value).apply()
+
+    var v608adapterAutoSwitch608: Boolean
+        get() = prefs.getBoolean(KEY_V608ADAPTERAUTOSWITCH608, false)
+        set(value) = prefs.edit().putBoolean(KEY_V608ADAPTERAUTOSWITCH608, value).apply()
+
+    var v608agentAutoConnect608: Boolean
+        get() = prefs.getBoolean(KEY_V608AGENTAUTOCONNECT608, false)
+        set(value) = prefs.edit().putBoolean(KEY_V608AGENTAUTOCONNECT608, value).apply()
+
+    var v608aliasAutoResolve608: Boolean
+        get() = prefs.getBoolean(KEY_V608ALIASAUTORESOLVE608, false)
+        set(value) = prefs.edit().putBoolean(KEY_V608ALIASAUTORESOLVE608, value).apply()
+
+    var v608alignAutoCenter608: Int
+        get() = prefs.getInt(KEY_V608ALIGNAUTOCENTER608, 0)
+        set(value) = prefs.edit().putInt(KEY_V608ALIGNAUTOCENTER608, value).apply()
+
+    var v608aliveAutoKeep608: Boolean
+        get() = prefs.getBoolean(KEY_V608ALIVEAUTOKEEP608, false)
+        set(value) = prefs.edit().putBoolean(KEY_V608ALIVEAUTOKEEP608, value).apply()
+
+    var v608alphaAutoFade608: Boolean
+        get() = prefs.getBoolean(KEY_V608ALPHAAUTOFADE608, false)
+        set(value) = prefs.edit().putBoolean(KEY_V608ALPHAAUTOFADE608, value).apply()
+
+    var v608ambientAutoLight608: Boolean
+        get() = prefs.getBoolean(KEY_V608AMBIENTAUTOLIGHT608, false)
+        set(value) = prefs.edit().putBoolean(KEY_V608AMBIENTAUTOLIGHT608, value).apply()
+
+    var v608amountAutoLimit608: Int
+        get() = prefs.getInt(KEY_V608AMOUNTAUTOLIMIT608, 0)
+        set(value) = prefs.edit().putInt(KEY_V608AMOUNTAUTOLIMIT608, value).apply()
+
+    var v608angleAutoRotate608: Boolean
+        get() = prefs.getBoolean(KEY_V608ANGLEAUTOROTATE608, false)
+        set(value) = prefs.edit().putBoolean(KEY_V608ANGLEAUTOROTATE608, value).apply()
+
+    var v608answerAutoReply608: Boolean
+        get() = prefs.getBoolean(KEY_V608ANSWERAUTOREPLY608, false)
+        set(value) = prefs.edit().putBoolean(KEY_V608ANSWERAUTOREPLY608, value).apply()
+
+    var v608apiAutoCall608: Boolean
+        get() = prefs.getBoolean(KEY_V608APIAUTOCALL608, false)
+        set(value) = prefs.edit().putBoolean(KEY_V608APIAUTOCALL608, value).apply()
+
+    var v608archiveAutoSave608: Boolean
+        get() = prefs.getBoolean(KEY_V608ARCHIVEAUTOSAVE608, false)
+        set(value) = prefs.edit().putBoolean(KEY_V608ARCHIVEAUTOSAVE608, value).apply()
+
+    var v608areaAutoDetect608: Boolean
+        get() = prefs.getBoolean(KEY_V608AREAAUTODETECT608, false)
+        set(value) = prefs.edit().putBoolean(KEY_V608AREAAUTODETECT608, value).apply()
+
+    var v608arrayAutoSort608: Boolean
+        get() = prefs.getBoolean(KEY_V608ARRAYAUTOSORT608, false)
+        set(value) = prefs.edit().putBoolean(KEY_V608ARRAYAUTOSORT608, value).apply()
+
+    var v609actionAutoRepeat609: Boolean
+        get() = prefs.getBoolean(KEY_V609ACTIONAUTOREPEAT609, false)
+        set(value) = prefs.edit().putBoolean(KEY_V609ACTIONAUTOREPEAT609, value).apply()
+
+    var v609adapterAutoSwitch609: Boolean
+        get() = prefs.getBoolean(KEY_V609ADAPTERAUTOSWITCH609, false)
+        set(value) = prefs.edit().putBoolean(KEY_V609ADAPTERAUTOSWITCH609, value).apply()
+
+    var v609agentAutoConnect609: Boolean
+        get() = prefs.getBoolean(KEY_V609AGENTAUTOCONNECT609, false)
+        set(value) = prefs.edit().putBoolean(KEY_V609AGENTAUTOCONNECT609, value).apply()
+
+    var v609aliasAutoResolve609: Boolean
+        get() = prefs.getBoolean(KEY_V609ALIASAUTORESOLVE609, false)
+        set(value) = prefs.edit().putBoolean(KEY_V609ALIASAUTORESOLVE609, value).apply()
+
+    var v609alignAutoCenter609: Int
+        get() = prefs.getInt(KEY_V609ALIGNAUTOCENTER609, 0)
+        set(value) = prefs.edit().putInt(KEY_V609ALIGNAUTOCENTER609, value).apply()
+
+    var v609aliveAutoKeep609: Boolean
+        get() = prefs.getBoolean(KEY_V609ALIVEAUTOKEEP609, false)
+        set(value) = prefs.edit().putBoolean(KEY_V609ALIVEAUTOKEEP609, value).apply()
+
+    var v609alphaAutoFade609: Boolean
+        get() = prefs.getBoolean(KEY_V609ALPHAAUTOFADE609, false)
+        set(value) = prefs.edit().putBoolean(KEY_V609ALPHAAUTOFADE609, value).apply()
+
+    var v609ambientAutoLight609: Boolean
+        get() = prefs.getBoolean(KEY_V609AMBIENTAUTOLIGHT609, false)
+        set(value) = prefs.edit().putBoolean(KEY_V609AMBIENTAUTOLIGHT609, value).apply()
+
+    var v609amountAutoLimit609: Int
+        get() = prefs.getInt(KEY_V609AMOUNTAUTOLIMIT609, 0)
+        set(value) = prefs.edit().putInt(KEY_V609AMOUNTAUTOLIMIT609, value).apply()
+
+    var v609angleAutoRotate609: Boolean
+        get() = prefs.getBoolean(KEY_V609ANGLEAUTOROTATE609, false)
+        set(value) = prefs.edit().putBoolean(KEY_V609ANGLEAUTOROTATE609, value).apply()
+
+    var v609answerAutoReply609: Boolean
+        get() = prefs.getBoolean(KEY_V609ANSWERAUTOREPLY609, false)
+        set(value) = prefs.edit().putBoolean(KEY_V609ANSWERAUTOREPLY609, value).apply()
+
+    var v609apiAutoCall609: Boolean
+        get() = prefs.getBoolean(KEY_V609APIAUTOCALL609, false)
+        set(value) = prefs.edit().putBoolean(KEY_V609APIAUTOCALL609, value).apply()
+
+    var v609archiveAutoSave609: Boolean
+        get() = prefs.getBoolean(KEY_V609ARCHIVEAUTOSAVE609, false)
+        set(value) = prefs.edit().putBoolean(KEY_V609ARCHIVEAUTOSAVE609, value).apply()
+
+    var v609areaAutoDetect609: Boolean
+        get() = prefs.getBoolean(KEY_V609AREAAUTODETECT609, false)
+        set(value) = prefs.edit().putBoolean(KEY_V609AREAAUTODETECT609, value).apply()
+
+    var v609arrayAutoSort609: Boolean
+        get() = prefs.getBoolean(KEY_V609ARRAYAUTOSORT609, false)
+        set(value) = prefs.edit().putBoolean(KEY_V609ARRAYAUTOSORT609, value).apply()
+
+    var v610actionAutoRepeat610: Boolean
+        get() = prefs.getBoolean(KEY_V610ACTIONAUTOREPEAT610, false)
+        set(value) = prefs.edit().putBoolean(KEY_V610ACTIONAUTOREPEAT610, value).apply()
+
+    var v610adapterAutoSwitch610: Boolean
+        get() = prefs.getBoolean(KEY_V610ADAPTERAUTOSWITCH610, false)
+        set(value) = prefs.edit().putBoolean(KEY_V610ADAPTERAUTOSWITCH610, value).apply()
+
+    var v610agentAutoConnect610: Boolean
+        get() = prefs.getBoolean(KEY_V610AGENTAUTOCONNECT610, false)
+        set(value) = prefs.edit().putBoolean(KEY_V610AGENTAUTOCONNECT610, value).apply()
+
+    var v610aliasAutoResolve610: Boolean
+        get() = prefs.getBoolean(KEY_V610ALIASAUTORESOLVE610, false)
+        set(value) = prefs.edit().putBoolean(KEY_V610ALIASAUTORESOLVE610, value).apply()
+
+    var v610alignAutoCenter610: Int
+        get() = prefs.getInt(KEY_V610ALIGNAUTOCENTER610, 0)
+        set(value) = prefs.edit().putInt(KEY_V610ALIGNAUTOCENTER610, value).apply()
+
+    var v610aliveAutoKeep610: Boolean
+        get() = prefs.getBoolean(KEY_V610ALIVEAUTOKEEP610, false)
+        set(value) = prefs.edit().putBoolean(KEY_V610ALIVEAUTOKEEP610, value).apply()
+
+    var v610alphaAutoFade610: Boolean
+        get() = prefs.getBoolean(KEY_V610ALPHAAUTOFADE610, false)
+        set(value) = prefs.edit().putBoolean(KEY_V610ALPHAAUTOFADE610, value).apply()
+
+    var v610ambientAutoLight610: Boolean
+        get() = prefs.getBoolean(KEY_V610AMBIENTAUTOLIGHT610, false)
+        set(value) = prefs.edit().putBoolean(KEY_V610AMBIENTAUTOLIGHT610, value).apply()
+
+    var v610amountAutoLimit610: Int
+        get() = prefs.getInt(KEY_V610AMOUNTAUTOLIMIT610, 0)
+        set(value) = prefs.edit().putInt(KEY_V610AMOUNTAUTOLIMIT610, value).apply()
+
+    var v610angleAutoRotate610: Boolean
+        get() = prefs.getBoolean(KEY_V610ANGLEAUTOROTATE610, false)
+        set(value) = prefs.edit().putBoolean(KEY_V610ANGLEAUTOROTATE610, value).apply()
+
+    var v610answerAutoReply610: Boolean
+        get() = prefs.getBoolean(KEY_V610ANSWERAUTOREPLY610, false)
+        set(value) = prefs.edit().putBoolean(KEY_V610ANSWERAUTOREPLY610, value).apply()
+
+    var v610apiAutoCall610: Boolean
+        get() = prefs.getBoolean(KEY_V610APIAUTOCALL610, false)
+        set(value) = prefs.edit().putBoolean(KEY_V610APIAUTOCALL610, value).apply()
+
+    var v610archiveAutoSave610: Boolean
+        get() = prefs.getBoolean(KEY_V610ARCHIVEAUTOSAVE610, false)
+        set(value) = prefs.edit().putBoolean(KEY_V610ARCHIVEAUTOSAVE610, value).apply()
+
+    var v610areaAutoDetect610: Boolean
+        get() = prefs.getBoolean(KEY_V610AREAAUTODETECT610, false)
+        set(value) = prefs.edit().putBoolean(KEY_V610AREAAUTODETECT610, value).apply()
+
+    var v610arrayAutoSort610: Boolean
+        get() = prefs.getBoolean(KEY_V610ARRAYAUTOSORT610, false)
+        set(value) = prefs.edit().putBoolean(KEY_V610ARRAYAUTOSORT610, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -54430,5 +55030,155 @@ class AppPrefs(context: Context) {
         const val KEY_V600BINDAUTOLINK600 = "v600bindAutoLink600" // v600 Bind Auto Link600
         const val KEY_V600BITRATEAUTOSCALE600 = "v600bitrateAutoScale600" // v600 Bitrate Auto Scale600
         const val KEY_V600BLENDAUTOMODE600 = "v600blendAutoMode600" // v600 Blend Auto Mode600
+        const val KEY_V601ACTIONAUTOREPEAT601 = "v601actionAutoRepeat601" // v601 Action Auto Repeat601
+        const val KEY_V601ADAPTERAUTOSWITCH601 = "v601adapterAutoSwitch601" // v601 Adapter Auto Switch601
+        const val KEY_V601AGENTAUTOCONNECT601 = "v601agentAutoConnect601" // v601 Agent Auto Connect601
+        const val KEY_V601ALIASAUTORESOLVE601 = "v601aliasAutoResolve601" // v601 Alias Auto Resolve601
+        const val KEY_V601ALIGNAUTOCENTER601 = "v601alignAutoCenter601" // v601 Align Auto Center601
+        const val KEY_V601ALIVEAUTOKEEP601 = "v601aliveAutoKeep601" // v601 Alive Auto Keep601
+        const val KEY_V601ALPHAAUTOFADE601 = "v601alphaAutoFade601" // v601 Alpha Auto Fade601
+        const val KEY_V601AMBIENTAUTOLIGHT601 = "v601ambientAutoLight601" // v601 Ambient Auto Light601
+        const val KEY_V601AMOUNTAUTOLIMIT601 = "v601amountAutoLimit601" // v601 Amount Auto Limit601
+        const val KEY_V601ANGLEAUTOROTATE601 = "v601angleAutoRotate601" // v601 Angle Auto Rotate601
+        const val KEY_V601ANSWERAUTOREPLY601 = "v601answerAutoReply601" // v601 Answer Auto Reply601
+        const val KEY_V601APIAUTOCALL601 = "v601apiAutoCall601" // v601 API Auto Call601
+        const val KEY_V601ARCHIVEAUTOSAVE601 = "v601archiveAutoSave601" // v601 Archive Auto Save601
+        const val KEY_V601AREAAUTODETECT601 = "v601areaAutoDetect601" // v601 Area Auto Detect601
+        const val KEY_V601ARRAYAUTOSORT601 = "v601arrayAutoSort601" // v601 Array Auto Sort601
+        const val KEY_V602ACTIONAUTOREPEAT602 = "v602actionAutoRepeat602" // v602 Action Auto Repeat602
+        const val KEY_V602ADAPTERAUTOSWITCH602 = "v602adapterAutoSwitch602" // v602 Adapter Auto Switch602
+        const val KEY_V602AGENTAUTOCONNECT602 = "v602agentAutoConnect602" // v602 Agent Auto Connect602
+        const val KEY_V602ALIASAUTORESOLVE602 = "v602aliasAutoResolve602" // v602 Alias Auto Resolve602
+        const val KEY_V602ALIGNAUTOCENTER602 = "v602alignAutoCenter602" // v602 Align Auto Center602
+        const val KEY_V602ALIVEAUTOKEEP602 = "v602aliveAutoKeep602" // v602 Alive Auto Keep602
+        const val KEY_V602ALPHAAUTOFADE602 = "v602alphaAutoFade602" // v602 Alpha Auto Fade602
+        const val KEY_V602AMBIENTAUTOLIGHT602 = "v602ambientAutoLight602" // v602 Ambient Auto Light602
+        const val KEY_V602AMOUNTAUTOLIMIT602 = "v602amountAutoLimit602" // v602 Amount Auto Limit602
+        const val KEY_V602ANGLEAUTOROTATE602 = "v602angleAutoRotate602" // v602 Angle Auto Rotate602
+        const val KEY_V602ANSWERAUTOREPLY602 = "v602answerAutoReply602" // v602 Answer Auto Reply602
+        const val KEY_V602APIAUTOCALL602 = "v602apiAutoCall602" // v602 API Auto Call602
+        const val KEY_V602ARCHIVEAUTOSAVE602 = "v602archiveAutoSave602" // v602 Archive Auto Save602
+        const val KEY_V602AREAAUTODETECT602 = "v602areaAutoDetect602" // v602 Area Auto Detect602
+        const val KEY_V602ARRAYAUTOSORT602 = "v602arrayAutoSort602" // v602 Array Auto Sort602
+        const val KEY_V603ACTIONAUTOREPEAT603 = "v603actionAutoRepeat603" // v603 Action Auto Repeat603
+        const val KEY_V603ADAPTERAUTOSWITCH603 = "v603adapterAutoSwitch603" // v603 Adapter Auto Switch603
+        const val KEY_V603AGENTAUTOCONNECT603 = "v603agentAutoConnect603" // v603 Agent Auto Connect603
+        const val KEY_V603ALIASAUTORESOLVE603 = "v603aliasAutoResolve603" // v603 Alias Auto Resolve603
+        const val KEY_V603ALIGNAUTOCENTER603 = "v603alignAutoCenter603" // v603 Align Auto Center603
+        const val KEY_V603ALIVEAUTOKEEP603 = "v603aliveAutoKeep603" // v603 Alive Auto Keep603
+        const val KEY_V603ALPHAAUTOFADE603 = "v603alphaAutoFade603" // v603 Alpha Auto Fade603
+        const val KEY_V603AMBIENTAUTOLIGHT603 = "v603ambientAutoLight603" // v603 Ambient Auto Light603
+        const val KEY_V603AMOUNTAUTOLIMIT603 = "v603amountAutoLimit603" // v603 Amount Auto Limit603
+        const val KEY_V603ANGLEAUTOROTATE603 = "v603angleAutoRotate603" // v603 Angle Auto Rotate603
+        const val KEY_V603ANSWERAUTOREPLY603 = "v603answerAutoReply603" // v603 Answer Auto Reply603
+        const val KEY_V603APIAUTOCALL603 = "v603apiAutoCall603" // v603 API Auto Call603
+        const val KEY_V603ARCHIVEAUTOSAVE603 = "v603archiveAutoSave603" // v603 Archive Auto Save603
+        const val KEY_V603AREAAUTODETECT603 = "v603areaAutoDetect603" // v603 Area Auto Detect603
+        const val KEY_V603ARRAYAUTOSORT603 = "v603arrayAutoSort603" // v603 Array Auto Sort603
+        const val KEY_V604ACTIONAUTOREPEAT604 = "v604actionAutoRepeat604" // v604 Action Auto Repeat604
+        const val KEY_V604ADAPTERAUTOSWITCH604 = "v604adapterAutoSwitch604" // v604 Adapter Auto Switch604
+        const val KEY_V604AGENTAUTOCONNECT604 = "v604agentAutoConnect604" // v604 Agent Auto Connect604
+        const val KEY_V604ALIASAUTORESOLVE604 = "v604aliasAutoResolve604" // v604 Alias Auto Resolve604
+        const val KEY_V604ALIGNAUTOCENTER604 = "v604alignAutoCenter604" // v604 Align Auto Center604
+        const val KEY_V604ALIVEAUTOKEEP604 = "v604aliveAutoKeep604" // v604 Alive Auto Keep604
+        const val KEY_V604ALPHAAUTOFADE604 = "v604alphaAutoFade604" // v604 Alpha Auto Fade604
+        const val KEY_V604AMBIENTAUTOLIGHT604 = "v604ambientAutoLight604" // v604 Ambient Auto Light604
+        const val KEY_V604AMOUNTAUTOLIMIT604 = "v604amountAutoLimit604" // v604 Amount Auto Limit604
+        const val KEY_V604ANGLEAUTOROTATE604 = "v604angleAutoRotate604" // v604 Angle Auto Rotate604
+        const val KEY_V604ANSWERAUTOREPLY604 = "v604answerAutoReply604" // v604 Answer Auto Reply604
+        const val KEY_V604APIAUTOCALL604 = "v604apiAutoCall604" // v604 API Auto Call604
+        const val KEY_V604ARCHIVEAUTOSAVE604 = "v604archiveAutoSave604" // v604 Archive Auto Save604
+        const val KEY_V604AREAAUTODETECT604 = "v604areaAutoDetect604" // v604 Area Auto Detect604
+        const val KEY_V604ARRAYAUTOSORT604 = "v604arrayAutoSort604" // v604 Array Auto Sort604
+        const val KEY_V605ACTIONAUTOREPEAT605 = "v605actionAutoRepeat605" // v605 Action Auto Repeat605
+        const val KEY_V605ADAPTERAUTOSWITCH605 = "v605adapterAutoSwitch605" // v605 Adapter Auto Switch605
+        const val KEY_V605AGENTAUTOCONNECT605 = "v605agentAutoConnect605" // v605 Agent Auto Connect605
+        const val KEY_V605ALIASAUTORESOLVE605 = "v605aliasAutoResolve605" // v605 Alias Auto Resolve605
+        const val KEY_V605ALIGNAUTOCENTER605 = "v605alignAutoCenter605" // v605 Align Auto Center605
+        const val KEY_V605ALIVEAUTOKEEP605 = "v605aliveAutoKeep605" // v605 Alive Auto Keep605
+        const val KEY_V605ALPHAAUTOFADE605 = "v605alphaAutoFade605" // v605 Alpha Auto Fade605
+        const val KEY_V605AMBIENTAUTOLIGHT605 = "v605ambientAutoLight605" // v605 Ambient Auto Light605
+        const val KEY_V605AMOUNTAUTOLIMIT605 = "v605amountAutoLimit605" // v605 Amount Auto Limit605
+        const val KEY_V605ANGLEAUTOROTATE605 = "v605angleAutoRotate605" // v605 Angle Auto Rotate605
+        const val KEY_V605ANSWERAUTOREPLY605 = "v605answerAutoReply605" // v605 Answer Auto Reply605
+        const val KEY_V605APIAUTOCALL605 = "v605apiAutoCall605" // v605 API Auto Call605
+        const val KEY_V605ARCHIVEAUTOSAVE605 = "v605archiveAutoSave605" // v605 Archive Auto Save605
+        const val KEY_V605AREAAUTODETECT605 = "v605areaAutoDetect605" // v605 Area Auto Detect605
+        const val KEY_V605ARRAYAUTOSORT605 = "v605arrayAutoSort605" // v605 Array Auto Sort605
+        const val KEY_V606ACTIONAUTOREPEAT606 = "v606actionAutoRepeat606" // v606 Action Auto Repeat606
+        const val KEY_V606ADAPTERAUTOSWITCH606 = "v606adapterAutoSwitch606" // v606 Adapter Auto Switch606
+        const val KEY_V606AGENTAUTOCONNECT606 = "v606agentAutoConnect606" // v606 Agent Auto Connect606
+        const val KEY_V606ALIASAUTORESOLVE606 = "v606aliasAutoResolve606" // v606 Alias Auto Resolve606
+        const val KEY_V606ALIGNAUTOCENTER606 = "v606alignAutoCenter606" // v606 Align Auto Center606
+        const val KEY_V606ALIVEAUTOKEEP606 = "v606aliveAutoKeep606" // v606 Alive Auto Keep606
+        const val KEY_V606ALPHAAUTOFADE606 = "v606alphaAutoFade606" // v606 Alpha Auto Fade606
+        const val KEY_V606AMBIENTAUTOLIGHT606 = "v606ambientAutoLight606" // v606 Ambient Auto Light606
+        const val KEY_V606AMOUNTAUTOLIMIT606 = "v606amountAutoLimit606" // v606 Amount Auto Limit606
+        const val KEY_V606ANGLEAUTOROTATE606 = "v606angleAutoRotate606" // v606 Angle Auto Rotate606
+        const val KEY_V606ANSWERAUTOREPLY606 = "v606answerAutoReply606" // v606 Answer Auto Reply606
+        const val KEY_V606APIAUTOCALL606 = "v606apiAutoCall606" // v606 API Auto Call606
+        const val KEY_V606ARCHIVEAUTOSAVE606 = "v606archiveAutoSave606" // v606 Archive Auto Save606
+        const val KEY_V606AREAAUTODETECT606 = "v606areaAutoDetect606" // v606 Area Auto Detect606
+        const val KEY_V606ARRAYAUTOSORT606 = "v606arrayAutoSort606" // v606 Array Auto Sort606
+        const val KEY_V607ACTIONAUTOREPEAT607 = "v607actionAutoRepeat607" // v607 Action Auto Repeat607
+        const val KEY_V607ADAPTERAUTOSWITCH607 = "v607adapterAutoSwitch607" // v607 Adapter Auto Switch607
+        const val KEY_V607AGENTAUTOCONNECT607 = "v607agentAutoConnect607" // v607 Agent Auto Connect607
+        const val KEY_V607ALIASAUTORESOLVE607 = "v607aliasAutoResolve607" // v607 Alias Auto Resolve607
+        const val KEY_V607ALIGNAUTOCENTER607 = "v607alignAutoCenter607" // v607 Align Auto Center607
+        const val KEY_V607ALIVEAUTOKEEP607 = "v607aliveAutoKeep607" // v607 Alive Auto Keep607
+        const val KEY_V607ALPHAAUTOFADE607 = "v607alphaAutoFade607" // v607 Alpha Auto Fade607
+        const val KEY_V607AMBIENTAUTOLIGHT607 = "v607ambientAutoLight607" // v607 Ambient Auto Light607
+        const val KEY_V607AMOUNTAUTOLIMIT607 = "v607amountAutoLimit607" // v607 Amount Auto Limit607
+        const val KEY_V607ANGLEAUTOROTATE607 = "v607angleAutoRotate607" // v607 Angle Auto Rotate607
+        const val KEY_V607ANSWERAUTOREPLY607 = "v607answerAutoReply607" // v607 Answer Auto Reply607
+        const val KEY_V607APIAUTOCALL607 = "v607apiAutoCall607" // v607 API Auto Call607
+        const val KEY_V607ARCHIVEAUTOSAVE607 = "v607archiveAutoSave607" // v607 Archive Auto Save607
+        const val KEY_V607AREAAUTODETECT607 = "v607areaAutoDetect607" // v607 Area Auto Detect607
+        const val KEY_V607ARRAYAUTOSORT607 = "v607arrayAutoSort607" // v607 Array Auto Sort607
+        const val KEY_V608ACTIONAUTOREPEAT608 = "v608actionAutoRepeat608" // v608 Action Auto Repeat608
+        const val KEY_V608ADAPTERAUTOSWITCH608 = "v608adapterAutoSwitch608" // v608 Adapter Auto Switch608
+        const val KEY_V608AGENTAUTOCONNECT608 = "v608agentAutoConnect608" // v608 Agent Auto Connect608
+        const val KEY_V608ALIASAUTORESOLVE608 = "v608aliasAutoResolve608" // v608 Alias Auto Resolve608
+        const val KEY_V608ALIGNAUTOCENTER608 = "v608alignAutoCenter608" // v608 Align Auto Center608
+        const val KEY_V608ALIVEAUTOKEEP608 = "v608aliveAutoKeep608" // v608 Alive Auto Keep608
+        const val KEY_V608ALPHAAUTOFADE608 = "v608alphaAutoFade608" // v608 Alpha Auto Fade608
+        const val KEY_V608AMBIENTAUTOLIGHT608 = "v608ambientAutoLight608" // v608 Ambient Auto Light608
+        const val KEY_V608AMOUNTAUTOLIMIT608 = "v608amountAutoLimit608" // v608 Amount Auto Limit608
+        const val KEY_V608ANGLEAUTOROTATE608 = "v608angleAutoRotate608" // v608 Angle Auto Rotate608
+        const val KEY_V608ANSWERAUTOREPLY608 = "v608answerAutoReply608" // v608 Answer Auto Reply608
+        const val KEY_V608APIAUTOCALL608 = "v608apiAutoCall608" // v608 API Auto Call608
+        const val KEY_V608ARCHIVEAUTOSAVE608 = "v608archiveAutoSave608" // v608 Archive Auto Save608
+        const val KEY_V608AREAAUTODETECT608 = "v608areaAutoDetect608" // v608 Area Auto Detect608
+        const val KEY_V608ARRAYAUTOSORT608 = "v608arrayAutoSort608" // v608 Array Auto Sort608
+        const val KEY_V609ACTIONAUTOREPEAT609 = "v609actionAutoRepeat609" // v609 Action Auto Repeat609
+        const val KEY_V609ADAPTERAUTOSWITCH609 = "v609adapterAutoSwitch609" // v609 Adapter Auto Switch609
+        const val KEY_V609AGENTAUTOCONNECT609 = "v609agentAutoConnect609" // v609 Agent Auto Connect609
+        const val KEY_V609ALIASAUTORESOLVE609 = "v609aliasAutoResolve609" // v609 Alias Auto Resolve609
+        const val KEY_V609ALIGNAUTOCENTER609 = "v609alignAutoCenter609" // v609 Align Auto Center609
+        const val KEY_V609ALIVEAUTOKEEP609 = "v609aliveAutoKeep609" // v609 Alive Auto Keep609
+        const val KEY_V609ALPHAAUTOFADE609 = "v609alphaAutoFade609" // v609 Alpha Auto Fade609
+        const val KEY_V609AMBIENTAUTOLIGHT609 = "v609ambientAutoLight609" // v609 Ambient Auto Light609
+        const val KEY_V609AMOUNTAUTOLIMIT609 = "v609amountAutoLimit609" // v609 Amount Auto Limit609
+        const val KEY_V609ANGLEAUTOROTATE609 = "v609angleAutoRotate609" // v609 Angle Auto Rotate609
+        const val KEY_V609ANSWERAUTOREPLY609 = "v609answerAutoReply609" // v609 Answer Auto Reply609
+        const val KEY_V609APIAUTOCALL609 = "v609apiAutoCall609" // v609 API Auto Call609
+        const val KEY_V609ARCHIVEAUTOSAVE609 = "v609archiveAutoSave609" // v609 Archive Auto Save609
+        const val KEY_V609AREAAUTODETECT609 = "v609areaAutoDetect609" // v609 Area Auto Detect609
+        const val KEY_V609ARRAYAUTOSORT609 = "v609arrayAutoSort609" // v609 Array Auto Sort609
+        const val KEY_V610ACTIONAUTOREPEAT610 = "v610actionAutoRepeat610" // v610 Action Auto Repeat610
+        const val KEY_V610ADAPTERAUTOSWITCH610 = "v610adapterAutoSwitch610" // v610 Adapter Auto Switch610
+        const val KEY_V610AGENTAUTOCONNECT610 = "v610agentAutoConnect610" // v610 Agent Auto Connect610
+        const val KEY_V610ALIASAUTORESOLVE610 = "v610aliasAutoResolve610" // v610 Alias Auto Resolve610
+        const val KEY_V610ALIGNAUTOCENTER610 = "v610alignAutoCenter610" // v610 Align Auto Center610
+        const val KEY_V610ALIVEAUTOKEEP610 = "v610aliveAutoKeep610" // v610 Alive Auto Keep610
+        const val KEY_V610ALPHAAUTOFADE610 = "v610alphaAutoFade610" // v610 Alpha Auto Fade610
+        const val KEY_V610AMBIENTAUTOLIGHT610 = "v610ambientAutoLight610" // v610 Ambient Auto Light610
+        const val KEY_V610AMOUNTAUTOLIMIT610 = "v610amountAutoLimit610" // v610 Amount Auto Limit610
+        const val KEY_V610ANGLEAUTOROTATE610 = "v610angleAutoRotate610" // v610 Angle Auto Rotate610
+        const val KEY_V610ANSWERAUTOREPLY610 = "v610answerAutoReply610" // v610 Answer Auto Reply610
+        const val KEY_V610APIAUTOCALL610 = "v610apiAutoCall610" // v610 API Auto Call610
+        const val KEY_V610ARCHIVEAUTOSAVE610 = "v610archiveAutoSave610" // v610 Archive Auto Save610
+        const val KEY_V610AREAAUTODETECT610 = "v610areaAutoDetect610" // v610 Area Auto Detect610
+        const val KEY_V610ARRAYAUTOSORT610 = "v610arrayAutoSort610" // v610 Array Auto Sort610
     }
 }

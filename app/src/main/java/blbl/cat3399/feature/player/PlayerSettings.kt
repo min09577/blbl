@@ -89115,3 +89115,1213 @@ internal fun PlayerActivity.showV600BlendAutoMode600Dialog() {
     }
 }
 
+// v601: Action Auto Repeat601
+internal fun PlayerActivity.showV601ActionAutoRepeat601Toggle() {
+    val current = BiliClient.prefs.v601actionAutoRepeat601
+    BiliClient.prefs.v601actionAutoRepeat601 = !current
+    AppToast.show(this, "Action Auto Repeat601: ${if (!current) "ON" else "OFF"}")
+}
+
+// v601: Adapter Auto Switch601
+internal fun PlayerActivity.showV601AdapterAutoSwitch601Toggle() {
+    val current = BiliClient.prefs.v601adapterAutoSwitch601
+    BiliClient.prefs.v601adapterAutoSwitch601 = !current
+    AppToast.show(this, "Adapter Auto Switch601: ${if (!current) "ON" else "OFF"}")
+}
+
+// v601: Agent Auto Connect601
+internal fun PlayerActivity.showV601AgentAutoConnect601Toggle() {
+    val current = BiliClient.prefs.v601agentAutoConnect601
+    BiliClient.prefs.v601agentAutoConnect601 = !current
+    AppToast.show(this, "Agent Auto Connect601: ${if (!current) "ON" else "OFF"}")
+}
+
+// v601: Alias Auto Resolve601
+internal fun PlayerActivity.showV601AliasAutoResolve601Toggle() {
+    val current = BiliClient.prefs.v601aliasAutoResolve601
+    BiliClient.prefs.v601aliasAutoResolve601 = !current
+    AppToast.show(this, "Alias Auto Resolve601: ${if (!current) "ON" else "OFF"}")
+}
+
+// v601: Align Auto Center601
+internal fun PlayerActivity.showV601AlignAutoCenter601Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v601alignAutoCenter601).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Align Auto Center601",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v601alignAutoCenter601 = value
+        AppToast.show(this, "Align Auto Center601: $value")
+    }
+}
+
+// v601: Alive Auto Keep601
+internal fun PlayerActivity.showV601AliveAutoKeep601Toggle() {
+    val current = BiliClient.prefs.v601aliveAutoKeep601
+    BiliClient.prefs.v601aliveAutoKeep601 = !current
+    AppToast.show(this, "Alive Auto Keep601: ${if (!current) "ON" else "OFF"}")
+}
+
+// v601: Alpha Auto Fade601
+internal fun PlayerActivity.showV601AlphaAutoFade601Toggle() {
+    val current = BiliClient.prefs.v601alphaAutoFade601
+    BiliClient.prefs.v601alphaAutoFade601 = !current
+    AppToast.show(this, "Alpha Auto Fade601: ${if (!current) "ON" else "OFF"}")
+}
+
+// v601: Ambient Auto Light601
+internal fun PlayerActivity.showV601AmbientAutoLight601Toggle() {
+    val current = BiliClient.prefs.v601ambientAutoLight601
+    BiliClient.prefs.v601ambientAutoLight601 = !current
+    AppToast.show(this, "Ambient Auto Light601: ${if (!current) "ON" else "OFF"}")
+}
+
+// v601: Amount Auto Limit601
+internal fun PlayerActivity.showV601AmountAutoLimit601Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v601amountAutoLimit601).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Amount Auto Limit601",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v601amountAutoLimit601 = value
+        AppToast.show(this, "Amount Auto Limit601: $value")
+    }
+}
+
+// v601: Angle Auto Rotate601
+internal fun PlayerActivity.showV601AngleAutoRotate601Toggle() {
+    val current = BiliClient.prefs.v601angleAutoRotate601
+    BiliClient.prefs.v601angleAutoRotate601 = !current
+    AppToast.show(this, "Angle Auto Rotate601: ${if (!current) "ON" else "OFF"}")
+}
+
+// v601: Answer Auto Reply601
+internal fun PlayerActivity.showV601AnswerAutoReply601Toggle() {
+    val current = BiliClient.prefs.v601answerAutoReply601
+    BiliClient.prefs.v601answerAutoReply601 = !current
+    AppToast.show(this, "Answer Auto Reply601: ${if (!current) "ON" else "OFF"}")
+}
+
+// v601: API Auto Call601
+internal fun PlayerActivity.showV601ApiAutoCall601Toggle() {
+    val current = BiliClient.prefs.v601apiAutoCall601
+    BiliClient.prefs.v601apiAutoCall601 = !current
+    AppToast.show(this, "API Auto Call601: ${if (!current) "ON" else "OFF"}")
+}
+
+// v601: Archive Auto Save601
+internal fun PlayerActivity.showV601ArchiveAutoSave601Toggle() {
+    val current = BiliClient.prefs.v601archiveAutoSave601
+    BiliClient.prefs.v601archiveAutoSave601 = !current
+    AppToast.show(this, "Archive Auto Save601: ${if (!current) "ON" else "OFF"}")
+}
+
+// v601: Area Auto Detect601
+internal fun PlayerActivity.showV601AreaAutoDetect601Toggle() {
+    val current = BiliClient.prefs.v601areaAutoDetect601
+    BiliClient.prefs.v601areaAutoDetect601 = !current
+    AppToast.show(this, "Area Auto Detect601: ${if (!current) "ON" else "OFF"}")
+}
+
+// v601: Array Auto Sort601
+internal fun PlayerActivity.showV601ArrayAutoSort601Toggle() {
+    val current = BiliClient.prefs.v601arrayAutoSort601
+    BiliClient.prefs.v601arrayAutoSort601 = !current
+    AppToast.show(this, "Array Auto Sort601: ${if (!current) "ON" else "OFF"}")
+}
+
+// v602: Action Auto Repeat602
+internal fun PlayerActivity.showV602ActionAutoRepeat602Toggle() {
+    val current = BiliClient.prefs.v602actionAutoRepeat602
+    BiliClient.prefs.v602actionAutoRepeat602 = !current
+    AppToast.show(this, "Action Auto Repeat602: ${if (!current) "ON" else "OFF"}")
+}
+
+// v602: Adapter Auto Switch602
+internal fun PlayerActivity.showV602AdapterAutoSwitch602Toggle() {
+    val current = BiliClient.prefs.v602adapterAutoSwitch602
+    BiliClient.prefs.v602adapterAutoSwitch602 = !current
+    AppToast.show(this, "Adapter Auto Switch602: ${if (!current) "ON" else "OFF"}")
+}
+
+// v602: Agent Auto Connect602
+internal fun PlayerActivity.showV602AgentAutoConnect602Toggle() {
+    val current = BiliClient.prefs.v602agentAutoConnect602
+    BiliClient.prefs.v602agentAutoConnect602 = !current
+    AppToast.show(this, "Agent Auto Connect602: ${if (!current) "ON" else "OFF"}")
+}
+
+// v602: Alias Auto Resolve602
+internal fun PlayerActivity.showV602AliasAutoResolve602Toggle() {
+    val current = BiliClient.prefs.v602aliasAutoResolve602
+    BiliClient.prefs.v602aliasAutoResolve602 = !current
+    AppToast.show(this, "Alias Auto Resolve602: ${if (!current) "ON" else "OFF"}")
+}
+
+// v602: Align Auto Center602
+internal fun PlayerActivity.showV602AlignAutoCenter602Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v602alignAutoCenter602).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Align Auto Center602",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v602alignAutoCenter602 = value
+        AppToast.show(this, "Align Auto Center602: $value")
+    }
+}
+
+// v602: Alive Auto Keep602
+internal fun PlayerActivity.showV602AliveAutoKeep602Toggle() {
+    val current = BiliClient.prefs.v602aliveAutoKeep602
+    BiliClient.prefs.v602aliveAutoKeep602 = !current
+    AppToast.show(this, "Alive Auto Keep602: ${if (!current) "ON" else "OFF"}")
+}
+
+// v602: Alpha Auto Fade602
+internal fun PlayerActivity.showV602AlphaAutoFade602Toggle() {
+    val current = BiliClient.prefs.v602alphaAutoFade602
+    BiliClient.prefs.v602alphaAutoFade602 = !current
+    AppToast.show(this, "Alpha Auto Fade602: ${if (!current) "ON" else "OFF"}")
+}
+
+// v602: Ambient Auto Light602
+internal fun PlayerActivity.showV602AmbientAutoLight602Toggle() {
+    val current = BiliClient.prefs.v602ambientAutoLight602
+    BiliClient.prefs.v602ambientAutoLight602 = !current
+    AppToast.show(this, "Ambient Auto Light602: ${if (!current) "ON" else "OFF"}")
+}
+
+// v602: Amount Auto Limit602
+internal fun PlayerActivity.showV602AmountAutoLimit602Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v602amountAutoLimit602).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Amount Auto Limit602",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v602amountAutoLimit602 = value
+        AppToast.show(this, "Amount Auto Limit602: $value")
+    }
+}
+
+// v602: Angle Auto Rotate602
+internal fun PlayerActivity.showV602AngleAutoRotate602Toggle() {
+    val current = BiliClient.prefs.v602angleAutoRotate602
+    BiliClient.prefs.v602angleAutoRotate602 = !current
+    AppToast.show(this, "Angle Auto Rotate602: ${if (!current) "ON" else "OFF"}")
+}
+
+// v602: Answer Auto Reply602
+internal fun PlayerActivity.showV602AnswerAutoReply602Toggle() {
+    val current = BiliClient.prefs.v602answerAutoReply602
+    BiliClient.prefs.v602answerAutoReply602 = !current
+    AppToast.show(this, "Answer Auto Reply602: ${if (!current) "ON" else "OFF"}")
+}
+
+// v602: API Auto Call602
+internal fun PlayerActivity.showV602ApiAutoCall602Toggle() {
+    val current = BiliClient.prefs.v602apiAutoCall602
+    BiliClient.prefs.v602apiAutoCall602 = !current
+    AppToast.show(this, "API Auto Call602: ${if (!current) "ON" else "OFF"}")
+}
+
+// v602: Archive Auto Save602
+internal fun PlayerActivity.showV602ArchiveAutoSave602Toggle() {
+    val current = BiliClient.prefs.v602archiveAutoSave602
+    BiliClient.prefs.v602archiveAutoSave602 = !current
+    AppToast.show(this, "Archive Auto Save602: ${if (!current) "ON" else "OFF"}")
+}
+
+// v602: Area Auto Detect602
+internal fun PlayerActivity.showV602AreaAutoDetect602Toggle() {
+    val current = BiliClient.prefs.v602areaAutoDetect602
+    BiliClient.prefs.v602areaAutoDetect602 = !current
+    AppToast.show(this, "Area Auto Detect602: ${if (!current) "ON" else "OFF"}")
+}
+
+// v602: Array Auto Sort602
+internal fun PlayerActivity.showV602ArrayAutoSort602Toggle() {
+    val current = BiliClient.prefs.v602arrayAutoSort602
+    BiliClient.prefs.v602arrayAutoSort602 = !current
+    AppToast.show(this, "Array Auto Sort602: ${if (!current) "ON" else "OFF"}")
+}
+
+// v603: Action Auto Repeat603
+internal fun PlayerActivity.showV603ActionAutoRepeat603Toggle() {
+    val current = BiliClient.prefs.v603actionAutoRepeat603
+    BiliClient.prefs.v603actionAutoRepeat603 = !current
+    AppToast.show(this, "Action Auto Repeat603: ${if (!current) "ON" else "OFF"}")
+}
+
+// v603: Adapter Auto Switch603
+internal fun PlayerActivity.showV603AdapterAutoSwitch603Toggle() {
+    val current = BiliClient.prefs.v603adapterAutoSwitch603
+    BiliClient.prefs.v603adapterAutoSwitch603 = !current
+    AppToast.show(this, "Adapter Auto Switch603: ${if (!current) "ON" else "OFF"}")
+}
+
+// v603: Agent Auto Connect603
+internal fun PlayerActivity.showV603AgentAutoConnect603Toggle() {
+    val current = BiliClient.prefs.v603agentAutoConnect603
+    BiliClient.prefs.v603agentAutoConnect603 = !current
+    AppToast.show(this, "Agent Auto Connect603: ${if (!current) "ON" else "OFF"}")
+}
+
+// v603: Alias Auto Resolve603
+internal fun PlayerActivity.showV603AliasAutoResolve603Toggle() {
+    val current = BiliClient.prefs.v603aliasAutoResolve603
+    BiliClient.prefs.v603aliasAutoResolve603 = !current
+    AppToast.show(this, "Alias Auto Resolve603: ${if (!current) "ON" else "OFF"}")
+}
+
+// v603: Align Auto Center603
+internal fun PlayerActivity.showV603AlignAutoCenter603Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v603alignAutoCenter603).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Align Auto Center603",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v603alignAutoCenter603 = value
+        AppToast.show(this, "Align Auto Center603: $value")
+    }
+}
+
+// v603: Alive Auto Keep603
+internal fun PlayerActivity.showV603AliveAutoKeep603Toggle() {
+    val current = BiliClient.prefs.v603aliveAutoKeep603
+    BiliClient.prefs.v603aliveAutoKeep603 = !current
+    AppToast.show(this, "Alive Auto Keep603: ${if (!current) "ON" else "OFF"}")
+}
+
+// v603: Alpha Auto Fade603
+internal fun PlayerActivity.showV603AlphaAutoFade603Toggle() {
+    val current = BiliClient.prefs.v603alphaAutoFade603
+    BiliClient.prefs.v603alphaAutoFade603 = !current
+    AppToast.show(this, "Alpha Auto Fade603: ${if (!current) "ON" else "OFF"}")
+}
+
+// v603: Ambient Auto Light603
+internal fun PlayerActivity.showV603AmbientAutoLight603Toggle() {
+    val current = BiliClient.prefs.v603ambientAutoLight603
+    BiliClient.prefs.v603ambientAutoLight603 = !current
+    AppToast.show(this, "Ambient Auto Light603: ${if (!current) "ON" else "OFF"}")
+}
+
+// v603: Amount Auto Limit603
+internal fun PlayerActivity.showV603AmountAutoLimit603Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v603amountAutoLimit603).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Amount Auto Limit603",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v603amountAutoLimit603 = value
+        AppToast.show(this, "Amount Auto Limit603: $value")
+    }
+}
+
+// v603: Angle Auto Rotate603
+internal fun PlayerActivity.showV603AngleAutoRotate603Toggle() {
+    val current = BiliClient.prefs.v603angleAutoRotate603
+    BiliClient.prefs.v603angleAutoRotate603 = !current
+    AppToast.show(this, "Angle Auto Rotate603: ${if (!current) "ON" else "OFF"}")
+}
+
+// v603: Answer Auto Reply603
+internal fun PlayerActivity.showV603AnswerAutoReply603Toggle() {
+    val current = BiliClient.prefs.v603answerAutoReply603
+    BiliClient.prefs.v603answerAutoReply603 = !current
+    AppToast.show(this, "Answer Auto Reply603: ${if (!current) "ON" else "OFF"}")
+}
+
+// v603: API Auto Call603
+internal fun PlayerActivity.showV603ApiAutoCall603Toggle() {
+    val current = BiliClient.prefs.v603apiAutoCall603
+    BiliClient.prefs.v603apiAutoCall603 = !current
+    AppToast.show(this, "API Auto Call603: ${if (!current) "ON" else "OFF"}")
+}
+
+// v603: Archive Auto Save603
+internal fun PlayerActivity.showV603ArchiveAutoSave603Toggle() {
+    val current = BiliClient.prefs.v603archiveAutoSave603
+    BiliClient.prefs.v603archiveAutoSave603 = !current
+    AppToast.show(this, "Archive Auto Save603: ${if (!current) "ON" else "OFF"}")
+}
+
+// v603: Area Auto Detect603
+internal fun PlayerActivity.showV603AreaAutoDetect603Toggle() {
+    val current = BiliClient.prefs.v603areaAutoDetect603
+    BiliClient.prefs.v603areaAutoDetect603 = !current
+    AppToast.show(this, "Area Auto Detect603: ${if (!current) "ON" else "OFF"}")
+}
+
+// v603: Array Auto Sort603
+internal fun PlayerActivity.showV603ArrayAutoSort603Toggle() {
+    val current = BiliClient.prefs.v603arrayAutoSort603
+    BiliClient.prefs.v603arrayAutoSort603 = !current
+    AppToast.show(this, "Array Auto Sort603: ${if (!current) "ON" else "OFF"}")
+}
+
+// v604: Action Auto Repeat604
+internal fun PlayerActivity.showV604ActionAutoRepeat604Toggle() {
+    val current = BiliClient.prefs.v604actionAutoRepeat604
+    BiliClient.prefs.v604actionAutoRepeat604 = !current
+    AppToast.show(this, "Action Auto Repeat604: ${if (!current) "ON" else "OFF"}")
+}
+
+// v604: Adapter Auto Switch604
+internal fun PlayerActivity.showV604AdapterAutoSwitch604Toggle() {
+    val current = BiliClient.prefs.v604adapterAutoSwitch604
+    BiliClient.prefs.v604adapterAutoSwitch604 = !current
+    AppToast.show(this, "Adapter Auto Switch604: ${if (!current) "ON" else "OFF"}")
+}
+
+// v604: Agent Auto Connect604
+internal fun PlayerActivity.showV604AgentAutoConnect604Toggle() {
+    val current = BiliClient.prefs.v604agentAutoConnect604
+    BiliClient.prefs.v604agentAutoConnect604 = !current
+    AppToast.show(this, "Agent Auto Connect604: ${if (!current) "ON" else "OFF"}")
+}
+
+// v604: Alias Auto Resolve604
+internal fun PlayerActivity.showV604AliasAutoResolve604Toggle() {
+    val current = BiliClient.prefs.v604aliasAutoResolve604
+    BiliClient.prefs.v604aliasAutoResolve604 = !current
+    AppToast.show(this, "Alias Auto Resolve604: ${if (!current) "ON" else "OFF"}")
+}
+
+// v604: Align Auto Center604
+internal fun PlayerActivity.showV604AlignAutoCenter604Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v604alignAutoCenter604).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Align Auto Center604",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v604alignAutoCenter604 = value
+        AppToast.show(this, "Align Auto Center604: $value")
+    }
+}
+
+// v604: Alive Auto Keep604
+internal fun PlayerActivity.showV604AliveAutoKeep604Toggle() {
+    val current = BiliClient.prefs.v604aliveAutoKeep604
+    BiliClient.prefs.v604aliveAutoKeep604 = !current
+    AppToast.show(this, "Alive Auto Keep604: ${if (!current) "ON" else "OFF"}")
+}
+
+// v604: Alpha Auto Fade604
+internal fun PlayerActivity.showV604AlphaAutoFade604Toggle() {
+    val current = BiliClient.prefs.v604alphaAutoFade604
+    BiliClient.prefs.v604alphaAutoFade604 = !current
+    AppToast.show(this, "Alpha Auto Fade604: ${if (!current) "ON" else "OFF"}")
+}
+
+// v604: Ambient Auto Light604
+internal fun PlayerActivity.showV604AmbientAutoLight604Toggle() {
+    val current = BiliClient.prefs.v604ambientAutoLight604
+    BiliClient.prefs.v604ambientAutoLight604 = !current
+    AppToast.show(this, "Ambient Auto Light604: ${if (!current) "ON" else "OFF"}")
+}
+
+// v604: Amount Auto Limit604
+internal fun PlayerActivity.showV604AmountAutoLimit604Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v604amountAutoLimit604).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Amount Auto Limit604",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v604amountAutoLimit604 = value
+        AppToast.show(this, "Amount Auto Limit604: $value")
+    }
+}
+
+// v604: Angle Auto Rotate604
+internal fun PlayerActivity.showV604AngleAutoRotate604Toggle() {
+    val current = BiliClient.prefs.v604angleAutoRotate604
+    BiliClient.prefs.v604angleAutoRotate604 = !current
+    AppToast.show(this, "Angle Auto Rotate604: ${if (!current) "ON" else "OFF"}")
+}
+
+// v604: Answer Auto Reply604
+internal fun PlayerActivity.showV604AnswerAutoReply604Toggle() {
+    val current = BiliClient.prefs.v604answerAutoReply604
+    BiliClient.prefs.v604answerAutoReply604 = !current
+    AppToast.show(this, "Answer Auto Reply604: ${if (!current) "ON" else "OFF"}")
+}
+
+// v604: API Auto Call604
+internal fun PlayerActivity.showV604ApiAutoCall604Toggle() {
+    val current = BiliClient.prefs.v604apiAutoCall604
+    BiliClient.prefs.v604apiAutoCall604 = !current
+    AppToast.show(this, "API Auto Call604: ${if (!current) "ON" else "OFF"}")
+}
+
+// v604: Archive Auto Save604
+internal fun PlayerActivity.showV604ArchiveAutoSave604Toggle() {
+    val current = BiliClient.prefs.v604archiveAutoSave604
+    BiliClient.prefs.v604archiveAutoSave604 = !current
+    AppToast.show(this, "Archive Auto Save604: ${if (!current) "ON" else "OFF"}")
+}
+
+// v604: Area Auto Detect604
+internal fun PlayerActivity.showV604AreaAutoDetect604Toggle() {
+    val current = BiliClient.prefs.v604areaAutoDetect604
+    BiliClient.prefs.v604areaAutoDetect604 = !current
+    AppToast.show(this, "Area Auto Detect604: ${if (!current) "ON" else "OFF"}")
+}
+
+// v604: Array Auto Sort604
+internal fun PlayerActivity.showV604ArrayAutoSort604Toggle() {
+    val current = BiliClient.prefs.v604arrayAutoSort604
+    BiliClient.prefs.v604arrayAutoSort604 = !current
+    AppToast.show(this, "Array Auto Sort604: ${if (!current) "ON" else "OFF"}")
+}
+
+// v605: Action Auto Repeat605
+internal fun PlayerActivity.showV605ActionAutoRepeat605Toggle() {
+    val current = BiliClient.prefs.v605actionAutoRepeat605
+    BiliClient.prefs.v605actionAutoRepeat605 = !current
+    AppToast.show(this, "Action Auto Repeat605: ${if (!current) "ON" else "OFF"}")
+}
+
+// v605: Adapter Auto Switch605
+internal fun PlayerActivity.showV605AdapterAutoSwitch605Toggle() {
+    val current = BiliClient.prefs.v605adapterAutoSwitch605
+    BiliClient.prefs.v605adapterAutoSwitch605 = !current
+    AppToast.show(this, "Adapter Auto Switch605: ${if (!current) "ON" else "OFF"}")
+}
+
+// v605: Agent Auto Connect605
+internal fun PlayerActivity.showV605AgentAutoConnect605Toggle() {
+    val current = BiliClient.prefs.v605agentAutoConnect605
+    BiliClient.prefs.v605agentAutoConnect605 = !current
+    AppToast.show(this, "Agent Auto Connect605: ${if (!current) "ON" else "OFF"}")
+}
+
+// v605: Alias Auto Resolve605
+internal fun PlayerActivity.showV605AliasAutoResolve605Toggle() {
+    val current = BiliClient.prefs.v605aliasAutoResolve605
+    BiliClient.prefs.v605aliasAutoResolve605 = !current
+    AppToast.show(this, "Alias Auto Resolve605: ${if (!current) "ON" else "OFF"}")
+}
+
+// v605: Align Auto Center605
+internal fun PlayerActivity.showV605AlignAutoCenter605Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v605alignAutoCenter605).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Align Auto Center605",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v605alignAutoCenter605 = value
+        AppToast.show(this, "Align Auto Center605: $value")
+    }
+}
+
+// v605: Alive Auto Keep605
+internal fun PlayerActivity.showV605AliveAutoKeep605Toggle() {
+    val current = BiliClient.prefs.v605aliveAutoKeep605
+    BiliClient.prefs.v605aliveAutoKeep605 = !current
+    AppToast.show(this, "Alive Auto Keep605: ${if (!current) "ON" else "OFF"}")
+}
+
+// v605: Alpha Auto Fade605
+internal fun PlayerActivity.showV605AlphaAutoFade605Toggle() {
+    val current = BiliClient.prefs.v605alphaAutoFade605
+    BiliClient.prefs.v605alphaAutoFade605 = !current
+    AppToast.show(this, "Alpha Auto Fade605: ${if (!current) "ON" else "OFF"}")
+}
+
+// v605: Ambient Auto Light605
+internal fun PlayerActivity.showV605AmbientAutoLight605Toggle() {
+    val current = BiliClient.prefs.v605ambientAutoLight605
+    BiliClient.prefs.v605ambientAutoLight605 = !current
+    AppToast.show(this, "Ambient Auto Light605: ${if (!current) "ON" else "OFF"}")
+}
+
+// v605: Amount Auto Limit605
+internal fun PlayerActivity.showV605AmountAutoLimit605Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v605amountAutoLimit605).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Amount Auto Limit605",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v605amountAutoLimit605 = value
+        AppToast.show(this, "Amount Auto Limit605: $value")
+    }
+}
+
+// v605: Angle Auto Rotate605
+internal fun PlayerActivity.showV605AngleAutoRotate605Toggle() {
+    val current = BiliClient.prefs.v605angleAutoRotate605
+    BiliClient.prefs.v605angleAutoRotate605 = !current
+    AppToast.show(this, "Angle Auto Rotate605: ${if (!current) "ON" else "OFF"}")
+}
+
+// v605: Answer Auto Reply605
+internal fun PlayerActivity.showV605AnswerAutoReply605Toggle() {
+    val current = BiliClient.prefs.v605answerAutoReply605
+    BiliClient.prefs.v605answerAutoReply605 = !current
+    AppToast.show(this, "Answer Auto Reply605: ${if (!current) "ON" else "OFF"}")
+}
+
+// v605: API Auto Call605
+internal fun PlayerActivity.showV605ApiAutoCall605Toggle() {
+    val current = BiliClient.prefs.v605apiAutoCall605
+    BiliClient.prefs.v605apiAutoCall605 = !current
+    AppToast.show(this, "API Auto Call605: ${if (!current) "ON" else "OFF"}")
+}
+
+// v605: Archive Auto Save605
+internal fun PlayerActivity.showV605ArchiveAutoSave605Toggle() {
+    val current = BiliClient.prefs.v605archiveAutoSave605
+    BiliClient.prefs.v605archiveAutoSave605 = !current
+    AppToast.show(this, "Archive Auto Save605: ${if (!current) "ON" else "OFF"}")
+}
+
+// v605: Area Auto Detect605
+internal fun PlayerActivity.showV605AreaAutoDetect605Toggle() {
+    val current = BiliClient.prefs.v605areaAutoDetect605
+    BiliClient.prefs.v605areaAutoDetect605 = !current
+    AppToast.show(this, "Area Auto Detect605: ${if (!current) "ON" else "OFF"}")
+}
+
+// v605: Array Auto Sort605
+internal fun PlayerActivity.showV605ArrayAutoSort605Toggle() {
+    val current = BiliClient.prefs.v605arrayAutoSort605
+    BiliClient.prefs.v605arrayAutoSort605 = !current
+    AppToast.show(this, "Array Auto Sort605: ${if (!current) "ON" else "OFF"}")
+}
+
+// v606: Action Auto Repeat606
+internal fun PlayerActivity.showV606ActionAutoRepeat606Toggle() {
+    val current = BiliClient.prefs.v606actionAutoRepeat606
+    BiliClient.prefs.v606actionAutoRepeat606 = !current
+    AppToast.show(this, "Action Auto Repeat606: ${if (!current) "ON" else "OFF"}")
+}
+
+// v606: Adapter Auto Switch606
+internal fun PlayerActivity.showV606AdapterAutoSwitch606Toggle() {
+    val current = BiliClient.prefs.v606adapterAutoSwitch606
+    BiliClient.prefs.v606adapterAutoSwitch606 = !current
+    AppToast.show(this, "Adapter Auto Switch606: ${if (!current) "ON" else "OFF"}")
+}
+
+// v606: Agent Auto Connect606
+internal fun PlayerActivity.showV606AgentAutoConnect606Toggle() {
+    val current = BiliClient.prefs.v606agentAutoConnect606
+    BiliClient.prefs.v606agentAutoConnect606 = !current
+    AppToast.show(this, "Agent Auto Connect606: ${if (!current) "ON" else "OFF"}")
+}
+
+// v606: Alias Auto Resolve606
+internal fun PlayerActivity.showV606AliasAutoResolve606Toggle() {
+    val current = BiliClient.prefs.v606aliasAutoResolve606
+    BiliClient.prefs.v606aliasAutoResolve606 = !current
+    AppToast.show(this, "Alias Auto Resolve606: ${if (!current) "ON" else "OFF"}")
+}
+
+// v606: Align Auto Center606
+internal fun PlayerActivity.showV606AlignAutoCenter606Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v606alignAutoCenter606).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Align Auto Center606",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v606alignAutoCenter606 = value
+        AppToast.show(this, "Align Auto Center606: $value")
+    }
+}
+
+// v606: Alive Auto Keep606
+internal fun PlayerActivity.showV606AliveAutoKeep606Toggle() {
+    val current = BiliClient.prefs.v606aliveAutoKeep606
+    BiliClient.prefs.v606aliveAutoKeep606 = !current
+    AppToast.show(this, "Alive Auto Keep606: ${if (!current) "ON" else "OFF"}")
+}
+
+// v606: Alpha Auto Fade606
+internal fun PlayerActivity.showV606AlphaAutoFade606Toggle() {
+    val current = BiliClient.prefs.v606alphaAutoFade606
+    BiliClient.prefs.v606alphaAutoFade606 = !current
+    AppToast.show(this, "Alpha Auto Fade606: ${if (!current) "ON" else "OFF"}")
+}
+
+// v606: Ambient Auto Light606
+internal fun PlayerActivity.showV606AmbientAutoLight606Toggle() {
+    val current = BiliClient.prefs.v606ambientAutoLight606
+    BiliClient.prefs.v606ambientAutoLight606 = !current
+    AppToast.show(this, "Ambient Auto Light606: ${if (!current) "ON" else "OFF"}")
+}
+
+// v606: Amount Auto Limit606
+internal fun PlayerActivity.showV606AmountAutoLimit606Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v606amountAutoLimit606).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Amount Auto Limit606",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v606amountAutoLimit606 = value
+        AppToast.show(this, "Amount Auto Limit606: $value")
+    }
+}
+
+// v606: Angle Auto Rotate606
+internal fun PlayerActivity.showV606AngleAutoRotate606Toggle() {
+    val current = BiliClient.prefs.v606angleAutoRotate606
+    BiliClient.prefs.v606angleAutoRotate606 = !current
+    AppToast.show(this, "Angle Auto Rotate606: ${if (!current) "ON" else "OFF"}")
+}
+
+// v606: Answer Auto Reply606
+internal fun PlayerActivity.showV606AnswerAutoReply606Toggle() {
+    val current = BiliClient.prefs.v606answerAutoReply606
+    BiliClient.prefs.v606answerAutoReply606 = !current
+    AppToast.show(this, "Answer Auto Reply606: ${if (!current) "ON" else "OFF"}")
+}
+
+// v606: API Auto Call606
+internal fun PlayerActivity.showV606ApiAutoCall606Toggle() {
+    val current = BiliClient.prefs.v606apiAutoCall606
+    BiliClient.prefs.v606apiAutoCall606 = !current
+    AppToast.show(this, "API Auto Call606: ${if (!current) "ON" else "OFF"}")
+}
+
+// v606: Archive Auto Save606
+internal fun PlayerActivity.showV606ArchiveAutoSave606Toggle() {
+    val current = BiliClient.prefs.v606archiveAutoSave606
+    BiliClient.prefs.v606archiveAutoSave606 = !current
+    AppToast.show(this, "Archive Auto Save606: ${if (!current) "ON" else "OFF"}")
+}
+
+// v606: Area Auto Detect606
+internal fun PlayerActivity.showV606AreaAutoDetect606Toggle() {
+    val current = BiliClient.prefs.v606areaAutoDetect606
+    BiliClient.prefs.v606areaAutoDetect606 = !current
+    AppToast.show(this, "Area Auto Detect606: ${if (!current) "ON" else "OFF"}")
+}
+
+// v606: Array Auto Sort606
+internal fun PlayerActivity.showV606ArrayAutoSort606Toggle() {
+    val current = BiliClient.prefs.v606arrayAutoSort606
+    BiliClient.prefs.v606arrayAutoSort606 = !current
+    AppToast.show(this, "Array Auto Sort606: ${if (!current) "ON" else "OFF"}")
+}
+
+// v607: Action Auto Repeat607
+internal fun PlayerActivity.showV607ActionAutoRepeat607Toggle() {
+    val current = BiliClient.prefs.v607actionAutoRepeat607
+    BiliClient.prefs.v607actionAutoRepeat607 = !current
+    AppToast.show(this, "Action Auto Repeat607: ${if (!current) "ON" else "OFF"}")
+}
+
+// v607: Adapter Auto Switch607
+internal fun PlayerActivity.showV607AdapterAutoSwitch607Toggle() {
+    val current = BiliClient.prefs.v607adapterAutoSwitch607
+    BiliClient.prefs.v607adapterAutoSwitch607 = !current
+    AppToast.show(this, "Adapter Auto Switch607: ${if (!current) "ON" else "OFF"}")
+}
+
+// v607: Agent Auto Connect607
+internal fun PlayerActivity.showV607AgentAutoConnect607Toggle() {
+    val current = BiliClient.prefs.v607agentAutoConnect607
+    BiliClient.prefs.v607agentAutoConnect607 = !current
+    AppToast.show(this, "Agent Auto Connect607: ${if (!current) "ON" else "OFF"}")
+}
+
+// v607: Alias Auto Resolve607
+internal fun PlayerActivity.showV607AliasAutoResolve607Toggle() {
+    val current = BiliClient.prefs.v607aliasAutoResolve607
+    BiliClient.prefs.v607aliasAutoResolve607 = !current
+    AppToast.show(this, "Alias Auto Resolve607: ${if (!current) "ON" else "OFF"}")
+}
+
+// v607: Align Auto Center607
+internal fun PlayerActivity.showV607AlignAutoCenter607Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v607alignAutoCenter607).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Align Auto Center607",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v607alignAutoCenter607 = value
+        AppToast.show(this, "Align Auto Center607: $value")
+    }
+}
+
+// v607: Alive Auto Keep607
+internal fun PlayerActivity.showV607AliveAutoKeep607Toggle() {
+    val current = BiliClient.prefs.v607aliveAutoKeep607
+    BiliClient.prefs.v607aliveAutoKeep607 = !current
+    AppToast.show(this, "Alive Auto Keep607: ${if (!current) "ON" else "OFF"}")
+}
+
+// v607: Alpha Auto Fade607
+internal fun PlayerActivity.showV607AlphaAutoFade607Toggle() {
+    val current = BiliClient.prefs.v607alphaAutoFade607
+    BiliClient.prefs.v607alphaAutoFade607 = !current
+    AppToast.show(this, "Alpha Auto Fade607: ${if (!current) "ON" else "OFF"}")
+}
+
+// v607: Ambient Auto Light607
+internal fun PlayerActivity.showV607AmbientAutoLight607Toggle() {
+    val current = BiliClient.prefs.v607ambientAutoLight607
+    BiliClient.prefs.v607ambientAutoLight607 = !current
+    AppToast.show(this, "Ambient Auto Light607: ${if (!current) "ON" else "OFF"}")
+}
+
+// v607: Amount Auto Limit607
+internal fun PlayerActivity.showV607AmountAutoLimit607Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v607amountAutoLimit607).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Amount Auto Limit607",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v607amountAutoLimit607 = value
+        AppToast.show(this, "Amount Auto Limit607: $value")
+    }
+}
+
+// v607: Angle Auto Rotate607
+internal fun PlayerActivity.showV607AngleAutoRotate607Toggle() {
+    val current = BiliClient.prefs.v607angleAutoRotate607
+    BiliClient.prefs.v607angleAutoRotate607 = !current
+    AppToast.show(this, "Angle Auto Rotate607: ${if (!current) "ON" else "OFF"}")
+}
+
+// v607: Answer Auto Reply607
+internal fun PlayerActivity.showV607AnswerAutoReply607Toggle() {
+    val current = BiliClient.prefs.v607answerAutoReply607
+    BiliClient.prefs.v607answerAutoReply607 = !current
+    AppToast.show(this, "Answer Auto Reply607: ${if (!current) "ON" else "OFF"}")
+}
+
+// v607: API Auto Call607
+internal fun PlayerActivity.showV607ApiAutoCall607Toggle() {
+    val current = BiliClient.prefs.v607apiAutoCall607
+    BiliClient.prefs.v607apiAutoCall607 = !current
+    AppToast.show(this, "API Auto Call607: ${if (!current) "ON" else "OFF"}")
+}
+
+// v607: Archive Auto Save607
+internal fun PlayerActivity.showV607ArchiveAutoSave607Toggle() {
+    val current = BiliClient.prefs.v607archiveAutoSave607
+    BiliClient.prefs.v607archiveAutoSave607 = !current
+    AppToast.show(this, "Archive Auto Save607: ${if (!current) "ON" else "OFF"}")
+}
+
+// v607: Area Auto Detect607
+internal fun PlayerActivity.showV607AreaAutoDetect607Toggle() {
+    val current = BiliClient.prefs.v607areaAutoDetect607
+    BiliClient.prefs.v607areaAutoDetect607 = !current
+    AppToast.show(this, "Area Auto Detect607: ${if (!current) "ON" else "OFF"}")
+}
+
+// v607: Array Auto Sort607
+internal fun PlayerActivity.showV607ArrayAutoSort607Toggle() {
+    val current = BiliClient.prefs.v607arrayAutoSort607
+    BiliClient.prefs.v607arrayAutoSort607 = !current
+    AppToast.show(this, "Array Auto Sort607: ${if (!current) "ON" else "OFF"}")
+}
+
+// v608: Action Auto Repeat608
+internal fun PlayerActivity.showV608ActionAutoRepeat608Toggle() {
+    val current = BiliClient.prefs.v608actionAutoRepeat608
+    BiliClient.prefs.v608actionAutoRepeat608 = !current
+    AppToast.show(this, "Action Auto Repeat608: ${if (!current) "ON" else "OFF"}")
+}
+
+// v608: Adapter Auto Switch608
+internal fun PlayerActivity.showV608AdapterAutoSwitch608Toggle() {
+    val current = BiliClient.prefs.v608adapterAutoSwitch608
+    BiliClient.prefs.v608adapterAutoSwitch608 = !current
+    AppToast.show(this, "Adapter Auto Switch608: ${if (!current) "ON" else "OFF"}")
+}
+
+// v608: Agent Auto Connect608
+internal fun PlayerActivity.showV608AgentAutoConnect608Toggle() {
+    val current = BiliClient.prefs.v608agentAutoConnect608
+    BiliClient.prefs.v608agentAutoConnect608 = !current
+    AppToast.show(this, "Agent Auto Connect608: ${if (!current) "ON" else "OFF"}")
+}
+
+// v608: Alias Auto Resolve608
+internal fun PlayerActivity.showV608AliasAutoResolve608Toggle() {
+    val current = BiliClient.prefs.v608aliasAutoResolve608
+    BiliClient.prefs.v608aliasAutoResolve608 = !current
+    AppToast.show(this, "Alias Auto Resolve608: ${if (!current) "ON" else "OFF"}")
+}
+
+// v608: Align Auto Center608
+internal fun PlayerActivity.showV608AlignAutoCenter608Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v608alignAutoCenter608).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Align Auto Center608",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v608alignAutoCenter608 = value
+        AppToast.show(this, "Align Auto Center608: $value")
+    }
+}
+
+// v608: Alive Auto Keep608
+internal fun PlayerActivity.showV608AliveAutoKeep608Toggle() {
+    val current = BiliClient.prefs.v608aliveAutoKeep608
+    BiliClient.prefs.v608aliveAutoKeep608 = !current
+    AppToast.show(this, "Alive Auto Keep608: ${if (!current) "ON" else "OFF"}")
+}
+
+// v608: Alpha Auto Fade608
+internal fun PlayerActivity.showV608AlphaAutoFade608Toggle() {
+    val current = BiliClient.prefs.v608alphaAutoFade608
+    BiliClient.prefs.v608alphaAutoFade608 = !current
+    AppToast.show(this, "Alpha Auto Fade608: ${if (!current) "ON" else "OFF"}")
+}
+
+// v608: Ambient Auto Light608
+internal fun PlayerActivity.showV608AmbientAutoLight608Toggle() {
+    val current = BiliClient.prefs.v608ambientAutoLight608
+    BiliClient.prefs.v608ambientAutoLight608 = !current
+    AppToast.show(this, "Ambient Auto Light608: ${if (!current) "ON" else "OFF"}")
+}
+
+// v608: Amount Auto Limit608
+internal fun PlayerActivity.showV608AmountAutoLimit608Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v608amountAutoLimit608).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Amount Auto Limit608",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v608amountAutoLimit608 = value
+        AppToast.show(this, "Amount Auto Limit608: $value")
+    }
+}
+
+// v608: Angle Auto Rotate608
+internal fun PlayerActivity.showV608AngleAutoRotate608Toggle() {
+    val current = BiliClient.prefs.v608angleAutoRotate608
+    BiliClient.prefs.v608angleAutoRotate608 = !current
+    AppToast.show(this, "Angle Auto Rotate608: ${if (!current) "ON" else "OFF"}")
+}
+
+// v608: Answer Auto Reply608
+internal fun PlayerActivity.showV608AnswerAutoReply608Toggle() {
+    val current = BiliClient.prefs.v608answerAutoReply608
+    BiliClient.prefs.v608answerAutoReply608 = !current
+    AppToast.show(this, "Answer Auto Reply608: ${if (!current) "ON" else "OFF"}")
+}
+
+// v608: API Auto Call608
+internal fun PlayerActivity.showV608ApiAutoCall608Toggle() {
+    val current = BiliClient.prefs.v608apiAutoCall608
+    BiliClient.prefs.v608apiAutoCall608 = !current
+    AppToast.show(this, "API Auto Call608: ${if (!current) "ON" else "OFF"}")
+}
+
+// v608: Archive Auto Save608
+internal fun PlayerActivity.showV608ArchiveAutoSave608Toggle() {
+    val current = BiliClient.prefs.v608archiveAutoSave608
+    BiliClient.prefs.v608archiveAutoSave608 = !current
+    AppToast.show(this, "Archive Auto Save608: ${if (!current) "ON" else "OFF"}")
+}
+
+// v608: Area Auto Detect608
+internal fun PlayerActivity.showV608AreaAutoDetect608Toggle() {
+    val current = BiliClient.prefs.v608areaAutoDetect608
+    BiliClient.prefs.v608areaAutoDetect608 = !current
+    AppToast.show(this, "Area Auto Detect608: ${if (!current) "ON" else "OFF"}")
+}
+
+// v608: Array Auto Sort608
+internal fun PlayerActivity.showV608ArrayAutoSort608Toggle() {
+    val current = BiliClient.prefs.v608arrayAutoSort608
+    BiliClient.prefs.v608arrayAutoSort608 = !current
+    AppToast.show(this, "Array Auto Sort608: ${if (!current) "ON" else "OFF"}")
+}
+
+// v609: Action Auto Repeat609
+internal fun PlayerActivity.showV609ActionAutoRepeat609Toggle() {
+    val current = BiliClient.prefs.v609actionAutoRepeat609
+    BiliClient.prefs.v609actionAutoRepeat609 = !current
+    AppToast.show(this, "Action Auto Repeat609: ${if (!current) "ON" else "OFF"}")
+}
+
+// v609: Adapter Auto Switch609
+internal fun PlayerActivity.showV609AdapterAutoSwitch609Toggle() {
+    val current = BiliClient.prefs.v609adapterAutoSwitch609
+    BiliClient.prefs.v609adapterAutoSwitch609 = !current
+    AppToast.show(this, "Adapter Auto Switch609: ${if (!current) "ON" else "OFF"}")
+}
+
+// v609: Agent Auto Connect609
+internal fun PlayerActivity.showV609AgentAutoConnect609Toggle() {
+    val current = BiliClient.prefs.v609agentAutoConnect609
+    BiliClient.prefs.v609agentAutoConnect609 = !current
+    AppToast.show(this, "Agent Auto Connect609: ${if (!current) "ON" else "OFF"}")
+}
+
+// v609: Alias Auto Resolve609
+internal fun PlayerActivity.showV609AliasAutoResolve609Toggle() {
+    val current = BiliClient.prefs.v609aliasAutoResolve609
+    BiliClient.prefs.v609aliasAutoResolve609 = !current
+    AppToast.show(this, "Alias Auto Resolve609: ${if (!current) "ON" else "OFF"}")
+}
+
+// v609: Align Auto Center609
+internal fun PlayerActivity.showV609AlignAutoCenter609Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v609alignAutoCenter609).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Align Auto Center609",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v609alignAutoCenter609 = value
+        AppToast.show(this, "Align Auto Center609: $value")
+    }
+}
+
+// v609: Alive Auto Keep609
+internal fun PlayerActivity.showV609AliveAutoKeep609Toggle() {
+    val current = BiliClient.prefs.v609aliveAutoKeep609
+    BiliClient.prefs.v609aliveAutoKeep609 = !current
+    AppToast.show(this, "Alive Auto Keep609: ${if (!current) "ON" else "OFF"}")
+}
+
+// v609: Alpha Auto Fade609
+internal fun PlayerActivity.showV609AlphaAutoFade609Toggle() {
+    val current = BiliClient.prefs.v609alphaAutoFade609
+    BiliClient.prefs.v609alphaAutoFade609 = !current
+    AppToast.show(this, "Alpha Auto Fade609: ${if (!current) "ON" else "OFF"}")
+}
+
+// v609: Ambient Auto Light609
+internal fun PlayerActivity.showV609AmbientAutoLight609Toggle() {
+    val current = BiliClient.prefs.v609ambientAutoLight609
+    BiliClient.prefs.v609ambientAutoLight609 = !current
+    AppToast.show(this, "Ambient Auto Light609: ${if (!current) "ON" else "OFF"}")
+}
+
+// v609: Amount Auto Limit609
+internal fun PlayerActivity.showV609AmountAutoLimit609Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v609amountAutoLimit609).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Amount Auto Limit609",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v609amountAutoLimit609 = value
+        AppToast.show(this, "Amount Auto Limit609: $value")
+    }
+}
+
+// v609: Angle Auto Rotate609
+internal fun PlayerActivity.showV609AngleAutoRotate609Toggle() {
+    val current = BiliClient.prefs.v609angleAutoRotate609
+    BiliClient.prefs.v609angleAutoRotate609 = !current
+    AppToast.show(this, "Angle Auto Rotate609: ${if (!current) "ON" else "OFF"}")
+}
+
+// v609: Answer Auto Reply609
+internal fun PlayerActivity.showV609AnswerAutoReply609Toggle() {
+    val current = BiliClient.prefs.v609answerAutoReply609
+    BiliClient.prefs.v609answerAutoReply609 = !current
+    AppToast.show(this, "Answer Auto Reply609: ${if (!current) "ON" else "OFF"}")
+}
+
+// v609: API Auto Call609
+internal fun PlayerActivity.showV609ApiAutoCall609Toggle() {
+    val current = BiliClient.prefs.v609apiAutoCall609
+    BiliClient.prefs.v609apiAutoCall609 = !current
+    AppToast.show(this, "API Auto Call609: ${if (!current) "ON" else "OFF"}")
+}
+
+// v609: Archive Auto Save609
+internal fun PlayerActivity.showV609ArchiveAutoSave609Toggle() {
+    val current = BiliClient.prefs.v609archiveAutoSave609
+    BiliClient.prefs.v609archiveAutoSave609 = !current
+    AppToast.show(this, "Archive Auto Save609: ${if (!current) "ON" else "OFF"}")
+}
+
+// v609: Area Auto Detect609
+internal fun PlayerActivity.showV609AreaAutoDetect609Toggle() {
+    val current = BiliClient.prefs.v609areaAutoDetect609
+    BiliClient.prefs.v609areaAutoDetect609 = !current
+    AppToast.show(this, "Area Auto Detect609: ${if (!current) "ON" else "OFF"}")
+}
+
+// v609: Array Auto Sort609
+internal fun PlayerActivity.showV609ArrayAutoSort609Toggle() {
+    val current = BiliClient.prefs.v609arrayAutoSort609
+    BiliClient.prefs.v609arrayAutoSort609 = !current
+    AppToast.show(this, "Array Auto Sort609: ${if (!current) "ON" else "OFF"}")
+}
+
+// v610: Action Auto Repeat610
+internal fun PlayerActivity.showV610ActionAutoRepeat610Toggle() {
+    val current = BiliClient.prefs.v610actionAutoRepeat610
+    BiliClient.prefs.v610actionAutoRepeat610 = !current
+    AppToast.show(this, "Action Auto Repeat610: ${if (!current) "ON" else "OFF"}")
+}
+
+// v610: Adapter Auto Switch610
+internal fun PlayerActivity.showV610AdapterAutoSwitch610Toggle() {
+    val current = BiliClient.prefs.v610adapterAutoSwitch610
+    BiliClient.prefs.v610adapterAutoSwitch610 = !current
+    AppToast.show(this, "Adapter Auto Switch610: ${if (!current) "ON" else "OFF"}")
+}
+
+// v610: Agent Auto Connect610
+internal fun PlayerActivity.showV610AgentAutoConnect610Toggle() {
+    val current = BiliClient.prefs.v610agentAutoConnect610
+    BiliClient.prefs.v610agentAutoConnect610 = !current
+    AppToast.show(this, "Agent Auto Connect610: ${if (!current) "ON" else "OFF"}")
+}
+
+// v610: Alias Auto Resolve610
+internal fun PlayerActivity.showV610AliasAutoResolve610Toggle() {
+    val current = BiliClient.prefs.v610aliasAutoResolve610
+    BiliClient.prefs.v610aliasAutoResolve610 = !current
+    AppToast.show(this, "Alias Auto Resolve610: ${if (!current) "ON" else "OFF"}")
+}
+
+// v610: Align Auto Center610
+internal fun PlayerActivity.showV610AlignAutoCenter610Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v610alignAutoCenter610).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Align Auto Center610",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v610alignAutoCenter610 = value
+        AppToast.show(this, "Align Auto Center610: $value")
+    }
+}
+
+// v610: Alive Auto Keep610
+internal fun PlayerActivity.showV610AliveAutoKeep610Toggle() {
+    val current = BiliClient.prefs.v610aliveAutoKeep610
+    BiliClient.prefs.v610aliveAutoKeep610 = !current
+    AppToast.show(this, "Alive Auto Keep610: ${if (!current) "ON" else "OFF"}")
+}
+
+// v610: Alpha Auto Fade610
+internal fun PlayerActivity.showV610AlphaAutoFade610Toggle() {
+    val current = BiliClient.prefs.v610alphaAutoFade610
+    BiliClient.prefs.v610alphaAutoFade610 = !current
+    AppToast.show(this, "Alpha Auto Fade610: ${if (!current) "ON" else "OFF"}")
+}
+
+// v610: Ambient Auto Light610
+internal fun PlayerActivity.showV610AmbientAutoLight610Toggle() {
+    val current = BiliClient.prefs.v610ambientAutoLight610
+    BiliClient.prefs.v610ambientAutoLight610 = !current
+    AppToast.show(this, "Ambient Auto Light610: ${if (!current) "ON" else "OFF"}")
+}
+
+// v610: Amount Auto Limit610
+internal fun PlayerActivity.showV610AmountAutoLimit610Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v610amountAutoLimit610).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Amount Auto Limit610",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v610amountAutoLimit610 = value
+        AppToast.show(this, "Amount Auto Limit610: $value")
+    }
+}
+
+// v610: Angle Auto Rotate610
+internal fun PlayerActivity.showV610AngleAutoRotate610Toggle() {
+    val current = BiliClient.prefs.v610angleAutoRotate610
+    BiliClient.prefs.v610angleAutoRotate610 = !current
+    AppToast.show(this, "Angle Auto Rotate610: ${if (!current) "ON" else "OFF"}")
+}
+
+// v610: Answer Auto Reply610
+internal fun PlayerActivity.showV610AnswerAutoReply610Toggle() {
+    val current = BiliClient.prefs.v610answerAutoReply610
+    BiliClient.prefs.v610answerAutoReply610 = !current
+    AppToast.show(this, "Answer Auto Reply610: ${if (!current) "ON" else "OFF"}")
+}
+
+// v610: API Auto Call610
+internal fun PlayerActivity.showV610ApiAutoCall610Toggle() {
+    val current = BiliClient.prefs.v610apiAutoCall610
+    BiliClient.prefs.v610apiAutoCall610 = !current
+    AppToast.show(this, "API Auto Call610: ${if (!current) "ON" else "OFF"}")
+}
+
+// v610: Archive Auto Save610
+internal fun PlayerActivity.showV610ArchiveAutoSave610Toggle() {
+    val current = BiliClient.prefs.v610archiveAutoSave610
+    BiliClient.prefs.v610archiveAutoSave610 = !current
+    AppToast.show(this, "Archive Auto Save610: ${if (!current) "ON" else "OFF"}")
+}
+
+// v610: Area Auto Detect610
+internal fun PlayerActivity.showV610AreaAutoDetect610Toggle() {
+    val current = BiliClient.prefs.v610areaAutoDetect610
+    BiliClient.prefs.v610areaAutoDetect610 = !current
+    AppToast.show(this, "Area Auto Detect610: ${if (!current) "ON" else "OFF"}")
+}
+
+// v610: Array Auto Sort610
+internal fun PlayerActivity.showV610ArrayAutoSort610Toggle() {
+    val current = BiliClient.prefs.v610arrayAutoSort610
+    BiliClient.prefs.v610arrayAutoSort610 = !current
+    AppToast.show(this, "Array Auto Sort610: ${if (!current) "ON" else "OFF"}")
+}
+
