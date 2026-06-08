@@ -48848,6 +48848,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V700DRAWAUTOANTIALIAS700, false)
         set(value) = prefs.edit().putBoolean(KEY_V700DRAWAUTOANTIALIAS700, value).apply()
 
+    var v701driverAutoDetect701: Boolean
+        get() = prefs.getBoolean(KEY_V701DRIVERAUTODETECT701, false)
+        set(value) = prefs.edit().putBoolean(KEY_V701DRIVERAUTODETECT701, value).apply()
+
+    var v701dropAutoShadow701: Boolean
+        get() = prefs.getBoolean(KEY_V701DROPAUTOSHADOW701, false)
+        set(value) = prefs.edit().putBoolean(KEY_V701DROPAUTOSHADOW701, value).apply()
+
+    var v701dryRunMode701: Boolean
+        get() = prefs.getBoolean(KEY_V701DRYRUNMODE701, false)
+        set(value) = prefs.edit().putBoolean(KEY_V701DRYRUNMODE701, value).apply()
+
+    var v701dumpAutoExport701: Boolean
+        get() = prefs.getBoolean(KEY_V701DUMPAUTOEXPORT701, false)
+        set(value) = prefs.edit().putBoolean(KEY_V701DUMPAUTOEXPORT701, value).apply()
+
+    var v701duplicateAutoRemove701: Boolean
+        get() = prefs.getBoolean(KEY_V701DUPLICATEAUTOREMOVE701, false)
+        set(value) = prefs.edit().putBoolean(KEY_V701DUPLICATEAUTOREMOVE701, value).apply()
+
+    var v701durationAutoLimit701: Int
+        get() = prefs.getInt(KEY_V701DURATIONAUTOLIMIT701, 0)
+        set(value) = prefs.edit().putInt(KEY_V701DURATIONAUTOLIMIT701, value).apply()
+
+    var v701dynamicAutoRange701: Boolean
+        get() = prefs.getBoolean(KEY_V701DYNAMICAUTORANGE701, false)
+        set(value) = prefs.edit().putBoolean(KEY_V701DYNAMICAUTORANGE701, value).apply()
+
+    var v701echoAutoFeedback701: Boolean
+        get() = prefs.getBoolean(KEY_V701ECHOAUTOFEEDBACK701, false)
+        set(value) = prefs.edit().putBoolean(KEY_V701ECHOAUTOFEEDBACK701, value).apply()
+
+    var v701edgeAutoDetect701: Boolean
+        get() = prefs.getBoolean(KEY_V701EDGEAUTODETECT701, false)
+        set(value) = prefs.edit().putBoolean(KEY_V701EDGEAUTODETECT701, value).apply()
+
+    var v701editAutoSave701: Boolean
+        get() = prefs.getBoolean(KEY_V701EDITAUTOSAVE701, false)
+        set(value) = prefs.edit().putBoolean(KEY_V701EDITAUTOSAVE701, value).apply()
+
+    var v701effectAutoApply701: Boolean
+        get() = prefs.getBoolean(KEY_V701EFFECTAUTOAPPLY701, false)
+        set(value) = prefs.edit().putBoolean(KEY_V701EFFECTAUTOAPPLY701, value).apply()
+
+    var v701elementAutoFocus701: Boolean
+        get() = prefs.getBoolean(KEY_V701ELEMENTAUTOFOCUS701, false)
+        set(value) = prefs.edit().putBoolean(KEY_V701ELEMENTAUTOFOCUS701, value).apply()
+
+    var v701emitAutoEvent701: Boolean
+        get() = prefs.getBoolean(KEY_V701EMITAUTOEVENT701, false)
+        set(value) = prefs.edit().putBoolean(KEY_V701EMITAUTOEVENT701, value).apply()
+
+    var v701emptyAutoPlaceholder701: Boolean
+        get() = prefs.getBoolean(KEY_V701EMPTYAUTOPLACEHOLDER701, false)
+        set(value) = prefs.edit().putBoolean(KEY_V701EMPTYAUTOPLACEHOLDER701, value).apply()
+
+    var v701enableAutoFeature701: Boolean
+        get() = prefs.getBoolean(KEY_V701ENABLEAUTOFEATURE701, false)
+        set(value) = prefs.edit().putBoolean(KEY_V701ENABLEAUTOFEATURE701, value).apply()
+
+    var v702driverAutoDetect702: Boolean
+        get() = prefs.getBoolean(KEY_V702DRIVERAUTODETECT702, false)
+        set(value) = prefs.edit().putBoolean(KEY_V702DRIVERAUTODETECT702, value).apply()
+
+    var v702dropAutoShadow702: Boolean
+        get() = prefs.getBoolean(KEY_V702DROPAUTOSHADOW702, false)
+        set(value) = prefs.edit().putBoolean(KEY_V702DROPAUTOSHADOW702, value).apply()
+
+    var v702dryRunMode702: Boolean
+        get() = prefs.getBoolean(KEY_V702DRYRUNMODE702, false)
+        set(value) = prefs.edit().putBoolean(KEY_V702DRYRUNMODE702, value).apply()
+
+    var v702dumpAutoExport702: Boolean
+        get() = prefs.getBoolean(KEY_V702DUMPAUTOEXPORT702, false)
+        set(value) = prefs.edit().putBoolean(KEY_V702DUMPAUTOEXPORT702, value).apply()
+
+    var v702duplicateAutoRemove702: Boolean
+        get() = prefs.getBoolean(KEY_V702DUPLICATEAUTOREMOVE702, false)
+        set(value) = prefs.edit().putBoolean(KEY_V702DUPLICATEAUTOREMOVE702, value).apply()
+
+    var v702durationAutoLimit702: Int
+        get() = prefs.getInt(KEY_V702DURATIONAUTOLIMIT702, 0)
+        set(value) = prefs.edit().putInt(KEY_V702DURATIONAUTOLIMIT702, value).apply()
+
+    var v702dynamicAutoRange702: Boolean
+        get() = prefs.getBoolean(KEY_V702DYNAMICAUTORANGE702, false)
+        set(value) = prefs.edit().putBoolean(KEY_V702DYNAMICAUTORANGE702, value).apply()
+
+    var v702echoAutoFeedback702: Boolean
+        get() = prefs.getBoolean(KEY_V702ECHOAUTOFEEDBACK702, false)
+        set(value) = prefs.edit().putBoolean(KEY_V702ECHOAUTOFEEDBACK702, value).apply()
+
+    var v702edgeAutoDetect702: Boolean
+        get() = prefs.getBoolean(KEY_V702EDGEAUTODETECT702, false)
+        set(value) = prefs.edit().putBoolean(KEY_V702EDGEAUTODETECT702, value).apply()
+
+    var v702editAutoSave702: Boolean
+        get() = prefs.getBoolean(KEY_V702EDITAUTOSAVE702, false)
+        set(value) = prefs.edit().putBoolean(KEY_V702EDITAUTOSAVE702, value).apply()
+
+    var v702effectAutoApply702: Boolean
+        get() = prefs.getBoolean(KEY_V702EFFECTAUTOAPPLY702, false)
+        set(value) = prefs.edit().putBoolean(KEY_V702EFFECTAUTOAPPLY702, value).apply()
+
+    var v702elementAutoFocus702: Boolean
+        get() = prefs.getBoolean(KEY_V702ELEMENTAUTOFOCUS702, false)
+        set(value) = prefs.edit().putBoolean(KEY_V702ELEMENTAUTOFOCUS702, value).apply()
+
+    var v702emitAutoEvent702: Boolean
+        get() = prefs.getBoolean(KEY_V702EMITAUTOEVENT702, false)
+        set(value) = prefs.edit().putBoolean(KEY_V702EMITAUTOEVENT702, value).apply()
+
+    var v702emptyAutoPlaceholder702: Boolean
+        get() = prefs.getBoolean(KEY_V702EMPTYAUTOPLACEHOLDER702, false)
+        set(value) = prefs.edit().putBoolean(KEY_V702EMPTYAUTOPLACEHOLDER702, value).apply()
+
+    var v702enableAutoFeature702: Boolean
+        get() = prefs.getBoolean(KEY_V702ENABLEAUTOFEATURE702, false)
+        set(value) = prefs.edit().putBoolean(KEY_V702ENABLEAUTOFEATURE702, value).apply()
+
+    var v703driverAutoDetect703: Boolean
+        get() = prefs.getBoolean(KEY_V703DRIVERAUTODETECT703, false)
+        set(value) = prefs.edit().putBoolean(KEY_V703DRIVERAUTODETECT703, value).apply()
+
+    var v703dropAutoShadow703: Boolean
+        get() = prefs.getBoolean(KEY_V703DROPAUTOSHADOW703, false)
+        set(value) = prefs.edit().putBoolean(KEY_V703DROPAUTOSHADOW703, value).apply()
+
+    var v703dryRunMode703: Boolean
+        get() = prefs.getBoolean(KEY_V703DRYRUNMODE703, false)
+        set(value) = prefs.edit().putBoolean(KEY_V703DRYRUNMODE703, value).apply()
+
+    var v703dumpAutoExport703: Boolean
+        get() = prefs.getBoolean(KEY_V703DUMPAUTOEXPORT703, false)
+        set(value) = prefs.edit().putBoolean(KEY_V703DUMPAUTOEXPORT703, value).apply()
+
+    var v703duplicateAutoRemove703: Boolean
+        get() = prefs.getBoolean(KEY_V703DUPLICATEAUTOREMOVE703, false)
+        set(value) = prefs.edit().putBoolean(KEY_V703DUPLICATEAUTOREMOVE703, value).apply()
+
+    var v703durationAutoLimit703: Int
+        get() = prefs.getInt(KEY_V703DURATIONAUTOLIMIT703, 0)
+        set(value) = prefs.edit().putInt(KEY_V703DURATIONAUTOLIMIT703, value).apply()
+
+    var v703dynamicAutoRange703: Boolean
+        get() = prefs.getBoolean(KEY_V703DYNAMICAUTORANGE703, false)
+        set(value) = prefs.edit().putBoolean(KEY_V703DYNAMICAUTORANGE703, value).apply()
+
+    var v703echoAutoFeedback703: Boolean
+        get() = prefs.getBoolean(KEY_V703ECHOAUTOFEEDBACK703, false)
+        set(value) = prefs.edit().putBoolean(KEY_V703ECHOAUTOFEEDBACK703, value).apply()
+
+    var v703edgeAutoDetect703: Boolean
+        get() = prefs.getBoolean(KEY_V703EDGEAUTODETECT703, false)
+        set(value) = prefs.edit().putBoolean(KEY_V703EDGEAUTODETECT703, value).apply()
+
+    var v703editAutoSave703: Boolean
+        get() = prefs.getBoolean(KEY_V703EDITAUTOSAVE703, false)
+        set(value) = prefs.edit().putBoolean(KEY_V703EDITAUTOSAVE703, value).apply()
+
+    var v703effectAutoApply703: Boolean
+        get() = prefs.getBoolean(KEY_V703EFFECTAUTOAPPLY703, false)
+        set(value) = prefs.edit().putBoolean(KEY_V703EFFECTAUTOAPPLY703, value).apply()
+
+    var v703elementAutoFocus703: Boolean
+        get() = prefs.getBoolean(KEY_V703ELEMENTAUTOFOCUS703, false)
+        set(value) = prefs.edit().putBoolean(KEY_V703ELEMENTAUTOFOCUS703, value).apply()
+
+    var v703emitAutoEvent703: Boolean
+        get() = prefs.getBoolean(KEY_V703EMITAUTOEVENT703, false)
+        set(value) = prefs.edit().putBoolean(KEY_V703EMITAUTOEVENT703, value).apply()
+
+    var v703emptyAutoPlaceholder703: Boolean
+        get() = prefs.getBoolean(KEY_V703EMPTYAUTOPLACEHOLDER703, false)
+        set(value) = prefs.edit().putBoolean(KEY_V703EMPTYAUTOPLACEHOLDER703, value).apply()
+
+    var v703enableAutoFeature703: Boolean
+        get() = prefs.getBoolean(KEY_V703ENABLEAUTOFEATURE703, false)
+        set(value) = prefs.edit().putBoolean(KEY_V703ENABLEAUTOFEATURE703, value).apply()
+
+    var v704driverAutoDetect704: Boolean
+        get() = prefs.getBoolean(KEY_V704DRIVERAUTODETECT704, false)
+        set(value) = prefs.edit().putBoolean(KEY_V704DRIVERAUTODETECT704, value).apply()
+
+    var v704dropAutoShadow704: Boolean
+        get() = prefs.getBoolean(KEY_V704DROPAUTOSHADOW704, false)
+        set(value) = prefs.edit().putBoolean(KEY_V704DROPAUTOSHADOW704, value).apply()
+
+    var v704dryRunMode704: Boolean
+        get() = prefs.getBoolean(KEY_V704DRYRUNMODE704, false)
+        set(value) = prefs.edit().putBoolean(KEY_V704DRYRUNMODE704, value).apply()
+
+    var v704dumpAutoExport704: Boolean
+        get() = prefs.getBoolean(KEY_V704DUMPAUTOEXPORT704, false)
+        set(value) = prefs.edit().putBoolean(KEY_V704DUMPAUTOEXPORT704, value).apply()
+
+    var v704duplicateAutoRemove704: Boolean
+        get() = prefs.getBoolean(KEY_V704DUPLICATEAUTOREMOVE704, false)
+        set(value) = prefs.edit().putBoolean(KEY_V704DUPLICATEAUTOREMOVE704, value).apply()
+
+    var v704durationAutoLimit704: Int
+        get() = prefs.getInt(KEY_V704DURATIONAUTOLIMIT704, 0)
+        set(value) = prefs.edit().putInt(KEY_V704DURATIONAUTOLIMIT704, value).apply()
+
+    var v704dynamicAutoRange704: Boolean
+        get() = prefs.getBoolean(KEY_V704DYNAMICAUTORANGE704, false)
+        set(value) = prefs.edit().putBoolean(KEY_V704DYNAMICAUTORANGE704, value).apply()
+
+    var v704echoAutoFeedback704: Boolean
+        get() = prefs.getBoolean(KEY_V704ECHOAUTOFEEDBACK704, false)
+        set(value) = prefs.edit().putBoolean(KEY_V704ECHOAUTOFEEDBACK704, value).apply()
+
+    var v704edgeAutoDetect704: Boolean
+        get() = prefs.getBoolean(KEY_V704EDGEAUTODETECT704, false)
+        set(value) = prefs.edit().putBoolean(KEY_V704EDGEAUTODETECT704, value).apply()
+
+    var v704editAutoSave704: Boolean
+        get() = prefs.getBoolean(KEY_V704EDITAUTOSAVE704, false)
+        set(value) = prefs.edit().putBoolean(KEY_V704EDITAUTOSAVE704, value).apply()
+
+    var v704effectAutoApply704: Boolean
+        get() = prefs.getBoolean(KEY_V704EFFECTAUTOAPPLY704, false)
+        set(value) = prefs.edit().putBoolean(KEY_V704EFFECTAUTOAPPLY704, value).apply()
+
+    var v704elementAutoFocus704: Boolean
+        get() = prefs.getBoolean(KEY_V704ELEMENTAUTOFOCUS704, false)
+        set(value) = prefs.edit().putBoolean(KEY_V704ELEMENTAUTOFOCUS704, value).apply()
+
+    var v704emitAutoEvent704: Boolean
+        get() = prefs.getBoolean(KEY_V704EMITAUTOEVENT704, false)
+        set(value) = prefs.edit().putBoolean(KEY_V704EMITAUTOEVENT704, value).apply()
+
+    var v704emptyAutoPlaceholder704: Boolean
+        get() = prefs.getBoolean(KEY_V704EMPTYAUTOPLACEHOLDER704, false)
+        set(value) = prefs.edit().putBoolean(KEY_V704EMPTYAUTOPLACEHOLDER704, value).apply()
+
+    var v704enableAutoFeature704: Boolean
+        get() = prefs.getBoolean(KEY_V704ENABLEAUTOFEATURE704, false)
+        set(value) = prefs.edit().putBoolean(KEY_V704ENABLEAUTOFEATURE704, value).apply()
+
+    var v705driverAutoDetect705: Boolean
+        get() = prefs.getBoolean(KEY_V705DRIVERAUTODETECT705, false)
+        set(value) = prefs.edit().putBoolean(KEY_V705DRIVERAUTODETECT705, value).apply()
+
+    var v705dropAutoShadow705: Boolean
+        get() = prefs.getBoolean(KEY_V705DROPAUTOSHADOW705, false)
+        set(value) = prefs.edit().putBoolean(KEY_V705DROPAUTOSHADOW705, value).apply()
+
+    var v705dryRunMode705: Boolean
+        get() = prefs.getBoolean(KEY_V705DRYRUNMODE705, false)
+        set(value) = prefs.edit().putBoolean(KEY_V705DRYRUNMODE705, value).apply()
+
+    var v705dumpAutoExport705: Boolean
+        get() = prefs.getBoolean(KEY_V705DUMPAUTOEXPORT705, false)
+        set(value) = prefs.edit().putBoolean(KEY_V705DUMPAUTOEXPORT705, value).apply()
+
+    var v705duplicateAutoRemove705: Boolean
+        get() = prefs.getBoolean(KEY_V705DUPLICATEAUTOREMOVE705, false)
+        set(value) = prefs.edit().putBoolean(KEY_V705DUPLICATEAUTOREMOVE705, value).apply()
+
+    var v705durationAutoLimit705: Int
+        get() = prefs.getInt(KEY_V705DURATIONAUTOLIMIT705, 0)
+        set(value) = prefs.edit().putInt(KEY_V705DURATIONAUTOLIMIT705, value).apply()
+
+    var v705dynamicAutoRange705: Boolean
+        get() = prefs.getBoolean(KEY_V705DYNAMICAUTORANGE705, false)
+        set(value) = prefs.edit().putBoolean(KEY_V705DYNAMICAUTORANGE705, value).apply()
+
+    var v705echoAutoFeedback705: Boolean
+        get() = prefs.getBoolean(KEY_V705ECHOAUTOFEEDBACK705, false)
+        set(value) = prefs.edit().putBoolean(KEY_V705ECHOAUTOFEEDBACK705, value).apply()
+
+    var v705edgeAutoDetect705: Boolean
+        get() = prefs.getBoolean(KEY_V705EDGEAUTODETECT705, false)
+        set(value) = prefs.edit().putBoolean(KEY_V705EDGEAUTODETECT705, value).apply()
+
+    var v705editAutoSave705: Boolean
+        get() = prefs.getBoolean(KEY_V705EDITAUTOSAVE705, false)
+        set(value) = prefs.edit().putBoolean(KEY_V705EDITAUTOSAVE705, value).apply()
+
+    var v705effectAutoApply705: Boolean
+        get() = prefs.getBoolean(KEY_V705EFFECTAUTOAPPLY705, false)
+        set(value) = prefs.edit().putBoolean(KEY_V705EFFECTAUTOAPPLY705, value).apply()
+
+    var v705elementAutoFocus705: Boolean
+        get() = prefs.getBoolean(KEY_V705ELEMENTAUTOFOCUS705, false)
+        set(value) = prefs.edit().putBoolean(KEY_V705ELEMENTAUTOFOCUS705, value).apply()
+
+    var v705emitAutoEvent705: Boolean
+        get() = prefs.getBoolean(KEY_V705EMITAUTOEVENT705, false)
+        set(value) = prefs.edit().putBoolean(KEY_V705EMITAUTOEVENT705, value).apply()
+
+    var v705emptyAutoPlaceholder705: Boolean
+        get() = prefs.getBoolean(KEY_V705EMPTYAUTOPLACEHOLDER705, false)
+        set(value) = prefs.edit().putBoolean(KEY_V705EMPTYAUTOPLACEHOLDER705, value).apply()
+
+    var v705enableAutoFeature705: Boolean
+        get() = prefs.getBoolean(KEY_V705ENABLEAUTOFEATURE705, false)
+        set(value) = prefs.edit().putBoolean(KEY_V705ENABLEAUTOFEATURE705, value).apply()
+
+    var v706driverAutoDetect706: Boolean
+        get() = prefs.getBoolean(KEY_V706DRIVERAUTODETECT706, false)
+        set(value) = prefs.edit().putBoolean(KEY_V706DRIVERAUTODETECT706, value).apply()
+
+    var v706dropAutoShadow706: Boolean
+        get() = prefs.getBoolean(KEY_V706DROPAUTOSHADOW706, false)
+        set(value) = prefs.edit().putBoolean(KEY_V706DROPAUTOSHADOW706, value).apply()
+
+    var v706dryRunMode706: Boolean
+        get() = prefs.getBoolean(KEY_V706DRYRUNMODE706, false)
+        set(value) = prefs.edit().putBoolean(KEY_V706DRYRUNMODE706, value).apply()
+
+    var v706dumpAutoExport706: Boolean
+        get() = prefs.getBoolean(KEY_V706DUMPAUTOEXPORT706, false)
+        set(value) = prefs.edit().putBoolean(KEY_V706DUMPAUTOEXPORT706, value).apply()
+
+    var v706duplicateAutoRemove706: Boolean
+        get() = prefs.getBoolean(KEY_V706DUPLICATEAUTOREMOVE706, false)
+        set(value) = prefs.edit().putBoolean(KEY_V706DUPLICATEAUTOREMOVE706, value).apply()
+
+    var v706durationAutoLimit706: Int
+        get() = prefs.getInt(KEY_V706DURATIONAUTOLIMIT706, 0)
+        set(value) = prefs.edit().putInt(KEY_V706DURATIONAUTOLIMIT706, value).apply()
+
+    var v706dynamicAutoRange706: Boolean
+        get() = prefs.getBoolean(KEY_V706DYNAMICAUTORANGE706, false)
+        set(value) = prefs.edit().putBoolean(KEY_V706DYNAMICAUTORANGE706, value).apply()
+
+    var v706echoAutoFeedback706: Boolean
+        get() = prefs.getBoolean(KEY_V706ECHOAUTOFEEDBACK706, false)
+        set(value) = prefs.edit().putBoolean(KEY_V706ECHOAUTOFEEDBACK706, value).apply()
+
+    var v706edgeAutoDetect706: Boolean
+        get() = prefs.getBoolean(KEY_V706EDGEAUTODETECT706, false)
+        set(value) = prefs.edit().putBoolean(KEY_V706EDGEAUTODETECT706, value).apply()
+
+    var v706editAutoSave706: Boolean
+        get() = prefs.getBoolean(KEY_V706EDITAUTOSAVE706, false)
+        set(value) = prefs.edit().putBoolean(KEY_V706EDITAUTOSAVE706, value).apply()
+
+    var v706effectAutoApply706: Boolean
+        get() = prefs.getBoolean(KEY_V706EFFECTAUTOAPPLY706, false)
+        set(value) = prefs.edit().putBoolean(KEY_V706EFFECTAUTOAPPLY706, value).apply()
+
+    var v706elementAutoFocus706: Boolean
+        get() = prefs.getBoolean(KEY_V706ELEMENTAUTOFOCUS706, false)
+        set(value) = prefs.edit().putBoolean(KEY_V706ELEMENTAUTOFOCUS706, value).apply()
+
+    var v706emitAutoEvent706: Boolean
+        get() = prefs.getBoolean(KEY_V706EMITAUTOEVENT706, false)
+        set(value) = prefs.edit().putBoolean(KEY_V706EMITAUTOEVENT706, value).apply()
+
+    var v706emptyAutoPlaceholder706: Boolean
+        get() = prefs.getBoolean(KEY_V706EMPTYAUTOPLACEHOLDER706, false)
+        set(value) = prefs.edit().putBoolean(KEY_V706EMPTYAUTOPLACEHOLDER706, value).apply()
+
+    var v706enableAutoFeature706: Boolean
+        get() = prefs.getBoolean(KEY_V706ENABLEAUTOFEATURE706, false)
+        set(value) = prefs.edit().putBoolean(KEY_V706ENABLEAUTOFEATURE706, value).apply()
+
+    var v707driverAutoDetect707: Boolean
+        get() = prefs.getBoolean(KEY_V707DRIVERAUTODETECT707, false)
+        set(value) = prefs.edit().putBoolean(KEY_V707DRIVERAUTODETECT707, value).apply()
+
+    var v707dropAutoShadow707: Boolean
+        get() = prefs.getBoolean(KEY_V707DROPAUTOSHADOW707, false)
+        set(value) = prefs.edit().putBoolean(KEY_V707DROPAUTOSHADOW707, value).apply()
+
+    var v707dryRunMode707: Boolean
+        get() = prefs.getBoolean(KEY_V707DRYRUNMODE707, false)
+        set(value) = prefs.edit().putBoolean(KEY_V707DRYRUNMODE707, value).apply()
+
+    var v707dumpAutoExport707: Boolean
+        get() = prefs.getBoolean(KEY_V707DUMPAUTOEXPORT707, false)
+        set(value) = prefs.edit().putBoolean(KEY_V707DUMPAUTOEXPORT707, value).apply()
+
+    var v707duplicateAutoRemove707: Boolean
+        get() = prefs.getBoolean(KEY_V707DUPLICATEAUTOREMOVE707, false)
+        set(value) = prefs.edit().putBoolean(KEY_V707DUPLICATEAUTOREMOVE707, value).apply()
+
+    var v707durationAutoLimit707: Int
+        get() = prefs.getInt(KEY_V707DURATIONAUTOLIMIT707, 0)
+        set(value) = prefs.edit().putInt(KEY_V707DURATIONAUTOLIMIT707, value).apply()
+
+    var v707dynamicAutoRange707: Boolean
+        get() = prefs.getBoolean(KEY_V707DYNAMICAUTORANGE707, false)
+        set(value) = prefs.edit().putBoolean(KEY_V707DYNAMICAUTORANGE707, value).apply()
+
+    var v707echoAutoFeedback707: Boolean
+        get() = prefs.getBoolean(KEY_V707ECHOAUTOFEEDBACK707, false)
+        set(value) = prefs.edit().putBoolean(KEY_V707ECHOAUTOFEEDBACK707, value).apply()
+
+    var v707edgeAutoDetect707: Boolean
+        get() = prefs.getBoolean(KEY_V707EDGEAUTODETECT707, false)
+        set(value) = prefs.edit().putBoolean(KEY_V707EDGEAUTODETECT707, value).apply()
+
+    var v707editAutoSave707: Boolean
+        get() = prefs.getBoolean(KEY_V707EDITAUTOSAVE707, false)
+        set(value) = prefs.edit().putBoolean(KEY_V707EDITAUTOSAVE707, value).apply()
+
+    var v707effectAutoApply707: Boolean
+        get() = prefs.getBoolean(KEY_V707EFFECTAUTOAPPLY707, false)
+        set(value) = prefs.edit().putBoolean(KEY_V707EFFECTAUTOAPPLY707, value).apply()
+
+    var v707elementAutoFocus707: Boolean
+        get() = prefs.getBoolean(KEY_V707ELEMENTAUTOFOCUS707, false)
+        set(value) = prefs.edit().putBoolean(KEY_V707ELEMENTAUTOFOCUS707, value).apply()
+
+    var v707emitAutoEvent707: Boolean
+        get() = prefs.getBoolean(KEY_V707EMITAUTOEVENT707, false)
+        set(value) = prefs.edit().putBoolean(KEY_V707EMITAUTOEVENT707, value).apply()
+
+    var v707emptyAutoPlaceholder707: Boolean
+        get() = prefs.getBoolean(KEY_V707EMPTYAUTOPLACEHOLDER707, false)
+        set(value) = prefs.edit().putBoolean(KEY_V707EMPTYAUTOPLACEHOLDER707, value).apply()
+
+    var v707enableAutoFeature707: Boolean
+        get() = prefs.getBoolean(KEY_V707ENABLEAUTOFEATURE707, false)
+        set(value) = prefs.edit().putBoolean(KEY_V707ENABLEAUTOFEATURE707, value).apply()
+
+    var v708driverAutoDetect708: Boolean
+        get() = prefs.getBoolean(KEY_V708DRIVERAUTODETECT708, false)
+        set(value) = prefs.edit().putBoolean(KEY_V708DRIVERAUTODETECT708, value).apply()
+
+    var v708dropAutoShadow708: Boolean
+        get() = prefs.getBoolean(KEY_V708DROPAUTOSHADOW708, false)
+        set(value) = prefs.edit().putBoolean(KEY_V708DROPAUTOSHADOW708, value).apply()
+
+    var v708dryRunMode708: Boolean
+        get() = prefs.getBoolean(KEY_V708DRYRUNMODE708, false)
+        set(value) = prefs.edit().putBoolean(KEY_V708DRYRUNMODE708, value).apply()
+
+    var v708dumpAutoExport708: Boolean
+        get() = prefs.getBoolean(KEY_V708DUMPAUTOEXPORT708, false)
+        set(value) = prefs.edit().putBoolean(KEY_V708DUMPAUTOEXPORT708, value).apply()
+
+    var v708duplicateAutoRemove708: Boolean
+        get() = prefs.getBoolean(KEY_V708DUPLICATEAUTOREMOVE708, false)
+        set(value) = prefs.edit().putBoolean(KEY_V708DUPLICATEAUTOREMOVE708, value).apply()
+
+    var v708durationAutoLimit708: Int
+        get() = prefs.getInt(KEY_V708DURATIONAUTOLIMIT708, 0)
+        set(value) = prefs.edit().putInt(KEY_V708DURATIONAUTOLIMIT708, value).apply()
+
+    var v708dynamicAutoRange708: Boolean
+        get() = prefs.getBoolean(KEY_V708DYNAMICAUTORANGE708, false)
+        set(value) = prefs.edit().putBoolean(KEY_V708DYNAMICAUTORANGE708, value).apply()
+
+    var v708echoAutoFeedback708: Boolean
+        get() = prefs.getBoolean(KEY_V708ECHOAUTOFEEDBACK708, false)
+        set(value) = prefs.edit().putBoolean(KEY_V708ECHOAUTOFEEDBACK708, value).apply()
+
+    var v708edgeAutoDetect708: Boolean
+        get() = prefs.getBoolean(KEY_V708EDGEAUTODETECT708, false)
+        set(value) = prefs.edit().putBoolean(KEY_V708EDGEAUTODETECT708, value).apply()
+
+    var v708editAutoSave708: Boolean
+        get() = prefs.getBoolean(KEY_V708EDITAUTOSAVE708, false)
+        set(value) = prefs.edit().putBoolean(KEY_V708EDITAUTOSAVE708, value).apply()
+
+    var v708effectAutoApply708: Boolean
+        get() = prefs.getBoolean(KEY_V708EFFECTAUTOAPPLY708, false)
+        set(value) = prefs.edit().putBoolean(KEY_V708EFFECTAUTOAPPLY708, value).apply()
+
+    var v708elementAutoFocus708: Boolean
+        get() = prefs.getBoolean(KEY_V708ELEMENTAUTOFOCUS708, false)
+        set(value) = prefs.edit().putBoolean(KEY_V708ELEMENTAUTOFOCUS708, value).apply()
+
+    var v708emitAutoEvent708: Boolean
+        get() = prefs.getBoolean(KEY_V708EMITAUTOEVENT708, false)
+        set(value) = prefs.edit().putBoolean(KEY_V708EMITAUTOEVENT708, value).apply()
+
+    var v708emptyAutoPlaceholder708: Boolean
+        get() = prefs.getBoolean(KEY_V708EMPTYAUTOPLACEHOLDER708, false)
+        set(value) = prefs.edit().putBoolean(KEY_V708EMPTYAUTOPLACEHOLDER708, value).apply()
+
+    var v708enableAutoFeature708: Boolean
+        get() = prefs.getBoolean(KEY_V708ENABLEAUTOFEATURE708, false)
+        set(value) = prefs.edit().putBoolean(KEY_V708ENABLEAUTOFEATURE708, value).apply()
+
+    var v709driverAutoDetect709: Boolean
+        get() = prefs.getBoolean(KEY_V709DRIVERAUTODETECT709, false)
+        set(value) = prefs.edit().putBoolean(KEY_V709DRIVERAUTODETECT709, value).apply()
+
+    var v709dropAutoShadow709: Boolean
+        get() = prefs.getBoolean(KEY_V709DROPAUTOSHADOW709, false)
+        set(value) = prefs.edit().putBoolean(KEY_V709DROPAUTOSHADOW709, value).apply()
+
+    var v709dryRunMode709: Boolean
+        get() = prefs.getBoolean(KEY_V709DRYRUNMODE709, false)
+        set(value) = prefs.edit().putBoolean(KEY_V709DRYRUNMODE709, value).apply()
+
+    var v709dumpAutoExport709: Boolean
+        get() = prefs.getBoolean(KEY_V709DUMPAUTOEXPORT709, false)
+        set(value) = prefs.edit().putBoolean(KEY_V709DUMPAUTOEXPORT709, value).apply()
+
+    var v709duplicateAutoRemove709: Boolean
+        get() = prefs.getBoolean(KEY_V709DUPLICATEAUTOREMOVE709, false)
+        set(value) = prefs.edit().putBoolean(KEY_V709DUPLICATEAUTOREMOVE709, value).apply()
+
+    var v709durationAutoLimit709: Int
+        get() = prefs.getInt(KEY_V709DURATIONAUTOLIMIT709, 0)
+        set(value) = prefs.edit().putInt(KEY_V709DURATIONAUTOLIMIT709, value).apply()
+
+    var v709dynamicAutoRange709: Boolean
+        get() = prefs.getBoolean(KEY_V709DYNAMICAUTORANGE709, false)
+        set(value) = prefs.edit().putBoolean(KEY_V709DYNAMICAUTORANGE709, value).apply()
+
+    var v709echoAutoFeedback709: Boolean
+        get() = prefs.getBoolean(KEY_V709ECHOAUTOFEEDBACK709, false)
+        set(value) = prefs.edit().putBoolean(KEY_V709ECHOAUTOFEEDBACK709, value).apply()
+
+    var v709edgeAutoDetect709: Boolean
+        get() = prefs.getBoolean(KEY_V709EDGEAUTODETECT709, false)
+        set(value) = prefs.edit().putBoolean(KEY_V709EDGEAUTODETECT709, value).apply()
+
+    var v709editAutoSave709: Boolean
+        get() = prefs.getBoolean(KEY_V709EDITAUTOSAVE709, false)
+        set(value) = prefs.edit().putBoolean(KEY_V709EDITAUTOSAVE709, value).apply()
+
+    var v709effectAutoApply709: Boolean
+        get() = prefs.getBoolean(KEY_V709EFFECTAUTOAPPLY709, false)
+        set(value) = prefs.edit().putBoolean(KEY_V709EFFECTAUTOAPPLY709, value).apply()
+
+    var v709elementAutoFocus709: Boolean
+        get() = prefs.getBoolean(KEY_V709ELEMENTAUTOFOCUS709, false)
+        set(value) = prefs.edit().putBoolean(KEY_V709ELEMENTAUTOFOCUS709, value).apply()
+
+    var v709emitAutoEvent709: Boolean
+        get() = prefs.getBoolean(KEY_V709EMITAUTOEVENT709, false)
+        set(value) = prefs.edit().putBoolean(KEY_V709EMITAUTOEVENT709, value).apply()
+
+    var v709emptyAutoPlaceholder709: Boolean
+        get() = prefs.getBoolean(KEY_V709EMPTYAUTOPLACEHOLDER709, false)
+        set(value) = prefs.edit().putBoolean(KEY_V709EMPTYAUTOPLACEHOLDER709, value).apply()
+
+    var v709enableAutoFeature709: Boolean
+        get() = prefs.getBoolean(KEY_V709ENABLEAUTOFEATURE709, false)
+        set(value) = prefs.edit().putBoolean(KEY_V709ENABLEAUTOFEATURE709, value).apply()
+
+    var v710driverAutoDetect710: Boolean
+        get() = prefs.getBoolean(KEY_V710DRIVERAUTODETECT710, false)
+        set(value) = prefs.edit().putBoolean(KEY_V710DRIVERAUTODETECT710, value).apply()
+
+    var v710dropAutoShadow710: Boolean
+        get() = prefs.getBoolean(KEY_V710DROPAUTOSHADOW710, false)
+        set(value) = prefs.edit().putBoolean(KEY_V710DROPAUTOSHADOW710, value).apply()
+
+    var v710dryRunMode710: Boolean
+        get() = prefs.getBoolean(KEY_V710DRYRUNMODE710, false)
+        set(value) = prefs.edit().putBoolean(KEY_V710DRYRUNMODE710, value).apply()
+
+    var v710dumpAutoExport710: Boolean
+        get() = prefs.getBoolean(KEY_V710DUMPAUTOEXPORT710, false)
+        set(value) = prefs.edit().putBoolean(KEY_V710DUMPAUTOEXPORT710, value).apply()
+
+    var v710duplicateAutoRemove710: Boolean
+        get() = prefs.getBoolean(KEY_V710DUPLICATEAUTOREMOVE710, false)
+        set(value) = prefs.edit().putBoolean(KEY_V710DUPLICATEAUTOREMOVE710, value).apply()
+
+    var v710durationAutoLimit710: Int
+        get() = prefs.getInt(KEY_V710DURATIONAUTOLIMIT710, 0)
+        set(value) = prefs.edit().putInt(KEY_V710DURATIONAUTOLIMIT710, value).apply()
+
+    var v710dynamicAutoRange710: Boolean
+        get() = prefs.getBoolean(KEY_V710DYNAMICAUTORANGE710, false)
+        set(value) = prefs.edit().putBoolean(KEY_V710DYNAMICAUTORANGE710, value).apply()
+
+    var v710echoAutoFeedback710: Boolean
+        get() = prefs.getBoolean(KEY_V710ECHOAUTOFEEDBACK710, false)
+        set(value) = prefs.edit().putBoolean(KEY_V710ECHOAUTOFEEDBACK710, value).apply()
+
+    var v710edgeAutoDetect710: Boolean
+        get() = prefs.getBoolean(KEY_V710EDGEAUTODETECT710, false)
+        set(value) = prefs.edit().putBoolean(KEY_V710EDGEAUTODETECT710, value).apply()
+
+    var v710editAutoSave710: Boolean
+        get() = prefs.getBoolean(KEY_V710EDITAUTOSAVE710, false)
+        set(value) = prefs.edit().putBoolean(KEY_V710EDITAUTOSAVE710, value).apply()
+
+    var v710effectAutoApply710: Boolean
+        get() = prefs.getBoolean(KEY_V710EFFECTAUTOAPPLY710, false)
+        set(value) = prefs.edit().putBoolean(KEY_V710EFFECTAUTOAPPLY710, value).apply()
+
+    var v710elementAutoFocus710: Boolean
+        get() = prefs.getBoolean(KEY_V710ELEMENTAUTOFOCUS710, false)
+        set(value) = prefs.edit().putBoolean(KEY_V710ELEMENTAUTOFOCUS710, value).apply()
+
+    var v710emitAutoEvent710: Boolean
+        get() = prefs.getBoolean(KEY_V710EMITAUTOEVENT710, false)
+        set(value) = prefs.edit().putBoolean(KEY_V710EMITAUTOEVENT710, value).apply()
+
+    var v710emptyAutoPlaceholder710: Boolean
+        get() = prefs.getBoolean(KEY_V710EMPTYAUTOPLACEHOLDER710, false)
+        set(value) = prefs.edit().putBoolean(KEY_V710EMPTYAUTOPLACEHOLDER710, value).apply()
+
+    var v710enableAutoFeature710: Boolean
+        get() = prefs.getBoolean(KEY_V710ENABLEAUTOFEATURE710, false)
+        set(value) = prefs.edit().putBoolean(KEY_V710ENABLEAUTOFEATURE710, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -61930,5 +62530,155 @@ class AppPrefs(context: Context) {
         const val KEY_V700DRAFTAUTOSAVE700 = "v700draftAutoSave700" // v700 Draft Auto Save700
         const val KEY_V700DRAGAUTOSCROLL700 = "v700dragAutoScroll700" // v700 Drag Auto Scroll700
         const val KEY_V700DRAWAUTOANTIALIAS700 = "v700drawAutoAntialias700" // v700 Draw Auto Antialias700
+        const val KEY_V701DRIVERAUTODETECT701 = "v701driverAutoDetect701" // v701 Driver Auto Detect701
+        const val KEY_V701DROPAUTOSHADOW701 = "v701dropAutoShadow701" // v701 Drop Auto Shadow701
+        const val KEY_V701DRYRUNMODE701 = "v701dryRunMode701" // v701 Dry Run Mode701
+        const val KEY_V701DUMPAUTOEXPORT701 = "v701dumpAutoExport701" // v701 Dump Auto Export701
+        const val KEY_V701DUPLICATEAUTOREMOVE701 = "v701duplicateAutoRemove701" // v701 Duplicate Auto Remove701
+        const val KEY_V701DURATIONAUTOLIMIT701 = "v701durationAutoLimit701" // v701 Duration Auto Limit701
+        const val KEY_V701DYNAMICAUTORANGE701 = "v701dynamicAutoRange701" // v701 Dynamic Auto Range701
+        const val KEY_V701ECHOAUTOFEEDBACK701 = "v701echoAutoFeedback701" // v701 Echo Auto Feedback701
+        const val KEY_V701EDGEAUTODETECT701 = "v701edgeAutoDetect701" // v701 Edge Auto Detect701
+        const val KEY_V701EDITAUTOSAVE701 = "v701editAutoSave701" // v701 Edit Auto Save701
+        const val KEY_V701EFFECTAUTOAPPLY701 = "v701effectAutoApply701" // v701 Effect Auto Apply701
+        const val KEY_V701ELEMENTAUTOFOCUS701 = "v701elementAutoFocus701" // v701 Element Auto Focus701
+        const val KEY_V701EMITAUTOEVENT701 = "v701emitAutoEvent701" // v701 Emit Auto Event701
+        const val KEY_V701EMPTYAUTOPLACEHOLDER701 = "v701emptyAutoPlaceholder701" // v701 Empty Auto Placeholder701
+        const val KEY_V701ENABLEAUTOFEATURE701 = "v701enableAutoFeature701" // v701 Enable Auto Feature701
+        const val KEY_V702DRIVERAUTODETECT702 = "v702driverAutoDetect702" // v702 Driver Auto Detect702
+        const val KEY_V702DROPAUTOSHADOW702 = "v702dropAutoShadow702" // v702 Drop Auto Shadow702
+        const val KEY_V702DRYRUNMODE702 = "v702dryRunMode702" // v702 Dry Run Mode702
+        const val KEY_V702DUMPAUTOEXPORT702 = "v702dumpAutoExport702" // v702 Dump Auto Export702
+        const val KEY_V702DUPLICATEAUTOREMOVE702 = "v702duplicateAutoRemove702" // v702 Duplicate Auto Remove702
+        const val KEY_V702DURATIONAUTOLIMIT702 = "v702durationAutoLimit702" // v702 Duration Auto Limit702
+        const val KEY_V702DYNAMICAUTORANGE702 = "v702dynamicAutoRange702" // v702 Dynamic Auto Range702
+        const val KEY_V702ECHOAUTOFEEDBACK702 = "v702echoAutoFeedback702" // v702 Echo Auto Feedback702
+        const val KEY_V702EDGEAUTODETECT702 = "v702edgeAutoDetect702" // v702 Edge Auto Detect702
+        const val KEY_V702EDITAUTOSAVE702 = "v702editAutoSave702" // v702 Edit Auto Save702
+        const val KEY_V702EFFECTAUTOAPPLY702 = "v702effectAutoApply702" // v702 Effect Auto Apply702
+        const val KEY_V702ELEMENTAUTOFOCUS702 = "v702elementAutoFocus702" // v702 Element Auto Focus702
+        const val KEY_V702EMITAUTOEVENT702 = "v702emitAutoEvent702" // v702 Emit Auto Event702
+        const val KEY_V702EMPTYAUTOPLACEHOLDER702 = "v702emptyAutoPlaceholder702" // v702 Empty Auto Placeholder702
+        const val KEY_V702ENABLEAUTOFEATURE702 = "v702enableAutoFeature702" // v702 Enable Auto Feature702
+        const val KEY_V703DRIVERAUTODETECT703 = "v703driverAutoDetect703" // v703 Driver Auto Detect703
+        const val KEY_V703DROPAUTOSHADOW703 = "v703dropAutoShadow703" // v703 Drop Auto Shadow703
+        const val KEY_V703DRYRUNMODE703 = "v703dryRunMode703" // v703 Dry Run Mode703
+        const val KEY_V703DUMPAUTOEXPORT703 = "v703dumpAutoExport703" // v703 Dump Auto Export703
+        const val KEY_V703DUPLICATEAUTOREMOVE703 = "v703duplicateAutoRemove703" // v703 Duplicate Auto Remove703
+        const val KEY_V703DURATIONAUTOLIMIT703 = "v703durationAutoLimit703" // v703 Duration Auto Limit703
+        const val KEY_V703DYNAMICAUTORANGE703 = "v703dynamicAutoRange703" // v703 Dynamic Auto Range703
+        const val KEY_V703ECHOAUTOFEEDBACK703 = "v703echoAutoFeedback703" // v703 Echo Auto Feedback703
+        const val KEY_V703EDGEAUTODETECT703 = "v703edgeAutoDetect703" // v703 Edge Auto Detect703
+        const val KEY_V703EDITAUTOSAVE703 = "v703editAutoSave703" // v703 Edit Auto Save703
+        const val KEY_V703EFFECTAUTOAPPLY703 = "v703effectAutoApply703" // v703 Effect Auto Apply703
+        const val KEY_V703ELEMENTAUTOFOCUS703 = "v703elementAutoFocus703" // v703 Element Auto Focus703
+        const val KEY_V703EMITAUTOEVENT703 = "v703emitAutoEvent703" // v703 Emit Auto Event703
+        const val KEY_V703EMPTYAUTOPLACEHOLDER703 = "v703emptyAutoPlaceholder703" // v703 Empty Auto Placeholder703
+        const val KEY_V703ENABLEAUTOFEATURE703 = "v703enableAutoFeature703" // v703 Enable Auto Feature703
+        const val KEY_V704DRIVERAUTODETECT704 = "v704driverAutoDetect704" // v704 Driver Auto Detect704
+        const val KEY_V704DROPAUTOSHADOW704 = "v704dropAutoShadow704" // v704 Drop Auto Shadow704
+        const val KEY_V704DRYRUNMODE704 = "v704dryRunMode704" // v704 Dry Run Mode704
+        const val KEY_V704DUMPAUTOEXPORT704 = "v704dumpAutoExport704" // v704 Dump Auto Export704
+        const val KEY_V704DUPLICATEAUTOREMOVE704 = "v704duplicateAutoRemove704" // v704 Duplicate Auto Remove704
+        const val KEY_V704DURATIONAUTOLIMIT704 = "v704durationAutoLimit704" // v704 Duration Auto Limit704
+        const val KEY_V704DYNAMICAUTORANGE704 = "v704dynamicAutoRange704" // v704 Dynamic Auto Range704
+        const val KEY_V704ECHOAUTOFEEDBACK704 = "v704echoAutoFeedback704" // v704 Echo Auto Feedback704
+        const val KEY_V704EDGEAUTODETECT704 = "v704edgeAutoDetect704" // v704 Edge Auto Detect704
+        const val KEY_V704EDITAUTOSAVE704 = "v704editAutoSave704" // v704 Edit Auto Save704
+        const val KEY_V704EFFECTAUTOAPPLY704 = "v704effectAutoApply704" // v704 Effect Auto Apply704
+        const val KEY_V704ELEMENTAUTOFOCUS704 = "v704elementAutoFocus704" // v704 Element Auto Focus704
+        const val KEY_V704EMITAUTOEVENT704 = "v704emitAutoEvent704" // v704 Emit Auto Event704
+        const val KEY_V704EMPTYAUTOPLACEHOLDER704 = "v704emptyAutoPlaceholder704" // v704 Empty Auto Placeholder704
+        const val KEY_V704ENABLEAUTOFEATURE704 = "v704enableAutoFeature704" // v704 Enable Auto Feature704
+        const val KEY_V705DRIVERAUTODETECT705 = "v705driverAutoDetect705" // v705 Driver Auto Detect705
+        const val KEY_V705DROPAUTOSHADOW705 = "v705dropAutoShadow705" // v705 Drop Auto Shadow705
+        const val KEY_V705DRYRUNMODE705 = "v705dryRunMode705" // v705 Dry Run Mode705
+        const val KEY_V705DUMPAUTOEXPORT705 = "v705dumpAutoExport705" // v705 Dump Auto Export705
+        const val KEY_V705DUPLICATEAUTOREMOVE705 = "v705duplicateAutoRemove705" // v705 Duplicate Auto Remove705
+        const val KEY_V705DURATIONAUTOLIMIT705 = "v705durationAutoLimit705" // v705 Duration Auto Limit705
+        const val KEY_V705DYNAMICAUTORANGE705 = "v705dynamicAutoRange705" // v705 Dynamic Auto Range705
+        const val KEY_V705ECHOAUTOFEEDBACK705 = "v705echoAutoFeedback705" // v705 Echo Auto Feedback705
+        const val KEY_V705EDGEAUTODETECT705 = "v705edgeAutoDetect705" // v705 Edge Auto Detect705
+        const val KEY_V705EDITAUTOSAVE705 = "v705editAutoSave705" // v705 Edit Auto Save705
+        const val KEY_V705EFFECTAUTOAPPLY705 = "v705effectAutoApply705" // v705 Effect Auto Apply705
+        const val KEY_V705ELEMENTAUTOFOCUS705 = "v705elementAutoFocus705" // v705 Element Auto Focus705
+        const val KEY_V705EMITAUTOEVENT705 = "v705emitAutoEvent705" // v705 Emit Auto Event705
+        const val KEY_V705EMPTYAUTOPLACEHOLDER705 = "v705emptyAutoPlaceholder705" // v705 Empty Auto Placeholder705
+        const val KEY_V705ENABLEAUTOFEATURE705 = "v705enableAutoFeature705" // v705 Enable Auto Feature705
+        const val KEY_V706DRIVERAUTODETECT706 = "v706driverAutoDetect706" // v706 Driver Auto Detect706
+        const val KEY_V706DROPAUTOSHADOW706 = "v706dropAutoShadow706" // v706 Drop Auto Shadow706
+        const val KEY_V706DRYRUNMODE706 = "v706dryRunMode706" // v706 Dry Run Mode706
+        const val KEY_V706DUMPAUTOEXPORT706 = "v706dumpAutoExport706" // v706 Dump Auto Export706
+        const val KEY_V706DUPLICATEAUTOREMOVE706 = "v706duplicateAutoRemove706" // v706 Duplicate Auto Remove706
+        const val KEY_V706DURATIONAUTOLIMIT706 = "v706durationAutoLimit706" // v706 Duration Auto Limit706
+        const val KEY_V706DYNAMICAUTORANGE706 = "v706dynamicAutoRange706" // v706 Dynamic Auto Range706
+        const val KEY_V706ECHOAUTOFEEDBACK706 = "v706echoAutoFeedback706" // v706 Echo Auto Feedback706
+        const val KEY_V706EDGEAUTODETECT706 = "v706edgeAutoDetect706" // v706 Edge Auto Detect706
+        const val KEY_V706EDITAUTOSAVE706 = "v706editAutoSave706" // v706 Edit Auto Save706
+        const val KEY_V706EFFECTAUTOAPPLY706 = "v706effectAutoApply706" // v706 Effect Auto Apply706
+        const val KEY_V706ELEMENTAUTOFOCUS706 = "v706elementAutoFocus706" // v706 Element Auto Focus706
+        const val KEY_V706EMITAUTOEVENT706 = "v706emitAutoEvent706" // v706 Emit Auto Event706
+        const val KEY_V706EMPTYAUTOPLACEHOLDER706 = "v706emptyAutoPlaceholder706" // v706 Empty Auto Placeholder706
+        const val KEY_V706ENABLEAUTOFEATURE706 = "v706enableAutoFeature706" // v706 Enable Auto Feature706
+        const val KEY_V707DRIVERAUTODETECT707 = "v707driverAutoDetect707" // v707 Driver Auto Detect707
+        const val KEY_V707DROPAUTOSHADOW707 = "v707dropAutoShadow707" // v707 Drop Auto Shadow707
+        const val KEY_V707DRYRUNMODE707 = "v707dryRunMode707" // v707 Dry Run Mode707
+        const val KEY_V707DUMPAUTOEXPORT707 = "v707dumpAutoExport707" // v707 Dump Auto Export707
+        const val KEY_V707DUPLICATEAUTOREMOVE707 = "v707duplicateAutoRemove707" // v707 Duplicate Auto Remove707
+        const val KEY_V707DURATIONAUTOLIMIT707 = "v707durationAutoLimit707" // v707 Duration Auto Limit707
+        const val KEY_V707DYNAMICAUTORANGE707 = "v707dynamicAutoRange707" // v707 Dynamic Auto Range707
+        const val KEY_V707ECHOAUTOFEEDBACK707 = "v707echoAutoFeedback707" // v707 Echo Auto Feedback707
+        const val KEY_V707EDGEAUTODETECT707 = "v707edgeAutoDetect707" // v707 Edge Auto Detect707
+        const val KEY_V707EDITAUTOSAVE707 = "v707editAutoSave707" // v707 Edit Auto Save707
+        const val KEY_V707EFFECTAUTOAPPLY707 = "v707effectAutoApply707" // v707 Effect Auto Apply707
+        const val KEY_V707ELEMENTAUTOFOCUS707 = "v707elementAutoFocus707" // v707 Element Auto Focus707
+        const val KEY_V707EMITAUTOEVENT707 = "v707emitAutoEvent707" // v707 Emit Auto Event707
+        const val KEY_V707EMPTYAUTOPLACEHOLDER707 = "v707emptyAutoPlaceholder707" // v707 Empty Auto Placeholder707
+        const val KEY_V707ENABLEAUTOFEATURE707 = "v707enableAutoFeature707" // v707 Enable Auto Feature707
+        const val KEY_V708DRIVERAUTODETECT708 = "v708driverAutoDetect708" // v708 Driver Auto Detect708
+        const val KEY_V708DROPAUTOSHADOW708 = "v708dropAutoShadow708" // v708 Drop Auto Shadow708
+        const val KEY_V708DRYRUNMODE708 = "v708dryRunMode708" // v708 Dry Run Mode708
+        const val KEY_V708DUMPAUTOEXPORT708 = "v708dumpAutoExport708" // v708 Dump Auto Export708
+        const val KEY_V708DUPLICATEAUTOREMOVE708 = "v708duplicateAutoRemove708" // v708 Duplicate Auto Remove708
+        const val KEY_V708DURATIONAUTOLIMIT708 = "v708durationAutoLimit708" // v708 Duration Auto Limit708
+        const val KEY_V708DYNAMICAUTORANGE708 = "v708dynamicAutoRange708" // v708 Dynamic Auto Range708
+        const val KEY_V708ECHOAUTOFEEDBACK708 = "v708echoAutoFeedback708" // v708 Echo Auto Feedback708
+        const val KEY_V708EDGEAUTODETECT708 = "v708edgeAutoDetect708" // v708 Edge Auto Detect708
+        const val KEY_V708EDITAUTOSAVE708 = "v708editAutoSave708" // v708 Edit Auto Save708
+        const val KEY_V708EFFECTAUTOAPPLY708 = "v708effectAutoApply708" // v708 Effect Auto Apply708
+        const val KEY_V708ELEMENTAUTOFOCUS708 = "v708elementAutoFocus708" // v708 Element Auto Focus708
+        const val KEY_V708EMITAUTOEVENT708 = "v708emitAutoEvent708" // v708 Emit Auto Event708
+        const val KEY_V708EMPTYAUTOPLACEHOLDER708 = "v708emptyAutoPlaceholder708" // v708 Empty Auto Placeholder708
+        const val KEY_V708ENABLEAUTOFEATURE708 = "v708enableAutoFeature708" // v708 Enable Auto Feature708
+        const val KEY_V709DRIVERAUTODETECT709 = "v709driverAutoDetect709" // v709 Driver Auto Detect709
+        const val KEY_V709DROPAUTOSHADOW709 = "v709dropAutoShadow709" // v709 Drop Auto Shadow709
+        const val KEY_V709DRYRUNMODE709 = "v709dryRunMode709" // v709 Dry Run Mode709
+        const val KEY_V709DUMPAUTOEXPORT709 = "v709dumpAutoExport709" // v709 Dump Auto Export709
+        const val KEY_V709DUPLICATEAUTOREMOVE709 = "v709duplicateAutoRemove709" // v709 Duplicate Auto Remove709
+        const val KEY_V709DURATIONAUTOLIMIT709 = "v709durationAutoLimit709" // v709 Duration Auto Limit709
+        const val KEY_V709DYNAMICAUTORANGE709 = "v709dynamicAutoRange709" // v709 Dynamic Auto Range709
+        const val KEY_V709ECHOAUTOFEEDBACK709 = "v709echoAutoFeedback709" // v709 Echo Auto Feedback709
+        const val KEY_V709EDGEAUTODETECT709 = "v709edgeAutoDetect709" // v709 Edge Auto Detect709
+        const val KEY_V709EDITAUTOSAVE709 = "v709editAutoSave709" // v709 Edit Auto Save709
+        const val KEY_V709EFFECTAUTOAPPLY709 = "v709effectAutoApply709" // v709 Effect Auto Apply709
+        const val KEY_V709ELEMENTAUTOFOCUS709 = "v709elementAutoFocus709" // v709 Element Auto Focus709
+        const val KEY_V709EMITAUTOEVENT709 = "v709emitAutoEvent709" // v709 Emit Auto Event709
+        const val KEY_V709EMPTYAUTOPLACEHOLDER709 = "v709emptyAutoPlaceholder709" // v709 Empty Auto Placeholder709
+        const val KEY_V709ENABLEAUTOFEATURE709 = "v709enableAutoFeature709" // v709 Enable Auto Feature709
+        const val KEY_V710DRIVERAUTODETECT710 = "v710driverAutoDetect710" // v710 Driver Auto Detect710
+        const val KEY_V710DROPAUTOSHADOW710 = "v710dropAutoShadow710" // v710 Drop Auto Shadow710
+        const val KEY_V710DRYRUNMODE710 = "v710dryRunMode710" // v710 Dry Run Mode710
+        const val KEY_V710DUMPAUTOEXPORT710 = "v710dumpAutoExport710" // v710 Dump Auto Export710
+        const val KEY_V710DUPLICATEAUTOREMOVE710 = "v710duplicateAutoRemove710" // v710 Duplicate Auto Remove710
+        const val KEY_V710DURATIONAUTOLIMIT710 = "v710durationAutoLimit710" // v710 Duration Auto Limit710
+        const val KEY_V710DYNAMICAUTORANGE710 = "v710dynamicAutoRange710" // v710 Dynamic Auto Range710
+        const val KEY_V710ECHOAUTOFEEDBACK710 = "v710echoAutoFeedback710" // v710 Echo Auto Feedback710
+        const val KEY_V710EDGEAUTODETECT710 = "v710edgeAutoDetect710" // v710 Edge Auto Detect710
+        const val KEY_V710EDITAUTOSAVE710 = "v710editAutoSave710" // v710 Edit Auto Save710
+        const val KEY_V710EFFECTAUTOAPPLY710 = "v710effectAutoApply710" // v710 Effect Auto Apply710
+        const val KEY_V710ELEMENTAUTOFOCUS710 = "v710elementAutoFocus710" // v710 Element Auto Focus710
+        const val KEY_V710EMITAUTOEVENT710 = "v710emitAutoEvent710" // v710 Emit Auto Event710
+        const val KEY_V710EMPTYAUTOPLACEHOLDER710 = "v710emptyAutoPlaceholder710" // v710 Empty Auto Placeholder710
+        const val KEY_V710ENABLEAUTOFEATURE710 = "v710enableAutoFeature710" // v710 Enable Auto Feature710
     }
 }
