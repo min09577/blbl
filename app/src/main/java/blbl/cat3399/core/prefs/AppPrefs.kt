@@ -46448,6 +46448,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V660CONDITIONAUTOEVAL660, false)
         set(value) = prefs.edit().putBoolean(KEY_V660CONDITIONAUTOEVAL660, value).apply()
 
+    var v661configAutoSave661: Boolean
+        get() = prefs.getBoolean(KEY_V661CONFIGAUTOSAVE661, false)
+        set(value) = prefs.edit().putBoolean(KEY_V661CONFIGAUTOSAVE661, value).apply()
+
+    var v661confirmAutoDialog661: Boolean
+        get() = prefs.getBoolean(KEY_V661CONFIRMAUTODIALOG661, false)
+        set(value) = prefs.edit().putBoolean(KEY_V661CONFIRMAUTODIALOG661, value).apply()
+
+    var v661consoleAutoOpen661: Boolean
+        get() = prefs.getBoolean(KEY_V661CONSOLEAUTOOPEN661, false)
+        set(value) = prefs.edit().putBoolean(KEY_V661CONSOLEAUTOOPEN661, value).apply()
+
+    var v661constraintAutoLayout661: Boolean
+        get() = prefs.getBoolean(KEY_V661CONSTRAINTAUTOLAYOUT661, false)
+        set(value) = prefs.edit().putBoolean(KEY_V661CONSTRAINTAUTOLAYOUT661, value).apply()
+
+    var v661contentAutoCache661: Boolean
+        get() = prefs.getBoolean(KEY_V661CONTENTAUTOCACHE661, false)
+        set(value) = prefs.edit().putBoolean(KEY_V661CONTENTAUTOCACHE661, value).apply()
+
+    var v661contextAutoMenu661: Boolean
+        get() = prefs.getBoolean(KEY_V661CONTEXTAUTOMENU661, false)
+        set(value) = prefs.edit().putBoolean(KEY_V661CONTEXTAUTOMENU661, value).apply()
+
+    var v661controlAutoHide661: Int
+        get() = prefs.getInt(KEY_V661CONTROLAUTOHIDE661, 0)
+        set(value) = prefs.edit().putInt(KEY_V661CONTROLAUTOHIDE661, value).apply()
+
+    var v661convertAutoFormat661: Boolean
+        get() = prefs.getBoolean(KEY_V661CONVERTAUTOFORMAT661, false)
+        set(value) = prefs.edit().putBoolean(KEY_V661CONVERTAUTOFORMAT661, value).apply()
+
+    var v661copyAutoClipboard661: Boolean
+        get() = prefs.getBoolean(KEY_V661COPYAUTOCLIPBOARD661, false)
+        set(value) = prefs.edit().putBoolean(KEY_V661COPYAUTOCLIPBOARD661, value).apply()
+
+    var v661coreAutoAffinity661: Int
+        get() = prefs.getInt(KEY_V661COREAUTOAFFINITY661, 0)
+        set(value) = prefs.edit().putInt(KEY_V661COREAUTOAFFINITY661, value).apply()
+
+    var v661countAutoIncrement661: Boolean
+        get() = prefs.getBoolean(KEY_V661COUNTAUTOINCREMENT661, false)
+        set(value) = prefs.edit().putBoolean(KEY_V661COUNTAUTOINCREMENT661, value).apply()
+
+    var v661coverAutoGenerate661: Boolean
+        get() = prefs.getBoolean(KEY_V661COVERAUTOGENERATE661, false)
+        set(value) = prefs.edit().putBoolean(KEY_V661COVERAUTOGENERATE661, value).apply()
+
+    var v661crashAutoReport661: Boolean
+        get() = prefs.getBoolean(KEY_V661CRASHAUTOREPORT661, false)
+        set(value) = prefs.edit().putBoolean(KEY_V661CRASHAUTOREPORT661, value).apply()
+
+    var v661createAutoBackup661: Boolean
+        get() = prefs.getBoolean(KEY_V661CREATEAUTOBACKUP661, false)
+        set(value) = prefs.edit().putBoolean(KEY_V661CREATEAUTOBACKUP661, value).apply()
+
+    var v661cropAutoRegion661: Boolean
+        get() = prefs.getBoolean(KEY_V661CROPAUTOREGION661, false)
+        set(value) = prefs.edit().putBoolean(KEY_V661CROPAUTOREGION661, value).apply()
+
+    var v662configAutoSave662: Boolean
+        get() = prefs.getBoolean(KEY_V662CONFIGAUTOSAVE662, false)
+        set(value) = prefs.edit().putBoolean(KEY_V662CONFIGAUTOSAVE662, value).apply()
+
+    var v662confirmAutoDialog662: Boolean
+        get() = prefs.getBoolean(KEY_V662CONFIRMAUTODIALOG662, false)
+        set(value) = prefs.edit().putBoolean(KEY_V662CONFIRMAUTODIALOG662, value).apply()
+
+    var v662consoleAutoOpen662: Boolean
+        get() = prefs.getBoolean(KEY_V662CONSOLEAUTOOPEN662, false)
+        set(value) = prefs.edit().putBoolean(KEY_V662CONSOLEAUTOOPEN662, value).apply()
+
+    var v662constraintAutoLayout662: Boolean
+        get() = prefs.getBoolean(KEY_V662CONSTRAINTAUTOLAYOUT662, false)
+        set(value) = prefs.edit().putBoolean(KEY_V662CONSTRAINTAUTOLAYOUT662, value).apply()
+
+    var v662contentAutoCache662: Boolean
+        get() = prefs.getBoolean(KEY_V662CONTENTAUTOCACHE662, false)
+        set(value) = prefs.edit().putBoolean(KEY_V662CONTENTAUTOCACHE662, value).apply()
+
+    var v662contextAutoMenu662: Boolean
+        get() = prefs.getBoolean(KEY_V662CONTEXTAUTOMENU662, false)
+        set(value) = prefs.edit().putBoolean(KEY_V662CONTEXTAUTOMENU662, value).apply()
+
+    var v662controlAutoHide662: Int
+        get() = prefs.getInt(KEY_V662CONTROLAUTOHIDE662, 0)
+        set(value) = prefs.edit().putInt(KEY_V662CONTROLAUTOHIDE662, value).apply()
+
+    var v662convertAutoFormat662: Boolean
+        get() = prefs.getBoolean(KEY_V662CONVERTAUTOFORMAT662, false)
+        set(value) = prefs.edit().putBoolean(KEY_V662CONVERTAUTOFORMAT662, value).apply()
+
+    var v662copyAutoClipboard662: Boolean
+        get() = prefs.getBoolean(KEY_V662COPYAUTOCLIPBOARD662, false)
+        set(value) = prefs.edit().putBoolean(KEY_V662COPYAUTOCLIPBOARD662, value).apply()
+
+    var v662coreAutoAffinity662: Int
+        get() = prefs.getInt(KEY_V662COREAUTOAFFINITY662, 0)
+        set(value) = prefs.edit().putInt(KEY_V662COREAUTOAFFINITY662, value).apply()
+
+    var v662countAutoIncrement662: Boolean
+        get() = prefs.getBoolean(KEY_V662COUNTAUTOINCREMENT662, false)
+        set(value) = prefs.edit().putBoolean(KEY_V662COUNTAUTOINCREMENT662, value).apply()
+
+    var v662coverAutoGenerate662: Boolean
+        get() = prefs.getBoolean(KEY_V662COVERAUTOGENERATE662, false)
+        set(value) = prefs.edit().putBoolean(KEY_V662COVERAUTOGENERATE662, value).apply()
+
+    var v662crashAutoReport662: Boolean
+        get() = prefs.getBoolean(KEY_V662CRASHAUTOREPORT662, false)
+        set(value) = prefs.edit().putBoolean(KEY_V662CRASHAUTOREPORT662, value).apply()
+
+    var v662createAutoBackup662: Boolean
+        get() = prefs.getBoolean(KEY_V662CREATEAUTOBACKUP662, false)
+        set(value) = prefs.edit().putBoolean(KEY_V662CREATEAUTOBACKUP662, value).apply()
+
+    var v662cropAutoRegion662: Boolean
+        get() = prefs.getBoolean(KEY_V662CROPAUTOREGION662, false)
+        set(value) = prefs.edit().putBoolean(KEY_V662CROPAUTOREGION662, value).apply()
+
+    var v663configAutoSave663: Boolean
+        get() = prefs.getBoolean(KEY_V663CONFIGAUTOSAVE663, false)
+        set(value) = prefs.edit().putBoolean(KEY_V663CONFIGAUTOSAVE663, value).apply()
+
+    var v663confirmAutoDialog663: Boolean
+        get() = prefs.getBoolean(KEY_V663CONFIRMAUTODIALOG663, false)
+        set(value) = prefs.edit().putBoolean(KEY_V663CONFIRMAUTODIALOG663, value).apply()
+
+    var v663consoleAutoOpen663: Boolean
+        get() = prefs.getBoolean(KEY_V663CONSOLEAUTOOPEN663, false)
+        set(value) = prefs.edit().putBoolean(KEY_V663CONSOLEAUTOOPEN663, value).apply()
+
+    var v663constraintAutoLayout663: Boolean
+        get() = prefs.getBoolean(KEY_V663CONSTRAINTAUTOLAYOUT663, false)
+        set(value) = prefs.edit().putBoolean(KEY_V663CONSTRAINTAUTOLAYOUT663, value).apply()
+
+    var v663contentAutoCache663: Boolean
+        get() = prefs.getBoolean(KEY_V663CONTENTAUTOCACHE663, false)
+        set(value) = prefs.edit().putBoolean(KEY_V663CONTENTAUTOCACHE663, value).apply()
+
+    var v663contextAutoMenu663: Boolean
+        get() = prefs.getBoolean(KEY_V663CONTEXTAUTOMENU663, false)
+        set(value) = prefs.edit().putBoolean(KEY_V663CONTEXTAUTOMENU663, value).apply()
+
+    var v663controlAutoHide663: Int
+        get() = prefs.getInt(KEY_V663CONTROLAUTOHIDE663, 0)
+        set(value) = prefs.edit().putInt(KEY_V663CONTROLAUTOHIDE663, value).apply()
+
+    var v663convertAutoFormat663: Boolean
+        get() = prefs.getBoolean(KEY_V663CONVERTAUTOFORMAT663, false)
+        set(value) = prefs.edit().putBoolean(KEY_V663CONVERTAUTOFORMAT663, value).apply()
+
+    var v663copyAutoClipboard663: Boolean
+        get() = prefs.getBoolean(KEY_V663COPYAUTOCLIPBOARD663, false)
+        set(value) = prefs.edit().putBoolean(KEY_V663COPYAUTOCLIPBOARD663, value).apply()
+
+    var v663coreAutoAffinity663: Int
+        get() = prefs.getInt(KEY_V663COREAUTOAFFINITY663, 0)
+        set(value) = prefs.edit().putInt(KEY_V663COREAUTOAFFINITY663, value).apply()
+
+    var v663countAutoIncrement663: Boolean
+        get() = prefs.getBoolean(KEY_V663COUNTAUTOINCREMENT663, false)
+        set(value) = prefs.edit().putBoolean(KEY_V663COUNTAUTOINCREMENT663, value).apply()
+
+    var v663coverAutoGenerate663: Boolean
+        get() = prefs.getBoolean(KEY_V663COVERAUTOGENERATE663, false)
+        set(value) = prefs.edit().putBoolean(KEY_V663COVERAUTOGENERATE663, value).apply()
+
+    var v663crashAutoReport663: Boolean
+        get() = prefs.getBoolean(KEY_V663CRASHAUTOREPORT663, false)
+        set(value) = prefs.edit().putBoolean(KEY_V663CRASHAUTOREPORT663, value).apply()
+
+    var v663createAutoBackup663: Boolean
+        get() = prefs.getBoolean(KEY_V663CREATEAUTOBACKUP663, false)
+        set(value) = prefs.edit().putBoolean(KEY_V663CREATEAUTOBACKUP663, value).apply()
+
+    var v663cropAutoRegion663: Boolean
+        get() = prefs.getBoolean(KEY_V663CROPAUTOREGION663, false)
+        set(value) = prefs.edit().putBoolean(KEY_V663CROPAUTOREGION663, value).apply()
+
+    var v664configAutoSave664: Boolean
+        get() = prefs.getBoolean(KEY_V664CONFIGAUTOSAVE664, false)
+        set(value) = prefs.edit().putBoolean(KEY_V664CONFIGAUTOSAVE664, value).apply()
+
+    var v664confirmAutoDialog664: Boolean
+        get() = prefs.getBoolean(KEY_V664CONFIRMAUTODIALOG664, false)
+        set(value) = prefs.edit().putBoolean(KEY_V664CONFIRMAUTODIALOG664, value).apply()
+
+    var v664consoleAutoOpen664: Boolean
+        get() = prefs.getBoolean(KEY_V664CONSOLEAUTOOPEN664, false)
+        set(value) = prefs.edit().putBoolean(KEY_V664CONSOLEAUTOOPEN664, value).apply()
+
+    var v664constraintAutoLayout664: Boolean
+        get() = prefs.getBoolean(KEY_V664CONSTRAINTAUTOLAYOUT664, false)
+        set(value) = prefs.edit().putBoolean(KEY_V664CONSTRAINTAUTOLAYOUT664, value).apply()
+
+    var v664contentAutoCache664: Boolean
+        get() = prefs.getBoolean(KEY_V664CONTENTAUTOCACHE664, false)
+        set(value) = prefs.edit().putBoolean(KEY_V664CONTENTAUTOCACHE664, value).apply()
+
+    var v664contextAutoMenu664: Boolean
+        get() = prefs.getBoolean(KEY_V664CONTEXTAUTOMENU664, false)
+        set(value) = prefs.edit().putBoolean(KEY_V664CONTEXTAUTOMENU664, value).apply()
+
+    var v664controlAutoHide664: Int
+        get() = prefs.getInt(KEY_V664CONTROLAUTOHIDE664, 0)
+        set(value) = prefs.edit().putInt(KEY_V664CONTROLAUTOHIDE664, value).apply()
+
+    var v664convertAutoFormat664: Boolean
+        get() = prefs.getBoolean(KEY_V664CONVERTAUTOFORMAT664, false)
+        set(value) = prefs.edit().putBoolean(KEY_V664CONVERTAUTOFORMAT664, value).apply()
+
+    var v664copyAutoClipboard664: Boolean
+        get() = prefs.getBoolean(KEY_V664COPYAUTOCLIPBOARD664, false)
+        set(value) = prefs.edit().putBoolean(KEY_V664COPYAUTOCLIPBOARD664, value).apply()
+
+    var v664coreAutoAffinity664: Int
+        get() = prefs.getInt(KEY_V664COREAUTOAFFINITY664, 0)
+        set(value) = prefs.edit().putInt(KEY_V664COREAUTOAFFINITY664, value).apply()
+
+    var v664countAutoIncrement664: Boolean
+        get() = prefs.getBoolean(KEY_V664COUNTAUTOINCREMENT664, false)
+        set(value) = prefs.edit().putBoolean(KEY_V664COUNTAUTOINCREMENT664, value).apply()
+
+    var v664coverAutoGenerate664: Boolean
+        get() = prefs.getBoolean(KEY_V664COVERAUTOGENERATE664, false)
+        set(value) = prefs.edit().putBoolean(KEY_V664COVERAUTOGENERATE664, value).apply()
+
+    var v664crashAutoReport664: Boolean
+        get() = prefs.getBoolean(KEY_V664CRASHAUTOREPORT664, false)
+        set(value) = prefs.edit().putBoolean(KEY_V664CRASHAUTOREPORT664, value).apply()
+
+    var v664createAutoBackup664: Boolean
+        get() = prefs.getBoolean(KEY_V664CREATEAUTOBACKUP664, false)
+        set(value) = prefs.edit().putBoolean(KEY_V664CREATEAUTOBACKUP664, value).apply()
+
+    var v664cropAutoRegion664: Boolean
+        get() = prefs.getBoolean(KEY_V664CROPAUTOREGION664, false)
+        set(value) = prefs.edit().putBoolean(KEY_V664CROPAUTOREGION664, value).apply()
+
+    var v665configAutoSave665: Boolean
+        get() = prefs.getBoolean(KEY_V665CONFIGAUTOSAVE665, false)
+        set(value) = prefs.edit().putBoolean(KEY_V665CONFIGAUTOSAVE665, value).apply()
+
+    var v665confirmAutoDialog665: Boolean
+        get() = prefs.getBoolean(KEY_V665CONFIRMAUTODIALOG665, false)
+        set(value) = prefs.edit().putBoolean(KEY_V665CONFIRMAUTODIALOG665, value).apply()
+
+    var v665consoleAutoOpen665: Boolean
+        get() = prefs.getBoolean(KEY_V665CONSOLEAUTOOPEN665, false)
+        set(value) = prefs.edit().putBoolean(KEY_V665CONSOLEAUTOOPEN665, value).apply()
+
+    var v665constraintAutoLayout665: Boolean
+        get() = prefs.getBoolean(KEY_V665CONSTRAINTAUTOLAYOUT665, false)
+        set(value) = prefs.edit().putBoolean(KEY_V665CONSTRAINTAUTOLAYOUT665, value).apply()
+
+    var v665contentAutoCache665: Boolean
+        get() = prefs.getBoolean(KEY_V665CONTENTAUTOCACHE665, false)
+        set(value) = prefs.edit().putBoolean(KEY_V665CONTENTAUTOCACHE665, value).apply()
+
+    var v665contextAutoMenu665: Boolean
+        get() = prefs.getBoolean(KEY_V665CONTEXTAUTOMENU665, false)
+        set(value) = prefs.edit().putBoolean(KEY_V665CONTEXTAUTOMENU665, value).apply()
+
+    var v665controlAutoHide665: Int
+        get() = prefs.getInt(KEY_V665CONTROLAUTOHIDE665, 0)
+        set(value) = prefs.edit().putInt(KEY_V665CONTROLAUTOHIDE665, value).apply()
+
+    var v665convertAutoFormat665: Boolean
+        get() = prefs.getBoolean(KEY_V665CONVERTAUTOFORMAT665, false)
+        set(value) = prefs.edit().putBoolean(KEY_V665CONVERTAUTOFORMAT665, value).apply()
+
+    var v665copyAutoClipboard665: Boolean
+        get() = prefs.getBoolean(KEY_V665COPYAUTOCLIPBOARD665, false)
+        set(value) = prefs.edit().putBoolean(KEY_V665COPYAUTOCLIPBOARD665, value).apply()
+
+    var v665coreAutoAffinity665: Int
+        get() = prefs.getInt(KEY_V665COREAUTOAFFINITY665, 0)
+        set(value) = prefs.edit().putInt(KEY_V665COREAUTOAFFINITY665, value).apply()
+
+    var v665countAutoIncrement665: Boolean
+        get() = prefs.getBoolean(KEY_V665COUNTAUTOINCREMENT665, false)
+        set(value) = prefs.edit().putBoolean(KEY_V665COUNTAUTOINCREMENT665, value).apply()
+
+    var v665coverAutoGenerate665: Boolean
+        get() = prefs.getBoolean(KEY_V665COVERAUTOGENERATE665, false)
+        set(value) = prefs.edit().putBoolean(KEY_V665COVERAUTOGENERATE665, value).apply()
+
+    var v665crashAutoReport665: Boolean
+        get() = prefs.getBoolean(KEY_V665CRASHAUTOREPORT665, false)
+        set(value) = prefs.edit().putBoolean(KEY_V665CRASHAUTOREPORT665, value).apply()
+
+    var v665createAutoBackup665: Boolean
+        get() = prefs.getBoolean(KEY_V665CREATEAUTOBACKUP665, false)
+        set(value) = prefs.edit().putBoolean(KEY_V665CREATEAUTOBACKUP665, value).apply()
+
+    var v665cropAutoRegion665: Boolean
+        get() = prefs.getBoolean(KEY_V665CROPAUTOREGION665, false)
+        set(value) = prefs.edit().putBoolean(KEY_V665CROPAUTOREGION665, value).apply()
+
+    var v666configAutoSave666: Boolean
+        get() = prefs.getBoolean(KEY_V666CONFIGAUTOSAVE666, false)
+        set(value) = prefs.edit().putBoolean(KEY_V666CONFIGAUTOSAVE666, value).apply()
+
+    var v666confirmAutoDialog666: Boolean
+        get() = prefs.getBoolean(KEY_V666CONFIRMAUTODIALOG666, false)
+        set(value) = prefs.edit().putBoolean(KEY_V666CONFIRMAUTODIALOG666, value).apply()
+
+    var v666consoleAutoOpen666: Boolean
+        get() = prefs.getBoolean(KEY_V666CONSOLEAUTOOPEN666, false)
+        set(value) = prefs.edit().putBoolean(KEY_V666CONSOLEAUTOOPEN666, value).apply()
+
+    var v666constraintAutoLayout666: Boolean
+        get() = prefs.getBoolean(KEY_V666CONSTRAINTAUTOLAYOUT666, false)
+        set(value) = prefs.edit().putBoolean(KEY_V666CONSTRAINTAUTOLAYOUT666, value).apply()
+
+    var v666contentAutoCache666: Boolean
+        get() = prefs.getBoolean(KEY_V666CONTENTAUTOCACHE666, false)
+        set(value) = prefs.edit().putBoolean(KEY_V666CONTENTAUTOCACHE666, value).apply()
+
+    var v666contextAutoMenu666: Boolean
+        get() = prefs.getBoolean(KEY_V666CONTEXTAUTOMENU666, false)
+        set(value) = prefs.edit().putBoolean(KEY_V666CONTEXTAUTOMENU666, value).apply()
+
+    var v666controlAutoHide666: Int
+        get() = prefs.getInt(KEY_V666CONTROLAUTOHIDE666, 0)
+        set(value) = prefs.edit().putInt(KEY_V666CONTROLAUTOHIDE666, value).apply()
+
+    var v666convertAutoFormat666: Boolean
+        get() = prefs.getBoolean(KEY_V666CONVERTAUTOFORMAT666, false)
+        set(value) = prefs.edit().putBoolean(KEY_V666CONVERTAUTOFORMAT666, value).apply()
+
+    var v666copyAutoClipboard666: Boolean
+        get() = prefs.getBoolean(KEY_V666COPYAUTOCLIPBOARD666, false)
+        set(value) = prefs.edit().putBoolean(KEY_V666COPYAUTOCLIPBOARD666, value).apply()
+
+    var v666coreAutoAffinity666: Int
+        get() = prefs.getInt(KEY_V666COREAUTOAFFINITY666, 0)
+        set(value) = prefs.edit().putInt(KEY_V666COREAUTOAFFINITY666, value).apply()
+
+    var v666countAutoIncrement666: Boolean
+        get() = prefs.getBoolean(KEY_V666COUNTAUTOINCREMENT666, false)
+        set(value) = prefs.edit().putBoolean(KEY_V666COUNTAUTOINCREMENT666, value).apply()
+
+    var v666coverAutoGenerate666: Boolean
+        get() = prefs.getBoolean(KEY_V666COVERAUTOGENERATE666, false)
+        set(value) = prefs.edit().putBoolean(KEY_V666COVERAUTOGENERATE666, value).apply()
+
+    var v666crashAutoReport666: Boolean
+        get() = prefs.getBoolean(KEY_V666CRASHAUTOREPORT666, false)
+        set(value) = prefs.edit().putBoolean(KEY_V666CRASHAUTOREPORT666, value).apply()
+
+    var v666createAutoBackup666: Boolean
+        get() = prefs.getBoolean(KEY_V666CREATEAUTOBACKUP666, false)
+        set(value) = prefs.edit().putBoolean(KEY_V666CREATEAUTOBACKUP666, value).apply()
+
+    var v666cropAutoRegion666: Boolean
+        get() = prefs.getBoolean(KEY_V666CROPAUTOREGION666, false)
+        set(value) = prefs.edit().putBoolean(KEY_V666CROPAUTOREGION666, value).apply()
+
+    var v667configAutoSave667: Boolean
+        get() = prefs.getBoolean(KEY_V667CONFIGAUTOSAVE667, false)
+        set(value) = prefs.edit().putBoolean(KEY_V667CONFIGAUTOSAVE667, value).apply()
+
+    var v667confirmAutoDialog667: Boolean
+        get() = prefs.getBoolean(KEY_V667CONFIRMAUTODIALOG667, false)
+        set(value) = prefs.edit().putBoolean(KEY_V667CONFIRMAUTODIALOG667, value).apply()
+
+    var v667consoleAutoOpen667: Boolean
+        get() = prefs.getBoolean(KEY_V667CONSOLEAUTOOPEN667, false)
+        set(value) = prefs.edit().putBoolean(KEY_V667CONSOLEAUTOOPEN667, value).apply()
+
+    var v667constraintAutoLayout667: Boolean
+        get() = prefs.getBoolean(KEY_V667CONSTRAINTAUTOLAYOUT667, false)
+        set(value) = prefs.edit().putBoolean(KEY_V667CONSTRAINTAUTOLAYOUT667, value).apply()
+
+    var v667contentAutoCache667: Boolean
+        get() = prefs.getBoolean(KEY_V667CONTENTAUTOCACHE667, false)
+        set(value) = prefs.edit().putBoolean(KEY_V667CONTENTAUTOCACHE667, value).apply()
+
+    var v667contextAutoMenu667: Boolean
+        get() = prefs.getBoolean(KEY_V667CONTEXTAUTOMENU667, false)
+        set(value) = prefs.edit().putBoolean(KEY_V667CONTEXTAUTOMENU667, value).apply()
+
+    var v667controlAutoHide667: Int
+        get() = prefs.getInt(KEY_V667CONTROLAUTOHIDE667, 0)
+        set(value) = prefs.edit().putInt(KEY_V667CONTROLAUTOHIDE667, value).apply()
+
+    var v667convertAutoFormat667: Boolean
+        get() = prefs.getBoolean(KEY_V667CONVERTAUTOFORMAT667, false)
+        set(value) = prefs.edit().putBoolean(KEY_V667CONVERTAUTOFORMAT667, value).apply()
+
+    var v667copyAutoClipboard667: Boolean
+        get() = prefs.getBoolean(KEY_V667COPYAUTOCLIPBOARD667, false)
+        set(value) = prefs.edit().putBoolean(KEY_V667COPYAUTOCLIPBOARD667, value).apply()
+
+    var v667coreAutoAffinity667: Int
+        get() = prefs.getInt(KEY_V667COREAUTOAFFINITY667, 0)
+        set(value) = prefs.edit().putInt(KEY_V667COREAUTOAFFINITY667, value).apply()
+
+    var v667countAutoIncrement667: Boolean
+        get() = prefs.getBoolean(KEY_V667COUNTAUTOINCREMENT667, false)
+        set(value) = prefs.edit().putBoolean(KEY_V667COUNTAUTOINCREMENT667, value).apply()
+
+    var v667coverAutoGenerate667: Boolean
+        get() = prefs.getBoolean(KEY_V667COVERAUTOGENERATE667, false)
+        set(value) = prefs.edit().putBoolean(KEY_V667COVERAUTOGENERATE667, value).apply()
+
+    var v667crashAutoReport667: Boolean
+        get() = prefs.getBoolean(KEY_V667CRASHAUTOREPORT667, false)
+        set(value) = prefs.edit().putBoolean(KEY_V667CRASHAUTOREPORT667, value).apply()
+
+    var v667createAutoBackup667: Boolean
+        get() = prefs.getBoolean(KEY_V667CREATEAUTOBACKUP667, false)
+        set(value) = prefs.edit().putBoolean(KEY_V667CREATEAUTOBACKUP667, value).apply()
+
+    var v667cropAutoRegion667: Boolean
+        get() = prefs.getBoolean(KEY_V667CROPAUTOREGION667, false)
+        set(value) = prefs.edit().putBoolean(KEY_V667CROPAUTOREGION667, value).apply()
+
+    var v668configAutoSave668: Boolean
+        get() = prefs.getBoolean(KEY_V668CONFIGAUTOSAVE668, false)
+        set(value) = prefs.edit().putBoolean(KEY_V668CONFIGAUTOSAVE668, value).apply()
+
+    var v668confirmAutoDialog668: Boolean
+        get() = prefs.getBoolean(KEY_V668CONFIRMAUTODIALOG668, false)
+        set(value) = prefs.edit().putBoolean(KEY_V668CONFIRMAUTODIALOG668, value).apply()
+
+    var v668consoleAutoOpen668: Boolean
+        get() = prefs.getBoolean(KEY_V668CONSOLEAUTOOPEN668, false)
+        set(value) = prefs.edit().putBoolean(KEY_V668CONSOLEAUTOOPEN668, value).apply()
+
+    var v668constraintAutoLayout668: Boolean
+        get() = prefs.getBoolean(KEY_V668CONSTRAINTAUTOLAYOUT668, false)
+        set(value) = prefs.edit().putBoolean(KEY_V668CONSTRAINTAUTOLAYOUT668, value).apply()
+
+    var v668contentAutoCache668: Boolean
+        get() = prefs.getBoolean(KEY_V668CONTENTAUTOCACHE668, false)
+        set(value) = prefs.edit().putBoolean(KEY_V668CONTENTAUTOCACHE668, value).apply()
+
+    var v668contextAutoMenu668: Boolean
+        get() = prefs.getBoolean(KEY_V668CONTEXTAUTOMENU668, false)
+        set(value) = prefs.edit().putBoolean(KEY_V668CONTEXTAUTOMENU668, value).apply()
+
+    var v668controlAutoHide668: Int
+        get() = prefs.getInt(KEY_V668CONTROLAUTOHIDE668, 0)
+        set(value) = prefs.edit().putInt(KEY_V668CONTROLAUTOHIDE668, value).apply()
+
+    var v668convertAutoFormat668: Boolean
+        get() = prefs.getBoolean(KEY_V668CONVERTAUTOFORMAT668, false)
+        set(value) = prefs.edit().putBoolean(KEY_V668CONVERTAUTOFORMAT668, value).apply()
+
+    var v668copyAutoClipboard668: Boolean
+        get() = prefs.getBoolean(KEY_V668COPYAUTOCLIPBOARD668, false)
+        set(value) = prefs.edit().putBoolean(KEY_V668COPYAUTOCLIPBOARD668, value).apply()
+
+    var v668coreAutoAffinity668: Int
+        get() = prefs.getInt(KEY_V668COREAUTOAFFINITY668, 0)
+        set(value) = prefs.edit().putInt(KEY_V668COREAUTOAFFINITY668, value).apply()
+
+    var v668countAutoIncrement668: Boolean
+        get() = prefs.getBoolean(KEY_V668COUNTAUTOINCREMENT668, false)
+        set(value) = prefs.edit().putBoolean(KEY_V668COUNTAUTOINCREMENT668, value).apply()
+
+    var v668coverAutoGenerate668: Boolean
+        get() = prefs.getBoolean(KEY_V668COVERAUTOGENERATE668, false)
+        set(value) = prefs.edit().putBoolean(KEY_V668COVERAUTOGENERATE668, value).apply()
+
+    var v668crashAutoReport668: Boolean
+        get() = prefs.getBoolean(KEY_V668CRASHAUTOREPORT668, false)
+        set(value) = prefs.edit().putBoolean(KEY_V668CRASHAUTOREPORT668, value).apply()
+
+    var v668createAutoBackup668: Boolean
+        get() = prefs.getBoolean(KEY_V668CREATEAUTOBACKUP668, false)
+        set(value) = prefs.edit().putBoolean(KEY_V668CREATEAUTOBACKUP668, value).apply()
+
+    var v668cropAutoRegion668: Boolean
+        get() = prefs.getBoolean(KEY_V668CROPAUTOREGION668, false)
+        set(value) = prefs.edit().putBoolean(KEY_V668CROPAUTOREGION668, value).apply()
+
+    var v669configAutoSave669: Boolean
+        get() = prefs.getBoolean(KEY_V669CONFIGAUTOSAVE669, false)
+        set(value) = prefs.edit().putBoolean(KEY_V669CONFIGAUTOSAVE669, value).apply()
+
+    var v669confirmAutoDialog669: Boolean
+        get() = prefs.getBoolean(KEY_V669CONFIRMAUTODIALOG669, false)
+        set(value) = prefs.edit().putBoolean(KEY_V669CONFIRMAUTODIALOG669, value).apply()
+
+    var v669consoleAutoOpen669: Boolean
+        get() = prefs.getBoolean(KEY_V669CONSOLEAUTOOPEN669, false)
+        set(value) = prefs.edit().putBoolean(KEY_V669CONSOLEAUTOOPEN669, value).apply()
+
+    var v669constraintAutoLayout669: Boolean
+        get() = prefs.getBoolean(KEY_V669CONSTRAINTAUTOLAYOUT669, false)
+        set(value) = prefs.edit().putBoolean(KEY_V669CONSTRAINTAUTOLAYOUT669, value).apply()
+
+    var v669contentAutoCache669: Boolean
+        get() = prefs.getBoolean(KEY_V669CONTENTAUTOCACHE669, false)
+        set(value) = prefs.edit().putBoolean(KEY_V669CONTENTAUTOCACHE669, value).apply()
+
+    var v669contextAutoMenu669: Boolean
+        get() = prefs.getBoolean(KEY_V669CONTEXTAUTOMENU669, false)
+        set(value) = prefs.edit().putBoolean(KEY_V669CONTEXTAUTOMENU669, value).apply()
+
+    var v669controlAutoHide669: Int
+        get() = prefs.getInt(KEY_V669CONTROLAUTOHIDE669, 0)
+        set(value) = prefs.edit().putInt(KEY_V669CONTROLAUTOHIDE669, value).apply()
+
+    var v669convertAutoFormat669: Boolean
+        get() = prefs.getBoolean(KEY_V669CONVERTAUTOFORMAT669, false)
+        set(value) = prefs.edit().putBoolean(KEY_V669CONVERTAUTOFORMAT669, value).apply()
+
+    var v669copyAutoClipboard669: Boolean
+        get() = prefs.getBoolean(KEY_V669COPYAUTOCLIPBOARD669, false)
+        set(value) = prefs.edit().putBoolean(KEY_V669COPYAUTOCLIPBOARD669, value).apply()
+
+    var v669coreAutoAffinity669: Int
+        get() = prefs.getInt(KEY_V669COREAUTOAFFINITY669, 0)
+        set(value) = prefs.edit().putInt(KEY_V669COREAUTOAFFINITY669, value).apply()
+
+    var v669countAutoIncrement669: Boolean
+        get() = prefs.getBoolean(KEY_V669COUNTAUTOINCREMENT669, false)
+        set(value) = prefs.edit().putBoolean(KEY_V669COUNTAUTOINCREMENT669, value).apply()
+
+    var v669coverAutoGenerate669: Boolean
+        get() = prefs.getBoolean(KEY_V669COVERAUTOGENERATE669, false)
+        set(value) = prefs.edit().putBoolean(KEY_V669COVERAUTOGENERATE669, value).apply()
+
+    var v669crashAutoReport669: Boolean
+        get() = prefs.getBoolean(KEY_V669CRASHAUTOREPORT669, false)
+        set(value) = prefs.edit().putBoolean(KEY_V669CRASHAUTOREPORT669, value).apply()
+
+    var v669createAutoBackup669: Boolean
+        get() = prefs.getBoolean(KEY_V669CREATEAUTOBACKUP669, false)
+        set(value) = prefs.edit().putBoolean(KEY_V669CREATEAUTOBACKUP669, value).apply()
+
+    var v669cropAutoRegion669: Boolean
+        get() = prefs.getBoolean(KEY_V669CROPAUTOREGION669, false)
+        set(value) = prefs.edit().putBoolean(KEY_V669CROPAUTOREGION669, value).apply()
+
+    var v670configAutoSave670: Boolean
+        get() = prefs.getBoolean(KEY_V670CONFIGAUTOSAVE670, false)
+        set(value) = prefs.edit().putBoolean(KEY_V670CONFIGAUTOSAVE670, value).apply()
+
+    var v670confirmAutoDialog670: Boolean
+        get() = prefs.getBoolean(KEY_V670CONFIRMAUTODIALOG670, false)
+        set(value) = prefs.edit().putBoolean(KEY_V670CONFIRMAUTODIALOG670, value).apply()
+
+    var v670consoleAutoOpen670: Boolean
+        get() = prefs.getBoolean(KEY_V670CONSOLEAUTOOPEN670, false)
+        set(value) = prefs.edit().putBoolean(KEY_V670CONSOLEAUTOOPEN670, value).apply()
+
+    var v670constraintAutoLayout670: Boolean
+        get() = prefs.getBoolean(KEY_V670CONSTRAINTAUTOLAYOUT670, false)
+        set(value) = prefs.edit().putBoolean(KEY_V670CONSTRAINTAUTOLAYOUT670, value).apply()
+
+    var v670contentAutoCache670: Boolean
+        get() = prefs.getBoolean(KEY_V670CONTENTAUTOCACHE670, false)
+        set(value) = prefs.edit().putBoolean(KEY_V670CONTENTAUTOCACHE670, value).apply()
+
+    var v670contextAutoMenu670: Boolean
+        get() = prefs.getBoolean(KEY_V670CONTEXTAUTOMENU670, false)
+        set(value) = prefs.edit().putBoolean(KEY_V670CONTEXTAUTOMENU670, value).apply()
+
+    var v670controlAutoHide670: Int
+        get() = prefs.getInt(KEY_V670CONTROLAUTOHIDE670, 0)
+        set(value) = prefs.edit().putInt(KEY_V670CONTROLAUTOHIDE670, value).apply()
+
+    var v670convertAutoFormat670: Boolean
+        get() = prefs.getBoolean(KEY_V670CONVERTAUTOFORMAT670, false)
+        set(value) = prefs.edit().putBoolean(KEY_V670CONVERTAUTOFORMAT670, value).apply()
+
+    var v670copyAutoClipboard670: Boolean
+        get() = prefs.getBoolean(KEY_V670COPYAUTOCLIPBOARD670, false)
+        set(value) = prefs.edit().putBoolean(KEY_V670COPYAUTOCLIPBOARD670, value).apply()
+
+    var v670coreAutoAffinity670: Int
+        get() = prefs.getInt(KEY_V670COREAUTOAFFINITY670, 0)
+        set(value) = prefs.edit().putInt(KEY_V670COREAUTOAFFINITY670, value).apply()
+
+    var v670countAutoIncrement670: Boolean
+        get() = prefs.getBoolean(KEY_V670COUNTAUTOINCREMENT670, false)
+        set(value) = prefs.edit().putBoolean(KEY_V670COUNTAUTOINCREMENT670, value).apply()
+
+    var v670coverAutoGenerate670: Boolean
+        get() = prefs.getBoolean(KEY_V670COVERAUTOGENERATE670, false)
+        set(value) = prefs.edit().putBoolean(KEY_V670COVERAUTOGENERATE670, value).apply()
+
+    var v670crashAutoReport670: Boolean
+        get() = prefs.getBoolean(KEY_V670CRASHAUTOREPORT670, false)
+        set(value) = prefs.edit().putBoolean(KEY_V670CRASHAUTOREPORT670, value).apply()
+
+    var v670createAutoBackup670: Boolean
+        get() = prefs.getBoolean(KEY_V670CREATEAUTOBACKUP670, false)
+        set(value) = prefs.edit().putBoolean(KEY_V670CREATEAUTOBACKUP670, value).apply()
+
+    var v670cropAutoRegion670: Boolean
+        get() = prefs.getBoolean(KEY_V670CROPAUTOREGION670, false)
+        set(value) = prefs.edit().putBoolean(KEY_V670CROPAUTOREGION670, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -58930,5 +59530,155 @@ class AppPrefs(context: Context) {
         const val KEY_V660COMPUTEAUTOCALC660 = "v660computeAutoCalc660" // v660 Compute Auto Calc660
         const val KEY_V660CONCATAUTOJOIN660 = "v660concatAutoJoin660" // v660 Concat Auto Join660
         const val KEY_V660CONDITIONAUTOEVAL660 = "v660conditionAutoEval660" // v660 Condition Auto Eval660
+        const val KEY_V661CONFIGAUTOSAVE661 = "v661configAutoSave661" // v661 Config Auto Save661
+        const val KEY_V661CONFIRMAUTODIALOG661 = "v661confirmAutoDialog661" // v661 Confirm Auto Dialog661
+        const val KEY_V661CONSOLEAUTOOPEN661 = "v661consoleAutoOpen661" // v661 Console Auto Open661
+        const val KEY_V661CONSTRAINTAUTOLAYOUT661 = "v661constraintAutoLayout661" // v661 Constraint Auto Layout661
+        const val KEY_V661CONTENTAUTOCACHE661 = "v661contentAutoCache661" // v661 Content Auto Cache661
+        const val KEY_V661CONTEXTAUTOMENU661 = "v661contextAutoMenu661" // v661 Context Auto Menu661
+        const val KEY_V661CONTROLAUTOHIDE661 = "v661controlAutoHide661" // v661 Control Auto Hide661
+        const val KEY_V661CONVERTAUTOFORMAT661 = "v661convertAutoFormat661" // v661 Convert Auto Format661
+        const val KEY_V661COPYAUTOCLIPBOARD661 = "v661copyAutoClipboard661" // v661 Copy Auto Clipboard661
+        const val KEY_V661COREAUTOAFFINITY661 = "v661coreAutoAffinity661" // v661 Core Auto Affinity661
+        const val KEY_V661COUNTAUTOINCREMENT661 = "v661countAutoIncrement661" // v661 Count Auto Increment661
+        const val KEY_V661COVERAUTOGENERATE661 = "v661coverAutoGenerate661" // v661 Cover Auto Generate661
+        const val KEY_V661CRASHAUTOREPORT661 = "v661crashAutoReport661" // v661 Crash Auto Report661
+        const val KEY_V661CREATEAUTOBACKUP661 = "v661createAutoBackup661" // v661 Create Auto Backup661
+        const val KEY_V661CROPAUTOREGION661 = "v661cropAutoRegion661" // v661 Crop Auto Region661
+        const val KEY_V662CONFIGAUTOSAVE662 = "v662configAutoSave662" // v662 Config Auto Save662
+        const val KEY_V662CONFIRMAUTODIALOG662 = "v662confirmAutoDialog662" // v662 Confirm Auto Dialog662
+        const val KEY_V662CONSOLEAUTOOPEN662 = "v662consoleAutoOpen662" // v662 Console Auto Open662
+        const val KEY_V662CONSTRAINTAUTOLAYOUT662 = "v662constraintAutoLayout662" // v662 Constraint Auto Layout662
+        const val KEY_V662CONTENTAUTOCACHE662 = "v662contentAutoCache662" // v662 Content Auto Cache662
+        const val KEY_V662CONTEXTAUTOMENU662 = "v662contextAutoMenu662" // v662 Context Auto Menu662
+        const val KEY_V662CONTROLAUTOHIDE662 = "v662controlAutoHide662" // v662 Control Auto Hide662
+        const val KEY_V662CONVERTAUTOFORMAT662 = "v662convertAutoFormat662" // v662 Convert Auto Format662
+        const val KEY_V662COPYAUTOCLIPBOARD662 = "v662copyAutoClipboard662" // v662 Copy Auto Clipboard662
+        const val KEY_V662COREAUTOAFFINITY662 = "v662coreAutoAffinity662" // v662 Core Auto Affinity662
+        const val KEY_V662COUNTAUTOINCREMENT662 = "v662countAutoIncrement662" // v662 Count Auto Increment662
+        const val KEY_V662COVERAUTOGENERATE662 = "v662coverAutoGenerate662" // v662 Cover Auto Generate662
+        const val KEY_V662CRASHAUTOREPORT662 = "v662crashAutoReport662" // v662 Crash Auto Report662
+        const val KEY_V662CREATEAUTOBACKUP662 = "v662createAutoBackup662" // v662 Create Auto Backup662
+        const val KEY_V662CROPAUTOREGION662 = "v662cropAutoRegion662" // v662 Crop Auto Region662
+        const val KEY_V663CONFIGAUTOSAVE663 = "v663configAutoSave663" // v663 Config Auto Save663
+        const val KEY_V663CONFIRMAUTODIALOG663 = "v663confirmAutoDialog663" // v663 Confirm Auto Dialog663
+        const val KEY_V663CONSOLEAUTOOPEN663 = "v663consoleAutoOpen663" // v663 Console Auto Open663
+        const val KEY_V663CONSTRAINTAUTOLAYOUT663 = "v663constraintAutoLayout663" // v663 Constraint Auto Layout663
+        const val KEY_V663CONTENTAUTOCACHE663 = "v663contentAutoCache663" // v663 Content Auto Cache663
+        const val KEY_V663CONTEXTAUTOMENU663 = "v663contextAutoMenu663" // v663 Context Auto Menu663
+        const val KEY_V663CONTROLAUTOHIDE663 = "v663controlAutoHide663" // v663 Control Auto Hide663
+        const val KEY_V663CONVERTAUTOFORMAT663 = "v663convertAutoFormat663" // v663 Convert Auto Format663
+        const val KEY_V663COPYAUTOCLIPBOARD663 = "v663copyAutoClipboard663" // v663 Copy Auto Clipboard663
+        const val KEY_V663COREAUTOAFFINITY663 = "v663coreAutoAffinity663" // v663 Core Auto Affinity663
+        const val KEY_V663COUNTAUTOINCREMENT663 = "v663countAutoIncrement663" // v663 Count Auto Increment663
+        const val KEY_V663COVERAUTOGENERATE663 = "v663coverAutoGenerate663" // v663 Cover Auto Generate663
+        const val KEY_V663CRASHAUTOREPORT663 = "v663crashAutoReport663" // v663 Crash Auto Report663
+        const val KEY_V663CREATEAUTOBACKUP663 = "v663createAutoBackup663" // v663 Create Auto Backup663
+        const val KEY_V663CROPAUTOREGION663 = "v663cropAutoRegion663" // v663 Crop Auto Region663
+        const val KEY_V664CONFIGAUTOSAVE664 = "v664configAutoSave664" // v664 Config Auto Save664
+        const val KEY_V664CONFIRMAUTODIALOG664 = "v664confirmAutoDialog664" // v664 Confirm Auto Dialog664
+        const val KEY_V664CONSOLEAUTOOPEN664 = "v664consoleAutoOpen664" // v664 Console Auto Open664
+        const val KEY_V664CONSTRAINTAUTOLAYOUT664 = "v664constraintAutoLayout664" // v664 Constraint Auto Layout664
+        const val KEY_V664CONTENTAUTOCACHE664 = "v664contentAutoCache664" // v664 Content Auto Cache664
+        const val KEY_V664CONTEXTAUTOMENU664 = "v664contextAutoMenu664" // v664 Context Auto Menu664
+        const val KEY_V664CONTROLAUTOHIDE664 = "v664controlAutoHide664" // v664 Control Auto Hide664
+        const val KEY_V664CONVERTAUTOFORMAT664 = "v664convertAutoFormat664" // v664 Convert Auto Format664
+        const val KEY_V664COPYAUTOCLIPBOARD664 = "v664copyAutoClipboard664" // v664 Copy Auto Clipboard664
+        const val KEY_V664COREAUTOAFFINITY664 = "v664coreAutoAffinity664" // v664 Core Auto Affinity664
+        const val KEY_V664COUNTAUTOINCREMENT664 = "v664countAutoIncrement664" // v664 Count Auto Increment664
+        const val KEY_V664COVERAUTOGENERATE664 = "v664coverAutoGenerate664" // v664 Cover Auto Generate664
+        const val KEY_V664CRASHAUTOREPORT664 = "v664crashAutoReport664" // v664 Crash Auto Report664
+        const val KEY_V664CREATEAUTOBACKUP664 = "v664createAutoBackup664" // v664 Create Auto Backup664
+        const val KEY_V664CROPAUTOREGION664 = "v664cropAutoRegion664" // v664 Crop Auto Region664
+        const val KEY_V665CONFIGAUTOSAVE665 = "v665configAutoSave665" // v665 Config Auto Save665
+        const val KEY_V665CONFIRMAUTODIALOG665 = "v665confirmAutoDialog665" // v665 Confirm Auto Dialog665
+        const val KEY_V665CONSOLEAUTOOPEN665 = "v665consoleAutoOpen665" // v665 Console Auto Open665
+        const val KEY_V665CONSTRAINTAUTOLAYOUT665 = "v665constraintAutoLayout665" // v665 Constraint Auto Layout665
+        const val KEY_V665CONTENTAUTOCACHE665 = "v665contentAutoCache665" // v665 Content Auto Cache665
+        const val KEY_V665CONTEXTAUTOMENU665 = "v665contextAutoMenu665" // v665 Context Auto Menu665
+        const val KEY_V665CONTROLAUTOHIDE665 = "v665controlAutoHide665" // v665 Control Auto Hide665
+        const val KEY_V665CONVERTAUTOFORMAT665 = "v665convertAutoFormat665" // v665 Convert Auto Format665
+        const val KEY_V665COPYAUTOCLIPBOARD665 = "v665copyAutoClipboard665" // v665 Copy Auto Clipboard665
+        const val KEY_V665COREAUTOAFFINITY665 = "v665coreAutoAffinity665" // v665 Core Auto Affinity665
+        const val KEY_V665COUNTAUTOINCREMENT665 = "v665countAutoIncrement665" // v665 Count Auto Increment665
+        const val KEY_V665COVERAUTOGENERATE665 = "v665coverAutoGenerate665" // v665 Cover Auto Generate665
+        const val KEY_V665CRASHAUTOREPORT665 = "v665crashAutoReport665" // v665 Crash Auto Report665
+        const val KEY_V665CREATEAUTOBACKUP665 = "v665createAutoBackup665" // v665 Create Auto Backup665
+        const val KEY_V665CROPAUTOREGION665 = "v665cropAutoRegion665" // v665 Crop Auto Region665
+        const val KEY_V666CONFIGAUTOSAVE666 = "v666configAutoSave666" // v666 Config Auto Save666
+        const val KEY_V666CONFIRMAUTODIALOG666 = "v666confirmAutoDialog666" // v666 Confirm Auto Dialog666
+        const val KEY_V666CONSOLEAUTOOPEN666 = "v666consoleAutoOpen666" // v666 Console Auto Open666
+        const val KEY_V666CONSTRAINTAUTOLAYOUT666 = "v666constraintAutoLayout666" // v666 Constraint Auto Layout666
+        const val KEY_V666CONTENTAUTOCACHE666 = "v666contentAutoCache666" // v666 Content Auto Cache666
+        const val KEY_V666CONTEXTAUTOMENU666 = "v666contextAutoMenu666" // v666 Context Auto Menu666
+        const val KEY_V666CONTROLAUTOHIDE666 = "v666controlAutoHide666" // v666 Control Auto Hide666
+        const val KEY_V666CONVERTAUTOFORMAT666 = "v666convertAutoFormat666" // v666 Convert Auto Format666
+        const val KEY_V666COPYAUTOCLIPBOARD666 = "v666copyAutoClipboard666" // v666 Copy Auto Clipboard666
+        const val KEY_V666COREAUTOAFFINITY666 = "v666coreAutoAffinity666" // v666 Core Auto Affinity666
+        const val KEY_V666COUNTAUTOINCREMENT666 = "v666countAutoIncrement666" // v666 Count Auto Increment666
+        const val KEY_V666COVERAUTOGENERATE666 = "v666coverAutoGenerate666" // v666 Cover Auto Generate666
+        const val KEY_V666CRASHAUTOREPORT666 = "v666crashAutoReport666" // v666 Crash Auto Report666
+        const val KEY_V666CREATEAUTOBACKUP666 = "v666createAutoBackup666" // v666 Create Auto Backup666
+        const val KEY_V666CROPAUTOREGION666 = "v666cropAutoRegion666" // v666 Crop Auto Region666
+        const val KEY_V667CONFIGAUTOSAVE667 = "v667configAutoSave667" // v667 Config Auto Save667
+        const val KEY_V667CONFIRMAUTODIALOG667 = "v667confirmAutoDialog667" // v667 Confirm Auto Dialog667
+        const val KEY_V667CONSOLEAUTOOPEN667 = "v667consoleAutoOpen667" // v667 Console Auto Open667
+        const val KEY_V667CONSTRAINTAUTOLAYOUT667 = "v667constraintAutoLayout667" // v667 Constraint Auto Layout667
+        const val KEY_V667CONTENTAUTOCACHE667 = "v667contentAutoCache667" // v667 Content Auto Cache667
+        const val KEY_V667CONTEXTAUTOMENU667 = "v667contextAutoMenu667" // v667 Context Auto Menu667
+        const val KEY_V667CONTROLAUTOHIDE667 = "v667controlAutoHide667" // v667 Control Auto Hide667
+        const val KEY_V667CONVERTAUTOFORMAT667 = "v667convertAutoFormat667" // v667 Convert Auto Format667
+        const val KEY_V667COPYAUTOCLIPBOARD667 = "v667copyAutoClipboard667" // v667 Copy Auto Clipboard667
+        const val KEY_V667COREAUTOAFFINITY667 = "v667coreAutoAffinity667" // v667 Core Auto Affinity667
+        const val KEY_V667COUNTAUTOINCREMENT667 = "v667countAutoIncrement667" // v667 Count Auto Increment667
+        const val KEY_V667COVERAUTOGENERATE667 = "v667coverAutoGenerate667" // v667 Cover Auto Generate667
+        const val KEY_V667CRASHAUTOREPORT667 = "v667crashAutoReport667" // v667 Crash Auto Report667
+        const val KEY_V667CREATEAUTOBACKUP667 = "v667createAutoBackup667" // v667 Create Auto Backup667
+        const val KEY_V667CROPAUTOREGION667 = "v667cropAutoRegion667" // v667 Crop Auto Region667
+        const val KEY_V668CONFIGAUTOSAVE668 = "v668configAutoSave668" // v668 Config Auto Save668
+        const val KEY_V668CONFIRMAUTODIALOG668 = "v668confirmAutoDialog668" // v668 Confirm Auto Dialog668
+        const val KEY_V668CONSOLEAUTOOPEN668 = "v668consoleAutoOpen668" // v668 Console Auto Open668
+        const val KEY_V668CONSTRAINTAUTOLAYOUT668 = "v668constraintAutoLayout668" // v668 Constraint Auto Layout668
+        const val KEY_V668CONTENTAUTOCACHE668 = "v668contentAutoCache668" // v668 Content Auto Cache668
+        const val KEY_V668CONTEXTAUTOMENU668 = "v668contextAutoMenu668" // v668 Context Auto Menu668
+        const val KEY_V668CONTROLAUTOHIDE668 = "v668controlAutoHide668" // v668 Control Auto Hide668
+        const val KEY_V668CONVERTAUTOFORMAT668 = "v668convertAutoFormat668" // v668 Convert Auto Format668
+        const val KEY_V668COPYAUTOCLIPBOARD668 = "v668copyAutoClipboard668" // v668 Copy Auto Clipboard668
+        const val KEY_V668COREAUTOAFFINITY668 = "v668coreAutoAffinity668" // v668 Core Auto Affinity668
+        const val KEY_V668COUNTAUTOINCREMENT668 = "v668countAutoIncrement668" // v668 Count Auto Increment668
+        const val KEY_V668COVERAUTOGENERATE668 = "v668coverAutoGenerate668" // v668 Cover Auto Generate668
+        const val KEY_V668CRASHAUTOREPORT668 = "v668crashAutoReport668" // v668 Crash Auto Report668
+        const val KEY_V668CREATEAUTOBACKUP668 = "v668createAutoBackup668" // v668 Create Auto Backup668
+        const val KEY_V668CROPAUTOREGION668 = "v668cropAutoRegion668" // v668 Crop Auto Region668
+        const val KEY_V669CONFIGAUTOSAVE669 = "v669configAutoSave669" // v669 Config Auto Save669
+        const val KEY_V669CONFIRMAUTODIALOG669 = "v669confirmAutoDialog669" // v669 Confirm Auto Dialog669
+        const val KEY_V669CONSOLEAUTOOPEN669 = "v669consoleAutoOpen669" // v669 Console Auto Open669
+        const val KEY_V669CONSTRAINTAUTOLAYOUT669 = "v669constraintAutoLayout669" // v669 Constraint Auto Layout669
+        const val KEY_V669CONTENTAUTOCACHE669 = "v669contentAutoCache669" // v669 Content Auto Cache669
+        const val KEY_V669CONTEXTAUTOMENU669 = "v669contextAutoMenu669" // v669 Context Auto Menu669
+        const val KEY_V669CONTROLAUTOHIDE669 = "v669controlAutoHide669" // v669 Control Auto Hide669
+        const val KEY_V669CONVERTAUTOFORMAT669 = "v669convertAutoFormat669" // v669 Convert Auto Format669
+        const val KEY_V669COPYAUTOCLIPBOARD669 = "v669copyAutoClipboard669" // v669 Copy Auto Clipboard669
+        const val KEY_V669COREAUTOAFFINITY669 = "v669coreAutoAffinity669" // v669 Core Auto Affinity669
+        const val KEY_V669COUNTAUTOINCREMENT669 = "v669countAutoIncrement669" // v669 Count Auto Increment669
+        const val KEY_V669COVERAUTOGENERATE669 = "v669coverAutoGenerate669" // v669 Cover Auto Generate669
+        const val KEY_V669CRASHAUTOREPORT669 = "v669crashAutoReport669" // v669 Crash Auto Report669
+        const val KEY_V669CREATEAUTOBACKUP669 = "v669createAutoBackup669" // v669 Create Auto Backup669
+        const val KEY_V669CROPAUTOREGION669 = "v669cropAutoRegion669" // v669 Crop Auto Region669
+        const val KEY_V670CONFIGAUTOSAVE670 = "v670configAutoSave670" // v670 Config Auto Save670
+        const val KEY_V670CONFIRMAUTODIALOG670 = "v670confirmAutoDialog670" // v670 Confirm Auto Dialog670
+        const val KEY_V670CONSOLEAUTOOPEN670 = "v670consoleAutoOpen670" // v670 Console Auto Open670
+        const val KEY_V670CONSTRAINTAUTOLAYOUT670 = "v670constraintAutoLayout670" // v670 Constraint Auto Layout670
+        const val KEY_V670CONTENTAUTOCACHE670 = "v670contentAutoCache670" // v670 Content Auto Cache670
+        const val KEY_V670CONTEXTAUTOMENU670 = "v670contextAutoMenu670" // v670 Context Auto Menu670
+        const val KEY_V670CONTROLAUTOHIDE670 = "v670controlAutoHide670" // v670 Control Auto Hide670
+        const val KEY_V670CONVERTAUTOFORMAT670 = "v670convertAutoFormat670" // v670 Convert Auto Format670
+        const val KEY_V670COPYAUTOCLIPBOARD670 = "v670copyAutoClipboard670" // v670 Copy Auto Clipboard670
+        const val KEY_V670COREAUTOAFFINITY670 = "v670coreAutoAffinity670" // v670 Core Auto Affinity670
+        const val KEY_V670COUNTAUTOINCREMENT670 = "v670countAutoIncrement670" // v670 Count Auto Increment670
+        const val KEY_V670COVERAUTOGENERATE670 = "v670coverAutoGenerate670" // v670 Cover Auto Generate670
+        const val KEY_V670CRASHAUTOREPORT670 = "v670crashAutoReport670" // v670 Crash Auto Report670
+        const val KEY_V670CREATEAUTOBACKUP670 = "v670createAutoBackup670" // v670 Create Auto Backup670
+        const val KEY_V670CROPAUTOREGION670 = "v670cropAutoRegion670" // v670 Crop Auto Region670
     }
 }

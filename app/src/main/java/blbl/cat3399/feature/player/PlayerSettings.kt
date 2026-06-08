@@ -96055,3 +96055,1213 @@ internal fun PlayerActivity.showV660ConditionAutoEval660Toggle() {
     AppToast.show(this, "Condition Auto Eval660: ${if (!current) "ON" else "OFF"}")
 }
 
+// v661: Config Auto Save661
+internal fun PlayerActivity.showV661ConfigAutoSave661Toggle() {
+    val current = BiliClient.prefs.v661configAutoSave661
+    BiliClient.prefs.v661configAutoSave661 = !current
+    AppToast.show(this, "Config Auto Save661: ${if (!current) "ON" else "OFF"}")
+}
+
+// v661: Confirm Auto Dialog661
+internal fun PlayerActivity.showV661ConfirmAutoDialog661Toggle() {
+    val current = BiliClient.prefs.v661confirmAutoDialog661
+    BiliClient.prefs.v661confirmAutoDialog661 = !current
+    AppToast.show(this, "Confirm Auto Dialog661: ${if (!current) "ON" else "OFF"}")
+}
+
+// v661: Console Auto Open661
+internal fun PlayerActivity.showV661ConsoleAutoOpen661Toggle() {
+    val current = BiliClient.prefs.v661consoleAutoOpen661
+    BiliClient.prefs.v661consoleAutoOpen661 = !current
+    AppToast.show(this, "Console Auto Open661: ${if (!current) "ON" else "OFF"}")
+}
+
+// v661: Constraint Auto Layout661
+internal fun PlayerActivity.showV661ConstraintAutoLayout661Toggle() {
+    val current = BiliClient.prefs.v661constraintAutoLayout661
+    BiliClient.prefs.v661constraintAutoLayout661 = !current
+    AppToast.show(this, "Constraint Auto Layout661: ${if (!current) "ON" else "OFF"}")
+}
+
+// v661: Content Auto Cache661
+internal fun PlayerActivity.showV661ContentAutoCache661Toggle() {
+    val current = BiliClient.prefs.v661contentAutoCache661
+    BiliClient.prefs.v661contentAutoCache661 = !current
+    AppToast.show(this, "Content Auto Cache661: ${if (!current) "ON" else "OFF"}")
+}
+
+// v661: Context Auto Menu661
+internal fun PlayerActivity.showV661ContextAutoMenu661Toggle() {
+    val current = BiliClient.prefs.v661contextAutoMenu661
+    BiliClient.prefs.v661contextAutoMenu661 = !current
+    AppToast.show(this, "Context Auto Menu661: ${if (!current) "ON" else "OFF"}")
+}
+
+// v661: Control Auto Hide661
+internal fun PlayerActivity.showV661ControlAutoHide661Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v661controlAutoHide661).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Control Auto Hide661",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v661controlAutoHide661 = value
+        AppToast.show(this, "Control Auto Hide661: $value")
+    }
+}
+
+// v661: Convert Auto Format661
+internal fun PlayerActivity.showV661ConvertAutoFormat661Toggle() {
+    val current = BiliClient.prefs.v661convertAutoFormat661
+    BiliClient.prefs.v661convertAutoFormat661 = !current
+    AppToast.show(this, "Convert Auto Format661: ${if (!current) "ON" else "OFF"}")
+}
+
+// v661: Copy Auto Clipboard661
+internal fun PlayerActivity.showV661CopyAutoClipboard661Toggle() {
+    val current = BiliClient.prefs.v661copyAutoClipboard661
+    BiliClient.prefs.v661copyAutoClipboard661 = !current
+    AppToast.show(this, "Copy Auto Clipboard661: ${if (!current) "ON" else "OFF"}")
+}
+
+// v661: Core Auto Affinity661
+internal fun PlayerActivity.showV661CoreAutoAffinity661Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v661coreAutoAffinity661).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Core Auto Affinity661",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v661coreAutoAffinity661 = value
+        AppToast.show(this, "Core Auto Affinity661: $value")
+    }
+}
+
+// v661: Count Auto Increment661
+internal fun PlayerActivity.showV661CountAutoIncrement661Toggle() {
+    val current = BiliClient.prefs.v661countAutoIncrement661
+    BiliClient.prefs.v661countAutoIncrement661 = !current
+    AppToast.show(this, "Count Auto Increment661: ${if (!current) "ON" else "OFF"}")
+}
+
+// v661: Cover Auto Generate661
+internal fun PlayerActivity.showV661CoverAutoGenerate661Toggle() {
+    val current = BiliClient.prefs.v661coverAutoGenerate661
+    BiliClient.prefs.v661coverAutoGenerate661 = !current
+    AppToast.show(this, "Cover Auto Generate661: ${if (!current) "ON" else "OFF"}")
+}
+
+// v661: Crash Auto Report661
+internal fun PlayerActivity.showV661CrashAutoReport661Toggle() {
+    val current = BiliClient.prefs.v661crashAutoReport661
+    BiliClient.prefs.v661crashAutoReport661 = !current
+    AppToast.show(this, "Crash Auto Report661: ${if (!current) "ON" else "OFF"}")
+}
+
+// v661: Create Auto Backup661
+internal fun PlayerActivity.showV661CreateAutoBackup661Toggle() {
+    val current = BiliClient.prefs.v661createAutoBackup661
+    BiliClient.prefs.v661createAutoBackup661 = !current
+    AppToast.show(this, "Create Auto Backup661: ${if (!current) "ON" else "OFF"}")
+}
+
+// v661: Crop Auto Region661
+internal fun PlayerActivity.showV661CropAutoRegion661Toggle() {
+    val current = BiliClient.prefs.v661cropAutoRegion661
+    BiliClient.prefs.v661cropAutoRegion661 = !current
+    AppToast.show(this, "Crop Auto Region661: ${if (!current) "ON" else "OFF"}")
+}
+
+// v662: Config Auto Save662
+internal fun PlayerActivity.showV662ConfigAutoSave662Toggle() {
+    val current = BiliClient.prefs.v662configAutoSave662
+    BiliClient.prefs.v662configAutoSave662 = !current
+    AppToast.show(this, "Config Auto Save662: ${if (!current) "ON" else "OFF"}")
+}
+
+// v662: Confirm Auto Dialog662
+internal fun PlayerActivity.showV662ConfirmAutoDialog662Toggle() {
+    val current = BiliClient.prefs.v662confirmAutoDialog662
+    BiliClient.prefs.v662confirmAutoDialog662 = !current
+    AppToast.show(this, "Confirm Auto Dialog662: ${if (!current) "ON" else "OFF"}")
+}
+
+// v662: Console Auto Open662
+internal fun PlayerActivity.showV662ConsoleAutoOpen662Toggle() {
+    val current = BiliClient.prefs.v662consoleAutoOpen662
+    BiliClient.prefs.v662consoleAutoOpen662 = !current
+    AppToast.show(this, "Console Auto Open662: ${if (!current) "ON" else "OFF"}")
+}
+
+// v662: Constraint Auto Layout662
+internal fun PlayerActivity.showV662ConstraintAutoLayout662Toggle() {
+    val current = BiliClient.prefs.v662constraintAutoLayout662
+    BiliClient.prefs.v662constraintAutoLayout662 = !current
+    AppToast.show(this, "Constraint Auto Layout662: ${if (!current) "ON" else "OFF"}")
+}
+
+// v662: Content Auto Cache662
+internal fun PlayerActivity.showV662ContentAutoCache662Toggle() {
+    val current = BiliClient.prefs.v662contentAutoCache662
+    BiliClient.prefs.v662contentAutoCache662 = !current
+    AppToast.show(this, "Content Auto Cache662: ${if (!current) "ON" else "OFF"}")
+}
+
+// v662: Context Auto Menu662
+internal fun PlayerActivity.showV662ContextAutoMenu662Toggle() {
+    val current = BiliClient.prefs.v662contextAutoMenu662
+    BiliClient.prefs.v662contextAutoMenu662 = !current
+    AppToast.show(this, "Context Auto Menu662: ${if (!current) "ON" else "OFF"}")
+}
+
+// v662: Control Auto Hide662
+internal fun PlayerActivity.showV662ControlAutoHide662Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v662controlAutoHide662).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Control Auto Hide662",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v662controlAutoHide662 = value
+        AppToast.show(this, "Control Auto Hide662: $value")
+    }
+}
+
+// v662: Convert Auto Format662
+internal fun PlayerActivity.showV662ConvertAutoFormat662Toggle() {
+    val current = BiliClient.prefs.v662convertAutoFormat662
+    BiliClient.prefs.v662convertAutoFormat662 = !current
+    AppToast.show(this, "Convert Auto Format662: ${if (!current) "ON" else "OFF"}")
+}
+
+// v662: Copy Auto Clipboard662
+internal fun PlayerActivity.showV662CopyAutoClipboard662Toggle() {
+    val current = BiliClient.prefs.v662copyAutoClipboard662
+    BiliClient.prefs.v662copyAutoClipboard662 = !current
+    AppToast.show(this, "Copy Auto Clipboard662: ${if (!current) "ON" else "OFF"}")
+}
+
+// v662: Core Auto Affinity662
+internal fun PlayerActivity.showV662CoreAutoAffinity662Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v662coreAutoAffinity662).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Core Auto Affinity662",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v662coreAutoAffinity662 = value
+        AppToast.show(this, "Core Auto Affinity662: $value")
+    }
+}
+
+// v662: Count Auto Increment662
+internal fun PlayerActivity.showV662CountAutoIncrement662Toggle() {
+    val current = BiliClient.prefs.v662countAutoIncrement662
+    BiliClient.prefs.v662countAutoIncrement662 = !current
+    AppToast.show(this, "Count Auto Increment662: ${if (!current) "ON" else "OFF"}")
+}
+
+// v662: Cover Auto Generate662
+internal fun PlayerActivity.showV662CoverAutoGenerate662Toggle() {
+    val current = BiliClient.prefs.v662coverAutoGenerate662
+    BiliClient.prefs.v662coverAutoGenerate662 = !current
+    AppToast.show(this, "Cover Auto Generate662: ${if (!current) "ON" else "OFF"}")
+}
+
+// v662: Crash Auto Report662
+internal fun PlayerActivity.showV662CrashAutoReport662Toggle() {
+    val current = BiliClient.prefs.v662crashAutoReport662
+    BiliClient.prefs.v662crashAutoReport662 = !current
+    AppToast.show(this, "Crash Auto Report662: ${if (!current) "ON" else "OFF"}")
+}
+
+// v662: Create Auto Backup662
+internal fun PlayerActivity.showV662CreateAutoBackup662Toggle() {
+    val current = BiliClient.prefs.v662createAutoBackup662
+    BiliClient.prefs.v662createAutoBackup662 = !current
+    AppToast.show(this, "Create Auto Backup662: ${if (!current) "ON" else "OFF"}")
+}
+
+// v662: Crop Auto Region662
+internal fun PlayerActivity.showV662CropAutoRegion662Toggle() {
+    val current = BiliClient.prefs.v662cropAutoRegion662
+    BiliClient.prefs.v662cropAutoRegion662 = !current
+    AppToast.show(this, "Crop Auto Region662: ${if (!current) "ON" else "OFF"}")
+}
+
+// v663: Config Auto Save663
+internal fun PlayerActivity.showV663ConfigAutoSave663Toggle() {
+    val current = BiliClient.prefs.v663configAutoSave663
+    BiliClient.prefs.v663configAutoSave663 = !current
+    AppToast.show(this, "Config Auto Save663: ${if (!current) "ON" else "OFF"}")
+}
+
+// v663: Confirm Auto Dialog663
+internal fun PlayerActivity.showV663ConfirmAutoDialog663Toggle() {
+    val current = BiliClient.prefs.v663confirmAutoDialog663
+    BiliClient.prefs.v663confirmAutoDialog663 = !current
+    AppToast.show(this, "Confirm Auto Dialog663: ${if (!current) "ON" else "OFF"}")
+}
+
+// v663: Console Auto Open663
+internal fun PlayerActivity.showV663ConsoleAutoOpen663Toggle() {
+    val current = BiliClient.prefs.v663consoleAutoOpen663
+    BiliClient.prefs.v663consoleAutoOpen663 = !current
+    AppToast.show(this, "Console Auto Open663: ${if (!current) "ON" else "OFF"}")
+}
+
+// v663: Constraint Auto Layout663
+internal fun PlayerActivity.showV663ConstraintAutoLayout663Toggle() {
+    val current = BiliClient.prefs.v663constraintAutoLayout663
+    BiliClient.prefs.v663constraintAutoLayout663 = !current
+    AppToast.show(this, "Constraint Auto Layout663: ${if (!current) "ON" else "OFF"}")
+}
+
+// v663: Content Auto Cache663
+internal fun PlayerActivity.showV663ContentAutoCache663Toggle() {
+    val current = BiliClient.prefs.v663contentAutoCache663
+    BiliClient.prefs.v663contentAutoCache663 = !current
+    AppToast.show(this, "Content Auto Cache663: ${if (!current) "ON" else "OFF"}")
+}
+
+// v663: Context Auto Menu663
+internal fun PlayerActivity.showV663ContextAutoMenu663Toggle() {
+    val current = BiliClient.prefs.v663contextAutoMenu663
+    BiliClient.prefs.v663contextAutoMenu663 = !current
+    AppToast.show(this, "Context Auto Menu663: ${if (!current) "ON" else "OFF"}")
+}
+
+// v663: Control Auto Hide663
+internal fun PlayerActivity.showV663ControlAutoHide663Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v663controlAutoHide663).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Control Auto Hide663",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v663controlAutoHide663 = value
+        AppToast.show(this, "Control Auto Hide663: $value")
+    }
+}
+
+// v663: Convert Auto Format663
+internal fun PlayerActivity.showV663ConvertAutoFormat663Toggle() {
+    val current = BiliClient.prefs.v663convertAutoFormat663
+    BiliClient.prefs.v663convertAutoFormat663 = !current
+    AppToast.show(this, "Convert Auto Format663: ${if (!current) "ON" else "OFF"}")
+}
+
+// v663: Copy Auto Clipboard663
+internal fun PlayerActivity.showV663CopyAutoClipboard663Toggle() {
+    val current = BiliClient.prefs.v663copyAutoClipboard663
+    BiliClient.prefs.v663copyAutoClipboard663 = !current
+    AppToast.show(this, "Copy Auto Clipboard663: ${if (!current) "ON" else "OFF"}")
+}
+
+// v663: Core Auto Affinity663
+internal fun PlayerActivity.showV663CoreAutoAffinity663Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v663coreAutoAffinity663).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Core Auto Affinity663",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v663coreAutoAffinity663 = value
+        AppToast.show(this, "Core Auto Affinity663: $value")
+    }
+}
+
+// v663: Count Auto Increment663
+internal fun PlayerActivity.showV663CountAutoIncrement663Toggle() {
+    val current = BiliClient.prefs.v663countAutoIncrement663
+    BiliClient.prefs.v663countAutoIncrement663 = !current
+    AppToast.show(this, "Count Auto Increment663: ${if (!current) "ON" else "OFF"}")
+}
+
+// v663: Cover Auto Generate663
+internal fun PlayerActivity.showV663CoverAutoGenerate663Toggle() {
+    val current = BiliClient.prefs.v663coverAutoGenerate663
+    BiliClient.prefs.v663coverAutoGenerate663 = !current
+    AppToast.show(this, "Cover Auto Generate663: ${if (!current) "ON" else "OFF"}")
+}
+
+// v663: Crash Auto Report663
+internal fun PlayerActivity.showV663CrashAutoReport663Toggle() {
+    val current = BiliClient.prefs.v663crashAutoReport663
+    BiliClient.prefs.v663crashAutoReport663 = !current
+    AppToast.show(this, "Crash Auto Report663: ${if (!current) "ON" else "OFF"}")
+}
+
+// v663: Create Auto Backup663
+internal fun PlayerActivity.showV663CreateAutoBackup663Toggle() {
+    val current = BiliClient.prefs.v663createAutoBackup663
+    BiliClient.prefs.v663createAutoBackup663 = !current
+    AppToast.show(this, "Create Auto Backup663: ${if (!current) "ON" else "OFF"}")
+}
+
+// v663: Crop Auto Region663
+internal fun PlayerActivity.showV663CropAutoRegion663Toggle() {
+    val current = BiliClient.prefs.v663cropAutoRegion663
+    BiliClient.prefs.v663cropAutoRegion663 = !current
+    AppToast.show(this, "Crop Auto Region663: ${if (!current) "ON" else "OFF"}")
+}
+
+// v664: Config Auto Save664
+internal fun PlayerActivity.showV664ConfigAutoSave664Toggle() {
+    val current = BiliClient.prefs.v664configAutoSave664
+    BiliClient.prefs.v664configAutoSave664 = !current
+    AppToast.show(this, "Config Auto Save664: ${if (!current) "ON" else "OFF"}")
+}
+
+// v664: Confirm Auto Dialog664
+internal fun PlayerActivity.showV664ConfirmAutoDialog664Toggle() {
+    val current = BiliClient.prefs.v664confirmAutoDialog664
+    BiliClient.prefs.v664confirmAutoDialog664 = !current
+    AppToast.show(this, "Confirm Auto Dialog664: ${if (!current) "ON" else "OFF"}")
+}
+
+// v664: Console Auto Open664
+internal fun PlayerActivity.showV664ConsoleAutoOpen664Toggle() {
+    val current = BiliClient.prefs.v664consoleAutoOpen664
+    BiliClient.prefs.v664consoleAutoOpen664 = !current
+    AppToast.show(this, "Console Auto Open664: ${if (!current) "ON" else "OFF"}")
+}
+
+// v664: Constraint Auto Layout664
+internal fun PlayerActivity.showV664ConstraintAutoLayout664Toggle() {
+    val current = BiliClient.prefs.v664constraintAutoLayout664
+    BiliClient.prefs.v664constraintAutoLayout664 = !current
+    AppToast.show(this, "Constraint Auto Layout664: ${if (!current) "ON" else "OFF"}")
+}
+
+// v664: Content Auto Cache664
+internal fun PlayerActivity.showV664ContentAutoCache664Toggle() {
+    val current = BiliClient.prefs.v664contentAutoCache664
+    BiliClient.prefs.v664contentAutoCache664 = !current
+    AppToast.show(this, "Content Auto Cache664: ${if (!current) "ON" else "OFF"}")
+}
+
+// v664: Context Auto Menu664
+internal fun PlayerActivity.showV664ContextAutoMenu664Toggle() {
+    val current = BiliClient.prefs.v664contextAutoMenu664
+    BiliClient.prefs.v664contextAutoMenu664 = !current
+    AppToast.show(this, "Context Auto Menu664: ${if (!current) "ON" else "OFF"}")
+}
+
+// v664: Control Auto Hide664
+internal fun PlayerActivity.showV664ControlAutoHide664Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v664controlAutoHide664).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Control Auto Hide664",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v664controlAutoHide664 = value
+        AppToast.show(this, "Control Auto Hide664: $value")
+    }
+}
+
+// v664: Convert Auto Format664
+internal fun PlayerActivity.showV664ConvertAutoFormat664Toggle() {
+    val current = BiliClient.prefs.v664convertAutoFormat664
+    BiliClient.prefs.v664convertAutoFormat664 = !current
+    AppToast.show(this, "Convert Auto Format664: ${if (!current) "ON" else "OFF"}")
+}
+
+// v664: Copy Auto Clipboard664
+internal fun PlayerActivity.showV664CopyAutoClipboard664Toggle() {
+    val current = BiliClient.prefs.v664copyAutoClipboard664
+    BiliClient.prefs.v664copyAutoClipboard664 = !current
+    AppToast.show(this, "Copy Auto Clipboard664: ${if (!current) "ON" else "OFF"}")
+}
+
+// v664: Core Auto Affinity664
+internal fun PlayerActivity.showV664CoreAutoAffinity664Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v664coreAutoAffinity664).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Core Auto Affinity664",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v664coreAutoAffinity664 = value
+        AppToast.show(this, "Core Auto Affinity664: $value")
+    }
+}
+
+// v664: Count Auto Increment664
+internal fun PlayerActivity.showV664CountAutoIncrement664Toggle() {
+    val current = BiliClient.prefs.v664countAutoIncrement664
+    BiliClient.prefs.v664countAutoIncrement664 = !current
+    AppToast.show(this, "Count Auto Increment664: ${if (!current) "ON" else "OFF"}")
+}
+
+// v664: Cover Auto Generate664
+internal fun PlayerActivity.showV664CoverAutoGenerate664Toggle() {
+    val current = BiliClient.prefs.v664coverAutoGenerate664
+    BiliClient.prefs.v664coverAutoGenerate664 = !current
+    AppToast.show(this, "Cover Auto Generate664: ${if (!current) "ON" else "OFF"}")
+}
+
+// v664: Crash Auto Report664
+internal fun PlayerActivity.showV664CrashAutoReport664Toggle() {
+    val current = BiliClient.prefs.v664crashAutoReport664
+    BiliClient.prefs.v664crashAutoReport664 = !current
+    AppToast.show(this, "Crash Auto Report664: ${if (!current) "ON" else "OFF"}")
+}
+
+// v664: Create Auto Backup664
+internal fun PlayerActivity.showV664CreateAutoBackup664Toggle() {
+    val current = BiliClient.prefs.v664createAutoBackup664
+    BiliClient.prefs.v664createAutoBackup664 = !current
+    AppToast.show(this, "Create Auto Backup664: ${if (!current) "ON" else "OFF"}")
+}
+
+// v664: Crop Auto Region664
+internal fun PlayerActivity.showV664CropAutoRegion664Toggle() {
+    val current = BiliClient.prefs.v664cropAutoRegion664
+    BiliClient.prefs.v664cropAutoRegion664 = !current
+    AppToast.show(this, "Crop Auto Region664: ${if (!current) "ON" else "OFF"}")
+}
+
+// v665: Config Auto Save665
+internal fun PlayerActivity.showV665ConfigAutoSave665Toggle() {
+    val current = BiliClient.prefs.v665configAutoSave665
+    BiliClient.prefs.v665configAutoSave665 = !current
+    AppToast.show(this, "Config Auto Save665: ${if (!current) "ON" else "OFF"}")
+}
+
+// v665: Confirm Auto Dialog665
+internal fun PlayerActivity.showV665ConfirmAutoDialog665Toggle() {
+    val current = BiliClient.prefs.v665confirmAutoDialog665
+    BiliClient.prefs.v665confirmAutoDialog665 = !current
+    AppToast.show(this, "Confirm Auto Dialog665: ${if (!current) "ON" else "OFF"}")
+}
+
+// v665: Console Auto Open665
+internal fun PlayerActivity.showV665ConsoleAutoOpen665Toggle() {
+    val current = BiliClient.prefs.v665consoleAutoOpen665
+    BiliClient.prefs.v665consoleAutoOpen665 = !current
+    AppToast.show(this, "Console Auto Open665: ${if (!current) "ON" else "OFF"}")
+}
+
+// v665: Constraint Auto Layout665
+internal fun PlayerActivity.showV665ConstraintAutoLayout665Toggle() {
+    val current = BiliClient.prefs.v665constraintAutoLayout665
+    BiliClient.prefs.v665constraintAutoLayout665 = !current
+    AppToast.show(this, "Constraint Auto Layout665: ${if (!current) "ON" else "OFF"}")
+}
+
+// v665: Content Auto Cache665
+internal fun PlayerActivity.showV665ContentAutoCache665Toggle() {
+    val current = BiliClient.prefs.v665contentAutoCache665
+    BiliClient.prefs.v665contentAutoCache665 = !current
+    AppToast.show(this, "Content Auto Cache665: ${if (!current) "ON" else "OFF"}")
+}
+
+// v665: Context Auto Menu665
+internal fun PlayerActivity.showV665ContextAutoMenu665Toggle() {
+    val current = BiliClient.prefs.v665contextAutoMenu665
+    BiliClient.prefs.v665contextAutoMenu665 = !current
+    AppToast.show(this, "Context Auto Menu665: ${if (!current) "ON" else "OFF"}")
+}
+
+// v665: Control Auto Hide665
+internal fun PlayerActivity.showV665ControlAutoHide665Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v665controlAutoHide665).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Control Auto Hide665",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v665controlAutoHide665 = value
+        AppToast.show(this, "Control Auto Hide665: $value")
+    }
+}
+
+// v665: Convert Auto Format665
+internal fun PlayerActivity.showV665ConvertAutoFormat665Toggle() {
+    val current = BiliClient.prefs.v665convertAutoFormat665
+    BiliClient.prefs.v665convertAutoFormat665 = !current
+    AppToast.show(this, "Convert Auto Format665: ${if (!current) "ON" else "OFF"}")
+}
+
+// v665: Copy Auto Clipboard665
+internal fun PlayerActivity.showV665CopyAutoClipboard665Toggle() {
+    val current = BiliClient.prefs.v665copyAutoClipboard665
+    BiliClient.prefs.v665copyAutoClipboard665 = !current
+    AppToast.show(this, "Copy Auto Clipboard665: ${if (!current) "ON" else "OFF"}")
+}
+
+// v665: Core Auto Affinity665
+internal fun PlayerActivity.showV665CoreAutoAffinity665Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v665coreAutoAffinity665).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Core Auto Affinity665",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v665coreAutoAffinity665 = value
+        AppToast.show(this, "Core Auto Affinity665: $value")
+    }
+}
+
+// v665: Count Auto Increment665
+internal fun PlayerActivity.showV665CountAutoIncrement665Toggle() {
+    val current = BiliClient.prefs.v665countAutoIncrement665
+    BiliClient.prefs.v665countAutoIncrement665 = !current
+    AppToast.show(this, "Count Auto Increment665: ${if (!current) "ON" else "OFF"}")
+}
+
+// v665: Cover Auto Generate665
+internal fun PlayerActivity.showV665CoverAutoGenerate665Toggle() {
+    val current = BiliClient.prefs.v665coverAutoGenerate665
+    BiliClient.prefs.v665coverAutoGenerate665 = !current
+    AppToast.show(this, "Cover Auto Generate665: ${if (!current) "ON" else "OFF"}")
+}
+
+// v665: Crash Auto Report665
+internal fun PlayerActivity.showV665CrashAutoReport665Toggle() {
+    val current = BiliClient.prefs.v665crashAutoReport665
+    BiliClient.prefs.v665crashAutoReport665 = !current
+    AppToast.show(this, "Crash Auto Report665: ${if (!current) "ON" else "OFF"}")
+}
+
+// v665: Create Auto Backup665
+internal fun PlayerActivity.showV665CreateAutoBackup665Toggle() {
+    val current = BiliClient.prefs.v665createAutoBackup665
+    BiliClient.prefs.v665createAutoBackup665 = !current
+    AppToast.show(this, "Create Auto Backup665: ${if (!current) "ON" else "OFF"}")
+}
+
+// v665: Crop Auto Region665
+internal fun PlayerActivity.showV665CropAutoRegion665Toggle() {
+    val current = BiliClient.prefs.v665cropAutoRegion665
+    BiliClient.prefs.v665cropAutoRegion665 = !current
+    AppToast.show(this, "Crop Auto Region665: ${if (!current) "ON" else "OFF"}")
+}
+
+// v666: Config Auto Save666
+internal fun PlayerActivity.showV666ConfigAutoSave666Toggle() {
+    val current = BiliClient.prefs.v666configAutoSave666
+    BiliClient.prefs.v666configAutoSave666 = !current
+    AppToast.show(this, "Config Auto Save666: ${if (!current) "ON" else "OFF"}")
+}
+
+// v666: Confirm Auto Dialog666
+internal fun PlayerActivity.showV666ConfirmAutoDialog666Toggle() {
+    val current = BiliClient.prefs.v666confirmAutoDialog666
+    BiliClient.prefs.v666confirmAutoDialog666 = !current
+    AppToast.show(this, "Confirm Auto Dialog666: ${if (!current) "ON" else "OFF"}")
+}
+
+// v666: Console Auto Open666
+internal fun PlayerActivity.showV666ConsoleAutoOpen666Toggle() {
+    val current = BiliClient.prefs.v666consoleAutoOpen666
+    BiliClient.prefs.v666consoleAutoOpen666 = !current
+    AppToast.show(this, "Console Auto Open666: ${if (!current) "ON" else "OFF"}")
+}
+
+// v666: Constraint Auto Layout666
+internal fun PlayerActivity.showV666ConstraintAutoLayout666Toggle() {
+    val current = BiliClient.prefs.v666constraintAutoLayout666
+    BiliClient.prefs.v666constraintAutoLayout666 = !current
+    AppToast.show(this, "Constraint Auto Layout666: ${if (!current) "ON" else "OFF"}")
+}
+
+// v666: Content Auto Cache666
+internal fun PlayerActivity.showV666ContentAutoCache666Toggle() {
+    val current = BiliClient.prefs.v666contentAutoCache666
+    BiliClient.prefs.v666contentAutoCache666 = !current
+    AppToast.show(this, "Content Auto Cache666: ${if (!current) "ON" else "OFF"}")
+}
+
+// v666: Context Auto Menu666
+internal fun PlayerActivity.showV666ContextAutoMenu666Toggle() {
+    val current = BiliClient.prefs.v666contextAutoMenu666
+    BiliClient.prefs.v666contextAutoMenu666 = !current
+    AppToast.show(this, "Context Auto Menu666: ${if (!current) "ON" else "OFF"}")
+}
+
+// v666: Control Auto Hide666
+internal fun PlayerActivity.showV666ControlAutoHide666Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v666controlAutoHide666).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Control Auto Hide666",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v666controlAutoHide666 = value
+        AppToast.show(this, "Control Auto Hide666: $value")
+    }
+}
+
+// v666: Convert Auto Format666
+internal fun PlayerActivity.showV666ConvertAutoFormat666Toggle() {
+    val current = BiliClient.prefs.v666convertAutoFormat666
+    BiliClient.prefs.v666convertAutoFormat666 = !current
+    AppToast.show(this, "Convert Auto Format666: ${if (!current) "ON" else "OFF"}")
+}
+
+// v666: Copy Auto Clipboard666
+internal fun PlayerActivity.showV666CopyAutoClipboard666Toggle() {
+    val current = BiliClient.prefs.v666copyAutoClipboard666
+    BiliClient.prefs.v666copyAutoClipboard666 = !current
+    AppToast.show(this, "Copy Auto Clipboard666: ${if (!current) "ON" else "OFF"}")
+}
+
+// v666: Core Auto Affinity666
+internal fun PlayerActivity.showV666CoreAutoAffinity666Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v666coreAutoAffinity666).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Core Auto Affinity666",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v666coreAutoAffinity666 = value
+        AppToast.show(this, "Core Auto Affinity666: $value")
+    }
+}
+
+// v666: Count Auto Increment666
+internal fun PlayerActivity.showV666CountAutoIncrement666Toggle() {
+    val current = BiliClient.prefs.v666countAutoIncrement666
+    BiliClient.prefs.v666countAutoIncrement666 = !current
+    AppToast.show(this, "Count Auto Increment666: ${if (!current) "ON" else "OFF"}")
+}
+
+// v666: Cover Auto Generate666
+internal fun PlayerActivity.showV666CoverAutoGenerate666Toggle() {
+    val current = BiliClient.prefs.v666coverAutoGenerate666
+    BiliClient.prefs.v666coverAutoGenerate666 = !current
+    AppToast.show(this, "Cover Auto Generate666: ${if (!current) "ON" else "OFF"}")
+}
+
+// v666: Crash Auto Report666
+internal fun PlayerActivity.showV666CrashAutoReport666Toggle() {
+    val current = BiliClient.prefs.v666crashAutoReport666
+    BiliClient.prefs.v666crashAutoReport666 = !current
+    AppToast.show(this, "Crash Auto Report666: ${if (!current) "ON" else "OFF"}")
+}
+
+// v666: Create Auto Backup666
+internal fun PlayerActivity.showV666CreateAutoBackup666Toggle() {
+    val current = BiliClient.prefs.v666createAutoBackup666
+    BiliClient.prefs.v666createAutoBackup666 = !current
+    AppToast.show(this, "Create Auto Backup666: ${if (!current) "ON" else "OFF"}")
+}
+
+// v666: Crop Auto Region666
+internal fun PlayerActivity.showV666CropAutoRegion666Toggle() {
+    val current = BiliClient.prefs.v666cropAutoRegion666
+    BiliClient.prefs.v666cropAutoRegion666 = !current
+    AppToast.show(this, "Crop Auto Region666: ${if (!current) "ON" else "OFF"}")
+}
+
+// v667: Config Auto Save667
+internal fun PlayerActivity.showV667ConfigAutoSave667Toggle() {
+    val current = BiliClient.prefs.v667configAutoSave667
+    BiliClient.prefs.v667configAutoSave667 = !current
+    AppToast.show(this, "Config Auto Save667: ${if (!current) "ON" else "OFF"}")
+}
+
+// v667: Confirm Auto Dialog667
+internal fun PlayerActivity.showV667ConfirmAutoDialog667Toggle() {
+    val current = BiliClient.prefs.v667confirmAutoDialog667
+    BiliClient.prefs.v667confirmAutoDialog667 = !current
+    AppToast.show(this, "Confirm Auto Dialog667: ${if (!current) "ON" else "OFF"}")
+}
+
+// v667: Console Auto Open667
+internal fun PlayerActivity.showV667ConsoleAutoOpen667Toggle() {
+    val current = BiliClient.prefs.v667consoleAutoOpen667
+    BiliClient.prefs.v667consoleAutoOpen667 = !current
+    AppToast.show(this, "Console Auto Open667: ${if (!current) "ON" else "OFF"}")
+}
+
+// v667: Constraint Auto Layout667
+internal fun PlayerActivity.showV667ConstraintAutoLayout667Toggle() {
+    val current = BiliClient.prefs.v667constraintAutoLayout667
+    BiliClient.prefs.v667constraintAutoLayout667 = !current
+    AppToast.show(this, "Constraint Auto Layout667: ${if (!current) "ON" else "OFF"}")
+}
+
+// v667: Content Auto Cache667
+internal fun PlayerActivity.showV667ContentAutoCache667Toggle() {
+    val current = BiliClient.prefs.v667contentAutoCache667
+    BiliClient.prefs.v667contentAutoCache667 = !current
+    AppToast.show(this, "Content Auto Cache667: ${if (!current) "ON" else "OFF"}")
+}
+
+// v667: Context Auto Menu667
+internal fun PlayerActivity.showV667ContextAutoMenu667Toggle() {
+    val current = BiliClient.prefs.v667contextAutoMenu667
+    BiliClient.prefs.v667contextAutoMenu667 = !current
+    AppToast.show(this, "Context Auto Menu667: ${if (!current) "ON" else "OFF"}")
+}
+
+// v667: Control Auto Hide667
+internal fun PlayerActivity.showV667ControlAutoHide667Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v667controlAutoHide667).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Control Auto Hide667",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v667controlAutoHide667 = value
+        AppToast.show(this, "Control Auto Hide667: $value")
+    }
+}
+
+// v667: Convert Auto Format667
+internal fun PlayerActivity.showV667ConvertAutoFormat667Toggle() {
+    val current = BiliClient.prefs.v667convertAutoFormat667
+    BiliClient.prefs.v667convertAutoFormat667 = !current
+    AppToast.show(this, "Convert Auto Format667: ${if (!current) "ON" else "OFF"}")
+}
+
+// v667: Copy Auto Clipboard667
+internal fun PlayerActivity.showV667CopyAutoClipboard667Toggle() {
+    val current = BiliClient.prefs.v667copyAutoClipboard667
+    BiliClient.prefs.v667copyAutoClipboard667 = !current
+    AppToast.show(this, "Copy Auto Clipboard667: ${if (!current) "ON" else "OFF"}")
+}
+
+// v667: Core Auto Affinity667
+internal fun PlayerActivity.showV667CoreAutoAffinity667Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v667coreAutoAffinity667).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Core Auto Affinity667",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v667coreAutoAffinity667 = value
+        AppToast.show(this, "Core Auto Affinity667: $value")
+    }
+}
+
+// v667: Count Auto Increment667
+internal fun PlayerActivity.showV667CountAutoIncrement667Toggle() {
+    val current = BiliClient.prefs.v667countAutoIncrement667
+    BiliClient.prefs.v667countAutoIncrement667 = !current
+    AppToast.show(this, "Count Auto Increment667: ${if (!current) "ON" else "OFF"}")
+}
+
+// v667: Cover Auto Generate667
+internal fun PlayerActivity.showV667CoverAutoGenerate667Toggle() {
+    val current = BiliClient.prefs.v667coverAutoGenerate667
+    BiliClient.prefs.v667coverAutoGenerate667 = !current
+    AppToast.show(this, "Cover Auto Generate667: ${if (!current) "ON" else "OFF"}")
+}
+
+// v667: Crash Auto Report667
+internal fun PlayerActivity.showV667CrashAutoReport667Toggle() {
+    val current = BiliClient.prefs.v667crashAutoReport667
+    BiliClient.prefs.v667crashAutoReport667 = !current
+    AppToast.show(this, "Crash Auto Report667: ${if (!current) "ON" else "OFF"}")
+}
+
+// v667: Create Auto Backup667
+internal fun PlayerActivity.showV667CreateAutoBackup667Toggle() {
+    val current = BiliClient.prefs.v667createAutoBackup667
+    BiliClient.prefs.v667createAutoBackup667 = !current
+    AppToast.show(this, "Create Auto Backup667: ${if (!current) "ON" else "OFF"}")
+}
+
+// v667: Crop Auto Region667
+internal fun PlayerActivity.showV667CropAutoRegion667Toggle() {
+    val current = BiliClient.prefs.v667cropAutoRegion667
+    BiliClient.prefs.v667cropAutoRegion667 = !current
+    AppToast.show(this, "Crop Auto Region667: ${if (!current) "ON" else "OFF"}")
+}
+
+// v668: Config Auto Save668
+internal fun PlayerActivity.showV668ConfigAutoSave668Toggle() {
+    val current = BiliClient.prefs.v668configAutoSave668
+    BiliClient.prefs.v668configAutoSave668 = !current
+    AppToast.show(this, "Config Auto Save668: ${if (!current) "ON" else "OFF"}")
+}
+
+// v668: Confirm Auto Dialog668
+internal fun PlayerActivity.showV668ConfirmAutoDialog668Toggle() {
+    val current = BiliClient.prefs.v668confirmAutoDialog668
+    BiliClient.prefs.v668confirmAutoDialog668 = !current
+    AppToast.show(this, "Confirm Auto Dialog668: ${if (!current) "ON" else "OFF"}")
+}
+
+// v668: Console Auto Open668
+internal fun PlayerActivity.showV668ConsoleAutoOpen668Toggle() {
+    val current = BiliClient.prefs.v668consoleAutoOpen668
+    BiliClient.prefs.v668consoleAutoOpen668 = !current
+    AppToast.show(this, "Console Auto Open668: ${if (!current) "ON" else "OFF"}")
+}
+
+// v668: Constraint Auto Layout668
+internal fun PlayerActivity.showV668ConstraintAutoLayout668Toggle() {
+    val current = BiliClient.prefs.v668constraintAutoLayout668
+    BiliClient.prefs.v668constraintAutoLayout668 = !current
+    AppToast.show(this, "Constraint Auto Layout668: ${if (!current) "ON" else "OFF"}")
+}
+
+// v668: Content Auto Cache668
+internal fun PlayerActivity.showV668ContentAutoCache668Toggle() {
+    val current = BiliClient.prefs.v668contentAutoCache668
+    BiliClient.prefs.v668contentAutoCache668 = !current
+    AppToast.show(this, "Content Auto Cache668: ${if (!current) "ON" else "OFF"}")
+}
+
+// v668: Context Auto Menu668
+internal fun PlayerActivity.showV668ContextAutoMenu668Toggle() {
+    val current = BiliClient.prefs.v668contextAutoMenu668
+    BiliClient.prefs.v668contextAutoMenu668 = !current
+    AppToast.show(this, "Context Auto Menu668: ${if (!current) "ON" else "OFF"}")
+}
+
+// v668: Control Auto Hide668
+internal fun PlayerActivity.showV668ControlAutoHide668Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v668controlAutoHide668).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Control Auto Hide668",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v668controlAutoHide668 = value
+        AppToast.show(this, "Control Auto Hide668: $value")
+    }
+}
+
+// v668: Convert Auto Format668
+internal fun PlayerActivity.showV668ConvertAutoFormat668Toggle() {
+    val current = BiliClient.prefs.v668convertAutoFormat668
+    BiliClient.prefs.v668convertAutoFormat668 = !current
+    AppToast.show(this, "Convert Auto Format668: ${if (!current) "ON" else "OFF"}")
+}
+
+// v668: Copy Auto Clipboard668
+internal fun PlayerActivity.showV668CopyAutoClipboard668Toggle() {
+    val current = BiliClient.prefs.v668copyAutoClipboard668
+    BiliClient.prefs.v668copyAutoClipboard668 = !current
+    AppToast.show(this, "Copy Auto Clipboard668: ${if (!current) "ON" else "OFF"}")
+}
+
+// v668: Core Auto Affinity668
+internal fun PlayerActivity.showV668CoreAutoAffinity668Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v668coreAutoAffinity668).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Core Auto Affinity668",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v668coreAutoAffinity668 = value
+        AppToast.show(this, "Core Auto Affinity668: $value")
+    }
+}
+
+// v668: Count Auto Increment668
+internal fun PlayerActivity.showV668CountAutoIncrement668Toggle() {
+    val current = BiliClient.prefs.v668countAutoIncrement668
+    BiliClient.prefs.v668countAutoIncrement668 = !current
+    AppToast.show(this, "Count Auto Increment668: ${if (!current) "ON" else "OFF"}")
+}
+
+// v668: Cover Auto Generate668
+internal fun PlayerActivity.showV668CoverAutoGenerate668Toggle() {
+    val current = BiliClient.prefs.v668coverAutoGenerate668
+    BiliClient.prefs.v668coverAutoGenerate668 = !current
+    AppToast.show(this, "Cover Auto Generate668: ${if (!current) "ON" else "OFF"}")
+}
+
+// v668: Crash Auto Report668
+internal fun PlayerActivity.showV668CrashAutoReport668Toggle() {
+    val current = BiliClient.prefs.v668crashAutoReport668
+    BiliClient.prefs.v668crashAutoReport668 = !current
+    AppToast.show(this, "Crash Auto Report668: ${if (!current) "ON" else "OFF"}")
+}
+
+// v668: Create Auto Backup668
+internal fun PlayerActivity.showV668CreateAutoBackup668Toggle() {
+    val current = BiliClient.prefs.v668createAutoBackup668
+    BiliClient.prefs.v668createAutoBackup668 = !current
+    AppToast.show(this, "Create Auto Backup668: ${if (!current) "ON" else "OFF"}")
+}
+
+// v668: Crop Auto Region668
+internal fun PlayerActivity.showV668CropAutoRegion668Toggle() {
+    val current = BiliClient.prefs.v668cropAutoRegion668
+    BiliClient.prefs.v668cropAutoRegion668 = !current
+    AppToast.show(this, "Crop Auto Region668: ${if (!current) "ON" else "OFF"}")
+}
+
+// v669: Config Auto Save669
+internal fun PlayerActivity.showV669ConfigAutoSave669Toggle() {
+    val current = BiliClient.prefs.v669configAutoSave669
+    BiliClient.prefs.v669configAutoSave669 = !current
+    AppToast.show(this, "Config Auto Save669: ${if (!current) "ON" else "OFF"}")
+}
+
+// v669: Confirm Auto Dialog669
+internal fun PlayerActivity.showV669ConfirmAutoDialog669Toggle() {
+    val current = BiliClient.prefs.v669confirmAutoDialog669
+    BiliClient.prefs.v669confirmAutoDialog669 = !current
+    AppToast.show(this, "Confirm Auto Dialog669: ${if (!current) "ON" else "OFF"}")
+}
+
+// v669: Console Auto Open669
+internal fun PlayerActivity.showV669ConsoleAutoOpen669Toggle() {
+    val current = BiliClient.prefs.v669consoleAutoOpen669
+    BiliClient.prefs.v669consoleAutoOpen669 = !current
+    AppToast.show(this, "Console Auto Open669: ${if (!current) "ON" else "OFF"}")
+}
+
+// v669: Constraint Auto Layout669
+internal fun PlayerActivity.showV669ConstraintAutoLayout669Toggle() {
+    val current = BiliClient.prefs.v669constraintAutoLayout669
+    BiliClient.prefs.v669constraintAutoLayout669 = !current
+    AppToast.show(this, "Constraint Auto Layout669: ${if (!current) "ON" else "OFF"}")
+}
+
+// v669: Content Auto Cache669
+internal fun PlayerActivity.showV669ContentAutoCache669Toggle() {
+    val current = BiliClient.prefs.v669contentAutoCache669
+    BiliClient.prefs.v669contentAutoCache669 = !current
+    AppToast.show(this, "Content Auto Cache669: ${if (!current) "ON" else "OFF"}")
+}
+
+// v669: Context Auto Menu669
+internal fun PlayerActivity.showV669ContextAutoMenu669Toggle() {
+    val current = BiliClient.prefs.v669contextAutoMenu669
+    BiliClient.prefs.v669contextAutoMenu669 = !current
+    AppToast.show(this, "Context Auto Menu669: ${if (!current) "ON" else "OFF"}")
+}
+
+// v669: Control Auto Hide669
+internal fun PlayerActivity.showV669ControlAutoHide669Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v669controlAutoHide669).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Control Auto Hide669",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v669controlAutoHide669 = value
+        AppToast.show(this, "Control Auto Hide669: $value")
+    }
+}
+
+// v669: Convert Auto Format669
+internal fun PlayerActivity.showV669ConvertAutoFormat669Toggle() {
+    val current = BiliClient.prefs.v669convertAutoFormat669
+    BiliClient.prefs.v669convertAutoFormat669 = !current
+    AppToast.show(this, "Convert Auto Format669: ${if (!current) "ON" else "OFF"}")
+}
+
+// v669: Copy Auto Clipboard669
+internal fun PlayerActivity.showV669CopyAutoClipboard669Toggle() {
+    val current = BiliClient.prefs.v669copyAutoClipboard669
+    BiliClient.prefs.v669copyAutoClipboard669 = !current
+    AppToast.show(this, "Copy Auto Clipboard669: ${if (!current) "ON" else "OFF"}")
+}
+
+// v669: Core Auto Affinity669
+internal fun PlayerActivity.showV669CoreAutoAffinity669Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v669coreAutoAffinity669).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Core Auto Affinity669",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v669coreAutoAffinity669 = value
+        AppToast.show(this, "Core Auto Affinity669: $value")
+    }
+}
+
+// v669: Count Auto Increment669
+internal fun PlayerActivity.showV669CountAutoIncrement669Toggle() {
+    val current = BiliClient.prefs.v669countAutoIncrement669
+    BiliClient.prefs.v669countAutoIncrement669 = !current
+    AppToast.show(this, "Count Auto Increment669: ${if (!current) "ON" else "OFF"}")
+}
+
+// v669: Cover Auto Generate669
+internal fun PlayerActivity.showV669CoverAutoGenerate669Toggle() {
+    val current = BiliClient.prefs.v669coverAutoGenerate669
+    BiliClient.prefs.v669coverAutoGenerate669 = !current
+    AppToast.show(this, "Cover Auto Generate669: ${if (!current) "ON" else "OFF"}")
+}
+
+// v669: Crash Auto Report669
+internal fun PlayerActivity.showV669CrashAutoReport669Toggle() {
+    val current = BiliClient.prefs.v669crashAutoReport669
+    BiliClient.prefs.v669crashAutoReport669 = !current
+    AppToast.show(this, "Crash Auto Report669: ${if (!current) "ON" else "OFF"}")
+}
+
+// v669: Create Auto Backup669
+internal fun PlayerActivity.showV669CreateAutoBackup669Toggle() {
+    val current = BiliClient.prefs.v669createAutoBackup669
+    BiliClient.prefs.v669createAutoBackup669 = !current
+    AppToast.show(this, "Create Auto Backup669: ${if (!current) "ON" else "OFF"}")
+}
+
+// v669: Crop Auto Region669
+internal fun PlayerActivity.showV669CropAutoRegion669Toggle() {
+    val current = BiliClient.prefs.v669cropAutoRegion669
+    BiliClient.prefs.v669cropAutoRegion669 = !current
+    AppToast.show(this, "Crop Auto Region669: ${if (!current) "ON" else "OFF"}")
+}
+
+// v670: Config Auto Save670
+internal fun PlayerActivity.showV670ConfigAutoSave670Toggle() {
+    val current = BiliClient.prefs.v670configAutoSave670
+    BiliClient.prefs.v670configAutoSave670 = !current
+    AppToast.show(this, "Config Auto Save670: ${if (!current) "ON" else "OFF"}")
+}
+
+// v670: Confirm Auto Dialog670
+internal fun PlayerActivity.showV670ConfirmAutoDialog670Toggle() {
+    val current = BiliClient.prefs.v670confirmAutoDialog670
+    BiliClient.prefs.v670confirmAutoDialog670 = !current
+    AppToast.show(this, "Confirm Auto Dialog670: ${if (!current) "ON" else "OFF"}")
+}
+
+// v670: Console Auto Open670
+internal fun PlayerActivity.showV670ConsoleAutoOpen670Toggle() {
+    val current = BiliClient.prefs.v670consoleAutoOpen670
+    BiliClient.prefs.v670consoleAutoOpen670 = !current
+    AppToast.show(this, "Console Auto Open670: ${if (!current) "ON" else "OFF"}")
+}
+
+// v670: Constraint Auto Layout670
+internal fun PlayerActivity.showV670ConstraintAutoLayout670Toggle() {
+    val current = BiliClient.prefs.v670constraintAutoLayout670
+    BiliClient.prefs.v670constraintAutoLayout670 = !current
+    AppToast.show(this, "Constraint Auto Layout670: ${if (!current) "ON" else "OFF"}")
+}
+
+// v670: Content Auto Cache670
+internal fun PlayerActivity.showV670ContentAutoCache670Toggle() {
+    val current = BiliClient.prefs.v670contentAutoCache670
+    BiliClient.prefs.v670contentAutoCache670 = !current
+    AppToast.show(this, "Content Auto Cache670: ${if (!current) "ON" else "OFF"}")
+}
+
+// v670: Context Auto Menu670
+internal fun PlayerActivity.showV670ContextAutoMenu670Toggle() {
+    val current = BiliClient.prefs.v670contextAutoMenu670
+    BiliClient.prefs.v670contextAutoMenu670 = !current
+    AppToast.show(this, "Context Auto Menu670: ${if (!current) "ON" else "OFF"}")
+}
+
+// v670: Control Auto Hide670
+internal fun PlayerActivity.showV670ControlAutoHide670Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v670controlAutoHide670).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Control Auto Hide670",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v670controlAutoHide670 = value
+        AppToast.show(this, "Control Auto Hide670: $value")
+    }
+}
+
+// v670: Convert Auto Format670
+internal fun PlayerActivity.showV670ConvertAutoFormat670Toggle() {
+    val current = BiliClient.prefs.v670convertAutoFormat670
+    BiliClient.prefs.v670convertAutoFormat670 = !current
+    AppToast.show(this, "Convert Auto Format670: ${if (!current) "ON" else "OFF"}")
+}
+
+// v670: Copy Auto Clipboard670
+internal fun PlayerActivity.showV670CopyAutoClipboard670Toggle() {
+    val current = BiliClient.prefs.v670copyAutoClipboard670
+    BiliClient.prefs.v670copyAutoClipboard670 = !current
+    AppToast.show(this, "Copy Auto Clipboard670: ${if (!current) "ON" else "OFF"}")
+}
+
+// v670: Core Auto Affinity670
+internal fun PlayerActivity.showV670CoreAutoAffinity670Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v670coreAutoAffinity670).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Core Auto Affinity670",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v670coreAutoAffinity670 = value
+        AppToast.show(this, "Core Auto Affinity670: $value")
+    }
+}
+
+// v670: Count Auto Increment670
+internal fun PlayerActivity.showV670CountAutoIncrement670Toggle() {
+    val current = BiliClient.prefs.v670countAutoIncrement670
+    BiliClient.prefs.v670countAutoIncrement670 = !current
+    AppToast.show(this, "Count Auto Increment670: ${if (!current) "ON" else "OFF"}")
+}
+
+// v670: Cover Auto Generate670
+internal fun PlayerActivity.showV670CoverAutoGenerate670Toggle() {
+    val current = BiliClient.prefs.v670coverAutoGenerate670
+    BiliClient.prefs.v670coverAutoGenerate670 = !current
+    AppToast.show(this, "Cover Auto Generate670: ${if (!current) "ON" else "OFF"}")
+}
+
+// v670: Crash Auto Report670
+internal fun PlayerActivity.showV670CrashAutoReport670Toggle() {
+    val current = BiliClient.prefs.v670crashAutoReport670
+    BiliClient.prefs.v670crashAutoReport670 = !current
+    AppToast.show(this, "Crash Auto Report670: ${if (!current) "ON" else "OFF"}")
+}
+
+// v670: Create Auto Backup670
+internal fun PlayerActivity.showV670CreateAutoBackup670Toggle() {
+    val current = BiliClient.prefs.v670createAutoBackup670
+    BiliClient.prefs.v670createAutoBackup670 = !current
+    AppToast.show(this, "Create Auto Backup670: ${if (!current) "ON" else "OFF"}")
+}
+
+// v670: Crop Auto Region670
+internal fun PlayerActivity.showV670CropAutoRegion670Toggle() {
+    val current = BiliClient.prefs.v670cropAutoRegion670
+    BiliClient.prefs.v670cropAutoRegion670 = !current
+    AppToast.show(this, "Crop Auto Region670: ${if (!current) "ON" else "OFF"}")
+}
+
