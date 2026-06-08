@@ -77415,3 +77415,1213 @@ internal fun PlayerActivity.showV500PixelAutoCorrect500Toggle() {
     AppToast.show(this, "Pixel Auto Correct500: ${if (!current) "ON" else "OFF"}")
 }
 
+// v501: Place Auto Detect501
+internal fun PlayerActivity.showV501PlaceAutoDetect501Toggle() {
+    val current = BiliClient.prefs.v501placeAutoDetect501
+    BiliClient.prefs.v501placeAutoDetect501 = !current
+    AppToast.show(this, "Place Auto Detect501: ${if (!current) "ON" else "OFF"}")
+}
+
+// v501: Platform Auto Adapt501
+internal fun PlayerActivity.showV501PlatformAutoAdapt501Toggle() {
+    val current = BiliClient.prefs.v501platformAutoAdapt501
+    BiliClient.prefs.v501platformAutoAdapt501 = !current
+    AppToast.show(this, "Platform Auto Adapt501: ${if (!current) "ON" else "OFF"}")
+}
+
+// v501: Play Auto Resume501
+internal fun PlayerActivity.showV501PlayAutoResume501Toggle() {
+    val current = BiliClient.prefs.v501playAutoResume501
+    BiliClient.prefs.v501playAutoResume501 = !current
+    AppToast.show(this, "Play Auto Resume501: ${if (!current) "ON" else "OFF"}")
+}
+
+// v501: Plugin Auto Update501
+internal fun PlayerActivity.showV501PluginAutoUpdate501Toggle() {
+    val current = BiliClient.prefs.v501pluginAutoUpdate501
+    BiliClient.prefs.v501pluginAutoUpdate501 = !current
+    AppToast.show(this, "Plugin Auto Update501: ${if (!current) "ON" else "OFF"}")
+}
+
+// v501: Pop Up Auto Dismiss501
+internal fun PlayerActivity.showV501PopUpAutoDismiss501Toggle() {
+    val current = BiliClient.prefs.v501popUpAutoDismiss501
+    BiliClient.prefs.v501popUpAutoDismiss501 = !current
+    AppToast.show(this, "Pop Up Auto Dismiss501: ${if (!current) "ON" else "OFF"}")
+}
+
+// v501: Port Auto Scan501
+internal fun PlayerActivity.showV501PortAutoScan501Toggle() {
+    val current = BiliClient.prefs.v501portAutoScan501
+    BiliClient.prefs.v501portAutoScan501 = !current
+    AppToast.show(this, "Port Auto Scan501: ${if (!current) "ON" else "OFF"}")
+}
+
+// v501: Post Auto Share501
+internal fun PlayerActivity.showV501PostAutoShare501Toggle() {
+    val current = BiliClient.prefs.v501postAutoShare501
+    BiliClient.prefs.v501postAutoShare501 = !current
+    AppToast.show(this, "Post Auto Share501: ${if (!current) "ON" else "OFF"}")
+}
+
+// v501: Power Save Mode501
+internal fun PlayerActivity.showV501PowerSaveMode501Toggle() {
+    val current = BiliClient.prefs.v501powerSaveMode501
+    BiliClient.prefs.v501powerSaveMode501 = !current
+    AppToast.show(this, "Power Save Mode501: ${if (!current) "ON" else "OFF"}")
+}
+
+// v501: Pre Buffer Enabled501
+internal fun PlayerActivity.showV501PreBufferEnabled501Toggle() {
+    val current = BiliClient.prefs.v501preBufferEnabled501
+    BiliClient.prefs.v501preBufferEnabled501 = !current
+    AppToast.show(this, "Pre Buffer Enabled501: ${if (!current) "ON" else "OFF"}")
+}
+
+// v501: Prefix Auto Trim501
+internal fun PlayerActivity.showV501PrefixAutoTrim501Toggle() {
+    val current = BiliClient.prefs.v501prefixAutoTrim501
+    BiliClient.prefs.v501prefixAutoTrim501 = !current
+    AppToast.show(this, "Prefix Auto Trim501: ${if (!current) "ON" else "OFF"}")
+}
+
+// v501: Press And Hold Action501
+internal fun PlayerActivity.showV501PressAndHoldAction501Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v501pressAndHoldAction501).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Press And Hold Action501",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v501pressAndHoldAction501 = value
+        AppToast.show(this, "Press And Hold Action501: $value")
+    }
+}
+
+// v501: Primary Audio Track501
+internal fun PlayerActivity.showV501PrimaryAudioTrack501Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v501primaryAudioTrack501).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Primary Audio Track501",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v501primaryAudioTrack501 = value
+        AppToast.show(this, "Primary Audio Track501: $value")
+    }
+}
+
+// v501: Print Auto Format501
+internal fun PlayerActivity.showV501PrintAutoFormat501Toggle() {
+    val current = BiliClient.prefs.v501printAutoFormat501
+    BiliClient.prefs.v501printAutoFormat501 = !current
+    AppToast.show(this, "Print Auto Format501: ${if (!current) "ON" else "OFF"}")
+}
+
+// v501: Priority Queue Enabled501
+internal fun PlayerActivity.showV501PriorityQueueEnabled501Toggle() {
+    val current = BiliClient.prefs.v501priorityQueueEnabled501
+    BiliClient.prefs.v501priorityQueueEnabled501 = !current
+    AppToast.show(this, "Priority Queue Enabled501: ${if (!current) "ON" else "OFF"}")
+}
+
+// v501: Private Mode Auto501
+internal fun PlayerActivity.showV501PrivateModeAuto501Toggle() {
+    val current = BiliClient.prefs.v501privateModeAuto501
+    BiliClient.prefs.v501privateModeAuto501 = !current
+    AppToast.show(this, "Private Mode Auto501: ${if (!current) "ON" else "OFF"}")
+}
+
+// v502: Place Auto Detect502
+internal fun PlayerActivity.showV502PlaceAutoDetect502Toggle() {
+    val current = BiliClient.prefs.v502placeAutoDetect502
+    BiliClient.prefs.v502placeAutoDetect502 = !current
+    AppToast.show(this, "Place Auto Detect502: ${if (!current) "ON" else "OFF"}")
+}
+
+// v502: Platform Auto Adapt502
+internal fun PlayerActivity.showV502PlatformAutoAdapt502Toggle() {
+    val current = BiliClient.prefs.v502platformAutoAdapt502
+    BiliClient.prefs.v502platformAutoAdapt502 = !current
+    AppToast.show(this, "Platform Auto Adapt502: ${if (!current) "ON" else "OFF"}")
+}
+
+// v502: Play Auto Resume502
+internal fun PlayerActivity.showV502PlayAutoResume502Toggle() {
+    val current = BiliClient.prefs.v502playAutoResume502
+    BiliClient.prefs.v502playAutoResume502 = !current
+    AppToast.show(this, "Play Auto Resume502: ${if (!current) "ON" else "OFF"}")
+}
+
+// v502: Plugin Auto Update502
+internal fun PlayerActivity.showV502PluginAutoUpdate502Toggle() {
+    val current = BiliClient.prefs.v502pluginAutoUpdate502
+    BiliClient.prefs.v502pluginAutoUpdate502 = !current
+    AppToast.show(this, "Plugin Auto Update502: ${if (!current) "ON" else "OFF"}")
+}
+
+// v502: Pop Up Auto Dismiss502
+internal fun PlayerActivity.showV502PopUpAutoDismiss502Toggle() {
+    val current = BiliClient.prefs.v502popUpAutoDismiss502
+    BiliClient.prefs.v502popUpAutoDismiss502 = !current
+    AppToast.show(this, "Pop Up Auto Dismiss502: ${if (!current) "ON" else "OFF"}")
+}
+
+// v502: Port Auto Scan502
+internal fun PlayerActivity.showV502PortAutoScan502Toggle() {
+    val current = BiliClient.prefs.v502portAutoScan502
+    BiliClient.prefs.v502portAutoScan502 = !current
+    AppToast.show(this, "Port Auto Scan502: ${if (!current) "ON" else "OFF"}")
+}
+
+// v502: Post Auto Share502
+internal fun PlayerActivity.showV502PostAutoShare502Toggle() {
+    val current = BiliClient.prefs.v502postAutoShare502
+    BiliClient.prefs.v502postAutoShare502 = !current
+    AppToast.show(this, "Post Auto Share502: ${if (!current) "ON" else "OFF"}")
+}
+
+// v502: Power Save Mode502
+internal fun PlayerActivity.showV502PowerSaveMode502Toggle() {
+    val current = BiliClient.prefs.v502powerSaveMode502
+    BiliClient.prefs.v502powerSaveMode502 = !current
+    AppToast.show(this, "Power Save Mode502: ${if (!current) "ON" else "OFF"}")
+}
+
+// v502: Pre Buffer Enabled502
+internal fun PlayerActivity.showV502PreBufferEnabled502Toggle() {
+    val current = BiliClient.prefs.v502preBufferEnabled502
+    BiliClient.prefs.v502preBufferEnabled502 = !current
+    AppToast.show(this, "Pre Buffer Enabled502: ${if (!current) "ON" else "OFF"}")
+}
+
+// v502: Prefix Auto Trim502
+internal fun PlayerActivity.showV502PrefixAutoTrim502Toggle() {
+    val current = BiliClient.prefs.v502prefixAutoTrim502
+    BiliClient.prefs.v502prefixAutoTrim502 = !current
+    AppToast.show(this, "Prefix Auto Trim502: ${if (!current) "ON" else "OFF"}")
+}
+
+// v502: Press And Hold Action502
+internal fun PlayerActivity.showV502PressAndHoldAction502Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v502pressAndHoldAction502).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Press And Hold Action502",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v502pressAndHoldAction502 = value
+        AppToast.show(this, "Press And Hold Action502: $value")
+    }
+}
+
+// v502: Primary Audio Track502
+internal fun PlayerActivity.showV502PrimaryAudioTrack502Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v502primaryAudioTrack502).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Primary Audio Track502",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v502primaryAudioTrack502 = value
+        AppToast.show(this, "Primary Audio Track502: $value")
+    }
+}
+
+// v502: Print Auto Format502
+internal fun PlayerActivity.showV502PrintAutoFormat502Toggle() {
+    val current = BiliClient.prefs.v502printAutoFormat502
+    BiliClient.prefs.v502printAutoFormat502 = !current
+    AppToast.show(this, "Print Auto Format502: ${if (!current) "ON" else "OFF"}")
+}
+
+// v502: Priority Queue Enabled502
+internal fun PlayerActivity.showV502PriorityQueueEnabled502Toggle() {
+    val current = BiliClient.prefs.v502priorityQueueEnabled502
+    BiliClient.prefs.v502priorityQueueEnabled502 = !current
+    AppToast.show(this, "Priority Queue Enabled502: ${if (!current) "ON" else "OFF"}")
+}
+
+// v502: Private Mode Auto502
+internal fun PlayerActivity.showV502PrivateModeAuto502Toggle() {
+    val current = BiliClient.prefs.v502privateModeAuto502
+    BiliClient.prefs.v502privateModeAuto502 = !current
+    AppToast.show(this, "Private Mode Auto502: ${if (!current) "ON" else "OFF"}")
+}
+
+// v503: Place Auto Detect503
+internal fun PlayerActivity.showV503PlaceAutoDetect503Toggle() {
+    val current = BiliClient.prefs.v503placeAutoDetect503
+    BiliClient.prefs.v503placeAutoDetect503 = !current
+    AppToast.show(this, "Place Auto Detect503: ${if (!current) "ON" else "OFF"}")
+}
+
+// v503: Platform Auto Adapt503
+internal fun PlayerActivity.showV503PlatformAutoAdapt503Toggle() {
+    val current = BiliClient.prefs.v503platformAutoAdapt503
+    BiliClient.prefs.v503platformAutoAdapt503 = !current
+    AppToast.show(this, "Platform Auto Adapt503: ${if (!current) "ON" else "OFF"}")
+}
+
+// v503: Play Auto Resume503
+internal fun PlayerActivity.showV503PlayAutoResume503Toggle() {
+    val current = BiliClient.prefs.v503playAutoResume503
+    BiliClient.prefs.v503playAutoResume503 = !current
+    AppToast.show(this, "Play Auto Resume503: ${if (!current) "ON" else "OFF"}")
+}
+
+// v503: Plugin Auto Update503
+internal fun PlayerActivity.showV503PluginAutoUpdate503Toggle() {
+    val current = BiliClient.prefs.v503pluginAutoUpdate503
+    BiliClient.prefs.v503pluginAutoUpdate503 = !current
+    AppToast.show(this, "Plugin Auto Update503: ${if (!current) "ON" else "OFF"}")
+}
+
+// v503: Pop Up Auto Dismiss503
+internal fun PlayerActivity.showV503PopUpAutoDismiss503Toggle() {
+    val current = BiliClient.prefs.v503popUpAutoDismiss503
+    BiliClient.prefs.v503popUpAutoDismiss503 = !current
+    AppToast.show(this, "Pop Up Auto Dismiss503: ${if (!current) "ON" else "OFF"}")
+}
+
+// v503: Port Auto Scan503
+internal fun PlayerActivity.showV503PortAutoScan503Toggle() {
+    val current = BiliClient.prefs.v503portAutoScan503
+    BiliClient.prefs.v503portAutoScan503 = !current
+    AppToast.show(this, "Port Auto Scan503: ${if (!current) "ON" else "OFF"}")
+}
+
+// v503: Post Auto Share503
+internal fun PlayerActivity.showV503PostAutoShare503Toggle() {
+    val current = BiliClient.prefs.v503postAutoShare503
+    BiliClient.prefs.v503postAutoShare503 = !current
+    AppToast.show(this, "Post Auto Share503: ${if (!current) "ON" else "OFF"}")
+}
+
+// v503: Power Save Mode503
+internal fun PlayerActivity.showV503PowerSaveMode503Toggle() {
+    val current = BiliClient.prefs.v503powerSaveMode503
+    BiliClient.prefs.v503powerSaveMode503 = !current
+    AppToast.show(this, "Power Save Mode503: ${if (!current) "ON" else "OFF"}")
+}
+
+// v503: Pre Buffer Enabled503
+internal fun PlayerActivity.showV503PreBufferEnabled503Toggle() {
+    val current = BiliClient.prefs.v503preBufferEnabled503
+    BiliClient.prefs.v503preBufferEnabled503 = !current
+    AppToast.show(this, "Pre Buffer Enabled503: ${if (!current) "ON" else "OFF"}")
+}
+
+// v503: Prefix Auto Trim503
+internal fun PlayerActivity.showV503PrefixAutoTrim503Toggle() {
+    val current = BiliClient.prefs.v503prefixAutoTrim503
+    BiliClient.prefs.v503prefixAutoTrim503 = !current
+    AppToast.show(this, "Prefix Auto Trim503: ${if (!current) "ON" else "OFF"}")
+}
+
+// v503: Press And Hold Action503
+internal fun PlayerActivity.showV503PressAndHoldAction503Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v503pressAndHoldAction503).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Press And Hold Action503",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v503pressAndHoldAction503 = value
+        AppToast.show(this, "Press And Hold Action503: $value")
+    }
+}
+
+// v503: Primary Audio Track503
+internal fun PlayerActivity.showV503PrimaryAudioTrack503Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v503primaryAudioTrack503).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Primary Audio Track503",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v503primaryAudioTrack503 = value
+        AppToast.show(this, "Primary Audio Track503: $value")
+    }
+}
+
+// v503: Print Auto Format503
+internal fun PlayerActivity.showV503PrintAutoFormat503Toggle() {
+    val current = BiliClient.prefs.v503printAutoFormat503
+    BiliClient.prefs.v503printAutoFormat503 = !current
+    AppToast.show(this, "Print Auto Format503: ${if (!current) "ON" else "OFF"}")
+}
+
+// v503: Priority Queue Enabled503
+internal fun PlayerActivity.showV503PriorityQueueEnabled503Toggle() {
+    val current = BiliClient.prefs.v503priorityQueueEnabled503
+    BiliClient.prefs.v503priorityQueueEnabled503 = !current
+    AppToast.show(this, "Priority Queue Enabled503: ${if (!current) "ON" else "OFF"}")
+}
+
+// v503: Private Mode Auto503
+internal fun PlayerActivity.showV503PrivateModeAuto503Toggle() {
+    val current = BiliClient.prefs.v503privateModeAuto503
+    BiliClient.prefs.v503privateModeAuto503 = !current
+    AppToast.show(this, "Private Mode Auto503: ${if (!current) "ON" else "OFF"}")
+}
+
+// v504: Place Auto Detect504
+internal fun PlayerActivity.showV504PlaceAutoDetect504Toggle() {
+    val current = BiliClient.prefs.v504placeAutoDetect504
+    BiliClient.prefs.v504placeAutoDetect504 = !current
+    AppToast.show(this, "Place Auto Detect504: ${if (!current) "ON" else "OFF"}")
+}
+
+// v504: Platform Auto Adapt504
+internal fun PlayerActivity.showV504PlatformAutoAdapt504Toggle() {
+    val current = BiliClient.prefs.v504platformAutoAdapt504
+    BiliClient.prefs.v504platformAutoAdapt504 = !current
+    AppToast.show(this, "Platform Auto Adapt504: ${if (!current) "ON" else "OFF"}")
+}
+
+// v504: Play Auto Resume504
+internal fun PlayerActivity.showV504PlayAutoResume504Toggle() {
+    val current = BiliClient.prefs.v504playAutoResume504
+    BiliClient.prefs.v504playAutoResume504 = !current
+    AppToast.show(this, "Play Auto Resume504: ${if (!current) "ON" else "OFF"}")
+}
+
+// v504: Plugin Auto Update504
+internal fun PlayerActivity.showV504PluginAutoUpdate504Toggle() {
+    val current = BiliClient.prefs.v504pluginAutoUpdate504
+    BiliClient.prefs.v504pluginAutoUpdate504 = !current
+    AppToast.show(this, "Plugin Auto Update504: ${if (!current) "ON" else "OFF"}")
+}
+
+// v504: Pop Up Auto Dismiss504
+internal fun PlayerActivity.showV504PopUpAutoDismiss504Toggle() {
+    val current = BiliClient.prefs.v504popUpAutoDismiss504
+    BiliClient.prefs.v504popUpAutoDismiss504 = !current
+    AppToast.show(this, "Pop Up Auto Dismiss504: ${if (!current) "ON" else "OFF"}")
+}
+
+// v504: Port Auto Scan504
+internal fun PlayerActivity.showV504PortAutoScan504Toggle() {
+    val current = BiliClient.prefs.v504portAutoScan504
+    BiliClient.prefs.v504portAutoScan504 = !current
+    AppToast.show(this, "Port Auto Scan504: ${if (!current) "ON" else "OFF"}")
+}
+
+// v504: Post Auto Share504
+internal fun PlayerActivity.showV504PostAutoShare504Toggle() {
+    val current = BiliClient.prefs.v504postAutoShare504
+    BiliClient.prefs.v504postAutoShare504 = !current
+    AppToast.show(this, "Post Auto Share504: ${if (!current) "ON" else "OFF"}")
+}
+
+// v504: Power Save Mode504
+internal fun PlayerActivity.showV504PowerSaveMode504Toggle() {
+    val current = BiliClient.prefs.v504powerSaveMode504
+    BiliClient.prefs.v504powerSaveMode504 = !current
+    AppToast.show(this, "Power Save Mode504: ${if (!current) "ON" else "OFF"}")
+}
+
+// v504: Pre Buffer Enabled504
+internal fun PlayerActivity.showV504PreBufferEnabled504Toggle() {
+    val current = BiliClient.prefs.v504preBufferEnabled504
+    BiliClient.prefs.v504preBufferEnabled504 = !current
+    AppToast.show(this, "Pre Buffer Enabled504: ${if (!current) "ON" else "OFF"}")
+}
+
+// v504: Prefix Auto Trim504
+internal fun PlayerActivity.showV504PrefixAutoTrim504Toggle() {
+    val current = BiliClient.prefs.v504prefixAutoTrim504
+    BiliClient.prefs.v504prefixAutoTrim504 = !current
+    AppToast.show(this, "Prefix Auto Trim504: ${if (!current) "ON" else "OFF"}")
+}
+
+// v504: Press And Hold Action504
+internal fun PlayerActivity.showV504PressAndHoldAction504Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v504pressAndHoldAction504).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Press And Hold Action504",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v504pressAndHoldAction504 = value
+        AppToast.show(this, "Press And Hold Action504: $value")
+    }
+}
+
+// v504: Primary Audio Track504
+internal fun PlayerActivity.showV504PrimaryAudioTrack504Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v504primaryAudioTrack504).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Primary Audio Track504",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v504primaryAudioTrack504 = value
+        AppToast.show(this, "Primary Audio Track504: $value")
+    }
+}
+
+// v504: Print Auto Format504
+internal fun PlayerActivity.showV504PrintAutoFormat504Toggle() {
+    val current = BiliClient.prefs.v504printAutoFormat504
+    BiliClient.prefs.v504printAutoFormat504 = !current
+    AppToast.show(this, "Print Auto Format504: ${if (!current) "ON" else "OFF"}")
+}
+
+// v504: Priority Queue Enabled504
+internal fun PlayerActivity.showV504PriorityQueueEnabled504Toggle() {
+    val current = BiliClient.prefs.v504priorityQueueEnabled504
+    BiliClient.prefs.v504priorityQueueEnabled504 = !current
+    AppToast.show(this, "Priority Queue Enabled504: ${if (!current) "ON" else "OFF"}")
+}
+
+// v504: Private Mode Auto504
+internal fun PlayerActivity.showV504PrivateModeAuto504Toggle() {
+    val current = BiliClient.prefs.v504privateModeAuto504
+    BiliClient.prefs.v504privateModeAuto504 = !current
+    AppToast.show(this, "Private Mode Auto504: ${if (!current) "ON" else "OFF"}")
+}
+
+// v505: Place Auto Detect505
+internal fun PlayerActivity.showV505PlaceAutoDetect505Toggle() {
+    val current = BiliClient.prefs.v505placeAutoDetect505
+    BiliClient.prefs.v505placeAutoDetect505 = !current
+    AppToast.show(this, "Place Auto Detect505: ${if (!current) "ON" else "OFF"}")
+}
+
+// v505: Platform Auto Adapt505
+internal fun PlayerActivity.showV505PlatformAutoAdapt505Toggle() {
+    val current = BiliClient.prefs.v505platformAutoAdapt505
+    BiliClient.prefs.v505platformAutoAdapt505 = !current
+    AppToast.show(this, "Platform Auto Adapt505: ${if (!current) "ON" else "OFF"}")
+}
+
+// v505: Play Auto Resume505
+internal fun PlayerActivity.showV505PlayAutoResume505Toggle() {
+    val current = BiliClient.prefs.v505playAutoResume505
+    BiliClient.prefs.v505playAutoResume505 = !current
+    AppToast.show(this, "Play Auto Resume505: ${if (!current) "ON" else "OFF"}")
+}
+
+// v505: Plugin Auto Update505
+internal fun PlayerActivity.showV505PluginAutoUpdate505Toggle() {
+    val current = BiliClient.prefs.v505pluginAutoUpdate505
+    BiliClient.prefs.v505pluginAutoUpdate505 = !current
+    AppToast.show(this, "Plugin Auto Update505: ${if (!current) "ON" else "OFF"}")
+}
+
+// v505: Pop Up Auto Dismiss505
+internal fun PlayerActivity.showV505PopUpAutoDismiss505Toggle() {
+    val current = BiliClient.prefs.v505popUpAutoDismiss505
+    BiliClient.prefs.v505popUpAutoDismiss505 = !current
+    AppToast.show(this, "Pop Up Auto Dismiss505: ${if (!current) "ON" else "OFF"}")
+}
+
+// v505: Port Auto Scan505
+internal fun PlayerActivity.showV505PortAutoScan505Toggle() {
+    val current = BiliClient.prefs.v505portAutoScan505
+    BiliClient.prefs.v505portAutoScan505 = !current
+    AppToast.show(this, "Port Auto Scan505: ${if (!current) "ON" else "OFF"}")
+}
+
+// v505: Post Auto Share505
+internal fun PlayerActivity.showV505PostAutoShare505Toggle() {
+    val current = BiliClient.prefs.v505postAutoShare505
+    BiliClient.prefs.v505postAutoShare505 = !current
+    AppToast.show(this, "Post Auto Share505: ${if (!current) "ON" else "OFF"}")
+}
+
+// v505: Power Save Mode505
+internal fun PlayerActivity.showV505PowerSaveMode505Toggle() {
+    val current = BiliClient.prefs.v505powerSaveMode505
+    BiliClient.prefs.v505powerSaveMode505 = !current
+    AppToast.show(this, "Power Save Mode505: ${if (!current) "ON" else "OFF"}")
+}
+
+// v505: Pre Buffer Enabled505
+internal fun PlayerActivity.showV505PreBufferEnabled505Toggle() {
+    val current = BiliClient.prefs.v505preBufferEnabled505
+    BiliClient.prefs.v505preBufferEnabled505 = !current
+    AppToast.show(this, "Pre Buffer Enabled505: ${if (!current) "ON" else "OFF"}")
+}
+
+// v505: Prefix Auto Trim505
+internal fun PlayerActivity.showV505PrefixAutoTrim505Toggle() {
+    val current = BiliClient.prefs.v505prefixAutoTrim505
+    BiliClient.prefs.v505prefixAutoTrim505 = !current
+    AppToast.show(this, "Prefix Auto Trim505: ${if (!current) "ON" else "OFF"}")
+}
+
+// v505: Press And Hold Action505
+internal fun PlayerActivity.showV505PressAndHoldAction505Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v505pressAndHoldAction505).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Press And Hold Action505",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v505pressAndHoldAction505 = value
+        AppToast.show(this, "Press And Hold Action505: $value")
+    }
+}
+
+// v505: Primary Audio Track505
+internal fun PlayerActivity.showV505PrimaryAudioTrack505Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v505primaryAudioTrack505).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Primary Audio Track505",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v505primaryAudioTrack505 = value
+        AppToast.show(this, "Primary Audio Track505: $value")
+    }
+}
+
+// v505: Print Auto Format505
+internal fun PlayerActivity.showV505PrintAutoFormat505Toggle() {
+    val current = BiliClient.prefs.v505printAutoFormat505
+    BiliClient.prefs.v505printAutoFormat505 = !current
+    AppToast.show(this, "Print Auto Format505: ${if (!current) "ON" else "OFF"}")
+}
+
+// v505: Priority Queue Enabled505
+internal fun PlayerActivity.showV505PriorityQueueEnabled505Toggle() {
+    val current = BiliClient.prefs.v505priorityQueueEnabled505
+    BiliClient.prefs.v505priorityQueueEnabled505 = !current
+    AppToast.show(this, "Priority Queue Enabled505: ${if (!current) "ON" else "OFF"}")
+}
+
+// v505: Private Mode Auto505
+internal fun PlayerActivity.showV505PrivateModeAuto505Toggle() {
+    val current = BiliClient.prefs.v505privateModeAuto505
+    BiliClient.prefs.v505privateModeAuto505 = !current
+    AppToast.show(this, "Private Mode Auto505: ${if (!current) "ON" else "OFF"}")
+}
+
+// v506: Place Auto Detect506
+internal fun PlayerActivity.showV506PlaceAutoDetect506Toggle() {
+    val current = BiliClient.prefs.v506placeAutoDetect506
+    BiliClient.prefs.v506placeAutoDetect506 = !current
+    AppToast.show(this, "Place Auto Detect506: ${if (!current) "ON" else "OFF"}")
+}
+
+// v506: Platform Auto Adapt506
+internal fun PlayerActivity.showV506PlatformAutoAdapt506Toggle() {
+    val current = BiliClient.prefs.v506platformAutoAdapt506
+    BiliClient.prefs.v506platformAutoAdapt506 = !current
+    AppToast.show(this, "Platform Auto Adapt506: ${if (!current) "ON" else "OFF"}")
+}
+
+// v506: Play Auto Resume506
+internal fun PlayerActivity.showV506PlayAutoResume506Toggle() {
+    val current = BiliClient.prefs.v506playAutoResume506
+    BiliClient.prefs.v506playAutoResume506 = !current
+    AppToast.show(this, "Play Auto Resume506: ${if (!current) "ON" else "OFF"}")
+}
+
+// v506: Plugin Auto Update506
+internal fun PlayerActivity.showV506PluginAutoUpdate506Toggle() {
+    val current = BiliClient.prefs.v506pluginAutoUpdate506
+    BiliClient.prefs.v506pluginAutoUpdate506 = !current
+    AppToast.show(this, "Plugin Auto Update506: ${if (!current) "ON" else "OFF"}")
+}
+
+// v506: Pop Up Auto Dismiss506
+internal fun PlayerActivity.showV506PopUpAutoDismiss506Toggle() {
+    val current = BiliClient.prefs.v506popUpAutoDismiss506
+    BiliClient.prefs.v506popUpAutoDismiss506 = !current
+    AppToast.show(this, "Pop Up Auto Dismiss506: ${if (!current) "ON" else "OFF"}")
+}
+
+// v506: Port Auto Scan506
+internal fun PlayerActivity.showV506PortAutoScan506Toggle() {
+    val current = BiliClient.prefs.v506portAutoScan506
+    BiliClient.prefs.v506portAutoScan506 = !current
+    AppToast.show(this, "Port Auto Scan506: ${if (!current) "ON" else "OFF"}")
+}
+
+// v506: Post Auto Share506
+internal fun PlayerActivity.showV506PostAutoShare506Toggle() {
+    val current = BiliClient.prefs.v506postAutoShare506
+    BiliClient.prefs.v506postAutoShare506 = !current
+    AppToast.show(this, "Post Auto Share506: ${if (!current) "ON" else "OFF"}")
+}
+
+// v506: Power Save Mode506
+internal fun PlayerActivity.showV506PowerSaveMode506Toggle() {
+    val current = BiliClient.prefs.v506powerSaveMode506
+    BiliClient.prefs.v506powerSaveMode506 = !current
+    AppToast.show(this, "Power Save Mode506: ${if (!current) "ON" else "OFF"}")
+}
+
+// v506: Pre Buffer Enabled506
+internal fun PlayerActivity.showV506PreBufferEnabled506Toggle() {
+    val current = BiliClient.prefs.v506preBufferEnabled506
+    BiliClient.prefs.v506preBufferEnabled506 = !current
+    AppToast.show(this, "Pre Buffer Enabled506: ${if (!current) "ON" else "OFF"}")
+}
+
+// v506: Prefix Auto Trim506
+internal fun PlayerActivity.showV506PrefixAutoTrim506Toggle() {
+    val current = BiliClient.prefs.v506prefixAutoTrim506
+    BiliClient.prefs.v506prefixAutoTrim506 = !current
+    AppToast.show(this, "Prefix Auto Trim506: ${if (!current) "ON" else "OFF"}")
+}
+
+// v506: Press And Hold Action506
+internal fun PlayerActivity.showV506PressAndHoldAction506Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v506pressAndHoldAction506).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Press And Hold Action506",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v506pressAndHoldAction506 = value
+        AppToast.show(this, "Press And Hold Action506: $value")
+    }
+}
+
+// v506: Primary Audio Track506
+internal fun PlayerActivity.showV506PrimaryAudioTrack506Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v506primaryAudioTrack506).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Primary Audio Track506",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v506primaryAudioTrack506 = value
+        AppToast.show(this, "Primary Audio Track506: $value")
+    }
+}
+
+// v506: Print Auto Format506
+internal fun PlayerActivity.showV506PrintAutoFormat506Toggle() {
+    val current = BiliClient.prefs.v506printAutoFormat506
+    BiliClient.prefs.v506printAutoFormat506 = !current
+    AppToast.show(this, "Print Auto Format506: ${if (!current) "ON" else "OFF"}")
+}
+
+// v506: Priority Queue Enabled506
+internal fun PlayerActivity.showV506PriorityQueueEnabled506Toggle() {
+    val current = BiliClient.prefs.v506priorityQueueEnabled506
+    BiliClient.prefs.v506priorityQueueEnabled506 = !current
+    AppToast.show(this, "Priority Queue Enabled506: ${if (!current) "ON" else "OFF"}")
+}
+
+// v506: Private Mode Auto506
+internal fun PlayerActivity.showV506PrivateModeAuto506Toggle() {
+    val current = BiliClient.prefs.v506privateModeAuto506
+    BiliClient.prefs.v506privateModeAuto506 = !current
+    AppToast.show(this, "Private Mode Auto506: ${if (!current) "ON" else "OFF"}")
+}
+
+// v507: Place Auto Detect507
+internal fun PlayerActivity.showV507PlaceAutoDetect507Toggle() {
+    val current = BiliClient.prefs.v507placeAutoDetect507
+    BiliClient.prefs.v507placeAutoDetect507 = !current
+    AppToast.show(this, "Place Auto Detect507: ${if (!current) "ON" else "OFF"}")
+}
+
+// v507: Platform Auto Adapt507
+internal fun PlayerActivity.showV507PlatformAutoAdapt507Toggle() {
+    val current = BiliClient.prefs.v507platformAutoAdapt507
+    BiliClient.prefs.v507platformAutoAdapt507 = !current
+    AppToast.show(this, "Platform Auto Adapt507: ${if (!current) "ON" else "OFF"}")
+}
+
+// v507: Play Auto Resume507
+internal fun PlayerActivity.showV507PlayAutoResume507Toggle() {
+    val current = BiliClient.prefs.v507playAutoResume507
+    BiliClient.prefs.v507playAutoResume507 = !current
+    AppToast.show(this, "Play Auto Resume507: ${if (!current) "ON" else "OFF"}")
+}
+
+// v507: Plugin Auto Update507
+internal fun PlayerActivity.showV507PluginAutoUpdate507Toggle() {
+    val current = BiliClient.prefs.v507pluginAutoUpdate507
+    BiliClient.prefs.v507pluginAutoUpdate507 = !current
+    AppToast.show(this, "Plugin Auto Update507: ${if (!current) "ON" else "OFF"}")
+}
+
+// v507: Pop Up Auto Dismiss507
+internal fun PlayerActivity.showV507PopUpAutoDismiss507Toggle() {
+    val current = BiliClient.prefs.v507popUpAutoDismiss507
+    BiliClient.prefs.v507popUpAutoDismiss507 = !current
+    AppToast.show(this, "Pop Up Auto Dismiss507: ${if (!current) "ON" else "OFF"}")
+}
+
+// v507: Port Auto Scan507
+internal fun PlayerActivity.showV507PortAutoScan507Toggle() {
+    val current = BiliClient.prefs.v507portAutoScan507
+    BiliClient.prefs.v507portAutoScan507 = !current
+    AppToast.show(this, "Port Auto Scan507: ${if (!current) "ON" else "OFF"}")
+}
+
+// v507: Post Auto Share507
+internal fun PlayerActivity.showV507PostAutoShare507Toggle() {
+    val current = BiliClient.prefs.v507postAutoShare507
+    BiliClient.prefs.v507postAutoShare507 = !current
+    AppToast.show(this, "Post Auto Share507: ${if (!current) "ON" else "OFF"}")
+}
+
+// v507: Power Save Mode507
+internal fun PlayerActivity.showV507PowerSaveMode507Toggle() {
+    val current = BiliClient.prefs.v507powerSaveMode507
+    BiliClient.prefs.v507powerSaveMode507 = !current
+    AppToast.show(this, "Power Save Mode507: ${if (!current) "ON" else "OFF"}")
+}
+
+// v507: Pre Buffer Enabled507
+internal fun PlayerActivity.showV507PreBufferEnabled507Toggle() {
+    val current = BiliClient.prefs.v507preBufferEnabled507
+    BiliClient.prefs.v507preBufferEnabled507 = !current
+    AppToast.show(this, "Pre Buffer Enabled507: ${if (!current) "ON" else "OFF"}")
+}
+
+// v507: Prefix Auto Trim507
+internal fun PlayerActivity.showV507PrefixAutoTrim507Toggle() {
+    val current = BiliClient.prefs.v507prefixAutoTrim507
+    BiliClient.prefs.v507prefixAutoTrim507 = !current
+    AppToast.show(this, "Prefix Auto Trim507: ${if (!current) "ON" else "OFF"}")
+}
+
+// v507: Press And Hold Action507
+internal fun PlayerActivity.showV507PressAndHoldAction507Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v507pressAndHoldAction507).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Press And Hold Action507",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v507pressAndHoldAction507 = value
+        AppToast.show(this, "Press And Hold Action507: $value")
+    }
+}
+
+// v507: Primary Audio Track507
+internal fun PlayerActivity.showV507PrimaryAudioTrack507Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v507primaryAudioTrack507).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Primary Audio Track507",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v507primaryAudioTrack507 = value
+        AppToast.show(this, "Primary Audio Track507: $value")
+    }
+}
+
+// v507: Print Auto Format507
+internal fun PlayerActivity.showV507PrintAutoFormat507Toggle() {
+    val current = BiliClient.prefs.v507printAutoFormat507
+    BiliClient.prefs.v507printAutoFormat507 = !current
+    AppToast.show(this, "Print Auto Format507: ${if (!current) "ON" else "OFF"}")
+}
+
+// v507: Priority Queue Enabled507
+internal fun PlayerActivity.showV507PriorityQueueEnabled507Toggle() {
+    val current = BiliClient.prefs.v507priorityQueueEnabled507
+    BiliClient.prefs.v507priorityQueueEnabled507 = !current
+    AppToast.show(this, "Priority Queue Enabled507: ${if (!current) "ON" else "OFF"}")
+}
+
+// v507: Private Mode Auto507
+internal fun PlayerActivity.showV507PrivateModeAuto507Toggle() {
+    val current = BiliClient.prefs.v507privateModeAuto507
+    BiliClient.prefs.v507privateModeAuto507 = !current
+    AppToast.show(this, "Private Mode Auto507: ${if (!current) "ON" else "OFF"}")
+}
+
+// v508: Place Auto Detect508
+internal fun PlayerActivity.showV508PlaceAutoDetect508Toggle() {
+    val current = BiliClient.prefs.v508placeAutoDetect508
+    BiliClient.prefs.v508placeAutoDetect508 = !current
+    AppToast.show(this, "Place Auto Detect508: ${if (!current) "ON" else "OFF"}")
+}
+
+// v508: Platform Auto Adapt508
+internal fun PlayerActivity.showV508PlatformAutoAdapt508Toggle() {
+    val current = BiliClient.prefs.v508platformAutoAdapt508
+    BiliClient.prefs.v508platformAutoAdapt508 = !current
+    AppToast.show(this, "Platform Auto Adapt508: ${if (!current) "ON" else "OFF"}")
+}
+
+// v508: Play Auto Resume508
+internal fun PlayerActivity.showV508PlayAutoResume508Toggle() {
+    val current = BiliClient.prefs.v508playAutoResume508
+    BiliClient.prefs.v508playAutoResume508 = !current
+    AppToast.show(this, "Play Auto Resume508: ${if (!current) "ON" else "OFF"}")
+}
+
+// v508: Plugin Auto Update508
+internal fun PlayerActivity.showV508PluginAutoUpdate508Toggle() {
+    val current = BiliClient.prefs.v508pluginAutoUpdate508
+    BiliClient.prefs.v508pluginAutoUpdate508 = !current
+    AppToast.show(this, "Plugin Auto Update508: ${if (!current) "ON" else "OFF"}")
+}
+
+// v508: Pop Up Auto Dismiss508
+internal fun PlayerActivity.showV508PopUpAutoDismiss508Toggle() {
+    val current = BiliClient.prefs.v508popUpAutoDismiss508
+    BiliClient.prefs.v508popUpAutoDismiss508 = !current
+    AppToast.show(this, "Pop Up Auto Dismiss508: ${if (!current) "ON" else "OFF"}")
+}
+
+// v508: Port Auto Scan508
+internal fun PlayerActivity.showV508PortAutoScan508Toggle() {
+    val current = BiliClient.prefs.v508portAutoScan508
+    BiliClient.prefs.v508portAutoScan508 = !current
+    AppToast.show(this, "Port Auto Scan508: ${if (!current) "ON" else "OFF"}")
+}
+
+// v508: Post Auto Share508
+internal fun PlayerActivity.showV508PostAutoShare508Toggle() {
+    val current = BiliClient.prefs.v508postAutoShare508
+    BiliClient.prefs.v508postAutoShare508 = !current
+    AppToast.show(this, "Post Auto Share508: ${if (!current) "ON" else "OFF"}")
+}
+
+// v508: Power Save Mode508
+internal fun PlayerActivity.showV508PowerSaveMode508Toggle() {
+    val current = BiliClient.prefs.v508powerSaveMode508
+    BiliClient.prefs.v508powerSaveMode508 = !current
+    AppToast.show(this, "Power Save Mode508: ${if (!current) "ON" else "OFF"}")
+}
+
+// v508: Pre Buffer Enabled508
+internal fun PlayerActivity.showV508PreBufferEnabled508Toggle() {
+    val current = BiliClient.prefs.v508preBufferEnabled508
+    BiliClient.prefs.v508preBufferEnabled508 = !current
+    AppToast.show(this, "Pre Buffer Enabled508: ${if (!current) "ON" else "OFF"}")
+}
+
+// v508: Prefix Auto Trim508
+internal fun PlayerActivity.showV508PrefixAutoTrim508Toggle() {
+    val current = BiliClient.prefs.v508prefixAutoTrim508
+    BiliClient.prefs.v508prefixAutoTrim508 = !current
+    AppToast.show(this, "Prefix Auto Trim508: ${if (!current) "ON" else "OFF"}")
+}
+
+// v508: Press And Hold Action508
+internal fun PlayerActivity.showV508PressAndHoldAction508Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v508pressAndHoldAction508).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Press And Hold Action508",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v508pressAndHoldAction508 = value
+        AppToast.show(this, "Press And Hold Action508: $value")
+    }
+}
+
+// v508: Primary Audio Track508
+internal fun PlayerActivity.showV508PrimaryAudioTrack508Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v508primaryAudioTrack508).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Primary Audio Track508",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v508primaryAudioTrack508 = value
+        AppToast.show(this, "Primary Audio Track508: $value")
+    }
+}
+
+// v508: Print Auto Format508
+internal fun PlayerActivity.showV508PrintAutoFormat508Toggle() {
+    val current = BiliClient.prefs.v508printAutoFormat508
+    BiliClient.prefs.v508printAutoFormat508 = !current
+    AppToast.show(this, "Print Auto Format508: ${if (!current) "ON" else "OFF"}")
+}
+
+// v508: Priority Queue Enabled508
+internal fun PlayerActivity.showV508PriorityQueueEnabled508Toggle() {
+    val current = BiliClient.prefs.v508priorityQueueEnabled508
+    BiliClient.prefs.v508priorityQueueEnabled508 = !current
+    AppToast.show(this, "Priority Queue Enabled508: ${if (!current) "ON" else "OFF"}")
+}
+
+// v508: Private Mode Auto508
+internal fun PlayerActivity.showV508PrivateModeAuto508Toggle() {
+    val current = BiliClient.prefs.v508privateModeAuto508
+    BiliClient.prefs.v508privateModeAuto508 = !current
+    AppToast.show(this, "Private Mode Auto508: ${if (!current) "ON" else "OFF"}")
+}
+
+// v509: Place Auto Detect509
+internal fun PlayerActivity.showV509PlaceAutoDetect509Toggle() {
+    val current = BiliClient.prefs.v509placeAutoDetect509
+    BiliClient.prefs.v509placeAutoDetect509 = !current
+    AppToast.show(this, "Place Auto Detect509: ${if (!current) "ON" else "OFF"}")
+}
+
+// v509: Platform Auto Adapt509
+internal fun PlayerActivity.showV509PlatformAutoAdapt509Toggle() {
+    val current = BiliClient.prefs.v509platformAutoAdapt509
+    BiliClient.prefs.v509platformAutoAdapt509 = !current
+    AppToast.show(this, "Platform Auto Adapt509: ${if (!current) "ON" else "OFF"}")
+}
+
+// v509: Play Auto Resume509
+internal fun PlayerActivity.showV509PlayAutoResume509Toggle() {
+    val current = BiliClient.prefs.v509playAutoResume509
+    BiliClient.prefs.v509playAutoResume509 = !current
+    AppToast.show(this, "Play Auto Resume509: ${if (!current) "ON" else "OFF"}")
+}
+
+// v509: Plugin Auto Update509
+internal fun PlayerActivity.showV509PluginAutoUpdate509Toggle() {
+    val current = BiliClient.prefs.v509pluginAutoUpdate509
+    BiliClient.prefs.v509pluginAutoUpdate509 = !current
+    AppToast.show(this, "Plugin Auto Update509: ${if (!current) "ON" else "OFF"}")
+}
+
+// v509: Pop Up Auto Dismiss509
+internal fun PlayerActivity.showV509PopUpAutoDismiss509Toggle() {
+    val current = BiliClient.prefs.v509popUpAutoDismiss509
+    BiliClient.prefs.v509popUpAutoDismiss509 = !current
+    AppToast.show(this, "Pop Up Auto Dismiss509: ${if (!current) "ON" else "OFF"}")
+}
+
+// v509: Port Auto Scan509
+internal fun PlayerActivity.showV509PortAutoScan509Toggle() {
+    val current = BiliClient.prefs.v509portAutoScan509
+    BiliClient.prefs.v509portAutoScan509 = !current
+    AppToast.show(this, "Port Auto Scan509: ${if (!current) "ON" else "OFF"}")
+}
+
+// v509: Post Auto Share509
+internal fun PlayerActivity.showV509PostAutoShare509Toggle() {
+    val current = BiliClient.prefs.v509postAutoShare509
+    BiliClient.prefs.v509postAutoShare509 = !current
+    AppToast.show(this, "Post Auto Share509: ${if (!current) "ON" else "OFF"}")
+}
+
+// v509: Power Save Mode509
+internal fun PlayerActivity.showV509PowerSaveMode509Toggle() {
+    val current = BiliClient.prefs.v509powerSaveMode509
+    BiliClient.prefs.v509powerSaveMode509 = !current
+    AppToast.show(this, "Power Save Mode509: ${if (!current) "ON" else "OFF"}")
+}
+
+// v509: Pre Buffer Enabled509
+internal fun PlayerActivity.showV509PreBufferEnabled509Toggle() {
+    val current = BiliClient.prefs.v509preBufferEnabled509
+    BiliClient.prefs.v509preBufferEnabled509 = !current
+    AppToast.show(this, "Pre Buffer Enabled509: ${if (!current) "ON" else "OFF"}")
+}
+
+// v509: Prefix Auto Trim509
+internal fun PlayerActivity.showV509PrefixAutoTrim509Toggle() {
+    val current = BiliClient.prefs.v509prefixAutoTrim509
+    BiliClient.prefs.v509prefixAutoTrim509 = !current
+    AppToast.show(this, "Prefix Auto Trim509: ${if (!current) "ON" else "OFF"}")
+}
+
+// v509: Press And Hold Action509
+internal fun PlayerActivity.showV509PressAndHoldAction509Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v509pressAndHoldAction509).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Press And Hold Action509",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v509pressAndHoldAction509 = value
+        AppToast.show(this, "Press And Hold Action509: $value")
+    }
+}
+
+// v509: Primary Audio Track509
+internal fun PlayerActivity.showV509PrimaryAudioTrack509Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v509primaryAudioTrack509).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Primary Audio Track509",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v509primaryAudioTrack509 = value
+        AppToast.show(this, "Primary Audio Track509: $value")
+    }
+}
+
+// v509: Print Auto Format509
+internal fun PlayerActivity.showV509PrintAutoFormat509Toggle() {
+    val current = BiliClient.prefs.v509printAutoFormat509
+    BiliClient.prefs.v509printAutoFormat509 = !current
+    AppToast.show(this, "Print Auto Format509: ${if (!current) "ON" else "OFF"}")
+}
+
+// v509: Priority Queue Enabled509
+internal fun PlayerActivity.showV509PriorityQueueEnabled509Toggle() {
+    val current = BiliClient.prefs.v509priorityQueueEnabled509
+    BiliClient.prefs.v509priorityQueueEnabled509 = !current
+    AppToast.show(this, "Priority Queue Enabled509: ${if (!current) "ON" else "OFF"}")
+}
+
+// v509: Private Mode Auto509
+internal fun PlayerActivity.showV509PrivateModeAuto509Toggle() {
+    val current = BiliClient.prefs.v509privateModeAuto509
+    BiliClient.prefs.v509privateModeAuto509 = !current
+    AppToast.show(this, "Private Mode Auto509: ${if (!current) "ON" else "OFF"}")
+}
+
+// v510: Place Auto Detect510
+internal fun PlayerActivity.showV510PlaceAutoDetect510Toggle() {
+    val current = BiliClient.prefs.v510placeAutoDetect510
+    BiliClient.prefs.v510placeAutoDetect510 = !current
+    AppToast.show(this, "Place Auto Detect510: ${if (!current) "ON" else "OFF"}")
+}
+
+// v510: Platform Auto Adapt510
+internal fun PlayerActivity.showV510PlatformAutoAdapt510Toggle() {
+    val current = BiliClient.prefs.v510platformAutoAdapt510
+    BiliClient.prefs.v510platformAutoAdapt510 = !current
+    AppToast.show(this, "Platform Auto Adapt510: ${if (!current) "ON" else "OFF"}")
+}
+
+// v510: Play Auto Resume510
+internal fun PlayerActivity.showV510PlayAutoResume510Toggle() {
+    val current = BiliClient.prefs.v510playAutoResume510
+    BiliClient.prefs.v510playAutoResume510 = !current
+    AppToast.show(this, "Play Auto Resume510: ${if (!current) "ON" else "OFF"}")
+}
+
+// v510: Plugin Auto Update510
+internal fun PlayerActivity.showV510PluginAutoUpdate510Toggle() {
+    val current = BiliClient.prefs.v510pluginAutoUpdate510
+    BiliClient.prefs.v510pluginAutoUpdate510 = !current
+    AppToast.show(this, "Plugin Auto Update510: ${if (!current) "ON" else "OFF"}")
+}
+
+// v510: Pop Up Auto Dismiss510
+internal fun PlayerActivity.showV510PopUpAutoDismiss510Toggle() {
+    val current = BiliClient.prefs.v510popUpAutoDismiss510
+    BiliClient.prefs.v510popUpAutoDismiss510 = !current
+    AppToast.show(this, "Pop Up Auto Dismiss510: ${if (!current) "ON" else "OFF"}")
+}
+
+// v510: Port Auto Scan510
+internal fun PlayerActivity.showV510PortAutoScan510Toggle() {
+    val current = BiliClient.prefs.v510portAutoScan510
+    BiliClient.prefs.v510portAutoScan510 = !current
+    AppToast.show(this, "Port Auto Scan510: ${if (!current) "ON" else "OFF"}")
+}
+
+// v510: Post Auto Share510
+internal fun PlayerActivity.showV510PostAutoShare510Toggle() {
+    val current = BiliClient.prefs.v510postAutoShare510
+    BiliClient.prefs.v510postAutoShare510 = !current
+    AppToast.show(this, "Post Auto Share510: ${if (!current) "ON" else "OFF"}")
+}
+
+// v510: Power Save Mode510
+internal fun PlayerActivity.showV510PowerSaveMode510Toggle() {
+    val current = BiliClient.prefs.v510powerSaveMode510
+    BiliClient.prefs.v510powerSaveMode510 = !current
+    AppToast.show(this, "Power Save Mode510: ${if (!current) "ON" else "OFF"}")
+}
+
+// v510: Pre Buffer Enabled510
+internal fun PlayerActivity.showV510PreBufferEnabled510Toggle() {
+    val current = BiliClient.prefs.v510preBufferEnabled510
+    BiliClient.prefs.v510preBufferEnabled510 = !current
+    AppToast.show(this, "Pre Buffer Enabled510: ${if (!current) "ON" else "OFF"}")
+}
+
+// v510: Prefix Auto Trim510
+internal fun PlayerActivity.showV510PrefixAutoTrim510Toggle() {
+    val current = BiliClient.prefs.v510prefixAutoTrim510
+    BiliClient.prefs.v510prefixAutoTrim510 = !current
+    AppToast.show(this, "Prefix Auto Trim510: ${if (!current) "ON" else "OFF"}")
+}
+
+// v510: Press And Hold Action510
+internal fun PlayerActivity.showV510PressAndHoldAction510Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v510pressAndHoldAction510).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Press And Hold Action510",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v510pressAndHoldAction510 = value
+        AppToast.show(this, "Press And Hold Action510: $value")
+    }
+}
+
+// v510: Primary Audio Track510
+internal fun PlayerActivity.showV510PrimaryAudioTrack510Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v510primaryAudioTrack510).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Primary Audio Track510",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v510primaryAudioTrack510 = value
+        AppToast.show(this, "Primary Audio Track510: $value")
+    }
+}
+
+// v510: Print Auto Format510
+internal fun PlayerActivity.showV510PrintAutoFormat510Toggle() {
+    val current = BiliClient.prefs.v510printAutoFormat510
+    BiliClient.prefs.v510printAutoFormat510 = !current
+    AppToast.show(this, "Print Auto Format510: ${if (!current) "ON" else "OFF"}")
+}
+
+// v510: Priority Queue Enabled510
+internal fun PlayerActivity.showV510PriorityQueueEnabled510Toggle() {
+    val current = BiliClient.prefs.v510priorityQueueEnabled510
+    BiliClient.prefs.v510priorityQueueEnabled510 = !current
+    AppToast.show(this, "Priority Queue Enabled510: ${if (!current) "ON" else "OFF"}")
+}
+
+// v510: Private Mode Auto510
+internal fun PlayerActivity.showV510PrivateModeAuto510Toggle() {
+    val current = BiliClient.prefs.v510privateModeAuto510
+    BiliClient.prefs.v510privateModeAuto510 = !current
+    AppToast.show(this, "Private Mode Auto510: ${if (!current) "ON" else "OFF"}")
+}
+

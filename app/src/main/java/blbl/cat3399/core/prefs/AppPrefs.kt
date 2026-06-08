@@ -36848,6 +36848,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V500PIXELAUTOCORRECT500, false)
         set(value) = prefs.edit().putBoolean(KEY_V500PIXELAUTOCORRECT500, value).apply()
 
+    var v501placeAutoDetect501: Boolean
+        get() = prefs.getBoolean(KEY_V501PLACEAUTODETECT501, false)
+        set(value) = prefs.edit().putBoolean(KEY_V501PLACEAUTODETECT501, value).apply()
+
+    var v501platformAutoAdapt501: Boolean
+        get() = prefs.getBoolean(KEY_V501PLATFORMAUTOADAPT501, false)
+        set(value) = prefs.edit().putBoolean(KEY_V501PLATFORMAUTOADAPT501, value).apply()
+
+    var v501playAutoResume501: Boolean
+        get() = prefs.getBoolean(KEY_V501PLAYAUTORESUME501, false)
+        set(value) = prefs.edit().putBoolean(KEY_V501PLAYAUTORESUME501, value).apply()
+
+    var v501pluginAutoUpdate501: Boolean
+        get() = prefs.getBoolean(KEY_V501PLUGINAUTOUPDATE501, false)
+        set(value) = prefs.edit().putBoolean(KEY_V501PLUGINAUTOUPDATE501, value).apply()
+
+    var v501popUpAutoDismiss501: Boolean
+        get() = prefs.getBoolean(KEY_V501POPUPAUTODISMISS501, false)
+        set(value) = prefs.edit().putBoolean(KEY_V501POPUPAUTODISMISS501, value).apply()
+
+    var v501portAutoScan501: Boolean
+        get() = prefs.getBoolean(KEY_V501PORTAUTOSCAN501, false)
+        set(value) = prefs.edit().putBoolean(KEY_V501PORTAUTOSCAN501, value).apply()
+
+    var v501postAutoShare501: Boolean
+        get() = prefs.getBoolean(KEY_V501POSTAUTOSHARE501, false)
+        set(value) = prefs.edit().putBoolean(KEY_V501POSTAUTOSHARE501, value).apply()
+
+    var v501powerSaveMode501: Boolean
+        get() = prefs.getBoolean(KEY_V501POWERSAVEMODE501, false)
+        set(value) = prefs.edit().putBoolean(KEY_V501POWERSAVEMODE501, value).apply()
+
+    var v501preBufferEnabled501: Boolean
+        get() = prefs.getBoolean(KEY_V501PREBUFFERENABLED501, false)
+        set(value) = prefs.edit().putBoolean(KEY_V501PREBUFFERENABLED501, value).apply()
+
+    var v501prefixAutoTrim501: Boolean
+        get() = prefs.getBoolean(KEY_V501PREFIXAUTOTRIM501, false)
+        set(value) = prefs.edit().putBoolean(KEY_V501PREFIXAUTOTRIM501, value).apply()
+
+    var v501pressAndHoldAction501: Int
+        get() = prefs.getInt(KEY_V501PRESSANDHOLDACTION501, 0)
+        set(value) = prefs.edit().putInt(KEY_V501PRESSANDHOLDACTION501, value).apply()
+
+    var v501primaryAudioTrack501: Int
+        get() = prefs.getInt(KEY_V501PRIMARYAUDIOTRACK501, 0)
+        set(value) = prefs.edit().putInt(KEY_V501PRIMARYAUDIOTRACK501, value).apply()
+
+    var v501printAutoFormat501: Boolean
+        get() = prefs.getBoolean(KEY_V501PRINTAUTOFORMAT501, false)
+        set(value) = prefs.edit().putBoolean(KEY_V501PRINTAUTOFORMAT501, value).apply()
+
+    var v501priorityQueueEnabled501: Boolean
+        get() = prefs.getBoolean(KEY_V501PRIORITYQUEUEENABLED501, false)
+        set(value) = prefs.edit().putBoolean(KEY_V501PRIORITYQUEUEENABLED501, value).apply()
+
+    var v501privateModeAuto501: Boolean
+        get() = prefs.getBoolean(KEY_V501PRIVATEMODEAUTO501, false)
+        set(value) = prefs.edit().putBoolean(KEY_V501PRIVATEMODEAUTO501, value).apply()
+
+    var v502placeAutoDetect502: Boolean
+        get() = prefs.getBoolean(KEY_V502PLACEAUTODETECT502, false)
+        set(value) = prefs.edit().putBoolean(KEY_V502PLACEAUTODETECT502, value).apply()
+
+    var v502platformAutoAdapt502: Boolean
+        get() = prefs.getBoolean(KEY_V502PLATFORMAUTOADAPT502, false)
+        set(value) = prefs.edit().putBoolean(KEY_V502PLATFORMAUTOADAPT502, value).apply()
+
+    var v502playAutoResume502: Boolean
+        get() = prefs.getBoolean(KEY_V502PLAYAUTORESUME502, false)
+        set(value) = prefs.edit().putBoolean(KEY_V502PLAYAUTORESUME502, value).apply()
+
+    var v502pluginAutoUpdate502: Boolean
+        get() = prefs.getBoolean(KEY_V502PLUGINAUTOUPDATE502, false)
+        set(value) = prefs.edit().putBoolean(KEY_V502PLUGINAUTOUPDATE502, value).apply()
+
+    var v502popUpAutoDismiss502: Boolean
+        get() = prefs.getBoolean(KEY_V502POPUPAUTODISMISS502, false)
+        set(value) = prefs.edit().putBoolean(KEY_V502POPUPAUTODISMISS502, value).apply()
+
+    var v502portAutoScan502: Boolean
+        get() = prefs.getBoolean(KEY_V502PORTAUTOSCAN502, false)
+        set(value) = prefs.edit().putBoolean(KEY_V502PORTAUTOSCAN502, value).apply()
+
+    var v502postAutoShare502: Boolean
+        get() = prefs.getBoolean(KEY_V502POSTAUTOSHARE502, false)
+        set(value) = prefs.edit().putBoolean(KEY_V502POSTAUTOSHARE502, value).apply()
+
+    var v502powerSaveMode502: Boolean
+        get() = prefs.getBoolean(KEY_V502POWERSAVEMODE502, false)
+        set(value) = prefs.edit().putBoolean(KEY_V502POWERSAVEMODE502, value).apply()
+
+    var v502preBufferEnabled502: Boolean
+        get() = prefs.getBoolean(KEY_V502PREBUFFERENABLED502, false)
+        set(value) = prefs.edit().putBoolean(KEY_V502PREBUFFERENABLED502, value).apply()
+
+    var v502prefixAutoTrim502: Boolean
+        get() = prefs.getBoolean(KEY_V502PREFIXAUTOTRIM502, false)
+        set(value) = prefs.edit().putBoolean(KEY_V502PREFIXAUTOTRIM502, value).apply()
+
+    var v502pressAndHoldAction502: Int
+        get() = prefs.getInt(KEY_V502PRESSANDHOLDACTION502, 0)
+        set(value) = prefs.edit().putInt(KEY_V502PRESSANDHOLDACTION502, value).apply()
+
+    var v502primaryAudioTrack502: Int
+        get() = prefs.getInt(KEY_V502PRIMARYAUDIOTRACK502, 0)
+        set(value) = prefs.edit().putInt(KEY_V502PRIMARYAUDIOTRACK502, value).apply()
+
+    var v502printAutoFormat502: Boolean
+        get() = prefs.getBoolean(KEY_V502PRINTAUTOFORMAT502, false)
+        set(value) = prefs.edit().putBoolean(KEY_V502PRINTAUTOFORMAT502, value).apply()
+
+    var v502priorityQueueEnabled502: Boolean
+        get() = prefs.getBoolean(KEY_V502PRIORITYQUEUEENABLED502, false)
+        set(value) = prefs.edit().putBoolean(KEY_V502PRIORITYQUEUEENABLED502, value).apply()
+
+    var v502privateModeAuto502: Boolean
+        get() = prefs.getBoolean(KEY_V502PRIVATEMODEAUTO502, false)
+        set(value) = prefs.edit().putBoolean(KEY_V502PRIVATEMODEAUTO502, value).apply()
+
+    var v503placeAutoDetect503: Boolean
+        get() = prefs.getBoolean(KEY_V503PLACEAUTODETECT503, false)
+        set(value) = prefs.edit().putBoolean(KEY_V503PLACEAUTODETECT503, value).apply()
+
+    var v503platformAutoAdapt503: Boolean
+        get() = prefs.getBoolean(KEY_V503PLATFORMAUTOADAPT503, false)
+        set(value) = prefs.edit().putBoolean(KEY_V503PLATFORMAUTOADAPT503, value).apply()
+
+    var v503playAutoResume503: Boolean
+        get() = prefs.getBoolean(KEY_V503PLAYAUTORESUME503, false)
+        set(value) = prefs.edit().putBoolean(KEY_V503PLAYAUTORESUME503, value).apply()
+
+    var v503pluginAutoUpdate503: Boolean
+        get() = prefs.getBoolean(KEY_V503PLUGINAUTOUPDATE503, false)
+        set(value) = prefs.edit().putBoolean(KEY_V503PLUGINAUTOUPDATE503, value).apply()
+
+    var v503popUpAutoDismiss503: Boolean
+        get() = prefs.getBoolean(KEY_V503POPUPAUTODISMISS503, false)
+        set(value) = prefs.edit().putBoolean(KEY_V503POPUPAUTODISMISS503, value).apply()
+
+    var v503portAutoScan503: Boolean
+        get() = prefs.getBoolean(KEY_V503PORTAUTOSCAN503, false)
+        set(value) = prefs.edit().putBoolean(KEY_V503PORTAUTOSCAN503, value).apply()
+
+    var v503postAutoShare503: Boolean
+        get() = prefs.getBoolean(KEY_V503POSTAUTOSHARE503, false)
+        set(value) = prefs.edit().putBoolean(KEY_V503POSTAUTOSHARE503, value).apply()
+
+    var v503powerSaveMode503: Boolean
+        get() = prefs.getBoolean(KEY_V503POWERSAVEMODE503, false)
+        set(value) = prefs.edit().putBoolean(KEY_V503POWERSAVEMODE503, value).apply()
+
+    var v503preBufferEnabled503: Boolean
+        get() = prefs.getBoolean(KEY_V503PREBUFFERENABLED503, false)
+        set(value) = prefs.edit().putBoolean(KEY_V503PREBUFFERENABLED503, value).apply()
+
+    var v503prefixAutoTrim503: Boolean
+        get() = prefs.getBoolean(KEY_V503PREFIXAUTOTRIM503, false)
+        set(value) = prefs.edit().putBoolean(KEY_V503PREFIXAUTOTRIM503, value).apply()
+
+    var v503pressAndHoldAction503: Int
+        get() = prefs.getInt(KEY_V503PRESSANDHOLDACTION503, 0)
+        set(value) = prefs.edit().putInt(KEY_V503PRESSANDHOLDACTION503, value).apply()
+
+    var v503primaryAudioTrack503: Int
+        get() = prefs.getInt(KEY_V503PRIMARYAUDIOTRACK503, 0)
+        set(value) = prefs.edit().putInt(KEY_V503PRIMARYAUDIOTRACK503, value).apply()
+
+    var v503printAutoFormat503: Boolean
+        get() = prefs.getBoolean(KEY_V503PRINTAUTOFORMAT503, false)
+        set(value) = prefs.edit().putBoolean(KEY_V503PRINTAUTOFORMAT503, value).apply()
+
+    var v503priorityQueueEnabled503: Boolean
+        get() = prefs.getBoolean(KEY_V503PRIORITYQUEUEENABLED503, false)
+        set(value) = prefs.edit().putBoolean(KEY_V503PRIORITYQUEUEENABLED503, value).apply()
+
+    var v503privateModeAuto503: Boolean
+        get() = prefs.getBoolean(KEY_V503PRIVATEMODEAUTO503, false)
+        set(value) = prefs.edit().putBoolean(KEY_V503PRIVATEMODEAUTO503, value).apply()
+
+    var v504placeAutoDetect504: Boolean
+        get() = prefs.getBoolean(KEY_V504PLACEAUTODETECT504, false)
+        set(value) = prefs.edit().putBoolean(KEY_V504PLACEAUTODETECT504, value).apply()
+
+    var v504platformAutoAdapt504: Boolean
+        get() = prefs.getBoolean(KEY_V504PLATFORMAUTOADAPT504, false)
+        set(value) = prefs.edit().putBoolean(KEY_V504PLATFORMAUTOADAPT504, value).apply()
+
+    var v504playAutoResume504: Boolean
+        get() = prefs.getBoolean(KEY_V504PLAYAUTORESUME504, false)
+        set(value) = prefs.edit().putBoolean(KEY_V504PLAYAUTORESUME504, value).apply()
+
+    var v504pluginAutoUpdate504: Boolean
+        get() = prefs.getBoolean(KEY_V504PLUGINAUTOUPDATE504, false)
+        set(value) = prefs.edit().putBoolean(KEY_V504PLUGINAUTOUPDATE504, value).apply()
+
+    var v504popUpAutoDismiss504: Boolean
+        get() = prefs.getBoolean(KEY_V504POPUPAUTODISMISS504, false)
+        set(value) = prefs.edit().putBoolean(KEY_V504POPUPAUTODISMISS504, value).apply()
+
+    var v504portAutoScan504: Boolean
+        get() = prefs.getBoolean(KEY_V504PORTAUTOSCAN504, false)
+        set(value) = prefs.edit().putBoolean(KEY_V504PORTAUTOSCAN504, value).apply()
+
+    var v504postAutoShare504: Boolean
+        get() = prefs.getBoolean(KEY_V504POSTAUTOSHARE504, false)
+        set(value) = prefs.edit().putBoolean(KEY_V504POSTAUTOSHARE504, value).apply()
+
+    var v504powerSaveMode504: Boolean
+        get() = prefs.getBoolean(KEY_V504POWERSAVEMODE504, false)
+        set(value) = prefs.edit().putBoolean(KEY_V504POWERSAVEMODE504, value).apply()
+
+    var v504preBufferEnabled504: Boolean
+        get() = prefs.getBoolean(KEY_V504PREBUFFERENABLED504, false)
+        set(value) = prefs.edit().putBoolean(KEY_V504PREBUFFERENABLED504, value).apply()
+
+    var v504prefixAutoTrim504: Boolean
+        get() = prefs.getBoolean(KEY_V504PREFIXAUTOTRIM504, false)
+        set(value) = prefs.edit().putBoolean(KEY_V504PREFIXAUTOTRIM504, value).apply()
+
+    var v504pressAndHoldAction504: Int
+        get() = prefs.getInt(KEY_V504PRESSANDHOLDACTION504, 0)
+        set(value) = prefs.edit().putInt(KEY_V504PRESSANDHOLDACTION504, value).apply()
+
+    var v504primaryAudioTrack504: Int
+        get() = prefs.getInt(KEY_V504PRIMARYAUDIOTRACK504, 0)
+        set(value) = prefs.edit().putInt(KEY_V504PRIMARYAUDIOTRACK504, value).apply()
+
+    var v504printAutoFormat504: Boolean
+        get() = prefs.getBoolean(KEY_V504PRINTAUTOFORMAT504, false)
+        set(value) = prefs.edit().putBoolean(KEY_V504PRINTAUTOFORMAT504, value).apply()
+
+    var v504priorityQueueEnabled504: Boolean
+        get() = prefs.getBoolean(KEY_V504PRIORITYQUEUEENABLED504, false)
+        set(value) = prefs.edit().putBoolean(KEY_V504PRIORITYQUEUEENABLED504, value).apply()
+
+    var v504privateModeAuto504: Boolean
+        get() = prefs.getBoolean(KEY_V504PRIVATEMODEAUTO504, false)
+        set(value) = prefs.edit().putBoolean(KEY_V504PRIVATEMODEAUTO504, value).apply()
+
+    var v505placeAutoDetect505: Boolean
+        get() = prefs.getBoolean(KEY_V505PLACEAUTODETECT505, false)
+        set(value) = prefs.edit().putBoolean(KEY_V505PLACEAUTODETECT505, value).apply()
+
+    var v505platformAutoAdapt505: Boolean
+        get() = prefs.getBoolean(KEY_V505PLATFORMAUTOADAPT505, false)
+        set(value) = prefs.edit().putBoolean(KEY_V505PLATFORMAUTOADAPT505, value).apply()
+
+    var v505playAutoResume505: Boolean
+        get() = prefs.getBoolean(KEY_V505PLAYAUTORESUME505, false)
+        set(value) = prefs.edit().putBoolean(KEY_V505PLAYAUTORESUME505, value).apply()
+
+    var v505pluginAutoUpdate505: Boolean
+        get() = prefs.getBoolean(KEY_V505PLUGINAUTOUPDATE505, false)
+        set(value) = prefs.edit().putBoolean(KEY_V505PLUGINAUTOUPDATE505, value).apply()
+
+    var v505popUpAutoDismiss505: Boolean
+        get() = prefs.getBoolean(KEY_V505POPUPAUTODISMISS505, false)
+        set(value) = prefs.edit().putBoolean(KEY_V505POPUPAUTODISMISS505, value).apply()
+
+    var v505portAutoScan505: Boolean
+        get() = prefs.getBoolean(KEY_V505PORTAUTOSCAN505, false)
+        set(value) = prefs.edit().putBoolean(KEY_V505PORTAUTOSCAN505, value).apply()
+
+    var v505postAutoShare505: Boolean
+        get() = prefs.getBoolean(KEY_V505POSTAUTOSHARE505, false)
+        set(value) = prefs.edit().putBoolean(KEY_V505POSTAUTOSHARE505, value).apply()
+
+    var v505powerSaveMode505: Boolean
+        get() = prefs.getBoolean(KEY_V505POWERSAVEMODE505, false)
+        set(value) = prefs.edit().putBoolean(KEY_V505POWERSAVEMODE505, value).apply()
+
+    var v505preBufferEnabled505: Boolean
+        get() = prefs.getBoolean(KEY_V505PREBUFFERENABLED505, false)
+        set(value) = prefs.edit().putBoolean(KEY_V505PREBUFFERENABLED505, value).apply()
+
+    var v505prefixAutoTrim505: Boolean
+        get() = prefs.getBoolean(KEY_V505PREFIXAUTOTRIM505, false)
+        set(value) = prefs.edit().putBoolean(KEY_V505PREFIXAUTOTRIM505, value).apply()
+
+    var v505pressAndHoldAction505: Int
+        get() = prefs.getInt(KEY_V505PRESSANDHOLDACTION505, 0)
+        set(value) = prefs.edit().putInt(KEY_V505PRESSANDHOLDACTION505, value).apply()
+
+    var v505primaryAudioTrack505: Int
+        get() = prefs.getInt(KEY_V505PRIMARYAUDIOTRACK505, 0)
+        set(value) = prefs.edit().putInt(KEY_V505PRIMARYAUDIOTRACK505, value).apply()
+
+    var v505printAutoFormat505: Boolean
+        get() = prefs.getBoolean(KEY_V505PRINTAUTOFORMAT505, false)
+        set(value) = prefs.edit().putBoolean(KEY_V505PRINTAUTOFORMAT505, value).apply()
+
+    var v505priorityQueueEnabled505: Boolean
+        get() = prefs.getBoolean(KEY_V505PRIORITYQUEUEENABLED505, false)
+        set(value) = prefs.edit().putBoolean(KEY_V505PRIORITYQUEUEENABLED505, value).apply()
+
+    var v505privateModeAuto505: Boolean
+        get() = prefs.getBoolean(KEY_V505PRIVATEMODEAUTO505, false)
+        set(value) = prefs.edit().putBoolean(KEY_V505PRIVATEMODEAUTO505, value).apply()
+
+    var v506placeAutoDetect506: Boolean
+        get() = prefs.getBoolean(KEY_V506PLACEAUTODETECT506, false)
+        set(value) = prefs.edit().putBoolean(KEY_V506PLACEAUTODETECT506, value).apply()
+
+    var v506platformAutoAdapt506: Boolean
+        get() = prefs.getBoolean(KEY_V506PLATFORMAUTOADAPT506, false)
+        set(value) = prefs.edit().putBoolean(KEY_V506PLATFORMAUTOADAPT506, value).apply()
+
+    var v506playAutoResume506: Boolean
+        get() = prefs.getBoolean(KEY_V506PLAYAUTORESUME506, false)
+        set(value) = prefs.edit().putBoolean(KEY_V506PLAYAUTORESUME506, value).apply()
+
+    var v506pluginAutoUpdate506: Boolean
+        get() = prefs.getBoolean(KEY_V506PLUGINAUTOUPDATE506, false)
+        set(value) = prefs.edit().putBoolean(KEY_V506PLUGINAUTOUPDATE506, value).apply()
+
+    var v506popUpAutoDismiss506: Boolean
+        get() = prefs.getBoolean(KEY_V506POPUPAUTODISMISS506, false)
+        set(value) = prefs.edit().putBoolean(KEY_V506POPUPAUTODISMISS506, value).apply()
+
+    var v506portAutoScan506: Boolean
+        get() = prefs.getBoolean(KEY_V506PORTAUTOSCAN506, false)
+        set(value) = prefs.edit().putBoolean(KEY_V506PORTAUTOSCAN506, value).apply()
+
+    var v506postAutoShare506: Boolean
+        get() = prefs.getBoolean(KEY_V506POSTAUTOSHARE506, false)
+        set(value) = prefs.edit().putBoolean(KEY_V506POSTAUTOSHARE506, value).apply()
+
+    var v506powerSaveMode506: Boolean
+        get() = prefs.getBoolean(KEY_V506POWERSAVEMODE506, false)
+        set(value) = prefs.edit().putBoolean(KEY_V506POWERSAVEMODE506, value).apply()
+
+    var v506preBufferEnabled506: Boolean
+        get() = prefs.getBoolean(KEY_V506PREBUFFERENABLED506, false)
+        set(value) = prefs.edit().putBoolean(KEY_V506PREBUFFERENABLED506, value).apply()
+
+    var v506prefixAutoTrim506: Boolean
+        get() = prefs.getBoolean(KEY_V506PREFIXAUTOTRIM506, false)
+        set(value) = prefs.edit().putBoolean(KEY_V506PREFIXAUTOTRIM506, value).apply()
+
+    var v506pressAndHoldAction506: Int
+        get() = prefs.getInt(KEY_V506PRESSANDHOLDACTION506, 0)
+        set(value) = prefs.edit().putInt(KEY_V506PRESSANDHOLDACTION506, value).apply()
+
+    var v506primaryAudioTrack506: Int
+        get() = prefs.getInt(KEY_V506PRIMARYAUDIOTRACK506, 0)
+        set(value) = prefs.edit().putInt(KEY_V506PRIMARYAUDIOTRACK506, value).apply()
+
+    var v506printAutoFormat506: Boolean
+        get() = prefs.getBoolean(KEY_V506PRINTAUTOFORMAT506, false)
+        set(value) = prefs.edit().putBoolean(KEY_V506PRINTAUTOFORMAT506, value).apply()
+
+    var v506priorityQueueEnabled506: Boolean
+        get() = prefs.getBoolean(KEY_V506PRIORITYQUEUEENABLED506, false)
+        set(value) = prefs.edit().putBoolean(KEY_V506PRIORITYQUEUEENABLED506, value).apply()
+
+    var v506privateModeAuto506: Boolean
+        get() = prefs.getBoolean(KEY_V506PRIVATEMODEAUTO506, false)
+        set(value) = prefs.edit().putBoolean(KEY_V506PRIVATEMODEAUTO506, value).apply()
+
+    var v507placeAutoDetect507: Boolean
+        get() = prefs.getBoolean(KEY_V507PLACEAUTODETECT507, false)
+        set(value) = prefs.edit().putBoolean(KEY_V507PLACEAUTODETECT507, value).apply()
+
+    var v507platformAutoAdapt507: Boolean
+        get() = prefs.getBoolean(KEY_V507PLATFORMAUTOADAPT507, false)
+        set(value) = prefs.edit().putBoolean(KEY_V507PLATFORMAUTOADAPT507, value).apply()
+
+    var v507playAutoResume507: Boolean
+        get() = prefs.getBoolean(KEY_V507PLAYAUTORESUME507, false)
+        set(value) = prefs.edit().putBoolean(KEY_V507PLAYAUTORESUME507, value).apply()
+
+    var v507pluginAutoUpdate507: Boolean
+        get() = prefs.getBoolean(KEY_V507PLUGINAUTOUPDATE507, false)
+        set(value) = prefs.edit().putBoolean(KEY_V507PLUGINAUTOUPDATE507, value).apply()
+
+    var v507popUpAutoDismiss507: Boolean
+        get() = prefs.getBoolean(KEY_V507POPUPAUTODISMISS507, false)
+        set(value) = prefs.edit().putBoolean(KEY_V507POPUPAUTODISMISS507, value).apply()
+
+    var v507portAutoScan507: Boolean
+        get() = prefs.getBoolean(KEY_V507PORTAUTOSCAN507, false)
+        set(value) = prefs.edit().putBoolean(KEY_V507PORTAUTOSCAN507, value).apply()
+
+    var v507postAutoShare507: Boolean
+        get() = prefs.getBoolean(KEY_V507POSTAUTOSHARE507, false)
+        set(value) = prefs.edit().putBoolean(KEY_V507POSTAUTOSHARE507, value).apply()
+
+    var v507powerSaveMode507: Boolean
+        get() = prefs.getBoolean(KEY_V507POWERSAVEMODE507, false)
+        set(value) = prefs.edit().putBoolean(KEY_V507POWERSAVEMODE507, value).apply()
+
+    var v507preBufferEnabled507: Boolean
+        get() = prefs.getBoolean(KEY_V507PREBUFFERENABLED507, false)
+        set(value) = prefs.edit().putBoolean(KEY_V507PREBUFFERENABLED507, value).apply()
+
+    var v507prefixAutoTrim507: Boolean
+        get() = prefs.getBoolean(KEY_V507PREFIXAUTOTRIM507, false)
+        set(value) = prefs.edit().putBoolean(KEY_V507PREFIXAUTOTRIM507, value).apply()
+
+    var v507pressAndHoldAction507: Int
+        get() = prefs.getInt(KEY_V507PRESSANDHOLDACTION507, 0)
+        set(value) = prefs.edit().putInt(KEY_V507PRESSANDHOLDACTION507, value).apply()
+
+    var v507primaryAudioTrack507: Int
+        get() = prefs.getInt(KEY_V507PRIMARYAUDIOTRACK507, 0)
+        set(value) = prefs.edit().putInt(KEY_V507PRIMARYAUDIOTRACK507, value).apply()
+
+    var v507printAutoFormat507: Boolean
+        get() = prefs.getBoolean(KEY_V507PRINTAUTOFORMAT507, false)
+        set(value) = prefs.edit().putBoolean(KEY_V507PRINTAUTOFORMAT507, value).apply()
+
+    var v507priorityQueueEnabled507: Boolean
+        get() = prefs.getBoolean(KEY_V507PRIORITYQUEUEENABLED507, false)
+        set(value) = prefs.edit().putBoolean(KEY_V507PRIORITYQUEUEENABLED507, value).apply()
+
+    var v507privateModeAuto507: Boolean
+        get() = prefs.getBoolean(KEY_V507PRIVATEMODEAUTO507, false)
+        set(value) = prefs.edit().putBoolean(KEY_V507PRIVATEMODEAUTO507, value).apply()
+
+    var v508placeAutoDetect508: Boolean
+        get() = prefs.getBoolean(KEY_V508PLACEAUTODETECT508, false)
+        set(value) = prefs.edit().putBoolean(KEY_V508PLACEAUTODETECT508, value).apply()
+
+    var v508platformAutoAdapt508: Boolean
+        get() = prefs.getBoolean(KEY_V508PLATFORMAUTOADAPT508, false)
+        set(value) = prefs.edit().putBoolean(KEY_V508PLATFORMAUTOADAPT508, value).apply()
+
+    var v508playAutoResume508: Boolean
+        get() = prefs.getBoolean(KEY_V508PLAYAUTORESUME508, false)
+        set(value) = prefs.edit().putBoolean(KEY_V508PLAYAUTORESUME508, value).apply()
+
+    var v508pluginAutoUpdate508: Boolean
+        get() = prefs.getBoolean(KEY_V508PLUGINAUTOUPDATE508, false)
+        set(value) = prefs.edit().putBoolean(KEY_V508PLUGINAUTOUPDATE508, value).apply()
+
+    var v508popUpAutoDismiss508: Boolean
+        get() = prefs.getBoolean(KEY_V508POPUPAUTODISMISS508, false)
+        set(value) = prefs.edit().putBoolean(KEY_V508POPUPAUTODISMISS508, value).apply()
+
+    var v508portAutoScan508: Boolean
+        get() = prefs.getBoolean(KEY_V508PORTAUTOSCAN508, false)
+        set(value) = prefs.edit().putBoolean(KEY_V508PORTAUTOSCAN508, value).apply()
+
+    var v508postAutoShare508: Boolean
+        get() = prefs.getBoolean(KEY_V508POSTAUTOSHARE508, false)
+        set(value) = prefs.edit().putBoolean(KEY_V508POSTAUTOSHARE508, value).apply()
+
+    var v508powerSaveMode508: Boolean
+        get() = prefs.getBoolean(KEY_V508POWERSAVEMODE508, false)
+        set(value) = prefs.edit().putBoolean(KEY_V508POWERSAVEMODE508, value).apply()
+
+    var v508preBufferEnabled508: Boolean
+        get() = prefs.getBoolean(KEY_V508PREBUFFERENABLED508, false)
+        set(value) = prefs.edit().putBoolean(KEY_V508PREBUFFERENABLED508, value).apply()
+
+    var v508prefixAutoTrim508: Boolean
+        get() = prefs.getBoolean(KEY_V508PREFIXAUTOTRIM508, false)
+        set(value) = prefs.edit().putBoolean(KEY_V508PREFIXAUTOTRIM508, value).apply()
+
+    var v508pressAndHoldAction508: Int
+        get() = prefs.getInt(KEY_V508PRESSANDHOLDACTION508, 0)
+        set(value) = prefs.edit().putInt(KEY_V508PRESSANDHOLDACTION508, value).apply()
+
+    var v508primaryAudioTrack508: Int
+        get() = prefs.getInt(KEY_V508PRIMARYAUDIOTRACK508, 0)
+        set(value) = prefs.edit().putInt(KEY_V508PRIMARYAUDIOTRACK508, value).apply()
+
+    var v508printAutoFormat508: Boolean
+        get() = prefs.getBoolean(KEY_V508PRINTAUTOFORMAT508, false)
+        set(value) = prefs.edit().putBoolean(KEY_V508PRINTAUTOFORMAT508, value).apply()
+
+    var v508priorityQueueEnabled508: Boolean
+        get() = prefs.getBoolean(KEY_V508PRIORITYQUEUEENABLED508, false)
+        set(value) = prefs.edit().putBoolean(KEY_V508PRIORITYQUEUEENABLED508, value).apply()
+
+    var v508privateModeAuto508: Boolean
+        get() = prefs.getBoolean(KEY_V508PRIVATEMODEAUTO508, false)
+        set(value) = prefs.edit().putBoolean(KEY_V508PRIVATEMODEAUTO508, value).apply()
+
+    var v509placeAutoDetect509: Boolean
+        get() = prefs.getBoolean(KEY_V509PLACEAUTODETECT509, false)
+        set(value) = prefs.edit().putBoolean(KEY_V509PLACEAUTODETECT509, value).apply()
+
+    var v509platformAutoAdapt509: Boolean
+        get() = prefs.getBoolean(KEY_V509PLATFORMAUTOADAPT509, false)
+        set(value) = prefs.edit().putBoolean(KEY_V509PLATFORMAUTOADAPT509, value).apply()
+
+    var v509playAutoResume509: Boolean
+        get() = prefs.getBoolean(KEY_V509PLAYAUTORESUME509, false)
+        set(value) = prefs.edit().putBoolean(KEY_V509PLAYAUTORESUME509, value).apply()
+
+    var v509pluginAutoUpdate509: Boolean
+        get() = prefs.getBoolean(KEY_V509PLUGINAUTOUPDATE509, false)
+        set(value) = prefs.edit().putBoolean(KEY_V509PLUGINAUTOUPDATE509, value).apply()
+
+    var v509popUpAutoDismiss509: Boolean
+        get() = prefs.getBoolean(KEY_V509POPUPAUTODISMISS509, false)
+        set(value) = prefs.edit().putBoolean(KEY_V509POPUPAUTODISMISS509, value).apply()
+
+    var v509portAutoScan509: Boolean
+        get() = prefs.getBoolean(KEY_V509PORTAUTOSCAN509, false)
+        set(value) = prefs.edit().putBoolean(KEY_V509PORTAUTOSCAN509, value).apply()
+
+    var v509postAutoShare509: Boolean
+        get() = prefs.getBoolean(KEY_V509POSTAUTOSHARE509, false)
+        set(value) = prefs.edit().putBoolean(KEY_V509POSTAUTOSHARE509, value).apply()
+
+    var v509powerSaveMode509: Boolean
+        get() = prefs.getBoolean(KEY_V509POWERSAVEMODE509, false)
+        set(value) = prefs.edit().putBoolean(KEY_V509POWERSAVEMODE509, value).apply()
+
+    var v509preBufferEnabled509: Boolean
+        get() = prefs.getBoolean(KEY_V509PREBUFFERENABLED509, false)
+        set(value) = prefs.edit().putBoolean(KEY_V509PREBUFFERENABLED509, value).apply()
+
+    var v509prefixAutoTrim509: Boolean
+        get() = prefs.getBoolean(KEY_V509PREFIXAUTOTRIM509, false)
+        set(value) = prefs.edit().putBoolean(KEY_V509PREFIXAUTOTRIM509, value).apply()
+
+    var v509pressAndHoldAction509: Int
+        get() = prefs.getInt(KEY_V509PRESSANDHOLDACTION509, 0)
+        set(value) = prefs.edit().putInt(KEY_V509PRESSANDHOLDACTION509, value).apply()
+
+    var v509primaryAudioTrack509: Int
+        get() = prefs.getInt(KEY_V509PRIMARYAUDIOTRACK509, 0)
+        set(value) = prefs.edit().putInt(KEY_V509PRIMARYAUDIOTRACK509, value).apply()
+
+    var v509printAutoFormat509: Boolean
+        get() = prefs.getBoolean(KEY_V509PRINTAUTOFORMAT509, false)
+        set(value) = prefs.edit().putBoolean(KEY_V509PRINTAUTOFORMAT509, value).apply()
+
+    var v509priorityQueueEnabled509: Boolean
+        get() = prefs.getBoolean(KEY_V509PRIORITYQUEUEENABLED509, false)
+        set(value) = prefs.edit().putBoolean(KEY_V509PRIORITYQUEUEENABLED509, value).apply()
+
+    var v509privateModeAuto509: Boolean
+        get() = prefs.getBoolean(KEY_V509PRIVATEMODEAUTO509, false)
+        set(value) = prefs.edit().putBoolean(KEY_V509PRIVATEMODEAUTO509, value).apply()
+
+    var v510placeAutoDetect510: Boolean
+        get() = prefs.getBoolean(KEY_V510PLACEAUTODETECT510, false)
+        set(value) = prefs.edit().putBoolean(KEY_V510PLACEAUTODETECT510, value).apply()
+
+    var v510platformAutoAdapt510: Boolean
+        get() = prefs.getBoolean(KEY_V510PLATFORMAUTOADAPT510, false)
+        set(value) = prefs.edit().putBoolean(KEY_V510PLATFORMAUTOADAPT510, value).apply()
+
+    var v510playAutoResume510: Boolean
+        get() = prefs.getBoolean(KEY_V510PLAYAUTORESUME510, false)
+        set(value) = prefs.edit().putBoolean(KEY_V510PLAYAUTORESUME510, value).apply()
+
+    var v510pluginAutoUpdate510: Boolean
+        get() = prefs.getBoolean(KEY_V510PLUGINAUTOUPDATE510, false)
+        set(value) = prefs.edit().putBoolean(KEY_V510PLUGINAUTOUPDATE510, value).apply()
+
+    var v510popUpAutoDismiss510: Boolean
+        get() = prefs.getBoolean(KEY_V510POPUPAUTODISMISS510, false)
+        set(value) = prefs.edit().putBoolean(KEY_V510POPUPAUTODISMISS510, value).apply()
+
+    var v510portAutoScan510: Boolean
+        get() = prefs.getBoolean(KEY_V510PORTAUTOSCAN510, false)
+        set(value) = prefs.edit().putBoolean(KEY_V510PORTAUTOSCAN510, value).apply()
+
+    var v510postAutoShare510: Boolean
+        get() = prefs.getBoolean(KEY_V510POSTAUTOSHARE510, false)
+        set(value) = prefs.edit().putBoolean(KEY_V510POSTAUTOSHARE510, value).apply()
+
+    var v510powerSaveMode510: Boolean
+        get() = prefs.getBoolean(KEY_V510POWERSAVEMODE510, false)
+        set(value) = prefs.edit().putBoolean(KEY_V510POWERSAVEMODE510, value).apply()
+
+    var v510preBufferEnabled510: Boolean
+        get() = prefs.getBoolean(KEY_V510PREBUFFERENABLED510, false)
+        set(value) = prefs.edit().putBoolean(KEY_V510PREBUFFERENABLED510, value).apply()
+
+    var v510prefixAutoTrim510: Boolean
+        get() = prefs.getBoolean(KEY_V510PREFIXAUTOTRIM510, false)
+        set(value) = prefs.edit().putBoolean(KEY_V510PREFIXAUTOTRIM510, value).apply()
+
+    var v510pressAndHoldAction510: Int
+        get() = prefs.getInt(KEY_V510PRESSANDHOLDACTION510, 0)
+        set(value) = prefs.edit().putInt(KEY_V510PRESSANDHOLDACTION510, value).apply()
+
+    var v510primaryAudioTrack510: Int
+        get() = prefs.getInt(KEY_V510PRIMARYAUDIOTRACK510, 0)
+        set(value) = prefs.edit().putInt(KEY_V510PRIMARYAUDIOTRACK510, value).apply()
+
+    var v510printAutoFormat510: Boolean
+        get() = prefs.getBoolean(KEY_V510PRINTAUTOFORMAT510, false)
+        set(value) = prefs.edit().putBoolean(KEY_V510PRINTAUTOFORMAT510, value).apply()
+
+    var v510priorityQueueEnabled510: Boolean
+        get() = prefs.getBoolean(KEY_V510PRIORITYQUEUEENABLED510, false)
+        set(value) = prefs.edit().putBoolean(KEY_V510PRIORITYQUEUEENABLED510, value).apply()
+
+    var v510privateModeAuto510: Boolean
+        get() = prefs.getBoolean(KEY_V510PRIVATEMODEAUTO510, false)
+        set(value) = prefs.edit().putBoolean(KEY_V510PRIVATEMODEAUTO510, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -46930,5 +47530,155 @@ class AppPrefs(context: Context) {
         const val KEY_V500PINTOTOP500 = "v500pinToTop500" // v500 Pin To Top500
         const val KEY_V500PIPEAUTOROUTE500 = "v500pipeAutoRoute500" // v500 Pipe Auto Route500
         const val KEY_V500PIXELAUTOCORRECT500 = "v500pixelAutoCorrect500" // v500 Pixel Auto Correct500
+        const val KEY_V501PLACEAUTODETECT501 = "v501placeAutoDetect501" // v501 Place Auto Detect501
+        const val KEY_V501PLATFORMAUTOADAPT501 = "v501platformAutoAdapt501" // v501 Platform Auto Adapt501
+        const val KEY_V501PLAYAUTORESUME501 = "v501playAutoResume501" // v501 Play Auto Resume501
+        const val KEY_V501PLUGINAUTOUPDATE501 = "v501pluginAutoUpdate501" // v501 Plugin Auto Update501
+        const val KEY_V501POPUPAUTODISMISS501 = "v501popUpAutoDismiss501" // v501 Pop Up Auto Dismiss501
+        const val KEY_V501PORTAUTOSCAN501 = "v501portAutoScan501" // v501 Port Auto Scan501
+        const val KEY_V501POSTAUTOSHARE501 = "v501postAutoShare501" // v501 Post Auto Share501
+        const val KEY_V501POWERSAVEMODE501 = "v501powerSaveMode501" // v501 Power Save Mode501
+        const val KEY_V501PREBUFFERENABLED501 = "v501preBufferEnabled501" // v501 Pre Buffer Enabled501
+        const val KEY_V501PREFIXAUTOTRIM501 = "v501prefixAutoTrim501" // v501 Prefix Auto Trim501
+        const val KEY_V501PRESSANDHOLDACTION501 = "v501pressAndHoldAction501" // v501 Press And Hold Action501
+        const val KEY_V501PRIMARYAUDIOTRACK501 = "v501primaryAudioTrack501" // v501 Primary Audio Track501
+        const val KEY_V501PRINTAUTOFORMAT501 = "v501printAutoFormat501" // v501 Print Auto Format501
+        const val KEY_V501PRIORITYQUEUEENABLED501 = "v501priorityQueueEnabled501" // v501 Priority Queue Enabled501
+        const val KEY_V501PRIVATEMODEAUTO501 = "v501privateModeAuto501" // v501 Private Mode Auto501
+        const val KEY_V502PLACEAUTODETECT502 = "v502placeAutoDetect502" // v502 Place Auto Detect502
+        const val KEY_V502PLATFORMAUTOADAPT502 = "v502platformAutoAdapt502" // v502 Platform Auto Adapt502
+        const val KEY_V502PLAYAUTORESUME502 = "v502playAutoResume502" // v502 Play Auto Resume502
+        const val KEY_V502PLUGINAUTOUPDATE502 = "v502pluginAutoUpdate502" // v502 Plugin Auto Update502
+        const val KEY_V502POPUPAUTODISMISS502 = "v502popUpAutoDismiss502" // v502 Pop Up Auto Dismiss502
+        const val KEY_V502PORTAUTOSCAN502 = "v502portAutoScan502" // v502 Port Auto Scan502
+        const val KEY_V502POSTAUTOSHARE502 = "v502postAutoShare502" // v502 Post Auto Share502
+        const val KEY_V502POWERSAVEMODE502 = "v502powerSaveMode502" // v502 Power Save Mode502
+        const val KEY_V502PREBUFFERENABLED502 = "v502preBufferEnabled502" // v502 Pre Buffer Enabled502
+        const val KEY_V502PREFIXAUTOTRIM502 = "v502prefixAutoTrim502" // v502 Prefix Auto Trim502
+        const val KEY_V502PRESSANDHOLDACTION502 = "v502pressAndHoldAction502" // v502 Press And Hold Action502
+        const val KEY_V502PRIMARYAUDIOTRACK502 = "v502primaryAudioTrack502" // v502 Primary Audio Track502
+        const val KEY_V502PRINTAUTOFORMAT502 = "v502printAutoFormat502" // v502 Print Auto Format502
+        const val KEY_V502PRIORITYQUEUEENABLED502 = "v502priorityQueueEnabled502" // v502 Priority Queue Enabled502
+        const val KEY_V502PRIVATEMODEAUTO502 = "v502privateModeAuto502" // v502 Private Mode Auto502
+        const val KEY_V503PLACEAUTODETECT503 = "v503placeAutoDetect503" // v503 Place Auto Detect503
+        const val KEY_V503PLATFORMAUTOADAPT503 = "v503platformAutoAdapt503" // v503 Platform Auto Adapt503
+        const val KEY_V503PLAYAUTORESUME503 = "v503playAutoResume503" // v503 Play Auto Resume503
+        const val KEY_V503PLUGINAUTOUPDATE503 = "v503pluginAutoUpdate503" // v503 Plugin Auto Update503
+        const val KEY_V503POPUPAUTODISMISS503 = "v503popUpAutoDismiss503" // v503 Pop Up Auto Dismiss503
+        const val KEY_V503PORTAUTOSCAN503 = "v503portAutoScan503" // v503 Port Auto Scan503
+        const val KEY_V503POSTAUTOSHARE503 = "v503postAutoShare503" // v503 Post Auto Share503
+        const val KEY_V503POWERSAVEMODE503 = "v503powerSaveMode503" // v503 Power Save Mode503
+        const val KEY_V503PREBUFFERENABLED503 = "v503preBufferEnabled503" // v503 Pre Buffer Enabled503
+        const val KEY_V503PREFIXAUTOTRIM503 = "v503prefixAutoTrim503" // v503 Prefix Auto Trim503
+        const val KEY_V503PRESSANDHOLDACTION503 = "v503pressAndHoldAction503" // v503 Press And Hold Action503
+        const val KEY_V503PRIMARYAUDIOTRACK503 = "v503primaryAudioTrack503" // v503 Primary Audio Track503
+        const val KEY_V503PRINTAUTOFORMAT503 = "v503printAutoFormat503" // v503 Print Auto Format503
+        const val KEY_V503PRIORITYQUEUEENABLED503 = "v503priorityQueueEnabled503" // v503 Priority Queue Enabled503
+        const val KEY_V503PRIVATEMODEAUTO503 = "v503privateModeAuto503" // v503 Private Mode Auto503
+        const val KEY_V504PLACEAUTODETECT504 = "v504placeAutoDetect504" // v504 Place Auto Detect504
+        const val KEY_V504PLATFORMAUTOADAPT504 = "v504platformAutoAdapt504" // v504 Platform Auto Adapt504
+        const val KEY_V504PLAYAUTORESUME504 = "v504playAutoResume504" // v504 Play Auto Resume504
+        const val KEY_V504PLUGINAUTOUPDATE504 = "v504pluginAutoUpdate504" // v504 Plugin Auto Update504
+        const val KEY_V504POPUPAUTODISMISS504 = "v504popUpAutoDismiss504" // v504 Pop Up Auto Dismiss504
+        const val KEY_V504PORTAUTOSCAN504 = "v504portAutoScan504" // v504 Port Auto Scan504
+        const val KEY_V504POSTAUTOSHARE504 = "v504postAutoShare504" // v504 Post Auto Share504
+        const val KEY_V504POWERSAVEMODE504 = "v504powerSaveMode504" // v504 Power Save Mode504
+        const val KEY_V504PREBUFFERENABLED504 = "v504preBufferEnabled504" // v504 Pre Buffer Enabled504
+        const val KEY_V504PREFIXAUTOTRIM504 = "v504prefixAutoTrim504" // v504 Prefix Auto Trim504
+        const val KEY_V504PRESSANDHOLDACTION504 = "v504pressAndHoldAction504" // v504 Press And Hold Action504
+        const val KEY_V504PRIMARYAUDIOTRACK504 = "v504primaryAudioTrack504" // v504 Primary Audio Track504
+        const val KEY_V504PRINTAUTOFORMAT504 = "v504printAutoFormat504" // v504 Print Auto Format504
+        const val KEY_V504PRIORITYQUEUEENABLED504 = "v504priorityQueueEnabled504" // v504 Priority Queue Enabled504
+        const val KEY_V504PRIVATEMODEAUTO504 = "v504privateModeAuto504" // v504 Private Mode Auto504
+        const val KEY_V505PLACEAUTODETECT505 = "v505placeAutoDetect505" // v505 Place Auto Detect505
+        const val KEY_V505PLATFORMAUTOADAPT505 = "v505platformAutoAdapt505" // v505 Platform Auto Adapt505
+        const val KEY_V505PLAYAUTORESUME505 = "v505playAutoResume505" // v505 Play Auto Resume505
+        const val KEY_V505PLUGINAUTOUPDATE505 = "v505pluginAutoUpdate505" // v505 Plugin Auto Update505
+        const val KEY_V505POPUPAUTODISMISS505 = "v505popUpAutoDismiss505" // v505 Pop Up Auto Dismiss505
+        const val KEY_V505PORTAUTOSCAN505 = "v505portAutoScan505" // v505 Port Auto Scan505
+        const val KEY_V505POSTAUTOSHARE505 = "v505postAutoShare505" // v505 Post Auto Share505
+        const val KEY_V505POWERSAVEMODE505 = "v505powerSaveMode505" // v505 Power Save Mode505
+        const val KEY_V505PREBUFFERENABLED505 = "v505preBufferEnabled505" // v505 Pre Buffer Enabled505
+        const val KEY_V505PREFIXAUTOTRIM505 = "v505prefixAutoTrim505" // v505 Prefix Auto Trim505
+        const val KEY_V505PRESSANDHOLDACTION505 = "v505pressAndHoldAction505" // v505 Press And Hold Action505
+        const val KEY_V505PRIMARYAUDIOTRACK505 = "v505primaryAudioTrack505" // v505 Primary Audio Track505
+        const val KEY_V505PRINTAUTOFORMAT505 = "v505printAutoFormat505" // v505 Print Auto Format505
+        const val KEY_V505PRIORITYQUEUEENABLED505 = "v505priorityQueueEnabled505" // v505 Priority Queue Enabled505
+        const val KEY_V505PRIVATEMODEAUTO505 = "v505privateModeAuto505" // v505 Private Mode Auto505
+        const val KEY_V506PLACEAUTODETECT506 = "v506placeAutoDetect506" // v506 Place Auto Detect506
+        const val KEY_V506PLATFORMAUTOADAPT506 = "v506platformAutoAdapt506" // v506 Platform Auto Adapt506
+        const val KEY_V506PLAYAUTORESUME506 = "v506playAutoResume506" // v506 Play Auto Resume506
+        const val KEY_V506PLUGINAUTOUPDATE506 = "v506pluginAutoUpdate506" // v506 Plugin Auto Update506
+        const val KEY_V506POPUPAUTODISMISS506 = "v506popUpAutoDismiss506" // v506 Pop Up Auto Dismiss506
+        const val KEY_V506PORTAUTOSCAN506 = "v506portAutoScan506" // v506 Port Auto Scan506
+        const val KEY_V506POSTAUTOSHARE506 = "v506postAutoShare506" // v506 Post Auto Share506
+        const val KEY_V506POWERSAVEMODE506 = "v506powerSaveMode506" // v506 Power Save Mode506
+        const val KEY_V506PREBUFFERENABLED506 = "v506preBufferEnabled506" // v506 Pre Buffer Enabled506
+        const val KEY_V506PREFIXAUTOTRIM506 = "v506prefixAutoTrim506" // v506 Prefix Auto Trim506
+        const val KEY_V506PRESSANDHOLDACTION506 = "v506pressAndHoldAction506" // v506 Press And Hold Action506
+        const val KEY_V506PRIMARYAUDIOTRACK506 = "v506primaryAudioTrack506" // v506 Primary Audio Track506
+        const val KEY_V506PRINTAUTOFORMAT506 = "v506printAutoFormat506" // v506 Print Auto Format506
+        const val KEY_V506PRIORITYQUEUEENABLED506 = "v506priorityQueueEnabled506" // v506 Priority Queue Enabled506
+        const val KEY_V506PRIVATEMODEAUTO506 = "v506privateModeAuto506" // v506 Private Mode Auto506
+        const val KEY_V507PLACEAUTODETECT507 = "v507placeAutoDetect507" // v507 Place Auto Detect507
+        const val KEY_V507PLATFORMAUTOADAPT507 = "v507platformAutoAdapt507" // v507 Platform Auto Adapt507
+        const val KEY_V507PLAYAUTORESUME507 = "v507playAutoResume507" // v507 Play Auto Resume507
+        const val KEY_V507PLUGINAUTOUPDATE507 = "v507pluginAutoUpdate507" // v507 Plugin Auto Update507
+        const val KEY_V507POPUPAUTODISMISS507 = "v507popUpAutoDismiss507" // v507 Pop Up Auto Dismiss507
+        const val KEY_V507PORTAUTOSCAN507 = "v507portAutoScan507" // v507 Port Auto Scan507
+        const val KEY_V507POSTAUTOSHARE507 = "v507postAutoShare507" // v507 Post Auto Share507
+        const val KEY_V507POWERSAVEMODE507 = "v507powerSaveMode507" // v507 Power Save Mode507
+        const val KEY_V507PREBUFFERENABLED507 = "v507preBufferEnabled507" // v507 Pre Buffer Enabled507
+        const val KEY_V507PREFIXAUTOTRIM507 = "v507prefixAutoTrim507" // v507 Prefix Auto Trim507
+        const val KEY_V507PRESSANDHOLDACTION507 = "v507pressAndHoldAction507" // v507 Press And Hold Action507
+        const val KEY_V507PRIMARYAUDIOTRACK507 = "v507primaryAudioTrack507" // v507 Primary Audio Track507
+        const val KEY_V507PRINTAUTOFORMAT507 = "v507printAutoFormat507" // v507 Print Auto Format507
+        const val KEY_V507PRIORITYQUEUEENABLED507 = "v507priorityQueueEnabled507" // v507 Priority Queue Enabled507
+        const val KEY_V507PRIVATEMODEAUTO507 = "v507privateModeAuto507" // v507 Private Mode Auto507
+        const val KEY_V508PLACEAUTODETECT508 = "v508placeAutoDetect508" // v508 Place Auto Detect508
+        const val KEY_V508PLATFORMAUTOADAPT508 = "v508platformAutoAdapt508" // v508 Platform Auto Adapt508
+        const val KEY_V508PLAYAUTORESUME508 = "v508playAutoResume508" // v508 Play Auto Resume508
+        const val KEY_V508PLUGINAUTOUPDATE508 = "v508pluginAutoUpdate508" // v508 Plugin Auto Update508
+        const val KEY_V508POPUPAUTODISMISS508 = "v508popUpAutoDismiss508" // v508 Pop Up Auto Dismiss508
+        const val KEY_V508PORTAUTOSCAN508 = "v508portAutoScan508" // v508 Port Auto Scan508
+        const val KEY_V508POSTAUTOSHARE508 = "v508postAutoShare508" // v508 Post Auto Share508
+        const val KEY_V508POWERSAVEMODE508 = "v508powerSaveMode508" // v508 Power Save Mode508
+        const val KEY_V508PREBUFFERENABLED508 = "v508preBufferEnabled508" // v508 Pre Buffer Enabled508
+        const val KEY_V508PREFIXAUTOTRIM508 = "v508prefixAutoTrim508" // v508 Prefix Auto Trim508
+        const val KEY_V508PRESSANDHOLDACTION508 = "v508pressAndHoldAction508" // v508 Press And Hold Action508
+        const val KEY_V508PRIMARYAUDIOTRACK508 = "v508primaryAudioTrack508" // v508 Primary Audio Track508
+        const val KEY_V508PRINTAUTOFORMAT508 = "v508printAutoFormat508" // v508 Print Auto Format508
+        const val KEY_V508PRIORITYQUEUEENABLED508 = "v508priorityQueueEnabled508" // v508 Priority Queue Enabled508
+        const val KEY_V508PRIVATEMODEAUTO508 = "v508privateModeAuto508" // v508 Private Mode Auto508
+        const val KEY_V509PLACEAUTODETECT509 = "v509placeAutoDetect509" // v509 Place Auto Detect509
+        const val KEY_V509PLATFORMAUTOADAPT509 = "v509platformAutoAdapt509" // v509 Platform Auto Adapt509
+        const val KEY_V509PLAYAUTORESUME509 = "v509playAutoResume509" // v509 Play Auto Resume509
+        const val KEY_V509PLUGINAUTOUPDATE509 = "v509pluginAutoUpdate509" // v509 Plugin Auto Update509
+        const val KEY_V509POPUPAUTODISMISS509 = "v509popUpAutoDismiss509" // v509 Pop Up Auto Dismiss509
+        const val KEY_V509PORTAUTOSCAN509 = "v509portAutoScan509" // v509 Port Auto Scan509
+        const val KEY_V509POSTAUTOSHARE509 = "v509postAutoShare509" // v509 Post Auto Share509
+        const val KEY_V509POWERSAVEMODE509 = "v509powerSaveMode509" // v509 Power Save Mode509
+        const val KEY_V509PREBUFFERENABLED509 = "v509preBufferEnabled509" // v509 Pre Buffer Enabled509
+        const val KEY_V509PREFIXAUTOTRIM509 = "v509prefixAutoTrim509" // v509 Prefix Auto Trim509
+        const val KEY_V509PRESSANDHOLDACTION509 = "v509pressAndHoldAction509" // v509 Press And Hold Action509
+        const val KEY_V509PRIMARYAUDIOTRACK509 = "v509primaryAudioTrack509" // v509 Primary Audio Track509
+        const val KEY_V509PRINTAUTOFORMAT509 = "v509printAutoFormat509" // v509 Print Auto Format509
+        const val KEY_V509PRIORITYQUEUEENABLED509 = "v509priorityQueueEnabled509" // v509 Priority Queue Enabled509
+        const val KEY_V509PRIVATEMODEAUTO509 = "v509privateModeAuto509" // v509 Private Mode Auto509
+        const val KEY_V510PLACEAUTODETECT510 = "v510placeAutoDetect510" // v510 Place Auto Detect510
+        const val KEY_V510PLATFORMAUTOADAPT510 = "v510platformAutoAdapt510" // v510 Platform Auto Adapt510
+        const val KEY_V510PLAYAUTORESUME510 = "v510playAutoResume510" // v510 Play Auto Resume510
+        const val KEY_V510PLUGINAUTOUPDATE510 = "v510pluginAutoUpdate510" // v510 Plugin Auto Update510
+        const val KEY_V510POPUPAUTODISMISS510 = "v510popUpAutoDismiss510" // v510 Pop Up Auto Dismiss510
+        const val KEY_V510PORTAUTOSCAN510 = "v510portAutoScan510" // v510 Port Auto Scan510
+        const val KEY_V510POSTAUTOSHARE510 = "v510postAutoShare510" // v510 Post Auto Share510
+        const val KEY_V510POWERSAVEMODE510 = "v510powerSaveMode510" // v510 Power Save Mode510
+        const val KEY_V510PREBUFFERENABLED510 = "v510preBufferEnabled510" // v510 Pre Buffer Enabled510
+        const val KEY_V510PREFIXAUTOTRIM510 = "v510prefixAutoTrim510" // v510 Prefix Auto Trim510
+        const val KEY_V510PRESSANDHOLDACTION510 = "v510pressAndHoldAction510" // v510 Press And Hold Action510
+        const val KEY_V510PRIMARYAUDIOTRACK510 = "v510primaryAudioTrack510" // v510 Primary Audio Track510
+        const val KEY_V510PRINTAUTOFORMAT510 = "v510printAutoFormat510" // v510 Print Auto Format510
+        const val KEY_V510PRIORITYQUEUEENABLED510 = "v510priorityQueueEnabled510" // v510 Priority Queue Enabled510
+        const val KEY_V510PRIVATEMODEAUTO510 = "v510privateModeAuto510" // v510 Private Mode Auto510
     }
 }
