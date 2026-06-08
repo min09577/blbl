@@ -16448,6 +16448,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getInt(KEY_V160SUBTITLEANIMATIONTRANSLATE160, 0)
         set(value) = prefs.edit().putInt(KEY_V160SUBTITLEANIMATIONTRANSLATE160, value).apply()
 
+    var v161audioGateToggle161: Boolean
+        get() = prefs.getBoolean(KEY_V161AUDIOGATETOGGLE161, false)
+        set(value) = prefs.edit().putBoolean(KEY_V161AUDIOGATETOGGLE161, value).apply()
+
+    var v161danmakuRenderBatchSize: Int
+        get() = prefs.getInt(KEY_V161DANMAKURENDERBATCHSIZE, 0)
+        set(value) = prefs.edit().putInt(KEY_V161DANMAKURENDERBATCHSIZE, value).apply()
+
+    var v161subtitlePositionAnchor: Int
+        get() = prefs.getInt(KEY_V161SUBTITLEPOSITIONANCHOR, 0)
+        set(value) = prefs.edit().putInt(KEY_V161SUBTITLEPOSITIONANCHOR, value).apply()
+
+    var v161gestureLongPressAction: Int
+        get() = prefs.getInt(KEY_V161GESTURELONGPRESSACTION, 0)
+        set(value) = prefs.edit().putInt(KEY_V161GESTURELONGPRESSACTION, value).apply()
+
+    var v161castVideoPIPMaxResolution: Int
+        get() = prefs.getInt(KEY_V161CASTVIDEOPIPMAXRESOLUTION, 0)
+        set(value) = prefs.edit().putInt(KEY_V161CASTVIDEOPIPMAXRESOLUTION, value).apply()
+
+    var v161playlistContinuePlayNext: Boolean
+        get() = prefs.getBoolean(KEY_V161PLAYLISTCONTINUEPLAYNEXT, false)
+        set(value) = prefs.edit().putBoolean(KEY_V161PLAYLISTCONTINUEPLAYNEXT, value).apply()
+
+    var v161cachePreloadNextEpisode: Boolean
+        get() = prefs.getBoolean(KEY_V161CACHEPRELOADNEXTEPISODE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V161CACHEPRELOADNEXTEPISODE, value).apply()
+
+    var v161progressBarBufferedColor: Int
+        get() = prefs.getInt(KEY_V161PROGRESSBARBUFFEREDCOLOR, 0)
+        set(value) = prefs.edit().putInt(KEY_V161PROGRESSBARBUFFEREDCOLOR, value).apply()
+
+    var v161volumeFadeInOnResume: Boolean
+        get() = prefs.getBoolean(KEY_V161VOLUMEFADEINONRESUME, false)
+        set(value) = prefs.edit().putBoolean(KEY_V161VOLUMEFADEINONRESUME, value).apply()
+
+    var v161historyImportExport: Boolean
+        get() = prefs.getBoolean(KEY_V161HISTORYIMPORTEXPORT, false)
+        set(value) = prefs.edit().putBoolean(KEY_V161HISTORYIMPORTEXPORT, value).apply()
+
+    var v161playbackAutoRotateLandscape: Boolean
+        get() = prefs.getBoolean(KEY_V161PLAYBACKAUTOROTATELANDSCAPE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V161PLAYBACKAUTOROTATELANDSCAPE, value).apply()
+
+    var v161screenshotFormatPNG: Boolean
+        get() = prefs.getBoolean(KEY_V161SCREENSHOTFORMATPNG, false)
+        set(value) = prefs.edit().putBoolean(KEY_V161SCREENSHOTFORMATPNG, value).apply()
+
+    var v161videoDenoiseToggle161: Boolean
+        get() = prefs.getBoolean(KEY_V161VIDEODENOISETOGGLE161, false)
+        set(value) = prefs.edit().putBoolean(KEY_V161VIDEODENOISETOGGLE161, value).apply()
+
+    var v161danmakuRenderThreadCount: Int
+        get() = prefs.getInt(KEY_V161DANMAKURENDERTHREADCOUNT, 0)
+        set(value) = prefs.edit().putInt(KEY_V161DANMAKURENDERTHREADCOUNT, value).apply()
+
+    var v161subtitleKaraokeHighlight: Boolean
+        get() = prefs.getBoolean(KEY_V161SUBTITLEKARAOKEHIGHLIGHT, false)
+        set(value) = prefs.edit().putBoolean(KEY_V161SUBTITLEKARAOKEHIGHLIGHT, value).apply()
+
+    var v162audioGateThreshold162: Int
+        get() = prefs.getInt(KEY_V162AUDIOGATETHRESHOLD162, 0)
+        set(value) = prefs.edit().putInt(KEY_V162AUDIOGATETHRESHOLD162, value).apply()
+
+    var v162danmakuRenderThreadCount162: Int
+        get() = prefs.getInt(KEY_V162DANMAKURENDERTHREADCOUNT162, 0)
+        set(value) = prefs.edit().putInt(KEY_V162DANMAKURENDERTHREADCOUNT162, value).apply()
+
+    var v162subtitleKaraokeHighlight162: Boolean
+        get() = prefs.getBoolean(KEY_V162SUBTITLEKARAOKEHIGHLIGHT162, false)
+        set(value) = prefs.edit().putBoolean(KEY_V162SUBTITLEKARAOKEHIGHLIGHT162, value).apply()
+
+    var v162gestureLongPressDuration: Int
+        get() = prefs.getInt(KEY_V162GESTURELONGPRESSDURATION, 500)
+        set(value) = prefs.edit().putInt(KEY_V162GESTURELONGPRESSDURATION, value).apply()
+
+    var v162castVideoPIPMaxResolution162: Int
+        get() = prefs.getInt(KEY_V162CASTVIDEOPIPMAXRESOLUTION162, 0)
+        set(value) = prefs.edit().putInt(KEY_V162CASTVIDEOPIPMAXRESOLUTION162, value).apply()
+
+    var v162playlistContinuePlayNext162: Boolean
+        get() = prefs.getBoolean(KEY_V162PLAYLISTCONTINUEPLAYNEXT162, false)
+        set(value) = prefs.edit().putBoolean(KEY_V162PLAYLISTCONTINUEPLAYNEXT162, value).apply()
+
+    var v162cachePreloadNextEpisode162: Boolean
+        get() = prefs.getBoolean(KEY_V162CACHEPRELOADNEXTEPISODE162, false)
+        set(value) = prefs.edit().putBoolean(KEY_V162CACHEPRELOADNEXTEPISODE162, value).apply()
+
+    var v162progressBarBufferedColor162: Int
+        get() = prefs.getInt(KEY_V162PROGRESSBARBUFFEREDCOLOR162, 0)
+        set(value) = prefs.edit().putInt(KEY_V162PROGRESSBARBUFFEREDCOLOR162, value).apply()
+
+    var v162volumeFadeInOnResume162: Boolean
+        get() = prefs.getBoolean(KEY_V162VOLUMEFADEINONRESUME162, false)
+        set(value) = prefs.edit().putBoolean(KEY_V162VOLUMEFADEINONRESUME162, value).apply()
+
+    var v162historyImportExport162: Boolean
+        get() = prefs.getBoolean(KEY_V162HISTORYIMPORTEXPORT162, false)
+        set(value) = prefs.edit().putBoolean(KEY_V162HISTORYIMPORTEXPORT162, value).apply()
+
+    var v162playbackAutoRotateLandscape162: Boolean
+        get() = prefs.getBoolean(KEY_V162PLAYBACKAUTOROTATELANDSCAPE162, false)
+        set(value) = prefs.edit().putBoolean(KEY_V162PLAYBACKAUTOROTATELANDSCAPE162, value).apply()
+
+    var v162screenshotFormatJPEG: Boolean
+        get() = prefs.getBoolean(KEY_V162SCREENSHOTFORMATJPEG, false)
+        set(value) = prefs.edit().putBoolean(KEY_V162SCREENSHOTFORMATJPEG, value).apply()
+
+    var v162videoDenoiseStrength162: Int
+        get() = prefs.getInt(KEY_V162VIDEODENOISESTRENGTH162, 0)
+        set(value) = prefs.edit().putInt(KEY_V162VIDEODENOISESTRENGTH162, value).apply()
+
+    var v162danmakuRenderCacheToggle: Boolean
+        get() = prefs.getBoolean(KEY_V162DANMAKURENDERCACHETOGGLE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V162DANMAKURENDERCACHETOGGLE, value).apply()
+
+    var v162subtitleKaraokeSpeed: Int
+        get() = prefs.getInt(KEY_V162SUBTITLEKARAOKESPEED, 0)
+        set(value) = prefs.edit().putInt(KEY_V162SUBTITLEKARAOKESPEED, value).apply()
+
+    var v163audioGateRelease163: Int
+        get() = prefs.getInt(KEY_V163AUDIOGATERELEASE163, 0)
+        set(value) = prefs.edit().putInt(KEY_V163AUDIOGATERELEASE163, value).apply()
+
+    var v163danmakuRenderCacheToggle163: Boolean
+        get() = prefs.getBoolean(KEY_V163DANMAKURENDERCACHETOGGLE163, false)
+        set(value) = prefs.edit().putBoolean(KEY_V163DANMAKURENDERCACHETOGGLE163, value).apply()
+
+    var v163subtitleKaraokeSpeed163: Int
+        get() = prefs.getInt(KEY_V163SUBTITLEKARAOKESPEED163, 0)
+        set(value) = prefs.edit().putInt(KEY_V163SUBTITLEKARAOKESPEED163, value).apply()
+
+    var v163gestureLongPressVibrate: Boolean
+        get() = prefs.getBoolean(KEY_V163GESTURELONGPRESSVIBRATE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V163GESTURELONGPRESSVIBRATE, value).apply()
+
+    var v163castVideoPIPBitrateLimit: Int
+        get() = prefs.getInt(KEY_V163CASTVIDEOPIPBITRATELIMIT, 0)
+        set(value) = prefs.edit().putInt(KEY_V163CASTVIDEOPIPBITRATELIMIT, value).apply()
+
+    var v163playlistContinueOnWifi: Boolean
+        get() = prefs.getBoolean(KEY_V163PLAYLISTCONTINUEONWIFI, false)
+        set(value) = prefs.edit().putBoolean(KEY_V163PLAYLISTCONTINUEONWIFI, value).apply()
+
+    var v163cachePreloadSizeMB: Int
+        get() = prefs.getInt(KEY_V163CACHEPRELOADSIZEMB, 0)
+        set(value) = prefs.edit().putInt(KEY_V163CACHEPRELOADSIZEMB, value).apply()
+
+    var v163progressBarBufferedWidth: Int
+        get() = prefs.getInt(KEY_V163PROGRESSBARBUFFEREDWIDTH, 0)
+        set(value) = prefs.edit().putInt(KEY_V163PROGRESSBARBUFFEREDWIDTH, value).apply()
+
+    var v163volumeFadeOutOnPause: Boolean
+        get() = prefs.getBoolean(KEY_V163VOLUMEFADEOUTONPAUSE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V163VOLUMEFADEOUTONPAUSE, value).apply()
+
+    var v163historySyncCloud: Boolean
+        get() = prefs.getBoolean(KEY_V163HISTORYSYNCCLOUD, false)
+        set(value) = prefs.edit().putBoolean(KEY_V163HISTORYSYNCCLOUD, value).apply()
+
+    var v163playbackAutoRotatePortrait: Boolean
+        get() = prefs.getBoolean(KEY_V163PLAYBACKAUTOROTATEPORTRAIT, false)
+        set(value) = prefs.edit().putBoolean(KEY_V163PLAYBACKAUTOROTATEPORTRAIT, value).apply()
+
+    var v163screenshotQualityLevel: Int
+        get() = prefs.getInt(KEY_V163SCREENSHOTQUALITYLEVEL, 0)
+        set(value) = prefs.edit().putInt(KEY_V163SCREENSHOTQUALITYLEVEL, value).apply()
+
+    var v163videoDenoiseStrength163: Int
+        get() = prefs.getInt(KEY_V163VIDEODENOISESTRENGTH163, 0)
+        set(value) = prefs.edit().putInt(KEY_V163VIDEODENOISESTRENGTH163, value).apply()
+
+    var v163danmakuRenderCacheSize: Int
+        get() = prefs.getInt(KEY_V163DANMAKURENDERCACHESIZE, 0)
+        set(value) = prefs.edit().putInt(KEY_V163DANMAKURENDERCACHESIZE, value).apply()
+
+    var v163subtitleKaraokeColor: Int
+        get() = prefs.getInt(KEY_V163SUBTITLEKARAOKECOLOR, 0)
+        set(value) = prefs.edit().putInt(KEY_V163SUBTITLEKARAOKECOLOR, value).apply()
+
+    var v164audioGateRange164: Int
+        get() = prefs.getInt(KEY_V164AUDIOGATERANGE164, 0)
+        set(value) = prefs.edit().putInt(KEY_V164AUDIOGATERANGE164, value).apply()
+
+    var v164danmakuRenderCacheSize164: Int
+        get() = prefs.getInt(KEY_V164DANMAKURENDERCACHESIZE164, 0)
+        set(value) = prefs.edit().putInt(KEY_V164DANMAKURENDERCACHESIZE164, value).apply()
+
+    var v164subtitleKaraokeColor164: Int
+        get() = prefs.getInt(KEY_V164SUBTITLEKARAOKECOLOR164, 0)
+        set(value) = prefs.edit().putInt(KEY_V164SUBTITLEKARAOKECOLOR164, value).apply()
+
+    var v164gestureLongPressVibrate164: Boolean
+        get() = prefs.getBoolean(KEY_V164GESTURELONGPRESSVIBRATE164, false)
+        set(value) = prefs.edit().putBoolean(KEY_V164GESTURELONGPRESSVIBRATE164, value).apply()
+
+    var v164castVideoPIPBitrateLimit164: Int
+        get() = prefs.getInt(KEY_V164CASTVIDEOPIPBITRATELIMIT164, 0)
+        set(value) = prefs.edit().putInt(KEY_V164CASTVIDEOPIPBITRATELIMIT164, value).apply()
+
+    var v164playlistContinueOnWifi164: Boolean
+        get() = prefs.getBoolean(KEY_V164PLAYLISTCONTINUEONWIFI164, false)
+        set(value) = prefs.edit().putBoolean(KEY_V164PLAYLISTCONTINUEONWIFI164, value).apply()
+
+    var v164cachePreloadOnWifi: Boolean
+        get() = prefs.getBoolean(KEY_V164CACHEPRELOADONWIFI, false)
+        set(value) = prefs.edit().putBoolean(KEY_V164CACHEPRELOADONWIFI, value).apply()
+
+    var v164progressBarBufferedOpacity: Int
+        get() = prefs.getInt(KEY_V164PROGRESSBARBUFFEREDOPACITY, 0)
+        set(value) = prefs.edit().putInt(KEY_V164PROGRESSBARBUFFEREDOPACITY, value).apply()
+
+    var v164volumeFadeOutOnPause164: Boolean
+        get() = prefs.getBoolean(KEY_V164VOLUMEFADEOUTONPAUSE164, false)
+        set(value) = prefs.edit().putBoolean(KEY_V164VOLUMEFADEOUTONPAUSE164, value).apply()
+
+    var v164historySyncCloud164: Boolean
+        get() = prefs.getBoolean(KEY_V164HISTORYSYNCCLOUD164, false)
+        set(value) = prefs.edit().putBoolean(KEY_V164HISTORYSYNCCLOUD164, value).apply()
+
+    var v164playbackRememberSpeed: Boolean
+        get() = prefs.getBoolean(KEY_V164PLAYBACKREMEMBERSPEED, false)
+        set(value) = prefs.edit().putBoolean(KEY_V164PLAYBACKREMEMBERSPEED, value).apply()
+
+    var v164screenshotAutoName: Boolean
+        get() = prefs.getBoolean(KEY_V164SCREENSHOTAUTONAME, false)
+        set(value) = prefs.edit().putBoolean(KEY_V164SCREENSHOTAUTONAME, value).apply()
+
+    var v164videoSharpenToggle164: Boolean
+        get() = prefs.getBoolean(KEY_V164VIDEOSHARPENTOGGLE164, false)
+        set(value) = prefs.edit().putBoolean(KEY_V164VIDEOSHARPENTOGGLE164, value).apply()
+
+    var v164danmakuRenderCachePolicy: Int
+        get() = prefs.getInt(KEY_V164DANMAKURENDERCACHEPOLICY, 0)
+        set(value) = prefs.edit().putInt(KEY_V164DANMAKURENDERCACHEPOLICY, value).apply()
+
+    var v164subtitleKaraokeFont: Int
+        get() = prefs.getInt(KEY_V164SUBTITLEKARAOKEFONT, 0)
+        set(value) = prefs.edit().putInt(KEY_V164SUBTITLEKARAOKEFONT, value).apply()
+
+    var v165audioGateAttack165: Int
+        get() = prefs.getInt(KEY_V165AUDIOGATEATTACK165, 0)
+        set(value) = prefs.edit().putInt(KEY_V165AUDIOGATEATTACK165, value).apply()
+
+    var v165danmakuRenderCachePolicy165: Int
+        get() = prefs.getInt(KEY_V165DANMAKURENDERCACHEPOLICY165, 0)
+        set(value) = prefs.edit().putInt(KEY_V165DANMAKURENDERCACHEPOLICY165, value).apply()
+
+    var v165subtitleKaraokeFont165: Int
+        get() = prefs.getInt(KEY_V165SUBTITLEKARAOKEFONT165, 0)
+        set(value) = prefs.edit().putInt(KEY_V165SUBTITLEKARAOKEFONT165, value).apply()
+
+    var v165gestureSwipeLeftAction: Int
+        get() = prefs.getInt(KEY_V165GESTURESWIPELEFTACTION, 0)
+        set(value) = prefs.edit().putInt(KEY_V165GESTURESWIPELEFTACTION, value).apply()
+
+    var v165castVideoPIPFrameDrop: Boolean
+        get() = prefs.getBoolean(KEY_V165CASTVIDEOPIPFRAMEDROP, false)
+        set(value) = prefs.edit().putBoolean(KEY_V165CASTVIDEOPIPFRAMEDROP, value).apply()
+
+    var v165playlistShuffleMode: Int
+        get() = prefs.getInt(KEY_V165PLAYLISTSHUFFLEMODE, 0)
+        set(value) = prefs.edit().putInt(KEY_V165PLAYLISTSHUFFLEMODE, value).apply()
+
+    var v165cachePreloadOnWifi165: Boolean
+        get() = prefs.getBoolean(KEY_V165CACHEPRELOADONWIFI165, false)
+        set(value) = prefs.edit().putBoolean(KEY_V165CACHEPRELOADONWIFI165, value).apply()
+
+    var v165progressBarBufferedAnim: Boolean
+        get() = prefs.getBoolean(KEY_V165PROGRESSBARBUFFEREDANIM, false)
+        set(value) = prefs.edit().putBoolean(KEY_V165PROGRESSBARBUFFEREDANIM, value).apply()
+
+    var v165volumeFadeDuration: Int
+        get() = prefs.getInt(KEY_V165VOLUMEFADEDURATION, 0)
+        set(value) = prefs.edit().putInt(KEY_V165VOLUMEFADEDURATION, value).apply()
+
+    var v165historySyncWifi: Boolean
+        get() = prefs.getBoolean(KEY_V165HISTORYSYNCWIFI, false)
+        set(value) = prefs.edit().putBoolean(KEY_V165HISTORYSYNCWIFI, value).apply()
+
+    var v165playbackRememberSpeed165: Boolean
+        get() = prefs.getBoolean(KEY_V165PLAYBACKREMEMBERSPEED165, false)
+        set(value) = prefs.edit().putBoolean(KEY_V165PLAYBACKREMEMBERSPEED165, value).apply()
+
+    var v165screenshotAutoName165: Boolean
+        get() = prefs.getBoolean(KEY_V165SCREENSHOTAUTONAME165, false)
+        set(value) = prefs.edit().putBoolean(KEY_V165SCREENSHOTAUTONAME165, value).apply()
+
+    var v165videoSharpenStrength165: Int
+        get() = prefs.getInt(KEY_V165VIDEOSHARPENSTRENGTH165, 0)
+        set(value) = prefs.edit().putInt(KEY_V165VIDEOSHARPENSTRENGTH165, value).apply()
+
+    var v165danmakuRenderBatch: Boolean
+        get() = prefs.getBoolean(KEY_V165DANMAKURENDERBATCH, false)
+        set(value) = prefs.edit().putBoolean(KEY_V165DANMAKURENDERBATCH, value).apply()
+
+    var v165subtitleKaraokeTiming: Int
+        get() = prefs.getInt(KEY_V165SUBTITLEKARAOKETIMING, 0)
+        set(value) = prefs.edit().putInt(KEY_V165SUBTITLEKARAOKETIMING, value).apply()
+
+    var v166audioGateHysteresis: Int
+        get() = prefs.getInt(KEY_V166AUDIOGATEHYSTERESIS, 0)
+        set(value) = prefs.edit().putInt(KEY_V166AUDIOGATEHYSTERESIS, value).apply()
+
+    var v166danmakuRenderBatch166: Boolean
+        get() = prefs.getBoolean(KEY_V166DANMAKURENDERBATCH166, false)
+        set(value) = prefs.edit().putBoolean(KEY_V166DANMAKURENDERBATCH166, value).apply()
+
+    var v166subtitleKaraokeTiming166: Int
+        get() = prefs.getInt(KEY_V166SUBTITLEKARAOKETIMING166, 0)
+        set(value) = prefs.edit().putInt(KEY_V166SUBTITLEKARAOKETIMING166, value).apply()
+
+    var v166gestureSwipeRightAction: Int
+        get() = prefs.getInt(KEY_V166GESTURESWIPERIGHTACTION, 0)
+        set(value) = prefs.edit().putInt(KEY_V166GESTURESWIPERIGHTACTION, value).apply()
+
+    var v166castVideoPIPFrameDrop166: Boolean
+        get() = prefs.getBoolean(KEY_V166CASTVIDEOPIPFRAMEDROP166, false)
+        set(value) = prefs.edit().putBoolean(KEY_V166CASTVIDEOPIPFRAMEDROP166, value).apply()
+
+    var v166playlistShuffleMode166: Int
+        get() = prefs.getInt(KEY_V166PLAYLISTSHUFFLEMODE166, 0)
+        set(value) = prefs.edit().putInt(KEY_V166PLAYLISTSHUFFLEMODE166, value).apply()
+
+    var v166cachePreloadPriority: Int
+        get() = prefs.getInt(KEY_V166CACHEPRELOADPRIORITY, 0)
+        set(value) = prefs.edit().putInt(KEY_V166CACHEPRELOADPRIORITY, value).apply()
+
+    var v166progressBarBufferedAnim166: Boolean
+        get() = prefs.getBoolean(KEY_V166PROGRESSBARBUFFEREDANIM166, false)
+        set(value) = prefs.edit().putBoolean(KEY_V166PROGRESSBARBUFFEREDANIM166, value).apply()
+
+    var v166volumeFadeDuration166: Int
+        get() = prefs.getInt(KEY_V166VOLUMEFADEDURATION166, 0)
+        set(value) = prefs.edit().putInt(KEY_V166VOLUMEFADEDURATION166, value).apply()
+
+    var v166historySyncWifi166: Boolean
+        get() = prefs.getBoolean(KEY_V166HISTORYSYNCWIFI166, false)
+        set(value) = prefs.edit().putBoolean(KEY_V166HISTORYSYNCWIFI166, value).apply()
+
+    var v166playbackRememberQuality: Boolean
+        get() = prefs.getBoolean(KEY_V166PLAYBACKREMEMBERQUALITY, false)
+        set(value) = prefs.edit().putBoolean(KEY_V166PLAYBACKREMEMBERQUALITY, value).apply()
+
+    var v166screenshotPrefixCustom: Boolean
+        get() = prefs.getBoolean(KEY_V166SCREENSHOTPREFIXCUSTOM, false)
+        set(value) = prefs.edit().putBoolean(KEY_V166SCREENSHOTPREFIXCUSTOM, value).apply()
+
+    var v166videoSharpenStrength166: Int
+        get() = prefs.getInt(KEY_V166VIDEOSHARPENSTRENGTH166, 0)
+        set(value) = prefs.edit().putInt(KEY_V166VIDEOSHARPENSTRENGTH166, value).apply()
+
+    var v166danmakuRenderBatchSize166: Int
+        get() = prefs.getInt(KEY_V166DANMAKURENDERBATCHSIZE166, 0)
+        set(value) = prefs.edit().putInt(KEY_V166DANMAKURENDERBATCHSIZE166, value).apply()
+
+    var v166subtitleKaraokeMode: Int
+        get() = prefs.getInt(KEY_V166SUBTITLEKARAOKEMODE, 0)
+        set(value) = prefs.edit().putInt(KEY_V166SUBTITLEKARAOKEMODE, value).apply()
+
+    var v167audioGateRatio: Int
+        get() = prefs.getInt(KEY_V167AUDIOGATERATIO, 0)
+        set(value) = prefs.edit().putInt(KEY_V167AUDIOGATERATIO, value).apply()
+
+    var v167danmakuRenderBatchSize167: Int
+        get() = prefs.getInt(KEY_V167DANMAKURENDERBATCHSIZE167, 0)
+        set(value) = prefs.edit().putInt(KEY_V167DANMAKURENDERBATCHSIZE167, value).apply()
+
+    var v167subtitleKaraokeMode167: Int
+        get() = prefs.getInt(KEY_V167SUBTITLEKARAOKEMODE167, 0)
+        set(value) = prefs.edit().putInt(KEY_V167SUBTITLEKARAOKEMODE167, value).apply()
+
+    var v167gestureSwipeUpAction: Int
+        get() = prefs.getInt(KEY_V167GESTURESWIPEUPACTION, 0)
+        set(value) = prefs.edit().putInt(KEY_V167GESTURESWIPEUPACTION, value).apply()
+
+    var v167castVideoPIPAdaptiveBitrate: Boolean
+        get() = prefs.getBoolean(KEY_V167CASTVIDEOPIPADAPTIVEBITRATE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V167CASTVIDEOPIPADAPTIVEBITRATE, value).apply()
+
+    var v167playlistRepeatMode: Int
+        get() = prefs.getInt(KEY_V167PLAYLISTREPEATMODE, 0)
+        set(value) = prefs.edit().putInt(KEY_V167PLAYLISTREPEATMODE, value).apply()
+
+    var v167cachePreloadPriority167: Int
+        get() = prefs.getInt(KEY_V167CACHEPRELOADPRIORITY167, 0)
+        set(value) = prefs.edit().putInt(KEY_V167CACHEPRELOADPRIORITY167, value).apply()
+
+    var v167progressBarLoadedColor: Int
+        get() = prefs.getInt(KEY_V167PROGRESSBARLOADEDCOLOR, 0)
+        set(value) = prefs.edit().putInt(KEY_V167PROGRESSBARLOADEDCOLOR, value).apply()
+
+    var v167volumeFadeCurve: Int
+        get() = prefs.getInt(KEY_V167VOLUMEFADECURVE, 0)
+        set(value) = prefs.edit().putInt(KEY_V167VOLUMEFADECURVE, value).apply()
+
+    var v167historySyncBluetooth: Boolean
+        get() = prefs.getBoolean(KEY_V167HISTORYSYNCBLUETOOTH, false)
+        set(value) = prefs.edit().putBoolean(KEY_V167HISTORYSYNCBLUETOOTH, value).apply()
+
+    var v167playbackRememberQuality167: Boolean
+        get() = prefs.getBoolean(KEY_V167PLAYBACKREMEMBERQUALITY167, false)
+        set(value) = prefs.edit().putBoolean(KEY_V167PLAYBACKREMEMBERQUALITY167, value).apply()
+
+    var v167screenshotPrefixCustom167: Boolean
+        get() = prefs.getBoolean(KEY_V167SCREENSHOTPREFIXCUSTOM167, false)
+        set(value) = prefs.edit().putBoolean(KEY_V167SCREENSHOTPREFIXCUSTOM167, value).apply()
+
+    var v167videoSharpenRadius: Int
+        get() = prefs.getInt(KEY_V167VIDEOSHARPENRADIUS, 0)
+        set(value) = prefs.edit().putInt(KEY_V167VIDEOSHARPENRADIUS, value).apply()
+
+    var v167danmakuRenderBatchTimeout: Int
+        get() = prefs.getInt(KEY_V167DANMAKURENDERBATCHTIMEOUT, 0)
+        set(value) = prefs.edit().putInt(KEY_V167DANMAKURENDERBATCHTIMEOUT, value).apply()
+
+    var v167subtitleKaraokeFontSize: Int
+        get() = prefs.getInt(KEY_V167SUBTITLEKARAOKEFONTSIZE, 0)
+        set(value) = prefs.edit().putInt(KEY_V167SUBTITLEKARAOKEFONTSIZE, value).apply()
+
+    var v168audioGateRange168: Int
+        get() = prefs.getInt(KEY_V168AUDIOGATERANGE168, 0)
+        set(value) = prefs.edit().putInt(KEY_V168AUDIOGATERANGE168, value).apply()
+
+    var v168danmakuRenderBatchTimeout168: Int
+        get() = prefs.getInt(KEY_V168DANMAKURENDERBATCHTIMEOUT168, 0)
+        set(value) = prefs.edit().putInt(KEY_V168DANMAKURENDERBATCHTIMEOUT168, value).apply()
+
+    var v168subtitleKaraokeFontSize168: Int
+        get() = prefs.getInt(KEY_V168SUBTITLEKARAOKEFONTSIZE168, 0)
+        set(value) = prefs.edit().putInt(KEY_V168SUBTITLEKARAOKEFONTSIZE168, value).apply()
+
+    var v168gestureSwipeDownAction: Int
+        get() = prefs.getInt(KEY_V168GESTURESWIPEDOWNACTION, 0)
+        set(value) = prefs.edit().putInt(KEY_V168GESTURESWIPEDOWNACTION, value).apply()
+
+    var v168castVideoPIPAdaptiveBitrate168: Boolean
+        get() = prefs.getBoolean(KEY_V168CASTVIDEOPIPADAPTIVEBITRATE168, false)
+        set(value) = prefs.edit().putBoolean(KEY_V168CASTVIDEOPIPADAPTIVEBITRATE168, value).apply()
+
+    var v168playlistRepeatMode168: Int
+        get() = prefs.getInt(KEY_V168PLAYLISTREPEATMODE168, 0)
+        set(value) = prefs.edit().putInt(KEY_V168PLAYLISTREPEATMODE168, value).apply()
+
+    var v168cacheCleanupOnLowStorage: Boolean
+        get() = prefs.getBoolean(KEY_V168CACHECLEANUPONLOWSTORAGE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V168CACHECLEANUPONLOWSTORAGE, value).apply()
+
+    var v168progressBarLoadedColor168: Int
+        get() = prefs.getInt(KEY_V168PROGRESSBARLOADEDCOLOR168, 0)
+        set(value) = prefs.edit().putInt(KEY_V168PROGRESSBARLOADEDCOLOR168, value).apply()
+
+    var v168volumeFadeCurve168: Int
+        get() = prefs.getInt(KEY_V168VOLUMEFADECURVE168, 0)
+        set(value) = prefs.edit().putInt(KEY_V168VOLUMEFADECURVE168, value).apply()
+
+    var v168historySyncBluetooth168: Boolean
+        get() = prefs.getBoolean(KEY_V168HISTORYSYNCBLUETOOTH168, false)
+        set(value) = prefs.edit().putBoolean(KEY_V168HISTORYSYNCBLUETOOTH168, value).apply()
+
+    var v168playbackAutoNext: Boolean
+        get() = prefs.getBoolean(KEY_V168PLAYBACKAUTONEXT, false)
+        set(value) = prefs.edit().putBoolean(KEY_V168PLAYBACKAUTONEXT, value).apply()
+
+    var v168screenshotTimestampToggle: Boolean
+        get() = prefs.getBoolean(KEY_V168SCREENSHOTTIMESTAMPTOGGLE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V168SCREENSHOTTIMESTAMPTOGGLE, value).apply()
+
+    var v168videoSharpenRadius168: Int
+        get() = prefs.getInt(KEY_V168VIDEOSHARPENRADIUS168, 0)
+        set(value) = prefs.edit().putInt(KEY_V168VIDEOSHARPENRADIUS168, value).apply()
+
+    var v168danmakuRenderFlushPolicy: Int
+        get() = prefs.getInt(KEY_V168DANMAKURENDERFLUSHPOLICY, 0)
+        set(value) = prefs.edit().putInt(KEY_V168DANMAKURENDERFLUSHPOLICY, value).apply()
+
+    var v168subtitleKaraokeAlign: Int
+        get() = prefs.getInt(KEY_V168SUBTITLEKARAOKEALIGN, 0)
+        set(value) = prefs.edit().putInt(KEY_V168SUBTITLEKARAOKEALIGN, value).apply()
+
+    var v169audioGateKnee: Int
+        get() = prefs.getInt(KEY_V169AUDIOGATEKNEE, 0)
+        set(value) = prefs.edit().putInt(KEY_V169AUDIOGATEKNEE, value).apply()
+
+    var v169danmakuRenderFlushPolicy169: Int
+        get() = prefs.getInt(KEY_V169DANMAKURENDERFLUSHPOLICY169, 0)
+        set(value) = prefs.edit().putInt(KEY_V169DANMAKURENDERFLUSHPOLICY169, value).apply()
+
+    var v169subtitleKaraokeAlign169: Int
+        get() = prefs.getInt(KEY_V169SUBTITLEKARAOKEALIGN169, 0)
+        set(value) = prefs.edit().putInt(KEY_V169SUBTITLEKARAOKEALIGN169, value).apply()
+
+    var v169gesturePinchInAction: Int
+        get() = prefs.getInt(KEY_V169GESTUREPINCHINACTION, 0)
+        set(value) = prefs.edit().putInt(KEY_V169GESTUREPINCHINACTION, value).apply()
+
+    var v169castVideoPIPResolutionScale: Int
+        get() = prefs.getInt(KEY_V169CASTVIDEOPIPRESOLUTIONSCALE, 0)
+        set(value) = prefs.edit().putInt(KEY_V169CASTVIDEOPIPRESOLUTIONSCALE, value).apply()
+
+    var v169playlistAutoPlayRelated: Boolean
+        get() = prefs.getBoolean(KEY_V169PLAYLISTAUTOPLAYRELATED, false)
+        set(value) = prefs.edit().putBoolean(KEY_V169PLAYLISTAUTOPLAYRELATED, value).apply()
+
+    var v169cacheCleanupOnLowStorage169: Boolean
+        get() = prefs.getBoolean(KEY_V169CACHECLEANUPONLOWSTORAGE169, false)
+        set(value) = prefs.edit().putBoolean(KEY_V169CACHECLEANUPONLOWSTORAGE169, value).apply()
+
+    var v169progressBarLoadedOpacity: Int
+        get() = prefs.getInt(KEY_V169PROGRESSBARLOADEDOPACITY, 0)
+        set(value) = prefs.edit().putInt(KEY_V169PROGRESSBARLOADEDOPACITY, value).apply()
+
+    var v169volumeSpatialToggle169: Boolean
+        get() = prefs.getBoolean(KEY_V169VOLUMESPATIALTOGGLE169, false)
+        set(value) = prefs.edit().putBoolean(KEY_V169VOLUMESPATIALTOGGLE169, value).apply()
+
+    var v169historySearchFullText: Boolean
+        get() = prefs.getBoolean(KEY_V169HISTORYSEARCHFULLTEXT, false)
+        set(value) = prefs.edit().putBoolean(KEY_V169HISTORYSEARCHFULLTEXT, value).apply()
+
+    var v169playbackAutoNext169: Boolean
+        get() = prefs.getBoolean(KEY_V169PLAYBACKAUTONEXT169, false)
+        set(value) = prefs.edit().putBoolean(KEY_V169PLAYBACKAUTONEXT169, value).apply()
+
+    var v169screenshotTimestampToggle169: Boolean
+        get() = prefs.getBoolean(KEY_V169SCREENSHOTTIMESTAMPTOGGLE169, false)
+        set(value) = prefs.edit().putBoolean(KEY_V169SCREENSHOTTIMESTAMPTOGGLE169, value).apply()
+
+    var v169videoSharpenThreshold: Int
+        get() = prefs.getInt(KEY_V169VIDEOSHARPENTHRESHOLD, 0)
+        set(value) = prefs.edit().putInt(KEY_V169VIDEOSHARPENTHRESHOLD, value).apply()
+
+    var v169danmakuRenderFlushInterval: Int
+        get() = prefs.getInt(KEY_V169DANMAKURENDERFLUSHINTERVAL, 0)
+        set(value) = prefs.edit().putInt(KEY_V169DANMAKURENDERFLUSHINTERVAL, value).apply()
+
+    var v169subtitleKaraokeShadow: Boolean
+        get() = prefs.getBoolean(KEY_V169SUBTITLEKARAOKESHADOW, false)
+        set(value) = prefs.edit().putBoolean(KEY_V169SUBTITLEKARAOKESHADOW, value).apply()
+
+    var v170audioGateMix: Int
+        get() = prefs.getInt(KEY_V170AUDIOGATEMIX, 50)
+        set(value) = prefs.edit().putInt(KEY_V170AUDIOGATEMIX, value).apply()
+
+    var v170danmakuRenderFlushInterval170: Int
+        get() = prefs.getInt(KEY_V170DANMAKURENDERFLUSHINTERVAL170, 0)
+        set(value) = prefs.edit().putInt(KEY_V170DANMAKURENDERFLUSHINTERVAL170, value).apply()
+
+    var v170subtitleKaraokeShadow170: Boolean
+        get() = prefs.getBoolean(KEY_V170SUBTITLEKARAOKESHADOW170, false)
+        set(value) = prefs.edit().putBoolean(KEY_V170SUBTITLEKARAOKESHADOW170, value).apply()
+
+    var v170gesturePinchOutAction: Int
+        get() = prefs.getInt(KEY_V170GESTUREPINCHOUTACTION, 0)
+        set(value) = prefs.edit().putInt(KEY_V170GESTUREPINCHOUTACTION, value).apply()
+
+    var v170castVideoPIPResolutionScale170: Int
+        get() = prefs.getInt(KEY_V170CASTVIDEOPIPRESOLUTIONSCALE170, 0)
+        set(value) = prefs.edit().putInt(KEY_V170CASTVIDEOPIPRESOLUTIONSCALE170, value).apply()
+
+    var v170playlistAutoPlayRelated170: Boolean
+        get() = prefs.getBoolean(KEY_V170PLAYLISTAUTOPLAYRELATED170, false)
+        set(value) = prefs.edit().putBoolean(KEY_V170PLAYLISTAUTOPLAYRELATED170, value).apply()
+
+    var v170cacheCleanupMaxAge: Int
+        get() = prefs.getInt(KEY_V170CACHECLEANUPMAXAGE, 0)
+        set(value) = prefs.edit().putInt(KEY_V170CACHECLEANUPMAXAGE, value).apply()
+
+    var v170progressBarLoadedOpacity170: Int
+        get() = prefs.getInt(KEY_V170PROGRESSBARLOADEDOPACITY170, 0)
+        set(value) = prefs.edit().putInt(KEY_V170PROGRESSBARLOADEDOPACITY170, value).apply()
+
+    var v170volumeSpatialMode: Int
+        get() = prefs.getInt(KEY_V170VOLUMESPATIALMODE, 0)
+        set(value) = prefs.edit().putInt(KEY_V170VOLUMESPATIALMODE, value).apply()
+
+    var v170historySearchFullText170: Boolean
+        get() = prefs.getBoolean(KEY_V170HISTORYSEARCHFULLTEXT170, false)
+        set(value) = prefs.edit().putBoolean(KEY_V170HISTORYSEARCHFULLTEXT170, value).apply()
+
+    var v170playbackLoopABToggle170: Boolean
+        get() = prefs.getBoolean(KEY_V170PLAYBACKLOOPABTOGGLE170, false)
+        set(value) = prefs.edit().putBoolean(KEY_V170PLAYBACKLOOPABTOGGLE170, value).apply()
+
+    var v170screenshotWatermarkToggle170: Boolean
+        get() = prefs.getBoolean(KEY_V170SCREENSHOTWATERMARKTOGGLE170, false)
+        set(value) = prefs.edit().putBoolean(KEY_V170SCREENSHOTWATERMARKTOGGLE170, value).apply()
+
+    var v170videoSharpenThreshold170: Int
+        get() = prefs.getInt(KEY_V170VIDEOSHARPENTHRESHOLD170, 0)
+        set(value) = prefs.edit().putInt(KEY_V170VIDEOSHARPENTHRESHOLD170, value).apply()
+
+    var v170danmakuRenderFlushAll: Boolean
+        get() = prefs.getBoolean(KEY_V170DANMAKURENDERFLUSHALL, false)
+        set(value) = prefs.edit().putBoolean(KEY_V170DANMAKURENDERFLUSHALL, value).apply()
+
+    var v170subtitleKaraokeBorder: Boolean
+        get() = prefs.getBoolean(KEY_V170SUBTITLEKARAOKEBORDER, false)
+        set(value) = prefs.edit().putBoolean(KEY_V170SUBTITLEKARAOKEBORDER, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -21430,5 +22030,155 @@ class AppPrefs(context: Context) {
         const val KEY_V160VIDEOPIPFOLLOWSPATIALAUDIO160 = "v160videoPIPFollowSpatialAudio160" // v160 Video PIP Follow Spatial Audio160
         const val KEY_V160DANMAKUFONTBGFILLGRADIENTINTERP161 = "v160danmakuFontBgFillGradientInterp161" // v160 Danmaku Font BG Fill Gradient Interp161
         const val KEY_V160SUBTITLEANIMATIONTRANSLATE160 = "v160subtitleAnimationTranslate160" // v160 Subtitle Animation Translate160
+        const val KEY_V161AUDIOGATETOGGLE161 = "v161audioGateToggle161" // v161 Audio Gate Toggle161
+        const val KEY_V161DANMAKURENDERBATCHSIZE = "v161danmakuRenderBatchSize" // v161 Danmaku Render Batch Size
+        const val KEY_V161SUBTITLEPOSITIONANCHOR = "v161subtitlePositionAnchor" // v161 Subtitle Position Anchor
+        const val KEY_V161GESTURELONGPRESSACTION = "v161gestureLongPressAction" // v161 Gesture Long Press Action
+        const val KEY_V161CASTVIDEOPIPMAXRESOLUTION = "v161castVideoPIPMaxResolution" // v161 Cast Video PIP Max Resolution
+        const val KEY_V161PLAYLISTCONTINUEPLAYNEXT = "v161playlistContinuePlayNext" // v161 Playlist Continue Play Next
+        const val KEY_V161CACHEPRELOADNEXTEPISODE = "v161cachePreloadNextEpisode" // v161 Cache Preload Next Episode
+        const val KEY_V161PROGRESSBARBUFFEREDCOLOR = "v161progressBarBufferedColor" // v161 Progress Bar Buffered Color
+        const val KEY_V161VOLUMEFADEINONRESUME = "v161volumeFadeInOnResume" // v161 Volume Fade In On Resume
+        const val KEY_V161HISTORYIMPORTEXPORT = "v161historyImportExport" // v161 History Import Export
+        const val KEY_V161PLAYBACKAUTOROTATELANDSCAPE = "v161playbackAutoRotateLandscape" // v161 Playback Auto Rotate Landscape
+        const val KEY_V161SCREENSHOTFORMATPNG = "v161screenshotFormatPNG" // v161 Screenshot Format PNG
+        const val KEY_V161VIDEODENOISETOGGLE161 = "v161videoDenoiseToggle161" // v161 Video Denoise Toggle161
+        const val KEY_V161DANMAKURENDERTHREADCOUNT = "v161danmakuRenderThreadCount" // v161 Danmaku Render Thread Count
+        const val KEY_V161SUBTITLEKARAOKEHIGHLIGHT = "v161subtitleKaraokeHighlight" // v161 Subtitle Karaoke Highlight
+        const val KEY_V162AUDIOGATETHRESHOLD162 = "v162audioGateThreshold162" // v162 Audio Gate Threshold162
+        const val KEY_V162DANMAKURENDERTHREADCOUNT162 = "v162danmakuRenderThreadCount162" // v162 Danmaku Render Thread Count162
+        const val KEY_V162SUBTITLEKARAOKEHIGHLIGHT162 = "v162subtitleKaraokeHighlight162" // v162 Subtitle Karaoke Highlight162
+        const val KEY_V162GESTURELONGPRESSDURATION = "v162gestureLongPressDuration" // v162 Gesture Long Press Duration
+        const val KEY_V162CASTVIDEOPIPMAXRESOLUTION162 = "v162castVideoPIPMaxResolution162" // v162 Cast Video PIP Max Resolution162
+        const val KEY_V162PLAYLISTCONTINUEPLAYNEXT162 = "v162playlistContinuePlayNext162" // v162 Playlist Continue Play Next162
+        const val KEY_V162CACHEPRELOADNEXTEPISODE162 = "v162cachePreloadNextEpisode162" // v162 Cache Preload Next Episode162
+        const val KEY_V162PROGRESSBARBUFFEREDCOLOR162 = "v162progressBarBufferedColor162" // v162 Progress Bar Buffered Color162
+        const val KEY_V162VOLUMEFADEINONRESUME162 = "v162volumeFadeInOnResume162" // v162 Volume Fade In On Resume162
+        const val KEY_V162HISTORYIMPORTEXPORT162 = "v162historyImportExport162" // v162 History Import Export162
+        const val KEY_V162PLAYBACKAUTOROTATELANDSCAPE162 = "v162playbackAutoRotateLandscape162" // v162 Playback Auto Rotate Landscape162
+        const val KEY_V162SCREENSHOTFORMATJPEG = "v162screenshotFormatJPEG" // v162 Screenshot Format JPEG
+        const val KEY_V162VIDEODENOISESTRENGTH162 = "v162videoDenoiseStrength162" // v162 Video Denoise Strength162
+        const val KEY_V162DANMAKURENDERCACHETOGGLE = "v162danmakuRenderCacheToggle" // v162 Danmaku Render Cache Toggle
+        const val KEY_V162SUBTITLEKARAOKESPEED = "v162subtitleKaraokeSpeed" // v162 Subtitle Karaoke Speed
+        const val KEY_V163AUDIOGATERELEASE163 = "v163audioGateRelease163" // v163 Audio Gate Release163
+        const val KEY_V163DANMAKURENDERCACHETOGGLE163 = "v163danmakuRenderCacheToggle163" // v163 Danmaku Render Cache Toggle163
+        const val KEY_V163SUBTITLEKARAOKESPEED163 = "v163subtitleKaraokeSpeed163" // v163 Subtitle Karaoke Speed163
+        const val KEY_V163GESTURELONGPRESSVIBRATE = "v163gestureLongPressVibrate" // v163 Gesture Long Press Vibrate
+        const val KEY_V163CASTVIDEOPIPBITRATELIMIT = "v163castVideoPIPBitrateLimit" // v163 Cast Video PIP Bitrate Limit
+        const val KEY_V163PLAYLISTCONTINUEONWIFI = "v163playlistContinueOnWifi" // v163 Playlist Continue On Wifi
+        const val KEY_V163CACHEPRELOADSIZEMB = "v163cachePreloadSizeMB" // v163 Cache Preload Size MB
+        const val KEY_V163PROGRESSBARBUFFEREDWIDTH = "v163progressBarBufferedWidth" // v163 Progress Bar Buffered Width
+        const val KEY_V163VOLUMEFADEOUTONPAUSE = "v163volumeFadeOutOnPause" // v163 Volume Fade Out On Pause
+        const val KEY_V163HISTORYSYNCCLOUD = "v163historySyncCloud" // v163 History Sync Cloud
+        const val KEY_V163PLAYBACKAUTOROTATEPORTRAIT = "v163playbackAutoRotatePortrait" // v163 Playback Auto Rotate Portrait
+        const val KEY_V163SCREENSHOTQUALITYLEVEL = "v163screenshotQualityLevel" // v163 Screenshot Quality Level
+        const val KEY_V163VIDEODENOISESTRENGTH163 = "v163videoDenoiseStrength163" // v163 Video Denoise Strength163
+        const val KEY_V163DANMAKURENDERCACHESIZE = "v163danmakuRenderCacheSize" // v163 Danmaku Render Cache Size
+        const val KEY_V163SUBTITLEKARAOKECOLOR = "v163subtitleKaraokeColor" // v163 Subtitle Karaoke Color
+        const val KEY_V164AUDIOGATERANGE164 = "v164audioGateRange164" // v164 Audio Gate Range164
+        const val KEY_V164DANMAKURENDERCACHESIZE164 = "v164danmakuRenderCacheSize164" // v164 Danmaku Render Cache Size164
+        const val KEY_V164SUBTITLEKARAOKECOLOR164 = "v164subtitleKaraokeColor164" // v164 Subtitle Karaoke Color164
+        const val KEY_V164GESTURELONGPRESSVIBRATE164 = "v164gestureLongPressVibrate164" // v164 Gesture Long Press Vibrate164
+        const val KEY_V164CASTVIDEOPIPBITRATELIMIT164 = "v164castVideoPIPBitrateLimit164" // v164 Cast Video PIP Bitrate Limit164
+        const val KEY_V164PLAYLISTCONTINUEONWIFI164 = "v164playlistContinueOnWifi164" // v164 Playlist Continue On Wifi164
+        const val KEY_V164CACHEPRELOADONWIFI = "v164cachePreloadOnWifi" // v164 Cache Preload On Wifi
+        const val KEY_V164PROGRESSBARBUFFEREDOPACITY = "v164progressBarBufferedOpacity" // v164 Progress Bar Buffered Opacity
+        const val KEY_V164VOLUMEFADEOUTONPAUSE164 = "v164volumeFadeOutOnPause164" // v164 Volume Fade Out On Pause164
+        const val KEY_V164HISTORYSYNCCLOUD164 = "v164historySyncCloud164" // v164 History Sync Cloud164
+        const val KEY_V164PLAYBACKREMEMBERSPEED = "v164playbackRememberSpeed" // v164 Playback Remember Speed
+        const val KEY_V164SCREENSHOTAUTONAME = "v164screenshotAutoName" // v164 Screenshot Auto Name
+        const val KEY_V164VIDEOSHARPENTOGGLE164 = "v164videoSharpenToggle164" // v164 Video Sharpen Toggle164
+        const val KEY_V164DANMAKURENDERCACHEPOLICY = "v164danmakuRenderCachePolicy" // v164 Danmaku Render Cache Policy
+        const val KEY_V164SUBTITLEKARAOKEFONT = "v164subtitleKaraokeFont" // v164 Subtitle Karaoke Font
+        const val KEY_V165AUDIOGATEATTACK165 = "v165audioGateAttack165" // v165 Audio Gate Attack165
+        const val KEY_V165DANMAKURENDERCACHEPOLICY165 = "v165danmakuRenderCachePolicy165" // v165 Danmaku Render Cache Policy165
+        const val KEY_V165SUBTITLEKARAOKEFONT165 = "v165subtitleKaraokeFont165" // v165 Subtitle Karaoke Font165
+        const val KEY_V165GESTURESWIPELEFTACTION = "v165gestureSwipeLeftAction" // v165 Gesture Swipe Left Action
+        const val KEY_V165CASTVIDEOPIPFRAMEDROP = "v165castVideoPIPFrameDrop" // v165 Cast Video PIP Frame Drop
+        const val KEY_V165PLAYLISTSHUFFLEMODE = "v165playlistShuffleMode" // v165 Playlist Shuffle Mode
+        const val KEY_V165CACHEPRELOADONWIFI165 = "v165cachePreloadOnWifi165" // v165 Cache Preload On Wifi165
+        const val KEY_V165PROGRESSBARBUFFEREDANIM = "v165progressBarBufferedAnim" // v165 Progress Bar Buffered Anim
+        const val KEY_V165VOLUMEFADEDURATION = "v165volumeFadeDuration" // v165 Volume Fade Duration
+        const val KEY_V165HISTORYSYNCWIFI = "v165historySyncWifi" // v165 History Sync Wifi
+        const val KEY_V165PLAYBACKREMEMBERSPEED165 = "v165playbackRememberSpeed165" // v165 Playback Remember Speed165
+        const val KEY_V165SCREENSHOTAUTONAME165 = "v165screenshotAutoName165" // v165 Screenshot Auto Name165
+        const val KEY_V165VIDEOSHARPENSTRENGTH165 = "v165videoSharpenStrength165" // v165 Video Sharpen Strength165
+        const val KEY_V165DANMAKURENDERBATCH = "v165danmakuRenderBatch" // v165 Danmaku Render Batch
+        const val KEY_V165SUBTITLEKARAOKETIMING = "v165subtitleKaraokeTiming" // v165 Subtitle Karaoke Timing
+        const val KEY_V166AUDIOGATEHYSTERESIS = "v166audioGateHysteresis" // v166 Audio Gate Hysteresis
+        const val KEY_V166DANMAKURENDERBATCH166 = "v166danmakuRenderBatch166" // v166 Danmaku Render Batch166
+        const val KEY_V166SUBTITLEKARAOKETIMING166 = "v166subtitleKaraokeTiming166" // v166 Subtitle Karaoke Timing166
+        const val KEY_V166GESTURESWIPERIGHTACTION = "v166gestureSwipeRightAction" // v166 Gesture Swipe Right Action
+        const val KEY_V166CASTVIDEOPIPFRAMEDROP166 = "v166castVideoPIPFrameDrop166" // v166 Cast Video PIP Frame Drop166
+        const val KEY_V166PLAYLISTSHUFFLEMODE166 = "v166playlistShuffleMode166" // v166 Playlist Shuffle Mode166
+        const val KEY_V166CACHEPRELOADPRIORITY = "v166cachePreloadPriority" // v166 Cache Preload Priority
+        const val KEY_V166PROGRESSBARBUFFEREDANIM166 = "v166progressBarBufferedAnim166" // v166 Progress Bar Buffered Anim166
+        const val KEY_V166VOLUMEFADEDURATION166 = "v166volumeFadeDuration166" // v166 Volume Fade Duration166
+        const val KEY_V166HISTORYSYNCWIFI166 = "v166historySyncWifi166" // v166 History Sync Wifi166
+        const val KEY_V166PLAYBACKREMEMBERQUALITY = "v166playbackRememberQuality" // v166 Playback Remember Quality
+        const val KEY_V166SCREENSHOTPREFIXCUSTOM = "v166screenshotPrefixCustom" // v166 Screenshot Prefix Custom
+        const val KEY_V166VIDEOSHARPENSTRENGTH166 = "v166videoSharpenStrength166" // v166 Video Sharpen Strength166
+        const val KEY_V166DANMAKURENDERBATCHSIZE166 = "v166danmakuRenderBatchSize166" // v166 Danmaku Render Batch Size166
+        const val KEY_V166SUBTITLEKARAOKEMODE = "v166subtitleKaraokeMode" // v166 Subtitle Karaoke Mode
+        const val KEY_V167AUDIOGATERATIO = "v167audioGateRatio" // v167 Audio Gate Ratio
+        const val KEY_V167DANMAKURENDERBATCHSIZE167 = "v167danmakuRenderBatchSize167" // v167 Danmaku Render Batch Size167
+        const val KEY_V167SUBTITLEKARAOKEMODE167 = "v167subtitleKaraokeMode167" // v167 Subtitle Karaoke Mode167
+        const val KEY_V167GESTURESWIPEUPACTION = "v167gestureSwipeUpAction" // v167 Gesture Swipe Up Action
+        const val KEY_V167CASTVIDEOPIPADAPTIVEBITRATE = "v167castVideoPIPAdaptiveBitrate" // v167 Cast Video PIP Adaptive Bitrate
+        const val KEY_V167PLAYLISTREPEATMODE = "v167playlistRepeatMode" // v167 Playlist Repeat Mode
+        const val KEY_V167CACHEPRELOADPRIORITY167 = "v167cachePreloadPriority167" // v167 Cache Preload Priority167
+        const val KEY_V167PROGRESSBARLOADEDCOLOR = "v167progressBarLoadedColor" // v167 Progress Bar Loaded Color
+        const val KEY_V167VOLUMEFADECURVE = "v167volumeFadeCurve" // v167 Volume Fade Curve
+        const val KEY_V167HISTORYSYNCBLUETOOTH = "v167historySyncBluetooth" // v167 History Sync Bluetooth
+        const val KEY_V167PLAYBACKREMEMBERQUALITY167 = "v167playbackRememberQuality167" // v167 Playback Remember Quality167
+        const val KEY_V167SCREENSHOTPREFIXCUSTOM167 = "v167screenshotPrefixCustom167" // v167 Screenshot Prefix Custom167
+        const val KEY_V167VIDEOSHARPENRADIUS = "v167videoSharpenRadius" // v167 Video Sharpen Radius
+        const val KEY_V167DANMAKURENDERBATCHTIMEOUT = "v167danmakuRenderBatchTimeout" // v167 Danmaku Render Batch Timeout
+        const val KEY_V167SUBTITLEKARAOKEFONTSIZE = "v167subtitleKaraokeFontSize" // v167 Subtitle Karaoke Font Size
+        const val KEY_V168AUDIOGATERANGE168 = "v168audioGateRange168" // v168 Audio Gate Range168
+        const val KEY_V168DANMAKURENDERBATCHTIMEOUT168 = "v168danmakuRenderBatchTimeout168" // v168 Danmaku Render Batch Timeout168
+        const val KEY_V168SUBTITLEKARAOKEFONTSIZE168 = "v168subtitleKaraokeFontSize168" // v168 Subtitle Karaoke Font Size168
+        const val KEY_V168GESTURESWIPEDOWNACTION = "v168gestureSwipeDownAction" // v168 Gesture Swipe Down Action
+        const val KEY_V168CASTVIDEOPIPADAPTIVEBITRATE168 = "v168castVideoPIPAdaptiveBitrate168" // v168 Cast Video PIP Adaptive Bitrate168
+        const val KEY_V168PLAYLISTREPEATMODE168 = "v168playlistRepeatMode168" // v168 Playlist Repeat Mode168
+        const val KEY_V168CACHECLEANUPONLOWSTORAGE = "v168cacheCleanupOnLowStorage" // v168 Cache Cleanup On Low Storage
+        const val KEY_V168PROGRESSBARLOADEDCOLOR168 = "v168progressBarLoadedColor168" // v168 Progress Bar Loaded Color168
+        const val KEY_V168VOLUMEFADECURVE168 = "v168volumeFadeCurve168" // v168 Volume Fade Curve168
+        const val KEY_V168HISTORYSYNCBLUETOOTH168 = "v168historySyncBluetooth168" // v168 History Sync Bluetooth168
+        const val KEY_V168PLAYBACKAUTONEXT = "v168playbackAutoNext" // v168 Playback Auto Next
+        const val KEY_V168SCREENSHOTTIMESTAMPTOGGLE = "v168screenshotTimestampToggle" // v168 Screenshot Timestamp Toggle
+        const val KEY_V168VIDEOSHARPENRADIUS168 = "v168videoSharpenRadius168" // v168 Video Sharpen Radius168
+        const val KEY_V168DANMAKURENDERFLUSHPOLICY = "v168danmakuRenderFlushPolicy" // v168 Danmaku Render Flush Policy
+        const val KEY_V168SUBTITLEKARAOKEALIGN = "v168subtitleKaraokeAlign" // v168 Subtitle Karaoke Align
+        const val KEY_V169AUDIOGATEKNEE = "v169audioGateKnee" // v169 Audio Gate Knee
+        const val KEY_V169DANMAKURENDERFLUSHPOLICY169 = "v169danmakuRenderFlushPolicy169" // v169 Danmaku Render Flush Policy169
+        const val KEY_V169SUBTITLEKARAOKEALIGN169 = "v169subtitleKaraokeAlign169" // v169 Subtitle Karaoke Align169
+        const val KEY_V169GESTUREPINCHINACTION = "v169gesturePinchInAction" // v169 Gesture Pinch In Action
+        const val KEY_V169CASTVIDEOPIPRESOLUTIONSCALE = "v169castVideoPIPResolutionScale" // v169 Cast Video PIP Resolution Scale
+        const val KEY_V169PLAYLISTAUTOPLAYRELATED = "v169playlistAutoPlayRelated" // v169 Playlist Auto Play Related
+        const val KEY_V169CACHECLEANUPONLOWSTORAGE169 = "v169cacheCleanupOnLowStorage169" // v169 Cache Cleanup On Low Storage169
+        const val KEY_V169PROGRESSBARLOADEDOPACITY = "v169progressBarLoadedOpacity" // v169 Progress Bar Loaded Opacity
+        const val KEY_V169VOLUMESPATIALTOGGLE169 = "v169volumeSpatialToggle169" // v169 Volume Spatial Toggle169
+        const val KEY_V169HISTORYSEARCHFULLTEXT = "v169historySearchFullText" // v169 History Search Full Text
+        const val KEY_V169PLAYBACKAUTONEXT169 = "v169playbackAutoNext169" // v169 Playback Auto Next169
+        const val KEY_V169SCREENSHOTTIMESTAMPTOGGLE169 = "v169screenshotTimestampToggle169" // v169 Screenshot Timestamp Toggle169
+        const val KEY_V169VIDEOSHARPENTHRESHOLD = "v169videoSharpenThreshold" // v169 Video Sharpen Threshold
+        const val KEY_V169DANMAKURENDERFLUSHINTERVAL = "v169danmakuRenderFlushInterval" // v169 Danmaku Render Flush Interval
+        const val KEY_V169SUBTITLEKARAOKESHADOW = "v169subtitleKaraokeShadow" // v169 Subtitle Karaoke Shadow
+        const val KEY_V170AUDIOGATEMIX = "v170audioGateMix" // v170 Audio Gate Mix
+        const val KEY_V170DANMAKURENDERFLUSHINTERVAL170 = "v170danmakuRenderFlushInterval170" // v170 Danmaku Render Flush Interval170
+        const val KEY_V170SUBTITLEKARAOKESHADOW170 = "v170subtitleKaraokeShadow170" // v170 Subtitle Karaoke Shadow170
+        const val KEY_V170GESTUREPINCHOUTACTION = "v170gesturePinchOutAction" // v170 Gesture Pinch Out Action
+        const val KEY_V170CASTVIDEOPIPRESOLUTIONSCALE170 = "v170castVideoPIPResolutionScale170" // v170 Cast Video PIP Resolution Scale170
+        const val KEY_V170PLAYLISTAUTOPLAYRELATED170 = "v170playlistAutoPlayRelated170" // v170 Playlist Auto Play Related170
+        const val KEY_V170CACHECLEANUPMAXAGE = "v170cacheCleanupMaxAge" // v170 Cache Cleanup Max Age
+        const val KEY_V170PROGRESSBARLOADEDOPACITY170 = "v170progressBarLoadedOpacity170" // v170 Progress Bar Loaded Opacity170
+        const val KEY_V170VOLUMESPATIALMODE = "v170volumeSpatialMode" // v170 Volume Spatial Mode
+        const val KEY_V170HISTORYSEARCHFULLTEXT170 = "v170historySearchFullText170" // v170 History Search Full Text170
+        const val KEY_V170PLAYBACKLOOPABTOGGLE170 = "v170playbackLoopABToggle170" // v170 Playback Loop AB Toggle170
+        const val KEY_V170SCREENSHOTWATERMARKTOGGLE170 = "v170screenshotWatermarkToggle170" // v170 Screenshot Watermark Toggle170
+        const val KEY_V170VIDEOSHARPENTHRESHOLD170 = "v170videoSharpenThreshold170" // v170 Video Sharpen Threshold170
+        const val KEY_V170DANMAKURENDERFLUSHALL = "v170danmakuRenderFlushAll" // v170 Danmaku Render Flush All
+        const val KEY_V170SUBTITLEKARAOKEBORDER = "v170subtitleKaraokeBorder" // v170 Subtitle Karaoke Border
     }
 }
