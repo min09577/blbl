@@ -35648,6 +35648,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V480MODELAUTOLOAD480, false)
         set(value) = prefs.edit().putBoolean(KEY_V480MODELAUTOLOAD480, value).apply()
 
+    var v481moduleAutoLoad481: Boolean
+        get() = prefs.getBoolean(KEY_V481MODULEAUTOLOAD481, false)
+        set(value) = prefs.edit().putBoolean(KEY_V481MODULEAUTOLOAD481, value).apply()
+
+    var v481monitorCpuUsage481: Boolean
+        get() = prefs.getBoolean(KEY_V481MONITORCPUUSAGE481, false)
+        set(value) = prefs.edit().putBoolean(KEY_V481MONITORCPUUSAGE481, value).apply()
+
+    var v481mountAutoDetect481: Boolean
+        get() = prefs.getBoolean(KEY_V481MOUNTAUTODETECT481, false)
+        set(value) = prefs.edit().putBoolean(KEY_V481MOUNTAUTODETECT481, value).apply()
+
+    var v481mouseHoverPreview481: Boolean
+        get() = prefs.getBoolean(KEY_V481MOUSEHOVERPREVIEW481, false)
+        set(value) = prefs.edit().putBoolean(KEY_V481MOUSEHOVERPREVIEW481, value).apply()
+
+    var v481moveTransition481: Boolean
+        get() = prefs.getBoolean(KEY_V481MOVETRANSITION481, false)
+        set(value) = prefs.edit().putBoolean(KEY_V481MOVETRANSITION481, value).apply()
+
+    var v481multiThreadDecode481: Boolean
+        get() = prefs.getBoolean(KEY_V481MULTITHREADDECODE481, false)
+        set(value) = prefs.edit().putBoolean(KEY_V481MULTITHREADDECODE481, value).apply()
+
+    var v481navAutoCollapse481: Boolean
+        get() = prefs.getBoolean(KEY_V481NAVAUTOCOLLAPSE481, false)
+        set(value) = prefs.edit().putBoolean(KEY_V481NAVAUTOCOLLAPSE481, value).apply()
+
+    var v481nodeAutoConnect481: Boolean
+        get() = prefs.getBoolean(KEY_V481NODEAUTOCONNECT481, false)
+        set(value) = prefs.edit().putBoolean(KEY_V481NODEAUTOCONNECT481, value).apply()
+
+    var v481offsetAutoCalibrate481: Boolean
+        get() = prefs.getBoolean(KEY_V481OFFSETAUTOCALIBRATE481, false)
+        set(value) = prefs.edit().putBoolean(KEY_V481OFFSETAUTOCALIBRATE481, value).apply()
+
+    var v481openWithExternal481: Boolean
+        get() = prefs.getBoolean(KEY_V481OPENWITHEXTERNAL481, false)
+        set(value) = prefs.edit().putBoolean(KEY_V481OPENWITHEXTERNAL481, value).apply()
+
+    var v481orderAutoSort481: Int
+        get() = prefs.getInt(KEY_V481ORDERAUTOSORT481, 0)
+        set(value) = prefs.edit().putInt(KEY_V481ORDERAUTOSORT481, value).apply()
+
+    var v481outputAutoSelect481: Boolean
+        get() = prefs.getBoolean(KEY_V481OUTPUTAUTOSELECT481, false)
+        set(value) = prefs.edit().putBoolean(KEY_V481OUTPUTAUTOSELECT481, value).apply()
+
+    var v481overlayAutoShow481: Boolean
+        get() = prefs.getBoolean(KEY_V481OVERLAYAUTOSHOW481, false)
+        set(value) = prefs.edit().putBoolean(KEY_V481OVERLAYAUTOSHOW481, value).apply()
+
+    var v481overrideGlobal481: Boolean
+        get() = prefs.getBoolean(KEY_V481OVERRIDEGLOBAL481, false)
+        set(value) = prefs.edit().putBoolean(KEY_V481OVERRIDEGLOBAL481, value).apply()
+
+    var v481packAutoCompress481: Boolean
+        get() = prefs.getBoolean(KEY_V481PACKAUTOCOMPRESS481, false)
+        set(value) = prefs.edit().putBoolean(KEY_V481PACKAUTOCOMPRESS481, value).apply()
+
+    var v482moduleAutoLoad482: Boolean
+        get() = prefs.getBoolean(KEY_V482MODULEAUTOLOAD482, false)
+        set(value) = prefs.edit().putBoolean(KEY_V482MODULEAUTOLOAD482, value).apply()
+
+    var v482monitorCpuUsage482: Boolean
+        get() = prefs.getBoolean(KEY_V482MONITORCPUUSAGE482, false)
+        set(value) = prefs.edit().putBoolean(KEY_V482MONITORCPUUSAGE482, value).apply()
+
+    var v482mountAutoDetect482: Boolean
+        get() = prefs.getBoolean(KEY_V482MOUNTAUTODETECT482, false)
+        set(value) = prefs.edit().putBoolean(KEY_V482MOUNTAUTODETECT482, value).apply()
+
+    var v482mouseHoverPreview482: Boolean
+        get() = prefs.getBoolean(KEY_V482MOUSEHOVERPREVIEW482, false)
+        set(value) = prefs.edit().putBoolean(KEY_V482MOUSEHOVERPREVIEW482, value).apply()
+
+    var v482moveTransition482: Boolean
+        get() = prefs.getBoolean(KEY_V482MOVETRANSITION482, false)
+        set(value) = prefs.edit().putBoolean(KEY_V482MOVETRANSITION482, value).apply()
+
+    var v482multiThreadDecode482: Boolean
+        get() = prefs.getBoolean(KEY_V482MULTITHREADDECODE482, false)
+        set(value) = prefs.edit().putBoolean(KEY_V482MULTITHREADDECODE482, value).apply()
+
+    var v482navAutoCollapse482: Boolean
+        get() = prefs.getBoolean(KEY_V482NAVAUTOCOLLAPSE482, false)
+        set(value) = prefs.edit().putBoolean(KEY_V482NAVAUTOCOLLAPSE482, value).apply()
+
+    var v482nodeAutoConnect482: Boolean
+        get() = prefs.getBoolean(KEY_V482NODEAUTOCONNECT482, false)
+        set(value) = prefs.edit().putBoolean(KEY_V482NODEAUTOCONNECT482, value).apply()
+
+    var v482offsetAutoCalibrate482: Boolean
+        get() = prefs.getBoolean(KEY_V482OFFSETAUTOCALIBRATE482, false)
+        set(value) = prefs.edit().putBoolean(KEY_V482OFFSETAUTOCALIBRATE482, value).apply()
+
+    var v482openWithExternal482: Boolean
+        get() = prefs.getBoolean(KEY_V482OPENWITHEXTERNAL482, false)
+        set(value) = prefs.edit().putBoolean(KEY_V482OPENWITHEXTERNAL482, value).apply()
+
+    var v482orderAutoSort482: Int
+        get() = prefs.getInt(KEY_V482ORDERAUTOSORT482, 0)
+        set(value) = prefs.edit().putInt(KEY_V482ORDERAUTOSORT482, value).apply()
+
+    var v482outputAutoSelect482: Boolean
+        get() = prefs.getBoolean(KEY_V482OUTPUTAUTOSELECT482, false)
+        set(value) = prefs.edit().putBoolean(KEY_V482OUTPUTAUTOSELECT482, value).apply()
+
+    var v482overlayAutoShow482: Boolean
+        get() = prefs.getBoolean(KEY_V482OVERLAYAUTOSHOW482, false)
+        set(value) = prefs.edit().putBoolean(KEY_V482OVERLAYAUTOSHOW482, value).apply()
+
+    var v482overrideGlobal482: Boolean
+        get() = prefs.getBoolean(KEY_V482OVERRIDEGLOBAL482, false)
+        set(value) = prefs.edit().putBoolean(KEY_V482OVERRIDEGLOBAL482, value).apply()
+
+    var v482packAutoCompress482: Boolean
+        get() = prefs.getBoolean(KEY_V482PACKAUTOCOMPRESS482, false)
+        set(value) = prefs.edit().putBoolean(KEY_V482PACKAUTOCOMPRESS482, value).apply()
+
+    var v483moduleAutoLoad483: Boolean
+        get() = prefs.getBoolean(KEY_V483MODULEAUTOLOAD483, false)
+        set(value) = prefs.edit().putBoolean(KEY_V483MODULEAUTOLOAD483, value).apply()
+
+    var v483monitorCpuUsage483: Boolean
+        get() = prefs.getBoolean(KEY_V483MONITORCPUUSAGE483, false)
+        set(value) = prefs.edit().putBoolean(KEY_V483MONITORCPUUSAGE483, value).apply()
+
+    var v483mountAutoDetect483: Boolean
+        get() = prefs.getBoolean(KEY_V483MOUNTAUTODETECT483, false)
+        set(value) = prefs.edit().putBoolean(KEY_V483MOUNTAUTODETECT483, value).apply()
+
+    var v483mouseHoverPreview483: Boolean
+        get() = prefs.getBoolean(KEY_V483MOUSEHOVERPREVIEW483, false)
+        set(value) = prefs.edit().putBoolean(KEY_V483MOUSEHOVERPREVIEW483, value).apply()
+
+    var v483moveTransition483: Boolean
+        get() = prefs.getBoolean(KEY_V483MOVETRANSITION483, false)
+        set(value) = prefs.edit().putBoolean(KEY_V483MOVETRANSITION483, value).apply()
+
+    var v483multiThreadDecode483: Boolean
+        get() = prefs.getBoolean(KEY_V483MULTITHREADDECODE483, false)
+        set(value) = prefs.edit().putBoolean(KEY_V483MULTITHREADDECODE483, value).apply()
+
+    var v483navAutoCollapse483: Boolean
+        get() = prefs.getBoolean(KEY_V483NAVAUTOCOLLAPSE483, false)
+        set(value) = prefs.edit().putBoolean(KEY_V483NAVAUTOCOLLAPSE483, value).apply()
+
+    var v483nodeAutoConnect483: Boolean
+        get() = prefs.getBoolean(KEY_V483NODEAUTOCONNECT483, false)
+        set(value) = prefs.edit().putBoolean(KEY_V483NODEAUTOCONNECT483, value).apply()
+
+    var v483offsetAutoCalibrate483: Boolean
+        get() = prefs.getBoolean(KEY_V483OFFSETAUTOCALIBRATE483, false)
+        set(value) = prefs.edit().putBoolean(KEY_V483OFFSETAUTOCALIBRATE483, value).apply()
+
+    var v483openWithExternal483: Boolean
+        get() = prefs.getBoolean(KEY_V483OPENWITHEXTERNAL483, false)
+        set(value) = prefs.edit().putBoolean(KEY_V483OPENWITHEXTERNAL483, value).apply()
+
+    var v483orderAutoSort483: Int
+        get() = prefs.getInt(KEY_V483ORDERAUTOSORT483, 0)
+        set(value) = prefs.edit().putInt(KEY_V483ORDERAUTOSORT483, value).apply()
+
+    var v483outputAutoSelect483: Boolean
+        get() = prefs.getBoolean(KEY_V483OUTPUTAUTOSELECT483, false)
+        set(value) = prefs.edit().putBoolean(KEY_V483OUTPUTAUTOSELECT483, value).apply()
+
+    var v483overlayAutoShow483: Boolean
+        get() = prefs.getBoolean(KEY_V483OVERLAYAUTOSHOW483, false)
+        set(value) = prefs.edit().putBoolean(KEY_V483OVERLAYAUTOSHOW483, value).apply()
+
+    var v483overrideGlobal483: Boolean
+        get() = prefs.getBoolean(KEY_V483OVERRIDEGLOBAL483, false)
+        set(value) = prefs.edit().putBoolean(KEY_V483OVERRIDEGLOBAL483, value).apply()
+
+    var v483packAutoCompress483: Boolean
+        get() = prefs.getBoolean(KEY_V483PACKAUTOCOMPRESS483, false)
+        set(value) = prefs.edit().putBoolean(KEY_V483PACKAUTOCOMPRESS483, value).apply()
+
+    var v484moduleAutoLoad484: Boolean
+        get() = prefs.getBoolean(KEY_V484MODULEAUTOLOAD484, false)
+        set(value) = prefs.edit().putBoolean(KEY_V484MODULEAUTOLOAD484, value).apply()
+
+    var v484monitorCpuUsage484: Boolean
+        get() = prefs.getBoolean(KEY_V484MONITORCPUUSAGE484, false)
+        set(value) = prefs.edit().putBoolean(KEY_V484MONITORCPUUSAGE484, value).apply()
+
+    var v484mountAutoDetect484: Boolean
+        get() = prefs.getBoolean(KEY_V484MOUNTAUTODETECT484, false)
+        set(value) = prefs.edit().putBoolean(KEY_V484MOUNTAUTODETECT484, value).apply()
+
+    var v484mouseHoverPreview484: Boolean
+        get() = prefs.getBoolean(KEY_V484MOUSEHOVERPREVIEW484, false)
+        set(value) = prefs.edit().putBoolean(KEY_V484MOUSEHOVERPREVIEW484, value).apply()
+
+    var v484moveTransition484: Boolean
+        get() = prefs.getBoolean(KEY_V484MOVETRANSITION484, false)
+        set(value) = prefs.edit().putBoolean(KEY_V484MOVETRANSITION484, value).apply()
+
+    var v484multiThreadDecode484: Boolean
+        get() = prefs.getBoolean(KEY_V484MULTITHREADDECODE484, false)
+        set(value) = prefs.edit().putBoolean(KEY_V484MULTITHREADDECODE484, value).apply()
+
+    var v484navAutoCollapse484: Boolean
+        get() = prefs.getBoolean(KEY_V484NAVAUTOCOLLAPSE484, false)
+        set(value) = prefs.edit().putBoolean(KEY_V484NAVAUTOCOLLAPSE484, value).apply()
+
+    var v484nodeAutoConnect484: Boolean
+        get() = prefs.getBoolean(KEY_V484NODEAUTOCONNECT484, false)
+        set(value) = prefs.edit().putBoolean(KEY_V484NODEAUTOCONNECT484, value).apply()
+
+    var v484offsetAutoCalibrate484: Boolean
+        get() = prefs.getBoolean(KEY_V484OFFSETAUTOCALIBRATE484, false)
+        set(value) = prefs.edit().putBoolean(KEY_V484OFFSETAUTOCALIBRATE484, value).apply()
+
+    var v484openWithExternal484: Boolean
+        get() = prefs.getBoolean(KEY_V484OPENWITHEXTERNAL484, false)
+        set(value) = prefs.edit().putBoolean(KEY_V484OPENWITHEXTERNAL484, value).apply()
+
+    var v484orderAutoSort484: Int
+        get() = prefs.getInt(KEY_V484ORDERAUTOSORT484, 0)
+        set(value) = prefs.edit().putInt(KEY_V484ORDERAUTOSORT484, value).apply()
+
+    var v484outputAutoSelect484: Boolean
+        get() = prefs.getBoolean(KEY_V484OUTPUTAUTOSELECT484, false)
+        set(value) = prefs.edit().putBoolean(KEY_V484OUTPUTAUTOSELECT484, value).apply()
+
+    var v484overlayAutoShow484: Boolean
+        get() = prefs.getBoolean(KEY_V484OVERLAYAUTOSHOW484, false)
+        set(value) = prefs.edit().putBoolean(KEY_V484OVERLAYAUTOSHOW484, value).apply()
+
+    var v484overrideGlobal484: Boolean
+        get() = prefs.getBoolean(KEY_V484OVERRIDEGLOBAL484, false)
+        set(value) = prefs.edit().putBoolean(KEY_V484OVERRIDEGLOBAL484, value).apply()
+
+    var v484packAutoCompress484: Boolean
+        get() = prefs.getBoolean(KEY_V484PACKAUTOCOMPRESS484, false)
+        set(value) = prefs.edit().putBoolean(KEY_V484PACKAUTOCOMPRESS484, value).apply()
+
+    var v485moduleAutoLoad485: Boolean
+        get() = prefs.getBoolean(KEY_V485MODULEAUTOLOAD485, false)
+        set(value) = prefs.edit().putBoolean(KEY_V485MODULEAUTOLOAD485, value).apply()
+
+    var v485monitorCpuUsage485: Boolean
+        get() = prefs.getBoolean(KEY_V485MONITORCPUUSAGE485, false)
+        set(value) = prefs.edit().putBoolean(KEY_V485MONITORCPUUSAGE485, value).apply()
+
+    var v485mountAutoDetect485: Boolean
+        get() = prefs.getBoolean(KEY_V485MOUNTAUTODETECT485, false)
+        set(value) = prefs.edit().putBoolean(KEY_V485MOUNTAUTODETECT485, value).apply()
+
+    var v485mouseHoverPreview485: Boolean
+        get() = prefs.getBoolean(KEY_V485MOUSEHOVERPREVIEW485, false)
+        set(value) = prefs.edit().putBoolean(KEY_V485MOUSEHOVERPREVIEW485, value).apply()
+
+    var v485moveTransition485: Boolean
+        get() = prefs.getBoolean(KEY_V485MOVETRANSITION485, false)
+        set(value) = prefs.edit().putBoolean(KEY_V485MOVETRANSITION485, value).apply()
+
+    var v485multiThreadDecode485: Boolean
+        get() = prefs.getBoolean(KEY_V485MULTITHREADDECODE485, false)
+        set(value) = prefs.edit().putBoolean(KEY_V485MULTITHREADDECODE485, value).apply()
+
+    var v485navAutoCollapse485: Boolean
+        get() = prefs.getBoolean(KEY_V485NAVAUTOCOLLAPSE485, false)
+        set(value) = prefs.edit().putBoolean(KEY_V485NAVAUTOCOLLAPSE485, value).apply()
+
+    var v485nodeAutoConnect485: Boolean
+        get() = prefs.getBoolean(KEY_V485NODEAUTOCONNECT485, false)
+        set(value) = prefs.edit().putBoolean(KEY_V485NODEAUTOCONNECT485, value).apply()
+
+    var v485offsetAutoCalibrate485: Boolean
+        get() = prefs.getBoolean(KEY_V485OFFSETAUTOCALIBRATE485, false)
+        set(value) = prefs.edit().putBoolean(KEY_V485OFFSETAUTOCALIBRATE485, value).apply()
+
+    var v485openWithExternal485: Boolean
+        get() = prefs.getBoolean(KEY_V485OPENWITHEXTERNAL485, false)
+        set(value) = prefs.edit().putBoolean(KEY_V485OPENWITHEXTERNAL485, value).apply()
+
+    var v485orderAutoSort485: Int
+        get() = prefs.getInt(KEY_V485ORDERAUTOSORT485, 0)
+        set(value) = prefs.edit().putInt(KEY_V485ORDERAUTOSORT485, value).apply()
+
+    var v485outputAutoSelect485: Boolean
+        get() = prefs.getBoolean(KEY_V485OUTPUTAUTOSELECT485, false)
+        set(value) = prefs.edit().putBoolean(KEY_V485OUTPUTAUTOSELECT485, value).apply()
+
+    var v485overlayAutoShow485: Boolean
+        get() = prefs.getBoolean(KEY_V485OVERLAYAUTOSHOW485, false)
+        set(value) = prefs.edit().putBoolean(KEY_V485OVERLAYAUTOSHOW485, value).apply()
+
+    var v485overrideGlobal485: Boolean
+        get() = prefs.getBoolean(KEY_V485OVERRIDEGLOBAL485, false)
+        set(value) = prefs.edit().putBoolean(KEY_V485OVERRIDEGLOBAL485, value).apply()
+
+    var v485packAutoCompress485: Boolean
+        get() = prefs.getBoolean(KEY_V485PACKAUTOCOMPRESS485, false)
+        set(value) = prefs.edit().putBoolean(KEY_V485PACKAUTOCOMPRESS485, value).apply()
+
+    var v486moduleAutoLoad486: Boolean
+        get() = prefs.getBoolean(KEY_V486MODULEAUTOLOAD486, false)
+        set(value) = prefs.edit().putBoolean(KEY_V486MODULEAUTOLOAD486, value).apply()
+
+    var v486monitorCpuUsage486: Boolean
+        get() = prefs.getBoolean(KEY_V486MONITORCPUUSAGE486, false)
+        set(value) = prefs.edit().putBoolean(KEY_V486MONITORCPUUSAGE486, value).apply()
+
+    var v486mountAutoDetect486: Boolean
+        get() = prefs.getBoolean(KEY_V486MOUNTAUTODETECT486, false)
+        set(value) = prefs.edit().putBoolean(KEY_V486MOUNTAUTODETECT486, value).apply()
+
+    var v486mouseHoverPreview486: Boolean
+        get() = prefs.getBoolean(KEY_V486MOUSEHOVERPREVIEW486, false)
+        set(value) = prefs.edit().putBoolean(KEY_V486MOUSEHOVERPREVIEW486, value).apply()
+
+    var v486moveTransition486: Boolean
+        get() = prefs.getBoolean(KEY_V486MOVETRANSITION486, false)
+        set(value) = prefs.edit().putBoolean(KEY_V486MOVETRANSITION486, value).apply()
+
+    var v486multiThreadDecode486: Boolean
+        get() = prefs.getBoolean(KEY_V486MULTITHREADDECODE486, false)
+        set(value) = prefs.edit().putBoolean(KEY_V486MULTITHREADDECODE486, value).apply()
+
+    var v486navAutoCollapse486: Boolean
+        get() = prefs.getBoolean(KEY_V486NAVAUTOCOLLAPSE486, false)
+        set(value) = prefs.edit().putBoolean(KEY_V486NAVAUTOCOLLAPSE486, value).apply()
+
+    var v486nodeAutoConnect486: Boolean
+        get() = prefs.getBoolean(KEY_V486NODEAUTOCONNECT486, false)
+        set(value) = prefs.edit().putBoolean(KEY_V486NODEAUTOCONNECT486, value).apply()
+
+    var v486offsetAutoCalibrate486: Boolean
+        get() = prefs.getBoolean(KEY_V486OFFSETAUTOCALIBRATE486, false)
+        set(value) = prefs.edit().putBoolean(KEY_V486OFFSETAUTOCALIBRATE486, value).apply()
+
+    var v486openWithExternal486: Boolean
+        get() = prefs.getBoolean(KEY_V486OPENWITHEXTERNAL486, false)
+        set(value) = prefs.edit().putBoolean(KEY_V486OPENWITHEXTERNAL486, value).apply()
+
+    var v486orderAutoSort486: Int
+        get() = prefs.getInt(KEY_V486ORDERAUTOSORT486, 0)
+        set(value) = prefs.edit().putInt(KEY_V486ORDERAUTOSORT486, value).apply()
+
+    var v486outputAutoSelect486: Boolean
+        get() = prefs.getBoolean(KEY_V486OUTPUTAUTOSELECT486, false)
+        set(value) = prefs.edit().putBoolean(KEY_V486OUTPUTAUTOSELECT486, value).apply()
+
+    var v486overlayAutoShow486: Boolean
+        get() = prefs.getBoolean(KEY_V486OVERLAYAUTOSHOW486, false)
+        set(value) = prefs.edit().putBoolean(KEY_V486OVERLAYAUTOSHOW486, value).apply()
+
+    var v486overrideGlobal486: Boolean
+        get() = prefs.getBoolean(KEY_V486OVERRIDEGLOBAL486, false)
+        set(value) = prefs.edit().putBoolean(KEY_V486OVERRIDEGLOBAL486, value).apply()
+
+    var v486packAutoCompress486: Boolean
+        get() = prefs.getBoolean(KEY_V486PACKAUTOCOMPRESS486, false)
+        set(value) = prefs.edit().putBoolean(KEY_V486PACKAUTOCOMPRESS486, value).apply()
+
+    var v487moduleAutoLoad487: Boolean
+        get() = prefs.getBoolean(KEY_V487MODULEAUTOLOAD487, false)
+        set(value) = prefs.edit().putBoolean(KEY_V487MODULEAUTOLOAD487, value).apply()
+
+    var v487monitorCpuUsage487: Boolean
+        get() = prefs.getBoolean(KEY_V487MONITORCPUUSAGE487, false)
+        set(value) = prefs.edit().putBoolean(KEY_V487MONITORCPUUSAGE487, value).apply()
+
+    var v487mountAutoDetect487: Boolean
+        get() = prefs.getBoolean(KEY_V487MOUNTAUTODETECT487, false)
+        set(value) = prefs.edit().putBoolean(KEY_V487MOUNTAUTODETECT487, value).apply()
+
+    var v487mouseHoverPreview487: Boolean
+        get() = prefs.getBoolean(KEY_V487MOUSEHOVERPREVIEW487, false)
+        set(value) = prefs.edit().putBoolean(KEY_V487MOUSEHOVERPREVIEW487, value).apply()
+
+    var v487moveTransition487: Boolean
+        get() = prefs.getBoolean(KEY_V487MOVETRANSITION487, false)
+        set(value) = prefs.edit().putBoolean(KEY_V487MOVETRANSITION487, value).apply()
+
+    var v487multiThreadDecode487: Boolean
+        get() = prefs.getBoolean(KEY_V487MULTITHREADDECODE487, false)
+        set(value) = prefs.edit().putBoolean(KEY_V487MULTITHREADDECODE487, value).apply()
+
+    var v487navAutoCollapse487: Boolean
+        get() = prefs.getBoolean(KEY_V487NAVAUTOCOLLAPSE487, false)
+        set(value) = prefs.edit().putBoolean(KEY_V487NAVAUTOCOLLAPSE487, value).apply()
+
+    var v487nodeAutoConnect487: Boolean
+        get() = prefs.getBoolean(KEY_V487NODEAUTOCONNECT487, false)
+        set(value) = prefs.edit().putBoolean(KEY_V487NODEAUTOCONNECT487, value).apply()
+
+    var v487offsetAutoCalibrate487: Boolean
+        get() = prefs.getBoolean(KEY_V487OFFSETAUTOCALIBRATE487, false)
+        set(value) = prefs.edit().putBoolean(KEY_V487OFFSETAUTOCALIBRATE487, value).apply()
+
+    var v487openWithExternal487: Boolean
+        get() = prefs.getBoolean(KEY_V487OPENWITHEXTERNAL487, false)
+        set(value) = prefs.edit().putBoolean(KEY_V487OPENWITHEXTERNAL487, value).apply()
+
+    var v487orderAutoSort487: Int
+        get() = prefs.getInt(KEY_V487ORDERAUTOSORT487, 0)
+        set(value) = prefs.edit().putInt(KEY_V487ORDERAUTOSORT487, value).apply()
+
+    var v487outputAutoSelect487: Boolean
+        get() = prefs.getBoolean(KEY_V487OUTPUTAUTOSELECT487, false)
+        set(value) = prefs.edit().putBoolean(KEY_V487OUTPUTAUTOSELECT487, value).apply()
+
+    var v487overlayAutoShow487: Boolean
+        get() = prefs.getBoolean(KEY_V487OVERLAYAUTOSHOW487, false)
+        set(value) = prefs.edit().putBoolean(KEY_V487OVERLAYAUTOSHOW487, value).apply()
+
+    var v487overrideGlobal487: Boolean
+        get() = prefs.getBoolean(KEY_V487OVERRIDEGLOBAL487, false)
+        set(value) = prefs.edit().putBoolean(KEY_V487OVERRIDEGLOBAL487, value).apply()
+
+    var v487packAutoCompress487: Boolean
+        get() = prefs.getBoolean(KEY_V487PACKAUTOCOMPRESS487, false)
+        set(value) = prefs.edit().putBoolean(KEY_V487PACKAUTOCOMPRESS487, value).apply()
+
+    var v488moduleAutoLoad488: Boolean
+        get() = prefs.getBoolean(KEY_V488MODULEAUTOLOAD488, false)
+        set(value) = prefs.edit().putBoolean(KEY_V488MODULEAUTOLOAD488, value).apply()
+
+    var v488monitorCpuUsage488: Boolean
+        get() = prefs.getBoolean(KEY_V488MONITORCPUUSAGE488, false)
+        set(value) = prefs.edit().putBoolean(KEY_V488MONITORCPUUSAGE488, value).apply()
+
+    var v488mountAutoDetect488: Boolean
+        get() = prefs.getBoolean(KEY_V488MOUNTAUTODETECT488, false)
+        set(value) = prefs.edit().putBoolean(KEY_V488MOUNTAUTODETECT488, value).apply()
+
+    var v488mouseHoverPreview488: Boolean
+        get() = prefs.getBoolean(KEY_V488MOUSEHOVERPREVIEW488, false)
+        set(value) = prefs.edit().putBoolean(KEY_V488MOUSEHOVERPREVIEW488, value).apply()
+
+    var v488moveTransition488: Boolean
+        get() = prefs.getBoolean(KEY_V488MOVETRANSITION488, false)
+        set(value) = prefs.edit().putBoolean(KEY_V488MOVETRANSITION488, value).apply()
+
+    var v488multiThreadDecode488: Boolean
+        get() = prefs.getBoolean(KEY_V488MULTITHREADDECODE488, false)
+        set(value) = prefs.edit().putBoolean(KEY_V488MULTITHREADDECODE488, value).apply()
+
+    var v488navAutoCollapse488: Boolean
+        get() = prefs.getBoolean(KEY_V488NAVAUTOCOLLAPSE488, false)
+        set(value) = prefs.edit().putBoolean(KEY_V488NAVAUTOCOLLAPSE488, value).apply()
+
+    var v488nodeAutoConnect488: Boolean
+        get() = prefs.getBoolean(KEY_V488NODEAUTOCONNECT488, false)
+        set(value) = prefs.edit().putBoolean(KEY_V488NODEAUTOCONNECT488, value).apply()
+
+    var v488offsetAutoCalibrate488: Boolean
+        get() = prefs.getBoolean(KEY_V488OFFSETAUTOCALIBRATE488, false)
+        set(value) = prefs.edit().putBoolean(KEY_V488OFFSETAUTOCALIBRATE488, value).apply()
+
+    var v488openWithExternal488: Boolean
+        get() = prefs.getBoolean(KEY_V488OPENWITHEXTERNAL488, false)
+        set(value) = prefs.edit().putBoolean(KEY_V488OPENWITHEXTERNAL488, value).apply()
+
+    var v488orderAutoSort488: Int
+        get() = prefs.getInt(KEY_V488ORDERAUTOSORT488, 0)
+        set(value) = prefs.edit().putInt(KEY_V488ORDERAUTOSORT488, value).apply()
+
+    var v488outputAutoSelect488: Boolean
+        get() = prefs.getBoolean(KEY_V488OUTPUTAUTOSELECT488, false)
+        set(value) = prefs.edit().putBoolean(KEY_V488OUTPUTAUTOSELECT488, value).apply()
+
+    var v488overlayAutoShow488: Boolean
+        get() = prefs.getBoolean(KEY_V488OVERLAYAUTOSHOW488, false)
+        set(value) = prefs.edit().putBoolean(KEY_V488OVERLAYAUTOSHOW488, value).apply()
+
+    var v488overrideGlobal488: Boolean
+        get() = prefs.getBoolean(KEY_V488OVERRIDEGLOBAL488, false)
+        set(value) = prefs.edit().putBoolean(KEY_V488OVERRIDEGLOBAL488, value).apply()
+
+    var v488packAutoCompress488: Boolean
+        get() = prefs.getBoolean(KEY_V488PACKAUTOCOMPRESS488, false)
+        set(value) = prefs.edit().putBoolean(KEY_V488PACKAUTOCOMPRESS488, value).apply()
+
+    var v489moduleAutoLoad489: Boolean
+        get() = prefs.getBoolean(KEY_V489MODULEAUTOLOAD489, false)
+        set(value) = prefs.edit().putBoolean(KEY_V489MODULEAUTOLOAD489, value).apply()
+
+    var v489monitorCpuUsage489: Boolean
+        get() = prefs.getBoolean(KEY_V489MONITORCPUUSAGE489, false)
+        set(value) = prefs.edit().putBoolean(KEY_V489MONITORCPUUSAGE489, value).apply()
+
+    var v489mountAutoDetect489: Boolean
+        get() = prefs.getBoolean(KEY_V489MOUNTAUTODETECT489, false)
+        set(value) = prefs.edit().putBoolean(KEY_V489MOUNTAUTODETECT489, value).apply()
+
+    var v489mouseHoverPreview489: Boolean
+        get() = prefs.getBoolean(KEY_V489MOUSEHOVERPREVIEW489, false)
+        set(value) = prefs.edit().putBoolean(KEY_V489MOUSEHOVERPREVIEW489, value).apply()
+
+    var v489moveTransition489: Boolean
+        get() = prefs.getBoolean(KEY_V489MOVETRANSITION489, false)
+        set(value) = prefs.edit().putBoolean(KEY_V489MOVETRANSITION489, value).apply()
+
+    var v489multiThreadDecode489: Boolean
+        get() = prefs.getBoolean(KEY_V489MULTITHREADDECODE489, false)
+        set(value) = prefs.edit().putBoolean(KEY_V489MULTITHREADDECODE489, value).apply()
+
+    var v489navAutoCollapse489: Boolean
+        get() = prefs.getBoolean(KEY_V489NAVAUTOCOLLAPSE489, false)
+        set(value) = prefs.edit().putBoolean(KEY_V489NAVAUTOCOLLAPSE489, value).apply()
+
+    var v489nodeAutoConnect489: Boolean
+        get() = prefs.getBoolean(KEY_V489NODEAUTOCONNECT489, false)
+        set(value) = prefs.edit().putBoolean(KEY_V489NODEAUTOCONNECT489, value).apply()
+
+    var v489offsetAutoCalibrate489: Boolean
+        get() = prefs.getBoolean(KEY_V489OFFSETAUTOCALIBRATE489, false)
+        set(value) = prefs.edit().putBoolean(KEY_V489OFFSETAUTOCALIBRATE489, value).apply()
+
+    var v489openWithExternal489: Boolean
+        get() = prefs.getBoolean(KEY_V489OPENWITHEXTERNAL489, false)
+        set(value) = prefs.edit().putBoolean(KEY_V489OPENWITHEXTERNAL489, value).apply()
+
+    var v489orderAutoSort489: Int
+        get() = prefs.getInt(KEY_V489ORDERAUTOSORT489, 0)
+        set(value) = prefs.edit().putInt(KEY_V489ORDERAUTOSORT489, value).apply()
+
+    var v489outputAutoSelect489: Boolean
+        get() = prefs.getBoolean(KEY_V489OUTPUTAUTOSELECT489, false)
+        set(value) = prefs.edit().putBoolean(KEY_V489OUTPUTAUTOSELECT489, value).apply()
+
+    var v489overlayAutoShow489: Boolean
+        get() = prefs.getBoolean(KEY_V489OVERLAYAUTOSHOW489, false)
+        set(value) = prefs.edit().putBoolean(KEY_V489OVERLAYAUTOSHOW489, value).apply()
+
+    var v489overrideGlobal489: Boolean
+        get() = prefs.getBoolean(KEY_V489OVERRIDEGLOBAL489, false)
+        set(value) = prefs.edit().putBoolean(KEY_V489OVERRIDEGLOBAL489, value).apply()
+
+    var v489packAutoCompress489: Boolean
+        get() = prefs.getBoolean(KEY_V489PACKAUTOCOMPRESS489, false)
+        set(value) = prefs.edit().putBoolean(KEY_V489PACKAUTOCOMPRESS489, value).apply()
+
+    var v490moduleAutoLoad490: Boolean
+        get() = prefs.getBoolean(KEY_V490MODULEAUTOLOAD490, false)
+        set(value) = prefs.edit().putBoolean(KEY_V490MODULEAUTOLOAD490, value).apply()
+
+    var v490monitorCpuUsage490: Boolean
+        get() = prefs.getBoolean(KEY_V490MONITORCPUUSAGE490, false)
+        set(value) = prefs.edit().putBoolean(KEY_V490MONITORCPUUSAGE490, value).apply()
+
+    var v490mountAutoDetect490: Boolean
+        get() = prefs.getBoolean(KEY_V490MOUNTAUTODETECT490, false)
+        set(value) = prefs.edit().putBoolean(KEY_V490MOUNTAUTODETECT490, value).apply()
+
+    var v490mouseHoverPreview490: Boolean
+        get() = prefs.getBoolean(KEY_V490MOUSEHOVERPREVIEW490, false)
+        set(value) = prefs.edit().putBoolean(KEY_V490MOUSEHOVERPREVIEW490, value).apply()
+
+    var v490moveTransition490: Boolean
+        get() = prefs.getBoolean(KEY_V490MOVETRANSITION490, false)
+        set(value) = prefs.edit().putBoolean(KEY_V490MOVETRANSITION490, value).apply()
+
+    var v490multiThreadDecode490: Boolean
+        get() = prefs.getBoolean(KEY_V490MULTITHREADDECODE490, false)
+        set(value) = prefs.edit().putBoolean(KEY_V490MULTITHREADDECODE490, value).apply()
+
+    var v490navAutoCollapse490: Boolean
+        get() = prefs.getBoolean(KEY_V490NAVAUTOCOLLAPSE490, false)
+        set(value) = prefs.edit().putBoolean(KEY_V490NAVAUTOCOLLAPSE490, value).apply()
+
+    var v490nodeAutoConnect490: Boolean
+        get() = prefs.getBoolean(KEY_V490NODEAUTOCONNECT490, false)
+        set(value) = prefs.edit().putBoolean(KEY_V490NODEAUTOCONNECT490, value).apply()
+
+    var v490offsetAutoCalibrate490: Boolean
+        get() = prefs.getBoolean(KEY_V490OFFSETAUTOCALIBRATE490, false)
+        set(value) = prefs.edit().putBoolean(KEY_V490OFFSETAUTOCALIBRATE490, value).apply()
+
+    var v490openWithExternal490: Boolean
+        get() = prefs.getBoolean(KEY_V490OPENWITHEXTERNAL490, false)
+        set(value) = prefs.edit().putBoolean(KEY_V490OPENWITHEXTERNAL490, value).apply()
+
+    var v490orderAutoSort490: Int
+        get() = prefs.getInt(KEY_V490ORDERAUTOSORT490, 0)
+        set(value) = prefs.edit().putInt(KEY_V490ORDERAUTOSORT490, value).apply()
+
+    var v490outputAutoSelect490: Boolean
+        get() = prefs.getBoolean(KEY_V490OUTPUTAUTOSELECT490, false)
+        set(value) = prefs.edit().putBoolean(KEY_V490OUTPUTAUTOSELECT490, value).apply()
+
+    var v490overlayAutoShow490: Boolean
+        get() = prefs.getBoolean(KEY_V490OVERLAYAUTOSHOW490, false)
+        set(value) = prefs.edit().putBoolean(KEY_V490OVERLAYAUTOSHOW490, value).apply()
+
+    var v490overrideGlobal490: Boolean
+        get() = prefs.getBoolean(KEY_V490OVERRIDEGLOBAL490, false)
+        set(value) = prefs.edit().putBoolean(KEY_V490OVERRIDEGLOBAL490, value).apply()
+
+    var v490packAutoCompress490: Boolean
+        get() = prefs.getBoolean(KEY_V490PACKAUTOCOMPRESS490, false)
+        set(value) = prefs.edit().putBoolean(KEY_V490PACKAUTOCOMPRESS490, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -45430,5 +46030,155 @@ class AppPrefs(context: Context) {
         const val KEY_V480MINBITRATEAUTO480 = "v480minBitrateAuto480" // v480 Min Bitrate Auto480
         const val KEY_V480MODEAUTOSWITCH480 = "v480modeAutoSwitch480" // v480 Mode Auto Switch480
         const val KEY_V480MODELAUTOLOAD480 = "v480modelAutoLoad480" // v480 Model Auto Load480
+        const val KEY_V481MODULEAUTOLOAD481 = "v481moduleAutoLoad481" // v481 Module Auto Load481
+        const val KEY_V481MONITORCPUUSAGE481 = "v481monitorCpuUsage481" // v481 Monitor CPU Usage481
+        const val KEY_V481MOUNTAUTODETECT481 = "v481mountAutoDetect481" // v481 Mount Auto Detect481
+        const val KEY_V481MOUSEHOVERPREVIEW481 = "v481mouseHoverPreview481" // v481 Mouse Hover Preview481
+        const val KEY_V481MOVETRANSITION481 = "v481moveTransition481" // v481 Move Transition481
+        const val KEY_V481MULTITHREADDECODE481 = "v481multiThreadDecode481" // v481 Multi Thread Decode481
+        const val KEY_V481NAVAUTOCOLLAPSE481 = "v481navAutoCollapse481" // v481 Nav Auto Collapse481
+        const val KEY_V481NODEAUTOCONNECT481 = "v481nodeAutoConnect481" // v481 Node Auto Connect481
+        const val KEY_V481OFFSETAUTOCALIBRATE481 = "v481offsetAutoCalibrate481" // v481 Offset Auto Calibrate481
+        const val KEY_V481OPENWITHEXTERNAL481 = "v481openWithExternal481" // v481 Open With External481
+        const val KEY_V481ORDERAUTOSORT481 = "v481orderAutoSort481" // v481 Order Auto Sort481
+        const val KEY_V481OUTPUTAUTOSELECT481 = "v481outputAutoSelect481" // v481 Output Auto Select481
+        const val KEY_V481OVERLAYAUTOSHOW481 = "v481overlayAutoShow481" // v481 Overlay Auto Show481
+        const val KEY_V481OVERRIDEGLOBAL481 = "v481overrideGlobal481" // v481 Override Global481
+        const val KEY_V481PACKAUTOCOMPRESS481 = "v481packAutoCompress481" // v481 Pack Auto Compress481
+        const val KEY_V482MODULEAUTOLOAD482 = "v482moduleAutoLoad482" // v482 Module Auto Load482
+        const val KEY_V482MONITORCPUUSAGE482 = "v482monitorCpuUsage482" // v482 Monitor CPU Usage482
+        const val KEY_V482MOUNTAUTODETECT482 = "v482mountAutoDetect482" // v482 Mount Auto Detect482
+        const val KEY_V482MOUSEHOVERPREVIEW482 = "v482mouseHoverPreview482" // v482 Mouse Hover Preview482
+        const val KEY_V482MOVETRANSITION482 = "v482moveTransition482" // v482 Move Transition482
+        const val KEY_V482MULTITHREADDECODE482 = "v482multiThreadDecode482" // v482 Multi Thread Decode482
+        const val KEY_V482NAVAUTOCOLLAPSE482 = "v482navAutoCollapse482" // v482 Nav Auto Collapse482
+        const val KEY_V482NODEAUTOCONNECT482 = "v482nodeAutoConnect482" // v482 Node Auto Connect482
+        const val KEY_V482OFFSETAUTOCALIBRATE482 = "v482offsetAutoCalibrate482" // v482 Offset Auto Calibrate482
+        const val KEY_V482OPENWITHEXTERNAL482 = "v482openWithExternal482" // v482 Open With External482
+        const val KEY_V482ORDERAUTOSORT482 = "v482orderAutoSort482" // v482 Order Auto Sort482
+        const val KEY_V482OUTPUTAUTOSELECT482 = "v482outputAutoSelect482" // v482 Output Auto Select482
+        const val KEY_V482OVERLAYAUTOSHOW482 = "v482overlayAutoShow482" // v482 Overlay Auto Show482
+        const val KEY_V482OVERRIDEGLOBAL482 = "v482overrideGlobal482" // v482 Override Global482
+        const val KEY_V482PACKAUTOCOMPRESS482 = "v482packAutoCompress482" // v482 Pack Auto Compress482
+        const val KEY_V483MODULEAUTOLOAD483 = "v483moduleAutoLoad483" // v483 Module Auto Load483
+        const val KEY_V483MONITORCPUUSAGE483 = "v483monitorCpuUsage483" // v483 Monitor CPU Usage483
+        const val KEY_V483MOUNTAUTODETECT483 = "v483mountAutoDetect483" // v483 Mount Auto Detect483
+        const val KEY_V483MOUSEHOVERPREVIEW483 = "v483mouseHoverPreview483" // v483 Mouse Hover Preview483
+        const val KEY_V483MOVETRANSITION483 = "v483moveTransition483" // v483 Move Transition483
+        const val KEY_V483MULTITHREADDECODE483 = "v483multiThreadDecode483" // v483 Multi Thread Decode483
+        const val KEY_V483NAVAUTOCOLLAPSE483 = "v483navAutoCollapse483" // v483 Nav Auto Collapse483
+        const val KEY_V483NODEAUTOCONNECT483 = "v483nodeAutoConnect483" // v483 Node Auto Connect483
+        const val KEY_V483OFFSETAUTOCALIBRATE483 = "v483offsetAutoCalibrate483" // v483 Offset Auto Calibrate483
+        const val KEY_V483OPENWITHEXTERNAL483 = "v483openWithExternal483" // v483 Open With External483
+        const val KEY_V483ORDERAUTOSORT483 = "v483orderAutoSort483" // v483 Order Auto Sort483
+        const val KEY_V483OUTPUTAUTOSELECT483 = "v483outputAutoSelect483" // v483 Output Auto Select483
+        const val KEY_V483OVERLAYAUTOSHOW483 = "v483overlayAutoShow483" // v483 Overlay Auto Show483
+        const val KEY_V483OVERRIDEGLOBAL483 = "v483overrideGlobal483" // v483 Override Global483
+        const val KEY_V483PACKAUTOCOMPRESS483 = "v483packAutoCompress483" // v483 Pack Auto Compress483
+        const val KEY_V484MODULEAUTOLOAD484 = "v484moduleAutoLoad484" // v484 Module Auto Load484
+        const val KEY_V484MONITORCPUUSAGE484 = "v484monitorCpuUsage484" // v484 Monitor CPU Usage484
+        const val KEY_V484MOUNTAUTODETECT484 = "v484mountAutoDetect484" // v484 Mount Auto Detect484
+        const val KEY_V484MOUSEHOVERPREVIEW484 = "v484mouseHoverPreview484" // v484 Mouse Hover Preview484
+        const val KEY_V484MOVETRANSITION484 = "v484moveTransition484" // v484 Move Transition484
+        const val KEY_V484MULTITHREADDECODE484 = "v484multiThreadDecode484" // v484 Multi Thread Decode484
+        const val KEY_V484NAVAUTOCOLLAPSE484 = "v484navAutoCollapse484" // v484 Nav Auto Collapse484
+        const val KEY_V484NODEAUTOCONNECT484 = "v484nodeAutoConnect484" // v484 Node Auto Connect484
+        const val KEY_V484OFFSETAUTOCALIBRATE484 = "v484offsetAutoCalibrate484" // v484 Offset Auto Calibrate484
+        const val KEY_V484OPENWITHEXTERNAL484 = "v484openWithExternal484" // v484 Open With External484
+        const val KEY_V484ORDERAUTOSORT484 = "v484orderAutoSort484" // v484 Order Auto Sort484
+        const val KEY_V484OUTPUTAUTOSELECT484 = "v484outputAutoSelect484" // v484 Output Auto Select484
+        const val KEY_V484OVERLAYAUTOSHOW484 = "v484overlayAutoShow484" // v484 Overlay Auto Show484
+        const val KEY_V484OVERRIDEGLOBAL484 = "v484overrideGlobal484" // v484 Override Global484
+        const val KEY_V484PACKAUTOCOMPRESS484 = "v484packAutoCompress484" // v484 Pack Auto Compress484
+        const val KEY_V485MODULEAUTOLOAD485 = "v485moduleAutoLoad485" // v485 Module Auto Load485
+        const val KEY_V485MONITORCPUUSAGE485 = "v485monitorCpuUsage485" // v485 Monitor CPU Usage485
+        const val KEY_V485MOUNTAUTODETECT485 = "v485mountAutoDetect485" // v485 Mount Auto Detect485
+        const val KEY_V485MOUSEHOVERPREVIEW485 = "v485mouseHoverPreview485" // v485 Mouse Hover Preview485
+        const val KEY_V485MOVETRANSITION485 = "v485moveTransition485" // v485 Move Transition485
+        const val KEY_V485MULTITHREADDECODE485 = "v485multiThreadDecode485" // v485 Multi Thread Decode485
+        const val KEY_V485NAVAUTOCOLLAPSE485 = "v485navAutoCollapse485" // v485 Nav Auto Collapse485
+        const val KEY_V485NODEAUTOCONNECT485 = "v485nodeAutoConnect485" // v485 Node Auto Connect485
+        const val KEY_V485OFFSETAUTOCALIBRATE485 = "v485offsetAutoCalibrate485" // v485 Offset Auto Calibrate485
+        const val KEY_V485OPENWITHEXTERNAL485 = "v485openWithExternal485" // v485 Open With External485
+        const val KEY_V485ORDERAUTOSORT485 = "v485orderAutoSort485" // v485 Order Auto Sort485
+        const val KEY_V485OUTPUTAUTOSELECT485 = "v485outputAutoSelect485" // v485 Output Auto Select485
+        const val KEY_V485OVERLAYAUTOSHOW485 = "v485overlayAutoShow485" // v485 Overlay Auto Show485
+        const val KEY_V485OVERRIDEGLOBAL485 = "v485overrideGlobal485" // v485 Override Global485
+        const val KEY_V485PACKAUTOCOMPRESS485 = "v485packAutoCompress485" // v485 Pack Auto Compress485
+        const val KEY_V486MODULEAUTOLOAD486 = "v486moduleAutoLoad486" // v486 Module Auto Load486
+        const val KEY_V486MONITORCPUUSAGE486 = "v486monitorCpuUsage486" // v486 Monitor CPU Usage486
+        const val KEY_V486MOUNTAUTODETECT486 = "v486mountAutoDetect486" // v486 Mount Auto Detect486
+        const val KEY_V486MOUSEHOVERPREVIEW486 = "v486mouseHoverPreview486" // v486 Mouse Hover Preview486
+        const val KEY_V486MOVETRANSITION486 = "v486moveTransition486" // v486 Move Transition486
+        const val KEY_V486MULTITHREADDECODE486 = "v486multiThreadDecode486" // v486 Multi Thread Decode486
+        const val KEY_V486NAVAUTOCOLLAPSE486 = "v486navAutoCollapse486" // v486 Nav Auto Collapse486
+        const val KEY_V486NODEAUTOCONNECT486 = "v486nodeAutoConnect486" // v486 Node Auto Connect486
+        const val KEY_V486OFFSETAUTOCALIBRATE486 = "v486offsetAutoCalibrate486" // v486 Offset Auto Calibrate486
+        const val KEY_V486OPENWITHEXTERNAL486 = "v486openWithExternal486" // v486 Open With External486
+        const val KEY_V486ORDERAUTOSORT486 = "v486orderAutoSort486" // v486 Order Auto Sort486
+        const val KEY_V486OUTPUTAUTOSELECT486 = "v486outputAutoSelect486" // v486 Output Auto Select486
+        const val KEY_V486OVERLAYAUTOSHOW486 = "v486overlayAutoShow486" // v486 Overlay Auto Show486
+        const val KEY_V486OVERRIDEGLOBAL486 = "v486overrideGlobal486" // v486 Override Global486
+        const val KEY_V486PACKAUTOCOMPRESS486 = "v486packAutoCompress486" // v486 Pack Auto Compress486
+        const val KEY_V487MODULEAUTOLOAD487 = "v487moduleAutoLoad487" // v487 Module Auto Load487
+        const val KEY_V487MONITORCPUUSAGE487 = "v487monitorCpuUsage487" // v487 Monitor CPU Usage487
+        const val KEY_V487MOUNTAUTODETECT487 = "v487mountAutoDetect487" // v487 Mount Auto Detect487
+        const val KEY_V487MOUSEHOVERPREVIEW487 = "v487mouseHoverPreview487" // v487 Mouse Hover Preview487
+        const val KEY_V487MOVETRANSITION487 = "v487moveTransition487" // v487 Move Transition487
+        const val KEY_V487MULTITHREADDECODE487 = "v487multiThreadDecode487" // v487 Multi Thread Decode487
+        const val KEY_V487NAVAUTOCOLLAPSE487 = "v487navAutoCollapse487" // v487 Nav Auto Collapse487
+        const val KEY_V487NODEAUTOCONNECT487 = "v487nodeAutoConnect487" // v487 Node Auto Connect487
+        const val KEY_V487OFFSETAUTOCALIBRATE487 = "v487offsetAutoCalibrate487" // v487 Offset Auto Calibrate487
+        const val KEY_V487OPENWITHEXTERNAL487 = "v487openWithExternal487" // v487 Open With External487
+        const val KEY_V487ORDERAUTOSORT487 = "v487orderAutoSort487" // v487 Order Auto Sort487
+        const val KEY_V487OUTPUTAUTOSELECT487 = "v487outputAutoSelect487" // v487 Output Auto Select487
+        const val KEY_V487OVERLAYAUTOSHOW487 = "v487overlayAutoShow487" // v487 Overlay Auto Show487
+        const val KEY_V487OVERRIDEGLOBAL487 = "v487overrideGlobal487" // v487 Override Global487
+        const val KEY_V487PACKAUTOCOMPRESS487 = "v487packAutoCompress487" // v487 Pack Auto Compress487
+        const val KEY_V488MODULEAUTOLOAD488 = "v488moduleAutoLoad488" // v488 Module Auto Load488
+        const val KEY_V488MONITORCPUUSAGE488 = "v488monitorCpuUsage488" // v488 Monitor CPU Usage488
+        const val KEY_V488MOUNTAUTODETECT488 = "v488mountAutoDetect488" // v488 Mount Auto Detect488
+        const val KEY_V488MOUSEHOVERPREVIEW488 = "v488mouseHoverPreview488" // v488 Mouse Hover Preview488
+        const val KEY_V488MOVETRANSITION488 = "v488moveTransition488" // v488 Move Transition488
+        const val KEY_V488MULTITHREADDECODE488 = "v488multiThreadDecode488" // v488 Multi Thread Decode488
+        const val KEY_V488NAVAUTOCOLLAPSE488 = "v488navAutoCollapse488" // v488 Nav Auto Collapse488
+        const val KEY_V488NODEAUTOCONNECT488 = "v488nodeAutoConnect488" // v488 Node Auto Connect488
+        const val KEY_V488OFFSETAUTOCALIBRATE488 = "v488offsetAutoCalibrate488" // v488 Offset Auto Calibrate488
+        const val KEY_V488OPENWITHEXTERNAL488 = "v488openWithExternal488" // v488 Open With External488
+        const val KEY_V488ORDERAUTOSORT488 = "v488orderAutoSort488" // v488 Order Auto Sort488
+        const val KEY_V488OUTPUTAUTOSELECT488 = "v488outputAutoSelect488" // v488 Output Auto Select488
+        const val KEY_V488OVERLAYAUTOSHOW488 = "v488overlayAutoShow488" // v488 Overlay Auto Show488
+        const val KEY_V488OVERRIDEGLOBAL488 = "v488overrideGlobal488" // v488 Override Global488
+        const val KEY_V488PACKAUTOCOMPRESS488 = "v488packAutoCompress488" // v488 Pack Auto Compress488
+        const val KEY_V489MODULEAUTOLOAD489 = "v489moduleAutoLoad489" // v489 Module Auto Load489
+        const val KEY_V489MONITORCPUUSAGE489 = "v489monitorCpuUsage489" // v489 Monitor CPU Usage489
+        const val KEY_V489MOUNTAUTODETECT489 = "v489mountAutoDetect489" // v489 Mount Auto Detect489
+        const val KEY_V489MOUSEHOVERPREVIEW489 = "v489mouseHoverPreview489" // v489 Mouse Hover Preview489
+        const val KEY_V489MOVETRANSITION489 = "v489moveTransition489" // v489 Move Transition489
+        const val KEY_V489MULTITHREADDECODE489 = "v489multiThreadDecode489" // v489 Multi Thread Decode489
+        const val KEY_V489NAVAUTOCOLLAPSE489 = "v489navAutoCollapse489" // v489 Nav Auto Collapse489
+        const val KEY_V489NODEAUTOCONNECT489 = "v489nodeAutoConnect489" // v489 Node Auto Connect489
+        const val KEY_V489OFFSETAUTOCALIBRATE489 = "v489offsetAutoCalibrate489" // v489 Offset Auto Calibrate489
+        const val KEY_V489OPENWITHEXTERNAL489 = "v489openWithExternal489" // v489 Open With External489
+        const val KEY_V489ORDERAUTOSORT489 = "v489orderAutoSort489" // v489 Order Auto Sort489
+        const val KEY_V489OUTPUTAUTOSELECT489 = "v489outputAutoSelect489" // v489 Output Auto Select489
+        const val KEY_V489OVERLAYAUTOSHOW489 = "v489overlayAutoShow489" // v489 Overlay Auto Show489
+        const val KEY_V489OVERRIDEGLOBAL489 = "v489overrideGlobal489" // v489 Override Global489
+        const val KEY_V489PACKAUTOCOMPRESS489 = "v489packAutoCompress489" // v489 Pack Auto Compress489
+        const val KEY_V490MODULEAUTOLOAD490 = "v490moduleAutoLoad490" // v490 Module Auto Load490
+        const val KEY_V490MONITORCPUUSAGE490 = "v490monitorCpuUsage490" // v490 Monitor CPU Usage490
+        const val KEY_V490MOUNTAUTODETECT490 = "v490mountAutoDetect490" // v490 Mount Auto Detect490
+        const val KEY_V490MOUSEHOVERPREVIEW490 = "v490mouseHoverPreview490" // v490 Mouse Hover Preview490
+        const val KEY_V490MOVETRANSITION490 = "v490moveTransition490" // v490 Move Transition490
+        const val KEY_V490MULTITHREADDECODE490 = "v490multiThreadDecode490" // v490 Multi Thread Decode490
+        const val KEY_V490NAVAUTOCOLLAPSE490 = "v490navAutoCollapse490" // v490 Nav Auto Collapse490
+        const val KEY_V490NODEAUTOCONNECT490 = "v490nodeAutoConnect490" // v490 Node Auto Connect490
+        const val KEY_V490OFFSETAUTOCALIBRATE490 = "v490offsetAutoCalibrate490" // v490 Offset Auto Calibrate490
+        const val KEY_V490OPENWITHEXTERNAL490 = "v490openWithExternal490" // v490 Open With External490
+        const val KEY_V490ORDERAUTOSORT490 = "v490orderAutoSort490" // v490 Order Auto Sort490
+        const val KEY_V490OUTPUTAUTOSELECT490 = "v490outputAutoSelect490" // v490 Output Auto Select490
+        const val KEY_V490OVERLAYAUTOSHOW490 = "v490overlayAutoShow490" // v490 Overlay Auto Show490
+        const val KEY_V490OVERRIDEGLOBAL490 = "v490overrideGlobal490" // v490 Override Global490
+        const val KEY_V490PACKAUTOCOMPRESS490 = "v490packAutoCompress490" // v490 Pack Auto Compress490
     }
 }
