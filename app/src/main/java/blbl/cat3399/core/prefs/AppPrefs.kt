@@ -47048,6 +47048,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V670CROPAUTOREGION670, false)
         set(value) = prefs.edit().putBoolean(KEY_V670CROPAUTOREGION670, value).apply()
 
+    var v671crossAutoFade671: Boolean
+        get() = prefs.getBoolean(KEY_V671CROSSAUTOFADE671, false)
+        set(value) = prefs.edit().putBoolean(KEY_V671CROSSAUTOFADE671, value).apply()
+
+    var v671cryptoAutoHash671: Boolean
+        get() = prefs.getBoolean(KEY_V671CRYPTOAUTOHASH671, false)
+        set(value) = prefs.edit().putBoolean(KEY_V671CRYPTOAUTOHASH671, value).apply()
+
+    var v671cursorAutoHide671: Boolean
+        get() = prefs.getBoolean(KEY_V671CURSORAUTOHIDE671, false)
+        set(value) = prefs.edit().putBoolean(KEY_V671CURSORAUTOHIDE671, value).apply()
+
+    var v671curveAutoSmooth671: Boolean
+        get() = prefs.getBoolean(KEY_V671CURVEAUTOSMOOTH671, false)
+        set(value) = prefs.edit().putBoolean(KEY_V671CURVEAUTOSMOOTH671, value).apply()
+
+    var v671customAutoTheme671: Boolean
+        get() = prefs.getBoolean(KEY_V671CUSTOMAUTOTHEME671, false)
+        set(value) = prefs.edit().putBoolean(KEY_V671CUSTOMAUTOTHEME671, value).apply()
+
+    var v671cycleAutoRepeat671: Int
+        get() = prefs.getInt(KEY_V671CYCLEAUTOREPEAT671, 0)
+        set(value) = prefs.edit().putInt(KEY_V671CYCLEAUTOREPEAT671, value).apply()
+
+    var v671dataAutoCompress671: Boolean
+        get() = prefs.getBoolean(KEY_V671DATAAUTOCOMPRESS671, false)
+        set(value) = prefs.edit().putBoolean(KEY_V671DATAAUTOCOMPRESS671, value).apply()
+
+    var v671databaseAutoIndex671: Boolean
+        get() = prefs.getBoolean(KEY_V671DATABASEAUTOINDEX671, false)
+        set(value) = prefs.edit().putBoolean(KEY_V671DATABASEAUTOINDEX671, value).apply()
+
+    var v671dateAutoFormat671: Boolean
+        get() = prefs.getBoolean(KEY_V671DATEAUTOFORMAT671, false)
+        set(value) = prefs.edit().putBoolean(KEY_V671DATEAUTOFORMAT671, value).apply()
+
+    var v671debugAutoVerbose671: Boolean
+        get() = prefs.getBoolean(KEY_V671DEBUGAUTOVERBOSE671, false)
+        set(value) = prefs.edit().putBoolean(KEY_V671DEBUGAUTOVERBOSE671, value).apply()
+
+    var v671decayAutoFadeout671: Boolean
+        get() = prefs.getBoolean(KEY_V671DECAYAUTOFADEOUT671, false)
+        set(value) = prefs.edit().putBoolean(KEY_V671DECAYAUTOFADEOUT671, value).apply()
+
+    var v671decimalAutoRound671: Boolean
+        get() = prefs.getBoolean(KEY_V671DECIMALAUTOROUND671, false)
+        set(value) = prefs.edit().putBoolean(KEY_V671DECIMALAUTOROUND671, value).apply()
+
+    var v671decodeAutoCodec671: Int
+        get() = prefs.getInt(KEY_V671DECODEAUTOCODEC671, 0)
+        set(value) = prefs.edit().putInt(KEY_V671DECODEAUTOCODEC671, value).apply()
+
+    var v671defaultAutoRestore671: Boolean
+        get() = prefs.getBoolean(KEY_V671DEFAULTAUTORESTORE671, false)
+        set(value) = prefs.edit().putBoolean(KEY_V671DEFAULTAUTORESTORE671, value).apply()
+
+    var v671delayAutoBuffer671: Boolean
+        get() = prefs.getBoolean(KEY_V671DELAYAUTOBUFFER671, false)
+        set(value) = prefs.edit().putBoolean(KEY_V671DELAYAUTOBUFFER671, value).apply()
+
+    var v672crossAutoFade672: Boolean
+        get() = prefs.getBoolean(KEY_V672CROSSAUTOFADE672, false)
+        set(value) = prefs.edit().putBoolean(KEY_V672CROSSAUTOFADE672, value).apply()
+
+    var v672cryptoAutoHash672: Boolean
+        get() = prefs.getBoolean(KEY_V672CRYPTOAUTOHASH672, false)
+        set(value) = prefs.edit().putBoolean(KEY_V672CRYPTOAUTOHASH672, value).apply()
+
+    var v672cursorAutoHide672: Boolean
+        get() = prefs.getBoolean(KEY_V672CURSORAUTOHIDE672, false)
+        set(value) = prefs.edit().putBoolean(KEY_V672CURSORAUTOHIDE672, value).apply()
+
+    var v672curveAutoSmooth672: Boolean
+        get() = prefs.getBoolean(KEY_V672CURVEAUTOSMOOTH672, false)
+        set(value) = prefs.edit().putBoolean(KEY_V672CURVEAUTOSMOOTH672, value).apply()
+
+    var v672customAutoTheme672: Boolean
+        get() = prefs.getBoolean(KEY_V672CUSTOMAUTOTHEME672, false)
+        set(value) = prefs.edit().putBoolean(KEY_V672CUSTOMAUTOTHEME672, value).apply()
+
+    var v672cycleAutoRepeat672: Int
+        get() = prefs.getInt(KEY_V672CYCLEAUTOREPEAT672, 0)
+        set(value) = prefs.edit().putInt(KEY_V672CYCLEAUTOREPEAT672, value).apply()
+
+    var v672dataAutoCompress672: Boolean
+        get() = prefs.getBoolean(KEY_V672DATAAUTOCOMPRESS672, false)
+        set(value) = prefs.edit().putBoolean(KEY_V672DATAAUTOCOMPRESS672, value).apply()
+
+    var v672databaseAutoIndex672: Boolean
+        get() = prefs.getBoolean(KEY_V672DATABASEAUTOINDEX672, false)
+        set(value) = prefs.edit().putBoolean(KEY_V672DATABASEAUTOINDEX672, value).apply()
+
+    var v672dateAutoFormat672: Boolean
+        get() = prefs.getBoolean(KEY_V672DATEAUTOFORMAT672, false)
+        set(value) = prefs.edit().putBoolean(KEY_V672DATEAUTOFORMAT672, value).apply()
+
+    var v672debugAutoVerbose672: Boolean
+        get() = prefs.getBoolean(KEY_V672DEBUGAUTOVERBOSE672, false)
+        set(value) = prefs.edit().putBoolean(KEY_V672DEBUGAUTOVERBOSE672, value).apply()
+
+    var v672decayAutoFadeout672: Boolean
+        get() = prefs.getBoolean(KEY_V672DECAYAUTOFADEOUT672, false)
+        set(value) = prefs.edit().putBoolean(KEY_V672DECAYAUTOFADEOUT672, value).apply()
+
+    var v672decimalAutoRound672: Boolean
+        get() = prefs.getBoolean(KEY_V672DECIMALAUTOROUND672, false)
+        set(value) = prefs.edit().putBoolean(KEY_V672DECIMALAUTOROUND672, value).apply()
+
+    var v672decodeAutoCodec672: Int
+        get() = prefs.getInt(KEY_V672DECODEAUTOCODEC672, 0)
+        set(value) = prefs.edit().putInt(KEY_V672DECODEAUTOCODEC672, value).apply()
+
+    var v672defaultAutoRestore672: Boolean
+        get() = prefs.getBoolean(KEY_V672DEFAULTAUTORESTORE672, false)
+        set(value) = prefs.edit().putBoolean(KEY_V672DEFAULTAUTORESTORE672, value).apply()
+
+    var v672delayAutoBuffer672: Boolean
+        get() = prefs.getBoolean(KEY_V672DELAYAUTOBUFFER672, false)
+        set(value) = prefs.edit().putBoolean(KEY_V672DELAYAUTOBUFFER672, value).apply()
+
+    var v673crossAutoFade673: Boolean
+        get() = prefs.getBoolean(KEY_V673CROSSAUTOFADE673, false)
+        set(value) = prefs.edit().putBoolean(KEY_V673CROSSAUTOFADE673, value).apply()
+
+    var v673cryptoAutoHash673: Boolean
+        get() = prefs.getBoolean(KEY_V673CRYPTOAUTOHASH673, false)
+        set(value) = prefs.edit().putBoolean(KEY_V673CRYPTOAUTOHASH673, value).apply()
+
+    var v673cursorAutoHide673: Boolean
+        get() = prefs.getBoolean(KEY_V673CURSORAUTOHIDE673, false)
+        set(value) = prefs.edit().putBoolean(KEY_V673CURSORAUTOHIDE673, value).apply()
+
+    var v673curveAutoSmooth673: Boolean
+        get() = prefs.getBoolean(KEY_V673CURVEAUTOSMOOTH673, false)
+        set(value) = prefs.edit().putBoolean(KEY_V673CURVEAUTOSMOOTH673, value).apply()
+
+    var v673customAutoTheme673: Boolean
+        get() = prefs.getBoolean(KEY_V673CUSTOMAUTOTHEME673, false)
+        set(value) = prefs.edit().putBoolean(KEY_V673CUSTOMAUTOTHEME673, value).apply()
+
+    var v673cycleAutoRepeat673: Int
+        get() = prefs.getInt(KEY_V673CYCLEAUTOREPEAT673, 0)
+        set(value) = prefs.edit().putInt(KEY_V673CYCLEAUTOREPEAT673, value).apply()
+
+    var v673dataAutoCompress673: Boolean
+        get() = prefs.getBoolean(KEY_V673DATAAUTOCOMPRESS673, false)
+        set(value) = prefs.edit().putBoolean(KEY_V673DATAAUTOCOMPRESS673, value).apply()
+
+    var v673databaseAutoIndex673: Boolean
+        get() = prefs.getBoolean(KEY_V673DATABASEAUTOINDEX673, false)
+        set(value) = prefs.edit().putBoolean(KEY_V673DATABASEAUTOINDEX673, value).apply()
+
+    var v673dateAutoFormat673: Boolean
+        get() = prefs.getBoolean(KEY_V673DATEAUTOFORMAT673, false)
+        set(value) = prefs.edit().putBoolean(KEY_V673DATEAUTOFORMAT673, value).apply()
+
+    var v673debugAutoVerbose673: Boolean
+        get() = prefs.getBoolean(KEY_V673DEBUGAUTOVERBOSE673, false)
+        set(value) = prefs.edit().putBoolean(KEY_V673DEBUGAUTOVERBOSE673, value).apply()
+
+    var v673decayAutoFadeout673: Boolean
+        get() = prefs.getBoolean(KEY_V673DECAYAUTOFADEOUT673, false)
+        set(value) = prefs.edit().putBoolean(KEY_V673DECAYAUTOFADEOUT673, value).apply()
+
+    var v673decimalAutoRound673: Boolean
+        get() = prefs.getBoolean(KEY_V673DECIMALAUTOROUND673, false)
+        set(value) = prefs.edit().putBoolean(KEY_V673DECIMALAUTOROUND673, value).apply()
+
+    var v673decodeAutoCodec673: Int
+        get() = prefs.getInt(KEY_V673DECODEAUTOCODEC673, 0)
+        set(value) = prefs.edit().putInt(KEY_V673DECODEAUTOCODEC673, value).apply()
+
+    var v673defaultAutoRestore673: Boolean
+        get() = prefs.getBoolean(KEY_V673DEFAULTAUTORESTORE673, false)
+        set(value) = prefs.edit().putBoolean(KEY_V673DEFAULTAUTORESTORE673, value).apply()
+
+    var v673delayAutoBuffer673: Boolean
+        get() = prefs.getBoolean(KEY_V673DELAYAUTOBUFFER673, false)
+        set(value) = prefs.edit().putBoolean(KEY_V673DELAYAUTOBUFFER673, value).apply()
+
+    var v674crossAutoFade674: Boolean
+        get() = prefs.getBoolean(KEY_V674CROSSAUTOFADE674, false)
+        set(value) = prefs.edit().putBoolean(KEY_V674CROSSAUTOFADE674, value).apply()
+
+    var v674cryptoAutoHash674: Boolean
+        get() = prefs.getBoolean(KEY_V674CRYPTOAUTOHASH674, false)
+        set(value) = prefs.edit().putBoolean(KEY_V674CRYPTOAUTOHASH674, value).apply()
+
+    var v674cursorAutoHide674: Boolean
+        get() = prefs.getBoolean(KEY_V674CURSORAUTOHIDE674, false)
+        set(value) = prefs.edit().putBoolean(KEY_V674CURSORAUTOHIDE674, value).apply()
+
+    var v674curveAutoSmooth674: Boolean
+        get() = prefs.getBoolean(KEY_V674CURVEAUTOSMOOTH674, false)
+        set(value) = prefs.edit().putBoolean(KEY_V674CURVEAUTOSMOOTH674, value).apply()
+
+    var v674customAutoTheme674: Boolean
+        get() = prefs.getBoolean(KEY_V674CUSTOMAUTOTHEME674, false)
+        set(value) = prefs.edit().putBoolean(KEY_V674CUSTOMAUTOTHEME674, value).apply()
+
+    var v674cycleAutoRepeat674: Int
+        get() = prefs.getInt(KEY_V674CYCLEAUTOREPEAT674, 0)
+        set(value) = prefs.edit().putInt(KEY_V674CYCLEAUTOREPEAT674, value).apply()
+
+    var v674dataAutoCompress674: Boolean
+        get() = prefs.getBoolean(KEY_V674DATAAUTOCOMPRESS674, false)
+        set(value) = prefs.edit().putBoolean(KEY_V674DATAAUTOCOMPRESS674, value).apply()
+
+    var v674databaseAutoIndex674: Boolean
+        get() = prefs.getBoolean(KEY_V674DATABASEAUTOINDEX674, false)
+        set(value) = prefs.edit().putBoolean(KEY_V674DATABASEAUTOINDEX674, value).apply()
+
+    var v674dateAutoFormat674: Boolean
+        get() = prefs.getBoolean(KEY_V674DATEAUTOFORMAT674, false)
+        set(value) = prefs.edit().putBoolean(KEY_V674DATEAUTOFORMAT674, value).apply()
+
+    var v674debugAutoVerbose674: Boolean
+        get() = prefs.getBoolean(KEY_V674DEBUGAUTOVERBOSE674, false)
+        set(value) = prefs.edit().putBoolean(KEY_V674DEBUGAUTOVERBOSE674, value).apply()
+
+    var v674decayAutoFadeout674: Boolean
+        get() = prefs.getBoolean(KEY_V674DECAYAUTOFADEOUT674, false)
+        set(value) = prefs.edit().putBoolean(KEY_V674DECAYAUTOFADEOUT674, value).apply()
+
+    var v674decimalAutoRound674: Boolean
+        get() = prefs.getBoolean(KEY_V674DECIMALAUTOROUND674, false)
+        set(value) = prefs.edit().putBoolean(KEY_V674DECIMALAUTOROUND674, value).apply()
+
+    var v674decodeAutoCodec674: Int
+        get() = prefs.getInt(KEY_V674DECODEAUTOCODEC674, 0)
+        set(value) = prefs.edit().putInt(KEY_V674DECODEAUTOCODEC674, value).apply()
+
+    var v674defaultAutoRestore674: Boolean
+        get() = prefs.getBoolean(KEY_V674DEFAULTAUTORESTORE674, false)
+        set(value) = prefs.edit().putBoolean(KEY_V674DEFAULTAUTORESTORE674, value).apply()
+
+    var v674delayAutoBuffer674: Boolean
+        get() = prefs.getBoolean(KEY_V674DELAYAUTOBUFFER674, false)
+        set(value) = prefs.edit().putBoolean(KEY_V674DELAYAUTOBUFFER674, value).apply()
+
+    var v675crossAutoFade675: Boolean
+        get() = prefs.getBoolean(KEY_V675CROSSAUTOFADE675, false)
+        set(value) = prefs.edit().putBoolean(KEY_V675CROSSAUTOFADE675, value).apply()
+
+    var v675cryptoAutoHash675: Boolean
+        get() = prefs.getBoolean(KEY_V675CRYPTOAUTOHASH675, false)
+        set(value) = prefs.edit().putBoolean(KEY_V675CRYPTOAUTOHASH675, value).apply()
+
+    var v675cursorAutoHide675: Boolean
+        get() = prefs.getBoolean(KEY_V675CURSORAUTOHIDE675, false)
+        set(value) = prefs.edit().putBoolean(KEY_V675CURSORAUTOHIDE675, value).apply()
+
+    var v675curveAutoSmooth675: Boolean
+        get() = prefs.getBoolean(KEY_V675CURVEAUTOSMOOTH675, false)
+        set(value) = prefs.edit().putBoolean(KEY_V675CURVEAUTOSMOOTH675, value).apply()
+
+    var v675customAutoTheme675: Boolean
+        get() = prefs.getBoolean(KEY_V675CUSTOMAUTOTHEME675, false)
+        set(value) = prefs.edit().putBoolean(KEY_V675CUSTOMAUTOTHEME675, value).apply()
+
+    var v675cycleAutoRepeat675: Int
+        get() = prefs.getInt(KEY_V675CYCLEAUTOREPEAT675, 0)
+        set(value) = prefs.edit().putInt(KEY_V675CYCLEAUTOREPEAT675, value).apply()
+
+    var v675dataAutoCompress675: Boolean
+        get() = prefs.getBoolean(KEY_V675DATAAUTOCOMPRESS675, false)
+        set(value) = prefs.edit().putBoolean(KEY_V675DATAAUTOCOMPRESS675, value).apply()
+
+    var v675databaseAutoIndex675: Boolean
+        get() = prefs.getBoolean(KEY_V675DATABASEAUTOINDEX675, false)
+        set(value) = prefs.edit().putBoolean(KEY_V675DATABASEAUTOINDEX675, value).apply()
+
+    var v675dateAutoFormat675: Boolean
+        get() = prefs.getBoolean(KEY_V675DATEAUTOFORMAT675, false)
+        set(value) = prefs.edit().putBoolean(KEY_V675DATEAUTOFORMAT675, value).apply()
+
+    var v675debugAutoVerbose675: Boolean
+        get() = prefs.getBoolean(KEY_V675DEBUGAUTOVERBOSE675, false)
+        set(value) = prefs.edit().putBoolean(KEY_V675DEBUGAUTOVERBOSE675, value).apply()
+
+    var v675decayAutoFadeout675: Boolean
+        get() = prefs.getBoolean(KEY_V675DECAYAUTOFADEOUT675, false)
+        set(value) = prefs.edit().putBoolean(KEY_V675DECAYAUTOFADEOUT675, value).apply()
+
+    var v675decimalAutoRound675: Boolean
+        get() = prefs.getBoolean(KEY_V675DECIMALAUTOROUND675, false)
+        set(value) = prefs.edit().putBoolean(KEY_V675DECIMALAUTOROUND675, value).apply()
+
+    var v675decodeAutoCodec675: Int
+        get() = prefs.getInt(KEY_V675DECODEAUTOCODEC675, 0)
+        set(value) = prefs.edit().putInt(KEY_V675DECODEAUTOCODEC675, value).apply()
+
+    var v675defaultAutoRestore675: Boolean
+        get() = prefs.getBoolean(KEY_V675DEFAULTAUTORESTORE675, false)
+        set(value) = prefs.edit().putBoolean(KEY_V675DEFAULTAUTORESTORE675, value).apply()
+
+    var v675delayAutoBuffer675: Boolean
+        get() = prefs.getBoolean(KEY_V675DELAYAUTOBUFFER675, false)
+        set(value) = prefs.edit().putBoolean(KEY_V675DELAYAUTOBUFFER675, value).apply()
+
+    var v676crossAutoFade676: Boolean
+        get() = prefs.getBoolean(KEY_V676CROSSAUTOFADE676, false)
+        set(value) = prefs.edit().putBoolean(KEY_V676CROSSAUTOFADE676, value).apply()
+
+    var v676cryptoAutoHash676: Boolean
+        get() = prefs.getBoolean(KEY_V676CRYPTOAUTOHASH676, false)
+        set(value) = prefs.edit().putBoolean(KEY_V676CRYPTOAUTOHASH676, value).apply()
+
+    var v676cursorAutoHide676: Boolean
+        get() = prefs.getBoolean(KEY_V676CURSORAUTOHIDE676, false)
+        set(value) = prefs.edit().putBoolean(KEY_V676CURSORAUTOHIDE676, value).apply()
+
+    var v676curveAutoSmooth676: Boolean
+        get() = prefs.getBoolean(KEY_V676CURVEAUTOSMOOTH676, false)
+        set(value) = prefs.edit().putBoolean(KEY_V676CURVEAUTOSMOOTH676, value).apply()
+
+    var v676customAutoTheme676: Boolean
+        get() = prefs.getBoolean(KEY_V676CUSTOMAUTOTHEME676, false)
+        set(value) = prefs.edit().putBoolean(KEY_V676CUSTOMAUTOTHEME676, value).apply()
+
+    var v676cycleAutoRepeat676: Int
+        get() = prefs.getInt(KEY_V676CYCLEAUTOREPEAT676, 0)
+        set(value) = prefs.edit().putInt(KEY_V676CYCLEAUTOREPEAT676, value).apply()
+
+    var v676dataAutoCompress676: Boolean
+        get() = prefs.getBoolean(KEY_V676DATAAUTOCOMPRESS676, false)
+        set(value) = prefs.edit().putBoolean(KEY_V676DATAAUTOCOMPRESS676, value).apply()
+
+    var v676databaseAutoIndex676: Boolean
+        get() = prefs.getBoolean(KEY_V676DATABASEAUTOINDEX676, false)
+        set(value) = prefs.edit().putBoolean(KEY_V676DATABASEAUTOINDEX676, value).apply()
+
+    var v676dateAutoFormat676: Boolean
+        get() = prefs.getBoolean(KEY_V676DATEAUTOFORMAT676, false)
+        set(value) = prefs.edit().putBoolean(KEY_V676DATEAUTOFORMAT676, value).apply()
+
+    var v676debugAutoVerbose676: Boolean
+        get() = prefs.getBoolean(KEY_V676DEBUGAUTOVERBOSE676, false)
+        set(value) = prefs.edit().putBoolean(KEY_V676DEBUGAUTOVERBOSE676, value).apply()
+
+    var v676decayAutoFadeout676: Boolean
+        get() = prefs.getBoolean(KEY_V676DECAYAUTOFADEOUT676, false)
+        set(value) = prefs.edit().putBoolean(KEY_V676DECAYAUTOFADEOUT676, value).apply()
+
+    var v676decimalAutoRound676: Boolean
+        get() = prefs.getBoolean(KEY_V676DECIMALAUTOROUND676, false)
+        set(value) = prefs.edit().putBoolean(KEY_V676DECIMALAUTOROUND676, value).apply()
+
+    var v676decodeAutoCodec676: Int
+        get() = prefs.getInt(KEY_V676DECODEAUTOCODEC676, 0)
+        set(value) = prefs.edit().putInt(KEY_V676DECODEAUTOCODEC676, value).apply()
+
+    var v676defaultAutoRestore676: Boolean
+        get() = prefs.getBoolean(KEY_V676DEFAULTAUTORESTORE676, false)
+        set(value) = prefs.edit().putBoolean(KEY_V676DEFAULTAUTORESTORE676, value).apply()
+
+    var v676delayAutoBuffer676: Boolean
+        get() = prefs.getBoolean(KEY_V676DELAYAUTOBUFFER676, false)
+        set(value) = prefs.edit().putBoolean(KEY_V676DELAYAUTOBUFFER676, value).apply()
+
+    var v677crossAutoFade677: Boolean
+        get() = prefs.getBoolean(KEY_V677CROSSAUTOFADE677, false)
+        set(value) = prefs.edit().putBoolean(KEY_V677CROSSAUTOFADE677, value).apply()
+
+    var v677cryptoAutoHash677: Boolean
+        get() = prefs.getBoolean(KEY_V677CRYPTOAUTOHASH677, false)
+        set(value) = prefs.edit().putBoolean(KEY_V677CRYPTOAUTOHASH677, value).apply()
+
+    var v677cursorAutoHide677: Boolean
+        get() = prefs.getBoolean(KEY_V677CURSORAUTOHIDE677, false)
+        set(value) = prefs.edit().putBoolean(KEY_V677CURSORAUTOHIDE677, value).apply()
+
+    var v677curveAutoSmooth677: Boolean
+        get() = prefs.getBoolean(KEY_V677CURVEAUTOSMOOTH677, false)
+        set(value) = prefs.edit().putBoolean(KEY_V677CURVEAUTOSMOOTH677, value).apply()
+
+    var v677customAutoTheme677: Boolean
+        get() = prefs.getBoolean(KEY_V677CUSTOMAUTOTHEME677, false)
+        set(value) = prefs.edit().putBoolean(KEY_V677CUSTOMAUTOTHEME677, value).apply()
+
+    var v677cycleAutoRepeat677: Int
+        get() = prefs.getInt(KEY_V677CYCLEAUTOREPEAT677, 0)
+        set(value) = prefs.edit().putInt(KEY_V677CYCLEAUTOREPEAT677, value).apply()
+
+    var v677dataAutoCompress677: Boolean
+        get() = prefs.getBoolean(KEY_V677DATAAUTOCOMPRESS677, false)
+        set(value) = prefs.edit().putBoolean(KEY_V677DATAAUTOCOMPRESS677, value).apply()
+
+    var v677databaseAutoIndex677: Boolean
+        get() = prefs.getBoolean(KEY_V677DATABASEAUTOINDEX677, false)
+        set(value) = prefs.edit().putBoolean(KEY_V677DATABASEAUTOINDEX677, value).apply()
+
+    var v677dateAutoFormat677: Boolean
+        get() = prefs.getBoolean(KEY_V677DATEAUTOFORMAT677, false)
+        set(value) = prefs.edit().putBoolean(KEY_V677DATEAUTOFORMAT677, value).apply()
+
+    var v677debugAutoVerbose677: Boolean
+        get() = prefs.getBoolean(KEY_V677DEBUGAUTOVERBOSE677, false)
+        set(value) = prefs.edit().putBoolean(KEY_V677DEBUGAUTOVERBOSE677, value).apply()
+
+    var v677decayAutoFadeout677: Boolean
+        get() = prefs.getBoolean(KEY_V677DECAYAUTOFADEOUT677, false)
+        set(value) = prefs.edit().putBoolean(KEY_V677DECAYAUTOFADEOUT677, value).apply()
+
+    var v677decimalAutoRound677: Boolean
+        get() = prefs.getBoolean(KEY_V677DECIMALAUTOROUND677, false)
+        set(value) = prefs.edit().putBoolean(KEY_V677DECIMALAUTOROUND677, value).apply()
+
+    var v677decodeAutoCodec677: Int
+        get() = prefs.getInt(KEY_V677DECODEAUTOCODEC677, 0)
+        set(value) = prefs.edit().putInt(KEY_V677DECODEAUTOCODEC677, value).apply()
+
+    var v677defaultAutoRestore677: Boolean
+        get() = prefs.getBoolean(KEY_V677DEFAULTAUTORESTORE677, false)
+        set(value) = prefs.edit().putBoolean(KEY_V677DEFAULTAUTORESTORE677, value).apply()
+
+    var v677delayAutoBuffer677: Boolean
+        get() = prefs.getBoolean(KEY_V677DELAYAUTOBUFFER677, false)
+        set(value) = prefs.edit().putBoolean(KEY_V677DELAYAUTOBUFFER677, value).apply()
+
+    var v678crossAutoFade678: Boolean
+        get() = prefs.getBoolean(KEY_V678CROSSAUTOFADE678, false)
+        set(value) = prefs.edit().putBoolean(KEY_V678CROSSAUTOFADE678, value).apply()
+
+    var v678cryptoAutoHash678: Boolean
+        get() = prefs.getBoolean(KEY_V678CRYPTOAUTOHASH678, false)
+        set(value) = prefs.edit().putBoolean(KEY_V678CRYPTOAUTOHASH678, value).apply()
+
+    var v678cursorAutoHide678: Boolean
+        get() = prefs.getBoolean(KEY_V678CURSORAUTOHIDE678, false)
+        set(value) = prefs.edit().putBoolean(KEY_V678CURSORAUTOHIDE678, value).apply()
+
+    var v678curveAutoSmooth678: Boolean
+        get() = prefs.getBoolean(KEY_V678CURVEAUTOSMOOTH678, false)
+        set(value) = prefs.edit().putBoolean(KEY_V678CURVEAUTOSMOOTH678, value).apply()
+
+    var v678customAutoTheme678: Boolean
+        get() = prefs.getBoolean(KEY_V678CUSTOMAUTOTHEME678, false)
+        set(value) = prefs.edit().putBoolean(KEY_V678CUSTOMAUTOTHEME678, value).apply()
+
+    var v678cycleAutoRepeat678: Int
+        get() = prefs.getInt(KEY_V678CYCLEAUTOREPEAT678, 0)
+        set(value) = prefs.edit().putInt(KEY_V678CYCLEAUTOREPEAT678, value).apply()
+
+    var v678dataAutoCompress678: Boolean
+        get() = prefs.getBoolean(KEY_V678DATAAUTOCOMPRESS678, false)
+        set(value) = prefs.edit().putBoolean(KEY_V678DATAAUTOCOMPRESS678, value).apply()
+
+    var v678databaseAutoIndex678: Boolean
+        get() = prefs.getBoolean(KEY_V678DATABASEAUTOINDEX678, false)
+        set(value) = prefs.edit().putBoolean(KEY_V678DATABASEAUTOINDEX678, value).apply()
+
+    var v678dateAutoFormat678: Boolean
+        get() = prefs.getBoolean(KEY_V678DATEAUTOFORMAT678, false)
+        set(value) = prefs.edit().putBoolean(KEY_V678DATEAUTOFORMAT678, value).apply()
+
+    var v678debugAutoVerbose678: Boolean
+        get() = prefs.getBoolean(KEY_V678DEBUGAUTOVERBOSE678, false)
+        set(value) = prefs.edit().putBoolean(KEY_V678DEBUGAUTOVERBOSE678, value).apply()
+
+    var v678decayAutoFadeout678: Boolean
+        get() = prefs.getBoolean(KEY_V678DECAYAUTOFADEOUT678, false)
+        set(value) = prefs.edit().putBoolean(KEY_V678DECAYAUTOFADEOUT678, value).apply()
+
+    var v678decimalAutoRound678: Boolean
+        get() = prefs.getBoolean(KEY_V678DECIMALAUTOROUND678, false)
+        set(value) = prefs.edit().putBoolean(KEY_V678DECIMALAUTOROUND678, value).apply()
+
+    var v678decodeAutoCodec678: Int
+        get() = prefs.getInt(KEY_V678DECODEAUTOCODEC678, 0)
+        set(value) = prefs.edit().putInt(KEY_V678DECODEAUTOCODEC678, value).apply()
+
+    var v678defaultAutoRestore678: Boolean
+        get() = prefs.getBoolean(KEY_V678DEFAULTAUTORESTORE678, false)
+        set(value) = prefs.edit().putBoolean(KEY_V678DEFAULTAUTORESTORE678, value).apply()
+
+    var v678delayAutoBuffer678: Boolean
+        get() = prefs.getBoolean(KEY_V678DELAYAUTOBUFFER678, false)
+        set(value) = prefs.edit().putBoolean(KEY_V678DELAYAUTOBUFFER678, value).apply()
+
+    var v679crossAutoFade679: Boolean
+        get() = prefs.getBoolean(KEY_V679CROSSAUTOFADE679, false)
+        set(value) = prefs.edit().putBoolean(KEY_V679CROSSAUTOFADE679, value).apply()
+
+    var v679cryptoAutoHash679: Boolean
+        get() = prefs.getBoolean(KEY_V679CRYPTOAUTOHASH679, false)
+        set(value) = prefs.edit().putBoolean(KEY_V679CRYPTOAUTOHASH679, value).apply()
+
+    var v679cursorAutoHide679: Boolean
+        get() = prefs.getBoolean(KEY_V679CURSORAUTOHIDE679, false)
+        set(value) = prefs.edit().putBoolean(KEY_V679CURSORAUTOHIDE679, value).apply()
+
+    var v679curveAutoSmooth679: Boolean
+        get() = prefs.getBoolean(KEY_V679CURVEAUTOSMOOTH679, false)
+        set(value) = prefs.edit().putBoolean(KEY_V679CURVEAUTOSMOOTH679, value).apply()
+
+    var v679customAutoTheme679: Boolean
+        get() = prefs.getBoolean(KEY_V679CUSTOMAUTOTHEME679, false)
+        set(value) = prefs.edit().putBoolean(KEY_V679CUSTOMAUTOTHEME679, value).apply()
+
+    var v679cycleAutoRepeat679: Int
+        get() = prefs.getInt(KEY_V679CYCLEAUTOREPEAT679, 0)
+        set(value) = prefs.edit().putInt(KEY_V679CYCLEAUTOREPEAT679, value).apply()
+
+    var v679dataAutoCompress679: Boolean
+        get() = prefs.getBoolean(KEY_V679DATAAUTOCOMPRESS679, false)
+        set(value) = prefs.edit().putBoolean(KEY_V679DATAAUTOCOMPRESS679, value).apply()
+
+    var v679databaseAutoIndex679: Boolean
+        get() = prefs.getBoolean(KEY_V679DATABASEAUTOINDEX679, false)
+        set(value) = prefs.edit().putBoolean(KEY_V679DATABASEAUTOINDEX679, value).apply()
+
+    var v679dateAutoFormat679: Boolean
+        get() = prefs.getBoolean(KEY_V679DATEAUTOFORMAT679, false)
+        set(value) = prefs.edit().putBoolean(KEY_V679DATEAUTOFORMAT679, value).apply()
+
+    var v679debugAutoVerbose679: Boolean
+        get() = prefs.getBoolean(KEY_V679DEBUGAUTOVERBOSE679, false)
+        set(value) = prefs.edit().putBoolean(KEY_V679DEBUGAUTOVERBOSE679, value).apply()
+
+    var v679decayAutoFadeout679: Boolean
+        get() = prefs.getBoolean(KEY_V679DECAYAUTOFADEOUT679, false)
+        set(value) = prefs.edit().putBoolean(KEY_V679DECAYAUTOFADEOUT679, value).apply()
+
+    var v679decimalAutoRound679: Boolean
+        get() = prefs.getBoolean(KEY_V679DECIMALAUTOROUND679, false)
+        set(value) = prefs.edit().putBoolean(KEY_V679DECIMALAUTOROUND679, value).apply()
+
+    var v679decodeAutoCodec679: Int
+        get() = prefs.getInt(KEY_V679DECODEAUTOCODEC679, 0)
+        set(value) = prefs.edit().putInt(KEY_V679DECODEAUTOCODEC679, value).apply()
+
+    var v679defaultAutoRestore679: Boolean
+        get() = prefs.getBoolean(KEY_V679DEFAULTAUTORESTORE679, false)
+        set(value) = prefs.edit().putBoolean(KEY_V679DEFAULTAUTORESTORE679, value).apply()
+
+    var v679delayAutoBuffer679: Boolean
+        get() = prefs.getBoolean(KEY_V679DELAYAUTOBUFFER679, false)
+        set(value) = prefs.edit().putBoolean(KEY_V679DELAYAUTOBUFFER679, value).apply()
+
+    var v680crossAutoFade680: Boolean
+        get() = prefs.getBoolean(KEY_V680CROSSAUTOFADE680, false)
+        set(value) = prefs.edit().putBoolean(KEY_V680CROSSAUTOFADE680, value).apply()
+
+    var v680cryptoAutoHash680: Boolean
+        get() = prefs.getBoolean(KEY_V680CRYPTOAUTOHASH680, false)
+        set(value) = prefs.edit().putBoolean(KEY_V680CRYPTOAUTOHASH680, value).apply()
+
+    var v680cursorAutoHide680: Boolean
+        get() = prefs.getBoolean(KEY_V680CURSORAUTOHIDE680, false)
+        set(value) = prefs.edit().putBoolean(KEY_V680CURSORAUTOHIDE680, value).apply()
+
+    var v680curveAutoSmooth680: Boolean
+        get() = prefs.getBoolean(KEY_V680CURVEAUTOSMOOTH680, false)
+        set(value) = prefs.edit().putBoolean(KEY_V680CURVEAUTOSMOOTH680, value).apply()
+
+    var v680customAutoTheme680: Boolean
+        get() = prefs.getBoolean(KEY_V680CUSTOMAUTOTHEME680, false)
+        set(value) = prefs.edit().putBoolean(KEY_V680CUSTOMAUTOTHEME680, value).apply()
+
+    var v680cycleAutoRepeat680: Int
+        get() = prefs.getInt(KEY_V680CYCLEAUTOREPEAT680, 0)
+        set(value) = prefs.edit().putInt(KEY_V680CYCLEAUTOREPEAT680, value).apply()
+
+    var v680dataAutoCompress680: Boolean
+        get() = prefs.getBoolean(KEY_V680DATAAUTOCOMPRESS680, false)
+        set(value) = prefs.edit().putBoolean(KEY_V680DATAAUTOCOMPRESS680, value).apply()
+
+    var v680databaseAutoIndex680: Boolean
+        get() = prefs.getBoolean(KEY_V680DATABASEAUTOINDEX680, false)
+        set(value) = prefs.edit().putBoolean(KEY_V680DATABASEAUTOINDEX680, value).apply()
+
+    var v680dateAutoFormat680: Boolean
+        get() = prefs.getBoolean(KEY_V680DATEAUTOFORMAT680, false)
+        set(value) = prefs.edit().putBoolean(KEY_V680DATEAUTOFORMAT680, value).apply()
+
+    var v680debugAutoVerbose680: Boolean
+        get() = prefs.getBoolean(KEY_V680DEBUGAUTOVERBOSE680, false)
+        set(value) = prefs.edit().putBoolean(KEY_V680DEBUGAUTOVERBOSE680, value).apply()
+
+    var v680decayAutoFadeout680: Boolean
+        get() = prefs.getBoolean(KEY_V680DECAYAUTOFADEOUT680, false)
+        set(value) = prefs.edit().putBoolean(KEY_V680DECAYAUTOFADEOUT680, value).apply()
+
+    var v680decimalAutoRound680: Boolean
+        get() = prefs.getBoolean(KEY_V680DECIMALAUTOROUND680, false)
+        set(value) = prefs.edit().putBoolean(KEY_V680DECIMALAUTOROUND680, value).apply()
+
+    var v680decodeAutoCodec680: Int
+        get() = prefs.getInt(KEY_V680DECODEAUTOCODEC680, 0)
+        set(value) = prefs.edit().putInt(KEY_V680DECODEAUTOCODEC680, value).apply()
+
+    var v680defaultAutoRestore680: Boolean
+        get() = prefs.getBoolean(KEY_V680DEFAULTAUTORESTORE680, false)
+        set(value) = prefs.edit().putBoolean(KEY_V680DEFAULTAUTORESTORE680, value).apply()
+
+    var v680delayAutoBuffer680: Boolean
+        get() = prefs.getBoolean(KEY_V680DELAYAUTOBUFFER680, false)
+        set(value) = prefs.edit().putBoolean(KEY_V680DELAYAUTOBUFFER680, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -59680,5 +60280,155 @@ class AppPrefs(context: Context) {
         const val KEY_V670CRASHAUTOREPORT670 = "v670crashAutoReport670" // v670 Crash Auto Report670
         const val KEY_V670CREATEAUTOBACKUP670 = "v670createAutoBackup670" // v670 Create Auto Backup670
         const val KEY_V670CROPAUTOREGION670 = "v670cropAutoRegion670" // v670 Crop Auto Region670
+        const val KEY_V671CROSSAUTOFADE671 = "v671crossAutoFade671" // v671 Cross Auto Fade671
+        const val KEY_V671CRYPTOAUTOHASH671 = "v671cryptoAutoHash671" // v671 Crypto Auto Hash671
+        const val KEY_V671CURSORAUTOHIDE671 = "v671cursorAutoHide671" // v671 Cursor Auto Hide671
+        const val KEY_V671CURVEAUTOSMOOTH671 = "v671curveAutoSmooth671" // v671 Curve Auto Smooth671
+        const val KEY_V671CUSTOMAUTOTHEME671 = "v671customAutoTheme671" // v671 Custom Auto Theme671
+        const val KEY_V671CYCLEAUTOREPEAT671 = "v671cycleAutoRepeat671" // v671 Cycle Auto Repeat671
+        const val KEY_V671DATAAUTOCOMPRESS671 = "v671dataAutoCompress671" // v671 Data Auto Compress671
+        const val KEY_V671DATABASEAUTOINDEX671 = "v671databaseAutoIndex671" // v671 Database Auto Index671
+        const val KEY_V671DATEAUTOFORMAT671 = "v671dateAutoFormat671" // v671 Date Auto Format671
+        const val KEY_V671DEBUGAUTOVERBOSE671 = "v671debugAutoVerbose671" // v671 Debug Auto Verbose671
+        const val KEY_V671DECAYAUTOFADEOUT671 = "v671decayAutoFadeout671" // v671 Decay Auto Fadeout671
+        const val KEY_V671DECIMALAUTOROUND671 = "v671decimalAutoRound671" // v671 Decimal Auto Round671
+        const val KEY_V671DECODEAUTOCODEC671 = "v671decodeAutoCodec671" // v671 Decode Auto Codec671
+        const val KEY_V671DEFAULTAUTORESTORE671 = "v671defaultAutoRestore671" // v671 Default Auto Restore671
+        const val KEY_V671DELAYAUTOBUFFER671 = "v671delayAutoBuffer671" // v671 Delay Auto Buffer671
+        const val KEY_V672CROSSAUTOFADE672 = "v672crossAutoFade672" // v672 Cross Auto Fade672
+        const val KEY_V672CRYPTOAUTOHASH672 = "v672cryptoAutoHash672" // v672 Crypto Auto Hash672
+        const val KEY_V672CURSORAUTOHIDE672 = "v672cursorAutoHide672" // v672 Cursor Auto Hide672
+        const val KEY_V672CURVEAUTOSMOOTH672 = "v672curveAutoSmooth672" // v672 Curve Auto Smooth672
+        const val KEY_V672CUSTOMAUTOTHEME672 = "v672customAutoTheme672" // v672 Custom Auto Theme672
+        const val KEY_V672CYCLEAUTOREPEAT672 = "v672cycleAutoRepeat672" // v672 Cycle Auto Repeat672
+        const val KEY_V672DATAAUTOCOMPRESS672 = "v672dataAutoCompress672" // v672 Data Auto Compress672
+        const val KEY_V672DATABASEAUTOINDEX672 = "v672databaseAutoIndex672" // v672 Database Auto Index672
+        const val KEY_V672DATEAUTOFORMAT672 = "v672dateAutoFormat672" // v672 Date Auto Format672
+        const val KEY_V672DEBUGAUTOVERBOSE672 = "v672debugAutoVerbose672" // v672 Debug Auto Verbose672
+        const val KEY_V672DECAYAUTOFADEOUT672 = "v672decayAutoFadeout672" // v672 Decay Auto Fadeout672
+        const val KEY_V672DECIMALAUTOROUND672 = "v672decimalAutoRound672" // v672 Decimal Auto Round672
+        const val KEY_V672DECODEAUTOCODEC672 = "v672decodeAutoCodec672" // v672 Decode Auto Codec672
+        const val KEY_V672DEFAULTAUTORESTORE672 = "v672defaultAutoRestore672" // v672 Default Auto Restore672
+        const val KEY_V672DELAYAUTOBUFFER672 = "v672delayAutoBuffer672" // v672 Delay Auto Buffer672
+        const val KEY_V673CROSSAUTOFADE673 = "v673crossAutoFade673" // v673 Cross Auto Fade673
+        const val KEY_V673CRYPTOAUTOHASH673 = "v673cryptoAutoHash673" // v673 Crypto Auto Hash673
+        const val KEY_V673CURSORAUTOHIDE673 = "v673cursorAutoHide673" // v673 Cursor Auto Hide673
+        const val KEY_V673CURVEAUTOSMOOTH673 = "v673curveAutoSmooth673" // v673 Curve Auto Smooth673
+        const val KEY_V673CUSTOMAUTOTHEME673 = "v673customAutoTheme673" // v673 Custom Auto Theme673
+        const val KEY_V673CYCLEAUTOREPEAT673 = "v673cycleAutoRepeat673" // v673 Cycle Auto Repeat673
+        const val KEY_V673DATAAUTOCOMPRESS673 = "v673dataAutoCompress673" // v673 Data Auto Compress673
+        const val KEY_V673DATABASEAUTOINDEX673 = "v673databaseAutoIndex673" // v673 Database Auto Index673
+        const val KEY_V673DATEAUTOFORMAT673 = "v673dateAutoFormat673" // v673 Date Auto Format673
+        const val KEY_V673DEBUGAUTOVERBOSE673 = "v673debugAutoVerbose673" // v673 Debug Auto Verbose673
+        const val KEY_V673DECAYAUTOFADEOUT673 = "v673decayAutoFadeout673" // v673 Decay Auto Fadeout673
+        const val KEY_V673DECIMALAUTOROUND673 = "v673decimalAutoRound673" // v673 Decimal Auto Round673
+        const val KEY_V673DECODEAUTOCODEC673 = "v673decodeAutoCodec673" // v673 Decode Auto Codec673
+        const val KEY_V673DEFAULTAUTORESTORE673 = "v673defaultAutoRestore673" // v673 Default Auto Restore673
+        const val KEY_V673DELAYAUTOBUFFER673 = "v673delayAutoBuffer673" // v673 Delay Auto Buffer673
+        const val KEY_V674CROSSAUTOFADE674 = "v674crossAutoFade674" // v674 Cross Auto Fade674
+        const val KEY_V674CRYPTOAUTOHASH674 = "v674cryptoAutoHash674" // v674 Crypto Auto Hash674
+        const val KEY_V674CURSORAUTOHIDE674 = "v674cursorAutoHide674" // v674 Cursor Auto Hide674
+        const val KEY_V674CURVEAUTOSMOOTH674 = "v674curveAutoSmooth674" // v674 Curve Auto Smooth674
+        const val KEY_V674CUSTOMAUTOTHEME674 = "v674customAutoTheme674" // v674 Custom Auto Theme674
+        const val KEY_V674CYCLEAUTOREPEAT674 = "v674cycleAutoRepeat674" // v674 Cycle Auto Repeat674
+        const val KEY_V674DATAAUTOCOMPRESS674 = "v674dataAutoCompress674" // v674 Data Auto Compress674
+        const val KEY_V674DATABASEAUTOINDEX674 = "v674databaseAutoIndex674" // v674 Database Auto Index674
+        const val KEY_V674DATEAUTOFORMAT674 = "v674dateAutoFormat674" // v674 Date Auto Format674
+        const val KEY_V674DEBUGAUTOVERBOSE674 = "v674debugAutoVerbose674" // v674 Debug Auto Verbose674
+        const val KEY_V674DECAYAUTOFADEOUT674 = "v674decayAutoFadeout674" // v674 Decay Auto Fadeout674
+        const val KEY_V674DECIMALAUTOROUND674 = "v674decimalAutoRound674" // v674 Decimal Auto Round674
+        const val KEY_V674DECODEAUTOCODEC674 = "v674decodeAutoCodec674" // v674 Decode Auto Codec674
+        const val KEY_V674DEFAULTAUTORESTORE674 = "v674defaultAutoRestore674" // v674 Default Auto Restore674
+        const val KEY_V674DELAYAUTOBUFFER674 = "v674delayAutoBuffer674" // v674 Delay Auto Buffer674
+        const val KEY_V675CROSSAUTOFADE675 = "v675crossAutoFade675" // v675 Cross Auto Fade675
+        const val KEY_V675CRYPTOAUTOHASH675 = "v675cryptoAutoHash675" // v675 Crypto Auto Hash675
+        const val KEY_V675CURSORAUTOHIDE675 = "v675cursorAutoHide675" // v675 Cursor Auto Hide675
+        const val KEY_V675CURVEAUTOSMOOTH675 = "v675curveAutoSmooth675" // v675 Curve Auto Smooth675
+        const val KEY_V675CUSTOMAUTOTHEME675 = "v675customAutoTheme675" // v675 Custom Auto Theme675
+        const val KEY_V675CYCLEAUTOREPEAT675 = "v675cycleAutoRepeat675" // v675 Cycle Auto Repeat675
+        const val KEY_V675DATAAUTOCOMPRESS675 = "v675dataAutoCompress675" // v675 Data Auto Compress675
+        const val KEY_V675DATABASEAUTOINDEX675 = "v675databaseAutoIndex675" // v675 Database Auto Index675
+        const val KEY_V675DATEAUTOFORMAT675 = "v675dateAutoFormat675" // v675 Date Auto Format675
+        const val KEY_V675DEBUGAUTOVERBOSE675 = "v675debugAutoVerbose675" // v675 Debug Auto Verbose675
+        const val KEY_V675DECAYAUTOFADEOUT675 = "v675decayAutoFadeout675" // v675 Decay Auto Fadeout675
+        const val KEY_V675DECIMALAUTOROUND675 = "v675decimalAutoRound675" // v675 Decimal Auto Round675
+        const val KEY_V675DECODEAUTOCODEC675 = "v675decodeAutoCodec675" // v675 Decode Auto Codec675
+        const val KEY_V675DEFAULTAUTORESTORE675 = "v675defaultAutoRestore675" // v675 Default Auto Restore675
+        const val KEY_V675DELAYAUTOBUFFER675 = "v675delayAutoBuffer675" // v675 Delay Auto Buffer675
+        const val KEY_V676CROSSAUTOFADE676 = "v676crossAutoFade676" // v676 Cross Auto Fade676
+        const val KEY_V676CRYPTOAUTOHASH676 = "v676cryptoAutoHash676" // v676 Crypto Auto Hash676
+        const val KEY_V676CURSORAUTOHIDE676 = "v676cursorAutoHide676" // v676 Cursor Auto Hide676
+        const val KEY_V676CURVEAUTOSMOOTH676 = "v676curveAutoSmooth676" // v676 Curve Auto Smooth676
+        const val KEY_V676CUSTOMAUTOTHEME676 = "v676customAutoTheme676" // v676 Custom Auto Theme676
+        const val KEY_V676CYCLEAUTOREPEAT676 = "v676cycleAutoRepeat676" // v676 Cycle Auto Repeat676
+        const val KEY_V676DATAAUTOCOMPRESS676 = "v676dataAutoCompress676" // v676 Data Auto Compress676
+        const val KEY_V676DATABASEAUTOINDEX676 = "v676databaseAutoIndex676" // v676 Database Auto Index676
+        const val KEY_V676DATEAUTOFORMAT676 = "v676dateAutoFormat676" // v676 Date Auto Format676
+        const val KEY_V676DEBUGAUTOVERBOSE676 = "v676debugAutoVerbose676" // v676 Debug Auto Verbose676
+        const val KEY_V676DECAYAUTOFADEOUT676 = "v676decayAutoFadeout676" // v676 Decay Auto Fadeout676
+        const val KEY_V676DECIMALAUTOROUND676 = "v676decimalAutoRound676" // v676 Decimal Auto Round676
+        const val KEY_V676DECODEAUTOCODEC676 = "v676decodeAutoCodec676" // v676 Decode Auto Codec676
+        const val KEY_V676DEFAULTAUTORESTORE676 = "v676defaultAutoRestore676" // v676 Default Auto Restore676
+        const val KEY_V676DELAYAUTOBUFFER676 = "v676delayAutoBuffer676" // v676 Delay Auto Buffer676
+        const val KEY_V677CROSSAUTOFADE677 = "v677crossAutoFade677" // v677 Cross Auto Fade677
+        const val KEY_V677CRYPTOAUTOHASH677 = "v677cryptoAutoHash677" // v677 Crypto Auto Hash677
+        const val KEY_V677CURSORAUTOHIDE677 = "v677cursorAutoHide677" // v677 Cursor Auto Hide677
+        const val KEY_V677CURVEAUTOSMOOTH677 = "v677curveAutoSmooth677" // v677 Curve Auto Smooth677
+        const val KEY_V677CUSTOMAUTOTHEME677 = "v677customAutoTheme677" // v677 Custom Auto Theme677
+        const val KEY_V677CYCLEAUTOREPEAT677 = "v677cycleAutoRepeat677" // v677 Cycle Auto Repeat677
+        const val KEY_V677DATAAUTOCOMPRESS677 = "v677dataAutoCompress677" // v677 Data Auto Compress677
+        const val KEY_V677DATABASEAUTOINDEX677 = "v677databaseAutoIndex677" // v677 Database Auto Index677
+        const val KEY_V677DATEAUTOFORMAT677 = "v677dateAutoFormat677" // v677 Date Auto Format677
+        const val KEY_V677DEBUGAUTOVERBOSE677 = "v677debugAutoVerbose677" // v677 Debug Auto Verbose677
+        const val KEY_V677DECAYAUTOFADEOUT677 = "v677decayAutoFadeout677" // v677 Decay Auto Fadeout677
+        const val KEY_V677DECIMALAUTOROUND677 = "v677decimalAutoRound677" // v677 Decimal Auto Round677
+        const val KEY_V677DECODEAUTOCODEC677 = "v677decodeAutoCodec677" // v677 Decode Auto Codec677
+        const val KEY_V677DEFAULTAUTORESTORE677 = "v677defaultAutoRestore677" // v677 Default Auto Restore677
+        const val KEY_V677DELAYAUTOBUFFER677 = "v677delayAutoBuffer677" // v677 Delay Auto Buffer677
+        const val KEY_V678CROSSAUTOFADE678 = "v678crossAutoFade678" // v678 Cross Auto Fade678
+        const val KEY_V678CRYPTOAUTOHASH678 = "v678cryptoAutoHash678" // v678 Crypto Auto Hash678
+        const val KEY_V678CURSORAUTOHIDE678 = "v678cursorAutoHide678" // v678 Cursor Auto Hide678
+        const val KEY_V678CURVEAUTOSMOOTH678 = "v678curveAutoSmooth678" // v678 Curve Auto Smooth678
+        const val KEY_V678CUSTOMAUTOTHEME678 = "v678customAutoTheme678" // v678 Custom Auto Theme678
+        const val KEY_V678CYCLEAUTOREPEAT678 = "v678cycleAutoRepeat678" // v678 Cycle Auto Repeat678
+        const val KEY_V678DATAAUTOCOMPRESS678 = "v678dataAutoCompress678" // v678 Data Auto Compress678
+        const val KEY_V678DATABASEAUTOINDEX678 = "v678databaseAutoIndex678" // v678 Database Auto Index678
+        const val KEY_V678DATEAUTOFORMAT678 = "v678dateAutoFormat678" // v678 Date Auto Format678
+        const val KEY_V678DEBUGAUTOVERBOSE678 = "v678debugAutoVerbose678" // v678 Debug Auto Verbose678
+        const val KEY_V678DECAYAUTOFADEOUT678 = "v678decayAutoFadeout678" // v678 Decay Auto Fadeout678
+        const val KEY_V678DECIMALAUTOROUND678 = "v678decimalAutoRound678" // v678 Decimal Auto Round678
+        const val KEY_V678DECODEAUTOCODEC678 = "v678decodeAutoCodec678" // v678 Decode Auto Codec678
+        const val KEY_V678DEFAULTAUTORESTORE678 = "v678defaultAutoRestore678" // v678 Default Auto Restore678
+        const val KEY_V678DELAYAUTOBUFFER678 = "v678delayAutoBuffer678" // v678 Delay Auto Buffer678
+        const val KEY_V679CROSSAUTOFADE679 = "v679crossAutoFade679" // v679 Cross Auto Fade679
+        const val KEY_V679CRYPTOAUTOHASH679 = "v679cryptoAutoHash679" // v679 Crypto Auto Hash679
+        const val KEY_V679CURSORAUTOHIDE679 = "v679cursorAutoHide679" // v679 Cursor Auto Hide679
+        const val KEY_V679CURVEAUTOSMOOTH679 = "v679curveAutoSmooth679" // v679 Curve Auto Smooth679
+        const val KEY_V679CUSTOMAUTOTHEME679 = "v679customAutoTheme679" // v679 Custom Auto Theme679
+        const val KEY_V679CYCLEAUTOREPEAT679 = "v679cycleAutoRepeat679" // v679 Cycle Auto Repeat679
+        const val KEY_V679DATAAUTOCOMPRESS679 = "v679dataAutoCompress679" // v679 Data Auto Compress679
+        const val KEY_V679DATABASEAUTOINDEX679 = "v679databaseAutoIndex679" // v679 Database Auto Index679
+        const val KEY_V679DATEAUTOFORMAT679 = "v679dateAutoFormat679" // v679 Date Auto Format679
+        const val KEY_V679DEBUGAUTOVERBOSE679 = "v679debugAutoVerbose679" // v679 Debug Auto Verbose679
+        const val KEY_V679DECAYAUTOFADEOUT679 = "v679decayAutoFadeout679" // v679 Decay Auto Fadeout679
+        const val KEY_V679DECIMALAUTOROUND679 = "v679decimalAutoRound679" // v679 Decimal Auto Round679
+        const val KEY_V679DECODEAUTOCODEC679 = "v679decodeAutoCodec679" // v679 Decode Auto Codec679
+        const val KEY_V679DEFAULTAUTORESTORE679 = "v679defaultAutoRestore679" // v679 Default Auto Restore679
+        const val KEY_V679DELAYAUTOBUFFER679 = "v679delayAutoBuffer679" // v679 Delay Auto Buffer679
+        const val KEY_V680CROSSAUTOFADE680 = "v680crossAutoFade680" // v680 Cross Auto Fade680
+        const val KEY_V680CRYPTOAUTOHASH680 = "v680cryptoAutoHash680" // v680 Crypto Auto Hash680
+        const val KEY_V680CURSORAUTOHIDE680 = "v680cursorAutoHide680" // v680 Cursor Auto Hide680
+        const val KEY_V680CURVEAUTOSMOOTH680 = "v680curveAutoSmooth680" // v680 Curve Auto Smooth680
+        const val KEY_V680CUSTOMAUTOTHEME680 = "v680customAutoTheme680" // v680 Custom Auto Theme680
+        const val KEY_V680CYCLEAUTOREPEAT680 = "v680cycleAutoRepeat680" // v680 Cycle Auto Repeat680
+        const val KEY_V680DATAAUTOCOMPRESS680 = "v680dataAutoCompress680" // v680 Data Auto Compress680
+        const val KEY_V680DATABASEAUTOINDEX680 = "v680databaseAutoIndex680" // v680 Database Auto Index680
+        const val KEY_V680DATEAUTOFORMAT680 = "v680dateAutoFormat680" // v680 Date Auto Format680
+        const val KEY_V680DEBUGAUTOVERBOSE680 = "v680debugAutoVerbose680" // v680 Debug Auto Verbose680
+        const val KEY_V680DECAYAUTOFADEOUT680 = "v680decayAutoFadeout680" // v680 Decay Auto Fadeout680
+        const val KEY_V680DECIMALAUTOROUND680 = "v680decimalAutoRound680" // v680 Decimal Auto Round680
+        const val KEY_V680DECODEAUTOCODEC680 = "v680decodeAutoCodec680" // v680 Decode Auto Codec680
+        const val KEY_V680DEFAULTAUTORESTORE680 = "v680defaultAutoRestore680" // v680 Default Auto Restore680
+        const val KEY_V680DELAYAUTOBUFFER680 = "v680delayAutoBuffer680" // v680 Delay Auto Buffer680
     }
 }
