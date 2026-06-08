@@ -50048,6 +50048,406 @@ class AppPrefs(context: Context) {
         get() = prefs.getInt(KEY_V720EXPECTAUTOTIMEOUT720, 0)
         set(value) = prefs.edit().putInt(KEY_V720EXPECTAUTOTIMEOUT720, value).apply()
 
+    var v721exportAutoXml721: Boolean
+        get() = prefs.getBoolean(KEY_V721EXPORTAUTOXML721, false)
+        set(value) = prefs.edit().putBoolean(KEY_V721EXPORTAUTOXML721, value).apply()
+
+    var v722exportAutoXml722: Boolean
+        get() = prefs.getBoolean(KEY_V722EXPORTAUTOXML722, false)
+        set(value) = prefs.edit().putBoolean(KEY_V722EXPORTAUTOXML722, value).apply()
+
+    var v723exportAutoXml723: Boolean
+        get() = prefs.getBoolean(KEY_V723EXPORTAUTOXML723, false)
+        set(value) = prefs.edit().putBoolean(KEY_V723EXPORTAUTOXML723, value).apply()
+
+    var v724exportAutoXml724: Boolean
+        get() = prefs.getBoolean(KEY_V724EXPORTAUTOXML724, false)
+        set(value) = prefs.edit().putBoolean(KEY_V724EXPORTAUTOXML724, value).apply()
+
+    var v725exportAutoXml725: Boolean
+        get() = prefs.getBoolean(KEY_V725EXPORTAUTOXML725, false)
+        set(value) = prefs.edit().putBoolean(KEY_V725EXPORTAUTOXML725, value).apply()
+
+    var v721extendAutoList721: Boolean
+        get() = prefs.getBoolean(KEY_V721EXTENDAUTOLIST721, false)
+        set(value) = prefs.edit().putBoolean(KEY_V721EXTENDAUTOLIST721, value).apply()
+
+    var v722extendAutoList722: Boolean
+        get() = prefs.getBoolean(KEY_V722EXTENDAUTOLIST722, false)
+        set(value) = prefs.edit().putBoolean(KEY_V722EXTENDAUTOLIST722, value).apply()
+
+    var v723extendAutoList723: Boolean
+        get() = prefs.getBoolean(KEY_V723EXTENDAUTOLIST723, false)
+        set(value) = prefs.edit().putBoolean(KEY_V723EXTENDAUTOLIST723, value).apply()
+
+    var v724extendAutoList724: Boolean
+        get() = prefs.getBoolean(KEY_V724EXTENDAUTOLIST724, false)
+        set(value) = prefs.edit().putBoolean(KEY_V724EXTENDAUTOLIST724, value).apply()
+
+    var v725extendAutoList725: Boolean
+        get() = prefs.getBoolean(KEY_V725EXTENDAUTOLIST725, false)
+        set(value) = prefs.edit().putBoolean(KEY_V725EXTENDAUTOLIST725, value).apply()
+
+    var v721externalAutoLink721: Boolean
+        get() = prefs.getBoolean(KEY_V721EXTERNALAUTOLINK721, false)
+        set(value) = prefs.edit().putBoolean(KEY_V721EXTERNALAUTOLINK721, value).apply()
+
+    var v722externalAutoLink722: Boolean
+        get() = prefs.getBoolean(KEY_V722EXTERNALAUTOLINK722, false)
+        set(value) = prefs.edit().putBoolean(KEY_V722EXTERNALAUTOLINK722, value).apply()
+
+    var v723externalAutoLink723: Boolean
+        get() = prefs.getBoolean(KEY_V723EXTERNALAUTOLINK723, false)
+        set(value) = prefs.edit().putBoolean(KEY_V723EXTERNALAUTOLINK723, value).apply()
+
+    var v724externalAutoLink724: Boolean
+        get() = prefs.getBoolean(KEY_V724EXTERNALAUTOLINK724, false)
+        set(value) = prefs.edit().putBoolean(KEY_V724EXTERNALAUTOLINK724, value).apply()
+
+    var v725externalAutoLink725: Boolean
+        get() = prefs.getBoolean(KEY_V725EXTERNALAUTOLINK725, false)
+        set(value) = prefs.edit().putBoolean(KEY_V725EXTERNALAUTOLINK725, value).apply()
+
+    var v721extractAutoData721: Boolean
+        get() = prefs.getBoolean(KEY_V721EXTRACTAUTODATA721, false)
+        set(value) = prefs.edit().putBoolean(KEY_V721EXTRACTAUTODATA721, value).apply()
+
+    var v722extractAutoData722: Boolean
+        get() = prefs.getBoolean(KEY_V722EXTRACTAUTODATA722, false)
+        set(value) = prefs.edit().putBoolean(KEY_V722EXTRACTAUTODATA722, value).apply()
+
+    var v723extractAutoData723: Boolean
+        get() = prefs.getBoolean(KEY_V723EXTRACTAUTODATA723, false)
+        set(value) = prefs.edit().putBoolean(KEY_V723EXTRACTAUTODATA723, value).apply()
+
+    var v724extractAutoData724: Boolean
+        get() = prefs.getBoolean(KEY_V724EXTRACTAUTODATA724, false)
+        set(value) = prefs.edit().putBoolean(KEY_V724EXTRACTAUTODATA724, value).apply()
+
+    var v725extractAutoData725: Boolean
+        get() = prefs.getBoolean(KEY_V725EXTRACTAUTODATA725, false)
+        set(value) = prefs.edit().putBoolean(KEY_V725EXTRACTAUTODATA725, value).apply()
+
+    var v721factorAutoScale721: Int
+        get() = prefs.getInt(KEY_V721FACTORAUTOSCALE721, 0)
+        set(value) = prefs.edit().putInt(KEY_V721FACTORAUTOSCALE721, value).apply()
+
+    var v722factorAutoScale722: Int
+        get() = prefs.getInt(KEY_V722FACTORAUTOSCALE722, 0)
+        set(value) = prefs.edit().putInt(KEY_V722FACTORAUTOSCALE722, value).apply()
+
+    var v723factorAutoScale723: Int
+        get() = prefs.getInt(KEY_V723FACTORAUTOSCALE723, 0)
+        set(value) = prefs.edit().putInt(KEY_V723FACTORAUTOSCALE723, value).apply()
+
+    var v724factorAutoScale724: Int
+        get() = prefs.getInt(KEY_V724FACTORAUTOSCALE724, 0)
+        set(value) = prefs.edit().putInt(KEY_V724FACTORAUTOSCALE724, value).apply()
+
+    var v725factorAutoScale725: Int
+        get() = prefs.getInt(KEY_V725FACTORAUTOSCALE725, 0)
+        set(value) = prefs.edit().putInt(KEY_V725FACTORAUTOSCALE725, value).apply()
+
+    var v726fadeAutoIn726: Boolean
+        get() = prefs.getBoolean(KEY_V726FADEAUTOIN726, false)
+        set(value) = prefs.edit().putBoolean(KEY_V726FADEAUTOIN726, value).apply()
+
+    var v726fallbackAutoRoute726: Boolean
+        get() = prefs.getBoolean(KEY_V726FALLBACKAUTOROUTE726, false)
+        set(value) = prefs.edit().putBoolean(KEY_V726FALLBACKAUTOROUTE726, value).apply()
+
+    var v726familyAutoGroup726: Boolean
+        get() = prefs.getBoolean(KEY_V726FAMILYAUTOGROUP726, false)
+        set(value) = prefs.edit().putBoolean(KEY_V726FAMILYAUTOGROUP726, value).apply()
+
+    var v726featureAutoToggle726: Boolean
+        get() = prefs.getBoolean(KEY_V726FEATUREAUTOTOGGLE726, false)
+        set(value) = prefs.edit().putBoolean(KEY_V726FEATUREAUTOTOGGLE726, value).apply()
+
+    var v726fieldAutoSelect726: Boolean
+        get() = prefs.getBoolean(KEY_V726FIELDAUTOSELECT726, false)
+        set(value) = prefs.edit().putBoolean(KEY_V726FIELDAUTOSELECT726, value).apply()
+
+    var v726fileAutoCompress726: Boolean
+        get() = prefs.getBoolean(KEY_V726FILEAUTOCOMPRESS726, false)
+        set(value) = prefs.edit().putBoolean(KEY_V726FILEAUTOCOMPRESS726, value).apply()
+
+    var v726filterAutoApply726: Boolean
+        get() = prefs.getBoolean(KEY_V726FILTERAUTOAPPLY726, false)
+        set(value) = prefs.edit().putBoolean(KEY_V726FILTERAUTOAPPLY726, value).apply()
+
+    var v726finalAutoReview726: Boolean
+        get() = prefs.getBoolean(KEY_V726FINALAUTOREVIEW726, false)
+        set(value) = prefs.edit().putBoolean(KEY_V726FINALAUTOREVIEW726, value).apply()
+
+    var v726findAutoMatch726: Boolean
+        get() = prefs.getBoolean(KEY_V726FINDAUTOMATCH726, false)
+        set(value) = prefs.edit().putBoolean(KEY_V726FINDAUTOMATCH726, value).apply()
+
+    var v726fireAutoEvent726: Boolean
+        get() = prefs.getBoolean(KEY_V726FIREAUTOEVENT726, false)
+        set(value) = prefs.edit().putBoolean(KEY_V726FIREAUTOEVENT726, value).apply()
+
+    var v726firmwareAutoUpdate726: Int
+        get() = prefs.getInt(KEY_V726FIRMWAREAUTOUPDATE726, 0)
+        set(value) = prefs.edit().putInt(KEY_V726FIRMWAREAUTOUPDATE726, value).apply()
+
+    var v726flagAutoSet726: Boolean
+        get() = prefs.getBoolean(KEY_V726FLAGAUTOSET726, false)
+        set(value) = prefs.edit().putBoolean(KEY_V726FLAGAUTOSET726, value).apply()
+
+    var v726flashAutoMode726: Boolean
+        get() = prefs.getBoolean(KEY_V726FLASHAUTOMODE726, false)
+        set(value) = prefs.edit().putBoolean(KEY_V726FLASHAUTOMODE726, value).apply()
+
+    var v726flatAutoLayout726: Boolean
+        get() = prefs.getBoolean(KEY_V726FLATAUTOLAYOUT726, false)
+        set(value) = prefs.edit().putBoolean(KEY_V726FLATAUTOLAYOUT726, value).apply()
+
+    var v726flipAutoHorizontal726: Boolean
+        get() = prefs.getBoolean(KEY_V726FLIPAUTOHORIZONTAL726, false)
+        set(value) = prefs.edit().putBoolean(KEY_V726FLIPAUTOHORIZONTAL726, value).apply()
+
+    var v727fadeAutoIn727: Boolean
+        get() = prefs.getBoolean(KEY_V727FADEAUTOIN727, false)
+        set(value) = prefs.edit().putBoolean(KEY_V727FADEAUTOIN727, value).apply()
+
+    var v727fallbackAutoRoute727: Boolean
+        get() = prefs.getBoolean(KEY_V727FALLBACKAUTOROUTE727, false)
+        set(value) = prefs.edit().putBoolean(KEY_V727FALLBACKAUTOROUTE727, value).apply()
+
+    var v727familyAutoGroup727: Boolean
+        get() = prefs.getBoolean(KEY_V727FAMILYAUTOGROUP727, false)
+        set(value) = prefs.edit().putBoolean(KEY_V727FAMILYAUTOGROUP727, value).apply()
+
+    var v727featureAutoToggle727: Boolean
+        get() = prefs.getBoolean(KEY_V727FEATUREAUTOTOGGLE727, false)
+        set(value) = prefs.edit().putBoolean(KEY_V727FEATUREAUTOTOGGLE727, value).apply()
+
+    var v727fieldAutoSelect727: Boolean
+        get() = prefs.getBoolean(KEY_V727FIELDAUTOSELECT727, false)
+        set(value) = prefs.edit().putBoolean(KEY_V727FIELDAUTOSELECT727, value).apply()
+
+    var v727fileAutoCompress727: Boolean
+        get() = prefs.getBoolean(KEY_V727FILEAUTOCOMPRESS727, false)
+        set(value) = prefs.edit().putBoolean(KEY_V727FILEAUTOCOMPRESS727, value).apply()
+
+    var v727filterAutoApply727: Boolean
+        get() = prefs.getBoolean(KEY_V727FILTERAUTOAPPLY727, false)
+        set(value) = prefs.edit().putBoolean(KEY_V727FILTERAUTOAPPLY727, value).apply()
+
+    var v727finalAutoReview727: Boolean
+        get() = prefs.getBoolean(KEY_V727FINALAUTOREVIEW727, false)
+        set(value) = prefs.edit().putBoolean(KEY_V727FINALAUTOREVIEW727, value).apply()
+
+    var v727findAutoMatch727: Boolean
+        get() = prefs.getBoolean(KEY_V727FINDAUTOMATCH727, false)
+        set(value) = prefs.edit().putBoolean(KEY_V727FINDAUTOMATCH727, value).apply()
+
+    var v727fireAutoEvent727: Boolean
+        get() = prefs.getBoolean(KEY_V727FIREAUTOEVENT727, false)
+        set(value) = prefs.edit().putBoolean(KEY_V727FIREAUTOEVENT727, value).apply()
+
+    var v727firmwareAutoUpdate727: Int
+        get() = prefs.getInt(KEY_V727FIRMWAREAUTOUPDATE727, 0)
+        set(value) = prefs.edit().putInt(KEY_V727FIRMWAREAUTOUPDATE727, value).apply()
+
+    var v727flagAutoSet727: Boolean
+        get() = prefs.getBoolean(KEY_V727FLAGAUTOSET727, false)
+        set(value) = prefs.edit().putBoolean(KEY_V727FLAGAUTOSET727, value).apply()
+
+    var v727flashAutoMode727: Boolean
+        get() = prefs.getBoolean(KEY_V727FLASHAUTOMODE727, false)
+        set(value) = prefs.edit().putBoolean(KEY_V727FLASHAUTOMODE727, value).apply()
+
+    var v727flatAutoLayout727: Boolean
+        get() = prefs.getBoolean(KEY_V727FLATAUTOLAYOUT727, false)
+        set(value) = prefs.edit().putBoolean(KEY_V727FLATAUTOLAYOUT727, value).apply()
+
+    var v727flipAutoHorizontal727: Boolean
+        get() = prefs.getBoolean(KEY_V727FLIPAUTOHORIZONTAL727, false)
+        set(value) = prefs.edit().putBoolean(KEY_V727FLIPAUTOHORIZONTAL727, value).apply()
+
+    var v728fadeAutoIn728: Boolean
+        get() = prefs.getBoolean(KEY_V728FADEAUTOIN728, false)
+        set(value) = prefs.edit().putBoolean(KEY_V728FADEAUTOIN728, value).apply()
+
+    var v728fallbackAutoRoute728: Boolean
+        get() = prefs.getBoolean(KEY_V728FALLBACKAUTOROUTE728, false)
+        set(value) = prefs.edit().putBoolean(KEY_V728FALLBACKAUTOROUTE728, value).apply()
+
+    var v728familyAutoGroup728: Boolean
+        get() = prefs.getBoolean(KEY_V728FAMILYAUTOGROUP728, false)
+        set(value) = prefs.edit().putBoolean(KEY_V728FAMILYAUTOGROUP728, value).apply()
+
+    var v728featureAutoToggle728: Boolean
+        get() = prefs.getBoolean(KEY_V728FEATUREAUTOTOGGLE728, false)
+        set(value) = prefs.edit().putBoolean(KEY_V728FEATUREAUTOTOGGLE728, value).apply()
+
+    var v728fieldAutoSelect728: Boolean
+        get() = prefs.getBoolean(KEY_V728FIELDAUTOSELECT728, false)
+        set(value) = prefs.edit().putBoolean(KEY_V728FIELDAUTOSELECT728, value).apply()
+
+    var v728fileAutoCompress728: Boolean
+        get() = prefs.getBoolean(KEY_V728FILEAUTOCOMPRESS728, false)
+        set(value) = prefs.edit().putBoolean(KEY_V728FILEAUTOCOMPRESS728, value).apply()
+
+    var v728filterAutoApply728: Boolean
+        get() = prefs.getBoolean(KEY_V728FILTERAUTOAPPLY728, false)
+        set(value) = prefs.edit().putBoolean(KEY_V728FILTERAUTOAPPLY728, value).apply()
+
+    var v728finalAutoReview728: Boolean
+        get() = prefs.getBoolean(KEY_V728FINALAUTOREVIEW728, false)
+        set(value) = prefs.edit().putBoolean(KEY_V728FINALAUTOREVIEW728, value).apply()
+
+    var v728findAutoMatch728: Boolean
+        get() = prefs.getBoolean(KEY_V728FINDAUTOMATCH728, false)
+        set(value) = prefs.edit().putBoolean(KEY_V728FINDAUTOMATCH728, value).apply()
+
+    var v728fireAutoEvent728: Boolean
+        get() = prefs.getBoolean(KEY_V728FIREAUTOEVENT728, false)
+        set(value) = prefs.edit().putBoolean(KEY_V728FIREAUTOEVENT728, value).apply()
+
+    var v728firmwareAutoUpdate728: Int
+        get() = prefs.getInt(KEY_V728FIRMWAREAUTOUPDATE728, 0)
+        set(value) = prefs.edit().putInt(KEY_V728FIRMWAREAUTOUPDATE728, value).apply()
+
+    var v728flagAutoSet728: Boolean
+        get() = prefs.getBoolean(KEY_V728FLAGAUTOSET728, false)
+        set(value) = prefs.edit().putBoolean(KEY_V728FLAGAUTOSET728, value).apply()
+
+    var v728flashAutoMode728: Boolean
+        get() = prefs.getBoolean(KEY_V728FLASHAUTOMODE728, false)
+        set(value) = prefs.edit().putBoolean(KEY_V728FLASHAUTOMODE728, value).apply()
+
+    var v728flatAutoLayout728: Boolean
+        get() = prefs.getBoolean(KEY_V728FLATAUTOLAYOUT728, false)
+        set(value) = prefs.edit().putBoolean(KEY_V728FLATAUTOLAYOUT728, value).apply()
+
+    var v728flipAutoHorizontal728: Boolean
+        get() = prefs.getBoolean(KEY_V728FLIPAUTOHORIZONTAL728, false)
+        set(value) = prefs.edit().putBoolean(KEY_V728FLIPAUTOHORIZONTAL728, value).apply()
+
+    var v729fadeAutoIn729: Boolean
+        get() = prefs.getBoolean(KEY_V729FADEAUTOIN729, false)
+        set(value) = prefs.edit().putBoolean(KEY_V729FADEAUTOIN729, value).apply()
+
+    var v729fallbackAutoRoute729: Boolean
+        get() = prefs.getBoolean(KEY_V729FALLBACKAUTOROUTE729, false)
+        set(value) = prefs.edit().putBoolean(KEY_V729FALLBACKAUTOROUTE729, value).apply()
+
+    var v729familyAutoGroup729: Boolean
+        get() = prefs.getBoolean(KEY_V729FAMILYAUTOGROUP729, false)
+        set(value) = prefs.edit().putBoolean(KEY_V729FAMILYAUTOGROUP729, value).apply()
+
+    var v729featureAutoToggle729: Boolean
+        get() = prefs.getBoolean(KEY_V729FEATUREAUTOTOGGLE729, false)
+        set(value) = prefs.edit().putBoolean(KEY_V729FEATUREAUTOTOGGLE729, value).apply()
+
+    var v729fieldAutoSelect729: Boolean
+        get() = prefs.getBoolean(KEY_V729FIELDAUTOSELECT729, false)
+        set(value) = prefs.edit().putBoolean(KEY_V729FIELDAUTOSELECT729, value).apply()
+
+    var v729fileAutoCompress729: Boolean
+        get() = prefs.getBoolean(KEY_V729FILEAUTOCOMPRESS729, false)
+        set(value) = prefs.edit().putBoolean(KEY_V729FILEAUTOCOMPRESS729, value).apply()
+
+    var v729filterAutoApply729: Boolean
+        get() = prefs.getBoolean(KEY_V729FILTERAUTOAPPLY729, false)
+        set(value) = prefs.edit().putBoolean(KEY_V729FILTERAUTOAPPLY729, value).apply()
+
+    var v729finalAutoReview729: Boolean
+        get() = prefs.getBoolean(KEY_V729FINALAUTOREVIEW729, false)
+        set(value) = prefs.edit().putBoolean(KEY_V729FINALAUTOREVIEW729, value).apply()
+
+    var v729findAutoMatch729: Boolean
+        get() = prefs.getBoolean(KEY_V729FINDAUTOMATCH729, false)
+        set(value) = prefs.edit().putBoolean(KEY_V729FINDAUTOMATCH729, value).apply()
+
+    var v729fireAutoEvent729: Boolean
+        get() = prefs.getBoolean(KEY_V729FIREAUTOEVENT729, false)
+        set(value) = prefs.edit().putBoolean(KEY_V729FIREAUTOEVENT729, value).apply()
+
+    var v729firmwareAutoUpdate729: Int
+        get() = prefs.getInt(KEY_V729FIRMWAREAUTOUPDATE729, 0)
+        set(value) = prefs.edit().putInt(KEY_V729FIRMWAREAUTOUPDATE729, value).apply()
+
+    var v729flagAutoSet729: Boolean
+        get() = prefs.getBoolean(KEY_V729FLAGAUTOSET729, false)
+        set(value) = prefs.edit().putBoolean(KEY_V729FLAGAUTOSET729, value).apply()
+
+    var v729flashAutoMode729: Boolean
+        get() = prefs.getBoolean(KEY_V729FLASHAUTOMODE729, false)
+        set(value) = prefs.edit().putBoolean(KEY_V729FLASHAUTOMODE729, value).apply()
+
+    var v729flatAutoLayout729: Boolean
+        get() = prefs.getBoolean(KEY_V729FLATAUTOLAYOUT729, false)
+        set(value) = prefs.edit().putBoolean(KEY_V729FLATAUTOLAYOUT729, value).apply()
+
+    var v729flipAutoHorizontal729: Boolean
+        get() = prefs.getBoolean(KEY_V729FLIPAUTOHORIZONTAL729, false)
+        set(value) = prefs.edit().putBoolean(KEY_V729FLIPAUTOHORIZONTAL729, value).apply()
+
+    var v730fadeAutoIn730: Boolean
+        get() = prefs.getBoolean(KEY_V730FADEAUTOIN730, false)
+        set(value) = prefs.edit().putBoolean(KEY_V730FADEAUTOIN730, value).apply()
+
+    var v730fallbackAutoRoute730: Boolean
+        get() = prefs.getBoolean(KEY_V730FALLBACKAUTOROUTE730, false)
+        set(value) = prefs.edit().putBoolean(KEY_V730FALLBACKAUTOROUTE730, value).apply()
+
+    var v730familyAutoGroup730: Boolean
+        get() = prefs.getBoolean(KEY_V730FAMILYAUTOGROUP730, false)
+        set(value) = prefs.edit().putBoolean(KEY_V730FAMILYAUTOGROUP730, value).apply()
+
+    var v730featureAutoToggle730: Boolean
+        get() = prefs.getBoolean(KEY_V730FEATUREAUTOTOGGLE730, false)
+        set(value) = prefs.edit().putBoolean(KEY_V730FEATUREAUTOTOGGLE730, value).apply()
+
+    var v730fieldAutoSelect730: Boolean
+        get() = prefs.getBoolean(KEY_V730FIELDAUTOSELECT730, false)
+        set(value) = prefs.edit().putBoolean(KEY_V730FIELDAUTOSELECT730, value).apply()
+
+    var v730fileAutoCompress730: Boolean
+        get() = prefs.getBoolean(KEY_V730FILEAUTOCOMPRESS730, false)
+        set(value) = prefs.edit().putBoolean(KEY_V730FILEAUTOCOMPRESS730, value).apply()
+
+    var v730filterAutoApply730: Boolean
+        get() = prefs.getBoolean(KEY_V730FILTERAUTOAPPLY730, false)
+        set(value) = prefs.edit().putBoolean(KEY_V730FILTERAUTOAPPLY730, value).apply()
+
+    var v730finalAutoReview730: Boolean
+        get() = prefs.getBoolean(KEY_V730FINALAUTOREVIEW730, false)
+        set(value) = prefs.edit().putBoolean(KEY_V730FINALAUTOREVIEW730, value).apply()
+
+    var v730findAutoMatch730: Boolean
+        get() = prefs.getBoolean(KEY_V730FINDAUTOMATCH730, false)
+        set(value) = prefs.edit().putBoolean(KEY_V730FINDAUTOMATCH730, value).apply()
+
+    var v730fireAutoEvent730: Boolean
+        get() = prefs.getBoolean(KEY_V730FIREAUTOEVENT730, false)
+        set(value) = prefs.edit().putBoolean(KEY_V730FIREAUTOEVENT730, value).apply()
+
+    var v730firmwareAutoUpdate730: Int
+        get() = prefs.getInt(KEY_V730FIRMWAREAUTOUPDATE730, 0)
+        set(value) = prefs.edit().putInt(KEY_V730FIRMWAREAUTOUPDATE730, value).apply()
+
+    var v730flagAutoSet730: Boolean
+        get() = prefs.getBoolean(KEY_V730FLAGAUTOSET730, false)
+        set(value) = prefs.edit().putBoolean(KEY_V730FLAGAUTOSET730, value).apply()
+
+    var v730flashAutoMode730: Boolean
+        get() = prefs.getBoolean(KEY_V730FLASHAUTOMODE730, false)
+        set(value) = prefs.edit().putBoolean(KEY_V730FLASHAUTOMODE730, value).apply()
+
+    var v730flatAutoLayout730: Boolean
+        get() = prefs.getBoolean(KEY_V730FLATAUTOLAYOUT730, false)
+        set(value) = prefs.edit().putBoolean(KEY_V730FLATAUTOLAYOUT730, value).apply()
+
+    var v730flipAutoHorizontal730: Boolean
+        get() = prefs.getBoolean(KEY_V730FLIPAUTOHORIZONTAL730, false)
+        set(value) = prefs.edit().putBoolean(KEY_V730FLIPAUTOHORIZONTAL730, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -63430,5 +63830,105 @@ class AppPrefs(context: Context) {
         const val KEY_V720EXITAUTOCONFIRM720 = "v720exitAutoConfirm720" // v720 Exit Auto Confirm720
         const val KEY_V720EXPANDAUTOPANEL720 = "v720expandAutoPanel720" // v720 Expand Auto Panel720
         const val KEY_V720EXPECTAUTOTIMEOUT720 = "v720expectAutoTimeout720" // v720 Expect Auto Timeout720
+        const val KEY_V721EXPORTAUTOXML721 = "v721exportAutoXml721" // v721 Export Auto Xml721
+        const val KEY_V722EXPORTAUTOXML722 = "v722exportAutoXml722" // v722 Export Auto Xml722
+        const val KEY_V723EXPORTAUTOXML723 = "v723exportAutoXml723" // v723 Export Auto Xml723
+        const val KEY_V724EXPORTAUTOXML724 = "v724exportAutoXml724" // v724 Export Auto Xml724
+        const val KEY_V725EXPORTAUTOXML725 = "v725exportAutoXml725" // v725 Export Auto Xml725
+        const val KEY_V721EXTENDAUTOLIST721 = "v721extendAutoList721" // v721 Extend Auto List721
+        const val KEY_V722EXTENDAUTOLIST722 = "v722extendAutoList722" // v722 Extend Auto List722
+        const val KEY_V723EXTENDAUTOLIST723 = "v723extendAutoList723" // v723 Extend Auto List723
+        const val KEY_V724EXTENDAUTOLIST724 = "v724extendAutoList724" // v724 Extend Auto List724
+        const val KEY_V725EXTENDAUTOLIST725 = "v725extendAutoList725" // v725 Extend Auto List725
+        const val KEY_V721EXTERNALAUTOLINK721 = "v721externalAutoLink721" // v721 External Auto Link721
+        const val KEY_V722EXTERNALAUTOLINK722 = "v722externalAutoLink722" // v722 External Auto Link722
+        const val KEY_V723EXTERNALAUTOLINK723 = "v723externalAutoLink723" // v723 External Auto Link723
+        const val KEY_V724EXTERNALAUTOLINK724 = "v724externalAutoLink724" // v724 External Auto Link724
+        const val KEY_V725EXTERNALAUTOLINK725 = "v725externalAutoLink725" // v725 External Auto Link725
+        const val KEY_V721EXTRACTAUTODATA721 = "v721extractAutoData721" // v721 Extract Auto Data721
+        const val KEY_V722EXTRACTAUTODATA722 = "v722extractAutoData722" // v722 Extract Auto Data722
+        const val KEY_V723EXTRACTAUTODATA723 = "v723extractAutoData723" // v723 Extract Auto Data723
+        const val KEY_V724EXTRACTAUTODATA724 = "v724extractAutoData724" // v724 Extract Auto Data724
+        const val KEY_V725EXTRACTAUTODATA725 = "v725extractAutoData725" // v725 Extract Auto Data725
+        const val KEY_V721FACTORAUTOSCALE721 = "v721factorAutoScale721" // v721 Factor Auto Scale721
+        const val KEY_V722FACTORAUTOSCALE722 = "v722factorAutoScale722" // v722 Factor Auto Scale722
+        const val KEY_V723FACTORAUTOSCALE723 = "v723factorAutoScale723" // v723 Factor Auto Scale723
+        const val KEY_V724FACTORAUTOSCALE724 = "v724factorAutoScale724" // v724 Factor Auto Scale724
+        const val KEY_V725FACTORAUTOSCALE725 = "v725factorAutoScale725" // v725 Factor Auto Scale725
+        const val KEY_V726FADEAUTOIN726 = "v726fadeAutoIn726" // v726 Fade Auto In726
+        const val KEY_V726FALLBACKAUTOROUTE726 = "v726fallbackAutoRoute726" // v726 Fallback Auto Route726
+        const val KEY_V726FAMILYAUTOGROUP726 = "v726familyAutoGroup726" // v726 Family Auto Group726
+        const val KEY_V726FEATUREAUTOTOGGLE726 = "v726featureAutoToggle726" // v726 Feature Auto Toggle726
+        const val KEY_V726FIELDAUTOSELECT726 = "v726fieldAutoSelect726" // v726 Field Auto Select726
+        const val KEY_V726FILEAUTOCOMPRESS726 = "v726fileAutoCompress726" // v726 File Auto Compress726
+        const val KEY_V726FILTERAUTOAPPLY726 = "v726filterAutoApply726" // v726 Filter Auto Apply726
+        const val KEY_V726FINALAUTOREVIEW726 = "v726finalAutoReview726" // v726 Final Auto Review726
+        const val KEY_V726FINDAUTOMATCH726 = "v726findAutoMatch726" // v726 Find Auto Match726
+        const val KEY_V726FIREAUTOEVENT726 = "v726fireAutoEvent726" // v726 Fire Auto Event726
+        const val KEY_V726FIRMWAREAUTOUPDATE726 = "v726firmwareAutoUpdate726" // v726 Firmware Auto Update726
+        const val KEY_V726FLAGAUTOSET726 = "v726flagAutoSet726" // v726 Flag Auto Set726
+        const val KEY_V726FLASHAUTOMODE726 = "v726flashAutoMode726" // v726 Flash Auto Mode726
+        const val KEY_V726FLATAUTOLAYOUT726 = "v726flatAutoLayout726" // v726 Flat Auto Layout726
+        const val KEY_V726FLIPAUTOHORIZONTAL726 = "v726flipAutoHorizontal726" // v726 Flip Auto Horizontal726
+        const val KEY_V727FADEAUTOIN727 = "v727fadeAutoIn727" // v727 Fade Auto In727
+        const val KEY_V727FALLBACKAUTOROUTE727 = "v727fallbackAutoRoute727" // v727 Fallback Auto Route727
+        const val KEY_V727FAMILYAUTOGROUP727 = "v727familyAutoGroup727" // v727 Family Auto Group727
+        const val KEY_V727FEATUREAUTOTOGGLE727 = "v727featureAutoToggle727" // v727 Feature Auto Toggle727
+        const val KEY_V727FIELDAUTOSELECT727 = "v727fieldAutoSelect727" // v727 Field Auto Select727
+        const val KEY_V727FILEAUTOCOMPRESS727 = "v727fileAutoCompress727" // v727 File Auto Compress727
+        const val KEY_V727FILTERAUTOAPPLY727 = "v727filterAutoApply727" // v727 Filter Auto Apply727
+        const val KEY_V727FINALAUTOREVIEW727 = "v727finalAutoReview727" // v727 Final Auto Review727
+        const val KEY_V727FINDAUTOMATCH727 = "v727findAutoMatch727" // v727 Find Auto Match727
+        const val KEY_V727FIREAUTOEVENT727 = "v727fireAutoEvent727" // v727 Fire Auto Event727
+        const val KEY_V727FIRMWAREAUTOUPDATE727 = "v727firmwareAutoUpdate727" // v727 Firmware Auto Update727
+        const val KEY_V727FLAGAUTOSET727 = "v727flagAutoSet727" // v727 Flag Auto Set727
+        const val KEY_V727FLASHAUTOMODE727 = "v727flashAutoMode727" // v727 Flash Auto Mode727
+        const val KEY_V727FLATAUTOLAYOUT727 = "v727flatAutoLayout727" // v727 Flat Auto Layout727
+        const val KEY_V727FLIPAUTOHORIZONTAL727 = "v727flipAutoHorizontal727" // v727 Flip Auto Horizontal727
+        const val KEY_V728FADEAUTOIN728 = "v728fadeAutoIn728" // v728 Fade Auto In728
+        const val KEY_V728FALLBACKAUTOROUTE728 = "v728fallbackAutoRoute728" // v728 Fallback Auto Route728
+        const val KEY_V728FAMILYAUTOGROUP728 = "v728familyAutoGroup728" // v728 Family Auto Group728
+        const val KEY_V728FEATUREAUTOTOGGLE728 = "v728featureAutoToggle728" // v728 Feature Auto Toggle728
+        const val KEY_V728FIELDAUTOSELECT728 = "v728fieldAutoSelect728" // v728 Field Auto Select728
+        const val KEY_V728FILEAUTOCOMPRESS728 = "v728fileAutoCompress728" // v728 File Auto Compress728
+        const val KEY_V728FILTERAUTOAPPLY728 = "v728filterAutoApply728" // v728 Filter Auto Apply728
+        const val KEY_V728FINALAUTOREVIEW728 = "v728finalAutoReview728" // v728 Final Auto Review728
+        const val KEY_V728FINDAUTOMATCH728 = "v728findAutoMatch728" // v728 Find Auto Match728
+        const val KEY_V728FIREAUTOEVENT728 = "v728fireAutoEvent728" // v728 Fire Auto Event728
+        const val KEY_V728FIRMWAREAUTOUPDATE728 = "v728firmwareAutoUpdate728" // v728 Firmware Auto Update728
+        const val KEY_V728FLAGAUTOSET728 = "v728flagAutoSet728" // v728 Flag Auto Set728
+        const val KEY_V728FLASHAUTOMODE728 = "v728flashAutoMode728" // v728 Flash Auto Mode728
+        const val KEY_V728FLATAUTOLAYOUT728 = "v728flatAutoLayout728" // v728 Flat Auto Layout728
+        const val KEY_V728FLIPAUTOHORIZONTAL728 = "v728flipAutoHorizontal728" // v728 Flip Auto Horizontal728
+        const val KEY_V729FADEAUTOIN729 = "v729fadeAutoIn729" // v729 Fade Auto In729
+        const val KEY_V729FALLBACKAUTOROUTE729 = "v729fallbackAutoRoute729" // v729 Fallback Auto Route729
+        const val KEY_V729FAMILYAUTOGROUP729 = "v729familyAutoGroup729" // v729 Family Auto Group729
+        const val KEY_V729FEATUREAUTOTOGGLE729 = "v729featureAutoToggle729" // v729 Feature Auto Toggle729
+        const val KEY_V729FIELDAUTOSELECT729 = "v729fieldAutoSelect729" // v729 Field Auto Select729
+        const val KEY_V729FILEAUTOCOMPRESS729 = "v729fileAutoCompress729" // v729 File Auto Compress729
+        const val KEY_V729FILTERAUTOAPPLY729 = "v729filterAutoApply729" // v729 Filter Auto Apply729
+        const val KEY_V729FINALAUTOREVIEW729 = "v729finalAutoReview729" // v729 Final Auto Review729
+        const val KEY_V729FINDAUTOMATCH729 = "v729findAutoMatch729" // v729 Find Auto Match729
+        const val KEY_V729FIREAUTOEVENT729 = "v729fireAutoEvent729" // v729 Fire Auto Event729
+        const val KEY_V729FIRMWAREAUTOUPDATE729 = "v729firmwareAutoUpdate729" // v729 Firmware Auto Update729
+        const val KEY_V729FLAGAUTOSET729 = "v729flagAutoSet729" // v729 Flag Auto Set729
+        const val KEY_V729FLASHAUTOMODE729 = "v729flashAutoMode729" // v729 Flash Auto Mode729
+        const val KEY_V729FLATAUTOLAYOUT729 = "v729flatAutoLayout729" // v729 Flat Auto Layout729
+        const val KEY_V729FLIPAUTOHORIZONTAL729 = "v729flipAutoHorizontal729" // v729 Flip Auto Horizontal729
+        const val KEY_V730FADEAUTOIN730 = "v730fadeAutoIn730" // v730 Fade Auto In730
+        const val KEY_V730FALLBACKAUTOROUTE730 = "v730fallbackAutoRoute730" // v730 Fallback Auto Route730
+        const val KEY_V730FAMILYAUTOGROUP730 = "v730familyAutoGroup730" // v730 Family Auto Group730
+        const val KEY_V730FEATUREAUTOTOGGLE730 = "v730featureAutoToggle730" // v730 Feature Auto Toggle730
+        const val KEY_V730FIELDAUTOSELECT730 = "v730fieldAutoSelect730" // v730 Field Auto Select730
+        const val KEY_V730FILEAUTOCOMPRESS730 = "v730fileAutoCompress730" // v730 File Auto Compress730
+        const val KEY_V730FILTERAUTOAPPLY730 = "v730filterAutoApply730" // v730 Filter Auto Apply730
+        const val KEY_V730FINALAUTOREVIEW730 = "v730finalAutoReview730" // v730 Final Auto Review730
+        const val KEY_V730FINDAUTOMATCH730 = "v730findAutoMatch730" // v730 Find Auto Match730
+        const val KEY_V730FIREAUTOEVENT730 = "v730fireAutoEvent730" // v730 Fire Auto Event730
+        const val KEY_V730FIRMWAREAUTOUPDATE730 = "v730firmwareAutoUpdate730" // v730 Firmware Auto Update730
+        const val KEY_V730FLAGAUTOSET730 = "v730flagAutoSet730" // v730 Flag Auto Set730
+        const val KEY_V730FLASHAUTOMODE730 = "v730flashAutoMode730" // v730 Flash Auto Mode730
+        const val KEY_V730FLATAUTOLAYOUT730 = "v730flatAutoLayout730" // v730 Flat Auto Layout730
+        const val KEY_V730FLIPAUTOHORIZONTAL730 = "v730flipAutoHorizontal730" // v730 Flip Auto Horizontal730
     }
 }
