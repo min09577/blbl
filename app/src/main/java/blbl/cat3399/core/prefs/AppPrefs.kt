@@ -57648,6 +57648,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V850PARAMAUTOINJECT850, false)
         set(value) = prefs.edit().putBoolean(KEY_V850PARAMAUTOINJECT850, value).apply()
 
+    var v851parentAutoScope851: Boolean
+        get() = prefs.getBoolean(KEY_V851PARENTAUTOSCOPE851, false)
+        set(value) = prefs.edit().putBoolean(KEY_V851PARENTAUTOSCOPE851, value).apply()
+
+    var v851parseAutoJson851: Boolean
+        get() = prefs.getBoolean(KEY_V851PARSEAUTOJSON851, false)
+        set(value) = prefs.edit().putBoolean(KEY_V851PARSEAUTOJSON851, value).apply()
+
+    var v851partialAutoLoad851: Boolean
+        get() = prefs.getBoolean(KEY_V851PARTIALAUTOLOAD851, false)
+        set(value) = prefs.edit().putBoolean(KEY_V851PARTIALAUTOLOAD851, value).apply()
+
+    var v851passAutoThrough851: Boolean
+        get() = prefs.getBoolean(KEY_V851PASSAUTOTHROUGH851, false)
+        set(value) = prefs.edit().putBoolean(KEY_V851PASSAUTOTHROUGH851, value).apply()
+
+    var v851passwordAutoFill851: Boolean
+        get() = prefs.getBoolean(KEY_V851PASSWORDAUTOFILL851, false)
+        set(value) = prefs.edit().putBoolean(KEY_V851PASSWORDAUTOFILL851, value).apply()
+
+    var v851pasteAutoClean851: Boolean
+        get() = prefs.getBoolean(KEY_V851PASTEAUTOCLEAN851, false)
+        set(value) = prefs.edit().putBoolean(KEY_V851PASTEAUTOCLEAN851, value).apply()
+
+    var v851patchAutoApply851: Boolean
+        get() = prefs.getBoolean(KEY_V851PATCHAUTOAPPLY851, false)
+        set(value) = prefs.edit().putBoolean(KEY_V851PATCHAUTOAPPLY851, value).apply()
+
+    var v851pathAutoResolve851: Boolean
+        get() = prefs.getBoolean(KEY_V851PATHAUTORESOLVE851, false)
+        set(value) = prefs.edit().putBoolean(KEY_V851PATHAUTORESOLVE851, value).apply()
+
+    var v851patternAutoMatch851: Boolean
+        get() = prefs.getBoolean(KEY_V851PATTERNAUTOMATCH851, false)
+        set(value) = prefs.edit().putBoolean(KEY_V851PATTERNAUTOMATCH851, value).apply()
+
+    var v851pauseAutoResume851: Boolean
+        get() = prefs.getBoolean(KEY_V851PAUSEAUTORESUME851, false)
+        set(value) = prefs.edit().putBoolean(KEY_V851PAUSEAUTORESUME851, value).apply()
+
+    var v851payloadAutoEncode851: Boolean
+        get() = prefs.getBoolean(KEY_V851PAYLOADAUTOENCODE851, false)
+        set(value) = prefs.edit().putBoolean(KEY_V851PAYLOADAUTOENCODE851, value).apply()
+
+    var v851peakAutoDetect851: Boolean
+        get() = prefs.getBoolean(KEY_V851PEAKAUTODETECT851, false)
+        set(value) = prefs.edit().putBoolean(KEY_V851PEAKAUTODETECT851, value).apply()
+
+    var v851pendingAutoQueue851: Boolean
+        get() = prefs.getBoolean(KEY_V851PENDINGAUTOQUEUE851, false)
+        set(value) = prefs.edit().putBoolean(KEY_V851PENDINGAUTOQUEUE851, value).apply()
+
+    var v851percentAutoCalc851: Boolean
+        get() = prefs.getBoolean(KEY_V851PERCENTAUTOCALC851, false)
+        set(value) = prefs.edit().putBoolean(KEY_V851PERCENTAUTOCALC851, value).apply()
+
+    var v851performAutoBenchmark851: Int
+        get() = prefs.getInt(KEY_V851PERFORMAUTOBENCHMARK851, 0)
+        set(value) = prefs.edit().putInt(KEY_V851PERFORMAUTOBENCHMARK851, value).apply()
+
+    var v852parentAutoScope852: Boolean
+        get() = prefs.getBoolean(KEY_V852PARENTAUTOSCOPE852, false)
+        set(value) = prefs.edit().putBoolean(KEY_V852PARENTAUTOSCOPE852, value).apply()
+
+    var v852parseAutoJson852: Boolean
+        get() = prefs.getBoolean(KEY_V852PARSEAUTOJSON852, false)
+        set(value) = prefs.edit().putBoolean(KEY_V852PARSEAUTOJSON852, value).apply()
+
+    var v852partialAutoLoad852: Boolean
+        get() = prefs.getBoolean(KEY_V852PARTIALAUTOLOAD852, false)
+        set(value) = prefs.edit().putBoolean(KEY_V852PARTIALAUTOLOAD852, value).apply()
+
+    var v852passAutoThrough852: Boolean
+        get() = prefs.getBoolean(KEY_V852PASSAUTOTHROUGH852, false)
+        set(value) = prefs.edit().putBoolean(KEY_V852PASSAUTOTHROUGH852, value).apply()
+
+    var v852passwordAutoFill852: Boolean
+        get() = prefs.getBoolean(KEY_V852PASSWORDAUTOFILL852, false)
+        set(value) = prefs.edit().putBoolean(KEY_V852PASSWORDAUTOFILL852, value).apply()
+
+    var v852pasteAutoClean852: Boolean
+        get() = prefs.getBoolean(KEY_V852PASTEAUTOCLEAN852, false)
+        set(value) = prefs.edit().putBoolean(KEY_V852PASTEAUTOCLEAN852, value).apply()
+
+    var v852patchAutoApply852: Boolean
+        get() = prefs.getBoolean(KEY_V852PATCHAUTOAPPLY852, false)
+        set(value) = prefs.edit().putBoolean(KEY_V852PATCHAUTOAPPLY852, value).apply()
+
+    var v852pathAutoResolve852: Boolean
+        get() = prefs.getBoolean(KEY_V852PATHAUTORESOLVE852, false)
+        set(value) = prefs.edit().putBoolean(KEY_V852PATHAUTORESOLVE852, value).apply()
+
+    var v852patternAutoMatch852: Boolean
+        get() = prefs.getBoolean(KEY_V852PATTERNAUTOMATCH852, false)
+        set(value) = prefs.edit().putBoolean(KEY_V852PATTERNAUTOMATCH852, value).apply()
+
+    var v852pauseAutoResume852: Boolean
+        get() = prefs.getBoolean(KEY_V852PAUSEAUTORESUME852, false)
+        set(value) = prefs.edit().putBoolean(KEY_V852PAUSEAUTORESUME852, value).apply()
+
+    var v852payloadAutoEncode852: Boolean
+        get() = prefs.getBoolean(KEY_V852PAYLOADAUTOENCODE852, false)
+        set(value) = prefs.edit().putBoolean(KEY_V852PAYLOADAUTOENCODE852, value).apply()
+
+    var v852peakAutoDetect852: Boolean
+        get() = prefs.getBoolean(KEY_V852PEAKAUTODETECT852, false)
+        set(value) = prefs.edit().putBoolean(KEY_V852PEAKAUTODETECT852, value).apply()
+
+    var v852pendingAutoQueue852: Boolean
+        get() = prefs.getBoolean(KEY_V852PENDINGAUTOQUEUE852, false)
+        set(value) = prefs.edit().putBoolean(KEY_V852PENDINGAUTOQUEUE852, value).apply()
+
+    var v852percentAutoCalc852: Boolean
+        get() = prefs.getBoolean(KEY_V852PERCENTAUTOCALC852, false)
+        set(value) = prefs.edit().putBoolean(KEY_V852PERCENTAUTOCALC852, value).apply()
+
+    var v852performAutoBenchmark852: Int
+        get() = prefs.getInt(KEY_V852PERFORMAUTOBENCHMARK852, 0)
+        set(value) = prefs.edit().putInt(KEY_V852PERFORMAUTOBENCHMARK852, value).apply()
+
+    var v853parentAutoScope853: Boolean
+        get() = prefs.getBoolean(KEY_V853PARENTAUTOSCOPE853, false)
+        set(value) = prefs.edit().putBoolean(KEY_V853PARENTAUTOSCOPE853, value).apply()
+
+    var v853parseAutoJson853: Boolean
+        get() = prefs.getBoolean(KEY_V853PARSEAUTOJSON853, false)
+        set(value) = prefs.edit().putBoolean(KEY_V853PARSEAUTOJSON853, value).apply()
+
+    var v853partialAutoLoad853: Boolean
+        get() = prefs.getBoolean(KEY_V853PARTIALAUTOLOAD853, false)
+        set(value) = prefs.edit().putBoolean(KEY_V853PARTIALAUTOLOAD853, value).apply()
+
+    var v853passAutoThrough853: Boolean
+        get() = prefs.getBoolean(KEY_V853PASSAUTOTHROUGH853, false)
+        set(value) = prefs.edit().putBoolean(KEY_V853PASSAUTOTHROUGH853, value).apply()
+
+    var v853passwordAutoFill853: Boolean
+        get() = prefs.getBoolean(KEY_V853PASSWORDAUTOFILL853, false)
+        set(value) = prefs.edit().putBoolean(KEY_V853PASSWORDAUTOFILL853, value).apply()
+
+    var v853pasteAutoClean853: Boolean
+        get() = prefs.getBoolean(KEY_V853PASTEAUTOCLEAN853, false)
+        set(value) = prefs.edit().putBoolean(KEY_V853PASTEAUTOCLEAN853, value).apply()
+
+    var v853patchAutoApply853: Boolean
+        get() = prefs.getBoolean(KEY_V853PATCHAUTOAPPLY853, false)
+        set(value) = prefs.edit().putBoolean(KEY_V853PATCHAUTOAPPLY853, value).apply()
+
+    var v853pathAutoResolve853: Boolean
+        get() = prefs.getBoolean(KEY_V853PATHAUTORESOLVE853, false)
+        set(value) = prefs.edit().putBoolean(KEY_V853PATHAUTORESOLVE853, value).apply()
+
+    var v853patternAutoMatch853: Boolean
+        get() = prefs.getBoolean(KEY_V853PATTERNAUTOMATCH853, false)
+        set(value) = prefs.edit().putBoolean(KEY_V853PATTERNAUTOMATCH853, value).apply()
+
+    var v853pauseAutoResume853: Boolean
+        get() = prefs.getBoolean(KEY_V853PAUSEAUTORESUME853, false)
+        set(value) = prefs.edit().putBoolean(KEY_V853PAUSEAUTORESUME853, value).apply()
+
+    var v853payloadAutoEncode853: Boolean
+        get() = prefs.getBoolean(KEY_V853PAYLOADAUTOENCODE853, false)
+        set(value) = prefs.edit().putBoolean(KEY_V853PAYLOADAUTOENCODE853, value).apply()
+
+    var v853peakAutoDetect853: Boolean
+        get() = prefs.getBoolean(KEY_V853PEAKAUTODETECT853, false)
+        set(value) = prefs.edit().putBoolean(KEY_V853PEAKAUTODETECT853, value).apply()
+
+    var v853pendingAutoQueue853: Boolean
+        get() = prefs.getBoolean(KEY_V853PENDINGAUTOQUEUE853, false)
+        set(value) = prefs.edit().putBoolean(KEY_V853PENDINGAUTOQUEUE853, value).apply()
+
+    var v853percentAutoCalc853: Boolean
+        get() = prefs.getBoolean(KEY_V853PERCENTAUTOCALC853, false)
+        set(value) = prefs.edit().putBoolean(KEY_V853PERCENTAUTOCALC853, value).apply()
+
+    var v853performAutoBenchmark853: Int
+        get() = prefs.getInt(KEY_V853PERFORMAUTOBENCHMARK853, 0)
+        set(value) = prefs.edit().putInt(KEY_V853PERFORMAUTOBENCHMARK853, value).apply()
+
+    var v854parentAutoScope854: Boolean
+        get() = prefs.getBoolean(KEY_V854PARENTAUTOSCOPE854, false)
+        set(value) = prefs.edit().putBoolean(KEY_V854PARENTAUTOSCOPE854, value).apply()
+
+    var v854parseAutoJson854: Boolean
+        get() = prefs.getBoolean(KEY_V854PARSEAUTOJSON854, false)
+        set(value) = prefs.edit().putBoolean(KEY_V854PARSEAUTOJSON854, value).apply()
+
+    var v854partialAutoLoad854: Boolean
+        get() = prefs.getBoolean(KEY_V854PARTIALAUTOLOAD854, false)
+        set(value) = prefs.edit().putBoolean(KEY_V854PARTIALAUTOLOAD854, value).apply()
+
+    var v854passAutoThrough854: Boolean
+        get() = prefs.getBoolean(KEY_V854PASSAUTOTHROUGH854, false)
+        set(value) = prefs.edit().putBoolean(KEY_V854PASSAUTOTHROUGH854, value).apply()
+
+    var v854passwordAutoFill854: Boolean
+        get() = prefs.getBoolean(KEY_V854PASSWORDAUTOFILL854, false)
+        set(value) = prefs.edit().putBoolean(KEY_V854PASSWORDAUTOFILL854, value).apply()
+
+    var v854pasteAutoClean854: Boolean
+        get() = prefs.getBoolean(KEY_V854PASTEAUTOCLEAN854, false)
+        set(value) = prefs.edit().putBoolean(KEY_V854PASTEAUTOCLEAN854, value).apply()
+
+    var v854patchAutoApply854: Boolean
+        get() = prefs.getBoolean(KEY_V854PATCHAUTOAPPLY854, false)
+        set(value) = prefs.edit().putBoolean(KEY_V854PATCHAUTOAPPLY854, value).apply()
+
+    var v854pathAutoResolve854: Boolean
+        get() = prefs.getBoolean(KEY_V854PATHAUTORESOLVE854, false)
+        set(value) = prefs.edit().putBoolean(KEY_V854PATHAUTORESOLVE854, value).apply()
+
+    var v854patternAutoMatch854: Boolean
+        get() = prefs.getBoolean(KEY_V854PATTERNAUTOMATCH854, false)
+        set(value) = prefs.edit().putBoolean(KEY_V854PATTERNAUTOMATCH854, value).apply()
+
+    var v854pauseAutoResume854: Boolean
+        get() = prefs.getBoolean(KEY_V854PAUSEAUTORESUME854, false)
+        set(value) = prefs.edit().putBoolean(KEY_V854PAUSEAUTORESUME854, value).apply()
+
+    var v854payloadAutoEncode854: Boolean
+        get() = prefs.getBoolean(KEY_V854PAYLOADAUTOENCODE854, false)
+        set(value) = prefs.edit().putBoolean(KEY_V854PAYLOADAUTOENCODE854, value).apply()
+
+    var v854peakAutoDetect854: Boolean
+        get() = prefs.getBoolean(KEY_V854PEAKAUTODETECT854, false)
+        set(value) = prefs.edit().putBoolean(KEY_V854PEAKAUTODETECT854, value).apply()
+
+    var v854pendingAutoQueue854: Boolean
+        get() = prefs.getBoolean(KEY_V854PENDINGAUTOQUEUE854, false)
+        set(value) = prefs.edit().putBoolean(KEY_V854PENDINGAUTOQUEUE854, value).apply()
+
+    var v854percentAutoCalc854: Boolean
+        get() = prefs.getBoolean(KEY_V854PERCENTAUTOCALC854, false)
+        set(value) = prefs.edit().putBoolean(KEY_V854PERCENTAUTOCALC854, value).apply()
+
+    var v854performAutoBenchmark854: Int
+        get() = prefs.getInt(KEY_V854PERFORMAUTOBENCHMARK854, 0)
+        set(value) = prefs.edit().putInt(KEY_V854PERFORMAUTOBENCHMARK854, value).apply()
+
+    var v855parentAutoScope855: Boolean
+        get() = prefs.getBoolean(KEY_V855PARENTAUTOSCOPE855, false)
+        set(value) = prefs.edit().putBoolean(KEY_V855PARENTAUTOSCOPE855, value).apply()
+
+    var v855parseAutoJson855: Boolean
+        get() = prefs.getBoolean(KEY_V855PARSEAUTOJSON855, false)
+        set(value) = prefs.edit().putBoolean(KEY_V855PARSEAUTOJSON855, value).apply()
+
+    var v855partialAutoLoad855: Boolean
+        get() = prefs.getBoolean(KEY_V855PARTIALAUTOLOAD855, false)
+        set(value) = prefs.edit().putBoolean(KEY_V855PARTIALAUTOLOAD855, value).apply()
+
+    var v855passAutoThrough855: Boolean
+        get() = prefs.getBoolean(KEY_V855PASSAUTOTHROUGH855, false)
+        set(value) = prefs.edit().putBoolean(KEY_V855PASSAUTOTHROUGH855, value).apply()
+
+    var v855passwordAutoFill855: Boolean
+        get() = prefs.getBoolean(KEY_V855PASSWORDAUTOFILL855, false)
+        set(value) = prefs.edit().putBoolean(KEY_V855PASSWORDAUTOFILL855, value).apply()
+
+    var v855pasteAutoClean855: Boolean
+        get() = prefs.getBoolean(KEY_V855PASTEAUTOCLEAN855, false)
+        set(value) = prefs.edit().putBoolean(KEY_V855PASTEAUTOCLEAN855, value).apply()
+
+    var v855patchAutoApply855: Boolean
+        get() = prefs.getBoolean(KEY_V855PATCHAUTOAPPLY855, false)
+        set(value) = prefs.edit().putBoolean(KEY_V855PATCHAUTOAPPLY855, value).apply()
+
+    var v855pathAutoResolve855: Boolean
+        get() = prefs.getBoolean(KEY_V855PATHAUTORESOLVE855, false)
+        set(value) = prefs.edit().putBoolean(KEY_V855PATHAUTORESOLVE855, value).apply()
+
+    var v855patternAutoMatch855: Boolean
+        get() = prefs.getBoolean(KEY_V855PATTERNAUTOMATCH855, false)
+        set(value) = prefs.edit().putBoolean(KEY_V855PATTERNAUTOMATCH855, value).apply()
+
+    var v855pauseAutoResume855: Boolean
+        get() = prefs.getBoolean(KEY_V855PAUSEAUTORESUME855, false)
+        set(value) = prefs.edit().putBoolean(KEY_V855PAUSEAUTORESUME855, value).apply()
+
+    var v855payloadAutoEncode855: Boolean
+        get() = prefs.getBoolean(KEY_V855PAYLOADAUTOENCODE855, false)
+        set(value) = prefs.edit().putBoolean(KEY_V855PAYLOADAUTOENCODE855, value).apply()
+
+    var v855peakAutoDetect855: Boolean
+        get() = prefs.getBoolean(KEY_V855PEAKAUTODETECT855, false)
+        set(value) = prefs.edit().putBoolean(KEY_V855PEAKAUTODETECT855, value).apply()
+
+    var v855pendingAutoQueue855: Boolean
+        get() = prefs.getBoolean(KEY_V855PENDINGAUTOQUEUE855, false)
+        set(value) = prefs.edit().putBoolean(KEY_V855PENDINGAUTOQUEUE855, value).apply()
+
+    var v855percentAutoCalc855: Boolean
+        get() = prefs.getBoolean(KEY_V855PERCENTAUTOCALC855, false)
+        set(value) = prefs.edit().putBoolean(KEY_V855PERCENTAUTOCALC855, value).apply()
+
+    var v855performAutoBenchmark855: Int
+        get() = prefs.getInt(KEY_V855PERFORMAUTOBENCHMARK855, 0)
+        set(value) = prefs.edit().putInt(KEY_V855PERFORMAUTOBENCHMARK855, value).apply()
+
+    var v856parentAutoScope856: Boolean
+        get() = prefs.getBoolean(KEY_V856PARENTAUTOSCOPE856, false)
+        set(value) = prefs.edit().putBoolean(KEY_V856PARENTAUTOSCOPE856, value).apply()
+
+    var v856parseAutoJson856: Boolean
+        get() = prefs.getBoolean(KEY_V856PARSEAUTOJSON856, false)
+        set(value) = prefs.edit().putBoolean(KEY_V856PARSEAUTOJSON856, value).apply()
+
+    var v856partialAutoLoad856: Boolean
+        get() = prefs.getBoolean(KEY_V856PARTIALAUTOLOAD856, false)
+        set(value) = prefs.edit().putBoolean(KEY_V856PARTIALAUTOLOAD856, value).apply()
+
+    var v856passAutoThrough856: Boolean
+        get() = prefs.getBoolean(KEY_V856PASSAUTOTHROUGH856, false)
+        set(value) = prefs.edit().putBoolean(KEY_V856PASSAUTOTHROUGH856, value).apply()
+
+    var v856passwordAutoFill856: Boolean
+        get() = prefs.getBoolean(KEY_V856PASSWORDAUTOFILL856, false)
+        set(value) = prefs.edit().putBoolean(KEY_V856PASSWORDAUTOFILL856, value).apply()
+
+    var v856pasteAutoClean856: Boolean
+        get() = prefs.getBoolean(KEY_V856PASTEAUTOCLEAN856, false)
+        set(value) = prefs.edit().putBoolean(KEY_V856PASTEAUTOCLEAN856, value).apply()
+
+    var v856patchAutoApply856: Boolean
+        get() = prefs.getBoolean(KEY_V856PATCHAUTOAPPLY856, false)
+        set(value) = prefs.edit().putBoolean(KEY_V856PATCHAUTOAPPLY856, value).apply()
+
+    var v856pathAutoResolve856: Boolean
+        get() = prefs.getBoolean(KEY_V856PATHAUTORESOLVE856, false)
+        set(value) = prefs.edit().putBoolean(KEY_V856PATHAUTORESOLVE856, value).apply()
+
+    var v856patternAutoMatch856: Boolean
+        get() = prefs.getBoolean(KEY_V856PATTERNAUTOMATCH856, false)
+        set(value) = prefs.edit().putBoolean(KEY_V856PATTERNAUTOMATCH856, value).apply()
+
+    var v856pauseAutoResume856: Boolean
+        get() = prefs.getBoolean(KEY_V856PAUSEAUTORESUME856, false)
+        set(value) = prefs.edit().putBoolean(KEY_V856PAUSEAUTORESUME856, value).apply()
+
+    var v856payloadAutoEncode856: Boolean
+        get() = prefs.getBoolean(KEY_V856PAYLOADAUTOENCODE856, false)
+        set(value) = prefs.edit().putBoolean(KEY_V856PAYLOADAUTOENCODE856, value).apply()
+
+    var v856peakAutoDetect856: Boolean
+        get() = prefs.getBoolean(KEY_V856PEAKAUTODETECT856, false)
+        set(value) = prefs.edit().putBoolean(KEY_V856PEAKAUTODETECT856, value).apply()
+
+    var v856pendingAutoQueue856: Boolean
+        get() = prefs.getBoolean(KEY_V856PENDINGAUTOQUEUE856, false)
+        set(value) = prefs.edit().putBoolean(KEY_V856PENDINGAUTOQUEUE856, value).apply()
+
+    var v856percentAutoCalc856: Boolean
+        get() = prefs.getBoolean(KEY_V856PERCENTAUTOCALC856, false)
+        set(value) = prefs.edit().putBoolean(KEY_V856PERCENTAUTOCALC856, value).apply()
+
+    var v856performAutoBenchmark856: Int
+        get() = prefs.getInt(KEY_V856PERFORMAUTOBENCHMARK856, 0)
+        set(value) = prefs.edit().putInt(KEY_V856PERFORMAUTOBENCHMARK856, value).apply()
+
+    var v857parentAutoScope857: Boolean
+        get() = prefs.getBoolean(KEY_V857PARENTAUTOSCOPE857, false)
+        set(value) = prefs.edit().putBoolean(KEY_V857PARENTAUTOSCOPE857, value).apply()
+
+    var v857parseAutoJson857: Boolean
+        get() = prefs.getBoolean(KEY_V857PARSEAUTOJSON857, false)
+        set(value) = prefs.edit().putBoolean(KEY_V857PARSEAUTOJSON857, value).apply()
+
+    var v857partialAutoLoad857: Boolean
+        get() = prefs.getBoolean(KEY_V857PARTIALAUTOLOAD857, false)
+        set(value) = prefs.edit().putBoolean(KEY_V857PARTIALAUTOLOAD857, value).apply()
+
+    var v857passAutoThrough857: Boolean
+        get() = prefs.getBoolean(KEY_V857PASSAUTOTHROUGH857, false)
+        set(value) = prefs.edit().putBoolean(KEY_V857PASSAUTOTHROUGH857, value).apply()
+
+    var v857passwordAutoFill857: Boolean
+        get() = prefs.getBoolean(KEY_V857PASSWORDAUTOFILL857, false)
+        set(value) = prefs.edit().putBoolean(KEY_V857PASSWORDAUTOFILL857, value).apply()
+
+    var v857pasteAutoClean857: Boolean
+        get() = prefs.getBoolean(KEY_V857PASTEAUTOCLEAN857, false)
+        set(value) = prefs.edit().putBoolean(KEY_V857PASTEAUTOCLEAN857, value).apply()
+
+    var v857patchAutoApply857: Boolean
+        get() = prefs.getBoolean(KEY_V857PATCHAUTOAPPLY857, false)
+        set(value) = prefs.edit().putBoolean(KEY_V857PATCHAUTOAPPLY857, value).apply()
+
+    var v857pathAutoResolve857: Boolean
+        get() = prefs.getBoolean(KEY_V857PATHAUTORESOLVE857, false)
+        set(value) = prefs.edit().putBoolean(KEY_V857PATHAUTORESOLVE857, value).apply()
+
+    var v857patternAutoMatch857: Boolean
+        get() = prefs.getBoolean(KEY_V857PATTERNAUTOMATCH857, false)
+        set(value) = prefs.edit().putBoolean(KEY_V857PATTERNAUTOMATCH857, value).apply()
+
+    var v857pauseAutoResume857: Boolean
+        get() = prefs.getBoolean(KEY_V857PAUSEAUTORESUME857, false)
+        set(value) = prefs.edit().putBoolean(KEY_V857PAUSEAUTORESUME857, value).apply()
+
+    var v857payloadAutoEncode857: Boolean
+        get() = prefs.getBoolean(KEY_V857PAYLOADAUTOENCODE857, false)
+        set(value) = prefs.edit().putBoolean(KEY_V857PAYLOADAUTOENCODE857, value).apply()
+
+    var v857peakAutoDetect857: Boolean
+        get() = prefs.getBoolean(KEY_V857PEAKAUTODETECT857, false)
+        set(value) = prefs.edit().putBoolean(KEY_V857PEAKAUTODETECT857, value).apply()
+
+    var v857pendingAutoQueue857: Boolean
+        get() = prefs.getBoolean(KEY_V857PENDINGAUTOQUEUE857, false)
+        set(value) = prefs.edit().putBoolean(KEY_V857PENDINGAUTOQUEUE857, value).apply()
+
+    var v857percentAutoCalc857: Boolean
+        get() = prefs.getBoolean(KEY_V857PERCENTAUTOCALC857, false)
+        set(value) = prefs.edit().putBoolean(KEY_V857PERCENTAUTOCALC857, value).apply()
+
+    var v857performAutoBenchmark857: Int
+        get() = prefs.getInt(KEY_V857PERFORMAUTOBENCHMARK857, 0)
+        set(value) = prefs.edit().putInt(KEY_V857PERFORMAUTOBENCHMARK857, value).apply()
+
+    var v858parentAutoScope858: Boolean
+        get() = prefs.getBoolean(KEY_V858PARENTAUTOSCOPE858, false)
+        set(value) = prefs.edit().putBoolean(KEY_V858PARENTAUTOSCOPE858, value).apply()
+
+    var v858parseAutoJson858: Boolean
+        get() = prefs.getBoolean(KEY_V858PARSEAUTOJSON858, false)
+        set(value) = prefs.edit().putBoolean(KEY_V858PARSEAUTOJSON858, value).apply()
+
+    var v858partialAutoLoad858: Boolean
+        get() = prefs.getBoolean(KEY_V858PARTIALAUTOLOAD858, false)
+        set(value) = prefs.edit().putBoolean(KEY_V858PARTIALAUTOLOAD858, value).apply()
+
+    var v858passAutoThrough858: Boolean
+        get() = prefs.getBoolean(KEY_V858PASSAUTOTHROUGH858, false)
+        set(value) = prefs.edit().putBoolean(KEY_V858PASSAUTOTHROUGH858, value).apply()
+
+    var v858passwordAutoFill858: Boolean
+        get() = prefs.getBoolean(KEY_V858PASSWORDAUTOFILL858, false)
+        set(value) = prefs.edit().putBoolean(KEY_V858PASSWORDAUTOFILL858, value).apply()
+
+    var v858pasteAutoClean858: Boolean
+        get() = prefs.getBoolean(KEY_V858PASTEAUTOCLEAN858, false)
+        set(value) = prefs.edit().putBoolean(KEY_V858PASTEAUTOCLEAN858, value).apply()
+
+    var v858patchAutoApply858: Boolean
+        get() = prefs.getBoolean(KEY_V858PATCHAUTOAPPLY858, false)
+        set(value) = prefs.edit().putBoolean(KEY_V858PATCHAUTOAPPLY858, value).apply()
+
+    var v858pathAutoResolve858: Boolean
+        get() = prefs.getBoolean(KEY_V858PATHAUTORESOLVE858, false)
+        set(value) = prefs.edit().putBoolean(KEY_V858PATHAUTORESOLVE858, value).apply()
+
+    var v858patternAutoMatch858: Boolean
+        get() = prefs.getBoolean(KEY_V858PATTERNAUTOMATCH858, false)
+        set(value) = prefs.edit().putBoolean(KEY_V858PATTERNAUTOMATCH858, value).apply()
+
+    var v858pauseAutoResume858: Boolean
+        get() = prefs.getBoolean(KEY_V858PAUSEAUTORESUME858, false)
+        set(value) = prefs.edit().putBoolean(KEY_V858PAUSEAUTORESUME858, value).apply()
+
+    var v858payloadAutoEncode858: Boolean
+        get() = prefs.getBoolean(KEY_V858PAYLOADAUTOENCODE858, false)
+        set(value) = prefs.edit().putBoolean(KEY_V858PAYLOADAUTOENCODE858, value).apply()
+
+    var v858peakAutoDetect858: Boolean
+        get() = prefs.getBoolean(KEY_V858PEAKAUTODETECT858, false)
+        set(value) = prefs.edit().putBoolean(KEY_V858PEAKAUTODETECT858, value).apply()
+
+    var v858pendingAutoQueue858: Boolean
+        get() = prefs.getBoolean(KEY_V858PENDINGAUTOQUEUE858, false)
+        set(value) = prefs.edit().putBoolean(KEY_V858PENDINGAUTOQUEUE858, value).apply()
+
+    var v858percentAutoCalc858: Boolean
+        get() = prefs.getBoolean(KEY_V858PERCENTAUTOCALC858, false)
+        set(value) = prefs.edit().putBoolean(KEY_V858PERCENTAUTOCALC858, value).apply()
+
+    var v858performAutoBenchmark858: Int
+        get() = prefs.getInt(KEY_V858PERFORMAUTOBENCHMARK858, 0)
+        set(value) = prefs.edit().putInt(KEY_V858PERFORMAUTOBENCHMARK858, value).apply()
+
+    var v859parentAutoScope859: Boolean
+        get() = prefs.getBoolean(KEY_V859PARENTAUTOSCOPE859, false)
+        set(value) = prefs.edit().putBoolean(KEY_V859PARENTAUTOSCOPE859, value).apply()
+
+    var v859parseAutoJson859: Boolean
+        get() = prefs.getBoolean(KEY_V859PARSEAUTOJSON859, false)
+        set(value) = prefs.edit().putBoolean(KEY_V859PARSEAUTOJSON859, value).apply()
+
+    var v859partialAutoLoad859: Boolean
+        get() = prefs.getBoolean(KEY_V859PARTIALAUTOLOAD859, false)
+        set(value) = prefs.edit().putBoolean(KEY_V859PARTIALAUTOLOAD859, value).apply()
+
+    var v859passAutoThrough859: Boolean
+        get() = prefs.getBoolean(KEY_V859PASSAUTOTHROUGH859, false)
+        set(value) = prefs.edit().putBoolean(KEY_V859PASSAUTOTHROUGH859, value).apply()
+
+    var v859passwordAutoFill859: Boolean
+        get() = prefs.getBoolean(KEY_V859PASSWORDAUTOFILL859, false)
+        set(value) = prefs.edit().putBoolean(KEY_V859PASSWORDAUTOFILL859, value).apply()
+
+    var v859pasteAutoClean859: Boolean
+        get() = prefs.getBoolean(KEY_V859PASTEAUTOCLEAN859, false)
+        set(value) = prefs.edit().putBoolean(KEY_V859PASTEAUTOCLEAN859, value).apply()
+
+    var v859patchAutoApply859: Boolean
+        get() = prefs.getBoolean(KEY_V859PATCHAUTOAPPLY859, false)
+        set(value) = prefs.edit().putBoolean(KEY_V859PATCHAUTOAPPLY859, value).apply()
+
+    var v859pathAutoResolve859: Boolean
+        get() = prefs.getBoolean(KEY_V859PATHAUTORESOLVE859, false)
+        set(value) = prefs.edit().putBoolean(KEY_V859PATHAUTORESOLVE859, value).apply()
+
+    var v859patternAutoMatch859: Boolean
+        get() = prefs.getBoolean(KEY_V859PATTERNAUTOMATCH859, false)
+        set(value) = prefs.edit().putBoolean(KEY_V859PATTERNAUTOMATCH859, value).apply()
+
+    var v859pauseAutoResume859: Boolean
+        get() = prefs.getBoolean(KEY_V859PAUSEAUTORESUME859, false)
+        set(value) = prefs.edit().putBoolean(KEY_V859PAUSEAUTORESUME859, value).apply()
+
+    var v859payloadAutoEncode859: Boolean
+        get() = prefs.getBoolean(KEY_V859PAYLOADAUTOENCODE859, false)
+        set(value) = prefs.edit().putBoolean(KEY_V859PAYLOADAUTOENCODE859, value).apply()
+
+    var v859peakAutoDetect859: Boolean
+        get() = prefs.getBoolean(KEY_V859PEAKAUTODETECT859, false)
+        set(value) = prefs.edit().putBoolean(KEY_V859PEAKAUTODETECT859, value).apply()
+
+    var v859pendingAutoQueue859: Boolean
+        get() = prefs.getBoolean(KEY_V859PENDINGAUTOQUEUE859, false)
+        set(value) = prefs.edit().putBoolean(KEY_V859PENDINGAUTOQUEUE859, value).apply()
+
+    var v859percentAutoCalc859: Boolean
+        get() = prefs.getBoolean(KEY_V859PERCENTAUTOCALC859, false)
+        set(value) = prefs.edit().putBoolean(KEY_V859PERCENTAUTOCALC859, value).apply()
+
+    var v859performAutoBenchmark859: Int
+        get() = prefs.getInt(KEY_V859PERFORMAUTOBENCHMARK859, 0)
+        set(value) = prefs.edit().putInt(KEY_V859PERFORMAUTOBENCHMARK859, value).apply()
+
+    var v860parentAutoScope860: Boolean
+        get() = prefs.getBoolean(KEY_V860PARENTAUTOSCOPE860, false)
+        set(value) = prefs.edit().putBoolean(KEY_V860PARENTAUTOSCOPE860, value).apply()
+
+    var v860parseAutoJson860: Boolean
+        get() = prefs.getBoolean(KEY_V860PARSEAUTOJSON860, false)
+        set(value) = prefs.edit().putBoolean(KEY_V860PARSEAUTOJSON860, value).apply()
+
+    var v860partialAutoLoad860: Boolean
+        get() = prefs.getBoolean(KEY_V860PARTIALAUTOLOAD860, false)
+        set(value) = prefs.edit().putBoolean(KEY_V860PARTIALAUTOLOAD860, value).apply()
+
+    var v860passAutoThrough860: Boolean
+        get() = prefs.getBoolean(KEY_V860PASSAUTOTHROUGH860, false)
+        set(value) = prefs.edit().putBoolean(KEY_V860PASSAUTOTHROUGH860, value).apply()
+
+    var v860passwordAutoFill860: Boolean
+        get() = prefs.getBoolean(KEY_V860PASSWORDAUTOFILL860, false)
+        set(value) = prefs.edit().putBoolean(KEY_V860PASSWORDAUTOFILL860, value).apply()
+
+    var v860pasteAutoClean860: Boolean
+        get() = prefs.getBoolean(KEY_V860PASTEAUTOCLEAN860, false)
+        set(value) = prefs.edit().putBoolean(KEY_V860PASTEAUTOCLEAN860, value).apply()
+
+    var v860patchAutoApply860: Boolean
+        get() = prefs.getBoolean(KEY_V860PATCHAUTOAPPLY860, false)
+        set(value) = prefs.edit().putBoolean(KEY_V860PATCHAUTOAPPLY860, value).apply()
+
+    var v860pathAutoResolve860: Boolean
+        get() = prefs.getBoolean(KEY_V860PATHAUTORESOLVE860, false)
+        set(value) = prefs.edit().putBoolean(KEY_V860PATHAUTORESOLVE860, value).apply()
+
+    var v860patternAutoMatch860: Boolean
+        get() = prefs.getBoolean(KEY_V860PATTERNAUTOMATCH860, false)
+        set(value) = prefs.edit().putBoolean(KEY_V860PATTERNAUTOMATCH860, value).apply()
+
+    var v860pauseAutoResume860: Boolean
+        get() = prefs.getBoolean(KEY_V860PAUSEAUTORESUME860, false)
+        set(value) = prefs.edit().putBoolean(KEY_V860PAUSEAUTORESUME860, value).apply()
+
+    var v860payloadAutoEncode860: Boolean
+        get() = prefs.getBoolean(KEY_V860PAYLOADAUTOENCODE860, false)
+        set(value) = prefs.edit().putBoolean(KEY_V860PAYLOADAUTOENCODE860, value).apply()
+
+    var v860peakAutoDetect860: Boolean
+        get() = prefs.getBoolean(KEY_V860PEAKAUTODETECT860, false)
+        set(value) = prefs.edit().putBoolean(KEY_V860PEAKAUTODETECT860, value).apply()
+
+    var v860pendingAutoQueue860: Boolean
+        get() = prefs.getBoolean(KEY_V860PENDINGAUTOQUEUE860, false)
+        set(value) = prefs.edit().putBoolean(KEY_V860PENDINGAUTOQUEUE860, value).apply()
+
+    var v860percentAutoCalc860: Boolean
+        get() = prefs.getBoolean(KEY_V860PERCENTAUTOCALC860, false)
+        set(value) = prefs.edit().putBoolean(KEY_V860PERCENTAUTOCALC860, value).apply()
+
+    var v860performAutoBenchmark860: Int
+        get() = prefs.getInt(KEY_V860PERFORMAUTOBENCHMARK860, 0)
+        set(value) = prefs.edit().putInt(KEY_V860PERFORMAUTOBENCHMARK860, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -72930,5 +73530,155 @@ class AppPrefs(context: Context) {
         const val KEY_V850PANELAUTOSLIDE850 = "v850panelAutoSlide850" // v850 Panel Auto Slide850
         const val KEY_V850PARALLELAUTOTASK850 = "v850parallelAutoTask850" // v850 Parallel Auto Task850
         const val KEY_V850PARAMAUTOINJECT850 = "v850paramAutoInject850" // v850 Param Auto Inject850
+        const val KEY_V851PARENTAUTOSCOPE851 = "v851parentAutoScope851" // v851 Parent Auto Scope851
+        const val KEY_V851PARSEAUTOJSON851 = "v851parseAutoJson851" // v851 Parse Auto Json851
+        const val KEY_V851PARTIALAUTOLOAD851 = "v851partialAutoLoad851" // v851 Partial Auto Load851
+        const val KEY_V851PASSAUTOTHROUGH851 = "v851passAutoThrough851" // v851 Pass Auto Through851
+        const val KEY_V851PASSWORDAUTOFILL851 = "v851passwordAutoFill851" // v851 Password Auto Fill851
+        const val KEY_V851PASTEAUTOCLEAN851 = "v851pasteAutoClean851" // v851 Paste Auto Clean851
+        const val KEY_V851PATCHAUTOAPPLY851 = "v851patchAutoApply851" // v851 Patch Auto Apply851
+        const val KEY_V851PATHAUTORESOLVE851 = "v851pathAutoResolve851" // v851 Path Auto Resolve851
+        const val KEY_V851PATTERNAUTOMATCH851 = "v851patternAutoMatch851" // v851 Pattern Auto Match851
+        const val KEY_V851PAUSEAUTORESUME851 = "v851pauseAutoResume851" // v851 Pause Auto Resume851
+        const val KEY_V851PAYLOADAUTOENCODE851 = "v851payloadAutoEncode851" // v851 Payload Auto Encode851
+        const val KEY_V851PEAKAUTODETECT851 = "v851peakAutoDetect851" // v851 Peak Auto Detect851
+        const val KEY_V851PENDINGAUTOQUEUE851 = "v851pendingAutoQueue851" // v851 Pending Auto Queue851
+        const val KEY_V851PERCENTAUTOCALC851 = "v851percentAutoCalc851" // v851 Percent Auto Calc851
+        const val KEY_V851PERFORMAUTOBENCHMARK851 = "v851performAutoBenchmark851" // v851 Perform Auto Benchmark851
+        const val KEY_V852PARENTAUTOSCOPE852 = "v852parentAutoScope852" // v852 Parent Auto Scope852
+        const val KEY_V852PARSEAUTOJSON852 = "v852parseAutoJson852" // v852 Parse Auto Json852
+        const val KEY_V852PARTIALAUTOLOAD852 = "v852partialAutoLoad852" // v852 Partial Auto Load852
+        const val KEY_V852PASSAUTOTHROUGH852 = "v852passAutoThrough852" // v852 Pass Auto Through852
+        const val KEY_V852PASSWORDAUTOFILL852 = "v852passwordAutoFill852" // v852 Password Auto Fill852
+        const val KEY_V852PASTEAUTOCLEAN852 = "v852pasteAutoClean852" // v852 Paste Auto Clean852
+        const val KEY_V852PATCHAUTOAPPLY852 = "v852patchAutoApply852" // v852 Patch Auto Apply852
+        const val KEY_V852PATHAUTORESOLVE852 = "v852pathAutoResolve852" // v852 Path Auto Resolve852
+        const val KEY_V852PATTERNAUTOMATCH852 = "v852patternAutoMatch852" // v852 Pattern Auto Match852
+        const val KEY_V852PAUSEAUTORESUME852 = "v852pauseAutoResume852" // v852 Pause Auto Resume852
+        const val KEY_V852PAYLOADAUTOENCODE852 = "v852payloadAutoEncode852" // v852 Payload Auto Encode852
+        const val KEY_V852PEAKAUTODETECT852 = "v852peakAutoDetect852" // v852 Peak Auto Detect852
+        const val KEY_V852PENDINGAUTOQUEUE852 = "v852pendingAutoQueue852" // v852 Pending Auto Queue852
+        const val KEY_V852PERCENTAUTOCALC852 = "v852percentAutoCalc852" // v852 Percent Auto Calc852
+        const val KEY_V852PERFORMAUTOBENCHMARK852 = "v852performAutoBenchmark852" // v852 Perform Auto Benchmark852
+        const val KEY_V853PARENTAUTOSCOPE853 = "v853parentAutoScope853" // v853 Parent Auto Scope853
+        const val KEY_V853PARSEAUTOJSON853 = "v853parseAutoJson853" // v853 Parse Auto Json853
+        const val KEY_V853PARTIALAUTOLOAD853 = "v853partialAutoLoad853" // v853 Partial Auto Load853
+        const val KEY_V853PASSAUTOTHROUGH853 = "v853passAutoThrough853" // v853 Pass Auto Through853
+        const val KEY_V853PASSWORDAUTOFILL853 = "v853passwordAutoFill853" // v853 Password Auto Fill853
+        const val KEY_V853PASTEAUTOCLEAN853 = "v853pasteAutoClean853" // v853 Paste Auto Clean853
+        const val KEY_V853PATCHAUTOAPPLY853 = "v853patchAutoApply853" // v853 Patch Auto Apply853
+        const val KEY_V853PATHAUTORESOLVE853 = "v853pathAutoResolve853" // v853 Path Auto Resolve853
+        const val KEY_V853PATTERNAUTOMATCH853 = "v853patternAutoMatch853" // v853 Pattern Auto Match853
+        const val KEY_V853PAUSEAUTORESUME853 = "v853pauseAutoResume853" // v853 Pause Auto Resume853
+        const val KEY_V853PAYLOADAUTOENCODE853 = "v853payloadAutoEncode853" // v853 Payload Auto Encode853
+        const val KEY_V853PEAKAUTODETECT853 = "v853peakAutoDetect853" // v853 Peak Auto Detect853
+        const val KEY_V853PENDINGAUTOQUEUE853 = "v853pendingAutoQueue853" // v853 Pending Auto Queue853
+        const val KEY_V853PERCENTAUTOCALC853 = "v853percentAutoCalc853" // v853 Percent Auto Calc853
+        const val KEY_V853PERFORMAUTOBENCHMARK853 = "v853performAutoBenchmark853" // v853 Perform Auto Benchmark853
+        const val KEY_V854PARENTAUTOSCOPE854 = "v854parentAutoScope854" // v854 Parent Auto Scope854
+        const val KEY_V854PARSEAUTOJSON854 = "v854parseAutoJson854" // v854 Parse Auto Json854
+        const val KEY_V854PARTIALAUTOLOAD854 = "v854partialAutoLoad854" // v854 Partial Auto Load854
+        const val KEY_V854PASSAUTOTHROUGH854 = "v854passAutoThrough854" // v854 Pass Auto Through854
+        const val KEY_V854PASSWORDAUTOFILL854 = "v854passwordAutoFill854" // v854 Password Auto Fill854
+        const val KEY_V854PASTEAUTOCLEAN854 = "v854pasteAutoClean854" // v854 Paste Auto Clean854
+        const val KEY_V854PATCHAUTOAPPLY854 = "v854patchAutoApply854" // v854 Patch Auto Apply854
+        const val KEY_V854PATHAUTORESOLVE854 = "v854pathAutoResolve854" // v854 Path Auto Resolve854
+        const val KEY_V854PATTERNAUTOMATCH854 = "v854patternAutoMatch854" // v854 Pattern Auto Match854
+        const val KEY_V854PAUSEAUTORESUME854 = "v854pauseAutoResume854" // v854 Pause Auto Resume854
+        const val KEY_V854PAYLOADAUTOENCODE854 = "v854payloadAutoEncode854" // v854 Payload Auto Encode854
+        const val KEY_V854PEAKAUTODETECT854 = "v854peakAutoDetect854" // v854 Peak Auto Detect854
+        const val KEY_V854PENDINGAUTOQUEUE854 = "v854pendingAutoQueue854" // v854 Pending Auto Queue854
+        const val KEY_V854PERCENTAUTOCALC854 = "v854percentAutoCalc854" // v854 Percent Auto Calc854
+        const val KEY_V854PERFORMAUTOBENCHMARK854 = "v854performAutoBenchmark854" // v854 Perform Auto Benchmark854
+        const val KEY_V855PARENTAUTOSCOPE855 = "v855parentAutoScope855" // v855 Parent Auto Scope855
+        const val KEY_V855PARSEAUTOJSON855 = "v855parseAutoJson855" // v855 Parse Auto Json855
+        const val KEY_V855PARTIALAUTOLOAD855 = "v855partialAutoLoad855" // v855 Partial Auto Load855
+        const val KEY_V855PASSAUTOTHROUGH855 = "v855passAutoThrough855" // v855 Pass Auto Through855
+        const val KEY_V855PASSWORDAUTOFILL855 = "v855passwordAutoFill855" // v855 Password Auto Fill855
+        const val KEY_V855PASTEAUTOCLEAN855 = "v855pasteAutoClean855" // v855 Paste Auto Clean855
+        const val KEY_V855PATCHAUTOAPPLY855 = "v855patchAutoApply855" // v855 Patch Auto Apply855
+        const val KEY_V855PATHAUTORESOLVE855 = "v855pathAutoResolve855" // v855 Path Auto Resolve855
+        const val KEY_V855PATTERNAUTOMATCH855 = "v855patternAutoMatch855" // v855 Pattern Auto Match855
+        const val KEY_V855PAUSEAUTORESUME855 = "v855pauseAutoResume855" // v855 Pause Auto Resume855
+        const val KEY_V855PAYLOADAUTOENCODE855 = "v855payloadAutoEncode855" // v855 Payload Auto Encode855
+        const val KEY_V855PEAKAUTODETECT855 = "v855peakAutoDetect855" // v855 Peak Auto Detect855
+        const val KEY_V855PENDINGAUTOQUEUE855 = "v855pendingAutoQueue855" // v855 Pending Auto Queue855
+        const val KEY_V855PERCENTAUTOCALC855 = "v855percentAutoCalc855" // v855 Percent Auto Calc855
+        const val KEY_V855PERFORMAUTOBENCHMARK855 = "v855performAutoBenchmark855" // v855 Perform Auto Benchmark855
+        const val KEY_V856PARENTAUTOSCOPE856 = "v856parentAutoScope856" // v856 Parent Auto Scope856
+        const val KEY_V856PARSEAUTOJSON856 = "v856parseAutoJson856" // v856 Parse Auto Json856
+        const val KEY_V856PARTIALAUTOLOAD856 = "v856partialAutoLoad856" // v856 Partial Auto Load856
+        const val KEY_V856PASSAUTOTHROUGH856 = "v856passAutoThrough856" // v856 Pass Auto Through856
+        const val KEY_V856PASSWORDAUTOFILL856 = "v856passwordAutoFill856" // v856 Password Auto Fill856
+        const val KEY_V856PASTEAUTOCLEAN856 = "v856pasteAutoClean856" // v856 Paste Auto Clean856
+        const val KEY_V856PATCHAUTOAPPLY856 = "v856patchAutoApply856" // v856 Patch Auto Apply856
+        const val KEY_V856PATHAUTORESOLVE856 = "v856pathAutoResolve856" // v856 Path Auto Resolve856
+        const val KEY_V856PATTERNAUTOMATCH856 = "v856patternAutoMatch856" // v856 Pattern Auto Match856
+        const val KEY_V856PAUSEAUTORESUME856 = "v856pauseAutoResume856" // v856 Pause Auto Resume856
+        const val KEY_V856PAYLOADAUTOENCODE856 = "v856payloadAutoEncode856" // v856 Payload Auto Encode856
+        const val KEY_V856PEAKAUTODETECT856 = "v856peakAutoDetect856" // v856 Peak Auto Detect856
+        const val KEY_V856PENDINGAUTOQUEUE856 = "v856pendingAutoQueue856" // v856 Pending Auto Queue856
+        const val KEY_V856PERCENTAUTOCALC856 = "v856percentAutoCalc856" // v856 Percent Auto Calc856
+        const val KEY_V856PERFORMAUTOBENCHMARK856 = "v856performAutoBenchmark856" // v856 Perform Auto Benchmark856
+        const val KEY_V857PARENTAUTOSCOPE857 = "v857parentAutoScope857" // v857 Parent Auto Scope857
+        const val KEY_V857PARSEAUTOJSON857 = "v857parseAutoJson857" // v857 Parse Auto Json857
+        const val KEY_V857PARTIALAUTOLOAD857 = "v857partialAutoLoad857" // v857 Partial Auto Load857
+        const val KEY_V857PASSAUTOTHROUGH857 = "v857passAutoThrough857" // v857 Pass Auto Through857
+        const val KEY_V857PASSWORDAUTOFILL857 = "v857passwordAutoFill857" // v857 Password Auto Fill857
+        const val KEY_V857PASTEAUTOCLEAN857 = "v857pasteAutoClean857" // v857 Paste Auto Clean857
+        const val KEY_V857PATCHAUTOAPPLY857 = "v857patchAutoApply857" // v857 Patch Auto Apply857
+        const val KEY_V857PATHAUTORESOLVE857 = "v857pathAutoResolve857" // v857 Path Auto Resolve857
+        const val KEY_V857PATTERNAUTOMATCH857 = "v857patternAutoMatch857" // v857 Pattern Auto Match857
+        const val KEY_V857PAUSEAUTORESUME857 = "v857pauseAutoResume857" // v857 Pause Auto Resume857
+        const val KEY_V857PAYLOADAUTOENCODE857 = "v857payloadAutoEncode857" // v857 Payload Auto Encode857
+        const val KEY_V857PEAKAUTODETECT857 = "v857peakAutoDetect857" // v857 Peak Auto Detect857
+        const val KEY_V857PENDINGAUTOQUEUE857 = "v857pendingAutoQueue857" // v857 Pending Auto Queue857
+        const val KEY_V857PERCENTAUTOCALC857 = "v857percentAutoCalc857" // v857 Percent Auto Calc857
+        const val KEY_V857PERFORMAUTOBENCHMARK857 = "v857performAutoBenchmark857" // v857 Perform Auto Benchmark857
+        const val KEY_V858PARENTAUTOSCOPE858 = "v858parentAutoScope858" // v858 Parent Auto Scope858
+        const val KEY_V858PARSEAUTOJSON858 = "v858parseAutoJson858" // v858 Parse Auto Json858
+        const val KEY_V858PARTIALAUTOLOAD858 = "v858partialAutoLoad858" // v858 Partial Auto Load858
+        const val KEY_V858PASSAUTOTHROUGH858 = "v858passAutoThrough858" // v858 Pass Auto Through858
+        const val KEY_V858PASSWORDAUTOFILL858 = "v858passwordAutoFill858" // v858 Password Auto Fill858
+        const val KEY_V858PASTEAUTOCLEAN858 = "v858pasteAutoClean858" // v858 Paste Auto Clean858
+        const val KEY_V858PATCHAUTOAPPLY858 = "v858patchAutoApply858" // v858 Patch Auto Apply858
+        const val KEY_V858PATHAUTORESOLVE858 = "v858pathAutoResolve858" // v858 Path Auto Resolve858
+        const val KEY_V858PATTERNAUTOMATCH858 = "v858patternAutoMatch858" // v858 Pattern Auto Match858
+        const val KEY_V858PAUSEAUTORESUME858 = "v858pauseAutoResume858" // v858 Pause Auto Resume858
+        const val KEY_V858PAYLOADAUTOENCODE858 = "v858payloadAutoEncode858" // v858 Payload Auto Encode858
+        const val KEY_V858PEAKAUTODETECT858 = "v858peakAutoDetect858" // v858 Peak Auto Detect858
+        const val KEY_V858PENDINGAUTOQUEUE858 = "v858pendingAutoQueue858" // v858 Pending Auto Queue858
+        const val KEY_V858PERCENTAUTOCALC858 = "v858percentAutoCalc858" // v858 Percent Auto Calc858
+        const val KEY_V858PERFORMAUTOBENCHMARK858 = "v858performAutoBenchmark858" // v858 Perform Auto Benchmark858
+        const val KEY_V859PARENTAUTOSCOPE859 = "v859parentAutoScope859" // v859 Parent Auto Scope859
+        const val KEY_V859PARSEAUTOJSON859 = "v859parseAutoJson859" // v859 Parse Auto Json859
+        const val KEY_V859PARTIALAUTOLOAD859 = "v859partialAutoLoad859" // v859 Partial Auto Load859
+        const val KEY_V859PASSAUTOTHROUGH859 = "v859passAutoThrough859" // v859 Pass Auto Through859
+        const val KEY_V859PASSWORDAUTOFILL859 = "v859passwordAutoFill859" // v859 Password Auto Fill859
+        const val KEY_V859PASTEAUTOCLEAN859 = "v859pasteAutoClean859" // v859 Paste Auto Clean859
+        const val KEY_V859PATCHAUTOAPPLY859 = "v859patchAutoApply859" // v859 Patch Auto Apply859
+        const val KEY_V859PATHAUTORESOLVE859 = "v859pathAutoResolve859" // v859 Path Auto Resolve859
+        const val KEY_V859PATTERNAUTOMATCH859 = "v859patternAutoMatch859" // v859 Pattern Auto Match859
+        const val KEY_V859PAUSEAUTORESUME859 = "v859pauseAutoResume859" // v859 Pause Auto Resume859
+        const val KEY_V859PAYLOADAUTOENCODE859 = "v859payloadAutoEncode859" // v859 Payload Auto Encode859
+        const val KEY_V859PEAKAUTODETECT859 = "v859peakAutoDetect859" // v859 Peak Auto Detect859
+        const val KEY_V859PENDINGAUTOQUEUE859 = "v859pendingAutoQueue859" // v859 Pending Auto Queue859
+        const val KEY_V859PERCENTAUTOCALC859 = "v859percentAutoCalc859" // v859 Percent Auto Calc859
+        const val KEY_V859PERFORMAUTOBENCHMARK859 = "v859performAutoBenchmark859" // v859 Perform Auto Benchmark859
+        const val KEY_V860PARENTAUTOSCOPE860 = "v860parentAutoScope860" // v860 Parent Auto Scope860
+        const val KEY_V860PARSEAUTOJSON860 = "v860parseAutoJson860" // v860 Parse Auto Json860
+        const val KEY_V860PARTIALAUTOLOAD860 = "v860partialAutoLoad860" // v860 Partial Auto Load860
+        const val KEY_V860PASSAUTOTHROUGH860 = "v860passAutoThrough860" // v860 Pass Auto Through860
+        const val KEY_V860PASSWORDAUTOFILL860 = "v860passwordAutoFill860" // v860 Password Auto Fill860
+        const val KEY_V860PASTEAUTOCLEAN860 = "v860pasteAutoClean860" // v860 Paste Auto Clean860
+        const val KEY_V860PATCHAUTOAPPLY860 = "v860patchAutoApply860" // v860 Patch Auto Apply860
+        const val KEY_V860PATHAUTORESOLVE860 = "v860pathAutoResolve860" // v860 Path Auto Resolve860
+        const val KEY_V860PATTERNAUTOMATCH860 = "v860patternAutoMatch860" // v860 Pattern Auto Match860
+        const val KEY_V860PAUSEAUTORESUME860 = "v860pauseAutoResume860" // v860 Pause Auto Resume860
+        const val KEY_V860PAYLOADAUTOENCODE860 = "v860payloadAutoEncode860" // v860 Payload Auto Encode860
+        const val KEY_V860PEAKAUTODETECT860 = "v860peakAutoDetect860" // v860 Peak Auto Detect860
+        const val KEY_V860PENDINGAUTOQUEUE860 = "v860pendingAutoQueue860" // v860 Pending Auto Queue860
+        const val KEY_V860PERCENTAUTOCALC860 = "v860percentAutoCalc860" // v860 Percent Auto Calc860
+        const val KEY_V860PERFORMAUTOBENCHMARK860 = "v860performAutoBenchmark860" // v860 Perform Auto Benchmark860
     }
 }
