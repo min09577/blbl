@@ -14047,6 +14047,607 @@ class AppPrefs(context: Context) {
         get() = prefs.getInt(KEY_V120SUBTITLEANIMATIONDELAY120, 0)
         set(value) = prefs.edit().putInt(KEY_V120SUBTITLEANIMATIONDELAY120, value).apply()
 
+
+    var v121audioDuckingRatioCustom: Int
+        get() = prefs.getInt(KEY_V121AUDIODUCKINGRATIOCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V121AUDIODUCKINGRATIOCUSTOM, value).apply()
+
+    var v121danmakuFontBgFillAngle120: Int
+        get() = prefs.getInt(KEY_V121DANMAKUFONTBGFILLANGLE120, 0)
+        set(value) = prefs.edit().putInt(KEY_V121DANMAKUFONTBGFILLANGLE120, value).apply()
+
+    var v121subtitleAnimationDelay121: Int
+        get() = prefs.getInt(KEY_V121SUBTITLEANIMATIONDELAY121, 0)
+        set(value) = prefs.edit().putInt(KEY_V121SUBTITLEANIMATIONDELAY121, value).apply()
+
+    var v121gestureTapShiftAction: Int
+        get() = prefs.getInt(KEY_V121GESTURETAPSHIFTACTION, 0)
+        set(value) = prefs.edit().putInt(KEY_V121GESTURETAPSHIFTACTION, value).apply()
+
+    var v121castVideoFlipHorizontal: Boolean
+        get() = prefs.getBoolean(KEY_V121CASTVIDEOFLIPHORIZONTAL, false)
+        set(value) = prefs.edit().putBoolean(KEY_V121CASTVIDEOFLIPHORIZONTAL, value).apply()
+
+    var v121playlistAutoResumeQueue: Boolean
+        get() = prefs.getBoolean(KEY_V121PLAYLISTAUTORESUMEQUEUE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V121PLAYLISTAUTORESUMEQUEUE, value).apply()
+
+    var v121cacheSmartPinningToggle: Boolean
+        get() = prefs.getBoolean(KEY_V121CACHESMARTPINNINGTOGGLE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V121CACHESMARTPINNINGTOGGLE, value).apply()
+
+    var v121progressBarCustomLiveColor: Int
+        get() = prefs.getInt(KEY_V121PROGRESSBARCUSTOMLIVECOLOR, 0)
+        set(value) = prefs.edit().putInt(KEY_V121PROGRESSBARCUSTOMLIVECOLOR, value).apply()
+
+    var v121volumeMonoDownmixToggle: Boolean
+        get() = prefs.getBoolean(KEY_V121VOLUMEMONODOWNMIXTOGGLE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V121VOLUMEMONODOWNMIXTOGGLE, value).apply()
+
+    var v121historySearchScope121: Int
+        get() = prefs.getInt(KEY_V121HISTORYSEARCHSCOPE121, 0)
+        set(value) = prefs.edit().putInt(KEY_V121HISTORYSEARCHSCOPE121, value).apply()
+
+    var v121playbackSpeedPresetsCustom: Int
+        get() = prefs.getInt(KEY_V121PLAYBACKSPEEDPRESETSCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V121PLAYBACKSPEEDPRESETSCUSTOM, value).apply()
+
+    var v121screenshotAutoShareQQ: Boolean
+        get() = prefs.getBoolean(KEY_V121SCREENSHOTAUTOSHAREQQ, false)
+        set(value) = prefs.edit().putBoolean(KEY_V121SCREENSHOTAUTOSHAREQQ, value).apply()
+
+    var v121videoPIPSwipeDismiss: Boolean
+        get() = prefs.getBoolean(KEY_V121VIDEOPIPSWIPEDISMISS, true)
+        set(value) = prefs.edit().putBoolean(KEY_V121VIDEOPIPSWIPEDISMISS, value).apply()
+
+    var v121danmakuFontBgFillStartColor: Int
+        get() = prefs.getInt(KEY_V121DANMAKUFONTBGFILLSTARTCOLOR, 0)
+        set(value) = prefs.edit().putInt(KEY_V121DANMAKUFONTBGFILLSTARTCOLOR, value).apply()
+
+    var v121subtitleAnimationFadeIn121: Int
+        get() = prefs.getInt(KEY_V121SUBTITLEANIMATIONFADEIN121, 300)
+        set(value) = prefs.edit().putInt(KEY_V121SUBTITLEANIMATIONFADEIN121, value).apply()
+
+    var v122audioFadeInDuration122: Int
+        get() = prefs.getInt(KEY_V122AUDIOFADEINDURATION122, 300)
+        set(value) = prefs.edit().putInt(KEY_V122AUDIOFADEINDURATION122, value).apply()
+
+    var v122danmakuFontBgFillEndColor: Int
+        get() = prefs.getInt(KEY_V122DANMAKUFONTBGFILLENDCOLOR, 0)
+        set(value) = prefs.edit().putInt(KEY_V122DANMAKUFONTBGFILLENDCOLOR, value).apply()
+
+    var v122subtitleAnimationFadeOut122: Int
+        get() = prefs.getInt(KEY_V122SUBTITLEANIMATIONFADEOUT122, 300)
+        set(value) = prefs.edit().putInt(KEY_V122SUBTITLEANIMATIONFADEOUT122, value).apply()
+
+    var v122gestureTapCtrlAction: Int
+        get() = prefs.getInt(KEY_V122GESTURETAPCTRLACTION, 0)
+        set(value) = prefs.edit().putInt(KEY_V122GESTURETAPCTRLACTION, value).apply()
+
+    var v122castVideoFlipVertical: Boolean
+        get() = prefs.getBoolean(KEY_V122CASTVIDEOFLIPVERTICAL, false)
+        set(value) = prefs.edit().putBoolean(KEY_V122CASTVIDEOFLIPVERTICAL, value).apply()
+
+    var v122playlistAutoResumeLastPosition: Boolean
+        get() = prefs.getBoolean(KEY_V122PLAYLISTAUTORESUMELASTPOSITION, true)
+        set(value) = prefs.edit().putBoolean(KEY_V122PLAYLISTAUTORESUMELASTPOSITION, value).apply()
+
+    var v122cacheSmartPinningMaxSize: Int
+        get() = prefs.getInt(KEY_V122CACHESMARTPINNINGMAXSIZE, 0)
+        set(value) = prefs.edit().putInt(KEY_V122CACHESMARTPINNINGMAXSIZE, value).apply()
+
+    var v122progressBarCustomLiveWidth: Int
+        get() = prefs.getInt(KEY_V122PROGRESSBARCUSTOMLIVEWIDTH, 2)
+        set(value) = prefs.edit().putInt(KEY_V122PROGRESSBARCUSTOMLIVEWIDTH, value).apply()
+
+    var v122volumeMonoDownmixBalance: Int
+        get() = prefs.getInt(KEY_V122VOLUMEMONODOWNMIXBALANCE, 50)
+        set(value) = prefs.edit().putInt(KEY_V122VOLUMEMONODOWNMIXBALANCE, value).apply()
+
+    var v122historySearchScope122: Int
+        get() = prefs.getInt(KEY_V122HISTORYSEARCHSCOPE122, 0)
+        set(value) = prefs.edit().putInt(KEY_V122HISTORYSEARCHSCOPE122, value).apply()
+
+    var v122playbackSpeedPresetsList: Int
+        get() = prefs.getInt(KEY_V122PLAYBACKSPEEDPRESETSLIST, 0)
+        set(value) = prefs.edit().putInt(KEY_V122PLAYBACKSPEEDPRESETSLIST, value).apply()
+
+    var v122screenshotAutoShareWeChat: Boolean
+        get() = prefs.getBoolean(KEY_V122SCREENSHOTAUTOSHAREWECHAT, false)
+        set(value) = prefs.edit().putBoolean(KEY_V122SCREENSHOTAUTOSHAREWECHAT, value).apply()
+
+    var v122videoPIPAlwaysOnTop: Boolean
+        get() = prefs.getBoolean(KEY_V122VIDEOPIPALWAYSONTOP, true)
+        set(value) = prefs.edit().putBoolean(KEY_V122VIDEOPIPALWAYSONTOP, value).apply()
+
+    var v122danmakuFontBgFillRadius: Int
+        get() = prefs.getInt(KEY_V122DANMAKUFONTBGFILLRADIUS, 0)
+        set(value) = prefs.edit().putInt(KEY_V122DANMAKUFONTBGFILLRADIUS, value).apply()
+
+    var v122subtitleAnimationFadeOut121: Int
+        get() = prefs.getInt(KEY_V122SUBTITLEANIMATIONFADEOUT121, 300)
+        set(value) = prefs.edit().putInt(KEY_V122SUBTITLEANIMATIONFADEOUT121, value).apply()
+
+    var v123audioFadeOutDuration123: Int
+        get() = prefs.getInt(KEY_V123AUDIOFADEOUTDURATION123, 300)
+        set(value) = prefs.edit().putInt(KEY_V123AUDIOFADEOUTDURATION123, value).apply()
+
+    var v123danmakuFontBgFillOpacity120: Int
+        get() = prefs.getInt(KEY_V123DANMAKUFONTBGFILLOPACITY120, 50)
+        set(value) = prefs.edit().putInt(KEY_V123DANMAKUFONTBGFILLOPACITY120, value).apply()
+
+    var v123subtitleAnimationFadeIn123: Int
+        get() = prefs.getInt(KEY_V123SUBTITLEANIMATIONFADEIN123, 300)
+        set(value) = prefs.edit().putInt(KEY_V123SUBTITLEANIMATIONFADEIN123, value).apply()
+
+    var v123gestureTapAltAction: Int
+        get() = prefs.getInt(KEY_V123GESTURETAPALTACTION, 0)
+        set(value) = prefs.edit().putInt(KEY_V123GESTURETAPALTACTION, value).apply()
+
+    var v123castVideoRotateCustom: Int
+        get() = prefs.getInt(KEY_V123CASTVIDEOROTATECUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V123CASTVIDEOROTATECUSTOM, value).apply()
+
+    var v123playlistAutoSortByLength: Boolean
+        get() = prefs.getBoolean(KEY_V123PLAYLISTAUTOSORTBYLENGTH, false)
+        set(value) = prefs.edit().putBoolean(KEY_V123PLAYLISTAUTOSORTBYLENGTH, value).apply()
+
+    var v123cacheSmartPinningExpire: Int
+        get() = prefs.getInt(KEY_V123CACHESMARTPINNINGEXPIRE, 0)
+        set(value) = prefs.edit().putInt(KEY_V123CACHESMARTPINNINGEXPIRE, value).apply()
+
+    var v123progressBarCustomLiveHeight: Int
+        get() = prefs.getInt(KEY_V123PROGRESSBARCUSTOMLIVEHEIGHT, 2)
+        set(value) = prefs.edit().putInt(KEY_V123PROGRESSBARCUSTOMLIVEHEIGHT, value).apply()
+
+    var v123volumeHeadroomCustom: Int
+        get() = prefs.getInt(KEY_V123VOLUMEHEADROOMCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V123VOLUMEHEADROOMCUSTOM, value).apply()
+
+    var v123historyAutoClean123: Boolean
+        get() = prefs.getBoolean(KEY_V123HISTORYAUTOCLEAN123, false)
+        set(value) = prefs.edit().putBoolean(KEY_V123HISTORYAUTOCLEAN123, value).apply()
+
+    var v123playbackSpeedPresetsCustom123: Int
+        get() = prefs.getInt(KEY_V123PLAYBACKSPEEDPRESETSCUSTOM123, 0)
+        set(value) = prefs.edit().putInt(KEY_V123PLAYBACKSPEEDPRESETSCUSTOM123, value).apply()
+
+    var v123screenshotAutoShareDouyin: Boolean
+        get() = prefs.getBoolean(KEY_V123SCREENSHOTAUTOSHAREDOUYIN, false)
+        set(value) = prefs.edit().putBoolean(KEY_V123SCREENSHOTAUTOSHAREDOUYIN, value).apply()
+
+    var v123videoPIPResizeHandle: Boolean
+        get() = prefs.getBoolean(KEY_V123VIDEOPIPRESIZEHANDLE, true)
+        set(value) = prefs.edit().putBoolean(KEY_V123VIDEOPIPRESIZEHANDLE, value).apply()
+
+    var v123danmakuFontBgFillBorderToggle: Boolean
+        get() = prefs.getBoolean(KEY_V123DANMAKUFONTBGFILLBORDERTOGGLE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V123DANMAKUFONTBGFILLBORDERTOGGLE, value).apply()
+
+    var v123subtitleAnimationFadeOut123: Int
+        get() = prefs.getInt(KEY_V123SUBTITLEANIMATIONFADEOUT123, 300)
+        set(value) = prefs.edit().putInt(KEY_V123SUBTITLEANIMATIONFADEOUT123, value).apply()
+
+    var v124audioReverbPresetCustom: Int
+        get() = prefs.getInt(KEY_V124AUDIOREVERBPRESETCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V124AUDIOREVERBPRESETCUSTOM, value).apply()
+
+    var v124danmakuFontBgFillBorderWidth: Int
+        get() = prefs.getInt(KEY_V124DANMAKUFONTBGFILLBORDERWIDTH, 0)
+        set(value) = prefs.edit().putInt(KEY_V124DANMAKUFONTBGFILLBORDERWIDTH, value).apply()
+
+    var v124subtitleAnimationScale124: Int
+        get() = prefs.getInt(KEY_V124SUBTITLEANIMATIONSCALE124, 100)
+        set(value) = prefs.edit().putInt(KEY_V124SUBTITLEANIMATIONSCALE124, value).apply()
+
+    var v124gestureTapShiftCtrlAction: Int
+        get() = prefs.getInt(KEY_V124GESTURETAPSHIFTCTRLACTION, 0)
+        set(value) = prefs.edit().putInt(KEY_V124GESTURETAPSHIFTCTRLACTION, value).apply()
+
+    var v124castVideoCropCustom: Int
+        get() = prefs.getInt(KEY_V124CASTVIDEOCROPCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V124CASTVIDEOCROPCUSTOM, value).apply()
+
+    var v124playlistAutoSortByTitle: Boolean
+        get() = prefs.getBoolean(KEY_V124PLAYLISTAUTOSORTBYTITLE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V124PLAYLISTAUTOSORTBYTITLE, value).apply()
+
+    var v124cacheSmartPinningPriority: Int
+        get() = prefs.getInt(KEY_V124CACHESMARTPINNINGPRIORITY, 0)
+        set(value) = prefs.edit().putInt(KEY_V124CACHESMARTPINNINGPRIORITY, value).apply()
+
+    var v124progressBarCustomThumbColor124: Int
+        get() = prefs.getInt(KEY_V124PROGRESSBARCUSTOMTHUMBCOLOR124, 0)
+        set(value) = prefs.edit().putInt(KEY_V124PROGRESSBARCUSTOMTHUMBCOLOR124, value).apply()
+
+    var v124volumeReplayGainAlbum: Boolean
+        get() = prefs.getBoolean(KEY_V124VOLUMEREPLAYGAINALBUM, false)
+        set(value) = prefs.edit().putBoolean(KEY_V124VOLUMEREPLAYGAINALBUM, value).apply()
+
+    var v124historyAutoClean124: Boolean
+        get() = prefs.getBoolean(KEY_V124HISTORYAUTOCLEAN124, false)
+        set(value) = prefs.edit().putBoolean(KEY_V124HISTORYAUTOCLEAN124, value).apply()
+
+    var v124playbackSpeedPresetsToggle: Boolean
+        get() = prefs.getBoolean(KEY_V124PLAYBACKSPEEDPRESETSTOGGLE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V124PLAYBACKSPEEDPRESETSTOGGLE, value).apply()
+
+    var v124screenshotAutoShareTikTok: Boolean
+        get() = prefs.getBoolean(KEY_V124SCREENSHOTAUTOSHARETIKTOK, false)
+        set(value) = prefs.edit().putBoolean(KEY_V124SCREENSHOTAUTOSHARETIKTOK, value).apply()
+
+    var v124videoPIPKeyboardControl: Boolean
+        get() = prefs.getBoolean(KEY_V124VIDEOPIPKEYBOARDCONTROL, true)
+        set(value) = prefs.edit().putBoolean(KEY_V124VIDEOPIPKEYBOARDCONTROL, value).apply()
+
+    var v124danmakuFontBgFillBorderColor: Int
+        get() = prefs.getInt(KEY_V124DANMAKUFONTBGFILLBORDERCOLOR, 0)
+        set(value) = prefs.edit().putInt(KEY_V124DANMAKUFONTBGFILLBORDERCOLOR, value).apply()
+
+    var v124subtitleAnimationScale125: Int
+        get() = prefs.getInt(KEY_V124SUBTITLEANIMATIONSCALE125, 100)
+        set(value) = prefs.edit().putInt(KEY_V124SUBTITLEANIMATIONSCALE125, value).apply()
+
+    var v125audioReverbRoomSize: Int
+        get() = prefs.getInt(KEY_V125AUDIOREVERBROOMSIZE, 0)
+        set(value) = prefs.edit().putInt(KEY_V125AUDIOREVERBROOMSIZE, value).apply()
+
+    var v125danmakuFontBgFillBorderRadius: Int
+        get() = prefs.getInt(KEY_V125DANMAKUFONTBGFILLBORDERRADIUS, 0)
+        set(value) = prefs.edit().putInt(KEY_V125DANMAKUFONTBGFILLBORDERRADIUS, value).apply()
+
+    var v125subtitleAnimationTranslate125: Int
+        get() = prefs.getInt(KEY_V125SUBTITLEANIMATIONTRANSLATE125, 0)
+        set(value) = prefs.edit().putInt(KEY_V125SUBTITLEANIMATIONTRANSLATE125, value).apply()
+
+    var v125gestureTapShiftAltAction: Int
+        get() = prefs.getInt(KEY_V125GESTURETAPSHIFTALTACTION, 0)
+        set(value) = prefs.edit().putInt(KEY_V125GESTURETAPSHIFTALTACTION, value).apply()
+
+    var v125castVideoScaleCustom: Int
+        get() = prefs.getInt(KEY_V125CASTVIDEOSCALECUSTOM, 100)
+        set(value) = prefs.edit().putInt(KEY_V125CASTVIDEOSCALECUSTOM, value).apply()
+
+    var v125playlistAutoSortByUploadDate: Boolean
+        get() = prefs.getBoolean(KEY_V125PLAYLISTAUTOSORTBYUPLOADDATE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V125PLAYLISTAUTOSORTBYUPLOADDATE, value).apply()
+
+    var v125cacheSmartPinningRefresh: Boolean
+        get() = prefs.getBoolean(KEY_V125CACHESMARTPINNINGREFRESH, false)
+        set(value) = prefs.edit().putBoolean(KEY_V125CACHESMARTPINNINGREFRESH, value).apply()
+
+    var v125progressBarCustomThumbShape125: Int
+        get() = prefs.getInt(KEY_V125PROGRESSBARCUSTOMTHUMBSHAPE125, 0)
+        set(value) = prefs.edit().putInt(KEY_V125PROGRESSBARCUSTOMTHUMBSHAPE125, value).apply()
+
+    var v125volumeReplayGainTrack: Boolean
+        get() = prefs.getBoolean(KEY_V125VOLUMEREPLAYGAINTRACK, false)
+        set(value) = prefs.edit().putBoolean(KEY_V125VOLUMEREPLAYGAINTRACK, value).apply()
+
+    var v125historyAutoClean125: Boolean
+        get() = prefs.getBoolean(KEY_V125HISTORYAUTOCLEAN125, false)
+        set(value) = prefs.edit().putBoolean(KEY_V125HISTORYAUTOCLEAN125, value).apply()
+
+    var v125playbackSpeedPresetsRange: Int
+        get() = prefs.getInt(KEY_V125PLAYBACKSPEEDPRESETSRANGE, 0)
+        set(value) = prefs.edit().putInt(KEY_V125PLAYBACKSPEEDPRESETSRANGE, value).apply()
+
+    var v125screenshotAutoShareSnapchat: Boolean
+        get() = prefs.getBoolean(KEY_V125SCREENSHOTAUTOSHARESNAPCHAT, false)
+        set(value) = prefs.edit().putBoolean(KEY_V125SCREENSHOTAUTOSHARESNAPCHAT, value).apply()
+
+    var v125videoPIPAutoHideDelay: Int
+        get() = prefs.getInt(KEY_V125VIDEOPIPAUTOHIDEDELAY, 0)
+        set(value) = prefs.edit().putInt(KEY_V125VIDEOPIPAUTOHIDEDELAY, value).apply()
+
+    var v125danmakuFontBgFillBorderOpacity: Int
+        get() = prefs.getInt(KEY_V125DANMAKUFONTBGFILLBORDEROPACITY, 50)
+        set(value) = prefs.edit().putInt(KEY_V125DANMAKUFONTBGFILLBORDEROPACITY, value).apply()
+
+    var v125subtitleAnimationRotate125: Int
+        get() = prefs.getInt(KEY_V125SUBTITLEANIMATIONROTATE125, 0)
+        set(value) = prefs.edit().putInt(KEY_V125SUBTITLEANIMATIONROTATE125, value).apply()
+
+    var v126audioReverbDamping: Int
+        get() = prefs.getInt(KEY_V126AUDIOREVERBDAMPING, 50)
+        set(value) = prefs.edit().putInt(KEY_V126AUDIOREVERBDAMPING, value).apply()
+
+    var v126danmakuFontBgFillBorderDashToggle: Boolean
+        get() = prefs.getBoolean(KEY_V126DANMAKUFONTBGFILLBORDERDASHTOGGLE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V126DANMAKUFONTBGFILLBORDERDASHTOGGLE, value).apply()
+
+    var v126subtitleAnimationRotate126: Int
+        get() = prefs.getInt(KEY_V126SUBTITLEANIMATIONROTATE126, 0)
+        set(value) = prefs.edit().putInt(KEY_V126SUBTITLEANIMATIONROTATE126, value).apply()
+
+    var v126gestureTapCtrlAltAction: Int
+        get() = prefs.getInt(KEY_V126GESTURETAPCTRLALTACTION, 0)
+        set(value) = prefs.edit().putInt(KEY_V126GESTURETAPCTRLALTACTION, value).apply()
+
+    var v126castVideoMirrorFlip: Int
+        get() = prefs.getInt(KEY_V126CASTVIDEOMIRRORFLIP, 0)
+        set(value) = prefs.edit().putInt(KEY_V126CASTVIDEOMIRRORFLIP, value).apply()
+
+    var v126playlistAutoSortByRandom: Boolean
+        get() = prefs.getBoolean(KEY_V126PLAYLISTAUTOSORTBYRANDOM, false)
+        set(value) = prefs.edit().putBoolean(KEY_V126PLAYLISTAUTOSORTBYRANDOM, value).apply()
+
+    var v126cacheSmartPinningOnLowSpace: Boolean
+        get() = prefs.getBoolean(KEY_V126CACHESMARTPINNINGONLOWSPACE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V126CACHESMARTPINNINGONLOWSPACE, value).apply()
+
+    var v126progressBarCustomThumbGlow126: Boolean
+        get() = prefs.getBoolean(KEY_V126PROGRESSBARCUSTOMTHUMBGLOW126, false)
+        set(value) = prefs.edit().putBoolean(KEY_V126PROGRESSBARCUSTOMTHUMBGLOW126, value).apply()
+
+    var v126volumeReplayGainPreamp: Int
+        get() = prefs.getInt(KEY_V126VOLUMEREPLAYGAINPREAMP, 0)
+        set(value) = prefs.edit().putInt(KEY_V126VOLUMEREPLAYGAINPREAMP, value).apply()
+
+    var v126historyAutoClean126: Boolean
+        get() = prefs.getBoolean(KEY_V126HISTORYAUTOCLEAN126, false)
+        set(value) = prefs.edit().putBoolean(KEY_V126HISTORYAUTOCLEAN126, value).apply()
+
+    var v126playbackSpeedPresetsLabel: Int
+        get() = prefs.getInt(KEY_V126PLAYBACKSPEEDPRESETSLABEL, 0)
+        set(value) = prefs.edit().putInt(KEY_V126PLAYBACKSPEEDPRESETSLABEL, value).apply()
+
+    var v126screenshotAutoShareReddit: Boolean
+        get() = prefs.getBoolean(KEY_V126SCREENSHOTAUTOSHAREREDDIT, false)
+        set(value) = prefs.edit().putBoolean(KEY_V126SCREENSHOTAUTOSHAREREDDIT, value).apply()
+
+    var v126videoPIPFollowScroll: Boolean
+        get() = prefs.getBoolean(KEY_V126VIDEOPIPFOLLOWSCROLL, false)
+        set(value) = prefs.edit().putBoolean(KEY_V126VIDEOPIPFOLLOWSCROLL, value).apply()
+
+    var v126danmakuFontBgFillBorderDashWidth: Int
+        get() = prefs.getInt(KEY_V126DANMAKUFONTBGFILLBORDERDASHWIDTH, 2)
+        set(value) = prefs.edit().putInt(KEY_V126DANMAKUFONTBGFILLBORDERDASHWIDTH, value).apply()
+
+    var v126subtitleAnimationTranslate126: Int
+        get() = prefs.getInt(KEY_V126SUBTITLEANIMATIONTRANSLATE126, 0)
+        set(value) = prefs.edit().putInt(KEY_V126SUBTITLEANIMATIONTRANSLATE126, value).apply()
+
+    var v127audioReverbWetDryMix: Int
+        get() = prefs.getInt(KEY_V127AUDIOREVERBWETDRYMIX, 50)
+        set(value) = prefs.edit().putInt(KEY_V127AUDIOREVERBWETDRYMIX, value).apply()
+
+    var v127danmakuFontBgFillBorderDashGap: Int
+        get() = prefs.getInt(KEY_V127DANMAKUFONTBGFILLBORDERDASHGAP, 2)
+        set(value) = prefs.edit().putInt(KEY_V127DANMAKUFONTBGFILLBORDERDASHGAP, value).apply()
+
+    var v127subtitleAnimationBlur127: Int
+        get() = prefs.getInt(KEY_V127SUBTITLEANIMATIONBLUR127, 0)
+        set(value) = prefs.edit().putInt(KEY_V127SUBTITLEANIMATIONBLUR127, value).apply()
+
+    var v127gestureTapMultiFingerAction: Int
+        get() = prefs.getInt(KEY_V127GESTURETAPMULTIFINGERACTION, 0)
+        set(value) = prefs.edit().putInt(KEY_V127GESTURETAPMULTIFINGERACTION, value).apply()
+
+    var v127castVideoZoomCustom: Int
+        get() = prefs.getInt(KEY_V127CASTVIDEOZOOMCUSTOM, 100)
+        set(value) = prefs.edit().putInt(KEY_V127CASTVIDEOZOOMCUSTOM, value).apply()
+
+    var v127playlistAutoGroupBySimilarity: Boolean
+        get() = prefs.getBoolean(KEY_V127PLAYLISTAUTOGROUPBYSIMILARITY, false)
+        set(value) = prefs.edit().putBoolean(KEY_V127PLAYLISTAUTOGROUPBYSIMILARITY, value).apply()
+
+    var v127cacheSmartPinningAlert: Boolean
+        get() = prefs.getBoolean(KEY_V127CACHESMARTPINNINGALERT, false)
+        set(value) = prefs.edit().putBoolean(KEY_V127CACHESMARTPINNINGALERT, value).apply()
+
+    var v127progressBarCustomThumbShadow127: Boolean
+        get() = prefs.getBoolean(KEY_V127PROGRESSBARCUSTOMTHUMBSHADOW127, false)
+        set(value) = prefs.edit().putBoolean(KEY_V127PROGRESSBARCUSTOMTHUMBSHADOW127, value).apply()
+
+    var v127volumeReplayGainClipProtect: Boolean
+        get() = prefs.getBoolean(KEY_V127VOLUMEREPLAYGAINCLIPPROTECT, true)
+        set(value) = prefs.edit().putBoolean(KEY_V127VOLUMEREPLAYGAINCLIPPROTECT, value).apply()
+
+    var v127historyAutoClean127: Boolean
+        get() = prefs.getBoolean(KEY_V127HISTORYAUTOCLEAN127, false)
+        set(value) = prefs.edit().putBoolean(KEY_V127HISTORYAUTOCLEAN127, value).apply()
+
+    var v127playbackSpeedPresetsAdaptive: Boolean
+        get() = prefs.getBoolean(KEY_V127PLAYBACKSPEEDPRESETSADAPTIVE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V127PLAYBACKSPEEDPRESETSADAPTIVE, value).apply()
+
+    var v127screenshotAutoShareVK: Boolean
+        get() = prefs.getBoolean(KEY_V127SCREENSHOTAUTOSHAREVK, false)
+        set(value) = prefs.edit().putBoolean(KEY_V127SCREENSHOTAUTOSHAREVK, value).apply()
+
+    var v127videoPIPSnapToEdge: Boolean
+        get() = prefs.getBoolean(KEY_V127VIDEOPIPSNAPTOEDGE, true)
+        set(value) = prefs.edit().putBoolean(KEY_V127VIDEOPIPSNAPTOEDGE, value).apply()
+
+    var v127danmakuFontBgFillBorderType: Int
+        get() = prefs.getInt(KEY_V127DANMAKUFONTBGFILLBORDERTYPE, 0)
+        set(value) = prefs.edit().putInt(KEY_V127DANMAKUFONTBGFILLBORDERTYPE, value).apply()
+
+    var v127subtitleAnimationBlur128: Int
+        get() = prefs.getInt(KEY_V127SUBTITLEANIMATIONBLUR128, 0)
+        set(value) = prefs.edit().putInt(KEY_V127SUBTITLEANIMATIONBLUR128, value).apply()
+
+    var v128audioReverbPreDelay: Int
+        get() = prefs.getInt(KEY_V128AUDIOREVERBPREDELAY, 0)
+        set(value) = prefs.edit().putInt(KEY_V128AUDIOREVERBPREDELAY, value).apply()
+
+    var v128danmakuFontBgFillBorderType127: Int
+        get() = prefs.getInt(KEY_V128DANMAKUFONTBGFILLBORDERTYPE127, 0)
+        set(value) = prefs.edit().putInt(KEY_V128DANMAKUFONTBGFILLBORDERTYPE127, value).apply()
+
+    var v128subtitleAnimationBlur129: Int
+        get() = prefs.getInt(KEY_V128SUBTITLEANIMATIONBLUR129, 0)
+        set(value) = prefs.edit().putInt(KEY_V128SUBTITLEANIMATIONBLUR129, value).apply()
+
+    var v128gestureTapFingerCount: Int
+        get() = prefs.getInt(KEY_V128GESTURETAPFINGERCOUNT, 1)
+        set(value) = prefs.edit().putInt(KEY_V128GESTURETAPFINGERCOUNT, value).apply()
+
+    var v128castVideoPIPMode: Int
+        get() = prefs.getInt(KEY_V128CASTVIDEOPIPMODE, 0)
+        set(value) = prefs.edit().putInt(KEY_V128CASTVIDEOPIPMODE, value).apply()
+
+    var v128playlistAutoGroupByTopic: Boolean
+        get() = prefs.getBoolean(KEY_V128PLAYLISTAUTOGROUPBYTOPIC, false)
+        set(value) = prefs.edit().putBoolean(KEY_V128PLAYLISTAUTOGROUPBYTOPIC, value).apply()
+
+    var v128cacheSmartPinningOnWifi: Boolean
+        get() = prefs.getBoolean(KEY_V128CACHESMARTPINNINGONWIFI, false)
+        set(value) = prefs.edit().putBoolean(KEY_V128CACHESMARTPINNINGONWIFI, value).apply()
+
+    var v128progressBarCustomThumbBorder128: Boolean
+        get() = prefs.getBoolean(KEY_V128PROGRESSBARCUSTOMTHUMBBORDER128, false)
+        set(value) = prefs.edit().putBoolean(KEY_V128PROGRESSBARCUSTOMTHUMBBORDER128, value).apply()
+
+    var v128volumeNormalizePerTrack: Boolean
+        get() = prefs.getBoolean(KEY_V128VOLUMENORMALIZEPERTRACK, false)
+        set(value) = prefs.edit().putBoolean(KEY_V128VOLUMENORMALIZEPERTRACK, value).apply()
+
+    var v128historyAutoClean128: Boolean
+        get() = prefs.getBoolean(KEY_V128HISTORYAUTOCLEAN128, false)
+        set(value) = prefs.edit().putBoolean(KEY_V128HISTORYAUTOCLEAN128, value).apply()
+
+    var v128playbackSpeedPresetsDisplay: Int
+        get() = prefs.getInt(KEY_V128PLAYBACKSPEEDPRESETSDISPLAY, 0)
+        set(value) = prefs.edit().putInt(KEY_V128PLAYBACKSPEEDPRESETSDISPLAY, value).apply()
+
+    var v128screenshotAutoShareTelegramChannel: Boolean
+        get() = prefs.getBoolean(KEY_V128SCREENSHOTAUTOSHARETELEGRAMCHANNEL, false)
+        set(value) = prefs.edit().putBoolean(KEY_V128SCREENSHOTAUTOSHARETELEGRAMCHANNEL, value).apply()
+
+    var v128videoPIPMinimizeToNotification: Boolean
+        get() = prefs.getBoolean(KEY_V128VIDEOPIPMINIMIZETONOTIFICATION, false)
+        set(value) = prefs.edit().putBoolean(KEY_V128VIDEOPIPMINIMIZETONOTIFICATION, value).apply()
+
+    var v128danmakuFontBgFillBorderJoin: Int
+        get() = prefs.getInt(KEY_V128DANMAKUFONTBGFILLBORDERJOIN, 0)
+        set(value) = prefs.edit().putInt(KEY_V128DANMAKUFONTBGFILLBORDERJOIN, value).apply()
+
+    var v128subtitleAnimationTranslate128: Int
+        get() = prefs.getInt(KEY_V128SUBTITLEANIMATIONTRANSLATE128, 0)
+        set(value) = prefs.edit().putInt(KEY_V128SUBTITLEANIMATIONTRANSLATE128, value).apply()
+
+    var v129audioChorusToggle129: Boolean
+        get() = prefs.getBoolean(KEY_V129AUDIOCHORUSTOGGLE129, false)
+        set(value) = prefs.edit().putBoolean(KEY_V129AUDIOCHORUSTOGGLE129, value).apply()
+
+    var v129danmakuFontBgFillBorderJoin128: Int
+        get() = prefs.getInt(KEY_V129DANMAKUFONTBGFILLBORDERJOIN128, 0)
+        set(value) = prefs.edit().putInt(KEY_V129DANMAKUFONTBGFILLBORDERJOIN128, value).apply()
+
+    var v129subtitleAnimationTranslate129: Int
+        get() = prefs.getInt(KEY_V129SUBTITLEANIMATIONTRANSLATE129, 0)
+        set(value) = prefs.edit().putInt(KEY_V129SUBTITLEANIMATIONTRANSLATE129, value).apply()
+
+    var v129gestureTapZoneCustom: Int
+        get() = prefs.getInt(KEY_V129GESTURETAPZONECUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V129GESTURETAPZONECUSTOM, value).apply()
+
+    var v129castVideoPIPSize: Int
+        get() = prefs.getInt(KEY_V129CASTVIDEOPIPSIZE, 0)
+        set(value) = prefs.edit().putInt(KEY_V129CASTVIDEOPIPSIZE, value).apply()
+
+    var v129playlistAutoGroupByMood: Boolean
+        get() = prefs.getBoolean(KEY_V129PLAYLISTAUTOGROUPBYMOOD, false)
+        set(value) = prefs.edit().putBoolean(KEY_V129PLAYLISTAUTOGROUPBYMOOD, value).apply()
+
+    var v129cacheSmartPinningOnCharging: Boolean
+        get() = prefs.getBoolean(KEY_V129CACHESMARTPINNINGONCHARGING, false)
+        set(value) = prefs.edit().putBoolean(KEY_V129CACHESMARTPINNINGONCHARGING, value).apply()
+
+    var v129progressBarCustomThumbBorder129: Boolean
+        get() = prefs.getBoolean(KEY_V129PROGRESSBARCUSTOMTHUMBBORDER129, false)
+        set(value) = prefs.edit().putBoolean(KEY_V129PROGRESSBARCUSTOMTHUMBBORDER129, value).apply()
+
+    var v129volumeNormalizeAlbum: Boolean
+        get() = prefs.getBoolean(KEY_V129VOLUMENORMALIZEALBUM, false)
+        set(value) = prefs.edit().putBoolean(KEY_V129VOLUMENORMALIZEALBUM, value).apply()
+
+    var v129historyAutoClean129: Boolean
+        get() = prefs.getBoolean(KEY_V129HISTORYAUTOCLEAN129, false)
+        set(value) = prefs.edit().putBoolean(KEY_V129HISTORYAUTOCLEAN129, value).apply()
+
+    var v129playbackSpeedPresetsNotification: Boolean
+        get() = prefs.getBoolean(KEY_V129PLAYBACKSPEEDPRESETSNOTIFICATION, false)
+        set(value) = prefs.edit().putBoolean(KEY_V129PLAYBACKSPEEDPRESETSNOTIFICATION, value).apply()
+
+    var v129screenshotAutoShareSlack: Boolean
+        get() = prefs.getBoolean(KEY_V129SCREENSHOTAUTOSHARESLACK, false)
+        set(value) = prefs.edit().putBoolean(KEY_V129SCREENSHOTAUTOSHARESLACK, value).apply()
+
+    var v129videoPIPTransitionAnimation: Int
+        get() = prefs.getInt(KEY_V129VIDEOPIPTRANSITIONANIMATION, 0)
+        set(value) = prefs.edit().putInt(KEY_V129VIDEOPIPTRANSITIONANIMATION, value).apply()
+
+    var v129danmakuFontBgFillBorderMiterLimit: Int
+        get() = prefs.getInt(KEY_V129DANMAKUFONTBGFILLBORDERMITERLIMIT, 0)
+        set(value) = prefs.edit().putInt(KEY_V129DANMAKUFONTBGFILLBORDERMITERLIMIT, value).apply()
+
+    var v129subtitleAnimationScale129: Int
+        get() = prefs.getInt(KEY_V129SUBTITLEANIMATIONSCALE129, 100)
+        set(value) = prefs.edit().putInt(KEY_V129SUBTITLEANIMATIONSCALE129, value).apply()
+
+    var v130audioChorusRate: Int
+        get() = prefs.getInt(KEY_V130AUDIOCHORUSRATE, 0)
+        set(value) = prefs.edit().putInt(KEY_V130AUDIOCHORUSRATE, value).apply()
+
+    var v130danmakuFontBgFillBorderMiter129: Int
+        get() = prefs.getInt(KEY_V130DANMAKUFONTBGFILLBORDERMITER129, 0)
+        set(value) = prefs.edit().putInt(KEY_V130DANMAKUFONTBGFILLBORDERMITER129, value).apply()
+
+    var v130subtitleAnimationScale130: Int
+        get() = prefs.getInt(KEY_V130SUBTITLEANIMATIONSCALE130, 100)
+        set(value) = prefs.edit().putInt(KEY_V130SUBTITLEANIMATIONSCALE130, value).apply()
+
+    var v130gestureTapZoneDeadZone: Int
+        get() = prefs.getInt(KEY_V130GESTURETAPZONEDEADZONE, 0)
+        set(value) = prefs.edit().putInt(KEY_V130GESTURETAPZONEDEADZONE, value).apply()
+
+    var v130castVideoPIPPosition: Int
+        get() = prefs.getInt(KEY_V130CASTVIDEOPIPPOSITION, 0)
+        set(value) = prefs.edit().putInt(KEY_V130CASTVIDEOPIPPOSITION, value).apply()
+
+    var v130playlistAutoGroupByLanguage: Boolean
+        get() = prefs.getBoolean(KEY_V130PLAYLISTAUTOGROUPBYLANGUAGE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V130PLAYLISTAUTOGROUPBYLANGUAGE, value).apply()
+
+    var v130cacheSmartPinningOnIdle: Boolean
+        get() = prefs.getBoolean(KEY_V130CACHESMARTPINNINGONIDLE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V130CACHESMARTPINNINGONIDLE, value).apply()
+
+    var v130progressBarCustomThumbColor130: Int
+        get() = prefs.getInt(KEY_V130PROGRESSBARCUSTOMTHUMBCOLOR130, 0)
+        set(value) = prefs.edit().putInt(KEY_V130PROGRESSBARCUSTOMTHUMBCOLOR130, value).apply()
+
+    var v130volumeNormalizeTrack: Boolean
+        get() = prefs.getBoolean(KEY_V130VOLUMENORMALIZETRACK, false)
+        set(value) = prefs.edit().putBoolean(KEY_V130VOLUMENORMALIZETRACK, value).apply()
+
+    var v130historyAutoClean130: Boolean
+        get() = prefs.getBoolean(KEY_V130HISTORYAUTOCLEAN130, false)
+        set(value) = prefs.edit().putBoolean(KEY_V130HISTORYAUTOCLEAN130, value).apply()
+
+    var v130playbackSpeedPresetsWidget: Boolean
+        get() = prefs.getBoolean(KEY_V130PLAYBACKSPEEDPRESETSWIDGET, false)
+        set(value) = prefs.edit().putBoolean(KEY_V130PLAYBACKSPEEDPRESETSWIDGET, value).apply()
+
+    var v130screenshotAutoShareTeams: Boolean
+        get() = prefs.getBoolean(KEY_V130SCREENSHOTAUTOSHARETEAMS, false)
+        set(value) = prefs.edit().putBoolean(KEY_V130SCREENSHOTAUTOSHARETEAMS, value).apply()
+
+    var v130videoPIPOpacityOnDrag: Int
+        get() = prefs.getInt(KEY_V130VIDEOPIPOPACITYONDRAG, 100)
+        set(value) = prefs.edit().putInt(KEY_V130VIDEOPIPOPACITYONDRAG, value).apply()
+
+    var v130danmakuFontBgFillShadowToggle: Boolean
+        get() = prefs.getBoolean(KEY_V130DANMAKUFONTBGFILLSHADOWTOGGLE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V130DANMAKUFONTBGFILLSHADOWTOGGLE, value).apply()
+
+    var v130subtitleAnimationRotate130: Int
+        get() = prefs.getInt(KEY_V130SUBTITLEANIMATIONROTATE130, 0)
+        set(value) = prefs.edit().putInt(KEY_V130SUBTITLEANIMATIONROTATE130, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -18429,5 +19030,155 @@ class AppPrefs(context: Context) {
         const val KEY_V120VIDEOPIPOPACITYCUSTOM = "v120videoPIPOpacityCustom"
         const val KEY_V120DANMAKUFONTBGFILLANGLE119 = "v120danmakuFontBgFillAngle119"
         const val KEY_V120SUBTITLEANIMATIONDELAY120 = "v120subtitleAnimationDelay120"
+        const val KEY_V121AUDIODUCKINGRATIOCUSTOM = "v121audioDuckingRatioCustom"
+        const val KEY_V121DANMAKUFONTBGFILLANGLE120 = "v121danmakuFontBgFillAngle120"
+        const val KEY_V121SUBTITLEANIMATIONDELAY121 = "v121subtitleAnimationDelay121"
+        const val KEY_V121GESTURETAPSHIFTACTION = "v121gestureTapShiftAction"
+        const val KEY_V121CASTVIDEOFLIPHORIZONTAL = "v121castVideoFlipHorizontal"
+        const val KEY_V121PLAYLISTAUTORESUMEQUEUE = "v121playlistAutoResumeQueue"
+        const val KEY_V121CACHESMARTPINNINGTOGGLE = "v121cacheSmartPinningToggle"
+        const val KEY_V121PROGRESSBARCUSTOMLIVECOLOR = "v121progressBarCustomLiveColor"
+        const val KEY_V121VOLUMEMONODOWNMIXTOGGLE = "v121volumeMonoDownmixToggle"
+        const val KEY_V121HISTORYSEARCHSCOPE121 = "v121historySearchScope121"
+        const val KEY_V121PLAYBACKSPEEDPRESETSCUSTOM = "v121playbackSpeedPresetsCustom"
+        const val KEY_V121SCREENSHOTAUTOSHAREQQ = "v121screenshotAutoShareQQ"
+        const val KEY_V121VIDEOPIPSWIPEDISMISS = "v121videoPIPSwipeDismiss"
+        const val KEY_V121DANMAKUFONTBGFILLSTARTCOLOR = "v121danmakuFontBgFillStartColor"
+        const val KEY_V121SUBTITLEANIMATIONFADEIN121 = "v121subtitleAnimationFadeIn121"
+        const val KEY_V122AUDIOFADEINDURATION122 = "v122audioFadeInDuration122"
+        const val KEY_V122DANMAKUFONTBGFILLENDCOLOR = "v122danmakuFontBgFillEndColor"
+        const val KEY_V122SUBTITLEANIMATIONFADEOUT122 = "v122subtitleAnimationFadeOut122"
+        const val KEY_V122GESTURETAPCTRLACTION = "v122gestureTapCtrlAction"
+        const val KEY_V122CASTVIDEOFLIPVERTICAL = "v122castVideoFlipVertical"
+        const val KEY_V122PLAYLISTAUTORESUMELASTPOSITION = "v122playlistAutoResumeLastPosition"
+        const val KEY_V122CACHESMARTPINNINGMAXSIZE = "v122cacheSmartPinningMaxSize"
+        const val KEY_V122PROGRESSBARCUSTOMLIVEWIDTH = "v122progressBarCustomLiveWidth"
+        const val KEY_V122VOLUMEMONODOWNMIXBALANCE = "v122volumeMonoDownmixBalance"
+        const val KEY_V122HISTORYSEARCHSCOPE122 = "v122historySearchScope122"
+        const val KEY_V122PLAYBACKSPEEDPRESETSLIST = "v122playbackSpeedPresetsList"
+        const val KEY_V122SCREENSHOTAUTOSHAREWECHAT = "v122screenshotAutoShareWeChat"
+        const val KEY_V122VIDEOPIPALWAYSONTOP = "v122videoPIPAlwaysOnTop"
+        const val KEY_V122DANMAKUFONTBGFILLRADIUS = "v122danmakuFontBgFillRadius"
+        const val KEY_V122SUBTITLEANIMATIONFADEOUT121 = "v122subtitleAnimationFadeOut121"
+        const val KEY_V123AUDIOFADEOUTDURATION123 = "v123audioFadeOutDuration123"
+        const val KEY_V123DANMAKUFONTBGFILLOPACITY120 = "v123danmakuFontBgFillOpacity120"
+        const val KEY_V123SUBTITLEANIMATIONFADEIN123 = "v123subtitleAnimationFadeIn123"
+        const val KEY_V123GESTURETAPALTACTION = "v123gestureTapAltAction"
+        const val KEY_V123CASTVIDEOROTATECUSTOM = "v123castVideoRotateCustom"
+        const val KEY_V123PLAYLISTAUTOSORTBYLENGTH = "v123playlistAutoSortByLength"
+        const val KEY_V123CACHESMARTPINNINGEXPIRE = "v123cacheSmartPinningExpire"
+        const val KEY_V123PROGRESSBARCUSTOMLIVEHEIGHT = "v123progressBarCustomLiveHeight"
+        const val KEY_V123VOLUMEHEADROOMCUSTOM = "v123volumeHeadroomCustom"
+        const val KEY_V123HISTORYAUTOCLEAN123 = "v123historyAutoClean123"
+        const val KEY_V123PLAYBACKSPEEDPRESETSCUSTOM123 = "v123playbackSpeedPresetsCustom123"
+        const val KEY_V123SCREENSHOTAUTOSHAREDOUYIN = "v123screenshotAutoShareDouyin"
+        const val KEY_V123VIDEOPIPRESIZEHANDLE = "v123videoPIPResizeHandle"
+        const val KEY_V123DANMAKUFONTBGFILLBORDERTOGGLE = "v123danmakuFontBgFillBorderToggle"
+        const val KEY_V123SUBTITLEANIMATIONFADEOUT123 = "v123subtitleAnimationFadeOut123"
+        const val KEY_V124AUDIOREVERBPRESETCUSTOM = "v124audioReverbPresetCustom"
+        const val KEY_V124DANMAKUFONTBGFILLBORDERWIDTH = "v124danmakuFontBgFillBorderWidth"
+        const val KEY_V124SUBTITLEANIMATIONSCALE124 = "v124subtitleAnimationScale124"
+        const val KEY_V124GESTURETAPSHIFTCTRLACTION = "v124gestureTapShiftCtrlAction"
+        const val KEY_V124CASTVIDEOCROPCUSTOM = "v124castVideoCropCustom"
+        const val KEY_V124PLAYLISTAUTOSORTBYTITLE = "v124playlistAutoSortByTitle"
+        const val KEY_V124CACHESMARTPINNINGPRIORITY = "v124cacheSmartPinningPriority"
+        const val KEY_V124PROGRESSBARCUSTOMTHUMBCOLOR124 = "v124progressBarCustomThumbColor124"
+        const val KEY_V124VOLUMEREPLAYGAINALBUM = "v124volumeReplayGainAlbum"
+        const val KEY_V124HISTORYAUTOCLEAN124 = "v124historyAutoClean124"
+        const val KEY_V124PLAYBACKSPEEDPRESETSTOGGLE = "v124playbackSpeedPresetsToggle"
+        const val KEY_V124SCREENSHOTAUTOSHARETIKTOK = "v124screenshotAutoShareTikTok"
+        const val KEY_V124VIDEOPIPKEYBOARDCONTROL = "v124videoPIPKeyboardControl"
+        const val KEY_V124DANMAKUFONTBGFILLBORDERCOLOR = "v124danmakuFontBgFillBorderColor"
+        const val KEY_V124SUBTITLEANIMATIONSCALE125 = "v124subtitleAnimationScale125"
+        const val KEY_V125AUDIOREVERBROOMSIZE = "v125audioReverbRoomSize"
+        const val KEY_V125DANMAKUFONTBGFILLBORDERRADIUS = "v125danmakuFontBgFillBorderRadius"
+        const val KEY_V125SUBTITLEANIMATIONTRANSLATE125 = "v125subtitleAnimationTranslate125"
+        const val KEY_V125GESTURETAPSHIFTALTACTION = "v125gestureTapShiftAltAction"
+        const val KEY_V125CASTVIDEOSCALECUSTOM = "v125castVideoScaleCustom"
+        const val KEY_V125PLAYLISTAUTOSORTBYUPLOADDATE = "v125playlistAutoSortByUploadDate"
+        const val KEY_V125CACHESMARTPINNINGREFRESH = "v125cacheSmartPinningRefresh"
+        const val KEY_V125PROGRESSBARCUSTOMTHUMBSHAPE125 = "v125progressBarCustomThumbShape125"
+        const val KEY_V125VOLUMEREPLAYGAINTRACK = "v125volumeReplayGainTrack"
+        const val KEY_V125HISTORYAUTOCLEAN125 = "v125historyAutoClean125"
+        const val KEY_V125PLAYBACKSPEEDPRESETSRANGE = "v125playbackSpeedPresetsRange"
+        const val KEY_V125SCREENSHOTAUTOSHARESNAPCHAT = "v125screenshotAutoShareSnapchat"
+        const val KEY_V125VIDEOPIPAUTOHIDEDELAY = "v125videoPIPAutoHideDelay"
+        const val KEY_V125DANMAKUFONTBGFILLBORDEROPACITY = "v125danmakuFontBgFillBorderOpacity"
+        const val KEY_V125SUBTITLEANIMATIONROTATE125 = "v125subtitleAnimationRotate125"
+        const val KEY_V126AUDIOREVERBDAMPING = "v126audioReverbDamping"
+        const val KEY_V126DANMAKUFONTBGFILLBORDERDASHTOGGLE = "v126danmakuFontBgFillBorderDashToggle"
+        const val KEY_V126SUBTITLEANIMATIONROTATE126 = "v126subtitleAnimationRotate126"
+        const val KEY_V126GESTURETAPCTRLALTACTION = "v126gestureTapCtrlAltAction"
+        const val KEY_V126CASTVIDEOMIRRORFLIP = "v126castVideoMirrorFlip"
+        const val KEY_V126PLAYLISTAUTOSORTBYRANDOM = "v126playlistAutoSortByRandom"
+        const val KEY_V126CACHESMARTPINNINGONLOWSPACE = "v126cacheSmartPinningOnLowSpace"
+        const val KEY_V126PROGRESSBARCUSTOMTHUMBGLOW126 = "v126progressBarCustomThumbGlow126"
+        const val KEY_V126VOLUMEREPLAYGAINPREAMP = "v126volumeReplayGainPreamp"
+        const val KEY_V126HISTORYAUTOCLEAN126 = "v126historyAutoClean126"
+        const val KEY_V126PLAYBACKSPEEDPRESETSLABEL = "v126playbackSpeedPresetsLabel"
+        const val KEY_V126SCREENSHOTAUTOSHAREREDDIT = "v126screenshotAutoShareReddit"
+        const val KEY_V126VIDEOPIPFOLLOWSCROLL = "v126videoPIPFollowScroll"
+        const val KEY_V126DANMAKUFONTBGFILLBORDERDASHWIDTH = "v126danmakuFontBgFillBorderDashWidth"
+        const val KEY_V126SUBTITLEANIMATIONTRANSLATE126 = "v126subtitleAnimationTranslate126"
+        const val KEY_V127AUDIOREVERBWETDRYMIX = "v127audioReverbWetDryMix"
+        const val KEY_V127DANMAKUFONTBGFILLBORDERDASHGAP = "v127danmakuFontBgFillBorderDashGap"
+        const val KEY_V127SUBTITLEANIMATIONBLUR127 = "v127subtitleAnimationBlur127"
+        const val KEY_V127GESTURETAPMULTIFINGERACTION = "v127gestureTapMultiFingerAction"
+        const val KEY_V127CASTVIDEOZOOMCUSTOM = "v127castVideoZoomCustom"
+        const val KEY_V127PLAYLISTAUTOGROUPBYSIMILARITY = "v127playlistAutoGroupBySimilarity"
+        const val KEY_V127CACHESMARTPINNINGALERT = "v127cacheSmartPinningAlert"
+        const val KEY_V127PROGRESSBARCUSTOMTHUMBSHADOW127 = "v127progressBarCustomThumbShadow127"
+        const val KEY_V127VOLUMEREPLAYGAINCLIPPROTECT = "v127volumeReplayGainClipProtect"
+        const val KEY_V127HISTORYAUTOCLEAN127 = "v127historyAutoClean127"
+        const val KEY_V127PLAYBACKSPEEDPRESETSADAPTIVE = "v127playbackSpeedPresetsAdaptive"
+        const val KEY_V127SCREENSHOTAUTOSHAREVK = "v127screenshotAutoShareVK"
+        const val KEY_V127VIDEOPIPSNAPTOEDGE = "v127videoPIPSnapToEdge"
+        const val KEY_V127DANMAKUFONTBGFILLBORDERTYPE = "v127danmakuFontBgFillBorderType"
+        const val KEY_V127SUBTITLEANIMATIONBLUR128 = "v127subtitleAnimationBlur128"
+        const val KEY_V128AUDIOREVERBPREDELAY = "v128audioReverbPreDelay"
+        const val KEY_V128DANMAKUFONTBGFILLBORDERTYPE127 = "v128danmakuFontBgFillBorderType127"
+        const val KEY_V128SUBTITLEANIMATIONBLUR129 = "v128subtitleAnimationBlur129"
+        const val KEY_V128GESTURETAPFINGERCOUNT = "v128gestureTapFingerCount"
+        const val KEY_V128CASTVIDEOPIPMODE = "v128castVideoPIPMode"
+        const val KEY_V128PLAYLISTAUTOGROUPBYTOPIC = "v128playlistAutoGroupByTopic"
+        const val KEY_V128CACHESMARTPINNINGONWIFI = "v128cacheSmartPinningOnWifi"
+        const val KEY_V128PROGRESSBARCUSTOMTHUMBBORDER128 = "v128progressBarCustomThumbBorder128"
+        const val KEY_V128VOLUMENORMALIZEPERTRACK = "v128volumeNormalizePerTrack"
+        const val KEY_V128HISTORYAUTOCLEAN128 = "v128historyAutoClean128"
+        const val KEY_V128PLAYBACKSPEEDPRESETSDISPLAY = "v128playbackSpeedPresetsDisplay"
+        const val KEY_V128SCREENSHOTAUTOSHARETELEGRAMCHANNEL = "v128screenshotAutoShareTelegramChannel"
+        const val KEY_V128VIDEOPIPMINIMIZETONOTIFICATION = "v128videoPIPMinimizeToNotification"
+        const val KEY_V128DANMAKUFONTBGFILLBORDERJOIN = "v128danmakuFontBgFillBorderJoin"
+        const val KEY_V128SUBTITLEANIMATIONTRANSLATE128 = "v128subtitleAnimationTranslate128"
+        const val KEY_V129AUDIOCHORUSTOGGLE129 = "v129audioChorusToggle129"
+        const val KEY_V129DANMAKUFONTBGFILLBORDERJOIN128 = "v129danmakuFontBgFillBorderJoin128"
+        const val KEY_V129SUBTITLEANIMATIONTRANSLATE129 = "v129subtitleAnimationTranslate129"
+        const val KEY_V129GESTURETAPZONECUSTOM = "v129gestureTapZoneCustom"
+        const val KEY_V129CASTVIDEOPIPSIZE = "v129castVideoPIPSize"
+        const val KEY_V129PLAYLISTAUTOGROUPBYMOOD = "v129playlistAutoGroupByMood"
+        const val KEY_V129CACHESMARTPINNINGONCHARGING = "v129cacheSmartPinningOnCharging"
+        const val KEY_V129PROGRESSBARCUSTOMTHUMBBORDER129 = "v129progressBarCustomThumbBorder129"
+        const val KEY_V129VOLUMENORMALIZEALBUM = "v129volumeNormalizeAlbum"
+        const val KEY_V129HISTORYAUTOCLEAN129 = "v129historyAutoClean129"
+        const val KEY_V129PLAYBACKSPEEDPRESETSNOTIFICATION = "v129playbackSpeedPresetsNotification"
+        const val KEY_V129SCREENSHOTAUTOSHARESLACK = "v129screenshotAutoShareSlack"
+        const val KEY_V129VIDEOPIPTRANSITIONANIMATION = "v129videoPIPTransitionAnimation"
+        const val KEY_V129DANMAKUFONTBGFILLBORDERMITERLIMIT = "v129danmakuFontBgFillBorderMiterLimit"
+        const val KEY_V129SUBTITLEANIMATIONSCALE129 = "v129subtitleAnimationScale129"
+        const val KEY_V130AUDIOCHORUSRATE = "v130audioChorusRate"
+        const val KEY_V130DANMAKUFONTBGFILLBORDERMITER129 = "v130danmakuFontBgFillBorderMiter129"
+        const val KEY_V130SUBTITLEANIMATIONSCALE130 = "v130subtitleAnimationScale130"
+        const val KEY_V130GESTURETAPZONEDEADZONE = "v130gestureTapZoneDeadZone"
+        const val KEY_V130CASTVIDEOPIPPOSITION = "v130castVideoPIPPosition"
+        const val KEY_V130PLAYLISTAUTOGROUPBYLANGUAGE = "v130playlistAutoGroupByLanguage"
+        const val KEY_V130CACHESMARTPINNINGONIDLE = "v130cacheSmartPinningOnIdle"
+        const val KEY_V130PROGRESSBARCUSTOMTHUMBCOLOR130 = "v130progressBarCustomThumbColor130"
+        const val KEY_V130VOLUMENORMALIZETRACK = "v130volumeNormalizeTrack"
+        const val KEY_V130HISTORYAUTOCLEAN130 = "v130historyAutoClean130"
+        const val KEY_V130PLAYBACKSPEEDPRESETSWIDGET = "v130playbackSpeedPresetsWidget"
+        const val KEY_V130SCREENSHOTAUTOSHARETEAMS = "v130screenshotAutoShareTeams"
+        const val KEY_V130VIDEOPIPOPACITYONDRAG = "v130videoPIPOpacityOnDrag"
+        const val KEY_V130DANMAKUFONTBGFILLSHADOWTOGGLE = "v130danmakuFontBgFillShadowToggle"
+        const val KEY_V130SUBTITLEANIMATIONROTATE130 = "v130subtitleAnimationRotate130"
     }
 }
