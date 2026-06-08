@@ -56448,6 +56448,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V830NETWORKAUTOPING830, false)
         set(value) = prefs.edit().putBoolean(KEY_V830NETWORKAUTOPING830, value).apply()
 
+    var v831newAutoInstance831: Boolean
+        get() = prefs.getBoolean(KEY_V831NEWAUTOINSTANCE831, false)
+        set(value) = prefs.edit().putBoolean(KEY_V831NEWAUTOINSTANCE831, value).apply()
+
+    var v831nextAutoPlay831: Boolean
+        get() = prefs.getBoolean(KEY_V831NEXTAUTOPLAY831, false)
+        set(value) = prefs.edit().putBoolean(KEY_V831NEXTAUTOPLAY831, value).apply()
+
+    var v831nodeAutoCluster831: Boolean
+        get() = prefs.getBoolean(KEY_V831NODEAUTOCLUSTER831, false)
+        set(value) = prefs.edit().putBoolean(KEY_V831NODEAUTOCLUSTER831, value).apply()
+
+    var v831noneAutoFallback831: Boolean
+        get() = prefs.getBoolean(KEY_V831NONEAUTOFALLBACK831, false)
+        set(value) = prefs.edit().putBoolean(KEY_V831NONEAUTOFALLBACK831, value).apply()
+
+    var v831normalAutoDistribute831: Boolean
+        get() = prefs.getBoolean(KEY_V831NORMALAUTODISTRIBUTE831, false)
+        set(value) = prefs.edit().putBoolean(KEY_V831NORMALAUTODISTRIBUTE831, value).apply()
+
+    var v831notifyAutoBadge831: Boolean
+        get() = prefs.getBoolean(KEY_V831NOTIFYAUTOBADGE831, false)
+        set(value) = prefs.edit().putBoolean(KEY_V831NOTIFYAUTOBADGE831, value).apply()
+
+    var v831nullAutoSafety831: Boolean
+        get() = prefs.getBoolean(KEY_V831NULLAUTOSAFETY831, false)
+        set(value) = prefs.edit().putBoolean(KEY_V831NULLAUTOSAFETY831, value).apply()
+
+    var v831numberAutoFormat831: Boolean
+        get() = prefs.getBoolean(KEY_V831NUMBERAUTOFORMAT831, false)
+        set(value) = prefs.edit().putBoolean(KEY_V831NUMBERAUTOFORMAT831, value).apply()
+
+    var v831objectAutoPool831: Boolean
+        get() = prefs.getBoolean(KEY_V831OBJECTAUTOPOOL831, false)
+        set(value) = prefs.edit().putBoolean(KEY_V831OBJECTAUTOPOOL831, value).apply()
+
+    var v831observeAutoWatch831: Boolean
+        get() = prefs.getBoolean(KEY_V831OBSERVEAUTOWATCH831, false)
+        set(value) = prefs.edit().putBoolean(KEY_V831OBSERVEAUTOWATCH831, value).apply()
+
+    var v831offsetAutoCalc831: Boolean
+        get() = prefs.getBoolean(KEY_V831OFFSETAUTOCALC831, false)
+        set(value) = prefs.edit().putBoolean(KEY_V831OFFSETAUTOCALC831, value).apply()
+
+    var v831oldAutoMigrate831: Boolean
+        get() = prefs.getBoolean(KEY_V831OLDAUTOMIGRATE831, false)
+        set(value) = prefs.edit().putBoolean(KEY_V831OLDAUTOMIGRATE831, value).apply()
+
+    var v831openAutoLink831: Boolean
+        get() = prefs.getBoolean(KEY_V831OPENAUTOLINK831, false)
+        set(value) = prefs.edit().putBoolean(KEY_V831OPENAUTOLINK831, value).apply()
+
+    var v831operateAutoBatch831: Boolean
+        get() = prefs.getBoolean(KEY_V831OPERATEAUTOBATCH831, false)
+        set(value) = prefs.edit().putBoolean(KEY_V831OPERATEAUTOBATCH831, value).apply()
+
+    var v831optionAutoPersist831: Boolean
+        get() = prefs.getBoolean(KEY_V831OPTIONAUTOPERSIST831, false)
+        set(value) = prefs.edit().putBoolean(KEY_V831OPTIONAUTOPERSIST831, value).apply()
+
+    var v832newAutoInstance832: Boolean
+        get() = prefs.getBoolean(KEY_V832NEWAUTOINSTANCE832, false)
+        set(value) = prefs.edit().putBoolean(KEY_V832NEWAUTOINSTANCE832, value).apply()
+
+    var v832nextAutoPlay832: Boolean
+        get() = prefs.getBoolean(KEY_V832NEXTAUTOPLAY832, false)
+        set(value) = prefs.edit().putBoolean(KEY_V832NEXTAUTOPLAY832, value).apply()
+
+    var v832nodeAutoCluster832: Boolean
+        get() = prefs.getBoolean(KEY_V832NODEAUTOCLUSTER832, false)
+        set(value) = prefs.edit().putBoolean(KEY_V832NODEAUTOCLUSTER832, value).apply()
+
+    var v832noneAutoFallback832: Boolean
+        get() = prefs.getBoolean(KEY_V832NONEAUTOFALLBACK832, false)
+        set(value) = prefs.edit().putBoolean(KEY_V832NONEAUTOFALLBACK832, value).apply()
+
+    var v832normalAutoDistribute832: Boolean
+        get() = prefs.getBoolean(KEY_V832NORMALAUTODISTRIBUTE832, false)
+        set(value) = prefs.edit().putBoolean(KEY_V832NORMALAUTODISTRIBUTE832, value).apply()
+
+    var v832notifyAutoBadge832: Boolean
+        get() = prefs.getBoolean(KEY_V832NOTIFYAUTOBADGE832, false)
+        set(value) = prefs.edit().putBoolean(KEY_V832NOTIFYAUTOBADGE832, value).apply()
+
+    var v832nullAutoSafety832: Boolean
+        get() = prefs.getBoolean(KEY_V832NULLAUTOSAFETY832, false)
+        set(value) = prefs.edit().putBoolean(KEY_V832NULLAUTOSAFETY832, value).apply()
+
+    var v832numberAutoFormat832: Boolean
+        get() = prefs.getBoolean(KEY_V832NUMBERAUTOFORMAT832, false)
+        set(value) = prefs.edit().putBoolean(KEY_V832NUMBERAUTOFORMAT832, value).apply()
+
+    var v832objectAutoPool832: Boolean
+        get() = prefs.getBoolean(KEY_V832OBJECTAUTOPOOL832, false)
+        set(value) = prefs.edit().putBoolean(KEY_V832OBJECTAUTOPOOL832, value).apply()
+
+    var v832observeAutoWatch832: Boolean
+        get() = prefs.getBoolean(KEY_V832OBSERVEAUTOWATCH832, false)
+        set(value) = prefs.edit().putBoolean(KEY_V832OBSERVEAUTOWATCH832, value).apply()
+
+    var v832offsetAutoCalc832: Boolean
+        get() = prefs.getBoolean(KEY_V832OFFSETAUTOCALC832, false)
+        set(value) = prefs.edit().putBoolean(KEY_V832OFFSETAUTOCALC832, value).apply()
+
+    var v832oldAutoMigrate832: Boolean
+        get() = prefs.getBoolean(KEY_V832OLDAUTOMIGRATE832, false)
+        set(value) = prefs.edit().putBoolean(KEY_V832OLDAUTOMIGRATE832, value).apply()
+
+    var v832openAutoLink832: Boolean
+        get() = prefs.getBoolean(KEY_V832OPENAUTOLINK832, false)
+        set(value) = prefs.edit().putBoolean(KEY_V832OPENAUTOLINK832, value).apply()
+
+    var v832operateAutoBatch832: Boolean
+        get() = prefs.getBoolean(KEY_V832OPERATEAUTOBATCH832, false)
+        set(value) = prefs.edit().putBoolean(KEY_V832OPERATEAUTOBATCH832, value).apply()
+
+    var v832optionAutoPersist832: Boolean
+        get() = prefs.getBoolean(KEY_V832OPTIONAUTOPERSIST832, false)
+        set(value) = prefs.edit().putBoolean(KEY_V832OPTIONAUTOPERSIST832, value).apply()
+
+    var v833newAutoInstance833: Boolean
+        get() = prefs.getBoolean(KEY_V833NEWAUTOINSTANCE833, false)
+        set(value) = prefs.edit().putBoolean(KEY_V833NEWAUTOINSTANCE833, value).apply()
+
+    var v833nextAutoPlay833: Boolean
+        get() = prefs.getBoolean(KEY_V833NEXTAUTOPLAY833, false)
+        set(value) = prefs.edit().putBoolean(KEY_V833NEXTAUTOPLAY833, value).apply()
+
+    var v833nodeAutoCluster833: Boolean
+        get() = prefs.getBoolean(KEY_V833NODEAUTOCLUSTER833, false)
+        set(value) = prefs.edit().putBoolean(KEY_V833NODEAUTOCLUSTER833, value).apply()
+
+    var v833noneAutoFallback833: Boolean
+        get() = prefs.getBoolean(KEY_V833NONEAUTOFALLBACK833, false)
+        set(value) = prefs.edit().putBoolean(KEY_V833NONEAUTOFALLBACK833, value).apply()
+
+    var v833normalAutoDistribute833: Boolean
+        get() = prefs.getBoolean(KEY_V833NORMALAUTODISTRIBUTE833, false)
+        set(value) = prefs.edit().putBoolean(KEY_V833NORMALAUTODISTRIBUTE833, value).apply()
+
+    var v833notifyAutoBadge833: Boolean
+        get() = prefs.getBoolean(KEY_V833NOTIFYAUTOBADGE833, false)
+        set(value) = prefs.edit().putBoolean(KEY_V833NOTIFYAUTOBADGE833, value).apply()
+
+    var v833nullAutoSafety833: Boolean
+        get() = prefs.getBoolean(KEY_V833NULLAUTOSAFETY833, false)
+        set(value) = prefs.edit().putBoolean(KEY_V833NULLAUTOSAFETY833, value).apply()
+
+    var v833numberAutoFormat833: Boolean
+        get() = prefs.getBoolean(KEY_V833NUMBERAUTOFORMAT833, false)
+        set(value) = prefs.edit().putBoolean(KEY_V833NUMBERAUTOFORMAT833, value).apply()
+
+    var v833objectAutoPool833: Boolean
+        get() = prefs.getBoolean(KEY_V833OBJECTAUTOPOOL833, false)
+        set(value) = prefs.edit().putBoolean(KEY_V833OBJECTAUTOPOOL833, value).apply()
+
+    var v833observeAutoWatch833: Boolean
+        get() = prefs.getBoolean(KEY_V833OBSERVEAUTOWATCH833, false)
+        set(value) = prefs.edit().putBoolean(KEY_V833OBSERVEAUTOWATCH833, value).apply()
+
+    var v833offsetAutoCalc833: Boolean
+        get() = prefs.getBoolean(KEY_V833OFFSETAUTOCALC833, false)
+        set(value) = prefs.edit().putBoolean(KEY_V833OFFSETAUTOCALC833, value).apply()
+
+    var v833oldAutoMigrate833: Boolean
+        get() = prefs.getBoolean(KEY_V833OLDAUTOMIGRATE833, false)
+        set(value) = prefs.edit().putBoolean(KEY_V833OLDAUTOMIGRATE833, value).apply()
+
+    var v833openAutoLink833: Boolean
+        get() = prefs.getBoolean(KEY_V833OPENAUTOLINK833, false)
+        set(value) = prefs.edit().putBoolean(KEY_V833OPENAUTOLINK833, value).apply()
+
+    var v833operateAutoBatch833: Boolean
+        get() = prefs.getBoolean(KEY_V833OPERATEAUTOBATCH833, false)
+        set(value) = prefs.edit().putBoolean(KEY_V833OPERATEAUTOBATCH833, value).apply()
+
+    var v833optionAutoPersist833: Boolean
+        get() = prefs.getBoolean(KEY_V833OPTIONAUTOPERSIST833, false)
+        set(value) = prefs.edit().putBoolean(KEY_V833OPTIONAUTOPERSIST833, value).apply()
+
+    var v834newAutoInstance834: Boolean
+        get() = prefs.getBoolean(KEY_V834NEWAUTOINSTANCE834, false)
+        set(value) = prefs.edit().putBoolean(KEY_V834NEWAUTOINSTANCE834, value).apply()
+
+    var v834nextAutoPlay834: Boolean
+        get() = prefs.getBoolean(KEY_V834NEXTAUTOPLAY834, false)
+        set(value) = prefs.edit().putBoolean(KEY_V834NEXTAUTOPLAY834, value).apply()
+
+    var v834nodeAutoCluster834: Boolean
+        get() = prefs.getBoolean(KEY_V834NODEAUTOCLUSTER834, false)
+        set(value) = prefs.edit().putBoolean(KEY_V834NODEAUTOCLUSTER834, value).apply()
+
+    var v834noneAutoFallback834: Boolean
+        get() = prefs.getBoolean(KEY_V834NONEAUTOFALLBACK834, false)
+        set(value) = prefs.edit().putBoolean(KEY_V834NONEAUTOFALLBACK834, value).apply()
+
+    var v834normalAutoDistribute834: Boolean
+        get() = prefs.getBoolean(KEY_V834NORMALAUTODISTRIBUTE834, false)
+        set(value) = prefs.edit().putBoolean(KEY_V834NORMALAUTODISTRIBUTE834, value).apply()
+
+    var v834notifyAutoBadge834: Boolean
+        get() = prefs.getBoolean(KEY_V834NOTIFYAUTOBADGE834, false)
+        set(value) = prefs.edit().putBoolean(KEY_V834NOTIFYAUTOBADGE834, value).apply()
+
+    var v834nullAutoSafety834: Boolean
+        get() = prefs.getBoolean(KEY_V834NULLAUTOSAFETY834, false)
+        set(value) = prefs.edit().putBoolean(KEY_V834NULLAUTOSAFETY834, value).apply()
+
+    var v834numberAutoFormat834: Boolean
+        get() = prefs.getBoolean(KEY_V834NUMBERAUTOFORMAT834, false)
+        set(value) = prefs.edit().putBoolean(KEY_V834NUMBERAUTOFORMAT834, value).apply()
+
+    var v834objectAutoPool834: Boolean
+        get() = prefs.getBoolean(KEY_V834OBJECTAUTOPOOL834, false)
+        set(value) = prefs.edit().putBoolean(KEY_V834OBJECTAUTOPOOL834, value).apply()
+
+    var v834observeAutoWatch834: Boolean
+        get() = prefs.getBoolean(KEY_V834OBSERVEAUTOWATCH834, false)
+        set(value) = prefs.edit().putBoolean(KEY_V834OBSERVEAUTOWATCH834, value).apply()
+
+    var v834offsetAutoCalc834: Boolean
+        get() = prefs.getBoolean(KEY_V834OFFSETAUTOCALC834, false)
+        set(value) = prefs.edit().putBoolean(KEY_V834OFFSETAUTOCALC834, value).apply()
+
+    var v834oldAutoMigrate834: Boolean
+        get() = prefs.getBoolean(KEY_V834OLDAUTOMIGRATE834, false)
+        set(value) = prefs.edit().putBoolean(KEY_V834OLDAUTOMIGRATE834, value).apply()
+
+    var v834openAutoLink834: Boolean
+        get() = prefs.getBoolean(KEY_V834OPENAUTOLINK834, false)
+        set(value) = prefs.edit().putBoolean(KEY_V834OPENAUTOLINK834, value).apply()
+
+    var v834operateAutoBatch834: Boolean
+        get() = prefs.getBoolean(KEY_V834OPERATEAUTOBATCH834, false)
+        set(value) = prefs.edit().putBoolean(KEY_V834OPERATEAUTOBATCH834, value).apply()
+
+    var v834optionAutoPersist834: Boolean
+        get() = prefs.getBoolean(KEY_V834OPTIONAUTOPERSIST834, false)
+        set(value) = prefs.edit().putBoolean(KEY_V834OPTIONAUTOPERSIST834, value).apply()
+
+    var v835newAutoInstance835: Boolean
+        get() = prefs.getBoolean(KEY_V835NEWAUTOINSTANCE835, false)
+        set(value) = prefs.edit().putBoolean(KEY_V835NEWAUTOINSTANCE835, value).apply()
+
+    var v835nextAutoPlay835: Boolean
+        get() = prefs.getBoolean(KEY_V835NEXTAUTOPLAY835, false)
+        set(value) = prefs.edit().putBoolean(KEY_V835NEXTAUTOPLAY835, value).apply()
+
+    var v835nodeAutoCluster835: Boolean
+        get() = prefs.getBoolean(KEY_V835NODEAUTOCLUSTER835, false)
+        set(value) = prefs.edit().putBoolean(KEY_V835NODEAUTOCLUSTER835, value).apply()
+
+    var v835noneAutoFallback835: Boolean
+        get() = prefs.getBoolean(KEY_V835NONEAUTOFALLBACK835, false)
+        set(value) = prefs.edit().putBoolean(KEY_V835NONEAUTOFALLBACK835, value).apply()
+
+    var v835normalAutoDistribute835: Boolean
+        get() = prefs.getBoolean(KEY_V835NORMALAUTODISTRIBUTE835, false)
+        set(value) = prefs.edit().putBoolean(KEY_V835NORMALAUTODISTRIBUTE835, value).apply()
+
+    var v835notifyAutoBadge835: Boolean
+        get() = prefs.getBoolean(KEY_V835NOTIFYAUTOBADGE835, false)
+        set(value) = prefs.edit().putBoolean(KEY_V835NOTIFYAUTOBADGE835, value).apply()
+
+    var v835nullAutoSafety835: Boolean
+        get() = prefs.getBoolean(KEY_V835NULLAUTOSAFETY835, false)
+        set(value) = prefs.edit().putBoolean(KEY_V835NULLAUTOSAFETY835, value).apply()
+
+    var v835numberAutoFormat835: Boolean
+        get() = prefs.getBoolean(KEY_V835NUMBERAUTOFORMAT835, false)
+        set(value) = prefs.edit().putBoolean(KEY_V835NUMBERAUTOFORMAT835, value).apply()
+
+    var v835objectAutoPool835: Boolean
+        get() = prefs.getBoolean(KEY_V835OBJECTAUTOPOOL835, false)
+        set(value) = prefs.edit().putBoolean(KEY_V835OBJECTAUTOPOOL835, value).apply()
+
+    var v835observeAutoWatch835: Boolean
+        get() = prefs.getBoolean(KEY_V835OBSERVEAUTOWATCH835, false)
+        set(value) = prefs.edit().putBoolean(KEY_V835OBSERVEAUTOWATCH835, value).apply()
+
+    var v835offsetAutoCalc835: Boolean
+        get() = prefs.getBoolean(KEY_V835OFFSETAUTOCALC835, false)
+        set(value) = prefs.edit().putBoolean(KEY_V835OFFSETAUTOCALC835, value).apply()
+
+    var v835oldAutoMigrate835: Boolean
+        get() = prefs.getBoolean(KEY_V835OLDAUTOMIGRATE835, false)
+        set(value) = prefs.edit().putBoolean(KEY_V835OLDAUTOMIGRATE835, value).apply()
+
+    var v835openAutoLink835: Boolean
+        get() = prefs.getBoolean(KEY_V835OPENAUTOLINK835, false)
+        set(value) = prefs.edit().putBoolean(KEY_V835OPENAUTOLINK835, value).apply()
+
+    var v835operateAutoBatch835: Boolean
+        get() = prefs.getBoolean(KEY_V835OPERATEAUTOBATCH835, false)
+        set(value) = prefs.edit().putBoolean(KEY_V835OPERATEAUTOBATCH835, value).apply()
+
+    var v835optionAutoPersist835: Boolean
+        get() = prefs.getBoolean(KEY_V835OPTIONAUTOPERSIST835, false)
+        set(value) = prefs.edit().putBoolean(KEY_V835OPTIONAUTOPERSIST835, value).apply()
+
+    var v836newAutoInstance836: Boolean
+        get() = prefs.getBoolean(KEY_V836NEWAUTOINSTANCE836, false)
+        set(value) = prefs.edit().putBoolean(KEY_V836NEWAUTOINSTANCE836, value).apply()
+
+    var v836nextAutoPlay836: Boolean
+        get() = prefs.getBoolean(KEY_V836NEXTAUTOPLAY836, false)
+        set(value) = prefs.edit().putBoolean(KEY_V836NEXTAUTOPLAY836, value).apply()
+
+    var v836nodeAutoCluster836: Boolean
+        get() = prefs.getBoolean(KEY_V836NODEAUTOCLUSTER836, false)
+        set(value) = prefs.edit().putBoolean(KEY_V836NODEAUTOCLUSTER836, value).apply()
+
+    var v836noneAutoFallback836: Boolean
+        get() = prefs.getBoolean(KEY_V836NONEAUTOFALLBACK836, false)
+        set(value) = prefs.edit().putBoolean(KEY_V836NONEAUTOFALLBACK836, value).apply()
+
+    var v836normalAutoDistribute836: Boolean
+        get() = prefs.getBoolean(KEY_V836NORMALAUTODISTRIBUTE836, false)
+        set(value) = prefs.edit().putBoolean(KEY_V836NORMALAUTODISTRIBUTE836, value).apply()
+
+    var v836notifyAutoBadge836: Boolean
+        get() = prefs.getBoolean(KEY_V836NOTIFYAUTOBADGE836, false)
+        set(value) = prefs.edit().putBoolean(KEY_V836NOTIFYAUTOBADGE836, value).apply()
+
+    var v836nullAutoSafety836: Boolean
+        get() = prefs.getBoolean(KEY_V836NULLAUTOSAFETY836, false)
+        set(value) = prefs.edit().putBoolean(KEY_V836NULLAUTOSAFETY836, value).apply()
+
+    var v836numberAutoFormat836: Boolean
+        get() = prefs.getBoolean(KEY_V836NUMBERAUTOFORMAT836, false)
+        set(value) = prefs.edit().putBoolean(KEY_V836NUMBERAUTOFORMAT836, value).apply()
+
+    var v836objectAutoPool836: Boolean
+        get() = prefs.getBoolean(KEY_V836OBJECTAUTOPOOL836, false)
+        set(value) = prefs.edit().putBoolean(KEY_V836OBJECTAUTOPOOL836, value).apply()
+
+    var v836observeAutoWatch836: Boolean
+        get() = prefs.getBoolean(KEY_V836OBSERVEAUTOWATCH836, false)
+        set(value) = prefs.edit().putBoolean(KEY_V836OBSERVEAUTOWATCH836, value).apply()
+
+    var v836offsetAutoCalc836: Boolean
+        get() = prefs.getBoolean(KEY_V836OFFSETAUTOCALC836, false)
+        set(value) = prefs.edit().putBoolean(KEY_V836OFFSETAUTOCALC836, value).apply()
+
+    var v836oldAutoMigrate836: Boolean
+        get() = prefs.getBoolean(KEY_V836OLDAUTOMIGRATE836, false)
+        set(value) = prefs.edit().putBoolean(KEY_V836OLDAUTOMIGRATE836, value).apply()
+
+    var v836openAutoLink836: Boolean
+        get() = prefs.getBoolean(KEY_V836OPENAUTOLINK836, false)
+        set(value) = prefs.edit().putBoolean(KEY_V836OPENAUTOLINK836, value).apply()
+
+    var v836operateAutoBatch836: Boolean
+        get() = prefs.getBoolean(KEY_V836OPERATEAUTOBATCH836, false)
+        set(value) = prefs.edit().putBoolean(KEY_V836OPERATEAUTOBATCH836, value).apply()
+
+    var v836optionAutoPersist836: Boolean
+        get() = prefs.getBoolean(KEY_V836OPTIONAUTOPERSIST836, false)
+        set(value) = prefs.edit().putBoolean(KEY_V836OPTIONAUTOPERSIST836, value).apply()
+
+    var v837newAutoInstance837: Boolean
+        get() = prefs.getBoolean(KEY_V837NEWAUTOINSTANCE837, false)
+        set(value) = prefs.edit().putBoolean(KEY_V837NEWAUTOINSTANCE837, value).apply()
+
+    var v837nextAutoPlay837: Boolean
+        get() = prefs.getBoolean(KEY_V837NEXTAUTOPLAY837, false)
+        set(value) = prefs.edit().putBoolean(KEY_V837NEXTAUTOPLAY837, value).apply()
+
+    var v837nodeAutoCluster837: Boolean
+        get() = prefs.getBoolean(KEY_V837NODEAUTOCLUSTER837, false)
+        set(value) = prefs.edit().putBoolean(KEY_V837NODEAUTOCLUSTER837, value).apply()
+
+    var v837noneAutoFallback837: Boolean
+        get() = prefs.getBoolean(KEY_V837NONEAUTOFALLBACK837, false)
+        set(value) = prefs.edit().putBoolean(KEY_V837NONEAUTOFALLBACK837, value).apply()
+
+    var v837normalAutoDistribute837: Boolean
+        get() = prefs.getBoolean(KEY_V837NORMALAUTODISTRIBUTE837, false)
+        set(value) = prefs.edit().putBoolean(KEY_V837NORMALAUTODISTRIBUTE837, value).apply()
+
+    var v837notifyAutoBadge837: Boolean
+        get() = prefs.getBoolean(KEY_V837NOTIFYAUTOBADGE837, false)
+        set(value) = prefs.edit().putBoolean(KEY_V837NOTIFYAUTOBADGE837, value).apply()
+
+    var v837nullAutoSafety837: Boolean
+        get() = prefs.getBoolean(KEY_V837NULLAUTOSAFETY837, false)
+        set(value) = prefs.edit().putBoolean(KEY_V837NULLAUTOSAFETY837, value).apply()
+
+    var v837numberAutoFormat837: Boolean
+        get() = prefs.getBoolean(KEY_V837NUMBERAUTOFORMAT837, false)
+        set(value) = prefs.edit().putBoolean(KEY_V837NUMBERAUTOFORMAT837, value).apply()
+
+    var v837objectAutoPool837: Boolean
+        get() = prefs.getBoolean(KEY_V837OBJECTAUTOPOOL837, false)
+        set(value) = prefs.edit().putBoolean(KEY_V837OBJECTAUTOPOOL837, value).apply()
+
+    var v837observeAutoWatch837: Boolean
+        get() = prefs.getBoolean(KEY_V837OBSERVEAUTOWATCH837, false)
+        set(value) = prefs.edit().putBoolean(KEY_V837OBSERVEAUTOWATCH837, value).apply()
+
+    var v837offsetAutoCalc837: Boolean
+        get() = prefs.getBoolean(KEY_V837OFFSETAUTOCALC837, false)
+        set(value) = prefs.edit().putBoolean(KEY_V837OFFSETAUTOCALC837, value).apply()
+
+    var v837oldAutoMigrate837: Boolean
+        get() = prefs.getBoolean(KEY_V837OLDAUTOMIGRATE837, false)
+        set(value) = prefs.edit().putBoolean(KEY_V837OLDAUTOMIGRATE837, value).apply()
+
+    var v837openAutoLink837: Boolean
+        get() = prefs.getBoolean(KEY_V837OPENAUTOLINK837, false)
+        set(value) = prefs.edit().putBoolean(KEY_V837OPENAUTOLINK837, value).apply()
+
+    var v837operateAutoBatch837: Boolean
+        get() = prefs.getBoolean(KEY_V837OPERATEAUTOBATCH837, false)
+        set(value) = prefs.edit().putBoolean(KEY_V837OPERATEAUTOBATCH837, value).apply()
+
+    var v837optionAutoPersist837: Boolean
+        get() = prefs.getBoolean(KEY_V837OPTIONAUTOPERSIST837, false)
+        set(value) = prefs.edit().putBoolean(KEY_V837OPTIONAUTOPERSIST837, value).apply()
+
+    var v838newAutoInstance838: Boolean
+        get() = prefs.getBoolean(KEY_V838NEWAUTOINSTANCE838, false)
+        set(value) = prefs.edit().putBoolean(KEY_V838NEWAUTOINSTANCE838, value).apply()
+
+    var v838nextAutoPlay838: Boolean
+        get() = prefs.getBoolean(KEY_V838NEXTAUTOPLAY838, false)
+        set(value) = prefs.edit().putBoolean(KEY_V838NEXTAUTOPLAY838, value).apply()
+
+    var v838nodeAutoCluster838: Boolean
+        get() = prefs.getBoolean(KEY_V838NODEAUTOCLUSTER838, false)
+        set(value) = prefs.edit().putBoolean(KEY_V838NODEAUTOCLUSTER838, value).apply()
+
+    var v838noneAutoFallback838: Boolean
+        get() = prefs.getBoolean(KEY_V838NONEAUTOFALLBACK838, false)
+        set(value) = prefs.edit().putBoolean(KEY_V838NONEAUTOFALLBACK838, value).apply()
+
+    var v838normalAutoDistribute838: Boolean
+        get() = prefs.getBoolean(KEY_V838NORMALAUTODISTRIBUTE838, false)
+        set(value) = prefs.edit().putBoolean(KEY_V838NORMALAUTODISTRIBUTE838, value).apply()
+
+    var v838notifyAutoBadge838: Boolean
+        get() = prefs.getBoolean(KEY_V838NOTIFYAUTOBADGE838, false)
+        set(value) = prefs.edit().putBoolean(KEY_V838NOTIFYAUTOBADGE838, value).apply()
+
+    var v838nullAutoSafety838: Boolean
+        get() = prefs.getBoolean(KEY_V838NULLAUTOSAFETY838, false)
+        set(value) = prefs.edit().putBoolean(KEY_V838NULLAUTOSAFETY838, value).apply()
+
+    var v838numberAutoFormat838: Boolean
+        get() = prefs.getBoolean(KEY_V838NUMBERAUTOFORMAT838, false)
+        set(value) = prefs.edit().putBoolean(KEY_V838NUMBERAUTOFORMAT838, value).apply()
+
+    var v838objectAutoPool838: Boolean
+        get() = prefs.getBoolean(KEY_V838OBJECTAUTOPOOL838, false)
+        set(value) = prefs.edit().putBoolean(KEY_V838OBJECTAUTOPOOL838, value).apply()
+
+    var v838observeAutoWatch838: Boolean
+        get() = prefs.getBoolean(KEY_V838OBSERVEAUTOWATCH838, false)
+        set(value) = prefs.edit().putBoolean(KEY_V838OBSERVEAUTOWATCH838, value).apply()
+
+    var v838offsetAutoCalc838: Boolean
+        get() = prefs.getBoolean(KEY_V838OFFSETAUTOCALC838, false)
+        set(value) = prefs.edit().putBoolean(KEY_V838OFFSETAUTOCALC838, value).apply()
+
+    var v838oldAutoMigrate838: Boolean
+        get() = prefs.getBoolean(KEY_V838OLDAUTOMIGRATE838, false)
+        set(value) = prefs.edit().putBoolean(KEY_V838OLDAUTOMIGRATE838, value).apply()
+
+    var v838openAutoLink838: Boolean
+        get() = prefs.getBoolean(KEY_V838OPENAUTOLINK838, false)
+        set(value) = prefs.edit().putBoolean(KEY_V838OPENAUTOLINK838, value).apply()
+
+    var v838operateAutoBatch838: Boolean
+        get() = prefs.getBoolean(KEY_V838OPERATEAUTOBATCH838, false)
+        set(value) = prefs.edit().putBoolean(KEY_V838OPERATEAUTOBATCH838, value).apply()
+
+    var v838optionAutoPersist838: Boolean
+        get() = prefs.getBoolean(KEY_V838OPTIONAUTOPERSIST838, false)
+        set(value) = prefs.edit().putBoolean(KEY_V838OPTIONAUTOPERSIST838, value).apply()
+
+    var v839newAutoInstance839: Boolean
+        get() = prefs.getBoolean(KEY_V839NEWAUTOINSTANCE839, false)
+        set(value) = prefs.edit().putBoolean(KEY_V839NEWAUTOINSTANCE839, value).apply()
+
+    var v839nextAutoPlay839: Boolean
+        get() = prefs.getBoolean(KEY_V839NEXTAUTOPLAY839, false)
+        set(value) = prefs.edit().putBoolean(KEY_V839NEXTAUTOPLAY839, value).apply()
+
+    var v839nodeAutoCluster839: Boolean
+        get() = prefs.getBoolean(KEY_V839NODEAUTOCLUSTER839, false)
+        set(value) = prefs.edit().putBoolean(KEY_V839NODEAUTOCLUSTER839, value).apply()
+
+    var v839noneAutoFallback839: Boolean
+        get() = prefs.getBoolean(KEY_V839NONEAUTOFALLBACK839, false)
+        set(value) = prefs.edit().putBoolean(KEY_V839NONEAUTOFALLBACK839, value).apply()
+
+    var v839normalAutoDistribute839: Boolean
+        get() = prefs.getBoolean(KEY_V839NORMALAUTODISTRIBUTE839, false)
+        set(value) = prefs.edit().putBoolean(KEY_V839NORMALAUTODISTRIBUTE839, value).apply()
+
+    var v839notifyAutoBadge839: Boolean
+        get() = prefs.getBoolean(KEY_V839NOTIFYAUTOBADGE839, false)
+        set(value) = prefs.edit().putBoolean(KEY_V839NOTIFYAUTOBADGE839, value).apply()
+
+    var v839nullAutoSafety839: Boolean
+        get() = prefs.getBoolean(KEY_V839NULLAUTOSAFETY839, false)
+        set(value) = prefs.edit().putBoolean(KEY_V839NULLAUTOSAFETY839, value).apply()
+
+    var v839numberAutoFormat839: Boolean
+        get() = prefs.getBoolean(KEY_V839NUMBERAUTOFORMAT839, false)
+        set(value) = prefs.edit().putBoolean(KEY_V839NUMBERAUTOFORMAT839, value).apply()
+
+    var v839objectAutoPool839: Boolean
+        get() = prefs.getBoolean(KEY_V839OBJECTAUTOPOOL839, false)
+        set(value) = prefs.edit().putBoolean(KEY_V839OBJECTAUTOPOOL839, value).apply()
+
+    var v839observeAutoWatch839: Boolean
+        get() = prefs.getBoolean(KEY_V839OBSERVEAUTOWATCH839, false)
+        set(value) = prefs.edit().putBoolean(KEY_V839OBSERVEAUTOWATCH839, value).apply()
+
+    var v839offsetAutoCalc839: Boolean
+        get() = prefs.getBoolean(KEY_V839OFFSETAUTOCALC839, false)
+        set(value) = prefs.edit().putBoolean(KEY_V839OFFSETAUTOCALC839, value).apply()
+
+    var v839oldAutoMigrate839: Boolean
+        get() = prefs.getBoolean(KEY_V839OLDAUTOMIGRATE839, false)
+        set(value) = prefs.edit().putBoolean(KEY_V839OLDAUTOMIGRATE839, value).apply()
+
+    var v839openAutoLink839: Boolean
+        get() = prefs.getBoolean(KEY_V839OPENAUTOLINK839, false)
+        set(value) = prefs.edit().putBoolean(KEY_V839OPENAUTOLINK839, value).apply()
+
+    var v839operateAutoBatch839: Boolean
+        get() = prefs.getBoolean(KEY_V839OPERATEAUTOBATCH839, false)
+        set(value) = prefs.edit().putBoolean(KEY_V839OPERATEAUTOBATCH839, value).apply()
+
+    var v839optionAutoPersist839: Boolean
+        get() = prefs.getBoolean(KEY_V839OPTIONAUTOPERSIST839, false)
+        set(value) = prefs.edit().putBoolean(KEY_V839OPTIONAUTOPERSIST839, value).apply()
+
+    var v840newAutoInstance840: Boolean
+        get() = prefs.getBoolean(KEY_V840NEWAUTOINSTANCE840, false)
+        set(value) = prefs.edit().putBoolean(KEY_V840NEWAUTOINSTANCE840, value).apply()
+
+    var v840nextAutoPlay840: Boolean
+        get() = prefs.getBoolean(KEY_V840NEXTAUTOPLAY840, false)
+        set(value) = prefs.edit().putBoolean(KEY_V840NEXTAUTOPLAY840, value).apply()
+
+    var v840nodeAutoCluster840: Boolean
+        get() = prefs.getBoolean(KEY_V840NODEAUTOCLUSTER840, false)
+        set(value) = prefs.edit().putBoolean(KEY_V840NODEAUTOCLUSTER840, value).apply()
+
+    var v840noneAutoFallback840: Boolean
+        get() = prefs.getBoolean(KEY_V840NONEAUTOFALLBACK840, false)
+        set(value) = prefs.edit().putBoolean(KEY_V840NONEAUTOFALLBACK840, value).apply()
+
+    var v840normalAutoDistribute840: Boolean
+        get() = prefs.getBoolean(KEY_V840NORMALAUTODISTRIBUTE840, false)
+        set(value) = prefs.edit().putBoolean(KEY_V840NORMALAUTODISTRIBUTE840, value).apply()
+
+    var v840notifyAutoBadge840: Boolean
+        get() = prefs.getBoolean(KEY_V840NOTIFYAUTOBADGE840, false)
+        set(value) = prefs.edit().putBoolean(KEY_V840NOTIFYAUTOBADGE840, value).apply()
+
+    var v840nullAutoSafety840: Boolean
+        get() = prefs.getBoolean(KEY_V840NULLAUTOSAFETY840, false)
+        set(value) = prefs.edit().putBoolean(KEY_V840NULLAUTOSAFETY840, value).apply()
+
+    var v840numberAutoFormat840: Boolean
+        get() = prefs.getBoolean(KEY_V840NUMBERAUTOFORMAT840, false)
+        set(value) = prefs.edit().putBoolean(KEY_V840NUMBERAUTOFORMAT840, value).apply()
+
+    var v840objectAutoPool840: Boolean
+        get() = prefs.getBoolean(KEY_V840OBJECTAUTOPOOL840, false)
+        set(value) = prefs.edit().putBoolean(KEY_V840OBJECTAUTOPOOL840, value).apply()
+
+    var v840observeAutoWatch840: Boolean
+        get() = prefs.getBoolean(KEY_V840OBSERVEAUTOWATCH840, false)
+        set(value) = prefs.edit().putBoolean(KEY_V840OBSERVEAUTOWATCH840, value).apply()
+
+    var v840offsetAutoCalc840: Boolean
+        get() = prefs.getBoolean(KEY_V840OFFSETAUTOCALC840, false)
+        set(value) = prefs.edit().putBoolean(KEY_V840OFFSETAUTOCALC840, value).apply()
+
+    var v840oldAutoMigrate840: Boolean
+        get() = prefs.getBoolean(KEY_V840OLDAUTOMIGRATE840, false)
+        set(value) = prefs.edit().putBoolean(KEY_V840OLDAUTOMIGRATE840, value).apply()
+
+    var v840openAutoLink840: Boolean
+        get() = prefs.getBoolean(KEY_V840OPENAUTOLINK840, false)
+        set(value) = prefs.edit().putBoolean(KEY_V840OPENAUTOLINK840, value).apply()
+
+    var v840operateAutoBatch840: Boolean
+        get() = prefs.getBoolean(KEY_V840OPERATEAUTOBATCH840, false)
+        set(value) = prefs.edit().putBoolean(KEY_V840OPERATEAUTOBATCH840, value).apply()
+
+    var v840optionAutoPersist840: Boolean
+        get() = prefs.getBoolean(KEY_V840OPTIONAUTOPERSIST840, false)
+        set(value) = prefs.edit().putBoolean(KEY_V840OPTIONAUTOPERSIST840, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -71430,5 +72030,155 @@ class AppPrefs(context: Context) {
         const val KEY_V830NEARAUTODETECT830 = "v830nearAutoDetect830" // v830 Near Auto Detect830
         const val KEY_V830NETAUTOTHROTTLE830 = "v830netAutoThrottle830" // v830 Net Auto Throttle830
         const val KEY_V830NETWORKAUTOPING830 = "v830networkAutoPing830" // v830 Network Auto Ping830
+        const val KEY_V831NEWAUTOINSTANCE831 = "v831newAutoInstance831" // v831 New Auto Instance831
+        const val KEY_V831NEXTAUTOPLAY831 = "v831nextAutoPlay831" // v831 Next Auto Play831
+        const val KEY_V831NODEAUTOCLUSTER831 = "v831nodeAutoCluster831" // v831 Node Auto Cluster831
+        const val KEY_V831NONEAUTOFALLBACK831 = "v831noneAutoFallback831" // v831 None Auto Fallback831
+        const val KEY_V831NORMALAUTODISTRIBUTE831 = "v831normalAutoDistribute831" // v831 Normal Auto Distribute831
+        const val KEY_V831NOTIFYAUTOBADGE831 = "v831notifyAutoBadge831" // v831 Notify Auto Badge831
+        const val KEY_V831NULLAUTOSAFETY831 = "v831nullAutoSafety831" // v831 Null Auto Safety831
+        const val KEY_V831NUMBERAUTOFORMAT831 = "v831numberAutoFormat831" // v831 Number Auto Format831
+        const val KEY_V831OBJECTAUTOPOOL831 = "v831objectAutoPool831" // v831 Object Auto Pool831
+        const val KEY_V831OBSERVEAUTOWATCH831 = "v831observeAutoWatch831" // v831 Observe Auto Watch831
+        const val KEY_V831OFFSETAUTOCALC831 = "v831offsetAutoCalc831" // v831 Offset Auto Calc831
+        const val KEY_V831OLDAUTOMIGRATE831 = "v831oldAutoMigrate831" // v831 Old Auto Migrate831
+        const val KEY_V831OPENAUTOLINK831 = "v831openAutoLink831" // v831 Open Auto Link831
+        const val KEY_V831OPERATEAUTOBATCH831 = "v831operateAutoBatch831" // v831 Operate Auto Batch831
+        const val KEY_V831OPTIONAUTOPERSIST831 = "v831optionAutoPersist831" // v831 Option Auto Persist831
+        const val KEY_V832NEWAUTOINSTANCE832 = "v832newAutoInstance832" // v832 New Auto Instance832
+        const val KEY_V832NEXTAUTOPLAY832 = "v832nextAutoPlay832" // v832 Next Auto Play832
+        const val KEY_V832NODEAUTOCLUSTER832 = "v832nodeAutoCluster832" // v832 Node Auto Cluster832
+        const val KEY_V832NONEAUTOFALLBACK832 = "v832noneAutoFallback832" // v832 None Auto Fallback832
+        const val KEY_V832NORMALAUTODISTRIBUTE832 = "v832normalAutoDistribute832" // v832 Normal Auto Distribute832
+        const val KEY_V832NOTIFYAUTOBADGE832 = "v832notifyAutoBadge832" // v832 Notify Auto Badge832
+        const val KEY_V832NULLAUTOSAFETY832 = "v832nullAutoSafety832" // v832 Null Auto Safety832
+        const val KEY_V832NUMBERAUTOFORMAT832 = "v832numberAutoFormat832" // v832 Number Auto Format832
+        const val KEY_V832OBJECTAUTOPOOL832 = "v832objectAutoPool832" // v832 Object Auto Pool832
+        const val KEY_V832OBSERVEAUTOWATCH832 = "v832observeAutoWatch832" // v832 Observe Auto Watch832
+        const val KEY_V832OFFSETAUTOCALC832 = "v832offsetAutoCalc832" // v832 Offset Auto Calc832
+        const val KEY_V832OLDAUTOMIGRATE832 = "v832oldAutoMigrate832" // v832 Old Auto Migrate832
+        const val KEY_V832OPENAUTOLINK832 = "v832openAutoLink832" // v832 Open Auto Link832
+        const val KEY_V832OPERATEAUTOBATCH832 = "v832operateAutoBatch832" // v832 Operate Auto Batch832
+        const val KEY_V832OPTIONAUTOPERSIST832 = "v832optionAutoPersist832" // v832 Option Auto Persist832
+        const val KEY_V833NEWAUTOINSTANCE833 = "v833newAutoInstance833" // v833 New Auto Instance833
+        const val KEY_V833NEXTAUTOPLAY833 = "v833nextAutoPlay833" // v833 Next Auto Play833
+        const val KEY_V833NODEAUTOCLUSTER833 = "v833nodeAutoCluster833" // v833 Node Auto Cluster833
+        const val KEY_V833NONEAUTOFALLBACK833 = "v833noneAutoFallback833" // v833 None Auto Fallback833
+        const val KEY_V833NORMALAUTODISTRIBUTE833 = "v833normalAutoDistribute833" // v833 Normal Auto Distribute833
+        const val KEY_V833NOTIFYAUTOBADGE833 = "v833notifyAutoBadge833" // v833 Notify Auto Badge833
+        const val KEY_V833NULLAUTOSAFETY833 = "v833nullAutoSafety833" // v833 Null Auto Safety833
+        const val KEY_V833NUMBERAUTOFORMAT833 = "v833numberAutoFormat833" // v833 Number Auto Format833
+        const val KEY_V833OBJECTAUTOPOOL833 = "v833objectAutoPool833" // v833 Object Auto Pool833
+        const val KEY_V833OBSERVEAUTOWATCH833 = "v833observeAutoWatch833" // v833 Observe Auto Watch833
+        const val KEY_V833OFFSETAUTOCALC833 = "v833offsetAutoCalc833" // v833 Offset Auto Calc833
+        const val KEY_V833OLDAUTOMIGRATE833 = "v833oldAutoMigrate833" // v833 Old Auto Migrate833
+        const val KEY_V833OPENAUTOLINK833 = "v833openAutoLink833" // v833 Open Auto Link833
+        const val KEY_V833OPERATEAUTOBATCH833 = "v833operateAutoBatch833" // v833 Operate Auto Batch833
+        const val KEY_V833OPTIONAUTOPERSIST833 = "v833optionAutoPersist833" // v833 Option Auto Persist833
+        const val KEY_V834NEWAUTOINSTANCE834 = "v834newAutoInstance834" // v834 New Auto Instance834
+        const val KEY_V834NEXTAUTOPLAY834 = "v834nextAutoPlay834" // v834 Next Auto Play834
+        const val KEY_V834NODEAUTOCLUSTER834 = "v834nodeAutoCluster834" // v834 Node Auto Cluster834
+        const val KEY_V834NONEAUTOFALLBACK834 = "v834noneAutoFallback834" // v834 None Auto Fallback834
+        const val KEY_V834NORMALAUTODISTRIBUTE834 = "v834normalAutoDistribute834" // v834 Normal Auto Distribute834
+        const val KEY_V834NOTIFYAUTOBADGE834 = "v834notifyAutoBadge834" // v834 Notify Auto Badge834
+        const val KEY_V834NULLAUTOSAFETY834 = "v834nullAutoSafety834" // v834 Null Auto Safety834
+        const val KEY_V834NUMBERAUTOFORMAT834 = "v834numberAutoFormat834" // v834 Number Auto Format834
+        const val KEY_V834OBJECTAUTOPOOL834 = "v834objectAutoPool834" // v834 Object Auto Pool834
+        const val KEY_V834OBSERVEAUTOWATCH834 = "v834observeAutoWatch834" // v834 Observe Auto Watch834
+        const val KEY_V834OFFSETAUTOCALC834 = "v834offsetAutoCalc834" // v834 Offset Auto Calc834
+        const val KEY_V834OLDAUTOMIGRATE834 = "v834oldAutoMigrate834" // v834 Old Auto Migrate834
+        const val KEY_V834OPENAUTOLINK834 = "v834openAutoLink834" // v834 Open Auto Link834
+        const val KEY_V834OPERATEAUTOBATCH834 = "v834operateAutoBatch834" // v834 Operate Auto Batch834
+        const val KEY_V834OPTIONAUTOPERSIST834 = "v834optionAutoPersist834" // v834 Option Auto Persist834
+        const val KEY_V835NEWAUTOINSTANCE835 = "v835newAutoInstance835" // v835 New Auto Instance835
+        const val KEY_V835NEXTAUTOPLAY835 = "v835nextAutoPlay835" // v835 Next Auto Play835
+        const val KEY_V835NODEAUTOCLUSTER835 = "v835nodeAutoCluster835" // v835 Node Auto Cluster835
+        const val KEY_V835NONEAUTOFALLBACK835 = "v835noneAutoFallback835" // v835 None Auto Fallback835
+        const val KEY_V835NORMALAUTODISTRIBUTE835 = "v835normalAutoDistribute835" // v835 Normal Auto Distribute835
+        const val KEY_V835NOTIFYAUTOBADGE835 = "v835notifyAutoBadge835" // v835 Notify Auto Badge835
+        const val KEY_V835NULLAUTOSAFETY835 = "v835nullAutoSafety835" // v835 Null Auto Safety835
+        const val KEY_V835NUMBERAUTOFORMAT835 = "v835numberAutoFormat835" // v835 Number Auto Format835
+        const val KEY_V835OBJECTAUTOPOOL835 = "v835objectAutoPool835" // v835 Object Auto Pool835
+        const val KEY_V835OBSERVEAUTOWATCH835 = "v835observeAutoWatch835" // v835 Observe Auto Watch835
+        const val KEY_V835OFFSETAUTOCALC835 = "v835offsetAutoCalc835" // v835 Offset Auto Calc835
+        const val KEY_V835OLDAUTOMIGRATE835 = "v835oldAutoMigrate835" // v835 Old Auto Migrate835
+        const val KEY_V835OPENAUTOLINK835 = "v835openAutoLink835" // v835 Open Auto Link835
+        const val KEY_V835OPERATEAUTOBATCH835 = "v835operateAutoBatch835" // v835 Operate Auto Batch835
+        const val KEY_V835OPTIONAUTOPERSIST835 = "v835optionAutoPersist835" // v835 Option Auto Persist835
+        const val KEY_V836NEWAUTOINSTANCE836 = "v836newAutoInstance836" // v836 New Auto Instance836
+        const val KEY_V836NEXTAUTOPLAY836 = "v836nextAutoPlay836" // v836 Next Auto Play836
+        const val KEY_V836NODEAUTOCLUSTER836 = "v836nodeAutoCluster836" // v836 Node Auto Cluster836
+        const val KEY_V836NONEAUTOFALLBACK836 = "v836noneAutoFallback836" // v836 None Auto Fallback836
+        const val KEY_V836NORMALAUTODISTRIBUTE836 = "v836normalAutoDistribute836" // v836 Normal Auto Distribute836
+        const val KEY_V836NOTIFYAUTOBADGE836 = "v836notifyAutoBadge836" // v836 Notify Auto Badge836
+        const val KEY_V836NULLAUTOSAFETY836 = "v836nullAutoSafety836" // v836 Null Auto Safety836
+        const val KEY_V836NUMBERAUTOFORMAT836 = "v836numberAutoFormat836" // v836 Number Auto Format836
+        const val KEY_V836OBJECTAUTOPOOL836 = "v836objectAutoPool836" // v836 Object Auto Pool836
+        const val KEY_V836OBSERVEAUTOWATCH836 = "v836observeAutoWatch836" // v836 Observe Auto Watch836
+        const val KEY_V836OFFSETAUTOCALC836 = "v836offsetAutoCalc836" // v836 Offset Auto Calc836
+        const val KEY_V836OLDAUTOMIGRATE836 = "v836oldAutoMigrate836" // v836 Old Auto Migrate836
+        const val KEY_V836OPENAUTOLINK836 = "v836openAutoLink836" // v836 Open Auto Link836
+        const val KEY_V836OPERATEAUTOBATCH836 = "v836operateAutoBatch836" // v836 Operate Auto Batch836
+        const val KEY_V836OPTIONAUTOPERSIST836 = "v836optionAutoPersist836" // v836 Option Auto Persist836
+        const val KEY_V837NEWAUTOINSTANCE837 = "v837newAutoInstance837" // v837 New Auto Instance837
+        const val KEY_V837NEXTAUTOPLAY837 = "v837nextAutoPlay837" // v837 Next Auto Play837
+        const val KEY_V837NODEAUTOCLUSTER837 = "v837nodeAutoCluster837" // v837 Node Auto Cluster837
+        const val KEY_V837NONEAUTOFALLBACK837 = "v837noneAutoFallback837" // v837 None Auto Fallback837
+        const val KEY_V837NORMALAUTODISTRIBUTE837 = "v837normalAutoDistribute837" // v837 Normal Auto Distribute837
+        const val KEY_V837NOTIFYAUTOBADGE837 = "v837notifyAutoBadge837" // v837 Notify Auto Badge837
+        const val KEY_V837NULLAUTOSAFETY837 = "v837nullAutoSafety837" // v837 Null Auto Safety837
+        const val KEY_V837NUMBERAUTOFORMAT837 = "v837numberAutoFormat837" // v837 Number Auto Format837
+        const val KEY_V837OBJECTAUTOPOOL837 = "v837objectAutoPool837" // v837 Object Auto Pool837
+        const val KEY_V837OBSERVEAUTOWATCH837 = "v837observeAutoWatch837" // v837 Observe Auto Watch837
+        const val KEY_V837OFFSETAUTOCALC837 = "v837offsetAutoCalc837" // v837 Offset Auto Calc837
+        const val KEY_V837OLDAUTOMIGRATE837 = "v837oldAutoMigrate837" // v837 Old Auto Migrate837
+        const val KEY_V837OPENAUTOLINK837 = "v837openAutoLink837" // v837 Open Auto Link837
+        const val KEY_V837OPERATEAUTOBATCH837 = "v837operateAutoBatch837" // v837 Operate Auto Batch837
+        const val KEY_V837OPTIONAUTOPERSIST837 = "v837optionAutoPersist837" // v837 Option Auto Persist837
+        const val KEY_V838NEWAUTOINSTANCE838 = "v838newAutoInstance838" // v838 New Auto Instance838
+        const val KEY_V838NEXTAUTOPLAY838 = "v838nextAutoPlay838" // v838 Next Auto Play838
+        const val KEY_V838NODEAUTOCLUSTER838 = "v838nodeAutoCluster838" // v838 Node Auto Cluster838
+        const val KEY_V838NONEAUTOFALLBACK838 = "v838noneAutoFallback838" // v838 None Auto Fallback838
+        const val KEY_V838NORMALAUTODISTRIBUTE838 = "v838normalAutoDistribute838" // v838 Normal Auto Distribute838
+        const val KEY_V838NOTIFYAUTOBADGE838 = "v838notifyAutoBadge838" // v838 Notify Auto Badge838
+        const val KEY_V838NULLAUTOSAFETY838 = "v838nullAutoSafety838" // v838 Null Auto Safety838
+        const val KEY_V838NUMBERAUTOFORMAT838 = "v838numberAutoFormat838" // v838 Number Auto Format838
+        const val KEY_V838OBJECTAUTOPOOL838 = "v838objectAutoPool838" // v838 Object Auto Pool838
+        const val KEY_V838OBSERVEAUTOWATCH838 = "v838observeAutoWatch838" // v838 Observe Auto Watch838
+        const val KEY_V838OFFSETAUTOCALC838 = "v838offsetAutoCalc838" // v838 Offset Auto Calc838
+        const val KEY_V838OLDAUTOMIGRATE838 = "v838oldAutoMigrate838" // v838 Old Auto Migrate838
+        const val KEY_V838OPENAUTOLINK838 = "v838openAutoLink838" // v838 Open Auto Link838
+        const val KEY_V838OPERATEAUTOBATCH838 = "v838operateAutoBatch838" // v838 Operate Auto Batch838
+        const val KEY_V838OPTIONAUTOPERSIST838 = "v838optionAutoPersist838" // v838 Option Auto Persist838
+        const val KEY_V839NEWAUTOINSTANCE839 = "v839newAutoInstance839" // v839 New Auto Instance839
+        const val KEY_V839NEXTAUTOPLAY839 = "v839nextAutoPlay839" // v839 Next Auto Play839
+        const val KEY_V839NODEAUTOCLUSTER839 = "v839nodeAutoCluster839" // v839 Node Auto Cluster839
+        const val KEY_V839NONEAUTOFALLBACK839 = "v839noneAutoFallback839" // v839 None Auto Fallback839
+        const val KEY_V839NORMALAUTODISTRIBUTE839 = "v839normalAutoDistribute839" // v839 Normal Auto Distribute839
+        const val KEY_V839NOTIFYAUTOBADGE839 = "v839notifyAutoBadge839" // v839 Notify Auto Badge839
+        const val KEY_V839NULLAUTOSAFETY839 = "v839nullAutoSafety839" // v839 Null Auto Safety839
+        const val KEY_V839NUMBERAUTOFORMAT839 = "v839numberAutoFormat839" // v839 Number Auto Format839
+        const val KEY_V839OBJECTAUTOPOOL839 = "v839objectAutoPool839" // v839 Object Auto Pool839
+        const val KEY_V839OBSERVEAUTOWATCH839 = "v839observeAutoWatch839" // v839 Observe Auto Watch839
+        const val KEY_V839OFFSETAUTOCALC839 = "v839offsetAutoCalc839" // v839 Offset Auto Calc839
+        const val KEY_V839OLDAUTOMIGRATE839 = "v839oldAutoMigrate839" // v839 Old Auto Migrate839
+        const val KEY_V839OPENAUTOLINK839 = "v839openAutoLink839" // v839 Open Auto Link839
+        const val KEY_V839OPERATEAUTOBATCH839 = "v839operateAutoBatch839" // v839 Operate Auto Batch839
+        const val KEY_V839OPTIONAUTOPERSIST839 = "v839optionAutoPersist839" // v839 Option Auto Persist839
+        const val KEY_V840NEWAUTOINSTANCE840 = "v840newAutoInstance840" // v840 New Auto Instance840
+        const val KEY_V840NEXTAUTOPLAY840 = "v840nextAutoPlay840" // v840 Next Auto Play840
+        const val KEY_V840NODEAUTOCLUSTER840 = "v840nodeAutoCluster840" // v840 Node Auto Cluster840
+        const val KEY_V840NONEAUTOFALLBACK840 = "v840noneAutoFallback840" // v840 None Auto Fallback840
+        const val KEY_V840NORMALAUTODISTRIBUTE840 = "v840normalAutoDistribute840" // v840 Normal Auto Distribute840
+        const val KEY_V840NOTIFYAUTOBADGE840 = "v840notifyAutoBadge840" // v840 Notify Auto Badge840
+        const val KEY_V840NULLAUTOSAFETY840 = "v840nullAutoSafety840" // v840 Null Auto Safety840
+        const val KEY_V840NUMBERAUTOFORMAT840 = "v840numberAutoFormat840" // v840 Number Auto Format840
+        const val KEY_V840OBJECTAUTOPOOL840 = "v840objectAutoPool840" // v840 Object Auto Pool840
+        const val KEY_V840OBSERVEAUTOWATCH840 = "v840observeAutoWatch840" // v840 Observe Auto Watch840
+        const val KEY_V840OFFSETAUTOCALC840 = "v840offsetAutoCalc840" // v840 Offset Auto Calc840
+        const val KEY_V840OLDAUTOMIGRATE840 = "v840oldAutoMigrate840" // v840 Old Auto Migrate840
+        const val KEY_V840OPENAUTOLINK840 = "v840openAutoLink840" // v840 Open Auto Link840
+        const val KEY_V840OPERATEAUTOBATCH840 = "v840operateAutoBatch840" // v840 Operate Auto Batch840
+        const val KEY_V840OPTIONAUTOPERSIST840 = "v840optionAutoPersist840" // v840 Option Auto Persist840
     }
 }
