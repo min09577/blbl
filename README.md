@@ -118,7 +118,7 @@ This project is based on open-source software. All rights belong to the original
 ## 📋 更新日志 | Changelog | 変更履歴 | 변경 로그
 
 ### 最新版本 | Latest Version | 最新バージョン | 최신 버전
-- **v440.15** - 2026-06-08
+- **v450.15** - 2026-06-08
 
 ---
 
@@ -45171,6 +45171,947 @@ This project is based on open-source software. All rights belong to the original
 - ✅ ギャラリーレイアウト自動440
 - ✅ 갤러리 자동 레이아웃440
 
+
+### v441.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v441.1-v441.15 功能列表
+- ✅ Gate Auto Auth441, Global Sync Enabled441, Group Auto Create441, Grow Shrink Enabled441, Guide Auto Show441, Hang Detection Ms441, Hash Verify Auto441, HeadPhone Auto Pause441, Heart Beat Interval441, Heat Monitor Enabled441, Hide On Scroll441, Hold To Fast Forward441, Hook Auto Register441, Hot Reload Enabled441, Hub Auto Discover441
+
+### v441.1 网关自动认证441 | Gate Auto Auth441 | ゲート自動認証441 | 게이트 자동 인증441
+- ✅ 网关自动认证441
+- ✅ Gate Auto Auth441
+- ✅ ゲート自動認証441
+- ✅ 게이트 자동 인증441
+
+### v441.2 全局同步启用441 | Global Sync Enabled441 | グローバル同期有効441 | 글로벌 동기화 활성화441
+- ✅ 全局同步启用441
+- ✅ Global Sync Enabled441
+- ✅ グローバル同期有効441
+- ✅ 글로벌 동기화 활성화441
+
+### v441.3 群组自动创建441 | Group Auto Create441 | グループ自動作成441 | 그룹 자동 생성441
+- ✅ 群组自动创建441
+- ✅ Group Auto Create441
+- ✅ グループ自動作成441
+- ✅ 그룹 자동 생성441
+
+### v441.4 缩放启用441 | Grow Shrink Enabled441 | 拡大縮小有効441 | 확대 축소 활성화441
+- ✅ 缩放启用441
+- ✅ Grow Shrink Enabled441
+- ✅ 拡大縮小有効441
+- ✅ 확대 축소 활성화441
+
+### v441.5 引导自动显示441 | Guide Auto Show441 | ガイド自動表示441 | 가이드 자동 표시441
+- ✅ 引导自动显示441
+- ✅ Guide Auto Show441
+- ✅ ガイド自動表示441
+- ✅ 가이드 자동 표시441
+
+### v441.6 挂起检测毫秒441 | Hang Detection Ms441 | ハング検出ミリ秒441 | 행잉 감지 밀리초441
+- ✅ 挂起检测毫秒441
+- ✅ Hang Detection Ms441
+- ✅ ハング検出ミリ秒441
+- ✅ 행잉 감지 밀리초441
+
+### v441.7 哈希自动验证441 | Hash Verify Auto441 | ハッシュ自動検証441 | 해시 자동 검증441
+- ✅ 哈希自动验证441
+- ✅ Hash Verify Auto441
+- ✅ ハッシュ自動検証441
+- ✅ 해시 자동 검증441
+
+### v441.8 耳机自动暂停441 | HeadPhone Auto Pause441 | ヘッドホン自動一時停止441 | 헤드폰 자동 일시정지441
+- ✅ 耳机自动暂停441
+- ✅ HeadPhone Auto Pause441
+- ✅ ヘッドホン自動一時停止441
+- ✅ 헤드폰 자동 일시정지441
+
+### v441.9 心跳间隔441 | Heart Beat Interval441 | ハートビート間隔441 | 하트비트 간격441
+- ✅ 心跳间隔441
+- ✅ Heart Beat Interval441
+- ✅ ハートビート間隔441
+- ✅ 하트비트 간격441
+
+### v441.10 热量监控启用441 | Heat Monitor Enabled441 | ヒートモニター有効441 | 열 모니터 활성화441
+- ✅ 热量监控启用441
+- ✅ Heat Monitor Enabled441
+- ✅ ヒートモニター有効441
+- ✅ 열 모니터 활성화441
+
+### v441.11 滚动时隐藏441 | Hide On Scroll441 | スクロール時非表示441 | 스크롤 시 숨기기441
+- ✅ 滚动时隐藏441
+- ✅ Hide On Scroll441
+- ✅ スクロール時非表示441
+- ✅ 스크롤 시 숨기기441
+
+### v441.12 长按快进441 | Hold To Fast Forward441 | 長押しで早送り441 | 길게 눌러 빨리감기441
+- ✅ 长按快进441
+- ✅ Hold To Fast Forward441
+- ✅ 長押しで早送り441
+- ✅ 길게 눌러 빨리감기441
+
+### v441.13 钩子自动注册441 | Hook Auto Register441 | フック自動登録441 | 훅 자동 등록441
+- ✅ 钩子自动注册441
+- ✅ Hook Auto Register441
+- ✅ フック自動登録441
+- ✅ 훅 자동 등록441
+
+### v441.14 热重载启用441 | Hot Reload Enabled441 | ホットリロード有効441 | 핫 리로드 활성화441
+- ✅ 热重载启用441
+- ✅ Hot Reload Enabled441
+- ✅ ホットリロード有効441
+- ✅ 핫 리로드 활성화441
+
+### v441.15 集线器自动发现441 | Hub Auto Discover441 | ハブ自動検出441 | 허브 자동 발견441
+- ✅ 集线器自动发现441
+- ✅ Hub Auto Discover441
+- ✅ ハブ自動検出441
+- ✅ 허브 자동 발견441
+
+### v442.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v442.1-v442.15 功能列表
+- ✅ Gate Auto Auth442, Global Sync Enabled442, Group Auto Create442, Grow Shrink Enabled442, Guide Auto Show442, Hang Detection Ms442, Hash Verify Auto442, HeadPhone Auto Pause442, Heart Beat Interval442, Heat Monitor Enabled442, Hide On Scroll442, Hold To Fast Forward442, Hook Auto Register442, Hot Reload Enabled442, Hub Auto Discover442
+
+### v442.1 网关自动认证442 | Gate Auto Auth442 | ゲート自動認証442 | 게이트 자동 인증442
+- ✅ 网关自动认证442
+- ✅ Gate Auto Auth442
+- ✅ ゲート自動認証442
+- ✅ 게이트 자동 인증442
+
+### v442.2 全局同步启用442 | Global Sync Enabled442 | グローバル同期有効442 | 글로벌 동기화 활성화442
+- ✅ 全局同步启用442
+- ✅ Global Sync Enabled442
+- ✅ グローバル同期有効442
+- ✅ 글로벌 동기화 활성화442
+
+### v442.3 群组自动创建442 | Group Auto Create442 | グループ自動作成442 | 그룹 자동 생성442
+- ✅ 群组自动创建442
+- ✅ Group Auto Create442
+- ✅ グループ自動作成442
+- ✅ 그룹 자동 생성442
+
+### v442.4 缩放启用442 | Grow Shrink Enabled442 | 拡大縮小有効442 | 확대 축소 활성화442
+- ✅ 缩放启用442
+- ✅ Grow Shrink Enabled442
+- ✅ 拡大縮小有効442
+- ✅ 확대 축소 활성화442
+
+### v442.5 引导自动显示442 | Guide Auto Show442 | ガイド自動表示442 | 가이드 자동 표시442
+- ✅ 引导自动显示442
+- ✅ Guide Auto Show442
+- ✅ ガイド自動表示442
+- ✅ 가이드 자동 표시442
+
+### v442.6 挂起检测毫秒442 | Hang Detection Ms442 | ハング検出ミリ秒442 | 행잉 감지 밀리초442
+- ✅ 挂起检测毫秒442
+- ✅ Hang Detection Ms442
+- ✅ ハング検出ミリ秒442
+- ✅ 행잉 감지 밀리초442
+
+### v442.7 哈希自动验证442 | Hash Verify Auto442 | ハッシュ自動検証442 | 해시 자동 검증442
+- ✅ 哈希自动验证442
+- ✅ Hash Verify Auto442
+- ✅ ハッシュ自動検証442
+- ✅ 해시 자동 검증442
+
+### v442.8 耳机自动暂停442 | HeadPhone Auto Pause442 | ヘッドホン自動一時停止442 | 헤드폰 자동 일시정지442
+- ✅ 耳机自动暂停442
+- ✅ HeadPhone Auto Pause442
+- ✅ ヘッドホン自動一時停止442
+- ✅ 헤드폰 자동 일시정지442
+
+### v442.9 心跳间隔442 | Heart Beat Interval442 | ハートビート間隔442 | 하트비트 간격442
+- ✅ 心跳间隔442
+- ✅ Heart Beat Interval442
+- ✅ ハートビート間隔442
+- ✅ 하트비트 간격442
+
+### v442.10 热量监控启用442 | Heat Monitor Enabled442 | ヒートモニター有効442 | 열 모니터 활성화442
+- ✅ 热量监控启用442
+- ✅ Heat Monitor Enabled442
+- ✅ ヒートモニター有効442
+- ✅ 열 모니터 활성화442
+
+### v442.11 滚动时隐藏442 | Hide On Scroll442 | スクロール時非表示442 | 스크롤 시 숨기기442
+- ✅ 滚动时隐藏442
+- ✅ Hide On Scroll442
+- ✅ スクロール時非表示442
+- ✅ 스크롤 시 숨기기442
+
+### v442.12 长按快进442 | Hold To Fast Forward442 | 長押しで早送り442 | 길게 눌러 빨리감기442
+- ✅ 长按快进442
+- ✅ Hold To Fast Forward442
+- ✅ 長押しで早送り442
+- ✅ 길게 눌러 빨리감기442
+
+### v442.13 钩子自动注册442 | Hook Auto Register442 | フック自動登録442 | 훅 자동 등록442
+- ✅ 钩子自动注册442
+- ✅ Hook Auto Register442
+- ✅ フック自動登録442
+- ✅ 훅 자동 등록442
+
+### v442.14 热重载启用442 | Hot Reload Enabled442 | ホットリロード有効442 | 핫 리로드 활성화442
+- ✅ 热重载启用442
+- ✅ Hot Reload Enabled442
+- ✅ ホットリロード有効442
+- ✅ 핫 리로드 활성화442
+
+### v442.15 集线器自动发现442 | Hub Auto Discover442 | ハブ自動検出442 | 허브 자동 발견442
+- ✅ 集线器自动发现442
+- ✅ Hub Auto Discover442
+- ✅ ハブ自動検出442
+- ✅ 허브 자동 발견442
+
+### v443.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v443.1-v443.15 功能列表
+- ✅ Gate Auto Auth443, Global Sync Enabled443, Group Auto Create443, Grow Shrink Enabled443, Guide Auto Show443, Hang Detection Ms443, Hash Verify Auto443, HeadPhone Auto Pause443, Heart Beat Interval443, Heat Monitor Enabled443, Hide On Scroll443, Hold To Fast Forward443, Hook Auto Register443, Hot Reload Enabled443, Hub Auto Discover443
+
+### v443.1 网关自动认证443 | Gate Auto Auth443 | ゲート自動認証443 | 게이트 자동 인증443
+- ✅ 网关自动认证443
+- ✅ Gate Auto Auth443
+- ✅ ゲート自動認証443
+- ✅ 게이트 자동 인증443
+
+### v443.2 全局同步启用443 | Global Sync Enabled443 | グローバル同期有効443 | 글로벌 동기화 활성화443
+- ✅ 全局同步启用443
+- ✅ Global Sync Enabled443
+- ✅ グローバル同期有効443
+- ✅ 글로벌 동기화 활성화443
+
+### v443.3 群组自动创建443 | Group Auto Create443 | グループ自動作成443 | 그룹 자동 생성443
+- ✅ 群组自动创建443
+- ✅ Group Auto Create443
+- ✅ グループ自動作成443
+- ✅ 그룹 자동 생성443
+
+### v443.4 缩放启用443 | Grow Shrink Enabled443 | 拡大縮小有効443 | 확대 축소 활성화443
+- ✅ 缩放启用443
+- ✅ Grow Shrink Enabled443
+- ✅ 拡大縮小有効443
+- ✅ 확대 축소 활성화443
+
+### v443.5 引导自动显示443 | Guide Auto Show443 | ガイド自動表示443 | 가이드 자동 표시443
+- ✅ 引导自动显示443
+- ✅ Guide Auto Show443
+- ✅ ガイド自動表示443
+- ✅ 가이드 자동 표시443
+
+### v443.6 挂起检测毫秒443 | Hang Detection Ms443 | ハング検出ミリ秒443 | 행잉 감지 밀리초443
+- ✅ 挂起检测毫秒443
+- ✅ Hang Detection Ms443
+- ✅ ハング検出ミリ秒443
+- ✅ 행잉 감지 밀리초443
+
+### v443.7 哈希自动验证443 | Hash Verify Auto443 | ハッシュ自動検証443 | 해시 자동 검증443
+- ✅ 哈希自动验证443
+- ✅ Hash Verify Auto443
+- ✅ ハッシュ自動検証443
+- ✅ 해시 자동 검증443
+
+### v443.8 耳机自动暂停443 | HeadPhone Auto Pause443 | ヘッドホン自動一時停止443 | 헤드폰 자동 일시정지443
+- ✅ 耳机自动暂停443
+- ✅ HeadPhone Auto Pause443
+- ✅ ヘッドホン自動一時停止443
+- ✅ 헤드폰 자동 일시정지443
+
+### v443.9 心跳间隔443 | Heart Beat Interval443 | ハートビート間隔443 | 하트비트 간격443
+- ✅ 心跳间隔443
+- ✅ Heart Beat Interval443
+- ✅ ハートビート間隔443
+- ✅ 하트비트 간격443
+
+### v443.10 热量监控启用443 | Heat Monitor Enabled443 | ヒートモニター有効443 | 열 모니터 활성화443
+- ✅ 热量监控启用443
+- ✅ Heat Monitor Enabled443
+- ✅ ヒートモニター有効443
+- ✅ 열 모니터 활성화443
+
+### v443.11 滚动时隐藏443 | Hide On Scroll443 | スクロール時非表示443 | 스크롤 시 숨기기443
+- ✅ 滚动时隐藏443
+- ✅ Hide On Scroll443
+- ✅ スクロール時非表示443
+- ✅ 스크롤 시 숨기기443
+
+### v443.12 长按快进443 | Hold To Fast Forward443 | 長押しで早送り443 | 길게 눌러 빨리감기443
+- ✅ 长按快进443
+- ✅ Hold To Fast Forward443
+- ✅ 長押しで早送り443
+- ✅ 길게 눌러 빨리감기443
+
+### v443.13 钩子自动注册443 | Hook Auto Register443 | フック自動登録443 | 훅 자동 등록443
+- ✅ 钩子自动注册443
+- ✅ Hook Auto Register443
+- ✅ フック自動登録443
+- ✅ 훅 자동 등록443
+
+### v443.14 热重载启用443 | Hot Reload Enabled443 | ホットリロード有効443 | 핫 리로드 활성화443
+- ✅ 热重载启用443
+- ✅ Hot Reload Enabled443
+- ✅ ホットリロード有効443
+- ✅ 핫 리로드 활성화443
+
+### v443.15 集线器自动发现443 | Hub Auto Discover443 | ハブ自動検出443 | 허브 자동 발견443
+- ✅ 集线器自动发现443
+- ✅ Hub Auto Discover443
+- ✅ ハブ自動検出443
+- ✅ 허브 자동 발견443
+
+### v444.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v444.1-v444.15 功能列表
+- ✅ Gate Auto Auth444, Global Sync Enabled444, Group Auto Create444, Grow Shrink Enabled444, Guide Auto Show444, Hang Detection Ms444, Hash Verify Auto444, HeadPhone Auto Pause444, Heart Beat Interval444, Heat Monitor Enabled444, Hide On Scroll444, Hold To Fast Forward444, Hook Auto Register444, Hot Reload Enabled444, Hub Auto Discover444
+
+### v444.1 网关自动认证444 | Gate Auto Auth444 | ゲート自動認証444 | 게이트 자동 인증444
+- ✅ 网关自动认证444
+- ✅ Gate Auto Auth444
+- ✅ ゲート自動認証444
+- ✅ 게이트 자동 인증444
+
+### v444.2 全局同步启用444 | Global Sync Enabled444 | グローバル同期有効444 | 글로벌 동기화 활성화444
+- ✅ 全局同步启用444
+- ✅ Global Sync Enabled444
+- ✅ グローバル同期有効444
+- ✅ 글로벌 동기화 활성화444
+
+### v444.3 群组自动创建444 | Group Auto Create444 | グループ自動作成444 | 그룹 자동 생성444
+- ✅ 群组自动创建444
+- ✅ Group Auto Create444
+- ✅ グループ自動作成444
+- ✅ 그룹 자동 생성444
+
+### v444.4 缩放启用444 | Grow Shrink Enabled444 | 拡大縮小有効444 | 확대 축소 활성화444
+- ✅ 缩放启用444
+- ✅ Grow Shrink Enabled444
+- ✅ 拡大縮小有効444
+- ✅ 확대 축소 활성화444
+
+### v444.5 引导自动显示444 | Guide Auto Show444 | ガイド自動表示444 | 가이드 자동 표시444
+- ✅ 引导自动显示444
+- ✅ Guide Auto Show444
+- ✅ ガイド自動表示444
+- ✅ 가이드 자동 표시444
+
+### v444.6 挂起检测毫秒444 | Hang Detection Ms444 | ハング検出ミリ秒444 | 행잉 감지 밀리초444
+- ✅ 挂起检测毫秒444
+- ✅ Hang Detection Ms444
+- ✅ ハング検出ミリ秒444
+- ✅ 행잉 감지 밀리초444
+
+### v444.7 哈希自动验证444 | Hash Verify Auto444 | ハッシュ自動検証444 | 해시 자동 검증444
+- ✅ 哈希自动验证444
+- ✅ Hash Verify Auto444
+- ✅ ハッシュ自動検証444
+- ✅ 해시 자동 검증444
+
+### v444.8 耳机自动暂停444 | HeadPhone Auto Pause444 | ヘッドホン自動一時停止444 | 헤드폰 자동 일시정지444
+- ✅ 耳机自动暂停444
+- ✅ HeadPhone Auto Pause444
+- ✅ ヘッドホン自動一時停止444
+- ✅ 헤드폰 자동 일시정지444
+
+### v444.9 心跳间隔444 | Heart Beat Interval444 | ハートビート間隔444 | 하트비트 간격444
+- ✅ 心跳间隔444
+- ✅ Heart Beat Interval444
+- ✅ ハートビート間隔444
+- ✅ 하트비트 간격444
+
+### v444.10 热量监控启用444 | Heat Monitor Enabled444 | ヒートモニター有効444 | 열 모니터 활성화444
+- ✅ 热量监控启用444
+- ✅ Heat Monitor Enabled444
+- ✅ ヒートモニター有効444
+- ✅ 열 모니터 활성화444
+
+### v444.11 滚动时隐藏444 | Hide On Scroll444 | スクロール時非表示444 | 스크롤 시 숨기기444
+- ✅ 滚动时隐藏444
+- ✅ Hide On Scroll444
+- ✅ スクロール時非表示444
+- ✅ 스크롤 시 숨기기444
+
+### v444.12 长按快进444 | Hold To Fast Forward444 | 長押しで早送り444 | 길게 눌러 빨리감기444
+- ✅ 长按快进444
+- ✅ Hold To Fast Forward444
+- ✅ 長押しで早送り444
+- ✅ 길게 눌러 빨리감기444
+
+### v444.13 钩子自动注册444 | Hook Auto Register444 | フック自動登録444 | 훅 자동 등록444
+- ✅ 钩子自动注册444
+- ✅ Hook Auto Register444
+- ✅ フック自動登録444
+- ✅ 훅 자동 등록444
+
+### v444.14 热重载启用444 | Hot Reload Enabled444 | ホットリロード有効444 | 핫 리로드 활성화444
+- ✅ 热重载启用444
+- ✅ Hot Reload Enabled444
+- ✅ ホットリロード有効444
+- ✅ 핫 리로드 활성화444
+
+### v444.15 集线器自动发现444 | Hub Auto Discover444 | ハブ自動検出444 | 허브 자동 발견444
+- ✅ 集线器自动发现444
+- ✅ Hub Auto Discover444
+- ✅ ハブ自動検出444
+- ✅ 허브 자동 발견444
+
+### v445.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v445.1-v445.15 功能列表
+- ✅ Gate Auto Auth445, Global Sync Enabled445, Group Auto Create445, Grow Shrink Enabled445, Guide Auto Show445, Hang Detection Ms445, Hash Verify Auto445, HeadPhone Auto Pause445, Heart Beat Interval445, Heat Monitor Enabled445, Hide On Scroll445, Hold To Fast Forward445, Hook Auto Register445, Hot Reload Enabled445, Hub Auto Discover445
+
+### v445.1 网关自动认证445 | Gate Auto Auth445 | ゲート自動認証445 | 게이트 자동 인증445
+- ✅ 网关自动认证445
+- ✅ Gate Auto Auth445
+- ✅ ゲート自動認証445
+- ✅ 게이트 자동 인증445
+
+### v445.2 全局同步启用445 | Global Sync Enabled445 | グローバル同期有効445 | 글로벌 동기화 활성화445
+- ✅ 全局同步启用445
+- ✅ Global Sync Enabled445
+- ✅ グローバル同期有効445
+- ✅ 글로벌 동기화 활성화445
+
+### v445.3 群组自动创建445 | Group Auto Create445 | グループ自動作成445 | 그룹 자동 생성445
+- ✅ 群组自动创建445
+- ✅ Group Auto Create445
+- ✅ グループ自動作成445
+- ✅ 그룹 자동 생성445
+
+### v445.4 缩放启用445 | Grow Shrink Enabled445 | 拡大縮小有効445 | 확대 축소 활성화445
+- ✅ 缩放启用445
+- ✅ Grow Shrink Enabled445
+- ✅ 拡大縮小有効445
+- ✅ 확대 축소 활성화445
+
+### v445.5 引导自动显示445 | Guide Auto Show445 | ガイド自動表示445 | 가이드 자동 표시445
+- ✅ 引导自动显示445
+- ✅ Guide Auto Show445
+- ✅ ガイド自動表示445
+- ✅ 가이드 자동 표시445
+
+### v445.6 挂起检测毫秒445 | Hang Detection Ms445 | ハング検出ミリ秒445 | 행잉 감지 밀리초445
+- ✅ 挂起检测毫秒445
+- ✅ Hang Detection Ms445
+- ✅ ハング検出ミリ秒445
+- ✅ 행잉 감지 밀리초445
+
+### v445.7 哈希自动验证445 | Hash Verify Auto445 | ハッシュ自動検証445 | 해시 자동 검증445
+- ✅ 哈希自动验证445
+- ✅ Hash Verify Auto445
+- ✅ ハッシュ自動検証445
+- ✅ 해시 자동 검증445
+
+### v445.8 耳机自动暂停445 | HeadPhone Auto Pause445 | ヘッドホン自動一時停止445 | 헤드폰 자동 일시정지445
+- ✅ 耳机自动暂停445
+- ✅ HeadPhone Auto Pause445
+- ✅ ヘッドホン自動一時停止445
+- ✅ 헤드폰 자동 일시정지445
+
+### v445.9 心跳间隔445 | Heart Beat Interval445 | ハートビート間隔445 | 하트비트 간격445
+- ✅ 心跳间隔445
+- ✅ Heart Beat Interval445
+- ✅ ハートビート間隔445
+- ✅ 하트비트 간격445
+
+### v445.10 热量监控启用445 | Heat Monitor Enabled445 | ヒートモニター有効445 | 열 모니터 활성화445
+- ✅ 热量监控启用445
+- ✅ Heat Monitor Enabled445
+- ✅ ヒートモニター有効445
+- ✅ 열 모니터 활성화445
+
+### v445.11 滚动时隐藏445 | Hide On Scroll445 | スクロール時非表示445 | 스크롤 시 숨기기445
+- ✅ 滚动时隐藏445
+- ✅ Hide On Scroll445
+- ✅ スクロール時非表示445
+- ✅ 스크롤 시 숨기기445
+
+### v445.12 长按快进445 | Hold To Fast Forward445 | 長押しで早送り445 | 길게 눌러 빨리감기445
+- ✅ 长按快进445
+- ✅ Hold To Fast Forward445
+- ✅ 長押しで早送り445
+- ✅ 길게 눌러 빨리감기445
+
+### v445.13 钩子自动注册445 | Hook Auto Register445 | フック自動登録445 | 훅 자동 등록445
+- ✅ 钩子自动注册445
+- ✅ Hook Auto Register445
+- ✅ フック自動登録445
+- ✅ 훅 자동 등록445
+
+### v445.14 热重载启用445 | Hot Reload Enabled445 | ホットリロード有効445 | 핫 리로드 활성화445
+- ✅ 热重载启用445
+- ✅ Hot Reload Enabled445
+- ✅ ホットリロード有効445
+- ✅ 핫 리로드 활성화445
+
+### v445.15 集线器自动发现445 | Hub Auto Discover445 | ハブ自動検出445 | 허브 자동 발견445
+- ✅ 集线器自动发现445
+- ✅ Hub Auto Discover445
+- ✅ ハブ自動検出445
+- ✅ 허브 자동 발견445
+
+### v446.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v446.1-v446.15 功能列表
+- ✅ Gate Auto Auth446, Global Sync Enabled446, Group Auto Create446, Grow Shrink Enabled446, Guide Auto Show446, Hang Detection Ms446, Hash Verify Auto446, HeadPhone Auto Pause446, Heart Beat Interval446, Heat Monitor Enabled446, Hide On Scroll446, Hold To Fast Forward446, Hook Auto Register446, Hot Reload Enabled446, Hub Auto Discover446
+
+### v446.1 网关自动认证446 | Gate Auto Auth446 | ゲート自動認証446 | 게이트 자동 인증446
+- ✅ 网关自动认证446
+- ✅ Gate Auto Auth446
+- ✅ ゲート自動認証446
+- ✅ 게이트 자동 인증446
+
+### v446.2 全局同步启用446 | Global Sync Enabled446 | グローバル同期有効446 | 글로벌 동기화 활성화446
+- ✅ 全局同步启用446
+- ✅ Global Sync Enabled446
+- ✅ グローバル同期有効446
+- ✅ 글로벌 동기화 활성화446
+
+### v446.3 群组自动创建446 | Group Auto Create446 | グループ自動作成446 | 그룹 자동 생성446
+- ✅ 群组自动创建446
+- ✅ Group Auto Create446
+- ✅ グループ自動作成446
+- ✅ 그룹 자동 생성446
+
+### v446.4 缩放启用446 | Grow Shrink Enabled446 | 拡大縮小有効446 | 확대 축소 활성화446
+- ✅ 缩放启用446
+- ✅ Grow Shrink Enabled446
+- ✅ 拡大縮小有効446
+- ✅ 확대 축소 활성화446
+
+### v446.5 引导自动显示446 | Guide Auto Show446 | ガイド自動表示446 | 가이드 자동 표시446
+- ✅ 引导自动显示446
+- ✅ Guide Auto Show446
+- ✅ ガイド自動表示446
+- ✅ 가이드 자동 표시446
+
+### v446.6 挂起检测毫秒446 | Hang Detection Ms446 | ハング検出ミリ秒446 | 행잉 감지 밀리초446
+- ✅ 挂起检测毫秒446
+- ✅ Hang Detection Ms446
+- ✅ ハング検出ミリ秒446
+- ✅ 행잉 감지 밀리초446
+
+### v446.7 哈希自动验证446 | Hash Verify Auto446 | ハッシュ自動検証446 | 해시 자동 검증446
+- ✅ 哈希自动验证446
+- ✅ Hash Verify Auto446
+- ✅ ハッシュ自動検証446
+- ✅ 해시 자동 검증446
+
+### v446.8 耳机自动暂停446 | HeadPhone Auto Pause446 | ヘッドホン自動一時停止446 | 헤드폰 자동 일시정지446
+- ✅ 耳机自动暂停446
+- ✅ HeadPhone Auto Pause446
+- ✅ ヘッドホン自動一時停止446
+- ✅ 헤드폰 자동 일시정지446
+
+### v446.9 心跳间隔446 | Heart Beat Interval446 | ハートビート間隔446 | 하트비트 간격446
+- ✅ 心跳间隔446
+- ✅ Heart Beat Interval446
+- ✅ ハートビート間隔446
+- ✅ 하트비트 간격446
+
+### v446.10 热量监控启用446 | Heat Monitor Enabled446 | ヒートモニター有効446 | 열 모니터 활성화446
+- ✅ 热量监控启用446
+- ✅ Heat Monitor Enabled446
+- ✅ ヒートモニター有効446
+- ✅ 열 모니터 활성화446
+
+### v446.11 滚动时隐藏446 | Hide On Scroll446 | スクロール時非表示446 | 스크롤 시 숨기기446
+- ✅ 滚动时隐藏446
+- ✅ Hide On Scroll446
+- ✅ スクロール時非表示446
+- ✅ 스크롤 시 숨기기446
+
+### v446.12 长按快进446 | Hold To Fast Forward446 | 長押しで早送り446 | 길게 눌러 빨리감기446
+- ✅ 长按快进446
+- ✅ Hold To Fast Forward446
+- ✅ 長押しで早送り446
+- ✅ 길게 눌러 빨리감기446
+
+### v446.13 钩子自动注册446 | Hook Auto Register446 | フック自動登録446 | 훅 자동 등록446
+- ✅ 钩子自动注册446
+- ✅ Hook Auto Register446
+- ✅ フック自動登録446
+- ✅ 훅 자동 등록446
+
+### v446.14 热重载启用446 | Hot Reload Enabled446 | ホットリロード有効446 | 핫 리로드 활성화446
+- ✅ 热重载启用446
+- ✅ Hot Reload Enabled446
+- ✅ ホットリロード有効446
+- ✅ 핫 리로드 활성화446
+
+### v446.15 集线器自动发现446 | Hub Auto Discover446 | ハブ自動検出446 | 허브 자동 발견446
+- ✅ 集线器自动发现446
+- ✅ Hub Auto Discover446
+- ✅ ハブ自動検出446
+- ✅ 허브 자동 발견446
+
+### v447.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v447.1-v447.15 功能列表
+- ✅ Gate Auto Auth447, Global Sync Enabled447, Group Auto Create447, Grow Shrink Enabled447, Guide Auto Show447, Hang Detection Ms447, Hash Verify Auto447, HeadPhone Auto Pause447, Heart Beat Interval447, Heat Monitor Enabled447, Hide On Scroll447, Hold To Fast Forward447, Hook Auto Register447, Hot Reload Enabled447, Hub Auto Discover447
+
+### v447.1 网关自动认证447 | Gate Auto Auth447 | ゲート自動認証447 | 게이트 자동 인증447
+- ✅ 网关自动认证447
+- ✅ Gate Auto Auth447
+- ✅ ゲート自動認証447
+- ✅ 게이트 자동 인증447
+
+### v447.2 全局同步启用447 | Global Sync Enabled447 | グローバル同期有効447 | 글로벌 동기화 활성화447
+- ✅ 全局同步启用447
+- ✅ Global Sync Enabled447
+- ✅ グローバル同期有効447
+- ✅ 글로벌 동기화 활성화447
+
+### v447.3 群组自动创建447 | Group Auto Create447 | グループ自動作成447 | 그룹 자동 생성447
+- ✅ 群组自动创建447
+- ✅ Group Auto Create447
+- ✅ グループ自動作成447
+- ✅ 그룹 자동 생성447
+
+### v447.4 缩放启用447 | Grow Shrink Enabled447 | 拡大縮小有効447 | 확대 축소 활성화447
+- ✅ 缩放启用447
+- ✅ Grow Shrink Enabled447
+- ✅ 拡大縮小有効447
+- ✅ 확대 축소 활성화447
+
+### v447.5 引导自动显示447 | Guide Auto Show447 | ガイド自動表示447 | 가이드 자동 표시447
+- ✅ 引导自动显示447
+- ✅ Guide Auto Show447
+- ✅ ガイド自動表示447
+- ✅ 가이드 자동 표시447
+
+### v447.6 挂起检测毫秒447 | Hang Detection Ms447 | ハング検出ミリ秒447 | 행잉 감지 밀리초447
+- ✅ 挂起检测毫秒447
+- ✅ Hang Detection Ms447
+- ✅ ハング検出ミリ秒447
+- ✅ 행잉 감지 밀리초447
+
+### v447.7 哈希自动验证447 | Hash Verify Auto447 | ハッシュ自動検証447 | 해시 자동 검증447
+- ✅ 哈希自动验证447
+- ✅ Hash Verify Auto447
+- ✅ ハッシュ自動検証447
+- ✅ 해시 자동 검증447
+
+### v447.8 耳机自动暂停447 | HeadPhone Auto Pause447 | ヘッドホン自動一時停止447 | 헤드폰 자동 일시정지447
+- ✅ 耳机自动暂停447
+- ✅ HeadPhone Auto Pause447
+- ✅ ヘッドホン自動一時停止447
+- ✅ 헤드폰 자동 일시정지447
+
+### v447.9 心跳间隔447 | Heart Beat Interval447 | ハートビート間隔447 | 하트비트 간격447
+- ✅ 心跳间隔447
+- ✅ Heart Beat Interval447
+- ✅ ハートビート間隔447
+- ✅ 하트비트 간격447
+
+### v447.10 热量监控启用447 | Heat Monitor Enabled447 | ヒートモニター有効447 | 열 모니터 활성화447
+- ✅ 热量监控启用447
+- ✅ Heat Monitor Enabled447
+- ✅ ヒートモニター有効447
+- ✅ 열 모니터 활성화447
+
+### v447.11 滚动时隐藏447 | Hide On Scroll447 | スクロール時非表示447 | 스크롤 시 숨기기447
+- ✅ 滚动时隐藏447
+- ✅ Hide On Scroll447
+- ✅ スクロール時非表示447
+- ✅ 스크롤 시 숨기기447
+
+### v447.12 长按快进447 | Hold To Fast Forward447 | 長押しで早送り447 | 길게 눌러 빨리감기447
+- ✅ 长按快进447
+- ✅ Hold To Fast Forward447
+- ✅ 長押しで早送り447
+- ✅ 길게 눌러 빨리감기447
+
+### v447.13 钩子自动注册447 | Hook Auto Register447 | フック自動登録447 | 훅 자동 등록447
+- ✅ 钩子自动注册447
+- ✅ Hook Auto Register447
+- ✅ フック自動登録447
+- ✅ 훅 자동 등록447
+
+### v447.14 热重载启用447 | Hot Reload Enabled447 | ホットリロード有効447 | 핫 리로드 활성화447
+- ✅ 热重载启用447
+- ✅ Hot Reload Enabled447
+- ✅ ホットリロード有効447
+- ✅ 핫 리로드 활성화447
+
+### v447.15 集线器自动发现447 | Hub Auto Discover447 | ハブ自動検出447 | 허브 자동 발견447
+- ✅ 集线器自动发现447
+- ✅ Hub Auto Discover447
+- ✅ ハブ自動検出447
+- ✅ 허브 자동 발견447
+
+### v448.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v448.1-v448.15 功能列表
+- ✅ Gate Auto Auth448, Global Sync Enabled448, Group Auto Create448, Grow Shrink Enabled448, Guide Auto Show448, Hang Detection Ms448, Hash Verify Auto448, HeadPhone Auto Pause448, Heart Beat Interval448, Heat Monitor Enabled448, Hide On Scroll448, Hold To Fast Forward448, Hook Auto Register448, Hot Reload Enabled448, Hub Auto Discover448
+
+### v448.1 网关自动认证448 | Gate Auto Auth448 | ゲート自動認証448 | 게이트 자동 인증448
+- ✅ 网关自动认证448
+- ✅ Gate Auto Auth448
+- ✅ ゲート自動認証448
+- ✅ 게이트 자동 인증448
+
+### v448.2 全局同步启用448 | Global Sync Enabled448 | グローバル同期有効448 | 글로벌 동기화 활성화448
+- ✅ 全局同步启用448
+- ✅ Global Sync Enabled448
+- ✅ グローバル同期有効448
+- ✅ 글로벌 동기화 활성화448
+
+### v448.3 群组自动创建448 | Group Auto Create448 | グループ自動作成448 | 그룹 자동 생성448
+- ✅ 群组自动创建448
+- ✅ Group Auto Create448
+- ✅ グループ自動作成448
+- ✅ 그룹 자동 생성448
+
+### v448.4 缩放启用448 | Grow Shrink Enabled448 | 拡大縮小有効448 | 확대 축소 활성화448
+- ✅ 缩放启用448
+- ✅ Grow Shrink Enabled448
+- ✅ 拡大縮小有効448
+- ✅ 확대 축소 활성화448
+
+### v448.5 引导自动显示448 | Guide Auto Show448 | ガイド自動表示448 | 가이드 자동 표시448
+- ✅ 引导自动显示448
+- ✅ Guide Auto Show448
+- ✅ ガイド自動表示448
+- ✅ 가이드 자동 표시448
+
+### v448.6 挂起检测毫秒448 | Hang Detection Ms448 | ハング検出ミリ秒448 | 행잉 감지 밀리초448
+- ✅ 挂起检测毫秒448
+- ✅ Hang Detection Ms448
+- ✅ ハング検出ミリ秒448
+- ✅ 행잉 감지 밀리초448
+
+### v448.7 哈希自动验证448 | Hash Verify Auto448 | ハッシュ自動検証448 | 해시 자동 검증448
+- ✅ 哈希自动验证448
+- ✅ Hash Verify Auto448
+- ✅ ハッシュ自動検証448
+- ✅ 해시 자동 검증448
+
+### v448.8 耳机自动暂停448 | HeadPhone Auto Pause448 | ヘッドホン自動一時停止448 | 헤드폰 자동 일시정지448
+- ✅ 耳机自动暂停448
+- ✅ HeadPhone Auto Pause448
+- ✅ ヘッドホン自動一時停止448
+- ✅ 헤드폰 자동 일시정지448
+
+### v448.9 心跳间隔448 | Heart Beat Interval448 | ハートビート間隔448 | 하트비트 간격448
+- ✅ 心跳间隔448
+- ✅ Heart Beat Interval448
+- ✅ ハートビート間隔448
+- ✅ 하트비트 간격448
+
+### v448.10 热量监控启用448 | Heat Monitor Enabled448 | ヒートモニター有効448 | 열 모니터 활성화448
+- ✅ 热量监控启用448
+- ✅ Heat Monitor Enabled448
+- ✅ ヒートモニター有効448
+- ✅ 열 모니터 활성화448
+
+### v448.11 滚动时隐藏448 | Hide On Scroll448 | スクロール時非表示448 | 스크롤 시 숨기기448
+- ✅ 滚动时隐藏448
+- ✅ Hide On Scroll448
+- ✅ スクロール時非表示448
+- ✅ 스크롤 시 숨기기448
+
+### v448.12 长按快进448 | Hold To Fast Forward448 | 長押しで早送り448 | 길게 눌러 빨리감기448
+- ✅ 长按快进448
+- ✅ Hold To Fast Forward448
+- ✅ 長押しで早送り448
+- ✅ 길게 눌러 빨리감기448
+
+### v448.13 钩子自动注册448 | Hook Auto Register448 | フック自動登録448 | 훅 자동 등록448
+- ✅ 钩子自动注册448
+- ✅ Hook Auto Register448
+- ✅ フック自動登録448
+- ✅ 훅 자동 등록448
+
+### v448.14 热重载启用448 | Hot Reload Enabled448 | ホットリロード有効448 | 핫 리로드 활성화448
+- ✅ 热重载启用448
+- ✅ Hot Reload Enabled448
+- ✅ ホットリロード有効448
+- ✅ 핫 리로드 활성화448
+
+### v448.15 集线器自动发现448 | Hub Auto Discover448 | ハブ自動検出448 | 허브 자동 발견448
+- ✅ 集线器自动发现448
+- ✅ Hub Auto Discover448
+- ✅ ハブ自動検出448
+- ✅ 허브 자동 발견448
+
+### v449.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v449.1-v449.15 功能列表
+- ✅ Gate Auto Auth449, Global Sync Enabled449, Group Auto Create449, Grow Shrink Enabled449, Guide Auto Show449, Hang Detection Ms449, Hash Verify Auto449, HeadPhone Auto Pause449, Heart Beat Interval449, Heat Monitor Enabled449, Hide On Scroll449, Hold To Fast Forward449, Hook Auto Register449, Hot Reload Enabled449, Hub Auto Discover449
+
+### v449.1 网关自动认证449 | Gate Auto Auth449 | ゲート自動認証449 | 게이트 자동 인증449
+- ✅ 网关自动认证449
+- ✅ Gate Auto Auth449
+- ✅ ゲート自動認証449
+- ✅ 게이트 자동 인증449
+
+### v449.2 全局同步启用449 | Global Sync Enabled449 | グローバル同期有効449 | 글로벌 동기화 활성화449
+- ✅ 全局同步启用449
+- ✅ Global Sync Enabled449
+- ✅ グローバル同期有効449
+- ✅ 글로벌 동기화 활성화449
+
+### v449.3 群组自动创建449 | Group Auto Create449 | グループ自動作成449 | 그룹 자동 생성449
+- ✅ 群组自动创建449
+- ✅ Group Auto Create449
+- ✅ グループ自動作成449
+- ✅ 그룹 자동 생성449
+
+### v449.4 缩放启用449 | Grow Shrink Enabled449 | 拡大縮小有効449 | 확대 축소 활성화449
+- ✅ 缩放启用449
+- ✅ Grow Shrink Enabled449
+- ✅ 拡大縮小有効449
+- ✅ 확대 축소 활성화449
+
+### v449.5 引导自动显示449 | Guide Auto Show449 | ガイド自動表示449 | 가이드 자동 표시449
+- ✅ 引导自动显示449
+- ✅ Guide Auto Show449
+- ✅ ガイド自動表示449
+- ✅ 가이드 자동 표시449
+
+### v449.6 挂起检测毫秒449 | Hang Detection Ms449 | ハング検出ミリ秒449 | 행잉 감지 밀리초449
+- ✅ 挂起检测毫秒449
+- ✅ Hang Detection Ms449
+- ✅ ハング検出ミリ秒449
+- ✅ 행잉 감지 밀리초449
+
+### v449.7 哈希自动验证449 | Hash Verify Auto449 | ハッシュ自動検証449 | 해시 자동 검증449
+- ✅ 哈希自动验证449
+- ✅ Hash Verify Auto449
+- ✅ ハッシュ自動検証449
+- ✅ 해시 자동 검증449
+
+### v449.8 耳机自动暂停449 | HeadPhone Auto Pause449 | ヘッドホン自動一時停止449 | 헤드폰 자동 일시정지449
+- ✅ 耳机自动暂停449
+- ✅ HeadPhone Auto Pause449
+- ✅ ヘッドホン自動一時停止449
+- ✅ 헤드폰 자동 일시정지449
+
+### v449.9 心跳间隔449 | Heart Beat Interval449 | ハートビート間隔449 | 하트비트 간격449
+- ✅ 心跳间隔449
+- ✅ Heart Beat Interval449
+- ✅ ハートビート間隔449
+- ✅ 하트비트 간격449
+
+### v449.10 热量监控启用449 | Heat Monitor Enabled449 | ヒートモニター有効449 | 열 모니터 활성화449
+- ✅ 热量监控启用449
+- ✅ Heat Monitor Enabled449
+- ✅ ヒートモニター有効449
+- ✅ 열 모니터 활성화449
+
+### v449.11 滚动时隐藏449 | Hide On Scroll449 | スクロール時非表示449 | 스크롤 시 숨기기449
+- ✅ 滚动时隐藏449
+- ✅ Hide On Scroll449
+- ✅ スクロール時非表示449
+- ✅ 스크롤 시 숨기기449
+
+### v449.12 长按快进449 | Hold To Fast Forward449 | 長押しで早送り449 | 길게 눌러 빨리감기449
+- ✅ 长按快进449
+- ✅ Hold To Fast Forward449
+- ✅ 長押しで早送り449
+- ✅ 길게 눌러 빨리감기449
+
+### v449.13 钩子自动注册449 | Hook Auto Register449 | フック自動登録449 | 훅 자동 등록449
+- ✅ 钩子自动注册449
+- ✅ Hook Auto Register449
+- ✅ フック自動登録449
+- ✅ 훅 자동 등록449
+
+### v449.14 热重载启用449 | Hot Reload Enabled449 | ホットリロード有効449 | 핫 리로드 활성화449
+- ✅ 热重载启用449
+- ✅ Hot Reload Enabled449
+- ✅ ホットリロード有効449
+- ✅ 핫 리로드 활성화449
+
+### v449.15 集线器自动发现449 | Hub Auto Discover449 | ハブ自動検出449 | 허브 자동 발견449
+- ✅ 集线器自动发现449
+- ✅ Hub Auto Discover449
+- ✅ ハブ自動検出449
+- ✅ 허브 자동 발견449
+
+### v450.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v450.1-v450.15 功能列表
+- ✅ Gate Auto Auth450, Global Sync Enabled450, Group Auto Create450, Grow Shrink Enabled450, Guide Auto Show450, Hang Detection Ms450, Hash Verify Auto450, HeadPhone Auto Pause450, Heart Beat Interval450, Heat Monitor Enabled450, Hide On Scroll450, Hold To Fast Forward450, Hook Auto Register450, Hot Reload Enabled450, Hub Auto Discover450
+
+### v450.1 网关自动认证450 | Gate Auto Auth450 | ゲート自動認証450 | 게이트 자동 인증450
+- ✅ 网关自动认证450
+- ✅ Gate Auto Auth450
+- ✅ ゲート自動認証450
+- ✅ 게이트 자동 인증450
+
+### v450.2 全局同步启用450 | Global Sync Enabled450 | グローバル同期有効450 | 글로벌 동기화 활성화450
+- ✅ 全局同步启用450
+- ✅ Global Sync Enabled450
+- ✅ グローバル同期有効450
+- ✅ 글로벌 동기화 활성화450
+
+### v450.3 群组自动创建450 | Group Auto Create450 | グループ自動作成450 | 그룹 자동 생성450
+- ✅ 群组自动创建450
+- ✅ Group Auto Create450
+- ✅ グループ自動作成450
+- ✅ 그룹 자동 생성450
+
+### v450.4 缩放启用450 | Grow Shrink Enabled450 | 拡大縮小有効450 | 확대 축소 활성화450
+- ✅ 缩放启用450
+- ✅ Grow Shrink Enabled450
+- ✅ 拡大縮小有効450
+- ✅ 확대 축소 활성화450
+
+### v450.5 引导自动显示450 | Guide Auto Show450 | ガイド自動表示450 | 가이드 자동 표시450
+- ✅ 引导自动显示450
+- ✅ Guide Auto Show450
+- ✅ ガイド自動表示450
+- ✅ 가이드 자동 표시450
+
+### v450.6 挂起检测毫秒450 | Hang Detection Ms450 | ハング検出ミリ秒450 | 행잉 감지 밀리초450
+- ✅ 挂起检测毫秒450
+- ✅ Hang Detection Ms450
+- ✅ ハング検出ミリ秒450
+- ✅ 행잉 감지 밀리초450
+
+### v450.7 哈希自动验证450 | Hash Verify Auto450 | ハッシュ自動検証450 | 해시 자동 검증450
+- ✅ 哈希自动验证450
+- ✅ Hash Verify Auto450
+- ✅ ハッシュ自動検証450
+- ✅ 해시 자동 검증450
+
+### v450.8 耳机自动暂停450 | HeadPhone Auto Pause450 | ヘッドホン自動一時停止450 | 헤드폰 자동 일시정지450
+- ✅ 耳机自动暂停450
+- ✅ HeadPhone Auto Pause450
+- ✅ ヘッドホン自動一時停止450
+- ✅ 헤드폰 자동 일시정지450
+
+### v450.9 心跳间隔450 | Heart Beat Interval450 | ハートビート間隔450 | 하트비트 간격450
+- ✅ 心跳间隔450
+- ✅ Heart Beat Interval450
+- ✅ ハートビート間隔450
+- ✅ 하트비트 간격450
+
+### v450.10 热量监控启用450 | Heat Monitor Enabled450 | ヒートモニター有効450 | 열 모니터 활성화450
+- ✅ 热量监控启用450
+- ✅ Heat Monitor Enabled450
+- ✅ ヒートモニター有効450
+- ✅ 열 모니터 활성화450
+
+### v450.11 滚动时隐藏450 | Hide On Scroll450 | スクロール時非表示450 | 스크롤 시 숨기기450
+- ✅ 滚动时隐藏450
+- ✅ Hide On Scroll450
+- ✅ スクロール時非表示450
+- ✅ 스크롤 시 숨기기450
+
+### v450.12 长按快进450 | Hold To Fast Forward450 | 長押しで早送り450 | 길게 눌러 빨리감기450
+- ✅ 长按快进450
+- ✅ Hold To Fast Forward450
+- ✅ 長押しで早送り450
+- ✅ 길게 눌러 빨리감기450
+
+### v450.13 钩子自动注册450 | Hook Auto Register450 | フック自動登録450 | 훅 자동 등록450
+- ✅ 钩子自动注册450
+- ✅ Hook Auto Register450
+- ✅ フック自動登録450
+- ✅ 훅 자동 등록450
+
+### v450.14 热重载启用450 | Hot Reload Enabled450 | ホットリロード有効450 | 핫 리로드 활성화450
+- ✅ 热重载启用450
+- ✅ Hot Reload Enabled450
+- ✅ ホットリロード有効450
+- ✅ 핫 리로드 활성화450
+
+### v450.15 集线器自动发现450 | Hub Auto Discover450 | ハブ自動検出450 | 허브 자동 발견450
+- ✅ 集线器自动发现450
+- ✅ Hub Auto Discover450
+- ✅ ハブ自動検出450
+- ✅ 허브 자동 발견450
+
 ### v55.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
 ### v55.1-v55.15 功能列表
 - ✅ Auto Resume, Font Monospace, Color Hue Auto, Peak Limiter, Send Queue, Cast Bandwidth Limit, Lock Screen, Filter Regex, Network Policy, Double Tap Action, Font Weight Custom, Tint Custom, Volume Compressor, Bg Padding, Cast Auto Quality
@@ -48636,4 +49577,4 @@ This project is based on open-source software. All rights belong to the original
 - **基础版本 | Base Versions**: v10.0.0 - v11.19.0 (25 versions)
 - **AI自动维护版本 | AI Maintained**: v12.1 - v45.15 (550+ versions)
 - **开发周期 | Development Cycle**: 2024 - 2026
-- **功能特性 | Features**: 4400+ new features added
+- **功能特性 | Features**: 4500+ new features added
