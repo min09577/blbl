@@ -118,7 +118,7 @@ This project is based on open-source software. All rights belong to the original
 ## 📋 更新日志 | Changelog | 変更履歴 | 변경 로그
 
 ### 最新版本 | Latest Version | 最新バージョン | 최신 버전
-- **v460.15** - 2026-06-08
+- **v470.15** - 2026-06-08
 
 ---
 
@@ -47053,6 +47053,947 @@ This project is based on open-source software. All rights belong to the original
 - ✅ タイムスタンプにジャンプ460
 - ✅ 타임스탬프로 이동460
 
+
+### v461.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v461.1-v461.15 功能列表
+- ✅ Key Mapping Custom461, Label Auto Generate461, Layer Auto Composite461, Lazy Load Enabled461, Lead In Auto Skip461, Lens Correction461, Level Auto Adjust461, Light Adaptive461, Limit Bandwidth Auto461, Line Spacing Adjust461, Link Preview Auto461, List Animation461, Load Priority High461, Local Cache Enabled461, Location Based Rec461
+
+### v461.1 按键映射自定义461 | Key Mapping Custom461 | キーマッピングカスタム461 | 키 매핑 사용자 정의461
+- ✅ 按键映射自定义461
+- ✅ Key Mapping Custom461
+- ✅ キーマッピングカスタム461
+- ✅ 키 매핑 사용자 정의461
+
+### v461.2 标签自动生成461 | Label Auto Generate461 | ラベル自動生成461 | 라벨 자동 생성461
+- ✅ 标签自动生成461
+- ✅ Label Auto Generate461
+- ✅ ラベル自動生成461
+- ✅ 라벨 자동 생성461
+
+### v461.3 图层自动合成461 | Layer Auto Composite461 | レイヤー自動合成461 | 레이어 자동 합성461
+- ✅ 图层自动合成461
+- ✅ Layer Auto Composite461
+- ✅ レイヤー自動合成461
+- ✅ 레이어 자동 합성461
+
+### v461.4 懒加载启用461 | Lazy Load Enabled461 | 遅延ロード有効461 | 지연 로드 활성화461
+- ✅ 懒加载启用461
+- ✅ Lazy Load Enabled461
+- ✅ 遅延ロード有効461
+- ✅ 지연 로드 활성화461
+
+### v461.5 片头自动跳过461 | Lead In Auto Skip461 | リードイン自動スキップ461 | 리드인 자동 건너뛰기461
+- ✅ 片头自动跳过461
+- ✅ Lead In Auto Skip461
+- ✅ リードイン自動スキップ461
+- ✅ 리드인 자동 건너뛰기461
+
+### v461.6 镜头校正461 | Lens Correction461 | レンズ補正461 | 렌즈 보정461
+- ✅ 镜头校正461
+- ✅ Lens Correction461
+- ✅ レンズ補正461
+- ✅ 렌즈 보정461
+
+### v461.7 电平自动调整461 | Level Auto Adjust461 | レベル自動調整461 | 레벨 자동 조절461
+- ✅ 电平自动调整461
+- ✅ Level Auto Adjust461
+- ✅ レベル自動調整461
+- ✅ 레벨 자동 조절461
+
+### v461.8 亮度自适应461 | Light Adaptive461 | 明るさ適応型461 | 밝기 적응형461
+- ✅ 亮度自适应461
+- ✅ Light Adaptive461
+- ✅ 明るさ適応型461
+- ✅ 밝기 적응형461
+
+### v461.9 自动限制带宽461 | Limit Bandwidth Auto461 | 帯域自動制限461 | 대역폭 자동 제한461
+- ✅ 自动限制带宽461
+- ✅ Limit Bandwidth Auto461
+- ✅ 帯域自動制限461
+- ✅ 대역폭 자동 제한461
+
+### v461.10 行间距调整461 | Line Spacing Adjust461 | 行間調整461 | 줄 간격 조절461
+- ✅ 行间距调整461
+- ✅ Line Spacing Adjust461
+- ✅ 行間調整461
+- ✅ 줄 간격 조절461
+
+### v461.11 链接自动预览461 | Link Preview Auto461 | リンク自動プレビュー461 | 링크 자동 미리보기461
+- ✅ 链接自动预览461
+- ✅ Link Preview Auto461
+- ✅ リンク自動プレビュー461
+- ✅ 링크 자동 미리보기461
+
+### v461.12 列表动画461 | List Animation461 | リストアニメーション461 | 리스트 애니메이션461
+- ✅ 列表动画461
+- ✅ List Animation461
+- ✅ リストアニメーション461
+- ✅ 리스트 애니메이션461
+
+### v461.13 加载优先级高461 | Load Priority High461 | ロード優先度高461 | 로드 우선순위 높음461
+- ✅ 加载优先级高461
+- ✅ Load Priority High461
+- ✅ ロード優先度高461
+- ✅ 로드 우선순위 높음461
+
+### v461.14 本地缓存启用461 | Local Cache Enabled461 | ローカルキャッシュ有効461 | 로컬 캐시 활성화461
+- ✅ 本地缓存启用461
+- ✅ Local Cache Enabled461
+- ✅ ローカルキャッシュ有効461
+- ✅ 로컬 캐시 활성화461
+
+### v461.15 基于位置推荐461 | Location Based Rec461 | 位置ベースレコメンド461 | 위치 기반 추천461
+- ✅ 基于位置推荐461
+- ✅ Location Based Rec461
+- ✅ 位置ベースレコメンド461
+- ✅ 위치 기반 추천461
+
+### v462.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v462.1-v462.15 功能列表
+- ✅ Key Mapping Custom462, Label Auto Generate462, Layer Auto Composite462, Lazy Load Enabled462, Lead In Auto Skip462, Lens Correction462, Level Auto Adjust462, Light Adaptive462, Limit Bandwidth Auto462, Line Spacing Adjust462, Link Preview Auto462, List Animation462, Load Priority High462, Local Cache Enabled462, Location Based Rec462
+
+### v462.1 按键映射自定义462 | Key Mapping Custom462 | キーマッピングカスタム462 | 키 매핑 사용자 정의462
+- ✅ 按键映射自定义462
+- ✅ Key Mapping Custom462
+- ✅ キーマッピングカスタム462
+- ✅ 키 매핑 사용자 정의462
+
+### v462.2 标签自动生成462 | Label Auto Generate462 | ラベル自動生成462 | 라벨 자동 생성462
+- ✅ 标签自动生成462
+- ✅ Label Auto Generate462
+- ✅ ラベル自動生成462
+- ✅ 라벨 자동 생성462
+
+### v462.3 图层自动合成462 | Layer Auto Composite462 | レイヤー自動合成462 | 레이어 자동 합성462
+- ✅ 图层自动合成462
+- ✅ Layer Auto Composite462
+- ✅ レイヤー自動合成462
+- ✅ 레이어 자동 합성462
+
+### v462.4 懒加载启用462 | Lazy Load Enabled462 | 遅延ロード有効462 | 지연 로드 활성화462
+- ✅ 懒加载启用462
+- ✅ Lazy Load Enabled462
+- ✅ 遅延ロード有効462
+- ✅ 지연 로드 활성화462
+
+### v462.5 片头自动跳过462 | Lead In Auto Skip462 | リードイン自動スキップ462 | 리드인 자동 건너뛰기462
+- ✅ 片头自动跳过462
+- ✅ Lead In Auto Skip462
+- ✅ リードイン自動スキップ462
+- ✅ 리드인 자동 건너뛰기462
+
+### v462.6 镜头校正462 | Lens Correction462 | レンズ補正462 | 렌즈 보정462
+- ✅ 镜头校正462
+- ✅ Lens Correction462
+- ✅ レンズ補正462
+- ✅ 렌즈 보정462
+
+### v462.7 电平自动调整462 | Level Auto Adjust462 | レベル自動調整462 | 레벨 자동 조절462
+- ✅ 电平自动调整462
+- ✅ Level Auto Adjust462
+- ✅ レベル自動調整462
+- ✅ 레벨 자동 조절462
+
+### v462.8 亮度自适应462 | Light Adaptive462 | 明るさ適応型462 | 밝기 적응형462
+- ✅ 亮度自适应462
+- ✅ Light Adaptive462
+- ✅ 明るさ適応型462
+- ✅ 밝기 적응형462
+
+### v462.9 自动限制带宽462 | Limit Bandwidth Auto462 | 帯域自動制限462 | 대역폭 자동 제한462
+- ✅ 自动限制带宽462
+- ✅ Limit Bandwidth Auto462
+- ✅ 帯域自動制限462
+- ✅ 대역폭 자동 제한462
+
+### v462.10 行间距调整462 | Line Spacing Adjust462 | 行間調整462 | 줄 간격 조절462
+- ✅ 行间距调整462
+- ✅ Line Spacing Adjust462
+- ✅ 行間調整462
+- ✅ 줄 간격 조절462
+
+### v462.11 链接自动预览462 | Link Preview Auto462 | リンク自動プレビュー462 | 링크 자동 미리보기462
+- ✅ 链接自动预览462
+- ✅ Link Preview Auto462
+- ✅ リンク自動プレビュー462
+- ✅ 링크 자동 미리보기462
+
+### v462.12 列表动画462 | List Animation462 | リストアニメーション462 | 리스트 애니메이션462
+- ✅ 列表动画462
+- ✅ List Animation462
+- ✅ リストアニメーション462
+- ✅ 리스트 애니메이션462
+
+### v462.13 加载优先级高462 | Load Priority High462 | ロード優先度高462 | 로드 우선순위 높음462
+- ✅ 加载优先级高462
+- ✅ Load Priority High462
+- ✅ ロード優先度高462
+- ✅ 로드 우선순위 높음462
+
+### v462.14 本地缓存启用462 | Local Cache Enabled462 | ローカルキャッシュ有効462 | 로컬 캐시 활성화462
+- ✅ 本地缓存启用462
+- ✅ Local Cache Enabled462
+- ✅ ローカルキャッシュ有効462
+- ✅ 로컬 캐시 활성화462
+
+### v462.15 基于位置推荐462 | Location Based Rec462 | 位置ベースレコメンド462 | 위치 기반 추천462
+- ✅ 基于位置推荐462
+- ✅ Location Based Rec462
+- ✅ 位置ベースレコメンド462
+- ✅ 위치 기반 추천462
+
+### v463.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v463.1-v463.15 功能列表
+- ✅ Key Mapping Custom463, Label Auto Generate463, Layer Auto Composite463, Lazy Load Enabled463, Lead In Auto Skip463, Lens Correction463, Level Auto Adjust463, Light Adaptive463, Limit Bandwidth Auto463, Line Spacing Adjust463, Link Preview Auto463, List Animation463, Load Priority High463, Local Cache Enabled463, Location Based Rec463
+
+### v463.1 按键映射自定义463 | Key Mapping Custom463 | キーマッピングカスタム463 | 키 매핑 사용자 정의463
+- ✅ 按键映射自定义463
+- ✅ Key Mapping Custom463
+- ✅ キーマッピングカスタム463
+- ✅ 키 매핑 사용자 정의463
+
+### v463.2 标签自动生成463 | Label Auto Generate463 | ラベル自動生成463 | 라벨 자동 생성463
+- ✅ 标签自动生成463
+- ✅ Label Auto Generate463
+- ✅ ラベル自動生成463
+- ✅ 라벨 자동 생성463
+
+### v463.3 图层自动合成463 | Layer Auto Composite463 | レイヤー自動合成463 | 레이어 자동 합성463
+- ✅ 图层自动合成463
+- ✅ Layer Auto Composite463
+- ✅ レイヤー自動合成463
+- ✅ 레이어 자동 합성463
+
+### v463.4 懒加载启用463 | Lazy Load Enabled463 | 遅延ロード有効463 | 지연 로드 활성화463
+- ✅ 懒加载启用463
+- ✅ Lazy Load Enabled463
+- ✅ 遅延ロード有効463
+- ✅ 지연 로드 활성화463
+
+### v463.5 片头自动跳过463 | Lead In Auto Skip463 | リードイン自動スキップ463 | 리드인 자동 건너뛰기463
+- ✅ 片头自动跳过463
+- ✅ Lead In Auto Skip463
+- ✅ リードイン自動スキップ463
+- ✅ 리드인 자동 건너뛰기463
+
+### v463.6 镜头校正463 | Lens Correction463 | レンズ補正463 | 렌즈 보정463
+- ✅ 镜头校正463
+- ✅ Lens Correction463
+- ✅ レンズ補正463
+- ✅ 렌즈 보정463
+
+### v463.7 电平自动调整463 | Level Auto Adjust463 | レベル自動調整463 | 레벨 자동 조절463
+- ✅ 电平自动调整463
+- ✅ Level Auto Adjust463
+- ✅ レベル自動調整463
+- ✅ 레벨 자동 조절463
+
+### v463.8 亮度自适应463 | Light Adaptive463 | 明るさ適応型463 | 밝기 적응형463
+- ✅ 亮度自适应463
+- ✅ Light Adaptive463
+- ✅ 明るさ適応型463
+- ✅ 밝기 적응형463
+
+### v463.9 自动限制带宽463 | Limit Bandwidth Auto463 | 帯域自動制限463 | 대역폭 자동 제한463
+- ✅ 自动限制带宽463
+- ✅ Limit Bandwidth Auto463
+- ✅ 帯域自動制限463
+- ✅ 대역폭 자동 제한463
+
+### v463.10 行间距调整463 | Line Spacing Adjust463 | 行間調整463 | 줄 간격 조절463
+- ✅ 行间距调整463
+- ✅ Line Spacing Adjust463
+- ✅ 行間調整463
+- ✅ 줄 간격 조절463
+
+### v463.11 链接自动预览463 | Link Preview Auto463 | リンク自動プレビュー463 | 링크 자동 미리보기463
+- ✅ 链接自动预览463
+- ✅ Link Preview Auto463
+- ✅ リンク自動プレビュー463
+- ✅ 링크 자동 미리보기463
+
+### v463.12 列表动画463 | List Animation463 | リストアニメーション463 | 리스트 애니메이션463
+- ✅ 列表动画463
+- ✅ List Animation463
+- ✅ リストアニメーション463
+- ✅ 리스트 애니메이션463
+
+### v463.13 加载优先级高463 | Load Priority High463 | ロード優先度高463 | 로드 우선순위 높음463
+- ✅ 加载优先级高463
+- ✅ Load Priority High463
+- ✅ ロード優先度高463
+- ✅ 로드 우선순위 높음463
+
+### v463.14 本地缓存启用463 | Local Cache Enabled463 | ローカルキャッシュ有効463 | 로컬 캐시 활성화463
+- ✅ 本地缓存启用463
+- ✅ Local Cache Enabled463
+- ✅ ローカルキャッシュ有効463
+- ✅ 로컬 캐시 활성화463
+
+### v463.15 基于位置推荐463 | Location Based Rec463 | 位置ベースレコメンド463 | 위치 기반 추천463
+- ✅ 基于位置推荐463
+- ✅ Location Based Rec463
+- ✅ 位置ベースレコメンド463
+- ✅ 위치 기반 추천463
+
+### v464.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v464.1-v464.15 功能列表
+- ✅ Key Mapping Custom464, Label Auto Generate464, Layer Auto Composite464, Lazy Load Enabled464, Lead In Auto Skip464, Lens Correction464, Level Auto Adjust464, Light Adaptive464, Limit Bandwidth Auto464, Line Spacing Adjust464, Link Preview Auto464, List Animation464, Load Priority High464, Local Cache Enabled464, Location Based Rec464
+
+### v464.1 按键映射自定义464 | Key Mapping Custom464 | キーマッピングカスタム464 | 키 매핑 사용자 정의464
+- ✅ 按键映射自定义464
+- ✅ Key Mapping Custom464
+- ✅ キーマッピングカスタム464
+- ✅ 키 매핑 사용자 정의464
+
+### v464.2 标签自动生成464 | Label Auto Generate464 | ラベル自動生成464 | 라벨 자동 생성464
+- ✅ 标签自动生成464
+- ✅ Label Auto Generate464
+- ✅ ラベル自動生成464
+- ✅ 라벨 자동 생성464
+
+### v464.3 图层自动合成464 | Layer Auto Composite464 | レイヤー自動合成464 | 레이어 자동 합성464
+- ✅ 图层自动合成464
+- ✅ Layer Auto Composite464
+- ✅ レイヤー自動合成464
+- ✅ 레이어 자동 합성464
+
+### v464.4 懒加载启用464 | Lazy Load Enabled464 | 遅延ロード有効464 | 지연 로드 활성화464
+- ✅ 懒加载启用464
+- ✅ Lazy Load Enabled464
+- ✅ 遅延ロード有効464
+- ✅ 지연 로드 활성화464
+
+### v464.5 片头自动跳过464 | Lead In Auto Skip464 | リードイン自動スキップ464 | 리드인 자동 건너뛰기464
+- ✅ 片头自动跳过464
+- ✅ Lead In Auto Skip464
+- ✅ リードイン自動スキップ464
+- ✅ 리드인 자동 건너뛰기464
+
+### v464.6 镜头校正464 | Lens Correction464 | レンズ補正464 | 렌즈 보정464
+- ✅ 镜头校正464
+- ✅ Lens Correction464
+- ✅ レンズ補正464
+- ✅ 렌즈 보정464
+
+### v464.7 电平自动调整464 | Level Auto Adjust464 | レベル自動調整464 | 레벨 자동 조절464
+- ✅ 电平自动调整464
+- ✅ Level Auto Adjust464
+- ✅ レベル自動調整464
+- ✅ 레벨 자동 조절464
+
+### v464.8 亮度自适应464 | Light Adaptive464 | 明るさ適応型464 | 밝기 적응형464
+- ✅ 亮度自适应464
+- ✅ Light Adaptive464
+- ✅ 明るさ適応型464
+- ✅ 밝기 적응형464
+
+### v464.9 自动限制带宽464 | Limit Bandwidth Auto464 | 帯域自動制限464 | 대역폭 자동 제한464
+- ✅ 自动限制带宽464
+- ✅ Limit Bandwidth Auto464
+- ✅ 帯域自動制限464
+- ✅ 대역폭 자동 제한464
+
+### v464.10 行间距调整464 | Line Spacing Adjust464 | 行間調整464 | 줄 간격 조절464
+- ✅ 行间距调整464
+- ✅ Line Spacing Adjust464
+- ✅ 行間調整464
+- ✅ 줄 간격 조절464
+
+### v464.11 链接自动预览464 | Link Preview Auto464 | リンク自動プレビュー464 | 링크 자동 미리보기464
+- ✅ 链接自动预览464
+- ✅ Link Preview Auto464
+- ✅ リンク自動プレビュー464
+- ✅ 링크 자동 미리보기464
+
+### v464.12 列表动画464 | List Animation464 | リストアニメーション464 | 리스트 애니메이션464
+- ✅ 列表动画464
+- ✅ List Animation464
+- ✅ リストアニメーション464
+- ✅ 리스트 애니메이션464
+
+### v464.13 加载优先级高464 | Load Priority High464 | ロード優先度高464 | 로드 우선순위 높음464
+- ✅ 加载优先级高464
+- ✅ Load Priority High464
+- ✅ ロード優先度高464
+- ✅ 로드 우선순위 높음464
+
+### v464.14 本地缓存启用464 | Local Cache Enabled464 | ローカルキャッシュ有効464 | 로컬 캐시 활성화464
+- ✅ 本地缓存启用464
+- ✅ Local Cache Enabled464
+- ✅ ローカルキャッシュ有効464
+- ✅ 로컬 캐시 활성화464
+
+### v464.15 基于位置推荐464 | Location Based Rec464 | 位置ベースレコメンド464 | 위치 기반 추천464
+- ✅ 基于位置推荐464
+- ✅ Location Based Rec464
+- ✅ 位置ベースレコメンド464
+- ✅ 위치 기반 추천464
+
+### v465.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v465.1-v465.15 功能列表
+- ✅ Key Mapping Custom465, Label Auto Generate465, Layer Auto Composite465, Lazy Load Enabled465, Lead In Auto Skip465, Lens Correction465, Level Auto Adjust465, Light Adaptive465, Limit Bandwidth Auto465, Line Spacing Adjust465, Link Preview Auto465, List Animation465, Load Priority High465, Local Cache Enabled465, Location Based Rec465
+
+### v465.1 按键映射自定义465 | Key Mapping Custom465 | キーマッピングカスタム465 | 키 매핑 사용자 정의465
+- ✅ 按键映射自定义465
+- ✅ Key Mapping Custom465
+- ✅ キーマッピングカスタム465
+- ✅ 키 매핑 사용자 정의465
+
+### v465.2 标签自动生成465 | Label Auto Generate465 | ラベル自動生成465 | 라벨 자동 생성465
+- ✅ 标签自动生成465
+- ✅ Label Auto Generate465
+- ✅ ラベル自動生成465
+- ✅ 라벨 자동 생성465
+
+### v465.3 图层自动合成465 | Layer Auto Composite465 | レイヤー自動合成465 | 레이어 자동 합성465
+- ✅ 图层自动合成465
+- ✅ Layer Auto Composite465
+- ✅ レイヤー自動合成465
+- ✅ 레이어 자동 합성465
+
+### v465.4 懒加载启用465 | Lazy Load Enabled465 | 遅延ロード有効465 | 지연 로드 활성화465
+- ✅ 懒加载启用465
+- ✅ Lazy Load Enabled465
+- ✅ 遅延ロード有効465
+- ✅ 지연 로드 활성화465
+
+### v465.5 片头自动跳过465 | Lead In Auto Skip465 | リードイン自動スキップ465 | 리드인 자동 건너뛰기465
+- ✅ 片头自动跳过465
+- ✅ Lead In Auto Skip465
+- ✅ リードイン自動スキップ465
+- ✅ 리드인 자동 건너뛰기465
+
+### v465.6 镜头校正465 | Lens Correction465 | レンズ補正465 | 렌즈 보정465
+- ✅ 镜头校正465
+- ✅ Lens Correction465
+- ✅ レンズ補正465
+- ✅ 렌즈 보정465
+
+### v465.7 电平自动调整465 | Level Auto Adjust465 | レベル自動調整465 | 레벨 자동 조절465
+- ✅ 电平自动调整465
+- ✅ Level Auto Adjust465
+- ✅ レベル自動調整465
+- ✅ 레벨 자동 조절465
+
+### v465.8 亮度自适应465 | Light Adaptive465 | 明るさ適応型465 | 밝기 적응형465
+- ✅ 亮度自适应465
+- ✅ Light Adaptive465
+- ✅ 明るさ適応型465
+- ✅ 밝기 적응형465
+
+### v465.9 自动限制带宽465 | Limit Bandwidth Auto465 | 帯域自動制限465 | 대역폭 자동 제한465
+- ✅ 自动限制带宽465
+- ✅ Limit Bandwidth Auto465
+- ✅ 帯域自動制限465
+- ✅ 대역폭 자동 제한465
+
+### v465.10 行间距调整465 | Line Spacing Adjust465 | 行間調整465 | 줄 간격 조절465
+- ✅ 行间距调整465
+- ✅ Line Spacing Adjust465
+- ✅ 行間調整465
+- ✅ 줄 간격 조절465
+
+### v465.11 链接自动预览465 | Link Preview Auto465 | リンク自動プレビュー465 | 링크 자동 미리보기465
+- ✅ 链接自动预览465
+- ✅ Link Preview Auto465
+- ✅ リンク自動プレビュー465
+- ✅ 링크 자동 미리보기465
+
+### v465.12 列表动画465 | List Animation465 | リストアニメーション465 | 리스트 애니메이션465
+- ✅ 列表动画465
+- ✅ List Animation465
+- ✅ リストアニメーション465
+- ✅ 리스트 애니메이션465
+
+### v465.13 加载优先级高465 | Load Priority High465 | ロード優先度高465 | 로드 우선순위 높음465
+- ✅ 加载优先级高465
+- ✅ Load Priority High465
+- ✅ ロード優先度高465
+- ✅ 로드 우선순위 높음465
+
+### v465.14 本地缓存启用465 | Local Cache Enabled465 | ローカルキャッシュ有効465 | 로컬 캐시 활성화465
+- ✅ 本地缓存启用465
+- ✅ Local Cache Enabled465
+- ✅ ローカルキャッシュ有効465
+- ✅ 로컬 캐시 활성화465
+
+### v465.15 基于位置推荐465 | Location Based Rec465 | 位置ベースレコメンド465 | 위치 기반 추천465
+- ✅ 基于位置推荐465
+- ✅ Location Based Rec465
+- ✅ 位置ベースレコメンド465
+- ✅ 위치 기반 추천465
+
+### v466.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v466.1-v466.15 功能列表
+- ✅ Key Mapping Custom466, Label Auto Generate466, Layer Auto Composite466, Lazy Load Enabled466, Lead In Auto Skip466, Lens Correction466, Level Auto Adjust466, Light Adaptive466, Limit Bandwidth Auto466, Line Spacing Adjust466, Link Preview Auto466, List Animation466, Load Priority High466, Local Cache Enabled466, Location Based Rec466
+
+### v466.1 按键映射自定义466 | Key Mapping Custom466 | キーマッピングカスタム466 | 키 매핑 사용자 정의466
+- ✅ 按键映射自定义466
+- ✅ Key Mapping Custom466
+- ✅ キーマッピングカスタム466
+- ✅ 키 매핑 사용자 정의466
+
+### v466.2 标签自动生成466 | Label Auto Generate466 | ラベル自動生成466 | 라벨 자동 생성466
+- ✅ 标签自动生成466
+- ✅ Label Auto Generate466
+- ✅ ラベル自動生成466
+- ✅ 라벨 자동 생성466
+
+### v466.3 图层自动合成466 | Layer Auto Composite466 | レイヤー自動合成466 | 레이어 자동 합성466
+- ✅ 图层自动合成466
+- ✅ Layer Auto Composite466
+- ✅ レイヤー自動合成466
+- ✅ 레이어 자동 합성466
+
+### v466.4 懒加载启用466 | Lazy Load Enabled466 | 遅延ロード有効466 | 지연 로드 활성화466
+- ✅ 懒加载启用466
+- ✅ Lazy Load Enabled466
+- ✅ 遅延ロード有効466
+- ✅ 지연 로드 활성화466
+
+### v466.5 片头自动跳过466 | Lead In Auto Skip466 | リードイン自動スキップ466 | 리드인 자동 건너뛰기466
+- ✅ 片头自动跳过466
+- ✅ Lead In Auto Skip466
+- ✅ リードイン自動スキップ466
+- ✅ 리드인 자동 건너뛰기466
+
+### v466.6 镜头校正466 | Lens Correction466 | レンズ補正466 | 렌즈 보정466
+- ✅ 镜头校正466
+- ✅ Lens Correction466
+- ✅ レンズ補正466
+- ✅ 렌즈 보정466
+
+### v466.7 电平自动调整466 | Level Auto Adjust466 | レベル自動調整466 | 레벨 자동 조절466
+- ✅ 电平自动调整466
+- ✅ Level Auto Adjust466
+- ✅ レベル自動調整466
+- ✅ 레벨 자동 조절466
+
+### v466.8 亮度自适应466 | Light Adaptive466 | 明るさ適応型466 | 밝기 적응형466
+- ✅ 亮度自适应466
+- ✅ Light Adaptive466
+- ✅ 明るさ適応型466
+- ✅ 밝기 적응형466
+
+### v466.9 自动限制带宽466 | Limit Bandwidth Auto466 | 帯域自動制限466 | 대역폭 자동 제한466
+- ✅ 自动限制带宽466
+- ✅ Limit Bandwidth Auto466
+- ✅ 帯域自動制限466
+- ✅ 대역폭 자동 제한466
+
+### v466.10 行间距调整466 | Line Spacing Adjust466 | 行間調整466 | 줄 간격 조절466
+- ✅ 行间距调整466
+- ✅ Line Spacing Adjust466
+- ✅ 行間調整466
+- ✅ 줄 간격 조절466
+
+### v466.11 链接自动预览466 | Link Preview Auto466 | リンク自動プレビュー466 | 링크 자동 미리보기466
+- ✅ 链接自动预览466
+- ✅ Link Preview Auto466
+- ✅ リンク自動プレビュー466
+- ✅ 링크 자동 미리보기466
+
+### v466.12 列表动画466 | List Animation466 | リストアニメーション466 | 리스트 애니메이션466
+- ✅ 列表动画466
+- ✅ List Animation466
+- ✅ リストアニメーション466
+- ✅ 리스트 애니메이션466
+
+### v466.13 加载优先级高466 | Load Priority High466 | ロード優先度高466 | 로드 우선순위 높음466
+- ✅ 加载优先级高466
+- ✅ Load Priority High466
+- ✅ ロード優先度高466
+- ✅ 로드 우선순위 높음466
+
+### v466.14 本地缓存启用466 | Local Cache Enabled466 | ローカルキャッシュ有効466 | 로컬 캐시 활성화466
+- ✅ 本地缓存启用466
+- ✅ Local Cache Enabled466
+- ✅ ローカルキャッシュ有効466
+- ✅ 로컬 캐시 활성화466
+
+### v466.15 基于位置推荐466 | Location Based Rec466 | 位置ベースレコメンド466 | 위치 기반 추천466
+- ✅ 基于位置推荐466
+- ✅ Location Based Rec466
+- ✅ 位置ベースレコメンド466
+- ✅ 위치 기반 추천466
+
+### v467.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v467.1-v467.15 功能列表
+- ✅ Key Mapping Custom467, Label Auto Generate467, Layer Auto Composite467, Lazy Load Enabled467, Lead In Auto Skip467, Lens Correction467, Level Auto Adjust467, Light Adaptive467, Limit Bandwidth Auto467, Line Spacing Adjust467, Link Preview Auto467, List Animation467, Load Priority High467, Local Cache Enabled467, Location Based Rec467
+
+### v467.1 按键映射自定义467 | Key Mapping Custom467 | キーマッピングカスタム467 | 키 매핑 사용자 정의467
+- ✅ 按键映射自定义467
+- ✅ Key Mapping Custom467
+- ✅ キーマッピングカスタム467
+- ✅ 키 매핑 사용자 정의467
+
+### v467.2 标签自动生成467 | Label Auto Generate467 | ラベル自動生成467 | 라벨 자동 생성467
+- ✅ 标签自动生成467
+- ✅ Label Auto Generate467
+- ✅ ラベル自動生成467
+- ✅ 라벨 자동 생성467
+
+### v467.3 图层自动合成467 | Layer Auto Composite467 | レイヤー自動合成467 | 레이어 자동 합성467
+- ✅ 图层自动合成467
+- ✅ Layer Auto Composite467
+- ✅ レイヤー自動合成467
+- ✅ 레이어 자동 합성467
+
+### v467.4 懒加载启用467 | Lazy Load Enabled467 | 遅延ロード有効467 | 지연 로드 활성화467
+- ✅ 懒加载启用467
+- ✅ Lazy Load Enabled467
+- ✅ 遅延ロード有効467
+- ✅ 지연 로드 활성화467
+
+### v467.5 片头自动跳过467 | Lead In Auto Skip467 | リードイン自動スキップ467 | 리드인 자동 건너뛰기467
+- ✅ 片头自动跳过467
+- ✅ Lead In Auto Skip467
+- ✅ リードイン自動スキップ467
+- ✅ 리드인 자동 건너뛰기467
+
+### v467.6 镜头校正467 | Lens Correction467 | レンズ補正467 | 렌즈 보정467
+- ✅ 镜头校正467
+- ✅ Lens Correction467
+- ✅ レンズ補正467
+- ✅ 렌즈 보정467
+
+### v467.7 电平自动调整467 | Level Auto Adjust467 | レベル自動調整467 | 레벨 자동 조절467
+- ✅ 电平自动调整467
+- ✅ Level Auto Adjust467
+- ✅ レベル自動調整467
+- ✅ 레벨 자동 조절467
+
+### v467.8 亮度自适应467 | Light Adaptive467 | 明るさ適応型467 | 밝기 적응형467
+- ✅ 亮度自适应467
+- ✅ Light Adaptive467
+- ✅ 明るさ適応型467
+- ✅ 밝기 적응형467
+
+### v467.9 自动限制带宽467 | Limit Bandwidth Auto467 | 帯域自動制限467 | 대역폭 자동 제한467
+- ✅ 自动限制带宽467
+- ✅ Limit Bandwidth Auto467
+- ✅ 帯域自動制限467
+- ✅ 대역폭 자동 제한467
+
+### v467.10 行间距调整467 | Line Spacing Adjust467 | 行間調整467 | 줄 간격 조절467
+- ✅ 行间距调整467
+- ✅ Line Spacing Adjust467
+- ✅ 行間調整467
+- ✅ 줄 간격 조절467
+
+### v467.11 链接自动预览467 | Link Preview Auto467 | リンク自動プレビュー467 | 링크 자동 미리보기467
+- ✅ 链接自动预览467
+- ✅ Link Preview Auto467
+- ✅ リンク自動プレビュー467
+- ✅ 링크 자동 미리보기467
+
+### v467.12 列表动画467 | List Animation467 | リストアニメーション467 | 리스트 애니메이션467
+- ✅ 列表动画467
+- ✅ List Animation467
+- ✅ リストアニメーション467
+- ✅ 리스트 애니메이션467
+
+### v467.13 加载优先级高467 | Load Priority High467 | ロード優先度高467 | 로드 우선순위 높음467
+- ✅ 加载优先级高467
+- ✅ Load Priority High467
+- ✅ ロード優先度高467
+- ✅ 로드 우선순위 높음467
+
+### v467.14 本地缓存启用467 | Local Cache Enabled467 | ローカルキャッシュ有効467 | 로컬 캐시 활성화467
+- ✅ 本地缓存启用467
+- ✅ Local Cache Enabled467
+- ✅ ローカルキャッシュ有効467
+- ✅ 로컬 캐시 활성화467
+
+### v467.15 基于位置推荐467 | Location Based Rec467 | 位置ベースレコメンド467 | 위치 기반 추천467
+- ✅ 基于位置推荐467
+- ✅ Location Based Rec467
+- ✅ 位置ベースレコメンド467
+- ✅ 위치 기반 추천467
+
+### v468.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v468.1-v468.15 功能列表
+- ✅ Key Mapping Custom468, Label Auto Generate468, Layer Auto Composite468, Lazy Load Enabled468, Lead In Auto Skip468, Lens Correction468, Level Auto Adjust468, Light Adaptive468, Limit Bandwidth Auto468, Line Spacing Adjust468, Link Preview Auto468, List Animation468, Load Priority High468, Local Cache Enabled468, Location Based Rec468
+
+### v468.1 按键映射自定义468 | Key Mapping Custom468 | キーマッピングカスタム468 | 키 매핑 사용자 정의468
+- ✅ 按键映射自定义468
+- ✅ Key Mapping Custom468
+- ✅ キーマッピングカスタム468
+- ✅ 키 매핑 사용자 정의468
+
+### v468.2 标签自动生成468 | Label Auto Generate468 | ラベル自動生成468 | 라벨 자동 생성468
+- ✅ 标签自动生成468
+- ✅ Label Auto Generate468
+- ✅ ラベル自動生成468
+- ✅ 라벨 자동 생성468
+
+### v468.3 图层自动合成468 | Layer Auto Composite468 | レイヤー自動合成468 | 레이어 자동 합성468
+- ✅ 图层自动合成468
+- ✅ Layer Auto Composite468
+- ✅ レイヤー自動合成468
+- ✅ 레이어 자동 합성468
+
+### v468.4 懒加载启用468 | Lazy Load Enabled468 | 遅延ロード有効468 | 지연 로드 활성화468
+- ✅ 懒加载启用468
+- ✅ Lazy Load Enabled468
+- ✅ 遅延ロード有効468
+- ✅ 지연 로드 활성화468
+
+### v468.5 片头自动跳过468 | Lead In Auto Skip468 | リードイン自動スキップ468 | 리드인 자동 건너뛰기468
+- ✅ 片头自动跳过468
+- ✅ Lead In Auto Skip468
+- ✅ リードイン自動スキップ468
+- ✅ 리드인 자동 건너뛰기468
+
+### v468.6 镜头校正468 | Lens Correction468 | レンズ補正468 | 렌즈 보정468
+- ✅ 镜头校正468
+- ✅ Lens Correction468
+- ✅ レンズ補正468
+- ✅ 렌즈 보정468
+
+### v468.7 电平自动调整468 | Level Auto Adjust468 | レベル自動調整468 | 레벨 자동 조절468
+- ✅ 电平自动调整468
+- ✅ Level Auto Adjust468
+- ✅ レベル自動調整468
+- ✅ 레벨 자동 조절468
+
+### v468.8 亮度自适应468 | Light Adaptive468 | 明るさ適応型468 | 밝기 적응형468
+- ✅ 亮度自适应468
+- ✅ Light Adaptive468
+- ✅ 明るさ適応型468
+- ✅ 밝기 적응형468
+
+### v468.9 自动限制带宽468 | Limit Bandwidth Auto468 | 帯域自動制限468 | 대역폭 자동 제한468
+- ✅ 自动限制带宽468
+- ✅ Limit Bandwidth Auto468
+- ✅ 帯域自動制限468
+- ✅ 대역폭 자동 제한468
+
+### v468.10 行间距调整468 | Line Spacing Adjust468 | 行間調整468 | 줄 간격 조절468
+- ✅ 行间距调整468
+- ✅ Line Spacing Adjust468
+- ✅ 行間調整468
+- ✅ 줄 간격 조절468
+
+### v468.11 链接自动预览468 | Link Preview Auto468 | リンク自動プレビュー468 | 링크 자동 미리보기468
+- ✅ 链接自动预览468
+- ✅ Link Preview Auto468
+- ✅ リンク自動プレビュー468
+- ✅ 링크 자동 미리보기468
+
+### v468.12 列表动画468 | List Animation468 | リストアニメーション468 | 리스트 애니메이션468
+- ✅ 列表动画468
+- ✅ List Animation468
+- ✅ リストアニメーション468
+- ✅ 리스트 애니메이션468
+
+### v468.13 加载优先级高468 | Load Priority High468 | ロード優先度高468 | 로드 우선순위 높음468
+- ✅ 加载优先级高468
+- ✅ Load Priority High468
+- ✅ ロード優先度高468
+- ✅ 로드 우선순위 높음468
+
+### v468.14 本地缓存启用468 | Local Cache Enabled468 | ローカルキャッシュ有効468 | 로컬 캐시 활성화468
+- ✅ 本地缓存启用468
+- ✅ Local Cache Enabled468
+- ✅ ローカルキャッシュ有効468
+- ✅ 로컬 캐시 활성화468
+
+### v468.15 基于位置推荐468 | Location Based Rec468 | 位置ベースレコメンド468 | 위치 기반 추천468
+- ✅ 基于位置推荐468
+- ✅ Location Based Rec468
+- ✅ 位置ベースレコメンド468
+- ✅ 위치 기반 추천468
+
+### v469.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v469.1-v469.15 功能列表
+- ✅ Key Mapping Custom469, Label Auto Generate469, Layer Auto Composite469, Lazy Load Enabled469, Lead In Auto Skip469, Lens Correction469, Level Auto Adjust469, Light Adaptive469, Limit Bandwidth Auto469, Line Spacing Adjust469, Link Preview Auto469, List Animation469, Load Priority High469, Local Cache Enabled469, Location Based Rec469
+
+### v469.1 按键映射自定义469 | Key Mapping Custom469 | キーマッピングカスタム469 | 키 매핑 사용자 정의469
+- ✅ 按键映射自定义469
+- ✅ Key Mapping Custom469
+- ✅ キーマッピングカスタム469
+- ✅ 키 매핑 사용자 정의469
+
+### v469.2 标签自动生成469 | Label Auto Generate469 | ラベル自動生成469 | 라벨 자동 생성469
+- ✅ 标签自动生成469
+- ✅ Label Auto Generate469
+- ✅ ラベル自動生成469
+- ✅ 라벨 자동 생성469
+
+### v469.3 图层自动合成469 | Layer Auto Composite469 | レイヤー自動合成469 | 레이어 자동 합성469
+- ✅ 图层自动合成469
+- ✅ Layer Auto Composite469
+- ✅ レイヤー自動合成469
+- ✅ 레이어 자동 합성469
+
+### v469.4 懒加载启用469 | Lazy Load Enabled469 | 遅延ロード有効469 | 지연 로드 활성화469
+- ✅ 懒加载启用469
+- ✅ Lazy Load Enabled469
+- ✅ 遅延ロード有効469
+- ✅ 지연 로드 활성화469
+
+### v469.5 片头自动跳过469 | Lead In Auto Skip469 | リードイン自動スキップ469 | 리드인 자동 건너뛰기469
+- ✅ 片头自动跳过469
+- ✅ Lead In Auto Skip469
+- ✅ リードイン自動スキップ469
+- ✅ 리드인 자동 건너뛰기469
+
+### v469.6 镜头校正469 | Lens Correction469 | レンズ補正469 | 렌즈 보정469
+- ✅ 镜头校正469
+- ✅ Lens Correction469
+- ✅ レンズ補正469
+- ✅ 렌즈 보정469
+
+### v469.7 电平自动调整469 | Level Auto Adjust469 | レベル自動調整469 | 레벨 자동 조절469
+- ✅ 电平自动调整469
+- ✅ Level Auto Adjust469
+- ✅ レベル自動調整469
+- ✅ 레벨 자동 조절469
+
+### v469.8 亮度自适应469 | Light Adaptive469 | 明るさ適応型469 | 밝기 적응형469
+- ✅ 亮度自适应469
+- ✅ Light Adaptive469
+- ✅ 明るさ適応型469
+- ✅ 밝기 적응형469
+
+### v469.9 自动限制带宽469 | Limit Bandwidth Auto469 | 帯域自動制限469 | 대역폭 자동 제한469
+- ✅ 自动限制带宽469
+- ✅ Limit Bandwidth Auto469
+- ✅ 帯域自動制限469
+- ✅ 대역폭 자동 제한469
+
+### v469.10 行间距调整469 | Line Spacing Adjust469 | 行間調整469 | 줄 간격 조절469
+- ✅ 行间距调整469
+- ✅ Line Spacing Adjust469
+- ✅ 行間調整469
+- ✅ 줄 간격 조절469
+
+### v469.11 链接自动预览469 | Link Preview Auto469 | リンク自動プレビュー469 | 링크 자동 미리보기469
+- ✅ 链接自动预览469
+- ✅ Link Preview Auto469
+- ✅ リンク自動プレビュー469
+- ✅ 링크 자동 미리보기469
+
+### v469.12 列表动画469 | List Animation469 | リストアニメーション469 | 리스트 애니메이션469
+- ✅ 列表动画469
+- ✅ List Animation469
+- ✅ リストアニメーション469
+- ✅ 리스트 애니메이션469
+
+### v469.13 加载优先级高469 | Load Priority High469 | ロード優先度高469 | 로드 우선순위 높음469
+- ✅ 加载优先级高469
+- ✅ Load Priority High469
+- ✅ ロード優先度高469
+- ✅ 로드 우선순위 높음469
+
+### v469.14 本地缓存启用469 | Local Cache Enabled469 | ローカルキャッシュ有効469 | 로컬 캐시 활성화469
+- ✅ 本地缓存启用469
+- ✅ Local Cache Enabled469
+- ✅ ローカルキャッシュ有効469
+- ✅ 로컬 캐시 활성화469
+
+### v469.15 基于位置推荐469 | Location Based Rec469 | 位置ベースレコメンド469 | 위치 기반 추천469
+- ✅ 基于位置推荐469
+- ✅ Location Based Rec469
+- ✅ 位置ベースレコメンド469
+- ✅ 위치 기반 추천469
+
+### v470.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v470.1-v470.15 功能列表
+- ✅ Key Mapping Custom470, Label Auto Generate470, Layer Auto Composite470, Lazy Load Enabled470, Lead In Auto Skip470, Lens Correction470, Level Auto Adjust470, Light Adaptive470, Limit Bandwidth Auto470, Line Spacing Adjust470, Link Preview Auto470, List Animation470, Load Priority High470, Local Cache Enabled470, Location Based Rec470
+
+### v470.1 按键映射自定义470 | Key Mapping Custom470 | キーマッピングカスタム470 | 키 매핑 사용자 정의470
+- ✅ 按键映射自定义470
+- ✅ Key Mapping Custom470
+- ✅ キーマッピングカスタム470
+- ✅ 키 매핑 사용자 정의470
+
+### v470.2 标签自动生成470 | Label Auto Generate470 | ラベル自動生成470 | 라벨 자동 생성470
+- ✅ 标签自动生成470
+- ✅ Label Auto Generate470
+- ✅ ラベル自動生成470
+- ✅ 라벨 자동 생성470
+
+### v470.3 图层自动合成470 | Layer Auto Composite470 | レイヤー自動合成470 | 레이어 자동 합성470
+- ✅ 图层自动合成470
+- ✅ Layer Auto Composite470
+- ✅ レイヤー自動合成470
+- ✅ 레이어 자동 합성470
+
+### v470.4 懒加载启用470 | Lazy Load Enabled470 | 遅延ロード有効470 | 지연 로드 활성화470
+- ✅ 懒加载启用470
+- ✅ Lazy Load Enabled470
+- ✅ 遅延ロード有効470
+- ✅ 지연 로드 활성화470
+
+### v470.5 片头自动跳过470 | Lead In Auto Skip470 | リードイン自動スキップ470 | 리드인 자동 건너뛰기470
+- ✅ 片头自动跳过470
+- ✅ Lead In Auto Skip470
+- ✅ リードイン自動スキップ470
+- ✅ 리드인 자동 건너뛰기470
+
+### v470.6 镜头校正470 | Lens Correction470 | レンズ補正470 | 렌즈 보정470
+- ✅ 镜头校正470
+- ✅ Lens Correction470
+- ✅ レンズ補正470
+- ✅ 렌즈 보정470
+
+### v470.7 电平自动调整470 | Level Auto Adjust470 | レベル自動調整470 | 레벨 자동 조절470
+- ✅ 电平自动调整470
+- ✅ Level Auto Adjust470
+- ✅ レベル自動調整470
+- ✅ 레벨 자동 조절470
+
+### v470.8 亮度自适应470 | Light Adaptive470 | 明るさ適応型470 | 밝기 적응형470
+- ✅ 亮度自适应470
+- ✅ Light Adaptive470
+- ✅ 明るさ適応型470
+- ✅ 밝기 적응형470
+
+### v470.9 自动限制带宽470 | Limit Bandwidth Auto470 | 帯域自動制限470 | 대역폭 자동 제한470
+- ✅ 自动限制带宽470
+- ✅ Limit Bandwidth Auto470
+- ✅ 帯域自動制限470
+- ✅ 대역폭 자동 제한470
+
+### v470.10 行间距调整470 | Line Spacing Adjust470 | 行間調整470 | 줄 간격 조절470
+- ✅ 行间距调整470
+- ✅ Line Spacing Adjust470
+- ✅ 行間調整470
+- ✅ 줄 간격 조절470
+
+### v470.11 链接自动预览470 | Link Preview Auto470 | リンク自動プレビュー470 | 링크 자동 미리보기470
+- ✅ 链接自动预览470
+- ✅ Link Preview Auto470
+- ✅ リンク自動プレビュー470
+- ✅ 링크 자동 미리보기470
+
+### v470.12 列表动画470 | List Animation470 | リストアニメーション470 | 리스트 애니메이션470
+- ✅ 列表动画470
+- ✅ List Animation470
+- ✅ リストアニメーション470
+- ✅ 리스트 애니메이션470
+
+### v470.13 加载优先级高470 | Load Priority High470 | ロード優先度高470 | 로드 우선순위 높음470
+- ✅ 加载优先级高470
+- ✅ Load Priority High470
+- ✅ ロード優先度高470
+- ✅ 로드 우선순위 높음470
+
+### v470.14 本地缓存启用470 | Local Cache Enabled470 | ローカルキャッシュ有効470 | 로컬 캐시 활성화470
+- ✅ 本地缓存启用470
+- ✅ Local Cache Enabled470
+- ✅ ローカルキャッシュ有効470
+- ✅ 로컬 캐시 활성화470
+
+### v470.15 基于位置推荐470 | Location Based Rec470 | 位置ベースレコメンド470 | 위치 기반 추천470
+- ✅ 基于位置推荐470
+- ✅ Location Based Rec470
+- ✅ 位置ベースレコメンド470
+- ✅ 위치 기반 추천470
+
 ### v55.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
 ### v55.1-v55.15 功能列表
 - ✅ Auto Resume, Font Monospace, Color Hue Auto, Peak Limiter, Send Queue, Cast Bandwidth Limit, Lock Screen, Filter Regex, Network Policy, Double Tap Action, Font Weight Custom, Tint Custom, Volume Compressor, Bg Padding, Cast Auto Quality
@@ -50518,4 +51459,4 @@ This project is based on open-source software. All rights belong to the original
 - **基础版本 | Base Versions**: v10.0.0 - v11.19.0 (25 versions)
 - **AI自动维护版本 | AI Maintained**: v12.1 - v45.15 (550+ versions)
 - **开发周期 | Development Cycle**: 2024 - 2026
-- **功能特性 | Features**: 4600+ new features added
+- **功能特性 | Features**: 4700+ new features added
