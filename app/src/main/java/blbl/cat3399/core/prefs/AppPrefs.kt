@@ -31448,6 +31448,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V410DIMSCREENONIDLE410, false)
         set(value) = prefs.edit().putBoolean(KEY_V410DIMSCREENONIDLE410, value).apply()
 
+    var v411displayRefreshRate411: Int
+        get() = prefs.getInt(KEY_V411DISPLAYREFRESHRATE411, 0)
+        set(value) = prefs.edit().putInt(KEY_V411DISPLAYREFRESHRATE411, value).apply()
+
+    var v411displayColorTemp411: Int
+        get() = prefs.getInt(KEY_V411DISPLAYCOLORTEMP411, 0)
+        set(value) = prefs.edit().putInt(KEY_V411DISPLAYCOLORTEMP411, value).apply()
+
+    var v411dividerAutoInsert411: Boolean
+        get() = prefs.getBoolean(KEY_V411DIVIDERAUTOINSERT411, false)
+        set(value) = prefs.edit().putBoolean(KEY_V411DIVIDERAUTOINSERT411, value).apply()
+
+    var v411domainAutoBlock411: Boolean
+        get() = prefs.getBoolean(KEY_V411DOMAINAUTOBLOCK411, false)
+        set(value) = prefs.edit().putBoolean(KEY_V411DOMAINAUTOBLOCK411, value).apply()
+
+    var v411dragDropEnabled411: Boolean
+        get() = prefs.getBoolean(KEY_V411DRAGDROPENABLED411, false)
+        set(value) = prefs.edit().putBoolean(KEY_V411DRAGDROPENABLED411, value).apply()
+
+    var v411drawerAutoCollapse411: Boolean
+        get() = prefs.getBoolean(KEY_V411DRAWERAUTOCOLLAPSE411, false)
+        set(value) = prefs.edit().putBoolean(KEY_V411DRAWERAUTOCOLLAPSE411, value).apply()
+
+    var v411drmAutoDetect411: Boolean
+        get() = prefs.getBoolean(KEY_V411DRMAUTODETECT411, false)
+        set(value) = prefs.edit().putBoolean(KEY_V411DRMAUTODETECT411, value).apply()
+
+    var v411duplicateAutoRemove411: Boolean
+        get() = prefs.getBoolean(KEY_V411DUPLICATEAUTOREMOVE411, false)
+        set(value) = prefs.edit().putBoolean(KEY_V411DUPLICATEAUTOREMOVE411, value).apply()
+
+    var v411dynamicIsland411: Boolean
+        get() = prefs.getBoolean(KEY_V411DYNAMICISLAND411, false)
+        set(value) = prefs.edit().putBoolean(KEY_V411DYNAMICISLAND411, value).apply()
+
+    var v411dynamicThemeColor411: Boolean
+        get() = prefs.getBoolean(KEY_V411DYNAMICTHEMECOLOR411, false)
+        set(value) = prefs.edit().putBoolean(KEY_V411DYNAMICTHEMECOLOR411, value).apply()
+
+    var v411edgeTouchReject411: Boolean
+        get() = prefs.getBoolean(KEY_V411EDGETOUCHREJECT411, false)
+        set(value) = prefs.edit().putBoolean(KEY_V411EDGETOUCHREJECT411, value).apply()
+
+    var v411embedSubtitleTrack411: Boolean
+        get() = prefs.getBoolean(KEY_V411EMBEDSUBTITLETRACK411, false)
+        set(value) = prefs.edit().putBoolean(KEY_V411EMBEDSUBTITLETRACK411, value).apply()
+
+    var v411encodeAutoSelect411: Int
+        get() = prefs.getInt(KEY_V411ENCODEAUTOSELECT411, 0)
+        set(value) = prefs.edit().putInt(KEY_V411ENCODEAUTOSELECT411, value).apply()
+
+    var v411endpointAutoSwitch411: Boolean
+        get() = prefs.getBoolean(KEY_V411ENDPOINTAUTOSWITCH411, false)
+        set(value) = prefs.edit().putBoolean(KEY_V411ENDPOINTAUTOSWITCH411, value).apply()
+
+    var v411engineAutoOptimize411: Boolean
+        get() = prefs.getBoolean(KEY_V411ENGINEAUTOOPTIMIZE411, false)
+        set(value) = prefs.edit().putBoolean(KEY_V411ENGINEAUTOOPTIMIZE411, value).apply()
+
+    var v412displayRefreshRate412: Int
+        get() = prefs.getInt(KEY_V412DISPLAYREFRESHRATE412, 0)
+        set(value) = prefs.edit().putInt(KEY_V412DISPLAYREFRESHRATE412, value).apply()
+
+    var v412displayColorTemp412: Int
+        get() = prefs.getInt(KEY_V412DISPLAYCOLORTEMP412, 0)
+        set(value) = prefs.edit().putInt(KEY_V412DISPLAYCOLORTEMP412, value).apply()
+
+    var v412dividerAutoInsert412: Boolean
+        get() = prefs.getBoolean(KEY_V412DIVIDERAUTOINSERT412, false)
+        set(value) = prefs.edit().putBoolean(KEY_V412DIVIDERAUTOINSERT412, value).apply()
+
+    var v412domainAutoBlock412: Boolean
+        get() = prefs.getBoolean(KEY_V412DOMAINAUTOBLOCK412, false)
+        set(value) = prefs.edit().putBoolean(KEY_V412DOMAINAUTOBLOCK412, value).apply()
+
+    var v412dragDropEnabled412: Boolean
+        get() = prefs.getBoolean(KEY_V412DRAGDROPENABLED412, false)
+        set(value) = prefs.edit().putBoolean(KEY_V412DRAGDROPENABLED412, value).apply()
+
+    var v412drawerAutoCollapse412: Boolean
+        get() = prefs.getBoolean(KEY_V412DRAWERAUTOCOLLAPSE412, false)
+        set(value) = prefs.edit().putBoolean(KEY_V412DRAWERAUTOCOLLAPSE412, value).apply()
+
+    var v412drmAutoDetect412: Boolean
+        get() = prefs.getBoolean(KEY_V412DRMAUTODETECT412, false)
+        set(value) = prefs.edit().putBoolean(KEY_V412DRMAUTODETECT412, value).apply()
+
+    var v412duplicateAutoRemove412: Boolean
+        get() = prefs.getBoolean(KEY_V412DUPLICATEAUTOREMOVE412, false)
+        set(value) = prefs.edit().putBoolean(KEY_V412DUPLICATEAUTOREMOVE412, value).apply()
+
+    var v412dynamicIsland412: Boolean
+        get() = prefs.getBoolean(KEY_V412DYNAMICISLAND412, false)
+        set(value) = prefs.edit().putBoolean(KEY_V412DYNAMICISLAND412, value).apply()
+
+    var v412dynamicThemeColor412: Boolean
+        get() = prefs.getBoolean(KEY_V412DYNAMICTHEMECOLOR412, false)
+        set(value) = prefs.edit().putBoolean(KEY_V412DYNAMICTHEMECOLOR412, value).apply()
+
+    var v412edgeTouchReject412: Boolean
+        get() = prefs.getBoolean(KEY_V412EDGETOUCHREJECT412, false)
+        set(value) = prefs.edit().putBoolean(KEY_V412EDGETOUCHREJECT412, value).apply()
+
+    var v412embedSubtitleTrack412: Boolean
+        get() = prefs.getBoolean(KEY_V412EMBEDSUBTITLETRACK412, false)
+        set(value) = prefs.edit().putBoolean(KEY_V412EMBEDSUBTITLETRACK412, value).apply()
+
+    var v412encodeAutoSelect412: Int
+        get() = prefs.getInt(KEY_V412ENCODEAUTOSELECT412, 0)
+        set(value) = prefs.edit().putInt(KEY_V412ENCODEAUTOSELECT412, value).apply()
+
+    var v412endpointAutoSwitch412: Boolean
+        get() = prefs.getBoolean(KEY_V412ENDPOINTAUTOSWITCH412, false)
+        set(value) = prefs.edit().putBoolean(KEY_V412ENDPOINTAUTOSWITCH412, value).apply()
+
+    var v412engineAutoOptimize412: Boolean
+        get() = prefs.getBoolean(KEY_V412ENGINEAUTOOPTIMIZE412, false)
+        set(value) = prefs.edit().putBoolean(KEY_V412ENGINEAUTOOPTIMIZE412, value).apply()
+
+    var v413displayRefreshRate413: Int
+        get() = prefs.getInt(KEY_V413DISPLAYREFRESHRATE413, 0)
+        set(value) = prefs.edit().putInt(KEY_V413DISPLAYREFRESHRATE413, value).apply()
+
+    var v413displayColorTemp413: Int
+        get() = prefs.getInt(KEY_V413DISPLAYCOLORTEMP413, 0)
+        set(value) = prefs.edit().putInt(KEY_V413DISPLAYCOLORTEMP413, value).apply()
+
+    var v413dividerAutoInsert413: Boolean
+        get() = prefs.getBoolean(KEY_V413DIVIDERAUTOINSERT413, false)
+        set(value) = prefs.edit().putBoolean(KEY_V413DIVIDERAUTOINSERT413, value).apply()
+
+    var v413domainAutoBlock413: Boolean
+        get() = prefs.getBoolean(KEY_V413DOMAINAUTOBLOCK413, false)
+        set(value) = prefs.edit().putBoolean(KEY_V413DOMAINAUTOBLOCK413, value).apply()
+
+    var v413dragDropEnabled413: Boolean
+        get() = prefs.getBoolean(KEY_V413DRAGDROPENABLED413, false)
+        set(value) = prefs.edit().putBoolean(KEY_V413DRAGDROPENABLED413, value).apply()
+
+    var v413drawerAutoCollapse413: Boolean
+        get() = prefs.getBoolean(KEY_V413DRAWERAUTOCOLLAPSE413, false)
+        set(value) = prefs.edit().putBoolean(KEY_V413DRAWERAUTOCOLLAPSE413, value).apply()
+
+    var v413drmAutoDetect413: Boolean
+        get() = prefs.getBoolean(KEY_V413DRMAUTODETECT413, false)
+        set(value) = prefs.edit().putBoolean(KEY_V413DRMAUTODETECT413, value).apply()
+
+    var v413duplicateAutoRemove413: Boolean
+        get() = prefs.getBoolean(KEY_V413DUPLICATEAUTOREMOVE413, false)
+        set(value) = prefs.edit().putBoolean(KEY_V413DUPLICATEAUTOREMOVE413, value).apply()
+
+    var v413dynamicIsland413: Boolean
+        get() = prefs.getBoolean(KEY_V413DYNAMICISLAND413, false)
+        set(value) = prefs.edit().putBoolean(KEY_V413DYNAMICISLAND413, value).apply()
+
+    var v413dynamicThemeColor413: Boolean
+        get() = prefs.getBoolean(KEY_V413DYNAMICTHEMECOLOR413, false)
+        set(value) = prefs.edit().putBoolean(KEY_V413DYNAMICTHEMECOLOR413, value).apply()
+
+    var v413edgeTouchReject413: Boolean
+        get() = prefs.getBoolean(KEY_V413EDGETOUCHREJECT413, false)
+        set(value) = prefs.edit().putBoolean(KEY_V413EDGETOUCHREJECT413, value).apply()
+
+    var v413embedSubtitleTrack413: Boolean
+        get() = prefs.getBoolean(KEY_V413EMBEDSUBTITLETRACK413, false)
+        set(value) = prefs.edit().putBoolean(KEY_V413EMBEDSUBTITLETRACK413, value).apply()
+
+    var v413encodeAutoSelect413: Int
+        get() = prefs.getInt(KEY_V413ENCODEAUTOSELECT413, 0)
+        set(value) = prefs.edit().putInt(KEY_V413ENCODEAUTOSELECT413, value).apply()
+
+    var v413endpointAutoSwitch413: Boolean
+        get() = prefs.getBoolean(KEY_V413ENDPOINTAUTOSWITCH413, false)
+        set(value) = prefs.edit().putBoolean(KEY_V413ENDPOINTAUTOSWITCH413, value).apply()
+
+    var v413engineAutoOptimize413: Boolean
+        get() = prefs.getBoolean(KEY_V413ENGINEAUTOOPTIMIZE413, false)
+        set(value) = prefs.edit().putBoolean(KEY_V413ENGINEAUTOOPTIMIZE413, value).apply()
+
+    var v414displayRefreshRate414: Int
+        get() = prefs.getInt(KEY_V414DISPLAYREFRESHRATE414, 0)
+        set(value) = prefs.edit().putInt(KEY_V414DISPLAYREFRESHRATE414, value).apply()
+
+    var v414displayColorTemp414: Int
+        get() = prefs.getInt(KEY_V414DISPLAYCOLORTEMP414, 0)
+        set(value) = prefs.edit().putInt(KEY_V414DISPLAYCOLORTEMP414, value).apply()
+
+    var v414dividerAutoInsert414: Boolean
+        get() = prefs.getBoolean(KEY_V414DIVIDERAUTOINSERT414, false)
+        set(value) = prefs.edit().putBoolean(KEY_V414DIVIDERAUTOINSERT414, value).apply()
+
+    var v414domainAutoBlock414: Boolean
+        get() = prefs.getBoolean(KEY_V414DOMAINAUTOBLOCK414, false)
+        set(value) = prefs.edit().putBoolean(KEY_V414DOMAINAUTOBLOCK414, value).apply()
+
+    var v414dragDropEnabled414: Boolean
+        get() = prefs.getBoolean(KEY_V414DRAGDROPENABLED414, false)
+        set(value) = prefs.edit().putBoolean(KEY_V414DRAGDROPENABLED414, value).apply()
+
+    var v414drawerAutoCollapse414: Boolean
+        get() = prefs.getBoolean(KEY_V414DRAWERAUTOCOLLAPSE414, false)
+        set(value) = prefs.edit().putBoolean(KEY_V414DRAWERAUTOCOLLAPSE414, value).apply()
+
+    var v414drmAutoDetect414: Boolean
+        get() = prefs.getBoolean(KEY_V414DRMAUTODETECT414, false)
+        set(value) = prefs.edit().putBoolean(KEY_V414DRMAUTODETECT414, value).apply()
+
+    var v414duplicateAutoRemove414: Boolean
+        get() = prefs.getBoolean(KEY_V414DUPLICATEAUTOREMOVE414, false)
+        set(value) = prefs.edit().putBoolean(KEY_V414DUPLICATEAUTOREMOVE414, value).apply()
+
+    var v414dynamicIsland414: Boolean
+        get() = prefs.getBoolean(KEY_V414DYNAMICISLAND414, false)
+        set(value) = prefs.edit().putBoolean(KEY_V414DYNAMICISLAND414, value).apply()
+
+    var v414dynamicThemeColor414: Boolean
+        get() = prefs.getBoolean(KEY_V414DYNAMICTHEMECOLOR414, false)
+        set(value) = prefs.edit().putBoolean(KEY_V414DYNAMICTHEMECOLOR414, value).apply()
+
+    var v414edgeTouchReject414: Boolean
+        get() = prefs.getBoolean(KEY_V414EDGETOUCHREJECT414, false)
+        set(value) = prefs.edit().putBoolean(KEY_V414EDGETOUCHREJECT414, value).apply()
+
+    var v414embedSubtitleTrack414: Boolean
+        get() = prefs.getBoolean(KEY_V414EMBEDSUBTITLETRACK414, false)
+        set(value) = prefs.edit().putBoolean(KEY_V414EMBEDSUBTITLETRACK414, value).apply()
+
+    var v414encodeAutoSelect414: Int
+        get() = prefs.getInt(KEY_V414ENCODEAUTOSELECT414, 0)
+        set(value) = prefs.edit().putInt(KEY_V414ENCODEAUTOSELECT414, value).apply()
+
+    var v414endpointAutoSwitch414: Boolean
+        get() = prefs.getBoolean(KEY_V414ENDPOINTAUTOSWITCH414, false)
+        set(value) = prefs.edit().putBoolean(KEY_V414ENDPOINTAUTOSWITCH414, value).apply()
+
+    var v414engineAutoOptimize414: Boolean
+        get() = prefs.getBoolean(KEY_V414ENGINEAUTOOPTIMIZE414, false)
+        set(value) = prefs.edit().putBoolean(KEY_V414ENGINEAUTOOPTIMIZE414, value).apply()
+
+    var v415displayRefreshRate415: Int
+        get() = prefs.getInt(KEY_V415DISPLAYREFRESHRATE415, 0)
+        set(value) = prefs.edit().putInt(KEY_V415DISPLAYREFRESHRATE415, value).apply()
+
+    var v415displayColorTemp415: Int
+        get() = prefs.getInt(KEY_V415DISPLAYCOLORTEMP415, 0)
+        set(value) = prefs.edit().putInt(KEY_V415DISPLAYCOLORTEMP415, value).apply()
+
+    var v415dividerAutoInsert415: Boolean
+        get() = prefs.getBoolean(KEY_V415DIVIDERAUTOINSERT415, false)
+        set(value) = prefs.edit().putBoolean(KEY_V415DIVIDERAUTOINSERT415, value).apply()
+
+    var v415domainAutoBlock415: Boolean
+        get() = prefs.getBoolean(KEY_V415DOMAINAUTOBLOCK415, false)
+        set(value) = prefs.edit().putBoolean(KEY_V415DOMAINAUTOBLOCK415, value).apply()
+
+    var v415dragDropEnabled415: Boolean
+        get() = prefs.getBoolean(KEY_V415DRAGDROPENABLED415, false)
+        set(value) = prefs.edit().putBoolean(KEY_V415DRAGDROPENABLED415, value).apply()
+
+    var v415drawerAutoCollapse415: Boolean
+        get() = prefs.getBoolean(KEY_V415DRAWERAUTOCOLLAPSE415, false)
+        set(value) = prefs.edit().putBoolean(KEY_V415DRAWERAUTOCOLLAPSE415, value).apply()
+
+    var v415drmAutoDetect415: Boolean
+        get() = prefs.getBoolean(KEY_V415DRMAUTODETECT415, false)
+        set(value) = prefs.edit().putBoolean(KEY_V415DRMAUTODETECT415, value).apply()
+
+    var v415duplicateAutoRemove415: Boolean
+        get() = prefs.getBoolean(KEY_V415DUPLICATEAUTOREMOVE415, false)
+        set(value) = prefs.edit().putBoolean(KEY_V415DUPLICATEAUTOREMOVE415, value).apply()
+
+    var v415dynamicIsland415: Boolean
+        get() = prefs.getBoolean(KEY_V415DYNAMICISLAND415, false)
+        set(value) = prefs.edit().putBoolean(KEY_V415DYNAMICISLAND415, value).apply()
+
+    var v415dynamicThemeColor415: Boolean
+        get() = prefs.getBoolean(KEY_V415DYNAMICTHEMECOLOR415, false)
+        set(value) = prefs.edit().putBoolean(KEY_V415DYNAMICTHEMECOLOR415, value).apply()
+
+    var v415edgeTouchReject415: Boolean
+        get() = prefs.getBoolean(KEY_V415EDGETOUCHREJECT415, false)
+        set(value) = prefs.edit().putBoolean(KEY_V415EDGETOUCHREJECT415, value).apply()
+
+    var v415embedSubtitleTrack415: Boolean
+        get() = prefs.getBoolean(KEY_V415EMBEDSUBTITLETRACK415, false)
+        set(value) = prefs.edit().putBoolean(KEY_V415EMBEDSUBTITLETRACK415, value).apply()
+
+    var v415encodeAutoSelect415: Int
+        get() = prefs.getInt(KEY_V415ENCODEAUTOSELECT415, 0)
+        set(value) = prefs.edit().putInt(KEY_V415ENCODEAUTOSELECT415, value).apply()
+
+    var v415endpointAutoSwitch415: Boolean
+        get() = prefs.getBoolean(KEY_V415ENDPOINTAUTOSWITCH415, false)
+        set(value) = prefs.edit().putBoolean(KEY_V415ENDPOINTAUTOSWITCH415, value).apply()
+
+    var v415engineAutoOptimize415: Boolean
+        get() = prefs.getBoolean(KEY_V415ENGINEAUTOOPTIMIZE415, false)
+        set(value) = prefs.edit().putBoolean(KEY_V415ENGINEAUTOOPTIMIZE415, value).apply()
+
+    var v416displayRefreshRate416: Int
+        get() = prefs.getInt(KEY_V416DISPLAYREFRESHRATE416, 0)
+        set(value) = prefs.edit().putInt(KEY_V416DISPLAYREFRESHRATE416, value).apply()
+
+    var v416displayColorTemp416: Int
+        get() = prefs.getInt(KEY_V416DISPLAYCOLORTEMP416, 0)
+        set(value) = prefs.edit().putInt(KEY_V416DISPLAYCOLORTEMP416, value).apply()
+
+    var v416dividerAutoInsert416: Boolean
+        get() = prefs.getBoolean(KEY_V416DIVIDERAUTOINSERT416, false)
+        set(value) = prefs.edit().putBoolean(KEY_V416DIVIDERAUTOINSERT416, value).apply()
+
+    var v416domainAutoBlock416: Boolean
+        get() = prefs.getBoolean(KEY_V416DOMAINAUTOBLOCK416, false)
+        set(value) = prefs.edit().putBoolean(KEY_V416DOMAINAUTOBLOCK416, value).apply()
+
+    var v416dragDropEnabled416: Boolean
+        get() = prefs.getBoolean(KEY_V416DRAGDROPENABLED416, false)
+        set(value) = prefs.edit().putBoolean(KEY_V416DRAGDROPENABLED416, value).apply()
+
+    var v416drawerAutoCollapse416: Boolean
+        get() = prefs.getBoolean(KEY_V416DRAWERAUTOCOLLAPSE416, false)
+        set(value) = prefs.edit().putBoolean(KEY_V416DRAWERAUTOCOLLAPSE416, value).apply()
+
+    var v416drmAutoDetect416: Boolean
+        get() = prefs.getBoolean(KEY_V416DRMAUTODETECT416, false)
+        set(value) = prefs.edit().putBoolean(KEY_V416DRMAUTODETECT416, value).apply()
+
+    var v416duplicateAutoRemove416: Boolean
+        get() = prefs.getBoolean(KEY_V416DUPLICATEAUTOREMOVE416, false)
+        set(value) = prefs.edit().putBoolean(KEY_V416DUPLICATEAUTOREMOVE416, value).apply()
+
+    var v416dynamicIsland416: Boolean
+        get() = prefs.getBoolean(KEY_V416DYNAMICISLAND416, false)
+        set(value) = prefs.edit().putBoolean(KEY_V416DYNAMICISLAND416, value).apply()
+
+    var v416dynamicThemeColor416: Boolean
+        get() = prefs.getBoolean(KEY_V416DYNAMICTHEMECOLOR416, false)
+        set(value) = prefs.edit().putBoolean(KEY_V416DYNAMICTHEMECOLOR416, value).apply()
+
+    var v416edgeTouchReject416: Boolean
+        get() = prefs.getBoolean(KEY_V416EDGETOUCHREJECT416, false)
+        set(value) = prefs.edit().putBoolean(KEY_V416EDGETOUCHREJECT416, value).apply()
+
+    var v416embedSubtitleTrack416: Boolean
+        get() = prefs.getBoolean(KEY_V416EMBEDSUBTITLETRACK416, false)
+        set(value) = prefs.edit().putBoolean(KEY_V416EMBEDSUBTITLETRACK416, value).apply()
+
+    var v416encodeAutoSelect416: Int
+        get() = prefs.getInt(KEY_V416ENCODEAUTOSELECT416, 0)
+        set(value) = prefs.edit().putInt(KEY_V416ENCODEAUTOSELECT416, value).apply()
+
+    var v416endpointAutoSwitch416: Boolean
+        get() = prefs.getBoolean(KEY_V416ENDPOINTAUTOSWITCH416, false)
+        set(value) = prefs.edit().putBoolean(KEY_V416ENDPOINTAUTOSWITCH416, value).apply()
+
+    var v416engineAutoOptimize416: Boolean
+        get() = prefs.getBoolean(KEY_V416ENGINEAUTOOPTIMIZE416, false)
+        set(value) = prefs.edit().putBoolean(KEY_V416ENGINEAUTOOPTIMIZE416, value).apply()
+
+    var v417displayRefreshRate417: Int
+        get() = prefs.getInt(KEY_V417DISPLAYREFRESHRATE417, 0)
+        set(value) = prefs.edit().putInt(KEY_V417DISPLAYREFRESHRATE417, value).apply()
+
+    var v417displayColorTemp417: Int
+        get() = prefs.getInt(KEY_V417DISPLAYCOLORTEMP417, 0)
+        set(value) = prefs.edit().putInt(KEY_V417DISPLAYCOLORTEMP417, value).apply()
+
+    var v417dividerAutoInsert417: Boolean
+        get() = prefs.getBoolean(KEY_V417DIVIDERAUTOINSERT417, false)
+        set(value) = prefs.edit().putBoolean(KEY_V417DIVIDERAUTOINSERT417, value).apply()
+
+    var v417domainAutoBlock417: Boolean
+        get() = prefs.getBoolean(KEY_V417DOMAINAUTOBLOCK417, false)
+        set(value) = prefs.edit().putBoolean(KEY_V417DOMAINAUTOBLOCK417, value).apply()
+
+    var v417dragDropEnabled417: Boolean
+        get() = prefs.getBoolean(KEY_V417DRAGDROPENABLED417, false)
+        set(value) = prefs.edit().putBoolean(KEY_V417DRAGDROPENABLED417, value).apply()
+
+    var v417drawerAutoCollapse417: Boolean
+        get() = prefs.getBoolean(KEY_V417DRAWERAUTOCOLLAPSE417, false)
+        set(value) = prefs.edit().putBoolean(KEY_V417DRAWERAUTOCOLLAPSE417, value).apply()
+
+    var v417drmAutoDetect417: Boolean
+        get() = prefs.getBoolean(KEY_V417DRMAUTODETECT417, false)
+        set(value) = prefs.edit().putBoolean(KEY_V417DRMAUTODETECT417, value).apply()
+
+    var v417duplicateAutoRemove417: Boolean
+        get() = prefs.getBoolean(KEY_V417DUPLICATEAUTOREMOVE417, false)
+        set(value) = prefs.edit().putBoolean(KEY_V417DUPLICATEAUTOREMOVE417, value).apply()
+
+    var v417dynamicIsland417: Boolean
+        get() = prefs.getBoolean(KEY_V417DYNAMICISLAND417, false)
+        set(value) = prefs.edit().putBoolean(KEY_V417DYNAMICISLAND417, value).apply()
+
+    var v417dynamicThemeColor417: Boolean
+        get() = prefs.getBoolean(KEY_V417DYNAMICTHEMECOLOR417, false)
+        set(value) = prefs.edit().putBoolean(KEY_V417DYNAMICTHEMECOLOR417, value).apply()
+
+    var v417edgeTouchReject417: Boolean
+        get() = prefs.getBoolean(KEY_V417EDGETOUCHREJECT417, false)
+        set(value) = prefs.edit().putBoolean(KEY_V417EDGETOUCHREJECT417, value).apply()
+
+    var v417embedSubtitleTrack417: Boolean
+        get() = prefs.getBoolean(KEY_V417EMBEDSUBTITLETRACK417, false)
+        set(value) = prefs.edit().putBoolean(KEY_V417EMBEDSUBTITLETRACK417, value).apply()
+
+    var v417encodeAutoSelect417: Int
+        get() = prefs.getInt(KEY_V417ENCODEAUTOSELECT417, 0)
+        set(value) = prefs.edit().putInt(KEY_V417ENCODEAUTOSELECT417, value).apply()
+
+    var v417endpointAutoSwitch417: Boolean
+        get() = prefs.getBoolean(KEY_V417ENDPOINTAUTOSWITCH417, false)
+        set(value) = prefs.edit().putBoolean(KEY_V417ENDPOINTAUTOSWITCH417, value).apply()
+
+    var v417engineAutoOptimize417: Boolean
+        get() = prefs.getBoolean(KEY_V417ENGINEAUTOOPTIMIZE417, false)
+        set(value) = prefs.edit().putBoolean(KEY_V417ENGINEAUTOOPTIMIZE417, value).apply()
+
+    var v418displayRefreshRate418: Int
+        get() = prefs.getInt(KEY_V418DISPLAYREFRESHRATE418, 0)
+        set(value) = prefs.edit().putInt(KEY_V418DISPLAYREFRESHRATE418, value).apply()
+
+    var v418displayColorTemp418: Int
+        get() = prefs.getInt(KEY_V418DISPLAYCOLORTEMP418, 0)
+        set(value) = prefs.edit().putInt(KEY_V418DISPLAYCOLORTEMP418, value).apply()
+
+    var v418dividerAutoInsert418: Boolean
+        get() = prefs.getBoolean(KEY_V418DIVIDERAUTOINSERT418, false)
+        set(value) = prefs.edit().putBoolean(KEY_V418DIVIDERAUTOINSERT418, value).apply()
+
+    var v418domainAutoBlock418: Boolean
+        get() = prefs.getBoolean(KEY_V418DOMAINAUTOBLOCK418, false)
+        set(value) = prefs.edit().putBoolean(KEY_V418DOMAINAUTOBLOCK418, value).apply()
+
+    var v418dragDropEnabled418: Boolean
+        get() = prefs.getBoolean(KEY_V418DRAGDROPENABLED418, false)
+        set(value) = prefs.edit().putBoolean(KEY_V418DRAGDROPENABLED418, value).apply()
+
+    var v418drawerAutoCollapse418: Boolean
+        get() = prefs.getBoolean(KEY_V418DRAWERAUTOCOLLAPSE418, false)
+        set(value) = prefs.edit().putBoolean(KEY_V418DRAWERAUTOCOLLAPSE418, value).apply()
+
+    var v418drmAutoDetect418: Boolean
+        get() = prefs.getBoolean(KEY_V418DRMAUTODETECT418, false)
+        set(value) = prefs.edit().putBoolean(KEY_V418DRMAUTODETECT418, value).apply()
+
+    var v418duplicateAutoRemove418: Boolean
+        get() = prefs.getBoolean(KEY_V418DUPLICATEAUTOREMOVE418, false)
+        set(value) = prefs.edit().putBoolean(KEY_V418DUPLICATEAUTOREMOVE418, value).apply()
+
+    var v418dynamicIsland418: Boolean
+        get() = prefs.getBoolean(KEY_V418DYNAMICISLAND418, false)
+        set(value) = prefs.edit().putBoolean(KEY_V418DYNAMICISLAND418, value).apply()
+
+    var v418dynamicThemeColor418: Boolean
+        get() = prefs.getBoolean(KEY_V418DYNAMICTHEMECOLOR418, false)
+        set(value) = prefs.edit().putBoolean(KEY_V418DYNAMICTHEMECOLOR418, value).apply()
+
+    var v418edgeTouchReject418: Boolean
+        get() = prefs.getBoolean(KEY_V418EDGETOUCHREJECT418, false)
+        set(value) = prefs.edit().putBoolean(KEY_V418EDGETOUCHREJECT418, value).apply()
+
+    var v418embedSubtitleTrack418: Boolean
+        get() = prefs.getBoolean(KEY_V418EMBEDSUBTITLETRACK418, false)
+        set(value) = prefs.edit().putBoolean(KEY_V418EMBEDSUBTITLETRACK418, value).apply()
+
+    var v418encodeAutoSelect418: Int
+        get() = prefs.getInt(KEY_V418ENCODEAUTOSELECT418, 0)
+        set(value) = prefs.edit().putInt(KEY_V418ENCODEAUTOSELECT418, value).apply()
+
+    var v418endpointAutoSwitch418: Boolean
+        get() = prefs.getBoolean(KEY_V418ENDPOINTAUTOSWITCH418, false)
+        set(value) = prefs.edit().putBoolean(KEY_V418ENDPOINTAUTOSWITCH418, value).apply()
+
+    var v418engineAutoOptimize418: Boolean
+        get() = prefs.getBoolean(KEY_V418ENGINEAUTOOPTIMIZE418, false)
+        set(value) = prefs.edit().putBoolean(KEY_V418ENGINEAUTOOPTIMIZE418, value).apply()
+
+    var v419displayRefreshRate419: Int
+        get() = prefs.getInt(KEY_V419DISPLAYREFRESHRATE419, 0)
+        set(value) = prefs.edit().putInt(KEY_V419DISPLAYREFRESHRATE419, value).apply()
+
+    var v419displayColorTemp419: Int
+        get() = prefs.getInt(KEY_V419DISPLAYCOLORTEMP419, 0)
+        set(value) = prefs.edit().putInt(KEY_V419DISPLAYCOLORTEMP419, value).apply()
+
+    var v419dividerAutoInsert419: Boolean
+        get() = prefs.getBoolean(KEY_V419DIVIDERAUTOINSERT419, false)
+        set(value) = prefs.edit().putBoolean(KEY_V419DIVIDERAUTOINSERT419, value).apply()
+
+    var v419domainAutoBlock419: Boolean
+        get() = prefs.getBoolean(KEY_V419DOMAINAUTOBLOCK419, false)
+        set(value) = prefs.edit().putBoolean(KEY_V419DOMAINAUTOBLOCK419, value).apply()
+
+    var v419dragDropEnabled419: Boolean
+        get() = prefs.getBoolean(KEY_V419DRAGDROPENABLED419, false)
+        set(value) = prefs.edit().putBoolean(KEY_V419DRAGDROPENABLED419, value).apply()
+
+    var v419drawerAutoCollapse419: Boolean
+        get() = prefs.getBoolean(KEY_V419DRAWERAUTOCOLLAPSE419, false)
+        set(value) = prefs.edit().putBoolean(KEY_V419DRAWERAUTOCOLLAPSE419, value).apply()
+
+    var v419drmAutoDetect419: Boolean
+        get() = prefs.getBoolean(KEY_V419DRMAUTODETECT419, false)
+        set(value) = prefs.edit().putBoolean(KEY_V419DRMAUTODETECT419, value).apply()
+
+    var v419duplicateAutoRemove419: Boolean
+        get() = prefs.getBoolean(KEY_V419DUPLICATEAUTOREMOVE419, false)
+        set(value) = prefs.edit().putBoolean(KEY_V419DUPLICATEAUTOREMOVE419, value).apply()
+
+    var v419dynamicIsland419: Boolean
+        get() = prefs.getBoolean(KEY_V419DYNAMICISLAND419, false)
+        set(value) = prefs.edit().putBoolean(KEY_V419DYNAMICISLAND419, value).apply()
+
+    var v419dynamicThemeColor419: Boolean
+        get() = prefs.getBoolean(KEY_V419DYNAMICTHEMECOLOR419, false)
+        set(value) = prefs.edit().putBoolean(KEY_V419DYNAMICTHEMECOLOR419, value).apply()
+
+    var v419edgeTouchReject419: Boolean
+        get() = prefs.getBoolean(KEY_V419EDGETOUCHREJECT419, false)
+        set(value) = prefs.edit().putBoolean(KEY_V419EDGETOUCHREJECT419, value).apply()
+
+    var v419embedSubtitleTrack419: Boolean
+        get() = prefs.getBoolean(KEY_V419EMBEDSUBTITLETRACK419, false)
+        set(value) = prefs.edit().putBoolean(KEY_V419EMBEDSUBTITLETRACK419, value).apply()
+
+    var v419encodeAutoSelect419: Int
+        get() = prefs.getInt(KEY_V419ENCODEAUTOSELECT419, 0)
+        set(value) = prefs.edit().putInt(KEY_V419ENCODEAUTOSELECT419, value).apply()
+
+    var v419endpointAutoSwitch419: Boolean
+        get() = prefs.getBoolean(KEY_V419ENDPOINTAUTOSWITCH419, false)
+        set(value) = prefs.edit().putBoolean(KEY_V419ENDPOINTAUTOSWITCH419, value).apply()
+
+    var v419engineAutoOptimize419: Boolean
+        get() = prefs.getBoolean(KEY_V419ENGINEAUTOOPTIMIZE419, false)
+        set(value) = prefs.edit().putBoolean(KEY_V419ENGINEAUTOOPTIMIZE419, value).apply()
+
+    var v420displayRefreshRate420: Int
+        get() = prefs.getInt(KEY_V420DISPLAYREFRESHRATE420, 0)
+        set(value) = prefs.edit().putInt(KEY_V420DISPLAYREFRESHRATE420, value).apply()
+
+    var v420displayColorTemp420: Int
+        get() = prefs.getInt(KEY_V420DISPLAYCOLORTEMP420, 0)
+        set(value) = prefs.edit().putInt(KEY_V420DISPLAYCOLORTEMP420, value).apply()
+
+    var v420dividerAutoInsert420: Boolean
+        get() = prefs.getBoolean(KEY_V420DIVIDERAUTOINSERT420, false)
+        set(value) = prefs.edit().putBoolean(KEY_V420DIVIDERAUTOINSERT420, value).apply()
+
+    var v420domainAutoBlock420: Boolean
+        get() = prefs.getBoolean(KEY_V420DOMAINAUTOBLOCK420, false)
+        set(value) = prefs.edit().putBoolean(KEY_V420DOMAINAUTOBLOCK420, value).apply()
+
+    var v420dragDropEnabled420: Boolean
+        get() = prefs.getBoolean(KEY_V420DRAGDROPENABLED420, false)
+        set(value) = prefs.edit().putBoolean(KEY_V420DRAGDROPENABLED420, value).apply()
+
+    var v420drawerAutoCollapse420: Boolean
+        get() = prefs.getBoolean(KEY_V420DRAWERAUTOCOLLAPSE420, false)
+        set(value) = prefs.edit().putBoolean(KEY_V420DRAWERAUTOCOLLAPSE420, value).apply()
+
+    var v420drmAutoDetect420: Boolean
+        get() = prefs.getBoolean(KEY_V420DRMAUTODETECT420, false)
+        set(value) = prefs.edit().putBoolean(KEY_V420DRMAUTODETECT420, value).apply()
+
+    var v420duplicateAutoRemove420: Boolean
+        get() = prefs.getBoolean(KEY_V420DUPLICATEAUTOREMOVE420, false)
+        set(value) = prefs.edit().putBoolean(KEY_V420DUPLICATEAUTOREMOVE420, value).apply()
+
+    var v420dynamicIsland420: Boolean
+        get() = prefs.getBoolean(KEY_V420DYNAMICISLAND420, false)
+        set(value) = prefs.edit().putBoolean(KEY_V420DYNAMICISLAND420, value).apply()
+
+    var v420dynamicThemeColor420: Boolean
+        get() = prefs.getBoolean(KEY_V420DYNAMICTHEMECOLOR420, false)
+        set(value) = prefs.edit().putBoolean(KEY_V420DYNAMICTHEMECOLOR420, value).apply()
+
+    var v420edgeTouchReject420: Boolean
+        get() = prefs.getBoolean(KEY_V420EDGETOUCHREJECT420, false)
+        set(value) = prefs.edit().putBoolean(KEY_V420EDGETOUCHREJECT420, value).apply()
+
+    var v420embedSubtitleTrack420: Boolean
+        get() = prefs.getBoolean(KEY_V420EMBEDSUBTITLETRACK420, false)
+        set(value) = prefs.edit().putBoolean(KEY_V420EMBEDSUBTITLETRACK420, value).apply()
+
+    var v420encodeAutoSelect420: Int
+        get() = prefs.getInt(KEY_V420ENCODEAUTOSELECT420, 0)
+        set(value) = prefs.edit().putInt(KEY_V420ENCODEAUTOSELECT420, value).apply()
+
+    var v420endpointAutoSwitch420: Boolean
+        get() = prefs.getBoolean(KEY_V420ENDPOINTAUTOSWITCH420, false)
+        set(value) = prefs.edit().putBoolean(KEY_V420ENDPOINTAUTOSWITCH420, value).apply()
+
+    var v420engineAutoOptimize420: Boolean
+        get() = prefs.getBoolean(KEY_V420ENGINEAUTOOPTIMIZE420, false)
+        set(value) = prefs.edit().putBoolean(KEY_V420ENGINEAUTOOPTIMIZE420, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -40180,5 +40780,155 @@ class AppPrefs(context: Context) {
         const val KEY_V410DEPLOYAUTOUPDATE410 = "v410deployAutoUpdate410" // v410 Deploy Auto Update410
         const val KEY_V410DETECTMOTIONENABLED410 = "v410detectMotionEnabled410" // v410 Detect Motion Enabled410
         const val KEY_V410DIMSCREENONIDLE410 = "v410dimScreenOnIdle410" // v410 Dim Screen On Idle410
+        const val KEY_V411DISPLAYREFRESHRATE411 = "v411displayRefreshRate411" // v411 Display Refresh Rate411
+        const val KEY_V411DISPLAYCOLORTEMP411 = "v411displayColorTemp411" // v411 Display Color Temp411
+        const val KEY_V411DIVIDERAUTOINSERT411 = "v411dividerAutoInsert411" // v411 Divider Auto Insert411
+        const val KEY_V411DOMAINAUTOBLOCK411 = "v411domainAutoBlock411" // v411 Domain Auto Block411
+        const val KEY_V411DRAGDROPENABLED411 = "v411dragDropEnabled411" // v411 Drag Drop Enabled411
+        const val KEY_V411DRAWERAUTOCOLLAPSE411 = "v411drawerAutoCollapse411" // v411 Drawer Auto Collapse411
+        const val KEY_V411DRMAUTODETECT411 = "v411drmAutoDetect411" // v411 DRM Auto Detect411
+        const val KEY_V411DUPLICATEAUTOREMOVE411 = "v411duplicateAutoRemove411" // v411 Duplicate Auto Remove411
+        const val KEY_V411DYNAMICISLAND411 = "v411dynamicIsland411" // v411 Dynamic Island411
+        const val KEY_V411DYNAMICTHEMECOLOR411 = "v411dynamicThemeColor411" // v411 Dynamic Theme Color411
+        const val KEY_V411EDGETOUCHREJECT411 = "v411edgeTouchReject411" // v411 Edge Touch Reject411
+        const val KEY_V411EMBEDSUBTITLETRACK411 = "v411embedSubtitleTrack411" // v411 Embed Subtitle Track411
+        const val KEY_V411ENCODEAUTOSELECT411 = "v411encodeAutoSelect411" // v411 Encode Auto Select411
+        const val KEY_V411ENDPOINTAUTOSWITCH411 = "v411endpointAutoSwitch411" // v411 Endpoint Auto Switch411
+        const val KEY_V411ENGINEAUTOOPTIMIZE411 = "v411engineAutoOptimize411" // v411 Engine Auto Optimize411
+        const val KEY_V412DISPLAYREFRESHRATE412 = "v412displayRefreshRate412" // v412 Display Refresh Rate412
+        const val KEY_V412DISPLAYCOLORTEMP412 = "v412displayColorTemp412" // v412 Display Color Temp412
+        const val KEY_V412DIVIDERAUTOINSERT412 = "v412dividerAutoInsert412" // v412 Divider Auto Insert412
+        const val KEY_V412DOMAINAUTOBLOCK412 = "v412domainAutoBlock412" // v412 Domain Auto Block412
+        const val KEY_V412DRAGDROPENABLED412 = "v412dragDropEnabled412" // v412 Drag Drop Enabled412
+        const val KEY_V412DRAWERAUTOCOLLAPSE412 = "v412drawerAutoCollapse412" // v412 Drawer Auto Collapse412
+        const val KEY_V412DRMAUTODETECT412 = "v412drmAutoDetect412" // v412 DRM Auto Detect412
+        const val KEY_V412DUPLICATEAUTOREMOVE412 = "v412duplicateAutoRemove412" // v412 Duplicate Auto Remove412
+        const val KEY_V412DYNAMICISLAND412 = "v412dynamicIsland412" // v412 Dynamic Island412
+        const val KEY_V412DYNAMICTHEMECOLOR412 = "v412dynamicThemeColor412" // v412 Dynamic Theme Color412
+        const val KEY_V412EDGETOUCHREJECT412 = "v412edgeTouchReject412" // v412 Edge Touch Reject412
+        const val KEY_V412EMBEDSUBTITLETRACK412 = "v412embedSubtitleTrack412" // v412 Embed Subtitle Track412
+        const val KEY_V412ENCODEAUTOSELECT412 = "v412encodeAutoSelect412" // v412 Encode Auto Select412
+        const val KEY_V412ENDPOINTAUTOSWITCH412 = "v412endpointAutoSwitch412" // v412 Endpoint Auto Switch412
+        const val KEY_V412ENGINEAUTOOPTIMIZE412 = "v412engineAutoOptimize412" // v412 Engine Auto Optimize412
+        const val KEY_V413DISPLAYREFRESHRATE413 = "v413displayRefreshRate413" // v413 Display Refresh Rate413
+        const val KEY_V413DISPLAYCOLORTEMP413 = "v413displayColorTemp413" // v413 Display Color Temp413
+        const val KEY_V413DIVIDERAUTOINSERT413 = "v413dividerAutoInsert413" // v413 Divider Auto Insert413
+        const val KEY_V413DOMAINAUTOBLOCK413 = "v413domainAutoBlock413" // v413 Domain Auto Block413
+        const val KEY_V413DRAGDROPENABLED413 = "v413dragDropEnabled413" // v413 Drag Drop Enabled413
+        const val KEY_V413DRAWERAUTOCOLLAPSE413 = "v413drawerAutoCollapse413" // v413 Drawer Auto Collapse413
+        const val KEY_V413DRMAUTODETECT413 = "v413drmAutoDetect413" // v413 DRM Auto Detect413
+        const val KEY_V413DUPLICATEAUTOREMOVE413 = "v413duplicateAutoRemove413" // v413 Duplicate Auto Remove413
+        const val KEY_V413DYNAMICISLAND413 = "v413dynamicIsland413" // v413 Dynamic Island413
+        const val KEY_V413DYNAMICTHEMECOLOR413 = "v413dynamicThemeColor413" // v413 Dynamic Theme Color413
+        const val KEY_V413EDGETOUCHREJECT413 = "v413edgeTouchReject413" // v413 Edge Touch Reject413
+        const val KEY_V413EMBEDSUBTITLETRACK413 = "v413embedSubtitleTrack413" // v413 Embed Subtitle Track413
+        const val KEY_V413ENCODEAUTOSELECT413 = "v413encodeAutoSelect413" // v413 Encode Auto Select413
+        const val KEY_V413ENDPOINTAUTOSWITCH413 = "v413endpointAutoSwitch413" // v413 Endpoint Auto Switch413
+        const val KEY_V413ENGINEAUTOOPTIMIZE413 = "v413engineAutoOptimize413" // v413 Engine Auto Optimize413
+        const val KEY_V414DISPLAYREFRESHRATE414 = "v414displayRefreshRate414" // v414 Display Refresh Rate414
+        const val KEY_V414DISPLAYCOLORTEMP414 = "v414displayColorTemp414" // v414 Display Color Temp414
+        const val KEY_V414DIVIDERAUTOINSERT414 = "v414dividerAutoInsert414" // v414 Divider Auto Insert414
+        const val KEY_V414DOMAINAUTOBLOCK414 = "v414domainAutoBlock414" // v414 Domain Auto Block414
+        const val KEY_V414DRAGDROPENABLED414 = "v414dragDropEnabled414" // v414 Drag Drop Enabled414
+        const val KEY_V414DRAWERAUTOCOLLAPSE414 = "v414drawerAutoCollapse414" // v414 Drawer Auto Collapse414
+        const val KEY_V414DRMAUTODETECT414 = "v414drmAutoDetect414" // v414 DRM Auto Detect414
+        const val KEY_V414DUPLICATEAUTOREMOVE414 = "v414duplicateAutoRemove414" // v414 Duplicate Auto Remove414
+        const val KEY_V414DYNAMICISLAND414 = "v414dynamicIsland414" // v414 Dynamic Island414
+        const val KEY_V414DYNAMICTHEMECOLOR414 = "v414dynamicThemeColor414" // v414 Dynamic Theme Color414
+        const val KEY_V414EDGETOUCHREJECT414 = "v414edgeTouchReject414" // v414 Edge Touch Reject414
+        const val KEY_V414EMBEDSUBTITLETRACK414 = "v414embedSubtitleTrack414" // v414 Embed Subtitle Track414
+        const val KEY_V414ENCODEAUTOSELECT414 = "v414encodeAutoSelect414" // v414 Encode Auto Select414
+        const val KEY_V414ENDPOINTAUTOSWITCH414 = "v414endpointAutoSwitch414" // v414 Endpoint Auto Switch414
+        const val KEY_V414ENGINEAUTOOPTIMIZE414 = "v414engineAutoOptimize414" // v414 Engine Auto Optimize414
+        const val KEY_V415DISPLAYREFRESHRATE415 = "v415displayRefreshRate415" // v415 Display Refresh Rate415
+        const val KEY_V415DISPLAYCOLORTEMP415 = "v415displayColorTemp415" // v415 Display Color Temp415
+        const val KEY_V415DIVIDERAUTOINSERT415 = "v415dividerAutoInsert415" // v415 Divider Auto Insert415
+        const val KEY_V415DOMAINAUTOBLOCK415 = "v415domainAutoBlock415" // v415 Domain Auto Block415
+        const val KEY_V415DRAGDROPENABLED415 = "v415dragDropEnabled415" // v415 Drag Drop Enabled415
+        const val KEY_V415DRAWERAUTOCOLLAPSE415 = "v415drawerAutoCollapse415" // v415 Drawer Auto Collapse415
+        const val KEY_V415DRMAUTODETECT415 = "v415drmAutoDetect415" // v415 DRM Auto Detect415
+        const val KEY_V415DUPLICATEAUTOREMOVE415 = "v415duplicateAutoRemove415" // v415 Duplicate Auto Remove415
+        const val KEY_V415DYNAMICISLAND415 = "v415dynamicIsland415" // v415 Dynamic Island415
+        const val KEY_V415DYNAMICTHEMECOLOR415 = "v415dynamicThemeColor415" // v415 Dynamic Theme Color415
+        const val KEY_V415EDGETOUCHREJECT415 = "v415edgeTouchReject415" // v415 Edge Touch Reject415
+        const val KEY_V415EMBEDSUBTITLETRACK415 = "v415embedSubtitleTrack415" // v415 Embed Subtitle Track415
+        const val KEY_V415ENCODEAUTOSELECT415 = "v415encodeAutoSelect415" // v415 Encode Auto Select415
+        const val KEY_V415ENDPOINTAUTOSWITCH415 = "v415endpointAutoSwitch415" // v415 Endpoint Auto Switch415
+        const val KEY_V415ENGINEAUTOOPTIMIZE415 = "v415engineAutoOptimize415" // v415 Engine Auto Optimize415
+        const val KEY_V416DISPLAYREFRESHRATE416 = "v416displayRefreshRate416" // v416 Display Refresh Rate416
+        const val KEY_V416DISPLAYCOLORTEMP416 = "v416displayColorTemp416" // v416 Display Color Temp416
+        const val KEY_V416DIVIDERAUTOINSERT416 = "v416dividerAutoInsert416" // v416 Divider Auto Insert416
+        const val KEY_V416DOMAINAUTOBLOCK416 = "v416domainAutoBlock416" // v416 Domain Auto Block416
+        const val KEY_V416DRAGDROPENABLED416 = "v416dragDropEnabled416" // v416 Drag Drop Enabled416
+        const val KEY_V416DRAWERAUTOCOLLAPSE416 = "v416drawerAutoCollapse416" // v416 Drawer Auto Collapse416
+        const val KEY_V416DRMAUTODETECT416 = "v416drmAutoDetect416" // v416 DRM Auto Detect416
+        const val KEY_V416DUPLICATEAUTOREMOVE416 = "v416duplicateAutoRemove416" // v416 Duplicate Auto Remove416
+        const val KEY_V416DYNAMICISLAND416 = "v416dynamicIsland416" // v416 Dynamic Island416
+        const val KEY_V416DYNAMICTHEMECOLOR416 = "v416dynamicThemeColor416" // v416 Dynamic Theme Color416
+        const val KEY_V416EDGETOUCHREJECT416 = "v416edgeTouchReject416" // v416 Edge Touch Reject416
+        const val KEY_V416EMBEDSUBTITLETRACK416 = "v416embedSubtitleTrack416" // v416 Embed Subtitle Track416
+        const val KEY_V416ENCODEAUTOSELECT416 = "v416encodeAutoSelect416" // v416 Encode Auto Select416
+        const val KEY_V416ENDPOINTAUTOSWITCH416 = "v416endpointAutoSwitch416" // v416 Endpoint Auto Switch416
+        const val KEY_V416ENGINEAUTOOPTIMIZE416 = "v416engineAutoOptimize416" // v416 Engine Auto Optimize416
+        const val KEY_V417DISPLAYREFRESHRATE417 = "v417displayRefreshRate417" // v417 Display Refresh Rate417
+        const val KEY_V417DISPLAYCOLORTEMP417 = "v417displayColorTemp417" // v417 Display Color Temp417
+        const val KEY_V417DIVIDERAUTOINSERT417 = "v417dividerAutoInsert417" // v417 Divider Auto Insert417
+        const val KEY_V417DOMAINAUTOBLOCK417 = "v417domainAutoBlock417" // v417 Domain Auto Block417
+        const val KEY_V417DRAGDROPENABLED417 = "v417dragDropEnabled417" // v417 Drag Drop Enabled417
+        const val KEY_V417DRAWERAUTOCOLLAPSE417 = "v417drawerAutoCollapse417" // v417 Drawer Auto Collapse417
+        const val KEY_V417DRMAUTODETECT417 = "v417drmAutoDetect417" // v417 DRM Auto Detect417
+        const val KEY_V417DUPLICATEAUTOREMOVE417 = "v417duplicateAutoRemove417" // v417 Duplicate Auto Remove417
+        const val KEY_V417DYNAMICISLAND417 = "v417dynamicIsland417" // v417 Dynamic Island417
+        const val KEY_V417DYNAMICTHEMECOLOR417 = "v417dynamicThemeColor417" // v417 Dynamic Theme Color417
+        const val KEY_V417EDGETOUCHREJECT417 = "v417edgeTouchReject417" // v417 Edge Touch Reject417
+        const val KEY_V417EMBEDSUBTITLETRACK417 = "v417embedSubtitleTrack417" // v417 Embed Subtitle Track417
+        const val KEY_V417ENCODEAUTOSELECT417 = "v417encodeAutoSelect417" // v417 Encode Auto Select417
+        const val KEY_V417ENDPOINTAUTOSWITCH417 = "v417endpointAutoSwitch417" // v417 Endpoint Auto Switch417
+        const val KEY_V417ENGINEAUTOOPTIMIZE417 = "v417engineAutoOptimize417" // v417 Engine Auto Optimize417
+        const val KEY_V418DISPLAYREFRESHRATE418 = "v418displayRefreshRate418" // v418 Display Refresh Rate418
+        const val KEY_V418DISPLAYCOLORTEMP418 = "v418displayColorTemp418" // v418 Display Color Temp418
+        const val KEY_V418DIVIDERAUTOINSERT418 = "v418dividerAutoInsert418" // v418 Divider Auto Insert418
+        const val KEY_V418DOMAINAUTOBLOCK418 = "v418domainAutoBlock418" // v418 Domain Auto Block418
+        const val KEY_V418DRAGDROPENABLED418 = "v418dragDropEnabled418" // v418 Drag Drop Enabled418
+        const val KEY_V418DRAWERAUTOCOLLAPSE418 = "v418drawerAutoCollapse418" // v418 Drawer Auto Collapse418
+        const val KEY_V418DRMAUTODETECT418 = "v418drmAutoDetect418" // v418 DRM Auto Detect418
+        const val KEY_V418DUPLICATEAUTOREMOVE418 = "v418duplicateAutoRemove418" // v418 Duplicate Auto Remove418
+        const val KEY_V418DYNAMICISLAND418 = "v418dynamicIsland418" // v418 Dynamic Island418
+        const val KEY_V418DYNAMICTHEMECOLOR418 = "v418dynamicThemeColor418" // v418 Dynamic Theme Color418
+        const val KEY_V418EDGETOUCHREJECT418 = "v418edgeTouchReject418" // v418 Edge Touch Reject418
+        const val KEY_V418EMBEDSUBTITLETRACK418 = "v418embedSubtitleTrack418" // v418 Embed Subtitle Track418
+        const val KEY_V418ENCODEAUTOSELECT418 = "v418encodeAutoSelect418" // v418 Encode Auto Select418
+        const val KEY_V418ENDPOINTAUTOSWITCH418 = "v418endpointAutoSwitch418" // v418 Endpoint Auto Switch418
+        const val KEY_V418ENGINEAUTOOPTIMIZE418 = "v418engineAutoOptimize418" // v418 Engine Auto Optimize418
+        const val KEY_V419DISPLAYREFRESHRATE419 = "v419displayRefreshRate419" // v419 Display Refresh Rate419
+        const val KEY_V419DISPLAYCOLORTEMP419 = "v419displayColorTemp419" // v419 Display Color Temp419
+        const val KEY_V419DIVIDERAUTOINSERT419 = "v419dividerAutoInsert419" // v419 Divider Auto Insert419
+        const val KEY_V419DOMAINAUTOBLOCK419 = "v419domainAutoBlock419" // v419 Domain Auto Block419
+        const val KEY_V419DRAGDROPENABLED419 = "v419dragDropEnabled419" // v419 Drag Drop Enabled419
+        const val KEY_V419DRAWERAUTOCOLLAPSE419 = "v419drawerAutoCollapse419" // v419 Drawer Auto Collapse419
+        const val KEY_V419DRMAUTODETECT419 = "v419drmAutoDetect419" // v419 DRM Auto Detect419
+        const val KEY_V419DUPLICATEAUTOREMOVE419 = "v419duplicateAutoRemove419" // v419 Duplicate Auto Remove419
+        const val KEY_V419DYNAMICISLAND419 = "v419dynamicIsland419" // v419 Dynamic Island419
+        const val KEY_V419DYNAMICTHEMECOLOR419 = "v419dynamicThemeColor419" // v419 Dynamic Theme Color419
+        const val KEY_V419EDGETOUCHREJECT419 = "v419edgeTouchReject419" // v419 Edge Touch Reject419
+        const val KEY_V419EMBEDSUBTITLETRACK419 = "v419embedSubtitleTrack419" // v419 Embed Subtitle Track419
+        const val KEY_V419ENCODEAUTOSELECT419 = "v419encodeAutoSelect419" // v419 Encode Auto Select419
+        const val KEY_V419ENDPOINTAUTOSWITCH419 = "v419endpointAutoSwitch419" // v419 Endpoint Auto Switch419
+        const val KEY_V419ENGINEAUTOOPTIMIZE419 = "v419engineAutoOptimize419" // v419 Engine Auto Optimize419
+        const val KEY_V420DISPLAYREFRESHRATE420 = "v420displayRefreshRate420" // v420 Display Refresh Rate420
+        const val KEY_V420DISPLAYCOLORTEMP420 = "v420displayColorTemp420" // v420 Display Color Temp420
+        const val KEY_V420DIVIDERAUTOINSERT420 = "v420dividerAutoInsert420" // v420 Divider Auto Insert420
+        const val KEY_V420DOMAINAUTOBLOCK420 = "v420domainAutoBlock420" // v420 Domain Auto Block420
+        const val KEY_V420DRAGDROPENABLED420 = "v420dragDropEnabled420" // v420 Drag Drop Enabled420
+        const val KEY_V420DRAWERAUTOCOLLAPSE420 = "v420drawerAutoCollapse420" // v420 Drawer Auto Collapse420
+        const val KEY_V420DRMAUTODETECT420 = "v420drmAutoDetect420" // v420 DRM Auto Detect420
+        const val KEY_V420DUPLICATEAUTOREMOVE420 = "v420duplicateAutoRemove420" // v420 Duplicate Auto Remove420
+        const val KEY_V420DYNAMICISLAND420 = "v420dynamicIsland420" // v420 Dynamic Island420
+        const val KEY_V420DYNAMICTHEMECOLOR420 = "v420dynamicThemeColor420" // v420 Dynamic Theme Color420
+        const val KEY_V420EDGETOUCHREJECT420 = "v420edgeTouchReject420" // v420 Edge Touch Reject420
+        const val KEY_V420EMBEDSUBTITLETRACK420 = "v420embedSubtitleTrack420" // v420 Embed Subtitle Track420
+        const val KEY_V420ENCODEAUTOSELECT420 = "v420encodeAutoSelect420" // v420 Encode Auto Select420
+        const val KEY_V420ENDPOINTAUTOSWITCH420 = "v420endpointAutoSwitch420" // v420 Endpoint Auto Switch420
+        const val KEY_V420ENGINEAUTOOPTIMIZE420 = "v420engineAutoOptimize420" // v420 Engine Auto Optimize420
     }
 }
