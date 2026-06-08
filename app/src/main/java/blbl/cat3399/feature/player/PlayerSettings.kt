@@ -82015,3 +82015,1133 @@ internal fun PlayerActivity.showV540SelectAutoMulti540Toggle() {
     AppToast.show(this, "Select Auto Multi540: ${if (!current) "ON" else "OFF"}")
 }
 
+// v541: Send Auto Confirm541
+internal fun PlayerActivity.showV541SendAutoConfirm541Toggle() {
+    val current = BiliClient.prefs.v541sendAutoConfirm541
+    BiliClient.prefs.v541sendAutoConfirm541 = !current
+    AppToast.show(this, "Send Auto Confirm541: ${if (!current) "ON" else "OFF"}")
+}
+
+// v541: Sensor Auto Calibrate541
+internal fun PlayerActivity.showV541SensorAutoCalibrate541Toggle() {
+    val current = BiliClient.prefs.v541sensorAutoCalibrate541
+    BiliClient.prefs.v541sensorAutoCalibrate541 = !current
+    AppToast.show(this, "Sensor Auto Calibrate541: ${if (!current) "ON" else "OFF"}")
+}
+
+// v541: Server Auto Switch541
+internal fun PlayerActivity.showV541ServerAutoSwitch541Toggle() {
+    val current = BiliClient.prefs.v541serverAutoSwitch541
+    BiliClient.prefs.v541serverAutoSwitch541 = !current
+    AppToast.show(this, "Server Auto Switch541: ${if (!current) "ON" else "OFF"}")
+}
+
+// v541: Session Auto Save541
+internal fun PlayerActivity.showV541SessionAutoSave541Toggle() {
+    val current = BiliClient.prefs.v541sessionAutoSave541
+    BiliClient.prefs.v541sessionAutoSave541 = !current
+    AppToast.show(this, "Session Auto Save541: ${if (!current) "ON" else "OFF"}")
+}
+
+// v541: Set Auto Default541
+internal fun PlayerActivity.showV541SetAutoDefault541Toggle() {
+    val current = BiliClient.prefs.v541setAutoDefault541
+    BiliClient.prefs.v541setAutoDefault541 = !current
+    AppToast.show(this, "Set Auto Default541: ${if (!current) "ON" else "OFF"}")
+}
+
+// v541: Shadow Auto Drop541
+internal fun PlayerActivity.showV541ShadowAutoDrop541Toggle() {
+    val current = BiliClient.prefs.v541shadowAutoDrop541
+    BiliClient.prefs.v541shadowAutoDrop541 = !current
+    AppToast.show(this, "Shadow Auto Drop541: ${if (!current) "ON" else "OFF"}")
+}
+
+// v541: Shape Auto Detect541
+internal fun PlayerActivity.showV541ShapeAutoDetect541Toggle() {
+    val current = BiliClient.prefs.v541shapeAutoDetect541
+    BiliClient.prefs.v541shapeAutoDetect541 = !current
+    AppToast.show(this, "Shape Auto Detect541: ${if (!current) "ON" else "OFF"}")
+}
+
+// v541: Sharp Auto Adjust541
+internal fun PlayerActivity.showV541SharpAutoAdjust541Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v541sharpAutoAdjust541).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Sharp Auto Adjust541",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v541sharpAutoAdjust541 = value
+        AppToast.show(this, "Sharp Auto Adjust541: $value")
+    }
+}
+
+// v541: Shell Auto Execute541
+internal fun PlayerActivity.showV541ShellAutoExecute541Toggle() {
+    val current = BiliClient.prefs.v541shellAutoExecute541
+    BiliClient.prefs.v541shellAutoExecute541 = !current
+    AppToast.show(this, "Shell Auto Execute541: ${if (!current) "ON" else "OFF"}")
+}
+
+// v541: Shift Auto Offset541
+internal fun PlayerActivity.showV541ShiftAutoOffset541Toggle() {
+    val current = BiliClient.prefs.v541shiftAutoOffset541
+    BiliClient.prefs.v541shiftAutoOffset541 = !current
+    AppToast.show(this, "Shift Auto Offset541: ${if (!current) "ON" else "OFF"}")
+}
+
+// v541: Short Cut Auto Bind541
+internal fun PlayerActivity.showV541ShortCutAutoBind541Toggle() {
+    val current = BiliClient.prefs.v541shortCutAutoBind541
+    BiliClient.prefs.v541shortCutAutoBind541 = !current
+    AppToast.show(this, "Short Cut Auto Bind541: ${if (!current) "ON" else "OFF"}")
+}
+
+// v541: Show Auto Toggle541
+internal fun PlayerActivity.showV541ShowAutoToggle541Toggle() {
+    val current = BiliClient.prefs.v541showAutoToggle541
+    BiliClient.prefs.v541showAutoToggle541 = !current
+    AppToast.show(this, "Show Auto Toggle541: ${if (!current) "ON" else "OFF"}")
+}
+
+// v541: Shuffle Auto Seed541
+internal fun PlayerActivity.showV541ShuffleAutoSeed541Toggle() {
+    val current = BiliClient.prefs.v541shuffleAutoSeed541
+    BiliClient.prefs.v541shuffleAutoSeed541 = !current
+    AppToast.show(this, "Shuffle Auto Seed541: ${if (!current) "ON" else "OFF"}")
+}
+
+// v541: Signal Auto Boost541
+internal fun PlayerActivity.showV541SignalAutoBoost541Toggle() {
+    val current = BiliClient.prefs.v541signalAutoBoost541
+    BiliClient.prefs.v541signalAutoBoost541 = !current
+    AppToast.show(this, "Signal Auto Boost541: ${if (!current) "ON" else "OFF"}")
+}
+
+// v541: Single Instance Mode541
+internal fun PlayerActivity.showV541SingleInstanceMode541Toggle() {
+    val current = BiliClient.prefs.v541singleInstanceMode541
+    BiliClient.prefs.v541singleInstanceMode541 = !current
+    AppToast.show(this, "Single Instance Mode541: ${if (!current) "ON" else "OFF"}")
+}
+
+// v542: Send Auto Confirm542
+internal fun PlayerActivity.showV542SendAutoConfirm542Toggle() {
+    val current = BiliClient.prefs.v542sendAutoConfirm542
+    BiliClient.prefs.v542sendAutoConfirm542 = !current
+    AppToast.show(this, "Send Auto Confirm542: ${if (!current) "ON" else "OFF"}")
+}
+
+// v542: Sensor Auto Calibrate542
+internal fun PlayerActivity.showV542SensorAutoCalibrate542Toggle() {
+    val current = BiliClient.prefs.v542sensorAutoCalibrate542
+    BiliClient.prefs.v542sensorAutoCalibrate542 = !current
+    AppToast.show(this, "Sensor Auto Calibrate542: ${if (!current) "ON" else "OFF"}")
+}
+
+// v542: Server Auto Switch542
+internal fun PlayerActivity.showV542ServerAutoSwitch542Toggle() {
+    val current = BiliClient.prefs.v542serverAutoSwitch542
+    BiliClient.prefs.v542serverAutoSwitch542 = !current
+    AppToast.show(this, "Server Auto Switch542: ${if (!current) "ON" else "OFF"}")
+}
+
+// v542: Session Auto Save542
+internal fun PlayerActivity.showV542SessionAutoSave542Toggle() {
+    val current = BiliClient.prefs.v542sessionAutoSave542
+    BiliClient.prefs.v542sessionAutoSave542 = !current
+    AppToast.show(this, "Session Auto Save542: ${if (!current) "ON" else "OFF"}")
+}
+
+// v542: Set Auto Default542
+internal fun PlayerActivity.showV542SetAutoDefault542Toggle() {
+    val current = BiliClient.prefs.v542setAutoDefault542
+    BiliClient.prefs.v542setAutoDefault542 = !current
+    AppToast.show(this, "Set Auto Default542: ${if (!current) "ON" else "OFF"}")
+}
+
+// v542: Shadow Auto Drop542
+internal fun PlayerActivity.showV542ShadowAutoDrop542Toggle() {
+    val current = BiliClient.prefs.v542shadowAutoDrop542
+    BiliClient.prefs.v542shadowAutoDrop542 = !current
+    AppToast.show(this, "Shadow Auto Drop542: ${if (!current) "ON" else "OFF"}")
+}
+
+// v542: Shape Auto Detect542
+internal fun PlayerActivity.showV542ShapeAutoDetect542Toggle() {
+    val current = BiliClient.prefs.v542shapeAutoDetect542
+    BiliClient.prefs.v542shapeAutoDetect542 = !current
+    AppToast.show(this, "Shape Auto Detect542: ${if (!current) "ON" else "OFF"}")
+}
+
+// v542: Sharp Auto Adjust542
+internal fun PlayerActivity.showV542SharpAutoAdjust542Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v542sharpAutoAdjust542).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Sharp Auto Adjust542",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v542sharpAutoAdjust542 = value
+        AppToast.show(this, "Sharp Auto Adjust542: $value")
+    }
+}
+
+// v542: Shell Auto Execute542
+internal fun PlayerActivity.showV542ShellAutoExecute542Toggle() {
+    val current = BiliClient.prefs.v542shellAutoExecute542
+    BiliClient.prefs.v542shellAutoExecute542 = !current
+    AppToast.show(this, "Shell Auto Execute542: ${if (!current) "ON" else "OFF"}")
+}
+
+// v542: Shift Auto Offset542
+internal fun PlayerActivity.showV542ShiftAutoOffset542Toggle() {
+    val current = BiliClient.prefs.v542shiftAutoOffset542
+    BiliClient.prefs.v542shiftAutoOffset542 = !current
+    AppToast.show(this, "Shift Auto Offset542: ${if (!current) "ON" else "OFF"}")
+}
+
+// v542: Short Cut Auto Bind542
+internal fun PlayerActivity.showV542ShortCutAutoBind542Toggle() {
+    val current = BiliClient.prefs.v542shortCutAutoBind542
+    BiliClient.prefs.v542shortCutAutoBind542 = !current
+    AppToast.show(this, "Short Cut Auto Bind542: ${if (!current) "ON" else "OFF"}")
+}
+
+// v542: Show Auto Toggle542
+internal fun PlayerActivity.showV542ShowAutoToggle542Toggle() {
+    val current = BiliClient.prefs.v542showAutoToggle542
+    BiliClient.prefs.v542showAutoToggle542 = !current
+    AppToast.show(this, "Show Auto Toggle542: ${if (!current) "ON" else "OFF"}")
+}
+
+// v542: Shuffle Auto Seed542
+internal fun PlayerActivity.showV542ShuffleAutoSeed542Toggle() {
+    val current = BiliClient.prefs.v542shuffleAutoSeed542
+    BiliClient.prefs.v542shuffleAutoSeed542 = !current
+    AppToast.show(this, "Shuffle Auto Seed542: ${if (!current) "ON" else "OFF"}")
+}
+
+// v542: Signal Auto Boost542
+internal fun PlayerActivity.showV542SignalAutoBoost542Toggle() {
+    val current = BiliClient.prefs.v542signalAutoBoost542
+    BiliClient.prefs.v542signalAutoBoost542 = !current
+    AppToast.show(this, "Signal Auto Boost542: ${if (!current) "ON" else "OFF"}")
+}
+
+// v542: Single Instance Mode542
+internal fun PlayerActivity.showV542SingleInstanceMode542Toggle() {
+    val current = BiliClient.prefs.v542singleInstanceMode542
+    BiliClient.prefs.v542singleInstanceMode542 = !current
+    AppToast.show(this, "Single Instance Mode542: ${if (!current) "ON" else "OFF"}")
+}
+
+// v543: Send Auto Confirm543
+internal fun PlayerActivity.showV543SendAutoConfirm543Toggle() {
+    val current = BiliClient.prefs.v543sendAutoConfirm543
+    BiliClient.prefs.v543sendAutoConfirm543 = !current
+    AppToast.show(this, "Send Auto Confirm543: ${if (!current) "ON" else "OFF"}")
+}
+
+// v543: Sensor Auto Calibrate543
+internal fun PlayerActivity.showV543SensorAutoCalibrate543Toggle() {
+    val current = BiliClient.prefs.v543sensorAutoCalibrate543
+    BiliClient.prefs.v543sensorAutoCalibrate543 = !current
+    AppToast.show(this, "Sensor Auto Calibrate543: ${if (!current) "ON" else "OFF"}")
+}
+
+// v543: Server Auto Switch543
+internal fun PlayerActivity.showV543ServerAutoSwitch543Toggle() {
+    val current = BiliClient.prefs.v543serverAutoSwitch543
+    BiliClient.prefs.v543serverAutoSwitch543 = !current
+    AppToast.show(this, "Server Auto Switch543: ${if (!current) "ON" else "OFF"}")
+}
+
+// v543: Session Auto Save543
+internal fun PlayerActivity.showV543SessionAutoSave543Toggle() {
+    val current = BiliClient.prefs.v543sessionAutoSave543
+    BiliClient.prefs.v543sessionAutoSave543 = !current
+    AppToast.show(this, "Session Auto Save543: ${if (!current) "ON" else "OFF"}")
+}
+
+// v543: Set Auto Default543
+internal fun PlayerActivity.showV543SetAutoDefault543Toggle() {
+    val current = BiliClient.prefs.v543setAutoDefault543
+    BiliClient.prefs.v543setAutoDefault543 = !current
+    AppToast.show(this, "Set Auto Default543: ${if (!current) "ON" else "OFF"}")
+}
+
+// v543: Shadow Auto Drop543
+internal fun PlayerActivity.showV543ShadowAutoDrop543Toggle() {
+    val current = BiliClient.prefs.v543shadowAutoDrop543
+    BiliClient.prefs.v543shadowAutoDrop543 = !current
+    AppToast.show(this, "Shadow Auto Drop543: ${if (!current) "ON" else "OFF"}")
+}
+
+// v543: Shape Auto Detect543
+internal fun PlayerActivity.showV543ShapeAutoDetect543Toggle() {
+    val current = BiliClient.prefs.v543shapeAutoDetect543
+    BiliClient.prefs.v543shapeAutoDetect543 = !current
+    AppToast.show(this, "Shape Auto Detect543: ${if (!current) "ON" else "OFF"}")
+}
+
+// v543: Sharp Auto Adjust543
+internal fun PlayerActivity.showV543SharpAutoAdjust543Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v543sharpAutoAdjust543).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Sharp Auto Adjust543",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v543sharpAutoAdjust543 = value
+        AppToast.show(this, "Sharp Auto Adjust543: $value")
+    }
+}
+
+// v543: Shell Auto Execute543
+internal fun PlayerActivity.showV543ShellAutoExecute543Toggle() {
+    val current = BiliClient.prefs.v543shellAutoExecute543
+    BiliClient.prefs.v543shellAutoExecute543 = !current
+    AppToast.show(this, "Shell Auto Execute543: ${if (!current) "ON" else "OFF"}")
+}
+
+// v543: Shift Auto Offset543
+internal fun PlayerActivity.showV543ShiftAutoOffset543Toggle() {
+    val current = BiliClient.prefs.v543shiftAutoOffset543
+    BiliClient.prefs.v543shiftAutoOffset543 = !current
+    AppToast.show(this, "Shift Auto Offset543: ${if (!current) "ON" else "OFF"}")
+}
+
+// v543: Short Cut Auto Bind543
+internal fun PlayerActivity.showV543ShortCutAutoBind543Toggle() {
+    val current = BiliClient.prefs.v543shortCutAutoBind543
+    BiliClient.prefs.v543shortCutAutoBind543 = !current
+    AppToast.show(this, "Short Cut Auto Bind543: ${if (!current) "ON" else "OFF"}")
+}
+
+// v543: Show Auto Toggle543
+internal fun PlayerActivity.showV543ShowAutoToggle543Toggle() {
+    val current = BiliClient.prefs.v543showAutoToggle543
+    BiliClient.prefs.v543showAutoToggle543 = !current
+    AppToast.show(this, "Show Auto Toggle543: ${if (!current) "ON" else "OFF"}")
+}
+
+// v543: Shuffle Auto Seed543
+internal fun PlayerActivity.showV543ShuffleAutoSeed543Toggle() {
+    val current = BiliClient.prefs.v543shuffleAutoSeed543
+    BiliClient.prefs.v543shuffleAutoSeed543 = !current
+    AppToast.show(this, "Shuffle Auto Seed543: ${if (!current) "ON" else "OFF"}")
+}
+
+// v543: Signal Auto Boost543
+internal fun PlayerActivity.showV543SignalAutoBoost543Toggle() {
+    val current = BiliClient.prefs.v543signalAutoBoost543
+    BiliClient.prefs.v543signalAutoBoost543 = !current
+    AppToast.show(this, "Signal Auto Boost543: ${if (!current) "ON" else "OFF"}")
+}
+
+// v543: Single Instance Mode543
+internal fun PlayerActivity.showV543SingleInstanceMode543Toggle() {
+    val current = BiliClient.prefs.v543singleInstanceMode543
+    BiliClient.prefs.v543singleInstanceMode543 = !current
+    AppToast.show(this, "Single Instance Mode543: ${if (!current) "ON" else "OFF"}")
+}
+
+// v544: Send Auto Confirm544
+internal fun PlayerActivity.showV544SendAutoConfirm544Toggle() {
+    val current = BiliClient.prefs.v544sendAutoConfirm544
+    BiliClient.prefs.v544sendAutoConfirm544 = !current
+    AppToast.show(this, "Send Auto Confirm544: ${if (!current) "ON" else "OFF"}")
+}
+
+// v544: Sensor Auto Calibrate544
+internal fun PlayerActivity.showV544SensorAutoCalibrate544Toggle() {
+    val current = BiliClient.prefs.v544sensorAutoCalibrate544
+    BiliClient.prefs.v544sensorAutoCalibrate544 = !current
+    AppToast.show(this, "Sensor Auto Calibrate544: ${if (!current) "ON" else "OFF"}")
+}
+
+// v544: Server Auto Switch544
+internal fun PlayerActivity.showV544ServerAutoSwitch544Toggle() {
+    val current = BiliClient.prefs.v544serverAutoSwitch544
+    BiliClient.prefs.v544serverAutoSwitch544 = !current
+    AppToast.show(this, "Server Auto Switch544: ${if (!current) "ON" else "OFF"}")
+}
+
+// v544: Session Auto Save544
+internal fun PlayerActivity.showV544SessionAutoSave544Toggle() {
+    val current = BiliClient.prefs.v544sessionAutoSave544
+    BiliClient.prefs.v544sessionAutoSave544 = !current
+    AppToast.show(this, "Session Auto Save544: ${if (!current) "ON" else "OFF"}")
+}
+
+// v544: Set Auto Default544
+internal fun PlayerActivity.showV544SetAutoDefault544Toggle() {
+    val current = BiliClient.prefs.v544setAutoDefault544
+    BiliClient.prefs.v544setAutoDefault544 = !current
+    AppToast.show(this, "Set Auto Default544: ${if (!current) "ON" else "OFF"}")
+}
+
+// v544: Shadow Auto Drop544
+internal fun PlayerActivity.showV544ShadowAutoDrop544Toggle() {
+    val current = BiliClient.prefs.v544shadowAutoDrop544
+    BiliClient.prefs.v544shadowAutoDrop544 = !current
+    AppToast.show(this, "Shadow Auto Drop544: ${if (!current) "ON" else "OFF"}")
+}
+
+// v544: Shape Auto Detect544
+internal fun PlayerActivity.showV544ShapeAutoDetect544Toggle() {
+    val current = BiliClient.prefs.v544shapeAutoDetect544
+    BiliClient.prefs.v544shapeAutoDetect544 = !current
+    AppToast.show(this, "Shape Auto Detect544: ${if (!current) "ON" else "OFF"}")
+}
+
+// v544: Sharp Auto Adjust544
+internal fun PlayerActivity.showV544SharpAutoAdjust544Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v544sharpAutoAdjust544).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Sharp Auto Adjust544",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v544sharpAutoAdjust544 = value
+        AppToast.show(this, "Sharp Auto Adjust544: $value")
+    }
+}
+
+// v544: Shell Auto Execute544
+internal fun PlayerActivity.showV544ShellAutoExecute544Toggle() {
+    val current = BiliClient.prefs.v544shellAutoExecute544
+    BiliClient.prefs.v544shellAutoExecute544 = !current
+    AppToast.show(this, "Shell Auto Execute544: ${if (!current) "ON" else "OFF"}")
+}
+
+// v544: Shift Auto Offset544
+internal fun PlayerActivity.showV544ShiftAutoOffset544Toggle() {
+    val current = BiliClient.prefs.v544shiftAutoOffset544
+    BiliClient.prefs.v544shiftAutoOffset544 = !current
+    AppToast.show(this, "Shift Auto Offset544: ${if (!current) "ON" else "OFF"}")
+}
+
+// v544: Short Cut Auto Bind544
+internal fun PlayerActivity.showV544ShortCutAutoBind544Toggle() {
+    val current = BiliClient.prefs.v544shortCutAutoBind544
+    BiliClient.prefs.v544shortCutAutoBind544 = !current
+    AppToast.show(this, "Short Cut Auto Bind544: ${if (!current) "ON" else "OFF"}")
+}
+
+// v544: Show Auto Toggle544
+internal fun PlayerActivity.showV544ShowAutoToggle544Toggle() {
+    val current = BiliClient.prefs.v544showAutoToggle544
+    BiliClient.prefs.v544showAutoToggle544 = !current
+    AppToast.show(this, "Show Auto Toggle544: ${if (!current) "ON" else "OFF"}")
+}
+
+// v544: Shuffle Auto Seed544
+internal fun PlayerActivity.showV544ShuffleAutoSeed544Toggle() {
+    val current = BiliClient.prefs.v544shuffleAutoSeed544
+    BiliClient.prefs.v544shuffleAutoSeed544 = !current
+    AppToast.show(this, "Shuffle Auto Seed544: ${if (!current) "ON" else "OFF"}")
+}
+
+// v544: Signal Auto Boost544
+internal fun PlayerActivity.showV544SignalAutoBoost544Toggle() {
+    val current = BiliClient.prefs.v544signalAutoBoost544
+    BiliClient.prefs.v544signalAutoBoost544 = !current
+    AppToast.show(this, "Signal Auto Boost544: ${if (!current) "ON" else "OFF"}")
+}
+
+// v544: Single Instance Mode544
+internal fun PlayerActivity.showV544SingleInstanceMode544Toggle() {
+    val current = BiliClient.prefs.v544singleInstanceMode544
+    BiliClient.prefs.v544singleInstanceMode544 = !current
+    AppToast.show(this, "Single Instance Mode544: ${if (!current) "ON" else "OFF"}")
+}
+
+// v545: Send Auto Confirm545
+internal fun PlayerActivity.showV545SendAutoConfirm545Toggle() {
+    val current = BiliClient.prefs.v545sendAutoConfirm545
+    BiliClient.prefs.v545sendAutoConfirm545 = !current
+    AppToast.show(this, "Send Auto Confirm545: ${if (!current) "ON" else "OFF"}")
+}
+
+// v545: Sensor Auto Calibrate545
+internal fun PlayerActivity.showV545SensorAutoCalibrate545Toggle() {
+    val current = BiliClient.prefs.v545sensorAutoCalibrate545
+    BiliClient.prefs.v545sensorAutoCalibrate545 = !current
+    AppToast.show(this, "Sensor Auto Calibrate545: ${if (!current) "ON" else "OFF"}")
+}
+
+// v545: Server Auto Switch545
+internal fun PlayerActivity.showV545ServerAutoSwitch545Toggle() {
+    val current = BiliClient.prefs.v545serverAutoSwitch545
+    BiliClient.prefs.v545serverAutoSwitch545 = !current
+    AppToast.show(this, "Server Auto Switch545: ${if (!current) "ON" else "OFF"}")
+}
+
+// v545: Session Auto Save545
+internal fun PlayerActivity.showV545SessionAutoSave545Toggle() {
+    val current = BiliClient.prefs.v545sessionAutoSave545
+    BiliClient.prefs.v545sessionAutoSave545 = !current
+    AppToast.show(this, "Session Auto Save545: ${if (!current) "ON" else "OFF"}")
+}
+
+// v545: Set Auto Default545
+internal fun PlayerActivity.showV545SetAutoDefault545Toggle() {
+    val current = BiliClient.prefs.v545setAutoDefault545
+    BiliClient.prefs.v545setAutoDefault545 = !current
+    AppToast.show(this, "Set Auto Default545: ${if (!current) "ON" else "OFF"}")
+}
+
+// v545: Shadow Auto Drop545
+internal fun PlayerActivity.showV545ShadowAutoDrop545Toggle() {
+    val current = BiliClient.prefs.v545shadowAutoDrop545
+    BiliClient.prefs.v545shadowAutoDrop545 = !current
+    AppToast.show(this, "Shadow Auto Drop545: ${if (!current) "ON" else "OFF"}")
+}
+
+// v545: Shape Auto Detect545
+internal fun PlayerActivity.showV545ShapeAutoDetect545Toggle() {
+    val current = BiliClient.prefs.v545shapeAutoDetect545
+    BiliClient.prefs.v545shapeAutoDetect545 = !current
+    AppToast.show(this, "Shape Auto Detect545: ${if (!current) "ON" else "OFF"}")
+}
+
+// v545: Sharp Auto Adjust545
+internal fun PlayerActivity.showV545SharpAutoAdjust545Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v545sharpAutoAdjust545).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Sharp Auto Adjust545",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v545sharpAutoAdjust545 = value
+        AppToast.show(this, "Sharp Auto Adjust545: $value")
+    }
+}
+
+// v545: Shell Auto Execute545
+internal fun PlayerActivity.showV545ShellAutoExecute545Toggle() {
+    val current = BiliClient.prefs.v545shellAutoExecute545
+    BiliClient.prefs.v545shellAutoExecute545 = !current
+    AppToast.show(this, "Shell Auto Execute545: ${if (!current) "ON" else "OFF"}")
+}
+
+// v545: Shift Auto Offset545
+internal fun PlayerActivity.showV545ShiftAutoOffset545Toggle() {
+    val current = BiliClient.prefs.v545shiftAutoOffset545
+    BiliClient.prefs.v545shiftAutoOffset545 = !current
+    AppToast.show(this, "Shift Auto Offset545: ${if (!current) "ON" else "OFF"}")
+}
+
+// v545: Short Cut Auto Bind545
+internal fun PlayerActivity.showV545ShortCutAutoBind545Toggle() {
+    val current = BiliClient.prefs.v545shortCutAutoBind545
+    BiliClient.prefs.v545shortCutAutoBind545 = !current
+    AppToast.show(this, "Short Cut Auto Bind545: ${if (!current) "ON" else "OFF"}")
+}
+
+// v545: Show Auto Toggle545
+internal fun PlayerActivity.showV545ShowAutoToggle545Toggle() {
+    val current = BiliClient.prefs.v545showAutoToggle545
+    BiliClient.prefs.v545showAutoToggle545 = !current
+    AppToast.show(this, "Show Auto Toggle545: ${if (!current) "ON" else "OFF"}")
+}
+
+// v545: Shuffle Auto Seed545
+internal fun PlayerActivity.showV545ShuffleAutoSeed545Toggle() {
+    val current = BiliClient.prefs.v545shuffleAutoSeed545
+    BiliClient.prefs.v545shuffleAutoSeed545 = !current
+    AppToast.show(this, "Shuffle Auto Seed545: ${if (!current) "ON" else "OFF"}")
+}
+
+// v545: Signal Auto Boost545
+internal fun PlayerActivity.showV545SignalAutoBoost545Toggle() {
+    val current = BiliClient.prefs.v545signalAutoBoost545
+    BiliClient.prefs.v545signalAutoBoost545 = !current
+    AppToast.show(this, "Signal Auto Boost545: ${if (!current) "ON" else "OFF"}")
+}
+
+// v545: Single Instance Mode545
+internal fun PlayerActivity.showV545SingleInstanceMode545Toggle() {
+    val current = BiliClient.prefs.v545singleInstanceMode545
+    BiliClient.prefs.v545singleInstanceMode545 = !current
+    AppToast.show(this, "Single Instance Mode545: ${if (!current) "ON" else "OFF"}")
+}
+
+// v546: Send Auto Confirm546
+internal fun PlayerActivity.showV546SendAutoConfirm546Toggle() {
+    val current = BiliClient.prefs.v546sendAutoConfirm546
+    BiliClient.prefs.v546sendAutoConfirm546 = !current
+    AppToast.show(this, "Send Auto Confirm546: ${if (!current) "ON" else "OFF"}")
+}
+
+// v546: Sensor Auto Calibrate546
+internal fun PlayerActivity.showV546SensorAutoCalibrate546Toggle() {
+    val current = BiliClient.prefs.v546sensorAutoCalibrate546
+    BiliClient.prefs.v546sensorAutoCalibrate546 = !current
+    AppToast.show(this, "Sensor Auto Calibrate546: ${if (!current) "ON" else "OFF"}")
+}
+
+// v546: Server Auto Switch546
+internal fun PlayerActivity.showV546ServerAutoSwitch546Toggle() {
+    val current = BiliClient.prefs.v546serverAutoSwitch546
+    BiliClient.prefs.v546serverAutoSwitch546 = !current
+    AppToast.show(this, "Server Auto Switch546: ${if (!current) "ON" else "OFF"}")
+}
+
+// v546: Session Auto Save546
+internal fun PlayerActivity.showV546SessionAutoSave546Toggle() {
+    val current = BiliClient.prefs.v546sessionAutoSave546
+    BiliClient.prefs.v546sessionAutoSave546 = !current
+    AppToast.show(this, "Session Auto Save546: ${if (!current) "ON" else "OFF"}")
+}
+
+// v546: Set Auto Default546
+internal fun PlayerActivity.showV546SetAutoDefault546Toggle() {
+    val current = BiliClient.prefs.v546setAutoDefault546
+    BiliClient.prefs.v546setAutoDefault546 = !current
+    AppToast.show(this, "Set Auto Default546: ${if (!current) "ON" else "OFF"}")
+}
+
+// v546: Shadow Auto Drop546
+internal fun PlayerActivity.showV546ShadowAutoDrop546Toggle() {
+    val current = BiliClient.prefs.v546shadowAutoDrop546
+    BiliClient.prefs.v546shadowAutoDrop546 = !current
+    AppToast.show(this, "Shadow Auto Drop546: ${if (!current) "ON" else "OFF"}")
+}
+
+// v546: Shape Auto Detect546
+internal fun PlayerActivity.showV546ShapeAutoDetect546Toggle() {
+    val current = BiliClient.prefs.v546shapeAutoDetect546
+    BiliClient.prefs.v546shapeAutoDetect546 = !current
+    AppToast.show(this, "Shape Auto Detect546: ${if (!current) "ON" else "OFF"}")
+}
+
+// v546: Sharp Auto Adjust546
+internal fun PlayerActivity.showV546SharpAutoAdjust546Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v546sharpAutoAdjust546).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Sharp Auto Adjust546",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v546sharpAutoAdjust546 = value
+        AppToast.show(this, "Sharp Auto Adjust546: $value")
+    }
+}
+
+// v546: Shell Auto Execute546
+internal fun PlayerActivity.showV546ShellAutoExecute546Toggle() {
+    val current = BiliClient.prefs.v546shellAutoExecute546
+    BiliClient.prefs.v546shellAutoExecute546 = !current
+    AppToast.show(this, "Shell Auto Execute546: ${if (!current) "ON" else "OFF"}")
+}
+
+// v546: Shift Auto Offset546
+internal fun PlayerActivity.showV546ShiftAutoOffset546Toggle() {
+    val current = BiliClient.prefs.v546shiftAutoOffset546
+    BiliClient.prefs.v546shiftAutoOffset546 = !current
+    AppToast.show(this, "Shift Auto Offset546: ${if (!current) "ON" else "OFF"}")
+}
+
+// v546: Short Cut Auto Bind546
+internal fun PlayerActivity.showV546ShortCutAutoBind546Toggle() {
+    val current = BiliClient.prefs.v546shortCutAutoBind546
+    BiliClient.prefs.v546shortCutAutoBind546 = !current
+    AppToast.show(this, "Short Cut Auto Bind546: ${if (!current) "ON" else "OFF"}")
+}
+
+// v546: Show Auto Toggle546
+internal fun PlayerActivity.showV546ShowAutoToggle546Toggle() {
+    val current = BiliClient.prefs.v546showAutoToggle546
+    BiliClient.prefs.v546showAutoToggle546 = !current
+    AppToast.show(this, "Show Auto Toggle546: ${if (!current) "ON" else "OFF"}")
+}
+
+// v546: Shuffle Auto Seed546
+internal fun PlayerActivity.showV546ShuffleAutoSeed546Toggle() {
+    val current = BiliClient.prefs.v546shuffleAutoSeed546
+    BiliClient.prefs.v546shuffleAutoSeed546 = !current
+    AppToast.show(this, "Shuffle Auto Seed546: ${if (!current) "ON" else "OFF"}")
+}
+
+// v546: Signal Auto Boost546
+internal fun PlayerActivity.showV546SignalAutoBoost546Toggle() {
+    val current = BiliClient.prefs.v546signalAutoBoost546
+    BiliClient.prefs.v546signalAutoBoost546 = !current
+    AppToast.show(this, "Signal Auto Boost546: ${if (!current) "ON" else "OFF"}")
+}
+
+// v546: Single Instance Mode546
+internal fun PlayerActivity.showV546SingleInstanceMode546Toggle() {
+    val current = BiliClient.prefs.v546singleInstanceMode546
+    BiliClient.prefs.v546singleInstanceMode546 = !current
+    AppToast.show(this, "Single Instance Mode546: ${if (!current) "ON" else "OFF"}")
+}
+
+// v547: Send Auto Confirm547
+internal fun PlayerActivity.showV547SendAutoConfirm547Toggle() {
+    val current = BiliClient.prefs.v547sendAutoConfirm547
+    BiliClient.prefs.v547sendAutoConfirm547 = !current
+    AppToast.show(this, "Send Auto Confirm547: ${if (!current) "ON" else "OFF"}")
+}
+
+// v547: Sensor Auto Calibrate547
+internal fun PlayerActivity.showV547SensorAutoCalibrate547Toggle() {
+    val current = BiliClient.prefs.v547sensorAutoCalibrate547
+    BiliClient.prefs.v547sensorAutoCalibrate547 = !current
+    AppToast.show(this, "Sensor Auto Calibrate547: ${if (!current) "ON" else "OFF"}")
+}
+
+// v547: Server Auto Switch547
+internal fun PlayerActivity.showV547ServerAutoSwitch547Toggle() {
+    val current = BiliClient.prefs.v547serverAutoSwitch547
+    BiliClient.prefs.v547serverAutoSwitch547 = !current
+    AppToast.show(this, "Server Auto Switch547: ${if (!current) "ON" else "OFF"}")
+}
+
+// v547: Session Auto Save547
+internal fun PlayerActivity.showV547SessionAutoSave547Toggle() {
+    val current = BiliClient.prefs.v547sessionAutoSave547
+    BiliClient.prefs.v547sessionAutoSave547 = !current
+    AppToast.show(this, "Session Auto Save547: ${if (!current) "ON" else "OFF"}")
+}
+
+// v547: Set Auto Default547
+internal fun PlayerActivity.showV547SetAutoDefault547Toggle() {
+    val current = BiliClient.prefs.v547setAutoDefault547
+    BiliClient.prefs.v547setAutoDefault547 = !current
+    AppToast.show(this, "Set Auto Default547: ${if (!current) "ON" else "OFF"}")
+}
+
+// v547: Shadow Auto Drop547
+internal fun PlayerActivity.showV547ShadowAutoDrop547Toggle() {
+    val current = BiliClient.prefs.v547shadowAutoDrop547
+    BiliClient.prefs.v547shadowAutoDrop547 = !current
+    AppToast.show(this, "Shadow Auto Drop547: ${if (!current) "ON" else "OFF"}")
+}
+
+// v547: Shape Auto Detect547
+internal fun PlayerActivity.showV547ShapeAutoDetect547Toggle() {
+    val current = BiliClient.prefs.v547shapeAutoDetect547
+    BiliClient.prefs.v547shapeAutoDetect547 = !current
+    AppToast.show(this, "Shape Auto Detect547: ${if (!current) "ON" else "OFF"}")
+}
+
+// v547: Sharp Auto Adjust547
+internal fun PlayerActivity.showV547SharpAutoAdjust547Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v547sharpAutoAdjust547).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Sharp Auto Adjust547",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v547sharpAutoAdjust547 = value
+        AppToast.show(this, "Sharp Auto Adjust547: $value")
+    }
+}
+
+// v547: Shell Auto Execute547
+internal fun PlayerActivity.showV547ShellAutoExecute547Toggle() {
+    val current = BiliClient.prefs.v547shellAutoExecute547
+    BiliClient.prefs.v547shellAutoExecute547 = !current
+    AppToast.show(this, "Shell Auto Execute547: ${if (!current) "ON" else "OFF"}")
+}
+
+// v547: Shift Auto Offset547
+internal fun PlayerActivity.showV547ShiftAutoOffset547Toggle() {
+    val current = BiliClient.prefs.v547shiftAutoOffset547
+    BiliClient.prefs.v547shiftAutoOffset547 = !current
+    AppToast.show(this, "Shift Auto Offset547: ${if (!current) "ON" else "OFF"}")
+}
+
+// v547: Short Cut Auto Bind547
+internal fun PlayerActivity.showV547ShortCutAutoBind547Toggle() {
+    val current = BiliClient.prefs.v547shortCutAutoBind547
+    BiliClient.prefs.v547shortCutAutoBind547 = !current
+    AppToast.show(this, "Short Cut Auto Bind547: ${if (!current) "ON" else "OFF"}")
+}
+
+// v547: Show Auto Toggle547
+internal fun PlayerActivity.showV547ShowAutoToggle547Toggle() {
+    val current = BiliClient.prefs.v547showAutoToggle547
+    BiliClient.prefs.v547showAutoToggle547 = !current
+    AppToast.show(this, "Show Auto Toggle547: ${if (!current) "ON" else "OFF"}")
+}
+
+// v547: Shuffle Auto Seed547
+internal fun PlayerActivity.showV547ShuffleAutoSeed547Toggle() {
+    val current = BiliClient.prefs.v547shuffleAutoSeed547
+    BiliClient.prefs.v547shuffleAutoSeed547 = !current
+    AppToast.show(this, "Shuffle Auto Seed547: ${if (!current) "ON" else "OFF"}")
+}
+
+// v547: Signal Auto Boost547
+internal fun PlayerActivity.showV547SignalAutoBoost547Toggle() {
+    val current = BiliClient.prefs.v547signalAutoBoost547
+    BiliClient.prefs.v547signalAutoBoost547 = !current
+    AppToast.show(this, "Signal Auto Boost547: ${if (!current) "ON" else "OFF"}")
+}
+
+// v547: Single Instance Mode547
+internal fun PlayerActivity.showV547SingleInstanceMode547Toggle() {
+    val current = BiliClient.prefs.v547singleInstanceMode547
+    BiliClient.prefs.v547singleInstanceMode547 = !current
+    AppToast.show(this, "Single Instance Mode547: ${if (!current) "ON" else "OFF"}")
+}
+
+// v548: Send Auto Confirm548
+internal fun PlayerActivity.showV548SendAutoConfirm548Toggle() {
+    val current = BiliClient.prefs.v548sendAutoConfirm548
+    BiliClient.prefs.v548sendAutoConfirm548 = !current
+    AppToast.show(this, "Send Auto Confirm548: ${if (!current) "ON" else "OFF"}")
+}
+
+// v548: Sensor Auto Calibrate548
+internal fun PlayerActivity.showV548SensorAutoCalibrate548Toggle() {
+    val current = BiliClient.prefs.v548sensorAutoCalibrate548
+    BiliClient.prefs.v548sensorAutoCalibrate548 = !current
+    AppToast.show(this, "Sensor Auto Calibrate548: ${if (!current) "ON" else "OFF"}")
+}
+
+// v548: Server Auto Switch548
+internal fun PlayerActivity.showV548ServerAutoSwitch548Toggle() {
+    val current = BiliClient.prefs.v548serverAutoSwitch548
+    BiliClient.prefs.v548serverAutoSwitch548 = !current
+    AppToast.show(this, "Server Auto Switch548: ${if (!current) "ON" else "OFF"}")
+}
+
+// v548: Session Auto Save548
+internal fun PlayerActivity.showV548SessionAutoSave548Toggle() {
+    val current = BiliClient.prefs.v548sessionAutoSave548
+    BiliClient.prefs.v548sessionAutoSave548 = !current
+    AppToast.show(this, "Session Auto Save548: ${if (!current) "ON" else "OFF"}")
+}
+
+// v548: Set Auto Default548
+internal fun PlayerActivity.showV548SetAutoDefault548Toggle() {
+    val current = BiliClient.prefs.v548setAutoDefault548
+    BiliClient.prefs.v548setAutoDefault548 = !current
+    AppToast.show(this, "Set Auto Default548: ${if (!current) "ON" else "OFF"}")
+}
+
+// v548: Shadow Auto Drop548
+internal fun PlayerActivity.showV548ShadowAutoDrop548Toggle() {
+    val current = BiliClient.prefs.v548shadowAutoDrop548
+    BiliClient.prefs.v548shadowAutoDrop548 = !current
+    AppToast.show(this, "Shadow Auto Drop548: ${if (!current) "ON" else "OFF"}")
+}
+
+// v548: Shape Auto Detect548
+internal fun PlayerActivity.showV548ShapeAutoDetect548Toggle() {
+    val current = BiliClient.prefs.v548shapeAutoDetect548
+    BiliClient.prefs.v548shapeAutoDetect548 = !current
+    AppToast.show(this, "Shape Auto Detect548: ${if (!current) "ON" else "OFF"}")
+}
+
+// v548: Sharp Auto Adjust548
+internal fun PlayerActivity.showV548SharpAutoAdjust548Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v548sharpAutoAdjust548).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Sharp Auto Adjust548",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v548sharpAutoAdjust548 = value
+        AppToast.show(this, "Sharp Auto Adjust548: $value")
+    }
+}
+
+// v548: Shell Auto Execute548
+internal fun PlayerActivity.showV548ShellAutoExecute548Toggle() {
+    val current = BiliClient.prefs.v548shellAutoExecute548
+    BiliClient.prefs.v548shellAutoExecute548 = !current
+    AppToast.show(this, "Shell Auto Execute548: ${if (!current) "ON" else "OFF"}")
+}
+
+// v548: Shift Auto Offset548
+internal fun PlayerActivity.showV548ShiftAutoOffset548Toggle() {
+    val current = BiliClient.prefs.v548shiftAutoOffset548
+    BiliClient.prefs.v548shiftAutoOffset548 = !current
+    AppToast.show(this, "Shift Auto Offset548: ${if (!current) "ON" else "OFF"}")
+}
+
+// v548: Short Cut Auto Bind548
+internal fun PlayerActivity.showV548ShortCutAutoBind548Toggle() {
+    val current = BiliClient.prefs.v548shortCutAutoBind548
+    BiliClient.prefs.v548shortCutAutoBind548 = !current
+    AppToast.show(this, "Short Cut Auto Bind548: ${if (!current) "ON" else "OFF"}")
+}
+
+// v548: Show Auto Toggle548
+internal fun PlayerActivity.showV548ShowAutoToggle548Toggle() {
+    val current = BiliClient.prefs.v548showAutoToggle548
+    BiliClient.prefs.v548showAutoToggle548 = !current
+    AppToast.show(this, "Show Auto Toggle548: ${if (!current) "ON" else "OFF"}")
+}
+
+// v548: Shuffle Auto Seed548
+internal fun PlayerActivity.showV548ShuffleAutoSeed548Toggle() {
+    val current = BiliClient.prefs.v548shuffleAutoSeed548
+    BiliClient.prefs.v548shuffleAutoSeed548 = !current
+    AppToast.show(this, "Shuffle Auto Seed548: ${if (!current) "ON" else "OFF"}")
+}
+
+// v548: Signal Auto Boost548
+internal fun PlayerActivity.showV548SignalAutoBoost548Toggle() {
+    val current = BiliClient.prefs.v548signalAutoBoost548
+    BiliClient.prefs.v548signalAutoBoost548 = !current
+    AppToast.show(this, "Signal Auto Boost548: ${if (!current) "ON" else "OFF"}")
+}
+
+// v548: Single Instance Mode548
+internal fun PlayerActivity.showV548SingleInstanceMode548Toggle() {
+    val current = BiliClient.prefs.v548singleInstanceMode548
+    BiliClient.prefs.v548singleInstanceMode548 = !current
+    AppToast.show(this, "Single Instance Mode548: ${if (!current) "ON" else "OFF"}")
+}
+
+// v549: Send Auto Confirm549
+internal fun PlayerActivity.showV549SendAutoConfirm549Toggle() {
+    val current = BiliClient.prefs.v549sendAutoConfirm549
+    BiliClient.prefs.v549sendAutoConfirm549 = !current
+    AppToast.show(this, "Send Auto Confirm549: ${if (!current) "ON" else "OFF"}")
+}
+
+// v549: Sensor Auto Calibrate549
+internal fun PlayerActivity.showV549SensorAutoCalibrate549Toggle() {
+    val current = BiliClient.prefs.v549sensorAutoCalibrate549
+    BiliClient.prefs.v549sensorAutoCalibrate549 = !current
+    AppToast.show(this, "Sensor Auto Calibrate549: ${if (!current) "ON" else "OFF"}")
+}
+
+// v549: Server Auto Switch549
+internal fun PlayerActivity.showV549ServerAutoSwitch549Toggle() {
+    val current = BiliClient.prefs.v549serverAutoSwitch549
+    BiliClient.prefs.v549serverAutoSwitch549 = !current
+    AppToast.show(this, "Server Auto Switch549: ${if (!current) "ON" else "OFF"}")
+}
+
+// v549: Session Auto Save549
+internal fun PlayerActivity.showV549SessionAutoSave549Toggle() {
+    val current = BiliClient.prefs.v549sessionAutoSave549
+    BiliClient.prefs.v549sessionAutoSave549 = !current
+    AppToast.show(this, "Session Auto Save549: ${if (!current) "ON" else "OFF"}")
+}
+
+// v549: Set Auto Default549
+internal fun PlayerActivity.showV549SetAutoDefault549Toggle() {
+    val current = BiliClient.prefs.v549setAutoDefault549
+    BiliClient.prefs.v549setAutoDefault549 = !current
+    AppToast.show(this, "Set Auto Default549: ${if (!current) "ON" else "OFF"}")
+}
+
+// v549: Shadow Auto Drop549
+internal fun PlayerActivity.showV549ShadowAutoDrop549Toggle() {
+    val current = BiliClient.prefs.v549shadowAutoDrop549
+    BiliClient.prefs.v549shadowAutoDrop549 = !current
+    AppToast.show(this, "Shadow Auto Drop549: ${if (!current) "ON" else "OFF"}")
+}
+
+// v549: Shape Auto Detect549
+internal fun PlayerActivity.showV549ShapeAutoDetect549Toggle() {
+    val current = BiliClient.prefs.v549shapeAutoDetect549
+    BiliClient.prefs.v549shapeAutoDetect549 = !current
+    AppToast.show(this, "Shape Auto Detect549: ${if (!current) "ON" else "OFF"}")
+}
+
+// v549: Sharp Auto Adjust549
+internal fun PlayerActivity.showV549SharpAutoAdjust549Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v549sharpAutoAdjust549).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Sharp Auto Adjust549",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v549sharpAutoAdjust549 = value
+        AppToast.show(this, "Sharp Auto Adjust549: $value")
+    }
+}
+
+// v549: Shell Auto Execute549
+internal fun PlayerActivity.showV549ShellAutoExecute549Toggle() {
+    val current = BiliClient.prefs.v549shellAutoExecute549
+    BiliClient.prefs.v549shellAutoExecute549 = !current
+    AppToast.show(this, "Shell Auto Execute549: ${if (!current) "ON" else "OFF"}")
+}
+
+// v549: Shift Auto Offset549
+internal fun PlayerActivity.showV549ShiftAutoOffset549Toggle() {
+    val current = BiliClient.prefs.v549shiftAutoOffset549
+    BiliClient.prefs.v549shiftAutoOffset549 = !current
+    AppToast.show(this, "Shift Auto Offset549: ${if (!current) "ON" else "OFF"}")
+}
+
+// v549: Short Cut Auto Bind549
+internal fun PlayerActivity.showV549ShortCutAutoBind549Toggle() {
+    val current = BiliClient.prefs.v549shortCutAutoBind549
+    BiliClient.prefs.v549shortCutAutoBind549 = !current
+    AppToast.show(this, "Short Cut Auto Bind549: ${if (!current) "ON" else "OFF"}")
+}
+
+// v549: Show Auto Toggle549
+internal fun PlayerActivity.showV549ShowAutoToggle549Toggle() {
+    val current = BiliClient.prefs.v549showAutoToggle549
+    BiliClient.prefs.v549showAutoToggle549 = !current
+    AppToast.show(this, "Show Auto Toggle549: ${if (!current) "ON" else "OFF"}")
+}
+
+// v549: Shuffle Auto Seed549
+internal fun PlayerActivity.showV549ShuffleAutoSeed549Toggle() {
+    val current = BiliClient.prefs.v549shuffleAutoSeed549
+    BiliClient.prefs.v549shuffleAutoSeed549 = !current
+    AppToast.show(this, "Shuffle Auto Seed549: ${if (!current) "ON" else "OFF"}")
+}
+
+// v549: Signal Auto Boost549
+internal fun PlayerActivity.showV549SignalAutoBoost549Toggle() {
+    val current = BiliClient.prefs.v549signalAutoBoost549
+    BiliClient.prefs.v549signalAutoBoost549 = !current
+    AppToast.show(this, "Signal Auto Boost549: ${if (!current) "ON" else "OFF"}")
+}
+
+// v549: Single Instance Mode549
+internal fun PlayerActivity.showV549SingleInstanceMode549Toggle() {
+    val current = BiliClient.prefs.v549singleInstanceMode549
+    BiliClient.prefs.v549singleInstanceMode549 = !current
+    AppToast.show(this, "Single Instance Mode549: ${if (!current) "ON" else "OFF"}")
+}
+
+// v550: Send Auto Confirm550
+internal fun PlayerActivity.showV550SendAutoConfirm550Toggle() {
+    val current = BiliClient.prefs.v550sendAutoConfirm550
+    BiliClient.prefs.v550sendAutoConfirm550 = !current
+    AppToast.show(this, "Send Auto Confirm550: ${if (!current) "ON" else "OFF"}")
+}
+
+// v550: Sensor Auto Calibrate550
+internal fun PlayerActivity.showV550SensorAutoCalibrate550Toggle() {
+    val current = BiliClient.prefs.v550sensorAutoCalibrate550
+    BiliClient.prefs.v550sensorAutoCalibrate550 = !current
+    AppToast.show(this, "Sensor Auto Calibrate550: ${if (!current) "ON" else "OFF"}")
+}
+
+// v550: Server Auto Switch550
+internal fun PlayerActivity.showV550ServerAutoSwitch550Toggle() {
+    val current = BiliClient.prefs.v550serverAutoSwitch550
+    BiliClient.prefs.v550serverAutoSwitch550 = !current
+    AppToast.show(this, "Server Auto Switch550: ${if (!current) "ON" else "OFF"}")
+}
+
+// v550: Session Auto Save550
+internal fun PlayerActivity.showV550SessionAutoSave550Toggle() {
+    val current = BiliClient.prefs.v550sessionAutoSave550
+    BiliClient.prefs.v550sessionAutoSave550 = !current
+    AppToast.show(this, "Session Auto Save550: ${if (!current) "ON" else "OFF"}")
+}
+
+// v550: Set Auto Default550
+internal fun PlayerActivity.showV550SetAutoDefault550Toggle() {
+    val current = BiliClient.prefs.v550setAutoDefault550
+    BiliClient.prefs.v550setAutoDefault550 = !current
+    AppToast.show(this, "Set Auto Default550: ${if (!current) "ON" else "OFF"}")
+}
+
+// v550: Shadow Auto Drop550
+internal fun PlayerActivity.showV550ShadowAutoDrop550Toggle() {
+    val current = BiliClient.prefs.v550shadowAutoDrop550
+    BiliClient.prefs.v550shadowAutoDrop550 = !current
+    AppToast.show(this, "Shadow Auto Drop550: ${if (!current) "ON" else "OFF"}")
+}
+
+// v550: Shape Auto Detect550
+internal fun PlayerActivity.showV550ShapeAutoDetect550Toggle() {
+    val current = BiliClient.prefs.v550shapeAutoDetect550
+    BiliClient.prefs.v550shapeAutoDetect550 = !current
+    AppToast.show(this, "Shape Auto Detect550: ${if (!current) "ON" else "OFF"}")
+}
+
+// v550: Sharp Auto Adjust550
+internal fun PlayerActivity.showV550SharpAutoAdjust550Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v550sharpAutoAdjust550).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Sharp Auto Adjust550",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v550sharpAutoAdjust550 = value
+        AppToast.show(this, "Sharp Auto Adjust550: $value")
+    }
+}
+
+// v550: Shell Auto Execute550
+internal fun PlayerActivity.showV550ShellAutoExecute550Toggle() {
+    val current = BiliClient.prefs.v550shellAutoExecute550
+    BiliClient.prefs.v550shellAutoExecute550 = !current
+    AppToast.show(this, "Shell Auto Execute550: ${if (!current) "ON" else "OFF"}")
+}
+
+// v550: Shift Auto Offset550
+internal fun PlayerActivity.showV550ShiftAutoOffset550Toggle() {
+    val current = BiliClient.prefs.v550shiftAutoOffset550
+    BiliClient.prefs.v550shiftAutoOffset550 = !current
+    AppToast.show(this, "Shift Auto Offset550: ${if (!current) "ON" else "OFF"}")
+}
+
+// v550: Short Cut Auto Bind550
+internal fun PlayerActivity.showV550ShortCutAutoBind550Toggle() {
+    val current = BiliClient.prefs.v550shortCutAutoBind550
+    BiliClient.prefs.v550shortCutAutoBind550 = !current
+    AppToast.show(this, "Short Cut Auto Bind550: ${if (!current) "ON" else "OFF"}")
+}
+
+// v550: Show Auto Toggle550
+internal fun PlayerActivity.showV550ShowAutoToggle550Toggle() {
+    val current = BiliClient.prefs.v550showAutoToggle550
+    BiliClient.prefs.v550showAutoToggle550 = !current
+    AppToast.show(this, "Show Auto Toggle550: ${if (!current) "ON" else "OFF"}")
+}
+
+// v550: Shuffle Auto Seed550
+internal fun PlayerActivity.showV550ShuffleAutoSeed550Toggle() {
+    val current = BiliClient.prefs.v550shuffleAutoSeed550
+    BiliClient.prefs.v550shuffleAutoSeed550 = !current
+    AppToast.show(this, "Shuffle Auto Seed550: ${if (!current) "ON" else "OFF"}")
+}
+
+// v550: Signal Auto Boost550
+internal fun PlayerActivity.showV550SignalAutoBoost550Toggle() {
+    val current = BiliClient.prefs.v550signalAutoBoost550
+    BiliClient.prefs.v550signalAutoBoost550 = !current
+    AppToast.show(this, "Signal Auto Boost550: ${if (!current) "ON" else "OFF"}")
+}
+
+// v550: Single Instance Mode550
+internal fun PlayerActivity.showV550SingleInstanceMode550Toggle() {
+    val current = BiliClient.prefs.v550singleInstanceMode550
+    BiliClient.prefs.v550singleInstanceMode550 = !current
+    AppToast.show(this, "Single Instance Mode550: ${if (!current) "ON" else "OFF"}")
+}
+

@@ -39248,6 +39248,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V540SELECTAUTOMULTI540, false)
         set(value) = prefs.edit().putBoolean(KEY_V540SELECTAUTOMULTI540, value).apply()
 
+    var v541sendAutoConfirm541: Boolean
+        get() = prefs.getBoolean(KEY_V541SENDAUTOCONFIRM541, false)
+        set(value) = prefs.edit().putBoolean(KEY_V541SENDAUTOCONFIRM541, value).apply()
+
+    var v541sensorAutoCalibrate541: Boolean
+        get() = prefs.getBoolean(KEY_V541SENSORAUTOCALIBRATE541, false)
+        set(value) = prefs.edit().putBoolean(KEY_V541SENSORAUTOCALIBRATE541, value).apply()
+
+    var v541serverAutoSwitch541: Boolean
+        get() = prefs.getBoolean(KEY_V541SERVERAUTOSWITCH541, false)
+        set(value) = prefs.edit().putBoolean(KEY_V541SERVERAUTOSWITCH541, value).apply()
+
+    var v541sessionAutoSave541: Boolean
+        get() = prefs.getBoolean(KEY_V541SESSIONAUTOSAVE541, false)
+        set(value) = prefs.edit().putBoolean(KEY_V541SESSIONAUTOSAVE541, value).apply()
+
+    var v541setAutoDefault541: Boolean
+        get() = prefs.getBoolean(KEY_V541SETAUTODEFAULT541, false)
+        set(value) = prefs.edit().putBoolean(KEY_V541SETAUTODEFAULT541, value).apply()
+
+    var v541shadowAutoDrop541: Boolean
+        get() = prefs.getBoolean(KEY_V541SHADOWAUTODROP541, false)
+        set(value) = prefs.edit().putBoolean(KEY_V541SHADOWAUTODROP541, value).apply()
+
+    var v541shapeAutoDetect541: Boolean
+        get() = prefs.getBoolean(KEY_V541SHAPEAUTODETECT541, false)
+        set(value) = prefs.edit().putBoolean(KEY_V541SHAPEAUTODETECT541, value).apply()
+
+    var v541sharpAutoAdjust541: Int
+        get() = prefs.getInt(KEY_V541SHARPAUTOADJUST541, 0)
+        set(value) = prefs.edit().putInt(KEY_V541SHARPAUTOADJUST541, value).apply()
+
+    var v541shellAutoExecute541: Boolean
+        get() = prefs.getBoolean(KEY_V541SHELLAUTOEXECUTE541, false)
+        set(value) = prefs.edit().putBoolean(KEY_V541SHELLAUTOEXECUTE541, value).apply()
+
+    var v541shiftAutoOffset541: Boolean
+        get() = prefs.getBoolean(KEY_V541SHIFTAUTOOFFSET541, false)
+        set(value) = prefs.edit().putBoolean(KEY_V541SHIFTAUTOOFFSET541, value).apply()
+
+    var v541shortCutAutoBind541: Boolean
+        get() = prefs.getBoolean(KEY_V541SHORTCUTAUTOBIND541, false)
+        set(value) = prefs.edit().putBoolean(KEY_V541SHORTCUTAUTOBIND541, value).apply()
+
+    var v541showAutoToggle541: Boolean
+        get() = prefs.getBoolean(KEY_V541SHOWAUTOTOGGLE541, false)
+        set(value) = prefs.edit().putBoolean(KEY_V541SHOWAUTOTOGGLE541, value).apply()
+
+    var v541shuffleAutoSeed541: Boolean
+        get() = prefs.getBoolean(KEY_V541SHUFFLEAUTOSEED541, false)
+        set(value) = prefs.edit().putBoolean(KEY_V541SHUFFLEAUTOSEED541, value).apply()
+
+    var v541signalAutoBoost541: Boolean
+        get() = prefs.getBoolean(KEY_V541SIGNALAUTOBOOST541, false)
+        set(value) = prefs.edit().putBoolean(KEY_V541SIGNALAUTOBOOST541, value).apply()
+
+    var v541singleInstanceMode541: Boolean
+        get() = prefs.getBoolean(KEY_V541SINGLEINSTANCEMODE541, false)
+        set(value) = prefs.edit().putBoolean(KEY_V541SINGLEINSTANCEMODE541, value).apply()
+
+    var v542sendAutoConfirm542: Boolean
+        get() = prefs.getBoolean(KEY_V542SENDAUTOCONFIRM542, false)
+        set(value) = prefs.edit().putBoolean(KEY_V542SENDAUTOCONFIRM542, value).apply()
+
+    var v542sensorAutoCalibrate542: Boolean
+        get() = prefs.getBoolean(KEY_V542SENSORAUTOCALIBRATE542, false)
+        set(value) = prefs.edit().putBoolean(KEY_V542SENSORAUTOCALIBRATE542, value).apply()
+
+    var v542serverAutoSwitch542: Boolean
+        get() = prefs.getBoolean(KEY_V542SERVERAUTOSWITCH542, false)
+        set(value) = prefs.edit().putBoolean(KEY_V542SERVERAUTOSWITCH542, value).apply()
+
+    var v542sessionAutoSave542: Boolean
+        get() = prefs.getBoolean(KEY_V542SESSIONAUTOSAVE542, false)
+        set(value) = prefs.edit().putBoolean(KEY_V542SESSIONAUTOSAVE542, value).apply()
+
+    var v542setAutoDefault542: Boolean
+        get() = prefs.getBoolean(KEY_V542SETAUTODEFAULT542, false)
+        set(value) = prefs.edit().putBoolean(KEY_V542SETAUTODEFAULT542, value).apply()
+
+    var v542shadowAutoDrop542: Boolean
+        get() = prefs.getBoolean(KEY_V542SHADOWAUTODROP542, false)
+        set(value) = prefs.edit().putBoolean(KEY_V542SHADOWAUTODROP542, value).apply()
+
+    var v542shapeAutoDetect542: Boolean
+        get() = prefs.getBoolean(KEY_V542SHAPEAUTODETECT542, false)
+        set(value) = prefs.edit().putBoolean(KEY_V542SHAPEAUTODETECT542, value).apply()
+
+    var v542sharpAutoAdjust542: Int
+        get() = prefs.getInt(KEY_V542SHARPAUTOADJUST542, 0)
+        set(value) = prefs.edit().putInt(KEY_V542SHARPAUTOADJUST542, value).apply()
+
+    var v542shellAutoExecute542: Boolean
+        get() = prefs.getBoolean(KEY_V542SHELLAUTOEXECUTE542, false)
+        set(value) = prefs.edit().putBoolean(KEY_V542SHELLAUTOEXECUTE542, value).apply()
+
+    var v542shiftAutoOffset542: Boolean
+        get() = prefs.getBoolean(KEY_V542SHIFTAUTOOFFSET542, false)
+        set(value) = prefs.edit().putBoolean(KEY_V542SHIFTAUTOOFFSET542, value).apply()
+
+    var v542shortCutAutoBind542: Boolean
+        get() = prefs.getBoolean(KEY_V542SHORTCUTAUTOBIND542, false)
+        set(value) = prefs.edit().putBoolean(KEY_V542SHORTCUTAUTOBIND542, value).apply()
+
+    var v542showAutoToggle542: Boolean
+        get() = prefs.getBoolean(KEY_V542SHOWAUTOTOGGLE542, false)
+        set(value) = prefs.edit().putBoolean(KEY_V542SHOWAUTOTOGGLE542, value).apply()
+
+    var v542shuffleAutoSeed542: Boolean
+        get() = prefs.getBoolean(KEY_V542SHUFFLEAUTOSEED542, false)
+        set(value) = prefs.edit().putBoolean(KEY_V542SHUFFLEAUTOSEED542, value).apply()
+
+    var v542signalAutoBoost542: Boolean
+        get() = prefs.getBoolean(KEY_V542SIGNALAUTOBOOST542, false)
+        set(value) = prefs.edit().putBoolean(KEY_V542SIGNALAUTOBOOST542, value).apply()
+
+    var v542singleInstanceMode542: Boolean
+        get() = prefs.getBoolean(KEY_V542SINGLEINSTANCEMODE542, false)
+        set(value) = prefs.edit().putBoolean(KEY_V542SINGLEINSTANCEMODE542, value).apply()
+
+    var v543sendAutoConfirm543: Boolean
+        get() = prefs.getBoolean(KEY_V543SENDAUTOCONFIRM543, false)
+        set(value) = prefs.edit().putBoolean(KEY_V543SENDAUTOCONFIRM543, value).apply()
+
+    var v543sensorAutoCalibrate543: Boolean
+        get() = prefs.getBoolean(KEY_V543SENSORAUTOCALIBRATE543, false)
+        set(value) = prefs.edit().putBoolean(KEY_V543SENSORAUTOCALIBRATE543, value).apply()
+
+    var v543serverAutoSwitch543: Boolean
+        get() = prefs.getBoolean(KEY_V543SERVERAUTOSWITCH543, false)
+        set(value) = prefs.edit().putBoolean(KEY_V543SERVERAUTOSWITCH543, value).apply()
+
+    var v543sessionAutoSave543: Boolean
+        get() = prefs.getBoolean(KEY_V543SESSIONAUTOSAVE543, false)
+        set(value) = prefs.edit().putBoolean(KEY_V543SESSIONAUTOSAVE543, value).apply()
+
+    var v543setAutoDefault543: Boolean
+        get() = prefs.getBoolean(KEY_V543SETAUTODEFAULT543, false)
+        set(value) = prefs.edit().putBoolean(KEY_V543SETAUTODEFAULT543, value).apply()
+
+    var v543shadowAutoDrop543: Boolean
+        get() = prefs.getBoolean(KEY_V543SHADOWAUTODROP543, false)
+        set(value) = prefs.edit().putBoolean(KEY_V543SHADOWAUTODROP543, value).apply()
+
+    var v543shapeAutoDetect543: Boolean
+        get() = prefs.getBoolean(KEY_V543SHAPEAUTODETECT543, false)
+        set(value) = prefs.edit().putBoolean(KEY_V543SHAPEAUTODETECT543, value).apply()
+
+    var v543sharpAutoAdjust543: Int
+        get() = prefs.getInt(KEY_V543SHARPAUTOADJUST543, 0)
+        set(value) = prefs.edit().putInt(KEY_V543SHARPAUTOADJUST543, value).apply()
+
+    var v543shellAutoExecute543: Boolean
+        get() = prefs.getBoolean(KEY_V543SHELLAUTOEXECUTE543, false)
+        set(value) = prefs.edit().putBoolean(KEY_V543SHELLAUTOEXECUTE543, value).apply()
+
+    var v543shiftAutoOffset543: Boolean
+        get() = prefs.getBoolean(KEY_V543SHIFTAUTOOFFSET543, false)
+        set(value) = prefs.edit().putBoolean(KEY_V543SHIFTAUTOOFFSET543, value).apply()
+
+    var v543shortCutAutoBind543: Boolean
+        get() = prefs.getBoolean(KEY_V543SHORTCUTAUTOBIND543, false)
+        set(value) = prefs.edit().putBoolean(KEY_V543SHORTCUTAUTOBIND543, value).apply()
+
+    var v543showAutoToggle543: Boolean
+        get() = prefs.getBoolean(KEY_V543SHOWAUTOTOGGLE543, false)
+        set(value) = prefs.edit().putBoolean(KEY_V543SHOWAUTOTOGGLE543, value).apply()
+
+    var v543shuffleAutoSeed543: Boolean
+        get() = prefs.getBoolean(KEY_V543SHUFFLEAUTOSEED543, false)
+        set(value) = prefs.edit().putBoolean(KEY_V543SHUFFLEAUTOSEED543, value).apply()
+
+    var v543signalAutoBoost543: Boolean
+        get() = prefs.getBoolean(KEY_V543SIGNALAUTOBOOST543, false)
+        set(value) = prefs.edit().putBoolean(KEY_V543SIGNALAUTOBOOST543, value).apply()
+
+    var v543singleInstanceMode543: Boolean
+        get() = prefs.getBoolean(KEY_V543SINGLEINSTANCEMODE543, false)
+        set(value) = prefs.edit().putBoolean(KEY_V543SINGLEINSTANCEMODE543, value).apply()
+
+    var v544sendAutoConfirm544: Boolean
+        get() = prefs.getBoolean(KEY_V544SENDAUTOCONFIRM544, false)
+        set(value) = prefs.edit().putBoolean(KEY_V544SENDAUTOCONFIRM544, value).apply()
+
+    var v544sensorAutoCalibrate544: Boolean
+        get() = prefs.getBoolean(KEY_V544SENSORAUTOCALIBRATE544, false)
+        set(value) = prefs.edit().putBoolean(KEY_V544SENSORAUTOCALIBRATE544, value).apply()
+
+    var v544serverAutoSwitch544: Boolean
+        get() = prefs.getBoolean(KEY_V544SERVERAUTOSWITCH544, false)
+        set(value) = prefs.edit().putBoolean(KEY_V544SERVERAUTOSWITCH544, value).apply()
+
+    var v544sessionAutoSave544: Boolean
+        get() = prefs.getBoolean(KEY_V544SESSIONAUTOSAVE544, false)
+        set(value) = prefs.edit().putBoolean(KEY_V544SESSIONAUTOSAVE544, value).apply()
+
+    var v544setAutoDefault544: Boolean
+        get() = prefs.getBoolean(KEY_V544SETAUTODEFAULT544, false)
+        set(value) = prefs.edit().putBoolean(KEY_V544SETAUTODEFAULT544, value).apply()
+
+    var v544shadowAutoDrop544: Boolean
+        get() = prefs.getBoolean(KEY_V544SHADOWAUTODROP544, false)
+        set(value) = prefs.edit().putBoolean(KEY_V544SHADOWAUTODROP544, value).apply()
+
+    var v544shapeAutoDetect544: Boolean
+        get() = prefs.getBoolean(KEY_V544SHAPEAUTODETECT544, false)
+        set(value) = prefs.edit().putBoolean(KEY_V544SHAPEAUTODETECT544, value).apply()
+
+    var v544sharpAutoAdjust544: Int
+        get() = prefs.getInt(KEY_V544SHARPAUTOADJUST544, 0)
+        set(value) = prefs.edit().putInt(KEY_V544SHARPAUTOADJUST544, value).apply()
+
+    var v544shellAutoExecute544: Boolean
+        get() = prefs.getBoolean(KEY_V544SHELLAUTOEXECUTE544, false)
+        set(value) = prefs.edit().putBoolean(KEY_V544SHELLAUTOEXECUTE544, value).apply()
+
+    var v544shiftAutoOffset544: Boolean
+        get() = prefs.getBoolean(KEY_V544SHIFTAUTOOFFSET544, false)
+        set(value) = prefs.edit().putBoolean(KEY_V544SHIFTAUTOOFFSET544, value).apply()
+
+    var v544shortCutAutoBind544: Boolean
+        get() = prefs.getBoolean(KEY_V544SHORTCUTAUTOBIND544, false)
+        set(value) = prefs.edit().putBoolean(KEY_V544SHORTCUTAUTOBIND544, value).apply()
+
+    var v544showAutoToggle544: Boolean
+        get() = prefs.getBoolean(KEY_V544SHOWAUTOTOGGLE544, false)
+        set(value) = prefs.edit().putBoolean(KEY_V544SHOWAUTOTOGGLE544, value).apply()
+
+    var v544shuffleAutoSeed544: Boolean
+        get() = prefs.getBoolean(KEY_V544SHUFFLEAUTOSEED544, false)
+        set(value) = prefs.edit().putBoolean(KEY_V544SHUFFLEAUTOSEED544, value).apply()
+
+    var v544signalAutoBoost544: Boolean
+        get() = prefs.getBoolean(KEY_V544SIGNALAUTOBOOST544, false)
+        set(value) = prefs.edit().putBoolean(KEY_V544SIGNALAUTOBOOST544, value).apply()
+
+    var v544singleInstanceMode544: Boolean
+        get() = prefs.getBoolean(KEY_V544SINGLEINSTANCEMODE544, false)
+        set(value) = prefs.edit().putBoolean(KEY_V544SINGLEINSTANCEMODE544, value).apply()
+
+    var v545sendAutoConfirm545: Boolean
+        get() = prefs.getBoolean(KEY_V545SENDAUTOCONFIRM545, false)
+        set(value) = prefs.edit().putBoolean(KEY_V545SENDAUTOCONFIRM545, value).apply()
+
+    var v545sensorAutoCalibrate545: Boolean
+        get() = prefs.getBoolean(KEY_V545SENSORAUTOCALIBRATE545, false)
+        set(value) = prefs.edit().putBoolean(KEY_V545SENSORAUTOCALIBRATE545, value).apply()
+
+    var v545serverAutoSwitch545: Boolean
+        get() = prefs.getBoolean(KEY_V545SERVERAUTOSWITCH545, false)
+        set(value) = prefs.edit().putBoolean(KEY_V545SERVERAUTOSWITCH545, value).apply()
+
+    var v545sessionAutoSave545: Boolean
+        get() = prefs.getBoolean(KEY_V545SESSIONAUTOSAVE545, false)
+        set(value) = prefs.edit().putBoolean(KEY_V545SESSIONAUTOSAVE545, value).apply()
+
+    var v545setAutoDefault545: Boolean
+        get() = prefs.getBoolean(KEY_V545SETAUTODEFAULT545, false)
+        set(value) = prefs.edit().putBoolean(KEY_V545SETAUTODEFAULT545, value).apply()
+
+    var v545shadowAutoDrop545: Boolean
+        get() = prefs.getBoolean(KEY_V545SHADOWAUTODROP545, false)
+        set(value) = prefs.edit().putBoolean(KEY_V545SHADOWAUTODROP545, value).apply()
+
+    var v545shapeAutoDetect545: Boolean
+        get() = prefs.getBoolean(KEY_V545SHAPEAUTODETECT545, false)
+        set(value) = prefs.edit().putBoolean(KEY_V545SHAPEAUTODETECT545, value).apply()
+
+    var v545sharpAutoAdjust545: Int
+        get() = prefs.getInt(KEY_V545SHARPAUTOADJUST545, 0)
+        set(value) = prefs.edit().putInt(KEY_V545SHARPAUTOADJUST545, value).apply()
+
+    var v545shellAutoExecute545: Boolean
+        get() = prefs.getBoolean(KEY_V545SHELLAUTOEXECUTE545, false)
+        set(value) = prefs.edit().putBoolean(KEY_V545SHELLAUTOEXECUTE545, value).apply()
+
+    var v545shiftAutoOffset545: Boolean
+        get() = prefs.getBoolean(KEY_V545SHIFTAUTOOFFSET545, false)
+        set(value) = prefs.edit().putBoolean(KEY_V545SHIFTAUTOOFFSET545, value).apply()
+
+    var v545shortCutAutoBind545: Boolean
+        get() = prefs.getBoolean(KEY_V545SHORTCUTAUTOBIND545, false)
+        set(value) = prefs.edit().putBoolean(KEY_V545SHORTCUTAUTOBIND545, value).apply()
+
+    var v545showAutoToggle545: Boolean
+        get() = prefs.getBoolean(KEY_V545SHOWAUTOTOGGLE545, false)
+        set(value) = prefs.edit().putBoolean(KEY_V545SHOWAUTOTOGGLE545, value).apply()
+
+    var v545shuffleAutoSeed545: Boolean
+        get() = prefs.getBoolean(KEY_V545SHUFFLEAUTOSEED545, false)
+        set(value) = prefs.edit().putBoolean(KEY_V545SHUFFLEAUTOSEED545, value).apply()
+
+    var v545signalAutoBoost545: Boolean
+        get() = prefs.getBoolean(KEY_V545SIGNALAUTOBOOST545, false)
+        set(value) = prefs.edit().putBoolean(KEY_V545SIGNALAUTOBOOST545, value).apply()
+
+    var v545singleInstanceMode545: Boolean
+        get() = prefs.getBoolean(KEY_V545SINGLEINSTANCEMODE545, false)
+        set(value) = prefs.edit().putBoolean(KEY_V545SINGLEINSTANCEMODE545, value).apply()
+
+    var v546sendAutoConfirm546: Boolean
+        get() = prefs.getBoolean(KEY_V546SENDAUTOCONFIRM546, false)
+        set(value) = prefs.edit().putBoolean(KEY_V546SENDAUTOCONFIRM546, value).apply()
+
+    var v546sensorAutoCalibrate546: Boolean
+        get() = prefs.getBoolean(KEY_V546SENSORAUTOCALIBRATE546, false)
+        set(value) = prefs.edit().putBoolean(KEY_V546SENSORAUTOCALIBRATE546, value).apply()
+
+    var v546serverAutoSwitch546: Boolean
+        get() = prefs.getBoolean(KEY_V546SERVERAUTOSWITCH546, false)
+        set(value) = prefs.edit().putBoolean(KEY_V546SERVERAUTOSWITCH546, value).apply()
+
+    var v546sessionAutoSave546: Boolean
+        get() = prefs.getBoolean(KEY_V546SESSIONAUTOSAVE546, false)
+        set(value) = prefs.edit().putBoolean(KEY_V546SESSIONAUTOSAVE546, value).apply()
+
+    var v546setAutoDefault546: Boolean
+        get() = prefs.getBoolean(KEY_V546SETAUTODEFAULT546, false)
+        set(value) = prefs.edit().putBoolean(KEY_V546SETAUTODEFAULT546, value).apply()
+
+    var v546shadowAutoDrop546: Boolean
+        get() = prefs.getBoolean(KEY_V546SHADOWAUTODROP546, false)
+        set(value) = prefs.edit().putBoolean(KEY_V546SHADOWAUTODROP546, value).apply()
+
+    var v546shapeAutoDetect546: Boolean
+        get() = prefs.getBoolean(KEY_V546SHAPEAUTODETECT546, false)
+        set(value) = prefs.edit().putBoolean(KEY_V546SHAPEAUTODETECT546, value).apply()
+
+    var v546sharpAutoAdjust546: Int
+        get() = prefs.getInt(KEY_V546SHARPAUTOADJUST546, 0)
+        set(value) = prefs.edit().putInt(KEY_V546SHARPAUTOADJUST546, value).apply()
+
+    var v546shellAutoExecute546: Boolean
+        get() = prefs.getBoolean(KEY_V546SHELLAUTOEXECUTE546, false)
+        set(value) = prefs.edit().putBoolean(KEY_V546SHELLAUTOEXECUTE546, value).apply()
+
+    var v546shiftAutoOffset546: Boolean
+        get() = prefs.getBoolean(KEY_V546SHIFTAUTOOFFSET546, false)
+        set(value) = prefs.edit().putBoolean(KEY_V546SHIFTAUTOOFFSET546, value).apply()
+
+    var v546shortCutAutoBind546: Boolean
+        get() = prefs.getBoolean(KEY_V546SHORTCUTAUTOBIND546, false)
+        set(value) = prefs.edit().putBoolean(KEY_V546SHORTCUTAUTOBIND546, value).apply()
+
+    var v546showAutoToggle546: Boolean
+        get() = prefs.getBoolean(KEY_V546SHOWAUTOTOGGLE546, false)
+        set(value) = prefs.edit().putBoolean(KEY_V546SHOWAUTOTOGGLE546, value).apply()
+
+    var v546shuffleAutoSeed546: Boolean
+        get() = prefs.getBoolean(KEY_V546SHUFFLEAUTOSEED546, false)
+        set(value) = prefs.edit().putBoolean(KEY_V546SHUFFLEAUTOSEED546, value).apply()
+
+    var v546signalAutoBoost546: Boolean
+        get() = prefs.getBoolean(KEY_V546SIGNALAUTOBOOST546, false)
+        set(value) = prefs.edit().putBoolean(KEY_V546SIGNALAUTOBOOST546, value).apply()
+
+    var v546singleInstanceMode546: Boolean
+        get() = prefs.getBoolean(KEY_V546SINGLEINSTANCEMODE546, false)
+        set(value) = prefs.edit().putBoolean(KEY_V546SINGLEINSTANCEMODE546, value).apply()
+
+    var v547sendAutoConfirm547: Boolean
+        get() = prefs.getBoolean(KEY_V547SENDAUTOCONFIRM547, false)
+        set(value) = prefs.edit().putBoolean(KEY_V547SENDAUTOCONFIRM547, value).apply()
+
+    var v547sensorAutoCalibrate547: Boolean
+        get() = prefs.getBoolean(KEY_V547SENSORAUTOCALIBRATE547, false)
+        set(value) = prefs.edit().putBoolean(KEY_V547SENSORAUTOCALIBRATE547, value).apply()
+
+    var v547serverAutoSwitch547: Boolean
+        get() = prefs.getBoolean(KEY_V547SERVERAUTOSWITCH547, false)
+        set(value) = prefs.edit().putBoolean(KEY_V547SERVERAUTOSWITCH547, value).apply()
+
+    var v547sessionAutoSave547: Boolean
+        get() = prefs.getBoolean(KEY_V547SESSIONAUTOSAVE547, false)
+        set(value) = prefs.edit().putBoolean(KEY_V547SESSIONAUTOSAVE547, value).apply()
+
+    var v547setAutoDefault547: Boolean
+        get() = prefs.getBoolean(KEY_V547SETAUTODEFAULT547, false)
+        set(value) = prefs.edit().putBoolean(KEY_V547SETAUTODEFAULT547, value).apply()
+
+    var v547shadowAutoDrop547: Boolean
+        get() = prefs.getBoolean(KEY_V547SHADOWAUTODROP547, false)
+        set(value) = prefs.edit().putBoolean(KEY_V547SHADOWAUTODROP547, value).apply()
+
+    var v547shapeAutoDetect547: Boolean
+        get() = prefs.getBoolean(KEY_V547SHAPEAUTODETECT547, false)
+        set(value) = prefs.edit().putBoolean(KEY_V547SHAPEAUTODETECT547, value).apply()
+
+    var v547sharpAutoAdjust547: Int
+        get() = prefs.getInt(KEY_V547SHARPAUTOADJUST547, 0)
+        set(value) = prefs.edit().putInt(KEY_V547SHARPAUTOADJUST547, value).apply()
+
+    var v547shellAutoExecute547: Boolean
+        get() = prefs.getBoolean(KEY_V547SHELLAUTOEXECUTE547, false)
+        set(value) = prefs.edit().putBoolean(KEY_V547SHELLAUTOEXECUTE547, value).apply()
+
+    var v547shiftAutoOffset547: Boolean
+        get() = prefs.getBoolean(KEY_V547SHIFTAUTOOFFSET547, false)
+        set(value) = prefs.edit().putBoolean(KEY_V547SHIFTAUTOOFFSET547, value).apply()
+
+    var v547shortCutAutoBind547: Boolean
+        get() = prefs.getBoolean(KEY_V547SHORTCUTAUTOBIND547, false)
+        set(value) = prefs.edit().putBoolean(KEY_V547SHORTCUTAUTOBIND547, value).apply()
+
+    var v547showAutoToggle547: Boolean
+        get() = prefs.getBoolean(KEY_V547SHOWAUTOTOGGLE547, false)
+        set(value) = prefs.edit().putBoolean(KEY_V547SHOWAUTOTOGGLE547, value).apply()
+
+    var v547shuffleAutoSeed547: Boolean
+        get() = prefs.getBoolean(KEY_V547SHUFFLEAUTOSEED547, false)
+        set(value) = prefs.edit().putBoolean(KEY_V547SHUFFLEAUTOSEED547, value).apply()
+
+    var v547signalAutoBoost547: Boolean
+        get() = prefs.getBoolean(KEY_V547SIGNALAUTOBOOST547, false)
+        set(value) = prefs.edit().putBoolean(KEY_V547SIGNALAUTOBOOST547, value).apply()
+
+    var v547singleInstanceMode547: Boolean
+        get() = prefs.getBoolean(KEY_V547SINGLEINSTANCEMODE547, false)
+        set(value) = prefs.edit().putBoolean(KEY_V547SINGLEINSTANCEMODE547, value).apply()
+
+    var v548sendAutoConfirm548: Boolean
+        get() = prefs.getBoolean(KEY_V548SENDAUTOCONFIRM548, false)
+        set(value) = prefs.edit().putBoolean(KEY_V548SENDAUTOCONFIRM548, value).apply()
+
+    var v548sensorAutoCalibrate548: Boolean
+        get() = prefs.getBoolean(KEY_V548SENSORAUTOCALIBRATE548, false)
+        set(value) = prefs.edit().putBoolean(KEY_V548SENSORAUTOCALIBRATE548, value).apply()
+
+    var v548serverAutoSwitch548: Boolean
+        get() = prefs.getBoolean(KEY_V548SERVERAUTOSWITCH548, false)
+        set(value) = prefs.edit().putBoolean(KEY_V548SERVERAUTOSWITCH548, value).apply()
+
+    var v548sessionAutoSave548: Boolean
+        get() = prefs.getBoolean(KEY_V548SESSIONAUTOSAVE548, false)
+        set(value) = prefs.edit().putBoolean(KEY_V548SESSIONAUTOSAVE548, value).apply()
+
+    var v548setAutoDefault548: Boolean
+        get() = prefs.getBoolean(KEY_V548SETAUTODEFAULT548, false)
+        set(value) = prefs.edit().putBoolean(KEY_V548SETAUTODEFAULT548, value).apply()
+
+    var v548shadowAutoDrop548: Boolean
+        get() = prefs.getBoolean(KEY_V548SHADOWAUTODROP548, false)
+        set(value) = prefs.edit().putBoolean(KEY_V548SHADOWAUTODROP548, value).apply()
+
+    var v548shapeAutoDetect548: Boolean
+        get() = prefs.getBoolean(KEY_V548SHAPEAUTODETECT548, false)
+        set(value) = prefs.edit().putBoolean(KEY_V548SHAPEAUTODETECT548, value).apply()
+
+    var v548sharpAutoAdjust548: Int
+        get() = prefs.getInt(KEY_V548SHARPAUTOADJUST548, 0)
+        set(value) = prefs.edit().putInt(KEY_V548SHARPAUTOADJUST548, value).apply()
+
+    var v548shellAutoExecute548: Boolean
+        get() = prefs.getBoolean(KEY_V548SHELLAUTOEXECUTE548, false)
+        set(value) = prefs.edit().putBoolean(KEY_V548SHELLAUTOEXECUTE548, value).apply()
+
+    var v548shiftAutoOffset548: Boolean
+        get() = prefs.getBoolean(KEY_V548SHIFTAUTOOFFSET548, false)
+        set(value) = prefs.edit().putBoolean(KEY_V548SHIFTAUTOOFFSET548, value).apply()
+
+    var v548shortCutAutoBind548: Boolean
+        get() = prefs.getBoolean(KEY_V548SHORTCUTAUTOBIND548, false)
+        set(value) = prefs.edit().putBoolean(KEY_V548SHORTCUTAUTOBIND548, value).apply()
+
+    var v548showAutoToggle548: Boolean
+        get() = prefs.getBoolean(KEY_V548SHOWAUTOTOGGLE548, false)
+        set(value) = prefs.edit().putBoolean(KEY_V548SHOWAUTOTOGGLE548, value).apply()
+
+    var v548shuffleAutoSeed548: Boolean
+        get() = prefs.getBoolean(KEY_V548SHUFFLEAUTOSEED548, false)
+        set(value) = prefs.edit().putBoolean(KEY_V548SHUFFLEAUTOSEED548, value).apply()
+
+    var v548signalAutoBoost548: Boolean
+        get() = prefs.getBoolean(KEY_V548SIGNALAUTOBOOST548, false)
+        set(value) = prefs.edit().putBoolean(KEY_V548SIGNALAUTOBOOST548, value).apply()
+
+    var v548singleInstanceMode548: Boolean
+        get() = prefs.getBoolean(KEY_V548SINGLEINSTANCEMODE548, false)
+        set(value) = prefs.edit().putBoolean(KEY_V548SINGLEINSTANCEMODE548, value).apply()
+
+    var v549sendAutoConfirm549: Boolean
+        get() = prefs.getBoolean(KEY_V549SENDAUTOCONFIRM549, false)
+        set(value) = prefs.edit().putBoolean(KEY_V549SENDAUTOCONFIRM549, value).apply()
+
+    var v549sensorAutoCalibrate549: Boolean
+        get() = prefs.getBoolean(KEY_V549SENSORAUTOCALIBRATE549, false)
+        set(value) = prefs.edit().putBoolean(KEY_V549SENSORAUTOCALIBRATE549, value).apply()
+
+    var v549serverAutoSwitch549: Boolean
+        get() = prefs.getBoolean(KEY_V549SERVERAUTOSWITCH549, false)
+        set(value) = prefs.edit().putBoolean(KEY_V549SERVERAUTOSWITCH549, value).apply()
+
+    var v549sessionAutoSave549: Boolean
+        get() = prefs.getBoolean(KEY_V549SESSIONAUTOSAVE549, false)
+        set(value) = prefs.edit().putBoolean(KEY_V549SESSIONAUTOSAVE549, value).apply()
+
+    var v549setAutoDefault549: Boolean
+        get() = prefs.getBoolean(KEY_V549SETAUTODEFAULT549, false)
+        set(value) = prefs.edit().putBoolean(KEY_V549SETAUTODEFAULT549, value).apply()
+
+    var v549shadowAutoDrop549: Boolean
+        get() = prefs.getBoolean(KEY_V549SHADOWAUTODROP549, false)
+        set(value) = prefs.edit().putBoolean(KEY_V549SHADOWAUTODROP549, value).apply()
+
+    var v549shapeAutoDetect549: Boolean
+        get() = prefs.getBoolean(KEY_V549SHAPEAUTODETECT549, false)
+        set(value) = prefs.edit().putBoolean(KEY_V549SHAPEAUTODETECT549, value).apply()
+
+    var v549sharpAutoAdjust549: Int
+        get() = prefs.getInt(KEY_V549SHARPAUTOADJUST549, 0)
+        set(value) = prefs.edit().putInt(KEY_V549SHARPAUTOADJUST549, value).apply()
+
+    var v549shellAutoExecute549: Boolean
+        get() = prefs.getBoolean(KEY_V549SHELLAUTOEXECUTE549, false)
+        set(value) = prefs.edit().putBoolean(KEY_V549SHELLAUTOEXECUTE549, value).apply()
+
+    var v549shiftAutoOffset549: Boolean
+        get() = prefs.getBoolean(KEY_V549SHIFTAUTOOFFSET549, false)
+        set(value) = prefs.edit().putBoolean(KEY_V549SHIFTAUTOOFFSET549, value).apply()
+
+    var v549shortCutAutoBind549: Boolean
+        get() = prefs.getBoolean(KEY_V549SHORTCUTAUTOBIND549, false)
+        set(value) = prefs.edit().putBoolean(KEY_V549SHORTCUTAUTOBIND549, value).apply()
+
+    var v549showAutoToggle549: Boolean
+        get() = prefs.getBoolean(KEY_V549SHOWAUTOTOGGLE549, false)
+        set(value) = prefs.edit().putBoolean(KEY_V549SHOWAUTOTOGGLE549, value).apply()
+
+    var v549shuffleAutoSeed549: Boolean
+        get() = prefs.getBoolean(KEY_V549SHUFFLEAUTOSEED549, false)
+        set(value) = prefs.edit().putBoolean(KEY_V549SHUFFLEAUTOSEED549, value).apply()
+
+    var v549signalAutoBoost549: Boolean
+        get() = prefs.getBoolean(KEY_V549SIGNALAUTOBOOST549, false)
+        set(value) = prefs.edit().putBoolean(KEY_V549SIGNALAUTOBOOST549, value).apply()
+
+    var v549singleInstanceMode549: Boolean
+        get() = prefs.getBoolean(KEY_V549SINGLEINSTANCEMODE549, false)
+        set(value) = prefs.edit().putBoolean(KEY_V549SINGLEINSTANCEMODE549, value).apply()
+
+    var v550sendAutoConfirm550: Boolean
+        get() = prefs.getBoolean(KEY_V550SENDAUTOCONFIRM550, false)
+        set(value) = prefs.edit().putBoolean(KEY_V550SENDAUTOCONFIRM550, value).apply()
+
+    var v550sensorAutoCalibrate550: Boolean
+        get() = prefs.getBoolean(KEY_V550SENSORAUTOCALIBRATE550, false)
+        set(value) = prefs.edit().putBoolean(KEY_V550SENSORAUTOCALIBRATE550, value).apply()
+
+    var v550serverAutoSwitch550: Boolean
+        get() = prefs.getBoolean(KEY_V550SERVERAUTOSWITCH550, false)
+        set(value) = prefs.edit().putBoolean(KEY_V550SERVERAUTOSWITCH550, value).apply()
+
+    var v550sessionAutoSave550: Boolean
+        get() = prefs.getBoolean(KEY_V550SESSIONAUTOSAVE550, false)
+        set(value) = prefs.edit().putBoolean(KEY_V550SESSIONAUTOSAVE550, value).apply()
+
+    var v550setAutoDefault550: Boolean
+        get() = prefs.getBoolean(KEY_V550SETAUTODEFAULT550, false)
+        set(value) = prefs.edit().putBoolean(KEY_V550SETAUTODEFAULT550, value).apply()
+
+    var v550shadowAutoDrop550: Boolean
+        get() = prefs.getBoolean(KEY_V550SHADOWAUTODROP550, false)
+        set(value) = prefs.edit().putBoolean(KEY_V550SHADOWAUTODROP550, value).apply()
+
+    var v550shapeAutoDetect550: Boolean
+        get() = prefs.getBoolean(KEY_V550SHAPEAUTODETECT550, false)
+        set(value) = prefs.edit().putBoolean(KEY_V550SHAPEAUTODETECT550, value).apply()
+
+    var v550sharpAutoAdjust550: Int
+        get() = prefs.getInt(KEY_V550SHARPAUTOADJUST550, 0)
+        set(value) = prefs.edit().putInt(KEY_V550SHARPAUTOADJUST550, value).apply()
+
+    var v550shellAutoExecute550: Boolean
+        get() = prefs.getBoolean(KEY_V550SHELLAUTOEXECUTE550, false)
+        set(value) = prefs.edit().putBoolean(KEY_V550SHELLAUTOEXECUTE550, value).apply()
+
+    var v550shiftAutoOffset550: Boolean
+        get() = prefs.getBoolean(KEY_V550SHIFTAUTOOFFSET550, false)
+        set(value) = prefs.edit().putBoolean(KEY_V550SHIFTAUTOOFFSET550, value).apply()
+
+    var v550shortCutAutoBind550: Boolean
+        get() = prefs.getBoolean(KEY_V550SHORTCUTAUTOBIND550, false)
+        set(value) = prefs.edit().putBoolean(KEY_V550SHORTCUTAUTOBIND550, value).apply()
+
+    var v550showAutoToggle550: Boolean
+        get() = prefs.getBoolean(KEY_V550SHOWAUTOTOGGLE550, false)
+        set(value) = prefs.edit().putBoolean(KEY_V550SHOWAUTOTOGGLE550, value).apply()
+
+    var v550shuffleAutoSeed550: Boolean
+        get() = prefs.getBoolean(KEY_V550SHUFFLEAUTOSEED550, false)
+        set(value) = prefs.edit().putBoolean(KEY_V550SHUFFLEAUTOSEED550, value).apply()
+
+    var v550signalAutoBoost550: Boolean
+        get() = prefs.getBoolean(KEY_V550SIGNALAUTOBOOST550, false)
+        set(value) = prefs.edit().putBoolean(KEY_V550SIGNALAUTOBOOST550, value).apply()
+
+    var v550singleInstanceMode550: Boolean
+        get() = prefs.getBoolean(KEY_V550SINGLEINSTANCEMODE550, false)
+        set(value) = prefs.edit().putBoolean(KEY_V550SINGLEINSTANCEMODE550, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -49930,5 +50530,155 @@ class AppPrefs(context: Context) {
         const val KEY_V540SECTIONAUTOGROUP540 = "v540sectionAutoGroup540" // v540 Section Auto Group540
         const val KEY_V540SEEKAUTOPRECISION540 = "v540seekAutoPrecision540" // v540 Seek Auto Precision540
         const val KEY_V540SELECTAUTOMULTI540 = "v540selectAutoMulti540" // v540 Select Auto Multi540
+        const val KEY_V541SENDAUTOCONFIRM541 = "v541sendAutoConfirm541" // v541 Send Auto Confirm541
+        const val KEY_V541SENSORAUTOCALIBRATE541 = "v541sensorAutoCalibrate541" // v541 Sensor Auto Calibrate541
+        const val KEY_V541SERVERAUTOSWITCH541 = "v541serverAutoSwitch541" // v541 Server Auto Switch541
+        const val KEY_V541SESSIONAUTOSAVE541 = "v541sessionAutoSave541" // v541 Session Auto Save541
+        const val KEY_V541SETAUTODEFAULT541 = "v541setAutoDefault541" // v541 Set Auto Default541
+        const val KEY_V541SHADOWAUTODROP541 = "v541shadowAutoDrop541" // v541 Shadow Auto Drop541
+        const val KEY_V541SHAPEAUTODETECT541 = "v541shapeAutoDetect541" // v541 Shape Auto Detect541
+        const val KEY_V541SHARPAUTOADJUST541 = "v541sharpAutoAdjust541" // v541 Sharp Auto Adjust541
+        const val KEY_V541SHELLAUTOEXECUTE541 = "v541shellAutoExecute541" // v541 Shell Auto Execute541
+        const val KEY_V541SHIFTAUTOOFFSET541 = "v541shiftAutoOffset541" // v541 Shift Auto Offset541
+        const val KEY_V541SHORTCUTAUTOBIND541 = "v541shortCutAutoBind541" // v541 Short Cut Auto Bind541
+        const val KEY_V541SHOWAUTOTOGGLE541 = "v541showAutoToggle541" // v541 Show Auto Toggle541
+        const val KEY_V541SHUFFLEAUTOSEED541 = "v541shuffleAutoSeed541" // v541 Shuffle Auto Seed541
+        const val KEY_V541SIGNALAUTOBOOST541 = "v541signalAutoBoost541" // v541 Signal Auto Boost541
+        const val KEY_V541SINGLEINSTANCEMODE541 = "v541singleInstanceMode541" // v541 Single Instance Mode541
+        const val KEY_V542SENDAUTOCONFIRM542 = "v542sendAutoConfirm542" // v542 Send Auto Confirm542
+        const val KEY_V542SENSORAUTOCALIBRATE542 = "v542sensorAutoCalibrate542" // v542 Sensor Auto Calibrate542
+        const val KEY_V542SERVERAUTOSWITCH542 = "v542serverAutoSwitch542" // v542 Server Auto Switch542
+        const val KEY_V542SESSIONAUTOSAVE542 = "v542sessionAutoSave542" // v542 Session Auto Save542
+        const val KEY_V542SETAUTODEFAULT542 = "v542setAutoDefault542" // v542 Set Auto Default542
+        const val KEY_V542SHADOWAUTODROP542 = "v542shadowAutoDrop542" // v542 Shadow Auto Drop542
+        const val KEY_V542SHAPEAUTODETECT542 = "v542shapeAutoDetect542" // v542 Shape Auto Detect542
+        const val KEY_V542SHARPAUTOADJUST542 = "v542sharpAutoAdjust542" // v542 Sharp Auto Adjust542
+        const val KEY_V542SHELLAUTOEXECUTE542 = "v542shellAutoExecute542" // v542 Shell Auto Execute542
+        const val KEY_V542SHIFTAUTOOFFSET542 = "v542shiftAutoOffset542" // v542 Shift Auto Offset542
+        const val KEY_V542SHORTCUTAUTOBIND542 = "v542shortCutAutoBind542" // v542 Short Cut Auto Bind542
+        const val KEY_V542SHOWAUTOTOGGLE542 = "v542showAutoToggle542" // v542 Show Auto Toggle542
+        const val KEY_V542SHUFFLEAUTOSEED542 = "v542shuffleAutoSeed542" // v542 Shuffle Auto Seed542
+        const val KEY_V542SIGNALAUTOBOOST542 = "v542signalAutoBoost542" // v542 Signal Auto Boost542
+        const val KEY_V542SINGLEINSTANCEMODE542 = "v542singleInstanceMode542" // v542 Single Instance Mode542
+        const val KEY_V543SENDAUTOCONFIRM543 = "v543sendAutoConfirm543" // v543 Send Auto Confirm543
+        const val KEY_V543SENSORAUTOCALIBRATE543 = "v543sensorAutoCalibrate543" // v543 Sensor Auto Calibrate543
+        const val KEY_V543SERVERAUTOSWITCH543 = "v543serverAutoSwitch543" // v543 Server Auto Switch543
+        const val KEY_V543SESSIONAUTOSAVE543 = "v543sessionAutoSave543" // v543 Session Auto Save543
+        const val KEY_V543SETAUTODEFAULT543 = "v543setAutoDefault543" // v543 Set Auto Default543
+        const val KEY_V543SHADOWAUTODROP543 = "v543shadowAutoDrop543" // v543 Shadow Auto Drop543
+        const val KEY_V543SHAPEAUTODETECT543 = "v543shapeAutoDetect543" // v543 Shape Auto Detect543
+        const val KEY_V543SHARPAUTOADJUST543 = "v543sharpAutoAdjust543" // v543 Sharp Auto Adjust543
+        const val KEY_V543SHELLAUTOEXECUTE543 = "v543shellAutoExecute543" // v543 Shell Auto Execute543
+        const val KEY_V543SHIFTAUTOOFFSET543 = "v543shiftAutoOffset543" // v543 Shift Auto Offset543
+        const val KEY_V543SHORTCUTAUTOBIND543 = "v543shortCutAutoBind543" // v543 Short Cut Auto Bind543
+        const val KEY_V543SHOWAUTOTOGGLE543 = "v543showAutoToggle543" // v543 Show Auto Toggle543
+        const val KEY_V543SHUFFLEAUTOSEED543 = "v543shuffleAutoSeed543" // v543 Shuffle Auto Seed543
+        const val KEY_V543SIGNALAUTOBOOST543 = "v543signalAutoBoost543" // v543 Signal Auto Boost543
+        const val KEY_V543SINGLEINSTANCEMODE543 = "v543singleInstanceMode543" // v543 Single Instance Mode543
+        const val KEY_V544SENDAUTOCONFIRM544 = "v544sendAutoConfirm544" // v544 Send Auto Confirm544
+        const val KEY_V544SENSORAUTOCALIBRATE544 = "v544sensorAutoCalibrate544" // v544 Sensor Auto Calibrate544
+        const val KEY_V544SERVERAUTOSWITCH544 = "v544serverAutoSwitch544" // v544 Server Auto Switch544
+        const val KEY_V544SESSIONAUTOSAVE544 = "v544sessionAutoSave544" // v544 Session Auto Save544
+        const val KEY_V544SETAUTODEFAULT544 = "v544setAutoDefault544" // v544 Set Auto Default544
+        const val KEY_V544SHADOWAUTODROP544 = "v544shadowAutoDrop544" // v544 Shadow Auto Drop544
+        const val KEY_V544SHAPEAUTODETECT544 = "v544shapeAutoDetect544" // v544 Shape Auto Detect544
+        const val KEY_V544SHARPAUTOADJUST544 = "v544sharpAutoAdjust544" // v544 Sharp Auto Adjust544
+        const val KEY_V544SHELLAUTOEXECUTE544 = "v544shellAutoExecute544" // v544 Shell Auto Execute544
+        const val KEY_V544SHIFTAUTOOFFSET544 = "v544shiftAutoOffset544" // v544 Shift Auto Offset544
+        const val KEY_V544SHORTCUTAUTOBIND544 = "v544shortCutAutoBind544" // v544 Short Cut Auto Bind544
+        const val KEY_V544SHOWAUTOTOGGLE544 = "v544showAutoToggle544" // v544 Show Auto Toggle544
+        const val KEY_V544SHUFFLEAUTOSEED544 = "v544shuffleAutoSeed544" // v544 Shuffle Auto Seed544
+        const val KEY_V544SIGNALAUTOBOOST544 = "v544signalAutoBoost544" // v544 Signal Auto Boost544
+        const val KEY_V544SINGLEINSTANCEMODE544 = "v544singleInstanceMode544" // v544 Single Instance Mode544
+        const val KEY_V545SENDAUTOCONFIRM545 = "v545sendAutoConfirm545" // v545 Send Auto Confirm545
+        const val KEY_V545SENSORAUTOCALIBRATE545 = "v545sensorAutoCalibrate545" // v545 Sensor Auto Calibrate545
+        const val KEY_V545SERVERAUTOSWITCH545 = "v545serverAutoSwitch545" // v545 Server Auto Switch545
+        const val KEY_V545SESSIONAUTOSAVE545 = "v545sessionAutoSave545" // v545 Session Auto Save545
+        const val KEY_V545SETAUTODEFAULT545 = "v545setAutoDefault545" // v545 Set Auto Default545
+        const val KEY_V545SHADOWAUTODROP545 = "v545shadowAutoDrop545" // v545 Shadow Auto Drop545
+        const val KEY_V545SHAPEAUTODETECT545 = "v545shapeAutoDetect545" // v545 Shape Auto Detect545
+        const val KEY_V545SHARPAUTOADJUST545 = "v545sharpAutoAdjust545" // v545 Sharp Auto Adjust545
+        const val KEY_V545SHELLAUTOEXECUTE545 = "v545shellAutoExecute545" // v545 Shell Auto Execute545
+        const val KEY_V545SHIFTAUTOOFFSET545 = "v545shiftAutoOffset545" // v545 Shift Auto Offset545
+        const val KEY_V545SHORTCUTAUTOBIND545 = "v545shortCutAutoBind545" // v545 Short Cut Auto Bind545
+        const val KEY_V545SHOWAUTOTOGGLE545 = "v545showAutoToggle545" // v545 Show Auto Toggle545
+        const val KEY_V545SHUFFLEAUTOSEED545 = "v545shuffleAutoSeed545" // v545 Shuffle Auto Seed545
+        const val KEY_V545SIGNALAUTOBOOST545 = "v545signalAutoBoost545" // v545 Signal Auto Boost545
+        const val KEY_V545SINGLEINSTANCEMODE545 = "v545singleInstanceMode545" // v545 Single Instance Mode545
+        const val KEY_V546SENDAUTOCONFIRM546 = "v546sendAutoConfirm546" // v546 Send Auto Confirm546
+        const val KEY_V546SENSORAUTOCALIBRATE546 = "v546sensorAutoCalibrate546" // v546 Sensor Auto Calibrate546
+        const val KEY_V546SERVERAUTOSWITCH546 = "v546serverAutoSwitch546" // v546 Server Auto Switch546
+        const val KEY_V546SESSIONAUTOSAVE546 = "v546sessionAutoSave546" // v546 Session Auto Save546
+        const val KEY_V546SETAUTODEFAULT546 = "v546setAutoDefault546" // v546 Set Auto Default546
+        const val KEY_V546SHADOWAUTODROP546 = "v546shadowAutoDrop546" // v546 Shadow Auto Drop546
+        const val KEY_V546SHAPEAUTODETECT546 = "v546shapeAutoDetect546" // v546 Shape Auto Detect546
+        const val KEY_V546SHARPAUTOADJUST546 = "v546sharpAutoAdjust546" // v546 Sharp Auto Adjust546
+        const val KEY_V546SHELLAUTOEXECUTE546 = "v546shellAutoExecute546" // v546 Shell Auto Execute546
+        const val KEY_V546SHIFTAUTOOFFSET546 = "v546shiftAutoOffset546" // v546 Shift Auto Offset546
+        const val KEY_V546SHORTCUTAUTOBIND546 = "v546shortCutAutoBind546" // v546 Short Cut Auto Bind546
+        const val KEY_V546SHOWAUTOTOGGLE546 = "v546showAutoToggle546" // v546 Show Auto Toggle546
+        const val KEY_V546SHUFFLEAUTOSEED546 = "v546shuffleAutoSeed546" // v546 Shuffle Auto Seed546
+        const val KEY_V546SIGNALAUTOBOOST546 = "v546signalAutoBoost546" // v546 Signal Auto Boost546
+        const val KEY_V546SINGLEINSTANCEMODE546 = "v546singleInstanceMode546" // v546 Single Instance Mode546
+        const val KEY_V547SENDAUTOCONFIRM547 = "v547sendAutoConfirm547" // v547 Send Auto Confirm547
+        const val KEY_V547SENSORAUTOCALIBRATE547 = "v547sensorAutoCalibrate547" // v547 Sensor Auto Calibrate547
+        const val KEY_V547SERVERAUTOSWITCH547 = "v547serverAutoSwitch547" // v547 Server Auto Switch547
+        const val KEY_V547SESSIONAUTOSAVE547 = "v547sessionAutoSave547" // v547 Session Auto Save547
+        const val KEY_V547SETAUTODEFAULT547 = "v547setAutoDefault547" // v547 Set Auto Default547
+        const val KEY_V547SHADOWAUTODROP547 = "v547shadowAutoDrop547" // v547 Shadow Auto Drop547
+        const val KEY_V547SHAPEAUTODETECT547 = "v547shapeAutoDetect547" // v547 Shape Auto Detect547
+        const val KEY_V547SHARPAUTOADJUST547 = "v547sharpAutoAdjust547" // v547 Sharp Auto Adjust547
+        const val KEY_V547SHELLAUTOEXECUTE547 = "v547shellAutoExecute547" // v547 Shell Auto Execute547
+        const val KEY_V547SHIFTAUTOOFFSET547 = "v547shiftAutoOffset547" // v547 Shift Auto Offset547
+        const val KEY_V547SHORTCUTAUTOBIND547 = "v547shortCutAutoBind547" // v547 Short Cut Auto Bind547
+        const val KEY_V547SHOWAUTOTOGGLE547 = "v547showAutoToggle547" // v547 Show Auto Toggle547
+        const val KEY_V547SHUFFLEAUTOSEED547 = "v547shuffleAutoSeed547" // v547 Shuffle Auto Seed547
+        const val KEY_V547SIGNALAUTOBOOST547 = "v547signalAutoBoost547" // v547 Signal Auto Boost547
+        const val KEY_V547SINGLEINSTANCEMODE547 = "v547singleInstanceMode547" // v547 Single Instance Mode547
+        const val KEY_V548SENDAUTOCONFIRM548 = "v548sendAutoConfirm548" // v548 Send Auto Confirm548
+        const val KEY_V548SENSORAUTOCALIBRATE548 = "v548sensorAutoCalibrate548" // v548 Sensor Auto Calibrate548
+        const val KEY_V548SERVERAUTOSWITCH548 = "v548serverAutoSwitch548" // v548 Server Auto Switch548
+        const val KEY_V548SESSIONAUTOSAVE548 = "v548sessionAutoSave548" // v548 Session Auto Save548
+        const val KEY_V548SETAUTODEFAULT548 = "v548setAutoDefault548" // v548 Set Auto Default548
+        const val KEY_V548SHADOWAUTODROP548 = "v548shadowAutoDrop548" // v548 Shadow Auto Drop548
+        const val KEY_V548SHAPEAUTODETECT548 = "v548shapeAutoDetect548" // v548 Shape Auto Detect548
+        const val KEY_V548SHARPAUTOADJUST548 = "v548sharpAutoAdjust548" // v548 Sharp Auto Adjust548
+        const val KEY_V548SHELLAUTOEXECUTE548 = "v548shellAutoExecute548" // v548 Shell Auto Execute548
+        const val KEY_V548SHIFTAUTOOFFSET548 = "v548shiftAutoOffset548" // v548 Shift Auto Offset548
+        const val KEY_V548SHORTCUTAUTOBIND548 = "v548shortCutAutoBind548" // v548 Short Cut Auto Bind548
+        const val KEY_V548SHOWAUTOTOGGLE548 = "v548showAutoToggle548" // v548 Show Auto Toggle548
+        const val KEY_V548SHUFFLEAUTOSEED548 = "v548shuffleAutoSeed548" // v548 Shuffle Auto Seed548
+        const val KEY_V548SIGNALAUTOBOOST548 = "v548signalAutoBoost548" // v548 Signal Auto Boost548
+        const val KEY_V548SINGLEINSTANCEMODE548 = "v548singleInstanceMode548" // v548 Single Instance Mode548
+        const val KEY_V549SENDAUTOCONFIRM549 = "v549sendAutoConfirm549" // v549 Send Auto Confirm549
+        const val KEY_V549SENSORAUTOCALIBRATE549 = "v549sensorAutoCalibrate549" // v549 Sensor Auto Calibrate549
+        const val KEY_V549SERVERAUTOSWITCH549 = "v549serverAutoSwitch549" // v549 Server Auto Switch549
+        const val KEY_V549SESSIONAUTOSAVE549 = "v549sessionAutoSave549" // v549 Session Auto Save549
+        const val KEY_V549SETAUTODEFAULT549 = "v549setAutoDefault549" // v549 Set Auto Default549
+        const val KEY_V549SHADOWAUTODROP549 = "v549shadowAutoDrop549" // v549 Shadow Auto Drop549
+        const val KEY_V549SHAPEAUTODETECT549 = "v549shapeAutoDetect549" // v549 Shape Auto Detect549
+        const val KEY_V549SHARPAUTOADJUST549 = "v549sharpAutoAdjust549" // v549 Sharp Auto Adjust549
+        const val KEY_V549SHELLAUTOEXECUTE549 = "v549shellAutoExecute549" // v549 Shell Auto Execute549
+        const val KEY_V549SHIFTAUTOOFFSET549 = "v549shiftAutoOffset549" // v549 Shift Auto Offset549
+        const val KEY_V549SHORTCUTAUTOBIND549 = "v549shortCutAutoBind549" // v549 Short Cut Auto Bind549
+        const val KEY_V549SHOWAUTOTOGGLE549 = "v549showAutoToggle549" // v549 Show Auto Toggle549
+        const val KEY_V549SHUFFLEAUTOSEED549 = "v549shuffleAutoSeed549" // v549 Shuffle Auto Seed549
+        const val KEY_V549SIGNALAUTOBOOST549 = "v549signalAutoBoost549" // v549 Signal Auto Boost549
+        const val KEY_V549SINGLEINSTANCEMODE549 = "v549singleInstanceMode549" // v549 Single Instance Mode549
+        const val KEY_V550SENDAUTOCONFIRM550 = "v550sendAutoConfirm550" // v550 Send Auto Confirm550
+        const val KEY_V550SENSORAUTOCALIBRATE550 = "v550sensorAutoCalibrate550" // v550 Sensor Auto Calibrate550
+        const val KEY_V550SERVERAUTOSWITCH550 = "v550serverAutoSwitch550" // v550 Server Auto Switch550
+        const val KEY_V550SESSIONAUTOSAVE550 = "v550sessionAutoSave550" // v550 Session Auto Save550
+        const val KEY_V550SETAUTODEFAULT550 = "v550setAutoDefault550" // v550 Set Auto Default550
+        const val KEY_V550SHADOWAUTODROP550 = "v550shadowAutoDrop550" // v550 Shadow Auto Drop550
+        const val KEY_V550SHAPEAUTODETECT550 = "v550shapeAutoDetect550" // v550 Shape Auto Detect550
+        const val KEY_V550SHARPAUTOADJUST550 = "v550sharpAutoAdjust550" // v550 Sharp Auto Adjust550
+        const val KEY_V550SHELLAUTOEXECUTE550 = "v550shellAutoExecute550" // v550 Shell Auto Execute550
+        const val KEY_V550SHIFTAUTOOFFSET550 = "v550shiftAutoOffset550" // v550 Shift Auto Offset550
+        const val KEY_V550SHORTCUTAUTOBIND550 = "v550shortCutAutoBind550" // v550 Short Cut Auto Bind550
+        const val KEY_V550SHOWAUTOTOGGLE550 = "v550showAutoToggle550" // v550 Show Auto Toggle550
+        const val KEY_V550SHUFFLEAUTOSEED550 = "v550shuffleAutoSeed550" // v550 Shuffle Auto Seed550
+        const val KEY_V550SIGNALAUTOBOOST550 = "v550signalAutoBoost550" // v550 Signal Auto Boost550
+        const val KEY_V550SINGLEINSTANCEMODE550 = "v550singleInstanceMode550" // v550 Single Instance Mode550
     }
 }
