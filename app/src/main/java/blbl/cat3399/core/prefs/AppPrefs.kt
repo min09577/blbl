@@ -45848,6 +45848,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V650CLASSAUTOLOAD650, false)
         set(value) = prefs.edit().putBoolean(KEY_V650CLASSAUTOLOAD650, value).apply()
 
+    var v651cloneAutoProfile651: Boolean
+        get() = prefs.getBoolean(KEY_V651CLONEAUTOPROFILE651, false)
+        set(value) = prefs.edit().putBoolean(KEY_V651CLONEAUTOPROFILE651, value).apply()
+
+    var v651closeAutoSave651: Boolean
+        get() = prefs.getBoolean(KEY_V651CLOSEAUTOSAVE651, false)
+        set(value) = prefs.edit().putBoolean(KEY_V651CLOSEAUTOSAVE651, value).apply()
+
+    var v651clusterAutoGroup651: Boolean
+        get() = prefs.getBoolean(KEY_V651CLUSTERAUTOGROUP651, false)
+        set(value) = prefs.edit().putBoolean(KEY_V651CLUSTERAUTOGROUP651, value).apply()
+
+    var v651codeAutoHighlight651: Boolean
+        get() = prefs.getBoolean(KEY_V651CODEAUTOHIGHLIGHT651, false)
+        set(value) = prefs.edit().putBoolean(KEY_V651CODEAUTOHIGHLIGHT651, value).apply()
+
+    var v651collapseAutoFold651: Boolean
+        get() = prefs.getBoolean(KEY_V651COLLAPSEAUTOFOLD651, false)
+        set(value) = prefs.edit().putBoolean(KEY_V651COLLAPSEAUTOFOLD651, value).apply()
+
+    var v651columnAutoResize651: Boolean
+        get() = prefs.getBoolean(KEY_V651COLUMNAUTORESIZE651, false)
+        set(value) = prefs.edit().putBoolean(KEY_V651COLUMNAUTORESIZE651, value).apply()
+
+    var v651combineAutoMerge651: Boolean
+        get() = prefs.getBoolean(KEY_V651COMBINEAUTOMERGE651, false)
+        set(value) = prefs.edit().putBoolean(KEY_V651COMBINEAUTOMERGE651, value).apply()
+
+    var v651commandAutoExec651: Boolean
+        get() = prefs.getBoolean(KEY_V651COMMANDAUTOEXEC651, false)
+        set(value) = prefs.edit().putBoolean(KEY_V651COMMANDAUTOEXEC651, value).apply()
+
+    var v651commitAutoPush651: Boolean
+        get() = prefs.getBoolean(KEY_V651COMMITAUTOPUSH651, false)
+        set(value) = prefs.edit().putBoolean(KEY_V651COMMITAUTOPUSH651, value).apply()
+
+    var v651compareAutoDiff651: Int
+        get() = prefs.getInt(KEY_V651COMPAREAUTODIFF651, 0)
+        set(value) = prefs.edit().putInt(KEY_V651COMPAREAUTODIFF651, value).apply()
+
+    var v651compileAutoBuild651: Boolean
+        get() = prefs.getBoolean(KEY_V651COMPILEAUTOBUILD651, false)
+        set(value) = prefs.edit().putBoolean(KEY_V651COMPILEAUTOBUILD651, value).apply()
+
+    var v651componentAutoLoad651: Boolean
+        get() = prefs.getBoolean(KEY_V651COMPONENTAUTOLOAD651, false)
+        set(value) = prefs.edit().putBoolean(KEY_V651COMPONENTAUTOLOAD651, value).apply()
+
+    var v651computeAutoCalc651: Boolean
+        get() = prefs.getBoolean(KEY_V651COMPUTEAUTOCALC651, false)
+        set(value) = prefs.edit().putBoolean(KEY_V651COMPUTEAUTOCALC651, value).apply()
+
+    var v651concatAutoJoin651: Boolean
+        get() = prefs.getBoolean(KEY_V651CONCATAUTOJOIN651, false)
+        set(value) = prefs.edit().putBoolean(KEY_V651CONCATAUTOJOIN651, value).apply()
+
+    var v651conditionAutoEval651: Boolean
+        get() = prefs.getBoolean(KEY_V651CONDITIONAUTOEVAL651, false)
+        set(value) = prefs.edit().putBoolean(KEY_V651CONDITIONAUTOEVAL651, value).apply()
+
+    var v652cloneAutoProfile652: Boolean
+        get() = prefs.getBoolean(KEY_V652CLONEAUTOPROFILE652, false)
+        set(value) = prefs.edit().putBoolean(KEY_V652CLONEAUTOPROFILE652, value).apply()
+
+    var v652closeAutoSave652: Boolean
+        get() = prefs.getBoolean(KEY_V652CLOSEAUTOSAVE652, false)
+        set(value) = prefs.edit().putBoolean(KEY_V652CLOSEAUTOSAVE652, value).apply()
+
+    var v652clusterAutoGroup652: Boolean
+        get() = prefs.getBoolean(KEY_V652CLUSTERAUTOGROUP652, false)
+        set(value) = prefs.edit().putBoolean(KEY_V652CLUSTERAUTOGROUP652, value).apply()
+
+    var v652codeAutoHighlight652: Boolean
+        get() = prefs.getBoolean(KEY_V652CODEAUTOHIGHLIGHT652, false)
+        set(value) = prefs.edit().putBoolean(KEY_V652CODEAUTOHIGHLIGHT652, value).apply()
+
+    var v652collapseAutoFold652: Boolean
+        get() = prefs.getBoolean(KEY_V652COLLAPSEAUTOFOLD652, false)
+        set(value) = prefs.edit().putBoolean(KEY_V652COLLAPSEAUTOFOLD652, value).apply()
+
+    var v652columnAutoResize652: Boolean
+        get() = prefs.getBoolean(KEY_V652COLUMNAUTORESIZE652, false)
+        set(value) = prefs.edit().putBoolean(KEY_V652COLUMNAUTORESIZE652, value).apply()
+
+    var v652combineAutoMerge652: Boolean
+        get() = prefs.getBoolean(KEY_V652COMBINEAUTOMERGE652, false)
+        set(value) = prefs.edit().putBoolean(KEY_V652COMBINEAUTOMERGE652, value).apply()
+
+    var v652commandAutoExec652: Boolean
+        get() = prefs.getBoolean(KEY_V652COMMANDAUTOEXEC652, false)
+        set(value) = prefs.edit().putBoolean(KEY_V652COMMANDAUTOEXEC652, value).apply()
+
+    var v652commitAutoPush652: Boolean
+        get() = prefs.getBoolean(KEY_V652COMMITAUTOPUSH652, false)
+        set(value) = prefs.edit().putBoolean(KEY_V652COMMITAUTOPUSH652, value).apply()
+
+    var v652compareAutoDiff652: Int
+        get() = prefs.getInt(KEY_V652COMPAREAUTODIFF652, 0)
+        set(value) = prefs.edit().putInt(KEY_V652COMPAREAUTODIFF652, value).apply()
+
+    var v652compileAutoBuild652: Boolean
+        get() = prefs.getBoolean(KEY_V652COMPILEAUTOBUILD652, false)
+        set(value) = prefs.edit().putBoolean(KEY_V652COMPILEAUTOBUILD652, value).apply()
+
+    var v652componentAutoLoad652: Boolean
+        get() = prefs.getBoolean(KEY_V652COMPONENTAUTOLOAD652, false)
+        set(value) = prefs.edit().putBoolean(KEY_V652COMPONENTAUTOLOAD652, value).apply()
+
+    var v652computeAutoCalc652: Boolean
+        get() = prefs.getBoolean(KEY_V652COMPUTEAUTOCALC652, false)
+        set(value) = prefs.edit().putBoolean(KEY_V652COMPUTEAUTOCALC652, value).apply()
+
+    var v652concatAutoJoin652: Boolean
+        get() = prefs.getBoolean(KEY_V652CONCATAUTOJOIN652, false)
+        set(value) = prefs.edit().putBoolean(KEY_V652CONCATAUTOJOIN652, value).apply()
+
+    var v652conditionAutoEval652: Boolean
+        get() = prefs.getBoolean(KEY_V652CONDITIONAUTOEVAL652, false)
+        set(value) = prefs.edit().putBoolean(KEY_V652CONDITIONAUTOEVAL652, value).apply()
+
+    var v653cloneAutoProfile653: Boolean
+        get() = prefs.getBoolean(KEY_V653CLONEAUTOPROFILE653, false)
+        set(value) = prefs.edit().putBoolean(KEY_V653CLONEAUTOPROFILE653, value).apply()
+
+    var v653closeAutoSave653: Boolean
+        get() = prefs.getBoolean(KEY_V653CLOSEAUTOSAVE653, false)
+        set(value) = prefs.edit().putBoolean(KEY_V653CLOSEAUTOSAVE653, value).apply()
+
+    var v653clusterAutoGroup653: Boolean
+        get() = prefs.getBoolean(KEY_V653CLUSTERAUTOGROUP653, false)
+        set(value) = prefs.edit().putBoolean(KEY_V653CLUSTERAUTOGROUP653, value).apply()
+
+    var v653codeAutoHighlight653: Boolean
+        get() = prefs.getBoolean(KEY_V653CODEAUTOHIGHLIGHT653, false)
+        set(value) = prefs.edit().putBoolean(KEY_V653CODEAUTOHIGHLIGHT653, value).apply()
+
+    var v653collapseAutoFold653: Boolean
+        get() = prefs.getBoolean(KEY_V653COLLAPSEAUTOFOLD653, false)
+        set(value) = prefs.edit().putBoolean(KEY_V653COLLAPSEAUTOFOLD653, value).apply()
+
+    var v653columnAutoResize653: Boolean
+        get() = prefs.getBoolean(KEY_V653COLUMNAUTORESIZE653, false)
+        set(value) = prefs.edit().putBoolean(KEY_V653COLUMNAUTORESIZE653, value).apply()
+
+    var v653combineAutoMerge653: Boolean
+        get() = prefs.getBoolean(KEY_V653COMBINEAUTOMERGE653, false)
+        set(value) = prefs.edit().putBoolean(KEY_V653COMBINEAUTOMERGE653, value).apply()
+
+    var v653commandAutoExec653: Boolean
+        get() = prefs.getBoolean(KEY_V653COMMANDAUTOEXEC653, false)
+        set(value) = prefs.edit().putBoolean(KEY_V653COMMANDAUTOEXEC653, value).apply()
+
+    var v653commitAutoPush653: Boolean
+        get() = prefs.getBoolean(KEY_V653COMMITAUTOPUSH653, false)
+        set(value) = prefs.edit().putBoolean(KEY_V653COMMITAUTOPUSH653, value).apply()
+
+    var v653compareAutoDiff653: Int
+        get() = prefs.getInt(KEY_V653COMPAREAUTODIFF653, 0)
+        set(value) = prefs.edit().putInt(KEY_V653COMPAREAUTODIFF653, value).apply()
+
+    var v653compileAutoBuild653: Boolean
+        get() = prefs.getBoolean(KEY_V653COMPILEAUTOBUILD653, false)
+        set(value) = prefs.edit().putBoolean(KEY_V653COMPILEAUTOBUILD653, value).apply()
+
+    var v653componentAutoLoad653: Boolean
+        get() = prefs.getBoolean(KEY_V653COMPONENTAUTOLOAD653, false)
+        set(value) = prefs.edit().putBoolean(KEY_V653COMPONENTAUTOLOAD653, value).apply()
+
+    var v653computeAutoCalc653: Boolean
+        get() = prefs.getBoolean(KEY_V653COMPUTEAUTOCALC653, false)
+        set(value) = prefs.edit().putBoolean(KEY_V653COMPUTEAUTOCALC653, value).apply()
+
+    var v653concatAutoJoin653: Boolean
+        get() = prefs.getBoolean(KEY_V653CONCATAUTOJOIN653, false)
+        set(value) = prefs.edit().putBoolean(KEY_V653CONCATAUTOJOIN653, value).apply()
+
+    var v653conditionAutoEval653: Boolean
+        get() = prefs.getBoolean(KEY_V653CONDITIONAUTOEVAL653, false)
+        set(value) = prefs.edit().putBoolean(KEY_V653CONDITIONAUTOEVAL653, value).apply()
+
+    var v654cloneAutoProfile654: Boolean
+        get() = prefs.getBoolean(KEY_V654CLONEAUTOPROFILE654, false)
+        set(value) = prefs.edit().putBoolean(KEY_V654CLONEAUTOPROFILE654, value).apply()
+
+    var v654closeAutoSave654: Boolean
+        get() = prefs.getBoolean(KEY_V654CLOSEAUTOSAVE654, false)
+        set(value) = prefs.edit().putBoolean(KEY_V654CLOSEAUTOSAVE654, value).apply()
+
+    var v654clusterAutoGroup654: Boolean
+        get() = prefs.getBoolean(KEY_V654CLUSTERAUTOGROUP654, false)
+        set(value) = prefs.edit().putBoolean(KEY_V654CLUSTERAUTOGROUP654, value).apply()
+
+    var v654codeAutoHighlight654: Boolean
+        get() = prefs.getBoolean(KEY_V654CODEAUTOHIGHLIGHT654, false)
+        set(value) = prefs.edit().putBoolean(KEY_V654CODEAUTOHIGHLIGHT654, value).apply()
+
+    var v654collapseAutoFold654: Boolean
+        get() = prefs.getBoolean(KEY_V654COLLAPSEAUTOFOLD654, false)
+        set(value) = prefs.edit().putBoolean(KEY_V654COLLAPSEAUTOFOLD654, value).apply()
+
+    var v654columnAutoResize654: Boolean
+        get() = prefs.getBoolean(KEY_V654COLUMNAUTORESIZE654, false)
+        set(value) = prefs.edit().putBoolean(KEY_V654COLUMNAUTORESIZE654, value).apply()
+
+    var v654combineAutoMerge654: Boolean
+        get() = prefs.getBoolean(KEY_V654COMBINEAUTOMERGE654, false)
+        set(value) = prefs.edit().putBoolean(KEY_V654COMBINEAUTOMERGE654, value).apply()
+
+    var v654commandAutoExec654: Boolean
+        get() = prefs.getBoolean(KEY_V654COMMANDAUTOEXEC654, false)
+        set(value) = prefs.edit().putBoolean(KEY_V654COMMANDAUTOEXEC654, value).apply()
+
+    var v654commitAutoPush654: Boolean
+        get() = prefs.getBoolean(KEY_V654COMMITAUTOPUSH654, false)
+        set(value) = prefs.edit().putBoolean(KEY_V654COMMITAUTOPUSH654, value).apply()
+
+    var v654compareAutoDiff654: Int
+        get() = prefs.getInt(KEY_V654COMPAREAUTODIFF654, 0)
+        set(value) = prefs.edit().putInt(KEY_V654COMPAREAUTODIFF654, value).apply()
+
+    var v654compileAutoBuild654: Boolean
+        get() = prefs.getBoolean(KEY_V654COMPILEAUTOBUILD654, false)
+        set(value) = prefs.edit().putBoolean(KEY_V654COMPILEAUTOBUILD654, value).apply()
+
+    var v654componentAutoLoad654: Boolean
+        get() = prefs.getBoolean(KEY_V654COMPONENTAUTOLOAD654, false)
+        set(value) = prefs.edit().putBoolean(KEY_V654COMPONENTAUTOLOAD654, value).apply()
+
+    var v654computeAutoCalc654: Boolean
+        get() = prefs.getBoolean(KEY_V654COMPUTEAUTOCALC654, false)
+        set(value) = prefs.edit().putBoolean(KEY_V654COMPUTEAUTOCALC654, value).apply()
+
+    var v654concatAutoJoin654: Boolean
+        get() = prefs.getBoolean(KEY_V654CONCATAUTOJOIN654, false)
+        set(value) = prefs.edit().putBoolean(KEY_V654CONCATAUTOJOIN654, value).apply()
+
+    var v654conditionAutoEval654: Boolean
+        get() = prefs.getBoolean(KEY_V654CONDITIONAUTOEVAL654, false)
+        set(value) = prefs.edit().putBoolean(KEY_V654CONDITIONAUTOEVAL654, value).apply()
+
+    var v655cloneAutoProfile655: Boolean
+        get() = prefs.getBoolean(KEY_V655CLONEAUTOPROFILE655, false)
+        set(value) = prefs.edit().putBoolean(KEY_V655CLONEAUTOPROFILE655, value).apply()
+
+    var v655closeAutoSave655: Boolean
+        get() = prefs.getBoolean(KEY_V655CLOSEAUTOSAVE655, false)
+        set(value) = prefs.edit().putBoolean(KEY_V655CLOSEAUTOSAVE655, value).apply()
+
+    var v655clusterAutoGroup655: Boolean
+        get() = prefs.getBoolean(KEY_V655CLUSTERAUTOGROUP655, false)
+        set(value) = prefs.edit().putBoolean(KEY_V655CLUSTERAUTOGROUP655, value).apply()
+
+    var v655codeAutoHighlight655: Boolean
+        get() = prefs.getBoolean(KEY_V655CODEAUTOHIGHLIGHT655, false)
+        set(value) = prefs.edit().putBoolean(KEY_V655CODEAUTOHIGHLIGHT655, value).apply()
+
+    var v655collapseAutoFold655: Boolean
+        get() = prefs.getBoolean(KEY_V655COLLAPSEAUTOFOLD655, false)
+        set(value) = prefs.edit().putBoolean(KEY_V655COLLAPSEAUTOFOLD655, value).apply()
+
+    var v655columnAutoResize655: Boolean
+        get() = prefs.getBoolean(KEY_V655COLUMNAUTORESIZE655, false)
+        set(value) = prefs.edit().putBoolean(KEY_V655COLUMNAUTORESIZE655, value).apply()
+
+    var v655combineAutoMerge655: Boolean
+        get() = prefs.getBoolean(KEY_V655COMBINEAUTOMERGE655, false)
+        set(value) = prefs.edit().putBoolean(KEY_V655COMBINEAUTOMERGE655, value).apply()
+
+    var v655commandAutoExec655: Boolean
+        get() = prefs.getBoolean(KEY_V655COMMANDAUTOEXEC655, false)
+        set(value) = prefs.edit().putBoolean(KEY_V655COMMANDAUTOEXEC655, value).apply()
+
+    var v655commitAutoPush655: Boolean
+        get() = prefs.getBoolean(KEY_V655COMMITAUTOPUSH655, false)
+        set(value) = prefs.edit().putBoolean(KEY_V655COMMITAUTOPUSH655, value).apply()
+
+    var v655compareAutoDiff655: Int
+        get() = prefs.getInt(KEY_V655COMPAREAUTODIFF655, 0)
+        set(value) = prefs.edit().putInt(KEY_V655COMPAREAUTODIFF655, value).apply()
+
+    var v655compileAutoBuild655: Boolean
+        get() = prefs.getBoolean(KEY_V655COMPILEAUTOBUILD655, false)
+        set(value) = prefs.edit().putBoolean(KEY_V655COMPILEAUTOBUILD655, value).apply()
+
+    var v655componentAutoLoad655: Boolean
+        get() = prefs.getBoolean(KEY_V655COMPONENTAUTOLOAD655, false)
+        set(value) = prefs.edit().putBoolean(KEY_V655COMPONENTAUTOLOAD655, value).apply()
+
+    var v655computeAutoCalc655: Boolean
+        get() = prefs.getBoolean(KEY_V655COMPUTEAUTOCALC655, false)
+        set(value) = prefs.edit().putBoolean(KEY_V655COMPUTEAUTOCALC655, value).apply()
+
+    var v655concatAutoJoin655: Boolean
+        get() = prefs.getBoolean(KEY_V655CONCATAUTOJOIN655, false)
+        set(value) = prefs.edit().putBoolean(KEY_V655CONCATAUTOJOIN655, value).apply()
+
+    var v655conditionAutoEval655: Boolean
+        get() = prefs.getBoolean(KEY_V655CONDITIONAUTOEVAL655, false)
+        set(value) = prefs.edit().putBoolean(KEY_V655CONDITIONAUTOEVAL655, value).apply()
+
+    var v656cloneAutoProfile656: Boolean
+        get() = prefs.getBoolean(KEY_V656CLONEAUTOPROFILE656, false)
+        set(value) = prefs.edit().putBoolean(KEY_V656CLONEAUTOPROFILE656, value).apply()
+
+    var v656closeAutoSave656: Boolean
+        get() = prefs.getBoolean(KEY_V656CLOSEAUTOSAVE656, false)
+        set(value) = prefs.edit().putBoolean(KEY_V656CLOSEAUTOSAVE656, value).apply()
+
+    var v656clusterAutoGroup656: Boolean
+        get() = prefs.getBoolean(KEY_V656CLUSTERAUTOGROUP656, false)
+        set(value) = prefs.edit().putBoolean(KEY_V656CLUSTERAUTOGROUP656, value).apply()
+
+    var v656codeAutoHighlight656: Boolean
+        get() = prefs.getBoolean(KEY_V656CODEAUTOHIGHLIGHT656, false)
+        set(value) = prefs.edit().putBoolean(KEY_V656CODEAUTOHIGHLIGHT656, value).apply()
+
+    var v656collapseAutoFold656: Boolean
+        get() = prefs.getBoolean(KEY_V656COLLAPSEAUTOFOLD656, false)
+        set(value) = prefs.edit().putBoolean(KEY_V656COLLAPSEAUTOFOLD656, value).apply()
+
+    var v656columnAutoResize656: Boolean
+        get() = prefs.getBoolean(KEY_V656COLUMNAUTORESIZE656, false)
+        set(value) = prefs.edit().putBoolean(KEY_V656COLUMNAUTORESIZE656, value).apply()
+
+    var v656combineAutoMerge656: Boolean
+        get() = prefs.getBoolean(KEY_V656COMBINEAUTOMERGE656, false)
+        set(value) = prefs.edit().putBoolean(KEY_V656COMBINEAUTOMERGE656, value).apply()
+
+    var v656commandAutoExec656: Boolean
+        get() = prefs.getBoolean(KEY_V656COMMANDAUTOEXEC656, false)
+        set(value) = prefs.edit().putBoolean(KEY_V656COMMANDAUTOEXEC656, value).apply()
+
+    var v656commitAutoPush656: Boolean
+        get() = prefs.getBoolean(KEY_V656COMMITAUTOPUSH656, false)
+        set(value) = prefs.edit().putBoolean(KEY_V656COMMITAUTOPUSH656, value).apply()
+
+    var v656compareAutoDiff656: Int
+        get() = prefs.getInt(KEY_V656COMPAREAUTODIFF656, 0)
+        set(value) = prefs.edit().putInt(KEY_V656COMPAREAUTODIFF656, value).apply()
+
+    var v656compileAutoBuild656: Boolean
+        get() = prefs.getBoolean(KEY_V656COMPILEAUTOBUILD656, false)
+        set(value) = prefs.edit().putBoolean(KEY_V656COMPILEAUTOBUILD656, value).apply()
+
+    var v656componentAutoLoad656: Boolean
+        get() = prefs.getBoolean(KEY_V656COMPONENTAUTOLOAD656, false)
+        set(value) = prefs.edit().putBoolean(KEY_V656COMPONENTAUTOLOAD656, value).apply()
+
+    var v656computeAutoCalc656: Boolean
+        get() = prefs.getBoolean(KEY_V656COMPUTEAUTOCALC656, false)
+        set(value) = prefs.edit().putBoolean(KEY_V656COMPUTEAUTOCALC656, value).apply()
+
+    var v656concatAutoJoin656: Boolean
+        get() = prefs.getBoolean(KEY_V656CONCATAUTOJOIN656, false)
+        set(value) = prefs.edit().putBoolean(KEY_V656CONCATAUTOJOIN656, value).apply()
+
+    var v656conditionAutoEval656: Boolean
+        get() = prefs.getBoolean(KEY_V656CONDITIONAUTOEVAL656, false)
+        set(value) = prefs.edit().putBoolean(KEY_V656CONDITIONAUTOEVAL656, value).apply()
+
+    var v657cloneAutoProfile657: Boolean
+        get() = prefs.getBoolean(KEY_V657CLONEAUTOPROFILE657, false)
+        set(value) = prefs.edit().putBoolean(KEY_V657CLONEAUTOPROFILE657, value).apply()
+
+    var v657closeAutoSave657: Boolean
+        get() = prefs.getBoolean(KEY_V657CLOSEAUTOSAVE657, false)
+        set(value) = prefs.edit().putBoolean(KEY_V657CLOSEAUTOSAVE657, value).apply()
+
+    var v657clusterAutoGroup657: Boolean
+        get() = prefs.getBoolean(KEY_V657CLUSTERAUTOGROUP657, false)
+        set(value) = prefs.edit().putBoolean(KEY_V657CLUSTERAUTOGROUP657, value).apply()
+
+    var v657codeAutoHighlight657: Boolean
+        get() = prefs.getBoolean(KEY_V657CODEAUTOHIGHLIGHT657, false)
+        set(value) = prefs.edit().putBoolean(KEY_V657CODEAUTOHIGHLIGHT657, value).apply()
+
+    var v657collapseAutoFold657: Boolean
+        get() = prefs.getBoolean(KEY_V657COLLAPSEAUTOFOLD657, false)
+        set(value) = prefs.edit().putBoolean(KEY_V657COLLAPSEAUTOFOLD657, value).apply()
+
+    var v657columnAutoResize657: Boolean
+        get() = prefs.getBoolean(KEY_V657COLUMNAUTORESIZE657, false)
+        set(value) = prefs.edit().putBoolean(KEY_V657COLUMNAUTORESIZE657, value).apply()
+
+    var v657combineAutoMerge657: Boolean
+        get() = prefs.getBoolean(KEY_V657COMBINEAUTOMERGE657, false)
+        set(value) = prefs.edit().putBoolean(KEY_V657COMBINEAUTOMERGE657, value).apply()
+
+    var v657commandAutoExec657: Boolean
+        get() = prefs.getBoolean(KEY_V657COMMANDAUTOEXEC657, false)
+        set(value) = prefs.edit().putBoolean(KEY_V657COMMANDAUTOEXEC657, value).apply()
+
+    var v657commitAutoPush657: Boolean
+        get() = prefs.getBoolean(KEY_V657COMMITAUTOPUSH657, false)
+        set(value) = prefs.edit().putBoolean(KEY_V657COMMITAUTOPUSH657, value).apply()
+
+    var v657compareAutoDiff657: Int
+        get() = prefs.getInt(KEY_V657COMPAREAUTODIFF657, 0)
+        set(value) = prefs.edit().putInt(KEY_V657COMPAREAUTODIFF657, value).apply()
+
+    var v657compileAutoBuild657: Boolean
+        get() = prefs.getBoolean(KEY_V657COMPILEAUTOBUILD657, false)
+        set(value) = prefs.edit().putBoolean(KEY_V657COMPILEAUTOBUILD657, value).apply()
+
+    var v657componentAutoLoad657: Boolean
+        get() = prefs.getBoolean(KEY_V657COMPONENTAUTOLOAD657, false)
+        set(value) = prefs.edit().putBoolean(KEY_V657COMPONENTAUTOLOAD657, value).apply()
+
+    var v657computeAutoCalc657: Boolean
+        get() = prefs.getBoolean(KEY_V657COMPUTEAUTOCALC657, false)
+        set(value) = prefs.edit().putBoolean(KEY_V657COMPUTEAUTOCALC657, value).apply()
+
+    var v657concatAutoJoin657: Boolean
+        get() = prefs.getBoolean(KEY_V657CONCATAUTOJOIN657, false)
+        set(value) = prefs.edit().putBoolean(KEY_V657CONCATAUTOJOIN657, value).apply()
+
+    var v657conditionAutoEval657: Boolean
+        get() = prefs.getBoolean(KEY_V657CONDITIONAUTOEVAL657, false)
+        set(value) = prefs.edit().putBoolean(KEY_V657CONDITIONAUTOEVAL657, value).apply()
+
+    var v658cloneAutoProfile658: Boolean
+        get() = prefs.getBoolean(KEY_V658CLONEAUTOPROFILE658, false)
+        set(value) = prefs.edit().putBoolean(KEY_V658CLONEAUTOPROFILE658, value).apply()
+
+    var v658closeAutoSave658: Boolean
+        get() = prefs.getBoolean(KEY_V658CLOSEAUTOSAVE658, false)
+        set(value) = prefs.edit().putBoolean(KEY_V658CLOSEAUTOSAVE658, value).apply()
+
+    var v658clusterAutoGroup658: Boolean
+        get() = prefs.getBoolean(KEY_V658CLUSTERAUTOGROUP658, false)
+        set(value) = prefs.edit().putBoolean(KEY_V658CLUSTERAUTOGROUP658, value).apply()
+
+    var v658codeAutoHighlight658: Boolean
+        get() = prefs.getBoolean(KEY_V658CODEAUTOHIGHLIGHT658, false)
+        set(value) = prefs.edit().putBoolean(KEY_V658CODEAUTOHIGHLIGHT658, value).apply()
+
+    var v658collapseAutoFold658: Boolean
+        get() = prefs.getBoolean(KEY_V658COLLAPSEAUTOFOLD658, false)
+        set(value) = prefs.edit().putBoolean(KEY_V658COLLAPSEAUTOFOLD658, value).apply()
+
+    var v658columnAutoResize658: Boolean
+        get() = prefs.getBoolean(KEY_V658COLUMNAUTORESIZE658, false)
+        set(value) = prefs.edit().putBoolean(KEY_V658COLUMNAUTORESIZE658, value).apply()
+
+    var v658combineAutoMerge658: Boolean
+        get() = prefs.getBoolean(KEY_V658COMBINEAUTOMERGE658, false)
+        set(value) = prefs.edit().putBoolean(KEY_V658COMBINEAUTOMERGE658, value).apply()
+
+    var v658commandAutoExec658: Boolean
+        get() = prefs.getBoolean(KEY_V658COMMANDAUTOEXEC658, false)
+        set(value) = prefs.edit().putBoolean(KEY_V658COMMANDAUTOEXEC658, value).apply()
+
+    var v658commitAutoPush658: Boolean
+        get() = prefs.getBoolean(KEY_V658COMMITAUTOPUSH658, false)
+        set(value) = prefs.edit().putBoolean(KEY_V658COMMITAUTOPUSH658, value).apply()
+
+    var v658compareAutoDiff658: Int
+        get() = prefs.getInt(KEY_V658COMPAREAUTODIFF658, 0)
+        set(value) = prefs.edit().putInt(KEY_V658COMPAREAUTODIFF658, value).apply()
+
+    var v658compileAutoBuild658: Boolean
+        get() = prefs.getBoolean(KEY_V658COMPILEAUTOBUILD658, false)
+        set(value) = prefs.edit().putBoolean(KEY_V658COMPILEAUTOBUILD658, value).apply()
+
+    var v658componentAutoLoad658: Boolean
+        get() = prefs.getBoolean(KEY_V658COMPONENTAUTOLOAD658, false)
+        set(value) = prefs.edit().putBoolean(KEY_V658COMPONENTAUTOLOAD658, value).apply()
+
+    var v658computeAutoCalc658: Boolean
+        get() = prefs.getBoolean(KEY_V658COMPUTEAUTOCALC658, false)
+        set(value) = prefs.edit().putBoolean(KEY_V658COMPUTEAUTOCALC658, value).apply()
+
+    var v658concatAutoJoin658: Boolean
+        get() = prefs.getBoolean(KEY_V658CONCATAUTOJOIN658, false)
+        set(value) = prefs.edit().putBoolean(KEY_V658CONCATAUTOJOIN658, value).apply()
+
+    var v658conditionAutoEval658: Boolean
+        get() = prefs.getBoolean(KEY_V658CONDITIONAUTOEVAL658, false)
+        set(value) = prefs.edit().putBoolean(KEY_V658CONDITIONAUTOEVAL658, value).apply()
+
+    var v659cloneAutoProfile659: Boolean
+        get() = prefs.getBoolean(KEY_V659CLONEAUTOPROFILE659, false)
+        set(value) = prefs.edit().putBoolean(KEY_V659CLONEAUTOPROFILE659, value).apply()
+
+    var v659closeAutoSave659: Boolean
+        get() = prefs.getBoolean(KEY_V659CLOSEAUTOSAVE659, false)
+        set(value) = prefs.edit().putBoolean(KEY_V659CLOSEAUTOSAVE659, value).apply()
+
+    var v659clusterAutoGroup659: Boolean
+        get() = prefs.getBoolean(KEY_V659CLUSTERAUTOGROUP659, false)
+        set(value) = prefs.edit().putBoolean(KEY_V659CLUSTERAUTOGROUP659, value).apply()
+
+    var v659codeAutoHighlight659: Boolean
+        get() = prefs.getBoolean(KEY_V659CODEAUTOHIGHLIGHT659, false)
+        set(value) = prefs.edit().putBoolean(KEY_V659CODEAUTOHIGHLIGHT659, value).apply()
+
+    var v659collapseAutoFold659: Boolean
+        get() = prefs.getBoolean(KEY_V659COLLAPSEAUTOFOLD659, false)
+        set(value) = prefs.edit().putBoolean(KEY_V659COLLAPSEAUTOFOLD659, value).apply()
+
+    var v659columnAutoResize659: Boolean
+        get() = prefs.getBoolean(KEY_V659COLUMNAUTORESIZE659, false)
+        set(value) = prefs.edit().putBoolean(KEY_V659COLUMNAUTORESIZE659, value).apply()
+
+    var v659combineAutoMerge659: Boolean
+        get() = prefs.getBoolean(KEY_V659COMBINEAUTOMERGE659, false)
+        set(value) = prefs.edit().putBoolean(KEY_V659COMBINEAUTOMERGE659, value).apply()
+
+    var v659commandAutoExec659: Boolean
+        get() = prefs.getBoolean(KEY_V659COMMANDAUTOEXEC659, false)
+        set(value) = prefs.edit().putBoolean(KEY_V659COMMANDAUTOEXEC659, value).apply()
+
+    var v659commitAutoPush659: Boolean
+        get() = prefs.getBoolean(KEY_V659COMMITAUTOPUSH659, false)
+        set(value) = prefs.edit().putBoolean(KEY_V659COMMITAUTOPUSH659, value).apply()
+
+    var v659compareAutoDiff659: Int
+        get() = prefs.getInt(KEY_V659COMPAREAUTODIFF659, 0)
+        set(value) = prefs.edit().putInt(KEY_V659COMPAREAUTODIFF659, value).apply()
+
+    var v659compileAutoBuild659: Boolean
+        get() = prefs.getBoolean(KEY_V659COMPILEAUTOBUILD659, false)
+        set(value) = prefs.edit().putBoolean(KEY_V659COMPILEAUTOBUILD659, value).apply()
+
+    var v659componentAutoLoad659: Boolean
+        get() = prefs.getBoolean(KEY_V659COMPONENTAUTOLOAD659, false)
+        set(value) = prefs.edit().putBoolean(KEY_V659COMPONENTAUTOLOAD659, value).apply()
+
+    var v659computeAutoCalc659: Boolean
+        get() = prefs.getBoolean(KEY_V659COMPUTEAUTOCALC659, false)
+        set(value) = prefs.edit().putBoolean(KEY_V659COMPUTEAUTOCALC659, value).apply()
+
+    var v659concatAutoJoin659: Boolean
+        get() = prefs.getBoolean(KEY_V659CONCATAUTOJOIN659, false)
+        set(value) = prefs.edit().putBoolean(KEY_V659CONCATAUTOJOIN659, value).apply()
+
+    var v659conditionAutoEval659: Boolean
+        get() = prefs.getBoolean(KEY_V659CONDITIONAUTOEVAL659, false)
+        set(value) = prefs.edit().putBoolean(KEY_V659CONDITIONAUTOEVAL659, value).apply()
+
+    var v660cloneAutoProfile660: Boolean
+        get() = prefs.getBoolean(KEY_V660CLONEAUTOPROFILE660, false)
+        set(value) = prefs.edit().putBoolean(KEY_V660CLONEAUTOPROFILE660, value).apply()
+
+    var v660closeAutoSave660: Boolean
+        get() = prefs.getBoolean(KEY_V660CLOSEAUTOSAVE660, false)
+        set(value) = prefs.edit().putBoolean(KEY_V660CLOSEAUTOSAVE660, value).apply()
+
+    var v660clusterAutoGroup660: Boolean
+        get() = prefs.getBoolean(KEY_V660CLUSTERAUTOGROUP660, false)
+        set(value) = prefs.edit().putBoolean(KEY_V660CLUSTERAUTOGROUP660, value).apply()
+
+    var v660codeAutoHighlight660: Boolean
+        get() = prefs.getBoolean(KEY_V660CODEAUTOHIGHLIGHT660, false)
+        set(value) = prefs.edit().putBoolean(KEY_V660CODEAUTOHIGHLIGHT660, value).apply()
+
+    var v660collapseAutoFold660: Boolean
+        get() = prefs.getBoolean(KEY_V660COLLAPSEAUTOFOLD660, false)
+        set(value) = prefs.edit().putBoolean(KEY_V660COLLAPSEAUTOFOLD660, value).apply()
+
+    var v660columnAutoResize660: Boolean
+        get() = prefs.getBoolean(KEY_V660COLUMNAUTORESIZE660, false)
+        set(value) = prefs.edit().putBoolean(KEY_V660COLUMNAUTORESIZE660, value).apply()
+
+    var v660combineAutoMerge660: Boolean
+        get() = prefs.getBoolean(KEY_V660COMBINEAUTOMERGE660, false)
+        set(value) = prefs.edit().putBoolean(KEY_V660COMBINEAUTOMERGE660, value).apply()
+
+    var v660commandAutoExec660: Boolean
+        get() = prefs.getBoolean(KEY_V660COMMANDAUTOEXEC660, false)
+        set(value) = prefs.edit().putBoolean(KEY_V660COMMANDAUTOEXEC660, value).apply()
+
+    var v660commitAutoPush660: Boolean
+        get() = prefs.getBoolean(KEY_V660COMMITAUTOPUSH660, false)
+        set(value) = prefs.edit().putBoolean(KEY_V660COMMITAUTOPUSH660, value).apply()
+
+    var v660compareAutoDiff660: Int
+        get() = prefs.getInt(KEY_V660COMPAREAUTODIFF660, 0)
+        set(value) = prefs.edit().putInt(KEY_V660COMPAREAUTODIFF660, value).apply()
+
+    var v660compileAutoBuild660: Boolean
+        get() = prefs.getBoolean(KEY_V660COMPILEAUTOBUILD660, false)
+        set(value) = prefs.edit().putBoolean(KEY_V660COMPILEAUTOBUILD660, value).apply()
+
+    var v660componentAutoLoad660: Boolean
+        get() = prefs.getBoolean(KEY_V660COMPONENTAUTOLOAD660, false)
+        set(value) = prefs.edit().putBoolean(KEY_V660COMPONENTAUTOLOAD660, value).apply()
+
+    var v660computeAutoCalc660: Boolean
+        get() = prefs.getBoolean(KEY_V660COMPUTEAUTOCALC660, false)
+        set(value) = prefs.edit().putBoolean(KEY_V660COMPUTEAUTOCALC660, value).apply()
+
+    var v660concatAutoJoin660: Boolean
+        get() = prefs.getBoolean(KEY_V660CONCATAUTOJOIN660, false)
+        set(value) = prefs.edit().putBoolean(KEY_V660CONCATAUTOJOIN660, value).apply()
+
+    var v660conditionAutoEval660: Boolean
+        get() = prefs.getBoolean(KEY_V660CONDITIONAUTOEVAL660, false)
+        set(value) = prefs.edit().putBoolean(KEY_V660CONDITIONAUTOEVAL660, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -58180,5 +58780,155 @@ class AppPrefs(context: Context) {
         const val KEY_V650CIRCLEAUTOCLIP650 = "v650circleAutoClip650" // v650 Circle Auto Clip650
         const val KEY_V650CLAMPAUTOVALUE650 = "v650clampAutoValue650" // v650 Clamp Auto Value650
         const val KEY_V650CLASSAUTOLOAD650 = "v650classAutoLoad650" // v650 Class Auto Load650
+        const val KEY_V651CLONEAUTOPROFILE651 = "v651cloneAutoProfile651" // v651 Clone Auto Profile651
+        const val KEY_V651CLOSEAUTOSAVE651 = "v651closeAutoSave651" // v651 Close Auto Save651
+        const val KEY_V651CLUSTERAUTOGROUP651 = "v651clusterAutoGroup651" // v651 Cluster Auto Group651
+        const val KEY_V651CODEAUTOHIGHLIGHT651 = "v651codeAutoHighlight651" // v651 Code Auto Highlight651
+        const val KEY_V651COLLAPSEAUTOFOLD651 = "v651collapseAutoFold651" // v651 Collapse Auto Fold651
+        const val KEY_V651COLUMNAUTORESIZE651 = "v651columnAutoResize651" // v651 Column Auto Resize651
+        const val KEY_V651COMBINEAUTOMERGE651 = "v651combineAutoMerge651" // v651 Combine Auto Merge651
+        const val KEY_V651COMMANDAUTOEXEC651 = "v651commandAutoExec651" // v651 Command Auto Exec651
+        const val KEY_V651COMMITAUTOPUSH651 = "v651commitAutoPush651" // v651 Commit Auto Push651
+        const val KEY_V651COMPAREAUTODIFF651 = "v651compareAutoDiff651" // v651 Compare Auto Diff651
+        const val KEY_V651COMPILEAUTOBUILD651 = "v651compileAutoBuild651" // v651 Compile Auto Build651
+        const val KEY_V651COMPONENTAUTOLOAD651 = "v651componentAutoLoad651" // v651 Component Auto Load651
+        const val KEY_V651COMPUTEAUTOCALC651 = "v651computeAutoCalc651" // v651 Compute Auto Calc651
+        const val KEY_V651CONCATAUTOJOIN651 = "v651concatAutoJoin651" // v651 Concat Auto Join651
+        const val KEY_V651CONDITIONAUTOEVAL651 = "v651conditionAutoEval651" // v651 Condition Auto Eval651
+        const val KEY_V652CLONEAUTOPROFILE652 = "v652cloneAutoProfile652" // v652 Clone Auto Profile652
+        const val KEY_V652CLOSEAUTOSAVE652 = "v652closeAutoSave652" // v652 Close Auto Save652
+        const val KEY_V652CLUSTERAUTOGROUP652 = "v652clusterAutoGroup652" // v652 Cluster Auto Group652
+        const val KEY_V652CODEAUTOHIGHLIGHT652 = "v652codeAutoHighlight652" // v652 Code Auto Highlight652
+        const val KEY_V652COLLAPSEAUTOFOLD652 = "v652collapseAutoFold652" // v652 Collapse Auto Fold652
+        const val KEY_V652COLUMNAUTORESIZE652 = "v652columnAutoResize652" // v652 Column Auto Resize652
+        const val KEY_V652COMBINEAUTOMERGE652 = "v652combineAutoMerge652" // v652 Combine Auto Merge652
+        const val KEY_V652COMMANDAUTOEXEC652 = "v652commandAutoExec652" // v652 Command Auto Exec652
+        const val KEY_V652COMMITAUTOPUSH652 = "v652commitAutoPush652" // v652 Commit Auto Push652
+        const val KEY_V652COMPAREAUTODIFF652 = "v652compareAutoDiff652" // v652 Compare Auto Diff652
+        const val KEY_V652COMPILEAUTOBUILD652 = "v652compileAutoBuild652" // v652 Compile Auto Build652
+        const val KEY_V652COMPONENTAUTOLOAD652 = "v652componentAutoLoad652" // v652 Component Auto Load652
+        const val KEY_V652COMPUTEAUTOCALC652 = "v652computeAutoCalc652" // v652 Compute Auto Calc652
+        const val KEY_V652CONCATAUTOJOIN652 = "v652concatAutoJoin652" // v652 Concat Auto Join652
+        const val KEY_V652CONDITIONAUTOEVAL652 = "v652conditionAutoEval652" // v652 Condition Auto Eval652
+        const val KEY_V653CLONEAUTOPROFILE653 = "v653cloneAutoProfile653" // v653 Clone Auto Profile653
+        const val KEY_V653CLOSEAUTOSAVE653 = "v653closeAutoSave653" // v653 Close Auto Save653
+        const val KEY_V653CLUSTERAUTOGROUP653 = "v653clusterAutoGroup653" // v653 Cluster Auto Group653
+        const val KEY_V653CODEAUTOHIGHLIGHT653 = "v653codeAutoHighlight653" // v653 Code Auto Highlight653
+        const val KEY_V653COLLAPSEAUTOFOLD653 = "v653collapseAutoFold653" // v653 Collapse Auto Fold653
+        const val KEY_V653COLUMNAUTORESIZE653 = "v653columnAutoResize653" // v653 Column Auto Resize653
+        const val KEY_V653COMBINEAUTOMERGE653 = "v653combineAutoMerge653" // v653 Combine Auto Merge653
+        const val KEY_V653COMMANDAUTOEXEC653 = "v653commandAutoExec653" // v653 Command Auto Exec653
+        const val KEY_V653COMMITAUTOPUSH653 = "v653commitAutoPush653" // v653 Commit Auto Push653
+        const val KEY_V653COMPAREAUTODIFF653 = "v653compareAutoDiff653" // v653 Compare Auto Diff653
+        const val KEY_V653COMPILEAUTOBUILD653 = "v653compileAutoBuild653" // v653 Compile Auto Build653
+        const val KEY_V653COMPONENTAUTOLOAD653 = "v653componentAutoLoad653" // v653 Component Auto Load653
+        const val KEY_V653COMPUTEAUTOCALC653 = "v653computeAutoCalc653" // v653 Compute Auto Calc653
+        const val KEY_V653CONCATAUTOJOIN653 = "v653concatAutoJoin653" // v653 Concat Auto Join653
+        const val KEY_V653CONDITIONAUTOEVAL653 = "v653conditionAutoEval653" // v653 Condition Auto Eval653
+        const val KEY_V654CLONEAUTOPROFILE654 = "v654cloneAutoProfile654" // v654 Clone Auto Profile654
+        const val KEY_V654CLOSEAUTOSAVE654 = "v654closeAutoSave654" // v654 Close Auto Save654
+        const val KEY_V654CLUSTERAUTOGROUP654 = "v654clusterAutoGroup654" // v654 Cluster Auto Group654
+        const val KEY_V654CODEAUTOHIGHLIGHT654 = "v654codeAutoHighlight654" // v654 Code Auto Highlight654
+        const val KEY_V654COLLAPSEAUTOFOLD654 = "v654collapseAutoFold654" // v654 Collapse Auto Fold654
+        const val KEY_V654COLUMNAUTORESIZE654 = "v654columnAutoResize654" // v654 Column Auto Resize654
+        const val KEY_V654COMBINEAUTOMERGE654 = "v654combineAutoMerge654" // v654 Combine Auto Merge654
+        const val KEY_V654COMMANDAUTOEXEC654 = "v654commandAutoExec654" // v654 Command Auto Exec654
+        const val KEY_V654COMMITAUTOPUSH654 = "v654commitAutoPush654" // v654 Commit Auto Push654
+        const val KEY_V654COMPAREAUTODIFF654 = "v654compareAutoDiff654" // v654 Compare Auto Diff654
+        const val KEY_V654COMPILEAUTOBUILD654 = "v654compileAutoBuild654" // v654 Compile Auto Build654
+        const val KEY_V654COMPONENTAUTOLOAD654 = "v654componentAutoLoad654" // v654 Component Auto Load654
+        const val KEY_V654COMPUTEAUTOCALC654 = "v654computeAutoCalc654" // v654 Compute Auto Calc654
+        const val KEY_V654CONCATAUTOJOIN654 = "v654concatAutoJoin654" // v654 Concat Auto Join654
+        const val KEY_V654CONDITIONAUTOEVAL654 = "v654conditionAutoEval654" // v654 Condition Auto Eval654
+        const val KEY_V655CLONEAUTOPROFILE655 = "v655cloneAutoProfile655" // v655 Clone Auto Profile655
+        const val KEY_V655CLOSEAUTOSAVE655 = "v655closeAutoSave655" // v655 Close Auto Save655
+        const val KEY_V655CLUSTERAUTOGROUP655 = "v655clusterAutoGroup655" // v655 Cluster Auto Group655
+        const val KEY_V655CODEAUTOHIGHLIGHT655 = "v655codeAutoHighlight655" // v655 Code Auto Highlight655
+        const val KEY_V655COLLAPSEAUTOFOLD655 = "v655collapseAutoFold655" // v655 Collapse Auto Fold655
+        const val KEY_V655COLUMNAUTORESIZE655 = "v655columnAutoResize655" // v655 Column Auto Resize655
+        const val KEY_V655COMBINEAUTOMERGE655 = "v655combineAutoMerge655" // v655 Combine Auto Merge655
+        const val KEY_V655COMMANDAUTOEXEC655 = "v655commandAutoExec655" // v655 Command Auto Exec655
+        const val KEY_V655COMMITAUTOPUSH655 = "v655commitAutoPush655" // v655 Commit Auto Push655
+        const val KEY_V655COMPAREAUTODIFF655 = "v655compareAutoDiff655" // v655 Compare Auto Diff655
+        const val KEY_V655COMPILEAUTOBUILD655 = "v655compileAutoBuild655" // v655 Compile Auto Build655
+        const val KEY_V655COMPONENTAUTOLOAD655 = "v655componentAutoLoad655" // v655 Component Auto Load655
+        const val KEY_V655COMPUTEAUTOCALC655 = "v655computeAutoCalc655" // v655 Compute Auto Calc655
+        const val KEY_V655CONCATAUTOJOIN655 = "v655concatAutoJoin655" // v655 Concat Auto Join655
+        const val KEY_V655CONDITIONAUTOEVAL655 = "v655conditionAutoEval655" // v655 Condition Auto Eval655
+        const val KEY_V656CLONEAUTOPROFILE656 = "v656cloneAutoProfile656" // v656 Clone Auto Profile656
+        const val KEY_V656CLOSEAUTOSAVE656 = "v656closeAutoSave656" // v656 Close Auto Save656
+        const val KEY_V656CLUSTERAUTOGROUP656 = "v656clusterAutoGroup656" // v656 Cluster Auto Group656
+        const val KEY_V656CODEAUTOHIGHLIGHT656 = "v656codeAutoHighlight656" // v656 Code Auto Highlight656
+        const val KEY_V656COLLAPSEAUTOFOLD656 = "v656collapseAutoFold656" // v656 Collapse Auto Fold656
+        const val KEY_V656COLUMNAUTORESIZE656 = "v656columnAutoResize656" // v656 Column Auto Resize656
+        const val KEY_V656COMBINEAUTOMERGE656 = "v656combineAutoMerge656" // v656 Combine Auto Merge656
+        const val KEY_V656COMMANDAUTOEXEC656 = "v656commandAutoExec656" // v656 Command Auto Exec656
+        const val KEY_V656COMMITAUTOPUSH656 = "v656commitAutoPush656" // v656 Commit Auto Push656
+        const val KEY_V656COMPAREAUTODIFF656 = "v656compareAutoDiff656" // v656 Compare Auto Diff656
+        const val KEY_V656COMPILEAUTOBUILD656 = "v656compileAutoBuild656" // v656 Compile Auto Build656
+        const val KEY_V656COMPONENTAUTOLOAD656 = "v656componentAutoLoad656" // v656 Component Auto Load656
+        const val KEY_V656COMPUTEAUTOCALC656 = "v656computeAutoCalc656" // v656 Compute Auto Calc656
+        const val KEY_V656CONCATAUTOJOIN656 = "v656concatAutoJoin656" // v656 Concat Auto Join656
+        const val KEY_V656CONDITIONAUTOEVAL656 = "v656conditionAutoEval656" // v656 Condition Auto Eval656
+        const val KEY_V657CLONEAUTOPROFILE657 = "v657cloneAutoProfile657" // v657 Clone Auto Profile657
+        const val KEY_V657CLOSEAUTOSAVE657 = "v657closeAutoSave657" // v657 Close Auto Save657
+        const val KEY_V657CLUSTERAUTOGROUP657 = "v657clusterAutoGroup657" // v657 Cluster Auto Group657
+        const val KEY_V657CODEAUTOHIGHLIGHT657 = "v657codeAutoHighlight657" // v657 Code Auto Highlight657
+        const val KEY_V657COLLAPSEAUTOFOLD657 = "v657collapseAutoFold657" // v657 Collapse Auto Fold657
+        const val KEY_V657COLUMNAUTORESIZE657 = "v657columnAutoResize657" // v657 Column Auto Resize657
+        const val KEY_V657COMBINEAUTOMERGE657 = "v657combineAutoMerge657" // v657 Combine Auto Merge657
+        const val KEY_V657COMMANDAUTOEXEC657 = "v657commandAutoExec657" // v657 Command Auto Exec657
+        const val KEY_V657COMMITAUTOPUSH657 = "v657commitAutoPush657" // v657 Commit Auto Push657
+        const val KEY_V657COMPAREAUTODIFF657 = "v657compareAutoDiff657" // v657 Compare Auto Diff657
+        const val KEY_V657COMPILEAUTOBUILD657 = "v657compileAutoBuild657" // v657 Compile Auto Build657
+        const val KEY_V657COMPONENTAUTOLOAD657 = "v657componentAutoLoad657" // v657 Component Auto Load657
+        const val KEY_V657COMPUTEAUTOCALC657 = "v657computeAutoCalc657" // v657 Compute Auto Calc657
+        const val KEY_V657CONCATAUTOJOIN657 = "v657concatAutoJoin657" // v657 Concat Auto Join657
+        const val KEY_V657CONDITIONAUTOEVAL657 = "v657conditionAutoEval657" // v657 Condition Auto Eval657
+        const val KEY_V658CLONEAUTOPROFILE658 = "v658cloneAutoProfile658" // v658 Clone Auto Profile658
+        const val KEY_V658CLOSEAUTOSAVE658 = "v658closeAutoSave658" // v658 Close Auto Save658
+        const val KEY_V658CLUSTERAUTOGROUP658 = "v658clusterAutoGroup658" // v658 Cluster Auto Group658
+        const val KEY_V658CODEAUTOHIGHLIGHT658 = "v658codeAutoHighlight658" // v658 Code Auto Highlight658
+        const val KEY_V658COLLAPSEAUTOFOLD658 = "v658collapseAutoFold658" // v658 Collapse Auto Fold658
+        const val KEY_V658COLUMNAUTORESIZE658 = "v658columnAutoResize658" // v658 Column Auto Resize658
+        const val KEY_V658COMBINEAUTOMERGE658 = "v658combineAutoMerge658" // v658 Combine Auto Merge658
+        const val KEY_V658COMMANDAUTOEXEC658 = "v658commandAutoExec658" // v658 Command Auto Exec658
+        const val KEY_V658COMMITAUTOPUSH658 = "v658commitAutoPush658" // v658 Commit Auto Push658
+        const val KEY_V658COMPAREAUTODIFF658 = "v658compareAutoDiff658" // v658 Compare Auto Diff658
+        const val KEY_V658COMPILEAUTOBUILD658 = "v658compileAutoBuild658" // v658 Compile Auto Build658
+        const val KEY_V658COMPONENTAUTOLOAD658 = "v658componentAutoLoad658" // v658 Component Auto Load658
+        const val KEY_V658COMPUTEAUTOCALC658 = "v658computeAutoCalc658" // v658 Compute Auto Calc658
+        const val KEY_V658CONCATAUTOJOIN658 = "v658concatAutoJoin658" // v658 Concat Auto Join658
+        const val KEY_V658CONDITIONAUTOEVAL658 = "v658conditionAutoEval658" // v658 Condition Auto Eval658
+        const val KEY_V659CLONEAUTOPROFILE659 = "v659cloneAutoProfile659" // v659 Clone Auto Profile659
+        const val KEY_V659CLOSEAUTOSAVE659 = "v659closeAutoSave659" // v659 Close Auto Save659
+        const val KEY_V659CLUSTERAUTOGROUP659 = "v659clusterAutoGroup659" // v659 Cluster Auto Group659
+        const val KEY_V659CODEAUTOHIGHLIGHT659 = "v659codeAutoHighlight659" // v659 Code Auto Highlight659
+        const val KEY_V659COLLAPSEAUTOFOLD659 = "v659collapseAutoFold659" // v659 Collapse Auto Fold659
+        const val KEY_V659COLUMNAUTORESIZE659 = "v659columnAutoResize659" // v659 Column Auto Resize659
+        const val KEY_V659COMBINEAUTOMERGE659 = "v659combineAutoMerge659" // v659 Combine Auto Merge659
+        const val KEY_V659COMMANDAUTOEXEC659 = "v659commandAutoExec659" // v659 Command Auto Exec659
+        const val KEY_V659COMMITAUTOPUSH659 = "v659commitAutoPush659" // v659 Commit Auto Push659
+        const val KEY_V659COMPAREAUTODIFF659 = "v659compareAutoDiff659" // v659 Compare Auto Diff659
+        const val KEY_V659COMPILEAUTOBUILD659 = "v659compileAutoBuild659" // v659 Compile Auto Build659
+        const val KEY_V659COMPONENTAUTOLOAD659 = "v659componentAutoLoad659" // v659 Component Auto Load659
+        const val KEY_V659COMPUTEAUTOCALC659 = "v659computeAutoCalc659" // v659 Compute Auto Calc659
+        const val KEY_V659CONCATAUTOJOIN659 = "v659concatAutoJoin659" // v659 Concat Auto Join659
+        const val KEY_V659CONDITIONAUTOEVAL659 = "v659conditionAutoEval659" // v659 Condition Auto Eval659
+        const val KEY_V660CLONEAUTOPROFILE660 = "v660cloneAutoProfile660" // v660 Clone Auto Profile660
+        const val KEY_V660CLOSEAUTOSAVE660 = "v660closeAutoSave660" // v660 Close Auto Save660
+        const val KEY_V660CLUSTERAUTOGROUP660 = "v660clusterAutoGroup660" // v660 Cluster Auto Group660
+        const val KEY_V660CODEAUTOHIGHLIGHT660 = "v660codeAutoHighlight660" // v660 Code Auto Highlight660
+        const val KEY_V660COLLAPSEAUTOFOLD660 = "v660collapseAutoFold660" // v660 Collapse Auto Fold660
+        const val KEY_V660COLUMNAUTORESIZE660 = "v660columnAutoResize660" // v660 Column Auto Resize660
+        const val KEY_V660COMBINEAUTOMERGE660 = "v660combineAutoMerge660" // v660 Combine Auto Merge660
+        const val KEY_V660COMMANDAUTOEXEC660 = "v660commandAutoExec660" // v660 Command Auto Exec660
+        const val KEY_V660COMMITAUTOPUSH660 = "v660commitAutoPush660" // v660 Commit Auto Push660
+        const val KEY_V660COMPAREAUTODIFF660 = "v660compareAutoDiff660" // v660 Compare Auto Diff660
+        const val KEY_V660COMPILEAUTOBUILD660 = "v660compileAutoBuild660" // v660 Compile Auto Build660
+        const val KEY_V660COMPONENTAUTOLOAD660 = "v660componentAutoLoad660" // v660 Component Auto Load660
+        const val KEY_V660COMPUTEAUTOCALC660 = "v660computeAutoCalc660" // v660 Compute Auto Calc660
+        const val KEY_V660CONCATAUTOJOIN660 = "v660concatAutoJoin660" // v660 Concat Auto Join660
+        const val KEY_V660CONDITIONAUTOEVAL660 = "v660conditionAutoEval660" // v660 Condition Auto Eval660
     }
 }
