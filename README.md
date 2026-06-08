@@ -118,7 +118,7 @@ This project is based on open-source software. All rights belong to the original
 ## 📋 更新日志 | Changelog | 変更履歴 | 변경 로그
 
 ### 最新版本 | Latest Version | 最新バージョン | 최신 버전
-- **v100.15** - 2026-06-07
+- **v110.15** - 2026-06-08
 
 ---
 
@@ -13177,6 +13177,947 @@ This project is based on open-source software. All rights belong to the original
 - ✅ 字幕アニメーションタイプ99
 - ✅ 자막 애니메이션 유형99
 
+
+### v101.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v101.1-v101.15 功能列表
+- ✅ Audio Spatial Width Custom, Danmaku Font Stretch Toggle, Subtitle Shadow Color Custom, Gesture Swipe Lock Horizontal, Cast Video HDR Mode, Playlist Auto Remove Watched, Cache Encrypt Toggle, Progress Bar Chapter Snap, Volume EQ Preset Custom, History Search Highlight, Playback Loop Segment AB, Screenshot Auto Crop, Video Edge Enhance Custom, Danmaku Font Glow Toggle, Subtitle Line Spacing
+
+### v101.1 音频空间宽度自定义 | Audio Spatial Width Custom | オーディオ空間幅カスタム | 오디오 공간 너비 사용자 정의
+- ✅ 音频空间宽度自定义
+- ✅ Audio Spatial Width Custom
+- ✅ オーディオ空間幅カスタム
+- ✅ 오디오 공간 너비 사용자 정의
+
+### v101.2 弹幕字体拉伸开关 | Danmaku Font Stretch Toggle | コメントフォントストレッチ切替 | 댓글 글꼴 스트레치 전환
+- ✅ 弹幕字体拉伸开关
+- ✅ Danmaku Font Stretch Toggle
+- ✅ コメントフォントストレッチ切替
+- ✅ 댓글 글꼴 스트레치 전환
+
+### v101.3 字幕阴影颜色自定义 | Subtitle Shadow Color Custom | 字幕シャドウ色カスタム | 자막 그림자 색상 사용자 정의
+- ✅ 字幕阴影颜色自定义
+- ✅ Subtitle Shadow Color Custom
+- ✅ 字幕シャドウ色カスタム
+- ✅ 자막 그림자 색상 사용자 정의
+
+### v101.4 手势滑动锁定水平 | Gesture Swipe Lock Horizontal | ジェスチャースワイプ水平ロック | 제스처 스와이프 수평 잠금
+- ✅ 手势滑动锁定水平
+- ✅ Gesture Swipe Lock Horizontal
+- ✅ ジェスチャースワイプ水平ロック
+- ✅ 제스처 스와이프 수평 잠금
+
+### v101.5 投射视频HDR模式 | Cast Video HDR Mode | キャストビデオHDRモード | 캐스트 비디오 HDR 모드
+- ✅ 投射视频HDR模式
+- ✅ Cast Video HDR Mode
+- ✅ キャストビデオHDRモード
+- ✅ 캐스트 비디오 HDR 모드
+
+### v101.6 播放列表自动移除已看 | Playlist Auto Remove Watched | プレイリスト自動視聴済み削除 | 재생 목록 자동 시청 완료 제거
+- ✅ 播放列表自动移除已看
+- ✅ Playlist Auto Remove Watched
+- ✅ プレイリスト自動視聴済み削除
+- ✅ 재생 목록 자동 시청 완료 제거
+
+### v101.7 缓存加密开关 | Cache Encrypt Toggle | キャッシュ暗号化切替 | 캐시 암호화 전환
+- ✅ 缓存加密开关
+- ✅ Cache Encrypt Toggle
+- ✅ キャッシュ暗号化切替
+- ✅ 캐시 암호화 전환
+
+### v101.8 进度条章节吸附 | Progress Bar Chapter Snap | プログレスバーチャプタースナップ | 진행 바 챕터 스냅
+- ✅ 进度条章节吸附
+- ✅ Progress Bar Chapter Snap
+- ✅ プログレスバーチャプタースナップ
+- ✅ 진행 바 챕터 스냅
+
+### v101.9 音量均衡器预设自定义 | Volume EQ Preset Custom | 音量EQプリセットカスタム | 볼륨 EQ 프리셋 사용자 정의
+- ✅ 音量均衡器预设自定义
+- ✅ Volume EQ Preset Custom
+- ✅ 音量EQプリセットカスタム
+- ✅ 볼륨 EQ 프리셋 사용자 정의
+
+### v101.10 历史记录搜索高亮 | History Search Highlight | 履歴検索ハイライト | 기록 검색 하이라이트
+- ✅ 历史记录搜索高亮
+- ✅ History Search Highlight
+- ✅ 履歴検索ハイライト
+- ✅ 기록 검색 하이라이트
+
+### v101.11 播放AB段循环 | Playback Loop Segment AB | 再生ABセグメントループ | 재생 AB 구간 반복
+- ✅ 播放AB段循环
+- ✅ Playback Loop Segment AB
+- ✅ 再生ABセグメントループ
+- ✅ 재생 AB 구간 반복
+
+### v101.12 截图自动裁剪 | Screenshot Auto Crop | スクリーンショット自動クロップ | 스크린샷 자동 크롭
+- ✅ 截图自动裁剪
+- ✅ Screenshot Auto Crop
+- ✅ スクリーンショット自動クロップ
+- ✅ 스크린샷 자동 크롭
+
+### v101.13 视频边缘增强自定义 | Video Edge Enhance Custom | ビデオエッジエンハンスカスタム | 비디오 엣지 강화 사용자 정의
+- ✅ 视频边缘增强自定义
+- ✅ Video Edge Enhance Custom
+- ✅ ビデオエッジエンハンスカスタム
+- ✅ 비디오 엣지 강화 사용자 정의
+
+### v101.14 弹幕字体发光开关 | Danmaku Font Glow Toggle | コメントフォントグロウ切替 | 댓글 글꼴 글로우 전환
+- ✅ 弹幕字体发光开关
+- ✅ Danmaku Font Glow Toggle
+- ✅ コメントフォントグロウ切替
+- ✅ 댓글 글꼴 글로우 전환
+
+### v101.15 字幕行间距 | Subtitle Line Spacing | 字幕行間隔 | 자막 줄 간격
+- ✅ 字幕行间距
+- ✅ Subtitle Line Spacing
+- ✅ 字幕行間隔
+- ✅ 자막 줄 간격
+
+### v102.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v102.1-v102.15 功能列表
+- ✅ Audio Bass Boost Custom, Danmaku Font Stroke Width, Subtitle Text Alignment, Gesture Swipe Lock Vertical, Cast Video AV Sync, Playlist Auto Reverse Order, Cache Auto Clear On Full, Progress Bar Buffer Show, Volume EQ Gain Preamp, History Pin Record Toggle, Playback Loop Segment Count, Screenshot Auto Rotate, Video Mosaic Effect Custom, Danmaku Font Glow Color, Subtitle Text Transform Custom
+
+### v102.1 音频低音增强自定义 | Audio Bass Boost Custom | オーディオバスブーストカスタム | 오디오 저음 강화 사용자 정의
+- ✅ 音频低音增强自定义
+- ✅ Audio Bass Boost Custom
+- ✅ オーディオバスブーストカスタム
+- ✅ 오디오 저음 강화 사용자 정의
+
+### v102.2 弹幕字体描边宽度 | Danmaku Font Stroke Width | コメントフォントストローク幅 | 댓글 글꼴 스트로크 너비
+- ✅ 弹幕字体描边宽度
+- ✅ Danmaku Font Stroke Width
+- ✅ コメントフォントストローク幅
+- ✅ 댓글 글꼴 스트로크 너비
+
+### v102.3 字幕文字对齐 | Subtitle Text Alignment | 字幕テキスト整列 | 자막 텍스트 정렬
+- ✅ 字幕文字对齐
+- ✅ Subtitle Text Alignment
+- ✅ 字幕テキスト整列
+- ✅ 자막 텍스트 정렬
+
+### v102.4 手势滑动锁定垂直 | Gesture Swipe Lock Vertical | ジェスチャースワイプ垂直ロック | 제스처 스와이프 수직 잠금
+- ✅ 手势滑动锁定垂直
+- ✅ Gesture Swipe Lock Vertical
+- ✅ ジェスチャースワイプ垂直ロック
+- ✅ 제스처 스와이프 수직 잠금
+
+### v102.5 投射视频音视频同步 | Cast Video AV Sync | キャストビデオAV同期 | 캐스트 비디오 AV 동기화
+- ✅ 投射视频音视频同步
+- ✅ Cast Video AV Sync
+- ✅ キャストビデオAV同期
+- ✅ 캐스트 비디오 AV 동기화
+
+### v102.6 播放列表自动反向排序 | Playlist Auto Reverse Order | プレイリスト自動逆順 | 재생 목록 자동 역순
+- ✅ 播放列表自动反向排序
+- ✅ Playlist Auto Reverse Order
+- ✅ プレイリスト自動逆順
+- ✅ 재생 목록 자동 역순
+
+### v102.7 缓存满时自动清理 | Cache Auto Clear On Full | キャッシュ満杯時自動クリア | 캐시 가득 찰 때 자동 정리
+- ✅ 缓存满时自动清理
+- ✅ Cache Auto Clear On Full
+- ✅ キャッシュ満杯時自動クリア
+- ✅ 캐시 가득 찰 때 자동 정리
+
+### v102.8 进度条缓冲显示 | Progress Bar Buffer Show | プログレスバーバッファ表示 | 진행 바 버퍼 표시
+- ✅ 进度条缓冲显示
+- ✅ Progress Bar Buffer Show
+- ✅ プログレスバーバッファ表示
+- ✅ 진행 바 버퍼 표시
+
+### v102.9 音量均衡器增益前置 | Volume EQ Gain Preamp | 音量EQゲインプリアンプ | 볼륨 EQ 게인 프리앰프
+- ✅ 音量均衡器增益前置
+- ✅ Volume EQ Gain Preamp
+- ✅ 音量EQゲインプリアンプ
+- ✅ 볼륨 EQ 게인 프리앰프
+
+### v102.10 历史记录固定记录开关 | History Pin Record Toggle | 履歴ピンレコード切替 | 기록 고정 기록 전환
+- ✅ 历史记录固定记录开关
+- ✅ History Pin Record Toggle
+- ✅ 履歴ピンレコード切替
+- ✅ 기록 고정 기록 전환
+
+### v102.11 播放循环段计数 | Playback Loop Segment Count | 再生ループセグメントカウント | 재생 반복 구간 카운트
+- ✅ 播放循环段计数
+- ✅ Playback Loop Segment Count
+- ✅ 再生ループセグメントカウント
+- ✅ 재생 반복 구간 카운트
+
+### v102.12 截图自动旋转 | Screenshot Auto Rotate | スクリーンショット自動回転 | 스크린샷 자동 회전
+- ✅ 截图自动旋转
+- ✅ Screenshot Auto Rotate
+- ✅ スクリーンショット自動回転
+- ✅ 스크린샷 자동 회전
+
+### v102.13 视频马赛克效果自定义 | Video Mosaic Effect Custom | ビデオモザイクエフェクトカスタム | 비디오 모자이크 효과 사용자 정의
+- ✅ 视频马赛克效果自定义
+- ✅ Video Mosaic Effect Custom
+- ✅ ビデオモザイクエフェクトカスタム
+- ✅ 비디오 모자이크 효과 사용자 정의
+
+### v102.14 弹幕字体发光颜色 | Danmaku Font Glow Color | コメントフォントグロウ色 | 댓글 글꼴 글로우 색상
+- ✅ 弹幕字体发光颜色
+- ✅ Danmaku Font Glow Color
+- ✅ コメントフォントグロウ色
+- ✅ 댓글 글꼴 글로우 색상
+
+### v102.15 字幕文字变换自定义 | Subtitle Text Transform Custom | 字幕テキスト変換カスタム | 자막 텍스트 변환 사용자 정의
+- ✅ 字幕文字变换自定义
+- ✅ Subtitle Text Transform Custom
+- ✅ 字幕テキスト変換カスタム
+- ✅ 자막 텍스트 변환 사용자 정의
+
+### v103.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v103.1-v103.15 功能列表
+- ✅ Audio Treble Boost Custom, Danmaku Font Glow Radius, Subtitle Font Variant Custom, Gesture Long Press Drag Action, Cast Video Bit Depth, Playlist Auto Skip Duplicate, Cache Thumbnail Preload, Progress Bar Live Edge Color, Volume Night Boost Toggle, History Undo Delete Toggle, Playback AB Loop Memory, Screenshot Auto Naming Scheme, Video Kaleidoscope Custom, Danmaku Font Glow Intensity, Subtitle Font Load Custom
+
+### v103.1 音频高音增强自定义 | Audio Treble Boost Custom | オーディオトレブルブーストカスタム | 오디오 고음 강화 사용자 정의
+- ✅ 音频高音增强自定义
+- ✅ Audio Treble Boost Custom
+- ✅ オーディオトレブルブーストカスタム
+- ✅ 오디오 고음 강화 사용자 정의
+
+### v103.2 弹幕字体发光半径 | Danmaku Font Glow Radius | コメントフォントグロウ半径 | 댓글 글꼴 글로우 반경
+- ✅ 弹幕字体发光半径
+- ✅ Danmaku Font Glow Radius
+- ✅ コメントフォントグロウ半径
+- ✅ 댓글 글꼴 글로우 반경
+
+### v103.3 字幕字体变体自定义 | Subtitle Font Variant Custom | 字幕フォントバリアントカスタム | 자막 글꼴 변형 사용자 정의
+- ✅ 字幕字体变体自定义
+- ✅ Subtitle Font Variant Custom
+- ✅ 字幕フォントバリアントカスタム
+- ✅ 자막 글꼴 변형 사용자 정의
+
+### v103.4 手势长按拖动动作 | Gesture Long Press Drag Action | ジェスチャー長押しドラッグアクション | 제스처 길게 누르기 드래그 동작
+- ✅ 手势长按拖动动作
+- ✅ Gesture Long Press Drag Action
+- ✅ ジェスチャー長押しドラッグアクション
+- ✅ 제스처 길게 누르기 드래그 동작
+
+### v103.5 投射视频位深度 | Cast Video Bit Depth | キャストビデオビット深度 | 캐스트 비디오 비트 깊이
+- ✅ 投射视频位深度
+- ✅ Cast Video Bit Depth
+- ✅ キャストビデオビット深度
+- ✅ 캐스트 비디오 비트 깊이
+
+### v103.6 播放列表自动跳过重复 | Playlist Auto Skip Duplicate | プレイリスト自動重複スキップ | 재생 목록 자동 중복 건너뛰기
+- ✅ 播放列表自动跳过重复
+- ✅ Playlist Auto Skip Duplicate
+- ✅ プレイリスト自動重複スキップ
+- ✅ 재생 목록 자동 중복 건너뛰기
+
+### v103.7 缓存缩略图预加载 | Cache Thumbnail Preload | キャッシュサムネイルプリロード | 캐시 썸네일 프리로드
+- ✅ 缓存缩略图预加载
+- ✅ Cache Thumbnail Preload
+- ✅ キャッシュサムネイルプリロード
+- ✅ 캐시 썸네일 프리로드
+
+### v103.8 进度条直播边缘颜色 | Progress Bar Live Edge Color | プログレスバーライブエッジ色 | 진행 바 라이브 엣지 색상
+- ✅ 进度条直播边缘颜色
+- ✅ Progress Bar Live Edge Color
+- ✅ プログレスバーライブエッジ色
+- ✅ 진행 바 라이브 엣지 색상
+
+### v103.9 音量夜间增强开关 | Volume Night Boost Toggle | 音量ナイトブースト切替 | 볼륨 나이트 부스트 전환
+- ✅ 音量夜间增强开关
+- ✅ Volume Night Boost Toggle
+- ✅ 音量ナイトブースト切替
+- ✅ 볼륨 나이트 부스트 전환
+
+### v103.10 历史记录撤销删除开关 | History Undo Delete Toggle | 履歴削除取り消し切替 | 기록 삭제 실행 취소 전환
+- ✅ 历史记录撤销删除开关
+- ✅ History Undo Delete Toggle
+- ✅ 履歴削除取り消し切替
+- ✅ 기록 삭제 실행 취소 전환
+
+### v103.11 播放AB循环记忆 | Playback AB Loop Memory | 再生ABループメモリ | 재생 AB 반복 기억
+- ✅ 播放AB循环记忆
+- ✅ Playback AB Loop Memory
+- ✅ 再生ABループメモリ
+- ✅ 재생 AB 반복 기억
+
+### v103.12 截图自动命名方案 | Screenshot Auto Naming Scheme | スクリーンショット自動命名スキーム | 스크린샷 자동 이름 지정 체계
+- ✅ 截图自动命名方案
+- ✅ Screenshot Auto Naming Scheme
+- ✅ スクリーンショット自動命名スキーム
+- ✅ 스크린샷 자동 이름 지정 체계
+
+### v103.13 视频万花筒自定义 | Video Kaleidoscope Custom | ビデオカレイドスコープカスタム | 비디오 칼레이도스코프 사용자 정의
+- ✅ 视频万花筒自定义
+- ✅ Video Kaleidoscope Custom
+- ✅ ビデオカレイドスコープカスタム
+- ✅ 비디오 칼레이도스코프 사용자 정의
+
+### v103.14 弹幕字体发光强度 | Danmaku Font Glow Intensity | コメントフォントグロウ強度 | 댓글 글꼴 글로우 강도
+- ✅ 弹幕字体发光强度
+- ✅ Danmaku Font Glow Intensity
+- ✅ コメントフォントグロウ強度
+- ✅ 댓글 글꼴 글로우 강도
+
+### v103.15 字幕字体加载自定义 | Subtitle Font Load Custom | 字幕フォント読み込みカスタム | 자막 글꼴 로드 사용자 정의
+- ✅ 字幕字体加载自定义
+- ✅ Subtitle Font Load Custom
+- ✅ 字幕フォント読み込みカスタム
+- ✅ 자막 글꼴 로드 사용자 정의
+
+### v104.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v104.1-v104.15 功能列表
+- ✅ Audio Vocal Boost Custom, Danmaku Font Glow Spread, Subtitle Font Scale Custom, Gesture Quick Scrub Toggle, Cast Video Field Order, Playlist Auto Download Next, Cache Video Only Mode, Progress Bar Time Code Format, Volume Audio Channel Map, History Batch Delete Mode, Playback AB Loop Auto Save, Screenshot Auto Optimize, Video Mirror Flip Custom, Danmaku Font Gradient Toggle, Subtitle Font Color Custom
+
+### v104.1 音频人声增强自定义 | Audio Vocal Boost Custom | オーディオボーカルブーストカスタム | 오디오 보컬 강화 사용자 정의
+- ✅ 音频人声增强自定义
+- ✅ Audio Vocal Boost Custom
+- ✅ オーディオボーカルブーストカスタム
+- ✅ 오디오 보컬 강화 사용자 정의
+
+### v104.2 弹幕字体发光扩散 | Danmaku Font Glow Spread | コメントフォントグロウスプレッド | 댓글 글꼴 글로우 확산
+- ✅ 弹幕字体发光扩散
+- ✅ Danmaku Font Glow Spread
+- ✅ コメントフォントグロウスプレッド
+- ✅ 댓글 글꼴 글로우 확산
+
+### v104.3 字幕字体缩放自定义 | Subtitle Font Scale Custom | 字幕フォントスケールカスタム | 자막 글꼴 스케일 사용자 정의
+- ✅ 字幕字体缩放自定义
+- ✅ Subtitle Font Scale Custom
+- ✅ 字幕フォントスケールカスタム
+- ✅ 자막 글꼴 스케일 사용자 정의
+
+### v104.4 手势快速擦洗开关 | Gesture Quick Scrub Toggle | ジェスチャークイックスクラブ切替 | 제스처 빠른 스크럽 전환
+- ✅ 手势快速擦洗开关
+- ✅ Gesture Quick Scrub Toggle
+- ✅ ジェスチャークイックスクラブ切替
+- ✅ 제스처 빠른 스크럽 전환
+
+### v104.5 投射视频场序 | Cast Video Field Order | キャストビデオフィールドオーダー | 캐스트 비디오 필드 순서
+- ✅ 投射视频场序
+- ✅ Cast Video Field Order
+- ✅ キャストビデオフィールドオーダー
+- ✅ 캐스트 비디오 필드 순서
+
+### v104.6 播放列表自动下载下一个 | Playlist Auto Download Next | プレイリスト自動次ダウンロード | 재생 목록 자동 다음 다운로드
+- ✅ 播放列表自动下载下一个
+- ✅ Playlist Auto Download Next
+- ✅ プレイリスト自動次ダウンロード
+- ✅ 재생 목록 자동 다음 다운로드
+
+### v104.7 缓存仅视频模式 | Cache Video Only Mode | キャッシュビデオのみモード | 캐시 비디오 전용 모드
+- ✅ 缓存仅视频模式
+- ✅ Cache Video Only Mode
+- ✅ キャッシュビデオのみモード
+- ✅ 캐시 비디오 전용 모드
+
+### v104.8 进度条时间码格式 | Progress Bar Time Code Format | プログレスバータイムコード形式 | 진행 바 타임코드 형식
+- ✅ 进度条时间码格式
+- ✅ Progress Bar Time Code Format
+- ✅ プログレスバータイムコード形式
+- ✅ 진행 바 타임코드 형식
+
+### v104.9 音量音频通道映射 | Volume Audio Channel Map | 音量オーディオチャンネルマップ | 볼륨 오디오 채널 맵
+- ✅ 音量音频通道映射
+- ✅ Volume Audio Channel Map
+- ✅ 音量オーディオチャンネルマップ
+- ✅ 볼륨 오디오 채널 맵
+
+### v104.10 历史记录批量删除模式 | History Batch Delete Mode | 履歴一括削除モード | 기록 일괄 삭제 모드
+- ✅ 历史记录批量删除模式
+- ✅ History Batch Delete Mode
+- ✅ 履歴一括削除モード
+- ✅ 기록 일괄 삭제 모드
+
+### v104.11 播放AB循环自动保存 | Playback AB Loop Auto Save | 再生ABループ自動保存 | 재생 AB 반복 자동 저장
+- ✅ 播放AB循环自动保存
+- ✅ Playback AB Loop Auto Save
+- ✅ 再生ABループ自動保存
+- ✅ 재생 AB 반복 자동 저장
+
+### v104.12 截图自动优化 | Screenshot Auto Optimize | スクリーンショット自動最適化 | 스크린샷 자동 최적화
+- ✅ 截图自动优化
+- ✅ Screenshot Auto Optimize
+- ✅ スクリーンショット自動最適化
+- ✅ 스크린샷 자동 최적화
+
+### v104.13 视频镜像翻转自定义 | Video Mirror Flip Custom | ビデオミラーフリップカスタム | 비디오 미러 플립 사용자 정의
+- ✅ 视频镜像翻转自定义
+- ✅ Video Mirror Flip Custom
+- ✅ ビデオミラーフリップカスタム
+- ✅ 비디오 미러 플립 사용자 정의
+
+### v104.14 弹幕字体渐变开关 | Danmaku Font Gradient Toggle | コメントフォントグラデーション切替 | 댓글 글꼴 그래디언트 전환
+- ✅ 弹幕字体渐变开关
+- ✅ Danmaku Font Gradient Toggle
+- ✅ コメントフォントグラデーション切替
+- ✅ 댓글 글꼴 그래디언트 전환
+
+### v104.15 字幕字体颜色自定义 | Subtitle Font Color Custom | 字幕フォント色カスタム | 자막 글꼴 색상 사용자 정의
+- ✅ 字幕字体颜色自定义
+- ✅ Subtitle Font Color Custom
+- ✅ 字幕フォント色カスタム
+- ✅ 자막 글꼴 색상 사용자 정의
+
+### v105.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v105.1-v105.15 功能列表
+- ✅ Audio Virtual Surround Custom, Danmaku Font Gradient Start, Subtitle Font Alpha Custom, Gesture Quick Seek Distance, Cast Video Color Space, Playlist Auto Sort By Popular, Cache Audio Only Mode, Progress Bar Custom Scale, Volume Headphone Optimize, History Multi Select Mode, Playback AB Loop Beat Sync, Screenshot Auto Watermark, Video Rotate Custom, Danmaku Font Gradient End, Subtitle Font Stroke Width
+
+### v105.1 音频虚拟环绕自定义 | Audio Virtual Surround Custom | オーディオバーチャルサラウンドカスタム | 오디오 가상 서라운드 사용자 정의
+- ✅ 音频虚拟环绕自定义
+- ✅ Audio Virtual Surround Custom
+- ✅ オーディオバーチャルサラウンドカスタム
+- ✅ 오디오 가상 서라운드 사용자 정의
+
+### v105.2 弹幕字体渐变开始 | Danmaku Font Gradient Start | コメントフォントグラデーション開始 | 댓글 글꼴 그래디언트 시작
+- ✅ 弹幕字体渐变开始
+- ✅ Danmaku Font Gradient Start
+- ✅ コメントフォントグラデーション開始
+- ✅ 댓글 글꼴 그래디언트 시작
+
+### v105.3 字幕字体透明度自定义 | Subtitle Font Alpha Custom | 字幕フォントアルファカスタム | 자막 글꼴 알파 사용자 정의
+- ✅ 字幕字体透明度自定义
+- ✅ Subtitle Font Alpha Custom
+- ✅ 字幕フォントアルファカスタム
+- ✅ 자막 글꼴 알파 사용자 정의
+
+### v105.4 手势快速跳转距离 | Gesture Quick Seek Distance | ジェスチャークイックシーク距離 | 제스처 빠른 탐색 거리
+- ✅ 手势快速跳转距离
+- ✅ Gesture Quick Seek Distance
+- ✅ ジェスチャークイックシーク距離
+- ✅ 제스처 빠른 탐색 거리
+
+### v105.5 投射视频色彩空间 | Cast Video Color Space | キャストビデオ色彩空間 | 캐스트 비디오 색 공간
+- ✅ 投射视频色彩空间
+- ✅ Cast Video Color Space
+- ✅ キャストビデオ色彩空間
+- ✅ 캐스트 비디오 색 공간
+
+### v105.6 播放列表按热度排序 | Playlist Auto Sort By Popular | プレイリスト人気順ソート | 재생 목록 인기순 정렬
+- ✅ 播放列表按热度排序
+- ✅ Playlist Auto Sort By Popular
+- ✅ プレイリスト人気順ソート
+- ✅ 재생 목록 인기순 정렬
+
+### v105.7 缓存仅音频模式 | Cache Audio Only Mode | キャッシュ音声のみモード | 캐시 오디오 전용 모드
+- ✅ 缓存仅音频模式
+- ✅ Cache Audio Only Mode
+- ✅ キャッシュ音声のみモード
+- ✅ 캐시 오디오 전용 모드
+
+### v105.8 进度条自定义比例 | Progress Bar Custom Scale | プログレスバーカスタムスケール | 진행 바 사용자 정의 비율
+- ✅ 进度条自定义比例
+- ✅ Progress Bar Custom Scale
+- ✅ プログレスバーカスタムスケール
+- ✅ 진행 바 사용자 정의 비율
+
+### v105.9 音量耳机优化 | Volume Headphone Optimize | 音量ヘッドフォン最適化 | 볼륨 헤드폰 최적화
+- ✅ 音量耳机优化
+- ✅ Volume Headphone Optimize
+- ✅ 音量ヘッドフォン最適化
+- ✅ 볼륨 헤드폰 최적화
+
+### v105.10 历史记录多选模式 | History Multi Select Mode | 履歴複数選択モード | 기록 다중 선택 모드
+- ✅ 历史记录多选模式
+- ✅ History Multi Select Mode
+- ✅ 履歴複数選択モード
+- ✅ 기록 다중 선택 모드
+
+### v105.11 播放AB循环节拍同步 | Playback AB Loop Beat Sync | 再生ABループビート同期 | 재생 AB 반복 비트 동기화
+- ✅ 播放AB循环节拍同步
+- ✅ Playback AB Loop Beat Sync
+- ✅ 再生ABループビート同期
+- ✅ 재생 AB 반복 비트 동기화
+
+### v105.12 截图自动水印 | Screenshot Auto Watermark | スクリーンショット自動ウォーターマーク | 스크린샷 자동 워터마크
+- ✅ 截图自动水印
+- ✅ Screenshot Auto Watermark
+- ✅ スクリーンショット自動ウォーターマーク
+- ✅ 스크린샷 자동 워터마크
+
+### v105.13 视频旋转自定义 | Video Rotate Custom | ビデオ回転カスタム | 비디오 회전 사용자 정의
+- ✅ 视频旋转自定义
+- ✅ Video Rotate Custom
+- ✅ ビデオ回転カスタム
+- ✅ 비디오 회전 사용자 정의
+
+### v105.14 弹幕字体渐变结束 | Danmaku Font Gradient End | コメントフォントグラデーション終了 | 댓글 글꼴 그래디언트 종료
+- ✅ 弹幕字体渐变结束
+- ✅ Danmaku Font Gradient End
+- ✅ コメントフォントグラデーション終了
+- ✅ 댓글 글꼴 그래디언트 종료
+
+### v105.15 字幕字体描边宽度 | Subtitle Font Stroke Width | 字幕フォントストローク幅 | 자막 글꼴 스트로크 너비
+- ✅ 字幕字体描边宽度
+- ✅ Subtitle Font Stroke Width
+- ✅ 字幕フォントストローク幅
+- ✅ 자막 글꼴 스트로크 너비
+
+### v106.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v106.1-v106.15 功能列表
+- ✅ Audio Compressor Threshold, Danmaku Font Gradient Angle, Subtitle Font Stroke Color, Gesture Quick Volume Gesture, Cast Video Frame Rate Limit, Playlist Auto Sort By Date New, Cache Partial Download Toggle, Progress Bar Custom Height, Volume Bluetooth Codec, History Filter By Type, Playback AB Loop Crossfade, Screenshot Auto Compress, Video Stretch Custom, Danmaku Font Texture Custom, Subtitle Font Shadow Color
+
+### v106.1 音频压缩器阈值 | Audio Compressor Threshold | オーディオコンプレッサーしきい値 | 오디오 컴프레서 임계값
+- ✅ 音频压缩器阈值
+- ✅ Audio Compressor Threshold
+- ✅ オーディオコンプレッサーしきい値
+- ✅ 오디오 컴프레서 임계값
+
+### v106.2 弹幕字体渐变角度 | Danmaku Font Gradient Angle | コメントフォントグラデーション角度 | 댓글 글꼴 그래디언트 각도
+- ✅ 弹幕字体渐变角度
+- ✅ Danmaku Font Gradient Angle
+- ✅ コメントフォントグラデーション角度
+- ✅ 댓글 글꼴 그래디언트 각도
+
+### v106.3 字幕字体描边颜色 | Subtitle Font Stroke Color | 字幕フォントストローク色 | 자막 글꼴 스트로크 색상
+- ✅ 字幕字体描边颜色
+- ✅ Subtitle Font Stroke Color
+- ✅ 字幕フォントストローク色
+- ✅ 자막 글꼴 스트로크 색상
+
+### v106.4 手势快速音量手势 | Gesture Quick Volume Gesture | ジェスチャークイック音量ジェスチャー | 제스처 빠른 볼륨 제스처
+- ✅ 手势快速音量手势
+- ✅ Gesture Quick Volume Gesture
+- ✅ ジェスチャークイック音量ジェスチャー
+- ✅ 제스처 빠른 볼륨 제스처
+
+### v106.5 投射视频帧率限制 | Cast Video Frame Rate Limit | キャストビデオフレームレート制限 | 캐스트 비디오 프레임레이트 제한
+- ✅ 投射视频帧率限制
+- ✅ Cast Video Frame Rate Limit
+- ✅ キャストビデオフレームレート制限
+- ✅ 캐스트 비디오 프레임레이트 제한
+
+### v106.6 播放列表按最新日期排序 | Playlist Auto Sort By Date New | プレイリスト新着日付順ソート | 재생 목록 최신 날짜순 정렬
+- ✅ 播放列表按最新日期排序
+- ✅ Playlist Auto Sort By Date New
+- ✅ プレイリスト新着日付順ソート
+- ✅ 재생 목록 최신 날짜순 정렬
+
+### v106.7 缓存部分下载开关 | Cache Partial Download Toggle | キャッシュ部分ダウンロード切替 | 캐시 부분 다운로드 전환
+- ✅ 缓存部分下载开关
+- ✅ Cache Partial Download Toggle
+- ✅ キャッシュ部分ダウンロード切替
+- ✅ 캐시 부분 다운로드 전환
+
+### v106.8 进度条自定义高度 | Progress Bar Custom Height | プログレスバーカスタム高さ | 진행 바 사용자 정의 높이
+- ✅ 进度条自定义高度
+- ✅ Progress Bar Custom Height
+- ✅ プログレスバーカスタム高さ
+- ✅ 진행 바 사용자 정의 높이
+
+### v106.9 音量蓝牙编码 | Volume Bluetooth Codec | 音量Bluetoothコーデック | 볼륨 블루투스 코덱
+- ✅ 音量蓝牙编码
+- ✅ Volume Bluetooth Codec
+- ✅ 音量Bluetoothコーデック
+- ✅ 볼륨 블루투스 코덱
+
+### v106.10 历史记录按类型过滤 | History Filter By Type | 履歴タイプ別フィルター | 기록 유형별 필터
+- ✅ 历史记录按类型过滤
+- ✅ History Filter By Type
+- ✅ 履歴タイプ別フィルター
+- ✅ 기록 유형별 필터
+
+### v106.11 播放AB循环交叉淡入淡出 | Playback AB Loop Crossfade | 再生ABループクロスフェード | 재생 AB 반복 크로스페이드
+- ✅ 播放AB循环交叉淡入淡出
+- ✅ Playback AB Loop Crossfade
+- ✅ 再生ABループクロスフェード
+- ✅ 재생 AB 반복 크로스페이드
+
+### v106.12 截图自动压缩 | Screenshot Auto Compress | スクリーンショット自動圧縮 | 스크린샷 자동 압축
+- ✅ 截图自动压缩
+- ✅ Screenshot Auto Compress
+- ✅ スクリーンショット自動圧縮
+- ✅ 스크린샷 자동 압축
+
+### v106.13 视频拉伸自定义 | Video Stretch Custom | ビデオストレッチカスタム | 비디오 스트레치 사용자 정의
+- ✅ 视频拉伸自定义
+- ✅ Video Stretch Custom
+- ✅ ビデオストレッチカスタム
+- ✅ 비디오 스트레치 사용자 정의
+
+### v106.14 弹幕字体纹理自定义 | Danmaku Font Texture Custom | コメントフォントテクスチャカスタム | 댓글 글꼴 텍스처 사용자 정의
+- ✅ 弹幕字体纹理自定义
+- ✅ Danmaku Font Texture Custom
+- ✅ コメントフォントテクスチャカスタム
+- ✅ 댓글 글꼴 텍스처 사용자 정의
+
+### v106.15 字幕字体阴影颜色 | Subtitle Font Shadow Color | 字幕フォントシャドウ色 | 자막 글꼴 그림자 색상
+- ✅ 字幕字体阴影颜色
+- ✅ Subtitle Font Shadow Color
+- ✅ 字幕フォントシャドウ色
+- ✅ 자막 글꼴 그림자 색상
+
+### v107.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v107.1-v107.15 功能列表
+- ✅ Audio Compressor Ratio, Danmaku Font Fade Edge Size, Subtitle Font Shadow Radius, Gesture Quick Bright Gesture, Cast Video Deinterlace Mode, Playlist Auto Sort By Duration, Cache P2P Download Toggle, Progress Bar Custom Margin, Volume USB DAC Compatibility, History Filter By Duration, Playback AB Loop Pitch Shift, Screenshot Auto Share After, Video Crop Custom, Danmaku Font Fade Style, Subtitle Font Shadow Offset X
+
+### v107.1 音频压缩器比率 | Audio Compressor Ratio | オーディオコンプレッサー比率 | 오디오 컴프레서 비율
+- ✅ 音频压缩器比率
+- ✅ Audio Compressor Ratio
+- ✅ オーディオコンプレッサー比率
+- ✅ 오디오 컴프레서 비율
+
+### v107.2 弹幕字体淡出边缘大小 | Danmaku Font Fade Edge Size | コメントフォントフェードエッジサイズ | 댓글 글꼴 페이드 엣지 크기
+- ✅ 弹幕字体淡出边缘大小
+- ✅ Danmaku Font Fade Edge Size
+- ✅ コメントフォントフェードエッジサイズ
+- ✅ 댓글 글꼴 페이드 엣지 크기
+
+### v107.3 字幕字体阴影半径 | Subtitle Font Shadow Radius | 字幕フォントシャドウ半径 | 자막 글꼴 그림자 반경
+- ✅ 字幕字体阴影半径
+- ✅ Subtitle Font Shadow Radius
+- ✅ 字幕フォントシャドウ半径
+- ✅ 자막 글꼴 그림자 반경
+
+### v107.4 手势快速亮度手势 | Gesture Quick Bright Gesture | ジェスチャークイック明るさジェスチャー | 제스처 빠른 밝기 제스처
+- ✅ 手势快速亮度手势
+- ✅ Gesture Quick Bright Gesture
+- ✅ ジェスチャークイック明るさジェスチャー
+- ✅ 제스처 빠른 밝기 제스처
+
+### v107.5 投射视频去隔行模式 | Cast Video Deinterlace Mode | キャストビデオインターレース解除モード | 캐스트 비디오 디인터레이스 모드
+- ✅ 投射视频去隔行模式
+- ✅ Cast Video Deinterlace Mode
+- ✅ キャストビデオインターレース解除モード
+- ✅ 캐스트 비디오 디인터레이스 모드
+
+### v107.6 播放列表按时长排序 | Playlist Auto Sort By Duration | プレイリスト再生時間順ソート | 재생 목록 재생 시간순 정렬
+- ✅ 播放列表按时长排序
+- ✅ Playlist Auto Sort By Duration
+- ✅ プレイリスト再生時間順ソート
+- ✅ 재생 목록 재생 시간순 정렬
+
+### v107.7 缓存P2P下载开关 | Cache P2P Download Toggle | キャッシュP2Pダウンロード切替 | 캐시 P2P 다운로드 전환
+- ✅ 缓存P2P下载开关
+- ✅ Cache P2P Download Toggle
+- ✅ キャッシュP2Pダウンロード切替
+- ✅ 캐시 P2P 다운로드 전환
+
+### v107.8 进度条自定义边距 | Progress Bar Custom Margin | プログレスバーカスタムマージン | 진행 바 사용자 정의 마진
+- ✅ 进度条自定义边距
+- ✅ Progress Bar Custom Margin
+- ✅ プログレスバーカスタムマージン
+- ✅ 진행 바 사용자 정의 마진
+
+### v107.9 音量USB DAC兼容性 | Volume USB DAC Compatibility | 音量USB DAC互換性 | 볼륨 USB DAC 호환성
+- ✅ 音量USB DAC兼容性
+- ✅ Volume USB DAC Compatibility
+- ✅ 音量USB DAC互換性
+- ✅ 볼륨 USB DAC 호환성
+
+### v107.10 历史记录按时长过滤 | History Filter By Duration | 履歴再生時間別フィルター | 기록 재생 시간별 필터
+- ✅ 历史记录按时长过滤
+- ✅ History Filter By Duration
+- ✅ 履歴再生時間別フィルター
+- ✅ 기록 재생 시간별 필터
+
+### v107.11 播放AB循环音高偏移 | Playback AB Loop Pitch Shift | 再生ABループピッチシフト | 재생 AB 반복 피치 시프트
+- ✅ 播放AB循环音高偏移
+- ✅ Playback AB Loop Pitch Shift
+- ✅ 再生ABループピッチシフト
+- ✅ 재생 AB 반복 피치 시프트
+
+### v107.12 截图后自动分享 | Screenshot Auto Share After | スクリーンショット後自動共有 | 스크린샷 후 자동 공유
+- ✅ 截图后自动分享
+- ✅ Screenshot Auto Share After
+- ✅ スクリーンショット後自動共有
+- ✅ 스크린샷 후 자동 공유
+
+### v107.13 视频裁剪自定义 | Video Crop Custom | ビデオクロップカスタム | 비디오 크롭 사용자 정의
+- ✅ 视频裁剪自定义
+- ✅ Video Crop Custom
+- ✅ ビデオクロップカスタム
+- ✅ 비디오 크롭 사용자 정의
+
+### v107.14 弹幕字体淡出样式 | Danmaku Font Fade Style | コメントフォントフェードスタイル | 댓글 글꼴 페이드 스타일
+- ✅ 弹幕字体淡出样式
+- ✅ Danmaku Font Fade Style
+- ✅ コメントフォントフェードスタイル
+- ✅ 댓글 글꼴 페이드 스타일
+
+### v107.15 字幕字体阴影X偏移 | Subtitle Font Shadow Offset X | 字幕フォントシャドウXオフセット | 자막 글꼴 그림자 X 오프셋
+- ✅ 字幕字体阴影X偏移
+- ✅ Subtitle Font Shadow Offset X
+- ✅ 字幕フォントシャドウXオフセット
+- ✅ 자막 글꼴 그림자 X 오프셋
+
+### v108.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v108.1-v108.15 功能列表
+- ✅ Audio Compressor Attack Time, Danmaku Font BG Gradient Toggle, Subtitle Font Shadow Offset Y, Gesture Quick Lock Screen, Cast Video Scaling Mode, Playlist Auto Sort By Views, Cache Proxy Mode Custom, Progress Bar Custom Opacity, Volume Speaker Phone Toggle, History Filter By Date, Playback AB Loop Tempo Sync, Screenshot Album Auto Create, Video Zoom Custom, Danmaku Font BG Gradient Type, Subtitle Font Bold Toggle108
+
+### v108.1 音频压缩器启动时间 | Audio Compressor Attack Time | オーディオコンプレッサーアタック時間 | 오디오 컴프레서 어택 시간
+- ✅ 音频压缩器启动时间
+- ✅ Audio Compressor Attack Time
+- ✅ オーディオコンプレッサーアタック時間
+- ✅ 오디오 컴프레서 어택 시간
+
+### v108.2 弹幕字体背景渐变开关 | Danmaku Font BG Gradient Toggle | コメントフォントBGグラデーション切替 | 댓글 글꼴 배경 그래디언트 전환
+- ✅ 弹幕字体背景渐变开关
+- ✅ Danmaku Font BG Gradient Toggle
+- ✅ コメントフォントBGグラデーション切替
+- ✅ 댓글 글꼴 배경 그래디언트 전환
+
+### v108.3 字幕字体阴影Y偏移 | Subtitle Font Shadow Offset Y | 字幕フォントシャドウYオフセット | 자막 글꼴 그림자 Y 오프셋
+- ✅ 字幕字体阴影Y偏移
+- ✅ Subtitle Font Shadow Offset Y
+- ✅ 字幕フォントシャドウYオフセット
+- ✅ 자막 글꼴 그림자 Y 오프셋
+
+### v108.4 手势快速锁屏 | Gesture Quick Lock Screen | ジェスチャークイック画面ロック | 제스처 빠른 화면 잠금
+- ✅ 手势快速锁屏
+- ✅ Gesture Quick Lock Screen
+- ✅ ジェスチャークイック画面ロック
+- ✅ 제스처 빠른 화면 잠금
+
+### v108.5 投射视频缩放模式 | Cast Video Scaling Mode | キャストビデオスケーリングモード | 캐스트 비디오 스케일링 모드
+- ✅ 投射视频缩放模式
+- ✅ Cast Video Scaling Mode
+- ✅ キャストビデオスケーリングモード
+- ✅ 캐스트 비디오 스케일링 모드
+
+### v108.6 播放列表按播放量排序 | Playlist Auto Sort By Views | プレイリスト再生回数順ソート | 재생 목록 재생 횟수순 정렬
+- ✅ 播放列表按播放量排序
+- ✅ Playlist Auto Sort By Views
+- ✅ プレイリスト再生回数順ソート
+- ✅ 재생 목록 재생 횟수순 정렬
+
+### v108.7 缓存代理模式自定义 | Cache Proxy Mode Custom | キャッシュプロキシモードカスタム | 캐시 프록시 모드 사용자 정의
+- ✅ 缓存代理模式自定义
+- ✅ Cache Proxy Mode Custom
+- ✅ キャッシュプロキシモードカスタム
+- ✅ 캐시 프록시 모드 사용자 정의
+
+### v108.8 进度条自定义透明度 | Progress Bar Custom Opacity | プログレスバーカスタム透明度 | 진행 바 사용자 정의 불투명도
+- ✅ 进度条自定义透明度
+- ✅ Progress Bar Custom Opacity
+- ✅ プログレスバーカスタム透明度
+- ✅ 진행 바 사용자 정의 불투명도
+
+### v108.9 音量免提开关 | Volume Speaker Phone Toggle | 音量スピーカーフォン切替 | 볼륨 스피커폰 전환
+- ✅ 音量免提开关
+- ✅ Volume Speaker Phone Toggle
+- ✅ 音量スピーカーフォン切替
+- ✅ 볼륨 스피커폰 전환
+
+### v108.10 历史记录按日期过滤 | History Filter By Date | 履歴日付別フィルター | 기록 날짜별 필터
+- ✅ 历史记录按日期过滤
+- ✅ History Filter By Date
+- ✅ 履歴日付別フィルター
+- ✅ 기록 날짜별 필터
+
+### v108.11 播放AB循环节拍速度同步 | Playback AB Loop Tempo Sync | 再生ABループテンポ同期 | 재생 AB 반복 템포 동기화
+- ✅ 播放AB循环节拍速度同步
+- ✅ Playback AB Loop Tempo Sync
+- ✅ 再生ABループテンポ同期
+- ✅ 재생 AB 반복 템포 동기화
+
+### v108.12 截图相册自动创建 | Screenshot Album Auto Create | スクリーンショットアルバム自動作成 | 스크린샷 앨범 자동 생성
+- ✅ 截图相册自动创建
+- ✅ Screenshot Album Auto Create
+- ✅ スクリーンショットアルバム自動作成
+- ✅ 스크린샷 앨범 자동 생성
+
+### v108.13 视频缩放自定义 | Video Zoom Custom | ビデオズームカスタム | 비디오 줌 사용자 정의
+- ✅ 视频缩放自定义
+- ✅ Video Zoom Custom
+- ✅ ビデオズームカスタム
+- ✅ 비디오 줌 사용자 정의
+
+### v108.14 弹幕字体背景渐变类型 | Danmaku Font BG Gradient Type | コメントフォントBGグラデーションタイプ | 댓글 글꼴 배경 그래디언트 유형
+- ✅ 弹幕字体背景渐变类型
+- ✅ Danmaku Font BG Gradient Type
+- ✅ コメントフォントBGグラデーションタイプ
+- ✅ 댓글 글꼴 배경 그래디언트 유형
+
+### v108.15 字幕字体加粗开关108 | Subtitle Font Bold Toggle108 | 字幕フォント太字切替108 | 자막 글꼴 굵기 전환108
+- ✅ 字幕字体加粗开关108
+- ✅ Subtitle Font Bold Toggle108
+- ✅ 字幕フォント太字切替108
+- ✅ 자막 글꼴 굵기 전환108
+
+### v109.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v109.1-v109.15 功能列表
+- ✅ Audio Compressor Release Time, Danmaku Font BG Gradient Angle, Subtitle Font Italic Toggle109, Gesture Quick Screenshot, Cast Video Hardware Decoding, Playlist Auto Sort By Rating, Cache Clean On App Exit, Progress Bar Custom Thumb Delay, Volume Audio Focus Priority, History Filter By Up, Playback AB Loop Preset Toggle, Screenshot Crop Auto Ratio, Video Blur Background Custom, Danmaku Font BG Gradient Opacity, Subtitle Font Underline109
+
+### v109.1 音频压缩器释放时间 | Audio Compressor Release Time | オーディオコンプレッサーリリース時間 | 오디오 컴프레서 릴리즈 시간
+- ✅ 音频压缩器释放时间
+- ✅ Audio Compressor Release Time
+- ✅ オーディオコンプレッサーリリース時間
+- ✅ 오디오 컴프레서 릴리즈 시간
+
+### v109.2 弹幕字体背景渐变角度 | Danmaku Font BG Gradient Angle | コメントフォントBGグラデーション角度 | 댓글 글꼴 배경 그래디언트 각도
+- ✅ 弹幕字体背景渐变角度
+- ✅ Danmaku Font BG Gradient Angle
+- ✅ コメントフォントBGグラデーション角度
+- ✅ 댓글 글꼴 배경 그래디언트 각도
+
+### v109.3 字幕字体斜体开关109 | Subtitle Font Italic Toggle109 | 字幕フォントイタリック切替109 | 자막 글꼴 이탤릭 전환109
+- ✅ 字幕字体斜体开关109
+- ✅ Subtitle Font Italic Toggle109
+- ✅ 字幕フォントイタリック切替109
+- ✅ 자막 글꼴 이탤릭 전환109
+
+### v109.4 手势快速截图 | Gesture Quick Screenshot | ジェスチャークイックスクリーンショット | 제스처 빠른 스크린샷
+- ✅ 手势快速截图
+- ✅ Gesture Quick Screenshot
+- ✅ ジェスチャークイックスクリーンショット
+- ✅ 제스처 빠른 스크린샷
+
+### v109.5 投射视频硬件解码 | Cast Video Hardware Decoding | キャストビデオハードウェアデコード | 캐스트 비디오 하드웨어 디코딩
+- ✅ 投射视频硬件解码
+- ✅ Cast Video Hardware Decoding
+- ✅ キャストビデオハードウェアデコード
+- ✅ 캐스트 비디오 하드웨어 디코딩
+
+### v109.6 播放列表按评分排序 | Playlist Auto Sort By Rating | プレイリスト評価順ソート | 재생 목록 평점순 정렬
+- ✅ 播放列表按评分排序
+- ✅ Playlist Auto Sort By Rating
+- ✅ プレイリスト評価順ソート
+- ✅ 재생 목록 평점순 정렬
+
+### v109.7 缓存退出时清理 | Cache Clean On App Exit | キャッシュアプリ終了時クリーン | 캐시 앱 종료 시 정리
+- ✅ 缓存退出时清理
+- ✅ Cache Clean On App Exit
+- ✅ キャッシュアプリ終了時クリーン
+- ✅ 캐시 앱 종료 시 정리
+
+### v109.8 进度条自定义滑块延迟 | Progress Bar Custom Thumb Delay | プログレスバーカスタムサム遅延 | 진행 바 사용자 정의 썸 지연
+- ✅ 进度条自定义滑块延迟
+- ✅ Progress Bar Custom Thumb Delay
+- ✅ プログレスバーカスタムサム遅延
+- ✅ 진행 바 사용자 정의 썸 지연
+
+### v109.9 音量音频焦点优先级 | Volume Audio Focus Priority | 音量オーディオフォーカス優先度 | 볼륨 오디오 포커스 우선순위
+- ✅ 音量音频焦点优先级
+- ✅ Volume Audio Focus Priority
+- ✅ 音量オーディオフォーカス優先度
+- ✅ 볼륨 오디오 포커스 우선순위
+
+### v109.10 历史记录按UP主过滤 | History Filter By Up | 履歴UP主別フィルター | 기록 UP주별 필터
+- ✅ 历史记录按UP主过滤
+- ✅ History Filter By Up
+- ✅ 履歴UP主別フィルター
+- ✅ 기록 UP주별 필터
+
+### v109.11 播放AB循环预设开关 | Playback AB Loop Preset Toggle | 再生ABループプリセット切替 | 재생 AB 반복 프리셋 전환
+- ✅ 播放AB循环预设开关
+- ✅ Playback AB Loop Preset Toggle
+- ✅ 再生ABループプリセット切替
+- ✅ 재생 AB 반복 프리셋 전환
+
+### v109.12 截图裁剪自动比例 | Screenshot Crop Auto Ratio | スクリーンショットクロップ自動比率 | 스크린샷 크롭 자동 비율
+- ✅ 截图裁剪自动比例
+- ✅ Screenshot Crop Auto Ratio
+- ✅ スクリーンショットクロップ自動比率
+- ✅ 스크린샷 크롭 자동 비율
+
+### v109.13 视频模糊背景自定义 | Video Blur Background Custom | ビデオブラー背景カスタム | 비디오 블러 배경 사용자 정의
+- ✅ 视频模糊背景自定义
+- ✅ Video Blur Background Custom
+- ✅ ビデオブラー背景カスタム
+- ✅ 비디오 블러 배경 사용자 정의
+
+### v109.14 弹幕字体背景渐变透明度 | Danmaku Font BG Gradient Opacity | コメントフォントBGグラデーション透明度 | 댓글 글꼴 배경 그래디언트 불투명도
+- ✅ 弹幕字体背景渐变透明度
+- ✅ Danmaku Font BG Gradient Opacity
+- ✅ コメントフォントBGグラデーション透明度
+- ✅ 댓글 글꼴 배경 그래디언트 불투명도
+
+### v109.15 字幕字体下划线109 | Subtitle Font Underline109 | 字幕フォント下線109 | 자막 글꼴 밑줄109
+- ✅ 字幕字体下划线109
+- ✅ Subtitle Font Underline109
+- ✅ 字幕フォント下線109
+- ✅ 자막 글꼴 밑줄109
+
+### v110.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v110.1-v110.15 功能列表
+- ✅ Audio Limiter Threshold, Danmaku Font Texture Blend Mode, Subtitle Font Strike Through110, Gesture Quick Speed Toggle, Cast Video Software Decoding, Playlist Auto Sort By Bilingual, Cache Clean On Low Battery, Progress Bar Custom Thumb Scale, Volume Audio Focus Duck, History Filter By Season, Playback AB Loop Export Wav, Screenshot Delay Timer, Video Ambient Light Custom, Danmaku Font Texture Pattern Custom, Subtitle Font Case Override110
+
+### v110.1 音频限制器阈值 | Audio Limiter Threshold | オーディオリミッターしきい値 | 오디오 리미터 임계값
+- ✅ 音频限制器阈值
+- ✅ Audio Limiter Threshold
+- ✅ オーディオリミッターしきい値
+- ✅ 오디오 리미터 임계값
+
+### v110.2 弹幕字体纹理混合模式 | Danmaku Font Texture Blend Mode | コメントフォントテクスチャブレンドモード | 댓글 글꼴 텍스처 블렌드 모드
+- ✅ 弹幕字体纹理混合模式
+- ✅ Danmaku Font Texture Blend Mode
+- ✅ コメントフォントテクスチャブレンドモード
+- ✅ 댓글 글꼴 텍스처 블렌드 모드
+
+### v110.3 字幕字体删除线110 | Subtitle Font Strike Through110 | 字幕フォント打ち消し線110 | 자막 글꼴 취소선110
+- ✅ 字幕字体删除线110
+- ✅ Subtitle Font Strike Through110
+- ✅ 字幕フォント打ち消し線110
+- ✅ 자막 글꼴 취소선110
+
+### v110.4 手势快速速度开关 | Gesture Quick Speed Toggle | ジェスチャークイック速度切替 | 제스처 빠른 속도 전환
+- ✅ 手势快速速度开关
+- ✅ Gesture Quick Speed Toggle
+- ✅ ジェスチャークイック速度切替
+- ✅ 제스처 빠른 속도 전환
+
+### v110.5 投射视频软件解码 | Cast Video Software Decoding | キャストビデオソフトウェアデコード | 캐스트 비디오 소프트웨어 디코딩
+- ✅ 投射视频软件解码
+- ✅ Cast Video Software Decoding
+- ✅ キャストビデオソフトウェアデコード
+- ✅ 캐스트 비디오 소프트웨어 디코딩
+
+### v110.6 播放列表按双语排序 | Playlist Auto Sort By Bilingual | プレイリストバイリンガル順ソート | 재생 목록 이중 언어순 정렬
+- ✅ 播放列表按双语排序
+- ✅ Playlist Auto Sort By Bilingual
+- ✅ プレイリストバイリンガル順ソート
+- ✅ 재생 목록 이중 언어순 정렬
+
+### v110.7 缓存低电量时清理 | Cache Clean On Low Battery | キャッシュバッテリー残量低時クリーン | 캐시 저전력 시 정리
+- ✅ 缓存低电量时清理
+- ✅ Cache Clean On Low Battery
+- ✅ キャッシュバッテリー残量低時クリーン
+- ✅ 캐시 저전력 시 정리
+
+### v110.8 进度条自定义滑块比例 | Progress Bar Custom Thumb Scale | プログレスバーカスタムサムスケール | 진행 바 사용자 정의 썸 스케일
+- ✅ 进度条自定义滑块比例
+- ✅ Progress Bar Custom Thumb Scale
+- ✅ プログレスバーカスタムサムスケール
+- ✅ 진행 바 사용자 정의 썸 스케일
+
+### v110.9 音量音频焦点闪避 | Volume Audio Focus Duck | 音量オーディオフォーカスダック | 볼륨 오디오 포커스 덕
+- ✅ 音量音频焦点闪避
+- ✅ Volume Audio Focus Duck
+- ✅ 音量オーディオフォーカスダック
+- ✅ 볼륨 오디오 포커스 덕
+
+### v110.10 历史记录按季度过滤 | History Filter By Season | 履歴シーズン別フィルター | 기록 시즌별 필터
+- ✅ 历史记录按季度过滤
+- ✅ History Filter By Season
+- ✅ 履歴シーズン別フィルター
+- ✅ 기록 시즌별 필터
+
+### v110.11 播放AB循环导出WAV | Playback AB Loop Export Wav | 再生ABループWAVエクスポート | 재생 AB 반복 WAV 내보내기
+- ✅ 播放AB循环导出WAV
+- ✅ Playback AB Loop Export Wav
+- ✅ 再生ABループWAVエクスポート
+- ✅ 재생 AB 반복 WAV 내보내기
+
+### v110.12 截图延迟计时器 | Screenshot Delay Timer | スクリーンショット遅延タイマー | 스크린샷 지연 타이머
+- ✅ 截图延迟计时器
+- ✅ Screenshot Delay Timer
+- ✅ スクリーンショット遅延タイマー
+- ✅ 스크린샷 지연 타이머
+
+### v110.13 视频环境光自定义 | Video Ambient Light Custom | ビデオ環境光カスタム | 비디오 앰비언트 라이트 사용자 정의
+- ✅ 视频环境光自定义
+- ✅ Video Ambient Light Custom
+- ✅ ビデオ環境光カスタム
+- ✅ 비디오 앰비언트 라이트 사용자 정의
+
+### v110.14 弹幕字体纹理图案自定义 | Danmaku Font Texture Pattern Custom | コメントフォントテクスチャパターンカスタム | 댓글 글꼴 텍스처 패턴 사용자 정의
+- ✅ 弹幕字体纹理图案自定义
+- ✅ Danmaku Font Texture Pattern Custom
+- ✅ コメントフォントテクスチャパターンカスタム
+- ✅ 댓글 글꼴 텍스처 패턴 사용자 정의
+
+### v110.15 字幕字体大小写覆盖110 | Subtitle Font Case Override110 | 字幕フォント大文字小文字上書き110 | 자막 글꼴 대소문자 오버라이드110
+- ✅ 字幕字体大小写覆盖110
+- ✅ Subtitle Font Case Override110
+- ✅ 字幕フォント大文字小文字上書き110
+- ✅ 자막 글꼴 대소문자 오버라이드110
+
 ### v55.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
 ### v55.1-v55.15 功能列表
 - ✅ Auto Resume, Font Monospace, Color Hue Auto, Peak Limiter, Send Queue, Cast Bandwidth Limit, Lock Screen, Filter Regex, Network Policy, Double Tap Action, Font Weight Custom, Tint Custom, Volume Compressor, Bg Padding, Cast Auto Quality
@@ -16642,4 +17583,4 @@ This project is based on open-source software. All rights belong to the original
 - **基础版本 | Base Versions**: v10.0.0 - v11.19.0 (25 versions)
 - **AI自动维护版本 | AI Maintained**: v12.1 - v45.15 (550+ versions)
 - **开发周期 | Development Cycle**: 2024 - 2026
-- **功能特性 | Features**: 1000+ new features added
+- **功能特性 | Features**: 1100+ new features added
