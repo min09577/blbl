@@ -1,4 +1,4 @@
-"""Batch generate v901-v930 features."""
+"""Batch generate v931-v960 features."""
 import re, os, subprocess
 os.chdir(r"C:\Users\Min\.qwenpaw\workspaces\7fuwpJ\blbl")
 
@@ -15,64 +15,64 @@ existing_props = set(re.findall(r'var (v\d+\w+):', ap))
 existing_keys = set(re.findall(r'const val (KEY_V\d+\w+)', ap))
 
 BATCHES = {}
-BATCHES[901] = []
-for ver in range(901, 911):
-    BATCHES[901] += [
-        ("quickAutoAction"+str(ver),"bool",False,None,"Quick Auto Action"+str(ver)),
-        ("quitAutoSave"+str(ver),"bool",False,None,"Quit Auto Save"+str(ver)),
-        ("quoteAutoFormat"+str(ver),"bool",False,None,"Quote Auto Format"+str(ver)),
-        ("raceAutoCondition"+str(ver),"bool",False,None,"Race Auto Condition"+str(ver)),
-        ("randomAutoShuffle"+str(ver),"bool",False,None,"Random Auto Shuffle"+str(ver)),
-        ("rangeAutoSlider"+str(ver),"bool",False,None,"Range Auto Slider"+str(ver)),
-        ("rateAutoLimit"+str(ver),"int",0,[0,1,2,3],"Rate Auto Limit"+str(ver)),
-        ("rawAutoDecode"+str(ver),"bool",False,None,"Raw Auto Decode"+str(ver)),
-        ("readAutoBookmark"+str(ver),"bool",False,None,"Read Auto Bookmark"+str(ver)),
-        ("readyAutoCheck"+str(ver),"bool",False,None,"Ready Auto Check"+str(ver)),
-        ("realAutoTime"+str(ver),"bool",False,None,"Real Auto Time"+str(ver)),
-        ("rebuildAutoIndex"+str(ver),"bool",False,None,"Rebuild Auto Index"+str(ver)),
-        ("recordAutoHistory"+str(ver),"bool",False,None,"Record Auto History"+str(ver)),
-        ("recoverAutoSession"+str(ver),"bool",False,None,"Recover Auto Session"+str(ver)),
-        ("recycleAutoBin"+str(ver),"bool",False,None,"Recycle Auto Bin"+str(ver)),
+BATCHES[931] = []
+for ver in range(931, 941):
+    BATCHES[931] += [
+        ("revertAutoVersion"+str(ver),"bool",False,None,"Revert Auto Version"+str(ver)),
+        ("rightAutoPanel"+str(ver),"bool",False,None,"Right Auto Panel"+str(ver)),
+        ("roleAutoPermission"+str(ver),"bool",False,None,"Role Auto Permission"+str(ver)),
+        ("rootAutoDetect"+str(ver),"bool",False,None,"Root Auto Detect"+str(ver)),
+        ("rotateAutoSensor"+str(ver),"bool",False,None,"Rotate Auto Sensor"+str(ver)),
+        ("roundAutoCorner"+str(ver),"bool",False,None,"Round Auto Corner"+str(ver)),
+        ("routeAutoNavigate"+str(ver),"bool",False,None,"Route Auto Navigate"+str(ver)),
+        ("rowAutoHeight"+str(ver),"bool",False,None,"Row Auto Height"+str(ver)),
+        ("ruleAutoEngine"+str(ver),"bool",False,None,"Rule Auto Engine"+str(ver)),
+        ("runAutoStartup"+str(ver),"bool",False,None,"Run Auto Startup"+str(ver)),
+        ("runtimeAutoConfig"+str(ver),"bool",False,None,"Runtime Auto Config"+str(ver)),
+        ("safeAutoMode"+str(ver),"bool",False,None,"Safe Auto Mode"+str(ver)),
+        ("sampleAutoRate"+str(ver),"int",0,[0,1,2,3],"Sample Auto Rate"+str(ver)),
+        ("saveAutoDraft"+str(ver),"bool",False,None,"Save Auto Draft"+str(ver)),
+        ("scaleAutoDpi"+str(ver),"bool",False,None,"Scale Auto Dpi"+str(ver)),
     ]
 
-BATCHES[911] = []
-for ver in range(911, 921):
-    BATCHES[911] += [
-        ("redirectAutoUrl"+str(ver),"bool",False,None,"Redirect Auto Url"+str(ver)),
-        ("reduceAutoMotion"+str(ver),"bool",False,None,"Reduce Auto Motion"+str(ver)),
-        ("refAutoCount"+str(ver),"bool",False,None,"Ref Auto Count"+str(ver)),
-        ("referenceAutoLink"+str(ver),"bool",False,None,"Reference Auto Link"+str(ver)),
-        ("refreshAutoRate"+str(ver),"int",0,[0,1,2,3],"Refresh Auto Rate"+str(ver)),
-        ("registerAutoCallback"+str(ver),"bool",False,None,"Register Auto Callback"+str(ver)),
-        ("regularAutoExpression"+str(ver),"bool",False,None,"Regular Auto Expression"+str(ver)),
-        ("rejectAutoBlock"+str(ver),"bool",False,None,"Reject Auto Block"+str(ver)),
-        ("relateAutoSuggest"+str(ver),"bool",False,None,"Relate Auto Suggest"+str(ver)),
-        ("releaseAutoLock"+str(ver),"bool",False,None,"Release Auto Lock"+str(ver)),
-        ("remoteAutoCast"+str(ver),"bool",False,None,"Remote Auto Cast"+str(ver)),
-        ("removeAutoClean"+str(ver),"bool",False,None,"Remove Auto Clean"+str(ver)),
-        ("renameAutoLabel"+str(ver),"bool",False,None,"Rename Auto Label"+str(ver)),
-        ("renderAutoFrame"+str(ver),"bool",False,None,"Render Auto Frame"+str(ver)),
-        ("repeatAutoLoop"+str(ver),"bool",False,None,"Repeat Auto Loop"+str(ver)),
+BATCHES[941] = []
+for ver in range(941, 951):
+    BATCHES[941] += [
+        ("scanAutoBarcode"+str(ver),"bool",False,None,"Scan Auto Barcode"+str(ver)),
+        ("sceneAutoDetect"+str(ver),"bool",False,None,"Scene Auto Detect"+str(ver)),
+        ("schemeAutoDeepLink"+str(ver),"bool",False,None,"Scheme Auto DeepLink"+str(ver)),
+        ("scopeAutoLifecycle"+str(ver),"bool",False,None,"Scope Auto Lifecycle"+str(ver)),
+        ("scoreAutoWeight"+str(ver),"bool",False,None,"Score Auto Weight"+str(ver)),
+        ("screenAutoBrightness"+str(ver),"bool",False,None,"Screen Auto Brightness"+str(ver)),
+        ("scrollAutoPosition"+str(ver),"bool",False,None,"Scroll Auto Position"+str(ver)),
+        ("searchAutoSuggest"+str(ver),"bool",False,None,"Search Auto Suggest"+str(ver)),
+        ("sectionAutoHeader"+str(ver),"bool",False,None,"Section Auto Header"+str(ver)),
+        ("secureAutoLock"+str(ver),"bool",False,None,"Secure Auto Lock"+str(ver)),
+        ("seekAutoFrame"+str(ver),"bool",False,None,"Seek Auto Frame"+str(ver)),
+        ("segmentAutoMerge"+str(ver),"bool",False,None,"Segment Auto Merge"+str(ver)),
+        ("selectAutoMulti"+str(ver),"bool",False,None,"Select Auto Multi"+str(ver)),
+        ("sendAutoBatch"+str(ver),"bool",False,None,"Send Auto Batch"+str(ver)),
+        ("sensorAutoGyro"+str(ver),"bool",False,None,"Sensor Auto Gyro"+str(ver)),
     ]
 
-BATCHES[921] = []
-for ver in range(921, 931):
-    BATCHES[921] += [
-        ("replaceAutoRegex"+str(ver),"bool",False,None,"Replace Auto Regex"+str(ver)),
-        ("reportAutoCrash"+str(ver),"bool",False,None,"Report Auto Crash"+str(ver)),
-        ("requestAutoRetry"+str(ver),"bool",False,None,"Request Auto Retry"+str(ver)),
-        ("requireAutoAuth"+str(ver),"bool",False,None,"Require Auto Auth"+str(ver)),
-        ("resetAutoDefault"+str(ver),"bool",False,None,"Reset Auto Default"+str(ver)),
-        ("resizeAutoFit"+str(ver),"bool",False,None,"Resize Auto Fit"+str(ver)),
-        ("resolveAutoDns"+str(ver),"bool",False,None,"Resolve Auto Dns"+str(ver)),
-        ("resourceAutoPool"+str(ver),"bool",False,None,"Resource Auto Pool"+str(ver)),
-        ("responseAutoCache"+str(ver),"bool",False,None,"Response Auto Cache"+str(ver)),
-        ("restartAutoRecover"+str(ver),"bool",False,None,"Restart Auto Recover"+str(ver)),
-        ("restoreAutoBackup"+str(ver),"bool",False,None,"Restore Auto Backup"+str(ver)),
-        ("resultAutoSort"+str(ver),"bool",False,None,"Result Auto Sort"+str(ver)),
-        ("retryAutoBackoff"+str(ver),"int",0,[0,1,2,3],"Retry Auto Backoff"+str(ver)),
-        ("returnAutoHome"+str(ver),"bool",False,None,"Return Auto Home"+str(ver)),
-        ("reverseAutoOrder"+str(ver),"bool",False,None,"Reverse Auto Order"+str(ver)),
+BATCHES[951] = []
+for ver in range(951, 961):
+    BATCHES[951] += [
+        ("sequenceAutoOrder"+str(ver),"bool",False,None,"Sequence Auto Order"+str(ver)),
+        ("serialAutoPort"+str(ver),"bool",False,None,"Serial Auto Port"+str(ver)),
+        ("serverAutoLoad"+str(ver),"bool",False,None,"Server Auto Load"+str(ver)),
+        ("serviceAutoBind"+str(ver),"bool",False,None,"Service Auto Bind"+str(ver)),
+        ("sessionAutoRestore"+str(ver),"bool",False,None,"Session Auto Restore"+str(ver)),
+        ("setAutoDefault"+str(ver),"bool",False,None,"Set Auto Default"+str(ver)),
+        ("settingAutoExport"+str(ver),"bool",False,None,"Setting Auto Export"+str(ver)),
+        ("setupAutoWizard"+str(ver),"bool",False,None,"Setup Auto Wizard"+str(ver)),
+        ("shadowAutoElevation"+str(ver),"bool",False,None,"Shadow Auto Elevation"+str(ver)),
+        ("shapeAutoMorph"+str(ver),"bool",False,None,"Shape Auto Morph"+str(ver)),
+        ("shareAutoClipboard"+str(ver),"bool",False,None,"Share Auto Clipboard"+str(ver)),
+        ("sharpAutoContrast"+str(ver),"bool",False,None,"Sharp Auto Contrast"+str(ver)),
+        ("shiftAutoTimestamp"+str(ver),"bool",False,None,"Shift Auto Timestamp"+str(ver)),
+        ("showAutoAnimation"+str(ver),"bool",False,None,"Show Auto Animation"+str(ver)),
+        ("shrinkAutoCollapse"+str(ver),"bool",False,None,"Shrink Auto Collapse"+str(ver)),
     ]
 
 HEADER = """package blbl.cat3399.feature.player
@@ -94,7 +94,7 @@ import blbl.cat3399.feature.player.engine.PlayerEngineKind
 
 AP_PATH = 'app/src/main/java/blbl/cat3399/core/prefs/AppPrefs.kt'
 
-for start_ver in [901, 911, 921]:
+for start_ver in [931, 941, 951]:
     features = BATCHES[start_ver]
     end_ver = start_ver + 9
     print(f"\n=== v{start_ver}-v{end_ver} ===")
@@ -177,4 +177,4 @@ for start_ver in [901, 911, 921]:
     subprocess.run(['git', 'push', 'origin', f'v{end_ver}.15.0'], check=True)
     print(f"Tagged v{end_ver}.15.0")
 
-print("\nDone! v901-v930 completed.")
+print("\nDone! v931-v960 completed.")

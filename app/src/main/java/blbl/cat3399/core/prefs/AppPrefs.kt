@@ -62448,6 +62448,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V930REVERSEAUTOORDER930, false)
         set(value) = prefs.edit().putBoolean(KEY_V930REVERSEAUTOORDER930, value).apply()
 
+    var v931revertAutoVersion931: Boolean
+        get() = prefs.getBoolean(KEY_V931REVERTAUTOVERSION931, false)
+        set(value) = prefs.edit().putBoolean(KEY_V931REVERTAUTOVERSION931, value).apply()
+
+    var v931rightAutoPanel931: Boolean
+        get() = prefs.getBoolean(KEY_V931RIGHTAUTOPANEL931, false)
+        set(value) = prefs.edit().putBoolean(KEY_V931RIGHTAUTOPANEL931, value).apply()
+
+    var v931roleAutoPermission931: Boolean
+        get() = prefs.getBoolean(KEY_V931ROLEAUTOPERMISSION931, false)
+        set(value) = prefs.edit().putBoolean(KEY_V931ROLEAUTOPERMISSION931, value).apply()
+
+    var v931rootAutoDetect931: Boolean
+        get() = prefs.getBoolean(KEY_V931ROOTAUTODETECT931, false)
+        set(value) = prefs.edit().putBoolean(KEY_V931ROOTAUTODETECT931, value).apply()
+
+    var v931rotateAutoSensor931: Boolean
+        get() = prefs.getBoolean(KEY_V931ROTATEAUTOSENSOR931, false)
+        set(value) = prefs.edit().putBoolean(KEY_V931ROTATEAUTOSENSOR931, value).apply()
+
+    var v931roundAutoCorner931: Boolean
+        get() = prefs.getBoolean(KEY_V931ROUNDAUTOCORNER931, false)
+        set(value) = prefs.edit().putBoolean(KEY_V931ROUNDAUTOCORNER931, value).apply()
+
+    var v931routeAutoNavigate931: Boolean
+        get() = prefs.getBoolean(KEY_V931ROUTEAUTONAVIGATE931, false)
+        set(value) = prefs.edit().putBoolean(KEY_V931ROUTEAUTONAVIGATE931, value).apply()
+
+    var v931rowAutoHeight931: Boolean
+        get() = prefs.getBoolean(KEY_V931ROWAUTOHEIGHT931, false)
+        set(value) = prefs.edit().putBoolean(KEY_V931ROWAUTOHEIGHT931, value).apply()
+
+    var v931ruleAutoEngine931: Boolean
+        get() = prefs.getBoolean(KEY_V931RULEAUTOENGINE931, false)
+        set(value) = prefs.edit().putBoolean(KEY_V931RULEAUTOENGINE931, value).apply()
+
+    var v931runAutoStartup931: Boolean
+        get() = prefs.getBoolean(KEY_V931RUNAUTOSTARTUP931, false)
+        set(value) = prefs.edit().putBoolean(KEY_V931RUNAUTOSTARTUP931, value).apply()
+
+    var v931runtimeAutoConfig931: Boolean
+        get() = prefs.getBoolean(KEY_V931RUNTIMEAUTOCONFIG931, false)
+        set(value) = prefs.edit().putBoolean(KEY_V931RUNTIMEAUTOCONFIG931, value).apply()
+
+    var v931safeAutoMode931: Boolean
+        get() = prefs.getBoolean(KEY_V931SAFEAUTOMODE931, false)
+        set(value) = prefs.edit().putBoolean(KEY_V931SAFEAUTOMODE931, value).apply()
+
+    var v931sampleAutoRate931: Int
+        get() = prefs.getInt(KEY_V931SAMPLEAUTORATE931, 0)
+        set(value) = prefs.edit().putInt(KEY_V931SAMPLEAUTORATE931, value).apply()
+
+    var v931saveAutoDraft931: Boolean
+        get() = prefs.getBoolean(KEY_V931SAVEAUTODRAFT931, false)
+        set(value) = prefs.edit().putBoolean(KEY_V931SAVEAUTODRAFT931, value).apply()
+
+    var v931scaleAutoDpi931: Boolean
+        get() = prefs.getBoolean(KEY_V931SCALEAUTODPI931, false)
+        set(value) = prefs.edit().putBoolean(KEY_V931SCALEAUTODPI931, value).apply()
+
+    var v932revertAutoVersion932: Boolean
+        get() = prefs.getBoolean(KEY_V932REVERTAUTOVERSION932, false)
+        set(value) = prefs.edit().putBoolean(KEY_V932REVERTAUTOVERSION932, value).apply()
+
+    var v932rightAutoPanel932: Boolean
+        get() = prefs.getBoolean(KEY_V932RIGHTAUTOPANEL932, false)
+        set(value) = prefs.edit().putBoolean(KEY_V932RIGHTAUTOPANEL932, value).apply()
+
+    var v932roleAutoPermission932: Boolean
+        get() = prefs.getBoolean(KEY_V932ROLEAUTOPERMISSION932, false)
+        set(value) = prefs.edit().putBoolean(KEY_V932ROLEAUTOPERMISSION932, value).apply()
+
+    var v932rootAutoDetect932: Boolean
+        get() = prefs.getBoolean(KEY_V932ROOTAUTODETECT932, false)
+        set(value) = prefs.edit().putBoolean(KEY_V932ROOTAUTODETECT932, value).apply()
+
+    var v932rotateAutoSensor932: Boolean
+        get() = prefs.getBoolean(KEY_V932ROTATEAUTOSENSOR932, false)
+        set(value) = prefs.edit().putBoolean(KEY_V932ROTATEAUTOSENSOR932, value).apply()
+
+    var v932roundAutoCorner932: Boolean
+        get() = prefs.getBoolean(KEY_V932ROUNDAUTOCORNER932, false)
+        set(value) = prefs.edit().putBoolean(KEY_V932ROUNDAUTOCORNER932, value).apply()
+
+    var v932routeAutoNavigate932: Boolean
+        get() = prefs.getBoolean(KEY_V932ROUTEAUTONAVIGATE932, false)
+        set(value) = prefs.edit().putBoolean(KEY_V932ROUTEAUTONAVIGATE932, value).apply()
+
+    var v932rowAutoHeight932: Boolean
+        get() = prefs.getBoolean(KEY_V932ROWAUTOHEIGHT932, false)
+        set(value) = prefs.edit().putBoolean(KEY_V932ROWAUTOHEIGHT932, value).apply()
+
+    var v932ruleAutoEngine932: Boolean
+        get() = prefs.getBoolean(KEY_V932RULEAUTOENGINE932, false)
+        set(value) = prefs.edit().putBoolean(KEY_V932RULEAUTOENGINE932, value).apply()
+
+    var v932runAutoStartup932: Boolean
+        get() = prefs.getBoolean(KEY_V932RUNAUTOSTARTUP932, false)
+        set(value) = prefs.edit().putBoolean(KEY_V932RUNAUTOSTARTUP932, value).apply()
+
+    var v932runtimeAutoConfig932: Boolean
+        get() = prefs.getBoolean(KEY_V932RUNTIMEAUTOCONFIG932, false)
+        set(value) = prefs.edit().putBoolean(KEY_V932RUNTIMEAUTOCONFIG932, value).apply()
+
+    var v932safeAutoMode932: Boolean
+        get() = prefs.getBoolean(KEY_V932SAFEAUTOMODE932, false)
+        set(value) = prefs.edit().putBoolean(KEY_V932SAFEAUTOMODE932, value).apply()
+
+    var v932sampleAutoRate932: Int
+        get() = prefs.getInt(KEY_V932SAMPLEAUTORATE932, 0)
+        set(value) = prefs.edit().putInt(KEY_V932SAMPLEAUTORATE932, value).apply()
+
+    var v932saveAutoDraft932: Boolean
+        get() = prefs.getBoolean(KEY_V932SAVEAUTODRAFT932, false)
+        set(value) = prefs.edit().putBoolean(KEY_V932SAVEAUTODRAFT932, value).apply()
+
+    var v932scaleAutoDpi932: Boolean
+        get() = prefs.getBoolean(KEY_V932SCALEAUTODPI932, false)
+        set(value) = prefs.edit().putBoolean(KEY_V932SCALEAUTODPI932, value).apply()
+
+    var v933revertAutoVersion933: Boolean
+        get() = prefs.getBoolean(KEY_V933REVERTAUTOVERSION933, false)
+        set(value) = prefs.edit().putBoolean(KEY_V933REVERTAUTOVERSION933, value).apply()
+
+    var v933rightAutoPanel933: Boolean
+        get() = prefs.getBoolean(KEY_V933RIGHTAUTOPANEL933, false)
+        set(value) = prefs.edit().putBoolean(KEY_V933RIGHTAUTOPANEL933, value).apply()
+
+    var v933roleAutoPermission933: Boolean
+        get() = prefs.getBoolean(KEY_V933ROLEAUTOPERMISSION933, false)
+        set(value) = prefs.edit().putBoolean(KEY_V933ROLEAUTOPERMISSION933, value).apply()
+
+    var v933rootAutoDetect933: Boolean
+        get() = prefs.getBoolean(KEY_V933ROOTAUTODETECT933, false)
+        set(value) = prefs.edit().putBoolean(KEY_V933ROOTAUTODETECT933, value).apply()
+
+    var v933rotateAutoSensor933: Boolean
+        get() = prefs.getBoolean(KEY_V933ROTATEAUTOSENSOR933, false)
+        set(value) = prefs.edit().putBoolean(KEY_V933ROTATEAUTOSENSOR933, value).apply()
+
+    var v933roundAutoCorner933: Boolean
+        get() = prefs.getBoolean(KEY_V933ROUNDAUTOCORNER933, false)
+        set(value) = prefs.edit().putBoolean(KEY_V933ROUNDAUTOCORNER933, value).apply()
+
+    var v933routeAutoNavigate933: Boolean
+        get() = prefs.getBoolean(KEY_V933ROUTEAUTONAVIGATE933, false)
+        set(value) = prefs.edit().putBoolean(KEY_V933ROUTEAUTONAVIGATE933, value).apply()
+
+    var v933rowAutoHeight933: Boolean
+        get() = prefs.getBoolean(KEY_V933ROWAUTOHEIGHT933, false)
+        set(value) = prefs.edit().putBoolean(KEY_V933ROWAUTOHEIGHT933, value).apply()
+
+    var v933ruleAutoEngine933: Boolean
+        get() = prefs.getBoolean(KEY_V933RULEAUTOENGINE933, false)
+        set(value) = prefs.edit().putBoolean(KEY_V933RULEAUTOENGINE933, value).apply()
+
+    var v933runAutoStartup933: Boolean
+        get() = prefs.getBoolean(KEY_V933RUNAUTOSTARTUP933, false)
+        set(value) = prefs.edit().putBoolean(KEY_V933RUNAUTOSTARTUP933, value).apply()
+
+    var v933runtimeAutoConfig933: Boolean
+        get() = prefs.getBoolean(KEY_V933RUNTIMEAUTOCONFIG933, false)
+        set(value) = prefs.edit().putBoolean(KEY_V933RUNTIMEAUTOCONFIG933, value).apply()
+
+    var v933safeAutoMode933: Boolean
+        get() = prefs.getBoolean(KEY_V933SAFEAUTOMODE933, false)
+        set(value) = prefs.edit().putBoolean(KEY_V933SAFEAUTOMODE933, value).apply()
+
+    var v933sampleAutoRate933: Int
+        get() = prefs.getInt(KEY_V933SAMPLEAUTORATE933, 0)
+        set(value) = prefs.edit().putInt(KEY_V933SAMPLEAUTORATE933, value).apply()
+
+    var v933saveAutoDraft933: Boolean
+        get() = prefs.getBoolean(KEY_V933SAVEAUTODRAFT933, false)
+        set(value) = prefs.edit().putBoolean(KEY_V933SAVEAUTODRAFT933, value).apply()
+
+    var v933scaleAutoDpi933: Boolean
+        get() = prefs.getBoolean(KEY_V933SCALEAUTODPI933, false)
+        set(value) = prefs.edit().putBoolean(KEY_V933SCALEAUTODPI933, value).apply()
+
+    var v934revertAutoVersion934: Boolean
+        get() = prefs.getBoolean(KEY_V934REVERTAUTOVERSION934, false)
+        set(value) = prefs.edit().putBoolean(KEY_V934REVERTAUTOVERSION934, value).apply()
+
+    var v934rightAutoPanel934: Boolean
+        get() = prefs.getBoolean(KEY_V934RIGHTAUTOPANEL934, false)
+        set(value) = prefs.edit().putBoolean(KEY_V934RIGHTAUTOPANEL934, value).apply()
+
+    var v934roleAutoPermission934: Boolean
+        get() = prefs.getBoolean(KEY_V934ROLEAUTOPERMISSION934, false)
+        set(value) = prefs.edit().putBoolean(KEY_V934ROLEAUTOPERMISSION934, value).apply()
+
+    var v934rootAutoDetect934: Boolean
+        get() = prefs.getBoolean(KEY_V934ROOTAUTODETECT934, false)
+        set(value) = prefs.edit().putBoolean(KEY_V934ROOTAUTODETECT934, value).apply()
+
+    var v934rotateAutoSensor934: Boolean
+        get() = prefs.getBoolean(KEY_V934ROTATEAUTOSENSOR934, false)
+        set(value) = prefs.edit().putBoolean(KEY_V934ROTATEAUTOSENSOR934, value).apply()
+
+    var v934roundAutoCorner934: Boolean
+        get() = prefs.getBoolean(KEY_V934ROUNDAUTOCORNER934, false)
+        set(value) = prefs.edit().putBoolean(KEY_V934ROUNDAUTOCORNER934, value).apply()
+
+    var v934routeAutoNavigate934: Boolean
+        get() = prefs.getBoolean(KEY_V934ROUTEAUTONAVIGATE934, false)
+        set(value) = prefs.edit().putBoolean(KEY_V934ROUTEAUTONAVIGATE934, value).apply()
+
+    var v934rowAutoHeight934: Boolean
+        get() = prefs.getBoolean(KEY_V934ROWAUTOHEIGHT934, false)
+        set(value) = prefs.edit().putBoolean(KEY_V934ROWAUTOHEIGHT934, value).apply()
+
+    var v934ruleAutoEngine934: Boolean
+        get() = prefs.getBoolean(KEY_V934RULEAUTOENGINE934, false)
+        set(value) = prefs.edit().putBoolean(KEY_V934RULEAUTOENGINE934, value).apply()
+
+    var v934runAutoStartup934: Boolean
+        get() = prefs.getBoolean(KEY_V934RUNAUTOSTARTUP934, false)
+        set(value) = prefs.edit().putBoolean(KEY_V934RUNAUTOSTARTUP934, value).apply()
+
+    var v934runtimeAutoConfig934: Boolean
+        get() = prefs.getBoolean(KEY_V934RUNTIMEAUTOCONFIG934, false)
+        set(value) = prefs.edit().putBoolean(KEY_V934RUNTIMEAUTOCONFIG934, value).apply()
+
+    var v934safeAutoMode934: Boolean
+        get() = prefs.getBoolean(KEY_V934SAFEAUTOMODE934, false)
+        set(value) = prefs.edit().putBoolean(KEY_V934SAFEAUTOMODE934, value).apply()
+
+    var v934sampleAutoRate934: Int
+        get() = prefs.getInt(KEY_V934SAMPLEAUTORATE934, 0)
+        set(value) = prefs.edit().putInt(KEY_V934SAMPLEAUTORATE934, value).apply()
+
+    var v934saveAutoDraft934: Boolean
+        get() = prefs.getBoolean(KEY_V934SAVEAUTODRAFT934, false)
+        set(value) = prefs.edit().putBoolean(KEY_V934SAVEAUTODRAFT934, value).apply()
+
+    var v934scaleAutoDpi934: Boolean
+        get() = prefs.getBoolean(KEY_V934SCALEAUTODPI934, false)
+        set(value) = prefs.edit().putBoolean(KEY_V934SCALEAUTODPI934, value).apply()
+
+    var v935revertAutoVersion935: Boolean
+        get() = prefs.getBoolean(KEY_V935REVERTAUTOVERSION935, false)
+        set(value) = prefs.edit().putBoolean(KEY_V935REVERTAUTOVERSION935, value).apply()
+
+    var v935rightAutoPanel935: Boolean
+        get() = prefs.getBoolean(KEY_V935RIGHTAUTOPANEL935, false)
+        set(value) = prefs.edit().putBoolean(KEY_V935RIGHTAUTOPANEL935, value).apply()
+
+    var v935roleAutoPermission935: Boolean
+        get() = prefs.getBoolean(KEY_V935ROLEAUTOPERMISSION935, false)
+        set(value) = prefs.edit().putBoolean(KEY_V935ROLEAUTOPERMISSION935, value).apply()
+
+    var v935rootAutoDetect935: Boolean
+        get() = prefs.getBoolean(KEY_V935ROOTAUTODETECT935, false)
+        set(value) = prefs.edit().putBoolean(KEY_V935ROOTAUTODETECT935, value).apply()
+
+    var v935rotateAutoSensor935: Boolean
+        get() = prefs.getBoolean(KEY_V935ROTATEAUTOSENSOR935, false)
+        set(value) = prefs.edit().putBoolean(KEY_V935ROTATEAUTOSENSOR935, value).apply()
+
+    var v935roundAutoCorner935: Boolean
+        get() = prefs.getBoolean(KEY_V935ROUNDAUTOCORNER935, false)
+        set(value) = prefs.edit().putBoolean(KEY_V935ROUNDAUTOCORNER935, value).apply()
+
+    var v935routeAutoNavigate935: Boolean
+        get() = prefs.getBoolean(KEY_V935ROUTEAUTONAVIGATE935, false)
+        set(value) = prefs.edit().putBoolean(KEY_V935ROUTEAUTONAVIGATE935, value).apply()
+
+    var v935rowAutoHeight935: Boolean
+        get() = prefs.getBoolean(KEY_V935ROWAUTOHEIGHT935, false)
+        set(value) = prefs.edit().putBoolean(KEY_V935ROWAUTOHEIGHT935, value).apply()
+
+    var v935ruleAutoEngine935: Boolean
+        get() = prefs.getBoolean(KEY_V935RULEAUTOENGINE935, false)
+        set(value) = prefs.edit().putBoolean(KEY_V935RULEAUTOENGINE935, value).apply()
+
+    var v935runAutoStartup935: Boolean
+        get() = prefs.getBoolean(KEY_V935RUNAUTOSTARTUP935, false)
+        set(value) = prefs.edit().putBoolean(KEY_V935RUNAUTOSTARTUP935, value).apply()
+
+    var v935runtimeAutoConfig935: Boolean
+        get() = prefs.getBoolean(KEY_V935RUNTIMEAUTOCONFIG935, false)
+        set(value) = prefs.edit().putBoolean(KEY_V935RUNTIMEAUTOCONFIG935, value).apply()
+
+    var v935safeAutoMode935: Boolean
+        get() = prefs.getBoolean(KEY_V935SAFEAUTOMODE935, false)
+        set(value) = prefs.edit().putBoolean(KEY_V935SAFEAUTOMODE935, value).apply()
+
+    var v935sampleAutoRate935: Int
+        get() = prefs.getInt(KEY_V935SAMPLEAUTORATE935, 0)
+        set(value) = prefs.edit().putInt(KEY_V935SAMPLEAUTORATE935, value).apply()
+
+    var v935saveAutoDraft935: Boolean
+        get() = prefs.getBoolean(KEY_V935SAVEAUTODRAFT935, false)
+        set(value) = prefs.edit().putBoolean(KEY_V935SAVEAUTODRAFT935, value).apply()
+
+    var v935scaleAutoDpi935: Boolean
+        get() = prefs.getBoolean(KEY_V935SCALEAUTODPI935, false)
+        set(value) = prefs.edit().putBoolean(KEY_V935SCALEAUTODPI935, value).apply()
+
+    var v936revertAutoVersion936: Boolean
+        get() = prefs.getBoolean(KEY_V936REVERTAUTOVERSION936, false)
+        set(value) = prefs.edit().putBoolean(KEY_V936REVERTAUTOVERSION936, value).apply()
+
+    var v936rightAutoPanel936: Boolean
+        get() = prefs.getBoolean(KEY_V936RIGHTAUTOPANEL936, false)
+        set(value) = prefs.edit().putBoolean(KEY_V936RIGHTAUTOPANEL936, value).apply()
+
+    var v936roleAutoPermission936: Boolean
+        get() = prefs.getBoolean(KEY_V936ROLEAUTOPERMISSION936, false)
+        set(value) = prefs.edit().putBoolean(KEY_V936ROLEAUTOPERMISSION936, value).apply()
+
+    var v936rootAutoDetect936: Boolean
+        get() = prefs.getBoolean(KEY_V936ROOTAUTODETECT936, false)
+        set(value) = prefs.edit().putBoolean(KEY_V936ROOTAUTODETECT936, value).apply()
+
+    var v936rotateAutoSensor936: Boolean
+        get() = prefs.getBoolean(KEY_V936ROTATEAUTOSENSOR936, false)
+        set(value) = prefs.edit().putBoolean(KEY_V936ROTATEAUTOSENSOR936, value).apply()
+
+    var v936roundAutoCorner936: Boolean
+        get() = prefs.getBoolean(KEY_V936ROUNDAUTOCORNER936, false)
+        set(value) = prefs.edit().putBoolean(KEY_V936ROUNDAUTOCORNER936, value).apply()
+
+    var v936routeAutoNavigate936: Boolean
+        get() = prefs.getBoolean(KEY_V936ROUTEAUTONAVIGATE936, false)
+        set(value) = prefs.edit().putBoolean(KEY_V936ROUTEAUTONAVIGATE936, value).apply()
+
+    var v936rowAutoHeight936: Boolean
+        get() = prefs.getBoolean(KEY_V936ROWAUTOHEIGHT936, false)
+        set(value) = prefs.edit().putBoolean(KEY_V936ROWAUTOHEIGHT936, value).apply()
+
+    var v936ruleAutoEngine936: Boolean
+        get() = prefs.getBoolean(KEY_V936RULEAUTOENGINE936, false)
+        set(value) = prefs.edit().putBoolean(KEY_V936RULEAUTOENGINE936, value).apply()
+
+    var v936runAutoStartup936: Boolean
+        get() = prefs.getBoolean(KEY_V936RUNAUTOSTARTUP936, false)
+        set(value) = prefs.edit().putBoolean(KEY_V936RUNAUTOSTARTUP936, value).apply()
+
+    var v936runtimeAutoConfig936: Boolean
+        get() = prefs.getBoolean(KEY_V936RUNTIMEAUTOCONFIG936, false)
+        set(value) = prefs.edit().putBoolean(KEY_V936RUNTIMEAUTOCONFIG936, value).apply()
+
+    var v936safeAutoMode936: Boolean
+        get() = prefs.getBoolean(KEY_V936SAFEAUTOMODE936, false)
+        set(value) = prefs.edit().putBoolean(KEY_V936SAFEAUTOMODE936, value).apply()
+
+    var v936sampleAutoRate936: Int
+        get() = prefs.getInt(KEY_V936SAMPLEAUTORATE936, 0)
+        set(value) = prefs.edit().putInt(KEY_V936SAMPLEAUTORATE936, value).apply()
+
+    var v936saveAutoDraft936: Boolean
+        get() = prefs.getBoolean(KEY_V936SAVEAUTODRAFT936, false)
+        set(value) = prefs.edit().putBoolean(KEY_V936SAVEAUTODRAFT936, value).apply()
+
+    var v936scaleAutoDpi936: Boolean
+        get() = prefs.getBoolean(KEY_V936SCALEAUTODPI936, false)
+        set(value) = prefs.edit().putBoolean(KEY_V936SCALEAUTODPI936, value).apply()
+
+    var v937revertAutoVersion937: Boolean
+        get() = prefs.getBoolean(KEY_V937REVERTAUTOVERSION937, false)
+        set(value) = prefs.edit().putBoolean(KEY_V937REVERTAUTOVERSION937, value).apply()
+
+    var v937rightAutoPanel937: Boolean
+        get() = prefs.getBoolean(KEY_V937RIGHTAUTOPANEL937, false)
+        set(value) = prefs.edit().putBoolean(KEY_V937RIGHTAUTOPANEL937, value).apply()
+
+    var v937roleAutoPermission937: Boolean
+        get() = prefs.getBoolean(KEY_V937ROLEAUTOPERMISSION937, false)
+        set(value) = prefs.edit().putBoolean(KEY_V937ROLEAUTOPERMISSION937, value).apply()
+
+    var v937rootAutoDetect937: Boolean
+        get() = prefs.getBoolean(KEY_V937ROOTAUTODETECT937, false)
+        set(value) = prefs.edit().putBoolean(KEY_V937ROOTAUTODETECT937, value).apply()
+
+    var v937rotateAutoSensor937: Boolean
+        get() = prefs.getBoolean(KEY_V937ROTATEAUTOSENSOR937, false)
+        set(value) = prefs.edit().putBoolean(KEY_V937ROTATEAUTOSENSOR937, value).apply()
+
+    var v937roundAutoCorner937: Boolean
+        get() = prefs.getBoolean(KEY_V937ROUNDAUTOCORNER937, false)
+        set(value) = prefs.edit().putBoolean(KEY_V937ROUNDAUTOCORNER937, value).apply()
+
+    var v937routeAutoNavigate937: Boolean
+        get() = prefs.getBoolean(KEY_V937ROUTEAUTONAVIGATE937, false)
+        set(value) = prefs.edit().putBoolean(KEY_V937ROUTEAUTONAVIGATE937, value).apply()
+
+    var v937rowAutoHeight937: Boolean
+        get() = prefs.getBoolean(KEY_V937ROWAUTOHEIGHT937, false)
+        set(value) = prefs.edit().putBoolean(KEY_V937ROWAUTOHEIGHT937, value).apply()
+
+    var v937ruleAutoEngine937: Boolean
+        get() = prefs.getBoolean(KEY_V937RULEAUTOENGINE937, false)
+        set(value) = prefs.edit().putBoolean(KEY_V937RULEAUTOENGINE937, value).apply()
+
+    var v937runAutoStartup937: Boolean
+        get() = prefs.getBoolean(KEY_V937RUNAUTOSTARTUP937, false)
+        set(value) = prefs.edit().putBoolean(KEY_V937RUNAUTOSTARTUP937, value).apply()
+
+    var v937runtimeAutoConfig937: Boolean
+        get() = prefs.getBoolean(KEY_V937RUNTIMEAUTOCONFIG937, false)
+        set(value) = prefs.edit().putBoolean(KEY_V937RUNTIMEAUTOCONFIG937, value).apply()
+
+    var v937safeAutoMode937: Boolean
+        get() = prefs.getBoolean(KEY_V937SAFEAUTOMODE937, false)
+        set(value) = prefs.edit().putBoolean(KEY_V937SAFEAUTOMODE937, value).apply()
+
+    var v937sampleAutoRate937: Int
+        get() = prefs.getInt(KEY_V937SAMPLEAUTORATE937, 0)
+        set(value) = prefs.edit().putInt(KEY_V937SAMPLEAUTORATE937, value).apply()
+
+    var v937saveAutoDraft937: Boolean
+        get() = prefs.getBoolean(KEY_V937SAVEAUTODRAFT937, false)
+        set(value) = prefs.edit().putBoolean(KEY_V937SAVEAUTODRAFT937, value).apply()
+
+    var v937scaleAutoDpi937: Boolean
+        get() = prefs.getBoolean(KEY_V937SCALEAUTODPI937, false)
+        set(value) = prefs.edit().putBoolean(KEY_V937SCALEAUTODPI937, value).apply()
+
+    var v938revertAutoVersion938: Boolean
+        get() = prefs.getBoolean(KEY_V938REVERTAUTOVERSION938, false)
+        set(value) = prefs.edit().putBoolean(KEY_V938REVERTAUTOVERSION938, value).apply()
+
+    var v938rightAutoPanel938: Boolean
+        get() = prefs.getBoolean(KEY_V938RIGHTAUTOPANEL938, false)
+        set(value) = prefs.edit().putBoolean(KEY_V938RIGHTAUTOPANEL938, value).apply()
+
+    var v938roleAutoPermission938: Boolean
+        get() = prefs.getBoolean(KEY_V938ROLEAUTOPERMISSION938, false)
+        set(value) = prefs.edit().putBoolean(KEY_V938ROLEAUTOPERMISSION938, value).apply()
+
+    var v938rootAutoDetect938: Boolean
+        get() = prefs.getBoolean(KEY_V938ROOTAUTODETECT938, false)
+        set(value) = prefs.edit().putBoolean(KEY_V938ROOTAUTODETECT938, value).apply()
+
+    var v938rotateAutoSensor938: Boolean
+        get() = prefs.getBoolean(KEY_V938ROTATEAUTOSENSOR938, false)
+        set(value) = prefs.edit().putBoolean(KEY_V938ROTATEAUTOSENSOR938, value).apply()
+
+    var v938roundAutoCorner938: Boolean
+        get() = prefs.getBoolean(KEY_V938ROUNDAUTOCORNER938, false)
+        set(value) = prefs.edit().putBoolean(KEY_V938ROUNDAUTOCORNER938, value).apply()
+
+    var v938routeAutoNavigate938: Boolean
+        get() = prefs.getBoolean(KEY_V938ROUTEAUTONAVIGATE938, false)
+        set(value) = prefs.edit().putBoolean(KEY_V938ROUTEAUTONAVIGATE938, value).apply()
+
+    var v938rowAutoHeight938: Boolean
+        get() = prefs.getBoolean(KEY_V938ROWAUTOHEIGHT938, false)
+        set(value) = prefs.edit().putBoolean(KEY_V938ROWAUTOHEIGHT938, value).apply()
+
+    var v938ruleAutoEngine938: Boolean
+        get() = prefs.getBoolean(KEY_V938RULEAUTOENGINE938, false)
+        set(value) = prefs.edit().putBoolean(KEY_V938RULEAUTOENGINE938, value).apply()
+
+    var v938runAutoStartup938: Boolean
+        get() = prefs.getBoolean(KEY_V938RUNAUTOSTARTUP938, false)
+        set(value) = prefs.edit().putBoolean(KEY_V938RUNAUTOSTARTUP938, value).apply()
+
+    var v938runtimeAutoConfig938: Boolean
+        get() = prefs.getBoolean(KEY_V938RUNTIMEAUTOCONFIG938, false)
+        set(value) = prefs.edit().putBoolean(KEY_V938RUNTIMEAUTOCONFIG938, value).apply()
+
+    var v938safeAutoMode938: Boolean
+        get() = prefs.getBoolean(KEY_V938SAFEAUTOMODE938, false)
+        set(value) = prefs.edit().putBoolean(KEY_V938SAFEAUTOMODE938, value).apply()
+
+    var v938sampleAutoRate938: Int
+        get() = prefs.getInt(KEY_V938SAMPLEAUTORATE938, 0)
+        set(value) = prefs.edit().putInt(KEY_V938SAMPLEAUTORATE938, value).apply()
+
+    var v938saveAutoDraft938: Boolean
+        get() = prefs.getBoolean(KEY_V938SAVEAUTODRAFT938, false)
+        set(value) = prefs.edit().putBoolean(KEY_V938SAVEAUTODRAFT938, value).apply()
+
+    var v938scaleAutoDpi938: Boolean
+        get() = prefs.getBoolean(KEY_V938SCALEAUTODPI938, false)
+        set(value) = prefs.edit().putBoolean(KEY_V938SCALEAUTODPI938, value).apply()
+
+    var v939revertAutoVersion939: Boolean
+        get() = prefs.getBoolean(KEY_V939REVERTAUTOVERSION939, false)
+        set(value) = prefs.edit().putBoolean(KEY_V939REVERTAUTOVERSION939, value).apply()
+
+    var v939rightAutoPanel939: Boolean
+        get() = prefs.getBoolean(KEY_V939RIGHTAUTOPANEL939, false)
+        set(value) = prefs.edit().putBoolean(KEY_V939RIGHTAUTOPANEL939, value).apply()
+
+    var v939roleAutoPermission939: Boolean
+        get() = prefs.getBoolean(KEY_V939ROLEAUTOPERMISSION939, false)
+        set(value) = prefs.edit().putBoolean(KEY_V939ROLEAUTOPERMISSION939, value).apply()
+
+    var v939rootAutoDetect939: Boolean
+        get() = prefs.getBoolean(KEY_V939ROOTAUTODETECT939, false)
+        set(value) = prefs.edit().putBoolean(KEY_V939ROOTAUTODETECT939, value).apply()
+
+    var v939rotateAutoSensor939: Boolean
+        get() = prefs.getBoolean(KEY_V939ROTATEAUTOSENSOR939, false)
+        set(value) = prefs.edit().putBoolean(KEY_V939ROTATEAUTOSENSOR939, value).apply()
+
+    var v939roundAutoCorner939: Boolean
+        get() = prefs.getBoolean(KEY_V939ROUNDAUTOCORNER939, false)
+        set(value) = prefs.edit().putBoolean(KEY_V939ROUNDAUTOCORNER939, value).apply()
+
+    var v939routeAutoNavigate939: Boolean
+        get() = prefs.getBoolean(KEY_V939ROUTEAUTONAVIGATE939, false)
+        set(value) = prefs.edit().putBoolean(KEY_V939ROUTEAUTONAVIGATE939, value).apply()
+
+    var v939rowAutoHeight939: Boolean
+        get() = prefs.getBoolean(KEY_V939ROWAUTOHEIGHT939, false)
+        set(value) = prefs.edit().putBoolean(KEY_V939ROWAUTOHEIGHT939, value).apply()
+
+    var v939ruleAutoEngine939: Boolean
+        get() = prefs.getBoolean(KEY_V939RULEAUTOENGINE939, false)
+        set(value) = prefs.edit().putBoolean(KEY_V939RULEAUTOENGINE939, value).apply()
+
+    var v939runAutoStartup939: Boolean
+        get() = prefs.getBoolean(KEY_V939RUNAUTOSTARTUP939, false)
+        set(value) = prefs.edit().putBoolean(KEY_V939RUNAUTOSTARTUP939, value).apply()
+
+    var v939runtimeAutoConfig939: Boolean
+        get() = prefs.getBoolean(KEY_V939RUNTIMEAUTOCONFIG939, false)
+        set(value) = prefs.edit().putBoolean(KEY_V939RUNTIMEAUTOCONFIG939, value).apply()
+
+    var v939safeAutoMode939: Boolean
+        get() = prefs.getBoolean(KEY_V939SAFEAUTOMODE939, false)
+        set(value) = prefs.edit().putBoolean(KEY_V939SAFEAUTOMODE939, value).apply()
+
+    var v939sampleAutoRate939: Int
+        get() = prefs.getInt(KEY_V939SAMPLEAUTORATE939, 0)
+        set(value) = prefs.edit().putInt(KEY_V939SAMPLEAUTORATE939, value).apply()
+
+    var v939saveAutoDraft939: Boolean
+        get() = prefs.getBoolean(KEY_V939SAVEAUTODRAFT939, false)
+        set(value) = prefs.edit().putBoolean(KEY_V939SAVEAUTODRAFT939, value).apply()
+
+    var v939scaleAutoDpi939: Boolean
+        get() = prefs.getBoolean(KEY_V939SCALEAUTODPI939, false)
+        set(value) = prefs.edit().putBoolean(KEY_V939SCALEAUTODPI939, value).apply()
+
+    var v940revertAutoVersion940: Boolean
+        get() = prefs.getBoolean(KEY_V940REVERTAUTOVERSION940, false)
+        set(value) = prefs.edit().putBoolean(KEY_V940REVERTAUTOVERSION940, value).apply()
+
+    var v940rightAutoPanel940: Boolean
+        get() = prefs.getBoolean(KEY_V940RIGHTAUTOPANEL940, false)
+        set(value) = prefs.edit().putBoolean(KEY_V940RIGHTAUTOPANEL940, value).apply()
+
+    var v940roleAutoPermission940: Boolean
+        get() = prefs.getBoolean(KEY_V940ROLEAUTOPERMISSION940, false)
+        set(value) = prefs.edit().putBoolean(KEY_V940ROLEAUTOPERMISSION940, value).apply()
+
+    var v940rootAutoDetect940: Boolean
+        get() = prefs.getBoolean(KEY_V940ROOTAUTODETECT940, false)
+        set(value) = prefs.edit().putBoolean(KEY_V940ROOTAUTODETECT940, value).apply()
+
+    var v940rotateAutoSensor940: Boolean
+        get() = prefs.getBoolean(KEY_V940ROTATEAUTOSENSOR940, false)
+        set(value) = prefs.edit().putBoolean(KEY_V940ROTATEAUTOSENSOR940, value).apply()
+
+    var v940roundAutoCorner940: Boolean
+        get() = prefs.getBoolean(KEY_V940ROUNDAUTOCORNER940, false)
+        set(value) = prefs.edit().putBoolean(KEY_V940ROUNDAUTOCORNER940, value).apply()
+
+    var v940routeAutoNavigate940: Boolean
+        get() = prefs.getBoolean(KEY_V940ROUTEAUTONAVIGATE940, false)
+        set(value) = prefs.edit().putBoolean(KEY_V940ROUTEAUTONAVIGATE940, value).apply()
+
+    var v940rowAutoHeight940: Boolean
+        get() = prefs.getBoolean(KEY_V940ROWAUTOHEIGHT940, false)
+        set(value) = prefs.edit().putBoolean(KEY_V940ROWAUTOHEIGHT940, value).apply()
+
+    var v940ruleAutoEngine940: Boolean
+        get() = prefs.getBoolean(KEY_V940RULEAUTOENGINE940, false)
+        set(value) = prefs.edit().putBoolean(KEY_V940RULEAUTOENGINE940, value).apply()
+
+    var v940runAutoStartup940: Boolean
+        get() = prefs.getBoolean(KEY_V940RUNAUTOSTARTUP940, false)
+        set(value) = prefs.edit().putBoolean(KEY_V940RUNAUTOSTARTUP940, value).apply()
+
+    var v940runtimeAutoConfig940: Boolean
+        get() = prefs.getBoolean(KEY_V940RUNTIMEAUTOCONFIG940, false)
+        set(value) = prefs.edit().putBoolean(KEY_V940RUNTIMEAUTOCONFIG940, value).apply()
+
+    var v940safeAutoMode940: Boolean
+        get() = prefs.getBoolean(KEY_V940SAFEAUTOMODE940, false)
+        set(value) = prefs.edit().putBoolean(KEY_V940SAFEAUTOMODE940, value).apply()
+
+    var v940sampleAutoRate940: Int
+        get() = prefs.getInt(KEY_V940SAMPLEAUTORATE940, 0)
+        set(value) = prefs.edit().putInt(KEY_V940SAMPLEAUTORATE940, value).apply()
+
+    var v940saveAutoDraft940: Boolean
+        get() = prefs.getBoolean(KEY_V940SAVEAUTODRAFT940, false)
+        set(value) = prefs.edit().putBoolean(KEY_V940SAVEAUTODRAFT940, value).apply()
+
+    var v940scaleAutoDpi940: Boolean
+        get() = prefs.getBoolean(KEY_V940SCALEAUTODPI940, false)
+        set(value) = prefs.edit().putBoolean(KEY_V940SCALEAUTODPI940, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -78930,5 +79530,155 @@ class AppPrefs(context: Context) {
         const val KEY_V930RETRYAUTOBACKOFF930 = "v930retryAutoBackoff930" // v930 Retry Auto Backoff930
         const val KEY_V930RETURNAUTOHOME930 = "v930returnAutoHome930" // v930 Return Auto Home930
         const val KEY_V930REVERSEAUTOORDER930 = "v930reverseAutoOrder930" // v930 Reverse Auto Order930
+        const val KEY_V931REVERTAUTOVERSION931 = "v931revertAutoVersion931" // v931 Revert Auto Version931
+        const val KEY_V931RIGHTAUTOPANEL931 = "v931rightAutoPanel931" // v931 Right Auto Panel931
+        const val KEY_V931ROLEAUTOPERMISSION931 = "v931roleAutoPermission931" // v931 Role Auto Permission931
+        const val KEY_V931ROOTAUTODETECT931 = "v931rootAutoDetect931" // v931 Root Auto Detect931
+        const val KEY_V931ROTATEAUTOSENSOR931 = "v931rotateAutoSensor931" // v931 Rotate Auto Sensor931
+        const val KEY_V931ROUNDAUTOCORNER931 = "v931roundAutoCorner931" // v931 Round Auto Corner931
+        const val KEY_V931ROUTEAUTONAVIGATE931 = "v931routeAutoNavigate931" // v931 Route Auto Navigate931
+        const val KEY_V931ROWAUTOHEIGHT931 = "v931rowAutoHeight931" // v931 Row Auto Height931
+        const val KEY_V931RULEAUTOENGINE931 = "v931ruleAutoEngine931" // v931 Rule Auto Engine931
+        const val KEY_V931RUNAUTOSTARTUP931 = "v931runAutoStartup931" // v931 Run Auto Startup931
+        const val KEY_V931RUNTIMEAUTOCONFIG931 = "v931runtimeAutoConfig931" // v931 Runtime Auto Config931
+        const val KEY_V931SAFEAUTOMODE931 = "v931safeAutoMode931" // v931 Safe Auto Mode931
+        const val KEY_V931SAMPLEAUTORATE931 = "v931sampleAutoRate931" // v931 Sample Auto Rate931
+        const val KEY_V931SAVEAUTODRAFT931 = "v931saveAutoDraft931" // v931 Save Auto Draft931
+        const val KEY_V931SCALEAUTODPI931 = "v931scaleAutoDpi931" // v931 Scale Auto Dpi931
+        const val KEY_V932REVERTAUTOVERSION932 = "v932revertAutoVersion932" // v932 Revert Auto Version932
+        const val KEY_V932RIGHTAUTOPANEL932 = "v932rightAutoPanel932" // v932 Right Auto Panel932
+        const val KEY_V932ROLEAUTOPERMISSION932 = "v932roleAutoPermission932" // v932 Role Auto Permission932
+        const val KEY_V932ROOTAUTODETECT932 = "v932rootAutoDetect932" // v932 Root Auto Detect932
+        const val KEY_V932ROTATEAUTOSENSOR932 = "v932rotateAutoSensor932" // v932 Rotate Auto Sensor932
+        const val KEY_V932ROUNDAUTOCORNER932 = "v932roundAutoCorner932" // v932 Round Auto Corner932
+        const val KEY_V932ROUTEAUTONAVIGATE932 = "v932routeAutoNavigate932" // v932 Route Auto Navigate932
+        const val KEY_V932ROWAUTOHEIGHT932 = "v932rowAutoHeight932" // v932 Row Auto Height932
+        const val KEY_V932RULEAUTOENGINE932 = "v932ruleAutoEngine932" // v932 Rule Auto Engine932
+        const val KEY_V932RUNAUTOSTARTUP932 = "v932runAutoStartup932" // v932 Run Auto Startup932
+        const val KEY_V932RUNTIMEAUTOCONFIG932 = "v932runtimeAutoConfig932" // v932 Runtime Auto Config932
+        const val KEY_V932SAFEAUTOMODE932 = "v932safeAutoMode932" // v932 Safe Auto Mode932
+        const val KEY_V932SAMPLEAUTORATE932 = "v932sampleAutoRate932" // v932 Sample Auto Rate932
+        const val KEY_V932SAVEAUTODRAFT932 = "v932saveAutoDraft932" // v932 Save Auto Draft932
+        const val KEY_V932SCALEAUTODPI932 = "v932scaleAutoDpi932" // v932 Scale Auto Dpi932
+        const val KEY_V933REVERTAUTOVERSION933 = "v933revertAutoVersion933" // v933 Revert Auto Version933
+        const val KEY_V933RIGHTAUTOPANEL933 = "v933rightAutoPanel933" // v933 Right Auto Panel933
+        const val KEY_V933ROLEAUTOPERMISSION933 = "v933roleAutoPermission933" // v933 Role Auto Permission933
+        const val KEY_V933ROOTAUTODETECT933 = "v933rootAutoDetect933" // v933 Root Auto Detect933
+        const val KEY_V933ROTATEAUTOSENSOR933 = "v933rotateAutoSensor933" // v933 Rotate Auto Sensor933
+        const val KEY_V933ROUNDAUTOCORNER933 = "v933roundAutoCorner933" // v933 Round Auto Corner933
+        const val KEY_V933ROUTEAUTONAVIGATE933 = "v933routeAutoNavigate933" // v933 Route Auto Navigate933
+        const val KEY_V933ROWAUTOHEIGHT933 = "v933rowAutoHeight933" // v933 Row Auto Height933
+        const val KEY_V933RULEAUTOENGINE933 = "v933ruleAutoEngine933" // v933 Rule Auto Engine933
+        const val KEY_V933RUNAUTOSTARTUP933 = "v933runAutoStartup933" // v933 Run Auto Startup933
+        const val KEY_V933RUNTIMEAUTOCONFIG933 = "v933runtimeAutoConfig933" // v933 Runtime Auto Config933
+        const val KEY_V933SAFEAUTOMODE933 = "v933safeAutoMode933" // v933 Safe Auto Mode933
+        const val KEY_V933SAMPLEAUTORATE933 = "v933sampleAutoRate933" // v933 Sample Auto Rate933
+        const val KEY_V933SAVEAUTODRAFT933 = "v933saveAutoDraft933" // v933 Save Auto Draft933
+        const val KEY_V933SCALEAUTODPI933 = "v933scaleAutoDpi933" // v933 Scale Auto Dpi933
+        const val KEY_V934REVERTAUTOVERSION934 = "v934revertAutoVersion934" // v934 Revert Auto Version934
+        const val KEY_V934RIGHTAUTOPANEL934 = "v934rightAutoPanel934" // v934 Right Auto Panel934
+        const val KEY_V934ROLEAUTOPERMISSION934 = "v934roleAutoPermission934" // v934 Role Auto Permission934
+        const val KEY_V934ROOTAUTODETECT934 = "v934rootAutoDetect934" // v934 Root Auto Detect934
+        const val KEY_V934ROTATEAUTOSENSOR934 = "v934rotateAutoSensor934" // v934 Rotate Auto Sensor934
+        const val KEY_V934ROUNDAUTOCORNER934 = "v934roundAutoCorner934" // v934 Round Auto Corner934
+        const val KEY_V934ROUTEAUTONAVIGATE934 = "v934routeAutoNavigate934" // v934 Route Auto Navigate934
+        const val KEY_V934ROWAUTOHEIGHT934 = "v934rowAutoHeight934" // v934 Row Auto Height934
+        const val KEY_V934RULEAUTOENGINE934 = "v934ruleAutoEngine934" // v934 Rule Auto Engine934
+        const val KEY_V934RUNAUTOSTARTUP934 = "v934runAutoStartup934" // v934 Run Auto Startup934
+        const val KEY_V934RUNTIMEAUTOCONFIG934 = "v934runtimeAutoConfig934" // v934 Runtime Auto Config934
+        const val KEY_V934SAFEAUTOMODE934 = "v934safeAutoMode934" // v934 Safe Auto Mode934
+        const val KEY_V934SAMPLEAUTORATE934 = "v934sampleAutoRate934" // v934 Sample Auto Rate934
+        const val KEY_V934SAVEAUTODRAFT934 = "v934saveAutoDraft934" // v934 Save Auto Draft934
+        const val KEY_V934SCALEAUTODPI934 = "v934scaleAutoDpi934" // v934 Scale Auto Dpi934
+        const val KEY_V935REVERTAUTOVERSION935 = "v935revertAutoVersion935" // v935 Revert Auto Version935
+        const val KEY_V935RIGHTAUTOPANEL935 = "v935rightAutoPanel935" // v935 Right Auto Panel935
+        const val KEY_V935ROLEAUTOPERMISSION935 = "v935roleAutoPermission935" // v935 Role Auto Permission935
+        const val KEY_V935ROOTAUTODETECT935 = "v935rootAutoDetect935" // v935 Root Auto Detect935
+        const val KEY_V935ROTATEAUTOSENSOR935 = "v935rotateAutoSensor935" // v935 Rotate Auto Sensor935
+        const val KEY_V935ROUNDAUTOCORNER935 = "v935roundAutoCorner935" // v935 Round Auto Corner935
+        const val KEY_V935ROUTEAUTONAVIGATE935 = "v935routeAutoNavigate935" // v935 Route Auto Navigate935
+        const val KEY_V935ROWAUTOHEIGHT935 = "v935rowAutoHeight935" // v935 Row Auto Height935
+        const val KEY_V935RULEAUTOENGINE935 = "v935ruleAutoEngine935" // v935 Rule Auto Engine935
+        const val KEY_V935RUNAUTOSTARTUP935 = "v935runAutoStartup935" // v935 Run Auto Startup935
+        const val KEY_V935RUNTIMEAUTOCONFIG935 = "v935runtimeAutoConfig935" // v935 Runtime Auto Config935
+        const val KEY_V935SAFEAUTOMODE935 = "v935safeAutoMode935" // v935 Safe Auto Mode935
+        const val KEY_V935SAMPLEAUTORATE935 = "v935sampleAutoRate935" // v935 Sample Auto Rate935
+        const val KEY_V935SAVEAUTODRAFT935 = "v935saveAutoDraft935" // v935 Save Auto Draft935
+        const val KEY_V935SCALEAUTODPI935 = "v935scaleAutoDpi935" // v935 Scale Auto Dpi935
+        const val KEY_V936REVERTAUTOVERSION936 = "v936revertAutoVersion936" // v936 Revert Auto Version936
+        const val KEY_V936RIGHTAUTOPANEL936 = "v936rightAutoPanel936" // v936 Right Auto Panel936
+        const val KEY_V936ROLEAUTOPERMISSION936 = "v936roleAutoPermission936" // v936 Role Auto Permission936
+        const val KEY_V936ROOTAUTODETECT936 = "v936rootAutoDetect936" // v936 Root Auto Detect936
+        const val KEY_V936ROTATEAUTOSENSOR936 = "v936rotateAutoSensor936" // v936 Rotate Auto Sensor936
+        const val KEY_V936ROUNDAUTOCORNER936 = "v936roundAutoCorner936" // v936 Round Auto Corner936
+        const val KEY_V936ROUTEAUTONAVIGATE936 = "v936routeAutoNavigate936" // v936 Route Auto Navigate936
+        const val KEY_V936ROWAUTOHEIGHT936 = "v936rowAutoHeight936" // v936 Row Auto Height936
+        const val KEY_V936RULEAUTOENGINE936 = "v936ruleAutoEngine936" // v936 Rule Auto Engine936
+        const val KEY_V936RUNAUTOSTARTUP936 = "v936runAutoStartup936" // v936 Run Auto Startup936
+        const val KEY_V936RUNTIMEAUTOCONFIG936 = "v936runtimeAutoConfig936" // v936 Runtime Auto Config936
+        const val KEY_V936SAFEAUTOMODE936 = "v936safeAutoMode936" // v936 Safe Auto Mode936
+        const val KEY_V936SAMPLEAUTORATE936 = "v936sampleAutoRate936" // v936 Sample Auto Rate936
+        const val KEY_V936SAVEAUTODRAFT936 = "v936saveAutoDraft936" // v936 Save Auto Draft936
+        const val KEY_V936SCALEAUTODPI936 = "v936scaleAutoDpi936" // v936 Scale Auto Dpi936
+        const val KEY_V937REVERTAUTOVERSION937 = "v937revertAutoVersion937" // v937 Revert Auto Version937
+        const val KEY_V937RIGHTAUTOPANEL937 = "v937rightAutoPanel937" // v937 Right Auto Panel937
+        const val KEY_V937ROLEAUTOPERMISSION937 = "v937roleAutoPermission937" // v937 Role Auto Permission937
+        const val KEY_V937ROOTAUTODETECT937 = "v937rootAutoDetect937" // v937 Root Auto Detect937
+        const val KEY_V937ROTATEAUTOSENSOR937 = "v937rotateAutoSensor937" // v937 Rotate Auto Sensor937
+        const val KEY_V937ROUNDAUTOCORNER937 = "v937roundAutoCorner937" // v937 Round Auto Corner937
+        const val KEY_V937ROUTEAUTONAVIGATE937 = "v937routeAutoNavigate937" // v937 Route Auto Navigate937
+        const val KEY_V937ROWAUTOHEIGHT937 = "v937rowAutoHeight937" // v937 Row Auto Height937
+        const val KEY_V937RULEAUTOENGINE937 = "v937ruleAutoEngine937" // v937 Rule Auto Engine937
+        const val KEY_V937RUNAUTOSTARTUP937 = "v937runAutoStartup937" // v937 Run Auto Startup937
+        const val KEY_V937RUNTIMEAUTOCONFIG937 = "v937runtimeAutoConfig937" // v937 Runtime Auto Config937
+        const val KEY_V937SAFEAUTOMODE937 = "v937safeAutoMode937" // v937 Safe Auto Mode937
+        const val KEY_V937SAMPLEAUTORATE937 = "v937sampleAutoRate937" // v937 Sample Auto Rate937
+        const val KEY_V937SAVEAUTODRAFT937 = "v937saveAutoDraft937" // v937 Save Auto Draft937
+        const val KEY_V937SCALEAUTODPI937 = "v937scaleAutoDpi937" // v937 Scale Auto Dpi937
+        const val KEY_V938REVERTAUTOVERSION938 = "v938revertAutoVersion938" // v938 Revert Auto Version938
+        const val KEY_V938RIGHTAUTOPANEL938 = "v938rightAutoPanel938" // v938 Right Auto Panel938
+        const val KEY_V938ROLEAUTOPERMISSION938 = "v938roleAutoPermission938" // v938 Role Auto Permission938
+        const val KEY_V938ROOTAUTODETECT938 = "v938rootAutoDetect938" // v938 Root Auto Detect938
+        const val KEY_V938ROTATEAUTOSENSOR938 = "v938rotateAutoSensor938" // v938 Rotate Auto Sensor938
+        const val KEY_V938ROUNDAUTOCORNER938 = "v938roundAutoCorner938" // v938 Round Auto Corner938
+        const val KEY_V938ROUTEAUTONAVIGATE938 = "v938routeAutoNavigate938" // v938 Route Auto Navigate938
+        const val KEY_V938ROWAUTOHEIGHT938 = "v938rowAutoHeight938" // v938 Row Auto Height938
+        const val KEY_V938RULEAUTOENGINE938 = "v938ruleAutoEngine938" // v938 Rule Auto Engine938
+        const val KEY_V938RUNAUTOSTARTUP938 = "v938runAutoStartup938" // v938 Run Auto Startup938
+        const val KEY_V938RUNTIMEAUTOCONFIG938 = "v938runtimeAutoConfig938" // v938 Runtime Auto Config938
+        const val KEY_V938SAFEAUTOMODE938 = "v938safeAutoMode938" // v938 Safe Auto Mode938
+        const val KEY_V938SAMPLEAUTORATE938 = "v938sampleAutoRate938" // v938 Sample Auto Rate938
+        const val KEY_V938SAVEAUTODRAFT938 = "v938saveAutoDraft938" // v938 Save Auto Draft938
+        const val KEY_V938SCALEAUTODPI938 = "v938scaleAutoDpi938" // v938 Scale Auto Dpi938
+        const val KEY_V939REVERTAUTOVERSION939 = "v939revertAutoVersion939" // v939 Revert Auto Version939
+        const val KEY_V939RIGHTAUTOPANEL939 = "v939rightAutoPanel939" // v939 Right Auto Panel939
+        const val KEY_V939ROLEAUTOPERMISSION939 = "v939roleAutoPermission939" // v939 Role Auto Permission939
+        const val KEY_V939ROOTAUTODETECT939 = "v939rootAutoDetect939" // v939 Root Auto Detect939
+        const val KEY_V939ROTATEAUTOSENSOR939 = "v939rotateAutoSensor939" // v939 Rotate Auto Sensor939
+        const val KEY_V939ROUNDAUTOCORNER939 = "v939roundAutoCorner939" // v939 Round Auto Corner939
+        const val KEY_V939ROUTEAUTONAVIGATE939 = "v939routeAutoNavigate939" // v939 Route Auto Navigate939
+        const val KEY_V939ROWAUTOHEIGHT939 = "v939rowAutoHeight939" // v939 Row Auto Height939
+        const val KEY_V939RULEAUTOENGINE939 = "v939ruleAutoEngine939" // v939 Rule Auto Engine939
+        const val KEY_V939RUNAUTOSTARTUP939 = "v939runAutoStartup939" // v939 Run Auto Startup939
+        const val KEY_V939RUNTIMEAUTOCONFIG939 = "v939runtimeAutoConfig939" // v939 Runtime Auto Config939
+        const val KEY_V939SAFEAUTOMODE939 = "v939safeAutoMode939" // v939 Safe Auto Mode939
+        const val KEY_V939SAMPLEAUTORATE939 = "v939sampleAutoRate939" // v939 Sample Auto Rate939
+        const val KEY_V939SAVEAUTODRAFT939 = "v939saveAutoDraft939" // v939 Save Auto Draft939
+        const val KEY_V939SCALEAUTODPI939 = "v939scaleAutoDpi939" // v939 Scale Auto Dpi939
+        const val KEY_V940REVERTAUTOVERSION940 = "v940revertAutoVersion940" // v940 Revert Auto Version940
+        const val KEY_V940RIGHTAUTOPANEL940 = "v940rightAutoPanel940" // v940 Right Auto Panel940
+        const val KEY_V940ROLEAUTOPERMISSION940 = "v940roleAutoPermission940" // v940 Role Auto Permission940
+        const val KEY_V940ROOTAUTODETECT940 = "v940rootAutoDetect940" // v940 Root Auto Detect940
+        const val KEY_V940ROTATEAUTOSENSOR940 = "v940rotateAutoSensor940" // v940 Rotate Auto Sensor940
+        const val KEY_V940ROUNDAUTOCORNER940 = "v940roundAutoCorner940" // v940 Round Auto Corner940
+        const val KEY_V940ROUTEAUTONAVIGATE940 = "v940routeAutoNavigate940" // v940 Route Auto Navigate940
+        const val KEY_V940ROWAUTOHEIGHT940 = "v940rowAutoHeight940" // v940 Row Auto Height940
+        const val KEY_V940RULEAUTOENGINE940 = "v940ruleAutoEngine940" // v940 Rule Auto Engine940
+        const val KEY_V940RUNAUTOSTARTUP940 = "v940runAutoStartup940" // v940 Run Auto Startup940
+        const val KEY_V940RUNTIMEAUTOCONFIG940 = "v940runtimeAutoConfig940" // v940 Runtime Auto Config940
+        const val KEY_V940SAFEAUTOMODE940 = "v940safeAutoMode940" // v940 Safe Auto Mode940
+        const val KEY_V940SAMPLEAUTORATE940 = "v940sampleAutoRate940" // v940 Sample Auto Rate940
+        const val KEY_V940SAVEAUTODRAFT940 = "v940saveAutoDraft940" // v940 Save Auto Draft940
+        const val KEY_V940SCALEAUTODPI940 = "v940scaleAutoDpi940" // v940 Scale Auto Dpi940
     }
 }
