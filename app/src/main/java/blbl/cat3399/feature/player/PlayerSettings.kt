@@ -92585,3 +92585,1213 @@ internal fun PlayerActivity.showV630BridgeAutoConnect630Toggle() {
     AppToast.show(this, "Bridge Auto Connect630: ${if (!current) "ON" else "OFF"}")
 }
 
+// v631: Browse Auto History631
+internal fun PlayerActivity.showV631BrowseAutoHistory631Toggle() {
+    val current = BiliClient.prefs.v631browseAutoHistory631
+    BiliClient.prefs.v631browseAutoHistory631 = !current
+    AppToast.show(this, "Browse Auto History631: ${if (!current) "ON" else "OFF"}")
+}
+
+// v631: Bucket Auto Clean631
+internal fun PlayerActivity.showV631BucketAutoClean631Toggle() {
+    val current = BiliClient.prefs.v631bucketAutoClean631
+    BiliClient.prefs.v631bucketAutoClean631 = !current
+    AppToast.show(this, "Bucket Auto Clean631: ${if (!current) "ON" else "OFF"}")
+}
+
+// v631: Build Auto Version631
+internal fun PlayerActivity.showV631BuildAutoVersion631Toggle() {
+    val current = BiliClient.prefs.v631buildAutoVersion631
+    BiliClient.prefs.v631buildAutoVersion631 = !current
+    AppToast.show(this, "Build Auto Version631: ${if (!current) "ON" else "OFF"}")
+}
+
+// v631: Bulk Auto Import631
+internal fun PlayerActivity.showV631BulkAutoImport631Toggle() {
+    val current = BiliClient.prefs.v631bulkAutoImport631
+    BiliClient.prefs.v631bulkAutoImport631 = !current
+    AppToast.show(this, "Bulk Auto Import631: ${if (!current) "ON" else "OFF"}")
+}
+
+// v631: Button Auto Haptic631
+internal fun PlayerActivity.showV631ButtonAutoHaptic631Toggle() {
+    val current = BiliClient.prefs.v631buttonAutoHaptic631
+    BiliClient.prefs.v631buttonAutoHaptic631 = !current
+    AppToast.show(this, "Button Auto Haptic631: ${if (!current) "ON" else "OFF"}")
+}
+
+// v631: Byte Auto Convert631
+internal fun PlayerActivity.showV631ByteAutoConvert631Toggle() {
+    val current = BiliClient.prefs.v631byteAutoConvert631
+    BiliClient.prefs.v631byteAutoConvert631 = !current
+    AppToast.show(this, "Byte Auto Convert631: ${if (!current) "ON" else "OFF"}")
+}
+
+// v631: Calibrate Auto Color631
+internal fun PlayerActivity.showV631CalibrateAutoColor631Toggle() {
+    val current = BiliClient.prefs.v631calibrateAutoColor631
+    BiliClient.prefs.v631calibrateAutoColor631 = !current
+    AppToast.show(this, "Calibrate Auto Color631: ${if (!current) "ON" else "OFF"}")
+}
+
+// v631: Call Auto Log631
+internal fun PlayerActivity.showV631CallAutoLog631Toggle() {
+    val current = BiliClient.prefs.v631callAutoLog631
+    BiliClient.prefs.v631callAutoLog631 = !current
+    AppToast.show(this, "Call Auto Log631: ${if (!current) "ON" else "OFF"}")
+}
+
+// v631: Camera Auto Focus631
+internal fun PlayerActivity.showV631CameraAutoFocus631Toggle() {
+    val current = BiliClient.prefs.v631cameraAutoFocus631
+    BiliClient.prefs.v631cameraAutoFocus631 = !current
+    AppToast.show(this, "Camera Auto Focus631: ${if (!current) "ON" else "OFF"}")
+}
+
+// v631: Campus Auto Select631
+internal fun PlayerActivity.showV631CampusAutoSelect631Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v631campusAutoSelect631).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Campus Auto Select631",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v631campusAutoSelect631 = value
+        AppToast.show(this, "Campus Auto Select631: $value")
+    }
+}
+
+// v631: Cancel Auto Undo631
+internal fun PlayerActivity.showV631CancelAutoUndo631Toggle() {
+    val current = BiliClient.prefs.v631cancelAutoUndo631
+    BiliClient.prefs.v631cancelAutoUndo631 = !current
+    AppToast.show(this, "Cancel Auto Undo631: ${if (!current) "ON" else "OFF"}")
+}
+
+// v631: Capture Auto Mode631
+internal fun PlayerActivity.showV631CaptureAutoMode631Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v631captureAutoMode631).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Capture Auto Mode631",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v631captureAutoMode631 = value
+        AppToast.show(this, "Capture Auto Mode631: $value")
+    }
+}
+
+// v631: Caret Auto Blink631
+internal fun PlayerActivity.showV631CaretAutoBlink631Toggle() {
+    val current = BiliClient.prefs.v631caretAutoBlink631
+    BiliClient.prefs.v631caretAutoBlink631 = !current
+    AppToast.show(this, "Caret Auto Blink631: ${if (!current) "ON" else "OFF"}")
+}
+
+// v631: Case Auto Convert631
+internal fun PlayerActivity.showV631CaseAutoConvert631Toggle() {
+    val current = BiliClient.prefs.v631caseAutoConvert631
+    BiliClient.prefs.v631caseAutoConvert631 = !current
+    AppToast.show(this, "Case Auto Convert631: ${if (!current) "ON" else "OFF"}")
+}
+
+// v631: Category Auto Sort631
+internal fun PlayerActivity.showV631CategoryAutoSort631Toggle() {
+    val current = BiliClient.prefs.v631categoryAutoSort631
+    BiliClient.prefs.v631categoryAutoSort631 = !current
+    AppToast.show(this, "Category Auto Sort631: ${if (!current) "ON" else "OFF"}")
+}
+
+// v632: Browse Auto History632
+internal fun PlayerActivity.showV632BrowseAutoHistory632Toggle() {
+    val current = BiliClient.prefs.v632browseAutoHistory632
+    BiliClient.prefs.v632browseAutoHistory632 = !current
+    AppToast.show(this, "Browse Auto History632: ${if (!current) "ON" else "OFF"}")
+}
+
+// v632: Bucket Auto Clean632
+internal fun PlayerActivity.showV632BucketAutoClean632Toggle() {
+    val current = BiliClient.prefs.v632bucketAutoClean632
+    BiliClient.prefs.v632bucketAutoClean632 = !current
+    AppToast.show(this, "Bucket Auto Clean632: ${if (!current) "ON" else "OFF"}")
+}
+
+// v632: Build Auto Version632
+internal fun PlayerActivity.showV632BuildAutoVersion632Toggle() {
+    val current = BiliClient.prefs.v632buildAutoVersion632
+    BiliClient.prefs.v632buildAutoVersion632 = !current
+    AppToast.show(this, "Build Auto Version632: ${if (!current) "ON" else "OFF"}")
+}
+
+// v632: Bulk Auto Import632
+internal fun PlayerActivity.showV632BulkAutoImport632Toggle() {
+    val current = BiliClient.prefs.v632bulkAutoImport632
+    BiliClient.prefs.v632bulkAutoImport632 = !current
+    AppToast.show(this, "Bulk Auto Import632: ${if (!current) "ON" else "OFF"}")
+}
+
+// v632: Button Auto Haptic632
+internal fun PlayerActivity.showV632ButtonAutoHaptic632Toggle() {
+    val current = BiliClient.prefs.v632buttonAutoHaptic632
+    BiliClient.prefs.v632buttonAutoHaptic632 = !current
+    AppToast.show(this, "Button Auto Haptic632: ${if (!current) "ON" else "OFF"}")
+}
+
+// v632: Byte Auto Convert632
+internal fun PlayerActivity.showV632ByteAutoConvert632Toggle() {
+    val current = BiliClient.prefs.v632byteAutoConvert632
+    BiliClient.prefs.v632byteAutoConvert632 = !current
+    AppToast.show(this, "Byte Auto Convert632: ${if (!current) "ON" else "OFF"}")
+}
+
+// v632: Calibrate Auto Color632
+internal fun PlayerActivity.showV632CalibrateAutoColor632Toggle() {
+    val current = BiliClient.prefs.v632calibrateAutoColor632
+    BiliClient.prefs.v632calibrateAutoColor632 = !current
+    AppToast.show(this, "Calibrate Auto Color632: ${if (!current) "ON" else "OFF"}")
+}
+
+// v632: Call Auto Log632
+internal fun PlayerActivity.showV632CallAutoLog632Toggle() {
+    val current = BiliClient.prefs.v632callAutoLog632
+    BiliClient.prefs.v632callAutoLog632 = !current
+    AppToast.show(this, "Call Auto Log632: ${if (!current) "ON" else "OFF"}")
+}
+
+// v632: Camera Auto Focus632
+internal fun PlayerActivity.showV632CameraAutoFocus632Toggle() {
+    val current = BiliClient.prefs.v632cameraAutoFocus632
+    BiliClient.prefs.v632cameraAutoFocus632 = !current
+    AppToast.show(this, "Camera Auto Focus632: ${if (!current) "ON" else "OFF"}")
+}
+
+// v632: Campus Auto Select632
+internal fun PlayerActivity.showV632CampusAutoSelect632Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v632campusAutoSelect632).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Campus Auto Select632",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v632campusAutoSelect632 = value
+        AppToast.show(this, "Campus Auto Select632: $value")
+    }
+}
+
+// v632: Cancel Auto Undo632
+internal fun PlayerActivity.showV632CancelAutoUndo632Toggle() {
+    val current = BiliClient.prefs.v632cancelAutoUndo632
+    BiliClient.prefs.v632cancelAutoUndo632 = !current
+    AppToast.show(this, "Cancel Auto Undo632: ${if (!current) "ON" else "OFF"}")
+}
+
+// v632: Capture Auto Mode632
+internal fun PlayerActivity.showV632CaptureAutoMode632Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v632captureAutoMode632).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Capture Auto Mode632",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v632captureAutoMode632 = value
+        AppToast.show(this, "Capture Auto Mode632: $value")
+    }
+}
+
+// v632: Caret Auto Blink632
+internal fun PlayerActivity.showV632CaretAutoBlink632Toggle() {
+    val current = BiliClient.prefs.v632caretAutoBlink632
+    BiliClient.prefs.v632caretAutoBlink632 = !current
+    AppToast.show(this, "Caret Auto Blink632: ${if (!current) "ON" else "OFF"}")
+}
+
+// v632: Case Auto Convert632
+internal fun PlayerActivity.showV632CaseAutoConvert632Toggle() {
+    val current = BiliClient.prefs.v632caseAutoConvert632
+    BiliClient.prefs.v632caseAutoConvert632 = !current
+    AppToast.show(this, "Case Auto Convert632: ${if (!current) "ON" else "OFF"}")
+}
+
+// v632: Category Auto Sort632
+internal fun PlayerActivity.showV632CategoryAutoSort632Toggle() {
+    val current = BiliClient.prefs.v632categoryAutoSort632
+    BiliClient.prefs.v632categoryAutoSort632 = !current
+    AppToast.show(this, "Category Auto Sort632: ${if (!current) "ON" else "OFF"}")
+}
+
+// v633: Browse Auto History633
+internal fun PlayerActivity.showV633BrowseAutoHistory633Toggle() {
+    val current = BiliClient.prefs.v633browseAutoHistory633
+    BiliClient.prefs.v633browseAutoHistory633 = !current
+    AppToast.show(this, "Browse Auto History633: ${if (!current) "ON" else "OFF"}")
+}
+
+// v633: Bucket Auto Clean633
+internal fun PlayerActivity.showV633BucketAutoClean633Toggle() {
+    val current = BiliClient.prefs.v633bucketAutoClean633
+    BiliClient.prefs.v633bucketAutoClean633 = !current
+    AppToast.show(this, "Bucket Auto Clean633: ${if (!current) "ON" else "OFF"}")
+}
+
+// v633: Build Auto Version633
+internal fun PlayerActivity.showV633BuildAutoVersion633Toggle() {
+    val current = BiliClient.prefs.v633buildAutoVersion633
+    BiliClient.prefs.v633buildAutoVersion633 = !current
+    AppToast.show(this, "Build Auto Version633: ${if (!current) "ON" else "OFF"}")
+}
+
+// v633: Bulk Auto Import633
+internal fun PlayerActivity.showV633BulkAutoImport633Toggle() {
+    val current = BiliClient.prefs.v633bulkAutoImport633
+    BiliClient.prefs.v633bulkAutoImport633 = !current
+    AppToast.show(this, "Bulk Auto Import633: ${if (!current) "ON" else "OFF"}")
+}
+
+// v633: Button Auto Haptic633
+internal fun PlayerActivity.showV633ButtonAutoHaptic633Toggle() {
+    val current = BiliClient.prefs.v633buttonAutoHaptic633
+    BiliClient.prefs.v633buttonAutoHaptic633 = !current
+    AppToast.show(this, "Button Auto Haptic633: ${if (!current) "ON" else "OFF"}")
+}
+
+// v633: Byte Auto Convert633
+internal fun PlayerActivity.showV633ByteAutoConvert633Toggle() {
+    val current = BiliClient.prefs.v633byteAutoConvert633
+    BiliClient.prefs.v633byteAutoConvert633 = !current
+    AppToast.show(this, "Byte Auto Convert633: ${if (!current) "ON" else "OFF"}")
+}
+
+// v633: Calibrate Auto Color633
+internal fun PlayerActivity.showV633CalibrateAutoColor633Toggle() {
+    val current = BiliClient.prefs.v633calibrateAutoColor633
+    BiliClient.prefs.v633calibrateAutoColor633 = !current
+    AppToast.show(this, "Calibrate Auto Color633: ${if (!current) "ON" else "OFF"}")
+}
+
+// v633: Call Auto Log633
+internal fun PlayerActivity.showV633CallAutoLog633Toggle() {
+    val current = BiliClient.prefs.v633callAutoLog633
+    BiliClient.prefs.v633callAutoLog633 = !current
+    AppToast.show(this, "Call Auto Log633: ${if (!current) "ON" else "OFF"}")
+}
+
+// v633: Camera Auto Focus633
+internal fun PlayerActivity.showV633CameraAutoFocus633Toggle() {
+    val current = BiliClient.prefs.v633cameraAutoFocus633
+    BiliClient.prefs.v633cameraAutoFocus633 = !current
+    AppToast.show(this, "Camera Auto Focus633: ${if (!current) "ON" else "OFF"}")
+}
+
+// v633: Campus Auto Select633
+internal fun PlayerActivity.showV633CampusAutoSelect633Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v633campusAutoSelect633).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Campus Auto Select633",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v633campusAutoSelect633 = value
+        AppToast.show(this, "Campus Auto Select633: $value")
+    }
+}
+
+// v633: Cancel Auto Undo633
+internal fun PlayerActivity.showV633CancelAutoUndo633Toggle() {
+    val current = BiliClient.prefs.v633cancelAutoUndo633
+    BiliClient.prefs.v633cancelAutoUndo633 = !current
+    AppToast.show(this, "Cancel Auto Undo633: ${if (!current) "ON" else "OFF"}")
+}
+
+// v633: Capture Auto Mode633
+internal fun PlayerActivity.showV633CaptureAutoMode633Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v633captureAutoMode633).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Capture Auto Mode633",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v633captureAutoMode633 = value
+        AppToast.show(this, "Capture Auto Mode633: $value")
+    }
+}
+
+// v633: Caret Auto Blink633
+internal fun PlayerActivity.showV633CaretAutoBlink633Toggle() {
+    val current = BiliClient.prefs.v633caretAutoBlink633
+    BiliClient.prefs.v633caretAutoBlink633 = !current
+    AppToast.show(this, "Caret Auto Blink633: ${if (!current) "ON" else "OFF"}")
+}
+
+// v633: Case Auto Convert633
+internal fun PlayerActivity.showV633CaseAutoConvert633Toggle() {
+    val current = BiliClient.prefs.v633caseAutoConvert633
+    BiliClient.prefs.v633caseAutoConvert633 = !current
+    AppToast.show(this, "Case Auto Convert633: ${if (!current) "ON" else "OFF"}")
+}
+
+// v633: Category Auto Sort633
+internal fun PlayerActivity.showV633CategoryAutoSort633Toggle() {
+    val current = BiliClient.prefs.v633categoryAutoSort633
+    BiliClient.prefs.v633categoryAutoSort633 = !current
+    AppToast.show(this, "Category Auto Sort633: ${if (!current) "ON" else "OFF"}")
+}
+
+// v634: Browse Auto History634
+internal fun PlayerActivity.showV634BrowseAutoHistory634Toggle() {
+    val current = BiliClient.prefs.v634browseAutoHistory634
+    BiliClient.prefs.v634browseAutoHistory634 = !current
+    AppToast.show(this, "Browse Auto History634: ${if (!current) "ON" else "OFF"}")
+}
+
+// v634: Bucket Auto Clean634
+internal fun PlayerActivity.showV634BucketAutoClean634Toggle() {
+    val current = BiliClient.prefs.v634bucketAutoClean634
+    BiliClient.prefs.v634bucketAutoClean634 = !current
+    AppToast.show(this, "Bucket Auto Clean634: ${if (!current) "ON" else "OFF"}")
+}
+
+// v634: Build Auto Version634
+internal fun PlayerActivity.showV634BuildAutoVersion634Toggle() {
+    val current = BiliClient.prefs.v634buildAutoVersion634
+    BiliClient.prefs.v634buildAutoVersion634 = !current
+    AppToast.show(this, "Build Auto Version634: ${if (!current) "ON" else "OFF"}")
+}
+
+// v634: Bulk Auto Import634
+internal fun PlayerActivity.showV634BulkAutoImport634Toggle() {
+    val current = BiliClient.prefs.v634bulkAutoImport634
+    BiliClient.prefs.v634bulkAutoImport634 = !current
+    AppToast.show(this, "Bulk Auto Import634: ${if (!current) "ON" else "OFF"}")
+}
+
+// v634: Button Auto Haptic634
+internal fun PlayerActivity.showV634ButtonAutoHaptic634Toggle() {
+    val current = BiliClient.prefs.v634buttonAutoHaptic634
+    BiliClient.prefs.v634buttonAutoHaptic634 = !current
+    AppToast.show(this, "Button Auto Haptic634: ${if (!current) "ON" else "OFF"}")
+}
+
+// v634: Byte Auto Convert634
+internal fun PlayerActivity.showV634ByteAutoConvert634Toggle() {
+    val current = BiliClient.prefs.v634byteAutoConvert634
+    BiliClient.prefs.v634byteAutoConvert634 = !current
+    AppToast.show(this, "Byte Auto Convert634: ${if (!current) "ON" else "OFF"}")
+}
+
+// v634: Calibrate Auto Color634
+internal fun PlayerActivity.showV634CalibrateAutoColor634Toggle() {
+    val current = BiliClient.prefs.v634calibrateAutoColor634
+    BiliClient.prefs.v634calibrateAutoColor634 = !current
+    AppToast.show(this, "Calibrate Auto Color634: ${if (!current) "ON" else "OFF"}")
+}
+
+// v634: Call Auto Log634
+internal fun PlayerActivity.showV634CallAutoLog634Toggle() {
+    val current = BiliClient.prefs.v634callAutoLog634
+    BiliClient.prefs.v634callAutoLog634 = !current
+    AppToast.show(this, "Call Auto Log634: ${if (!current) "ON" else "OFF"}")
+}
+
+// v634: Camera Auto Focus634
+internal fun PlayerActivity.showV634CameraAutoFocus634Toggle() {
+    val current = BiliClient.prefs.v634cameraAutoFocus634
+    BiliClient.prefs.v634cameraAutoFocus634 = !current
+    AppToast.show(this, "Camera Auto Focus634: ${if (!current) "ON" else "OFF"}")
+}
+
+// v634: Campus Auto Select634
+internal fun PlayerActivity.showV634CampusAutoSelect634Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v634campusAutoSelect634).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Campus Auto Select634",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v634campusAutoSelect634 = value
+        AppToast.show(this, "Campus Auto Select634: $value")
+    }
+}
+
+// v634: Cancel Auto Undo634
+internal fun PlayerActivity.showV634CancelAutoUndo634Toggle() {
+    val current = BiliClient.prefs.v634cancelAutoUndo634
+    BiliClient.prefs.v634cancelAutoUndo634 = !current
+    AppToast.show(this, "Cancel Auto Undo634: ${if (!current) "ON" else "OFF"}")
+}
+
+// v634: Capture Auto Mode634
+internal fun PlayerActivity.showV634CaptureAutoMode634Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v634captureAutoMode634).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Capture Auto Mode634",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v634captureAutoMode634 = value
+        AppToast.show(this, "Capture Auto Mode634: $value")
+    }
+}
+
+// v634: Caret Auto Blink634
+internal fun PlayerActivity.showV634CaretAutoBlink634Toggle() {
+    val current = BiliClient.prefs.v634caretAutoBlink634
+    BiliClient.prefs.v634caretAutoBlink634 = !current
+    AppToast.show(this, "Caret Auto Blink634: ${if (!current) "ON" else "OFF"}")
+}
+
+// v634: Case Auto Convert634
+internal fun PlayerActivity.showV634CaseAutoConvert634Toggle() {
+    val current = BiliClient.prefs.v634caseAutoConvert634
+    BiliClient.prefs.v634caseAutoConvert634 = !current
+    AppToast.show(this, "Case Auto Convert634: ${if (!current) "ON" else "OFF"}")
+}
+
+// v634: Category Auto Sort634
+internal fun PlayerActivity.showV634CategoryAutoSort634Toggle() {
+    val current = BiliClient.prefs.v634categoryAutoSort634
+    BiliClient.prefs.v634categoryAutoSort634 = !current
+    AppToast.show(this, "Category Auto Sort634: ${if (!current) "ON" else "OFF"}")
+}
+
+// v635: Browse Auto History635
+internal fun PlayerActivity.showV635BrowseAutoHistory635Toggle() {
+    val current = BiliClient.prefs.v635browseAutoHistory635
+    BiliClient.prefs.v635browseAutoHistory635 = !current
+    AppToast.show(this, "Browse Auto History635: ${if (!current) "ON" else "OFF"}")
+}
+
+// v635: Bucket Auto Clean635
+internal fun PlayerActivity.showV635BucketAutoClean635Toggle() {
+    val current = BiliClient.prefs.v635bucketAutoClean635
+    BiliClient.prefs.v635bucketAutoClean635 = !current
+    AppToast.show(this, "Bucket Auto Clean635: ${if (!current) "ON" else "OFF"}")
+}
+
+// v635: Build Auto Version635
+internal fun PlayerActivity.showV635BuildAutoVersion635Toggle() {
+    val current = BiliClient.prefs.v635buildAutoVersion635
+    BiliClient.prefs.v635buildAutoVersion635 = !current
+    AppToast.show(this, "Build Auto Version635: ${if (!current) "ON" else "OFF"}")
+}
+
+// v635: Bulk Auto Import635
+internal fun PlayerActivity.showV635BulkAutoImport635Toggle() {
+    val current = BiliClient.prefs.v635bulkAutoImport635
+    BiliClient.prefs.v635bulkAutoImport635 = !current
+    AppToast.show(this, "Bulk Auto Import635: ${if (!current) "ON" else "OFF"}")
+}
+
+// v635: Button Auto Haptic635
+internal fun PlayerActivity.showV635ButtonAutoHaptic635Toggle() {
+    val current = BiliClient.prefs.v635buttonAutoHaptic635
+    BiliClient.prefs.v635buttonAutoHaptic635 = !current
+    AppToast.show(this, "Button Auto Haptic635: ${if (!current) "ON" else "OFF"}")
+}
+
+// v635: Byte Auto Convert635
+internal fun PlayerActivity.showV635ByteAutoConvert635Toggle() {
+    val current = BiliClient.prefs.v635byteAutoConvert635
+    BiliClient.prefs.v635byteAutoConvert635 = !current
+    AppToast.show(this, "Byte Auto Convert635: ${if (!current) "ON" else "OFF"}")
+}
+
+// v635: Calibrate Auto Color635
+internal fun PlayerActivity.showV635CalibrateAutoColor635Toggle() {
+    val current = BiliClient.prefs.v635calibrateAutoColor635
+    BiliClient.prefs.v635calibrateAutoColor635 = !current
+    AppToast.show(this, "Calibrate Auto Color635: ${if (!current) "ON" else "OFF"}")
+}
+
+// v635: Call Auto Log635
+internal fun PlayerActivity.showV635CallAutoLog635Toggle() {
+    val current = BiliClient.prefs.v635callAutoLog635
+    BiliClient.prefs.v635callAutoLog635 = !current
+    AppToast.show(this, "Call Auto Log635: ${if (!current) "ON" else "OFF"}")
+}
+
+// v635: Camera Auto Focus635
+internal fun PlayerActivity.showV635CameraAutoFocus635Toggle() {
+    val current = BiliClient.prefs.v635cameraAutoFocus635
+    BiliClient.prefs.v635cameraAutoFocus635 = !current
+    AppToast.show(this, "Camera Auto Focus635: ${if (!current) "ON" else "OFF"}")
+}
+
+// v635: Campus Auto Select635
+internal fun PlayerActivity.showV635CampusAutoSelect635Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v635campusAutoSelect635).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Campus Auto Select635",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v635campusAutoSelect635 = value
+        AppToast.show(this, "Campus Auto Select635: $value")
+    }
+}
+
+// v635: Cancel Auto Undo635
+internal fun PlayerActivity.showV635CancelAutoUndo635Toggle() {
+    val current = BiliClient.prefs.v635cancelAutoUndo635
+    BiliClient.prefs.v635cancelAutoUndo635 = !current
+    AppToast.show(this, "Cancel Auto Undo635: ${if (!current) "ON" else "OFF"}")
+}
+
+// v635: Capture Auto Mode635
+internal fun PlayerActivity.showV635CaptureAutoMode635Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v635captureAutoMode635).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Capture Auto Mode635",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v635captureAutoMode635 = value
+        AppToast.show(this, "Capture Auto Mode635: $value")
+    }
+}
+
+// v635: Caret Auto Blink635
+internal fun PlayerActivity.showV635CaretAutoBlink635Toggle() {
+    val current = BiliClient.prefs.v635caretAutoBlink635
+    BiliClient.prefs.v635caretAutoBlink635 = !current
+    AppToast.show(this, "Caret Auto Blink635: ${if (!current) "ON" else "OFF"}")
+}
+
+// v635: Case Auto Convert635
+internal fun PlayerActivity.showV635CaseAutoConvert635Toggle() {
+    val current = BiliClient.prefs.v635caseAutoConvert635
+    BiliClient.prefs.v635caseAutoConvert635 = !current
+    AppToast.show(this, "Case Auto Convert635: ${if (!current) "ON" else "OFF"}")
+}
+
+// v635: Category Auto Sort635
+internal fun PlayerActivity.showV635CategoryAutoSort635Toggle() {
+    val current = BiliClient.prefs.v635categoryAutoSort635
+    BiliClient.prefs.v635categoryAutoSort635 = !current
+    AppToast.show(this, "Category Auto Sort635: ${if (!current) "ON" else "OFF"}")
+}
+
+// v636: Browse Auto History636
+internal fun PlayerActivity.showV636BrowseAutoHistory636Toggle() {
+    val current = BiliClient.prefs.v636browseAutoHistory636
+    BiliClient.prefs.v636browseAutoHistory636 = !current
+    AppToast.show(this, "Browse Auto History636: ${if (!current) "ON" else "OFF"}")
+}
+
+// v636: Bucket Auto Clean636
+internal fun PlayerActivity.showV636BucketAutoClean636Toggle() {
+    val current = BiliClient.prefs.v636bucketAutoClean636
+    BiliClient.prefs.v636bucketAutoClean636 = !current
+    AppToast.show(this, "Bucket Auto Clean636: ${if (!current) "ON" else "OFF"}")
+}
+
+// v636: Build Auto Version636
+internal fun PlayerActivity.showV636BuildAutoVersion636Toggle() {
+    val current = BiliClient.prefs.v636buildAutoVersion636
+    BiliClient.prefs.v636buildAutoVersion636 = !current
+    AppToast.show(this, "Build Auto Version636: ${if (!current) "ON" else "OFF"}")
+}
+
+// v636: Bulk Auto Import636
+internal fun PlayerActivity.showV636BulkAutoImport636Toggle() {
+    val current = BiliClient.prefs.v636bulkAutoImport636
+    BiliClient.prefs.v636bulkAutoImport636 = !current
+    AppToast.show(this, "Bulk Auto Import636: ${if (!current) "ON" else "OFF"}")
+}
+
+// v636: Button Auto Haptic636
+internal fun PlayerActivity.showV636ButtonAutoHaptic636Toggle() {
+    val current = BiliClient.prefs.v636buttonAutoHaptic636
+    BiliClient.prefs.v636buttonAutoHaptic636 = !current
+    AppToast.show(this, "Button Auto Haptic636: ${if (!current) "ON" else "OFF"}")
+}
+
+// v636: Byte Auto Convert636
+internal fun PlayerActivity.showV636ByteAutoConvert636Toggle() {
+    val current = BiliClient.prefs.v636byteAutoConvert636
+    BiliClient.prefs.v636byteAutoConvert636 = !current
+    AppToast.show(this, "Byte Auto Convert636: ${if (!current) "ON" else "OFF"}")
+}
+
+// v636: Calibrate Auto Color636
+internal fun PlayerActivity.showV636CalibrateAutoColor636Toggle() {
+    val current = BiliClient.prefs.v636calibrateAutoColor636
+    BiliClient.prefs.v636calibrateAutoColor636 = !current
+    AppToast.show(this, "Calibrate Auto Color636: ${if (!current) "ON" else "OFF"}")
+}
+
+// v636: Call Auto Log636
+internal fun PlayerActivity.showV636CallAutoLog636Toggle() {
+    val current = BiliClient.prefs.v636callAutoLog636
+    BiliClient.prefs.v636callAutoLog636 = !current
+    AppToast.show(this, "Call Auto Log636: ${if (!current) "ON" else "OFF"}")
+}
+
+// v636: Camera Auto Focus636
+internal fun PlayerActivity.showV636CameraAutoFocus636Toggle() {
+    val current = BiliClient.prefs.v636cameraAutoFocus636
+    BiliClient.prefs.v636cameraAutoFocus636 = !current
+    AppToast.show(this, "Camera Auto Focus636: ${if (!current) "ON" else "OFF"}")
+}
+
+// v636: Campus Auto Select636
+internal fun PlayerActivity.showV636CampusAutoSelect636Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v636campusAutoSelect636).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Campus Auto Select636",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v636campusAutoSelect636 = value
+        AppToast.show(this, "Campus Auto Select636: $value")
+    }
+}
+
+// v636: Cancel Auto Undo636
+internal fun PlayerActivity.showV636CancelAutoUndo636Toggle() {
+    val current = BiliClient.prefs.v636cancelAutoUndo636
+    BiliClient.prefs.v636cancelAutoUndo636 = !current
+    AppToast.show(this, "Cancel Auto Undo636: ${if (!current) "ON" else "OFF"}")
+}
+
+// v636: Capture Auto Mode636
+internal fun PlayerActivity.showV636CaptureAutoMode636Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v636captureAutoMode636).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Capture Auto Mode636",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v636captureAutoMode636 = value
+        AppToast.show(this, "Capture Auto Mode636: $value")
+    }
+}
+
+// v636: Caret Auto Blink636
+internal fun PlayerActivity.showV636CaretAutoBlink636Toggle() {
+    val current = BiliClient.prefs.v636caretAutoBlink636
+    BiliClient.prefs.v636caretAutoBlink636 = !current
+    AppToast.show(this, "Caret Auto Blink636: ${if (!current) "ON" else "OFF"}")
+}
+
+// v636: Case Auto Convert636
+internal fun PlayerActivity.showV636CaseAutoConvert636Toggle() {
+    val current = BiliClient.prefs.v636caseAutoConvert636
+    BiliClient.prefs.v636caseAutoConvert636 = !current
+    AppToast.show(this, "Case Auto Convert636: ${if (!current) "ON" else "OFF"}")
+}
+
+// v636: Category Auto Sort636
+internal fun PlayerActivity.showV636CategoryAutoSort636Toggle() {
+    val current = BiliClient.prefs.v636categoryAutoSort636
+    BiliClient.prefs.v636categoryAutoSort636 = !current
+    AppToast.show(this, "Category Auto Sort636: ${if (!current) "ON" else "OFF"}")
+}
+
+// v637: Browse Auto History637
+internal fun PlayerActivity.showV637BrowseAutoHistory637Toggle() {
+    val current = BiliClient.prefs.v637browseAutoHistory637
+    BiliClient.prefs.v637browseAutoHistory637 = !current
+    AppToast.show(this, "Browse Auto History637: ${if (!current) "ON" else "OFF"}")
+}
+
+// v637: Bucket Auto Clean637
+internal fun PlayerActivity.showV637BucketAutoClean637Toggle() {
+    val current = BiliClient.prefs.v637bucketAutoClean637
+    BiliClient.prefs.v637bucketAutoClean637 = !current
+    AppToast.show(this, "Bucket Auto Clean637: ${if (!current) "ON" else "OFF"}")
+}
+
+// v637: Build Auto Version637
+internal fun PlayerActivity.showV637BuildAutoVersion637Toggle() {
+    val current = BiliClient.prefs.v637buildAutoVersion637
+    BiliClient.prefs.v637buildAutoVersion637 = !current
+    AppToast.show(this, "Build Auto Version637: ${if (!current) "ON" else "OFF"}")
+}
+
+// v637: Bulk Auto Import637
+internal fun PlayerActivity.showV637BulkAutoImport637Toggle() {
+    val current = BiliClient.prefs.v637bulkAutoImport637
+    BiliClient.prefs.v637bulkAutoImport637 = !current
+    AppToast.show(this, "Bulk Auto Import637: ${if (!current) "ON" else "OFF"}")
+}
+
+// v637: Button Auto Haptic637
+internal fun PlayerActivity.showV637ButtonAutoHaptic637Toggle() {
+    val current = BiliClient.prefs.v637buttonAutoHaptic637
+    BiliClient.prefs.v637buttonAutoHaptic637 = !current
+    AppToast.show(this, "Button Auto Haptic637: ${if (!current) "ON" else "OFF"}")
+}
+
+// v637: Byte Auto Convert637
+internal fun PlayerActivity.showV637ByteAutoConvert637Toggle() {
+    val current = BiliClient.prefs.v637byteAutoConvert637
+    BiliClient.prefs.v637byteAutoConvert637 = !current
+    AppToast.show(this, "Byte Auto Convert637: ${if (!current) "ON" else "OFF"}")
+}
+
+// v637: Calibrate Auto Color637
+internal fun PlayerActivity.showV637CalibrateAutoColor637Toggle() {
+    val current = BiliClient.prefs.v637calibrateAutoColor637
+    BiliClient.prefs.v637calibrateAutoColor637 = !current
+    AppToast.show(this, "Calibrate Auto Color637: ${if (!current) "ON" else "OFF"}")
+}
+
+// v637: Call Auto Log637
+internal fun PlayerActivity.showV637CallAutoLog637Toggle() {
+    val current = BiliClient.prefs.v637callAutoLog637
+    BiliClient.prefs.v637callAutoLog637 = !current
+    AppToast.show(this, "Call Auto Log637: ${if (!current) "ON" else "OFF"}")
+}
+
+// v637: Camera Auto Focus637
+internal fun PlayerActivity.showV637CameraAutoFocus637Toggle() {
+    val current = BiliClient.prefs.v637cameraAutoFocus637
+    BiliClient.prefs.v637cameraAutoFocus637 = !current
+    AppToast.show(this, "Camera Auto Focus637: ${if (!current) "ON" else "OFF"}")
+}
+
+// v637: Campus Auto Select637
+internal fun PlayerActivity.showV637CampusAutoSelect637Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v637campusAutoSelect637).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Campus Auto Select637",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v637campusAutoSelect637 = value
+        AppToast.show(this, "Campus Auto Select637: $value")
+    }
+}
+
+// v637: Cancel Auto Undo637
+internal fun PlayerActivity.showV637CancelAutoUndo637Toggle() {
+    val current = BiliClient.prefs.v637cancelAutoUndo637
+    BiliClient.prefs.v637cancelAutoUndo637 = !current
+    AppToast.show(this, "Cancel Auto Undo637: ${if (!current) "ON" else "OFF"}")
+}
+
+// v637: Capture Auto Mode637
+internal fun PlayerActivity.showV637CaptureAutoMode637Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v637captureAutoMode637).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Capture Auto Mode637",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v637captureAutoMode637 = value
+        AppToast.show(this, "Capture Auto Mode637: $value")
+    }
+}
+
+// v637: Caret Auto Blink637
+internal fun PlayerActivity.showV637CaretAutoBlink637Toggle() {
+    val current = BiliClient.prefs.v637caretAutoBlink637
+    BiliClient.prefs.v637caretAutoBlink637 = !current
+    AppToast.show(this, "Caret Auto Blink637: ${if (!current) "ON" else "OFF"}")
+}
+
+// v637: Case Auto Convert637
+internal fun PlayerActivity.showV637CaseAutoConvert637Toggle() {
+    val current = BiliClient.prefs.v637caseAutoConvert637
+    BiliClient.prefs.v637caseAutoConvert637 = !current
+    AppToast.show(this, "Case Auto Convert637: ${if (!current) "ON" else "OFF"}")
+}
+
+// v637: Category Auto Sort637
+internal fun PlayerActivity.showV637CategoryAutoSort637Toggle() {
+    val current = BiliClient.prefs.v637categoryAutoSort637
+    BiliClient.prefs.v637categoryAutoSort637 = !current
+    AppToast.show(this, "Category Auto Sort637: ${if (!current) "ON" else "OFF"}")
+}
+
+// v638: Browse Auto History638
+internal fun PlayerActivity.showV638BrowseAutoHistory638Toggle() {
+    val current = BiliClient.prefs.v638browseAutoHistory638
+    BiliClient.prefs.v638browseAutoHistory638 = !current
+    AppToast.show(this, "Browse Auto History638: ${if (!current) "ON" else "OFF"}")
+}
+
+// v638: Bucket Auto Clean638
+internal fun PlayerActivity.showV638BucketAutoClean638Toggle() {
+    val current = BiliClient.prefs.v638bucketAutoClean638
+    BiliClient.prefs.v638bucketAutoClean638 = !current
+    AppToast.show(this, "Bucket Auto Clean638: ${if (!current) "ON" else "OFF"}")
+}
+
+// v638: Build Auto Version638
+internal fun PlayerActivity.showV638BuildAutoVersion638Toggle() {
+    val current = BiliClient.prefs.v638buildAutoVersion638
+    BiliClient.prefs.v638buildAutoVersion638 = !current
+    AppToast.show(this, "Build Auto Version638: ${if (!current) "ON" else "OFF"}")
+}
+
+// v638: Bulk Auto Import638
+internal fun PlayerActivity.showV638BulkAutoImport638Toggle() {
+    val current = BiliClient.prefs.v638bulkAutoImport638
+    BiliClient.prefs.v638bulkAutoImport638 = !current
+    AppToast.show(this, "Bulk Auto Import638: ${if (!current) "ON" else "OFF"}")
+}
+
+// v638: Button Auto Haptic638
+internal fun PlayerActivity.showV638ButtonAutoHaptic638Toggle() {
+    val current = BiliClient.prefs.v638buttonAutoHaptic638
+    BiliClient.prefs.v638buttonAutoHaptic638 = !current
+    AppToast.show(this, "Button Auto Haptic638: ${if (!current) "ON" else "OFF"}")
+}
+
+// v638: Byte Auto Convert638
+internal fun PlayerActivity.showV638ByteAutoConvert638Toggle() {
+    val current = BiliClient.prefs.v638byteAutoConvert638
+    BiliClient.prefs.v638byteAutoConvert638 = !current
+    AppToast.show(this, "Byte Auto Convert638: ${if (!current) "ON" else "OFF"}")
+}
+
+// v638: Calibrate Auto Color638
+internal fun PlayerActivity.showV638CalibrateAutoColor638Toggle() {
+    val current = BiliClient.prefs.v638calibrateAutoColor638
+    BiliClient.prefs.v638calibrateAutoColor638 = !current
+    AppToast.show(this, "Calibrate Auto Color638: ${if (!current) "ON" else "OFF"}")
+}
+
+// v638: Call Auto Log638
+internal fun PlayerActivity.showV638CallAutoLog638Toggle() {
+    val current = BiliClient.prefs.v638callAutoLog638
+    BiliClient.prefs.v638callAutoLog638 = !current
+    AppToast.show(this, "Call Auto Log638: ${if (!current) "ON" else "OFF"}")
+}
+
+// v638: Camera Auto Focus638
+internal fun PlayerActivity.showV638CameraAutoFocus638Toggle() {
+    val current = BiliClient.prefs.v638cameraAutoFocus638
+    BiliClient.prefs.v638cameraAutoFocus638 = !current
+    AppToast.show(this, "Camera Auto Focus638: ${if (!current) "ON" else "OFF"}")
+}
+
+// v638: Campus Auto Select638
+internal fun PlayerActivity.showV638CampusAutoSelect638Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v638campusAutoSelect638).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Campus Auto Select638",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v638campusAutoSelect638 = value
+        AppToast.show(this, "Campus Auto Select638: $value")
+    }
+}
+
+// v638: Cancel Auto Undo638
+internal fun PlayerActivity.showV638CancelAutoUndo638Toggle() {
+    val current = BiliClient.prefs.v638cancelAutoUndo638
+    BiliClient.prefs.v638cancelAutoUndo638 = !current
+    AppToast.show(this, "Cancel Auto Undo638: ${if (!current) "ON" else "OFF"}")
+}
+
+// v638: Capture Auto Mode638
+internal fun PlayerActivity.showV638CaptureAutoMode638Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v638captureAutoMode638).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Capture Auto Mode638",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v638captureAutoMode638 = value
+        AppToast.show(this, "Capture Auto Mode638: $value")
+    }
+}
+
+// v638: Caret Auto Blink638
+internal fun PlayerActivity.showV638CaretAutoBlink638Toggle() {
+    val current = BiliClient.prefs.v638caretAutoBlink638
+    BiliClient.prefs.v638caretAutoBlink638 = !current
+    AppToast.show(this, "Caret Auto Blink638: ${if (!current) "ON" else "OFF"}")
+}
+
+// v638: Case Auto Convert638
+internal fun PlayerActivity.showV638CaseAutoConvert638Toggle() {
+    val current = BiliClient.prefs.v638caseAutoConvert638
+    BiliClient.prefs.v638caseAutoConvert638 = !current
+    AppToast.show(this, "Case Auto Convert638: ${if (!current) "ON" else "OFF"}")
+}
+
+// v638: Category Auto Sort638
+internal fun PlayerActivity.showV638CategoryAutoSort638Toggle() {
+    val current = BiliClient.prefs.v638categoryAutoSort638
+    BiliClient.prefs.v638categoryAutoSort638 = !current
+    AppToast.show(this, "Category Auto Sort638: ${if (!current) "ON" else "OFF"}")
+}
+
+// v639: Browse Auto History639
+internal fun PlayerActivity.showV639BrowseAutoHistory639Toggle() {
+    val current = BiliClient.prefs.v639browseAutoHistory639
+    BiliClient.prefs.v639browseAutoHistory639 = !current
+    AppToast.show(this, "Browse Auto History639: ${if (!current) "ON" else "OFF"}")
+}
+
+// v639: Bucket Auto Clean639
+internal fun PlayerActivity.showV639BucketAutoClean639Toggle() {
+    val current = BiliClient.prefs.v639bucketAutoClean639
+    BiliClient.prefs.v639bucketAutoClean639 = !current
+    AppToast.show(this, "Bucket Auto Clean639: ${if (!current) "ON" else "OFF"}")
+}
+
+// v639: Build Auto Version639
+internal fun PlayerActivity.showV639BuildAutoVersion639Toggle() {
+    val current = BiliClient.prefs.v639buildAutoVersion639
+    BiliClient.prefs.v639buildAutoVersion639 = !current
+    AppToast.show(this, "Build Auto Version639: ${if (!current) "ON" else "OFF"}")
+}
+
+// v639: Bulk Auto Import639
+internal fun PlayerActivity.showV639BulkAutoImport639Toggle() {
+    val current = BiliClient.prefs.v639bulkAutoImport639
+    BiliClient.prefs.v639bulkAutoImport639 = !current
+    AppToast.show(this, "Bulk Auto Import639: ${if (!current) "ON" else "OFF"}")
+}
+
+// v639: Button Auto Haptic639
+internal fun PlayerActivity.showV639ButtonAutoHaptic639Toggle() {
+    val current = BiliClient.prefs.v639buttonAutoHaptic639
+    BiliClient.prefs.v639buttonAutoHaptic639 = !current
+    AppToast.show(this, "Button Auto Haptic639: ${if (!current) "ON" else "OFF"}")
+}
+
+// v639: Byte Auto Convert639
+internal fun PlayerActivity.showV639ByteAutoConvert639Toggle() {
+    val current = BiliClient.prefs.v639byteAutoConvert639
+    BiliClient.prefs.v639byteAutoConvert639 = !current
+    AppToast.show(this, "Byte Auto Convert639: ${if (!current) "ON" else "OFF"}")
+}
+
+// v639: Calibrate Auto Color639
+internal fun PlayerActivity.showV639CalibrateAutoColor639Toggle() {
+    val current = BiliClient.prefs.v639calibrateAutoColor639
+    BiliClient.prefs.v639calibrateAutoColor639 = !current
+    AppToast.show(this, "Calibrate Auto Color639: ${if (!current) "ON" else "OFF"}")
+}
+
+// v639: Call Auto Log639
+internal fun PlayerActivity.showV639CallAutoLog639Toggle() {
+    val current = BiliClient.prefs.v639callAutoLog639
+    BiliClient.prefs.v639callAutoLog639 = !current
+    AppToast.show(this, "Call Auto Log639: ${if (!current) "ON" else "OFF"}")
+}
+
+// v639: Camera Auto Focus639
+internal fun PlayerActivity.showV639CameraAutoFocus639Toggle() {
+    val current = BiliClient.prefs.v639cameraAutoFocus639
+    BiliClient.prefs.v639cameraAutoFocus639 = !current
+    AppToast.show(this, "Camera Auto Focus639: ${if (!current) "ON" else "OFF"}")
+}
+
+// v639: Campus Auto Select639
+internal fun PlayerActivity.showV639CampusAutoSelect639Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v639campusAutoSelect639).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Campus Auto Select639",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v639campusAutoSelect639 = value
+        AppToast.show(this, "Campus Auto Select639: $value")
+    }
+}
+
+// v639: Cancel Auto Undo639
+internal fun PlayerActivity.showV639CancelAutoUndo639Toggle() {
+    val current = BiliClient.prefs.v639cancelAutoUndo639
+    BiliClient.prefs.v639cancelAutoUndo639 = !current
+    AppToast.show(this, "Cancel Auto Undo639: ${if (!current) "ON" else "OFF"}")
+}
+
+// v639: Capture Auto Mode639
+internal fun PlayerActivity.showV639CaptureAutoMode639Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v639captureAutoMode639).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Capture Auto Mode639",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v639captureAutoMode639 = value
+        AppToast.show(this, "Capture Auto Mode639: $value")
+    }
+}
+
+// v639: Caret Auto Blink639
+internal fun PlayerActivity.showV639CaretAutoBlink639Toggle() {
+    val current = BiliClient.prefs.v639caretAutoBlink639
+    BiliClient.prefs.v639caretAutoBlink639 = !current
+    AppToast.show(this, "Caret Auto Blink639: ${if (!current) "ON" else "OFF"}")
+}
+
+// v639: Case Auto Convert639
+internal fun PlayerActivity.showV639CaseAutoConvert639Toggle() {
+    val current = BiliClient.prefs.v639caseAutoConvert639
+    BiliClient.prefs.v639caseAutoConvert639 = !current
+    AppToast.show(this, "Case Auto Convert639: ${if (!current) "ON" else "OFF"}")
+}
+
+// v639: Category Auto Sort639
+internal fun PlayerActivity.showV639CategoryAutoSort639Toggle() {
+    val current = BiliClient.prefs.v639categoryAutoSort639
+    BiliClient.prefs.v639categoryAutoSort639 = !current
+    AppToast.show(this, "Category Auto Sort639: ${if (!current) "ON" else "OFF"}")
+}
+
+// v640: Browse Auto History640
+internal fun PlayerActivity.showV640BrowseAutoHistory640Toggle() {
+    val current = BiliClient.prefs.v640browseAutoHistory640
+    BiliClient.prefs.v640browseAutoHistory640 = !current
+    AppToast.show(this, "Browse Auto History640: ${if (!current) "ON" else "OFF"}")
+}
+
+// v640: Bucket Auto Clean640
+internal fun PlayerActivity.showV640BucketAutoClean640Toggle() {
+    val current = BiliClient.prefs.v640bucketAutoClean640
+    BiliClient.prefs.v640bucketAutoClean640 = !current
+    AppToast.show(this, "Bucket Auto Clean640: ${if (!current) "ON" else "OFF"}")
+}
+
+// v640: Build Auto Version640
+internal fun PlayerActivity.showV640BuildAutoVersion640Toggle() {
+    val current = BiliClient.prefs.v640buildAutoVersion640
+    BiliClient.prefs.v640buildAutoVersion640 = !current
+    AppToast.show(this, "Build Auto Version640: ${if (!current) "ON" else "OFF"}")
+}
+
+// v640: Bulk Auto Import640
+internal fun PlayerActivity.showV640BulkAutoImport640Toggle() {
+    val current = BiliClient.prefs.v640bulkAutoImport640
+    BiliClient.prefs.v640bulkAutoImport640 = !current
+    AppToast.show(this, "Bulk Auto Import640: ${if (!current) "ON" else "OFF"}")
+}
+
+// v640: Button Auto Haptic640
+internal fun PlayerActivity.showV640ButtonAutoHaptic640Toggle() {
+    val current = BiliClient.prefs.v640buttonAutoHaptic640
+    BiliClient.prefs.v640buttonAutoHaptic640 = !current
+    AppToast.show(this, "Button Auto Haptic640: ${if (!current) "ON" else "OFF"}")
+}
+
+// v640: Byte Auto Convert640
+internal fun PlayerActivity.showV640ByteAutoConvert640Toggle() {
+    val current = BiliClient.prefs.v640byteAutoConvert640
+    BiliClient.prefs.v640byteAutoConvert640 = !current
+    AppToast.show(this, "Byte Auto Convert640: ${if (!current) "ON" else "OFF"}")
+}
+
+// v640: Calibrate Auto Color640
+internal fun PlayerActivity.showV640CalibrateAutoColor640Toggle() {
+    val current = BiliClient.prefs.v640calibrateAutoColor640
+    BiliClient.prefs.v640calibrateAutoColor640 = !current
+    AppToast.show(this, "Calibrate Auto Color640: ${if (!current) "ON" else "OFF"}")
+}
+
+// v640: Call Auto Log640
+internal fun PlayerActivity.showV640CallAutoLog640Toggle() {
+    val current = BiliClient.prefs.v640callAutoLog640
+    BiliClient.prefs.v640callAutoLog640 = !current
+    AppToast.show(this, "Call Auto Log640: ${if (!current) "ON" else "OFF"}")
+}
+
+// v640: Camera Auto Focus640
+internal fun PlayerActivity.showV640CameraAutoFocus640Toggle() {
+    val current = BiliClient.prefs.v640cameraAutoFocus640
+    BiliClient.prefs.v640cameraAutoFocus640 = !current
+    AppToast.show(this, "Camera Auto Focus640: ${if (!current) "ON" else "OFF"}")
+}
+
+// v640: Campus Auto Select640
+internal fun PlayerActivity.showV640CampusAutoSelect640Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v640campusAutoSelect640).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Campus Auto Select640",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v640campusAutoSelect640 = value
+        AppToast.show(this, "Campus Auto Select640: $value")
+    }
+}
+
+// v640: Cancel Auto Undo640
+internal fun PlayerActivity.showV640CancelAutoUndo640Toggle() {
+    val current = BiliClient.prefs.v640cancelAutoUndo640
+    BiliClient.prefs.v640cancelAutoUndo640 = !current
+    AppToast.show(this, "Cancel Auto Undo640: ${if (!current) "ON" else "OFF"}")
+}
+
+// v640: Capture Auto Mode640
+internal fun PlayerActivity.showV640CaptureAutoMode640Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v640captureAutoMode640).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Capture Auto Mode640",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v640captureAutoMode640 = value
+        AppToast.show(this, "Capture Auto Mode640: $value")
+    }
+}
+
+// v640: Caret Auto Blink640
+internal fun PlayerActivity.showV640CaretAutoBlink640Toggle() {
+    val current = BiliClient.prefs.v640caretAutoBlink640
+    BiliClient.prefs.v640caretAutoBlink640 = !current
+    AppToast.show(this, "Caret Auto Blink640: ${if (!current) "ON" else "OFF"}")
+}
+
+// v640: Case Auto Convert640
+internal fun PlayerActivity.showV640CaseAutoConvert640Toggle() {
+    val current = BiliClient.prefs.v640caseAutoConvert640
+    BiliClient.prefs.v640caseAutoConvert640 = !current
+    AppToast.show(this, "Case Auto Convert640: ${if (!current) "ON" else "OFF"}")
+}
+
+// v640: Category Auto Sort640
+internal fun PlayerActivity.showV640CategoryAutoSort640Toggle() {
+    val current = BiliClient.prefs.v640categoryAutoSort640
+    BiliClient.prefs.v640categoryAutoSort640 = !current
+    AppToast.show(this, "Category Auto Sort640: ${if (!current) "ON" else "OFF"}")
+}
+

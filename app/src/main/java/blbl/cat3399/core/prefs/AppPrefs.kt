@@ -44648,6 +44648,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V630BRIDGEAUTOCONNECT630, false)
         set(value) = prefs.edit().putBoolean(KEY_V630BRIDGEAUTOCONNECT630, value).apply()
 
+    var v631browseAutoHistory631: Boolean
+        get() = prefs.getBoolean(KEY_V631BROWSEAUTOHISTORY631, false)
+        set(value) = prefs.edit().putBoolean(KEY_V631BROWSEAUTOHISTORY631, value).apply()
+
+    var v631bucketAutoClean631: Boolean
+        get() = prefs.getBoolean(KEY_V631BUCKETAUTOCLEAN631, false)
+        set(value) = prefs.edit().putBoolean(KEY_V631BUCKETAUTOCLEAN631, value).apply()
+
+    var v631buildAutoVersion631: Boolean
+        get() = prefs.getBoolean(KEY_V631BUILDAUTOVERSION631, false)
+        set(value) = prefs.edit().putBoolean(KEY_V631BUILDAUTOVERSION631, value).apply()
+
+    var v631bulkAutoImport631: Boolean
+        get() = prefs.getBoolean(KEY_V631BULKAUTOIMPORT631, false)
+        set(value) = prefs.edit().putBoolean(KEY_V631BULKAUTOIMPORT631, value).apply()
+
+    var v631buttonAutoHaptic631: Boolean
+        get() = prefs.getBoolean(KEY_V631BUTTONAUTOHAPTIC631, false)
+        set(value) = prefs.edit().putBoolean(KEY_V631BUTTONAUTOHAPTIC631, value).apply()
+
+    var v631byteAutoConvert631: Boolean
+        get() = prefs.getBoolean(KEY_V631BYTEAUTOCONVERT631, false)
+        set(value) = prefs.edit().putBoolean(KEY_V631BYTEAUTOCONVERT631, value).apply()
+
+    var v631calibrateAutoColor631: Boolean
+        get() = prefs.getBoolean(KEY_V631CALIBRATEAUTOCOLOR631, false)
+        set(value) = prefs.edit().putBoolean(KEY_V631CALIBRATEAUTOCOLOR631, value).apply()
+
+    var v631callAutoLog631: Boolean
+        get() = prefs.getBoolean(KEY_V631CALLAUTOLOG631, false)
+        set(value) = prefs.edit().putBoolean(KEY_V631CALLAUTOLOG631, value).apply()
+
+    var v631cameraAutoFocus631: Boolean
+        get() = prefs.getBoolean(KEY_V631CAMERAAUTOFOCUS631, false)
+        set(value) = prefs.edit().putBoolean(KEY_V631CAMERAAUTOFOCUS631, value).apply()
+
+    var v631campusAutoSelect631: Int
+        get() = prefs.getInt(KEY_V631CAMPUSAUTOSELECT631, 0)
+        set(value) = prefs.edit().putInt(KEY_V631CAMPUSAUTOSELECT631, value).apply()
+
+    var v631cancelAutoUndo631: Boolean
+        get() = prefs.getBoolean(KEY_V631CANCELAUTOUNDO631, false)
+        set(value) = prefs.edit().putBoolean(KEY_V631CANCELAUTOUNDO631, value).apply()
+
+    var v631captureAutoMode631: Int
+        get() = prefs.getInt(KEY_V631CAPTUREAUTOMODE631, 0)
+        set(value) = prefs.edit().putInt(KEY_V631CAPTUREAUTOMODE631, value).apply()
+
+    var v631caretAutoBlink631: Boolean
+        get() = prefs.getBoolean(KEY_V631CARETAUTOBLINK631, false)
+        set(value) = prefs.edit().putBoolean(KEY_V631CARETAUTOBLINK631, value).apply()
+
+    var v631caseAutoConvert631: Boolean
+        get() = prefs.getBoolean(KEY_V631CASEAUTOCONVERT631, false)
+        set(value) = prefs.edit().putBoolean(KEY_V631CASEAUTOCONVERT631, value).apply()
+
+    var v631categoryAutoSort631: Boolean
+        get() = prefs.getBoolean(KEY_V631CATEGORYAUTOSORT631, false)
+        set(value) = prefs.edit().putBoolean(KEY_V631CATEGORYAUTOSORT631, value).apply()
+
+    var v632browseAutoHistory632: Boolean
+        get() = prefs.getBoolean(KEY_V632BROWSEAUTOHISTORY632, false)
+        set(value) = prefs.edit().putBoolean(KEY_V632BROWSEAUTOHISTORY632, value).apply()
+
+    var v632bucketAutoClean632: Boolean
+        get() = prefs.getBoolean(KEY_V632BUCKETAUTOCLEAN632, false)
+        set(value) = prefs.edit().putBoolean(KEY_V632BUCKETAUTOCLEAN632, value).apply()
+
+    var v632buildAutoVersion632: Boolean
+        get() = prefs.getBoolean(KEY_V632BUILDAUTOVERSION632, false)
+        set(value) = prefs.edit().putBoolean(KEY_V632BUILDAUTOVERSION632, value).apply()
+
+    var v632bulkAutoImport632: Boolean
+        get() = prefs.getBoolean(KEY_V632BULKAUTOIMPORT632, false)
+        set(value) = prefs.edit().putBoolean(KEY_V632BULKAUTOIMPORT632, value).apply()
+
+    var v632buttonAutoHaptic632: Boolean
+        get() = prefs.getBoolean(KEY_V632BUTTONAUTOHAPTIC632, false)
+        set(value) = prefs.edit().putBoolean(KEY_V632BUTTONAUTOHAPTIC632, value).apply()
+
+    var v632byteAutoConvert632: Boolean
+        get() = prefs.getBoolean(KEY_V632BYTEAUTOCONVERT632, false)
+        set(value) = prefs.edit().putBoolean(KEY_V632BYTEAUTOCONVERT632, value).apply()
+
+    var v632calibrateAutoColor632: Boolean
+        get() = prefs.getBoolean(KEY_V632CALIBRATEAUTOCOLOR632, false)
+        set(value) = prefs.edit().putBoolean(KEY_V632CALIBRATEAUTOCOLOR632, value).apply()
+
+    var v632callAutoLog632: Boolean
+        get() = prefs.getBoolean(KEY_V632CALLAUTOLOG632, false)
+        set(value) = prefs.edit().putBoolean(KEY_V632CALLAUTOLOG632, value).apply()
+
+    var v632cameraAutoFocus632: Boolean
+        get() = prefs.getBoolean(KEY_V632CAMERAAUTOFOCUS632, false)
+        set(value) = prefs.edit().putBoolean(KEY_V632CAMERAAUTOFOCUS632, value).apply()
+
+    var v632campusAutoSelect632: Int
+        get() = prefs.getInt(KEY_V632CAMPUSAUTOSELECT632, 0)
+        set(value) = prefs.edit().putInt(KEY_V632CAMPUSAUTOSELECT632, value).apply()
+
+    var v632cancelAutoUndo632: Boolean
+        get() = prefs.getBoolean(KEY_V632CANCELAUTOUNDO632, false)
+        set(value) = prefs.edit().putBoolean(KEY_V632CANCELAUTOUNDO632, value).apply()
+
+    var v632captureAutoMode632: Int
+        get() = prefs.getInt(KEY_V632CAPTUREAUTOMODE632, 0)
+        set(value) = prefs.edit().putInt(KEY_V632CAPTUREAUTOMODE632, value).apply()
+
+    var v632caretAutoBlink632: Boolean
+        get() = prefs.getBoolean(KEY_V632CARETAUTOBLINK632, false)
+        set(value) = prefs.edit().putBoolean(KEY_V632CARETAUTOBLINK632, value).apply()
+
+    var v632caseAutoConvert632: Boolean
+        get() = prefs.getBoolean(KEY_V632CASEAUTOCONVERT632, false)
+        set(value) = prefs.edit().putBoolean(KEY_V632CASEAUTOCONVERT632, value).apply()
+
+    var v632categoryAutoSort632: Boolean
+        get() = prefs.getBoolean(KEY_V632CATEGORYAUTOSORT632, false)
+        set(value) = prefs.edit().putBoolean(KEY_V632CATEGORYAUTOSORT632, value).apply()
+
+    var v633browseAutoHistory633: Boolean
+        get() = prefs.getBoolean(KEY_V633BROWSEAUTOHISTORY633, false)
+        set(value) = prefs.edit().putBoolean(KEY_V633BROWSEAUTOHISTORY633, value).apply()
+
+    var v633bucketAutoClean633: Boolean
+        get() = prefs.getBoolean(KEY_V633BUCKETAUTOCLEAN633, false)
+        set(value) = prefs.edit().putBoolean(KEY_V633BUCKETAUTOCLEAN633, value).apply()
+
+    var v633buildAutoVersion633: Boolean
+        get() = prefs.getBoolean(KEY_V633BUILDAUTOVERSION633, false)
+        set(value) = prefs.edit().putBoolean(KEY_V633BUILDAUTOVERSION633, value).apply()
+
+    var v633bulkAutoImport633: Boolean
+        get() = prefs.getBoolean(KEY_V633BULKAUTOIMPORT633, false)
+        set(value) = prefs.edit().putBoolean(KEY_V633BULKAUTOIMPORT633, value).apply()
+
+    var v633buttonAutoHaptic633: Boolean
+        get() = prefs.getBoolean(KEY_V633BUTTONAUTOHAPTIC633, false)
+        set(value) = prefs.edit().putBoolean(KEY_V633BUTTONAUTOHAPTIC633, value).apply()
+
+    var v633byteAutoConvert633: Boolean
+        get() = prefs.getBoolean(KEY_V633BYTEAUTOCONVERT633, false)
+        set(value) = prefs.edit().putBoolean(KEY_V633BYTEAUTOCONVERT633, value).apply()
+
+    var v633calibrateAutoColor633: Boolean
+        get() = prefs.getBoolean(KEY_V633CALIBRATEAUTOCOLOR633, false)
+        set(value) = prefs.edit().putBoolean(KEY_V633CALIBRATEAUTOCOLOR633, value).apply()
+
+    var v633callAutoLog633: Boolean
+        get() = prefs.getBoolean(KEY_V633CALLAUTOLOG633, false)
+        set(value) = prefs.edit().putBoolean(KEY_V633CALLAUTOLOG633, value).apply()
+
+    var v633cameraAutoFocus633: Boolean
+        get() = prefs.getBoolean(KEY_V633CAMERAAUTOFOCUS633, false)
+        set(value) = prefs.edit().putBoolean(KEY_V633CAMERAAUTOFOCUS633, value).apply()
+
+    var v633campusAutoSelect633: Int
+        get() = prefs.getInt(KEY_V633CAMPUSAUTOSELECT633, 0)
+        set(value) = prefs.edit().putInt(KEY_V633CAMPUSAUTOSELECT633, value).apply()
+
+    var v633cancelAutoUndo633: Boolean
+        get() = prefs.getBoolean(KEY_V633CANCELAUTOUNDO633, false)
+        set(value) = prefs.edit().putBoolean(KEY_V633CANCELAUTOUNDO633, value).apply()
+
+    var v633captureAutoMode633: Int
+        get() = prefs.getInt(KEY_V633CAPTUREAUTOMODE633, 0)
+        set(value) = prefs.edit().putInt(KEY_V633CAPTUREAUTOMODE633, value).apply()
+
+    var v633caretAutoBlink633: Boolean
+        get() = prefs.getBoolean(KEY_V633CARETAUTOBLINK633, false)
+        set(value) = prefs.edit().putBoolean(KEY_V633CARETAUTOBLINK633, value).apply()
+
+    var v633caseAutoConvert633: Boolean
+        get() = prefs.getBoolean(KEY_V633CASEAUTOCONVERT633, false)
+        set(value) = prefs.edit().putBoolean(KEY_V633CASEAUTOCONVERT633, value).apply()
+
+    var v633categoryAutoSort633: Boolean
+        get() = prefs.getBoolean(KEY_V633CATEGORYAUTOSORT633, false)
+        set(value) = prefs.edit().putBoolean(KEY_V633CATEGORYAUTOSORT633, value).apply()
+
+    var v634browseAutoHistory634: Boolean
+        get() = prefs.getBoolean(KEY_V634BROWSEAUTOHISTORY634, false)
+        set(value) = prefs.edit().putBoolean(KEY_V634BROWSEAUTOHISTORY634, value).apply()
+
+    var v634bucketAutoClean634: Boolean
+        get() = prefs.getBoolean(KEY_V634BUCKETAUTOCLEAN634, false)
+        set(value) = prefs.edit().putBoolean(KEY_V634BUCKETAUTOCLEAN634, value).apply()
+
+    var v634buildAutoVersion634: Boolean
+        get() = prefs.getBoolean(KEY_V634BUILDAUTOVERSION634, false)
+        set(value) = prefs.edit().putBoolean(KEY_V634BUILDAUTOVERSION634, value).apply()
+
+    var v634bulkAutoImport634: Boolean
+        get() = prefs.getBoolean(KEY_V634BULKAUTOIMPORT634, false)
+        set(value) = prefs.edit().putBoolean(KEY_V634BULKAUTOIMPORT634, value).apply()
+
+    var v634buttonAutoHaptic634: Boolean
+        get() = prefs.getBoolean(KEY_V634BUTTONAUTOHAPTIC634, false)
+        set(value) = prefs.edit().putBoolean(KEY_V634BUTTONAUTOHAPTIC634, value).apply()
+
+    var v634byteAutoConvert634: Boolean
+        get() = prefs.getBoolean(KEY_V634BYTEAUTOCONVERT634, false)
+        set(value) = prefs.edit().putBoolean(KEY_V634BYTEAUTOCONVERT634, value).apply()
+
+    var v634calibrateAutoColor634: Boolean
+        get() = prefs.getBoolean(KEY_V634CALIBRATEAUTOCOLOR634, false)
+        set(value) = prefs.edit().putBoolean(KEY_V634CALIBRATEAUTOCOLOR634, value).apply()
+
+    var v634callAutoLog634: Boolean
+        get() = prefs.getBoolean(KEY_V634CALLAUTOLOG634, false)
+        set(value) = prefs.edit().putBoolean(KEY_V634CALLAUTOLOG634, value).apply()
+
+    var v634cameraAutoFocus634: Boolean
+        get() = prefs.getBoolean(KEY_V634CAMERAAUTOFOCUS634, false)
+        set(value) = prefs.edit().putBoolean(KEY_V634CAMERAAUTOFOCUS634, value).apply()
+
+    var v634campusAutoSelect634: Int
+        get() = prefs.getInt(KEY_V634CAMPUSAUTOSELECT634, 0)
+        set(value) = prefs.edit().putInt(KEY_V634CAMPUSAUTOSELECT634, value).apply()
+
+    var v634cancelAutoUndo634: Boolean
+        get() = prefs.getBoolean(KEY_V634CANCELAUTOUNDO634, false)
+        set(value) = prefs.edit().putBoolean(KEY_V634CANCELAUTOUNDO634, value).apply()
+
+    var v634captureAutoMode634: Int
+        get() = prefs.getInt(KEY_V634CAPTUREAUTOMODE634, 0)
+        set(value) = prefs.edit().putInt(KEY_V634CAPTUREAUTOMODE634, value).apply()
+
+    var v634caretAutoBlink634: Boolean
+        get() = prefs.getBoolean(KEY_V634CARETAUTOBLINK634, false)
+        set(value) = prefs.edit().putBoolean(KEY_V634CARETAUTOBLINK634, value).apply()
+
+    var v634caseAutoConvert634: Boolean
+        get() = prefs.getBoolean(KEY_V634CASEAUTOCONVERT634, false)
+        set(value) = prefs.edit().putBoolean(KEY_V634CASEAUTOCONVERT634, value).apply()
+
+    var v634categoryAutoSort634: Boolean
+        get() = prefs.getBoolean(KEY_V634CATEGORYAUTOSORT634, false)
+        set(value) = prefs.edit().putBoolean(KEY_V634CATEGORYAUTOSORT634, value).apply()
+
+    var v635browseAutoHistory635: Boolean
+        get() = prefs.getBoolean(KEY_V635BROWSEAUTOHISTORY635, false)
+        set(value) = prefs.edit().putBoolean(KEY_V635BROWSEAUTOHISTORY635, value).apply()
+
+    var v635bucketAutoClean635: Boolean
+        get() = prefs.getBoolean(KEY_V635BUCKETAUTOCLEAN635, false)
+        set(value) = prefs.edit().putBoolean(KEY_V635BUCKETAUTOCLEAN635, value).apply()
+
+    var v635buildAutoVersion635: Boolean
+        get() = prefs.getBoolean(KEY_V635BUILDAUTOVERSION635, false)
+        set(value) = prefs.edit().putBoolean(KEY_V635BUILDAUTOVERSION635, value).apply()
+
+    var v635bulkAutoImport635: Boolean
+        get() = prefs.getBoolean(KEY_V635BULKAUTOIMPORT635, false)
+        set(value) = prefs.edit().putBoolean(KEY_V635BULKAUTOIMPORT635, value).apply()
+
+    var v635buttonAutoHaptic635: Boolean
+        get() = prefs.getBoolean(KEY_V635BUTTONAUTOHAPTIC635, false)
+        set(value) = prefs.edit().putBoolean(KEY_V635BUTTONAUTOHAPTIC635, value).apply()
+
+    var v635byteAutoConvert635: Boolean
+        get() = prefs.getBoolean(KEY_V635BYTEAUTOCONVERT635, false)
+        set(value) = prefs.edit().putBoolean(KEY_V635BYTEAUTOCONVERT635, value).apply()
+
+    var v635calibrateAutoColor635: Boolean
+        get() = prefs.getBoolean(KEY_V635CALIBRATEAUTOCOLOR635, false)
+        set(value) = prefs.edit().putBoolean(KEY_V635CALIBRATEAUTOCOLOR635, value).apply()
+
+    var v635callAutoLog635: Boolean
+        get() = prefs.getBoolean(KEY_V635CALLAUTOLOG635, false)
+        set(value) = prefs.edit().putBoolean(KEY_V635CALLAUTOLOG635, value).apply()
+
+    var v635cameraAutoFocus635: Boolean
+        get() = prefs.getBoolean(KEY_V635CAMERAAUTOFOCUS635, false)
+        set(value) = prefs.edit().putBoolean(KEY_V635CAMERAAUTOFOCUS635, value).apply()
+
+    var v635campusAutoSelect635: Int
+        get() = prefs.getInt(KEY_V635CAMPUSAUTOSELECT635, 0)
+        set(value) = prefs.edit().putInt(KEY_V635CAMPUSAUTOSELECT635, value).apply()
+
+    var v635cancelAutoUndo635: Boolean
+        get() = prefs.getBoolean(KEY_V635CANCELAUTOUNDO635, false)
+        set(value) = prefs.edit().putBoolean(KEY_V635CANCELAUTOUNDO635, value).apply()
+
+    var v635captureAutoMode635: Int
+        get() = prefs.getInt(KEY_V635CAPTUREAUTOMODE635, 0)
+        set(value) = prefs.edit().putInt(KEY_V635CAPTUREAUTOMODE635, value).apply()
+
+    var v635caretAutoBlink635: Boolean
+        get() = prefs.getBoolean(KEY_V635CARETAUTOBLINK635, false)
+        set(value) = prefs.edit().putBoolean(KEY_V635CARETAUTOBLINK635, value).apply()
+
+    var v635caseAutoConvert635: Boolean
+        get() = prefs.getBoolean(KEY_V635CASEAUTOCONVERT635, false)
+        set(value) = prefs.edit().putBoolean(KEY_V635CASEAUTOCONVERT635, value).apply()
+
+    var v635categoryAutoSort635: Boolean
+        get() = prefs.getBoolean(KEY_V635CATEGORYAUTOSORT635, false)
+        set(value) = prefs.edit().putBoolean(KEY_V635CATEGORYAUTOSORT635, value).apply()
+
+    var v636browseAutoHistory636: Boolean
+        get() = prefs.getBoolean(KEY_V636BROWSEAUTOHISTORY636, false)
+        set(value) = prefs.edit().putBoolean(KEY_V636BROWSEAUTOHISTORY636, value).apply()
+
+    var v636bucketAutoClean636: Boolean
+        get() = prefs.getBoolean(KEY_V636BUCKETAUTOCLEAN636, false)
+        set(value) = prefs.edit().putBoolean(KEY_V636BUCKETAUTOCLEAN636, value).apply()
+
+    var v636buildAutoVersion636: Boolean
+        get() = prefs.getBoolean(KEY_V636BUILDAUTOVERSION636, false)
+        set(value) = prefs.edit().putBoolean(KEY_V636BUILDAUTOVERSION636, value).apply()
+
+    var v636bulkAutoImport636: Boolean
+        get() = prefs.getBoolean(KEY_V636BULKAUTOIMPORT636, false)
+        set(value) = prefs.edit().putBoolean(KEY_V636BULKAUTOIMPORT636, value).apply()
+
+    var v636buttonAutoHaptic636: Boolean
+        get() = prefs.getBoolean(KEY_V636BUTTONAUTOHAPTIC636, false)
+        set(value) = prefs.edit().putBoolean(KEY_V636BUTTONAUTOHAPTIC636, value).apply()
+
+    var v636byteAutoConvert636: Boolean
+        get() = prefs.getBoolean(KEY_V636BYTEAUTOCONVERT636, false)
+        set(value) = prefs.edit().putBoolean(KEY_V636BYTEAUTOCONVERT636, value).apply()
+
+    var v636calibrateAutoColor636: Boolean
+        get() = prefs.getBoolean(KEY_V636CALIBRATEAUTOCOLOR636, false)
+        set(value) = prefs.edit().putBoolean(KEY_V636CALIBRATEAUTOCOLOR636, value).apply()
+
+    var v636callAutoLog636: Boolean
+        get() = prefs.getBoolean(KEY_V636CALLAUTOLOG636, false)
+        set(value) = prefs.edit().putBoolean(KEY_V636CALLAUTOLOG636, value).apply()
+
+    var v636cameraAutoFocus636: Boolean
+        get() = prefs.getBoolean(KEY_V636CAMERAAUTOFOCUS636, false)
+        set(value) = prefs.edit().putBoolean(KEY_V636CAMERAAUTOFOCUS636, value).apply()
+
+    var v636campusAutoSelect636: Int
+        get() = prefs.getInt(KEY_V636CAMPUSAUTOSELECT636, 0)
+        set(value) = prefs.edit().putInt(KEY_V636CAMPUSAUTOSELECT636, value).apply()
+
+    var v636cancelAutoUndo636: Boolean
+        get() = prefs.getBoolean(KEY_V636CANCELAUTOUNDO636, false)
+        set(value) = prefs.edit().putBoolean(KEY_V636CANCELAUTOUNDO636, value).apply()
+
+    var v636captureAutoMode636: Int
+        get() = prefs.getInt(KEY_V636CAPTUREAUTOMODE636, 0)
+        set(value) = prefs.edit().putInt(KEY_V636CAPTUREAUTOMODE636, value).apply()
+
+    var v636caretAutoBlink636: Boolean
+        get() = prefs.getBoolean(KEY_V636CARETAUTOBLINK636, false)
+        set(value) = prefs.edit().putBoolean(KEY_V636CARETAUTOBLINK636, value).apply()
+
+    var v636caseAutoConvert636: Boolean
+        get() = prefs.getBoolean(KEY_V636CASEAUTOCONVERT636, false)
+        set(value) = prefs.edit().putBoolean(KEY_V636CASEAUTOCONVERT636, value).apply()
+
+    var v636categoryAutoSort636: Boolean
+        get() = prefs.getBoolean(KEY_V636CATEGORYAUTOSORT636, false)
+        set(value) = prefs.edit().putBoolean(KEY_V636CATEGORYAUTOSORT636, value).apply()
+
+    var v637browseAutoHistory637: Boolean
+        get() = prefs.getBoolean(KEY_V637BROWSEAUTOHISTORY637, false)
+        set(value) = prefs.edit().putBoolean(KEY_V637BROWSEAUTOHISTORY637, value).apply()
+
+    var v637bucketAutoClean637: Boolean
+        get() = prefs.getBoolean(KEY_V637BUCKETAUTOCLEAN637, false)
+        set(value) = prefs.edit().putBoolean(KEY_V637BUCKETAUTOCLEAN637, value).apply()
+
+    var v637buildAutoVersion637: Boolean
+        get() = prefs.getBoolean(KEY_V637BUILDAUTOVERSION637, false)
+        set(value) = prefs.edit().putBoolean(KEY_V637BUILDAUTOVERSION637, value).apply()
+
+    var v637bulkAutoImport637: Boolean
+        get() = prefs.getBoolean(KEY_V637BULKAUTOIMPORT637, false)
+        set(value) = prefs.edit().putBoolean(KEY_V637BULKAUTOIMPORT637, value).apply()
+
+    var v637buttonAutoHaptic637: Boolean
+        get() = prefs.getBoolean(KEY_V637BUTTONAUTOHAPTIC637, false)
+        set(value) = prefs.edit().putBoolean(KEY_V637BUTTONAUTOHAPTIC637, value).apply()
+
+    var v637byteAutoConvert637: Boolean
+        get() = prefs.getBoolean(KEY_V637BYTEAUTOCONVERT637, false)
+        set(value) = prefs.edit().putBoolean(KEY_V637BYTEAUTOCONVERT637, value).apply()
+
+    var v637calibrateAutoColor637: Boolean
+        get() = prefs.getBoolean(KEY_V637CALIBRATEAUTOCOLOR637, false)
+        set(value) = prefs.edit().putBoolean(KEY_V637CALIBRATEAUTOCOLOR637, value).apply()
+
+    var v637callAutoLog637: Boolean
+        get() = prefs.getBoolean(KEY_V637CALLAUTOLOG637, false)
+        set(value) = prefs.edit().putBoolean(KEY_V637CALLAUTOLOG637, value).apply()
+
+    var v637cameraAutoFocus637: Boolean
+        get() = prefs.getBoolean(KEY_V637CAMERAAUTOFOCUS637, false)
+        set(value) = prefs.edit().putBoolean(KEY_V637CAMERAAUTOFOCUS637, value).apply()
+
+    var v637campusAutoSelect637: Int
+        get() = prefs.getInt(KEY_V637CAMPUSAUTOSELECT637, 0)
+        set(value) = prefs.edit().putInt(KEY_V637CAMPUSAUTOSELECT637, value).apply()
+
+    var v637cancelAutoUndo637: Boolean
+        get() = prefs.getBoolean(KEY_V637CANCELAUTOUNDO637, false)
+        set(value) = prefs.edit().putBoolean(KEY_V637CANCELAUTOUNDO637, value).apply()
+
+    var v637captureAutoMode637: Int
+        get() = prefs.getInt(KEY_V637CAPTUREAUTOMODE637, 0)
+        set(value) = prefs.edit().putInt(KEY_V637CAPTUREAUTOMODE637, value).apply()
+
+    var v637caretAutoBlink637: Boolean
+        get() = prefs.getBoolean(KEY_V637CARETAUTOBLINK637, false)
+        set(value) = prefs.edit().putBoolean(KEY_V637CARETAUTOBLINK637, value).apply()
+
+    var v637caseAutoConvert637: Boolean
+        get() = prefs.getBoolean(KEY_V637CASEAUTOCONVERT637, false)
+        set(value) = prefs.edit().putBoolean(KEY_V637CASEAUTOCONVERT637, value).apply()
+
+    var v637categoryAutoSort637: Boolean
+        get() = prefs.getBoolean(KEY_V637CATEGORYAUTOSORT637, false)
+        set(value) = prefs.edit().putBoolean(KEY_V637CATEGORYAUTOSORT637, value).apply()
+
+    var v638browseAutoHistory638: Boolean
+        get() = prefs.getBoolean(KEY_V638BROWSEAUTOHISTORY638, false)
+        set(value) = prefs.edit().putBoolean(KEY_V638BROWSEAUTOHISTORY638, value).apply()
+
+    var v638bucketAutoClean638: Boolean
+        get() = prefs.getBoolean(KEY_V638BUCKETAUTOCLEAN638, false)
+        set(value) = prefs.edit().putBoolean(KEY_V638BUCKETAUTOCLEAN638, value).apply()
+
+    var v638buildAutoVersion638: Boolean
+        get() = prefs.getBoolean(KEY_V638BUILDAUTOVERSION638, false)
+        set(value) = prefs.edit().putBoolean(KEY_V638BUILDAUTOVERSION638, value).apply()
+
+    var v638bulkAutoImport638: Boolean
+        get() = prefs.getBoolean(KEY_V638BULKAUTOIMPORT638, false)
+        set(value) = prefs.edit().putBoolean(KEY_V638BULKAUTOIMPORT638, value).apply()
+
+    var v638buttonAutoHaptic638: Boolean
+        get() = prefs.getBoolean(KEY_V638BUTTONAUTOHAPTIC638, false)
+        set(value) = prefs.edit().putBoolean(KEY_V638BUTTONAUTOHAPTIC638, value).apply()
+
+    var v638byteAutoConvert638: Boolean
+        get() = prefs.getBoolean(KEY_V638BYTEAUTOCONVERT638, false)
+        set(value) = prefs.edit().putBoolean(KEY_V638BYTEAUTOCONVERT638, value).apply()
+
+    var v638calibrateAutoColor638: Boolean
+        get() = prefs.getBoolean(KEY_V638CALIBRATEAUTOCOLOR638, false)
+        set(value) = prefs.edit().putBoolean(KEY_V638CALIBRATEAUTOCOLOR638, value).apply()
+
+    var v638callAutoLog638: Boolean
+        get() = prefs.getBoolean(KEY_V638CALLAUTOLOG638, false)
+        set(value) = prefs.edit().putBoolean(KEY_V638CALLAUTOLOG638, value).apply()
+
+    var v638cameraAutoFocus638: Boolean
+        get() = prefs.getBoolean(KEY_V638CAMERAAUTOFOCUS638, false)
+        set(value) = prefs.edit().putBoolean(KEY_V638CAMERAAUTOFOCUS638, value).apply()
+
+    var v638campusAutoSelect638: Int
+        get() = prefs.getInt(KEY_V638CAMPUSAUTOSELECT638, 0)
+        set(value) = prefs.edit().putInt(KEY_V638CAMPUSAUTOSELECT638, value).apply()
+
+    var v638cancelAutoUndo638: Boolean
+        get() = prefs.getBoolean(KEY_V638CANCELAUTOUNDO638, false)
+        set(value) = prefs.edit().putBoolean(KEY_V638CANCELAUTOUNDO638, value).apply()
+
+    var v638captureAutoMode638: Int
+        get() = prefs.getInt(KEY_V638CAPTUREAUTOMODE638, 0)
+        set(value) = prefs.edit().putInt(KEY_V638CAPTUREAUTOMODE638, value).apply()
+
+    var v638caretAutoBlink638: Boolean
+        get() = prefs.getBoolean(KEY_V638CARETAUTOBLINK638, false)
+        set(value) = prefs.edit().putBoolean(KEY_V638CARETAUTOBLINK638, value).apply()
+
+    var v638caseAutoConvert638: Boolean
+        get() = prefs.getBoolean(KEY_V638CASEAUTOCONVERT638, false)
+        set(value) = prefs.edit().putBoolean(KEY_V638CASEAUTOCONVERT638, value).apply()
+
+    var v638categoryAutoSort638: Boolean
+        get() = prefs.getBoolean(KEY_V638CATEGORYAUTOSORT638, false)
+        set(value) = prefs.edit().putBoolean(KEY_V638CATEGORYAUTOSORT638, value).apply()
+
+    var v639browseAutoHistory639: Boolean
+        get() = prefs.getBoolean(KEY_V639BROWSEAUTOHISTORY639, false)
+        set(value) = prefs.edit().putBoolean(KEY_V639BROWSEAUTOHISTORY639, value).apply()
+
+    var v639bucketAutoClean639: Boolean
+        get() = prefs.getBoolean(KEY_V639BUCKETAUTOCLEAN639, false)
+        set(value) = prefs.edit().putBoolean(KEY_V639BUCKETAUTOCLEAN639, value).apply()
+
+    var v639buildAutoVersion639: Boolean
+        get() = prefs.getBoolean(KEY_V639BUILDAUTOVERSION639, false)
+        set(value) = prefs.edit().putBoolean(KEY_V639BUILDAUTOVERSION639, value).apply()
+
+    var v639bulkAutoImport639: Boolean
+        get() = prefs.getBoolean(KEY_V639BULKAUTOIMPORT639, false)
+        set(value) = prefs.edit().putBoolean(KEY_V639BULKAUTOIMPORT639, value).apply()
+
+    var v639buttonAutoHaptic639: Boolean
+        get() = prefs.getBoolean(KEY_V639BUTTONAUTOHAPTIC639, false)
+        set(value) = prefs.edit().putBoolean(KEY_V639BUTTONAUTOHAPTIC639, value).apply()
+
+    var v639byteAutoConvert639: Boolean
+        get() = prefs.getBoolean(KEY_V639BYTEAUTOCONVERT639, false)
+        set(value) = prefs.edit().putBoolean(KEY_V639BYTEAUTOCONVERT639, value).apply()
+
+    var v639calibrateAutoColor639: Boolean
+        get() = prefs.getBoolean(KEY_V639CALIBRATEAUTOCOLOR639, false)
+        set(value) = prefs.edit().putBoolean(KEY_V639CALIBRATEAUTOCOLOR639, value).apply()
+
+    var v639callAutoLog639: Boolean
+        get() = prefs.getBoolean(KEY_V639CALLAUTOLOG639, false)
+        set(value) = prefs.edit().putBoolean(KEY_V639CALLAUTOLOG639, value).apply()
+
+    var v639cameraAutoFocus639: Boolean
+        get() = prefs.getBoolean(KEY_V639CAMERAAUTOFOCUS639, false)
+        set(value) = prefs.edit().putBoolean(KEY_V639CAMERAAUTOFOCUS639, value).apply()
+
+    var v639campusAutoSelect639: Int
+        get() = prefs.getInt(KEY_V639CAMPUSAUTOSELECT639, 0)
+        set(value) = prefs.edit().putInt(KEY_V639CAMPUSAUTOSELECT639, value).apply()
+
+    var v639cancelAutoUndo639: Boolean
+        get() = prefs.getBoolean(KEY_V639CANCELAUTOUNDO639, false)
+        set(value) = prefs.edit().putBoolean(KEY_V639CANCELAUTOUNDO639, value).apply()
+
+    var v639captureAutoMode639: Int
+        get() = prefs.getInt(KEY_V639CAPTUREAUTOMODE639, 0)
+        set(value) = prefs.edit().putInt(KEY_V639CAPTUREAUTOMODE639, value).apply()
+
+    var v639caretAutoBlink639: Boolean
+        get() = prefs.getBoolean(KEY_V639CARETAUTOBLINK639, false)
+        set(value) = prefs.edit().putBoolean(KEY_V639CARETAUTOBLINK639, value).apply()
+
+    var v639caseAutoConvert639: Boolean
+        get() = prefs.getBoolean(KEY_V639CASEAUTOCONVERT639, false)
+        set(value) = prefs.edit().putBoolean(KEY_V639CASEAUTOCONVERT639, value).apply()
+
+    var v639categoryAutoSort639: Boolean
+        get() = prefs.getBoolean(KEY_V639CATEGORYAUTOSORT639, false)
+        set(value) = prefs.edit().putBoolean(KEY_V639CATEGORYAUTOSORT639, value).apply()
+
+    var v640browseAutoHistory640: Boolean
+        get() = prefs.getBoolean(KEY_V640BROWSEAUTOHISTORY640, false)
+        set(value) = prefs.edit().putBoolean(KEY_V640BROWSEAUTOHISTORY640, value).apply()
+
+    var v640bucketAutoClean640: Boolean
+        get() = prefs.getBoolean(KEY_V640BUCKETAUTOCLEAN640, false)
+        set(value) = prefs.edit().putBoolean(KEY_V640BUCKETAUTOCLEAN640, value).apply()
+
+    var v640buildAutoVersion640: Boolean
+        get() = prefs.getBoolean(KEY_V640BUILDAUTOVERSION640, false)
+        set(value) = prefs.edit().putBoolean(KEY_V640BUILDAUTOVERSION640, value).apply()
+
+    var v640bulkAutoImport640: Boolean
+        get() = prefs.getBoolean(KEY_V640BULKAUTOIMPORT640, false)
+        set(value) = prefs.edit().putBoolean(KEY_V640BULKAUTOIMPORT640, value).apply()
+
+    var v640buttonAutoHaptic640: Boolean
+        get() = prefs.getBoolean(KEY_V640BUTTONAUTOHAPTIC640, false)
+        set(value) = prefs.edit().putBoolean(KEY_V640BUTTONAUTOHAPTIC640, value).apply()
+
+    var v640byteAutoConvert640: Boolean
+        get() = prefs.getBoolean(KEY_V640BYTEAUTOCONVERT640, false)
+        set(value) = prefs.edit().putBoolean(KEY_V640BYTEAUTOCONVERT640, value).apply()
+
+    var v640calibrateAutoColor640: Boolean
+        get() = prefs.getBoolean(KEY_V640CALIBRATEAUTOCOLOR640, false)
+        set(value) = prefs.edit().putBoolean(KEY_V640CALIBRATEAUTOCOLOR640, value).apply()
+
+    var v640callAutoLog640: Boolean
+        get() = prefs.getBoolean(KEY_V640CALLAUTOLOG640, false)
+        set(value) = prefs.edit().putBoolean(KEY_V640CALLAUTOLOG640, value).apply()
+
+    var v640cameraAutoFocus640: Boolean
+        get() = prefs.getBoolean(KEY_V640CAMERAAUTOFOCUS640, false)
+        set(value) = prefs.edit().putBoolean(KEY_V640CAMERAAUTOFOCUS640, value).apply()
+
+    var v640campusAutoSelect640: Int
+        get() = prefs.getInt(KEY_V640CAMPUSAUTOSELECT640, 0)
+        set(value) = prefs.edit().putInt(KEY_V640CAMPUSAUTOSELECT640, value).apply()
+
+    var v640cancelAutoUndo640: Boolean
+        get() = prefs.getBoolean(KEY_V640CANCELAUTOUNDO640, false)
+        set(value) = prefs.edit().putBoolean(KEY_V640CANCELAUTOUNDO640, value).apply()
+
+    var v640captureAutoMode640: Int
+        get() = prefs.getInt(KEY_V640CAPTUREAUTOMODE640, 0)
+        set(value) = prefs.edit().putInt(KEY_V640CAPTUREAUTOMODE640, value).apply()
+
+    var v640caretAutoBlink640: Boolean
+        get() = prefs.getBoolean(KEY_V640CARETAUTOBLINK640, false)
+        set(value) = prefs.edit().putBoolean(KEY_V640CARETAUTOBLINK640, value).apply()
+
+    var v640caseAutoConvert640: Boolean
+        get() = prefs.getBoolean(KEY_V640CASEAUTOCONVERT640, false)
+        set(value) = prefs.edit().putBoolean(KEY_V640CASEAUTOCONVERT640, value).apply()
+
+    var v640categoryAutoSort640: Boolean
+        get() = prefs.getBoolean(KEY_V640CATEGORYAUTOSORT640, false)
+        set(value) = prefs.edit().putBoolean(KEY_V640CATEGORYAUTOSORT640, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -56680,5 +57280,155 @@ class AppPrefs(context: Context) {
         const val KEY_V630BRANDAUTOLOGO630 = "v630brandAutoLogo630" // v630 Brand Auto Logo630
         const val KEY_V630BREAKAUTORESUME630 = "v630breakAutoResume630" // v630 Break Auto Resume630
         const val KEY_V630BRIDGEAUTOCONNECT630 = "v630bridgeAutoConnect630" // v630 Bridge Auto Connect630
+        const val KEY_V631BROWSEAUTOHISTORY631 = "v631browseAutoHistory631" // v631 Browse Auto History631
+        const val KEY_V631BUCKETAUTOCLEAN631 = "v631bucketAutoClean631" // v631 Bucket Auto Clean631
+        const val KEY_V631BUILDAUTOVERSION631 = "v631buildAutoVersion631" // v631 Build Auto Version631
+        const val KEY_V631BULKAUTOIMPORT631 = "v631bulkAutoImport631" // v631 Bulk Auto Import631
+        const val KEY_V631BUTTONAUTOHAPTIC631 = "v631buttonAutoHaptic631" // v631 Button Auto Haptic631
+        const val KEY_V631BYTEAUTOCONVERT631 = "v631byteAutoConvert631" // v631 Byte Auto Convert631
+        const val KEY_V631CALIBRATEAUTOCOLOR631 = "v631calibrateAutoColor631" // v631 Calibrate Auto Color631
+        const val KEY_V631CALLAUTOLOG631 = "v631callAutoLog631" // v631 Call Auto Log631
+        const val KEY_V631CAMERAAUTOFOCUS631 = "v631cameraAutoFocus631" // v631 Camera Auto Focus631
+        const val KEY_V631CAMPUSAUTOSELECT631 = "v631campusAutoSelect631" // v631 Campus Auto Select631
+        const val KEY_V631CANCELAUTOUNDO631 = "v631cancelAutoUndo631" // v631 Cancel Auto Undo631
+        const val KEY_V631CAPTUREAUTOMODE631 = "v631captureAutoMode631" // v631 Capture Auto Mode631
+        const val KEY_V631CARETAUTOBLINK631 = "v631caretAutoBlink631" // v631 Caret Auto Blink631
+        const val KEY_V631CASEAUTOCONVERT631 = "v631caseAutoConvert631" // v631 Case Auto Convert631
+        const val KEY_V631CATEGORYAUTOSORT631 = "v631categoryAutoSort631" // v631 Category Auto Sort631
+        const val KEY_V632BROWSEAUTOHISTORY632 = "v632browseAutoHistory632" // v632 Browse Auto History632
+        const val KEY_V632BUCKETAUTOCLEAN632 = "v632bucketAutoClean632" // v632 Bucket Auto Clean632
+        const val KEY_V632BUILDAUTOVERSION632 = "v632buildAutoVersion632" // v632 Build Auto Version632
+        const val KEY_V632BULKAUTOIMPORT632 = "v632bulkAutoImport632" // v632 Bulk Auto Import632
+        const val KEY_V632BUTTONAUTOHAPTIC632 = "v632buttonAutoHaptic632" // v632 Button Auto Haptic632
+        const val KEY_V632BYTEAUTOCONVERT632 = "v632byteAutoConvert632" // v632 Byte Auto Convert632
+        const val KEY_V632CALIBRATEAUTOCOLOR632 = "v632calibrateAutoColor632" // v632 Calibrate Auto Color632
+        const val KEY_V632CALLAUTOLOG632 = "v632callAutoLog632" // v632 Call Auto Log632
+        const val KEY_V632CAMERAAUTOFOCUS632 = "v632cameraAutoFocus632" // v632 Camera Auto Focus632
+        const val KEY_V632CAMPUSAUTOSELECT632 = "v632campusAutoSelect632" // v632 Campus Auto Select632
+        const val KEY_V632CANCELAUTOUNDO632 = "v632cancelAutoUndo632" // v632 Cancel Auto Undo632
+        const val KEY_V632CAPTUREAUTOMODE632 = "v632captureAutoMode632" // v632 Capture Auto Mode632
+        const val KEY_V632CARETAUTOBLINK632 = "v632caretAutoBlink632" // v632 Caret Auto Blink632
+        const val KEY_V632CASEAUTOCONVERT632 = "v632caseAutoConvert632" // v632 Case Auto Convert632
+        const val KEY_V632CATEGORYAUTOSORT632 = "v632categoryAutoSort632" // v632 Category Auto Sort632
+        const val KEY_V633BROWSEAUTOHISTORY633 = "v633browseAutoHistory633" // v633 Browse Auto History633
+        const val KEY_V633BUCKETAUTOCLEAN633 = "v633bucketAutoClean633" // v633 Bucket Auto Clean633
+        const val KEY_V633BUILDAUTOVERSION633 = "v633buildAutoVersion633" // v633 Build Auto Version633
+        const val KEY_V633BULKAUTOIMPORT633 = "v633bulkAutoImport633" // v633 Bulk Auto Import633
+        const val KEY_V633BUTTONAUTOHAPTIC633 = "v633buttonAutoHaptic633" // v633 Button Auto Haptic633
+        const val KEY_V633BYTEAUTOCONVERT633 = "v633byteAutoConvert633" // v633 Byte Auto Convert633
+        const val KEY_V633CALIBRATEAUTOCOLOR633 = "v633calibrateAutoColor633" // v633 Calibrate Auto Color633
+        const val KEY_V633CALLAUTOLOG633 = "v633callAutoLog633" // v633 Call Auto Log633
+        const val KEY_V633CAMERAAUTOFOCUS633 = "v633cameraAutoFocus633" // v633 Camera Auto Focus633
+        const val KEY_V633CAMPUSAUTOSELECT633 = "v633campusAutoSelect633" // v633 Campus Auto Select633
+        const val KEY_V633CANCELAUTOUNDO633 = "v633cancelAutoUndo633" // v633 Cancel Auto Undo633
+        const val KEY_V633CAPTUREAUTOMODE633 = "v633captureAutoMode633" // v633 Capture Auto Mode633
+        const val KEY_V633CARETAUTOBLINK633 = "v633caretAutoBlink633" // v633 Caret Auto Blink633
+        const val KEY_V633CASEAUTOCONVERT633 = "v633caseAutoConvert633" // v633 Case Auto Convert633
+        const val KEY_V633CATEGORYAUTOSORT633 = "v633categoryAutoSort633" // v633 Category Auto Sort633
+        const val KEY_V634BROWSEAUTOHISTORY634 = "v634browseAutoHistory634" // v634 Browse Auto History634
+        const val KEY_V634BUCKETAUTOCLEAN634 = "v634bucketAutoClean634" // v634 Bucket Auto Clean634
+        const val KEY_V634BUILDAUTOVERSION634 = "v634buildAutoVersion634" // v634 Build Auto Version634
+        const val KEY_V634BULKAUTOIMPORT634 = "v634bulkAutoImport634" // v634 Bulk Auto Import634
+        const val KEY_V634BUTTONAUTOHAPTIC634 = "v634buttonAutoHaptic634" // v634 Button Auto Haptic634
+        const val KEY_V634BYTEAUTOCONVERT634 = "v634byteAutoConvert634" // v634 Byte Auto Convert634
+        const val KEY_V634CALIBRATEAUTOCOLOR634 = "v634calibrateAutoColor634" // v634 Calibrate Auto Color634
+        const val KEY_V634CALLAUTOLOG634 = "v634callAutoLog634" // v634 Call Auto Log634
+        const val KEY_V634CAMERAAUTOFOCUS634 = "v634cameraAutoFocus634" // v634 Camera Auto Focus634
+        const val KEY_V634CAMPUSAUTOSELECT634 = "v634campusAutoSelect634" // v634 Campus Auto Select634
+        const val KEY_V634CANCELAUTOUNDO634 = "v634cancelAutoUndo634" // v634 Cancel Auto Undo634
+        const val KEY_V634CAPTUREAUTOMODE634 = "v634captureAutoMode634" // v634 Capture Auto Mode634
+        const val KEY_V634CARETAUTOBLINK634 = "v634caretAutoBlink634" // v634 Caret Auto Blink634
+        const val KEY_V634CASEAUTOCONVERT634 = "v634caseAutoConvert634" // v634 Case Auto Convert634
+        const val KEY_V634CATEGORYAUTOSORT634 = "v634categoryAutoSort634" // v634 Category Auto Sort634
+        const val KEY_V635BROWSEAUTOHISTORY635 = "v635browseAutoHistory635" // v635 Browse Auto History635
+        const val KEY_V635BUCKETAUTOCLEAN635 = "v635bucketAutoClean635" // v635 Bucket Auto Clean635
+        const val KEY_V635BUILDAUTOVERSION635 = "v635buildAutoVersion635" // v635 Build Auto Version635
+        const val KEY_V635BULKAUTOIMPORT635 = "v635bulkAutoImport635" // v635 Bulk Auto Import635
+        const val KEY_V635BUTTONAUTOHAPTIC635 = "v635buttonAutoHaptic635" // v635 Button Auto Haptic635
+        const val KEY_V635BYTEAUTOCONVERT635 = "v635byteAutoConvert635" // v635 Byte Auto Convert635
+        const val KEY_V635CALIBRATEAUTOCOLOR635 = "v635calibrateAutoColor635" // v635 Calibrate Auto Color635
+        const val KEY_V635CALLAUTOLOG635 = "v635callAutoLog635" // v635 Call Auto Log635
+        const val KEY_V635CAMERAAUTOFOCUS635 = "v635cameraAutoFocus635" // v635 Camera Auto Focus635
+        const val KEY_V635CAMPUSAUTOSELECT635 = "v635campusAutoSelect635" // v635 Campus Auto Select635
+        const val KEY_V635CANCELAUTOUNDO635 = "v635cancelAutoUndo635" // v635 Cancel Auto Undo635
+        const val KEY_V635CAPTUREAUTOMODE635 = "v635captureAutoMode635" // v635 Capture Auto Mode635
+        const val KEY_V635CARETAUTOBLINK635 = "v635caretAutoBlink635" // v635 Caret Auto Blink635
+        const val KEY_V635CASEAUTOCONVERT635 = "v635caseAutoConvert635" // v635 Case Auto Convert635
+        const val KEY_V635CATEGORYAUTOSORT635 = "v635categoryAutoSort635" // v635 Category Auto Sort635
+        const val KEY_V636BROWSEAUTOHISTORY636 = "v636browseAutoHistory636" // v636 Browse Auto History636
+        const val KEY_V636BUCKETAUTOCLEAN636 = "v636bucketAutoClean636" // v636 Bucket Auto Clean636
+        const val KEY_V636BUILDAUTOVERSION636 = "v636buildAutoVersion636" // v636 Build Auto Version636
+        const val KEY_V636BULKAUTOIMPORT636 = "v636bulkAutoImport636" // v636 Bulk Auto Import636
+        const val KEY_V636BUTTONAUTOHAPTIC636 = "v636buttonAutoHaptic636" // v636 Button Auto Haptic636
+        const val KEY_V636BYTEAUTOCONVERT636 = "v636byteAutoConvert636" // v636 Byte Auto Convert636
+        const val KEY_V636CALIBRATEAUTOCOLOR636 = "v636calibrateAutoColor636" // v636 Calibrate Auto Color636
+        const val KEY_V636CALLAUTOLOG636 = "v636callAutoLog636" // v636 Call Auto Log636
+        const val KEY_V636CAMERAAUTOFOCUS636 = "v636cameraAutoFocus636" // v636 Camera Auto Focus636
+        const val KEY_V636CAMPUSAUTOSELECT636 = "v636campusAutoSelect636" // v636 Campus Auto Select636
+        const val KEY_V636CANCELAUTOUNDO636 = "v636cancelAutoUndo636" // v636 Cancel Auto Undo636
+        const val KEY_V636CAPTUREAUTOMODE636 = "v636captureAutoMode636" // v636 Capture Auto Mode636
+        const val KEY_V636CARETAUTOBLINK636 = "v636caretAutoBlink636" // v636 Caret Auto Blink636
+        const val KEY_V636CASEAUTOCONVERT636 = "v636caseAutoConvert636" // v636 Case Auto Convert636
+        const val KEY_V636CATEGORYAUTOSORT636 = "v636categoryAutoSort636" // v636 Category Auto Sort636
+        const val KEY_V637BROWSEAUTOHISTORY637 = "v637browseAutoHistory637" // v637 Browse Auto History637
+        const val KEY_V637BUCKETAUTOCLEAN637 = "v637bucketAutoClean637" // v637 Bucket Auto Clean637
+        const val KEY_V637BUILDAUTOVERSION637 = "v637buildAutoVersion637" // v637 Build Auto Version637
+        const val KEY_V637BULKAUTOIMPORT637 = "v637bulkAutoImport637" // v637 Bulk Auto Import637
+        const val KEY_V637BUTTONAUTOHAPTIC637 = "v637buttonAutoHaptic637" // v637 Button Auto Haptic637
+        const val KEY_V637BYTEAUTOCONVERT637 = "v637byteAutoConvert637" // v637 Byte Auto Convert637
+        const val KEY_V637CALIBRATEAUTOCOLOR637 = "v637calibrateAutoColor637" // v637 Calibrate Auto Color637
+        const val KEY_V637CALLAUTOLOG637 = "v637callAutoLog637" // v637 Call Auto Log637
+        const val KEY_V637CAMERAAUTOFOCUS637 = "v637cameraAutoFocus637" // v637 Camera Auto Focus637
+        const val KEY_V637CAMPUSAUTOSELECT637 = "v637campusAutoSelect637" // v637 Campus Auto Select637
+        const val KEY_V637CANCELAUTOUNDO637 = "v637cancelAutoUndo637" // v637 Cancel Auto Undo637
+        const val KEY_V637CAPTUREAUTOMODE637 = "v637captureAutoMode637" // v637 Capture Auto Mode637
+        const val KEY_V637CARETAUTOBLINK637 = "v637caretAutoBlink637" // v637 Caret Auto Blink637
+        const val KEY_V637CASEAUTOCONVERT637 = "v637caseAutoConvert637" // v637 Case Auto Convert637
+        const val KEY_V637CATEGORYAUTOSORT637 = "v637categoryAutoSort637" // v637 Category Auto Sort637
+        const val KEY_V638BROWSEAUTOHISTORY638 = "v638browseAutoHistory638" // v638 Browse Auto History638
+        const val KEY_V638BUCKETAUTOCLEAN638 = "v638bucketAutoClean638" // v638 Bucket Auto Clean638
+        const val KEY_V638BUILDAUTOVERSION638 = "v638buildAutoVersion638" // v638 Build Auto Version638
+        const val KEY_V638BULKAUTOIMPORT638 = "v638bulkAutoImport638" // v638 Bulk Auto Import638
+        const val KEY_V638BUTTONAUTOHAPTIC638 = "v638buttonAutoHaptic638" // v638 Button Auto Haptic638
+        const val KEY_V638BYTEAUTOCONVERT638 = "v638byteAutoConvert638" // v638 Byte Auto Convert638
+        const val KEY_V638CALIBRATEAUTOCOLOR638 = "v638calibrateAutoColor638" // v638 Calibrate Auto Color638
+        const val KEY_V638CALLAUTOLOG638 = "v638callAutoLog638" // v638 Call Auto Log638
+        const val KEY_V638CAMERAAUTOFOCUS638 = "v638cameraAutoFocus638" // v638 Camera Auto Focus638
+        const val KEY_V638CAMPUSAUTOSELECT638 = "v638campusAutoSelect638" // v638 Campus Auto Select638
+        const val KEY_V638CANCELAUTOUNDO638 = "v638cancelAutoUndo638" // v638 Cancel Auto Undo638
+        const val KEY_V638CAPTUREAUTOMODE638 = "v638captureAutoMode638" // v638 Capture Auto Mode638
+        const val KEY_V638CARETAUTOBLINK638 = "v638caretAutoBlink638" // v638 Caret Auto Blink638
+        const val KEY_V638CASEAUTOCONVERT638 = "v638caseAutoConvert638" // v638 Case Auto Convert638
+        const val KEY_V638CATEGORYAUTOSORT638 = "v638categoryAutoSort638" // v638 Category Auto Sort638
+        const val KEY_V639BROWSEAUTOHISTORY639 = "v639browseAutoHistory639" // v639 Browse Auto History639
+        const val KEY_V639BUCKETAUTOCLEAN639 = "v639bucketAutoClean639" // v639 Bucket Auto Clean639
+        const val KEY_V639BUILDAUTOVERSION639 = "v639buildAutoVersion639" // v639 Build Auto Version639
+        const val KEY_V639BULKAUTOIMPORT639 = "v639bulkAutoImport639" // v639 Bulk Auto Import639
+        const val KEY_V639BUTTONAUTOHAPTIC639 = "v639buttonAutoHaptic639" // v639 Button Auto Haptic639
+        const val KEY_V639BYTEAUTOCONVERT639 = "v639byteAutoConvert639" // v639 Byte Auto Convert639
+        const val KEY_V639CALIBRATEAUTOCOLOR639 = "v639calibrateAutoColor639" // v639 Calibrate Auto Color639
+        const val KEY_V639CALLAUTOLOG639 = "v639callAutoLog639" // v639 Call Auto Log639
+        const val KEY_V639CAMERAAUTOFOCUS639 = "v639cameraAutoFocus639" // v639 Camera Auto Focus639
+        const val KEY_V639CAMPUSAUTOSELECT639 = "v639campusAutoSelect639" // v639 Campus Auto Select639
+        const val KEY_V639CANCELAUTOUNDO639 = "v639cancelAutoUndo639" // v639 Cancel Auto Undo639
+        const val KEY_V639CAPTUREAUTOMODE639 = "v639captureAutoMode639" // v639 Capture Auto Mode639
+        const val KEY_V639CARETAUTOBLINK639 = "v639caretAutoBlink639" // v639 Caret Auto Blink639
+        const val KEY_V639CASEAUTOCONVERT639 = "v639caseAutoConvert639" // v639 Case Auto Convert639
+        const val KEY_V639CATEGORYAUTOSORT639 = "v639categoryAutoSort639" // v639 Category Auto Sort639
+        const val KEY_V640BROWSEAUTOHISTORY640 = "v640browseAutoHistory640" // v640 Browse Auto History640
+        const val KEY_V640BUCKETAUTOCLEAN640 = "v640bucketAutoClean640" // v640 Bucket Auto Clean640
+        const val KEY_V640BUILDAUTOVERSION640 = "v640buildAutoVersion640" // v640 Build Auto Version640
+        const val KEY_V640BULKAUTOIMPORT640 = "v640bulkAutoImport640" // v640 Bulk Auto Import640
+        const val KEY_V640BUTTONAUTOHAPTIC640 = "v640buttonAutoHaptic640" // v640 Button Auto Haptic640
+        const val KEY_V640BYTEAUTOCONVERT640 = "v640byteAutoConvert640" // v640 Byte Auto Convert640
+        const val KEY_V640CALIBRATEAUTOCOLOR640 = "v640calibrateAutoColor640" // v640 Calibrate Auto Color640
+        const val KEY_V640CALLAUTOLOG640 = "v640callAutoLog640" // v640 Call Auto Log640
+        const val KEY_V640CAMERAAUTOFOCUS640 = "v640cameraAutoFocus640" // v640 Camera Auto Focus640
+        const val KEY_V640CAMPUSAUTOSELECT640 = "v640campusAutoSelect640" // v640 Campus Auto Select640
+        const val KEY_V640CANCELAUTOUNDO640 = "v640cancelAutoUndo640" // v640 Cancel Auto Undo640
+        const val KEY_V640CAPTUREAUTOMODE640 = "v640captureAutoMode640" // v640 Capture Auto Mode640
+        const val KEY_V640CARETAUTOBLINK640 = "v640caretAutoBlink640" // v640 Caret Auto Blink640
+        const val KEY_V640CASEAUTOCONVERT640 = "v640caseAutoConvert640" // v640 Case Auto Convert640
+        const val KEY_V640CATEGORYAUTOSORT640 = "v640categoryAutoSort640" // v640 Category Auto Sort640
     }
 }
