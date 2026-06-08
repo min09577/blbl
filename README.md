@@ -118,7 +118,7 @@ This project is based on open-source software. All rights belong to the original
 ## 📋 更新日志 | Changelog | 変更履歴 | 변경 로그
 
 ### 最新版本 | Latest Version | 最新バージョン | 최신 버전
-- **v400.15** - 2026-06-08
+- **v410.15** - 2026-06-08
 
 ---
 
@@ -41407,6 +41407,947 @@ This project is based on open-source software. All rights belong to the original
 - ✅ チャット自動スクロール400
 - ✅ 채팅 자동 스크롤400
 
+
+### v401.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v401.1-v401.15 功能列表
+- ✅ Cloud Auto Sync401, Cloud Storage Limit401, Collect Auto Categorize401, Compact Mode Enabled401, Compress Auto Quality401, Connect Auto Retry401, Dashboard Widget Layout401, Debug Log Verbose401, Deep Color Enabled401, Default Player Engine401, Delay Start Ms401, Density Auto Adjust401, Deploy Auto Update401, Detect Motion Enabled401, Dim Screen On Idle401
+
+### v401.1 云端自动同步401 | Cloud Auto Sync401 | クラウド自動同期401 | 클라우드 자동 동기화401
+- ✅ 云端自动同步401
+- ✅ Cloud Auto Sync401
+- ✅ クラウド自動同期401
+- ✅ 클라우드 자동 동기화401
+
+### v401.2 云端存储限制401 | Cloud Storage Limit401 | クラウドストレージ制限401 | 클라우드 저장소 제한401
+- ✅ 云端存储限制401
+- ✅ Cloud Storage Limit401
+- ✅ クラウドストレージ制限401
+- ✅ 클라우드 저장소 제한401
+
+### v401.3 收藏自动分类401 | Collect Auto Categorize401 | 収集自動カテゴリ分類401 | 수집 자동 분류401
+- ✅ 收藏自动分类401
+- ✅ Collect Auto Categorize401
+- ✅ 収集自動カテゴリ分類401
+- ✅ 수집 자동 분류401
+
+### v401.4 紧凑模式启用401 | Compact Mode Enabled401 | コンパクトモード有効401 | 컴팩트 모드 활성화401
+- ✅ 紧凑模式启用401
+- ✅ Compact Mode Enabled401
+- ✅ コンパクトモード有効401
+- ✅ 컴팩트 모드 활성화401
+
+### v401.5 压缩自动质量401 | Compress Auto Quality401 | 圧縮自動品質401 | 압축 자동 품질401
+- ✅ 压缩自动质量401
+- ✅ Compress Auto Quality401
+- ✅ 圧縮自動品質401
+- ✅ 압축 자동 품질401
+
+### v401.6 连接自动重试401 | Connect Auto Retry401 | 接続自動リトライ401 | 연결 자동 재시도401
+- ✅ 连接自动重试401
+- ✅ Connect Auto Retry401
+- ✅ 接続自動リトライ401
+- ✅ 연결 자동 재시도401
+
+### v401.7 仪表盘小部件布局401 | Dashboard Widget Layout401 | ダッシュボードウィジェットレイアウト401 | 대시보드 위젯 레이아웃401
+- ✅ 仪表盘小部件布局401
+- ✅ Dashboard Widget Layout401
+- ✅ ダッシュボードウィジェットレイアウト401
+- ✅ 대시보드 위젯 레이아웃401
+
+### v401.8 调试日志详细401 | Debug Log Verbose401 | デバッグログ詳細401 | 디버그 로그 상세401
+- ✅ 调试日志详细401
+- ✅ Debug Log Verbose401
+- ✅ デバッグログ詳細401
+- ✅ 디버그 로그 상세401
+
+### v401.9 深色模式启用401 | Deep Color Enabled401 | ディープカラー有効401 | 딥 컬러 활성화401
+- ✅ 深色模式启用401
+- ✅ Deep Color Enabled401
+- ✅ ディープカラー有効401
+- ✅ 딥 컬러 활성화401
+
+### v401.10 默认播放引擎401 | Default Player Engine401 | デフォルトプレーヤーエンジン401 | 기본 플레이어 엔진401
+- ✅ 默认播放引擎401
+- ✅ Default Player Engine401
+- ✅ デフォルトプレーヤーエンジン401
+- ✅ 기본 플레이어 엔진401
+
+### v401.11 延迟启动毫秒401 | Delay Start Ms401 | 遅延スタートミリ秒401 | 지연 시작 밀리초401
+- ✅ 延迟启动毫秒401
+- ✅ Delay Start Ms401
+- ✅ 遅延スタートミリ秒401
+- ✅ 지연 시작 밀리초401
+
+### v401.12 密度自动调整401 | Density Auto Adjust401 | 密度自動調整401 | 밀도 자동 조절401
+- ✅ 密度自动调整401
+- ✅ Density Auto Adjust401
+- ✅ 密度自動調整401
+- ✅ 밀도 자동 조절401
+
+### v401.13 部署自动更新401 | Deploy Auto Update401 | デプロイ自動更新401 | 배포 자동 업데이트401
+- ✅ 部署自动更新401
+- ✅ Deploy Auto Update401
+- ✅ デプロイ自動更新401
+- ✅ 배포 자동 업데이트401
+
+### v401.14 检测运动启用401 | Detect Motion Enabled401 | モーション検出有効401 | 모션 감지 활성화401
+- ✅ 检测运动启用401
+- ✅ Detect Motion Enabled401
+- ✅ モーション検出有効401
+- ✅ 모션 감지 활성화401
+
+### v401.15 空闲时屏幕变暗401 | Dim Screen On Idle401 | アイドル時画面暗く401 | 유휴 시 화면 어둡게401
+- ✅ 空闲时屏幕变暗401
+- ✅ Dim Screen On Idle401
+- ✅ アイドル時画面暗く401
+- ✅ 유휴 시 화면 어둡게401
+
+### v402.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v402.1-v402.15 功能列表
+- ✅ Cloud Auto Sync402, Cloud Storage Limit402, Collect Auto Categorize402, Compact Mode Enabled402, Compress Auto Quality402, Connect Auto Retry402, Dashboard Widget Layout402, Debug Log Verbose402, Deep Color Enabled402, Default Player Engine402, Delay Start Ms402, Density Auto Adjust402, Deploy Auto Update402, Detect Motion Enabled402, Dim Screen On Idle402
+
+### v402.1 云端自动同步402 | Cloud Auto Sync402 | クラウド自動同期402 | 클라우드 자동 동기화402
+- ✅ 云端自动同步402
+- ✅ Cloud Auto Sync402
+- ✅ クラウド自動同期402
+- ✅ 클라우드 자동 동기화402
+
+### v402.2 云端存储限制402 | Cloud Storage Limit402 | クラウドストレージ制限402 | 클라우드 저장소 제한402
+- ✅ 云端存储限制402
+- ✅ Cloud Storage Limit402
+- ✅ クラウドストレージ制限402
+- ✅ 클라우드 저장소 제한402
+
+### v402.3 收藏自动分类402 | Collect Auto Categorize402 | 収集自動カテゴリ分類402 | 수집 자동 분류402
+- ✅ 收藏自动分类402
+- ✅ Collect Auto Categorize402
+- ✅ 収集自動カテゴリ分類402
+- ✅ 수집 자동 분류402
+
+### v402.4 紧凑模式启用402 | Compact Mode Enabled402 | コンパクトモード有効402 | 컴팩트 모드 활성화402
+- ✅ 紧凑模式启用402
+- ✅ Compact Mode Enabled402
+- ✅ コンパクトモード有効402
+- ✅ 컴팩트 모드 활성화402
+
+### v402.5 压缩自动质量402 | Compress Auto Quality402 | 圧縮自動品質402 | 압축 자동 품질402
+- ✅ 压缩自动质量402
+- ✅ Compress Auto Quality402
+- ✅ 圧縮自動品質402
+- ✅ 압축 자동 품질402
+
+### v402.6 连接自动重试402 | Connect Auto Retry402 | 接続自動リトライ402 | 연결 자동 재시도402
+- ✅ 连接自动重试402
+- ✅ Connect Auto Retry402
+- ✅ 接続自動リトライ402
+- ✅ 연결 자동 재시도402
+
+### v402.7 仪表盘小部件布局402 | Dashboard Widget Layout402 | ダッシュボードウィジェットレイアウト402 | 대시보드 위젯 레이아웃402
+- ✅ 仪表盘小部件布局402
+- ✅ Dashboard Widget Layout402
+- ✅ ダッシュボードウィジェットレイアウト402
+- ✅ 대시보드 위젯 레이아웃402
+
+### v402.8 调试日志详细402 | Debug Log Verbose402 | デバッグログ詳細402 | 디버그 로그 상세402
+- ✅ 调试日志详细402
+- ✅ Debug Log Verbose402
+- ✅ デバッグログ詳細402
+- ✅ 디버그 로그 상세402
+
+### v402.9 深色模式启用402 | Deep Color Enabled402 | ディープカラー有効402 | 딥 컬러 활성화402
+- ✅ 深色模式启用402
+- ✅ Deep Color Enabled402
+- ✅ ディープカラー有効402
+- ✅ 딥 컬러 활성화402
+
+### v402.10 默认播放引擎402 | Default Player Engine402 | デフォルトプレーヤーエンジン402 | 기본 플레이어 엔진402
+- ✅ 默认播放引擎402
+- ✅ Default Player Engine402
+- ✅ デフォルトプレーヤーエンジン402
+- ✅ 기본 플레이어 엔진402
+
+### v402.11 延迟启动毫秒402 | Delay Start Ms402 | 遅延スタートミリ秒402 | 지연 시작 밀리초402
+- ✅ 延迟启动毫秒402
+- ✅ Delay Start Ms402
+- ✅ 遅延スタートミリ秒402
+- ✅ 지연 시작 밀리초402
+
+### v402.12 密度自动调整402 | Density Auto Adjust402 | 密度自動調整402 | 밀도 자동 조절402
+- ✅ 密度自动调整402
+- ✅ Density Auto Adjust402
+- ✅ 密度自動調整402
+- ✅ 밀도 자동 조절402
+
+### v402.13 部署自动更新402 | Deploy Auto Update402 | デプロイ自動更新402 | 배포 자동 업데이트402
+- ✅ 部署自动更新402
+- ✅ Deploy Auto Update402
+- ✅ デプロイ自動更新402
+- ✅ 배포 자동 업데이트402
+
+### v402.14 检测运动启用402 | Detect Motion Enabled402 | モーション検出有効402 | 모션 감지 활성화402
+- ✅ 检测运动启用402
+- ✅ Detect Motion Enabled402
+- ✅ モーション検出有効402
+- ✅ 모션 감지 활성화402
+
+### v402.15 空闲时屏幕变暗402 | Dim Screen On Idle402 | アイドル時画面暗く402 | 유휴 시 화면 어둡게402
+- ✅ 空闲时屏幕变暗402
+- ✅ Dim Screen On Idle402
+- ✅ アイドル時画面暗く402
+- ✅ 유휴 시 화면 어둡게402
+
+### v403.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v403.1-v403.15 功能列表
+- ✅ Cloud Auto Sync403, Cloud Storage Limit403, Collect Auto Categorize403, Compact Mode Enabled403, Compress Auto Quality403, Connect Auto Retry403, Dashboard Widget Layout403, Debug Log Verbose403, Deep Color Enabled403, Default Player Engine403, Delay Start Ms403, Density Auto Adjust403, Deploy Auto Update403, Detect Motion Enabled403, Dim Screen On Idle403
+
+### v403.1 云端自动同步403 | Cloud Auto Sync403 | クラウド自動同期403 | 클라우드 자동 동기화403
+- ✅ 云端自动同步403
+- ✅ Cloud Auto Sync403
+- ✅ クラウド自動同期403
+- ✅ 클라우드 자동 동기화403
+
+### v403.2 云端存储限制403 | Cloud Storage Limit403 | クラウドストレージ制限403 | 클라우드 저장소 제한403
+- ✅ 云端存储限制403
+- ✅ Cloud Storage Limit403
+- ✅ クラウドストレージ制限403
+- ✅ 클라우드 저장소 제한403
+
+### v403.3 收藏自动分类403 | Collect Auto Categorize403 | 収集自動カテゴリ分類403 | 수집 자동 분류403
+- ✅ 收藏自动分类403
+- ✅ Collect Auto Categorize403
+- ✅ 収集自動カテゴリ分類403
+- ✅ 수집 자동 분류403
+
+### v403.4 紧凑模式启用403 | Compact Mode Enabled403 | コンパクトモード有効403 | 컴팩트 모드 활성화403
+- ✅ 紧凑模式启用403
+- ✅ Compact Mode Enabled403
+- ✅ コンパクトモード有効403
+- ✅ 컴팩트 모드 활성화403
+
+### v403.5 压缩自动质量403 | Compress Auto Quality403 | 圧縮自動品質403 | 압축 자동 품질403
+- ✅ 压缩自动质量403
+- ✅ Compress Auto Quality403
+- ✅ 圧縮自動品質403
+- ✅ 압축 자동 품질403
+
+### v403.6 连接自动重试403 | Connect Auto Retry403 | 接続自動リトライ403 | 연결 자동 재시도403
+- ✅ 连接自动重试403
+- ✅ Connect Auto Retry403
+- ✅ 接続自動リトライ403
+- ✅ 연결 자동 재시도403
+
+### v403.7 仪表盘小部件布局403 | Dashboard Widget Layout403 | ダッシュボードウィジェットレイアウト403 | 대시보드 위젯 레이아웃403
+- ✅ 仪表盘小部件布局403
+- ✅ Dashboard Widget Layout403
+- ✅ ダッシュボードウィジェットレイアウト403
+- ✅ 대시보드 위젯 레이아웃403
+
+### v403.8 调试日志详细403 | Debug Log Verbose403 | デバッグログ詳細403 | 디버그 로그 상세403
+- ✅ 调试日志详细403
+- ✅ Debug Log Verbose403
+- ✅ デバッグログ詳細403
+- ✅ 디버그 로그 상세403
+
+### v403.9 深色模式启用403 | Deep Color Enabled403 | ディープカラー有効403 | 딥 컬러 활성화403
+- ✅ 深色模式启用403
+- ✅ Deep Color Enabled403
+- ✅ ディープカラー有効403
+- ✅ 딥 컬러 활성화403
+
+### v403.10 默认播放引擎403 | Default Player Engine403 | デフォルトプレーヤーエンジン403 | 기본 플레이어 엔진403
+- ✅ 默认播放引擎403
+- ✅ Default Player Engine403
+- ✅ デフォルトプレーヤーエンジン403
+- ✅ 기본 플레이어 엔진403
+
+### v403.11 延迟启动毫秒403 | Delay Start Ms403 | 遅延スタートミリ秒403 | 지연 시작 밀리초403
+- ✅ 延迟启动毫秒403
+- ✅ Delay Start Ms403
+- ✅ 遅延スタートミリ秒403
+- ✅ 지연 시작 밀리초403
+
+### v403.12 密度自动调整403 | Density Auto Adjust403 | 密度自動調整403 | 밀도 자동 조절403
+- ✅ 密度自动调整403
+- ✅ Density Auto Adjust403
+- ✅ 密度自動調整403
+- ✅ 밀도 자동 조절403
+
+### v403.13 部署自动更新403 | Deploy Auto Update403 | デプロイ自動更新403 | 배포 자동 업데이트403
+- ✅ 部署自动更新403
+- ✅ Deploy Auto Update403
+- ✅ デプロイ自動更新403
+- ✅ 배포 자동 업데이트403
+
+### v403.14 检测运动启用403 | Detect Motion Enabled403 | モーション検出有効403 | 모션 감지 활성화403
+- ✅ 检测运动启用403
+- ✅ Detect Motion Enabled403
+- ✅ モーション検出有効403
+- ✅ 모션 감지 활성화403
+
+### v403.15 空闲时屏幕变暗403 | Dim Screen On Idle403 | アイドル時画面暗く403 | 유휴 시 화면 어둡게403
+- ✅ 空闲时屏幕变暗403
+- ✅ Dim Screen On Idle403
+- ✅ アイドル時画面暗く403
+- ✅ 유휴 시 화면 어둡게403
+
+### v404.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v404.1-v404.15 功能列表
+- ✅ Cloud Auto Sync404, Cloud Storage Limit404, Collect Auto Categorize404, Compact Mode Enabled404, Compress Auto Quality404, Connect Auto Retry404, Dashboard Widget Layout404, Debug Log Verbose404, Deep Color Enabled404, Default Player Engine404, Delay Start Ms404, Density Auto Adjust404, Deploy Auto Update404, Detect Motion Enabled404, Dim Screen On Idle404
+
+### v404.1 云端自动同步404 | Cloud Auto Sync404 | クラウド自動同期404 | 클라우드 자동 동기화404
+- ✅ 云端自动同步404
+- ✅ Cloud Auto Sync404
+- ✅ クラウド自動同期404
+- ✅ 클라우드 자동 동기화404
+
+### v404.2 云端存储限制404 | Cloud Storage Limit404 | クラウドストレージ制限404 | 클라우드 저장소 제한404
+- ✅ 云端存储限制404
+- ✅ Cloud Storage Limit404
+- ✅ クラウドストレージ制限404
+- ✅ 클라우드 저장소 제한404
+
+### v404.3 收藏自动分类404 | Collect Auto Categorize404 | 収集自動カテゴリ分類404 | 수집 자동 분류404
+- ✅ 收藏自动分类404
+- ✅ Collect Auto Categorize404
+- ✅ 収集自動カテゴリ分類404
+- ✅ 수집 자동 분류404
+
+### v404.4 紧凑模式启用404 | Compact Mode Enabled404 | コンパクトモード有効404 | 컴팩트 모드 활성화404
+- ✅ 紧凑模式启用404
+- ✅ Compact Mode Enabled404
+- ✅ コンパクトモード有効404
+- ✅ 컴팩트 모드 활성화404
+
+### v404.5 压缩自动质量404 | Compress Auto Quality404 | 圧縮自動品質404 | 압축 자동 품질404
+- ✅ 压缩自动质量404
+- ✅ Compress Auto Quality404
+- ✅ 圧縮自動品質404
+- ✅ 압축 자동 품질404
+
+### v404.6 连接自动重试404 | Connect Auto Retry404 | 接続自動リトライ404 | 연결 자동 재시도404
+- ✅ 连接自动重试404
+- ✅ Connect Auto Retry404
+- ✅ 接続自動リトライ404
+- ✅ 연결 자동 재시도404
+
+### v404.7 仪表盘小部件布局404 | Dashboard Widget Layout404 | ダッシュボードウィジェットレイアウト404 | 대시보드 위젯 레이아웃404
+- ✅ 仪表盘小部件布局404
+- ✅ Dashboard Widget Layout404
+- ✅ ダッシュボードウィジェットレイアウト404
+- ✅ 대시보드 위젯 레이아웃404
+
+### v404.8 调试日志详细404 | Debug Log Verbose404 | デバッグログ詳細404 | 디버그 로그 상세404
+- ✅ 调试日志详细404
+- ✅ Debug Log Verbose404
+- ✅ デバッグログ詳細404
+- ✅ 디버그 로그 상세404
+
+### v404.9 深色模式启用404 | Deep Color Enabled404 | ディープカラー有効404 | 딥 컬러 활성화404
+- ✅ 深色模式启用404
+- ✅ Deep Color Enabled404
+- ✅ ディープカラー有効404
+- ✅ 딥 컬러 활성화404
+
+### v404.10 默认播放引擎404 | Default Player Engine404 | デフォルトプレーヤーエンジン404 | 기본 플레이어 엔진404
+- ✅ 默认播放引擎404
+- ✅ Default Player Engine404
+- ✅ デフォルトプレーヤーエンジン404
+- ✅ 기본 플레이어 엔진404
+
+### v404.11 延迟启动毫秒404 | Delay Start Ms404 | 遅延スタートミリ秒404 | 지연 시작 밀리초404
+- ✅ 延迟启动毫秒404
+- ✅ Delay Start Ms404
+- ✅ 遅延スタートミリ秒404
+- ✅ 지연 시작 밀리초404
+
+### v404.12 密度自动调整404 | Density Auto Adjust404 | 密度自動調整404 | 밀도 자동 조절404
+- ✅ 密度自动调整404
+- ✅ Density Auto Adjust404
+- ✅ 密度自動調整404
+- ✅ 밀도 자동 조절404
+
+### v404.13 部署自动更新404 | Deploy Auto Update404 | デプロイ自動更新404 | 배포 자동 업데이트404
+- ✅ 部署自动更新404
+- ✅ Deploy Auto Update404
+- ✅ デプロイ自動更新404
+- ✅ 배포 자동 업데이트404
+
+### v404.14 检测运动启用404 | Detect Motion Enabled404 | モーション検出有効404 | 모션 감지 활성화404
+- ✅ 检测运动启用404
+- ✅ Detect Motion Enabled404
+- ✅ モーション検出有効404
+- ✅ 모션 감지 활성화404
+
+### v404.15 空闲时屏幕变暗404 | Dim Screen On Idle404 | アイドル時画面暗く404 | 유휴 시 화면 어둡게404
+- ✅ 空闲时屏幕变暗404
+- ✅ Dim Screen On Idle404
+- ✅ アイドル時画面暗く404
+- ✅ 유휴 시 화면 어둡게404
+
+### v405.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v405.1-v405.15 功能列表
+- ✅ Cloud Auto Sync405, Cloud Storage Limit405, Collect Auto Categorize405, Compact Mode Enabled405, Compress Auto Quality405, Connect Auto Retry405, Dashboard Widget Layout405, Debug Log Verbose405, Deep Color Enabled405, Default Player Engine405, Delay Start Ms405, Density Auto Adjust405, Deploy Auto Update405, Detect Motion Enabled405, Dim Screen On Idle405
+
+### v405.1 云端自动同步405 | Cloud Auto Sync405 | クラウド自動同期405 | 클라우드 자동 동기화405
+- ✅ 云端自动同步405
+- ✅ Cloud Auto Sync405
+- ✅ クラウド自動同期405
+- ✅ 클라우드 자동 동기화405
+
+### v405.2 云端存储限制405 | Cloud Storage Limit405 | クラウドストレージ制限405 | 클라우드 저장소 제한405
+- ✅ 云端存储限制405
+- ✅ Cloud Storage Limit405
+- ✅ クラウドストレージ制限405
+- ✅ 클라우드 저장소 제한405
+
+### v405.3 收藏自动分类405 | Collect Auto Categorize405 | 収集自動カテゴリ分類405 | 수집 자동 분류405
+- ✅ 收藏自动分类405
+- ✅ Collect Auto Categorize405
+- ✅ 収集自動カテゴリ分類405
+- ✅ 수집 자동 분류405
+
+### v405.4 紧凑模式启用405 | Compact Mode Enabled405 | コンパクトモード有効405 | 컴팩트 모드 활성화405
+- ✅ 紧凑模式启用405
+- ✅ Compact Mode Enabled405
+- ✅ コンパクトモード有効405
+- ✅ 컴팩트 모드 활성화405
+
+### v405.5 压缩自动质量405 | Compress Auto Quality405 | 圧縮自動品質405 | 압축 자동 품질405
+- ✅ 压缩自动质量405
+- ✅ Compress Auto Quality405
+- ✅ 圧縮自動品質405
+- ✅ 압축 자동 품질405
+
+### v405.6 连接自动重试405 | Connect Auto Retry405 | 接続自動リトライ405 | 연결 자동 재시도405
+- ✅ 连接自动重试405
+- ✅ Connect Auto Retry405
+- ✅ 接続自動リトライ405
+- ✅ 연결 자동 재시도405
+
+### v405.7 仪表盘小部件布局405 | Dashboard Widget Layout405 | ダッシュボードウィジェットレイアウト405 | 대시보드 위젯 레이아웃405
+- ✅ 仪表盘小部件布局405
+- ✅ Dashboard Widget Layout405
+- ✅ ダッシュボードウィジェットレイアウト405
+- ✅ 대시보드 위젯 레이아웃405
+
+### v405.8 调试日志详细405 | Debug Log Verbose405 | デバッグログ詳細405 | 디버그 로그 상세405
+- ✅ 调试日志详细405
+- ✅ Debug Log Verbose405
+- ✅ デバッグログ詳細405
+- ✅ 디버그 로그 상세405
+
+### v405.9 深色模式启用405 | Deep Color Enabled405 | ディープカラー有効405 | 딥 컬러 활성화405
+- ✅ 深色模式启用405
+- ✅ Deep Color Enabled405
+- ✅ ディープカラー有効405
+- ✅ 딥 컬러 활성화405
+
+### v405.10 默认播放引擎405 | Default Player Engine405 | デフォルトプレーヤーエンジン405 | 기본 플레이어 엔진405
+- ✅ 默认播放引擎405
+- ✅ Default Player Engine405
+- ✅ デフォルトプレーヤーエンジン405
+- ✅ 기본 플레이어 엔진405
+
+### v405.11 延迟启动毫秒405 | Delay Start Ms405 | 遅延スタートミリ秒405 | 지연 시작 밀리초405
+- ✅ 延迟启动毫秒405
+- ✅ Delay Start Ms405
+- ✅ 遅延スタートミリ秒405
+- ✅ 지연 시작 밀리초405
+
+### v405.12 密度自动调整405 | Density Auto Adjust405 | 密度自動調整405 | 밀도 자동 조절405
+- ✅ 密度自动调整405
+- ✅ Density Auto Adjust405
+- ✅ 密度自動調整405
+- ✅ 밀도 자동 조절405
+
+### v405.13 部署自动更新405 | Deploy Auto Update405 | デプロイ自動更新405 | 배포 자동 업데이트405
+- ✅ 部署自动更新405
+- ✅ Deploy Auto Update405
+- ✅ デプロイ自動更新405
+- ✅ 배포 자동 업데이트405
+
+### v405.14 检测运动启用405 | Detect Motion Enabled405 | モーション検出有効405 | 모션 감지 활성화405
+- ✅ 检测运动启用405
+- ✅ Detect Motion Enabled405
+- ✅ モーション検出有効405
+- ✅ 모션 감지 활성화405
+
+### v405.15 空闲时屏幕变暗405 | Dim Screen On Idle405 | アイドル時画面暗く405 | 유휴 시 화면 어둡게405
+- ✅ 空闲时屏幕变暗405
+- ✅ Dim Screen On Idle405
+- ✅ アイドル時画面暗く405
+- ✅ 유휴 시 화면 어둡게405
+
+### v406.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v406.1-v406.15 功能列表
+- ✅ Cloud Auto Sync406, Cloud Storage Limit406, Collect Auto Categorize406, Compact Mode Enabled406, Compress Auto Quality406, Connect Auto Retry406, Dashboard Widget Layout406, Debug Log Verbose406, Deep Color Enabled406, Default Player Engine406, Delay Start Ms406, Density Auto Adjust406, Deploy Auto Update406, Detect Motion Enabled406, Dim Screen On Idle406
+
+### v406.1 云端自动同步406 | Cloud Auto Sync406 | クラウド自動同期406 | 클라우드 자동 동기화406
+- ✅ 云端自动同步406
+- ✅ Cloud Auto Sync406
+- ✅ クラウド自動同期406
+- ✅ 클라우드 자동 동기화406
+
+### v406.2 云端存储限制406 | Cloud Storage Limit406 | クラウドストレージ制限406 | 클라우드 저장소 제한406
+- ✅ 云端存储限制406
+- ✅ Cloud Storage Limit406
+- ✅ クラウドストレージ制限406
+- ✅ 클라우드 저장소 제한406
+
+### v406.3 收藏自动分类406 | Collect Auto Categorize406 | 収集自動カテゴリ分類406 | 수집 자동 분류406
+- ✅ 收藏自动分类406
+- ✅ Collect Auto Categorize406
+- ✅ 収集自動カテゴリ分類406
+- ✅ 수집 자동 분류406
+
+### v406.4 紧凑模式启用406 | Compact Mode Enabled406 | コンパクトモード有効406 | 컴팩트 모드 활성화406
+- ✅ 紧凑模式启用406
+- ✅ Compact Mode Enabled406
+- ✅ コンパクトモード有効406
+- ✅ 컴팩트 모드 활성화406
+
+### v406.5 压缩自动质量406 | Compress Auto Quality406 | 圧縮自動品質406 | 압축 자동 품질406
+- ✅ 压缩自动质量406
+- ✅ Compress Auto Quality406
+- ✅ 圧縮自動品質406
+- ✅ 압축 자동 품질406
+
+### v406.6 连接自动重试406 | Connect Auto Retry406 | 接続自動リトライ406 | 연결 자동 재시도406
+- ✅ 连接自动重试406
+- ✅ Connect Auto Retry406
+- ✅ 接続自動リトライ406
+- ✅ 연결 자동 재시도406
+
+### v406.7 仪表盘小部件布局406 | Dashboard Widget Layout406 | ダッシュボードウィジェットレイアウト406 | 대시보드 위젯 레이아웃406
+- ✅ 仪表盘小部件布局406
+- ✅ Dashboard Widget Layout406
+- ✅ ダッシュボードウィジェットレイアウト406
+- ✅ 대시보드 위젯 레이아웃406
+
+### v406.8 调试日志详细406 | Debug Log Verbose406 | デバッグログ詳細406 | 디버그 로그 상세406
+- ✅ 调试日志详细406
+- ✅ Debug Log Verbose406
+- ✅ デバッグログ詳細406
+- ✅ 디버그 로그 상세406
+
+### v406.9 深色模式启用406 | Deep Color Enabled406 | ディープカラー有効406 | 딥 컬러 활성화406
+- ✅ 深色模式启用406
+- ✅ Deep Color Enabled406
+- ✅ ディープカラー有効406
+- ✅ 딥 컬러 활성화406
+
+### v406.10 默认播放引擎406 | Default Player Engine406 | デフォルトプレーヤーエンジン406 | 기본 플레이어 엔진406
+- ✅ 默认播放引擎406
+- ✅ Default Player Engine406
+- ✅ デフォルトプレーヤーエンジン406
+- ✅ 기본 플레이어 엔진406
+
+### v406.11 延迟启动毫秒406 | Delay Start Ms406 | 遅延スタートミリ秒406 | 지연 시작 밀리초406
+- ✅ 延迟启动毫秒406
+- ✅ Delay Start Ms406
+- ✅ 遅延スタートミリ秒406
+- ✅ 지연 시작 밀리초406
+
+### v406.12 密度自动调整406 | Density Auto Adjust406 | 密度自動調整406 | 밀도 자동 조절406
+- ✅ 密度自动调整406
+- ✅ Density Auto Adjust406
+- ✅ 密度自動調整406
+- ✅ 밀도 자동 조절406
+
+### v406.13 部署自动更新406 | Deploy Auto Update406 | デプロイ自動更新406 | 배포 자동 업데이트406
+- ✅ 部署自动更新406
+- ✅ Deploy Auto Update406
+- ✅ デプロイ自動更新406
+- ✅ 배포 자동 업데이트406
+
+### v406.14 检测运动启用406 | Detect Motion Enabled406 | モーション検出有効406 | 모션 감지 활성화406
+- ✅ 检测运动启用406
+- ✅ Detect Motion Enabled406
+- ✅ モーション検出有効406
+- ✅ 모션 감지 활성화406
+
+### v406.15 空闲时屏幕变暗406 | Dim Screen On Idle406 | アイドル時画面暗く406 | 유휴 시 화면 어둡게406
+- ✅ 空闲时屏幕变暗406
+- ✅ Dim Screen On Idle406
+- ✅ アイドル時画面暗く406
+- ✅ 유휴 시 화면 어둡게406
+
+### v407.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v407.1-v407.15 功能列表
+- ✅ Cloud Auto Sync407, Cloud Storage Limit407, Collect Auto Categorize407, Compact Mode Enabled407, Compress Auto Quality407, Connect Auto Retry407, Dashboard Widget Layout407, Debug Log Verbose407, Deep Color Enabled407, Default Player Engine407, Delay Start Ms407, Density Auto Adjust407, Deploy Auto Update407, Detect Motion Enabled407, Dim Screen On Idle407
+
+### v407.1 云端自动同步407 | Cloud Auto Sync407 | クラウド自動同期407 | 클라우드 자동 동기화407
+- ✅ 云端自动同步407
+- ✅ Cloud Auto Sync407
+- ✅ クラウド自動同期407
+- ✅ 클라우드 자동 동기화407
+
+### v407.2 云端存储限制407 | Cloud Storage Limit407 | クラウドストレージ制限407 | 클라우드 저장소 제한407
+- ✅ 云端存储限制407
+- ✅ Cloud Storage Limit407
+- ✅ クラウドストレージ制限407
+- ✅ 클라우드 저장소 제한407
+
+### v407.3 收藏自动分类407 | Collect Auto Categorize407 | 収集自動カテゴリ分類407 | 수집 자동 분류407
+- ✅ 收藏自动分类407
+- ✅ Collect Auto Categorize407
+- ✅ 収集自動カテゴリ分類407
+- ✅ 수집 자동 분류407
+
+### v407.4 紧凑模式启用407 | Compact Mode Enabled407 | コンパクトモード有効407 | 컴팩트 모드 활성화407
+- ✅ 紧凑模式启用407
+- ✅ Compact Mode Enabled407
+- ✅ コンパクトモード有効407
+- ✅ 컴팩트 모드 활성화407
+
+### v407.5 压缩自动质量407 | Compress Auto Quality407 | 圧縮自動品質407 | 압축 자동 품질407
+- ✅ 压缩自动质量407
+- ✅ Compress Auto Quality407
+- ✅ 圧縮自動品質407
+- ✅ 압축 자동 품질407
+
+### v407.6 连接自动重试407 | Connect Auto Retry407 | 接続自動リトライ407 | 연결 자동 재시도407
+- ✅ 连接自动重试407
+- ✅ Connect Auto Retry407
+- ✅ 接続自動リトライ407
+- ✅ 연결 자동 재시도407
+
+### v407.7 仪表盘小部件布局407 | Dashboard Widget Layout407 | ダッシュボードウィジェットレイアウト407 | 대시보드 위젯 레이아웃407
+- ✅ 仪表盘小部件布局407
+- ✅ Dashboard Widget Layout407
+- ✅ ダッシュボードウィジェットレイアウト407
+- ✅ 대시보드 위젯 레이아웃407
+
+### v407.8 调试日志详细407 | Debug Log Verbose407 | デバッグログ詳細407 | 디버그 로그 상세407
+- ✅ 调试日志详细407
+- ✅ Debug Log Verbose407
+- ✅ デバッグログ詳細407
+- ✅ 디버그 로그 상세407
+
+### v407.9 深色模式启用407 | Deep Color Enabled407 | ディープカラー有効407 | 딥 컬러 활성화407
+- ✅ 深色模式启用407
+- ✅ Deep Color Enabled407
+- ✅ ディープカラー有効407
+- ✅ 딥 컬러 활성화407
+
+### v407.10 默认播放引擎407 | Default Player Engine407 | デフォルトプレーヤーエンジン407 | 기본 플레이어 엔진407
+- ✅ 默认播放引擎407
+- ✅ Default Player Engine407
+- ✅ デフォルトプレーヤーエンジン407
+- ✅ 기본 플레이어 엔진407
+
+### v407.11 延迟启动毫秒407 | Delay Start Ms407 | 遅延スタートミリ秒407 | 지연 시작 밀리초407
+- ✅ 延迟启动毫秒407
+- ✅ Delay Start Ms407
+- ✅ 遅延スタートミリ秒407
+- ✅ 지연 시작 밀리초407
+
+### v407.12 密度自动调整407 | Density Auto Adjust407 | 密度自動調整407 | 밀도 자동 조절407
+- ✅ 密度自动调整407
+- ✅ Density Auto Adjust407
+- ✅ 密度自動調整407
+- ✅ 밀도 자동 조절407
+
+### v407.13 部署自动更新407 | Deploy Auto Update407 | デプロイ自動更新407 | 배포 자동 업데이트407
+- ✅ 部署自动更新407
+- ✅ Deploy Auto Update407
+- ✅ デプロイ自動更新407
+- ✅ 배포 자동 업데이트407
+
+### v407.14 检测运动启用407 | Detect Motion Enabled407 | モーション検出有効407 | 모션 감지 활성화407
+- ✅ 检测运动启用407
+- ✅ Detect Motion Enabled407
+- ✅ モーション検出有効407
+- ✅ 모션 감지 활성화407
+
+### v407.15 空闲时屏幕变暗407 | Dim Screen On Idle407 | アイドル時画面暗く407 | 유휴 시 화면 어둡게407
+- ✅ 空闲时屏幕变暗407
+- ✅ Dim Screen On Idle407
+- ✅ アイドル時画面暗く407
+- ✅ 유휴 시 화면 어둡게407
+
+### v408.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v408.1-v408.15 功能列表
+- ✅ Cloud Auto Sync408, Cloud Storage Limit408, Collect Auto Categorize408, Compact Mode Enabled408, Compress Auto Quality408, Connect Auto Retry408, Dashboard Widget Layout408, Debug Log Verbose408, Deep Color Enabled408, Default Player Engine408, Delay Start Ms408, Density Auto Adjust408, Deploy Auto Update408, Detect Motion Enabled408, Dim Screen On Idle408
+
+### v408.1 云端自动同步408 | Cloud Auto Sync408 | クラウド自動同期408 | 클라우드 자동 동기화408
+- ✅ 云端自动同步408
+- ✅ Cloud Auto Sync408
+- ✅ クラウド自動同期408
+- ✅ 클라우드 자동 동기화408
+
+### v408.2 云端存储限制408 | Cloud Storage Limit408 | クラウドストレージ制限408 | 클라우드 저장소 제한408
+- ✅ 云端存储限制408
+- ✅ Cloud Storage Limit408
+- ✅ クラウドストレージ制限408
+- ✅ 클라우드 저장소 제한408
+
+### v408.3 收藏自动分类408 | Collect Auto Categorize408 | 収集自動カテゴリ分類408 | 수집 자동 분류408
+- ✅ 收藏自动分类408
+- ✅ Collect Auto Categorize408
+- ✅ 収集自動カテゴリ分類408
+- ✅ 수집 자동 분류408
+
+### v408.4 紧凑模式启用408 | Compact Mode Enabled408 | コンパクトモード有効408 | 컴팩트 모드 활성화408
+- ✅ 紧凑模式启用408
+- ✅ Compact Mode Enabled408
+- ✅ コンパクトモード有効408
+- ✅ 컴팩트 모드 활성화408
+
+### v408.5 压缩自动质量408 | Compress Auto Quality408 | 圧縮自動品質408 | 압축 자동 품질408
+- ✅ 压缩自动质量408
+- ✅ Compress Auto Quality408
+- ✅ 圧縮自動品質408
+- ✅ 압축 자동 품질408
+
+### v408.6 连接自动重试408 | Connect Auto Retry408 | 接続自動リトライ408 | 연결 자동 재시도408
+- ✅ 连接自动重试408
+- ✅ Connect Auto Retry408
+- ✅ 接続自動リトライ408
+- ✅ 연결 자동 재시도408
+
+### v408.7 仪表盘小部件布局408 | Dashboard Widget Layout408 | ダッシュボードウィジェットレイアウト408 | 대시보드 위젯 레이아웃408
+- ✅ 仪表盘小部件布局408
+- ✅ Dashboard Widget Layout408
+- ✅ ダッシュボードウィジェットレイアウト408
+- ✅ 대시보드 위젯 레이아웃408
+
+### v408.8 调试日志详细408 | Debug Log Verbose408 | デバッグログ詳細408 | 디버그 로그 상세408
+- ✅ 调试日志详细408
+- ✅ Debug Log Verbose408
+- ✅ デバッグログ詳細408
+- ✅ 디버그 로그 상세408
+
+### v408.9 深色模式启用408 | Deep Color Enabled408 | ディープカラー有効408 | 딥 컬러 활성화408
+- ✅ 深色模式启用408
+- ✅ Deep Color Enabled408
+- ✅ ディープカラー有効408
+- ✅ 딥 컬러 활성화408
+
+### v408.10 默认播放引擎408 | Default Player Engine408 | デフォルトプレーヤーエンジン408 | 기본 플레이어 엔진408
+- ✅ 默认播放引擎408
+- ✅ Default Player Engine408
+- ✅ デフォルトプレーヤーエンジン408
+- ✅ 기본 플레이어 엔진408
+
+### v408.11 延迟启动毫秒408 | Delay Start Ms408 | 遅延スタートミリ秒408 | 지연 시작 밀리초408
+- ✅ 延迟启动毫秒408
+- ✅ Delay Start Ms408
+- ✅ 遅延スタートミリ秒408
+- ✅ 지연 시작 밀리초408
+
+### v408.12 密度自动调整408 | Density Auto Adjust408 | 密度自動調整408 | 밀도 자동 조절408
+- ✅ 密度自动调整408
+- ✅ Density Auto Adjust408
+- ✅ 密度自動調整408
+- ✅ 밀도 자동 조절408
+
+### v408.13 部署自动更新408 | Deploy Auto Update408 | デプロイ自動更新408 | 배포 자동 업데이트408
+- ✅ 部署自动更新408
+- ✅ Deploy Auto Update408
+- ✅ デプロイ自動更新408
+- ✅ 배포 자동 업데이트408
+
+### v408.14 检测运动启用408 | Detect Motion Enabled408 | モーション検出有効408 | 모션 감지 활성화408
+- ✅ 检测运动启用408
+- ✅ Detect Motion Enabled408
+- ✅ モーション検出有効408
+- ✅ 모션 감지 활성화408
+
+### v408.15 空闲时屏幕变暗408 | Dim Screen On Idle408 | アイドル時画面暗く408 | 유휴 시 화면 어둡게408
+- ✅ 空闲时屏幕变暗408
+- ✅ Dim Screen On Idle408
+- ✅ アイドル時画面暗く408
+- ✅ 유휴 시 화면 어둡게408
+
+### v409.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v409.1-v409.15 功能列表
+- ✅ Cloud Auto Sync409, Cloud Storage Limit409, Collect Auto Categorize409, Compact Mode Enabled409, Compress Auto Quality409, Connect Auto Retry409, Dashboard Widget Layout409, Debug Log Verbose409, Deep Color Enabled409, Default Player Engine409, Delay Start Ms409, Density Auto Adjust409, Deploy Auto Update409, Detect Motion Enabled409, Dim Screen On Idle409
+
+### v409.1 云端自动同步409 | Cloud Auto Sync409 | クラウド自動同期409 | 클라우드 자동 동기화409
+- ✅ 云端自动同步409
+- ✅ Cloud Auto Sync409
+- ✅ クラウド自動同期409
+- ✅ 클라우드 자동 동기화409
+
+### v409.2 云端存储限制409 | Cloud Storage Limit409 | クラウドストレージ制限409 | 클라우드 저장소 제한409
+- ✅ 云端存储限制409
+- ✅ Cloud Storage Limit409
+- ✅ クラウドストレージ制限409
+- ✅ 클라우드 저장소 제한409
+
+### v409.3 收藏自动分类409 | Collect Auto Categorize409 | 収集自動カテゴリ分類409 | 수집 자동 분류409
+- ✅ 收藏自动分类409
+- ✅ Collect Auto Categorize409
+- ✅ 収集自動カテゴリ分類409
+- ✅ 수집 자동 분류409
+
+### v409.4 紧凑模式启用409 | Compact Mode Enabled409 | コンパクトモード有効409 | 컴팩트 모드 활성화409
+- ✅ 紧凑模式启用409
+- ✅ Compact Mode Enabled409
+- ✅ コンパクトモード有効409
+- ✅ 컴팩트 모드 활성화409
+
+### v409.5 压缩自动质量409 | Compress Auto Quality409 | 圧縮自動品質409 | 압축 자동 품질409
+- ✅ 压缩自动质量409
+- ✅ Compress Auto Quality409
+- ✅ 圧縮自動品質409
+- ✅ 압축 자동 품질409
+
+### v409.6 连接自动重试409 | Connect Auto Retry409 | 接続自動リトライ409 | 연결 자동 재시도409
+- ✅ 连接自动重试409
+- ✅ Connect Auto Retry409
+- ✅ 接続自動リトライ409
+- ✅ 연결 자동 재시도409
+
+### v409.7 仪表盘小部件布局409 | Dashboard Widget Layout409 | ダッシュボードウィジェットレイアウト409 | 대시보드 위젯 레이아웃409
+- ✅ 仪表盘小部件布局409
+- ✅ Dashboard Widget Layout409
+- ✅ ダッシュボードウィジェットレイアウト409
+- ✅ 대시보드 위젯 레이아웃409
+
+### v409.8 调试日志详细409 | Debug Log Verbose409 | デバッグログ詳細409 | 디버그 로그 상세409
+- ✅ 调试日志详细409
+- ✅ Debug Log Verbose409
+- ✅ デバッグログ詳細409
+- ✅ 디버그 로그 상세409
+
+### v409.9 深色模式启用409 | Deep Color Enabled409 | ディープカラー有効409 | 딥 컬러 활성화409
+- ✅ 深色模式启用409
+- ✅ Deep Color Enabled409
+- ✅ ディープカラー有効409
+- ✅ 딥 컬러 활성화409
+
+### v409.10 默认播放引擎409 | Default Player Engine409 | デフォルトプレーヤーエンジン409 | 기본 플레이어 엔진409
+- ✅ 默认播放引擎409
+- ✅ Default Player Engine409
+- ✅ デフォルトプレーヤーエンジン409
+- ✅ 기본 플레이어 엔진409
+
+### v409.11 延迟启动毫秒409 | Delay Start Ms409 | 遅延スタートミリ秒409 | 지연 시작 밀리초409
+- ✅ 延迟启动毫秒409
+- ✅ Delay Start Ms409
+- ✅ 遅延スタートミリ秒409
+- ✅ 지연 시작 밀리초409
+
+### v409.12 密度自动调整409 | Density Auto Adjust409 | 密度自動調整409 | 밀도 자동 조절409
+- ✅ 密度自动调整409
+- ✅ Density Auto Adjust409
+- ✅ 密度自動調整409
+- ✅ 밀도 자동 조절409
+
+### v409.13 部署自动更新409 | Deploy Auto Update409 | デプロイ自動更新409 | 배포 자동 업데이트409
+- ✅ 部署自动更新409
+- ✅ Deploy Auto Update409
+- ✅ デプロイ自動更新409
+- ✅ 배포 자동 업데이트409
+
+### v409.14 检测运动启用409 | Detect Motion Enabled409 | モーション検出有効409 | 모션 감지 활성화409
+- ✅ 检测运动启用409
+- ✅ Detect Motion Enabled409
+- ✅ モーション検出有効409
+- ✅ 모션 감지 활성화409
+
+### v409.15 空闲时屏幕变暗409 | Dim Screen On Idle409 | アイドル時画面暗く409 | 유휴 시 화면 어둡게409
+- ✅ 空闲时屏幕变暗409
+- ✅ Dim Screen On Idle409
+- ✅ アイドル時画面暗く409
+- ✅ 유휴 시 화면 어둡게409
+
+### v410.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v410.1-v410.15 功能列表
+- ✅ Cloud Auto Sync410, Cloud Storage Limit410, Collect Auto Categorize410, Compact Mode Enabled410, Compress Auto Quality410, Connect Auto Retry410, Dashboard Widget Layout410, Debug Log Verbose410, Deep Color Enabled410, Default Player Engine410, Delay Start Ms410, Density Auto Adjust410, Deploy Auto Update410, Detect Motion Enabled410, Dim Screen On Idle410
+
+### v410.1 云端自动同步410 | Cloud Auto Sync410 | クラウド自動同期410 | 클라우드 자동 동기화410
+- ✅ 云端自动同步410
+- ✅ Cloud Auto Sync410
+- ✅ クラウド自動同期410
+- ✅ 클라우드 자동 동기화410
+
+### v410.2 云端存储限制410 | Cloud Storage Limit410 | クラウドストレージ制限410 | 클라우드 저장소 제한410
+- ✅ 云端存储限制410
+- ✅ Cloud Storage Limit410
+- ✅ クラウドストレージ制限410
+- ✅ 클라우드 저장소 제한410
+
+### v410.3 收藏自动分类410 | Collect Auto Categorize410 | 収集自動カテゴリ分類410 | 수집 자동 분류410
+- ✅ 收藏自动分类410
+- ✅ Collect Auto Categorize410
+- ✅ 収集自動カテゴリ分類410
+- ✅ 수집 자동 분류410
+
+### v410.4 紧凑模式启用410 | Compact Mode Enabled410 | コンパクトモード有効410 | 컴팩트 모드 활성화410
+- ✅ 紧凑模式启用410
+- ✅ Compact Mode Enabled410
+- ✅ コンパクトモード有効410
+- ✅ 컴팩트 모드 활성화410
+
+### v410.5 压缩自动质量410 | Compress Auto Quality410 | 圧縮自動品質410 | 압축 자동 품질410
+- ✅ 压缩自动质量410
+- ✅ Compress Auto Quality410
+- ✅ 圧縮自動品質410
+- ✅ 압축 자동 품질410
+
+### v410.6 连接自动重试410 | Connect Auto Retry410 | 接続自動リトライ410 | 연결 자동 재시도410
+- ✅ 连接自动重试410
+- ✅ Connect Auto Retry410
+- ✅ 接続自動リトライ410
+- ✅ 연결 자동 재시도410
+
+### v410.7 仪表盘小部件布局410 | Dashboard Widget Layout410 | ダッシュボードウィジェットレイアウト410 | 대시보드 위젯 레이아웃410
+- ✅ 仪表盘小部件布局410
+- ✅ Dashboard Widget Layout410
+- ✅ ダッシュボードウィジェットレイアウト410
+- ✅ 대시보드 위젯 레이아웃410
+
+### v410.8 调试日志详细410 | Debug Log Verbose410 | デバッグログ詳細410 | 디버그 로그 상세410
+- ✅ 调试日志详细410
+- ✅ Debug Log Verbose410
+- ✅ デバッグログ詳細410
+- ✅ 디버그 로그 상세410
+
+### v410.9 深色模式启用410 | Deep Color Enabled410 | ディープカラー有効410 | 딥 컬러 활성화410
+- ✅ 深色模式启用410
+- ✅ Deep Color Enabled410
+- ✅ ディープカラー有効410
+- ✅ 딥 컬러 활성화410
+
+### v410.10 默认播放引擎410 | Default Player Engine410 | デフォルトプレーヤーエンジン410 | 기본 플레이어 엔진410
+- ✅ 默认播放引擎410
+- ✅ Default Player Engine410
+- ✅ デフォルトプレーヤーエンジン410
+- ✅ 기본 플레이어 엔진410
+
+### v410.11 延迟启动毫秒410 | Delay Start Ms410 | 遅延スタートミリ秒410 | 지연 시작 밀리초410
+- ✅ 延迟启动毫秒410
+- ✅ Delay Start Ms410
+- ✅ 遅延スタートミリ秒410
+- ✅ 지연 시작 밀리초410
+
+### v410.12 密度自动调整410 | Density Auto Adjust410 | 密度自動調整410 | 밀도 자동 조절410
+- ✅ 密度自动调整410
+- ✅ Density Auto Adjust410
+- ✅ 密度自動調整410
+- ✅ 밀도 자동 조절410
+
+### v410.13 部署自动更新410 | Deploy Auto Update410 | デプロイ自動更新410 | 배포 자동 업데이트410
+- ✅ 部署自动更新410
+- ✅ Deploy Auto Update410
+- ✅ デプロイ自動更新410
+- ✅ 배포 자동 업데이트410
+
+### v410.14 检测运动启用410 | Detect Motion Enabled410 | モーション検出有効410 | 모션 감지 활성화410
+- ✅ 检测运动启用410
+- ✅ Detect Motion Enabled410
+- ✅ モーション検出有効410
+- ✅ 모션 감지 활성화410
+
+### v410.15 空闲时屏幕变暗410 | Dim Screen On Idle410 | アイドル時画面暗く410 | 유휴 시 화면 어둡게410
+- ✅ 空闲时屏幕变暗410
+- ✅ Dim Screen On Idle410
+- ✅ アイドル時画面暗く410
+- ✅ 유휴 시 화면 어둡게410
+
 ### v55.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
 ### v55.1-v55.15 功能列表
 - ✅ Auto Resume, Font Monospace, Color Hue Auto, Peak Limiter, Send Queue, Cast Bandwidth Limit, Lock Screen, Filter Regex, Network Policy, Double Tap Action, Font Weight Custom, Tint Custom, Volume Compressor, Bg Padding, Cast Auto Quality
@@ -44872,4 +45813,4 @@ This project is based on open-source software. All rights belong to the original
 - **基础版本 | Base Versions**: v10.0.0 - v11.19.0 (25 versions)
 - **AI自动维护版本 | AI Maintained**: v12.1 - v45.15 (550+ versions)
 - **开发周期 | Development Cycle**: 2024 - 2026
-- **功能特性 | Features**: 4000+ new features added
+- **功能特性 | Features**: 4100+ new features added
