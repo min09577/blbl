@@ -32048,6 +32048,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V420ENGINEAUTOOPTIMIZE420, false)
         set(value) = prefs.edit().putBoolean(KEY_V420ENGINEAUTOOPTIMIZE420, value).apply()
 
+    var v421enterAnimation421: Boolean
+        get() = prefs.getBoolean(KEY_V421ENTERANIMATION421, false)
+        set(value) = prefs.edit().putBoolean(KEY_V421ENTERANIMATION421, value).apply()
+
+    var v421environmentLightSensor421: Boolean
+        get() = prefs.getBoolean(KEY_V421ENVIRONMENTLIGHTSENSOR421, false)
+        set(value) = prefs.edit().putBoolean(KEY_V421ENVIRONMENTLIGHTSENSOR421, value).apply()
+
+    var v421errorAutoRetry421: Boolean
+        get() = prefs.getBoolean(KEY_V421ERRORAUTORETRY421, false)
+        set(value) = prefs.edit().putBoolean(KEY_V421ERRORAUTORETRY421, value).apply()
+
+    var v421errorReportAuto421: Boolean
+        get() = prefs.getBoolean(KEY_V421ERRORREPORTAUTO421, false)
+        set(value) = prefs.edit().putBoolean(KEY_V421ERRORREPORTAUTO421, value).apply()
+
+    var v421eventAutoNotify421: Boolean
+        get() = prefs.getBoolean(KEY_V421EVENTAUTONOTIFY421, false)
+        set(value) = prefs.edit().putBoolean(KEY_V421EVENTAUTONOTIFY421, value).apply()
+
+    var v421exitConfirmation421: Boolean
+        get() = prefs.getBoolean(KEY_V421EXITCONFIRMATION421, false)
+        set(value) = prefs.edit().putBoolean(KEY_V421EXITCONFIRMATION421, value).apply()
+
+    var v421expandOnDoubleTap421: Boolean
+        get() = prefs.getBoolean(KEY_V421EXPANDONDOUBLETAP421, false)
+        set(value) = prefs.edit().putBoolean(KEY_V421EXPANDONDOUBLETAP421, value).apply()
+
+    var v421exportFormatDefault421: Int
+        get() = prefs.getInt(KEY_V421EXPORTFORMATDEFAULT421, 0)
+        set(value) = prefs.edit().putInt(KEY_V421EXPORTFORMATDEFAULT421, value).apply()
+
+    var v421extractAudioAuto421: Boolean
+        get() = prefs.getBoolean(KEY_V421EXTRACTAUDIOAUTO421, false)
+        set(value) = prefs.edit().putBoolean(KEY_V421EXTRACTAUDIOAUTO421, value).apply()
+
+    var v421fadeTransition421: Boolean
+        get() = prefs.getBoolean(KEY_V421FADETRANSITION421, false)
+        set(value) = prefs.edit().putBoolean(KEY_V421FADETRANSITION421, value).apply()
+
+    var v421feedAutoRefresh421: Boolean
+        get() = prefs.getBoolean(KEY_V421FEEDAUTOREFRESH421, false)
+        set(value) = prefs.edit().putBoolean(KEY_V421FEEDAUTOREFRESH421, value).apply()
+
+    var v421feedLayoutStyle421: Int
+        get() = prefs.getInt(KEY_V421FEEDLAYOUTSTYLE421, 0)
+        set(value) = prefs.edit().putInt(KEY_V421FEEDLAYOUTSTYLE421, value).apply()
+
+    var v421fileAutoOrganize421: Boolean
+        get() = prefs.getBoolean(KEY_V421FILEAUTOORGANIZE421, false)
+        set(value) = prefs.edit().putBoolean(KEY_V421FILEAUTOORGANIZE421, value).apply()
+
+    var v421findInPageHighlight421: Boolean
+        get() = prefs.getBoolean(KEY_V421FINDINPAGEHIGHLIGHT421, false)
+        set(value) = prefs.edit().putBoolean(KEY_V421FINDINPAGEHIGHLIGHT421, value).apply()
+
+    var v421fixCorruptAuto421: Boolean
+        get() = prefs.getBoolean(KEY_V421FIXCORRUPTAUTO421, false)
+        set(value) = prefs.edit().putBoolean(KEY_V421FIXCORRUPTAUTO421, value).apply()
+
+    var v422enterAnimation422: Boolean
+        get() = prefs.getBoolean(KEY_V422ENTERANIMATION422, false)
+        set(value) = prefs.edit().putBoolean(KEY_V422ENTERANIMATION422, value).apply()
+
+    var v422environmentLightSensor422: Boolean
+        get() = prefs.getBoolean(KEY_V422ENVIRONMENTLIGHTSENSOR422, false)
+        set(value) = prefs.edit().putBoolean(KEY_V422ENVIRONMENTLIGHTSENSOR422, value).apply()
+
+    var v422errorAutoRetry422: Boolean
+        get() = prefs.getBoolean(KEY_V422ERRORAUTORETRY422, false)
+        set(value) = prefs.edit().putBoolean(KEY_V422ERRORAUTORETRY422, value).apply()
+
+    var v422errorReportAuto422: Boolean
+        get() = prefs.getBoolean(KEY_V422ERRORREPORTAUTO422, false)
+        set(value) = prefs.edit().putBoolean(KEY_V422ERRORREPORTAUTO422, value).apply()
+
+    var v422eventAutoNotify422: Boolean
+        get() = prefs.getBoolean(KEY_V422EVENTAUTONOTIFY422, false)
+        set(value) = prefs.edit().putBoolean(KEY_V422EVENTAUTONOTIFY422, value).apply()
+
+    var v422exitConfirmation422: Boolean
+        get() = prefs.getBoolean(KEY_V422EXITCONFIRMATION422, false)
+        set(value) = prefs.edit().putBoolean(KEY_V422EXITCONFIRMATION422, value).apply()
+
+    var v422expandOnDoubleTap422: Boolean
+        get() = prefs.getBoolean(KEY_V422EXPANDONDOUBLETAP422, false)
+        set(value) = prefs.edit().putBoolean(KEY_V422EXPANDONDOUBLETAP422, value).apply()
+
+    var v422exportFormatDefault422: Int
+        get() = prefs.getInt(KEY_V422EXPORTFORMATDEFAULT422, 0)
+        set(value) = prefs.edit().putInt(KEY_V422EXPORTFORMATDEFAULT422, value).apply()
+
+    var v422extractAudioAuto422: Boolean
+        get() = prefs.getBoolean(KEY_V422EXTRACTAUDIOAUTO422, false)
+        set(value) = prefs.edit().putBoolean(KEY_V422EXTRACTAUDIOAUTO422, value).apply()
+
+    var v422fadeTransition422: Boolean
+        get() = prefs.getBoolean(KEY_V422FADETRANSITION422, false)
+        set(value) = prefs.edit().putBoolean(KEY_V422FADETRANSITION422, value).apply()
+
+    var v422feedAutoRefresh422: Boolean
+        get() = prefs.getBoolean(KEY_V422FEEDAUTOREFRESH422, false)
+        set(value) = prefs.edit().putBoolean(KEY_V422FEEDAUTOREFRESH422, value).apply()
+
+    var v422feedLayoutStyle422: Int
+        get() = prefs.getInt(KEY_V422FEEDLAYOUTSTYLE422, 0)
+        set(value) = prefs.edit().putInt(KEY_V422FEEDLAYOUTSTYLE422, value).apply()
+
+    var v422fileAutoOrganize422: Boolean
+        get() = prefs.getBoolean(KEY_V422FILEAUTOORGANIZE422, false)
+        set(value) = prefs.edit().putBoolean(KEY_V422FILEAUTOORGANIZE422, value).apply()
+
+    var v422findInPageHighlight422: Boolean
+        get() = prefs.getBoolean(KEY_V422FINDINPAGEHIGHLIGHT422, false)
+        set(value) = prefs.edit().putBoolean(KEY_V422FINDINPAGEHIGHLIGHT422, value).apply()
+
+    var v422fixCorruptAuto422: Boolean
+        get() = prefs.getBoolean(KEY_V422FIXCORRUPTAUTO422, false)
+        set(value) = prefs.edit().putBoolean(KEY_V422FIXCORRUPTAUTO422, value).apply()
+
+    var v423enterAnimation423: Boolean
+        get() = prefs.getBoolean(KEY_V423ENTERANIMATION423, false)
+        set(value) = prefs.edit().putBoolean(KEY_V423ENTERANIMATION423, value).apply()
+
+    var v423environmentLightSensor423: Boolean
+        get() = prefs.getBoolean(KEY_V423ENVIRONMENTLIGHTSENSOR423, false)
+        set(value) = prefs.edit().putBoolean(KEY_V423ENVIRONMENTLIGHTSENSOR423, value).apply()
+
+    var v423errorAutoRetry423: Boolean
+        get() = prefs.getBoolean(KEY_V423ERRORAUTORETRY423, false)
+        set(value) = prefs.edit().putBoolean(KEY_V423ERRORAUTORETRY423, value).apply()
+
+    var v423errorReportAuto423: Boolean
+        get() = prefs.getBoolean(KEY_V423ERRORREPORTAUTO423, false)
+        set(value) = prefs.edit().putBoolean(KEY_V423ERRORREPORTAUTO423, value).apply()
+
+    var v423eventAutoNotify423: Boolean
+        get() = prefs.getBoolean(KEY_V423EVENTAUTONOTIFY423, false)
+        set(value) = prefs.edit().putBoolean(KEY_V423EVENTAUTONOTIFY423, value).apply()
+
+    var v423exitConfirmation423: Boolean
+        get() = prefs.getBoolean(KEY_V423EXITCONFIRMATION423, false)
+        set(value) = prefs.edit().putBoolean(KEY_V423EXITCONFIRMATION423, value).apply()
+
+    var v423expandOnDoubleTap423: Boolean
+        get() = prefs.getBoolean(KEY_V423EXPANDONDOUBLETAP423, false)
+        set(value) = prefs.edit().putBoolean(KEY_V423EXPANDONDOUBLETAP423, value).apply()
+
+    var v423exportFormatDefault423: Int
+        get() = prefs.getInt(KEY_V423EXPORTFORMATDEFAULT423, 0)
+        set(value) = prefs.edit().putInt(KEY_V423EXPORTFORMATDEFAULT423, value).apply()
+
+    var v423extractAudioAuto423: Boolean
+        get() = prefs.getBoolean(KEY_V423EXTRACTAUDIOAUTO423, false)
+        set(value) = prefs.edit().putBoolean(KEY_V423EXTRACTAUDIOAUTO423, value).apply()
+
+    var v423fadeTransition423: Boolean
+        get() = prefs.getBoolean(KEY_V423FADETRANSITION423, false)
+        set(value) = prefs.edit().putBoolean(KEY_V423FADETRANSITION423, value).apply()
+
+    var v423feedAutoRefresh423: Boolean
+        get() = prefs.getBoolean(KEY_V423FEEDAUTOREFRESH423, false)
+        set(value) = prefs.edit().putBoolean(KEY_V423FEEDAUTOREFRESH423, value).apply()
+
+    var v423feedLayoutStyle423: Int
+        get() = prefs.getInt(KEY_V423FEEDLAYOUTSTYLE423, 0)
+        set(value) = prefs.edit().putInt(KEY_V423FEEDLAYOUTSTYLE423, value).apply()
+
+    var v423fileAutoOrganize423: Boolean
+        get() = prefs.getBoolean(KEY_V423FILEAUTOORGANIZE423, false)
+        set(value) = prefs.edit().putBoolean(KEY_V423FILEAUTOORGANIZE423, value).apply()
+
+    var v423findInPageHighlight423: Boolean
+        get() = prefs.getBoolean(KEY_V423FINDINPAGEHIGHLIGHT423, false)
+        set(value) = prefs.edit().putBoolean(KEY_V423FINDINPAGEHIGHLIGHT423, value).apply()
+
+    var v423fixCorruptAuto423: Boolean
+        get() = prefs.getBoolean(KEY_V423FIXCORRUPTAUTO423, false)
+        set(value) = prefs.edit().putBoolean(KEY_V423FIXCORRUPTAUTO423, value).apply()
+
+    var v424enterAnimation424: Boolean
+        get() = prefs.getBoolean(KEY_V424ENTERANIMATION424, false)
+        set(value) = prefs.edit().putBoolean(KEY_V424ENTERANIMATION424, value).apply()
+
+    var v424environmentLightSensor424: Boolean
+        get() = prefs.getBoolean(KEY_V424ENVIRONMENTLIGHTSENSOR424, false)
+        set(value) = prefs.edit().putBoolean(KEY_V424ENVIRONMENTLIGHTSENSOR424, value).apply()
+
+    var v424errorAutoRetry424: Boolean
+        get() = prefs.getBoolean(KEY_V424ERRORAUTORETRY424, false)
+        set(value) = prefs.edit().putBoolean(KEY_V424ERRORAUTORETRY424, value).apply()
+
+    var v424errorReportAuto424: Boolean
+        get() = prefs.getBoolean(KEY_V424ERRORREPORTAUTO424, false)
+        set(value) = prefs.edit().putBoolean(KEY_V424ERRORREPORTAUTO424, value).apply()
+
+    var v424eventAutoNotify424: Boolean
+        get() = prefs.getBoolean(KEY_V424EVENTAUTONOTIFY424, false)
+        set(value) = prefs.edit().putBoolean(KEY_V424EVENTAUTONOTIFY424, value).apply()
+
+    var v424exitConfirmation424: Boolean
+        get() = prefs.getBoolean(KEY_V424EXITCONFIRMATION424, false)
+        set(value) = prefs.edit().putBoolean(KEY_V424EXITCONFIRMATION424, value).apply()
+
+    var v424expandOnDoubleTap424: Boolean
+        get() = prefs.getBoolean(KEY_V424EXPANDONDOUBLETAP424, false)
+        set(value) = prefs.edit().putBoolean(KEY_V424EXPANDONDOUBLETAP424, value).apply()
+
+    var v424exportFormatDefault424: Int
+        get() = prefs.getInt(KEY_V424EXPORTFORMATDEFAULT424, 0)
+        set(value) = prefs.edit().putInt(KEY_V424EXPORTFORMATDEFAULT424, value).apply()
+
+    var v424extractAudioAuto424: Boolean
+        get() = prefs.getBoolean(KEY_V424EXTRACTAUDIOAUTO424, false)
+        set(value) = prefs.edit().putBoolean(KEY_V424EXTRACTAUDIOAUTO424, value).apply()
+
+    var v424fadeTransition424: Boolean
+        get() = prefs.getBoolean(KEY_V424FADETRANSITION424, false)
+        set(value) = prefs.edit().putBoolean(KEY_V424FADETRANSITION424, value).apply()
+
+    var v424feedAutoRefresh424: Boolean
+        get() = prefs.getBoolean(KEY_V424FEEDAUTOREFRESH424, false)
+        set(value) = prefs.edit().putBoolean(KEY_V424FEEDAUTOREFRESH424, value).apply()
+
+    var v424feedLayoutStyle424: Int
+        get() = prefs.getInt(KEY_V424FEEDLAYOUTSTYLE424, 0)
+        set(value) = prefs.edit().putInt(KEY_V424FEEDLAYOUTSTYLE424, value).apply()
+
+    var v424fileAutoOrganize424: Boolean
+        get() = prefs.getBoolean(KEY_V424FILEAUTOORGANIZE424, false)
+        set(value) = prefs.edit().putBoolean(KEY_V424FILEAUTOORGANIZE424, value).apply()
+
+    var v424findInPageHighlight424: Boolean
+        get() = prefs.getBoolean(KEY_V424FINDINPAGEHIGHLIGHT424, false)
+        set(value) = prefs.edit().putBoolean(KEY_V424FINDINPAGEHIGHLIGHT424, value).apply()
+
+    var v424fixCorruptAuto424: Boolean
+        get() = prefs.getBoolean(KEY_V424FIXCORRUPTAUTO424, false)
+        set(value) = prefs.edit().putBoolean(KEY_V424FIXCORRUPTAUTO424, value).apply()
+
+    var v425enterAnimation425: Boolean
+        get() = prefs.getBoolean(KEY_V425ENTERANIMATION425, false)
+        set(value) = prefs.edit().putBoolean(KEY_V425ENTERANIMATION425, value).apply()
+
+    var v425environmentLightSensor425: Boolean
+        get() = prefs.getBoolean(KEY_V425ENVIRONMENTLIGHTSENSOR425, false)
+        set(value) = prefs.edit().putBoolean(KEY_V425ENVIRONMENTLIGHTSENSOR425, value).apply()
+
+    var v425errorAutoRetry425: Boolean
+        get() = prefs.getBoolean(KEY_V425ERRORAUTORETRY425, false)
+        set(value) = prefs.edit().putBoolean(KEY_V425ERRORAUTORETRY425, value).apply()
+
+    var v425errorReportAuto425: Boolean
+        get() = prefs.getBoolean(KEY_V425ERRORREPORTAUTO425, false)
+        set(value) = prefs.edit().putBoolean(KEY_V425ERRORREPORTAUTO425, value).apply()
+
+    var v425eventAutoNotify425: Boolean
+        get() = prefs.getBoolean(KEY_V425EVENTAUTONOTIFY425, false)
+        set(value) = prefs.edit().putBoolean(KEY_V425EVENTAUTONOTIFY425, value).apply()
+
+    var v425exitConfirmation425: Boolean
+        get() = prefs.getBoolean(KEY_V425EXITCONFIRMATION425, false)
+        set(value) = prefs.edit().putBoolean(KEY_V425EXITCONFIRMATION425, value).apply()
+
+    var v425expandOnDoubleTap425: Boolean
+        get() = prefs.getBoolean(KEY_V425EXPANDONDOUBLETAP425, false)
+        set(value) = prefs.edit().putBoolean(KEY_V425EXPANDONDOUBLETAP425, value).apply()
+
+    var v425exportFormatDefault425: Int
+        get() = prefs.getInt(KEY_V425EXPORTFORMATDEFAULT425, 0)
+        set(value) = prefs.edit().putInt(KEY_V425EXPORTFORMATDEFAULT425, value).apply()
+
+    var v425extractAudioAuto425: Boolean
+        get() = prefs.getBoolean(KEY_V425EXTRACTAUDIOAUTO425, false)
+        set(value) = prefs.edit().putBoolean(KEY_V425EXTRACTAUDIOAUTO425, value).apply()
+
+    var v425fadeTransition425: Boolean
+        get() = prefs.getBoolean(KEY_V425FADETRANSITION425, false)
+        set(value) = prefs.edit().putBoolean(KEY_V425FADETRANSITION425, value).apply()
+
+    var v425feedAutoRefresh425: Boolean
+        get() = prefs.getBoolean(KEY_V425FEEDAUTOREFRESH425, false)
+        set(value) = prefs.edit().putBoolean(KEY_V425FEEDAUTOREFRESH425, value).apply()
+
+    var v425feedLayoutStyle425: Int
+        get() = prefs.getInt(KEY_V425FEEDLAYOUTSTYLE425, 0)
+        set(value) = prefs.edit().putInt(KEY_V425FEEDLAYOUTSTYLE425, value).apply()
+
+    var v425fileAutoOrganize425: Boolean
+        get() = prefs.getBoolean(KEY_V425FILEAUTOORGANIZE425, false)
+        set(value) = prefs.edit().putBoolean(KEY_V425FILEAUTOORGANIZE425, value).apply()
+
+    var v425findInPageHighlight425: Boolean
+        get() = prefs.getBoolean(KEY_V425FINDINPAGEHIGHLIGHT425, false)
+        set(value) = prefs.edit().putBoolean(KEY_V425FINDINPAGEHIGHLIGHT425, value).apply()
+
+    var v425fixCorruptAuto425: Boolean
+        get() = prefs.getBoolean(KEY_V425FIXCORRUPTAUTO425, false)
+        set(value) = prefs.edit().putBoolean(KEY_V425FIXCORRUPTAUTO425, value).apply()
+
+    var v426enterAnimation426: Boolean
+        get() = prefs.getBoolean(KEY_V426ENTERANIMATION426, false)
+        set(value) = prefs.edit().putBoolean(KEY_V426ENTERANIMATION426, value).apply()
+
+    var v426environmentLightSensor426: Boolean
+        get() = prefs.getBoolean(KEY_V426ENVIRONMENTLIGHTSENSOR426, false)
+        set(value) = prefs.edit().putBoolean(KEY_V426ENVIRONMENTLIGHTSENSOR426, value).apply()
+
+    var v426errorAutoRetry426: Boolean
+        get() = prefs.getBoolean(KEY_V426ERRORAUTORETRY426, false)
+        set(value) = prefs.edit().putBoolean(KEY_V426ERRORAUTORETRY426, value).apply()
+
+    var v426errorReportAuto426: Boolean
+        get() = prefs.getBoolean(KEY_V426ERRORREPORTAUTO426, false)
+        set(value) = prefs.edit().putBoolean(KEY_V426ERRORREPORTAUTO426, value).apply()
+
+    var v426eventAutoNotify426: Boolean
+        get() = prefs.getBoolean(KEY_V426EVENTAUTONOTIFY426, false)
+        set(value) = prefs.edit().putBoolean(KEY_V426EVENTAUTONOTIFY426, value).apply()
+
+    var v426exitConfirmation426: Boolean
+        get() = prefs.getBoolean(KEY_V426EXITCONFIRMATION426, false)
+        set(value) = prefs.edit().putBoolean(KEY_V426EXITCONFIRMATION426, value).apply()
+
+    var v426expandOnDoubleTap426: Boolean
+        get() = prefs.getBoolean(KEY_V426EXPANDONDOUBLETAP426, false)
+        set(value) = prefs.edit().putBoolean(KEY_V426EXPANDONDOUBLETAP426, value).apply()
+
+    var v426exportFormatDefault426: Int
+        get() = prefs.getInt(KEY_V426EXPORTFORMATDEFAULT426, 0)
+        set(value) = prefs.edit().putInt(KEY_V426EXPORTFORMATDEFAULT426, value).apply()
+
+    var v426extractAudioAuto426: Boolean
+        get() = prefs.getBoolean(KEY_V426EXTRACTAUDIOAUTO426, false)
+        set(value) = prefs.edit().putBoolean(KEY_V426EXTRACTAUDIOAUTO426, value).apply()
+
+    var v426fadeTransition426: Boolean
+        get() = prefs.getBoolean(KEY_V426FADETRANSITION426, false)
+        set(value) = prefs.edit().putBoolean(KEY_V426FADETRANSITION426, value).apply()
+
+    var v426feedAutoRefresh426: Boolean
+        get() = prefs.getBoolean(KEY_V426FEEDAUTOREFRESH426, false)
+        set(value) = prefs.edit().putBoolean(KEY_V426FEEDAUTOREFRESH426, value).apply()
+
+    var v426feedLayoutStyle426: Int
+        get() = prefs.getInt(KEY_V426FEEDLAYOUTSTYLE426, 0)
+        set(value) = prefs.edit().putInt(KEY_V426FEEDLAYOUTSTYLE426, value).apply()
+
+    var v426fileAutoOrganize426: Boolean
+        get() = prefs.getBoolean(KEY_V426FILEAUTOORGANIZE426, false)
+        set(value) = prefs.edit().putBoolean(KEY_V426FILEAUTOORGANIZE426, value).apply()
+
+    var v426findInPageHighlight426: Boolean
+        get() = prefs.getBoolean(KEY_V426FINDINPAGEHIGHLIGHT426, false)
+        set(value) = prefs.edit().putBoolean(KEY_V426FINDINPAGEHIGHLIGHT426, value).apply()
+
+    var v426fixCorruptAuto426: Boolean
+        get() = prefs.getBoolean(KEY_V426FIXCORRUPTAUTO426, false)
+        set(value) = prefs.edit().putBoolean(KEY_V426FIXCORRUPTAUTO426, value).apply()
+
+    var v427enterAnimation427: Boolean
+        get() = prefs.getBoolean(KEY_V427ENTERANIMATION427, false)
+        set(value) = prefs.edit().putBoolean(KEY_V427ENTERANIMATION427, value).apply()
+
+    var v427environmentLightSensor427: Boolean
+        get() = prefs.getBoolean(KEY_V427ENVIRONMENTLIGHTSENSOR427, false)
+        set(value) = prefs.edit().putBoolean(KEY_V427ENVIRONMENTLIGHTSENSOR427, value).apply()
+
+    var v427errorAutoRetry427: Boolean
+        get() = prefs.getBoolean(KEY_V427ERRORAUTORETRY427, false)
+        set(value) = prefs.edit().putBoolean(KEY_V427ERRORAUTORETRY427, value).apply()
+
+    var v427errorReportAuto427: Boolean
+        get() = prefs.getBoolean(KEY_V427ERRORREPORTAUTO427, false)
+        set(value) = prefs.edit().putBoolean(KEY_V427ERRORREPORTAUTO427, value).apply()
+
+    var v427eventAutoNotify427: Boolean
+        get() = prefs.getBoolean(KEY_V427EVENTAUTONOTIFY427, false)
+        set(value) = prefs.edit().putBoolean(KEY_V427EVENTAUTONOTIFY427, value).apply()
+
+    var v427exitConfirmation427: Boolean
+        get() = prefs.getBoolean(KEY_V427EXITCONFIRMATION427, false)
+        set(value) = prefs.edit().putBoolean(KEY_V427EXITCONFIRMATION427, value).apply()
+
+    var v427expandOnDoubleTap427: Boolean
+        get() = prefs.getBoolean(KEY_V427EXPANDONDOUBLETAP427, false)
+        set(value) = prefs.edit().putBoolean(KEY_V427EXPANDONDOUBLETAP427, value).apply()
+
+    var v427exportFormatDefault427: Int
+        get() = prefs.getInt(KEY_V427EXPORTFORMATDEFAULT427, 0)
+        set(value) = prefs.edit().putInt(KEY_V427EXPORTFORMATDEFAULT427, value).apply()
+
+    var v427extractAudioAuto427: Boolean
+        get() = prefs.getBoolean(KEY_V427EXTRACTAUDIOAUTO427, false)
+        set(value) = prefs.edit().putBoolean(KEY_V427EXTRACTAUDIOAUTO427, value).apply()
+
+    var v427fadeTransition427: Boolean
+        get() = prefs.getBoolean(KEY_V427FADETRANSITION427, false)
+        set(value) = prefs.edit().putBoolean(KEY_V427FADETRANSITION427, value).apply()
+
+    var v427feedAutoRefresh427: Boolean
+        get() = prefs.getBoolean(KEY_V427FEEDAUTOREFRESH427, false)
+        set(value) = prefs.edit().putBoolean(KEY_V427FEEDAUTOREFRESH427, value).apply()
+
+    var v427feedLayoutStyle427: Int
+        get() = prefs.getInt(KEY_V427FEEDLAYOUTSTYLE427, 0)
+        set(value) = prefs.edit().putInt(KEY_V427FEEDLAYOUTSTYLE427, value).apply()
+
+    var v427fileAutoOrganize427: Boolean
+        get() = prefs.getBoolean(KEY_V427FILEAUTOORGANIZE427, false)
+        set(value) = prefs.edit().putBoolean(KEY_V427FILEAUTOORGANIZE427, value).apply()
+
+    var v427findInPageHighlight427: Boolean
+        get() = prefs.getBoolean(KEY_V427FINDINPAGEHIGHLIGHT427, false)
+        set(value) = prefs.edit().putBoolean(KEY_V427FINDINPAGEHIGHLIGHT427, value).apply()
+
+    var v427fixCorruptAuto427: Boolean
+        get() = prefs.getBoolean(KEY_V427FIXCORRUPTAUTO427, false)
+        set(value) = prefs.edit().putBoolean(KEY_V427FIXCORRUPTAUTO427, value).apply()
+
+    var v428enterAnimation428: Boolean
+        get() = prefs.getBoolean(KEY_V428ENTERANIMATION428, false)
+        set(value) = prefs.edit().putBoolean(KEY_V428ENTERANIMATION428, value).apply()
+
+    var v428environmentLightSensor428: Boolean
+        get() = prefs.getBoolean(KEY_V428ENVIRONMENTLIGHTSENSOR428, false)
+        set(value) = prefs.edit().putBoolean(KEY_V428ENVIRONMENTLIGHTSENSOR428, value).apply()
+
+    var v428errorAutoRetry428: Boolean
+        get() = prefs.getBoolean(KEY_V428ERRORAUTORETRY428, false)
+        set(value) = prefs.edit().putBoolean(KEY_V428ERRORAUTORETRY428, value).apply()
+
+    var v428errorReportAuto428: Boolean
+        get() = prefs.getBoolean(KEY_V428ERRORREPORTAUTO428, false)
+        set(value) = prefs.edit().putBoolean(KEY_V428ERRORREPORTAUTO428, value).apply()
+
+    var v428eventAutoNotify428: Boolean
+        get() = prefs.getBoolean(KEY_V428EVENTAUTONOTIFY428, false)
+        set(value) = prefs.edit().putBoolean(KEY_V428EVENTAUTONOTIFY428, value).apply()
+
+    var v428exitConfirmation428: Boolean
+        get() = prefs.getBoolean(KEY_V428EXITCONFIRMATION428, false)
+        set(value) = prefs.edit().putBoolean(KEY_V428EXITCONFIRMATION428, value).apply()
+
+    var v428expandOnDoubleTap428: Boolean
+        get() = prefs.getBoolean(KEY_V428EXPANDONDOUBLETAP428, false)
+        set(value) = prefs.edit().putBoolean(KEY_V428EXPANDONDOUBLETAP428, value).apply()
+
+    var v428exportFormatDefault428: Int
+        get() = prefs.getInt(KEY_V428EXPORTFORMATDEFAULT428, 0)
+        set(value) = prefs.edit().putInt(KEY_V428EXPORTFORMATDEFAULT428, value).apply()
+
+    var v428extractAudioAuto428: Boolean
+        get() = prefs.getBoolean(KEY_V428EXTRACTAUDIOAUTO428, false)
+        set(value) = prefs.edit().putBoolean(KEY_V428EXTRACTAUDIOAUTO428, value).apply()
+
+    var v428fadeTransition428: Boolean
+        get() = prefs.getBoolean(KEY_V428FADETRANSITION428, false)
+        set(value) = prefs.edit().putBoolean(KEY_V428FADETRANSITION428, value).apply()
+
+    var v428feedAutoRefresh428: Boolean
+        get() = prefs.getBoolean(KEY_V428FEEDAUTOREFRESH428, false)
+        set(value) = prefs.edit().putBoolean(KEY_V428FEEDAUTOREFRESH428, value).apply()
+
+    var v428feedLayoutStyle428: Int
+        get() = prefs.getInt(KEY_V428FEEDLAYOUTSTYLE428, 0)
+        set(value) = prefs.edit().putInt(KEY_V428FEEDLAYOUTSTYLE428, value).apply()
+
+    var v428fileAutoOrganize428: Boolean
+        get() = prefs.getBoolean(KEY_V428FILEAUTOORGANIZE428, false)
+        set(value) = prefs.edit().putBoolean(KEY_V428FILEAUTOORGANIZE428, value).apply()
+
+    var v428findInPageHighlight428: Boolean
+        get() = prefs.getBoolean(KEY_V428FINDINPAGEHIGHLIGHT428, false)
+        set(value) = prefs.edit().putBoolean(KEY_V428FINDINPAGEHIGHLIGHT428, value).apply()
+
+    var v428fixCorruptAuto428: Boolean
+        get() = prefs.getBoolean(KEY_V428FIXCORRUPTAUTO428, false)
+        set(value) = prefs.edit().putBoolean(KEY_V428FIXCORRUPTAUTO428, value).apply()
+
+    var v429enterAnimation429: Boolean
+        get() = prefs.getBoolean(KEY_V429ENTERANIMATION429, false)
+        set(value) = prefs.edit().putBoolean(KEY_V429ENTERANIMATION429, value).apply()
+
+    var v429environmentLightSensor429: Boolean
+        get() = prefs.getBoolean(KEY_V429ENVIRONMENTLIGHTSENSOR429, false)
+        set(value) = prefs.edit().putBoolean(KEY_V429ENVIRONMENTLIGHTSENSOR429, value).apply()
+
+    var v429errorAutoRetry429: Boolean
+        get() = prefs.getBoolean(KEY_V429ERRORAUTORETRY429, false)
+        set(value) = prefs.edit().putBoolean(KEY_V429ERRORAUTORETRY429, value).apply()
+
+    var v429errorReportAuto429: Boolean
+        get() = prefs.getBoolean(KEY_V429ERRORREPORTAUTO429, false)
+        set(value) = prefs.edit().putBoolean(KEY_V429ERRORREPORTAUTO429, value).apply()
+
+    var v429eventAutoNotify429: Boolean
+        get() = prefs.getBoolean(KEY_V429EVENTAUTONOTIFY429, false)
+        set(value) = prefs.edit().putBoolean(KEY_V429EVENTAUTONOTIFY429, value).apply()
+
+    var v429exitConfirmation429: Boolean
+        get() = prefs.getBoolean(KEY_V429EXITCONFIRMATION429, false)
+        set(value) = prefs.edit().putBoolean(KEY_V429EXITCONFIRMATION429, value).apply()
+
+    var v429expandOnDoubleTap429: Boolean
+        get() = prefs.getBoolean(KEY_V429EXPANDONDOUBLETAP429, false)
+        set(value) = prefs.edit().putBoolean(KEY_V429EXPANDONDOUBLETAP429, value).apply()
+
+    var v429exportFormatDefault429: Int
+        get() = prefs.getInt(KEY_V429EXPORTFORMATDEFAULT429, 0)
+        set(value) = prefs.edit().putInt(KEY_V429EXPORTFORMATDEFAULT429, value).apply()
+
+    var v429extractAudioAuto429: Boolean
+        get() = prefs.getBoolean(KEY_V429EXTRACTAUDIOAUTO429, false)
+        set(value) = prefs.edit().putBoolean(KEY_V429EXTRACTAUDIOAUTO429, value).apply()
+
+    var v429fadeTransition429: Boolean
+        get() = prefs.getBoolean(KEY_V429FADETRANSITION429, false)
+        set(value) = prefs.edit().putBoolean(KEY_V429FADETRANSITION429, value).apply()
+
+    var v429feedAutoRefresh429: Boolean
+        get() = prefs.getBoolean(KEY_V429FEEDAUTOREFRESH429, false)
+        set(value) = prefs.edit().putBoolean(KEY_V429FEEDAUTOREFRESH429, value).apply()
+
+    var v429feedLayoutStyle429: Int
+        get() = prefs.getInt(KEY_V429FEEDLAYOUTSTYLE429, 0)
+        set(value) = prefs.edit().putInt(KEY_V429FEEDLAYOUTSTYLE429, value).apply()
+
+    var v429fileAutoOrganize429: Boolean
+        get() = prefs.getBoolean(KEY_V429FILEAUTOORGANIZE429, false)
+        set(value) = prefs.edit().putBoolean(KEY_V429FILEAUTOORGANIZE429, value).apply()
+
+    var v429findInPageHighlight429: Boolean
+        get() = prefs.getBoolean(KEY_V429FINDINPAGEHIGHLIGHT429, false)
+        set(value) = prefs.edit().putBoolean(KEY_V429FINDINPAGEHIGHLIGHT429, value).apply()
+
+    var v429fixCorruptAuto429: Boolean
+        get() = prefs.getBoolean(KEY_V429FIXCORRUPTAUTO429, false)
+        set(value) = prefs.edit().putBoolean(KEY_V429FIXCORRUPTAUTO429, value).apply()
+
+    var v430enterAnimation430: Boolean
+        get() = prefs.getBoolean(KEY_V430ENTERANIMATION430, false)
+        set(value) = prefs.edit().putBoolean(KEY_V430ENTERANIMATION430, value).apply()
+
+    var v430environmentLightSensor430: Boolean
+        get() = prefs.getBoolean(KEY_V430ENVIRONMENTLIGHTSENSOR430, false)
+        set(value) = prefs.edit().putBoolean(KEY_V430ENVIRONMENTLIGHTSENSOR430, value).apply()
+
+    var v430errorAutoRetry430: Boolean
+        get() = prefs.getBoolean(KEY_V430ERRORAUTORETRY430, false)
+        set(value) = prefs.edit().putBoolean(KEY_V430ERRORAUTORETRY430, value).apply()
+
+    var v430errorReportAuto430: Boolean
+        get() = prefs.getBoolean(KEY_V430ERRORREPORTAUTO430, false)
+        set(value) = prefs.edit().putBoolean(KEY_V430ERRORREPORTAUTO430, value).apply()
+
+    var v430eventAutoNotify430: Boolean
+        get() = prefs.getBoolean(KEY_V430EVENTAUTONOTIFY430, false)
+        set(value) = prefs.edit().putBoolean(KEY_V430EVENTAUTONOTIFY430, value).apply()
+
+    var v430exitConfirmation430: Boolean
+        get() = prefs.getBoolean(KEY_V430EXITCONFIRMATION430, false)
+        set(value) = prefs.edit().putBoolean(KEY_V430EXITCONFIRMATION430, value).apply()
+
+    var v430expandOnDoubleTap430: Boolean
+        get() = prefs.getBoolean(KEY_V430EXPANDONDOUBLETAP430, false)
+        set(value) = prefs.edit().putBoolean(KEY_V430EXPANDONDOUBLETAP430, value).apply()
+
+    var v430exportFormatDefault430: Int
+        get() = prefs.getInt(KEY_V430EXPORTFORMATDEFAULT430, 0)
+        set(value) = prefs.edit().putInt(KEY_V430EXPORTFORMATDEFAULT430, value).apply()
+
+    var v430extractAudioAuto430: Boolean
+        get() = prefs.getBoolean(KEY_V430EXTRACTAUDIOAUTO430, false)
+        set(value) = prefs.edit().putBoolean(KEY_V430EXTRACTAUDIOAUTO430, value).apply()
+
+    var v430fadeTransition430: Boolean
+        get() = prefs.getBoolean(KEY_V430FADETRANSITION430, false)
+        set(value) = prefs.edit().putBoolean(KEY_V430FADETRANSITION430, value).apply()
+
+    var v430feedAutoRefresh430: Boolean
+        get() = prefs.getBoolean(KEY_V430FEEDAUTOREFRESH430, false)
+        set(value) = prefs.edit().putBoolean(KEY_V430FEEDAUTOREFRESH430, value).apply()
+
+    var v430feedLayoutStyle430: Int
+        get() = prefs.getInt(KEY_V430FEEDLAYOUTSTYLE430, 0)
+        set(value) = prefs.edit().putInt(KEY_V430FEEDLAYOUTSTYLE430, value).apply()
+
+    var v430fileAutoOrganize430: Boolean
+        get() = prefs.getBoolean(KEY_V430FILEAUTOORGANIZE430, false)
+        set(value) = prefs.edit().putBoolean(KEY_V430FILEAUTOORGANIZE430, value).apply()
+
+    var v430findInPageHighlight430: Boolean
+        get() = prefs.getBoolean(KEY_V430FINDINPAGEHIGHLIGHT430, false)
+        set(value) = prefs.edit().putBoolean(KEY_V430FINDINPAGEHIGHLIGHT430, value).apply()
+
+    var v430fixCorruptAuto430: Boolean
+        get() = prefs.getBoolean(KEY_V430FIXCORRUPTAUTO430, false)
+        set(value) = prefs.edit().putBoolean(KEY_V430FIXCORRUPTAUTO430, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -40930,5 +41530,155 @@ class AppPrefs(context: Context) {
         const val KEY_V420ENCODEAUTOSELECT420 = "v420encodeAutoSelect420" // v420 Encode Auto Select420
         const val KEY_V420ENDPOINTAUTOSWITCH420 = "v420endpointAutoSwitch420" // v420 Endpoint Auto Switch420
         const val KEY_V420ENGINEAUTOOPTIMIZE420 = "v420engineAutoOptimize420" // v420 Engine Auto Optimize420
+        const val KEY_V421ENTERANIMATION421 = "v421enterAnimation421" // v421 Enter Animation421
+        const val KEY_V421ENVIRONMENTLIGHTSENSOR421 = "v421environmentLightSensor421" // v421 Environment Light Sensor421
+        const val KEY_V421ERRORAUTORETRY421 = "v421errorAutoRetry421" // v421 Error Auto Retry421
+        const val KEY_V421ERRORREPORTAUTO421 = "v421errorReportAuto421" // v421 Error Report Auto421
+        const val KEY_V421EVENTAUTONOTIFY421 = "v421eventAutoNotify421" // v421 Event Auto Notify421
+        const val KEY_V421EXITCONFIRMATION421 = "v421exitConfirmation421" // v421 Exit Confirmation421
+        const val KEY_V421EXPANDONDOUBLETAP421 = "v421expandOnDoubleTap421" // v421 Expand On Double Tap421
+        const val KEY_V421EXPORTFORMATDEFAULT421 = "v421exportFormatDefault421" // v421 Export Format Default421
+        const val KEY_V421EXTRACTAUDIOAUTO421 = "v421extractAudioAuto421" // v421 Extract Audio Auto421
+        const val KEY_V421FADETRANSITION421 = "v421fadeTransition421" // v421 Fade Transition421
+        const val KEY_V421FEEDAUTOREFRESH421 = "v421feedAutoRefresh421" // v421 Feed Auto Refresh421
+        const val KEY_V421FEEDLAYOUTSTYLE421 = "v421feedLayoutStyle421" // v421 Feed Layout Style421
+        const val KEY_V421FILEAUTOORGANIZE421 = "v421fileAutoOrganize421" // v421 File Auto Organize421
+        const val KEY_V421FINDINPAGEHIGHLIGHT421 = "v421findInPageHighlight421" // v421 Find In Page Highlight421
+        const val KEY_V421FIXCORRUPTAUTO421 = "v421fixCorruptAuto421" // v421 Fix Corrupt Auto421
+        const val KEY_V422ENTERANIMATION422 = "v422enterAnimation422" // v422 Enter Animation422
+        const val KEY_V422ENVIRONMENTLIGHTSENSOR422 = "v422environmentLightSensor422" // v422 Environment Light Sensor422
+        const val KEY_V422ERRORAUTORETRY422 = "v422errorAutoRetry422" // v422 Error Auto Retry422
+        const val KEY_V422ERRORREPORTAUTO422 = "v422errorReportAuto422" // v422 Error Report Auto422
+        const val KEY_V422EVENTAUTONOTIFY422 = "v422eventAutoNotify422" // v422 Event Auto Notify422
+        const val KEY_V422EXITCONFIRMATION422 = "v422exitConfirmation422" // v422 Exit Confirmation422
+        const val KEY_V422EXPANDONDOUBLETAP422 = "v422expandOnDoubleTap422" // v422 Expand On Double Tap422
+        const val KEY_V422EXPORTFORMATDEFAULT422 = "v422exportFormatDefault422" // v422 Export Format Default422
+        const val KEY_V422EXTRACTAUDIOAUTO422 = "v422extractAudioAuto422" // v422 Extract Audio Auto422
+        const val KEY_V422FADETRANSITION422 = "v422fadeTransition422" // v422 Fade Transition422
+        const val KEY_V422FEEDAUTOREFRESH422 = "v422feedAutoRefresh422" // v422 Feed Auto Refresh422
+        const val KEY_V422FEEDLAYOUTSTYLE422 = "v422feedLayoutStyle422" // v422 Feed Layout Style422
+        const val KEY_V422FILEAUTOORGANIZE422 = "v422fileAutoOrganize422" // v422 File Auto Organize422
+        const val KEY_V422FINDINPAGEHIGHLIGHT422 = "v422findInPageHighlight422" // v422 Find In Page Highlight422
+        const val KEY_V422FIXCORRUPTAUTO422 = "v422fixCorruptAuto422" // v422 Fix Corrupt Auto422
+        const val KEY_V423ENTERANIMATION423 = "v423enterAnimation423" // v423 Enter Animation423
+        const val KEY_V423ENVIRONMENTLIGHTSENSOR423 = "v423environmentLightSensor423" // v423 Environment Light Sensor423
+        const val KEY_V423ERRORAUTORETRY423 = "v423errorAutoRetry423" // v423 Error Auto Retry423
+        const val KEY_V423ERRORREPORTAUTO423 = "v423errorReportAuto423" // v423 Error Report Auto423
+        const val KEY_V423EVENTAUTONOTIFY423 = "v423eventAutoNotify423" // v423 Event Auto Notify423
+        const val KEY_V423EXITCONFIRMATION423 = "v423exitConfirmation423" // v423 Exit Confirmation423
+        const val KEY_V423EXPANDONDOUBLETAP423 = "v423expandOnDoubleTap423" // v423 Expand On Double Tap423
+        const val KEY_V423EXPORTFORMATDEFAULT423 = "v423exportFormatDefault423" // v423 Export Format Default423
+        const val KEY_V423EXTRACTAUDIOAUTO423 = "v423extractAudioAuto423" // v423 Extract Audio Auto423
+        const val KEY_V423FADETRANSITION423 = "v423fadeTransition423" // v423 Fade Transition423
+        const val KEY_V423FEEDAUTOREFRESH423 = "v423feedAutoRefresh423" // v423 Feed Auto Refresh423
+        const val KEY_V423FEEDLAYOUTSTYLE423 = "v423feedLayoutStyle423" // v423 Feed Layout Style423
+        const val KEY_V423FILEAUTOORGANIZE423 = "v423fileAutoOrganize423" // v423 File Auto Organize423
+        const val KEY_V423FINDINPAGEHIGHLIGHT423 = "v423findInPageHighlight423" // v423 Find In Page Highlight423
+        const val KEY_V423FIXCORRUPTAUTO423 = "v423fixCorruptAuto423" // v423 Fix Corrupt Auto423
+        const val KEY_V424ENTERANIMATION424 = "v424enterAnimation424" // v424 Enter Animation424
+        const val KEY_V424ENVIRONMENTLIGHTSENSOR424 = "v424environmentLightSensor424" // v424 Environment Light Sensor424
+        const val KEY_V424ERRORAUTORETRY424 = "v424errorAutoRetry424" // v424 Error Auto Retry424
+        const val KEY_V424ERRORREPORTAUTO424 = "v424errorReportAuto424" // v424 Error Report Auto424
+        const val KEY_V424EVENTAUTONOTIFY424 = "v424eventAutoNotify424" // v424 Event Auto Notify424
+        const val KEY_V424EXITCONFIRMATION424 = "v424exitConfirmation424" // v424 Exit Confirmation424
+        const val KEY_V424EXPANDONDOUBLETAP424 = "v424expandOnDoubleTap424" // v424 Expand On Double Tap424
+        const val KEY_V424EXPORTFORMATDEFAULT424 = "v424exportFormatDefault424" // v424 Export Format Default424
+        const val KEY_V424EXTRACTAUDIOAUTO424 = "v424extractAudioAuto424" // v424 Extract Audio Auto424
+        const val KEY_V424FADETRANSITION424 = "v424fadeTransition424" // v424 Fade Transition424
+        const val KEY_V424FEEDAUTOREFRESH424 = "v424feedAutoRefresh424" // v424 Feed Auto Refresh424
+        const val KEY_V424FEEDLAYOUTSTYLE424 = "v424feedLayoutStyle424" // v424 Feed Layout Style424
+        const val KEY_V424FILEAUTOORGANIZE424 = "v424fileAutoOrganize424" // v424 File Auto Organize424
+        const val KEY_V424FINDINPAGEHIGHLIGHT424 = "v424findInPageHighlight424" // v424 Find In Page Highlight424
+        const val KEY_V424FIXCORRUPTAUTO424 = "v424fixCorruptAuto424" // v424 Fix Corrupt Auto424
+        const val KEY_V425ENTERANIMATION425 = "v425enterAnimation425" // v425 Enter Animation425
+        const val KEY_V425ENVIRONMENTLIGHTSENSOR425 = "v425environmentLightSensor425" // v425 Environment Light Sensor425
+        const val KEY_V425ERRORAUTORETRY425 = "v425errorAutoRetry425" // v425 Error Auto Retry425
+        const val KEY_V425ERRORREPORTAUTO425 = "v425errorReportAuto425" // v425 Error Report Auto425
+        const val KEY_V425EVENTAUTONOTIFY425 = "v425eventAutoNotify425" // v425 Event Auto Notify425
+        const val KEY_V425EXITCONFIRMATION425 = "v425exitConfirmation425" // v425 Exit Confirmation425
+        const val KEY_V425EXPANDONDOUBLETAP425 = "v425expandOnDoubleTap425" // v425 Expand On Double Tap425
+        const val KEY_V425EXPORTFORMATDEFAULT425 = "v425exportFormatDefault425" // v425 Export Format Default425
+        const val KEY_V425EXTRACTAUDIOAUTO425 = "v425extractAudioAuto425" // v425 Extract Audio Auto425
+        const val KEY_V425FADETRANSITION425 = "v425fadeTransition425" // v425 Fade Transition425
+        const val KEY_V425FEEDAUTOREFRESH425 = "v425feedAutoRefresh425" // v425 Feed Auto Refresh425
+        const val KEY_V425FEEDLAYOUTSTYLE425 = "v425feedLayoutStyle425" // v425 Feed Layout Style425
+        const val KEY_V425FILEAUTOORGANIZE425 = "v425fileAutoOrganize425" // v425 File Auto Organize425
+        const val KEY_V425FINDINPAGEHIGHLIGHT425 = "v425findInPageHighlight425" // v425 Find In Page Highlight425
+        const val KEY_V425FIXCORRUPTAUTO425 = "v425fixCorruptAuto425" // v425 Fix Corrupt Auto425
+        const val KEY_V426ENTERANIMATION426 = "v426enterAnimation426" // v426 Enter Animation426
+        const val KEY_V426ENVIRONMENTLIGHTSENSOR426 = "v426environmentLightSensor426" // v426 Environment Light Sensor426
+        const val KEY_V426ERRORAUTORETRY426 = "v426errorAutoRetry426" // v426 Error Auto Retry426
+        const val KEY_V426ERRORREPORTAUTO426 = "v426errorReportAuto426" // v426 Error Report Auto426
+        const val KEY_V426EVENTAUTONOTIFY426 = "v426eventAutoNotify426" // v426 Event Auto Notify426
+        const val KEY_V426EXITCONFIRMATION426 = "v426exitConfirmation426" // v426 Exit Confirmation426
+        const val KEY_V426EXPANDONDOUBLETAP426 = "v426expandOnDoubleTap426" // v426 Expand On Double Tap426
+        const val KEY_V426EXPORTFORMATDEFAULT426 = "v426exportFormatDefault426" // v426 Export Format Default426
+        const val KEY_V426EXTRACTAUDIOAUTO426 = "v426extractAudioAuto426" // v426 Extract Audio Auto426
+        const val KEY_V426FADETRANSITION426 = "v426fadeTransition426" // v426 Fade Transition426
+        const val KEY_V426FEEDAUTOREFRESH426 = "v426feedAutoRefresh426" // v426 Feed Auto Refresh426
+        const val KEY_V426FEEDLAYOUTSTYLE426 = "v426feedLayoutStyle426" // v426 Feed Layout Style426
+        const val KEY_V426FILEAUTOORGANIZE426 = "v426fileAutoOrganize426" // v426 File Auto Organize426
+        const val KEY_V426FINDINPAGEHIGHLIGHT426 = "v426findInPageHighlight426" // v426 Find In Page Highlight426
+        const val KEY_V426FIXCORRUPTAUTO426 = "v426fixCorruptAuto426" // v426 Fix Corrupt Auto426
+        const val KEY_V427ENTERANIMATION427 = "v427enterAnimation427" // v427 Enter Animation427
+        const val KEY_V427ENVIRONMENTLIGHTSENSOR427 = "v427environmentLightSensor427" // v427 Environment Light Sensor427
+        const val KEY_V427ERRORAUTORETRY427 = "v427errorAutoRetry427" // v427 Error Auto Retry427
+        const val KEY_V427ERRORREPORTAUTO427 = "v427errorReportAuto427" // v427 Error Report Auto427
+        const val KEY_V427EVENTAUTONOTIFY427 = "v427eventAutoNotify427" // v427 Event Auto Notify427
+        const val KEY_V427EXITCONFIRMATION427 = "v427exitConfirmation427" // v427 Exit Confirmation427
+        const val KEY_V427EXPANDONDOUBLETAP427 = "v427expandOnDoubleTap427" // v427 Expand On Double Tap427
+        const val KEY_V427EXPORTFORMATDEFAULT427 = "v427exportFormatDefault427" // v427 Export Format Default427
+        const val KEY_V427EXTRACTAUDIOAUTO427 = "v427extractAudioAuto427" // v427 Extract Audio Auto427
+        const val KEY_V427FADETRANSITION427 = "v427fadeTransition427" // v427 Fade Transition427
+        const val KEY_V427FEEDAUTOREFRESH427 = "v427feedAutoRefresh427" // v427 Feed Auto Refresh427
+        const val KEY_V427FEEDLAYOUTSTYLE427 = "v427feedLayoutStyle427" // v427 Feed Layout Style427
+        const val KEY_V427FILEAUTOORGANIZE427 = "v427fileAutoOrganize427" // v427 File Auto Organize427
+        const val KEY_V427FINDINPAGEHIGHLIGHT427 = "v427findInPageHighlight427" // v427 Find In Page Highlight427
+        const val KEY_V427FIXCORRUPTAUTO427 = "v427fixCorruptAuto427" // v427 Fix Corrupt Auto427
+        const val KEY_V428ENTERANIMATION428 = "v428enterAnimation428" // v428 Enter Animation428
+        const val KEY_V428ENVIRONMENTLIGHTSENSOR428 = "v428environmentLightSensor428" // v428 Environment Light Sensor428
+        const val KEY_V428ERRORAUTORETRY428 = "v428errorAutoRetry428" // v428 Error Auto Retry428
+        const val KEY_V428ERRORREPORTAUTO428 = "v428errorReportAuto428" // v428 Error Report Auto428
+        const val KEY_V428EVENTAUTONOTIFY428 = "v428eventAutoNotify428" // v428 Event Auto Notify428
+        const val KEY_V428EXITCONFIRMATION428 = "v428exitConfirmation428" // v428 Exit Confirmation428
+        const val KEY_V428EXPANDONDOUBLETAP428 = "v428expandOnDoubleTap428" // v428 Expand On Double Tap428
+        const val KEY_V428EXPORTFORMATDEFAULT428 = "v428exportFormatDefault428" // v428 Export Format Default428
+        const val KEY_V428EXTRACTAUDIOAUTO428 = "v428extractAudioAuto428" // v428 Extract Audio Auto428
+        const val KEY_V428FADETRANSITION428 = "v428fadeTransition428" // v428 Fade Transition428
+        const val KEY_V428FEEDAUTOREFRESH428 = "v428feedAutoRefresh428" // v428 Feed Auto Refresh428
+        const val KEY_V428FEEDLAYOUTSTYLE428 = "v428feedLayoutStyle428" // v428 Feed Layout Style428
+        const val KEY_V428FILEAUTOORGANIZE428 = "v428fileAutoOrganize428" // v428 File Auto Organize428
+        const val KEY_V428FINDINPAGEHIGHLIGHT428 = "v428findInPageHighlight428" // v428 Find In Page Highlight428
+        const val KEY_V428FIXCORRUPTAUTO428 = "v428fixCorruptAuto428" // v428 Fix Corrupt Auto428
+        const val KEY_V429ENTERANIMATION429 = "v429enterAnimation429" // v429 Enter Animation429
+        const val KEY_V429ENVIRONMENTLIGHTSENSOR429 = "v429environmentLightSensor429" // v429 Environment Light Sensor429
+        const val KEY_V429ERRORAUTORETRY429 = "v429errorAutoRetry429" // v429 Error Auto Retry429
+        const val KEY_V429ERRORREPORTAUTO429 = "v429errorReportAuto429" // v429 Error Report Auto429
+        const val KEY_V429EVENTAUTONOTIFY429 = "v429eventAutoNotify429" // v429 Event Auto Notify429
+        const val KEY_V429EXITCONFIRMATION429 = "v429exitConfirmation429" // v429 Exit Confirmation429
+        const val KEY_V429EXPANDONDOUBLETAP429 = "v429expandOnDoubleTap429" // v429 Expand On Double Tap429
+        const val KEY_V429EXPORTFORMATDEFAULT429 = "v429exportFormatDefault429" // v429 Export Format Default429
+        const val KEY_V429EXTRACTAUDIOAUTO429 = "v429extractAudioAuto429" // v429 Extract Audio Auto429
+        const val KEY_V429FADETRANSITION429 = "v429fadeTransition429" // v429 Fade Transition429
+        const val KEY_V429FEEDAUTOREFRESH429 = "v429feedAutoRefresh429" // v429 Feed Auto Refresh429
+        const val KEY_V429FEEDLAYOUTSTYLE429 = "v429feedLayoutStyle429" // v429 Feed Layout Style429
+        const val KEY_V429FILEAUTOORGANIZE429 = "v429fileAutoOrganize429" // v429 File Auto Organize429
+        const val KEY_V429FINDINPAGEHIGHLIGHT429 = "v429findInPageHighlight429" // v429 Find In Page Highlight429
+        const val KEY_V429FIXCORRUPTAUTO429 = "v429fixCorruptAuto429" // v429 Fix Corrupt Auto429
+        const val KEY_V430ENTERANIMATION430 = "v430enterAnimation430" // v430 Enter Animation430
+        const val KEY_V430ENVIRONMENTLIGHTSENSOR430 = "v430environmentLightSensor430" // v430 Environment Light Sensor430
+        const val KEY_V430ERRORAUTORETRY430 = "v430errorAutoRetry430" // v430 Error Auto Retry430
+        const val KEY_V430ERRORREPORTAUTO430 = "v430errorReportAuto430" // v430 Error Report Auto430
+        const val KEY_V430EVENTAUTONOTIFY430 = "v430eventAutoNotify430" // v430 Event Auto Notify430
+        const val KEY_V430EXITCONFIRMATION430 = "v430exitConfirmation430" // v430 Exit Confirmation430
+        const val KEY_V430EXPANDONDOUBLETAP430 = "v430expandOnDoubleTap430" // v430 Expand On Double Tap430
+        const val KEY_V430EXPORTFORMATDEFAULT430 = "v430exportFormatDefault430" // v430 Export Format Default430
+        const val KEY_V430EXTRACTAUDIOAUTO430 = "v430extractAudioAuto430" // v430 Extract Audio Auto430
+        const val KEY_V430FADETRANSITION430 = "v430fadeTransition430" // v430 Fade Transition430
+        const val KEY_V430FEEDAUTOREFRESH430 = "v430feedAutoRefresh430" // v430 Feed Auto Refresh430
+        const val KEY_V430FEEDLAYOUTSTYLE430 = "v430feedLayoutStyle430" // v430 Feed Layout Style430
+        const val KEY_V430FILEAUTOORGANIZE430 = "v430fileAutoOrganize430" // v430 File Auto Organize430
+        const val KEY_V430FINDINPAGEHIGHLIGHT430 = "v430findInPageHighlight430" // v430 Find In Page Highlight430
+        const val KEY_V430FIXCORRUPTAUTO430 = "v430fixCorruptAuto430" // v430 Fix Corrupt Auto430
     }
 }
