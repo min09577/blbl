@@ -118,7 +118,7 @@ This project is based on open-source software. All rights belong to the original
 ## 📋 更新日志 | Changelog | 変更履歴 | 변경 로그
 
 ### 最新版本 | Latest Version | 最新バージョン | 최신 버전
-- **v380.15** - 2026-06-08
+- **v390.15** - 2026-06-08
 
 ---
 
@@ -39525,6 +39525,947 @@ This project is based on open-source software. All rights belong to the original
 - ✅ サムネイルプレビュー380
 - ✅ 썸네일 미리보기380
 
+
+### v381.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v381.1-v381.15 功能列表
+- ✅ Grid Layout Columns381, Grid Layout Spacing381, Grid Layout Animation381, Page Size Limit381, Page Auto Load381, Panel Auto Hide381, Panel Position381, SubList Auto Collapse381, SyncPlay Latency381, SyncPlay Auto Join381, Proxy Auto Detect381, Queue Auto Sort381, Record Auto Save381, Image Enhance Sharp381, Image Enhance Denoise381
+
+### v381.1 网格布局列数381 | Grid Layout Columns381 | グリッドレイアウト列数381 | 그리드 레이아웃 열 수381
+- ✅ 网格布局列数381
+- ✅ Grid Layout Columns381
+- ✅ グリッドレイアウト列数381
+- ✅ 그리드 레이아웃 열 수381
+
+### v381.2 网格布局间距381 | Grid Layout Spacing381 | グリッドレイアウト間隔381 | 그리드 레이아웃 간격381
+- ✅ 网格布局间距381
+- ✅ Grid Layout Spacing381
+- ✅ グリッドレイアウト間隔381
+- ✅ 그리드 레이아웃 간격381
+
+### v381.3 网格布局动画381 | Grid Layout Animation381 | グリッドレイアウトアニメーション381 | 그리드 레이아웃 애니메이션381
+- ✅ 网格布局动画381
+- ✅ Grid Layout Animation381
+- ✅ グリッドレイアウトアニメーション381
+- ✅ 그리드 레이아웃 애니메이션381
+
+### v381.4 分页大小限制381 | Page Size Limit381 | ページサイズ制限381 | 페이지 크기 제한381
+- ✅ 分页大小限制381
+- ✅ Page Size Limit381
+- ✅ ページサイズ制限381
+- ✅ 페이지 크기 제한381
+
+### v381.5 分页自动加载381 | Page Auto Load381 | ページ自動ロード381 | 페이지 자동 로드381
+- ✅ 分页自动加载381
+- ✅ Page Auto Load381
+- ✅ ページ自動ロード381
+- ✅ 페이지 자동 로드381
+
+### v381.6 面板自动隐藏381 | Panel Auto Hide381 | パネル自動非表示381 | 패널 자동 숨기기381
+- ✅ 面板自动隐藏381
+- ✅ Panel Auto Hide381
+- ✅ パネル自動非表示381
+- ✅ 패널 자동 숨기기381
+
+### v381.7 面板位置381 | Panel Position381 | パネル位置381 | 패널 위치381
+- ✅ 面板位置381
+- ✅ Panel Position381
+- ✅ パネル位置381
+- ✅ 패널 위치381
+
+### v381.8 子列表自动折叠381 | SubList Auto Collapse381 | サブリスト自動折りたたみ381 | 서브리스트 자동 접기381
+- ✅ 子列表自动折叠381
+- ✅ SubList Auto Collapse381
+- ✅ サブリスト自動折りたたみ381
+- ✅ 서브리스트 자동 접기381
+
+### v381.9 同步播放延迟381 | SyncPlay Latency381 | SyncPlay遅延381 | SyncPlay 지연381
+- ✅ 同步播放延迟381
+- ✅ SyncPlay Latency381
+- ✅ SyncPlay遅延381
+- ✅ SyncPlay 지연381
+
+### v381.10 同步播放自动加入381 | SyncPlay Auto Join381 | SyncPlay自動参加381 | SyncPlay 자동 참가381
+- ✅ 同步播放自动加入381
+- ✅ SyncPlay Auto Join381
+- ✅ SyncPlay自動参加381
+- ✅ SyncPlay 자동 참가381
+
+### v381.11 代理自动检测381 | Proxy Auto Detect381 | プロキシ自動検出381 | 프록시 자동 감지381
+- ✅ 代理自动检测381
+- ✅ Proxy Auto Detect381
+- ✅ プロキシ自動検出381
+- ✅ 프록시 자동 감지381
+
+### v381.12 队列自动排序381 | Queue Auto Sort381 | キュー自動ソート381 | 큐 자동 정렬381
+- ✅ 队列自动排序381
+- ✅ Queue Auto Sort381
+- ✅ キュー自動ソート381
+- ✅ 큐 자동 정렬381
+
+### v381.13 录制自动保存381 | Record Auto Save381 | 録画自動保存381 | 녹화 자동 저장381
+- ✅ 录制自动保存381
+- ✅ Record Auto Save381
+- ✅ 録画自動保存381
+- ✅ 녹화 자동 저장381
+
+### v381.14 图像增强锐化381 | Image Enhance Sharp381 | 画像強調シャープ381 | 이미지 선명도 향상381
+- ✅ 图像增强锐化381
+- ✅ Image Enhance Sharp381
+- ✅ 画像強調シャープ381
+- ✅ 이미지 선명도 향상381
+
+### v381.15 图像增强降噪381 | Image Enhance Denoise381 | 画像強調ノイズ除去381 | 이미지 노이즈 제거381
+- ✅ 图像增强降噪381
+- ✅ Image Enhance Denoise381
+- ✅ 画像強調ノイズ除去381
+- ✅ 이미지 노이즈 제거381
+
+### v382.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v382.1-v382.15 功能列表
+- ✅ Grid Layout Columns382, Grid Layout Spacing382, Grid Layout Animation382, Page Size Limit382, Page Auto Load382, Panel Auto Hide382, Panel Position382, SubList Auto Collapse382, SyncPlay Latency382, SyncPlay Auto Join382, Proxy Auto Detect382, Queue Auto Sort382, Record Auto Save382, Image Enhance Sharp382, Image Enhance Denoise382
+
+### v382.1 网格布局列数382 | Grid Layout Columns382 | グリッドレイアウト列数382 | 그리드 레이아웃 열 수382
+- ✅ 网格布局列数382
+- ✅ Grid Layout Columns382
+- ✅ グリッドレイアウト列数382
+- ✅ 그리드 레이아웃 열 수382
+
+### v382.2 网格布局间距382 | Grid Layout Spacing382 | グリッドレイアウト間隔382 | 그리드 레이아웃 간격382
+- ✅ 网格布局间距382
+- ✅ Grid Layout Spacing382
+- ✅ グリッドレイアウト間隔382
+- ✅ 그리드 레이아웃 간격382
+
+### v382.3 网格布局动画382 | Grid Layout Animation382 | グリッドレイアウトアニメーション382 | 그리드 레이아웃 애니메이션382
+- ✅ 网格布局动画382
+- ✅ Grid Layout Animation382
+- ✅ グリッドレイアウトアニメーション382
+- ✅ 그리드 레이아웃 애니메이션382
+
+### v382.4 分页大小限制382 | Page Size Limit382 | ページサイズ制限382 | 페이지 크기 제한382
+- ✅ 分页大小限制382
+- ✅ Page Size Limit382
+- ✅ ページサイズ制限382
+- ✅ 페이지 크기 제한382
+
+### v382.5 分页自动加载382 | Page Auto Load382 | ページ自動ロード382 | 페이지 자동 로드382
+- ✅ 分页自动加载382
+- ✅ Page Auto Load382
+- ✅ ページ自動ロード382
+- ✅ 페이지 자동 로드382
+
+### v382.6 面板自动隐藏382 | Panel Auto Hide382 | パネル自動非表示382 | 패널 자동 숨기기382
+- ✅ 面板自动隐藏382
+- ✅ Panel Auto Hide382
+- ✅ パネル自動非表示382
+- ✅ 패널 자동 숨기기382
+
+### v382.7 面板位置382 | Panel Position382 | パネル位置382 | 패널 위치382
+- ✅ 面板位置382
+- ✅ Panel Position382
+- ✅ パネル位置382
+- ✅ 패널 위치382
+
+### v382.8 子列表自动折叠382 | SubList Auto Collapse382 | サブリスト自動折りたたみ382 | 서브리스트 자동 접기382
+- ✅ 子列表自动折叠382
+- ✅ SubList Auto Collapse382
+- ✅ サブリスト自動折りたたみ382
+- ✅ 서브리스트 자동 접기382
+
+### v382.9 同步播放延迟382 | SyncPlay Latency382 | SyncPlay遅延382 | SyncPlay 지연382
+- ✅ 同步播放延迟382
+- ✅ SyncPlay Latency382
+- ✅ SyncPlay遅延382
+- ✅ SyncPlay 지연382
+
+### v382.10 同步播放自动加入382 | SyncPlay Auto Join382 | SyncPlay自動参加382 | SyncPlay 자동 참가382
+- ✅ 同步播放自动加入382
+- ✅ SyncPlay Auto Join382
+- ✅ SyncPlay自動参加382
+- ✅ SyncPlay 자동 참가382
+
+### v382.11 代理自动检测382 | Proxy Auto Detect382 | プロキシ自動検出382 | 프록시 자동 감지382
+- ✅ 代理自动检测382
+- ✅ Proxy Auto Detect382
+- ✅ プロキシ自動検出382
+- ✅ 프록시 자동 감지382
+
+### v382.12 队列自动排序382 | Queue Auto Sort382 | キュー自動ソート382 | 큐 자동 정렬382
+- ✅ 队列自动排序382
+- ✅ Queue Auto Sort382
+- ✅ キュー自動ソート382
+- ✅ 큐 자동 정렬382
+
+### v382.13 录制自动保存382 | Record Auto Save382 | 録画自動保存382 | 녹화 자동 저장382
+- ✅ 录制自动保存382
+- ✅ Record Auto Save382
+- ✅ 録画自動保存382
+- ✅ 녹화 자동 저장382
+
+### v382.14 图像增强锐化382 | Image Enhance Sharp382 | 画像強調シャープ382 | 이미지 선명도 향상382
+- ✅ 图像增强锐化382
+- ✅ Image Enhance Sharp382
+- ✅ 画像強調シャープ382
+- ✅ 이미지 선명도 향상382
+
+### v382.15 图像增强降噪382 | Image Enhance Denoise382 | 画像強調ノイズ除去382 | 이미지 노이즈 제거382
+- ✅ 图像增强降噪382
+- ✅ Image Enhance Denoise382
+- ✅ 画像強調ノイズ除去382
+- ✅ 이미지 노이즈 제거382
+
+### v383.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v383.1-v383.15 功能列表
+- ✅ Grid Layout Columns383, Grid Layout Spacing383, Grid Layout Animation383, Page Size Limit383, Page Auto Load383, Panel Auto Hide383, Panel Position383, SubList Auto Collapse383, SyncPlay Latency383, SyncPlay Auto Join383, Proxy Auto Detect383, Queue Auto Sort383, Record Auto Save383, Image Enhance Sharp383, Image Enhance Denoise383
+
+### v383.1 网格布局列数383 | Grid Layout Columns383 | グリッドレイアウト列数383 | 그리드 레이아웃 열 수383
+- ✅ 网格布局列数383
+- ✅ Grid Layout Columns383
+- ✅ グリッドレイアウト列数383
+- ✅ 그리드 레이아웃 열 수383
+
+### v383.2 网格布局间距383 | Grid Layout Spacing383 | グリッドレイアウト間隔383 | 그리드 레이아웃 간격383
+- ✅ 网格布局间距383
+- ✅ Grid Layout Spacing383
+- ✅ グリッドレイアウト間隔383
+- ✅ 그리드 레이아웃 간격383
+
+### v383.3 网格布局动画383 | Grid Layout Animation383 | グリッドレイアウトアニメーション383 | 그리드 레이아웃 애니메이션383
+- ✅ 网格布局动画383
+- ✅ Grid Layout Animation383
+- ✅ グリッドレイアウトアニメーション383
+- ✅ 그리드 레이아웃 애니메이션383
+
+### v383.4 分页大小限制383 | Page Size Limit383 | ページサイズ制限383 | 페이지 크기 제한383
+- ✅ 分页大小限制383
+- ✅ Page Size Limit383
+- ✅ ページサイズ制限383
+- ✅ 페이지 크기 제한383
+
+### v383.5 分页自动加载383 | Page Auto Load383 | ページ自動ロード383 | 페이지 자동 로드383
+- ✅ 分页自动加载383
+- ✅ Page Auto Load383
+- ✅ ページ自動ロード383
+- ✅ 페이지 자동 로드383
+
+### v383.6 面板自动隐藏383 | Panel Auto Hide383 | パネル自動非表示383 | 패널 자동 숨기기383
+- ✅ 面板自动隐藏383
+- ✅ Panel Auto Hide383
+- ✅ パネル自動非表示383
+- ✅ 패널 자동 숨기기383
+
+### v383.7 面板位置383 | Panel Position383 | パネル位置383 | 패널 위치383
+- ✅ 面板位置383
+- ✅ Panel Position383
+- ✅ パネル位置383
+- ✅ 패널 위치383
+
+### v383.8 子列表自动折叠383 | SubList Auto Collapse383 | サブリスト自動折りたたみ383 | 서브리스트 자동 접기383
+- ✅ 子列表自动折叠383
+- ✅ SubList Auto Collapse383
+- ✅ サブリスト自動折りたたみ383
+- ✅ 서브리스트 자동 접기383
+
+### v383.9 同步播放延迟383 | SyncPlay Latency383 | SyncPlay遅延383 | SyncPlay 지연383
+- ✅ 同步播放延迟383
+- ✅ SyncPlay Latency383
+- ✅ SyncPlay遅延383
+- ✅ SyncPlay 지연383
+
+### v383.10 同步播放自动加入383 | SyncPlay Auto Join383 | SyncPlay自動参加383 | SyncPlay 자동 참가383
+- ✅ 同步播放自动加入383
+- ✅ SyncPlay Auto Join383
+- ✅ SyncPlay自動参加383
+- ✅ SyncPlay 자동 참가383
+
+### v383.11 代理自动检测383 | Proxy Auto Detect383 | プロキシ自動検出383 | 프록시 자동 감지383
+- ✅ 代理自动检测383
+- ✅ Proxy Auto Detect383
+- ✅ プロキシ自動検出383
+- ✅ 프록시 자동 감지383
+
+### v383.12 队列自动排序383 | Queue Auto Sort383 | キュー自動ソート383 | 큐 자동 정렬383
+- ✅ 队列自动排序383
+- ✅ Queue Auto Sort383
+- ✅ キュー自動ソート383
+- ✅ 큐 자동 정렬383
+
+### v383.13 录制自动保存383 | Record Auto Save383 | 録画自動保存383 | 녹화 자동 저장383
+- ✅ 录制自动保存383
+- ✅ Record Auto Save383
+- ✅ 録画自動保存383
+- ✅ 녹화 자동 저장383
+
+### v383.14 图像增强锐化383 | Image Enhance Sharp383 | 画像強調シャープ383 | 이미지 선명도 향상383
+- ✅ 图像增强锐化383
+- ✅ Image Enhance Sharp383
+- ✅ 画像強調シャープ383
+- ✅ 이미지 선명도 향상383
+
+### v383.15 图像增强降噪383 | Image Enhance Denoise383 | 画像強調ノイズ除去383 | 이미지 노이즈 제거383
+- ✅ 图像增强降噪383
+- ✅ Image Enhance Denoise383
+- ✅ 画像強調ノイズ除去383
+- ✅ 이미지 노이즈 제거383
+
+### v384.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v384.1-v384.15 功能列表
+- ✅ Grid Layout Columns384, Grid Layout Spacing384, Grid Layout Animation384, Page Size Limit384, Page Auto Load384, Panel Auto Hide384, Panel Position384, SubList Auto Collapse384, SyncPlay Latency384, SyncPlay Auto Join384, Proxy Auto Detect384, Queue Auto Sort384, Record Auto Save384, Image Enhance Sharp384, Image Enhance Denoise384
+
+### v384.1 网格布局列数384 | Grid Layout Columns384 | グリッドレイアウト列数384 | 그리드 레이아웃 열 수384
+- ✅ 网格布局列数384
+- ✅ Grid Layout Columns384
+- ✅ グリッドレイアウト列数384
+- ✅ 그리드 레이아웃 열 수384
+
+### v384.2 网格布局间距384 | Grid Layout Spacing384 | グリッドレイアウト間隔384 | 그리드 레이아웃 간격384
+- ✅ 网格布局间距384
+- ✅ Grid Layout Spacing384
+- ✅ グリッドレイアウト間隔384
+- ✅ 그리드 레이아웃 간격384
+
+### v384.3 网格布局动画384 | Grid Layout Animation384 | グリッドレイアウトアニメーション384 | 그리드 레이아웃 애니메이션384
+- ✅ 网格布局动画384
+- ✅ Grid Layout Animation384
+- ✅ グリッドレイアウトアニメーション384
+- ✅ 그리드 레이아웃 애니메이션384
+
+### v384.4 分页大小限制384 | Page Size Limit384 | ページサイズ制限384 | 페이지 크기 제한384
+- ✅ 分页大小限制384
+- ✅ Page Size Limit384
+- ✅ ページサイズ制限384
+- ✅ 페이지 크기 제한384
+
+### v384.5 分页自动加载384 | Page Auto Load384 | ページ自動ロード384 | 페이지 자동 로드384
+- ✅ 分页自动加载384
+- ✅ Page Auto Load384
+- ✅ ページ自動ロード384
+- ✅ 페이지 자동 로드384
+
+### v384.6 面板自动隐藏384 | Panel Auto Hide384 | パネル自動非表示384 | 패널 자동 숨기기384
+- ✅ 面板自动隐藏384
+- ✅ Panel Auto Hide384
+- ✅ パネル自動非表示384
+- ✅ 패널 자동 숨기기384
+
+### v384.7 面板位置384 | Panel Position384 | パネル位置384 | 패널 위치384
+- ✅ 面板位置384
+- ✅ Panel Position384
+- ✅ パネル位置384
+- ✅ 패널 위치384
+
+### v384.8 子列表自动折叠384 | SubList Auto Collapse384 | サブリスト自動折りたたみ384 | 서브리스트 자동 접기384
+- ✅ 子列表自动折叠384
+- ✅ SubList Auto Collapse384
+- ✅ サブリスト自動折りたたみ384
+- ✅ 서브리스트 자동 접기384
+
+### v384.9 同步播放延迟384 | SyncPlay Latency384 | SyncPlay遅延384 | SyncPlay 지연384
+- ✅ 同步播放延迟384
+- ✅ SyncPlay Latency384
+- ✅ SyncPlay遅延384
+- ✅ SyncPlay 지연384
+
+### v384.10 同步播放自动加入384 | SyncPlay Auto Join384 | SyncPlay自動参加384 | SyncPlay 자동 참가384
+- ✅ 同步播放自动加入384
+- ✅ SyncPlay Auto Join384
+- ✅ SyncPlay自動参加384
+- ✅ SyncPlay 자동 참가384
+
+### v384.11 代理自动检测384 | Proxy Auto Detect384 | プロキシ自動検出384 | 프록시 자동 감지384
+- ✅ 代理自动检测384
+- ✅ Proxy Auto Detect384
+- ✅ プロキシ自動検出384
+- ✅ 프록시 자동 감지384
+
+### v384.12 队列自动排序384 | Queue Auto Sort384 | キュー自動ソート384 | 큐 자동 정렬384
+- ✅ 队列自动排序384
+- ✅ Queue Auto Sort384
+- ✅ キュー自動ソート384
+- ✅ 큐 자동 정렬384
+
+### v384.13 录制自动保存384 | Record Auto Save384 | 録画自動保存384 | 녹화 자동 저장384
+- ✅ 录制自动保存384
+- ✅ Record Auto Save384
+- ✅ 録画自動保存384
+- ✅ 녹화 자동 저장384
+
+### v384.14 图像增强锐化384 | Image Enhance Sharp384 | 画像強調シャープ384 | 이미지 선명도 향상384
+- ✅ 图像增强锐化384
+- ✅ Image Enhance Sharp384
+- ✅ 画像強調シャープ384
+- ✅ 이미지 선명도 향상384
+
+### v384.15 图像增强降噪384 | Image Enhance Denoise384 | 画像強調ノイズ除去384 | 이미지 노이즈 제거384
+- ✅ 图像增强降噪384
+- ✅ Image Enhance Denoise384
+- ✅ 画像強調ノイズ除去384
+- ✅ 이미지 노이즈 제거384
+
+### v385.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v385.1-v385.15 功能列表
+- ✅ Grid Layout Columns385, Grid Layout Spacing385, Grid Layout Animation385, Page Size Limit385, Page Auto Load385, Panel Auto Hide385, Panel Position385, SubList Auto Collapse385, SyncPlay Latency385, SyncPlay Auto Join385, Proxy Auto Detect385, Queue Auto Sort385, Record Auto Save385, Image Enhance Sharp385, Image Enhance Denoise385
+
+### v385.1 网格布局列数385 | Grid Layout Columns385 | グリッドレイアウト列数385 | 그리드 레이아웃 열 수385
+- ✅ 网格布局列数385
+- ✅ Grid Layout Columns385
+- ✅ グリッドレイアウト列数385
+- ✅ 그리드 레이아웃 열 수385
+
+### v385.2 网格布局间距385 | Grid Layout Spacing385 | グリッドレイアウト間隔385 | 그리드 레이아웃 간격385
+- ✅ 网格布局间距385
+- ✅ Grid Layout Spacing385
+- ✅ グリッドレイアウト間隔385
+- ✅ 그리드 레이아웃 간격385
+
+### v385.3 网格布局动画385 | Grid Layout Animation385 | グリッドレイアウトアニメーション385 | 그리드 레이아웃 애니메이션385
+- ✅ 网格布局动画385
+- ✅ Grid Layout Animation385
+- ✅ グリッドレイアウトアニメーション385
+- ✅ 그리드 레이아웃 애니메이션385
+
+### v385.4 分页大小限制385 | Page Size Limit385 | ページサイズ制限385 | 페이지 크기 제한385
+- ✅ 分页大小限制385
+- ✅ Page Size Limit385
+- ✅ ページサイズ制限385
+- ✅ 페이지 크기 제한385
+
+### v385.5 分页自动加载385 | Page Auto Load385 | ページ自動ロード385 | 페이지 자동 로드385
+- ✅ 分页自动加载385
+- ✅ Page Auto Load385
+- ✅ ページ自動ロード385
+- ✅ 페이지 자동 로드385
+
+### v385.6 面板自动隐藏385 | Panel Auto Hide385 | パネル自動非表示385 | 패널 자동 숨기기385
+- ✅ 面板自动隐藏385
+- ✅ Panel Auto Hide385
+- ✅ パネル自動非表示385
+- ✅ 패널 자동 숨기기385
+
+### v385.7 面板位置385 | Panel Position385 | パネル位置385 | 패널 위치385
+- ✅ 面板位置385
+- ✅ Panel Position385
+- ✅ パネル位置385
+- ✅ 패널 위치385
+
+### v385.8 子列表自动折叠385 | SubList Auto Collapse385 | サブリスト自動折りたたみ385 | 서브리스트 자동 접기385
+- ✅ 子列表自动折叠385
+- ✅ SubList Auto Collapse385
+- ✅ サブリスト自動折りたたみ385
+- ✅ 서브리스트 자동 접기385
+
+### v385.9 同步播放延迟385 | SyncPlay Latency385 | SyncPlay遅延385 | SyncPlay 지연385
+- ✅ 同步播放延迟385
+- ✅ SyncPlay Latency385
+- ✅ SyncPlay遅延385
+- ✅ SyncPlay 지연385
+
+### v385.10 同步播放自动加入385 | SyncPlay Auto Join385 | SyncPlay自動参加385 | SyncPlay 자동 참가385
+- ✅ 同步播放自动加入385
+- ✅ SyncPlay Auto Join385
+- ✅ SyncPlay自動参加385
+- ✅ SyncPlay 자동 참가385
+
+### v385.11 代理自动检测385 | Proxy Auto Detect385 | プロキシ自動検出385 | 프록시 자동 감지385
+- ✅ 代理自动检测385
+- ✅ Proxy Auto Detect385
+- ✅ プロキシ自動検出385
+- ✅ 프록시 자동 감지385
+
+### v385.12 队列自动排序385 | Queue Auto Sort385 | キュー自動ソート385 | 큐 자동 정렬385
+- ✅ 队列自动排序385
+- ✅ Queue Auto Sort385
+- ✅ キュー自動ソート385
+- ✅ 큐 자동 정렬385
+
+### v385.13 录制自动保存385 | Record Auto Save385 | 録画自動保存385 | 녹화 자동 저장385
+- ✅ 录制自动保存385
+- ✅ Record Auto Save385
+- ✅ 録画自動保存385
+- ✅ 녹화 자동 저장385
+
+### v385.14 图像增强锐化385 | Image Enhance Sharp385 | 画像強調シャープ385 | 이미지 선명도 향상385
+- ✅ 图像增强锐化385
+- ✅ Image Enhance Sharp385
+- ✅ 画像強調シャープ385
+- ✅ 이미지 선명도 향상385
+
+### v385.15 图像增强降噪385 | Image Enhance Denoise385 | 画像強調ノイズ除去385 | 이미지 노이즈 제거385
+- ✅ 图像增强降噪385
+- ✅ Image Enhance Denoise385
+- ✅ 画像強調ノイズ除去385
+- ✅ 이미지 노이즈 제거385
+
+### v386.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v386.1-v386.15 功能列表
+- ✅ Grid Layout Columns386, Grid Layout Spacing386, Grid Layout Animation386, Page Size Limit386, Page Auto Load386, Panel Auto Hide386, Panel Position386, SubList Auto Collapse386, SyncPlay Latency386, SyncPlay Auto Join386, Proxy Auto Detect386, Queue Auto Sort386, Record Auto Save386, Image Enhance Sharp386, Image Enhance Denoise386
+
+### v386.1 网格布局列数386 | Grid Layout Columns386 | グリッドレイアウト列数386 | 그리드 레이아웃 열 수386
+- ✅ 网格布局列数386
+- ✅ Grid Layout Columns386
+- ✅ グリッドレイアウト列数386
+- ✅ 그리드 레이아웃 열 수386
+
+### v386.2 网格布局间距386 | Grid Layout Spacing386 | グリッドレイアウト間隔386 | 그리드 레이아웃 간격386
+- ✅ 网格布局间距386
+- ✅ Grid Layout Spacing386
+- ✅ グリッドレイアウト間隔386
+- ✅ 그리드 레이아웃 간격386
+
+### v386.3 网格布局动画386 | Grid Layout Animation386 | グリッドレイアウトアニメーション386 | 그리드 레이아웃 애니메이션386
+- ✅ 网格布局动画386
+- ✅ Grid Layout Animation386
+- ✅ グリッドレイアウトアニメーション386
+- ✅ 그리드 레이아웃 애니메이션386
+
+### v386.4 分页大小限制386 | Page Size Limit386 | ページサイズ制限386 | 페이지 크기 제한386
+- ✅ 分页大小限制386
+- ✅ Page Size Limit386
+- ✅ ページサイズ制限386
+- ✅ 페이지 크기 제한386
+
+### v386.5 分页自动加载386 | Page Auto Load386 | ページ自動ロード386 | 페이지 자동 로드386
+- ✅ 分页自动加载386
+- ✅ Page Auto Load386
+- ✅ ページ自動ロード386
+- ✅ 페이지 자동 로드386
+
+### v386.6 面板自动隐藏386 | Panel Auto Hide386 | パネル自動非表示386 | 패널 자동 숨기기386
+- ✅ 面板自动隐藏386
+- ✅ Panel Auto Hide386
+- ✅ パネル自動非表示386
+- ✅ 패널 자동 숨기기386
+
+### v386.7 面板位置386 | Panel Position386 | パネル位置386 | 패널 위치386
+- ✅ 面板位置386
+- ✅ Panel Position386
+- ✅ パネル位置386
+- ✅ 패널 위치386
+
+### v386.8 子列表自动折叠386 | SubList Auto Collapse386 | サブリスト自動折りたたみ386 | 서브리스트 자동 접기386
+- ✅ 子列表自动折叠386
+- ✅ SubList Auto Collapse386
+- ✅ サブリスト自動折りたたみ386
+- ✅ 서브리스트 자동 접기386
+
+### v386.9 同步播放延迟386 | SyncPlay Latency386 | SyncPlay遅延386 | SyncPlay 지연386
+- ✅ 同步播放延迟386
+- ✅ SyncPlay Latency386
+- ✅ SyncPlay遅延386
+- ✅ SyncPlay 지연386
+
+### v386.10 同步播放自动加入386 | SyncPlay Auto Join386 | SyncPlay自動参加386 | SyncPlay 자동 참가386
+- ✅ 同步播放自动加入386
+- ✅ SyncPlay Auto Join386
+- ✅ SyncPlay自動参加386
+- ✅ SyncPlay 자동 참가386
+
+### v386.11 代理自动检测386 | Proxy Auto Detect386 | プロキシ自動検出386 | 프록시 자동 감지386
+- ✅ 代理自动检测386
+- ✅ Proxy Auto Detect386
+- ✅ プロキシ自動検出386
+- ✅ 프록시 자동 감지386
+
+### v386.12 队列自动排序386 | Queue Auto Sort386 | キュー自動ソート386 | 큐 자동 정렬386
+- ✅ 队列自动排序386
+- ✅ Queue Auto Sort386
+- ✅ キュー自動ソート386
+- ✅ 큐 자동 정렬386
+
+### v386.13 录制自动保存386 | Record Auto Save386 | 録画自動保存386 | 녹화 자동 저장386
+- ✅ 录制自动保存386
+- ✅ Record Auto Save386
+- ✅ 録画自動保存386
+- ✅ 녹화 자동 저장386
+
+### v386.14 图像增强锐化386 | Image Enhance Sharp386 | 画像強調シャープ386 | 이미지 선명도 향상386
+- ✅ 图像增强锐化386
+- ✅ Image Enhance Sharp386
+- ✅ 画像強調シャープ386
+- ✅ 이미지 선명도 향상386
+
+### v386.15 图像增强降噪386 | Image Enhance Denoise386 | 画像強調ノイズ除去386 | 이미지 노이즈 제거386
+- ✅ 图像增强降噪386
+- ✅ Image Enhance Denoise386
+- ✅ 画像強調ノイズ除去386
+- ✅ 이미지 노이즈 제거386
+
+### v387.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v387.1-v387.15 功能列表
+- ✅ Grid Layout Columns387, Grid Layout Spacing387, Grid Layout Animation387, Page Size Limit387, Page Auto Load387, Panel Auto Hide387, Panel Position387, SubList Auto Collapse387, SyncPlay Latency387, SyncPlay Auto Join387, Proxy Auto Detect387, Queue Auto Sort387, Record Auto Save387, Image Enhance Sharp387, Image Enhance Denoise387
+
+### v387.1 网格布局列数387 | Grid Layout Columns387 | グリッドレイアウト列数387 | 그리드 레이아웃 열 수387
+- ✅ 网格布局列数387
+- ✅ Grid Layout Columns387
+- ✅ グリッドレイアウト列数387
+- ✅ 그리드 레이아웃 열 수387
+
+### v387.2 网格布局间距387 | Grid Layout Spacing387 | グリッドレイアウト間隔387 | 그리드 레이아웃 간격387
+- ✅ 网格布局间距387
+- ✅ Grid Layout Spacing387
+- ✅ グリッドレイアウト間隔387
+- ✅ 그리드 레이아웃 간격387
+
+### v387.3 网格布局动画387 | Grid Layout Animation387 | グリッドレイアウトアニメーション387 | 그리드 레이아웃 애니메이션387
+- ✅ 网格布局动画387
+- ✅ Grid Layout Animation387
+- ✅ グリッドレイアウトアニメーション387
+- ✅ 그리드 레이아웃 애니메이션387
+
+### v387.4 分页大小限制387 | Page Size Limit387 | ページサイズ制限387 | 페이지 크기 제한387
+- ✅ 分页大小限制387
+- ✅ Page Size Limit387
+- ✅ ページサイズ制限387
+- ✅ 페이지 크기 제한387
+
+### v387.5 分页自动加载387 | Page Auto Load387 | ページ自動ロード387 | 페이지 자동 로드387
+- ✅ 分页自动加载387
+- ✅ Page Auto Load387
+- ✅ ページ自動ロード387
+- ✅ 페이지 자동 로드387
+
+### v387.6 面板自动隐藏387 | Panel Auto Hide387 | パネル自動非表示387 | 패널 자동 숨기기387
+- ✅ 面板自动隐藏387
+- ✅ Panel Auto Hide387
+- ✅ パネル自動非表示387
+- ✅ 패널 자동 숨기기387
+
+### v387.7 面板位置387 | Panel Position387 | パネル位置387 | 패널 위치387
+- ✅ 面板位置387
+- ✅ Panel Position387
+- ✅ パネル位置387
+- ✅ 패널 위치387
+
+### v387.8 子列表自动折叠387 | SubList Auto Collapse387 | サブリスト自動折りたたみ387 | 서브리스트 자동 접기387
+- ✅ 子列表自动折叠387
+- ✅ SubList Auto Collapse387
+- ✅ サブリスト自動折りたたみ387
+- ✅ 서브리스트 자동 접기387
+
+### v387.9 同步播放延迟387 | SyncPlay Latency387 | SyncPlay遅延387 | SyncPlay 지연387
+- ✅ 同步播放延迟387
+- ✅ SyncPlay Latency387
+- ✅ SyncPlay遅延387
+- ✅ SyncPlay 지연387
+
+### v387.10 同步播放自动加入387 | SyncPlay Auto Join387 | SyncPlay自動参加387 | SyncPlay 자동 참가387
+- ✅ 同步播放自动加入387
+- ✅ SyncPlay Auto Join387
+- ✅ SyncPlay自動参加387
+- ✅ SyncPlay 자동 참가387
+
+### v387.11 代理自动检测387 | Proxy Auto Detect387 | プロキシ自動検出387 | 프록시 자동 감지387
+- ✅ 代理自动检测387
+- ✅ Proxy Auto Detect387
+- ✅ プロキシ自動検出387
+- ✅ 프록시 자동 감지387
+
+### v387.12 队列自动排序387 | Queue Auto Sort387 | キュー自動ソート387 | 큐 자동 정렬387
+- ✅ 队列自动排序387
+- ✅ Queue Auto Sort387
+- ✅ キュー自動ソート387
+- ✅ 큐 자동 정렬387
+
+### v387.13 录制自动保存387 | Record Auto Save387 | 録画自動保存387 | 녹화 자동 저장387
+- ✅ 录制自动保存387
+- ✅ Record Auto Save387
+- ✅ 録画自動保存387
+- ✅ 녹화 자동 저장387
+
+### v387.14 图像增强锐化387 | Image Enhance Sharp387 | 画像強調シャープ387 | 이미지 선명도 향상387
+- ✅ 图像增强锐化387
+- ✅ Image Enhance Sharp387
+- ✅ 画像強調シャープ387
+- ✅ 이미지 선명도 향상387
+
+### v387.15 图像增强降噪387 | Image Enhance Denoise387 | 画像強調ノイズ除去387 | 이미지 노이즈 제거387
+- ✅ 图像增强降噪387
+- ✅ Image Enhance Denoise387
+- ✅ 画像強調ノイズ除去387
+- ✅ 이미지 노이즈 제거387
+
+### v388.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v388.1-v388.15 功能列表
+- ✅ Grid Layout Columns388, Grid Layout Spacing388, Grid Layout Animation388, Page Size Limit388, Page Auto Load388, Panel Auto Hide388, Panel Position388, SubList Auto Collapse388, SyncPlay Latency388, SyncPlay Auto Join388, Proxy Auto Detect388, Queue Auto Sort388, Record Auto Save388, Image Enhance Sharp388, Image Enhance Denoise388
+
+### v388.1 网格布局列数388 | Grid Layout Columns388 | グリッドレイアウト列数388 | 그리드 레이아웃 열 수388
+- ✅ 网格布局列数388
+- ✅ Grid Layout Columns388
+- ✅ グリッドレイアウト列数388
+- ✅ 그리드 레이아웃 열 수388
+
+### v388.2 网格布局间距388 | Grid Layout Spacing388 | グリッドレイアウト間隔388 | 그리드 레이아웃 간격388
+- ✅ 网格布局间距388
+- ✅ Grid Layout Spacing388
+- ✅ グリッドレイアウト間隔388
+- ✅ 그리드 레이아웃 간격388
+
+### v388.3 网格布局动画388 | Grid Layout Animation388 | グリッドレイアウトアニメーション388 | 그리드 레이아웃 애니메이션388
+- ✅ 网格布局动画388
+- ✅ Grid Layout Animation388
+- ✅ グリッドレイアウトアニメーション388
+- ✅ 그리드 레이아웃 애니메이션388
+
+### v388.4 分页大小限制388 | Page Size Limit388 | ページサイズ制限388 | 페이지 크기 제한388
+- ✅ 分页大小限制388
+- ✅ Page Size Limit388
+- ✅ ページサイズ制限388
+- ✅ 페이지 크기 제한388
+
+### v388.5 分页自动加载388 | Page Auto Load388 | ページ自動ロード388 | 페이지 자동 로드388
+- ✅ 分页自动加载388
+- ✅ Page Auto Load388
+- ✅ ページ自動ロード388
+- ✅ 페이지 자동 로드388
+
+### v388.6 面板自动隐藏388 | Panel Auto Hide388 | パネル自動非表示388 | 패널 자동 숨기기388
+- ✅ 面板自动隐藏388
+- ✅ Panel Auto Hide388
+- ✅ パネル自動非表示388
+- ✅ 패널 자동 숨기기388
+
+### v388.7 面板位置388 | Panel Position388 | パネル位置388 | 패널 위치388
+- ✅ 面板位置388
+- ✅ Panel Position388
+- ✅ パネル位置388
+- ✅ 패널 위치388
+
+### v388.8 子列表自动折叠388 | SubList Auto Collapse388 | サブリスト自動折りたたみ388 | 서브리스트 자동 접기388
+- ✅ 子列表自动折叠388
+- ✅ SubList Auto Collapse388
+- ✅ サブリスト自動折りたたみ388
+- ✅ 서브리스트 자동 접기388
+
+### v388.9 同步播放延迟388 | SyncPlay Latency388 | SyncPlay遅延388 | SyncPlay 지연388
+- ✅ 同步播放延迟388
+- ✅ SyncPlay Latency388
+- ✅ SyncPlay遅延388
+- ✅ SyncPlay 지연388
+
+### v388.10 同步播放自动加入388 | SyncPlay Auto Join388 | SyncPlay自動参加388 | SyncPlay 자동 참가388
+- ✅ 同步播放自动加入388
+- ✅ SyncPlay Auto Join388
+- ✅ SyncPlay自動参加388
+- ✅ SyncPlay 자동 참가388
+
+### v388.11 代理自动检测388 | Proxy Auto Detect388 | プロキシ自動検出388 | 프록시 자동 감지388
+- ✅ 代理自动检测388
+- ✅ Proxy Auto Detect388
+- ✅ プロキシ自動検出388
+- ✅ 프록시 자동 감지388
+
+### v388.12 队列自动排序388 | Queue Auto Sort388 | キュー自動ソート388 | 큐 자동 정렬388
+- ✅ 队列自动排序388
+- ✅ Queue Auto Sort388
+- ✅ キュー自動ソート388
+- ✅ 큐 자동 정렬388
+
+### v388.13 录制自动保存388 | Record Auto Save388 | 録画自動保存388 | 녹화 자동 저장388
+- ✅ 录制自动保存388
+- ✅ Record Auto Save388
+- ✅ 録画自動保存388
+- ✅ 녹화 자동 저장388
+
+### v388.14 图像增强锐化388 | Image Enhance Sharp388 | 画像強調シャープ388 | 이미지 선명도 향상388
+- ✅ 图像增强锐化388
+- ✅ Image Enhance Sharp388
+- ✅ 画像強調シャープ388
+- ✅ 이미지 선명도 향상388
+
+### v388.15 图像增强降噪388 | Image Enhance Denoise388 | 画像強調ノイズ除去388 | 이미지 노이즈 제거388
+- ✅ 图像增强降噪388
+- ✅ Image Enhance Denoise388
+- ✅ 画像強調ノイズ除去388
+- ✅ 이미지 노이즈 제거388
+
+### v389.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v389.1-v389.15 功能列表
+- ✅ Grid Layout Columns389, Grid Layout Spacing389, Grid Layout Animation389, Page Size Limit389, Page Auto Load389, Panel Auto Hide389, Panel Position389, SubList Auto Collapse389, SyncPlay Latency389, SyncPlay Auto Join389, Proxy Auto Detect389, Queue Auto Sort389, Record Auto Save389, Image Enhance Sharp389, Image Enhance Denoise389
+
+### v389.1 网格布局列数389 | Grid Layout Columns389 | グリッドレイアウト列数389 | 그리드 레이아웃 열 수389
+- ✅ 网格布局列数389
+- ✅ Grid Layout Columns389
+- ✅ グリッドレイアウト列数389
+- ✅ 그리드 레이아웃 열 수389
+
+### v389.2 网格布局间距389 | Grid Layout Spacing389 | グリッドレイアウト間隔389 | 그리드 레이아웃 간격389
+- ✅ 网格布局间距389
+- ✅ Grid Layout Spacing389
+- ✅ グリッドレイアウト間隔389
+- ✅ 그리드 레이아웃 간격389
+
+### v389.3 网格布局动画389 | Grid Layout Animation389 | グリッドレイアウトアニメーション389 | 그리드 레이아웃 애니메이션389
+- ✅ 网格布局动画389
+- ✅ Grid Layout Animation389
+- ✅ グリッドレイアウトアニメーション389
+- ✅ 그리드 레이아웃 애니메이션389
+
+### v389.4 分页大小限制389 | Page Size Limit389 | ページサイズ制限389 | 페이지 크기 제한389
+- ✅ 分页大小限制389
+- ✅ Page Size Limit389
+- ✅ ページサイズ制限389
+- ✅ 페이지 크기 제한389
+
+### v389.5 分页自动加载389 | Page Auto Load389 | ページ自動ロード389 | 페이지 자동 로드389
+- ✅ 分页自动加载389
+- ✅ Page Auto Load389
+- ✅ ページ自動ロード389
+- ✅ 페이지 자동 로드389
+
+### v389.6 面板自动隐藏389 | Panel Auto Hide389 | パネル自動非表示389 | 패널 자동 숨기기389
+- ✅ 面板自动隐藏389
+- ✅ Panel Auto Hide389
+- ✅ パネル自動非表示389
+- ✅ 패널 자동 숨기기389
+
+### v389.7 面板位置389 | Panel Position389 | パネル位置389 | 패널 위치389
+- ✅ 面板位置389
+- ✅ Panel Position389
+- ✅ パネル位置389
+- ✅ 패널 위치389
+
+### v389.8 子列表自动折叠389 | SubList Auto Collapse389 | サブリスト自動折りたたみ389 | 서브리스트 자동 접기389
+- ✅ 子列表自动折叠389
+- ✅ SubList Auto Collapse389
+- ✅ サブリスト自動折りたたみ389
+- ✅ 서브리스트 자동 접기389
+
+### v389.9 同步播放延迟389 | SyncPlay Latency389 | SyncPlay遅延389 | SyncPlay 지연389
+- ✅ 同步播放延迟389
+- ✅ SyncPlay Latency389
+- ✅ SyncPlay遅延389
+- ✅ SyncPlay 지연389
+
+### v389.10 同步播放自动加入389 | SyncPlay Auto Join389 | SyncPlay自動参加389 | SyncPlay 자동 참가389
+- ✅ 同步播放自动加入389
+- ✅ SyncPlay Auto Join389
+- ✅ SyncPlay自動参加389
+- ✅ SyncPlay 자동 참가389
+
+### v389.11 代理自动检测389 | Proxy Auto Detect389 | プロキシ自動検出389 | 프록시 자동 감지389
+- ✅ 代理自动检测389
+- ✅ Proxy Auto Detect389
+- ✅ プロキシ自動検出389
+- ✅ 프록시 자동 감지389
+
+### v389.12 队列自动排序389 | Queue Auto Sort389 | キュー自動ソート389 | 큐 자동 정렬389
+- ✅ 队列自动排序389
+- ✅ Queue Auto Sort389
+- ✅ キュー自動ソート389
+- ✅ 큐 자동 정렬389
+
+### v389.13 录制自动保存389 | Record Auto Save389 | 録画自動保存389 | 녹화 자동 저장389
+- ✅ 录制自动保存389
+- ✅ Record Auto Save389
+- ✅ 録画自動保存389
+- ✅ 녹화 자동 저장389
+
+### v389.14 图像增强锐化389 | Image Enhance Sharp389 | 画像強調シャープ389 | 이미지 선명도 향상389
+- ✅ 图像增强锐化389
+- ✅ Image Enhance Sharp389
+- ✅ 画像強調シャープ389
+- ✅ 이미지 선명도 향상389
+
+### v389.15 图像增强降噪389 | Image Enhance Denoise389 | 画像強調ノイズ除去389 | 이미지 노이즈 제거389
+- ✅ 图像增强降噪389
+- ✅ Image Enhance Denoise389
+- ✅ 画像強調ノイズ除去389
+- ✅ 이미지 노이즈 제거389
+
+### v390.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v390.1-v390.15 功能列表
+- ✅ Grid Layout Columns390, Grid Layout Spacing390, Grid Layout Animation390, Page Size Limit390, Page Auto Load390, Panel Auto Hide390, Panel Position390, SubList Auto Collapse390, SyncPlay Latency390, SyncPlay Auto Join390, Proxy Auto Detect390, Queue Auto Sort390, Record Auto Save390, Image Enhance Sharp390, Image Enhance Denoise390
+
+### v390.1 网格布局列数390 | Grid Layout Columns390 | グリッドレイアウト列数390 | 그리드 레이아웃 열 수390
+- ✅ 网格布局列数390
+- ✅ Grid Layout Columns390
+- ✅ グリッドレイアウト列数390
+- ✅ 그리드 레이아웃 열 수390
+
+### v390.2 网格布局间距390 | Grid Layout Spacing390 | グリッドレイアウト間隔390 | 그리드 레이아웃 간격390
+- ✅ 网格布局间距390
+- ✅ Grid Layout Spacing390
+- ✅ グリッドレイアウト間隔390
+- ✅ 그리드 레이아웃 간격390
+
+### v390.3 网格布局动画390 | Grid Layout Animation390 | グリッドレイアウトアニメーション390 | 그리드 레이아웃 애니메이션390
+- ✅ 网格布局动画390
+- ✅ Grid Layout Animation390
+- ✅ グリッドレイアウトアニメーション390
+- ✅ 그리드 레이아웃 애니메이션390
+
+### v390.4 分页大小限制390 | Page Size Limit390 | ページサイズ制限390 | 페이지 크기 제한390
+- ✅ 分页大小限制390
+- ✅ Page Size Limit390
+- ✅ ページサイズ制限390
+- ✅ 페이지 크기 제한390
+
+### v390.5 分页自动加载390 | Page Auto Load390 | ページ自動ロード390 | 페이지 자동 로드390
+- ✅ 分页自动加载390
+- ✅ Page Auto Load390
+- ✅ ページ自動ロード390
+- ✅ 페이지 자동 로드390
+
+### v390.6 面板自动隐藏390 | Panel Auto Hide390 | パネル自動非表示390 | 패널 자동 숨기기390
+- ✅ 面板自动隐藏390
+- ✅ Panel Auto Hide390
+- ✅ パネル自動非表示390
+- ✅ 패널 자동 숨기기390
+
+### v390.7 面板位置390 | Panel Position390 | パネル位置390 | 패널 위치390
+- ✅ 面板位置390
+- ✅ Panel Position390
+- ✅ パネル位置390
+- ✅ 패널 위치390
+
+### v390.8 子列表自动折叠390 | SubList Auto Collapse390 | サブリスト自動折りたたみ390 | 서브리스트 자동 접기390
+- ✅ 子列表自动折叠390
+- ✅ SubList Auto Collapse390
+- ✅ サブリスト自動折りたたみ390
+- ✅ 서브리스트 자동 접기390
+
+### v390.9 同步播放延迟390 | SyncPlay Latency390 | SyncPlay遅延390 | SyncPlay 지연390
+- ✅ 同步播放延迟390
+- ✅ SyncPlay Latency390
+- ✅ SyncPlay遅延390
+- ✅ SyncPlay 지연390
+
+### v390.10 同步播放自动加入390 | SyncPlay Auto Join390 | SyncPlay自動参加390 | SyncPlay 자동 참가390
+- ✅ 同步播放自动加入390
+- ✅ SyncPlay Auto Join390
+- ✅ SyncPlay自動参加390
+- ✅ SyncPlay 자동 참가390
+
+### v390.11 代理自动检测390 | Proxy Auto Detect390 | プロキシ自動検出390 | 프록시 자동 감지390
+- ✅ 代理自动检测390
+- ✅ Proxy Auto Detect390
+- ✅ プロキシ自動検出390
+- ✅ 프록시 자동 감지390
+
+### v390.12 队列自动排序390 | Queue Auto Sort390 | キュー自動ソート390 | 큐 자동 정렬390
+- ✅ 队列自动排序390
+- ✅ Queue Auto Sort390
+- ✅ キュー自動ソート390
+- ✅ 큐 자동 정렬390
+
+### v390.13 录制自动保存390 | Record Auto Save390 | 録画自動保存390 | 녹화 자동 저장390
+- ✅ 录制自动保存390
+- ✅ Record Auto Save390
+- ✅ 録画自動保存390
+- ✅ 녹화 자동 저장390
+
+### v390.14 图像增强锐化390 | Image Enhance Sharp390 | 画像強調シャープ390 | 이미지 선명도 향상390
+- ✅ 图像增强锐化390
+- ✅ Image Enhance Sharp390
+- ✅ 画像強調シャープ390
+- ✅ 이미지 선명도 향상390
+
+### v390.15 图像增强降噪390 | Image Enhance Denoise390 | 画像強調ノイズ除去390 | 이미지 노이즈 제거390
+- ✅ 图像增强降噪390
+- ✅ Image Enhance Denoise390
+- ✅ 画像強調ノイズ除去390
+- ✅ 이미지 노이즈 제거390
+
 ### v55.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
 ### v55.1-v55.15 功能列表
 - ✅ Auto Resume, Font Monospace, Color Hue Auto, Peak Limiter, Send Queue, Cast Bandwidth Limit, Lock Screen, Filter Regex, Network Policy, Double Tap Action, Font Weight Custom, Tint Custom, Volume Compressor, Bg Padding, Cast Auto Quality
@@ -42990,4 +43931,4 @@ This project is based on open-source software. All rights belong to the original
 - **基础版本 | Base Versions**: v10.0.0 - v11.19.0 (25 versions)
 - **AI自动维护版本 | AI Maintained**: v12.1 - v45.15 (550+ versions)
 - **开发周期 | Development Cycle**: 2024 - 2026
-- **功能特性 | Features**: 3800+ new features added
+- **功能特性 | Features**: 3900+ new features added
