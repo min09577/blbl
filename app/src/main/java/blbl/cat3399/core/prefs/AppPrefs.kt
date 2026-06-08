@@ -39848,6 +39848,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V550SINGLEINSTANCEMODE550, false)
         set(value) = prefs.edit().putBoolean(KEY_V550SINGLEINSTANCEMODE550, value).apply()
 
+    var v551skipSilenceAuto551: Boolean
+        get() = prefs.getBoolean(KEY_V551SKIPSILENCEAUTO551, false)
+        set(value) = prefs.edit().putBoolean(KEY_V551SKIPSILENCEAUTO551, value).apply()
+
+    var v551sliceAutoSegment551: Boolean
+        get() = prefs.getBoolean(KEY_V551SLICEAUTOSEGMENT551, false)
+        set(value) = prefs.edit().putBoolean(KEY_V551SLICEAUTOSEGMENT551, value).apply()
+
+    var v551slideAutoTransition551: Boolean
+        get() = prefs.getBoolean(KEY_V551SLIDEAUTOTRANSITION551, false)
+        set(value) = prefs.edit().putBoolean(KEY_V551SLIDEAUTOTRANSITION551, value).apply()
+
+    var v551slotAutoManage551: Boolean
+        get() = prefs.getBoolean(KEY_V551SLOTAUTOMANAGE551, false)
+        set(value) = prefs.edit().putBoolean(KEY_V551SLOTAUTOMANAGE551, value).apply()
+
+    var v551smartAutoQuality551: Int
+        get() = prefs.getInt(KEY_V551SMARTAUTOQUALITY551, 0)
+        set(value) = prefs.edit().putInt(KEY_V551SMARTAUTOQUALITY551, value).apply()
+
+    var v551smoothScrollEnabled551: Boolean
+        get() = prefs.getBoolean(KEY_V551SMOOTHSCROLLENABLED551, false)
+        set(value) = prefs.edit().putBoolean(KEY_V551SMOOTHSCROLLENABLED551, value).apply()
+
+    var v551snapAutoAlign551: Boolean
+        get() = prefs.getBoolean(KEY_V551SNAPAUTOALIGN551, false)
+        set(value) = prefs.edit().putBoolean(KEY_V551SNAPAUTOALIGN551, value).apply()
+
+    var v551sortAutoAlgorithm551: Int
+        get() = prefs.getInt(KEY_V551SORTAUTOALGORITHM551, 0)
+        set(value) = prefs.edit().putInt(KEY_V551SORTAUTOALGORITHM551, value).apply()
+
+    var v551sourceAutoSelect551: Boolean
+        get() = prefs.getBoolean(KEY_V551SOURCEAUTOSELECT551, false)
+        set(value) = prefs.edit().putBoolean(KEY_V551SOURCEAUTOSELECT551, value).apply()
+
+    var v551spanAutoAdjust551: Boolean
+        get() = prefs.getBoolean(KEY_V551SPANAUTOADJUST551, false)
+        set(value) = prefs.edit().putBoolean(KEY_V551SPANAUTOADJUST551, value).apply()
+
+    var v551splitAutoView551: Boolean
+        get() = prefs.getBoolean(KEY_V551SPLITAUTOVIEW551, false)
+        set(value) = prefs.edit().putBoolean(KEY_V551SPLITAUTOVIEW551, value).apply()
+
+    var v551stackAutoLayer551: Boolean
+        get() = prefs.getBoolean(KEY_V551STACKAUTOLAYER551, false)
+        set(value) = prefs.edit().putBoolean(KEY_V551STACKAUTOLAYER551, value).apply()
+
+    var v551stageAutoAdvance551: Boolean
+        get() = prefs.getBoolean(KEY_V551STAGEAUTOADVANCE551, false)
+        set(value) = prefs.edit().putBoolean(KEY_V551STAGEAUTOADVANCE551, value).apply()
+
+    var v551startAutoPlay551: Boolean
+        get() = prefs.getBoolean(KEY_V551STARTAUTOPLAY551, false)
+        set(value) = prefs.edit().putBoolean(KEY_V551STARTAUTOPLAY551, value).apply()
+
+    var v551stateAutoPersist551: Boolean
+        get() = prefs.getBoolean(KEY_V551STATEAUTOPERSIST551, false)
+        set(value) = prefs.edit().putBoolean(KEY_V551STATEAUTOPERSIST551, value).apply()
+
+    var v552skipSilenceAuto552: Boolean
+        get() = prefs.getBoolean(KEY_V552SKIPSILENCEAUTO552, false)
+        set(value) = prefs.edit().putBoolean(KEY_V552SKIPSILENCEAUTO552, value).apply()
+
+    var v552sliceAutoSegment552: Boolean
+        get() = prefs.getBoolean(KEY_V552SLICEAUTOSEGMENT552, false)
+        set(value) = prefs.edit().putBoolean(KEY_V552SLICEAUTOSEGMENT552, value).apply()
+
+    var v552slideAutoTransition552: Boolean
+        get() = prefs.getBoolean(KEY_V552SLIDEAUTOTRANSITION552, false)
+        set(value) = prefs.edit().putBoolean(KEY_V552SLIDEAUTOTRANSITION552, value).apply()
+
+    var v552slotAutoManage552: Boolean
+        get() = prefs.getBoolean(KEY_V552SLOTAUTOMANAGE552, false)
+        set(value) = prefs.edit().putBoolean(KEY_V552SLOTAUTOMANAGE552, value).apply()
+
+    var v552smartAutoQuality552: Int
+        get() = prefs.getInt(KEY_V552SMARTAUTOQUALITY552, 0)
+        set(value) = prefs.edit().putInt(KEY_V552SMARTAUTOQUALITY552, value).apply()
+
+    var v552smoothScrollEnabled552: Boolean
+        get() = prefs.getBoolean(KEY_V552SMOOTHSCROLLENABLED552, false)
+        set(value) = prefs.edit().putBoolean(KEY_V552SMOOTHSCROLLENABLED552, value).apply()
+
+    var v552snapAutoAlign552: Boolean
+        get() = prefs.getBoolean(KEY_V552SNAPAUTOALIGN552, false)
+        set(value) = prefs.edit().putBoolean(KEY_V552SNAPAUTOALIGN552, value).apply()
+
+    var v552sortAutoAlgorithm552: Int
+        get() = prefs.getInt(KEY_V552SORTAUTOALGORITHM552, 0)
+        set(value) = prefs.edit().putInt(KEY_V552SORTAUTOALGORITHM552, value).apply()
+
+    var v552sourceAutoSelect552: Boolean
+        get() = prefs.getBoolean(KEY_V552SOURCEAUTOSELECT552, false)
+        set(value) = prefs.edit().putBoolean(KEY_V552SOURCEAUTOSELECT552, value).apply()
+
+    var v552spanAutoAdjust552: Boolean
+        get() = prefs.getBoolean(KEY_V552SPANAUTOADJUST552, false)
+        set(value) = prefs.edit().putBoolean(KEY_V552SPANAUTOADJUST552, value).apply()
+
+    var v552splitAutoView552: Boolean
+        get() = prefs.getBoolean(KEY_V552SPLITAUTOVIEW552, false)
+        set(value) = prefs.edit().putBoolean(KEY_V552SPLITAUTOVIEW552, value).apply()
+
+    var v552stackAutoLayer552: Boolean
+        get() = prefs.getBoolean(KEY_V552STACKAUTOLAYER552, false)
+        set(value) = prefs.edit().putBoolean(KEY_V552STACKAUTOLAYER552, value).apply()
+
+    var v552stageAutoAdvance552: Boolean
+        get() = prefs.getBoolean(KEY_V552STAGEAUTOADVANCE552, false)
+        set(value) = prefs.edit().putBoolean(KEY_V552STAGEAUTOADVANCE552, value).apply()
+
+    var v552startAutoPlay552: Boolean
+        get() = prefs.getBoolean(KEY_V552STARTAUTOPLAY552, false)
+        set(value) = prefs.edit().putBoolean(KEY_V552STARTAUTOPLAY552, value).apply()
+
+    var v552stateAutoPersist552: Boolean
+        get() = prefs.getBoolean(KEY_V552STATEAUTOPERSIST552, false)
+        set(value) = prefs.edit().putBoolean(KEY_V552STATEAUTOPERSIST552, value).apply()
+
+    var v553skipSilenceAuto553: Boolean
+        get() = prefs.getBoolean(KEY_V553SKIPSILENCEAUTO553, false)
+        set(value) = prefs.edit().putBoolean(KEY_V553SKIPSILENCEAUTO553, value).apply()
+
+    var v553sliceAutoSegment553: Boolean
+        get() = prefs.getBoolean(KEY_V553SLICEAUTOSEGMENT553, false)
+        set(value) = prefs.edit().putBoolean(KEY_V553SLICEAUTOSEGMENT553, value).apply()
+
+    var v553slideAutoTransition553: Boolean
+        get() = prefs.getBoolean(KEY_V553SLIDEAUTOTRANSITION553, false)
+        set(value) = prefs.edit().putBoolean(KEY_V553SLIDEAUTOTRANSITION553, value).apply()
+
+    var v553slotAutoManage553: Boolean
+        get() = prefs.getBoolean(KEY_V553SLOTAUTOMANAGE553, false)
+        set(value) = prefs.edit().putBoolean(KEY_V553SLOTAUTOMANAGE553, value).apply()
+
+    var v553smartAutoQuality553: Int
+        get() = prefs.getInt(KEY_V553SMARTAUTOQUALITY553, 0)
+        set(value) = prefs.edit().putInt(KEY_V553SMARTAUTOQUALITY553, value).apply()
+
+    var v553smoothScrollEnabled553: Boolean
+        get() = prefs.getBoolean(KEY_V553SMOOTHSCROLLENABLED553, false)
+        set(value) = prefs.edit().putBoolean(KEY_V553SMOOTHSCROLLENABLED553, value).apply()
+
+    var v553snapAutoAlign553: Boolean
+        get() = prefs.getBoolean(KEY_V553SNAPAUTOALIGN553, false)
+        set(value) = prefs.edit().putBoolean(KEY_V553SNAPAUTOALIGN553, value).apply()
+
+    var v553sortAutoAlgorithm553: Int
+        get() = prefs.getInt(KEY_V553SORTAUTOALGORITHM553, 0)
+        set(value) = prefs.edit().putInt(KEY_V553SORTAUTOALGORITHM553, value).apply()
+
+    var v553sourceAutoSelect553: Boolean
+        get() = prefs.getBoolean(KEY_V553SOURCEAUTOSELECT553, false)
+        set(value) = prefs.edit().putBoolean(KEY_V553SOURCEAUTOSELECT553, value).apply()
+
+    var v553spanAutoAdjust553: Boolean
+        get() = prefs.getBoolean(KEY_V553SPANAUTOADJUST553, false)
+        set(value) = prefs.edit().putBoolean(KEY_V553SPANAUTOADJUST553, value).apply()
+
+    var v553splitAutoView553: Boolean
+        get() = prefs.getBoolean(KEY_V553SPLITAUTOVIEW553, false)
+        set(value) = prefs.edit().putBoolean(KEY_V553SPLITAUTOVIEW553, value).apply()
+
+    var v553stackAutoLayer553: Boolean
+        get() = prefs.getBoolean(KEY_V553STACKAUTOLAYER553, false)
+        set(value) = prefs.edit().putBoolean(KEY_V553STACKAUTOLAYER553, value).apply()
+
+    var v553stageAutoAdvance553: Boolean
+        get() = prefs.getBoolean(KEY_V553STAGEAUTOADVANCE553, false)
+        set(value) = prefs.edit().putBoolean(KEY_V553STAGEAUTOADVANCE553, value).apply()
+
+    var v553startAutoPlay553: Boolean
+        get() = prefs.getBoolean(KEY_V553STARTAUTOPLAY553, false)
+        set(value) = prefs.edit().putBoolean(KEY_V553STARTAUTOPLAY553, value).apply()
+
+    var v553stateAutoPersist553: Boolean
+        get() = prefs.getBoolean(KEY_V553STATEAUTOPERSIST553, false)
+        set(value) = prefs.edit().putBoolean(KEY_V553STATEAUTOPERSIST553, value).apply()
+
+    var v554skipSilenceAuto554: Boolean
+        get() = prefs.getBoolean(KEY_V554SKIPSILENCEAUTO554, false)
+        set(value) = prefs.edit().putBoolean(KEY_V554SKIPSILENCEAUTO554, value).apply()
+
+    var v554sliceAutoSegment554: Boolean
+        get() = prefs.getBoolean(KEY_V554SLICEAUTOSEGMENT554, false)
+        set(value) = prefs.edit().putBoolean(KEY_V554SLICEAUTOSEGMENT554, value).apply()
+
+    var v554slideAutoTransition554: Boolean
+        get() = prefs.getBoolean(KEY_V554SLIDEAUTOTRANSITION554, false)
+        set(value) = prefs.edit().putBoolean(KEY_V554SLIDEAUTOTRANSITION554, value).apply()
+
+    var v554slotAutoManage554: Boolean
+        get() = prefs.getBoolean(KEY_V554SLOTAUTOMANAGE554, false)
+        set(value) = prefs.edit().putBoolean(KEY_V554SLOTAUTOMANAGE554, value).apply()
+
+    var v554smartAutoQuality554: Int
+        get() = prefs.getInt(KEY_V554SMARTAUTOQUALITY554, 0)
+        set(value) = prefs.edit().putInt(KEY_V554SMARTAUTOQUALITY554, value).apply()
+
+    var v554smoothScrollEnabled554: Boolean
+        get() = prefs.getBoolean(KEY_V554SMOOTHSCROLLENABLED554, false)
+        set(value) = prefs.edit().putBoolean(KEY_V554SMOOTHSCROLLENABLED554, value).apply()
+
+    var v554snapAutoAlign554: Boolean
+        get() = prefs.getBoolean(KEY_V554SNAPAUTOALIGN554, false)
+        set(value) = prefs.edit().putBoolean(KEY_V554SNAPAUTOALIGN554, value).apply()
+
+    var v554sortAutoAlgorithm554: Int
+        get() = prefs.getInt(KEY_V554SORTAUTOALGORITHM554, 0)
+        set(value) = prefs.edit().putInt(KEY_V554SORTAUTOALGORITHM554, value).apply()
+
+    var v554sourceAutoSelect554: Boolean
+        get() = prefs.getBoolean(KEY_V554SOURCEAUTOSELECT554, false)
+        set(value) = prefs.edit().putBoolean(KEY_V554SOURCEAUTOSELECT554, value).apply()
+
+    var v554spanAutoAdjust554: Boolean
+        get() = prefs.getBoolean(KEY_V554SPANAUTOADJUST554, false)
+        set(value) = prefs.edit().putBoolean(KEY_V554SPANAUTOADJUST554, value).apply()
+
+    var v554splitAutoView554: Boolean
+        get() = prefs.getBoolean(KEY_V554SPLITAUTOVIEW554, false)
+        set(value) = prefs.edit().putBoolean(KEY_V554SPLITAUTOVIEW554, value).apply()
+
+    var v554stackAutoLayer554: Boolean
+        get() = prefs.getBoolean(KEY_V554STACKAUTOLAYER554, false)
+        set(value) = prefs.edit().putBoolean(KEY_V554STACKAUTOLAYER554, value).apply()
+
+    var v554stageAutoAdvance554: Boolean
+        get() = prefs.getBoolean(KEY_V554STAGEAUTOADVANCE554, false)
+        set(value) = prefs.edit().putBoolean(KEY_V554STAGEAUTOADVANCE554, value).apply()
+
+    var v554startAutoPlay554: Boolean
+        get() = prefs.getBoolean(KEY_V554STARTAUTOPLAY554, false)
+        set(value) = prefs.edit().putBoolean(KEY_V554STARTAUTOPLAY554, value).apply()
+
+    var v554stateAutoPersist554: Boolean
+        get() = prefs.getBoolean(KEY_V554STATEAUTOPERSIST554, false)
+        set(value) = prefs.edit().putBoolean(KEY_V554STATEAUTOPERSIST554, value).apply()
+
+    var v555skipSilenceAuto555: Boolean
+        get() = prefs.getBoolean(KEY_V555SKIPSILENCEAUTO555, false)
+        set(value) = prefs.edit().putBoolean(KEY_V555SKIPSILENCEAUTO555, value).apply()
+
+    var v555sliceAutoSegment555: Boolean
+        get() = prefs.getBoolean(KEY_V555SLICEAUTOSEGMENT555, false)
+        set(value) = prefs.edit().putBoolean(KEY_V555SLICEAUTOSEGMENT555, value).apply()
+
+    var v555slideAutoTransition555: Boolean
+        get() = prefs.getBoolean(KEY_V555SLIDEAUTOTRANSITION555, false)
+        set(value) = prefs.edit().putBoolean(KEY_V555SLIDEAUTOTRANSITION555, value).apply()
+
+    var v555slotAutoManage555: Boolean
+        get() = prefs.getBoolean(KEY_V555SLOTAUTOMANAGE555, false)
+        set(value) = prefs.edit().putBoolean(KEY_V555SLOTAUTOMANAGE555, value).apply()
+
+    var v555smartAutoQuality555: Int
+        get() = prefs.getInt(KEY_V555SMARTAUTOQUALITY555, 0)
+        set(value) = prefs.edit().putInt(KEY_V555SMARTAUTOQUALITY555, value).apply()
+
+    var v555smoothScrollEnabled555: Boolean
+        get() = prefs.getBoolean(KEY_V555SMOOTHSCROLLENABLED555, false)
+        set(value) = prefs.edit().putBoolean(KEY_V555SMOOTHSCROLLENABLED555, value).apply()
+
+    var v555snapAutoAlign555: Boolean
+        get() = prefs.getBoolean(KEY_V555SNAPAUTOALIGN555, false)
+        set(value) = prefs.edit().putBoolean(KEY_V555SNAPAUTOALIGN555, value).apply()
+
+    var v555sortAutoAlgorithm555: Int
+        get() = prefs.getInt(KEY_V555SORTAUTOALGORITHM555, 0)
+        set(value) = prefs.edit().putInt(KEY_V555SORTAUTOALGORITHM555, value).apply()
+
+    var v555sourceAutoSelect555: Boolean
+        get() = prefs.getBoolean(KEY_V555SOURCEAUTOSELECT555, false)
+        set(value) = prefs.edit().putBoolean(KEY_V555SOURCEAUTOSELECT555, value).apply()
+
+    var v555spanAutoAdjust555: Boolean
+        get() = prefs.getBoolean(KEY_V555SPANAUTOADJUST555, false)
+        set(value) = prefs.edit().putBoolean(KEY_V555SPANAUTOADJUST555, value).apply()
+
+    var v555splitAutoView555: Boolean
+        get() = prefs.getBoolean(KEY_V555SPLITAUTOVIEW555, false)
+        set(value) = prefs.edit().putBoolean(KEY_V555SPLITAUTOVIEW555, value).apply()
+
+    var v555stackAutoLayer555: Boolean
+        get() = prefs.getBoolean(KEY_V555STACKAUTOLAYER555, false)
+        set(value) = prefs.edit().putBoolean(KEY_V555STACKAUTOLAYER555, value).apply()
+
+    var v555stageAutoAdvance555: Boolean
+        get() = prefs.getBoolean(KEY_V555STAGEAUTOADVANCE555, false)
+        set(value) = prefs.edit().putBoolean(KEY_V555STAGEAUTOADVANCE555, value).apply()
+
+    var v555startAutoPlay555: Boolean
+        get() = prefs.getBoolean(KEY_V555STARTAUTOPLAY555, false)
+        set(value) = prefs.edit().putBoolean(KEY_V555STARTAUTOPLAY555, value).apply()
+
+    var v555stateAutoPersist555: Boolean
+        get() = prefs.getBoolean(KEY_V555STATEAUTOPERSIST555, false)
+        set(value) = prefs.edit().putBoolean(KEY_V555STATEAUTOPERSIST555, value).apply()
+
+    var v556skipSilenceAuto556: Boolean
+        get() = prefs.getBoolean(KEY_V556SKIPSILENCEAUTO556, false)
+        set(value) = prefs.edit().putBoolean(KEY_V556SKIPSILENCEAUTO556, value).apply()
+
+    var v556sliceAutoSegment556: Boolean
+        get() = prefs.getBoolean(KEY_V556SLICEAUTOSEGMENT556, false)
+        set(value) = prefs.edit().putBoolean(KEY_V556SLICEAUTOSEGMENT556, value).apply()
+
+    var v556slideAutoTransition556: Boolean
+        get() = prefs.getBoolean(KEY_V556SLIDEAUTOTRANSITION556, false)
+        set(value) = prefs.edit().putBoolean(KEY_V556SLIDEAUTOTRANSITION556, value).apply()
+
+    var v556slotAutoManage556: Boolean
+        get() = prefs.getBoolean(KEY_V556SLOTAUTOMANAGE556, false)
+        set(value) = prefs.edit().putBoolean(KEY_V556SLOTAUTOMANAGE556, value).apply()
+
+    var v556smartAutoQuality556: Int
+        get() = prefs.getInt(KEY_V556SMARTAUTOQUALITY556, 0)
+        set(value) = prefs.edit().putInt(KEY_V556SMARTAUTOQUALITY556, value).apply()
+
+    var v556smoothScrollEnabled556: Boolean
+        get() = prefs.getBoolean(KEY_V556SMOOTHSCROLLENABLED556, false)
+        set(value) = prefs.edit().putBoolean(KEY_V556SMOOTHSCROLLENABLED556, value).apply()
+
+    var v556snapAutoAlign556: Boolean
+        get() = prefs.getBoolean(KEY_V556SNAPAUTOALIGN556, false)
+        set(value) = prefs.edit().putBoolean(KEY_V556SNAPAUTOALIGN556, value).apply()
+
+    var v556sortAutoAlgorithm556: Int
+        get() = prefs.getInt(KEY_V556SORTAUTOALGORITHM556, 0)
+        set(value) = prefs.edit().putInt(KEY_V556SORTAUTOALGORITHM556, value).apply()
+
+    var v556sourceAutoSelect556: Boolean
+        get() = prefs.getBoolean(KEY_V556SOURCEAUTOSELECT556, false)
+        set(value) = prefs.edit().putBoolean(KEY_V556SOURCEAUTOSELECT556, value).apply()
+
+    var v556spanAutoAdjust556: Boolean
+        get() = prefs.getBoolean(KEY_V556SPANAUTOADJUST556, false)
+        set(value) = prefs.edit().putBoolean(KEY_V556SPANAUTOADJUST556, value).apply()
+
+    var v556splitAutoView556: Boolean
+        get() = prefs.getBoolean(KEY_V556SPLITAUTOVIEW556, false)
+        set(value) = prefs.edit().putBoolean(KEY_V556SPLITAUTOVIEW556, value).apply()
+
+    var v556stackAutoLayer556: Boolean
+        get() = prefs.getBoolean(KEY_V556STACKAUTOLAYER556, false)
+        set(value) = prefs.edit().putBoolean(KEY_V556STACKAUTOLAYER556, value).apply()
+
+    var v556stageAutoAdvance556: Boolean
+        get() = prefs.getBoolean(KEY_V556STAGEAUTOADVANCE556, false)
+        set(value) = prefs.edit().putBoolean(KEY_V556STAGEAUTOADVANCE556, value).apply()
+
+    var v556startAutoPlay556: Boolean
+        get() = prefs.getBoolean(KEY_V556STARTAUTOPLAY556, false)
+        set(value) = prefs.edit().putBoolean(KEY_V556STARTAUTOPLAY556, value).apply()
+
+    var v556stateAutoPersist556: Boolean
+        get() = prefs.getBoolean(KEY_V556STATEAUTOPERSIST556, false)
+        set(value) = prefs.edit().putBoolean(KEY_V556STATEAUTOPERSIST556, value).apply()
+
+    var v557skipSilenceAuto557: Boolean
+        get() = prefs.getBoolean(KEY_V557SKIPSILENCEAUTO557, false)
+        set(value) = prefs.edit().putBoolean(KEY_V557SKIPSILENCEAUTO557, value).apply()
+
+    var v557sliceAutoSegment557: Boolean
+        get() = prefs.getBoolean(KEY_V557SLICEAUTOSEGMENT557, false)
+        set(value) = prefs.edit().putBoolean(KEY_V557SLICEAUTOSEGMENT557, value).apply()
+
+    var v557slideAutoTransition557: Boolean
+        get() = prefs.getBoolean(KEY_V557SLIDEAUTOTRANSITION557, false)
+        set(value) = prefs.edit().putBoolean(KEY_V557SLIDEAUTOTRANSITION557, value).apply()
+
+    var v557slotAutoManage557: Boolean
+        get() = prefs.getBoolean(KEY_V557SLOTAUTOMANAGE557, false)
+        set(value) = prefs.edit().putBoolean(KEY_V557SLOTAUTOMANAGE557, value).apply()
+
+    var v557smartAutoQuality557: Int
+        get() = prefs.getInt(KEY_V557SMARTAUTOQUALITY557, 0)
+        set(value) = prefs.edit().putInt(KEY_V557SMARTAUTOQUALITY557, value).apply()
+
+    var v557smoothScrollEnabled557: Boolean
+        get() = prefs.getBoolean(KEY_V557SMOOTHSCROLLENABLED557, false)
+        set(value) = prefs.edit().putBoolean(KEY_V557SMOOTHSCROLLENABLED557, value).apply()
+
+    var v557snapAutoAlign557: Boolean
+        get() = prefs.getBoolean(KEY_V557SNAPAUTOALIGN557, false)
+        set(value) = prefs.edit().putBoolean(KEY_V557SNAPAUTOALIGN557, value).apply()
+
+    var v557sortAutoAlgorithm557: Int
+        get() = prefs.getInt(KEY_V557SORTAUTOALGORITHM557, 0)
+        set(value) = prefs.edit().putInt(KEY_V557SORTAUTOALGORITHM557, value).apply()
+
+    var v557sourceAutoSelect557: Boolean
+        get() = prefs.getBoolean(KEY_V557SOURCEAUTOSELECT557, false)
+        set(value) = prefs.edit().putBoolean(KEY_V557SOURCEAUTOSELECT557, value).apply()
+
+    var v557spanAutoAdjust557: Boolean
+        get() = prefs.getBoolean(KEY_V557SPANAUTOADJUST557, false)
+        set(value) = prefs.edit().putBoolean(KEY_V557SPANAUTOADJUST557, value).apply()
+
+    var v557splitAutoView557: Boolean
+        get() = prefs.getBoolean(KEY_V557SPLITAUTOVIEW557, false)
+        set(value) = prefs.edit().putBoolean(KEY_V557SPLITAUTOVIEW557, value).apply()
+
+    var v557stackAutoLayer557: Boolean
+        get() = prefs.getBoolean(KEY_V557STACKAUTOLAYER557, false)
+        set(value) = prefs.edit().putBoolean(KEY_V557STACKAUTOLAYER557, value).apply()
+
+    var v557stageAutoAdvance557: Boolean
+        get() = prefs.getBoolean(KEY_V557STAGEAUTOADVANCE557, false)
+        set(value) = prefs.edit().putBoolean(KEY_V557STAGEAUTOADVANCE557, value).apply()
+
+    var v557startAutoPlay557: Boolean
+        get() = prefs.getBoolean(KEY_V557STARTAUTOPLAY557, false)
+        set(value) = prefs.edit().putBoolean(KEY_V557STARTAUTOPLAY557, value).apply()
+
+    var v557stateAutoPersist557: Boolean
+        get() = prefs.getBoolean(KEY_V557STATEAUTOPERSIST557, false)
+        set(value) = prefs.edit().putBoolean(KEY_V557STATEAUTOPERSIST557, value).apply()
+
+    var v558skipSilenceAuto558: Boolean
+        get() = prefs.getBoolean(KEY_V558SKIPSILENCEAUTO558, false)
+        set(value) = prefs.edit().putBoolean(KEY_V558SKIPSILENCEAUTO558, value).apply()
+
+    var v558sliceAutoSegment558: Boolean
+        get() = prefs.getBoolean(KEY_V558SLICEAUTOSEGMENT558, false)
+        set(value) = prefs.edit().putBoolean(KEY_V558SLICEAUTOSEGMENT558, value).apply()
+
+    var v558slideAutoTransition558: Boolean
+        get() = prefs.getBoolean(KEY_V558SLIDEAUTOTRANSITION558, false)
+        set(value) = prefs.edit().putBoolean(KEY_V558SLIDEAUTOTRANSITION558, value).apply()
+
+    var v558slotAutoManage558: Boolean
+        get() = prefs.getBoolean(KEY_V558SLOTAUTOMANAGE558, false)
+        set(value) = prefs.edit().putBoolean(KEY_V558SLOTAUTOMANAGE558, value).apply()
+
+    var v558smartAutoQuality558: Int
+        get() = prefs.getInt(KEY_V558SMARTAUTOQUALITY558, 0)
+        set(value) = prefs.edit().putInt(KEY_V558SMARTAUTOQUALITY558, value).apply()
+
+    var v558smoothScrollEnabled558: Boolean
+        get() = prefs.getBoolean(KEY_V558SMOOTHSCROLLENABLED558, false)
+        set(value) = prefs.edit().putBoolean(KEY_V558SMOOTHSCROLLENABLED558, value).apply()
+
+    var v558snapAutoAlign558: Boolean
+        get() = prefs.getBoolean(KEY_V558SNAPAUTOALIGN558, false)
+        set(value) = prefs.edit().putBoolean(KEY_V558SNAPAUTOALIGN558, value).apply()
+
+    var v558sortAutoAlgorithm558: Int
+        get() = prefs.getInt(KEY_V558SORTAUTOALGORITHM558, 0)
+        set(value) = prefs.edit().putInt(KEY_V558SORTAUTOALGORITHM558, value).apply()
+
+    var v558sourceAutoSelect558: Boolean
+        get() = prefs.getBoolean(KEY_V558SOURCEAUTOSELECT558, false)
+        set(value) = prefs.edit().putBoolean(KEY_V558SOURCEAUTOSELECT558, value).apply()
+
+    var v558spanAutoAdjust558: Boolean
+        get() = prefs.getBoolean(KEY_V558SPANAUTOADJUST558, false)
+        set(value) = prefs.edit().putBoolean(KEY_V558SPANAUTOADJUST558, value).apply()
+
+    var v558splitAutoView558: Boolean
+        get() = prefs.getBoolean(KEY_V558SPLITAUTOVIEW558, false)
+        set(value) = prefs.edit().putBoolean(KEY_V558SPLITAUTOVIEW558, value).apply()
+
+    var v558stackAutoLayer558: Boolean
+        get() = prefs.getBoolean(KEY_V558STACKAUTOLAYER558, false)
+        set(value) = prefs.edit().putBoolean(KEY_V558STACKAUTOLAYER558, value).apply()
+
+    var v558stageAutoAdvance558: Boolean
+        get() = prefs.getBoolean(KEY_V558STAGEAUTOADVANCE558, false)
+        set(value) = prefs.edit().putBoolean(KEY_V558STAGEAUTOADVANCE558, value).apply()
+
+    var v558startAutoPlay558: Boolean
+        get() = prefs.getBoolean(KEY_V558STARTAUTOPLAY558, false)
+        set(value) = prefs.edit().putBoolean(KEY_V558STARTAUTOPLAY558, value).apply()
+
+    var v558stateAutoPersist558: Boolean
+        get() = prefs.getBoolean(KEY_V558STATEAUTOPERSIST558, false)
+        set(value) = prefs.edit().putBoolean(KEY_V558STATEAUTOPERSIST558, value).apply()
+
+    var v559skipSilenceAuto559: Boolean
+        get() = prefs.getBoolean(KEY_V559SKIPSILENCEAUTO559, false)
+        set(value) = prefs.edit().putBoolean(KEY_V559SKIPSILENCEAUTO559, value).apply()
+
+    var v559sliceAutoSegment559: Boolean
+        get() = prefs.getBoolean(KEY_V559SLICEAUTOSEGMENT559, false)
+        set(value) = prefs.edit().putBoolean(KEY_V559SLICEAUTOSEGMENT559, value).apply()
+
+    var v559slideAutoTransition559: Boolean
+        get() = prefs.getBoolean(KEY_V559SLIDEAUTOTRANSITION559, false)
+        set(value) = prefs.edit().putBoolean(KEY_V559SLIDEAUTOTRANSITION559, value).apply()
+
+    var v559slotAutoManage559: Boolean
+        get() = prefs.getBoolean(KEY_V559SLOTAUTOMANAGE559, false)
+        set(value) = prefs.edit().putBoolean(KEY_V559SLOTAUTOMANAGE559, value).apply()
+
+    var v559smartAutoQuality559: Int
+        get() = prefs.getInt(KEY_V559SMARTAUTOQUALITY559, 0)
+        set(value) = prefs.edit().putInt(KEY_V559SMARTAUTOQUALITY559, value).apply()
+
+    var v559smoothScrollEnabled559: Boolean
+        get() = prefs.getBoolean(KEY_V559SMOOTHSCROLLENABLED559, false)
+        set(value) = prefs.edit().putBoolean(KEY_V559SMOOTHSCROLLENABLED559, value).apply()
+
+    var v559snapAutoAlign559: Boolean
+        get() = prefs.getBoolean(KEY_V559SNAPAUTOALIGN559, false)
+        set(value) = prefs.edit().putBoolean(KEY_V559SNAPAUTOALIGN559, value).apply()
+
+    var v559sortAutoAlgorithm559: Int
+        get() = prefs.getInt(KEY_V559SORTAUTOALGORITHM559, 0)
+        set(value) = prefs.edit().putInt(KEY_V559SORTAUTOALGORITHM559, value).apply()
+
+    var v559sourceAutoSelect559: Boolean
+        get() = prefs.getBoolean(KEY_V559SOURCEAUTOSELECT559, false)
+        set(value) = prefs.edit().putBoolean(KEY_V559SOURCEAUTOSELECT559, value).apply()
+
+    var v559spanAutoAdjust559: Boolean
+        get() = prefs.getBoolean(KEY_V559SPANAUTOADJUST559, false)
+        set(value) = prefs.edit().putBoolean(KEY_V559SPANAUTOADJUST559, value).apply()
+
+    var v559splitAutoView559: Boolean
+        get() = prefs.getBoolean(KEY_V559SPLITAUTOVIEW559, false)
+        set(value) = prefs.edit().putBoolean(KEY_V559SPLITAUTOVIEW559, value).apply()
+
+    var v559stackAutoLayer559: Boolean
+        get() = prefs.getBoolean(KEY_V559STACKAUTOLAYER559, false)
+        set(value) = prefs.edit().putBoolean(KEY_V559STACKAUTOLAYER559, value).apply()
+
+    var v559stageAutoAdvance559: Boolean
+        get() = prefs.getBoolean(KEY_V559STAGEAUTOADVANCE559, false)
+        set(value) = prefs.edit().putBoolean(KEY_V559STAGEAUTOADVANCE559, value).apply()
+
+    var v559startAutoPlay559: Boolean
+        get() = prefs.getBoolean(KEY_V559STARTAUTOPLAY559, false)
+        set(value) = prefs.edit().putBoolean(KEY_V559STARTAUTOPLAY559, value).apply()
+
+    var v559stateAutoPersist559: Boolean
+        get() = prefs.getBoolean(KEY_V559STATEAUTOPERSIST559, false)
+        set(value) = prefs.edit().putBoolean(KEY_V559STATEAUTOPERSIST559, value).apply()
+
+    var v560skipSilenceAuto560: Boolean
+        get() = prefs.getBoolean(KEY_V560SKIPSILENCEAUTO560, false)
+        set(value) = prefs.edit().putBoolean(KEY_V560SKIPSILENCEAUTO560, value).apply()
+
+    var v560sliceAutoSegment560: Boolean
+        get() = prefs.getBoolean(KEY_V560SLICEAUTOSEGMENT560, false)
+        set(value) = prefs.edit().putBoolean(KEY_V560SLICEAUTOSEGMENT560, value).apply()
+
+    var v560slideAutoTransition560: Boolean
+        get() = prefs.getBoolean(KEY_V560SLIDEAUTOTRANSITION560, false)
+        set(value) = prefs.edit().putBoolean(KEY_V560SLIDEAUTOTRANSITION560, value).apply()
+
+    var v560slotAutoManage560: Boolean
+        get() = prefs.getBoolean(KEY_V560SLOTAUTOMANAGE560, false)
+        set(value) = prefs.edit().putBoolean(KEY_V560SLOTAUTOMANAGE560, value).apply()
+
+    var v560smartAutoQuality560: Int
+        get() = prefs.getInt(KEY_V560SMARTAUTOQUALITY560, 0)
+        set(value) = prefs.edit().putInt(KEY_V560SMARTAUTOQUALITY560, value).apply()
+
+    var v560smoothScrollEnabled560: Boolean
+        get() = prefs.getBoolean(KEY_V560SMOOTHSCROLLENABLED560, false)
+        set(value) = prefs.edit().putBoolean(KEY_V560SMOOTHSCROLLENABLED560, value).apply()
+
+    var v560snapAutoAlign560: Boolean
+        get() = prefs.getBoolean(KEY_V560SNAPAUTOALIGN560, false)
+        set(value) = prefs.edit().putBoolean(KEY_V560SNAPAUTOALIGN560, value).apply()
+
+    var v560sortAutoAlgorithm560: Int
+        get() = prefs.getInt(KEY_V560SORTAUTOALGORITHM560, 0)
+        set(value) = prefs.edit().putInt(KEY_V560SORTAUTOALGORITHM560, value).apply()
+
+    var v560sourceAutoSelect560: Boolean
+        get() = prefs.getBoolean(KEY_V560SOURCEAUTOSELECT560, false)
+        set(value) = prefs.edit().putBoolean(KEY_V560SOURCEAUTOSELECT560, value).apply()
+
+    var v560spanAutoAdjust560: Boolean
+        get() = prefs.getBoolean(KEY_V560SPANAUTOADJUST560, false)
+        set(value) = prefs.edit().putBoolean(KEY_V560SPANAUTOADJUST560, value).apply()
+
+    var v560splitAutoView560: Boolean
+        get() = prefs.getBoolean(KEY_V560SPLITAUTOVIEW560, false)
+        set(value) = prefs.edit().putBoolean(KEY_V560SPLITAUTOVIEW560, value).apply()
+
+    var v560stackAutoLayer560: Boolean
+        get() = prefs.getBoolean(KEY_V560STACKAUTOLAYER560, false)
+        set(value) = prefs.edit().putBoolean(KEY_V560STACKAUTOLAYER560, value).apply()
+
+    var v560stageAutoAdvance560: Boolean
+        get() = prefs.getBoolean(KEY_V560STAGEAUTOADVANCE560, false)
+        set(value) = prefs.edit().putBoolean(KEY_V560STAGEAUTOADVANCE560, value).apply()
+
+    var v560startAutoPlay560: Boolean
+        get() = prefs.getBoolean(KEY_V560STARTAUTOPLAY560, false)
+        set(value) = prefs.edit().putBoolean(KEY_V560STARTAUTOPLAY560, value).apply()
+
+    var v560stateAutoPersist560: Boolean
+        get() = prefs.getBoolean(KEY_V560STATEAUTOPERSIST560, false)
+        set(value) = prefs.edit().putBoolean(KEY_V560STATEAUTOPERSIST560, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -50680,5 +51280,155 @@ class AppPrefs(context: Context) {
         const val KEY_V550SHUFFLEAUTOSEED550 = "v550shuffleAutoSeed550" // v550 Shuffle Auto Seed550
         const val KEY_V550SIGNALAUTOBOOST550 = "v550signalAutoBoost550" // v550 Signal Auto Boost550
         const val KEY_V550SINGLEINSTANCEMODE550 = "v550singleInstanceMode550" // v550 Single Instance Mode550
+        const val KEY_V551SKIPSILENCEAUTO551 = "v551skipSilenceAuto551" // v551 Skip Silence Auto551
+        const val KEY_V551SLICEAUTOSEGMENT551 = "v551sliceAutoSegment551" // v551 Slice Auto Segment551
+        const val KEY_V551SLIDEAUTOTRANSITION551 = "v551slideAutoTransition551" // v551 Slide Auto Transition551
+        const val KEY_V551SLOTAUTOMANAGE551 = "v551slotAutoManage551" // v551 Slot Auto Manage551
+        const val KEY_V551SMARTAUTOQUALITY551 = "v551smartAutoQuality551" // v551 Smart Auto Quality551
+        const val KEY_V551SMOOTHSCROLLENABLED551 = "v551smoothScrollEnabled551" // v551 Smooth Scroll Enabled551
+        const val KEY_V551SNAPAUTOALIGN551 = "v551snapAutoAlign551" // v551 Snap Auto Align551
+        const val KEY_V551SORTAUTOALGORITHM551 = "v551sortAutoAlgorithm551" // v551 Sort Auto Algorithm551
+        const val KEY_V551SOURCEAUTOSELECT551 = "v551sourceAutoSelect551" // v551 Source Auto Select551
+        const val KEY_V551SPANAUTOADJUST551 = "v551spanAutoAdjust551" // v551 Span Auto Adjust551
+        const val KEY_V551SPLITAUTOVIEW551 = "v551splitAutoView551" // v551 Split Auto View551
+        const val KEY_V551STACKAUTOLAYER551 = "v551stackAutoLayer551" // v551 Stack Auto Layer551
+        const val KEY_V551STAGEAUTOADVANCE551 = "v551stageAutoAdvance551" // v551 Stage Auto Advance551
+        const val KEY_V551STARTAUTOPLAY551 = "v551startAutoPlay551" // v551 Start Auto Play551
+        const val KEY_V551STATEAUTOPERSIST551 = "v551stateAutoPersist551" // v551 State Auto Persist551
+        const val KEY_V552SKIPSILENCEAUTO552 = "v552skipSilenceAuto552" // v552 Skip Silence Auto552
+        const val KEY_V552SLICEAUTOSEGMENT552 = "v552sliceAutoSegment552" // v552 Slice Auto Segment552
+        const val KEY_V552SLIDEAUTOTRANSITION552 = "v552slideAutoTransition552" // v552 Slide Auto Transition552
+        const val KEY_V552SLOTAUTOMANAGE552 = "v552slotAutoManage552" // v552 Slot Auto Manage552
+        const val KEY_V552SMARTAUTOQUALITY552 = "v552smartAutoQuality552" // v552 Smart Auto Quality552
+        const val KEY_V552SMOOTHSCROLLENABLED552 = "v552smoothScrollEnabled552" // v552 Smooth Scroll Enabled552
+        const val KEY_V552SNAPAUTOALIGN552 = "v552snapAutoAlign552" // v552 Snap Auto Align552
+        const val KEY_V552SORTAUTOALGORITHM552 = "v552sortAutoAlgorithm552" // v552 Sort Auto Algorithm552
+        const val KEY_V552SOURCEAUTOSELECT552 = "v552sourceAutoSelect552" // v552 Source Auto Select552
+        const val KEY_V552SPANAUTOADJUST552 = "v552spanAutoAdjust552" // v552 Span Auto Adjust552
+        const val KEY_V552SPLITAUTOVIEW552 = "v552splitAutoView552" // v552 Split Auto View552
+        const val KEY_V552STACKAUTOLAYER552 = "v552stackAutoLayer552" // v552 Stack Auto Layer552
+        const val KEY_V552STAGEAUTOADVANCE552 = "v552stageAutoAdvance552" // v552 Stage Auto Advance552
+        const val KEY_V552STARTAUTOPLAY552 = "v552startAutoPlay552" // v552 Start Auto Play552
+        const val KEY_V552STATEAUTOPERSIST552 = "v552stateAutoPersist552" // v552 State Auto Persist552
+        const val KEY_V553SKIPSILENCEAUTO553 = "v553skipSilenceAuto553" // v553 Skip Silence Auto553
+        const val KEY_V553SLICEAUTOSEGMENT553 = "v553sliceAutoSegment553" // v553 Slice Auto Segment553
+        const val KEY_V553SLIDEAUTOTRANSITION553 = "v553slideAutoTransition553" // v553 Slide Auto Transition553
+        const val KEY_V553SLOTAUTOMANAGE553 = "v553slotAutoManage553" // v553 Slot Auto Manage553
+        const val KEY_V553SMARTAUTOQUALITY553 = "v553smartAutoQuality553" // v553 Smart Auto Quality553
+        const val KEY_V553SMOOTHSCROLLENABLED553 = "v553smoothScrollEnabled553" // v553 Smooth Scroll Enabled553
+        const val KEY_V553SNAPAUTOALIGN553 = "v553snapAutoAlign553" // v553 Snap Auto Align553
+        const val KEY_V553SORTAUTOALGORITHM553 = "v553sortAutoAlgorithm553" // v553 Sort Auto Algorithm553
+        const val KEY_V553SOURCEAUTOSELECT553 = "v553sourceAutoSelect553" // v553 Source Auto Select553
+        const val KEY_V553SPANAUTOADJUST553 = "v553spanAutoAdjust553" // v553 Span Auto Adjust553
+        const val KEY_V553SPLITAUTOVIEW553 = "v553splitAutoView553" // v553 Split Auto View553
+        const val KEY_V553STACKAUTOLAYER553 = "v553stackAutoLayer553" // v553 Stack Auto Layer553
+        const val KEY_V553STAGEAUTOADVANCE553 = "v553stageAutoAdvance553" // v553 Stage Auto Advance553
+        const val KEY_V553STARTAUTOPLAY553 = "v553startAutoPlay553" // v553 Start Auto Play553
+        const val KEY_V553STATEAUTOPERSIST553 = "v553stateAutoPersist553" // v553 State Auto Persist553
+        const val KEY_V554SKIPSILENCEAUTO554 = "v554skipSilenceAuto554" // v554 Skip Silence Auto554
+        const val KEY_V554SLICEAUTOSEGMENT554 = "v554sliceAutoSegment554" // v554 Slice Auto Segment554
+        const val KEY_V554SLIDEAUTOTRANSITION554 = "v554slideAutoTransition554" // v554 Slide Auto Transition554
+        const val KEY_V554SLOTAUTOMANAGE554 = "v554slotAutoManage554" // v554 Slot Auto Manage554
+        const val KEY_V554SMARTAUTOQUALITY554 = "v554smartAutoQuality554" // v554 Smart Auto Quality554
+        const val KEY_V554SMOOTHSCROLLENABLED554 = "v554smoothScrollEnabled554" // v554 Smooth Scroll Enabled554
+        const val KEY_V554SNAPAUTOALIGN554 = "v554snapAutoAlign554" // v554 Snap Auto Align554
+        const val KEY_V554SORTAUTOALGORITHM554 = "v554sortAutoAlgorithm554" // v554 Sort Auto Algorithm554
+        const val KEY_V554SOURCEAUTOSELECT554 = "v554sourceAutoSelect554" // v554 Source Auto Select554
+        const val KEY_V554SPANAUTOADJUST554 = "v554spanAutoAdjust554" // v554 Span Auto Adjust554
+        const val KEY_V554SPLITAUTOVIEW554 = "v554splitAutoView554" // v554 Split Auto View554
+        const val KEY_V554STACKAUTOLAYER554 = "v554stackAutoLayer554" // v554 Stack Auto Layer554
+        const val KEY_V554STAGEAUTOADVANCE554 = "v554stageAutoAdvance554" // v554 Stage Auto Advance554
+        const val KEY_V554STARTAUTOPLAY554 = "v554startAutoPlay554" // v554 Start Auto Play554
+        const val KEY_V554STATEAUTOPERSIST554 = "v554stateAutoPersist554" // v554 State Auto Persist554
+        const val KEY_V555SKIPSILENCEAUTO555 = "v555skipSilenceAuto555" // v555 Skip Silence Auto555
+        const val KEY_V555SLICEAUTOSEGMENT555 = "v555sliceAutoSegment555" // v555 Slice Auto Segment555
+        const val KEY_V555SLIDEAUTOTRANSITION555 = "v555slideAutoTransition555" // v555 Slide Auto Transition555
+        const val KEY_V555SLOTAUTOMANAGE555 = "v555slotAutoManage555" // v555 Slot Auto Manage555
+        const val KEY_V555SMARTAUTOQUALITY555 = "v555smartAutoQuality555" // v555 Smart Auto Quality555
+        const val KEY_V555SMOOTHSCROLLENABLED555 = "v555smoothScrollEnabled555" // v555 Smooth Scroll Enabled555
+        const val KEY_V555SNAPAUTOALIGN555 = "v555snapAutoAlign555" // v555 Snap Auto Align555
+        const val KEY_V555SORTAUTOALGORITHM555 = "v555sortAutoAlgorithm555" // v555 Sort Auto Algorithm555
+        const val KEY_V555SOURCEAUTOSELECT555 = "v555sourceAutoSelect555" // v555 Source Auto Select555
+        const val KEY_V555SPANAUTOADJUST555 = "v555spanAutoAdjust555" // v555 Span Auto Adjust555
+        const val KEY_V555SPLITAUTOVIEW555 = "v555splitAutoView555" // v555 Split Auto View555
+        const val KEY_V555STACKAUTOLAYER555 = "v555stackAutoLayer555" // v555 Stack Auto Layer555
+        const val KEY_V555STAGEAUTOADVANCE555 = "v555stageAutoAdvance555" // v555 Stage Auto Advance555
+        const val KEY_V555STARTAUTOPLAY555 = "v555startAutoPlay555" // v555 Start Auto Play555
+        const val KEY_V555STATEAUTOPERSIST555 = "v555stateAutoPersist555" // v555 State Auto Persist555
+        const val KEY_V556SKIPSILENCEAUTO556 = "v556skipSilenceAuto556" // v556 Skip Silence Auto556
+        const val KEY_V556SLICEAUTOSEGMENT556 = "v556sliceAutoSegment556" // v556 Slice Auto Segment556
+        const val KEY_V556SLIDEAUTOTRANSITION556 = "v556slideAutoTransition556" // v556 Slide Auto Transition556
+        const val KEY_V556SLOTAUTOMANAGE556 = "v556slotAutoManage556" // v556 Slot Auto Manage556
+        const val KEY_V556SMARTAUTOQUALITY556 = "v556smartAutoQuality556" // v556 Smart Auto Quality556
+        const val KEY_V556SMOOTHSCROLLENABLED556 = "v556smoothScrollEnabled556" // v556 Smooth Scroll Enabled556
+        const val KEY_V556SNAPAUTOALIGN556 = "v556snapAutoAlign556" // v556 Snap Auto Align556
+        const val KEY_V556SORTAUTOALGORITHM556 = "v556sortAutoAlgorithm556" // v556 Sort Auto Algorithm556
+        const val KEY_V556SOURCEAUTOSELECT556 = "v556sourceAutoSelect556" // v556 Source Auto Select556
+        const val KEY_V556SPANAUTOADJUST556 = "v556spanAutoAdjust556" // v556 Span Auto Adjust556
+        const val KEY_V556SPLITAUTOVIEW556 = "v556splitAutoView556" // v556 Split Auto View556
+        const val KEY_V556STACKAUTOLAYER556 = "v556stackAutoLayer556" // v556 Stack Auto Layer556
+        const val KEY_V556STAGEAUTOADVANCE556 = "v556stageAutoAdvance556" // v556 Stage Auto Advance556
+        const val KEY_V556STARTAUTOPLAY556 = "v556startAutoPlay556" // v556 Start Auto Play556
+        const val KEY_V556STATEAUTOPERSIST556 = "v556stateAutoPersist556" // v556 State Auto Persist556
+        const val KEY_V557SKIPSILENCEAUTO557 = "v557skipSilenceAuto557" // v557 Skip Silence Auto557
+        const val KEY_V557SLICEAUTOSEGMENT557 = "v557sliceAutoSegment557" // v557 Slice Auto Segment557
+        const val KEY_V557SLIDEAUTOTRANSITION557 = "v557slideAutoTransition557" // v557 Slide Auto Transition557
+        const val KEY_V557SLOTAUTOMANAGE557 = "v557slotAutoManage557" // v557 Slot Auto Manage557
+        const val KEY_V557SMARTAUTOQUALITY557 = "v557smartAutoQuality557" // v557 Smart Auto Quality557
+        const val KEY_V557SMOOTHSCROLLENABLED557 = "v557smoothScrollEnabled557" // v557 Smooth Scroll Enabled557
+        const val KEY_V557SNAPAUTOALIGN557 = "v557snapAutoAlign557" // v557 Snap Auto Align557
+        const val KEY_V557SORTAUTOALGORITHM557 = "v557sortAutoAlgorithm557" // v557 Sort Auto Algorithm557
+        const val KEY_V557SOURCEAUTOSELECT557 = "v557sourceAutoSelect557" // v557 Source Auto Select557
+        const val KEY_V557SPANAUTOADJUST557 = "v557spanAutoAdjust557" // v557 Span Auto Adjust557
+        const val KEY_V557SPLITAUTOVIEW557 = "v557splitAutoView557" // v557 Split Auto View557
+        const val KEY_V557STACKAUTOLAYER557 = "v557stackAutoLayer557" // v557 Stack Auto Layer557
+        const val KEY_V557STAGEAUTOADVANCE557 = "v557stageAutoAdvance557" // v557 Stage Auto Advance557
+        const val KEY_V557STARTAUTOPLAY557 = "v557startAutoPlay557" // v557 Start Auto Play557
+        const val KEY_V557STATEAUTOPERSIST557 = "v557stateAutoPersist557" // v557 State Auto Persist557
+        const val KEY_V558SKIPSILENCEAUTO558 = "v558skipSilenceAuto558" // v558 Skip Silence Auto558
+        const val KEY_V558SLICEAUTOSEGMENT558 = "v558sliceAutoSegment558" // v558 Slice Auto Segment558
+        const val KEY_V558SLIDEAUTOTRANSITION558 = "v558slideAutoTransition558" // v558 Slide Auto Transition558
+        const val KEY_V558SLOTAUTOMANAGE558 = "v558slotAutoManage558" // v558 Slot Auto Manage558
+        const val KEY_V558SMARTAUTOQUALITY558 = "v558smartAutoQuality558" // v558 Smart Auto Quality558
+        const val KEY_V558SMOOTHSCROLLENABLED558 = "v558smoothScrollEnabled558" // v558 Smooth Scroll Enabled558
+        const val KEY_V558SNAPAUTOALIGN558 = "v558snapAutoAlign558" // v558 Snap Auto Align558
+        const val KEY_V558SORTAUTOALGORITHM558 = "v558sortAutoAlgorithm558" // v558 Sort Auto Algorithm558
+        const val KEY_V558SOURCEAUTOSELECT558 = "v558sourceAutoSelect558" // v558 Source Auto Select558
+        const val KEY_V558SPANAUTOADJUST558 = "v558spanAutoAdjust558" // v558 Span Auto Adjust558
+        const val KEY_V558SPLITAUTOVIEW558 = "v558splitAutoView558" // v558 Split Auto View558
+        const val KEY_V558STACKAUTOLAYER558 = "v558stackAutoLayer558" // v558 Stack Auto Layer558
+        const val KEY_V558STAGEAUTOADVANCE558 = "v558stageAutoAdvance558" // v558 Stage Auto Advance558
+        const val KEY_V558STARTAUTOPLAY558 = "v558startAutoPlay558" // v558 Start Auto Play558
+        const val KEY_V558STATEAUTOPERSIST558 = "v558stateAutoPersist558" // v558 State Auto Persist558
+        const val KEY_V559SKIPSILENCEAUTO559 = "v559skipSilenceAuto559" // v559 Skip Silence Auto559
+        const val KEY_V559SLICEAUTOSEGMENT559 = "v559sliceAutoSegment559" // v559 Slice Auto Segment559
+        const val KEY_V559SLIDEAUTOTRANSITION559 = "v559slideAutoTransition559" // v559 Slide Auto Transition559
+        const val KEY_V559SLOTAUTOMANAGE559 = "v559slotAutoManage559" // v559 Slot Auto Manage559
+        const val KEY_V559SMARTAUTOQUALITY559 = "v559smartAutoQuality559" // v559 Smart Auto Quality559
+        const val KEY_V559SMOOTHSCROLLENABLED559 = "v559smoothScrollEnabled559" // v559 Smooth Scroll Enabled559
+        const val KEY_V559SNAPAUTOALIGN559 = "v559snapAutoAlign559" // v559 Snap Auto Align559
+        const val KEY_V559SORTAUTOALGORITHM559 = "v559sortAutoAlgorithm559" // v559 Sort Auto Algorithm559
+        const val KEY_V559SOURCEAUTOSELECT559 = "v559sourceAutoSelect559" // v559 Source Auto Select559
+        const val KEY_V559SPANAUTOADJUST559 = "v559spanAutoAdjust559" // v559 Span Auto Adjust559
+        const val KEY_V559SPLITAUTOVIEW559 = "v559splitAutoView559" // v559 Split Auto View559
+        const val KEY_V559STACKAUTOLAYER559 = "v559stackAutoLayer559" // v559 Stack Auto Layer559
+        const val KEY_V559STAGEAUTOADVANCE559 = "v559stageAutoAdvance559" // v559 Stage Auto Advance559
+        const val KEY_V559STARTAUTOPLAY559 = "v559startAutoPlay559" // v559 Start Auto Play559
+        const val KEY_V559STATEAUTOPERSIST559 = "v559stateAutoPersist559" // v559 State Auto Persist559
+        const val KEY_V560SKIPSILENCEAUTO560 = "v560skipSilenceAuto560" // v560 Skip Silence Auto560
+        const val KEY_V560SLICEAUTOSEGMENT560 = "v560sliceAutoSegment560" // v560 Slice Auto Segment560
+        const val KEY_V560SLIDEAUTOTRANSITION560 = "v560slideAutoTransition560" // v560 Slide Auto Transition560
+        const val KEY_V560SLOTAUTOMANAGE560 = "v560slotAutoManage560" // v560 Slot Auto Manage560
+        const val KEY_V560SMARTAUTOQUALITY560 = "v560smartAutoQuality560" // v560 Smart Auto Quality560
+        const val KEY_V560SMOOTHSCROLLENABLED560 = "v560smoothScrollEnabled560" // v560 Smooth Scroll Enabled560
+        const val KEY_V560SNAPAUTOALIGN560 = "v560snapAutoAlign560" // v560 Snap Auto Align560
+        const val KEY_V560SORTAUTOALGORITHM560 = "v560sortAutoAlgorithm560" // v560 Sort Auto Algorithm560
+        const val KEY_V560SOURCEAUTOSELECT560 = "v560sourceAutoSelect560" // v560 Source Auto Select560
+        const val KEY_V560SPANAUTOADJUST560 = "v560spanAutoAdjust560" // v560 Span Auto Adjust560
+        const val KEY_V560SPLITAUTOVIEW560 = "v560splitAutoView560" // v560 Split Auto View560
+        const val KEY_V560STACKAUTOLAYER560 = "v560stackAutoLayer560" // v560 Stack Auto Layer560
+        const val KEY_V560STAGEAUTOADVANCE560 = "v560stageAutoAdvance560" // v560 Stage Auto Advance560
+        const val KEY_V560STARTAUTOPLAY560 = "v560startAutoPlay560" // v560 Start Auto Play560
+        const val KEY_V560STATEAUTOPERSIST560 = "v560stateAutoPersist560" // v560 State Auto Persist560
     }
 }
