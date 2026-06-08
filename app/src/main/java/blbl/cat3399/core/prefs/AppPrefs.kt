@@ -63048,6 +63048,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V940SCALEAUTODPI940, false)
         set(value) = prefs.edit().putBoolean(KEY_V940SCALEAUTODPI940, value).apply()
 
+    var v941scanAutoBarcode941: Boolean
+        get() = prefs.getBoolean(KEY_V941SCANAUTOBARCODE941, false)
+        set(value) = prefs.edit().putBoolean(KEY_V941SCANAUTOBARCODE941, value).apply()
+
+    var v941sceneAutoDetect941: Boolean
+        get() = prefs.getBoolean(KEY_V941SCENEAUTODETECT941, false)
+        set(value) = prefs.edit().putBoolean(KEY_V941SCENEAUTODETECT941, value).apply()
+
+    var v941schemeAutoDeepLink941: Boolean
+        get() = prefs.getBoolean(KEY_V941SCHEMEAUTODEEPLINK941, false)
+        set(value) = prefs.edit().putBoolean(KEY_V941SCHEMEAUTODEEPLINK941, value).apply()
+
+    var v941scopeAutoLifecycle941: Boolean
+        get() = prefs.getBoolean(KEY_V941SCOPEAUTOLIFECYCLE941, false)
+        set(value) = prefs.edit().putBoolean(KEY_V941SCOPEAUTOLIFECYCLE941, value).apply()
+
+    var v941scoreAutoWeight941: Boolean
+        get() = prefs.getBoolean(KEY_V941SCOREAUTOWEIGHT941, false)
+        set(value) = prefs.edit().putBoolean(KEY_V941SCOREAUTOWEIGHT941, value).apply()
+
+    var v941screenAutoBrightness941: Boolean
+        get() = prefs.getBoolean(KEY_V941SCREENAUTOBRIGHTNESS941, false)
+        set(value) = prefs.edit().putBoolean(KEY_V941SCREENAUTOBRIGHTNESS941, value).apply()
+
+    var v941scrollAutoPosition941: Boolean
+        get() = prefs.getBoolean(KEY_V941SCROLLAUTOPOSITION941, false)
+        set(value) = prefs.edit().putBoolean(KEY_V941SCROLLAUTOPOSITION941, value).apply()
+
+    var v941searchAutoSuggest941: Boolean
+        get() = prefs.getBoolean(KEY_V941SEARCHAUTOSUGGEST941, false)
+        set(value) = prefs.edit().putBoolean(KEY_V941SEARCHAUTOSUGGEST941, value).apply()
+
+    var v941sectionAutoHeader941: Boolean
+        get() = prefs.getBoolean(KEY_V941SECTIONAUTOHEADER941, false)
+        set(value) = prefs.edit().putBoolean(KEY_V941SECTIONAUTOHEADER941, value).apply()
+
+    var v941secureAutoLock941: Boolean
+        get() = prefs.getBoolean(KEY_V941SECUREAUTOLOCK941, false)
+        set(value) = prefs.edit().putBoolean(KEY_V941SECUREAUTOLOCK941, value).apply()
+
+    var v941seekAutoFrame941: Boolean
+        get() = prefs.getBoolean(KEY_V941SEEKAUTOFRAME941, false)
+        set(value) = prefs.edit().putBoolean(KEY_V941SEEKAUTOFRAME941, value).apply()
+
+    var v941segmentAutoMerge941: Boolean
+        get() = prefs.getBoolean(KEY_V941SEGMENTAUTOMERGE941, false)
+        set(value) = prefs.edit().putBoolean(KEY_V941SEGMENTAUTOMERGE941, value).apply()
+
+    var v941selectAutoMulti941: Boolean
+        get() = prefs.getBoolean(KEY_V941SELECTAUTOMULTI941, false)
+        set(value) = prefs.edit().putBoolean(KEY_V941SELECTAUTOMULTI941, value).apply()
+
+    var v941sendAutoBatch941: Boolean
+        get() = prefs.getBoolean(KEY_V941SENDAUTOBATCH941, false)
+        set(value) = prefs.edit().putBoolean(KEY_V941SENDAUTOBATCH941, value).apply()
+
+    var v941sensorAutoGyro941: Boolean
+        get() = prefs.getBoolean(KEY_V941SENSORAUTOGYRO941, false)
+        set(value) = prefs.edit().putBoolean(KEY_V941SENSORAUTOGYRO941, value).apply()
+
+    var v942scanAutoBarcode942: Boolean
+        get() = prefs.getBoolean(KEY_V942SCANAUTOBARCODE942, false)
+        set(value) = prefs.edit().putBoolean(KEY_V942SCANAUTOBARCODE942, value).apply()
+
+    var v942sceneAutoDetect942: Boolean
+        get() = prefs.getBoolean(KEY_V942SCENEAUTODETECT942, false)
+        set(value) = prefs.edit().putBoolean(KEY_V942SCENEAUTODETECT942, value).apply()
+
+    var v942schemeAutoDeepLink942: Boolean
+        get() = prefs.getBoolean(KEY_V942SCHEMEAUTODEEPLINK942, false)
+        set(value) = prefs.edit().putBoolean(KEY_V942SCHEMEAUTODEEPLINK942, value).apply()
+
+    var v942scopeAutoLifecycle942: Boolean
+        get() = prefs.getBoolean(KEY_V942SCOPEAUTOLIFECYCLE942, false)
+        set(value) = prefs.edit().putBoolean(KEY_V942SCOPEAUTOLIFECYCLE942, value).apply()
+
+    var v942scoreAutoWeight942: Boolean
+        get() = prefs.getBoolean(KEY_V942SCOREAUTOWEIGHT942, false)
+        set(value) = prefs.edit().putBoolean(KEY_V942SCOREAUTOWEIGHT942, value).apply()
+
+    var v942screenAutoBrightness942: Boolean
+        get() = prefs.getBoolean(KEY_V942SCREENAUTOBRIGHTNESS942, false)
+        set(value) = prefs.edit().putBoolean(KEY_V942SCREENAUTOBRIGHTNESS942, value).apply()
+
+    var v942scrollAutoPosition942: Boolean
+        get() = prefs.getBoolean(KEY_V942SCROLLAUTOPOSITION942, false)
+        set(value) = prefs.edit().putBoolean(KEY_V942SCROLLAUTOPOSITION942, value).apply()
+
+    var v942searchAutoSuggest942: Boolean
+        get() = prefs.getBoolean(KEY_V942SEARCHAUTOSUGGEST942, false)
+        set(value) = prefs.edit().putBoolean(KEY_V942SEARCHAUTOSUGGEST942, value).apply()
+
+    var v942sectionAutoHeader942: Boolean
+        get() = prefs.getBoolean(KEY_V942SECTIONAUTOHEADER942, false)
+        set(value) = prefs.edit().putBoolean(KEY_V942SECTIONAUTOHEADER942, value).apply()
+
+    var v942secureAutoLock942: Boolean
+        get() = prefs.getBoolean(KEY_V942SECUREAUTOLOCK942, false)
+        set(value) = prefs.edit().putBoolean(KEY_V942SECUREAUTOLOCK942, value).apply()
+
+    var v942seekAutoFrame942: Boolean
+        get() = prefs.getBoolean(KEY_V942SEEKAUTOFRAME942, false)
+        set(value) = prefs.edit().putBoolean(KEY_V942SEEKAUTOFRAME942, value).apply()
+
+    var v942segmentAutoMerge942: Boolean
+        get() = prefs.getBoolean(KEY_V942SEGMENTAUTOMERGE942, false)
+        set(value) = prefs.edit().putBoolean(KEY_V942SEGMENTAUTOMERGE942, value).apply()
+
+    var v942selectAutoMulti942: Boolean
+        get() = prefs.getBoolean(KEY_V942SELECTAUTOMULTI942, false)
+        set(value) = prefs.edit().putBoolean(KEY_V942SELECTAUTOMULTI942, value).apply()
+
+    var v942sendAutoBatch942: Boolean
+        get() = prefs.getBoolean(KEY_V942SENDAUTOBATCH942, false)
+        set(value) = prefs.edit().putBoolean(KEY_V942SENDAUTOBATCH942, value).apply()
+
+    var v942sensorAutoGyro942: Boolean
+        get() = prefs.getBoolean(KEY_V942SENSORAUTOGYRO942, false)
+        set(value) = prefs.edit().putBoolean(KEY_V942SENSORAUTOGYRO942, value).apply()
+
+    var v943scanAutoBarcode943: Boolean
+        get() = prefs.getBoolean(KEY_V943SCANAUTOBARCODE943, false)
+        set(value) = prefs.edit().putBoolean(KEY_V943SCANAUTOBARCODE943, value).apply()
+
+    var v943sceneAutoDetect943: Boolean
+        get() = prefs.getBoolean(KEY_V943SCENEAUTODETECT943, false)
+        set(value) = prefs.edit().putBoolean(KEY_V943SCENEAUTODETECT943, value).apply()
+
+    var v943schemeAutoDeepLink943: Boolean
+        get() = prefs.getBoolean(KEY_V943SCHEMEAUTODEEPLINK943, false)
+        set(value) = prefs.edit().putBoolean(KEY_V943SCHEMEAUTODEEPLINK943, value).apply()
+
+    var v943scopeAutoLifecycle943: Boolean
+        get() = prefs.getBoolean(KEY_V943SCOPEAUTOLIFECYCLE943, false)
+        set(value) = prefs.edit().putBoolean(KEY_V943SCOPEAUTOLIFECYCLE943, value).apply()
+
+    var v943scoreAutoWeight943: Boolean
+        get() = prefs.getBoolean(KEY_V943SCOREAUTOWEIGHT943, false)
+        set(value) = prefs.edit().putBoolean(KEY_V943SCOREAUTOWEIGHT943, value).apply()
+
+    var v943screenAutoBrightness943: Boolean
+        get() = prefs.getBoolean(KEY_V943SCREENAUTOBRIGHTNESS943, false)
+        set(value) = prefs.edit().putBoolean(KEY_V943SCREENAUTOBRIGHTNESS943, value).apply()
+
+    var v943scrollAutoPosition943: Boolean
+        get() = prefs.getBoolean(KEY_V943SCROLLAUTOPOSITION943, false)
+        set(value) = prefs.edit().putBoolean(KEY_V943SCROLLAUTOPOSITION943, value).apply()
+
+    var v943searchAutoSuggest943: Boolean
+        get() = prefs.getBoolean(KEY_V943SEARCHAUTOSUGGEST943, false)
+        set(value) = prefs.edit().putBoolean(KEY_V943SEARCHAUTOSUGGEST943, value).apply()
+
+    var v943sectionAutoHeader943: Boolean
+        get() = prefs.getBoolean(KEY_V943SECTIONAUTOHEADER943, false)
+        set(value) = prefs.edit().putBoolean(KEY_V943SECTIONAUTOHEADER943, value).apply()
+
+    var v943secureAutoLock943: Boolean
+        get() = prefs.getBoolean(KEY_V943SECUREAUTOLOCK943, false)
+        set(value) = prefs.edit().putBoolean(KEY_V943SECUREAUTOLOCK943, value).apply()
+
+    var v943seekAutoFrame943: Boolean
+        get() = prefs.getBoolean(KEY_V943SEEKAUTOFRAME943, false)
+        set(value) = prefs.edit().putBoolean(KEY_V943SEEKAUTOFRAME943, value).apply()
+
+    var v943segmentAutoMerge943: Boolean
+        get() = prefs.getBoolean(KEY_V943SEGMENTAUTOMERGE943, false)
+        set(value) = prefs.edit().putBoolean(KEY_V943SEGMENTAUTOMERGE943, value).apply()
+
+    var v943selectAutoMulti943: Boolean
+        get() = prefs.getBoolean(KEY_V943SELECTAUTOMULTI943, false)
+        set(value) = prefs.edit().putBoolean(KEY_V943SELECTAUTOMULTI943, value).apply()
+
+    var v943sendAutoBatch943: Boolean
+        get() = prefs.getBoolean(KEY_V943SENDAUTOBATCH943, false)
+        set(value) = prefs.edit().putBoolean(KEY_V943SENDAUTOBATCH943, value).apply()
+
+    var v943sensorAutoGyro943: Boolean
+        get() = prefs.getBoolean(KEY_V943SENSORAUTOGYRO943, false)
+        set(value) = prefs.edit().putBoolean(KEY_V943SENSORAUTOGYRO943, value).apply()
+
+    var v944scanAutoBarcode944: Boolean
+        get() = prefs.getBoolean(KEY_V944SCANAUTOBARCODE944, false)
+        set(value) = prefs.edit().putBoolean(KEY_V944SCANAUTOBARCODE944, value).apply()
+
+    var v944sceneAutoDetect944: Boolean
+        get() = prefs.getBoolean(KEY_V944SCENEAUTODETECT944, false)
+        set(value) = prefs.edit().putBoolean(KEY_V944SCENEAUTODETECT944, value).apply()
+
+    var v944schemeAutoDeepLink944: Boolean
+        get() = prefs.getBoolean(KEY_V944SCHEMEAUTODEEPLINK944, false)
+        set(value) = prefs.edit().putBoolean(KEY_V944SCHEMEAUTODEEPLINK944, value).apply()
+
+    var v944scopeAutoLifecycle944: Boolean
+        get() = prefs.getBoolean(KEY_V944SCOPEAUTOLIFECYCLE944, false)
+        set(value) = prefs.edit().putBoolean(KEY_V944SCOPEAUTOLIFECYCLE944, value).apply()
+
+    var v944scoreAutoWeight944: Boolean
+        get() = prefs.getBoolean(KEY_V944SCOREAUTOWEIGHT944, false)
+        set(value) = prefs.edit().putBoolean(KEY_V944SCOREAUTOWEIGHT944, value).apply()
+
+    var v944screenAutoBrightness944: Boolean
+        get() = prefs.getBoolean(KEY_V944SCREENAUTOBRIGHTNESS944, false)
+        set(value) = prefs.edit().putBoolean(KEY_V944SCREENAUTOBRIGHTNESS944, value).apply()
+
+    var v944scrollAutoPosition944: Boolean
+        get() = prefs.getBoolean(KEY_V944SCROLLAUTOPOSITION944, false)
+        set(value) = prefs.edit().putBoolean(KEY_V944SCROLLAUTOPOSITION944, value).apply()
+
+    var v944searchAutoSuggest944: Boolean
+        get() = prefs.getBoolean(KEY_V944SEARCHAUTOSUGGEST944, false)
+        set(value) = prefs.edit().putBoolean(KEY_V944SEARCHAUTOSUGGEST944, value).apply()
+
+    var v944sectionAutoHeader944: Boolean
+        get() = prefs.getBoolean(KEY_V944SECTIONAUTOHEADER944, false)
+        set(value) = prefs.edit().putBoolean(KEY_V944SECTIONAUTOHEADER944, value).apply()
+
+    var v944secureAutoLock944: Boolean
+        get() = prefs.getBoolean(KEY_V944SECUREAUTOLOCK944, false)
+        set(value) = prefs.edit().putBoolean(KEY_V944SECUREAUTOLOCK944, value).apply()
+
+    var v944seekAutoFrame944: Boolean
+        get() = prefs.getBoolean(KEY_V944SEEKAUTOFRAME944, false)
+        set(value) = prefs.edit().putBoolean(KEY_V944SEEKAUTOFRAME944, value).apply()
+
+    var v944segmentAutoMerge944: Boolean
+        get() = prefs.getBoolean(KEY_V944SEGMENTAUTOMERGE944, false)
+        set(value) = prefs.edit().putBoolean(KEY_V944SEGMENTAUTOMERGE944, value).apply()
+
+    var v944selectAutoMulti944: Boolean
+        get() = prefs.getBoolean(KEY_V944SELECTAUTOMULTI944, false)
+        set(value) = prefs.edit().putBoolean(KEY_V944SELECTAUTOMULTI944, value).apply()
+
+    var v944sendAutoBatch944: Boolean
+        get() = prefs.getBoolean(KEY_V944SENDAUTOBATCH944, false)
+        set(value) = prefs.edit().putBoolean(KEY_V944SENDAUTOBATCH944, value).apply()
+
+    var v944sensorAutoGyro944: Boolean
+        get() = prefs.getBoolean(KEY_V944SENSORAUTOGYRO944, false)
+        set(value) = prefs.edit().putBoolean(KEY_V944SENSORAUTOGYRO944, value).apply()
+
+    var v945scanAutoBarcode945: Boolean
+        get() = prefs.getBoolean(KEY_V945SCANAUTOBARCODE945, false)
+        set(value) = prefs.edit().putBoolean(KEY_V945SCANAUTOBARCODE945, value).apply()
+
+    var v945sceneAutoDetect945: Boolean
+        get() = prefs.getBoolean(KEY_V945SCENEAUTODETECT945, false)
+        set(value) = prefs.edit().putBoolean(KEY_V945SCENEAUTODETECT945, value).apply()
+
+    var v945schemeAutoDeepLink945: Boolean
+        get() = prefs.getBoolean(KEY_V945SCHEMEAUTODEEPLINK945, false)
+        set(value) = prefs.edit().putBoolean(KEY_V945SCHEMEAUTODEEPLINK945, value).apply()
+
+    var v945scopeAutoLifecycle945: Boolean
+        get() = prefs.getBoolean(KEY_V945SCOPEAUTOLIFECYCLE945, false)
+        set(value) = prefs.edit().putBoolean(KEY_V945SCOPEAUTOLIFECYCLE945, value).apply()
+
+    var v945scoreAutoWeight945: Boolean
+        get() = prefs.getBoolean(KEY_V945SCOREAUTOWEIGHT945, false)
+        set(value) = prefs.edit().putBoolean(KEY_V945SCOREAUTOWEIGHT945, value).apply()
+
+    var v945screenAutoBrightness945: Boolean
+        get() = prefs.getBoolean(KEY_V945SCREENAUTOBRIGHTNESS945, false)
+        set(value) = prefs.edit().putBoolean(KEY_V945SCREENAUTOBRIGHTNESS945, value).apply()
+
+    var v945scrollAutoPosition945: Boolean
+        get() = prefs.getBoolean(KEY_V945SCROLLAUTOPOSITION945, false)
+        set(value) = prefs.edit().putBoolean(KEY_V945SCROLLAUTOPOSITION945, value).apply()
+
+    var v945searchAutoSuggest945: Boolean
+        get() = prefs.getBoolean(KEY_V945SEARCHAUTOSUGGEST945, false)
+        set(value) = prefs.edit().putBoolean(KEY_V945SEARCHAUTOSUGGEST945, value).apply()
+
+    var v945sectionAutoHeader945: Boolean
+        get() = prefs.getBoolean(KEY_V945SECTIONAUTOHEADER945, false)
+        set(value) = prefs.edit().putBoolean(KEY_V945SECTIONAUTOHEADER945, value).apply()
+
+    var v945secureAutoLock945: Boolean
+        get() = prefs.getBoolean(KEY_V945SECUREAUTOLOCK945, false)
+        set(value) = prefs.edit().putBoolean(KEY_V945SECUREAUTOLOCK945, value).apply()
+
+    var v945seekAutoFrame945: Boolean
+        get() = prefs.getBoolean(KEY_V945SEEKAUTOFRAME945, false)
+        set(value) = prefs.edit().putBoolean(KEY_V945SEEKAUTOFRAME945, value).apply()
+
+    var v945segmentAutoMerge945: Boolean
+        get() = prefs.getBoolean(KEY_V945SEGMENTAUTOMERGE945, false)
+        set(value) = prefs.edit().putBoolean(KEY_V945SEGMENTAUTOMERGE945, value).apply()
+
+    var v945selectAutoMulti945: Boolean
+        get() = prefs.getBoolean(KEY_V945SELECTAUTOMULTI945, false)
+        set(value) = prefs.edit().putBoolean(KEY_V945SELECTAUTOMULTI945, value).apply()
+
+    var v945sendAutoBatch945: Boolean
+        get() = prefs.getBoolean(KEY_V945SENDAUTOBATCH945, false)
+        set(value) = prefs.edit().putBoolean(KEY_V945SENDAUTOBATCH945, value).apply()
+
+    var v945sensorAutoGyro945: Boolean
+        get() = prefs.getBoolean(KEY_V945SENSORAUTOGYRO945, false)
+        set(value) = prefs.edit().putBoolean(KEY_V945SENSORAUTOGYRO945, value).apply()
+
+    var v946scanAutoBarcode946: Boolean
+        get() = prefs.getBoolean(KEY_V946SCANAUTOBARCODE946, false)
+        set(value) = prefs.edit().putBoolean(KEY_V946SCANAUTOBARCODE946, value).apply()
+
+    var v946sceneAutoDetect946: Boolean
+        get() = prefs.getBoolean(KEY_V946SCENEAUTODETECT946, false)
+        set(value) = prefs.edit().putBoolean(KEY_V946SCENEAUTODETECT946, value).apply()
+
+    var v946schemeAutoDeepLink946: Boolean
+        get() = prefs.getBoolean(KEY_V946SCHEMEAUTODEEPLINK946, false)
+        set(value) = prefs.edit().putBoolean(KEY_V946SCHEMEAUTODEEPLINK946, value).apply()
+
+    var v946scopeAutoLifecycle946: Boolean
+        get() = prefs.getBoolean(KEY_V946SCOPEAUTOLIFECYCLE946, false)
+        set(value) = prefs.edit().putBoolean(KEY_V946SCOPEAUTOLIFECYCLE946, value).apply()
+
+    var v946scoreAutoWeight946: Boolean
+        get() = prefs.getBoolean(KEY_V946SCOREAUTOWEIGHT946, false)
+        set(value) = prefs.edit().putBoolean(KEY_V946SCOREAUTOWEIGHT946, value).apply()
+
+    var v946screenAutoBrightness946: Boolean
+        get() = prefs.getBoolean(KEY_V946SCREENAUTOBRIGHTNESS946, false)
+        set(value) = prefs.edit().putBoolean(KEY_V946SCREENAUTOBRIGHTNESS946, value).apply()
+
+    var v946scrollAutoPosition946: Boolean
+        get() = prefs.getBoolean(KEY_V946SCROLLAUTOPOSITION946, false)
+        set(value) = prefs.edit().putBoolean(KEY_V946SCROLLAUTOPOSITION946, value).apply()
+
+    var v946searchAutoSuggest946: Boolean
+        get() = prefs.getBoolean(KEY_V946SEARCHAUTOSUGGEST946, false)
+        set(value) = prefs.edit().putBoolean(KEY_V946SEARCHAUTOSUGGEST946, value).apply()
+
+    var v946sectionAutoHeader946: Boolean
+        get() = prefs.getBoolean(KEY_V946SECTIONAUTOHEADER946, false)
+        set(value) = prefs.edit().putBoolean(KEY_V946SECTIONAUTOHEADER946, value).apply()
+
+    var v946secureAutoLock946: Boolean
+        get() = prefs.getBoolean(KEY_V946SECUREAUTOLOCK946, false)
+        set(value) = prefs.edit().putBoolean(KEY_V946SECUREAUTOLOCK946, value).apply()
+
+    var v946seekAutoFrame946: Boolean
+        get() = prefs.getBoolean(KEY_V946SEEKAUTOFRAME946, false)
+        set(value) = prefs.edit().putBoolean(KEY_V946SEEKAUTOFRAME946, value).apply()
+
+    var v946segmentAutoMerge946: Boolean
+        get() = prefs.getBoolean(KEY_V946SEGMENTAUTOMERGE946, false)
+        set(value) = prefs.edit().putBoolean(KEY_V946SEGMENTAUTOMERGE946, value).apply()
+
+    var v946selectAutoMulti946: Boolean
+        get() = prefs.getBoolean(KEY_V946SELECTAUTOMULTI946, false)
+        set(value) = prefs.edit().putBoolean(KEY_V946SELECTAUTOMULTI946, value).apply()
+
+    var v946sendAutoBatch946: Boolean
+        get() = prefs.getBoolean(KEY_V946SENDAUTOBATCH946, false)
+        set(value) = prefs.edit().putBoolean(KEY_V946SENDAUTOBATCH946, value).apply()
+
+    var v946sensorAutoGyro946: Boolean
+        get() = prefs.getBoolean(KEY_V946SENSORAUTOGYRO946, false)
+        set(value) = prefs.edit().putBoolean(KEY_V946SENSORAUTOGYRO946, value).apply()
+
+    var v947scanAutoBarcode947: Boolean
+        get() = prefs.getBoolean(KEY_V947SCANAUTOBARCODE947, false)
+        set(value) = prefs.edit().putBoolean(KEY_V947SCANAUTOBARCODE947, value).apply()
+
+    var v947sceneAutoDetect947: Boolean
+        get() = prefs.getBoolean(KEY_V947SCENEAUTODETECT947, false)
+        set(value) = prefs.edit().putBoolean(KEY_V947SCENEAUTODETECT947, value).apply()
+
+    var v947schemeAutoDeepLink947: Boolean
+        get() = prefs.getBoolean(KEY_V947SCHEMEAUTODEEPLINK947, false)
+        set(value) = prefs.edit().putBoolean(KEY_V947SCHEMEAUTODEEPLINK947, value).apply()
+
+    var v947scopeAutoLifecycle947: Boolean
+        get() = prefs.getBoolean(KEY_V947SCOPEAUTOLIFECYCLE947, false)
+        set(value) = prefs.edit().putBoolean(KEY_V947SCOPEAUTOLIFECYCLE947, value).apply()
+
+    var v947scoreAutoWeight947: Boolean
+        get() = prefs.getBoolean(KEY_V947SCOREAUTOWEIGHT947, false)
+        set(value) = prefs.edit().putBoolean(KEY_V947SCOREAUTOWEIGHT947, value).apply()
+
+    var v947screenAutoBrightness947: Boolean
+        get() = prefs.getBoolean(KEY_V947SCREENAUTOBRIGHTNESS947, false)
+        set(value) = prefs.edit().putBoolean(KEY_V947SCREENAUTOBRIGHTNESS947, value).apply()
+
+    var v947scrollAutoPosition947: Boolean
+        get() = prefs.getBoolean(KEY_V947SCROLLAUTOPOSITION947, false)
+        set(value) = prefs.edit().putBoolean(KEY_V947SCROLLAUTOPOSITION947, value).apply()
+
+    var v947searchAutoSuggest947: Boolean
+        get() = prefs.getBoolean(KEY_V947SEARCHAUTOSUGGEST947, false)
+        set(value) = prefs.edit().putBoolean(KEY_V947SEARCHAUTOSUGGEST947, value).apply()
+
+    var v947sectionAutoHeader947: Boolean
+        get() = prefs.getBoolean(KEY_V947SECTIONAUTOHEADER947, false)
+        set(value) = prefs.edit().putBoolean(KEY_V947SECTIONAUTOHEADER947, value).apply()
+
+    var v947secureAutoLock947: Boolean
+        get() = prefs.getBoolean(KEY_V947SECUREAUTOLOCK947, false)
+        set(value) = prefs.edit().putBoolean(KEY_V947SECUREAUTOLOCK947, value).apply()
+
+    var v947seekAutoFrame947: Boolean
+        get() = prefs.getBoolean(KEY_V947SEEKAUTOFRAME947, false)
+        set(value) = prefs.edit().putBoolean(KEY_V947SEEKAUTOFRAME947, value).apply()
+
+    var v947segmentAutoMerge947: Boolean
+        get() = prefs.getBoolean(KEY_V947SEGMENTAUTOMERGE947, false)
+        set(value) = prefs.edit().putBoolean(KEY_V947SEGMENTAUTOMERGE947, value).apply()
+
+    var v947selectAutoMulti947: Boolean
+        get() = prefs.getBoolean(KEY_V947SELECTAUTOMULTI947, false)
+        set(value) = prefs.edit().putBoolean(KEY_V947SELECTAUTOMULTI947, value).apply()
+
+    var v947sendAutoBatch947: Boolean
+        get() = prefs.getBoolean(KEY_V947SENDAUTOBATCH947, false)
+        set(value) = prefs.edit().putBoolean(KEY_V947SENDAUTOBATCH947, value).apply()
+
+    var v947sensorAutoGyro947: Boolean
+        get() = prefs.getBoolean(KEY_V947SENSORAUTOGYRO947, false)
+        set(value) = prefs.edit().putBoolean(KEY_V947SENSORAUTOGYRO947, value).apply()
+
+    var v948scanAutoBarcode948: Boolean
+        get() = prefs.getBoolean(KEY_V948SCANAUTOBARCODE948, false)
+        set(value) = prefs.edit().putBoolean(KEY_V948SCANAUTOBARCODE948, value).apply()
+
+    var v948sceneAutoDetect948: Boolean
+        get() = prefs.getBoolean(KEY_V948SCENEAUTODETECT948, false)
+        set(value) = prefs.edit().putBoolean(KEY_V948SCENEAUTODETECT948, value).apply()
+
+    var v948schemeAutoDeepLink948: Boolean
+        get() = prefs.getBoolean(KEY_V948SCHEMEAUTODEEPLINK948, false)
+        set(value) = prefs.edit().putBoolean(KEY_V948SCHEMEAUTODEEPLINK948, value).apply()
+
+    var v948scopeAutoLifecycle948: Boolean
+        get() = prefs.getBoolean(KEY_V948SCOPEAUTOLIFECYCLE948, false)
+        set(value) = prefs.edit().putBoolean(KEY_V948SCOPEAUTOLIFECYCLE948, value).apply()
+
+    var v948scoreAutoWeight948: Boolean
+        get() = prefs.getBoolean(KEY_V948SCOREAUTOWEIGHT948, false)
+        set(value) = prefs.edit().putBoolean(KEY_V948SCOREAUTOWEIGHT948, value).apply()
+
+    var v948screenAutoBrightness948: Boolean
+        get() = prefs.getBoolean(KEY_V948SCREENAUTOBRIGHTNESS948, false)
+        set(value) = prefs.edit().putBoolean(KEY_V948SCREENAUTOBRIGHTNESS948, value).apply()
+
+    var v948scrollAutoPosition948: Boolean
+        get() = prefs.getBoolean(KEY_V948SCROLLAUTOPOSITION948, false)
+        set(value) = prefs.edit().putBoolean(KEY_V948SCROLLAUTOPOSITION948, value).apply()
+
+    var v948searchAutoSuggest948: Boolean
+        get() = prefs.getBoolean(KEY_V948SEARCHAUTOSUGGEST948, false)
+        set(value) = prefs.edit().putBoolean(KEY_V948SEARCHAUTOSUGGEST948, value).apply()
+
+    var v948sectionAutoHeader948: Boolean
+        get() = prefs.getBoolean(KEY_V948SECTIONAUTOHEADER948, false)
+        set(value) = prefs.edit().putBoolean(KEY_V948SECTIONAUTOHEADER948, value).apply()
+
+    var v948secureAutoLock948: Boolean
+        get() = prefs.getBoolean(KEY_V948SECUREAUTOLOCK948, false)
+        set(value) = prefs.edit().putBoolean(KEY_V948SECUREAUTOLOCK948, value).apply()
+
+    var v948seekAutoFrame948: Boolean
+        get() = prefs.getBoolean(KEY_V948SEEKAUTOFRAME948, false)
+        set(value) = prefs.edit().putBoolean(KEY_V948SEEKAUTOFRAME948, value).apply()
+
+    var v948segmentAutoMerge948: Boolean
+        get() = prefs.getBoolean(KEY_V948SEGMENTAUTOMERGE948, false)
+        set(value) = prefs.edit().putBoolean(KEY_V948SEGMENTAUTOMERGE948, value).apply()
+
+    var v948selectAutoMulti948: Boolean
+        get() = prefs.getBoolean(KEY_V948SELECTAUTOMULTI948, false)
+        set(value) = prefs.edit().putBoolean(KEY_V948SELECTAUTOMULTI948, value).apply()
+
+    var v948sendAutoBatch948: Boolean
+        get() = prefs.getBoolean(KEY_V948SENDAUTOBATCH948, false)
+        set(value) = prefs.edit().putBoolean(KEY_V948SENDAUTOBATCH948, value).apply()
+
+    var v948sensorAutoGyro948: Boolean
+        get() = prefs.getBoolean(KEY_V948SENSORAUTOGYRO948, false)
+        set(value) = prefs.edit().putBoolean(KEY_V948SENSORAUTOGYRO948, value).apply()
+
+    var v949scanAutoBarcode949: Boolean
+        get() = prefs.getBoolean(KEY_V949SCANAUTOBARCODE949, false)
+        set(value) = prefs.edit().putBoolean(KEY_V949SCANAUTOBARCODE949, value).apply()
+
+    var v949sceneAutoDetect949: Boolean
+        get() = prefs.getBoolean(KEY_V949SCENEAUTODETECT949, false)
+        set(value) = prefs.edit().putBoolean(KEY_V949SCENEAUTODETECT949, value).apply()
+
+    var v949schemeAutoDeepLink949: Boolean
+        get() = prefs.getBoolean(KEY_V949SCHEMEAUTODEEPLINK949, false)
+        set(value) = prefs.edit().putBoolean(KEY_V949SCHEMEAUTODEEPLINK949, value).apply()
+
+    var v949scopeAutoLifecycle949: Boolean
+        get() = prefs.getBoolean(KEY_V949SCOPEAUTOLIFECYCLE949, false)
+        set(value) = prefs.edit().putBoolean(KEY_V949SCOPEAUTOLIFECYCLE949, value).apply()
+
+    var v949scoreAutoWeight949: Boolean
+        get() = prefs.getBoolean(KEY_V949SCOREAUTOWEIGHT949, false)
+        set(value) = prefs.edit().putBoolean(KEY_V949SCOREAUTOWEIGHT949, value).apply()
+
+    var v949screenAutoBrightness949: Boolean
+        get() = prefs.getBoolean(KEY_V949SCREENAUTOBRIGHTNESS949, false)
+        set(value) = prefs.edit().putBoolean(KEY_V949SCREENAUTOBRIGHTNESS949, value).apply()
+
+    var v949scrollAutoPosition949: Boolean
+        get() = prefs.getBoolean(KEY_V949SCROLLAUTOPOSITION949, false)
+        set(value) = prefs.edit().putBoolean(KEY_V949SCROLLAUTOPOSITION949, value).apply()
+
+    var v949searchAutoSuggest949: Boolean
+        get() = prefs.getBoolean(KEY_V949SEARCHAUTOSUGGEST949, false)
+        set(value) = prefs.edit().putBoolean(KEY_V949SEARCHAUTOSUGGEST949, value).apply()
+
+    var v949sectionAutoHeader949: Boolean
+        get() = prefs.getBoolean(KEY_V949SECTIONAUTOHEADER949, false)
+        set(value) = prefs.edit().putBoolean(KEY_V949SECTIONAUTOHEADER949, value).apply()
+
+    var v949secureAutoLock949: Boolean
+        get() = prefs.getBoolean(KEY_V949SECUREAUTOLOCK949, false)
+        set(value) = prefs.edit().putBoolean(KEY_V949SECUREAUTOLOCK949, value).apply()
+
+    var v949seekAutoFrame949: Boolean
+        get() = prefs.getBoolean(KEY_V949SEEKAUTOFRAME949, false)
+        set(value) = prefs.edit().putBoolean(KEY_V949SEEKAUTOFRAME949, value).apply()
+
+    var v949segmentAutoMerge949: Boolean
+        get() = prefs.getBoolean(KEY_V949SEGMENTAUTOMERGE949, false)
+        set(value) = prefs.edit().putBoolean(KEY_V949SEGMENTAUTOMERGE949, value).apply()
+
+    var v949selectAutoMulti949: Boolean
+        get() = prefs.getBoolean(KEY_V949SELECTAUTOMULTI949, false)
+        set(value) = prefs.edit().putBoolean(KEY_V949SELECTAUTOMULTI949, value).apply()
+
+    var v949sendAutoBatch949: Boolean
+        get() = prefs.getBoolean(KEY_V949SENDAUTOBATCH949, false)
+        set(value) = prefs.edit().putBoolean(KEY_V949SENDAUTOBATCH949, value).apply()
+
+    var v949sensorAutoGyro949: Boolean
+        get() = prefs.getBoolean(KEY_V949SENSORAUTOGYRO949, false)
+        set(value) = prefs.edit().putBoolean(KEY_V949SENSORAUTOGYRO949, value).apply()
+
+    var v950scanAutoBarcode950: Boolean
+        get() = prefs.getBoolean(KEY_V950SCANAUTOBARCODE950, false)
+        set(value) = prefs.edit().putBoolean(KEY_V950SCANAUTOBARCODE950, value).apply()
+
+    var v950sceneAutoDetect950: Boolean
+        get() = prefs.getBoolean(KEY_V950SCENEAUTODETECT950, false)
+        set(value) = prefs.edit().putBoolean(KEY_V950SCENEAUTODETECT950, value).apply()
+
+    var v950schemeAutoDeepLink950: Boolean
+        get() = prefs.getBoolean(KEY_V950SCHEMEAUTODEEPLINK950, false)
+        set(value) = prefs.edit().putBoolean(KEY_V950SCHEMEAUTODEEPLINK950, value).apply()
+
+    var v950scopeAutoLifecycle950: Boolean
+        get() = prefs.getBoolean(KEY_V950SCOPEAUTOLIFECYCLE950, false)
+        set(value) = prefs.edit().putBoolean(KEY_V950SCOPEAUTOLIFECYCLE950, value).apply()
+
+    var v950scoreAutoWeight950: Boolean
+        get() = prefs.getBoolean(KEY_V950SCOREAUTOWEIGHT950, false)
+        set(value) = prefs.edit().putBoolean(KEY_V950SCOREAUTOWEIGHT950, value).apply()
+
+    var v950screenAutoBrightness950: Boolean
+        get() = prefs.getBoolean(KEY_V950SCREENAUTOBRIGHTNESS950, false)
+        set(value) = prefs.edit().putBoolean(KEY_V950SCREENAUTOBRIGHTNESS950, value).apply()
+
+    var v950scrollAutoPosition950: Boolean
+        get() = prefs.getBoolean(KEY_V950SCROLLAUTOPOSITION950, false)
+        set(value) = prefs.edit().putBoolean(KEY_V950SCROLLAUTOPOSITION950, value).apply()
+
+    var v950searchAutoSuggest950: Boolean
+        get() = prefs.getBoolean(KEY_V950SEARCHAUTOSUGGEST950, false)
+        set(value) = prefs.edit().putBoolean(KEY_V950SEARCHAUTOSUGGEST950, value).apply()
+
+    var v950sectionAutoHeader950: Boolean
+        get() = prefs.getBoolean(KEY_V950SECTIONAUTOHEADER950, false)
+        set(value) = prefs.edit().putBoolean(KEY_V950SECTIONAUTOHEADER950, value).apply()
+
+    var v950secureAutoLock950: Boolean
+        get() = prefs.getBoolean(KEY_V950SECUREAUTOLOCK950, false)
+        set(value) = prefs.edit().putBoolean(KEY_V950SECUREAUTOLOCK950, value).apply()
+
+    var v950seekAutoFrame950: Boolean
+        get() = prefs.getBoolean(KEY_V950SEEKAUTOFRAME950, false)
+        set(value) = prefs.edit().putBoolean(KEY_V950SEEKAUTOFRAME950, value).apply()
+
+    var v950segmentAutoMerge950: Boolean
+        get() = prefs.getBoolean(KEY_V950SEGMENTAUTOMERGE950, false)
+        set(value) = prefs.edit().putBoolean(KEY_V950SEGMENTAUTOMERGE950, value).apply()
+
+    var v950selectAutoMulti950: Boolean
+        get() = prefs.getBoolean(KEY_V950SELECTAUTOMULTI950, false)
+        set(value) = prefs.edit().putBoolean(KEY_V950SELECTAUTOMULTI950, value).apply()
+
+    var v950sendAutoBatch950: Boolean
+        get() = prefs.getBoolean(KEY_V950SENDAUTOBATCH950, false)
+        set(value) = prefs.edit().putBoolean(KEY_V950SENDAUTOBATCH950, value).apply()
+
+    var v950sensorAutoGyro950: Boolean
+        get() = prefs.getBoolean(KEY_V950SENSORAUTOGYRO950, false)
+        set(value) = prefs.edit().putBoolean(KEY_V950SENSORAUTOGYRO950, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -79680,5 +80280,155 @@ class AppPrefs(context: Context) {
         const val KEY_V940SAMPLEAUTORATE940 = "v940sampleAutoRate940" // v940 Sample Auto Rate940
         const val KEY_V940SAVEAUTODRAFT940 = "v940saveAutoDraft940" // v940 Save Auto Draft940
         const val KEY_V940SCALEAUTODPI940 = "v940scaleAutoDpi940" // v940 Scale Auto Dpi940
+        const val KEY_V941SCANAUTOBARCODE941 = "v941scanAutoBarcode941" // v941 Scan Auto Barcode941
+        const val KEY_V941SCENEAUTODETECT941 = "v941sceneAutoDetect941" // v941 Scene Auto Detect941
+        const val KEY_V941SCHEMEAUTODEEPLINK941 = "v941schemeAutoDeepLink941" // v941 Scheme Auto DeepLink941
+        const val KEY_V941SCOPEAUTOLIFECYCLE941 = "v941scopeAutoLifecycle941" // v941 Scope Auto Lifecycle941
+        const val KEY_V941SCOREAUTOWEIGHT941 = "v941scoreAutoWeight941" // v941 Score Auto Weight941
+        const val KEY_V941SCREENAUTOBRIGHTNESS941 = "v941screenAutoBrightness941" // v941 Screen Auto Brightness941
+        const val KEY_V941SCROLLAUTOPOSITION941 = "v941scrollAutoPosition941" // v941 Scroll Auto Position941
+        const val KEY_V941SEARCHAUTOSUGGEST941 = "v941searchAutoSuggest941" // v941 Search Auto Suggest941
+        const val KEY_V941SECTIONAUTOHEADER941 = "v941sectionAutoHeader941" // v941 Section Auto Header941
+        const val KEY_V941SECUREAUTOLOCK941 = "v941secureAutoLock941" // v941 Secure Auto Lock941
+        const val KEY_V941SEEKAUTOFRAME941 = "v941seekAutoFrame941" // v941 Seek Auto Frame941
+        const val KEY_V941SEGMENTAUTOMERGE941 = "v941segmentAutoMerge941" // v941 Segment Auto Merge941
+        const val KEY_V941SELECTAUTOMULTI941 = "v941selectAutoMulti941" // v941 Select Auto Multi941
+        const val KEY_V941SENDAUTOBATCH941 = "v941sendAutoBatch941" // v941 Send Auto Batch941
+        const val KEY_V941SENSORAUTOGYRO941 = "v941sensorAutoGyro941" // v941 Sensor Auto Gyro941
+        const val KEY_V942SCANAUTOBARCODE942 = "v942scanAutoBarcode942" // v942 Scan Auto Barcode942
+        const val KEY_V942SCENEAUTODETECT942 = "v942sceneAutoDetect942" // v942 Scene Auto Detect942
+        const val KEY_V942SCHEMEAUTODEEPLINK942 = "v942schemeAutoDeepLink942" // v942 Scheme Auto DeepLink942
+        const val KEY_V942SCOPEAUTOLIFECYCLE942 = "v942scopeAutoLifecycle942" // v942 Scope Auto Lifecycle942
+        const val KEY_V942SCOREAUTOWEIGHT942 = "v942scoreAutoWeight942" // v942 Score Auto Weight942
+        const val KEY_V942SCREENAUTOBRIGHTNESS942 = "v942screenAutoBrightness942" // v942 Screen Auto Brightness942
+        const val KEY_V942SCROLLAUTOPOSITION942 = "v942scrollAutoPosition942" // v942 Scroll Auto Position942
+        const val KEY_V942SEARCHAUTOSUGGEST942 = "v942searchAutoSuggest942" // v942 Search Auto Suggest942
+        const val KEY_V942SECTIONAUTOHEADER942 = "v942sectionAutoHeader942" // v942 Section Auto Header942
+        const val KEY_V942SECUREAUTOLOCK942 = "v942secureAutoLock942" // v942 Secure Auto Lock942
+        const val KEY_V942SEEKAUTOFRAME942 = "v942seekAutoFrame942" // v942 Seek Auto Frame942
+        const val KEY_V942SEGMENTAUTOMERGE942 = "v942segmentAutoMerge942" // v942 Segment Auto Merge942
+        const val KEY_V942SELECTAUTOMULTI942 = "v942selectAutoMulti942" // v942 Select Auto Multi942
+        const val KEY_V942SENDAUTOBATCH942 = "v942sendAutoBatch942" // v942 Send Auto Batch942
+        const val KEY_V942SENSORAUTOGYRO942 = "v942sensorAutoGyro942" // v942 Sensor Auto Gyro942
+        const val KEY_V943SCANAUTOBARCODE943 = "v943scanAutoBarcode943" // v943 Scan Auto Barcode943
+        const val KEY_V943SCENEAUTODETECT943 = "v943sceneAutoDetect943" // v943 Scene Auto Detect943
+        const val KEY_V943SCHEMEAUTODEEPLINK943 = "v943schemeAutoDeepLink943" // v943 Scheme Auto DeepLink943
+        const val KEY_V943SCOPEAUTOLIFECYCLE943 = "v943scopeAutoLifecycle943" // v943 Scope Auto Lifecycle943
+        const val KEY_V943SCOREAUTOWEIGHT943 = "v943scoreAutoWeight943" // v943 Score Auto Weight943
+        const val KEY_V943SCREENAUTOBRIGHTNESS943 = "v943screenAutoBrightness943" // v943 Screen Auto Brightness943
+        const val KEY_V943SCROLLAUTOPOSITION943 = "v943scrollAutoPosition943" // v943 Scroll Auto Position943
+        const val KEY_V943SEARCHAUTOSUGGEST943 = "v943searchAutoSuggest943" // v943 Search Auto Suggest943
+        const val KEY_V943SECTIONAUTOHEADER943 = "v943sectionAutoHeader943" // v943 Section Auto Header943
+        const val KEY_V943SECUREAUTOLOCK943 = "v943secureAutoLock943" // v943 Secure Auto Lock943
+        const val KEY_V943SEEKAUTOFRAME943 = "v943seekAutoFrame943" // v943 Seek Auto Frame943
+        const val KEY_V943SEGMENTAUTOMERGE943 = "v943segmentAutoMerge943" // v943 Segment Auto Merge943
+        const val KEY_V943SELECTAUTOMULTI943 = "v943selectAutoMulti943" // v943 Select Auto Multi943
+        const val KEY_V943SENDAUTOBATCH943 = "v943sendAutoBatch943" // v943 Send Auto Batch943
+        const val KEY_V943SENSORAUTOGYRO943 = "v943sensorAutoGyro943" // v943 Sensor Auto Gyro943
+        const val KEY_V944SCANAUTOBARCODE944 = "v944scanAutoBarcode944" // v944 Scan Auto Barcode944
+        const val KEY_V944SCENEAUTODETECT944 = "v944sceneAutoDetect944" // v944 Scene Auto Detect944
+        const val KEY_V944SCHEMEAUTODEEPLINK944 = "v944schemeAutoDeepLink944" // v944 Scheme Auto DeepLink944
+        const val KEY_V944SCOPEAUTOLIFECYCLE944 = "v944scopeAutoLifecycle944" // v944 Scope Auto Lifecycle944
+        const val KEY_V944SCOREAUTOWEIGHT944 = "v944scoreAutoWeight944" // v944 Score Auto Weight944
+        const val KEY_V944SCREENAUTOBRIGHTNESS944 = "v944screenAutoBrightness944" // v944 Screen Auto Brightness944
+        const val KEY_V944SCROLLAUTOPOSITION944 = "v944scrollAutoPosition944" // v944 Scroll Auto Position944
+        const val KEY_V944SEARCHAUTOSUGGEST944 = "v944searchAutoSuggest944" // v944 Search Auto Suggest944
+        const val KEY_V944SECTIONAUTOHEADER944 = "v944sectionAutoHeader944" // v944 Section Auto Header944
+        const val KEY_V944SECUREAUTOLOCK944 = "v944secureAutoLock944" // v944 Secure Auto Lock944
+        const val KEY_V944SEEKAUTOFRAME944 = "v944seekAutoFrame944" // v944 Seek Auto Frame944
+        const val KEY_V944SEGMENTAUTOMERGE944 = "v944segmentAutoMerge944" // v944 Segment Auto Merge944
+        const val KEY_V944SELECTAUTOMULTI944 = "v944selectAutoMulti944" // v944 Select Auto Multi944
+        const val KEY_V944SENDAUTOBATCH944 = "v944sendAutoBatch944" // v944 Send Auto Batch944
+        const val KEY_V944SENSORAUTOGYRO944 = "v944sensorAutoGyro944" // v944 Sensor Auto Gyro944
+        const val KEY_V945SCANAUTOBARCODE945 = "v945scanAutoBarcode945" // v945 Scan Auto Barcode945
+        const val KEY_V945SCENEAUTODETECT945 = "v945sceneAutoDetect945" // v945 Scene Auto Detect945
+        const val KEY_V945SCHEMEAUTODEEPLINK945 = "v945schemeAutoDeepLink945" // v945 Scheme Auto DeepLink945
+        const val KEY_V945SCOPEAUTOLIFECYCLE945 = "v945scopeAutoLifecycle945" // v945 Scope Auto Lifecycle945
+        const val KEY_V945SCOREAUTOWEIGHT945 = "v945scoreAutoWeight945" // v945 Score Auto Weight945
+        const val KEY_V945SCREENAUTOBRIGHTNESS945 = "v945screenAutoBrightness945" // v945 Screen Auto Brightness945
+        const val KEY_V945SCROLLAUTOPOSITION945 = "v945scrollAutoPosition945" // v945 Scroll Auto Position945
+        const val KEY_V945SEARCHAUTOSUGGEST945 = "v945searchAutoSuggest945" // v945 Search Auto Suggest945
+        const val KEY_V945SECTIONAUTOHEADER945 = "v945sectionAutoHeader945" // v945 Section Auto Header945
+        const val KEY_V945SECUREAUTOLOCK945 = "v945secureAutoLock945" // v945 Secure Auto Lock945
+        const val KEY_V945SEEKAUTOFRAME945 = "v945seekAutoFrame945" // v945 Seek Auto Frame945
+        const val KEY_V945SEGMENTAUTOMERGE945 = "v945segmentAutoMerge945" // v945 Segment Auto Merge945
+        const val KEY_V945SELECTAUTOMULTI945 = "v945selectAutoMulti945" // v945 Select Auto Multi945
+        const val KEY_V945SENDAUTOBATCH945 = "v945sendAutoBatch945" // v945 Send Auto Batch945
+        const val KEY_V945SENSORAUTOGYRO945 = "v945sensorAutoGyro945" // v945 Sensor Auto Gyro945
+        const val KEY_V946SCANAUTOBARCODE946 = "v946scanAutoBarcode946" // v946 Scan Auto Barcode946
+        const val KEY_V946SCENEAUTODETECT946 = "v946sceneAutoDetect946" // v946 Scene Auto Detect946
+        const val KEY_V946SCHEMEAUTODEEPLINK946 = "v946schemeAutoDeepLink946" // v946 Scheme Auto DeepLink946
+        const val KEY_V946SCOPEAUTOLIFECYCLE946 = "v946scopeAutoLifecycle946" // v946 Scope Auto Lifecycle946
+        const val KEY_V946SCOREAUTOWEIGHT946 = "v946scoreAutoWeight946" // v946 Score Auto Weight946
+        const val KEY_V946SCREENAUTOBRIGHTNESS946 = "v946screenAutoBrightness946" // v946 Screen Auto Brightness946
+        const val KEY_V946SCROLLAUTOPOSITION946 = "v946scrollAutoPosition946" // v946 Scroll Auto Position946
+        const val KEY_V946SEARCHAUTOSUGGEST946 = "v946searchAutoSuggest946" // v946 Search Auto Suggest946
+        const val KEY_V946SECTIONAUTOHEADER946 = "v946sectionAutoHeader946" // v946 Section Auto Header946
+        const val KEY_V946SECUREAUTOLOCK946 = "v946secureAutoLock946" // v946 Secure Auto Lock946
+        const val KEY_V946SEEKAUTOFRAME946 = "v946seekAutoFrame946" // v946 Seek Auto Frame946
+        const val KEY_V946SEGMENTAUTOMERGE946 = "v946segmentAutoMerge946" // v946 Segment Auto Merge946
+        const val KEY_V946SELECTAUTOMULTI946 = "v946selectAutoMulti946" // v946 Select Auto Multi946
+        const val KEY_V946SENDAUTOBATCH946 = "v946sendAutoBatch946" // v946 Send Auto Batch946
+        const val KEY_V946SENSORAUTOGYRO946 = "v946sensorAutoGyro946" // v946 Sensor Auto Gyro946
+        const val KEY_V947SCANAUTOBARCODE947 = "v947scanAutoBarcode947" // v947 Scan Auto Barcode947
+        const val KEY_V947SCENEAUTODETECT947 = "v947sceneAutoDetect947" // v947 Scene Auto Detect947
+        const val KEY_V947SCHEMEAUTODEEPLINK947 = "v947schemeAutoDeepLink947" // v947 Scheme Auto DeepLink947
+        const val KEY_V947SCOPEAUTOLIFECYCLE947 = "v947scopeAutoLifecycle947" // v947 Scope Auto Lifecycle947
+        const val KEY_V947SCOREAUTOWEIGHT947 = "v947scoreAutoWeight947" // v947 Score Auto Weight947
+        const val KEY_V947SCREENAUTOBRIGHTNESS947 = "v947screenAutoBrightness947" // v947 Screen Auto Brightness947
+        const val KEY_V947SCROLLAUTOPOSITION947 = "v947scrollAutoPosition947" // v947 Scroll Auto Position947
+        const val KEY_V947SEARCHAUTOSUGGEST947 = "v947searchAutoSuggest947" // v947 Search Auto Suggest947
+        const val KEY_V947SECTIONAUTOHEADER947 = "v947sectionAutoHeader947" // v947 Section Auto Header947
+        const val KEY_V947SECUREAUTOLOCK947 = "v947secureAutoLock947" // v947 Secure Auto Lock947
+        const val KEY_V947SEEKAUTOFRAME947 = "v947seekAutoFrame947" // v947 Seek Auto Frame947
+        const val KEY_V947SEGMENTAUTOMERGE947 = "v947segmentAutoMerge947" // v947 Segment Auto Merge947
+        const val KEY_V947SELECTAUTOMULTI947 = "v947selectAutoMulti947" // v947 Select Auto Multi947
+        const val KEY_V947SENDAUTOBATCH947 = "v947sendAutoBatch947" // v947 Send Auto Batch947
+        const val KEY_V947SENSORAUTOGYRO947 = "v947sensorAutoGyro947" // v947 Sensor Auto Gyro947
+        const val KEY_V948SCANAUTOBARCODE948 = "v948scanAutoBarcode948" // v948 Scan Auto Barcode948
+        const val KEY_V948SCENEAUTODETECT948 = "v948sceneAutoDetect948" // v948 Scene Auto Detect948
+        const val KEY_V948SCHEMEAUTODEEPLINK948 = "v948schemeAutoDeepLink948" // v948 Scheme Auto DeepLink948
+        const val KEY_V948SCOPEAUTOLIFECYCLE948 = "v948scopeAutoLifecycle948" // v948 Scope Auto Lifecycle948
+        const val KEY_V948SCOREAUTOWEIGHT948 = "v948scoreAutoWeight948" // v948 Score Auto Weight948
+        const val KEY_V948SCREENAUTOBRIGHTNESS948 = "v948screenAutoBrightness948" // v948 Screen Auto Brightness948
+        const val KEY_V948SCROLLAUTOPOSITION948 = "v948scrollAutoPosition948" // v948 Scroll Auto Position948
+        const val KEY_V948SEARCHAUTOSUGGEST948 = "v948searchAutoSuggest948" // v948 Search Auto Suggest948
+        const val KEY_V948SECTIONAUTOHEADER948 = "v948sectionAutoHeader948" // v948 Section Auto Header948
+        const val KEY_V948SECUREAUTOLOCK948 = "v948secureAutoLock948" // v948 Secure Auto Lock948
+        const val KEY_V948SEEKAUTOFRAME948 = "v948seekAutoFrame948" // v948 Seek Auto Frame948
+        const val KEY_V948SEGMENTAUTOMERGE948 = "v948segmentAutoMerge948" // v948 Segment Auto Merge948
+        const val KEY_V948SELECTAUTOMULTI948 = "v948selectAutoMulti948" // v948 Select Auto Multi948
+        const val KEY_V948SENDAUTOBATCH948 = "v948sendAutoBatch948" // v948 Send Auto Batch948
+        const val KEY_V948SENSORAUTOGYRO948 = "v948sensorAutoGyro948" // v948 Sensor Auto Gyro948
+        const val KEY_V949SCANAUTOBARCODE949 = "v949scanAutoBarcode949" // v949 Scan Auto Barcode949
+        const val KEY_V949SCENEAUTODETECT949 = "v949sceneAutoDetect949" // v949 Scene Auto Detect949
+        const val KEY_V949SCHEMEAUTODEEPLINK949 = "v949schemeAutoDeepLink949" // v949 Scheme Auto DeepLink949
+        const val KEY_V949SCOPEAUTOLIFECYCLE949 = "v949scopeAutoLifecycle949" // v949 Scope Auto Lifecycle949
+        const val KEY_V949SCOREAUTOWEIGHT949 = "v949scoreAutoWeight949" // v949 Score Auto Weight949
+        const val KEY_V949SCREENAUTOBRIGHTNESS949 = "v949screenAutoBrightness949" // v949 Screen Auto Brightness949
+        const val KEY_V949SCROLLAUTOPOSITION949 = "v949scrollAutoPosition949" // v949 Scroll Auto Position949
+        const val KEY_V949SEARCHAUTOSUGGEST949 = "v949searchAutoSuggest949" // v949 Search Auto Suggest949
+        const val KEY_V949SECTIONAUTOHEADER949 = "v949sectionAutoHeader949" // v949 Section Auto Header949
+        const val KEY_V949SECUREAUTOLOCK949 = "v949secureAutoLock949" // v949 Secure Auto Lock949
+        const val KEY_V949SEEKAUTOFRAME949 = "v949seekAutoFrame949" // v949 Seek Auto Frame949
+        const val KEY_V949SEGMENTAUTOMERGE949 = "v949segmentAutoMerge949" // v949 Segment Auto Merge949
+        const val KEY_V949SELECTAUTOMULTI949 = "v949selectAutoMulti949" // v949 Select Auto Multi949
+        const val KEY_V949SENDAUTOBATCH949 = "v949sendAutoBatch949" // v949 Send Auto Batch949
+        const val KEY_V949SENSORAUTOGYRO949 = "v949sensorAutoGyro949" // v949 Sensor Auto Gyro949
+        const val KEY_V950SCANAUTOBARCODE950 = "v950scanAutoBarcode950" // v950 Scan Auto Barcode950
+        const val KEY_V950SCENEAUTODETECT950 = "v950sceneAutoDetect950" // v950 Scene Auto Detect950
+        const val KEY_V950SCHEMEAUTODEEPLINK950 = "v950schemeAutoDeepLink950" // v950 Scheme Auto DeepLink950
+        const val KEY_V950SCOPEAUTOLIFECYCLE950 = "v950scopeAutoLifecycle950" // v950 Scope Auto Lifecycle950
+        const val KEY_V950SCOREAUTOWEIGHT950 = "v950scoreAutoWeight950" // v950 Score Auto Weight950
+        const val KEY_V950SCREENAUTOBRIGHTNESS950 = "v950screenAutoBrightness950" // v950 Screen Auto Brightness950
+        const val KEY_V950SCROLLAUTOPOSITION950 = "v950scrollAutoPosition950" // v950 Scroll Auto Position950
+        const val KEY_V950SEARCHAUTOSUGGEST950 = "v950searchAutoSuggest950" // v950 Search Auto Suggest950
+        const val KEY_V950SECTIONAUTOHEADER950 = "v950sectionAutoHeader950" // v950 Section Auto Header950
+        const val KEY_V950SECUREAUTOLOCK950 = "v950secureAutoLock950" // v950 Secure Auto Lock950
+        const val KEY_V950SEEKAUTOFRAME950 = "v950seekAutoFrame950" // v950 Seek Auto Frame950
+        const val KEY_V950SEGMENTAUTOMERGE950 = "v950segmentAutoMerge950" // v950 Segment Auto Merge950
+        const val KEY_V950SELECTAUTOMULTI950 = "v950selectAutoMulti950" // v950 Select Auto Multi950
+        const val KEY_V950SENDAUTOBATCH950 = "v950sendAutoBatch950" // v950 Send Auto Batch950
+        const val KEY_V950SENSORAUTOGYRO950 = "v950sensorAutoGyro950" // v950 Sensor Auto Gyro950
     }
 }
