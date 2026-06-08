@@ -35048,6 +35048,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V470LOCATIONBASEDREC470, false)
         set(value) = prefs.edit().putBoolean(KEY_V470LOCATIONBASEDREC470, value).apply()
 
+    var v471markAutoHighlight471: Boolean
+        get() = prefs.getBoolean(KEY_V471MARKAUTOHIGHLIGHT471, false)
+        set(value) = prefs.edit().putBoolean(KEY_V471MARKAUTOHIGHLIGHT471, value).apply()
+
+    var v471maskAutoApply471: Boolean
+        get() = prefs.getBoolean(KEY_V471MASKAUTOAPPLY471, false)
+        set(value) = prefs.edit().putBoolean(KEY_V471MASKAUTOAPPLY471, value).apply()
+
+    var v471matchAutoStart471: Boolean
+        get() = prefs.getBoolean(KEY_V471MATCHAUTOSTART471, false)
+        set(value) = prefs.edit().putBoolean(KEY_V471MATCHAUTOSTART471, value).apply()
+
+    var v471matrixTransform471: Int
+        get() = prefs.getInt(KEY_V471MATRIXTRANSFORM471, 0)
+        set(value) = prefs.edit().putInt(KEY_V471MATRIXTRANSFORM471, value).apply()
+
+    var v471maxConcurrentLoad471: Int
+        get() = prefs.getInt(KEY_V471MAXCONCURRENTLOAD471, 0)
+        set(value) = prefs.edit().putInt(KEY_V471MAXCONCURRENTLOAD471, value).apply()
+
+    var v471measureAutoCalibrate471: Boolean
+        get() = prefs.getBoolean(KEY_V471MEASUREAUTOCALIBRATE471, false)
+        set(value) = prefs.edit().putBoolean(KEY_V471MEASUREAUTOCALIBRATE471, value).apply()
+
+    var v471mediaAutoDetect471: Boolean
+        get() = prefs.getBoolean(KEY_V471MEDIAAUTODETECT471, false)
+        set(value) = prefs.edit().putBoolean(KEY_V471MEDIAAUTODETECT471, value).apply()
+
+    var v471memoryOptimizeAuto471: Boolean
+        get() = prefs.getBoolean(KEY_V471MEMORYOPTIMIZEAUTO471, false)
+        set(value) = prefs.edit().putBoolean(KEY_V471MEMORYOPTIMIZEAUTO471, value).apply()
+
+    var v471mergeAutoResolve471: Boolean
+        get() = prefs.getBoolean(KEY_V471MERGEAUTORESOLVE471, false)
+        set(value) = prefs.edit().putBoolean(KEY_V471MERGEAUTORESOLVE471, value).apply()
+
+    var v471messageAutoReply471: Boolean
+        get() = prefs.getBoolean(KEY_V471MESSAGEAUTOREPLY471, false)
+        set(value) = prefs.edit().putBoolean(KEY_V471MESSAGEAUTOREPLY471, value).apply()
+
+    var v471methodAutoInvoke471: Boolean
+        get() = prefs.getBoolean(KEY_V471METHODAUTOINVOKE471, false)
+        set(value) = prefs.edit().putBoolean(KEY_V471METHODAUTOINVOKE471, value).apply()
+
+    var v471micAutoMute471: Boolean
+        get() = prefs.getBoolean(KEY_V471MICAUTOMUTE471, false)
+        set(value) = prefs.edit().putBoolean(KEY_V471MICAUTOMUTE471, value).apply()
+
+    var v471minBitrateAuto471: Int
+        get() = prefs.getInt(KEY_V471MINBITRATEAUTO471, 0)
+        set(value) = prefs.edit().putInt(KEY_V471MINBITRATEAUTO471, value).apply()
+
+    var v471modeAutoSwitch471: Boolean
+        get() = prefs.getBoolean(KEY_V471MODEAUTOSWITCH471, false)
+        set(value) = prefs.edit().putBoolean(KEY_V471MODEAUTOSWITCH471, value).apply()
+
+    var v471modelAutoLoad471: Boolean
+        get() = prefs.getBoolean(KEY_V471MODELAUTOLOAD471, false)
+        set(value) = prefs.edit().putBoolean(KEY_V471MODELAUTOLOAD471, value).apply()
+
+    var v472markAutoHighlight472: Boolean
+        get() = prefs.getBoolean(KEY_V472MARKAUTOHIGHLIGHT472, false)
+        set(value) = prefs.edit().putBoolean(KEY_V472MARKAUTOHIGHLIGHT472, value).apply()
+
+    var v472maskAutoApply472: Boolean
+        get() = prefs.getBoolean(KEY_V472MASKAUTOAPPLY472, false)
+        set(value) = prefs.edit().putBoolean(KEY_V472MASKAUTOAPPLY472, value).apply()
+
+    var v472matchAutoStart472: Boolean
+        get() = prefs.getBoolean(KEY_V472MATCHAUTOSTART472, false)
+        set(value) = prefs.edit().putBoolean(KEY_V472MATCHAUTOSTART472, value).apply()
+
+    var v472matrixTransform472: Int
+        get() = prefs.getInt(KEY_V472MATRIXTRANSFORM472, 0)
+        set(value) = prefs.edit().putInt(KEY_V472MATRIXTRANSFORM472, value).apply()
+
+    var v472maxConcurrentLoad472: Int
+        get() = prefs.getInt(KEY_V472MAXCONCURRENTLOAD472, 0)
+        set(value) = prefs.edit().putInt(KEY_V472MAXCONCURRENTLOAD472, value).apply()
+
+    var v472measureAutoCalibrate472: Boolean
+        get() = prefs.getBoolean(KEY_V472MEASUREAUTOCALIBRATE472, false)
+        set(value) = prefs.edit().putBoolean(KEY_V472MEASUREAUTOCALIBRATE472, value).apply()
+
+    var v472mediaAutoDetect472: Boolean
+        get() = prefs.getBoolean(KEY_V472MEDIAAUTODETECT472, false)
+        set(value) = prefs.edit().putBoolean(KEY_V472MEDIAAUTODETECT472, value).apply()
+
+    var v472memoryOptimizeAuto472: Boolean
+        get() = prefs.getBoolean(KEY_V472MEMORYOPTIMIZEAUTO472, false)
+        set(value) = prefs.edit().putBoolean(KEY_V472MEMORYOPTIMIZEAUTO472, value).apply()
+
+    var v472mergeAutoResolve472: Boolean
+        get() = prefs.getBoolean(KEY_V472MERGEAUTORESOLVE472, false)
+        set(value) = prefs.edit().putBoolean(KEY_V472MERGEAUTORESOLVE472, value).apply()
+
+    var v472messageAutoReply472: Boolean
+        get() = prefs.getBoolean(KEY_V472MESSAGEAUTOREPLY472, false)
+        set(value) = prefs.edit().putBoolean(KEY_V472MESSAGEAUTOREPLY472, value).apply()
+
+    var v472methodAutoInvoke472: Boolean
+        get() = prefs.getBoolean(KEY_V472METHODAUTOINVOKE472, false)
+        set(value) = prefs.edit().putBoolean(KEY_V472METHODAUTOINVOKE472, value).apply()
+
+    var v472micAutoMute472: Boolean
+        get() = prefs.getBoolean(KEY_V472MICAUTOMUTE472, false)
+        set(value) = prefs.edit().putBoolean(KEY_V472MICAUTOMUTE472, value).apply()
+
+    var v472minBitrateAuto472: Int
+        get() = prefs.getInt(KEY_V472MINBITRATEAUTO472, 0)
+        set(value) = prefs.edit().putInt(KEY_V472MINBITRATEAUTO472, value).apply()
+
+    var v472modeAutoSwitch472: Boolean
+        get() = prefs.getBoolean(KEY_V472MODEAUTOSWITCH472, false)
+        set(value) = prefs.edit().putBoolean(KEY_V472MODEAUTOSWITCH472, value).apply()
+
+    var v472modelAutoLoad472: Boolean
+        get() = prefs.getBoolean(KEY_V472MODELAUTOLOAD472, false)
+        set(value) = prefs.edit().putBoolean(KEY_V472MODELAUTOLOAD472, value).apply()
+
+    var v473markAutoHighlight473: Boolean
+        get() = prefs.getBoolean(KEY_V473MARKAUTOHIGHLIGHT473, false)
+        set(value) = prefs.edit().putBoolean(KEY_V473MARKAUTOHIGHLIGHT473, value).apply()
+
+    var v473maskAutoApply473: Boolean
+        get() = prefs.getBoolean(KEY_V473MASKAUTOAPPLY473, false)
+        set(value) = prefs.edit().putBoolean(KEY_V473MASKAUTOAPPLY473, value).apply()
+
+    var v473matchAutoStart473: Boolean
+        get() = prefs.getBoolean(KEY_V473MATCHAUTOSTART473, false)
+        set(value) = prefs.edit().putBoolean(KEY_V473MATCHAUTOSTART473, value).apply()
+
+    var v473matrixTransform473: Int
+        get() = prefs.getInt(KEY_V473MATRIXTRANSFORM473, 0)
+        set(value) = prefs.edit().putInt(KEY_V473MATRIXTRANSFORM473, value).apply()
+
+    var v473maxConcurrentLoad473: Int
+        get() = prefs.getInt(KEY_V473MAXCONCURRENTLOAD473, 0)
+        set(value) = prefs.edit().putInt(KEY_V473MAXCONCURRENTLOAD473, value).apply()
+
+    var v473measureAutoCalibrate473: Boolean
+        get() = prefs.getBoolean(KEY_V473MEASUREAUTOCALIBRATE473, false)
+        set(value) = prefs.edit().putBoolean(KEY_V473MEASUREAUTOCALIBRATE473, value).apply()
+
+    var v473mediaAutoDetect473: Boolean
+        get() = prefs.getBoolean(KEY_V473MEDIAAUTODETECT473, false)
+        set(value) = prefs.edit().putBoolean(KEY_V473MEDIAAUTODETECT473, value).apply()
+
+    var v473memoryOptimizeAuto473: Boolean
+        get() = prefs.getBoolean(KEY_V473MEMORYOPTIMIZEAUTO473, false)
+        set(value) = prefs.edit().putBoolean(KEY_V473MEMORYOPTIMIZEAUTO473, value).apply()
+
+    var v473mergeAutoResolve473: Boolean
+        get() = prefs.getBoolean(KEY_V473MERGEAUTORESOLVE473, false)
+        set(value) = prefs.edit().putBoolean(KEY_V473MERGEAUTORESOLVE473, value).apply()
+
+    var v473messageAutoReply473: Boolean
+        get() = prefs.getBoolean(KEY_V473MESSAGEAUTOREPLY473, false)
+        set(value) = prefs.edit().putBoolean(KEY_V473MESSAGEAUTOREPLY473, value).apply()
+
+    var v473methodAutoInvoke473: Boolean
+        get() = prefs.getBoolean(KEY_V473METHODAUTOINVOKE473, false)
+        set(value) = prefs.edit().putBoolean(KEY_V473METHODAUTOINVOKE473, value).apply()
+
+    var v473micAutoMute473: Boolean
+        get() = prefs.getBoolean(KEY_V473MICAUTOMUTE473, false)
+        set(value) = prefs.edit().putBoolean(KEY_V473MICAUTOMUTE473, value).apply()
+
+    var v473minBitrateAuto473: Int
+        get() = prefs.getInt(KEY_V473MINBITRATEAUTO473, 0)
+        set(value) = prefs.edit().putInt(KEY_V473MINBITRATEAUTO473, value).apply()
+
+    var v473modeAutoSwitch473: Boolean
+        get() = prefs.getBoolean(KEY_V473MODEAUTOSWITCH473, false)
+        set(value) = prefs.edit().putBoolean(KEY_V473MODEAUTOSWITCH473, value).apply()
+
+    var v473modelAutoLoad473: Boolean
+        get() = prefs.getBoolean(KEY_V473MODELAUTOLOAD473, false)
+        set(value) = prefs.edit().putBoolean(KEY_V473MODELAUTOLOAD473, value).apply()
+
+    var v474markAutoHighlight474: Boolean
+        get() = prefs.getBoolean(KEY_V474MARKAUTOHIGHLIGHT474, false)
+        set(value) = prefs.edit().putBoolean(KEY_V474MARKAUTOHIGHLIGHT474, value).apply()
+
+    var v474maskAutoApply474: Boolean
+        get() = prefs.getBoolean(KEY_V474MASKAUTOAPPLY474, false)
+        set(value) = prefs.edit().putBoolean(KEY_V474MASKAUTOAPPLY474, value).apply()
+
+    var v474matchAutoStart474: Boolean
+        get() = prefs.getBoolean(KEY_V474MATCHAUTOSTART474, false)
+        set(value) = prefs.edit().putBoolean(KEY_V474MATCHAUTOSTART474, value).apply()
+
+    var v474matrixTransform474: Int
+        get() = prefs.getInt(KEY_V474MATRIXTRANSFORM474, 0)
+        set(value) = prefs.edit().putInt(KEY_V474MATRIXTRANSFORM474, value).apply()
+
+    var v474maxConcurrentLoad474: Int
+        get() = prefs.getInt(KEY_V474MAXCONCURRENTLOAD474, 0)
+        set(value) = prefs.edit().putInt(KEY_V474MAXCONCURRENTLOAD474, value).apply()
+
+    var v474measureAutoCalibrate474: Boolean
+        get() = prefs.getBoolean(KEY_V474MEASUREAUTOCALIBRATE474, false)
+        set(value) = prefs.edit().putBoolean(KEY_V474MEASUREAUTOCALIBRATE474, value).apply()
+
+    var v474mediaAutoDetect474: Boolean
+        get() = prefs.getBoolean(KEY_V474MEDIAAUTODETECT474, false)
+        set(value) = prefs.edit().putBoolean(KEY_V474MEDIAAUTODETECT474, value).apply()
+
+    var v474memoryOptimizeAuto474: Boolean
+        get() = prefs.getBoolean(KEY_V474MEMORYOPTIMIZEAUTO474, false)
+        set(value) = prefs.edit().putBoolean(KEY_V474MEMORYOPTIMIZEAUTO474, value).apply()
+
+    var v474mergeAutoResolve474: Boolean
+        get() = prefs.getBoolean(KEY_V474MERGEAUTORESOLVE474, false)
+        set(value) = prefs.edit().putBoolean(KEY_V474MERGEAUTORESOLVE474, value).apply()
+
+    var v474messageAutoReply474: Boolean
+        get() = prefs.getBoolean(KEY_V474MESSAGEAUTOREPLY474, false)
+        set(value) = prefs.edit().putBoolean(KEY_V474MESSAGEAUTOREPLY474, value).apply()
+
+    var v474methodAutoInvoke474: Boolean
+        get() = prefs.getBoolean(KEY_V474METHODAUTOINVOKE474, false)
+        set(value) = prefs.edit().putBoolean(KEY_V474METHODAUTOINVOKE474, value).apply()
+
+    var v474micAutoMute474: Boolean
+        get() = prefs.getBoolean(KEY_V474MICAUTOMUTE474, false)
+        set(value) = prefs.edit().putBoolean(KEY_V474MICAUTOMUTE474, value).apply()
+
+    var v474minBitrateAuto474: Int
+        get() = prefs.getInt(KEY_V474MINBITRATEAUTO474, 0)
+        set(value) = prefs.edit().putInt(KEY_V474MINBITRATEAUTO474, value).apply()
+
+    var v474modeAutoSwitch474: Boolean
+        get() = prefs.getBoolean(KEY_V474MODEAUTOSWITCH474, false)
+        set(value) = prefs.edit().putBoolean(KEY_V474MODEAUTOSWITCH474, value).apply()
+
+    var v474modelAutoLoad474: Boolean
+        get() = prefs.getBoolean(KEY_V474MODELAUTOLOAD474, false)
+        set(value) = prefs.edit().putBoolean(KEY_V474MODELAUTOLOAD474, value).apply()
+
+    var v475markAutoHighlight475: Boolean
+        get() = prefs.getBoolean(KEY_V475MARKAUTOHIGHLIGHT475, false)
+        set(value) = prefs.edit().putBoolean(KEY_V475MARKAUTOHIGHLIGHT475, value).apply()
+
+    var v475maskAutoApply475: Boolean
+        get() = prefs.getBoolean(KEY_V475MASKAUTOAPPLY475, false)
+        set(value) = prefs.edit().putBoolean(KEY_V475MASKAUTOAPPLY475, value).apply()
+
+    var v475matchAutoStart475: Boolean
+        get() = prefs.getBoolean(KEY_V475MATCHAUTOSTART475, false)
+        set(value) = prefs.edit().putBoolean(KEY_V475MATCHAUTOSTART475, value).apply()
+
+    var v475matrixTransform475: Int
+        get() = prefs.getInt(KEY_V475MATRIXTRANSFORM475, 0)
+        set(value) = prefs.edit().putInt(KEY_V475MATRIXTRANSFORM475, value).apply()
+
+    var v475maxConcurrentLoad475: Int
+        get() = prefs.getInt(KEY_V475MAXCONCURRENTLOAD475, 0)
+        set(value) = prefs.edit().putInt(KEY_V475MAXCONCURRENTLOAD475, value).apply()
+
+    var v475measureAutoCalibrate475: Boolean
+        get() = prefs.getBoolean(KEY_V475MEASUREAUTOCALIBRATE475, false)
+        set(value) = prefs.edit().putBoolean(KEY_V475MEASUREAUTOCALIBRATE475, value).apply()
+
+    var v475mediaAutoDetect475: Boolean
+        get() = prefs.getBoolean(KEY_V475MEDIAAUTODETECT475, false)
+        set(value) = prefs.edit().putBoolean(KEY_V475MEDIAAUTODETECT475, value).apply()
+
+    var v475memoryOptimizeAuto475: Boolean
+        get() = prefs.getBoolean(KEY_V475MEMORYOPTIMIZEAUTO475, false)
+        set(value) = prefs.edit().putBoolean(KEY_V475MEMORYOPTIMIZEAUTO475, value).apply()
+
+    var v475mergeAutoResolve475: Boolean
+        get() = prefs.getBoolean(KEY_V475MERGEAUTORESOLVE475, false)
+        set(value) = prefs.edit().putBoolean(KEY_V475MERGEAUTORESOLVE475, value).apply()
+
+    var v475messageAutoReply475: Boolean
+        get() = prefs.getBoolean(KEY_V475MESSAGEAUTOREPLY475, false)
+        set(value) = prefs.edit().putBoolean(KEY_V475MESSAGEAUTOREPLY475, value).apply()
+
+    var v475methodAutoInvoke475: Boolean
+        get() = prefs.getBoolean(KEY_V475METHODAUTOINVOKE475, false)
+        set(value) = prefs.edit().putBoolean(KEY_V475METHODAUTOINVOKE475, value).apply()
+
+    var v475micAutoMute475: Boolean
+        get() = prefs.getBoolean(KEY_V475MICAUTOMUTE475, false)
+        set(value) = prefs.edit().putBoolean(KEY_V475MICAUTOMUTE475, value).apply()
+
+    var v475minBitrateAuto475: Int
+        get() = prefs.getInt(KEY_V475MINBITRATEAUTO475, 0)
+        set(value) = prefs.edit().putInt(KEY_V475MINBITRATEAUTO475, value).apply()
+
+    var v475modeAutoSwitch475: Boolean
+        get() = prefs.getBoolean(KEY_V475MODEAUTOSWITCH475, false)
+        set(value) = prefs.edit().putBoolean(KEY_V475MODEAUTOSWITCH475, value).apply()
+
+    var v475modelAutoLoad475: Boolean
+        get() = prefs.getBoolean(KEY_V475MODELAUTOLOAD475, false)
+        set(value) = prefs.edit().putBoolean(KEY_V475MODELAUTOLOAD475, value).apply()
+
+    var v476markAutoHighlight476: Boolean
+        get() = prefs.getBoolean(KEY_V476MARKAUTOHIGHLIGHT476, false)
+        set(value) = prefs.edit().putBoolean(KEY_V476MARKAUTOHIGHLIGHT476, value).apply()
+
+    var v476maskAutoApply476: Boolean
+        get() = prefs.getBoolean(KEY_V476MASKAUTOAPPLY476, false)
+        set(value) = prefs.edit().putBoolean(KEY_V476MASKAUTOAPPLY476, value).apply()
+
+    var v476matchAutoStart476: Boolean
+        get() = prefs.getBoolean(KEY_V476MATCHAUTOSTART476, false)
+        set(value) = prefs.edit().putBoolean(KEY_V476MATCHAUTOSTART476, value).apply()
+
+    var v476matrixTransform476: Int
+        get() = prefs.getInt(KEY_V476MATRIXTRANSFORM476, 0)
+        set(value) = prefs.edit().putInt(KEY_V476MATRIXTRANSFORM476, value).apply()
+
+    var v476maxConcurrentLoad476: Int
+        get() = prefs.getInt(KEY_V476MAXCONCURRENTLOAD476, 0)
+        set(value) = prefs.edit().putInt(KEY_V476MAXCONCURRENTLOAD476, value).apply()
+
+    var v476measureAutoCalibrate476: Boolean
+        get() = prefs.getBoolean(KEY_V476MEASUREAUTOCALIBRATE476, false)
+        set(value) = prefs.edit().putBoolean(KEY_V476MEASUREAUTOCALIBRATE476, value).apply()
+
+    var v476mediaAutoDetect476: Boolean
+        get() = prefs.getBoolean(KEY_V476MEDIAAUTODETECT476, false)
+        set(value) = prefs.edit().putBoolean(KEY_V476MEDIAAUTODETECT476, value).apply()
+
+    var v476memoryOptimizeAuto476: Boolean
+        get() = prefs.getBoolean(KEY_V476MEMORYOPTIMIZEAUTO476, false)
+        set(value) = prefs.edit().putBoolean(KEY_V476MEMORYOPTIMIZEAUTO476, value).apply()
+
+    var v476mergeAutoResolve476: Boolean
+        get() = prefs.getBoolean(KEY_V476MERGEAUTORESOLVE476, false)
+        set(value) = prefs.edit().putBoolean(KEY_V476MERGEAUTORESOLVE476, value).apply()
+
+    var v476messageAutoReply476: Boolean
+        get() = prefs.getBoolean(KEY_V476MESSAGEAUTOREPLY476, false)
+        set(value) = prefs.edit().putBoolean(KEY_V476MESSAGEAUTOREPLY476, value).apply()
+
+    var v476methodAutoInvoke476: Boolean
+        get() = prefs.getBoolean(KEY_V476METHODAUTOINVOKE476, false)
+        set(value) = prefs.edit().putBoolean(KEY_V476METHODAUTOINVOKE476, value).apply()
+
+    var v476micAutoMute476: Boolean
+        get() = prefs.getBoolean(KEY_V476MICAUTOMUTE476, false)
+        set(value) = prefs.edit().putBoolean(KEY_V476MICAUTOMUTE476, value).apply()
+
+    var v476minBitrateAuto476: Int
+        get() = prefs.getInt(KEY_V476MINBITRATEAUTO476, 0)
+        set(value) = prefs.edit().putInt(KEY_V476MINBITRATEAUTO476, value).apply()
+
+    var v476modeAutoSwitch476: Boolean
+        get() = prefs.getBoolean(KEY_V476MODEAUTOSWITCH476, false)
+        set(value) = prefs.edit().putBoolean(KEY_V476MODEAUTOSWITCH476, value).apply()
+
+    var v476modelAutoLoad476: Boolean
+        get() = prefs.getBoolean(KEY_V476MODELAUTOLOAD476, false)
+        set(value) = prefs.edit().putBoolean(KEY_V476MODELAUTOLOAD476, value).apply()
+
+    var v477markAutoHighlight477: Boolean
+        get() = prefs.getBoolean(KEY_V477MARKAUTOHIGHLIGHT477, false)
+        set(value) = prefs.edit().putBoolean(KEY_V477MARKAUTOHIGHLIGHT477, value).apply()
+
+    var v477maskAutoApply477: Boolean
+        get() = prefs.getBoolean(KEY_V477MASKAUTOAPPLY477, false)
+        set(value) = prefs.edit().putBoolean(KEY_V477MASKAUTOAPPLY477, value).apply()
+
+    var v477matchAutoStart477: Boolean
+        get() = prefs.getBoolean(KEY_V477MATCHAUTOSTART477, false)
+        set(value) = prefs.edit().putBoolean(KEY_V477MATCHAUTOSTART477, value).apply()
+
+    var v477matrixTransform477: Int
+        get() = prefs.getInt(KEY_V477MATRIXTRANSFORM477, 0)
+        set(value) = prefs.edit().putInt(KEY_V477MATRIXTRANSFORM477, value).apply()
+
+    var v477maxConcurrentLoad477: Int
+        get() = prefs.getInt(KEY_V477MAXCONCURRENTLOAD477, 0)
+        set(value) = prefs.edit().putInt(KEY_V477MAXCONCURRENTLOAD477, value).apply()
+
+    var v477measureAutoCalibrate477: Boolean
+        get() = prefs.getBoolean(KEY_V477MEASUREAUTOCALIBRATE477, false)
+        set(value) = prefs.edit().putBoolean(KEY_V477MEASUREAUTOCALIBRATE477, value).apply()
+
+    var v477mediaAutoDetect477: Boolean
+        get() = prefs.getBoolean(KEY_V477MEDIAAUTODETECT477, false)
+        set(value) = prefs.edit().putBoolean(KEY_V477MEDIAAUTODETECT477, value).apply()
+
+    var v477memoryOptimizeAuto477: Boolean
+        get() = prefs.getBoolean(KEY_V477MEMORYOPTIMIZEAUTO477, false)
+        set(value) = prefs.edit().putBoolean(KEY_V477MEMORYOPTIMIZEAUTO477, value).apply()
+
+    var v477mergeAutoResolve477: Boolean
+        get() = prefs.getBoolean(KEY_V477MERGEAUTORESOLVE477, false)
+        set(value) = prefs.edit().putBoolean(KEY_V477MERGEAUTORESOLVE477, value).apply()
+
+    var v477messageAutoReply477: Boolean
+        get() = prefs.getBoolean(KEY_V477MESSAGEAUTOREPLY477, false)
+        set(value) = prefs.edit().putBoolean(KEY_V477MESSAGEAUTOREPLY477, value).apply()
+
+    var v477methodAutoInvoke477: Boolean
+        get() = prefs.getBoolean(KEY_V477METHODAUTOINVOKE477, false)
+        set(value) = prefs.edit().putBoolean(KEY_V477METHODAUTOINVOKE477, value).apply()
+
+    var v477micAutoMute477: Boolean
+        get() = prefs.getBoolean(KEY_V477MICAUTOMUTE477, false)
+        set(value) = prefs.edit().putBoolean(KEY_V477MICAUTOMUTE477, value).apply()
+
+    var v477minBitrateAuto477: Int
+        get() = prefs.getInt(KEY_V477MINBITRATEAUTO477, 0)
+        set(value) = prefs.edit().putInt(KEY_V477MINBITRATEAUTO477, value).apply()
+
+    var v477modeAutoSwitch477: Boolean
+        get() = prefs.getBoolean(KEY_V477MODEAUTOSWITCH477, false)
+        set(value) = prefs.edit().putBoolean(KEY_V477MODEAUTOSWITCH477, value).apply()
+
+    var v477modelAutoLoad477: Boolean
+        get() = prefs.getBoolean(KEY_V477MODELAUTOLOAD477, false)
+        set(value) = prefs.edit().putBoolean(KEY_V477MODELAUTOLOAD477, value).apply()
+
+    var v478markAutoHighlight478: Boolean
+        get() = prefs.getBoolean(KEY_V478MARKAUTOHIGHLIGHT478, false)
+        set(value) = prefs.edit().putBoolean(KEY_V478MARKAUTOHIGHLIGHT478, value).apply()
+
+    var v478maskAutoApply478: Boolean
+        get() = prefs.getBoolean(KEY_V478MASKAUTOAPPLY478, false)
+        set(value) = prefs.edit().putBoolean(KEY_V478MASKAUTOAPPLY478, value).apply()
+
+    var v478matchAutoStart478: Boolean
+        get() = prefs.getBoolean(KEY_V478MATCHAUTOSTART478, false)
+        set(value) = prefs.edit().putBoolean(KEY_V478MATCHAUTOSTART478, value).apply()
+
+    var v478matrixTransform478: Int
+        get() = prefs.getInt(KEY_V478MATRIXTRANSFORM478, 0)
+        set(value) = prefs.edit().putInt(KEY_V478MATRIXTRANSFORM478, value).apply()
+
+    var v478maxConcurrentLoad478: Int
+        get() = prefs.getInt(KEY_V478MAXCONCURRENTLOAD478, 0)
+        set(value) = prefs.edit().putInt(KEY_V478MAXCONCURRENTLOAD478, value).apply()
+
+    var v478measureAutoCalibrate478: Boolean
+        get() = prefs.getBoolean(KEY_V478MEASUREAUTOCALIBRATE478, false)
+        set(value) = prefs.edit().putBoolean(KEY_V478MEASUREAUTOCALIBRATE478, value).apply()
+
+    var v478mediaAutoDetect478: Boolean
+        get() = prefs.getBoolean(KEY_V478MEDIAAUTODETECT478, false)
+        set(value) = prefs.edit().putBoolean(KEY_V478MEDIAAUTODETECT478, value).apply()
+
+    var v478memoryOptimizeAuto478: Boolean
+        get() = prefs.getBoolean(KEY_V478MEMORYOPTIMIZEAUTO478, false)
+        set(value) = prefs.edit().putBoolean(KEY_V478MEMORYOPTIMIZEAUTO478, value).apply()
+
+    var v478mergeAutoResolve478: Boolean
+        get() = prefs.getBoolean(KEY_V478MERGEAUTORESOLVE478, false)
+        set(value) = prefs.edit().putBoolean(KEY_V478MERGEAUTORESOLVE478, value).apply()
+
+    var v478messageAutoReply478: Boolean
+        get() = prefs.getBoolean(KEY_V478MESSAGEAUTOREPLY478, false)
+        set(value) = prefs.edit().putBoolean(KEY_V478MESSAGEAUTOREPLY478, value).apply()
+
+    var v478methodAutoInvoke478: Boolean
+        get() = prefs.getBoolean(KEY_V478METHODAUTOINVOKE478, false)
+        set(value) = prefs.edit().putBoolean(KEY_V478METHODAUTOINVOKE478, value).apply()
+
+    var v478micAutoMute478: Boolean
+        get() = prefs.getBoolean(KEY_V478MICAUTOMUTE478, false)
+        set(value) = prefs.edit().putBoolean(KEY_V478MICAUTOMUTE478, value).apply()
+
+    var v478minBitrateAuto478: Int
+        get() = prefs.getInt(KEY_V478MINBITRATEAUTO478, 0)
+        set(value) = prefs.edit().putInt(KEY_V478MINBITRATEAUTO478, value).apply()
+
+    var v478modeAutoSwitch478: Boolean
+        get() = prefs.getBoolean(KEY_V478MODEAUTOSWITCH478, false)
+        set(value) = prefs.edit().putBoolean(KEY_V478MODEAUTOSWITCH478, value).apply()
+
+    var v478modelAutoLoad478: Boolean
+        get() = prefs.getBoolean(KEY_V478MODELAUTOLOAD478, false)
+        set(value) = prefs.edit().putBoolean(KEY_V478MODELAUTOLOAD478, value).apply()
+
+    var v479markAutoHighlight479: Boolean
+        get() = prefs.getBoolean(KEY_V479MARKAUTOHIGHLIGHT479, false)
+        set(value) = prefs.edit().putBoolean(KEY_V479MARKAUTOHIGHLIGHT479, value).apply()
+
+    var v479maskAutoApply479: Boolean
+        get() = prefs.getBoolean(KEY_V479MASKAUTOAPPLY479, false)
+        set(value) = prefs.edit().putBoolean(KEY_V479MASKAUTOAPPLY479, value).apply()
+
+    var v479matchAutoStart479: Boolean
+        get() = prefs.getBoolean(KEY_V479MATCHAUTOSTART479, false)
+        set(value) = prefs.edit().putBoolean(KEY_V479MATCHAUTOSTART479, value).apply()
+
+    var v479matrixTransform479: Int
+        get() = prefs.getInt(KEY_V479MATRIXTRANSFORM479, 0)
+        set(value) = prefs.edit().putInt(KEY_V479MATRIXTRANSFORM479, value).apply()
+
+    var v479maxConcurrentLoad479: Int
+        get() = prefs.getInt(KEY_V479MAXCONCURRENTLOAD479, 0)
+        set(value) = prefs.edit().putInt(KEY_V479MAXCONCURRENTLOAD479, value).apply()
+
+    var v479measureAutoCalibrate479: Boolean
+        get() = prefs.getBoolean(KEY_V479MEASUREAUTOCALIBRATE479, false)
+        set(value) = prefs.edit().putBoolean(KEY_V479MEASUREAUTOCALIBRATE479, value).apply()
+
+    var v479mediaAutoDetect479: Boolean
+        get() = prefs.getBoolean(KEY_V479MEDIAAUTODETECT479, false)
+        set(value) = prefs.edit().putBoolean(KEY_V479MEDIAAUTODETECT479, value).apply()
+
+    var v479memoryOptimizeAuto479: Boolean
+        get() = prefs.getBoolean(KEY_V479MEMORYOPTIMIZEAUTO479, false)
+        set(value) = prefs.edit().putBoolean(KEY_V479MEMORYOPTIMIZEAUTO479, value).apply()
+
+    var v479mergeAutoResolve479: Boolean
+        get() = prefs.getBoolean(KEY_V479MERGEAUTORESOLVE479, false)
+        set(value) = prefs.edit().putBoolean(KEY_V479MERGEAUTORESOLVE479, value).apply()
+
+    var v479messageAutoReply479: Boolean
+        get() = prefs.getBoolean(KEY_V479MESSAGEAUTOREPLY479, false)
+        set(value) = prefs.edit().putBoolean(KEY_V479MESSAGEAUTOREPLY479, value).apply()
+
+    var v479methodAutoInvoke479: Boolean
+        get() = prefs.getBoolean(KEY_V479METHODAUTOINVOKE479, false)
+        set(value) = prefs.edit().putBoolean(KEY_V479METHODAUTOINVOKE479, value).apply()
+
+    var v479micAutoMute479: Boolean
+        get() = prefs.getBoolean(KEY_V479MICAUTOMUTE479, false)
+        set(value) = prefs.edit().putBoolean(KEY_V479MICAUTOMUTE479, value).apply()
+
+    var v479minBitrateAuto479: Int
+        get() = prefs.getInt(KEY_V479MINBITRATEAUTO479, 0)
+        set(value) = prefs.edit().putInt(KEY_V479MINBITRATEAUTO479, value).apply()
+
+    var v479modeAutoSwitch479: Boolean
+        get() = prefs.getBoolean(KEY_V479MODEAUTOSWITCH479, false)
+        set(value) = prefs.edit().putBoolean(KEY_V479MODEAUTOSWITCH479, value).apply()
+
+    var v479modelAutoLoad479: Boolean
+        get() = prefs.getBoolean(KEY_V479MODELAUTOLOAD479, false)
+        set(value) = prefs.edit().putBoolean(KEY_V479MODELAUTOLOAD479, value).apply()
+
+    var v480markAutoHighlight480: Boolean
+        get() = prefs.getBoolean(KEY_V480MARKAUTOHIGHLIGHT480, false)
+        set(value) = prefs.edit().putBoolean(KEY_V480MARKAUTOHIGHLIGHT480, value).apply()
+
+    var v480maskAutoApply480: Boolean
+        get() = prefs.getBoolean(KEY_V480MASKAUTOAPPLY480, false)
+        set(value) = prefs.edit().putBoolean(KEY_V480MASKAUTOAPPLY480, value).apply()
+
+    var v480matchAutoStart480: Boolean
+        get() = prefs.getBoolean(KEY_V480MATCHAUTOSTART480, false)
+        set(value) = prefs.edit().putBoolean(KEY_V480MATCHAUTOSTART480, value).apply()
+
+    var v480matrixTransform480: Int
+        get() = prefs.getInt(KEY_V480MATRIXTRANSFORM480, 0)
+        set(value) = prefs.edit().putInt(KEY_V480MATRIXTRANSFORM480, value).apply()
+
+    var v480maxConcurrentLoad480: Int
+        get() = prefs.getInt(KEY_V480MAXCONCURRENTLOAD480, 0)
+        set(value) = prefs.edit().putInt(KEY_V480MAXCONCURRENTLOAD480, value).apply()
+
+    var v480measureAutoCalibrate480: Boolean
+        get() = prefs.getBoolean(KEY_V480MEASUREAUTOCALIBRATE480, false)
+        set(value) = prefs.edit().putBoolean(KEY_V480MEASUREAUTOCALIBRATE480, value).apply()
+
+    var v480mediaAutoDetect480: Boolean
+        get() = prefs.getBoolean(KEY_V480MEDIAAUTODETECT480, false)
+        set(value) = prefs.edit().putBoolean(KEY_V480MEDIAAUTODETECT480, value).apply()
+
+    var v480memoryOptimizeAuto480: Boolean
+        get() = prefs.getBoolean(KEY_V480MEMORYOPTIMIZEAUTO480, false)
+        set(value) = prefs.edit().putBoolean(KEY_V480MEMORYOPTIMIZEAUTO480, value).apply()
+
+    var v480mergeAutoResolve480: Boolean
+        get() = prefs.getBoolean(KEY_V480MERGEAUTORESOLVE480, false)
+        set(value) = prefs.edit().putBoolean(KEY_V480MERGEAUTORESOLVE480, value).apply()
+
+    var v480messageAutoReply480: Boolean
+        get() = prefs.getBoolean(KEY_V480MESSAGEAUTOREPLY480, false)
+        set(value) = prefs.edit().putBoolean(KEY_V480MESSAGEAUTOREPLY480, value).apply()
+
+    var v480methodAutoInvoke480: Boolean
+        get() = prefs.getBoolean(KEY_V480METHODAUTOINVOKE480, false)
+        set(value) = prefs.edit().putBoolean(KEY_V480METHODAUTOINVOKE480, value).apply()
+
+    var v480micAutoMute480: Boolean
+        get() = prefs.getBoolean(KEY_V480MICAUTOMUTE480, false)
+        set(value) = prefs.edit().putBoolean(KEY_V480MICAUTOMUTE480, value).apply()
+
+    var v480minBitrateAuto480: Int
+        get() = prefs.getInt(KEY_V480MINBITRATEAUTO480, 0)
+        set(value) = prefs.edit().putInt(KEY_V480MINBITRATEAUTO480, value).apply()
+
+    var v480modeAutoSwitch480: Boolean
+        get() = prefs.getBoolean(KEY_V480MODEAUTOSWITCH480, false)
+        set(value) = prefs.edit().putBoolean(KEY_V480MODEAUTOSWITCH480, value).apply()
+
+    var v480modelAutoLoad480: Boolean
+        get() = prefs.getBoolean(KEY_V480MODELAUTOLOAD480, false)
+        set(value) = prefs.edit().putBoolean(KEY_V480MODELAUTOLOAD480, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -44680,5 +45280,155 @@ class AppPrefs(context: Context) {
         const val KEY_V470LOADPRIORITYHIGH470 = "v470loadPriorityHigh470" // v470 Load Priority High470
         const val KEY_V470LOCALCACHEENABLED470 = "v470localCacheEnabled470" // v470 Local Cache Enabled470
         const val KEY_V470LOCATIONBASEDREC470 = "v470locationBasedRec470" // v470 Location Based Rec470
+        const val KEY_V471MARKAUTOHIGHLIGHT471 = "v471markAutoHighlight471" // v471 Mark Auto Highlight471
+        const val KEY_V471MASKAUTOAPPLY471 = "v471maskAutoApply471" // v471 Mask Auto Apply471
+        const val KEY_V471MATCHAUTOSTART471 = "v471matchAutoStart471" // v471 Match Auto Start471
+        const val KEY_V471MATRIXTRANSFORM471 = "v471matrixTransform471" // v471 Matrix Transform471
+        const val KEY_V471MAXCONCURRENTLOAD471 = "v471maxConcurrentLoad471" // v471 Max Concurrent Load471
+        const val KEY_V471MEASUREAUTOCALIBRATE471 = "v471measureAutoCalibrate471" // v471 Measure Auto Calibrate471
+        const val KEY_V471MEDIAAUTODETECT471 = "v471mediaAutoDetect471" // v471 Media Auto Detect471
+        const val KEY_V471MEMORYOPTIMIZEAUTO471 = "v471memoryOptimizeAuto471" // v471 Memory Optimize Auto471
+        const val KEY_V471MERGEAUTORESOLVE471 = "v471mergeAutoResolve471" // v471 Merge Auto Resolve471
+        const val KEY_V471MESSAGEAUTOREPLY471 = "v471messageAutoReply471" // v471 Message Auto Reply471
+        const val KEY_V471METHODAUTOINVOKE471 = "v471methodAutoInvoke471" // v471 Method Auto Invoke471
+        const val KEY_V471MICAUTOMUTE471 = "v471micAutoMute471" // v471 Mic Auto Mute471
+        const val KEY_V471MINBITRATEAUTO471 = "v471minBitrateAuto471" // v471 Min Bitrate Auto471
+        const val KEY_V471MODEAUTOSWITCH471 = "v471modeAutoSwitch471" // v471 Mode Auto Switch471
+        const val KEY_V471MODELAUTOLOAD471 = "v471modelAutoLoad471" // v471 Model Auto Load471
+        const val KEY_V472MARKAUTOHIGHLIGHT472 = "v472markAutoHighlight472" // v472 Mark Auto Highlight472
+        const val KEY_V472MASKAUTOAPPLY472 = "v472maskAutoApply472" // v472 Mask Auto Apply472
+        const val KEY_V472MATCHAUTOSTART472 = "v472matchAutoStart472" // v472 Match Auto Start472
+        const val KEY_V472MATRIXTRANSFORM472 = "v472matrixTransform472" // v472 Matrix Transform472
+        const val KEY_V472MAXCONCURRENTLOAD472 = "v472maxConcurrentLoad472" // v472 Max Concurrent Load472
+        const val KEY_V472MEASUREAUTOCALIBRATE472 = "v472measureAutoCalibrate472" // v472 Measure Auto Calibrate472
+        const val KEY_V472MEDIAAUTODETECT472 = "v472mediaAutoDetect472" // v472 Media Auto Detect472
+        const val KEY_V472MEMORYOPTIMIZEAUTO472 = "v472memoryOptimizeAuto472" // v472 Memory Optimize Auto472
+        const val KEY_V472MERGEAUTORESOLVE472 = "v472mergeAutoResolve472" // v472 Merge Auto Resolve472
+        const val KEY_V472MESSAGEAUTOREPLY472 = "v472messageAutoReply472" // v472 Message Auto Reply472
+        const val KEY_V472METHODAUTOINVOKE472 = "v472methodAutoInvoke472" // v472 Method Auto Invoke472
+        const val KEY_V472MICAUTOMUTE472 = "v472micAutoMute472" // v472 Mic Auto Mute472
+        const val KEY_V472MINBITRATEAUTO472 = "v472minBitrateAuto472" // v472 Min Bitrate Auto472
+        const val KEY_V472MODEAUTOSWITCH472 = "v472modeAutoSwitch472" // v472 Mode Auto Switch472
+        const val KEY_V472MODELAUTOLOAD472 = "v472modelAutoLoad472" // v472 Model Auto Load472
+        const val KEY_V473MARKAUTOHIGHLIGHT473 = "v473markAutoHighlight473" // v473 Mark Auto Highlight473
+        const val KEY_V473MASKAUTOAPPLY473 = "v473maskAutoApply473" // v473 Mask Auto Apply473
+        const val KEY_V473MATCHAUTOSTART473 = "v473matchAutoStart473" // v473 Match Auto Start473
+        const val KEY_V473MATRIXTRANSFORM473 = "v473matrixTransform473" // v473 Matrix Transform473
+        const val KEY_V473MAXCONCURRENTLOAD473 = "v473maxConcurrentLoad473" // v473 Max Concurrent Load473
+        const val KEY_V473MEASUREAUTOCALIBRATE473 = "v473measureAutoCalibrate473" // v473 Measure Auto Calibrate473
+        const val KEY_V473MEDIAAUTODETECT473 = "v473mediaAutoDetect473" // v473 Media Auto Detect473
+        const val KEY_V473MEMORYOPTIMIZEAUTO473 = "v473memoryOptimizeAuto473" // v473 Memory Optimize Auto473
+        const val KEY_V473MERGEAUTORESOLVE473 = "v473mergeAutoResolve473" // v473 Merge Auto Resolve473
+        const val KEY_V473MESSAGEAUTOREPLY473 = "v473messageAutoReply473" // v473 Message Auto Reply473
+        const val KEY_V473METHODAUTOINVOKE473 = "v473methodAutoInvoke473" // v473 Method Auto Invoke473
+        const val KEY_V473MICAUTOMUTE473 = "v473micAutoMute473" // v473 Mic Auto Mute473
+        const val KEY_V473MINBITRATEAUTO473 = "v473minBitrateAuto473" // v473 Min Bitrate Auto473
+        const val KEY_V473MODEAUTOSWITCH473 = "v473modeAutoSwitch473" // v473 Mode Auto Switch473
+        const val KEY_V473MODELAUTOLOAD473 = "v473modelAutoLoad473" // v473 Model Auto Load473
+        const val KEY_V474MARKAUTOHIGHLIGHT474 = "v474markAutoHighlight474" // v474 Mark Auto Highlight474
+        const val KEY_V474MASKAUTOAPPLY474 = "v474maskAutoApply474" // v474 Mask Auto Apply474
+        const val KEY_V474MATCHAUTOSTART474 = "v474matchAutoStart474" // v474 Match Auto Start474
+        const val KEY_V474MATRIXTRANSFORM474 = "v474matrixTransform474" // v474 Matrix Transform474
+        const val KEY_V474MAXCONCURRENTLOAD474 = "v474maxConcurrentLoad474" // v474 Max Concurrent Load474
+        const val KEY_V474MEASUREAUTOCALIBRATE474 = "v474measureAutoCalibrate474" // v474 Measure Auto Calibrate474
+        const val KEY_V474MEDIAAUTODETECT474 = "v474mediaAutoDetect474" // v474 Media Auto Detect474
+        const val KEY_V474MEMORYOPTIMIZEAUTO474 = "v474memoryOptimizeAuto474" // v474 Memory Optimize Auto474
+        const val KEY_V474MERGEAUTORESOLVE474 = "v474mergeAutoResolve474" // v474 Merge Auto Resolve474
+        const val KEY_V474MESSAGEAUTOREPLY474 = "v474messageAutoReply474" // v474 Message Auto Reply474
+        const val KEY_V474METHODAUTOINVOKE474 = "v474methodAutoInvoke474" // v474 Method Auto Invoke474
+        const val KEY_V474MICAUTOMUTE474 = "v474micAutoMute474" // v474 Mic Auto Mute474
+        const val KEY_V474MINBITRATEAUTO474 = "v474minBitrateAuto474" // v474 Min Bitrate Auto474
+        const val KEY_V474MODEAUTOSWITCH474 = "v474modeAutoSwitch474" // v474 Mode Auto Switch474
+        const val KEY_V474MODELAUTOLOAD474 = "v474modelAutoLoad474" // v474 Model Auto Load474
+        const val KEY_V475MARKAUTOHIGHLIGHT475 = "v475markAutoHighlight475" // v475 Mark Auto Highlight475
+        const val KEY_V475MASKAUTOAPPLY475 = "v475maskAutoApply475" // v475 Mask Auto Apply475
+        const val KEY_V475MATCHAUTOSTART475 = "v475matchAutoStart475" // v475 Match Auto Start475
+        const val KEY_V475MATRIXTRANSFORM475 = "v475matrixTransform475" // v475 Matrix Transform475
+        const val KEY_V475MAXCONCURRENTLOAD475 = "v475maxConcurrentLoad475" // v475 Max Concurrent Load475
+        const val KEY_V475MEASUREAUTOCALIBRATE475 = "v475measureAutoCalibrate475" // v475 Measure Auto Calibrate475
+        const val KEY_V475MEDIAAUTODETECT475 = "v475mediaAutoDetect475" // v475 Media Auto Detect475
+        const val KEY_V475MEMORYOPTIMIZEAUTO475 = "v475memoryOptimizeAuto475" // v475 Memory Optimize Auto475
+        const val KEY_V475MERGEAUTORESOLVE475 = "v475mergeAutoResolve475" // v475 Merge Auto Resolve475
+        const val KEY_V475MESSAGEAUTOREPLY475 = "v475messageAutoReply475" // v475 Message Auto Reply475
+        const val KEY_V475METHODAUTOINVOKE475 = "v475methodAutoInvoke475" // v475 Method Auto Invoke475
+        const val KEY_V475MICAUTOMUTE475 = "v475micAutoMute475" // v475 Mic Auto Mute475
+        const val KEY_V475MINBITRATEAUTO475 = "v475minBitrateAuto475" // v475 Min Bitrate Auto475
+        const val KEY_V475MODEAUTOSWITCH475 = "v475modeAutoSwitch475" // v475 Mode Auto Switch475
+        const val KEY_V475MODELAUTOLOAD475 = "v475modelAutoLoad475" // v475 Model Auto Load475
+        const val KEY_V476MARKAUTOHIGHLIGHT476 = "v476markAutoHighlight476" // v476 Mark Auto Highlight476
+        const val KEY_V476MASKAUTOAPPLY476 = "v476maskAutoApply476" // v476 Mask Auto Apply476
+        const val KEY_V476MATCHAUTOSTART476 = "v476matchAutoStart476" // v476 Match Auto Start476
+        const val KEY_V476MATRIXTRANSFORM476 = "v476matrixTransform476" // v476 Matrix Transform476
+        const val KEY_V476MAXCONCURRENTLOAD476 = "v476maxConcurrentLoad476" // v476 Max Concurrent Load476
+        const val KEY_V476MEASUREAUTOCALIBRATE476 = "v476measureAutoCalibrate476" // v476 Measure Auto Calibrate476
+        const val KEY_V476MEDIAAUTODETECT476 = "v476mediaAutoDetect476" // v476 Media Auto Detect476
+        const val KEY_V476MEMORYOPTIMIZEAUTO476 = "v476memoryOptimizeAuto476" // v476 Memory Optimize Auto476
+        const val KEY_V476MERGEAUTORESOLVE476 = "v476mergeAutoResolve476" // v476 Merge Auto Resolve476
+        const val KEY_V476MESSAGEAUTOREPLY476 = "v476messageAutoReply476" // v476 Message Auto Reply476
+        const val KEY_V476METHODAUTOINVOKE476 = "v476methodAutoInvoke476" // v476 Method Auto Invoke476
+        const val KEY_V476MICAUTOMUTE476 = "v476micAutoMute476" // v476 Mic Auto Mute476
+        const val KEY_V476MINBITRATEAUTO476 = "v476minBitrateAuto476" // v476 Min Bitrate Auto476
+        const val KEY_V476MODEAUTOSWITCH476 = "v476modeAutoSwitch476" // v476 Mode Auto Switch476
+        const val KEY_V476MODELAUTOLOAD476 = "v476modelAutoLoad476" // v476 Model Auto Load476
+        const val KEY_V477MARKAUTOHIGHLIGHT477 = "v477markAutoHighlight477" // v477 Mark Auto Highlight477
+        const val KEY_V477MASKAUTOAPPLY477 = "v477maskAutoApply477" // v477 Mask Auto Apply477
+        const val KEY_V477MATCHAUTOSTART477 = "v477matchAutoStart477" // v477 Match Auto Start477
+        const val KEY_V477MATRIXTRANSFORM477 = "v477matrixTransform477" // v477 Matrix Transform477
+        const val KEY_V477MAXCONCURRENTLOAD477 = "v477maxConcurrentLoad477" // v477 Max Concurrent Load477
+        const val KEY_V477MEASUREAUTOCALIBRATE477 = "v477measureAutoCalibrate477" // v477 Measure Auto Calibrate477
+        const val KEY_V477MEDIAAUTODETECT477 = "v477mediaAutoDetect477" // v477 Media Auto Detect477
+        const val KEY_V477MEMORYOPTIMIZEAUTO477 = "v477memoryOptimizeAuto477" // v477 Memory Optimize Auto477
+        const val KEY_V477MERGEAUTORESOLVE477 = "v477mergeAutoResolve477" // v477 Merge Auto Resolve477
+        const val KEY_V477MESSAGEAUTOREPLY477 = "v477messageAutoReply477" // v477 Message Auto Reply477
+        const val KEY_V477METHODAUTOINVOKE477 = "v477methodAutoInvoke477" // v477 Method Auto Invoke477
+        const val KEY_V477MICAUTOMUTE477 = "v477micAutoMute477" // v477 Mic Auto Mute477
+        const val KEY_V477MINBITRATEAUTO477 = "v477minBitrateAuto477" // v477 Min Bitrate Auto477
+        const val KEY_V477MODEAUTOSWITCH477 = "v477modeAutoSwitch477" // v477 Mode Auto Switch477
+        const val KEY_V477MODELAUTOLOAD477 = "v477modelAutoLoad477" // v477 Model Auto Load477
+        const val KEY_V478MARKAUTOHIGHLIGHT478 = "v478markAutoHighlight478" // v478 Mark Auto Highlight478
+        const val KEY_V478MASKAUTOAPPLY478 = "v478maskAutoApply478" // v478 Mask Auto Apply478
+        const val KEY_V478MATCHAUTOSTART478 = "v478matchAutoStart478" // v478 Match Auto Start478
+        const val KEY_V478MATRIXTRANSFORM478 = "v478matrixTransform478" // v478 Matrix Transform478
+        const val KEY_V478MAXCONCURRENTLOAD478 = "v478maxConcurrentLoad478" // v478 Max Concurrent Load478
+        const val KEY_V478MEASUREAUTOCALIBRATE478 = "v478measureAutoCalibrate478" // v478 Measure Auto Calibrate478
+        const val KEY_V478MEDIAAUTODETECT478 = "v478mediaAutoDetect478" // v478 Media Auto Detect478
+        const val KEY_V478MEMORYOPTIMIZEAUTO478 = "v478memoryOptimizeAuto478" // v478 Memory Optimize Auto478
+        const val KEY_V478MERGEAUTORESOLVE478 = "v478mergeAutoResolve478" // v478 Merge Auto Resolve478
+        const val KEY_V478MESSAGEAUTOREPLY478 = "v478messageAutoReply478" // v478 Message Auto Reply478
+        const val KEY_V478METHODAUTOINVOKE478 = "v478methodAutoInvoke478" // v478 Method Auto Invoke478
+        const val KEY_V478MICAUTOMUTE478 = "v478micAutoMute478" // v478 Mic Auto Mute478
+        const val KEY_V478MINBITRATEAUTO478 = "v478minBitrateAuto478" // v478 Min Bitrate Auto478
+        const val KEY_V478MODEAUTOSWITCH478 = "v478modeAutoSwitch478" // v478 Mode Auto Switch478
+        const val KEY_V478MODELAUTOLOAD478 = "v478modelAutoLoad478" // v478 Model Auto Load478
+        const val KEY_V479MARKAUTOHIGHLIGHT479 = "v479markAutoHighlight479" // v479 Mark Auto Highlight479
+        const val KEY_V479MASKAUTOAPPLY479 = "v479maskAutoApply479" // v479 Mask Auto Apply479
+        const val KEY_V479MATCHAUTOSTART479 = "v479matchAutoStart479" // v479 Match Auto Start479
+        const val KEY_V479MATRIXTRANSFORM479 = "v479matrixTransform479" // v479 Matrix Transform479
+        const val KEY_V479MAXCONCURRENTLOAD479 = "v479maxConcurrentLoad479" // v479 Max Concurrent Load479
+        const val KEY_V479MEASUREAUTOCALIBRATE479 = "v479measureAutoCalibrate479" // v479 Measure Auto Calibrate479
+        const val KEY_V479MEDIAAUTODETECT479 = "v479mediaAutoDetect479" // v479 Media Auto Detect479
+        const val KEY_V479MEMORYOPTIMIZEAUTO479 = "v479memoryOptimizeAuto479" // v479 Memory Optimize Auto479
+        const val KEY_V479MERGEAUTORESOLVE479 = "v479mergeAutoResolve479" // v479 Merge Auto Resolve479
+        const val KEY_V479MESSAGEAUTOREPLY479 = "v479messageAutoReply479" // v479 Message Auto Reply479
+        const val KEY_V479METHODAUTOINVOKE479 = "v479methodAutoInvoke479" // v479 Method Auto Invoke479
+        const val KEY_V479MICAUTOMUTE479 = "v479micAutoMute479" // v479 Mic Auto Mute479
+        const val KEY_V479MINBITRATEAUTO479 = "v479minBitrateAuto479" // v479 Min Bitrate Auto479
+        const val KEY_V479MODEAUTOSWITCH479 = "v479modeAutoSwitch479" // v479 Mode Auto Switch479
+        const val KEY_V479MODELAUTOLOAD479 = "v479modelAutoLoad479" // v479 Model Auto Load479
+        const val KEY_V480MARKAUTOHIGHLIGHT480 = "v480markAutoHighlight480" // v480 Mark Auto Highlight480
+        const val KEY_V480MASKAUTOAPPLY480 = "v480maskAutoApply480" // v480 Mask Auto Apply480
+        const val KEY_V480MATCHAUTOSTART480 = "v480matchAutoStart480" // v480 Match Auto Start480
+        const val KEY_V480MATRIXTRANSFORM480 = "v480matrixTransform480" // v480 Matrix Transform480
+        const val KEY_V480MAXCONCURRENTLOAD480 = "v480maxConcurrentLoad480" // v480 Max Concurrent Load480
+        const val KEY_V480MEASUREAUTOCALIBRATE480 = "v480measureAutoCalibrate480" // v480 Measure Auto Calibrate480
+        const val KEY_V480MEDIAAUTODETECT480 = "v480mediaAutoDetect480" // v480 Media Auto Detect480
+        const val KEY_V480MEMORYOPTIMIZEAUTO480 = "v480memoryOptimizeAuto480" // v480 Memory Optimize Auto480
+        const val KEY_V480MERGEAUTORESOLVE480 = "v480mergeAutoResolve480" // v480 Merge Auto Resolve480
+        const val KEY_V480MESSAGEAUTOREPLY480 = "v480messageAutoReply480" // v480 Message Auto Reply480
+        const val KEY_V480METHODAUTOINVOKE480 = "v480methodAutoInvoke480" // v480 Method Auto Invoke480
+        const val KEY_V480MICAUTOMUTE480 = "v480micAutoMute480" // v480 Mic Auto Mute480
+        const val KEY_V480MINBITRATEAUTO480 = "v480minBitrateAuto480" // v480 Min Bitrate Auto480
+        const val KEY_V480MODEAUTOSWITCH480 = "v480modeAutoSwitch480" // v480 Mode Auto Switch480
+        const val KEY_V480MODELAUTOLOAD480 = "v480modelAutoLoad480" // v480 Model Auto Load480
     }
 }
