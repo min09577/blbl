@@ -12845,6 +12845,607 @@ class AppPrefs(context: Context) {
         get() = prefs.getInt(KEY_V100SUBTITLEANIMATIONTYPE99, 0)
         set(value) = prefs.edit().putInt(KEY_V100SUBTITLEANIMATIONTYPE99, value).apply()
 
+
+    var v101audioSpatialWidthCustom: Int
+        get() = prefs.getInt(KEY_V101AUDIOSPATIALWIDTHCUSTOM, 50)
+        set(value) = prefs.edit().putInt(KEY_V101AUDIOSPATIALWIDTHCUSTOM, value).apply()
+
+    var v101danmakuFontStretchToggle: Boolean
+        get() = prefs.getBoolean(KEY_V101DANMAKUFONTSTRETCHTOGGLE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V101DANMAKUFONTSTRETCHTOGGLE, value).apply()
+
+    var v101subtitleShadowColorCustom: Int
+        get() = prefs.getInt(KEY_V101SUBTITLESHADOWCOLORCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V101SUBTITLESHADOWCOLORCUSTOM, value).apply()
+
+    var v101gestureSwipeLockHorizontal: Boolean
+        get() = prefs.getBoolean(KEY_V101GESTURESWIPELOCKHORIZONTAL, false)
+        set(value) = prefs.edit().putBoolean(KEY_V101GESTURESWIPELOCKHORIZONTAL, value).apply()
+
+    var v101castVideoHDRMode: Int
+        get() = prefs.getInt(KEY_V101CASTVIDEOHDRMODE, 0)
+        set(value) = prefs.edit().putInt(KEY_V101CASTVIDEOHDRMODE, value).apply()
+
+    var v101playlistAutoRemoveWatched: Boolean
+        get() = prefs.getBoolean(KEY_V101PLAYLISTAUTOREMOVEWATCHED, false)
+        set(value) = prefs.edit().putBoolean(KEY_V101PLAYLISTAUTOREMOVEWATCHED, value).apply()
+
+    var v101cacheEncryptToggle: Boolean
+        get() = prefs.getBoolean(KEY_V101CACHEENCRYPTTOGGLE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V101CACHEENCRYPTTOGGLE, value).apply()
+
+    var v101progressBarChapterSnap: Boolean
+        get() = prefs.getBoolean(KEY_V101PROGRESSBARCHAPTERSNAP, false)
+        set(value) = prefs.edit().putBoolean(KEY_V101PROGRESSBARCHAPTERSNAP, value).apply()
+
+    var v101volumeEQPresetCustom: Int
+        get() = prefs.getInt(KEY_V101VOLUMEEQPRESETCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V101VOLUMEEQPRESETCUSTOM, value).apply()
+
+    var v101historySearchHighlight: Boolean
+        get() = prefs.getBoolean(KEY_V101HISTORYSEARCHHIGHLIGHT, false)
+        set(value) = prefs.edit().putBoolean(KEY_V101HISTORYSEARCHHIGHLIGHT, value).apply()
+
+    var v101playbackLoopSegmentAB: Boolean
+        get() = prefs.getBoolean(KEY_V101PLAYBACKLOOPSEGMENTAB, false)
+        set(value) = prefs.edit().putBoolean(KEY_V101PLAYBACKLOOPSEGMENTAB, value).apply()
+
+    var v101screenshotAutoCrop: Boolean
+        get() = prefs.getBoolean(KEY_V101SCREENSHOTAUTOCROP, false)
+        set(value) = prefs.edit().putBoolean(KEY_V101SCREENSHOTAUTOCROP, value).apply()
+
+    var v101videoEdgeEnhanceCustom: Int
+        get() = prefs.getInt(KEY_V101VIDEOEDGEENHANCECUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V101VIDEOEDGEENHANCECUSTOM, value).apply()
+
+    var v101danmakuFontGlowToggle: Boolean
+        get() = prefs.getBoolean(KEY_V101DANMAKUFONTGLOWTOGGLE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V101DANMAKUFONTGLOWTOGGLE, value).apply()
+
+    var v101subtitleLineSpacing: Int
+        get() = prefs.getInt(KEY_V101SUBTITLELINESPACING, 100)
+        set(value) = prefs.edit().putInt(KEY_V101SUBTITLELINESPACING, value).apply()
+
+    var v102audioBassBoostCustom: Int
+        get() = prefs.getInt(KEY_V102AUDIOBASSBOOSTCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V102AUDIOBASSBOOSTCUSTOM, value).apply()
+
+    var v102danmakuFontStrokeWidth: Int
+        get() = prefs.getInt(KEY_V102DANMAKUFONTSTROKEWIDTH, 1)
+        set(value) = prefs.edit().putInt(KEY_V102DANMAKUFONTSTROKEWIDTH, value).apply()
+
+    var v102subtitleTextAlignment: Int
+        get() = prefs.getInt(KEY_V102SUBTITLETEXTALIGNMENT, 0)
+        set(value) = prefs.edit().putInt(KEY_V102SUBTITLETEXTALIGNMENT, value).apply()
+
+    var v102gestureSwipeLockVertical: Boolean
+        get() = prefs.getBoolean(KEY_V102GESTURESWIPELOCKVERTICAL, false)
+        set(value) = prefs.edit().putBoolean(KEY_V102GESTURESWIPELOCKVERTICAL, value).apply()
+
+    var v102castVideoAVSync: Int
+        get() = prefs.getInt(KEY_V102CASTVIDEOAVSYNC, 0)
+        set(value) = prefs.edit().putInt(KEY_V102CASTVIDEOAVSYNC, value).apply()
+
+    var v102playlistAutoReverseOrder: Boolean
+        get() = prefs.getBoolean(KEY_V102PLAYLISTAUTOREVERSEORDER, false)
+        set(value) = prefs.edit().putBoolean(KEY_V102PLAYLISTAUTOREVERSEORDER, value).apply()
+
+    var v102cacheAutoClearOnFull: Boolean
+        get() = prefs.getBoolean(KEY_V102CACHEAUTOCLEARONFULL, true)
+        set(value) = prefs.edit().putBoolean(KEY_V102CACHEAUTOCLEARONFULL, value).apply()
+
+    var v102progressBarBufferShow: Boolean
+        get() = prefs.getBoolean(KEY_V102PROGRESSBARBUFFERSHOW, true)
+        set(value) = prefs.edit().putBoolean(KEY_V102PROGRESSBARBUFFERSHOW, value).apply()
+
+    var v102volumeEQGainPreamp: Int
+        get() = prefs.getInt(KEY_V102VOLUMEEQGAINPREAMP, 0)
+        set(value) = prefs.edit().putInt(KEY_V102VOLUMEEQGAINPREAMP, value).apply()
+
+    var v102historyPinRecordToggle: Boolean
+        get() = prefs.getBoolean(KEY_V102HISTORYPINRECORDTOGGLE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V102HISTORYPINRECORDTOGGLE, value).apply()
+
+    var v102playbackLoopSegmentCount: Int
+        get() = prefs.getInt(KEY_V102PLAYBACKLOOPSEGMENTCOUNT, 3)
+        set(value) = prefs.edit().putInt(KEY_V102PLAYBACKLOOPSEGMENTCOUNT, value).apply()
+
+    var v102screenshotAutoRotate: Boolean
+        get() = prefs.getBoolean(KEY_V102SCREENSHOTAUTOROTATE, true)
+        set(value) = prefs.edit().putBoolean(KEY_V102SCREENSHOTAUTOROTATE, value).apply()
+
+    var v102videoMosaicEffectCustom: Int
+        get() = prefs.getInt(KEY_V102VIDEOMOSAICEFFECTCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V102VIDEOMOSAICEFFECTCUSTOM, value).apply()
+
+    var v102danmakuFontGlowColor: Int
+        get() = prefs.getInt(KEY_V102DANMAKUFONTGLOWCOLOR, 0)
+        set(value) = prefs.edit().putInt(KEY_V102DANMAKUFONTGLOWCOLOR, value).apply()
+
+    var v102subtitleTextTransformCustom: Int
+        get() = prefs.getInt(KEY_V102SUBTITLETEXTTRANSFORMCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V102SUBTITLETEXTTRANSFORMCUSTOM, value).apply()
+
+    var v103audioTrebleBoostCustom: Int
+        get() = prefs.getInt(KEY_V103AUDIOTREBLEBOOSTCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V103AUDIOTREBLEBOOSTCUSTOM, value).apply()
+
+    var v103danmakuFontGlowRadius: Int
+        get() = prefs.getInt(KEY_V103DANMAKUFONTGLOWRADIUS, 2)
+        set(value) = prefs.edit().putInt(KEY_V103DANMAKUFONTGLOWRADIUS, value).apply()
+
+    var v103subtitleFontVariantCustom: Int
+        get() = prefs.getInt(KEY_V103SUBTITLEFONTVARIANTCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V103SUBTITLEFONTVARIANTCUSTOM, value).apply()
+
+    var v103gestureLongPressDragAction: Int
+        get() = prefs.getInt(KEY_V103GESTURELONGPRESSDRAGACTION, 0)
+        set(value) = prefs.edit().putInt(KEY_V103GESTURELONGPRESSDRAGACTION, value).apply()
+
+    var v103castVideoBitDepth: Int
+        get() = prefs.getInt(KEY_V103CASTVIDEOBITDEPTH, 0)
+        set(value) = prefs.edit().putInt(KEY_V103CASTVIDEOBITDEPTH, value).apply()
+
+    var v103playlistAutoSkipDuplicate: Boolean
+        get() = prefs.getBoolean(KEY_V103PLAYLISTAUTOSKIPDUPLICATE, true)
+        set(value) = prefs.edit().putBoolean(KEY_V103PLAYLISTAUTOSKIPDUPLICATE, value).apply()
+
+    var v103cacheThumbnailPreload: Boolean
+        get() = prefs.getBoolean(KEY_V103CACHETHUMBNAILPRELOAD, true)
+        set(value) = prefs.edit().putBoolean(KEY_V103CACHETHUMBNAILPRELOAD, value).apply()
+
+    var v103progressBarLiveEdgeColor: Int
+        get() = prefs.getInt(KEY_V103PROGRESSBARLIVEEDGECOLOR, 0)
+        set(value) = prefs.edit().putInt(KEY_V103PROGRESSBARLIVEEDGECOLOR, value).apply()
+
+    var v103volumeNightBoostToggle: Boolean
+        get() = prefs.getBoolean(KEY_V103VOLUMENIGHTBOOSTTOGGLE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V103VOLUMENIGHTBOOSTTOGGLE, value).apply()
+
+    var v103historyUndoDeleteToggle: Boolean
+        get() = prefs.getBoolean(KEY_V103HISTORYUNDODELETETOGGLE, true)
+        set(value) = prefs.edit().putBoolean(KEY_V103HISTORYUNDODELETETOGGLE, value).apply()
+
+    var v103playbackABLoopMemory: Boolean
+        get() = prefs.getBoolean(KEY_V103PLAYBACKABLOOPMEMORY, true)
+        set(value) = prefs.edit().putBoolean(KEY_V103PLAYBACKABLOOPMEMORY, value).apply()
+
+    var v103screenshotAutoNamingScheme: Int
+        get() = prefs.getInt(KEY_V103SCREENSHOTAUTONAMINGSCHEME, 0)
+        set(value) = prefs.edit().putInt(KEY_V103SCREENSHOTAUTONAMINGSCHEME, value).apply()
+
+    var v103videoKaleidoscopeCustom: Int
+        get() = prefs.getInt(KEY_V103VIDEOKALEIDOSCOPECUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V103VIDEOKALEIDOSCOPECUSTOM, value).apply()
+
+    var v103danmakuFontGlowIntensity: Int
+        get() = prefs.getInt(KEY_V103DANMAKUFONTGLOWINTENSITY, 50)
+        set(value) = prefs.edit().putInt(KEY_V103DANMAKUFONTGLOWINTENSITY, value).apply()
+
+    var v103subtitleFontLoadCustom: Int
+        get() = prefs.getInt(KEY_V103SUBTITLEFONTLOADCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V103SUBTITLEFONTLOADCUSTOM, value).apply()
+
+    var v104audioVocalBoostCustom: Int
+        get() = prefs.getInt(KEY_V104AUDIOVOCALBOOSTCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V104AUDIOVOCALBOOSTCUSTOM, value).apply()
+
+    var v104danmakuFontGlowSpread: Int
+        get() = prefs.getInt(KEY_V104DANMAKUFONTGLOWSPREAD, 2)
+        set(value) = prefs.edit().putInt(KEY_V104DANMAKUFONTGLOWSPREAD, value).apply()
+
+    var v104subtitleFontScaleCustom: Int
+        get() = prefs.getInt(KEY_V104SUBTITLEFONTSCALECUSTOM, 100)
+        set(value) = prefs.edit().putInt(KEY_V104SUBTITLEFONTSCALECUSTOM, value).apply()
+
+    var v104gestureQuickScrubToggle: Boolean
+        get() = prefs.getBoolean(KEY_V104GESTUREQUICKSCRUBTOGGLE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V104GESTUREQUICKSCRUBTOGGLE, value).apply()
+
+    var v104castVideoFieldOrder: Int
+        get() = prefs.getInt(KEY_V104CASTVIDEOFIELDORDER, 0)
+        set(value) = prefs.edit().putInt(KEY_V104CASTVIDEOFIELDORDER, value).apply()
+
+    var v104playlistAutoDownloadNext: Boolean
+        get() = prefs.getBoolean(KEY_V104PLAYLISTAUTODOWNLOADNEXT, false)
+        set(value) = prefs.edit().putBoolean(KEY_V104PLAYLISTAUTODOWNLOADNEXT, value).apply()
+
+    var v104cacheVideoOnlyMode: Boolean
+        get() = prefs.getBoolean(KEY_V104CACHEVIDEOONLYMODE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V104CACHEVIDEOONLYMODE, value).apply()
+
+    var v104progressBarTimeCodeFormat: Int
+        get() = prefs.getInt(KEY_V104PROGRESSBARTIMECODEFORMAT, 0)
+        set(value) = prefs.edit().putInt(KEY_V104PROGRESSBARTIMECODEFORMAT, value).apply()
+
+    var v104volumeAudioChannelMap: Int
+        get() = prefs.getInt(KEY_V104VOLUMEAUDIOCHANNELMAP, 0)
+        set(value) = prefs.edit().putInt(KEY_V104VOLUMEAUDIOCHANNELMAP, value).apply()
+
+    var v104historyBatchDeleteMode: Boolean
+        get() = prefs.getBoolean(KEY_V104HISTORYBATCHDELETEMODE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V104HISTORYBATCHDELETEMODE, value).apply()
+
+    var v104playbackABLoopAutoSave: Boolean
+        get() = prefs.getBoolean(KEY_V104PLAYBACKABLOOPAUTOSAVE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V104PLAYBACKABLOOPAUTOSAVE, value).apply()
+
+    var v104screenshotAutoOptimize: Boolean
+        get() = prefs.getBoolean(KEY_V104SCREENSHOTAUTOOPTIMIZE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V104SCREENSHOTAUTOOPTIMIZE, value).apply()
+
+    var v104videoMirrorFlipCustom: Int
+        get() = prefs.getInt(KEY_V104VIDEOMIRRORFLIPCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V104VIDEOMIRRORFLIPCUSTOM, value).apply()
+
+    var v104danmakuFontGradientToggle: Boolean
+        get() = prefs.getBoolean(KEY_V104DANMAKUFONTGRADIENTTOGGLE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V104DANMAKUFONTGRADIENTTOGGLE, value).apply()
+
+    var v104subtitleFontColorCustom: Int
+        get() = prefs.getInt(KEY_V104SUBTITLEFONTCOLORCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V104SUBTITLEFONTCOLORCUSTOM, value).apply()
+
+    var v105audioVirtualSurroundCustom: Int
+        get() = prefs.getInt(KEY_V105AUDIOVIRTUALSURROUNDCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V105AUDIOVIRTUALSURROUNDCUSTOM, value).apply()
+
+    var v105danmakuFontGradientStart: Int
+        get() = prefs.getInt(KEY_V105DANMAKUFONTGRADIENTSTART, 0)
+        set(value) = prefs.edit().putInt(KEY_V105DANMAKUFONTGRADIENTSTART, value).apply()
+
+    var v105subtitleFontAlphaCustom: Int
+        get() = prefs.getInt(KEY_V105SUBTITLEFONTALPHACUSTOM, 100)
+        set(value) = prefs.edit().putInt(KEY_V105SUBTITLEFONTALPHACUSTOM, value).apply()
+
+    var v105gestureQuickSeekDistance: Int
+        get() = prefs.getInt(KEY_V105GESTUREQUICKSEEKDISTANCE, 10)
+        set(value) = prefs.edit().putInt(KEY_V105GESTUREQUICKSEEKDISTANCE, value).apply()
+
+    var v105castVideoColorSpace: Int
+        get() = prefs.getInt(KEY_V105CASTVIDEOCOLORSPACE, 0)
+        set(value) = prefs.edit().putInt(KEY_V105CASTVIDEOCOLORSPACE, value).apply()
+
+    var v105playlistAutoSortByPopular: Boolean
+        get() = prefs.getBoolean(KEY_V105PLAYLISTAUTOSORTBYPOPULAR, false)
+        set(value) = prefs.edit().putBoolean(KEY_V105PLAYLISTAUTOSORTBYPOPULAR, value).apply()
+
+    var v105cacheAudioOnlyMode: Boolean
+        get() = prefs.getBoolean(KEY_V105CACHEAUDIOONLYMODE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V105CACHEAUDIOONLYMODE, value).apply()
+
+    var v105progressBarCustomScale: Int
+        get() = prefs.getInt(KEY_V105PROGRESSBARCUSTOMSCALE, 0)
+        set(value) = prefs.edit().putInt(KEY_V105PROGRESSBARCUSTOMSCALE, value).apply()
+
+    var v105volumeHeadphoneOptimize: Boolean
+        get() = prefs.getBoolean(KEY_V105VOLUMEHEADPHONEOPTIMIZE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V105VOLUMEHEADPHONEOPTIMIZE, value).apply()
+
+    var v105historyMultiSelectMode: Boolean
+        get() = prefs.getBoolean(KEY_V105HISTORYMULTISELECTMODE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V105HISTORYMULTISELECTMODE, value).apply()
+
+    var v105playbackABLoopBeatSync: Boolean
+        get() = prefs.getBoolean(KEY_V105PLAYBACKABLOOPBEATSYNC, false)
+        set(value) = prefs.edit().putBoolean(KEY_V105PLAYBACKABLOOPBEATSYNC, value).apply()
+
+    var v105screenshotAutoWatermark: Boolean
+        get() = prefs.getBoolean(KEY_V105SCREENSHOTAUTOWATERMARK, false)
+        set(value) = prefs.edit().putBoolean(KEY_V105SCREENSHOTAUTOWATERMARK, value).apply()
+
+    var v105videoRotateCustom: Int
+        get() = prefs.getInt(KEY_V105VIDEOROTATECUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V105VIDEOROTATECUSTOM, value).apply()
+
+    var v105danmakuFontGradientEnd: Int
+        get() = prefs.getInt(KEY_V105DANMAKUFONTGRADIENTEND, 0)
+        set(value) = prefs.edit().putInt(KEY_V105DANMAKUFONTGRADIENTEND, value).apply()
+
+    var v105subtitleFontStrokeWidth: Int
+        get() = prefs.getInt(KEY_V105SUBTITLEFONTSTROKEWIDTH, 1)
+        set(value) = prefs.edit().putInt(KEY_V105SUBTITLEFONTSTROKEWIDTH, value).apply()
+
+    var v106audioCompressorThreshold: Int
+        get() = prefs.getInt(KEY_V106AUDIOCOMPRESSORTHRESHOLD, 0)
+        set(value) = prefs.edit().putInt(KEY_V106AUDIOCOMPRESSORTHRESHOLD, value).apply()
+
+    var v106danmakuFontGradientAngle: Int
+        get() = prefs.getInt(KEY_V106DANMAKUFONTGRADIENTANGLE, 0)
+        set(value) = prefs.edit().putInt(KEY_V106DANMAKUFONTGRADIENTANGLE, value).apply()
+
+    var v106subtitleFontStrokeColor: Int
+        get() = prefs.getInt(KEY_V106SUBTITLEFONTSTROKECOLOR, 0)
+        set(value) = prefs.edit().putInt(KEY_V106SUBTITLEFONTSTROKECOLOR, value).apply()
+
+    var v106gestureQuickVolumeGesture: Boolean
+        get() = prefs.getBoolean(KEY_V106GESTUREQUICKVOLUMEGESTURE, true)
+        set(value) = prefs.edit().putBoolean(KEY_V106GESTUREQUICKVOLUMEGESTURE, value).apply()
+
+    var v106castVideoFrameRateLimit: Int
+        get() = prefs.getInt(KEY_V106CASTVIDEOFRAMERATELIMIT, 0)
+        set(value) = prefs.edit().putInt(KEY_V106CASTVIDEOFRAMERATELIMIT, value).apply()
+
+    var v106playlistAutoSortByDateNew: Boolean
+        get() = prefs.getBoolean(KEY_V106PLAYLISTAUTOSORTBYDATENEW, false)
+        set(value) = prefs.edit().putBoolean(KEY_V106PLAYLISTAUTOSORTBYDATENEW, value).apply()
+
+    var v106cachePartialDownloadToggle: Boolean
+        get() = prefs.getBoolean(KEY_V106CACHEPARTIALDOWNLOADTOGGLE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V106CACHEPARTIALDOWNLOADTOGGLE, value).apply()
+
+    var v106progressBarCustomHeight: Int
+        get() = prefs.getInt(KEY_V106PROGRESSBARCUSTOMHEIGHT, 2)
+        set(value) = prefs.edit().putInt(KEY_V106PROGRESSBARCUSTOMHEIGHT, value).apply()
+
+    var v106volumeBluetoothCodec: Int
+        get() = prefs.getInt(KEY_V106VOLUMEBLUETOOTHCODEC, 0)
+        set(value) = prefs.edit().putInt(KEY_V106VOLUMEBLUETOOTHCODEC, value).apply()
+
+    var v106historyFilterByType: Int
+        get() = prefs.getInt(KEY_V106HISTORYFILTERBYTYPE, 0)
+        set(value) = prefs.edit().putInt(KEY_V106HISTORYFILTERBYTYPE, value).apply()
+
+    var v106playbackABLoopCrossfade: Boolean
+        get() = prefs.getBoolean(KEY_V106PLAYBACKABLOOPCROSSFADE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V106PLAYBACKABLOOPCROSSFADE, value).apply()
+
+    var v106screenshotAutoCompress: Boolean
+        get() = prefs.getBoolean(KEY_V106SCREENSHOTAUTOCOMPRESS, false)
+        set(value) = prefs.edit().putBoolean(KEY_V106SCREENSHOTAUTOCOMPRESS, value).apply()
+
+    var v106videoStretchCustom: Int
+        get() = prefs.getInt(KEY_V106VIDEOSTRETCHCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V106VIDEOSTRETCHCUSTOM, value).apply()
+
+    var v106danmakuFontTextureCustom: Int
+        get() = prefs.getInt(KEY_V106DANMAKUFONTTEXTURECUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V106DANMAKUFONTTEXTURECUSTOM, value).apply()
+
+    var v106subtitleFontShadowColor: Int
+        get() = prefs.getInt(KEY_V106SUBTITLEFONTSHADOWCOLOR, 0)
+        set(value) = prefs.edit().putInt(KEY_V106SUBTITLEFONTSHADOWCOLOR, value).apply()
+
+    var v107audioCompressorRatio: Int
+        get() = prefs.getInt(KEY_V107AUDIOCOMPRESSORRATIO, 0)
+        set(value) = prefs.edit().putInt(KEY_V107AUDIOCOMPRESSORRATIO, value).apply()
+
+    var v107danmakuFontFadeEdgeSize: Int
+        get() = prefs.getInt(KEY_V107DANMAKUFONTFADEEDGESIZE, 10)
+        set(value) = prefs.edit().putInt(KEY_V107DANMAKUFONTFADEEDGESIZE, value).apply()
+
+    var v107subtitleFontShadowRadius: Int
+        get() = prefs.getInt(KEY_V107SUBTITLEFONTSHADOWRADIUS, 2)
+        set(value) = prefs.edit().putInt(KEY_V107SUBTITLEFONTSHADOWRADIUS, value).apply()
+
+    var v107gestureQuickBrightGesture: Boolean
+        get() = prefs.getBoolean(KEY_V107GESTUREQUICKBRIGHTGESTURE, true)
+        set(value) = prefs.edit().putBoolean(KEY_V107GESTUREQUICKBRIGHTGESTURE, value).apply()
+
+    var v107castVideoDeinterlaceMode: Int
+        get() = prefs.getInt(KEY_V107CASTVIDEODEINTERLACEMODE, 0)
+        set(value) = prefs.edit().putInt(KEY_V107CASTVIDEODEINTERLACEMODE, value).apply()
+
+    var v107playlistAutoSortByDuration: Boolean
+        get() = prefs.getBoolean(KEY_V107PLAYLISTAUTOSORTBYDURATION, false)
+        set(value) = prefs.edit().putBoolean(KEY_V107PLAYLISTAUTOSORTBYDURATION, value).apply()
+
+    var v107cacheP2PDownloadToggle: Boolean
+        get() = prefs.getBoolean(KEY_V107CACHEP2PDOWNLOADTOGGLE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V107CACHEP2PDOWNLOADTOGGLE, value).apply()
+
+    var v107progressBarCustomMargin: Int
+        get() = prefs.getInt(KEY_V107PROGRESSBARCUSTOMMARGIN, 0)
+        set(value) = prefs.edit().putInt(KEY_V107PROGRESSBARCUSTOMMARGIN, value).apply()
+
+    var v107volumeUSBDACompatibility: Boolean
+        get() = prefs.getBoolean(KEY_V107VOLUMEUSBDACOMPATIBILITY, false)
+        set(value) = prefs.edit().putBoolean(KEY_V107VOLUMEUSBDACOMPATIBILITY, value).apply()
+
+    var v107historyFilterByDuration: Int
+        get() = prefs.getInt(KEY_V107HISTORYFILTERBYDURATION, 0)
+        set(value) = prefs.edit().putInt(KEY_V107HISTORYFILTERBYDURATION, value).apply()
+
+    var v107playbackABLoopPitchShift: Boolean
+        get() = prefs.getBoolean(KEY_V107PLAYBACKABLOOPPITCHSHIFT, false)
+        set(value) = prefs.edit().putBoolean(KEY_V107PLAYBACKABLOOPPITCHSHIFT, value).apply()
+
+    var v107screenshotAutoShareAfter: Boolean
+        get() = prefs.getBoolean(KEY_V107SCREENSHOTAUTOSHAREAFTER, false)
+        set(value) = prefs.edit().putBoolean(KEY_V107SCREENSHOTAUTOSHAREAFTER, value).apply()
+
+    var v107videoCropCustom: Int
+        get() = prefs.getInt(KEY_V107VIDEOCROPCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V107VIDEOCROPCUSTOM, value).apply()
+
+    var v107danmakuFontFadeStyle: Int
+        get() = prefs.getInt(KEY_V107DANMAKUFONTFADESTYLE, 0)
+        set(value) = prefs.edit().putInt(KEY_V107DANMAKUFONTFADESTYLE, value).apply()
+
+    var v107subtitleFontShadowOffsetX: Int
+        get() = prefs.getInt(KEY_V107SUBTITLEFONTSHADOWOFFSETX, 0)
+        set(value) = prefs.edit().putInt(KEY_V107SUBTITLEFONTSHADOWOFFSETX, value).apply()
+
+    var v108audioCompressorAttackTime: Int
+        get() = prefs.getInt(KEY_V108AUDIOCOMPRESSORATTACKTIME, 0)
+        set(value) = prefs.edit().putInt(KEY_V108AUDIOCOMPRESSORATTACKTIME, value).apply()
+
+    var v108danmakuFontBgGradientToggle: Boolean
+        get() = prefs.getBoolean(KEY_V108DANMAKUFONTBGGRADIENTTOGGLE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V108DANMAKUFONTBGGRADIENTTOGGLE, value).apply()
+
+    var v108subtitleFontShadowOffsetY: Int
+        get() = prefs.getInt(KEY_V108SUBTITLEFONTSHADOWOFFSETY, 0)
+        set(value) = prefs.edit().putInt(KEY_V108SUBTITLEFONTSHADOWOFFSETY, value).apply()
+
+    var v108gestureQuickLockScreen: Boolean
+        get() = prefs.getBoolean(KEY_V108GESTUREQUICKLOCKSCREEN, false)
+        set(value) = prefs.edit().putBoolean(KEY_V108GESTUREQUICKLOCKSCREEN, value).apply()
+
+    var v108castVideoScalingMode: Int
+        get() = prefs.getInt(KEY_V108CASTVIDEOSCALINGMODE, 0)
+        set(value) = prefs.edit().putInt(KEY_V108CASTVIDEOSCALINGMODE, value).apply()
+
+    var v108playlistAutoSortByViews: Boolean
+        get() = prefs.getBoolean(KEY_V108PLAYLISTAUTOSORTBYVIEWS, false)
+        set(value) = prefs.edit().putBoolean(KEY_V108PLAYLISTAUTOSORTBYVIEWS, value).apply()
+
+    var v108cacheProxyModeCustom: Int
+        get() = prefs.getInt(KEY_V108CACHEPROXYMODECUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V108CACHEPROXYMODECUSTOM, value).apply()
+
+    var v108progressBarCustomOpacity: Int
+        get() = prefs.getInt(KEY_V108PROGRESSBARCUSTOMOPACITY, 100)
+        set(value) = prefs.edit().putInt(KEY_V108PROGRESSBARCUSTOMOPACITY, value).apply()
+
+    var v108volumeSpeakerPhoneToggle: Boolean
+        get() = prefs.getBoolean(KEY_V108VOLUMESPEAKERPHONETOGGLE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V108VOLUMESPEAKERPHONETOGGLE, value).apply()
+
+    var v108historyFilterByDate: Int
+        get() = prefs.getInt(KEY_V108HISTORYFILTERBYDATE, 0)
+        set(value) = prefs.edit().putInt(KEY_V108HISTORYFILTERBYDATE, value).apply()
+
+    var v108playbackABLoopTempoSync: Boolean
+        get() = prefs.getBoolean(KEY_V108PLAYBACKABLOOPTEMPOSYNC, false)
+        set(value) = prefs.edit().putBoolean(KEY_V108PLAYBACKABLOOPTEMPOSYNC, value).apply()
+
+    var v108screenshotAlbumAutoCreate: Boolean
+        get() = prefs.getBoolean(KEY_V108SCREENSHOTALBUMAUTOCREATE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V108SCREENSHOTALBUMAUTOCREATE, value).apply()
+
+    var v108videoZoomCustom: Int
+        get() = prefs.getInt(KEY_V108VIDEOZOOMCUSTOM, 100)
+        set(value) = prefs.edit().putInt(KEY_V108VIDEOZOOMCUSTOM, value).apply()
+
+    var v108danmakuFontBgGradientType: Int
+        get() = prefs.getInt(KEY_V108DANMAKUFONTBGGRADIENTTYPE, 0)
+        set(value) = prefs.edit().putInt(KEY_V108DANMAKUFONTBGGRADIENTTYPE, value).apply()
+
+    var v108subtitleFontBoldToggle108: Boolean
+        get() = prefs.getBoolean(KEY_V108SUBTITLEFONTBOLDTOGGLE108, false)
+        set(value) = prefs.edit().putBoolean(KEY_V108SUBTITLEFONTBOLDTOGGLE108, value).apply()
+
+    var v109audioCompressorReleaseTime: Int
+        get() = prefs.getInt(KEY_V109AUDIOCOMPRESSORRELEASETIME, 0)
+        set(value) = prefs.edit().putInt(KEY_V109AUDIOCOMPRESSORRELEASETIME, value).apply()
+
+    var v109danmakuFontBgGradientAngle: Int
+        get() = prefs.getInt(KEY_V109DANMAKUFONTBGGRADIENTANGLE, 0)
+        set(value) = prefs.edit().putInt(KEY_V109DANMAKUFONTBGGRADIENTANGLE, value).apply()
+
+    var v109subtitleFontItalicToggle109: Boolean
+        get() = prefs.getBoolean(KEY_V109SUBTITLEFONTITALICTOGGLE109, false)
+        set(value) = prefs.edit().putBoolean(KEY_V109SUBTITLEFONTITALICTOGGLE109, value).apply()
+
+    var v109gestureQuickScreenshot: Boolean
+        get() = prefs.getBoolean(KEY_V109GESTUREQUICKSCREENSHOT, false)
+        set(value) = prefs.edit().putBoolean(KEY_V109GESTUREQUICKSCREENSHOT, value).apply()
+
+    var v109castVideoHardwareDecoding: Boolean
+        get() = prefs.getBoolean(KEY_V109CASTVIDEOHARDWAREDECODING, true)
+        set(value) = prefs.edit().putBoolean(KEY_V109CASTVIDEOHARDWAREDECODING, value).apply()
+
+    var v109playlistAutoSortByRating: Boolean
+        get() = prefs.getBoolean(KEY_V109PLAYLISTAUTOSORTBYRATING, false)
+        set(value) = prefs.edit().putBoolean(KEY_V109PLAYLISTAUTOSORTBYRATING, value).apply()
+
+    var v109cacheCleanOnAppExit: Boolean
+        get() = prefs.getBoolean(KEY_V109CACHECLEANONAPPEXIT, false)
+        set(value) = prefs.edit().putBoolean(KEY_V109CACHECLEANONAPPEXIT, value).apply()
+
+    var v109progressBarCustomThumbDelay: Int
+        get() = prefs.getInt(KEY_V109PROGRESSBARCUSTOMTHUMBDELAY, 0)
+        set(value) = prefs.edit().putInt(KEY_V109PROGRESSBARCUSTOMTHUMBDELAY, value).apply()
+
+    var v109volumeAudioFocusPriority: Int
+        get() = prefs.getInt(KEY_V109VOLUMEAUDIOFOCUSPRIORITY, 0)
+        set(value) = prefs.edit().putInt(KEY_V109VOLUMEAUDIOFOCUSPRIORITY, value).apply()
+
+    var v109historyFilterByUp: Int
+        get() = prefs.getInt(KEY_V109HISTORYFILTERBYUP, 0)
+        set(value) = prefs.edit().putInt(KEY_V109HISTORYFILTERBYUP, value).apply()
+
+    var v109playbackABLoopPresetToggle: Boolean
+        get() = prefs.getBoolean(KEY_V109PLAYBACKABLOOPPRESETTOGGLE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V109PLAYBACKABLOOPPRESETTOGGLE, value).apply()
+
+    var v109screenshotCropAutoRatio: Int
+        get() = prefs.getInt(KEY_V109SCREENSHOTCROPAUTORATIO, 0)
+        set(value) = prefs.edit().putInt(KEY_V109SCREENSHOTCROPAUTORATIO, value).apply()
+
+    var v109videoBlurBackgroundCustom: Int
+        get() = prefs.getInt(KEY_V109VIDEOBLURBACKGROUNDCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V109VIDEOBLURBACKGROUNDCUSTOM, value).apply()
+
+    var v109danmakuFontBgGradientOpacity: Int
+        get() = prefs.getInt(KEY_V109DANMAKUFONTBGGRADIENTOPACITY, 50)
+        set(value) = prefs.edit().putInt(KEY_V109DANMAKUFONTBGGRADIENTOPACITY, value).apply()
+
+    var v109subtitleFontUnderline109: Boolean
+        get() = prefs.getBoolean(KEY_V109SUBTITLEFONTUNDERLINE109, false)
+        set(value) = prefs.edit().putBoolean(KEY_V109SUBTITLEFONTUNDERLINE109, value).apply()
+
+    var v110audioLimiterThreshold: Int
+        get() = prefs.getInt(KEY_V110AUDIOLIMITERTHRESHOLD, 0)
+        set(value) = prefs.edit().putInt(KEY_V110AUDIOLIMITERTHRESHOLD, value).apply()
+
+    var v110danmakuFontTextureBlendMode: Int
+        get() = prefs.getInt(KEY_V110DANMAKUFONTTEXTUREBLENDMODE, 0)
+        set(value) = prefs.edit().putInt(KEY_V110DANMAKUFONTTEXTUREBLENDMODE, value).apply()
+
+    var v110subtitleFontStrikeThrough110: Boolean
+        get() = prefs.getBoolean(KEY_V110SUBTITLEFONTSTRIKETHROUGH110, false)
+        set(value) = prefs.edit().putBoolean(KEY_V110SUBTITLEFONTSTRIKETHROUGH110, value).apply()
+
+    var v110gestureQuickSpeedToggle: Boolean
+        get() = prefs.getBoolean(KEY_V110GESTUREQUICKSPEEDTOGGLE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V110GESTUREQUICKSPEEDTOGGLE, value).apply()
+
+    var v110castVideoSoftwareDecoding: Boolean
+        get() = prefs.getBoolean(KEY_V110CASTVIDEOSOFTWAREDECODING, false)
+        set(value) = prefs.edit().putBoolean(KEY_V110CASTVIDEOSOFTWAREDECODING, value).apply()
+
+    var v110playlistAutoSortByBilingual: Boolean
+        get() = prefs.getBoolean(KEY_V110PLAYLISTAUTOSORTBYBILINGUAL, false)
+        set(value) = prefs.edit().putBoolean(KEY_V110PLAYLISTAUTOSORTBYBILINGUAL, value).apply()
+
+    var v110cacheCleanOnLowBattery: Boolean
+        get() = prefs.getBoolean(KEY_V110CACHECLEANONLOWBATTERY, false)
+        set(value) = prefs.edit().putBoolean(KEY_V110CACHECLEANONLOWBATTERY, value).apply()
+
+    var v110progressBarCustomThumbScale: Int
+        get() = prefs.getInt(KEY_V110PROGRESSBARCUSTOMTHUMBSCALE, 100)
+        set(value) = prefs.edit().putInt(KEY_V110PROGRESSBARCUSTOMTHUMBSCALE, value).apply()
+
+    var v110volumeAudioFocusDuck: Boolean
+        get() = prefs.getBoolean(KEY_V110VOLUMEAUDIOFOCUSDUCK, true)
+        set(value) = prefs.edit().putBoolean(KEY_V110VOLUMEAUDIOFOCUSDUCK, value).apply()
+
+    var v110historyFilterBySeason: Int
+        get() = prefs.getInt(KEY_V110HISTORYFILTERBYSEASON, 0)
+        set(value) = prefs.edit().putInt(KEY_V110HISTORYFILTERBYSEASON, value).apply()
+
+    var v110playbackABLoopExportWav: Boolean
+        get() = prefs.getBoolean(KEY_V110PLAYBACKABLOOPEXPORTWAV, false)
+        set(value) = prefs.edit().putBoolean(KEY_V110PLAYBACKABLOOPEXPORTWAV, value).apply()
+
+    var v110screenshotDelayTimer: Int
+        get() = prefs.getInt(KEY_V110SCREENSHOTDELAYTIMER, 0)
+        set(value) = prefs.edit().putInt(KEY_V110SCREENSHOTDELAYTIMER, value).apply()
+
+    var v110videoAmbientLightCustom: Int
+        get() = prefs.getInt(KEY_V110VIDEOAMBIENTLIGHTCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V110VIDEOAMBIENTLIGHTCUSTOM, value).apply()
+
+    var v110danmakuFontTexturePatternCustom: Int
+        get() = prefs.getInt(KEY_V110DANMAKUFONTTEXTUREPATTERNCUSTOM, 0)
+        set(value) = prefs.edit().putInt(KEY_V110DANMAKUFONTTEXTUREPATTERNCUSTOM, value).apply()
+
+    var v110subtitleFontCaseOverride110: Int
+        get() = prefs.getInt(KEY_V110SUBTITLEFONTCASEOVERRIDE110, 0)
+        set(value) = prefs.edit().putInt(KEY_V110SUBTITLEFONTCASEOVERRIDE110, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -16927,5 +17528,155 @@ class AppPrefs(context: Context) {
         const val KEY_V100VIDEOTINTDUOTONE = "v100videoTintDuotone"
         const val KEY_V100DANMAKUFONTWEIGHT99 = "v100danmakuFontWeight99"
         const val KEY_V100SUBTITLEANIMATIONTYPE99 = "v100subtitleAnimationType99"
+        const val KEY_V101AUDIOSPATIALWIDTHCUSTOM = "v101audioSpatialWidthCustom"
+        const val KEY_V101DANMAKUFONTSTRETCHTOGGLE = "v101danmakuFontStretchToggle"
+        const val KEY_V101SUBTITLESHADOWCOLORCUSTOM = "v101subtitleShadowColorCustom"
+        const val KEY_V101GESTURESWIPELOCKHORIZONTAL = "v101gestureSwipeLockHorizontal"
+        const val KEY_V101CASTVIDEOHDRMODE = "v101castVideoHDRMode"
+        const val KEY_V101PLAYLISTAUTOREMOVEWATCHED = "v101playlistAutoRemoveWatched"
+        const val KEY_V101CACHEENCRYPTTOGGLE = "v101cacheEncryptToggle"
+        const val KEY_V101PROGRESSBARCHAPTERSNAP = "v101progressBarChapterSnap"
+        const val KEY_V101VOLUMEEQPRESETCUSTOM = "v101volumeEQPresetCustom"
+        const val KEY_V101HISTORYSEARCHHIGHLIGHT = "v101historySearchHighlight"
+        const val KEY_V101PLAYBACKLOOPSEGMENTAB = "v101playbackLoopSegmentAB"
+        const val KEY_V101SCREENSHOTAUTOCROP = "v101screenshotAutoCrop"
+        const val KEY_V101VIDEOEDGEENHANCECUSTOM = "v101videoEdgeEnhanceCustom"
+        const val KEY_V101DANMAKUFONTGLOWTOGGLE = "v101danmakuFontGlowToggle"
+        const val KEY_V101SUBTITLELINESPACING = "v101subtitleLineSpacing"
+        const val KEY_V102AUDIOBASSBOOSTCUSTOM = "v102audioBassBoostCustom"
+        const val KEY_V102DANMAKUFONTSTROKEWIDTH = "v102danmakuFontStrokeWidth"
+        const val KEY_V102SUBTITLETEXTALIGNMENT = "v102subtitleTextAlignment"
+        const val KEY_V102GESTURESWIPELOCKVERTICAL = "v102gestureSwipeLockVertical"
+        const val KEY_V102CASTVIDEOAVSYNC = "v102castVideoAVSync"
+        const val KEY_V102PLAYLISTAUTOREVERSEORDER = "v102playlistAutoReverseOrder"
+        const val KEY_V102CACHEAUTOCLEARONFULL = "v102cacheAutoClearOnFull"
+        const val KEY_V102PROGRESSBARBUFFERSHOW = "v102progressBarBufferShow"
+        const val KEY_V102VOLUMEEQGAINPREAMP = "v102volumeEQGainPreamp"
+        const val KEY_V102HISTORYPINRECORDTOGGLE = "v102historyPinRecordToggle"
+        const val KEY_V102PLAYBACKLOOPSEGMENTCOUNT = "v102playbackLoopSegmentCount"
+        const val KEY_V102SCREENSHOTAUTOROTATE = "v102screenshotAutoRotate"
+        const val KEY_V102VIDEOMOSAICEFFECTCUSTOM = "v102videoMosaicEffectCustom"
+        const val KEY_V102DANMAKUFONTGLOWCOLOR = "v102danmakuFontGlowColor"
+        const val KEY_V102SUBTITLETEXTTRANSFORMCUSTOM = "v102subtitleTextTransformCustom"
+        const val KEY_V103AUDIOTREBLEBOOSTCUSTOM = "v103audioTrebleBoostCustom"
+        const val KEY_V103DANMAKUFONTGLOWRADIUS = "v103danmakuFontGlowRadius"
+        const val KEY_V103SUBTITLEFONTVARIANTCUSTOM = "v103subtitleFontVariantCustom"
+        const val KEY_V103GESTURELONGPRESSDRAGACTION = "v103gestureLongPressDragAction"
+        const val KEY_V103CASTVIDEOBITDEPTH = "v103castVideoBitDepth"
+        const val KEY_V103PLAYLISTAUTOSKIPDUPLICATE = "v103playlistAutoSkipDuplicate"
+        const val KEY_V103CACHETHUMBNAILPRELOAD = "v103cacheThumbnailPreload"
+        const val KEY_V103PROGRESSBARLIVEEDGECOLOR = "v103progressBarLiveEdgeColor"
+        const val KEY_V103VOLUMENIGHTBOOSTTOGGLE = "v103volumeNightBoostToggle"
+        const val KEY_V103HISTORYUNDODELETETOGGLE = "v103historyUndoDeleteToggle"
+        const val KEY_V103PLAYBACKABLOOPMEMORY = "v103playbackABLoopMemory"
+        const val KEY_V103SCREENSHOTAUTONAMINGSCHEME = "v103screenshotAutoNamingScheme"
+        const val KEY_V103VIDEOKALEIDOSCOPECUSTOM = "v103videoKaleidoscopeCustom"
+        const val KEY_V103DANMAKUFONTGLOWINTENSITY = "v103danmakuFontGlowIntensity"
+        const val KEY_V103SUBTITLEFONTLOADCUSTOM = "v103subtitleFontLoadCustom"
+        const val KEY_V104AUDIOVOCALBOOSTCUSTOM = "v104audioVocalBoostCustom"
+        const val KEY_V104DANMAKUFONTGLOWSPREAD = "v104danmakuFontGlowSpread"
+        const val KEY_V104SUBTITLEFONTSCALECUSTOM = "v104subtitleFontScaleCustom"
+        const val KEY_V104GESTUREQUICKSCRUBTOGGLE = "v104gestureQuickScrubToggle"
+        const val KEY_V104CASTVIDEOFIELDORDER = "v104castVideoFieldOrder"
+        const val KEY_V104PLAYLISTAUTODOWNLOADNEXT = "v104playlistAutoDownloadNext"
+        const val KEY_V104CACHEVIDEOONLYMODE = "v104cacheVideoOnlyMode"
+        const val KEY_V104PROGRESSBARTIMECODEFORMAT = "v104progressBarTimeCodeFormat"
+        const val KEY_V104VOLUMEAUDIOCHANNELMAP = "v104volumeAudioChannelMap"
+        const val KEY_V104HISTORYBATCHDELETEMODE = "v104historyBatchDeleteMode"
+        const val KEY_V104PLAYBACKABLOOPAUTOSAVE = "v104playbackABLoopAutoSave"
+        const val KEY_V104SCREENSHOTAUTOOPTIMIZE = "v104screenshotAutoOptimize"
+        const val KEY_V104VIDEOMIRRORFLIPCUSTOM = "v104videoMirrorFlipCustom"
+        const val KEY_V104DANMAKUFONTGRADIENTTOGGLE = "v104danmakuFontGradientToggle"
+        const val KEY_V104SUBTITLEFONTCOLORCUSTOM = "v104subtitleFontColorCustom"
+        const val KEY_V105AUDIOVIRTUALSURROUNDCUSTOM = "v105audioVirtualSurroundCustom"
+        const val KEY_V105DANMAKUFONTGRADIENTSTART = "v105danmakuFontGradientStart"
+        const val KEY_V105SUBTITLEFONTALPHACUSTOM = "v105subtitleFontAlphaCustom"
+        const val KEY_V105GESTUREQUICKSEEKDISTANCE = "v105gestureQuickSeekDistance"
+        const val KEY_V105CASTVIDEOCOLORSPACE = "v105castVideoColorSpace"
+        const val KEY_V105PLAYLISTAUTOSORTBYPOPULAR = "v105playlistAutoSortByPopular"
+        const val KEY_V105CACHEAUDIOONLYMODE = "v105cacheAudioOnlyMode"
+        const val KEY_V105PROGRESSBARCUSTOMSCALE = "v105progressBarCustomScale"
+        const val KEY_V105VOLUMEHEADPHONEOPTIMIZE = "v105volumeHeadphoneOptimize"
+        const val KEY_V105HISTORYMULTISELECTMODE = "v105historyMultiSelectMode"
+        const val KEY_V105PLAYBACKABLOOPBEATSYNC = "v105playbackABLoopBeatSync"
+        const val KEY_V105SCREENSHOTAUTOWATERMARK = "v105screenshotAutoWatermark"
+        const val KEY_V105VIDEOROTATECUSTOM = "v105videoRotateCustom"
+        const val KEY_V105DANMAKUFONTGRADIENTEND = "v105danmakuFontGradientEnd"
+        const val KEY_V105SUBTITLEFONTSTROKEWIDTH = "v105subtitleFontStrokeWidth"
+        const val KEY_V106AUDIOCOMPRESSORTHRESHOLD = "v106audioCompressorThreshold"
+        const val KEY_V106DANMAKUFONTGRADIENTANGLE = "v106danmakuFontGradientAngle"
+        const val KEY_V106SUBTITLEFONTSTROKECOLOR = "v106subtitleFontStrokeColor"
+        const val KEY_V106GESTUREQUICKVOLUMEGESTURE = "v106gestureQuickVolumeGesture"
+        const val KEY_V106CASTVIDEOFRAMERATELIMIT = "v106castVideoFrameRateLimit"
+        const val KEY_V106PLAYLISTAUTOSORTBYDATENEW = "v106playlistAutoSortByDateNew"
+        const val KEY_V106CACHEPARTIALDOWNLOADTOGGLE = "v106cachePartialDownloadToggle"
+        const val KEY_V106PROGRESSBARCUSTOMHEIGHT = "v106progressBarCustomHeight"
+        const val KEY_V106VOLUMEBLUETOOTHCODEC = "v106volumeBluetoothCodec"
+        const val KEY_V106HISTORYFILTERBYTYPE = "v106historyFilterByType"
+        const val KEY_V106PLAYBACKABLOOPCROSSFADE = "v106playbackABLoopCrossfade"
+        const val KEY_V106SCREENSHOTAUTOCOMPRESS = "v106screenshotAutoCompress"
+        const val KEY_V106VIDEOSTRETCHCUSTOM = "v106videoStretchCustom"
+        const val KEY_V106DANMAKUFONTTEXTURECUSTOM = "v106danmakuFontTextureCustom"
+        const val KEY_V106SUBTITLEFONTSHADOWCOLOR = "v106subtitleFontShadowColor"
+        const val KEY_V107AUDIOCOMPRESSORRATIO = "v107audioCompressorRatio"
+        const val KEY_V107DANMAKUFONTFADEEDGESIZE = "v107danmakuFontFadeEdgeSize"
+        const val KEY_V107SUBTITLEFONTSHADOWRADIUS = "v107subtitleFontShadowRadius"
+        const val KEY_V107GESTUREQUICKBRIGHTGESTURE = "v107gestureQuickBrightGesture"
+        const val KEY_V107CASTVIDEODEINTERLACEMODE = "v107castVideoDeinterlaceMode"
+        const val KEY_V107PLAYLISTAUTOSORTBYDURATION = "v107playlistAutoSortByDuration"
+        const val KEY_V107CACHEP2PDOWNLOADTOGGLE = "v107cacheP2PDownloadToggle"
+        const val KEY_V107PROGRESSBARCUSTOMMARGIN = "v107progressBarCustomMargin"
+        const val KEY_V107VOLUMEUSBDACOMPATIBILITY = "v107volumeUSBDACompatibility"
+        const val KEY_V107HISTORYFILTERBYDURATION = "v107historyFilterByDuration"
+        const val KEY_V107PLAYBACKABLOOPPITCHSHIFT = "v107playbackABLoopPitchShift"
+        const val KEY_V107SCREENSHOTAUTOSHAREAFTER = "v107screenshotAutoShareAfter"
+        const val KEY_V107VIDEOCROPCUSTOM = "v107videoCropCustom"
+        const val KEY_V107DANMAKUFONTFADESTYLE = "v107danmakuFontFadeStyle"
+        const val KEY_V107SUBTITLEFONTSHADOWOFFSETX = "v107subtitleFontShadowOffsetX"
+        const val KEY_V108AUDIOCOMPRESSORATTACKTIME = "v108audioCompressorAttackTime"
+        const val KEY_V108DANMAKUFONTBGGRADIENTTOGGLE = "v108danmakuFontBgGradientToggle"
+        const val KEY_V108SUBTITLEFONTSHADOWOFFSETY = "v108subtitleFontShadowOffsetY"
+        const val KEY_V108GESTUREQUICKLOCKSCREEN = "v108gestureQuickLockScreen"
+        const val KEY_V108CASTVIDEOSCALINGMODE = "v108castVideoScalingMode"
+        const val KEY_V108PLAYLISTAUTOSORTBYVIEWS = "v108playlistAutoSortByViews"
+        const val KEY_V108CACHEPROXYMODECUSTOM = "v108cacheProxyModeCustom"
+        const val KEY_V108PROGRESSBARCUSTOMOPACITY = "v108progressBarCustomOpacity"
+        const val KEY_V108VOLUMESPEAKERPHONETOGGLE = "v108volumeSpeakerPhoneToggle"
+        const val KEY_V108HISTORYFILTERBYDATE = "v108historyFilterByDate"
+        const val KEY_V108PLAYBACKABLOOPTEMPOSYNC = "v108playbackABLoopTempoSync"
+        const val KEY_V108SCREENSHOTALBUMAUTOCREATE = "v108screenshotAlbumAutoCreate"
+        const val KEY_V108VIDEOZOOMCUSTOM = "v108videoZoomCustom"
+        const val KEY_V108DANMAKUFONTBGGRADIENTTYPE = "v108danmakuFontBgGradientType"
+        const val KEY_V108SUBTITLEFONTBOLDTOGGLE108 = "v108subtitleFontBoldToggle108"
+        const val KEY_V109AUDIOCOMPRESSORRELEASETIME = "v109audioCompressorReleaseTime"
+        const val KEY_V109DANMAKUFONTBGGRADIENTANGLE = "v109danmakuFontBgGradientAngle"
+        const val KEY_V109SUBTITLEFONTITALICTOGGLE109 = "v109subtitleFontItalicToggle109"
+        const val KEY_V109GESTUREQUICKSCREENSHOT = "v109gestureQuickScreenshot"
+        const val KEY_V109CASTVIDEOHARDWAREDECODING = "v109castVideoHardwareDecoding"
+        const val KEY_V109PLAYLISTAUTOSORTBYRATING = "v109playlistAutoSortByRating"
+        const val KEY_V109CACHECLEANONAPPEXIT = "v109cacheCleanOnAppExit"
+        const val KEY_V109PROGRESSBARCUSTOMTHUMBDELAY = "v109progressBarCustomThumbDelay"
+        const val KEY_V109VOLUMEAUDIOFOCUSPRIORITY = "v109volumeAudioFocusPriority"
+        const val KEY_V109HISTORYFILTERBYUP = "v109historyFilterByUp"
+        const val KEY_V109PLAYBACKABLOOPPRESETTOGGLE = "v109playbackABLoopPresetToggle"
+        const val KEY_V109SCREENSHOTCROPAUTORATIO = "v109screenshotCropAutoRatio"
+        const val KEY_V109VIDEOBLURBACKGROUNDCUSTOM = "v109videoBlurBackgroundCustom"
+        const val KEY_V109DANMAKUFONTBGGRADIENTOPACITY = "v109danmakuFontBgGradientOpacity"
+        const val KEY_V109SUBTITLEFONTUNDERLINE109 = "v109subtitleFontUnderline109"
+        const val KEY_V110AUDIOLIMITERTHRESHOLD = "v110audioLimiterThreshold"
+        const val KEY_V110DANMAKUFONTTEXTUREBLENDMODE = "v110danmakuFontTextureBlendMode"
+        const val KEY_V110SUBTITLEFONTSTRIKETHROUGH110 = "v110subtitleFontStrikeThrough110"
+        const val KEY_V110GESTUREQUICKSPEEDTOGGLE = "v110gestureQuickSpeedToggle"
+        const val KEY_V110CASTVIDEOSOFTWAREDECODING = "v110castVideoSoftwareDecoding"
+        const val KEY_V110PLAYLISTAUTOSORTBYBILINGUAL = "v110playlistAutoSortByBilingual"
+        const val KEY_V110CACHECLEANONLOWBATTERY = "v110cacheCleanOnLowBattery"
+        const val KEY_V110PROGRESSBARCUSTOMTHUMBSCALE = "v110progressBarCustomThumbScale"
+        const val KEY_V110VOLUMEAUDIOFOCUSDUCK = "v110volumeAudioFocusDuck"
+        const val KEY_V110HISTORYFILTERBYSEASON = "v110historyFilterBySeason"
+        const val KEY_V110PLAYBACKABLOOPEXPORTWAV = "v110playbackABLoopExportWav"
+        const val KEY_V110SCREENSHOTDELAYTIMER = "v110screenshotDelayTimer"
+        const val KEY_V110VIDEOAMBIENTLIGHTCUSTOM = "v110videoAmbientLightCustom"
+        const val KEY_V110DANMAKUFONTTEXTUREPATTERNCUSTOM = "v110danmakuFontTexturePatternCustom"
+        const val KEY_V110SUBTITLEFONTCASEOVERRIDE110 = "v110subtitleFontCaseOverride110"
     }
 }
