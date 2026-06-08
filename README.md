@@ -118,7 +118,7 @@ This project is based on open-source software. All rights belong to the original
 ## 📋 更新日志 | Changelog | 変更履歴 | 변경 로그
 
 ### 最新版本 | Latest Version | 最新バージョン | 최신 버전
-- **v330.15** - 2026-06-08
+- **v340.15** - 2026-06-08
 
 ---
 
@@ -34820,6 +34820,947 @@ This project is based on open-source software. All rights belong to the original
 - ✅ 字幕ストローク幅322
 - ✅ 자막 스트로크 너비322
 
+
+### v331.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v331.1-v331.15 功能列表
+- ✅ Audio Stereo Width313, Danmaku Scroll Speed313, Subtitle Delay Sync313, Gesture Swipe Up Action313, Cast Subtitles313, Playlist Shuffle Mode313, Cache Cleanup Interval313, Progress Bar Buffered Color313, Volume Step Size313, History Group By Date313, Playback Auto Resume313, Screenshot Notification313, Video Crop Ratio313, Danmaku Scroll Speed314, Subtitle Delay Sync314
+
+### v331.1 音频立体声宽度313 | Audio Stereo Width313 | オーディオステレオ幅313 | 오디오 스테레오 너비313
+- ✅ 音频立体声宽度313
+- ✅ Audio Stereo Width313
+- ✅ オーディオステレオ幅313
+- ✅ 오디오 스테레오 너비313
+
+### v331.2 弹幕滚动速度313 | Danmaku Scroll Speed313 | コメントスクロール速度313 | 댓글 스크롤 속도313
+- ✅ 弹幕滚动速度313
+- ✅ Danmaku Scroll Speed313
+- ✅ コメントスクロール速度313
+- ✅ 댓글 스크롤 속도313
+
+### v331.3 字幕延迟同步313 | Subtitle Delay Sync313 | 字幕遅延同期313 | 자막 지연 동기화313
+- ✅ 字幕延迟同步313
+- ✅ Subtitle Delay Sync313
+- ✅ 字幕遅延同期313
+- ✅ 자막 지연 동기화313
+
+### v331.4 手势上滑操作313 | Gesture Swipe Up Action313 | ジェスチャースワイプアップアクション313 | 제스처 위로 스와이프 동작313
+- ✅ 手势上滑操作313
+- ✅ Gesture Swipe Up Action313
+- ✅ ジェスチャースワイプアップアクション313
+- ✅ 제스처 위로 스와이프 동작313
+
+### v331.5 投射字幕313 | Cast Subtitles313 | キャスト字幕313 | 캐스트 자막313
+- ✅ 投射字幕313
+- ✅ Cast Subtitles313
+- ✅ キャスト字幕313
+- ✅ 캐스트 자막313
+
+### v331.6 播放列表随机模式313 | Playlist Shuffle Mode313 | プレイリストシャッフルモード313 | 재생 목록 셔플 모드313
+- ✅ 播放列表随机模式313
+- ✅ Playlist Shuffle Mode313
+- ✅ プレイリストシャッフルモード313
+- ✅ 재생 목록 셔플 모드313
+
+### v331.7 缓存清理间隔313 | Cache Cleanup Interval313 | キャッシュクリーンアップ間隔313 | 캐시 정리 간격313
+- ✅ 缓存清理间隔313
+- ✅ Cache Cleanup Interval313
+- ✅ キャッシュクリーンアップ間隔313
+- ✅ 캐시 정리 간격313
+
+### v331.8 进度条缓冲颜色313 | Progress Bar Buffered Color313 | プログレスバーバッファカラー313 | 진행 바 버퍼 색상313
+- ✅ 进度条缓冲颜色313
+- ✅ Progress Bar Buffered Color313
+- ✅ プログレスバーバッファカラー313
+- ✅ 진행 바 버퍼 색상313
+
+### v331.9 音量步进大小313 | Volume Step Size313 | ボリュームステップサイズ313 | 볼륨 스텝 크기313
+- ✅ 音量步进大小313
+- ✅ Volume Step Size313
+- ✅ ボリュームステップサイズ313
+- ✅ 볼륨 스텝 크기313
+
+### v331.10 历史按日期分组313 | History Group By Date313 | 履歴日付グループ化313 | 기록 날짜별 그룹화313
+- ✅ 历史按日期分组313
+- ✅ History Group By Date313
+- ✅ 履歴日付グループ化313
+- ✅ 기록 날짜별 그룹화313
+
+### v331.11 播放自动恢复313 | Playback Auto Resume313 | 再生自動再開313 | 재생 자동 재개313
+- ✅ 播放自动恢复313
+- ✅ Playback Auto Resume313
+- ✅ 再生自動再開313
+- ✅ 재생 자동 재개313
+
+### v331.12 截图通知313 | Screenshot Notification313 | スクリーンショット通知313 | 스크린샷 알림313
+- ✅ 截图通知313
+- ✅ Screenshot Notification313
+- ✅ スクリーンショット通知313
+- ✅ 스크린샷 알림313
+
+### v331.13 视频裁剪比例313 | Video Crop Ratio313 | ビデオクロップ比313 | 비디오 크롭 비율313
+- ✅ 视频裁剪比例313
+- ✅ Video Crop Ratio313
+- ✅ ビデオクロップ比313
+- ✅ 비디오 크롭 비율313
+
+### v331.14 弹幕滚动速度314 | Danmaku Scroll Speed314 | コメントスクロール速度314 | 댓글 스크롤 속도314
+- ✅ 弹幕滚动速度314
+- ✅ Danmaku Scroll Speed314
+- ✅ コメントスクロール速度314
+- ✅ 댓글 스크롤 속도314
+
+### v331.15 字幕延迟同步314 | Subtitle Delay Sync314 | 字幕遅延同期314 | 자막 지연 동기화314
+- ✅ 字幕延迟同步314
+- ✅ Subtitle Delay Sync314
+- ✅ 字幕遅延同期314
+- ✅ 자막 지연 동기화314
+
+### v332.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v332.1-v332.15 功能列表
+- ✅ Audio Stereo Width314, Danmaku Scroll Speed315, Subtitle Delay Sync315, Gesture Swipe Up Action314, Cast Subtitles314, Playlist Shuffle Mode314, Cache Cleanup Interval314, Progress Bar Buffered Color314, Volume Step Size314, History Group By Date314, Playback Auto Resume314, Screenshot Notification314, Video Crop Ratio314, Danmaku Scroll Speed316, Subtitle Delay Sync316
+
+### v332.1 音频立体声宽度314 | Audio Stereo Width314 | オーディオステレオ幅314 | 오디오 스테레오 너비314
+- ✅ 音频立体声宽度314
+- ✅ Audio Stereo Width314
+- ✅ オーディオステレオ幅314
+- ✅ 오디오 스테레오 너비314
+
+### v332.2 弹幕滚动速度315 | Danmaku Scroll Speed315 | コメントスクロール速度315 | 댓글 스크롤 속도315
+- ✅ 弹幕滚动速度315
+- ✅ Danmaku Scroll Speed315
+- ✅ コメントスクロール速度315
+- ✅ 댓글 스크롤 속도315
+
+### v332.3 字幕延迟同步315 | Subtitle Delay Sync315 | 字幕遅延同期315 | 자막 지연 동기화315
+- ✅ 字幕延迟同步315
+- ✅ Subtitle Delay Sync315
+- ✅ 字幕遅延同期315
+- ✅ 자막 지연 동기화315
+
+### v332.4 手势上滑操作314 | Gesture Swipe Up Action314 | ジェスチャースワイプアップアクション314 | 제스처 위로 스와이프 동작314
+- ✅ 手势上滑操作314
+- ✅ Gesture Swipe Up Action314
+- ✅ ジェスチャースワイプアップアクション314
+- ✅ 제스처 위로 스와이프 동작314
+
+### v332.5 投射字幕314 | Cast Subtitles314 | キャスト字幕314 | 캐스트 자막314
+- ✅ 投射字幕314
+- ✅ Cast Subtitles314
+- ✅ キャスト字幕314
+- ✅ 캐스트 자막314
+
+### v332.6 播放列表随机模式314 | Playlist Shuffle Mode314 | プレイリストシャッフルモード314 | 재생 목록 셔플 모드314
+- ✅ 播放列表随机模式314
+- ✅ Playlist Shuffle Mode314
+- ✅ プレイリストシャッフルモード314
+- ✅ 재생 목록 셔플 모드314
+
+### v332.7 缓存清理间隔314 | Cache Cleanup Interval314 | キャッシュクリーンアップ間隔314 | 캐시 정리 간격314
+- ✅ 缓存清理间隔314
+- ✅ Cache Cleanup Interval314
+- ✅ キャッシュクリーンアップ間隔314
+- ✅ 캐시 정리 간격314
+
+### v332.8 进度条缓冲颜色314 | Progress Bar Buffered Color314 | プログレスバーバッファカラー314 | 진행 바 버퍼 색상314
+- ✅ 进度条缓冲颜色314
+- ✅ Progress Bar Buffered Color314
+- ✅ プログレスバーバッファカラー314
+- ✅ 진행 바 버퍼 색상314
+
+### v332.9 音量步进大小314 | Volume Step Size314 | ボリュームステップサイズ314 | 볼륨 스텝 크기314
+- ✅ 音量步进大小314
+- ✅ Volume Step Size314
+- ✅ ボリュームステップサイズ314
+- ✅ 볼륨 스텝 크기314
+
+### v332.10 历史按日期分组314 | History Group By Date314 | 履歴日付グループ化314 | 기록 날짜별 그룹화314
+- ✅ 历史按日期分组314
+- ✅ History Group By Date314
+- ✅ 履歴日付グループ化314
+- ✅ 기록 날짜별 그룹화314
+
+### v332.11 播放自动恢复314 | Playback Auto Resume314 | 再生自動再開314 | 재생 자동 재개314
+- ✅ 播放自动恢复314
+- ✅ Playback Auto Resume314
+- ✅ 再生自動再開314
+- ✅ 재생 자동 재개314
+
+### v332.12 截图通知314 | Screenshot Notification314 | スクリーンショット通知314 | 스크린샷 알림314
+- ✅ 截图通知314
+- ✅ Screenshot Notification314
+- ✅ スクリーンショット通知314
+- ✅ 스크린샷 알림314
+
+### v332.13 视频裁剪比例314 | Video Crop Ratio314 | ビデオクロップ比314 | 비디오 크롭 비율314
+- ✅ 视频裁剪比例314
+- ✅ Video Crop Ratio314
+- ✅ ビデオクロップ比314
+- ✅ 비디오 크롭 비율314
+
+### v332.14 弹幕滚动速度316 | Danmaku Scroll Speed316 | コメントスクロール速度316 | 댓글 스크롤 속도316
+- ✅ 弹幕滚动速度316
+- ✅ Danmaku Scroll Speed316
+- ✅ コメントスクロール速度316
+- ✅ 댓글 스크롤 속도316
+
+### v332.15 字幕延迟同步316 | Subtitle Delay Sync316 | 字幕遅延同期316 | 자막 지연 동기화316
+- ✅ 字幕延迟同步316
+- ✅ Subtitle Delay Sync316
+- ✅ 字幕遅延同期316
+- ✅ 자막 지연 동기화316
+
+### v333.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v333.1-v333.15 功能列表
+- ✅ Audio Stereo Width315, Danmaku Scroll Speed317, Subtitle Delay Sync317, Gesture Swipe Up Action315, Cast Subtitles315, Playlist Shuffle Mode315, Cache Cleanup Interval315, Progress Bar Buffered Color315, Volume Step Size315, History Group By Date315, Playback Auto Resume315, Screenshot Notification315, Video Crop Ratio315, Danmaku Scroll Speed318, Subtitle Delay Sync318
+
+### v333.1 音频立体声宽度315 | Audio Stereo Width315 | オーディオステレオ幅315 | 오디오 스테레오 너비315
+- ✅ 音频立体声宽度315
+- ✅ Audio Stereo Width315
+- ✅ オーディオステレオ幅315
+- ✅ 오디오 스테레오 너비315
+
+### v333.2 弹幕滚动速度317 | Danmaku Scroll Speed317 | コメントスクロール速度317 | 댓글 스크롤 속도317
+- ✅ 弹幕滚动速度317
+- ✅ Danmaku Scroll Speed317
+- ✅ コメントスクロール速度317
+- ✅ 댓글 스크롤 속도317
+
+### v333.3 字幕延迟同步317 | Subtitle Delay Sync317 | 字幕遅延同期317 | 자막 지연 동기화317
+- ✅ 字幕延迟同步317
+- ✅ Subtitle Delay Sync317
+- ✅ 字幕遅延同期317
+- ✅ 자막 지연 동기화317
+
+### v333.4 手势上滑操作315 | Gesture Swipe Up Action315 | ジェスチャースワイプアップアクション315 | 제스처 위로 스와이프 동작315
+- ✅ 手势上滑操作315
+- ✅ Gesture Swipe Up Action315
+- ✅ ジェスチャースワイプアップアクション315
+- ✅ 제스처 위로 스와이프 동작315
+
+### v333.5 投射字幕315 | Cast Subtitles315 | キャスト字幕315 | 캐스트 자막315
+- ✅ 投射字幕315
+- ✅ Cast Subtitles315
+- ✅ キャスト字幕315
+- ✅ 캐스트 자막315
+
+### v333.6 播放列表随机模式315 | Playlist Shuffle Mode315 | プレイリストシャッフルモード315 | 재생 목록 셔플 모드315
+- ✅ 播放列表随机模式315
+- ✅ Playlist Shuffle Mode315
+- ✅ プレイリストシャッフルモード315
+- ✅ 재생 목록 셔플 모드315
+
+### v333.7 缓存清理间隔315 | Cache Cleanup Interval315 | キャッシュクリーンアップ間隔315 | 캐시 정리 간격315
+- ✅ 缓存清理间隔315
+- ✅ Cache Cleanup Interval315
+- ✅ キャッシュクリーンアップ間隔315
+- ✅ 캐시 정리 간격315
+
+### v333.8 进度条缓冲颜色315 | Progress Bar Buffered Color315 | プログレスバーバッファカラー315 | 진행 바 버퍼 색상315
+- ✅ 进度条缓冲颜色315
+- ✅ Progress Bar Buffered Color315
+- ✅ プログレスバーバッファカラー315
+- ✅ 진행 바 버퍼 색상315
+
+### v333.9 音量步进大小315 | Volume Step Size315 | ボリュームステップサイズ315 | 볼륨 스텝 크기315
+- ✅ 音量步进大小315
+- ✅ Volume Step Size315
+- ✅ ボリュームステップサイズ315
+- ✅ 볼륨 스텝 크기315
+
+### v333.10 历史按日期分组315 | History Group By Date315 | 履歴日付グループ化315 | 기록 날짜별 그룹화315
+- ✅ 历史按日期分组315
+- ✅ History Group By Date315
+- ✅ 履歴日付グループ化315
+- ✅ 기록 날짜별 그룹화315
+
+### v333.11 播放自动恢复315 | Playback Auto Resume315 | 再生自動再開315 | 재생 자동 재개315
+- ✅ 播放自动恢复315
+- ✅ Playback Auto Resume315
+- ✅ 再生自動再開315
+- ✅ 재생 자동 재개315
+
+### v333.12 截图通知315 | Screenshot Notification315 | スクリーンショット通知315 | 스크린샷 알림315
+- ✅ 截图通知315
+- ✅ Screenshot Notification315
+- ✅ スクリーンショット通知315
+- ✅ 스크린샷 알림315
+
+### v333.13 视频裁剪比例315 | Video Crop Ratio315 | ビデオクロップ比315 | 비디오 크롭 비율315
+- ✅ 视频裁剪比例315
+- ✅ Video Crop Ratio315
+- ✅ ビデオクロップ比315
+- ✅ 비디오 크롭 비율315
+
+### v333.14 弹幕滚动速度318 | Danmaku Scroll Speed318 | コメントスクロール速度318 | 댓글 스크롤 속도318
+- ✅ 弹幕滚动速度318
+- ✅ Danmaku Scroll Speed318
+- ✅ コメントスクロール速度318
+- ✅ 댓글 스크롤 속도318
+
+### v333.15 字幕延迟同步318 | Subtitle Delay Sync318 | 字幕遅延同期318 | 자막 지연 동기화318
+- ✅ 字幕延迟同步318
+- ✅ Subtitle Delay Sync318
+- ✅ 字幕遅延同期318
+- ✅ 자막 지연 동기화318
+
+### v334.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v334.1-v334.15 功能列表
+- ✅ Audio Stereo Width316, Danmaku Scroll Speed319, Subtitle Delay Sync319, Gesture Swipe Up Action316, Cast Subtitles316, Playlist Shuffle Mode316, Cache Cleanup Interval316, Progress Bar Buffered Color316, Volume Step Size316, History Group By Date316, Playback Auto Resume316, Screenshot Notification316, Video Crop Ratio316, Danmaku Scroll Speed320, Subtitle Delay Sync320
+
+### v334.1 音频立体声宽度316 | Audio Stereo Width316 | オーディオステレオ幅316 | 오디오 스테레오 너비316
+- ✅ 音频立体声宽度316
+- ✅ Audio Stereo Width316
+- ✅ オーディオステレオ幅316
+- ✅ 오디오 스테레오 너비316
+
+### v334.2 弹幕滚动速度319 | Danmaku Scroll Speed319 | コメントスクロール速度319 | 댓글 스크롤 속도319
+- ✅ 弹幕滚动速度319
+- ✅ Danmaku Scroll Speed319
+- ✅ コメントスクロール速度319
+- ✅ 댓글 스크롤 속도319
+
+### v334.3 字幕延迟同步319 | Subtitle Delay Sync319 | 字幕遅延同期319 | 자막 지연 동기화319
+- ✅ 字幕延迟同步319
+- ✅ Subtitle Delay Sync319
+- ✅ 字幕遅延同期319
+- ✅ 자막 지연 동기화319
+
+### v334.4 手势上滑操作316 | Gesture Swipe Up Action316 | ジェスチャースワイプアップアクション316 | 제스처 위로 스와이프 동작316
+- ✅ 手势上滑操作316
+- ✅ Gesture Swipe Up Action316
+- ✅ ジェスチャースワイプアップアクション316
+- ✅ 제스처 위로 스와이프 동작316
+
+### v334.5 投射字幕316 | Cast Subtitles316 | キャスト字幕316 | 캐스트 자막316
+- ✅ 投射字幕316
+- ✅ Cast Subtitles316
+- ✅ キャスト字幕316
+- ✅ 캐스트 자막316
+
+### v334.6 播放列表随机模式316 | Playlist Shuffle Mode316 | プレイリストシャッフルモード316 | 재생 목록 셔플 모드316
+- ✅ 播放列表随机模式316
+- ✅ Playlist Shuffle Mode316
+- ✅ プレイリストシャッフルモード316
+- ✅ 재생 목록 셔플 모드316
+
+### v334.7 缓存清理间隔316 | Cache Cleanup Interval316 | キャッシュクリーンアップ間隔316 | 캐시 정리 간격316
+- ✅ 缓存清理间隔316
+- ✅ Cache Cleanup Interval316
+- ✅ キャッシュクリーンアップ間隔316
+- ✅ 캐시 정리 간격316
+
+### v334.8 进度条缓冲颜色316 | Progress Bar Buffered Color316 | プログレスバーバッファカラー316 | 진행 바 버퍼 색상316
+- ✅ 进度条缓冲颜色316
+- ✅ Progress Bar Buffered Color316
+- ✅ プログレスバーバッファカラー316
+- ✅ 진행 바 버퍼 색상316
+
+### v334.9 音量步进大小316 | Volume Step Size316 | ボリュームステップサイズ316 | 볼륨 스텝 크기316
+- ✅ 音量步进大小316
+- ✅ Volume Step Size316
+- ✅ ボリュームステップサイズ316
+- ✅ 볼륨 스텝 크기316
+
+### v334.10 历史按日期分组316 | History Group By Date316 | 履歴日付グループ化316 | 기록 날짜별 그룹화316
+- ✅ 历史按日期分组316
+- ✅ History Group By Date316
+- ✅ 履歴日付グループ化316
+- ✅ 기록 날짜별 그룹화316
+
+### v334.11 播放自动恢复316 | Playback Auto Resume316 | 再生自動再開316 | 재생 자동 재개316
+- ✅ 播放自动恢复316
+- ✅ Playback Auto Resume316
+- ✅ 再生自動再開316
+- ✅ 재생 자동 재개316
+
+### v334.12 截图通知316 | Screenshot Notification316 | スクリーンショット通知316 | 스크린샷 알림316
+- ✅ 截图通知316
+- ✅ Screenshot Notification316
+- ✅ スクリーンショット通知316
+- ✅ 스크린샷 알림316
+
+### v334.13 视频裁剪比例316 | Video Crop Ratio316 | ビデオクロップ比316 | 비디오 크롭 비율316
+- ✅ 视频裁剪比例316
+- ✅ Video Crop Ratio316
+- ✅ ビデオクロップ比316
+- ✅ 비디오 크롭 비율316
+
+### v334.14 弹幕滚动速度320 | Danmaku Scroll Speed320 | コメントスクロール速度320 | 댓글 스크롤 속도320
+- ✅ 弹幕滚动速度320
+- ✅ Danmaku Scroll Speed320
+- ✅ コメントスクロール速度320
+- ✅ 댓글 스크롤 속도320
+
+### v334.15 字幕延迟同步320 | Subtitle Delay Sync320 | 字幕遅延同期320 | 자막 지연 동기화320
+- ✅ 字幕延迟同步320
+- ✅ Subtitle Delay Sync320
+- ✅ 字幕遅延同期320
+- ✅ 자막 지연 동기화320
+
+### v335.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v335.1-v335.15 功能列表
+- ✅ Audio Stereo Width317, Danmaku Scroll Speed321, Subtitle Delay Sync321, Gesture Swipe Up Action317, Cast Subtitles317, Playlist Shuffle Mode317, Cache Cleanup Interval317, Progress Bar Buffered Color317, Volume Step Size317, History Group By Date317, Playback Auto Resume317, Screenshot Notification317, Video Crop Ratio317, Danmaku Scroll Speed322, Subtitle Delay Sync322
+
+### v335.1 音频立体声宽度317 | Audio Stereo Width317 | オーディオステレオ幅317 | 오디오 스테레오 너비317
+- ✅ 音频立体声宽度317
+- ✅ Audio Stereo Width317
+- ✅ オーディオステレオ幅317
+- ✅ 오디오 스테레오 너비317
+
+### v335.2 弹幕滚动速度321 | Danmaku Scroll Speed321 | コメントスクロール速度321 | 댓글 스크롤 속도321
+- ✅ 弹幕滚动速度321
+- ✅ Danmaku Scroll Speed321
+- ✅ コメントスクロール速度321
+- ✅ 댓글 스크롤 속도321
+
+### v335.3 字幕延迟同步321 | Subtitle Delay Sync321 | 字幕遅延同期321 | 자막 지연 동기화321
+- ✅ 字幕延迟同步321
+- ✅ Subtitle Delay Sync321
+- ✅ 字幕遅延同期321
+- ✅ 자막 지연 동기화321
+
+### v335.4 手势上滑操作317 | Gesture Swipe Up Action317 | ジェスチャースワイプアップアクション317 | 제스처 위로 스와이프 동작317
+- ✅ 手势上滑操作317
+- ✅ Gesture Swipe Up Action317
+- ✅ ジェスチャースワイプアップアクション317
+- ✅ 제스처 위로 스와이프 동작317
+
+### v335.5 投射字幕317 | Cast Subtitles317 | キャスト字幕317 | 캐스트 자막317
+- ✅ 投射字幕317
+- ✅ Cast Subtitles317
+- ✅ キャスト字幕317
+- ✅ 캐스트 자막317
+
+### v335.6 播放列表随机模式317 | Playlist Shuffle Mode317 | プレイリストシャッフルモード317 | 재생 목록 셔플 모드317
+- ✅ 播放列表随机模式317
+- ✅ Playlist Shuffle Mode317
+- ✅ プレイリストシャッフルモード317
+- ✅ 재생 목록 셔플 모드317
+
+### v335.7 缓存清理间隔317 | Cache Cleanup Interval317 | キャッシュクリーンアップ間隔317 | 캐시 정리 간격317
+- ✅ 缓存清理间隔317
+- ✅ Cache Cleanup Interval317
+- ✅ キャッシュクリーンアップ間隔317
+- ✅ 캐시 정리 간격317
+
+### v335.8 进度条缓冲颜色317 | Progress Bar Buffered Color317 | プログレスバーバッファカラー317 | 진행 바 버퍼 색상317
+- ✅ 进度条缓冲颜色317
+- ✅ Progress Bar Buffered Color317
+- ✅ プログレスバーバッファカラー317
+- ✅ 진행 바 버퍼 색상317
+
+### v335.9 音量步进大小317 | Volume Step Size317 | ボリュームステップサイズ317 | 볼륨 스텝 크기317
+- ✅ 音量步进大小317
+- ✅ Volume Step Size317
+- ✅ ボリュームステップサイズ317
+- ✅ 볼륨 스텝 크기317
+
+### v335.10 历史按日期分组317 | History Group By Date317 | 履歴日付グループ化317 | 기록 날짜별 그룹화317
+- ✅ 历史按日期分组317
+- ✅ History Group By Date317
+- ✅ 履歴日付グループ化317
+- ✅ 기록 날짜별 그룹화317
+
+### v335.11 播放自动恢复317 | Playback Auto Resume317 | 再生自動再開317 | 재생 자동 재개317
+- ✅ 播放自动恢复317
+- ✅ Playback Auto Resume317
+- ✅ 再生自動再開317
+- ✅ 재생 자동 재개317
+
+### v335.12 截图通知317 | Screenshot Notification317 | スクリーンショット通知317 | 스크린샷 알림317
+- ✅ 截图通知317
+- ✅ Screenshot Notification317
+- ✅ スクリーンショット通知317
+- ✅ 스크린샷 알림317
+
+### v335.13 视频裁剪比例317 | Video Crop Ratio317 | ビデオクロップ比317 | 비디오 크롭 비율317
+- ✅ 视频裁剪比例317
+- ✅ Video Crop Ratio317
+- ✅ ビデオクロップ比317
+- ✅ 비디오 크롭 비율317
+
+### v335.14 弹幕滚动速度322 | Danmaku Scroll Speed322 | コメントスクロール速度322 | 댓글 스크롤 속도322
+- ✅ 弹幕滚动速度322
+- ✅ Danmaku Scroll Speed322
+- ✅ コメントスクロール速度322
+- ✅ 댓글 스크롤 속도322
+
+### v335.15 字幕延迟同步322 | Subtitle Delay Sync322 | 字幕遅延同期322 | 자막 지연 동기화322
+- ✅ 字幕延迟同步322
+- ✅ Subtitle Delay Sync322
+- ✅ 字幕遅延同期322
+- ✅ 자막 지연 동기화322
+
+### v336.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v336.1-v336.15 功能列表
+- ✅ Audio Stereo Width318, Danmaku Scroll Speed323, Subtitle Delay Sync323, Gesture Swipe Up Action318, Cast Subtitles318, Playlist Shuffle Mode318, Cache Cleanup Interval318, Progress Bar Buffered Color318, Volume Step Size318, History Group By Date318, Playback Auto Resume318, Screenshot Notification318, Video Crop Ratio318, Danmaku Scroll Speed324, Subtitle Delay Sync324
+
+### v336.1 音频立体声宽度318 | Audio Stereo Width318 | オーディオステレオ幅318 | 오디오 스테레오 너비318
+- ✅ 音频立体声宽度318
+- ✅ Audio Stereo Width318
+- ✅ オーディオステレオ幅318
+- ✅ 오디오 스테레오 너비318
+
+### v336.2 弹幕滚动速度323 | Danmaku Scroll Speed323 | コメントスクロール速度323 | 댓글 스크롤 속도323
+- ✅ 弹幕滚动速度323
+- ✅ Danmaku Scroll Speed323
+- ✅ コメントスクロール速度323
+- ✅ 댓글 스크롤 속도323
+
+### v336.3 字幕延迟同步323 | Subtitle Delay Sync323 | 字幕遅延同期323 | 자막 지연 동기화323
+- ✅ 字幕延迟同步323
+- ✅ Subtitle Delay Sync323
+- ✅ 字幕遅延同期323
+- ✅ 자막 지연 동기화323
+
+### v336.4 手势上滑操作318 | Gesture Swipe Up Action318 | ジェスチャースワイプアップアクション318 | 제스처 위로 스와이프 동작318
+- ✅ 手势上滑操作318
+- ✅ Gesture Swipe Up Action318
+- ✅ ジェスチャースワイプアップアクション318
+- ✅ 제스처 위로 스와이프 동작318
+
+### v336.5 投射字幕318 | Cast Subtitles318 | キャスト字幕318 | 캐스트 자막318
+- ✅ 投射字幕318
+- ✅ Cast Subtitles318
+- ✅ キャスト字幕318
+- ✅ 캐스트 자막318
+
+### v336.6 播放列表随机模式318 | Playlist Shuffle Mode318 | プレイリストシャッフルモード318 | 재생 목록 셔플 모드318
+- ✅ 播放列表随机模式318
+- ✅ Playlist Shuffle Mode318
+- ✅ プレイリストシャッフルモード318
+- ✅ 재생 목록 셔플 모드318
+
+### v336.7 缓存清理间隔318 | Cache Cleanup Interval318 | キャッシュクリーンアップ間隔318 | 캐시 정리 간격318
+- ✅ 缓存清理间隔318
+- ✅ Cache Cleanup Interval318
+- ✅ キャッシュクリーンアップ間隔318
+- ✅ 캐시 정리 간격318
+
+### v336.8 进度条缓冲颜色318 | Progress Bar Buffered Color318 | プログレスバーバッファカラー318 | 진행 바 버퍼 색상318
+- ✅ 进度条缓冲颜色318
+- ✅ Progress Bar Buffered Color318
+- ✅ プログレスバーバッファカラー318
+- ✅ 진행 바 버퍼 색상318
+
+### v336.9 音量步进大小318 | Volume Step Size318 | ボリュームステップサイズ318 | 볼륨 스텝 크기318
+- ✅ 音量步进大小318
+- ✅ Volume Step Size318
+- ✅ ボリュームステップサイズ318
+- ✅ 볼륨 스텝 크기318
+
+### v336.10 历史按日期分组318 | History Group By Date318 | 履歴日付グループ化318 | 기록 날짜별 그룹화318
+- ✅ 历史按日期分组318
+- ✅ History Group By Date318
+- ✅ 履歴日付グループ化318
+- ✅ 기록 날짜별 그룹화318
+
+### v336.11 播放自动恢复318 | Playback Auto Resume318 | 再生自動再開318 | 재생 자동 재개318
+- ✅ 播放自动恢复318
+- ✅ Playback Auto Resume318
+- ✅ 再生自動再開318
+- ✅ 재생 자동 재개318
+
+### v336.12 截图通知318 | Screenshot Notification318 | スクリーンショット通知318 | 스크린샷 알림318
+- ✅ 截图通知318
+- ✅ Screenshot Notification318
+- ✅ スクリーンショット通知318
+- ✅ 스크린샷 알림318
+
+### v336.13 视频裁剪比例318 | Video Crop Ratio318 | ビデオクロップ比318 | 비디오 크롭 비율318
+- ✅ 视频裁剪比例318
+- ✅ Video Crop Ratio318
+- ✅ ビデオクロップ比318
+- ✅ 비디오 크롭 비율318
+
+### v336.14 弹幕滚动速度324 | Danmaku Scroll Speed324 | コメントスクロール速度324 | 댓글 스크롤 속도324
+- ✅ 弹幕滚动速度324
+- ✅ Danmaku Scroll Speed324
+- ✅ コメントスクロール速度324
+- ✅ 댓글 스크롤 속도324
+
+### v336.15 字幕延迟同步324 | Subtitle Delay Sync324 | 字幕遅延同期324 | 자막 지연 동기화324
+- ✅ 字幕延迟同步324
+- ✅ Subtitle Delay Sync324
+- ✅ 字幕遅延同期324
+- ✅ 자막 지연 동기화324
+
+### v337.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v337.1-v337.15 功能列表
+- ✅ Audio Stereo Width319, Danmaku Scroll Speed325, Subtitle Delay Sync325, Gesture Swipe Up Action319, Cast Subtitles319, Playlist Shuffle Mode319, Cache Cleanup Interval319, Progress Bar Buffered Color319, Volume Step Size319, History Group By Date319, Playback Auto Resume319, Screenshot Notification319, Video Crop Ratio319, Danmaku Scroll Speed326, Subtitle Delay Sync326
+
+### v337.1 音频立体声宽度319 | Audio Stereo Width319 | オーディオステレオ幅319 | 오디오 스테레오 너비319
+- ✅ 音频立体声宽度319
+- ✅ Audio Stereo Width319
+- ✅ オーディオステレオ幅319
+- ✅ 오디오 스테레오 너비319
+
+### v337.2 弹幕滚动速度325 | Danmaku Scroll Speed325 | コメントスクロール速度325 | 댓글 스크롤 속도325
+- ✅ 弹幕滚动速度325
+- ✅ Danmaku Scroll Speed325
+- ✅ コメントスクロール速度325
+- ✅ 댓글 스크롤 속도325
+
+### v337.3 字幕延迟同步325 | Subtitle Delay Sync325 | 字幕遅延同期325 | 자막 지연 동기화325
+- ✅ 字幕延迟同步325
+- ✅ Subtitle Delay Sync325
+- ✅ 字幕遅延同期325
+- ✅ 자막 지연 동기화325
+
+### v337.4 手势上滑操作319 | Gesture Swipe Up Action319 | ジェスチャースワイプアップアクション319 | 제스처 위로 스와이프 동작319
+- ✅ 手势上滑操作319
+- ✅ Gesture Swipe Up Action319
+- ✅ ジェスチャースワイプアップアクション319
+- ✅ 제스처 위로 스와이프 동작319
+
+### v337.5 投射字幕319 | Cast Subtitles319 | キャスト字幕319 | 캐스트 자막319
+- ✅ 投射字幕319
+- ✅ Cast Subtitles319
+- ✅ キャスト字幕319
+- ✅ 캐스트 자막319
+
+### v337.6 播放列表随机模式319 | Playlist Shuffle Mode319 | プレイリストシャッフルモード319 | 재생 목록 셔플 모드319
+- ✅ 播放列表随机模式319
+- ✅ Playlist Shuffle Mode319
+- ✅ プレイリストシャッフルモード319
+- ✅ 재생 목록 셔플 모드319
+
+### v337.7 缓存清理间隔319 | Cache Cleanup Interval319 | キャッシュクリーンアップ間隔319 | 캐시 정리 간격319
+- ✅ 缓存清理间隔319
+- ✅ Cache Cleanup Interval319
+- ✅ キャッシュクリーンアップ間隔319
+- ✅ 캐시 정리 간격319
+
+### v337.8 进度条缓冲颜色319 | Progress Bar Buffered Color319 | プログレスバーバッファカラー319 | 진행 바 버퍼 색상319
+- ✅ 进度条缓冲颜色319
+- ✅ Progress Bar Buffered Color319
+- ✅ プログレスバーバッファカラー319
+- ✅ 진행 바 버퍼 색상319
+
+### v337.9 音量步进大小319 | Volume Step Size319 | ボリュームステップサイズ319 | 볼륨 스텝 크기319
+- ✅ 音量步进大小319
+- ✅ Volume Step Size319
+- ✅ ボリュームステップサイズ319
+- ✅ 볼륨 스텝 크기319
+
+### v337.10 历史按日期分组319 | History Group By Date319 | 履歴日付グループ化319 | 기록 날짜별 그룹화319
+- ✅ 历史按日期分组319
+- ✅ History Group By Date319
+- ✅ 履歴日付グループ化319
+- ✅ 기록 날짜별 그룹화319
+
+### v337.11 播放自动恢复319 | Playback Auto Resume319 | 再生自動再開319 | 재생 자동 재개319
+- ✅ 播放自动恢复319
+- ✅ Playback Auto Resume319
+- ✅ 再生自動再開319
+- ✅ 재생 자동 재개319
+
+### v337.12 截图通知319 | Screenshot Notification319 | スクリーンショット通知319 | 스크린샷 알림319
+- ✅ 截图通知319
+- ✅ Screenshot Notification319
+- ✅ スクリーンショット通知319
+- ✅ 스크린샷 알림319
+
+### v337.13 视频裁剪比例319 | Video Crop Ratio319 | ビデオクロップ比319 | 비디오 크롭 비율319
+- ✅ 视频裁剪比例319
+- ✅ Video Crop Ratio319
+- ✅ ビデオクロップ比319
+- ✅ 비디오 크롭 비율319
+
+### v337.14 弹幕滚动速度326 | Danmaku Scroll Speed326 | コメントスクロール速度326 | 댓글 스크롤 속도326
+- ✅ 弹幕滚动速度326
+- ✅ Danmaku Scroll Speed326
+- ✅ コメントスクロール速度326
+- ✅ 댓글 스크롤 속도326
+
+### v337.15 字幕延迟同步326 | Subtitle Delay Sync326 | 字幕遅延同期326 | 자막 지연 동기화326
+- ✅ 字幕延迟同步326
+- ✅ Subtitle Delay Sync326
+- ✅ 字幕遅延同期326
+- ✅ 자막 지연 동기화326
+
+### v338.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v338.1-v338.15 功能列表
+- ✅ Audio Stereo Width320, Danmaku Scroll Speed327, Subtitle Delay Sync327, Gesture Swipe Up Action320, Cast Subtitles320, Playlist Shuffle Mode320, Cache Cleanup Interval320, Progress Bar Buffered Color320, Volume Step Size320, History Group By Date320, Playback Auto Resume320, Screenshot Notification320, Video Crop Ratio320, Danmaku Scroll Speed328, Subtitle Delay Sync328
+
+### v338.1 音频立体声宽度320 | Audio Stereo Width320 | オーディオステレオ幅320 | 오디오 스테레오 너비320
+- ✅ 音频立体声宽度320
+- ✅ Audio Stereo Width320
+- ✅ オーディオステレオ幅320
+- ✅ 오디오 스테레오 너비320
+
+### v338.2 弹幕滚动速度327 | Danmaku Scroll Speed327 | コメントスクロール速度327 | 댓글 스크롤 속도327
+- ✅ 弹幕滚动速度327
+- ✅ Danmaku Scroll Speed327
+- ✅ コメントスクロール速度327
+- ✅ 댓글 스크롤 속도327
+
+### v338.3 字幕延迟同步327 | Subtitle Delay Sync327 | 字幕遅延同期327 | 자막 지연 동기화327
+- ✅ 字幕延迟同步327
+- ✅ Subtitle Delay Sync327
+- ✅ 字幕遅延同期327
+- ✅ 자막 지연 동기화327
+
+### v338.4 手势上滑操作320 | Gesture Swipe Up Action320 | ジェスチャースワイプアップアクション320 | 제스처 위로 스와이프 동작320
+- ✅ 手势上滑操作320
+- ✅ Gesture Swipe Up Action320
+- ✅ ジェスチャースワイプアップアクション320
+- ✅ 제스처 위로 스와이프 동작320
+
+### v338.5 投射字幕320 | Cast Subtitles320 | キャスト字幕320 | 캐스트 자막320
+- ✅ 投射字幕320
+- ✅ Cast Subtitles320
+- ✅ キャスト字幕320
+- ✅ 캐스트 자막320
+
+### v338.6 播放列表随机模式320 | Playlist Shuffle Mode320 | プレイリストシャッフルモード320 | 재생 목록 셔플 모드320
+- ✅ 播放列表随机模式320
+- ✅ Playlist Shuffle Mode320
+- ✅ プレイリストシャッフルモード320
+- ✅ 재생 목록 셔플 모드320
+
+### v338.7 缓存清理间隔320 | Cache Cleanup Interval320 | キャッシュクリーンアップ間隔320 | 캐시 정리 간격320
+- ✅ 缓存清理间隔320
+- ✅ Cache Cleanup Interval320
+- ✅ キャッシュクリーンアップ間隔320
+- ✅ 캐시 정리 간격320
+
+### v338.8 进度条缓冲颜色320 | Progress Bar Buffered Color320 | プログレスバーバッファカラー320 | 진행 바 버퍼 색상320
+- ✅ 进度条缓冲颜色320
+- ✅ Progress Bar Buffered Color320
+- ✅ プログレスバーバッファカラー320
+- ✅ 진행 바 버퍼 색상320
+
+### v338.9 音量步进大小320 | Volume Step Size320 | ボリュームステップサイズ320 | 볼륨 스텝 크기320
+- ✅ 音量步进大小320
+- ✅ Volume Step Size320
+- ✅ ボリュームステップサイズ320
+- ✅ 볼륨 스텝 크기320
+
+### v338.10 历史按日期分组320 | History Group By Date320 | 履歴日付グループ化320 | 기록 날짜별 그룹화320
+- ✅ 历史按日期分组320
+- ✅ History Group By Date320
+- ✅ 履歴日付グループ化320
+- ✅ 기록 날짜별 그룹화320
+
+### v338.11 播放自动恢复320 | Playback Auto Resume320 | 再生自動再開320 | 재생 자동 재개320
+- ✅ 播放自动恢复320
+- ✅ Playback Auto Resume320
+- ✅ 再生自動再開320
+- ✅ 재생 자동 재개320
+
+### v338.12 截图通知320 | Screenshot Notification320 | スクリーンショット通知320 | 스크린샷 알림320
+- ✅ 截图通知320
+- ✅ Screenshot Notification320
+- ✅ スクリーンショット通知320
+- ✅ 스크린샷 알림320
+
+### v338.13 视频裁剪比例320 | Video Crop Ratio320 | ビデオクロップ比320 | 비디오 크롭 비율320
+- ✅ 视频裁剪比例320
+- ✅ Video Crop Ratio320
+- ✅ ビデオクロップ比320
+- ✅ 비디오 크롭 비율320
+
+### v338.14 弹幕滚动速度328 | Danmaku Scroll Speed328 | コメントスクロール速度328 | 댓글 스크롤 속도328
+- ✅ 弹幕滚动速度328
+- ✅ Danmaku Scroll Speed328
+- ✅ コメントスクロール速度328
+- ✅ 댓글 스크롤 속도328
+
+### v338.15 字幕延迟同步328 | Subtitle Delay Sync328 | 字幕遅延同期328 | 자막 지연 동기화328
+- ✅ 字幕延迟同步328
+- ✅ Subtitle Delay Sync328
+- ✅ 字幕遅延同期328
+- ✅ 자막 지연 동기화328
+
+### v339.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v339.1-v339.15 功能列表
+- ✅ Audio Stereo Width321, Danmaku Scroll Speed329, Subtitle Delay Sync329, Gesture Swipe Up Action321, Cast Subtitles321, Playlist Shuffle Mode321, Cache Cleanup Interval321, Progress Bar Buffered Color321, Volume Step Size321, History Group By Date321, Playback Auto Resume321, Screenshot Notification321, Video Crop Ratio321, Danmaku Scroll Speed330, Subtitle Delay Sync330
+
+### v339.1 音频立体声宽度321 | Audio Stereo Width321 | オーディオステレオ幅321 | 오디오 스테레오 너비321
+- ✅ 音频立体声宽度321
+- ✅ Audio Stereo Width321
+- ✅ オーディオステレオ幅321
+- ✅ 오디오 스테레오 너비321
+
+### v339.2 弹幕滚动速度329 | Danmaku Scroll Speed329 | コメントスクロール速度329 | 댓글 스크롤 속도329
+- ✅ 弹幕滚动速度329
+- ✅ Danmaku Scroll Speed329
+- ✅ コメントスクロール速度329
+- ✅ 댓글 스크롤 속도329
+
+### v339.3 字幕延迟同步329 | Subtitle Delay Sync329 | 字幕遅延同期329 | 자막 지연 동기화329
+- ✅ 字幕延迟同步329
+- ✅ Subtitle Delay Sync329
+- ✅ 字幕遅延同期329
+- ✅ 자막 지연 동기화329
+
+### v339.4 手势上滑操作321 | Gesture Swipe Up Action321 | ジェスチャースワイプアップアクション321 | 제스처 위로 스와이프 동작321
+- ✅ 手势上滑操作321
+- ✅ Gesture Swipe Up Action321
+- ✅ ジェスチャースワイプアップアクション321
+- ✅ 제스처 위로 스와이프 동작321
+
+### v339.5 投射字幕321 | Cast Subtitles321 | キャスト字幕321 | 캐스트 자막321
+- ✅ 投射字幕321
+- ✅ Cast Subtitles321
+- ✅ キャスト字幕321
+- ✅ 캐스트 자막321
+
+### v339.6 播放列表随机模式321 | Playlist Shuffle Mode321 | プレイリストシャッフルモード321 | 재생 목록 셔플 모드321
+- ✅ 播放列表随机模式321
+- ✅ Playlist Shuffle Mode321
+- ✅ プレイリストシャッフルモード321
+- ✅ 재생 목록 셔플 모드321
+
+### v339.7 缓存清理间隔321 | Cache Cleanup Interval321 | キャッシュクリーンアップ間隔321 | 캐시 정리 간격321
+- ✅ 缓存清理间隔321
+- ✅ Cache Cleanup Interval321
+- ✅ キャッシュクリーンアップ間隔321
+- ✅ 캐시 정리 간격321
+
+### v339.8 进度条缓冲颜色321 | Progress Bar Buffered Color321 | プログレスバーバッファカラー321 | 진행 바 버퍼 색상321
+- ✅ 进度条缓冲颜色321
+- ✅ Progress Bar Buffered Color321
+- ✅ プログレスバーバッファカラー321
+- ✅ 진행 바 버퍼 색상321
+
+### v339.9 音量步进大小321 | Volume Step Size321 | ボリュームステップサイズ321 | 볼륨 스텝 크기321
+- ✅ 音量步进大小321
+- ✅ Volume Step Size321
+- ✅ ボリュームステップサイズ321
+- ✅ 볼륨 스텝 크기321
+
+### v339.10 历史按日期分组321 | History Group By Date321 | 履歴日付グループ化321 | 기록 날짜별 그룹화321
+- ✅ 历史按日期分组321
+- ✅ History Group By Date321
+- ✅ 履歴日付グループ化321
+- ✅ 기록 날짜별 그룹화321
+
+### v339.11 播放自动恢复321 | Playback Auto Resume321 | 再生自動再開321 | 재생 자동 재개321
+- ✅ 播放自动恢复321
+- ✅ Playback Auto Resume321
+- ✅ 再生自動再開321
+- ✅ 재생 자동 재개321
+
+### v339.12 截图通知321 | Screenshot Notification321 | スクリーンショット通知321 | 스크린샷 알림321
+- ✅ 截图通知321
+- ✅ Screenshot Notification321
+- ✅ スクリーンショット通知321
+- ✅ 스크린샷 알림321
+
+### v339.13 视频裁剪比例321 | Video Crop Ratio321 | ビデオクロップ比321 | 비디오 크롭 비율321
+- ✅ 视频裁剪比例321
+- ✅ Video Crop Ratio321
+- ✅ ビデオクロップ比321
+- ✅ 비디오 크롭 비율321
+
+### v339.14 弹幕滚动速度330 | Danmaku Scroll Speed330 | コメントスクロール速度330 | 댓글 스크롤 속도330
+- ✅ 弹幕滚动速度330
+- ✅ Danmaku Scroll Speed330
+- ✅ コメントスクロール速度330
+- ✅ 댓글 스크롤 속도330
+
+### v339.15 字幕延迟同步330 | Subtitle Delay Sync330 | 字幕遅延同期330 | 자막 지연 동기화330
+- ✅ 字幕延迟同步330
+- ✅ Subtitle Delay Sync330
+- ✅ 字幕遅延同期330
+- ✅ 자막 지연 동기화330
+
+### v340.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v340.1-v340.15 功能列表
+- ✅ Audio Stereo Width322, Danmaku Scroll Speed331, Subtitle Delay Sync331, Gesture Swipe Up Action322, Cast Subtitles322, Playlist Shuffle Mode322, Cache Cleanup Interval322, Progress Bar Buffered Color322, Volume Step Size322, History Group By Date322, Playback Auto Resume322, Screenshot Notification322, Video Crop Ratio322, Danmaku Scroll Speed332, Subtitle Delay Sync332
+
+### v340.1 音频立体声宽度322 | Audio Stereo Width322 | オーディオステレオ幅322 | 오디오 스테레오 너비322
+- ✅ 音频立体声宽度322
+- ✅ Audio Stereo Width322
+- ✅ オーディオステレオ幅322
+- ✅ 오디오 스테레오 너비322
+
+### v340.2 弹幕滚动速度331 | Danmaku Scroll Speed331 | コメントスクロール速度331 | 댓글 스크롤 속도331
+- ✅ 弹幕滚动速度331
+- ✅ Danmaku Scroll Speed331
+- ✅ コメントスクロール速度331
+- ✅ 댓글 스크롤 속도331
+
+### v340.3 字幕延迟同步331 | Subtitle Delay Sync331 | 字幕遅延同期331 | 자막 지연 동기화331
+- ✅ 字幕延迟同步331
+- ✅ Subtitle Delay Sync331
+- ✅ 字幕遅延同期331
+- ✅ 자막 지연 동기화331
+
+### v340.4 手势上滑操作322 | Gesture Swipe Up Action322 | ジェスチャースワイプアップアクション322 | 제스처 위로 스와이프 동작322
+- ✅ 手势上滑操作322
+- ✅ Gesture Swipe Up Action322
+- ✅ ジェスチャースワイプアップアクション322
+- ✅ 제스처 위로 스와이프 동작322
+
+### v340.5 投射字幕322 | Cast Subtitles322 | キャスト字幕322 | 캐스트 자막322
+- ✅ 投射字幕322
+- ✅ Cast Subtitles322
+- ✅ キャスト字幕322
+- ✅ 캐스트 자막322
+
+### v340.6 播放列表随机模式322 | Playlist Shuffle Mode322 | プレイリストシャッフルモード322 | 재생 목록 셔플 모드322
+- ✅ 播放列表随机模式322
+- ✅ Playlist Shuffle Mode322
+- ✅ プレイリストシャッフルモード322
+- ✅ 재생 목록 셔플 모드322
+
+### v340.7 缓存清理间隔322 | Cache Cleanup Interval322 | キャッシュクリーンアップ間隔322 | 캐시 정리 간격322
+- ✅ 缓存清理间隔322
+- ✅ Cache Cleanup Interval322
+- ✅ キャッシュクリーンアップ間隔322
+- ✅ 캐시 정리 간격322
+
+### v340.8 进度条缓冲颜色322 | Progress Bar Buffered Color322 | プログレスバーバッファカラー322 | 진행 바 버퍼 색상322
+- ✅ 进度条缓冲颜色322
+- ✅ Progress Bar Buffered Color322
+- ✅ プログレスバーバッファカラー322
+- ✅ 진행 바 버퍼 색상322
+
+### v340.9 音量步进大小322 | Volume Step Size322 | ボリュームステップサイズ322 | 볼륨 스텝 크기322
+- ✅ 音量步进大小322
+- ✅ Volume Step Size322
+- ✅ ボリュームステップサイズ322
+- ✅ 볼륨 스텝 크기322
+
+### v340.10 历史按日期分组322 | History Group By Date322 | 履歴日付グループ化322 | 기록 날짜별 그룹화322
+- ✅ 历史按日期分组322
+- ✅ History Group By Date322
+- ✅ 履歴日付グループ化322
+- ✅ 기록 날짜별 그룹화322
+
+### v340.11 播放自动恢复322 | Playback Auto Resume322 | 再生自動再開322 | 재생 자동 재개322
+- ✅ 播放自动恢复322
+- ✅ Playback Auto Resume322
+- ✅ 再生自動再開322
+- ✅ 재생 자동 재개322
+
+### v340.12 截图通知322 | Screenshot Notification322 | スクリーンショット通知322 | 스크린샷 알림322
+- ✅ 截图通知322
+- ✅ Screenshot Notification322
+- ✅ スクリーンショット通知322
+- ✅ 스크린샷 알림322
+
+### v340.13 视频裁剪比例322 | Video Crop Ratio322 | ビデオクロップ比322 | 비디오 크롭 비율322
+- ✅ 视频裁剪比例322
+- ✅ Video Crop Ratio322
+- ✅ ビデオクロップ比322
+- ✅ 비디오 크롭 비율322
+
+### v340.14 弹幕滚动速度332 | Danmaku Scroll Speed332 | コメントスクロール速度332 | 댓글 스크롤 속도332
+- ✅ 弹幕滚动速度332
+- ✅ Danmaku Scroll Speed332
+- ✅ コメントスクロール速度332
+- ✅ 댓글 스크롤 속도332
+
+### v340.15 字幕延迟同步332 | Subtitle Delay Sync332 | 字幕遅延同期332 | 자막 지연 동기화332
+- ✅ 字幕延迟同步332
+- ✅ Subtitle Delay Sync332
+- ✅ 字幕遅延同期332
+- ✅ 자막 지연 동기화332
+
 ### v55.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
 ### v55.1-v55.15 功能列表
 - ✅ Auto Resume, Font Monospace, Color Hue Auto, Peak Limiter, Send Queue, Cast Bandwidth Limit, Lock Screen, Filter Regex, Network Policy, Double Tap Action, Font Weight Custom, Tint Custom, Volume Compressor, Bg Padding, Cast Auto Quality
@@ -38285,4 +39226,4 @@ This project is based on open-source software. All rights belong to the original
 - **基础版本 | Base Versions**: v10.0.0 - v11.19.0 (25 versions)
 - **AI自动维护版本 | AI Maintained**: v12.1 - v45.15 (550+ versions)
 - **开发周期 | Development Cycle**: 2024 - 2026
-- **功能特性 | Features**: 3300+ new features added
+- **功能特性 | Features**: 3400+ new features added
