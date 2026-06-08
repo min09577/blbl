@@ -43448,6 +43448,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V610ARRAYAUTOSORT610, false)
         set(value) = prefs.edit().putBoolean(KEY_V610ARRAYAUTOSORT610, value).apply()
 
+    var v611arrowAutoNavigate611: Boolean
+        get() = prefs.getBoolean(KEY_V611ARROWAUTONAVIGATE611, false)
+        set(value) = prefs.edit().putBoolean(KEY_V611ARROWAUTONAVIGATE611, value).apply()
+
+    var v611assetAutoLoad611: Boolean
+        get() = prefs.getBoolean(KEY_V611ASSETAUTOLOAD611, false)
+        set(value) = prefs.edit().putBoolean(KEY_V611ASSETAUTOLOAD611, value).apply()
+
+    var v611assignAutoTask611: Boolean
+        get() = prefs.getBoolean(KEY_V611ASSIGNAUTOTASK611, false)
+        set(value) = prefs.edit().putBoolean(KEY_V611ASSIGNAUTOTASK611, value).apply()
+
+    var v611asyncAutoExecute611: Boolean
+        get() = prefs.getBoolean(KEY_V611ASYNCAUTOEXECUTE611, false)
+        set(value) = prefs.edit().putBoolean(KEY_V611ASYNCAUTOEXECUTE611, value).apply()
+
+    var v611attackAutoBlock611: Boolean
+        get() = prefs.getBoolean(KEY_V611ATTACKAUTOBLOCK611, false)
+        set(value) = prefs.edit().putBoolean(KEY_V611ATTACKAUTOBLOCK611, value).apply()
+
+    var v611avatarAutoUpdate611: Boolean
+        get() = prefs.getBoolean(KEY_V611AVATARAUTOUPDATE611, false)
+        set(value) = prefs.edit().putBoolean(KEY_V611AVATARAUTOUPDATE611, value).apply()
+
+    var v611backAutoSave611: Boolean
+        get() = prefs.getBoolean(KEY_V611BACKAUTOSAVE611, false)
+        set(value) = prefs.edit().putBoolean(KEY_V611BACKAUTOSAVE611, value).apply()
+
+    var v611balanceAutoLoad611: Int
+        get() = prefs.getInt(KEY_V611BALANCEAUTOLOAD611, 0)
+        set(value) = prefs.edit().putInt(KEY_V611BALANCEAUTOLOAD611, value).apply()
+
+    var v611bandAutoWidth611: Boolean
+        get() = prefs.getBoolean(KEY_V611BANDAUTOWIDTH611, false)
+        set(value) = prefs.edit().putBoolean(KEY_V611BANDAUTOWIDTH611, value).apply()
+
+    var v611barAutoScroll611: Boolean
+        get() = prefs.getBoolean(KEY_V611BARAUTOSCROLL611, false)
+        set(value) = prefs.edit().putBoolean(KEY_V611BARAUTOSCROLL611, value).apply()
+
+    var v611beaconAutoPing611: Boolean
+        get() = prefs.getBoolean(KEY_V611BEACONAUTOPING611, false)
+        set(value) = prefs.edit().putBoolean(KEY_V611BEACONAUTOPING611, value).apply()
+
+    var v611beamAutoForm611: Boolean
+        get() = prefs.getBoolean(KEY_V611BEAMAUTOFORM611, false)
+        set(value) = prefs.edit().putBoolean(KEY_V611BEAMAUTOFORM611, value).apply()
+
+    var v611beforeAutoHook611: Boolean
+        get() = prefs.getBoolean(KEY_V611BEFOREAUTOHOOK611, false)
+        set(value) = prefs.edit().putBoolean(KEY_V611BEFOREAUTOHOOK611, value).apply()
+
+    var v611beginAutoInit611: Boolean
+        get() = prefs.getBoolean(KEY_V611BEGINAUTOINIT611, false)
+        set(value) = prefs.edit().putBoolean(KEY_V611BEGINAUTOINIT611, value).apply()
+
+    var v611behaviorAutoTrack611: Boolean
+        get() = prefs.getBoolean(KEY_V611BEHAVIORAUTOTRACK611, false)
+        set(value) = prefs.edit().putBoolean(KEY_V611BEHAVIORAUTOTRACK611, value).apply()
+
+    var v612arrowAutoNavigate612: Boolean
+        get() = prefs.getBoolean(KEY_V612ARROWAUTONAVIGATE612, false)
+        set(value) = prefs.edit().putBoolean(KEY_V612ARROWAUTONAVIGATE612, value).apply()
+
+    var v612assetAutoLoad612: Boolean
+        get() = prefs.getBoolean(KEY_V612ASSETAUTOLOAD612, false)
+        set(value) = prefs.edit().putBoolean(KEY_V612ASSETAUTOLOAD612, value).apply()
+
+    var v612assignAutoTask612: Boolean
+        get() = prefs.getBoolean(KEY_V612ASSIGNAUTOTASK612, false)
+        set(value) = prefs.edit().putBoolean(KEY_V612ASSIGNAUTOTASK612, value).apply()
+
+    var v612asyncAutoExecute612: Boolean
+        get() = prefs.getBoolean(KEY_V612ASYNCAUTOEXECUTE612, false)
+        set(value) = prefs.edit().putBoolean(KEY_V612ASYNCAUTOEXECUTE612, value).apply()
+
+    var v612attackAutoBlock612: Boolean
+        get() = prefs.getBoolean(KEY_V612ATTACKAUTOBLOCK612, false)
+        set(value) = prefs.edit().putBoolean(KEY_V612ATTACKAUTOBLOCK612, value).apply()
+
+    var v612avatarAutoUpdate612: Boolean
+        get() = prefs.getBoolean(KEY_V612AVATARAUTOUPDATE612, false)
+        set(value) = prefs.edit().putBoolean(KEY_V612AVATARAUTOUPDATE612, value).apply()
+
+    var v612backAutoSave612: Boolean
+        get() = prefs.getBoolean(KEY_V612BACKAUTOSAVE612, false)
+        set(value) = prefs.edit().putBoolean(KEY_V612BACKAUTOSAVE612, value).apply()
+
+    var v612balanceAutoLoad612: Int
+        get() = prefs.getInt(KEY_V612BALANCEAUTOLOAD612, 0)
+        set(value) = prefs.edit().putInt(KEY_V612BALANCEAUTOLOAD612, value).apply()
+
+    var v612bandAutoWidth612: Boolean
+        get() = prefs.getBoolean(KEY_V612BANDAUTOWIDTH612, false)
+        set(value) = prefs.edit().putBoolean(KEY_V612BANDAUTOWIDTH612, value).apply()
+
+    var v612barAutoScroll612: Boolean
+        get() = prefs.getBoolean(KEY_V612BARAUTOSCROLL612, false)
+        set(value) = prefs.edit().putBoolean(KEY_V612BARAUTOSCROLL612, value).apply()
+
+    var v612beaconAutoPing612: Boolean
+        get() = prefs.getBoolean(KEY_V612BEACONAUTOPING612, false)
+        set(value) = prefs.edit().putBoolean(KEY_V612BEACONAUTOPING612, value).apply()
+
+    var v612beamAutoForm612: Boolean
+        get() = prefs.getBoolean(KEY_V612BEAMAUTOFORM612, false)
+        set(value) = prefs.edit().putBoolean(KEY_V612BEAMAUTOFORM612, value).apply()
+
+    var v612beforeAutoHook612: Boolean
+        get() = prefs.getBoolean(KEY_V612BEFOREAUTOHOOK612, false)
+        set(value) = prefs.edit().putBoolean(KEY_V612BEFOREAUTOHOOK612, value).apply()
+
+    var v612beginAutoInit612: Boolean
+        get() = prefs.getBoolean(KEY_V612BEGINAUTOINIT612, false)
+        set(value) = prefs.edit().putBoolean(KEY_V612BEGINAUTOINIT612, value).apply()
+
+    var v612behaviorAutoTrack612: Boolean
+        get() = prefs.getBoolean(KEY_V612BEHAVIORAUTOTRACK612, false)
+        set(value) = prefs.edit().putBoolean(KEY_V612BEHAVIORAUTOTRACK612, value).apply()
+
+    var v613arrowAutoNavigate613: Boolean
+        get() = prefs.getBoolean(KEY_V613ARROWAUTONAVIGATE613, false)
+        set(value) = prefs.edit().putBoolean(KEY_V613ARROWAUTONAVIGATE613, value).apply()
+
+    var v613assetAutoLoad613: Boolean
+        get() = prefs.getBoolean(KEY_V613ASSETAUTOLOAD613, false)
+        set(value) = prefs.edit().putBoolean(KEY_V613ASSETAUTOLOAD613, value).apply()
+
+    var v613assignAutoTask613: Boolean
+        get() = prefs.getBoolean(KEY_V613ASSIGNAUTOTASK613, false)
+        set(value) = prefs.edit().putBoolean(KEY_V613ASSIGNAUTOTASK613, value).apply()
+
+    var v613asyncAutoExecute613: Boolean
+        get() = prefs.getBoolean(KEY_V613ASYNCAUTOEXECUTE613, false)
+        set(value) = prefs.edit().putBoolean(KEY_V613ASYNCAUTOEXECUTE613, value).apply()
+
+    var v613attackAutoBlock613: Boolean
+        get() = prefs.getBoolean(KEY_V613ATTACKAUTOBLOCK613, false)
+        set(value) = prefs.edit().putBoolean(KEY_V613ATTACKAUTOBLOCK613, value).apply()
+
+    var v613avatarAutoUpdate613: Boolean
+        get() = prefs.getBoolean(KEY_V613AVATARAUTOUPDATE613, false)
+        set(value) = prefs.edit().putBoolean(KEY_V613AVATARAUTOUPDATE613, value).apply()
+
+    var v613backAutoSave613: Boolean
+        get() = prefs.getBoolean(KEY_V613BACKAUTOSAVE613, false)
+        set(value) = prefs.edit().putBoolean(KEY_V613BACKAUTOSAVE613, value).apply()
+
+    var v613balanceAutoLoad613: Int
+        get() = prefs.getInt(KEY_V613BALANCEAUTOLOAD613, 0)
+        set(value) = prefs.edit().putInt(KEY_V613BALANCEAUTOLOAD613, value).apply()
+
+    var v613bandAutoWidth613: Boolean
+        get() = prefs.getBoolean(KEY_V613BANDAUTOWIDTH613, false)
+        set(value) = prefs.edit().putBoolean(KEY_V613BANDAUTOWIDTH613, value).apply()
+
+    var v613barAutoScroll613: Boolean
+        get() = prefs.getBoolean(KEY_V613BARAUTOSCROLL613, false)
+        set(value) = prefs.edit().putBoolean(KEY_V613BARAUTOSCROLL613, value).apply()
+
+    var v613beaconAutoPing613: Boolean
+        get() = prefs.getBoolean(KEY_V613BEACONAUTOPING613, false)
+        set(value) = prefs.edit().putBoolean(KEY_V613BEACONAUTOPING613, value).apply()
+
+    var v613beamAutoForm613: Boolean
+        get() = prefs.getBoolean(KEY_V613BEAMAUTOFORM613, false)
+        set(value) = prefs.edit().putBoolean(KEY_V613BEAMAUTOFORM613, value).apply()
+
+    var v613beforeAutoHook613: Boolean
+        get() = prefs.getBoolean(KEY_V613BEFOREAUTOHOOK613, false)
+        set(value) = prefs.edit().putBoolean(KEY_V613BEFOREAUTOHOOK613, value).apply()
+
+    var v613beginAutoInit613: Boolean
+        get() = prefs.getBoolean(KEY_V613BEGINAUTOINIT613, false)
+        set(value) = prefs.edit().putBoolean(KEY_V613BEGINAUTOINIT613, value).apply()
+
+    var v613behaviorAutoTrack613: Boolean
+        get() = prefs.getBoolean(KEY_V613BEHAVIORAUTOTRACK613, false)
+        set(value) = prefs.edit().putBoolean(KEY_V613BEHAVIORAUTOTRACK613, value).apply()
+
+    var v614arrowAutoNavigate614: Boolean
+        get() = prefs.getBoolean(KEY_V614ARROWAUTONAVIGATE614, false)
+        set(value) = prefs.edit().putBoolean(KEY_V614ARROWAUTONAVIGATE614, value).apply()
+
+    var v614assetAutoLoad614: Boolean
+        get() = prefs.getBoolean(KEY_V614ASSETAUTOLOAD614, false)
+        set(value) = prefs.edit().putBoolean(KEY_V614ASSETAUTOLOAD614, value).apply()
+
+    var v614assignAutoTask614: Boolean
+        get() = prefs.getBoolean(KEY_V614ASSIGNAUTOTASK614, false)
+        set(value) = prefs.edit().putBoolean(KEY_V614ASSIGNAUTOTASK614, value).apply()
+
+    var v614asyncAutoExecute614: Boolean
+        get() = prefs.getBoolean(KEY_V614ASYNCAUTOEXECUTE614, false)
+        set(value) = prefs.edit().putBoolean(KEY_V614ASYNCAUTOEXECUTE614, value).apply()
+
+    var v614attackAutoBlock614: Boolean
+        get() = prefs.getBoolean(KEY_V614ATTACKAUTOBLOCK614, false)
+        set(value) = prefs.edit().putBoolean(KEY_V614ATTACKAUTOBLOCK614, value).apply()
+
+    var v614avatarAutoUpdate614: Boolean
+        get() = prefs.getBoolean(KEY_V614AVATARAUTOUPDATE614, false)
+        set(value) = prefs.edit().putBoolean(KEY_V614AVATARAUTOUPDATE614, value).apply()
+
+    var v614backAutoSave614: Boolean
+        get() = prefs.getBoolean(KEY_V614BACKAUTOSAVE614, false)
+        set(value) = prefs.edit().putBoolean(KEY_V614BACKAUTOSAVE614, value).apply()
+
+    var v614balanceAutoLoad614: Int
+        get() = prefs.getInt(KEY_V614BALANCEAUTOLOAD614, 0)
+        set(value) = prefs.edit().putInt(KEY_V614BALANCEAUTOLOAD614, value).apply()
+
+    var v614bandAutoWidth614: Boolean
+        get() = prefs.getBoolean(KEY_V614BANDAUTOWIDTH614, false)
+        set(value) = prefs.edit().putBoolean(KEY_V614BANDAUTOWIDTH614, value).apply()
+
+    var v614barAutoScroll614: Boolean
+        get() = prefs.getBoolean(KEY_V614BARAUTOSCROLL614, false)
+        set(value) = prefs.edit().putBoolean(KEY_V614BARAUTOSCROLL614, value).apply()
+
+    var v614beaconAutoPing614: Boolean
+        get() = prefs.getBoolean(KEY_V614BEACONAUTOPING614, false)
+        set(value) = prefs.edit().putBoolean(KEY_V614BEACONAUTOPING614, value).apply()
+
+    var v614beamAutoForm614: Boolean
+        get() = prefs.getBoolean(KEY_V614BEAMAUTOFORM614, false)
+        set(value) = prefs.edit().putBoolean(KEY_V614BEAMAUTOFORM614, value).apply()
+
+    var v614beforeAutoHook614: Boolean
+        get() = prefs.getBoolean(KEY_V614BEFOREAUTOHOOK614, false)
+        set(value) = prefs.edit().putBoolean(KEY_V614BEFOREAUTOHOOK614, value).apply()
+
+    var v614beginAutoInit614: Boolean
+        get() = prefs.getBoolean(KEY_V614BEGINAUTOINIT614, false)
+        set(value) = prefs.edit().putBoolean(KEY_V614BEGINAUTOINIT614, value).apply()
+
+    var v614behaviorAutoTrack614: Boolean
+        get() = prefs.getBoolean(KEY_V614BEHAVIORAUTOTRACK614, false)
+        set(value) = prefs.edit().putBoolean(KEY_V614BEHAVIORAUTOTRACK614, value).apply()
+
+    var v615arrowAutoNavigate615: Boolean
+        get() = prefs.getBoolean(KEY_V615ARROWAUTONAVIGATE615, false)
+        set(value) = prefs.edit().putBoolean(KEY_V615ARROWAUTONAVIGATE615, value).apply()
+
+    var v615assetAutoLoad615: Boolean
+        get() = prefs.getBoolean(KEY_V615ASSETAUTOLOAD615, false)
+        set(value) = prefs.edit().putBoolean(KEY_V615ASSETAUTOLOAD615, value).apply()
+
+    var v615assignAutoTask615: Boolean
+        get() = prefs.getBoolean(KEY_V615ASSIGNAUTOTASK615, false)
+        set(value) = prefs.edit().putBoolean(KEY_V615ASSIGNAUTOTASK615, value).apply()
+
+    var v615asyncAutoExecute615: Boolean
+        get() = prefs.getBoolean(KEY_V615ASYNCAUTOEXECUTE615, false)
+        set(value) = prefs.edit().putBoolean(KEY_V615ASYNCAUTOEXECUTE615, value).apply()
+
+    var v615attackAutoBlock615: Boolean
+        get() = prefs.getBoolean(KEY_V615ATTACKAUTOBLOCK615, false)
+        set(value) = prefs.edit().putBoolean(KEY_V615ATTACKAUTOBLOCK615, value).apply()
+
+    var v615avatarAutoUpdate615: Boolean
+        get() = prefs.getBoolean(KEY_V615AVATARAUTOUPDATE615, false)
+        set(value) = prefs.edit().putBoolean(KEY_V615AVATARAUTOUPDATE615, value).apply()
+
+    var v615backAutoSave615: Boolean
+        get() = prefs.getBoolean(KEY_V615BACKAUTOSAVE615, false)
+        set(value) = prefs.edit().putBoolean(KEY_V615BACKAUTOSAVE615, value).apply()
+
+    var v615balanceAutoLoad615: Int
+        get() = prefs.getInt(KEY_V615BALANCEAUTOLOAD615, 0)
+        set(value) = prefs.edit().putInt(KEY_V615BALANCEAUTOLOAD615, value).apply()
+
+    var v615bandAutoWidth615: Boolean
+        get() = prefs.getBoolean(KEY_V615BANDAUTOWIDTH615, false)
+        set(value) = prefs.edit().putBoolean(KEY_V615BANDAUTOWIDTH615, value).apply()
+
+    var v615barAutoScroll615: Boolean
+        get() = prefs.getBoolean(KEY_V615BARAUTOSCROLL615, false)
+        set(value) = prefs.edit().putBoolean(KEY_V615BARAUTOSCROLL615, value).apply()
+
+    var v615beaconAutoPing615: Boolean
+        get() = prefs.getBoolean(KEY_V615BEACONAUTOPING615, false)
+        set(value) = prefs.edit().putBoolean(KEY_V615BEACONAUTOPING615, value).apply()
+
+    var v615beamAutoForm615: Boolean
+        get() = prefs.getBoolean(KEY_V615BEAMAUTOFORM615, false)
+        set(value) = prefs.edit().putBoolean(KEY_V615BEAMAUTOFORM615, value).apply()
+
+    var v615beforeAutoHook615: Boolean
+        get() = prefs.getBoolean(KEY_V615BEFOREAUTOHOOK615, false)
+        set(value) = prefs.edit().putBoolean(KEY_V615BEFOREAUTOHOOK615, value).apply()
+
+    var v615beginAutoInit615: Boolean
+        get() = prefs.getBoolean(KEY_V615BEGINAUTOINIT615, false)
+        set(value) = prefs.edit().putBoolean(KEY_V615BEGINAUTOINIT615, value).apply()
+
+    var v615behaviorAutoTrack615: Boolean
+        get() = prefs.getBoolean(KEY_V615BEHAVIORAUTOTRACK615, false)
+        set(value) = prefs.edit().putBoolean(KEY_V615BEHAVIORAUTOTRACK615, value).apply()
+
+    var v616arrowAutoNavigate616: Boolean
+        get() = prefs.getBoolean(KEY_V616ARROWAUTONAVIGATE616, false)
+        set(value) = prefs.edit().putBoolean(KEY_V616ARROWAUTONAVIGATE616, value).apply()
+
+    var v616assetAutoLoad616: Boolean
+        get() = prefs.getBoolean(KEY_V616ASSETAUTOLOAD616, false)
+        set(value) = prefs.edit().putBoolean(KEY_V616ASSETAUTOLOAD616, value).apply()
+
+    var v616assignAutoTask616: Boolean
+        get() = prefs.getBoolean(KEY_V616ASSIGNAUTOTASK616, false)
+        set(value) = prefs.edit().putBoolean(KEY_V616ASSIGNAUTOTASK616, value).apply()
+
+    var v616asyncAutoExecute616: Boolean
+        get() = prefs.getBoolean(KEY_V616ASYNCAUTOEXECUTE616, false)
+        set(value) = prefs.edit().putBoolean(KEY_V616ASYNCAUTOEXECUTE616, value).apply()
+
+    var v616attackAutoBlock616: Boolean
+        get() = prefs.getBoolean(KEY_V616ATTACKAUTOBLOCK616, false)
+        set(value) = prefs.edit().putBoolean(KEY_V616ATTACKAUTOBLOCK616, value).apply()
+
+    var v616avatarAutoUpdate616: Boolean
+        get() = prefs.getBoolean(KEY_V616AVATARAUTOUPDATE616, false)
+        set(value) = prefs.edit().putBoolean(KEY_V616AVATARAUTOUPDATE616, value).apply()
+
+    var v616backAutoSave616: Boolean
+        get() = prefs.getBoolean(KEY_V616BACKAUTOSAVE616, false)
+        set(value) = prefs.edit().putBoolean(KEY_V616BACKAUTOSAVE616, value).apply()
+
+    var v616balanceAutoLoad616: Int
+        get() = prefs.getInt(KEY_V616BALANCEAUTOLOAD616, 0)
+        set(value) = prefs.edit().putInt(KEY_V616BALANCEAUTOLOAD616, value).apply()
+
+    var v616bandAutoWidth616: Boolean
+        get() = prefs.getBoolean(KEY_V616BANDAUTOWIDTH616, false)
+        set(value) = prefs.edit().putBoolean(KEY_V616BANDAUTOWIDTH616, value).apply()
+
+    var v616barAutoScroll616: Boolean
+        get() = prefs.getBoolean(KEY_V616BARAUTOSCROLL616, false)
+        set(value) = prefs.edit().putBoolean(KEY_V616BARAUTOSCROLL616, value).apply()
+
+    var v616beaconAutoPing616: Boolean
+        get() = prefs.getBoolean(KEY_V616BEACONAUTOPING616, false)
+        set(value) = prefs.edit().putBoolean(KEY_V616BEACONAUTOPING616, value).apply()
+
+    var v616beamAutoForm616: Boolean
+        get() = prefs.getBoolean(KEY_V616BEAMAUTOFORM616, false)
+        set(value) = prefs.edit().putBoolean(KEY_V616BEAMAUTOFORM616, value).apply()
+
+    var v616beforeAutoHook616: Boolean
+        get() = prefs.getBoolean(KEY_V616BEFOREAUTOHOOK616, false)
+        set(value) = prefs.edit().putBoolean(KEY_V616BEFOREAUTOHOOK616, value).apply()
+
+    var v616beginAutoInit616: Boolean
+        get() = prefs.getBoolean(KEY_V616BEGINAUTOINIT616, false)
+        set(value) = prefs.edit().putBoolean(KEY_V616BEGINAUTOINIT616, value).apply()
+
+    var v616behaviorAutoTrack616: Boolean
+        get() = prefs.getBoolean(KEY_V616BEHAVIORAUTOTRACK616, false)
+        set(value) = prefs.edit().putBoolean(KEY_V616BEHAVIORAUTOTRACK616, value).apply()
+
+    var v617arrowAutoNavigate617: Boolean
+        get() = prefs.getBoolean(KEY_V617ARROWAUTONAVIGATE617, false)
+        set(value) = prefs.edit().putBoolean(KEY_V617ARROWAUTONAVIGATE617, value).apply()
+
+    var v617assetAutoLoad617: Boolean
+        get() = prefs.getBoolean(KEY_V617ASSETAUTOLOAD617, false)
+        set(value) = prefs.edit().putBoolean(KEY_V617ASSETAUTOLOAD617, value).apply()
+
+    var v617assignAutoTask617: Boolean
+        get() = prefs.getBoolean(KEY_V617ASSIGNAUTOTASK617, false)
+        set(value) = prefs.edit().putBoolean(KEY_V617ASSIGNAUTOTASK617, value).apply()
+
+    var v617asyncAutoExecute617: Boolean
+        get() = prefs.getBoolean(KEY_V617ASYNCAUTOEXECUTE617, false)
+        set(value) = prefs.edit().putBoolean(KEY_V617ASYNCAUTOEXECUTE617, value).apply()
+
+    var v617attackAutoBlock617: Boolean
+        get() = prefs.getBoolean(KEY_V617ATTACKAUTOBLOCK617, false)
+        set(value) = prefs.edit().putBoolean(KEY_V617ATTACKAUTOBLOCK617, value).apply()
+
+    var v617avatarAutoUpdate617: Boolean
+        get() = prefs.getBoolean(KEY_V617AVATARAUTOUPDATE617, false)
+        set(value) = prefs.edit().putBoolean(KEY_V617AVATARAUTOUPDATE617, value).apply()
+
+    var v617backAutoSave617: Boolean
+        get() = prefs.getBoolean(KEY_V617BACKAUTOSAVE617, false)
+        set(value) = prefs.edit().putBoolean(KEY_V617BACKAUTOSAVE617, value).apply()
+
+    var v617balanceAutoLoad617: Int
+        get() = prefs.getInt(KEY_V617BALANCEAUTOLOAD617, 0)
+        set(value) = prefs.edit().putInt(KEY_V617BALANCEAUTOLOAD617, value).apply()
+
+    var v617bandAutoWidth617: Boolean
+        get() = prefs.getBoolean(KEY_V617BANDAUTOWIDTH617, false)
+        set(value) = prefs.edit().putBoolean(KEY_V617BANDAUTOWIDTH617, value).apply()
+
+    var v617barAutoScroll617: Boolean
+        get() = prefs.getBoolean(KEY_V617BARAUTOSCROLL617, false)
+        set(value) = prefs.edit().putBoolean(KEY_V617BARAUTOSCROLL617, value).apply()
+
+    var v617beaconAutoPing617: Boolean
+        get() = prefs.getBoolean(KEY_V617BEACONAUTOPING617, false)
+        set(value) = prefs.edit().putBoolean(KEY_V617BEACONAUTOPING617, value).apply()
+
+    var v617beamAutoForm617: Boolean
+        get() = prefs.getBoolean(KEY_V617BEAMAUTOFORM617, false)
+        set(value) = prefs.edit().putBoolean(KEY_V617BEAMAUTOFORM617, value).apply()
+
+    var v617beforeAutoHook617: Boolean
+        get() = prefs.getBoolean(KEY_V617BEFOREAUTOHOOK617, false)
+        set(value) = prefs.edit().putBoolean(KEY_V617BEFOREAUTOHOOK617, value).apply()
+
+    var v617beginAutoInit617: Boolean
+        get() = prefs.getBoolean(KEY_V617BEGINAUTOINIT617, false)
+        set(value) = prefs.edit().putBoolean(KEY_V617BEGINAUTOINIT617, value).apply()
+
+    var v617behaviorAutoTrack617: Boolean
+        get() = prefs.getBoolean(KEY_V617BEHAVIORAUTOTRACK617, false)
+        set(value) = prefs.edit().putBoolean(KEY_V617BEHAVIORAUTOTRACK617, value).apply()
+
+    var v618arrowAutoNavigate618: Boolean
+        get() = prefs.getBoolean(KEY_V618ARROWAUTONAVIGATE618, false)
+        set(value) = prefs.edit().putBoolean(KEY_V618ARROWAUTONAVIGATE618, value).apply()
+
+    var v618assetAutoLoad618: Boolean
+        get() = prefs.getBoolean(KEY_V618ASSETAUTOLOAD618, false)
+        set(value) = prefs.edit().putBoolean(KEY_V618ASSETAUTOLOAD618, value).apply()
+
+    var v618assignAutoTask618: Boolean
+        get() = prefs.getBoolean(KEY_V618ASSIGNAUTOTASK618, false)
+        set(value) = prefs.edit().putBoolean(KEY_V618ASSIGNAUTOTASK618, value).apply()
+
+    var v618asyncAutoExecute618: Boolean
+        get() = prefs.getBoolean(KEY_V618ASYNCAUTOEXECUTE618, false)
+        set(value) = prefs.edit().putBoolean(KEY_V618ASYNCAUTOEXECUTE618, value).apply()
+
+    var v618attackAutoBlock618: Boolean
+        get() = prefs.getBoolean(KEY_V618ATTACKAUTOBLOCK618, false)
+        set(value) = prefs.edit().putBoolean(KEY_V618ATTACKAUTOBLOCK618, value).apply()
+
+    var v618avatarAutoUpdate618: Boolean
+        get() = prefs.getBoolean(KEY_V618AVATARAUTOUPDATE618, false)
+        set(value) = prefs.edit().putBoolean(KEY_V618AVATARAUTOUPDATE618, value).apply()
+
+    var v618backAutoSave618: Boolean
+        get() = prefs.getBoolean(KEY_V618BACKAUTOSAVE618, false)
+        set(value) = prefs.edit().putBoolean(KEY_V618BACKAUTOSAVE618, value).apply()
+
+    var v618balanceAutoLoad618: Int
+        get() = prefs.getInt(KEY_V618BALANCEAUTOLOAD618, 0)
+        set(value) = prefs.edit().putInt(KEY_V618BALANCEAUTOLOAD618, value).apply()
+
+    var v618bandAutoWidth618: Boolean
+        get() = prefs.getBoolean(KEY_V618BANDAUTOWIDTH618, false)
+        set(value) = prefs.edit().putBoolean(KEY_V618BANDAUTOWIDTH618, value).apply()
+
+    var v618barAutoScroll618: Boolean
+        get() = prefs.getBoolean(KEY_V618BARAUTOSCROLL618, false)
+        set(value) = prefs.edit().putBoolean(KEY_V618BARAUTOSCROLL618, value).apply()
+
+    var v618beaconAutoPing618: Boolean
+        get() = prefs.getBoolean(KEY_V618BEACONAUTOPING618, false)
+        set(value) = prefs.edit().putBoolean(KEY_V618BEACONAUTOPING618, value).apply()
+
+    var v618beamAutoForm618: Boolean
+        get() = prefs.getBoolean(KEY_V618BEAMAUTOFORM618, false)
+        set(value) = prefs.edit().putBoolean(KEY_V618BEAMAUTOFORM618, value).apply()
+
+    var v618beforeAutoHook618: Boolean
+        get() = prefs.getBoolean(KEY_V618BEFOREAUTOHOOK618, false)
+        set(value) = prefs.edit().putBoolean(KEY_V618BEFOREAUTOHOOK618, value).apply()
+
+    var v618beginAutoInit618: Boolean
+        get() = prefs.getBoolean(KEY_V618BEGINAUTOINIT618, false)
+        set(value) = prefs.edit().putBoolean(KEY_V618BEGINAUTOINIT618, value).apply()
+
+    var v618behaviorAutoTrack618: Boolean
+        get() = prefs.getBoolean(KEY_V618BEHAVIORAUTOTRACK618, false)
+        set(value) = prefs.edit().putBoolean(KEY_V618BEHAVIORAUTOTRACK618, value).apply()
+
+    var v619arrowAutoNavigate619: Boolean
+        get() = prefs.getBoolean(KEY_V619ARROWAUTONAVIGATE619, false)
+        set(value) = prefs.edit().putBoolean(KEY_V619ARROWAUTONAVIGATE619, value).apply()
+
+    var v619assetAutoLoad619: Boolean
+        get() = prefs.getBoolean(KEY_V619ASSETAUTOLOAD619, false)
+        set(value) = prefs.edit().putBoolean(KEY_V619ASSETAUTOLOAD619, value).apply()
+
+    var v619assignAutoTask619: Boolean
+        get() = prefs.getBoolean(KEY_V619ASSIGNAUTOTASK619, false)
+        set(value) = prefs.edit().putBoolean(KEY_V619ASSIGNAUTOTASK619, value).apply()
+
+    var v619asyncAutoExecute619: Boolean
+        get() = prefs.getBoolean(KEY_V619ASYNCAUTOEXECUTE619, false)
+        set(value) = prefs.edit().putBoolean(KEY_V619ASYNCAUTOEXECUTE619, value).apply()
+
+    var v619attackAutoBlock619: Boolean
+        get() = prefs.getBoolean(KEY_V619ATTACKAUTOBLOCK619, false)
+        set(value) = prefs.edit().putBoolean(KEY_V619ATTACKAUTOBLOCK619, value).apply()
+
+    var v619avatarAutoUpdate619: Boolean
+        get() = prefs.getBoolean(KEY_V619AVATARAUTOUPDATE619, false)
+        set(value) = prefs.edit().putBoolean(KEY_V619AVATARAUTOUPDATE619, value).apply()
+
+    var v619backAutoSave619: Boolean
+        get() = prefs.getBoolean(KEY_V619BACKAUTOSAVE619, false)
+        set(value) = prefs.edit().putBoolean(KEY_V619BACKAUTOSAVE619, value).apply()
+
+    var v619balanceAutoLoad619: Int
+        get() = prefs.getInt(KEY_V619BALANCEAUTOLOAD619, 0)
+        set(value) = prefs.edit().putInt(KEY_V619BALANCEAUTOLOAD619, value).apply()
+
+    var v619bandAutoWidth619: Boolean
+        get() = prefs.getBoolean(KEY_V619BANDAUTOWIDTH619, false)
+        set(value) = prefs.edit().putBoolean(KEY_V619BANDAUTOWIDTH619, value).apply()
+
+    var v619barAutoScroll619: Boolean
+        get() = prefs.getBoolean(KEY_V619BARAUTOSCROLL619, false)
+        set(value) = prefs.edit().putBoolean(KEY_V619BARAUTOSCROLL619, value).apply()
+
+    var v619beaconAutoPing619: Boolean
+        get() = prefs.getBoolean(KEY_V619BEACONAUTOPING619, false)
+        set(value) = prefs.edit().putBoolean(KEY_V619BEACONAUTOPING619, value).apply()
+
+    var v619beamAutoForm619: Boolean
+        get() = prefs.getBoolean(KEY_V619BEAMAUTOFORM619, false)
+        set(value) = prefs.edit().putBoolean(KEY_V619BEAMAUTOFORM619, value).apply()
+
+    var v619beforeAutoHook619: Boolean
+        get() = prefs.getBoolean(KEY_V619BEFOREAUTOHOOK619, false)
+        set(value) = prefs.edit().putBoolean(KEY_V619BEFOREAUTOHOOK619, value).apply()
+
+    var v619beginAutoInit619: Boolean
+        get() = prefs.getBoolean(KEY_V619BEGINAUTOINIT619, false)
+        set(value) = prefs.edit().putBoolean(KEY_V619BEGINAUTOINIT619, value).apply()
+
+    var v619behaviorAutoTrack619: Boolean
+        get() = prefs.getBoolean(KEY_V619BEHAVIORAUTOTRACK619, false)
+        set(value) = prefs.edit().putBoolean(KEY_V619BEHAVIORAUTOTRACK619, value).apply()
+
+    var v620arrowAutoNavigate620: Boolean
+        get() = prefs.getBoolean(KEY_V620ARROWAUTONAVIGATE620, false)
+        set(value) = prefs.edit().putBoolean(KEY_V620ARROWAUTONAVIGATE620, value).apply()
+
+    var v620assetAutoLoad620: Boolean
+        get() = prefs.getBoolean(KEY_V620ASSETAUTOLOAD620, false)
+        set(value) = prefs.edit().putBoolean(KEY_V620ASSETAUTOLOAD620, value).apply()
+
+    var v620assignAutoTask620: Boolean
+        get() = prefs.getBoolean(KEY_V620ASSIGNAUTOTASK620, false)
+        set(value) = prefs.edit().putBoolean(KEY_V620ASSIGNAUTOTASK620, value).apply()
+
+    var v620asyncAutoExecute620: Boolean
+        get() = prefs.getBoolean(KEY_V620ASYNCAUTOEXECUTE620, false)
+        set(value) = prefs.edit().putBoolean(KEY_V620ASYNCAUTOEXECUTE620, value).apply()
+
+    var v620attackAutoBlock620: Boolean
+        get() = prefs.getBoolean(KEY_V620ATTACKAUTOBLOCK620, false)
+        set(value) = prefs.edit().putBoolean(KEY_V620ATTACKAUTOBLOCK620, value).apply()
+
+    var v620avatarAutoUpdate620: Boolean
+        get() = prefs.getBoolean(KEY_V620AVATARAUTOUPDATE620, false)
+        set(value) = prefs.edit().putBoolean(KEY_V620AVATARAUTOUPDATE620, value).apply()
+
+    var v620backAutoSave620: Boolean
+        get() = prefs.getBoolean(KEY_V620BACKAUTOSAVE620, false)
+        set(value) = prefs.edit().putBoolean(KEY_V620BACKAUTOSAVE620, value).apply()
+
+    var v620balanceAutoLoad620: Int
+        get() = prefs.getInt(KEY_V620BALANCEAUTOLOAD620, 0)
+        set(value) = prefs.edit().putInt(KEY_V620BALANCEAUTOLOAD620, value).apply()
+
+    var v620bandAutoWidth620: Boolean
+        get() = prefs.getBoolean(KEY_V620BANDAUTOWIDTH620, false)
+        set(value) = prefs.edit().putBoolean(KEY_V620BANDAUTOWIDTH620, value).apply()
+
+    var v620barAutoScroll620: Boolean
+        get() = prefs.getBoolean(KEY_V620BARAUTOSCROLL620, false)
+        set(value) = prefs.edit().putBoolean(KEY_V620BARAUTOSCROLL620, value).apply()
+
+    var v620beaconAutoPing620: Boolean
+        get() = prefs.getBoolean(KEY_V620BEACONAUTOPING620, false)
+        set(value) = prefs.edit().putBoolean(KEY_V620BEACONAUTOPING620, value).apply()
+
+    var v620beamAutoForm620: Boolean
+        get() = prefs.getBoolean(KEY_V620BEAMAUTOFORM620, false)
+        set(value) = prefs.edit().putBoolean(KEY_V620BEAMAUTOFORM620, value).apply()
+
+    var v620beforeAutoHook620: Boolean
+        get() = prefs.getBoolean(KEY_V620BEFOREAUTOHOOK620, false)
+        set(value) = prefs.edit().putBoolean(KEY_V620BEFOREAUTOHOOK620, value).apply()
+
+    var v620beginAutoInit620: Boolean
+        get() = prefs.getBoolean(KEY_V620BEGINAUTOINIT620, false)
+        set(value) = prefs.edit().putBoolean(KEY_V620BEGINAUTOINIT620, value).apply()
+
+    var v620behaviorAutoTrack620: Boolean
+        get() = prefs.getBoolean(KEY_V620BEHAVIORAUTOTRACK620, false)
+        set(value) = prefs.edit().putBoolean(KEY_V620BEHAVIORAUTOTRACK620, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -55180,5 +55780,155 @@ class AppPrefs(context: Context) {
         const val KEY_V610ARCHIVEAUTOSAVE610 = "v610archiveAutoSave610" // v610 Archive Auto Save610
         const val KEY_V610AREAAUTODETECT610 = "v610areaAutoDetect610" // v610 Area Auto Detect610
         const val KEY_V610ARRAYAUTOSORT610 = "v610arrayAutoSort610" // v610 Array Auto Sort610
+        const val KEY_V611ARROWAUTONAVIGATE611 = "v611arrowAutoNavigate611" // v611 Arrow Auto Navigate611
+        const val KEY_V611ASSETAUTOLOAD611 = "v611assetAutoLoad611" // v611 Asset Auto Load611
+        const val KEY_V611ASSIGNAUTOTASK611 = "v611assignAutoTask611" // v611 Assign Auto Task611
+        const val KEY_V611ASYNCAUTOEXECUTE611 = "v611asyncAutoExecute611" // v611 Async Auto Execute611
+        const val KEY_V611ATTACKAUTOBLOCK611 = "v611attackAutoBlock611" // v611 Attack Auto Block611
+        const val KEY_V611AVATARAUTOUPDATE611 = "v611avatarAutoUpdate611" // v611 Avatar Auto Update611
+        const val KEY_V611BACKAUTOSAVE611 = "v611backAutoSave611" // v611 Back Auto Save611
+        const val KEY_V611BALANCEAUTOLOAD611 = "v611balanceAutoLoad611" // v611 Balance Auto Load611
+        const val KEY_V611BANDAUTOWIDTH611 = "v611bandAutoWidth611" // v611 Band Auto Width611
+        const val KEY_V611BARAUTOSCROLL611 = "v611barAutoScroll611" // v611 Bar Auto Scroll611
+        const val KEY_V611BEACONAUTOPING611 = "v611beaconAutoPing611" // v611 Beacon Auto Ping611
+        const val KEY_V611BEAMAUTOFORM611 = "v611beamAutoForm611" // v611 Beam Auto Form611
+        const val KEY_V611BEFOREAUTOHOOK611 = "v611beforeAutoHook611" // v611 Before Auto Hook611
+        const val KEY_V611BEGINAUTOINIT611 = "v611beginAutoInit611" // v611 Begin Auto Init611
+        const val KEY_V611BEHAVIORAUTOTRACK611 = "v611behaviorAutoTrack611" // v611 Behavior Auto Track611
+        const val KEY_V612ARROWAUTONAVIGATE612 = "v612arrowAutoNavigate612" // v612 Arrow Auto Navigate612
+        const val KEY_V612ASSETAUTOLOAD612 = "v612assetAutoLoad612" // v612 Asset Auto Load612
+        const val KEY_V612ASSIGNAUTOTASK612 = "v612assignAutoTask612" // v612 Assign Auto Task612
+        const val KEY_V612ASYNCAUTOEXECUTE612 = "v612asyncAutoExecute612" // v612 Async Auto Execute612
+        const val KEY_V612ATTACKAUTOBLOCK612 = "v612attackAutoBlock612" // v612 Attack Auto Block612
+        const val KEY_V612AVATARAUTOUPDATE612 = "v612avatarAutoUpdate612" // v612 Avatar Auto Update612
+        const val KEY_V612BACKAUTOSAVE612 = "v612backAutoSave612" // v612 Back Auto Save612
+        const val KEY_V612BALANCEAUTOLOAD612 = "v612balanceAutoLoad612" // v612 Balance Auto Load612
+        const val KEY_V612BANDAUTOWIDTH612 = "v612bandAutoWidth612" // v612 Band Auto Width612
+        const val KEY_V612BARAUTOSCROLL612 = "v612barAutoScroll612" // v612 Bar Auto Scroll612
+        const val KEY_V612BEACONAUTOPING612 = "v612beaconAutoPing612" // v612 Beacon Auto Ping612
+        const val KEY_V612BEAMAUTOFORM612 = "v612beamAutoForm612" // v612 Beam Auto Form612
+        const val KEY_V612BEFOREAUTOHOOK612 = "v612beforeAutoHook612" // v612 Before Auto Hook612
+        const val KEY_V612BEGINAUTOINIT612 = "v612beginAutoInit612" // v612 Begin Auto Init612
+        const val KEY_V612BEHAVIORAUTOTRACK612 = "v612behaviorAutoTrack612" // v612 Behavior Auto Track612
+        const val KEY_V613ARROWAUTONAVIGATE613 = "v613arrowAutoNavigate613" // v613 Arrow Auto Navigate613
+        const val KEY_V613ASSETAUTOLOAD613 = "v613assetAutoLoad613" // v613 Asset Auto Load613
+        const val KEY_V613ASSIGNAUTOTASK613 = "v613assignAutoTask613" // v613 Assign Auto Task613
+        const val KEY_V613ASYNCAUTOEXECUTE613 = "v613asyncAutoExecute613" // v613 Async Auto Execute613
+        const val KEY_V613ATTACKAUTOBLOCK613 = "v613attackAutoBlock613" // v613 Attack Auto Block613
+        const val KEY_V613AVATARAUTOUPDATE613 = "v613avatarAutoUpdate613" // v613 Avatar Auto Update613
+        const val KEY_V613BACKAUTOSAVE613 = "v613backAutoSave613" // v613 Back Auto Save613
+        const val KEY_V613BALANCEAUTOLOAD613 = "v613balanceAutoLoad613" // v613 Balance Auto Load613
+        const val KEY_V613BANDAUTOWIDTH613 = "v613bandAutoWidth613" // v613 Band Auto Width613
+        const val KEY_V613BARAUTOSCROLL613 = "v613barAutoScroll613" // v613 Bar Auto Scroll613
+        const val KEY_V613BEACONAUTOPING613 = "v613beaconAutoPing613" // v613 Beacon Auto Ping613
+        const val KEY_V613BEAMAUTOFORM613 = "v613beamAutoForm613" // v613 Beam Auto Form613
+        const val KEY_V613BEFOREAUTOHOOK613 = "v613beforeAutoHook613" // v613 Before Auto Hook613
+        const val KEY_V613BEGINAUTOINIT613 = "v613beginAutoInit613" // v613 Begin Auto Init613
+        const val KEY_V613BEHAVIORAUTOTRACK613 = "v613behaviorAutoTrack613" // v613 Behavior Auto Track613
+        const val KEY_V614ARROWAUTONAVIGATE614 = "v614arrowAutoNavigate614" // v614 Arrow Auto Navigate614
+        const val KEY_V614ASSETAUTOLOAD614 = "v614assetAutoLoad614" // v614 Asset Auto Load614
+        const val KEY_V614ASSIGNAUTOTASK614 = "v614assignAutoTask614" // v614 Assign Auto Task614
+        const val KEY_V614ASYNCAUTOEXECUTE614 = "v614asyncAutoExecute614" // v614 Async Auto Execute614
+        const val KEY_V614ATTACKAUTOBLOCK614 = "v614attackAutoBlock614" // v614 Attack Auto Block614
+        const val KEY_V614AVATARAUTOUPDATE614 = "v614avatarAutoUpdate614" // v614 Avatar Auto Update614
+        const val KEY_V614BACKAUTOSAVE614 = "v614backAutoSave614" // v614 Back Auto Save614
+        const val KEY_V614BALANCEAUTOLOAD614 = "v614balanceAutoLoad614" // v614 Balance Auto Load614
+        const val KEY_V614BANDAUTOWIDTH614 = "v614bandAutoWidth614" // v614 Band Auto Width614
+        const val KEY_V614BARAUTOSCROLL614 = "v614barAutoScroll614" // v614 Bar Auto Scroll614
+        const val KEY_V614BEACONAUTOPING614 = "v614beaconAutoPing614" // v614 Beacon Auto Ping614
+        const val KEY_V614BEAMAUTOFORM614 = "v614beamAutoForm614" // v614 Beam Auto Form614
+        const val KEY_V614BEFOREAUTOHOOK614 = "v614beforeAutoHook614" // v614 Before Auto Hook614
+        const val KEY_V614BEGINAUTOINIT614 = "v614beginAutoInit614" // v614 Begin Auto Init614
+        const val KEY_V614BEHAVIORAUTOTRACK614 = "v614behaviorAutoTrack614" // v614 Behavior Auto Track614
+        const val KEY_V615ARROWAUTONAVIGATE615 = "v615arrowAutoNavigate615" // v615 Arrow Auto Navigate615
+        const val KEY_V615ASSETAUTOLOAD615 = "v615assetAutoLoad615" // v615 Asset Auto Load615
+        const val KEY_V615ASSIGNAUTOTASK615 = "v615assignAutoTask615" // v615 Assign Auto Task615
+        const val KEY_V615ASYNCAUTOEXECUTE615 = "v615asyncAutoExecute615" // v615 Async Auto Execute615
+        const val KEY_V615ATTACKAUTOBLOCK615 = "v615attackAutoBlock615" // v615 Attack Auto Block615
+        const val KEY_V615AVATARAUTOUPDATE615 = "v615avatarAutoUpdate615" // v615 Avatar Auto Update615
+        const val KEY_V615BACKAUTOSAVE615 = "v615backAutoSave615" // v615 Back Auto Save615
+        const val KEY_V615BALANCEAUTOLOAD615 = "v615balanceAutoLoad615" // v615 Balance Auto Load615
+        const val KEY_V615BANDAUTOWIDTH615 = "v615bandAutoWidth615" // v615 Band Auto Width615
+        const val KEY_V615BARAUTOSCROLL615 = "v615barAutoScroll615" // v615 Bar Auto Scroll615
+        const val KEY_V615BEACONAUTOPING615 = "v615beaconAutoPing615" // v615 Beacon Auto Ping615
+        const val KEY_V615BEAMAUTOFORM615 = "v615beamAutoForm615" // v615 Beam Auto Form615
+        const val KEY_V615BEFOREAUTOHOOK615 = "v615beforeAutoHook615" // v615 Before Auto Hook615
+        const val KEY_V615BEGINAUTOINIT615 = "v615beginAutoInit615" // v615 Begin Auto Init615
+        const val KEY_V615BEHAVIORAUTOTRACK615 = "v615behaviorAutoTrack615" // v615 Behavior Auto Track615
+        const val KEY_V616ARROWAUTONAVIGATE616 = "v616arrowAutoNavigate616" // v616 Arrow Auto Navigate616
+        const val KEY_V616ASSETAUTOLOAD616 = "v616assetAutoLoad616" // v616 Asset Auto Load616
+        const val KEY_V616ASSIGNAUTOTASK616 = "v616assignAutoTask616" // v616 Assign Auto Task616
+        const val KEY_V616ASYNCAUTOEXECUTE616 = "v616asyncAutoExecute616" // v616 Async Auto Execute616
+        const val KEY_V616ATTACKAUTOBLOCK616 = "v616attackAutoBlock616" // v616 Attack Auto Block616
+        const val KEY_V616AVATARAUTOUPDATE616 = "v616avatarAutoUpdate616" // v616 Avatar Auto Update616
+        const val KEY_V616BACKAUTOSAVE616 = "v616backAutoSave616" // v616 Back Auto Save616
+        const val KEY_V616BALANCEAUTOLOAD616 = "v616balanceAutoLoad616" // v616 Balance Auto Load616
+        const val KEY_V616BANDAUTOWIDTH616 = "v616bandAutoWidth616" // v616 Band Auto Width616
+        const val KEY_V616BARAUTOSCROLL616 = "v616barAutoScroll616" // v616 Bar Auto Scroll616
+        const val KEY_V616BEACONAUTOPING616 = "v616beaconAutoPing616" // v616 Beacon Auto Ping616
+        const val KEY_V616BEAMAUTOFORM616 = "v616beamAutoForm616" // v616 Beam Auto Form616
+        const val KEY_V616BEFOREAUTOHOOK616 = "v616beforeAutoHook616" // v616 Before Auto Hook616
+        const val KEY_V616BEGINAUTOINIT616 = "v616beginAutoInit616" // v616 Begin Auto Init616
+        const val KEY_V616BEHAVIORAUTOTRACK616 = "v616behaviorAutoTrack616" // v616 Behavior Auto Track616
+        const val KEY_V617ARROWAUTONAVIGATE617 = "v617arrowAutoNavigate617" // v617 Arrow Auto Navigate617
+        const val KEY_V617ASSETAUTOLOAD617 = "v617assetAutoLoad617" // v617 Asset Auto Load617
+        const val KEY_V617ASSIGNAUTOTASK617 = "v617assignAutoTask617" // v617 Assign Auto Task617
+        const val KEY_V617ASYNCAUTOEXECUTE617 = "v617asyncAutoExecute617" // v617 Async Auto Execute617
+        const val KEY_V617ATTACKAUTOBLOCK617 = "v617attackAutoBlock617" // v617 Attack Auto Block617
+        const val KEY_V617AVATARAUTOUPDATE617 = "v617avatarAutoUpdate617" // v617 Avatar Auto Update617
+        const val KEY_V617BACKAUTOSAVE617 = "v617backAutoSave617" // v617 Back Auto Save617
+        const val KEY_V617BALANCEAUTOLOAD617 = "v617balanceAutoLoad617" // v617 Balance Auto Load617
+        const val KEY_V617BANDAUTOWIDTH617 = "v617bandAutoWidth617" // v617 Band Auto Width617
+        const val KEY_V617BARAUTOSCROLL617 = "v617barAutoScroll617" // v617 Bar Auto Scroll617
+        const val KEY_V617BEACONAUTOPING617 = "v617beaconAutoPing617" // v617 Beacon Auto Ping617
+        const val KEY_V617BEAMAUTOFORM617 = "v617beamAutoForm617" // v617 Beam Auto Form617
+        const val KEY_V617BEFOREAUTOHOOK617 = "v617beforeAutoHook617" // v617 Before Auto Hook617
+        const val KEY_V617BEGINAUTOINIT617 = "v617beginAutoInit617" // v617 Begin Auto Init617
+        const val KEY_V617BEHAVIORAUTOTRACK617 = "v617behaviorAutoTrack617" // v617 Behavior Auto Track617
+        const val KEY_V618ARROWAUTONAVIGATE618 = "v618arrowAutoNavigate618" // v618 Arrow Auto Navigate618
+        const val KEY_V618ASSETAUTOLOAD618 = "v618assetAutoLoad618" // v618 Asset Auto Load618
+        const val KEY_V618ASSIGNAUTOTASK618 = "v618assignAutoTask618" // v618 Assign Auto Task618
+        const val KEY_V618ASYNCAUTOEXECUTE618 = "v618asyncAutoExecute618" // v618 Async Auto Execute618
+        const val KEY_V618ATTACKAUTOBLOCK618 = "v618attackAutoBlock618" // v618 Attack Auto Block618
+        const val KEY_V618AVATARAUTOUPDATE618 = "v618avatarAutoUpdate618" // v618 Avatar Auto Update618
+        const val KEY_V618BACKAUTOSAVE618 = "v618backAutoSave618" // v618 Back Auto Save618
+        const val KEY_V618BALANCEAUTOLOAD618 = "v618balanceAutoLoad618" // v618 Balance Auto Load618
+        const val KEY_V618BANDAUTOWIDTH618 = "v618bandAutoWidth618" // v618 Band Auto Width618
+        const val KEY_V618BARAUTOSCROLL618 = "v618barAutoScroll618" // v618 Bar Auto Scroll618
+        const val KEY_V618BEACONAUTOPING618 = "v618beaconAutoPing618" // v618 Beacon Auto Ping618
+        const val KEY_V618BEAMAUTOFORM618 = "v618beamAutoForm618" // v618 Beam Auto Form618
+        const val KEY_V618BEFOREAUTOHOOK618 = "v618beforeAutoHook618" // v618 Before Auto Hook618
+        const val KEY_V618BEGINAUTOINIT618 = "v618beginAutoInit618" // v618 Begin Auto Init618
+        const val KEY_V618BEHAVIORAUTOTRACK618 = "v618behaviorAutoTrack618" // v618 Behavior Auto Track618
+        const val KEY_V619ARROWAUTONAVIGATE619 = "v619arrowAutoNavigate619" // v619 Arrow Auto Navigate619
+        const val KEY_V619ASSETAUTOLOAD619 = "v619assetAutoLoad619" // v619 Asset Auto Load619
+        const val KEY_V619ASSIGNAUTOTASK619 = "v619assignAutoTask619" // v619 Assign Auto Task619
+        const val KEY_V619ASYNCAUTOEXECUTE619 = "v619asyncAutoExecute619" // v619 Async Auto Execute619
+        const val KEY_V619ATTACKAUTOBLOCK619 = "v619attackAutoBlock619" // v619 Attack Auto Block619
+        const val KEY_V619AVATARAUTOUPDATE619 = "v619avatarAutoUpdate619" // v619 Avatar Auto Update619
+        const val KEY_V619BACKAUTOSAVE619 = "v619backAutoSave619" // v619 Back Auto Save619
+        const val KEY_V619BALANCEAUTOLOAD619 = "v619balanceAutoLoad619" // v619 Balance Auto Load619
+        const val KEY_V619BANDAUTOWIDTH619 = "v619bandAutoWidth619" // v619 Band Auto Width619
+        const val KEY_V619BARAUTOSCROLL619 = "v619barAutoScroll619" // v619 Bar Auto Scroll619
+        const val KEY_V619BEACONAUTOPING619 = "v619beaconAutoPing619" // v619 Beacon Auto Ping619
+        const val KEY_V619BEAMAUTOFORM619 = "v619beamAutoForm619" // v619 Beam Auto Form619
+        const val KEY_V619BEFOREAUTOHOOK619 = "v619beforeAutoHook619" // v619 Before Auto Hook619
+        const val KEY_V619BEGINAUTOINIT619 = "v619beginAutoInit619" // v619 Begin Auto Init619
+        const val KEY_V619BEHAVIORAUTOTRACK619 = "v619behaviorAutoTrack619" // v619 Behavior Auto Track619
+        const val KEY_V620ARROWAUTONAVIGATE620 = "v620arrowAutoNavigate620" // v620 Arrow Auto Navigate620
+        const val KEY_V620ASSETAUTOLOAD620 = "v620assetAutoLoad620" // v620 Asset Auto Load620
+        const val KEY_V620ASSIGNAUTOTASK620 = "v620assignAutoTask620" // v620 Assign Auto Task620
+        const val KEY_V620ASYNCAUTOEXECUTE620 = "v620asyncAutoExecute620" // v620 Async Auto Execute620
+        const val KEY_V620ATTACKAUTOBLOCK620 = "v620attackAutoBlock620" // v620 Attack Auto Block620
+        const val KEY_V620AVATARAUTOUPDATE620 = "v620avatarAutoUpdate620" // v620 Avatar Auto Update620
+        const val KEY_V620BACKAUTOSAVE620 = "v620backAutoSave620" // v620 Back Auto Save620
+        const val KEY_V620BALANCEAUTOLOAD620 = "v620balanceAutoLoad620" // v620 Balance Auto Load620
+        const val KEY_V620BANDAUTOWIDTH620 = "v620bandAutoWidth620" // v620 Band Auto Width620
+        const val KEY_V620BARAUTOSCROLL620 = "v620barAutoScroll620" // v620 Bar Auto Scroll620
+        const val KEY_V620BEACONAUTOPING620 = "v620beaconAutoPing620" // v620 Beacon Auto Ping620
+        const val KEY_V620BEAMAUTOFORM620 = "v620beamAutoForm620" // v620 Beam Auto Form620
+        const val KEY_V620BEFOREAUTOHOOK620 = "v620beforeAutoHook620" // v620 Before Auto Hook620
+        const val KEY_V620BEGINAUTOINIT620 = "v620beginAutoInit620" // v620 Begin Auto Init620
+        const val KEY_V620BEHAVIORAUTOTRACK620 = "v620behaviorAutoTrack620" // v620 Behavior Auto Track620
     }
 }
