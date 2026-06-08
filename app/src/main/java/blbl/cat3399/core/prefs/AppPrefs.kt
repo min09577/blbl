@@ -32648,6 +32648,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V430FIXCORRUPTAUTO430, false)
         set(value) = prefs.edit().putBoolean(KEY_V430FIXCORRUPTAUTO430, value).apply()
 
+    var v431flashScreenOnNotify431: Boolean
+        get() = prefs.getBoolean(KEY_V431FLASHSCREENONNOTIFY431, false)
+        set(value) = prefs.edit().putBoolean(KEY_V431FLASHSCREENONNOTIFY431, value).apply()
+
+    var v431flexLayoutEnabled431: Boolean
+        get() = prefs.getBoolean(KEY_V431FLEXLAYOUTENABLED431, false)
+        set(value) = prefs.edit().putBoolean(KEY_V431FLEXLAYOUTENABLED431, value).apply()
+
+    var v431flipGestureEnabled431: Boolean
+        get() = prefs.getBoolean(KEY_V431FLIPGESTUREENABLED431, false)
+        set(value) = prefs.edit().putBoolean(KEY_V431FLIPGESTUREENABLED431, value).apply()
+
+    var v431flowAutoRedirect431: Boolean
+        get() = prefs.getBoolean(KEY_V431FLOWAUTOREDIRECT431, false)
+        set(value) = prefs.edit().putBoolean(KEY_V431FLOWAUTOREDIRECT431, value).apply()
+
+    var v431flyModeSpeed431: Int
+        get() = prefs.getInt(KEY_V431FLYMODESPEED431, 0)
+        set(value) = prefs.edit().putInt(KEY_V431FLYMODESPEED431, value).apply()
+
+    var v431focusAutoEnhance431: Boolean
+        get() = prefs.getBoolean(KEY_V431FOCUSAUTOENHANCE431, false)
+        set(value) = prefs.edit().putBoolean(KEY_V431FOCUSAUTOENHANCE431, value).apply()
+
+    var v431followAutoSubscribe431: Boolean
+        get() = prefs.getBoolean(KEY_V431FOLLOWAUTOSUBSCRIBE431, false)
+        set(value) = prefs.edit().putBoolean(KEY_V431FOLLOWAUTOSUBSCRIBE431, value).apply()
+
+    var v431forceDecodeHw431: Boolean
+        get() = prefs.getBoolean(KEY_V431FORCEDECODEHW431, false)
+        set(value) = prefs.edit().putBoolean(KEY_V431FORCEDECODEHW431, value).apply()
+
+    var v431formatAutoConvert431: Boolean
+        get() = prefs.getBoolean(KEY_V431FORMATAUTOCONVERT431, false)
+        set(value) = prefs.edit().putBoolean(KEY_V431FORMATAUTOCONVERT431, value).apply()
+
+    var v431frameInterpolation431: Boolean
+        get() = prefs.getBoolean(KEY_V431FRAMEINTERPOLATION431, false)
+        set(value) = prefs.edit().putBoolean(KEY_V431FRAMEINTERPOLATION431, value).apply()
+
+    var v431freeMemoryAuto431: Boolean
+        get() = prefs.getBoolean(KEY_V431FREEMEMORYAUTO431, false)
+        set(value) = prefs.edit().putBoolean(KEY_V431FREEMEMORYAUTO431, value).apply()
+
+    var v431freezeOnBuffering431: Boolean
+        get() = prefs.getBoolean(KEY_V431FREEZEONBUFFERING431, false)
+        set(value) = prefs.edit().putBoolean(KEY_V431FREEZEONBUFFERING431, value).apply()
+
+    var v431fullscreenAutoRotate431: Boolean
+        get() = prefs.getBoolean(KEY_V431FULLSCREENAUTOROTATE431, false)
+        set(value) = prefs.edit().putBoolean(KEY_V431FULLSCREENAUTOROTATE431, value).apply()
+
+    var v431gainAutoBalance431: Boolean
+        get() = prefs.getBoolean(KEY_V431GAINAUTOBALANCE431, false)
+        set(value) = prefs.edit().putBoolean(KEY_V431GAINAUTOBALANCE431, value).apply()
+
+    var v431galleryAutoLayout431: Int
+        get() = prefs.getInt(KEY_V431GALLERYAUTOLAYOUT431, 0)
+        set(value) = prefs.edit().putInt(KEY_V431GALLERYAUTOLAYOUT431, value).apply()
+
+    var v432flashScreenOnNotify432: Boolean
+        get() = prefs.getBoolean(KEY_V432FLASHSCREENONNOTIFY432, false)
+        set(value) = prefs.edit().putBoolean(KEY_V432FLASHSCREENONNOTIFY432, value).apply()
+
+    var v432flexLayoutEnabled432: Boolean
+        get() = prefs.getBoolean(KEY_V432FLEXLAYOUTENABLED432, false)
+        set(value) = prefs.edit().putBoolean(KEY_V432FLEXLAYOUTENABLED432, value).apply()
+
+    var v432flipGestureEnabled432: Boolean
+        get() = prefs.getBoolean(KEY_V432FLIPGESTUREENABLED432, false)
+        set(value) = prefs.edit().putBoolean(KEY_V432FLIPGESTUREENABLED432, value).apply()
+
+    var v432flowAutoRedirect432: Boolean
+        get() = prefs.getBoolean(KEY_V432FLOWAUTOREDIRECT432, false)
+        set(value) = prefs.edit().putBoolean(KEY_V432FLOWAUTOREDIRECT432, value).apply()
+
+    var v432flyModeSpeed432: Int
+        get() = prefs.getInt(KEY_V432FLYMODESPEED432, 0)
+        set(value) = prefs.edit().putInt(KEY_V432FLYMODESPEED432, value).apply()
+
+    var v432focusAutoEnhance432: Boolean
+        get() = prefs.getBoolean(KEY_V432FOCUSAUTOENHANCE432, false)
+        set(value) = prefs.edit().putBoolean(KEY_V432FOCUSAUTOENHANCE432, value).apply()
+
+    var v432followAutoSubscribe432: Boolean
+        get() = prefs.getBoolean(KEY_V432FOLLOWAUTOSUBSCRIBE432, false)
+        set(value) = prefs.edit().putBoolean(KEY_V432FOLLOWAUTOSUBSCRIBE432, value).apply()
+
+    var v432forceDecodeHw432: Boolean
+        get() = prefs.getBoolean(KEY_V432FORCEDECODEHW432, false)
+        set(value) = prefs.edit().putBoolean(KEY_V432FORCEDECODEHW432, value).apply()
+
+    var v432formatAutoConvert432: Boolean
+        get() = prefs.getBoolean(KEY_V432FORMATAUTOCONVERT432, false)
+        set(value) = prefs.edit().putBoolean(KEY_V432FORMATAUTOCONVERT432, value).apply()
+
+    var v432frameInterpolation432: Boolean
+        get() = prefs.getBoolean(KEY_V432FRAMEINTERPOLATION432, false)
+        set(value) = prefs.edit().putBoolean(KEY_V432FRAMEINTERPOLATION432, value).apply()
+
+    var v432freeMemoryAuto432: Boolean
+        get() = prefs.getBoolean(KEY_V432FREEMEMORYAUTO432, false)
+        set(value) = prefs.edit().putBoolean(KEY_V432FREEMEMORYAUTO432, value).apply()
+
+    var v432freezeOnBuffering432: Boolean
+        get() = prefs.getBoolean(KEY_V432FREEZEONBUFFERING432, false)
+        set(value) = prefs.edit().putBoolean(KEY_V432FREEZEONBUFFERING432, value).apply()
+
+    var v432fullscreenAutoRotate432: Boolean
+        get() = prefs.getBoolean(KEY_V432FULLSCREENAUTOROTATE432, false)
+        set(value) = prefs.edit().putBoolean(KEY_V432FULLSCREENAUTOROTATE432, value).apply()
+
+    var v432gainAutoBalance432: Boolean
+        get() = prefs.getBoolean(KEY_V432GAINAUTOBALANCE432, false)
+        set(value) = prefs.edit().putBoolean(KEY_V432GAINAUTOBALANCE432, value).apply()
+
+    var v432galleryAutoLayout432: Int
+        get() = prefs.getInt(KEY_V432GALLERYAUTOLAYOUT432, 0)
+        set(value) = prefs.edit().putInt(KEY_V432GALLERYAUTOLAYOUT432, value).apply()
+
+    var v433flashScreenOnNotify433: Boolean
+        get() = prefs.getBoolean(KEY_V433FLASHSCREENONNOTIFY433, false)
+        set(value) = prefs.edit().putBoolean(KEY_V433FLASHSCREENONNOTIFY433, value).apply()
+
+    var v433flexLayoutEnabled433: Boolean
+        get() = prefs.getBoolean(KEY_V433FLEXLAYOUTENABLED433, false)
+        set(value) = prefs.edit().putBoolean(KEY_V433FLEXLAYOUTENABLED433, value).apply()
+
+    var v433flipGestureEnabled433: Boolean
+        get() = prefs.getBoolean(KEY_V433FLIPGESTUREENABLED433, false)
+        set(value) = prefs.edit().putBoolean(KEY_V433FLIPGESTUREENABLED433, value).apply()
+
+    var v433flowAutoRedirect433: Boolean
+        get() = prefs.getBoolean(KEY_V433FLOWAUTOREDIRECT433, false)
+        set(value) = prefs.edit().putBoolean(KEY_V433FLOWAUTOREDIRECT433, value).apply()
+
+    var v433flyModeSpeed433: Int
+        get() = prefs.getInt(KEY_V433FLYMODESPEED433, 0)
+        set(value) = prefs.edit().putInt(KEY_V433FLYMODESPEED433, value).apply()
+
+    var v433focusAutoEnhance433: Boolean
+        get() = prefs.getBoolean(KEY_V433FOCUSAUTOENHANCE433, false)
+        set(value) = prefs.edit().putBoolean(KEY_V433FOCUSAUTOENHANCE433, value).apply()
+
+    var v433followAutoSubscribe433: Boolean
+        get() = prefs.getBoolean(KEY_V433FOLLOWAUTOSUBSCRIBE433, false)
+        set(value) = prefs.edit().putBoolean(KEY_V433FOLLOWAUTOSUBSCRIBE433, value).apply()
+
+    var v433forceDecodeHw433: Boolean
+        get() = prefs.getBoolean(KEY_V433FORCEDECODEHW433, false)
+        set(value) = prefs.edit().putBoolean(KEY_V433FORCEDECODEHW433, value).apply()
+
+    var v433formatAutoConvert433: Boolean
+        get() = prefs.getBoolean(KEY_V433FORMATAUTOCONVERT433, false)
+        set(value) = prefs.edit().putBoolean(KEY_V433FORMATAUTOCONVERT433, value).apply()
+
+    var v433frameInterpolation433: Boolean
+        get() = prefs.getBoolean(KEY_V433FRAMEINTERPOLATION433, false)
+        set(value) = prefs.edit().putBoolean(KEY_V433FRAMEINTERPOLATION433, value).apply()
+
+    var v433freeMemoryAuto433: Boolean
+        get() = prefs.getBoolean(KEY_V433FREEMEMORYAUTO433, false)
+        set(value) = prefs.edit().putBoolean(KEY_V433FREEMEMORYAUTO433, value).apply()
+
+    var v433freezeOnBuffering433: Boolean
+        get() = prefs.getBoolean(KEY_V433FREEZEONBUFFERING433, false)
+        set(value) = prefs.edit().putBoolean(KEY_V433FREEZEONBUFFERING433, value).apply()
+
+    var v433fullscreenAutoRotate433: Boolean
+        get() = prefs.getBoolean(KEY_V433FULLSCREENAUTOROTATE433, false)
+        set(value) = prefs.edit().putBoolean(KEY_V433FULLSCREENAUTOROTATE433, value).apply()
+
+    var v433gainAutoBalance433: Boolean
+        get() = prefs.getBoolean(KEY_V433GAINAUTOBALANCE433, false)
+        set(value) = prefs.edit().putBoolean(KEY_V433GAINAUTOBALANCE433, value).apply()
+
+    var v433galleryAutoLayout433: Int
+        get() = prefs.getInt(KEY_V433GALLERYAUTOLAYOUT433, 0)
+        set(value) = prefs.edit().putInt(KEY_V433GALLERYAUTOLAYOUT433, value).apply()
+
+    var v434flashScreenOnNotify434: Boolean
+        get() = prefs.getBoolean(KEY_V434FLASHSCREENONNOTIFY434, false)
+        set(value) = prefs.edit().putBoolean(KEY_V434FLASHSCREENONNOTIFY434, value).apply()
+
+    var v434flexLayoutEnabled434: Boolean
+        get() = prefs.getBoolean(KEY_V434FLEXLAYOUTENABLED434, false)
+        set(value) = prefs.edit().putBoolean(KEY_V434FLEXLAYOUTENABLED434, value).apply()
+
+    var v434flipGestureEnabled434: Boolean
+        get() = prefs.getBoolean(KEY_V434FLIPGESTUREENABLED434, false)
+        set(value) = prefs.edit().putBoolean(KEY_V434FLIPGESTUREENABLED434, value).apply()
+
+    var v434flowAutoRedirect434: Boolean
+        get() = prefs.getBoolean(KEY_V434FLOWAUTOREDIRECT434, false)
+        set(value) = prefs.edit().putBoolean(KEY_V434FLOWAUTOREDIRECT434, value).apply()
+
+    var v434flyModeSpeed434: Int
+        get() = prefs.getInt(KEY_V434FLYMODESPEED434, 0)
+        set(value) = prefs.edit().putInt(KEY_V434FLYMODESPEED434, value).apply()
+
+    var v434focusAutoEnhance434: Boolean
+        get() = prefs.getBoolean(KEY_V434FOCUSAUTOENHANCE434, false)
+        set(value) = prefs.edit().putBoolean(KEY_V434FOCUSAUTOENHANCE434, value).apply()
+
+    var v434followAutoSubscribe434: Boolean
+        get() = prefs.getBoolean(KEY_V434FOLLOWAUTOSUBSCRIBE434, false)
+        set(value) = prefs.edit().putBoolean(KEY_V434FOLLOWAUTOSUBSCRIBE434, value).apply()
+
+    var v434forceDecodeHw434: Boolean
+        get() = prefs.getBoolean(KEY_V434FORCEDECODEHW434, false)
+        set(value) = prefs.edit().putBoolean(KEY_V434FORCEDECODEHW434, value).apply()
+
+    var v434formatAutoConvert434: Boolean
+        get() = prefs.getBoolean(KEY_V434FORMATAUTOCONVERT434, false)
+        set(value) = prefs.edit().putBoolean(KEY_V434FORMATAUTOCONVERT434, value).apply()
+
+    var v434frameInterpolation434: Boolean
+        get() = prefs.getBoolean(KEY_V434FRAMEINTERPOLATION434, false)
+        set(value) = prefs.edit().putBoolean(KEY_V434FRAMEINTERPOLATION434, value).apply()
+
+    var v434freeMemoryAuto434: Boolean
+        get() = prefs.getBoolean(KEY_V434FREEMEMORYAUTO434, false)
+        set(value) = prefs.edit().putBoolean(KEY_V434FREEMEMORYAUTO434, value).apply()
+
+    var v434freezeOnBuffering434: Boolean
+        get() = prefs.getBoolean(KEY_V434FREEZEONBUFFERING434, false)
+        set(value) = prefs.edit().putBoolean(KEY_V434FREEZEONBUFFERING434, value).apply()
+
+    var v434fullscreenAutoRotate434: Boolean
+        get() = prefs.getBoolean(KEY_V434FULLSCREENAUTOROTATE434, false)
+        set(value) = prefs.edit().putBoolean(KEY_V434FULLSCREENAUTOROTATE434, value).apply()
+
+    var v434gainAutoBalance434: Boolean
+        get() = prefs.getBoolean(KEY_V434GAINAUTOBALANCE434, false)
+        set(value) = prefs.edit().putBoolean(KEY_V434GAINAUTOBALANCE434, value).apply()
+
+    var v434galleryAutoLayout434: Int
+        get() = prefs.getInt(KEY_V434GALLERYAUTOLAYOUT434, 0)
+        set(value) = prefs.edit().putInt(KEY_V434GALLERYAUTOLAYOUT434, value).apply()
+
+    var v435flashScreenOnNotify435: Boolean
+        get() = prefs.getBoolean(KEY_V435FLASHSCREENONNOTIFY435, false)
+        set(value) = prefs.edit().putBoolean(KEY_V435FLASHSCREENONNOTIFY435, value).apply()
+
+    var v435flexLayoutEnabled435: Boolean
+        get() = prefs.getBoolean(KEY_V435FLEXLAYOUTENABLED435, false)
+        set(value) = prefs.edit().putBoolean(KEY_V435FLEXLAYOUTENABLED435, value).apply()
+
+    var v435flipGestureEnabled435: Boolean
+        get() = prefs.getBoolean(KEY_V435FLIPGESTUREENABLED435, false)
+        set(value) = prefs.edit().putBoolean(KEY_V435FLIPGESTUREENABLED435, value).apply()
+
+    var v435flowAutoRedirect435: Boolean
+        get() = prefs.getBoolean(KEY_V435FLOWAUTOREDIRECT435, false)
+        set(value) = prefs.edit().putBoolean(KEY_V435FLOWAUTOREDIRECT435, value).apply()
+
+    var v435flyModeSpeed435: Int
+        get() = prefs.getInt(KEY_V435FLYMODESPEED435, 0)
+        set(value) = prefs.edit().putInt(KEY_V435FLYMODESPEED435, value).apply()
+
+    var v435focusAutoEnhance435: Boolean
+        get() = prefs.getBoolean(KEY_V435FOCUSAUTOENHANCE435, false)
+        set(value) = prefs.edit().putBoolean(KEY_V435FOCUSAUTOENHANCE435, value).apply()
+
+    var v435followAutoSubscribe435: Boolean
+        get() = prefs.getBoolean(KEY_V435FOLLOWAUTOSUBSCRIBE435, false)
+        set(value) = prefs.edit().putBoolean(KEY_V435FOLLOWAUTOSUBSCRIBE435, value).apply()
+
+    var v435forceDecodeHw435: Boolean
+        get() = prefs.getBoolean(KEY_V435FORCEDECODEHW435, false)
+        set(value) = prefs.edit().putBoolean(KEY_V435FORCEDECODEHW435, value).apply()
+
+    var v435formatAutoConvert435: Boolean
+        get() = prefs.getBoolean(KEY_V435FORMATAUTOCONVERT435, false)
+        set(value) = prefs.edit().putBoolean(KEY_V435FORMATAUTOCONVERT435, value).apply()
+
+    var v435frameInterpolation435: Boolean
+        get() = prefs.getBoolean(KEY_V435FRAMEINTERPOLATION435, false)
+        set(value) = prefs.edit().putBoolean(KEY_V435FRAMEINTERPOLATION435, value).apply()
+
+    var v435freeMemoryAuto435: Boolean
+        get() = prefs.getBoolean(KEY_V435FREEMEMORYAUTO435, false)
+        set(value) = prefs.edit().putBoolean(KEY_V435FREEMEMORYAUTO435, value).apply()
+
+    var v435freezeOnBuffering435: Boolean
+        get() = prefs.getBoolean(KEY_V435FREEZEONBUFFERING435, false)
+        set(value) = prefs.edit().putBoolean(KEY_V435FREEZEONBUFFERING435, value).apply()
+
+    var v435fullscreenAutoRotate435: Boolean
+        get() = prefs.getBoolean(KEY_V435FULLSCREENAUTOROTATE435, false)
+        set(value) = prefs.edit().putBoolean(KEY_V435FULLSCREENAUTOROTATE435, value).apply()
+
+    var v435gainAutoBalance435: Boolean
+        get() = prefs.getBoolean(KEY_V435GAINAUTOBALANCE435, false)
+        set(value) = prefs.edit().putBoolean(KEY_V435GAINAUTOBALANCE435, value).apply()
+
+    var v435galleryAutoLayout435: Int
+        get() = prefs.getInt(KEY_V435GALLERYAUTOLAYOUT435, 0)
+        set(value) = prefs.edit().putInt(KEY_V435GALLERYAUTOLAYOUT435, value).apply()
+
+    var v436flashScreenOnNotify436: Boolean
+        get() = prefs.getBoolean(KEY_V436FLASHSCREENONNOTIFY436, false)
+        set(value) = prefs.edit().putBoolean(KEY_V436FLASHSCREENONNOTIFY436, value).apply()
+
+    var v436flexLayoutEnabled436: Boolean
+        get() = prefs.getBoolean(KEY_V436FLEXLAYOUTENABLED436, false)
+        set(value) = prefs.edit().putBoolean(KEY_V436FLEXLAYOUTENABLED436, value).apply()
+
+    var v436flipGestureEnabled436: Boolean
+        get() = prefs.getBoolean(KEY_V436FLIPGESTUREENABLED436, false)
+        set(value) = prefs.edit().putBoolean(KEY_V436FLIPGESTUREENABLED436, value).apply()
+
+    var v436flowAutoRedirect436: Boolean
+        get() = prefs.getBoolean(KEY_V436FLOWAUTOREDIRECT436, false)
+        set(value) = prefs.edit().putBoolean(KEY_V436FLOWAUTOREDIRECT436, value).apply()
+
+    var v436flyModeSpeed436: Int
+        get() = prefs.getInt(KEY_V436FLYMODESPEED436, 0)
+        set(value) = prefs.edit().putInt(KEY_V436FLYMODESPEED436, value).apply()
+
+    var v436focusAutoEnhance436: Boolean
+        get() = prefs.getBoolean(KEY_V436FOCUSAUTOENHANCE436, false)
+        set(value) = prefs.edit().putBoolean(KEY_V436FOCUSAUTOENHANCE436, value).apply()
+
+    var v436followAutoSubscribe436: Boolean
+        get() = prefs.getBoolean(KEY_V436FOLLOWAUTOSUBSCRIBE436, false)
+        set(value) = prefs.edit().putBoolean(KEY_V436FOLLOWAUTOSUBSCRIBE436, value).apply()
+
+    var v436forceDecodeHw436: Boolean
+        get() = prefs.getBoolean(KEY_V436FORCEDECODEHW436, false)
+        set(value) = prefs.edit().putBoolean(KEY_V436FORCEDECODEHW436, value).apply()
+
+    var v436formatAutoConvert436: Boolean
+        get() = prefs.getBoolean(KEY_V436FORMATAUTOCONVERT436, false)
+        set(value) = prefs.edit().putBoolean(KEY_V436FORMATAUTOCONVERT436, value).apply()
+
+    var v436frameInterpolation436: Boolean
+        get() = prefs.getBoolean(KEY_V436FRAMEINTERPOLATION436, false)
+        set(value) = prefs.edit().putBoolean(KEY_V436FRAMEINTERPOLATION436, value).apply()
+
+    var v436freeMemoryAuto436: Boolean
+        get() = prefs.getBoolean(KEY_V436FREEMEMORYAUTO436, false)
+        set(value) = prefs.edit().putBoolean(KEY_V436FREEMEMORYAUTO436, value).apply()
+
+    var v436freezeOnBuffering436: Boolean
+        get() = prefs.getBoolean(KEY_V436FREEZEONBUFFERING436, false)
+        set(value) = prefs.edit().putBoolean(KEY_V436FREEZEONBUFFERING436, value).apply()
+
+    var v436fullscreenAutoRotate436: Boolean
+        get() = prefs.getBoolean(KEY_V436FULLSCREENAUTOROTATE436, false)
+        set(value) = prefs.edit().putBoolean(KEY_V436FULLSCREENAUTOROTATE436, value).apply()
+
+    var v436gainAutoBalance436: Boolean
+        get() = prefs.getBoolean(KEY_V436GAINAUTOBALANCE436, false)
+        set(value) = prefs.edit().putBoolean(KEY_V436GAINAUTOBALANCE436, value).apply()
+
+    var v436galleryAutoLayout436: Int
+        get() = prefs.getInt(KEY_V436GALLERYAUTOLAYOUT436, 0)
+        set(value) = prefs.edit().putInt(KEY_V436GALLERYAUTOLAYOUT436, value).apply()
+
+    var v437flashScreenOnNotify437: Boolean
+        get() = prefs.getBoolean(KEY_V437FLASHSCREENONNOTIFY437, false)
+        set(value) = prefs.edit().putBoolean(KEY_V437FLASHSCREENONNOTIFY437, value).apply()
+
+    var v437flexLayoutEnabled437: Boolean
+        get() = prefs.getBoolean(KEY_V437FLEXLAYOUTENABLED437, false)
+        set(value) = prefs.edit().putBoolean(KEY_V437FLEXLAYOUTENABLED437, value).apply()
+
+    var v437flipGestureEnabled437: Boolean
+        get() = prefs.getBoolean(KEY_V437FLIPGESTUREENABLED437, false)
+        set(value) = prefs.edit().putBoolean(KEY_V437FLIPGESTUREENABLED437, value).apply()
+
+    var v437flowAutoRedirect437: Boolean
+        get() = prefs.getBoolean(KEY_V437FLOWAUTOREDIRECT437, false)
+        set(value) = prefs.edit().putBoolean(KEY_V437FLOWAUTOREDIRECT437, value).apply()
+
+    var v437flyModeSpeed437: Int
+        get() = prefs.getInt(KEY_V437FLYMODESPEED437, 0)
+        set(value) = prefs.edit().putInt(KEY_V437FLYMODESPEED437, value).apply()
+
+    var v437focusAutoEnhance437: Boolean
+        get() = prefs.getBoolean(KEY_V437FOCUSAUTOENHANCE437, false)
+        set(value) = prefs.edit().putBoolean(KEY_V437FOCUSAUTOENHANCE437, value).apply()
+
+    var v437followAutoSubscribe437: Boolean
+        get() = prefs.getBoolean(KEY_V437FOLLOWAUTOSUBSCRIBE437, false)
+        set(value) = prefs.edit().putBoolean(KEY_V437FOLLOWAUTOSUBSCRIBE437, value).apply()
+
+    var v437forceDecodeHw437: Boolean
+        get() = prefs.getBoolean(KEY_V437FORCEDECODEHW437, false)
+        set(value) = prefs.edit().putBoolean(KEY_V437FORCEDECODEHW437, value).apply()
+
+    var v437formatAutoConvert437: Boolean
+        get() = prefs.getBoolean(KEY_V437FORMATAUTOCONVERT437, false)
+        set(value) = prefs.edit().putBoolean(KEY_V437FORMATAUTOCONVERT437, value).apply()
+
+    var v437frameInterpolation437: Boolean
+        get() = prefs.getBoolean(KEY_V437FRAMEINTERPOLATION437, false)
+        set(value) = prefs.edit().putBoolean(KEY_V437FRAMEINTERPOLATION437, value).apply()
+
+    var v437freeMemoryAuto437: Boolean
+        get() = prefs.getBoolean(KEY_V437FREEMEMORYAUTO437, false)
+        set(value) = prefs.edit().putBoolean(KEY_V437FREEMEMORYAUTO437, value).apply()
+
+    var v437freezeOnBuffering437: Boolean
+        get() = prefs.getBoolean(KEY_V437FREEZEONBUFFERING437, false)
+        set(value) = prefs.edit().putBoolean(KEY_V437FREEZEONBUFFERING437, value).apply()
+
+    var v437fullscreenAutoRotate437: Boolean
+        get() = prefs.getBoolean(KEY_V437FULLSCREENAUTOROTATE437, false)
+        set(value) = prefs.edit().putBoolean(KEY_V437FULLSCREENAUTOROTATE437, value).apply()
+
+    var v437gainAutoBalance437: Boolean
+        get() = prefs.getBoolean(KEY_V437GAINAUTOBALANCE437, false)
+        set(value) = prefs.edit().putBoolean(KEY_V437GAINAUTOBALANCE437, value).apply()
+
+    var v437galleryAutoLayout437: Int
+        get() = prefs.getInt(KEY_V437GALLERYAUTOLAYOUT437, 0)
+        set(value) = prefs.edit().putInt(KEY_V437GALLERYAUTOLAYOUT437, value).apply()
+
+    var v438flashScreenOnNotify438: Boolean
+        get() = prefs.getBoolean(KEY_V438FLASHSCREENONNOTIFY438, false)
+        set(value) = prefs.edit().putBoolean(KEY_V438FLASHSCREENONNOTIFY438, value).apply()
+
+    var v438flexLayoutEnabled438: Boolean
+        get() = prefs.getBoolean(KEY_V438FLEXLAYOUTENABLED438, false)
+        set(value) = prefs.edit().putBoolean(KEY_V438FLEXLAYOUTENABLED438, value).apply()
+
+    var v438flipGestureEnabled438: Boolean
+        get() = prefs.getBoolean(KEY_V438FLIPGESTUREENABLED438, false)
+        set(value) = prefs.edit().putBoolean(KEY_V438FLIPGESTUREENABLED438, value).apply()
+
+    var v438flowAutoRedirect438: Boolean
+        get() = prefs.getBoolean(KEY_V438FLOWAUTOREDIRECT438, false)
+        set(value) = prefs.edit().putBoolean(KEY_V438FLOWAUTOREDIRECT438, value).apply()
+
+    var v438flyModeSpeed438: Int
+        get() = prefs.getInt(KEY_V438FLYMODESPEED438, 0)
+        set(value) = prefs.edit().putInt(KEY_V438FLYMODESPEED438, value).apply()
+
+    var v438focusAutoEnhance438: Boolean
+        get() = prefs.getBoolean(KEY_V438FOCUSAUTOENHANCE438, false)
+        set(value) = prefs.edit().putBoolean(KEY_V438FOCUSAUTOENHANCE438, value).apply()
+
+    var v438followAutoSubscribe438: Boolean
+        get() = prefs.getBoolean(KEY_V438FOLLOWAUTOSUBSCRIBE438, false)
+        set(value) = prefs.edit().putBoolean(KEY_V438FOLLOWAUTOSUBSCRIBE438, value).apply()
+
+    var v438forceDecodeHw438: Boolean
+        get() = prefs.getBoolean(KEY_V438FORCEDECODEHW438, false)
+        set(value) = prefs.edit().putBoolean(KEY_V438FORCEDECODEHW438, value).apply()
+
+    var v438formatAutoConvert438: Boolean
+        get() = prefs.getBoolean(KEY_V438FORMATAUTOCONVERT438, false)
+        set(value) = prefs.edit().putBoolean(KEY_V438FORMATAUTOCONVERT438, value).apply()
+
+    var v438frameInterpolation438: Boolean
+        get() = prefs.getBoolean(KEY_V438FRAMEINTERPOLATION438, false)
+        set(value) = prefs.edit().putBoolean(KEY_V438FRAMEINTERPOLATION438, value).apply()
+
+    var v438freeMemoryAuto438: Boolean
+        get() = prefs.getBoolean(KEY_V438FREEMEMORYAUTO438, false)
+        set(value) = prefs.edit().putBoolean(KEY_V438FREEMEMORYAUTO438, value).apply()
+
+    var v438freezeOnBuffering438: Boolean
+        get() = prefs.getBoolean(KEY_V438FREEZEONBUFFERING438, false)
+        set(value) = prefs.edit().putBoolean(KEY_V438FREEZEONBUFFERING438, value).apply()
+
+    var v438fullscreenAutoRotate438: Boolean
+        get() = prefs.getBoolean(KEY_V438FULLSCREENAUTOROTATE438, false)
+        set(value) = prefs.edit().putBoolean(KEY_V438FULLSCREENAUTOROTATE438, value).apply()
+
+    var v438gainAutoBalance438: Boolean
+        get() = prefs.getBoolean(KEY_V438GAINAUTOBALANCE438, false)
+        set(value) = prefs.edit().putBoolean(KEY_V438GAINAUTOBALANCE438, value).apply()
+
+    var v438galleryAutoLayout438: Int
+        get() = prefs.getInt(KEY_V438GALLERYAUTOLAYOUT438, 0)
+        set(value) = prefs.edit().putInt(KEY_V438GALLERYAUTOLAYOUT438, value).apply()
+
+    var v439flashScreenOnNotify439: Boolean
+        get() = prefs.getBoolean(KEY_V439FLASHSCREENONNOTIFY439, false)
+        set(value) = prefs.edit().putBoolean(KEY_V439FLASHSCREENONNOTIFY439, value).apply()
+
+    var v439flexLayoutEnabled439: Boolean
+        get() = prefs.getBoolean(KEY_V439FLEXLAYOUTENABLED439, false)
+        set(value) = prefs.edit().putBoolean(KEY_V439FLEXLAYOUTENABLED439, value).apply()
+
+    var v439flipGestureEnabled439: Boolean
+        get() = prefs.getBoolean(KEY_V439FLIPGESTUREENABLED439, false)
+        set(value) = prefs.edit().putBoolean(KEY_V439FLIPGESTUREENABLED439, value).apply()
+
+    var v439flowAutoRedirect439: Boolean
+        get() = prefs.getBoolean(KEY_V439FLOWAUTOREDIRECT439, false)
+        set(value) = prefs.edit().putBoolean(KEY_V439FLOWAUTOREDIRECT439, value).apply()
+
+    var v439flyModeSpeed439: Int
+        get() = prefs.getInt(KEY_V439FLYMODESPEED439, 0)
+        set(value) = prefs.edit().putInt(KEY_V439FLYMODESPEED439, value).apply()
+
+    var v439focusAutoEnhance439: Boolean
+        get() = prefs.getBoolean(KEY_V439FOCUSAUTOENHANCE439, false)
+        set(value) = prefs.edit().putBoolean(KEY_V439FOCUSAUTOENHANCE439, value).apply()
+
+    var v439followAutoSubscribe439: Boolean
+        get() = prefs.getBoolean(KEY_V439FOLLOWAUTOSUBSCRIBE439, false)
+        set(value) = prefs.edit().putBoolean(KEY_V439FOLLOWAUTOSUBSCRIBE439, value).apply()
+
+    var v439forceDecodeHw439: Boolean
+        get() = prefs.getBoolean(KEY_V439FORCEDECODEHW439, false)
+        set(value) = prefs.edit().putBoolean(KEY_V439FORCEDECODEHW439, value).apply()
+
+    var v439formatAutoConvert439: Boolean
+        get() = prefs.getBoolean(KEY_V439FORMATAUTOCONVERT439, false)
+        set(value) = prefs.edit().putBoolean(KEY_V439FORMATAUTOCONVERT439, value).apply()
+
+    var v439frameInterpolation439: Boolean
+        get() = prefs.getBoolean(KEY_V439FRAMEINTERPOLATION439, false)
+        set(value) = prefs.edit().putBoolean(KEY_V439FRAMEINTERPOLATION439, value).apply()
+
+    var v439freeMemoryAuto439: Boolean
+        get() = prefs.getBoolean(KEY_V439FREEMEMORYAUTO439, false)
+        set(value) = prefs.edit().putBoolean(KEY_V439FREEMEMORYAUTO439, value).apply()
+
+    var v439freezeOnBuffering439: Boolean
+        get() = prefs.getBoolean(KEY_V439FREEZEONBUFFERING439, false)
+        set(value) = prefs.edit().putBoolean(KEY_V439FREEZEONBUFFERING439, value).apply()
+
+    var v439fullscreenAutoRotate439: Boolean
+        get() = prefs.getBoolean(KEY_V439FULLSCREENAUTOROTATE439, false)
+        set(value) = prefs.edit().putBoolean(KEY_V439FULLSCREENAUTOROTATE439, value).apply()
+
+    var v439gainAutoBalance439: Boolean
+        get() = prefs.getBoolean(KEY_V439GAINAUTOBALANCE439, false)
+        set(value) = prefs.edit().putBoolean(KEY_V439GAINAUTOBALANCE439, value).apply()
+
+    var v439galleryAutoLayout439: Int
+        get() = prefs.getInt(KEY_V439GALLERYAUTOLAYOUT439, 0)
+        set(value) = prefs.edit().putInt(KEY_V439GALLERYAUTOLAYOUT439, value).apply()
+
+    var v440flashScreenOnNotify440: Boolean
+        get() = prefs.getBoolean(KEY_V440FLASHSCREENONNOTIFY440, false)
+        set(value) = prefs.edit().putBoolean(KEY_V440FLASHSCREENONNOTIFY440, value).apply()
+
+    var v440flexLayoutEnabled440: Boolean
+        get() = prefs.getBoolean(KEY_V440FLEXLAYOUTENABLED440, false)
+        set(value) = prefs.edit().putBoolean(KEY_V440FLEXLAYOUTENABLED440, value).apply()
+
+    var v440flipGestureEnabled440: Boolean
+        get() = prefs.getBoolean(KEY_V440FLIPGESTUREENABLED440, false)
+        set(value) = prefs.edit().putBoolean(KEY_V440FLIPGESTUREENABLED440, value).apply()
+
+    var v440flowAutoRedirect440: Boolean
+        get() = prefs.getBoolean(KEY_V440FLOWAUTOREDIRECT440, false)
+        set(value) = prefs.edit().putBoolean(KEY_V440FLOWAUTOREDIRECT440, value).apply()
+
+    var v440flyModeSpeed440: Int
+        get() = prefs.getInt(KEY_V440FLYMODESPEED440, 0)
+        set(value) = prefs.edit().putInt(KEY_V440FLYMODESPEED440, value).apply()
+
+    var v440focusAutoEnhance440: Boolean
+        get() = prefs.getBoolean(KEY_V440FOCUSAUTOENHANCE440, false)
+        set(value) = prefs.edit().putBoolean(KEY_V440FOCUSAUTOENHANCE440, value).apply()
+
+    var v440followAutoSubscribe440: Boolean
+        get() = prefs.getBoolean(KEY_V440FOLLOWAUTOSUBSCRIBE440, false)
+        set(value) = prefs.edit().putBoolean(KEY_V440FOLLOWAUTOSUBSCRIBE440, value).apply()
+
+    var v440forceDecodeHw440: Boolean
+        get() = prefs.getBoolean(KEY_V440FORCEDECODEHW440, false)
+        set(value) = prefs.edit().putBoolean(KEY_V440FORCEDECODEHW440, value).apply()
+
+    var v440formatAutoConvert440: Boolean
+        get() = prefs.getBoolean(KEY_V440FORMATAUTOCONVERT440, false)
+        set(value) = prefs.edit().putBoolean(KEY_V440FORMATAUTOCONVERT440, value).apply()
+
+    var v440frameInterpolation440: Boolean
+        get() = prefs.getBoolean(KEY_V440FRAMEINTERPOLATION440, false)
+        set(value) = prefs.edit().putBoolean(KEY_V440FRAMEINTERPOLATION440, value).apply()
+
+    var v440freeMemoryAuto440: Boolean
+        get() = prefs.getBoolean(KEY_V440FREEMEMORYAUTO440, false)
+        set(value) = prefs.edit().putBoolean(KEY_V440FREEMEMORYAUTO440, value).apply()
+
+    var v440freezeOnBuffering440: Boolean
+        get() = prefs.getBoolean(KEY_V440FREEZEONBUFFERING440, false)
+        set(value) = prefs.edit().putBoolean(KEY_V440FREEZEONBUFFERING440, value).apply()
+
+    var v440fullscreenAutoRotate440: Boolean
+        get() = prefs.getBoolean(KEY_V440FULLSCREENAUTOROTATE440, false)
+        set(value) = prefs.edit().putBoolean(KEY_V440FULLSCREENAUTOROTATE440, value).apply()
+
+    var v440gainAutoBalance440: Boolean
+        get() = prefs.getBoolean(KEY_V440GAINAUTOBALANCE440, false)
+        set(value) = prefs.edit().putBoolean(KEY_V440GAINAUTOBALANCE440, value).apply()
+
+    var v440galleryAutoLayout440: Int
+        get() = prefs.getInt(KEY_V440GALLERYAUTOLAYOUT440, 0)
+        set(value) = prefs.edit().putInt(KEY_V440GALLERYAUTOLAYOUT440, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -41680,5 +42280,155 @@ class AppPrefs(context: Context) {
         const val KEY_V430FILEAUTOORGANIZE430 = "v430fileAutoOrganize430" // v430 File Auto Organize430
         const val KEY_V430FINDINPAGEHIGHLIGHT430 = "v430findInPageHighlight430" // v430 Find In Page Highlight430
         const val KEY_V430FIXCORRUPTAUTO430 = "v430fixCorruptAuto430" // v430 Fix Corrupt Auto430
+        const val KEY_V431FLASHSCREENONNOTIFY431 = "v431flashScreenOnNotify431" // v431 Flash Screen On Notify431
+        const val KEY_V431FLEXLAYOUTENABLED431 = "v431flexLayoutEnabled431" // v431 Flex Layout Enabled431
+        const val KEY_V431FLIPGESTUREENABLED431 = "v431flipGestureEnabled431" // v431 Flip Gesture Enabled431
+        const val KEY_V431FLOWAUTOREDIRECT431 = "v431flowAutoRedirect431" // v431 Flow Auto Redirect431
+        const val KEY_V431FLYMODESPEED431 = "v431flyModeSpeed431" // v431 Fly Mode Speed431
+        const val KEY_V431FOCUSAUTOENHANCE431 = "v431focusAutoEnhance431" // v431 Focus Auto Enhance431
+        const val KEY_V431FOLLOWAUTOSUBSCRIBE431 = "v431followAutoSubscribe431" // v431 Follow Auto Subscribe431
+        const val KEY_V431FORCEDECODEHW431 = "v431forceDecodeHw431" // v431 Force Decode HW431
+        const val KEY_V431FORMATAUTOCONVERT431 = "v431formatAutoConvert431" // v431 Format Auto Convert431
+        const val KEY_V431FRAMEINTERPOLATION431 = "v431frameInterpolation431" // v431 Frame Interpolation431
+        const val KEY_V431FREEMEMORYAUTO431 = "v431freeMemoryAuto431" // v431 Free Memory Auto431
+        const val KEY_V431FREEZEONBUFFERING431 = "v431freezeOnBuffering431" // v431 Freeze On Buffering431
+        const val KEY_V431FULLSCREENAUTOROTATE431 = "v431fullscreenAutoRotate431" // v431 Fullscreen Auto Rotate431
+        const val KEY_V431GAINAUTOBALANCE431 = "v431gainAutoBalance431" // v431 Gain Auto Balance431
+        const val KEY_V431GALLERYAUTOLAYOUT431 = "v431galleryAutoLayout431" // v431 Gallery Auto Layout431
+        const val KEY_V432FLASHSCREENONNOTIFY432 = "v432flashScreenOnNotify432" // v432 Flash Screen On Notify432
+        const val KEY_V432FLEXLAYOUTENABLED432 = "v432flexLayoutEnabled432" // v432 Flex Layout Enabled432
+        const val KEY_V432FLIPGESTUREENABLED432 = "v432flipGestureEnabled432" // v432 Flip Gesture Enabled432
+        const val KEY_V432FLOWAUTOREDIRECT432 = "v432flowAutoRedirect432" // v432 Flow Auto Redirect432
+        const val KEY_V432FLYMODESPEED432 = "v432flyModeSpeed432" // v432 Fly Mode Speed432
+        const val KEY_V432FOCUSAUTOENHANCE432 = "v432focusAutoEnhance432" // v432 Focus Auto Enhance432
+        const val KEY_V432FOLLOWAUTOSUBSCRIBE432 = "v432followAutoSubscribe432" // v432 Follow Auto Subscribe432
+        const val KEY_V432FORCEDECODEHW432 = "v432forceDecodeHw432" // v432 Force Decode HW432
+        const val KEY_V432FORMATAUTOCONVERT432 = "v432formatAutoConvert432" // v432 Format Auto Convert432
+        const val KEY_V432FRAMEINTERPOLATION432 = "v432frameInterpolation432" // v432 Frame Interpolation432
+        const val KEY_V432FREEMEMORYAUTO432 = "v432freeMemoryAuto432" // v432 Free Memory Auto432
+        const val KEY_V432FREEZEONBUFFERING432 = "v432freezeOnBuffering432" // v432 Freeze On Buffering432
+        const val KEY_V432FULLSCREENAUTOROTATE432 = "v432fullscreenAutoRotate432" // v432 Fullscreen Auto Rotate432
+        const val KEY_V432GAINAUTOBALANCE432 = "v432gainAutoBalance432" // v432 Gain Auto Balance432
+        const val KEY_V432GALLERYAUTOLAYOUT432 = "v432galleryAutoLayout432" // v432 Gallery Auto Layout432
+        const val KEY_V433FLASHSCREENONNOTIFY433 = "v433flashScreenOnNotify433" // v433 Flash Screen On Notify433
+        const val KEY_V433FLEXLAYOUTENABLED433 = "v433flexLayoutEnabled433" // v433 Flex Layout Enabled433
+        const val KEY_V433FLIPGESTUREENABLED433 = "v433flipGestureEnabled433" // v433 Flip Gesture Enabled433
+        const val KEY_V433FLOWAUTOREDIRECT433 = "v433flowAutoRedirect433" // v433 Flow Auto Redirect433
+        const val KEY_V433FLYMODESPEED433 = "v433flyModeSpeed433" // v433 Fly Mode Speed433
+        const val KEY_V433FOCUSAUTOENHANCE433 = "v433focusAutoEnhance433" // v433 Focus Auto Enhance433
+        const val KEY_V433FOLLOWAUTOSUBSCRIBE433 = "v433followAutoSubscribe433" // v433 Follow Auto Subscribe433
+        const val KEY_V433FORCEDECODEHW433 = "v433forceDecodeHw433" // v433 Force Decode HW433
+        const val KEY_V433FORMATAUTOCONVERT433 = "v433formatAutoConvert433" // v433 Format Auto Convert433
+        const val KEY_V433FRAMEINTERPOLATION433 = "v433frameInterpolation433" // v433 Frame Interpolation433
+        const val KEY_V433FREEMEMORYAUTO433 = "v433freeMemoryAuto433" // v433 Free Memory Auto433
+        const val KEY_V433FREEZEONBUFFERING433 = "v433freezeOnBuffering433" // v433 Freeze On Buffering433
+        const val KEY_V433FULLSCREENAUTOROTATE433 = "v433fullscreenAutoRotate433" // v433 Fullscreen Auto Rotate433
+        const val KEY_V433GAINAUTOBALANCE433 = "v433gainAutoBalance433" // v433 Gain Auto Balance433
+        const val KEY_V433GALLERYAUTOLAYOUT433 = "v433galleryAutoLayout433" // v433 Gallery Auto Layout433
+        const val KEY_V434FLASHSCREENONNOTIFY434 = "v434flashScreenOnNotify434" // v434 Flash Screen On Notify434
+        const val KEY_V434FLEXLAYOUTENABLED434 = "v434flexLayoutEnabled434" // v434 Flex Layout Enabled434
+        const val KEY_V434FLIPGESTUREENABLED434 = "v434flipGestureEnabled434" // v434 Flip Gesture Enabled434
+        const val KEY_V434FLOWAUTOREDIRECT434 = "v434flowAutoRedirect434" // v434 Flow Auto Redirect434
+        const val KEY_V434FLYMODESPEED434 = "v434flyModeSpeed434" // v434 Fly Mode Speed434
+        const val KEY_V434FOCUSAUTOENHANCE434 = "v434focusAutoEnhance434" // v434 Focus Auto Enhance434
+        const val KEY_V434FOLLOWAUTOSUBSCRIBE434 = "v434followAutoSubscribe434" // v434 Follow Auto Subscribe434
+        const val KEY_V434FORCEDECODEHW434 = "v434forceDecodeHw434" // v434 Force Decode HW434
+        const val KEY_V434FORMATAUTOCONVERT434 = "v434formatAutoConvert434" // v434 Format Auto Convert434
+        const val KEY_V434FRAMEINTERPOLATION434 = "v434frameInterpolation434" // v434 Frame Interpolation434
+        const val KEY_V434FREEMEMORYAUTO434 = "v434freeMemoryAuto434" // v434 Free Memory Auto434
+        const val KEY_V434FREEZEONBUFFERING434 = "v434freezeOnBuffering434" // v434 Freeze On Buffering434
+        const val KEY_V434FULLSCREENAUTOROTATE434 = "v434fullscreenAutoRotate434" // v434 Fullscreen Auto Rotate434
+        const val KEY_V434GAINAUTOBALANCE434 = "v434gainAutoBalance434" // v434 Gain Auto Balance434
+        const val KEY_V434GALLERYAUTOLAYOUT434 = "v434galleryAutoLayout434" // v434 Gallery Auto Layout434
+        const val KEY_V435FLASHSCREENONNOTIFY435 = "v435flashScreenOnNotify435" // v435 Flash Screen On Notify435
+        const val KEY_V435FLEXLAYOUTENABLED435 = "v435flexLayoutEnabled435" // v435 Flex Layout Enabled435
+        const val KEY_V435FLIPGESTUREENABLED435 = "v435flipGestureEnabled435" // v435 Flip Gesture Enabled435
+        const val KEY_V435FLOWAUTOREDIRECT435 = "v435flowAutoRedirect435" // v435 Flow Auto Redirect435
+        const val KEY_V435FLYMODESPEED435 = "v435flyModeSpeed435" // v435 Fly Mode Speed435
+        const val KEY_V435FOCUSAUTOENHANCE435 = "v435focusAutoEnhance435" // v435 Focus Auto Enhance435
+        const val KEY_V435FOLLOWAUTOSUBSCRIBE435 = "v435followAutoSubscribe435" // v435 Follow Auto Subscribe435
+        const val KEY_V435FORCEDECODEHW435 = "v435forceDecodeHw435" // v435 Force Decode HW435
+        const val KEY_V435FORMATAUTOCONVERT435 = "v435formatAutoConvert435" // v435 Format Auto Convert435
+        const val KEY_V435FRAMEINTERPOLATION435 = "v435frameInterpolation435" // v435 Frame Interpolation435
+        const val KEY_V435FREEMEMORYAUTO435 = "v435freeMemoryAuto435" // v435 Free Memory Auto435
+        const val KEY_V435FREEZEONBUFFERING435 = "v435freezeOnBuffering435" // v435 Freeze On Buffering435
+        const val KEY_V435FULLSCREENAUTOROTATE435 = "v435fullscreenAutoRotate435" // v435 Fullscreen Auto Rotate435
+        const val KEY_V435GAINAUTOBALANCE435 = "v435gainAutoBalance435" // v435 Gain Auto Balance435
+        const val KEY_V435GALLERYAUTOLAYOUT435 = "v435galleryAutoLayout435" // v435 Gallery Auto Layout435
+        const val KEY_V436FLASHSCREENONNOTIFY436 = "v436flashScreenOnNotify436" // v436 Flash Screen On Notify436
+        const val KEY_V436FLEXLAYOUTENABLED436 = "v436flexLayoutEnabled436" // v436 Flex Layout Enabled436
+        const val KEY_V436FLIPGESTUREENABLED436 = "v436flipGestureEnabled436" // v436 Flip Gesture Enabled436
+        const val KEY_V436FLOWAUTOREDIRECT436 = "v436flowAutoRedirect436" // v436 Flow Auto Redirect436
+        const val KEY_V436FLYMODESPEED436 = "v436flyModeSpeed436" // v436 Fly Mode Speed436
+        const val KEY_V436FOCUSAUTOENHANCE436 = "v436focusAutoEnhance436" // v436 Focus Auto Enhance436
+        const val KEY_V436FOLLOWAUTOSUBSCRIBE436 = "v436followAutoSubscribe436" // v436 Follow Auto Subscribe436
+        const val KEY_V436FORCEDECODEHW436 = "v436forceDecodeHw436" // v436 Force Decode HW436
+        const val KEY_V436FORMATAUTOCONVERT436 = "v436formatAutoConvert436" // v436 Format Auto Convert436
+        const val KEY_V436FRAMEINTERPOLATION436 = "v436frameInterpolation436" // v436 Frame Interpolation436
+        const val KEY_V436FREEMEMORYAUTO436 = "v436freeMemoryAuto436" // v436 Free Memory Auto436
+        const val KEY_V436FREEZEONBUFFERING436 = "v436freezeOnBuffering436" // v436 Freeze On Buffering436
+        const val KEY_V436FULLSCREENAUTOROTATE436 = "v436fullscreenAutoRotate436" // v436 Fullscreen Auto Rotate436
+        const val KEY_V436GAINAUTOBALANCE436 = "v436gainAutoBalance436" // v436 Gain Auto Balance436
+        const val KEY_V436GALLERYAUTOLAYOUT436 = "v436galleryAutoLayout436" // v436 Gallery Auto Layout436
+        const val KEY_V437FLASHSCREENONNOTIFY437 = "v437flashScreenOnNotify437" // v437 Flash Screen On Notify437
+        const val KEY_V437FLEXLAYOUTENABLED437 = "v437flexLayoutEnabled437" // v437 Flex Layout Enabled437
+        const val KEY_V437FLIPGESTUREENABLED437 = "v437flipGestureEnabled437" // v437 Flip Gesture Enabled437
+        const val KEY_V437FLOWAUTOREDIRECT437 = "v437flowAutoRedirect437" // v437 Flow Auto Redirect437
+        const val KEY_V437FLYMODESPEED437 = "v437flyModeSpeed437" // v437 Fly Mode Speed437
+        const val KEY_V437FOCUSAUTOENHANCE437 = "v437focusAutoEnhance437" // v437 Focus Auto Enhance437
+        const val KEY_V437FOLLOWAUTOSUBSCRIBE437 = "v437followAutoSubscribe437" // v437 Follow Auto Subscribe437
+        const val KEY_V437FORCEDECODEHW437 = "v437forceDecodeHw437" // v437 Force Decode HW437
+        const val KEY_V437FORMATAUTOCONVERT437 = "v437formatAutoConvert437" // v437 Format Auto Convert437
+        const val KEY_V437FRAMEINTERPOLATION437 = "v437frameInterpolation437" // v437 Frame Interpolation437
+        const val KEY_V437FREEMEMORYAUTO437 = "v437freeMemoryAuto437" // v437 Free Memory Auto437
+        const val KEY_V437FREEZEONBUFFERING437 = "v437freezeOnBuffering437" // v437 Freeze On Buffering437
+        const val KEY_V437FULLSCREENAUTOROTATE437 = "v437fullscreenAutoRotate437" // v437 Fullscreen Auto Rotate437
+        const val KEY_V437GAINAUTOBALANCE437 = "v437gainAutoBalance437" // v437 Gain Auto Balance437
+        const val KEY_V437GALLERYAUTOLAYOUT437 = "v437galleryAutoLayout437" // v437 Gallery Auto Layout437
+        const val KEY_V438FLASHSCREENONNOTIFY438 = "v438flashScreenOnNotify438" // v438 Flash Screen On Notify438
+        const val KEY_V438FLEXLAYOUTENABLED438 = "v438flexLayoutEnabled438" // v438 Flex Layout Enabled438
+        const val KEY_V438FLIPGESTUREENABLED438 = "v438flipGestureEnabled438" // v438 Flip Gesture Enabled438
+        const val KEY_V438FLOWAUTOREDIRECT438 = "v438flowAutoRedirect438" // v438 Flow Auto Redirect438
+        const val KEY_V438FLYMODESPEED438 = "v438flyModeSpeed438" // v438 Fly Mode Speed438
+        const val KEY_V438FOCUSAUTOENHANCE438 = "v438focusAutoEnhance438" // v438 Focus Auto Enhance438
+        const val KEY_V438FOLLOWAUTOSUBSCRIBE438 = "v438followAutoSubscribe438" // v438 Follow Auto Subscribe438
+        const val KEY_V438FORCEDECODEHW438 = "v438forceDecodeHw438" // v438 Force Decode HW438
+        const val KEY_V438FORMATAUTOCONVERT438 = "v438formatAutoConvert438" // v438 Format Auto Convert438
+        const val KEY_V438FRAMEINTERPOLATION438 = "v438frameInterpolation438" // v438 Frame Interpolation438
+        const val KEY_V438FREEMEMORYAUTO438 = "v438freeMemoryAuto438" // v438 Free Memory Auto438
+        const val KEY_V438FREEZEONBUFFERING438 = "v438freezeOnBuffering438" // v438 Freeze On Buffering438
+        const val KEY_V438FULLSCREENAUTOROTATE438 = "v438fullscreenAutoRotate438" // v438 Fullscreen Auto Rotate438
+        const val KEY_V438GAINAUTOBALANCE438 = "v438gainAutoBalance438" // v438 Gain Auto Balance438
+        const val KEY_V438GALLERYAUTOLAYOUT438 = "v438galleryAutoLayout438" // v438 Gallery Auto Layout438
+        const val KEY_V439FLASHSCREENONNOTIFY439 = "v439flashScreenOnNotify439" // v439 Flash Screen On Notify439
+        const val KEY_V439FLEXLAYOUTENABLED439 = "v439flexLayoutEnabled439" // v439 Flex Layout Enabled439
+        const val KEY_V439FLIPGESTUREENABLED439 = "v439flipGestureEnabled439" // v439 Flip Gesture Enabled439
+        const val KEY_V439FLOWAUTOREDIRECT439 = "v439flowAutoRedirect439" // v439 Flow Auto Redirect439
+        const val KEY_V439FLYMODESPEED439 = "v439flyModeSpeed439" // v439 Fly Mode Speed439
+        const val KEY_V439FOCUSAUTOENHANCE439 = "v439focusAutoEnhance439" // v439 Focus Auto Enhance439
+        const val KEY_V439FOLLOWAUTOSUBSCRIBE439 = "v439followAutoSubscribe439" // v439 Follow Auto Subscribe439
+        const val KEY_V439FORCEDECODEHW439 = "v439forceDecodeHw439" // v439 Force Decode HW439
+        const val KEY_V439FORMATAUTOCONVERT439 = "v439formatAutoConvert439" // v439 Format Auto Convert439
+        const val KEY_V439FRAMEINTERPOLATION439 = "v439frameInterpolation439" // v439 Frame Interpolation439
+        const val KEY_V439FREEMEMORYAUTO439 = "v439freeMemoryAuto439" // v439 Free Memory Auto439
+        const val KEY_V439FREEZEONBUFFERING439 = "v439freezeOnBuffering439" // v439 Freeze On Buffering439
+        const val KEY_V439FULLSCREENAUTOROTATE439 = "v439fullscreenAutoRotate439" // v439 Fullscreen Auto Rotate439
+        const val KEY_V439GAINAUTOBALANCE439 = "v439gainAutoBalance439" // v439 Gain Auto Balance439
+        const val KEY_V439GALLERYAUTOLAYOUT439 = "v439galleryAutoLayout439" // v439 Gallery Auto Layout439
+        const val KEY_V440FLASHSCREENONNOTIFY440 = "v440flashScreenOnNotify440" // v440 Flash Screen On Notify440
+        const val KEY_V440FLEXLAYOUTENABLED440 = "v440flexLayoutEnabled440" // v440 Flex Layout Enabled440
+        const val KEY_V440FLIPGESTUREENABLED440 = "v440flipGestureEnabled440" // v440 Flip Gesture Enabled440
+        const val KEY_V440FLOWAUTOREDIRECT440 = "v440flowAutoRedirect440" // v440 Flow Auto Redirect440
+        const val KEY_V440FLYMODESPEED440 = "v440flyModeSpeed440" // v440 Fly Mode Speed440
+        const val KEY_V440FOCUSAUTOENHANCE440 = "v440focusAutoEnhance440" // v440 Focus Auto Enhance440
+        const val KEY_V440FOLLOWAUTOSUBSCRIBE440 = "v440followAutoSubscribe440" // v440 Follow Auto Subscribe440
+        const val KEY_V440FORCEDECODEHW440 = "v440forceDecodeHw440" // v440 Force Decode HW440
+        const val KEY_V440FORMATAUTOCONVERT440 = "v440formatAutoConvert440" // v440 Format Auto Convert440
+        const val KEY_V440FRAMEINTERPOLATION440 = "v440frameInterpolation440" // v440 Frame Interpolation440
+        const val KEY_V440FREEMEMORYAUTO440 = "v440freeMemoryAuto440" // v440 Free Memory Auto440
+        const val KEY_V440FREEZEONBUFFERING440 = "v440freezeOnBuffering440" // v440 Freeze On Buffering440
+        const val KEY_V440FULLSCREENAUTOROTATE440 = "v440fullscreenAutoRotate440" // v440 Fullscreen Auto Rotate440
+        const val KEY_V440GAINAUTOBALANCE440 = "v440gainAutoBalance440" // v440 Gain Auto Balance440
+        const val KEY_V440GALLERYAUTOLAYOUT440 = "v440galleryAutoLayout440" // v440 Gallery Auto Layout440
     }
 }

@@ -69185,3 +69185,1213 @@ internal fun PlayerActivity.showV430FixCorruptAuto430Toggle() {
     AppToast.show(this, "Fix Corrupt Auto430: ${if (!current) "ON" else "OFF"}")
 }
 
+// v431: Flash Screen On Notify431
+internal fun PlayerActivity.showV431FlashScreenOnNotify431Toggle() {
+    val current = BiliClient.prefs.v431flashScreenOnNotify431
+    BiliClient.prefs.v431flashScreenOnNotify431 = !current
+    AppToast.show(this, "Flash Screen On Notify431: ${if (!current) "ON" else "OFF"}")
+}
+
+// v431: Flex Layout Enabled431
+internal fun PlayerActivity.showV431FlexLayoutEnabled431Toggle() {
+    val current = BiliClient.prefs.v431flexLayoutEnabled431
+    BiliClient.prefs.v431flexLayoutEnabled431 = !current
+    AppToast.show(this, "Flex Layout Enabled431: ${if (!current) "ON" else "OFF"}")
+}
+
+// v431: Flip Gesture Enabled431
+internal fun PlayerActivity.showV431FlipGestureEnabled431Toggle() {
+    val current = BiliClient.prefs.v431flipGestureEnabled431
+    BiliClient.prefs.v431flipGestureEnabled431 = !current
+    AppToast.show(this, "Flip Gesture Enabled431: ${if (!current) "ON" else "OFF"}")
+}
+
+// v431: Flow Auto Redirect431
+internal fun PlayerActivity.showV431FlowAutoRedirect431Toggle() {
+    val current = BiliClient.prefs.v431flowAutoRedirect431
+    BiliClient.prefs.v431flowAutoRedirect431 = !current
+    AppToast.show(this, "Flow Auto Redirect431: ${if (!current) "ON" else "OFF"}")
+}
+
+// v431: Fly Mode Speed431
+internal fun PlayerActivity.showV431FlyModeSpeed431Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v431flyModeSpeed431).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Fly Mode Speed431",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v431flyModeSpeed431 = value
+        AppToast.show(this, "Fly Mode Speed431: $value")
+    }
+}
+
+// v431: Focus Auto Enhance431
+internal fun PlayerActivity.showV431FocusAutoEnhance431Toggle() {
+    val current = BiliClient.prefs.v431focusAutoEnhance431
+    BiliClient.prefs.v431focusAutoEnhance431 = !current
+    AppToast.show(this, "Focus Auto Enhance431: ${if (!current) "ON" else "OFF"}")
+}
+
+// v431: Follow Auto Subscribe431
+internal fun PlayerActivity.showV431FollowAutoSubscribe431Toggle() {
+    val current = BiliClient.prefs.v431followAutoSubscribe431
+    BiliClient.prefs.v431followAutoSubscribe431 = !current
+    AppToast.show(this, "Follow Auto Subscribe431: ${if (!current) "ON" else "OFF"}")
+}
+
+// v431: Force Decode HW431
+internal fun PlayerActivity.showV431ForceDecodeHw431Toggle() {
+    val current = BiliClient.prefs.v431forceDecodeHw431
+    BiliClient.prefs.v431forceDecodeHw431 = !current
+    AppToast.show(this, "Force Decode HW431: ${if (!current) "ON" else "OFF"}")
+}
+
+// v431: Format Auto Convert431
+internal fun PlayerActivity.showV431FormatAutoConvert431Toggle() {
+    val current = BiliClient.prefs.v431formatAutoConvert431
+    BiliClient.prefs.v431formatAutoConvert431 = !current
+    AppToast.show(this, "Format Auto Convert431: ${if (!current) "ON" else "OFF"}")
+}
+
+// v431: Frame Interpolation431
+internal fun PlayerActivity.showV431FrameInterpolation431Toggle() {
+    val current = BiliClient.prefs.v431frameInterpolation431
+    BiliClient.prefs.v431frameInterpolation431 = !current
+    AppToast.show(this, "Frame Interpolation431: ${if (!current) "ON" else "OFF"}")
+}
+
+// v431: Free Memory Auto431
+internal fun PlayerActivity.showV431FreeMemoryAuto431Toggle() {
+    val current = BiliClient.prefs.v431freeMemoryAuto431
+    BiliClient.prefs.v431freeMemoryAuto431 = !current
+    AppToast.show(this, "Free Memory Auto431: ${if (!current) "ON" else "OFF"}")
+}
+
+// v431: Freeze On Buffering431
+internal fun PlayerActivity.showV431FreezeOnBuffering431Toggle() {
+    val current = BiliClient.prefs.v431freezeOnBuffering431
+    BiliClient.prefs.v431freezeOnBuffering431 = !current
+    AppToast.show(this, "Freeze On Buffering431: ${if (!current) "ON" else "OFF"}")
+}
+
+// v431: Fullscreen Auto Rotate431
+internal fun PlayerActivity.showV431FullscreenAutoRotate431Toggle() {
+    val current = BiliClient.prefs.v431fullscreenAutoRotate431
+    BiliClient.prefs.v431fullscreenAutoRotate431 = !current
+    AppToast.show(this, "Fullscreen Auto Rotate431: ${if (!current) "ON" else "OFF"}")
+}
+
+// v431: Gain Auto Balance431
+internal fun PlayerActivity.showV431GainAutoBalance431Toggle() {
+    val current = BiliClient.prefs.v431gainAutoBalance431
+    BiliClient.prefs.v431gainAutoBalance431 = !current
+    AppToast.show(this, "Gain Auto Balance431: ${if (!current) "ON" else "OFF"}")
+}
+
+// v431: Gallery Auto Layout431
+internal fun PlayerActivity.showV431GalleryAutoLayout431Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v431galleryAutoLayout431).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Gallery Auto Layout431",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v431galleryAutoLayout431 = value
+        AppToast.show(this, "Gallery Auto Layout431: $value")
+    }
+}
+
+// v432: Flash Screen On Notify432
+internal fun PlayerActivity.showV432FlashScreenOnNotify432Toggle() {
+    val current = BiliClient.prefs.v432flashScreenOnNotify432
+    BiliClient.prefs.v432flashScreenOnNotify432 = !current
+    AppToast.show(this, "Flash Screen On Notify432: ${if (!current) "ON" else "OFF"}")
+}
+
+// v432: Flex Layout Enabled432
+internal fun PlayerActivity.showV432FlexLayoutEnabled432Toggle() {
+    val current = BiliClient.prefs.v432flexLayoutEnabled432
+    BiliClient.prefs.v432flexLayoutEnabled432 = !current
+    AppToast.show(this, "Flex Layout Enabled432: ${if (!current) "ON" else "OFF"}")
+}
+
+// v432: Flip Gesture Enabled432
+internal fun PlayerActivity.showV432FlipGestureEnabled432Toggle() {
+    val current = BiliClient.prefs.v432flipGestureEnabled432
+    BiliClient.prefs.v432flipGestureEnabled432 = !current
+    AppToast.show(this, "Flip Gesture Enabled432: ${if (!current) "ON" else "OFF"}")
+}
+
+// v432: Flow Auto Redirect432
+internal fun PlayerActivity.showV432FlowAutoRedirect432Toggle() {
+    val current = BiliClient.prefs.v432flowAutoRedirect432
+    BiliClient.prefs.v432flowAutoRedirect432 = !current
+    AppToast.show(this, "Flow Auto Redirect432: ${if (!current) "ON" else "OFF"}")
+}
+
+// v432: Fly Mode Speed432
+internal fun PlayerActivity.showV432FlyModeSpeed432Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v432flyModeSpeed432).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Fly Mode Speed432",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v432flyModeSpeed432 = value
+        AppToast.show(this, "Fly Mode Speed432: $value")
+    }
+}
+
+// v432: Focus Auto Enhance432
+internal fun PlayerActivity.showV432FocusAutoEnhance432Toggle() {
+    val current = BiliClient.prefs.v432focusAutoEnhance432
+    BiliClient.prefs.v432focusAutoEnhance432 = !current
+    AppToast.show(this, "Focus Auto Enhance432: ${if (!current) "ON" else "OFF"}")
+}
+
+// v432: Follow Auto Subscribe432
+internal fun PlayerActivity.showV432FollowAutoSubscribe432Toggle() {
+    val current = BiliClient.prefs.v432followAutoSubscribe432
+    BiliClient.prefs.v432followAutoSubscribe432 = !current
+    AppToast.show(this, "Follow Auto Subscribe432: ${if (!current) "ON" else "OFF"}")
+}
+
+// v432: Force Decode HW432
+internal fun PlayerActivity.showV432ForceDecodeHw432Toggle() {
+    val current = BiliClient.prefs.v432forceDecodeHw432
+    BiliClient.prefs.v432forceDecodeHw432 = !current
+    AppToast.show(this, "Force Decode HW432: ${if (!current) "ON" else "OFF"}")
+}
+
+// v432: Format Auto Convert432
+internal fun PlayerActivity.showV432FormatAutoConvert432Toggle() {
+    val current = BiliClient.prefs.v432formatAutoConvert432
+    BiliClient.prefs.v432formatAutoConvert432 = !current
+    AppToast.show(this, "Format Auto Convert432: ${if (!current) "ON" else "OFF"}")
+}
+
+// v432: Frame Interpolation432
+internal fun PlayerActivity.showV432FrameInterpolation432Toggle() {
+    val current = BiliClient.prefs.v432frameInterpolation432
+    BiliClient.prefs.v432frameInterpolation432 = !current
+    AppToast.show(this, "Frame Interpolation432: ${if (!current) "ON" else "OFF"}")
+}
+
+// v432: Free Memory Auto432
+internal fun PlayerActivity.showV432FreeMemoryAuto432Toggle() {
+    val current = BiliClient.prefs.v432freeMemoryAuto432
+    BiliClient.prefs.v432freeMemoryAuto432 = !current
+    AppToast.show(this, "Free Memory Auto432: ${if (!current) "ON" else "OFF"}")
+}
+
+// v432: Freeze On Buffering432
+internal fun PlayerActivity.showV432FreezeOnBuffering432Toggle() {
+    val current = BiliClient.prefs.v432freezeOnBuffering432
+    BiliClient.prefs.v432freezeOnBuffering432 = !current
+    AppToast.show(this, "Freeze On Buffering432: ${if (!current) "ON" else "OFF"}")
+}
+
+// v432: Fullscreen Auto Rotate432
+internal fun PlayerActivity.showV432FullscreenAutoRotate432Toggle() {
+    val current = BiliClient.prefs.v432fullscreenAutoRotate432
+    BiliClient.prefs.v432fullscreenAutoRotate432 = !current
+    AppToast.show(this, "Fullscreen Auto Rotate432: ${if (!current) "ON" else "OFF"}")
+}
+
+// v432: Gain Auto Balance432
+internal fun PlayerActivity.showV432GainAutoBalance432Toggle() {
+    val current = BiliClient.prefs.v432gainAutoBalance432
+    BiliClient.prefs.v432gainAutoBalance432 = !current
+    AppToast.show(this, "Gain Auto Balance432: ${if (!current) "ON" else "OFF"}")
+}
+
+// v432: Gallery Auto Layout432
+internal fun PlayerActivity.showV432GalleryAutoLayout432Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v432galleryAutoLayout432).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Gallery Auto Layout432",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v432galleryAutoLayout432 = value
+        AppToast.show(this, "Gallery Auto Layout432: $value")
+    }
+}
+
+// v433: Flash Screen On Notify433
+internal fun PlayerActivity.showV433FlashScreenOnNotify433Toggle() {
+    val current = BiliClient.prefs.v433flashScreenOnNotify433
+    BiliClient.prefs.v433flashScreenOnNotify433 = !current
+    AppToast.show(this, "Flash Screen On Notify433: ${if (!current) "ON" else "OFF"}")
+}
+
+// v433: Flex Layout Enabled433
+internal fun PlayerActivity.showV433FlexLayoutEnabled433Toggle() {
+    val current = BiliClient.prefs.v433flexLayoutEnabled433
+    BiliClient.prefs.v433flexLayoutEnabled433 = !current
+    AppToast.show(this, "Flex Layout Enabled433: ${if (!current) "ON" else "OFF"}")
+}
+
+// v433: Flip Gesture Enabled433
+internal fun PlayerActivity.showV433FlipGestureEnabled433Toggle() {
+    val current = BiliClient.prefs.v433flipGestureEnabled433
+    BiliClient.prefs.v433flipGestureEnabled433 = !current
+    AppToast.show(this, "Flip Gesture Enabled433: ${if (!current) "ON" else "OFF"}")
+}
+
+// v433: Flow Auto Redirect433
+internal fun PlayerActivity.showV433FlowAutoRedirect433Toggle() {
+    val current = BiliClient.prefs.v433flowAutoRedirect433
+    BiliClient.prefs.v433flowAutoRedirect433 = !current
+    AppToast.show(this, "Flow Auto Redirect433: ${if (!current) "ON" else "OFF"}")
+}
+
+// v433: Fly Mode Speed433
+internal fun PlayerActivity.showV433FlyModeSpeed433Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v433flyModeSpeed433).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Fly Mode Speed433",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v433flyModeSpeed433 = value
+        AppToast.show(this, "Fly Mode Speed433: $value")
+    }
+}
+
+// v433: Focus Auto Enhance433
+internal fun PlayerActivity.showV433FocusAutoEnhance433Toggle() {
+    val current = BiliClient.prefs.v433focusAutoEnhance433
+    BiliClient.prefs.v433focusAutoEnhance433 = !current
+    AppToast.show(this, "Focus Auto Enhance433: ${if (!current) "ON" else "OFF"}")
+}
+
+// v433: Follow Auto Subscribe433
+internal fun PlayerActivity.showV433FollowAutoSubscribe433Toggle() {
+    val current = BiliClient.prefs.v433followAutoSubscribe433
+    BiliClient.prefs.v433followAutoSubscribe433 = !current
+    AppToast.show(this, "Follow Auto Subscribe433: ${if (!current) "ON" else "OFF"}")
+}
+
+// v433: Force Decode HW433
+internal fun PlayerActivity.showV433ForceDecodeHw433Toggle() {
+    val current = BiliClient.prefs.v433forceDecodeHw433
+    BiliClient.prefs.v433forceDecodeHw433 = !current
+    AppToast.show(this, "Force Decode HW433: ${if (!current) "ON" else "OFF"}")
+}
+
+// v433: Format Auto Convert433
+internal fun PlayerActivity.showV433FormatAutoConvert433Toggle() {
+    val current = BiliClient.prefs.v433formatAutoConvert433
+    BiliClient.prefs.v433formatAutoConvert433 = !current
+    AppToast.show(this, "Format Auto Convert433: ${if (!current) "ON" else "OFF"}")
+}
+
+// v433: Frame Interpolation433
+internal fun PlayerActivity.showV433FrameInterpolation433Toggle() {
+    val current = BiliClient.prefs.v433frameInterpolation433
+    BiliClient.prefs.v433frameInterpolation433 = !current
+    AppToast.show(this, "Frame Interpolation433: ${if (!current) "ON" else "OFF"}")
+}
+
+// v433: Free Memory Auto433
+internal fun PlayerActivity.showV433FreeMemoryAuto433Toggle() {
+    val current = BiliClient.prefs.v433freeMemoryAuto433
+    BiliClient.prefs.v433freeMemoryAuto433 = !current
+    AppToast.show(this, "Free Memory Auto433: ${if (!current) "ON" else "OFF"}")
+}
+
+// v433: Freeze On Buffering433
+internal fun PlayerActivity.showV433FreezeOnBuffering433Toggle() {
+    val current = BiliClient.prefs.v433freezeOnBuffering433
+    BiliClient.prefs.v433freezeOnBuffering433 = !current
+    AppToast.show(this, "Freeze On Buffering433: ${if (!current) "ON" else "OFF"}")
+}
+
+// v433: Fullscreen Auto Rotate433
+internal fun PlayerActivity.showV433FullscreenAutoRotate433Toggle() {
+    val current = BiliClient.prefs.v433fullscreenAutoRotate433
+    BiliClient.prefs.v433fullscreenAutoRotate433 = !current
+    AppToast.show(this, "Fullscreen Auto Rotate433: ${if (!current) "ON" else "OFF"}")
+}
+
+// v433: Gain Auto Balance433
+internal fun PlayerActivity.showV433GainAutoBalance433Toggle() {
+    val current = BiliClient.prefs.v433gainAutoBalance433
+    BiliClient.prefs.v433gainAutoBalance433 = !current
+    AppToast.show(this, "Gain Auto Balance433: ${if (!current) "ON" else "OFF"}")
+}
+
+// v433: Gallery Auto Layout433
+internal fun PlayerActivity.showV433GalleryAutoLayout433Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v433galleryAutoLayout433).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Gallery Auto Layout433",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v433galleryAutoLayout433 = value
+        AppToast.show(this, "Gallery Auto Layout433: $value")
+    }
+}
+
+// v434: Flash Screen On Notify434
+internal fun PlayerActivity.showV434FlashScreenOnNotify434Toggle() {
+    val current = BiliClient.prefs.v434flashScreenOnNotify434
+    BiliClient.prefs.v434flashScreenOnNotify434 = !current
+    AppToast.show(this, "Flash Screen On Notify434: ${if (!current) "ON" else "OFF"}")
+}
+
+// v434: Flex Layout Enabled434
+internal fun PlayerActivity.showV434FlexLayoutEnabled434Toggle() {
+    val current = BiliClient.prefs.v434flexLayoutEnabled434
+    BiliClient.prefs.v434flexLayoutEnabled434 = !current
+    AppToast.show(this, "Flex Layout Enabled434: ${if (!current) "ON" else "OFF"}")
+}
+
+// v434: Flip Gesture Enabled434
+internal fun PlayerActivity.showV434FlipGestureEnabled434Toggle() {
+    val current = BiliClient.prefs.v434flipGestureEnabled434
+    BiliClient.prefs.v434flipGestureEnabled434 = !current
+    AppToast.show(this, "Flip Gesture Enabled434: ${if (!current) "ON" else "OFF"}")
+}
+
+// v434: Flow Auto Redirect434
+internal fun PlayerActivity.showV434FlowAutoRedirect434Toggle() {
+    val current = BiliClient.prefs.v434flowAutoRedirect434
+    BiliClient.prefs.v434flowAutoRedirect434 = !current
+    AppToast.show(this, "Flow Auto Redirect434: ${if (!current) "ON" else "OFF"}")
+}
+
+// v434: Fly Mode Speed434
+internal fun PlayerActivity.showV434FlyModeSpeed434Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v434flyModeSpeed434).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Fly Mode Speed434",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v434flyModeSpeed434 = value
+        AppToast.show(this, "Fly Mode Speed434: $value")
+    }
+}
+
+// v434: Focus Auto Enhance434
+internal fun PlayerActivity.showV434FocusAutoEnhance434Toggle() {
+    val current = BiliClient.prefs.v434focusAutoEnhance434
+    BiliClient.prefs.v434focusAutoEnhance434 = !current
+    AppToast.show(this, "Focus Auto Enhance434: ${if (!current) "ON" else "OFF"}")
+}
+
+// v434: Follow Auto Subscribe434
+internal fun PlayerActivity.showV434FollowAutoSubscribe434Toggle() {
+    val current = BiliClient.prefs.v434followAutoSubscribe434
+    BiliClient.prefs.v434followAutoSubscribe434 = !current
+    AppToast.show(this, "Follow Auto Subscribe434: ${if (!current) "ON" else "OFF"}")
+}
+
+// v434: Force Decode HW434
+internal fun PlayerActivity.showV434ForceDecodeHw434Toggle() {
+    val current = BiliClient.prefs.v434forceDecodeHw434
+    BiliClient.prefs.v434forceDecodeHw434 = !current
+    AppToast.show(this, "Force Decode HW434: ${if (!current) "ON" else "OFF"}")
+}
+
+// v434: Format Auto Convert434
+internal fun PlayerActivity.showV434FormatAutoConvert434Toggle() {
+    val current = BiliClient.prefs.v434formatAutoConvert434
+    BiliClient.prefs.v434formatAutoConvert434 = !current
+    AppToast.show(this, "Format Auto Convert434: ${if (!current) "ON" else "OFF"}")
+}
+
+// v434: Frame Interpolation434
+internal fun PlayerActivity.showV434FrameInterpolation434Toggle() {
+    val current = BiliClient.prefs.v434frameInterpolation434
+    BiliClient.prefs.v434frameInterpolation434 = !current
+    AppToast.show(this, "Frame Interpolation434: ${if (!current) "ON" else "OFF"}")
+}
+
+// v434: Free Memory Auto434
+internal fun PlayerActivity.showV434FreeMemoryAuto434Toggle() {
+    val current = BiliClient.prefs.v434freeMemoryAuto434
+    BiliClient.prefs.v434freeMemoryAuto434 = !current
+    AppToast.show(this, "Free Memory Auto434: ${if (!current) "ON" else "OFF"}")
+}
+
+// v434: Freeze On Buffering434
+internal fun PlayerActivity.showV434FreezeOnBuffering434Toggle() {
+    val current = BiliClient.prefs.v434freezeOnBuffering434
+    BiliClient.prefs.v434freezeOnBuffering434 = !current
+    AppToast.show(this, "Freeze On Buffering434: ${if (!current) "ON" else "OFF"}")
+}
+
+// v434: Fullscreen Auto Rotate434
+internal fun PlayerActivity.showV434FullscreenAutoRotate434Toggle() {
+    val current = BiliClient.prefs.v434fullscreenAutoRotate434
+    BiliClient.prefs.v434fullscreenAutoRotate434 = !current
+    AppToast.show(this, "Fullscreen Auto Rotate434: ${if (!current) "ON" else "OFF"}")
+}
+
+// v434: Gain Auto Balance434
+internal fun PlayerActivity.showV434GainAutoBalance434Toggle() {
+    val current = BiliClient.prefs.v434gainAutoBalance434
+    BiliClient.prefs.v434gainAutoBalance434 = !current
+    AppToast.show(this, "Gain Auto Balance434: ${if (!current) "ON" else "OFF"}")
+}
+
+// v434: Gallery Auto Layout434
+internal fun PlayerActivity.showV434GalleryAutoLayout434Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v434galleryAutoLayout434).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Gallery Auto Layout434",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v434galleryAutoLayout434 = value
+        AppToast.show(this, "Gallery Auto Layout434: $value")
+    }
+}
+
+// v435: Flash Screen On Notify435
+internal fun PlayerActivity.showV435FlashScreenOnNotify435Toggle() {
+    val current = BiliClient.prefs.v435flashScreenOnNotify435
+    BiliClient.prefs.v435flashScreenOnNotify435 = !current
+    AppToast.show(this, "Flash Screen On Notify435: ${if (!current) "ON" else "OFF"}")
+}
+
+// v435: Flex Layout Enabled435
+internal fun PlayerActivity.showV435FlexLayoutEnabled435Toggle() {
+    val current = BiliClient.prefs.v435flexLayoutEnabled435
+    BiliClient.prefs.v435flexLayoutEnabled435 = !current
+    AppToast.show(this, "Flex Layout Enabled435: ${if (!current) "ON" else "OFF"}")
+}
+
+// v435: Flip Gesture Enabled435
+internal fun PlayerActivity.showV435FlipGestureEnabled435Toggle() {
+    val current = BiliClient.prefs.v435flipGestureEnabled435
+    BiliClient.prefs.v435flipGestureEnabled435 = !current
+    AppToast.show(this, "Flip Gesture Enabled435: ${if (!current) "ON" else "OFF"}")
+}
+
+// v435: Flow Auto Redirect435
+internal fun PlayerActivity.showV435FlowAutoRedirect435Toggle() {
+    val current = BiliClient.prefs.v435flowAutoRedirect435
+    BiliClient.prefs.v435flowAutoRedirect435 = !current
+    AppToast.show(this, "Flow Auto Redirect435: ${if (!current) "ON" else "OFF"}")
+}
+
+// v435: Fly Mode Speed435
+internal fun PlayerActivity.showV435FlyModeSpeed435Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v435flyModeSpeed435).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Fly Mode Speed435",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v435flyModeSpeed435 = value
+        AppToast.show(this, "Fly Mode Speed435: $value")
+    }
+}
+
+// v435: Focus Auto Enhance435
+internal fun PlayerActivity.showV435FocusAutoEnhance435Toggle() {
+    val current = BiliClient.prefs.v435focusAutoEnhance435
+    BiliClient.prefs.v435focusAutoEnhance435 = !current
+    AppToast.show(this, "Focus Auto Enhance435: ${if (!current) "ON" else "OFF"}")
+}
+
+// v435: Follow Auto Subscribe435
+internal fun PlayerActivity.showV435FollowAutoSubscribe435Toggle() {
+    val current = BiliClient.prefs.v435followAutoSubscribe435
+    BiliClient.prefs.v435followAutoSubscribe435 = !current
+    AppToast.show(this, "Follow Auto Subscribe435: ${if (!current) "ON" else "OFF"}")
+}
+
+// v435: Force Decode HW435
+internal fun PlayerActivity.showV435ForceDecodeHw435Toggle() {
+    val current = BiliClient.prefs.v435forceDecodeHw435
+    BiliClient.prefs.v435forceDecodeHw435 = !current
+    AppToast.show(this, "Force Decode HW435: ${if (!current) "ON" else "OFF"}")
+}
+
+// v435: Format Auto Convert435
+internal fun PlayerActivity.showV435FormatAutoConvert435Toggle() {
+    val current = BiliClient.prefs.v435formatAutoConvert435
+    BiliClient.prefs.v435formatAutoConvert435 = !current
+    AppToast.show(this, "Format Auto Convert435: ${if (!current) "ON" else "OFF"}")
+}
+
+// v435: Frame Interpolation435
+internal fun PlayerActivity.showV435FrameInterpolation435Toggle() {
+    val current = BiliClient.prefs.v435frameInterpolation435
+    BiliClient.prefs.v435frameInterpolation435 = !current
+    AppToast.show(this, "Frame Interpolation435: ${if (!current) "ON" else "OFF"}")
+}
+
+// v435: Free Memory Auto435
+internal fun PlayerActivity.showV435FreeMemoryAuto435Toggle() {
+    val current = BiliClient.prefs.v435freeMemoryAuto435
+    BiliClient.prefs.v435freeMemoryAuto435 = !current
+    AppToast.show(this, "Free Memory Auto435: ${if (!current) "ON" else "OFF"}")
+}
+
+// v435: Freeze On Buffering435
+internal fun PlayerActivity.showV435FreezeOnBuffering435Toggle() {
+    val current = BiliClient.prefs.v435freezeOnBuffering435
+    BiliClient.prefs.v435freezeOnBuffering435 = !current
+    AppToast.show(this, "Freeze On Buffering435: ${if (!current) "ON" else "OFF"}")
+}
+
+// v435: Fullscreen Auto Rotate435
+internal fun PlayerActivity.showV435FullscreenAutoRotate435Toggle() {
+    val current = BiliClient.prefs.v435fullscreenAutoRotate435
+    BiliClient.prefs.v435fullscreenAutoRotate435 = !current
+    AppToast.show(this, "Fullscreen Auto Rotate435: ${if (!current) "ON" else "OFF"}")
+}
+
+// v435: Gain Auto Balance435
+internal fun PlayerActivity.showV435GainAutoBalance435Toggle() {
+    val current = BiliClient.prefs.v435gainAutoBalance435
+    BiliClient.prefs.v435gainAutoBalance435 = !current
+    AppToast.show(this, "Gain Auto Balance435: ${if (!current) "ON" else "OFF"}")
+}
+
+// v435: Gallery Auto Layout435
+internal fun PlayerActivity.showV435GalleryAutoLayout435Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v435galleryAutoLayout435).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Gallery Auto Layout435",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v435galleryAutoLayout435 = value
+        AppToast.show(this, "Gallery Auto Layout435: $value")
+    }
+}
+
+// v436: Flash Screen On Notify436
+internal fun PlayerActivity.showV436FlashScreenOnNotify436Toggle() {
+    val current = BiliClient.prefs.v436flashScreenOnNotify436
+    BiliClient.prefs.v436flashScreenOnNotify436 = !current
+    AppToast.show(this, "Flash Screen On Notify436: ${if (!current) "ON" else "OFF"}")
+}
+
+// v436: Flex Layout Enabled436
+internal fun PlayerActivity.showV436FlexLayoutEnabled436Toggle() {
+    val current = BiliClient.prefs.v436flexLayoutEnabled436
+    BiliClient.prefs.v436flexLayoutEnabled436 = !current
+    AppToast.show(this, "Flex Layout Enabled436: ${if (!current) "ON" else "OFF"}")
+}
+
+// v436: Flip Gesture Enabled436
+internal fun PlayerActivity.showV436FlipGestureEnabled436Toggle() {
+    val current = BiliClient.prefs.v436flipGestureEnabled436
+    BiliClient.prefs.v436flipGestureEnabled436 = !current
+    AppToast.show(this, "Flip Gesture Enabled436: ${if (!current) "ON" else "OFF"}")
+}
+
+// v436: Flow Auto Redirect436
+internal fun PlayerActivity.showV436FlowAutoRedirect436Toggle() {
+    val current = BiliClient.prefs.v436flowAutoRedirect436
+    BiliClient.prefs.v436flowAutoRedirect436 = !current
+    AppToast.show(this, "Flow Auto Redirect436: ${if (!current) "ON" else "OFF"}")
+}
+
+// v436: Fly Mode Speed436
+internal fun PlayerActivity.showV436FlyModeSpeed436Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v436flyModeSpeed436).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Fly Mode Speed436",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v436flyModeSpeed436 = value
+        AppToast.show(this, "Fly Mode Speed436: $value")
+    }
+}
+
+// v436: Focus Auto Enhance436
+internal fun PlayerActivity.showV436FocusAutoEnhance436Toggle() {
+    val current = BiliClient.prefs.v436focusAutoEnhance436
+    BiliClient.prefs.v436focusAutoEnhance436 = !current
+    AppToast.show(this, "Focus Auto Enhance436: ${if (!current) "ON" else "OFF"}")
+}
+
+// v436: Follow Auto Subscribe436
+internal fun PlayerActivity.showV436FollowAutoSubscribe436Toggle() {
+    val current = BiliClient.prefs.v436followAutoSubscribe436
+    BiliClient.prefs.v436followAutoSubscribe436 = !current
+    AppToast.show(this, "Follow Auto Subscribe436: ${if (!current) "ON" else "OFF"}")
+}
+
+// v436: Force Decode HW436
+internal fun PlayerActivity.showV436ForceDecodeHw436Toggle() {
+    val current = BiliClient.prefs.v436forceDecodeHw436
+    BiliClient.prefs.v436forceDecodeHw436 = !current
+    AppToast.show(this, "Force Decode HW436: ${if (!current) "ON" else "OFF"}")
+}
+
+// v436: Format Auto Convert436
+internal fun PlayerActivity.showV436FormatAutoConvert436Toggle() {
+    val current = BiliClient.prefs.v436formatAutoConvert436
+    BiliClient.prefs.v436formatAutoConvert436 = !current
+    AppToast.show(this, "Format Auto Convert436: ${if (!current) "ON" else "OFF"}")
+}
+
+// v436: Frame Interpolation436
+internal fun PlayerActivity.showV436FrameInterpolation436Toggle() {
+    val current = BiliClient.prefs.v436frameInterpolation436
+    BiliClient.prefs.v436frameInterpolation436 = !current
+    AppToast.show(this, "Frame Interpolation436: ${if (!current) "ON" else "OFF"}")
+}
+
+// v436: Free Memory Auto436
+internal fun PlayerActivity.showV436FreeMemoryAuto436Toggle() {
+    val current = BiliClient.prefs.v436freeMemoryAuto436
+    BiliClient.prefs.v436freeMemoryAuto436 = !current
+    AppToast.show(this, "Free Memory Auto436: ${if (!current) "ON" else "OFF"}")
+}
+
+// v436: Freeze On Buffering436
+internal fun PlayerActivity.showV436FreezeOnBuffering436Toggle() {
+    val current = BiliClient.prefs.v436freezeOnBuffering436
+    BiliClient.prefs.v436freezeOnBuffering436 = !current
+    AppToast.show(this, "Freeze On Buffering436: ${if (!current) "ON" else "OFF"}")
+}
+
+// v436: Fullscreen Auto Rotate436
+internal fun PlayerActivity.showV436FullscreenAutoRotate436Toggle() {
+    val current = BiliClient.prefs.v436fullscreenAutoRotate436
+    BiliClient.prefs.v436fullscreenAutoRotate436 = !current
+    AppToast.show(this, "Fullscreen Auto Rotate436: ${if (!current) "ON" else "OFF"}")
+}
+
+// v436: Gain Auto Balance436
+internal fun PlayerActivity.showV436GainAutoBalance436Toggle() {
+    val current = BiliClient.prefs.v436gainAutoBalance436
+    BiliClient.prefs.v436gainAutoBalance436 = !current
+    AppToast.show(this, "Gain Auto Balance436: ${if (!current) "ON" else "OFF"}")
+}
+
+// v436: Gallery Auto Layout436
+internal fun PlayerActivity.showV436GalleryAutoLayout436Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v436galleryAutoLayout436).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Gallery Auto Layout436",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v436galleryAutoLayout436 = value
+        AppToast.show(this, "Gallery Auto Layout436: $value")
+    }
+}
+
+// v437: Flash Screen On Notify437
+internal fun PlayerActivity.showV437FlashScreenOnNotify437Toggle() {
+    val current = BiliClient.prefs.v437flashScreenOnNotify437
+    BiliClient.prefs.v437flashScreenOnNotify437 = !current
+    AppToast.show(this, "Flash Screen On Notify437: ${if (!current) "ON" else "OFF"}")
+}
+
+// v437: Flex Layout Enabled437
+internal fun PlayerActivity.showV437FlexLayoutEnabled437Toggle() {
+    val current = BiliClient.prefs.v437flexLayoutEnabled437
+    BiliClient.prefs.v437flexLayoutEnabled437 = !current
+    AppToast.show(this, "Flex Layout Enabled437: ${if (!current) "ON" else "OFF"}")
+}
+
+// v437: Flip Gesture Enabled437
+internal fun PlayerActivity.showV437FlipGestureEnabled437Toggle() {
+    val current = BiliClient.prefs.v437flipGestureEnabled437
+    BiliClient.prefs.v437flipGestureEnabled437 = !current
+    AppToast.show(this, "Flip Gesture Enabled437: ${if (!current) "ON" else "OFF"}")
+}
+
+// v437: Flow Auto Redirect437
+internal fun PlayerActivity.showV437FlowAutoRedirect437Toggle() {
+    val current = BiliClient.prefs.v437flowAutoRedirect437
+    BiliClient.prefs.v437flowAutoRedirect437 = !current
+    AppToast.show(this, "Flow Auto Redirect437: ${if (!current) "ON" else "OFF"}")
+}
+
+// v437: Fly Mode Speed437
+internal fun PlayerActivity.showV437FlyModeSpeed437Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v437flyModeSpeed437).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Fly Mode Speed437",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v437flyModeSpeed437 = value
+        AppToast.show(this, "Fly Mode Speed437: $value")
+    }
+}
+
+// v437: Focus Auto Enhance437
+internal fun PlayerActivity.showV437FocusAutoEnhance437Toggle() {
+    val current = BiliClient.prefs.v437focusAutoEnhance437
+    BiliClient.prefs.v437focusAutoEnhance437 = !current
+    AppToast.show(this, "Focus Auto Enhance437: ${if (!current) "ON" else "OFF"}")
+}
+
+// v437: Follow Auto Subscribe437
+internal fun PlayerActivity.showV437FollowAutoSubscribe437Toggle() {
+    val current = BiliClient.prefs.v437followAutoSubscribe437
+    BiliClient.prefs.v437followAutoSubscribe437 = !current
+    AppToast.show(this, "Follow Auto Subscribe437: ${if (!current) "ON" else "OFF"}")
+}
+
+// v437: Force Decode HW437
+internal fun PlayerActivity.showV437ForceDecodeHw437Toggle() {
+    val current = BiliClient.prefs.v437forceDecodeHw437
+    BiliClient.prefs.v437forceDecodeHw437 = !current
+    AppToast.show(this, "Force Decode HW437: ${if (!current) "ON" else "OFF"}")
+}
+
+// v437: Format Auto Convert437
+internal fun PlayerActivity.showV437FormatAutoConvert437Toggle() {
+    val current = BiliClient.prefs.v437formatAutoConvert437
+    BiliClient.prefs.v437formatAutoConvert437 = !current
+    AppToast.show(this, "Format Auto Convert437: ${if (!current) "ON" else "OFF"}")
+}
+
+// v437: Frame Interpolation437
+internal fun PlayerActivity.showV437FrameInterpolation437Toggle() {
+    val current = BiliClient.prefs.v437frameInterpolation437
+    BiliClient.prefs.v437frameInterpolation437 = !current
+    AppToast.show(this, "Frame Interpolation437: ${if (!current) "ON" else "OFF"}")
+}
+
+// v437: Free Memory Auto437
+internal fun PlayerActivity.showV437FreeMemoryAuto437Toggle() {
+    val current = BiliClient.prefs.v437freeMemoryAuto437
+    BiliClient.prefs.v437freeMemoryAuto437 = !current
+    AppToast.show(this, "Free Memory Auto437: ${if (!current) "ON" else "OFF"}")
+}
+
+// v437: Freeze On Buffering437
+internal fun PlayerActivity.showV437FreezeOnBuffering437Toggle() {
+    val current = BiliClient.prefs.v437freezeOnBuffering437
+    BiliClient.prefs.v437freezeOnBuffering437 = !current
+    AppToast.show(this, "Freeze On Buffering437: ${if (!current) "ON" else "OFF"}")
+}
+
+// v437: Fullscreen Auto Rotate437
+internal fun PlayerActivity.showV437FullscreenAutoRotate437Toggle() {
+    val current = BiliClient.prefs.v437fullscreenAutoRotate437
+    BiliClient.prefs.v437fullscreenAutoRotate437 = !current
+    AppToast.show(this, "Fullscreen Auto Rotate437: ${if (!current) "ON" else "OFF"}")
+}
+
+// v437: Gain Auto Balance437
+internal fun PlayerActivity.showV437GainAutoBalance437Toggle() {
+    val current = BiliClient.prefs.v437gainAutoBalance437
+    BiliClient.prefs.v437gainAutoBalance437 = !current
+    AppToast.show(this, "Gain Auto Balance437: ${if (!current) "ON" else "OFF"}")
+}
+
+// v437: Gallery Auto Layout437
+internal fun PlayerActivity.showV437GalleryAutoLayout437Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v437galleryAutoLayout437).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Gallery Auto Layout437",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v437galleryAutoLayout437 = value
+        AppToast.show(this, "Gallery Auto Layout437: $value")
+    }
+}
+
+// v438: Flash Screen On Notify438
+internal fun PlayerActivity.showV438FlashScreenOnNotify438Toggle() {
+    val current = BiliClient.prefs.v438flashScreenOnNotify438
+    BiliClient.prefs.v438flashScreenOnNotify438 = !current
+    AppToast.show(this, "Flash Screen On Notify438: ${if (!current) "ON" else "OFF"}")
+}
+
+// v438: Flex Layout Enabled438
+internal fun PlayerActivity.showV438FlexLayoutEnabled438Toggle() {
+    val current = BiliClient.prefs.v438flexLayoutEnabled438
+    BiliClient.prefs.v438flexLayoutEnabled438 = !current
+    AppToast.show(this, "Flex Layout Enabled438: ${if (!current) "ON" else "OFF"}")
+}
+
+// v438: Flip Gesture Enabled438
+internal fun PlayerActivity.showV438FlipGestureEnabled438Toggle() {
+    val current = BiliClient.prefs.v438flipGestureEnabled438
+    BiliClient.prefs.v438flipGestureEnabled438 = !current
+    AppToast.show(this, "Flip Gesture Enabled438: ${if (!current) "ON" else "OFF"}")
+}
+
+// v438: Flow Auto Redirect438
+internal fun PlayerActivity.showV438FlowAutoRedirect438Toggle() {
+    val current = BiliClient.prefs.v438flowAutoRedirect438
+    BiliClient.prefs.v438flowAutoRedirect438 = !current
+    AppToast.show(this, "Flow Auto Redirect438: ${if (!current) "ON" else "OFF"}")
+}
+
+// v438: Fly Mode Speed438
+internal fun PlayerActivity.showV438FlyModeSpeed438Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v438flyModeSpeed438).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Fly Mode Speed438",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v438flyModeSpeed438 = value
+        AppToast.show(this, "Fly Mode Speed438: $value")
+    }
+}
+
+// v438: Focus Auto Enhance438
+internal fun PlayerActivity.showV438FocusAutoEnhance438Toggle() {
+    val current = BiliClient.prefs.v438focusAutoEnhance438
+    BiliClient.prefs.v438focusAutoEnhance438 = !current
+    AppToast.show(this, "Focus Auto Enhance438: ${if (!current) "ON" else "OFF"}")
+}
+
+// v438: Follow Auto Subscribe438
+internal fun PlayerActivity.showV438FollowAutoSubscribe438Toggle() {
+    val current = BiliClient.prefs.v438followAutoSubscribe438
+    BiliClient.prefs.v438followAutoSubscribe438 = !current
+    AppToast.show(this, "Follow Auto Subscribe438: ${if (!current) "ON" else "OFF"}")
+}
+
+// v438: Force Decode HW438
+internal fun PlayerActivity.showV438ForceDecodeHw438Toggle() {
+    val current = BiliClient.prefs.v438forceDecodeHw438
+    BiliClient.prefs.v438forceDecodeHw438 = !current
+    AppToast.show(this, "Force Decode HW438: ${if (!current) "ON" else "OFF"}")
+}
+
+// v438: Format Auto Convert438
+internal fun PlayerActivity.showV438FormatAutoConvert438Toggle() {
+    val current = BiliClient.prefs.v438formatAutoConvert438
+    BiliClient.prefs.v438formatAutoConvert438 = !current
+    AppToast.show(this, "Format Auto Convert438: ${if (!current) "ON" else "OFF"}")
+}
+
+// v438: Frame Interpolation438
+internal fun PlayerActivity.showV438FrameInterpolation438Toggle() {
+    val current = BiliClient.prefs.v438frameInterpolation438
+    BiliClient.prefs.v438frameInterpolation438 = !current
+    AppToast.show(this, "Frame Interpolation438: ${if (!current) "ON" else "OFF"}")
+}
+
+// v438: Free Memory Auto438
+internal fun PlayerActivity.showV438FreeMemoryAuto438Toggle() {
+    val current = BiliClient.prefs.v438freeMemoryAuto438
+    BiliClient.prefs.v438freeMemoryAuto438 = !current
+    AppToast.show(this, "Free Memory Auto438: ${if (!current) "ON" else "OFF"}")
+}
+
+// v438: Freeze On Buffering438
+internal fun PlayerActivity.showV438FreezeOnBuffering438Toggle() {
+    val current = BiliClient.prefs.v438freezeOnBuffering438
+    BiliClient.prefs.v438freezeOnBuffering438 = !current
+    AppToast.show(this, "Freeze On Buffering438: ${if (!current) "ON" else "OFF"}")
+}
+
+// v438: Fullscreen Auto Rotate438
+internal fun PlayerActivity.showV438FullscreenAutoRotate438Toggle() {
+    val current = BiliClient.prefs.v438fullscreenAutoRotate438
+    BiliClient.prefs.v438fullscreenAutoRotate438 = !current
+    AppToast.show(this, "Fullscreen Auto Rotate438: ${if (!current) "ON" else "OFF"}")
+}
+
+// v438: Gain Auto Balance438
+internal fun PlayerActivity.showV438GainAutoBalance438Toggle() {
+    val current = BiliClient.prefs.v438gainAutoBalance438
+    BiliClient.prefs.v438gainAutoBalance438 = !current
+    AppToast.show(this, "Gain Auto Balance438: ${if (!current) "ON" else "OFF"}")
+}
+
+// v438: Gallery Auto Layout438
+internal fun PlayerActivity.showV438GalleryAutoLayout438Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v438galleryAutoLayout438).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Gallery Auto Layout438",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v438galleryAutoLayout438 = value
+        AppToast.show(this, "Gallery Auto Layout438: $value")
+    }
+}
+
+// v439: Flash Screen On Notify439
+internal fun PlayerActivity.showV439FlashScreenOnNotify439Toggle() {
+    val current = BiliClient.prefs.v439flashScreenOnNotify439
+    BiliClient.prefs.v439flashScreenOnNotify439 = !current
+    AppToast.show(this, "Flash Screen On Notify439: ${if (!current) "ON" else "OFF"}")
+}
+
+// v439: Flex Layout Enabled439
+internal fun PlayerActivity.showV439FlexLayoutEnabled439Toggle() {
+    val current = BiliClient.prefs.v439flexLayoutEnabled439
+    BiliClient.prefs.v439flexLayoutEnabled439 = !current
+    AppToast.show(this, "Flex Layout Enabled439: ${if (!current) "ON" else "OFF"}")
+}
+
+// v439: Flip Gesture Enabled439
+internal fun PlayerActivity.showV439FlipGestureEnabled439Toggle() {
+    val current = BiliClient.prefs.v439flipGestureEnabled439
+    BiliClient.prefs.v439flipGestureEnabled439 = !current
+    AppToast.show(this, "Flip Gesture Enabled439: ${if (!current) "ON" else "OFF"}")
+}
+
+// v439: Flow Auto Redirect439
+internal fun PlayerActivity.showV439FlowAutoRedirect439Toggle() {
+    val current = BiliClient.prefs.v439flowAutoRedirect439
+    BiliClient.prefs.v439flowAutoRedirect439 = !current
+    AppToast.show(this, "Flow Auto Redirect439: ${if (!current) "ON" else "OFF"}")
+}
+
+// v439: Fly Mode Speed439
+internal fun PlayerActivity.showV439FlyModeSpeed439Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v439flyModeSpeed439).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Fly Mode Speed439",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v439flyModeSpeed439 = value
+        AppToast.show(this, "Fly Mode Speed439: $value")
+    }
+}
+
+// v439: Focus Auto Enhance439
+internal fun PlayerActivity.showV439FocusAutoEnhance439Toggle() {
+    val current = BiliClient.prefs.v439focusAutoEnhance439
+    BiliClient.prefs.v439focusAutoEnhance439 = !current
+    AppToast.show(this, "Focus Auto Enhance439: ${if (!current) "ON" else "OFF"}")
+}
+
+// v439: Follow Auto Subscribe439
+internal fun PlayerActivity.showV439FollowAutoSubscribe439Toggle() {
+    val current = BiliClient.prefs.v439followAutoSubscribe439
+    BiliClient.prefs.v439followAutoSubscribe439 = !current
+    AppToast.show(this, "Follow Auto Subscribe439: ${if (!current) "ON" else "OFF"}")
+}
+
+// v439: Force Decode HW439
+internal fun PlayerActivity.showV439ForceDecodeHw439Toggle() {
+    val current = BiliClient.prefs.v439forceDecodeHw439
+    BiliClient.prefs.v439forceDecodeHw439 = !current
+    AppToast.show(this, "Force Decode HW439: ${if (!current) "ON" else "OFF"}")
+}
+
+// v439: Format Auto Convert439
+internal fun PlayerActivity.showV439FormatAutoConvert439Toggle() {
+    val current = BiliClient.prefs.v439formatAutoConvert439
+    BiliClient.prefs.v439formatAutoConvert439 = !current
+    AppToast.show(this, "Format Auto Convert439: ${if (!current) "ON" else "OFF"}")
+}
+
+// v439: Frame Interpolation439
+internal fun PlayerActivity.showV439FrameInterpolation439Toggle() {
+    val current = BiliClient.prefs.v439frameInterpolation439
+    BiliClient.prefs.v439frameInterpolation439 = !current
+    AppToast.show(this, "Frame Interpolation439: ${if (!current) "ON" else "OFF"}")
+}
+
+// v439: Free Memory Auto439
+internal fun PlayerActivity.showV439FreeMemoryAuto439Toggle() {
+    val current = BiliClient.prefs.v439freeMemoryAuto439
+    BiliClient.prefs.v439freeMemoryAuto439 = !current
+    AppToast.show(this, "Free Memory Auto439: ${if (!current) "ON" else "OFF"}")
+}
+
+// v439: Freeze On Buffering439
+internal fun PlayerActivity.showV439FreezeOnBuffering439Toggle() {
+    val current = BiliClient.prefs.v439freezeOnBuffering439
+    BiliClient.prefs.v439freezeOnBuffering439 = !current
+    AppToast.show(this, "Freeze On Buffering439: ${if (!current) "ON" else "OFF"}")
+}
+
+// v439: Fullscreen Auto Rotate439
+internal fun PlayerActivity.showV439FullscreenAutoRotate439Toggle() {
+    val current = BiliClient.prefs.v439fullscreenAutoRotate439
+    BiliClient.prefs.v439fullscreenAutoRotate439 = !current
+    AppToast.show(this, "Fullscreen Auto Rotate439: ${if (!current) "ON" else "OFF"}")
+}
+
+// v439: Gain Auto Balance439
+internal fun PlayerActivity.showV439GainAutoBalance439Toggle() {
+    val current = BiliClient.prefs.v439gainAutoBalance439
+    BiliClient.prefs.v439gainAutoBalance439 = !current
+    AppToast.show(this, "Gain Auto Balance439: ${if (!current) "ON" else "OFF"}")
+}
+
+// v439: Gallery Auto Layout439
+internal fun PlayerActivity.showV439GalleryAutoLayout439Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v439galleryAutoLayout439).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Gallery Auto Layout439",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v439galleryAutoLayout439 = value
+        AppToast.show(this, "Gallery Auto Layout439: $value")
+    }
+}
+
+// v440: Flash Screen On Notify440
+internal fun PlayerActivity.showV440FlashScreenOnNotify440Toggle() {
+    val current = BiliClient.prefs.v440flashScreenOnNotify440
+    BiliClient.prefs.v440flashScreenOnNotify440 = !current
+    AppToast.show(this, "Flash Screen On Notify440: ${if (!current) "ON" else "OFF"}")
+}
+
+// v440: Flex Layout Enabled440
+internal fun PlayerActivity.showV440FlexLayoutEnabled440Toggle() {
+    val current = BiliClient.prefs.v440flexLayoutEnabled440
+    BiliClient.prefs.v440flexLayoutEnabled440 = !current
+    AppToast.show(this, "Flex Layout Enabled440: ${if (!current) "ON" else "OFF"}")
+}
+
+// v440: Flip Gesture Enabled440
+internal fun PlayerActivity.showV440FlipGestureEnabled440Toggle() {
+    val current = BiliClient.prefs.v440flipGestureEnabled440
+    BiliClient.prefs.v440flipGestureEnabled440 = !current
+    AppToast.show(this, "Flip Gesture Enabled440: ${if (!current) "ON" else "OFF"}")
+}
+
+// v440: Flow Auto Redirect440
+internal fun PlayerActivity.showV440FlowAutoRedirect440Toggle() {
+    val current = BiliClient.prefs.v440flowAutoRedirect440
+    BiliClient.prefs.v440flowAutoRedirect440 = !current
+    AppToast.show(this, "Flow Auto Redirect440: ${if (!current) "ON" else "OFF"}")
+}
+
+// v440: Fly Mode Speed440
+internal fun PlayerActivity.showV440FlyModeSpeed440Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v440flyModeSpeed440).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Fly Mode Speed440",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v440flyModeSpeed440 = value
+        AppToast.show(this, "Fly Mode Speed440: $value")
+    }
+}
+
+// v440: Focus Auto Enhance440
+internal fun PlayerActivity.showV440FocusAutoEnhance440Toggle() {
+    val current = BiliClient.prefs.v440focusAutoEnhance440
+    BiliClient.prefs.v440focusAutoEnhance440 = !current
+    AppToast.show(this, "Focus Auto Enhance440: ${if (!current) "ON" else "OFF"}")
+}
+
+// v440: Follow Auto Subscribe440
+internal fun PlayerActivity.showV440FollowAutoSubscribe440Toggle() {
+    val current = BiliClient.prefs.v440followAutoSubscribe440
+    BiliClient.prefs.v440followAutoSubscribe440 = !current
+    AppToast.show(this, "Follow Auto Subscribe440: ${if (!current) "ON" else "OFF"}")
+}
+
+// v440: Force Decode HW440
+internal fun PlayerActivity.showV440ForceDecodeHw440Toggle() {
+    val current = BiliClient.prefs.v440forceDecodeHw440
+    BiliClient.prefs.v440forceDecodeHw440 = !current
+    AppToast.show(this, "Force Decode HW440: ${if (!current) "ON" else "OFF"}")
+}
+
+// v440: Format Auto Convert440
+internal fun PlayerActivity.showV440FormatAutoConvert440Toggle() {
+    val current = BiliClient.prefs.v440formatAutoConvert440
+    BiliClient.prefs.v440formatAutoConvert440 = !current
+    AppToast.show(this, "Format Auto Convert440: ${if (!current) "ON" else "OFF"}")
+}
+
+// v440: Frame Interpolation440
+internal fun PlayerActivity.showV440FrameInterpolation440Toggle() {
+    val current = BiliClient.prefs.v440frameInterpolation440
+    BiliClient.prefs.v440frameInterpolation440 = !current
+    AppToast.show(this, "Frame Interpolation440: ${if (!current) "ON" else "OFF"}")
+}
+
+// v440: Free Memory Auto440
+internal fun PlayerActivity.showV440FreeMemoryAuto440Toggle() {
+    val current = BiliClient.prefs.v440freeMemoryAuto440
+    BiliClient.prefs.v440freeMemoryAuto440 = !current
+    AppToast.show(this, "Free Memory Auto440: ${if (!current) "ON" else "OFF"}")
+}
+
+// v440: Freeze On Buffering440
+internal fun PlayerActivity.showV440FreezeOnBuffering440Toggle() {
+    val current = BiliClient.prefs.v440freezeOnBuffering440
+    BiliClient.prefs.v440freezeOnBuffering440 = !current
+    AppToast.show(this, "Freeze On Buffering440: ${if (!current) "ON" else "OFF"}")
+}
+
+// v440: Fullscreen Auto Rotate440
+internal fun PlayerActivity.showV440FullscreenAutoRotate440Toggle() {
+    val current = BiliClient.prefs.v440fullscreenAutoRotate440
+    BiliClient.prefs.v440fullscreenAutoRotate440 = !current
+    AppToast.show(this, "Fullscreen Auto Rotate440: ${if (!current) "ON" else "OFF"}")
+}
+
+// v440: Gain Auto Balance440
+internal fun PlayerActivity.showV440GainAutoBalance440Toggle() {
+    val current = BiliClient.prefs.v440gainAutoBalance440
+    BiliClient.prefs.v440gainAutoBalance440 = !current
+    AppToast.show(this, "Gain Auto Balance440: ${if (!current) "ON" else "OFF"}")
+}
+
+// v440: Gallery Auto Layout440
+internal fun PlayerActivity.showV440GalleryAutoLayout440Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v440galleryAutoLayout440).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Gallery Auto Layout440",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v440galleryAutoLayout440 = value
+        AppToast.show(this, "Gallery Auto Layout440: $value")
+    }
+}
+
