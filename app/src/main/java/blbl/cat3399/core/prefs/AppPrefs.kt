@@ -14649,604 +14649,604 @@ class AppPrefs(context: Context) {
         set(value) = prefs.edit().putInt(KEY_V130SUBTITLEANIMATIONROTATE130, value).apply()
 
     var v131audioChorusDepth: Int
-        get() = mSharedPreferences.getInt(KEY_V131AUDIOCHORUSDEPTH, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V131AUDIOCHORUSDEPTH, value).apply()
+        get() = prefs.getInt(KEY_V131AUDIOCHORUSDEPTH, 0)
+        set(value) = prefs.edit().putInt(KEY_V131AUDIOCHORUSDEPTH, value).apply()
 
     var v131danmakuFontBgFillShadowColor: Int
-        get() = mSharedPreferences.getInt(KEY_V131DANMAKUFONTBGFILLSHADOWCOLOR, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V131DANMAKUFONTBGFILLSHADOWCOLOR, value).apply()
+        get() = prefs.getInt(KEY_V131DANMAKUFONTBGFILLSHADOWCOLOR, 0)
+        set(value) = prefs.edit().putInt(KEY_V131DANMAKUFONTBGFILLSHADOWCOLOR, value).apply()
 
     var v131subtitleAnimationRotate131: Int
-        get() = mSharedPreferences.getInt(KEY_V131SUBTITLEANIMATIONROTATE131, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V131SUBTITLEANIMATIONROTATE131, value).apply()
+        get() = prefs.getInt(KEY_V131SUBTITLEANIMATIONROTATE131, 0)
+        set(value) = prefs.edit().putInt(KEY_V131SUBTITLEANIMATIONROTATE131, value).apply()
 
     var v131gestureTapZoneSensitivity: Int
-        get() = mSharedPreferences.getInt(KEY_V131GESTURETAPZONESENSITIVITY, 50)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V131GESTURETAPZONESENSITIVITY, value).apply()
+        get() = prefs.getInt(KEY_V131GESTURETAPZONESENSITIVITY, 50)
+        set(value) = prefs.edit().putInt(KEY_V131GESTURETAPZONESENSITIVITY, value).apply()
 
     var v131castVideoPIPFollowMain: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V131CASTVIDEOPIPFOLLOWMAIN, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V131CASTVIDEOPIPFOLLOWMAIN, value).apply()
+        get() = prefs.getBoolean(KEY_V131CASTVIDEOPIPFOLLOWMAIN, false)
+        set(value) = prefs.edit().putBoolean(KEY_V131CASTVIDEOPIPFOLLOWMAIN, value).apply()
 
     var v131playlistAutoGroupByGenre: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V131PLAYLISTAUTOGROUPBYGENRE, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V131PLAYLISTAUTOGROUPBYGENRE, value).apply()
+        get() = prefs.getBoolean(KEY_V131PLAYLISTAUTOGROUPBYGENRE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V131PLAYLISTAUTOGROUPBYGENRE, value).apply()
 
     var v131cacheSmartPinningOnSchedule: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V131CACHESMARTPINNINGONSCHEDULE, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V131CACHESMARTPINNINGONSCHEDULE, value).apply()
+        get() = prefs.getBoolean(KEY_V131CACHESMARTPINNINGONSCHEDULE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V131CACHESMARTPINNINGONSCHEDULE, value).apply()
 
     var v131progressBarCustomThumbShadow131: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V131PROGRESSBARCUSTOMTHUMBSHADOW131, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V131PROGRESSBARCUSTOMTHUMBSHADOW131, value).apply()
+        get() = prefs.getBoolean(KEY_V131PROGRESSBARCUSTOMTHUMBSHADOW131, false)
+        set(value) = prefs.edit().putBoolean(KEY_V131PROGRESSBARCUSTOMTHUMBSHADOW131, value).apply()
 
     var v131volumeNormalizeMode: Int
-        get() = mSharedPreferences.getInt(KEY_V131VOLUMENORMALIZEMODE, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V131VOLUMENORMALIZEMODE, value).apply()
+        get() = prefs.getInt(KEY_V131VOLUMENORMALIZEMODE, 0)
+        set(value) = prefs.edit().putInt(KEY_V131VOLUMENORMALIZEMODE, value).apply()
 
     var v131historyAutoClean131: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V131HISTORYAUTOCLEAN131, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V131HISTORYAUTOCLEAN131, value).apply()
+        get() = prefs.getBoolean(KEY_V131HISTORYAUTOCLEAN131, false)
+        set(value) = prefs.edit().putBoolean(KEY_V131HISTORYAUTOCLEAN131, value).apply()
 
     var v131playbackSpeedPresetsQuickSwitch: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V131PLAYBACKSPEEDPRESETSQUICKSWITCH, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V131PLAYBACKSPEEDPRESETSQUICKSWITCH, value).apply()
+        get() = prefs.getBoolean(KEY_V131PLAYBACKSPEEDPRESETSQUICKSWITCH, false)
+        set(value) = prefs.edit().putBoolean(KEY_V131PLAYBACKSPEEDPRESETSQUICKSWITCH, value).apply()
 
     var v131screenshotAutoShareMessenger: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V131SCREENSHOTAUTOSHAREMESSENGER, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V131SCREENSHOTAUTOSHAREMESSENGER, value).apply()
+        get() = prefs.getBoolean(KEY_V131SCREENSHOTAUTOSHAREMESSENGER, false)
+        set(value) = prefs.edit().putBoolean(KEY_V131SCREENSHOTAUTOSHAREMESSENGER, value).apply()
 
     var v131videoPIPTransitionSpeed: Int
-        get() = mSharedPreferences.getInt(KEY_V131VIDEOPIPTRANSITIONSPEED, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V131VIDEOPIPTRANSITIONSPEED, value).apply()
+        get() = prefs.getInt(KEY_V131VIDEOPIPTRANSITIONSPEED, 0)
+        set(value) = prefs.edit().putInt(KEY_V131VIDEOPIPTRANSITIONSPEED, value).apply()
 
     var v131danmakuFontBgFillShadowOffsetX: Int
-        get() = mSharedPreferences.getInt(KEY_V131DANMAKUFONTBGFILLSHADOWOFFSETX, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V131DANMAKUFONTBGFILLSHADOWOFFSETX, value).apply()
+        get() = prefs.getInt(KEY_V131DANMAKUFONTBGFILLSHADOWOFFSETX, 0)
+        set(value) = prefs.edit().putInt(KEY_V131DANMAKUFONTBGFILLSHADOWOFFSETX, value).apply()
 
     var v131subtitleAnimationTranslate131: Int
-        get() = mSharedPreferences.getInt(KEY_V131SUBTITLEANIMATIONTRANSLATE131, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V131SUBTITLEANIMATIONTRANSLATE131, value).apply()
+        get() = prefs.getInt(KEY_V131SUBTITLEANIMATIONTRANSLATE131, 0)
+        set(value) = prefs.edit().putInt(KEY_V131SUBTITLEANIMATIONTRANSLATE131, value).apply()
 
     var v132audioChorusFeedback: Int
-        get() = mSharedPreferences.getInt(KEY_V132AUDIOCHORUSFEEDBACK, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V132AUDIOCHORUSFEEDBACK, value).apply()
+        get() = prefs.getInt(KEY_V132AUDIOCHORUSFEEDBACK, 0)
+        set(value) = prefs.edit().putInt(KEY_V132AUDIOCHORUSFEEDBACK, value).apply()
 
     var v132danmakuFontBgFillShadowOffsetY: Int
-        get() = mSharedPreferences.getInt(KEY_V132DANMAKUFONTBGFILLSHADOWOFFSETY, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V132DANMAKUFONTBGFILLSHADOWOFFSETY, value).apply()
+        get() = prefs.getInt(KEY_V132DANMAKUFONTBGFILLSHADOWOFFSETY, 0)
+        set(value) = prefs.edit().putInt(KEY_V132DANMAKUFONTBGFILLSHADOWOFFSETY, value).apply()
 
     var v132subtitleAnimationTranslate132: Int
-        get() = mSharedPreferences.getInt(KEY_V132SUBTITLEANIMATIONTRANSLATE132, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V132SUBTITLEANIMATIONTRANSLATE132, value).apply()
+        get() = prefs.getInt(KEY_V132SUBTITLEANIMATIONTRANSLATE132, 0)
+        set(value) = prefs.edit().putInt(KEY_V132SUBTITLEANIMATIONTRANSLATE132, value).apply()
 
     var v132gestureTapZoneVisualFeedback: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V132GESTURETAPZONEVISUALFEEDBACK, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V132GESTURETAPZONEVISUALFEEDBACK, value).apply()
+        get() = prefs.getBoolean(KEY_V132GESTURETAPZONEVISUALFEEDBACK, false)
+        set(value) = prefs.edit().putBoolean(KEY_V132GESTURETAPZONEVISUALFEEDBACK, value).apply()
 
     var v132castVideoPIPFollowFullscreen: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V132CASTVIDEOPIPFOLLOWFULLSCREEN, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V132CASTVIDEOPIPFOLLOWFULLSCREEN, value).apply()
+        get() = prefs.getBoolean(KEY_V132CASTVIDEOPIPFOLLOWFULLSCREEN, false)
+        set(value) = prefs.edit().putBoolean(KEY_V132CASTVIDEOPIPFOLLOWFULLSCREEN, value).apply()
 
     var v132playlistAutoGroupBySeries132: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V132PLAYLISTAUTOGROUPBYSERIES132, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V132PLAYLISTAUTOGROUPBYSERIES132, value).apply()
+        get() = prefs.getBoolean(KEY_V132PLAYLISTAUTOGROUPBYSERIES132, false)
+        set(value) = prefs.edit().putBoolean(KEY_V132PLAYLISTAUTOGROUPBYSERIES132, value).apply()
 
     var v132cacheSmartPinningOnNetworkChange: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V132CACHESMARTPINNINGONNETWORKCHANGE, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V132CACHESMARTPINNINGONNETWORKCHANGE, value).apply()
+        get() = prefs.getBoolean(KEY_V132CACHESMARTPINNINGONNETWORKCHANGE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V132CACHESMARTPINNINGONNETWORKCHANGE, value).apply()
 
     var v132progressBarCustomThumbGlow132: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V132PROGRESSBARCUSTOMTHUMBGLOW132, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V132PROGRESSBARCUSTOMTHUMBGLOW132, value).apply()
+        get() = prefs.getBoolean(KEY_V132PROGRESSBARCUSTOMTHUMBGLOW132, false)
+        set(value) = prefs.edit().putBoolean(KEY_V132PROGRESSBARCUSTOMTHUMBGLOW132, value).apply()
 
     var v132volumeNormalizeTarget: Int
-        get() = mSharedPreferences.getInt(KEY_V132VOLUMENORMALIZETARGET, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V132VOLUMENORMALIZETARGET, value).apply()
+        get() = prefs.getInt(KEY_V132VOLUMENORMALIZETARGET, 0)
+        set(value) = prefs.edit().putInt(KEY_V132VOLUMENORMALIZETARGET, value).apply()
 
     var v132historyAutoClean132: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V132HISTORYAUTOCLEAN132, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V132HISTORYAUTOCLEAN132, value).apply()
+        get() = prefs.getBoolean(KEY_V132HISTORYAUTOCLEAN132, false)
+        set(value) = prefs.edit().putBoolean(KEY_V132HISTORYAUTOCLEAN132, value).apply()
 
     var v132playbackSpeedPresetsLongPress: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V132PLAYBACKSPEEDPRESETSLONGPRESS, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V132PLAYBACKSPEEDPRESETSLONGPRESS, value).apply()
+        get() = prefs.getBoolean(KEY_V132PLAYBACKSPEEDPRESETSLONGPRESS, false)
+        set(value) = prefs.edit().putBoolean(KEY_V132PLAYBACKSPEEDPRESETSLONGPRESS, value).apply()
 
     var v132screenshotAutoShareViber: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V132SCREENSHOTAUTOSHAREVIBER, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V132SCREENSHOTAUTOSHAREVIBER, value).apply()
+        get() = prefs.getBoolean(KEY_V132SCREENSHOTAUTOSHAREVIBER, false)
+        set(value) = prefs.edit().putBoolean(KEY_V132SCREENSHOTAUTOSHAREVIBER, value).apply()
 
     var v132videoPIPTransitionType: Int
-        get() = mSharedPreferences.getInt(KEY_V132VIDEOPIPTRANSITIONTYPE, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V132VIDEOPIPTRANSITIONTYPE, value).apply()
+        get() = prefs.getInt(KEY_V132VIDEOPIPTRANSITIONTYPE, 0)
+        set(value) = prefs.edit().putInt(KEY_V132VIDEOPIPTRANSITIONTYPE, value).apply()
 
     var v132danmakuFontBgFillShadowBlur: Int
-        get() = mSharedPreferences.getInt(KEY_V132DANMAKUFONTBGFILLSHADOWBLUR, 2)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V132DANMAKUFONTBGFILLSHADOWBLUR, value).apply()
+        get() = prefs.getInt(KEY_V132DANMAKUFONTBGFILLSHADOWBLUR, 2)
+        set(value) = prefs.edit().putInt(KEY_V132DANMAKUFONTBGFILLSHADOWBLUR, value).apply()
 
     var v132subtitleAnimationScale132: Int
-        get() = mSharedPreferences.getInt(KEY_V132SUBTITLEANIMATIONSCALE132, 100)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V132SUBTITLEANIMATIONSCALE132, value).apply()
+        get() = prefs.getInt(KEY_V132SUBTITLEANIMATIONSCALE132, 100)
+        set(value) = prefs.edit().putInt(KEY_V132SUBTITLEANIMATIONSCALE132, value).apply()
 
     var v133audioChorusMix: Int
-        get() = mSharedPreferences.getInt(KEY_V133AUDIOCHORUSMIX, 50)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V133AUDIOCHORUSMIX, value).apply()
+        get() = prefs.getInt(KEY_V133AUDIOCHORUSMIX, 50)
+        set(value) = prefs.edit().putInt(KEY_V133AUDIOCHORUSMIX, value).apply()
 
     var v133danmakuFontBgFillShadowOpacity: Int
-        get() = mSharedPreferences.getInt(KEY_V133DANMAKUFONTBGFILLSHADOWOPACITY, 50)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V133DANMAKUFONTBGFILLSHADOWOPACITY, value).apply()
+        get() = prefs.getInt(KEY_V133DANMAKUFONTBGFILLSHADOWOPACITY, 50)
+        set(value) = prefs.edit().putInt(KEY_V133DANMAKUFONTBGFILLSHADOWOPACITY, value).apply()
 
     var v133subtitleAnimationScale133: Int
-        get() = mSharedPreferences.getInt(KEY_V133SUBTITLEANIMATIONSCALE133, 100)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V133SUBTITLEANIMATIONSCALE133, value).apply()
+        get() = prefs.getInt(KEY_V133SUBTITLEANIMATIONSCALE133, 100)
+        set(value) = prefs.edit().putInt(KEY_V133SUBTITLEANIMATIONSCALE133, value).apply()
 
     var v133gestureTapZoneHapticFeedback: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V133GESTURETAPZONEHAPTICFEEDBACK, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V133GESTURETAPZONEHAPTICFEEDBACK, value).apply()
+        get() = prefs.getBoolean(KEY_V133GESTURETAPZONEHAPTICFEEDBACK, false)
+        set(value) = prefs.edit().putBoolean(KEY_V133GESTURETAPZONEHAPTICFEEDBACK, value).apply()
 
     var v133castVideoPIPFollowPlayback: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V133CASTVIDEOPIPFOLLOWPLAYBACK, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V133CASTVIDEOPIPFOLLOWPLAYBACK, value).apply()
+        get() = prefs.getBoolean(KEY_V133CASTVIDEOPIPFOLLOWPLAYBACK, false)
+        set(value) = prefs.edit().putBoolean(KEY_V133CASTVIDEOPIPFOLLOWPLAYBACK, value).apply()
 
     var v133playlistAutoGroupByDateRange: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V133PLAYLISTAUTOGROUPBYDATERANGE, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V133PLAYLISTAUTOGROUPBYDATERANGE, value).apply()
+        get() = prefs.getBoolean(KEY_V133PLAYLISTAUTOGROUPBYDATERANGE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V133PLAYLISTAUTOGROUPBYDATERANGE, value).apply()
 
     var v133cacheSmartPinningOnBatteryLevel: Int
-        get() = mSharedPreferences.getInt(KEY_V133CACHESMARTPINNINGONBATTERYLEVEL, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V133CACHESMARTPINNINGONBATTERYLEVEL, value).apply()
+        get() = prefs.getInt(KEY_V133CACHESMARTPINNINGONBATTERYLEVEL, 0)
+        set(value) = prefs.edit().putInt(KEY_V133CACHESMARTPINNINGONBATTERYLEVEL, value).apply()
 
     var v133progressBarCustomThumbBorder133: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V133PROGRESSBARCUSTOMTHUMBBORDER133, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V133PROGRESSBARCUSTOMTHUMBBORDER133, value).apply()
+        get() = prefs.getBoolean(KEY_V133PROGRESSBARCUSTOMTHUMBBORDER133, false)
+        set(value) = prefs.edit().putBoolean(KEY_V133PROGRESSBARCUSTOMTHUMBBORDER133, value).apply()
 
     var v133volumeNormalizeCeiling: Int
-        get() = mSharedPreferences.getInt(KEY_V133VOLUMENORMALIZECEILING, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V133VOLUMENORMALIZECEILING, value).apply()
+        get() = prefs.getInt(KEY_V133VOLUMENORMALIZECEILING, 0)
+        set(value) = prefs.edit().putInt(KEY_V133VOLUMENORMALIZECEILING, value).apply()
 
     var v133historyAutoClean133: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V133HISTORYAUTOCLEAN133, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V133HISTORYAUTOCLEAN133, value).apply()
+        get() = prefs.getBoolean(KEY_V133HISTORYAUTOCLEAN133, false)
+        set(value) = prefs.edit().putBoolean(KEY_V133HISTORYAUTOCLEAN133, value).apply()
 
     var v133playbackSpeedPresetsDoubleTap: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V133PLAYBACKSPEEDPRESETSDOUBLETAP, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V133PLAYBACKSPEEDPRESETSDOUBLETAP, value).apply()
+        get() = prefs.getBoolean(KEY_V133PLAYBACKSPEEDPRESETSDOUBLETAP, false)
+        set(value) = prefs.edit().putBoolean(KEY_V133PLAYBACKSPEEDPRESETSDOUBLETAP, value).apply()
 
     var v133screenshotAutoShareSignal: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V133SCREENSHOTAUTOSHARESIGNAL, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V133SCREENSHOTAUTOSHARESIGNAL, value).apply()
+        get() = prefs.getBoolean(KEY_V133SCREENSHOTAUTOSHARESIGNAL, false)
+        set(value) = prefs.edit().putBoolean(KEY_V133SCREENSHOTAUTOSHARESIGNAL, value).apply()
 
     var v133videoPIPBackgroundOpacity: Int
-        get() = mSharedPreferences.getInt(KEY_V133VIDEOPIPBACKGROUNDOPACITY, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V133VIDEOPIPBACKGROUNDOPACITY, value).apply()
+        get() = prefs.getInt(KEY_V133VIDEOPIPBACKGROUNDOPACITY, 0)
+        set(value) = prefs.edit().putInt(KEY_V133VIDEOPIPBACKGROUNDOPACITY, value).apply()
 
     var v133danmakuFontBgFillShadowSpread: Int
-        get() = mSharedPreferences.getInt(KEY_V133DANMAKUFONTBGFILLSHADOWSPREAD, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V133DANMAKUFONTBGFILLSHADOWSPREAD, value).apply()
+        get() = prefs.getInt(KEY_V133DANMAKUFONTBGFILLSHADOWSPREAD, 0)
+        set(value) = prefs.edit().putInt(KEY_V133DANMAKUFONTBGFILLSHADOWSPREAD, value).apply()
 
     var v133subtitleAnimationRotate133: Int
-        get() = mSharedPreferences.getInt(KEY_V133SUBTITLEANIMATIONROTATE133, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V133SUBTITLEANIMATIONROTATE133, value).apply()
+        get() = prefs.getInt(KEY_V133SUBTITLEANIMATIONROTATE133, 0)
+        set(value) = prefs.edit().putInt(KEY_V133SUBTITLEANIMATIONROTATE133, value).apply()
 
     var v134audioFlangerToggle134: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V134AUDIOFLANGERTOGGLE134, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V134AUDIOFLANGERTOGGLE134, value).apply()
+        get() = prefs.getBoolean(KEY_V134AUDIOFLANGERTOGGLE134, false)
+        set(value) = prefs.edit().putBoolean(KEY_V134AUDIOFLANGERTOGGLE134, value).apply()
 
     var v134danmakuFontBgFillShadowType: Int
-        get() = mSharedPreferences.getInt(KEY_V134DANMAKUFONTBGFILLSHADOWTYPE, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V134DANMAKUFONTBGFILLSHADOWTYPE, value).apply()
+        get() = prefs.getInt(KEY_V134DANMAKUFONTBGFILLSHADOWTYPE, 0)
+        set(value) = prefs.edit().putInt(KEY_V134DANMAKUFONTBGFILLSHADOWTYPE, value).apply()
 
     var v134subtitleAnimationRotate134: Int
-        get() = mSharedPreferences.getInt(KEY_V134SUBTITLEANIMATIONROTATE134, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V134SUBTITLEANIMATIONROTATE134, value).apply()
+        get() = prefs.getInt(KEY_V134SUBTITLEANIMATIONROTATE134, 0)
+        set(value) = prefs.edit().putInt(KEY_V134SUBTITLEANIMATIONROTATE134, value).apply()
 
     var v134gestureTapZoneTimeout: Int
-        get() = mSharedPreferences.getInt(KEY_V134GESTURETAPZONETIMEOUT, 500)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V134GESTURETAPZONETIMEOUT, value).apply()
+        get() = prefs.getInt(KEY_V134GESTURETAPZONETIMEOUT, 500)
+        set(value) = prefs.edit().putInt(KEY_V134GESTURETAPZONETIMEOUT, value).apply()
 
     var v134castVideoPIPFollowGesture: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V134CASTVIDEOPIPFOLLOWGESTURE, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V134CASTVIDEOPIPFOLLOWGESTURE, value).apply()
+        get() = prefs.getBoolean(KEY_V134CASTVIDEOPIPFOLLOWGESTURE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V134CASTVIDEOPIPFOLLOWGESTURE, value).apply()
 
     var v134playlistAutoGroupByWatchCount: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V134PLAYLISTAUTOGROUPBYWATCHCOUNT, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V134PLAYLISTAUTOGROUPBYWATCHCOUNT, value).apply()
+        get() = prefs.getBoolean(KEY_V134PLAYLISTAUTOGROUPBYWATCHCOUNT, false)
+        set(value) = prefs.edit().putBoolean(KEY_V134PLAYLISTAUTOGROUPBYWATCHCOUNT, value).apply()
 
     var v134cacheSmartPinningOnStorageType: Int
-        get() = mSharedPreferences.getInt(KEY_V134CACHESMARTPINNINGONSTORAGETYPE, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V134CACHESMARTPINNINGONSTORAGETYPE, value).apply()
+        get() = prefs.getInt(KEY_V134CACHESMARTPINNINGONSTORAGETYPE, 0)
+        set(value) = prefs.edit().putInt(KEY_V134CACHESMARTPINNINGONSTORAGETYPE, value).apply()
 
     var v134progressBarCustomThumbSize134: Int
-        get() = mSharedPreferences.getInt(KEY_V134PROGRESSBARCUSTOMTHUMBSIZE134, 12)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V134PROGRESSBARCUSTOMTHUMBSIZE134, value).apply()
+        get() = prefs.getInt(KEY_V134PROGRESSBARCUSTOMTHUMBSIZE134, 12)
+        set(value) = prefs.edit().putInt(KEY_V134PROGRESSBARCUSTOMTHUMBSIZE134, value).apply()
 
     var v134volumeNormalizeWindow: Int
-        get() = mSharedPreferences.getInt(KEY_V134VOLUMENORMALIZEWINDOW, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V134VOLUMENORMALIZEWINDOW, value).apply()
+        get() = prefs.getInt(KEY_V134VOLUMENORMALIZEWINDOW, 0)
+        set(value) = prefs.edit().putInt(KEY_V134VOLUMENORMALIZEWINDOW, value).apply()
 
     var v134historyAutoClean134: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V134HISTORYAUTOCLEAN134, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V134HISTORYAUTOCLEAN134, value).apply()
+        get() = prefs.getBoolean(KEY_V134HISTORYAUTOCLEAN134, false)
+        set(value) = prefs.edit().putBoolean(KEY_V134HISTORYAUTOCLEAN134, value).apply()
 
     var v134playbackSpeedPresetsTripleTap: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V134PLAYBACKSPEEDPRESETSTRIPLETAP, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V134PLAYBACKSPEEDPRESETSTRIPLETAP, value).apply()
+        get() = prefs.getBoolean(KEY_V134PLAYBACKSPEEDPRESETSTRIPLETAP, false)
+        set(value) = prefs.edit().putBoolean(KEY_V134PLAYBACKSPEEDPRESETSTRIPLETAP, value).apply()
 
     var v134screenshotAutoShareX: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V134SCREENSHOTAUTOSHAREX, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V134SCREENSHOTAUTOSHAREX, value).apply()
+        get() = prefs.getBoolean(KEY_V134SCREENSHOTAUTOSHAREX, false)
+        set(value) = prefs.edit().putBoolean(KEY_V134SCREENSHOTAUTOSHAREX, value).apply()
 
     var v134videoPIPFollowOrientation: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V134VIDEOPIPFOLLOWORIENTATION, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V134VIDEOPIPFOLLOWORIENTATION, value).apply()
+        get() = prefs.getBoolean(KEY_V134VIDEOPIPFOLLOWORIENTATION, false)
+        set(value) = prefs.edit().putBoolean(KEY_V134VIDEOPIPFOLLOWORIENTATION, value).apply()
 
     var v134danmakuFontBgFillShadowType133: Int
-        get() = mSharedPreferences.getInt(KEY_V134DANMAKUFONTBGFILLSHADOWTYPE133, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V134DANMAKUFONTBGFILLSHADOWTYPE133, value).apply()
+        get() = prefs.getInt(KEY_V134DANMAKUFONTBGFILLSHADOWTYPE133, 0)
+        set(value) = prefs.edit().putInt(KEY_V134DANMAKUFONTBGFILLSHADOWTYPE133, value).apply()
 
     var v134subtitleAnimationBlur134: Int
-        get() = mSharedPreferences.getInt(KEY_V134SUBTITLEANIMATIONBLUR134, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V134SUBTITLEANIMATIONBLUR134, value).apply()
+        get() = prefs.getInt(KEY_V134SUBTITLEANIMATIONBLUR134, 0)
+        set(value) = prefs.edit().putInt(KEY_V134SUBTITLEANIMATIONBLUR134, value).apply()
 
     var v135audioFlangerRate: Int
-        get() = mSharedPreferences.getInt(KEY_V135AUDIOFLANGERRATE, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V135AUDIOFLANGERRATE, value).apply()
+        get() = prefs.getInt(KEY_V135AUDIOFLANGERRATE, 0)
+        set(value) = prefs.edit().putInt(KEY_V135AUDIOFLANGERRATE, value).apply()
 
     var v135danmakuFontBgFillShadowType134: Int
-        get() = mSharedPreferences.getInt(KEY_V135DANMAKUFONTBGFILLSHADOWTYPE134, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V135DANMAKUFONTBGFILLSHADOWTYPE134, value).apply()
+        get() = prefs.getInt(KEY_V135DANMAKUFONTBGFILLSHADOWTYPE134, 0)
+        set(value) = prefs.edit().putInt(KEY_V135DANMAKUFONTBGFILLSHADOWTYPE134, value).apply()
 
     var v135subtitleAnimationBlur135: Int
-        get() = mSharedPreferences.getInt(KEY_V135SUBTITLEANIMATIONBLUR135, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V135SUBTITLEANIMATIONBLUR135, value).apply()
+        get() = prefs.getInt(KEY_V135SUBTITLEANIMATIONBLUR135, 0)
+        set(value) = prefs.edit().putInt(KEY_V135SUBTITLEANIMATIONBLUR135, value).apply()
 
     var v135gestureTapZoneMinDistance: Int
-        get() = mSharedPreferences.getInt(KEY_V135GESTURETAPZONEMINDISTANCE, 10)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V135GESTURETAPZONEMINDISTANCE, value).apply()
+        get() = prefs.getInt(KEY_V135GESTURETAPZONEMINDISTANCE, 10)
+        set(value) = prefs.edit().putInt(KEY_V135GESTURETAPZONEMINDISTANCE, value).apply()
 
     var v135castVideoPIPFollowScreen: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V135CASTVIDEOPIPFOLLOWSCREEN, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V135CASTVIDEOPIPFOLLOWSCREEN, value).apply()
+        get() = prefs.getBoolean(KEY_V135CASTVIDEOPIPFOLLOWSCREEN, false)
+        set(value) = prefs.edit().putBoolean(KEY_V135CASTVIDEOPIPFOLLOWSCREEN, value).apply()
 
     var v135playlistAutoGroupByLikeCount: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V135PLAYLISTAUTOGROUPBYLIKECOUNT, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V135PLAYLISTAUTOGROUPBYLIKECOUNT, value).apply()
+        get() = prefs.getBoolean(KEY_V135PLAYLISTAUTOGROUPBYLIKECOUNT, false)
+        set(value) = prefs.edit().putBoolean(KEY_V135PLAYLISTAUTOGROUPBYLIKECOUNT, value).apply()
 
     var v135cacheSmartPinningOnStorageFree: Int
-        get() = mSharedPreferences.getInt(KEY_V135CACHESMARTPINNINGONSTORAGEFREE, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V135CACHESMARTPINNINGONSTORAGEFREE, value).apply()
+        get() = prefs.getInt(KEY_V135CACHESMARTPINNINGONSTORAGEFREE, 0)
+        set(value) = prefs.edit().putInt(KEY_V135CACHESMARTPINNINGONSTORAGEFREE, value).apply()
 
     var v135progressBarCustomThumbSize135: Int
-        get() = mSharedPreferences.getInt(KEY_V135PROGRESSBARCUSTOMTHUMBSIZE135, 12)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V135PROGRESSBARCUSTOMTHUMBSIZE135, value).apply()
+        get() = prefs.getInt(KEY_V135PROGRESSBARCUSTOMTHUMBSIZE135, 12)
+        set(value) = prefs.edit().putInt(KEY_V135PROGRESSBARCUSTOMTHUMBSIZE135, value).apply()
 
     var v135volumeNormalizeThreshold: Int
-        get() = mSharedPreferences.getInt(KEY_V135VOLUMENORMALIZETHRESHOLD, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V135VOLUMENORMALIZETHRESHOLD, value).apply()
+        get() = prefs.getInt(KEY_V135VOLUMENORMALIZETHRESHOLD, 0)
+        set(value) = prefs.edit().putInt(KEY_V135VOLUMENORMALIZETHRESHOLD, value).apply()
 
     var v135historyAutoClean135: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V135HISTORYAUTOCLEAN135, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V135HISTORYAUTOCLEAN135, value).apply()
+        get() = prefs.getBoolean(KEY_V135HISTORYAUTOCLEAN135, false)
+        set(value) = prefs.edit().putBoolean(KEY_V135HISTORYAUTOCLEAN135, value).apply()
 
     var v135playbackSpeedPresetsGesture: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V135PLAYBACKSPEEDPRESETSGESTURE, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V135PLAYBACKSPEEDPRESETSGESTURE, value).apply()
+        get() = prefs.getBoolean(KEY_V135PLAYBACKSPEEDPRESETSGESTURE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V135PLAYBACKSPEEDPRESETSGESTURE, value).apply()
 
     var v135screenshotAutoShareTumblr: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V135SCREENSHOTAUTOSHARETUMBLR, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V135SCREENSHOTAUTOSHARETUMBLR, value).apply()
+        get() = prefs.getBoolean(KEY_V135SCREENSHOTAUTOSHARETUMBLR, false)
+        set(value) = prefs.edit().putBoolean(KEY_V135SCREENSHOTAUTOSHARETUMBLR, value).apply()
 
     var v135videoPIPFollowSystemTheme: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V135VIDEOPIPFOLLOWSYSTEMTHEME, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V135VIDEOPIPFOLLOWSYSTEMTHEME, value).apply()
+        get() = prefs.getBoolean(KEY_V135VIDEOPIPFOLLOWSYSTEMTHEME, false)
+        set(value) = prefs.edit().putBoolean(KEY_V135VIDEOPIPFOLLOWSYSTEMTHEME, value).apply()
 
     var v135danmakuFontBgFillClipToggle: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V135DANMAKUFONTBGFILLCLIPTOGGLE, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V135DANMAKUFONTBGFILLCLIPTOGGLE, value).apply()
+        get() = prefs.getBoolean(KEY_V135DANMAKUFONTBGFILLCLIPTOGGLE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V135DANMAKUFONTBGFILLCLIPTOGGLE, value).apply()
 
     var v135subtitleAnimationFadeIn135: Int
-        get() = mSharedPreferences.getInt(KEY_V135SUBTITLEANIMATIONFADEIN135, 300)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V135SUBTITLEANIMATIONFADEIN135, value).apply()
+        get() = prefs.getInt(KEY_V135SUBTITLEANIMATIONFADEIN135, 300)
+        set(value) = prefs.edit().putInt(KEY_V135SUBTITLEANIMATIONFADEIN135, value).apply()
 
     var v136audioFlangerDepth: Int
-        get() = mSharedPreferences.getInt(KEY_V136AUDIOFLANGERDEPTH, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V136AUDIOFLANGERDEPTH, value).apply()
+        get() = prefs.getInt(KEY_V136AUDIOFLANGERDEPTH, 0)
+        set(value) = prefs.edit().putInt(KEY_V136AUDIOFLANGERDEPTH, value).apply()
 
     var v136danmakuFontBgFillClipPath: Int
-        get() = mSharedPreferences.getInt(KEY_V136DANMAKUFONTBGFILLCLIPPATH, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V136DANMAKUFONTBGFILLCLIPPATH, value).apply()
+        get() = prefs.getInt(KEY_V136DANMAKUFONTBGFILLCLIPPATH, 0)
+        set(value) = prefs.edit().putInt(KEY_V136DANMAKUFONTBGFILLCLIPPATH, value).apply()
 
     var v136subtitleAnimationFadeIn136: Int
-        get() = mSharedPreferences.getInt(KEY_V136SUBTITLEANIMATIONFADEIN136, 300)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V136SUBTITLEANIMATIONFADEIN136, value).apply()
+        get() = prefs.getInt(KEY_V136SUBTITLEANIMATIONFADEIN136, 300)
+        set(value) = prefs.edit().putInt(KEY_V136SUBTITLEANIMATIONFADEIN136, value).apply()
 
     var v136gestureTapZoneVisualStyle: Int
-        get() = mSharedPreferences.getInt(KEY_V136GESTURETAPZONEVISUALSTYLE, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V136GESTURETAPZONEVISUALSTYLE, value).apply()
+        get() = prefs.getInt(KEY_V136GESTURETAPZONEVISUALSTYLE, 0)
+        set(value) = prefs.edit().putInt(KEY_V136GESTURETAPZONEVISUALSTYLE, value).apply()
 
     var v136castVideoPIPFollowOrientation: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V136CASTVIDEOPIPFOLLOWORIENTATION, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V136CASTVIDEOPIPFOLLOWORIENTATION, value).apply()
+        get() = prefs.getBoolean(KEY_V136CASTVIDEOPIPFOLLOWORIENTATION, false)
+        set(value) = prefs.edit().putBoolean(KEY_V136CASTVIDEOPIPFOLLOWORIENTATION, value).apply()
 
     var v136playlistAutoGroupByCommentCount: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V136PLAYLISTAUTOGROUPBYCOMMENTCOUNT, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V136PLAYLISTAUTOGROUPBYCOMMENTCOUNT, value).apply()
+        get() = prefs.getBoolean(KEY_V136PLAYLISTAUTOGROUPBYCOMMENTCOUNT, false)
+        set(value) = prefs.edit().putBoolean(KEY_V136PLAYLISTAUTOGROUPBYCOMMENTCOUNT, value).apply()
 
     var v136cacheSmartPinningOnNetworkSpeed: Int
-        get() = mSharedPreferences.getInt(KEY_V136CACHESMARTPINNINGONNETWORKSPEED, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V136CACHESMARTPINNINGONNETWORKSPEED, value).apply()
+        get() = prefs.getInt(KEY_V136CACHESMARTPINNINGONNETWORKSPEED, 0)
+        set(value) = prefs.edit().putInt(KEY_V136CACHESMARTPINNINGONNETWORKSPEED, value).apply()
 
     var v136progressBarCustomThumbColor136: Int
-        get() = mSharedPreferences.getInt(KEY_V136PROGRESSBARCUSTOMTHUMBCOLOR136, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V136PROGRESSBARCUSTOMTHUMBCOLOR136, value).apply()
+        get() = prefs.getInt(KEY_V136PROGRESSBARCUSTOMTHUMBCOLOR136, 0)
+        set(value) = prefs.edit().putInt(KEY_V136PROGRESSBARCUSTOMTHUMBCOLOR136, value).apply()
 
     var v136volumeNormalizeAdaptive: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V136VOLUMENORMALIZEADAPTIVE, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V136VOLUMENORMALIZEADAPTIVE, value).apply()
+        get() = prefs.getBoolean(KEY_V136VOLUMENORMALIZEADAPTIVE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V136VOLUMENORMALIZEADAPTIVE, value).apply()
 
     var v136historyAutoClean136: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V136HISTORYAUTOCLEAN136, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V136HISTORYAUTOCLEAN136, value).apply()
+        get() = prefs.getBoolean(KEY_V136HISTORYAUTOCLEAN136, false)
+        set(value) = prefs.edit().putBoolean(KEY_V136HISTORYAUTOCLEAN136, value).apply()
 
     var v136playbackSpeedPresetsQuickAccess: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V136PLAYBACKSPEEDPRESETSQUICKACCESS, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V136PLAYBACKSPEEDPRESETSQUICKACCESS, value).apply()
+        get() = prefs.getBoolean(KEY_V136PLAYBACKSPEEDPRESETSQUICKACCESS, false)
+        set(value) = prefs.edit().putBoolean(KEY_V136PLAYBACKSPEEDPRESETSQUICKACCESS, value).apply()
 
     var v136screenshotAutoSharePinterest: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V136SCREENSHOTAUTOSHAREPINTEREST, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V136SCREENSHOTAUTOSHAREPINTEREST, value).apply()
+        get() = prefs.getBoolean(KEY_V136SCREENSHOTAUTOSHAREPINTEREST, false)
+        set(value) = prefs.edit().putBoolean(KEY_V136SCREENSHOTAUTOSHAREPINTEREST, value).apply()
 
     var v136videoPIPFollowAudioFocus: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V136VIDEOPIPFOLLOWAUDIOFOCUS, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V136VIDEOPIPFOLLOWAUDIOFOCUS, value).apply()
+        get() = prefs.getBoolean(KEY_V136VIDEOPIPFOLLOWAUDIOFOCUS, false)
+        set(value) = prefs.edit().putBoolean(KEY_V136VIDEOPIPFOLLOWAUDIOFOCUS, value).apply()
 
     var v136danmakuFontBgFillClipPath135: Int
-        get() = mSharedPreferences.getInt(KEY_V136DANMAKUFONTBGFILLCLIPPATH135, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V136DANMAKUFONTBGFILLCLIPPATH135, value).apply()
+        get() = prefs.getInt(KEY_V136DANMAKUFONTBGFILLCLIPPATH135, 0)
+        set(value) = prefs.edit().putInt(KEY_V136DANMAKUFONTBGFILLCLIPPATH135, value).apply()
 
     var v136subtitleAnimationFadeOut136: Int
-        get() = mSharedPreferences.getInt(KEY_V136SUBTITLEANIMATIONFADEOUT136, 300)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V136SUBTITLEANIMATIONFADEOUT136, value).apply()
+        get() = prefs.getInt(KEY_V136SUBTITLEANIMATIONFADEOUT136, 300)
+        set(value) = prefs.edit().putInt(KEY_V136SUBTITLEANIMATIONFADEOUT136, value).apply()
 
     var v137audioFlangerFeedback136: Int
-        get() = mSharedPreferences.getInt(KEY_V137AUDIOFLANGERFEEDBACK136, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V137AUDIOFLANGERFEEDBACK136, value).apply()
+        get() = prefs.getInt(KEY_V137AUDIOFLANGERFEEDBACK136, 0)
+        set(value) = prefs.edit().putInt(KEY_V137AUDIOFLANGERFEEDBACK136, value).apply()
 
     var v137danmakuFontBgFillClipPath136: Int
-        get() = mSharedPreferences.getInt(KEY_V137DANMAKUFONTBGFILLCLIPPATH136, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V137DANMAKUFONTBGFILLCLIPPATH136, value).apply()
+        get() = prefs.getInt(KEY_V137DANMAKUFONTBGFILLCLIPPATH136, 0)
+        set(value) = prefs.edit().putInt(KEY_V137DANMAKUFONTBGFILLCLIPPATH136, value).apply()
 
     var v137subtitleAnimationFadeOut137: Int
-        get() = mSharedPreferences.getInt(KEY_V137SUBTITLEANIMATIONFADEOUT137, 300)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V137SUBTITLEANIMATIONFADEOUT137, value).apply()
+        get() = prefs.getInt(KEY_V137SUBTITLEANIMATIONFADEOUT137, 300)
+        set(value) = prefs.edit().putInt(KEY_V137SUBTITLEANIMATIONFADEOUT137, value).apply()
 
     var v137gestureTapZoneVisualColor: Int
-        get() = mSharedPreferences.getInt(KEY_V137GESTURETAPZONEVISUALCOLOR, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V137GESTURETAPZONEVISUALCOLOR, value).apply()
+        get() = prefs.getInt(KEY_V137GESTURETAPZONEVISUALCOLOR, 0)
+        set(value) = prefs.edit().putInt(KEY_V137GESTURETAPZONEVISUALCOLOR, value).apply()
 
     var v137castVideoPIPFollowBattery: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V137CASTVIDEOPIPFOLLOWBATTERY, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V137CASTVIDEOPIPFOLLOWBATTERY, value).apply()
+        get() = prefs.getBoolean(KEY_V137CASTVIDEOPIPFOLLOWBATTERY, false)
+        set(value) = prefs.edit().putBoolean(KEY_V137CASTVIDEOPIPFOLLOWBATTERY, value).apply()
 
     var v137playlistAutoGroupByShareCount: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V137PLAYLISTAUTOGROUPBYSHARECOUNT, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V137PLAYLISTAUTOGROUPBYSHARECOUNT, value).apply()
+        get() = prefs.getBoolean(KEY_V137PLAYLISTAUTOGROUPBYSHARECOUNT, false)
+        set(value) = prefs.edit().putBoolean(KEY_V137PLAYLISTAUTOGROUPBYSHARECOUNT, value).apply()
 
     var v137cacheSmartPinningOnNetworkType: Int
-        get() = mSharedPreferences.getInt(KEY_V137CACHESMARTPINNINGONNETWORKTYPE, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V137CACHESMARTPINNINGONNETWORKTYPE, value).apply()
+        get() = prefs.getInt(KEY_V137CACHESMARTPINNINGONNETWORKTYPE, 0)
+        set(value) = prefs.edit().putInt(KEY_V137CACHESMARTPINNINGONNETWORKTYPE, value).apply()
 
     var v137progressBarCustomThumbColor137: Int
-        get() = mSharedPreferences.getInt(KEY_V137PROGRESSBARCUSTOMTHUMBCOLOR137, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V137PROGRESSBARCUSTOMTHUMBCOLOR137, value).apply()
+        get() = prefs.getInt(KEY_V137PROGRESSBARCUSTOMTHUMBCOLOR137, 0)
+        set(value) = prefs.edit().putInt(KEY_V137PROGRESSBARCUSTOMTHUMBCOLOR137, value).apply()
 
     var v137volumeNormalizeSmoothing: Int
-        get() = mSharedPreferences.getInt(KEY_V137VOLUMENORMALIZESMOOTHING, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V137VOLUMENORMALIZESMOOTHING, value).apply()
+        get() = prefs.getInt(KEY_V137VOLUMENORMALIZESMOOTHING, 0)
+        set(value) = prefs.edit().putInt(KEY_V137VOLUMENORMALIZESMOOTHING, value).apply()
 
     var v137historyAutoClean137: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V137HISTORYAUTOCLEAN137, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V137HISTORYAUTOCLEAN137, value).apply()
+        get() = prefs.getBoolean(KEY_V137HISTORYAUTOCLEAN137, false)
+        set(value) = prefs.edit().putBoolean(KEY_V137HISTORYAUTOCLEAN137, value).apply()
 
     var v137playbackSpeedPresetsNotificationToggle: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V137PLAYBACKSPEEDPRESETSNOTIFICATIONTOGGLE, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V137PLAYBACKSPEEDPRESETSNOTIFICATIONTOGGLE, value).apply()
+        get() = prefs.getBoolean(KEY_V137PLAYBACKSPEEDPRESETSNOTIFICATIONTOGGLE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V137PLAYBACKSPEEDPRESETSNOTIFICATIONTOGGLE, value).apply()
 
     var v137screenshotAutoShareTwitch: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V137SCREENSHOTAUTOSHARETWITCH, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V137SCREENSHOTAUTOSHARETWITCH, value).apply()
+        get() = prefs.getBoolean(KEY_V137SCREENSHOTAUTOSHARETWITCH, false)
+        set(value) = prefs.edit().putBoolean(KEY_V137SCREENSHOTAUTOSHARETWITCH, value).apply()
 
     var v137videoPIPFollowDoNotDisturb: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V137VIDEOPIPFOLLOWDONOTDISTURB, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V137VIDEOPIPFOLLOWDONOTDISTURB, value).apply()
+        get() = prefs.getBoolean(KEY_V137VIDEOPIPFOLLOWDONOTDISTURB, false)
+        set(value) = prefs.edit().putBoolean(KEY_V137VIDEOPIPFOLLOWDONOTDISTURB, value).apply()
 
     var v137danmakuFontBgFillClipRadius: Int
-        get() = mSharedPreferences.getInt(KEY_V137DANMAKUFONTBGFILLCLIPRADIUS, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V137DANMAKUFONTBGFILLCLIPRADIUS, value).apply()
+        get() = prefs.getInt(KEY_V137DANMAKUFONTBGFILLCLIPRADIUS, 0)
+        set(value) = prefs.edit().putInt(KEY_V137DANMAKUFONTBGFILLCLIPRADIUS, value).apply()
 
     var v137subtitleAnimationTranslate137: Int
-        get() = mSharedPreferences.getInt(KEY_V137SUBTITLEANIMATIONTRANSLATE137, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V137SUBTITLEANIMATIONTRANSLATE137, value).apply()
+        get() = prefs.getInt(KEY_V137SUBTITLEANIMATIONTRANSLATE137, 0)
+        set(value) = prefs.edit().putInt(KEY_V137SUBTITLEANIMATIONTRANSLATE137, value).apply()
 
     var v138audioPhaserToggle138: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V138AUDIOPHASERTOGGLE138, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V138AUDIOPHASERTOGGLE138, value).apply()
+        get() = prefs.getBoolean(KEY_V138AUDIOPHASERTOGGLE138, false)
+        set(value) = prefs.edit().putBoolean(KEY_V138AUDIOPHASERTOGGLE138, value).apply()
 
     var v138danmakuFontBgFillClipRadius137: Int
-        get() = mSharedPreferences.getInt(KEY_V138DANMAKUFONTBGFILLCLIPRADIUS137, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V138DANMAKUFONTBGFILLCLIPRADIUS137, value).apply()
+        get() = prefs.getInt(KEY_V138DANMAKUFONTBGFILLCLIPRADIUS137, 0)
+        set(value) = prefs.edit().putInt(KEY_V138DANMAKUFONTBGFILLCLIPRADIUS137, value).apply()
 
     var v138subtitleAnimationTranslate138: Int
-        get() = mSharedPreferences.getInt(KEY_V138SUBTITLEANIMATIONTRANSLATE138, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V138SUBTITLEANIMATIONTRANSLATE138, value).apply()
+        get() = prefs.getInt(KEY_V138SUBTITLEANIMATIONTRANSLATE138, 0)
+        set(value) = prefs.edit().putInt(KEY_V138SUBTITLEANIMATIONTRANSLATE138, value).apply()
 
     var v138gestureTapZoneVisualOpacity: Int
-        get() = mSharedPreferences.getInt(KEY_V138GESTURETAPZONEVISUALOPACITY, 50)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V138GESTURETAPZONEVISUALOPACITY, value).apply()
+        get() = prefs.getInt(KEY_V138GESTURETAPZONEVISUALOPACITY, 50)
+        set(value) = prefs.edit().putInt(KEY_V138GESTURETAPZONEVISUALOPACITY, value).apply()
 
     var v138castVideoPIPFollowStorage: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V138CASTVIDEOPIPFOLLOWSTORAGE, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V138CASTVIDEOPIPFOLLOWSTORAGE, value).apply()
+        get() = prefs.getBoolean(KEY_V138CASTVIDEOPIPFOLLOWSTORAGE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V138CASTVIDEOPIPFOLLOWSTORAGE, value).apply()
 
     var v138playlistAutoGroupByFavCount: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V138PLAYLISTAUTOGROUPBYFAVCOUNT, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V138PLAYLISTAUTOGROUPBYFAVCOUNT, value).apply()
+        get() = prefs.getBoolean(KEY_V138PLAYLISTAUTOGROUPBYFAVCOUNT, false)
+        set(value) = prefs.edit().putBoolean(KEY_V138PLAYLISTAUTOGROUPBYFAVCOUNT, value).apply()
 
     var v138cacheSmartPinningOnStorageRead: Int
-        get() = mSharedPreferences.getInt(KEY_V138CACHESMARTPINNINGONSTORAGEREAD, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V138CACHESMARTPINNINGONSTORAGEREAD, value).apply()
+        get() = prefs.getInt(KEY_V138CACHESMARTPINNINGONSTORAGEREAD, 0)
+        set(value) = prefs.edit().putInt(KEY_V138CACHESMARTPINNINGONSTORAGEREAD, value).apply()
 
     var v138progressBarCustomThumbShadow138: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V138PROGRESSBARCUSTOMTHUMBSHADOW138, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V138PROGRESSBARCUSTOMTHUMBSHADOW138, value).apply()
+        get() = prefs.getBoolean(KEY_V138PROGRESSBARCUSTOMTHUMBSHADOW138, false)
+        set(value) = prefs.edit().putBoolean(KEY_V138PROGRESSBARCUSTOMTHUMBSHADOW138, value).apply()
 
     var v138volumeNormalizeGate: Int
-        get() = mSharedPreferences.getInt(KEY_V138VOLUMENORMALIZEGATE, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V138VOLUMENORMALIZEGATE, value).apply()
+        get() = prefs.getInt(KEY_V138VOLUMENORMALIZEGATE, 0)
+        set(value) = prefs.edit().putInt(KEY_V138VOLUMENORMALIZEGATE, value).apply()
 
     var v138historyAutoClean138: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V138HISTORYAUTOCLEAN138, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V138HISTORYAUTOCLEAN138, value).apply()
+        get() = prefs.getBoolean(KEY_V138HISTORYAUTOCLEAN138, false)
+        set(value) = prefs.edit().putBoolean(KEY_V138HISTORYAUTOCLEAN138, value).apply()
 
     var v138playbackSpeedPresetsDragAdjust: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V138PLAYBACKSPEEDPRESETSDRAGADJUST, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V138PLAYBACKSPEEDPRESETSDRAGADJUST, value).apply()
+        get() = prefs.getBoolean(KEY_V138PLAYBACKSPEEDPRESETSDRAGADJUST, false)
+        set(value) = prefs.edit().putBoolean(KEY_V138PLAYBACKSPEEDPRESETSDRAGADJUST, value).apply()
 
     var v138screenshotAutoShareYouTube: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V138SCREENSHOTAUTOSHAREYOUTUBE, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V138SCREENSHOTAUTOSHAREYOUTUBE, value).apply()
+        get() = prefs.getBoolean(KEY_V138SCREENSHOTAUTOSHAREYOUTUBE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V138SCREENSHOTAUTOSHAREYOUTUBE, value).apply()
 
     var v138videoPIPFollowBrightness: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V138VIDEOPIPFOLLOWBRIGHTNESS, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V138VIDEOPIPFOLLOWBRIGHTNESS, value).apply()
+        get() = prefs.getBoolean(KEY_V138VIDEOPIPFOLLOWBRIGHTNESS, false)
+        set(value) = prefs.edit().putBoolean(KEY_V138VIDEOPIPFOLLOWBRIGHTNESS, value).apply()
 
     var v138danmakuFontBgFillClipRadius138: Int
-        get() = mSharedPreferences.getInt(KEY_V138DANMAKUFONTBGFILLCLIPRADIUS138, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V138DANMAKUFONTBGFILLCLIPRADIUS138, value).apply()
+        get() = prefs.getInt(KEY_V138DANMAKUFONTBGFILLCLIPRADIUS138, 0)
+        set(value) = prefs.edit().putInt(KEY_V138DANMAKUFONTBGFILLCLIPRADIUS138, value).apply()
 
     var v138subtitleAnimationScale138: Int
-        get() = mSharedPreferences.getInt(KEY_V138SUBTITLEANIMATIONSCALE138, 100)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V138SUBTITLEANIMATIONSCALE138, value).apply()
+        get() = prefs.getInt(KEY_V138SUBTITLEANIMATIONSCALE138, 100)
+        set(value) = prefs.edit().putInt(KEY_V138SUBTITLEANIMATIONSCALE138, value).apply()
 
     var v139audioPhaserRate: Int
-        get() = mSharedPreferences.getInt(KEY_V139AUDIOPHASERRATE, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V139AUDIOPHASERRATE, value).apply()
+        get() = prefs.getInt(KEY_V139AUDIOPHASERRATE, 0)
+        set(value) = prefs.edit().putInt(KEY_V139AUDIOPHASERRATE, value).apply()
 
     var v139danmakuFontBgFillClipRadius139: Int
-        get() = mSharedPreferences.getInt(KEY_V139DANMAKUFONTBGFILLCLIPRADIUS139, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V139DANMAKUFONTBGFILLCLIPRADIUS139, value).apply()
+        get() = prefs.getInt(KEY_V139DANMAKUFONTBGFILLCLIPRADIUS139, 0)
+        set(value) = prefs.edit().putInt(KEY_V139DANMAKUFONTBGFILLCLIPRADIUS139, value).apply()
 
     var v139subtitleAnimationScale139: Int
-        get() = mSharedPreferences.getInt(KEY_V139SUBTITLEANIMATIONSCALE139, 100)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V139SUBTITLEANIMATIONSCALE139, value).apply()
+        get() = prefs.getInt(KEY_V139SUBTITLEANIMATIONSCALE139, 100)
+        set(value) = prefs.edit().putInt(KEY_V139SUBTITLEANIMATIONSCALE139, value).apply()
 
     var v139gestureTapZoneVisualDuration: Int
-        get() = mSharedPreferences.getInt(KEY_V139GESTURETAPZONEVISUALDURATION, 200)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V139GESTURETAPZONEVISUALDURATION, value).apply()
+        get() = prefs.getInt(KEY_V139GESTURETAPZONEVISUALDURATION, 200)
+        set(value) = prefs.edit().putInt(KEY_V139GESTURETAPZONEVISUALDURATION, value).apply()
 
     var v139castVideoPIPFollowVolume: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V139CASTVIDEOPIPFOLLOWVOLUME, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V139CASTVIDEOPIPFOLLOWVOLUME, value).apply()
+        get() = prefs.getBoolean(KEY_V139CASTVIDEOPIPFOLLOWVOLUME, false)
+        set(value) = prefs.edit().putBoolean(KEY_V139CASTVIDEOPIPFOLLOWVOLUME, value).apply()
 
     var v139playlistAutoGroupByDanCount: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V139PLAYLISTAUTOGROUPBYDANCOUNT, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V139PLAYLISTAUTOGROUPBYDANCOUNT, value).apply()
+        get() = prefs.getBoolean(KEY_V139PLAYLISTAUTOGROUPBYDANCOUNT, false)
+        set(value) = prefs.edit().putBoolean(KEY_V139PLAYLISTAUTOGROUPBYDANCOUNT, value).apply()
 
     var v139cacheSmartPinningOnStorageWrite: Int
-        get() = mSharedPreferences.getInt(KEY_V139CACHESMARTPINNINGONSTORAGEWRITE, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V139CACHESMARTPINNINGONSTORAGEWRITE, value).apply()
+        get() = prefs.getInt(KEY_V139CACHESMARTPINNINGONSTORAGEWRITE, 0)
+        set(value) = prefs.edit().putInt(KEY_V139CACHESMARTPINNINGONSTORAGEWRITE, value).apply()
 
     var v139progressBarCustomThumbGlow139: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V139PROGRESSBARCUSTOMTHUMBGLOW139, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V139PROGRESSBARCUSTOMTHUMBGLOW139, value).apply()
+        get() = prefs.getBoolean(KEY_V139PROGRESSBARCUSTOMTHUMBGLOW139, false)
+        set(value) = prefs.edit().putBoolean(KEY_V139PROGRESSBARCUSTOMTHUMBGLOW139, value).apply()
 
     var v139volumeNormalizeKnee: Int
-        get() = mSharedPreferences.getInt(KEY_V139VOLUMENORMALIZEKNEE, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V139VOLUMENORMALIZEKNEE, value).apply()
+        get() = prefs.getInt(KEY_V139VOLUMENORMALIZEKNEE, 0)
+        set(value) = prefs.edit().putInt(KEY_V139VOLUMENORMALIZEKNEE, value).apply()
 
     var v139historyAutoClean139: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V139HISTORYAUTOCLEAN139, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V139HISTORYAUTOCLEAN139, value).apply()
+        get() = prefs.getBoolean(KEY_V139HISTORYAUTOCLEAN139, false)
+        set(value) = prefs.edit().putBoolean(KEY_V139HISTORYAUTOCLEAN139, value).apply()
 
     var v139playbackSpeedPresetsSwipeAdjust: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V139PLAYBACKSPEEDPRESETSSWIPEADJUST, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V139PLAYBACKSPEEDPRESETSSWIPEADJUST, value).apply()
+        get() = prefs.getBoolean(KEY_V139PLAYBACKSPEEDPRESETSSWIPEADJUST, false)
+        set(value) = prefs.edit().putBoolean(KEY_V139PLAYBACKSPEEDPRESETSSWIPEADJUST, value).apply()
 
     var v139screenshotAutoShareTwitchClip: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V139SCREENSHOTAUTOSHARETWITCHCLIP, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V139SCREENSHOTAUTOSHARETWITCHCLIP, value).apply()
+        get() = prefs.getBoolean(KEY_V139SCREENSHOTAUTOSHARETWITCHCLIP, false)
+        set(value) = prefs.edit().putBoolean(KEY_V139SCREENSHOTAUTOSHARETWITCHCLIP, value).apply()
 
     var v139videoPIPFollowContrast: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V139VIDEOPIPFOLLOWCONTRAST, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V139VIDEOPIPFOLLOWCONTRAST, value).apply()
+        get() = prefs.getBoolean(KEY_V139VIDEOPIPFOLLOWCONTRAST, false)
+        set(value) = prefs.edit().putBoolean(KEY_V139VIDEOPIPFOLLOWCONTRAST, value).apply()
 
     var v139danmakuFontBgFillClipType: Int
-        get() = mSharedPreferences.getInt(KEY_V139DANMAKUFONTBGFILLCLIPTYPE, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V139DANMAKUFONTBGFILLCLIPTYPE, value).apply()
+        get() = prefs.getInt(KEY_V139DANMAKUFONTBGFILLCLIPTYPE, 0)
+        set(value) = prefs.edit().putInt(KEY_V139DANMAKUFONTBGFILLCLIPTYPE, value).apply()
 
     var v139subtitleAnimationRotate139: Int
-        get() = mSharedPreferences.getInt(KEY_V139SUBTITLEANIMATIONROTATE139, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V139SUBTITLEANIMATIONROTATE139, value).apply()
+        get() = prefs.getInt(KEY_V139SUBTITLEANIMATIONROTATE139, 0)
+        set(value) = prefs.edit().putInt(KEY_V139SUBTITLEANIMATIONROTATE139, value).apply()
 
     var v140audioPhaserDepth: Int
-        get() = mSharedPreferences.getInt(KEY_V140AUDIOPHASERDEPTH, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V140AUDIOPHASERDEPTH, value).apply()
+        get() = prefs.getInt(KEY_V140AUDIOPHASERDEPTH, 0)
+        set(value) = prefs.edit().putInt(KEY_V140AUDIOPHASERDEPTH, value).apply()
 
     var v140danmakuFontBgFillClipType139: Int
-        get() = mSharedPreferences.getInt(KEY_V140DANMAKUFONTBGFILLCLIPTYPE139, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V140DANMAKUFONTBGFILLCLIPTYPE139, value).apply()
+        get() = prefs.getInt(KEY_V140DANMAKUFONTBGFILLCLIPTYPE139, 0)
+        set(value) = prefs.edit().putInt(KEY_V140DANMAKUFONTBGFILLCLIPTYPE139, value).apply()
 
     var v140subtitleAnimationRotate140: Int
-        get() = mSharedPreferences.getInt(KEY_V140SUBTITLEANIMATIONROTATE140, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V140SUBTITLEANIMATIONROTATE140, value).apply()
+        get() = prefs.getInt(KEY_V140SUBTITLEANIMATIONROTATE140, 0)
+        set(value) = prefs.edit().putInt(KEY_V140SUBTITLEANIMATIONROTATE140, value).apply()
 
     var v140gestureTapZoneVisualScale: Int
-        get() = mSharedPreferences.getInt(KEY_V140GESTURETAPZONEVISUALSCALE, 100)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V140GESTURETAPZONEVISUALSCALE, value).apply()
+        get() = prefs.getInt(KEY_V140GESTURETAPZONEVISUALSCALE, 100)
+        set(value) = prefs.edit().putInt(KEY_V140GESTURETAPZONEVISUALSCALE, value).apply()
 
     var v140castVideoPIPFollowSaturation: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V140CASTVIDEOPIPFOLLOWSATURATION, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V140CASTVIDEOPIPFOLLOWSATURATION, value).apply()
+        get() = prefs.getBoolean(KEY_V140CASTVIDEOPIPFOLLOWSATURATION, false)
+        set(value) = prefs.edit().putBoolean(KEY_V140CASTVIDEOPIPFOLLOWSATURATION, value).apply()
 
     var v140playlistAutoGroupByGenre140: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V140PLAYLISTAUTOGROUPBYGENRE140, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V140PLAYLISTAUTOGROUPBYGENRE140, value).apply()
+        get() = prefs.getBoolean(KEY_V140PLAYLISTAUTOGROUPBYGENRE140, false)
+        set(value) = prefs.edit().putBoolean(KEY_V140PLAYLISTAUTOGROUPBYGENRE140, value).apply()
 
     var v140cacheSmartPinningOnStorageIOPS: Int
-        get() = mSharedPreferences.getInt(KEY_V140CACHESMARTPINNINGONSTORAGEIOPS, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V140CACHESMARTPINNINGONSTORAGEIOPS, value).apply()
+        get() = prefs.getInt(KEY_V140CACHESMARTPINNINGONSTORAGEIOPS, 0)
+        set(value) = prefs.edit().putInt(KEY_V140CACHESMARTPINNINGONSTORAGEIOPS, value).apply()
 
     var v140progressBarCustomThumbBorder140: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V140PROGRESSBARCUSTOMTHUMBBORDER140, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V140PROGRESSBARCUSTOMTHUMBBORDER140, value).apply()
+        get() = prefs.getBoolean(KEY_V140PROGRESSBARCUSTOMTHUMBBORDER140, false)
+        set(value) = prefs.edit().putBoolean(KEY_V140PROGRESSBARCUSTOMTHUMBBORDER140, value).apply()
 
     var v140volumeNormalizeAttack: Int
-        get() = mSharedPreferences.getInt(KEY_V140VOLUMENORMALIZEATTACK, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V140VOLUMENORMALIZEATTACK, value).apply()
+        get() = prefs.getInt(KEY_V140VOLUMENORMALIZEATTACK, 0)
+        set(value) = prefs.edit().putInt(KEY_V140VOLUMENORMALIZEATTACK, value).apply()
 
     var v140historyAutoClean140: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V140HISTORYAUTOCLEAN140, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V140HISTORYAUTOCLEAN140, value).apply()
+        get() = prefs.getBoolean(KEY_V140HISTORYAUTOCLEAN140, false)
+        set(value) = prefs.edit().putBoolean(KEY_V140HISTORYAUTOCLEAN140, value).apply()
 
     var v140playbackSpeedPresetsPinchAdjust: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V140PLAYBACKSPEEDPRESETSPINCHADJUST, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V140PLAYBACKSPEEDPRESETSPINCHADJUST, value).apply()
+        get() = prefs.getBoolean(KEY_V140PLAYBACKSPEEDPRESETSPINCHADJUST, false)
+        set(value) = prefs.edit().putBoolean(KEY_V140PLAYBACKSPEEDPRESETSPINCHADJUST, value).apply()
 
     var v140screenshotAutoShareBilibili: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V140SCREENSHOTAUTOSHAREBILIBILI, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V140SCREENSHOTAUTOSHAREBILIBILI, value).apply()
+        get() = prefs.getBoolean(KEY_V140SCREENSHOTAUTOSHAREBILIBILI, false)
+        set(value) = prefs.edit().putBoolean(KEY_V140SCREENSHOTAUTOSHAREBILIBILI, value).apply()
 
     var v140videoPIPFollowGamma: Boolean
-        get() = mSharedPreferences.getBoolean(KEY_V140VIDEOPIPFOLLOWGAMMA, false)
-        set(value) = mSharedPreferences.edit().putBoolean(KEY_V140VIDEOPIPFOLLOWGAMMA, value).apply()
+        get() = prefs.getBoolean(KEY_V140VIDEOPIPFOLLOWGAMMA, false)
+        set(value) = prefs.edit().putBoolean(KEY_V140VIDEOPIPFOLLOWGAMMA, value).apply()
 
     var v140danmakuFontBgFillClipType140: Int
-        get() = mSharedPreferences.getInt(KEY_V140DANMAKUFONTBGFILLCLIPTYPE140, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V140DANMAKUFONTBGFILLCLIPTYPE140, value).apply()
+        get() = prefs.getInt(KEY_V140DANMAKUFONTBGFILLCLIPTYPE140, 0)
+        set(value) = prefs.edit().putInt(KEY_V140DANMAKUFONTBGFILLCLIPTYPE140, value).apply()
 
     var v140subtitleAnimationBlur140: Int
-        get() = mSharedPreferences.getInt(KEY_V140SUBTITLEANIMATIONBLUR140, 0)
-        set(value) = mSharedPreferences.edit().putInt(KEY_V140SUBTITLEANIMATIONBLUR140, value).apply()
+        get() = prefs.getInt(KEY_V140SUBTITLEANIMATIONBLUR140, 0)
+        set(value) = prefs.edit().putInt(KEY_V140SUBTITLEANIMATIONBLUR140, value).apply()
 
     companion object {
         const val STARTUP_PAGE_HOME = "home"
