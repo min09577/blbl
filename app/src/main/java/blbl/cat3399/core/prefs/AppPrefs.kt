@@ -28448,6 +28448,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V360NETWORKENCRYPTION360, false)
         set(value) = prefs.edit().putBoolean(KEY_V360NETWORKENCRYPTION360, value).apply()
 
+    var v361sleepTimerDuration361: Int
+        get() = prefs.getInt(KEY_V361SLEEPTIMERDURATION361, 0)
+        set(value) = prefs.edit().putInt(KEY_V361SLEEPTIMERDURATION361, value).apply()
+
+    var v361sleepTimerFadeOut361: Boolean
+        get() = prefs.getBoolean(KEY_V361SLEEPTIMERFADEOUT361, false)
+        set(value) = prefs.edit().putBoolean(KEY_V361SLEEPTIMERFADEOUT361, value).apply()
+
+    var v361sleepTimerShake361: Boolean
+        get() = prefs.getBoolean(KEY_V361SLEEPTIMERSHAKE361, false)
+        set(value) = prefs.edit().putBoolean(KEY_V361SLEEPTIMERSHAKE361, value).apply()
+
+    var v361parentalPinLock361: Boolean
+        get() = prefs.getBoolean(KEY_V361PARENTALPINLOCK361, false)
+        set(value) = prefs.edit().putBoolean(KEY_V361PARENTALPINLOCK361, value).apply()
+
+    var v361parentalTimeLimit361: Int
+        get() = prefs.getInt(KEY_V361PARENTALTIMELIMIT361, 0)
+        set(value) = prefs.edit().putInt(KEY_V361PARENTALTIMELIMIT361, value).apply()
+
+    var v361parentalContentFilter361: Boolean
+        get() = prefs.getBoolean(KEY_V361PARENTALCONTENTFILTER361, false)
+        set(value) = prefs.edit().putBoolean(KEY_V361PARENTALCONTENTFILTER361, value).apply()
+
+    var v361privacyAutoClearHistory361: Boolean
+        get() = prefs.getBoolean(KEY_V361PRIVACYAUTOCLEARHISTORY361, false)
+        set(value) = prefs.edit().putBoolean(KEY_V361PRIVACYAUTOCLEARHISTORY361, value).apply()
+
+    var v361privacyHideWatchRecord361: Boolean
+        get() = prefs.getBoolean(KEY_V361PRIVACYHIDEWATCHRECORD361, false)
+        set(value) = prefs.edit().putBoolean(KEY_V361PRIVACYHIDEWATCHRECORD361, value).apply()
+
+    var v361privacyDisableAnalytics361: Boolean
+        get() = prefs.getBoolean(KEY_V361PRIVACYDISABLEANALYTICS361, false)
+        set(value) = prefs.edit().putBoolean(KEY_V361PRIVACYDISABLEANALYTICS361, value).apply()
+
+    var v361themeAccentColor361: Int
+        get() = prefs.getInt(KEY_V361THEMEACCENTCOLOR361, 0)
+        set(value) = prefs.edit().putInt(KEY_V361THEMEACCENTCOLOR361, value).apply()
+
+    var v361themeDarkMode361: Int
+        get() = prefs.getInt(KEY_V361THEMEDARKMODE361, 0)
+        set(value) = prefs.edit().putInt(KEY_V361THEMEDARKMODE361, value).apply()
+
+    var v361keyboardShortcutPlay361: Boolean
+        get() = prefs.getBoolean(KEY_V361KEYBOARDSHORTCUTPLAY361, false)
+        set(value) = prefs.edit().putBoolean(KEY_V361KEYBOARDSHORTCUTPLAY361, value).apply()
+
+    var v361keyboardShortcutVolume361: Boolean
+        get() = prefs.getBoolean(KEY_V361KEYBOARDSHORTCUTVOLUME361, false)
+        set(value) = prefs.edit().putBoolean(KEY_V361KEYBOARDSHORTCUTVOLUME361, value).apply()
+
+    var v361voiceControlEnabled361: Boolean
+        get() = prefs.getBoolean(KEY_V361VOICECONTROLENABLED361, false)
+        set(value) = prefs.edit().putBoolean(KEY_V361VOICECONTROLENABLED361, value).apply()
+
+    var v361voiceControlLanguage361: Int
+        get() = prefs.getInt(KEY_V361VOICECONTROLLANGUAGE361, 0)
+        set(value) = prefs.edit().putInt(KEY_V361VOICECONTROLLANGUAGE361, value).apply()
+
+    var v362sleepTimerDuration362: Int
+        get() = prefs.getInt(KEY_V362SLEEPTIMERDURATION362, 0)
+        set(value) = prefs.edit().putInt(KEY_V362SLEEPTIMERDURATION362, value).apply()
+
+    var v362sleepTimerFadeOut362: Boolean
+        get() = prefs.getBoolean(KEY_V362SLEEPTIMERFADEOUT362, false)
+        set(value) = prefs.edit().putBoolean(KEY_V362SLEEPTIMERFADEOUT362, value).apply()
+
+    var v362sleepTimerShake362: Boolean
+        get() = prefs.getBoolean(KEY_V362SLEEPTIMERSHAKE362, false)
+        set(value) = prefs.edit().putBoolean(KEY_V362SLEEPTIMERSHAKE362, value).apply()
+
+    var v362parentalPinLock362: Boolean
+        get() = prefs.getBoolean(KEY_V362PARENTALPINLOCK362, false)
+        set(value) = prefs.edit().putBoolean(KEY_V362PARENTALPINLOCK362, value).apply()
+
+    var v362parentalTimeLimit362: Int
+        get() = prefs.getInt(KEY_V362PARENTALTIMELIMIT362, 0)
+        set(value) = prefs.edit().putInt(KEY_V362PARENTALTIMELIMIT362, value).apply()
+
+    var v362parentalContentFilter362: Boolean
+        get() = prefs.getBoolean(KEY_V362PARENTALCONTENTFILTER362, false)
+        set(value) = prefs.edit().putBoolean(KEY_V362PARENTALCONTENTFILTER362, value).apply()
+
+    var v362privacyAutoClearHistory362: Boolean
+        get() = prefs.getBoolean(KEY_V362PRIVACYAUTOCLEARHISTORY362, false)
+        set(value) = prefs.edit().putBoolean(KEY_V362PRIVACYAUTOCLEARHISTORY362, value).apply()
+
+    var v362privacyHideWatchRecord362: Boolean
+        get() = prefs.getBoolean(KEY_V362PRIVACYHIDEWATCHRECORD362, false)
+        set(value) = prefs.edit().putBoolean(KEY_V362PRIVACYHIDEWATCHRECORD362, value).apply()
+
+    var v362privacyDisableAnalytics362: Boolean
+        get() = prefs.getBoolean(KEY_V362PRIVACYDISABLEANALYTICS362, false)
+        set(value) = prefs.edit().putBoolean(KEY_V362PRIVACYDISABLEANALYTICS362, value).apply()
+
+    var v362themeAccentColor362: Int
+        get() = prefs.getInt(KEY_V362THEMEACCENTCOLOR362, 0)
+        set(value) = prefs.edit().putInt(KEY_V362THEMEACCENTCOLOR362, value).apply()
+
+    var v362themeDarkMode362: Int
+        get() = prefs.getInt(KEY_V362THEMEDARKMODE362, 0)
+        set(value) = prefs.edit().putInt(KEY_V362THEMEDARKMODE362, value).apply()
+
+    var v362keyboardShortcutPlay362: Boolean
+        get() = prefs.getBoolean(KEY_V362KEYBOARDSHORTCUTPLAY362, false)
+        set(value) = prefs.edit().putBoolean(KEY_V362KEYBOARDSHORTCUTPLAY362, value).apply()
+
+    var v362keyboardShortcutVolume362: Boolean
+        get() = prefs.getBoolean(KEY_V362KEYBOARDSHORTCUTVOLUME362, false)
+        set(value) = prefs.edit().putBoolean(KEY_V362KEYBOARDSHORTCUTVOLUME362, value).apply()
+
+    var v362voiceControlEnabled362: Boolean
+        get() = prefs.getBoolean(KEY_V362VOICECONTROLENABLED362, false)
+        set(value) = prefs.edit().putBoolean(KEY_V362VOICECONTROLENABLED362, value).apply()
+
+    var v362voiceControlLanguage362: Int
+        get() = prefs.getInt(KEY_V362VOICECONTROLLANGUAGE362, 0)
+        set(value) = prefs.edit().putInt(KEY_V362VOICECONTROLLANGUAGE362, value).apply()
+
+    var v363sleepTimerDuration363: Int
+        get() = prefs.getInt(KEY_V363SLEEPTIMERDURATION363, 0)
+        set(value) = prefs.edit().putInt(KEY_V363SLEEPTIMERDURATION363, value).apply()
+
+    var v363sleepTimerFadeOut363: Boolean
+        get() = prefs.getBoolean(KEY_V363SLEEPTIMERFADEOUT363, false)
+        set(value) = prefs.edit().putBoolean(KEY_V363SLEEPTIMERFADEOUT363, value).apply()
+
+    var v363sleepTimerShake363: Boolean
+        get() = prefs.getBoolean(KEY_V363SLEEPTIMERSHAKE363, false)
+        set(value) = prefs.edit().putBoolean(KEY_V363SLEEPTIMERSHAKE363, value).apply()
+
+    var v363parentalPinLock363: Boolean
+        get() = prefs.getBoolean(KEY_V363PARENTALPINLOCK363, false)
+        set(value) = prefs.edit().putBoolean(KEY_V363PARENTALPINLOCK363, value).apply()
+
+    var v363parentalTimeLimit363: Int
+        get() = prefs.getInt(KEY_V363PARENTALTIMELIMIT363, 0)
+        set(value) = prefs.edit().putInt(KEY_V363PARENTALTIMELIMIT363, value).apply()
+
+    var v363parentalContentFilter363: Boolean
+        get() = prefs.getBoolean(KEY_V363PARENTALCONTENTFILTER363, false)
+        set(value) = prefs.edit().putBoolean(KEY_V363PARENTALCONTENTFILTER363, value).apply()
+
+    var v363privacyAutoClearHistory363: Boolean
+        get() = prefs.getBoolean(KEY_V363PRIVACYAUTOCLEARHISTORY363, false)
+        set(value) = prefs.edit().putBoolean(KEY_V363PRIVACYAUTOCLEARHISTORY363, value).apply()
+
+    var v363privacyHideWatchRecord363: Boolean
+        get() = prefs.getBoolean(KEY_V363PRIVACYHIDEWATCHRECORD363, false)
+        set(value) = prefs.edit().putBoolean(KEY_V363PRIVACYHIDEWATCHRECORD363, value).apply()
+
+    var v363privacyDisableAnalytics363: Boolean
+        get() = prefs.getBoolean(KEY_V363PRIVACYDISABLEANALYTICS363, false)
+        set(value) = prefs.edit().putBoolean(KEY_V363PRIVACYDISABLEANALYTICS363, value).apply()
+
+    var v363themeAccentColor363: Int
+        get() = prefs.getInt(KEY_V363THEMEACCENTCOLOR363, 0)
+        set(value) = prefs.edit().putInt(KEY_V363THEMEACCENTCOLOR363, value).apply()
+
+    var v363themeDarkMode363: Int
+        get() = prefs.getInt(KEY_V363THEMEDARKMODE363, 0)
+        set(value) = prefs.edit().putInt(KEY_V363THEMEDARKMODE363, value).apply()
+
+    var v363keyboardShortcutPlay363: Boolean
+        get() = prefs.getBoolean(KEY_V363KEYBOARDSHORTCUTPLAY363, false)
+        set(value) = prefs.edit().putBoolean(KEY_V363KEYBOARDSHORTCUTPLAY363, value).apply()
+
+    var v363keyboardShortcutVolume363: Boolean
+        get() = prefs.getBoolean(KEY_V363KEYBOARDSHORTCUTVOLUME363, false)
+        set(value) = prefs.edit().putBoolean(KEY_V363KEYBOARDSHORTCUTVOLUME363, value).apply()
+
+    var v363voiceControlEnabled363: Boolean
+        get() = prefs.getBoolean(KEY_V363VOICECONTROLENABLED363, false)
+        set(value) = prefs.edit().putBoolean(KEY_V363VOICECONTROLENABLED363, value).apply()
+
+    var v363voiceControlLanguage363: Int
+        get() = prefs.getInt(KEY_V363VOICECONTROLLANGUAGE363, 0)
+        set(value) = prefs.edit().putInt(KEY_V363VOICECONTROLLANGUAGE363, value).apply()
+
+    var v364sleepTimerDuration364: Int
+        get() = prefs.getInt(KEY_V364SLEEPTIMERDURATION364, 0)
+        set(value) = prefs.edit().putInt(KEY_V364SLEEPTIMERDURATION364, value).apply()
+
+    var v364sleepTimerFadeOut364: Boolean
+        get() = prefs.getBoolean(KEY_V364SLEEPTIMERFADEOUT364, false)
+        set(value) = prefs.edit().putBoolean(KEY_V364SLEEPTIMERFADEOUT364, value).apply()
+
+    var v364sleepTimerShake364: Boolean
+        get() = prefs.getBoolean(KEY_V364SLEEPTIMERSHAKE364, false)
+        set(value) = prefs.edit().putBoolean(KEY_V364SLEEPTIMERSHAKE364, value).apply()
+
+    var v364parentalPinLock364: Boolean
+        get() = prefs.getBoolean(KEY_V364PARENTALPINLOCK364, false)
+        set(value) = prefs.edit().putBoolean(KEY_V364PARENTALPINLOCK364, value).apply()
+
+    var v364parentalTimeLimit364: Int
+        get() = prefs.getInt(KEY_V364PARENTALTIMELIMIT364, 0)
+        set(value) = prefs.edit().putInt(KEY_V364PARENTALTIMELIMIT364, value).apply()
+
+    var v364parentalContentFilter364: Boolean
+        get() = prefs.getBoolean(KEY_V364PARENTALCONTENTFILTER364, false)
+        set(value) = prefs.edit().putBoolean(KEY_V364PARENTALCONTENTFILTER364, value).apply()
+
+    var v364privacyAutoClearHistory364: Boolean
+        get() = prefs.getBoolean(KEY_V364PRIVACYAUTOCLEARHISTORY364, false)
+        set(value) = prefs.edit().putBoolean(KEY_V364PRIVACYAUTOCLEARHISTORY364, value).apply()
+
+    var v364privacyHideWatchRecord364: Boolean
+        get() = prefs.getBoolean(KEY_V364PRIVACYHIDEWATCHRECORD364, false)
+        set(value) = prefs.edit().putBoolean(KEY_V364PRIVACYHIDEWATCHRECORD364, value).apply()
+
+    var v364privacyDisableAnalytics364: Boolean
+        get() = prefs.getBoolean(KEY_V364PRIVACYDISABLEANALYTICS364, false)
+        set(value) = prefs.edit().putBoolean(KEY_V364PRIVACYDISABLEANALYTICS364, value).apply()
+
+    var v364themeAccentColor364: Int
+        get() = prefs.getInt(KEY_V364THEMEACCENTCOLOR364, 0)
+        set(value) = prefs.edit().putInt(KEY_V364THEMEACCENTCOLOR364, value).apply()
+
+    var v364themeDarkMode364: Int
+        get() = prefs.getInt(KEY_V364THEMEDARKMODE364, 0)
+        set(value) = prefs.edit().putInt(KEY_V364THEMEDARKMODE364, value).apply()
+
+    var v364keyboardShortcutPlay364: Boolean
+        get() = prefs.getBoolean(KEY_V364KEYBOARDSHORTCUTPLAY364, false)
+        set(value) = prefs.edit().putBoolean(KEY_V364KEYBOARDSHORTCUTPLAY364, value).apply()
+
+    var v364keyboardShortcutVolume364: Boolean
+        get() = prefs.getBoolean(KEY_V364KEYBOARDSHORTCUTVOLUME364, false)
+        set(value) = prefs.edit().putBoolean(KEY_V364KEYBOARDSHORTCUTVOLUME364, value).apply()
+
+    var v364voiceControlEnabled364: Boolean
+        get() = prefs.getBoolean(KEY_V364VOICECONTROLENABLED364, false)
+        set(value) = prefs.edit().putBoolean(KEY_V364VOICECONTROLENABLED364, value).apply()
+
+    var v364voiceControlLanguage364: Int
+        get() = prefs.getInt(KEY_V364VOICECONTROLLANGUAGE364, 0)
+        set(value) = prefs.edit().putInt(KEY_V364VOICECONTROLLANGUAGE364, value).apply()
+
+    var v365sleepTimerDuration365: Int
+        get() = prefs.getInt(KEY_V365SLEEPTIMERDURATION365, 0)
+        set(value) = prefs.edit().putInt(KEY_V365SLEEPTIMERDURATION365, value).apply()
+
+    var v365sleepTimerFadeOut365: Boolean
+        get() = prefs.getBoolean(KEY_V365SLEEPTIMERFADEOUT365, false)
+        set(value) = prefs.edit().putBoolean(KEY_V365SLEEPTIMERFADEOUT365, value).apply()
+
+    var v365sleepTimerShake365: Boolean
+        get() = prefs.getBoolean(KEY_V365SLEEPTIMERSHAKE365, false)
+        set(value) = prefs.edit().putBoolean(KEY_V365SLEEPTIMERSHAKE365, value).apply()
+
+    var v365parentalPinLock365: Boolean
+        get() = prefs.getBoolean(KEY_V365PARENTALPINLOCK365, false)
+        set(value) = prefs.edit().putBoolean(KEY_V365PARENTALPINLOCK365, value).apply()
+
+    var v365parentalTimeLimit365: Int
+        get() = prefs.getInt(KEY_V365PARENTALTIMELIMIT365, 0)
+        set(value) = prefs.edit().putInt(KEY_V365PARENTALTIMELIMIT365, value).apply()
+
+    var v365parentalContentFilter365: Boolean
+        get() = prefs.getBoolean(KEY_V365PARENTALCONTENTFILTER365, false)
+        set(value) = prefs.edit().putBoolean(KEY_V365PARENTALCONTENTFILTER365, value).apply()
+
+    var v365privacyAutoClearHistory365: Boolean
+        get() = prefs.getBoolean(KEY_V365PRIVACYAUTOCLEARHISTORY365, false)
+        set(value) = prefs.edit().putBoolean(KEY_V365PRIVACYAUTOCLEARHISTORY365, value).apply()
+
+    var v365privacyHideWatchRecord365: Boolean
+        get() = prefs.getBoolean(KEY_V365PRIVACYHIDEWATCHRECORD365, false)
+        set(value) = prefs.edit().putBoolean(KEY_V365PRIVACYHIDEWATCHRECORD365, value).apply()
+
+    var v365privacyDisableAnalytics365: Boolean
+        get() = prefs.getBoolean(KEY_V365PRIVACYDISABLEANALYTICS365, false)
+        set(value) = prefs.edit().putBoolean(KEY_V365PRIVACYDISABLEANALYTICS365, value).apply()
+
+    var v365themeAccentColor365: Int
+        get() = prefs.getInt(KEY_V365THEMEACCENTCOLOR365, 0)
+        set(value) = prefs.edit().putInt(KEY_V365THEMEACCENTCOLOR365, value).apply()
+
+    var v365themeDarkMode365: Int
+        get() = prefs.getInt(KEY_V365THEMEDARKMODE365, 0)
+        set(value) = prefs.edit().putInt(KEY_V365THEMEDARKMODE365, value).apply()
+
+    var v365keyboardShortcutPlay365: Boolean
+        get() = prefs.getBoolean(KEY_V365KEYBOARDSHORTCUTPLAY365, false)
+        set(value) = prefs.edit().putBoolean(KEY_V365KEYBOARDSHORTCUTPLAY365, value).apply()
+
+    var v365keyboardShortcutVolume365: Boolean
+        get() = prefs.getBoolean(KEY_V365KEYBOARDSHORTCUTVOLUME365, false)
+        set(value) = prefs.edit().putBoolean(KEY_V365KEYBOARDSHORTCUTVOLUME365, value).apply()
+
+    var v365voiceControlEnabled365: Boolean
+        get() = prefs.getBoolean(KEY_V365VOICECONTROLENABLED365, false)
+        set(value) = prefs.edit().putBoolean(KEY_V365VOICECONTROLENABLED365, value).apply()
+
+    var v365voiceControlLanguage365: Int
+        get() = prefs.getInt(KEY_V365VOICECONTROLLANGUAGE365, 0)
+        set(value) = prefs.edit().putInt(KEY_V365VOICECONTROLLANGUAGE365, value).apply()
+
+    var v366sleepTimerDuration366: Int
+        get() = prefs.getInt(KEY_V366SLEEPTIMERDURATION366, 0)
+        set(value) = prefs.edit().putInt(KEY_V366SLEEPTIMERDURATION366, value).apply()
+
+    var v366sleepTimerFadeOut366: Boolean
+        get() = prefs.getBoolean(KEY_V366SLEEPTIMERFADEOUT366, false)
+        set(value) = prefs.edit().putBoolean(KEY_V366SLEEPTIMERFADEOUT366, value).apply()
+
+    var v366sleepTimerShake366: Boolean
+        get() = prefs.getBoolean(KEY_V366SLEEPTIMERSHAKE366, false)
+        set(value) = prefs.edit().putBoolean(KEY_V366SLEEPTIMERSHAKE366, value).apply()
+
+    var v366parentalPinLock366: Boolean
+        get() = prefs.getBoolean(KEY_V366PARENTALPINLOCK366, false)
+        set(value) = prefs.edit().putBoolean(KEY_V366PARENTALPINLOCK366, value).apply()
+
+    var v366parentalTimeLimit366: Int
+        get() = prefs.getInt(KEY_V366PARENTALTIMELIMIT366, 0)
+        set(value) = prefs.edit().putInt(KEY_V366PARENTALTIMELIMIT366, value).apply()
+
+    var v366parentalContentFilter366: Boolean
+        get() = prefs.getBoolean(KEY_V366PARENTALCONTENTFILTER366, false)
+        set(value) = prefs.edit().putBoolean(KEY_V366PARENTALCONTENTFILTER366, value).apply()
+
+    var v366privacyAutoClearHistory366: Boolean
+        get() = prefs.getBoolean(KEY_V366PRIVACYAUTOCLEARHISTORY366, false)
+        set(value) = prefs.edit().putBoolean(KEY_V366PRIVACYAUTOCLEARHISTORY366, value).apply()
+
+    var v366privacyHideWatchRecord366: Boolean
+        get() = prefs.getBoolean(KEY_V366PRIVACYHIDEWATCHRECORD366, false)
+        set(value) = prefs.edit().putBoolean(KEY_V366PRIVACYHIDEWATCHRECORD366, value).apply()
+
+    var v366privacyDisableAnalytics366: Boolean
+        get() = prefs.getBoolean(KEY_V366PRIVACYDISABLEANALYTICS366, false)
+        set(value) = prefs.edit().putBoolean(KEY_V366PRIVACYDISABLEANALYTICS366, value).apply()
+
+    var v366themeAccentColor366: Int
+        get() = prefs.getInt(KEY_V366THEMEACCENTCOLOR366, 0)
+        set(value) = prefs.edit().putInt(KEY_V366THEMEACCENTCOLOR366, value).apply()
+
+    var v366themeDarkMode366: Int
+        get() = prefs.getInt(KEY_V366THEMEDARKMODE366, 0)
+        set(value) = prefs.edit().putInt(KEY_V366THEMEDARKMODE366, value).apply()
+
+    var v366keyboardShortcutPlay366: Boolean
+        get() = prefs.getBoolean(KEY_V366KEYBOARDSHORTCUTPLAY366, false)
+        set(value) = prefs.edit().putBoolean(KEY_V366KEYBOARDSHORTCUTPLAY366, value).apply()
+
+    var v366keyboardShortcutVolume366: Boolean
+        get() = prefs.getBoolean(KEY_V366KEYBOARDSHORTCUTVOLUME366, false)
+        set(value) = prefs.edit().putBoolean(KEY_V366KEYBOARDSHORTCUTVOLUME366, value).apply()
+
+    var v366voiceControlEnabled366: Boolean
+        get() = prefs.getBoolean(KEY_V366VOICECONTROLENABLED366, false)
+        set(value) = prefs.edit().putBoolean(KEY_V366VOICECONTROLENABLED366, value).apply()
+
+    var v366voiceControlLanguage366: Int
+        get() = prefs.getInt(KEY_V366VOICECONTROLLANGUAGE366, 0)
+        set(value) = prefs.edit().putInt(KEY_V366VOICECONTROLLANGUAGE366, value).apply()
+
+    var v367sleepTimerDuration367: Int
+        get() = prefs.getInt(KEY_V367SLEEPTIMERDURATION367, 0)
+        set(value) = prefs.edit().putInt(KEY_V367SLEEPTIMERDURATION367, value).apply()
+
+    var v367sleepTimerFadeOut367: Boolean
+        get() = prefs.getBoolean(KEY_V367SLEEPTIMERFADEOUT367, false)
+        set(value) = prefs.edit().putBoolean(KEY_V367SLEEPTIMERFADEOUT367, value).apply()
+
+    var v367sleepTimerShake367: Boolean
+        get() = prefs.getBoolean(KEY_V367SLEEPTIMERSHAKE367, false)
+        set(value) = prefs.edit().putBoolean(KEY_V367SLEEPTIMERSHAKE367, value).apply()
+
+    var v367parentalPinLock367: Boolean
+        get() = prefs.getBoolean(KEY_V367PARENTALPINLOCK367, false)
+        set(value) = prefs.edit().putBoolean(KEY_V367PARENTALPINLOCK367, value).apply()
+
+    var v367parentalTimeLimit367: Int
+        get() = prefs.getInt(KEY_V367PARENTALTIMELIMIT367, 0)
+        set(value) = prefs.edit().putInt(KEY_V367PARENTALTIMELIMIT367, value).apply()
+
+    var v367parentalContentFilter367: Boolean
+        get() = prefs.getBoolean(KEY_V367PARENTALCONTENTFILTER367, false)
+        set(value) = prefs.edit().putBoolean(KEY_V367PARENTALCONTENTFILTER367, value).apply()
+
+    var v367privacyAutoClearHistory367: Boolean
+        get() = prefs.getBoolean(KEY_V367PRIVACYAUTOCLEARHISTORY367, false)
+        set(value) = prefs.edit().putBoolean(KEY_V367PRIVACYAUTOCLEARHISTORY367, value).apply()
+
+    var v367privacyHideWatchRecord367: Boolean
+        get() = prefs.getBoolean(KEY_V367PRIVACYHIDEWATCHRECORD367, false)
+        set(value) = prefs.edit().putBoolean(KEY_V367PRIVACYHIDEWATCHRECORD367, value).apply()
+
+    var v367privacyDisableAnalytics367: Boolean
+        get() = prefs.getBoolean(KEY_V367PRIVACYDISABLEANALYTICS367, false)
+        set(value) = prefs.edit().putBoolean(KEY_V367PRIVACYDISABLEANALYTICS367, value).apply()
+
+    var v367themeAccentColor367: Int
+        get() = prefs.getInt(KEY_V367THEMEACCENTCOLOR367, 0)
+        set(value) = prefs.edit().putInt(KEY_V367THEMEACCENTCOLOR367, value).apply()
+
+    var v367themeDarkMode367: Int
+        get() = prefs.getInt(KEY_V367THEMEDARKMODE367, 0)
+        set(value) = prefs.edit().putInt(KEY_V367THEMEDARKMODE367, value).apply()
+
+    var v367keyboardShortcutPlay367: Boolean
+        get() = prefs.getBoolean(KEY_V367KEYBOARDSHORTCUTPLAY367, false)
+        set(value) = prefs.edit().putBoolean(KEY_V367KEYBOARDSHORTCUTPLAY367, value).apply()
+
+    var v367keyboardShortcutVolume367: Boolean
+        get() = prefs.getBoolean(KEY_V367KEYBOARDSHORTCUTVOLUME367, false)
+        set(value) = prefs.edit().putBoolean(KEY_V367KEYBOARDSHORTCUTVOLUME367, value).apply()
+
+    var v367voiceControlEnabled367: Boolean
+        get() = prefs.getBoolean(KEY_V367VOICECONTROLENABLED367, false)
+        set(value) = prefs.edit().putBoolean(KEY_V367VOICECONTROLENABLED367, value).apply()
+
+    var v367voiceControlLanguage367: Int
+        get() = prefs.getInt(KEY_V367VOICECONTROLLANGUAGE367, 0)
+        set(value) = prefs.edit().putInt(KEY_V367VOICECONTROLLANGUAGE367, value).apply()
+
+    var v368sleepTimerDuration368: Int
+        get() = prefs.getInt(KEY_V368SLEEPTIMERDURATION368, 0)
+        set(value) = prefs.edit().putInt(KEY_V368SLEEPTIMERDURATION368, value).apply()
+
+    var v368sleepTimerFadeOut368: Boolean
+        get() = prefs.getBoolean(KEY_V368SLEEPTIMERFADEOUT368, false)
+        set(value) = prefs.edit().putBoolean(KEY_V368SLEEPTIMERFADEOUT368, value).apply()
+
+    var v368sleepTimerShake368: Boolean
+        get() = prefs.getBoolean(KEY_V368SLEEPTIMERSHAKE368, false)
+        set(value) = prefs.edit().putBoolean(KEY_V368SLEEPTIMERSHAKE368, value).apply()
+
+    var v368parentalPinLock368: Boolean
+        get() = prefs.getBoolean(KEY_V368PARENTALPINLOCK368, false)
+        set(value) = prefs.edit().putBoolean(KEY_V368PARENTALPINLOCK368, value).apply()
+
+    var v368parentalTimeLimit368: Int
+        get() = prefs.getInt(KEY_V368PARENTALTIMELIMIT368, 0)
+        set(value) = prefs.edit().putInt(KEY_V368PARENTALTIMELIMIT368, value).apply()
+
+    var v368parentalContentFilter368: Boolean
+        get() = prefs.getBoolean(KEY_V368PARENTALCONTENTFILTER368, false)
+        set(value) = prefs.edit().putBoolean(KEY_V368PARENTALCONTENTFILTER368, value).apply()
+
+    var v368privacyAutoClearHistory368: Boolean
+        get() = prefs.getBoolean(KEY_V368PRIVACYAUTOCLEARHISTORY368, false)
+        set(value) = prefs.edit().putBoolean(KEY_V368PRIVACYAUTOCLEARHISTORY368, value).apply()
+
+    var v368privacyHideWatchRecord368: Boolean
+        get() = prefs.getBoolean(KEY_V368PRIVACYHIDEWATCHRECORD368, false)
+        set(value) = prefs.edit().putBoolean(KEY_V368PRIVACYHIDEWATCHRECORD368, value).apply()
+
+    var v368privacyDisableAnalytics368: Boolean
+        get() = prefs.getBoolean(KEY_V368PRIVACYDISABLEANALYTICS368, false)
+        set(value) = prefs.edit().putBoolean(KEY_V368PRIVACYDISABLEANALYTICS368, value).apply()
+
+    var v368themeAccentColor368: Int
+        get() = prefs.getInt(KEY_V368THEMEACCENTCOLOR368, 0)
+        set(value) = prefs.edit().putInt(KEY_V368THEMEACCENTCOLOR368, value).apply()
+
+    var v368themeDarkMode368: Int
+        get() = prefs.getInt(KEY_V368THEMEDARKMODE368, 0)
+        set(value) = prefs.edit().putInt(KEY_V368THEMEDARKMODE368, value).apply()
+
+    var v368keyboardShortcutPlay368: Boolean
+        get() = prefs.getBoolean(KEY_V368KEYBOARDSHORTCUTPLAY368, false)
+        set(value) = prefs.edit().putBoolean(KEY_V368KEYBOARDSHORTCUTPLAY368, value).apply()
+
+    var v368keyboardShortcutVolume368: Boolean
+        get() = prefs.getBoolean(KEY_V368KEYBOARDSHORTCUTVOLUME368, false)
+        set(value) = prefs.edit().putBoolean(KEY_V368KEYBOARDSHORTCUTVOLUME368, value).apply()
+
+    var v368voiceControlEnabled368: Boolean
+        get() = prefs.getBoolean(KEY_V368VOICECONTROLENABLED368, false)
+        set(value) = prefs.edit().putBoolean(KEY_V368VOICECONTROLENABLED368, value).apply()
+
+    var v368voiceControlLanguage368: Int
+        get() = prefs.getInt(KEY_V368VOICECONTROLLANGUAGE368, 0)
+        set(value) = prefs.edit().putInt(KEY_V368VOICECONTROLLANGUAGE368, value).apply()
+
+    var v369sleepTimerDuration369: Int
+        get() = prefs.getInt(KEY_V369SLEEPTIMERDURATION369, 0)
+        set(value) = prefs.edit().putInt(KEY_V369SLEEPTIMERDURATION369, value).apply()
+
+    var v369sleepTimerFadeOut369: Boolean
+        get() = prefs.getBoolean(KEY_V369SLEEPTIMERFADEOUT369, false)
+        set(value) = prefs.edit().putBoolean(KEY_V369SLEEPTIMERFADEOUT369, value).apply()
+
+    var v369sleepTimerShake369: Boolean
+        get() = prefs.getBoolean(KEY_V369SLEEPTIMERSHAKE369, false)
+        set(value) = prefs.edit().putBoolean(KEY_V369SLEEPTIMERSHAKE369, value).apply()
+
+    var v369parentalPinLock369: Boolean
+        get() = prefs.getBoolean(KEY_V369PARENTALPINLOCK369, false)
+        set(value) = prefs.edit().putBoolean(KEY_V369PARENTALPINLOCK369, value).apply()
+
+    var v369parentalTimeLimit369: Int
+        get() = prefs.getInt(KEY_V369PARENTALTIMELIMIT369, 0)
+        set(value) = prefs.edit().putInt(KEY_V369PARENTALTIMELIMIT369, value).apply()
+
+    var v369parentalContentFilter369: Boolean
+        get() = prefs.getBoolean(KEY_V369PARENTALCONTENTFILTER369, false)
+        set(value) = prefs.edit().putBoolean(KEY_V369PARENTALCONTENTFILTER369, value).apply()
+
+    var v369privacyAutoClearHistory369: Boolean
+        get() = prefs.getBoolean(KEY_V369PRIVACYAUTOCLEARHISTORY369, false)
+        set(value) = prefs.edit().putBoolean(KEY_V369PRIVACYAUTOCLEARHISTORY369, value).apply()
+
+    var v369privacyHideWatchRecord369: Boolean
+        get() = prefs.getBoolean(KEY_V369PRIVACYHIDEWATCHRECORD369, false)
+        set(value) = prefs.edit().putBoolean(KEY_V369PRIVACYHIDEWATCHRECORD369, value).apply()
+
+    var v369privacyDisableAnalytics369: Boolean
+        get() = prefs.getBoolean(KEY_V369PRIVACYDISABLEANALYTICS369, false)
+        set(value) = prefs.edit().putBoolean(KEY_V369PRIVACYDISABLEANALYTICS369, value).apply()
+
+    var v369themeAccentColor369: Int
+        get() = prefs.getInt(KEY_V369THEMEACCENTCOLOR369, 0)
+        set(value) = prefs.edit().putInt(KEY_V369THEMEACCENTCOLOR369, value).apply()
+
+    var v369themeDarkMode369: Int
+        get() = prefs.getInt(KEY_V369THEMEDARKMODE369, 0)
+        set(value) = prefs.edit().putInt(KEY_V369THEMEDARKMODE369, value).apply()
+
+    var v369keyboardShortcutPlay369: Boolean
+        get() = prefs.getBoolean(KEY_V369KEYBOARDSHORTCUTPLAY369, false)
+        set(value) = prefs.edit().putBoolean(KEY_V369KEYBOARDSHORTCUTPLAY369, value).apply()
+
+    var v369keyboardShortcutVolume369: Boolean
+        get() = prefs.getBoolean(KEY_V369KEYBOARDSHORTCUTVOLUME369, false)
+        set(value) = prefs.edit().putBoolean(KEY_V369KEYBOARDSHORTCUTVOLUME369, value).apply()
+
+    var v369voiceControlEnabled369: Boolean
+        get() = prefs.getBoolean(KEY_V369VOICECONTROLENABLED369, false)
+        set(value) = prefs.edit().putBoolean(KEY_V369VOICECONTROLENABLED369, value).apply()
+
+    var v369voiceControlLanguage369: Int
+        get() = prefs.getInt(KEY_V369VOICECONTROLLANGUAGE369, 0)
+        set(value) = prefs.edit().putInt(KEY_V369VOICECONTROLLANGUAGE369, value).apply()
+
+    var v370sleepTimerDuration370: Int
+        get() = prefs.getInt(KEY_V370SLEEPTIMERDURATION370, 0)
+        set(value) = prefs.edit().putInt(KEY_V370SLEEPTIMERDURATION370, value).apply()
+
+    var v370sleepTimerFadeOut370: Boolean
+        get() = prefs.getBoolean(KEY_V370SLEEPTIMERFADEOUT370, false)
+        set(value) = prefs.edit().putBoolean(KEY_V370SLEEPTIMERFADEOUT370, value).apply()
+
+    var v370sleepTimerShake370: Boolean
+        get() = prefs.getBoolean(KEY_V370SLEEPTIMERSHAKE370, false)
+        set(value) = prefs.edit().putBoolean(KEY_V370SLEEPTIMERSHAKE370, value).apply()
+
+    var v370parentalPinLock370: Boolean
+        get() = prefs.getBoolean(KEY_V370PARENTALPINLOCK370, false)
+        set(value) = prefs.edit().putBoolean(KEY_V370PARENTALPINLOCK370, value).apply()
+
+    var v370parentalTimeLimit370: Int
+        get() = prefs.getInt(KEY_V370PARENTALTIMELIMIT370, 0)
+        set(value) = prefs.edit().putInt(KEY_V370PARENTALTIMELIMIT370, value).apply()
+
+    var v370parentalContentFilter370: Boolean
+        get() = prefs.getBoolean(KEY_V370PARENTALCONTENTFILTER370, false)
+        set(value) = prefs.edit().putBoolean(KEY_V370PARENTALCONTENTFILTER370, value).apply()
+
+    var v370privacyAutoClearHistory370: Boolean
+        get() = prefs.getBoolean(KEY_V370PRIVACYAUTOCLEARHISTORY370, false)
+        set(value) = prefs.edit().putBoolean(KEY_V370PRIVACYAUTOCLEARHISTORY370, value).apply()
+
+    var v370privacyHideWatchRecord370: Boolean
+        get() = prefs.getBoolean(KEY_V370PRIVACYHIDEWATCHRECORD370, false)
+        set(value) = prefs.edit().putBoolean(KEY_V370PRIVACYHIDEWATCHRECORD370, value).apply()
+
+    var v370privacyDisableAnalytics370: Boolean
+        get() = prefs.getBoolean(KEY_V370PRIVACYDISABLEANALYTICS370, false)
+        set(value) = prefs.edit().putBoolean(KEY_V370PRIVACYDISABLEANALYTICS370, value).apply()
+
+    var v370themeAccentColor370: Int
+        get() = prefs.getInt(KEY_V370THEMEACCENTCOLOR370, 0)
+        set(value) = prefs.edit().putInt(KEY_V370THEMEACCENTCOLOR370, value).apply()
+
+    var v370themeDarkMode370: Int
+        get() = prefs.getInt(KEY_V370THEMEDARKMODE370, 0)
+        set(value) = prefs.edit().putInt(KEY_V370THEMEDARKMODE370, value).apply()
+
+    var v370keyboardShortcutPlay370: Boolean
+        get() = prefs.getBoolean(KEY_V370KEYBOARDSHORTCUTPLAY370, false)
+        set(value) = prefs.edit().putBoolean(KEY_V370KEYBOARDSHORTCUTPLAY370, value).apply()
+
+    var v370keyboardShortcutVolume370: Boolean
+        get() = prefs.getBoolean(KEY_V370KEYBOARDSHORTCUTVOLUME370, false)
+        set(value) = prefs.edit().putBoolean(KEY_V370KEYBOARDSHORTCUTVOLUME370, value).apply()
+
+    var v370voiceControlEnabled370: Boolean
+        get() = prefs.getBoolean(KEY_V370VOICECONTROLENABLED370, false)
+        set(value) = prefs.edit().putBoolean(KEY_V370VOICECONTROLENABLED370, value).apply()
+
+    var v370voiceControlLanguage370: Int
+        get() = prefs.getInt(KEY_V370VOICECONTROLLANGUAGE370, 0)
+        set(value) = prefs.edit().putInt(KEY_V370VOICECONTROLLANGUAGE370, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -36430,5 +37030,155 @@ class AppPrefs(context: Context) {
         const val KEY_V360NETWORKKEEPALIVE360 = "v360networkKeepAlive360" // v360 Network Keep Alive360
         const val KEY_V360NETWORKCOMPRESSION360 = "v360networkCompression360" // v360 Network Compression360
         const val KEY_V360NETWORKENCRYPTION360 = "v360networkEncryption360" // v360 Network Encryption360
+        const val KEY_V361SLEEPTIMERDURATION361 = "v361sleepTimerDuration361" // v361 Sleep Timer Duration361
+        const val KEY_V361SLEEPTIMERFADEOUT361 = "v361sleepTimerFadeOut361" // v361 Sleep Timer Fade Out361
+        const val KEY_V361SLEEPTIMERSHAKE361 = "v361sleepTimerShake361" // v361 Sleep Timer Shake361
+        const val KEY_V361PARENTALPINLOCK361 = "v361parentalPinLock361" // v361 Parental Pin Lock361
+        const val KEY_V361PARENTALTIMELIMIT361 = "v361parentalTimeLimit361" // v361 Parental Time Limit361
+        const val KEY_V361PARENTALCONTENTFILTER361 = "v361parentalContentFilter361" // v361 Parental Content Filter361
+        const val KEY_V361PRIVACYAUTOCLEARHISTORY361 = "v361privacyAutoClearHistory361" // v361 Privacy Auto Clear History361
+        const val KEY_V361PRIVACYHIDEWATCHRECORD361 = "v361privacyHideWatchRecord361" // v361 Privacy Hide Watch Record361
+        const val KEY_V361PRIVACYDISABLEANALYTICS361 = "v361privacyDisableAnalytics361" // v361 Privacy Disable Analytics361
+        const val KEY_V361THEMEACCENTCOLOR361 = "v361themeAccentColor361" // v361 Theme Accent Color361
+        const val KEY_V361THEMEDARKMODE361 = "v361themeDarkMode361" // v361 Theme Dark Mode361
+        const val KEY_V361KEYBOARDSHORTCUTPLAY361 = "v361keyboardShortcutPlay361" // v361 Keyboard Shortcut Play361
+        const val KEY_V361KEYBOARDSHORTCUTVOLUME361 = "v361keyboardShortcutVolume361" // v361 Keyboard Shortcut Volume361
+        const val KEY_V361VOICECONTROLENABLED361 = "v361voiceControlEnabled361" // v361 Voice Control Enabled361
+        const val KEY_V361VOICECONTROLLANGUAGE361 = "v361voiceControlLanguage361" // v361 Voice Control Language361
+        const val KEY_V362SLEEPTIMERDURATION362 = "v362sleepTimerDuration362" // v362 Sleep Timer Duration362
+        const val KEY_V362SLEEPTIMERFADEOUT362 = "v362sleepTimerFadeOut362" // v362 Sleep Timer Fade Out362
+        const val KEY_V362SLEEPTIMERSHAKE362 = "v362sleepTimerShake362" // v362 Sleep Timer Shake362
+        const val KEY_V362PARENTALPINLOCK362 = "v362parentalPinLock362" // v362 Parental Pin Lock362
+        const val KEY_V362PARENTALTIMELIMIT362 = "v362parentalTimeLimit362" // v362 Parental Time Limit362
+        const val KEY_V362PARENTALCONTENTFILTER362 = "v362parentalContentFilter362" // v362 Parental Content Filter362
+        const val KEY_V362PRIVACYAUTOCLEARHISTORY362 = "v362privacyAutoClearHistory362" // v362 Privacy Auto Clear History362
+        const val KEY_V362PRIVACYHIDEWATCHRECORD362 = "v362privacyHideWatchRecord362" // v362 Privacy Hide Watch Record362
+        const val KEY_V362PRIVACYDISABLEANALYTICS362 = "v362privacyDisableAnalytics362" // v362 Privacy Disable Analytics362
+        const val KEY_V362THEMEACCENTCOLOR362 = "v362themeAccentColor362" // v362 Theme Accent Color362
+        const val KEY_V362THEMEDARKMODE362 = "v362themeDarkMode362" // v362 Theme Dark Mode362
+        const val KEY_V362KEYBOARDSHORTCUTPLAY362 = "v362keyboardShortcutPlay362" // v362 Keyboard Shortcut Play362
+        const val KEY_V362KEYBOARDSHORTCUTVOLUME362 = "v362keyboardShortcutVolume362" // v362 Keyboard Shortcut Volume362
+        const val KEY_V362VOICECONTROLENABLED362 = "v362voiceControlEnabled362" // v362 Voice Control Enabled362
+        const val KEY_V362VOICECONTROLLANGUAGE362 = "v362voiceControlLanguage362" // v362 Voice Control Language362
+        const val KEY_V363SLEEPTIMERDURATION363 = "v363sleepTimerDuration363" // v363 Sleep Timer Duration363
+        const val KEY_V363SLEEPTIMERFADEOUT363 = "v363sleepTimerFadeOut363" // v363 Sleep Timer Fade Out363
+        const val KEY_V363SLEEPTIMERSHAKE363 = "v363sleepTimerShake363" // v363 Sleep Timer Shake363
+        const val KEY_V363PARENTALPINLOCK363 = "v363parentalPinLock363" // v363 Parental Pin Lock363
+        const val KEY_V363PARENTALTIMELIMIT363 = "v363parentalTimeLimit363" // v363 Parental Time Limit363
+        const val KEY_V363PARENTALCONTENTFILTER363 = "v363parentalContentFilter363" // v363 Parental Content Filter363
+        const val KEY_V363PRIVACYAUTOCLEARHISTORY363 = "v363privacyAutoClearHistory363" // v363 Privacy Auto Clear History363
+        const val KEY_V363PRIVACYHIDEWATCHRECORD363 = "v363privacyHideWatchRecord363" // v363 Privacy Hide Watch Record363
+        const val KEY_V363PRIVACYDISABLEANALYTICS363 = "v363privacyDisableAnalytics363" // v363 Privacy Disable Analytics363
+        const val KEY_V363THEMEACCENTCOLOR363 = "v363themeAccentColor363" // v363 Theme Accent Color363
+        const val KEY_V363THEMEDARKMODE363 = "v363themeDarkMode363" // v363 Theme Dark Mode363
+        const val KEY_V363KEYBOARDSHORTCUTPLAY363 = "v363keyboardShortcutPlay363" // v363 Keyboard Shortcut Play363
+        const val KEY_V363KEYBOARDSHORTCUTVOLUME363 = "v363keyboardShortcutVolume363" // v363 Keyboard Shortcut Volume363
+        const val KEY_V363VOICECONTROLENABLED363 = "v363voiceControlEnabled363" // v363 Voice Control Enabled363
+        const val KEY_V363VOICECONTROLLANGUAGE363 = "v363voiceControlLanguage363" // v363 Voice Control Language363
+        const val KEY_V364SLEEPTIMERDURATION364 = "v364sleepTimerDuration364" // v364 Sleep Timer Duration364
+        const val KEY_V364SLEEPTIMERFADEOUT364 = "v364sleepTimerFadeOut364" // v364 Sleep Timer Fade Out364
+        const val KEY_V364SLEEPTIMERSHAKE364 = "v364sleepTimerShake364" // v364 Sleep Timer Shake364
+        const val KEY_V364PARENTALPINLOCK364 = "v364parentalPinLock364" // v364 Parental Pin Lock364
+        const val KEY_V364PARENTALTIMELIMIT364 = "v364parentalTimeLimit364" // v364 Parental Time Limit364
+        const val KEY_V364PARENTALCONTENTFILTER364 = "v364parentalContentFilter364" // v364 Parental Content Filter364
+        const val KEY_V364PRIVACYAUTOCLEARHISTORY364 = "v364privacyAutoClearHistory364" // v364 Privacy Auto Clear History364
+        const val KEY_V364PRIVACYHIDEWATCHRECORD364 = "v364privacyHideWatchRecord364" // v364 Privacy Hide Watch Record364
+        const val KEY_V364PRIVACYDISABLEANALYTICS364 = "v364privacyDisableAnalytics364" // v364 Privacy Disable Analytics364
+        const val KEY_V364THEMEACCENTCOLOR364 = "v364themeAccentColor364" // v364 Theme Accent Color364
+        const val KEY_V364THEMEDARKMODE364 = "v364themeDarkMode364" // v364 Theme Dark Mode364
+        const val KEY_V364KEYBOARDSHORTCUTPLAY364 = "v364keyboardShortcutPlay364" // v364 Keyboard Shortcut Play364
+        const val KEY_V364KEYBOARDSHORTCUTVOLUME364 = "v364keyboardShortcutVolume364" // v364 Keyboard Shortcut Volume364
+        const val KEY_V364VOICECONTROLENABLED364 = "v364voiceControlEnabled364" // v364 Voice Control Enabled364
+        const val KEY_V364VOICECONTROLLANGUAGE364 = "v364voiceControlLanguage364" // v364 Voice Control Language364
+        const val KEY_V365SLEEPTIMERDURATION365 = "v365sleepTimerDuration365" // v365 Sleep Timer Duration365
+        const val KEY_V365SLEEPTIMERFADEOUT365 = "v365sleepTimerFadeOut365" // v365 Sleep Timer Fade Out365
+        const val KEY_V365SLEEPTIMERSHAKE365 = "v365sleepTimerShake365" // v365 Sleep Timer Shake365
+        const val KEY_V365PARENTALPINLOCK365 = "v365parentalPinLock365" // v365 Parental Pin Lock365
+        const val KEY_V365PARENTALTIMELIMIT365 = "v365parentalTimeLimit365" // v365 Parental Time Limit365
+        const val KEY_V365PARENTALCONTENTFILTER365 = "v365parentalContentFilter365" // v365 Parental Content Filter365
+        const val KEY_V365PRIVACYAUTOCLEARHISTORY365 = "v365privacyAutoClearHistory365" // v365 Privacy Auto Clear History365
+        const val KEY_V365PRIVACYHIDEWATCHRECORD365 = "v365privacyHideWatchRecord365" // v365 Privacy Hide Watch Record365
+        const val KEY_V365PRIVACYDISABLEANALYTICS365 = "v365privacyDisableAnalytics365" // v365 Privacy Disable Analytics365
+        const val KEY_V365THEMEACCENTCOLOR365 = "v365themeAccentColor365" // v365 Theme Accent Color365
+        const val KEY_V365THEMEDARKMODE365 = "v365themeDarkMode365" // v365 Theme Dark Mode365
+        const val KEY_V365KEYBOARDSHORTCUTPLAY365 = "v365keyboardShortcutPlay365" // v365 Keyboard Shortcut Play365
+        const val KEY_V365KEYBOARDSHORTCUTVOLUME365 = "v365keyboardShortcutVolume365" // v365 Keyboard Shortcut Volume365
+        const val KEY_V365VOICECONTROLENABLED365 = "v365voiceControlEnabled365" // v365 Voice Control Enabled365
+        const val KEY_V365VOICECONTROLLANGUAGE365 = "v365voiceControlLanguage365" // v365 Voice Control Language365
+        const val KEY_V366SLEEPTIMERDURATION366 = "v366sleepTimerDuration366" // v366 Sleep Timer Duration366
+        const val KEY_V366SLEEPTIMERFADEOUT366 = "v366sleepTimerFadeOut366" // v366 Sleep Timer Fade Out366
+        const val KEY_V366SLEEPTIMERSHAKE366 = "v366sleepTimerShake366" // v366 Sleep Timer Shake366
+        const val KEY_V366PARENTALPINLOCK366 = "v366parentalPinLock366" // v366 Parental Pin Lock366
+        const val KEY_V366PARENTALTIMELIMIT366 = "v366parentalTimeLimit366" // v366 Parental Time Limit366
+        const val KEY_V366PARENTALCONTENTFILTER366 = "v366parentalContentFilter366" // v366 Parental Content Filter366
+        const val KEY_V366PRIVACYAUTOCLEARHISTORY366 = "v366privacyAutoClearHistory366" // v366 Privacy Auto Clear History366
+        const val KEY_V366PRIVACYHIDEWATCHRECORD366 = "v366privacyHideWatchRecord366" // v366 Privacy Hide Watch Record366
+        const val KEY_V366PRIVACYDISABLEANALYTICS366 = "v366privacyDisableAnalytics366" // v366 Privacy Disable Analytics366
+        const val KEY_V366THEMEACCENTCOLOR366 = "v366themeAccentColor366" // v366 Theme Accent Color366
+        const val KEY_V366THEMEDARKMODE366 = "v366themeDarkMode366" // v366 Theme Dark Mode366
+        const val KEY_V366KEYBOARDSHORTCUTPLAY366 = "v366keyboardShortcutPlay366" // v366 Keyboard Shortcut Play366
+        const val KEY_V366KEYBOARDSHORTCUTVOLUME366 = "v366keyboardShortcutVolume366" // v366 Keyboard Shortcut Volume366
+        const val KEY_V366VOICECONTROLENABLED366 = "v366voiceControlEnabled366" // v366 Voice Control Enabled366
+        const val KEY_V366VOICECONTROLLANGUAGE366 = "v366voiceControlLanguage366" // v366 Voice Control Language366
+        const val KEY_V367SLEEPTIMERDURATION367 = "v367sleepTimerDuration367" // v367 Sleep Timer Duration367
+        const val KEY_V367SLEEPTIMERFADEOUT367 = "v367sleepTimerFadeOut367" // v367 Sleep Timer Fade Out367
+        const val KEY_V367SLEEPTIMERSHAKE367 = "v367sleepTimerShake367" // v367 Sleep Timer Shake367
+        const val KEY_V367PARENTALPINLOCK367 = "v367parentalPinLock367" // v367 Parental Pin Lock367
+        const val KEY_V367PARENTALTIMELIMIT367 = "v367parentalTimeLimit367" // v367 Parental Time Limit367
+        const val KEY_V367PARENTALCONTENTFILTER367 = "v367parentalContentFilter367" // v367 Parental Content Filter367
+        const val KEY_V367PRIVACYAUTOCLEARHISTORY367 = "v367privacyAutoClearHistory367" // v367 Privacy Auto Clear History367
+        const val KEY_V367PRIVACYHIDEWATCHRECORD367 = "v367privacyHideWatchRecord367" // v367 Privacy Hide Watch Record367
+        const val KEY_V367PRIVACYDISABLEANALYTICS367 = "v367privacyDisableAnalytics367" // v367 Privacy Disable Analytics367
+        const val KEY_V367THEMEACCENTCOLOR367 = "v367themeAccentColor367" // v367 Theme Accent Color367
+        const val KEY_V367THEMEDARKMODE367 = "v367themeDarkMode367" // v367 Theme Dark Mode367
+        const val KEY_V367KEYBOARDSHORTCUTPLAY367 = "v367keyboardShortcutPlay367" // v367 Keyboard Shortcut Play367
+        const val KEY_V367KEYBOARDSHORTCUTVOLUME367 = "v367keyboardShortcutVolume367" // v367 Keyboard Shortcut Volume367
+        const val KEY_V367VOICECONTROLENABLED367 = "v367voiceControlEnabled367" // v367 Voice Control Enabled367
+        const val KEY_V367VOICECONTROLLANGUAGE367 = "v367voiceControlLanguage367" // v367 Voice Control Language367
+        const val KEY_V368SLEEPTIMERDURATION368 = "v368sleepTimerDuration368" // v368 Sleep Timer Duration368
+        const val KEY_V368SLEEPTIMERFADEOUT368 = "v368sleepTimerFadeOut368" // v368 Sleep Timer Fade Out368
+        const val KEY_V368SLEEPTIMERSHAKE368 = "v368sleepTimerShake368" // v368 Sleep Timer Shake368
+        const val KEY_V368PARENTALPINLOCK368 = "v368parentalPinLock368" // v368 Parental Pin Lock368
+        const val KEY_V368PARENTALTIMELIMIT368 = "v368parentalTimeLimit368" // v368 Parental Time Limit368
+        const val KEY_V368PARENTALCONTENTFILTER368 = "v368parentalContentFilter368" // v368 Parental Content Filter368
+        const val KEY_V368PRIVACYAUTOCLEARHISTORY368 = "v368privacyAutoClearHistory368" // v368 Privacy Auto Clear History368
+        const val KEY_V368PRIVACYHIDEWATCHRECORD368 = "v368privacyHideWatchRecord368" // v368 Privacy Hide Watch Record368
+        const val KEY_V368PRIVACYDISABLEANALYTICS368 = "v368privacyDisableAnalytics368" // v368 Privacy Disable Analytics368
+        const val KEY_V368THEMEACCENTCOLOR368 = "v368themeAccentColor368" // v368 Theme Accent Color368
+        const val KEY_V368THEMEDARKMODE368 = "v368themeDarkMode368" // v368 Theme Dark Mode368
+        const val KEY_V368KEYBOARDSHORTCUTPLAY368 = "v368keyboardShortcutPlay368" // v368 Keyboard Shortcut Play368
+        const val KEY_V368KEYBOARDSHORTCUTVOLUME368 = "v368keyboardShortcutVolume368" // v368 Keyboard Shortcut Volume368
+        const val KEY_V368VOICECONTROLENABLED368 = "v368voiceControlEnabled368" // v368 Voice Control Enabled368
+        const val KEY_V368VOICECONTROLLANGUAGE368 = "v368voiceControlLanguage368" // v368 Voice Control Language368
+        const val KEY_V369SLEEPTIMERDURATION369 = "v369sleepTimerDuration369" // v369 Sleep Timer Duration369
+        const val KEY_V369SLEEPTIMERFADEOUT369 = "v369sleepTimerFadeOut369" // v369 Sleep Timer Fade Out369
+        const val KEY_V369SLEEPTIMERSHAKE369 = "v369sleepTimerShake369" // v369 Sleep Timer Shake369
+        const val KEY_V369PARENTALPINLOCK369 = "v369parentalPinLock369" // v369 Parental Pin Lock369
+        const val KEY_V369PARENTALTIMELIMIT369 = "v369parentalTimeLimit369" // v369 Parental Time Limit369
+        const val KEY_V369PARENTALCONTENTFILTER369 = "v369parentalContentFilter369" // v369 Parental Content Filter369
+        const val KEY_V369PRIVACYAUTOCLEARHISTORY369 = "v369privacyAutoClearHistory369" // v369 Privacy Auto Clear History369
+        const val KEY_V369PRIVACYHIDEWATCHRECORD369 = "v369privacyHideWatchRecord369" // v369 Privacy Hide Watch Record369
+        const val KEY_V369PRIVACYDISABLEANALYTICS369 = "v369privacyDisableAnalytics369" // v369 Privacy Disable Analytics369
+        const val KEY_V369THEMEACCENTCOLOR369 = "v369themeAccentColor369" // v369 Theme Accent Color369
+        const val KEY_V369THEMEDARKMODE369 = "v369themeDarkMode369" // v369 Theme Dark Mode369
+        const val KEY_V369KEYBOARDSHORTCUTPLAY369 = "v369keyboardShortcutPlay369" // v369 Keyboard Shortcut Play369
+        const val KEY_V369KEYBOARDSHORTCUTVOLUME369 = "v369keyboardShortcutVolume369" // v369 Keyboard Shortcut Volume369
+        const val KEY_V369VOICECONTROLENABLED369 = "v369voiceControlEnabled369" // v369 Voice Control Enabled369
+        const val KEY_V369VOICECONTROLLANGUAGE369 = "v369voiceControlLanguage369" // v369 Voice Control Language369
+        const val KEY_V370SLEEPTIMERDURATION370 = "v370sleepTimerDuration370" // v370 Sleep Timer Duration370
+        const val KEY_V370SLEEPTIMERFADEOUT370 = "v370sleepTimerFadeOut370" // v370 Sleep Timer Fade Out370
+        const val KEY_V370SLEEPTIMERSHAKE370 = "v370sleepTimerShake370" // v370 Sleep Timer Shake370
+        const val KEY_V370PARENTALPINLOCK370 = "v370parentalPinLock370" // v370 Parental Pin Lock370
+        const val KEY_V370PARENTALTIMELIMIT370 = "v370parentalTimeLimit370" // v370 Parental Time Limit370
+        const val KEY_V370PARENTALCONTENTFILTER370 = "v370parentalContentFilter370" // v370 Parental Content Filter370
+        const val KEY_V370PRIVACYAUTOCLEARHISTORY370 = "v370privacyAutoClearHistory370" // v370 Privacy Auto Clear History370
+        const val KEY_V370PRIVACYHIDEWATCHRECORD370 = "v370privacyHideWatchRecord370" // v370 Privacy Hide Watch Record370
+        const val KEY_V370PRIVACYDISABLEANALYTICS370 = "v370privacyDisableAnalytics370" // v370 Privacy Disable Analytics370
+        const val KEY_V370THEMEACCENTCOLOR370 = "v370themeAccentColor370" // v370 Theme Accent Color370
+        const val KEY_V370THEMEDARKMODE370 = "v370themeDarkMode370" // v370 Theme Dark Mode370
+        const val KEY_V370KEYBOARDSHORTCUTPLAY370 = "v370keyboardShortcutPlay370" // v370 Keyboard Shortcut Play370
+        const val KEY_V370KEYBOARDSHORTCUTVOLUME370 = "v370keyboardShortcutVolume370" // v370 Keyboard Shortcut Volume370
+        const val KEY_V370VOICECONTROLENABLED370 = "v370voiceControlEnabled370" // v370 Voice Control Enabled370
+        const val KEY_V370VOICECONTROLLANGUAGE370 = "v370voiceControlLanguage370" // v370 Voice Control Language370
     }
 }

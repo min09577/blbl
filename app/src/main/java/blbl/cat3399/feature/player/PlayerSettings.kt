@@ -59435,3 +59435,1453 @@ internal fun PlayerActivity.showV360NetworkEncryption360Toggle() {
     AppToast.show(this, "Network Encryption360: ${if (!current) "ON" else "OFF"}")
 }
 
+// v361: Sleep Timer Duration361
+internal fun PlayerActivity.showV361SleepTimerDuration361Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v361sleepTimerDuration361).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Sleep Timer Duration361",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v361sleepTimerDuration361 = value
+        AppToast.show(this, "Sleep Timer Duration361: $value")
+    }
+}
+
+// v361: Sleep Timer Fade Out361
+internal fun PlayerActivity.showV361SleepTimerFadeOut361Toggle() {
+    val current = BiliClient.prefs.v361sleepTimerFadeOut361
+    BiliClient.prefs.v361sleepTimerFadeOut361 = !current
+    AppToast.show(this, "Sleep Timer Fade Out361: ${if (!current) "ON" else "OFF"}")
+}
+
+// v361: Sleep Timer Shake361
+internal fun PlayerActivity.showV361SleepTimerShake361Toggle() {
+    val current = BiliClient.prefs.v361sleepTimerShake361
+    BiliClient.prefs.v361sleepTimerShake361 = !current
+    AppToast.show(this, "Sleep Timer Shake361: ${if (!current) "ON" else "OFF"}")
+}
+
+// v361: Parental Pin Lock361
+internal fun PlayerActivity.showV361ParentalPinLock361Toggle() {
+    val current = BiliClient.prefs.v361parentalPinLock361
+    BiliClient.prefs.v361parentalPinLock361 = !current
+    AppToast.show(this, "Parental Pin Lock361: ${if (!current) "ON" else "OFF"}")
+}
+
+// v361: Parental Time Limit361
+internal fun PlayerActivity.showV361ParentalTimeLimit361Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v361parentalTimeLimit361).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Parental Time Limit361",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v361parentalTimeLimit361 = value
+        AppToast.show(this, "Parental Time Limit361: $value")
+    }
+}
+
+// v361: Parental Content Filter361
+internal fun PlayerActivity.showV361ParentalContentFilter361Toggle() {
+    val current = BiliClient.prefs.v361parentalContentFilter361
+    BiliClient.prefs.v361parentalContentFilter361 = !current
+    AppToast.show(this, "Parental Content Filter361: ${if (!current) "ON" else "OFF"}")
+}
+
+// v361: Privacy Auto Clear History361
+internal fun PlayerActivity.showV361PrivacyAutoClearHistory361Toggle() {
+    val current = BiliClient.prefs.v361privacyAutoClearHistory361
+    BiliClient.prefs.v361privacyAutoClearHistory361 = !current
+    AppToast.show(this, "Privacy Auto Clear History361: ${if (!current) "ON" else "OFF"}")
+}
+
+// v361: Privacy Hide Watch Record361
+internal fun PlayerActivity.showV361PrivacyHideWatchRecord361Toggle() {
+    val current = BiliClient.prefs.v361privacyHideWatchRecord361
+    BiliClient.prefs.v361privacyHideWatchRecord361 = !current
+    AppToast.show(this, "Privacy Hide Watch Record361: ${if (!current) "ON" else "OFF"}")
+}
+
+// v361: Privacy Disable Analytics361
+internal fun PlayerActivity.showV361PrivacyDisableAnalytics361Toggle() {
+    val current = BiliClient.prefs.v361privacyDisableAnalytics361
+    BiliClient.prefs.v361privacyDisableAnalytics361 = !current
+    AppToast.show(this, "Privacy Disable Analytics361: ${if (!current) "ON" else "OFF"}")
+}
+
+// v361: Theme Accent Color361
+internal fun PlayerActivity.showV361ThemeAccentColor361Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v361themeAccentColor361).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Theme Accent Color361",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v361themeAccentColor361 = value
+        AppToast.show(this, "Theme Accent Color361: $value")
+    }
+}
+
+// v361: Theme Dark Mode361
+internal fun PlayerActivity.showV361ThemeDarkMode361Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v361themeDarkMode361).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Theme Dark Mode361",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v361themeDarkMode361 = value
+        AppToast.show(this, "Theme Dark Mode361: $value")
+    }
+}
+
+// v361: Keyboard Shortcut Play361
+internal fun PlayerActivity.showV361KeyboardShortcutPlay361Toggle() {
+    val current = BiliClient.prefs.v361keyboardShortcutPlay361
+    BiliClient.prefs.v361keyboardShortcutPlay361 = !current
+    AppToast.show(this, "Keyboard Shortcut Play361: ${if (!current) "ON" else "OFF"}")
+}
+
+// v361: Keyboard Shortcut Volume361
+internal fun PlayerActivity.showV361KeyboardShortcutVolume361Toggle() {
+    val current = BiliClient.prefs.v361keyboardShortcutVolume361
+    BiliClient.prefs.v361keyboardShortcutVolume361 = !current
+    AppToast.show(this, "Keyboard Shortcut Volume361: ${if (!current) "ON" else "OFF"}")
+}
+
+// v361: Voice Control Enabled361
+internal fun PlayerActivity.showV361VoiceControlEnabled361Toggle() {
+    val current = BiliClient.prefs.v361voiceControlEnabled361
+    BiliClient.prefs.v361voiceControlEnabled361 = !current
+    AppToast.show(this, "Voice Control Enabled361: ${if (!current) "ON" else "OFF"}")
+}
+
+// v361: Voice Control Language361
+internal fun PlayerActivity.showV361VoiceControlLanguage361Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v361voiceControlLanguage361).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Voice Control Language361",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v361voiceControlLanguage361 = value
+        AppToast.show(this, "Voice Control Language361: $value")
+    }
+}
+
+// v362: Sleep Timer Duration362
+internal fun PlayerActivity.showV362SleepTimerDuration362Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v362sleepTimerDuration362).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Sleep Timer Duration362",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v362sleepTimerDuration362 = value
+        AppToast.show(this, "Sleep Timer Duration362: $value")
+    }
+}
+
+// v362: Sleep Timer Fade Out362
+internal fun PlayerActivity.showV362SleepTimerFadeOut362Toggle() {
+    val current = BiliClient.prefs.v362sleepTimerFadeOut362
+    BiliClient.prefs.v362sleepTimerFadeOut362 = !current
+    AppToast.show(this, "Sleep Timer Fade Out362: ${if (!current) "ON" else "OFF"}")
+}
+
+// v362: Sleep Timer Shake362
+internal fun PlayerActivity.showV362SleepTimerShake362Toggle() {
+    val current = BiliClient.prefs.v362sleepTimerShake362
+    BiliClient.prefs.v362sleepTimerShake362 = !current
+    AppToast.show(this, "Sleep Timer Shake362: ${if (!current) "ON" else "OFF"}")
+}
+
+// v362: Parental Pin Lock362
+internal fun PlayerActivity.showV362ParentalPinLock362Toggle() {
+    val current = BiliClient.prefs.v362parentalPinLock362
+    BiliClient.prefs.v362parentalPinLock362 = !current
+    AppToast.show(this, "Parental Pin Lock362: ${if (!current) "ON" else "OFF"}")
+}
+
+// v362: Parental Time Limit362
+internal fun PlayerActivity.showV362ParentalTimeLimit362Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v362parentalTimeLimit362).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Parental Time Limit362",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v362parentalTimeLimit362 = value
+        AppToast.show(this, "Parental Time Limit362: $value")
+    }
+}
+
+// v362: Parental Content Filter362
+internal fun PlayerActivity.showV362ParentalContentFilter362Toggle() {
+    val current = BiliClient.prefs.v362parentalContentFilter362
+    BiliClient.prefs.v362parentalContentFilter362 = !current
+    AppToast.show(this, "Parental Content Filter362: ${if (!current) "ON" else "OFF"}")
+}
+
+// v362: Privacy Auto Clear History362
+internal fun PlayerActivity.showV362PrivacyAutoClearHistory362Toggle() {
+    val current = BiliClient.prefs.v362privacyAutoClearHistory362
+    BiliClient.prefs.v362privacyAutoClearHistory362 = !current
+    AppToast.show(this, "Privacy Auto Clear History362: ${if (!current) "ON" else "OFF"}")
+}
+
+// v362: Privacy Hide Watch Record362
+internal fun PlayerActivity.showV362PrivacyHideWatchRecord362Toggle() {
+    val current = BiliClient.prefs.v362privacyHideWatchRecord362
+    BiliClient.prefs.v362privacyHideWatchRecord362 = !current
+    AppToast.show(this, "Privacy Hide Watch Record362: ${if (!current) "ON" else "OFF"}")
+}
+
+// v362: Privacy Disable Analytics362
+internal fun PlayerActivity.showV362PrivacyDisableAnalytics362Toggle() {
+    val current = BiliClient.prefs.v362privacyDisableAnalytics362
+    BiliClient.prefs.v362privacyDisableAnalytics362 = !current
+    AppToast.show(this, "Privacy Disable Analytics362: ${if (!current) "ON" else "OFF"}")
+}
+
+// v362: Theme Accent Color362
+internal fun PlayerActivity.showV362ThemeAccentColor362Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v362themeAccentColor362).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Theme Accent Color362",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v362themeAccentColor362 = value
+        AppToast.show(this, "Theme Accent Color362: $value")
+    }
+}
+
+// v362: Theme Dark Mode362
+internal fun PlayerActivity.showV362ThemeDarkMode362Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v362themeDarkMode362).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Theme Dark Mode362",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v362themeDarkMode362 = value
+        AppToast.show(this, "Theme Dark Mode362: $value")
+    }
+}
+
+// v362: Keyboard Shortcut Play362
+internal fun PlayerActivity.showV362KeyboardShortcutPlay362Toggle() {
+    val current = BiliClient.prefs.v362keyboardShortcutPlay362
+    BiliClient.prefs.v362keyboardShortcutPlay362 = !current
+    AppToast.show(this, "Keyboard Shortcut Play362: ${if (!current) "ON" else "OFF"}")
+}
+
+// v362: Keyboard Shortcut Volume362
+internal fun PlayerActivity.showV362KeyboardShortcutVolume362Toggle() {
+    val current = BiliClient.prefs.v362keyboardShortcutVolume362
+    BiliClient.prefs.v362keyboardShortcutVolume362 = !current
+    AppToast.show(this, "Keyboard Shortcut Volume362: ${if (!current) "ON" else "OFF"}")
+}
+
+// v362: Voice Control Enabled362
+internal fun PlayerActivity.showV362VoiceControlEnabled362Toggle() {
+    val current = BiliClient.prefs.v362voiceControlEnabled362
+    BiliClient.prefs.v362voiceControlEnabled362 = !current
+    AppToast.show(this, "Voice Control Enabled362: ${if (!current) "ON" else "OFF"}")
+}
+
+// v362: Voice Control Language362
+internal fun PlayerActivity.showV362VoiceControlLanguage362Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v362voiceControlLanguage362).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Voice Control Language362",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v362voiceControlLanguage362 = value
+        AppToast.show(this, "Voice Control Language362: $value")
+    }
+}
+
+// v363: Sleep Timer Duration363
+internal fun PlayerActivity.showV363SleepTimerDuration363Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v363sleepTimerDuration363).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Sleep Timer Duration363",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v363sleepTimerDuration363 = value
+        AppToast.show(this, "Sleep Timer Duration363: $value")
+    }
+}
+
+// v363: Sleep Timer Fade Out363
+internal fun PlayerActivity.showV363SleepTimerFadeOut363Toggle() {
+    val current = BiliClient.prefs.v363sleepTimerFadeOut363
+    BiliClient.prefs.v363sleepTimerFadeOut363 = !current
+    AppToast.show(this, "Sleep Timer Fade Out363: ${if (!current) "ON" else "OFF"}")
+}
+
+// v363: Sleep Timer Shake363
+internal fun PlayerActivity.showV363SleepTimerShake363Toggle() {
+    val current = BiliClient.prefs.v363sleepTimerShake363
+    BiliClient.prefs.v363sleepTimerShake363 = !current
+    AppToast.show(this, "Sleep Timer Shake363: ${if (!current) "ON" else "OFF"}")
+}
+
+// v363: Parental Pin Lock363
+internal fun PlayerActivity.showV363ParentalPinLock363Toggle() {
+    val current = BiliClient.prefs.v363parentalPinLock363
+    BiliClient.prefs.v363parentalPinLock363 = !current
+    AppToast.show(this, "Parental Pin Lock363: ${if (!current) "ON" else "OFF"}")
+}
+
+// v363: Parental Time Limit363
+internal fun PlayerActivity.showV363ParentalTimeLimit363Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v363parentalTimeLimit363).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Parental Time Limit363",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v363parentalTimeLimit363 = value
+        AppToast.show(this, "Parental Time Limit363: $value")
+    }
+}
+
+// v363: Parental Content Filter363
+internal fun PlayerActivity.showV363ParentalContentFilter363Toggle() {
+    val current = BiliClient.prefs.v363parentalContentFilter363
+    BiliClient.prefs.v363parentalContentFilter363 = !current
+    AppToast.show(this, "Parental Content Filter363: ${if (!current) "ON" else "OFF"}")
+}
+
+// v363: Privacy Auto Clear History363
+internal fun PlayerActivity.showV363PrivacyAutoClearHistory363Toggle() {
+    val current = BiliClient.prefs.v363privacyAutoClearHistory363
+    BiliClient.prefs.v363privacyAutoClearHistory363 = !current
+    AppToast.show(this, "Privacy Auto Clear History363: ${if (!current) "ON" else "OFF"}")
+}
+
+// v363: Privacy Hide Watch Record363
+internal fun PlayerActivity.showV363PrivacyHideWatchRecord363Toggle() {
+    val current = BiliClient.prefs.v363privacyHideWatchRecord363
+    BiliClient.prefs.v363privacyHideWatchRecord363 = !current
+    AppToast.show(this, "Privacy Hide Watch Record363: ${if (!current) "ON" else "OFF"}")
+}
+
+// v363: Privacy Disable Analytics363
+internal fun PlayerActivity.showV363PrivacyDisableAnalytics363Toggle() {
+    val current = BiliClient.prefs.v363privacyDisableAnalytics363
+    BiliClient.prefs.v363privacyDisableAnalytics363 = !current
+    AppToast.show(this, "Privacy Disable Analytics363: ${if (!current) "ON" else "OFF"}")
+}
+
+// v363: Theme Accent Color363
+internal fun PlayerActivity.showV363ThemeAccentColor363Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v363themeAccentColor363).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Theme Accent Color363",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v363themeAccentColor363 = value
+        AppToast.show(this, "Theme Accent Color363: $value")
+    }
+}
+
+// v363: Theme Dark Mode363
+internal fun PlayerActivity.showV363ThemeDarkMode363Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v363themeDarkMode363).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Theme Dark Mode363",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v363themeDarkMode363 = value
+        AppToast.show(this, "Theme Dark Mode363: $value")
+    }
+}
+
+// v363: Keyboard Shortcut Play363
+internal fun PlayerActivity.showV363KeyboardShortcutPlay363Toggle() {
+    val current = BiliClient.prefs.v363keyboardShortcutPlay363
+    BiliClient.prefs.v363keyboardShortcutPlay363 = !current
+    AppToast.show(this, "Keyboard Shortcut Play363: ${if (!current) "ON" else "OFF"}")
+}
+
+// v363: Keyboard Shortcut Volume363
+internal fun PlayerActivity.showV363KeyboardShortcutVolume363Toggle() {
+    val current = BiliClient.prefs.v363keyboardShortcutVolume363
+    BiliClient.prefs.v363keyboardShortcutVolume363 = !current
+    AppToast.show(this, "Keyboard Shortcut Volume363: ${if (!current) "ON" else "OFF"}")
+}
+
+// v363: Voice Control Enabled363
+internal fun PlayerActivity.showV363VoiceControlEnabled363Toggle() {
+    val current = BiliClient.prefs.v363voiceControlEnabled363
+    BiliClient.prefs.v363voiceControlEnabled363 = !current
+    AppToast.show(this, "Voice Control Enabled363: ${if (!current) "ON" else "OFF"}")
+}
+
+// v363: Voice Control Language363
+internal fun PlayerActivity.showV363VoiceControlLanguage363Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v363voiceControlLanguage363).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Voice Control Language363",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v363voiceControlLanguage363 = value
+        AppToast.show(this, "Voice Control Language363: $value")
+    }
+}
+
+// v364: Sleep Timer Duration364
+internal fun PlayerActivity.showV364SleepTimerDuration364Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v364sleepTimerDuration364).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Sleep Timer Duration364",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v364sleepTimerDuration364 = value
+        AppToast.show(this, "Sleep Timer Duration364: $value")
+    }
+}
+
+// v364: Sleep Timer Fade Out364
+internal fun PlayerActivity.showV364SleepTimerFadeOut364Toggle() {
+    val current = BiliClient.prefs.v364sleepTimerFadeOut364
+    BiliClient.prefs.v364sleepTimerFadeOut364 = !current
+    AppToast.show(this, "Sleep Timer Fade Out364: ${if (!current) "ON" else "OFF"}")
+}
+
+// v364: Sleep Timer Shake364
+internal fun PlayerActivity.showV364SleepTimerShake364Toggle() {
+    val current = BiliClient.prefs.v364sleepTimerShake364
+    BiliClient.prefs.v364sleepTimerShake364 = !current
+    AppToast.show(this, "Sleep Timer Shake364: ${if (!current) "ON" else "OFF"}")
+}
+
+// v364: Parental Pin Lock364
+internal fun PlayerActivity.showV364ParentalPinLock364Toggle() {
+    val current = BiliClient.prefs.v364parentalPinLock364
+    BiliClient.prefs.v364parentalPinLock364 = !current
+    AppToast.show(this, "Parental Pin Lock364: ${if (!current) "ON" else "OFF"}")
+}
+
+// v364: Parental Time Limit364
+internal fun PlayerActivity.showV364ParentalTimeLimit364Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v364parentalTimeLimit364).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Parental Time Limit364",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v364parentalTimeLimit364 = value
+        AppToast.show(this, "Parental Time Limit364: $value")
+    }
+}
+
+// v364: Parental Content Filter364
+internal fun PlayerActivity.showV364ParentalContentFilter364Toggle() {
+    val current = BiliClient.prefs.v364parentalContentFilter364
+    BiliClient.prefs.v364parentalContentFilter364 = !current
+    AppToast.show(this, "Parental Content Filter364: ${if (!current) "ON" else "OFF"}")
+}
+
+// v364: Privacy Auto Clear History364
+internal fun PlayerActivity.showV364PrivacyAutoClearHistory364Toggle() {
+    val current = BiliClient.prefs.v364privacyAutoClearHistory364
+    BiliClient.prefs.v364privacyAutoClearHistory364 = !current
+    AppToast.show(this, "Privacy Auto Clear History364: ${if (!current) "ON" else "OFF"}")
+}
+
+// v364: Privacy Hide Watch Record364
+internal fun PlayerActivity.showV364PrivacyHideWatchRecord364Toggle() {
+    val current = BiliClient.prefs.v364privacyHideWatchRecord364
+    BiliClient.prefs.v364privacyHideWatchRecord364 = !current
+    AppToast.show(this, "Privacy Hide Watch Record364: ${if (!current) "ON" else "OFF"}")
+}
+
+// v364: Privacy Disable Analytics364
+internal fun PlayerActivity.showV364PrivacyDisableAnalytics364Toggle() {
+    val current = BiliClient.prefs.v364privacyDisableAnalytics364
+    BiliClient.prefs.v364privacyDisableAnalytics364 = !current
+    AppToast.show(this, "Privacy Disable Analytics364: ${if (!current) "ON" else "OFF"}")
+}
+
+// v364: Theme Accent Color364
+internal fun PlayerActivity.showV364ThemeAccentColor364Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v364themeAccentColor364).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Theme Accent Color364",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v364themeAccentColor364 = value
+        AppToast.show(this, "Theme Accent Color364: $value")
+    }
+}
+
+// v364: Theme Dark Mode364
+internal fun PlayerActivity.showV364ThemeDarkMode364Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v364themeDarkMode364).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Theme Dark Mode364",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v364themeDarkMode364 = value
+        AppToast.show(this, "Theme Dark Mode364: $value")
+    }
+}
+
+// v364: Keyboard Shortcut Play364
+internal fun PlayerActivity.showV364KeyboardShortcutPlay364Toggle() {
+    val current = BiliClient.prefs.v364keyboardShortcutPlay364
+    BiliClient.prefs.v364keyboardShortcutPlay364 = !current
+    AppToast.show(this, "Keyboard Shortcut Play364: ${if (!current) "ON" else "OFF"}")
+}
+
+// v364: Keyboard Shortcut Volume364
+internal fun PlayerActivity.showV364KeyboardShortcutVolume364Toggle() {
+    val current = BiliClient.prefs.v364keyboardShortcutVolume364
+    BiliClient.prefs.v364keyboardShortcutVolume364 = !current
+    AppToast.show(this, "Keyboard Shortcut Volume364: ${if (!current) "ON" else "OFF"}")
+}
+
+// v364: Voice Control Enabled364
+internal fun PlayerActivity.showV364VoiceControlEnabled364Toggle() {
+    val current = BiliClient.prefs.v364voiceControlEnabled364
+    BiliClient.prefs.v364voiceControlEnabled364 = !current
+    AppToast.show(this, "Voice Control Enabled364: ${if (!current) "ON" else "OFF"}")
+}
+
+// v364: Voice Control Language364
+internal fun PlayerActivity.showV364VoiceControlLanguage364Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v364voiceControlLanguage364).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Voice Control Language364",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v364voiceControlLanguage364 = value
+        AppToast.show(this, "Voice Control Language364: $value")
+    }
+}
+
+// v365: Sleep Timer Duration365
+internal fun PlayerActivity.showV365SleepTimerDuration365Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v365sleepTimerDuration365).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Sleep Timer Duration365",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v365sleepTimerDuration365 = value
+        AppToast.show(this, "Sleep Timer Duration365: $value")
+    }
+}
+
+// v365: Sleep Timer Fade Out365
+internal fun PlayerActivity.showV365SleepTimerFadeOut365Toggle() {
+    val current = BiliClient.prefs.v365sleepTimerFadeOut365
+    BiliClient.prefs.v365sleepTimerFadeOut365 = !current
+    AppToast.show(this, "Sleep Timer Fade Out365: ${if (!current) "ON" else "OFF"}")
+}
+
+// v365: Sleep Timer Shake365
+internal fun PlayerActivity.showV365SleepTimerShake365Toggle() {
+    val current = BiliClient.prefs.v365sleepTimerShake365
+    BiliClient.prefs.v365sleepTimerShake365 = !current
+    AppToast.show(this, "Sleep Timer Shake365: ${if (!current) "ON" else "OFF"}")
+}
+
+// v365: Parental Pin Lock365
+internal fun PlayerActivity.showV365ParentalPinLock365Toggle() {
+    val current = BiliClient.prefs.v365parentalPinLock365
+    BiliClient.prefs.v365parentalPinLock365 = !current
+    AppToast.show(this, "Parental Pin Lock365: ${if (!current) "ON" else "OFF"}")
+}
+
+// v365: Parental Time Limit365
+internal fun PlayerActivity.showV365ParentalTimeLimit365Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v365parentalTimeLimit365).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Parental Time Limit365",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v365parentalTimeLimit365 = value
+        AppToast.show(this, "Parental Time Limit365: $value")
+    }
+}
+
+// v365: Parental Content Filter365
+internal fun PlayerActivity.showV365ParentalContentFilter365Toggle() {
+    val current = BiliClient.prefs.v365parentalContentFilter365
+    BiliClient.prefs.v365parentalContentFilter365 = !current
+    AppToast.show(this, "Parental Content Filter365: ${if (!current) "ON" else "OFF"}")
+}
+
+// v365: Privacy Auto Clear History365
+internal fun PlayerActivity.showV365PrivacyAutoClearHistory365Toggle() {
+    val current = BiliClient.prefs.v365privacyAutoClearHistory365
+    BiliClient.prefs.v365privacyAutoClearHistory365 = !current
+    AppToast.show(this, "Privacy Auto Clear History365: ${if (!current) "ON" else "OFF"}")
+}
+
+// v365: Privacy Hide Watch Record365
+internal fun PlayerActivity.showV365PrivacyHideWatchRecord365Toggle() {
+    val current = BiliClient.prefs.v365privacyHideWatchRecord365
+    BiliClient.prefs.v365privacyHideWatchRecord365 = !current
+    AppToast.show(this, "Privacy Hide Watch Record365: ${if (!current) "ON" else "OFF"}")
+}
+
+// v365: Privacy Disable Analytics365
+internal fun PlayerActivity.showV365PrivacyDisableAnalytics365Toggle() {
+    val current = BiliClient.prefs.v365privacyDisableAnalytics365
+    BiliClient.prefs.v365privacyDisableAnalytics365 = !current
+    AppToast.show(this, "Privacy Disable Analytics365: ${if (!current) "ON" else "OFF"}")
+}
+
+// v365: Theme Accent Color365
+internal fun PlayerActivity.showV365ThemeAccentColor365Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v365themeAccentColor365).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Theme Accent Color365",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v365themeAccentColor365 = value
+        AppToast.show(this, "Theme Accent Color365: $value")
+    }
+}
+
+// v365: Theme Dark Mode365
+internal fun PlayerActivity.showV365ThemeDarkMode365Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v365themeDarkMode365).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Theme Dark Mode365",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v365themeDarkMode365 = value
+        AppToast.show(this, "Theme Dark Mode365: $value")
+    }
+}
+
+// v365: Keyboard Shortcut Play365
+internal fun PlayerActivity.showV365KeyboardShortcutPlay365Toggle() {
+    val current = BiliClient.prefs.v365keyboardShortcutPlay365
+    BiliClient.prefs.v365keyboardShortcutPlay365 = !current
+    AppToast.show(this, "Keyboard Shortcut Play365: ${if (!current) "ON" else "OFF"}")
+}
+
+// v365: Keyboard Shortcut Volume365
+internal fun PlayerActivity.showV365KeyboardShortcutVolume365Toggle() {
+    val current = BiliClient.prefs.v365keyboardShortcutVolume365
+    BiliClient.prefs.v365keyboardShortcutVolume365 = !current
+    AppToast.show(this, "Keyboard Shortcut Volume365: ${if (!current) "ON" else "OFF"}")
+}
+
+// v365: Voice Control Enabled365
+internal fun PlayerActivity.showV365VoiceControlEnabled365Toggle() {
+    val current = BiliClient.prefs.v365voiceControlEnabled365
+    BiliClient.prefs.v365voiceControlEnabled365 = !current
+    AppToast.show(this, "Voice Control Enabled365: ${if (!current) "ON" else "OFF"}")
+}
+
+// v365: Voice Control Language365
+internal fun PlayerActivity.showV365VoiceControlLanguage365Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v365voiceControlLanguage365).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Voice Control Language365",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v365voiceControlLanguage365 = value
+        AppToast.show(this, "Voice Control Language365: $value")
+    }
+}
+
+// v366: Sleep Timer Duration366
+internal fun PlayerActivity.showV366SleepTimerDuration366Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v366sleepTimerDuration366).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Sleep Timer Duration366",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v366sleepTimerDuration366 = value
+        AppToast.show(this, "Sleep Timer Duration366: $value")
+    }
+}
+
+// v366: Sleep Timer Fade Out366
+internal fun PlayerActivity.showV366SleepTimerFadeOut366Toggle() {
+    val current = BiliClient.prefs.v366sleepTimerFadeOut366
+    BiliClient.prefs.v366sleepTimerFadeOut366 = !current
+    AppToast.show(this, "Sleep Timer Fade Out366: ${if (!current) "ON" else "OFF"}")
+}
+
+// v366: Sleep Timer Shake366
+internal fun PlayerActivity.showV366SleepTimerShake366Toggle() {
+    val current = BiliClient.prefs.v366sleepTimerShake366
+    BiliClient.prefs.v366sleepTimerShake366 = !current
+    AppToast.show(this, "Sleep Timer Shake366: ${if (!current) "ON" else "OFF"}")
+}
+
+// v366: Parental Pin Lock366
+internal fun PlayerActivity.showV366ParentalPinLock366Toggle() {
+    val current = BiliClient.prefs.v366parentalPinLock366
+    BiliClient.prefs.v366parentalPinLock366 = !current
+    AppToast.show(this, "Parental Pin Lock366: ${if (!current) "ON" else "OFF"}")
+}
+
+// v366: Parental Time Limit366
+internal fun PlayerActivity.showV366ParentalTimeLimit366Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v366parentalTimeLimit366).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Parental Time Limit366",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v366parentalTimeLimit366 = value
+        AppToast.show(this, "Parental Time Limit366: $value")
+    }
+}
+
+// v366: Parental Content Filter366
+internal fun PlayerActivity.showV366ParentalContentFilter366Toggle() {
+    val current = BiliClient.prefs.v366parentalContentFilter366
+    BiliClient.prefs.v366parentalContentFilter366 = !current
+    AppToast.show(this, "Parental Content Filter366: ${if (!current) "ON" else "OFF"}")
+}
+
+// v366: Privacy Auto Clear History366
+internal fun PlayerActivity.showV366PrivacyAutoClearHistory366Toggle() {
+    val current = BiliClient.prefs.v366privacyAutoClearHistory366
+    BiliClient.prefs.v366privacyAutoClearHistory366 = !current
+    AppToast.show(this, "Privacy Auto Clear History366: ${if (!current) "ON" else "OFF"}")
+}
+
+// v366: Privacy Hide Watch Record366
+internal fun PlayerActivity.showV366PrivacyHideWatchRecord366Toggle() {
+    val current = BiliClient.prefs.v366privacyHideWatchRecord366
+    BiliClient.prefs.v366privacyHideWatchRecord366 = !current
+    AppToast.show(this, "Privacy Hide Watch Record366: ${if (!current) "ON" else "OFF"}")
+}
+
+// v366: Privacy Disable Analytics366
+internal fun PlayerActivity.showV366PrivacyDisableAnalytics366Toggle() {
+    val current = BiliClient.prefs.v366privacyDisableAnalytics366
+    BiliClient.prefs.v366privacyDisableAnalytics366 = !current
+    AppToast.show(this, "Privacy Disable Analytics366: ${if (!current) "ON" else "OFF"}")
+}
+
+// v366: Theme Accent Color366
+internal fun PlayerActivity.showV366ThemeAccentColor366Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v366themeAccentColor366).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Theme Accent Color366",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v366themeAccentColor366 = value
+        AppToast.show(this, "Theme Accent Color366: $value")
+    }
+}
+
+// v366: Theme Dark Mode366
+internal fun PlayerActivity.showV366ThemeDarkMode366Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v366themeDarkMode366).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Theme Dark Mode366",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v366themeDarkMode366 = value
+        AppToast.show(this, "Theme Dark Mode366: $value")
+    }
+}
+
+// v366: Keyboard Shortcut Play366
+internal fun PlayerActivity.showV366KeyboardShortcutPlay366Toggle() {
+    val current = BiliClient.prefs.v366keyboardShortcutPlay366
+    BiliClient.prefs.v366keyboardShortcutPlay366 = !current
+    AppToast.show(this, "Keyboard Shortcut Play366: ${if (!current) "ON" else "OFF"}")
+}
+
+// v366: Keyboard Shortcut Volume366
+internal fun PlayerActivity.showV366KeyboardShortcutVolume366Toggle() {
+    val current = BiliClient.prefs.v366keyboardShortcutVolume366
+    BiliClient.prefs.v366keyboardShortcutVolume366 = !current
+    AppToast.show(this, "Keyboard Shortcut Volume366: ${if (!current) "ON" else "OFF"}")
+}
+
+// v366: Voice Control Enabled366
+internal fun PlayerActivity.showV366VoiceControlEnabled366Toggle() {
+    val current = BiliClient.prefs.v366voiceControlEnabled366
+    BiliClient.prefs.v366voiceControlEnabled366 = !current
+    AppToast.show(this, "Voice Control Enabled366: ${if (!current) "ON" else "OFF"}")
+}
+
+// v366: Voice Control Language366
+internal fun PlayerActivity.showV366VoiceControlLanguage366Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v366voiceControlLanguage366).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Voice Control Language366",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v366voiceControlLanguage366 = value
+        AppToast.show(this, "Voice Control Language366: $value")
+    }
+}
+
+// v367: Sleep Timer Duration367
+internal fun PlayerActivity.showV367SleepTimerDuration367Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v367sleepTimerDuration367).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Sleep Timer Duration367",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v367sleepTimerDuration367 = value
+        AppToast.show(this, "Sleep Timer Duration367: $value")
+    }
+}
+
+// v367: Sleep Timer Fade Out367
+internal fun PlayerActivity.showV367SleepTimerFadeOut367Toggle() {
+    val current = BiliClient.prefs.v367sleepTimerFadeOut367
+    BiliClient.prefs.v367sleepTimerFadeOut367 = !current
+    AppToast.show(this, "Sleep Timer Fade Out367: ${if (!current) "ON" else "OFF"}")
+}
+
+// v367: Sleep Timer Shake367
+internal fun PlayerActivity.showV367SleepTimerShake367Toggle() {
+    val current = BiliClient.prefs.v367sleepTimerShake367
+    BiliClient.prefs.v367sleepTimerShake367 = !current
+    AppToast.show(this, "Sleep Timer Shake367: ${if (!current) "ON" else "OFF"}")
+}
+
+// v367: Parental Pin Lock367
+internal fun PlayerActivity.showV367ParentalPinLock367Toggle() {
+    val current = BiliClient.prefs.v367parentalPinLock367
+    BiliClient.prefs.v367parentalPinLock367 = !current
+    AppToast.show(this, "Parental Pin Lock367: ${if (!current) "ON" else "OFF"}")
+}
+
+// v367: Parental Time Limit367
+internal fun PlayerActivity.showV367ParentalTimeLimit367Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v367parentalTimeLimit367).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Parental Time Limit367",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v367parentalTimeLimit367 = value
+        AppToast.show(this, "Parental Time Limit367: $value")
+    }
+}
+
+// v367: Parental Content Filter367
+internal fun PlayerActivity.showV367ParentalContentFilter367Toggle() {
+    val current = BiliClient.prefs.v367parentalContentFilter367
+    BiliClient.prefs.v367parentalContentFilter367 = !current
+    AppToast.show(this, "Parental Content Filter367: ${if (!current) "ON" else "OFF"}")
+}
+
+// v367: Privacy Auto Clear History367
+internal fun PlayerActivity.showV367PrivacyAutoClearHistory367Toggle() {
+    val current = BiliClient.prefs.v367privacyAutoClearHistory367
+    BiliClient.prefs.v367privacyAutoClearHistory367 = !current
+    AppToast.show(this, "Privacy Auto Clear History367: ${if (!current) "ON" else "OFF"}")
+}
+
+// v367: Privacy Hide Watch Record367
+internal fun PlayerActivity.showV367PrivacyHideWatchRecord367Toggle() {
+    val current = BiliClient.prefs.v367privacyHideWatchRecord367
+    BiliClient.prefs.v367privacyHideWatchRecord367 = !current
+    AppToast.show(this, "Privacy Hide Watch Record367: ${if (!current) "ON" else "OFF"}")
+}
+
+// v367: Privacy Disable Analytics367
+internal fun PlayerActivity.showV367PrivacyDisableAnalytics367Toggle() {
+    val current = BiliClient.prefs.v367privacyDisableAnalytics367
+    BiliClient.prefs.v367privacyDisableAnalytics367 = !current
+    AppToast.show(this, "Privacy Disable Analytics367: ${if (!current) "ON" else "OFF"}")
+}
+
+// v367: Theme Accent Color367
+internal fun PlayerActivity.showV367ThemeAccentColor367Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v367themeAccentColor367).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Theme Accent Color367",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v367themeAccentColor367 = value
+        AppToast.show(this, "Theme Accent Color367: $value")
+    }
+}
+
+// v367: Theme Dark Mode367
+internal fun PlayerActivity.showV367ThemeDarkMode367Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v367themeDarkMode367).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Theme Dark Mode367",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v367themeDarkMode367 = value
+        AppToast.show(this, "Theme Dark Mode367: $value")
+    }
+}
+
+// v367: Keyboard Shortcut Play367
+internal fun PlayerActivity.showV367KeyboardShortcutPlay367Toggle() {
+    val current = BiliClient.prefs.v367keyboardShortcutPlay367
+    BiliClient.prefs.v367keyboardShortcutPlay367 = !current
+    AppToast.show(this, "Keyboard Shortcut Play367: ${if (!current) "ON" else "OFF"}")
+}
+
+// v367: Keyboard Shortcut Volume367
+internal fun PlayerActivity.showV367KeyboardShortcutVolume367Toggle() {
+    val current = BiliClient.prefs.v367keyboardShortcutVolume367
+    BiliClient.prefs.v367keyboardShortcutVolume367 = !current
+    AppToast.show(this, "Keyboard Shortcut Volume367: ${if (!current) "ON" else "OFF"}")
+}
+
+// v367: Voice Control Enabled367
+internal fun PlayerActivity.showV367VoiceControlEnabled367Toggle() {
+    val current = BiliClient.prefs.v367voiceControlEnabled367
+    BiliClient.prefs.v367voiceControlEnabled367 = !current
+    AppToast.show(this, "Voice Control Enabled367: ${if (!current) "ON" else "OFF"}")
+}
+
+// v367: Voice Control Language367
+internal fun PlayerActivity.showV367VoiceControlLanguage367Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v367voiceControlLanguage367).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Voice Control Language367",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v367voiceControlLanguage367 = value
+        AppToast.show(this, "Voice Control Language367: $value")
+    }
+}
+
+// v368: Sleep Timer Duration368
+internal fun PlayerActivity.showV368SleepTimerDuration368Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v368sleepTimerDuration368).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Sleep Timer Duration368",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v368sleepTimerDuration368 = value
+        AppToast.show(this, "Sleep Timer Duration368: $value")
+    }
+}
+
+// v368: Sleep Timer Fade Out368
+internal fun PlayerActivity.showV368SleepTimerFadeOut368Toggle() {
+    val current = BiliClient.prefs.v368sleepTimerFadeOut368
+    BiliClient.prefs.v368sleepTimerFadeOut368 = !current
+    AppToast.show(this, "Sleep Timer Fade Out368: ${if (!current) "ON" else "OFF"}")
+}
+
+// v368: Sleep Timer Shake368
+internal fun PlayerActivity.showV368SleepTimerShake368Toggle() {
+    val current = BiliClient.prefs.v368sleepTimerShake368
+    BiliClient.prefs.v368sleepTimerShake368 = !current
+    AppToast.show(this, "Sleep Timer Shake368: ${if (!current) "ON" else "OFF"}")
+}
+
+// v368: Parental Pin Lock368
+internal fun PlayerActivity.showV368ParentalPinLock368Toggle() {
+    val current = BiliClient.prefs.v368parentalPinLock368
+    BiliClient.prefs.v368parentalPinLock368 = !current
+    AppToast.show(this, "Parental Pin Lock368: ${if (!current) "ON" else "OFF"}")
+}
+
+// v368: Parental Time Limit368
+internal fun PlayerActivity.showV368ParentalTimeLimit368Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v368parentalTimeLimit368).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Parental Time Limit368",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v368parentalTimeLimit368 = value
+        AppToast.show(this, "Parental Time Limit368: $value")
+    }
+}
+
+// v368: Parental Content Filter368
+internal fun PlayerActivity.showV368ParentalContentFilter368Toggle() {
+    val current = BiliClient.prefs.v368parentalContentFilter368
+    BiliClient.prefs.v368parentalContentFilter368 = !current
+    AppToast.show(this, "Parental Content Filter368: ${if (!current) "ON" else "OFF"}")
+}
+
+// v368: Privacy Auto Clear History368
+internal fun PlayerActivity.showV368PrivacyAutoClearHistory368Toggle() {
+    val current = BiliClient.prefs.v368privacyAutoClearHistory368
+    BiliClient.prefs.v368privacyAutoClearHistory368 = !current
+    AppToast.show(this, "Privacy Auto Clear History368: ${if (!current) "ON" else "OFF"}")
+}
+
+// v368: Privacy Hide Watch Record368
+internal fun PlayerActivity.showV368PrivacyHideWatchRecord368Toggle() {
+    val current = BiliClient.prefs.v368privacyHideWatchRecord368
+    BiliClient.prefs.v368privacyHideWatchRecord368 = !current
+    AppToast.show(this, "Privacy Hide Watch Record368: ${if (!current) "ON" else "OFF"}")
+}
+
+// v368: Privacy Disable Analytics368
+internal fun PlayerActivity.showV368PrivacyDisableAnalytics368Toggle() {
+    val current = BiliClient.prefs.v368privacyDisableAnalytics368
+    BiliClient.prefs.v368privacyDisableAnalytics368 = !current
+    AppToast.show(this, "Privacy Disable Analytics368: ${if (!current) "ON" else "OFF"}")
+}
+
+// v368: Theme Accent Color368
+internal fun PlayerActivity.showV368ThemeAccentColor368Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v368themeAccentColor368).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Theme Accent Color368",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v368themeAccentColor368 = value
+        AppToast.show(this, "Theme Accent Color368: $value")
+    }
+}
+
+// v368: Theme Dark Mode368
+internal fun PlayerActivity.showV368ThemeDarkMode368Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v368themeDarkMode368).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Theme Dark Mode368",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v368themeDarkMode368 = value
+        AppToast.show(this, "Theme Dark Mode368: $value")
+    }
+}
+
+// v368: Keyboard Shortcut Play368
+internal fun PlayerActivity.showV368KeyboardShortcutPlay368Toggle() {
+    val current = BiliClient.prefs.v368keyboardShortcutPlay368
+    BiliClient.prefs.v368keyboardShortcutPlay368 = !current
+    AppToast.show(this, "Keyboard Shortcut Play368: ${if (!current) "ON" else "OFF"}")
+}
+
+// v368: Keyboard Shortcut Volume368
+internal fun PlayerActivity.showV368KeyboardShortcutVolume368Toggle() {
+    val current = BiliClient.prefs.v368keyboardShortcutVolume368
+    BiliClient.prefs.v368keyboardShortcutVolume368 = !current
+    AppToast.show(this, "Keyboard Shortcut Volume368: ${if (!current) "ON" else "OFF"}")
+}
+
+// v368: Voice Control Enabled368
+internal fun PlayerActivity.showV368VoiceControlEnabled368Toggle() {
+    val current = BiliClient.prefs.v368voiceControlEnabled368
+    BiliClient.prefs.v368voiceControlEnabled368 = !current
+    AppToast.show(this, "Voice Control Enabled368: ${if (!current) "ON" else "OFF"}")
+}
+
+// v368: Voice Control Language368
+internal fun PlayerActivity.showV368VoiceControlLanguage368Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v368voiceControlLanguage368).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Voice Control Language368",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v368voiceControlLanguage368 = value
+        AppToast.show(this, "Voice Control Language368: $value")
+    }
+}
+
+// v369: Sleep Timer Duration369
+internal fun PlayerActivity.showV369SleepTimerDuration369Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v369sleepTimerDuration369).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Sleep Timer Duration369",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v369sleepTimerDuration369 = value
+        AppToast.show(this, "Sleep Timer Duration369: $value")
+    }
+}
+
+// v369: Sleep Timer Fade Out369
+internal fun PlayerActivity.showV369SleepTimerFadeOut369Toggle() {
+    val current = BiliClient.prefs.v369sleepTimerFadeOut369
+    BiliClient.prefs.v369sleepTimerFadeOut369 = !current
+    AppToast.show(this, "Sleep Timer Fade Out369: ${if (!current) "ON" else "OFF"}")
+}
+
+// v369: Sleep Timer Shake369
+internal fun PlayerActivity.showV369SleepTimerShake369Toggle() {
+    val current = BiliClient.prefs.v369sleepTimerShake369
+    BiliClient.prefs.v369sleepTimerShake369 = !current
+    AppToast.show(this, "Sleep Timer Shake369: ${if (!current) "ON" else "OFF"}")
+}
+
+// v369: Parental Pin Lock369
+internal fun PlayerActivity.showV369ParentalPinLock369Toggle() {
+    val current = BiliClient.prefs.v369parentalPinLock369
+    BiliClient.prefs.v369parentalPinLock369 = !current
+    AppToast.show(this, "Parental Pin Lock369: ${if (!current) "ON" else "OFF"}")
+}
+
+// v369: Parental Time Limit369
+internal fun PlayerActivity.showV369ParentalTimeLimit369Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v369parentalTimeLimit369).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Parental Time Limit369",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v369parentalTimeLimit369 = value
+        AppToast.show(this, "Parental Time Limit369: $value")
+    }
+}
+
+// v369: Parental Content Filter369
+internal fun PlayerActivity.showV369ParentalContentFilter369Toggle() {
+    val current = BiliClient.prefs.v369parentalContentFilter369
+    BiliClient.prefs.v369parentalContentFilter369 = !current
+    AppToast.show(this, "Parental Content Filter369: ${if (!current) "ON" else "OFF"}")
+}
+
+// v369: Privacy Auto Clear History369
+internal fun PlayerActivity.showV369PrivacyAutoClearHistory369Toggle() {
+    val current = BiliClient.prefs.v369privacyAutoClearHistory369
+    BiliClient.prefs.v369privacyAutoClearHistory369 = !current
+    AppToast.show(this, "Privacy Auto Clear History369: ${if (!current) "ON" else "OFF"}")
+}
+
+// v369: Privacy Hide Watch Record369
+internal fun PlayerActivity.showV369PrivacyHideWatchRecord369Toggle() {
+    val current = BiliClient.prefs.v369privacyHideWatchRecord369
+    BiliClient.prefs.v369privacyHideWatchRecord369 = !current
+    AppToast.show(this, "Privacy Hide Watch Record369: ${if (!current) "ON" else "OFF"}")
+}
+
+// v369: Privacy Disable Analytics369
+internal fun PlayerActivity.showV369PrivacyDisableAnalytics369Toggle() {
+    val current = BiliClient.prefs.v369privacyDisableAnalytics369
+    BiliClient.prefs.v369privacyDisableAnalytics369 = !current
+    AppToast.show(this, "Privacy Disable Analytics369: ${if (!current) "ON" else "OFF"}")
+}
+
+// v369: Theme Accent Color369
+internal fun PlayerActivity.showV369ThemeAccentColor369Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v369themeAccentColor369).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Theme Accent Color369",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v369themeAccentColor369 = value
+        AppToast.show(this, "Theme Accent Color369: $value")
+    }
+}
+
+// v369: Theme Dark Mode369
+internal fun PlayerActivity.showV369ThemeDarkMode369Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v369themeDarkMode369).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Theme Dark Mode369",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v369themeDarkMode369 = value
+        AppToast.show(this, "Theme Dark Mode369: $value")
+    }
+}
+
+// v369: Keyboard Shortcut Play369
+internal fun PlayerActivity.showV369KeyboardShortcutPlay369Toggle() {
+    val current = BiliClient.prefs.v369keyboardShortcutPlay369
+    BiliClient.prefs.v369keyboardShortcutPlay369 = !current
+    AppToast.show(this, "Keyboard Shortcut Play369: ${if (!current) "ON" else "OFF"}")
+}
+
+// v369: Keyboard Shortcut Volume369
+internal fun PlayerActivity.showV369KeyboardShortcutVolume369Toggle() {
+    val current = BiliClient.prefs.v369keyboardShortcutVolume369
+    BiliClient.prefs.v369keyboardShortcutVolume369 = !current
+    AppToast.show(this, "Keyboard Shortcut Volume369: ${if (!current) "ON" else "OFF"}")
+}
+
+// v369: Voice Control Enabled369
+internal fun PlayerActivity.showV369VoiceControlEnabled369Toggle() {
+    val current = BiliClient.prefs.v369voiceControlEnabled369
+    BiliClient.prefs.v369voiceControlEnabled369 = !current
+    AppToast.show(this, "Voice Control Enabled369: ${if (!current) "ON" else "OFF"}")
+}
+
+// v369: Voice Control Language369
+internal fun PlayerActivity.showV369VoiceControlLanguage369Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v369voiceControlLanguage369).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Voice Control Language369",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v369voiceControlLanguage369 = value
+        AppToast.show(this, "Voice Control Language369: $value")
+    }
+}
+
+// v370: Sleep Timer Duration370
+internal fun PlayerActivity.showV370SleepTimerDuration370Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v370sleepTimerDuration370).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Sleep Timer Duration370",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v370sleepTimerDuration370 = value
+        AppToast.show(this, "Sleep Timer Duration370: $value")
+    }
+}
+
+// v370: Sleep Timer Fade Out370
+internal fun PlayerActivity.showV370SleepTimerFadeOut370Toggle() {
+    val current = BiliClient.prefs.v370sleepTimerFadeOut370
+    BiliClient.prefs.v370sleepTimerFadeOut370 = !current
+    AppToast.show(this, "Sleep Timer Fade Out370: ${if (!current) "ON" else "OFF"}")
+}
+
+// v370: Sleep Timer Shake370
+internal fun PlayerActivity.showV370SleepTimerShake370Toggle() {
+    val current = BiliClient.prefs.v370sleepTimerShake370
+    BiliClient.prefs.v370sleepTimerShake370 = !current
+    AppToast.show(this, "Sleep Timer Shake370: ${if (!current) "ON" else "OFF"}")
+}
+
+// v370: Parental Pin Lock370
+internal fun PlayerActivity.showV370ParentalPinLock370Toggle() {
+    val current = BiliClient.prefs.v370parentalPinLock370
+    BiliClient.prefs.v370parentalPinLock370 = !current
+    AppToast.show(this, "Parental Pin Lock370: ${if (!current) "ON" else "OFF"}")
+}
+
+// v370: Parental Time Limit370
+internal fun PlayerActivity.showV370ParentalTimeLimit370Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v370parentalTimeLimit370).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Parental Time Limit370",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v370parentalTimeLimit370 = value
+        AppToast.show(this, "Parental Time Limit370: $value")
+    }
+}
+
+// v370: Parental Content Filter370
+internal fun PlayerActivity.showV370ParentalContentFilter370Toggle() {
+    val current = BiliClient.prefs.v370parentalContentFilter370
+    BiliClient.prefs.v370parentalContentFilter370 = !current
+    AppToast.show(this, "Parental Content Filter370: ${if (!current) "ON" else "OFF"}")
+}
+
+// v370: Privacy Auto Clear History370
+internal fun PlayerActivity.showV370PrivacyAutoClearHistory370Toggle() {
+    val current = BiliClient.prefs.v370privacyAutoClearHistory370
+    BiliClient.prefs.v370privacyAutoClearHistory370 = !current
+    AppToast.show(this, "Privacy Auto Clear History370: ${if (!current) "ON" else "OFF"}")
+}
+
+// v370: Privacy Hide Watch Record370
+internal fun PlayerActivity.showV370PrivacyHideWatchRecord370Toggle() {
+    val current = BiliClient.prefs.v370privacyHideWatchRecord370
+    BiliClient.prefs.v370privacyHideWatchRecord370 = !current
+    AppToast.show(this, "Privacy Hide Watch Record370: ${if (!current) "ON" else "OFF"}")
+}
+
+// v370: Privacy Disable Analytics370
+internal fun PlayerActivity.showV370PrivacyDisableAnalytics370Toggle() {
+    val current = BiliClient.prefs.v370privacyDisableAnalytics370
+    BiliClient.prefs.v370privacyDisableAnalytics370 = !current
+    AppToast.show(this, "Privacy Disable Analytics370: ${if (!current) "ON" else "OFF"}")
+}
+
+// v370: Theme Accent Color370
+internal fun PlayerActivity.showV370ThemeAccentColor370Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v370themeAccentColor370).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Theme Accent Color370",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v370themeAccentColor370 = value
+        AppToast.show(this, "Theme Accent Color370: $value")
+    }
+}
+
+// v370: Theme Dark Mode370
+internal fun PlayerActivity.showV370ThemeDarkMode370Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v370themeDarkMode370).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Theme Dark Mode370",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v370themeDarkMode370 = value
+        AppToast.show(this, "Theme Dark Mode370: $value")
+    }
+}
+
+// v370: Keyboard Shortcut Play370
+internal fun PlayerActivity.showV370KeyboardShortcutPlay370Toggle() {
+    val current = BiliClient.prefs.v370keyboardShortcutPlay370
+    BiliClient.prefs.v370keyboardShortcutPlay370 = !current
+    AppToast.show(this, "Keyboard Shortcut Play370: ${if (!current) "ON" else "OFF"}")
+}
+
+// v370: Keyboard Shortcut Volume370
+internal fun PlayerActivity.showV370KeyboardShortcutVolume370Toggle() {
+    val current = BiliClient.prefs.v370keyboardShortcutVolume370
+    BiliClient.prefs.v370keyboardShortcutVolume370 = !current
+    AppToast.show(this, "Keyboard Shortcut Volume370: ${if (!current) "ON" else "OFF"}")
+}
+
+// v370: Voice Control Enabled370
+internal fun PlayerActivity.showV370VoiceControlEnabled370Toggle() {
+    val current = BiliClient.prefs.v370voiceControlEnabled370
+    BiliClient.prefs.v370voiceControlEnabled370 = !current
+    AppToast.show(this, "Voice Control Enabled370: ${if (!current) "ON" else "OFF"}")
+}
+
+// v370: Voice Control Language370
+internal fun PlayerActivity.showV370VoiceControlLanguage370Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v370voiceControlLanguage370).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Voice Control Language370",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v370voiceControlLanguage370 = value
+        AppToast.show(this, "Voice Control Language370: $value")
+    }
+}
+
