@@ -34448,6 +34448,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V460JUMPTOTIMESTAMP460, false)
         set(value) = prefs.edit().putBoolean(KEY_V460JUMPTOTIMESTAMP460, value).apply()
 
+    var v461keyMappingCustom461: Boolean
+        get() = prefs.getBoolean(KEY_V461KEYMAPPINGCUSTOM461, false)
+        set(value) = prefs.edit().putBoolean(KEY_V461KEYMAPPINGCUSTOM461, value).apply()
+
+    var v461labelAutoGenerate461: Boolean
+        get() = prefs.getBoolean(KEY_V461LABELAUTOGENERATE461, false)
+        set(value) = prefs.edit().putBoolean(KEY_V461LABELAUTOGENERATE461, value).apply()
+
+    var v461layerAutoComposite461: Boolean
+        get() = prefs.getBoolean(KEY_V461LAYERAUTOCOMPOSITE461, false)
+        set(value) = prefs.edit().putBoolean(KEY_V461LAYERAUTOCOMPOSITE461, value).apply()
+
+    var v461lazyLoadEnabled461: Boolean
+        get() = prefs.getBoolean(KEY_V461LAZYLOADENABLED461, false)
+        set(value) = prefs.edit().putBoolean(KEY_V461LAZYLOADENABLED461, value).apply()
+
+    var v461leadInAutoSkip461: Boolean
+        get() = prefs.getBoolean(KEY_V461LEADINAUTOSKIP461, false)
+        set(value) = prefs.edit().putBoolean(KEY_V461LEADINAUTOSKIP461, value).apply()
+
+    var v461lensCorrection461: Boolean
+        get() = prefs.getBoolean(KEY_V461LENSCORRECTION461, false)
+        set(value) = prefs.edit().putBoolean(KEY_V461LENSCORRECTION461, value).apply()
+
+    var v461levelAutoAdjust461: Int
+        get() = prefs.getInt(KEY_V461LEVELAUTOADJUST461, 0)
+        set(value) = prefs.edit().putInt(KEY_V461LEVELAUTOADJUST461, value).apply()
+
+    var v461lightAdaptive461: Boolean
+        get() = prefs.getBoolean(KEY_V461LIGHTADAPTIVE461, false)
+        set(value) = prefs.edit().putBoolean(KEY_V461LIGHTADAPTIVE461, value).apply()
+
+    var v461limitBandwidthAuto461: Boolean
+        get() = prefs.getBoolean(KEY_V461LIMITBANDWIDTHAUTO461, false)
+        set(value) = prefs.edit().putBoolean(KEY_V461LIMITBANDWIDTHAUTO461, value).apply()
+
+    var v461lineSpacingAdjust461: Int
+        get() = prefs.getInt(KEY_V461LINESPACINGADJUST461, 0)
+        set(value) = prefs.edit().putInt(KEY_V461LINESPACINGADJUST461, value).apply()
+
+    var v461linkPreviewAuto461: Boolean
+        get() = prefs.getBoolean(KEY_V461LINKPREVIEWAUTO461, false)
+        set(value) = prefs.edit().putBoolean(KEY_V461LINKPREVIEWAUTO461, value).apply()
+
+    var v461listAnimation461: Boolean
+        get() = prefs.getBoolean(KEY_V461LISTANIMATION461, false)
+        set(value) = prefs.edit().putBoolean(KEY_V461LISTANIMATION461, value).apply()
+
+    var v461loadPriorityHigh461: Boolean
+        get() = prefs.getBoolean(KEY_V461LOADPRIORITYHIGH461, false)
+        set(value) = prefs.edit().putBoolean(KEY_V461LOADPRIORITYHIGH461, value).apply()
+
+    var v461localCacheEnabled461: Boolean
+        get() = prefs.getBoolean(KEY_V461LOCALCACHEENABLED461, false)
+        set(value) = prefs.edit().putBoolean(KEY_V461LOCALCACHEENABLED461, value).apply()
+
+    var v461locationBasedRec461: Boolean
+        get() = prefs.getBoolean(KEY_V461LOCATIONBASEDREC461, false)
+        set(value) = prefs.edit().putBoolean(KEY_V461LOCATIONBASEDREC461, value).apply()
+
+    var v462keyMappingCustom462: Boolean
+        get() = prefs.getBoolean(KEY_V462KEYMAPPINGCUSTOM462, false)
+        set(value) = prefs.edit().putBoolean(KEY_V462KEYMAPPINGCUSTOM462, value).apply()
+
+    var v462labelAutoGenerate462: Boolean
+        get() = prefs.getBoolean(KEY_V462LABELAUTOGENERATE462, false)
+        set(value) = prefs.edit().putBoolean(KEY_V462LABELAUTOGENERATE462, value).apply()
+
+    var v462layerAutoComposite462: Boolean
+        get() = prefs.getBoolean(KEY_V462LAYERAUTOCOMPOSITE462, false)
+        set(value) = prefs.edit().putBoolean(KEY_V462LAYERAUTOCOMPOSITE462, value).apply()
+
+    var v462lazyLoadEnabled462: Boolean
+        get() = prefs.getBoolean(KEY_V462LAZYLOADENABLED462, false)
+        set(value) = prefs.edit().putBoolean(KEY_V462LAZYLOADENABLED462, value).apply()
+
+    var v462leadInAutoSkip462: Boolean
+        get() = prefs.getBoolean(KEY_V462LEADINAUTOSKIP462, false)
+        set(value) = prefs.edit().putBoolean(KEY_V462LEADINAUTOSKIP462, value).apply()
+
+    var v462lensCorrection462: Boolean
+        get() = prefs.getBoolean(KEY_V462LENSCORRECTION462, false)
+        set(value) = prefs.edit().putBoolean(KEY_V462LENSCORRECTION462, value).apply()
+
+    var v462levelAutoAdjust462: Int
+        get() = prefs.getInt(KEY_V462LEVELAUTOADJUST462, 0)
+        set(value) = prefs.edit().putInt(KEY_V462LEVELAUTOADJUST462, value).apply()
+
+    var v462lightAdaptive462: Boolean
+        get() = prefs.getBoolean(KEY_V462LIGHTADAPTIVE462, false)
+        set(value) = prefs.edit().putBoolean(KEY_V462LIGHTADAPTIVE462, value).apply()
+
+    var v462limitBandwidthAuto462: Boolean
+        get() = prefs.getBoolean(KEY_V462LIMITBANDWIDTHAUTO462, false)
+        set(value) = prefs.edit().putBoolean(KEY_V462LIMITBANDWIDTHAUTO462, value).apply()
+
+    var v462lineSpacingAdjust462: Int
+        get() = prefs.getInt(KEY_V462LINESPACINGADJUST462, 0)
+        set(value) = prefs.edit().putInt(KEY_V462LINESPACINGADJUST462, value).apply()
+
+    var v462linkPreviewAuto462: Boolean
+        get() = prefs.getBoolean(KEY_V462LINKPREVIEWAUTO462, false)
+        set(value) = prefs.edit().putBoolean(KEY_V462LINKPREVIEWAUTO462, value).apply()
+
+    var v462listAnimation462: Boolean
+        get() = prefs.getBoolean(KEY_V462LISTANIMATION462, false)
+        set(value) = prefs.edit().putBoolean(KEY_V462LISTANIMATION462, value).apply()
+
+    var v462loadPriorityHigh462: Boolean
+        get() = prefs.getBoolean(KEY_V462LOADPRIORITYHIGH462, false)
+        set(value) = prefs.edit().putBoolean(KEY_V462LOADPRIORITYHIGH462, value).apply()
+
+    var v462localCacheEnabled462: Boolean
+        get() = prefs.getBoolean(KEY_V462LOCALCACHEENABLED462, false)
+        set(value) = prefs.edit().putBoolean(KEY_V462LOCALCACHEENABLED462, value).apply()
+
+    var v462locationBasedRec462: Boolean
+        get() = prefs.getBoolean(KEY_V462LOCATIONBASEDREC462, false)
+        set(value) = prefs.edit().putBoolean(KEY_V462LOCATIONBASEDREC462, value).apply()
+
+    var v463keyMappingCustom463: Boolean
+        get() = prefs.getBoolean(KEY_V463KEYMAPPINGCUSTOM463, false)
+        set(value) = prefs.edit().putBoolean(KEY_V463KEYMAPPINGCUSTOM463, value).apply()
+
+    var v463labelAutoGenerate463: Boolean
+        get() = prefs.getBoolean(KEY_V463LABELAUTOGENERATE463, false)
+        set(value) = prefs.edit().putBoolean(KEY_V463LABELAUTOGENERATE463, value).apply()
+
+    var v463layerAutoComposite463: Boolean
+        get() = prefs.getBoolean(KEY_V463LAYERAUTOCOMPOSITE463, false)
+        set(value) = prefs.edit().putBoolean(KEY_V463LAYERAUTOCOMPOSITE463, value).apply()
+
+    var v463lazyLoadEnabled463: Boolean
+        get() = prefs.getBoolean(KEY_V463LAZYLOADENABLED463, false)
+        set(value) = prefs.edit().putBoolean(KEY_V463LAZYLOADENABLED463, value).apply()
+
+    var v463leadInAutoSkip463: Boolean
+        get() = prefs.getBoolean(KEY_V463LEADINAUTOSKIP463, false)
+        set(value) = prefs.edit().putBoolean(KEY_V463LEADINAUTOSKIP463, value).apply()
+
+    var v463lensCorrection463: Boolean
+        get() = prefs.getBoolean(KEY_V463LENSCORRECTION463, false)
+        set(value) = prefs.edit().putBoolean(KEY_V463LENSCORRECTION463, value).apply()
+
+    var v463levelAutoAdjust463: Int
+        get() = prefs.getInt(KEY_V463LEVELAUTOADJUST463, 0)
+        set(value) = prefs.edit().putInt(KEY_V463LEVELAUTOADJUST463, value).apply()
+
+    var v463lightAdaptive463: Boolean
+        get() = prefs.getBoolean(KEY_V463LIGHTADAPTIVE463, false)
+        set(value) = prefs.edit().putBoolean(KEY_V463LIGHTADAPTIVE463, value).apply()
+
+    var v463limitBandwidthAuto463: Boolean
+        get() = prefs.getBoolean(KEY_V463LIMITBANDWIDTHAUTO463, false)
+        set(value) = prefs.edit().putBoolean(KEY_V463LIMITBANDWIDTHAUTO463, value).apply()
+
+    var v463lineSpacingAdjust463: Int
+        get() = prefs.getInt(KEY_V463LINESPACINGADJUST463, 0)
+        set(value) = prefs.edit().putInt(KEY_V463LINESPACINGADJUST463, value).apply()
+
+    var v463linkPreviewAuto463: Boolean
+        get() = prefs.getBoolean(KEY_V463LINKPREVIEWAUTO463, false)
+        set(value) = prefs.edit().putBoolean(KEY_V463LINKPREVIEWAUTO463, value).apply()
+
+    var v463listAnimation463: Boolean
+        get() = prefs.getBoolean(KEY_V463LISTANIMATION463, false)
+        set(value) = prefs.edit().putBoolean(KEY_V463LISTANIMATION463, value).apply()
+
+    var v463loadPriorityHigh463: Boolean
+        get() = prefs.getBoolean(KEY_V463LOADPRIORITYHIGH463, false)
+        set(value) = prefs.edit().putBoolean(KEY_V463LOADPRIORITYHIGH463, value).apply()
+
+    var v463localCacheEnabled463: Boolean
+        get() = prefs.getBoolean(KEY_V463LOCALCACHEENABLED463, false)
+        set(value) = prefs.edit().putBoolean(KEY_V463LOCALCACHEENABLED463, value).apply()
+
+    var v463locationBasedRec463: Boolean
+        get() = prefs.getBoolean(KEY_V463LOCATIONBASEDREC463, false)
+        set(value) = prefs.edit().putBoolean(KEY_V463LOCATIONBASEDREC463, value).apply()
+
+    var v464keyMappingCustom464: Boolean
+        get() = prefs.getBoolean(KEY_V464KEYMAPPINGCUSTOM464, false)
+        set(value) = prefs.edit().putBoolean(KEY_V464KEYMAPPINGCUSTOM464, value).apply()
+
+    var v464labelAutoGenerate464: Boolean
+        get() = prefs.getBoolean(KEY_V464LABELAUTOGENERATE464, false)
+        set(value) = prefs.edit().putBoolean(KEY_V464LABELAUTOGENERATE464, value).apply()
+
+    var v464layerAutoComposite464: Boolean
+        get() = prefs.getBoolean(KEY_V464LAYERAUTOCOMPOSITE464, false)
+        set(value) = prefs.edit().putBoolean(KEY_V464LAYERAUTOCOMPOSITE464, value).apply()
+
+    var v464lazyLoadEnabled464: Boolean
+        get() = prefs.getBoolean(KEY_V464LAZYLOADENABLED464, false)
+        set(value) = prefs.edit().putBoolean(KEY_V464LAZYLOADENABLED464, value).apply()
+
+    var v464leadInAutoSkip464: Boolean
+        get() = prefs.getBoolean(KEY_V464LEADINAUTOSKIP464, false)
+        set(value) = prefs.edit().putBoolean(KEY_V464LEADINAUTOSKIP464, value).apply()
+
+    var v464lensCorrection464: Boolean
+        get() = prefs.getBoolean(KEY_V464LENSCORRECTION464, false)
+        set(value) = prefs.edit().putBoolean(KEY_V464LENSCORRECTION464, value).apply()
+
+    var v464levelAutoAdjust464: Int
+        get() = prefs.getInt(KEY_V464LEVELAUTOADJUST464, 0)
+        set(value) = prefs.edit().putInt(KEY_V464LEVELAUTOADJUST464, value).apply()
+
+    var v464lightAdaptive464: Boolean
+        get() = prefs.getBoolean(KEY_V464LIGHTADAPTIVE464, false)
+        set(value) = prefs.edit().putBoolean(KEY_V464LIGHTADAPTIVE464, value).apply()
+
+    var v464limitBandwidthAuto464: Boolean
+        get() = prefs.getBoolean(KEY_V464LIMITBANDWIDTHAUTO464, false)
+        set(value) = prefs.edit().putBoolean(KEY_V464LIMITBANDWIDTHAUTO464, value).apply()
+
+    var v464lineSpacingAdjust464: Int
+        get() = prefs.getInt(KEY_V464LINESPACINGADJUST464, 0)
+        set(value) = prefs.edit().putInt(KEY_V464LINESPACINGADJUST464, value).apply()
+
+    var v464linkPreviewAuto464: Boolean
+        get() = prefs.getBoolean(KEY_V464LINKPREVIEWAUTO464, false)
+        set(value) = prefs.edit().putBoolean(KEY_V464LINKPREVIEWAUTO464, value).apply()
+
+    var v464listAnimation464: Boolean
+        get() = prefs.getBoolean(KEY_V464LISTANIMATION464, false)
+        set(value) = prefs.edit().putBoolean(KEY_V464LISTANIMATION464, value).apply()
+
+    var v464loadPriorityHigh464: Boolean
+        get() = prefs.getBoolean(KEY_V464LOADPRIORITYHIGH464, false)
+        set(value) = prefs.edit().putBoolean(KEY_V464LOADPRIORITYHIGH464, value).apply()
+
+    var v464localCacheEnabled464: Boolean
+        get() = prefs.getBoolean(KEY_V464LOCALCACHEENABLED464, false)
+        set(value) = prefs.edit().putBoolean(KEY_V464LOCALCACHEENABLED464, value).apply()
+
+    var v464locationBasedRec464: Boolean
+        get() = prefs.getBoolean(KEY_V464LOCATIONBASEDREC464, false)
+        set(value) = prefs.edit().putBoolean(KEY_V464LOCATIONBASEDREC464, value).apply()
+
+    var v465keyMappingCustom465: Boolean
+        get() = prefs.getBoolean(KEY_V465KEYMAPPINGCUSTOM465, false)
+        set(value) = prefs.edit().putBoolean(KEY_V465KEYMAPPINGCUSTOM465, value).apply()
+
+    var v465labelAutoGenerate465: Boolean
+        get() = prefs.getBoolean(KEY_V465LABELAUTOGENERATE465, false)
+        set(value) = prefs.edit().putBoolean(KEY_V465LABELAUTOGENERATE465, value).apply()
+
+    var v465layerAutoComposite465: Boolean
+        get() = prefs.getBoolean(KEY_V465LAYERAUTOCOMPOSITE465, false)
+        set(value) = prefs.edit().putBoolean(KEY_V465LAYERAUTOCOMPOSITE465, value).apply()
+
+    var v465lazyLoadEnabled465: Boolean
+        get() = prefs.getBoolean(KEY_V465LAZYLOADENABLED465, false)
+        set(value) = prefs.edit().putBoolean(KEY_V465LAZYLOADENABLED465, value).apply()
+
+    var v465leadInAutoSkip465: Boolean
+        get() = prefs.getBoolean(KEY_V465LEADINAUTOSKIP465, false)
+        set(value) = prefs.edit().putBoolean(KEY_V465LEADINAUTOSKIP465, value).apply()
+
+    var v465lensCorrection465: Boolean
+        get() = prefs.getBoolean(KEY_V465LENSCORRECTION465, false)
+        set(value) = prefs.edit().putBoolean(KEY_V465LENSCORRECTION465, value).apply()
+
+    var v465levelAutoAdjust465: Int
+        get() = prefs.getInt(KEY_V465LEVELAUTOADJUST465, 0)
+        set(value) = prefs.edit().putInt(KEY_V465LEVELAUTOADJUST465, value).apply()
+
+    var v465lightAdaptive465: Boolean
+        get() = prefs.getBoolean(KEY_V465LIGHTADAPTIVE465, false)
+        set(value) = prefs.edit().putBoolean(KEY_V465LIGHTADAPTIVE465, value).apply()
+
+    var v465limitBandwidthAuto465: Boolean
+        get() = prefs.getBoolean(KEY_V465LIMITBANDWIDTHAUTO465, false)
+        set(value) = prefs.edit().putBoolean(KEY_V465LIMITBANDWIDTHAUTO465, value).apply()
+
+    var v465lineSpacingAdjust465: Int
+        get() = prefs.getInt(KEY_V465LINESPACINGADJUST465, 0)
+        set(value) = prefs.edit().putInt(KEY_V465LINESPACINGADJUST465, value).apply()
+
+    var v465linkPreviewAuto465: Boolean
+        get() = prefs.getBoolean(KEY_V465LINKPREVIEWAUTO465, false)
+        set(value) = prefs.edit().putBoolean(KEY_V465LINKPREVIEWAUTO465, value).apply()
+
+    var v465listAnimation465: Boolean
+        get() = prefs.getBoolean(KEY_V465LISTANIMATION465, false)
+        set(value) = prefs.edit().putBoolean(KEY_V465LISTANIMATION465, value).apply()
+
+    var v465loadPriorityHigh465: Boolean
+        get() = prefs.getBoolean(KEY_V465LOADPRIORITYHIGH465, false)
+        set(value) = prefs.edit().putBoolean(KEY_V465LOADPRIORITYHIGH465, value).apply()
+
+    var v465localCacheEnabled465: Boolean
+        get() = prefs.getBoolean(KEY_V465LOCALCACHEENABLED465, false)
+        set(value) = prefs.edit().putBoolean(KEY_V465LOCALCACHEENABLED465, value).apply()
+
+    var v465locationBasedRec465: Boolean
+        get() = prefs.getBoolean(KEY_V465LOCATIONBASEDREC465, false)
+        set(value) = prefs.edit().putBoolean(KEY_V465LOCATIONBASEDREC465, value).apply()
+
+    var v466keyMappingCustom466: Boolean
+        get() = prefs.getBoolean(KEY_V466KEYMAPPINGCUSTOM466, false)
+        set(value) = prefs.edit().putBoolean(KEY_V466KEYMAPPINGCUSTOM466, value).apply()
+
+    var v466labelAutoGenerate466: Boolean
+        get() = prefs.getBoolean(KEY_V466LABELAUTOGENERATE466, false)
+        set(value) = prefs.edit().putBoolean(KEY_V466LABELAUTOGENERATE466, value).apply()
+
+    var v466layerAutoComposite466: Boolean
+        get() = prefs.getBoolean(KEY_V466LAYERAUTOCOMPOSITE466, false)
+        set(value) = prefs.edit().putBoolean(KEY_V466LAYERAUTOCOMPOSITE466, value).apply()
+
+    var v466lazyLoadEnabled466: Boolean
+        get() = prefs.getBoolean(KEY_V466LAZYLOADENABLED466, false)
+        set(value) = prefs.edit().putBoolean(KEY_V466LAZYLOADENABLED466, value).apply()
+
+    var v466leadInAutoSkip466: Boolean
+        get() = prefs.getBoolean(KEY_V466LEADINAUTOSKIP466, false)
+        set(value) = prefs.edit().putBoolean(KEY_V466LEADINAUTOSKIP466, value).apply()
+
+    var v466lensCorrection466: Boolean
+        get() = prefs.getBoolean(KEY_V466LENSCORRECTION466, false)
+        set(value) = prefs.edit().putBoolean(KEY_V466LENSCORRECTION466, value).apply()
+
+    var v466levelAutoAdjust466: Int
+        get() = prefs.getInt(KEY_V466LEVELAUTOADJUST466, 0)
+        set(value) = prefs.edit().putInt(KEY_V466LEVELAUTOADJUST466, value).apply()
+
+    var v466lightAdaptive466: Boolean
+        get() = prefs.getBoolean(KEY_V466LIGHTADAPTIVE466, false)
+        set(value) = prefs.edit().putBoolean(KEY_V466LIGHTADAPTIVE466, value).apply()
+
+    var v466limitBandwidthAuto466: Boolean
+        get() = prefs.getBoolean(KEY_V466LIMITBANDWIDTHAUTO466, false)
+        set(value) = prefs.edit().putBoolean(KEY_V466LIMITBANDWIDTHAUTO466, value).apply()
+
+    var v466lineSpacingAdjust466: Int
+        get() = prefs.getInt(KEY_V466LINESPACINGADJUST466, 0)
+        set(value) = prefs.edit().putInt(KEY_V466LINESPACINGADJUST466, value).apply()
+
+    var v466linkPreviewAuto466: Boolean
+        get() = prefs.getBoolean(KEY_V466LINKPREVIEWAUTO466, false)
+        set(value) = prefs.edit().putBoolean(KEY_V466LINKPREVIEWAUTO466, value).apply()
+
+    var v466listAnimation466: Boolean
+        get() = prefs.getBoolean(KEY_V466LISTANIMATION466, false)
+        set(value) = prefs.edit().putBoolean(KEY_V466LISTANIMATION466, value).apply()
+
+    var v466loadPriorityHigh466: Boolean
+        get() = prefs.getBoolean(KEY_V466LOADPRIORITYHIGH466, false)
+        set(value) = prefs.edit().putBoolean(KEY_V466LOADPRIORITYHIGH466, value).apply()
+
+    var v466localCacheEnabled466: Boolean
+        get() = prefs.getBoolean(KEY_V466LOCALCACHEENABLED466, false)
+        set(value) = prefs.edit().putBoolean(KEY_V466LOCALCACHEENABLED466, value).apply()
+
+    var v466locationBasedRec466: Boolean
+        get() = prefs.getBoolean(KEY_V466LOCATIONBASEDREC466, false)
+        set(value) = prefs.edit().putBoolean(KEY_V466LOCATIONBASEDREC466, value).apply()
+
+    var v467keyMappingCustom467: Boolean
+        get() = prefs.getBoolean(KEY_V467KEYMAPPINGCUSTOM467, false)
+        set(value) = prefs.edit().putBoolean(KEY_V467KEYMAPPINGCUSTOM467, value).apply()
+
+    var v467labelAutoGenerate467: Boolean
+        get() = prefs.getBoolean(KEY_V467LABELAUTOGENERATE467, false)
+        set(value) = prefs.edit().putBoolean(KEY_V467LABELAUTOGENERATE467, value).apply()
+
+    var v467layerAutoComposite467: Boolean
+        get() = prefs.getBoolean(KEY_V467LAYERAUTOCOMPOSITE467, false)
+        set(value) = prefs.edit().putBoolean(KEY_V467LAYERAUTOCOMPOSITE467, value).apply()
+
+    var v467lazyLoadEnabled467: Boolean
+        get() = prefs.getBoolean(KEY_V467LAZYLOADENABLED467, false)
+        set(value) = prefs.edit().putBoolean(KEY_V467LAZYLOADENABLED467, value).apply()
+
+    var v467leadInAutoSkip467: Boolean
+        get() = prefs.getBoolean(KEY_V467LEADINAUTOSKIP467, false)
+        set(value) = prefs.edit().putBoolean(KEY_V467LEADINAUTOSKIP467, value).apply()
+
+    var v467lensCorrection467: Boolean
+        get() = prefs.getBoolean(KEY_V467LENSCORRECTION467, false)
+        set(value) = prefs.edit().putBoolean(KEY_V467LENSCORRECTION467, value).apply()
+
+    var v467levelAutoAdjust467: Int
+        get() = prefs.getInt(KEY_V467LEVELAUTOADJUST467, 0)
+        set(value) = prefs.edit().putInt(KEY_V467LEVELAUTOADJUST467, value).apply()
+
+    var v467lightAdaptive467: Boolean
+        get() = prefs.getBoolean(KEY_V467LIGHTADAPTIVE467, false)
+        set(value) = prefs.edit().putBoolean(KEY_V467LIGHTADAPTIVE467, value).apply()
+
+    var v467limitBandwidthAuto467: Boolean
+        get() = prefs.getBoolean(KEY_V467LIMITBANDWIDTHAUTO467, false)
+        set(value) = prefs.edit().putBoolean(KEY_V467LIMITBANDWIDTHAUTO467, value).apply()
+
+    var v467lineSpacingAdjust467: Int
+        get() = prefs.getInt(KEY_V467LINESPACINGADJUST467, 0)
+        set(value) = prefs.edit().putInt(KEY_V467LINESPACINGADJUST467, value).apply()
+
+    var v467linkPreviewAuto467: Boolean
+        get() = prefs.getBoolean(KEY_V467LINKPREVIEWAUTO467, false)
+        set(value) = prefs.edit().putBoolean(KEY_V467LINKPREVIEWAUTO467, value).apply()
+
+    var v467listAnimation467: Boolean
+        get() = prefs.getBoolean(KEY_V467LISTANIMATION467, false)
+        set(value) = prefs.edit().putBoolean(KEY_V467LISTANIMATION467, value).apply()
+
+    var v467loadPriorityHigh467: Boolean
+        get() = prefs.getBoolean(KEY_V467LOADPRIORITYHIGH467, false)
+        set(value) = prefs.edit().putBoolean(KEY_V467LOADPRIORITYHIGH467, value).apply()
+
+    var v467localCacheEnabled467: Boolean
+        get() = prefs.getBoolean(KEY_V467LOCALCACHEENABLED467, false)
+        set(value) = prefs.edit().putBoolean(KEY_V467LOCALCACHEENABLED467, value).apply()
+
+    var v467locationBasedRec467: Boolean
+        get() = prefs.getBoolean(KEY_V467LOCATIONBASEDREC467, false)
+        set(value) = prefs.edit().putBoolean(KEY_V467LOCATIONBASEDREC467, value).apply()
+
+    var v468keyMappingCustom468: Boolean
+        get() = prefs.getBoolean(KEY_V468KEYMAPPINGCUSTOM468, false)
+        set(value) = prefs.edit().putBoolean(KEY_V468KEYMAPPINGCUSTOM468, value).apply()
+
+    var v468labelAutoGenerate468: Boolean
+        get() = prefs.getBoolean(KEY_V468LABELAUTOGENERATE468, false)
+        set(value) = prefs.edit().putBoolean(KEY_V468LABELAUTOGENERATE468, value).apply()
+
+    var v468layerAutoComposite468: Boolean
+        get() = prefs.getBoolean(KEY_V468LAYERAUTOCOMPOSITE468, false)
+        set(value) = prefs.edit().putBoolean(KEY_V468LAYERAUTOCOMPOSITE468, value).apply()
+
+    var v468lazyLoadEnabled468: Boolean
+        get() = prefs.getBoolean(KEY_V468LAZYLOADENABLED468, false)
+        set(value) = prefs.edit().putBoolean(KEY_V468LAZYLOADENABLED468, value).apply()
+
+    var v468leadInAutoSkip468: Boolean
+        get() = prefs.getBoolean(KEY_V468LEADINAUTOSKIP468, false)
+        set(value) = prefs.edit().putBoolean(KEY_V468LEADINAUTOSKIP468, value).apply()
+
+    var v468lensCorrection468: Boolean
+        get() = prefs.getBoolean(KEY_V468LENSCORRECTION468, false)
+        set(value) = prefs.edit().putBoolean(KEY_V468LENSCORRECTION468, value).apply()
+
+    var v468levelAutoAdjust468: Int
+        get() = prefs.getInt(KEY_V468LEVELAUTOADJUST468, 0)
+        set(value) = prefs.edit().putInt(KEY_V468LEVELAUTOADJUST468, value).apply()
+
+    var v468lightAdaptive468: Boolean
+        get() = prefs.getBoolean(KEY_V468LIGHTADAPTIVE468, false)
+        set(value) = prefs.edit().putBoolean(KEY_V468LIGHTADAPTIVE468, value).apply()
+
+    var v468limitBandwidthAuto468: Boolean
+        get() = prefs.getBoolean(KEY_V468LIMITBANDWIDTHAUTO468, false)
+        set(value) = prefs.edit().putBoolean(KEY_V468LIMITBANDWIDTHAUTO468, value).apply()
+
+    var v468lineSpacingAdjust468: Int
+        get() = prefs.getInt(KEY_V468LINESPACINGADJUST468, 0)
+        set(value) = prefs.edit().putInt(KEY_V468LINESPACINGADJUST468, value).apply()
+
+    var v468linkPreviewAuto468: Boolean
+        get() = prefs.getBoolean(KEY_V468LINKPREVIEWAUTO468, false)
+        set(value) = prefs.edit().putBoolean(KEY_V468LINKPREVIEWAUTO468, value).apply()
+
+    var v468listAnimation468: Boolean
+        get() = prefs.getBoolean(KEY_V468LISTANIMATION468, false)
+        set(value) = prefs.edit().putBoolean(KEY_V468LISTANIMATION468, value).apply()
+
+    var v468loadPriorityHigh468: Boolean
+        get() = prefs.getBoolean(KEY_V468LOADPRIORITYHIGH468, false)
+        set(value) = prefs.edit().putBoolean(KEY_V468LOADPRIORITYHIGH468, value).apply()
+
+    var v468localCacheEnabled468: Boolean
+        get() = prefs.getBoolean(KEY_V468LOCALCACHEENABLED468, false)
+        set(value) = prefs.edit().putBoolean(KEY_V468LOCALCACHEENABLED468, value).apply()
+
+    var v468locationBasedRec468: Boolean
+        get() = prefs.getBoolean(KEY_V468LOCATIONBASEDREC468, false)
+        set(value) = prefs.edit().putBoolean(KEY_V468LOCATIONBASEDREC468, value).apply()
+
+    var v469keyMappingCustom469: Boolean
+        get() = prefs.getBoolean(KEY_V469KEYMAPPINGCUSTOM469, false)
+        set(value) = prefs.edit().putBoolean(KEY_V469KEYMAPPINGCUSTOM469, value).apply()
+
+    var v469labelAutoGenerate469: Boolean
+        get() = prefs.getBoolean(KEY_V469LABELAUTOGENERATE469, false)
+        set(value) = prefs.edit().putBoolean(KEY_V469LABELAUTOGENERATE469, value).apply()
+
+    var v469layerAutoComposite469: Boolean
+        get() = prefs.getBoolean(KEY_V469LAYERAUTOCOMPOSITE469, false)
+        set(value) = prefs.edit().putBoolean(KEY_V469LAYERAUTOCOMPOSITE469, value).apply()
+
+    var v469lazyLoadEnabled469: Boolean
+        get() = prefs.getBoolean(KEY_V469LAZYLOADENABLED469, false)
+        set(value) = prefs.edit().putBoolean(KEY_V469LAZYLOADENABLED469, value).apply()
+
+    var v469leadInAutoSkip469: Boolean
+        get() = prefs.getBoolean(KEY_V469LEADINAUTOSKIP469, false)
+        set(value) = prefs.edit().putBoolean(KEY_V469LEADINAUTOSKIP469, value).apply()
+
+    var v469lensCorrection469: Boolean
+        get() = prefs.getBoolean(KEY_V469LENSCORRECTION469, false)
+        set(value) = prefs.edit().putBoolean(KEY_V469LENSCORRECTION469, value).apply()
+
+    var v469levelAutoAdjust469: Int
+        get() = prefs.getInt(KEY_V469LEVELAUTOADJUST469, 0)
+        set(value) = prefs.edit().putInt(KEY_V469LEVELAUTOADJUST469, value).apply()
+
+    var v469lightAdaptive469: Boolean
+        get() = prefs.getBoolean(KEY_V469LIGHTADAPTIVE469, false)
+        set(value) = prefs.edit().putBoolean(KEY_V469LIGHTADAPTIVE469, value).apply()
+
+    var v469limitBandwidthAuto469: Boolean
+        get() = prefs.getBoolean(KEY_V469LIMITBANDWIDTHAUTO469, false)
+        set(value) = prefs.edit().putBoolean(KEY_V469LIMITBANDWIDTHAUTO469, value).apply()
+
+    var v469lineSpacingAdjust469: Int
+        get() = prefs.getInt(KEY_V469LINESPACINGADJUST469, 0)
+        set(value) = prefs.edit().putInt(KEY_V469LINESPACINGADJUST469, value).apply()
+
+    var v469linkPreviewAuto469: Boolean
+        get() = prefs.getBoolean(KEY_V469LINKPREVIEWAUTO469, false)
+        set(value) = prefs.edit().putBoolean(KEY_V469LINKPREVIEWAUTO469, value).apply()
+
+    var v469listAnimation469: Boolean
+        get() = prefs.getBoolean(KEY_V469LISTANIMATION469, false)
+        set(value) = prefs.edit().putBoolean(KEY_V469LISTANIMATION469, value).apply()
+
+    var v469loadPriorityHigh469: Boolean
+        get() = prefs.getBoolean(KEY_V469LOADPRIORITYHIGH469, false)
+        set(value) = prefs.edit().putBoolean(KEY_V469LOADPRIORITYHIGH469, value).apply()
+
+    var v469localCacheEnabled469: Boolean
+        get() = prefs.getBoolean(KEY_V469LOCALCACHEENABLED469, false)
+        set(value) = prefs.edit().putBoolean(KEY_V469LOCALCACHEENABLED469, value).apply()
+
+    var v469locationBasedRec469: Boolean
+        get() = prefs.getBoolean(KEY_V469LOCATIONBASEDREC469, false)
+        set(value) = prefs.edit().putBoolean(KEY_V469LOCATIONBASEDREC469, value).apply()
+
+    var v470keyMappingCustom470: Boolean
+        get() = prefs.getBoolean(KEY_V470KEYMAPPINGCUSTOM470, false)
+        set(value) = prefs.edit().putBoolean(KEY_V470KEYMAPPINGCUSTOM470, value).apply()
+
+    var v470labelAutoGenerate470: Boolean
+        get() = prefs.getBoolean(KEY_V470LABELAUTOGENERATE470, false)
+        set(value) = prefs.edit().putBoolean(KEY_V470LABELAUTOGENERATE470, value).apply()
+
+    var v470layerAutoComposite470: Boolean
+        get() = prefs.getBoolean(KEY_V470LAYERAUTOCOMPOSITE470, false)
+        set(value) = prefs.edit().putBoolean(KEY_V470LAYERAUTOCOMPOSITE470, value).apply()
+
+    var v470lazyLoadEnabled470: Boolean
+        get() = prefs.getBoolean(KEY_V470LAZYLOADENABLED470, false)
+        set(value) = prefs.edit().putBoolean(KEY_V470LAZYLOADENABLED470, value).apply()
+
+    var v470leadInAutoSkip470: Boolean
+        get() = prefs.getBoolean(KEY_V470LEADINAUTOSKIP470, false)
+        set(value) = prefs.edit().putBoolean(KEY_V470LEADINAUTOSKIP470, value).apply()
+
+    var v470lensCorrection470: Boolean
+        get() = prefs.getBoolean(KEY_V470LENSCORRECTION470, false)
+        set(value) = prefs.edit().putBoolean(KEY_V470LENSCORRECTION470, value).apply()
+
+    var v470levelAutoAdjust470: Int
+        get() = prefs.getInt(KEY_V470LEVELAUTOADJUST470, 0)
+        set(value) = prefs.edit().putInt(KEY_V470LEVELAUTOADJUST470, value).apply()
+
+    var v470lightAdaptive470: Boolean
+        get() = prefs.getBoolean(KEY_V470LIGHTADAPTIVE470, false)
+        set(value) = prefs.edit().putBoolean(KEY_V470LIGHTADAPTIVE470, value).apply()
+
+    var v470limitBandwidthAuto470: Boolean
+        get() = prefs.getBoolean(KEY_V470LIMITBANDWIDTHAUTO470, false)
+        set(value) = prefs.edit().putBoolean(KEY_V470LIMITBANDWIDTHAUTO470, value).apply()
+
+    var v470lineSpacingAdjust470: Int
+        get() = prefs.getInt(KEY_V470LINESPACINGADJUST470, 0)
+        set(value) = prefs.edit().putInt(KEY_V470LINESPACINGADJUST470, value).apply()
+
+    var v470linkPreviewAuto470: Boolean
+        get() = prefs.getBoolean(KEY_V470LINKPREVIEWAUTO470, false)
+        set(value) = prefs.edit().putBoolean(KEY_V470LINKPREVIEWAUTO470, value).apply()
+
+    var v470listAnimation470: Boolean
+        get() = prefs.getBoolean(KEY_V470LISTANIMATION470, false)
+        set(value) = prefs.edit().putBoolean(KEY_V470LISTANIMATION470, value).apply()
+
+    var v470loadPriorityHigh470: Boolean
+        get() = prefs.getBoolean(KEY_V470LOADPRIORITYHIGH470, false)
+        set(value) = prefs.edit().putBoolean(KEY_V470LOADPRIORITYHIGH470, value).apply()
+
+    var v470localCacheEnabled470: Boolean
+        get() = prefs.getBoolean(KEY_V470LOCALCACHEENABLED470, false)
+        set(value) = prefs.edit().putBoolean(KEY_V470LOCALCACHEENABLED470, value).apply()
+
+    var v470locationBasedRec470: Boolean
+        get() = prefs.getBoolean(KEY_V470LOCATIONBASEDREC470, false)
+        set(value) = prefs.edit().putBoolean(KEY_V470LOCATIONBASEDREC470, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -43930,5 +44530,155 @@ class AppPrefs(context: Context) {
         const val KEY_V460ITEMAUTOHIGHLIGHT460 = "v460itemAutoHighlight460" // v460 Item Auto Highlight460
         const val KEY_V460JOINROOMAUTO460 = "v460joinRoomAuto460" // v460 Join Room Auto460
         const val KEY_V460JUMPTOTIMESTAMP460 = "v460jumpToTimestamp460" // v460 Jump To Timestamp460
+        const val KEY_V461KEYMAPPINGCUSTOM461 = "v461keyMappingCustom461" // v461 Key Mapping Custom461
+        const val KEY_V461LABELAUTOGENERATE461 = "v461labelAutoGenerate461" // v461 Label Auto Generate461
+        const val KEY_V461LAYERAUTOCOMPOSITE461 = "v461layerAutoComposite461" // v461 Layer Auto Composite461
+        const val KEY_V461LAZYLOADENABLED461 = "v461lazyLoadEnabled461" // v461 Lazy Load Enabled461
+        const val KEY_V461LEADINAUTOSKIP461 = "v461leadInAutoSkip461" // v461 Lead In Auto Skip461
+        const val KEY_V461LENSCORRECTION461 = "v461lensCorrection461" // v461 Lens Correction461
+        const val KEY_V461LEVELAUTOADJUST461 = "v461levelAutoAdjust461" // v461 Level Auto Adjust461
+        const val KEY_V461LIGHTADAPTIVE461 = "v461lightAdaptive461" // v461 Light Adaptive461
+        const val KEY_V461LIMITBANDWIDTHAUTO461 = "v461limitBandwidthAuto461" // v461 Limit Bandwidth Auto461
+        const val KEY_V461LINESPACINGADJUST461 = "v461lineSpacingAdjust461" // v461 Line Spacing Adjust461
+        const val KEY_V461LINKPREVIEWAUTO461 = "v461linkPreviewAuto461" // v461 Link Preview Auto461
+        const val KEY_V461LISTANIMATION461 = "v461listAnimation461" // v461 List Animation461
+        const val KEY_V461LOADPRIORITYHIGH461 = "v461loadPriorityHigh461" // v461 Load Priority High461
+        const val KEY_V461LOCALCACHEENABLED461 = "v461localCacheEnabled461" // v461 Local Cache Enabled461
+        const val KEY_V461LOCATIONBASEDREC461 = "v461locationBasedRec461" // v461 Location Based Rec461
+        const val KEY_V462KEYMAPPINGCUSTOM462 = "v462keyMappingCustom462" // v462 Key Mapping Custom462
+        const val KEY_V462LABELAUTOGENERATE462 = "v462labelAutoGenerate462" // v462 Label Auto Generate462
+        const val KEY_V462LAYERAUTOCOMPOSITE462 = "v462layerAutoComposite462" // v462 Layer Auto Composite462
+        const val KEY_V462LAZYLOADENABLED462 = "v462lazyLoadEnabled462" // v462 Lazy Load Enabled462
+        const val KEY_V462LEADINAUTOSKIP462 = "v462leadInAutoSkip462" // v462 Lead In Auto Skip462
+        const val KEY_V462LENSCORRECTION462 = "v462lensCorrection462" // v462 Lens Correction462
+        const val KEY_V462LEVELAUTOADJUST462 = "v462levelAutoAdjust462" // v462 Level Auto Adjust462
+        const val KEY_V462LIGHTADAPTIVE462 = "v462lightAdaptive462" // v462 Light Adaptive462
+        const val KEY_V462LIMITBANDWIDTHAUTO462 = "v462limitBandwidthAuto462" // v462 Limit Bandwidth Auto462
+        const val KEY_V462LINESPACINGADJUST462 = "v462lineSpacingAdjust462" // v462 Line Spacing Adjust462
+        const val KEY_V462LINKPREVIEWAUTO462 = "v462linkPreviewAuto462" // v462 Link Preview Auto462
+        const val KEY_V462LISTANIMATION462 = "v462listAnimation462" // v462 List Animation462
+        const val KEY_V462LOADPRIORITYHIGH462 = "v462loadPriorityHigh462" // v462 Load Priority High462
+        const val KEY_V462LOCALCACHEENABLED462 = "v462localCacheEnabled462" // v462 Local Cache Enabled462
+        const val KEY_V462LOCATIONBASEDREC462 = "v462locationBasedRec462" // v462 Location Based Rec462
+        const val KEY_V463KEYMAPPINGCUSTOM463 = "v463keyMappingCustom463" // v463 Key Mapping Custom463
+        const val KEY_V463LABELAUTOGENERATE463 = "v463labelAutoGenerate463" // v463 Label Auto Generate463
+        const val KEY_V463LAYERAUTOCOMPOSITE463 = "v463layerAutoComposite463" // v463 Layer Auto Composite463
+        const val KEY_V463LAZYLOADENABLED463 = "v463lazyLoadEnabled463" // v463 Lazy Load Enabled463
+        const val KEY_V463LEADINAUTOSKIP463 = "v463leadInAutoSkip463" // v463 Lead In Auto Skip463
+        const val KEY_V463LENSCORRECTION463 = "v463lensCorrection463" // v463 Lens Correction463
+        const val KEY_V463LEVELAUTOADJUST463 = "v463levelAutoAdjust463" // v463 Level Auto Adjust463
+        const val KEY_V463LIGHTADAPTIVE463 = "v463lightAdaptive463" // v463 Light Adaptive463
+        const val KEY_V463LIMITBANDWIDTHAUTO463 = "v463limitBandwidthAuto463" // v463 Limit Bandwidth Auto463
+        const val KEY_V463LINESPACINGADJUST463 = "v463lineSpacingAdjust463" // v463 Line Spacing Adjust463
+        const val KEY_V463LINKPREVIEWAUTO463 = "v463linkPreviewAuto463" // v463 Link Preview Auto463
+        const val KEY_V463LISTANIMATION463 = "v463listAnimation463" // v463 List Animation463
+        const val KEY_V463LOADPRIORITYHIGH463 = "v463loadPriorityHigh463" // v463 Load Priority High463
+        const val KEY_V463LOCALCACHEENABLED463 = "v463localCacheEnabled463" // v463 Local Cache Enabled463
+        const val KEY_V463LOCATIONBASEDREC463 = "v463locationBasedRec463" // v463 Location Based Rec463
+        const val KEY_V464KEYMAPPINGCUSTOM464 = "v464keyMappingCustom464" // v464 Key Mapping Custom464
+        const val KEY_V464LABELAUTOGENERATE464 = "v464labelAutoGenerate464" // v464 Label Auto Generate464
+        const val KEY_V464LAYERAUTOCOMPOSITE464 = "v464layerAutoComposite464" // v464 Layer Auto Composite464
+        const val KEY_V464LAZYLOADENABLED464 = "v464lazyLoadEnabled464" // v464 Lazy Load Enabled464
+        const val KEY_V464LEADINAUTOSKIP464 = "v464leadInAutoSkip464" // v464 Lead In Auto Skip464
+        const val KEY_V464LENSCORRECTION464 = "v464lensCorrection464" // v464 Lens Correction464
+        const val KEY_V464LEVELAUTOADJUST464 = "v464levelAutoAdjust464" // v464 Level Auto Adjust464
+        const val KEY_V464LIGHTADAPTIVE464 = "v464lightAdaptive464" // v464 Light Adaptive464
+        const val KEY_V464LIMITBANDWIDTHAUTO464 = "v464limitBandwidthAuto464" // v464 Limit Bandwidth Auto464
+        const val KEY_V464LINESPACINGADJUST464 = "v464lineSpacingAdjust464" // v464 Line Spacing Adjust464
+        const val KEY_V464LINKPREVIEWAUTO464 = "v464linkPreviewAuto464" // v464 Link Preview Auto464
+        const val KEY_V464LISTANIMATION464 = "v464listAnimation464" // v464 List Animation464
+        const val KEY_V464LOADPRIORITYHIGH464 = "v464loadPriorityHigh464" // v464 Load Priority High464
+        const val KEY_V464LOCALCACHEENABLED464 = "v464localCacheEnabled464" // v464 Local Cache Enabled464
+        const val KEY_V464LOCATIONBASEDREC464 = "v464locationBasedRec464" // v464 Location Based Rec464
+        const val KEY_V465KEYMAPPINGCUSTOM465 = "v465keyMappingCustom465" // v465 Key Mapping Custom465
+        const val KEY_V465LABELAUTOGENERATE465 = "v465labelAutoGenerate465" // v465 Label Auto Generate465
+        const val KEY_V465LAYERAUTOCOMPOSITE465 = "v465layerAutoComposite465" // v465 Layer Auto Composite465
+        const val KEY_V465LAZYLOADENABLED465 = "v465lazyLoadEnabled465" // v465 Lazy Load Enabled465
+        const val KEY_V465LEADINAUTOSKIP465 = "v465leadInAutoSkip465" // v465 Lead In Auto Skip465
+        const val KEY_V465LENSCORRECTION465 = "v465lensCorrection465" // v465 Lens Correction465
+        const val KEY_V465LEVELAUTOADJUST465 = "v465levelAutoAdjust465" // v465 Level Auto Adjust465
+        const val KEY_V465LIGHTADAPTIVE465 = "v465lightAdaptive465" // v465 Light Adaptive465
+        const val KEY_V465LIMITBANDWIDTHAUTO465 = "v465limitBandwidthAuto465" // v465 Limit Bandwidth Auto465
+        const val KEY_V465LINESPACINGADJUST465 = "v465lineSpacingAdjust465" // v465 Line Spacing Adjust465
+        const val KEY_V465LINKPREVIEWAUTO465 = "v465linkPreviewAuto465" // v465 Link Preview Auto465
+        const val KEY_V465LISTANIMATION465 = "v465listAnimation465" // v465 List Animation465
+        const val KEY_V465LOADPRIORITYHIGH465 = "v465loadPriorityHigh465" // v465 Load Priority High465
+        const val KEY_V465LOCALCACHEENABLED465 = "v465localCacheEnabled465" // v465 Local Cache Enabled465
+        const val KEY_V465LOCATIONBASEDREC465 = "v465locationBasedRec465" // v465 Location Based Rec465
+        const val KEY_V466KEYMAPPINGCUSTOM466 = "v466keyMappingCustom466" // v466 Key Mapping Custom466
+        const val KEY_V466LABELAUTOGENERATE466 = "v466labelAutoGenerate466" // v466 Label Auto Generate466
+        const val KEY_V466LAYERAUTOCOMPOSITE466 = "v466layerAutoComposite466" // v466 Layer Auto Composite466
+        const val KEY_V466LAZYLOADENABLED466 = "v466lazyLoadEnabled466" // v466 Lazy Load Enabled466
+        const val KEY_V466LEADINAUTOSKIP466 = "v466leadInAutoSkip466" // v466 Lead In Auto Skip466
+        const val KEY_V466LENSCORRECTION466 = "v466lensCorrection466" // v466 Lens Correction466
+        const val KEY_V466LEVELAUTOADJUST466 = "v466levelAutoAdjust466" // v466 Level Auto Adjust466
+        const val KEY_V466LIGHTADAPTIVE466 = "v466lightAdaptive466" // v466 Light Adaptive466
+        const val KEY_V466LIMITBANDWIDTHAUTO466 = "v466limitBandwidthAuto466" // v466 Limit Bandwidth Auto466
+        const val KEY_V466LINESPACINGADJUST466 = "v466lineSpacingAdjust466" // v466 Line Spacing Adjust466
+        const val KEY_V466LINKPREVIEWAUTO466 = "v466linkPreviewAuto466" // v466 Link Preview Auto466
+        const val KEY_V466LISTANIMATION466 = "v466listAnimation466" // v466 List Animation466
+        const val KEY_V466LOADPRIORITYHIGH466 = "v466loadPriorityHigh466" // v466 Load Priority High466
+        const val KEY_V466LOCALCACHEENABLED466 = "v466localCacheEnabled466" // v466 Local Cache Enabled466
+        const val KEY_V466LOCATIONBASEDREC466 = "v466locationBasedRec466" // v466 Location Based Rec466
+        const val KEY_V467KEYMAPPINGCUSTOM467 = "v467keyMappingCustom467" // v467 Key Mapping Custom467
+        const val KEY_V467LABELAUTOGENERATE467 = "v467labelAutoGenerate467" // v467 Label Auto Generate467
+        const val KEY_V467LAYERAUTOCOMPOSITE467 = "v467layerAutoComposite467" // v467 Layer Auto Composite467
+        const val KEY_V467LAZYLOADENABLED467 = "v467lazyLoadEnabled467" // v467 Lazy Load Enabled467
+        const val KEY_V467LEADINAUTOSKIP467 = "v467leadInAutoSkip467" // v467 Lead In Auto Skip467
+        const val KEY_V467LENSCORRECTION467 = "v467lensCorrection467" // v467 Lens Correction467
+        const val KEY_V467LEVELAUTOADJUST467 = "v467levelAutoAdjust467" // v467 Level Auto Adjust467
+        const val KEY_V467LIGHTADAPTIVE467 = "v467lightAdaptive467" // v467 Light Adaptive467
+        const val KEY_V467LIMITBANDWIDTHAUTO467 = "v467limitBandwidthAuto467" // v467 Limit Bandwidth Auto467
+        const val KEY_V467LINESPACINGADJUST467 = "v467lineSpacingAdjust467" // v467 Line Spacing Adjust467
+        const val KEY_V467LINKPREVIEWAUTO467 = "v467linkPreviewAuto467" // v467 Link Preview Auto467
+        const val KEY_V467LISTANIMATION467 = "v467listAnimation467" // v467 List Animation467
+        const val KEY_V467LOADPRIORITYHIGH467 = "v467loadPriorityHigh467" // v467 Load Priority High467
+        const val KEY_V467LOCALCACHEENABLED467 = "v467localCacheEnabled467" // v467 Local Cache Enabled467
+        const val KEY_V467LOCATIONBASEDREC467 = "v467locationBasedRec467" // v467 Location Based Rec467
+        const val KEY_V468KEYMAPPINGCUSTOM468 = "v468keyMappingCustom468" // v468 Key Mapping Custom468
+        const val KEY_V468LABELAUTOGENERATE468 = "v468labelAutoGenerate468" // v468 Label Auto Generate468
+        const val KEY_V468LAYERAUTOCOMPOSITE468 = "v468layerAutoComposite468" // v468 Layer Auto Composite468
+        const val KEY_V468LAZYLOADENABLED468 = "v468lazyLoadEnabled468" // v468 Lazy Load Enabled468
+        const val KEY_V468LEADINAUTOSKIP468 = "v468leadInAutoSkip468" // v468 Lead In Auto Skip468
+        const val KEY_V468LENSCORRECTION468 = "v468lensCorrection468" // v468 Lens Correction468
+        const val KEY_V468LEVELAUTOADJUST468 = "v468levelAutoAdjust468" // v468 Level Auto Adjust468
+        const val KEY_V468LIGHTADAPTIVE468 = "v468lightAdaptive468" // v468 Light Adaptive468
+        const val KEY_V468LIMITBANDWIDTHAUTO468 = "v468limitBandwidthAuto468" // v468 Limit Bandwidth Auto468
+        const val KEY_V468LINESPACINGADJUST468 = "v468lineSpacingAdjust468" // v468 Line Spacing Adjust468
+        const val KEY_V468LINKPREVIEWAUTO468 = "v468linkPreviewAuto468" // v468 Link Preview Auto468
+        const val KEY_V468LISTANIMATION468 = "v468listAnimation468" // v468 List Animation468
+        const val KEY_V468LOADPRIORITYHIGH468 = "v468loadPriorityHigh468" // v468 Load Priority High468
+        const val KEY_V468LOCALCACHEENABLED468 = "v468localCacheEnabled468" // v468 Local Cache Enabled468
+        const val KEY_V468LOCATIONBASEDREC468 = "v468locationBasedRec468" // v468 Location Based Rec468
+        const val KEY_V469KEYMAPPINGCUSTOM469 = "v469keyMappingCustom469" // v469 Key Mapping Custom469
+        const val KEY_V469LABELAUTOGENERATE469 = "v469labelAutoGenerate469" // v469 Label Auto Generate469
+        const val KEY_V469LAYERAUTOCOMPOSITE469 = "v469layerAutoComposite469" // v469 Layer Auto Composite469
+        const val KEY_V469LAZYLOADENABLED469 = "v469lazyLoadEnabled469" // v469 Lazy Load Enabled469
+        const val KEY_V469LEADINAUTOSKIP469 = "v469leadInAutoSkip469" // v469 Lead In Auto Skip469
+        const val KEY_V469LENSCORRECTION469 = "v469lensCorrection469" // v469 Lens Correction469
+        const val KEY_V469LEVELAUTOADJUST469 = "v469levelAutoAdjust469" // v469 Level Auto Adjust469
+        const val KEY_V469LIGHTADAPTIVE469 = "v469lightAdaptive469" // v469 Light Adaptive469
+        const val KEY_V469LIMITBANDWIDTHAUTO469 = "v469limitBandwidthAuto469" // v469 Limit Bandwidth Auto469
+        const val KEY_V469LINESPACINGADJUST469 = "v469lineSpacingAdjust469" // v469 Line Spacing Adjust469
+        const val KEY_V469LINKPREVIEWAUTO469 = "v469linkPreviewAuto469" // v469 Link Preview Auto469
+        const val KEY_V469LISTANIMATION469 = "v469listAnimation469" // v469 List Animation469
+        const val KEY_V469LOADPRIORITYHIGH469 = "v469loadPriorityHigh469" // v469 Load Priority High469
+        const val KEY_V469LOCALCACHEENABLED469 = "v469localCacheEnabled469" // v469 Local Cache Enabled469
+        const val KEY_V469LOCATIONBASEDREC469 = "v469locationBasedRec469" // v469 Location Based Rec469
+        const val KEY_V470KEYMAPPINGCUSTOM470 = "v470keyMappingCustom470" // v470 Key Mapping Custom470
+        const val KEY_V470LABELAUTOGENERATE470 = "v470labelAutoGenerate470" // v470 Label Auto Generate470
+        const val KEY_V470LAYERAUTOCOMPOSITE470 = "v470layerAutoComposite470" // v470 Layer Auto Composite470
+        const val KEY_V470LAZYLOADENABLED470 = "v470lazyLoadEnabled470" // v470 Lazy Load Enabled470
+        const val KEY_V470LEADINAUTOSKIP470 = "v470leadInAutoSkip470" // v470 Lead In Auto Skip470
+        const val KEY_V470LENSCORRECTION470 = "v470lensCorrection470" // v470 Lens Correction470
+        const val KEY_V470LEVELAUTOADJUST470 = "v470levelAutoAdjust470" // v470 Level Auto Adjust470
+        const val KEY_V470LIGHTADAPTIVE470 = "v470lightAdaptive470" // v470 Light Adaptive470
+        const val KEY_V470LIMITBANDWIDTHAUTO470 = "v470limitBandwidthAuto470" // v470 Limit Bandwidth Auto470
+        const val KEY_V470LINESPACINGADJUST470 = "v470lineSpacingAdjust470" // v470 Line Spacing Adjust470
+        const val KEY_V470LINKPREVIEWAUTO470 = "v470linkPreviewAuto470" // v470 Link Preview Auto470
+        const val KEY_V470LISTANIMATION470 = "v470listAnimation470" // v470 List Animation470
+        const val KEY_V470LOADPRIORITYHIGH470 = "v470loadPriorityHigh470" // v470 Load Priority High470
+        const val KEY_V470LOCALCACHEENABLED470 = "v470localCacheEnabled470" // v470 Local Cache Enabled470
+        const val KEY_V470LOCATIONBASEDREC470 = "v470locationBasedRec470" // v470 Location Based Rec470
     }
 }

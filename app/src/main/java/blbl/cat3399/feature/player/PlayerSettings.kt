@@ -72735,3 +72735,1213 @@ internal fun PlayerActivity.showV460JumpToTimestamp460Toggle() {
     AppToast.show(this, "Jump To Timestamp460: ${if (!current) "ON" else "OFF"}")
 }
 
+// v461: Key Mapping Custom461
+internal fun PlayerActivity.showV461KeyMappingCustom461Toggle() {
+    val current = BiliClient.prefs.v461keyMappingCustom461
+    BiliClient.prefs.v461keyMappingCustom461 = !current
+    AppToast.show(this, "Key Mapping Custom461: ${if (!current) "ON" else "OFF"}")
+}
+
+// v461: Label Auto Generate461
+internal fun PlayerActivity.showV461LabelAutoGenerate461Toggle() {
+    val current = BiliClient.prefs.v461labelAutoGenerate461
+    BiliClient.prefs.v461labelAutoGenerate461 = !current
+    AppToast.show(this, "Label Auto Generate461: ${if (!current) "ON" else "OFF"}")
+}
+
+// v461: Layer Auto Composite461
+internal fun PlayerActivity.showV461LayerAutoComposite461Toggle() {
+    val current = BiliClient.prefs.v461layerAutoComposite461
+    BiliClient.prefs.v461layerAutoComposite461 = !current
+    AppToast.show(this, "Layer Auto Composite461: ${if (!current) "ON" else "OFF"}")
+}
+
+// v461: Lazy Load Enabled461
+internal fun PlayerActivity.showV461LazyLoadEnabled461Toggle() {
+    val current = BiliClient.prefs.v461lazyLoadEnabled461
+    BiliClient.prefs.v461lazyLoadEnabled461 = !current
+    AppToast.show(this, "Lazy Load Enabled461: ${if (!current) "ON" else "OFF"}")
+}
+
+// v461: Lead In Auto Skip461
+internal fun PlayerActivity.showV461LeadInAutoSkip461Toggle() {
+    val current = BiliClient.prefs.v461leadInAutoSkip461
+    BiliClient.prefs.v461leadInAutoSkip461 = !current
+    AppToast.show(this, "Lead In Auto Skip461: ${if (!current) "ON" else "OFF"}")
+}
+
+// v461: Lens Correction461
+internal fun PlayerActivity.showV461LensCorrection461Toggle() {
+    val current = BiliClient.prefs.v461lensCorrection461
+    BiliClient.prefs.v461lensCorrection461 = !current
+    AppToast.show(this, "Lens Correction461: ${if (!current) "ON" else "OFF"}")
+}
+
+// v461: Level Auto Adjust461
+internal fun PlayerActivity.showV461LevelAutoAdjust461Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v461levelAutoAdjust461).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Level Auto Adjust461",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v461levelAutoAdjust461 = value
+        AppToast.show(this, "Level Auto Adjust461: $value")
+    }
+}
+
+// v461: Light Adaptive461
+internal fun PlayerActivity.showV461LightAdaptive461Toggle() {
+    val current = BiliClient.prefs.v461lightAdaptive461
+    BiliClient.prefs.v461lightAdaptive461 = !current
+    AppToast.show(this, "Light Adaptive461: ${if (!current) "ON" else "OFF"}")
+}
+
+// v461: Limit Bandwidth Auto461
+internal fun PlayerActivity.showV461LimitBandwidthAuto461Toggle() {
+    val current = BiliClient.prefs.v461limitBandwidthAuto461
+    BiliClient.prefs.v461limitBandwidthAuto461 = !current
+    AppToast.show(this, "Limit Bandwidth Auto461: ${if (!current) "ON" else "OFF"}")
+}
+
+// v461: Line Spacing Adjust461
+internal fun PlayerActivity.showV461LineSpacingAdjust461Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v461lineSpacingAdjust461).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Line Spacing Adjust461",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v461lineSpacingAdjust461 = value
+        AppToast.show(this, "Line Spacing Adjust461: $value")
+    }
+}
+
+// v461: Link Preview Auto461
+internal fun PlayerActivity.showV461LinkPreviewAuto461Toggle() {
+    val current = BiliClient.prefs.v461linkPreviewAuto461
+    BiliClient.prefs.v461linkPreviewAuto461 = !current
+    AppToast.show(this, "Link Preview Auto461: ${if (!current) "ON" else "OFF"}")
+}
+
+// v461: List Animation461
+internal fun PlayerActivity.showV461ListAnimation461Toggle() {
+    val current = BiliClient.prefs.v461listAnimation461
+    BiliClient.prefs.v461listAnimation461 = !current
+    AppToast.show(this, "List Animation461: ${if (!current) "ON" else "OFF"}")
+}
+
+// v461: Load Priority High461
+internal fun PlayerActivity.showV461LoadPriorityHigh461Toggle() {
+    val current = BiliClient.prefs.v461loadPriorityHigh461
+    BiliClient.prefs.v461loadPriorityHigh461 = !current
+    AppToast.show(this, "Load Priority High461: ${if (!current) "ON" else "OFF"}")
+}
+
+// v461: Local Cache Enabled461
+internal fun PlayerActivity.showV461LocalCacheEnabled461Toggle() {
+    val current = BiliClient.prefs.v461localCacheEnabled461
+    BiliClient.prefs.v461localCacheEnabled461 = !current
+    AppToast.show(this, "Local Cache Enabled461: ${if (!current) "ON" else "OFF"}")
+}
+
+// v461: Location Based Rec461
+internal fun PlayerActivity.showV461LocationBasedRec461Toggle() {
+    val current = BiliClient.prefs.v461locationBasedRec461
+    BiliClient.prefs.v461locationBasedRec461 = !current
+    AppToast.show(this, "Location Based Rec461: ${if (!current) "ON" else "OFF"}")
+}
+
+// v462: Key Mapping Custom462
+internal fun PlayerActivity.showV462KeyMappingCustom462Toggle() {
+    val current = BiliClient.prefs.v462keyMappingCustom462
+    BiliClient.prefs.v462keyMappingCustom462 = !current
+    AppToast.show(this, "Key Mapping Custom462: ${if (!current) "ON" else "OFF"}")
+}
+
+// v462: Label Auto Generate462
+internal fun PlayerActivity.showV462LabelAutoGenerate462Toggle() {
+    val current = BiliClient.prefs.v462labelAutoGenerate462
+    BiliClient.prefs.v462labelAutoGenerate462 = !current
+    AppToast.show(this, "Label Auto Generate462: ${if (!current) "ON" else "OFF"}")
+}
+
+// v462: Layer Auto Composite462
+internal fun PlayerActivity.showV462LayerAutoComposite462Toggle() {
+    val current = BiliClient.prefs.v462layerAutoComposite462
+    BiliClient.prefs.v462layerAutoComposite462 = !current
+    AppToast.show(this, "Layer Auto Composite462: ${if (!current) "ON" else "OFF"}")
+}
+
+// v462: Lazy Load Enabled462
+internal fun PlayerActivity.showV462LazyLoadEnabled462Toggle() {
+    val current = BiliClient.prefs.v462lazyLoadEnabled462
+    BiliClient.prefs.v462lazyLoadEnabled462 = !current
+    AppToast.show(this, "Lazy Load Enabled462: ${if (!current) "ON" else "OFF"}")
+}
+
+// v462: Lead In Auto Skip462
+internal fun PlayerActivity.showV462LeadInAutoSkip462Toggle() {
+    val current = BiliClient.prefs.v462leadInAutoSkip462
+    BiliClient.prefs.v462leadInAutoSkip462 = !current
+    AppToast.show(this, "Lead In Auto Skip462: ${if (!current) "ON" else "OFF"}")
+}
+
+// v462: Lens Correction462
+internal fun PlayerActivity.showV462LensCorrection462Toggle() {
+    val current = BiliClient.prefs.v462lensCorrection462
+    BiliClient.prefs.v462lensCorrection462 = !current
+    AppToast.show(this, "Lens Correction462: ${if (!current) "ON" else "OFF"}")
+}
+
+// v462: Level Auto Adjust462
+internal fun PlayerActivity.showV462LevelAutoAdjust462Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v462levelAutoAdjust462).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Level Auto Adjust462",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v462levelAutoAdjust462 = value
+        AppToast.show(this, "Level Auto Adjust462: $value")
+    }
+}
+
+// v462: Light Adaptive462
+internal fun PlayerActivity.showV462LightAdaptive462Toggle() {
+    val current = BiliClient.prefs.v462lightAdaptive462
+    BiliClient.prefs.v462lightAdaptive462 = !current
+    AppToast.show(this, "Light Adaptive462: ${if (!current) "ON" else "OFF"}")
+}
+
+// v462: Limit Bandwidth Auto462
+internal fun PlayerActivity.showV462LimitBandwidthAuto462Toggle() {
+    val current = BiliClient.prefs.v462limitBandwidthAuto462
+    BiliClient.prefs.v462limitBandwidthAuto462 = !current
+    AppToast.show(this, "Limit Bandwidth Auto462: ${if (!current) "ON" else "OFF"}")
+}
+
+// v462: Line Spacing Adjust462
+internal fun PlayerActivity.showV462LineSpacingAdjust462Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v462lineSpacingAdjust462).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Line Spacing Adjust462",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v462lineSpacingAdjust462 = value
+        AppToast.show(this, "Line Spacing Adjust462: $value")
+    }
+}
+
+// v462: Link Preview Auto462
+internal fun PlayerActivity.showV462LinkPreviewAuto462Toggle() {
+    val current = BiliClient.prefs.v462linkPreviewAuto462
+    BiliClient.prefs.v462linkPreviewAuto462 = !current
+    AppToast.show(this, "Link Preview Auto462: ${if (!current) "ON" else "OFF"}")
+}
+
+// v462: List Animation462
+internal fun PlayerActivity.showV462ListAnimation462Toggle() {
+    val current = BiliClient.prefs.v462listAnimation462
+    BiliClient.prefs.v462listAnimation462 = !current
+    AppToast.show(this, "List Animation462: ${if (!current) "ON" else "OFF"}")
+}
+
+// v462: Load Priority High462
+internal fun PlayerActivity.showV462LoadPriorityHigh462Toggle() {
+    val current = BiliClient.prefs.v462loadPriorityHigh462
+    BiliClient.prefs.v462loadPriorityHigh462 = !current
+    AppToast.show(this, "Load Priority High462: ${if (!current) "ON" else "OFF"}")
+}
+
+// v462: Local Cache Enabled462
+internal fun PlayerActivity.showV462LocalCacheEnabled462Toggle() {
+    val current = BiliClient.prefs.v462localCacheEnabled462
+    BiliClient.prefs.v462localCacheEnabled462 = !current
+    AppToast.show(this, "Local Cache Enabled462: ${if (!current) "ON" else "OFF"}")
+}
+
+// v462: Location Based Rec462
+internal fun PlayerActivity.showV462LocationBasedRec462Toggle() {
+    val current = BiliClient.prefs.v462locationBasedRec462
+    BiliClient.prefs.v462locationBasedRec462 = !current
+    AppToast.show(this, "Location Based Rec462: ${if (!current) "ON" else "OFF"}")
+}
+
+// v463: Key Mapping Custom463
+internal fun PlayerActivity.showV463KeyMappingCustom463Toggle() {
+    val current = BiliClient.prefs.v463keyMappingCustom463
+    BiliClient.prefs.v463keyMappingCustom463 = !current
+    AppToast.show(this, "Key Mapping Custom463: ${if (!current) "ON" else "OFF"}")
+}
+
+// v463: Label Auto Generate463
+internal fun PlayerActivity.showV463LabelAutoGenerate463Toggle() {
+    val current = BiliClient.prefs.v463labelAutoGenerate463
+    BiliClient.prefs.v463labelAutoGenerate463 = !current
+    AppToast.show(this, "Label Auto Generate463: ${if (!current) "ON" else "OFF"}")
+}
+
+// v463: Layer Auto Composite463
+internal fun PlayerActivity.showV463LayerAutoComposite463Toggle() {
+    val current = BiliClient.prefs.v463layerAutoComposite463
+    BiliClient.prefs.v463layerAutoComposite463 = !current
+    AppToast.show(this, "Layer Auto Composite463: ${if (!current) "ON" else "OFF"}")
+}
+
+// v463: Lazy Load Enabled463
+internal fun PlayerActivity.showV463LazyLoadEnabled463Toggle() {
+    val current = BiliClient.prefs.v463lazyLoadEnabled463
+    BiliClient.prefs.v463lazyLoadEnabled463 = !current
+    AppToast.show(this, "Lazy Load Enabled463: ${if (!current) "ON" else "OFF"}")
+}
+
+// v463: Lead In Auto Skip463
+internal fun PlayerActivity.showV463LeadInAutoSkip463Toggle() {
+    val current = BiliClient.prefs.v463leadInAutoSkip463
+    BiliClient.prefs.v463leadInAutoSkip463 = !current
+    AppToast.show(this, "Lead In Auto Skip463: ${if (!current) "ON" else "OFF"}")
+}
+
+// v463: Lens Correction463
+internal fun PlayerActivity.showV463LensCorrection463Toggle() {
+    val current = BiliClient.prefs.v463lensCorrection463
+    BiliClient.prefs.v463lensCorrection463 = !current
+    AppToast.show(this, "Lens Correction463: ${if (!current) "ON" else "OFF"}")
+}
+
+// v463: Level Auto Adjust463
+internal fun PlayerActivity.showV463LevelAutoAdjust463Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v463levelAutoAdjust463).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Level Auto Adjust463",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v463levelAutoAdjust463 = value
+        AppToast.show(this, "Level Auto Adjust463: $value")
+    }
+}
+
+// v463: Light Adaptive463
+internal fun PlayerActivity.showV463LightAdaptive463Toggle() {
+    val current = BiliClient.prefs.v463lightAdaptive463
+    BiliClient.prefs.v463lightAdaptive463 = !current
+    AppToast.show(this, "Light Adaptive463: ${if (!current) "ON" else "OFF"}")
+}
+
+// v463: Limit Bandwidth Auto463
+internal fun PlayerActivity.showV463LimitBandwidthAuto463Toggle() {
+    val current = BiliClient.prefs.v463limitBandwidthAuto463
+    BiliClient.prefs.v463limitBandwidthAuto463 = !current
+    AppToast.show(this, "Limit Bandwidth Auto463: ${if (!current) "ON" else "OFF"}")
+}
+
+// v463: Line Spacing Adjust463
+internal fun PlayerActivity.showV463LineSpacingAdjust463Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v463lineSpacingAdjust463).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Line Spacing Adjust463",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v463lineSpacingAdjust463 = value
+        AppToast.show(this, "Line Spacing Adjust463: $value")
+    }
+}
+
+// v463: Link Preview Auto463
+internal fun PlayerActivity.showV463LinkPreviewAuto463Toggle() {
+    val current = BiliClient.prefs.v463linkPreviewAuto463
+    BiliClient.prefs.v463linkPreviewAuto463 = !current
+    AppToast.show(this, "Link Preview Auto463: ${if (!current) "ON" else "OFF"}")
+}
+
+// v463: List Animation463
+internal fun PlayerActivity.showV463ListAnimation463Toggle() {
+    val current = BiliClient.prefs.v463listAnimation463
+    BiliClient.prefs.v463listAnimation463 = !current
+    AppToast.show(this, "List Animation463: ${if (!current) "ON" else "OFF"}")
+}
+
+// v463: Load Priority High463
+internal fun PlayerActivity.showV463LoadPriorityHigh463Toggle() {
+    val current = BiliClient.prefs.v463loadPriorityHigh463
+    BiliClient.prefs.v463loadPriorityHigh463 = !current
+    AppToast.show(this, "Load Priority High463: ${if (!current) "ON" else "OFF"}")
+}
+
+// v463: Local Cache Enabled463
+internal fun PlayerActivity.showV463LocalCacheEnabled463Toggle() {
+    val current = BiliClient.prefs.v463localCacheEnabled463
+    BiliClient.prefs.v463localCacheEnabled463 = !current
+    AppToast.show(this, "Local Cache Enabled463: ${if (!current) "ON" else "OFF"}")
+}
+
+// v463: Location Based Rec463
+internal fun PlayerActivity.showV463LocationBasedRec463Toggle() {
+    val current = BiliClient.prefs.v463locationBasedRec463
+    BiliClient.prefs.v463locationBasedRec463 = !current
+    AppToast.show(this, "Location Based Rec463: ${if (!current) "ON" else "OFF"}")
+}
+
+// v464: Key Mapping Custom464
+internal fun PlayerActivity.showV464KeyMappingCustom464Toggle() {
+    val current = BiliClient.prefs.v464keyMappingCustom464
+    BiliClient.prefs.v464keyMappingCustom464 = !current
+    AppToast.show(this, "Key Mapping Custom464: ${if (!current) "ON" else "OFF"}")
+}
+
+// v464: Label Auto Generate464
+internal fun PlayerActivity.showV464LabelAutoGenerate464Toggle() {
+    val current = BiliClient.prefs.v464labelAutoGenerate464
+    BiliClient.prefs.v464labelAutoGenerate464 = !current
+    AppToast.show(this, "Label Auto Generate464: ${if (!current) "ON" else "OFF"}")
+}
+
+// v464: Layer Auto Composite464
+internal fun PlayerActivity.showV464LayerAutoComposite464Toggle() {
+    val current = BiliClient.prefs.v464layerAutoComposite464
+    BiliClient.prefs.v464layerAutoComposite464 = !current
+    AppToast.show(this, "Layer Auto Composite464: ${if (!current) "ON" else "OFF"}")
+}
+
+// v464: Lazy Load Enabled464
+internal fun PlayerActivity.showV464LazyLoadEnabled464Toggle() {
+    val current = BiliClient.prefs.v464lazyLoadEnabled464
+    BiliClient.prefs.v464lazyLoadEnabled464 = !current
+    AppToast.show(this, "Lazy Load Enabled464: ${if (!current) "ON" else "OFF"}")
+}
+
+// v464: Lead In Auto Skip464
+internal fun PlayerActivity.showV464LeadInAutoSkip464Toggle() {
+    val current = BiliClient.prefs.v464leadInAutoSkip464
+    BiliClient.prefs.v464leadInAutoSkip464 = !current
+    AppToast.show(this, "Lead In Auto Skip464: ${if (!current) "ON" else "OFF"}")
+}
+
+// v464: Lens Correction464
+internal fun PlayerActivity.showV464LensCorrection464Toggle() {
+    val current = BiliClient.prefs.v464lensCorrection464
+    BiliClient.prefs.v464lensCorrection464 = !current
+    AppToast.show(this, "Lens Correction464: ${if (!current) "ON" else "OFF"}")
+}
+
+// v464: Level Auto Adjust464
+internal fun PlayerActivity.showV464LevelAutoAdjust464Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v464levelAutoAdjust464).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Level Auto Adjust464",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v464levelAutoAdjust464 = value
+        AppToast.show(this, "Level Auto Adjust464: $value")
+    }
+}
+
+// v464: Light Adaptive464
+internal fun PlayerActivity.showV464LightAdaptive464Toggle() {
+    val current = BiliClient.prefs.v464lightAdaptive464
+    BiliClient.prefs.v464lightAdaptive464 = !current
+    AppToast.show(this, "Light Adaptive464: ${if (!current) "ON" else "OFF"}")
+}
+
+// v464: Limit Bandwidth Auto464
+internal fun PlayerActivity.showV464LimitBandwidthAuto464Toggle() {
+    val current = BiliClient.prefs.v464limitBandwidthAuto464
+    BiliClient.prefs.v464limitBandwidthAuto464 = !current
+    AppToast.show(this, "Limit Bandwidth Auto464: ${if (!current) "ON" else "OFF"}")
+}
+
+// v464: Line Spacing Adjust464
+internal fun PlayerActivity.showV464LineSpacingAdjust464Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v464lineSpacingAdjust464).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Line Spacing Adjust464",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v464lineSpacingAdjust464 = value
+        AppToast.show(this, "Line Spacing Adjust464: $value")
+    }
+}
+
+// v464: Link Preview Auto464
+internal fun PlayerActivity.showV464LinkPreviewAuto464Toggle() {
+    val current = BiliClient.prefs.v464linkPreviewAuto464
+    BiliClient.prefs.v464linkPreviewAuto464 = !current
+    AppToast.show(this, "Link Preview Auto464: ${if (!current) "ON" else "OFF"}")
+}
+
+// v464: List Animation464
+internal fun PlayerActivity.showV464ListAnimation464Toggle() {
+    val current = BiliClient.prefs.v464listAnimation464
+    BiliClient.prefs.v464listAnimation464 = !current
+    AppToast.show(this, "List Animation464: ${if (!current) "ON" else "OFF"}")
+}
+
+// v464: Load Priority High464
+internal fun PlayerActivity.showV464LoadPriorityHigh464Toggle() {
+    val current = BiliClient.prefs.v464loadPriorityHigh464
+    BiliClient.prefs.v464loadPriorityHigh464 = !current
+    AppToast.show(this, "Load Priority High464: ${if (!current) "ON" else "OFF"}")
+}
+
+// v464: Local Cache Enabled464
+internal fun PlayerActivity.showV464LocalCacheEnabled464Toggle() {
+    val current = BiliClient.prefs.v464localCacheEnabled464
+    BiliClient.prefs.v464localCacheEnabled464 = !current
+    AppToast.show(this, "Local Cache Enabled464: ${if (!current) "ON" else "OFF"}")
+}
+
+// v464: Location Based Rec464
+internal fun PlayerActivity.showV464LocationBasedRec464Toggle() {
+    val current = BiliClient.prefs.v464locationBasedRec464
+    BiliClient.prefs.v464locationBasedRec464 = !current
+    AppToast.show(this, "Location Based Rec464: ${if (!current) "ON" else "OFF"}")
+}
+
+// v465: Key Mapping Custom465
+internal fun PlayerActivity.showV465KeyMappingCustom465Toggle() {
+    val current = BiliClient.prefs.v465keyMappingCustom465
+    BiliClient.prefs.v465keyMappingCustom465 = !current
+    AppToast.show(this, "Key Mapping Custom465: ${if (!current) "ON" else "OFF"}")
+}
+
+// v465: Label Auto Generate465
+internal fun PlayerActivity.showV465LabelAutoGenerate465Toggle() {
+    val current = BiliClient.prefs.v465labelAutoGenerate465
+    BiliClient.prefs.v465labelAutoGenerate465 = !current
+    AppToast.show(this, "Label Auto Generate465: ${if (!current) "ON" else "OFF"}")
+}
+
+// v465: Layer Auto Composite465
+internal fun PlayerActivity.showV465LayerAutoComposite465Toggle() {
+    val current = BiliClient.prefs.v465layerAutoComposite465
+    BiliClient.prefs.v465layerAutoComposite465 = !current
+    AppToast.show(this, "Layer Auto Composite465: ${if (!current) "ON" else "OFF"}")
+}
+
+// v465: Lazy Load Enabled465
+internal fun PlayerActivity.showV465LazyLoadEnabled465Toggle() {
+    val current = BiliClient.prefs.v465lazyLoadEnabled465
+    BiliClient.prefs.v465lazyLoadEnabled465 = !current
+    AppToast.show(this, "Lazy Load Enabled465: ${if (!current) "ON" else "OFF"}")
+}
+
+// v465: Lead In Auto Skip465
+internal fun PlayerActivity.showV465LeadInAutoSkip465Toggle() {
+    val current = BiliClient.prefs.v465leadInAutoSkip465
+    BiliClient.prefs.v465leadInAutoSkip465 = !current
+    AppToast.show(this, "Lead In Auto Skip465: ${if (!current) "ON" else "OFF"}")
+}
+
+// v465: Lens Correction465
+internal fun PlayerActivity.showV465LensCorrection465Toggle() {
+    val current = BiliClient.prefs.v465lensCorrection465
+    BiliClient.prefs.v465lensCorrection465 = !current
+    AppToast.show(this, "Lens Correction465: ${if (!current) "ON" else "OFF"}")
+}
+
+// v465: Level Auto Adjust465
+internal fun PlayerActivity.showV465LevelAutoAdjust465Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v465levelAutoAdjust465).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Level Auto Adjust465",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v465levelAutoAdjust465 = value
+        AppToast.show(this, "Level Auto Adjust465: $value")
+    }
+}
+
+// v465: Light Adaptive465
+internal fun PlayerActivity.showV465LightAdaptive465Toggle() {
+    val current = BiliClient.prefs.v465lightAdaptive465
+    BiliClient.prefs.v465lightAdaptive465 = !current
+    AppToast.show(this, "Light Adaptive465: ${if (!current) "ON" else "OFF"}")
+}
+
+// v465: Limit Bandwidth Auto465
+internal fun PlayerActivity.showV465LimitBandwidthAuto465Toggle() {
+    val current = BiliClient.prefs.v465limitBandwidthAuto465
+    BiliClient.prefs.v465limitBandwidthAuto465 = !current
+    AppToast.show(this, "Limit Bandwidth Auto465: ${if (!current) "ON" else "OFF"}")
+}
+
+// v465: Line Spacing Adjust465
+internal fun PlayerActivity.showV465LineSpacingAdjust465Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v465lineSpacingAdjust465).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Line Spacing Adjust465",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v465lineSpacingAdjust465 = value
+        AppToast.show(this, "Line Spacing Adjust465: $value")
+    }
+}
+
+// v465: Link Preview Auto465
+internal fun PlayerActivity.showV465LinkPreviewAuto465Toggle() {
+    val current = BiliClient.prefs.v465linkPreviewAuto465
+    BiliClient.prefs.v465linkPreviewAuto465 = !current
+    AppToast.show(this, "Link Preview Auto465: ${if (!current) "ON" else "OFF"}")
+}
+
+// v465: List Animation465
+internal fun PlayerActivity.showV465ListAnimation465Toggle() {
+    val current = BiliClient.prefs.v465listAnimation465
+    BiliClient.prefs.v465listAnimation465 = !current
+    AppToast.show(this, "List Animation465: ${if (!current) "ON" else "OFF"}")
+}
+
+// v465: Load Priority High465
+internal fun PlayerActivity.showV465LoadPriorityHigh465Toggle() {
+    val current = BiliClient.prefs.v465loadPriorityHigh465
+    BiliClient.prefs.v465loadPriorityHigh465 = !current
+    AppToast.show(this, "Load Priority High465: ${if (!current) "ON" else "OFF"}")
+}
+
+// v465: Local Cache Enabled465
+internal fun PlayerActivity.showV465LocalCacheEnabled465Toggle() {
+    val current = BiliClient.prefs.v465localCacheEnabled465
+    BiliClient.prefs.v465localCacheEnabled465 = !current
+    AppToast.show(this, "Local Cache Enabled465: ${if (!current) "ON" else "OFF"}")
+}
+
+// v465: Location Based Rec465
+internal fun PlayerActivity.showV465LocationBasedRec465Toggle() {
+    val current = BiliClient.prefs.v465locationBasedRec465
+    BiliClient.prefs.v465locationBasedRec465 = !current
+    AppToast.show(this, "Location Based Rec465: ${if (!current) "ON" else "OFF"}")
+}
+
+// v466: Key Mapping Custom466
+internal fun PlayerActivity.showV466KeyMappingCustom466Toggle() {
+    val current = BiliClient.prefs.v466keyMappingCustom466
+    BiliClient.prefs.v466keyMappingCustom466 = !current
+    AppToast.show(this, "Key Mapping Custom466: ${if (!current) "ON" else "OFF"}")
+}
+
+// v466: Label Auto Generate466
+internal fun PlayerActivity.showV466LabelAutoGenerate466Toggle() {
+    val current = BiliClient.prefs.v466labelAutoGenerate466
+    BiliClient.prefs.v466labelAutoGenerate466 = !current
+    AppToast.show(this, "Label Auto Generate466: ${if (!current) "ON" else "OFF"}")
+}
+
+// v466: Layer Auto Composite466
+internal fun PlayerActivity.showV466LayerAutoComposite466Toggle() {
+    val current = BiliClient.prefs.v466layerAutoComposite466
+    BiliClient.prefs.v466layerAutoComposite466 = !current
+    AppToast.show(this, "Layer Auto Composite466: ${if (!current) "ON" else "OFF"}")
+}
+
+// v466: Lazy Load Enabled466
+internal fun PlayerActivity.showV466LazyLoadEnabled466Toggle() {
+    val current = BiliClient.prefs.v466lazyLoadEnabled466
+    BiliClient.prefs.v466lazyLoadEnabled466 = !current
+    AppToast.show(this, "Lazy Load Enabled466: ${if (!current) "ON" else "OFF"}")
+}
+
+// v466: Lead In Auto Skip466
+internal fun PlayerActivity.showV466LeadInAutoSkip466Toggle() {
+    val current = BiliClient.prefs.v466leadInAutoSkip466
+    BiliClient.prefs.v466leadInAutoSkip466 = !current
+    AppToast.show(this, "Lead In Auto Skip466: ${if (!current) "ON" else "OFF"}")
+}
+
+// v466: Lens Correction466
+internal fun PlayerActivity.showV466LensCorrection466Toggle() {
+    val current = BiliClient.prefs.v466lensCorrection466
+    BiliClient.prefs.v466lensCorrection466 = !current
+    AppToast.show(this, "Lens Correction466: ${if (!current) "ON" else "OFF"}")
+}
+
+// v466: Level Auto Adjust466
+internal fun PlayerActivity.showV466LevelAutoAdjust466Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v466levelAutoAdjust466).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Level Auto Adjust466",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v466levelAutoAdjust466 = value
+        AppToast.show(this, "Level Auto Adjust466: $value")
+    }
+}
+
+// v466: Light Adaptive466
+internal fun PlayerActivity.showV466LightAdaptive466Toggle() {
+    val current = BiliClient.prefs.v466lightAdaptive466
+    BiliClient.prefs.v466lightAdaptive466 = !current
+    AppToast.show(this, "Light Adaptive466: ${if (!current) "ON" else "OFF"}")
+}
+
+// v466: Limit Bandwidth Auto466
+internal fun PlayerActivity.showV466LimitBandwidthAuto466Toggle() {
+    val current = BiliClient.prefs.v466limitBandwidthAuto466
+    BiliClient.prefs.v466limitBandwidthAuto466 = !current
+    AppToast.show(this, "Limit Bandwidth Auto466: ${if (!current) "ON" else "OFF"}")
+}
+
+// v466: Line Spacing Adjust466
+internal fun PlayerActivity.showV466LineSpacingAdjust466Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v466lineSpacingAdjust466).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Line Spacing Adjust466",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v466lineSpacingAdjust466 = value
+        AppToast.show(this, "Line Spacing Adjust466: $value")
+    }
+}
+
+// v466: Link Preview Auto466
+internal fun PlayerActivity.showV466LinkPreviewAuto466Toggle() {
+    val current = BiliClient.prefs.v466linkPreviewAuto466
+    BiliClient.prefs.v466linkPreviewAuto466 = !current
+    AppToast.show(this, "Link Preview Auto466: ${if (!current) "ON" else "OFF"}")
+}
+
+// v466: List Animation466
+internal fun PlayerActivity.showV466ListAnimation466Toggle() {
+    val current = BiliClient.prefs.v466listAnimation466
+    BiliClient.prefs.v466listAnimation466 = !current
+    AppToast.show(this, "List Animation466: ${if (!current) "ON" else "OFF"}")
+}
+
+// v466: Load Priority High466
+internal fun PlayerActivity.showV466LoadPriorityHigh466Toggle() {
+    val current = BiliClient.prefs.v466loadPriorityHigh466
+    BiliClient.prefs.v466loadPriorityHigh466 = !current
+    AppToast.show(this, "Load Priority High466: ${if (!current) "ON" else "OFF"}")
+}
+
+// v466: Local Cache Enabled466
+internal fun PlayerActivity.showV466LocalCacheEnabled466Toggle() {
+    val current = BiliClient.prefs.v466localCacheEnabled466
+    BiliClient.prefs.v466localCacheEnabled466 = !current
+    AppToast.show(this, "Local Cache Enabled466: ${if (!current) "ON" else "OFF"}")
+}
+
+// v466: Location Based Rec466
+internal fun PlayerActivity.showV466LocationBasedRec466Toggle() {
+    val current = BiliClient.prefs.v466locationBasedRec466
+    BiliClient.prefs.v466locationBasedRec466 = !current
+    AppToast.show(this, "Location Based Rec466: ${if (!current) "ON" else "OFF"}")
+}
+
+// v467: Key Mapping Custom467
+internal fun PlayerActivity.showV467KeyMappingCustom467Toggle() {
+    val current = BiliClient.prefs.v467keyMappingCustom467
+    BiliClient.prefs.v467keyMappingCustom467 = !current
+    AppToast.show(this, "Key Mapping Custom467: ${if (!current) "ON" else "OFF"}")
+}
+
+// v467: Label Auto Generate467
+internal fun PlayerActivity.showV467LabelAutoGenerate467Toggle() {
+    val current = BiliClient.prefs.v467labelAutoGenerate467
+    BiliClient.prefs.v467labelAutoGenerate467 = !current
+    AppToast.show(this, "Label Auto Generate467: ${if (!current) "ON" else "OFF"}")
+}
+
+// v467: Layer Auto Composite467
+internal fun PlayerActivity.showV467LayerAutoComposite467Toggle() {
+    val current = BiliClient.prefs.v467layerAutoComposite467
+    BiliClient.prefs.v467layerAutoComposite467 = !current
+    AppToast.show(this, "Layer Auto Composite467: ${if (!current) "ON" else "OFF"}")
+}
+
+// v467: Lazy Load Enabled467
+internal fun PlayerActivity.showV467LazyLoadEnabled467Toggle() {
+    val current = BiliClient.prefs.v467lazyLoadEnabled467
+    BiliClient.prefs.v467lazyLoadEnabled467 = !current
+    AppToast.show(this, "Lazy Load Enabled467: ${if (!current) "ON" else "OFF"}")
+}
+
+// v467: Lead In Auto Skip467
+internal fun PlayerActivity.showV467LeadInAutoSkip467Toggle() {
+    val current = BiliClient.prefs.v467leadInAutoSkip467
+    BiliClient.prefs.v467leadInAutoSkip467 = !current
+    AppToast.show(this, "Lead In Auto Skip467: ${if (!current) "ON" else "OFF"}")
+}
+
+// v467: Lens Correction467
+internal fun PlayerActivity.showV467LensCorrection467Toggle() {
+    val current = BiliClient.prefs.v467lensCorrection467
+    BiliClient.prefs.v467lensCorrection467 = !current
+    AppToast.show(this, "Lens Correction467: ${if (!current) "ON" else "OFF"}")
+}
+
+// v467: Level Auto Adjust467
+internal fun PlayerActivity.showV467LevelAutoAdjust467Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v467levelAutoAdjust467).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Level Auto Adjust467",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v467levelAutoAdjust467 = value
+        AppToast.show(this, "Level Auto Adjust467: $value")
+    }
+}
+
+// v467: Light Adaptive467
+internal fun PlayerActivity.showV467LightAdaptive467Toggle() {
+    val current = BiliClient.prefs.v467lightAdaptive467
+    BiliClient.prefs.v467lightAdaptive467 = !current
+    AppToast.show(this, "Light Adaptive467: ${if (!current) "ON" else "OFF"}")
+}
+
+// v467: Limit Bandwidth Auto467
+internal fun PlayerActivity.showV467LimitBandwidthAuto467Toggle() {
+    val current = BiliClient.prefs.v467limitBandwidthAuto467
+    BiliClient.prefs.v467limitBandwidthAuto467 = !current
+    AppToast.show(this, "Limit Bandwidth Auto467: ${if (!current) "ON" else "OFF"}")
+}
+
+// v467: Line Spacing Adjust467
+internal fun PlayerActivity.showV467LineSpacingAdjust467Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v467lineSpacingAdjust467).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Line Spacing Adjust467",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v467lineSpacingAdjust467 = value
+        AppToast.show(this, "Line Spacing Adjust467: $value")
+    }
+}
+
+// v467: Link Preview Auto467
+internal fun PlayerActivity.showV467LinkPreviewAuto467Toggle() {
+    val current = BiliClient.prefs.v467linkPreviewAuto467
+    BiliClient.prefs.v467linkPreviewAuto467 = !current
+    AppToast.show(this, "Link Preview Auto467: ${if (!current) "ON" else "OFF"}")
+}
+
+// v467: List Animation467
+internal fun PlayerActivity.showV467ListAnimation467Toggle() {
+    val current = BiliClient.prefs.v467listAnimation467
+    BiliClient.prefs.v467listAnimation467 = !current
+    AppToast.show(this, "List Animation467: ${if (!current) "ON" else "OFF"}")
+}
+
+// v467: Load Priority High467
+internal fun PlayerActivity.showV467LoadPriorityHigh467Toggle() {
+    val current = BiliClient.prefs.v467loadPriorityHigh467
+    BiliClient.prefs.v467loadPriorityHigh467 = !current
+    AppToast.show(this, "Load Priority High467: ${if (!current) "ON" else "OFF"}")
+}
+
+// v467: Local Cache Enabled467
+internal fun PlayerActivity.showV467LocalCacheEnabled467Toggle() {
+    val current = BiliClient.prefs.v467localCacheEnabled467
+    BiliClient.prefs.v467localCacheEnabled467 = !current
+    AppToast.show(this, "Local Cache Enabled467: ${if (!current) "ON" else "OFF"}")
+}
+
+// v467: Location Based Rec467
+internal fun PlayerActivity.showV467LocationBasedRec467Toggle() {
+    val current = BiliClient.prefs.v467locationBasedRec467
+    BiliClient.prefs.v467locationBasedRec467 = !current
+    AppToast.show(this, "Location Based Rec467: ${if (!current) "ON" else "OFF"}")
+}
+
+// v468: Key Mapping Custom468
+internal fun PlayerActivity.showV468KeyMappingCustom468Toggle() {
+    val current = BiliClient.prefs.v468keyMappingCustom468
+    BiliClient.prefs.v468keyMappingCustom468 = !current
+    AppToast.show(this, "Key Mapping Custom468: ${if (!current) "ON" else "OFF"}")
+}
+
+// v468: Label Auto Generate468
+internal fun PlayerActivity.showV468LabelAutoGenerate468Toggle() {
+    val current = BiliClient.prefs.v468labelAutoGenerate468
+    BiliClient.prefs.v468labelAutoGenerate468 = !current
+    AppToast.show(this, "Label Auto Generate468: ${if (!current) "ON" else "OFF"}")
+}
+
+// v468: Layer Auto Composite468
+internal fun PlayerActivity.showV468LayerAutoComposite468Toggle() {
+    val current = BiliClient.prefs.v468layerAutoComposite468
+    BiliClient.prefs.v468layerAutoComposite468 = !current
+    AppToast.show(this, "Layer Auto Composite468: ${if (!current) "ON" else "OFF"}")
+}
+
+// v468: Lazy Load Enabled468
+internal fun PlayerActivity.showV468LazyLoadEnabled468Toggle() {
+    val current = BiliClient.prefs.v468lazyLoadEnabled468
+    BiliClient.prefs.v468lazyLoadEnabled468 = !current
+    AppToast.show(this, "Lazy Load Enabled468: ${if (!current) "ON" else "OFF"}")
+}
+
+// v468: Lead In Auto Skip468
+internal fun PlayerActivity.showV468LeadInAutoSkip468Toggle() {
+    val current = BiliClient.prefs.v468leadInAutoSkip468
+    BiliClient.prefs.v468leadInAutoSkip468 = !current
+    AppToast.show(this, "Lead In Auto Skip468: ${if (!current) "ON" else "OFF"}")
+}
+
+// v468: Lens Correction468
+internal fun PlayerActivity.showV468LensCorrection468Toggle() {
+    val current = BiliClient.prefs.v468lensCorrection468
+    BiliClient.prefs.v468lensCorrection468 = !current
+    AppToast.show(this, "Lens Correction468: ${if (!current) "ON" else "OFF"}")
+}
+
+// v468: Level Auto Adjust468
+internal fun PlayerActivity.showV468LevelAutoAdjust468Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v468levelAutoAdjust468).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Level Auto Adjust468",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v468levelAutoAdjust468 = value
+        AppToast.show(this, "Level Auto Adjust468: $value")
+    }
+}
+
+// v468: Light Adaptive468
+internal fun PlayerActivity.showV468LightAdaptive468Toggle() {
+    val current = BiliClient.prefs.v468lightAdaptive468
+    BiliClient.prefs.v468lightAdaptive468 = !current
+    AppToast.show(this, "Light Adaptive468: ${if (!current) "ON" else "OFF"}")
+}
+
+// v468: Limit Bandwidth Auto468
+internal fun PlayerActivity.showV468LimitBandwidthAuto468Toggle() {
+    val current = BiliClient.prefs.v468limitBandwidthAuto468
+    BiliClient.prefs.v468limitBandwidthAuto468 = !current
+    AppToast.show(this, "Limit Bandwidth Auto468: ${if (!current) "ON" else "OFF"}")
+}
+
+// v468: Line Spacing Adjust468
+internal fun PlayerActivity.showV468LineSpacingAdjust468Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v468lineSpacingAdjust468).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Line Spacing Adjust468",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v468lineSpacingAdjust468 = value
+        AppToast.show(this, "Line Spacing Adjust468: $value")
+    }
+}
+
+// v468: Link Preview Auto468
+internal fun PlayerActivity.showV468LinkPreviewAuto468Toggle() {
+    val current = BiliClient.prefs.v468linkPreviewAuto468
+    BiliClient.prefs.v468linkPreviewAuto468 = !current
+    AppToast.show(this, "Link Preview Auto468: ${if (!current) "ON" else "OFF"}")
+}
+
+// v468: List Animation468
+internal fun PlayerActivity.showV468ListAnimation468Toggle() {
+    val current = BiliClient.prefs.v468listAnimation468
+    BiliClient.prefs.v468listAnimation468 = !current
+    AppToast.show(this, "List Animation468: ${if (!current) "ON" else "OFF"}")
+}
+
+// v468: Load Priority High468
+internal fun PlayerActivity.showV468LoadPriorityHigh468Toggle() {
+    val current = BiliClient.prefs.v468loadPriorityHigh468
+    BiliClient.prefs.v468loadPriorityHigh468 = !current
+    AppToast.show(this, "Load Priority High468: ${if (!current) "ON" else "OFF"}")
+}
+
+// v468: Local Cache Enabled468
+internal fun PlayerActivity.showV468LocalCacheEnabled468Toggle() {
+    val current = BiliClient.prefs.v468localCacheEnabled468
+    BiliClient.prefs.v468localCacheEnabled468 = !current
+    AppToast.show(this, "Local Cache Enabled468: ${if (!current) "ON" else "OFF"}")
+}
+
+// v468: Location Based Rec468
+internal fun PlayerActivity.showV468LocationBasedRec468Toggle() {
+    val current = BiliClient.prefs.v468locationBasedRec468
+    BiliClient.prefs.v468locationBasedRec468 = !current
+    AppToast.show(this, "Location Based Rec468: ${if (!current) "ON" else "OFF"}")
+}
+
+// v469: Key Mapping Custom469
+internal fun PlayerActivity.showV469KeyMappingCustom469Toggle() {
+    val current = BiliClient.prefs.v469keyMappingCustom469
+    BiliClient.prefs.v469keyMappingCustom469 = !current
+    AppToast.show(this, "Key Mapping Custom469: ${if (!current) "ON" else "OFF"}")
+}
+
+// v469: Label Auto Generate469
+internal fun PlayerActivity.showV469LabelAutoGenerate469Toggle() {
+    val current = BiliClient.prefs.v469labelAutoGenerate469
+    BiliClient.prefs.v469labelAutoGenerate469 = !current
+    AppToast.show(this, "Label Auto Generate469: ${if (!current) "ON" else "OFF"}")
+}
+
+// v469: Layer Auto Composite469
+internal fun PlayerActivity.showV469LayerAutoComposite469Toggle() {
+    val current = BiliClient.prefs.v469layerAutoComposite469
+    BiliClient.prefs.v469layerAutoComposite469 = !current
+    AppToast.show(this, "Layer Auto Composite469: ${if (!current) "ON" else "OFF"}")
+}
+
+// v469: Lazy Load Enabled469
+internal fun PlayerActivity.showV469LazyLoadEnabled469Toggle() {
+    val current = BiliClient.prefs.v469lazyLoadEnabled469
+    BiliClient.prefs.v469lazyLoadEnabled469 = !current
+    AppToast.show(this, "Lazy Load Enabled469: ${if (!current) "ON" else "OFF"}")
+}
+
+// v469: Lead In Auto Skip469
+internal fun PlayerActivity.showV469LeadInAutoSkip469Toggle() {
+    val current = BiliClient.prefs.v469leadInAutoSkip469
+    BiliClient.prefs.v469leadInAutoSkip469 = !current
+    AppToast.show(this, "Lead In Auto Skip469: ${if (!current) "ON" else "OFF"}")
+}
+
+// v469: Lens Correction469
+internal fun PlayerActivity.showV469LensCorrection469Toggle() {
+    val current = BiliClient.prefs.v469lensCorrection469
+    BiliClient.prefs.v469lensCorrection469 = !current
+    AppToast.show(this, "Lens Correction469: ${if (!current) "ON" else "OFF"}")
+}
+
+// v469: Level Auto Adjust469
+internal fun PlayerActivity.showV469LevelAutoAdjust469Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v469levelAutoAdjust469).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Level Auto Adjust469",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v469levelAutoAdjust469 = value
+        AppToast.show(this, "Level Auto Adjust469: $value")
+    }
+}
+
+// v469: Light Adaptive469
+internal fun PlayerActivity.showV469LightAdaptive469Toggle() {
+    val current = BiliClient.prefs.v469lightAdaptive469
+    BiliClient.prefs.v469lightAdaptive469 = !current
+    AppToast.show(this, "Light Adaptive469: ${if (!current) "ON" else "OFF"}")
+}
+
+// v469: Limit Bandwidth Auto469
+internal fun PlayerActivity.showV469LimitBandwidthAuto469Toggle() {
+    val current = BiliClient.prefs.v469limitBandwidthAuto469
+    BiliClient.prefs.v469limitBandwidthAuto469 = !current
+    AppToast.show(this, "Limit Bandwidth Auto469: ${if (!current) "ON" else "OFF"}")
+}
+
+// v469: Line Spacing Adjust469
+internal fun PlayerActivity.showV469LineSpacingAdjust469Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v469lineSpacingAdjust469).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Line Spacing Adjust469",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v469lineSpacingAdjust469 = value
+        AppToast.show(this, "Line Spacing Adjust469: $value")
+    }
+}
+
+// v469: Link Preview Auto469
+internal fun PlayerActivity.showV469LinkPreviewAuto469Toggle() {
+    val current = BiliClient.prefs.v469linkPreviewAuto469
+    BiliClient.prefs.v469linkPreviewAuto469 = !current
+    AppToast.show(this, "Link Preview Auto469: ${if (!current) "ON" else "OFF"}")
+}
+
+// v469: List Animation469
+internal fun PlayerActivity.showV469ListAnimation469Toggle() {
+    val current = BiliClient.prefs.v469listAnimation469
+    BiliClient.prefs.v469listAnimation469 = !current
+    AppToast.show(this, "List Animation469: ${if (!current) "ON" else "OFF"}")
+}
+
+// v469: Load Priority High469
+internal fun PlayerActivity.showV469LoadPriorityHigh469Toggle() {
+    val current = BiliClient.prefs.v469loadPriorityHigh469
+    BiliClient.prefs.v469loadPriorityHigh469 = !current
+    AppToast.show(this, "Load Priority High469: ${if (!current) "ON" else "OFF"}")
+}
+
+// v469: Local Cache Enabled469
+internal fun PlayerActivity.showV469LocalCacheEnabled469Toggle() {
+    val current = BiliClient.prefs.v469localCacheEnabled469
+    BiliClient.prefs.v469localCacheEnabled469 = !current
+    AppToast.show(this, "Local Cache Enabled469: ${if (!current) "ON" else "OFF"}")
+}
+
+// v469: Location Based Rec469
+internal fun PlayerActivity.showV469LocationBasedRec469Toggle() {
+    val current = BiliClient.prefs.v469locationBasedRec469
+    BiliClient.prefs.v469locationBasedRec469 = !current
+    AppToast.show(this, "Location Based Rec469: ${if (!current) "ON" else "OFF"}")
+}
+
+// v470: Key Mapping Custom470
+internal fun PlayerActivity.showV470KeyMappingCustom470Toggle() {
+    val current = BiliClient.prefs.v470keyMappingCustom470
+    BiliClient.prefs.v470keyMappingCustom470 = !current
+    AppToast.show(this, "Key Mapping Custom470: ${if (!current) "ON" else "OFF"}")
+}
+
+// v470: Label Auto Generate470
+internal fun PlayerActivity.showV470LabelAutoGenerate470Toggle() {
+    val current = BiliClient.prefs.v470labelAutoGenerate470
+    BiliClient.prefs.v470labelAutoGenerate470 = !current
+    AppToast.show(this, "Label Auto Generate470: ${if (!current) "ON" else "OFF"}")
+}
+
+// v470: Layer Auto Composite470
+internal fun PlayerActivity.showV470LayerAutoComposite470Toggle() {
+    val current = BiliClient.prefs.v470layerAutoComposite470
+    BiliClient.prefs.v470layerAutoComposite470 = !current
+    AppToast.show(this, "Layer Auto Composite470: ${if (!current) "ON" else "OFF"}")
+}
+
+// v470: Lazy Load Enabled470
+internal fun PlayerActivity.showV470LazyLoadEnabled470Toggle() {
+    val current = BiliClient.prefs.v470lazyLoadEnabled470
+    BiliClient.prefs.v470lazyLoadEnabled470 = !current
+    AppToast.show(this, "Lazy Load Enabled470: ${if (!current) "ON" else "OFF"}")
+}
+
+// v470: Lead In Auto Skip470
+internal fun PlayerActivity.showV470LeadInAutoSkip470Toggle() {
+    val current = BiliClient.prefs.v470leadInAutoSkip470
+    BiliClient.prefs.v470leadInAutoSkip470 = !current
+    AppToast.show(this, "Lead In Auto Skip470: ${if (!current) "ON" else "OFF"}")
+}
+
+// v470: Lens Correction470
+internal fun PlayerActivity.showV470LensCorrection470Toggle() {
+    val current = BiliClient.prefs.v470lensCorrection470
+    BiliClient.prefs.v470lensCorrection470 = !current
+    AppToast.show(this, "Lens Correction470: ${if (!current) "ON" else "OFF"}")
+}
+
+// v470: Level Auto Adjust470
+internal fun PlayerActivity.showV470LevelAutoAdjust470Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v470levelAutoAdjust470).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Level Auto Adjust470",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v470levelAutoAdjust470 = value
+        AppToast.show(this, "Level Auto Adjust470: $value")
+    }
+}
+
+// v470: Light Adaptive470
+internal fun PlayerActivity.showV470LightAdaptive470Toggle() {
+    val current = BiliClient.prefs.v470lightAdaptive470
+    BiliClient.prefs.v470lightAdaptive470 = !current
+    AppToast.show(this, "Light Adaptive470: ${if (!current) "ON" else "OFF"}")
+}
+
+// v470: Limit Bandwidth Auto470
+internal fun PlayerActivity.showV470LimitBandwidthAuto470Toggle() {
+    val current = BiliClient.prefs.v470limitBandwidthAuto470
+    BiliClient.prefs.v470limitBandwidthAuto470 = !current
+    AppToast.show(this, "Limit Bandwidth Auto470: ${if (!current) "ON" else "OFF"}")
+}
+
+// v470: Line Spacing Adjust470
+internal fun PlayerActivity.showV470LineSpacingAdjust470Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v470lineSpacingAdjust470).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Line Spacing Adjust470",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v470lineSpacingAdjust470 = value
+        AppToast.show(this, "Line Spacing Adjust470: $value")
+    }
+}
+
+// v470: Link Preview Auto470
+internal fun PlayerActivity.showV470LinkPreviewAuto470Toggle() {
+    val current = BiliClient.prefs.v470linkPreviewAuto470
+    BiliClient.prefs.v470linkPreviewAuto470 = !current
+    AppToast.show(this, "Link Preview Auto470: ${if (!current) "ON" else "OFF"}")
+}
+
+// v470: List Animation470
+internal fun PlayerActivity.showV470ListAnimation470Toggle() {
+    val current = BiliClient.prefs.v470listAnimation470
+    BiliClient.prefs.v470listAnimation470 = !current
+    AppToast.show(this, "List Animation470: ${if (!current) "ON" else "OFF"}")
+}
+
+// v470: Load Priority High470
+internal fun PlayerActivity.showV470LoadPriorityHigh470Toggle() {
+    val current = BiliClient.prefs.v470loadPriorityHigh470
+    BiliClient.prefs.v470loadPriorityHigh470 = !current
+    AppToast.show(this, "Load Priority High470: ${if (!current) "ON" else "OFF"}")
+}
+
+// v470: Local Cache Enabled470
+internal fun PlayerActivity.showV470LocalCacheEnabled470Toggle() {
+    val current = BiliClient.prefs.v470localCacheEnabled470
+    BiliClient.prefs.v470localCacheEnabled470 = !current
+    AppToast.show(this, "Local Cache Enabled470: ${if (!current) "ON" else "OFF"}")
+}
+
+// v470: Location Based Rec470
+internal fun PlayerActivity.showV470LocationBasedRec470Toggle() {
+    val current = BiliClient.prefs.v470locationBasedRec470
+    BiliClient.prefs.v470locationBasedRec470 = !current
+    AppToast.show(this, "Location Based Rec470: ${if (!current) "ON" else "OFF"}")
+}
+
