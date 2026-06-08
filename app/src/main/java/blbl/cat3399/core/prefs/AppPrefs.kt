@@ -60048,6 +60048,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V890PROGRAMAUTOSCHEDULE890, false)
         set(value) = prefs.edit().putBoolean(KEY_V890PROGRAMAUTOSCHEDULE890, value).apply()
 
+    var v891projectAutoExport891: Boolean
+        get() = prefs.getBoolean(KEY_V891PROJECTAUTOEXPORT891, false)
+        set(value) = prefs.edit().putBoolean(KEY_V891PROJECTAUTOEXPORT891, value).apply()
+
+    var v891promiseAutoAwait891: Boolean
+        get() = prefs.getBoolean(KEY_V891PROMISEAUTOAWAIT891, false)
+        set(value) = prefs.edit().putBoolean(KEY_V891PROMISEAUTOAWAIT891, value).apply()
+
+    var v891promptAutoShow891: Boolean
+        get() = prefs.getBoolean(KEY_V891PROMPTAUTOSHOW891, false)
+        set(value) = prefs.edit().putBoolean(KEY_V891PROMPTAUTOSHOW891, value).apply()
+
+    var v891propAutoBind891: Boolean
+        get() = prefs.getBoolean(KEY_V891PROPAUTOBIND891, false)
+        set(value) = prefs.edit().putBoolean(KEY_V891PROPAUTOBIND891, value).apply()
+
+    var v891propertyAutoObserve891: Boolean
+        get() = prefs.getBoolean(KEY_V891PROPERTYAUTOOBSERVE891, false)
+        set(value) = prefs.edit().putBoolean(KEY_V891PROPERTYAUTOOBSERVE891, value).apply()
+
+    var v891protectAutoEncrypt891: Boolean
+        get() = prefs.getBoolean(KEY_V891PROTECTAUTOENCRYPT891, false)
+        set(value) = prefs.edit().putBoolean(KEY_V891PROTECTAUTOENCRYPT891, value).apply()
+
+    var v891protocolAutoNegotiate891: Boolean
+        get() = prefs.getBoolean(KEY_V891PROTOCOLAUTONEGOTIATE891, false)
+        set(value) = prefs.edit().putBoolean(KEY_V891PROTOCOLAUTONEGOTIATE891, value).apply()
+
+    var v891provideAutoInject891: Boolean
+        get() = prefs.getBoolean(KEY_V891PROVIDEAUTOINJECT891, false)
+        set(value) = prefs.edit().putBoolean(KEY_V891PROVIDEAUTOINJECT891, value).apply()
+
+    var v891proxyAutoRotate891: Boolean
+        get() = prefs.getBoolean(KEY_V891PROXYAUTOROTATE891, false)
+        set(value) = prefs.edit().putBoolean(KEY_V891PROXYAUTOROTATE891, value).apply()
+
+    var v891publicAutoShare891: Boolean
+        get() = prefs.getBoolean(KEY_V891PUBLICAUTOSHARE891, false)
+        set(value) = prefs.edit().putBoolean(KEY_V891PUBLICAUTOSHARE891, value).apply()
+
+    var v891pullAutoRefresh891: Boolean
+        get() = prefs.getBoolean(KEY_V891PULLAUTOREFRESH891, false)
+        set(value) = prefs.edit().putBoolean(KEY_V891PULLAUTOREFRESH891, value).apply()
+
+    var v891pureAutoMode891: Boolean
+        get() = prefs.getBoolean(KEY_V891PUREAUTOMODE891, false)
+        set(value) = prefs.edit().putBoolean(KEY_V891PUREAUTOMODE891, value).apply()
+
+    var v891pushAutoNotify891: Boolean
+        get() = prefs.getBoolean(KEY_V891PUSHAUTONOTIFY891, false)
+        set(value) = prefs.edit().putBoolean(KEY_V891PUSHAUTONOTIFY891, value).apply()
+
+    var v891queryAutoOptimize891: Boolean
+        get() = prefs.getBoolean(KEY_V891QUERYAUTOOPTIMIZE891, false)
+        set(value) = prefs.edit().putBoolean(KEY_V891QUERYAUTOOPTIMIZE891, value).apply()
+
+    var v891queueAutoPriority891: Int
+        get() = prefs.getInt(KEY_V891QUEUEAUTOPRIORITY891, 0)
+        set(value) = prefs.edit().putInt(KEY_V891QUEUEAUTOPRIORITY891, value).apply()
+
+    var v892projectAutoExport892: Boolean
+        get() = prefs.getBoolean(KEY_V892PROJECTAUTOEXPORT892, false)
+        set(value) = prefs.edit().putBoolean(KEY_V892PROJECTAUTOEXPORT892, value).apply()
+
+    var v892promiseAutoAwait892: Boolean
+        get() = prefs.getBoolean(KEY_V892PROMISEAUTOAWAIT892, false)
+        set(value) = prefs.edit().putBoolean(KEY_V892PROMISEAUTOAWAIT892, value).apply()
+
+    var v892promptAutoShow892: Boolean
+        get() = prefs.getBoolean(KEY_V892PROMPTAUTOSHOW892, false)
+        set(value) = prefs.edit().putBoolean(KEY_V892PROMPTAUTOSHOW892, value).apply()
+
+    var v892propAutoBind892: Boolean
+        get() = prefs.getBoolean(KEY_V892PROPAUTOBIND892, false)
+        set(value) = prefs.edit().putBoolean(KEY_V892PROPAUTOBIND892, value).apply()
+
+    var v892propertyAutoObserve892: Boolean
+        get() = prefs.getBoolean(KEY_V892PROPERTYAUTOOBSERVE892, false)
+        set(value) = prefs.edit().putBoolean(KEY_V892PROPERTYAUTOOBSERVE892, value).apply()
+
+    var v892protectAutoEncrypt892: Boolean
+        get() = prefs.getBoolean(KEY_V892PROTECTAUTOENCRYPT892, false)
+        set(value) = prefs.edit().putBoolean(KEY_V892PROTECTAUTOENCRYPT892, value).apply()
+
+    var v892protocolAutoNegotiate892: Boolean
+        get() = prefs.getBoolean(KEY_V892PROTOCOLAUTONEGOTIATE892, false)
+        set(value) = prefs.edit().putBoolean(KEY_V892PROTOCOLAUTONEGOTIATE892, value).apply()
+
+    var v892provideAutoInject892: Boolean
+        get() = prefs.getBoolean(KEY_V892PROVIDEAUTOINJECT892, false)
+        set(value) = prefs.edit().putBoolean(KEY_V892PROVIDEAUTOINJECT892, value).apply()
+
+    var v892proxyAutoRotate892: Boolean
+        get() = prefs.getBoolean(KEY_V892PROXYAUTOROTATE892, false)
+        set(value) = prefs.edit().putBoolean(KEY_V892PROXYAUTOROTATE892, value).apply()
+
+    var v892publicAutoShare892: Boolean
+        get() = prefs.getBoolean(KEY_V892PUBLICAUTOSHARE892, false)
+        set(value) = prefs.edit().putBoolean(KEY_V892PUBLICAUTOSHARE892, value).apply()
+
+    var v892pullAutoRefresh892: Boolean
+        get() = prefs.getBoolean(KEY_V892PULLAUTOREFRESH892, false)
+        set(value) = prefs.edit().putBoolean(KEY_V892PULLAUTOREFRESH892, value).apply()
+
+    var v892pureAutoMode892: Boolean
+        get() = prefs.getBoolean(KEY_V892PUREAUTOMODE892, false)
+        set(value) = prefs.edit().putBoolean(KEY_V892PUREAUTOMODE892, value).apply()
+
+    var v892pushAutoNotify892: Boolean
+        get() = prefs.getBoolean(KEY_V892PUSHAUTONOTIFY892, false)
+        set(value) = prefs.edit().putBoolean(KEY_V892PUSHAUTONOTIFY892, value).apply()
+
+    var v892queryAutoOptimize892: Boolean
+        get() = prefs.getBoolean(KEY_V892QUERYAUTOOPTIMIZE892, false)
+        set(value) = prefs.edit().putBoolean(KEY_V892QUERYAUTOOPTIMIZE892, value).apply()
+
+    var v892queueAutoPriority892: Int
+        get() = prefs.getInt(KEY_V892QUEUEAUTOPRIORITY892, 0)
+        set(value) = prefs.edit().putInt(KEY_V892QUEUEAUTOPRIORITY892, value).apply()
+
+    var v893projectAutoExport893: Boolean
+        get() = prefs.getBoolean(KEY_V893PROJECTAUTOEXPORT893, false)
+        set(value) = prefs.edit().putBoolean(KEY_V893PROJECTAUTOEXPORT893, value).apply()
+
+    var v893promiseAutoAwait893: Boolean
+        get() = prefs.getBoolean(KEY_V893PROMISEAUTOAWAIT893, false)
+        set(value) = prefs.edit().putBoolean(KEY_V893PROMISEAUTOAWAIT893, value).apply()
+
+    var v893promptAutoShow893: Boolean
+        get() = prefs.getBoolean(KEY_V893PROMPTAUTOSHOW893, false)
+        set(value) = prefs.edit().putBoolean(KEY_V893PROMPTAUTOSHOW893, value).apply()
+
+    var v893propAutoBind893: Boolean
+        get() = prefs.getBoolean(KEY_V893PROPAUTOBIND893, false)
+        set(value) = prefs.edit().putBoolean(KEY_V893PROPAUTOBIND893, value).apply()
+
+    var v893propertyAutoObserve893: Boolean
+        get() = prefs.getBoolean(KEY_V893PROPERTYAUTOOBSERVE893, false)
+        set(value) = prefs.edit().putBoolean(KEY_V893PROPERTYAUTOOBSERVE893, value).apply()
+
+    var v893protectAutoEncrypt893: Boolean
+        get() = prefs.getBoolean(KEY_V893PROTECTAUTOENCRYPT893, false)
+        set(value) = prefs.edit().putBoolean(KEY_V893PROTECTAUTOENCRYPT893, value).apply()
+
+    var v893protocolAutoNegotiate893: Boolean
+        get() = prefs.getBoolean(KEY_V893PROTOCOLAUTONEGOTIATE893, false)
+        set(value) = prefs.edit().putBoolean(KEY_V893PROTOCOLAUTONEGOTIATE893, value).apply()
+
+    var v893provideAutoInject893: Boolean
+        get() = prefs.getBoolean(KEY_V893PROVIDEAUTOINJECT893, false)
+        set(value) = prefs.edit().putBoolean(KEY_V893PROVIDEAUTOINJECT893, value).apply()
+
+    var v893proxyAutoRotate893: Boolean
+        get() = prefs.getBoolean(KEY_V893PROXYAUTOROTATE893, false)
+        set(value) = prefs.edit().putBoolean(KEY_V893PROXYAUTOROTATE893, value).apply()
+
+    var v893publicAutoShare893: Boolean
+        get() = prefs.getBoolean(KEY_V893PUBLICAUTOSHARE893, false)
+        set(value) = prefs.edit().putBoolean(KEY_V893PUBLICAUTOSHARE893, value).apply()
+
+    var v893pullAutoRefresh893: Boolean
+        get() = prefs.getBoolean(KEY_V893PULLAUTOREFRESH893, false)
+        set(value) = prefs.edit().putBoolean(KEY_V893PULLAUTOREFRESH893, value).apply()
+
+    var v893pureAutoMode893: Boolean
+        get() = prefs.getBoolean(KEY_V893PUREAUTOMODE893, false)
+        set(value) = prefs.edit().putBoolean(KEY_V893PUREAUTOMODE893, value).apply()
+
+    var v893pushAutoNotify893: Boolean
+        get() = prefs.getBoolean(KEY_V893PUSHAUTONOTIFY893, false)
+        set(value) = prefs.edit().putBoolean(KEY_V893PUSHAUTONOTIFY893, value).apply()
+
+    var v893queryAutoOptimize893: Boolean
+        get() = prefs.getBoolean(KEY_V893QUERYAUTOOPTIMIZE893, false)
+        set(value) = prefs.edit().putBoolean(KEY_V893QUERYAUTOOPTIMIZE893, value).apply()
+
+    var v893queueAutoPriority893: Int
+        get() = prefs.getInt(KEY_V893QUEUEAUTOPRIORITY893, 0)
+        set(value) = prefs.edit().putInt(KEY_V893QUEUEAUTOPRIORITY893, value).apply()
+
+    var v894projectAutoExport894: Boolean
+        get() = prefs.getBoolean(KEY_V894PROJECTAUTOEXPORT894, false)
+        set(value) = prefs.edit().putBoolean(KEY_V894PROJECTAUTOEXPORT894, value).apply()
+
+    var v894promiseAutoAwait894: Boolean
+        get() = prefs.getBoolean(KEY_V894PROMISEAUTOAWAIT894, false)
+        set(value) = prefs.edit().putBoolean(KEY_V894PROMISEAUTOAWAIT894, value).apply()
+
+    var v894promptAutoShow894: Boolean
+        get() = prefs.getBoolean(KEY_V894PROMPTAUTOSHOW894, false)
+        set(value) = prefs.edit().putBoolean(KEY_V894PROMPTAUTOSHOW894, value).apply()
+
+    var v894propAutoBind894: Boolean
+        get() = prefs.getBoolean(KEY_V894PROPAUTOBIND894, false)
+        set(value) = prefs.edit().putBoolean(KEY_V894PROPAUTOBIND894, value).apply()
+
+    var v894propertyAutoObserve894: Boolean
+        get() = prefs.getBoolean(KEY_V894PROPERTYAUTOOBSERVE894, false)
+        set(value) = prefs.edit().putBoolean(KEY_V894PROPERTYAUTOOBSERVE894, value).apply()
+
+    var v894protectAutoEncrypt894: Boolean
+        get() = prefs.getBoolean(KEY_V894PROTECTAUTOENCRYPT894, false)
+        set(value) = prefs.edit().putBoolean(KEY_V894PROTECTAUTOENCRYPT894, value).apply()
+
+    var v894protocolAutoNegotiate894: Boolean
+        get() = prefs.getBoolean(KEY_V894PROTOCOLAUTONEGOTIATE894, false)
+        set(value) = prefs.edit().putBoolean(KEY_V894PROTOCOLAUTONEGOTIATE894, value).apply()
+
+    var v894provideAutoInject894: Boolean
+        get() = prefs.getBoolean(KEY_V894PROVIDEAUTOINJECT894, false)
+        set(value) = prefs.edit().putBoolean(KEY_V894PROVIDEAUTOINJECT894, value).apply()
+
+    var v894proxyAutoRotate894: Boolean
+        get() = prefs.getBoolean(KEY_V894PROXYAUTOROTATE894, false)
+        set(value) = prefs.edit().putBoolean(KEY_V894PROXYAUTOROTATE894, value).apply()
+
+    var v894publicAutoShare894: Boolean
+        get() = prefs.getBoolean(KEY_V894PUBLICAUTOSHARE894, false)
+        set(value) = prefs.edit().putBoolean(KEY_V894PUBLICAUTOSHARE894, value).apply()
+
+    var v894pullAutoRefresh894: Boolean
+        get() = prefs.getBoolean(KEY_V894PULLAUTOREFRESH894, false)
+        set(value) = prefs.edit().putBoolean(KEY_V894PULLAUTOREFRESH894, value).apply()
+
+    var v894pureAutoMode894: Boolean
+        get() = prefs.getBoolean(KEY_V894PUREAUTOMODE894, false)
+        set(value) = prefs.edit().putBoolean(KEY_V894PUREAUTOMODE894, value).apply()
+
+    var v894pushAutoNotify894: Boolean
+        get() = prefs.getBoolean(KEY_V894PUSHAUTONOTIFY894, false)
+        set(value) = prefs.edit().putBoolean(KEY_V894PUSHAUTONOTIFY894, value).apply()
+
+    var v894queryAutoOptimize894: Boolean
+        get() = prefs.getBoolean(KEY_V894QUERYAUTOOPTIMIZE894, false)
+        set(value) = prefs.edit().putBoolean(KEY_V894QUERYAUTOOPTIMIZE894, value).apply()
+
+    var v894queueAutoPriority894: Int
+        get() = prefs.getInt(KEY_V894QUEUEAUTOPRIORITY894, 0)
+        set(value) = prefs.edit().putInt(KEY_V894QUEUEAUTOPRIORITY894, value).apply()
+
+    var v895projectAutoExport895: Boolean
+        get() = prefs.getBoolean(KEY_V895PROJECTAUTOEXPORT895, false)
+        set(value) = prefs.edit().putBoolean(KEY_V895PROJECTAUTOEXPORT895, value).apply()
+
+    var v895promiseAutoAwait895: Boolean
+        get() = prefs.getBoolean(KEY_V895PROMISEAUTOAWAIT895, false)
+        set(value) = prefs.edit().putBoolean(KEY_V895PROMISEAUTOAWAIT895, value).apply()
+
+    var v895promptAutoShow895: Boolean
+        get() = prefs.getBoolean(KEY_V895PROMPTAUTOSHOW895, false)
+        set(value) = prefs.edit().putBoolean(KEY_V895PROMPTAUTOSHOW895, value).apply()
+
+    var v895propAutoBind895: Boolean
+        get() = prefs.getBoolean(KEY_V895PROPAUTOBIND895, false)
+        set(value) = prefs.edit().putBoolean(KEY_V895PROPAUTOBIND895, value).apply()
+
+    var v895propertyAutoObserve895: Boolean
+        get() = prefs.getBoolean(KEY_V895PROPERTYAUTOOBSERVE895, false)
+        set(value) = prefs.edit().putBoolean(KEY_V895PROPERTYAUTOOBSERVE895, value).apply()
+
+    var v895protectAutoEncrypt895: Boolean
+        get() = prefs.getBoolean(KEY_V895PROTECTAUTOENCRYPT895, false)
+        set(value) = prefs.edit().putBoolean(KEY_V895PROTECTAUTOENCRYPT895, value).apply()
+
+    var v895protocolAutoNegotiate895: Boolean
+        get() = prefs.getBoolean(KEY_V895PROTOCOLAUTONEGOTIATE895, false)
+        set(value) = prefs.edit().putBoolean(KEY_V895PROTOCOLAUTONEGOTIATE895, value).apply()
+
+    var v895provideAutoInject895: Boolean
+        get() = prefs.getBoolean(KEY_V895PROVIDEAUTOINJECT895, false)
+        set(value) = prefs.edit().putBoolean(KEY_V895PROVIDEAUTOINJECT895, value).apply()
+
+    var v895proxyAutoRotate895: Boolean
+        get() = prefs.getBoolean(KEY_V895PROXYAUTOROTATE895, false)
+        set(value) = prefs.edit().putBoolean(KEY_V895PROXYAUTOROTATE895, value).apply()
+
+    var v895publicAutoShare895: Boolean
+        get() = prefs.getBoolean(KEY_V895PUBLICAUTOSHARE895, false)
+        set(value) = prefs.edit().putBoolean(KEY_V895PUBLICAUTOSHARE895, value).apply()
+
+    var v895pullAutoRefresh895: Boolean
+        get() = prefs.getBoolean(KEY_V895PULLAUTOREFRESH895, false)
+        set(value) = prefs.edit().putBoolean(KEY_V895PULLAUTOREFRESH895, value).apply()
+
+    var v895pureAutoMode895: Boolean
+        get() = prefs.getBoolean(KEY_V895PUREAUTOMODE895, false)
+        set(value) = prefs.edit().putBoolean(KEY_V895PUREAUTOMODE895, value).apply()
+
+    var v895pushAutoNotify895: Boolean
+        get() = prefs.getBoolean(KEY_V895PUSHAUTONOTIFY895, false)
+        set(value) = prefs.edit().putBoolean(KEY_V895PUSHAUTONOTIFY895, value).apply()
+
+    var v895queryAutoOptimize895: Boolean
+        get() = prefs.getBoolean(KEY_V895QUERYAUTOOPTIMIZE895, false)
+        set(value) = prefs.edit().putBoolean(KEY_V895QUERYAUTOOPTIMIZE895, value).apply()
+
+    var v895queueAutoPriority895: Int
+        get() = prefs.getInt(KEY_V895QUEUEAUTOPRIORITY895, 0)
+        set(value) = prefs.edit().putInt(KEY_V895QUEUEAUTOPRIORITY895, value).apply()
+
+    var v896projectAutoExport896: Boolean
+        get() = prefs.getBoolean(KEY_V896PROJECTAUTOEXPORT896, false)
+        set(value) = prefs.edit().putBoolean(KEY_V896PROJECTAUTOEXPORT896, value).apply()
+
+    var v896promiseAutoAwait896: Boolean
+        get() = prefs.getBoolean(KEY_V896PROMISEAUTOAWAIT896, false)
+        set(value) = prefs.edit().putBoolean(KEY_V896PROMISEAUTOAWAIT896, value).apply()
+
+    var v896promptAutoShow896: Boolean
+        get() = prefs.getBoolean(KEY_V896PROMPTAUTOSHOW896, false)
+        set(value) = prefs.edit().putBoolean(KEY_V896PROMPTAUTOSHOW896, value).apply()
+
+    var v896propAutoBind896: Boolean
+        get() = prefs.getBoolean(KEY_V896PROPAUTOBIND896, false)
+        set(value) = prefs.edit().putBoolean(KEY_V896PROPAUTOBIND896, value).apply()
+
+    var v896propertyAutoObserve896: Boolean
+        get() = prefs.getBoolean(KEY_V896PROPERTYAUTOOBSERVE896, false)
+        set(value) = prefs.edit().putBoolean(KEY_V896PROPERTYAUTOOBSERVE896, value).apply()
+
+    var v896protectAutoEncrypt896: Boolean
+        get() = prefs.getBoolean(KEY_V896PROTECTAUTOENCRYPT896, false)
+        set(value) = prefs.edit().putBoolean(KEY_V896PROTECTAUTOENCRYPT896, value).apply()
+
+    var v896protocolAutoNegotiate896: Boolean
+        get() = prefs.getBoolean(KEY_V896PROTOCOLAUTONEGOTIATE896, false)
+        set(value) = prefs.edit().putBoolean(KEY_V896PROTOCOLAUTONEGOTIATE896, value).apply()
+
+    var v896provideAutoInject896: Boolean
+        get() = prefs.getBoolean(KEY_V896PROVIDEAUTOINJECT896, false)
+        set(value) = prefs.edit().putBoolean(KEY_V896PROVIDEAUTOINJECT896, value).apply()
+
+    var v896proxyAutoRotate896: Boolean
+        get() = prefs.getBoolean(KEY_V896PROXYAUTOROTATE896, false)
+        set(value) = prefs.edit().putBoolean(KEY_V896PROXYAUTOROTATE896, value).apply()
+
+    var v896publicAutoShare896: Boolean
+        get() = prefs.getBoolean(KEY_V896PUBLICAUTOSHARE896, false)
+        set(value) = prefs.edit().putBoolean(KEY_V896PUBLICAUTOSHARE896, value).apply()
+
+    var v896pullAutoRefresh896: Boolean
+        get() = prefs.getBoolean(KEY_V896PULLAUTOREFRESH896, false)
+        set(value) = prefs.edit().putBoolean(KEY_V896PULLAUTOREFRESH896, value).apply()
+
+    var v896pureAutoMode896: Boolean
+        get() = prefs.getBoolean(KEY_V896PUREAUTOMODE896, false)
+        set(value) = prefs.edit().putBoolean(KEY_V896PUREAUTOMODE896, value).apply()
+
+    var v896pushAutoNotify896: Boolean
+        get() = prefs.getBoolean(KEY_V896PUSHAUTONOTIFY896, false)
+        set(value) = prefs.edit().putBoolean(KEY_V896PUSHAUTONOTIFY896, value).apply()
+
+    var v896queryAutoOptimize896: Boolean
+        get() = prefs.getBoolean(KEY_V896QUERYAUTOOPTIMIZE896, false)
+        set(value) = prefs.edit().putBoolean(KEY_V896QUERYAUTOOPTIMIZE896, value).apply()
+
+    var v896queueAutoPriority896: Int
+        get() = prefs.getInt(KEY_V896QUEUEAUTOPRIORITY896, 0)
+        set(value) = prefs.edit().putInt(KEY_V896QUEUEAUTOPRIORITY896, value).apply()
+
+    var v897projectAutoExport897: Boolean
+        get() = prefs.getBoolean(KEY_V897PROJECTAUTOEXPORT897, false)
+        set(value) = prefs.edit().putBoolean(KEY_V897PROJECTAUTOEXPORT897, value).apply()
+
+    var v897promiseAutoAwait897: Boolean
+        get() = prefs.getBoolean(KEY_V897PROMISEAUTOAWAIT897, false)
+        set(value) = prefs.edit().putBoolean(KEY_V897PROMISEAUTOAWAIT897, value).apply()
+
+    var v897promptAutoShow897: Boolean
+        get() = prefs.getBoolean(KEY_V897PROMPTAUTOSHOW897, false)
+        set(value) = prefs.edit().putBoolean(KEY_V897PROMPTAUTOSHOW897, value).apply()
+
+    var v897propAutoBind897: Boolean
+        get() = prefs.getBoolean(KEY_V897PROPAUTOBIND897, false)
+        set(value) = prefs.edit().putBoolean(KEY_V897PROPAUTOBIND897, value).apply()
+
+    var v897propertyAutoObserve897: Boolean
+        get() = prefs.getBoolean(KEY_V897PROPERTYAUTOOBSERVE897, false)
+        set(value) = prefs.edit().putBoolean(KEY_V897PROPERTYAUTOOBSERVE897, value).apply()
+
+    var v897protectAutoEncrypt897: Boolean
+        get() = prefs.getBoolean(KEY_V897PROTECTAUTOENCRYPT897, false)
+        set(value) = prefs.edit().putBoolean(KEY_V897PROTECTAUTOENCRYPT897, value).apply()
+
+    var v897protocolAutoNegotiate897: Boolean
+        get() = prefs.getBoolean(KEY_V897PROTOCOLAUTONEGOTIATE897, false)
+        set(value) = prefs.edit().putBoolean(KEY_V897PROTOCOLAUTONEGOTIATE897, value).apply()
+
+    var v897provideAutoInject897: Boolean
+        get() = prefs.getBoolean(KEY_V897PROVIDEAUTOINJECT897, false)
+        set(value) = prefs.edit().putBoolean(KEY_V897PROVIDEAUTOINJECT897, value).apply()
+
+    var v897proxyAutoRotate897: Boolean
+        get() = prefs.getBoolean(KEY_V897PROXYAUTOROTATE897, false)
+        set(value) = prefs.edit().putBoolean(KEY_V897PROXYAUTOROTATE897, value).apply()
+
+    var v897publicAutoShare897: Boolean
+        get() = prefs.getBoolean(KEY_V897PUBLICAUTOSHARE897, false)
+        set(value) = prefs.edit().putBoolean(KEY_V897PUBLICAUTOSHARE897, value).apply()
+
+    var v897pullAutoRefresh897: Boolean
+        get() = prefs.getBoolean(KEY_V897PULLAUTOREFRESH897, false)
+        set(value) = prefs.edit().putBoolean(KEY_V897PULLAUTOREFRESH897, value).apply()
+
+    var v897pureAutoMode897: Boolean
+        get() = prefs.getBoolean(KEY_V897PUREAUTOMODE897, false)
+        set(value) = prefs.edit().putBoolean(KEY_V897PUREAUTOMODE897, value).apply()
+
+    var v897pushAutoNotify897: Boolean
+        get() = prefs.getBoolean(KEY_V897PUSHAUTONOTIFY897, false)
+        set(value) = prefs.edit().putBoolean(KEY_V897PUSHAUTONOTIFY897, value).apply()
+
+    var v897queryAutoOptimize897: Boolean
+        get() = prefs.getBoolean(KEY_V897QUERYAUTOOPTIMIZE897, false)
+        set(value) = prefs.edit().putBoolean(KEY_V897QUERYAUTOOPTIMIZE897, value).apply()
+
+    var v897queueAutoPriority897: Int
+        get() = prefs.getInt(KEY_V897QUEUEAUTOPRIORITY897, 0)
+        set(value) = prefs.edit().putInt(KEY_V897QUEUEAUTOPRIORITY897, value).apply()
+
+    var v898projectAutoExport898: Boolean
+        get() = prefs.getBoolean(KEY_V898PROJECTAUTOEXPORT898, false)
+        set(value) = prefs.edit().putBoolean(KEY_V898PROJECTAUTOEXPORT898, value).apply()
+
+    var v898promiseAutoAwait898: Boolean
+        get() = prefs.getBoolean(KEY_V898PROMISEAUTOAWAIT898, false)
+        set(value) = prefs.edit().putBoolean(KEY_V898PROMISEAUTOAWAIT898, value).apply()
+
+    var v898promptAutoShow898: Boolean
+        get() = prefs.getBoolean(KEY_V898PROMPTAUTOSHOW898, false)
+        set(value) = prefs.edit().putBoolean(KEY_V898PROMPTAUTOSHOW898, value).apply()
+
+    var v898propAutoBind898: Boolean
+        get() = prefs.getBoolean(KEY_V898PROPAUTOBIND898, false)
+        set(value) = prefs.edit().putBoolean(KEY_V898PROPAUTOBIND898, value).apply()
+
+    var v898propertyAutoObserve898: Boolean
+        get() = prefs.getBoolean(KEY_V898PROPERTYAUTOOBSERVE898, false)
+        set(value) = prefs.edit().putBoolean(KEY_V898PROPERTYAUTOOBSERVE898, value).apply()
+
+    var v898protectAutoEncrypt898: Boolean
+        get() = prefs.getBoolean(KEY_V898PROTECTAUTOENCRYPT898, false)
+        set(value) = prefs.edit().putBoolean(KEY_V898PROTECTAUTOENCRYPT898, value).apply()
+
+    var v898protocolAutoNegotiate898: Boolean
+        get() = prefs.getBoolean(KEY_V898PROTOCOLAUTONEGOTIATE898, false)
+        set(value) = prefs.edit().putBoolean(KEY_V898PROTOCOLAUTONEGOTIATE898, value).apply()
+
+    var v898provideAutoInject898: Boolean
+        get() = prefs.getBoolean(KEY_V898PROVIDEAUTOINJECT898, false)
+        set(value) = prefs.edit().putBoolean(KEY_V898PROVIDEAUTOINJECT898, value).apply()
+
+    var v898proxyAutoRotate898: Boolean
+        get() = prefs.getBoolean(KEY_V898PROXYAUTOROTATE898, false)
+        set(value) = prefs.edit().putBoolean(KEY_V898PROXYAUTOROTATE898, value).apply()
+
+    var v898publicAutoShare898: Boolean
+        get() = prefs.getBoolean(KEY_V898PUBLICAUTOSHARE898, false)
+        set(value) = prefs.edit().putBoolean(KEY_V898PUBLICAUTOSHARE898, value).apply()
+
+    var v898pullAutoRefresh898: Boolean
+        get() = prefs.getBoolean(KEY_V898PULLAUTOREFRESH898, false)
+        set(value) = prefs.edit().putBoolean(KEY_V898PULLAUTOREFRESH898, value).apply()
+
+    var v898pureAutoMode898: Boolean
+        get() = prefs.getBoolean(KEY_V898PUREAUTOMODE898, false)
+        set(value) = prefs.edit().putBoolean(KEY_V898PUREAUTOMODE898, value).apply()
+
+    var v898pushAutoNotify898: Boolean
+        get() = prefs.getBoolean(KEY_V898PUSHAUTONOTIFY898, false)
+        set(value) = prefs.edit().putBoolean(KEY_V898PUSHAUTONOTIFY898, value).apply()
+
+    var v898queryAutoOptimize898: Boolean
+        get() = prefs.getBoolean(KEY_V898QUERYAUTOOPTIMIZE898, false)
+        set(value) = prefs.edit().putBoolean(KEY_V898QUERYAUTOOPTIMIZE898, value).apply()
+
+    var v898queueAutoPriority898: Int
+        get() = prefs.getInt(KEY_V898QUEUEAUTOPRIORITY898, 0)
+        set(value) = prefs.edit().putInt(KEY_V898QUEUEAUTOPRIORITY898, value).apply()
+
+    var v899projectAutoExport899: Boolean
+        get() = prefs.getBoolean(KEY_V899PROJECTAUTOEXPORT899, false)
+        set(value) = prefs.edit().putBoolean(KEY_V899PROJECTAUTOEXPORT899, value).apply()
+
+    var v899promiseAutoAwait899: Boolean
+        get() = prefs.getBoolean(KEY_V899PROMISEAUTOAWAIT899, false)
+        set(value) = prefs.edit().putBoolean(KEY_V899PROMISEAUTOAWAIT899, value).apply()
+
+    var v899promptAutoShow899: Boolean
+        get() = prefs.getBoolean(KEY_V899PROMPTAUTOSHOW899, false)
+        set(value) = prefs.edit().putBoolean(KEY_V899PROMPTAUTOSHOW899, value).apply()
+
+    var v899propAutoBind899: Boolean
+        get() = prefs.getBoolean(KEY_V899PROPAUTOBIND899, false)
+        set(value) = prefs.edit().putBoolean(KEY_V899PROPAUTOBIND899, value).apply()
+
+    var v899propertyAutoObserve899: Boolean
+        get() = prefs.getBoolean(KEY_V899PROPERTYAUTOOBSERVE899, false)
+        set(value) = prefs.edit().putBoolean(KEY_V899PROPERTYAUTOOBSERVE899, value).apply()
+
+    var v899protectAutoEncrypt899: Boolean
+        get() = prefs.getBoolean(KEY_V899PROTECTAUTOENCRYPT899, false)
+        set(value) = prefs.edit().putBoolean(KEY_V899PROTECTAUTOENCRYPT899, value).apply()
+
+    var v899protocolAutoNegotiate899: Boolean
+        get() = prefs.getBoolean(KEY_V899PROTOCOLAUTONEGOTIATE899, false)
+        set(value) = prefs.edit().putBoolean(KEY_V899PROTOCOLAUTONEGOTIATE899, value).apply()
+
+    var v899provideAutoInject899: Boolean
+        get() = prefs.getBoolean(KEY_V899PROVIDEAUTOINJECT899, false)
+        set(value) = prefs.edit().putBoolean(KEY_V899PROVIDEAUTOINJECT899, value).apply()
+
+    var v899proxyAutoRotate899: Boolean
+        get() = prefs.getBoolean(KEY_V899PROXYAUTOROTATE899, false)
+        set(value) = prefs.edit().putBoolean(KEY_V899PROXYAUTOROTATE899, value).apply()
+
+    var v899publicAutoShare899: Boolean
+        get() = prefs.getBoolean(KEY_V899PUBLICAUTOSHARE899, false)
+        set(value) = prefs.edit().putBoolean(KEY_V899PUBLICAUTOSHARE899, value).apply()
+
+    var v899pullAutoRefresh899: Boolean
+        get() = prefs.getBoolean(KEY_V899PULLAUTOREFRESH899, false)
+        set(value) = prefs.edit().putBoolean(KEY_V899PULLAUTOREFRESH899, value).apply()
+
+    var v899pureAutoMode899: Boolean
+        get() = prefs.getBoolean(KEY_V899PUREAUTOMODE899, false)
+        set(value) = prefs.edit().putBoolean(KEY_V899PUREAUTOMODE899, value).apply()
+
+    var v899pushAutoNotify899: Boolean
+        get() = prefs.getBoolean(KEY_V899PUSHAUTONOTIFY899, false)
+        set(value) = prefs.edit().putBoolean(KEY_V899PUSHAUTONOTIFY899, value).apply()
+
+    var v899queryAutoOptimize899: Boolean
+        get() = prefs.getBoolean(KEY_V899QUERYAUTOOPTIMIZE899, false)
+        set(value) = prefs.edit().putBoolean(KEY_V899QUERYAUTOOPTIMIZE899, value).apply()
+
+    var v899queueAutoPriority899: Int
+        get() = prefs.getInt(KEY_V899QUEUEAUTOPRIORITY899, 0)
+        set(value) = prefs.edit().putInt(KEY_V899QUEUEAUTOPRIORITY899, value).apply()
+
+    var v900projectAutoExport900: Boolean
+        get() = prefs.getBoolean(KEY_V900PROJECTAUTOEXPORT900, false)
+        set(value) = prefs.edit().putBoolean(KEY_V900PROJECTAUTOEXPORT900, value).apply()
+
+    var v900promiseAutoAwait900: Boolean
+        get() = prefs.getBoolean(KEY_V900PROMISEAUTOAWAIT900, false)
+        set(value) = prefs.edit().putBoolean(KEY_V900PROMISEAUTOAWAIT900, value).apply()
+
+    var v900promptAutoShow900: Boolean
+        get() = prefs.getBoolean(KEY_V900PROMPTAUTOSHOW900, false)
+        set(value) = prefs.edit().putBoolean(KEY_V900PROMPTAUTOSHOW900, value).apply()
+
+    var v900propAutoBind900: Boolean
+        get() = prefs.getBoolean(KEY_V900PROPAUTOBIND900, false)
+        set(value) = prefs.edit().putBoolean(KEY_V900PROPAUTOBIND900, value).apply()
+
+    var v900propertyAutoObserve900: Boolean
+        get() = prefs.getBoolean(KEY_V900PROPERTYAUTOOBSERVE900, false)
+        set(value) = prefs.edit().putBoolean(KEY_V900PROPERTYAUTOOBSERVE900, value).apply()
+
+    var v900protectAutoEncrypt900: Boolean
+        get() = prefs.getBoolean(KEY_V900PROTECTAUTOENCRYPT900, false)
+        set(value) = prefs.edit().putBoolean(KEY_V900PROTECTAUTOENCRYPT900, value).apply()
+
+    var v900protocolAutoNegotiate900: Boolean
+        get() = prefs.getBoolean(KEY_V900PROTOCOLAUTONEGOTIATE900, false)
+        set(value) = prefs.edit().putBoolean(KEY_V900PROTOCOLAUTONEGOTIATE900, value).apply()
+
+    var v900provideAutoInject900: Boolean
+        get() = prefs.getBoolean(KEY_V900PROVIDEAUTOINJECT900, false)
+        set(value) = prefs.edit().putBoolean(KEY_V900PROVIDEAUTOINJECT900, value).apply()
+
+    var v900proxyAutoRotate900: Boolean
+        get() = prefs.getBoolean(KEY_V900PROXYAUTOROTATE900, false)
+        set(value) = prefs.edit().putBoolean(KEY_V900PROXYAUTOROTATE900, value).apply()
+
+    var v900publicAutoShare900: Boolean
+        get() = prefs.getBoolean(KEY_V900PUBLICAUTOSHARE900, false)
+        set(value) = prefs.edit().putBoolean(KEY_V900PUBLICAUTOSHARE900, value).apply()
+
+    var v900pullAutoRefresh900: Boolean
+        get() = prefs.getBoolean(KEY_V900PULLAUTOREFRESH900, false)
+        set(value) = prefs.edit().putBoolean(KEY_V900PULLAUTOREFRESH900, value).apply()
+
+    var v900pureAutoMode900: Boolean
+        get() = prefs.getBoolean(KEY_V900PUREAUTOMODE900, false)
+        set(value) = prefs.edit().putBoolean(KEY_V900PUREAUTOMODE900, value).apply()
+
+    var v900pushAutoNotify900: Boolean
+        get() = prefs.getBoolean(KEY_V900PUSHAUTONOTIFY900, false)
+        set(value) = prefs.edit().putBoolean(KEY_V900PUSHAUTONOTIFY900, value).apply()
+
+    var v900queryAutoOptimize900: Boolean
+        get() = prefs.getBoolean(KEY_V900QUERYAUTOOPTIMIZE900, false)
+        set(value) = prefs.edit().putBoolean(KEY_V900QUERYAUTOOPTIMIZE900, value).apply()
+
+    var v900queueAutoPriority900: Int
+        get() = prefs.getInt(KEY_V900QUEUEAUTOPRIORITY900, 0)
+        set(value) = prefs.edit().putInt(KEY_V900QUEUEAUTOPRIORITY900, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -75930,5 +76530,155 @@ class AppPrefs(context: Context) {
         const val KEY_V890PRODUCEAUTOGENERATE890 = "v890produceAutoGenerate890" // v890 Produce Auto Generate890
         const val KEY_V890PROFILEAUTOSWITCH890 = "v890profileAutoSwitch890" // v890 Profile Auto Switch890
         const val KEY_V890PROGRAMAUTOSCHEDULE890 = "v890programAutoSchedule890" // v890 Program Auto Schedule890
+        const val KEY_V891PROJECTAUTOEXPORT891 = "v891projectAutoExport891" // v891 Project Auto Export891
+        const val KEY_V891PROMISEAUTOAWAIT891 = "v891promiseAutoAwait891" // v891 Promise Auto Await891
+        const val KEY_V891PROMPTAUTOSHOW891 = "v891promptAutoShow891" // v891 Prompt Auto Show891
+        const val KEY_V891PROPAUTOBIND891 = "v891propAutoBind891" // v891 Prop Auto Bind891
+        const val KEY_V891PROPERTYAUTOOBSERVE891 = "v891propertyAutoObserve891" // v891 Property Auto Observe891
+        const val KEY_V891PROTECTAUTOENCRYPT891 = "v891protectAutoEncrypt891" // v891 Protect Auto Encrypt891
+        const val KEY_V891PROTOCOLAUTONEGOTIATE891 = "v891protocolAutoNegotiate891" // v891 Protocol Auto Negotiate891
+        const val KEY_V891PROVIDEAUTOINJECT891 = "v891provideAutoInject891" // v891 Provide Auto Inject891
+        const val KEY_V891PROXYAUTOROTATE891 = "v891proxyAutoRotate891" // v891 Proxy Auto Rotate891
+        const val KEY_V891PUBLICAUTOSHARE891 = "v891publicAutoShare891" // v891 Public Auto Share891
+        const val KEY_V891PULLAUTOREFRESH891 = "v891pullAutoRefresh891" // v891 Pull Auto Refresh891
+        const val KEY_V891PUREAUTOMODE891 = "v891pureAutoMode891" // v891 Pure Auto Mode891
+        const val KEY_V891PUSHAUTONOTIFY891 = "v891pushAutoNotify891" // v891 Push Auto Notify891
+        const val KEY_V891QUERYAUTOOPTIMIZE891 = "v891queryAutoOptimize891" // v891 Query Auto Optimize891
+        const val KEY_V891QUEUEAUTOPRIORITY891 = "v891queueAutoPriority891" // v891 Queue Auto Priority891
+        const val KEY_V892PROJECTAUTOEXPORT892 = "v892projectAutoExport892" // v892 Project Auto Export892
+        const val KEY_V892PROMISEAUTOAWAIT892 = "v892promiseAutoAwait892" // v892 Promise Auto Await892
+        const val KEY_V892PROMPTAUTOSHOW892 = "v892promptAutoShow892" // v892 Prompt Auto Show892
+        const val KEY_V892PROPAUTOBIND892 = "v892propAutoBind892" // v892 Prop Auto Bind892
+        const val KEY_V892PROPERTYAUTOOBSERVE892 = "v892propertyAutoObserve892" // v892 Property Auto Observe892
+        const val KEY_V892PROTECTAUTOENCRYPT892 = "v892protectAutoEncrypt892" // v892 Protect Auto Encrypt892
+        const val KEY_V892PROTOCOLAUTONEGOTIATE892 = "v892protocolAutoNegotiate892" // v892 Protocol Auto Negotiate892
+        const val KEY_V892PROVIDEAUTOINJECT892 = "v892provideAutoInject892" // v892 Provide Auto Inject892
+        const val KEY_V892PROXYAUTOROTATE892 = "v892proxyAutoRotate892" // v892 Proxy Auto Rotate892
+        const val KEY_V892PUBLICAUTOSHARE892 = "v892publicAutoShare892" // v892 Public Auto Share892
+        const val KEY_V892PULLAUTOREFRESH892 = "v892pullAutoRefresh892" // v892 Pull Auto Refresh892
+        const val KEY_V892PUREAUTOMODE892 = "v892pureAutoMode892" // v892 Pure Auto Mode892
+        const val KEY_V892PUSHAUTONOTIFY892 = "v892pushAutoNotify892" // v892 Push Auto Notify892
+        const val KEY_V892QUERYAUTOOPTIMIZE892 = "v892queryAutoOptimize892" // v892 Query Auto Optimize892
+        const val KEY_V892QUEUEAUTOPRIORITY892 = "v892queueAutoPriority892" // v892 Queue Auto Priority892
+        const val KEY_V893PROJECTAUTOEXPORT893 = "v893projectAutoExport893" // v893 Project Auto Export893
+        const val KEY_V893PROMISEAUTOAWAIT893 = "v893promiseAutoAwait893" // v893 Promise Auto Await893
+        const val KEY_V893PROMPTAUTOSHOW893 = "v893promptAutoShow893" // v893 Prompt Auto Show893
+        const val KEY_V893PROPAUTOBIND893 = "v893propAutoBind893" // v893 Prop Auto Bind893
+        const val KEY_V893PROPERTYAUTOOBSERVE893 = "v893propertyAutoObserve893" // v893 Property Auto Observe893
+        const val KEY_V893PROTECTAUTOENCRYPT893 = "v893protectAutoEncrypt893" // v893 Protect Auto Encrypt893
+        const val KEY_V893PROTOCOLAUTONEGOTIATE893 = "v893protocolAutoNegotiate893" // v893 Protocol Auto Negotiate893
+        const val KEY_V893PROVIDEAUTOINJECT893 = "v893provideAutoInject893" // v893 Provide Auto Inject893
+        const val KEY_V893PROXYAUTOROTATE893 = "v893proxyAutoRotate893" // v893 Proxy Auto Rotate893
+        const val KEY_V893PUBLICAUTOSHARE893 = "v893publicAutoShare893" // v893 Public Auto Share893
+        const val KEY_V893PULLAUTOREFRESH893 = "v893pullAutoRefresh893" // v893 Pull Auto Refresh893
+        const val KEY_V893PUREAUTOMODE893 = "v893pureAutoMode893" // v893 Pure Auto Mode893
+        const val KEY_V893PUSHAUTONOTIFY893 = "v893pushAutoNotify893" // v893 Push Auto Notify893
+        const val KEY_V893QUERYAUTOOPTIMIZE893 = "v893queryAutoOptimize893" // v893 Query Auto Optimize893
+        const val KEY_V893QUEUEAUTOPRIORITY893 = "v893queueAutoPriority893" // v893 Queue Auto Priority893
+        const val KEY_V894PROJECTAUTOEXPORT894 = "v894projectAutoExport894" // v894 Project Auto Export894
+        const val KEY_V894PROMISEAUTOAWAIT894 = "v894promiseAutoAwait894" // v894 Promise Auto Await894
+        const val KEY_V894PROMPTAUTOSHOW894 = "v894promptAutoShow894" // v894 Prompt Auto Show894
+        const val KEY_V894PROPAUTOBIND894 = "v894propAutoBind894" // v894 Prop Auto Bind894
+        const val KEY_V894PROPERTYAUTOOBSERVE894 = "v894propertyAutoObserve894" // v894 Property Auto Observe894
+        const val KEY_V894PROTECTAUTOENCRYPT894 = "v894protectAutoEncrypt894" // v894 Protect Auto Encrypt894
+        const val KEY_V894PROTOCOLAUTONEGOTIATE894 = "v894protocolAutoNegotiate894" // v894 Protocol Auto Negotiate894
+        const val KEY_V894PROVIDEAUTOINJECT894 = "v894provideAutoInject894" // v894 Provide Auto Inject894
+        const val KEY_V894PROXYAUTOROTATE894 = "v894proxyAutoRotate894" // v894 Proxy Auto Rotate894
+        const val KEY_V894PUBLICAUTOSHARE894 = "v894publicAutoShare894" // v894 Public Auto Share894
+        const val KEY_V894PULLAUTOREFRESH894 = "v894pullAutoRefresh894" // v894 Pull Auto Refresh894
+        const val KEY_V894PUREAUTOMODE894 = "v894pureAutoMode894" // v894 Pure Auto Mode894
+        const val KEY_V894PUSHAUTONOTIFY894 = "v894pushAutoNotify894" // v894 Push Auto Notify894
+        const val KEY_V894QUERYAUTOOPTIMIZE894 = "v894queryAutoOptimize894" // v894 Query Auto Optimize894
+        const val KEY_V894QUEUEAUTOPRIORITY894 = "v894queueAutoPriority894" // v894 Queue Auto Priority894
+        const val KEY_V895PROJECTAUTOEXPORT895 = "v895projectAutoExport895" // v895 Project Auto Export895
+        const val KEY_V895PROMISEAUTOAWAIT895 = "v895promiseAutoAwait895" // v895 Promise Auto Await895
+        const val KEY_V895PROMPTAUTOSHOW895 = "v895promptAutoShow895" // v895 Prompt Auto Show895
+        const val KEY_V895PROPAUTOBIND895 = "v895propAutoBind895" // v895 Prop Auto Bind895
+        const val KEY_V895PROPERTYAUTOOBSERVE895 = "v895propertyAutoObserve895" // v895 Property Auto Observe895
+        const val KEY_V895PROTECTAUTOENCRYPT895 = "v895protectAutoEncrypt895" // v895 Protect Auto Encrypt895
+        const val KEY_V895PROTOCOLAUTONEGOTIATE895 = "v895protocolAutoNegotiate895" // v895 Protocol Auto Negotiate895
+        const val KEY_V895PROVIDEAUTOINJECT895 = "v895provideAutoInject895" // v895 Provide Auto Inject895
+        const val KEY_V895PROXYAUTOROTATE895 = "v895proxyAutoRotate895" // v895 Proxy Auto Rotate895
+        const val KEY_V895PUBLICAUTOSHARE895 = "v895publicAutoShare895" // v895 Public Auto Share895
+        const val KEY_V895PULLAUTOREFRESH895 = "v895pullAutoRefresh895" // v895 Pull Auto Refresh895
+        const val KEY_V895PUREAUTOMODE895 = "v895pureAutoMode895" // v895 Pure Auto Mode895
+        const val KEY_V895PUSHAUTONOTIFY895 = "v895pushAutoNotify895" // v895 Push Auto Notify895
+        const val KEY_V895QUERYAUTOOPTIMIZE895 = "v895queryAutoOptimize895" // v895 Query Auto Optimize895
+        const val KEY_V895QUEUEAUTOPRIORITY895 = "v895queueAutoPriority895" // v895 Queue Auto Priority895
+        const val KEY_V896PROJECTAUTOEXPORT896 = "v896projectAutoExport896" // v896 Project Auto Export896
+        const val KEY_V896PROMISEAUTOAWAIT896 = "v896promiseAutoAwait896" // v896 Promise Auto Await896
+        const val KEY_V896PROMPTAUTOSHOW896 = "v896promptAutoShow896" // v896 Prompt Auto Show896
+        const val KEY_V896PROPAUTOBIND896 = "v896propAutoBind896" // v896 Prop Auto Bind896
+        const val KEY_V896PROPERTYAUTOOBSERVE896 = "v896propertyAutoObserve896" // v896 Property Auto Observe896
+        const val KEY_V896PROTECTAUTOENCRYPT896 = "v896protectAutoEncrypt896" // v896 Protect Auto Encrypt896
+        const val KEY_V896PROTOCOLAUTONEGOTIATE896 = "v896protocolAutoNegotiate896" // v896 Protocol Auto Negotiate896
+        const val KEY_V896PROVIDEAUTOINJECT896 = "v896provideAutoInject896" // v896 Provide Auto Inject896
+        const val KEY_V896PROXYAUTOROTATE896 = "v896proxyAutoRotate896" // v896 Proxy Auto Rotate896
+        const val KEY_V896PUBLICAUTOSHARE896 = "v896publicAutoShare896" // v896 Public Auto Share896
+        const val KEY_V896PULLAUTOREFRESH896 = "v896pullAutoRefresh896" // v896 Pull Auto Refresh896
+        const val KEY_V896PUREAUTOMODE896 = "v896pureAutoMode896" // v896 Pure Auto Mode896
+        const val KEY_V896PUSHAUTONOTIFY896 = "v896pushAutoNotify896" // v896 Push Auto Notify896
+        const val KEY_V896QUERYAUTOOPTIMIZE896 = "v896queryAutoOptimize896" // v896 Query Auto Optimize896
+        const val KEY_V896QUEUEAUTOPRIORITY896 = "v896queueAutoPriority896" // v896 Queue Auto Priority896
+        const val KEY_V897PROJECTAUTOEXPORT897 = "v897projectAutoExport897" // v897 Project Auto Export897
+        const val KEY_V897PROMISEAUTOAWAIT897 = "v897promiseAutoAwait897" // v897 Promise Auto Await897
+        const val KEY_V897PROMPTAUTOSHOW897 = "v897promptAutoShow897" // v897 Prompt Auto Show897
+        const val KEY_V897PROPAUTOBIND897 = "v897propAutoBind897" // v897 Prop Auto Bind897
+        const val KEY_V897PROPERTYAUTOOBSERVE897 = "v897propertyAutoObserve897" // v897 Property Auto Observe897
+        const val KEY_V897PROTECTAUTOENCRYPT897 = "v897protectAutoEncrypt897" // v897 Protect Auto Encrypt897
+        const val KEY_V897PROTOCOLAUTONEGOTIATE897 = "v897protocolAutoNegotiate897" // v897 Protocol Auto Negotiate897
+        const val KEY_V897PROVIDEAUTOINJECT897 = "v897provideAutoInject897" // v897 Provide Auto Inject897
+        const val KEY_V897PROXYAUTOROTATE897 = "v897proxyAutoRotate897" // v897 Proxy Auto Rotate897
+        const val KEY_V897PUBLICAUTOSHARE897 = "v897publicAutoShare897" // v897 Public Auto Share897
+        const val KEY_V897PULLAUTOREFRESH897 = "v897pullAutoRefresh897" // v897 Pull Auto Refresh897
+        const val KEY_V897PUREAUTOMODE897 = "v897pureAutoMode897" // v897 Pure Auto Mode897
+        const val KEY_V897PUSHAUTONOTIFY897 = "v897pushAutoNotify897" // v897 Push Auto Notify897
+        const val KEY_V897QUERYAUTOOPTIMIZE897 = "v897queryAutoOptimize897" // v897 Query Auto Optimize897
+        const val KEY_V897QUEUEAUTOPRIORITY897 = "v897queueAutoPriority897" // v897 Queue Auto Priority897
+        const val KEY_V898PROJECTAUTOEXPORT898 = "v898projectAutoExport898" // v898 Project Auto Export898
+        const val KEY_V898PROMISEAUTOAWAIT898 = "v898promiseAutoAwait898" // v898 Promise Auto Await898
+        const val KEY_V898PROMPTAUTOSHOW898 = "v898promptAutoShow898" // v898 Prompt Auto Show898
+        const val KEY_V898PROPAUTOBIND898 = "v898propAutoBind898" // v898 Prop Auto Bind898
+        const val KEY_V898PROPERTYAUTOOBSERVE898 = "v898propertyAutoObserve898" // v898 Property Auto Observe898
+        const val KEY_V898PROTECTAUTOENCRYPT898 = "v898protectAutoEncrypt898" // v898 Protect Auto Encrypt898
+        const val KEY_V898PROTOCOLAUTONEGOTIATE898 = "v898protocolAutoNegotiate898" // v898 Protocol Auto Negotiate898
+        const val KEY_V898PROVIDEAUTOINJECT898 = "v898provideAutoInject898" // v898 Provide Auto Inject898
+        const val KEY_V898PROXYAUTOROTATE898 = "v898proxyAutoRotate898" // v898 Proxy Auto Rotate898
+        const val KEY_V898PUBLICAUTOSHARE898 = "v898publicAutoShare898" // v898 Public Auto Share898
+        const val KEY_V898PULLAUTOREFRESH898 = "v898pullAutoRefresh898" // v898 Pull Auto Refresh898
+        const val KEY_V898PUREAUTOMODE898 = "v898pureAutoMode898" // v898 Pure Auto Mode898
+        const val KEY_V898PUSHAUTONOTIFY898 = "v898pushAutoNotify898" // v898 Push Auto Notify898
+        const val KEY_V898QUERYAUTOOPTIMIZE898 = "v898queryAutoOptimize898" // v898 Query Auto Optimize898
+        const val KEY_V898QUEUEAUTOPRIORITY898 = "v898queueAutoPriority898" // v898 Queue Auto Priority898
+        const val KEY_V899PROJECTAUTOEXPORT899 = "v899projectAutoExport899" // v899 Project Auto Export899
+        const val KEY_V899PROMISEAUTOAWAIT899 = "v899promiseAutoAwait899" // v899 Promise Auto Await899
+        const val KEY_V899PROMPTAUTOSHOW899 = "v899promptAutoShow899" // v899 Prompt Auto Show899
+        const val KEY_V899PROPAUTOBIND899 = "v899propAutoBind899" // v899 Prop Auto Bind899
+        const val KEY_V899PROPERTYAUTOOBSERVE899 = "v899propertyAutoObserve899" // v899 Property Auto Observe899
+        const val KEY_V899PROTECTAUTOENCRYPT899 = "v899protectAutoEncrypt899" // v899 Protect Auto Encrypt899
+        const val KEY_V899PROTOCOLAUTONEGOTIATE899 = "v899protocolAutoNegotiate899" // v899 Protocol Auto Negotiate899
+        const val KEY_V899PROVIDEAUTOINJECT899 = "v899provideAutoInject899" // v899 Provide Auto Inject899
+        const val KEY_V899PROXYAUTOROTATE899 = "v899proxyAutoRotate899" // v899 Proxy Auto Rotate899
+        const val KEY_V899PUBLICAUTOSHARE899 = "v899publicAutoShare899" // v899 Public Auto Share899
+        const val KEY_V899PULLAUTOREFRESH899 = "v899pullAutoRefresh899" // v899 Pull Auto Refresh899
+        const val KEY_V899PUREAUTOMODE899 = "v899pureAutoMode899" // v899 Pure Auto Mode899
+        const val KEY_V899PUSHAUTONOTIFY899 = "v899pushAutoNotify899" // v899 Push Auto Notify899
+        const val KEY_V899QUERYAUTOOPTIMIZE899 = "v899queryAutoOptimize899" // v899 Query Auto Optimize899
+        const val KEY_V899QUEUEAUTOPRIORITY899 = "v899queueAutoPriority899" // v899 Queue Auto Priority899
+        const val KEY_V900PROJECTAUTOEXPORT900 = "v900projectAutoExport900" // v900 Project Auto Export900
+        const val KEY_V900PROMISEAUTOAWAIT900 = "v900promiseAutoAwait900" // v900 Promise Auto Await900
+        const val KEY_V900PROMPTAUTOSHOW900 = "v900promptAutoShow900" // v900 Prompt Auto Show900
+        const val KEY_V900PROPAUTOBIND900 = "v900propAutoBind900" // v900 Prop Auto Bind900
+        const val KEY_V900PROPERTYAUTOOBSERVE900 = "v900propertyAutoObserve900" // v900 Property Auto Observe900
+        const val KEY_V900PROTECTAUTOENCRYPT900 = "v900protectAutoEncrypt900" // v900 Protect Auto Encrypt900
+        const val KEY_V900PROTOCOLAUTONEGOTIATE900 = "v900protocolAutoNegotiate900" // v900 Protocol Auto Negotiate900
+        const val KEY_V900PROVIDEAUTOINJECT900 = "v900provideAutoInject900" // v900 Provide Auto Inject900
+        const val KEY_V900PROXYAUTOROTATE900 = "v900proxyAutoRotate900" // v900 Proxy Auto Rotate900
+        const val KEY_V900PUBLICAUTOSHARE900 = "v900publicAutoShare900" // v900 Public Auto Share900
+        const val KEY_V900PULLAUTOREFRESH900 = "v900pullAutoRefresh900" // v900 Pull Auto Refresh900
+        const val KEY_V900PUREAUTOMODE900 = "v900pureAutoMode900" // v900 Pure Auto Mode900
+        const val KEY_V900PUSHAUTONOTIFY900 = "v900pushAutoNotify900" // v900 Push Auto Notify900
+        const val KEY_V900QUERYAUTOOPTIMIZE900 = "v900queryAutoOptimize900" // v900 Query Auto Optimize900
+        const val KEY_V900QUEUEAUTOPRIORITY900 = "v900queueAutoPriority900" // v900 Queue Auto Priority900
     }
 }
