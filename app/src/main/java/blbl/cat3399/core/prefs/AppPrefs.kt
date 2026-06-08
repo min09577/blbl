@@ -44048,6 +44048,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V620BEHAVIORAUTOTRACK620, false)
         set(value) = prefs.edit().putBoolean(KEY_V620BEHAVIORAUTOTRACK620, value).apply()
 
+    var v621benchmarkAutoRun621: Boolean
+        get() = prefs.getBoolean(KEY_V621BENCHMARKAUTORUN621, false)
+        set(value) = prefs.edit().putBoolean(KEY_V621BENCHMARKAUTORUN621, value).apply()
+
+    var v621betaAutoUpdate621: Boolean
+        get() = prefs.getBoolean(KEY_V621BETAAUTOUPDATE621, false)
+        set(value) = prefs.edit().putBoolean(KEY_V621BETAAUTOUPDATE621, value).apply()
+
+    var v621binaryAutoDecode621: Boolean
+        get() = prefs.getBoolean(KEY_V621BINARYAUTODECODE621, false)
+        set(value) = prefs.edit().putBoolean(KEY_V621BINARYAUTODECODE621, value).apply()
+
+    var v621blankAutoFill621: Boolean
+        get() = prefs.getBoolean(KEY_V621BLANKAUTOFILL621, false)
+        set(value) = prefs.edit().putBoolean(KEY_V621BLANKAUTOFILL621, value).apply()
+
+    var v621bodyAutoParse621: Boolean
+        get() = prefs.getBoolean(KEY_V621BODYAUTOPARSE621, false)
+        set(value) = prefs.edit().putBoolean(KEY_V621BODYAUTOPARSE621, value).apply()
+
+    var v621boldAutoDetect621: Boolean
+        get() = prefs.getBoolean(KEY_V621BOLDAUTODETECT621, false)
+        set(value) = prefs.edit().putBoolean(KEY_V621BOLDAUTODETECT621, value).apply()
+
+    var v621bootAutoStart621: Boolean
+        get() = prefs.getBoolean(KEY_V621BOOTAUTOSTART621, false)
+        set(value) = prefs.edit().putBoolean(KEY_V621BOOTAUTOSTART621, value).apply()
+
+    var v621borderAutoDraw621: Boolean
+        get() = prefs.getBoolean(KEY_V621BORDERAUTODRAW621, false)
+        set(value) = prefs.edit().putBoolean(KEY_V621BORDERAUTODRAW621, value).apply()
+
+    var v621bottomAutoNav621: Int
+        get() = prefs.getInt(KEY_V621BOTTOMAUTONAV621, 0)
+        set(value) = prefs.edit().putInt(KEY_V621BOTTOMAUTONAV621, value).apply()
+
+    var v621bounceAutoEffect621: Boolean
+        get() = prefs.getBoolean(KEY_V621BOUNCEAUTOEFFECT621, false)
+        set(value) = prefs.edit().putBoolean(KEY_V621BOUNCEAUTOEFFECT621, value).apply()
+
+    var v621boxAutoShadow621: Boolean
+        get() = prefs.getBoolean(KEY_V621BOXAUTOSHADOW621, false)
+        set(value) = prefs.edit().putBoolean(KEY_V621BOXAUTOSHADOW621, value).apply()
+
+    var v621branchAutoMerge621: Boolean
+        get() = prefs.getBoolean(KEY_V621BRANCHAUTOMERGE621, false)
+        set(value) = prefs.edit().putBoolean(KEY_V621BRANCHAUTOMERGE621, value).apply()
+
+    var v621brandAutoLogo621: Boolean
+        get() = prefs.getBoolean(KEY_V621BRANDAUTOLOGO621, false)
+        set(value) = prefs.edit().putBoolean(KEY_V621BRANDAUTOLOGO621, value).apply()
+
+    var v621breakAutoResume621: Boolean
+        get() = prefs.getBoolean(KEY_V621BREAKAUTORESUME621, false)
+        set(value) = prefs.edit().putBoolean(KEY_V621BREAKAUTORESUME621, value).apply()
+
+    var v621bridgeAutoConnect621: Boolean
+        get() = prefs.getBoolean(KEY_V621BRIDGEAUTOCONNECT621, false)
+        set(value) = prefs.edit().putBoolean(KEY_V621BRIDGEAUTOCONNECT621, value).apply()
+
+    var v622benchmarkAutoRun622: Boolean
+        get() = prefs.getBoolean(KEY_V622BENCHMARKAUTORUN622, false)
+        set(value) = prefs.edit().putBoolean(KEY_V622BENCHMARKAUTORUN622, value).apply()
+
+    var v622betaAutoUpdate622: Boolean
+        get() = prefs.getBoolean(KEY_V622BETAAUTOUPDATE622, false)
+        set(value) = prefs.edit().putBoolean(KEY_V622BETAAUTOUPDATE622, value).apply()
+
+    var v622binaryAutoDecode622: Boolean
+        get() = prefs.getBoolean(KEY_V622BINARYAUTODECODE622, false)
+        set(value) = prefs.edit().putBoolean(KEY_V622BINARYAUTODECODE622, value).apply()
+
+    var v622blankAutoFill622: Boolean
+        get() = prefs.getBoolean(KEY_V622BLANKAUTOFILL622, false)
+        set(value) = prefs.edit().putBoolean(KEY_V622BLANKAUTOFILL622, value).apply()
+
+    var v622bodyAutoParse622: Boolean
+        get() = prefs.getBoolean(KEY_V622BODYAUTOPARSE622, false)
+        set(value) = prefs.edit().putBoolean(KEY_V622BODYAUTOPARSE622, value).apply()
+
+    var v622boldAutoDetect622: Boolean
+        get() = prefs.getBoolean(KEY_V622BOLDAUTODETECT622, false)
+        set(value) = prefs.edit().putBoolean(KEY_V622BOLDAUTODETECT622, value).apply()
+
+    var v622bootAutoStart622: Boolean
+        get() = prefs.getBoolean(KEY_V622BOOTAUTOSTART622, false)
+        set(value) = prefs.edit().putBoolean(KEY_V622BOOTAUTOSTART622, value).apply()
+
+    var v622borderAutoDraw622: Boolean
+        get() = prefs.getBoolean(KEY_V622BORDERAUTODRAW622, false)
+        set(value) = prefs.edit().putBoolean(KEY_V622BORDERAUTODRAW622, value).apply()
+
+    var v622bottomAutoNav622: Int
+        get() = prefs.getInt(KEY_V622BOTTOMAUTONAV622, 0)
+        set(value) = prefs.edit().putInt(KEY_V622BOTTOMAUTONAV622, value).apply()
+
+    var v622bounceAutoEffect622: Boolean
+        get() = prefs.getBoolean(KEY_V622BOUNCEAUTOEFFECT622, false)
+        set(value) = prefs.edit().putBoolean(KEY_V622BOUNCEAUTOEFFECT622, value).apply()
+
+    var v622boxAutoShadow622: Boolean
+        get() = prefs.getBoolean(KEY_V622BOXAUTOSHADOW622, false)
+        set(value) = prefs.edit().putBoolean(KEY_V622BOXAUTOSHADOW622, value).apply()
+
+    var v622branchAutoMerge622: Boolean
+        get() = prefs.getBoolean(KEY_V622BRANCHAUTOMERGE622, false)
+        set(value) = prefs.edit().putBoolean(KEY_V622BRANCHAUTOMERGE622, value).apply()
+
+    var v622brandAutoLogo622: Boolean
+        get() = prefs.getBoolean(KEY_V622BRANDAUTOLOGO622, false)
+        set(value) = prefs.edit().putBoolean(KEY_V622BRANDAUTOLOGO622, value).apply()
+
+    var v622breakAutoResume622: Boolean
+        get() = prefs.getBoolean(KEY_V622BREAKAUTORESUME622, false)
+        set(value) = prefs.edit().putBoolean(KEY_V622BREAKAUTORESUME622, value).apply()
+
+    var v622bridgeAutoConnect622: Boolean
+        get() = prefs.getBoolean(KEY_V622BRIDGEAUTOCONNECT622, false)
+        set(value) = prefs.edit().putBoolean(KEY_V622BRIDGEAUTOCONNECT622, value).apply()
+
+    var v623benchmarkAutoRun623: Boolean
+        get() = prefs.getBoolean(KEY_V623BENCHMARKAUTORUN623, false)
+        set(value) = prefs.edit().putBoolean(KEY_V623BENCHMARKAUTORUN623, value).apply()
+
+    var v623betaAutoUpdate623: Boolean
+        get() = prefs.getBoolean(KEY_V623BETAAUTOUPDATE623, false)
+        set(value) = prefs.edit().putBoolean(KEY_V623BETAAUTOUPDATE623, value).apply()
+
+    var v623binaryAutoDecode623: Boolean
+        get() = prefs.getBoolean(KEY_V623BINARYAUTODECODE623, false)
+        set(value) = prefs.edit().putBoolean(KEY_V623BINARYAUTODECODE623, value).apply()
+
+    var v623blankAutoFill623: Boolean
+        get() = prefs.getBoolean(KEY_V623BLANKAUTOFILL623, false)
+        set(value) = prefs.edit().putBoolean(KEY_V623BLANKAUTOFILL623, value).apply()
+
+    var v623bodyAutoParse623: Boolean
+        get() = prefs.getBoolean(KEY_V623BODYAUTOPARSE623, false)
+        set(value) = prefs.edit().putBoolean(KEY_V623BODYAUTOPARSE623, value).apply()
+
+    var v623boldAutoDetect623: Boolean
+        get() = prefs.getBoolean(KEY_V623BOLDAUTODETECT623, false)
+        set(value) = prefs.edit().putBoolean(KEY_V623BOLDAUTODETECT623, value).apply()
+
+    var v623bootAutoStart623: Boolean
+        get() = prefs.getBoolean(KEY_V623BOOTAUTOSTART623, false)
+        set(value) = prefs.edit().putBoolean(KEY_V623BOOTAUTOSTART623, value).apply()
+
+    var v623borderAutoDraw623: Boolean
+        get() = prefs.getBoolean(KEY_V623BORDERAUTODRAW623, false)
+        set(value) = prefs.edit().putBoolean(KEY_V623BORDERAUTODRAW623, value).apply()
+
+    var v623bottomAutoNav623: Int
+        get() = prefs.getInt(KEY_V623BOTTOMAUTONAV623, 0)
+        set(value) = prefs.edit().putInt(KEY_V623BOTTOMAUTONAV623, value).apply()
+
+    var v623bounceAutoEffect623: Boolean
+        get() = prefs.getBoolean(KEY_V623BOUNCEAUTOEFFECT623, false)
+        set(value) = prefs.edit().putBoolean(KEY_V623BOUNCEAUTOEFFECT623, value).apply()
+
+    var v623boxAutoShadow623: Boolean
+        get() = prefs.getBoolean(KEY_V623BOXAUTOSHADOW623, false)
+        set(value) = prefs.edit().putBoolean(KEY_V623BOXAUTOSHADOW623, value).apply()
+
+    var v623branchAutoMerge623: Boolean
+        get() = prefs.getBoolean(KEY_V623BRANCHAUTOMERGE623, false)
+        set(value) = prefs.edit().putBoolean(KEY_V623BRANCHAUTOMERGE623, value).apply()
+
+    var v623brandAutoLogo623: Boolean
+        get() = prefs.getBoolean(KEY_V623BRANDAUTOLOGO623, false)
+        set(value) = prefs.edit().putBoolean(KEY_V623BRANDAUTOLOGO623, value).apply()
+
+    var v623breakAutoResume623: Boolean
+        get() = prefs.getBoolean(KEY_V623BREAKAUTORESUME623, false)
+        set(value) = prefs.edit().putBoolean(KEY_V623BREAKAUTORESUME623, value).apply()
+
+    var v623bridgeAutoConnect623: Boolean
+        get() = prefs.getBoolean(KEY_V623BRIDGEAUTOCONNECT623, false)
+        set(value) = prefs.edit().putBoolean(KEY_V623BRIDGEAUTOCONNECT623, value).apply()
+
+    var v624benchmarkAutoRun624: Boolean
+        get() = prefs.getBoolean(KEY_V624BENCHMARKAUTORUN624, false)
+        set(value) = prefs.edit().putBoolean(KEY_V624BENCHMARKAUTORUN624, value).apply()
+
+    var v624betaAutoUpdate624: Boolean
+        get() = prefs.getBoolean(KEY_V624BETAAUTOUPDATE624, false)
+        set(value) = prefs.edit().putBoolean(KEY_V624BETAAUTOUPDATE624, value).apply()
+
+    var v624binaryAutoDecode624: Boolean
+        get() = prefs.getBoolean(KEY_V624BINARYAUTODECODE624, false)
+        set(value) = prefs.edit().putBoolean(KEY_V624BINARYAUTODECODE624, value).apply()
+
+    var v624blankAutoFill624: Boolean
+        get() = prefs.getBoolean(KEY_V624BLANKAUTOFILL624, false)
+        set(value) = prefs.edit().putBoolean(KEY_V624BLANKAUTOFILL624, value).apply()
+
+    var v624bodyAutoParse624: Boolean
+        get() = prefs.getBoolean(KEY_V624BODYAUTOPARSE624, false)
+        set(value) = prefs.edit().putBoolean(KEY_V624BODYAUTOPARSE624, value).apply()
+
+    var v624boldAutoDetect624: Boolean
+        get() = prefs.getBoolean(KEY_V624BOLDAUTODETECT624, false)
+        set(value) = prefs.edit().putBoolean(KEY_V624BOLDAUTODETECT624, value).apply()
+
+    var v624bootAutoStart624: Boolean
+        get() = prefs.getBoolean(KEY_V624BOOTAUTOSTART624, false)
+        set(value) = prefs.edit().putBoolean(KEY_V624BOOTAUTOSTART624, value).apply()
+
+    var v624borderAutoDraw624: Boolean
+        get() = prefs.getBoolean(KEY_V624BORDERAUTODRAW624, false)
+        set(value) = prefs.edit().putBoolean(KEY_V624BORDERAUTODRAW624, value).apply()
+
+    var v624bottomAutoNav624: Int
+        get() = prefs.getInt(KEY_V624BOTTOMAUTONAV624, 0)
+        set(value) = prefs.edit().putInt(KEY_V624BOTTOMAUTONAV624, value).apply()
+
+    var v624bounceAutoEffect624: Boolean
+        get() = prefs.getBoolean(KEY_V624BOUNCEAUTOEFFECT624, false)
+        set(value) = prefs.edit().putBoolean(KEY_V624BOUNCEAUTOEFFECT624, value).apply()
+
+    var v624boxAutoShadow624: Boolean
+        get() = prefs.getBoolean(KEY_V624BOXAUTOSHADOW624, false)
+        set(value) = prefs.edit().putBoolean(KEY_V624BOXAUTOSHADOW624, value).apply()
+
+    var v624branchAutoMerge624: Boolean
+        get() = prefs.getBoolean(KEY_V624BRANCHAUTOMERGE624, false)
+        set(value) = prefs.edit().putBoolean(KEY_V624BRANCHAUTOMERGE624, value).apply()
+
+    var v624brandAutoLogo624: Boolean
+        get() = prefs.getBoolean(KEY_V624BRANDAUTOLOGO624, false)
+        set(value) = prefs.edit().putBoolean(KEY_V624BRANDAUTOLOGO624, value).apply()
+
+    var v624breakAutoResume624: Boolean
+        get() = prefs.getBoolean(KEY_V624BREAKAUTORESUME624, false)
+        set(value) = prefs.edit().putBoolean(KEY_V624BREAKAUTORESUME624, value).apply()
+
+    var v624bridgeAutoConnect624: Boolean
+        get() = prefs.getBoolean(KEY_V624BRIDGEAUTOCONNECT624, false)
+        set(value) = prefs.edit().putBoolean(KEY_V624BRIDGEAUTOCONNECT624, value).apply()
+
+    var v625benchmarkAutoRun625: Boolean
+        get() = prefs.getBoolean(KEY_V625BENCHMARKAUTORUN625, false)
+        set(value) = prefs.edit().putBoolean(KEY_V625BENCHMARKAUTORUN625, value).apply()
+
+    var v625betaAutoUpdate625: Boolean
+        get() = prefs.getBoolean(KEY_V625BETAAUTOUPDATE625, false)
+        set(value) = prefs.edit().putBoolean(KEY_V625BETAAUTOUPDATE625, value).apply()
+
+    var v625binaryAutoDecode625: Boolean
+        get() = prefs.getBoolean(KEY_V625BINARYAUTODECODE625, false)
+        set(value) = prefs.edit().putBoolean(KEY_V625BINARYAUTODECODE625, value).apply()
+
+    var v625blankAutoFill625: Boolean
+        get() = prefs.getBoolean(KEY_V625BLANKAUTOFILL625, false)
+        set(value) = prefs.edit().putBoolean(KEY_V625BLANKAUTOFILL625, value).apply()
+
+    var v625bodyAutoParse625: Boolean
+        get() = prefs.getBoolean(KEY_V625BODYAUTOPARSE625, false)
+        set(value) = prefs.edit().putBoolean(KEY_V625BODYAUTOPARSE625, value).apply()
+
+    var v625boldAutoDetect625: Boolean
+        get() = prefs.getBoolean(KEY_V625BOLDAUTODETECT625, false)
+        set(value) = prefs.edit().putBoolean(KEY_V625BOLDAUTODETECT625, value).apply()
+
+    var v625bootAutoStart625: Boolean
+        get() = prefs.getBoolean(KEY_V625BOOTAUTOSTART625, false)
+        set(value) = prefs.edit().putBoolean(KEY_V625BOOTAUTOSTART625, value).apply()
+
+    var v625borderAutoDraw625: Boolean
+        get() = prefs.getBoolean(KEY_V625BORDERAUTODRAW625, false)
+        set(value) = prefs.edit().putBoolean(KEY_V625BORDERAUTODRAW625, value).apply()
+
+    var v625bottomAutoNav625: Int
+        get() = prefs.getInt(KEY_V625BOTTOMAUTONAV625, 0)
+        set(value) = prefs.edit().putInt(KEY_V625BOTTOMAUTONAV625, value).apply()
+
+    var v625bounceAutoEffect625: Boolean
+        get() = prefs.getBoolean(KEY_V625BOUNCEAUTOEFFECT625, false)
+        set(value) = prefs.edit().putBoolean(KEY_V625BOUNCEAUTOEFFECT625, value).apply()
+
+    var v625boxAutoShadow625: Boolean
+        get() = prefs.getBoolean(KEY_V625BOXAUTOSHADOW625, false)
+        set(value) = prefs.edit().putBoolean(KEY_V625BOXAUTOSHADOW625, value).apply()
+
+    var v625branchAutoMerge625: Boolean
+        get() = prefs.getBoolean(KEY_V625BRANCHAUTOMERGE625, false)
+        set(value) = prefs.edit().putBoolean(KEY_V625BRANCHAUTOMERGE625, value).apply()
+
+    var v625brandAutoLogo625: Boolean
+        get() = prefs.getBoolean(KEY_V625BRANDAUTOLOGO625, false)
+        set(value) = prefs.edit().putBoolean(KEY_V625BRANDAUTOLOGO625, value).apply()
+
+    var v625breakAutoResume625: Boolean
+        get() = prefs.getBoolean(KEY_V625BREAKAUTORESUME625, false)
+        set(value) = prefs.edit().putBoolean(KEY_V625BREAKAUTORESUME625, value).apply()
+
+    var v625bridgeAutoConnect625: Boolean
+        get() = prefs.getBoolean(KEY_V625BRIDGEAUTOCONNECT625, false)
+        set(value) = prefs.edit().putBoolean(KEY_V625BRIDGEAUTOCONNECT625, value).apply()
+
+    var v626benchmarkAutoRun626: Boolean
+        get() = prefs.getBoolean(KEY_V626BENCHMARKAUTORUN626, false)
+        set(value) = prefs.edit().putBoolean(KEY_V626BENCHMARKAUTORUN626, value).apply()
+
+    var v626betaAutoUpdate626: Boolean
+        get() = prefs.getBoolean(KEY_V626BETAAUTOUPDATE626, false)
+        set(value) = prefs.edit().putBoolean(KEY_V626BETAAUTOUPDATE626, value).apply()
+
+    var v626binaryAutoDecode626: Boolean
+        get() = prefs.getBoolean(KEY_V626BINARYAUTODECODE626, false)
+        set(value) = prefs.edit().putBoolean(KEY_V626BINARYAUTODECODE626, value).apply()
+
+    var v626blankAutoFill626: Boolean
+        get() = prefs.getBoolean(KEY_V626BLANKAUTOFILL626, false)
+        set(value) = prefs.edit().putBoolean(KEY_V626BLANKAUTOFILL626, value).apply()
+
+    var v626bodyAutoParse626: Boolean
+        get() = prefs.getBoolean(KEY_V626BODYAUTOPARSE626, false)
+        set(value) = prefs.edit().putBoolean(KEY_V626BODYAUTOPARSE626, value).apply()
+
+    var v626boldAutoDetect626: Boolean
+        get() = prefs.getBoolean(KEY_V626BOLDAUTODETECT626, false)
+        set(value) = prefs.edit().putBoolean(KEY_V626BOLDAUTODETECT626, value).apply()
+
+    var v626bootAutoStart626: Boolean
+        get() = prefs.getBoolean(KEY_V626BOOTAUTOSTART626, false)
+        set(value) = prefs.edit().putBoolean(KEY_V626BOOTAUTOSTART626, value).apply()
+
+    var v626borderAutoDraw626: Boolean
+        get() = prefs.getBoolean(KEY_V626BORDERAUTODRAW626, false)
+        set(value) = prefs.edit().putBoolean(KEY_V626BORDERAUTODRAW626, value).apply()
+
+    var v626bottomAutoNav626: Int
+        get() = prefs.getInt(KEY_V626BOTTOMAUTONAV626, 0)
+        set(value) = prefs.edit().putInt(KEY_V626BOTTOMAUTONAV626, value).apply()
+
+    var v626bounceAutoEffect626: Boolean
+        get() = prefs.getBoolean(KEY_V626BOUNCEAUTOEFFECT626, false)
+        set(value) = prefs.edit().putBoolean(KEY_V626BOUNCEAUTOEFFECT626, value).apply()
+
+    var v626boxAutoShadow626: Boolean
+        get() = prefs.getBoolean(KEY_V626BOXAUTOSHADOW626, false)
+        set(value) = prefs.edit().putBoolean(KEY_V626BOXAUTOSHADOW626, value).apply()
+
+    var v626branchAutoMerge626: Boolean
+        get() = prefs.getBoolean(KEY_V626BRANCHAUTOMERGE626, false)
+        set(value) = prefs.edit().putBoolean(KEY_V626BRANCHAUTOMERGE626, value).apply()
+
+    var v626brandAutoLogo626: Boolean
+        get() = prefs.getBoolean(KEY_V626BRANDAUTOLOGO626, false)
+        set(value) = prefs.edit().putBoolean(KEY_V626BRANDAUTOLOGO626, value).apply()
+
+    var v626breakAutoResume626: Boolean
+        get() = prefs.getBoolean(KEY_V626BREAKAUTORESUME626, false)
+        set(value) = prefs.edit().putBoolean(KEY_V626BREAKAUTORESUME626, value).apply()
+
+    var v626bridgeAutoConnect626: Boolean
+        get() = prefs.getBoolean(KEY_V626BRIDGEAUTOCONNECT626, false)
+        set(value) = prefs.edit().putBoolean(KEY_V626BRIDGEAUTOCONNECT626, value).apply()
+
+    var v627benchmarkAutoRun627: Boolean
+        get() = prefs.getBoolean(KEY_V627BENCHMARKAUTORUN627, false)
+        set(value) = prefs.edit().putBoolean(KEY_V627BENCHMARKAUTORUN627, value).apply()
+
+    var v627betaAutoUpdate627: Boolean
+        get() = prefs.getBoolean(KEY_V627BETAAUTOUPDATE627, false)
+        set(value) = prefs.edit().putBoolean(KEY_V627BETAAUTOUPDATE627, value).apply()
+
+    var v627binaryAutoDecode627: Boolean
+        get() = prefs.getBoolean(KEY_V627BINARYAUTODECODE627, false)
+        set(value) = prefs.edit().putBoolean(KEY_V627BINARYAUTODECODE627, value).apply()
+
+    var v627blankAutoFill627: Boolean
+        get() = prefs.getBoolean(KEY_V627BLANKAUTOFILL627, false)
+        set(value) = prefs.edit().putBoolean(KEY_V627BLANKAUTOFILL627, value).apply()
+
+    var v627bodyAutoParse627: Boolean
+        get() = prefs.getBoolean(KEY_V627BODYAUTOPARSE627, false)
+        set(value) = prefs.edit().putBoolean(KEY_V627BODYAUTOPARSE627, value).apply()
+
+    var v627boldAutoDetect627: Boolean
+        get() = prefs.getBoolean(KEY_V627BOLDAUTODETECT627, false)
+        set(value) = prefs.edit().putBoolean(KEY_V627BOLDAUTODETECT627, value).apply()
+
+    var v627bootAutoStart627: Boolean
+        get() = prefs.getBoolean(KEY_V627BOOTAUTOSTART627, false)
+        set(value) = prefs.edit().putBoolean(KEY_V627BOOTAUTOSTART627, value).apply()
+
+    var v627borderAutoDraw627: Boolean
+        get() = prefs.getBoolean(KEY_V627BORDERAUTODRAW627, false)
+        set(value) = prefs.edit().putBoolean(KEY_V627BORDERAUTODRAW627, value).apply()
+
+    var v627bottomAutoNav627: Int
+        get() = prefs.getInt(KEY_V627BOTTOMAUTONAV627, 0)
+        set(value) = prefs.edit().putInt(KEY_V627BOTTOMAUTONAV627, value).apply()
+
+    var v627bounceAutoEffect627: Boolean
+        get() = prefs.getBoolean(KEY_V627BOUNCEAUTOEFFECT627, false)
+        set(value) = prefs.edit().putBoolean(KEY_V627BOUNCEAUTOEFFECT627, value).apply()
+
+    var v627boxAutoShadow627: Boolean
+        get() = prefs.getBoolean(KEY_V627BOXAUTOSHADOW627, false)
+        set(value) = prefs.edit().putBoolean(KEY_V627BOXAUTOSHADOW627, value).apply()
+
+    var v627branchAutoMerge627: Boolean
+        get() = prefs.getBoolean(KEY_V627BRANCHAUTOMERGE627, false)
+        set(value) = prefs.edit().putBoolean(KEY_V627BRANCHAUTOMERGE627, value).apply()
+
+    var v627brandAutoLogo627: Boolean
+        get() = prefs.getBoolean(KEY_V627BRANDAUTOLOGO627, false)
+        set(value) = prefs.edit().putBoolean(KEY_V627BRANDAUTOLOGO627, value).apply()
+
+    var v627breakAutoResume627: Boolean
+        get() = prefs.getBoolean(KEY_V627BREAKAUTORESUME627, false)
+        set(value) = prefs.edit().putBoolean(KEY_V627BREAKAUTORESUME627, value).apply()
+
+    var v627bridgeAutoConnect627: Boolean
+        get() = prefs.getBoolean(KEY_V627BRIDGEAUTOCONNECT627, false)
+        set(value) = prefs.edit().putBoolean(KEY_V627BRIDGEAUTOCONNECT627, value).apply()
+
+    var v628benchmarkAutoRun628: Boolean
+        get() = prefs.getBoolean(KEY_V628BENCHMARKAUTORUN628, false)
+        set(value) = prefs.edit().putBoolean(KEY_V628BENCHMARKAUTORUN628, value).apply()
+
+    var v628betaAutoUpdate628: Boolean
+        get() = prefs.getBoolean(KEY_V628BETAAUTOUPDATE628, false)
+        set(value) = prefs.edit().putBoolean(KEY_V628BETAAUTOUPDATE628, value).apply()
+
+    var v628binaryAutoDecode628: Boolean
+        get() = prefs.getBoolean(KEY_V628BINARYAUTODECODE628, false)
+        set(value) = prefs.edit().putBoolean(KEY_V628BINARYAUTODECODE628, value).apply()
+
+    var v628blankAutoFill628: Boolean
+        get() = prefs.getBoolean(KEY_V628BLANKAUTOFILL628, false)
+        set(value) = prefs.edit().putBoolean(KEY_V628BLANKAUTOFILL628, value).apply()
+
+    var v628bodyAutoParse628: Boolean
+        get() = prefs.getBoolean(KEY_V628BODYAUTOPARSE628, false)
+        set(value) = prefs.edit().putBoolean(KEY_V628BODYAUTOPARSE628, value).apply()
+
+    var v628boldAutoDetect628: Boolean
+        get() = prefs.getBoolean(KEY_V628BOLDAUTODETECT628, false)
+        set(value) = prefs.edit().putBoolean(KEY_V628BOLDAUTODETECT628, value).apply()
+
+    var v628bootAutoStart628: Boolean
+        get() = prefs.getBoolean(KEY_V628BOOTAUTOSTART628, false)
+        set(value) = prefs.edit().putBoolean(KEY_V628BOOTAUTOSTART628, value).apply()
+
+    var v628borderAutoDraw628: Boolean
+        get() = prefs.getBoolean(KEY_V628BORDERAUTODRAW628, false)
+        set(value) = prefs.edit().putBoolean(KEY_V628BORDERAUTODRAW628, value).apply()
+
+    var v628bottomAutoNav628: Int
+        get() = prefs.getInt(KEY_V628BOTTOMAUTONAV628, 0)
+        set(value) = prefs.edit().putInt(KEY_V628BOTTOMAUTONAV628, value).apply()
+
+    var v628bounceAutoEffect628: Boolean
+        get() = prefs.getBoolean(KEY_V628BOUNCEAUTOEFFECT628, false)
+        set(value) = prefs.edit().putBoolean(KEY_V628BOUNCEAUTOEFFECT628, value).apply()
+
+    var v628boxAutoShadow628: Boolean
+        get() = prefs.getBoolean(KEY_V628BOXAUTOSHADOW628, false)
+        set(value) = prefs.edit().putBoolean(KEY_V628BOXAUTOSHADOW628, value).apply()
+
+    var v628branchAutoMerge628: Boolean
+        get() = prefs.getBoolean(KEY_V628BRANCHAUTOMERGE628, false)
+        set(value) = prefs.edit().putBoolean(KEY_V628BRANCHAUTOMERGE628, value).apply()
+
+    var v628brandAutoLogo628: Boolean
+        get() = prefs.getBoolean(KEY_V628BRANDAUTOLOGO628, false)
+        set(value) = prefs.edit().putBoolean(KEY_V628BRANDAUTOLOGO628, value).apply()
+
+    var v628breakAutoResume628: Boolean
+        get() = prefs.getBoolean(KEY_V628BREAKAUTORESUME628, false)
+        set(value) = prefs.edit().putBoolean(KEY_V628BREAKAUTORESUME628, value).apply()
+
+    var v628bridgeAutoConnect628: Boolean
+        get() = prefs.getBoolean(KEY_V628BRIDGEAUTOCONNECT628, false)
+        set(value) = prefs.edit().putBoolean(KEY_V628BRIDGEAUTOCONNECT628, value).apply()
+
+    var v629benchmarkAutoRun629: Boolean
+        get() = prefs.getBoolean(KEY_V629BENCHMARKAUTORUN629, false)
+        set(value) = prefs.edit().putBoolean(KEY_V629BENCHMARKAUTORUN629, value).apply()
+
+    var v629betaAutoUpdate629: Boolean
+        get() = prefs.getBoolean(KEY_V629BETAAUTOUPDATE629, false)
+        set(value) = prefs.edit().putBoolean(KEY_V629BETAAUTOUPDATE629, value).apply()
+
+    var v629binaryAutoDecode629: Boolean
+        get() = prefs.getBoolean(KEY_V629BINARYAUTODECODE629, false)
+        set(value) = prefs.edit().putBoolean(KEY_V629BINARYAUTODECODE629, value).apply()
+
+    var v629blankAutoFill629: Boolean
+        get() = prefs.getBoolean(KEY_V629BLANKAUTOFILL629, false)
+        set(value) = prefs.edit().putBoolean(KEY_V629BLANKAUTOFILL629, value).apply()
+
+    var v629bodyAutoParse629: Boolean
+        get() = prefs.getBoolean(KEY_V629BODYAUTOPARSE629, false)
+        set(value) = prefs.edit().putBoolean(KEY_V629BODYAUTOPARSE629, value).apply()
+
+    var v629boldAutoDetect629: Boolean
+        get() = prefs.getBoolean(KEY_V629BOLDAUTODETECT629, false)
+        set(value) = prefs.edit().putBoolean(KEY_V629BOLDAUTODETECT629, value).apply()
+
+    var v629bootAutoStart629: Boolean
+        get() = prefs.getBoolean(KEY_V629BOOTAUTOSTART629, false)
+        set(value) = prefs.edit().putBoolean(KEY_V629BOOTAUTOSTART629, value).apply()
+
+    var v629borderAutoDraw629: Boolean
+        get() = prefs.getBoolean(KEY_V629BORDERAUTODRAW629, false)
+        set(value) = prefs.edit().putBoolean(KEY_V629BORDERAUTODRAW629, value).apply()
+
+    var v629bottomAutoNav629: Int
+        get() = prefs.getInt(KEY_V629BOTTOMAUTONAV629, 0)
+        set(value) = prefs.edit().putInt(KEY_V629BOTTOMAUTONAV629, value).apply()
+
+    var v629bounceAutoEffect629: Boolean
+        get() = prefs.getBoolean(KEY_V629BOUNCEAUTOEFFECT629, false)
+        set(value) = prefs.edit().putBoolean(KEY_V629BOUNCEAUTOEFFECT629, value).apply()
+
+    var v629boxAutoShadow629: Boolean
+        get() = prefs.getBoolean(KEY_V629BOXAUTOSHADOW629, false)
+        set(value) = prefs.edit().putBoolean(KEY_V629BOXAUTOSHADOW629, value).apply()
+
+    var v629branchAutoMerge629: Boolean
+        get() = prefs.getBoolean(KEY_V629BRANCHAUTOMERGE629, false)
+        set(value) = prefs.edit().putBoolean(KEY_V629BRANCHAUTOMERGE629, value).apply()
+
+    var v629brandAutoLogo629: Boolean
+        get() = prefs.getBoolean(KEY_V629BRANDAUTOLOGO629, false)
+        set(value) = prefs.edit().putBoolean(KEY_V629BRANDAUTOLOGO629, value).apply()
+
+    var v629breakAutoResume629: Boolean
+        get() = prefs.getBoolean(KEY_V629BREAKAUTORESUME629, false)
+        set(value) = prefs.edit().putBoolean(KEY_V629BREAKAUTORESUME629, value).apply()
+
+    var v629bridgeAutoConnect629: Boolean
+        get() = prefs.getBoolean(KEY_V629BRIDGEAUTOCONNECT629, false)
+        set(value) = prefs.edit().putBoolean(KEY_V629BRIDGEAUTOCONNECT629, value).apply()
+
+    var v630benchmarkAutoRun630: Boolean
+        get() = prefs.getBoolean(KEY_V630BENCHMARKAUTORUN630, false)
+        set(value) = prefs.edit().putBoolean(KEY_V630BENCHMARKAUTORUN630, value).apply()
+
+    var v630betaAutoUpdate630: Boolean
+        get() = prefs.getBoolean(KEY_V630BETAAUTOUPDATE630, false)
+        set(value) = prefs.edit().putBoolean(KEY_V630BETAAUTOUPDATE630, value).apply()
+
+    var v630binaryAutoDecode630: Boolean
+        get() = prefs.getBoolean(KEY_V630BINARYAUTODECODE630, false)
+        set(value) = prefs.edit().putBoolean(KEY_V630BINARYAUTODECODE630, value).apply()
+
+    var v630blankAutoFill630: Boolean
+        get() = prefs.getBoolean(KEY_V630BLANKAUTOFILL630, false)
+        set(value) = prefs.edit().putBoolean(KEY_V630BLANKAUTOFILL630, value).apply()
+
+    var v630bodyAutoParse630: Boolean
+        get() = prefs.getBoolean(KEY_V630BODYAUTOPARSE630, false)
+        set(value) = prefs.edit().putBoolean(KEY_V630BODYAUTOPARSE630, value).apply()
+
+    var v630boldAutoDetect630: Boolean
+        get() = prefs.getBoolean(KEY_V630BOLDAUTODETECT630, false)
+        set(value) = prefs.edit().putBoolean(KEY_V630BOLDAUTODETECT630, value).apply()
+
+    var v630bootAutoStart630: Boolean
+        get() = prefs.getBoolean(KEY_V630BOOTAUTOSTART630, false)
+        set(value) = prefs.edit().putBoolean(KEY_V630BOOTAUTOSTART630, value).apply()
+
+    var v630borderAutoDraw630: Boolean
+        get() = prefs.getBoolean(KEY_V630BORDERAUTODRAW630, false)
+        set(value) = prefs.edit().putBoolean(KEY_V630BORDERAUTODRAW630, value).apply()
+
+    var v630bottomAutoNav630: Int
+        get() = prefs.getInt(KEY_V630BOTTOMAUTONAV630, 0)
+        set(value) = prefs.edit().putInt(KEY_V630BOTTOMAUTONAV630, value).apply()
+
+    var v630bounceAutoEffect630: Boolean
+        get() = prefs.getBoolean(KEY_V630BOUNCEAUTOEFFECT630, false)
+        set(value) = prefs.edit().putBoolean(KEY_V630BOUNCEAUTOEFFECT630, value).apply()
+
+    var v630boxAutoShadow630: Boolean
+        get() = prefs.getBoolean(KEY_V630BOXAUTOSHADOW630, false)
+        set(value) = prefs.edit().putBoolean(KEY_V630BOXAUTOSHADOW630, value).apply()
+
+    var v630branchAutoMerge630: Boolean
+        get() = prefs.getBoolean(KEY_V630BRANCHAUTOMERGE630, false)
+        set(value) = prefs.edit().putBoolean(KEY_V630BRANCHAUTOMERGE630, value).apply()
+
+    var v630brandAutoLogo630: Boolean
+        get() = prefs.getBoolean(KEY_V630BRANDAUTOLOGO630, false)
+        set(value) = prefs.edit().putBoolean(KEY_V630BRANDAUTOLOGO630, value).apply()
+
+    var v630breakAutoResume630: Boolean
+        get() = prefs.getBoolean(KEY_V630BREAKAUTORESUME630, false)
+        set(value) = prefs.edit().putBoolean(KEY_V630BREAKAUTORESUME630, value).apply()
+
+    var v630bridgeAutoConnect630: Boolean
+        get() = prefs.getBoolean(KEY_V630BRIDGEAUTOCONNECT630, false)
+        set(value) = prefs.edit().putBoolean(KEY_V630BRIDGEAUTOCONNECT630, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -55930,5 +56530,155 @@ class AppPrefs(context: Context) {
         const val KEY_V620BEFOREAUTOHOOK620 = "v620beforeAutoHook620" // v620 Before Auto Hook620
         const val KEY_V620BEGINAUTOINIT620 = "v620beginAutoInit620" // v620 Begin Auto Init620
         const val KEY_V620BEHAVIORAUTOTRACK620 = "v620behaviorAutoTrack620" // v620 Behavior Auto Track620
+        const val KEY_V621BENCHMARKAUTORUN621 = "v621benchmarkAutoRun621" // v621 Benchmark Auto Run621
+        const val KEY_V621BETAAUTOUPDATE621 = "v621betaAutoUpdate621" // v621 Beta Auto Update621
+        const val KEY_V621BINARYAUTODECODE621 = "v621binaryAutoDecode621" // v621 Binary Auto Decode621
+        const val KEY_V621BLANKAUTOFILL621 = "v621blankAutoFill621" // v621 Blank Auto Fill621
+        const val KEY_V621BODYAUTOPARSE621 = "v621bodyAutoParse621" // v621 Body Auto Parse621
+        const val KEY_V621BOLDAUTODETECT621 = "v621boldAutoDetect621" // v621 Bold Auto Detect621
+        const val KEY_V621BOOTAUTOSTART621 = "v621bootAutoStart621" // v621 Boot Auto Start621
+        const val KEY_V621BORDERAUTODRAW621 = "v621borderAutoDraw621" // v621 Border Auto Draw621
+        const val KEY_V621BOTTOMAUTONAV621 = "v621bottomAutoNav621" // v621 Bottom Auto Nav621
+        const val KEY_V621BOUNCEAUTOEFFECT621 = "v621bounceAutoEffect621" // v621 Bounce Auto Effect621
+        const val KEY_V621BOXAUTOSHADOW621 = "v621boxAutoShadow621" // v621 Box Auto Shadow621
+        const val KEY_V621BRANCHAUTOMERGE621 = "v621branchAutoMerge621" // v621 Branch Auto Merge621
+        const val KEY_V621BRANDAUTOLOGO621 = "v621brandAutoLogo621" // v621 Brand Auto Logo621
+        const val KEY_V621BREAKAUTORESUME621 = "v621breakAutoResume621" // v621 Break Auto Resume621
+        const val KEY_V621BRIDGEAUTOCONNECT621 = "v621bridgeAutoConnect621" // v621 Bridge Auto Connect621
+        const val KEY_V622BENCHMARKAUTORUN622 = "v622benchmarkAutoRun622" // v622 Benchmark Auto Run622
+        const val KEY_V622BETAAUTOUPDATE622 = "v622betaAutoUpdate622" // v622 Beta Auto Update622
+        const val KEY_V622BINARYAUTODECODE622 = "v622binaryAutoDecode622" // v622 Binary Auto Decode622
+        const val KEY_V622BLANKAUTOFILL622 = "v622blankAutoFill622" // v622 Blank Auto Fill622
+        const val KEY_V622BODYAUTOPARSE622 = "v622bodyAutoParse622" // v622 Body Auto Parse622
+        const val KEY_V622BOLDAUTODETECT622 = "v622boldAutoDetect622" // v622 Bold Auto Detect622
+        const val KEY_V622BOOTAUTOSTART622 = "v622bootAutoStart622" // v622 Boot Auto Start622
+        const val KEY_V622BORDERAUTODRAW622 = "v622borderAutoDraw622" // v622 Border Auto Draw622
+        const val KEY_V622BOTTOMAUTONAV622 = "v622bottomAutoNav622" // v622 Bottom Auto Nav622
+        const val KEY_V622BOUNCEAUTOEFFECT622 = "v622bounceAutoEffect622" // v622 Bounce Auto Effect622
+        const val KEY_V622BOXAUTOSHADOW622 = "v622boxAutoShadow622" // v622 Box Auto Shadow622
+        const val KEY_V622BRANCHAUTOMERGE622 = "v622branchAutoMerge622" // v622 Branch Auto Merge622
+        const val KEY_V622BRANDAUTOLOGO622 = "v622brandAutoLogo622" // v622 Brand Auto Logo622
+        const val KEY_V622BREAKAUTORESUME622 = "v622breakAutoResume622" // v622 Break Auto Resume622
+        const val KEY_V622BRIDGEAUTOCONNECT622 = "v622bridgeAutoConnect622" // v622 Bridge Auto Connect622
+        const val KEY_V623BENCHMARKAUTORUN623 = "v623benchmarkAutoRun623" // v623 Benchmark Auto Run623
+        const val KEY_V623BETAAUTOUPDATE623 = "v623betaAutoUpdate623" // v623 Beta Auto Update623
+        const val KEY_V623BINARYAUTODECODE623 = "v623binaryAutoDecode623" // v623 Binary Auto Decode623
+        const val KEY_V623BLANKAUTOFILL623 = "v623blankAutoFill623" // v623 Blank Auto Fill623
+        const val KEY_V623BODYAUTOPARSE623 = "v623bodyAutoParse623" // v623 Body Auto Parse623
+        const val KEY_V623BOLDAUTODETECT623 = "v623boldAutoDetect623" // v623 Bold Auto Detect623
+        const val KEY_V623BOOTAUTOSTART623 = "v623bootAutoStart623" // v623 Boot Auto Start623
+        const val KEY_V623BORDERAUTODRAW623 = "v623borderAutoDraw623" // v623 Border Auto Draw623
+        const val KEY_V623BOTTOMAUTONAV623 = "v623bottomAutoNav623" // v623 Bottom Auto Nav623
+        const val KEY_V623BOUNCEAUTOEFFECT623 = "v623bounceAutoEffect623" // v623 Bounce Auto Effect623
+        const val KEY_V623BOXAUTOSHADOW623 = "v623boxAutoShadow623" // v623 Box Auto Shadow623
+        const val KEY_V623BRANCHAUTOMERGE623 = "v623branchAutoMerge623" // v623 Branch Auto Merge623
+        const val KEY_V623BRANDAUTOLOGO623 = "v623brandAutoLogo623" // v623 Brand Auto Logo623
+        const val KEY_V623BREAKAUTORESUME623 = "v623breakAutoResume623" // v623 Break Auto Resume623
+        const val KEY_V623BRIDGEAUTOCONNECT623 = "v623bridgeAutoConnect623" // v623 Bridge Auto Connect623
+        const val KEY_V624BENCHMARKAUTORUN624 = "v624benchmarkAutoRun624" // v624 Benchmark Auto Run624
+        const val KEY_V624BETAAUTOUPDATE624 = "v624betaAutoUpdate624" // v624 Beta Auto Update624
+        const val KEY_V624BINARYAUTODECODE624 = "v624binaryAutoDecode624" // v624 Binary Auto Decode624
+        const val KEY_V624BLANKAUTOFILL624 = "v624blankAutoFill624" // v624 Blank Auto Fill624
+        const val KEY_V624BODYAUTOPARSE624 = "v624bodyAutoParse624" // v624 Body Auto Parse624
+        const val KEY_V624BOLDAUTODETECT624 = "v624boldAutoDetect624" // v624 Bold Auto Detect624
+        const val KEY_V624BOOTAUTOSTART624 = "v624bootAutoStart624" // v624 Boot Auto Start624
+        const val KEY_V624BORDERAUTODRAW624 = "v624borderAutoDraw624" // v624 Border Auto Draw624
+        const val KEY_V624BOTTOMAUTONAV624 = "v624bottomAutoNav624" // v624 Bottom Auto Nav624
+        const val KEY_V624BOUNCEAUTOEFFECT624 = "v624bounceAutoEffect624" // v624 Bounce Auto Effect624
+        const val KEY_V624BOXAUTOSHADOW624 = "v624boxAutoShadow624" // v624 Box Auto Shadow624
+        const val KEY_V624BRANCHAUTOMERGE624 = "v624branchAutoMerge624" // v624 Branch Auto Merge624
+        const val KEY_V624BRANDAUTOLOGO624 = "v624brandAutoLogo624" // v624 Brand Auto Logo624
+        const val KEY_V624BREAKAUTORESUME624 = "v624breakAutoResume624" // v624 Break Auto Resume624
+        const val KEY_V624BRIDGEAUTOCONNECT624 = "v624bridgeAutoConnect624" // v624 Bridge Auto Connect624
+        const val KEY_V625BENCHMARKAUTORUN625 = "v625benchmarkAutoRun625" // v625 Benchmark Auto Run625
+        const val KEY_V625BETAAUTOUPDATE625 = "v625betaAutoUpdate625" // v625 Beta Auto Update625
+        const val KEY_V625BINARYAUTODECODE625 = "v625binaryAutoDecode625" // v625 Binary Auto Decode625
+        const val KEY_V625BLANKAUTOFILL625 = "v625blankAutoFill625" // v625 Blank Auto Fill625
+        const val KEY_V625BODYAUTOPARSE625 = "v625bodyAutoParse625" // v625 Body Auto Parse625
+        const val KEY_V625BOLDAUTODETECT625 = "v625boldAutoDetect625" // v625 Bold Auto Detect625
+        const val KEY_V625BOOTAUTOSTART625 = "v625bootAutoStart625" // v625 Boot Auto Start625
+        const val KEY_V625BORDERAUTODRAW625 = "v625borderAutoDraw625" // v625 Border Auto Draw625
+        const val KEY_V625BOTTOMAUTONAV625 = "v625bottomAutoNav625" // v625 Bottom Auto Nav625
+        const val KEY_V625BOUNCEAUTOEFFECT625 = "v625bounceAutoEffect625" // v625 Bounce Auto Effect625
+        const val KEY_V625BOXAUTOSHADOW625 = "v625boxAutoShadow625" // v625 Box Auto Shadow625
+        const val KEY_V625BRANCHAUTOMERGE625 = "v625branchAutoMerge625" // v625 Branch Auto Merge625
+        const val KEY_V625BRANDAUTOLOGO625 = "v625brandAutoLogo625" // v625 Brand Auto Logo625
+        const val KEY_V625BREAKAUTORESUME625 = "v625breakAutoResume625" // v625 Break Auto Resume625
+        const val KEY_V625BRIDGEAUTOCONNECT625 = "v625bridgeAutoConnect625" // v625 Bridge Auto Connect625
+        const val KEY_V626BENCHMARKAUTORUN626 = "v626benchmarkAutoRun626" // v626 Benchmark Auto Run626
+        const val KEY_V626BETAAUTOUPDATE626 = "v626betaAutoUpdate626" // v626 Beta Auto Update626
+        const val KEY_V626BINARYAUTODECODE626 = "v626binaryAutoDecode626" // v626 Binary Auto Decode626
+        const val KEY_V626BLANKAUTOFILL626 = "v626blankAutoFill626" // v626 Blank Auto Fill626
+        const val KEY_V626BODYAUTOPARSE626 = "v626bodyAutoParse626" // v626 Body Auto Parse626
+        const val KEY_V626BOLDAUTODETECT626 = "v626boldAutoDetect626" // v626 Bold Auto Detect626
+        const val KEY_V626BOOTAUTOSTART626 = "v626bootAutoStart626" // v626 Boot Auto Start626
+        const val KEY_V626BORDERAUTODRAW626 = "v626borderAutoDraw626" // v626 Border Auto Draw626
+        const val KEY_V626BOTTOMAUTONAV626 = "v626bottomAutoNav626" // v626 Bottom Auto Nav626
+        const val KEY_V626BOUNCEAUTOEFFECT626 = "v626bounceAutoEffect626" // v626 Bounce Auto Effect626
+        const val KEY_V626BOXAUTOSHADOW626 = "v626boxAutoShadow626" // v626 Box Auto Shadow626
+        const val KEY_V626BRANCHAUTOMERGE626 = "v626branchAutoMerge626" // v626 Branch Auto Merge626
+        const val KEY_V626BRANDAUTOLOGO626 = "v626brandAutoLogo626" // v626 Brand Auto Logo626
+        const val KEY_V626BREAKAUTORESUME626 = "v626breakAutoResume626" // v626 Break Auto Resume626
+        const val KEY_V626BRIDGEAUTOCONNECT626 = "v626bridgeAutoConnect626" // v626 Bridge Auto Connect626
+        const val KEY_V627BENCHMARKAUTORUN627 = "v627benchmarkAutoRun627" // v627 Benchmark Auto Run627
+        const val KEY_V627BETAAUTOUPDATE627 = "v627betaAutoUpdate627" // v627 Beta Auto Update627
+        const val KEY_V627BINARYAUTODECODE627 = "v627binaryAutoDecode627" // v627 Binary Auto Decode627
+        const val KEY_V627BLANKAUTOFILL627 = "v627blankAutoFill627" // v627 Blank Auto Fill627
+        const val KEY_V627BODYAUTOPARSE627 = "v627bodyAutoParse627" // v627 Body Auto Parse627
+        const val KEY_V627BOLDAUTODETECT627 = "v627boldAutoDetect627" // v627 Bold Auto Detect627
+        const val KEY_V627BOOTAUTOSTART627 = "v627bootAutoStart627" // v627 Boot Auto Start627
+        const val KEY_V627BORDERAUTODRAW627 = "v627borderAutoDraw627" // v627 Border Auto Draw627
+        const val KEY_V627BOTTOMAUTONAV627 = "v627bottomAutoNav627" // v627 Bottom Auto Nav627
+        const val KEY_V627BOUNCEAUTOEFFECT627 = "v627bounceAutoEffect627" // v627 Bounce Auto Effect627
+        const val KEY_V627BOXAUTOSHADOW627 = "v627boxAutoShadow627" // v627 Box Auto Shadow627
+        const val KEY_V627BRANCHAUTOMERGE627 = "v627branchAutoMerge627" // v627 Branch Auto Merge627
+        const val KEY_V627BRANDAUTOLOGO627 = "v627brandAutoLogo627" // v627 Brand Auto Logo627
+        const val KEY_V627BREAKAUTORESUME627 = "v627breakAutoResume627" // v627 Break Auto Resume627
+        const val KEY_V627BRIDGEAUTOCONNECT627 = "v627bridgeAutoConnect627" // v627 Bridge Auto Connect627
+        const val KEY_V628BENCHMARKAUTORUN628 = "v628benchmarkAutoRun628" // v628 Benchmark Auto Run628
+        const val KEY_V628BETAAUTOUPDATE628 = "v628betaAutoUpdate628" // v628 Beta Auto Update628
+        const val KEY_V628BINARYAUTODECODE628 = "v628binaryAutoDecode628" // v628 Binary Auto Decode628
+        const val KEY_V628BLANKAUTOFILL628 = "v628blankAutoFill628" // v628 Blank Auto Fill628
+        const val KEY_V628BODYAUTOPARSE628 = "v628bodyAutoParse628" // v628 Body Auto Parse628
+        const val KEY_V628BOLDAUTODETECT628 = "v628boldAutoDetect628" // v628 Bold Auto Detect628
+        const val KEY_V628BOOTAUTOSTART628 = "v628bootAutoStart628" // v628 Boot Auto Start628
+        const val KEY_V628BORDERAUTODRAW628 = "v628borderAutoDraw628" // v628 Border Auto Draw628
+        const val KEY_V628BOTTOMAUTONAV628 = "v628bottomAutoNav628" // v628 Bottom Auto Nav628
+        const val KEY_V628BOUNCEAUTOEFFECT628 = "v628bounceAutoEffect628" // v628 Bounce Auto Effect628
+        const val KEY_V628BOXAUTOSHADOW628 = "v628boxAutoShadow628" // v628 Box Auto Shadow628
+        const val KEY_V628BRANCHAUTOMERGE628 = "v628branchAutoMerge628" // v628 Branch Auto Merge628
+        const val KEY_V628BRANDAUTOLOGO628 = "v628brandAutoLogo628" // v628 Brand Auto Logo628
+        const val KEY_V628BREAKAUTORESUME628 = "v628breakAutoResume628" // v628 Break Auto Resume628
+        const val KEY_V628BRIDGEAUTOCONNECT628 = "v628bridgeAutoConnect628" // v628 Bridge Auto Connect628
+        const val KEY_V629BENCHMARKAUTORUN629 = "v629benchmarkAutoRun629" // v629 Benchmark Auto Run629
+        const val KEY_V629BETAAUTOUPDATE629 = "v629betaAutoUpdate629" // v629 Beta Auto Update629
+        const val KEY_V629BINARYAUTODECODE629 = "v629binaryAutoDecode629" // v629 Binary Auto Decode629
+        const val KEY_V629BLANKAUTOFILL629 = "v629blankAutoFill629" // v629 Blank Auto Fill629
+        const val KEY_V629BODYAUTOPARSE629 = "v629bodyAutoParse629" // v629 Body Auto Parse629
+        const val KEY_V629BOLDAUTODETECT629 = "v629boldAutoDetect629" // v629 Bold Auto Detect629
+        const val KEY_V629BOOTAUTOSTART629 = "v629bootAutoStart629" // v629 Boot Auto Start629
+        const val KEY_V629BORDERAUTODRAW629 = "v629borderAutoDraw629" // v629 Border Auto Draw629
+        const val KEY_V629BOTTOMAUTONAV629 = "v629bottomAutoNav629" // v629 Bottom Auto Nav629
+        const val KEY_V629BOUNCEAUTOEFFECT629 = "v629bounceAutoEffect629" // v629 Bounce Auto Effect629
+        const val KEY_V629BOXAUTOSHADOW629 = "v629boxAutoShadow629" // v629 Box Auto Shadow629
+        const val KEY_V629BRANCHAUTOMERGE629 = "v629branchAutoMerge629" // v629 Branch Auto Merge629
+        const val KEY_V629BRANDAUTOLOGO629 = "v629brandAutoLogo629" // v629 Brand Auto Logo629
+        const val KEY_V629BREAKAUTORESUME629 = "v629breakAutoResume629" // v629 Break Auto Resume629
+        const val KEY_V629BRIDGEAUTOCONNECT629 = "v629bridgeAutoConnect629" // v629 Bridge Auto Connect629
+        const val KEY_V630BENCHMARKAUTORUN630 = "v630benchmarkAutoRun630" // v630 Benchmark Auto Run630
+        const val KEY_V630BETAAUTOUPDATE630 = "v630betaAutoUpdate630" // v630 Beta Auto Update630
+        const val KEY_V630BINARYAUTODECODE630 = "v630binaryAutoDecode630" // v630 Binary Auto Decode630
+        const val KEY_V630BLANKAUTOFILL630 = "v630blankAutoFill630" // v630 Blank Auto Fill630
+        const val KEY_V630BODYAUTOPARSE630 = "v630bodyAutoParse630" // v630 Body Auto Parse630
+        const val KEY_V630BOLDAUTODETECT630 = "v630boldAutoDetect630" // v630 Bold Auto Detect630
+        const val KEY_V630BOOTAUTOSTART630 = "v630bootAutoStart630" // v630 Boot Auto Start630
+        const val KEY_V630BORDERAUTODRAW630 = "v630borderAutoDraw630" // v630 Border Auto Draw630
+        const val KEY_V630BOTTOMAUTONAV630 = "v630bottomAutoNav630" // v630 Bottom Auto Nav630
+        const val KEY_V630BOUNCEAUTOEFFECT630 = "v630bounceAutoEffect630" // v630 Bounce Auto Effect630
+        const val KEY_V630BOXAUTOSHADOW630 = "v630boxAutoShadow630" // v630 Box Auto Shadow630
+        const val KEY_V630BRANCHAUTOMERGE630 = "v630branchAutoMerge630" // v630 Branch Auto Merge630
+        const val KEY_V630BRANDAUTOLOGO630 = "v630brandAutoLogo630" // v630 Brand Auto Logo630
+        const val KEY_V630BREAKAUTORESUME630 = "v630breakAutoResume630" // v630 Break Auto Resume630
+        const val KEY_V630BRIDGEAUTOCONNECT630 = "v630bridgeAutoConnect630" // v630 Bridge Auto Connect630
     }
 }

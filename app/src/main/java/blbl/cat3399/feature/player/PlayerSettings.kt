@@ -91455,3 +91455,1133 @@ internal fun PlayerActivity.showV620BehaviorAutoTrack620Toggle() {
     AppToast.show(this, "Behavior Auto Track620: ${if (!current) "ON" else "OFF"}")
 }
 
+// v621: Benchmark Auto Run621
+internal fun PlayerActivity.showV621BenchmarkAutoRun621Toggle() {
+    val current = BiliClient.prefs.v621benchmarkAutoRun621
+    BiliClient.prefs.v621benchmarkAutoRun621 = !current
+    AppToast.show(this, "Benchmark Auto Run621: ${if (!current) "ON" else "OFF"}")
+}
+
+// v621: Beta Auto Update621
+internal fun PlayerActivity.showV621BetaAutoUpdate621Toggle() {
+    val current = BiliClient.prefs.v621betaAutoUpdate621
+    BiliClient.prefs.v621betaAutoUpdate621 = !current
+    AppToast.show(this, "Beta Auto Update621: ${if (!current) "ON" else "OFF"}")
+}
+
+// v621: Binary Auto Decode621
+internal fun PlayerActivity.showV621BinaryAutoDecode621Toggle() {
+    val current = BiliClient.prefs.v621binaryAutoDecode621
+    BiliClient.prefs.v621binaryAutoDecode621 = !current
+    AppToast.show(this, "Binary Auto Decode621: ${if (!current) "ON" else "OFF"}")
+}
+
+// v621: Blank Auto Fill621
+internal fun PlayerActivity.showV621BlankAutoFill621Toggle() {
+    val current = BiliClient.prefs.v621blankAutoFill621
+    BiliClient.prefs.v621blankAutoFill621 = !current
+    AppToast.show(this, "Blank Auto Fill621: ${if (!current) "ON" else "OFF"}")
+}
+
+// v621: Body Auto Parse621
+internal fun PlayerActivity.showV621BodyAutoParse621Toggle() {
+    val current = BiliClient.prefs.v621bodyAutoParse621
+    BiliClient.prefs.v621bodyAutoParse621 = !current
+    AppToast.show(this, "Body Auto Parse621: ${if (!current) "ON" else "OFF"}")
+}
+
+// v621: Bold Auto Detect621
+internal fun PlayerActivity.showV621BoldAutoDetect621Toggle() {
+    val current = BiliClient.prefs.v621boldAutoDetect621
+    BiliClient.prefs.v621boldAutoDetect621 = !current
+    AppToast.show(this, "Bold Auto Detect621: ${if (!current) "ON" else "OFF"}")
+}
+
+// v621: Boot Auto Start621
+internal fun PlayerActivity.showV621BootAutoStart621Toggle() {
+    val current = BiliClient.prefs.v621bootAutoStart621
+    BiliClient.prefs.v621bootAutoStart621 = !current
+    AppToast.show(this, "Boot Auto Start621: ${if (!current) "ON" else "OFF"}")
+}
+
+// v621: Border Auto Draw621
+internal fun PlayerActivity.showV621BorderAutoDraw621Toggle() {
+    val current = BiliClient.prefs.v621borderAutoDraw621
+    BiliClient.prefs.v621borderAutoDraw621 = !current
+    AppToast.show(this, "Border Auto Draw621: ${if (!current) "ON" else "OFF"}")
+}
+
+// v621: Bottom Auto Nav621
+internal fun PlayerActivity.showV621BottomAutoNav621Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v621bottomAutoNav621).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Bottom Auto Nav621",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v621bottomAutoNav621 = value
+        AppToast.show(this, "Bottom Auto Nav621: $value")
+    }
+}
+
+// v621: Bounce Auto Effect621
+internal fun PlayerActivity.showV621BounceAutoEffect621Toggle() {
+    val current = BiliClient.prefs.v621bounceAutoEffect621
+    BiliClient.prefs.v621bounceAutoEffect621 = !current
+    AppToast.show(this, "Bounce Auto Effect621: ${if (!current) "ON" else "OFF"}")
+}
+
+// v621: Box Auto Shadow621
+internal fun PlayerActivity.showV621BoxAutoShadow621Toggle() {
+    val current = BiliClient.prefs.v621boxAutoShadow621
+    BiliClient.prefs.v621boxAutoShadow621 = !current
+    AppToast.show(this, "Box Auto Shadow621: ${if (!current) "ON" else "OFF"}")
+}
+
+// v621: Branch Auto Merge621
+internal fun PlayerActivity.showV621BranchAutoMerge621Toggle() {
+    val current = BiliClient.prefs.v621branchAutoMerge621
+    BiliClient.prefs.v621branchAutoMerge621 = !current
+    AppToast.show(this, "Branch Auto Merge621: ${if (!current) "ON" else "OFF"}")
+}
+
+// v621: Brand Auto Logo621
+internal fun PlayerActivity.showV621BrandAutoLogo621Toggle() {
+    val current = BiliClient.prefs.v621brandAutoLogo621
+    BiliClient.prefs.v621brandAutoLogo621 = !current
+    AppToast.show(this, "Brand Auto Logo621: ${if (!current) "ON" else "OFF"}")
+}
+
+// v621: Break Auto Resume621
+internal fun PlayerActivity.showV621BreakAutoResume621Toggle() {
+    val current = BiliClient.prefs.v621breakAutoResume621
+    BiliClient.prefs.v621breakAutoResume621 = !current
+    AppToast.show(this, "Break Auto Resume621: ${if (!current) "ON" else "OFF"}")
+}
+
+// v621: Bridge Auto Connect621
+internal fun PlayerActivity.showV621BridgeAutoConnect621Toggle() {
+    val current = BiliClient.prefs.v621bridgeAutoConnect621
+    BiliClient.prefs.v621bridgeAutoConnect621 = !current
+    AppToast.show(this, "Bridge Auto Connect621: ${if (!current) "ON" else "OFF"}")
+}
+
+// v622: Benchmark Auto Run622
+internal fun PlayerActivity.showV622BenchmarkAutoRun622Toggle() {
+    val current = BiliClient.prefs.v622benchmarkAutoRun622
+    BiliClient.prefs.v622benchmarkAutoRun622 = !current
+    AppToast.show(this, "Benchmark Auto Run622: ${if (!current) "ON" else "OFF"}")
+}
+
+// v622: Beta Auto Update622
+internal fun PlayerActivity.showV622BetaAutoUpdate622Toggle() {
+    val current = BiliClient.prefs.v622betaAutoUpdate622
+    BiliClient.prefs.v622betaAutoUpdate622 = !current
+    AppToast.show(this, "Beta Auto Update622: ${if (!current) "ON" else "OFF"}")
+}
+
+// v622: Binary Auto Decode622
+internal fun PlayerActivity.showV622BinaryAutoDecode622Toggle() {
+    val current = BiliClient.prefs.v622binaryAutoDecode622
+    BiliClient.prefs.v622binaryAutoDecode622 = !current
+    AppToast.show(this, "Binary Auto Decode622: ${if (!current) "ON" else "OFF"}")
+}
+
+// v622: Blank Auto Fill622
+internal fun PlayerActivity.showV622BlankAutoFill622Toggle() {
+    val current = BiliClient.prefs.v622blankAutoFill622
+    BiliClient.prefs.v622blankAutoFill622 = !current
+    AppToast.show(this, "Blank Auto Fill622: ${if (!current) "ON" else "OFF"}")
+}
+
+// v622: Body Auto Parse622
+internal fun PlayerActivity.showV622BodyAutoParse622Toggle() {
+    val current = BiliClient.prefs.v622bodyAutoParse622
+    BiliClient.prefs.v622bodyAutoParse622 = !current
+    AppToast.show(this, "Body Auto Parse622: ${if (!current) "ON" else "OFF"}")
+}
+
+// v622: Bold Auto Detect622
+internal fun PlayerActivity.showV622BoldAutoDetect622Toggle() {
+    val current = BiliClient.prefs.v622boldAutoDetect622
+    BiliClient.prefs.v622boldAutoDetect622 = !current
+    AppToast.show(this, "Bold Auto Detect622: ${if (!current) "ON" else "OFF"}")
+}
+
+// v622: Boot Auto Start622
+internal fun PlayerActivity.showV622BootAutoStart622Toggle() {
+    val current = BiliClient.prefs.v622bootAutoStart622
+    BiliClient.prefs.v622bootAutoStart622 = !current
+    AppToast.show(this, "Boot Auto Start622: ${if (!current) "ON" else "OFF"}")
+}
+
+// v622: Border Auto Draw622
+internal fun PlayerActivity.showV622BorderAutoDraw622Toggle() {
+    val current = BiliClient.prefs.v622borderAutoDraw622
+    BiliClient.prefs.v622borderAutoDraw622 = !current
+    AppToast.show(this, "Border Auto Draw622: ${if (!current) "ON" else "OFF"}")
+}
+
+// v622: Bottom Auto Nav622
+internal fun PlayerActivity.showV622BottomAutoNav622Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v622bottomAutoNav622).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Bottom Auto Nav622",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v622bottomAutoNav622 = value
+        AppToast.show(this, "Bottom Auto Nav622: $value")
+    }
+}
+
+// v622: Bounce Auto Effect622
+internal fun PlayerActivity.showV622BounceAutoEffect622Toggle() {
+    val current = BiliClient.prefs.v622bounceAutoEffect622
+    BiliClient.prefs.v622bounceAutoEffect622 = !current
+    AppToast.show(this, "Bounce Auto Effect622: ${if (!current) "ON" else "OFF"}")
+}
+
+// v622: Box Auto Shadow622
+internal fun PlayerActivity.showV622BoxAutoShadow622Toggle() {
+    val current = BiliClient.prefs.v622boxAutoShadow622
+    BiliClient.prefs.v622boxAutoShadow622 = !current
+    AppToast.show(this, "Box Auto Shadow622: ${if (!current) "ON" else "OFF"}")
+}
+
+// v622: Branch Auto Merge622
+internal fun PlayerActivity.showV622BranchAutoMerge622Toggle() {
+    val current = BiliClient.prefs.v622branchAutoMerge622
+    BiliClient.prefs.v622branchAutoMerge622 = !current
+    AppToast.show(this, "Branch Auto Merge622: ${if (!current) "ON" else "OFF"}")
+}
+
+// v622: Brand Auto Logo622
+internal fun PlayerActivity.showV622BrandAutoLogo622Toggle() {
+    val current = BiliClient.prefs.v622brandAutoLogo622
+    BiliClient.prefs.v622brandAutoLogo622 = !current
+    AppToast.show(this, "Brand Auto Logo622: ${if (!current) "ON" else "OFF"}")
+}
+
+// v622: Break Auto Resume622
+internal fun PlayerActivity.showV622BreakAutoResume622Toggle() {
+    val current = BiliClient.prefs.v622breakAutoResume622
+    BiliClient.prefs.v622breakAutoResume622 = !current
+    AppToast.show(this, "Break Auto Resume622: ${if (!current) "ON" else "OFF"}")
+}
+
+// v622: Bridge Auto Connect622
+internal fun PlayerActivity.showV622BridgeAutoConnect622Toggle() {
+    val current = BiliClient.prefs.v622bridgeAutoConnect622
+    BiliClient.prefs.v622bridgeAutoConnect622 = !current
+    AppToast.show(this, "Bridge Auto Connect622: ${if (!current) "ON" else "OFF"}")
+}
+
+// v623: Benchmark Auto Run623
+internal fun PlayerActivity.showV623BenchmarkAutoRun623Toggle() {
+    val current = BiliClient.prefs.v623benchmarkAutoRun623
+    BiliClient.prefs.v623benchmarkAutoRun623 = !current
+    AppToast.show(this, "Benchmark Auto Run623: ${if (!current) "ON" else "OFF"}")
+}
+
+// v623: Beta Auto Update623
+internal fun PlayerActivity.showV623BetaAutoUpdate623Toggle() {
+    val current = BiliClient.prefs.v623betaAutoUpdate623
+    BiliClient.prefs.v623betaAutoUpdate623 = !current
+    AppToast.show(this, "Beta Auto Update623: ${if (!current) "ON" else "OFF"}")
+}
+
+// v623: Binary Auto Decode623
+internal fun PlayerActivity.showV623BinaryAutoDecode623Toggle() {
+    val current = BiliClient.prefs.v623binaryAutoDecode623
+    BiliClient.prefs.v623binaryAutoDecode623 = !current
+    AppToast.show(this, "Binary Auto Decode623: ${if (!current) "ON" else "OFF"}")
+}
+
+// v623: Blank Auto Fill623
+internal fun PlayerActivity.showV623BlankAutoFill623Toggle() {
+    val current = BiliClient.prefs.v623blankAutoFill623
+    BiliClient.prefs.v623blankAutoFill623 = !current
+    AppToast.show(this, "Blank Auto Fill623: ${if (!current) "ON" else "OFF"}")
+}
+
+// v623: Body Auto Parse623
+internal fun PlayerActivity.showV623BodyAutoParse623Toggle() {
+    val current = BiliClient.prefs.v623bodyAutoParse623
+    BiliClient.prefs.v623bodyAutoParse623 = !current
+    AppToast.show(this, "Body Auto Parse623: ${if (!current) "ON" else "OFF"}")
+}
+
+// v623: Bold Auto Detect623
+internal fun PlayerActivity.showV623BoldAutoDetect623Toggle() {
+    val current = BiliClient.prefs.v623boldAutoDetect623
+    BiliClient.prefs.v623boldAutoDetect623 = !current
+    AppToast.show(this, "Bold Auto Detect623: ${if (!current) "ON" else "OFF"}")
+}
+
+// v623: Boot Auto Start623
+internal fun PlayerActivity.showV623BootAutoStart623Toggle() {
+    val current = BiliClient.prefs.v623bootAutoStart623
+    BiliClient.prefs.v623bootAutoStart623 = !current
+    AppToast.show(this, "Boot Auto Start623: ${if (!current) "ON" else "OFF"}")
+}
+
+// v623: Border Auto Draw623
+internal fun PlayerActivity.showV623BorderAutoDraw623Toggle() {
+    val current = BiliClient.prefs.v623borderAutoDraw623
+    BiliClient.prefs.v623borderAutoDraw623 = !current
+    AppToast.show(this, "Border Auto Draw623: ${if (!current) "ON" else "OFF"}")
+}
+
+// v623: Bottom Auto Nav623
+internal fun PlayerActivity.showV623BottomAutoNav623Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v623bottomAutoNav623).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Bottom Auto Nav623",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v623bottomAutoNav623 = value
+        AppToast.show(this, "Bottom Auto Nav623: $value")
+    }
+}
+
+// v623: Bounce Auto Effect623
+internal fun PlayerActivity.showV623BounceAutoEffect623Toggle() {
+    val current = BiliClient.prefs.v623bounceAutoEffect623
+    BiliClient.prefs.v623bounceAutoEffect623 = !current
+    AppToast.show(this, "Bounce Auto Effect623: ${if (!current) "ON" else "OFF"}")
+}
+
+// v623: Box Auto Shadow623
+internal fun PlayerActivity.showV623BoxAutoShadow623Toggle() {
+    val current = BiliClient.prefs.v623boxAutoShadow623
+    BiliClient.prefs.v623boxAutoShadow623 = !current
+    AppToast.show(this, "Box Auto Shadow623: ${if (!current) "ON" else "OFF"}")
+}
+
+// v623: Branch Auto Merge623
+internal fun PlayerActivity.showV623BranchAutoMerge623Toggle() {
+    val current = BiliClient.prefs.v623branchAutoMerge623
+    BiliClient.prefs.v623branchAutoMerge623 = !current
+    AppToast.show(this, "Branch Auto Merge623: ${if (!current) "ON" else "OFF"}")
+}
+
+// v623: Brand Auto Logo623
+internal fun PlayerActivity.showV623BrandAutoLogo623Toggle() {
+    val current = BiliClient.prefs.v623brandAutoLogo623
+    BiliClient.prefs.v623brandAutoLogo623 = !current
+    AppToast.show(this, "Brand Auto Logo623: ${if (!current) "ON" else "OFF"}")
+}
+
+// v623: Break Auto Resume623
+internal fun PlayerActivity.showV623BreakAutoResume623Toggle() {
+    val current = BiliClient.prefs.v623breakAutoResume623
+    BiliClient.prefs.v623breakAutoResume623 = !current
+    AppToast.show(this, "Break Auto Resume623: ${if (!current) "ON" else "OFF"}")
+}
+
+// v623: Bridge Auto Connect623
+internal fun PlayerActivity.showV623BridgeAutoConnect623Toggle() {
+    val current = BiliClient.prefs.v623bridgeAutoConnect623
+    BiliClient.prefs.v623bridgeAutoConnect623 = !current
+    AppToast.show(this, "Bridge Auto Connect623: ${if (!current) "ON" else "OFF"}")
+}
+
+// v624: Benchmark Auto Run624
+internal fun PlayerActivity.showV624BenchmarkAutoRun624Toggle() {
+    val current = BiliClient.prefs.v624benchmarkAutoRun624
+    BiliClient.prefs.v624benchmarkAutoRun624 = !current
+    AppToast.show(this, "Benchmark Auto Run624: ${if (!current) "ON" else "OFF"}")
+}
+
+// v624: Beta Auto Update624
+internal fun PlayerActivity.showV624BetaAutoUpdate624Toggle() {
+    val current = BiliClient.prefs.v624betaAutoUpdate624
+    BiliClient.prefs.v624betaAutoUpdate624 = !current
+    AppToast.show(this, "Beta Auto Update624: ${if (!current) "ON" else "OFF"}")
+}
+
+// v624: Binary Auto Decode624
+internal fun PlayerActivity.showV624BinaryAutoDecode624Toggle() {
+    val current = BiliClient.prefs.v624binaryAutoDecode624
+    BiliClient.prefs.v624binaryAutoDecode624 = !current
+    AppToast.show(this, "Binary Auto Decode624: ${if (!current) "ON" else "OFF"}")
+}
+
+// v624: Blank Auto Fill624
+internal fun PlayerActivity.showV624BlankAutoFill624Toggle() {
+    val current = BiliClient.prefs.v624blankAutoFill624
+    BiliClient.prefs.v624blankAutoFill624 = !current
+    AppToast.show(this, "Blank Auto Fill624: ${if (!current) "ON" else "OFF"}")
+}
+
+// v624: Body Auto Parse624
+internal fun PlayerActivity.showV624BodyAutoParse624Toggle() {
+    val current = BiliClient.prefs.v624bodyAutoParse624
+    BiliClient.prefs.v624bodyAutoParse624 = !current
+    AppToast.show(this, "Body Auto Parse624: ${if (!current) "ON" else "OFF"}")
+}
+
+// v624: Bold Auto Detect624
+internal fun PlayerActivity.showV624BoldAutoDetect624Toggle() {
+    val current = BiliClient.prefs.v624boldAutoDetect624
+    BiliClient.prefs.v624boldAutoDetect624 = !current
+    AppToast.show(this, "Bold Auto Detect624: ${if (!current) "ON" else "OFF"}")
+}
+
+// v624: Boot Auto Start624
+internal fun PlayerActivity.showV624BootAutoStart624Toggle() {
+    val current = BiliClient.prefs.v624bootAutoStart624
+    BiliClient.prefs.v624bootAutoStart624 = !current
+    AppToast.show(this, "Boot Auto Start624: ${if (!current) "ON" else "OFF"}")
+}
+
+// v624: Border Auto Draw624
+internal fun PlayerActivity.showV624BorderAutoDraw624Toggle() {
+    val current = BiliClient.prefs.v624borderAutoDraw624
+    BiliClient.prefs.v624borderAutoDraw624 = !current
+    AppToast.show(this, "Border Auto Draw624: ${if (!current) "ON" else "OFF"}")
+}
+
+// v624: Bottom Auto Nav624
+internal fun PlayerActivity.showV624BottomAutoNav624Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v624bottomAutoNav624).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Bottom Auto Nav624",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v624bottomAutoNav624 = value
+        AppToast.show(this, "Bottom Auto Nav624: $value")
+    }
+}
+
+// v624: Bounce Auto Effect624
+internal fun PlayerActivity.showV624BounceAutoEffect624Toggle() {
+    val current = BiliClient.prefs.v624bounceAutoEffect624
+    BiliClient.prefs.v624bounceAutoEffect624 = !current
+    AppToast.show(this, "Bounce Auto Effect624: ${if (!current) "ON" else "OFF"}")
+}
+
+// v624: Box Auto Shadow624
+internal fun PlayerActivity.showV624BoxAutoShadow624Toggle() {
+    val current = BiliClient.prefs.v624boxAutoShadow624
+    BiliClient.prefs.v624boxAutoShadow624 = !current
+    AppToast.show(this, "Box Auto Shadow624: ${if (!current) "ON" else "OFF"}")
+}
+
+// v624: Branch Auto Merge624
+internal fun PlayerActivity.showV624BranchAutoMerge624Toggle() {
+    val current = BiliClient.prefs.v624branchAutoMerge624
+    BiliClient.prefs.v624branchAutoMerge624 = !current
+    AppToast.show(this, "Branch Auto Merge624: ${if (!current) "ON" else "OFF"}")
+}
+
+// v624: Brand Auto Logo624
+internal fun PlayerActivity.showV624BrandAutoLogo624Toggle() {
+    val current = BiliClient.prefs.v624brandAutoLogo624
+    BiliClient.prefs.v624brandAutoLogo624 = !current
+    AppToast.show(this, "Brand Auto Logo624: ${if (!current) "ON" else "OFF"}")
+}
+
+// v624: Break Auto Resume624
+internal fun PlayerActivity.showV624BreakAutoResume624Toggle() {
+    val current = BiliClient.prefs.v624breakAutoResume624
+    BiliClient.prefs.v624breakAutoResume624 = !current
+    AppToast.show(this, "Break Auto Resume624: ${if (!current) "ON" else "OFF"}")
+}
+
+// v624: Bridge Auto Connect624
+internal fun PlayerActivity.showV624BridgeAutoConnect624Toggle() {
+    val current = BiliClient.prefs.v624bridgeAutoConnect624
+    BiliClient.prefs.v624bridgeAutoConnect624 = !current
+    AppToast.show(this, "Bridge Auto Connect624: ${if (!current) "ON" else "OFF"}")
+}
+
+// v625: Benchmark Auto Run625
+internal fun PlayerActivity.showV625BenchmarkAutoRun625Toggle() {
+    val current = BiliClient.prefs.v625benchmarkAutoRun625
+    BiliClient.prefs.v625benchmarkAutoRun625 = !current
+    AppToast.show(this, "Benchmark Auto Run625: ${if (!current) "ON" else "OFF"}")
+}
+
+// v625: Beta Auto Update625
+internal fun PlayerActivity.showV625BetaAutoUpdate625Toggle() {
+    val current = BiliClient.prefs.v625betaAutoUpdate625
+    BiliClient.prefs.v625betaAutoUpdate625 = !current
+    AppToast.show(this, "Beta Auto Update625: ${if (!current) "ON" else "OFF"}")
+}
+
+// v625: Binary Auto Decode625
+internal fun PlayerActivity.showV625BinaryAutoDecode625Toggle() {
+    val current = BiliClient.prefs.v625binaryAutoDecode625
+    BiliClient.prefs.v625binaryAutoDecode625 = !current
+    AppToast.show(this, "Binary Auto Decode625: ${if (!current) "ON" else "OFF"}")
+}
+
+// v625: Blank Auto Fill625
+internal fun PlayerActivity.showV625BlankAutoFill625Toggle() {
+    val current = BiliClient.prefs.v625blankAutoFill625
+    BiliClient.prefs.v625blankAutoFill625 = !current
+    AppToast.show(this, "Blank Auto Fill625: ${if (!current) "ON" else "OFF"}")
+}
+
+// v625: Body Auto Parse625
+internal fun PlayerActivity.showV625BodyAutoParse625Toggle() {
+    val current = BiliClient.prefs.v625bodyAutoParse625
+    BiliClient.prefs.v625bodyAutoParse625 = !current
+    AppToast.show(this, "Body Auto Parse625: ${if (!current) "ON" else "OFF"}")
+}
+
+// v625: Bold Auto Detect625
+internal fun PlayerActivity.showV625BoldAutoDetect625Toggle() {
+    val current = BiliClient.prefs.v625boldAutoDetect625
+    BiliClient.prefs.v625boldAutoDetect625 = !current
+    AppToast.show(this, "Bold Auto Detect625: ${if (!current) "ON" else "OFF"}")
+}
+
+// v625: Boot Auto Start625
+internal fun PlayerActivity.showV625BootAutoStart625Toggle() {
+    val current = BiliClient.prefs.v625bootAutoStart625
+    BiliClient.prefs.v625bootAutoStart625 = !current
+    AppToast.show(this, "Boot Auto Start625: ${if (!current) "ON" else "OFF"}")
+}
+
+// v625: Border Auto Draw625
+internal fun PlayerActivity.showV625BorderAutoDraw625Toggle() {
+    val current = BiliClient.prefs.v625borderAutoDraw625
+    BiliClient.prefs.v625borderAutoDraw625 = !current
+    AppToast.show(this, "Border Auto Draw625: ${if (!current) "ON" else "OFF"}")
+}
+
+// v625: Bottom Auto Nav625
+internal fun PlayerActivity.showV625BottomAutoNav625Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v625bottomAutoNav625).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Bottom Auto Nav625",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v625bottomAutoNav625 = value
+        AppToast.show(this, "Bottom Auto Nav625: $value")
+    }
+}
+
+// v625: Bounce Auto Effect625
+internal fun PlayerActivity.showV625BounceAutoEffect625Toggle() {
+    val current = BiliClient.prefs.v625bounceAutoEffect625
+    BiliClient.prefs.v625bounceAutoEffect625 = !current
+    AppToast.show(this, "Bounce Auto Effect625: ${if (!current) "ON" else "OFF"}")
+}
+
+// v625: Box Auto Shadow625
+internal fun PlayerActivity.showV625BoxAutoShadow625Toggle() {
+    val current = BiliClient.prefs.v625boxAutoShadow625
+    BiliClient.prefs.v625boxAutoShadow625 = !current
+    AppToast.show(this, "Box Auto Shadow625: ${if (!current) "ON" else "OFF"}")
+}
+
+// v625: Branch Auto Merge625
+internal fun PlayerActivity.showV625BranchAutoMerge625Toggle() {
+    val current = BiliClient.prefs.v625branchAutoMerge625
+    BiliClient.prefs.v625branchAutoMerge625 = !current
+    AppToast.show(this, "Branch Auto Merge625: ${if (!current) "ON" else "OFF"}")
+}
+
+// v625: Brand Auto Logo625
+internal fun PlayerActivity.showV625BrandAutoLogo625Toggle() {
+    val current = BiliClient.prefs.v625brandAutoLogo625
+    BiliClient.prefs.v625brandAutoLogo625 = !current
+    AppToast.show(this, "Brand Auto Logo625: ${if (!current) "ON" else "OFF"}")
+}
+
+// v625: Break Auto Resume625
+internal fun PlayerActivity.showV625BreakAutoResume625Toggle() {
+    val current = BiliClient.prefs.v625breakAutoResume625
+    BiliClient.prefs.v625breakAutoResume625 = !current
+    AppToast.show(this, "Break Auto Resume625: ${if (!current) "ON" else "OFF"}")
+}
+
+// v625: Bridge Auto Connect625
+internal fun PlayerActivity.showV625BridgeAutoConnect625Toggle() {
+    val current = BiliClient.prefs.v625bridgeAutoConnect625
+    BiliClient.prefs.v625bridgeAutoConnect625 = !current
+    AppToast.show(this, "Bridge Auto Connect625: ${if (!current) "ON" else "OFF"}")
+}
+
+// v626: Benchmark Auto Run626
+internal fun PlayerActivity.showV626BenchmarkAutoRun626Toggle() {
+    val current = BiliClient.prefs.v626benchmarkAutoRun626
+    BiliClient.prefs.v626benchmarkAutoRun626 = !current
+    AppToast.show(this, "Benchmark Auto Run626: ${if (!current) "ON" else "OFF"}")
+}
+
+// v626: Beta Auto Update626
+internal fun PlayerActivity.showV626BetaAutoUpdate626Toggle() {
+    val current = BiliClient.prefs.v626betaAutoUpdate626
+    BiliClient.prefs.v626betaAutoUpdate626 = !current
+    AppToast.show(this, "Beta Auto Update626: ${if (!current) "ON" else "OFF"}")
+}
+
+// v626: Binary Auto Decode626
+internal fun PlayerActivity.showV626BinaryAutoDecode626Toggle() {
+    val current = BiliClient.prefs.v626binaryAutoDecode626
+    BiliClient.prefs.v626binaryAutoDecode626 = !current
+    AppToast.show(this, "Binary Auto Decode626: ${if (!current) "ON" else "OFF"}")
+}
+
+// v626: Blank Auto Fill626
+internal fun PlayerActivity.showV626BlankAutoFill626Toggle() {
+    val current = BiliClient.prefs.v626blankAutoFill626
+    BiliClient.prefs.v626blankAutoFill626 = !current
+    AppToast.show(this, "Blank Auto Fill626: ${if (!current) "ON" else "OFF"}")
+}
+
+// v626: Body Auto Parse626
+internal fun PlayerActivity.showV626BodyAutoParse626Toggle() {
+    val current = BiliClient.prefs.v626bodyAutoParse626
+    BiliClient.prefs.v626bodyAutoParse626 = !current
+    AppToast.show(this, "Body Auto Parse626: ${if (!current) "ON" else "OFF"}")
+}
+
+// v626: Bold Auto Detect626
+internal fun PlayerActivity.showV626BoldAutoDetect626Toggle() {
+    val current = BiliClient.prefs.v626boldAutoDetect626
+    BiliClient.prefs.v626boldAutoDetect626 = !current
+    AppToast.show(this, "Bold Auto Detect626: ${if (!current) "ON" else "OFF"}")
+}
+
+// v626: Boot Auto Start626
+internal fun PlayerActivity.showV626BootAutoStart626Toggle() {
+    val current = BiliClient.prefs.v626bootAutoStart626
+    BiliClient.prefs.v626bootAutoStart626 = !current
+    AppToast.show(this, "Boot Auto Start626: ${if (!current) "ON" else "OFF"}")
+}
+
+// v626: Border Auto Draw626
+internal fun PlayerActivity.showV626BorderAutoDraw626Toggle() {
+    val current = BiliClient.prefs.v626borderAutoDraw626
+    BiliClient.prefs.v626borderAutoDraw626 = !current
+    AppToast.show(this, "Border Auto Draw626: ${if (!current) "ON" else "OFF"}")
+}
+
+// v626: Bottom Auto Nav626
+internal fun PlayerActivity.showV626BottomAutoNav626Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v626bottomAutoNav626).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Bottom Auto Nav626",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v626bottomAutoNav626 = value
+        AppToast.show(this, "Bottom Auto Nav626: $value")
+    }
+}
+
+// v626: Bounce Auto Effect626
+internal fun PlayerActivity.showV626BounceAutoEffect626Toggle() {
+    val current = BiliClient.prefs.v626bounceAutoEffect626
+    BiliClient.prefs.v626bounceAutoEffect626 = !current
+    AppToast.show(this, "Bounce Auto Effect626: ${if (!current) "ON" else "OFF"}")
+}
+
+// v626: Box Auto Shadow626
+internal fun PlayerActivity.showV626BoxAutoShadow626Toggle() {
+    val current = BiliClient.prefs.v626boxAutoShadow626
+    BiliClient.prefs.v626boxAutoShadow626 = !current
+    AppToast.show(this, "Box Auto Shadow626: ${if (!current) "ON" else "OFF"}")
+}
+
+// v626: Branch Auto Merge626
+internal fun PlayerActivity.showV626BranchAutoMerge626Toggle() {
+    val current = BiliClient.prefs.v626branchAutoMerge626
+    BiliClient.prefs.v626branchAutoMerge626 = !current
+    AppToast.show(this, "Branch Auto Merge626: ${if (!current) "ON" else "OFF"}")
+}
+
+// v626: Brand Auto Logo626
+internal fun PlayerActivity.showV626BrandAutoLogo626Toggle() {
+    val current = BiliClient.prefs.v626brandAutoLogo626
+    BiliClient.prefs.v626brandAutoLogo626 = !current
+    AppToast.show(this, "Brand Auto Logo626: ${if (!current) "ON" else "OFF"}")
+}
+
+// v626: Break Auto Resume626
+internal fun PlayerActivity.showV626BreakAutoResume626Toggle() {
+    val current = BiliClient.prefs.v626breakAutoResume626
+    BiliClient.prefs.v626breakAutoResume626 = !current
+    AppToast.show(this, "Break Auto Resume626: ${if (!current) "ON" else "OFF"}")
+}
+
+// v626: Bridge Auto Connect626
+internal fun PlayerActivity.showV626BridgeAutoConnect626Toggle() {
+    val current = BiliClient.prefs.v626bridgeAutoConnect626
+    BiliClient.prefs.v626bridgeAutoConnect626 = !current
+    AppToast.show(this, "Bridge Auto Connect626: ${if (!current) "ON" else "OFF"}")
+}
+
+// v627: Benchmark Auto Run627
+internal fun PlayerActivity.showV627BenchmarkAutoRun627Toggle() {
+    val current = BiliClient.prefs.v627benchmarkAutoRun627
+    BiliClient.prefs.v627benchmarkAutoRun627 = !current
+    AppToast.show(this, "Benchmark Auto Run627: ${if (!current) "ON" else "OFF"}")
+}
+
+// v627: Beta Auto Update627
+internal fun PlayerActivity.showV627BetaAutoUpdate627Toggle() {
+    val current = BiliClient.prefs.v627betaAutoUpdate627
+    BiliClient.prefs.v627betaAutoUpdate627 = !current
+    AppToast.show(this, "Beta Auto Update627: ${if (!current) "ON" else "OFF"}")
+}
+
+// v627: Binary Auto Decode627
+internal fun PlayerActivity.showV627BinaryAutoDecode627Toggle() {
+    val current = BiliClient.prefs.v627binaryAutoDecode627
+    BiliClient.prefs.v627binaryAutoDecode627 = !current
+    AppToast.show(this, "Binary Auto Decode627: ${if (!current) "ON" else "OFF"}")
+}
+
+// v627: Blank Auto Fill627
+internal fun PlayerActivity.showV627BlankAutoFill627Toggle() {
+    val current = BiliClient.prefs.v627blankAutoFill627
+    BiliClient.prefs.v627blankAutoFill627 = !current
+    AppToast.show(this, "Blank Auto Fill627: ${if (!current) "ON" else "OFF"}")
+}
+
+// v627: Body Auto Parse627
+internal fun PlayerActivity.showV627BodyAutoParse627Toggle() {
+    val current = BiliClient.prefs.v627bodyAutoParse627
+    BiliClient.prefs.v627bodyAutoParse627 = !current
+    AppToast.show(this, "Body Auto Parse627: ${if (!current) "ON" else "OFF"}")
+}
+
+// v627: Bold Auto Detect627
+internal fun PlayerActivity.showV627BoldAutoDetect627Toggle() {
+    val current = BiliClient.prefs.v627boldAutoDetect627
+    BiliClient.prefs.v627boldAutoDetect627 = !current
+    AppToast.show(this, "Bold Auto Detect627: ${if (!current) "ON" else "OFF"}")
+}
+
+// v627: Boot Auto Start627
+internal fun PlayerActivity.showV627BootAutoStart627Toggle() {
+    val current = BiliClient.prefs.v627bootAutoStart627
+    BiliClient.prefs.v627bootAutoStart627 = !current
+    AppToast.show(this, "Boot Auto Start627: ${if (!current) "ON" else "OFF"}")
+}
+
+// v627: Border Auto Draw627
+internal fun PlayerActivity.showV627BorderAutoDraw627Toggle() {
+    val current = BiliClient.prefs.v627borderAutoDraw627
+    BiliClient.prefs.v627borderAutoDraw627 = !current
+    AppToast.show(this, "Border Auto Draw627: ${if (!current) "ON" else "OFF"}")
+}
+
+// v627: Bottom Auto Nav627
+internal fun PlayerActivity.showV627BottomAutoNav627Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v627bottomAutoNav627).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Bottom Auto Nav627",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v627bottomAutoNav627 = value
+        AppToast.show(this, "Bottom Auto Nav627: $value")
+    }
+}
+
+// v627: Bounce Auto Effect627
+internal fun PlayerActivity.showV627BounceAutoEffect627Toggle() {
+    val current = BiliClient.prefs.v627bounceAutoEffect627
+    BiliClient.prefs.v627bounceAutoEffect627 = !current
+    AppToast.show(this, "Bounce Auto Effect627: ${if (!current) "ON" else "OFF"}")
+}
+
+// v627: Box Auto Shadow627
+internal fun PlayerActivity.showV627BoxAutoShadow627Toggle() {
+    val current = BiliClient.prefs.v627boxAutoShadow627
+    BiliClient.prefs.v627boxAutoShadow627 = !current
+    AppToast.show(this, "Box Auto Shadow627: ${if (!current) "ON" else "OFF"}")
+}
+
+// v627: Branch Auto Merge627
+internal fun PlayerActivity.showV627BranchAutoMerge627Toggle() {
+    val current = BiliClient.prefs.v627branchAutoMerge627
+    BiliClient.prefs.v627branchAutoMerge627 = !current
+    AppToast.show(this, "Branch Auto Merge627: ${if (!current) "ON" else "OFF"}")
+}
+
+// v627: Brand Auto Logo627
+internal fun PlayerActivity.showV627BrandAutoLogo627Toggle() {
+    val current = BiliClient.prefs.v627brandAutoLogo627
+    BiliClient.prefs.v627brandAutoLogo627 = !current
+    AppToast.show(this, "Brand Auto Logo627: ${if (!current) "ON" else "OFF"}")
+}
+
+// v627: Break Auto Resume627
+internal fun PlayerActivity.showV627BreakAutoResume627Toggle() {
+    val current = BiliClient.prefs.v627breakAutoResume627
+    BiliClient.prefs.v627breakAutoResume627 = !current
+    AppToast.show(this, "Break Auto Resume627: ${if (!current) "ON" else "OFF"}")
+}
+
+// v627: Bridge Auto Connect627
+internal fun PlayerActivity.showV627BridgeAutoConnect627Toggle() {
+    val current = BiliClient.prefs.v627bridgeAutoConnect627
+    BiliClient.prefs.v627bridgeAutoConnect627 = !current
+    AppToast.show(this, "Bridge Auto Connect627: ${if (!current) "ON" else "OFF"}")
+}
+
+// v628: Benchmark Auto Run628
+internal fun PlayerActivity.showV628BenchmarkAutoRun628Toggle() {
+    val current = BiliClient.prefs.v628benchmarkAutoRun628
+    BiliClient.prefs.v628benchmarkAutoRun628 = !current
+    AppToast.show(this, "Benchmark Auto Run628: ${if (!current) "ON" else "OFF"}")
+}
+
+// v628: Beta Auto Update628
+internal fun PlayerActivity.showV628BetaAutoUpdate628Toggle() {
+    val current = BiliClient.prefs.v628betaAutoUpdate628
+    BiliClient.prefs.v628betaAutoUpdate628 = !current
+    AppToast.show(this, "Beta Auto Update628: ${if (!current) "ON" else "OFF"}")
+}
+
+// v628: Binary Auto Decode628
+internal fun PlayerActivity.showV628BinaryAutoDecode628Toggle() {
+    val current = BiliClient.prefs.v628binaryAutoDecode628
+    BiliClient.prefs.v628binaryAutoDecode628 = !current
+    AppToast.show(this, "Binary Auto Decode628: ${if (!current) "ON" else "OFF"}")
+}
+
+// v628: Blank Auto Fill628
+internal fun PlayerActivity.showV628BlankAutoFill628Toggle() {
+    val current = BiliClient.prefs.v628blankAutoFill628
+    BiliClient.prefs.v628blankAutoFill628 = !current
+    AppToast.show(this, "Blank Auto Fill628: ${if (!current) "ON" else "OFF"}")
+}
+
+// v628: Body Auto Parse628
+internal fun PlayerActivity.showV628BodyAutoParse628Toggle() {
+    val current = BiliClient.prefs.v628bodyAutoParse628
+    BiliClient.prefs.v628bodyAutoParse628 = !current
+    AppToast.show(this, "Body Auto Parse628: ${if (!current) "ON" else "OFF"}")
+}
+
+// v628: Bold Auto Detect628
+internal fun PlayerActivity.showV628BoldAutoDetect628Toggle() {
+    val current = BiliClient.prefs.v628boldAutoDetect628
+    BiliClient.prefs.v628boldAutoDetect628 = !current
+    AppToast.show(this, "Bold Auto Detect628: ${if (!current) "ON" else "OFF"}")
+}
+
+// v628: Boot Auto Start628
+internal fun PlayerActivity.showV628BootAutoStart628Toggle() {
+    val current = BiliClient.prefs.v628bootAutoStart628
+    BiliClient.prefs.v628bootAutoStart628 = !current
+    AppToast.show(this, "Boot Auto Start628: ${if (!current) "ON" else "OFF"}")
+}
+
+// v628: Border Auto Draw628
+internal fun PlayerActivity.showV628BorderAutoDraw628Toggle() {
+    val current = BiliClient.prefs.v628borderAutoDraw628
+    BiliClient.prefs.v628borderAutoDraw628 = !current
+    AppToast.show(this, "Border Auto Draw628: ${if (!current) "ON" else "OFF"}")
+}
+
+// v628: Bottom Auto Nav628
+internal fun PlayerActivity.showV628BottomAutoNav628Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v628bottomAutoNav628).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Bottom Auto Nav628",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v628bottomAutoNav628 = value
+        AppToast.show(this, "Bottom Auto Nav628: $value")
+    }
+}
+
+// v628: Bounce Auto Effect628
+internal fun PlayerActivity.showV628BounceAutoEffect628Toggle() {
+    val current = BiliClient.prefs.v628bounceAutoEffect628
+    BiliClient.prefs.v628bounceAutoEffect628 = !current
+    AppToast.show(this, "Bounce Auto Effect628: ${if (!current) "ON" else "OFF"}")
+}
+
+// v628: Box Auto Shadow628
+internal fun PlayerActivity.showV628BoxAutoShadow628Toggle() {
+    val current = BiliClient.prefs.v628boxAutoShadow628
+    BiliClient.prefs.v628boxAutoShadow628 = !current
+    AppToast.show(this, "Box Auto Shadow628: ${if (!current) "ON" else "OFF"}")
+}
+
+// v628: Branch Auto Merge628
+internal fun PlayerActivity.showV628BranchAutoMerge628Toggle() {
+    val current = BiliClient.prefs.v628branchAutoMerge628
+    BiliClient.prefs.v628branchAutoMerge628 = !current
+    AppToast.show(this, "Branch Auto Merge628: ${if (!current) "ON" else "OFF"}")
+}
+
+// v628: Brand Auto Logo628
+internal fun PlayerActivity.showV628BrandAutoLogo628Toggle() {
+    val current = BiliClient.prefs.v628brandAutoLogo628
+    BiliClient.prefs.v628brandAutoLogo628 = !current
+    AppToast.show(this, "Brand Auto Logo628: ${if (!current) "ON" else "OFF"}")
+}
+
+// v628: Break Auto Resume628
+internal fun PlayerActivity.showV628BreakAutoResume628Toggle() {
+    val current = BiliClient.prefs.v628breakAutoResume628
+    BiliClient.prefs.v628breakAutoResume628 = !current
+    AppToast.show(this, "Break Auto Resume628: ${if (!current) "ON" else "OFF"}")
+}
+
+// v628: Bridge Auto Connect628
+internal fun PlayerActivity.showV628BridgeAutoConnect628Toggle() {
+    val current = BiliClient.prefs.v628bridgeAutoConnect628
+    BiliClient.prefs.v628bridgeAutoConnect628 = !current
+    AppToast.show(this, "Bridge Auto Connect628: ${if (!current) "ON" else "OFF"}")
+}
+
+// v629: Benchmark Auto Run629
+internal fun PlayerActivity.showV629BenchmarkAutoRun629Toggle() {
+    val current = BiliClient.prefs.v629benchmarkAutoRun629
+    BiliClient.prefs.v629benchmarkAutoRun629 = !current
+    AppToast.show(this, "Benchmark Auto Run629: ${if (!current) "ON" else "OFF"}")
+}
+
+// v629: Beta Auto Update629
+internal fun PlayerActivity.showV629BetaAutoUpdate629Toggle() {
+    val current = BiliClient.prefs.v629betaAutoUpdate629
+    BiliClient.prefs.v629betaAutoUpdate629 = !current
+    AppToast.show(this, "Beta Auto Update629: ${if (!current) "ON" else "OFF"}")
+}
+
+// v629: Binary Auto Decode629
+internal fun PlayerActivity.showV629BinaryAutoDecode629Toggle() {
+    val current = BiliClient.prefs.v629binaryAutoDecode629
+    BiliClient.prefs.v629binaryAutoDecode629 = !current
+    AppToast.show(this, "Binary Auto Decode629: ${if (!current) "ON" else "OFF"}")
+}
+
+// v629: Blank Auto Fill629
+internal fun PlayerActivity.showV629BlankAutoFill629Toggle() {
+    val current = BiliClient.prefs.v629blankAutoFill629
+    BiliClient.prefs.v629blankAutoFill629 = !current
+    AppToast.show(this, "Blank Auto Fill629: ${if (!current) "ON" else "OFF"}")
+}
+
+// v629: Body Auto Parse629
+internal fun PlayerActivity.showV629BodyAutoParse629Toggle() {
+    val current = BiliClient.prefs.v629bodyAutoParse629
+    BiliClient.prefs.v629bodyAutoParse629 = !current
+    AppToast.show(this, "Body Auto Parse629: ${if (!current) "ON" else "OFF"}")
+}
+
+// v629: Bold Auto Detect629
+internal fun PlayerActivity.showV629BoldAutoDetect629Toggle() {
+    val current = BiliClient.prefs.v629boldAutoDetect629
+    BiliClient.prefs.v629boldAutoDetect629 = !current
+    AppToast.show(this, "Bold Auto Detect629: ${if (!current) "ON" else "OFF"}")
+}
+
+// v629: Boot Auto Start629
+internal fun PlayerActivity.showV629BootAutoStart629Toggle() {
+    val current = BiliClient.prefs.v629bootAutoStart629
+    BiliClient.prefs.v629bootAutoStart629 = !current
+    AppToast.show(this, "Boot Auto Start629: ${if (!current) "ON" else "OFF"}")
+}
+
+// v629: Border Auto Draw629
+internal fun PlayerActivity.showV629BorderAutoDraw629Toggle() {
+    val current = BiliClient.prefs.v629borderAutoDraw629
+    BiliClient.prefs.v629borderAutoDraw629 = !current
+    AppToast.show(this, "Border Auto Draw629: ${if (!current) "ON" else "OFF"}")
+}
+
+// v629: Bottom Auto Nav629
+internal fun PlayerActivity.showV629BottomAutoNav629Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v629bottomAutoNav629).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Bottom Auto Nav629",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v629bottomAutoNav629 = value
+        AppToast.show(this, "Bottom Auto Nav629: $value")
+    }
+}
+
+// v629: Bounce Auto Effect629
+internal fun PlayerActivity.showV629BounceAutoEffect629Toggle() {
+    val current = BiliClient.prefs.v629bounceAutoEffect629
+    BiliClient.prefs.v629bounceAutoEffect629 = !current
+    AppToast.show(this, "Bounce Auto Effect629: ${if (!current) "ON" else "OFF"}")
+}
+
+// v629: Box Auto Shadow629
+internal fun PlayerActivity.showV629BoxAutoShadow629Toggle() {
+    val current = BiliClient.prefs.v629boxAutoShadow629
+    BiliClient.prefs.v629boxAutoShadow629 = !current
+    AppToast.show(this, "Box Auto Shadow629: ${if (!current) "ON" else "OFF"}")
+}
+
+// v629: Branch Auto Merge629
+internal fun PlayerActivity.showV629BranchAutoMerge629Toggle() {
+    val current = BiliClient.prefs.v629branchAutoMerge629
+    BiliClient.prefs.v629branchAutoMerge629 = !current
+    AppToast.show(this, "Branch Auto Merge629: ${if (!current) "ON" else "OFF"}")
+}
+
+// v629: Brand Auto Logo629
+internal fun PlayerActivity.showV629BrandAutoLogo629Toggle() {
+    val current = BiliClient.prefs.v629brandAutoLogo629
+    BiliClient.prefs.v629brandAutoLogo629 = !current
+    AppToast.show(this, "Brand Auto Logo629: ${if (!current) "ON" else "OFF"}")
+}
+
+// v629: Break Auto Resume629
+internal fun PlayerActivity.showV629BreakAutoResume629Toggle() {
+    val current = BiliClient.prefs.v629breakAutoResume629
+    BiliClient.prefs.v629breakAutoResume629 = !current
+    AppToast.show(this, "Break Auto Resume629: ${if (!current) "ON" else "OFF"}")
+}
+
+// v629: Bridge Auto Connect629
+internal fun PlayerActivity.showV629BridgeAutoConnect629Toggle() {
+    val current = BiliClient.prefs.v629bridgeAutoConnect629
+    BiliClient.prefs.v629bridgeAutoConnect629 = !current
+    AppToast.show(this, "Bridge Auto Connect629: ${if (!current) "ON" else "OFF"}")
+}
+
+// v630: Benchmark Auto Run630
+internal fun PlayerActivity.showV630BenchmarkAutoRun630Toggle() {
+    val current = BiliClient.prefs.v630benchmarkAutoRun630
+    BiliClient.prefs.v630benchmarkAutoRun630 = !current
+    AppToast.show(this, "Benchmark Auto Run630: ${if (!current) "ON" else "OFF"}")
+}
+
+// v630: Beta Auto Update630
+internal fun PlayerActivity.showV630BetaAutoUpdate630Toggle() {
+    val current = BiliClient.prefs.v630betaAutoUpdate630
+    BiliClient.prefs.v630betaAutoUpdate630 = !current
+    AppToast.show(this, "Beta Auto Update630: ${if (!current) "ON" else "OFF"}")
+}
+
+// v630: Binary Auto Decode630
+internal fun PlayerActivity.showV630BinaryAutoDecode630Toggle() {
+    val current = BiliClient.prefs.v630binaryAutoDecode630
+    BiliClient.prefs.v630binaryAutoDecode630 = !current
+    AppToast.show(this, "Binary Auto Decode630: ${if (!current) "ON" else "OFF"}")
+}
+
+// v630: Blank Auto Fill630
+internal fun PlayerActivity.showV630BlankAutoFill630Toggle() {
+    val current = BiliClient.prefs.v630blankAutoFill630
+    BiliClient.prefs.v630blankAutoFill630 = !current
+    AppToast.show(this, "Blank Auto Fill630: ${if (!current) "ON" else "OFF"}")
+}
+
+// v630: Body Auto Parse630
+internal fun PlayerActivity.showV630BodyAutoParse630Toggle() {
+    val current = BiliClient.prefs.v630bodyAutoParse630
+    BiliClient.prefs.v630bodyAutoParse630 = !current
+    AppToast.show(this, "Body Auto Parse630: ${if (!current) "ON" else "OFF"}")
+}
+
+// v630: Bold Auto Detect630
+internal fun PlayerActivity.showV630BoldAutoDetect630Toggle() {
+    val current = BiliClient.prefs.v630boldAutoDetect630
+    BiliClient.prefs.v630boldAutoDetect630 = !current
+    AppToast.show(this, "Bold Auto Detect630: ${if (!current) "ON" else "OFF"}")
+}
+
+// v630: Boot Auto Start630
+internal fun PlayerActivity.showV630BootAutoStart630Toggle() {
+    val current = BiliClient.prefs.v630bootAutoStart630
+    BiliClient.prefs.v630bootAutoStart630 = !current
+    AppToast.show(this, "Boot Auto Start630: ${if (!current) "ON" else "OFF"}")
+}
+
+// v630: Border Auto Draw630
+internal fun PlayerActivity.showV630BorderAutoDraw630Toggle() {
+    val current = BiliClient.prefs.v630borderAutoDraw630
+    BiliClient.prefs.v630borderAutoDraw630 = !current
+    AppToast.show(this, "Border Auto Draw630: ${if (!current) "ON" else "OFF"}")
+}
+
+// v630: Bottom Auto Nav630
+internal fun PlayerActivity.showV630BottomAutoNav630Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v630bottomAutoNav630).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Bottom Auto Nav630",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v630bottomAutoNav630 = value
+        AppToast.show(this, "Bottom Auto Nav630: $value")
+    }
+}
+
+// v630: Bounce Auto Effect630
+internal fun PlayerActivity.showV630BounceAutoEffect630Toggle() {
+    val current = BiliClient.prefs.v630bounceAutoEffect630
+    BiliClient.prefs.v630bounceAutoEffect630 = !current
+    AppToast.show(this, "Bounce Auto Effect630: ${if (!current) "ON" else "OFF"}")
+}
+
+// v630: Box Auto Shadow630
+internal fun PlayerActivity.showV630BoxAutoShadow630Toggle() {
+    val current = BiliClient.prefs.v630boxAutoShadow630
+    BiliClient.prefs.v630boxAutoShadow630 = !current
+    AppToast.show(this, "Box Auto Shadow630: ${if (!current) "ON" else "OFF"}")
+}
+
+// v630: Branch Auto Merge630
+internal fun PlayerActivity.showV630BranchAutoMerge630Toggle() {
+    val current = BiliClient.prefs.v630branchAutoMerge630
+    BiliClient.prefs.v630branchAutoMerge630 = !current
+    AppToast.show(this, "Branch Auto Merge630: ${if (!current) "ON" else "OFF"}")
+}
+
+// v630: Brand Auto Logo630
+internal fun PlayerActivity.showV630BrandAutoLogo630Toggle() {
+    val current = BiliClient.prefs.v630brandAutoLogo630
+    BiliClient.prefs.v630brandAutoLogo630 = !current
+    AppToast.show(this, "Brand Auto Logo630: ${if (!current) "ON" else "OFF"}")
+}
+
+// v630: Break Auto Resume630
+internal fun PlayerActivity.showV630BreakAutoResume630Toggle() {
+    val current = BiliClient.prefs.v630breakAutoResume630
+    BiliClient.prefs.v630breakAutoResume630 = !current
+    AppToast.show(this, "Break Auto Resume630: ${if (!current) "ON" else "OFF"}")
+}
+
+// v630: Bridge Auto Connect630
+internal fun PlayerActivity.showV630BridgeAutoConnect630Toggle() {
+    val current = BiliClient.prefs.v630bridgeAutoConnect630
+    BiliClient.prefs.v630bridgeAutoConnect630 = !current
+    AppToast.show(this, "Bridge Auto Connect630: ${if (!current) "ON" else "OFF"}")
+}
+
