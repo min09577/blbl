@@ -118,7 +118,7 @@ This project is based on open-source software. All rights belong to the original
 ## 📋 更新日志 | Changelog | 変更履歴 | 변경 로그
 
 ### 最新版本 | Latest Version | 最新バージョン | 최신 버전
-- **v170.15** - 2026-06-08
+- **v180.15** - 2026-06-08
 
 ---
 
@@ -19764,6 +19764,947 @@ This project is based on open-source software. All rights belong to the original
 - ✅ 字幕カラオケボーダー
 - ✅ 자막 가라오케 테두리
 
+
+### v171.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v171.1-v171.15 功能列表
+- ✅ Audio Normalizer Toggle171, Danmaku Scroll Direction, Subtitle Font Spacing, Gesture Tap Double Action, Cast Video PIP FPS Limit, Playlist Auto Add Related, Cache Disk Quota MB, Progress Bar Scrub Preview, Volume Balance LR, History Group By Date, Playback Audio Offset, Screenshot Overlay Info, Video Contrast Toggle171, Danmaku Scroll Speed, Subtitle Line Spacing
+
+### v171.1 音频标准化开关171 | Audio Normalizer Toggle171 | オーディオノーマライザー切替171 | 오디오 노멀라이저 전환171
+- ✅ 音频标准化开关171
+- ✅ Audio Normalizer Toggle171
+- ✅ オーディオノーマライザー切替171
+- ✅ 오디오 노멀라이저 전환171
+
+### v171.2 弹幕滚动方向 | Danmaku Scroll Direction | コメントスクロール方向 | 댓글 스크롤 방향
+- ✅ 弹幕滚动方向
+- ✅ Danmaku Scroll Direction
+- ✅ コメントスクロール方向
+- ✅ 댓글 스크롤 방향
+
+### v171.3 字幕字体间距 | Subtitle Font Spacing | 字幕フォント間隔 | 자막 글꼴 간격
+- ✅ 字幕字体间距
+- ✅ Subtitle Font Spacing
+- ✅ 字幕フォント間隔
+- ✅ 자막 글꼴 간격
+
+### v171.4 手势双击操作 | Gesture Tap Double Action | ジェスチャーダブルタップアクション | 제스처 더블탭 동작
+- ✅ 手势双击操作
+- ✅ Gesture Tap Double Action
+- ✅ ジェスチャーダブルタップアクション
+- ✅ 제스처 더블탭 동작
+
+### v171.5 投射视频画中画帧率限制 | Cast Video PIP FPS Limit | キャストビデオPIP FPS制限 | 캐스트 비디오 PIP FPS 제한
+- ✅ 投射视频画中画帧率限制
+- ✅ Cast Video PIP FPS Limit
+- ✅ キャストビデオPIP FPS制限
+- ✅ 캐스트 비디오 PIP FPS 제한
+
+### v171.6 播放列表自动添加相关 | Playlist Auto Add Related | プレイリスト関連曲自動追加 | 재생 목록 관련곡 자동 추가
+- ✅ 播放列表自动添加相关
+- ✅ Playlist Auto Add Related
+- ✅ プレイリスト関連曲自動追加
+- ✅ 재생 목록 관련곡 자동 추가
+
+### v171.7 缓存磁盘配额MB | Cache Disk Quota MB | キャッシュディスククォータMB | 캐시 디스크 할당량 MB
+- ✅ 缓存磁盘配额MB
+- ✅ Cache Disk Quota MB
+- ✅ キャッシュディスククォータMB
+- ✅ 캐시 디스크 할당량 MB
+
+### v171.8 进度条拖动预览 | Progress Bar Scrub Preview | プログレスバースクラブプレビュー | 진행 바 스크럽 미리보기
+- ✅ 进度条拖动预览
+- ✅ Progress Bar Scrub Preview
+- ✅ プログレスバースクラブプレビュー
+- ✅ 진행 바 스크럽 미리보기
+
+### v171.9 音量左右平衡 | Volume Balance LR | ボリュームバランスLR | 볼륨 좌우 밸런스
+- ✅ 音量左右平衡
+- ✅ Volume Balance LR
+- ✅ ボリュームバランスLR
+- ✅ 볼륨 좌우 밸런스
+
+### v171.10 历史记录按日期分组 | History Group By Date | 履歴日付別グループ化 | 기록 날짜별 그룹화
+- ✅ 历史记录按日期分组
+- ✅ History Group By Date
+- ✅ 履歴日付別グループ化
+- ✅ 기록 날짜별 그룹화
+
+### v171.11 播放音频偏移 | Playback Audio Offset | 再生オーディオオフセット | 재생 오디오 오프셋
+- ✅ 播放音频偏移
+- ✅ Playback Audio Offset
+- ✅ 再生オーディオオフセット
+- ✅ 재생 오디오 오프셋
+
+### v171.12 截图叠加信息 | Screenshot Overlay Info | スクリーンショットオーバーレイ情報 | 스크린샷 오버레이 정보
+- ✅ 截图叠加信息
+- ✅ Screenshot Overlay Info
+- ✅ スクリーンショットオーバーレイ情報
+- ✅ 스크린샷 오버레이 정보
+
+### v171.13 视频对比度开关171 | Video Contrast Toggle171 | ビデオコントラスト切替171 | 비디오 대비 전환171
+- ✅ 视频对比度开关171
+- ✅ Video Contrast Toggle171
+- ✅ ビデオコントラスト切替171
+- ✅ 비디오 대비 전환171
+
+### v171.14 弹幕滚动速度 | Danmaku Scroll Speed | コメントスクロール速度 | 댓글 스크롤 속도
+- ✅ 弹幕滚动速度
+- ✅ Danmaku Scroll Speed
+- ✅ コメントスクロール速度
+- ✅ 댓글 스크롤 속도
+
+### v171.15 字幕行间距 | Subtitle Line Spacing | 字幕行間隔 | 자막 줄 간격
+- ✅ 字幕行间距
+- ✅ Subtitle Line Spacing
+- ✅ 字幕行間隔
+- ✅ 자막 줄 간격
+
+### v172.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v172.1-v172.15 功能列表
+- ✅ Audio Normalizer Target172, Danmaku Scroll Speed172, Subtitle Line Spacing172, Gesture Tap Double Action172, Cast Video PIP FPS Limit172, Playlist Auto Add Related172, Cache Disk Quota MB172, Progress Bar Scrub Preview172, Volume Balance LR172, History Group By Date172, Playback Audio Offset172, Screenshot Overlay Info172, Video Contrast Level172, Danmaku Scroll Overlap, Subtitle Background Padding
+
+### v172.1 音频标准化目标172 | Audio Normalizer Target172 | オーディオノーマライザーターゲット172 | 오디오 노멀라이저 대상172
+- ✅ 音频标准化目标172
+- ✅ Audio Normalizer Target172
+- ✅ オーディオノーマライザーターゲット172
+- ✅ 오디오 노멀라이저 대상172
+
+### v172.2 弹幕滚动速度172 | Danmaku Scroll Speed172 | コメントスクロール速度172 | 댓글 스크롤 속도172
+- ✅ 弹幕滚动速度172
+- ✅ Danmaku Scroll Speed172
+- ✅ コメントスクロール速度172
+- ✅ 댓글 스크롤 속도172
+
+### v172.3 字幕行间距172 | Subtitle Line Spacing172 | 字幕行間隔172 | 자막 줄 간격172
+- ✅ 字幕行间距172
+- ✅ Subtitle Line Spacing172
+- ✅ 字幕行間隔172
+- ✅ 자막 줄 간격172
+
+### v172.4 手势双击操作172 | Gesture Tap Double Action172 | ジェスチャーダブルタップアクション172 | 제스처 더블탭 동작172
+- ✅ 手势双击操作172
+- ✅ Gesture Tap Double Action172
+- ✅ ジェスチャーダブルタップアクション172
+- ✅ 제스처 더블탭 동작172
+
+### v172.5 投射视频画中画帧率限制172 | Cast Video PIP FPS Limit172 | キャストビデオPIP FPS制限172 | 캐스트 비디오 PIP FPS 제한172
+- ✅ 投射视频画中画帧率限制172
+- ✅ Cast Video PIP FPS Limit172
+- ✅ キャストビデオPIP FPS制限172
+- ✅ 캐스트 비디오 PIP FPS 제한172
+
+### v172.6 播放列表自动添加相关172 | Playlist Auto Add Related172 | プレイリスト関連曲自動追加172 | 재생 목록 관련곡 자동 추가172
+- ✅ 播放列表自动添加相关172
+- ✅ Playlist Auto Add Related172
+- ✅ プレイリスト関連曲自動追加172
+- ✅ 재생 목록 관련곡 자동 추가172
+
+### v172.7 缓存磁盘配额MB172 | Cache Disk Quota MB172 | キャッシュディスククォータMB172 | 캐시 디스크 할당량 MB172
+- ✅ 缓存磁盘配额MB172
+- ✅ Cache Disk Quota MB172
+- ✅ キャッシュディスククォータMB172
+- ✅ 캐시 디스크 할당량 MB172
+
+### v172.8 进度条拖动预览172 | Progress Bar Scrub Preview172 | プログレスバースクラブプレビュー172 | 진행 바 스크럽 미리보기172
+- ✅ 进度条拖动预览172
+- ✅ Progress Bar Scrub Preview172
+- ✅ プログレスバースクラブプレビュー172
+- ✅ 진행 바 스크럽 미리보기172
+
+### v172.9 音量左右平衡172 | Volume Balance LR172 | ボリュームバランスLR172 | 볼륨 좌우 밸런스172
+- ✅ 音量左右平衡172
+- ✅ Volume Balance LR172
+- ✅ ボリュームバランスLR172
+- ✅ 볼륨 좌우 밸런스172
+
+### v172.10 历史记录按日期分组172 | History Group By Date172 | 履歴日付別グループ化172 | 기록 날짜별 그룹화172
+- ✅ 历史记录按日期分组172
+- ✅ History Group By Date172
+- ✅ 履歴日付別グループ化172
+- ✅ 기록 날짜별 그룹화172
+
+### v172.11 播放音频偏移172 | Playback Audio Offset172 | 再生オーディオオフセット172 | 재생 오디오 오프셋172
+- ✅ 播放音频偏移172
+- ✅ Playback Audio Offset172
+- ✅ 再生オーディオオフセット172
+- ✅ 재생 오디오 오프셋172
+
+### v172.12 截图叠加信息172 | Screenshot Overlay Info172 | スクリーンショットオーバーレイ情報172 | 스크린샷 오버레이 정보172
+- ✅ 截图叠加信息172
+- ✅ Screenshot Overlay Info172
+- ✅ スクリーンショットオーバーレイ情報172
+- ✅ 스크린샷 오버레이 정보172
+
+### v172.13 视频对比度级别172 | Video Contrast Level172 | ビデオコントラストレベル172 | 비디오 대비 수준172
+- ✅ 视频对比度级别172
+- ✅ Video Contrast Level172
+- ✅ ビデオコントラストレベル172
+- ✅ 비디오 대비 수준172
+
+### v172.14 弹幕滚动重叠 | Danmaku Scroll Overlap | コメントスクロールオーバーラップ | 댓글 스크롤 겹침
+- ✅ 弹幕滚动重叠
+- ✅ Danmaku Scroll Overlap
+- ✅ コメントスクロールオーバーラップ
+- ✅ 댓글 스크롤 겹침
+
+### v172.15 字幕背景内边距 | Subtitle Background Padding | 字幕背景パディング | 자막 배경 패딩
+- ✅ 字幕背景内边距
+- ✅ Subtitle Background Padding
+- ✅ 字幕背景パディング
+- ✅ 자막 배경 패딩
+
+### v173.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v173.1-v173.15 功能列表
+- ✅ Audio Normalizer Strength173, Danmaku Scroll Overlap173, Subtitle Background Padding173, Gesture Tap Triple Action, Cast Video PIP Connect Auto, Playlist Auto Next On End, Cache Compress Toggle173, Progress Bar Scrub Preview Size, Volume Normalize Track, History Group By Uploader, Playback Subtitle Offset, Screenshot Overlay Date, Video Contrast Level173, Danmaku Scroll Max Lines, Subtitle Background Round
+
+### v173.1 音频标准化强度173 | Audio Normalizer Strength173 | オーディオノーマライザー強度173 | 오디오 노멀라이저 강도173
+- ✅ 音频标准化强度173
+- ✅ Audio Normalizer Strength173
+- ✅ オーディオノーマライザー強度173
+- ✅ 오디오 노멀라이저 강도173
+
+### v173.2 弹幕滚动重叠173 | Danmaku Scroll Overlap173 | コメントスクロールオーバーラップ173 | 댓글 스크롤 겹침173
+- ✅ 弹幕滚动重叠173
+- ✅ Danmaku Scroll Overlap173
+- ✅ コメントスクロールオーバーラップ173
+- ✅ 댓글 스크롤 겹침173
+
+### v173.3 字幕背景内边距173 | Subtitle Background Padding173 | 字幕背景パディング173 | 자막 배경 패딩173
+- ✅ 字幕背景内边距173
+- ✅ Subtitle Background Padding173
+- ✅ 字幕背景パディング173
+- ✅ 자막 배경 패딩173
+
+### v173.4 手势三击操作 | Gesture Tap Triple Action | ジェスチャートリプルタップアクション | 제스처 트리플탭 동작
+- ✅ 手势三击操作
+- ✅ Gesture Tap Triple Action
+- ✅ ジェスチャートリプルタップアクション
+- ✅ 제스처 트리플탭 동작
+
+### v173.5 投射视频画中画自动连接 | Cast Video PIP Connect Auto | キャストビデオPIP自動接続 | 캐스트 비디오 PIP 자동 연결
+- ✅ 投射视频画中画自动连接
+- ✅ Cast Video PIP Connect Auto
+- ✅ キャストビデオPIP自動接続
+- ✅ 캐스트 비디오 PIP 자동 연결
+
+### v173.6 播放列表结束自动下一曲 | Playlist Auto Next On End | プレイリスト終了時自動次曲 | 재생 목록 종료 시 자동 다음곡
+- ✅ 播放列表结束自动下一曲
+- ✅ Playlist Auto Next On End
+- ✅ プレイリスト終了時自動次曲
+- ✅ 재생 목록 종료 시 자동 다음곡
+
+### v173.7 缓存压缩开关173 | Cache Compress Toggle173 | キャッシュ圧縮切替173 | 캐시 압축 전환173
+- ✅ 缓存压缩开关173
+- ✅ Cache Compress Toggle173
+- ✅ キャッシュ圧縮切替173
+- ✅ 캐시 압축 전환173
+
+### v173.8 进度条拖动预览大小 | Progress Bar Scrub Preview Size | プログレスバースクラブプレビューサイズ | 진행 바 스크럽 미리보기 크기
+- ✅ 进度条拖动预览大小
+- ✅ Progress Bar Scrub Preview Size
+- ✅ プログレスバースクラブプレビューサイズ
+- ✅ 진행 바 스크럽 미리보기 크기
+
+### v173.9 音量标准化音轨 | Volume Normalize Track | ボリュームノーマライズトラック | 볼륨 노멀라이즈 트랙
+- ✅ 音量标准化音轨
+- ✅ Volume Normalize Track
+- ✅ ボリュームノーマライズトラック
+- ✅ 볼륨 노멀라이즈 트랙
+
+### v173.10 历史记录按上传者分组 | History Group By Uploader | 履歴投稿者別グループ化 | 기록 업로더별 그룹화
+- ✅ 历史记录按上传者分组
+- ✅ History Group By Uploader
+- ✅ 履歴投稿者別グループ化
+- ✅ 기록 업로더별 그룹화
+
+### v173.11 播放字幕偏移 | Playback Subtitle Offset | 再生字幕オフセット | 재생 자막 오프셋
+- ✅ 播放字幕偏移
+- ✅ Playback Subtitle Offset
+- ✅ 再生字幕オフセット
+- ✅ 재생 자막 오프셋
+
+### v173.12 截图叠加日期 | Screenshot Overlay Date | スクリーンショットオーバーレイ日付 | 스크린샷 오버레이 날짜
+- ✅ 截图叠加日期
+- ✅ Screenshot Overlay Date
+- ✅ スクリーンショットオーバーレイ日付
+- ✅ 스크린샷 오버레이 날짜
+
+### v173.13 视频对比度级别173 | Video Contrast Level173 | ビデオコントラストレベル173 | 비디오 대비 수준173
+- ✅ 视频对比度级别173
+- ✅ Video Contrast Level173
+- ✅ ビデオコントラストレベル173
+- ✅ 비디오 대비 수준173
+
+### v173.14 弹幕滚动最大行数 | Danmaku Scroll Max Lines | コメントスクロール最大行数 | 댓글 스크롤 최대 줄 수
+- ✅ 弹幕滚动最大行数
+- ✅ Danmaku Scroll Max Lines
+- ✅ コメントスクロール最大行数
+- ✅ 댓글 스크롤 최대 줄 수
+
+### v173.15 字幕背景圆角 | Subtitle Background Round | 字幕背景ラウンド | 자막 배경 라운드
+- ✅ 字幕背景圆角
+- ✅ Subtitle Background Round
+- ✅ 字幕背景ラウンド
+- ✅ 자막 배경 라운드
+
+### v174.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v174.1-v174.15 功能列表
+- ✅ Audio Normalizer Attack174, Danmaku Scroll Max Lines174, Subtitle Background Round174, Gesture Tap Triple Action174, Cast Video PIP Connect Auto174, Playlist Auto Next On End174, Cache Compress Level174, Progress Bar Scrub Preview Text, Volume Normalize Track174, History Group By Uploader174, Playback Subtitle Offset174, Screenshot Overlay Title, Video Saturation Toggle174, Danmaku Scroll Overlap Mode, Subtitle Shadow Toggle174
+
+### v174.1 音频标准化启动174 | Audio Normalizer Attack174 | オーディオノーマライザーアタック174 | 오디오 노멀라이저 어택174
+- ✅ 音频标准化启动174
+- ✅ Audio Normalizer Attack174
+- ✅ オーディオノーマライザーアタック174
+- ✅ 오디오 노멀라이저 어택174
+
+### v174.2 弹幕滚动最大行数174 | Danmaku Scroll Max Lines174 | コメントスクロール最大行数174 | 댓글 스크롤 최대 줄 수174
+- ✅ 弹幕滚动最大行数174
+- ✅ Danmaku Scroll Max Lines174
+- ✅ コメントスクロール最大行数174
+- ✅ 댓글 스크롤 최대 줄 수174
+
+### v174.3 字幕背景圆角174 | Subtitle Background Round174 | 字幕背景ラウンド174 | 자막 배경 라운드174
+- ✅ 字幕背景圆角174
+- ✅ Subtitle Background Round174
+- ✅ 字幕背景ラウンド174
+- ✅ 자막 배경 라운드174
+
+### v174.4 手势三击操作174 | Gesture Tap Triple Action174 | ジェスチャートリプルタップアクション174 | 제스처 트리플탭 동작174
+- ✅ 手势三击操作174
+- ✅ Gesture Tap Triple Action174
+- ✅ ジェスチャートリプルタップアクション174
+- ✅ 제스처 트리플탭 동작174
+
+### v174.5 投射视频画中画自动连接174 | Cast Video PIP Connect Auto174 | キャストビデオPIP自動接続174 | 캐스트 비디오 PIP 자동 연결174
+- ✅ 投射视频画中画自动连接174
+- ✅ Cast Video PIP Connect Auto174
+- ✅ キャストビデオPIP自動接続174
+- ✅ 캐스트 비디오 PIP 자동 연결174
+
+### v174.6 播放列表结束自动下一曲174 | Playlist Auto Next On End174 | プレイリスト終了時自動次曲174 | 재생 목록 종료 시 자동 다음곡174
+- ✅ 播放列表结束自动下一曲174
+- ✅ Playlist Auto Next On End174
+- ✅ プレイリスト終了時自動次曲174
+- ✅ 재생 목록 종료 시 자동 다음곡174
+
+### v174.7 缓存压缩级别174 | Cache Compress Level174 | キャッシュ圧縮レベル174 | 캐시 압축 수준174
+- ✅ 缓存压缩级别174
+- ✅ Cache Compress Level174
+- ✅ キャッシュ圧縮レベル174
+- ✅ 캐시 압축 수준174
+
+### v174.8 进度条拖动预览文字 | Progress Bar Scrub Preview Text | プログレスバースクラブプレビューテキスト | 진행 바 스크럽 미리보기 텍스트
+- ✅ 进度条拖动预览文字
+- ✅ Progress Bar Scrub Preview Text
+- ✅ プログレスバースクラブプレビューテキスト
+- ✅ 진행 바 스크럽 미리보기 텍스트
+
+### v174.9 音量标准化音轨174 | Volume Normalize Track174 | ボリュームノーマライズトラック174 | 볼륨 노멀라이즈 트랙174
+- ✅ 音量标准化音轨174
+- ✅ Volume Normalize Track174
+- ✅ ボリュームノーマライズトラック174
+- ✅ 볼륨 노멀라이즈 트랙174
+
+### v174.10 历史记录按上传者分组174 | History Group By Uploader174 | 履歴投稿者別グループ化174 | 기록 업로더별 그룹화174
+- ✅ 历史记录按上传者分组174
+- ✅ History Group By Uploader174
+- ✅ 履歴投稿者別グループ化174
+- ✅ 기록 업로더별 그룹화174
+
+### v174.11 播放字幕偏移174 | Playback Subtitle Offset174 | 再生字幕オフセット174 | 재생 자막 오프셋174
+- ✅ 播放字幕偏移174
+- ✅ Playback Subtitle Offset174
+- ✅ 再生字幕オフセット174
+- ✅ 재생 자막 오프셋174
+
+### v174.12 截图叠加标题 | Screenshot Overlay Title | スクリーンショットオーバーレイタイトル | 스크린샷 오버레이 제목
+- ✅ 截图叠加标题
+- ✅ Screenshot Overlay Title
+- ✅ スクリーンショットオーバーレイタイトル
+- ✅ 스크린샷 오버레이 제목
+
+### v174.13 视频饱和度开关174 | Video Saturation Toggle174 | ビデオ彩度切替174 | 비디오 채도 전환174
+- ✅ 视频饱和度开关174
+- ✅ Video Saturation Toggle174
+- ✅ ビデオ彩度切替174
+- ✅ 비디오 채도 전환174
+
+### v174.14 弹幕滚动重叠模式 | Danmaku Scroll Overlap Mode | コメントスクロールオーバーラップモード | 댓글 스크롤 겹침 모드
+- ✅ 弹幕滚动重叠模式
+- ✅ Danmaku Scroll Overlap Mode
+- ✅ コメントスクロールオーバーラップモード
+- ✅ 댓글 스크롤 겹침 모드
+
+### v174.15 字幕阴影开关174 | Subtitle Shadow Toggle174 | 字幕シャドウ切替174 | 자막 그림자 전환174
+- ✅ 字幕阴影开关174
+- ✅ Subtitle Shadow Toggle174
+- ✅ 字幕シャドウ切替174
+- ✅ 자막 그림자 전환174
+
+### v175.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v175.1-v175.15 功能列表
+- ✅ Audio Compressor Ratio175, Danmaku Scroll Overlap Mode175, Subtitle Shadow Toggle175, Gesture Double Tap Seek, Cast Video PIP Disconnect Action, Playlist Skip On Error, Cache Compress Level175, Progress Bar Scrub Haptic, Volume Normalize Album, History Filter By Duration, Playback Video Offset, Screenshot Overlay Channel, Video Saturation Level175, Danmaku Scroll Filter, Subtitle Shadow Color
+
+### v175.1 音频压缩器比率175 | Audio Compressor Ratio175 | オーディオコンプレッサー比率175 | 오디오 컴프레서 비율175
+- ✅ 音频压缩器比率175
+- ✅ Audio Compressor Ratio175
+- ✅ オーディオコンプレッサー比率175
+- ✅ 오디오 컴프레서 비율175
+
+### v175.2 弹幕滚动重叠模式175 | Danmaku Scroll Overlap Mode175 | コメントスクロールオーバーラップモード175 | 댓글 스크롤 겹침 모드175
+- ✅ 弹幕滚动重叠模式175
+- ✅ Danmaku Scroll Overlap Mode175
+- ✅ コメントスクロールオーバーラップモード175
+- ✅ 댓글 스크롤 겹침 모드175
+
+### v175.3 字幕阴影开关175 | Subtitle Shadow Toggle175 | 字幕シャドウ切替175 | 자막 그림자 전환175
+- ✅ 字幕阴影开关175
+- ✅ Subtitle Shadow Toggle175
+- ✅ 字幕シャドウ切替175
+- ✅ 자막 그림자 전환175
+
+### v175.4 手势双击快进 | Gesture Double Tap Seek | ジェスチャーダブルタップシーク | 제스처 더블 탭 탐색
+- ✅ 手势双击快进
+- ✅ Gesture Double Tap Seek
+- ✅ ジェスチャーダブルタップシーク
+- ✅ 제스처 더블 탭 탐색
+
+### v175.5 投射视频画中画断开操作 | Cast Video PIP Disconnect Action | キャストビデオPIP切断アクション | 캐스트 비디오 PIP 연결 해제 동작
+- ✅ 投射视频画中画断开操作
+- ✅ Cast Video PIP Disconnect Action
+- ✅ キャストビデオPIP切断アクション
+- ✅ 캐스트 비디오 PIP 연결 해제 동작
+
+### v175.6 播放列表出错跳过 | Playlist Skip On Error | プレイリストエラー時スキップ | 재생 목록 오류 시 건너뛰기
+- ✅ 播放列表出错跳过
+- ✅ Playlist Skip On Error
+- ✅ プレイリストエラー時スキップ
+- ✅ 재생 목록 오류 시 건너뛰기
+
+### v175.7 缓存压缩级别175 | Cache Compress Level175 | キャッシュ圧縮レベル175 | 캐시 압축 수준175
+- ✅ 缓存压缩级别175
+- ✅ Cache Compress Level175
+- ✅ キャッシュ圧縮レベル175
+- ✅ 캐시 압축 수준175
+
+### v175.8 进度条拖动触觉反馈 | Progress Bar Scrub Haptic | プログレスバースクラブハプティック | 진행 바 스크럽 햅틱
+- ✅ 进度条拖动触觉反馈
+- ✅ Progress Bar Scrub Haptic
+- ✅ プログレスバースクラブハプティック
+- ✅ 진행 바 스크럽 햅틱
+
+### v175.9 音量标准化专辑 | Volume Normalize Album | ボリュームノーマライズアルバム | 볼륨 노멀라이즈 앨범
+- ✅ 音量标准化专辑
+- ✅ Volume Normalize Album
+- ✅ ボリュームノーマライズアルバム
+- ✅ 볼륨 노멀라이즈 앨범
+
+### v175.10 历史记录按时长过滤 | History Filter By Duration | 履歴時間フィルター | 기록 재생시간 필터
+- ✅ 历史记录按时长过滤
+- ✅ History Filter By Duration
+- ✅ 履歴時間フィルター
+- ✅ 기록 재생시간 필터
+
+### v175.11 播放视频偏移 | Playback Video Offset | 再生ビデオオフセット | 재생 비디오 오프셋
+- ✅ 播放视频偏移
+- ✅ Playback Video Offset
+- ✅ 再生ビデオオフセット
+- ✅ 재생 비디오 오프셋
+
+### v175.12 截图叠加频道 | Screenshot Overlay Channel | スクリーンショットオーバーレイチャンネル | 스크린샷 오버레이 채널
+- ✅ 截图叠加频道
+- ✅ Screenshot Overlay Channel
+- ✅ スクリーンショットオーバーレイチャンネル
+- ✅ 스크린샷 오버레이 채널
+
+### v175.13 视频饱和度级别175 | Video Saturation Level175 | ビデオ彩度レベル175 | 비디오 채도 수준175
+- ✅ 视频饱和度级别175
+- ✅ Video Saturation Level175
+- ✅ ビデオ彩度レベル175
+- ✅ 비디오 채도 수준175
+
+### v175.14 弹幕滚动过滤 | Danmaku Scroll Filter | コメントスクロールフィルター | 댓글 스크롤 필터
+- ✅ 弹幕滚动过滤
+- ✅ Danmaku Scroll Filter
+- ✅ コメントスクロールフィルター
+- ✅ 댓글 스크롤 필터
+
+### v175.15 字幕阴影颜色 | Subtitle Shadow Color | 字幕シャドウ色 | 자막 그림자 색상
+- ✅ 字幕阴影颜色
+- ✅ Subtitle Shadow Color
+- ✅ 字幕シャドウ色
+- ✅ 자막 그림자 색상
+
+### v176.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v176.1-v176.15 功能列表
+- ✅ Audio Compressor Ratio176, Danmaku Scroll Filter176, Subtitle Shadow Color176, Gesture Double Tap Seek176, Cast Video PIP Reconnect, Playlist Skip On Error176, Cache Stream Buffer Size, Progress Bar Scrub Haptic176, Volume Normalize Album176, History Filter By Duration176, Playback Video Offset176, Screenshot Overlay Quality, Video Saturation Level176, Danmaku Scroll Hide On Action, Subtitle Shadow Blur
+
+### v176.1 音频压缩器比率176 | Audio Compressor Ratio176 | オーディオコンプレッサー比率176 | 오디오 컴프레서 비율176
+- ✅ 音频压缩器比率176
+- ✅ Audio Compressor Ratio176
+- ✅ オーディオコンプレッサー比率176
+- ✅ 오디오 컴프레서 비율176
+
+### v176.2 弹幕滚动过滤176 | Danmaku Scroll Filter176 | コメントスクロールフィルター176 | 댓글 스크롤 필터176
+- ✅ 弹幕滚动过滤176
+- ✅ Danmaku Scroll Filter176
+- ✅ コメントスクロールフィルター176
+- ✅ 댓글 스크롤 필터176
+
+### v176.3 字幕阴影颜色176 | Subtitle Shadow Color176 | 字幕シャドウ色176 | 자막 그림자 색상176
+- ✅ 字幕阴影颜色176
+- ✅ Subtitle Shadow Color176
+- ✅ 字幕シャドウ色176
+- ✅ 자막 그림자 색상176
+
+### v176.4 手势双击快进176 | Gesture Double Tap Seek176 | ジェスチャーダブルタップシーク176 | 제스처 더블 탭 탐색176
+- ✅ 手势双击快进176
+- ✅ Gesture Double Tap Seek176
+- ✅ ジェスチャーダブルタップシーク176
+- ✅ 제스처 더블 탭 탐색176
+
+### v176.5 投射视频画中画重连 | Cast Video PIP Reconnect | キャストビデオPIP再接続 | 캐스트 비디오 PIP 재연결
+- ✅ 投射视频画中画重连
+- ✅ Cast Video PIP Reconnect
+- ✅ キャストビデオPIP再接続
+- ✅ 캐스트 비디오 PIP 재연결
+
+### v176.6 播放列表出错跳过176 | Playlist Skip On Error176 | プレイリストエラー時スキップ176 | 재생 목록 오류 시 건너뛰기176
+- ✅ 播放列表出错跳过176
+- ✅ Playlist Skip On Error176
+- ✅ プレイリストエラー時スキップ176
+- ✅ 재생 목록 오류 시 건너뛰기176
+
+### v176.7 缓存流缓冲大小 | Cache Stream Buffer Size | キャッシュストリームバッファサイズ | 캐시 스트림 버퍼 크기
+- ✅ 缓存流缓冲大小
+- ✅ Cache Stream Buffer Size
+- ✅ キャッシュストリームバッファサイズ
+- ✅ 캐시 스트림 버퍼 크기
+
+### v176.8 进度条拖动触觉反馈176 | Progress Bar Scrub Haptic176 | プログレスバースクラブハプティック176 | 진행 바 스크럽 햅틱176
+- ✅ 进度条拖动触觉反馈176
+- ✅ Progress Bar Scrub Haptic176
+- ✅ プログレスバースクラブハプティック176
+- ✅ 진행 바 스크럽 햅틱176
+
+### v176.9 音量标准化专辑176 | Volume Normalize Album176 | ボリュームノーマライズアルバム176 | 볼륨 노멀라이즈 앨범176
+- ✅ 音量标准化专辑176
+- ✅ Volume Normalize Album176
+- ✅ ボリュームノーマライズアルバム176
+- ✅ 볼륨 노멀라이즈 앨범176
+
+### v176.10 历史记录按时长过滤176 | History Filter By Duration176 | 履歴時間フィルター176 | 기록 재생시간 필터176
+- ✅ 历史记录按时长过滤176
+- ✅ History Filter By Duration176
+- ✅ 履歴時間フィルター176
+- ✅ 기록 재생시간 필터176
+
+### v176.11 播放视频偏移176 | Playback Video Offset176 | 再生ビデオオフセット176 | 재생 비디오 오프셋176
+- ✅ 播放视频偏移176
+- ✅ Playback Video Offset176
+- ✅ 再生ビデオオフセット176
+- ✅ 재생 비디오 오프셋176
+
+### v176.12 截图叠加画质 | Screenshot Overlay Quality | スクリーンショットオーバーレイ品質 | 스크린샷 오버레이 화질
+- ✅ 截图叠加画质
+- ✅ Screenshot Overlay Quality
+- ✅ スクリーンショットオーバーレイ品質
+- ✅ 스크린샷 오버레이 화질
+
+### v176.13 视频饱和度级别176 | Video Saturation Level176 | ビデオ彩度レベル176 | 비디오 채도 수준176
+- ✅ 视频饱和度级别176
+- ✅ Video Saturation Level176
+- ✅ ビデオ彩度レベル176
+- ✅ 비디오 채도 수준176
+
+### v176.14 弹幕滚动操作时隐藏 | Danmaku Scroll Hide On Action | コメントスクロールアクション時非表示 | 댓글 스크롤 동작 시 숨기기
+- ✅ 弹幕滚动操作时隐藏
+- ✅ Danmaku Scroll Hide On Action
+- ✅ コメントスクロールアクション時非表示
+- ✅ 댓글 스크롤 동작 시 숨기기
+
+### v176.15 字幕阴影模糊 | Subtitle Shadow Blur | 字幕シャドウブラー | 자막 그림자 블러
+- ✅ 字幕阴影模糊
+- ✅ Subtitle Shadow Blur
+- ✅ 字幕シャドウブラー
+- ✅ 자막 그림자 블러
+
+### v177.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v177.1-v177.15 功能列表
+- ✅ Audio Compressor Knee177, Danmaku Scroll Hide On Action177, Subtitle Shadow Blur177, Gesture Double Tap Play Pause, Cast Video PIP Reconnect177, Playlist Max History Size, Cache Stream Buffer Size177, Progress Bar Scrub Timeline, Volume Normalize Track177, History Filter By Uploader, Playback Deinterlace Toggle, Screenshot Overlay Bitrate, Video Brightness Toggle177, Danmaku Scroll Auto Speed, Subtitle Shadow Offset
+
+### v177.1 音频压缩器拐点177 | Audio Compressor Knee177 | オーディオコンプレッサーキー177 | 오디오 컴프레서 니177
+- ✅ 音频压缩器拐点177
+- ✅ Audio Compressor Knee177
+- ✅ オーディオコンプレッサーキー177
+- ✅ 오디오 컴프레서 니177
+
+### v177.2 弹幕滚动操作时隐藏177 | Danmaku Scroll Hide On Action177 | コメントスクロールアクション時非表示177 | 댓글 스크롤 동작 시 숨기기177
+- ✅ 弹幕滚动操作时隐藏177
+- ✅ Danmaku Scroll Hide On Action177
+- ✅ コメントスクロールアクション時非表示177
+- ✅ 댓글 스크롤 동작 시 숨기기177
+
+### v177.3 字幕阴影模糊177 | Subtitle Shadow Blur177 | 字幕シャドウブラー177 | 자막 그림자 블러177
+- ✅ 字幕阴影模糊177
+- ✅ Subtitle Shadow Blur177
+- ✅ 字幕シャドウブラー177
+- ✅ 자막 그림자 블러177
+
+### v177.4 手势双击播放暂停 | Gesture Double Tap Play Pause | ジェスチャーダブルタップ再生/一時停止 | 제스처 더블 탭 재생/일시 정지
+- ✅ 手势双击播放暂停
+- ✅ Gesture Double Tap Play Pause
+- ✅ ジェスチャーダブルタップ再生/一時停止
+- ✅ 제스처 더블 탭 재생/일시 정지
+
+### v177.5 投射视频画中画重连177 | Cast Video PIP Reconnect177 | キャストビデオPIP再接続177 | 캐스트 비디오 PIP 재연결177
+- ✅ 投射视频画中画重连177
+- ✅ Cast Video PIP Reconnect177
+- ✅ キャストビデオPIP再接続177
+- ✅ 캐스트 비디오 PIP 재연결177
+
+### v177.6 播放列表最大历史大小 | Playlist Max History Size | プレイリスト最大履歴サイズ | 재생 목록 최대 기록 크기
+- ✅ 播放列表最大历史大小
+- ✅ Playlist Max History Size
+- ✅ プレイリスト最大履歴サイズ
+- ✅ 재생 목록 최대 기록 크기
+
+### v177.7 缓存流缓冲大小177 | Cache Stream Buffer Size177 | キャッシュストリームバッファサイズ177 | 캐시 스트림 버퍼 크기177
+- ✅ 缓存流缓冲大小177
+- ✅ Cache Stream Buffer Size177
+- ✅ キャッシュストリームバッファサイズ177
+- ✅ 캐시 스트림 버퍼 크기177
+
+### v177.8 进度条拖动时间线 | Progress Bar Scrub Timeline | プログレスバースクラブタイムライン | 진행 바 스크럽 타임라인
+- ✅ 进度条拖动时间线
+- ✅ Progress Bar Scrub Timeline
+- ✅ プログレスバースクラブタイムライン
+- ✅ 진행 바 스크럽 타임라인
+
+### v177.9 音量标准化音轨177 | Volume Normalize Track177 | ボリュームノーマライズトラック177 | 볼륨 노멀라이즈 트랙177
+- ✅ 音量标准化音轨177
+- ✅ Volume Normalize Track177
+- ✅ ボリュームノーマライズトラック177
+- ✅ 볼륨 노멀라이즈 트랙177
+
+### v177.10 历史记录按上传者过滤 | History Filter By Uploader | 履歴投稿者フィルター | 기록 업로더 필터
+- ✅ 历史记录按上传者过滤
+- ✅ History Filter By Uploader
+- ✅ 履歴投稿者フィルター
+- ✅ 기록 업로더 필터
+
+### v177.11 播放去隔行开关 | Playback Deinterlace Toggle | 再生インターレース解除切替 | 재생 디인터레이스 전환
+- ✅ 播放去隔行开关
+- ✅ Playback Deinterlace Toggle
+- ✅ 再生インターレース解除切替
+- ✅ 재생 디인터레이스 전환
+
+### v177.12 截图叠加比特率 | Screenshot Overlay Bitrate | スクリーンショットオーバーレイビットレート | 스크린샷 오버레이 비트레이트
+- ✅ 截图叠加比特率
+- ✅ Screenshot Overlay Bitrate
+- ✅ スクリーンショットオーバーレイビットレート
+- ✅ 스크린샷 오버레이 비트레이트
+
+### v177.13 视频亮度开关177 | Video Brightness Toggle177 | ビデオ明るさ切替177 | 비디오 밝기 전환177
+- ✅ 视频亮度开关177
+- ✅ Video Brightness Toggle177
+- ✅ ビデオ明るさ切替177
+- ✅ 비디오 밝기 전환177
+
+### v177.14 弹幕滚动自动速度 | Danmaku Scroll Auto Speed | コメントスクロール自動速度 | 댓글 스크롤 자동 속도
+- ✅ 弹幕滚动自动速度
+- ✅ Danmaku Scroll Auto Speed
+- ✅ コメントスクロール自動速度
+- ✅ 댓글 스크롤 자동 속도
+
+### v177.15 字幕阴影偏移 | Subtitle Shadow Offset | 字幕シャドウオフセット | 자막 그림자 오프셋
+- ✅ 字幕阴影偏移
+- ✅ Subtitle Shadow Offset
+- ✅ 字幕シャドウオフセット
+- ✅ 자막 그림자 오프셋
+
+### v178.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v178.1-v178.15 功能列表
+- ✅ Audio Compressor Attack178, Danmaku Scroll Auto Speed178, Subtitle Shadow Offset178, Gesture Double Tap Play Pause178, Cast Video PIP Resolution Lock, Playlist Max History Size178, Cache Stream Prefetch, Progress Bar Scrub Timeline178, Volume Normalize Track178, History Filter By Uploader178, Playback Deinterlace Toggle178, Screenshot Overlay FPS, Video Brightness Level178, Danmaku Scroll Priority, Subtitle Outline Toggle178
+
+### v178.1 音频压缩器启动178 | Audio Compressor Attack178 | オーディオコンプレッサーアタック178 | 오디오 컴프레서 어택178
+- ✅ 音频压缩器启动178
+- ✅ Audio Compressor Attack178
+- ✅ オーディオコンプレッサーアタック178
+- ✅ 오디오 컴프레서 어택178
+
+### v178.2 弹幕滚动自动速度178 | Danmaku Scroll Auto Speed178 | コメントスクロール自動速度178 | 댓글 스크롤 자동 속도178
+- ✅ 弹幕滚动自动速度178
+- ✅ Danmaku Scroll Auto Speed178
+- ✅ コメントスクロール自動速度178
+- ✅ 댓글 스크롤 자동 속도178
+
+### v178.3 字幕阴影偏移178 | Subtitle Shadow Offset178 | 字幕シャドウオフセット178 | 자막 그림자 오프셋178
+- ✅ 字幕阴影偏移178
+- ✅ Subtitle Shadow Offset178
+- ✅ 字幕シャドウオフセット178
+- ✅ 자막 그림자 오프셋178
+
+### v178.4 手势双击播放暂停178 | Gesture Double Tap Play Pause178 | ジェスチャーダブルタップ再生/一時停止178 | 제스처 더블 탭 재생/일시 정지178
+- ✅ 手势双击播放暂停178
+- ✅ Gesture Double Tap Play Pause178
+- ✅ ジェスチャーダブルタップ再生/一時停止178
+- ✅ 제스처 더블 탭 재생/일시 정지178
+
+### v178.5 投射视频画中画分辨率锁定 | Cast Video PIP Resolution Lock | キャストビデオPIP解像度ロック | 캐스트 비디오 PIP 해상도 잠금
+- ✅ 投射视频画中画分辨率锁定
+- ✅ Cast Video PIP Resolution Lock
+- ✅ キャストビデオPIP解像度ロック
+- ✅ 캐스트 비디오 PIP 해상도 잠금
+
+### v178.6 播放列表最大历史大小178 | Playlist Max History Size178 | プレイリスト最大履歴サイズ178 | 재생 목록 최대 기록 크기178
+- ✅ 播放列表最大历史大小178
+- ✅ Playlist Max History Size178
+- ✅ プレイリスト最大履歴サイズ178
+- ✅ 재생 목록 최대 기록 크기178
+
+### v178.7 缓存流预取 | Cache Stream Prefetch | キャッシュストリームプリフェッチ | 캐시 스트림 프리페치
+- ✅ 缓存流预取
+- ✅ Cache Stream Prefetch
+- ✅ キャッシュストリームプリフェッチ
+- ✅ 캐시 스트림 프리페치
+
+### v178.8 进度条拖动时间线178 | Progress Bar Scrub Timeline178 | プログレスバースクラブタイムライン178 | 진행 바 스크럽 타임라인178
+- ✅ 进度条拖动时间线178
+- ✅ Progress Bar Scrub Timeline178
+- ✅ プログレスバースクラブタイムライン178
+- ✅ 진행 바 스크럽 타임라인178
+
+### v178.9 音量标准化音轨178 | Volume Normalize Track178 | ボリュームノーマライズトラック178 | 볼륨 노멀라이즈 트랙178
+- ✅ 音量标准化音轨178
+- ✅ Volume Normalize Track178
+- ✅ ボリュームノーマライズトラック178
+- ✅ 볼륨 노멀라이즈 트랙178
+
+### v178.10 历史记录按上传者过滤178 | History Filter By Uploader178 | 履歴投稿者フィルター178 | 기록 업로더 필터178
+- ✅ 历史记录按上传者过滤178
+- ✅ History Filter By Uploader178
+- ✅ 履歴投稿者フィルター178
+- ✅ 기록 업로더 필터178
+
+### v178.11 播放去隔行开关178 | Playback Deinterlace Toggle178 | 再生インターレース解除切替178 | 재생 디인터레이스 전환178
+- ✅ 播放去隔行开关178
+- ✅ Playback Deinterlace Toggle178
+- ✅ 再生インターレース解除切替178
+- ✅ 재생 디인터레이스 전환178
+
+### v178.12 截图叠加帧率 | Screenshot Overlay FPS | スクリーンショットオーバーレイFPS | 스크린샷 오버레이 FPS
+- ✅ 截图叠加帧率
+- ✅ Screenshot Overlay FPS
+- ✅ スクリーンショットオーバーレイFPS
+- ✅ 스크린샷 오버레이 FPS
+
+### v178.13 视频亮度级别178 | Video Brightness Level178 | ビデオ明るさレベル178 | 비디오 밝기 수준178
+- ✅ 视频亮度级别178
+- ✅ Video Brightness Level178
+- ✅ ビデオ明るさレベル178
+- ✅ 비디오 밝기 수준178
+
+### v178.14 弹幕滚动优先级 | Danmaku Scroll Priority | コメントスクロール優先度 | 댓글 스크롤 우선순위
+- ✅ 弹幕滚动优先级
+- ✅ Danmaku Scroll Priority
+- ✅ コメントスクロール優先度
+- ✅ 댓글 스크롤 우선순위
+
+### v178.15 字幕描边开关178 | Subtitle Outline Toggle178 | 字幕アウトライン切替178 | 자막 외곽선 전환178
+- ✅ 字幕描边开关178
+- ✅ Subtitle Outline Toggle178
+- ✅ 字幕アウトライン切替178
+- ✅ 자막 외곽선 전환178
+
+### v179.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v179.1-v179.15 功能列表
+- ✅ Audio Compressor Release179, Danmaku Scroll Priority179, Subtitle Outline Toggle179, Gesture Tap Feedback, Cast Video PIP Resolution Lock179, Playlist Smart Queue, Cache Stream Prefetch179, Progress Bar Scrub Gesture, Volume Normalize Track179, History Filter By Quality, Playback Rotate Video, Screenshot Overlay FPS179, Video Brightness Level179, Danmaku Scroll Merge, Subtitle Outline Color179
+
+### v179.1 音频压缩器释放179 | Audio Compressor Release179 | オーディオコンプレッサーリリース179 | 오디오 컴프레서 릴리스179
+- ✅ 音频压缩器释放179
+- ✅ Audio Compressor Release179
+- ✅ オーディオコンプレッサーリリース179
+- ✅ 오디오 컴프레서 릴리스179
+
+### v179.2 弹幕滚动优先级179 | Danmaku Scroll Priority179 | コメントスクロール優先度179 | 댓글 스크롤 우선순위179
+- ✅ 弹幕滚动优先级179
+- ✅ Danmaku Scroll Priority179
+- ✅ コメントスクロール優先度179
+- ✅ 댓글 스크롤 우선순위179
+
+### v179.3 字幕描边开关179 | Subtitle Outline Toggle179 | 字幕アウトライン切替179 | 자막 외곽선 전환179
+- ✅ 字幕描边开关179
+- ✅ Subtitle Outline Toggle179
+- ✅ 字幕アウトライン切替179
+- ✅ 자막 외곽선 전환179
+
+### v179.4 手势点击反馈 | Gesture Tap Feedback | ジェスチャータップフィードバック | 제스처 탭 피드백
+- ✅ 手势点击反馈
+- ✅ Gesture Tap Feedback
+- ✅ ジェスチャータップフィードバック
+- ✅ 제스처 탭 피드백
+
+### v179.5 投射视频画中画分辨率锁定179 | Cast Video PIP Resolution Lock179 | キャストビデオPIP解像度ロック179 | 캐스트 비디오 PIP 해상도 잠금179
+- ✅ 投射视频画中画分辨率锁定179
+- ✅ Cast Video PIP Resolution Lock179
+- ✅ キャストビデオPIP解像度ロック179
+- ✅ 캐스트 비디오 PIP 해상도 잠금179
+
+### v179.6 播放列表智能队列 | Playlist Smart Queue | プレイリストスマートキュー | 재생 목록 스마트 큐
+- ✅ 播放列表智能队列
+- ✅ Playlist Smart Queue
+- ✅ プレイリストスマートキュー
+- ✅ 재생 목록 스마트 큐
+
+### v179.7 缓存流预取179 | Cache Stream Prefetch179 | キャッシュストリームプリフェッチ179 | 캐시 스트림 프리페치179
+- ✅ 缓存流预取179
+- ✅ Cache Stream Prefetch179
+- ✅ キャッシュストリームプリフェッチ179
+- ✅ 캐시 스트림 프리페치179
+
+### v179.8 进度条拖动手势 | Progress Bar Scrub Gesture | プログレスバースクラブジェスチャー | 진행 바 스크럽 제스처
+- ✅ 进度条拖动手势
+- ✅ Progress Bar Scrub Gesture
+- ✅ プログレスバースクラブジェスチャー
+- ✅ 진행 바 스크럽 제스처
+
+### v179.9 音量标准化音轨179 | Volume Normalize Track179 | ボリュームノーマライズトラック179 | 볼륨 노멀라이즈 트랙179
+- ✅ 音量标准化音轨179
+- ✅ Volume Normalize Track179
+- ✅ ボリュームノーマライズトラック179
+- ✅ 볼륨 노멀라이즈 트랙179
+
+### v179.10 历史记录按画质过滤 | History Filter By Quality | 履歴画質フィルター | 기록 화질 필터
+- ✅ 历史记录按画质过滤
+- ✅ History Filter By Quality
+- ✅ 履歴画質フィルター
+- ✅ 기록 화질 필터
+
+### v179.11 播放旋转视频 | Playback Rotate Video | 再生ビデオ回転 | 재생 비디오 회전
+- ✅ 播放旋转视频
+- ✅ Playback Rotate Video
+- ✅ 再生ビデオ回転
+- ✅ 재생 비디오 회전
+
+### v179.12 截图叠加帧率179 | Screenshot Overlay FPS179 | スクリーンショットオーバーレイFPS179 | 스크린샷 오버레이 FPS179
+- ✅ 截图叠加帧率179
+- ✅ Screenshot Overlay FPS179
+- ✅ スクリーンショットオーバーレイFPS179
+- ✅ 스크린샷 오버레이 FPS179
+
+### v179.13 视频亮度级别179 | Video Brightness Level179 | ビデオ明るさレベル179 | 비디오 밝기 수준179
+- ✅ 视频亮度级别179
+- ✅ Video Brightness Level179
+- ✅ ビデオ明るさレベル179
+- ✅ 비디오 밝기 수준179
+
+### v179.14 弹幕滚动合并 | Danmaku Scroll Merge | コメントスクロールマージ | 댓글 스크롤 병합
+- ✅ 弹幕滚动合并
+- ✅ Danmaku Scroll Merge
+- ✅ コメントスクロールマージ
+- ✅ 댓글 스크롤 병합
+
+### v179.15 字幕描边颜色179 | Subtitle Outline Color179 | 字幕アウトライン色179 | 자막 외곽선 색상179
+- ✅ 字幕描边颜色179
+- ✅ Subtitle Outline Color179
+- ✅ 字幕アウトライン色179
+- ✅ 자막 외곽선 색상179
+
+### v180.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v180.1-v180.15 功能列表
+- ✅ Audio Compressor Mix180, Danmaku Scroll Merge180, Subtitle Outline Color180, Gesture Tap Feedback180, Cast Video PIP Sync Mode, Playlist Smart Queue180, Cache Stream Read Ahead, Progress Bar Scrub Gesture180, Volume Normalize Track180, History Filter By Quality180, Playback Rotate Video180, Screenshot Overlay Codec, Video Gamma Toggle180, Danmaku Scroll Merge Mode, Subtitle Outline Width180
+
+### v180.1 音频压缩器混合180 | Audio Compressor Mix180 | オーディオコンプレッサーミックス180 | 오디오 컴프레서 믹스180
+- ✅ 音频压缩器混合180
+- ✅ Audio Compressor Mix180
+- ✅ オーディオコンプレッサーミックス180
+- ✅ 오디오 컴프레서 믹스180
+
+### v180.2 弹幕滚动合并180 | Danmaku Scroll Merge180 | コメントスクロールマージ180 | 댓글 스크롤 병합180
+- ✅ 弹幕滚动合并180
+- ✅ Danmaku Scroll Merge180
+- ✅ コメントスクロールマージ180
+- ✅ 댓글 스크롤 병합180
+
+### v180.3 字幕描边颜色180 | Subtitle Outline Color180 | 字幕アウトライン色180 | 자막 외곽선 색상180
+- ✅ 字幕描边颜色180
+- ✅ Subtitle Outline Color180
+- ✅ 字幕アウトライン色180
+- ✅ 자막 외곽선 색상180
+
+### v180.4 手势点击反馈180 | Gesture Tap Feedback180 | ジェスチャータップフィードバック180 | 제스처 탭 피드백180
+- ✅ 手势点击反馈180
+- ✅ Gesture Tap Feedback180
+- ✅ ジェスチャータップフィードバック180
+- ✅ 제스처 탭 피드백180
+
+### v180.5 投射视频画中画同步模式 | Cast Video PIP Sync Mode | キャストビデオPIP同期モード | 캐스트 비디오 PIP 동기화 모드
+- ✅ 投射视频画中画同步模式
+- ✅ Cast Video PIP Sync Mode
+- ✅ キャストビデオPIP同期モード
+- ✅ 캐스트 비디오 PIP 동기화 모드
+
+### v180.6 播放列表智能队列180 | Playlist Smart Queue180 | プレイリストスマートキュー180 | 재생 목록 스마트 큐180
+- ✅ 播放列表智能队列180
+- ✅ Playlist Smart Queue180
+- ✅ プレイリストスマートキュー180
+- ✅ 재생 목록 스마트 큐180
+
+### v180.7 缓存流预读 | Cache Stream Read Ahead | キャッシュストリームリードアヘッド | 캐시 스트림 리드 어헤드
+- ✅ 缓存流预读
+- ✅ Cache Stream Read Ahead
+- ✅ キャッシュストリームリードアヘッド
+- ✅ 캐시 스트림 리드 어헤드
+
+### v180.8 进度条拖动手势180 | Progress Bar Scrub Gesture180 | プログレスバースクラブジェスチャー180 | 진행 바 스크럽 제스처180
+- ✅ 进度条拖动手势180
+- ✅ Progress Bar Scrub Gesture180
+- ✅ プログレスバースクラブジェスチャー180
+- ✅ 진행 바 스크럽 제스처180
+
+### v180.9 音量标准化音轨180 | Volume Normalize Track180 | ボリュームノーマライズトラック180 | 볼륨 노멀라이즈 트랙180
+- ✅ 音量标准化音轨180
+- ✅ Volume Normalize Track180
+- ✅ ボリュームノーマライズトラック180
+- ✅ 볼륨 노멀라이즈 트랙180
+
+### v180.10 历史记录按画质过滤180 | History Filter By Quality180 | 履歴画質フィルター180 | 기록 화질 필터180
+- ✅ 历史记录按画质过滤180
+- ✅ History Filter By Quality180
+- ✅ 履歴画質フィルター180
+- ✅ 기록 화질 필터180
+
+### v180.11 播放旋转视频180 | Playback Rotate Video180 | 再生ビデオ回転180 | 재생 비디오 회전180
+- ✅ 播放旋转视频180
+- ✅ Playback Rotate Video180
+- ✅ 再生ビデオ回転180
+- ✅ 재생 비디오 회전180
+
+### v180.12 截图叠加编码 | Screenshot Overlay Codec | スクリーンショットオーバーレイコーデック | 스크린샷 오버레이 코덱
+- ✅ 截图叠加编码
+- ✅ Screenshot Overlay Codec
+- ✅ スクリーンショットオーバーレイコーデック
+- ✅ 스크린샷 오버레이 코덱
+
+### v180.13 视频伽马开关180 | Video Gamma Toggle180 | ビデオガンマ切替180 | 비디오 감마 전환180
+- ✅ 视频伽马开关180
+- ✅ Video Gamma Toggle180
+- ✅ ビデオガンマ切替180
+- ✅ 비디오 감마 전환180
+
+### v180.14 弹幕滚动合并模式 | Danmaku Scroll Merge Mode | コメントスクロールマージモード | 댓글 스크롤 병합 모드
+- ✅ 弹幕滚动合并模式
+- ✅ Danmaku Scroll Merge Mode
+- ✅ コメントスクロールマージモード
+- ✅ 댓글 스크롤 병합 모드
+
+### v180.15 字幕描边宽度180 | Subtitle Outline Width180 | 字幕アウトライン幅180 | 자막 외곽선 너비180
+- ✅ 字幕描边宽度180
+- ✅ Subtitle Outline Width180
+- ✅ 字幕アウトライン幅180
+- ✅ 자막 외곽선 너비180
+
 ### v55.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
 ### v55.1-v55.15 功能列表
 - ✅ Auto Resume, Font Monospace, Color Hue Auto, Peak Limiter, Send Queue, Cast Bandwidth Limit, Lock Screen, Filter Regex, Network Policy, Double Tap Action, Font Weight Custom, Tint Custom, Volume Compressor, Bg Padding, Cast Auto Quality
@@ -23229,4 +24170,4 @@ This project is based on open-source software. All rights belong to the original
 - **基础版本 | Base Versions**: v10.0.0 - v11.19.0 (25 versions)
 - **AI自动维护版本 | AI Maintained**: v12.1 - v45.15 (550+ versions)
 - **开发周期 | Development Cycle**: 2024 - 2026
-- **功能特性 | Features**: 1700+ new features added
+- **功能特性 | Features**: 1800+ new features added
