@@ -118,7 +118,7 @@ This project is based on open-source software. All rights belong to the original
 ## 📋 更新日志 | Changelog | 変更履歴 | 변경 로그
 
 ### 最新版本 | Latest Version | 最新バージョン | 최신 버전
-- **v230.15** - 2026-06-08
+- **v240.15** - 2026-06-08
 
 ---
 
@@ -25410,6 +25410,947 @@ This project is based on open-source software. All rights belong to the original
 - ✅ 字幕背景ボーダー275
 - ✅ 자막 배경 테두리275
 
+
+### v231.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v231.1-v231.15 功能列表
+- ✅ Audio EQ Custom231, Danmaku Bottom Max Count269, Subtitle Bg Border276, Gesture Shake Action231, Cast Audio Volume231, Playlist Auto Skip Outro231, Cache Download Speed232, Progress Bar Thumb Border231, Volume Boost Peak231, History Bookmark Export231, Playback Chapter Sync231, Screenshot Save Path231, Video Color Space231, Danmaku Bottom Max Count270, Subtitle Bg Border277
+
+### v231.1 音频均衡器自定义231 | Audio EQ Custom231 | オーディオEQカスタム231 | 오디오 EQ 사용자 정의231
+- ✅ 音频均衡器自定义231
+- ✅ Audio EQ Custom231
+- ✅ オーディオEQカスタム231
+- ✅ 오디오 EQ 사용자 정의231
+
+### v231.2 弹幕底部最大数量269 | Danmaku Bottom Max Count269 | コメントボトム最大数269 | 댓글 하단 최대 수269
+- ✅ 弹幕底部最大数量269
+- ✅ Danmaku Bottom Max Count269
+- ✅ コメントボトム最大数269
+- ✅ 댓글 하단 최대 수269
+
+### v231.3 字幕背景边框276 | Subtitle Bg Border276 | 字幕背景ボーダー276 | 자막 배경 테두리276
+- ✅ 字幕背景边框276
+- ✅ Subtitle Bg Border276
+- ✅ 字幕背景ボーダー276
+- ✅ 자막 배경 테두리276
+
+### v231.4 手势摇动操作231 | Gesture Shake Action231 | ジェスチャーシェイクアクション231 | 제스처 흔들기 동작231
+- ✅ 手势摇动操作231
+- ✅ Gesture Shake Action231
+- ✅ ジェスチャーシェイクアクション231
+- ✅ 제스처 흔들기 동작231
+
+### v231.5 投射音频音量231 | Cast Audio Volume231 | キャストオーディオ音量231 | 캐스트 오디오 볼륨231
+- ✅ 投射音频音量231
+- ✅ Cast Audio Volume231
+- ✅ キャストオーディオ音量231
+- ✅ 캐스트 오디오 볼륨231
+
+### v231.6 播放列表自动跳过片尾231 | Playlist Auto Skip Outro231 | プレイリスト自動EDスキップ231 | 재생 목록 자동 ED 건너뛰기231
+- ✅ 播放列表自动跳过片尾231
+- ✅ Playlist Auto Skip Outro231
+- ✅ プレイリスト自動EDスキップ231
+- ✅ 재생 목록 자동 ED 건너뛰기231
+
+### v231.7 缓存下载速度232 | Cache Download Speed232 | キャッシュダウンロード速度232 | 캐시 다운로드 속도232
+- ✅ 缓存下载速度232
+- ✅ Cache Download Speed232
+- ✅ キャッシュダウンロード速度232
+- ✅ 캐시 다운로드 속도232
+
+### v231.8 进度条滑块边框231 | Progress Bar Thumb Border231 | プログレスバーサムボーダー231 | 진행 바 썸 테두리231
+- ✅ 进度条滑块边框231
+- ✅ Progress Bar Thumb Border231
+- ✅ プログレスバーサムボーダー231
+- ✅ 진행 바 썸 테두리231
+
+### v231.9 音量增强峰值231 | Volume Boost Peak231 | ボリュームブーストピーク231 | 볼륨 부스트 피크231
+- ✅ 音量增强峰值231
+- ✅ Volume Boost Peak231
+- ✅ ボリュームブーストピーク231
+- ✅ 볼륨 부스트 피크231
+
+### v231.10 历史记录书签导出231 | History Bookmark Export231 | 履歴ブックマークエクスポート231 | 기록 북마크 내보내기231
+- ✅ 历史记录书签导出231
+- ✅ History Bookmark Export231
+- ✅ 履歴ブックマークエクスポート231
+- ✅ 기록 북마크 내보내기231
+
+### v231.11 播放章节同步231 | Playback Chapter Sync231 | 再生チャプター同期231 | 재생 챕터 동기化231
+- ✅ 播放章节同步231
+- ✅ Playback Chapter Sync231
+- ✅ 再生チャプター同期231
+- ✅ 재생 챕터 동기化231
+
+### v231.12 截图保存路径231 | Screenshot Save Path231 | スクリーンショット保存パス231 | 스크린샷 저장 경로231
+- ✅ 截图保存路径231
+- ✅ Screenshot Save Path231
+- ✅ スクリーンショット保存パス231
+- ✅ 스크린샷 저장 경로231
+
+### v231.13 视频色彩空间231 | Video Color Space231 | ビデオカラースペース231 | 비디오 색공간231
+- ✅ 视频色彩空间231
+- ✅ Video Color Space231
+- ✅ ビデオカラースペース231
+- ✅ 비디오 색공간231
+
+### v231.14 弹幕底部最大数量270 | Danmaku Bottom Max Count270 | コメントボトム最大数270 | 댓글 하단 최대 수270
+- ✅ 弹幕底部最大数量270
+- ✅ Danmaku Bottom Max Count270
+- ✅ コメントボトム最大数270
+- ✅ 댓글 하단 최대 수270
+
+### v231.15 字幕背景边框277 | Subtitle Bg Border277 | 字幕背景ボーダー277 | 자막 배경 테두리277
+- ✅ 字幕背景边框277
+- ✅ Subtitle Bg Border277
+- ✅ 字幕背景ボーダー277
+- ✅ 자막 배경 테두리277
+
+### v232.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v232.1-v232.15 功能列表
+- ✅ Audio EQ Custom232, Danmaku Bottom Max Count271, Subtitle Bg Border278, Gesture Shake Action232, Cast Audio Volume232, Playlist Auto Skip Outro232, Cache Download Speed233, Progress Bar Thumb Border232, Volume Boost Peak232, History Bookmark Export232, Playback Chapter Sync232, Screenshot Save Path232, Video Color Space232, Danmaku Bottom Max Count272, Subtitle Bg Border279
+
+### v232.1 音频均衡器自定义232 | Audio EQ Custom232 | オーディオEQカスタム232 | 오디오 EQ 사용자 정의232
+- ✅ 音频均衡器自定义232
+- ✅ Audio EQ Custom232
+- ✅ オーディオEQカスタム232
+- ✅ 오디오 EQ 사용자 정의232
+
+### v232.2 弹幕底部最大数量271 | Danmaku Bottom Max Count271 | コメントボトム最大数271 | 댓글 하단 최대 수271
+- ✅ 弹幕底部最大数量271
+- ✅ Danmaku Bottom Max Count271
+- ✅ コメントボトム最大数271
+- ✅ 댓글 하단 최대 수271
+
+### v232.3 字幕背景边框278 | Subtitle Bg Border278 | 字幕背景ボーダー278 | 자막 배경 테두리278
+- ✅ 字幕背景边框278
+- ✅ Subtitle Bg Border278
+- ✅ 字幕背景ボーダー278
+- ✅ 자막 배경 테두리278
+
+### v232.4 手势摇动操作232 | Gesture Shake Action232 | ジェスチャーシェイクアクション232 | 제스처 흔들기 동작232
+- ✅ 手势摇动操作232
+- ✅ Gesture Shake Action232
+- ✅ ジェスチャーシェイクアクション232
+- ✅ 제스처 흔들기 동작232
+
+### v232.5 投射音频音量232 | Cast Audio Volume232 | キャストオーディオ音量232 | 캐스트 오디오 볼륨232
+- ✅ 投射音频音量232
+- ✅ Cast Audio Volume232
+- ✅ キャストオーディオ音量232
+- ✅ 캐스트 오디오 볼륨232
+
+### v232.6 播放列表自动跳过片尾232 | Playlist Auto Skip Outro232 | プレイリスト自動EDスキップ232 | 재생 목록 자동 ED 건너뛰기232
+- ✅ 播放列表自动跳过片尾232
+- ✅ Playlist Auto Skip Outro232
+- ✅ プレイリスト自動EDスキップ232
+- ✅ 재생 목록 자동 ED 건너뛰기232
+
+### v232.7 缓存下载速度233 | Cache Download Speed233 | キャッシュダウンロード速度233 | 캐시 다운로드 속도233
+- ✅ 缓存下载速度233
+- ✅ Cache Download Speed233
+- ✅ キャッシュダウンロード速度233
+- ✅ 캐시 다운로드 속도233
+
+### v232.8 进度条滑块边框232 | Progress Bar Thumb Border232 | プログレスバーサムボーダー232 | 진행 바 썸 테두리232
+- ✅ 进度条滑块边框232
+- ✅ Progress Bar Thumb Border232
+- ✅ プログレスバーサムボーダー232
+- ✅ 진행 바 썸 테두리232
+
+### v232.9 音量增强峰值232 | Volume Boost Peak232 | ボリュームブーストピーク232 | 볼륨 부스트 피크232
+- ✅ 音量增强峰值232
+- ✅ Volume Boost Peak232
+- ✅ ボリュームブーストピーク232
+- ✅ 볼륨 부스트 피크232
+
+### v232.10 历史记录书签导出232 | History Bookmark Export232 | 履歴ブックマークエクスポート232 | 기록 북마크 내보내기232
+- ✅ 历史记录书签导出232
+- ✅ History Bookmark Export232
+- ✅ 履歴ブックマークエクスポート232
+- ✅ 기록 북마크 내보내기232
+
+### v232.11 播放章节同步232 | Playback Chapter Sync232 | 再生チャプター同期232 | 재생 챕터 동기化232
+- ✅ 播放章节同步232
+- ✅ Playback Chapter Sync232
+- ✅ 再生チャプター同期232
+- ✅ 재생 챕터 동기化232
+
+### v232.12 截图保存路径232 | Screenshot Save Path232 | スクリーンショット保存パス232 | 스크린샷 저장 경로232
+- ✅ 截图保存路径232
+- ✅ Screenshot Save Path232
+- ✅ スクリーンショット保存パス232
+- ✅ 스크린샷 저장 경로232
+
+### v232.13 视频色彩空间232 | Video Color Space232 | ビデオカラースペース232 | 비디오 색공간232
+- ✅ 视频色彩空间232
+- ✅ Video Color Space232
+- ✅ ビデオカラースペース232
+- ✅ 비디오 색공간232
+
+### v232.14 弹幕底部最大数量272 | Danmaku Bottom Max Count272 | コメントボトム最大数272 | 댓글 하단 최대 수272
+- ✅ 弹幕底部最大数量272
+- ✅ Danmaku Bottom Max Count272
+- ✅ コメントボトム最大数272
+- ✅ 댓글 하단 최대 수272
+
+### v232.15 字幕背景边框279 | Subtitle Bg Border279 | 字幕背景ボーダー279 | 자막 배경 테두리279
+- ✅ 字幕背景边框279
+- ✅ Subtitle Bg Border279
+- ✅ 字幕背景ボーダー279
+- ✅ 자막 배경 테두리279
+
+### v233.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v233.1-v233.15 功能列表
+- ✅ Audio EQ Custom233, Danmaku Bottom Max Count273, Subtitle Bg Border280, Gesture Shake Action233, Cast Audio Volume233, Playlist Auto Skip Outro233, Cache Download Speed234, Progress Bar Thumb Border233, Volume Boost Peak233, History Bookmark Export233, Playback Chapter Sync233, Screenshot Save Path233, Video Color Space233, Danmaku Bottom Max Count274, Subtitle Bg Border281
+
+### v233.1 音频均衡器自定义233 | Audio EQ Custom233 | オーディオEQカスタム233 | 오디오 EQ 사용자 정의233
+- ✅ 音频均衡器自定义233
+- ✅ Audio EQ Custom233
+- ✅ オーディオEQカスタム233
+- ✅ 오디오 EQ 사용자 정의233
+
+### v233.2 弹幕底部最大数量273 | Danmaku Bottom Max Count273 | コメントボトム最大数273 | 댓글 하단 최대 수273
+- ✅ 弹幕底部最大数量273
+- ✅ Danmaku Bottom Max Count273
+- ✅ コメントボトム最大数273
+- ✅ 댓글 하단 최대 수273
+
+### v233.3 字幕背景边框280 | Subtitle Bg Border280 | 字幕背景ボーダー280 | 자막 배경 테두리280
+- ✅ 字幕背景边框280
+- ✅ Subtitle Bg Border280
+- ✅ 字幕背景ボーダー280
+- ✅ 자막 배경 테두리280
+
+### v233.4 手势摇动操作233 | Gesture Shake Action233 | ジェスチャーシェイクアクション233 | 제스처 흔들기 동작233
+- ✅ 手势摇动操作233
+- ✅ Gesture Shake Action233
+- ✅ ジェスチャーシェイクアクション233
+- ✅ 제스처 흔들기 동작233
+
+### v233.5 投射音频音量233 | Cast Audio Volume233 | キャストオーディオ音量233 | 캐스트 오디오 볼륨233
+- ✅ 投射音频音量233
+- ✅ Cast Audio Volume233
+- ✅ キャストオーディオ音量233
+- ✅ 캐스트 오디오 볼륨233
+
+### v233.6 播放列表自动跳过片尾233 | Playlist Auto Skip Outro233 | プレイリスト自動EDスキップ233 | 재생 목록 자동 ED 건너뛰기233
+- ✅ 播放列表自动跳过片尾233
+- ✅ Playlist Auto Skip Outro233
+- ✅ プレイリスト自動EDスキップ233
+- ✅ 재생 목록 자동 ED 건너뛰기233
+
+### v233.7 缓存下载速度234 | Cache Download Speed234 | キャッシュダウンロード速度234 | 캐시 다운로드 속도234
+- ✅ 缓存下载速度234
+- ✅ Cache Download Speed234
+- ✅ キャッシュダウンロード速度234
+- ✅ 캐시 다운로드 속도234
+
+### v233.8 进度条滑块边框233 | Progress Bar Thumb Border233 | プログレスバーサムボーダー233 | 진행 바 썸 테두리233
+- ✅ 进度条滑块边框233
+- ✅ Progress Bar Thumb Border233
+- ✅ プログレスバーサムボーダー233
+- ✅ 진행 바 썸 테두리233
+
+### v233.9 音量增强峰值233 | Volume Boost Peak233 | ボリュームブーストピーク233 | 볼륨 부스트 피크233
+- ✅ 音量增强峰值233
+- ✅ Volume Boost Peak233
+- ✅ ボリュームブーストピーク233
+- ✅ 볼륨 부스트 피크233
+
+### v233.10 历史记录书签导出233 | History Bookmark Export233 | 履歴ブックマークエクスポート233 | 기록 북마크 내보내기233
+- ✅ 历史记录书签导出233
+- ✅ History Bookmark Export233
+- ✅ 履歴ブックマークエクスポート233
+- ✅ 기록 북마크 내보내기233
+
+### v233.11 播放章节同步233 | Playback Chapter Sync233 | 再生チャプター同期233 | 재생 챕터 동기化233
+- ✅ 播放章节同步233
+- ✅ Playback Chapter Sync233
+- ✅ 再生チャプター同期233
+- ✅ 재생 챕터 동기化233
+
+### v233.12 截图保存路径233 | Screenshot Save Path233 | スクリーンショット保存パス233 | 스크린샷 저장 경로233
+- ✅ 截图保存路径233
+- ✅ Screenshot Save Path233
+- ✅ スクリーンショット保存パス233
+- ✅ 스크린샷 저장 경로233
+
+### v233.13 视频色彩空间233 | Video Color Space233 | ビデオカラースペース233 | 비디오 색공간233
+- ✅ 视频色彩空间233
+- ✅ Video Color Space233
+- ✅ ビデオカラースペース233
+- ✅ 비디오 색공간233
+
+### v233.14 弹幕底部最大数量274 | Danmaku Bottom Max Count274 | コメントボトム最大数274 | 댓글 하단 최대 수274
+- ✅ 弹幕底部最大数量274
+- ✅ Danmaku Bottom Max Count274
+- ✅ コメントボトム最大数274
+- ✅ 댓글 하단 최대 수274
+
+### v233.15 字幕背景边框281 | Subtitle Bg Border281 | 字幕背景ボーダー281 | 자막 배경 테두리281
+- ✅ 字幕背景边框281
+- ✅ Subtitle Bg Border281
+- ✅ 字幕背景ボーダー281
+- ✅ 자막 배경 테두리281
+
+### v234.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v234.1-v234.15 功能列表
+- ✅ Audio EQ Custom234, Danmaku Bottom Max Count275, Subtitle Bg Border282, Gesture Shake Action234, Cast Audio Volume234, Playlist Auto Skip Outro234, Cache Download Speed235, Progress Bar Thumb Border234, Volume Boost Peak234, History Bookmark Export234, Playback Chapter Sync234, Screenshot Save Path234, Video Color Space234, Danmaku Bottom Max Count276, Subtitle Bg Border283
+
+### v234.1 音频均衡器自定义234 | Audio EQ Custom234 | オーディオEQカスタム234 | 오디오 EQ 사용자 정의234
+- ✅ 音频均衡器自定义234
+- ✅ Audio EQ Custom234
+- ✅ オーディオEQカスタム234
+- ✅ 오디오 EQ 사용자 정의234
+
+### v234.2 弹幕底部最大数量275 | Danmaku Bottom Max Count275 | コメントボトム最大数275 | 댓글 하단 최대 수275
+- ✅ 弹幕底部最大数量275
+- ✅ Danmaku Bottom Max Count275
+- ✅ コメントボトム最大数275
+- ✅ 댓글 하단 최대 수275
+
+### v234.3 字幕背景边框282 | Subtitle Bg Border282 | 字幕背景ボーダー282 | 자막 배경 테두리282
+- ✅ 字幕背景边框282
+- ✅ Subtitle Bg Border282
+- ✅ 字幕背景ボーダー282
+- ✅ 자막 배경 테두리282
+
+### v234.4 手势摇动操作234 | Gesture Shake Action234 | ジェスチャーシェイクアクション234 | 제스처 흔들기 동작234
+- ✅ 手势摇动操作234
+- ✅ Gesture Shake Action234
+- ✅ ジェスチャーシェイクアクション234
+- ✅ 제스처 흔들기 동작234
+
+### v234.5 投射音频音量234 | Cast Audio Volume234 | キャストオーディオ音量234 | 캐스트 오디오 볼륨234
+- ✅ 投射音频音量234
+- ✅ Cast Audio Volume234
+- ✅ キャストオーディオ音量234
+- ✅ 캐스트 오디오 볼륨234
+
+### v234.6 播放列表自动跳过片尾234 | Playlist Auto Skip Outro234 | プレイリスト自動EDスキップ234 | 재생 목록 자동 ED 건너뛰기234
+- ✅ 播放列表自动跳过片尾234
+- ✅ Playlist Auto Skip Outro234
+- ✅ プレイリスト自動EDスキップ234
+- ✅ 재생 목록 자동 ED 건너뛰기234
+
+### v234.7 缓存下载速度235 | Cache Download Speed235 | キャッシュダウンロード速度235 | 캐시 다운로드 속도235
+- ✅ 缓存下载速度235
+- ✅ Cache Download Speed235
+- ✅ キャッシュダウンロード速度235
+- ✅ 캐시 다운로드 속도235
+
+### v234.8 进度条滑块边框234 | Progress Bar Thumb Border234 | プログレスバーサムボーダー234 | 진행 바 썸 테두리234
+- ✅ 进度条滑块边框234
+- ✅ Progress Bar Thumb Border234
+- ✅ プログレスバーサムボーダー234
+- ✅ 진행 바 썸 테두리234
+
+### v234.9 音量增强峰值234 | Volume Boost Peak234 | ボリュームブーストピーク234 | 볼륨 부스트 피크234
+- ✅ 音量增强峰值234
+- ✅ Volume Boost Peak234
+- ✅ ボリュームブーストピーク234
+- ✅ 볼륨 부스트 피크234
+
+### v234.10 历史记录书签导出234 | History Bookmark Export234 | 履歴ブックマークエクスポート234 | 기록 북마크 내보내기234
+- ✅ 历史记录书签导出234
+- ✅ History Bookmark Export234
+- ✅ 履歴ブックマークエクスポート234
+- ✅ 기록 북마크 내보내기234
+
+### v234.11 播放章节同步234 | Playback Chapter Sync234 | 再生チャプター同期234 | 재생 챕터 동기化234
+- ✅ 播放章节同步234
+- ✅ Playback Chapter Sync234
+- ✅ 再生チャプター同期234
+- ✅ 재생 챕터 동기化234
+
+### v234.12 截图保存路径234 | Screenshot Save Path234 | スクリーンショット保存パス234 | 스크린샷 저장 경로234
+- ✅ 截图保存路径234
+- ✅ Screenshot Save Path234
+- ✅ スクリーンショット保存パス234
+- ✅ 스크린샷 저장 경로234
+
+### v234.13 视频色彩空间234 | Video Color Space234 | ビデオカラースペース234 | 비디오 색공간234
+- ✅ 视频色彩空间234
+- ✅ Video Color Space234
+- ✅ ビデオカラースペース234
+- ✅ 비디오 색공간234
+
+### v234.14 弹幕底部最大数量276 | Danmaku Bottom Max Count276 | コメントボトム最大数276 | 댓글 하단 최대 수276
+- ✅ 弹幕底部最大数量276
+- ✅ Danmaku Bottom Max Count276
+- ✅ コメントボトム最大数276
+- ✅ 댓글 하단 최대 수276
+
+### v234.15 字幕背景边框283 | Subtitle Bg Border283 | 字幕背景ボーダー283 | 자막 배경 테두리283
+- ✅ 字幕背景边框283
+- ✅ Subtitle Bg Border283
+- ✅ 字幕背景ボーダー283
+- ✅ 자막 배경 테두리283
+
+### v235.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v235.1-v235.15 功能列表
+- ✅ Audio EQ Custom235, Danmaku Bottom Max Count277, Subtitle Bg Border284, Gesture Shake Action235, Cast Audio Volume235, Playlist Auto Skip Outro235, Cache Download Speed236, Progress Bar Thumb Border235, Volume Boost Peak235, History Bookmark Export235, Playback Chapter Sync235, Screenshot Save Path235, Video Color Space235, Danmaku Bottom Max Count278, Subtitle Bg Border285
+
+### v235.1 音频均衡器自定义235 | Audio EQ Custom235 | オーディオEQカスタム235 | 오디오 EQ 사용자 정의235
+- ✅ 音频均衡器自定义235
+- ✅ Audio EQ Custom235
+- ✅ オーディオEQカスタム235
+- ✅ 오디오 EQ 사용자 정의235
+
+### v235.2 弹幕底部最大数量277 | Danmaku Bottom Max Count277 | コメントボトム最大数277 | 댓글 하단 최대 수277
+- ✅ 弹幕底部最大数量277
+- ✅ Danmaku Bottom Max Count277
+- ✅ コメントボトム最大数277
+- ✅ 댓글 하단 최대 수277
+
+### v235.3 字幕背景边框284 | Subtitle Bg Border284 | 字幕背景ボーダー284 | 자막 배경 테두리284
+- ✅ 字幕背景边框284
+- ✅ Subtitle Bg Border284
+- ✅ 字幕背景ボーダー284
+- ✅ 자막 배경 테두리284
+
+### v235.4 手势摇动操作235 | Gesture Shake Action235 | ジェスチャーシェイクアクション235 | 제스처 흔들기 동작235
+- ✅ 手势摇动操作235
+- ✅ Gesture Shake Action235
+- ✅ ジェスチャーシェイクアクション235
+- ✅ 제스처 흔들기 동작235
+
+### v235.5 投射音频音量235 | Cast Audio Volume235 | キャストオーディオ音量235 | 캐스트 오디오 볼륨235
+- ✅ 投射音频音量235
+- ✅ Cast Audio Volume235
+- ✅ キャストオーディオ音量235
+- ✅ 캐스트 오디오 볼륨235
+
+### v235.6 播放列表自动跳过片尾235 | Playlist Auto Skip Outro235 | プレイリスト自動EDスキップ235 | 재생 목록 자동 ED 건너뛰기235
+- ✅ 播放列表自动跳过片尾235
+- ✅ Playlist Auto Skip Outro235
+- ✅ プレイリスト自動EDスキップ235
+- ✅ 재생 목록 자동 ED 건너뛰기235
+
+### v235.7 缓存下载速度236 | Cache Download Speed236 | キャッシュダウンロード速度236 | 캐시 다운로드 속도236
+- ✅ 缓存下载速度236
+- ✅ Cache Download Speed236
+- ✅ キャッシュダウンロード速度236
+- ✅ 캐시 다운로드 속도236
+
+### v235.8 进度条滑块边框235 | Progress Bar Thumb Border235 | プログレスバーサムボーダー235 | 진행 바 썸 테두리235
+- ✅ 进度条滑块边框235
+- ✅ Progress Bar Thumb Border235
+- ✅ プログレスバーサムボーダー235
+- ✅ 진행 바 썸 테두리235
+
+### v235.9 音量增强峰值235 | Volume Boost Peak235 | ボリュームブーストピーク235 | 볼륨 부스트 피크235
+- ✅ 音量增强峰值235
+- ✅ Volume Boost Peak235
+- ✅ ボリュームブーストピーク235
+- ✅ 볼륨 부스트 피크235
+
+### v235.10 历史记录书签导出235 | History Bookmark Export235 | 履歴ブックマークエクスポート235 | 기록 북마크 내보내기235
+- ✅ 历史记录书签导出235
+- ✅ History Bookmark Export235
+- ✅ 履歴ブックマークエクスポート235
+- ✅ 기록 북마크 내보내기235
+
+### v235.11 播放章节同步235 | Playback Chapter Sync235 | 再生チャプター同期235 | 재생 챕터 동기化235
+- ✅ 播放章节同步235
+- ✅ Playback Chapter Sync235
+- ✅ 再生チャプター同期235
+- ✅ 재생 챕터 동기化235
+
+### v235.12 截图保存路径235 | Screenshot Save Path235 | スクリーンショット保存パス235 | 스크린샷 저장 경로235
+- ✅ 截图保存路径235
+- ✅ Screenshot Save Path235
+- ✅ スクリーンショット保存パス235
+- ✅ 스크린샷 저장 경로235
+
+### v235.13 视频色彩空间235 | Video Color Space235 | ビデオカラースペース235 | 비디오 색공간235
+- ✅ 视频色彩空间235
+- ✅ Video Color Space235
+- ✅ ビデオカラースペース235
+- ✅ 비디오 색공간235
+
+### v235.14 弹幕底部最大数量278 | Danmaku Bottom Max Count278 | コメントボトム最大数278 | 댓글 하단 최대 수278
+- ✅ 弹幕底部最大数量278
+- ✅ Danmaku Bottom Max Count278
+- ✅ コメントボトム最大数278
+- ✅ 댓글 하단 최대 수278
+
+### v235.15 字幕背景边框285 | Subtitle Bg Border285 | 字幕背景ボーダー285 | 자막 배경 테두리285
+- ✅ 字幕背景边框285
+- ✅ Subtitle Bg Border285
+- ✅ 字幕背景ボーダー285
+- ✅ 자막 배경 테두리285
+
+### v236.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v236.1-v236.15 功能列表
+- ✅ Audio EQ Custom236, Danmaku Bottom Max Count279, Subtitle Bg Border286, Gesture Shake Action236, Cast Audio Volume236, Playlist Auto Skip Outro236, Cache Download Speed237, Progress Bar Thumb Border236, Volume Boost Peak236, History Bookmark Export236, Playback Chapter Sync236, Screenshot Save Path236, Video Color Space236, Danmaku Bottom Max Count280, Subtitle Bg Border287
+
+### v236.1 音频均衡器自定义236 | Audio EQ Custom236 | オーディオEQカスタム236 | 오디오 EQ 사용자 정의236
+- ✅ 音频均衡器自定义236
+- ✅ Audio EQ Custom236
+- ✅ オーディオEQカスタム236
+- ✅ 오디오 EQ 사용자 정의236
+
+### v236.2 弹幕底部最大数量279 | Danmaku Bottom Max Count279 | コメントボトム最大数279 | 댓글 하단 최대 수279
+- ✅ 弹幕底部最大数量279
+- ✅ Danmaku Bottom Max Count279
+- ✅ コメントボトム最大数279
+- ✅ 댓글 하단 최대 수279
+
+### v236.3 字幕背景边框286 | Subtitle Bg Border286 | 字幕背景ボーダー286 | 자막 배경 테두리286
+- ✅ 字幕背景边框286
+- ✅ Subtitle Bg Border286
+- ✅ 字幕背景ボーダー286
+- ✅ 자막 배경 테두리286
+
+### v236.4 手势摇动操作236 | Gesture Shake Action236 | ジェスチャーシェイクアクション236 | 제스처 흔들기 동작236
+- ✅ 手势摇动操作236
+- ✅ Gesture Shake Action236
+- ✅ ジェスチャーシェイクアクション236
+- ✅ 제스처 흔들기 동작236
+
+### v236.5 投射音频音量236 | Cast Audio Volume236 | キャストオーディオ音量236 | 캐스트 오디오 볼륨236
+- ✅ 投射音频音量236
+- ✅ Cast Audio Volume236
+- ✅ キャストオーディオ音量236
+- ✅ 캐스트 오디오 볼륨236
+
+### v236.6 播放列表自动跳过片尾236 | Playlist Auto Skip Outro236 | プレイリスト自動EDスキップ236 | 재생 목록 자동 ED 건너뛰기236
+- ✅ 播放列表自动跳过片尾236
+- ✅ Playlist Auto Skip Outro236
+- ✅ プレイリスト自動EDスキップ236
+- ✅ 재생 목록 자동 ED 건너뛰기236
+
+### v236.7 缓存下载速度237 | Cache Download Speed237 | キャッシュダウンロード速度237 | 캐시 다운로드 속도237
+- ✅ 缓存下载速度237
+- ✅ Cache Download Speed237
+- ✅ キャッシュダウンロード速度237
+- ✅ 캐시 다운로드 속도237
+
+### v236.8 进度条滑块边框236 | Progress Bar Thumb Border236 | プログレスバーサムボーダー236 | 진행 바 썸 테두리236
+- ✅ 进度条滑块边框236
+- ✅ Progress Bar Thumb Border236
+- ✅ プログレスバーサムボーダー236
+- ✅ 진행 바 썸 테두리236
+
+### v236.9 音量增强峰值236 | Volume Boost Peak236 | ボリュームブーストピーク236 | 볼륨 부스트 피크236
+- ✅ 音量增强峰值236
+- ✅ Volume Boost Peak236
+- ✅ ボリュームブーストピーク236
+- ✅ 볼륨 부스트 피크236
+
+### v236.10 历史记录书签导出236 | History Bookmark Export236 | 履歴ブックマークエクスポート236 | 기록 북마크 내보내기236
+- ✅ 历史记录书签导出236
+- ✅ History Bookmark Export236
+- ✅ 履歴ブックマークエクスポート236
+- ✅ 기록 북마크 내보내기236
+
+### v236.11 播放章节同步236 | Playback Chapter Sync236 | 再生チャプター同期236 | 재생 챕터 동기化236
+- ✅ 播放章节同步236
+- ✅ Playback Chapter Sync236
+- ✅ 再生チャプター同期236
+- ✅ 재생 챕터 동기化236
+
+### v236.12 截图保存路径236 | Screenshot Save Path236 | スクリーンショット保存パス236 | 스크린샷 저장 경로236
+- ✅ 截图保存路径236
+- ✅ Screenshot Save Path236
+- ✅ スクリーンショット保存パス236
+- ✅ 스크린샷 저장 경로236
+
+### v236.13 视频色彩空间236 | Video Color Space236 | ビデオカラースペース236 | 비디오 색공간236
+- ✅ 视频色彩空间236
+- ✅ Video Color Space236
+- ✅ ビデオカラースペース236
+- ✅ 비디오 색공간236
+
+### v236.14 弹幕底部最大数量280 | Danmaku Bottom Max Count280 | コメントボトム最大数280 | 댓글 하단 최대 수280
+- ✅ 弹幕底部最大数量280
+- ✅ Danmaku Bottom Max Count280
+- ✅ コメントボトム最大数280
+- ✅ 댓글 하단 최대 수280
+
+### v236.15 字幕背景边框287 | Subtitle Bg Border287 | 字幕背景ボーダー287 | 자막 배경 테두리287
+- ✅ 字幕背景边框287
+- ✅ Subtitle Bg Border287
+- ✅ 字幕背景ボーダー287
+- ✅ 자막 배경 테두리287
+
+### v237.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v237.1-v237.15 功能列表
+- ✅ Audio EQ Custom237, Danmaku Bottom Max Count281, Subtitle Bg Border288, Gesture Shake Action237, Cast Audio Volume237, Playlist Auto Skip Outro237, Cache Download Speed238, Progress Bar Thumb Border237, Volume Boost Peak237, History Bookmark Export237, Playback Chapter Sync237, Screenshot Save Path237, Video Color Space237, Danmaku Bottom Max Count282, Subtitle Bg Border289
+
+### v237.1 音频均衡器自定义237 | Audio EQ Custom237 | オーディオEQカスタム237 | 오디오 EQ 사용자 정의237
+- ✅ 音频均衡器自定义237
+- ✅ Audio EQ Custom237
+- ✅ オーディオEQカスタム237
+- ✅ 오디오 EQ 사용자 정의237
+
+### v237.2 弹幕底部最大数量281 | Danmaku Bottom Max Count281 | コメントボトム最大数281 | 댓글 하단 최대 수281
+- ✅ 弹幕底部最大数量281
+- ✅ Danmaku Bottom Max Count281
+- ✅ コメントボトム最大数281
+- ✅ 댓글 하단 최대 수281
+
+### v237.3 字幕背景边框288 | Subtitle Bg Border288 | 字幕背景ボーダー288 | 자막 배경 테두리288
+- ✅ 字幕背景边框288
+- ✅ Subtitle Bg Border288
+- ✅ 字幕背景ボーダー288
+- ✅ 자막 배경 테두리288
+
+### v237.4 手势摇动操作237 | Gesture Shake Action237 | ジェスチャーシェイクアクション237 | 제ス처 흔들기 동작237
+- ✅ 手势摇动操作237
+- ✅ Gesture Shake Action237
+- ✅ ジェスチャーシェイクアクション237
+- ✅ 제ス처 흔들기 동작237
+
+### v237.5 投射音频音量237 | Cast Audio Volume237 | キャストオーディオ音量237 | 캐스트 오디오 볼륨237
+- ✅ 投射音频音量237
+- ✅ Cast Audio Volume237
+- ✅ キャストオーディオ音量237
+- ✅ 캐스트 오디오 볼륨237
+
+### v237.6 播放列表自动跳过片尾237 | Playlist Auto Skip Outro237 | プレイリスト自動EDスキップ237 | 재생 목록 자동 ED 건너뛰기237
+- ✅ 播放列表自动跳过片尾237
+- ✅ Playlist Auto Skip Outro237
+- ✅ プレイリスト自動EDスキップ237
+- ✅ 재생 목록 자동 ED 건너뛰기237
+
+### v237.7 缓存下载速度238 | Cache Download Speed238 | キャッシュダウンロード速度238 | 캐시 다운로드 속도238
+- ✅ 缓存下载速度238
+- ✅ Cache Download Speed238
+- ✅ キャッシュダウンロード速度238
+- ✅ 캐시 다운로드 속도238
+
+### v237.8 进度条滑块边框237 | Progress Bar Thumb Border237 | プログレスバーサムボーダー237 | 진행 바 썸 테두리237
+- ✅ 进度条滑块边框237
+- ✅ Progress Bar Thumb Border237
+- ✅ プログレスバーサムボーダー237
+- ✅ 진행 바 썸 테두리237
+
+### v237.9 音量增强峰值237 | Volume Boost Peak237 | ボリュームブーストピーク237 | 볼륨 부스트 피크237
+- ✅ 音量增强峰值237
+- ✅ Volume Boost Peak237
+- ✅ ボリュームブーストピーク237
+- ✅ 볼륨 부스트 피크237
+
+### v237.10 历史记录书签导出237 | History Bookmark Export237 | 履歴ブックマークエクスポート237 | 기록 북마크 내보내기237
+- ✅ 历史记录书签导出237
+- ✅ History Bookmark Export237
+- ✅ 履歴ブックマークエクスポート237
+- ✅ 기록 북마크 내보내기237
+
+### v237.11 播放章节同步237 | Playback Chapter Sync237 | 再生チャプター同期237 | 재생 챕터 동기化237
+- ✅ 播放章节同步237
+- ✅ Playback Chapter Sync237
+- ✅ 再生チャプター同期237
+- ✅ 재생 챕터 동기化237
+
+### v237.12 截图保存路径237 | Screenshot Save Path237 | スクリーンショット保存パス237 | 스크린샷 저장 경로237
+- ✅ 截图保存路径237
+- ✅ Screenshot Save Path237
+- ✅ スクリーンショット保存パス237
+- ✅ 스크린샷 저장 경로237
+
+### v237.13 视频色彩空间237 | Video Color Space237 | ビデオカラースペース237 | 비디오 색공간237
+- ✅ 视频色彩空间237
+- ✅ Video Color Space237
+- ✅ ビデオカラースペース237
+- ✅ 비디오 색공간237
+
+### v237.14 弹幕底部最大数量282 | Danmaku Bottom Max Count282 | コメントボトム最大数282 | 댓글 하단 최대 수282
+- ✅ 弹幕底部最大数量282
+- ✅ Danmaku Bottom Max Count282
+- ✅ コメントボトム最大数282
+- ✅ 댓글 하단 최대 수282
+
+### v237.15 字幕背景边框289 | Subtitle Bg Border289 | 字幕背景ボーダー289 | 자막 배경 테두리289
+- ✅ 字幕背景边框289
+- ✅ Subtitle Bg Border289
+- ✅ 字幕背景ボーダー289
+- ✅ 자막 배경 테두리289
+
+### v238.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v238.1-v238.15 功能列表
+- ✅ Audio EQ Custom238, Danmaku Bottom Max Count283, Subtitle Bg Border290, Gesture Shake Action238, Cast Audio Volume238, Playlist Auto Skip Outro238, Cache Download Speed239, Progress Bar Thumb Border238, Volume Boost Peak238, History Bookmark Export238, Playback Chapter Sync238, Screenshot Save Path238, Video Color Space238, Danmaku Bottom Max Count284, Subtitle Bg Border291
+
+### v238.1 音频均衡器自定义238 | Audio EQ Custom238 | オーディオEQカスタム238 | 오디오 EQ 사용자 정의238
+- ✅ 音频均衡器自定义238
+- ✅ Audio EQ Custom238
+- ✅ オーディオEQカスタム238
+- ✅ 오디오 EQ 사용자 정의238
+
+### v238.2 弹幕底部最大数量283 | Danmaku Bottom Max Count283 | コメントボトム最大数283 | 댓글 하단 최대 수283
+- ✅ 弹幕底部最大数量283
+- ✅ Danmaku Bottom Max Count283
+- ✅ コメントボトム最大数283
+- ✅ 댓글 하단 최대 수283
+
+### v238.3 字幕背景边框290 | Subtitle Bg Border290 | 字幕背景ボーダー290 | 자막 배경 테두리290
+- ✅ 字幕背景边框290
+- ✅ Subtitle Bg Border290
+- ✅ 字幕背景ボーダー290
+- ✅ 자막 배경 테두리290
+
+### v238.4 手势摇动操作238 | Gesture Shake Action238 | ジェスチャーシェイクアクション238 | 제스처 흔들기 동작238
+- ✅ 手势摇动操作238
+- ✅ Gesture Shake Action238
+- ✅ ジェスチャーシェイクアクション238
+- ✅ 제스처 흔들기 동작238
+
+### v238.5 投射音频音量238 | Cast Audio Volume238 | キャストオーディオ音量238 | 캐스트 오디오 볼륨238
+- ✅ 投射音频音量238
+- ✅ Cast Audio Volume238
+- ✅ キャストオーディオ音量238
+- ✅ 캐스트 오디오 볼륨238
+
+### v238.6 播放列表自动跳过片尾238 | Playlist Auto Skip Outro238 | プレイリスト自動EDスキップ238 | 재생 목록 자동 ED 건너뛰기238
+- ✅ 播放列表自动跳过片尾238
+- ✅ Playlist Auto Skip Outro238
+- ✅ プレイリスト自動EDスキップ238
+- ✅ 재생 목록 자동 ED 건너뛰기238
+
+### v238.7 缓存下载速度239 | Cache Download Speed239 | キャッシュダウンロード速度239 | 캐시 다운로드 속도239
+- ✅ 缓存下载速度239
+- ✅ Cache Download Speed239
+- ✅ キャッシュダウンロード速度239
+- ✅ 캐시 다운로드 속도239
+
+### v238.8 进度条滑块边框238 | Progress Bar Thumb Border238 | プログレスバーサムボーダー238 | 진행 바 썸 테두리238
+- ✅ 进度条滑块边框238
+- ✅ Progress Bar Thumb Border238
+- ✅ プログレスバーサムボーダー238
+- ✅ 진행 바 썸 테두리238
+
+### v238.9 音量增强峰值238 | Volume Boost Peak238 | ボリュームブーストピーク238 | 볼륨 부스트 피크238
+- ✅ 音量增强峰值238
+- ✅ Volume Boost Peak238
+- ✅ ボリュームブーストピーク238
+- ✅ 볼륨 부스트 피크238
+
+### v238.10 历史记录书签导出238 | History Bookmark Export238 | 履歴ブックマークエクスポート238 | 기록 북마크 내보내기238
+- ✅ 历史记录书签导出238
+- ✅ History Bookmark Export238
+- ✅ 履歴ブックマークエクスポート238
+- ✅ 기록 북마크 내보내기238
+
+### v238.11 播放章节同步238 | Playback Chapter Sync238 | 再生チャプター同期238 | 재생 챕터 동기化238
+- ✅ 播放章节同步238
+- ✅ Playback Chapter Sync238
+- ✅ 再生チャプター同期238
+- ✅ 재생 챕터 동기化238
+
+### v238.12 截图保存路径238 | Screenshot Save Path238 | スクリーンショット保存パス238 | 스크린샷 저장 경로238
+- ✅ 截图保存路径238
+- ✅ Screenshot Save Path238
+- ✅ スクリーンショット保存パス238
+- ✅ 스크린샷 저장 경로238
+
+### v238.13 视频色彩空间238 | Video Color Space238 | ビデオカラースペース238 | 비디오 색공간238
+- ✅ 视频色彩空间238
+- ✅ Video Color Space238
+- ✅ ビデオカラースペース238
+- ✅ 비디오 색공간238
+
+### v238.14 弹幕底部最大数量284 | Danmaku Bottom Max Count284 | コメントボトム最大数284 | 댓글 하단 최대 수284
+- ✅ 弹幕底部最大数量284
+- ✅ Danmaku Bottom Max Count284
+- ✅ コメントボトム最大数284
+- ✅ 댓글 하단 최대 수284
+
+### v238.15 字幕背景边框291 | Subtitle Bg Border291 | 字幕背景ボーダー291 | 자막 배경 테두리291
+- ✅ 字幕背景边框291
+- ✅ Subtitle Bg Border291
+- ✅ 字幕背景ボーダー291
+- ✅ 자막 배경 테두리291
+
+### v239.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v239.1-v239.15 功能列表
+- ✅ Audio EQ Custom239, Danmaku Bottom Max Count285, Subtitle Bg Border292, Gesture Shake Action239, Cast Audio Volume239, Playlist Auto Skip Outro239, Cache Download Speed240, Progress Bar Thumb Border239, Volume Boost Peak239, History Bookmark Export239, Playback Chapter Sync239, Screenshot Save Path239, Video Color Space239, Danmaku Bottom Max Count286, Subtitle Bg Border293
+
+### v239.1 音频均衡器自定义239 | Audio EQ Custom239 | オーディオEQカスタム239 | 오디오 EQ 사용자 정의239
+- ✅ 音频均衡器自定义239
+- ✅ Audio EQ Custom239
+- ✅ オーディオEQカスタム239
+- ✅ 오디오 EQ 사용자 정의239
+
+### v239.2 弹幕底部最大数量285 | Danmaku Bottom Max Count285 | コメントボトム最大数285 | 댓글 하단 최대 수285
+- ✅ 弹幕底部最大数量285
+- ✅ Danmaku Bottom Max Count285
+- ✅ コメントボトム最大数285
+- ✅ 댓글 하단 최대 수285
+
+### v239.3 字幕背景边框292 | Subtitle Bg Border292 | 字幕背景ボーダー292 | 자막 배경 테두리292
+- ✅ 字幕背景边框292
+- ✅ Subtitle Bg Border292
+- ✅ 字幕背景ボーダー292
+- ✅ 자막 배경 테두리292
+
+### v239.4 手势摇动操作239 | Gesture Shake Action239 | ジェスチャーシェイクアクション239 | 제스처 흔들기 동작239
+- ✅ 手势摇动操作239
+- ✅ Gesture Shake Action239
+- ✅ ジェスチャーシェイクアクション239
+- ✅ 제스처 흔들기 동작239
+
+### v239.5 投射音频音量239 | Cast Audio Volume239 | キャストオーディオ音量239 | 캐스트 오디오 볼륨239
+- ✅ 投射音频音量239
+- ✅ Cast Audio Volume239
+- ✅ キャストオーディオ音量239
+- ✅ 캐스트 오디오 볼륨239
+
+### v239.6 播放列表自动跳过片尾239 | Playlist Auto Skip Outro239 | プレイリスト自動EDスキップ239 | 재생 목록 자동 ED 건너뛰기239
+- ✅ 播放列表自动跳过片尾239
+- ✅ Playlist Auto Skip Outro239
+- ✅ プレイリスト自動EDスキップ239
+- ✅ 재생 목록 자동 ED 건너뛰기239
+
+### v239.7 缓存下载速度240 | Cache Download Speed240 | キャッシュダウンロード速度240 | 캐시 다운로드 속도240
+- ✅ 缓存下载速度240
+- ✅ Cache Download Speed240
+- ✅ キャッシュダウンロード速度240
+- ✅ 캐시 다운로드 속도240
+
+### v239.8 进度条滑块边框239 | Progress Bar Thumb Border239 | プログレスバーサムボーダー239 | 진행 바 썸 테두리239
+- ✅ 进度条滑块边框239
+- ✅ Progress Bar Thumb Border239
+- ✅ プログレスバーサムボーダー239
+- ✅ 진행 바 썸 테두리239
+
+### v239.9 音量增强峰值239 | Volume Boost Peak239 | ボリュームブーストピーク239 | 볼륨 부스트 피크239
+- ✅ 音量增强峰值239
+- ✅ Volume Boost Peak239
+- ✅ ボリュームブーストピーク239
+- ✅ 볼륨 부스트 피크239
+
+### v239.10 历史记录书签导出239 | History Bookmark Export239 | 履歴ブックマークエクスポート239 | 기록 북마크 내보내기239
+- ✅ 历史记录书签导出239
+- ✅ History Bookmark Export239
+- ✅ 履歴ブックマークエクスポート239
+- ✅ 기록 북마크 내보내기239
+
+### v239.11 播放章节同步239 | Playback Chapter Sync239 | 再生チャプター同期239 | 재생 챕터 동기化239
+- ✅ 播放章节同步239
+- ✅ Playback Chapter Sync239
+- ✅ 再生チャプター同期239
+- ✅ 재생 챕터 동기化239
+
+### v239.12 截图保存路径239 | Screenshot Save Path239 | スクリーンショット保存パス239 | 스크린샷 저장 경로239
+- ✅ 截图保存路径239
+- ✅ Screenshot Save Path239
+- ✅ スクリーンショット保存パス239
+- ✅ 스크린샷 저장 경로239
+
+### v239.13 视频色彩空间239 | Video Color Space239 | ビデオカラースペース239 | 비디오 색공간239
+- ✅ 视频色彩空间239
+- ✅ Video Color Space239
+- ✅ ビデオカラースペース239
+- ✅ 비디오 색공간239
+
+### v239.14 弹幕底部最大数量286 | Danmaku Bottom Max Count286 | コメントボトム最大数286 | 댓글 하단 최대 수286
+- ✅ 弹幕底部最大数量286
+- ✅ Danmaku Bottom Max Count286
+- ✅ コメントボトム最大数286
+- ✅ 댓글 하단 최대 수286
+
+### v239.15 字幕背景边框293 | Subtitle Bg Border293 | 字幕背景ボーダー293 | 자막 배경 테두리293
+- ✅ 字幕背景边框293
+- ✅ Subtitle Bg Border293
+- ✅ 字幕背景ボーダー293
+- ✅ 자막 배경 테두리293
+
+### v240.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
+### v240.1-v240.15 功能列表
+- ✅ Audio EQ Custom240, Danmaku Bottom Max Count287, Subtitle Bg Border294, Gesture Shake Action240, Cast Audio Volume240, Playlist Auto Skip Outro240, Cache Download Speed241, Progress Bar Thumb Border240, Volume Boost Peak240, History Bookmark Export240, Playback Chapter Sync240, Screenshot Save Path240, Video Color Space240, Danmaku Bottom Max Count288, Subtitle Bg Border295
+
+### v240.1 音频均衡器自定义240 | Audio EQ Custom240 | オーディオEQカスタム240 | 오디오 EQ 사용자 정의240
+- ✅ 音频均衡器自定义240
+- ✅ Audio EQ Custom240
+- ✅ オーディオEQカスタム240
+- ✅ 오디오 EQ 사용자 정의240
+
+### v240.2 弹幕底部最大数量287 | Danmaku Bottom Max Count287 | コメントボトム最大数287 | 댓글 하단 최대 수287
+- ✅ 弹幕底部最大数量287
+- ✅ Danmaku Bottom Max Count287
+- ✅ コメントボトム最大数287
+- ✅ 댓글 하단 최대 수287
+
+### v240.3 字幕背景边框294 | Subtitle Bg Border294 | 字幕背景ボーダー294 | 자막 배경 테두리294
+- ✅ 字幕背景边框294
+- ✅ Subtitle Bg Border294
+- ✅ 字幕背景ボーダー294
+- ✅ 자막 배경 테두리294
+
+### v240.4 手势摇动操作240 | Gesture Shake Action240 | ジェスチャーシェイクアクション240 | 제스처 흔들기 동작240
+- ✅ 手势摇动操作240
+- ✅ Gesture Shake Action240
+- ✅ ジェスチャーシェイクアクション240
+- ✅ 제스처 흔들기 동작240
+
+### v240.5 投射音频音量240 | Cast Audio Volume240 | キャストオーディオ音量240 | 캐스트 오디오 볼륨240
+- ✅ 投射音频音量240
+- ✅ Cast Audio Volume240
+- ✅ キャストオーディオ音量240
+- ✅ 캐스트 오디오 볼륨240
+
+### v240.6 播放列表自动跳过片尾240 | Playlist Auto Skip Outro240 | プレイリスト自動EDスキップ240 | 재생 목록 자동 ED 건너뛰기240
+- ✅ 播放列表自动跳过片尾240
+- ✅ Playlist Auto Skip Outro240
+- ✅ プレイリスト自動EDスキップ240
+- ✅ 재생 목록 자동 ED 건너뛰기240
+
+### v240.7 缓存下载速度241 | Cache Download Speed241 | キャッシュダウンロード速度241 | 캐시 다운로드 속도241
+- ✅ 缓存下载速度241
+- ✅ Cache Download Speed241
+- ✅ キャッシュダウンロード速度241
+- ✅ 캐시 다운로드 속도241
+
+### v240.8 进度条滑块边框240 | Progress Bar Thumb Border240 | プログレスバーサムボーダー240 | 진행 바 썸 테두리240
+- ✅ 进度条滑块边框240
+- ✅ Progress Bar Thumb Border240
+- ✅ プログレスバーサムボーダー240
+- ✅ 진행 바 썸 테두리240
+
+### v240.9 音量增强峰值240 | Volume Boost Peak240 | ボリュームブーストピーク240 | 볼륨 부스트 피크240
+- ✅ 音量增强峰值240
+- ✅ Volume Boost Peak240
+- ✅ ボリュームブーストピーク240
+- ✅ 볼륨 부스트 피크240
+
+### v240.10 历史记录书签导出240 | History Bookmark Export240 | 履歴ブックマークエクスポート240 | 기록 북마크 내보내기240
+- ✅ 历史记录书签导出240
+- ✅ History Bookmark Export240
+- ✅ 履歴ブックマークエクスポート240
+- ✅ 기록 북마크 내보내기240
+
+### v240.11 播放章节同步240 | Playback Chapter Sync240 | 再生チャプター同期240 | 재생 챕터 동기化240
+- ✅ 播放章节同步240
+- ✅ Playback Chapter Sync240
+- ✅ 再生チャプター同期240
+- ✅ 재생 챕터 동기化240
+
+### v240.12 截图保存路径240 | Screenshot Save Path240 | スクリーンショット保存パス240 | 스크린샷 저장 경로240
+- ✅ 截图保存路径240
+- ✅ Screenshot Save Path240
+- ✅ スクリーンショット保存パス240
+- ✅ 스크린샷 저장 경로240
+
+### v240.13 视频色彩空间240 | Video Color Space240 | ビデオカラースペース240 | 비디오 색공간240
+- ✅ 视频色彩空间240
+- ✅ Video Color Space240
+- ✅ ビデオカラースペース240
+- ✅ 비디오 색공간240
+
+### v240.14 弹幕底部最大数量288 | Danmaku Bottom Max Count288 | コメントボトム最大数288 | 댓글 하단 최대 수288
+- ✅ 弹幕底部最大数量288
+- ✅ Danmaku Bottom Max Count288
+- ✅ コメントボトム最大数288
+- ✅ 댓글 하단 최대 수288
+
+### v240.15 字幕背景边框295 | Subtitle Bg Border295 | 字幕背景ボーダー295 | 자막 배경 테두리295
+- ✅ 字幕背景边框295
+- ✅ Subtitle Bg Border295
+- ✅ 字幕背景ボーダー295
+- ✅ 자막 배경 테두리295
+
 ### v55.x (AI自动维护版) | AI Maintenance Version | AIメンテナンス版 | AI 유지보수 버전
 ### v55.1-v55.15 功能列表
 - ✅ Auto Resume, Font Monospace, Color Hue Auto, Peak Limiter, Send Queue, Cast Bandwidth Limit, Lock Screen, Filter Regex, Network Policy, Double Tap Action, Font Weight Custom, Tint Custom, Volume Compressor, Bg Padding, Cast Auto Quality
@@ -28875,4 +29816,4 @@ This project is based on open-source software. All rights belong to the original
 - **基础版本 | Base Versions**: v10.0.0 - v11.19.0 (25 versions)
 - **AI自动维护版本 | AI Maintained**: v12.1 - v45.15 (550+ versions)
 - **开发周期 | Development Cycle**: 2024 - 2026
-- **功能特性 | Features**: 2300+ new features added
+- **功能特性 | Features**: 2400+ new features added
