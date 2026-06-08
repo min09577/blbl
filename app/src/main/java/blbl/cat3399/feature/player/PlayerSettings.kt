@@ -19264,3 +19264,1797 @@ internal fun PlayerActivity.showV110SubtitleFontCaseOverride110Dialog() {
         AppToast.show(this, "Subtitle Font Case Override110: $value")
     }
 }
+
+// v111.1: Audio Delay Sync Custom
+internal fun PlayerActivity.showV111AudioDelaySyncCustomDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v111audioDelaySyncCustom).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Audio Delay Sync Custom",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v111audioDelaySyncCustom = value
+        AppToast.show(this, "Audio Delay Sync Custom: $value")
+    }
+}
+
+// v111.2: Danmaku Font Blur Toggle111
+internal fun PlayerActivity.showV111DanmakuFontBlurToggle111Toggle() {
+    val enabled = !BiliClient.prefs.v111danmakuFontBlurToggle111
+    BiliClient.prefs.v111danmakuFontBlurToggle111 = enabled
+    AppToast.show(this, "Danmaku Font Blur Toggle111: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v111.3: Subtitle BG Shadow Size
+internal fun PlayerActivity.showV111SubtitleBgShadowSizeDialog() {
+    val options = listOf(0, 1, 2, 3, 4)
+    val currentIndex = options.indexOf(BiliClient.prefs.v111subtitleBgShadowSize).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle BG Shadow Size",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v111subtitleBgShadowSize = value
+        AppToast.show(this, "Subtitle BG Shadow Size: $value")
+    }
+}
+
+// v111.4: Gesture Tap Seek Step
+internal fun PlayerActivity.showV111GestureTapSeekStepDialog() {
+    val options = listOf(3, 5, 10, 15, 30)
+    val currentIndex = options.indexOf(BiliClient.prefs.v111gestureTapSeekStep).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Gesture Tap Seek Step",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v111gestureTapSeekStep = value
+        AppToast.show(this, "Gesture Tap Seek Step: $value")
+    }
+}
+
+// v111.5: Cast Video Saturation Custom
+internal fun PlayerActivity.showV111CastVideoSaturationCustomDialog() {
+    val options = listOf(0, 25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v111castVideoSaturationCustom).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Cast Video Saturation Custom",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v111castVideoSaturationCustom = value
+        AppToast.show(this, "Cast Video Saturation Custom: $value")
+    }
+}
+
+// v111.6: Playlist Auto Shuffle On Repeat
+internal fun PlayerActivity.showV111PlaylistAutoShuffleOnRepeatToggle() {
+    val enabled = !BiliClient.prefs.v111playlistAutoShuffleOnRepeat
+    BiliClient.prefs.v111playlistAutoShuffleOnRepeat = enabled
+    AppToast.show(this, "Playlist Auto Shuffle On Repeat: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v111.7: Cache Download Bandwidth Limit
+internal fun PlayerActivity.showV111CacheDownloadBandwidthLimitDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v111cacheDownloadBandwidthLimit).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Cache Download Bandwidth Limit",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v111cacheDownloadBandwidthLimit = value
+        AppToast.show(this, "Cache Download Bandwidth Limit: $value")
+    }
+}
+
+// v111.8: Progress Bar Custom Buffer Color
+internal fun PlayerActivity.showV111ProgressBarCustomBufferColorDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v111progressBarCustomBufferColor).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Progress Bar Custom Buffer Color",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v111progressBarCustomBufferColor = value
+        AppToast.show(this, "Progress Bar Custom Buffer Color: $value")
+    }
+}
+
+// v111.9: Volume Loudness Target
+internal fun PlayerActivity.showV111VolumeLoudnessTargetDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v111volumeLoudnessTarget).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Volume Loudness Target",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v111volumeLoudnessTarget = value
+        AppToast.show(this, "Volume Loudness Target: $value")
+    }
+}
+
+// v111.10: History Auto Backup Toggle111
+internal fun PlayerActivity.showV111HistoryAutoBackupToggle111Toggle() {
+    val enabled = !BiliClient.prefs.v111historyAutoBackupToggle111
+    BiliClient.prefs.v111historyAutoBackupToggle111 = enabled
+    AppToast.show(this, "History Auto Backup Toggle111: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v111.11: Playback Speed Auto Adjust
+internal fun PlayerActivity.showV111PlaybackSpeedAutoAdjustToggle() {
+    val enabled = !BiliClient.prefs.v111playbackSpeedAutoAdjust
+    BiliClient.prefs.v111playbackSpeedAutoAdjust = enabled
+    AppToast.show(this, "Playback Speed Auto Adjust: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v111.12: Screenshot Auto Share Weibo
+internal fun PlayerActivity.showV111ScreenshotAutoShareWeiboToggle() {
+    val enabled = !BiliClient.prefs.v111screenshotAutoShareWeibo
+    BiliClient.prefs.v111screenshotAutoShareWeibo = enabled
+    AppToast.show(this, "Screenshot Auto Share Weibo: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v111.13: Video Blend Mode Custom
+internal fun PlayerActivity.showV111VideoBlendModeCustomDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v111videoBlendModeCustom).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Video Blend Mode Custom",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v111videoBlendModeCustom = value
+        AppToast.show(this, "Video Blend Mode Custom: $value")
+    }
+}
+
+// v111.14: Danmaku Font Drop Shadow Toggle
+internal fun PlayerActivity.showV111DanmakuFontDropShadowToggleToggle() {
+    val enabled = !BiliClient.prefs.v111danmakuFontDropShadowToggle
+    BiliClient.prefs.v111danmakuFontDropShadowToggle = enabled
+    AppToast.show(this, "Danmaku Font Drop Shadow Toggle: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v111.15: Subtitle BG Border Color Auto
+internal fun PlayerActivity.showV111SubtitleBgBorderColorAutoToggle() {
+    val enabled = !BiliClient.prefs.v111subtitleBgBorderColorAuto
+    BiliClient.prefs.v111subtitleBgBorderColorAuto = enabled
+    AppToast.show(this, "Subtitle BG Border Color Auto: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v112.16: Audio Crossfeed Toggle112
+internal fun PlayerActivity.showV112AudioCrossfeedToggle112Toggle() {
+    val enabled = !BiliClient.prefs.v112audioCrossfeedToggle112
+    BiliClient.prefs.v112audioCrossfeedToggle112 = enabled
+    AppToast.show(this, "Audio Crossfeed Toggle112: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v112.17: Danmaku Font Drop Shadow X
+internal fun PlayerActivity.showV112DanmakuFontDropShadowXDialog() {
+    val options = listOf(-2, -1, 0, 1, 2)
+    val currentIndex = options.indexOf(BiliClient.prefs.v112danmakuFontDropShadowX).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Font Drop Shadow X",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v112danmakuFontDropShadowX = value
+        AppToast.show(this, "Danmaku Font Drop Shadow X: $value")
+    }
+}
+
+// v112.18: Subtitle BG Border Color Contrast
+internal fun PlayerActivity.showV112SubtitleBgBorderColorContrastDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v112subtitleBgBorderColorContrast).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle BG Border Color Contrast",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v112subtitleBgBorderColorContrast = value
+        AppToast.show(this, "Subtitle BG Border Color Contrast: $value")
+    }
+}
+
+// v112.19: Gesture Tap Volume Step
+internal fun PlayerActivity.showV112GestureTapVolumeStepDialog() {
+    val options = listOf(3, 5, 10, 15, 20)
+    val currentIndex = options.indexOf(BiliClient.prefs.v112gestureTapVolumeStep).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Gesture Tap Volume Step",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v112gestureTapVolumeStep = value
+        AppToast.show(this, "Gesture Tap Volume Step: $value")
+    }
+}
+
+// v112.20: Cast Video Contrast Custom
+internal fun PlayerActivity.showV112CastVideoContrastCustomDialog() {
+    val options = listOf(0, 25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v112castVideoContrastCustom).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Cast Video Contrast Custom",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v112castVideoContrastCustom = value
+        AppToast.show(this, "Cast Video Contrast Custom: $value")
+    }
+}
+
+// v112.21: Playlist Auto Next On Wifi
+internal fun PlayerActivity.showV112PlaylistAutoNextOnWifiToggle() {
+    val enabled = !BiliClient.prefs.v112playlistAutoNextOnWifi
+    BiliClient.prefs.v112playlistAutoNextOnWifi = enabled
+    AppToast.show(this, "Playlist Auto Next On Wifi: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v112.22: Cache Smart Prefetch Toggle112
+internal fun PlayerActivity.showV112CacheSmartPrefetchToggle112Toggle() {
+    val enabled = !BiliClient.prefs.v112cacheSmartPrefetchToggle112
+    BiliClient.prefs.v112cacheSmartPrefetchToggle112 = enabled
+    AppToast.show(this, "Cache Smart Prefetch Toggle112: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v112.23: Progress Bar Custom Chapter Style
+internal fun PlayerActivity.showV112ProgressBarCustomChapterStyleDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v112progressBarCustomChapterStyle).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Progress Bar Custom Chapter Style",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v112progressBarCustomChapterStyle = value
+        AppToast.show(this, "Progress Bar Custom Chapter Style: $value")
+    }
+}
+
+// v112.24: Volume Dynamic Range Control
+internal fun PlayerActivity.showV112VolumeDynamicRangeControlToggle() {
+    val enabled = !BiliClient.prefs.v112volumeDynamicRangeControl
+    BiliClient.prefs.v112volumeDynamicRangeControl = enabled
+    AppToast.show(this, "Volume Dynamic Range Control: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v112.25: History Auto Backup Interval
+internal fun PlayerActivity.showV112HistoryAutoBackupIntervalDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v112historyAutoBackupInterval).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "History Auto Backup Interval",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v112historyAutoBackupInterval = value
+        AppToast.show(this, "History Auto Backup Interval: $value")
+    }
+}
+
+// v112.26: Playback Speed Auto Adjust Range
+internal fun PlayerActivity.showV112PlaybackSpeedAutoAdjustRangeDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v112playbackSpeedAutoAdjustRange).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Playback Speed Auto Adjust Range",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v112playbackSpeedAutoAdjustRange = value
+        AppToast.show(this, "Playback Speed Auto Adjust Range: $value")
+    }
+}
+
+// v112.27: Screenshot Auto Share Twitter
+internal fun PlayerActivity.showV112ScreenshotAutoShareTwitterToggle() {
+    val enabled = !BiliClient.prefs.v112screenshotAutoShareTwitter
+    BiliClient.prefs.v112screenshotAutoShareTwitter = enabled
+    AppToast.show(this, "Screenshot Auto Share Twitter: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v112.28: Video Color LUT Custom
+internal fun PlayerActivity.showV112VideoColorLUTCustomDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v112videoColorLUTCustom).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Video Color LUT Custom",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v112videoColorLUTCustom = value
+        AppToast.show(this, "Video Color LUT Custom: $value")
+    }
+}
+
+// v112.29: Danmaku Font Drop Shadow Y
+internal fun PlayerActivity.showV112DanmakuFontDropShadowYDialog() {
+    val options = listOf(-2, -1, 0, 1, 2)
+    val currentIndex = options.indexOf(BiliClient.prefs.v112danmakuFontDropShadowY).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Font Drop Shadow Y",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v112danmakuFontDropShadowY = value
+        AppToast.show(this, "Danmaku Font Drop Shadow Y: $value")
+    }
+}
+
+// v112.30: Subtitle BG Border Color Auto Threshold
+internal fun PlayerActivity.showV112SubtitleBgBorderColorAutoThresholdDialog() {
+    val options = listOf(25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v112subtitleBgBorderColorAutoThreshold).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle BG Border Color Auto Threshold",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v112subtitleBgBorderColorAutoThreshold = value
+        AppToast.show(this, "Subtitle BG Border Color Auto Threshold: $value")
+    }
+}
+
+// v113.31: Audio Crossfeed Strength
+internal fun PlayerActivity.showV113AudioCrossfeedStrengthDialog() {
+    val options = listOf(0, 25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v113audioCrossfeedStrength).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Audio Crossfeed Strength",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v113audioCrossfeedStrength = value
+        AppToast.show(this, "Audio Crossfeed Strength: $value")
+    }
+}
+
+// v113.32: Danmaku Font Drop Shadow Blur
+internal fun PlayerActivity.showV113DanmakuFontDropShadowBlurDialog() {
+    val options = listOf(0, 1, 2, 3, 4)
+    val currentIndex = options.indexOf(BiliClient.prefs.v113danmakuFontDropShadowBlur).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Font Drop Shadow Blur",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v113danmakuFontDropShadowBlur = value
+        AppToast.show(this, "Danmaku Font Drop Shadow Blur: $value")
+    }
+}
+
+// v113.33: Subtitle Font Weight Custom
+internal fun PlayerActivity.showV113SubtitleFontWeightCustomDialog() {
+    val options = listOf(100, 200, 300, 400, 500, 600, 700, 800, 900)
+    val currentIndex = options.indexOf(BiliClient.prefs.v113subtitleFontWeightCustom).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Font Weight Custom",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v113subtitleFontWeightCustom = value
+        AppToast.show(this, "Subtitle Font Weight Custom: $value")
+    }
+}
+
+// v113.34: Gesture Tap Brightness Step
+internal fun PlayerActivity.showV113GestureTapBrightnessStepDialog() {
+    val options = listOf(3, 5, 10, 15, 20)
+    val currentIndex = options.indexOf(BiliClient.prefs.v113gestureTapBrightnessStep).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Gesture Tap Brightness Step",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v113gestureTapBrightnessStep = value
+        AppToast.show(this, "Gesture Tap Brightness Step: $value")
+    }
+}
+
+// v113.35: Cast Video Brightness Custom
+internal fun PlayerActivity.showV113CastVideoBrightnessCustomDialog() {
+    val options = listOf(0, 25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v113castVideoBrightnessCustom).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Cast Video Brightness Custom",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v113castVideoBrightnessCustom = value
+        AppToast.show(this, "Cast Video Brightness Custom: $value")
+    }
+}
+
+// v113.36: Playlist Auto Play On Connect
+internal fun PlayerActivity.showV113PlaylistAutoPlayOnConnectToggle() {
+    val enabled = !BiliClient.prefs.v113playlistAutoPlayOnConnect
+    BiliClient.prefs.v113playlistAutoPlayOnConnect = enabled
+    AppToast.show(this, "Playlist Auto Play On Connect: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v113.37: Cache Cleanup On Start Toggle113
+internal fun PlayerActivity.showV113CacheCleanupOnStartToggle113Toggle() {
+    val enabled = !BiliClient.prefs.v113cacheCleanupOnStartToggle113
+    BiliClient.prefs.v113cacheCleanupOnStartToggle113 = enabled
+    AppToast.show(this, "Cache Cleanup On Start Toggle113: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v113.38: Progress Bar Custom Live Edge Style
+internal fun PlayerActivity.showV113ProgressBarCustomLiveEdgeStyleDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v113progressBarCustomLiveEdgeStyle).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Progress Bar Custom Live Edge Style",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v113progressBarCustomLiveEdgeStyle = value
+        AppToast.show(this, "Progress Bar Custom Live Edge Style: $value")
+    }
+}
+
+// v113.39: Volume Auto Gain Compensation
+internal fun PlayerActivity.showV113VolumeAutoGainCompensationToggle() {
+    val enabled = !BiliClient.prefs.v113volumeAutoGainCompensation
+    BiliClient.prefs.v113volumeAutoGainCompensation = enabled
+    AppToast.show(this, "Volume Auto Gain Compensation: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v113.40: History Auto Backup Cloud
+internal fun PlayerActivity.showV113HistoryAutoBackupCloudToggle() {
+    val enabled = !BiliClient.prefs.v113historyAutoBackupCloud
+    BiliClient.prefs.v113historyAutoBackupCloud = enabled
+    AppToast.show(this, "History Auto Backup Cloud: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v113.41: Playback Speed Auto Adjust Silence
+internal fun PlayerActivity.showV113PlaybackSpeedAutoAdjustSilenceToggle() {
+    val enabled = !BiliClient.prefs.v113playbackSpeedAutoAdjustSilence
+    BiliClient.prefs.v113playbackSpeedAutoAdjustSilence = enabled
+    AppToast.show(this, "Playback Speed Auto Adjust Silence: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v113.42: Screenshot Auto Share Instagram
+internal fun PlayerActivity.showV113ScreenshotAutoShareInstagramToggle() {
+    val enabled = !BiliClient.prefs.v113screenshotAutoShareInstagram
+    BiliClient.prefs.v113screenshotAutoShareInstagram = enabled
+    AppToast.show(this, "Screenshot Auto Share Instagram: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v113.43: Video Color Temperature Custom113
+internal fun PlayerActivity.showV113VideoColorTemperatureCustom113Dialog() {
+    val options = listOf(0, 25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v113videoColorTemperatureCustom113).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Video Color Temperature Custom113",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v113videoColorTemperatureCustom113 = value
+        AppToast.show(this, "Video Color Temperature Custom113: $value")
+    }
+}
+
+// v113.44: Danmaku Font Drop Shadow Color
+internal fun PlayerActivity.showV113DanmakuFontDropShadowColorDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v113danmakuFontDropShadowColor).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Font Drop Shadow Color",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v113danmakuFontDropShadowColor = value
+        AppToast.show(this, "Danmaku Font Drop Shadow Color: $value")
+    }
+}
+
+// v113.45: Subtitle Font Stretch Custom
+internal fun PlayerActivity.showV113SubtitleFontStretchCustomDialog() {
+    val options = listOf(75, 100, 125, 150, 200)
+    val currentIndex = options.indexOf(BiliClient.prefs.v113subtitleFontStretchCustom).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Font Stretch Custom",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v113subtitleFontStretchCustom = value
+        AppToast.show(this, "Subtitle Font Stretch Custom: $value")
+    }
+}
+
+// v114.46: Audio Dynamic Bass Boost
+internal fun PlayerActivity.showV114AudioDynamicBassBoostDialog() {
+    val options = listOf(0, 25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v114audioDynamicBassBoost).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Audio Dynamic Bass Boost",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v114audioDynamicBassBoost = value
+        AppToast.show(this, "Audio Dynamic Bass Boost: $value")
+    }
+}
+
+// v114.47: Danmaku Font Drop Shadow Opacity
+internal fun PlayerActivity.showV114DanmakuFontDropShadowOpacityDialog() {
+    val options = listOf(0, 25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v114danmakuFontDropShadowOpacity).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Font Drop Shadow Opacity",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v114danmakuFontDropShadowOpacity = value
+        AppToast.show(this, "Danmaku Font Drop Shadow Opacity: $value")
+    }
+}
+
+// v114.48: Subtitle Font Letter Spacing114
+internal fun PlayerActivity.showV114SubtitleFontLetterSpacing114Dialog() {
+    val options = listOf(-2, -1, 0, 1, 2)
+    val currentIndex = options.indexOf(BiliClient.prefs.v114subtitleFontLetterSpacing114).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Font Letter Spacing114",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v114subtitleFontLetterSpacing114 = value
+        AppToast.show(this, "Subtitle Font Letter Spacing114: $value")
+    }
+}
+
+// v114.49: Gesture Tap Play Pause Toggle
+internal fun PlayerActivity.showV114GestureTapPlayPauseToggleToggle() {
+    val enabled = !BiliClient.prefs.v114gestureTapPlayPauseToggle
+    BiliClient.prefs.v114gestureTapPlayPauseToggle = enabled
+    AppToast.show(this, "Gesture Tap Play Pause Toggle: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v114.50: Cast Video Gamma Custom
+internal fun PlayerActivity.showV114CastVideoGammaCustomDialog() {
+    val options = listOf(0, 25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v114castVideoGammaCustom).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Cast Video Gamma Custom",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v114castVideoGammaCustom = value
+        AppToast.show(this, "Cast Video Gamma Custom: $value")
+    }
+}
+
+// v114.51: Playlist Auto Pause On Headset
+internal fun PlayerActivity.showV114PlaylistAutoPauseOnHeadsetToggle() {
+    val enabled = !BiliClient.prefs.v114playlistAutoPauseOnHeadset
+    BiliClient.prefs.v114playlistAutoPauseOnHeadset = enabled
+    AppToast.show(this, "Playlist Auto Pause On Headset: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v114.52: Cache Write Buffer Size
+internal fun PlayerActivity.showV114CacheWriteBufferSizeDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v114cacheWriteBufferSize).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Cache Write Buffer Size",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v114cacheWriteBufferSize = value
+        AppToast.show(this, "Cache Write Buffer Size: $value")
+    }
+}
+
+// v114.53: Progress Bar Custom Thumb Opacity
+internal fun PlayerActivity.showV114ProgressBarCustomThumbOpacityDialog() {
+    val options = listOf(25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v114progressBarCustomThumbOpacity).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Progress Bar Custom Thumb Opacity",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v114progressBarCustomThumbOpacity = value
+        AppToast.show(this, "Progress Bar Custom Thumb Opacity: $value")
+    }
+}
+
+// v114.54: Volume Fade In On Resume
+internal fun PlayerActivity.showV114VolumeFadeInOnResumeToggle() {
+    val enabled = !BiliClient.prefs.v114volumeFadeInOnResume
+    BiliClient.prefs.v114volumeFadeInOnResume = enabled
+    AppToast.show(this, "Volume Fade In On Resume: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v114.55: History Auto Backup File
+internal fun PlayerActivity.showV114HistoryAutoBackupFileToggle() {
+    val enabled = !BiliClient.prefs.v114historyAutoBackupFile
+    BiliClient.prefs.v114historyAutoBackupFile = enabled
+    AppToast.show(this, "History Auto Backup File: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v114.56: Playback Speed Auto Adjust Pitch
+internal fun PlayerActivity.showV114PlaybackSpeedAutoAdjustPitchToggle() {
+    val enabled = !BiliClient.prefs.v114playbackSpeedAutoAdjustPitch
+    BiliClient.prefs.v114playbackSpeedAutoAdjustPitch = enabled
+    AppToast.show(this, "Playback Speed Auto Adjust Pitch: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v114.57: Screenshot Auto Share Facebook
+internal fun PlayerActivity.showV114ScreenshotAutoShareFacebookToggle() {
+    val enabled = !BiliClient.prefs.v114screenshotAutoShareFacebook
+    BiliClient.prefs.v114screenshotAutoShareFacebook = enabled
+    AppToast.show(this, "Screenshot Auto Share Facebook: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v114.58: Video Tint Custom114
+internal fun PlayerActivity.showV114VideoTintCustom114Dialog() {
+    val options = listOf(0, 1, 2, 3, 4)
+    val currentIndex = options.indexOf(BiliClient.prefs.v114videoTintCustom114).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Video Tint Custom114",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v114videoTintCustom114 = value
+        AppToast.show(this, "Video Tint Custom114: $value")
+    }
+}
+
+// v114.59: Danmaku Font BG Opacity Custom114
+internal fun PlayerActivity.showV114DanmakuFontBgOpacityCustom114Dialog() {
+    val options = listOf(0, 25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v114danmakuFontBgOpacityCustom114).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Font BG Opacity Custom114",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v114danmakuFontBgOpacityCustom114 = value
+        AppToast.show(this, "Danmaku Font BG Opacity Custom114: $value")
+    }
+}
+
+// v114.60: Subtitle Font Word Spacing114
+internal fun PlayerActivity.showV114SubtitleFontWordSpacing114Dialog() {
+    val options = listOf(-2, -1, 0, 1, 2)
+    val currentIndex = options.indexOf(BiliClient.prefs.v114subtitleFontWordSpacing114).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Font Word Spacing114",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v114subtitleFontWordSpacing114 = value
+        AppToast.show(this, "Subtitle Font Word Spacing114: $value")
+    }
+}
+
+// v115.61: Audio Dynamic Treble Boost
+internal fun PlayerActivity.showV115AudioDynamicTrebleBoostDialog() {
+    val options = listOf(0, 25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v115audioDynamicTrebleBoost).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Audio Dynamic Treble Boost",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v115audioDynamicTrebleBoost = value
+        AppToast.show(this, "Audio Dynamic Treble Boost: $value")
+    }
+}
+
+// v115.62: Danmaku Font BG Border Toggle115
+internal fun PlayerActivity.showV115DanmakuFontBgBorderToggle115Toggle() {
+    val enabled = !BiliClient.prefs.v115danmakuFontBgBorderToggle115
+    BiliClient.prefs.v115danmakuFontBgBorderToggle115 = enabled
+    AppToast.show(this, "Danmaku Font BG Border Toggle115: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v115.63: Subtitle Font Word Spacing115
+internal fun PlayerActivity.showV115SubtitleFontWordSpacing115Dialog() {
+    val options = listOf(-2, -1, 0, 1, 2)
+    val currentIndex = options.indexOf(BiliClient.prefs.v115subtitleFontWordSpacing115).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Font Word Spacing115",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v115subtitleFontWordSpacing115 = value
+        AppToast.show(this, "Subtitle Font Word Spacing115: $value")
+    }
+}
+
+// v115.64: Gesture Tap Double Action
+internal fun PlayerActivity.showV115GestureTapDoubleActionDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v115gestureTapDoubleAction).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Gesture Tap Double Action",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v115gestureTapDoubleAction = value
+        AppToast.show(this, "Gesture Tap Double Action: $value")
+    }
+}
+
+// v115.65: Cast Video Tint Custom
+internal fun PlayerActivity.showV115CastVideoTintCustomDialog() {
+    val options = listOf(0, 1, 2, 3, 4)
+    val currentIndex = options.indexOf(BiliClient.prefs.v115castVideoTintCustom).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Cast Video Tint Custom",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v115castVideoTintCustom = value
+        AppToast.show(this, "Cast Video Tint Custom: $value")
+    }
+}
+
+// v115.66: Playlist Auto Resume On Launch
+internal fun PlayerActivity.showV115PlaylistAutoResumeOnLaunchToggle() {
+    val enabled = !BiliClient.prefs.v115playlistAutoResumeOnLaunch
+    BiliClient.prefs.v115playlistAutoResumeOnLaunch = enabled
+    AppToast.show(this, "Playlist Auto Resume On Launch: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v115.67: Cache Read Buffer Size
+internal fun PlayerActivity.showV115CacheReadBufferSizeDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v115cacheReadBufferSize).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Cache Read Buffer Size",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v115cacheReadBufferSize = value
+        AppToast.show(this, "Cache Read Buffer Size: $value")
+    }
+}
+
+// v115.68: Progress Bar Custom Chapter Opacity
+internal fun PlayerActivity.showV115ProgressBarCustomChapterOpacityDialog() {
+    val options = listOf(25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v115progressBarCustomChapterOpacity).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Progress Bar Custom Chapter Opacity",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v115progressBarCustomChapterOpacity = value
+        AppToast.show(this, "Progress Bar Custom Chapter Opacity: $value")
+    }
+}
+
+// v115.69: Volume Fade Out On Pause
+internal fun PlayerActivity.showV115VolumeFadeOutOnPauseToggle() {
+    val enabled = !BiliClient.prefs.v115volumeFadeOutOnPause
+    BiliClient.prefs.v115volumeFadeOutOnPause = enabled
+    AppToast.show(this, "Volume Fade Out On Pause: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v115.70: History Search Auto Complete
+internal fun PlayerActivity.showV115HistorySearchAutoCompleteToggle() {
+    val enabled = !BiliClient.prefs.v115historySearchAutoComplete
+    BiliClient.prefs.v115historySearchAutoComplete = enabled
+    AppToast.show(this, "History Search Auto Complete: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v115.71: Playback Speed Auto Adjust Min
+internal fun PlayerActivity.showV115PlaybackSpeedAutoAdjustMinDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v115playbackSpeedAutoAdjustMin).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Playback Speed Auto Adjust Min",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v115playbackSpeedAutoAdjustMin = value
+        AppToast.show(this, "Playback Speed Auto Adjust Min: $value")
+    }
+}
+
+// v115.72: Screenshot Auto Share LinkedIn
+internal fun PlayerActivity.showV115ScreenshotAutoShareLinkedInToggle() {
+    val enabled = !BiliClient.prefs.v115screenshotAutoShareLinkedIn
+    BiliClient.prefs.v115screenshotAutoShareLinkedIn = enabled
+    AppToast.show(this, "Screenshot Auto Share LinkedIn: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v115.73: Video Split Screen Custom
+internal fun PlayerActivity.showV115VideoSplitScreenCustomDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v115videoSplitScreenCustom).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Video Split Screen Custom",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v115videoSplitScreenCustom = value
+        AppToast.show(this, "Video Split Screen Custom: $value")
+    }
+}
+
+// v115.74: Danmaku Font BG Border Width115
+internal fun PlayerActivity.showV115DanmakuFontBgBorderWidth115Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v115danmakuFontBgBorderWidth115).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Font BG Border Width115",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v115danmakuFontBgBorderWidth115 = value
+        AppToast.show(this, "Danmaku Font BG Border Width115: $value")
+    }
+}
+
+// v115.75: Subtitle Font Features115
+internal fun PlayerActivity.showV115SubtitleFontFeatures115Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v115subtitleFontFeatures115).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Font Features115",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v115subtitleFontFeatures115 = value
+        AppToast.show(this, "Subtitle Font Features115: $value")
+    }
+}
+
+// v116.76: Audio Dynamic Compressor Toggle116
+internal fun PlayerActivity.showV116AudioDynamicCompressorToggle116Toggle() {
+    val enabled = !BiliClient.prefs.v116audioDynamicCompressorToggle116
+    BiliClient.prefs.v116audioDynamicCompressorToggle116 = enabled
+    AppToast.show(this, "Audio Dynamic Compressor Toggle116: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v116.77: Danmaku Font BG Border Color115
+internal fun PlayerActivity.showV116DanmakuFontBgBorderColor115Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v116danmakuFontBgBorderColor115).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Font BG Border Color115",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v116danmakuFontBgBorderColor115 = value
+        AppToast.show(this, "Danmaku Font BG Border Color115: $value")
+    }
+}
+
+// v116.78: Subtitle Font Features116
+internal fun PlayerActivity.showV116SubtitleFontFeatures116Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v116subtitleFontFeatures116).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Font Features116",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v116subtitleFontFeatures116 = value
+        AppToast.show(this, "Subtitle Font Features116: $value")
+    }
+}
+
+// v116.79: Gesture Tap Triple Action
+internal fun PlayerActivity.showV116GestureTapTripleActionDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v116gestureTapTripleAction).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Gesture Tap Triple Action",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v116gestureTapTripleAction = value
+        AppToast.show(this, "Gesture Tap Triple Action: $value")
+    }
+}
+
+// v116.80: Cast Video Sepia Custom
+internal fun PlayerActivity.showV116CastVideoSepiaCustomDialog() {
+    val options = listOf(0, 25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v116castVideoSepiaCustom).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Cast Video Sepia Custom",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v116castVideoSepiaCustom = value
+        AppToast.show(this, "Cast Video Sepia Custom: $value")
+    }
+}
+
+// v116.81: Playlist Auto Shuffle Seed
+internal fun PlayerActivity.showV116PlaylistAutoShuffleSeedDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v116playlistAutoShuffleSeed).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Playlist Auto Shuffle Seed",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v116playlistAutoShuffleSeed = value
+        AppToast.show(this, "Playlist Auto Shuffle Seed: $value")
+    }
+}
+
+// v116.82: Cache Preload On Start Toggle
+internal fun PlayerActivity.showV116CachePreloadOnStartToggleToggle() {
+    val enabled = !BiliClient.prefs.v116cachePreloadOnStartToggle
+    BiliClient.prefs.v116cachePreloadOnStartToggle = enabled
+    AppToast.show(this, "Cache Preload On Start Toggle: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v116.83: Progress Bar Custom Buffer Opacity
+internal fun PlayerActivity.showV116ProgressBarCustomBufferOpacityDialog() {
+    val options = listOf(25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v116progressBarCustomBufferOpacity).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Progress Bar Custom Buffer Opacity",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v116progressBarCustomBufferOpacity = value
+        AppToast.show(this, "Progress Bar Custom Buffer Opacity: $value")
+    }
+}
+
+// v116.84: Volume Fade Duration Custom
+internal fun PlayerActivity.showV116VolumeFadeDurationCustomDialog() {
+    val options = listOf(100, 200, 300, 500, 1000)
+    val currentIndex = options.indexOf(BiliClient.prefs.v116volumeFadeDurationCustom).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Volume Fade Duration Custom",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v116volumeFadeDurationCustom = value
+        AppToast.show(this, "Volume Fade Duration Custom: $value")
+    }
+}
+
+// v116.85: History Search Scope Custom
+internal fun PlayerActivity.showV116HistorySearchScopeCustomDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v116historySearchScopeCustom).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "History Search Scope Custom",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v116historySearchScopeCustom = value
+        AppToast.show(this, "History Search Scope Custom: $value")
+    }
+}
+
+// v116.86: Playback Speed Auto Adjust Max
+internal fun PlayerActivity.showV116PlaybackSpeedAutoAdjustMaxDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v116playbackSpeedAutoAdjustMax).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Playback Speed Auto Adjust Max",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v116playbackSpeedAutoAdjustMax = value
+        AppToast.show(this, "Playback Speed Auto Adjust Max: $value")
+    }
+}
+
+// v116.87: Screenshot Auto Share WhatsApp
+internal fun PlayerActivity.showV116ScreenshotAutoShareWhatsAppToggle() {
+    val enabled = !BiliClient.prefs.v116screenshotAutoShareWhatsApp
+    BiliClient.prefs.v116screenshotAutoShareWhatsApp = enabled
+    AppToast.show(this, "Screenshot Auto Share WhatsApp: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v116.88: Video PIP Mode Custom
+internal fun PlayerActivity.showV116VideoPIPModeCustomDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v116videoPIPModeCustom).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Video PIP Mode Custom",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v116videoPIPModeCustom = value
+        AppToast.show(this, "Video PIP Mode Custom: $value")
+    }
+}
+
+// v116.89: Danmaku Font BG Border Radius115
+internal fun PlayerActivity.showV116DanmakuFontBgBorderRadius115Dialog() {
+    val options = listOf(0, 2, 4, 6, 8)
+    val currentIndex = options.indexOf(BiliClient.prefs.v116danmakuFontBgBorderRadius115).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Font BG Border Radius115",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v116danmakuFontBgBorderRadius115 = value
+        AppToast.show(this, "Danmaku Font BG Border Radius115: $value")
+    }
+}
+
+// v116.90: Subtitle Animation Type116
+internal fun PlayerActivity.showV116SubtitleAnimationType116Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v116subtitleAnimationType116).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Animation Type116",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v116subtitleAnimationType116 = value
+        AppToast.show(this, "Subtitle Animation Type116: $value")
+    }
+}
+
+// v117.91: Audio Dynamic EQ Toggle117
+internal fun PlayerActivity.showV117AudioDynamicEQToggle117Toggle() {
+    val enabled = !BiliClient.prefs.v117audioDynamicEQToggle117
+    BiliClient.prefs.v117audioDynamicEQToggle117 = enabled
+    AppToast.show(this, "Audio Dynamic EQ Toggle117: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v117.92: Danmaku Font BG Border Radius116
+internal fun PlayerActivity.showV117DanmakuFontBgBorderRadius116Dialog() {
+    val options = listOf(0, 2, 4, 6, 8)
+    val currentIndex = options.indexOf(BiliClient.prefs.v117danmakuFontBgBorderRadius116).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Font BG Border Radius116",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v117danmakuFontBgBorderRadius116 = value
+        AppToast.show(this, "Danmaku Font BG Border Radius116: $value")
+    }
+}
+
+// v117.93: Subtitle Animation Duration117
+internal fun PlayerActivity.showV117SubtitleAnimationDuration117Dialog() {
+    val options = listOf(100, 200, 300, 400, 500)
+    val currentIndex = options.indexOf(BiliClient.prefs.v117subtitleAnimationDuration117).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Animation Duration117",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v117subtitleAnimationDuration117 = value
+        AppToast.show(this, "Subtitle Animation Duration117: $value")
+    }
+}
+
+// v117.94: Gesture Tap Quadruple Action
+internal fun PlayerActivity.showV117GestureTapQuadrupleActionDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v117gestureTapQuadrupleAction).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Gesture Tap Quadruple Action",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v117gestureTapQuadrupleAction = value
+        AppToast.show(this, "Gesture Tap Quadruple Action: $value")
+    }
+}
+
+// v117.95: Cast Video Negative Custom
+internal fun PlayerActivity.showV117CastVideoNegativeCustomDialog() {
+    val options = listOf(0, 25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v117castVideoNegativeCustom).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Cast Video Negative Custom",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v117castVideoNegativeCustom = value
+        AppToast.show(this, "Cast Video Negative Custom: $value")
+    }
+}
+
+// v117.96: Playlist Auto Skip On Low Battery
+internal fun PlayerActivity.showV117PlaylistAutoSkipOnLowBatteryToggle() {
+    val enabled = !BiliClient.prefs.v117playlistAutoSkipOnLowBattery
+    BiliClient.prefs.v117playlistAutoSkipOnLowBattery = enabled
+    AppToast.show(this, "Playlist Auto Skip On Low Battery: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v117.97: Cache Preload On Wifi Toggle
+internal fun PlayerActivity.showV117CachePreloadOnWifiToggleToggle() {
+    val enabled = !BiliClient.prefs.v117cachePreloadOnWifiToggle
+    BiliClient.prefs.v117cachePreloadOnWifiToggle = enabled
+    AppToast.show(this, "Cache Preload On Wifi Toggle: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v117.98: Progress Bar Custom Live Edge Opacity
+internal fun PlayerActivity.showV117ProgressBarCustomLiveEdgeOpacityDialog() {
+    val options = listOf(25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v117progressBarCustomLiveEdgeOpacity).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Progress Bar Custom Live Edge Opacity",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v117progressBarCustomLiveEdgeOpacity = value
+        AppToast.show(this, "Progress Bar Custom Live Edge Opacity: $value")
+    }
+}
+
+// v117.99: Volume Smooth Fade Toggle
+internal fun PlayerActivity.showV117VolumeSmoothFadeToggleToggle() {
+    val enabled = !BiliClient.prefs.v117volumeSmoothFadeToggle
+    BiliClient.prefs.v117volumeSmoothFadeToggle = enabled
+    AppToast.show(this, "Volume Smooth Fade Toggle: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v117.100: History Search Regex Toggle
+internal fun PlayerActivity.showV117HistorySearchRegexToggleToggle() {
+    val enabled = !BiliClient.prefs.v117historySearchRegexToggle
+    BiliClient.prefs.v117historySearchRegexToggle = enabled
+    AppToast.show(this, "History Search Regex Toggle: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v117.101: Playback Speed Auto Adjust Active
+internal fun PlayerActivity.showV117PlaybackSpeedAutoAdjustActiveToggle() {
+    val enabled = !BiliClient.prefs.v117playbackSpeedAutoAdjustActive
+    BiliClient.prefs.v117playbackSpeedAutoAdjustActive = enabled
+    AppToast.show(this, "Playback Speed Auto Adjust Active: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v117.102: Screenshot Auto Share Telegram
+internal fun PlayerActivity.showV117ScreenshotAutoShareTelegramToggle() {
+    val enabled = !BiliClient.prefs.v117screenshotAutoShareTelegram
+    BiliClient.prefs.v117screenshotAutoShareTelegram = enabled
+    AppToast.show(this, "Screenshot Auto Share Telegram: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v117.103: Video PIP Size Custom
+internal fun PlayerActivity.showV117VideoPIPSizeCustomDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v117videoPIPSizeCustom).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Video PIP Size Custom",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v117videoPIPSizeCustom = value
+        AppToast.show(this, "Video PIP Size Custom: $value")
+    }
+}
+
+// v117.104: Danmaku Font BG Border Opacity116
+internal fun PlayerActivity.showV117DanmakuFontBgBorderOpacity116Dialog() {
+    val options = listOf(0, 25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v117danmakuFontBgBorderOpacity116).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Font BG Border Opacity116",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v117danmakuFontBgBorderOpacity116 = value
+        AppToast.show(this, "Danmaku Font BG Border Opacity116: $value")
+    }
+}
+
+// v117.105: Subtitle Animation Speed117
+internal fun PlayerActivity.showV117SubtitleAnimationSpeed117Dialog() {
+    val options = listOf(50, 75, 100, 125, 150)
+    val currentIndex = options.indexOf(BiliClient.prefs.v117subtitleAnimationSpeed117).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Animation Speed117",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v117subtitleAnimationSpeed117 = value
+        AppToast.show(this, "Subtitle Animation Speed117: $value")
+    }
+}
+
+// v118.106: Audio Dynamic Range Expand
+internal fun PlayerActivity.showV118AudioDynamicRangeExpandDialog() {
+    val options = listOf(0, 25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v118audioDynamicRangeExpand).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Audio Dynamic Range Expand",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v118audioDynamicRangeExpand = value
+        AppToast.show(this, "Audio Dynamic Range Expand: $value")
+    }
+}
+
+// v118.107: Danmaku Font BG Border Opacity117
+internal fun PlayerActivity.showV118DanmakuFontBgBorderOpacity117Dialog() {
+    val options = listOf(0, 25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v118danmakuFontBgBorderOpacity117).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Font BG Border Opacity117",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v118danmakuFontBgBorderOpacity117 = value
+        AppToast.show(this, "Danmaku Font BG Border Opacity117: $value")
+    }
+}
+
+// v118.108: Subtitle Animation Speed118
+internal fun PlayerActivity.showV118SubtitleAnimationSpeed118Dialog() {
+    val options = listOf(50, 75, 100, 125, 150)
+    val currentIndex = options.indexOf(BiliClient.prefs.v118subtitleAnimationSpeed118).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Animation Speed118",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v118subtitleAnimationSpeed118 = value
+        AppToast.show(this, "Subtitle Animation Speed118: $value")
+    }
+}
+
+// v118.109: Gesture Tap Hold Action
+internal fun PlayerActivity.showV118GestureTapHoldActionDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v118gestureTapHoldAction).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Gesture Tap Hold Action",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v118gestureTapHoldAction = value
+        AppToast.show(this, "Gesture Tap Hold Action: $value")
+    }
+}
+
+// v118.110: Cast Video Posterize Custom
+internal fun PlayerActivity.showV118CastVideoPosterizeCustomDialog() {
+    val options = listOf(0, 25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v118castVideoPosterizeCustom).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Cast Video Posterize Custom",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v118castVideoPosterizeCustom = value
+        AppToast.show(this, "Cast Video Posterize Custom: $value")
+    }
+}
+
+// v118.111: Playlist Auto Load Metadata
+internal fun PlayerActivity.showV118PlaylistAutoLoadMetadataToggle() {
+    val enabled = !BiliClient.prefs.v118playlistAutoLoadMetadata
+    BiliClient.prefs.v118playlistAutoLoadMetadata = enabled
+    AppToast.show(this, "Playlist Auto Load Metadata: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v118.112: Cache Smart Eviction Toggle
+internal fun PlayerActivity.showV118CacheSmartEvictionToggleToggle() {
+    val enabled = !BiliClient.prefs.v118cacheSmartEvictionToggle
+    BiliClient.prefs.v118cacheSmartEvictionToggle = enabled
+    AppToast.show(this, "Cache Smart Eviction Toggle: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v118.113: Progress Bar Custom Scale Type
+internal fun PlayerActivity.showV118ProgressBarCustomScaleTypeDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v118progressBarCustomScaleType).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Progress Bar Custom Scale Type",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v118progressBarCustomScaleType = value
+        AppToast.show(this, "Progress Bar Custom Scale Type: $value")
+    }
+}
+
+// v118.114: Volume Spatial Audio Mode
+internal fun PlayerActivity.showV118VolumeSpatialAudioModeDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v118volumeSpatialAudioMode).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Volume Spatial Audio Mode",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v118volumeSpatialAudioMode = value
+        AppToast.show(this, "Volume Spatial Audio Mode: $value")
+    }
+}
+
+// v118.115: History Search Fuzzy Match
+internal fun PlayerActivity.showV118HistorySearchFuzzyMatchToggle() {
+    val enabled = !BiliClient.prefs.v118historySearchFuzzyMatch
+    BiliClient.prefs.v118historySearchFuzzyMatch = enabled
+    AppToast.show(this, "History Search Fuzzy Match: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v118.116: Playback Speed Auto Adjust Buffer
+internal fun PlayerActivity.showV118PlaybackSpeedAutoAdjustBufferToggle() {
+    val enabled = !BiliClient.prefs.v118playbackSpeedAutoAdjustBuffer
+    BiliClient.prefs.v118playbackSpeedAutoAdjustBuffer = enabled
+    AppToast.show(this, "Playback Speed Auto Adjust Buffer: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v118.117: Screenshot Auto Share Discord
+internal fun PlayerActivity.showV118ScreenshotAutoShareDiscordToggle() {
+    val enabled = !BiliClient.prefs.v118screenshotAutoShareDiscord
+    BiliClient.prefs.v118screenshotAutoShareDiscord = enabled
+    AppToast.show(this, "Screenshot Auto Share Discord: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v118.118: Video PIP Position Custom
+internal fun PlayerActivity.showV118VideoPIPPositionCustomDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v118videoPIPPositionCustom).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Video PIP Position Custom",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v118videoPIPPositionCustom = value
+        AppToast.show(this, "Video PIP Position Custom: $value")
+    }
+}
+
+// v118.119: Danmaku Font BG Fill Mode117
+internal fun PlayerActivity.showV118DanmakuFontBgFillMode117Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v118danmakuFontBgFillMode117).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Font BG Fill Mode117",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v118danmakuFontBgFillMode117 = value
+        AppToast.show(this, "Danmaku Font BG Fill Mode117: $value")
+    }
+}
+
+// v118.120: Subtitle Animation Easing118
+internal fun PlayerActivity.showV118SubtitleAnimationEasing118Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v118subtitleAnimationEasing118).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Animation Easing118",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v118subtitleAnimationEasing118 = value
+        AppToast.show(this, "Subtitle Animation Easing118: $value")
+    }
+}
+
+// v119.121: Audio Dynamic Stereo Width
+internal fun PlayerActivity.showV119AudioDynamicStereoWidthDialog() {
+    val options = listOf(0, 25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v119audioDynamicStereoWidth).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Audio Dynamic Stereo Width",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v119audioDynamicStereoWidth = value
+        AppToast.show(this, "Audio Dynamic Stereo Width: $value")
+    }
+}
+
+// v119.122: Danmaku Font BG Fill Mode118
+internal fun PlayerActivity.showV119DanmakuFontBgFillMode118Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v119danmakuFontBgFillMode118).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Font BG Fill Mode118",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v119danmakuFontBgFillMode118 = value
+        AppToast.show(this, "Danmaku Font BG Fill Mode118: $value")
+    }
+}
+
+// v119.123: Subtitle Animation Easing119
+internal fun PlayerActivity.showV119SubtitleAnimationEasing119Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v119subtitleAnimationEasing119).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Animation Easing119",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v119subtitleAnimationEasing119 = value
+        AppToast.show(this, "Subtitle Animation Easing119: $value")
+    }
+}
+
+// v119.124: Gesture Tap Release Action
+internal fun PlayerActivity.showV119GestureTapReleaseActionDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v119gestureTapReleaseAction).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Gesture Tap Release Action",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v119gestureTapReleaseAction = value
+        AppToast.show(this, "Gesture Tap Release Action: $value")
+    }
+}
+
+// v119.125: Cast Video Solarize Custom
+internal fun PlayerActivity.showV119CastVideoSolarizeCustomDialog() {
+    val options = listOf(0, 25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v119castVideoSolarizeCustom).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Cast Video Solarize Custom",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v119castVideoSolarizeCustom = value
+        AppToast.show(this, "Cast Video Solarize Custom: $value")
+    }
+}
+
+// v119.126: Playlist Auto Save Position
+internal fun PlayerActivity.showV119PlaylistAutoSavePositionToggle() {
+    val enabled = !BiliClient.prefs.v119playlistAutoSavePosition
+    BiliClient.prefs.v119playlistAutoSavePosition = enabled
+    AppToast.show(this, "Playlist Auto Save Position: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v119.127: Cache Verify Integrity Toggle
+internal fun PlayerActivity.showV119CacheVerifyIntegrityToggleToggle() {
+    val enabled = !BiliClient.prefs.v119cacheVerifyIntegrityToggle
+    BiliClient.prefs.v119cacheVerifyIntegrityToggle = enabled
+    AppToast.show(this, "Cache Verify Integrity Toggle: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v119.128: Progress Bar Custom Scale Min
+internal fun PlayerActivity.showV119ProgressBarCustomScaleMinDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v119progressBarCustomScaleMin).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Progress Bar Custom Scale Min",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v119progressBarCustomScaleMin = value
+        AppToast.show(this, "Progress Bar Custom Scale Min: $value")
+    }
+}
+
+// v119.129: Volume Stereo Pan Custom
+internal fun PlayerActivity.showV119VolumeStereoPanCustomDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v119volumeStereoPanCustom).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Volume Stereo Pan Custom",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v119volumeStereoPanCustom = value
+        AppToast.show(this, "Volume Stereo Pan Custom: $value")
+    }
+}
+
+// v119.130: History Search Match Case
+internal fun PlayerActivity.showV119HistorySearchMatchCaseToggle() {
+    val enabled = !BiliClient.prefs.v119historySearchMatchCase
+    BiliClient.prefs.v119historySearchMatchCase = enabled
+    AppToast.show(this, "History Search Match Case: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v119.131: Playback Speed Auto Adjust Network
+internal fun PlayerActivity.showV119PlaybackSpeedAutoAdjustNetworkToggle() {
+    val enabled = !BiliClient.prefs.v119playbackSpeedAutoAdjustNetwork
+    BiliClient.prefs.v119playbackSpeedAutoAdjustNetwork = enabled
+    AppToast.show(this, "Playback Speed Auto Adjust Network: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v119.132: Screenshot Auto Share Line
+internal fun PlayerActivity.showV119ScreenshotAutoShareLineToggle() {
+    val enabled = !BiliClient.prefs.v119screenshotAutoShareLine
+    BiliClient.prefs.v119screenshotAutoShareLine = enabled
+    AppToast.show(this, "Screenshot Auto Share Line: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v119.133: Video PIP Corner Radius
+internal fun PlayerActivity.showV119VideoPIPCornerRadiusDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v119videoPIPCornerRadius).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Video PIP Corner Radius",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v119videoPIPCornerRadius = value
+        AppToast.show(this, "Video PIP Corner Radius: $value")
+    }
+}
+
+// v119.134: Danmaku Font BG Fill Opacity118
+internal fun PlayerActivity.showV119DanmakuFontBgFillOpacity118Dialog() {
+    val options = listOf(0, 25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v119danmakuFontBgFillOpacity118).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Font BG Fill Opacity118",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v119danmakuFontBgFillOpacity118 = value
+        AppToast.show(this, "Danmaku Font BG Fill Opacity118: $value")
+    }
+}
+
+// v119.135: Subtitle Animation Loop119
+internal fun PlayerActivity.showV119SubtitleAnimationLoop119Toggle() {
+    val enabled = !BiliClient.prefs.v119subtitleAnimationLoop119
+    BiliClient.prefs.v119subtitleAnimationLoop119 = enabled
+    AppToast.show(this, "Subtitle Animation Loop119: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v120.136: Audio Dynamic Mono Fold
+internal fun PlayerActivity.showV120AudioDynamicMonoFoldToggle() {
+    val enabled = !BiliClient.prefs.v120audioDynamicMonoFold
+    BiliClient.prefs.v120audioDynamicMonoFold = enabled
+    AppToast.show(this, "Audio Dynamic Mono Fold: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v120.137: Danmaku Font BG Fill Opacity119
+internal fun PlayerActivity.showV120DanmakuFontBgFillOpacity119Dialog() {
+    val options = listOf(0, 25, 50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v120danmakuFontBgFillOpacity119).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Font BG Fill Opacity119",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v120danmakuFontBgFillOpacity119 = value
+        AppToast.show(this, "Danmaku Font BG Fill Opacity119: $value")
+    }
+}
+
+// v120.138: Subtitle Animation Loop120
+internal fun PlayerActivity.showV120SubtitleAnimationLoop120Toggle() {
+    val enabled = !BiliClient.prefs.v120subtitleAnimationLoop120
+    BiliClient.prefs.v120subtitleAnimationLoop120 = enabled
+    AppToast.show(this, "Subtitle Animation Loop120: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v120.139: Gesture Tap Custom Action
+internal fun PlayerActivity.showV120GestureTapCustomActionDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v120gestureTapCustomAction).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Gesture Tap Custom Action",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v120gestureTapCustomAction = value
+        AppToast.show(this, "Gesture Tap Custom Action: $value")
+    }
+}
+
+// v120.140: Cast Video Duotone Custom
+internal fun PlayerActivity.showV120CastVideoDuotoneCustomDialog() {
+    val options = listOf(0, 1, 2, 3, 4)
+    val currentIndex = options.indexOf(BiliClient.prefs.v120castVideoDuotoneCustom).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Cast Video Duotone Custom",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v120castVideoDuotoneCustom = value
+        AppToast.show(this, "Cast Video Duotone Custom: $value")
+    }
+}
+
+// v120.141: Playlist Auto Save Position Toggle
+internal fun PlayerActivity.showV120PlaylistAutoSavePositionToggleToggle() {
+    val enabled = !BiliClient.prefs.v120playlistAutoSavePositionToggle
+    BiliClient.prefs.v120playlistAutoSavePositionToggle = enabled
+    AppToast.show(this, "Playlist Auto Save Position Toggle: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v120.142: Cache Verify Integrity On Start
+internal fun PlayerActivity.showV120CacheVerifyIntegrityOnStartToggle() {
+    val enabled = !BiliClient.prefs.v120cacheVerifyIntegrityOnStart
+    BiliClient.prefs.v120cacheVerifyIntegrityOnStart = enabled
+    AppToast.show(this, "Cache Verify Integrity On Start: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v120.143: Progress Bar Custom Scale Max
+internal fun PlayerActivity.showV120ProgressBarCustomScaleMaxDialog() {
+    val options = listOf(75, 100, 125, 150, 200)
+    val currentIndex = options.indexOf(BiliClient.prefs.v120progressBarCustomScaleMax).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Progress Bar Custom Scale Max",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v120progressBarCustomScaleMax = value
+        AppToast.show(this, "Progress Bar Custom Scale Max: $value")
+    }
+}
+
+// v120.144: Volume Stereo Width Custom
+internal fun PlayerActivity.showV120VolumeStereoWidthCustomDialog() {
+    val options = listOf(50, 75, 100, 125, 150)
+    val currentIndex = options.indexOf(BiliClient.prefs.v120volumeStereoWidthCustom).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Volume Stereo Width Custom",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v120volumeStereoWidthCustom = value
+        AppToast.show(this, "Volume Stereo Width Custom: $value")
+    }
+}
+
+// v120.145: History Search Whole Word
+internal fun PlayerActivity.showV120HistorySearchWholeWordToggle() {
+    val enabled = !BiliClient.prefs.v120historySearchWholeWord
+    BiliClient.prefs.v120historySearchWholeWord = enabled
+    AppToast.show(this, "History Search Whole Word: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v120.146: Playback Speed Auto Adjust Quality
+internal fun PlayerActivity.showV120PlaybackSpeedAutoAdjustQualityToggle() {
+    val enabled = !BiliClient.prefs.v120playbackSpeedAutoAdjustQuality
+    BiliClient.prefs.v120playbackSpeedAutoAdjustQuality = enabled
+    AppToast.show(this, "Playback Speed Auto Adjust Quality: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v120.147: Screenshot Auto Share KakaoTalk
+internal fun PlayerActivity.showV120ScreenshotAutoShareKakaoTalkToggle() {
+    val enabled = !BiliClient.prefs.v120screenshotAutoShareKakaoTalk
+    BiliClient.prefs.v120screenshotAutoShareKakaoTalk = enabled
+    AppToast.show(this, "Screenshot Auto Share KakaoTalk: ${if (enabled) "ON" else "OFF"}")
+}
+
+// v120.148: Video PIP Opacity Custom
+internal fun PlayerActivity.showV120VideoPIPOpacityCustomDialog() {
+    val options = listOf(50, 75, 100)
+    val currentIndex = options.indexOf(BiliClient.prefs.v120videoPIPOpacityCustom).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Video PIP Opacity Custom",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v120videoPIPOpacityCustom = value
+        AppToast.show(this, "Video PIP Opacity Custom: $value")
+    }
+}
+
+// v120.149: Danmaku Font BG Fill Angle119
+internal fun PlayerActivity.showV120DanmakuFontBgFillAngle119Dialog() {
+    val options = listOf(0, 90, 180, 270)
+    val currentIndex = options.indexOf(BiliClient.prefs.v120danmakuFontBgFillAngle119).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Font BG Fill Angle119",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v120danmakuFontBgFillAngle119 = value
+        AppToast.show(this, "Danmaku Font BG Fill Angle119: $value")
+    }
+}
+
+// v120.150: Subtitle Animation Delay120
+internal fun PlayerActivity.showV120SubtitleAnimationDelay120Dialog() {
+    val options = listOf(0, 100, 200, 300, 500)
+    val currentIndex = options.indexOf(BiliClient.prefs.v120subtitleAnimationDelay120).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Animation Delay120",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v120subtitleAnimationDelay120 = value
+        AppToast.show(this, "Subtitle Animation Delay120: $value")
+    }
+}
