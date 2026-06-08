@@ -59448,6 +59448,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V880PRELOADAUTOCACHE880, false)
         set(value) = prefs.edit().putBoolean(KEY_V880PRELOADAUTOCACHE880, value).apply()
 
+    var v881prepareAutoBuffer881: Boolean
+        get() = prefs.getBoolean(KEY_V881PREPAREAUTOBUFFER881, false)
+        set(value) = prefs.edit().putBoolean(KEY_V881PREPAREAUTOBUFFER881, value).apply()
+
+    var v881presentAutoAnimate881: Boolean
+        get() = prefs.getBoolean(KEY_V881PRESENTAUTOANIMATE881, false)
+        set(value) = prefs.edit().putBoolean(KEY_V881PRESENTAUTOANIMATE881, value).apply()
+
+    var v881preserveAutoRatio881: Boolean
+        get() = prefs.getBoolean(KEY_V881PRESERVEAUTORATIO881, false)
+        set(value) = prefs.edit().putBoolean(KEY_V881PRESERVEAUTORATIO881, value).apply()
+
+    var v881pressAutoHold881: Boolean
+        get() = prefs.getBoolean(KEY_V881PRESSAUTOHOLD881, false)
+        set(value) = prefs.edit().putBoolean(KEY_V881PRESSAUTOHOLD881, value).apply()
+
+    var v881prevAutoTrack881: Boolean
+        get() = prefs.getBoolean(KEY_V881PREVAUTOTRACK881, false)
+        set(value) = prefs.edit().putBoolean(KEY_V881PREVAUTOTRACK881, value).apply()
+
+    var v881preventAutoOverscroll881: Boolean
+        get() = prefs.getBoolean(KEY_V881PREVENTAUTOOVERSCROLL881, false)
+        set(value) = prefs.edit().putBoolean(KEY_V881PREVENTAUTOOVERSCROLL881, value).apply()
+
+    var v881previewAutoThumbnail881: Boolean
+        get() = prefs.getBoolean(KEY_V881PREVIEWAUTOTHUMBNAIL881, false)
+        set(value) = prefs.edit().putBoolean(KEY_V881PREVIEWAUTOTHUMBNAIL881, value).apply()
+
+    var v881primaryAutoSource881: Boolean
+        get() = prefs.getBoolean(KEY_V881PRIMARYAUTOSOURCE881, false)
+        set(value) = prefs.edit().putBoolean(KEY_V881PRIMARYAUTOSOURCE881, value).apply()
+
+    var v881printAutoLog881: Boolean
+        get() = prefs.getBoolean(KEY_V881PRINTAUTOLOG881, false)
+        set(value) = prefs.edit().putBoolean(KEY_V881PRINTAUTOLOG881, value).apply()
+
+    var v881priorityAutoQueue881: Int
+        get() = prefs.getInt(KEY_V881PRIORITYAUTOQUEUE881, 0)
+        set(value) = prefs.edit().putInt(KEY_V881PRIORITYAUTOQUEUE881, value).apply()
+
+    var v881privateAutoIncognito881: Boolean
+        get() = prefs.getBoolean(KEY_V881PRIVATEAUTOINCOGNITO881, false)
+        set(value) = prefs.edit().putBoolean(KEY_V881PRIVATEAUTOINCOGNITO881, value).apply()
+
+    var v881processAutoThread881: Boolean
+        get() = prefs.getBoolean(KEY_V881PROCESSAUTOTHREAD881, false)
+        set(value) = prefs.edit().putBoolean(KEY_V881PROCESSAUTOTHREAD881, value).apply()
+
+    var v881produceAutoGenerate881: Boolean
+        get() = prefs.getBoolean(KEY_V881PRODUCEAUTOGENERATE881, false)
+        set(value) = prefs.edit().putBoolean(KEY_V881PRODUCEAUTOGENERATE881, value).apply()
+
+    var v881profileAutoSwitch881: Boolean
+        get() = prefs.getBoolean(KEY_V881PROFILEAUTOSWITCH881, false)
+        set(value) = prefs.edit().putBoolean(KEY_V881PROFILEAUTOSWITCH881, value).apply()
+
+    var v881programAutoSchedule881: Boolean
+        get() = prefs.getBoolean(KEY_V881PROGRAMAUTOSCHEDULE881, false)
+        set(value) = prefs.edit().putBoolean(KEY_V881PROGRAMAUTOSCHEDULE881, value).apply()
+
+    var v882prepareAutoBuffer882: Boolean
+        get() = prefs.getBoolean(KEY_V882PREPAREAUTOBUFFER882, false)
+        set(value) = prefs.edit().putBoolean(KEY_V882PREPAREAUTOBUFFER882, value).apply()
+
+    var v882presentAutoAnimate882: Boolean
+        get() = prefs.getBoolean(KEY_V882PRESENTAUTOANIMATE882, false)
+        set(value) = prefs.edit().putBoolean(KEY_V882PRESENTAUTOANIMATE882, value).apply()
+
+    var v882preserveAutoRatio882: Boolean
+        get() = prefs.getBoolean(KEY_V882PRESERVEAUTORATIO882, false)
+        set(value) = prefs.edit().putBoolean(KEY_V882PRESERVEAUTORATIO882, value).apply()
+
+    var v882pressAutoHold882: Boolean
+        get() = prefs.getBoolean(KEY_V882PRESSAUTOHOLD882, false)
+        set(value) = prefs.edit().putBoolean(KEY_V882PRESSAUTOHOLD882, value).apply()
+
+    var v882prevAutoTrack882: Boolean
+        get() = prefs.getBoolean(KEY_V882PREVAUTOTRACK882, false)
+        set(value) = prefs.edit().putBoolean(KEY_V882PREVAUTOTRACK882, value).apply()
+
+    var v882preventAutoOverscroll882: Boolean
+        get() = prefs.getBoolean(KEY_V882PREVENTAUTOOVERSCROLL882, false)
+        set(value) = prefs.edit().putBoolean(KEY_V882PREVENTAUTOOVERSCROLL882, value).apply()
+
+    var v882previewAutoThumbnail882: Boolean
+        get() = prefs.getBoolean(KEY_V882PREVIEWAUTOTHUMBNAIL882, false)
+        set(value) = prefs.edit().putBoolean(KEY_V882PREVIEWAUTOTHUMBNAIL882, value).apply()
+
+    var v882primaryAutoSource882: Boolean
+        get() = prefs.getBoolean(KEY_V882PRIMARYAUTOSOURCE882, false)
+        set(value) = prefs.edit().putBoolean(KEY_V882PRIMARYAUTOSOURCE882, value).apply()
+
+    var v882printAutoLog882: Boolean
+        get() = prefs.getBoolean(KEY_V882PRINTAUTOLOG882, false)
+        set(value) = prefs.edit().putBoolean(KEY_V882PRINTAUTOLOG882, value).apply()
+
+    var v882priorityAutoQueue882: Int
+        get() = prefs.getInt(KEY_V882PRIORITYAUTOQUEUE882, 0)
+        set(value) = prefs.edit().putInt(KEY_V882PRIORITYAUTOQUEUE882, value).apply()
+
+    var v882privateAutoIncognito882: Boolean
+        get() = prefs.getBoolean(KEY_V882PRIVATEAUTOINCOGNITO882, false)
+        set(value) = prefs.edit().putBoolean(KEY_V882PRIVATEAUTOINCOGNITO882, value).apply()
+
+    var v882processAutoThread882: Boolean
+        get() = prefs.getBoolean(KEY_V882PROCESSAUTOTHREAD882, false)
+        set(value) = prefs.edit().putBoolean(KEY_V882PROCESSAUTOTHREAD882, value).apply()
+
+    var v882produceAutoGenerate882: Boolean
+        get() = prefs.getBoolean(KEY_V882PRODUCEAUTOGENERATE882, false)
+        set(value) = prefs.edit().putBoolean(KEY_V882PRODUCEAUTOGENERATE882, value).apply()
+
+    var v882profileAutoSwitch882: Boolean
+        get() = prefs.getBoolean(KEY_V882PROFILEAUTOSWITCH882, false)
+        set(value) = prefs.edit().putBoolean(KEY_V882PROFILEAUTOSWITCH882, value).apply()
+
+    var v882programAutoSchedule882: Boolean
+        get() = prefs.getBoolean(KEY_V882PROGRAMAUTOSCHEDULE882, false)
+        set(value) = prefs.edit().putBoolean(KEY_V882PROGRAMAUTOSCHEDULE882, value).apply()
+
+    var v883prepareAutoBuffer883: Boolean
+        get() = prefs.getBoolean(KEY_V883PREPAREAUTOBUFFER883, false)
+        set(value) = prefs.edit().putBoolean(KEY_V883PREPAREAUTOBUFFER883, value).apply()
+
+    var v883presentAutoAnimate883: Boolean
+        get() = prefs.getBoolean(KEY_V883PRESENTAUTOANIMATE883, false)
+        set(value) = prefs.edit().putBoolean(KEY_V883PRESENTAUTOANIMATE883, value).apply()
+
+    var v883preserveAutoRatio883: Boolean
+        get() = prefs.getBoolean(KEY_V883PRESERVEAUTORATIO883, false)
+        set(value) = prefs.edit().putBoolean(KEY_V883PRESERVEAUTORATIO883, value).apply()
+
+    var v883pressAutoHold883: Boolean
+        get() = prefs.getBoolean(KEY_V883PRESSAUTOHOLD883, false)
+        set(value) = prefs.edit().putBoolean(KEY_V883PRESSAUTOHOLD883, value).apply()
+
+    var v883prevAutoTrack883: Boolean
+        get() = prefs.getBoolean(KEY_V883PREVAUTOTRACK883, false)
+        set(value) = prefs.edit().putBoolean(KEY_V883PREVAUTOTRACK883, value).apply()
+
+    var v883preventAutoOverscroll883: Boolean
+        get() = prefs.getBoolean(KEY_V883PREVENTAUTOOVERSCROLL883, false)
+        set(value) = prefs.edit().putBoolean(KEY_V883PREVENTAUTOOVERSCROLL883, value).apply()
+
+    var v883previewAutoThumbnail883: Boolean
+        get() = prefs.getBoolean(KEY_V883PREVIEWAUTOTHUMBNAIL883, false)
+        set(value) = prefs.edit().putBoolean(KEY_V883PREVIEWAUTOTHUMBNAIL883, value).apply()
+
+    var v883primaryAutoSource883: Boolean
+        get() = prefs.getBoolean(KEY_V883PRIMARYAUTOSOURCE883, false)
+        set(value) = prefs.edit().putBoolean(KEY_V883PRIMARYAUTOSOURCE883, value).apply()
+
+    var v883printAutoLog883: Boolean
+        get() = prefs.getBoolean(KEY_V883PRINTAUTOLOG883, false)
+        set(value) = prefs.edit().putBoolean(KEY_V883PRINTAUTOLOG883, value).apply()
+
+    var v883priorityAutoQueue883: Int
+        get() = prefs.getInt(KEY_V883PRIORITYAUTOQUEUE883, 0)
+        set(value) = prefs.edit().putInt(KEY_V883PRIORITYAUTOQUEUE883, value).apply()
+
+    var v883privateAutoIncognito883: Boolean
+        get() = prefs.getBoolean(KEY_V883PRIVATEAUTOINCOGNITO883, false)
+        set(value) = prefs.edit().putBoolean(KEY_V883PRIVATEAUTOINCOGNITO883, value).apply()
+
+    var v883processAutoThread883: Boolean
+        get() = prefs.getBoolean(KEY_V883PROCESSAUTOTHREAD883, false)
+        set(value) = prefs.edit().putBoolean(KEY_V883PROCESSAUTOTHREAD883, value).apply()
+
+    var v883produceAutoGenerate883: Boolean
+        get() = prefs.getBoolean(KEY_V883PRODUCEAUTOGENERATE883, false)
+        set(value) = prefs.edit().putBoolean(KEY_V883PRODUCEAUTOGENERATE883, value).apply()
+
+    var v883profileAutoSwitch883: Boolean
+        get() = prefs.getBoolean(KEY_V883PROFILEAUTOSWITCH883, false)
+        set(value) = prefs.edit().putBoolean(KEY_V883PROFILEAUTOSWITCH883, value).apply()
+
+    var v883programAutoSchedule883: Boolean
+        get() = prefs.getBoolean(KEY_V883PROGRAMAUTOSCHEDULE883, false)
+        set(value) = prefs.edit().putBoolean(KEY_V883PROGRAMAUTOSCHEDULE883, value).apply()
+
+    var v884prepareAutoBuffer884: Boolean
+        get() = prefs.getBoolean(KEY_V884PREPAREAUTOBUFFER884, false)
+        set(value) = prefs.edit().putBoolean(KEY_V884PREPAREAUTOBUFFER884, value).apply()
+
+    var v884presentAutoAnimate884: Boolean
+        get() = prefs.getBoolean(KEY_V884PRESENTAUTOANIMATE884, false)
+        set(value) = prefs.edit().putBoolean(KEY_V884PRESENTAUTOANIMATE884, value).apply()
+
+    var v884preserveAutoRatio884: Boolean
+        get() = prefs.getBoolean(KEY_V884PRESERVEAUTORATIO884, false)
+        set(value) = prefs.edit().putBoolean(KEY_V884PRESERVEAUTORATIO884, value).apply()
+
+    var v884pressAutoHold884: Boolean
+        get() = prefs.getBoolean(KEY_V884PRESSAUTOHOLD884, false)
+        set(value) = prefs.edit().putBoolean(KEY_V884PRESSAUTOHOLD884, value).apply()
+
+    var v884prevAutoTrack884: Boolean
+        get() = prefs.getBoolean(KEY_V884PREVAUTOTRACK884, false)
+        set(value) = prefs.edit().putBoolean(KEY_V884PREVAUTOTRACK884, value).apply()
+
+    var v884preventAutoOverscroll884: Boolean
+        get() = prefs.getBoolean(KEY_V884PREVENTAUTOOVERSCROLL884, false)
+        set(value) = prefs.edit().putBoolean(KEY_V884PREVENTAUTOOVERSCROLL884, value).apply()
+
+    var v884previewAutoThumbnail884: Boolean
+        get() = prefs.getBoolean(KEY_V884PREVIEWAUTOTHUMBNAIL884, false)
+        set(value) = prefs.edit().putBoolean(KEY_V884PREVIEWAUTOTHUMBNAIL884, value).apply()
+
+    var v884primaryAutoSource884: Boolean
+        get() = prefs.getBoolean(KEY_V884PRIMARYAUTOSOURCE884, false)
+        set(value) = prefs.edit().putBoolean(KEY_V884PRIMARYAUTOSOURCE884, value).apply()
+
+    var v884printAutoLog884: Boolean
+        get() = prefs.getBoolean(KEY_V884PRINTAUTOLOG884, false)
+        set(value) = prefs.edit().putBoolean(KEY_V884PRINTAUTOLOG884, value).apply()
+
+    var v884priorityAutoQueue884: Int
+        get() = prefs.getInt(KEY_V884PRIORITYAUTOQUEUE884, 0)
+        set(value) = prefs.edit().putInt(KEY_V884PRIORITYAUTOQUEUE884, value).apply()
+
+    var v884privateAutoIncognito884: Boolean
+        get() = prefs.getBoolean(KEY_V884PRIVATEAUTOINCOGNITO884, false)
+        set(value) = prefs.edit().putBoolean(KEY_V884PRIVATEAUTOINCOGNITO884, value).apply()
+
+    var v884processAutoThread884: Boolean
+        get() = prefs.getBoolean(KEY_V884PROCESSAUTOTHREAD884, false)
+        set(value) = prefs.edit().putBoolean(KEY_V884PROCESSAUTOTHREAD884, value).apply()
+
+    var v884produceAutoGenerate884: Boolean
+        get() = prefs.getBoolean(KEY_V884PRODUCEAUTOGENERATE884, false)
+        set(value) = prefs.edit().putBoolean(KEY_V884PRODUCEAUTOGENERATE884, value).apply()
+
+    var v884profileAutoSwitch884: Boolean
+        get() = prefs.getBoolean(KEY_V884PROFILEAUTOSWITCH884, false)
+        set(value) = prefs.edit().putBoolean(KEY_V884PROFILEAUTOSWITCH884, value).apply()
+
+    var v884programAutoSchedule884: Boolean
+        get() = prefs.getBoolean(KEY_V884PROGRAMAUTOSCHEDULE884, false)
+        set(value) = prefs.edit().putBoolean(KEY_V884PROGRAMAUTOSCHEDULE884, value).apply()
+
+    var v885prepareAutoBuffer885: Boolean
+        get() = prefs.getBoolean(KEY_V885PREPAREAUTOBUFFER885, false)
+        set(value) = prefs.edit().putBoolean(KEY_V885PREPAREAUTOBUFFER885, value).apply()
+
+    var v885presentAutoAnimate885: Boolean
+        get() = prefs.getBoolean(KEY_V885PRESENTAUTOANIMATE885, false)
+        set(value) = prefs.edit().putBoolean(KEY_V885PRESENTAUTOANIMATE885, value).apply()
+
+    var v885preserveAutoRatio885: Boolean
+        get() = prefs.getBoolean(KEY_V885PRESERVEAUTORATIO885, false)
+        set(value) = prefs.edit().putBoolean(KEY_V885PRESERVEAUTORATIO885, value).apply()
+
+    var v885pressAutoHold885: Boolean
+        get() = prefs.getBoolean(KEY_V885PRESSAUTOHOLD885, false)
+        set(value) = prefs.edit().putBoolean(KEY_V885PRESSAUTOHOLD885, value).apply()
+
+    var v885prevAutoTrack885: Boolean
+        get() = prefs.getBoolean(KEY_V885PREVAUTOTRACK885, false)
+        set(value) = prefs.edit().putBoolean(KEY_V885PREVAUTOTRACK885, value).apply()
+
+    var v885preventAutoOverscroll885: Boolean
+        get() = prefs.getBoolean(KEY_V885PREVENTAUTOOVERSCROLL885, false)
+        set(value) = prefs.edit().putBoolean(KEY_V885PREVENTAUTOOVERSCROLL885, value).apply()
+
+    var v885previewAutoThumbnail885: Boolean
+        get() = prefs.getBoolean(KEY_V885PREVIEWAUTOTHUMBNAIL885, false)
+        set(value) = prefs.edit().putBoolean(KEY_V885PREVIEWAUTOTHUMBNAIL885, value).apply()
+
+    var v885primaryAutoSource885: Boolean
+        get() = prefs.getBoolean(KEY_V885PRIMARYAUTOSOURCE885, false)
+        set(value) = prefs.edit().putBoolean(KEY_V885PRIMARYAUTOSOURCE885, value).apply()
+
+    var v885printAutoLog885: Boolean
+        get() = prefs.getBoolean(KEY_V885PRINTAUTOLOG885, false)
+        set(value) = prefs.edit().putBoolean(KEY_V885PRINTAUTOLOG885, value).apply()
+
+    var v885priorityAutoQueue885: Int
+        get() = prefs.getInt(KEY_V885PRIORITYAUTOQUEUE885, 0)
+        set(value) = prefs.edit().putInt(KEY_V885PRIORITYAUTOQUEUE885, value).apply()
+
+    var v885privateAutoIncognito885: Boolean
+        get() = prefs.getBoolean(KEY_V885PRIVATEAUTOINCOGNITO885, false)
+        set(value) = prefs.edit().putBoolean(KEY_V885PRIVATEAUTOINCOGNITO885, value).apply()
+
+    var v885processAutoThread885: Boolean
+        get() = prefs.getBoolean(KEY_V885PROCESSAUTOTHREAD885, false)
+        set(value) = prefs.edit().putBoolean(KEY_V885PROCESSAUTOTHREAD885, value).apply()
+
+    var v885produceAutoGenerate885: Boolean
+        get() = prefs.getBoolean(KEY_V885PRODUCEAUTOGENERATE885, false)
+        set(value) = prefs.edit().putBoolean(KEY_V885PRODUCEAUTOGENERATE885, value).apply()
+
+    var v885profileAutoSwitch885: Boolean
+        get() = prefs.getBoolean(KEY_V885PROFILEAUTOSWITCH885, false)
+        set(value) = prefs.edit().putBoolean(KEY_V885PROFILEAUTOSWITCH885, value).apply()
+
+    var v885programAutoSchedule885: Boolean
+        get() = prefs.getBoolean(KEY_V885PROGRAMAUTOSCHEDULE885, false)
+        set(value) = prefs.edit().putBoolean(KEY_V885PROGRAMAUTOSCHEDULE885, value).apply()
+
+    var v886prepareAutoBuffer886: Boolean
+        get() = prefs.getBoolean(KEY_V886PREPAREAUTOBUFFER886, false)
+        set(value) = prefs.edit().putBoolean(KEY_V886PREPAREAUTOBUFFER886, value).apply()
+
+    var v886presentAutoAnimate886: Boolean
+        get() = prefs.getBoolean(KEY_V886PRESENTAUTOANIMATE886, false)
+        set(value) = prefs.edit().putBoolean(KEY_V886PRESENTAUTOANIMATE886, value).apply()
+
+    var v886preserveAutoRatio886: Boolean
+        get() = prefs.getBoolean(KEY_V886PRESERVEAUTORATIO886, false)
+        set(value) = prefs.edit().putBoolean(KEY_V886PRESERVEAUTORATIO886, value).apply()
+
+    var v886pressAutoHold886: Boolean
+        get() = prefs.getBoolean(KEY_V886PRESSAUTOHOLD886, false)
+        set(value) = prefs.edit().putBoolean(KEY_V886PRESSAUTOHOLD886, value).apply()
+
+    var v886prevAutoTrack886: Boolean
+        get() = prefs.getBoolean(KEY_V886PREVAUTOTRACK886, false)
+        set(value) = prefs.edit().putBoolean(KEY_V886PREVAUTOTRACK886, value).apply()
+
+    var v886preventAutoOverscroll886: Boolean
+        get() = prefs.getBoolean(KEY_V886PREVENTAUTOOVERSCROLL886, false)
+        set(value) = prefs.edit().putBoolean(KEY_V886PREVENTAUTOOVERSCROLL886, value).apply()
+
+    var v886previewAutoThumbnail886: Boolean
+        get() = prefs.getBoolean(KEY_V886PREVIEWAUTOTHUMBNAIL886, false)
+        set(value) = prefs.edit().putBoolean(KEY_V886PREVIEWAUTOTHUMBNAIL886, value).apply()
+
+    var v886primaryAutoSource886: Boolean
+        get() = prefs.getBoolean(KEY_V886PRIMARYAUTOSOURCE886, false)
+        set(value) = prefs.edit().putBoolean(KEY_V886PRIMARYAUTOSOURCE886, value).apply()
+
+    var v886printAutoLog886: Boolean
+        get() = prefs.getBoolean(KEY_V886PRINTAUTOLOG886, false)
+        set(value) = prefs.edit().putBoolean(KEY_V886PRINTAUTOLOG886, value).apply()
+
+    var v886priorityAutoQueue886: Int
+        get() = prefs.getInt(KEY_V886PRIORITYAUTOQUEUE886, 0)
+        set(value) = prefs.edit().putInt(KEY_V886PRIORITYAUTOQUEUE886, value).apply()
+
+    var v886privateAutoIncognito886: Boolean
+        get() = prefs.getBoolean(KEY_V886PRIVATEAUTOINCOGNITO886, false)
+        set(value) = prefs.edit().putBoolean(KEY_V886PRIVATEAUTOINCOGNITO886, value).apply()
+
+    var v886processAutoThread886: Boolean
+        get() = prefs.getBoolean(KEY_V886PROCESSAUTOTHREAD886, false)
+        set(value) = prefs.edit().putBoolean(KEY_V886PROCESSAUTOTHREAD886, value).apply()
+
+    var v886produceAutoGenerate886: Boolean
+        get() = prefs.getBoolean(KEY_V886PRODUCEAUTOGENERATE886, false)
+        set(value) = prefs.edit().putBoolean(KEY_V886PRODUCEAUTOGENERATE886, value).apply()
+
+    var v886profileAutoSwitch886: Boolean
+        get() = prefs.getBoolean(KEY_V886PROFILEAUTOSWITCH886, false)
+        set(value) = prefs.edit().putBoolean(KEY_V886PROFILEAUTOSWITCH886, value).apply()
+
+    var v886programAutoSchedule886: Boolean
+        get() = prefs.getBoolean(KEY_V886PROGRAMAUTOSCHEDULE886, false)
+        set(value) = prefs.edit().putBoolean(KEY_V886PROGRAMAUTOSCHEDULE886, value).apply()
+
+    var v887prepareAutoBuffer887: Boolean
+        get() = prefs.getBoolean(KEY_V887PREPAREAUTOBUFFER887, false)
+        set(value) = prefs.edit().putBoolean(KEY_V887PREPAREAUTOBUFFER887, value).apply()
+
+    var v887presentAutoAnimate887: Boolean
+        get() = prefs.getBoolean(KEY_V887PRESENTAUTOANIMATE887, false)
+        set(value) = prefs.edit().putBoolean(KEY_V887PRESENTAUTOANIMATE887, value).apply()
+
+    var v887preserveAutoRatio887: Boolean
+        get() = prefs.getBoolean(KEY_V887PRESERVEAUTORATIO887, false)
+        set(value) = prefs.edit().putBoolean(KEY_V887PRESERVEAUTORATIO887, value).apply()
+
+    var v887pressAutoHold887: Boolean
+        get() = prefs.getBoolean(KEY_V887PRESSAUTOHOLD887, false)
+        set(value) = prefs.edit().putBoolean(KEY_V887PRESSAUTOHOLD887, value).apply()
+
+    var v887prevAutoTrack887: Boolean
+        get() = prefs.getBoolean(KEY_V887PREVAUTOTRACK887, false)
+        set(value) = prefs.edit().putBoolean(KEY_V887PREVAUTOTRACK887, value).apply()
+
+    var v887preventAutoOverscroll887: Boolean
+        get() = prefs.getBoolean(KEY_V887PREVENTAUTOOVERSCROLL887, false)
+        set(value) = prefs.edit().putBoolean(KEY_V887PREVENTAUTOOVERSCROLL887, value).apply()
+
+    var v887previewAutoThumbnail887: Boolean
+        get() = prefs.getBoolean(KEY_V887PREVIEWAUTOTHUMBNAIL887, false)
+        set(value) = prefs.edit().putBoolean(KEY_V887PREVIEWAUTOTHUMBNAIL887, value).apply()
+
+    var v887primaryAutoSource887: Boolean
+        get() = prefs.getBoolean(KEY_V887PRIMARYAUTOSOURCE887, false)
+        set(value) = prefs.edit().putBoolean(KEY_V887PRIMARYAUTOSOURCE887, value).apply()
+
+    var v887printAutoLog887: Boolean
+        get() = prefs.getBoolean(KEY_V887PRINTAUTOLOG887, false)
+        set(value) = prefs.edit().putBoolean(KEY_V887PRINTAUTOLOG887, value).apply()
+
+    var v887priorityAutoQueue887: Int
+        get() = prefs.getInt(KEY_V887PRIORITYAUTOQUEUE887, 0)
+        set(value) = prefs.edit().putInt(KEY_V887PRIORITYAUTOQUEUE887, value).apply()
+
+    var v887privateAutoIncognito887: Boolean
+        get() = prefs.getBoolean(KEY_V887PRIVATEAUTOINCOGNITO887, false)
+        set(value) = prefs.edit().putBoolean(KEY_V887PRIVATEAUTOINCOGNITO887, value).apply()
+
+    var v887processAutoThread887: Boolean
+        get() = prefs.getBoolean(KEY_V887PROCESSAUTOTHREAD887, false)
+        set(value) = prefs.edit().putBoolean(KEY_V887PROCESSAUTOTHREAD887, value).apply()
+
+    var v887produceAutoGenerate887: Boolean
+        get() = prefs.getBoolean(KEY_V887PRODUCEAUTOGENERATE887, false)
+        set(value) = prefs.edit().putBoolean(KEY_V887PRODUCEAUTOGENERATE887, value).apply()
+
+    var v887profileAutoSwitch887: Boolean
+        get() = prefs.getBoolean(KEY_V887PROFILEAUTOSWITCH887, false)
+        set(value) = prefs.edit().putBoolean(KEY_V887PROFILEAUTOSWITCH887, value).apply()
+
+    var v887programAutoSchedule887: Boolean
+        get() = prefs.getBoolean(KEY_V887PROGRAMAUTOSCHEDULE887, false)
+        set(value) = prefs.edit().putBoolean(KEY_V887PROGRAMAUTOSCHEDULE887, value).apply()
+
+    var v888prepareAutoBuffer888: Boolean
+        get() = prefs.getBoolean(KEY_V888PREPAREAUTOBUFFER888, false)
+        set(value) = prefs.edit().putBoolean(KEY_V888PREPAREAUTOBUFFER888, value).apply()
+
+    var v888presentAutoAnimate888: Boolean
+        get() = prefs.getBoolean(KEY_V888PRESENTAUTOANIMATE888, false)
+        set(value) = prefs.edit().putBoolean(KEY_V888PRESENTAUTOANIMATE888, value).apply()
+
+    var v888preserveAutoRatio888: Boolean
+        get() = prefs.getBoolean(KEY_V888PRESERVEAUTORATIO888, false)
+        set(value) = prefs.edit().putBoolean(KEY_V888PRESERVEAUTORATIO888, value).apply()
+
+    var v888pressAutoHold888: Boolean
+        get() = prefs.getBoolean(KEY_V888PRESSAUTOHOLD888, false)
+        set(value) = prefs.edit().putBoolean(KEY_V888PRESSAUTOHOLD888, value).apply()
+
+    var v888prevAutoTrack888: Boolean
+        get() = prefs.getBoolean(KEY_V888PREVAUTOTRACK888, false)
+        set(value) = prefs.edit().putBoolean(KEY_V888PREVAUTOTRACK888, value).apply()
+
+    var v888preventAutoOverscroll888: Boolean
+        get() = prefs.getBoolean(KEY_V888PREVENTAUTOOVERSCROLL888, false)
+        set(value) = prefs.edit().putBoolean(KEY_V888PREVENTAUTOOVERSCROLL888, value).apply()
+
+    var v888previewAutoThumbnail888: Boolean
+        get() = prefs.getBoolean(KEY_V888PREVIEWAUTOTHUMBNAIL888, false)
+        set(value) = prefs.edit().putBoolean(KEY_V888PREVIEWAUTOTHUMBNAIL888, value).apply()
+
+    var v888primaryAutoSource888: Boolean
+        get() = prefs.getBoolean(KEY_V888PRIMARYAUTOSOURCE888, false)
+        set(value) = prefs.edit().putBoolean(KEY_V888PRIMARYAUTOSOURCE888, value).apply()
+
+    var v888printAutoLog888: Boolean
+        get() = prefs.getBoolean(KEY_V888PRINTAUTOLOG888, false)
+        set(value) = prefs.edit().putBoolean(KEY_V888PRINTAUTOLOG888, value).apply()
+
+    var v888priorityAutoQueue888: Int
+        get() = prefs.getInt(KEY_V888PRIORITYAUTOQUEUE888, 0)
+        set(value) = prefs.edit().putInt(KEY_V888PRIORITYAUTOQUEUE888, value).apply()
+
+    var v888privateAutoIncognito888: Boolean
+        get() = prefs.getBoolean(KEY_V888PRIVATEAUTOINCOGNITO888, false)
+        set(value) = prefs.edit().putBoolean(KEY_V888PRIVATEAUTOINCOGNITO888, value).apply()
+
+    var v888processAutoThread888: Boolean
+        get() = prefs.getBoolean(KEY_V888PROCESSAUTOTHREAD888, false)
+        set(value) = prefs.edit().putBoolean(KEY_V888PROCESSAUTOTHREAD888, value).apply()
+
+    var v888produceAutoGenerate888: Boolean
+        get() = prefs.getBoolean(KEY_V888PRODUCEAUTOGENERATE888, false)
+        set(value) = prefs.edit().putBoolean(KEY_V888PRODUCEAUTOGENERATE888, value).apply()
+
+    var v888profileAutoSwitch888: Boolean
+        get() = prefs.getBoolean(KEY_V888PROFILEAUTOSWITCH888, false)
+        set(value) = prefs.edit().putBoolean(KEY_V888PROFILEAUTOSWITCH888, value).apply()
+
+    var v888programAutoSchedule888: Boolean
+        get() = prefs.getBoolean(KEY_V888PROGRAMAUTOSCHEDULE888, false)
+        set(value) = prefs.edit().putBoolean(KEY_V888PROGRAMAUTOSCHEDULE888, value).apply()
+
+    var v889prepareAutoBuffer889: Boolean
+        get() = prefs.getBoolean(KEY_V889PREPAREAUTOBUFFER889, false)
+        set(value) = prefs.edit().putBoolean(KEY_V889PREPAREAUTOBUFFER889, value).apply()
+
+    var v889presentAutoAnimate889: Boolean
+        get() = prefs.getBoolean(KEY_V889PRESENTAUTOANIMATE889, false)
+        set(value) = prefs.edit().putBoolean(KEY_V889PRESENTAUTOANIMATE889, value).apply()
+
+    var v889preserveAutoRatio889: Boolean
+        get() = prefs.getBoolean(KEY_V889PRESERVEAUTORATIO889, false)
+        set(value) = prefs.edit().putBoolean(KEY_V889PRESERVEAUTORATIO889, value).apply()
+
+    var v889pressAutoHold889: Boolean
+        get() = prefs.getBoolean(KEY_V889PRESSAUTOHOLD889, false)
+        set(value) = prefs.edit().putBoolean(KEY_V889PRESSAUTOHOLD889, value).apply()
+
+    var v889prevAutoTrack889: Boolean
+        get() = prefs.getBoolean(KEY_V889PREVAUTOTRACK889, false)
+        set(value) = prefs.edit().putBoolean(KEY_V889PREVAUTOTRACK889, value).apply()
+
+    var v889preventAutoOverscroll889: Boolean
+        get() = prefs.getBoolean(KEY_V889PREVENTAUTOOVERSCROLL889, false)
+        set(value) = prefs.edit().putBoolean(KEY_V889PREVENTAUTOOVERSCROLL889, value).apply()
+
+    var v889previewAutoThumbnail889: Boolean
+        get() = prefs.getBoolean(KEY_V889PREVIEWAUTOTHUMBNAIL889, false)
+        set(value) = prefs.edit().putBoolean(KEY_V889PREVIEWAUTOTHUMBNAIL889, value).apply()
+
+    var v889primaryAutoSource889: Boolean
+        get() = prefs.getBoolean(KEY_V889PRIMARYAUTOSOURCE889, false)
+        set(value) = prefs.edit().putBoolean(KEY_V889PRIMARYAUTOSOURCE889, value).apply()
+
+    var v889printAutoLog889: Boolean
+        get() = prefs.getBoolean(KEY_V889PRINTAUTOLOG889, false)
+        set(value) = prefs.edit().putBoolean(KEY_V889PRINTAUTOLOG889, value).apply()
+
+    var v889priorityAutoQueue889: Int
+        get() = prefs.getInt(KEY_V889PRIORITYAUTOQUEUE889, 0)
+        set(value) = prefs.edit().putInt(KEY_V889PRIORITYAUTOQUEUE889, value).apply()
+
+    var v889privateAutoIncognito889: Boolean
+        get() = prefs.getBoolean(KEY_V889PRIVATEAUTOINCOGNITO889, false)
+        set(value) = prefs.edit().putBoolean(KEY_V889PRIVATEAUTOINCOGNITO889, value).apply()
+
+    var v889processAutoThread889: Boolean
+        get() = prefs.getBoolean(KEY_V889PROCESSAUTOTHREAD889, false)
+        set(value) = prefs.edit().putBoolean(KEY_V889PROCESSAUTOTHREAD889, value).apply()
+
+    var v889produceAutoGenerate889: Boolean
+        get() = prefs.getBoolean(KEY_V889PRODUCEAUTOGENERATE889, false)
+        set(value) = prefs.edit().putBoolean(KEY_V889PRODUCEAUTOGENERATE889, value).apply()
+
+    var v889profileAutoSwitch889: Boolean
+        get() = prefs.getBoolean(KEY_V889PROFILEAUTOSWITCH889, false)
+        set(value) = prefs.edit().putBoolean(KEY_V889PROFILEAUTOSWITCH889, value).apply()
+
+    var v889programAutoSchedule889: Boolean
+        get() = prefs.getBoolean(KEY_V889PROGRAMAUTOSCHEDULE889, false)
+        set(value) = prefs.edit().putBoolean(KEY_V889PROGRAMAUTOSCHEDULE889, value).apply()
+
+    var v890prepareAutoBuffer890: Boolean
+        get() = prefs.getBoolean(KEY_V890PREPAREAUTOBUFFER890, false)
+        set(value) = prefs.edit().putBoolean(KEY_V890PREPAREAUTOBUFFER890, value).apply()
+
+    var v890presentAutoAnimate890: Boolean
+        get() = prefs.getBoolean(KEY_V890PRESENTAUTOANIMATE890, false)
+        set(value) = prefs.edit().putBoolean(KEY_V890PRESENTAUTOANIMATE890, value).apply()
+
+    var v890preserveAutoRatio890: Boolean
+        get() = prefs.getBoolean(KEY_V890PRESERVEAUTORATIO890, false)
+        set(value) = prefs.edit().putBoolean(KEY_V890PRESERVEAUTORATIO890, value).apply()
+
+    var v890pressAutoHold890: Boolean
+        get() = prefs.getBoolean(KEY_V890PRESSAUTOHOLD890, false)
+        set(value) = prefs.edit().putBoolean(KEY_V890PRESSAUTOHOLD890, value).apply()
+
+    var v890prevAutoTrack890: Boolean
+        get() = prefs.getBoolean(KEY_V890PREVAUTOTRACK890, false)
+        set(value) = prefs.edit().putBoolean(KEY_V890PREVAUTOTRACK890, value).apply()
+
+    var v890preventAutoOverscroll890: Boolean
+        get() = prefs.getBoolean(KEY_V890PREVENTAUTOOVERSCROLL890, false)
+        set(value) = prefs.edit().putBoolean(KEY_V890PREVENTAUTOOVERSCROLL890, value).apply()
+
+    var v890previewAutoThumbnail890: Boolean
+        get() = prefs.getBoolean(KEY_V890PREVIEWAUTOTHUMBNAIL890, false)
+        set(value) = prefs.edit().putBoolean(KEY_V890PREVIEWAUTOTHUMBNAIL890, value).apply()
+
+    var v890primaryAutoSource890: Boolean
+        get() = prefs.getBoolean(KEY_V890PRIMARYAUTOSOURCE890, false)
+        set(value) = prefs.edit().putBoolean(KEY_V890PRIMARYAUTOSOURCE890, value).apply()
+
+    var v890printAutoLog890: Boolean
+        get() = prefs.getBoolean(KEY_V890PRINTAUTOLOG890, false)
+        set(value) = prefs.edit().putBoolean(KEY_V890PRINTAUTOLOG890, value).apply()
+
+    var v890priorityAutoQueue890: Int
+        get() = prefs.getInt(KEY_V890PRIORITYAUTOQUEUE890, 0)
+        set(value) = prefs.edit().putInt(KEY_V890PRIORITYAUTOQUEUE890, value).apply()
+
+    var v890privateAutoIncognito890: Boolean
+        get() = prefs.getBoolean(KEY_V890PRIVATEAUTOINCOGNITO890, false)
+        set(value) = prefs.edit().putBoolean(KEY_V890PRIVATEAUTOINCOGNITO890, value).apply()
+
+    var v890processAutoThread890: Boolean
+        get() = prefs.getBoolean(KEY_V890PROCESSAUTOTHREAD890, false)
+        set(value) = prefs.edit().putBoolean(KEY_V890PROCESSAUTOTHREAD890, value).apply()
+
+    var v890produceAutoGenerate890: Boolean
+        get() = prefs.getBoolean(KEY_V890PRODUCEAUTOGENERATE890, false)
+        set(value) = prefs.edit().putBoolean(KEY_V890PRODUCEAUTOGENERATE890, value).apply()
+
+    var v890profileAutoSwitch890: Boolean
+        get() = prefs.getBoolean(KEY_V890PROFILEAUTOSWITCH890, false)
+        set(value) = prefs.edit().putBoolean(KEY_V890PROFILEAUTOSWITCH890, value).apply()
+
+    var v890programAutoSchedule890: Boolean
+        get() = prefs.getBoolean(KEY_V890PROGRAMAUTOSCHEDULE890, false)
+        set(value) = prefs.edit().putBoolean(KEY_V890PROGRAMAUTOSCHEDULE890, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -75180,5 +75780,155 @@ class AppPrefs(context: Context) {
         const val KEY_V880PREDICTAUTOPREFETCH880 = "v880predictAutoPrefetch880" // v880 Predict Auto Prefetch880
         const val KEY_V880PREFIXAUTOTRIM880 = "v880prefixAutoTrim880" // v880 Prefix Auto Trim880
         const val KEY_V880PRELOADAUTOCACHE880 = "v880preloadAutoCache880" // v880 Preload Auto Cache880
+        const val KEY_V881PREPAREAUTOBUFFER881 = "v881prepareAutoBuffer881" // v881 Prepare Auto Buffer881
+        const val KEY_V881PRESENTAUTOANIMATE881 = "v881presentAutoAnimate881" // v881 Present Auto Animate881
+        const val KEY_V881PRESERVEAUTORATIO881 = "v881preserveAutoRatio881" // v881 Preserve Auto Ratio881
+        const val KEY_V881PRESSAUTOHOLD881 = "v881pressAutoHold881" // v881 Press Auto Hold881
+        const val KEY_V881PREVAUTOTRACK881 = "v881prevAutoTrack881" // v881 Prev Auto Track881
+        const val KEY_V881PREVENTAUTOOVERSCROLL881 = "v881preventAutoOverscroll881" // v881 Prevent Auto Overscroll881
+        const val KEY_V881PREVIEWAUTOTHUMBNAIL881 = "v881previewAutoThumbnail881" // v881 Preview Auto Thumbnail881
+        const val KEY_V881PRIMARYAUTOSOURCE881 = "v881primaryAutoSource881" // v881 Primary Auto Source881
+        const val KEY_V881PRINTAUTOLOG881 = "v881printAutoLog881" // v881 Print Auto Log881
+        const val KEY_V881PRIORITYAUTOQUEUE881 = "v881priorityAutoQueue881" // v881 Priority Auto Queue881
+        const val KEY_V881PRIVATEAUTOINCOGNITO881 = "v881privateAutoIncognito881" // v881 Private Auto Incognito881
+        const val KEY_V881PROCESSAUTOTHREAD881 = "v881processAutoThread881" // v881 Process Auto Thread881
+        const val KEY_V881PRODUCEAUTOGENERATE881 = "v881produceAutoGenerate881" // v881 Produce Auto Generate881
+        const val KEY_V881PROFILEAUTOSWITCH881 = "v881profileAutoSwitch881" // v881 Profile Auto Switch881
+        const val KEY_V881PROGRAMAUTOSCHEDULE881 = "v881programAutoSchedule881" // v881 Program Auto Schedule881
+        const val KEY_V882PREPAREAUTOBUFFER882 = "v882prepareAutoBuffer882" // v882 Prepare Auto Buffer882
+        const val KEY_V882PRESENTAUTOANIMATE882 = "v882presentAutoAnimate882" // v882 Present Auto Animate882
+        const val KEY_V882PRESERVEAUTORATIO882 = "v882preserveAutoRatio882" // v882 Preserve Auto Ratio882
+        const val KEY_V882PRESSAUTOHOLD882 = "v882pressAutoHold882" // v882 Press Auto Hold882
+        const val KEY_V882PREVAUTOTRACK882 = "v882prevAutoTrack882" // v882 Prev Auto Track882
+        const val KEY_V882PREVENTAUTOOVERSCROLL882 = "v882preventAutoOverscroll882" // v882 Prevent Auto Overscroll882
+        const val KEY_V882PREVIEWAUTOTHUMBNAIL882 = "v882previewAutoThumbnail882" // v882 Preview Auto Thumbnail882
+        const val KEY_V882PRIMARYAUTOSOURCE882 = "v882primaryAutoSource882" // v882 Primary Auto Source882
+        const val KEY_V882PRINTAUTOLOG882 = "v882printAutoLog882" // v882 Print Auto Log882
+        const val KEY_V882PRIORITYAUTOQUEUE882 = "v882priorityAutoQueue882" // v882 Priority Auto Queue882
+        const val KEY_V882PRIVATEAUTOINCOGNITO882 = "v882privateAutoIncognito882" // v882 Private Auto Incognito882
+        const val KEY_V882PROCESSAUTOTHREAD882 = "v882processAutoThread882" // v882 Process Auto Thread882
+        const val KEY_V882PRODUCEAUTOGENERATE882 = "v882produceAutoGenerate882" // v882 Produce Auto Generate882
+        const val KEY_V882PROFILEAUTOSWITCH882 = "v882profileAutoSwitch882" // v882 Profile Auto Switch882
+        const val KEY_V882PROGRAMAUTOSCHEDULE882 = "v882programAutoSchedule882" // v882 Program Auto Schedule882
+        const val KEY_V883PREPAREAUTOBUFFER883 = "v883prepareAutoBuffer883" // v883 Prepare Auto Buffer883
+        const val KEY_V883PRESENTAUTOANIMATE883 = "v883presentAutoAnimate883" // v883 Present Auto Animate883
+        const val KEY_V883PRESERVEAUTORATIO883 = "v883preserveAutoRatio883" // v883 Preserve Auto Ratio883
+        const val KEY_V883PRESSAUTOHOLD883 = "v883pressAutoHold883" // v883 Press Auto Hold883
+        const val KEY_V883PREVAUTOTRACK883 = "v883prevAutoTrack883" // v883 Prev Auto Track883
+        const val KEY_V883PREVENTAUTOOVERSCROLL883 = "v883preventAutoOverscroll883" // v883 Prevent Auto Overscroll883
+        const val KEY_V883PREVIEWAUTOTHUMBNAIL883 = "v883previewAutoThumbnail883" // v883 Preview Auto Thumbnail883
+        const val KEY_V883PRIMARYAUTOSOURCE883 = "v883primaryAutoSource883" // v883 Primary Auto Source883
+        const val KEY_V883PRINTAUTOLOG883 = "v883printAutoLog883" // v883 Print Auto Log883
+        const val KEY_V883PRIORITYAUTOQUEUE883 = "v883priorityAutoQueue883" // v883 Priority Auto Queue883
+        const val KEY_V883PRIVATEAUTOINCOGNITO883 = "v883privateAutoIncognito883" // v883 Private Auto Incognito883
+        const val KEY_V883PROCESSAUTOTHREAD883 = "v883processAutoThread883" // v883 Process Auto Thread883
+        const val KEY_V883PRODUCEAUTOGENERATE883 = "v883produceAutoGenerate883" // v883 Produce Auto Generate883
+        const val KEY_V883PROFILEAUTOSWITCH883 = "v883profileAutoSwitch883" // v883 Profile Auto Switch883
+        const val KEY_V883PROGRAMAUTOSCHEDULE883 = "v883programAutoSchedule883" // v883 Program Auto Schedule883
+        const val KEY_V884PREPAREAUTOBUFFER884 = "v884prepareAutoBuffer884" // v884 Prepare Auto Buffer884
+        const val KEY_V884PRESENTAUTOANIMATE884 = "v884presentAutoAnimate884" // v884 Present Auto Animate884
+        const val KEY_V884PRESERVEAUTORATIO884 = "v884preserveAutoRatio884" // v884 Preserve Auto Ratio884
+        const val KEY_V884PRESSAUTOHOLD884 = "v884pressAutoHold884" // v884 Press Auto Hold884
+        const val KEY_V884PREVAUTOTRACK884 = "v884prevAutoTrack884" // v884 Prev Auto Track884
+        const val KEY_V884PREVENTAUTOOVERSCROLL884 = "v884preventAutoOverscroll884" // v884 Prevent Auto Overscroll884
+        const val KEY_V884PREVIEWAUTOTHUMBNAIL884 = "v884previewAutoThumbnail884" // v884 Preview Auto Thumbnail884
+        const val KEY_V884PRIMARYAUTOSOURCE884 = "v884primaryAutoSource884" // v884 Primary Auto Source884
+        const val KEY_V884PRINTAUTOLOG884 = "v884printAutoLog884" // v884 Print Auto Log884
+        const val KEY_V884PRIORITYAUTOQUEUE884 = "v884priorityAutoQueue884" // v884 Priority Auto Queue884
+        const val KEY_V884PRIVATEAUTOINCOGNITO884 = "v884privateAutoIncognito884" // v884 Private Auto Incognito884
+        const val KEY_V884PROCESSAUTOTHREAD884 = "v884processAutoThread884" // v884 Process Auto Thread884
+        const val KEY_V884PRODUCEAUTOGENERATE884 = "v884produceAutoGenerate884" // v884 Produce Auto Generate884
+        const val KEY_V884PROFILEAUTOSWITCH884 = "v884profileAutoSwitch884" // v884 Profile Auto Switch884
+        const val KEY_V884PROGRAMAUTOSCHEDULE884 = "v884programAutoSchedule884" // v884 Program Auto Schedule884
+        const val KEY_V885PREPAREAUTOBUFFER885 = "v885prepareAutoBuffer885" // v885 Prepare Auto Buffer885
+        const val KEY_V885PRESENTAUTOANIMATE885 = "v885presentAutoAnimate885" // v885 Present Auto Animate885
+        const val KEY_V885PRESERVEAUTORATIO885 = "v885preserveAutoRatio885" // v885 Preserve Auto Ratio885
+        const val KEY_V885PRESSAUTOHOLD885 = "v885pressAutoHold885" // v885 Press Auto Hold885
+        const val KEY_V885PREVAUTOTRACK885 = "v885prevAutoTrack885" // v885 Prev Auto Track885
+        const val KEY_V885PREVENTAUTOOVERSCROLL885 = "v885preventAutoOverscroll885" // v885 Prevent Auto Overscroll885
+        const val KEY_V885PREVIEWAUTOTHUMBNAIL885 = "v885previewAutoThumbnail885" // v885 Preview Auto Thumbnail885
+        const val KEY_V885PRIMARYAUTOSOURCE885 = "v885primaryAutoSource885" // v885 Primary Auto Source885
+        const val KEY_V885PRINTAUTOLOG885 = "v885printAutoLog885" // v885 Print Auto Log885
+        const val KEY_V885PRIORITYAUTOQUEUE885 = "v885priorityAutoQueue885" // v885 Priority Auto Queue885
+        const val KEY_V885PRIVATEAUTOINCOGNITO885 = "v885privateAutoIncognito885" // v885 Private Auto Incognito885
+        const val KEY_V885PROCESSAUTOTHREAD885 = "v885processAutoThread885" // v885 Process Auto Thread885
+        const val KEY_V885PRODUCEAUTOGENERATE885 = "v885produceAutoGenerate885" // v885 Produce Auto Generate885
+        const val KEY_V885PROFILEAUTOSWITCH885 = "v885profileAutoSwitch885" // v885 Profile Auto Switch885
+        const val KEY_V885PROGRAMAUTOSCHEDULE885 = "v885programAutoSchedule885" // v885 Program Auto Schedule885
+        const val KEY_V886PREPAREAUTOBUFFER886 = "v886prepareAutoBuffer886" // v886 Prepare Auto Buffer886
+        const val KEY_V886PRESENTAUTOANIMATE886 = "v886presentAutoAnimate886" // v886 Present Auto Animate886
+        const val KEY_V886PRESERVEAUTORATIO886 = "v886preserveAutoRatio886" // v886 Preserve Auto Ratio886
+        const val KEY_V886PRESSAUTOHOLD886 = "v886pressAutoHold886" // v886 Press Auto Hold886
+        const val KEY_V886PREVAUTOTRACK886 = "v886prevAutoTrack886" // v886 Prev Auto Track886
+        const val KEY_V886PREVENTAUTOOVERSCROLL886 = "v886preventAutoOverscroll886" // v886 Prevent Auto Overscroll886
+        const val KEY_V886PREVIEWAUTOTHUMBNAIL886 = "v886previewAutoThumbnail886" // v886 Preview Auto Thumbnail886
+        const val KEY_V886PRIMARYAUTOSOURCE886 = "v886primaryAutoSource886" // v886 Primary Auto Source886
+        const val KEY_V886PRINTAUTOLOG886 = "v886printAutoLog886" // v886 Print Auto Log886
+        const val KEY_V886PRIORITYAUTOQUEUE886 = "v886priorityAutoQueue886" // v886 Priority Auto Queue886
+        const val KEY_V886PRIVATEAUTOINCOGNITO886 = "v886privateAutoIncognito886" // v886 Private Auto Incognito886
+        const val KEY_V886PROCESSAUTOTHREAD886 = "v886processAutoThread886" // v886 Process Auto Thread886
+        const val KEY_V886PRODUCEAUTOGENERATE886 = "v886produceAutoGenerate886" // v886 Produce Auto Generate886
+        const val KEY_V886PROFILEAUTOSWITCH886 = "v886profileAutoSwitch886" // v886 Profile Auto Switch886
+        const val KEY_V886PROGRAMAUTOSCHEDULE886 = "v886programAutoSchedule886" // v886 Program Auto Schedule886
+        const val KEY_V887PREPAREAUTOBUFFER887 = "v887prepareAutoBuffer887" // v887 Prepare Auto Buffer887
+        const val KEY_V887PRESENTAUTOANIMATE887 = "v887presentAutoAnimate887" // v887 Present Auto Animate887
+        const val KEY_V887PRESERVEAUTORATIO887 = "v887preserveAutoRatio887" // v887 Preserve Auto Ratio887
+        const val KEY_V887PRESSAUTOHOLD887 = "v887pressAutoHold887" // v887 Press Auto Hold887
+        const val KEY_V887PREVAUTOTRACK887 = "v887prevAutoTrack887" // v887 Prev Auto Track887
+        const val KEY_V887PREVENTAUTOOVERSCROLL887 = "v887preventAutoOverscroll887" // v887 Prevent Auto Overscroll887
+        const val KEY_V887PREVIEWAUTOTHUMBNAIL887 = "v887previewAutoThumbnail887" // v887 Preview Auto Thumbnail887
+        const val KEY_V887PRIMARYAUTOSOURCE887 = "v887primaryAutoSource887" // v887 Primary Auto Source887
+        const val KEY_V887PRINTAUTOLOG887 = "v887printAutoLog887" // v887 Print Auto Log887
+        const val KEY_V887PRIORITYAUTOQUEUE887 = "v887priorityAutoQueue887" // v887 Priority Auto Queue887
+        const val KEY_V887PRIVATEAUTOINCOGNITO887 = "v887privateAutoIncognito887" // v887 Private Auto Incognito887
+        const val KEY_V887PROCESSAUTOTHREAD887 = "v887processAutoThread887" // v887 Process Auto Thread887
+        const val KEY_V887PRODUCEAUTOGENERATE887 = "v887produceAutoGenerate887" // v887 Produce Auto Generate887
+        const val KEY_V887PROFILEAUTOSWITCH887 = "v887profileAutoSwitch887" // v887 Profile Auto Switch887
+        const val KEY_V887PROGRAMAUTOSCHEDULE887 = "v887programAutoSchedule887" // v887 Program Auto Schedule887
+        const val KEY_V888PREPAREAUTOBUFFER888 = "v888prepareAutoBuffer888" // v888 Prepare Auto Buffer888
+        const val KEY_V888PRESENTAUTOANIMATE888 = "v888presentAutoAnimate888" // v888 Present Auto Animate888
+        const val KEY_V888PRESERVEAUTORATIO888 = "v888preserveAutoRatio888" // v888 Preserve Auto Ratio888
+        const val KEY_V888PRESSAUTOHOLD888 = "v888pressAutoHold888" // v888 Press Auto Hold888
+        const val KEY_V888PREVAUTOTRACK888 = "v888prevAutoTrack888" // v888 Prev Auto Track888
+        const val KEY_V888PREVENTAUTOOVERSCROLL888 = "v888preventAutoOverscroll888" // v888 Prevent Auto Overscroll888
+        const val KEY_V888PREVIEWAUTOTHUMBNAIL888 = "v888previewAutoThumbnail888" // v888 Preview Auto Thumbnail888
+        const val KEY_V888PRIMARYAUTOSOURCE888 = "v888primaryAutoSource888" // v888 Primary Auto Source888
+        const val KEY_V888PRINTAUTOLOG888 = "v888printAutoLog888" // v888 Print Auto Log888
+        const val KEY_V888PRIORITYAUTOQUEUE888 = "v888priorityAutoQueue888" // v888 Priority Auto Queue888
+        const val KEY_V888PRIVATEAUTOINCOGNITO888 = "v888privateAutoIncognito888" // v888 Private Auto Incognito888
+        const val KEY_V888PROCESSAUTOTHREAD888 = "v888processAutoThread888" // v888 Process Auto Thread888
+        const val KEY_V888PRODUCEAUTOGENERATE888 = "v888produceAutoGenerate888" // v888 Produce Auto Generate888
+        const val KEY_V888PROFILEAUTOSWITCH888 = "v888profileAutoSwitch888" // v888 Profile Auto Switch888
+        const val KEY_V888PROGRAMAUTOSCHEDULE888 = "v888programAutoSchedule888" // v888 Program Auto Schedule888
+        const val KEY_V889PREPAREAUTOBUFFER889 = "v889prepareAutoBuffer889" // v889 Prepare Auto Buffer889
+        const val KEY_V889PRESENTAUTOANIMATE889 = "v889presentAutoAnimate889" // v889 Present Auto Animate889
+        const val KEY_V889PRESERVEAUTORATIO889 = "v889preserveAutoRatio889" // v889 Preserve Auto Ratio889
+        const val KEY_V889PRESSAUTOHOLD889 = "v889pressAutoHold889" // v889 Press Auto Hold889
+        const val KEY_V889PREVAUTOTRACK889 = "v889prevAutoTrack889" // v889 Prev Auto Track889
+        const val KEY_V889PREVENTAUTOOVERSCROLL889 = "v889preventAutoOverscroll889" // v889 Prevent Auto Overscroll889
+        const val KEY_V889PREVIEWAUTOTHUMBNAIL889 = "v889previewAutoThumbnail889" // v889 Preview Auto Thumbnail889
+        const val KEY_V889PRIMARYAUTOSOURCE889 = "v889primaryAutoSource889" // v889 Primary Auto Source889
+        const val KEY_V889PRINTAUTOLOG889 = "v889printAutoLog889" // v889 Print Auto Log889
+        const val KEY_V889PRIORITYAUTOQUEUE889 = "v889priorityAutoQueue889" // v889 Priority Auto Queue889
+        const val KEY_V889PRIVATEAUTOINCOGNITO889 = "v889privateAutoIncognito889" // v889 Private Auto Incognito889
+        const val KEY_V889PROCESSAUTOTHREAD889 = "v889processAutoThread889" // v889 Process Auto Thread889
+        const val KEY_V889PRODUCEAUTOGENERATE889 = "v889produceAutoGenerate889" // v889 Produce Auto Generate889
+        const val KEY_V889PROFILEAUTOSWITCH889 = "v889profileAutoSwitch889" // v889 Profile Auto Switch889
+        const val KEY_V889PROGRAMAUTOSCHEDULE889 = "v889programAutoSchedule889" // v889 Program Auto Schedule889
+        const val KEY_V890PREPAREAUTOBUFFER890 = "v890prepareAutoBuffer890" // v890 Prepare Auto Buffer890
+        const val KEY_V890PRESENTAUTOANIMATE890 = "v890presentAutoAnimate890" // v890 Present Auto Animate890
+        const val KEY_V890PRESERVEAUTORATIO890 = "v890preserveAutoRatio890" // v890 Preserve Auto Ratio890
+        const val KEY_V890PRESSAUTOHOLD890 = "v890pressAutoHold890" // v890 Press Auto Hold890
+        const val KEY_V890PREVAUTOTRACK890 = "v890prevAutoTrack890" // v890 Prev Auto Track890
+        const val KEY_V890PREVENTAUTOOVERSCROLL890 = "v890preventAutoOverscroll890" // v890 Prevent Auto Overscroll890
+        const val KEY_V890PREVIEWAUTOTHUMBNAIL890 = "v890previewAutoThumbnail890" // v890 Preview Auto Thumbnail890
+        const val KEY_V890PRIMARYAUTOSOURCE890 = "v890primaryAutoSource890" // v890 Primary Auto Source890
+        const val KEY_V890PRINTAUTOLOG890 = "v890printAutoLog890" // v890 Print Auto Log890
+        const val KEY_V890PRIORITYAUTOQUEUE890 = "v890priorityAutoQueue890" // v890 Priority Auto Queue890
+        const val KEY_V890PRIVATEAUTOINCOGNITO890 = "v890privateAutoIncognito890" // v890 Private Auto Incognito890
+        const val KEY_V890PROCESSAUTOTHREAD890 = "v890processAutoThread890" // v890 Process Auto Thread890
+        const val KEY_V890PRODUCEAUTOGENERATE890 = "v890produceAutoGenerate890" // v890 Produce Auto Generate890
+        const val KEY_V890PROFILEAUTOSWITCH890 = "v890profileAutoSwitch890" // v890 Profile Auto Switch890
+        const val KEY_V890PROGRAMAUTOSCHEDULE890 = "v890programAutoSchedule890" // v890 Program Auto Schedule890
     }
 }
