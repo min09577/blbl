@@ -50448,6 +50448,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V730FLIPAUTOHORIZONTAL730, false)
         set(value) = prefs.edit().putBoolean(KEY_V730FLIPAUTOHORIZONTAL730, value).apply()
 
+    var v731floatAutoAnchor731: Boolean
+        get() = prefs.getBoolean(KEY_V731FLOATAUTOANCHOR731, false)
+        set(value) = prefs.edit().putBoolean(KEY_V731FLOATAUTOANCHOR731, value).apply()
+
+    var v731flushAutoBuffer731: Boolean
+        get() = prefs.getBoolean(KEY_V731FLUSHAUTOBUFFER731, false)
+        set(value) = prefs.edit().putBoolean(KEY_V731FLUSHAUTOBUFFER731, value).apply()
+
+    var v731focusAutoFollow731: Boolean
+        get() = prefs.getBoolean(KEY_V731FOCUSAUTOFOLLOW731, false)
+        set(value) = prefs.edit().putBoolean(KEY_V731FOCUSAUTOFOLLOW731, value).apply()
+
+    var v731foldAutoCollapse731: Boolean
+        get() = prefs.getBoolean(KEY_V731FOLDAUTOCOLLAPSE731, false)
+        set(value) = prefs.edit().putBoolean(KEY_V731FOLDAUTOCOLLAPSE731, value).apply()
+
+    var v731fontAutoHinting731: Boolean
+        get() = prefs.getBoolean(KEY_V731FONTAUTOHINTING731, false)
+        set(value) = prefs.edit().putBoolean(KEY_V731FONTAUTOHINTING731, value).apply()
+
+    var v731footerAutoHide731: Boolean
+        get() = prefs.getBoolean(KEY_V731FOOTERAUTOHIDE731, false)
+        set(value) = prefs.edit().putBoolean(KEY_V731FOOTERAUTOHIDE731, value).apply()
+
+    var v731forceAutoReload731: Boolean
+        get() = prefs.getBoolean(KEY_V731FORCEAUTORELOAD731, false)
+        set(value) = prefs.edit().putBoolean(KEY_V731FORCEAUTORELOAD731, value).apply()
+
+    var v731formatAutoConvert731: Int
+        get() = prefs.getInt(KEY_V731FORMATAUTOCONVERT731, 0)
+        set(value) = prefs.edit().putInt(KEY_V731FORMATAUTOCONVERT731, value).apply()
+
+    var v731fragmentAutoLazy731: Boolean
+        get() = prefs.getBoolean(KEY_V731FRAGMENTAUTOLAZY731, false)
+        set(value) = prefs.edit().putBoolean(KEY_V731FRAGMENTAUTOLAZY731, value).apply()
+
+    var v731frameAutoDrop731: Boolean
+        get() = prefs.getBoolean(KEY_V731FRAMEAUTODROP731, false)
+        set(value) = prefs.edit().putBoolean(KEY_V731FRAMEAUTODROP731, value).apply()
+
+    var v731freeAutoMemory731: Boolean
+        get() = prefs.getBoolean(KEY_V731FREEAUTOMEMORY731, false)
+        set(value) = prefs.edit().putBoolean(KEY_V731FREEAUTOMEMORY731, value).apply()
+
+    var v731frequencyAutoHz731: Int
+        get() = prefs.getInt(KEY_V731FREQUENCYAUTOHZ731, 0)
+        set(value) = prefs.edit().putInt(KEY_V731FREQUENCYAUTOHZ731, value).apply()
+
+    var v731frontAutoCamera731: Boolean
+        get() = prefs.getBoolean(KEY_V731FRONTAUTOCAMERA731, false)
+        set(value) = prefs.edit().putBoolean(KEY_V731FRONTAUTOCAMERA731, value).apply()
+
+    var v731fullAutoScreen731: Boolean
+        get() = prefs.getBoolean(KEY_V731FULLAUTOSCREEN731, false)
+        set(value) = prefs.edit().putBoolean(KEY_V731FULLAUTOSCREEN731, value).apply()
+
+    var v731functionAutoInline731: Boolean
+        get() = prefs.getBoolean(KEY_V731FUNCTIONAUTOINLINE731, false)
+        set(value) = prefs.edit().putBoolean(KEY_V731FUNCTIONAUTOINLINE731, value).apply()
+
+    var v732floatAutoAnchor732: Boolean
+        get() = prefs.getBoolean(KEY_V732FLOATAUTOANCHOR732, false)
+        set(value) = prefs.edit().putBoolean(KEY_V732FLOATAUTOANCHOR732, value).apply()
+
+    var v732flushAutoBuffer732: Boolean
+        get() = prefs.getBoolean(KEY_V732FLUSHAUTOBUFFER732, false)
+        set(value) = prefs.edit().putBoolean(KEY_V732FLUSHAUTOBUFFER732, value).apply()
+
+    var v732focusAutoFollow732: Boolean
+        get() = prefs.getBoolean(KEY_V732FOCUSAUTOFOLLOW732, false)
+        set(value) = prefs.edit().putBoolean(KEY_V732FOCUSAUTOFOLLOW732, value).apply()
+
+    var v732foldAutoCollapse732: Boolean
+        get() = prefs.getBoolean(KEY_V732FOLDAUTOCOLLAPSE732, false)
+        set(value) = prefs.edit().putBoolean(KEY_V732FOLDAUTOCOLLAPSE732, value).apply()
+
+    var v732fontAutoHinting732: Boolean
+        get() = prefs.getBoolean(KEY_V732FONTAUTOHINTING732, false)
+        set(value) = prefs.edit().putBoolean(KEY_V732FONTAUTOHINTING732, value).apply()
+
+    var v732footerAutoHide732: Boolean
+        get() = prefs.getBoolean(KEY_V732FOOTERAUTOHIDE732, false)
+        set(value) = prefs.edit().putBoolean(KEY_V732FOOTERAUTOHIDE732, value).apply()
+
+    var v732forceAutoReload732: Boolean
+        get() = prefs.getBoolean(KEY_V732FORCEAUTORELOAD732, false)
+        set(value) = prefs.edit().putBoolean(KEY_V732FORCEAUTORELOAD732, value).apply()
+
+    var v732formatAutoConvert732: Int
+        get() = prefs.getInt(KEY_V732FORMATAUTOCONVERT732, 0)
+        set(value) = prefs.edit().putInt(KEY_V732FORMATAUTOCONVERT732, value).apply()
+
+    var v732fragmentAutoLazy732: Boolean
+        get() = prefs.getBoolean(KEY_V732FRAGMENTAUTOLAZY732, false)
+        set(value) = prefs.edit().putBoolean(KEY_V732FRAGMENTAUTOLAZY732, value).apply()
+
+    var v732frameAutoDrop732: Boolean
+        get() = prefs.getBoolean(KEY_V732FRAMEAUTODROP732, false)
+        set(value) = prefs.edit().putBoolean(KEY_V732FRAMEAUTODROP732, value).apply()
+
+    var v732freeAutoMemory732: Boolean
+        get() = prefs.getBoolean(KEY_V732FREEAUTOMEMORY732, false)
+        set(value) = prefs.edit().putBoolean(KEY_V732FREEAUTOMEMORY732, value).apply()
+
+    var v732frequencyAutoHz732: Int
+        get() = prefs.getInt(KEY_V732FREQUENCYAUTOHZ732, 0)
+        set(value) = prefs.edit().putInt(KEY_V732FREQUENCYAUTOHZ732, value).apply()
+
+    var v732frontAutoCamera732: Boolean
+        get() = prefs.getBoolean(KEY_V732FRONTAUTOCAMERA732, false)
+        set(value) = prefs.edit().putBoolean(KEY_V732FRONTAUTOCAMERA732, value).apply()
+
+    var v732fullAutoScreen732: Boolean
+        get() = prefs.getBoolean(KEY_V732FULLAUTOSCREEN732, false)
+        set(value) = prefs.edit().putBoolean(KEY_V732FULLAUTOSCREEN732, value).apply()
+
+    var v732functionAutoInline732: Boolean
+        get() = prefs.getBoolean(KEY_V732FUNCTIONAUTOINLINE732, false)
+        set(value) = prefs.edit().putBoolean(KEY_V732FUNCTIONAUTOINLINE732, value).apply()
+
+    var v733floatAutoAnchor733: Boolean
+        get() = prefs.getBoolean(KEY_V733FLOATAUTOANCHOR733, false)
+        set(value) = prefs.edit().putBoolean(KEY_V733FLOATAUTOANCHOR733, value).apply()
+
+    var v733flushAutoBuffer733: Boolean
+        get() = prefs.getBoolean(KEY_V733FLUSHAUTOBUFFER733, false)
+        set(value) = prefs.edit().putBoolean(KEY_V733FLUSHAUTOBUFFER733, value).apply()
+
+    var v733focusAutoFollow733: Boolean
+        get() = prefs.getBoolean(KEY_V733FOCUSAUTOFOLLOW733, false)
+        set(value) = prefs.edit().putBoolean(KEY_V733FOCUSAUTOFOLLOW733, value).apply()
+
+    var v733foldAutoCollapse733: Boolean
+        get() = prefs.getBoolean(KEY_V733FOLDAUTOCOLLAPSE733, false)
+        set(value) = prefs.edit().putBoolean(KEY_V733FOLDAUTOCOLLAPSE733, value).apply()
+
+    var v733fontAutoHinting733: Boolean
+        get() = prefs.getBoolean(KEY_V733FONTAUTOHINTING733, false)
+        set(value) = prefs.edit().putBoolean(KEY_V733FONTAUTOHINTING733, value).apply()
+
+    var v733footerAutoHide733: Boolean
+        get() = prefs.getBoolean(KEY_V733FOOTERAUTOHIDE733, false)
+        set(value) = prefs.edit().putBoolean(KEY_V733FOOTERAUTOHIDE733, value).apply()
+
+    var v733forceAutoReload733: Boolean
+        get() = prefs.getBoolean(KEY_V733FORCEAUTORELOAD733, false)
+        set(value) = prefs.edit().putBoolean(KEY_V733FORCEAUTORELOAD733, value).apply()
+
+    var v733formatAutoConvert733: Int
+        get() = prefs.getInt(KEY_V733FORMATAUTOCONVERT733, 0)
+        set(value) = prefs.edit().putInt(KEY_V733FORMATAUTOCONVERT733, value).apply()
+
+    var v733fragmentAutoLazy733: Boolean
+        get() = prefs.getBoolean(KEY_V733FRAGMENTAUTOLAZY733, false)
+        set(value) = prefs.edit().putBoolean(KEY_V733FRAGMENTAUTOLAZY733, value).apply()
+
+    var v733frameAutoDrop733: Boolean
+        get() = prefs.getBoolean(KEY_V733FRAMEAUTODROP733, false)
+        set(value) = prefs.edit().putBoolean(KEY_V733FRAMEAUTODROP733, value).apply()
+
+    var v733freeAutoMemory733: Boolean
+        get() = prefs.getBoolean(KEY_V733FREEAUTOMEMORY733, false)
+        set(value) = prefs.edit().putBoolean(KEY_V733FREEAUTOMEMORY733, value).apply()
+
+    var v733frequencyAutoHz733: Int
+        get() = prefs.getInt(KEY_V733FREQUENCYAUTOHZ733, 0)
+        set(value) = prefs.edit().putInt(KEY_V733FREQUENCYAUTOHZ733, value).apply()
+
+    var v733frontAutoCamera733: Boolean
+        get() = prefs.getBoolean(KEY_V733FRONTAUTOCAMERA733, false)
+        set(value) = prefs.edit().putBoolean(KEY_V733FRONTAUTOCAMERA733, value).apply()
+
+    var v733fullAutoScreen733: Boolean
+        get() = prefs.getBoolean(KEY_V733FULLAUTOSCREEN733, false)
+        set(value) = prefs.edit().putBoolean(KEY_V733FULLAUTOSCREEN733, value).apply()
+
+    var v733functionAutoInline733: Boolean
+        get() = prefs.getBoolean(KEY_V733FUNCTIONAUTOINLINE733, false)
+        set(value) = prefs.edit().putBoolean(KEY_V733FUNCTIONAUTOINLINE733, value).apply()
+
+    var v734floatAutoAnchor734: Boolean
+        get() = prefs.getBoolean(KEY_V734FLOATAUTOANCHOR734, false)
+        set(value) = prefs.edit().putBoolean(KEY_V734FLOATAUTOANCHOR734, value).apply()
+
+    var v734flushAutoBuffer734: Boolean
+        get() = prefs.getBoolean(KEY_V734FLUSHAUTOBUFFER734, false)
+        set(value) = prefs.edit().putBoolean(KEY_V734FLUSHAUTOBUFFER734, value).apply()
+
+    var v734focusAutoFollow734: Boolean
+        get() = prefs.getBoolean(KEY_V734FOCUSAUTOFOLLOW734, false)
+        set(value) = prefs.edit().putBoolean(KEY_V734FOCUSAUTOFOLLOW734, value).apply()
+
+    var v734foldAutoCollapse734: Boolean
+        get() = prefs.getBoolean(KEY_V734FOLDAUTOCOLLAPSE734, false)
+        set(value) = prefs.edit().putBoolean(KEY_V734FOLDAUTOCOLLAPSE734, value).apply()
+
+    var v734fontAutoHinting734: Boolean
+        get() = prefs.getBoolean(KEY_V734FONTAUTOHINTING734, false)
+        set(value) = prefs.edit().putBoolean(KEY_V734FONTAUTOHINTING734, value).apply()
+
+    var v734footerAutoHide734: Boolean
+        get() = prefs.getBoolean(KEY_V734FOOTERAUTOHIDE734, false)
+        set(value) = prefs.edit().putBoolean(KEY_V734FOOTERAUTOHIDE734, value).apply()
+
+    var v734forceAutoReload734: Boolean
+        get() = prefs.getBoolean(KEY_V734FORCEAUTORELOAD734, false)
+        set(value) = prefs.edit().putBoolean(KEY_V734FORCEAUTORELOAD734, value).apply()
+
+    var v734formatAutoConvert734: Int
+        get() = prefs.getInt(KEY_V734FORMATAUTOCONVERT734, 0)
+        set(value) = prefs.edit().putInt(KEY_V734FORMATAUTOCONVERT734, value).apply()
+
+    var v734fragmentAutoLazy734: Boolean
+        get() = prefs.getBoolean(KEY_V734FRAGMENTAUTOLAZY734, false)
+        set(value) = prefs.edit().putBoolean(KEY_V734FRAGMENTAUTOLAZY734, value).apply()
+
+    var v734frameAutoDrop734: Boolean
+        get() = prefs.getBoolean(KEY_V734FRAMEAUTODROP734, false)
+        set(value) = prefs.edit().putBoolean(KEY_V734FRAMEAUTODROP734, value).apply()
+
+    var v734freeAutoMemory734: Boolean
+        get() = prefs.getBoolean(KEY_V734FREEAUTOMEMORY734, false)
+        set(value) = prefs.edit().putBoolean(KEY_V734FREEAUTOMEMORY734, value).apply()
+
+    var v734frequencyAutoHz734: Int
+        get() = prefs.getInt(KEY_V734FREQUENCYAUTOHZ734, 0)
+        set(value) = prefs.edit().putInt(KEY_V734FREQUENCYAUTOHZ734, value).apply()
+
+    var v734frontAutoCamera734: Boolean
+        get() = prefs.getBoolean(KEY_V734FRONTAUTOCAMERA734, false)
+        set(value) = prefs.edit().putBoolean(KEY_V734FRONTAUTOCAMERA734, value).apply()
+
+    var v734fullAutoScreen734: Boolean
+        get() = prefs.getBoolean(KEY_V734FULLAUTOSCREEN734, false)
+        set(value) = prefs.edit().putBoolean(KEY_V734FULLAUTOSCREEN734, value).apply()
+
+    var v734functionAutoInline734: Boolean
+        get() = prefs.getBoolean(KEY_V734FUNCTIONAUTOINLINE734, false)
+        set(value) = prefs.edit().putBoolean(KEY_V734FUNCTIONAUTOINLINE734, value).apply()
+
+    var v735floatAutoAnchor735: Boolean
+        get() = prefs.getBoolean(KEY_V735FLOATAUTOANCHOR735, false)
+        set(value) = prefs.edit().putBoolean(KEY_V735FLOATAUTOANCHOR735, value).apply()
+
+    var v735flushAutoBuffer735: Boolean
+        get() = prefs.getBoolean(KEY_V735FLUSHAUTOBUFFER735, false)
+        set(value) = prefs.edit().putBoolean(KEY_V735FLUSHAUTOBUFFER735, value).apply()
+
+    var v735focusAutoFollow735: Boolean
+        get() = prefs.getBoolean(KEY_V735FOCUSAUTOFOLLOW735, false)
+        set(value) = prefs.edit().putBoolean(KEY_V735FOCUSAUTOFOLLOW735, value).apply()
+
+    var v735foldAutoCollapse735: Boolean
+        get() = prefs.getBoolean(KEY_V735FOLDAUTOCOLLAPSE735, false)
+        set(value) = prefs.edit().putBoolean(KEY_V735FOLDAUTOCOLLAPSE735, value).apply()
+
+    var v735fontAutoHinting735: Boolean
+        get() = prefs.getBoolean(KEY_V735FONTAUTOHINTING735, false)
+        set(value) = prefs.edit().putBoolean(KEY_V735FONTAUTOHINTING735, value).apply()
+
+    var v735footerAutoHide735: Boolean
+        get() = prefs.getBoolean(KEY_V735FOOTERAUTOHIDE735, false)
+        set(value) = prefs.edit().putBoolean(KEY_V735FOOTERAUTOHIDE735, value).apply()
+
+    var v735forceAutoReload735: Boolean
+        get() = prefs.getBoolean(KEY_V735FORCEAUTORELOAD735, false)
+        set(value) = prefs.edit().putBoolean(KEY_V735FORCEAUTORELOAD735, value).apply()
+
+    var v735formatAutoConvert735: Int
+        get() = prefs.getInt(KEY_V735FORMATAUTOCONVERT735, 0)
+        set(value) = prefs.edit().putInt(KEY_V735FORMATAUTOCONVERT735, value).apply()
+
+    var v735fragmentAutoLazy735: Boolean
+        get() = prefs.getBoolean(KEY_V735FRAGMENTAUTOLAZY735, false)
+        set(value) = prefs.edit().putBoolean(KEY_V735FRAGMENTAUTOLAZY735, value).apply()
+
+    var v735frameAutoDrop735: Boolean
+        get() = prefs.getBoolean(KEY_V735FRAMEAUTODROP735, false)
+        set(value) = prefs.edit().putBoolean(KEY_V735FRAMEAUTODROP735, value).apply()
+
+    var v735freeAutoMemory735: Boolean
+        get() = prefs.getBoolean(KEY_V735FREEAUTOMEMORY735, false)
+        set(value) = prefs.edit().putBoolean(KEY_V735FREEAUTOMEMORY735, value).apply()
+
+    var v735frequencyAutoHz735: Int
+        get() = prefs.getInt(KEY_V735FREQUENCYAUTOHZ735, 0)
+        set(value) = prefs.edit().putInt(KEY_V735FREQUENCYAUTOHZ735, value).apply()
+
+    var v735frontAutoCamera735: Boolean
+        get() = prefs.getBoolean(KEY_V735FRONTAUTOCAMERA735, false)
+        set(value) = prefs.edit().putBoolean(KEY_V735FRONTAUTOCAMERA735, value).apply()
+
+    var v735fullAutoScreen735: Boolean
+        get() = prefs.getBoolean(KEY_V735FULLAUTOSCREEN735, false)
+        set(value) = prefs.edit().putBoolean(KEY_V735FULLAUTOSCREEN735, value).apply()
+
+    var v735functionAutoInline735: Boolean
+        get() = prefs.getBoolean(KEY_V735FUNCTIONAUTOINLINE735, false)
+        set(value) = prefs.edit().putBoolean(KEY_V735FUNCTIONAUTOINLINE735, value).apply()
+
+    var v736floatAutoAnchor736: Boolean
+        get() = prefs.getBoolean(KEY_V736FLOATAUTOANCHOR736, false)
+        set(value) = prefs.edit().putBoolean(KEY_V736FLOATAUTOANCHOR736, value).apply()
+
+    var v736flushAutoBuffer736: Boolean
+        get() = prefs.getBoolean(KEY_V736FLUSHAUTOBUFFER736, false)
+        set(value) = prefs.edit().putBoolean(KEY_V736FLUSHAUTOBUFFER736, value).apply()
+
+    var v736focusAutoFollow736: Boolean
+        get() = prefs.getBoolean(KEY_V736FOCUSAUTOFOLLOW736, false)
+        set(value) = prefs.edit().putBoolean(KEY_V736FOCUSAUTOFOLLOW736, value).apply()
+
+    var v736foldAutoCollapse736: Boolean
+        get() = prefs.getBoolean(KEY_V736FOLDAUTOCOLLAPSE736, false)
+        set(value) = prefs.edit().putBoolean(KEY_V736FOLDAUTOCOLLAPSE736, value).apply()
+
+    var v736fontAutoHinting736: Boolean
+        get() = prefs.getBoolean(KEY_V736FONTAUTOHINTING736, false)
+        set(value) = prefs.edit().putBoolean(KEY_V736FONTAUTOHINTING736, value).apply()
+
+    var v736footerAutoHide736: Boolean
+        get() = prefs.getBoolean(KEY_V736FOOTERAUTOHIDE736, false)
+        set(value) = prefs.edit().putBoolean(KEY_V736FOOTERAUTOHIDE736, value).apply()
+
+    var v736forceAutoReload736: Boolean
+        get() = prefs.getBoolean(KEY_V736FORCEAUTORELOAD736, false)
+        set(value) = prefs.edit().putBoolean(KEY_V736FORCEAUTORELOAD736, value).apply()
+
+    var v736formatAutoConvert736: Int
+        get() = prefs.getInt(KEY_V736FORMATAUTOCONVERT736, 0)
+        set(value) = prefs.edit().putInt(KEY_V736FORMATAUTOCONVERT736, value).apply()
+
+    var v736fragmentAutoLazy736: Boolean
+        get() = prefs.getBoolean(KEY_V736FRAGMENTAUTOLAZY736, false)
+        set(value) = prefs.edit().putBoolean(KEY_V736FRAGMENTAUTOLAZY736, value).apply()
+
+    var v736frameAutoDrop736: Boolean
+        get() = prefs.getBoolean(KEY_V736FRAMEAUTODROP736, false)
+        set(value) = prefs.edit().putBoolean(KEY_V736FRAMEAUTODROP736, value).apply()
+
+    var v736freeAutoMemory736: Boolean
+        get() = prefs.getBoolean(KEY_V736FREEAUTOMEMORY736, false)
+        set(value) = prefs.edit().putBoolean(KEY_V736FREEAUTOMEMORY736, value).apply()
+
+    var v736frequencyAutoHz736: Int
+        get() = prefs.getInt(KEY_V736FREQUENCYAUTOHZ736, 0)
+        set(value) = prefs.edit().putInt(KEY_V736FREQUENCYAUTOHZ736, value).apply()
+
+    var v736frontAutoCamera736: Boolean
+        get() = prefs.getBoolean(KEY_V736FRONTAUTOCAMERA736, false)
+        set(value) = prefs.edit().putBoolean(KEY_V736FRONTAUTOCAMERA736, value).apply()
+
+    var v736fullAutoScreen736: Boolean
+        get() = prefs.getBoolean(KEY_V736FULLAUTOSCREEN736, false)
+        set(value) = prefs.edit().putBoolean(KEY_V736FULLAUTOSCREEN736, value).apply()
+
+    var v736functionAutoInline736: Boolean
+        get() = prefs.getBoolean(KEY_V736FUNCTIONAUTOINLINE736, false)
+        set(value) = prefs.edit().putBoolean(KEY_V736FUNCTIONAUTOINLINE736, value).apply()
+
+    var v737floatAutoAnchor737: Boolean
+        get() = prefs.getBoolean(KEY_V737FLOATAUTOANCHOR737, false)
+        set(value) = prefs.edit().putBoolean(KEY_V737FLOATAUTOANCHOR737, value).apply()
+
+    var v737flushAutoBuffer737: Boolean
+        get() = prefs.getBoolean(KEY_V737FLUSHAUTOBUFFER737, false)
+        set(value) = prefs.edit().putBoolean(KEY_V737FLUSHAUTOBUFFER737, value).apply()
+
+    var v737focusAutoFollow737: Boolean
+        get() = prefs.getBoolean(KEY_V737FOCUSAUTOFOLLOW737, false)
+        set(value) = prefs.edit().putBoolean(KEY_V737FOCUSAUTOFOLLOW737, value).apply()
+
+    var v737foldAutoCollapse737: Boolean
+        get() = prefs.getBoolean(KEY_V737FOLDAUTOCOLLAPSE737, false)
+        set(value) = prefs.edit().putBoolean(KEY_V737FOLDAUTOCOLLAPSE737, value).apply()
+
+    var v737fontAutoHinting737: Boolean
+        get() = prefs.getBoolean(KEY_V737FONTAUTOHINTING737, false)
+        set(value) = prefs.edit().putBoolean(KEY_V737FONTAUTOHINTING737, value).apply()
+
+    var v737footerAutoHide737: Boolean
+        get() = prefs.getBoolean(KEY_V737FOOTERAUTOHIDE737, false)
+        set(value) = prefs.edit().putBoolean(KEY_V737FOOTERAUTOHIDE737, value).apply()
+
+    var v737forceAutoReload737: Boolean
+        get() = prefs.getBoolean(KEY_V737FORCEAUTORELOAD737, false)
+        set(value) = prefs.edit().putBoolean(KEY_V737FORCEAUTORELOAD737, value).apply()
+
+    var v737formatAutoConvert737: Int
+        get() = prefs.getInt(KEY_V737FORMATAUTOCONVERT737, 0)
+        set(value) = prefs.edit().putInt(KEY_V737FORMATAUTOCONVERT737, value).apply()
+
+    var v737fragmentAutoLazy737: Boolean
+        get() = prefs.getBoolean(KEY_V737FRAGMENTAUTOLAZY737, false)
+        set(value) = prefs.edit().putBoolean(KEY_V737FRAGMENTAUTOLAZY737, value).apply()
+
+    var v737frameAutoDrop737: Boolean
+        get() = prefs.getBoolean(KEY_V737FRAMEAUTODROP737, false)
+        set(value) = prefs.edit().putBoolean(KEY_V737FRAMEAUTODROP737, value).apply()
+
+    var v737freeAutoMemory737: Boolean
+        get() = prefs.getBoolean(KEY_V737FREEAUTOMEMORY737, false)
+        set(value) = prefs.edit().putBoolean(KEY_V737FREEAUTOMEMORY737, value).apply()
+
+    var v737frequencyAutoHz737: Int
+        get() = prefs.getInt(KEY_V737FREQUENCYAUTOHZ737, 0)
+        set(value) = prefs.edit().putInt(KEY_V737FREQUENCYAUTOHZ737, value).apply()
+
+    var v737frontAutoCamera737: Boolean
+        get() = prefs.getBoolean(KEY_V737FRONTAUTOCAMERA737, false)
+        set(value) = prefs.edit().putBoolean(KEY_V737FRONTAUTOCAMERA737, value).apply()
+
+    var v737fullAutoScreen737: Boolean
+        get() = prefs.getBoolean(KEY_V737FULLAUTOSCREEN737, false)
+        set(value) = prefs.edit().putBoolean(KEY_V737FULLAUTOSCREEN737, value).apply()
+
+    var v737functionAutoInline737: Boolean
+        get() = prefs.getBoolean(KEY_V737FUNCTIONAUTOINLINE737, false)
+        set(value) = prefs.edit().putBoolean(KEY_V737FUNCTIONAUTOINLINE737, value).apply()
+
+    var v738floatAutoAnchor738: Boolean
+        get() = prefs.getBoolean(KEY_V738FLOATAUTOANCHOR738, false)
+        set(value) = prefs.edit().putBoolean(KEY_V738FLOATAUTOANCHOR738, value).apply()
+
+    var v738flushAutoBuffer738: Boolean
+        get() = prefs.getBoolean(KEY_V738FLUSHAUTOBUFFER738, false)
+        set(value) = prefs.edit().putBoolean(KEY_V738FLUSHAUTOBUFFER738, value).apply()
+
+    var v738focusAutoFollow738: Boolean
+        get() = prefs.getBoolean(KEY_V738FOCUSAUTOFOLLOW738, false)
+        set(value) = prefs.edit().putBoolean(KEY_V738FOCUSAUTOFOLLOW738, value).apply()
+
+    var v738foldAutoCollapse738: Boolean
+        get() = prefs.getBoolean(KEY_V738FOLDAUTOCOLLAPSE738, false)
+        set(value) = prefs.edit().putBoolean(KEY_V738FOLDAUTOCOLLAPSE738, value).apply()
+
+    var v738fontAutoHinting738: Boolean
+        get() = prefs.getBoolean(KEY_V738FONTAUTOHINTING738, false)
+        set(value) = prefs.edit().putBoolean(KEY_V738FONTAUTOHINTING738, value).apply()
+
+    var v738footerAutoHide738: Boolean
+        get() = prefs.getBoolean(KEY_V738FOOTERAUTOHIDE738, false)
+        set(value) = prefs.edit().putBoolean(KEY_V738FOOTERAUTOHIDE738, value).apply()
+
+    var v738forceAutoReload738: Boolean
+        get() = prefs.getBoolean(KEY_V738FORCEAUTORELOAD738, false)
+        set(value) = prefs.edit().putBoolean(KEY_V738FORCEAUTORELOAD738, value).apply()
+
+    var v738formatAutoConvert738: Int
+        get() = prefs.getInt(KEY_V738FORMATAUTOCONVERT738, 0)
+        set(value) = prefs.edit().putInt(KEY_V738FORMATAUTOCONVERT738, value).apply()
+
+    var v738fragmentAutoLazy738: Boolean
+        get() = prefs.getBoolean(KEY_V738FRAGMENTAUTOLAZY738, false)
+        set(value) = prefs.edit().putBoolean(KEY_V738FRAGMENTAUTOLAZY738, value).apply()
+
+    var v738frameAutoDrop738: Boolean
+        get() = prefs.getBoolean(KEY_V738FRAMEAUTODROP738, false)
+        set(value) = prefs.edit().putBoolean(KEY_V738FRAMEAUTODROP738, value).apply()
+
+    var v738freeAutoMemory738: Boolean
+        get() = prefs.getBoolean(KEY_V738FREEAUTOMEMORY738, false)
+        set(value) = prefs.edit().putBoolean(KEY_V738FREEAUTOMEMORY738, value).apply()
+
+    var v738frequencyAutoHz738: Int
+        get() = prefs.getInt(KEY_V738FREQUENCYAUTOHZ738, 0)
+        set(value) = prefs.edit().putInt(KEY_V738FREQUENCYAUTOHZ738, value).apply()
+
+    var v738frontAutoCamera738: Boolean
+        get() = prefs.getBoolean(KEY_V738FRONTAUTOCAMERA738, false)
+        set(value) = prefs.edit().putBoolean(KEY_V738FRONTAUTOCAMERA738, value).apply()
+
+    var v738fullAutoScreen738: Boolean
+        get() = prefs.getBoolean(KEY_V738FULLAUTOSCREEN738, false)
+        set(value) = prefs.edit().putBoolean(KEY_V738FULLAUTOSCREEN738, value).apply()
+
+    var v738functionAutoInline738: Boolean
+        get() = prefs.getBoolean(KEY_V738FUNCTIONAUTOINLINE738, false)
+        set(value) = prefs.edit().putBoolean(KEY_V738FUNCTIONAUTOINLINE738, value).apply()
+
+    var v739floatAutoAnchor739: Boolean
+        get() = prefs.getBoolean(KEY_V739FLOATAUTOANCHOR739, false)
+        set(value) = prefs.edit().putBoolean(KEY_V739FLOATAUTOANCHOR739, value).apply()
+
+    var v739flushAutoBuffer739: Boolean
+        get() = prefs.getBoolean(KEY_V739FLUSHAUTOBUFFER739, false)
+        set(value) = prefs.edit().putBoolean(KEY_V739FLUSHAUTOBUFFER739, value).apply()
+
+    var v739focusAutoFollow739: Boolean
+        get() = prefs.getBoolean(KEY_V739FOCUSAUTOFOLLOW739, false)
+        set(value) = prefs.edit().putBoolean(KEY_V739FOCUSAUTOFOLLOW739, value).apply()
+
+    var v739foldAutoCollapse739: Boolean
+        get() = prefs.getBoolean(KEY_V739FOLDAUTOCOLLAPSE739, false)
+        set(value) = prefs.edit().putBoolean(KEY_V739FOLDAUTOCOLLAPSE739, value).apply()
+
+    var v739fontAutoHinting739: Boolean
+        get() = prefs.getBoolean(KEY_V739FONTAUTOHINTING739, false)
+        set(value) = prefs.edit().putBoolean(KEY_V739FONTAUTOHINTING739, value).apply()
+
+    var v739footerAutoHide739: Boolean
+        get() = prefs.getBoolean(KEY_V739FOOTERAUTOHIDE739, false)
+        set(value) = prefs.edit().putBoolean(KEY_V739FOOTERAUTOHIDE739, value).apply()
+
+    var v739forceAutoReload739: Boolean
+        get() = prefs.getBoolean(KEY_V739FORCEAUTORELOAD739, false)
+        set(value) = prefs.edit().putBoolean(KEY_V739FORCEAUTORELOAD739, value).apply()
+
+    var v739formatAutoConvert739: Int
+        get() = prefs.getInt(KEY_V739FORMATAUTOCONVERT739, 0)
+        set(value) = prefs.edit().putInt(KEY_V739FORMATAUTOCONVERT739, value).apply()
+
+    var v739fragmentAutoLazy739: Boolean
+        get() = prefs.getBoolean(KEY_V739FRAGMENTAUTOLAZY739, false)
+        set(value) = prefs.edit().putBoolean(KEY_V739FRAGMENTAUTOLAZY739, value).apply()
+
+    var v739frameAutoDrop739: Boolean
+        get() = prefs.getBoolean(KEY_V739FRAMEAUTODROP739, false)
+        set(value) = prefs.edit().putBoolean(KEY_V739FRAMEAUTODROP739, value).apply()
+
+    var v739freeAutoMemory739: Boolean
+        get() = prefs.getBoolean(KEY_V739FREEAUTOMEMORY739, false)
+        set(value) = prefs.edit().putBoolean(KEY_V739FREEAUTOMEMORY739, value).apply()
+
+    var v739frequencyAutoHz739: Int
+        get() = prefs.getInt(KEY_V739FREQUENCYAUTOHZ739, 0)
+        set(value) = prefs.edit().putInt(KEY_V739FREQUENCYAUTOHZ739, value).apply()
+
+    var v739frontAutoCamera739: Boolean
+        get() = prefs.getBoolean(KEY_V739FRONTAUTOCAMERA739, false)
+        set(value) = prefs.edit().putBoolean(KEY_V739FRONTAUTOCAMERA739, value).apply()
+
+    var v739fullAutoScreen739: Boolean
+        get() = prefs.getBoolean(KEY_V739FULLAUTOSCREEN739, false)
+        set(value) = prefs.edit().putBoolean(KEY_V739FULLAUTOSCREEN739, value).apply()
+
+    var v739functionAutoInline739: Boolean
+        get() = prefs.getBoolean(KEY_V739FUNCTIONAUTOINLINE739, false)
+        set(value) = prefs.edit().putBoolean(KEY_V739FUNCTIONAUTOINLINE739, value).apply()
+
+    var v740floatAutoAnchor740: Boolean
+        get() = prefs.getBoolean(KEY_V740FLOATAUTOANCHOR740, false)
+        set(value) = prefs.edit().putBoolean(KEY_V740FLOATAUTOANCHOR740, value).apply()
+
+    var v740flushAutoBuffer740: Boolean
+        get() = prefs.getBoolean(KEY_V740FLUSHAUTOBUFFER740, false)
+        set(value) = prefs.edit().putBoolean(KEY_V740FLUSHAUTOBUFFER740, value).apply()
+
+    var v740focusAutoFollow740: Boolean
+        get() = prefs.getBoolean(KEY_V740FOCUSAUTOFOLLOW740, false)
+        set(value) = prefs.edit().putBoolean(KEY_V740FOCUSAUTOFOLLOW740, value).apply()
+
+    var v740foldAutoCollapse740: Boolean
+        get() = prefs.getBoolean(KEY_V740FOLDAUTOCOLLAPSE740, false)
+        set(value) = prefs.edit().putBoolean(KEY_V740FOLDAUTOCOLLAPSE740, value).apply()
+
+    var v740fontAutoHinting740: Boolean
+        get() = prefs.getBoolean(KEY_V740FONTAUTOHINTING740, false)
+        set(value) = prefs.edit().putBoolean(KEY_V740FONTAUTOHINTING740, value).apply()
+
+    var v740footerAutoHide740: Boolean
+        get() = prefs.getBoolean(KEY_V740FOOTERAUTOHIDE740, false)
+        set(value) = prefs.edit().putBoolean(KEY_V740FOOTERAUTOHIDE740, value).apply()
+
+    var v740forceAutoReload740: Boolean
+        get() = prefs.getBoolean(KEY_V740FORCEAUTORELOAD740, false)
+        set(value) = prefs.edit().putBoolean(KEY_V740FORCEAUTORELOAD740, value).apply()
+
+    var v740formatAutoConvert740: Int
+        get() = prefs.getInt(KEY_V740FORMATAUTOCONVERT740, 0)
+        set(value) = prefs.edit().putInt(KEY_V740FORMATAUTOCONVERT740, value).apply()
+
+    var v740fragmentAutoLazy740: Boolean
+        get() = prefs.getBoolean(KEY_V740FRAGMENTAUTOLAZY740, false)
+        set(value) = prefs.edit().putBoolean(KEY_V740FRAGMENTAUTOLAZY740, value).apply()
+
+    var v740frameAutoDrop740: Boolean
+        get() = prefs.getBoolean(KEY_V740FRAMEAUTODROP740, false)
+        set(value) = prefs.edit().putBoolean(KEY_V740FRAMEAUTODROP740, value).apply()
+
+    var v740freeAutoMemory740: Boolean
+        get() = prefs.getBoolean(KEY_V740FREEAUTOMEMORY740, false)
+        set(value) = prefs.edit().putBoolean(KEY_V740FREEAUTOMEMORY740, value).apply()
+
+    var v740frequencyAutoHz740: Int
+        get() = prefs.getInt(KEY_V740FREQUENCYAUTOHZ740, 0)
+        set(value) = prefs.edit().putInt(KEY_V740FREQUENCYAUTOHZ740, value).apply()
+
+    var v740frontAutoCamera740: Boolean
+        get() = prefs.getBoolean(KEY_V740FRONTAUTOCAMERA740, false)
+        set(value) = prefs.edit().putBoolean(KEY_V740FRONTAUTOCAMERA740, value).apply()
+
+    var v740fullAutoScreen740: Boolean
+        get() = prefs.getBoolean(KEY_V740FULLAUTOSCREEN740, false)
+        set(value) = prefs.edit().putBoolean(KEY_V740FULLAUTOSCREEN740, value).apply()
+
+    var v740functionAutoInline740: Boolean
+        get() = prefs.getBoolean(KEY_V740FUNCTIONAUTOINLINE740, false)
+        set(value) = prefs.edit().putBoolean(KEY_V740FUNCTIONAUTOINLINE740, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -63930,5 +64530,155 @@ class AppPrefs(context: Context) {
         const val KEY_V730FLASHAUTOMODE730 = "v730flashAutoMode730" // v730 Flash Auto Mode730
         const val KEY_V730FLATAUTOLAYOUT730 = "v730flatAutoLayout730" // v730 Flat Auto Layout730
         const val KEY_V730FLIPAUTOHORIZONTAL730 = "v730flipAutoHorizontal730" // v730 Flip Auto Horizontal730
+        const val KEY_V731FLOATAUTOANCHOR731 = "v731floatAutoAnchor731" // v731 Float Auto Anchor731
+        const val KEY_V731FLUSHAUTOBUFFER731 = "v731flushAutoBuffer731" // v731 Flush Auto Buffer731
+        const val KEY_V731FOCUSAUTOFOLLOW731 = "v731focusAutoFollow731" // v731 Focus Auto Follow731
+        const val KEY_V731FOLDAUTOCOLLAPSE731 = "v731foldAutoCollapse731" // v731 Fold Auto Collapse731
+        const val KEY_V731FONTAUTOHINTING731 = "v731fontAutoHinting731" // v731 Font Auto Hinting731
+        const val KEY_V731FOOTERAUTOHIDE731 = "v731footerAutoHide731" // v731 Footer Auto Hide731
+        const val KEY_V731FORCEAUTORELOAD731 = "v731forceAutoReload731" // v731 Force Auto Reload731
+        const val KEY_V731FORMATAUTOCONVERT731 = "v731formatAutoConvert731" // v731 Format Auto Convert731
+        const val KEY_V731FRAGMENTAUTOLAZY731 = "v731fragmentAutoLazy731" // v731 Fragment Auto Lazy731
+        const val KEY_V731FRAMEAUTODROP731 = "v731frameAutoDrop731" // v731 Frame Auto Drop731
+        const val KEY_V731FREEAUTOMEMORY731 = "v731freeAutoMemory731" // v731 Free Auto Memory731
+        const val KEY_V731FREQUENCYAUTOHZ731 = "v731frequencyAutoHz731" // v731 Frequency Auto Hz731
+        const val KEY_V731FRONTAUTOCAMERA731 = "v731frontAutoCamera731" // v731 Front Auto Camera731
+        const val KEY_V731FULLAUTOSCREEN731 = "v731fullAutoScreen731" // v731 Full Auto Screen731
+        const val KEY_V731FUNCTIONAUTOINLINE731 = "v731functionAutoInline731" // v731 Function Auto Inline731
+        const val KEY_V732FLOATAUTOANCHOR732 = "v732floatAutoAnchor732" // v732 Float Auto Anchor732
+        const val KEY_V732FLUSHAUTOBUFFER732 = "v732flushAutoBuffer732" // v732 Flush Auto Buffer732
+        const val KEY_V732FOCUSAUTOFOLLOW732 = "v732focusAutoFollow732" // v732 Focus Auto Follow732
+        const val KEY_V732FOLDAUTOCOLLAPSE732 = "v732foldAutoCollapse732" // v732 Fold Auto Collapse732
+        const val KEY_V732FONTAUTOHINTING732 = "v732fontAutoHinting732" // v732 Font Auto Hinting732
+        const val KEY_V732FOOTERAUTOHIDE732 = "v732footerAutoHide732" // v732 Footer Auto Hide732
+        const val KEY_V732FORCEAUTORELOAD732 = "v732forceAutoReload732" // v732 Force Auto Reload732
+        const val KEY_V732FORMATAUTOCONVERT732 = "v732formatAutoConvert732" // v732 Format Auto Convert732
+        const val KEY_V732FRAGMENTAUTOLAZY732 = "v732fragmentAutoLazy732" // v732 Fragment Auto Lazy732
+        const val KEY_V732FRAMEAUTODROP732 = "v732frameAutoDrop732" // v732 Frame Auto Drop732
+        const val KEY_V732FREEAUTOMEMORY732 = "v732freeAutoMemory732" // v732 Free Auto Memory732
+        const val KEY_V732FREQUENCYAUTOHZ732 = "v732frequencyAutoHz732" // v732 Frequency Auto Hz732
+        const val KEY_V732FRONTAUTOCAMERA732 = "v732frontAutoCamera732" // v732 Front Auto Camera732
+        const val KEY_V732FULLAUTOSCREEN732 = "v732fullAutoScreen732" // v732 Full Auto Screen732
+        const val KEY_V732FUNCTIONAUTOINLINE732 = "v732functionAutoInline732" // v732 Function Auto Inline732
+        const val KEY_V733FLOATAUTOANCHOR733 = "v733floatAutoAnchor733" // v733 Float Auto Anchor733
+        const val KEY_V733FLUSHAUTOBUFFER733 = "v733flushAutoBuffer733" // v733 Flush Auto Buffer733
+        const val KEY_V733FOCUSAUTOFOLLOW733 = "v733focusAutoFollow733" // v733 Focus Auto Follow733
+        const val KEY_V733FOLDAUTOCOLLAPSE733 = "v733foldAutoCollapse733" // v733 Fold Auto Collapse733
+        const val KEY_V733FONTAUTOHINTING733 = "v733fontAutoHinting733" // v733 Font Auto Hinting733
+        const val KEY_V733FOOTERAUTOHIDE733 = "v733footerAutoHide733" // v733 Footer Auto Hide733
+        const val KEY_V733FORCEAUTORELOAD733 = "v733forceAutoReload733" // v733 Force Auto Reload733
+        const val KEY_V733FORMATAUTOCONVERT733 = "v733formatAutoConvert733" // v733 Format Auto Convert733
+        const val KEY_V733FRAGMENTAUTOLAZY733 = "v733fragmentAutoLazy733" // v733 Fragment Auto Lazy733
+        const val KEY_V733FRAMEAUTODROP733 = "v733frameAutoDrop733" // v733 Frame Auto Drop733
+        const val KEY_V733FREEAUTOMEMORY733 = "v733freeAutoMemory733" // v733 Free Auto Memory733
+        const val KEY_V733FREQUENCYAUTOHZ733 = "v733frequencyAutoHz733" // v733 Frequency Auto Hz733
+        const val KEY_V733FRONTAUTOCAMERA733 = "v733frontAutoCamera733" // v733 Front Auto Camera733
+        const val KEY_V733FULLAUTOSCREEN733 = "v733fullAutoScreen733" // v733 Full Auto Screen733
+        const val KEY_V733FUNCTIONAUTOINLINE733 = "v733functionAutoInline733" // v733 Function Auto Inline733
+        const val KEY_V734FLOATAUTOANCHOR734 = "v734floatAutoAnchor734" // v734 Float Auto Anchor734
+        const val KEY_V734FLUSHAUTOBUFFER734 = "v734flushAutoBuffer734" // v734 Flush Auto Buffer734
+        const val KEY_V734FOCUSAUTOFOLLOW734 = "v734focusAutoFollow734" // v734 Focus Auto Follow734
+        const val KEY_V734FOLDAUTOCOLLAPSE734 = "v734foldAutoCollapse734" // v734 Fold Auto Collapse734
+        const val KEY_V734FONTAUTOHINTING734 = "v734fontAutoHinting734" // v734 Font Auto Hinting734
+        const val KEY_V734FOOTERAUTOHIDE734 = "v734footerAutoHide734" // v734 Footer Auto Hide734
+        const val KEY_V734FORCEAUTORELOAD734 = "v734forceAutoReload734" // v734 Force Auto Reload734
+        const val KEY_V734FORMATAUTOCONVERT734 = "v734formatAutoConvert734" // v734 Format Auto Convert734
+        const val KEY_V734FRAGMENTAUTOLAZY734 = "v734fragmentAutoLazy734" // v734 Fragment Auto Lazy734
+        const val KEY_V734FRAMEAUTODROP734 = "v734frameAutoDrop734" // v734 Frame Auto Drop734
+        const val KEY_V734FREEAUTOMEMORY734 = "v734freeAutoMemory734" // v734 Free Auto Memory734
+        const val KEY_V734FREQUENCYAUTOHZ734 = "v734frequencyAutoHz734" // v734 Frequency Auto Hz734
+        const val KEY_V734FRONTAUTOCAMERA734 = "v734frontAutoCamera734" // v734 Front Auto Camera734
+        const val KEY_V734FULLAUTOSCREEN734 = "v734fullAutoScreen734" // v734 Full Auto Screen734
+        const val KEY_V734FUNCTIONAUTOINLINE734 = "v734functionAutoInline734" // v734 Function Auto Inline734
+        const val KEY_V735FLOATAUTOANCHOR735 = "v735floatAutoAnchor735" // v735 Float Auto Anchor735
+        const val KEY_V735FLUSHAUTOBUFFER735 = "v735flushAutoBuffer735" // v735 Flush Auto Buffer735
+        const val KEY_V735FOCUSAUTOFOLLOW735 = "v735focusAutoFollow735" // v735 Focus Auto Follow735
+        const val KEY_V735FOLDAUTOCOLLAPSE735 = "v735foldAutoCollapse735" // v735 Fold Auto Collapse735
+        const val KEY_V735FONTAUTOHINTING735 = "v735fontAutoHinting735" // v735 Font Auto Hinting735
+        const val KEY_V735FOOTERAUTOHIDE735 = "v735footerAutoHide735" // v735 Footer Auto Hide735
+        const val KEY_V735FORCEAUTORELOAD735 = "v735forceAutoReload735" // v735 Force Auto Reload735
+        const val KEY_V735FORMATAUTOCONVERT735 = "v735formatAutoConvert735" // v735 Format Auto Convert735
+        const val KEY_V735FRAGMENTAUTOLAZY735 = "v735fragmentAutoLazy735" // v735 Fragment Auto Lazy735
+        const val KEY_V735FRAMEAUTODROP735 = "v735frameAutoDrop735" // v735 Frame Auto Drop735
+        const val KEY_V735FREEAUTOMEMORY735 = "v735freeAutoMemory735" // v735 Free Auto Memory735
+        const val KEY_V735FREQUENCYAUTOHZ735 = "v735frequencyAutoHz735" // v735 Frequency Auto Hz735
+        const val KEY_V735FRONTAUTOCAMERA735 = "v735frontAutoCamera735" // v735 Front Auto Camera735
+        const val KEY_V735FULLAUTOSCREEN735 = "v735fullAutoScreen735" // v735 Full Auto Screen735
+        const val KEY_V735FUNCTIONAUTOINLINE735 = "v735functionAutoInline735" // v735 Function Auto Inline735
+        const val KEY_V736FLOATAUTOANCHOR736 = "v736floatAutoAnchor736" // v736 Float Auto Anchor736
+        const val KEY_V736FLUSHAUTOBUFFER736 = "v736flushAutoBuffer736" // v736 Flush Auto Buffer736
+        const val KEY_V736FOCUSAUTOFOLLOW736 = "v736focusAutoFollow736" // v736 Focus Auto Follow736
+        const val KEY_V736FOLDAUTOCOLLAPSE736 = "v736foldAutoCollapse736" // v736 Fold Auto Collapse736
+        const val KEY_V736FONTAUTOHINTING736 = "v736fontAutoHinting736" // v736 Font Auto Hinting736
+        const val KEY_V736FOOTERAUTOHIDE736 = "v736footerAutoHide736" // v736 Footer Auto Hide736
+        const val KEY_V736FORCEAUTORELOAD736 = "v736forceAutoReload736" // v736 Force Auto Reload736
+        const val KEY_V736FORMATAUTOCONVERT736 = "v736formatAutoConvert736" // v736 Format Auto Convert736
+        const val KEY_V736FRAGMENTAUTOLAZY736 = "v736fragmentAutoLazy736" // v736 Fragment Auto Lazy736
+        const val KEY_V736FRAMEAUTODROP736 = "v736frameAutoDrop736" // v736 Frame Auto Drop736
+        const val KEY_V736FREEAUTOMEMORY736 = "v736freeAutoMemory736" // v736 Free Auto Memory736
+        const val KEY_V736FREQUENCYAUTOHZ736 = "v736frequencyAutoHz736" // v736 Frequency Auto Hz736
+        const val KEY_V736FRONTAUTOCAMERA736 = "v736frontAutoCamera736" // v736 Front Auto Camera736
+        const val KEY_V736FULLAUTOSCREEN736 = "v736fullAutoScreen736" // v736 Full Auto Screen736
+        const val KEY_V736FUNCTIONAUTOINLINE736 = "v736functionAutoInline736" // v736 Function Auto Inline736
+        const val KEY_V737FLOATAUTOANCHOR737 = "v737floatAutoAnchor737" // v737 Float Auto Anchor737
+        const val KEY_V737FLUSHAUTOBUFFER737 = "v737flushAutoBuffer737" // v737 Flush Auto Buffer737
+        const val KEY_V737FOCUSAUTOFOLLOW737 = "v737focusAutoFollow737" // v737 Focus Auto Follow737
+        const val KEY_V737FOLDAUTOCOLLAPSE737 = "v737foldAutoCollapse737" // v737 Fold Auto Collapse737
+        const val KEY_V737FONTAUTOHINTING737 = "v737fontAutoHinting737" // v737 Font Auto Hinting737
+        const val KEY_V737FOOTERAUTOHIDE737 = "v737footerAutoHide737" // v737 Footer Auto Hide737
+        const val KEY_V737FORCEAUTORELOAD737 = "v737forceAutoReload737" // v737 Force Auto Reload737
+        const val KEY_V737FORMATAUTOCONVERT737 = "v737formatAutoConvert737" // v737 Format Auto Convert737
+        const val KEY_V737FRAGMENTAUTOLAZY737 = "v737fragmentAutoLazy737" // v737 Fragment Auto Lazy737
+        const val KEY_V737FRAMEAUTODROP737 = "v737frameAutoDrop737" // v737 Frame Auto Drop737
+        const val KEY_V737FREEAUTOMEMORY737 = "v737freeAutoMemory737" // v737 Free Auto Memory737
+        const val KEY_V737FREQUENCYAUTOHZ737 = "v737frequencyAutoHz737" // v737 Frequency Auto Hz737
+        const val KEY_V737FRONTAUTOCAMERA737 = "v737frontAutoCamera737" // v737 Front Auto Camera737
+        const val KEY_V737FULLAUTOSCREEN737 = "v737fullAutoScreen737" // v737 Full Auto Screen737
+        const val KEY_V737FUNCTIONAUTOINLINE737 = "v737functionAutoInline737" // v737 Function Auto Inline737
+        const val KEY_V738FLOATAUTOANCHOR738 = "v738floatAutoAnchor738" // v738 Float Auto Anchor738
+        const val KEY_V738FLUSHAUTOBUFFER738 = "v738flushAutoBuffer738" // v738 Flush Auto Buffer738
+        const val KEY_V738FOCUSAUTOFOLLOW738 = "v738focusAutoFollow738" // v738 Focus Auto Follow738
+        const val KEY_V738FOLDAUTOCOLLAPSE738 = "v738foldAutoCollapse738" // v738 Fold Auto Collapse738
+        const val KEY_V738FONTAUTOHINTING738 = "v738fontAutoHinting738" // v738 Font Auto Hinting738
+        const val KEY_V738FOOTERAUTOHIDE738 = "v738footerAutoHide738" // v738 Footer Auto Hide738
+        const val KEY_V738FORCEAUTORELOAD738 = "v738forceAutoReload738" // v738 Force Auto Reload738
+        const val KEY_V738FORMATAUTOCONVERT738 = "v738formatAutoConvert738" // v738 Format Auto Convert738
+        const val KEY_V738FRAGMENTAUTOLAZY738 = "v738fragmentAutoLazy738" // v738 Fragment Auto Lazy738
+        const val KEY_V738FRAMEAUTODROP738 = "v738frameAutoDrop738" // v738 Frame Auto Drop738
+        const val KEY_V738FREEAUTOMEMORY738 = "v738freeAutoMemory738" // v738 Free Auto Memory738
+        const val KEY_V738FREQUENCYAUTOHZ738 = "v738frequencyAutoHz738" // v738 Frequency Auto Hz738
+        const val KEY_V738FRONTAUTOCAMERA738 = "v738frontAutoCamera738" // v738 Front Auto Camera738
+        const val KEY_V738FULLAUTOSCREEN738 = "v738fullAutoScreen738" // v738 Full Auto Screen738
+        const val KEY_V738FUNCTIONAUTOINLINE738 = "v738functionAutoInline738" // v738 Function Auto Inline738
+        const val KEY_V739FLOATAUTOANCHOR739 = "v739floatAutoAnchor739" // v739 Float Auto Anchor739
+        const val KEY_V739FLUSHAUTOBUFFER739 = "v739flushAutoBuffer739" // v739 Flush Auto Buffer739
+        const val KEY_V739FOCUSAUTOFOLLOW739 = "v739focusAutoFollow739" // v739 Focus Auto Follow739
+        const val KEY_V739FOLDAUTOCOLLAPSE739 = "v739foldAutoCollapse739" // v739 Fold Auto Collapse739
+        const val KEY_V739FONTAUTOHINTING739 = "v739fontAutoHinting739" // v739 Font Auto Hinting739
+        const val KEY_V739FOOTERAUTOHIDE739 = "v739footerAutoHide739" // v739 Footer Auto Hide739
+        const val KEY_V739FORCEAUTORELOAD739 = "v739forceAutoReload739" // v739 Force Auto Reload739
+        const val KEY_V739FORMATAUTOCONVERT739 = "v739formatAutoConvert739" // v739 Format Auto Convert739
+        const val KEY_V739FRAGMENTAUTOLAZY739 = "v739fragmentAutoLazy739" // v739 Fragment Auto Lazy739
+        const val KEY_V739FRAMEAUTODROP739 = "v739frameAutoDrop739" // v739 Frame Auto Drop739
+        const val KEY_V739FREEAUTOMEMORY739 = "v739freeAutoMemory739" // v739 Free Auto Memory739
+        const val KEY_V739FREQUENCYAUTOHZ739 = "v739frequencyAutoHz739" // v739 Frequency Auto Hz739
+        const val KEY_V739FRONTAUTOCAMERA739 = "v739frontAutoCamera739" // v739 Front Auto Camera739
+        const val KEY_V739FULLAUTOSCREEN739 = "v739fullAutoScreen739" // v739 Full Auto Screen739
+        const val KEY_V739FUNCTIONAUTOINLINE739 = "v739functionAutoInline739" // v739 Function Auto Inline739
+        const val KEY_V740FLOATAUTOANCHOR740 = "v740floatAutoAnchor740" // v740 Float Auto Anchor740
+        const val KEY_V740FLUSHAUTOBUFFER740 = "v740flushAutoBuffer740" // v740 Flush Auto Buffer740
+        const val KEY_V740FOCUSAUTOFOLLOW740 = "v740focusAutoFollow740" // v740 Focus Auto Follow740
+        const val KEY_V740FOLDAUTOCOLLAPSE740 = "v740foldAutoCollapse740" // v740 Fold Auto Collapse740
+        const val KEY_V740FONTAUTOHINTING740 = "v740fontAutoHinting740" // v740 Font Auto Hinting740
+        const val KEY_V740FOOTERAUTOHIDE740 = "v740footerAutoHide740" // v740 Footer Auto Hide740
+        const val KEY_V740FORCEAUTORELOAD740 = "v740forceAutoReload740" // v740 Force Auto Reload740
+        const val KEY_V740FORMATAUTOCONVERT740 = "v740formatAutoConvert740" // v740 Format Auto Convert740
+        const val KEY_V740FRAGMENTAUTOLAZY740 = "v740fragmentAutoLazy740" // v740 Fragment Auto Lazy740
+        const val KEY_V740FRAMEAUTODROP740 = "v740frameAutoDrop740" // v740 Frame Auto Drop740
+        const val KEY_V740FREEAUTOMEMORY740 = "v740freeAutoMemory740" // v740 Free Auto Memory740
+        const val KEY_V740FREQUENCYAUTOHZ740 = "v740frequencyAutoHz740" // v740 Frequency Auto Hz740
+        const val KEY_V740FRONTAUTOCAMERA740 = "v740frontAutoCamera740" // v740 Front Auto Camera740
+        const val KEY_V740FULLAUTOSCREEN740 = "v740fullAutoScreen740" // v740 Full Auto Screen740
+        const val KEY_V740FUNCTIONAUTOINLINE740 = "v740functionAutoInline740" // v740 Function Auto Inline740
     }
 }
