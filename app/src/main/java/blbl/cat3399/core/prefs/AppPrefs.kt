@@ -38648,6 +38648,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V530RULEAUTOAPPLY530, false)
         set(value) = prefs.edit().putBoolean(KEY_V530RULEAUTOAPPLY530, value).apply()
 
+    var v531runInBackground531: Boolean
+        get() = prefs.getBoolean(KEY_V531RUNINBACKGROUND531, false)
+        set(value) = prefs.edit().putBoolean(KEY_V531RUNINBACKGROUND531, value).apply()
+
+    var v531sampleAutoCollect531: Boolean
+        get() = prefs.getBoolean(KEY_V531SAMPLEAUTOCOLLECT531, false)
+        set(value) = prefs.edit().putBoolean(KEY_V531SAMPLEAUTOCOLLECT531, value).apply()
+
+    var v531saveAutoBackup531: Boolean
+        get() = prefs.getBoolean(KEY_V531SAVEAUTOBACKUP531, false)
+        set(value) = prefs.edit().putBoolean(KEY_V531SAVEAUTOBACKUP531, value).apply()
+
+    var v531scaleAutoFit531: Boolean
+        get() = prefs.getBoolean(KEY_V531SCALEAUTOFIT531, false)
+        set(value) = prefs.edit().putBoolean(KEY_V531SCALEAUTOFIT531, value).apply()
+
+    var v531scanAutoStart531: Boolean
+        get() = prefs.getBoolean(KEY_V531SCANAUTOSTART531, false)
+        set(value) = prefs.edit().putBoolean(KEY_V531SCANAUTOSTART531, value).apply()
+
+    var v531scheduleAutoRun531: Boolean
+        get() = prefs.getBoolean(KEY_V531SCHEDULEAUTORUN531, false)
+        set(value) = prefs.edit().putBoolean(KEY_V531SCHEDULEAUTORUN531, value).apply()
+
+    var v531scoreAutoCalculate531: Boolean
+        get() = prefs.getBoolean(KEY_V531SCOREAUTOCALCULATE531, false)
+        set(value) = prefs.edit().putBoolean(KEY_V531SCOREAUTOCALCULATE531, value).apply()
+
+    var v531scratchAutoRepair531: Boolean
+        get() = prefs.getBoolean(KEY_V531SCRATCHAUTOREPAIR531, false)
+        set(value) = prefs.edit().putBoolean(KEY_V531SCRATCHAUTOREPAIR531, value).apply()
+
+    var v531scriptAutoExecute531: Boolean
+        get() = prefs.getBoolean(KEY_V531SCRIPTAUTOEXECUTE531, false)
+        set(value) = prefs.edit().putBoolean(KEY_V531SCRIPTAUTOEXECUTE531, value).apply()
+
+    var v531scrollAutoSmooth531: Boolean
+        get() = prefs.getBoolean(KEY_V531SCROLLAUTOSMOOTH531, false)
+        set(value) = prefs.edit().putBoolean(KEY_V531SCROLLAUTOSMOOTH531, value).apply()
+
+    var v531sealAutoEncrypt531: Boolean
+        get() = prefs.getBoolean(KEY_V531SEALAUTOENCRYPT531, false)
+        set(value) = prefs.edit().putBoolean(KEY_V531SEALAUTOENCRYPT531, value).apply()
+
+    var v531searchAutoComplete531: Boolean
+        get() = prefs.getBoolean(KEY_V531SEARCHAUTOCOMPLETE531, false)
+        set(value) = prefs.edit().putBoolean(KEY_V531SEARCHAUTOCOMPLETE531, value).apply()
+
+    var v531sectionAutoGroup531: Boolean
+        get() = prefs.getBoolean(KEY_V531SECTIONAUTOGROUP531, false)
+        set(value) = prefs.edit().putBoolean(KEY_V531SECTIONAUTOGROUP531, value).apply()
+
+    var v531seekAutoPrecision531: Boolean
+        get() = prefs.getBoolean(KEY_V531SEEKAUTOPRECISION531, false)
+        set(value) = prefs.edit().putBoolean(KEY_V531SEEKAUTOPRECISION531, value).apply()
+
+    var v531selectAutoMulti531: Boolean
+        get() = prefs.getBoolean(KEY_V531SELECTAUTOMULTI531, false)
+        set(value) = prefs.edit().putBoolean(KEY_V531SELECTAUTOMULTI531, value).apply()
+
+    var v532runInBackground532: Boolean
+        get() = prefs.getBoolean(KEY_V532RUNINBACKGROUND532, false)
+        set(value) = prefs.edit().putBoolean(KEY_V532RUNINBACKGROUND532, value).apply()
+
+    var v532sampleAutoCollect532: Boolean
+        get() = prefs.getBoolean(KEY_V532SAMPLEAUTOCOLLECT532, false)
+        set(value) = prefs.edit().putBoolean(KEY_V532SAMPLEAUTOCOLLECT532, value).apply()
+
+    var v532saveAutoBackup532: Boolean
+        get() = prefs.getBoolean(KEY_V532SAVEAUTOBACKUP532, false)
+        set(value) = prefs.edit().putBoolean(KEY_V532SAVEAUTOBACKUP532, value).apply()
+
+    var v532scaleAutoFit532: Boolean
+        get() = prefs.getBoolean(KEY_V532SCALEAUTOFIT532, false)
+        set(value) = prefs.edit().putBoolean(KEY_V532SCALEAUTOFIT532, value).apply()
+
+    var v532scanAutoStart532: Boolean
+        get() = prefs.getBoolean(KEY_V532SCANAUTOSTART532, false)
+        set(value) = prefs.edit().putBoolean(KEY_V532SCANAUTOSTART532, value).apply()
+
+    var v532scheduleAutoRun532: Boolean
+        get() = prefs.getBoolean(KEY_V532SCHEDULEAUTORUN532, false)
+        set(value) = prefs.edit().putBoolean(KEY_V532SCHEDULEAUTORUN532, value).apply()
+
+    var v532scoreAutoCalculate532: Boolean
+        get() = prefs.getBoolean(KEY_V532SCOREAUTOCALCULATE532, false)
+        set(value) = prefs.edit().putBoolean(KEY_V532SCOREAUTOCALCULATE532, value).apply()
+
+    var v532scratchAutoRepair532: Boolean
+        get() = prefs.getBoolean(KEY_V532SCRATCHAUTOREPAIR532, false)
+        set(value) = prefs.edit().putBoolean(KEY_V532SCRATCHAUTOREPAIR532, value).apply()
+
+    var v532scriptAutoExecute532: Boolean
+        get() = prefs.getBoolean(KEY_V532SCRIPTAUTOEXECUTE532, false)
+        set(value) = prefs.edit().putBoolean(KEY_V532SCRIPTAUTOEXECUTE532, value).apply()
+
+    var v532scrollAutoSmooth532: Boolean
+        get() = prefs.getBoolean(KEY_V532SCROLLAUTOSMOOTH532, false)
+        set(value) = prefs.edit().putBoolean(KEY_V532SCROLLAUTOSMOOTH532, value).apply()
+
+    var v532sealAutoEncrypt532: Boolean
+        get() = prefs.getBoolean(KEY_V532SEALAUTOENCRYPT532, false)
+        set(value) = prefs.edit().putBoolean(KEY_V532SEALAUTOENCRYPT532, value).apply()
+
+    var v532searchAutoComplete532: Boolean
+        get() = prefs.getBoolean(KEY_V532SEARCHAUTOCOMPLETE532, false)
+        set(value) = prefs.edit().putBoolean(KEY_V532SEARCHAUTOCOMPLETE532, value).apply()
+
+    var v532sectionAutoGroup532: Boolean
+        get() = prefs.getBoolean(KEY_V532SECTIONAUTOGROUP532, false)
+        set(value) = prefs.edit().putBoolean(KEY_V532SECTIONAUTOGROUP532, value).apply()
+
+    var v532seekAutoPrecision532: Boolean
+        get() = prefs.getBoolean(KEY_V532SEEKAUTOPRECISION532, false)
+        set(value) = prefs.edit().putBoolean(KEY_V532SEEKAUTOPRECISION532, value).apply()
+
+    var v532selectAutoMulti532: Boolean
+        get() = prefs.getBoolean(KEY_V532SELECTAUTOMULTI532, false)
+        set(value) = prefs.edit().putBoolean(KEY_V532SELECTAUTOMULTI532, value).apply()
+
+    var v533runInBackground533: Boolean
+        get() = prefs.getBoolean(KEY_V533RUNINBACKGROUND533, false)
+        set(value) = prefs.edit().putBoolean(KEY_V533RUNINBACKGROUND533, value).apply()
+
+    var v533sampleAutoCollect533: Boolean
+        get() = prefs.getBoolean(KEY_V533SAMPLEAUTOCOLLECT533, false)
+        set(value) = prefs.edit().putBoolean(KEY_V533SAMPLEAUTOCOLLECT533, value).apply()
+
+    var v533saveAutoBackup533: Boolean
+        get() = prefs.getBoolean(KEY_V533SAVEAUTOBACKUP533, false)
+        set(value) = prefs.edit().putBoolean(KEY_V533SAVEAUTOBACKUP533, value).apply()
+
+    var v533scaleAutoFit533: Boolean
+        get() = prefs.getBoolean(KEY_V533SCALEAUTOFIT533, false)
+        set(value) = prefs.edit().putBoolean(KEY_V533SCALEAUTOFIT533, value).apply()
+
+    var v533scanAutoStart533: Boolean
+        get() = prefs.getBoolean(KEY_V533SCANAUTOSTART533, false)
+        set(value) = prefs.edit().putBoolean(KEY_V533SCANAUTOSTART533, value).apply()
+
+    var v533scheduleAutoRun533: Boolean
+        get() = prefs.getBoolean(KEY_V533SCHEDULEAUTORUN533, false)
+        set(value) = prefs.edit().putBoolean(KEY_V533SCHEDULEAUTORUN533, value).apply()
+
+    var v533scoreAutoCalculate533: Boolean
+        get() = prefs.getBoolean(KEY_V533SCOREAUTOCALCULATE533, false)
+        set(value) = prefs.edit().putBoolean(KEY_V533SCOREAUTOCALCULATE533, value).apply()
+
+    var v533scratchAutoRepair533: Boolean
+        get() = prefs.getBoolean(KEY_V533SCRATCHAUTOREPAIR533, false)
+        set(value) = prefs.edit().putBoolean(KEY_V533SCRATCHAUTOREPAIR533, value).apply()
+
+    var v533scriptAutoExecute533: Boolean
+        get() = prefs.getBoolean(KEY_V533SCRIPTAUTOEXECUTE533, false)
+        set(value) = prefs.edit().putBoolean(KEY_V533SCRIPTAUTOEXECUTE533, value).apply()
+
+    var v533scrollAutoSmooth533: Boolean
+        get() = prefs.getBoolean(KEY_V533SCROLLAUTOSMOOTH533, false)
+        set(value) = prefs.edit().putBoolean(KEY_V533SCROLLAUTOSMOOTH533, value).apply()
+
+    var v533sealAutoEncrypt533: Boolean
+        get() = prefs.getBoolean(KEY_V533SEALAUTOENCRYPT533, false)
+        set(value) = prefs.edit().putBoolean(KEY_V533SEALAUTOENCRYPT533, value).apply()
+
+    var v533searchAutoComplete533: Boolean
+        get() = prefs.getBoolean(KEY_V533SEARCHAUTOCOMPLETE533, false)
+        set(value) = prefs.edit().putBoolean(KEY_V533SEARCHAUTOCOMPLETE533, value).apply()
+
+    var v533sectionAutoGroup533: Boolean
+        get() = prefs.getBoolean(KEY_V533SECTIONAUTOGROUP533, false)
+        set(value) = prefs.edit().putBoolean(KEY_V533SECTIONAUTOGROUP533, value).apply()
+
+    var v533seekAutoPrecision533: Boolean
+        get() = prefs.getBoolean(KEY_V533SEEKAUTOPRECISION533, false)
+        set(value) = prefs.edit().putBoolean(KEY_V533SEEKAUTOPRECISION533, value).apply()
+
+    var v533selectAutoMulti533: Boolean
+        get() = prefs.getBoolean(KEY_V533SELECTAUTOMULTI533, false)
+        set(value) = prefs.edit().putBoolean(KEY_V533SELECTAUTOMULTI533, value).apply()
+
+    var v534runInBackground534: Boolean
+        get() = prefs.getBoolean(KEY_V534RUNINBACKGROUND534, false)
+        set(value) = prefs.edit().putBoolean(KEY_V534RUNINBACKGROUND534, value).apply()
+
+    var v534sampleAutoCollect534: Boolean
+        get() = prefs.getBoolean(KEY_V534SAMPLEAUTOCOLLECT534, false)
+        set(value) = prefs.edit().putBoolean(KEY_V534SAMPLEAUTOCOLLECT534, value).apply()
+
+    var v534saveAutoBackup534: Boolean
+        get() = prefs.getBoolean(KEY_V534SAVEAUTOBACKUP534, false)
+        set(value) = prefs.edit().putBoolean(KEY_V534SAVEAUTOBACKUP534, value).apply()
+
+    var v534scaleAutoFit534: Boolean
+        get() = prefs.getBoolean(KEY_V534SCALEAUTOFIT534, false)
+        set(value) = prefs.edit().putBoolean(KEY_V534SCALEAUTOFIT534, value).apply()
+
+    var v534scanAutoStart534: Boolean
+        get() = prefs.getBoolean(KEY_V534SCANAUTOSTART534, false)
+        set(value) = prefs.edit().putBoolean(KEY_V534SCANAUTOSTART534, value).apply()
+
+    var v534scheduleAutoRun534: Boolean
+        get() = prefs.getBoolean(KEY_V534SCHEDULEAUTORUN534, false)
+        set(value) = prefs.edit().putBoolean(KEY_V534SCHEDULEAUTORUN534, value).apply()
+
+    var v534scoreAutoCalculate534: Boolean
+        get() = prefs.getBoolean(KEY_V534SCOREAUTOCALCULATE534, false)
+        set(value) = prefs.edit().putBoolean(KEY_V534SCOREAUTOCALCULATE534, value).apply()
+
+    var v534scratchAutoRepair534: Boolean
+        get() = prefs.getBoolean(KEY_V534SCRATCHAUTOREPAIR534, false)
+        set(value) = prefs.edit().putBoolean(KEY_V534SCRATCHAUTOREPAIR534, value).apply()
+
+    var v534scriptAutoExecute534: Boolean
+        get() = prefs.getBoolean(KEY_V534SCRIPTAUTOEXECUTE534, false)
+        set(value) = prefs.edit().putBoolean(KEY_V534SCRIPTAUTOEXECUTE534, value).apply()
+
+    var v534scrollAutoSmooth534: Boolean
+        get() = prefs.getBoolean(KEY_V534SCROLLAUTOSMOOTH534, false)
+        set(value) = prefs.edit().putBoolean(KEY_V534SCROLLAUTOSMOOTH534, value).apply()
+
+    var v534sealAutoEncrypt534: Boolean
+        get() = prefs.getBoolean(KEY_V534SEALAUTOENCRYPT534, false)
+        set(value) = prefs.edit().putBoolean(KEY_V534SEALAUTOENCRYPT534, value).apply()
+
+    var v534searchAutoComplete534: Boolean
+        get() = prefs.getBoolean(KEY_V534SEARCHAUTOCOMPLETE534, false)
+        set(value) = prefs.edit().putBoolean(KEY_V534SEARCHAUTOCOMPLETE534, value).apply()
+
+    var v534sectionAutoGroup534: Boolean
+        get() = prefs.getBoolean(KEY_V534SECTIONAUTOGROUP534, false)
+        set(value) = prefs.edit().putBoolean(KEY_V534SECTIONAUTOGROUP534, value).apply()
+
+    var v534seekAutoPrecision534: Boolean
+        get() = prefs.getBoolean(KEY_V534SEEKAUTOPRECISION534, false)
+        set(value) = prefs.edit().putBoolean(KEY_V534SEEKAUTOPRECISION534, value).apply()
+
+    var v534selectAutoMulti534: Boolean
+        get() = prefs.getBoolean(KEY_V534SELECTAUTOMULTI534, false)
+        set(value) = prefs.edit().putBoolean(KEY_V534SELECTAUTOMULTI534, value).apply()
+
+    var v535runInBackground535: Boolean
+        get() = prefs.getBoolean(KEY_V535RUNINBACKGROUND535, false)
+        set(value) = prefs.edit().putBoolean(KEY_V535RUNINBACKGROUND535, value).apply()
+
+    var v535sampleAutoCollect535: Boolean
+        get() = prefs.getBoolean(KEY_V535SAMPLEAUTOCOLLECT535, false)
+        set(value) = prefs.edit().putBoolean(KEY_V535SAMPLEAUTOCOLLECT535, value).apply()
+
+    var v535saveAutoBackup535: Boolean
+        get() = prefs.getBoolean(KEY_V535SAVEAUTOBACKUP535, false)
+        set(value) = prefs.edit().putBoolean(KEY_V535SAVEAUTOBACKUP535, value).apply()
+
+    var v535scaleAutoFit535: Boolean
+        get() = prefs.getBoolean(KEY_V535SCALEAUTOFIT535, false)
+        set(value) = prefs.edit().putBoolean(KEY_V535SCALEAUTOFIT535, value).apply()
+
+    var v535scanAutoStart535: Boolean
+        get() = prefs.getBoolean(KEY_V535SCANAUTOSTART535, false)
+        set(value) = prefs.edit().putBoolean(KEY_V535SCANAUTOSTART535, value).apply()
+
+    var v535scheduleAutoRun535: Boolean
+        get() = prefs.getBoolean(KEY_V535SCHEDULEAUTORUN535, false)
+        set(value) = prefs.edit().putBoolean(KEY_V535SCHEDULEAUTORUN535, value).apply()
+
+    var v535scoreAutoCalculate535: Boolean
+        get() = prefs.getBoolean(KEY_V535SCOREAUTOCALCULATE535, false)
+        set(value) = prefs.edit().putBoolean(KEY_V535SCOREAUTOCALCULATE535, value).apply()
+
+    var v535scratchAutoRepair535: Boolean
+        get() = prefs.getBoolean(KEY_V535SCRATCHAUTOREPAIR535, false)
+        set(value) = prefs.edit().putBoolean(KEY_V535SCRATCHAUTOREPAIR535, value).apply()
+
+    var v535scriptAutoExecute535: Boolean
+        get() = prefs.getBoolean(KEY_V535SCRIPTAUTOEXECUTE535, false)
+        set(value) = prefs.edit().putBoolean(KEY_V535SCRIPTAUTOEXECUTE535, value).apply()
+
+    var v535scrollAutoSmooth535: Boolean
+        get() = prefs.getBoolean(KEY_V535SCROLLAUTOSMOOTH535, false)
+        set(value) = prefs.edit().putBoolean(KEY_V535SCROLLAUTOSMOOTH535, value).apply()
+
+    var v535sealAutoEncrypt535: Boolean
+        get() = prefs.getBoolean(KEY_V535SEALAUTOENCRYPT535, false)
+        set(value) = prefs.edit().putBoolean(KEY_V535SEALAUTOENCRYPT535, value).apply()
+
+    var v535searchAutoComplete535: Boolean
+        get() = prefs.getBoolean(KEY_V535SEARCHAUTOCOMPLETE535, false)
+        set(value) = prefs.edit().putBoolean(KEY_V535SEARCHAUTOCOMPLETE535, value).apply()
+
+    var v535sectionAutoGroup535: Boolean
+        get() = prefs.getBoolean(KEY_V535SECTIONAUTOGROUP535, false)
+        set(value) = prefs.edit().putBoolean(KEY_V535SECTIONAUTOGROUP535, value).apply()
+
+    var v535seekAutoPrecision535: Boolean
+        get() = prefs.getBoolean(KEY_V535SEEKAUTOPRECISION535, false)
+        set(value) = prefs.edit().putBoolean(KEY_V535SEEKAUTOPRECISION535, value).apply()
+
+    var v535selectAutoMulti535: Boolean
+        get() = prefs.getBoolean(KEY_V535SELECTAUTOMULTI535, false)
+        set(value) = prefs.edit().putBoolean(KEY_V535SELECTAUTOMULTI535, value).apply()
+
+    var v536runInBackground536: Boolean
+        get() = prefs.getBoolean(KEY_V536RUNINBACKGROUND536, false)
+        set(value) = prefs.edit().putBoolean(KEY_V536RUNINBACKGROUND536, value).apply()
+
+    var v536sampleAutoCollect536: Boolean
+        get() = prefs.getBoolean(KEY_V536SAMPLEAUTOCOLLECT536, false)
+        set(value) = prefs.edit().putBoolean(KEY_V536SAMPLEAUTOCOLLECT536, value).apply()
+
+    var v536saveAutoBackup536: Boolean
+        get() = prefs.getBoolean(KEY_V536SAVEAUTOBACKUP536, false)
+        set(value) = prefs.edit().putBoolean(KEY_V536SAVEAUTOBACKUP536, value).apply()
+
+    var v536scaleAutoFit536: Boolean
+        get() = prefs.getBoolean(KEY_V536SCALEAUTOFIT536, false)
+        set(value) = prefs.edit().putBoolean(KEY_V536SCALEAUTOFIT536, value).apply()
+
+    var v536scanAutoStart536: Boolean
+        get() = prefs.getBoolean(KEY_V536SCANAUTOSTART536, false)
+        set(value) = prefs.edit().putBoolean(KEY_V536SCANAUTOSTART536, value).apply()
+
+    var v536scheduleAutoRun536: Boolean
+        get() = prefs.getBoolean(KEY_V536SCHEDULEAUTORUN536, false)
+        set(value) = prefs.edit().putBoolean(KEY_V536SCHEDULEAUTORUN536, value).apply()
+
+    var v536scoreAutoCalculate536: Boolean
+        get() = prefs.getBoolean(KEY_V536SCOREAUTOCALCULATE536, false)
+        set(value) = prefs.edit().putBoolean(KEY_V536SCOREAUTOCALCULATE536, value).apply()
+
+    var v536scratchAutoRepair536: Boolean
+        get() = prefs.getBoolean(KEY_V536SCRATCHAUTOREPAIR536, false)
+        set(value) = prefs.edit().putBoolean(KEY_V536SCRATCHAUTOREPAIR536, value).apply()
+
+    var v536scriptAutoExecute536: Boolean
+        get() = prefs.getBoolean(KEY_V536SCRIPTAUTOEXECUTE536, false)
+        set(value) = prefs.edit().putBoolean(KEY_V536SCRIPTAUTOEXECUTE536, value).apply()
+
+    var v536scrollAutoSmooth536: Boolean
+        get() = prefs.getBoolean(KEY_V536SCROLLAUTOSMOOTH536, false)
+        set(value) = prefs.edit().putBoolean(KEY_V536SCROLLAUTOSMOOTH536, value).apply()
+
+    var v536sealAutoEncrypt536: Boolean
+        get() = prefs.getBoolean(KEY_V536SEALAUTOENCRYPT536, false)
+        set(value) = prefs.edit().putBoolean(KEY_V536SEALAUTOENCRYPT536, value).apply()
+
+    var v536searchAutoComplete536: Boolean
+        get() = prefs.getBoolean(KEY_V536SEARCHAUTOCOMPLETE536, false)
+        set(value) = prefs.edit().putBoolean(KEY_V536SEARCHAUTOCOMPLETE536, value).apply()
+
+    var v536sectionAutoGroup536: Boolean
+        get() = prefs.getBoolean(KEY_V536SECTIONAUTOGROUP536, false)
+        set(value) = prefs.edit().putBoolean(KEY_V536SECTIONAUTOGROUP536, value).apply()
+
+    var v536seekAutoPrecision536: Boolean
+        get() = prefs.getBoolean(KEY_V536SEEKAUTOPRECISION536, false)
+        set(value) = prefs.edit().putBoolean(KEY_V536SEEKAUTOPRECISION536, value).apply()
+
+    var v536selectAutoMulti536: Boolean
+        get() = prefs.getBoolean(KEY_V536SELECTAUTOMULTI536, false)
+        set(value) = prefs.edit().putBoolean(KEY_V536SELECTAUTOMULTI536, value).apply()
+
+    var v537runInBackground537: Boolean
+        get() = prefs.getBoolean(KEY_V537RUNINBACKGROUND537, false)
+        set(value) = prefs.edit().putBoolean(KEY_V537RUNINBACKGROUND537, value).apply()
+
+    var v537sampleAutoCollect537: Boolean
+        get() = prefs.getBoolean(KEY_V537SAMPLEAUTOCOLLECT537, false)
+        set(value) = prefs.edit().putBoolean(KEY_V537SAMPLEAUTOCOLLECT537, value).apply()
+
+    var v537saveAutoBackup537: Boolean
+        get() = prefs.getBoolean(KEY_V537SAVEAUTOBACKUP537, false)
+        set(value) = prefs.edit().putBoolean(KEY_V537SAVEAUTOBACKUP537, value).apply()
+
+    var v537scaleAutoFit537: Boolean
+        get() = prefs.getBoolean(KEY_V537SCALEAUTOFIT537, false)
+        set(value) = prefs.edit().putBoolean(KEY_V537SCALEAUTOFIT537, value).apply()
+
+    var v537scanAutoStart537: Boolean
+        get() = prefs.getBoolean(KEY_V537SCANAUTOSTART537, false)
+        set(value) = prefs.edit().putBoolean(KEY_V537SCANAUTOSTART537, value).apply()
+
+    var v537scheduleAutoRun537: Boolean
+        get() = prefs.getBoolean(KEY_V537SCHEDULEAUTORUN537, false)
+        set(value) = prefs.edit().putBoolean(KEY_V537SCHEDULEAUTORUN537, value).apply()
+
+    var v537scoreAutoCalculate537: Boolean
+        get() = prefs.getBoolean(KEY_V537SCOREAUTOCALCULATE537, false)
+        set(value) = prefs.edit().putBoolean(KEY_V537SCOREAUTOCALCULATE537, value).apply()
+
+    var v537scratchAutoRepair537: Boolean
+        get() = prefs.getBoolean(KEY_V537SCRATCHAUTOREPAIR537, false)
+        set(value) = prefs.edit().putBoolean(KEY_V537SCRATCHAUTOREPAIR537, value).apply()
+
+    var v537scriptAutoExecute537: Boolean
+        get() = prefs.getBoolean(KEY_V537SCRIPTAUTOEXECUTE537, false)
+        set(value) = prefs.edit().putBoolean(KEY_V537SCRIPTAUTOEXECUTE537, value).apply()
+
+    var v537scrollAutoSmooth537: Boolean
+        get() = prefs.getBoolean(KEY_V537SCROLLAUTOSMOOTH537, false)
+        set(value) = prefs.edit().putBoolean(KEY_V537SCROLLAUTOSMOOTH537, value).apply()
+
+    var v537sealAutoEncrypt537: Boolean
+        get() = prefs.getBoolean(KEY_V537SEALAUTOENCRYPT537, false)
+        set(value) = prefs.edit().putBoolean(KEY_V537SEALAUTOENCRYPT537, value).apply()
+
+    var v537searchAutoComplete537: Boolean
+        get() = prefs.getBoolean(KEY_V537SEARCHAUTOCOMPLETE537, false)
+        set(value) = prefs.edit().putBoolean(KEY_V537SEARCHAUTOCOMPLETE537, value).apply()
+
+    var v537sectionAutoGroup537: Boolean
+        get() = prefs.getBoolean(KEY_V537SECTIONAUTOGROUP537, false)
+        set(value) = prefs.edit().putBoolean(KEY_V537SECTIONAUTOGROUP537, value).apply()
+
+    var v537seekAutoPrecision537: Boolean
+        get() = prefs.getBoolean(KEY_V537SEEKAUTOPRECISION537, false)
+        set(value) = prefs.edit().putBoolean(KEY_V537SEEKAUTOPRECISION537, value).apply()
+
+    var v537selectAutoMulti537: Boolean
+        get() = prefs.getBoolean(KEY_V537SELECTAUTOMULTI537, false)
+        set(value) = prefs.edit().putBoolean(KEY_V537SELECTAUTOMULTI537, value).apply()
+
+    var v538runInBackground538: Boolean
+        get() = prefs.getBoolean(KEY_V538RUNINBACKGROUND538, false)
+        set(value) = prefs.edit().putBoolean(KEY_V538RUNINBACKGROUND538, value).apply()
+
+    var v538sampleAutoCollect538: Boolean
+        get() = prefs.getBoolean(KEY_V538SAMPLEAUTOCOLLECT538, false)
+        set(value) = prefs.edit().putBoolean(KEY_V538SAMPLEAUTOCOLLECT538, value).apply()
+
+    var v538saveAutoBackup538: Boolean
+        get() = prefs.getBoolean(KEY_V538SAVEAUTOBACKUP538, false)
+        set(value) = prefs.edit().putBoolean(KEY_V538SAVEAUTOBACKUP538, value).apply()
+
+    var v538scaleAutoFit538: Boolean
+        get() = prefs.getBoolean(KEY_V538SCALEAUTOFIT538, false)
+        set(value) = prefs.edit().putBoolean(KEY_V538SCALEAUTOFIT538, value).apply()
+
+    var v538scanAutoStart538: Boolean
+        get() = prefs.getBoolean(KEY_V538SCANAUTOSTART538, false)
+        set(value) = prefs.edit().putBoolean(KEY_V538SCANAUTOSTART538, value).apply()
+
+    var v538scheduleAutoRun538: Boolean
+        get() = prefs.getBoolean(KEY_V538SCHEDULEAUTORUN538, false)
+        set(value) = prefs.edit().putBoolean(KEY_V538SCHEDULEAUTORUN538, value).apply()
+
+    var v538scoreAutoCalculate538: Boolean
+        get() = prefs.getBoolean(KEY_V538SCOREAUTOCALCULATE538, false)
+        set(value) = prefs.edit().putBoolean(KEY_V538SCOREAUTOCALCULATE538, value).apply()
+
+    var v538scratchAutoRepair538: Boolean
+        get() = prefs.getBoolean(KEY_V538SCRATCHAUTOREPAIR538, false)
+        set(value) = prefs.edit().putBoolean(KEY_V538SCRATCHAUTOREPAIR538, value).apply()
+
+    var v538scriptAutoExecute538: Boolean
+        get() = prefs.getBoolean(KEY_V538SCRIPTAUTOEXECUTE538, false)
+        set(value) = prefs.edit().putBoolean(KEY_V538SCRIPTAUTOEXECUTE538, value).apply()
+
+    var v538scrollAutoSmooth538: Boolean
+        get() = prefs.getBoolean(KEY_V538SCROLLAUTOSMOOTH538, false)
+        set(value) = prefs.edit().putBoolean(KEY_V538SCROLLAUTOSMOOTH538, value).apply()
+
+    var v538sealAutoEncrypt538: Boolean
+        get() = prefs.getBoolean(KEY_V538SEALAUTOENCRYPT538, false)
+        set(value) = prefs.edit().putBoolean(KEY_V538SEALAUTOENCRYPT538, value).apply()
+
+    var v538searchAutoComplete538: Boolean
+        get() = prefs.getBoolean(KEY_V538SEARCHAUTOCOMPLETE538, false)
+        set(value) = prefs.edit().putBoolean(KEY_V538SEARCHAUTOCOMPLETE538, value).apply()
+
+    var v538sectionAutoGroup538: Boolean
+        get() = prefs.getBoolean(KEY_V538SECTIONAUTOGROUP538, false)
+        set(value) = prefs.edit().putBoolean(KEY_V538SECTIONAUTOGROUP538, value).apply()
+
+    var v538seekAutoPrecision538: Boolean
+        get() = prefs.getBoolean(KEY_V538SEEKAUTOPRECISION538, false)
+        set(value) = prefs.edit().putBoolean(KEY_V538SEEKAUTOPRECISION538, value).apply()
+
+    var v538selectAutoMulti538: Boolean
+        get() = prefs.getBoolean(KEY_V538SELECTAUTOMULTI538, false)
+        set(value) = prefs.edit().putBoolean(KEY_V538SELECTAUTOMULTI538, value).apply()
+
+    var v539runInBackground539: Boolean
+        get() = prefs.getBoolean(KEY_V539RUNINBACKGROUND539, false)
+        set(value) = prefs.edit().putBoolean(KEY_V539RUNINBACKGROUND539, value).apply()
+
+    var v539sampleAutoCollect539: Boolean
+        get() = prefs.getBoolean(KEY_V539SAMPLEAUTOCOLLECT539, false)
+        set(value) = prefs.edit().putBoolean(KEY_V539SAMPLEAUTOCOLLECT539, value).apply()
+
+    var v539saveAutoBackup539: Boolean
+        get() = prefs.getBoolean(KEY_V539SAVEAUTOBACKUP539, false)
+        set(value) = prefs.edit().putBoolean(KEY_V539SAVEAUTOBACKUP539, value).apply()
+
+    var v539scaleAutoFit539: Boolean
+        get() = prefs.getBoolean(KEY_V539SCALEAUTOFIT539, false)
+        set(value) = prefs.edit().putBoolean(KEY_V539SCALEAUTOFIT539, value).apply()
+
+    var v539scanAutoStart539: Boolean
+        get() = prefs.getBoolean(KEY_V539SCANAUTOSTART539, false)
+        set(value) = prefs.edit().putBoolean(KEY_V539SCANAUTOSTART539, value).apply()
+
+    var v539scheduleAutoRun539: Boolean
+        get() = prefs.getBoolean(KEY_V539SCHEDULEAUTORUN539, false)
+        set(value) = prefs.edit().putBoolean(KEY_V539SCHEDULEAUTORUN539, value).apply()
+
+    var v539scoreAutoCalculate539: Boolean
+        get() = prefs.getBoolean(KEY_V539SCOREAUTOCALCULATE539, false)
+        set(value) = prefs.edit().putBoolean(KEY_V539SCOREAUTOCALCULATE539, value).apply()
+
+    var v539scratchAutoRepair539: Boolean
+        get() = prefs.getBoolean(KEY_V539SCRATCHAUTOREPAIR539, false)
+        set(value) = prefs.edit().putBoolean(KEY_V539SCRATCHAUTOREPAIR539, value).apply()
+
+    var v539scriptAutoExecute539: Boolean
+        get() = prefs.getBoolean(KEY_V539SCRIPTAUTOEXECUTE539, false)
+        set(value) = prefs.edit().putBoolean(KEY_V539SCRIPTAUTOEXECUTE539, value).apply()
+
+    var v539scrollAutoSmooth539: Boolean
+        get() = prefs.getBoolean(KEY_V539SCROLLAUTOSMOOTH539, false)
+        set(value) = prefs.edit().putBoolean(KEY_V539SCROLLAUTOSMOOTH539, value).apply()
+
+    var v539sealAutoEncrypt539: Boolean
+        get() = prefs.getBoolean(KEY_V539SEALAUTOENCRYPT539, false)
+        set(value) = prefs.edit().putBoolean(KEY_V539SEALAUTOENCRYPT539, value).apply()
+
+    var v539searchAutoComplete539: Boolean
+        get() = prefs.getBoolean(KEY_V539SEARCHAUTOCOMPLETE539, false)
+        set(value) = prefs.edit().putBoolean(KEY_V539SEARCHAUTOCOMPLETE539, value).apply()
+
+    var v539sectionAutoGroup539: Boolean
+        get() = prefs.getBoolean(KEY_V539SECTIONAUTOGROUP539, false)
+        set(value) = prefs.edit().putBoolean(KEY_V539SECTIONAUTOGROUP539, value).apply()
+
+    var v539seekAutoPrecision539: Boolean
+        get() = prefs.getBoolean(KEY_V539SEEKAUTOPRECISION539, false)
+        set(value) = prefs.edit().putBoolean(KEY_V539SEEKAUTOPRECISION539, value).apply()
+
+    var v539selectAutoMulti539: Boolean
+        get() = prefs.getBoolean(KEY_V539SELECTAUTOMULTI539, false)
+        set(value) = prefs.edit().putBoolean(KEY_V539SELECTAUTOMULTI539, value).apply()
+
+    var v540runInBackground540: Boolean
+        get() = prefs.getBoolean(KEY_V540RUNINBACKGROUND540, false)
+        set(value) = prefs.edit().putBoolean(KEY_V540RUNINBACKGROUND540, value).apply()
+
+    var v540sampleAutoCollect540: Boolean
+        get() = prefs.getBoolean(KEY_V540SAMPLEAUTOCOLLECT540, false)
+        set(value) = prefs.edit().putBoolean(KEY_V540SAMPLEAUTOCOLLECT540, value).apply()
+
+    var v540saveAutoBackup540: Boolean
+        get() = prefs.getBoolean(KEY_V540SAVEAUTOBACKUP540, false)
+        set(value) = prefs.edit().putBoolean(KEY_V540SAVEAUTOBACKUP540, value).apply()
+
+    var v540scaleAutoFit540: Boolean
+        get() = prefs.getBoolean(KEY_V540SCALEAUTOFIT540, false)
+        set(value) = prefs.edit().putBoolean(KEY_V540SCALEAUTOFIT540, value).apply()
+
+    var v540scanAutoStart540: Boolean
+        get() = prefs.getBoolean(KEY_V540SCANAUTOSTART540, false)
+        set(value) = prefs.edit().putBoolean(KEY_V540SCANAUTOSTART540, value).apply()
+
+    var v540scheduleAutoRun540: Boolean
+        get() = prefs.getBoolean(KEY_V540SCHEDULEAUTORUN540, false)
+        set(value) = prefs.edit().putBoolean(KEY_V540SCHEDULEAUTORUN540, value).apply()
+
+    var v540scoreAutoCalculate540: Boolean
+        get() = prefs.getBoolean(KEY_V540SCOREAUTOCALCULATE540, false)
+        set(value) = prefs.edit().putBoolean(KEY_V540SCOREAUTOCALCULATE540, value).apply()
+
+    var v540scratchAutoRepair540: Boolean
+        get() = prefs.getBoolean(KEY_V540SCRATCHAUTOREPAIR540, false)
+        set(value) = prefs.edit().putBoolean(KEY_V540SCRATCHAUTOREPAIR540, value).apply()
+
+    var v540scriptAutoExecute540: Boolean
+        get() = prefs.getBoolean(KEY_V540SCRIPTAUTOEXECUTE540, false)
+        set(value) = prefs.edit().putBoolean(KEY_V540SCRIPTAUTOEXECUTE540, value).apply()
+
+    var v540scrollAutoSmooth540: Boolean
+        get() = prefs.getBoolean(KEY_V540SCROLLAUTOSMOOTH540, false)
+        set(value) = prefs.edit().putBoolean(KEY_V540SCROLLAUTOSMOOTH540, value).apply()
+
+    var v540sealAutoEncrypt540: Boolean
+        get() = prefs.getBoolean(KEY_V540SEALAUTOENCRYPT540, false)
+        set(value) = prefs.edit().putBoolean(KEY_V540SEALAUTOENCRYPT540, value).apply()
+
+    var v540searchAutoComplete540: Boolean
+        get() = prefs.getBoolean(KEY_V540SEARCHAUTOCOMPLETE540, false)
+        set(value) = prefs.edit().putBoolean(KEY_V540SEARCHAUTOCOMPLETE540, value).apply()
+
+    var v540sectionAutoGroup540: Boolean
+        get() = prefs.getBoolean(KEY_V540SECTIONAUTOGROUP540, false)
+        set(value) = prefs.edit().putBoolean(KEY_V540SECTIONAUTOGROUP540, value).apply()
+
+    var v540seekAutoPrecision540: Boolean
+        get() = prefs.getBoolean(KEY_V540SEEKAUTOPRECISION540, false)
+        set(value) = prefs.edit().putBoolean(KEY_V540SEEKAUTOPRECISION540, value).apply()
+
+    var v540selectAutoMulti540: Boolean
+        get() = prefs.getBoolean(KEY_V540SELECTAUTOMULTI540, false)
+        set(value) = prefs.edit().putBoolean(KEY_V540SELECTAUTOMULTI540, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -49180,5 +49780,155 @@ class AppPrefs(context: Context) {
         const val KEY_V530ROUNDCORNERENABLED530 = "v530roundCornerEnabled530" // v530 Round Corner Enabled530
         const val KEY_V530ROWAUTOEXPAND530 = "v530rowAutoExpand530" // v530 Row Auto Expand530
         const val KEY_V530RULEAUTOAPPLY530 = "v530ruleAutoApply530" // v530 Rule Auto Apply530
+        const val KEY_V531RUNINBACKGROUND531 = "v531runInBackground531" // v531 Run In Background531
+        const val KEY_V531SAMPLEAUTOCOLLECT531 = "v531sampleAutoCollect531" // v531 Sample Auto Collect531
+        const val KEY_V531SAVEAUTOBACKUP531 = "v531saveAutoBackup531" // v531 Save Auto Backup531
+        const val KEY_V531SCALEAUTOFIT531 = "v531scaleAutoFit531" // v531 Scale Auto Fit531
+        const val KEY_V531SCANAUTOSTART531 = "v531scanAutoStart531" // v531 Scan Auto Start531
+        const val KEY_V531SCHEDULEAUTORUN531 = "v531scheduleAutoRun531" // v531 Schedule Auto Run531
+        const val KEY_V531SCOREAUTOCALCULATE531 = "v531scoreAutoCalculate531" // v531 Score Auto Calculate531
+        const val KEY_V531SCRATCHAUTOREPAIR531 = "v531scratchAutoRepair531" // v531 Scratch Auto Repair531
+        const val KEY_V531SCRIPTAUTOEXECUTE531 = "v531scriptAutoExecute531" // v531 Script Auto Execute531
+        const val KEY_V531SCROLLAUTOSMOOTH531 = "v531scrollAutoSmooth531" // v531 Scroll Auto Smooth531
+        const val KEY_V531SEALAUTOENCRYPT531 = "v531sealAutoEncrypt531" // v531 Seal Auto Encrypt531
+        const val KEY_V531SEARCHAUTOCOMPLETE531 = "v531searchAutoComplete531" // v531 Search Auto Complete531
+        const val KEY_V531SECTIONAUTOGROUP531 = "v531sectionAutoGroup531" // v531 Section Auto Group531
+        const val KEY_V531SEEKAUTOPRECISION531 = "v531seekAutoPrecision531" // v531 Seek Auto Precision531
+        const val KEY_V531SELECTAUTOMULTI531 = "v531selectAutoMulti531" // v531 Select Auto Multi531
+        const val KEY_V532RUNINBACKGROUND532 = "v532runInBackground532" // v532 Run In Background532
+        const val KEY_V532SAMPLEAUTOCOLLECT532 = "v532sampleAutoCollect532" // v532 Sample Auto Collect532
+        const val KEY_V532SAVEAUTOBACKUP532 = "v532saveAutoBackup532" // v532 Save Auto Backup532
+        const val KEY_V532SCALEAUTOFIT532 = "v532scaleAutoFit532" // v532 Scale Auto Fit532
+        const val KEY_V532SCANAUTOSTART532 = "v532scanAutoStart532" // v532 Scan Auto Start532
+        const val KEY_V532SCHEDULEAUTORUN532 = "v532scheduleAutoRun532" // v532 Schedule Auto Run532
+        const val KEY_V532SCOREAUTOCALCULATE532 = "v532scoreAutoCalculate532" // v532 Score Auto Calculate532
+        const val KEY_V532SCRATCHAUTOREPAIR532 = "v532scratchAutoRepair532" // v532 Scratch Auto Repair532
+        const val KEY_V532SCRIPTAUTOEXECUTE532 = "v532scriptAutoExecute532" // v532 Script Auto Execute532
+        const val KEY_V532SCROLLAUTOSMOOTH532 = "v532scrollAutoSmooth532" // v532 Scroll Auto Smooth532
+        const val KEY_V532SEALAUTOENCRYPT532 = "v532sealAutoEncrypt532" // v532 Seal Auto Encrypt532
+        const val KEY_V532SEARCHAUTOCOMPLETE532 = "v532searchAutoComplete532" // v532 Search Auto Complete532
+        const val KEY_V532SECTIONAUTOGROUP532 = "v532sectionAutoGroup532" // v532 Section Auto Group532
+        const val KEY_V532SEEKAUTOPRECISION532 = "v532seekAutoPrecision532" // v532 Seek Auto Precision532
+        const val KEY_V532SELECTAUTOMULTI532 = "v532selectAutoMulti532" // v532 Select Auto Multi532
+        const val KEY_V533RUNINBACKGROUND533 = "v533runInBackground533" // v533 Run In Background533
+        const val KEY_V533SAMPLEAUTOCOLLECT533 = "v533sampleAutoCollect533" // v533 Sample Auto Collect533
+        const val KEY_V533SAVEAUTOBACKUP533 = "v533saveAutoBackup533" // v533 Save Auto Backup533
+        const val KEY_V533SCALEAUTOFIT533 = "v533scaleAutoFit533" // v533 Scale Auto Fit533
+        const val KEY_V533SCANAUTOSTART533 = "v533scanAutoStart533" // v533 Scan Auto Start533
+        const val KEY_V533SCHEDULEAUTORUN533 = "v533scheduleAutoRun533" // v533 Schedule Auto Run533
+        const val KEY_V533SCOREAUTOCALCULATE533 = "v533scoreAutoCalculate533" // v533 Score Auto Calculate533
+        const val KEY_V533SCRATCHAUTOREPAIR533 = "v533scratchAutoRepair533" // v533 Scratch Auto Repair533
+        const val KEY_V533SCRIPTAUTOEXECUTE533 = "v533scriptAutoExecute533" // v533 Script Auto Execute533
+        const val KEY_V533SCROLLAUTOSMOOTH533 = "v533scrollAutoSmooth533" // v533 Scroll Auto Smooth533
+        const val KEY_V533SEALAUTOENCRYPT533 = "v533sealAutoEncrypt533" // v533 Seal Auto Encrypt533
+        const val KEY_V533SEARCHAUTOCOMPLETE533 = "v533searchAutoComplete533" // v533 Search Auto Complete533
+        const val KEY_V533SECTIONAUTOGROUP533 = "v533sectionAutoGroup533" // v533 Section Auto Group533
+        const val KEY_V533SEEKAUTOPRECISION533 = "v533seekAutoPrecision533" // v533 Seek Auto Precision533
+        const val KEY_V533SELECTAUTOMULTI533 = "v533selectAutoMulti533" // v533 Select Auto Multi533
+        const val KEY_V534RUNINBACKGROUND534 = "v534runInBackground534" // v534 Run In Background534
+        const val KEY_V534SAMPLEAUTOCOLLECT534 = "v534sampleAutoCollect534" // v534 Sample Auto Collect534
+        const val KEY_V534SAVEAUTOBACKUP534 = "v534saveAutoBackup534" // v534 Save Auto Backup534
+        const val KEY_V534SCALEAUTOFIT534 = "v534scaleAutoFit534" // v534 Scale Auto Fit534
+        const val KEY_V534SCANAUTOSTART534 = "v534scanAutoStart534" // v534 Scan Auto Start534
+        const val KEY_V534SCHEDULEAUTORUN534 = "v534scheduleAutoRun534" // v534 Schedule Auto Run534
+        const val KEY_V534SCOREAUTOCALCULATE534 = "v534scoreAutoCalculate534" // v534 Score Auto Calculate534
+        const val KEY_V534SCRATCHAUTOREPAIR534 = "v534scratchAutoRepair534" // v534 Scratch Auto Repair534
+        const val KEY_V534SCRIPTAUTOEXECUTE534 = "v534scriptAutoExecute534" // v534 Script Auto Execute534
+        const val KEY_V534SCROLLAUTOSMOOTH534 = "v534scrollAutoSmooth534" // v534 Scroll Auto Smooth534
+        const val KEY_V534SEALAUTOENCRYPT534 = "v534sealAutoEncrypt534" // v534 Seal Auto Encrypt534
+        const val KEY_V534SEARCHAUTOCOMPLETE534 = "v534searchAutoComplete534" // v534 Search Auto Complete534
+        const val KEY_V534SECTIONAUTOGROUP534 = "v534sectionAutoGroup534" // v534 Section Auto Group534
+        const val KEY_V534SEEKAUTOPRECISION534 = "v534seekAutoPrecision534" // v534 Seek Auto Precision534
+        const val KEY_V534SELECTAUTOMULTI534 = "v534selectAutoMulti534" // v534 Select Auto Multi534
+        const val KEY_V535RUNINBACKGROUND535 = "v535runInBackground535" // v535 Run In Background535
+        const val KEY_V535SAMPLEAUTOCOLLECT535 = "v535sampleAutoCollect535" // v535 Sample Auto Collect535
+        const val KEY_V535SAVEAUTOBACKUP535 = "v535saveAutoBackup535" // v535 Save Auto Backup535
+        const val KEY_V535SCALEAUTOFIT535 = "v535scaleAutoFit535" // v535 Scale Auto Fit535
+        const val KEY_V535SCANAUTOSTART535 = "v535scanAutoStart535" // v535 Scan Auto Start535
+        const val KEY_V535SCHEDULEAUTORUN535 = "v535scheduleAutoRun535" // v535 Schedule Auto Run535
+        const val KEY_V535SCOREAUTOCALCULATE535 = "v535scoreAutoCalculate535" // v535 Score Auto Calculate535
+        const val KEY_V535SCRATCHAUTOREPAIR535 = "v535scratchAutoRepair535" // v535 Scratch Auto Repair535
+        const val KEY_V535SCRIPTAUTOEXECUTE535 = "v535scriptAutoExecute535" // v535 Script Auto Execute535
+        const val KEY_V535SCROLLAUTOSMOOTH535 = "v535scrollAutoSmooth535" // v535 Scroll Auto Smooth535
+        const val KEY_V535SEALAUTOENCRYPT535 = "v535sealAutoEncrypt535" // v535 Seal Auto Encrypt535
+        const val KEY_V535SEARCHAUTOCOMPLETE535 = "v535searchAutoComplete535" // v535 Search Auto Complete535
+        const val KEY_V535SECTIONAUTOGROUP535 = "v535sectionAutoGroup535" // v535 Section Auto Group535
+        const val KEY_V535SEEKAUTOPRECISION535 = "v535seekAutoPrecision535" // v535 Seek Auto Precision535
+        const val KEY_V535SELECTAUTOMULTI535 = "v535selectAutoMulti535" // v535 Select Auto Multi535
+        const val KEY_V536RUNINBACKGROUND536 = "v536runInBackground536" // v536 Run In Background536
+        const val KEY_V536SAMPLEAUTOCOLLECT536 = "v536sampleAutoCollect536" // v536 Sample Auto Collect536
+        const val KEY_V536SAVEAUTOBACKUP536 = "v536saveAutoBackup536" // v536 Save Auto Backup536
+        const val KEY_V536SCALEAUTOFIT536 = "v536scaleAutoFit536" // v536 Scale Auto Fit536
+        const val KEY_V536SCANAUTOSTART536 = "v536scanAutoStart536" // v536 Scan Auto Start536
+        const val KEY_V536SCHEDULEAUTORUN536 = "v536scheduleAutoRun536" // v536 Schedule Auto Run536
+        const val KEY_V536SCOREAUTOCALCULATE536 = "v536scoreAutoCalculate536" // v536 Score Auto Calculate536
+        const val KEY_V536SCRATCHAUTOREPAIR536 = "v536scratchAutoRepair536" // v536 Scratch Auto Repair536
+        const val KEY_V536SCRIPTAUTOEXECUTE536 = "v536scriptAutoExecute536" // v536 Script Auto Execute536
+        const val KEY_V536SCROLLAUTOSMOOTH536 = "v536scrollAutoSmooth536" // v536 Scroll Auto Smooth536
+        const val KEY_V536SEALAUTOENCRYPT536 = "v536sealAutoEncrypt536" // v536 Seal Auto Encrypt536
+        const val KEY_V536SEARCHAUTOCOMPLETE536 = "v536searchAutoComplete536" // v536 Search Auto Complete536
+        const val KEY_V536SECTIONAUTOGROUP536 = "v536sectionAutoGroup536" // v536 Section Auto Group536
+        const val KEY_V536SEEKAUTOPRECISION536 = "v536seekAutoPrecision536" // v536 Seek Auto Precision536
+        const val KEY_V536SELECTAUTOMULTI536 = "v536selectAutoMulti536" // v536 Select Auto Multi536
+        const val KEY_V537RUNINBACKGROUND537 = "v537runInBackground537" // v537 Run In Background537
+        const val KEY_V537SAMPLEAUTOCOLLECT537 = "v537sampleAutoCollect537" // v537 Sample Auto Collect537
+        const val KEY_V537SAVEAUTOBACKUP537 = "v537saveAutoBackup537" // v537 Save Auto Backup537
+        const val KEY_V537SCALEAUTOFIT537 = "v537scaleAutoFit537" // v537 Scale Auto Fit537
+        const val KEY_V537SCANAUTOSTART537 = "v537scanAutoStart537" // v537 Scan Auto Start537
+        const val KEY_V537SCHEDULEAUTORUN537 = "v537scheduleAutoRun537" // v537 Schedule Auto Run537
+        const val KEY_V537SCOREAUTOCALCULATE537 = "v537scoreAutoCalculate537" // v537 Score Auto Calculate537
+        const val KEY_V537SCRATCHAUTOREPAIR537 = "v537scratchAutoRepair537" // v537 Scratch Auto Repair537
+        const val KEY_V537SCRIPTAUTOEXECUTE537 = "v537scriptAutoExecute537" // v537 Script Auto Execute537
+        const val KEY_V537SCROLLAUTOSMOOTH537 = "v537scrollAutoSmooth537" // v537 Scroll Auto Smooth537
+        const val KEY_V537SEALAUTOENCRYPT537 = "v537sealAutoEncrypt537" // v537 Seal Auto Encrypt537
+        const val KEY_V537SEARCHAUTOCOMPLETE537 = "v537searchAutoComplete537" // v537 Search Auto Complete537
+        const val KEY_V537SECTIONAUTOGROUP537 = "v537sectionAutoGroup537" // v537 Section Auto Group537
+        const val KEY_V537SEEKAUTOPRECISION537 = "v537seekAutoPrecision537" // v537 Seek Auto Precision537
+        const val KEY_V537SELECTAUTOMULTI537 = "v537selectAutoMulti537" // v537 Select Auto Multi537
+        const val KEY_V538RUNINBACKGROUND538 = "v538runInBackground538" // v538 Run In Background538
+        const val KEY_V538SAMPLEAUTOCOLLECT538 = "v538sampleAutoCollect538" // v538 Sample Auto Collect538
+        const val KEY_V538SAVEAUTOBACKUP538 = "v538saveAutoBackup538" // v538 Save Auto Backup538
+        const val KEY_V538SCALEAUTOFIT538 = "v538scaleAutoFit538" // v538 Scale Auto Fit538
+        const val KEY_V538SCANAUTOSTART538 = "v538scanAutoStart538" // v538 Scan Auto Start538
+        const val KEY_V538SCHEDULEAUTORUN538 = "v538scheduleAutoRun538" // v538 Schedule Auto Run538
+        const val KEY_V538SCOREAUTOCALCULATE538 = "v538scoreAutoCalculate538" // v538 Score Auto Calculate538
+        const val KEY_V538SCRATCHAUTOREPAIR538 = "v538scratchAutoRepair538" // v538 Scratch Auto Repair538
+        const val KEY_V538SCRIPTAUTOEXECUTE538 = "v538scriptAutoExecute538" // v538 Script Auto Execute538
+        const val KEY_V538SCROLLAUTOSMOOTH538 = "v538scrollAutoSmooth538" // v538 Scroll Auto Smooth538
+        const val KEY_V538SEALAUTOENCRYPT538 = "v538sealAutoEncrypt538" // v538 Seal Auto Encrypt538
+        const val KEY_V538SEARCHAUTOCOMPLETE538 = "v538searchAutoComplete538" // v538 Search Auto Complete538
+        const val KEY_V538SECTIONAUTOGROUP538 = "v538sectionAutoGroup538" // v538 Section Auto Group538
+        const val KEY_V538SEEKAUTOPRECISION538 = "v538seekAutoPrecision538" // v538 Seek Auto Precision538
+        const val KEY_V538SELECTAUTOMULTI538 = "v538selectAutoMulti538" // v538 Select Auto Multi538
+        const val KEY_V539RUNINBACKGROUND539 = "v539runInBackground539" // v539 Run In Background539
+        const val KEY_V539SAMPLEAUTOCOLLECT539 = "v539sampleAutoCollect539" // v539 Sample Auto Collect539
+        const val KEY_V539SAVEAUTOBACKUP539 = "v539saveAutoBackup539" // v539 Save Auto Backup539
+        const val KEY_V539SCALEAUTOFIT539 = "v539scaleAutoFit539" // v539 Scale Auto Fit539
+        const val KEY_V539SCANAUTOSTART539 = "v539scanAutoStart539" // v539 Scan Auto Start539
+        const val KEY_V539SCHEDULEAUTORUN539 = "v539scheduleAutoRun539" // v539 Schedule Auto Run539
+        const val KEY_V539SCOREAUTOCALCULATE539 = "v539scoreAutoCalculate539" // v539 Score Auto Calculate539
+        const val KEY_V539SCRATCHAUTOREPAIR539 = "v539scratchAutoRepair539" // v539 Scratch Auto Repair539
+        const val KEY_V539SCRIPTAUTOEXECUTE539 = "v539scriptAutoExecute539" // v539 Script Auto Execute539
+        const val KEY_V539SCROLLAUTOSMOOTH539 = "v539scrollAutoSmooth539" // v539 Scroll Auto Smooth539
+        const val KEY_V539SEALAUTOENCRYPT539 = "v539sealAutoEncrypt539" // v539 Seal Auto Encrypt539
+        const val KEY_V539SEARCHAUTOCOMPLETE539 = "v539searchAutoComplete539" // v539 Search Auto Complete539
+        const val KEY_V539SECTIONAUTOGROUP539 = "v539sectionAutoGroup539" // v539 Section Auto Group539
+        const val KEY_V539SEEKAUTOPRECISION539 = "v539seekAutoPrecision539" // v539 Seek Auto Precision539
+        const val KEY_V539SELECTAUTOMULTI539 = "v539selectAutoMulti539" // v539 Select Auto Multi539
+        const val KEY_V540RUNINBACKGROUND540 = "v540runInBackground540" // v540 Run In Background540
+        const val KEY_V540SAMPLEAUTOCOLLECT540 = "v540sampleAutoCollect540" // v540 Sample Auto Collect540
+        const val KEY_V540SAVEAUTOBACKUP540 = "v540saveAutoBackup540" // v540 Save Auto Backup540
+        const val KEY_V540SCALEAUTOFIT540 = "v540scaleAutoFit540" // v540 Scale Auto Fit540
+        const val KEY_V540SCANAUTOSTART540 = "v540scanAutoStart540" // v540 Scan Auto Start540
+        const val KEY_V540SCHEDULEAUTORUN540 = "v540scheduleAutoRun540" // v540 Schedule Auto Run540
+        const val KEY_V540SCOREAUTOCALCULATE540 = "v540scoreAutoCalculate540" // v540 Score Auto Calculate540
+        const val KEY_V540SCRATCHAUTOREPAIR540 = "v540scratchAutoRepair540" // v540 Scratch Auto Repair540
+        const val KEY_V540SCRIPTAUTOEXECUTE540 = "v540scriptAutoExecute540" // v540 Script Auto Execute540
+        const val KEY_V540SCROLLAUTOSMOOTH540 = "v540scrollAutoSmooth540" // v540 Scroll Auto Smooth540
+        const val KEY_V540SEALAUTOENCRYPT540 = "v540sealAutoEncrypt540" // v540 Seal Auto Encrypt540
+        const val KEY_V540SEARCHAUTOCOMPLETE540 = "v540searchAutoComplete540" // v540 Search Auto Complete540
+        const val KEY_V540SECTIONAUTOGROUP540 = "v540sectionAutoGroup540" // v540 Section Auto Group540
+        const val KEY_V540SEEKAUTOPRECISION540 = "v540seekAutoPrecision540" // v540 Seek Auto Precision540
+        const val KEY_V540SELECTAUTOMULTI540 = "v540selectAutoMulti540" // v540 Select Auto Multi540
     }
 }
