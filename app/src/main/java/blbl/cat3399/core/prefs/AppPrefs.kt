@@ -52848,6 +52848,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V770INFOAUTOPOPUP770, false)
         set(value) = prefs.edit().putBoolean(KEY_V770INFOAUTOPOPUP770, value).apply()
 
+    var v771initAutoLazy771: Boolean
+        get() = prefs.getBoolean(KEY_V771INITAUTOLAZY771, false)
+        set(value) = prefs.edit().putBoolean(KEY_V771INITAUTOLAZY771, value).apply()
+
+    var v771inputAutoValidate771: Boolean
+        get() = prefs.getBoolean(KEY_V771INPUTAUTOVALIDATE771, false)
+        set(value) = prefs.edit().putBoolean(KEY_V771INPUTAUTOVALIDATE771, value).apply()
+
+    var v771insertAutoPosition771: Boolean
+        get() = prefs.getBoolean(KEY_V771INSERTAUTOPOSITION771, false)
+        set(value) = prefs.edit().putBoolean(KEY_V771INSERTAUTOPOSITION771, value).apply()
+
+    var v771installAutoCheck771: Boolean
+        get() = prefs.getBoolean(KEY_V771INSTALLAUTOCHECK771, false)
+        set(value) = prefs.edit().putBoolean(KEY_V771INSTALLAUTOCHECK771, value).apply()
+
+    var v771instanceAutoPool771: Boolean
+        get() = prefs.getBoolean(KEY_V771INSTANCEAUTOPOOL771, false)
+        set(value) = prefs.edit().putBoolean(KEY_V771INSTANCEAUTOPOOL771, value).apply()
+
+    var v771intentAutoRoute771: Boolean
+        get() = prefs.getBoolean(KEY_V771INTENTAUTOROUTE771, false)
+        set(value) = prefs.edit().putBoolean(KEY_V771INTENTAUTOROUTE771, value).apply()
+
+    var v771interactAutoHaptic771: Boolean
+        get() = prefs.getBoolean(KEY_V771INTERACTAUTOHAPTIC771, false)
+        set(value) = prefs.edit().putBoolean(KEY_V771INTERACTAUTOHAPTIC771, value).apply()
+
+    var v771interfaceAutoSwitch771: Int
+        get() = prefs.getInt(KEY_V771INTERFACEAUTOSWITCH771, 0)
+        set(value) = prefs.edit().putInt(KEY_V771INTERFACEAUTOSWITCH771, value).apply()
+
+    var v771internalAutoDebug771: Boolean
+        get() = prefs.getBoolean(KEY_V771INTERNALAUTODEBUG771, false)
+        set(value) = prefs.edit().putBoolean(KEY_V771INTERNALAUTODEBUG771, value).apply()
+
+    var v771intervalAutoThrottle771: Boolean
+        get() = prefs.getBoolean(KEY_V771INTERVALAUTOTHROTTLE771, false)
+        set(value) = prefs.edit().putBoolean(KEY_V771INTERVALAUTOTHROTTLE771, value).apply()
+
+    var v771invokeAutoReflect771: Boolean
+        get() = prefs.getBoolean(KEY_V771INVOKEAUTOREFLECT771, false)
+        set(value) = prefs.edit().putBoolean(KEY_V771INVOKEAUTOREFLECT771, value).apply()
+
+    var v771itemAutoRecycle771: Boolean
+        get() = prefs.getBoolean(KEY_V771ITEMAUTORECYCLE771, false)
+        set(value) = prefs.edit().putBoolean(KEY_V771ITEMAUTORECYCLE771, value).apply()
+
+    var v771iterateAutoPaginate771: Boolean
+        get() = prefs.getBoolean(KEY_V771ITERATEAUTOPAGINATE771, false)
+        set(value) = prefs.edit().putBoolean(KEY_V771ITERATEAUTOPAGINATE771, value).apply()
+
+    var v771joinAutoMerge771: Boolean
+        get() = prefs.getBoolean(KEY_V771JOINAUTOMERGE771, false)
+        set(value) = prefs.edit().putBoolean(KEY_V771JOINAUTOMERGE771, value).apply()
+
+    var v771jsonAutoPretty771: Boolean
+        get() = prefs.getBoolean(KEY_V771JSONAUTOPRETTY771, false)
+        set(value) = prefs.edit().putBoolean(KEY_V771JSONAUTOPRETTY771, value).apply()
+
+    var v772initAutoLazy772: Boolean
+        get() = prefs.getBoolean(KEY_V772INITAUTOLAZY772, false)
+        set(value) = prefs.edit().putBoolean(KEY_V772INITAUTOLAZY772, value).apply()
+
+    var v772inputAutoValidate772: Boolean
+        get() = prefs.getBoolean(KEY_V772INPUTAUTOVALIDATE772, false)
+        set(value) = prefs.edit().putBoolean(KEY_V772INPUTAUTOVALIDATE772, value).apply()
+
+    var v772insertAutoPosition772: Boolean
+        get() = prefs.getBoolean(KEY_V772INSERTAUTOPOSITION772, false)
+        set(value) = prefs.edit().putBoolean(KEY_V772INSERTAUTOPOSITION772, value).apply()
+
+    var v772installAutoCheck772: Boolean
+        get() = prefs.getBoolean(KEY_V772INSTALLAUTOCHECK772, false)
+        set(value) = prefs.edit().putBoolean(KEY_V772INSTALLAUTOCHECK772, value).apply()
+
+    var v772instanceAutoPool772: Boolean
+        get() = prefs.getBoolean(KEY_V772INSTANCEAUTOPOOL772, false)
+        set(value) = prefs.edit().putBoolean(KEY_V772INSTANCEAUTOPOOL772, value).apply()
+
+    var v772intentAutoRoute772: Boolean
+        get() = prefs.getBoolean(KEY_V772INTENTAUTOROUTE772, false)
+        set(value) = prefs.edit().putBoolean(KEY_V772INTENTAUTOROUTE772, value).apply()
+
+    var v772interactAutoHaptic772: Boolean
+        get() = prefs.getBoolean(KEY_V772INTERACTAUTOHAPTIC772, false)
+        set(value) = prefs.edit().putBoolean(KEY_V772INTERACTAUTOHAPTIC772, value).apply()
+
+    var v772interfaceAutoSwitch772: Int
+        get() = prefs.getInt(KEY_V772INTERFACEAUTOSWITCH772, 0)
+        set(value) = prefs.edit().putInt(KEY_V772INTERFACEAUTOSWITCH772, value).apply()
+
+    var v772internalAutoDebug772: Boolean
+        get() = prefs.getBoolean(KEY_V772INTERNALAUTODEBUG772, false)
+        set(value) = prefs.edit().putBoolean(KEY_V772INTERNALAUTODEBUG772, value).apply()
+
+    var v772intervalAutoThrottle772: Boolean
+        get() = prefs.getBoolean(KEY_V772INTERVALAUTOTHROTTLE772, false)
+        set(value) = prefs.edit().putBoolean(KEY_V772INTERVALAUTOTHROTTLE772, value).apply()
+
+    var v772invokeAutoReflect772: Boolean
+        get() = prefs.getBoolean(KEY_V772INVOKEAUTOREFLECT772, false)
+        set(value) = prefs.edit().putBoolean(KEY_V772INVOKEAUTOREFLECT772, value).apply()
+
+    var v772itemAutoRecycle772: Boolean
+        get() = prefs.getBoolean(KEY_V772ITEMAUTORECYCLE772, false)
+        set(value) = prefs.edit().putBoolean(KEY_V772ITEMAUTORECYCLE772, value).apply()
+
+    var v772iterateAutoPaginate772: Boolean
+        get() = prefs.getBoolean(KEY_V772ITERATEAUTOPAGINATE772, false)
+        set(value) = prefs.edit().putBoolean(KEY_V772ITERATEAUTOPAGINATE772, value).apply()
+
+    var v772joinAutoMerge772: Boolean
+        get() = prefs.getBoolean(KEY_V772JOINAUTOMERGE772, false)
+        set(value) = prefs.edit().putBoolean(KEY_V772JOINAUTOMERGE772, value).apply()
+
+    var v772jsonAutoPretty772: Boolean
+        get() = prefs.getBoolean(KEY_V772JSONAUTOPRETTY772, false)
+        set(value) = prefs.edit().putBoolean(KEY_V772JSONAUTOPRETTY772, value).apply()
+
+    var v773initAutoLazy773: Boolean
+        get() = prefs.getBoolean(KEY_V773INITAUTOLAZY773, false)
+        set(value) = prefs.edit().putBoolean(KEY_V773INITAUTOLAZY773, value).apply()
+
+    var v773inputAutoValidate773: Boolean
+        get() = prefs.getBoolean(KEY_V773INPUTAUTOVALIDATE773, false)
+        set(value) = prefs.edit().putBoolean(KEY_V773INPUTAUTOVALIDATE773, value).apply()
+
+    var v773insertAutoPosition773: Boolean
+        get() = prefs.getBoolean(KEY_V773INSERTAUTOPOSITION773, false)
+        set(value) = prefs.edit().putBoolean(KEY_V773INSERTAUTOPOSITION773, value).apply()
+
+    var v773installAutoCheck773: Boolean
+        get() = prefs.getBoolean(KEY_V773INSTALLAUTOCHECK773, false)
+        set(value) = prefs.edit().putBoolean(KEY_V773INSTALLAUTOCHECK773, value).apply()
+
+    var v773instanceAutoPool773: Boolean
+        get() = prefs.getBoolean(KEY_V773INSTANCEAUTOPOOL773, false)
+        set(value) = prefs.edit().putBoolean(KEY_V773INSTANCEAUTOPOOL773, value).apply()
+
+    var v773intentAutoRoute773: Boolean
+        get() = prefs.getBoolean(KEY_V773INTENTAUTOROUTE773, false)
+        set(value) = prefs.edit().putBoolean(KEY_V773INTENTAUTOROUTE773, value).apply()
+
+    var v773interactAutoHaptic773: Boolean
+        get() = prefs.getBoolean(KEY_V773INTERACTAUTOHAPTIC773, false)
+        set(value) = prefs.edit().putBoolean(KEY_V773INTERACTAUTOHAPTIC773, value).apply()
+
+    var v773interfaceAutoSwitch773: Int
+        get() = prefs.getInt(KEY_V773INTERFACEAUTOSWITCH773, 0)
+        set(value) = prefs.edit().putInt(KEY_V773INTERFACEAUTOSWITCH773, value).apply()
+
+    var v773internalAutoDebug773: Boolean
+        get() = prefs.getBoolean(KEY_V773INTERNALAUTODEBUG773, false)
+        set(value) = prefs.edit().putBoolean(KEY_V773INTERNALAUTODEBUG773, value).apply()
+
+    var v773intervalAutoThrottle773: Boolean
+        get() = prefs.getBoolean(KEY_V773INTERVALAUTOTHROTTLE773, false)
+        set(value) = prefs.edit().putBoolean(KEY_V773INTERVALAUTOTHROTTLE773, value).apply()
+
+    var v773invokeAutoReflect773: Boolean
+        get() = prefs.getBoolean(KEY_V773INVOKEAUTOREFLECT773, false)
+        set(value) = prefs.edit().putBoolean(KEY_V773INVOKEAUTOREFLECT773, value).apply()
+
+    var v773itemAutoRecycle773: Boolean
+        get() = prefs.getBoolean(KEY_V773ITEMAUTORECYCLE773, false)
+        set(value) = prefs.edit().putBoolean(KEY_V773ITEMAUTORECYCLE773, value).apply()
+
+    var v773iterateAutoPaginate773: Boolean
+        get() = prefs.getBoolean(KEY_V773ITERATEAUTOPAGINATE773, false)
+        set(value) = prefs.edit().putBoolean(KEY_V773ITERATEAUTOPAGINATE773, value).apply()
+
+    var v773joinAutoMerge773: Boolean
+        get() = prefs.getBoolean(KEY_V773JOINAUTOMERGE773, false)
+        set(value) = prefs.edit().putBoolean(KEY_V773JOINAUTOMERGE773, value).apply()
+
+    var v773jsonAutoPretty773: Boolean
+        get() = prefs.getBoolean(KEY_V773JSONAUTOPRETTY773, false)
+        set(value) = prefs.edit().putBoolean(KEY_V773JSONAUTOPRETTY773, value).apply()
+
+    var v774initAutoLazy774: Boolean
+        get() = prefs.getBoolean(KEY_V774INITAUTOLAZY774, false)
+        set(value) = prefs.edit().putBoolean(KEY_V774INITAUTOLAZY774, value).apply()
+
+    var v774inputAutoValidate774: Boolean
+        get() = prefs.getBoolean(KEY_V774INPUTAUTOVALIDATE774, false)
+        set(value) = prefs.edit().putBoolean(KEY_V774INPUTAUTOVALIDATE774, value).apply()
+
+    var v774insertAutoPosition774: Boolean
+        get() = prefs.getBoolean(KEY_V774INSERTAUTOPOSITION774, false)
+        set(value) = prefs.edit().putBoolean(KEY_V774INSERTAUTOPOSITION774, value).apply()
+
+    var v774installAutoCheck774: Boolean
+        get() = prefs.getBoolean(KEY_V774INSTALLAUTOCHECK774, false)
+        set(value) = prefs.edit().putBoolean(KEY_V774INSTALLAUTOCHECK774, value).apply()
+
+    var v774instanceAutoPool774: Boolean
+        get() = prefs.getBoolean(KEY_V774INSTANCEAUTOPOOL774, false)
+        set(value) = prefs.edit().putBoolean(KEY_V774INSTANCEAUTOPOOL774, value).apply()
+
+    var v774intentAutoRoute774: Boolean
+        get() = prefs.getBoolean(KEY_V774INTENTAUTOROUTE774, false)
+        set(value) = prefs.edit().putBoolean(KEY_V774INTENTAUTOROUTE774, value).apply()
+
+    var v774interactAutoHaptic774: Boolean
+        get() = prefs.getBoolean(KEY_V774INTERACTAUTOHAPTIC774, false)
+        set(value) = prefs.edit().putBoolean(KEY_V774INTERACTAUTOHAPTIC774, value).apply()
+
+    var v774interfaceAutoSwitch774: Int
+        get() = prefs.getInt(KEY_V774INTERFACEAUTOSWITCH774, 0)
+        set(value) = prefs.edit().putInt(KEY_V774INTERFACEAUTOSWITCH774, value).apply()
+
+    var v774internalAutoDebug774: Boolean
+        get() = prefs.getBoolean(KEY_V774INTERNALAUTODEBUG774, false)
+        set(value) = prefs.edit().putBoolean(KEY_V774INTERNALAUTODEBUG774, value).apply()
+
+    var v774intervalAutoThrottle774: Boolean
+        get() = prefs.getBoolean(KEY_V774INTERVALAUTOTHROTTLE774, false)
+        set(value) = prefs.edit().putBoolean(KEY_V774INTERVALAUTOTHROTTLE774, value).apply()
+
+    var v774invokeAutoReflect774: Boolean
+        get() = prefs.getBoolean(KEY_V774INVOKEAUTOREFLECT774, false)
+        set(value) = prefs.edit().putBoolean(KEY_V774INVOKEAUTOREFLECT774, value).apply()
+
+    var v774itemAutoRecycle774: Boolean
+        get() = prefs.getBoolean(KEY_V774ITEMAUTORECYCLE774, false)
+        set(value) = prefs.edit().putBoolean(KEY_V774ITEMAUTORECYCLE774, value).apply()
+
+    var v774iterateAutoPaginate774: Boolean
+        get() = prefs.getBoolean(KEY_V774ITERATEAUTOPAGINATE774, false)
+        set(value) = prefs.edit().putBoolean(KEY_V774ITERATEAUTOPAGINATE774, value).apply()
+
+    var v774joinAutoMerge774: Boolean
+        get() = prefs.getBoolean(KEY_V774JOINAUTOMERGE774, false)
+        set(value) = prefs.edit().putBoolean(KEY_V774JOINAUTOMERGE774, value).apply()
+
+    var v774jsonAutoPretty774: Boolean
+        get() = prefs.getBoolean(KEY_V774JSONAUTOPRETTY774, false)
+        set(value) = prefs.edit().putBoolean(KEY_V774JSONAUTOPRETTY774, value).apply()
+
+    var v775initAutoLazy775: Boolean
+        get() = prefs.getBoolean(KEY_V775INITAUTOLAZY775, false)
+        set(value) = prefs.edit().putBoolean(KEY_V775INITAUTOLAZY775, value).apply()
+
+    var v775inputAutoValidate775: Boolean
+        get() = prefs.getBoolean(KEY_V775INPUTAUTOVALIDATE775, false)
+        set(value) = prefs.edit().putBoolean(KEY_V775INPUTAUTOVALIDATE775, value).apply()
+
+    var v775insertAutoPosition775: Boolean
+        get() = prefs.getBoolean(KEY_V775INSERTAUTOPOSITION775, false)
+        set(value) = prefs.edit().putBoolean(KEY_V775INSERTAUTOPOSITION775, value).apply()
+
+    var v775installAutoCheck775: Boolean
+        get() = prefs.getBoolean(KEY_V775INSTALLAUTOCHECK775, false)
+        set(value) = prefs.edit().putBoolean(KEY_V775INSTALLAUTOCHECK775, value).apply()
+
+    var v775instanceAutoPool775: Boolean
+        get() = prefs.getBoolean(KEY_V775INSTANCEAUTOPOOL775, false)
+        set(value) = prefs.edit().putBoolean(KEY_V775INSTANCEAUTOPOOL775, value).apply()
+
+    var v775intentAutoRoute775: Boolean
+        get() = prefs.getBoolean(KEY_V775INTENTAUTOROUTE775, false)
+        set(value) = prefs.edit().putBoolean(KEY_V775INTENTAUTOROUTE775, value).apply()
+
+    var v775interactAutoHaptic775: Boolean
+        get() = prefs.getBoolean(KEY_V775INTERACTAUTOHAPTIC775, false)
+        set(value) = prefs.edit().putBoolean(KEY_V775INTERACTAUTOHAPTIC775, value).apply()
+
+    var v775interfaceAutoSwitch775: Int
+        get() = prefs.getInt(KEY_V775INTERFACEAUTOSWITCH775, 0)
+        set(value) = prefs.edit().putInt(KEY_V775INTERFACEAUTOSWITCH775, value).apply()
+
+    var v775internalAutoDebug775: Boolean
+        get() = prefs.getBoolean(KEY_V775INTERNALAUTODEBUG775, false)
+        set(value) = prefs.edit().putBoolean(KEY_V775INTERNALAUTODEBUG775, value).apply()
+
+    var v775intervalAutoThrottle775: Boolean
+        get() = prefs.getBoolean(KEY_V775INTERVALAUTOTHROTTLE775, false)
+        set(value) = prefs.edit().putBoolean(KEY_V775INTERVALAUTOTHROTTLE775, value).apply()
+
+    var v775invokeAutoReflect775: Boolean
+        get() = prefs.getBoolean(KEY_V775INVOKEAUTOREFLECT775, false)
+        set(value) = prefs.edit().putBoolean(KEY_V775INVOKEAUTOREFLECT775, value).apply()
+
+    var v775itemAutoRecycle775: Boolean
+        get() = prefs.getBoolean(KEY_V775ITEMAUTORECYCLE775, false)
+        set(value) = prefs.edit().putBoolean(KEY_V775ITEMAUTORECYCLE775, value).apply()
+
+    var v775iterateAutoPaginate775: Boolean
+        get() = prefs.getBoolean(KEY_V775ITERATEAUTOPAGINATE775, false)
+        set(value) = prefs.edit().putBoolean(KEY_V775ITERATEAUTOPAGINATE775, value).apply()
+
+    var v775joinAutoMerge775: Boolean
+        get() = prefs.getBoolean(KEY_V775JOINAUTOMERGE775, false)
+        set(value) = prefs.edit().putBoolean(KEY_V775JOINAUTOMERGE775, value).apply()
+
+    var v775jsonAutoPretty775: Boolean
+        get() = prefs.getBoolean(KEY_V775JSONAUTOPRETTY775, false)
+        set(value) = prefs.edit().putBoolean(KEY_V775JSONAUTOPRETTY775, value).apply()
+
+    var v776initAutoLazy776: Boolean
+        get() = prefs.getBoolean(KEY_V776INITAUTOLAZY776, false)
+        set(value) = prefs.edit().putBoolean(KEY_V776INITAUTOLAZY776, value).apply()
+
+    var v776inputAutoValidate776: Boolean
+        get() = prefs.getBoolean(KEY_V776INPUTAUTOVALIDATE776, false)
+        set(value) = prefs.edit().putBoolean(KEY_V776INPUTAUTOVALIDATE776, value).apply()
+
+    var v776insertAutoPosition776: Boolean
+        get() = prefs.getBoolean(KEY_V776INSERTAUTOPOSITION776, false)
+        set(value) = prefs.edit().putBoolean(KEY_V776INSERTAUTOPOSITION776, value).apply()
+
+    var v776installAutoCheck776: Boolean
+        get() = prefs.getBoolean(KEY_V776INSTALLAUTOCHECK776, false)
+        set(value) = prefs.edit().putBoolean(KEY_V776INSTALLAUTOCHECK776, value).apply()
+
+    var v776instanceAutoPool776: Boolean
+        get() = prefs.getBoolean(KEY_V776INSTANCEAUTOPOOL776, false)
+        set(value) = prefs.edit().putBoolean(KEY_V776INSTANCEAUTOPOOL776, value).apply()
+
+    var v776intentAutoRoute776: Boolean
+        get() = prefs.getBoolean(KEY_V776INTENTAUTOROUTE776, false)
+        set(value) = prefs.edit().putBoolean(KEY_V776INTENTAUTOROUTE776, value).apply()
+
+    var v776interactAutoHaptic776: Boolean
+        get() = prefs.getBoolean(KEY_V776INTERACTAUTOHAPTIC776, false)
+        set(value) = prefs.edit().putBoolean(KEY_V776INTERACTAUTOHAPTIC776, value).apply()
+
+    var v776interfaceAutoSwitch776: Int
+        get() = prefs.getInt(KEY_V776INTERFACEAUTOSWITCH776, 0)
+        set(value) = prefs.edit().putInt(KEY_V776INTERFACEAUTOSWITCH776, value).apply()
+
+    var v776internalAutoDebug776: Boolean
+        get() = prefs.getBoolean(KEY_V776INTERNALAUTODEBUG776, false)
+        set(value) = prefs.edit().putBoolean(KEY_V776INTERNALAUTODEBUG776, value).apply()
+
+    var v776intervalAutoThrottle776: Boolean
+        get() = prefs.getBoolean(KEY_V776INTERVALAUTOTHROTTLE776, false)
+        set(value) = prefs.edit().putBoolean(KEY_V776INTERVALAUTOTHROTTLE776, value).apply()
+
+    var v776invokeAutoReflect776: Boolean
+        get() = prefs.getBoolean(KEY_V776INVOKEAUTOREFLECT776, false)
+        set(value) = prefs.edit().putBoolean(KEY_V776INVOKEAUTOREFLECT776, value).apply()
+
+    var v776itemAutoRecycle776: Boolean
+        get() = prefs.getBoolean(KEY_V776ITEMAUTORECYCLE776, false)
+        set(value) = prefs.edit().putBoolean(KEY_V776ITEMAUTORECYCLE776, value).apply()
+
+    var v776iterateAutoPaginate776: Boolean
+        get() = prefs.getBoolean(KEY_V776ITERATEAUTOPAGINATE776, false)
+        set(value) = prefs.edit().putBoolean(KEY_V776ITERATEAUTOPAGINATE776, value).apply()
+
+    var v776joinAutoMerge776: Boolean
+        get() = prefs.getBoolean(KEY_V776JOINAUTOMERGE776, false)
+        set(value) = prefs.edit().putBoolean(KEY_V776JOINAUTOMERGE776, value).apply()
+
+    var v776jsonAutoPretty776: Boolean
+        get() = prefs.getBoolean(KEY_V776JSONAUTOPRETTY776, false)
+        set(value) = prefs.edit().putBoolean(KEY_V776JSONAUTOPRETTY776, value).apply()
+
+    var v777initAutoLazy777: Boolean
+        get() = prefs.getBoolean(KEY_V777INITAUTOLAZY777, false)
+        set(value) = prefs.edit().putBoolean(KEY_V777INITAUTOLAZY777, value).apply()
+
+    var v777inputAutoValidate777: Boolean
+        get() = prefs.getBoolean(KEY_V777INPUTAUTOVALIDATE777, false)
+        set(value) = prefs.edit().putBoolean(KEY_V777INPUTAUTOVALIDATE777, value).apply()
+
+    var v777insertAutoPosition777: Boolean
+        get() = prefs.getBoolean(KEY_V777INSERTAUTOPOSITION777, false)
+        set(value) = prefs.edit().putBoolean(KEY_V777INSERTAUTOPOSITION777, value).apply()
+
+    var v777installAutoCheck777: Boolean
+        get() = prefs.getBoolean(KEY_V777INSTALLAUTOCHECK777, false)
+        set(value) = prefs.edit().putBoolean(KEY_V777INSTALLAUTOCHECK777, value).apply()
+
+    var v777instanceAutoPool777: Boolean
+        get() = prefs.getBoolean(KEY_V777INSTANCEAUTOPOOL777, false)
+        set(value) = prefs.edit().putBoolean(KEY_V777INSTANCEAUTOPOOL777, value).apply()
+
+    var v777intentAutoRoute777: Boolean
+        get() = prefs.getBoolean(KEY_V777INTENTAUTOROUTE777, false)
+        set(value) = prefs.edit().putBoolean(KEY_V777INTENTAUTOROUTE777, value).apply()
+
+    var v777interactAutoHaptic777: Boolean
+        get() = prefs.getBoolean(KEY_V777INTERACTAUTOHAPTIC777, false)
+        set(value) = prefs.edit().putBoolean(KEY_V777INTERACTAUTOHAPTIC777, value).apply()
+
+    var v777interfaceAutoSwitch777: Int
+        get() = prefs.getInt(KEY_V777INTERFACEAUTOSWITCH777, 0)
+        set(value) = prefs.edit().putInt(KEY_V777INTERFACEAUTOSWITCH777, value).apply()
+
+    var v777internalAutoDebug777: Boolean
+        get() = prefs.getBoolean(KEY_V777INTERNALAUTODEBUG777, false)
+        set(value) = prefs.edit().putBoolean(KEY_V777INTERNALAUTODEBUG777, value).apply()
+
+    var v777intervalAutoThrottle777: Boolean
+        get() = prefs.getBoolean(KEY_V777INTERVALAUTOTHROTTLE777, false)
+        set(value) = prefs.edit().putBoolean(KEY_V777INTERVALAUTOTHROTTLE777, value).apply()
+
+    var v777invokeAutoReflect777: Boolean
+        get() = prefs.getBoolean(KEY_V777INVOKEAUTOREFLECT777, false)
+        set(value) = prefs.edit().putBoolean(KEY_V777INVOKEAUTOREFLECT777, value).apply()
+
+    var v777itemAutoRecycle777: Boolean
+        get() = prefs.getBoolean(KEY_V777ITEMAUTORECYCLE777, false)
+        set(value) = prefs.edit().putBoolean(KEY_V777ITEMAUTORECYCLE777, value).apply()
+
+    var v777iterateAutoPaginate777: Boolean
+        get() = prefs.getBoolean(KEY_V777ITERATEAUTOPAGINATE777, false)
+        set(value) = prefs.edit().putBoolean(KEY_V777ITERATEAUTOPAGINATE777, value).apply()
+
+    var v777joinAutoMerge777: Boolean
+        get() = prefs.getBoolean(KEY_V777JOINAUTOMERGE777, false)
+        set(value) = prefs.edit().putBoolean(KEY_V777JOINAUTOMERGE777, value).apply()
+
+    var v777jsonAutoPretty777: Boolean
+        get() = prefs.getBoolean(KEY_V777JSONAUTOPRETTY777, false)
+        set(value) = prefs.edit().putBoolean(KEY_V777JSONAUTOPRETTY777, value).apply()
+
+    var v778initAutoLazy778: Boolean
+        get() = prefs.getBoolean(KEY_V778INITAUTOLAZY778, false)
+        set(value) = prefs.edit().putBoolean(KEY_V778INITAUTOLAZY778, value).apply()
+
+    var v778inputAutoValidate778: Boolean
+        get() = prefs.getBoolean(KEY_V778INPUTAUTOVALIDATE778, false)
+        set(value) = prefs.edit().putBoolean(KEY_V778INPUTAUTOVALIDATE778, value).apply()
+
+    var v778insertAutoPosition778: Boolean
+        get() = prefs.getBoolean(KEY_V778INSERTAUTOPOSITION778, false)
+        set(value) = prefs.edit().putBoolean(KEY_V778INSERTAUTOPOSITION778, value).apply()
+
+    var v778installAutoCheck778: Boolean
+        get() = prefs.getBoolean(KEY_V778INSTALLAUTOCHECK778, false)
+        set(value) = prefs.edit().putBoolean(KEY_V778INSTALLAUTOCHECK778, value).apply()
+
+    var v778instanceAutoPool778: Boolean
+        get() = prefs.getBoolean(KEY_V778INSTANCEAUTOPOOL778, false)
+        set(value) = prefs.edit().putBoolean(KEY_V778INSTANCEAUTOPOOL778, value).apply()
+
+    var v778intentAutoRoute778: Boolean
+        get() = prefs.getBoolean(KEY_V778INTENTAUTOROUTE778, false)
+        set(value) = prefs.edit().putBoolean(KEY_V778INTENTAUTOROUTE778, value).apply()
+
+    var v778interactAutoHaptic778: Boolean
+        get() = prefs.getBoolean(KEY_V778INTERACTAUTOHAPTIC778, false)
+        set(value) = prefs.edit().putBoolean(KEY_V778INTERACTAUTOHAPTIC778, value).apply()
+
+    var v778interfaceAutoSwitch778: Int
+        get() = prefs.getInt(KEY_V778INTERFACEAUTOSWITCH778, 0)
+        set(value) = prefs.edit().putInt(KEY_V778INTERFACEAUTOSWITCH778, value).apply()
+
+    var v778internalAutoDebug778: Boolean
+        get() = prefs.getBoolean(KEY_V778INTERNALAUTODEBUG778, false)
+        set(value) = prefs.edit().putBoolean(KEY_V778INTERNALAUTODEBUG778, value).apply()
+
+    var v778intervalAutoThrottle778: Boolean
+        get() = prefs.getBoolean(KEY_V778INTERVALAUTOTHROTTLE778, false)
+        set(value) = prefs.edit().putBoolean(KEY_V778INTERVALAUTOTHROTTLE778, value).apply()
+
+    var v778invokeAutoReflect778: Boolean
+        get() = prefs.getBoolean(KEY_V778INVOKEAUTOREFLECT778, false)
+        set(value) = prefs.edit().putBoolean(KEY_V778INVOKEAUTOREFLECT778, value).apply()
+
+    var v778itemAutoRecycle778: Boolean
+        get() = prefs.getBoolean(KEY_V778ITEMAUTORECYCLE778, false)
+        set(value) = prefs.edit().putBoolean(KEY_V778ITEMAUTORECYCLE778, value).apply()
+
+    var v778iterateAutoPaginate778: Boolean
+        get() = prefs.getBoolean(KEY_V778ITERATEAUTOPAGINATE778, false)
+        set(value) = prefs.edit().putBoolean(KEY_V778ITERATEAUTOPAGINATE778, value).apply()
+
+    var v778joinAutoMerge778: Boolean
+        get() = prefs.getBoolean(KEY_V778JOINAUTOMERGE778, false)
+        set(value) = prefs.edit().putBoolean(KEY_V778JOINAUTOMERGE778, value).apply()
+
+    var v778jsonAutoPretty778: Boolean
+        get() = prefs.getBoolean(KEY_V778JSONAUTOPRETTY778, false)
+        set(value) = prefs.edit().putBoolean(KEY_V778JSONAUTOPRETTY778, value).apply()
+
+    var v779initAutoLazy779: Boolean
+        get() = prefs.getBoolean(KEY_V779INITAUTOLAZY779, false)
+        set(value) = prefs.edit().putBoolean(KEY_V779INITAUTOLAZY779, value).apply()
+
+    var v779inputAutoValidate779: Boolean
+        get() = prefs.getBoolean(KEY_V779INPUTAUTOVALIDATE779, false)
+        set(value) = prefs.edit().putBoolean(KEY_V779INPUTAUTOVALIDATE779, value).apply()
+
+    var v779insertAutoPosition779: Boolean
+        get() = prefs.getBoolean(KEY_V779INSERTAUTOPOSITION779, false)
+        set(value) = prefs.edit().putBoolean(KEY_V779INSERTAUTOPOSITION779, value).apply()
+
+    var v779installAutoCheck779: Boolean
+        get() = prefs.getBoolean(KEY_V779INSTALLAUTOCHECK779, false)
+        set(value) = prefs.edit().putBoolean(KEY_V779INSTALLAUTOCHECK779, value).apply()
+
+    var v779instanceAutoPool779: Boolean
+        get() = prefs.getBoolean(KEY_V779INSTANCEAUTOPOOL779, false)
+        set(value) = prefs.edit().putBoolean(KEY_V779INSTANCEAUTOPOOL779, value).apply()
+
+    var v779intentAutoRoute779: Boolean
+        get() = prefs.getBoolean(KEY_V779INTENTAUTOROUTE779, false)
+        set(value) = prefs.edit().putBoolean(KEY_V779INTENTAUTOROUTE779, value).apply()
+
+    var v779interactAutoHaptic779: Boolean
+        get() = prefs.getBoolean(KEY_V779INTERACTAUTOHAPTIC779, false)
+        set(value) = prefs.edit().putBoolean(KEY_V779INTERACTAUTOHAPTIC779, value).apply()
+
+    var v779interfaceAutoSwitch779: Int
+        get() = prefs.getInt(KEY_V779INTERFACEAUTOSWITCH779, 0)
+        set(value) = prefs.edit().putInt(KEY_V779INTERFACEAUTOSWITCH779, value).apply()
+
+    var v779internalAutoDebug779: Boolean
+        get() = prefs.getBoolean(KEY_V779INTERNALAUTODEBUG779, false)
+        set(value) = prefs.edit().putBoolean(KEY_V779INTERNALAUTODEBUG779, value).apply()
+
+    var v779intervalAutoThrottle779: Boolean
+        get() = prefs.getBoolean(KEY_V779INTERVALAUTOTHROTTLE779, false)
+        set(value) = prefs.edit().putBoolean(KEY_V779INTERVALAUTOTHROTTLE779, value).apply()
+
+    var v779invokeAutoReflect779: Boolean
+        get() = prefs.getBoolean(KEY_V779INVOKEAUTOREFLECT779, false)
+        set(value) = prefs.edit().putBoolean(KEY_V779INVOKEAUTOREFLECT779, value).apply()
+
+    var v779itemAutoRecycle779: Boolean
+        get() = prefs.getBoolean(KEY_V779ITEMAUTORECYCLE779, false)
+        set(value) = prefs.edit().putBoolean(KEY_V779ITEMAUTORECYCLE779, value).apply()
+
+    var v779iterateAutoPaginate779: Boolean
+        get() = prefs.getBoolean(KEY_V779ITERATEAUTOPAGINATE779, false)
+        set(value) = prefs.edit().putBoolean(KEY_V779ITERATEAUTOPAGINATE779, value).apply()
+
+    var v779joinAutoMerge779: Boolean
+        get() = prefs.getBoolean(KEY_V779JOINAUTOMERGE779, false)
+        set(value) = prefs.edit().putBoolean(KEY_V779JOINAUTOMERGE779, value).apply()
+
+    var v779jsonAutoPretty779: Boolean
+        get() = prefs.getBoolean(KEY_V779JSONAUTOPRETTY779, false)
+        set(value) = prefs.edit().putBoolean(KEY_V779JSONAUTOPRETTY779, value).apply()
+
+    var v780initAutoLazy780: Boolean
+        get() = prefs.getBoolean(KEY_V780INITAUTOLAZY780, false)
+        set(value) = prefs.edit().putBoolean(KEY_V780INITAUTOLAZY780, value).apply()
+
+    var v780inputAutoValidate780: Boolean
+        get() = prefs.getBoolean(KEY_V780INPUTAUTOVALIDATE780, false)
+        set(value) = prefs.edit().putBoolean(KEY_V780INPUTAUTOVALIDATE780, value).apply()
+
+    var v780insertAutoPosition780: Boolean
+        get() = prefs.getBoolean(KEY_V780INSERTAUTOPOSITION780, false)
+        set(value) = prefs.edit().putBoolean(KEY_V780INSERTAUTOPOSITION780, value).apply()
+
+    var v780installAutoCheck780: Boolean
+        get() = prefs.getBoolean(KEY_V780INSTALLAUTOCHECK780, false)
+        set(value) = prefs.edit().putBoolean(KEY_V780INSTALLAUTOCHECK780, value).apply()
+
+    var v780instanceAutoPool780: Boolean
+        get() = prefs.getBoolean(KEY_V780INSTANCEAUTOPOOL780, false)
+        set(value) = prefs.edit().putBoolean(KEY_V780INSTANCEAUTOPOOL780, value).apply()
+
+    var v780intentAutoRoute780: Boolean
+        get() = prefs.getBoolean(KEY_V780INTENTAUTOROUTE780, false)
+        set(value) = prefs.edit().putBoolean(KEY_V780INTENTAUTOROUTE780, value).apply()
+
+    var v780interactAutoHaptic780: Boolean
+        get() = prefs.getBoolean(KEY_V780INTERACTAUTOHAPTIC780, false)
+        set(value) = prefs.edit().putBoolean(KEY_V780INTERACTAUTOHAPTIC780, value).apply()
+
+    var v780interfaceAutoSwitch780: Int
+        get() = prefs.getInt(KEY_V780INTERFACEAUTOSWITCH780, 0)
+        set(value) = prefs.edit().putInt(KEY_V780INTERFACEAUTOSWITCH780, value).apply()
+
+    var v780internalAutoDebug780: Boolean
+        get() = prefs.getBoolean(KEY_V780INTERNALAUTODEBUG780, false)
+        set(value) = prefs.edit().putBoolean(KEY_V780INTERNALAUTODEBUG780, value).apply()
+
+    var v780intervalAutoThrottle780: Boolean
+        get() = prefs.getBoolean(KEY_V780INTERVALAUTOTHROTTLE780, false)
+        set(value) = prefs.edit().putBoolean(KEY_V780INTERVALAUTOTHROTTLE780, value).apply()
+
+    var v780invokeAutoReflect780: Boolean
+        get() = prefs.getBoolean(KEY_V780INVOKEAUTOREFLECT780, false)
+        set(value) = prefs.edit().putBoolean(KEY_V780INVOKEAUTOREFLECT780, value).apply()
+
+    var v780itemAutoRecycle780: Boolean
+        get() = prefs.getBoolean(KEY_V780ITEMAUTORECYCLE780, false)
+        set(value) = prefs.edit().putBoolean(KEY_V780ITEMAUTORECYCLE780, value).apply()
+
+    var v780iterateAutoPaginate780: Boolean
+        get() = prefs.getBoolean(KEY_V780ITERATEAUTOPAGINATE780, false)
+        set(value) = prefs.edit().putBoolean(KEY_V780ITERATEAUTOPAGINATE780, value).apply()
+
+    var v780joinAutoMerge780: Boolean
+        get() = prefs.getBoolean(KEY_V780JOINAUTOMERGE780, false)
+        set(value) = prefs.edit().putBoolean(KEY_V780JOINAUTOMERGE780, value).apply()
+
+    var v780jsonAutoPretty780: Boolean
+        get() = prefs.getBoolean(KEY_V780JSONAUTOPRETTY780, false)
+        set(value) = prefs.edit().putBoolean(KEY_V780JSONAUTOPRETTY780, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -66930,5 +67530,155 @@ class AppPrefs(context: Context) {
         const val KEY_V770IMPORTAUTOMERGE770 = "v770importAutoMerge770" // v770 Import Auto Merge770
         const val KEY_V770INDEXAUTOBUILD770 = "v770indexAutoBuild770" // v770 Index Auto Build770
         const val KEY_V770INFOAUTOPOPUP770 = "v770infoAutoPopup770" // v770 Info Auto Popup770
+        const val KEY_V771INITAUTOLAZY771 = "v771initAutoLazy771" // v771 Init Auto Lazy771
+        const val KEY_V771INPUTAUTOVALIDATE771 = "v771inputAutoValidate771" // v771 Input Auto Validate771
+        const val KEY_V771INSERTAUTOPOSITION771 = "v771insertAutoPosition771" // v771 Insert Auto Position771
+        const val KEY_V771INSTALLAUTOCHECK771 = "v771installAutoCheck771" // v771 Install Auto Check771
+        const val KEY_V771INSTANCEAUTOPOOL771 = "v771instanceAutoPool771" // v771 Instance Auto Pool771
+        const val KEY_V771INTENTAUTOROUTE771 = "v771intentAutoRoute771" // v771 Intent Auto Route771
+        const val KEY_V771INTERACTAUTOHAPTIC771 = "v771interactAutoHaptic771" // v771 Interact Auto Haptic771
+        const val KEY_V771INTERFACEAUTOSWITCH771 = "v771interfaceAutoSwitch771" // v771 Interface Auto Switch771
+        const val KEY_V771INTERNALAUTODEBUG771 = "v771internalAutoDebug771" // v771 Internal Auto Debug771
+        const val KEY_V771INTERVALAUTOTHROTTLE771 = "v771intervalAutoThrottle771" // v771 Interval Auto Throttle771
+        const val KEY_V771INVOKEAUTOREFLECT771 = "v771invokeAutoReflect771" // v771 Invoke Auto Reflect771
+        const val KEY_V771ITEMAUTORECYCLE771 = "v771itemAutoRecycle771" // v771 Item Auto Recycle771
+        const val KEY_V771ITERATEAUTOPAGINATE771 = "v771iterateAutoPaginate771" // v771 Iterate Auto Paginate771
+        const val KEY_V771JOINAUTOMERGE771 = "v771joinAutoMerge771" // v771 Join Auto Merge771
+        const val KEY_V771JSONAUTOPRETTY771 = "v771jsonAutoPretty771" // v771 Json Auto Pretty771
+        const val KEY_V772INITAUTOLAZY772 = "v772initAutoLazy772" // v772 Init Auto Lazy772
+        const val KEY_V772INPUTAUTOVALIDATE772 = "v772inputAutoValidate772" // v772 Input Auto Validate772
+        const val KEY_V772INSERTAUTOPOSITION772 = "v772insertAutoPosition772" // v772 Insert Auto Position772
+        const val KEY_V772INSTALLAUTOCHECK772 = "v772installAutoCheck772" // v772 Install Auto Check772
+        const val KEY_V772INSTANCEAUTOPOOL772 = "v772instanceAutoPool772" // v772 Instance Auto Pool772
+        const val KEY_V772INTENTAUTOROUTE772 = "v772intentAutoRoute772" // v772 Intent Auto Route772
+        const val KEY_V772INTERACTAUTOHAPTIC772 = "v772interactAutoHaptic772" // v772 Interact Auto Haptic772
+        const val KEY_V772INTERFACEAUTOSWITCH772 = "v772interfaceAutoSwitch772" // v772 Interface Auto Switch772
+        const val KEY_V772INTERNALAUTODEBUG772 = "v772internalAutoDebug772" // v772 Internal Auto Debug772
+        const val KEY_V772INTERVALAUTOTHROTTLE772 = "v772intervalAutoThrottle772" // v772 Interval Auto Throttle772
+        const val KEY_V772INVOKEAUTOREFLECT772 = "v772invokeAutoReflect772" // v772 Invoke Auto Reflect772
+        const val KEY_V772ITEMAUTORECYCLE772 = "v772itemAutoRecycle772" // v772 Item Auto Recycle772
+        const val KEY_V772ITERATEAUTOPAGINATE772 = "v772iterateAutoPaginate772" // v772 Iterate Auto Paginate772
+        const val KEY_V772JOINAUTOMERGE772 = "v772joinAutoMerge772" // v772 Join Auto Merge772
+        const val KEY_V772JSONAUTOPRETTY772 = "v772jsonAutoPretty772" // v772 Json Auto Pretty772
+        const val KEY_V773INITAUTOLAZY773 = "v773initAutoLazy773" // v773 Init Auto Lazy773
+        const val KEY_V773INPUTAUTOVALIDATE773 = "v773inputAutoValidate773" // v773 Input Auto Validate773
+        const val KEY_V773INSERTAUTOPOSITION773 = "v773insertAutoPosition773" // v773 Insert Auto Position773
+        const val KEY_V773INSTALLAUTOCHECK773 = "v773installAutoCheck773" // v773 Install Auto Check773
+        const val KEY_V773INSTANCEAUTOPOOL773 = "v773instanceAutoPool773" // v773 Instance Auto Pool773
+        const val KEY_V773INTENTAUTOROUTE773 = "v773intentAutoRoute773" // v773 Intent Auto Route773
+        const val KEY_V773INTERACTAUTOHAPTIC773 = "v773interactAutoHaptic773" // v773 Interact Auto Haptic773
+        const val KEY_V773INTERFACEAUTOSWITCH773 = "v773interfaceAutoSwitch773" // v773 Interface Auto Switch773
+        const val KEY_V773INTERNALAUTODEBUG773 = "v773internalAutoDebug773" // v773 Internal Auto Debug773
+        const val KEY_V773INTERVALAUTOTHROTTLE773 = "v773intervalAutoThrottle773" // v773 Interval Auto Throttle773
+        const val KEY_V773INVOKEAUTOREFLECT773 = "v773invokeAutoReflect773" // v773 Invoke Auto Reflect773
+        const val KEY_V773ITEMAUTORECYCLE773 = "v773itemAutoRecycle773" // v773 Item Auto Recycle773
+        const val KEY_V773ITERATEAUTOPAGINATE773 = "v773iterateAutoPaginate773" // v773 Iterate Auto Paginate773
+        const val KEY_V773JOINAUTOMERGE773 = "v773joinAutoMerge773" // v773 Join Auto Merge773
+        const val KEY_V773JSONAUTOPRETTY773 = "v773jsonAutoPretty773" // v773 Json Auto Pretty773
+        const val KEY_V774INITAUTOLAZY774 = "v774initAutoLazy774" // v774 Init Auto Lazy774
+        const val KEY_V774INPUTAUTOVALIDATE774 = "v774inputAutoValidate774" // v774 Input Auto Validate774
+        const val KEY_V774INSERTAUTOPOSITION774 = "v774insertAutoPosition774" // v774 Insert Auto Position774
+        const val KEY_V774INSTALLAUTOCHECK774 = "v774installAutoCheck774" // v774 Install Auto Check774
+        const val KEY_V774INSTANCEAUTOPOOL774 = "v774instanceAutoPool774" // v774 Instance Auto Pool774
+        const val KEY_V774INTENTAUTOROUTE774 = "v774intentAutoRoute774" // v774 Intent Auto Route774
+        const val KEY_V774INTERACTAUTOHAPTIC774 = "v774interactAutoHaptic774" // v774 Interact Auto Haptic774
+        const val KEY_V774INTERFACEAUTOSWITCH774 = "v774interfaceAutoSwitch774" // v774 Interface Auto Switch774
+        const val KEY_V774INTERNALAUTODEBUG774 = "v774internalAutoDebug774" // v774 Internal Auto Debug774
+        const val KEY_V774INTERVALAUTOTHROTTLE774 = "v774intervalAutoThrottle774" // v774 Interval Auto Throttle774
+        const val KEY_V774INVOKEAUTOREFLECT774 = "v774invokeAutoReflect774" // v774 Invoke Auto Reflect774
+        const val KEY_V774ITEMAUTORECYCLE774 = "v774itemAutoRecycle774" // v774 Item Auto Recycle774
+        const val KEY_V774ITERATEAUTOPAGINATE774 = "v774iterateAutoPaginate774" // v774 Iterate Auto Paginate774
+        const val KEY_V774JOINAUTOMERGE774 = "v774joinAutoMerge774" // v774 Join Auto Merge774
+        const val KEY_V774JSONAUTOPRETTY774 = "v774jsonAutoPretty774" // v774 Json Auto Pretty774
+        const val KEY_V775INITAUTOLAZY775 = "v775initAutoLazy775" // v775 Init Auto Lazy775
+        const val KEY_V775INPUTAUTOVALIDATE775 = "v775inputAutoValidate775" // v775 Input Auto Validate775
+        const val KEY_V775INSERTAUTOPOSITION775 = "v775insertAutoPosition775" // v775 Insert Auto Position775
+        const val KEY_V775INSTALLAUTOCHECK775 = "v775installAutoCheck775" // v775 Install Auto Check775
+        const val KEY_V775INSTANCEAUTOPOOL775 = "v775instanceAutoPool775" // v775 Instance Auto Pool775
+        const val KEY_V775INTENTAUTOROUTE775 = "v775intentAutoRoute775" // v775 Intent Auto Route775
+        const val KEY_V775INTERACTAUTOHAPTIC775 = "v775interactAutoHaptic775" // v775 Interact Auto Haptic775
+        const val KEY_V775INTERFACEAUTOSWITCH775 = "v775interfaceAutoSwitch775" // v775 Interface Auto Switch775
+        const val KEY_V775INTERNALAUTODEBUG775 = "v775internalAutoDebug775" // v775 Internal Auto Debug775
+        const val KEY_V775INTERVALAUTOTHROTTLE775 = "v775intervalAutoThrottle775" // v775 Interval Auto Throttle775
+        const val KEY_V775INVOKEAUTOREFLECT775 = "v775invokeAutoReflect775" // v775 Invoke Auto Reflect775
+        const val KEY_V775ITEMAUTORECYCLE775 = "v775itemAutoRecycle775" // v775 Item Auto Recycle775
+        const val KEY_V775ITERATEAUTOPAGINATE775 = "v775iterateAutoPaginate775" // v775 Iterate Auto Paginate775
+        const val KEY_V775JOINAUTOMERGE775 = "v775joinAutoMerge775" // v775 Join Auto Merge775
+        const val KEY_V775JSONAUTOPRETTY775 = "v775jsonAutoPretty775" // v775 Json Auto Pretty775
+        const val KEY_V776INITAUTOLAZY776 = "v776initAutoLazy776" // v776 Init Auto Lazy776
+        const val KEY_V776INPUTAUTOVALIDATE776 = "v776inputAutoValidate776" // v776 Input Auto Validate776
+        const val KEY_V776INSERTAUTOPOSITION776 = "v776insertAutoPosition776" // v776 Insert Auto Position776
+        const val KEY_V776INSTALLAUTOCHECK776 = "v776installAutoCheck776" // v776 Install Auto Check776
+        const val KEY_V776INSTANCEAUTOPOOL776 = "v776instanceAutoPool776" // v776 Instance Auto Pool776
+        const val KEY_V776INTENTAUTOROUTE776 = "v776intentAutoRoute776" // v776 Intent Auto Route776
+        const val KEY_V776INTERACTAUTOHAPTIC776 = "v776interactAutoHaptic776" // v776 Interact Auto Haptic776
+        const val KEY_V776INTERFACEAUTOSWITCH776 = "v776interfaceAutoSwitch776" // v776 Interface Auto Switch776
+        const val KEY_V776INTERNALAUTODEBUG776 = "v776internalAutoDebug776" // v776 Internal Auto Debug776
+        const val KEY_V776INTERVALAUTOTHROTTLE776 = "v776intervalAutoThrottle776" // v776 Interval Auto Throttle776
+        const val KEY_V776INVOKEAUTOREFLECT776 = "v776invokeAutoReflect776" // v776 Invoke Auto Reflect776
+        const val KEY_V776ITEMAUTORECYCLE776 = "v776itemAutoRecycle776" // v776 Item Auto Recycle776
+        const val KEY_V776ITERATEAUTOPAGINATE776 = "v776iterateAutoPaginate776" // v776 Iterate Auto Paginate776
+        const val KEY_V776JOINAUTOMERGE776 = "v776joinAutoMerge776" // v776 Join Auto Merge776
+        const val KEY_V776JSONAUTOPRETTY776 = "v776jsonAutoPretty776" // v776 Json Auto Pretty776
+        const val KEY_V777INITAUTOLAZY777 = "v777initAutoLazy777" // v777 Init Auto Lazy777
+        const val KEY_V777INPUTAUTOVALIDATE777 = "v777inputAutoValidate777" // v777 Input Auto Validate777
+        const val KEY_V777INSERTAUTOPOSITION777 = "v777insertAutoPosition777" // v777 Insert Auto Position777
+        const val KEY_V777INSTALLAUTOCHECK777 = "v777installAutoCheck777" // v777 Install Auto Check777
+        const val KEY_V777INSTANCEAUTOPOOL777 = "v777instanceAutoPool777" // v777 Instance Auto Pool777
+        const val KEY_V777INTENTAUTOROUTE777 = "v777intentAutoRoute777" // v777 Intent Auto Route777
+        const val KEY_V777INTERACTAUTOHAPTIC777 = "v777interactAutoHaptic777" // v777 Interact Auto Haptic777
+        const val KEY_V777INTERFACEAUTOSWITCH777 = "v777interfaceAutoSwitch777" // v777 Interface Auto Switch777
+        const val KEY_V777INTERNALAUTODEBUG777 = "v777internalAutoDebug777" // v777 Internal Auto Debug777
+        const val KEY_V777INTERVALAUTOTHROTTLE777 = "v777intervalAutoThrottle777" // v777 Interval Auto Throttle777
+        const val KEY_V777INVOKEAUTOREFLECT777 = "v777invokeAutoReflect777" // v777 Invoke Auto Reflect777
+        const val KEY_V777ITEMAUTORECYCLE777 = "v777itemAutoRecycle777" // v777 Item Auto Recycle777
+        const val KEY_V777ITERATEAUTOPAGINATE777 = "v777iterateAutoPaginate777" // v777 Iterate Auto Paginate777
+        const val KEY_V777JOINAUTOMERGE777 = "v777joinAutoMerge777" // v777 Join Auto Merge777
+        const val KEY_V777JSONAUTOPRETTY777 = "v777jsonAutoPretty777" // v777 Json Auto Pretty777
+        const val KEY_V778INITAUTOLAZY778 = "v778initAutoLazy778" // v778 Init Auto Lazy778
+        const val KEY_V778INPUTAUTOVALIDATE778 = "v778inputAutoValidate778" // v778 Input Auto Validate778
+        const val KEY_V778INSERTAUTOPOSITION778 = "v778insertAutoPosition778" // v778 Insert Auto Position778
+        const val KEY_V778INSTALLAUTOCHECK778 = "v778installAutoCheck778" // v778 Install Auto Check778
+        const val KEY_V778INSTANCEAUTOPOOL778 = "v778instanceAutoPool778" // v778 Instance Auto Pool778
+        const val KEY_V778INTENTAUTOROUTE778 = "v778intentAutoRoute778" // v778 Intent Auto Route778
+        const val KEY_V778INTERACTAUTOHAPTIC778 = "v778interactAutoHaptic778" // v778 Interact Auto Haptic778
+        const val KEY_V778INTERFACEAUTOSWITCH778 = "v778interfaceAutoSwitch778" // v778 Interface Auto Switch778
+        const val KEY_V778INTERNALAUTODEBUG778 = "v778internalAutoDebug778" // v778 Internal Auto Debug778
+        const val KEY_V778INTERVALAUTOTHROTTLE778 = "v778intervalAutoThrottle778" // v778 Interval Auto Throttle778
+        const val KEY_V778INVOKEAUTOREFLECT778 = "v778invokeAutoReflect778" // v778 Invoke Auto Reflect778
+        const val KEY_V778ITEMAUTORECYCLE778 = "v778itemAutoRecycle778" // v778 Item Auto Recycle778
+        const val KEY_V778ITERATEAUTOPAGINATE778 = "v778iterateAutoPaginate778" // v778 Iterate Auto Paginate778
+        const val KEY_V778JOINAUTOMERGE778 = "v778joinAutoMerge778" // v778 Join Auto Merge778
+        const val KEY_V778JSONAUTOPRETTY778 = "v778jsonAutoPretty778" // v778 Json Auto Pretty778
+        const val KEY_V779INITAUTOLAZY779 = "v779initAutoLazy779" // v779 Init Auto Lazy779
+        const val KEY_V779INPUTAUTOVALIDATE779 = "v779inputAutoValidate779" // v779 Input Auto Validate779
+        const val KEY_V779INSERTAUTOPOSITION779 = "v779insertAutoPosition779" // v779 Insert Auto Position779
+        const val KEY_V779INSTALLAUTOCHECK779 = "v779installAutoCheck779" // v779 Install Auto Check779
+        const val KEY_V779INSTANCEAUTOPOOL779 = "v779instanceAutoPool779" // v779 Instance Auto Pool779
+        const val KEY_V779INTENTAUTOROUTE779 = "v779intentAutoRoute779" // v779 Intent Auto Route779
+        const val KEY_V779INTERACTAUTOHAPTIC779 = "v779interactAutoHaptic779" // v779 Interact Auto Haptic779
+        const val KEY_V779INTERFACEAUTOSWITCH779 = "v779interfaceAutoSwitch779" // v779 Interface Auto Switch779
+        const val KEY_V779INTERNALAUTODEBUG779 = "v779internalAutoDebug779" // v779 Internal Auto Debug779
+        const val KEY_V779INTERVALAUTOTHROTTLE779 = "v779intervalAutoThrottle779" // v779 Interval Auto Throttle779
+        const val KEY_V779INVOKEAUTOREFLECT779 = "v779invokeAutoReflect779" // v779 Invoke Auto Reflect779
+        const val KEY_V779ITEMAUTORECYCLE779 = "v779itemAutoRecycle779" // v779 Item Auto Recycle779
+        const val KEY_V779ITERATEAUTOPAGINATE779 = "v779iterateAutoPaginate779" // v779 Iterate Auto Paginate779
+        const val KEY_V779JOINAUTOMERGE779 = "v779joinAutoMerge779" // v779 Join Auto Merge779
+        const val KEY_V779JSONAUTOPRETTY779 = "v779jsonAutoPretty779" // v779 Json Auto Pretty779
+        const val KEY_V780INITAUTOLAZY780 = "v780initAutoLazy780" // v780 Init Auto Lazy780
+        const val KEY_V780INPUTAUTOVALIDATE780 = "v780inputAutoValidate780" // v780 Input Auto Validate780
+        const val KEY_V780INSERTAUTOPOSITION780 = "v780insertAutoPosition780" // v780 Insert Auto Position780
+        const val KEY_V780INSTALLAUTOCHECK780 = "v780installAutoCheck780" // v780 Install Auto Check780
+        const val KEY_V780INSTANCEAUTOPOOL780 = "v780instanceAutoPool780" // v780 Instance Auto Pool780
+        const val KEY_V780INTENTAUTOROUTE780 = "v780intentAutoRoute780" // v780 Intent Auto Route780
+        const val KEY_V780INTERACTAUTOHAPTIC780 = "v780interactAutoHaptic780" // v780 Interact Auto Haptic780
+        const val KEY_V780INTERFACEAUTOSWITCH780 = "v780interfaceAutoSwitch780" // v780 Interface Auto Switch780
+        const val KEY_V780INTERNALAUTODEBUG780 = "v780internalAutoDebug780" // v780 Internal Auto Debug780
+        const val KEY_V780INTERVALAUTOTHROTTLE780 = "v780intervalAutoThrottle780" // v780 Interval Auto Throttle780
+        const val KEY_V780INVOKEAUTOREFLECT780 = "v780invokeAutoReflect780" // v780 Invoke Auto Reflect780
+        const val KEY_V780ITEMAUTORECYCLE780 = "v780itemAutoRecycle780" // v780 Item Auto Recycle780
+        const val KEY_V780ITERATEAUTOPAGINATE780 = "v780iterateAutoPaginate780" // v780 Iterate Auto Paginate780
+        const val KEY_V780JOINAUTOMERGE780 = "v780joinAutoMerge780" // v780 Join Auto Merge780
+        const val KEY_V780JSONAUTOPRETTY780 = "v780jsonAutoPretty780" // v780 Json Auto Pretty780
     }
 }
