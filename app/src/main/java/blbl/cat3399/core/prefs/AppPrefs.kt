@@ -25448,6 +25448,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V310SUBTITLEBGBORDER435, false)
         set(value) = prefs.edit().putBoolean(KEY_V310SUBTITLEBGBORDER435, value).apply()
 
+    var v311audioCompressorRatio293: Int
+        get() = prefs.getInt(KEY_V311AUDIOCOMPRESSORRATIO293, 0)
+        set(value) = prefs.edit().putInt(KEY_V311AUDIOCOMPRESSORRATIO293, value).apply()
+
+    var v311danmakuBottomMaxCount429: Int
+        get() = prefs.getInt(KEY_V311DANMAKUBOTTOMMAXCOUNT429, 0)
+        set(value) = prefs.edit().putInt(KEY_V311DANMAKUBOTTOMMAXCOUNT429, value).apply()
+
+    var v311subtitleFadeIn293: Boolean
+        get() = prefs.getBoolean(KEY_V311SUBTITLEFADEIN293, false)
+        set(value) = prefs.edit().putBoolean(KEY_V311SUBTITLEFADEIN293, value).apply()
+
+    var v311gestureShakeSensitivity293: Int
+        get() = prefs.getInt(KEY_V311GESTURESHAKESENSITIVITY293, 0)
+        set(value) = prefs.edit().putInt(KEY_V311GESTURESHAKESENSITIVITY293, value).apply()
+
+    var v311castBitrate293: Int
+        get() = prefs.getInt(KEY_V311CASTBITRATE293, 0)
+        set(value) = prefs.edit().putInt(KEY_V311CASTBITRATE293, value).apply()
+
+    var v311playlistAutoNext293: Boolean
+        get() = prefs.getBoolean(KEY_V311PLAYLISTAUTONEXT293, false)
+        set(value) = prefs.edit().putBoolean(KEY_V311PLAYLISTAUTONEXT293, value).apply()
+
+    var v311cachePreloadSize294: Int
+        get() = prefs.getInt(KEY_V311CACHEPRELOADSIZE294, 0)
+        set(value) = prefs.edit().putInt(KEY_V311CACHEPRELOADSIZE294, value).apply()
+
+    var v311progressBarStyle293: Int
+        get() = prefs.getInt(KEY_V311PROGRESSBARSTYLE293, 0)
+        set(value) = prefs.edit().putInt(KEY_V311PROGRESSBARSTYLE293, value).apply()
+
+    var v311volumeNormalizeMode293: Boolean
+        get() = prefs.getBoolean(KEY_V311VOLUMENORMALIZEMODE293, false)
+        set(value) = prefs.edit().putBoolean(KEY_V311VOLUMENORMALIZEMODE293, value).apply()
+
+    var v311historyAutoClean293: Boolean
+        get() = prefs.getBoolean(KEY_V311HISTORYAUTOCLEAN293, false)
+        set(value) = prefs.edit().putBoolean(KEY_V311HISTORYAUTOCLEAN293, value).apply()
+
+    var v311playbackResumeFromBackground293: Boolean
+        get() = prefs.getBoolean(KEY_V311PLAYBACKRESUMEFROMBACKGROUND293, false)
+        set(value) = prefs.edit().putBoolean(KEY_V311PLAYBACKRESUMEFROMBACKGROUND293, value).apply()
+
+    var v311screenshotEnhance293: Boolean
+        get() = prefs.getBoolean(KEY_V311SCREENSHOTENHANCE293, false)
+        set(value) = prefs.edit().putBoolean(KEY_V311SCREENSHOTENHANCE293, value).apply()
+
+    var v311videoHDR293: Boolean
+        get() = prefs.getBoolean(KEY_V311VIDEOHDR293, false)
+        set(value) = prefs.edit().putBoolean(KEY_V311VIDEOHDR293, value).apply()
+
+    var v311danmakuBottomMaxCount430: Int
+        get() = prefs.getInt(KEY_V311DANMAKUBOTTOMMAXCOUNT430, 0)
+        set(value) = prefs.edit().putInt(KEY_V311DANMAKUBOTTOMMAXCOUNT430, value).apply()
+
+    var v311subtitleFadeIn294: Boolean
+        get() = prefs.getBoolean(KEY_V311SUBTITLEFADEIN294, false)
+        set(value) = prefs.edit().putBoolean(KEY_V311SUBTITLEFADEIN294, value).apply()
+
+    var v312audioCompressorRatio294: Int
+        get() = prefs.getInt(KEY_V312AUDIOCOMPRESSORRATIO294, 0)
+        set(value) = prefs.edit().putInt(KEY_V312AUDIOCOMPRESSORRATIO294, value).apply()
+
+    var v312danmakuBottomMaxCount431: Int
+        get() = prefs.getInt(KEY_V312DANMAKUBOTTOMMAXCOUNT431, 0)
+        set(value) = prefs.edit().putInt(KEY_V312DANMAKUBOTTOMMAXCOUNT431, value).apply()
+
+    var v312subtitleFadeIn295: Boolean
+        get() = prefs.getBoolean(KEY_V312SUBTITLEFADEIN295, false)
+        set(value) = prefs.edit().putBoolean(KEY_V312SUBTITLEFADEIN295, value).apply()
+
+    var v312gestureShakeSensitivity294: Int
+        get() = prefs.getInt(KEY_V312GESTURESHAKESENSITIVITY294, 0)
+        set(value) = prefs.edit().putInt(KEY_V312GESTURESHAKESENSITIVITY294, value).apply()
+
+    var v312castBitrate294: Int
+        get() = prefs.getInt(KEY_V312CASTBITRATE294, 0)
+        set(value) = prefs.edit().putInt(KEY_V312CASTBITRATE294, value).apply()
+
+    var v312playlistAutoNext294: Boolean
+        get() = prefs.getBoolean(KEY_V312PLAYLISTAUTONEXT294, false)
+        set(value) = prefs.edit().putBoolean(KEY_V312PLAYLISTAUTONEXT294, value).apply()
+
+    var v312cachePreloadSize295: Int
+        get() = prefs.getInt(KEY_V312CACHEPRELOADSIZE295, 0)
+        set(value) = prefs.edit().putInt(KEY_V312CACHEPRELOADSIZE295, value).apply()
+
+    var v312progressBarStyle294: Int
+        get() = prefs.getInt(KEY_V312PROGRESSBARSTYLE294, 0)
+        set(value) = prefs.edit().putInt(KEY_V312PROGRESSBARSTYLE294, value).apply()
+
+    var v312volumeNormalizeMode294: Boolean
+        get() = prefs.getBoolean(KEY_V312VOLUMENORMALIZEMODE294, false)
+        set(value) = prefs.edit().putBoolean(KEY_V312VOLUMENORMALIZEMODE294, value).apply()
+
+    var v312historyAutoClean294: Boolean
+        get() = prefs.getBoolean(KEY_V312HISTORYAUTOCLEAN294, false)
+        set(value) = prefs.edit().putBoolean(KEY_V312HISTORYAUTOCLEAN294, value).apply()
+
+    var v312playbackResumeFromBackground294: Boolean
+        get() = prefs.getBoolean(KEY_V312PLAYBACKRESUMEFROMBACKGROUND294, false)
+        set(value) = prefs.edit().putBoolean(KEY_V312PLAYBACKRESUMEFROMBACKGROUND294, value).apply()
+
+    var v312screenshotEnhance294: Boolean
+        get() = prefs.getBoolean(KEY_V312SCREENSHOTENHANCE294, false)
+        set(value) = prefs.edit().putBoolean(KEY_V312SCREENSHOTENHANCE294, value).apply()
+
+    var v312videoHDR294: Boolean
+        get() = prefs.getBoolean(KEY_V312VIDEOHDR294, false)
+        set(value) = prefs.edit().putBoolean(KEY_V312VIDEOHDR294, value).apply()
+
+    var v312danmakuBottomMaxCount432: Int
+        get() = prefs.getInt(KEY_V312DANMAKUBOTTOMMAXCOUNT432, 0)
+        set(value) = prefs.edit().putInt(KEY_V312DANMAKUBOTTOMMAXCOUNT432, value).apply()
+
+    var v312subtitleFadeIn296: Boolean
+        get() = prefs.getBoolean(KEY_V312SUBTITLEFADEIN296, false)
+        set(value) = prefs.edit().putBoolean(KEY_V312SUBTITLEFADEIN296, value).apply()
+
+    var v313audioCompressorRatio295: Int
+        get() = prefs.getInt(KEY_V313AUDIOCOMPRESSORRATIO295, 0)
+        set(value) = prefs.edit().putInt(KEY_V313AUDIOCOMPRESSORRATIO295, value).apply()
+
+    var v313danmakuBottomMaxCount433: Int
+        get() = prefs.getInt(KEY_V313DANMAKUBOTTOMMAXCOUNT433, 0)
+        set(value) = prefs.edit().putInt(KEY_V313DANMAKUBOTTOMMAXCOUNT433, value).apply()
+
+    var v313subtitleFadeIn297: Boolean
+        get() = prefs.getBoolean(KEY_V313SUBTITLEFADEIN297, false)
+        set(value) = prefs.edit().putBoolean(KEY_V313SUBTITLEFADEIN297, value).apply()
+
+    var v313gestureShakeSensitivity295: Int
+        get() = prefs.getInt(KEY_V313GESTURESHAKESENSITIVITY295, 0)
+        set(value) = prefs.edit().putInt(KEY_V313GESTURESHAKESENSITIVITY295, value).apply()
+
+    var v313castBitrate295: Int
+        get() = prefs.getInt(KEY_V313CASTBITRATE295, 0)
+        set(value) = prefs.edit().putInt(KEY_V313CASTBITRATE295, value).apply()
+
+    var v313playlistAutoNext295: Boolean
+        get() = prefs.getBoolean(KEY_V313PLAYLISTAUTONEXT295, false)
+        set(value) = prefs.edit().putBoolean(KEY_V313PLAYLISTAUTONEXT295, value).apply()
+
+    var v313cachePreloadSize296: Int
+        get() = prefs.getInt(KEY_V313CACHEPRELOADSIZE296, 0)
+        set(value) = prefs.edit().putInt(KEY_V313CACHEPRELOADSIZE296, value).apply()
+
+    var v313progressBarStyle295: Int
+        get() = prefs.getInt(KEY_V313PROGRESSBARSTYLE295, 0)
+        set(value) = prefs.edit().putInt(KEY_V313PROGRESSBARSTYLE295, value).apply()
+
+    var v313volumeNormalizeMode295: Boolean
+        get() = prefs.getBoolean(KEY_V313VOLUMENORMALIZEMODE295, false)
+        set(value) = prefs.edit().putBoolean(KEY_V313VOLUMENORMALIZEMODE295, value).apply()
+
+    var v313historyAutoClean295: Boolean
+        get() = prefs.getBoolean(KEY_V313HISTORYAUTOCLEAN295, false)
+        set(value) = prefs.edit().putBoolean(KEY_V313HISTORYAUTOCLEAN295, value).apply()
+
+    var v313playbackResumeFromBackground295: Boolean
+        get() = prefs.getBoolean(KEY_V313PLAYBACKRESUMEFROMBACKGROUND295, false)
+        set(value) = prefs.edit().putBoolean(KEY_V313PLAYBACKRESUMEFROMBACKGROUND295, value).apply()
+
+    var v313screenshotEnhance295: Boolean
+        get() = prefs.getBoolean(KEY_V313SCREENSHOTENHANCE295, false)
+        set(value) = prefs.edit().putBoolean(KEY_V313SCREENSHOTENHANCE295, value).apply()
+
+    var v313videoHDR295: Boolean
+        get() = prefs.getBoolean(KEY_V313VIDEOHDR295, false)
+        set(value) = prefs.edit().putBoolean(KEY_V313VIDEOHDR295, value).apply()
+
+    var v313danmakuBottomMaxCount434: Int
+        get() = prefs.getInt(KEY_V313DANMAKUBOTTOMMAXCOUNT434, 0)
+        set(value) = prefs.edit().putInt(KEY_V313DANMAKUBOTTOMMAXCOUNT434, value).apply()
+
+    var v313subtitleFadeIn298: Boolean
+        get() = prefs.getBoolean(KEY_V313SUBTITLEFADEIN298, false)
+        set(value) = prefs.edit().putBoolean(KEY_V313SUBTITLEFADEIN298, value).apply()
+
+    var v314audioCompressorRatio296: Int
+        get() = prefs.getInt(KEY_V314AUDIOCOMPRESSORRATIO296, 0)
+        set(value) = prefs.edit().putInt(KEY_V314AUDIOCOMPRESSORRATIO296, value).apply()
+
+    var v314danmakuBottomMaxCount435: Int
+        get() = prefs.getInt(KEY_V314DANMAKUBOTTOMMAXCOUNT435, 0)
+        set(value) = prefs.edit().putInt(KEY_V314DANMAKUBOTTOMMAXCOUNT435, value).apply()
+
+    var v314subtitleFadeIn299: Boolean
+        get() = prefs.getBoolean(KEY_V314SUBTITLEFADEIN299, false)
+        set(value) = prefs.edit().putBoolean(KEY_V314SUBTITLEFADEIN299, value).apply()
+
+    var v314gestureShakeSensitivity296: Int
+        get() = prefs.getInt(KEY_V314GESTURESHAKESENSITIVITY296, 0)
+        set(value) = prefs.edit().putInt(KEY_V314GESTURESHAKESENSITIVITY296, value).apply()
+
+    var v314castBitrate296: Int
+        get() = prefs.getInt(KEY_V314CASTBITRATE296, 0)
+        set(value) = prefs.edit().putInt(KEY_V314CASTBITRATE296, value).apply()
+
+    var v314playlistAutoNext296: Boolean
+        get() = prefs.getBoolean(KEY_V314PLAYLISTAUTONEXT296, false)
+        set(value) = prefs.edit().putBoolean(KEY_V314PLAYLISTAUTONEXT296, value).apply()
+
+    var v314cachePreloadSize297: Int
+        get() = prefs.getInt(KEY_V314CACHEPRELOADSIZE297, 0)
+        set(value) = prefs.edit().putInt(KEY_V314CACHEPRELOADSIZE297, value).apply()
+
+    var v314progressBarStyle296: Int
+        get() = prefs.getInt(KEY_V314PROGRESSBARSTYLE296, 0)
+        set(value) = prefs.edit().putInt(KEY_V314PROGRESSBARSTYLE296, value).apply()
+
+    var v314volumeNormalizeMode296: Boolean
+        get() = prefs.getBoolean(KEY_V314VOLUMENORMALIZEMODE296, false)
+        set(value) = prefs.edit().putBoolean(KEY_V314VOLUMENORMALIZEMODE296, value).apply()
+
+    var v314historyAutoClean296: Boolean
+        get() = prefs.getBoolean(KEY_V314HISTORYAUTOCLEAN296, false)
+        set(value) = prefs.edit().putBoolean(KEY_V314HISTORYAUTOCLEAN296, value).apply()
+
+    var v314playbackResumeFromBackground296: Boolean
+        get() = prefs.getBoolean(KEY_V314PLAYBACKRESUMEFROMBACKGROUND296, false)
+        set(value) = prefs.edit().putBoolean(KEY_V314PLAYBACKRESUMEFROMBACKGROUND296, value).apply()
+
+    var v314screenshotEnhance296: Boolean
+        get() = prefs.getBoolean(KEY_V314SCREENSHOTENHANCE296, false)
+        set(value) = prefs.edit().putBoolean(KEY_V314SCREENSHOTENHANCE296, value).apply()
+
+    var v314videoHDR296: Boolean
+        get() = prefs.getBoolean(KEY_V314VIDEOHDR296, false)
+        set(value) = prefs.edit().putBoolean(KEY_V314VIDEOHDR296, value).apply()
+
+    var v314danmakuBottomMaxCount436: Int
+        get() = prefs.getInt(KEY_V314DANMAKUBOTTOMMAXCOUNT436, 0)
+        set(value) = prefs.edit().putInt(KEY_V314DANMAKUBOTTOMMAXCOUNT436, value).apply()
+
+    var v314subtitleFadeIn300: Boolean
+        get() = prefs.getBoolean(KEY_V314SUBTITLEFADEIN300, false)
+        set(value) = prefs.edit().putBoolean(KEY_V314SUBTITLEFADEIN300, value).apply()
+
+    var v315audioCompressorRatio297: Int
+        get() = prefs.getInt(KEY_V315AUDIOCOMPRESSORRATIO297, 0)
+        set(value) = prefs.edit().putInt(KEY_V315AUDIOCOMPRESSORRATIO297, value).apply()
+
+    var v315danmakuBottomMaxCount437: Int
+        get() = prefs.getInt(KEY_V315DANMAKUBOTTOMMAXCOUNT437, 0)
+        set(value) = prefs.edit().putInt(KEY_V315DANMAKUBOTTOMMAXCOUNT437, value).apply()
+
+    var v315subtitleFadeIn301: Boolean
+        get() = prefs.getBoolean(KEY_V315SUBTITLEFADEIN301, false)
+        set(value) = prefs.edit().putBoolean(KEY_V315SUBTITLEFADEIN301, value).apply()
+
+    var v315gestureShakeSensitivity297: Int
+        get() = prefs.getInt(KEY_V315GESTURESHAKESENSITIVITY297, 0)
+        set(value) = prefs.edit().putInt(KEY_V315GESTURESHAKESENSITIVITY297, value).apply()
+
+    var v315castBitrate297: Int
+        get() = prefs.getInt(KEY_V315CASTBITRATE297, 0)
+        set(value) = prefs.edit().putInt(KEY_V315CASTBITRATE297, value).apply()
+
+    var v315playlistAutoNext297: Boolean
+        get() = prefs.getBoolean(KEY_V315PLAYLISTAUTONEXT297, false)
+        set(value) = prefs.edit().putBoolean(KEY_V315PLAYLISTAUTONEXT297, value).apply()
+
+    var v315cachePreloadSize298: Int
+        get() = prefs.getInt(KEY_V315CACHEPRELOADSIZE298, 0)
+        set(value) = prefs.edit().putInt(KEY_V315CACHEPRELOADSIZE298, value).apply()
+
+    var v315progressBarStyle297: Int
+        get() = prefs.getInt(KEY_V315PROGRESSBARSTYLE297, 0)
+        set(value) = prefs.edit().putInt(KEY_V315PROGRESSBARSTYLE297, value).apply()
+
+    var v315volumeNormalizeMode297: Boolean
+        get() = prefs.getBoolean(KEY_V315VOLUMENORMALIZEMODE297, false)
+        set(value) = prefs.edit().putBoolean(KEY_V315VOLUMENORMALIZEMODE297, value).apply()
+
+    var v315historyAutoClean297: Boolean
+        get() = prefs.getBoolean(KEY_V315HISTORYAUTOCLEAN297, false)
+        set(value) = prefs.edit().putBoolean(KEY_V315HISTORYAUTOCLEAN297, value).apply()
+
+    var v315playbackResumeFromBackground297: Boolean
+        get() = prefs.getBoolean(KEY_V315PLAYBACKRESUMEFROMBACKGROUND297, false)
+        set(value) = prefs.edit().putBoolean(KEY_V315PLAYBACKRESUMEFROMBACKGROUND297, value).apply()
+
+    var v315screenshotEnhance297: Boolean
+        get() = prefs.getBoolean(KEY_V315SCREENSHOTENHANCE297, false)
+        set(value) = prefs.edit().putBoolean(KEY_V315SCREENSHOTENHANCE297, value).apply()
+
+    var v315videoHDR297: Boolean
+        get() = prefs.getBoolean(KEY_V315VIDEOHDR297, false)
+        set(value) = prefs.edit().putBoolean(KEY_V315VIDEOHDR297, value).apply()
+
+    var v315danmakuBottomMaxCount438: Int
+        get() = prefs.getInt(KEY_V315DANMAKUBOTTOMMAXCOUNT438, 0)
+        set(value) = prefs.edit().putInt(KEY_V315DANMAKUBOTTOMMAXCOUNT438, value).apply()
+
+    var v315subtitleFadeIn302: Boolean
+        get() = prefs.getBoolean(KEY_V315SUBTITLEFADEIN302, false)
+        set(value) = prefs.edit().putBoolean(KEY_V315SUBTITLEFADEIN302, value).apply()
+
+    var v316audioCompressorRatio298: Int
+        get() = prefs.getInt(KEY_V316AUDIOCOMPRESSORRATIO298, 0)
+        set(value) = prefs.edit().putInt(KEY_V316AUDIOCOMPRESSORRATIO298, value).apply()
+
+    var v316danmakuBottomMaxCount439: Int
+        get() = prefs.getInt(KEY_V316DANMAKUBOTTOMMAXCOUNT439, 0)
+        set(value) = prefs.edit().putInt(KEY_V316DANMAKUBOTTOMMAXCOUNT439, value).apply()
+
+    var v316subtitleFadeIn303: Boolean
+        get() = prefs.getBoolean(KEY_V316SUBTITLEFADEIN303, false)
+        set(value) = prefs.edit().putBoolean(KEY_V316SUBTITLEFADEIN303, value).apply()
+
+    var v316gestureShakeSensitivity298: Int
+        get() = prefs.getInt(KEY_V316GESTURESHAKESENSITIVITY298, 0)
+        set(value) = prefs.edit().putInt(KEY_V316GESTURESHAKESENSITIVITY298, value).apply()
+
+    var v316castBitrate298: Int
+        get() = prefs.getInt(KEY_V316CASTBITRATE298, 0)
+        set(value) = prefs.edit().putInt(KEY_V316CASTBITRATE298, value).apply()
+
+    var v316playlistAutoNext298: Boolean
+        get() = prefs.getBoolean(KEY_V316PLAYLISTAUTONEXT298, false)
+        set(value) = prefs.edit().putBoolean(KEY_V316PLAYLISTAUTONEXT298, value).apply()
+
+    var v316cachePreloadSize299: Int
+        get() = prefs.getInt(KEY_V316CACHEPRELOADSIZE299, 0)
+        set(value) = prefs.edit().putInt(KEY_V316CACHEPRELOADSIZE299, value).apply()
+
+    var v316progressBarStyle298: Int
+        get() = prefs.getInt(KEY_V316PROGRESSBARSTYLE298, 0)
+        set(value) = prefs.edit().putInt(KEY_V316PROGRESSBARSTYLE298, value).apply()
+
+    var v316volumeNormalizeMode298: Boolean
+        get() = prefs.getBoolean(KEY_V316VOLUMENORMALIZEMODE298, false)
+        set(value) = prefs.edit().putBoolean(KEY_V316VOLUMENORMALIZEMODE298, value).apply()
+
+    var v316historyAutoClean298: Boolean
+        get() = prefs.getBoolean(KEY_V316HISTORYAUTOCLEAN298, false)
+        set(value) = prefs.edit().putBoolean(KEY_V316HISTORYAUTOCLEAN298, value).apply()
+
+    var v316playbackResumeFromBackground298: Boolean
+        get() = prefs.getBoolean(KEY_V316PLAYBACKRESUMEFROMBACKGROUND298, false)
+        set(value) = prefs.edit().putBoolean(KEY_V316PLAYBACKRESUMEFROMBACKGROUND298, value).apply()
+
+    var v316screenshotEnhance298: Boolean
+        get() = prefs.getBoolean(KEY_V316SCREENSHOTENHANCE298, false)
+        set(value) = prefs.edit().putBoolean(KEY_V316SCREENSHOTENHANCE298, value).apply()
+
+    var v316videoHDR298: Boolean
+        get() = prefs.getBoolean(KEY_V316VIDEOHDR298, false)
+        set(value) = prefs.edit().putBoolean(KEY_V316VIDEOHDR298, value).apply()
+
+    var v316danmakuBottomMaxCount440: Int
+        get() = prefs.getInt(KEY_V316DANMAKUBOTTOMMAXCOUNT440, 0)
+        set(value) = prefs.edit().putInt(KEY_V316DANMAKUBOTTOMMAXCOUNT440, value).apply()
+
+    var v316subtitleFadeIn304: Boolean
+        get() = prefs.getBoolean(KEY_V316SUBTITLEFADEIN304, false)
+        set(value) = prefs.edit().putBoolean(KEY_V316SUBTITLEFADEIN304, value).apply()
+
+    var v317audioCompressorRatio299: Int
+        get() = prefs.getInt(KEY_V317AUDIOCOMPRESSORRATIO299, 0)
+        set(value) = prefs.edit().putInt(KEY_V317AUDIOCOMPRESSORRATIO299, value).apply()
+
+    var v317danmakuBottomMaxCount441: Int
+        get() = prefs.getInt(KEY_V317DANMAKUBOTTOMMAXCOUNT441, 0)
+        set(value) = prefs.edit().putInt(KEY_V317DANMAKUBOTTOMMAXCOUNT441, value).apply()
+
+    var v317subtitleFadeIn305: Boolean
+        get() = prefs.getBoolean(KEY_V317SUBTITLEFADEIN305, false)
+        set(value) = prefs.edit().putBoolean(KEY_V317SUBTITLEFADEIN305, value).apply()
+
+    var v317gestureShakeSensitivity299: Int
+        get() = prefs.getInt(KEY_V317GESTURESHAKESENSITIVITY299, 0)
+        set(value) = prefs.edit().putInt(KEY_V317GESTURESHAKESENSITIVITY299, value).apply()
+
+    var v317castBitrate299: Int
+        get() = prefs.getInt(KEY_V317CASTBITRATE299, 0)
+        set(value) = prefs.edit().putInt(KEY_V317CASTBITRATE299, value).apply()
+
+    var v317playlistAutoNext299: Boolean
+        get() = prefs.getBoolean(KEY_V317PLAYLISTAUTONEXT299, false)
+        set(value) = prefs.edit().putBoolean(KEY_V317PLAYLISTAUTONEXT299, value).apply()
+
+    var v317cachePreloadSize300: Int
+        get() = prefs.getInt(KEY_V317CACHEPRELOADSIZE300, 0)
+        set(value) = prefs.edit().putInt(KEY_V317CACHEPRELOADSIZE300, value).apply()
+
+    var v317progressBarStyle299: Int
+        get() = prefs.getInt(KEY_V317PROGRESSBARSTYLE299, 0)
+        set(value) = prefs.edit().putInt(KEY_V317PROGRESSBARSTYLE299, value).apply()
+
+    var v317volumeNormalizeMode299: Boolean
+        get() = prefs.getBoolean(KEY_V317VOLUMENORMALIZEMODE299, false)
+        set(value) = prefs.edit().putBoolean(KEY_V317VOLUMENORMALIZEMODE299, value).apply()
+
+    var v317historyAutoClean299: Boolean
+        get() = prefs.getBoolean(KEY_V317HISTORYAUTOCLEAN299, false)
+        set(value) = prefs.edit().putBoolean(KEY_V317HISTORYAUTOCLEAN299, value).apply()
+
+    var v317playbackResumeFromBackground299: Boolean
+        get() = prefs.getBoolean(KEY_V317PLAYBACKRESUMEFROMBACKGROUND299, false)
+        set(value) = prefs.edit().putBoolean(KEY_V317PLAYBACKRESUMEFROMBACKGROUND299, value).apply()
+
+    var v317screenshotEnhance299: Boolean
+        get() = prefs.getBoolean(KEY_V317SCREENSHOTENHANCE299, false)
+        set(value) = prefs.edit().putBoolean(KEY_V317SCREENSHOTENHANCE299, value).apply()
+
+    var v317videoHDR299: Boolean
+        get() = prefs.getBoolean(KEY_V317VIDEOHDR299, false)
+        set(value) = prefs.edit().putBoolean(KEY_V317VIDEOHDR299, value).apply()
+
+    var v317danmakuBottomMaxCount442: Int
+        get() = prefs.getInt(KEY_V317DANMAKUBOTTOMMAXCOUNT442, 0)
+        set(value) = prefs.edit().putInt(KEY_V317DANMAKUBOTTOMMAXCOUNT442, value).apply()
+
+    var v317subtitleFadeIn306: Boolean
+        get() = prefs.getBoolean(KEY_V317SUBTITLEFADEIN306, false)
+        set(value) = prefs.edit().putBoolean(KEY_V317SUBTITLEFADEIN306, value).apply()
+
+    var v318audioCompressorRatio300: Int
+        get() = prefs.getInt(KEY_V318AUDIOCOMPRESSORRATIO300, 0)
+        set(value) = prefs.edit().putInt(KEY_V318AUDIOCOMPRESSORRATIO300, value).apply()
+
+    var v318danmakuBottomMaxCount443: Int
+        get() = prefs.getInt(KEY_V318DANMAKUBOTTOMMAXCOUNT443, 0)
+        set(value) = prefs.edit().putInt(KEY_V318DANMAKUBOTTOMMAXCOUNT443, value).apply()
+
+    var v318subtitleFadeIn307: Boolean
+        get() = prefs.getBoolean(KEY_V318SUBTITLEFADEIN307, false)
+        set(value) = prefs.edit().putBoolean(KEY_V318SUBTITLEFADEIN307, value).apply()
+
+    var v318gestureShakeSensitivity300: Int
+        get() = prefs.getInt(KEY_V318GESTURESHAKESENSITIVITY300, 0)
+        set(value) = prefs.edit().putInt(KEY_V318GESTURESHAKESENSITIVITY300, value).apply()
+
+    var v318castBitrate300: Int
+        get() = prefs.getInt(KEY_V318CASTBITRATE300, 0)
+        set(value) = prefs.edit().putInt(KEY_V318CASTBITRATE300, value).apply()
+
+    var v318playlistAutoNext300: Boolean
+        get() = prefs.getBoolean(KEY_V318PLAYLISTAUTONEXT300, false)
+        set(value) = prefs.edit().putBoolean(KEY_V318PLAYLISTAUTONEXT300, value).apply()
+
+    var v318cachePreloadSize301: Int
+        get() = prefs.getInt(KEY_V318CACHEPRELOADSIZE301, 0)
+        set(value) = prefs.edit().putInt(KEY_V318CACHEPRELOADSIZE301, value).apply()
+
+    var v318progressBarStyle300: Int
+        get() = prefs.getInt(KEY_V318PROGRESSBARSTYLE300, 0)
+        set(value) = prefs.edit().putInt(KEY_V318PROGRESSBARSTYLE300, value).apply()
+
+    var v318volumeNormalizeMode300: Boolean
+        get() = prefs.getBoolean(KEY_V318VOLUMENORMALIZEMODE300, false)
+        set(value) = prefs.edit().putBoolean(KEY_V318VOLUMENORMALIZEMODE300, value).apply()
+
+    var v318historyAutoClean300: Boolean
+        get() = prefs.getBoolean(KEY_V318HISTORYAUTOCLEAN300, false)
+        set(value) = prefs.edit().putBoolean(KEY_V318HISTORYAUTOCLEAN300, value).apply()
+
+    var v318playbackResumeFromBackground300: Boolean
+        get() = prefs.getBoolean(KEY_V318PLAYBACKRESUMEFROMBACKGROUND300, false)
+        set(value) = prefs.edit().putBoolean(KEY_V318PLAYBACKRESUMEFROMBACKGROUND300, value).apply()
+
+    var v318screenshotEnhance300: Boolean
+        get() = prefs.getBoolean(KEY_V318SCREENSHOTENHANCE300, false)
+        set(value) = prefs.edit().putBoolean(KEY_V318SCREENSHOTENHANCE300, value).apply()
+
+    var v318videoHDR300: Boolean
+        get() = prefs.getBoolean(KEY_V318VIDEOHDR300, false)
+        set(value) = prefs.edit().putBoolean(KEY_V318VIDEOHDR300, value).apply()
+
+    var v318danmakuBottomMaxCount444: Int
+        get() = prefs.getInt(KEY_V318DANMAKUBOTTOMMAXCOUNT444, 0)
+        set(value) = prefs.edit().putInt(KEY_V318DANMAKUBOTTOMMAXCOUNT444, value).apply()
+
+    var v318subtitleFadeIn308: Boolean
+        get() = prefs.getBoolean(KEY_V318SUBTITLEFADEIN308, false)
+        set(value) = prefs.edit().putBoolean(KEY_V318SUBTITLEFADEIN308, value).apply()
+
+    var v319audioCompressorRatio301: Int
+        get() = prefs.getInt(KEY_V319AUDIOCOMPRESSORRATIO301, 0)
+        set(value) = prefs.edit().putInt(KEY_V319AUDIOCOMPRESSORRATIO301, value).apply()
+
+    var v319danmakuBottomMaxCount445: Int
+        get() = prefs.getInt(KEY_V319DANMAKUBOTTOMMAXCOUNT445, 0)
+        set(value) = prefs.edit().putInt(KEY_V319DANMAKUBOTTOMMAXCOUNT445, value).apply()
+
+    var v319subtitleFadeIn309: Boolean
+        get() = prefs.getBoolean(KEY_V319SUBTITLEFADEIN309, false)
+        set(value) = prefs.edit().putBoolean(KEY_V319SUBTITLEFADEIN309, value).apply()
+
+    var v319gestureShakeSensitivity301: Int
+        get() = prefs.getInt(KEY_V319GESTURESHAKESENSITIVITY301, 0)
+        set(value) = prefs.edit().putInt(KEY_V319GESTURESHAKESENSITIVITY301, value).apply()
+
+    var v319castBitrate301: Int
+        get() = prefs.getInt(KEY_V319CASTBITRATE301, 0)
+        set(value) = prefs.edit().putInt(KEY_V319CASTBITRATE301, value).apply()
+
+    var v319playlistAutoNext301: Boolean
+        get() = prefs.getBoolean(KEY_V319PLAYLISTAUTONEXT301, false)
+        set(value) = prefs.edit().putBoolean(KEY_V319PLAYLISTAUTONEXT301, value).apply()
+
+    var v319cachePreloadSize302: Int
+        get() = prefs.getInt(KEY_V319CACHEPRELOADSIZE302, 0)
+        set(value) = prefs.edit().putInt(KEY_V319CACHEPRELOADSIZE302, value).apply()
+
+    var v319progressBarStyle301: Int
+        get() = prefs.getInt(KEY_V319PROGRESSBARSTYLE301, 0)
+        set(value) = prefs.edit().putInt(KEY_V319PROGRESSBARSTYLE301, value).apply()
+
+    var v319volumeNormalizeMode301: Boolean
+        get() = prefs.getBoolean(KEY_V319VOLUMENORMALIZEMODE301, false)
+        set(value) = prefs.edit().putBoolean(KEY_V319VOLUMENORMALIZEMODE301, value).apply()
+
+    var v319historyAutoClean301: Boolean
+        get() = prefs.getBoolean(KEY_V319HISTORYAUTOCLEAN301, false)
+        set(value) = prefs.edit().putBoolean(KEY_V319HISTORYAUTOCLEAN301, value).apply()
+
+    var v319playbackResumeFromBackground301: Boolean
+        get() = prefs.getBoolean(KEY_V319PLAYBACKRESUMEFROMBACKGROUND301, false)
+        set(value) = prefs.edit().putBoolean(KEY_V319PLAYBACKRESUMEFROMBACKGROUND301, value).apply()
+
+    var v319screenshotEnhance301: Boolean
+        get() = prefs.getBoolean(KEY_V319SCREENSHOTENHANCE301, false)
+        set(value) = prefs.edit().putBoolean(KEY_V319SCREENSHOTENHANCE301, value).apply()
+
+    var v319videoHDR301: Boolean
+        get() = prefs.getBoolean(KEY_V319VIDEOHDR301, false)
+        set(value) = prefs.edit().putBoolean(KEY_V319VIDEOHDR301, value).apply()
+
+    var v319danmakuBottomMaxCount446: Int
+        get() = prefs.getInt(KEY_V319DANMAKUBOTTOMMAXCOUNT446, 0)
+        set(value) = prefs.edit().putInt(KEY_V319DANMAKUBOTTOMMAXCOUNT446, value).apply()
+
+    var v319subtitleFadeIn310: Boolean
+        get() = prefs.getBoolean(KEY_V319SUBTITLEFADEIN310, false)
+        set(value) = prefs.edit().putBoolean(KEY_V319SUBTITLEFADEIN310, value).apply()
+
+    var v320audioCompressorRatio302: Int
+        get() = prefs.getInt(KEY_V320AUDIOCOMPRESSORRATIO302, 0)
+        set(value) = prefs.edit().putInt(KEY_V320AUDIOCOMPRESSORRATIO302, value).apply()
+
+    var v320danmakuBottomMaxCount447: Int
+        get() = prefs.getInt(KEY_V320DANMAKUBOTTOMMAXCOUNT447, 0)
+        set(value) = prefs.edit().putInt(KEY_V320DANMAKUBOTTOMMAXCOUNT447, value).apply()
+
+    var v320subtitleFadeIn311: Boolean
+        get() = prefs.getBoolean(KEY_V320SUBTITLEFADEIN311, false)
+        set(value) = prefs.edit().putBoolean(KEY_V320SUBTITLEFADEIN311, value).apply()
+
+    var v320gestureShakeSensitivity302: Int
+        get() = prefs.getInt(KEY_V320GESTURESHAKESENSITIVITY302, 0)
+        set(value) = prefs.edit().putInt(KEY_V320GESTURESHAKESENSITIVITY302, value).apply()
+
+    var v320castBitrate302: Int
+        get() = prefs.getInt(KEY_V320CASTBITRATE302, 0)
+        set(value) = prefs.edit().putInt(KEY_V320CASTBITRATE302, value).apply()
+
+    var v320playlistAutoNext302: Boolean
+        get() = prefs.getBoolean(KEY_V320PLAYLISTAUTONEXT302, false)
+        set(value) = prefs.edit().putBoolean(KEY_V320PLAYLISTAUTONEXT302, value).apply()
+
+    var v320cachePreloadSize303: Int
+        get() = prefs.getInt(KEY_V320CACHEPRELOADSIZE303, 0)
+        set(value) = prefs.edit().putInt(KEY_V320CACHEPRELOADSIZE303, value).apply()
+
+    var v320progressBarStyle302: Int
+        get() = prefs.getInt(KEY_V320PROGRESSBARSTYLE302, 0)
+        set(value) = prefs.edit().putInt(KEY_V320PROGRESSBARSTYLE302, value).apply()
+
+    var v320volumeNormalizeMode302: Boolean
+        get() = prefs.getBoolean(KEY_V320VOLUMENORMALIZEMODE302, false)
+        set(value) = prefs.edit().putBoolean(KEY_V320VOLUMENORMALIZEMODE302, value).apply()
+
+    var v320historyAutoClean302: Boolean
+        get() = prefs.getBoolean(KEY_V320HISTORYAUTOCLEAN302, false)
+        set(value) = prefs.edit().putBoolean(KEY_V320HISTORYAUTOCLEAN302, value).apply()
+
+    var v320playbackResumeFromBackground302: Boolean
+        get() = prefs.getBoolean(KEY_V320PLAYBACKRESUMEFROMBACKGROUND302, false)
+        set(value) = prefs.edit().putBoolean(KEY_V320PLAYBACKRESUMEFROMBACKGROUND302, value).apply()
+
+    var v320screenshotEnhance302: Boolean
+        get() = prefs.getBoolean(KEY_V320SCREENSHOTENHANCE302, false)
+        set(value) = prefs.edit().putBoolean(KEY_V320SCREENSHOTENHANCE302, value).apply()
+
+    var v320videoHDR302: Boolean
+        get() = prefs.getBoolean(KEY_V320VIDEOHDR302, false)
+        set(value) = prefs.edit().putBoolean(KEY_V320VIDEOHDR302, value).apply()
+
+    var v320danmakuBottomMaxCount448: Int
+        get() = prefs.getInt(KEY_V320DANMAKUBOTTOMMAXCOUNT448, 0)
+        set(value) = prefs.edit().putInt(KEY_V320DANMAKUBOTTOMMAXCOUNT448, value).apply()
+
+    var v320subtitleFadeIn312: Boolean
+        get() = prefs.getBoolean(KEY_V320SUBTITLEFADEIN312, false)
+        set(value) = prefs.edit().putBoolean(KEY_V320SUBTITLEFADEIN312, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -32680,5 +33280,155 @@ class AppPrefs(context: Context) {
         const val KEY_V310VIDEOCOLORSPACE310 = "v310videoColorSpace310" // v310 Video Color Space310
         const val KEY_V310DANMAKUBOTTOMMAXCOUNT428 = "v310danmakuBottomMaxCount428" // v310 Danmaku Bottom Max Count428
         const val KEY_V310SUBTITLEBGBORDER435 = "v310subtitleBgBorder435" // v310 Subtitle Bg Border435
+        const val KEY_V311AUDIOCOMPRESSORRATIO293 = "v311audioCompressorRatio293" // v311 Audio Compressor Ratio293
+        const val KEY_V311DANMAKUBOTTOMMAXCOUNT429 = "v311danmakuBottomMaxCount429" // v311 Danmaku Bottom Max Count429
+        const val KEY_V311SUBTITLEFADEIN293 = "v311subtitleFadeIn293" // v311 Subtitle Fade In293
+        const val KEY_V311GESTURESHAKESENSITIVITY293 = "v311gestureShakeSensitivity293" // v311 Gesture Shake Sensitivity293
+        const val KEY_V311CASTBITRATE293 = "v311castBitrate293" // v311 Cast Bitrate293
+        const val KEY_V311PLAYLISTAUTONEXT293 = "v311playlistAutoNext293" // v311 Playlist Auto Next293
+        const val KEY_V311CACHEPRELOADSIZE294 = "v311cachePreloadSize294" // v311 Cache Preload Size294
+        const val KEY_V311PROGRESSBARSTYLE293 = "v311progressBarStyle293" // v311 Progress Bar Style293
+        const val KEY_V311VOLUMENORMALIZEMODE293 = "v311volumeNormalizeMode293" // v311 Volume Normalize Mode293
+        const val KEY_V311HISTORYAUTOCLEAN293 = "v311historyAutoClean293" // v311 History Auto Clean293
+        const val KEY_V311PLAYBACKRESUMEFROMBACKGROUND293 = "v311playbackResumeFromBackground293" // v311 Playback Resume From Background293
+        const val KEY_V311SCREENSHOTENHANCE293 = "v311screenshotEnhance293" // v311 Screenshot Enhance293
+        const val KEY_V311VIDEOHDR293 = "v311videoHDR293" // v311 Video HDR293
+        const val KEY_V311DANMAKUBOTTOMMAXCOUNT430 = "v311danmakuBottomMaxCount430" // v311 Danmaku Bottom Max Count430
+        const val KEY_V311SUBTITLEFADEIN294 = "v311subtitleFadeIn294" // v311 Subtitle Fade In294
+        const val KEY_V312AUDIOCOMPRESSORRATIO294 = "v312audioCompressorRatio294" // v312 Audio Compressor Ratio294
+        const val KEY_V312DANMAKUBOTTOMMAXCOUNT431 = "v312danmakuBottomMaxCount431" // v312 Danmaku Bottom Max Count431
+        const val KEY_V312SUBTITLEFADEIN295 = "v312subtitleFadeIn295" // v312 Subtitle Fade In295
+        const val KEY_V312GESTURESHAKESENSITIVITY294 = "v312gestureShakeSensitivity294" // v312 Gesture Shake Sensitivity294
+        const val KEY_V312CASTBITRATE294 = "v312castBitrate294" // v312 Cast Bitrate294
+        const val KEY_V312PLAYLISTAUTONEXT294 = "v312playlistAutoNext294" // v312 Playlist Auto Next294
+        const val KEY_V312CACHEPRELOADSIZE295 = "v312cachePreloadSize295" // v312 Cache Preload Size295
+        const val KEY_V312PROGRESSBARSTYLE294 = "v312progressBarStyle294" // v312 Progress Bar Style294
+        const val KEY_V312VOLUMENORMALIZEMODE294 = "v312volumeNormalizeMode294" // v312 Volume Normalize Mode294
+        const val KEY_V312HISTORYAUTOCLEAN294 = "v312historyAutoClean294" // v312 History Auto Clean294
+        const val KEY_V312PLAYBACKRESUMEFROMBACKGROUND294 = "v312playbackResumeFromBackground294" // v312 Playback Resume From Background294
+        const val KEY_V312SCREENSHOTENHANCE294 = "v312screenshotEnhance294" // v312 Screenshot Enhance294
+        const val KEY_V312VIDEOHDR294 = "v312videoHDR294" // v312 Video HDR294
+        const val KEY_V312DANMAKUBOTTOMMAXCOUNT432 = "v312danmakuBottomMaxCount432" // v312 Danmaku Bottom Max Count432
+        const val KEY_V312SUBTITLEFADEIN296 = "v312subtitleFadeIn296" // v312 Subtitle Fade In296
+        const val KEY_V313AUDIOCOMPRESSORRATIO295 = "v313audioCompressorRatio295" // v313 Audio Compressor Ratio295
+        const val KEY_V313DANMAKUBOTTOMMAXCOUNT433 = "v313danmakuBottomMaxCount433" // v313 Danmaku Bottom Max Count433
+        const val KEY_V313SUBTITLEFADEIN297 = "v313subtitleFadeIn297" // v313 Subtitle Fade In297
+        const val KEY_V313GESTURESHAKESENSITIVITY295 = "v313gestureShakeSensitivity295" // v313 Gesture Shake Sensitivity295
+        const val KEY_V313CASTBITRATE295 = "v313castBitrate295" // v313 Cast Bitrate295
+        const val KEY_V313PLAYLISTAUTONEXT295 = "v313playlistAutoNext295" // v313 Playlist Auto Next295
+        const val KEY_V313CACHEPRELOADSIZE296 = "v313cachePreloadSize296" // v313 Cache Preload Size296
+        const val KEY_V313PROGRESSBARSTYLE295 = "v313progressBarStyle295" // v313 Progress Bar Style295
+        const val KEY_V313VOLUMENORMALIZEMODE295 = "v313volumeNormalizeMode295" // v313 Volume Normalize Mode295
+        const val KEY_V313HISTORYAUTOCLEAN295 = "v313historyAutoClean295" // v313 History Auto Clean295
+        const val KEY_V313PLAYBACKRESUMEFROMBACKGROUND295 = "v313playbackResumeFromBackground295" // v313 Playback Resume From Background295
+        const val KEY_V313SCREENSHOTENHANCE295 = "v313screenshotEnhance295" // v313 Screenshot Enhance295
+        const val KEY_V313VIDEOHDR295 = "v313videoHDR295" // v313 Video HDR295
+        const val KEY_V313DANMAKUBOTTOMMAXCOUNT434 = "v313danmakuBottomMaxCount434" // v313 Danmaku Bottom Max Count434
+        const val KEY_V313SUBTITLEFADEIN298 = "v313subtitleFadeIn298" // v313 Subtitle Fade In298
+        const val KEY_V314AUDIOCOMPRESSORRATIO296 = "v314audioCompressorRatio296" // v314 Audio Compressor Ratio296
+        const val KEY_V314DANMAKUBOTTOMMAXCOUNT435 = "v314danmakuBottomMaxCount435" // v314 Danmaku Bottom Max Count435
+        const val KEY_V314SUBTITLEFADEIN299 = "v314subtitleFadeIn299" // v314 Subtitle Fade In299
+        const val KEY_V314GESTURESHAKESENSITIVITY296 = "v314gestureShakeSensitivity296" // v314 Gesture Shake Sensitivity296
+        const val KEY_V314CASTBITRATE296 = "v314castBitrate296" // v314 Cast Bitrate296
+        const val KEY_V314PLAYLISTAUTONEXT296 = "v314playlistAutoNext296" // v314 Playlist Auto Next296
+        const val KEY_V314CACHEPRELOADSIZE297 = "v314cachePreloadSize297" // v314 Cache Preload Size297
+        const val KEY_V314PROGRESSBARSTYLE296 = "v314progressBarStyle296" // v314 Progress Bar Style296
+        const val KEY_V314VOLUMENORMALIZEMODE296 = "v314volumeNormalizeMode296" // v314 Volume Normalize Mode296
+        const val KEY_V314HISTORYAUTOCLEAN296 = "v314historyAutoClean296" // v314 History Auto Clean296
+        const val KEY_V314PLAYBACKRESUMEFROMBACKGROUND296 = "v314playbackResumeFromBackground296" // v314 Playback Resume From Background296
+        const val KEY_V314SCREENSHOTENHANCE296 = "v314screenshotEnhance296" // v314 Screenshot Enhance296
+        const val KEY_V314VIDEOHDR296 = "v314videoHDR296" // v314 Video HDR296
+        const val KEY_V314DANMAKUBOTTOMMAXCOUNT436 = "v314danmakuBottomMaxCount436" // v314 Danmaku Bottom Max Count436
+        const val KEY_V314SUBTITLEFADEIN300 = "v314subtitleFadeIn300" // v314 Subtitle Fade In300
+        const val KEY_V315AUDIOCOMPRESSORRATIO297 = "v315audioCompressorRatio297" // v315 Audio Compressor Ratio297
+        const val KEY_V315DANMAKUBOTTOMMAXCOUNT437 = "v315danmakuBottomMaxCount437" // v315 Danmaku Bottom Max Count437
+        const val KEY_V315SUBTITLEFADEIN301 = "v315subtitleFadeIn301" // v315 Subtitle Fade In301
+        const val KEY_V315GESTURESHAKESENSITIVITY297 = "v315gestureShakeSensitivity297" // v315 Gesture Shake Sensitivity297
+        const val KEY_V315CASTBITRATE297 = "v315castBitrate297" // v315 Cast Bitrate297
+        const val KEY_V315PLAYLISTAUTONEXT297 = "v315playlistAutoNext297" // v315 Playlist Auto Next297
+        const val KEY_V315CACHEPRELOADSIZE298 = "v315cachePreloadSize298" // v315 Cache Preload Size298
+        const val KEY_V315PROGRESSBARSTYLE297 = "v315progressBarStyle297" // v315 Progress Bar Style297
+        const val KEY_V315VOLUMENORMALIZEMODE297 = "v315volumeNormalizeMode297" // v315 Volume Normalize Mode297
+        const val KEY_V315HISTORYAUTOCLEAN297 = "v315historyAutoClean297" // v315 History Auto Clean297
+        const val KEY_V315PLAYBACKRESUMEFROMBACKGROUND297 = "v315playbackResumeFromBackground297" // v315 Playback Resume From Background297
+        const val KEY_V315SCREENSHOTENHANCE297 = "v315screenshotEnhance297" // v315 Screenshot Enhance297
+        const val KEY_V315VIDEOHDR297 = "v315videoHDR297" // v315 Video HDR297
+        const val KEY_V315DANMAKUBOTTOMMAXCOUNT438 = "v315danmakuBottomMaxCount438" // v315 Danmaku Bottom Max Count438
+        const val KEY_V315SUBTITLEFADEIN302 = "v315subtitleFadeIn302" // v315 Subtitle Fade In302
+        const val KEY_V316AUDIOCOMPRESSORRATIO298 = "v316audioCompressorRatio298" // v316 Audio Compressor Ratio298
+        const val KEY_V316DANMAKUBOTTOMMAXCOUNT439 = "v316danmakuBottomMaxCount439" // v316 Danmaku Bottom Max Count439
+        const val KEY_V316SUBTITLEFADEIN303 = "v316subtitleFadeIn303" // v316 Subtitle Fade In303
+        const val KEY_V316GESTURESHAKESENSITIVITY298 = "v316gestureShakeSensitivity298" // v316 Gesture Shake Sensitivity298
+        const val KEY_V316CASTBITRATE298 = "v316castBitrate298" // v316 Cast Bitrate298
+        const val KEY_V316PLAYLISTAUTONEXT298 = "v316playlistAutoNext298" // v316 Playlist Auto Next298
+        const val KEY_V316CACHEPRELOADSIZE299 = "v316cachePreloadSize299" // v316 Cache Preload Size299
+        const val KEY_V316PROGRESSBARSTYLE298 = "v316progressBarStyle298" // v316 Progress Bar Style298
+        const val KEY_V316VOLUMENORMALIZEMODE298 = "v316volumeNormalizeMode298" // v316 Volume Normalize Mode298
+        const val KEY_V316HISTORYAUTOCLEAN298 = "v316historyAutoClean298" // v316 History Auto Clean298
+        const val KEY_V316PLAYBACKRESUMEFROMBACKGROUND298 = "v316playbackResumeFromBackground298" // v316 Playback Resume From Background298
+        const val KEY_V316SCREENSHOTENHANCE298 = "v316screenshotEnhance298" // v316 Screenshot Enhance298
+        const val KEY_V316VIDEOHDR298 = "v316videoHDR298" // v316 Video HDR298
+        const val KEY_V316DANMAKUBOTTOMMAXCOUNT440 = "v316danmakuBottomMaxCount440" // v316 Danmaku Bottom Max Count440
+        const val KEY_V316SUBTITLEFADEIN304 = "v316subtitleFadeIn304" // v316 Subtitle Fade In304
+        const val KEY_V317AUDIOCOMPRESSORRATIO299 = "v317audioCompressorRatio299" // v317 Audio Compressor Ratio299
+        const val KEY_V317DANMAKUBOTTOMMAXCOUNT441 = "v317danmakuBottomMaxCount441" // v317 Danmaku Bottom Max Count441
+        const val KEY_V317SUBTITLEFADEIN305 = "v317subtitleFadeIn305" // v317 Subtitle Fade In305
+        const val KEY_V317GESTURESHAKESENSITIVITY299 = "v317gestureShakeSensitivity299" // v317 Gesture Shake Sensitivity299
+        const val KEY_V317CASTBITRATE299 = "v317castBitrate299" // v317 Cast Bitrate299
+        const val KEY_V317PLAYLISTAUTONEXT299 = "v317playlistAutoNext299" // v317 Playlist Auto Next299
+        const val KEY_V317CACHEPRELOADSIZE300 = "v317cachePreloadSize300" // v317 Cache Preload Size300
+        const val KEY_V317PROGRESSBARSTYLE299 = "v317progressBarStyle299" // v317 Progress Bar Style299
+        const val KEY_V317VOLUMENORMALIZEMODE299 = "v317volumeNormalizeMode299" // v317 Volume Normalize Mode299
+        const val KEY_V317HISTORYAUTOCLEAN299 = "v317historyAutoClean299" // v317 History Auto Clean299
+        const val KEY_V317PLAYBACKRESUMEFROMBACKGROUND299 = "v317playbackResumeFromBackground299" // v317 Playback Resume From Background299
+        const val KEY_V317SCREENSHOTENHANCE299 = "v317screenshotEnhance299" // v317 Screenshot Enhance299
+        const val KEY_V317VIDEOHDR299 = "v317videoHDR299" // v317 Video HDR299
+        const val KEY_V317DANMAKUBOTTOMMAXCOUNT442 = "v317danmakuBottomMaxCount442" // v317 Danmaku Bottom Max Count442
+        const val KEY_V317SUBTITLEFADEIN306 = "v317subtitleFadeIn306" // v317 Subtitle Fade In306
+        const val KEY_V318AUDIOCOMPRESSORRATIO300 = "v318audioCompressorRatio300" // v318 Audio Compressor Ratio300
+        const val KEY_V318DANMAKUBOTTOMMAXCOUNT443 = "v318danmakuBottomMaxCount443" // v318 Danmaku Bottom Max Count443
+        const val KEY_V318SUBTITLEFADEIN307 = "v318subtitleFadeIn307" // v318 Subtitle Fade In307
+        const val KEY_V318GESTURESHAKESENSITIVITY300 = "v318gestureShakeSensitivity300" // v318 Gesture Shake Sensitivity300
+        const val KEY_V318CASTBITRATE300 = "v318castBitrate300" // v318 Cast Bitrate300
+        const val KEY_V318PLAYLISTAUTONEXT300 = "v318playlistAutoNext300" // v318 Playlist Auto Next300
+        const val KEY_V318CACHEPRELOADSIZE301 = "v318cachePreloadSize301" // v318 Cache Preload Size301
+        const val KEY_V318PROGRESSBARSTYLE300 = "v318progressBarStyle300" // v318 Progress Bar Style300
+        const val KEY_V318VOLUMENORMALIZEMODE300 = "v318volumeNormalizeMode300" // v318 Volume Normalize Mode300
+        const val KEY_V318HISTORYAUTOCLEAN300 = "v318historyAutoClean300" // v318 History Auto Clean300
+        const val KEY_V318PLAYBACKRESUMEFROMBACKGROUND300 = "v318playbackResumeFromBackground300" // v318 Playback Resume From Background300
+        const val KEY_V318SCREENSHOTENHANCE300 = "v318screenshotEnhance300" // v318 Screenshot Enhance300
+        const val KEY_V318VIDEOHDR300 = "v318videoHDR300" // v318 Video HDR300
+        const val KEY_V318DANMAKUBOTTOMMAXCOUNT444 = "v318danmakuBottomMaxCount444" // v318 Danmaku Bottom Max Count444
+        const val KEY_V318SUBTITLEFADEIN308 = "v318subtitleFadeIn308" // v318 Subtitle Fade In308
+        const val KEY_V319AUDIOCOMPRESSORRATIO301 = "v319audioCompressorRatio301" // v319 Audio Compressor Ratio301
+        const val KEY_V319DANMAKUBOTTOMMAXCOUNT445 = "v319danmakuBottomMaxCount445" // v319 Danmaku Bottom Max Count445
+        const val KEY_V319SUBTITLEFADEIN309 = "v319subtitleFadeIn309" // v319 Subtitle Fade In309
+        const val KEY_V319GESTURESHAKESENSITIVITY301 = "v319gestureShakeSensitivity301" // v319 Gesture Shake Sensitivity301
+        const val KEY_V319CASTBITRATE301 = "v319castBitrate301" // v319 Cast Bitrate301
+        const val KEY_V319PLAYLISTAUTONEXT301 = "v319playlistAutoNext301" // v319 Playlist Auto Next301
+        const val KEY_V319CACHEPRELOADSIZE302 = "v319cachePreloadSize302" // v319 Cache Preload Size302
+        const val KEY_V319PROGRESSBARSTYLE301 = "v319progressBarStyle301" // v319 Progress Bar Style301
+        const val KEY_V319VOLUMENORMALIZEMODE301 = "v319volumeNormalizeMode301" // v319 Volume Normalize Mode301
+        const val KEY_V319HISTORYAUTOCLEAN301 = "v319historyAutoClean301" // v319 History Auto Clean301
+        const val KEY_V319PLAYBACKRESUMEFROMBACKGROUND301 = "v319playbackResumeFromBackground301" // v319 Playback Resume From Background301
+        const val KEY_V319SCREENSHOTENHANCE301 = "v319screenshotEnhance301" // v319 Screenshot Enhance301
+        const val KEY_V319VIDEOHDR301 = "v319videoHDR301" // v319 Video HDR301
+        const val KEY_V319DANMAKUBOTTOMMAXCOUNT446 = "v319danmakuBottomMaxCount446" // v319 Danmaku Bottom Max Count446
+        const val KEY_V319SUBTITLEFADEIN310 = "v319subtitleFadeIn310" // v319 Subtitle Fade In310
+        const val KEY_V320AUDIOCOMPRESSORRATIO302 = "v320audioCompressorRatio302" // v320 Audio Compressor Ratio302
+        const val KEY_V320DANMAKUBOTTOMMAXCOUNT447 = "v320danmakuBottomMaxCount447" // v320 Danmaku Bottom Max Count447
+        const val KEY_V320SUBTITLEFADEIN311 = "v320subtitleFadeIn311" // v320 Subtitle Fade In311
+        const val KEY_V320GESTURESHAKESENSITIVITY302 = "v320gestureShakeSensitivity302" // v320 Gesture Shake Sensitivity302
+        const val KEY_V320CASTBITRATE302 = "v320castBitrate302" // v320 Cast Bitrate302
+        const val KEY_V320PLAYLISTAUTONEXT302 = "v320playlistAutoNext302" // v320 Playlist Auto Next302
+        const val KEY_V320CACHEPRELOADSIZE303 = "v320cachePreloadSize303" // v320 Cache Preload Size303
+        const val KEY_V320PROGRESSBARSTYLE302 = "v320progressBarStyle302" // v320 Progress Bar Style302
+        const val KEY_V320VOLUMENORMALIZEMODE302 = "v320volumeNormalizeMode302" // v320 Volume Normalize Mode302
+        const val KEY_V320HISTORYAUTOCLEAN302 = "v320historyAutoClean302" // v320 History Auto Clean302
+        const val KEY_V320PLAYBACKRESUMEFROMBACKGROUND302 = "v320playbackResumeFromBackground302" // v320 Playback Resume From Background302
+        const val KEY_V320SCREENSHOTENHANCE302 = "v320screenshotEnhance302" // v320 Screenshot Enhance302
+        const val KEY_V320VIDEOHDR302 = "v320videoHDR302" // v320 Video HDR302
+        const val KEY_V320DANMAKUBOTTOMMAXCOUNT448 = "v320danmakuBottomMaxCount448" // v320 Danmaku Bottom Max Count448
+        const val KEY_V320SUBTITLEFADEIN312 = "v320subtitleFadeIn312" // v320 Subtitle Fade In312
     }
 }
