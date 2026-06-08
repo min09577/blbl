@@ -55248,6 +55248,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V810MASKAUTOAPPLY810, false)
         set(value) = prefs.edit().putBoolean(KEY_V810MASKAUTOAPPLY810, value).apply()
 
+    var v811masterAutoSync811: Boolean
+        get() = prefs.getBoolean(KEY_V811MASTERAUTOSYNC811, false)
+        set(value) = prefs.edit().putBoolean(KEY_V811MASTERAUTOSYNC811, value).apply()
+
+    var v811matchAutoFuzzy811: Boolean
+        get() = prefs.getBoolean(KEY_V811MATCHAUTOFUZZY811, false)
+        set(value) = prefs.edit().putBoolean(KEY_V811MATCHAUTOFUZZY811, value).apply()
+
+    var v811mathAutoRound811: Boolean
+        get() = prefs.getBoolean(KEY_V811MATHAUTOROUND811, false)
+        set(value) = prefs.edit().putBoolean(KEY_V811MATHAUTOROUND811, value).apply()
+
+    var v811maxAutoLimit811: Int
+        get() = prefs.getInt(KEY_V811MAXAUTOLIMIT811, 0)
+        set(value) = prefs.edit().putInt(KEY_V811MAXAUTOLIMIT811, value).apply()
+
+    var v811measureAutoUnit811: Boolean
+        get() = prefs.getBoolean(KEY_V811MEASUREAUTOUNIT811, false)
+        set(value) = prefs.edit().putBoolean(KEY_V811MEASUREAUTOUNIT811, value).apply()
+
+    var v811mediaAutoCodec811: Boolean
+        get() = prefs.getBoolean(KEY_V811MEDIAAUTOCODEC811, false)
+        set(value) = prefs.edit().putBoolean(KEY_V811MEDIAAUTOCODEC811, value).apply()
+
+    var v811memoryAutoOptimize811: Boolean
+        get() = prefs.getBoolean(KEY_V811MEMORYAUTOOPTIMIZE811, false)
+        set(value) = prefs.edit().putBoolean(KEY_V811MEMORYAUTOOPTIMIZE811, value).apply()
+
+    var v811menuAutoContext811: Boolean
+        get() = prefs.getBoolean(KEY_V811MENUAUTOCONTEXT811, false)
+        set(value) = prefs.edit().putBoolean(KEY_V811MENUAUTOCONTEXT811, value).apply()
+
+    var v811messageAutoQueue811: Boolean
+        get() = prefs.getBoolean(KEY_V811MESSAGEAUTOQUEUE811, false)
+        set(value) = prefs.edit().putBoolean(KEY_V811MESSAGEAUTOQUEUE811, value).apply()
+
+    var v811metaAutoExtract811: Boolean
+        get() = prefs.getBoolean(KEY_V811METAAUTOEXTRACT811, false)
+        set(value) = prefs.edit().putBoolean(KEY_V811METAAUTOEXTRACT811, value).apply()
+
+    var v811methodAutoHook811: Boolean
+        get() = prefs.getBoolean(KEY_V811METHODAUTOHOOK811, false)
+        set(value) = prefs.edit().putBoolean(KEY_V811METHODAUTOHOOK811, value).apply()
+
+    var v811middleAutoCenter811: Boolean
+        get() = prefs.getBoolean(KEY_V811MIDDLEAUTOCENTER811, false)
+        set(value) = prefs.edit().putBoolean(KEY_V811MIDDLEAUTOCENTER811, value).apply()
+
+    var v811minAutoThreshold811: Int
+        get() = prefs.getInt(KEY_V811MINAUTOTHRESHOLD811, 0)
+        set(value) = prefs.edit().putInt(KEY_V811MINAUTOTHRESHOLD811, value).apply()
+
+    var v811modeAutoAdaptive811: Boolean
+        get() = prefs.getBoolean(KEY_V811MODEAUTOADAPTIVE811, false)
+        set(value) = prefs.edit().putBoolean(KEY_V811MODEAUTOADAPTIVE811, value).apply()
+
+    var v811modelAutoDetect811: Boolean
+        get() = prefs.getBoolean(KEY_V811MODELAUTODETECT811, false)
+        set(value) = prefs.edit().putBoolean(KEY_V811MODELAUTODETECT811, value).apply()
+
+    var v812masterAutoSync812: Boolean
+        get() = prefs.getBoolean(KEY_V812MASTERAUTOSYNC812, false)
+        set(value) = prefs.edit().putBoolean(KEY_V812MASTERAUTOSYNC812, value).apply()
+
+    var v812matchAutoFuzzy812: Boolean
+        get() = prefs.getBoolean(KEY_V812MATCHAUTOFUZZY812, false)
+        set(value) = prefs.edit().putBoolean(KEY_V812MATCHAUTOFUZZY812, value).apply()
+
+    var v812mathAutoRound812: Boolean
+        get() = prefs.getBoolean(KEY_V812MATHAUTOROUND812, false)
+        set(value) = prefs.edit().putBoolean(KEY_V812MATHAUTOROUND812, value).apply()
+
+    var v812maxAutoLimit812: Int
+        get() = prefs.getInt(KEY_V812MAXAUTOLIMIT812, 0)
+        set(value) = prefs.edit().putInt(KEY_V812MAXAUTOLIMIT812, value).apply()
+
+    var v812measureAutoUnit812: Boolean
+        get() = prefs.getBoolean(KEY_V812MEASUREAUTOUNIT812, false)
+        set(value) = prefs.edit().putBoolean(KEY_V812MEASUREAUTOUNIT812, value).apply()
+
+    var v812mediaAutoCodec812: Boolean
+        get() = prefs.getBoolean(KEY_V812MEDIAAUTOCODEC812, false)
+        set(value) = prefs.edit().putBoolean(KEY_V812MEDIAAUTOCODEC812, value).apply()
+
+    var v812memoryAutoOptimize812: Boolean
+        get() = prefs.getBoolean(KEY_V812MEMORYAUTOOPTIMIZE812, false)
+        set(value) = prefs.edit().putBoolean(KEY_V812MEMORYAUTOOPTIMIZE812, value).apply()
+
+    var v812menuAutoContext812: Boolean
+        get() = prefs.getBoolean(KEY_V812MENUAUTOCONTEXT812, false)
+        set(value) = prefs.edit().putBoolean(KEY_V812MENUAUTOCONTEXT812, value).apply()
+
+    var v812messageAutoQueue812: Boolean
+        get() = prefs.getBoolean(KEY_V812MESSAGEAUTOQUEUE812, false)
+        set(value) = prefs.edit().putBoolean(KEY_V812MESSAGEAUTOQUEUE812, value).apply()
+
+    var v812metaAutoExtract812: Boolean
+        get() = prefs.getBoolean(KEY_V812METAAUTOEXTRACT812, false)
+        set(value) = prefs.edit().putBoolean(KEY_V812METAAUTOEXTRACT812, value).apply()
+
+    var v812methodAutoHook812: Boolean
+        get() = prefs.getBoolean(KEY_V812METHODAUTOHOOK812, false)
+        set(value) = prefs.edit().putBoolean(KEY_V812METHODAUTOHOOK812, value).apply()
+
+    var v812middleAutoCenter812: Boolean
+        get() = prefs.getBoolean(KEY_V812MIDDLEAUTOCENTER812, false)
+        set(value) = prefs.edit().putBoolean(KEY_V812MIDDLEAUTOCENTER812, value).apply()
+
+    var v812minAutoThreshold812: Int
+        get() = prefs.getInt(KEY_V812MINAUTOTHRESHOLD812, 0)
+        set(value) = prefs.edit().putInt(KEY_V812MINAUTOTHRESHOLD812, value).apply()
+
+    var v812modeAutoAdaptive812: Boolean
+        get() = prefs.getBoolean(KEY_V812MODEAUTOADAPTIVE812, false)
+        set(value) = prefs.edit().putBoolean(KEY_V812MODEAUTOADAPTIVE812, value).apply()
+
+    var v812modelAutoDetect812: Boolean
+        get() = prefs.getBoolean(KEY_V812MODELAUTODETECT812, false)
+        set(value) = prefs.edit().putBoolean(KEY_V812MODELAUTODETECT812, value).apply()
+
+    var v813masterAutoSync813: Boolean
+        get() = prefs.getBoolean(KEY_V813MASTERAUTOSYNC813, false)
+        set(value) = prefs.edit().putBoolean(KEY_V813MASTERAUTOSYNC813, value).apply()
+
+    var v813matchAutoFuzzy813: Boolean
+        get() = prefs.getBoolean(KEY_V813MATCHAUTOFUZZY813, false)
+        set(value) = prefs.edit().putBoolean(KEY_V813MATCHAUTOFUZZY813, value).apply()
+
+    var v813mathAutoRound813: Boolean
+        get() = prefs.getBoolean(KEY_V813MATHAUTOROUND813, false)
+        set(value) = prefs.edit().putBoolean(KEY_V813MATHAUTOROUND813, value).apply()
+
+    var v813maxAutoLimit813: Int
+        get() = prefs.getInt(KEY_V813MAXAUTOLIMIT813, 0)
+        set(value) = prefs.edit().putInt(KEY_V813MAXAUTOLIMIT813, value).apply()
+
+    var v813measureAutoUnit813: Boolean
+        get() = prefs.getBoolean(KEY_V813MEASUREAUTOUNIT813, false)
+        set(value) = prefs.edit().putBoolean(KEY_V813MEASUREAUTOUNIT813, value).apply()
+
+    var v813mediaAutoCodec813: Boolean
+        get() = prefs.getBoolean(KEY_V813MEDIAAUTOCODEC813, false)
+        set(value) = prefs.edit().putBoolean(KEY_V813MEDIAAUTOCODEC813, value).apply()
+
+    var v813memoryAutoOptimize813: Boolean
+        get() = prefs.getBoolean(KEY_V813MEMORYAUTOOPTIMIZE813, false)
+        set(value) = prefs.edit().putBoolean(KEY_V813MEMORYAUTOOPTIMIZE813, value).apply()
+
+    var v813menuAutoContext813: Boolean
+        get() = prefs.getBoolean(KEY_V813MENUAUTOCONTEXT813, false)
+        set(value) = prefs.edit().putBoolean(KEY_V813MENUAUTOCONTEXT813, value).apply()
+
+    var v813messageAutoQueue813: Boolean
+        get() = prefs.getBoolean(KEY_V813MESSAGEAUTOQUEUE813, false)
+        set(value) = prefs.edit().putBoolean(KEY_V813MESSAGEAUTOQUEUE813, value).apply()
+
+    var v813metaAutoExtract813: Boolean
+        get() = prefs.getBoolean(KEY_V813METAAUTOEXTRACT813, false)
+        set(value) = prefs.edit().putBoolean(KEY_V813METAAUTOEXTRACT813, value).apply()
+
+    var v813methodAutoHook813: Boolean
+        get() = prefs.getBoolean(KEY_V813METHODAUTOHOOK813, false)
+        set(value) = prefs.edit().putBoolean(KEY_V813METHODAUTOHOOK813, value).apply()
+
+    var v813middleAutoCenter813: Boolean
+        get() = prefs.getBoolean(KEY_V813MIDDLEAUTOCENTER813, false)
+        set(value) = prefs.edit().putBoolean(KEY_V813MIDDLEAUTOCENTER813, value).apply()
+
+    var v813minAutoThreshold813: Int
+        get() = prefs.getInt(KEY_V813MINAUTOTHRESHOLD813, 0)
+        set(value) = prefs.edit().putInt(KEY_V813MINAUTOTHRESHOLD813, value).apply()
+
+    var v813modeAutoAdaptive813: Boolean
+        get() = prefs.getBoolean(KEY_V813MODEAUTOADAPTIVE813, false)
+        set(value) = prefs.edit().putBoolean(KEY_V813MODEAUTOADAPTIVE813, value).apply()
+
+    var v813modelAutoDetect813: Boolean
+        get() = prefs.getBoolean(KEY_V813MODELAUTODETECT813, false)
+        set(value) = prefs.edit().putBoolean(KEY_V813MODELAUTODETECT813, value).apply()
+
+    var v814masterAutoSync814: Boolean
+        get() = prefs.getBoolean(KEY_V814MASTERAUTOSYNC814, false)
+        set(value) = prefs.edit().putBoolean(KEY_V814MASTERAUTOSYNC814, value).apply()
+
+    var v814matchAutoFuzzy814: Boolean
+        get() = prefs.getBoolean(KEY_V814MATCHAUTOFUZZY814, false)
+        set(value) = prefs.edit().putBoolean(KEY_V814MATCHAUTOFUZZY814, value).apply()
+
+    var v814mathAutoRound814: Boolean
+        get() = prefs.getBoolean(KEY_V814MATHAUTOROUND814, false)
+        set(value) = prefs.edit().putBoolean(KEY_V814MATHAUTOROUND814, value).apply()
+
+    var v814maxAutoLimit814: Int
+        get() = prefs.getInt(KEY_V814MAXAUTOLIMIT814, 0)
+        set(value) = prefs.edit().putInt(KEY_V814MAXAUTOLIMIT814, value).apply()
+
+    var v814measureAutoUnit814: Boolean
+        get() = prefs.getBoolean(KEY_V814MEASUREAUTOUNIT814, false)
+        set(value) = prefs.edit().putBoolean(KEY_V814MEASUREAUTOUNIT814, value).apply()
+
+    var v814mediaAutoCodec814: Boolean
+        get() = prefs.getBoolean(KEY_V814MEDIAAUTOCODEC814, false)
+        set(value) = prefs.edit().putBoolean(KEY_V814MEDIAAUTOCODEC814, value).apply()
+
+    var v814memoryAutoOptimize814: Boolean
+        get() = prefs.getBoolean(KEY_V814MEMORYAUTOOPTIMIZE814, false)
+        set(value) = prefs.edit().putBoolean(KEY_V814MEMORYAUTOOPTIMIZE814, value).apply()
+
+    var v814menuAutoContext814: Boolean
+        get() = prefs.getBoolean(KEY_V814MENUAUTOCONTEXT814, false)
+        set(value) = prefs.edit().putBoolean(KEY_V814MENUAUTOCONTEXT814, value).apply()
+
+    var v814messageAutoQueue814: Boolean
+        get() = prefs.getBoolean(KEY_V814MESSAGEAUTOQUEUE814, false)
+        set(value) = prefs.edit().putBoolean(KEY_V814MESSAGEAUTOQUEUE814, value).apply()
+
+    var v814metaAutoExtract814: Boolean
+        get() = prefs.getBoolean(KEY_V814METAAUTOEXTRACT814, false)
+        set(value) = prefs.edit().putBoolean(KEY_V814METAAUTOEXTRACT814, value).apply()
+
+    var v814methodAutoHook814: Boolean
+        get() = prefs.getBoolean(KEY_V814METHODAUTOHOOK814, false)
+        set(value) = prefs.edit().putBoolean(KEY_V814METHODAUTOHOOK814, value).apply()
+
+    var v814middleAutoCenter814: Boolean
+        get() = prefs.getBoolean(KEY_V814MIDDLEAUTOCENTER814, false)
+        set(value) = prefs.edit().putBoolean(KEY_V814MIDDLEAUTOCENTER814, value).apply()
+
+    var v814minAutoThreshold814: Int
+        get() = prefs.getInt(KEY_V814MINAUTOTHRESHOLD814, 0)
+        set(value) = prefs.edit().putInt(KEY_V814MINAUTOTHRESHOLD814, value).apply()
+
+    var v814modeAutoAdaptive814: Boolean
+        get() = prefs.getBoolean(KEY_V814MODEAUTOADAPTIVE814, false)
+        set(value) = prefs.edit().putBoolean(KEY_V814MODEAUTOADAPTIVE814, value).apply()
+
+    var v814modelAutoDetect814: Boolean
+        get() = prefs.getBoolean(KEY_V814MODELAUTODETECT814, false)
+        set(value) = prefs.edit().putBoolean(KEY_V814MODELAUTODETECT814, value).apply()
+
+    var v815masterAutoSync815: Boolean
+        get() = prefs.getBoolean(KEY_V815MASTERAUTOSYNC815, false)
+        set(value) = prefs.edit().putBoolean(KEY_V815MASTERAUTOSYNC815, value).apply()
+
+    var v815matchAutoFuzzy815: Boolean
+        get() = prefs.getBoolean(KEY_V815MATCHAUTOFUZZY815, false)
+        set(value) = prefs.edit().putBoolean(KEY_V815MATCHAUTOFUZZY815, value).apply()
+
+    var v815mathAutoRound815: Boolean
+        get() = prefs.getBoolean(KEY_V815MATHAUTOROUND815, false)
+        set(value) = prefs.edit().putBoolean(KEY_V815MATHAUTOROUND815, value).apply()
+
+    var v815maxAutoLimit815: Int
+        get() = prefs.getInt(KEY_V815MAXAUTOLIMIT815, 0)
+        set(value) = prefs.edit().putInt(KEY_V815MAXAUTOLIMIT815, value).apply()
+
+    var v815measureAutoUnit815: Boolean
+        get() = prefs.getBoolean(KEY_V815MEASUREAUTOUNIT815, false)
+        set(value) = prefs.edit().putBoolean(KEY_V815MEASUREAUTOUNIT815, value).apply()
+
+    var v815mediaAutoCodec815: Boolean
+        get() = prefs.getBoolean(KEY_V815MEDIAAUTOCODEC815, false)
+        set(value) = prefs.edit().putBoolean(KEY_V815MEDIAAUTOCODEC815, value).apply()
+
+    var v815memoryAutoOptimize815: Boolean
+        get() = prefs.getBoolean(KEY_V815MEMORYAUTOOPTIMIZE815, false)
+        set(value) = prefs.edit().putBoolean(KEY_V815MEMORYAUTOOPTIMIZE815, value).apply()
+
+    var v815menuAutoContext815: Boolean
+        get() = prefs.getBoolean(KEY_V815MENUAUTOCONTEXT815, false)
+        set(value) = prefs.edit().putBoolean(KEY_V815MENUAUTOCONTEXT815, value).apply()
+
+    var v815messageAutoQueue815: Boolean
+        get() = prefs.getBoolean(KEY_V815MESSAGEAUTOQUEUE815, false)
+        set(value) = prefs.edit().putBoolean(KEY_V815MESSAGEAUTOQUEUE815, value).apply()
+
+    var v815metaAutoExtract815: Boolean
+        get() = prefs.getBoolean(KEY_V815METAAUTOEXTRACT815, false)
+        set(value) = prefs.edit().putBoolean(KEY_V815METAAUTOEXTRACT815, value).apply()
+
+    var v815methodAutoHook815: Boolean
+        get() = prefs.getBoolean(KEY_V815METHODAUTOHOOK815, false)
+        set(value) = prefs.edit().putBoolean(KEY_V815METHODAUTOHOOK815, value).apply()
+
+    var v815middleAutoCenter815: Boolean
+        get() = prefs.getBoolean(KEY_V815MIDDLEAUTOCENTER815, false)
+        set(value) = prefs.edit().putBoolean(KEY_V815MIDDLEAUTOCENTER815, value).apply()
+
+    var v815minAutoThreshold815: Int
+        get() = prefs.getInt(KEY_V815MINAUTOTHRESHOLD815, 0)
+        set(value) = prefs.edit().putInt(KEY_V815MINAUTOTHRESHOLD815, value).apply()
+
+    var v815modeAutoAdaptive815: Boolean
+        get() = prefs.getBoolean(KEY_V815MODEAUTOADAPTIVE815, false)
+        set(value) = prefs.edit().putBoolean(KEY_V815MODEAUTOADAPTIVE815, value).apply()
+
+    var v815modelAutoDetect815: Boolean
+        get() = prefs.getBoolean(KEY_V815MODELAUTODETECT815, false)
+        set(value) = prefs.edit().putBoolean(KEY_V815MODELAUTODETECT815, value).apply()
+
+    var v816masterAutoSync816: Boolean
+        get() = prefs.getBoolean(KEY_V816MASTERAUTOSYNC816, false)
+        set(value) = prefs.edit().putBoolean(KEY_V816MASTERAUTOSYNC816, value).apply()
+
+    var v816matchAutoFuzzy816: Boolean
+        get() = prefs.getBoolean(KEY_V816MATCHAUTOFUZZY816, false)
+        set(value) = prefs.edit().putBoolean(KEY_V816MATCHAUTOFUZZY816, value).apply()
+
+    var v816mathAutoRound816: Boolean
+        get() = prefs.getBoolean(KEY_V816MATHAUTOROUND816, false)
+        set(value) = prefs.edit().putBoolean(KEY_V816MATHAUTOROUND816, value).apply()
+
+    var v816maxAutoLimit816: Int
+        get() = prefs.getInt(KEY_V816MAXAUTOLIMIT816, 0)
+        set(value) = prefs.edit().putInt(KEY_V816MAXAUTOLIMIT816, value).apply()
+
+    var v816measureAutoUnit816: Boolean
+        get() = prefs.getBoolean(KEY_V816MEASUREAUTOUNIT816, false)
+        set(value) = prefs.edit().putBoolean(KEY_V816MEASUREAUTOUNIT816, value).apply()
+
+    var v816mediaAutoCodec816: Boolean
+        get() = prefs.getBoolean(KEY_V816MEDIAAUTOCODEC816, false)
+        set(value) = prefs.edit().putBoolean(KEY_V816MEDIAAUTOCODEC816, value).apply()
+
+    var v816memoryAutoOptimize816: Boolean
+        get() = prefs.getBoolean(KEY_V816MEMORYAUTOOPTIMIZE816, false)
+        set(value) = prefs.edit().putBoolean(KEY_V816MEMORYAUTOOPTIMIZE816, value).apply()
+
+    var v816menuAutoContext816: Boolean
+        get() = prefs.getBoolean(KEY_V816MENUAUTOCONTEXT816, false)
+        set(value) = prefs.edit().putBoolean(KEY_V816MENUAUTOCONTEXT816, value).apply()
+
+    var v816messageAutoQueue816: Boolean
+        get() = prefs.getBoolean(KEY_V816MESSAGEAUTOQUEUE816, false)
+        set(value) = prefs.edit().putBoolean(KEY_V816MESSAGEAUTOQUEUE816, value).apply()
+
+    var v816metaAutoExtract816: Boolean
+        get() = prefs.getBoolean(KEY_V816METAAUTOEXTRACT816, false)
+        set(value) = prefs.edit().putBoolean(KEY_V816METAAUTOEXTRACT816, value).apply()
+
+    var v816methodAutoHook816: Boolean
+        get() = prefs.getBoolean(KEY_V816METHODAUTOHOOK816, false)
+        set(value) = prefs.edit().putBoolean(KEY_V816METHODAUTOHOOK816, value).apply()
+
+    var v816middleAutoCenter816: Boolean
+        get() = prefs.getBoolean(KEY_V816MIDDLEAUTOCENTER816, false)
+        set(value) = prefs.edit().putBoolean(KEY_V816MIDDLEAUTOCENTER816, value).apply()
+
+    var v816minAutoThreshold816: Int
+        get() = prefs.getInt(KEY_V816MINAUTOTHRESHOLD816, 0)
+        set(value) = prefs.edit().putInt(KEY_V816MINAUTOTHRESHOLD816, value).apply()
+
+    var v816modeAutoAdaptive816: Boolean
+        get() = prefs.getBoolean(KEY_V816MODEAUTOADAPTIVE816, false)
+        set(value) = prefs.edit().putBoolean(KEY_V816MODEAUTOADAPTIVE816, value).apply()
+
+    var v816modelAutoDetect816: Boolean
+        get() = prefs.getBoolean(KEY_V816MODELAUTODETECT816, false)
+        set(value) = prefs.edit().putBoolean(KEY_V816MODELAUTODETECT816, value).apply()
+
+    var v817masterAutoSync817: Boolean
+        get() = prefs.getBoolean(KEY_V817MASTERAUTOSYNC817, false)
+        set(value) = prefs.edit().putBoolean(KEY_V817MASTERAUTOSYNC817, value).apply()
+
+    var v817matchAutoFuzzy817: Boolean
+        get() = prefs.getBoolean(KEY_V817MATCHAUTOFUZZY817, false)
+        set(value) = prefs.edit().putBoolean(KEY_V817MATCHAUTOFUZZY817, value).apply()
+
+    var v817mathAutoRound817: Boolean
+        get() = prefs.getBoolean(KEY_V817MATHAUTOROUND817, false)
+        set(value) = prefs.edit().putBoolean(KEY_V817MATHAUTOROUND817, value).apply()
+
+    var v817maxAutoLimit817: Int
+        get() = prefs.getInt(KEY_V817MAXAUTOLIMIT817, 0)
+        set(value) = prefs.edit().putInt(KEY_V817MAXAUTOLIMIT817, value).apply()
+
+    var v817measureAutoUnit817: Boolean
+        get() = prefs.getBoolean(KEY_V817MEASUREAUTOUNIT817, false)
+        set(value) = prefs.edit().putBoolean(KEY_V817MEASUREAUTOUNIT817, value).apply()
+
+    var v817mediaAutoCodec817: Boolean
+        get() = prefs.getBoolean(KEY_V817MEDIAAUTOCODEC817, false)
+        set(value) = prefs.edit().putBoolean(KEY_V817MEDIAAUTOCODEC817, value).apply()
+
+    var v817memoryAutoOptimize817: Boolean
+        get() = prefs.getBoolean(KEY_V817MEMORYAUTOOPTIMIZE817, false)
+        set(value) = prefs.edit().putBoolean(KEY_V817MEMORYAUTOOPTIMIZE817, value).apply()
+
+    var v817menuAutoContext817: Boolean
+        get() = prefs.getBoolean(KEY_V817MENUAUTOCONTEXT817, false)
+        set(value) = prefs.edit().putBoolean(KEY_V817MENUAUTOCONTEXT817, value).apply()
+
+    var v817messageAutoQueue817: Boolean
+        get() = prefs.getBoolean(KEY_V817MESSAGEAUTOQUEUE817, false)
+        set(value) = prefs.edit().putBoolean(KEY_V817MESSAGEAUTOQUEUE817, value).apply()
+
+    var v817metaAutoExtract817: Boolean
+        get() = prefs.getBoolean(KEY_V817METAAUTOEXTRACT817, false)
+        set(value) = prefs.edit().putBoolean(KEY_V817METAAUTOEXTRACT817, value).apply()
+
+    var v817methodAutoHook817: Boolean
+        get() = prefs.getBoolean(KEY_V817METHODAUTOHOOK817, false)
+        set(value) = prefs.edit().putBoolean(KEY_V817METHODAUTOHOOK817, value).apply()
+
+    var v817middleAutoCenter817: Boolean
+        get() = prefs.getBoolean(KEY_V817MIDDLEAUTOCENTER817, false)
+        set(value) = prefs.edit().putBoolean(KEY_V817MIDDLEAUTOCENTER817, value).apply()
+
+    var v817minAutoThreshold817: Int
+        get() = prefs.getInt(KEY_V817MINAUTOTHRESHOLD817, 0)
+        set(value) = prefs.edit().putInt(KEY_V817MINAUTOTHRESHOLD817, value).apply()
+
+    var v817modeAutoAdaptive817: Boolean
+        get() = prefs.getBoolean(KEY_V817MODEAUTOADAPTIVE817, false)
+        set(value) = prefs.edit().putBoolean(KEY_V817MODEAUTOADAPTIVE817, value).apply()
+
+    var v817modelAutoDetect817: Boolean
+        get() = prefs.getBoolean(KEY_V817MODELAUTODETECT817, false)
+        set(value) = prefs.edit().putBoolean(KEY_V817MODELAUTODETECT817, value).apply()
+
+    var v818masterAutoSync818: Boolean
+        get() = prefs.getBoolean(KEY_V818MASTERAUTOSYNC818, false)
+        set(value) = prefs.edit().putBoolean(KEY_V818MASTERAUTOSYNC818, value).apply()
+
+    var v818matchAutoFuzzy818: Boolean
+        get() = prefs.getBoolean(KEY_V818MATCHAUTOFUZZY818, false)
+        set(value) = prefs.edit().putBoolean(KEY_V818MATCHAUTOFUZZY818, value).apply()
+
+    var v818mathAutoRound818: Boolean
+        get() = prefs.getBoolean(KEY_V818MATHAUTOROUND818, false)
+        set(value) = prefs.edit().putBoolean(KEY_V818MATHAUTOROUND818, value).apply()
+
+    var v818maxAutoLimit818: Int
+        get() = prefs.getInt(KEY_V818MAXAUTOLIMIT818, 0)
+        set(value) = prefs.edit().putInt(KEY_V818MAXAUTOLIMIT818, value).apply()
+
+    var v818measureAutoUnit818: Boolean
+        get() = prefs.getBoolean(KEY_V818MEASUREAUTOUNIT818, false)
+        set(value) = prefs.edit().putBoolean(KEY_V818MEASUREAUTOUNIT818, value).apply()
+
+    var v818mediaAutoCodec818: Boolean
+        get() = prefs.getBoolean(KEY_V818MEDIAAUTOCODEC818, false)
+        set(value) = prefs.edit().putBoolean(KEY_V818MEDIAAUTOCODEC818, value).apply()
+
+    var v818memoryAutoOptimize818: Boolean
+        get() = prefs.getBoolean(KEY_V818MEMORYAUTOOPTIMIZE818, false)
+        set(value) = prefs.edit().putBoolean(KEY_V818MEMORYAUTOOPTIMIZE818, value).apply()
+
+    var v818menuAutoContext818: Boolean
+        get() = prefs.getBoolean(KEY_V818MENUAUTOCONTEXT818, false)
+        set(value) = prefs.edit().putBoolean(KEY_V818MENUAUTOCONTEXT818, value).apply()
+
+    var v818messageAutoQueue818: Boolean
+        get() = prefs.getBoolean(KEY_V818MESSAGEAUTOQUEUE818, false)
+        set(value) = prefs.edit().putBoolean(KEY_V818MESSAGEAUTOQUEUE818, value).apply()
+
+    var v818metaAutoExtract818: Boolean
+        get() = prefs.getBoolean(KEY_V818METAAUTOEXTRACT818, false)
+        set(value) = prefs.edit().putBoolean(KEY_V818METAAUTOEXTRACT818, value).apply()
+
+    var v818methodAutoHook818: Boolean
+        get() = prefs.getBoolean(KEY_V818METHODAUTOHOOK818, false)
+        set(value) = prefs.edit().putBoolean(KEY_V818METHODAUTOHOOK818, value).apply()
+
+    var v818middleAutoCenter818: Boolean
+        get() = prefs.getBoolean(KEY_V818MIDDLEAUTOCENTER818, false)
+        set(value) = prefs.edit().putBoolean(KEY_V818MIDDLEAUTOCENTER818, value).apply()
+
+    var v818minAutoThreshold818: Int
+        get() = prefs.getInt(KEY_V818MINAUTOTHRESHOLD818, 0)
+        set(value) = prefs.edit().putInt(KEY_V818MINAUTOTHRESHOLD818, value).apply()
+
+    var v818modeAutoAdaptive818: Boolean
+        get() = prefs.getBoolean(KEY_V818MODEAUTOADAPTIVE818, false)
+        set(value) = prefs.edit().putBoolean(KEY_V818MODEAUTOADAPTIVE818, value).apply()
+
+    var v818modelAutoDetect818: Boolean
+        get() = prefs.getBoolean(KEY_V818MODELAUTODETECT818, false)
+        set(value) = prefs.edit().putBoolean(KEY_V818MODELAUTODETECT818, value).apply()
+
+    var v819masterAutoSync819: Boolean
+        get() = prefs.getBoolean(KEY_V819MASTERAUTOSYNC819, false)
+        set(value) = prefs.edit().putBoolean(KEY_V819MASTERAUTOSYNC819, value).apply()
+
+    var v819matchAutoFuzzy819: Boolean
+        get() = prefs.getBoolean(KEY_V819MATCHAUTOFUZZY819, false)
+        set(value) = prefs.edit().putBoolean(KEY_V819MATCHAUTOFUZZY819, value).apply()
+
+    var v819mathAutoRound819: Boolean
+        get() = prefs.getBoolean(KEY_V819MATHAUTOROUND819, false)
+        set(value) = prefs.edit().putBoolean(KEY_V819MATHAUTOROUND819, value).apply()
+
+    var v819maxAutoLimit819: Int
+        get() = prefs.getInt(KEY_V819MAXAUTOLIMIT819, 0)
+        set(value) = prefs.edit().putInt(KEY_V819MAXAUTOLIMIT819, value).apply()
+
+    var v819measureAutoUnit819: Boolean
+        get() = prefs.getBoolean(KEY_V819MEASUREAUTOUNIT819, false)
+        set(value) = prefs.edit().putBoolean(KEY_V819MEASUREAUTOUNIT819, value).apply()
+
+    var v819mediaAutoCodec819: Boolean
+        get() = prefs.getBoolean(KEY_V819MEDIAAUTOCODEC819, false)
+        set(value) = prefs.edit().putBoolean(KEY_V819MEDIAAUTOCODEC819, value).apply()
+
+    var v819memoryAutoOptimize819: Boolean
+        get() = prefs.getBoolean(KEY_V819MEMORYAUTOOPTIMIZE819, false)
+        set(value) = prefs.edit().putBoolean(KEY_V819MEMORYAUTOOPTIMIZE819, value).apply()
+
+    var v819menuAutoContext819: Boolean
+        get() = prefs.getBoolean(KEY_V819MENUAUTOCONTEXT819, false)
+        set(value) = prefs.edit().putBoolean(KEY_V819MENUAUTOCONTEXT819, value).apply()
+
+    var v819messageAutoQueue819: Boolean
+        get() = prefs.getBoolean(KEY_V819MESSAGEAUTOQUEUE819, false)
+        set(value) = prefs.edit().putBoolean(KEY_V819MESSAGEAUTOQUEUE819, value).apply()
+
+    var v819metaAutoExtract819: Boolean
+        get() = prefs.getBoolean(KEY_V819METAAUTOEXTRACT819, false)
+        set(value) = prefs.edit().putBoolean(KEY_V819METAAUTOEXTRACT819, value).apply()
+
+    var v819methodAutoHook819: Boolean
+        get() = prefs.getBoolean(KEY_V819METHODAUTOHOOK819, false)
+        set(value) = prefs.edit().putBoolean(KEY_V819METHODAUTOHOOK819, value).apply()
+
+    var v819middleAutoCenter819: Boolean
+        get() = prefs.getBoolean(KEY_V819MIDDLEAUTOCENTER819, false)
+        set(value) = prefs.edit().putBoolean(KEY_V819MIDDLEAUTOCENTER819, value).apply()
+
+    var v819minAutoThreshold819: Int
+        get() = prefs.getInt(KEY_V819MINAUTOTHRESHOLD819, 0)
+        set(value) = prefs.edit().putInt(KEY_V819MINAUTOTHRESHOLD819, value).apply()
+
+    var v819modeAutoAdaptive819: Boolean
+        get() = prefs.getBoolean(KEY_V819MODEAUTOADAPTIVE819, false)
+        set(value) = prefs.edit().putBoolean(KEY_V819MODEAUTOADAPTIVE819, value).apply()
+
+    var v819modelAutoDetect819: Boolean
+        get() = prefs.getBoolean(KEY_V819MODELAUTODETECT819, false)
+        set(value) = prefs.edit().putBoolean(KEY_V819MODELAUTODETECT819, value).apply()
+
+    var v820masterAutoSync820: Boolean
+        get() = prefs.getBoolean(KEY_V820MASTERAUTOSYNC820, false)
+        set(value) = prefs.edit().putBoolean(KEY_V820MASTERAUTOSYNC820, value).apply()
+
+    var v820matchAutoFuzzy820: Boolean
+        get() = prefs.getBoolean(KEY_V820MATCHAUTOFUZZY820, false)
+        set(value) = prefs.edit().putBoolean(KEY_V820MATCHAUTOFUZZY820, value).apply()
+
+    var v820mathAutoRound820: Boolean
+        get() = prefs.getBoolean(KEY_V820MATHAUTOROUND820, false)
+        set(value) = prefs.edit().putBoolean(KEY_V820MATHAUTOROUND820, value).apply()
+
+    var v820maxAutoLimit820: Int
+        get() = prefs.getInt(KEY_V820MAXAUTOLIMIT820, 0)
+        set(value) = prefs.edit().putInt(KEY_V820MAXAUTOLIMIT820, value).apply()
+
+    var v820measureAutoUnit820: Boolean
+        get() = prefs.getBoolean(KEY_V820MEASUREAUTOUNIT820, false)
+        set(value) = prefs.edit().putBoolean(KEY_V820MEASUREAUTOUNIT820, value).apply()
+
+    var v820mediaAutoCodec820: Boolean
+        get() = prefs.getBoolean(KEY_V820MEDIAAUTOCODEC820, false)
+        set(value) = prefs.edit().putBoolean(KEY_V820MEDIAAUTOCODEC820, value).apply()
+
+    var v820memoryAutoOptimize820: Boolean
+        get() = prefs.getBoolean(KEY_V820MEMORYAUTOOPTIMIZE820, false)
+        set(value) = prefs.edit().putBoolean(KEY_V820MEMORYAUTOOPTIMIZE820, value).apply()
+
+    var v820menuAutoContext820: Boolean
+        get() = prefs.getBoolean(KEY_V820MENUAUTOCONTEXT820, false)
+        set(value) = prefs.edit().putBoolean(KEY_V820MENUAUTOCONTEXT820, value).apply()
+
+    var v820messageAutoQueue820: Boolean
+        get() = prefs.getBoolean(KEY_V820MESSAGEAUTOQUEUE820, false)
+        set(value) = prefs.edit().putBoolean(KEY_V820MESSAGEAUTOQUEUE820, value).apply()
+
+    var v820metaAutoExtract820: Boolean
+        get() = prefs.getBoolean(KEY_V820METAAUTOEXTRACT820, false)
+        set(value) = prefs.edit().putBoolean(KEY_V820METAAUTOEXTRACT820, value).apply()
+
+    var v820methodAutoHook820: Boolean
+        get() = prefs.getBoolean(KEY_V820METHODAUTOHOOK820, false)
+        set(value) = prefs.edit().putBoolean(KEY_V820METHODAUTOHOOK820, value).apply()
+
+    var v820middleAutoCenter820: Boolean
+        get() = prefs.getBoolean(KEY_V820MIDDLEAUTOCENTER820, false)
+        set(value) = prefs.edit().putBoolean(KEY_V820MIDDLEAUTOCENTER820, value).apply()
+
+    var v820minAutoThreshold820: Int
+        get() = prefs.getInt(KEY_V820MINAUTOTHRESHOLD820, 0)
+        set(value) = prefs.edit().putInt(KEY_V820MINAUTOTHRESHOLD820, value).apply()
+
+    var v820modeAutoAdaptive820: Boolean
+        get() = prefs.getBoolean(KEY_V820MODEAUTOADAPTIVE820, false)
+        set(value) = prefs.edit().putBoolean(KEY_V820MODEAUTOADAPTIVE820, value).apply()
+
+    var v820modelAutoDetect820: Boolean
+        get() = prefs.getBoolean(KEY_V820MODELAUTODETECT820, false)
+        set(value) = prefs.edit().putBoolean(KEY_V820MODELAUTODETECT820, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -69930,5 +70530,155 @@ class AppPrefs(context: Context) {
         const val KEY_V810MARGINAUTOADJUST810 = "v810marginAutoAdjust810" // v810 Margin Auto Adjust810
         const val KEY_V810MARKAUTOHIGHLIGHT810 = "v810markAutoHighlight810" // v810 Mark Auto Highlight810
         const val KEY_V810MASKAUTOAPPLY810 = "v810maskAutoApply810" // v810 Mask Auto Apply810
+        const val KEY_V811MASTERAUTOSYNC811 = "v811masterAutoSync811" // v811 Master Auto Sync811
+        const val KEY_V811MATCHAUTOFUZZY811 = "v811matchAutoFuzzy811" // v811 Match Auto Fuzzy811
+        const val KEY_V811MATHAUTOROUND811 = "v811mathAutoRound811" // v811 Math Auto Round811
+        const val KEY_V811MAXAUTOLIMIT811 = "v811maxAutoLimit811" // v811 Max Auto Limit811
+        const val KEY_V811MEASUREAUTOUNIT811 = "v811measureAutoUnit811" // v811 Measure Auto Unit811
+        const val KEY_V811MEDIAAUTOCODEC811 = "v811mediaAutoCodec811" // v811 Media Auto Codec811
+        const val KEY_V811MEMORYAUTOOPTIMIZE811 = "v811memoryAutoOptimize811" // v811 Memory Auto Optimize811
+        const val KEY_V811MENUAUTOCONTEXT811 = "v811menuAutoContext811" // v811 Menu Auto Context811
+        const val KEY_V811MESSAGEAUTOQUEUE811 = "v811messageAutoQueue811" // v811 Message Auto Queue811
+        const val KEY_V811METAAUTOEXTRACT811 = "v811metaAutoExtract811" // v811 Meta Auto Extract811
+        const val KEY_V811METHODAUTOHOOK811 = "v811methodAutoHook811" // v811 Method Auto Hook811
+        const val KEY_V811MIDDLEAUTOCENTER811 = "v811middleAutoCenter811" // v811 Middle Auto Center811
+        const val KEY_V811MINAUTOTHRESHOLD811 = "v811minAutoThreshold811" // v811 Min Auto Threshold811
+        const val KEY_V811MODEAUTOADAPTIVE811 = "v811modeAutoAdaptive811" // v811 Mode Auto Adaptive811
+        const val KEY_V811MODELAUTODETECT811 = "v811modelAutoDetect811" // v811 Model Auto Detect811
+        const val KEY_V812MASTERAUTOSYNC812 = "v812masterAutoSync812" // v812 Master Auto Sync812
+        const val KEY_V812MATCHAUTOFUZZY812 = "v812matchAutoFuzzy812" // v812 Match Auto Fuzzy812
+        const val KEY_V812MATHAUTOROUND812 = "v812mathAutoRound812" // v812 Math Auto Round812
+        const val KEY_V812MAXAUTOLIMIT812 = "v812maxAutoLimit812" // v812 Max Auto Limit812
+        const val KEY_V812MEASUREAUTOUNIT812 = "v812measureAutoUnit812" // v812 Measure Auto Unit812
+        const val KEY_V812MEDIAAUTOCODEC812 = "v812mediaAutoCodec812" // v812 Media Auto Codec812
+        const val KEY_V812MEMORYAUTOOPTIMIZE812 = "v812memoryAutoOptimize812" // v812 Memory Auto Optimize812
+        const val KEY_V812MENUAUTOCONTEXT812 = "v812menuAutoContext812" // v812 Menu Auto Context812
+        const val KEY_V812MESSAGEAUTOQUEUE812 = "v812messageAutoQueue812" // v812 Message Auto Queue812
+        const val KEY_V812METAAUTOEXTRACT812 = "v812metaAutoExtract812" // v812 Meta Auto Extract812
+        const val KEY_V812METHODAUTOHOOK812 = "v812methodAutoHook812" // v812 Method Auto Hook812
+        const val KEY_V812MIDDLEAUTOCENTER812 = "v812middleAutoCenter812" // v812 Middle Auto Center812
+        const val KEY_V812MINAUTOTHRESHOLD812 = "v812minAutoThreshold812" // v812 Min Auto Threshold812
+        const val KEY_V812MODEAUTOADAPTIVE812 = "v812modeAutoAdaptive812" // v812 Mode Auto Adaptive812
+        const val KEY_V812MODELAUTODETECT812 = "v812modelAutoDetect812" // v812 Model Auto Detect812
+        const val KEY_V813MASTERAUTOSYNC813 = "v813masterAutoSync813" // v813 Master Auto Sync813
+        const val KEY_V813MATCHAUTOFUZZY813 = "v813matchAutoFuzzy813" // v813 Match Auto Fuzzy813
+        const val KEY_V813MATHAUTOROUND813 = "v813mathAutoRound813" // v813 Math Auto Round813
+        const val KEY_V813MAXAUTOLIMIT813 = "v813maxAutoLimit813" // v813 Max Auto Limit813
+        const val KEY_V813MEASUREAUTOUNIT813 = "v813measureAutoUnit813" // v813 Measure Auto Unit813
+        const val KEY_V813MEDIAAUTOCODEC813 = "v813mediaAutoCodec813" // v813 Media Auto Codec813
+        const val KEY_V813MEMORYAUTOOPTIMIZE813 = "v813memoryAutoOptimize813" // v813 Memory Auto Optimize813
+        const val KEY_V813MENUAUTOCONTEXT813 = "v813menuAutoContext813" // v813 Menu Auto Context813
+        const val KEY_V813MESSAGEAUTOQUEUE813 = "v813messageAutoQueue813" // v813 Message Auto Queue813
+        const val KEY_V813METAAUTOEXTRACT813 = "v813metaAutoExtract813" // v813 Meta Auto Extract813
+        const val KEY_V813METHODAUTOHOOK813 = "v813methodAutoHook813" // v813 Method Auto Hook813
+        const val KEY_V813MIDDLEAUTOCENTER813 = "v813middleAutoCenter813" // v813 Middle Auto Center813
+        const val KEY_V813MINAUTOTHRESHOLD813 = "v813minAutoThreshold813" // v813 Min Auto Threshold813
+        const val KEY_V813MODEAUTOADAPTIVE813 = "v813modeAutoAdaptive813" // v813 Mode Auto Adaptive813
+        const val KEY_V813MODELAUTODETECT813 = "v813modelAutoDetect813" // v813 Model Auto Detect813
+        const val KEY_V814MASTERAUTOSYNC814 = "v814masterAutoSync814" // v814 Master Auto Sync814
+        const val KEY_V814MATCHAUTOFUZZY814 = "v814matchAutoFuzzy814" // v814 Match Auto Fuzzy814
+        const val KEY_V814MATHAUTOROUND814 = "v814mathAutoRound814" // v814 Math Auto Round814
+        const val KEY_V814MAXAUTOLIMIT814 = "v814maxAutoLimit814" // v814 Max Auto Limit814
+        const val KEY_V814MEASUREAUTOUNIT814 = "v814measureAutoUnit814" // v814 Measure Auto Unit814
+        const val KEY_V814MEDIAAUTOCODEC814 = "v814mediaAutoCodec814" // v814 Media Auto Codec814
+        const val KEY_V814MEMORYAUTOOPTIMIZE814 = "v814memoryAutoOptimize814" // v814 Memory Auto Optimize814
+        const val KEY_V814MENUAUTOCONTEXT814 = "v814menuAutoContext814" // v814 Menu Auto Context814
+        const val KEY_V814MESSAGEAUTOQUEUE814 = "v814messageAutoQueue814" // v814 Message Auto Queue814
+        const val KEY_V814METAAUTOEXTRACT814 = "v814metaAutoExtract814" // v814 Meta Auto Extract814
+        const val KEY_V814METHODAUTOHOOK814 = "v814methodAutoHook814" // v814 Method Auto Hook814
+        const val KEY_V814MIDDLEAUTOCENTER814 = "v814middleAutoCenter814" // v814 Middle Auto Center814
+        const val KEY_V814MINAUTOTHRESHOLD814 = "v814minAutoThreshold814" // v814 Min Auto Threshold814
+        const val KEY_V814MODEAUTOADAPTIVE814 = "v814modeAutoAdaptive814" // v814 Mode Auto Adaptive814
+        const val KEY_V814MODELAUTODETECT814 = "v814modelAutoDetect814" // v814 Model Auto Detect814
+        const val KEY_V815MASTERAUTOSYNC815 = "v815masterAutoSync815" // v815 Master Auto Sync815
+        const val KEY_V815MATCHAUTOFUZZY815 = "v815matchAutoFuzzy815" // v815 Match Auto Fuzzy815
+        const val KEY_V815MATHAUTOROUND815 = "v815mathAutoRound815" // v815 Math Auto Round815
+        const val KEY_V815MAXAUTOLIMIT815 = "v815maxAutoLimit815" // v815 Max Auto Limit815
+        const val KEY_V815MEASUREAUTOUNIT815 = "v815measureAutoUnit815" // v815 Measure Auto Unit815
+        const val KEY_V815MEDIAAUTOCODEC815 = "v815mediaAutoCodec815" // v815 Media Auto Codec815
+        const val KEY_V815MEMORYAUTOOPTIMIZE815 = "v815memoryAutoOptimize815" // v815 Memory Auto Optimize815
+        const val KEY_V815MENUAUTOCONTEXT815 = "v815menuAutoContext815" // v815 Menu Auto Context815
+        const val KEY_V815MESSAGEAUTOQUEUE815 = "v815messageAutoQueue815" // v815 Message Auto Queue815
+        const val KEY_V815METAAUTOEXTRACT815 = "v815metaAutoExtract815" // v815 Meta Auto Extract815
+        const val KEY_V815METHODAUTOHOOK815 = "v815methodAutoHook815" // v815 Method Auto Hook815
+        const val KEY_V815MIDDLEAUTOCENTER815 = "v815middleAutoCenter815" // v815 Middle Auto Center815
+        const val KEY_V815MINAUTOTHRESHOLD815 = "v815minAutoThreshold815" // v815 Min Auto Threshold815
+        const val KEY_V815MODEAUTOADAPTIVE815 = "v815modeAutoAdaptive815" // v815 Mode Auto Adaptive815
+        const val KEY_V815MODELAUTODETECT815 = "v815modelAutoDetect815" // v815 Model Auto Detect815
+        const val KEY_V816MASTERAUTOSYNC816 = "v816masterAutoSync816" // v816 Master Auto Sync816
+        const val KEY_V816MATCHAUTOFUZZY816 = "v816matchAutoFuzzy816" // v816 Match Auto Fuzzy816
+        const val KEY_V816MATHAUTOROUND816 = "v816mathAutoRound816" // v816 Math Auto Round816
+        const val KEY_V816MAXAUTOLIMIT816 = "v816maxAutoLimit816" // v816 Max Auto Limit816
+        const val KEY_V816MEASUREAUTOUNIT816 = "v816measureAutoUnit816" // v816 Measure Auto Unit816
+        const val KEY_V816MEDIAAUTOCODEC816 = "v816mediaAutoCodec816" // v816 Media Auto Codec816
+        const val KEY_V816MEMORYAUTOOPTIMIZE816 = "v816memoryAutoOptimize816" // v816 Memory Auto Optimize816
+        const val KEY_V816MENUAUTOCONTEXT816 = "v816menuAutoContext816" // v816 Menu Auto Context816
+        const val KEY_V816MESSAGEAUTOQUEUE816 = "v816messageAutoQueue816" // v816 Message Auto Queue816
+        const val KEY_V816METAAUTOEXTRACT816 = "v816metaAutoExtract816" // v816 Meta Auto Extract816
+        const val KEY_V816METHODAUTOHOOK816 = "v816methodAutoHook816" // v816 Method Auto Hook816
+        const val KEY_V816MIDDLEAUTOCENTER816 = "v816middleAutoCenter816" // v816 Middle Auto Center816
+        const val KEY_V816MINAUTOTHRESHOLD816 = "v816minAutoThreshold816" // v816 Min Auto Threshold816
+        const val KEY_V816MODEAUTOADAPTIVE816 = "v816modeAutoAdaptive816" // v816 Mode Auto Adaptive816
+        const val KEY_V816MODELAUTODETECT816 = "v816modelAutoDetect816" // v816 Model Auto Detect816
+        const val KEY_V817MASTERAUTOSYNC817 = "v817masterAutoSync817" // v817 Master Auto Sync817
+        const val KEY_V817MATCHAUTOFUZZY817 = "v817matchAutoFuzzy817" // v817 Match Auto Fuzzy817
+        const val KEY_V817MATHAUTOROUND817 = "v817mathAutoRound817" // v817 Math Auto Round817
+        const val KEY_V817MAXAUTOLIMIT817 = "v817maxAutoLimit817" // v817 Max Auto Limit817
+        const val KEY_V817MEASUREAUTOUNIT817 = "v817measureAutoUnit817" // v817 Measure Auto Unit817
+        const val KEY_V817MEDIAAUTOCODEC817 = "v817mediaAutoCodec817" // v817 Media Auto Codec817
+        const val KEY_V817MEMORYAUTOOPTIMIZE817 = "v817memoryAutoOptimize817" // v817 Memory Auto Optimize817
+        const val KEY_V817MENUAUTOCONTEXT817 = "v817menuAutoContext817" // v817 Menu Auto Context817
+        const val KEY_V817MESSAGEAUTOQUEUE817 = "v817messageAutoQueue817" // v817 Message Auto Queue817
+        const val KEY_V817METAAUTOEXTRACT817 = "v817metaAutoExtract817" // v817 Meta Auto Extract817
+        const val KEY_V817METHODAUTOHOOK817 = "v817methodAutoHook817" // v817 Method Auto Hook817
+        const val KEY_V817MIDDLEAUTOCENTER817 = "v817middleAutoCenter817" // v817 Middle Auto Center817
+        const val KEY_V817MINAUTOTHRESHOLD817 = "v817minAutoThreshold817" // v817 Min Auto Threshold817
+        const val KEY_V817MODEAUTOADAPTIVE817 = "v817modeAutoAdaptive817" // v817 Mode Auto Adaptive817
+        const val KEY_V817MODELAUTODETECT817 = "v817modelAutoDetect817" // v817 Model Auto Detect817
+        const val KEY_V818MASTERAUTOSYNC818 = "v818masterAutoSync818" // v818 Master Auto Sync818
+        const val KEY_V818MATCHAUTOFUZZY818 = "v818matchAutoFuzzy818" // v818 Match Auto Fuzzy818
+        const val KEY_V818MATHAUTOROUND818 = "v818mathAutoRound818" // v818 Math Auto Round818
+        const val KEY_V818MAXAUTOLIMIT818 = "v818maxAutoLimit818" // v818 Max Auto Limit818
+        const val KEY_V818MEASUREAUTOUNIT818 = "v818measureAutoUnit818" // v818 Measure Auto Unit818
+        const val KEY_V818MEDIAAUTOCODEC818 = "v818mediaAutoCodec818" // v818 Media Auto Codec818
+        const val KEY_V818MEMORYAUTOOPTIMIZE818 = "v818memoryAutoOptimize818" // v818 Memory Auto Optimize818
+        const val KEY_V818MENUAUTOCONTEXT818 = "v818menuAutoContext818" // v818 Menu Auto Context818
+        const val KEY_V818MESSAGEAUTOQUEUE818 = "v818messageAutoQueue818" // v818 Message Auto Queue818
+        const val KEY_V818METAAUTOEXTRACT818 = "v818metaAutoExtract818" // v818 Meta Auto Extract818
+        const val KEY_V818METHODAUTOHOOK818 = "v818methodAutoHook818" // v818 Method Auto Hook818
+        const val KEY_V818MIDDLEAUTOCENTER818 = "v818middleAutoCenter818" // v818 Middle Auto Center818
+        const val KEY_V818MINAUTOTHRESHOLD818 = "v818minAutoThreshold818" // v818 Min Auto Threshold818
+        const val KEY_V818MODEAUTOADAPTIVE818 = "v818modeAutoAdaptive818" // v818 Mode Auto Adaptive818
+        const val KEY_V818MODELAUTODETECT818 = "v818modelAutoDetect818" // v818 Model Auto Detect818
+        const val KEY_V819MASTERAUTOSYNC819 = "v819masterAutoSync819" // v819 Master Auto Sync819
+        const val KEY_V819MATCHAUTOFUZZY819 = "v819matchAutoFuzzy819" // v819 Match Auto Fuzzy819
+        const val KEY_V819MATHAUTOROUND819 = "v819mathAutoRound819" // v819 Math Auto Round819
+        const val KEY_V819MAXAUTOLIMIT819 = "v819maxAutoLimit819" // v819 Max Auto Limit819
+        const val KEY_V819MEASUREAUTOUNIT819 = "v819measureAutoUnit819" // v819 Measure Auto Unit819
+        const val KEY_V819MEDIAAUTOCODEC819 = "v819mediaAutoCodec819" // v819 Media Auto Codec819
+        const val KEY_V819MEMORYAUTOOPTIMIZE819 = "v819memoryAutoOptimize819" // v819 Memory Auto Optimize819
+        const val KEY_V819MENUAUTOCONTEXT819 = "v819menuAutoContext819" // v819 Menu Auto Context819
+        const val KEY_V819MESSAGEAUTOQUEUE819 = "v819messageAutoQueue819" // v819 Message Auto Queue819
+        const val KEY_V819METAAUTOEXTRACT819 = "v819metaAutoExtract819" // v819 Meta Auto Extract819
+        const val KEY_V819METHODAUTOHOOK819 = "v819methodAutoHook819" // v819 Method Auto Hook819
+        const val KEY_V819MIDDLEAUTOCENTER819 = "v819middleAutoCenter819" // v819 Middle Auto Center819
+        const val KEY_V819MINAUTOTHRESHOLD819 = "v819minAutoThreshold819" // v819 Min Auto Threshold819
+        const val KEY_V819MODEAUTOADAPTIVE819 = "v819modeAutoAdaptive819" // v819 Mode Auto Adaptive819
+        const val KEY_V819MODELAUTODETECT819 = "v819modelAutoDetect819" // v819 Model Auto Detect819
+        const val KEY_V820MASTERAUTOSYNC820 = "v820masterAutoSync820" // v820 Master Auto Sync820
+        const val KEY_V820MATCHAUTOFUZZY820 = "v820matchAutoFuzzy820" // v820 Match Auto Fuzzy820
+        const val KEY_V820MATHAUTOROUND820 = "v820mathAutoRound820" // v820 Math Auto Round820
+        const val KEY_V820MAXAUTOLIMIT820 = "v820maxAutoLimit820" // v820 Max Auto Limit820
+        const val KEY_V820MEASUREAUTOUNIT820 = "v820measureAutoUnit820" // v820 Measure Auto Unit820
+        const val KEY_V820MEDIAAUTOCODEC820 = "v820mediaAutoCodec820" // v820 Media Auto Codec820
+        const val KEY_V820MEMORYAUTOOPTIMIZE820 = "v820memoryAutoOptimize820" // v820 Memory Auto Optimize820
+        const val KEY_V820MENUAUTOCONTEXT820 = "v820menuAutoContext820" // v820 Menu Auto Context820
+        const val KEY_V820MESSAGEAUTOQUEUE820 = "v820messageAutoQueue820" // v820 Message Auto Queue820
+        const val KEY_V820METAAUTOEXTRACT820 = "v820metaAutoExtract820" // v820 Meta Auto Extract820
+        const val KEY_V820METHODAUTOHOOK820 = "v820methodAutoHook820" // v820 Method Auto Hook820
+        const val KEY_V820MIDDLEAUTOCENTER820 = "v820middleAutoCenter820" // v820 Middle Auto Center820
+        const val KEY_V820MINAUTOTHRESHOLD820 = "v820minAutoThreshold820" // v820 Min Auto Threshold820
+        const val KEY_V820MODEAUTOADAPTIVE820 = "v820modeAutoAdaptive820" // v820 Mode Auto Adaptive820
+        const val KEY_V820MODELAUTODETECT820 = "v820modelAutoDetect820" // v820 Model Auto Detect820
     }
 }
