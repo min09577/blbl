@@ -54648,6 +54648,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V800LOCKAUTOSCREEN800, false)
         set(value) = prefs.edit().putBoolean(KEY_V800LOCKAUTOSCREEN800, value).apply()
 
+    var v801logAutoRotate801: Boolean
+        get() = prefs.getBoolean(KEY_V801LOGAUTOROTATE801, false)
+        set(value) = prefs.edit().putBoolean(KEY_V801LOGAUTOROTATE801, value).apply()
+
+    var v801logicAutoBranch801: Boolean
+        get() = prefs.getBoolean(KEY_V801LOGICAUTOBRANCH801, false)
+        set(value) = prefs.edit().putBoolean(KEY_V801LOGICAUTOBRANCH801, value).apply()
+
+    var v801loginAutoToken801: Boolean
+        get() = prefs.getBoolean(KEY_V801LOGINAUTOTOKEN801, false)
+        set(value) = prefs.edit().putBoolean(KEY_V801LOGINAUTOTOKEN801, value).apply()
+
+    var v801longAutoPress801: Boolean
+        get() = prefs.getBoolean(KEY_V801LONGAUTOPRESS801, false)
+        set(value) = prefs.edit().putBoolean(KEY_V801LONGAUTOPRESS801, value).apply()
+
+    var v801loopAutoRepeat801: Boolean
+        get() = prefs.getBoolean(KEY_V801LOOPAUTOREPEAT801, false)
+        set(value) = prefs.edit().putBoolean(KEY_V801LOOPAUTOREPEAT801, value).apply()
+
+    var v801lowAutoPower801: Boolean
+        get() = prefs.getBoolean(KEY_V801LOWAUTOPOWER801, false)
+        set(value) = prefs.edit().putBoolean(KEY_V801LOWAUTOPOWER801, value).apply()
+
+    var v801lowerAutoBound801: Int
+        get() = prefs.getInt(KEY_V801LOWERAUTOBOUND801, 0)
+        set(value) = prefs.edit().putInt(KEY_V801LOWERAUTOBOUND801, value).apply()
+
+    var v801mainAutoFocus801: Boolean
+        get() = prefs.getBoolean(KEY_V801MAINAUTOFOCUS801, false)
+        set(value) = prefs.edit().putBoolean(KEY_V801MAINAUTOFOCUS801, value).apply()
+
+    var v801makeAutoBuild801: Boolean
+        get() = prefs.getBoolean(KEY_V801MAKEAUTOBUILD801, false)
+        set(value) = prefs.edit().putBoolean(KEY_V801MAKEAUTOBUILD801, value).apply()
+
+    var v801manageAutoQueue801: Boolean
+        get() = prefs.getBoolean(KEY_V801MANAGEAUTOQUEUE801, false)
+        set(value) = prefs.edit().putBoolean(KEY_V801MANAGEAUTOQUEUE801, value).apply()
+
+    var v801manifestAutoParse801: Boolean
+        get() = prefs.getBoolean(KEY_V801MANIFESTAUTOPARSE801, false)
+        set(value) = prefs.edit().putBoolean(KEY_V801MANIFESTAUTOPARSE801, value).apply()
+
+    var v801mapAutoBind801: Boolean
+        get() = prefs.getBoolean(KEY_V801MAPAUTOBIND801, false)
+        set(value) = prefs.edit().putBoolean(KEY_V801MAPAUTOBIND801, value).apply()
+
+    var v801marginAutoAdjust801: Boolean
+        get() = prefs.getBoolean(KEY_V801MARGINAUTOADJUST801, false)
+        set(value) = prefs.edit().putBoolean(KEY_V801MARGINAUTOADJUST801, value).apply()
+
+    var v801markAutoHighlight801: Boolean
+        get() = prefs.getBoolean(KEY_V801MARKAUTOHIGHLIGHT801, false)
+        set(value) = prefs.edit().putBoolean(KEY_V801MARKAUTOHIGHLIGHT801, value).apply()
+
+    var v801maskAutoApply801: Boolean
+        get() = prefs.getBoolean(KEY_V801MASKAUTOAPPLY801, false)
+        set(value) = prefs.edit().putBoolean(KEY_V801MASKAUTOAPPLY801, value).apply()
+
+    var v802logAutoRotate802: Boolean
+        get() = prefs.getBoolean(KEY_V802LOGAUTOROTATE802, false)
+        set(value) = prefs.edit().putBoolean(KEY_V802LOGAUTOROTATE802, value).apply()
+
+    var v802logicAutoBranch802: Boolean
+        get() = prefs.getBoolean(KEY_V802LOGICAUTOBRANCH802, false)
+        set(value) = prefs.edit().putBoolean(KEY_V802LOGICAUTOBRANCH802, value).apply()
+
+    var v802loginAutoToken802: Boolean
+        get() = prefs.getBoolean(KEY_V802LOGINAUTOTOKEN802, false)
+        set(value) = prefs.edit().putBoolean(KEY_V802LOGINAUTOTOKEN802, value).apply()
+
+    var v802longAutoPress802: Boolean
+        get() = prefs.getBoolean(KEY_V802LONGAUTOPRESS802, false)
+        set(value) = prefs.edit().putBoolean(KEY_V802LONGAUTOPRESS802, value).apply()
+
+    var v802loopAutoRepeat802: Boolean
+        get() = prefs.getBoolean(KEY_V802LOOPAUTOREPEAT802, false)
+        set(value) = prefs.edit().putBoolean(KEY_V802LOOPAUTOREPEAT802, value).apply()
+
+    var v802lowAutoPower802: Boolean
+        get() = prefs.getBoolean(KEY_V802LOWAUTOPOWER802, false)
+        set(value) = prefs.edit().putBoolean(KEY_V802LOWAUTOPOWER802, value).apply()
+
+    var v802lowerAutoBound802: Int
+        get() = prefs.getInt(KEY_V802LOWERAUTOBOUND802, 0)
+        set(value) = prefs.edit().putInt(KEY_V802LOWERAUTOBOUND802, value).apply()
+
+    var v802mainAutoFocus802: Boolean
+        get() = prefs.getBoolean(KEY_V802MAINAUTOFOCUS802, false)
+        set(value) = prefs.edit().putBoolean(KEY_V802MAINAUTOFOCUS802, value).apply()
+
+    var v802makeAutoBuild802: Boolean
+        get() = prefs.getBoolean(KEY_V802MAKEAUTOBUILD802, false)
+        set(value) = prefs.edit().putBoolean(KEY_V802MAKEAUTOBUILD802, value).apply()
+
+    var v802manageAutoQueue802: Boolean
+        get() = prefs.getBoolean(KEY_V802MANAGEAUTOQUEUE802, false)
+        set(value) = prefs.edit().putBoolean(KEY_V802MANAGEAUTOQUEUE802, value).apply()
+
+    var v802manifestAutoParse802: Boolean
+        get() = prefs.getBoolean(KEY_V802MANIFESTAUTOPARSE802, false)
+        set(value) = prefs.edit().putBoolean(KEY_V802MANIFESTAUTOPARSE802, value).apply()
+
+    var v802mapAutoBind802: Boolean
+        get() = prefs.getBoolean(KEY_V802MAPAUTOBIND802, false)
+        set(value) = prefs.edit().putBoolean(KEY_V802MAPAUTOBIND802, value).apply()
+
+    var v802marginAutoAdjust802: Boolean
+        get() = prefs.getBoolean(KEY_V802MARGINAUTOADJUST802, false)
+        set(value) = prefs.edit().putBoolean(KEY_V802MARGINAUTOADJUST802, value).apply()
+
+    var v802markAutoHighlight802: Boolean
+        get() = prefs.getBoolean(KEY_V802MARKAUTOHIGHLIGHT802, false)
+        set(value) = prefs.edit().putBoolean(KEY_V802MARKAUTOHIGHLIGHT802, value).apply()
+
+    var v802maskAutoApply802: Boolean
+        get() = prefs.getBoolean(KEY_V802MASKAUTOAPPLY802, false)
+        set(value) = prefs.edit().putBoolean(KEY_V802MASKAUTOAPPLY802, value).apply()
+
+    var v803logAutoRotate803: Boolean
+        get() = prefs.getBoolean(KEY_V803LOGAUTOROTATE803, false)
+        set(value) = prefs.edit().putBoolean(KEY_V803LOGAUTOROTATE803, value).apply()
+
+    var v803logicAutoBranch803: Boolean
+        get() = prefs.getBoolean(KEY_V803LOGICAUTOBRANCH803, false)
+        set(value) = prefs.edit().putBoolean(KEY_V803LOGICAUTOBRANCH803, value).apply()
+
+    var v803loginAutoToken803: Boolean
+        get() = prefs.getBoolean(KEY_V803LOGINAUTOTOKEN803, false)
+        set(value) = prefs.edit().putBoolean(KEY_V803LOGINAUTOTOKEN803, value).apply()
+
+    var v803longAutoPress803: Boolean
+        get() = prefs.getBoolean(KEY_V803LONGAUTOPRESS803, false)
+        set(value) = prefs.edit().putBoolean(KEY_V803LONGAUTOPRESS803, value).apply()
+
+    var v803loopAutoRepeat803: Boolean
+        get() = prefs.getBoolean(KEY_V803LOOPAUTOREPEAT803, false)
+        set(value) = prefs.edit().putBoolean(KEY_V803LOOPAUTOREPEAT803, value).apply()
+
+    var v803lowAutoPower803: Boolean
+        get() = prefs.getBoolean(KEY_V803LOWAUTOPOWER803, false)
+        set(value) = prefs.edit().putBoolean(KEY_V803LOWAUTOPOWER803, value).apply()
+
+    var v803lowerAutoBound803: Int
+        get() = prefs.getInt(KEY_V803LOWERAUTOBOUND803, 0)
+        set(value) = prefs.edit().putInt(KEY_V803LOWERAUTOBOUND803, value).apply()
+
+    var v803mainAutoFocus803: Boolean
+        get() = prefs.getBoolean(KEY_V803MAINAUTOFOCUS803, false)
+        set(value) = prefs.edit().putBoolean(KEY_V803MAINAUTOFOCUS803, value).apply()
+
+    var v803makeAutoBuild803: Boolean
+        get() = prefs.getBoolean(KEY_V803MAKEAUTOBUILD803, false)
+        set(value) = prefs.edit().putBoolean(KEY_V803MAKEAUTOBUILD803, value).apply()
+
+    var v803manageAutoQueue803: Boolean
+        get() = prefs.getBoolean(KEY_V803MANAGEAUTOQUEUE803, false)
+        set(value) = prefs.edit().putBoolean(KEY_V803MANAGEAUTOQUEUE803, value).apply()
+
+    var v803manifestAutoParse803: Boolean
+        get() = prefs.getBoolean(KEY_V803MANIFESTAUTOPARSE803, false)
+        set(value) = prefs.edit().putBoolean(KEY_V803MANIFESTAUTOPARSE803, value).apply()
+
+    var v803mapAutoBind803: Boolean
+        get() = prefs.getBoolean(KEY_V803MAPAUTOBIND803, false)
+        set(value) = prefs.edit().putBoolean(KEY_V803MAPAUTOBIND803, value).apply()
+
+    var v803marginAutoAdjust803: Boolean
+        get() = prefs.getBoolean(KEY_V803MARGINAUTOADJUST803, false)
+        set(value) = prefs.edit().putBoolean(KEY_V803MARGINAUTOADJUST803, value).apply()
+
+    var v803markAutoHighlight803: Boolean
+        get() = prefs.getBoolean(KEY_V803MARKAUTOHIGHLIGHT803, false)
+        set(value) = prefs.edit().putBoolean(KEY_V803MARKAUTOHIGHLIGHT803, value).apply()
+
+    var v803maskAutoApply803: Boolean
+        get() = prefs.getBoolean(KEY_V803MASKAUTOAPPLY803, false)
+        set(value) = prefs.edit().putBoolean(KEY_V803MASKAUTOAPPLY803, value).apply()
+
+    var v804logAutoRotate804: Boolean
+        get() = prefs.getBoolean(KEY_V804LOGAUTOROTATE804, false)
+        set(value) = prefs.edit().putBoolean(KEY_V804LOGAUTOROTATE804, value).apply()
+
+    var v804logicAutoBranch804: Boolean
+        get() = prefs.getBoolean(KEY_V804LOGICAUTOBRANCH804, false)
+        set(value) = prefs.edit().putBoolean(KEY_V804LOGICAUTOBRANCH804, value).apply()
+
+    var v804loginAutoToken804: Boolean
+        get() = prefs.getBoolean(KEY_V804LOGINAUTOTOKEN804, false)
+        set(value) = prefs.edit().putBoolean(KEY_V804LOGINAUTOTOKEN804, value).apply()
+
+    var v804longAutoPress804: Boolean
+        get() = prefs.getBoolean(KEY_V804LONGAUTOPRESS804, false)
+        set(value) = prefs.edit().putBoolean(KEY_V804LONGAUTOPRESS804, value).apply()
+
+    var v804loopAutoRepeat804: Boolean
+        get() = prefs.getBoolean(KEY_V804LOOPAUTOREPEAT804, false)
+        set(value) = prefs.edit().putBoolean(KEY_V804LOOPAUTOREPEAT804, value).apply()
+
+    var v804lowAutoPower804: Boolean
+        get() = prefs.getBoolean(KEY_V804LOWAUTOPOWER804, false)
+        set(value) = prefs.edit().putBoolean(KEY_V804LOWAUTOPOWER804, value).apply()
+
+    var v804lowerAutoBound804: Int
+        get() = prefs.getInt(KEY_V804LOWERAUTOBOUND804, 0)
+        set(value) = prefs.edit().putInt(KEY_V804LOWERAUTOBOUND804, value).apply()
+
+    var v804mainAutoFocus804: Boolean
+        get() = prefs.getBoolean(KEY_V804MAINAUTOFOCUS804, false)
+        set(value) = prefs.edit().putBoolean(KEY_V804MAINAUTOFOCUS804, value).apply()
+
+    var v804makeAutoBuild804: Boolean
+        get() = prefs.getBoolean(KEY_V804MAKEAUTOBUILD804, false)
+        set(value) = prefs.edit().putBoolean(KEY_V804MAKEAUTOBUILD804, value).apply()
+
+    var v804manageAutoQueue804: Boolean
+        get() = prefs.getBoolean(KEY_V804MANAGEAUTOQUEUE804, false)
+        set(value) = prefs.edit().putBoolean(KEY_V804MANAGEAUTOQUEUE804, value).apply()
+
+    var v804manifestAutoParse804: Boolean
+        get() = prefs.getBoolean(KEY_V804MANIFESTAUTOPARSE804, false)
+        set(value) = prefs.edit().putBoolean(KEY_V804MANIFESTAUTOPARSE804, value).apply()
+
+    var v804mapAutoBind804: Boolean
+        get() = prefs.getBoolean(KEY_V804MAPAUTOBIND804, false)
+        set(value) = prefs.edit().putBoolean(KEY_V804MAPAUTOBIND804, value).apply()
+
+    var v804marginAutoAdjust804: Boolean
+        get() = prefs.getBoolean(KEY_V804MARGINAUTOADJUST804, false)
+        set(value) = prefs.edit().putBoolean(KEY_V804MARGINAUTOADJUST804, value).apply()
+
+    var v804markAutoHighlight804: Boolean
+        get() = prefs.getBoolean(KEY_V804MARKAUTOHIGHLIGHT804, false)
+        set(value) = prefs.edit().putBoolean(KEY_V804MARKAUTOHIGHLIGHT804, value).apply()
+
+    var v804maskAutoApply804: Boolean
+        get() = prefs.getBoolean(KEY_V804MASKAUTOAPPLY804, false)
+        set(value) = prefs.edit().putBoolean(KEY_V804MASKAUTOAPPLY804, value).apply()
+
+    var v805logAutoRotate805: Boolean
+        get() = prefs.getBoolean(KEY_V805LOGAUTOROTATE805, false)
+        set(value) = prefs.edit().putBoolean(KEY_V805LOGAUTOROTATE805, value).apply()
+
+    var v805logicAutoBranch805: Boolean
+        get() = prefs.getBoolean(KEY_V805LOGICAUTOBRANCH805, false)
+        set(value) = prefs.edit().putBoolean(KEY_V805LOGICAUTOBRANCH805, value).apply()
+
+    var v805loginAutoToken805: Boolean
+        get() = prefs.getBoolean(KEY_V805LOGINAUTOTOKEN805, false)
+        set(value) = prefs.edit().putBoolean(KEY_V805LOGINAUTOTOKEN805, value).apply()
+
+    var v805longAutoPress805: Boolean
+        get() = prefs.getBoolean(KEY_V805LONGAUTOPRESS805, false)
+        set(value) = prefs.edit().putBoolean(KEY_V805LONGAUTOPRESS805, value).apply()
+
+    var v805loopAutoRepeat805: Boolean
+        get() = prefs.getBoolean(KEY_V805LOOPAUTOREPEAT805, false)
+        set(value) = prefs.edit().putBoolean(KEY_V805LOOPAUTOREPEAT805, value).apply()
+
+    var v805lowAutoPower805: Boolean
+        get() = prefs.getBoolean(KEY_V805LOWAUTOPOWER805, false)
+        set(value) = prefs.edit().putBoolean(KEY_V805LOWAUTOPOWER805, value).apply()
+
+    var v805lowerAutoBound805: Int
+        get() = prefs.getInt(KEY_V805LOWERAUTOBOUND805, 0)
+        set(value) = prefs.edit().putInt(KEY_V805LOWERAUTOBOUND805, value).apply()
+
+    var v805mainAutoFocus805: Boolean
+        get() = prefs.getBoolean(KEY_V805MAINAUTOFOCUS805, false)
+        set(value) = prefs.edit().putBoolean(KEY_V805MAINAUTOFOCUS805, value).apply()
+
+    var v805makeAutoBuild805: Boolean
+        get() = prefs.getBoolean(KEY_V805MAKEAUTOBUILD805, false)
+        set(value) = prefs.edit().putBoolean(KEY_V805MAKEAUTOBUILD805, value).apply()
+
+    var v805manageAutoQueue805: Boolean
+        get() = prefs.getBoolean(KEY_V805MANAGEAUTOQUEUE805, false)
+        set(value) = prefs.edit().putBoolean(KEY_V805MANAGEAUTOQUEUE805, value).apply()
+
+    var v805manifestAutoParse805: Boolean
+        get() = prefs.getBoolean(KEY_V805MANIFESTAUTOPARSE805, false)
+        set(value) = prefs.edit().putBoolean(KEY_V805MANIFESTAUTOPARSE805, value).apply()
+
+    var v805mapAutoBind805: Boolean
+        get() = prefs.getBoolean(KEY_V805MAPAUTOBIND805, false)
+        set(value) = prefs.edit().putBoolean(KEY_V805MAPAUTOBIND805, value).apply()
+
+    var v805marginAutoAdjust805: Boolean
+        get() = prefs.getBoolean(KEY_V805MARGINAUTOADJUST805, false)
+        set(value) = prefs.edit().putBoolean(KEY_V805MARGINAUTOADJUST805, value).apply()
+
+    var v805markAutoHighlight805: Boolean
+        get() = prefs.getBoolean(KEY_V805MARKAUTOHIGHLIGHT805, false)
+        set(value) = prefs.edit().putBoolean(KEY_V805MARKAUTOHIGHLIGHT805, value).apply()
+
+    var v805maskAutoApply805: Boolean
+        get() = prefs.getBoolean(KEY_V805MASKAUTOAPPLY805, false)
+        set(value) = prefs.edit().putBoolean(KEY_V805MASKAUTOAPPLY805, value).apply()
+
+    var v806logAutoRotate806: Boolean
+        get() = prefs.getBoolean(KEY_V806LOGAUTOROTATE806, false)
+        set(value) = prefs.edit().putBoolean(KEY_V806LOGAUTOROTATE806, value).apply()
+
+    var v806logicAutoBranch806: Boolean
+        get() = prefs.getBoolean(KEY_V806LOGICAUTOBRANCH806, false)
+        set(value) = prefs.edit().putBoolean(KEY_V806LOGICAUTOBRANCH806, value).apply()
+
+    var v806loginAutoToken806: Boolean
+        get() = prefs.getBoolean(KEY_V806LOGINAUTOTOKEN806, false)
+        set(value) = prefs.edit().putBoolean(KEY_V806LOGINAUTOTOKEN806, value).apply()
+
+    var v806longAutoPress806: Boolean
+        get() = prefs.getBoolean(KEY_V806LONGAUTOPRESS806, false)
+        set(value) = prefs.edit().putBoolean(KEY_V806LONGAUTOPRESS806, value).apply()
+
+    var v806loopAutoRepeat806: Boolean
+        get() = prefs.getBoolean(KEY_V806LOOPAUTOREPEAT806, false)
+        set(value) = prefs.edit().putBoolean(KEY_V806LOOPAUTOREPEAT806, value).apply()
+
+    var v806lowAutoPower806: Boolean
+        get() = prefs.getBoolean(KEY_V806LOWAUTOPOWER806, false)
+        set(value) = prefs.edit().putBoolean(KEY_V806LOWAUTOPOWER806, value).apply()
+
+    var v806lowerAutoBound806: Int
+        get() = prefs.getInt(KEY_V806LOWERAUTOBOUND806, 0)
+        set(value) = prefs.edit().putInt(KEY_V806LOWERAUTOBOUND806, value).apply()
+
+    var v806mainAutoFocus806: Boolean
+        get() = prefs.getBoolean(KEY_V806MAINAUTOFOCUS806, false)
+        set(value) = prefs.edit().putBoolean(KEY_V806MAINAUTOFOCUS806, value).apply()
+
+    var v806makeAutoBuild806: Boolean
+        get() = prefs.getBoolean(KEY_V806MAKEAUTOBUILD806, false)
+        set(value) = prefs.edit().putBoolean(KEY_V806MAKEAUTOBUILD806, value).apply()
+
+    var v806manageAutoQueue806: Boolean
+        get() = prefs.getBoolean(KEY_V806MANAGEAUTOQUEUE806, false)
+        set(value) = prefs.edit().putBoolean(KEY_V806MANAGEAUTOQUEUE806, value).apply()
+
+    var v806manifestAutoParse806: Boolean
+        get() = prefs.getBoolean(KEY_V806MANIFESTAUTOPARSE806, false)
+        set(value) = prefs.edit().putBoolean(KEY_V806MANIFESTAUTOPARSE806, value).apply()
+
+    var v806mapAutoBind806: Boolean
+        get() = prefs.getBoolean(KEY_V806MAPAUTOBIND806, false)
+        set(value) = prefs.edit().putBoolean(KEY_V806MAPAUTOBIND806, value).apply()
+
+    var v806marginAutoAdjust806: Boolean
+        get() = prefs.getBoolean(KEY_V806MARGINAUTOADJUST806, false)
+        set(value) = prefs.edit().putBoolean(KEY_V806MARGINAUTOADJUST806, value).apply()
+
+    var v806markAutoHighlight806: Boolean
+        get() = prefs.getBoolean(KEY_V806MARKAUTOHIGHLIGHT806, false)
+        set(value) = prefs.edit().putBoolean(KEY_V806MARKAUTOHIGHLIGHT806, value).apply()
+
+    var v806maskAutoApply806: Boolean
+        get() = prefs.getBoolean(KEY_V806MASKAUTOAPPLY806, false)
+        set(value) = prefs.edit().putBoolean(KEY_V806MASKAUTOAPPLY806, value).apply()
+
+    var v807logAutoRotate807: Boolean
+        get() = prefs.getBoolean(KEY_V807LOGAUTOROTATE807, false)
+        set(value) = prefs.edit().putBoolean(KEY_V807LOGAUTOROTATE807, value).apply()
+
+    var v807logicAutoBranch807: Boolean
+        get() = prefs.getBoolean(KEY_V807LOGICAUTOBRANCH807, false)
+        set(value) = prefs.edit().putBoolean(KEY_V807LOGICAUTOBRANCH807, value).apply()
+
+    var v807loginAutoToken807: Boolean
+        get() = prefs.getBoolean(KEY_V807LOGINAUTOTOKEN807, false)
+        set(value) = prefs.edit().putBoolean(KEY_V807LOGINAUTOTOKEN807, value).apply()
+
+    var v807longAutoPress807: Boolean
+        get() = prefs.getBoolean(KEY_V807LONGAUTOPRESS807, false)
+        set(value) = prefs.edit().putBoolean(KEY_V807LONGAUTOPRESS807, value).apply()
+
+    var v807loopAutoRepeat807: Boolean
+        get() = prefs.getBoolean(KEY_V807LOOPAUTOREPEAT807, false)
+        set(value) = prefs.edit().putBoolean(KEY_V807LOOPAUTOREPEAT807, value).apply()
+
+    var v807lowAutoPower807: Boolean
+        get() = prefs.getBoolean(KEY_V807LOWAUTOPOWER807, false)
+        set(value) = prefs.edit().putBoolean(KEY_V807LOWAUTOPOWER807, value).apply()
+
+    var v807lowerAutoBound807: Int
+        get() = prefs.getInt(KEY_V807LOWERAUTOBOUND807, 0)
+        set(value) = prefs.edit().putInt(KEY_V807LOWERAUTOBOUND807, value).apply()
+
+    var v807mainAutoFocus807: Boolean
+        get() = prefs.getBoolean(KEY_V807MAINAUTOFOCUS807, false)
+        set(value) = prefs.edit().putBoolean(KEY_V807MAINAUTOFOCUS807, value).apply()
+
+    var v807makeAutoBuild807: Boolean
+        get() = prefs.getBoolean(KEY_V807MAKEAUTOBUILD807, false)
+        set(value) = prefs.edit().putBoolean(KEY_V807MAKEAUTOBUILD807, value).apply()
+
+    var v807manageAutoQueue807: Boolean
+        get() = prefs.getBoolean(KEY_V807MANAGEAUTOQUEUE807, false)
+        set(value) = prefs.edit().putBoolean(KEY_V807MANAGEAUTOQUEUE807, value).apply()
+
+    var v807manifestAutoParse807: Boolean
+        get() = prefs.getBoolean(KEY_V807MANIFESTAUTOPARSE807, false)
+        set(value) = prefs.edit().putBoolean(KEY_V807MANIFESTAUTOPARSE807, value).apply()
+
+    var v807mapAutoBind807: Boolean
+        get() = prefs.getBoolean(KEY_V807MAPAUTOBIND807, false)
+        set(value) = prefs.edit().putBoolean(KEY_V807MAPAUTOBIND807, value).apply()
+
+    var v807marginAutoAdjust807: Boolean
+        get() = prefs.getBoolean(KEY_V807MARGINAUTOADJUST807, false)
+        set(value) = prefs.edit().putBoolean(KEY_V807MARGINAUTOADJUST807, value).apply()
+
+    var v807markAutoHighlight807: Boolean
+        get() = prefs.getBoolean(KEY_V807MARKAUTOHIGHLIGHT807, false)
+        set(value) = prefs.edit().putBoolean(KEY_V807MARKAUTOHIGHLIGHT807, value).apply()
+
+    var v807maskAutoApply807: Boolean
+        get() = prefs.getBoolean(KEY_V807MASKAUTOAPPLY807, false)
+        set(value) = prefs.edit().putBoolean(KEY_V807MASKAUTOAPPLY807, value).apply()
+
+    var v808logAutoRotate808: Boolean
+        get() = prefs.getBoolean(KEY_V808LOGAUTOROTATE808, false)
+        set(value) = prefs.edit().putBoolean(KEY_V808LOGAUTOROTATE808, value).apply()
+
+    var v808logicAutoBranch808: Boolean
+        get() = prefs.getBoolean(KEY_V808LOGICAUTOBRANCH808, false)
+        set(value) = prefs.edit().putBoolean(KEY_V808LOGICAUTOBRANCH808, value).apply()
+
+    var v808loginAutoToken808: Boolean
+        get() = prefs.getBoolean(KEY_V808LOGINAUTOTOKEN808, false)
+        set(value) = prefs.edit().putBoolean(KEY_V808LOGINAUTOTOKEN808, value).apply()
+
+    var v808longAutoPress808: Boolean
+        get() = prefs.getBoolean(KEY_V808LONGAUTOPRESS808, false)
+        set(value) = prefs.edit().putBoolean(KEY_V808LONGAUTOPRESS808, value).apply()
+
+    var v808loopAutoRepeat808: Boolean
+        get() = prefs.getBoolean(KEY_V808LOOPAUTOREPEAT808, false)
+        set(value) = prefs.edit().putBoolean(KEY_V808LOOPAUTOREPEAT808, value).apply()
+
+    var v808lowAutoPower808: Boolean
+        get() = prefs.getBoolean(KEY_V808LOWAUTOPOWER808, false)
+        set(value) = prefs.edit().putBoolean(KEY_V808LOWAUTOPOWER808, value).apply()
+
+    var v808lowerAutoBound808: Int
+        get() = prefs.getInt(KEY_V808LOWERAUTOBOUND808, 0)
+        set(value) = prefs.edit().putInt(KEY_V808LOWERAUTOBOUND808, value).apply()
+
+    var v808mainAutoFocus808: Boolean
+        get() = prefs.getBoolean(KEY_V808MAINAUTOFOCUS808, false)
+        set(value) = prefs.edit().putBoolean(KEY_V808MAINAUTOFOCUS808, value).apply()
+
+    var v808makeAutoBuild808: Boolean
+        get() = prefs.getBoolean(KEY_V808MAKEAUTOBUILD808, false)
+        set(value) = prefs.edit().putBoolean(KEY_V808MAKEAUTOBUILD808, value).apply()
+
+    var v808manageAutoQueue808: Boolean
+        get() = prefs.getBoolean(KEY_V808MANAGEAUTOQUEUE808, false)
+        set(value) = prefs.edit().putBoolean(KEY_V808MANAGEAUTOQUEUE808, value).apply()
+
+    var v808manifestAutoParse808: Boolean
+        get() = prefs.getBoolean(KEY_V808MANIFESTAUTOPARSE808, false)
+        set(value) = prefs.edit().putBoolean(KEY_V808MANIFESTAUTOPARSE808, value).apply()
+
+    var v808mapAutoBind808: Boolean
+        get() = prefs.getBoolean(KEY_V808MAPAUTOBIND808, false)
+        set(value) = prefs.edit().putBoolean(KEY_V808MAPAUTOBIND808, value).apply()
+
+    var v808marginAutoAdjust808: Boolean
+        get() = prefs.getBoolean(KEY_V808MARGINAUTOADJUST808, false)
+        set(value) = prefs.edit().putBoolean(KEY_V808MARGINAUTOADJUST808, value).apply()
+
+    var v808markAutoHighlight808: Boolean
+        get() = prefs.getBoolean(KEY_V808MARKAUTOHIGHLIGHT808, false)
+        set(value) = prefs.edit().putBoolean(KEY_V808MARKAUTOHIGHLIGHT808, value).apply()
+
+    var v808maskAutoApply808: Boolean
+        get() = prefs.getBoolean(KEY_V808MASKAUTOAPPLY808, false)
+        set(value) = prefs.edit().putBoolean(KEY_V808MASKAUTOAPPLY808, value).apply()
+
+    var v809logAutoRotate809: Boolean
+        get() = prefs.getBoolean(KEY_V809LOGAUTOROTATE809, false)
+        set(value) = prefs.edit().putBoolean(KEY_V809LOGAUTOROTATE809, value).apply()
+
+    var v809logicAutoBranch809: Boolean
+        get() = prefs.getBoolean(KEY_V809LOGICAUTOBRANCH809, false)
+        set(value) = prefs.edit().putBoolean(KEY_V809LOGICAUTOBRANCH809, value).apply()
+
+    var v809loginAutoToken809: Boolean
+        get() = prefs.getBoolean(KEY_V809LOGINAUTOTOKEN809, false)
+        set(value) = prefs.edit().putBoolean(KEY_V809LOGINAUTOTOKEN809, value).apply()
+
+    var v809longAutoPress809: Boolean
+        get() = prefs.getBoolean(KEY_V809LONGAUTOPRESS809, false)
+        set(value) = prefs.edit().putBoolean(KEY_V809LONGAUTOPRESS809, value).apply()
+
+    var v809loopAutoRepeat809: Boolean
+        get() = prefs.getBoolean(KEY_V809LOOPAUTOREPEAT809, false)
+        set(value) = prefs.edit().putBoolean(KEY_V809LOOPAUTOREPEAT809, value).apply()
+
+    var v809lowAutoPower809: Boolean
+        get() = prefs.getBoolean(KEY_V809LOWAUTOPOWER809, false)
+        set(value) = prefs.edit().putBoolean(KEY_V809LOWAUTOPOWER809, value).apply()
+
+    var v809lowerAutoBound809: Int
+        get() = prefs.getInt(KEY_V809LOWERAUTOBOUND809, 0)
+        set(value) = prefs.edit().putInt(KEY_V809LOWERAUTOBOUND809, value).apply()
+
+    var v809mainAutoFocus809: Boolean
+        get() = prefs.getBoolean(KEY_V809MAINAUTOFOCUS809, false)
+        set(value) = prefs.edit().putBoolean(KEY_V809MAINAUTOFOCUS809, value).apply()
+
+    var v809makeAutoBuild809: Boolean
+        get() = prefs.getBoolean(KEY_V809MAKEAUTOBUILD809, false)
+        set(value) = prefs.edit().putBoolean(KEY_V809MAKEAUTOBUILD809, value).apply()
+
+    var v809manageAutoQueue809: Boolean
+        get() = prefs.getBoolean(KEY_V809MANAGEAUTOQUEUE809, false)
+        set(value) = prefs.edit().putBoolean(KEY_V809MANAGEAUTOQUEUE809, value).apply()
+
+    var v809manifestAutoParse809: Boolean
+        get() = prefs.getBoolean(KEY_V809MANIFESTAUTOPARSE809, false)
+        set(value) = prefs.edit().putBoolean(KEY_V809MANIFESTAUTOPARSE809, value).apply()
+
+    var v809mapAutoBind809: Boolean
+        get() = prefs.getBoolean(KEY_V809MAPAUTOBIND809, false)
+        set(value) = prefs.edit().putBoolean(KEY_V809MAPAUTOBIND809, value).apply()
+
+    var v809marginAutoAdjust809: Boolean
+        get() = prefs.getBoolean(KEY_V809MARGINAUTOADJUST809, false)
+        set(value) = prefs.edit().putBoolean(KEY_V809MARGINAUTOADJUST809, value).apply()
+
+    var v809markAutoHighlight809: Boolean
+        get() = prefs.getBoolean(KEY_V809MARKAUTOHIGHLIGHT809, false)
+        set(value) = prefs.edit().putBoolean(KEY_V809MARKAUTOHIGHLIGHT809, value).apply()
+
+    var v809maskAutoApply809: Boolean
+        get() = prefs.getBoolean(KEY_V809MASKAUTOAPPLY809, false)
+        set(value) = prefs.edit().putBoolean(KEY_V809MASKAUTOAPPLY809, value).apply()
+
+    var v810logAutoRotate810: Boolean
+        get() = prefs.getBoolean(KEY_V810LOGAUTOROTATE810, false)
+        set(value) = prefs.edit().putBoolean(KEY_V810LOGAUTOROTATE810, value).apply()
+
+    var v810logicAutoBranch810: Boolean
+        get() = prefs.getBoolean(KEY_V810LOGICAUTOBRANCH810, false)
+        set(value) = prefs.edit().putBoolean(KEY_V810LOGICAUTOBRANCH810, value).apply()
+
+    var v810loginAutoToken810: Boolean
+        get() = prefs.getBoolean(KEY_V810LOGINAUTOTOKEN810, false)
+        set(value) = prefs.edit().putBoolean(KEY_V810LOGINAUTOTOKEN810, value).apply()
+
+    var v810longAutoPress810: Boolean
+        get() = prefs.getBoolean(KEY_V810LONGAUTOPRESS810, false)
+        set(value) = prefs.edit().putBoolean(KEY_V810LONGAUTOPRESS810, value).apply()
+
+    var v810loopAutoRepeat810: Boolean
+        get() = prefs.getBoolean(KEY_V810LOOPAUTOREPEAT810, false)
+        set(value) = prefs.edit().putBoolean(KEY_V810LOOPAUTOREPEAT810, value).apply()
+
+    var v810lowAutoPower810: Boolean
+        get() = prefs.getBoolean(KEY_V810LOWAUTOPOWER810, false)
+        set(value) = prefs.edit().putBoolean(KEY_V810LOWAUTOPOWER810, value).apply()
+
+    var v810lowerAutoBound810: Int
+        get() = prefs.getInt(KEY_V810LOWERAUTOBOUND810, 0)
+        set(value) = prefs.edit().putInt(KEY_V810LOWERAUTOBOUND810, value).apply()
+
+    var v810mainAutoFocus810: Boolean
+        get() = prefs.getBoolean(KEY_V810MAINAUTOFOCUS810, false)
+        set(value) = prefs.edit().putBoolean(KEY_V810MAINAUTOFOCUS810, value).apply()
+
+    var v810makeAutoBuild810: Boolean
+        get() = prefs.getBoolean(KEY_V810MAKEAUTOBUILD810, false)
+        set(value) = prefs.edit().putBoolean(KEY_V810MAKEAUTOBUILD810, value).apply()
+
+    var v810manageAutoQueue810: Boolean
+        get() = prefs.getBoolean(KEY_V810MANAGEAUTOQUEUE810, false)
+        set(value) = prefs.edit().putBoolean(KEY_V810MANAGEAUTOQUEUE810, value).apply()
+
+    var v810manifestAutoParse810: Boolean
+        get() = prefs.getBoolean(KEY_V810MANIFESTAUTOPARSE810, false)
+        set(value) = prefs.edit().putBoolean(KEY_V810MANIFESTAUTOPARSE810, value).apply()
+
+    var v810mapAutoBind810: Boolean
+        get() = prefs.getBoolean(KEY_V810MAPAUTOBIND810, false)
+        set(value) = prefs.edit().putBoolean(KEY_V810MAPAUTOBIND810, value).apply()
+
+    var v810marginAutoAdjust810: Boolean
+        get() = prefs.getBoolean(KEY_V810MARGINAUTOADJUST810, false)
+        set(value) = prefs.edit().putBoolean(KEY_V810MARGINAUTOADJUST810, value).apply()
+
+    var v810markAutoHighlight810: Boolean
+        get() = prefs.getBoolean(KEY_V810MARKAUTOHIGHLIGHT810, false)
+        set(value) = prefs.edit().putBoolean(KEY_V810MARKAUTOHIGHLIGHT810, value).apply()
+
+    var v810maskAutoApply810: Boolean
+        get() = prefs.getBoolean(KEY_V810MASKAUTOAPPLY810, false)
+        set(value) = prefs.edit().putBoolean(KEY_V810MASKAUTOAPPLY810, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -69180,5 +69780,155 @@ class AppPrefs(context: Context) {
         const val KEY_V800LOADAUTOBALANCE800 = "v800loadAutoBalance800" // v800 Load Auto Balance800
         const val KEY_V800LOCALAUTOCACHE800 = "v800localAutoCache800" // v800 Local Auto Cache800
         const val KEY_V800LOCKAUTOSCREEN800 = "v800lockAutoScreen800" // v800 Lock Auto Screen800
+        const val KEY_V801LOGAUTOROTATE801 = "v801logAutoRotate801" // v801 Log Auto Rotate801
+        const val KEY_V801LOGICAUTOBRANCH801 = "v801logicAutoBranch801" // v801 Logic Auto Branch801
+        const val KEY_V801LOGINAUTOTOKEN801 = "v801loginAutoToken801" // v801 Login Auto Token801
+        const val KEY_V801LONGAUTOPRESS801 = "v801longAutoPress801" // v801 Long Auto Press801
+        const val KEY_V801LOOPAUTOREPEAT801 = "v801loopAutoRepeat801" // v801 Loop Auto Repeat801
+        const val KEY_V801LOWAUTOPOWER801 = "v801lowAutoPower801" // v801 Low Auto Power801
+        const val KEY_V801LOWERAUTOBOUND801 = "v801lowerAutoBound801" // v801 Lower Auto Bound801
+        const val KEY_V801MAINAUTOFOCUS801 = "v801mainAutoFocus801" // v801 Main Auto Focus801
+        const val KEY_V801MAKEAUTOBUILD801 = "v801makeAutoBuild801" // v801 Make Auto Build801
+        const val KEY_V801MANAGEAUTOQUEUE801 = "v801manageAutoQueue801" // v801 Manage Auto Queue801
+        const val KEY_V801MANIFESTAUTOPARSE801 = "v801manifestAutoParse801" // v801 Manifest Auto Parse801
+        const val KEY_V801MAPAUTOBIND801 = "v801mapAutoBind801" // v801 Map Auto Bind801
+        const val KEY_V801MARGINAUTOADJUST801 = "v801marginAutoAdjust801" // v801 Margin Auto Adjust801
+        const val KEY_V801MARKAUTOHIGHLIGHT801 = "v801markAutoHighlight801" // v801 Mark Auto Highlight801
+        const val KEY_V801MASKAUTOAPPLY801 = "v801maskAutoApply801" // v801 Mask Auto Apply801
+        const val KEY_V802LOGAUTOROTATE802 = "v802logAutoRotate802" // v802 Log Auto Rotate802
+        const val KEY_V802LOGICAUTOBRANCH802 = "v802logicAutoBranch802" // v802 Logic Auto Branch802
+        const val KEY_V802LOGINAUTOTOKEN802 = "v802loginAutoToken802" // v802 Login Auto Token802
+        const val KEY_V802LONGAUTOPRESS802 = "v802longAutoPress802" // v802 Long Auto Press802
+        const val KEY_V802LOOPAUTOREPEAT802 = "v802loopAutoRepeat802" // v802 Loop Auto Repeat802
+        const val KEY_V802LOWAUTOPOWER802 = "v802lowAutoPower802" // v802 Low Auto Power802
+        const val KEY_V802LOWERAUTOBOUND802 = "v802lowerAutoBound802" // v802 Lower Auto Bound802
+        const val KEY_V802MAINAUTOFOCUS802 = "v802mainAutoFocus802" // v802 Main Auto Focus802
+        const val KEY_V802MAKEAUTOBUILD802 = "v802makeAutoBuild802" // v802 Make Auto Build802
+        const val KEY_V802MANAGEAUTOQUEUE802 = "v802manageAutoQueue802" // v802 Manage Auto Queue802
+        const val KEY_V802MANIFESTAUTOPARSE802 = "v802manifestAutoParse802" // v802 Manifest Auto Parse802
+        const val KEY_V802MAPAUTOBIND802 = "v802mapAutoBind802" // v802 Map Auto Bind802
+        const val KEY_V802MARGINAUTOADJUST802 = "v802marginAutoAdjust802" // v802 Margin Auto Adjust802
+        const val KEY_V802MARKAUTOHIGHLIGHT802 = "v802markAutoHighlight802" // v802 Mark Auto Highlight802
+        const val KEY_V802MASKAUTOAPPLY802 = "v802maskAutoApply802" // v802 Mask Auto Apply802
+        const val KEY_V803LOGAUTOROTATE803 = "v803logAutoRotate803" // v803 Log Auto Rotate803
+        const val KEY_V803LOGICAUTOBRANCH803 = "v803logicAutoBranch803" // v803 Logic Auto Branch803
+        const val KEY_V803LOGINAUTOTOKEN803 = "v803loginAutoToken803" // v803 Login Auto Token803
+        const val KEY_V803LONGAUTOPRESS803 = "v803longAutoPress803" // v803 Long Auto Press803
+        const val KEY_V803LOOPAUTOREPEAT803 = "v803loopAutoRepeat803" // v803 Loop Auto Repeat803
+        const val KEY_V803LOWAUTOPOWER803 = "v803lowAutoPower803" // v803 Low Auto Power803
+        const val KEY_V803LOWERAUTOBOUND803 = "v803lowerAutoBound803" // v803 Lower Auto Bound803
+        const val KEY_V803MAINAUTOFOCUS803 = "v803mainAutoFocus803" // v803 Main Auto Focus803
+        const val KEY_V803MAKEAUTOBUILD803 = "v803makeAutoBuild803" // v803 Make Auto Build803
+        const val KEY_V803MANAGEAUTOQUEUE803 = "v803manageAutoQueue803" // v803 Manage Auto Queue803
+        const val KEY_V803MANIFESTAUTOPARSE803 = "v803manifestAutoParse803" // v803 Manifest Auto Parse803
+        const val KEY_V803MAPAUTOBIND803 = "v803mapAutoBind803" // v803 Map Auto Bind803
+        const val KEY_V803MARGINAUTOADJUST803 = "v803marginAutoAdjust803" // v803 Margin Auto Adjust803
+        const val KEY_V803MARKAUTOHIGHLIGHT803 = "v803markAutoHighlight803" // v803 Mark Auto Highlight803
+        const val KEY_V803MASKAUTOAPPLY803 = "v803maskAutoApply803" // v803 Mask Auto Apply803
+        const val KEY_V804LOGAUTOROTATE804 = "v804logAutoRotate804" // v804 Log Auto Rotate804
+        const val KEY_V804LOGICAUTOBRANCH804 = "v804logicAutoBranch804" // v804 Logic Auto Branch804
+        const val KEY_V804LOGINAUTOTOKEN804 = "v804loginAutoToken804" // v804 Login Auto Token804
+        const val KEY_V804LONGAUTOPRESS804 = "v804longAutoPress804" // v804 Long Auto Press804
+        const val KEY_V804LOOPAUTOREPEAT804 = "v804loopAutoRepeat804" // v804 Loop Auto Repeat804
+        const val KEY_V804LOWAUTOPOWER804 = "v804lowAutoPower804" // v804 Low Auto Power804
+        const val KEY_V804LOWERAUTOBOUND804 = "v804lowerAutoBound804" // v804 Lower Auto Bound804
+        const val KEY_V804MAINAUTOFOCUS804 = "v804mainAutoFocus804" // v804 Main Auto Focus804
+        const val KEY_V804MAKEAUTOBUILD804 = "v804makeAutoBuild804" // v804 Make Auto Build804
+        const val KEY_V804MANAGEAUTOQUEUE804 = "v804manageAutoQueue804" // v804 Manage Auto Queue804
+        const val KEY_V804MANIFESTAUTOPARSE804 = "v804manifestAutoParse804" // v804 Manifest Auto Parse804
+        const val KEY_V804MAPAUTOBIND804 = "v804mapAutoBind804" // v804 Map Auto Bind804
+        const val KEY_V804MARGINAUTOADJUST804 = "v804marginAutoAdjust804" // v804 Margin Auto Adjust804
+        const val KEY_V804MARKAUTOHIGHLIGHT804 = "v804markAutoHighlight804" // v804 Mark Auto Highlight804
+        const val KEY_V804MASKAUTOAPPLY804 = "v804maskAutoApply804" // v804 Mask Auto Apply804
+        const val KEY_V805LOGAUTOROTATE805 = "v805logAutoRotate805" // v805 Log Auto Rotate805
+        const val KEY_V805LOGICAUTOBRANCH805 = "v805logicAutoBranch805" // v805 Logic Auto Branch805
+        const val KEY_V805LOGINAUTOTOKEN805 = "v805loginAutoToken805" // v805 Login Auto Token805
+        const val KEY_V805LONGAUTOPRESS805 = "v805longAutoPress805" // v805 Long Auto Press805
+        const val KEY_V805LOOPAUTOREPEAT805 = "v805loopAutoRepeat805" // v805 Loop Auto Repeat805
+        const val KEY_V805LOWAUTOPOWER805 = "v805lowAutoPower805" // v805 Low Auto Power805
+        const val KEY_V805LOWERAUTOBOUND805 = "v805lowerAutoBound805" // v805 Lower Auto Bound805
+        const val KEY_V805MAINAUTOFOCUS805 = "v805mainAutoFocus805" // v805 Main Auto Focus805
+        const val KEY_V805MAKEAUTOBUILD805 = "v805makeAutoBuild805" // v805 Make Auto Build805
+        const val KEY_V805MANAGEAUTOQUEUE805 = "v805manageAutoQueue805" // v805 Manage Auto Queue805
+        const val KEY_V805MANIFESTAUTOPARSE805 = "v805manifestAutoParse805" // v805 Manifest Auto Parse805
+        const val KEY_V805MAPAUTOBIND805 = "v805mapAutoBind805" // v805 Map Auto Bind805
+        const val KEY_V805MARGINAUTOADJUST805 = "v805marginAutoAdjust805" // v805 Margin Auto Adjust805
+        const val KEY_V805MARKAUTOHIGHLIGHT805 = "v805markAutoHighlight805" // v805 Mark Auto Highlight805
+        const val KEY_V805MASKAUTOAPPLY805 = "v805maskAutoApply805" // v805 Mask Auto Apply805
+        const val KEY_V806LOGAUTOROTATE806 = "v806logAutoRotate806" // v806 Log Auto Rotate806
+        const val KEY_V806LOGICAUTOBRANCH806 = "v806logicAutoBranch806" // v806 Logic Auto Branch806
+        const val KEY_V806LOGINAUTOTOKEN806 = "v806loginAutoToken806" // v806 Login Auto Token806
+        const val KEY_V806LONGAUTOPRESS806 = "v806longAutoPress806" // v806 Long Auto Press806
+        const val KEY_V806LOOPAUTOREPEAT806 = "v806loopAutoRepeat806" // v806 Loop Auto Repeat806
+        const val KEY_V806LOWAUTOPOWER806 = "v806lowAutoPower806" // v806 Low Auto Power806
+        const val KEY_V806LOWERAUTOBOUND806 = "v806lowerAutoBound806" // v806 Lower Auto Bound806
+        const val KEY_V806MAINAUTOFOCUS806 = "v806mainAutoFocus806" // v806 Main Auto Focus806
+        const val KEY_V806MAKEAUTOBUILD806 = "v806makeAutoBuild806" // v806 Make Auto Build806
+        const val KEY_V806MANAGEAUTOQUEUE806 = "v806manageAutoQueue806" // v806 Manage Auto Queue806
+        const val KEY_V806MANIFESTAUTOPARSE806 = "v806manifestAutoParse806" // v806 Manifest Auto Parse806
+        const val KEY_V806MAPAUTOBIND806 = "v806mapAutoBind806" // v806 Map Auto Bind806
+        const val KEY_V806MARGINAUTOADJUST806 = "v806marginAutoAdjust806" // v806 Margin Auto Adjust806
+        const val KEY_V806MARKAUTOHIGHLIGHT806 = "v806markAutoHighlight806" // v806 Mark Auto Highlight806
+        const val KEY_V806MASKAUTOAPPLY806 = "v806maskAutoApply806" // v806 Mask Auto Apply806
+        const val KEY_V807LOGAUTOROTATE807 = "v807logAutoRotate807" // v807 Log Auto Rotate807
+        const val KEY_V807LOGICAUTOBRANCH807 = "v807logicAutoBranch807" // v807 Logic Auto Branch807
+        const val KEY_V807LOGINAUTOTOKEN807 = "v807loginAutoToken807" // v807 Login Auto Token807
+        const val KEY_V807LONGAUTOPRESS807 = "v807longAutoPress807" // v807 Long Auto Press807
+        const val KEY_V807LOOPAUTOREPEAT807 = "v807loopAutoRepeat807" // v807 Loop Auto Repeat807
+        const val KEY_V807LOWAUTOPOWER807 = "v807lowAutoPower807" // v807 Low Auto Power807
+        const val KEY_V807LOWERAUTOBOUND807 = "v807lowerAutoBound807" // v807 Lower Auto Bound807
+        const val KEY_V807MAINAUTOFOCUS807 = "v807mainAutoFocus807" // v807 Main Auto Focus807
+        const val KEY_V807MAKEAUTOBUILD807 = "v807makeAutoBuild807" // v807 Make Auto Build807
+        const val KEY_V807MANAGEAUTOQUEUE807 = "v807manageAutoQueue807" // v807 Manage Auto Queue807
+        const val KEY_V807MANIFESTAUTOPARSE807 = "v807manifestAutoParse807" // v807 Manifest Auto Parse807
+        const val KEY_V807MAPAUTOBIND807 = "v807mapAutoBind807" // v807 Map Auto Bind807
+        const val KEY_V807MARGINAUTOADJUST807 = "v807marginAutoAdjust807" // v807 Margin Auto Adjust807
+        const val KEY_V807MARKAUTOHIGHLIGHT807 = "v807markAutoHighlight807" // v807 Mark Auto Highlight807
+        const val KEY_V807MASKAUTOAPPLY807 = "v807maskAutoApply807" // v807 Mask Auto Apply807
+        const val KEY_V808LOGAUTOROTATE808 = "v808logAutoRotate808" // v808 Log Auto Rotate808
+        const val KEY_V808LOGICAUTOBRANCH808 = "v808logicAutoBranch808" // v808 Logic Auto Branch808
+        const val KEY_V808LOGINAUTOTOKEN808 = "v808loginAutoToken808" // v808 Login Auto Token808
+        const val KEY_V808LONGAUTOPRESS808 = "v808longAutoPress808" // v808 Long Auto Press808
+        const val KEY_V808LOOPAUTOREPEAT808 = "v808loopAutoRepeat808" // v808 Loop Auto Repeat808
+        const val KEY_V808LOWAUTOPOWER808 = "v808lowAutoPower808" // v808 Low Auto Power808
+        const val KEY_V808LOWERAUTOBOUND808 = "v808lowerAutoBound808" // v808 Lower Auto Bound808
+        const val KEY_V808MAINAUTOFOCUS808 = "v808mainAutoFocus808" // v808 Main Auto Focus808
+        const val KEY_V808MAKEAUTOBUILD808 = "v808makeAutoBuild808" // v808 Make Auto Build808
+        const val KEY_V808MANAGEAUTOQUEUE808 = "v808manageAutoQueue808" // v808 Manage Auto Queue808
+        const val KEY_V808MANIFESTAUTOPARSE808 = "v808manifestAutoParse808" // v808 Manifest Auto Parse808
+        const val KEY_V808MAPAUTOBIND808 = "v808mapAutoBind808" // v808 Map Auto Bind808
+        const val KEY_V808MARGINAUTOADJUST808 = "v808marginAutoAdjust808" // v808 Margin Auto Adjust808
+        const val KEY_V808MARKAUTOHIGHLIGHT808 = "v808markAutoHighlight808" // v808 Mark Auto Highlight808
+        const val KEY_V808MASKAUTOAPPLY808 = "v808maskAutoApply808" // v808 Mask Auto Apply808
+        const val KEY_V809LOGAUTOROTATE809 = "v809logAutoRotate809" // v809 Log Auto Rotate809
+        const val KEY_V809LOGICAUTOBRANCH809 = "v809logicAutoBranch809" // v809 Logic Auto Branch809
+        const val KEY_V809LOGINAUTOTOKEN809 = "v809loginAutoToken809" // v809 Login Auto Token809
+        const val KEY_V809LONGAUTOPRESS809 = "v809longAutoPress809" // v809 Long Auto Press809
+        const val KEY_V809LOOPAUTOREPEAT809 = "v809loopAutoRepeat809" // v809 Loop Auto Repeat809
+        const val KEY_V809LOWAUTOPOWER809 = "v809lowAutoPower809" // v809 Low Auto Power809
+        const val KEY_V809LOWERAUTOBOUND809 = "v809lowerAutoBound809" // v809 Lower Auto Bound809
+        const val KEY_V809MAINAUTOFOCUS809 = "v809mainAutoFocus809" // v809 Main Auto Focus809
+        const val KEY_V809MAKEAUTOBUILD809 = "v809makeAutoBuild809" // v809 Make Auto Build809
+        const val KEY_V809MANAGEAUTOQUEUE809 = "v809manageAutoQueue809" // v809 Manage Auto Queue809
+        const val KEY_V809MANIFESTAUTOPARSE809 = "v809manifestAutoParse809" // v809 Manifest Auto Parse809
+        const val KEY_V809MAPAUTOBIND809 = "v809mapAutoBind809" // v809 Map Auto Bind809
+        const val KEY_V809MARGINAUTOADJUST809 = "v809marginAutoAdjust809" // v809 Margin Auto Adjust809
+        const val KEY_V809MARKAUTOHIGHLIGHT809 = "v809markAutoHighlight809" // v809 Mark Auto Highlight809
+        const val KEY_V809MASKAUTOAPPLY809 = "v809maskAutoApply809" // v809 Mask Auto Apply809
+        const val KEY_V810LOGAUTOROTATE810 = "v810logAutoRotate810" // v810 Log Auto Rotate810
+        const val KEY_V810LOGICAUTOBRANCH810 = "v810logicAutoBranch810" // v810 Logic Auto Branch810
+        const val KEY_V810LOGINAUTOTOKEN810 = "v810loginAutoToken810" // v810 Login Auto Token810
+        const val KEY_V810LONGAUTOPRESS810 = "v810longAutoPress810" // v810 Long Auto Press810
+        const val KEY_V810LOOPAUTOREPEAT810 = "v810loopAutoRepeat810" // v810 Loop Auto Repeat810
+        const val KEY_V810LOWAUTOPOWER810 = "v810lowAutoPower810" // v810 Low Auto Power810
+        const val KEY_V810LOWERAUTOBOUND810 = "v810lowerAutoBound810" // v810 Lower Auto Bound810
+        const val KEY_V810MAINAUTOFOCUS810 = "v810mainAutoFocus810" // v810 Main Auto Focus810
+        const val KEY_V810MAKEAUTOBUILD810 = "v810makeAutoBuild810" // v810 Make Auto Build810
+        const val KEY_V810MANAGEAUTOQUEUE810 = "v810manageAutoQueue810" // v810 Manage Auto Queue810
+        const val KEY_V810MANIFESTAUTOPARSE810 = "v810manifestAutoParse810" // v810 Manifest Auto Parse810
+        const val KEY_V810MAPAUTOBIND810 = "v810mapAutoBind810" // v810 Map Auto Bind810
+        const val KEY_V810MARGINAUTOADJUST810 = "v810marginAutoAdjust810" // v810 Margin Auto Adjust810
+        const val KEY_V810MARKAUTOHIGHLIGHT810 = "v810markAutoHighlight810" // v810 Mark Auto Highlight810
+        const val KEY_V810MASKAUTOAPPLY810 = "v810maskAutoApply810" // v810 Mask Auto Apply810
     }
 }
