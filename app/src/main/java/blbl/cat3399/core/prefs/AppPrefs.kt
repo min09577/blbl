@@ -41048,6 +41048,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V570TESTAUTORUN570, false)
         set(value) = prefs.edit().putBoolean(KEY_V570TESTAUTORUN570, value).apply()
 
+    var v571textAutoDetect571: Boolean
+        get() = prefs.getBoolean(KEY_V571TEXTAUTODETECT571, false)
+        set(value) = prefs.edit().putBoolean(KEY_V571TEXTAUTODETECT571, value).apply()
+
+    var v571themeAutoSwitch571: Boolean
+        get() = prefs.getBoolean(KEY_V571THEMEAUTOSWITCH571, false)
+        set(value) = prefs.edit().putBoolean(KEY_V571THEMEAUTOSWITCH571, value).apply()
+
+    var v571thresholdAutoSet571: Int
+        get() = prefs.getInt(KEY_V571THRESHOLDAUTOSET571, 0)
+        set(value) = prefs.edit().putInt(KEY_V571THRESHOLDAUTOSET571, value).apply()
+
+    var v571tileAutoLayout571: Boolean
+        get() = prefs.getBoolean(KEY_V571TILEAUTOLAYOUT571, false)
+        set(value) = prefs.edit().putBoolean(KEY_V571TILEAUTOLAYOUT571, value).apply()
+
+    var v571tipAutoShow571: Boolean
+        get() = prefs.getBoolean(KEY_V571TIPAUTOSHOW571, false)
+        set(value) = prefs.edit().putBoolean(KEY_V571TIPAUTOSHOW571, value).apply()
+
+    var v571tokenAutoRefresh571: Boolean
+        get() = prefs.getBoolean(KEY_V571TOKENAUTOREFRESH571, false)
+        set(value) = prefs.edit().putBoolean(KEY_V571TOKENAUTOREFRESH571, value).apply()
+
+    var v571topAutoRank571: Boolean
+        get() = prefs.getBoolean(KEY_V571TOPAUTORANK571, false)
+        set(value) = prefs.edit().putBoolean(KEY_V571TOPAUTORANK571, value).apply()
+
+    var v571traceAutoLog571: Boolean
+        get() = prefs.getBoolean(KEY_V571TRACEAUTOLOG571, false)
+        set(value) = prefs.edit().putBoolean(KEY_V571TRACEAUTOLOG571, value).apply()
+
+    var v571transferAutoResume571: Boolean
+        get() = prefs.getBoolean(KEY_V571TRANSFERAUTORESUME571, false)
+        set(value) = prefs.edit().putBoolean(KEY_V571TRANSFERAUTORESUME571, value).apply()
+
+    var v571transformAutoCrop571: Boolean
+        get() = prefs.getBoolean(KEY_V571TRANSFORMAUTOCROP571, false)
+        set(value) = prefs.edit().putBoolean(KEY_V571TRANSFORMAUTOCROP571, value).apply()
+
+    var v571translateAutoDetect571: Boolean
+        get() = prefs.getBoolean(KEY_V571TRANSLATEAUTODETECT571, false)
+        set(value) = prefs.edit().putBoolean(KEY_V571TRANSLATEAUTODETECT571, value).apply()
+
+    var v571triggerAutoFire571: Boolean
+        get() = prefs.getBoolean(KEY_V571TRIGGERAUTOFIRE571, false)
+        set(value) = prefs.edit().putBoolean(KEY_V571TRIGGERAUTOFIRE571, value).apply()
+
+    var v571trimAutoClean571: Boolean
+        get() = prefs.getBoolean(KEY_V571TRIMAUTOCLEAN571, false)
+        set(value) = prefs.edit().putBoolean(KEY_V571TRIMAUTOCLEAN571, value).apply()
+
+    var v571tuneAutoEqualizer571: Boolean
+        get() = prefs.getBoolean(KEY_V571TUNEAUTOEQUALIZER571, false)
+        set(value) = prefs.edit().putBoolean(KEY_V571TUNEAUTOEQUALIZER571, value).apply()
+
+    var v571typeAutoInfer571: Boolean
+        get() = prefs.getBoolean(KEY_V571TYPEAUTOINFER571, false)
+        set(value) = prefs.edit().putBoolean(KEY_V571TYPEAUTOINFER571, value).apply()
+
+    var v572textAutoDetect572: Boolean
+        get() = prefs.getBoolean(KEY_V572TEXTAUTODETECT572, false)
+        set(value) = prefs.edit().putBoolean(KEY_V572TEXTAUTODETECT572, value).apply()
+
+    var v572themeAutoSwitch572: Boolean
+        get() = prefs.getBoolean(KEY_V572THEMEAUTOSWITCH572, false)
+        set(value) = prefs.edit().putBoolean(KEY_V572THEMEAUTOSWITCH572, value).apply()
+
+    var v572thresholdAutoSet572: Int
+        get() = prefs.getInt(KEY_V572THRESHOLDAUTOSET572, 0)
+        set(value) = prefs.edit().putInt(KEY_V572THRESHOLDAUTOSET572, value).apply()
+
+    var v572tileAutoLayout572: Boolean
+        get() = prefs.getBoolean(KEY_V572TILEAUTOLAYOUT572, false)
+        set(value) = prefs.edit().putBoolean(KEY_V572TILEAUTOLAYOUT572, value).apply()
+
+    var v572tipAutoShow572: Boolean
+        get() = prefs.getBoolean(KEY_V572TIPAUTOSHOW572, false)
+        set(value) = prefs.edit().putBoolean(KEY_V572TIPAUTOSHOW572, value).apply()
+
+    var v572tokenAutoRefresh572: Boolean
+        get() = prefs.getBoolean(KEY_V572TOKENAUTOREFRESH572, false)
+        set(value) = prefs.edit().putBoolean(KEY_V572TOKENAUTOREFRESH572, value).apply()
+
+    var v572topAutoRank572: Boolean
+        get() = prefs.getBoolean(KEY_V572TOPAUTORANK572, false)
+        set(value) = prefs.edit().putBoolean(KEY_V572TOPAUTORANK572, value).apply()
+
+    var v572traceAutoLog572: Boolean
+        get() = prefs.getBoolean(KEY_V572TRACEAUTOLOG572, false)
+        set(value) = prefs.edit().putBoolean(KEY_V572TRACEAUTOLOG572, value).apply()
+
+    var v572transferAutoResume572: Boolean
+        get() = prefs.getBoolean(KEY_V572TRANSFERAUTORESUME572, false)
+        set(value) = prefs.edit().putBoolean(KEY_V572TRANSFERAUTORESUME572, value).apply()
+
+    var v572transformAutoCrop572: Boolean
+        get() = prefs.getBoolean(KEY_V572TRANSFORMAUTOCROP572, false)
+        set(value) = prefs.edit().putBoolean(KEY_V572TRANSFORMAUTOCROP572, value).apply()
+
+    var v572translateAutoDetect572: Boolean
+        get() = prefs.getBoolean(KEY_V572TRANSLATEAUTODETECT572, false)
+        set(value) = prefs.edit().putBoolean(KEY_V572TRANSLATEAUTODETECT572, value).apply()
+
+    var v572triggerAutoFire572: Boolean
+        get() = prefs.getBoolean(KEY_V572TRIGGERAUTOFIRE572, false)
+        set(value) = prefs.edit().putBoolean(KEY_V572TRIGGERAUTOFIRE572, value).apply()
+
+    var v572trimAutoClean572: Boolean
+        get() = prefs.getBoolean(KEY_V572TRIMAUTOCLEAN572, false)
+        set(value) = prefs.edit().putBoolean(KEY_V572TRIMAUTOCLEAN572, value).apply()
+
+    var v572tuneAutoEqualizer572: Boolean
+        get() = prefs.getBoolean(KEY_V572TUNEAUTOEQUALIZER572, false)
+        set(value) = prefs.edit().putBoolean(KEY_V572TUNEAUTOEQUALIZER572, value).apply()
+
+    var v572typeAutoInfer572: Boolean
+        get() = prefs.getBoolean(KEY_V572TYPEAUTOINFER572, false)
+        set(value) = prefs.edit().putBoolean(KEY_V572TYPEAUTOINFER572, value).apply()
+
+    var v573textAutoDetect573: Boolean
+        get() = prefs.getBoolean(KEY_V573TEXTAUTODETECT573, false)
+        set(value) = prefs.edit().putBoolean(KEY_V573TEXTAUTODETECT573, value).apply()
+
+    var v573themeAutoSwitch573: Boolean
+        get() = prefs.getBoolean(KEY_V573THEMEAUTOSWITCH573, false)
+        set(value) = prefs.edit().putBoolean(KEY_V573THEMEAUTOSWITCH573, value).apply()
+
+    var v573thresholdAutoSet573: Int
+        get() = prefs.getInt(KEY_V573THRESHOLDAUTOSET573, 0)
+        set(value) = prefs.edit().putInt(KEY_V573THRESHOLDAUTOSET573, value).apply()
+
+    var v573tileAutoLayout573: Boolean
+        get() = prefs.getBoolean(KEY_V573TILEAUTOLAYOUT573, false)
+        set(value) = prefs.edit().putBoolean(KEY_V573TILEAUTOLAYOUT573, value).apply()
+
+    var v573tipAutoShow573: Boolean
+        get() = prefs.getBoolean(KEY_V573TIPAUTOSHOW573, false)
+        set(value) = prefs.edit().putBoolean(KEY_V573TIPAUTOSHOW573, value).apply()
+
+    var v573tokenAutoRefresh573: Boolean
+        get() = prefs.getBoolean(KEY_V573TOKENAUTOREFRESH573, false)
+        set(value) = prefs.edit().putBoolean(KEY_V573TOKENAUTOREFRESH573, value).apply()
+
+    var v573topAutoRank573: Boolean
+        get() = prefs.getBoolean(KEY_V573TOPAUTORANK573, false)
+        set(value) = prefs.edit().putBoolean(KEY_V573TOPAUTORANK573, value).apply()
+
+    var v573traceAutoLog573: Boolean
+        get() = prefs.getBoolean(KEY_V573TRACEAUTOLOG573, false)
+        set(value) = prefs.edit().putBoolean(KEY_V573TRACEAUTOLOG573, value).apply()
+
+    var v573transferAutoResume573: Boolean
+        get() = prefs.getBoolean(KEY_V573TRANSFERAUTORESUME573, false)
+        set(value) = prefs.edit().putBoolean(KEY_V573TRANSFERAUTORESUME573, value).apply()
+
+    var v573transformAutoCrop573: Boolean
+        get() = prefs.getBoolean(KEY_V573TRANSFORMAUTOCROP573, false)
+        set(value) = prefs.edit().putBoolean(KEY_V573TRANSFORMAUTOCROP573, value).apply()
+
+    var v573translateAutoDetect573: Boolean
+        get() = prefs.getBoolean(KEY_V573TRANSLATEAUTODETECT573, false)
+        set(value) = prefs.edit().putBoolean(KEY_V573TRANSLATEAUTODETECT573, value).apply()
+
+    var v573triggerAutoFire573: Boolean
+        get() = prefs.getBoolean(KEY_V573TRIGGERAUTOFIRE573, false)
+        set(value) = prefs.edit().putBoolean(KEY_V573TRIGGERAUTOFIRE573, value).apply()
+
+    var v573trimAutoClean573: Boolean
+        get() = prefs.getBoolean(KEY_V573TRIMAUTOCLEAN573, false)
+        set(value) = prefs.edit().putBoolean(KEY_V573TRIMAUTOCLEAN573, value).apply()
+
+    var v573tuneAutoEqualizer573: Boolean
+        get() = prefs.getBoolean(KEY_V573TUNEAUTOEQUALIZER573, false)
+        set(value) = prefs.edit().putBoolean(KEY_V573TUNEAUTOEQUALIZER573, value).apply()
+
+    var v573typeAutoInfer573: Boolean
+        get() = prefs.getBoolean(KEY_V573TYPEAUTOINFER573, false)
+        set(value) = prefs.edit().putBoolean(KEY_V573TYPEAUTOINFER573, value).apply()
+
+    var v574textAutoDetect574: Boolean
+        get() = prefs.getBoolean(KEY_V574TEXTAUTODETECT574, false)
+        set(value) = prefs.edit().putBoolean(KEY_V574TEXTAUTODETECT574, value).apply()
+
+    var v574themeAutoSwitch574: Boolean
+        get() = prefs.getBoolean(KEY_V574THEMEAUTOSWITCH574, false)
+        set(value) = prefs.edit().putBoolean(KEY_V574THEMEAUTOSWITCH574, value).apply()
+
+    var v574thresholdAutoSet574: Int
+        get() = prefs.getInt(KEY_V574THRESHOLDAUTOSET574, 0)
+        set(value) = prefs.edit().putInt(KEY_V574THRESHOLDAUTOSET574, value).apply()
+
+    var v574tileAutoLayout574: Boolean
+        get() = prefs.getBoolean(KEY_V574TILEAUTOLAYOUT574, false)
+        set(value) = prefs.edit().putBoolean(KEY_V574TILEAUTOLAYOUT574, value).apply()
+
+    var v574tipAutoShow574: Boolean
+        get() = prefs.getBoolean(KEY_V574TIPAUTOSHOW574, false)
+        set(value) = prefs.edit().putBoolean(KEY_V574TIPAUTOSHOW574, value).apply()
+
+    var v574tokenAutoRefresh574: Boolean
+        get() = prefs.getBoolean(KEY_V574TOKENAUTOREFRESH574, false)
+        set(value) = prefs.edit().putBoolean(KEY_V574TOKENAUTOREFRESH574, value).apply()
+
+    var v574topAutoRank574: Boolean
+        get() = prefs.getBoolean(KEY_V574TOPAUTORANK574, false)
+        set(value) = prefs.edit().putBoolean(KEY_V574TOPAUTORANK574, value).apply()
+
+    var v574traceAutoLog574: Boolean
+        get() = prefs.getBoolean(KEY_V574TRACEAUTOLOG574, false)
+        set(value) = prefs.edit().putBoolean(KEY_V574TRACEAUTOLOG574, value).apply()
+
+    var v574transferAutoResume574: Boolean
+        get() = prefs.getBoolean(KEY_V574TRANSFERAUTORESUME574, false)
+        set(value) = prefs.edit().putBoolean(KEY_V574TRANSFERAUTORESUME574, value).apply()
+
+    var v574transformAutoCrop574: Boolean
+        get() = prefs.getBoolean(KEY_V574TRANSFORMAUTOCROP574, false)
+        set(value) = prefs.edit().putBoolean(KEY_V574TRANSFORMAUTOCROP574, value).apply()
+
+    var v574translateAutoDetect574: Boolean
+        get() = prefs.getBoolean(KEY_V574TRANSLATEAUTODETECT574, false)
+        set(value) = prefs.edit().putBoolean(KEY_V574TRANSLATEAUTODETECT574, value).apply()
+
+    var v574triggerAutoFire574: Boolean
+        get() = prefs.getBoolean(KEY_V574TRIGGERAUTOFIRE574, false)
+        set(value) = prefs.edit().putBoolean(KEY_V574TRIGGERAUTOFIRE574, value).apply()
+
+    var v574trimAutoClean574: Boolean
+        get() = prefs.getBoolean(KEY_V574TRIMAUTOCLEAN574, false)
+        set(value) = prefs.edit().putBoolean(KEY_V574TRIMAUTOCLEAN574, value).apply()
+
+    var v574tuneAutoEqualizer574: Boolean
+        get() = prefs.getBoolean(KEY_V574TUNEAUTOEQUALIZER574, false)
+        set(value) = prefs.edit().putBoolean(KEY_V574TUNEAUTOEQUALIZER574, value).apply()
+
+    var v574typeAutoInfer574: Boolean
+        get() = prefs.getBoolean(KEY_V574TYPEAUTOINFER574, false)
+        set(value) = prefs.edit().putBoolean(KEY_V574TYPEAUTOINFER574, value).apply()
+
+    var v575textAutoDetect575: Boolean
+        get() = prefs.getBoolean(KEY_V575TEXTAUTODETECT575, false)
+        set(value) = prefs.edit().putBoolean(KEY_V575TEXTAUTODETECT575, value).apply()
+
+    var v575themeAutoSwitch575: Boolean
+        get() = prefs.getBoolean(KEY_V575THEMEAUTOSWITCH575, false)
+        set(value) = prefs.edit().putBoolean(KEY_V575THEMEAUTOSWITCH575, value).apply()
+
+    var v575thresholdAutoSet575: Int
+        get() = prefs.getInt(KEY_V575THRESHOLDAUTOSET575, 0)
+        set(value) = prefs.edit().putInt(KEY_V575THRESHOLDAUTOSET575, value).apply()
+
+    var v575tileAutoLayout575: Boolean
+        get() = prefs.getBoolean(KEY_V575TILEAUTOLAYOUT575, false)
+        set(value) = prefs.edit().putBoolean(KEY_V575TILEAUTOLAYOUT575, value).apply()
+
+    var v575tipAutoShow575: Boolean
+        get() = prefs.getBoolean(KEY_V575TIPAUTOSHOW575, false)
+        set(value) = prefs.edit().putBoolean(KEY_V575TIPAUTOSHOW575, value).apply()
+
+    var v575tokenAutoRefresh575: Boolean
+        get() = prefs.getBoolean(KEY_V575TOKENAUTOREFRESH575, false)
+        set(value) = prefs.edit().putBoolean(KEY_V575TOKENAUTOREFRESH575, value).apply()
+
+    var v575topAutoRank575: Boolean
+        get() = prefs.getBoolean(KEY_V575TOPAUTORANK575, false)
+        set(value) = prefs.edit().putBoolean(KEY_V575TOPAUTORANK575, value).apply()
+
+    var v575traceAutoLog575: Boolean
+        get() = prefs.getBoolean(KEY_V575TRACEAUTOLOG575, false)
+        set(value) = prefs.edit().putBoolean(KEY_V575TRACEAUTOLOG575, value).apply()
+
+    var v575transferAutoResume575: Boolean
+        get() = prefs.getBoolean(KEY_V575TRANSFERAUTORESUME575, false)
+        set(value) = prefs.edit().putBoolean(KEY_V575TRANSFERAUTORESUME575, value).apply()
+
+    var v575transformAutoCrop575: Boolean
+        get() = prefs.getBoolean(KEY_V575TRANSFORMAUTOCROP575, false)
+        set(value) = prefs.edit().putBoolean(KEY_V575TRANSFORMAUTOCROP575, value).apply()
+
+    var v575translateAutoDetect575: Boolean
+        get() = prefs.getBoolean(KEY_V575TRANSLATEAUTODETECT575, false)
+        set(value) = prefs.edit().putBoolean(KEY_V575TRANSLATEAUTODETECT575, value).apply()
+
+    var v575triggerAutoFire575: Boolean
+        get() = prefs.getBoolean(KEY_V575TRIGGERAUTOFIRE575, false)
+        set(value) = prefs.edit().putBoolean(KEY_V575TRIGGERAUTOFIRE575, value).apply()
+
+    var v575trimAutoClean575: Boolean
+        get() = prefs.getBoolean(KEY_V575TRIMAUTOCLEAN575, false)
+        set(value) = prefs.edit().putBoolean(KEY_V575TRIMAUTOCLEAN575, value).apply()
+
+    var v575tuneAutoEqualizer575: Boolean
+        get() = prefs.getBoolean(KEY_V575TUNEAUTOEQUALIZER575, false)
+        set(value) = prefs.edit().putBoolean(KEY_V575TUNEAUTOEQUALIZER575, value).apply()
+
+    var v575typeAutoInfer575: Boolean
+        get() = prefs.getBoolean(KEY_V575TYPEAUTOINFER575, false)
+        set(value) = prefs.edit().putBoolean(KEY_V575TYPEAUTOINFER575, value).apply()
+
+    var v576textAutoDetect576: Boolean
+        get() = prefs.getBoolean(KEY_V576TEXTAUTODETECT576, false)
+        set(value) = prefs.edit().putBoolean(KEY_V576TEXTAUTODETECT576, value).apply()
+
+    var v576themeAutoSwitch576: Boolean
+        get() = prefs.getBoolean(KEY_V576THEMEAUTOSWITCH576, false)
+        set(value) = prefs.edit().putBoolean(KEY_V576THEMEAUTOSWITCH576, value).apply()
+
+    var v576thresholdAutoSet576: Int
+        get() = prefs.getInt(KEY_V576THRESHOLDAUTOSET576, 0)
+        set(value) = prefs.edit().putInt(KEY_V576THRESHOLDAUTOSET576, value).apply()
+
+    var v576tileAutoLayout576: Boolean
+        get() = prefs.getBoolean(KEY_V576TILEAUTOLAYOUT576, false)
+        set(value) = prefs.edit().putBoolean(KEY_V576TILEAUTOLAYOUT576, value).apply()
+
+    var v576tipAutoShow576: Boolean
+        get() = prefs.getBoolean(KEY_V576TIPAUTOSHOW576, false)
+        set(value) = prefs.edit().putBoolean(KEY_V576TIPAUTOSHOW576, value).apply()
+
+    var v576tokenAutoRefresh576: Boolean
+        get() = prefs.getBoolean(KEY_V576TOKENAUTOREFRESH576, false)
+        set(value) = prefs.edit().putBoolean(KEY_V576TOKENAUTOREFRESH576, value).apply()
+
+    var v576topAutoRank576: Boolean
+        get() = prefs.getBoolean(KEY_V576TOPAUTORANK576, false)
+        set(value) = prefs.edit().putBoolean(KEY_V576TOPAUTORANK576, value).apply()
+
+    var v576traceAutoLog576: Boolean
+        get() = prefs.getBoolean(KEY_V576TRACEAUTOLOG576, false)
+        set(value) = prefs.edit().putBoolean(KEY_V576TRACEAUTOLOG576, value).apply()
+
+    var v576transferAutoResume576: Boolean
+        get() = prefs.getBoolean(KEY_V576TRANSFERAUTORESUME576, false)
+        set(value) = prefs.edit().putBoolean(KEY_V576TRANSFERAUTORESUME576, value).apply()
+
+    var v576transformAutoCrop576: Boolean
+        get() = prefs.getBoolean(KEY_V576TRANSFORMAUTOCROP576, false)
+        set(value) = prefs.edit().putBoolean(KEY_V576TRANSFORMAUTOCROP576, value).apply()
+
+    var v576translateAutoDetect576: Boolean
+        get() = prefs.getBoolean(KEY_V576TRANSLATEAUTODETECT576, false)
+        set(value) = prefs.edit().putBoolean(KEY_V576TRANSLATEAUTODETECT576, value).apply()
+
+    var v576triggerAutoFire576: Boolean
+        get() = prefs.getBoolean(KEY_V576TRIGGERAUTOFIRE576, false)
+        set(value) = prefs.edit().putBoolean(KEY_V576TRIGGERAUTOFIRE576, value).apply()
+
+    var v576trimAutoClean576: Boolean
+        get() = prefs.getBoolean(KEY_V576TRIMAUTOCLEAN576, false)
+        set(value) = prefs.edit().putBoolean(KEY_V576TRIMAUTOCLEAN576, value).apply()
+
+    var v576tuneAutoEqualizer576: Boolean
+        get() = prefs.getBoolean(KEY_V576TUNEAUTOEQUALIZER576, false)
+        set(value) = prefs.edit().putBoolean(KEY_V576TUNEAUTOEQUALIZER576, value).apply()
+
+    var v576typeAutoInfer576: Boolean
+        get() = prefs.getBoolean(KEY_V576TYPEAUTOINFER576, false)
+        set(value) = prefs.edit().putBoolean(KEY_V576TYPEAUTOINFER576, value).apply()
+
+    var v577textAutoDetect577: Boolean
+        get() = prefs.getBoolean(KEY_V577TEXTAUTODETECT577, false)
+        set(value) = prefs.edit().putBoolean(KEY_V577TEXTAUTODETECT577, value).apply()
+
+    var v577themeAutoSwitch577: Boolean
+        get() = prefs.getBoolean(KEY_V577THEMEAUTOSWITCH577, false)
+        set(value) = prefs.edit().putBoolean(KEY_V577THEMEAUTOSWITCH577, value).apply()
+
+    var v577thresholdAutoSet577: Int
+        get() = prefs.getInt(KEY_V577THRESHOLDAUTOSET577, 0)
+        set(value) = prefs.edit().putInt(KEY_V577THRESHOLDAUTOSET577, value).apply()
+
+    var v577tileAutoLayout577: Boolean
+        get() = prefs.getBoolean(KEY_V577TILEAUTOLAYOUT577, false)
+        set(value) = prefs.edit().putBoolean(KEY_V577TILEAUTOLAYOUT577, value).apply()
+
+    var v577tipAutoShow577: Boolean
+        get() = prefs.getBoolean(KEY_V577TIPAUTOSHOW577, false)
+        set(value) = prefs.edit().putBoolean(KEY_V577TIPAUTOSHOW577, value).apply()
+
+    var v577tokenAutoRefresh577: Boolean
+        get() = prefs.getBoolean(KEY_V577TOKENAUTOREFRESH577, false)
+        set(value) = prefs.edit().putBoolean(KEY_V577TOKENAUTOREFRESH577, value).apply()
+
+    var v577topAutoRank577: Boolean
+        get() = prefs.getBoolean(KEY_V577TOPAUTORANK577, false)
+        set(value) = prefs.edit().putBoolean(KEY_V577TOPAUTORANK577, value).apply()
+
+    var v577traceAutoLog577: Boolean
+        get() = prefs.getBoolean(KEY_V577TRACEAUTOLOG577, false)
+        set(value) = prefs.edit().putBoolean(KEY_V577TRACEAUTOLOG577, value).apply()
+
+    var v577transferAutoResume577: Boolean
+        get() = prefs.getBoolean(KEY_V577TRANSFERAUTORESUME577, false)
+        set(value) = prefs.edit().putBoolean(KEY_V577TRANSFERAUTORESUME577, value).apply()
+
+    var v577transformAutoCrop577: Boolean
+        get() = prefs.getBoolean(KEY_V577TRANSFORMAUTOCROP577, false)
+        set(value) = prefs.edit().putBoolean(KEY_V577TRANSFORMAUTOCROP577, value).apply()
+
+    var v577translateAutoDetect577: Boolean
+        get() = prefs.getBoolean(KEY_V577TRANSLATEAUTODETECT577, false)
+        set(value) = prefs.edit().putBoolean(KEY_V577TRANSLATEAUTODETECT577, value).apply()
+
+    var v577triggerAutoFire577: Boolean
+        get() = prefs.getBoolean(KEY_V577TRIGGERAUTOFIRE577, false)
+        set(value) = prefs.edit().putBoolean(KEY_V577TRIGGERAUTOFIRE577, value).apply()
+
+    var v577trimAutoClean577: Boolean
+        get() = prefs.getBoolean(KEY_V577TRIMAUTOCLEAN577, false)
+        set(value) = prefs.edit().putBoolean(KEY_V577TRIMAUTOCLEAN577, value).apply()
+
+    var v577tuneAutoEqualizer577: Boolean
+        get() = prefs.getBoolean(KEY_V577TUNEAUTOEQUALIZER577, false)
+        set(value) = prefs.edit().putBoolean(KEY_V577TUNEAUTOEQUALIZER577, value).apply()
+
+    var v577typeAutoInfer577: Boolean
+        get() = prefs.getBoolean(KEY_V577TYPEAUTOINFER577, false)
+        set(value) = prefs.edit().putBoolean(KEY_V577TYPEAUTOINFER577, value).apply()
+
+    var v578textAutoDetect578: Boolean
+        get() = prefs.getBoolean(KEY_V578TEXTAUTODETECT578, false)
+        set(value) = prefs.edit().putBoolean(KEY_V578TEXTAUTODETECT578, value).apply()
+
+    var v578themeAutoSwitch578: Boolean
+        get() = prefs.getBoolean(KEY_V578THEMEAUTOSWITCH578, false)
+        set(value) = prefs.edit().putBoolean(KEY_V578THEMEAUTOSWITCH578, value).apply()
+
+    var v578thresholdAutoSet578: Int
+        get() = prefs.getInt(KEY_V578THRESHOLDAUTOSET578, 0)
+        set(value) = prefs.edit().putInt(KEY_V578THRESHOLDAUTOSET578, value).apply()
+
+    var v578tileAutoLayout578: Boolean
+        get() = prefs.getBoolean(KEY_V578TILEAUTOLAYOUT578, false)
+        set(value) = prefs.edit().putBoolean(KEY_V578TILEAUTOLAYOUT578, value).apply()
+
+    var v578tipAutoShow578: Boolean
+        get() = prefs.getBoolean(KEY_V578TIPAUTOSHOW578, false)
+        set(value) = prefs.edit().putBoolean(KEY_V578TIPAUTOSHOW578, value).apply()
+
+    var v578tokenAutoRefresh578: Boolean
+        get() = prefs.getBoolean(KEY_V578TOKENAUTOREFRESH578, false)
+        set(value) = prefs.edit().putBoolean(KEY_V578TOKENAUTOREFRESH578, value).apply()
+
+    var v578topAutoRank578: Boolean
+        get() = prefs.getBoolean(KEY_V578TOPAUTORANK578, false)
+        set(value) = prefs.edit().putBoolean(KEY_V578TOPAUTORANK578, value).apply()
+
+    var v578traceAutoLog578: Boolean
+        get() = prefs.getBoolean(KEY_V578TRACEAUTOLOG578, false)
+        set(value) = prefs.edit().putBoolean(KEY_V578TRACEAUTOLOG578, value).apply()
+
+    var v578transferAutoResume578: Boolean
+        get() = prefs.getBoolean(KEY_V578TRANSFERAUTORESUME578, false)
+        set(value) = prefs.edit().putBoolean(KEY_V578TRANSFERAUTORESUME578, value).apply()
+
+    var v578transformAutoCrop578: Boolean
+        get() = prefs.getBoolean(KEY_V578TRANSFORMAUTOCROP578, false)
+        set(value) = prefs.edit().putBoolean(KEY_V578TRANSFORMAUTOCROP578, value).apply()
+
+    var v578translateAutoDetect578: Boolean
+        get() = prefs.getBoolean(KEY_V578TRANSLATEAUTODETECT578, false)
+        set(value) = prefs.edit().putBoolean(KEY_V578TRANSLATEAUTODETECT578, value).apply()
+
+    var v578triggerAutoFire578: Boolean
+        get() = prefs.getBoolean(KEY_V578TRIGGERAUTOFIRE578, false)
+        set(value) = prefs.edit().putBoolean(KEY_V578TRIGGERAUTOFIRE578, value).apply()
+
+    var v578trimAutoClean578: Boolean
+        get() = prefs.getBoolean(KEY_V578TRIMAUTOCLEAN578, false)
+        set(value) = prefs.edit().putBoolean(KEY_V578TRIMAUTOCLEAN578, value).apply()
+
+    var v578tuneAutoEqualizer578: Boolean
+        get() = prefs.getBoolean(KEY_V578TUNEAUTOEQUALIZER578, false)
+        set(value) = prefs.edit().putBoolean(KEY_V578TUNEAUTOEQUALIZER578, value).apply()
+
+    var v578typeAutoInfer578: Boolean
+        get() = prefs.getBoolean(KEY_V578TYPEAUTOINFER578, false)
+        set(value) = prefs.edit().putBoolean(KEY_V578TYPEAUTOINFER578, value).apply()
+
+    var v579textAutoDetect579: Boolean
+        get() = prefs.getBoolean(KEY_V579TEXTAUTODETECT579, false)
+        set(value) = prefs.edit().putBoolean(KEY_V579TEXTAUTODETECT579, value).apply()
+
+    var v579themeAutoSwitch579: Boolean
+        get() = prefs.getBoolean(KEY_V579THEMEAUTOSWITCH579, false)
+        set(value) = prefs.edit().putBoolean(KEY_V579THEMEAUTOSWITCH579, value).apply()
+
+    var v579thresholdAutoSet579: Int
+        get() = prefs.getInt(KEY_V579THRESHOLDAUTOSET579, 0)
+        set(value) = prefs.edit().putInt(KEY_V579THRESHOLDAUTOSET579, value).apply()
+
+    var v579tileAutoLayout579: Boolean
+        get() = prefs.getBoolean(KEY_V579TILEAUTOLAYOUT579, false)
+        set(value) = prefs.edit().putBoolean(KEY_V579TILEAUTOLAYOUT579, value).apply()
+
+    var v579tipAutoShow579: Boolean
+        get() = prefs.getBoolean(KEY_V579TIPAUTOSHOW579, false)
+        set(value) = prefs.edit().putBoolean(KEY_V579TIPAUTOSHOW579, value).apply()
+
+    var v579tokenAutoRefresh579: Boolean
+        get() = prefs.getBoolean(KEY_V579TOKENAUTOREFRESH579, false)
+        set(value) = prefs.edit().putBoolean(KEY_V579TOKENAUTOREFRESH579, value).apply()
+
+    var v579topAutoRank579: Boolean
+        get() = prefs.getBoolean(KEY_V579TOPAUTORANK579, false)
+        set(value) = prefs.edit().putBoolean(KEY_V579TOPAUTORANK579, value).apply()
+
+    var v579traceAutoLog579: Boolean
+        get() = prefs.getBoolean(KEY_V579TRACEAUTOLOG579, false)
+        set(value) = prefs.edit().putBoolean(KEY_V579TRACEAUTOLOG579, value).apply()
+
+    var v579transferAutoResume579: Boolean
+        get() = prefs.getBoolean(KEY_V579TRANSFERAUTORESUME579, false)
+        set(value) = prefs.edit().putBoolean(KEY_V579TRANSFERAUTORESUME579, value).apply()
+
+    var v579transformAutoCrop579: Boolean
+        get() = prefs.getBoolean(KEY_V579TRANSFORMAUTOCROP579, false)
+        set(value) = prefs.edit().putBoolean(KEY_V579TRANSFORMAUTOCROP579, value).apply()
+
+    var v579translateAutoDetect579: Boolean
+        get() = prefs.getBoolean(KEY_V579TRANSLATEAUTODETECT579, false)
+        set(value) = prefs.edit().putBoolean(KEY_V579TRANSLATEAUTODETECT579, value).apply()
+
+    var v579triggerAutoFire579: Boolean
+        get() = prefs.getBoolean(KEY_V579TRIGGERAUTOFIRE579, false)
+        set(value) = prefs.edit().putBoolean(KEY_V579TRIGGERAUTOFIRE579, value).apply()
+
+    var v579trimAutoClean579: Boolean
+        get() = prefs.getBoolean(KEY_V579TRIMAUTOCLEAN579, false)
+        set(value) = prefs.edit().putBoolean(KEY_V579TRIMAUTOCLEAN579, value).apply()
+
+    var v579tuneAutoEqualizer579: Boolean
+        get() = prefs.getBoolean(KEY_V579TUNEAUTOEQUALIZER579, false)
+        set(value) = prefs.edit().putBoolean(KEY_V579TUNEAUTOEQUALIZER579, value).apply()
+
+    var v579typeAutoInfer579: Boolean
+        get() = prefs.getBoolean(KEY_V579TYPEAUTOINFER579, false)
+        set(value) = prefs.edit().putBoolean(KEY_V579TYPEAUTOINFER579, value).apply()
+
+    var v580textAutoDetect580: Boolean
+        get() = prefs.getBoolean(KEY_V580TEXTAUTODETECT580, false)
+        set(value) = prefs.edit().putBoolean(KEY_V580TEXTAUTODETECT580, value).apply()
+
+    var v580themeAutoSwitch580: Boolean
+        get() = prefs.getBoolean(KEY_V580THEMEAUTOSWITCH580, false)
+        set(value) = prefs.edit().putBoolean(KEY_V580THEMEAUTOSWITCH580, value).apply()
+
+    var v580thresholdAutoSet580: Int
+        get() = prefs.getInt(KEY_V580THRESHOLDAUTOSET580, 0)
+        set(value) = prefs.edit().putInt(KEY_V580THRESHOLDAUTOSET580, value).apply()
+
+    var v580tileAutoLayout580: Boolean
+        get() = prefs.getBoolean(KEY_V580TILEAUTOLAYOUT580, false)
+        set(value) = prefs.edit().putBoolean(KEY_V580TILEAUTOLAYOUT580, value).apply()
+
+    var v580tipAutoShow580: Boolean
+        get() = prefs.getBoolean(KEY_V580TIPAUTOSHOW580, false)
+        set(value) = prefs.edit().putBoolean(KEY_V580TIPAUTOSHOW580, value).apply()
+
+    var v580tokenAutoRefresh580: Boolean
+        get() = prefs.getBoolean(KEY_V580TOKENAUTOREFRESH580, false)
+        set(value) = prefs.edit().putBoolean(KEY_V580TOKENAUTOREFRESH580, value).apply()
+
+    var v580topAutoRank580: Boolean
+        get() = prefs.getBoolean(KEY_V580TOPAUTORANK580, false)
+        set(value) = prefs.edit().putBoolean(KEY_V580TOPAUTORANK580, value).apply()
+
+    var v580traceAutoLog580: Boolean
+        get() = prefs.getBoolean(KEY_V580TRACEAUTOLOG580, false)
+        set(value) = prefs.edit().putBoolean(KEY_V580TRACEAUTOLOG580, value).apply()
+
+    var v580transferAutoResume580: Boolean
+        get() = prefs.getBoolean(KEY_V580TRANSFERAUTORESUME580, false)
+        set(value) = prefs.edit().putBoolean(KEY_V580TRANSFERAUTORESUME580, value).apply()
+
+    var v580transformAutoCrop580: Boolean
+        get() = prefs.getBoolean(KEY_V580TRANSFORMAUTOCROP580, false)
+        set(value) = prefs.edit().putBoolean(KEY_V580TRANSFORMAUTOCROP580, value).apply()
+
+    var v580translateAutoDetect580: Boolean
+        get() = prefs.getBoolean(KEY_V580TRANSLATEAUTODETECT580, false)
+        set(value) = prefs.edit().putBoolean(KEY_V580TRANSLATEAUTODETECT580, value).apply()
+
+    var v580triggerAutoFire580: Boolean
+        get() = prefs.getBoolean(KEY_V580TRIGGERAUTOFIRE580, false)
+        set(value) = prefs.edit().putBoolean(KEY_V580TRIGGERAUTOFIRE580, value).apply()
+
+    var v580trimAutoClean580: Boolean
+        get() = prefs.getBoolean(KEY_V580TRIMAUTOCLEAN580, false)
+        set(value) = prefs.edit().putBoolean(KEY_V580TRIMAUTOCLEAN580, value).apply()
+
+    var v580tuneAutoEqualizer580: Boolean
+        get() = prefs.getBoolean(KEY_V580TUNEAUTOEQUALIZER580, false)
+        set(value) = prefs.edit().putBoolean(KEY_V580TUNEAUTOEQUALIZER580, value).apply()
+
+    var v580typeAutoInfer580: Boolean
+        get() = prefs.getBoolean(KEY_V580TYPEAUTOINFER580, false)
+        set(value) = prefs.edit().putBoolean(KEY_V580TYPEAUTOINFER580, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -52180,5 +52780,155 @@ class AppPrefs(context: Context) {
         const val KEY_V570TARGETAUTOLOCK570 = "v570targetAutoLock570" // v570 Target Auto Lock570
         const val KEY_V570TEMPLATEAUTOFILL570 = "v570templateAutoFill570" // v570 Template Auto Fill570
         const val KEY_V570TESTAUTORUN570 = "v570testAutoRun570" // v570 Test Auto Run570
+        const val KEY_V571TEXTAUTODETECT571 = "v571textAutoDetect571" // v571 Text Auto Detect571
+        const val KEY_V571THEMEAUTOSWITCH571 = "v571themeAutoSwitch571" // v571 Theme Auto Switch571
+        const val KEY_V571THRESHOLDAUTOSET571 = "v571thresholdAutoSet571" // v571 Threshold Auto Set571
+        const val KEY_V571TILEAUTOLAYOUT571 = "v571tileAutoLayout571" // v571 Tile Auto Layout571
+        const val KEY_V571TIPAUTOSHOW571 = "v571tipAutoShow571" // v571 Tip Auto Show571
+        const val KEY_V571TOKENAUTOREFRESH571 = "v571tokenAutoRefresh571" // v571 Token Auto Refresh571
+        const val KEY_V571TOPAUTORANK571 = "v571topAutoRank571" // v571 Top Auto Rank571
+        const val KEY_V571TRACEAUTOLOG571 = "v571traceAutoLog571" // v571 Trace Auto Log571
+        const val KEY_V571TRANSFERAUTORESUME571 = "v571transferAutoResume571" // v571 Transfer Auto Resume571
+        const val KEY_V571TRANSFORMAUTOCROP571 = "v571transformAutoCrop571" // v571 Transform Auto Crop571
+        const val KEY_V571TRANSLATEAUTODETECT571 = "v571translateAutoDetect571" // v571 Translate Auto Detect571
+        const val KEY_V571TRIGGERAUTOFIRE571 = "v571triggerAutoFire571" // v571 Trigger Auto Fire571
+        const val KEY_V571TRIMAUTOCLEAN571 = "v571trimAutoClean571" // v571 Trim Auto Clean571
+        const val KEY_V571TUNEAUTOEQUALIZER571 = "v571tuneAutoEqualizer571" // v571 Tune Auto Equalizer571
+        const val KEY_V571TYPEAUTOINFER571 = "v571typeAutoInfer571" // v571 Type Auto Infer571
+        const val KEY_V572TEXTAUTODETECT572 = "v572textAutoDetect572" // v572 Text Auto Detect572
+        const val KEY_V572THEMEAUTOSWITCH572 = "v572themeAutoSwitch572" // v572 Theme Auto Switch572
+        const val KEY_V572THRESHOLDAUTOSET572 = "v572thresholdAutoSet572" // v572 Threshold Auto Set572
+        const val KEY_V572TILEAUTOLAYOUT572 = "v572tileAutoLayout572" // v572 Tile Auto Layout572
+        const val KEY_V572TIPAUTOSHOW572 = "v572tipAutoShow572" // v572 Tip Auto Show572
+        const val KEY_V572TOKENAUTOREFRESH572 = "v572tokenAutoRefresh572" // v572 Token Auto Refresh572
+        const val KEY_V572TOPAUTORANK572 = "v572topAutoRank572" // v572 Top Auto Rank572
+        const val KEY_V572TRACEAUTOLOG572 = "v572traceAutoLog572" // v572 Trace Auto Log572
+        const val KEY_V572TRANSFERAUTORESUME572 = "v572transferAutoResume572" // v572 Transfer Auto Resume572
+        const val KEY_V572TRANSFORMAUTOCROP572 = "v572transformAutoCrop572" // v572 Transform Auto Crop572
+        const val KEY_V572TRANSLATEAUTODETECT572 = "v572translateAutoDetect572" // v572 Translate Auto Detect572
+        const val KEY_V572TRIGGERAUTOFIRE572 = "v572triggerAutoFire572" // v572 Trigger Auto Fire572
+        const val KEY_V572TRIMAUTOCLEAN572 = "v572trimAutoClean572" // v572 Trim Auto Clean572
+        const val KEY_V572TUNEAUTOEQUALIZER572 = "v572tuneAutoEqualizer572" // v572 Tune Auto Equalizer572
+        const val KEY_V572TYPEAUTOINFER572 = "v572typeAutoInfer572" // v572 Type Auto Infer572
+        const val KEY_V573TEXTAUTODETECT573 = "v573textAutoDetect573" // v573 Text Auto Detect573
+        const val KEY_V573THEMEAUTOSWITCH573 = "v573themeAutoSwitch573" // v573 Theme Auto Switch573
+        const val KEY_V573THRESHOLDAUTOSET573 = "v573thresholdAutoSet573" // v573 Threshold Auto Set573
+        const val KEY_V573TILEAUTOLAYOUT573 = "v573tileAutoLayout573" // v573 Tile Auto Layout573
+        const val KEY_V573TIPAUTOSHOW573 = "v573tipAutoShow573" // v573 Tip Auto Show573
+        const val KEY_V573TOKENAUTOREFRESH573 = "v573tokenAutoRefresh573" // v573 Token Auto Refresh573
+        const val KEY_V573TOPAUTORANK573 = "v573topAutoRank573" // v573 Top Auto Rank573
+        const val KEY_V573TRACEAUTOLOG573 = "v573traceAutoLog573" // v573 Trace Auto Log573
+        const val KEY_V573TRANSFERAUTORESUME573 = "v573transferAutoResume573" // v573 Transfer Auto Resume573
+        const val KEY_V573TRANSFORMAUTOCROP573 = "v573transformAutoCrop573" // v573 Transform Auto Crop573
+        const val KEY_V573TRANSLATEAUTODETECT573 = "v573translateAutoDetect573" // v573 Translate Auto Detect573
+        const val KEY_V573TRIGGERAUTOFIRE573 = "v573triggerAutoFire573" // v573 Trigger Auto Fire573
+        const val KEY_V573TRIMAUTOCLEAN573 = "v573trimAutoClean573" // v573 Trim Auto Clean573
+        const val KEY_V573TUNEAUTOEQUALIZER573 = "v573tuneAutoEqualizer573" // v573 Tune Auto Equalizer573
+        const val KEY_V573TYPEAUTOINFER573 = "v573typeAutoInfer573" // v573 Type Auto Infer573
+        const val KEY_V574TEXTAUTODETECT574 = "v574textAutoDetect574" // v574 Text Auto Detect574
+        const val KEY_V574THEMEAUTOSWITCH574 = "v574themeAutoSwitch574" // v574 Theme Auto Switch574
+        const val KEY_V574THRESHOLDAUTOSET574 = "v574thresholdAutoSet574" // v574 Threshold Auto Set574
+        const val KEY_V574TILEAUTOLAYOUT574 = "v574tileAutoLayout574" // v574 Tile Auto Layout574
+        const val KEY_V574TIPAUTOSHOW574 = "v574tipAutoShow574" // v574 Tip Auto Show574
+        const val KEY_V574TOKENAUTOREFRESH574 = "v574tokenAutoRefresh574" // v574 Token Auto Refresh574
+        const val KEY_V574TOPAUTORANK574 = "v574topAutoRank574" // v574 Top Auto Rank574
+        const val KEY_V574TRACEAUTOLOG574 = "v574traceAutoLog574" // v574 Trace Auto Log574
+        const val KEY_V574TRANSFERAUTORESUME574 = "v574transferAutoResume574" // v574 Transfer Auto Resume574
+        const val KEY_V574TRANSFORMAUTOCROP574 = "v574transformAutoCrop574" // v574 Transform Auto Crop574
+        const val KEY_V574TRANSLATEAUTODETECT574 = "v574translateAutoDetect574" // v574 Translate Auto Detect574
+        const val KEY_V574TRIGGERAUTOFIRE574 = "v574triggerAutoFire574" // v574 Trigger Auto Fire574
+        const val KEY_V574TRIMAUTOCLEAN574 = "v574trimAutoClean574" // v574 Trim Auto Clean574
+        const val KEY_V574TUNEAUTOEQUALIZER574 = "v574tuneAutoEqualizer574" // v574 Tune Auto Equalizer574
+        const val KEY_V574TYPEAUTOINFER574 = "v574typeAutoInfer574" // v574 Type Auto Infer574
+        const val KEY_V575TEXTAUTODETECT575 = "v575textAutoDetect575" // v575 Text Auto Detect575
+        const val KEY_V575THEMEAUTOSWITCH575 = "v575themeAutoSwitch575" // v575 Theme Auto Switch575
+        const val KEY_V575THRESHOLDAUTOSET575 = "v575thresholdAutoSet575" // v575 Threshold Auto Set575
+        const val KEY_V575TILEAUTOLAYOUT575 = "v575tileAutoLayout575" // v575 Tile Auto Layout575
+        const val KEY_V575TIPAUTOSHOW575 = "v575tipAutoShow575" // v575 Tip Auto Show575
+        const val KEY_V575TOKENAUTOREFRESH575 = "v575tokenAutoRefresh575" // v575 Token Auto Refresh575
+        const val KEY_V575TOPAUTORANK575 = "v575topAutoRank575" // v575 Top Auto Rank575
+        const val KEY_V575TRACEAUTOLOG575 = "v575traceAutoLog575" // v575 Trace Auto Log575
+        const val KEY_V575TRANSFERAUTORESUME575 = "v575transferAutoResume575" // v575 Transfer Auto Resume575
+        const val KEY_V575TRANSFORMAUTOCROP575 = "v575transformAutoCrop575" // v575 Transform Auto Crop575
+        const val KEY_V575TRANSLATEAUTODETECT575 = "v575translateAutoDetect575" // v575 Translate Auto Detect575
+        const val KEY_V575TRIGGERAUTOFIRE575 = "v575triggerAutoFire575" // v575 Trigger Auto Fire575
+        const val KEY_V575TRIMAUTOCLEAN575 = "v575trimAutoClean575" // v575 Trim Auto Clean575
+        const val KEY_V575TUNEAUTOEQUALIZER575 = "v575tuneAutoEqualizer575" // v575 Tune Auto Equalizer575
+        const val KEY_V575TYPEAUTOINFER575 = "v575typeAutoInfer575" // v575 Type Auto Infer575
+        const val KEY_V576TEXTAUTODETECT576 = "v576textAutoDetect576" // v576 Text Auto Detect576
+        const val KEY_V576THEMEAUTOSWITCH576 = "v576themeAutoSwitch576" // v576 Theme Auto Switch576
+        const val KEY_V576THRESHOLDAUTOSET576 = "v576thresholdAutoSet576" // v576 Threshold Auto Set576
+        const val KEY_V576TILEAUTOLAYOUT576 = "v576tileAutoLayout576" // v576 Tile Auto Layout576
+        const val KEY_V576TIPAUTOSHOW576 = "v576tipAutoShow576" // v576 Tip Auto Show576
+        const val KEY_V576TOKENAUTOREFRESH576 = "v576tokenAutoRefresh576" // v576 Token Auto Refresh576
+        const val KEY_V576TOPAUTORANK576 = "v576topAutoRank576" // v576 Top Auto Rank576
+        const val KEY_V576TRACEAUTOLOG576 = "v576traceAutoLog576" // v576 Trace Auto Log576
+        const val KEY_V576TRANSFERAUTORESUME576 = "v576transferAutoResume576" // v576 Transfer Auto Resume576
+        const val KEY_V576TRANSFORMAUTOCROP576 = "v576transformAutoCrop576" // v576 Transform Auto Crop576
+        const val KEY_V576TRANSLATEAUTODETECT576 = "v576translateAutoDetect576" // v576 Translate Auto Detect576
+        const val KEY_V576TRIGGERAUTOFIRE576 = "v576triggerAutoFire576" // v576 Trigger Auto Fire576
+        const val KEY_V576TRIMAUTOCLEAN576 = "v576trimAutoClean576" // v576 Trim Auto Clean576
+        const val KEY_V576TUNEAUTOEQUALIZER576 = "v576tuneAutoEqualizer576" // v576 Tune Auto Equalizer576
+        const val KEY_V576TYPEAUTOINFER576 = "v576typeAutoInfer576" // v576 Type Auto Infer576
+        const val KEY_V577TEXTAUTODETECT577 = "v577textAutoDetect577" // v577 Text Auto Detect577
+        const val KEY_V577THEMEAUTOSWITCH577 = "v577themeAutoSwitch577" // v577 Theme Auto Switch577
+        const val KEY_V577THRESHOLDAUTOSET577 = "v577thresholdAutoSet577" // v577 Threshold Auto Set577
+        const val KEY_V577TILEAUTOLAYOUT577 = "v577tileAutoLayout577" // v577 Tile Auto Layout577
+        const val KEY_V577TIPAUTOSHOW577 = "v577tipAutoShow577" // v577 Tip Auto Show577
+        const val KEY_V577TOKENAUTOREFRESH577 = "v577tokenAutoRefresh577" // v577 Token Auto Refresh577
+        const val KEY_V577TOPAUTORANK577 = "v577topAutoRank577" // v577 Top Auto Rank577
+        const val KEY_V577TRACEAUTOLOG577 = "v577traceAutoLog577" // v577 Trace Auto Log577
+        const val KEY_V577TRANSFERAUTORESUME577 = "v577transferAutoResume577" // v577 Transfer Auto Resume577
+        const val KEY_V577TRANSFORMAUTOCROP577 = "v577transformAutoCrop577" // v577 Transform Auto Crop577
+        const val KEY_V577TRANSLATEAUTODETECT577 = "v577translateAutoDetect577" // v577 Translate Auto Detect577
+        const val KEY_V577TRIGGERAUTOFIRE577 = "v577triggerAutoFire577" // v577 Trigger Auto Fire577
+        const val KEY_V577TRIMAUTOCLEAN577 = "v577trimAutoClean577" // v577 Trim Auto Clean577
+        const val KEY_V577TUNEAUTOEQUALIZER577 = "v577tuneAutoEqualizer577" // v577 Tune Auto Equalizer577
+        const val KEY_V577TYPEAUTOINFER577 = "v577typeAutoInfer577" // v577 Type Auto Infer577
+        const val KEY_V578TEXTAUTODETECT578 = "v578textAutoDetect578" // v578 Text Auto Detect578
+        const val KEY_V578THEMEAUTOSWITCH578 = "v578themeAutoSwitch578" // v578 Theme Auto Switch578
+        const val KEY_V578THRESHOLDAUTOSET578 = "v578thresholdAutoSet578" // v578 Threshold Auto Set578
+        const val KEY_V578TILEAUTOLAYOUT578 = "v578tileAutoLayout578" // v578 Tile Auto Layout578
+        const val KEY_V578TIPAUTOSHOW578 = "v578tipAutoShow578" // v578 Tip Auto Show578
+        const val KEY_V578TOKENAUTOREFRESH578 = "v578tokenAutoRefresh578" // v578 Token Auto Refresh578
+        const val KEY_V578TOPAUTORANK578 = "v578topAutoRank578" // v578 Top Auto Rank578
+        const val KEY_V578TRACEAUTOLOG578 = "v578traceAutoLog578" // v578 Trace Auto Log578
+        const val KEY_V578TRANSFERAUTORESUME578 = "v578transferAutoResume578" // v578 Transfer Auto Resume578
+        const val KEY_V578TRANSFORMAUTOCROP578 = "v578transformAutoCrop578" // v578 Transform Auto Crop578
+        const val KEY_V578TRANSLATEAUTODETECT578 = "v578translateAutoDetect578" // v578 Translate Auto Detect578
+        const val KEY_V578TRIGGERAUTOFIRE578 = "v578triggerAutoFire578" // v578 Trigger Auto Fire578
+        const val KEY_V578TRIMAUTOCLEAN578 = "v578trimAutoClean578" // v578 Trim Auto Clean578
+        const val KEY_V578TUNEAUTOEQUALIZER578 = "v578tuneAutoEqualizer578" // v578 Tune Auto Equalizer578
+        const val KEY_V578TYPEAUTOINFER578 = "v578typeAutoInfer578" // v578 Type Auto Infer578
+        const val KEY_V579TEXTAUTODETECT579 = "v579textAutoDetect579" // v579 Text Auto Detect579
+        const val KEY_V579THEMEAUTOSWITCH579 = "v579themeAutoSwitch579" // v579 Theme Auto Switch579
+        const val KEY_V579THRESHOLDAUTOSET579 = "v579thresholdAutoSet579" // v579 Threshold Auto Set579
+        const val KEY_V579TILEAUTOLAYOUT579 = "v579tileAutoLayout579" // v579 Tile Auto Layout579
+        const val KEY_V579TIPAUTOSHOW579 = "v579tipAutoShow579" // v579 Tip Auto Show579
+        const val KEY_V579TOKENAUTOREFRESH579 = "v579tokenAutoRefresh579" // v579 Token Auto Refresh579
+        const val KEY_V579TOPAUTORANK579 = "v579topAutoRank579" // v579 Top Auto Rank579
+        const val KEY_V579TRACEAUTOLOG579 = "v579traceAutoLog579" // v579 Trace Auto Log579
+        const val KEY_V579TRANSFERAUTORESUME579 = "v579transferAutoResume579" // v579 Transfer Auto Resume579
+        const val KEY_V579TRANSFORMAUTOCROP579 = "v579transformAutoCrop579" // v579 Transform Auto Crop579
+        const val KEY_V579TRANSLATEAUTODETECT579 = "v579translateAutoDetect579" // v579 Translate Auto Detect579
+        const val KEY_V579TRIGGERAUTOFIRE579 = "v579triggerAutoFire579" // v579 Trigger Auto Fire579
+        const val KEY_V579TRIMAUTOCLEAN579 = "v579trimAutoClean579" // v579 Trim Auto Clean579
+        const val KEY_V579TUNEAUTOEQUALIZER579 = "v579tuneAutoEqualizer579" // v579 Tune Auto Equalizer579
+        const val KEY_V579TYPEAUTOINFER579 = "v579typeAutoInfer579" // v579 Type Auto Infer579
+        const val KEY_V580TEXTAUTODETECT580 = "v580textAutoDetect580" // v580 Text Auto Detect580
+        const val KEY_V580THEMEAUTOSWITCH580 = "v580themeAutoSwitch580" // v580 Theme Auto Switch580
+        const val KEY_V580THRESHOLDAUTOSET580 = "v580thresholdAutoSet580" // v580 Threshold Auto Set580
+        const val KEY_V580TILEAUTOLAYOUT580 = "v580tileAutoLayout580" // v580 Tile Auto Layout580
+        const val KEY_V580TIPAUTOSHOW580 = "v580tipAutoShow580" // v580 Tip Auto Show580
+        const val KEY_V580TOKENAUTOREFRESH580 = "v580tokenAutoRefresh580" // v580 Token Auto Refresh580
+        const val KEY_V580TOPAUTORANK580 = "v580topAutoRank580" // v580 Top Auto Rank580
+        const val KEY_V580TRACEAUTOLOG580 = "v580traceAutoLog580" // v580 Trace Auto Log580
+        const val KEY_V580TRANSFERAUTORESUME580 = "v580transferAutoResume580" // v580 Transfer Auto Resume580
+        const val KEY_V580TRANSFORMAUTOCROP580 = "v580transformAutoCrop580" // v580 Transform Auto Crop580
+        const val KEY_V580TRANSLATEAUTODETECT580 = "v580translateAutoDetect580" // v580 Translate Auto Detect580
+        const val KEY_V580TRIGGERAUTOFIRE580 = "v580triggerAutoFire580" // v580 Trigger Auto Fire580
+        const val KEY_V580TRIMAUTOCLEAN580 = "v580trimAutoClean580" // v580 Trim Auto Clean580
+        const val KEY_V580TUNEAUTOEQUALIZER580 = "v580tuneAutoEqualizer580" // v580 Tune Auto Equalizer580
+        const val KEY_V580TYPEAUTOINFER580 = "v580typeAutoInfer580" // v580 Type Auto Infer580
     }
 }
