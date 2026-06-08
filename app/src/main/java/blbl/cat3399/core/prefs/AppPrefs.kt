@@ -47648,6 +47648,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V680DELAYAUTOBUFFER680, false)
         set(value) = prefs.edit().putBoolean(KEY_V680DELAYAUTOBUFFER680, value).apply()
 
+    var v681deleteAutoConfirm681: Boolean
+        get() = prefs.getBoolean(KEY_V681DELETEAUTOCONFIRM681, false)
+        set(value) = prefs.edit().putBoolean(KEY_V681DELETEAUTOCONFIRM681, value).apply()
+
+    var v681deltaAutoUpdate681: Boolean
+        get() = prefs.getBoolean(KEY_V681DELTAAUTOUPDATE681, false)
+        set(value) = prefs.edit().putBoolean(KEY_V681DELTAAUTOUPDATE681, value).apply()
+
+    var v681demoAutoPlay681: Boolean
+        get() = prefs.getBoolean(KEY_V681DEMOAUTOPLAY681, false)
+        set(value) = prefs.edit().putBoolean(KEY_V681DEMOAUTOPLAY681, value).apply()
+
+    var v681deployAutoPush681: Boolean
+        get() = prefs.getBoolean(KEY_V681DEPLOYAUTOPUSH681, false)
+        set(value) = prefs.edit().putBoolean(KEY_V681DEPLOYAUTOPUSH681, value).apply()
+
+    var v681depthAutoMap681: Boolean
+        get() = prefs.getBoolean(KEY_V681DEPTHAUTOMAP681, false)
+        set(value) = prefs.edit().putBoolean(KEY_V681DEPTHAUTOMAP681, value).apply()
+
+    var v681deriveAutoCalc681: Boolean
+        get() = prefs.getBoolean(KEY_V681DERIVEAUTOCALC681, false)
+        set(value) = prefs.edit().putBoolean(KEY_V681DERIVEAUTOCALC681, value).apply()
+
+    var v681designAutoToken681: Boolean
+        get() = prefs.getBoolean(KEY_V681DESIGNAUTOTOKEN681, false)
+        set(value) = prefs.edit().putBoolean(KEY_V681DESIGNAUTOTOKEN681, value).apply()
+
+    var v681desktopAutoMode681: Int
+        get() = prefs.getInt(KEY_V681DESKTOPAUTOMODE681, 0)
+        set(value) = prefs.edit().putInt(KEY_V681DESKTOPAUTOMODE681, value).apply()
+
+    var v681detectAutoMotion681: Boolean
+        get() = prefs.getBoolean(KEY_V681DETECTAUTOMOTION681, false)
+        set(value) = prefs.edit().putBoolean(KEY_V681DETECTAUTOMOTION681, value).apply()
+
+    var v681deviceAutoPair681: Boolean
+        get() = prefs.getBoolean(KEY_V681DEVICEAUTOPAIR681, false)
+        set(value) = prefs.edit().putBoolean(KEY_V681DEVICEAUTOPAIR681, value).apply()
+
+    var v681dialogAutoTheme681: Boolean
+        get() = prefs.getBoolean(KEY_V681DIALOGAUTOTHEME681, false)
+        set(value) = prefs.edit().putBoolean(KEY_V681DIALOGAUTOTHEME681, value).apply()
+
+    var v681diffAutoHighlight681: Boolean
+        get() = prefs.getBoolean(KEY_V681DIFFAUTOHIGHLIGHT681, false)
+        set(value) = prefs.edit().putBoolean(KEY_V681DIFFAUTOHIGHLIGHT681, value).apply()
+
+    var v681digestAutoCheck681: Boolean
+        get() = prefs.getBoolean(KEY_V681DIGESTAUTOCHECK681, false)
+        set(value) = prefs.edit().putBoolean(KEY_V681DIGESTAUTOCHECK681, value).apply()
+
+    var v681digitalAutoSign681: Boolean
+        get() = prefs.getBoolean(KEY_V681DIGITALAUTOSIGN681, false)
+        set(value) = prefs.edit().putBoolean(KEY_V681DIGITALAUTOSIGN681, value).apply()
+
+    var v681directAutoRoute681: Boolean
+        get() = prefs.getBoolean(KEY_V681DIRECTAUTOROUTE681, false)
+        set(value) = prefs.edit().putBoolean(KEY_V681DIRECTAUTOROUTE681, value).apply()
+
+    var v682deleteAutoConfirm682: Boolean
+        get() = prefs.getBoolean(KEY_V682DELETEAUTOCONFIRM682, false)
+        set(value) = prefs.edit().putBoolean(KEY_V682DELETEAUTOCONFIRM682, value).apply()
+
+    var v682deltaAutoUpdate682: Boolean
+        get() = prefs.getBoolean(KEY_V682DELTAAUTOUPDATE682, false)
+        set(value) = prefs.edit().putBoolean(KEY_V682DELTAAUTOUPDATE682, value).apply()
+
+    var v682demoAutoPlay682: Boolean
+        get() = prefs.getBoolean(KEY_V682DEMOAUTOPLAY682, false)
+        set(value) = prefs.edit().putBoolean(KEY_V682DEMOAUTOPLAY682, value).apply()
+
+    var v682deployAutoPush682: Boolean
+        get() = prefs.getBoolean(KEY_V682DEPLOYAUTOPUSH682, false)
+        set(value) = prefs.edit().putBoolean(KEY_V682DEPLOYAUTOPUSH682, value).apply()
+
+    var v682depthAutoMap682: Boolean
+        get() = prefs.getBoolean(KEY_V682DEPTHAUTOMAP682, false)
+        set(value) = prefs.edit().putBoolean(KEY_V682DEPTHAUTOMAP682, value).apply()
+
+    var v682deriveAutoCalc682: Boolean
+        get() = prefs.getBoolean(KEY_V682DERIVEAUTOCALC682, false)
+        set(value) = prefs.edit().putBoolean(KEY_V682DERIVEAUTOCALC682, value).apply()
+
+    var v682designAutoToken682: Boolean
+        get() = prefs.getBoolean(KEY_V682DESIGNAUTOTOKEN682, false)
+        set(value) = prefs.edit().putBoolean(KEY_V682DESIGNAUTOTOKEN682, value).apply()
+
+    var v682desktopAutoMode682: Int
+        get() = prefs.getInt(KEY_V682DESKTOPAUTOMODE682, 0)
+        set(value) = prefs.edit().putInt(KEY_V682DESKTOPAUTOMODE682, value).apply()
+
+    var v682detectAutoMotion682: Boolean
+        get() = prefs.getBoolean(KEY_V682DETECTAUTOMOTION682, false)
+        set(value) = prefs.edit().putBoolean(KEY_V682DETECTAUTOMOTION682, value).apply()
+
+    var v682deviceAutoPair682: Boolean
+        get() = prefs.getBoolean(KEY_V682DEVICEAUTOPAIR682, false)
+        set(value) = prefs.edit().putBoolean(KEY_V682DEVICEAUTOPAIR682, value).apply()
+
+    var v682dialogAutoTheme682: Boolean
+        get() = prefs.getBoolean(KEY_V682DIALOGAUTOTHEME682, false)
+        set(value) = prefs.edit().putBoolean(KEY_V682DIALOGAUTOTHEME682, value).apply()
+
+    var v682diffAutoHighlight682: Boolean
+        get() = prefs.getBoolean(KEY_V682DIFFAUTOHIGHLIGHT682, false)
+        set(value) = prefs.edit().putBoolean(KEY_V682DIFFAUTOHIGHLIGHT682, value).apply()
+
+    var v682digestAutoCheck682: Boolean
+        get() = prefs.getBoolean(KEY_V682DIGESTAUTOCHECK682, false)
+        set(value) = prefs.edit().putBoolean(KEY_V682DIGESTAUTOCHECK682, value).apply()
+
+    var v682digitalAutoSign682: Boolean
+        get() = prefs.getBoolean(KEY_V682DIGITALAUTOSIGN682, false)
+        set(value) = prefs.edit().putBoolean(KEY_V682DIGITALAUTOSIGN682, value).apply()
+
+    var v682directAutoRoute682: Boolean
+        get() = prefs.getBoolean(KEY_V682DIRECTAUTOROUTE682, false)
+        set(value) = prefs.edit().putBoolean(KEY_V682DIRECTAUTOROUTE682, value).apply()
+
+    var v683deleteAutoConfirm683: Boolean
+        get() = prefs.getBoolean(KEY_V683DELETEAUTOCONFIRM683, false)
+        set(value) = prefs.edit().putBoolean(KEY_V683DELETEAUTOCONFIRM683, value).apply()
+
+    var v683deltaAutoUpdate683: Boolean
+        get() = prefs.getBoolean(KEY_V683DELTAAUTOUPDATE683, false)
+        set(value) = prefs.edit().putBoolean(KEY_V683DELTAAUTOUPDATE683, value).apply()
+
+    var v683demoAutoPlay683: Boolean
+        get() = prefs.getBoolean(KEY_V683DEMOAUTOPLAY683, false)
+        set(value) = prefs.edit().putBoolean(KEY_V683DEMOAUTOPLAY683, value).apply()
+
+    var v683deployAutoPush683: Boolean
+        get() = prefs.getBoolean(KEY_V683DEPLOYAUTOPUSH683, false)
+        set(value) = prefs.edit().putBoolean(KEY_V683DEPLOYAUTOPUSH683, value).apply()
+
+    var v683depthAutoMap683: Boolean
+        get() = prefs.getBoolean(KEY_V683DEPTHAUTOMAP683, false)
+        set(value) = prefs.edit().putBoolean(KEY_V683DEPTHAUTOMAP683, value).apply()
+
+    var v683deriveAutoCalc683: Boolean
+        get() = prefs.getBoolean(KEY_V683DERIVEAUTOCALC683, false)
+        set(value) = prefs.edit().putBoolean(KEY_V683DERIVEAUTOCALC683, value).apply()
+
+    var v683designAutoToken683: Boolean
+        get() = prefs.getBoolean(KEY_V683DESIGNAUTOTOKEN683, false)
+        set(value) = prefs.edit().putBoolean(KEY_V683DESIGNAUTOTOKEN683, value).apply()
+
+    var v683desktopAutoMode683: Int
+        get() = prefs.getInt(KEY_V683DESKTOPAUTOMODE683, 0)
+        set(value) = prefs.edit().putInt(KEY_V683DESKTOPAUTOMODE683, value).apply()
+
+    var v683detectAutoMotion683: Boolean
+        get() = prefs.getBoolean(KEY_V683DETECTAUTOMOTION683, false)
+        set(value) = prefs.edit().putBoolean(KEY_V683DETECTAUTOMOTION683, value).apply()
+
+    var v683deviceAutoPair683: Boolean
+        get() = prefs.getBoolean(KEY_V683DEVICEAUTOPAIR683, false)
+        set(value) = prefs.edit().putBoolean(KEY_V683DEVICEAUTOPAIR683, value).apply()
+
+    var v683dialogAutoTheme683: Boolean
+        get() = prefs.getBoolean(KEY_V683DIALOGAUTOTHEME683, false)
+        set(value) = prefs.edit().putBoolean(KEY_V683DIALOGAUTOTHEME683, value).apply()
+
+    var v683diffAutoHighlight683: Boolean
+        get() = prefs.getBoolean(KEY_V683DIFFAUTOHIGHLIGHT683, false)
+        set(value) = prefs.edit().putBoolean(KEY_V683DIFFAUTOHIGHLIGHT683, value).apply()
+
+    var v683digestAutoCheck683: Boolean
+        get() = prefs.getBoolean(KEY_V683DIGESTAUTOCHECK683, false)
+        set(value) = prefs.edit().putBoolean(KEY_V683DIGESTAUTOCHECK683, value).apply()
+
+    var v683digitalAutoSign683: Boolean
+        get() = prefs.getBoolean(KEY_V683DIGITALAUTOSIGN683, false)
+        set(value) = prefs.edit().putBoolean(KEY_V683DIGITALAUTOSIGN683, value).apply()
+
+    var v683directAutoRoute683: Boolean
+        get() = prefs.getBoolean(KEY_V683DIRECTAUTOROUTE683, false)
+        set(value) = prefs.edit().putBoolean(KEY_V683DIRECTAUTOROUTE683, value).apply()
+
+    var v684deleteAutoConfirm684: Boolean
+        get() = prefs.getBoolean(KEY_V684DELETEAUTOCONFIRM684, false)
+        set(value) = prefs.edit().putBoolean(KEY_V684DELETEAUTOCONFIRM684, value).apply()
+
+    var v684deltaAutoUpdate684: Boolean
+        get() = prefs.getBoolean(KEY_V684DELTAAUTOUPDATE684, false)
+        set(value) = prefs.edit().putBoolean(KEY_V684DELTAAUTOUPDATE684, value).apply()
+
+    var v684demoAutoPlay684: Boolean
+        get() = prefs.getBoolean(KEY_V684DEMOAUTOPLAY684, false)
+        set(value) = prefs.edit().putBoolean(KEY_V684DEMOAUTOPLAY684, value).apply()
+
+    var v684deployAutoPush684: Boolean
+        get() = prefs.getBoolean(KEY_V684DEPLOYAUTOPUSH684, false)
+        set(value) = prefs.edit().putBoolean(KEY_V684DEPLOYAUTOPUSH684, value).apply()
+
+    var v684depthAutoMap684: Boolean
+        get() = prefs.getBoolean(KEY_V684DEPTHAUTOMAP684, false)
+        set(value) = prefs.edit().putBoolean(KEY_V684DEPTHAUTOMAP684, value).apply()
+
+    var v684deriveAutoCalc684: Boolean
+        get() = prefs.getBoolean(KEY_V684DERIVEAUTOCALC684, false)
+        set(value) = prefs.edit().putBoolean(KEY_V684DERIVEAUTOCALC684, value).apply()
+
+    var v684designAutoToken684: Boolean
+        get() = prefs.getBoolean(KEY_V684DESIGNAUTOTOKEN684, false)
+        set(value) = prefs.edit().putBoolean(KEY_V684DESIGNAUTOTOKEN684, value).apply()
+
+    var v684desktopAutoMode684: Int
+        get() = prefs.getInt(KEY_V684DESKTOPAUTOMODE684, 0)
+        set(value) = prefs.edit().putInt(KEY_V684DESKTOPAUTOMODE684, value).apply()
+
+    var v684detectAutoMotion684: Boolean
+        get() = prefs.getBoolean(KEY_V684DETECTAUTOMOTION684, false)
+        set(value) = prefs.edit().putBoolean(KEY_V684DETECTAUTOMOTION684, value).apply()
+
+    var v684deviceAutoPair684: Boolean
+        get() = prefs.getBoolean(KEY_V684DEVICEAUTOPAIR684, false)
+        set(value) = prefs.edit().putBoolean(KEY_V684DEVICEAUTOPAIR684, value).apply()
+
+    var v684dialogAutoTheme684: Boolean
+        get() = prefs.getBoolean(KEY_V684DIALOGAUTOTHEME684, false)
+        set(value) = prefs.edit().putBoolean(KEY_V684DIALOGAUTOTHEME684, value).apply()
+
+    var v684diffAutoHighlight684: Boolean
+        get() = prefs.getBoolean(KEY_V684DIFFAUTOHIGHLIGHT684, false)
+        set(value) = prefs.edit().putBoolean(KEY_V684DIFFAUTOHIGHLIGHT684, value).apply()
+
+    var v684digestAutoCheck684: Boolean
+        get() = prefs.getBoolean(KEY_V684DIGESTAUTOCHECK684, false)
+        set(value) = prefs.edit().putBoolean(KEY_V684DIGESTAUTOCHECK684, value).apply()
+
+    var v684digitalAutoSign684: Boolean
+        get() = prefs.getBoolean(KEY_V684DIGITALAUTOSIGN684, false)
+        set(value) = prefs.edit().putBoolean(KEY_V684DIGITALAUTOSIGN684, value).apply()
+
+    var v684directAutoRoute684: Boolean
+        get() = prefs.getBoolean(KEY_V684DIRECTAUTOROUTE684, false)
+        set(value) = prefs.edit().putBoolean(KEY_V684DIRECTAUTOROUTE684, value).apply()
+
+    var v685deleteAutoConfirm685: Boolean
+        get() = prefs.getBoolean(KEY_V685DELETEAUTOCONFIRM685, false)
+        set(value) = prefs.edit().putBoolean(KEY_V685DELETEAUTOCONFIRM685, value).apply()
+
+    var v685deltaAutoUpdate685: Boolean
+        get() = prefs.getBoolean(KEY_V685DELTAAUTOUPDATE685, false)
+        set(value) = prefs.edit().putBoolean(KEY_V685DELTAAUTOUPDATE685, value).apply()
+
+    var v685demoAutoPlay685: Boolean
+        get() = prefs.getBoolean(KEY_V685DEMOAUTOPLAY685, false)
+        set(value) = prefs.edit().putBoolean(KEY_V685DEMOAUTOPLAY685, value).apply()
+
+    var v685deployAutoPush685: Boolean
+        get() = prefs.getBoolean(KEY_V685DEPLOYAUTOPUSH685, false)
+        set(value) = prefs.edit().putBoolean(KEY_V685DEPLOYAUTOPUSH685, value).apply()
+
+    var v685depthAutoMap685: Boolean
+        get() = prefs.getBoolean(KEY_V685DEPTHAUTOMAP685, false)
+        set(value) = prefs.edit().putBoolean(KEY_V685DEPTHAUTOMAP685, value).apply()
+
+    var v685deriveAutoCalc685: Boolean
+        get() = prefs.getBoolean(KEY_V685DERIVEAUTOCALC685, false)
+        set(value) = prefs.edit().putBoolean(KEY_V685DERIVEAUTOCALC685, value).apply()
+
+    var v685designAutoToken685: Boolean
+        get() = prefs.getBoolean(KEY_V685DESIGNAUTOTOKEN685, false)
+        set(value) = prefs.edit().putBoolean(KEY_V685DESIGNAUTOTOKEN685, value).apply()
+
+    var v685desktopAutoMode685: Int
+        get() = prefs.getInt(KEY_V685DESKTOPAUTOMODE685, 0)
+        set(value) = prefs.edit().putInt(KEY_V685DESKTOPAUTOMODE685, value).apply()
+
+    var v685detectAutoMotion685: Boolean
+        get() = prefs.getBoolean(KEY_V685DETECTAUTOMOTION685, false)
+        set(value) = prefs.edit().putBoolean(KEY_V685DETECTAUTOMOTION685, value).apply()
+
+    var v685deviceAutoPair685: Boolean
+        get() = prefs.getBoolean(KEY_V685DEVICEAUTOPAIR685, false)
+        set(value) = prefs.edit().putBoolean(KEY_V685DEVICEAUTOPAIR685, value).apply()
+
+    var v685dialogAutoTheme685: Boolean
+        get() = prefs.getBoolean(KEY_V685DIALOGAUTOTHEME685, false)
+        set(value) = prefs.edit().putBoolean(KEY_V685DIALOGAUTOTHEME685, value).apply()
+
+    var v685diffAutoHighlight685: Boolean
+        get() = prefs.getBoolean(KEY_V685DIFFAUTOHIGHLIGHT685, false)
+        set(value) = prefs.edit().putBoolean(KEY_V685DIFFAUTOHIGHLIGHT685, value).apply()
+
+    var v685digestAutoCheck685: Boolean
+        get() = prefs.getBoolean(KEY_V685DIGESTAUTOCHECK685, false)
+        set(value) = prefs.edit().putBoolean(KEY_V685DIGESTAUTOCHECK685, value).apply()
+
+    var v685digitalAutoSign685: Boolean
+        get() = prefs.getBoolean(KEY_V685DIGITALAUTOSIGN685, false)
+        set(value) = prefs.edit().putBoolean(KEY_V685DIGITALAUTOSIGN685, value).apply()
+
+    var v685directAutoRoute685: Boolean
+        get() = prefs.getBoolean(KEY_V685DIRECTAUTOROUTE685, false)
+        set(value) = prefs.edit().putBoolean(KEY_V685DIRECTAUTOROUTE685, value).apply()
+
+    var v686deleteAutoConfirm686: Boolean
+        get() = prefs.getBoolean(KEY_V686DELETEAUTOCONFIRM686, false)
+        set(value) = prefs.edit().putBoolean(KEY_V686DELETEAUTOCONFIRM686, value).apply()
+
+    var v686deltaAutoUpdate686: Boolean
+        get() = prefs.getBoolean(KEY_V686DELTAAUTOUPDATE686, false)
+        set(value) = prefs.edit().putBoolean(KEY_V686DELTAAUTOUPDATE686, value).apply()
+
+    var v686demoAutoPlay686: Boolean
+        get() = prefs.getBoolean(KEY_V686DEMOAUTOPLAY686, false)
+        set(value) = prefs.edit().putBoolean(KEY_V686DEMOAUTOPLAY686, value).apply()
+
+    var v686deployAutoPush686: Boolean
+        get() = prefs.getBoolean(KEY_V686DEPLOYAUTOPUSH686, false)
+        set(value) = prefs.edit().putBoolean(KEY_V686DEPLOYAUTOPUSH686, value).apply()
+
+    var v686depthAutoMap686: Boolean
+        get() = prefs.getBoolean(KEY_V686DEPTHAUTOMAP686, false)
+        set(value) = prefs.edit().putBoolean(KEY_V686DEPTHAUTOMAP686, value).apply()
+
+    var v686deriveAutoCalc686: Boolean
+        get() = prefs.getBoolean(KEY_V686DERIVEAUTOCALC686, false)
+        set(value) = prefs.edit().putBoolean(KEY_V686DERIVEAUTOCALC686, value).apply()
+
+    var v686designAutoToken686: Boolean
+        get() = prefs.getBoolean(KEY_V686DESIGNAUTOTOKEN686, false)
+        set(value) = prefs.edit().putBoolean(KEY_V686DESIGNAUTOTOKEN686, value).apply()
+
+    var v686desktopAutoMode686: Int
+        get() = prefs.getInt(KEY_V686DESKTOPAUTOMODE686, 0)
+        set(value) = prefs.edit().putInt(KEY_V686DESKTOPAUTOMODE686, value).apply()
+
+    var v686detectAutoMotion686: Boolean
+        get() = prefs.getBoolean(KEY_V686DETECTAUTOMOTION686, false)
+        set(value) = prefs.edit().putBoolean(KEY_V686DETECTAUTOMOTION686, value).apply()
+
+    var v686deviceAutoPair686: Boolean
+        get() = prefs.getBoolean(KEY_V686DEVICEAUTOPAIR686, false)
+        set(value) = prefs.edit().putBoolean(KEY_V686DEVICEAUTOPAIR686, value).apply()
+
+    var v686dialogAutoTheme686: Boolean
+        get() = prefs.getBoolean(KEY_V686DIALOGAUTOTHEME686, false)
+        set(value) = prefs.edit().putBoolean(KEY_V686DIALOGAUTOTHEME686, value).apply()
+
+    var v686diffAutoHighlight686: Boolean
+        get() = prefs.getBoolean(KEY_V686DIFFAUTOHIGHLIGHT686, false)
+        set(value) = prefs.edit().putBoolean(KEY_V686DIFFAUTOHIGHLIGHT686, value).apply()
+
+    var v686digestAutoCheck686: Boolean
+        get() = prefs.getBoolean(KEY_V686DIGESTAUTOCHECK686, false)
+        set(value) = prefs.edit().putBoolean(KEY_V686DIGESTAUTOCHECK686, value).apply()
+
+    var v686digitalAutoSign686: Boolean
+        get() = prefs.getBoolean(KEY_V686DIGITALAUTOSIGN686, false)
+        set(value) = prefs.edit().putBoolean(KEY_V686DIGITALAUTOSIGN686, value).apply()
+
+    var v686directAutoRoute686: Boolean
+        get() = prefs.getBoolean(KEY_V686DIRECTAUTOROUTE686, false)
+        set(value) = prefs.edit().putBoolean(KEY_V686DIRECTAUTOROUTE686, value).apply()
+
+    var v687deleteAutoConfirm687: Boolean
+        get() = prefs.getBoolean(KEY_V687DELETEAUTOCONFIRM687, false)
+        set(value) = prefs.edit().putBoolean(KEY_V687DELETEAUTOCONFIRM687, value).apply()
+
+    var v687deltaAutoUpdate687: Boolean
+        get() = prefs.getBoolean(KEY_V687DELTAAUTOUPDATE687, false)
+        set(value) = prefs.edit().putBoolean(KEY_V687DELTAAUTOUPDATE687, value).apply()
+
+    var v687demoAutoPlay687: Boolean
+        get() = prefs.getBoolean(KEY_V687DEMOAUTOPLAY687, false)
+        set(value) = prefs.edit().putBoolean(KEY_V687DEMOAUTOPLAY687, value).apply()
+
+    var v687deployAutoPush687: Boolean
+        get() = prefs.getBoolean(KEY_V687DEPLOYAUTOPUSH687, false)
+        set(value) = prefs.edit().putBoolean(KEY_V687DEPLOYAUTOPUSH687, value).apply()
+
+    var v687depthAutoMap687: Boolean
+        get() = prefs.getBoolean(KEY_V687DEPTHAUTOMAP687, false)
+        set(value) = prefs.edit().putBoolean(KEY_V687DEPTHAUTOMAP687, value).apply()
+
+    var v687deriveAutoCalc687: Boolean
+        get() = prefs.getBoolean(KEY_V687DERIVEAUTOCALC687, false)
+        set(value) = prefs.edit().putBoolean(KEY_V687DERIVEAUTOCALC687, value).apply()
+
+    var v687designAutoToken687: Boolean
+        get() = prefs.getBoolean(KEY_V687DESIGNAUTOTOKEN687, false)
+        set(value) = prefs.edit().putBoolean(KEY_V687DESIGNAUTOTOKEN687, value).apply()
+
+    var v687desktopAutoMode687: Int
+        get() = prefs.getInt(KEY_V687DESKTOPAUTOMODE687, 0)
+        set(value) = prefs.edit().putInt(KEY_V687DESKTOPAUTOMODE687, value).apply()
+
+    var v687detectAutoMotion687: Boolean
+        get() = prefs.getBoolean(KEY_V687DETECTAUTOMOTION687, false)
+        set(value) = prefs.edit().putBoolean(KEY_V687DETECTAUTOMOTION687, value).apply()
+
+    var v687deviceAutoPair687: Boolean
+        get() = prefs.getBoolean(KEY_V687DEVICEAUTOPAIR687, false)
+        set(value) = prefs.edit().putBoolean(KEY_V687DEVICEAUTOPAIR687, value).apply()
+
+    var v687dialogAutoTheme687: Boolean
+        get() = prefs.getBoolean(KEY_V687DIALOGAUTOTHEME687, false)
+        set(value) = prefs.edit().putBoolean(KEY_V687DIALOGAUTOTHEME687, value).apply()
+
+    var v687diffAutoHighlight687: Boolean
+        get() = prefs.getBoolean(KEY_V687DIFFAUTOHIGHLIGHT687, false)
+        set(value) = prefs.edit().putBoolean(KEY_V687DIFFAUTOHIGHLIGHT687, value).apply()
+
+    var v687digestAutoCheck687: Boolean
+        get() = prefs.getBoolean(KEY_V687DIGESTAUTOCHECK687, false)
+        set(value) = prefs.edit().putBoolean(KEY_V687DIGESTAUTOCHECK687, value).apply()
+
+    var v687digitalAutoSign687: Boolean
+        get() = prefs.getBoolean(KEY_V687DIGITALAUTOSIGN687, false)
+        set(value) = prefs.edit().putBoolean(KEY_V687DIGITALAUTOSIGN687, value).apply()
+
+    var v687directAutoRoute687: Boolean
+        get() = prefs.getBoolean(KEY_V687DIRECTAUTOROUTE687, false)
+        set(value) = prefs.edit().putBoolean(KEY_V687DIRECTAUTOROUTE687, value).apply()
+
+    var v688deleteAutoConfirm688: Boolean
+        get() = prefs.getBoolean(KEY_V688DELETEAUTOCONFIRM688, false)
+        set(value) = prefs.edit().putBoolean(KEY_V688DELETEAUTOCONFIRM688, value).apply()
+
+    var v688deltaAutoUpdate688: Boolean
+        get() = prefs.getBoolean(KEY_V688DELTAAUTOUPDATE688, false)
+        set(value) = prefs.edit().putBoolean(KEY_V688DELTAAUTOUPDATE688, value).apply()
+
+    var v688demoAutoPlay688: Boolean
+        get() = prefs.getBoolean(KEY_V688DEMOAUTOPLAY688, false)
+        set(value) = prefs.edit().putBoolean(KEY_V688DEMOAUTOPLAY688, value).apply()
+
+    var v688deployAutoPush688: Boolean
+        get() = prefs.getBoolean(KEY_V688DEPLOYAUTOPUSH688, false)
+        set(value) = prefs.edit().putBoolean(KEY_V688DEPLOYAUTOPUSH688, value).apply()
+
+    var v688depthAutoMap688: Boolean
+        get() = prefs.getBoolean(KEY_V688DEPTHAUTOMAP688, false)
+        set(value) = prefs.edit().putBoolean(KEY_V688DEPTHAUTOMAP688, value).apply()
+
+    var v688deriveAutoCalc688: Boolean
+        get() = prefs.getBoolean(KEY_V688DERIVEAUTOCALC688, false)
+        set(value) = prefs.edit().putBoolean(KEY_V688DERIVEAUTOCALC688, value).apply()
+
+    var v688designAutoToken688: Boolean
+        get() = prefs.getBoolean(KEY_V688DESIGNAUTOTOKEN688, false)
+        set(value) = prefs.edit().putBoolean(KEY_V688DESIGNAUTOTOKEN688, value).apply()
+
+    var v688desktopAutoMode688: Int
+        get() = prefs.getInt(KEY_V688DESKTOPAUTOMODE688, 0)
+        set(value) = prefs.edit().putInt(KEY_V688DESKTOPAUTOMODE688, value).apply()
+
+    var v688detectAutoMotion688: Boolean
+        get() = prefs.getBoolean(KEY_V688DETECTAUTOMOTION688, false)
+        set(value) = prefs.edit().putBoolean(KEY_V688DETECTAUTOMOTION688, value).apply()
+
+    var v688deviceAutoPair688: Boolean
+        get() = prefs.getBoolean(KEY_V688DEVICEAUTOPAIR688, false)
+        set(value) = prefs.edit().putBoolean(KEY_V688DEVICEAUTOPAIR688, value).apply()
+
+    var v688dialogAutoTheme688: Boolean
+        get() = prefs.getBoolean(KEY_V688DIALOGAUTOTHEME688, false)
+        set(value) = prefs.edit().putBoolean(KEY_V688DIALOGAUTOTHEME688, value).apply()
+
+    var v688diffAutoHighlight688: Boolean
+        get() = prefs.getBoolean(KEY_V688DIFFAUTOHIGHLIGHT688, false)
+        set(value) = prefs.edit().putBoolean(KEY_V688DIFFAUTOHIGHLIGHT688, value).apply()
+
+    var v688digestAutoCheck688: Boolean
+        get() = prefs.getBoolean(KEY_V688DIGESTAUTOCHECK688, false)
+        set(value) = prefs.edit().putBoolean(KEY_V688DIGESTAUTOCHECK688, value).apply()
+
+    var v688digitalAutoSign688: Boolean
+        get() = prefs.getBoolean(KEY_V688DIGITALAUTOSIGN688, false)
+        set(value) = prefs.edit().putBoolean(KEY_V688DIGITALAUTOSIGN688, value).apply()
+
+    var v688directAutoRoute688: Boolean
+        get() = prefs.getBoolean(KEY_V688DIRECTAUTOROUTE688, false)
+        set(value) = prefs.edit().putBoolean(KEY_V688DIRECTAUTOROUTE688, value).apply()
+
+    var v689deleteAutoConfirm689: Boolean
+        get() = prefs.getBoolean(KEY_V689DELETEAUTOCONFIRM689, false)
+        set(value) = prefs.edit().putBoolean(KEY_V689DELETEAUTOCONFIRM689, value).apply()
+
+    var v689deltaAutoUpdate689: Boolean
+        get() = prefs.getBoolean(KEY_V689DELTAAUTOUPDATE689, false)
+        set(value) = prefs.edit().putBoolean(KEY_V689DELTAAUTOUPDATE689, value).apply()
+
+    var v689demoAutoPlay689: Boolean
+        get() = prefs.getBoolean(KEY_V689DEMOAUTOPLAY689, false)
+        set(value) = prefs.edit().putBoolean(KEY_V689DEMOAUTOPLAY689, value).apply()
+
+    var v689deployAutoPush689: Boolean
+        get() = prefs.getBoolean(KEY_V689DEPLOYAUTOPUSH689, false)
+        set(value) = prefs.edit().putBoolean(KEY_V689DEPLOYAUTOPUSH689, value).apply()
+
+    var v689depthAutoMap689: Boolean
+        get() = prefs.getBoolean(KEY_V689DEPTHAUTOMAP689, false)
+        set(value) = prefs.edit().putBoolean(KEY_V689DEPTHAUTOMAP689, value).apply()
+
+    var v689deriveAutoCalc689: Boolean
+        get() = prefs.getBoolean(KEY_V689DERIVEAUTOCALC689, false)
+        set(value) = prefs.edit().putBoolean(KEY_V689DERIVEAUTOCALC689, value).apply()
+
+    var v689designAutoToken689: Boolean
+        get() = prefs.getBoolean(KEY_V689DESIGNAUTOTOKEN689, false)
+        set(value) = prefs.edit().putBoolean(KEY_V689DESIGNAUTOTOKEN689, value).apply()
+
+    var v689desktopAutoMode689: Int
+        get() = prefs.getInt(KEY_V689DESKTOPAUTOMODE689, 0)
+        set(value) = prefs.edit().putInt(KEY_V689DESKTOPAUTOMODE689, value).apply()
+
+    var v689detectAutoMotion689: Boolean
+        get() = prefs.getBoolean(KEY_V689DETECTAUTOMOTION689, false)
+        set(value) = prefs.edit().putBoolean(KEY_V689DETECTAUTOMOTION689, value).apply()
+
+    var v689deviceAutoPair689: Boolean
+        get() = prefs.getBoolean(KEY_V689DEVICEAUTOPAIR689, false)
+        set(value) = prefs.edit().putBoolean(KEY_V689DEVICEAUTOPAIR689, value).apply()
+
+    var v689dialogAutoTheme689: Boolean
+        get() = prefs.getBoolean(KEY_V689DIALOGAUTOTHEME689, false)
+        set(value) = prefs.edit().putBoolean(KEY_V689DIALOGAUTOTHEME689, value).apply()
+
+    var v689diffAutoHighlight689: Boolean
+        get() = prefs.getBoolean(KEY_V689DIFFAUTOHIGHLIGHT689, false)
+        set(value) = prefs.edit().putBoolean(KEY_V689DIFFAUTOHIGHLIGHT689, value).apply()
+
+    var v689digestAutoCheck689: Boolean
+        get() = prefs.getBoolean(KEY_V689DIGESTAUTOCHECK689, false)
+        set(value) = prefs.edit().putBoolean(KEY_V689DIGESTAUTOCHECK689, value).apply()
+
+    var v689digitalAutoSign689: Boolean
+        get() = prefs.getBoolean(KEY_V689DIGITALAUTOSIGN689, false)
+        set(value) = prefs.edit().putBoolean(KEY_V689DIGITALAUTOSIGN689, value).apply()
+
+    var v689directAutoRoute689: Boolean
+        get() = prefs.getBoolean(KEY_V689DIRECTAUTOROUTE689, false)
+        set(value) = prefs.edit().putBoolean(KEY_V689DIRECTAUTOROUTE689, value).apply()
+
+    var v690deleteAutoConfirm690: Boolean
+        get() = prefs.getBoolean(KEY_V690DELETEAUTOCONFIRM690, false)
+        set(value) = prefs.edit().putBoolean(KEY_V690DELETEAUTOCONFIRM690, value).apply()
+
+    var v690deltaAutoUpdate690: Boolean
+        get() = prefs.getBoolean(KEY_V690DELTAAUTOUPDATE690, false)
+        set(value) = prefs.edit().putBoolean(KEY_V690DELTAAUTOUPDATE690, value).apply()
+
+    var v690demoAutoPlay690: Boolean
+        get() = prefs.getBoolean(KEY_V690DEMOAUTOPLAY690, false)
+        set(value) = prefs.edit().putBoolean(KEY_V690DEMOAUTOPLAY690, value).apply()
+
+    var v690deployAutoPush690: Boolean
+        get() = prefs.getBoolean(KEY_V690DEPLOYAUTOPUSH690, false)
+        set(value) = prefs.edit().putBoolean(KEY_V690DEPLOYAUTOPUSH690, value).apply()
+
+    var v690depthAutoMap690: Boolean
+        get() = prefs.getBoolean(KEY_V690DEPTHAUTOMAP690, false)
+        set(value) = prefs.edit().putBoolean(KEY_V690DEPTHAUTOMAP690, value).apply()
+
+    var v690deriveAutoCalc690: Boolean
+        get() = prefs.getBoolean(KEY_V690DERIVEAUTOCALC690, false)
+        set(value) = prefs.edit().putBoolean(KEY_V690DERIVEAUTOCALC690, value).apply()
+
+    var v690designAutoToken690: Boolean
+        get() = prefs.getBoolean(KEY_V690DESIGNAUTOTOKEN690, false)
+        set(value) = prefs.edit().putBoolean(KEY_V690DESIGNAUTOTOKEN690, value).apply()
+
+    var v690desktopAutoMode690: Int
+        get() = prefs.getInt(KEY_V690DESKTOPAUTOMODE690, 0)
+        set(value) = prefs.edit().putInt(KEY_V690DESKTOPAUTOMODE690, value).apply()
+
+    var v690detectAutoMotion690: Boolean
+        get() = prefs.getBoolean(KEY_V690DETECTAUTOMOTION690, false)
+        set(value) = prefs.edit().putBoolean(KEY_V690DETECTAUTOMOTION690, value).apply()
+
+    var v690deviceAutoPair690: Boolean
+        get() = prefs.getBoolean(KEY_V690DEVICEAUTOPAIR690, false)
+        set(value) = prefs.edit().putBoolean(KEY_V690DEVICEAUTOPAIR690, value).apply()
+
+    var v690dialogAutoTheme690: Boolean
+        get() = prefs.getBoolean(KEY_V690DIALOGAUTOTHEME690, false)
+        set(value) = prefs.edit().putBoolean(KEY_V690DIALOGAUTOTHEME690, value).apply()
+
+    var v690diffAutoHighlight690: Boolean
+        get() = prefs.getBoolean(KEY_V690DIFFAUTOHIGHLIGHT690, false)
+        set(value) = prefs.edit().putBoolean(KEY_V690DIFFAUTOHIGHLIGHT690, value).apply()
+
+    var v690digestAutoCheck690: Boolean
+        get() = prefs.getBoolean(KEY_V690DIGESTAUTOCHECK690, false)
+        set(value) = prefs.edit().putBoolean(KEY_V690DIGESTAUTOCHECK690, value).apply()
+
+    var v690digitalAutoSign690: Boolean
+        get() = prefs.getBoolean(KEY_V690DIGITALAUTOSIGN690, false)
+        set(value) = prefs.edit().putBoolean(KEY_V690DIGITALAUTOSIGN690, value).apply()
+
+    var v690directAutoRoute690: Boolean
+        get() = prefs.getBoolean(KEY_V690DIRECTAUTOROUTE690, false)
+        set(value) = prefs.edit().putBoolean(KEY_V690DIRECTAUTOROUTE690, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -60430,5 +61030,155 @@ class AppPrefs(context: Context) {
         const val KEY_V680DECODEAUTOCODEC680 = "v680decodeAutoCodec680" // v680 Decode Auto Codec680
         const val KEY_V680DEFAULTAUTORESTORE680 = "v680defaultAutoRestore680" // v680 Default Auto Restore680
         const val KEY_V680DELAYAUTOBUFFER680 = "v680delayAutoBuffer680" // v680 Delay Auto Buffer680
+        const val KEY_V681DELETEAUTOCONFIRM681 = "v681deleteAutoConfirm681" // v681 Delete Auto Confirm681
+        const val KEY_V681DELTAAUTOUPDATE681 = "v681deltaAutoUpdate681" // v681 Delta Auto Update681
+        const val KEY_V681DEMOAUTOPLAY681 = "v681demoAutoPlay681" // v681 Demo Auto Play681
+        const val KEY_V681DEPLOYAUTOPUSH681 = "v681deployAutoPush681" // v681 Deploy Auto Push681
+        const val KEY_V681DEPTHAUTOMAP681 = "v681depthAutoMap681" // v681 Depth Auto Map681
+        const val KEY_V681DERIVEAUTOCALC681 = "v681deriveAutoCalc681" // v681 Derive Auto Calc681
+        const val KEY_V681DESIGNAUTOTOKEN681 = "v681designAutoToken681" // v681 Design Auto Token681
+        const val KEY_V681DESKTOPAUTOMODE681 = "v681desktopAutoMode681" // v681 Desktop Auto Mode681
+        const val KEY_V681DETECTAUTOMOTION681 = "v681detectAutoMotion681" // v681 Detect Auto Motion681
+        const val KEY_V681DEVICEAUTOPAIR681 = "v681deviceAutoPair681" // v681 Device Auto Pair681
+        const val KEY_V681DIALOGAUTOTHEME681 = "v681dialogAutoTheme681" // v681 Dialog Auto Theme681
+        const val KEY_V681DIFFAUTOHIGHLIGHT681 = "v681diffAutoHighlight681" // v681 Diff Auto Highlight681
+        const val KEY_V681DIGESTAUTOCHECK681 = "v681digestAutoCheck681" // v681 Digest Auto Check681
+        const val KEY_V681DIGITALAUTOSIGN681 = "v681digitalAutoSign681" // v681 Digital Auto Sign681
+        const val KEY_V681DIRECTAUTOROUTE681 = "v681directAutoRoute681" // v681 Direct Auto Route681
+        const val KEY_V682DELETEAUTOCONFIRM682 = "v682deleteAutoConfirm682" // v682 Delete Auto Confirm682
+        const val KEY_V682DELTAAUTOUPDATE682 = "v682deltaAutoUpdate682" // v682 Delta Auto Update682
+        const val KEY_V682DEMOAUTOPLAY682 = "v682demoAutoPlay682" // v682 Demo Auto Play682
+        const val KEY_V682DEPLOYAUTOPUSH682 = "v682deployAutoPush682" // v682 Deploy Auto Push682
+        const val KEY_V682DEPTHAUTOMAP682 = "v682depthAutoMap682" // v682 Depth Auto Map682
+        const val KEY_V682DERIVEAUTOCALC682 = "v682deriveAutoCalc682" // v682 Derive Auto Calc682
+        const val KEY_V682DESIGNAUTOTOKEN682 = "v682designAutoToken682" // v682 Design Auto Token682
+        const val KEY_V682DESKTOPAUTOMODE682 = "v682desktopAutoMode682" // v682 Desktop Auto Mode682
+        const val KEY_V682DETECTAUTOMOTION682 = "v682detectAutoMotion682" // v682 Detect Auto Motion682
+        const val KEY_V682DEVICEAUTOPAIR682 = "v682deviceAutoPair682" // v682 Device Auto Pair682
+        const val KEY_V682DIALOGAUTOTHEME682 = "v682dialogAutoTheme682" // v682 Dialog Auto Theme682
+        const val KEY_V682DIFFAUTOHIGHLIGHT682 = "v682diffAutoHighlight682" // v682 Diff Auto Highlight682
+        const val KEY_V682DIGESTAUTOCHECK682 = "v682digestAutoCheck682" // v682 Digest Auto Check682
+        const val KEY_V682DIGITALAUTOSIGN682 = "v682digitalAutoSign682" // v682 Digital Auto Sign682
+        const val KEY_V682DIRECTAUTOROUTE682 = "v682directAutoRoute682" // v682 Direct Auto Route682
+        const val KEY_V683DELETEAUTOCONFIRM683 = "v683deleteAutoConfirm683" // v683 Delete Auto Confirm683
+        const val KEY_V683DELTAAUTOUPDATE683 = "v683deltaAutoUpdate683" // v683 Delta Auto Update683
+        const val KEY_V683DEMOAUTOPLAY683 = "v683demoAutoPlay683" // v683 Demo Auto Play683
+        const val KEY_V683DEPLOYAUTOPUSH683 = "v683deployAutoPush683" // v683 Deploy Auto Push683
+        const val KEY_V683DEPTHAUTOMAP683 = "v683depthAutoMap683" // v683 Depth Auto Map683
+        const val KEY_V683DERIVEAUTOCALC683 = "v683deriveAutoCalc683" // v683 Derive Auto Calc683
+        const val KEY_V683DESIGNAUTOTOKEN683 = "v683designAutoToken683" // v683 Design Auto Token683
+        const val KEY_V683DESKTOPAUTOMODE683 = "v683desktopAutoMode683" // v683 Desktop Auto Mode683
+        const val KEY_V683DETECTAUTOMOTION683 = "v683detectAutoMotion683" // v683 Detect Auto Motion683
+        const val KEY_V683DEVICEAUTOPAIR683 = "v683deviceAutoPair683" // v683 Device Auto Pair683
+        const val KEY_V683DIALOGAUTOTHEME683 = "v683dialogAutoTheme683" // v683 Dialog Auto Theme683
+        const val KEY_V683DIFFAUTOHIGHLIGHT683 = "v683diffAutoHighlight683" // v683 Diff Auto Highlight683
+        const val KEY_V683DIGESTAUTOCHECK683 = "v683digestAutoCheck683" // v683 Digest Auto Check683
+        const val KEY_V683DIGITALAUTOSIGN683 = "v683digitalAutoSign683" // v683 Digital Auto Sign683
+        const val KEY_V683DIRECTAUTOROUTE683 = "v683directAutoRoute683" // v683 Direct Auto Route683
+        const val KEY_V684DELETEAUTOCONFIRM684 = "v684deleteAutoConfirm684" // v684 Delete Auto Confirm684
+        const val KEY_V684DELTAAUTOUPDATE684 = "v684deltaAutoUpdate684" // v684 Delta Auto Update684
+        const val KEY_V684DEMOAUTOPLAY684 = "v684demoAutoPlay684" // v684 Demo Auto Play684
+        const val KEY_V684DEPLOYAUTOPUSH684 = "v684deployAutoPush684" // v684 Deploy Auto Push684
+        const val KEY_V684DEPTHAUTOMAP684 = "v684depthAutoMap684" // v684 Depth Auto Map684
+        const val KEY_V684DERIVEAUTOCALC684 = "v684deriveAutoCalc684" // v684 Derive Auto Calc684
+        const val KEY_V684DESIGNAUTOTOKEN684 = "v684designAutoToken684" // v684 Design Auto Token684
+        const val KEY_V684DESKTOPAUTOMODE684 = "v684desktopAutoMode684" // v684 Desktop Auto Mode684
+        const val KEY_V684DETECTAUTOMOTION684 = "v684detectAutoMotion684" // v684 Detect Auto Motion684
+        const val KEY_V684DEVICEAUTOPAIR684 = "v684deviceAutoPair684" // v684 Device Auto Pair684
+        const val KEY_V684DIALOGAUTOTHEME684 = "v684dialogAutoTheme684" // v684 Dialog Auto Theme684
+        const val KEY_V684DIFFAUTOHIGHLIGHT684 = "v684diffAutoHighlight684" // v684 Diff Auto Highlight684
+        const val KEY_V684DIGESTAUTOCHECK684 = "v684digestAutoCheck684" // v684 Digest Auto Check684
+        const val KEY_V684DIGITALAUTOSIGN684 = "v684digitalAutoSign684" // v684 Digital Auto Sign684
+        const val KEY_V684DIRECTAUTOROUTE684 = "v684directAutoRoute684" // v684 Direct Auto Route684
+        const val KEY_V685DELETEAUTOCONFIRM685 = "v685deleteAutoConfirm685" // v685 Delete Auto Confirm685
+        const val KEY_V685DELTAAUTOUPDATE685 = "v685deltaAutoUpdate685" // v685 Delta Auto Update685
+        const val KEY_V685DEMOAUTOPLAY685 = "v685demoAutoPlay685" // v685 Demo Auto Play685
+        const val KEY_V685DEPLOYAUTOPUSH685 = "v685deployAutoPush685" // v685 Deploy Auto Push685
+        const val KEY_V685DEPTHAUTOMAP685 = "v685depthAutoMap685" // v685 Depth Auto Map685
+        const val KEY_V685DERIVEAUTOCALC685 = "v685deriveAutoCalc685" // v685 Derive Auto Calc685
+        const val KEY_V685DESIGNAUTOTOKEN685 = "v685designAutoToken685" // v685 Design Auto Token685
+        const val KEY_V685DESKTOPAUTOMODE685 = "v685desktopAutoMode685" // v685 Desktop Auto Mode685
+        const val KEY_V685DETECTAUTOMOTION685 = "v685detectAutoMotion685" // v685 Detect Auto Motion685
+        const val KEY_V685DEVICEAUTOPAIR685 = "v685deviceAutoPair685" // v685 Device Auto Pair685
+        const val KEY_V685DIALOGAUTOTHEME685 = "v685dialogAutoTheme685" // v685 Dialog Auto Theme685
+        const val KEY_V685DIFFAUTOHIGHLIGHT685 = "v685diffAutoHighlight685" // v685 Diff Auto Highlight685
+        const val KEY_V685DIGESTAUTOCHECK685 = "v685digestAutoCheck685" // v685 Digest Auto Check685
+        const val KEY_V685DIGITALAUTOSIGN685 = "v685digitalAutoSign685" // v685 Digital Auto Sign685
+        const val KEY_V685DIRECTAUTOROUTE685 = "v685directAutoRoute685" // v685 Direct Auto Route685
+        const val KEY_V686DELETEAUTOCONFIRM686 = "v686deleteAutoConfirm686" // v686 Delete Auto Confirm686
+        const val KEY_V686DELTAAUTOUPDATE686 = "v686deltaAutoUpdate686" // v686 Delta Auto Update686
+        const val KEY_V686DEMOAUTOPLAY686 = "v686demoAutoPlay686" // v686 Demo Auto Play686
+        const val KEY_V686DEPLOYAUTOPUSH686 = "v686deployAutoPush686" // v686 Deploy Auto Push686
+        const val KEY_V686DEPTHAUTOMAP686 = "v686depthAutoMap686" // v686 Depth Auto Map686
+        const val KEY_V686DERIVEAUTOCALC686 = "v686deriveAutoCalc686" // v686 Derive Auto Calc686
+        const val KEY_V686DESIGNAUTOTOKEN686 = "v686designAutoToken686" // v686 Design Auto Token686
+        const val KEY_V686DESKTOPAUTOMODE686 = "v686desktopAutoMode686" // v686 Desktop Auto Mode686
+        const val KEY_V686DETECTAUTOMOTION686 = "v686detectAutoMotion686" // v686 Detect Auto Motion686
+        const val KEY_V686DEVICEAUTOPAIR686 = "v686deviceAutoPair686" // v686 Device Auto Pair686
+        const val KEY_V686DIALOGAUTOTHEME686 = "v686dialogAutoTheme686" // v686 Dialog Auto Theme686
+        const val KEY_V686DIFFAUTOHIGHLIGHT686 = "v686diffAutoHighlight686" // v686 Diff Auto Highlight686
+        const val KEY_V686DIGESTAUTOCHECK686 = "v686digestAutoCheck686" // v686 Digest Auto Check686
+        const val KEY_V686DIGITALAUTOSIGN686 = "v686digitalAutoSign686" // v686 Digital Auto Sign686
+        const val KEY_V686DIRECTAUTOROUTE686 = "v686directAutoRoute686" // v686 Direct Auto Route686
+        const val KEY_V687DELETEAUTOCONFIRM687 = "v687deleteAutoConfirm687" // v687 Delete Auto Confirm687
+        const val KEY_V687DELTAAUTOUPDATE687 = "v687deltaAutoUpdate687" // v687 Delta Auto Update687
+        const val KEY_V687DEMOAUTOPLAY687 = "v687demoAutoPlay687" // v687 Demo Auto Play687
+        const val KEY_V687DEPLOYAUTOPUSH687 = "v687deployAutoPush687" // v687 Deploy Auto Push687
+        const val KEY_V687DEPTHAUTOMAP687 = "v687depthAutoMap687" // v687 Depth Auto Map687
+        const val KEY_V687DERIVEAUTOCALC687 = "v687deriveAutoCalc687" // v687 Derive Auto Calc687
+        const val KEY_V687DESIGNAUTOTOKEN687 = "v687designAutoToken687" // v687 Design Auto Token687
+        const val KEY_V687DESKTOPAUTOMODE687 = "v687desktopAutoMode687" // v687 Desktop Auto Mode687
+        const val KEY_V687DETECTAUTOMOTION687 = "v687detectAutoMotion687" // v687 Detect Auto Motion687
+        const val KEY_V687DEVICEAUTOPAIR687 = "v687deviceAutoPair687" // v687 Device Auto Pair687
+        const val KEY_V687DIALOGAUTOTHEME687 = "v687dialogAutoTheme687" // v687 Dialog Auto Theme687
+        const val KEY_V687DIFFAUTOHIGHLIGHT687 = "v687diffAutoHighlight687" // v687 Diff Auto Highlight687
+        const val KEY_V687DIGESTAUTOCHECK687 = "v687digestAutoCheck687" // v687 Digest Auto Check687
+        const val KEY_V687DIGITALAUTOSIGN687 = "v687digitalAutoSign687" // v687 Digital Auto Sign687
+        const val KEY_V687DIRECTAUTOROUTE687 = "v687directAutoRoute687" // v687 Direct Auto Route687
+        const val KEY_V688DELETEAUTOCONFIRM688 = "v688deleteAutoConfirm688" // v688 Delete Auto Confirm688
+        const val KEY_V688DELTAAUTOUPDATE688 = "v688deltaAutoUpdate688" // v688 Delta Auto Update688
+        const val KEY_V688DEMOAUTOPLAY688 = "v688demoAutoPlay688" // v688 Demo Auto Play688
+        const val KEY_V688DEPLOYAUTOPUSH688 = "v688deployAutoPush688" // v688 Deploy Auto Push688
+        const val KEY_V688DEPTHAUTOMAP688 = "v688depthAutoMap688" // v688 Depth Auto Map688
+        const val KEY_V688DERIVEAUTOCALC688 = "v688deriveAutoCalc688" // v688 Derive Auto Calc688
+        const val KEY_V688DESIGNAUTOTOKEN688 = "v688designAutoToken688" // v688 Design Auto Token688
+        const val KEY_V688DESKTOPAUTOMODE688 = "v688desktopAutoMode688" // v688 Desktop Auto Mode688
+        const val KEY_V688DETECTAUTOMOTION688 = "v688detectAutoMotion688" // v688 Detect Auto Motion688
+        const val KEY_V688DEVICEAUTOPAIR688 = "v688deviceAutoPair688" // v688 Device Auto Pair688
+        const val KEY_V688DIALOGAUTOTHEME688 = "v688dialogAutoTheme688" // v688 Dialog Auto Theme688
+        const val KEY_V688DIFFAUTOHIGHLIGHT688 = "v688diffAutoHighlight688" // v688 Diff Auto Highlight688
+        const val KEY_V688DIGESTAUTOCHECK688 = "v688digestAutoCheck688" // v688 Digest Auto Check688
+        const val KEY_V688DIGITALAUTOSIGN688 = "v688digitalAutoSign688" // v688 Digital Auto Sign688
+        const val KEY_V688DIRECTAUTOROUTE688 = "v688directAutoRoute688" // v688 Direct Auto Route688
+        const val KEY_V689DELETEAUTOCONFIRM689 = "v689deleteAutoConfirm689" // v689 Delete Auto Confirm689
+        const val KEY_V689DELTAAUTOUPDATE689 = "v689deltaAutoUpdate689" // v689 Delta Auto Update689
+        const val KEY_V689DEMOAUTOPLAY689 = "v689demoAutoPlay689" // v689 Demo Auto Play689
+        const val KEY_V689DEPLOYAUTOPUSH689 = "v689deployAutoPush689" // v689 Deploy Auto Push689
+        const val KEY_V689DEPTHAUTOMAP689 = "v689depthAutoMap689" // v689 Depth Auto Map689
+        const val KEY_V689DERIVEAUTOCALC689 = "v689deriveAutoCalc689" // v689 Derive Auto Calc689
+        const val KEY_V689DESIGNAUTOTOKEN689 = "v689designAutoToken689" // v689 Design Auto Token689
+        const val KEY_V689DESKTOPAUTOMODE689 = "v689desktopAutoMode689" // v689 Desktop Auto Mode689
+        const val KEY_V689DETECTAUTOMOTION689 = "v689detectAutoMotion689" // v689 Detect Auto Motion689
+        const val KEY_V689DEVICEAUTOPAIR689 = "v689deviceAutoPair689" // v689 Device Auto Pair689
+        const val KEY_V689DIALOGAUTOTHEME689 = "v689dialogAutoTheme689" // v689 Dialog Auto Theme689
+        const val KEY_V689DIFFAUTOHIGHLIGHT689 = "v689diffAutoHighlight689" // v689 Diff Auto Highlight689
+        const val KEY_V689DIGESTAUTOCHECK689 = "v689digestAutoCheck689" // v689 Digest Auto Check689
+        const val KEY_V689DIGITALAUTOSIGN689 = "v689digitalAutoSign689" // v689 Digital Auto Sign689
+        const val KEY_V689DIRECTAUTOROUTE689 = "v689directAutoRoute689" // v689 Direct Auto Route689
+        const val KEY_V690DELETEAUTOCONFIRM690 = "v690deleteAutoConfirm690" // v690 Delete Auto Confirm690
+        const val KEY_V690DELTAAUTOUPDATE690 = "v690deltaAutoUpdate690" // v690 Delta Auto Update690
+        const val KEY_V690DEMOAUTOPLAY690 = "v690demoAutoPlay690" // v690 Demo Auto Play690
+        const val KEY_V690DEPLOYAUTOPUSH690 = "v690deployAutoPush690" // v690 Deploy Auto Push690
+        const val KEY_V690DEPTHAUTOMAP690 = "v690depthAutoMap690" // v690 Depth Auto Map690
+        const val KEY_V690DERIVEAUTOCALC690 = "v690deriveAutoCalc690" // v690 Derive Auto Calc690
+        const val KEY_V690DESIGNAUTOTOKEN690 = "v690designAutoToken690" // v690 Design Auto Token690
+        const val KEY_V690DESKTOPAUTOMODE690 = "v690desktopAutoMode690" // v690 Desktop Auto Mode690
+        const val KEY_V690DETECTAUTOMOTION690 = "v690detectAutoMotion690" // v690 Detect Auto Motion690
+        const val KEY_V690DEVICEAUTOPAIR690 = "v690deviceAutoPair690" // v690 Device Auto Pair690
+        const val KEY_V690DIALOGAUTOTHEME690 = "v690dialogAutoTheme690" // v690 Dialog Auto Theme690
+        const val KEY_V690DIFFAUTOHIGHLIGHT690 = "v690diffAutoHighlight690" // v690 Diff Auto Highlight690
+        const val KEY_V690DIGESTAUTOCHECK690 = "v690digestAutoCheck690" // v690 Digest Auto Check690
+        const val KEY_V690DIGITALAUTOSIGN690 = "v690digitalAutoSign690" // v690 Digital Auto Sign690
+        const val KEY_V690DIRECTAUTOROUTE690 = "v690directAutoRoute690" // v690 Direct Auto Route690
     }
 }
