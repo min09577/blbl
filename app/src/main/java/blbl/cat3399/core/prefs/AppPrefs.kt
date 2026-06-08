@@ -36248,6 +36248,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V490PACKAUTOCOMPRESS490, false)
         set(value) = prefs.edit().putBoolean(KEY_V490PACKAUTOCOMPRESS490, value).apply()
 
+    var v491padAutoDetect491: Boolean
+        get() = prefs.getBoolean(KEY_V491PADAUTODETECT491, false)
+        set(value) = prefs.edit().putBoolean(KEY_V491PADAUTODETECT491, value).apply()
+
+    var v491parentControlPin491: Boolean
+        get() = prefs.getBoolean(KEY_V491PARENTCONTROLPIN491, false)
+        set(value) = prefs.edit().putBoolean(KEY_V491PARENTCONTROLPIN491, value).apply()
+
+    var v491passThroughAudio491: Boolean
+        get() = prefs.getBoolean(KEY_V491PASSTHROUGHAUDIO491, false)
+        set(value) = prefs.edit().putBoolean(KEY_V491PASSTHROUGHAUDIO491, value).apply()
+
+    var v491pathAutoResolve491: Boolean
+        get() = prefs.getBoolean(KEY_V491PATHAUTORESOLVE491, false)
+        set(value) = prefs.edit().putBoolean(KEY_V491PATHAUTORESOLVE491, value).apply()
+
+    var v491patternAutoMatch491: Boolean
+        get() = prefs.getBoolean(KEY_V491PATTERNAUTOMATCH491, false)
+        set(value) = prefs.edit().putBoolean(KEY_V491PATTERNAUTOMATCH491, value).apply()
+
+    var v491pauseOnHeadset491: Boolean
+        get() = prefs.getBoolean(KEY_V491PAUSEONHEADSET491, false)
+        set(value) = prefs.edit().putBoolean(KEY_V491PAUSEONHEADSET491, value).apply()
+
+    var v491peakAutoDetect491: Boolean
+        get() = prefs.getBoolean(KEY_V491PEAKAUTODETECT491, false)
+        set(value) = prefs.edit().putBoolean(KEY_V491PEAKAUTODETECT491, value).apply()
+
+    var v491periodAutoExtend491: Boolean
+        get() = prefs.getBoolean(KEY_V491PERIODAUTOEXTEND491, false)
+        set(value) = prefs.edit().putBoolean(KEY_V491PERIODAUTOEXTEND491, value).apply()
+
+    var v491permissionAutoGrant491: Boolean
+        get() = prefs.getBoolean(KEY_V491PERMISSIONAUTOGRANT491, false)
+        set(value) = prefs.edit().putBoolean(KEY_V491PERMISSIONAUTOGRANT491, value).apply()
+
+    var v491phaseAutoAlign491: Boolean
+        get() = prefs.getBoolean(KEY_V491PHASEAUTOALIGN491, false)
+        set(value) = prefs.edit().putBoolean(KEY_V491PHASEAUTOALIGN491, value).apply()
+
+    var v491phoneAutoAnswer491: Boolean
+        get() = prefs.getBoolean(KEY_V491PHONEAUTOANSWER491, false)
+        set(value) = prefs.edit().putBoolean(KEY_V491PHONEAUTOANSWER491, value).apply()
+
+    var v491pickAutoConfirm491: Boolean
+        get() = prefs.getBoolean(KEY_V491PICKAUTOCONFIRM491, false)
+        set(value) = prefs.edit().putBoolean(KEY_V491PICKAUTOCONFIRM491, value).apply()
+
+    var v491pinToTop491: Boolean
+        get() = prefs.getBoolean(KEY_V491PINTOTOP491, false)
+        set(value) = prefs.edit().putBoolean(KEY_V491PINTOTOP491, value).apply()
+
+    var v491pipeAutoRoute491: Boolean
+        get() = prefs.getBoolean(KEY_V491PIPEAUTOROUTE491, false)
+        set(value) = prefs.edit().putBoolean(KEY_V491PIPEAUTOROUTE491, value).apply()
+
+    var v491pixelAutoCorrect491: Boolean
+        get() = prefs.getBoolean(KEY_V491PIXELAUTOCORRECT491, false)
+        set(value) = prefs.edit().putBoolean(KEY_V491PIXELAUTOCORRECT491, value).apply()
+
+    var v492padAutoDetect492: Boolean
+        get() = prefs.getBoolean(KEY_V492PADAUTODETECT492, false)
+        set(value) = prefs.edit().putBoolean(KEY_V492PADAUTODETECT492, value).apply()
+
+    var v492parentControlPin492: Boolean
+        get() = prefs.getBoolean(KEY_V492PARENTCONTROLPIN492, false)
+        set(value) = prefs.edit().putBoolean(KEY_V492PARENTCONTROLPIN492, value).apply()
+
+    var v492passThroughAudio492: Boolean
+        get() = prefs.getBoolean(KEY_V492PASSTHROUGHAUDIO492, false)
+        set(value) = prefs.edit().putBoolean(KEY_V492PASSTHROUGHAUDIO492, value).apply()
+
+    var v492pathAutoResolve492: Boolean
+        get() = prefs.getBoolean(KEY_V492PATHAUTORESOLVE492, false)
+        set(value) = prefs.edit().putBoolean(KEY_V492PATHAUTORESOLVE492, value).apply()
+
+    var v492patternAutoMatch492: Boolean
+        get() = prefs.getBoolean(KEY_V492PATTERNAUTOMATCH492, false)
+        set(value) = prefs.edit().putBoolean(KEY_V492PATTERNAUTOMATCH492, value).apply()
+
+    var v492pauseOnHeadset492: Boolean
+        get() = prefs.getBoolean(KEY_V492PAUSEONHEADSET492, false)
+        set(value) = prefs.edit().putBoolean(KEY_V492PAUSEONHEADSET492, value).apply()
+
+    var v492peakAutoDetect492: Boolean
+        get() = prefs.getBoolean(KEY_V492PEAKAUTODETECT492, false)
+        set(value) = prefs.edit().putBoolean(KEY_V492PEAKAUTODETECT492, value).apply()
+
+    var v492periodAutoExtend492: Boolean
+        get() = prefs.getBoolean(KEY_V492PERIODAUTOEXTEND492, false)
+        set(value) = prefs.edit().putBoolean(KEY_V492PERIODAUTOEXTEND492, value).apply()
+
+    var v492permissionAutoGrant492: Boolean
+        get() = prefs.getBoolean(KEY_V492PERMISSIONAUTOGRANT492, false)
+        set(value) = prefs.edit().putBoolean(KEY_V492PERMISSIONAUTOGRANT492, value).apply()
+
+    var v492phaseAutoAlign492: Boolean
+        get() = prefs.getBoolean(KEY_V492PHASEAUTOALIGN492, false)
+        set(value) = prefs.edit().putBoolean(KEY_V492PHASEAUTOALIGN492, value).apply()
+
+    var v492phoneAutoAnswer492: Boolean
+        get() = prefs.getBoolean(KEY_V492PHONEAUTOANSWER492, false)
+        set(value) = prefs.edit().putBoolean(KEY_V492PHONEAUTOANSWER492, value).apply()
+
+    var v492pickAutoConfirm492: Boolean
+        get() = prefs.getBoolean(KEY_V492PICKAUTOCONFIRM492, false)
+        set(value) = prefs.edit().putBoolean(KEY_V492PICKAUTOCONFIRM492, value).apply()
+
+    var v492pinToTop492: Boolean
+        get() = prefs.getBoolean(KEY_V492PINTOTOP492, false)
+        set(value) = prefs.edit().putBoolean(KEY_V492PINTOTOP492, value).apply()
+
+    var v492pipeAutoRoute492: Boolean
+        get() = prefs.getBoolean(KEY_V492PIPEAUTOROUTE492, false)
+        set(value) = prefs.edit().putBoolean(KEY_V492PIPEAUTOROUTE492, value).apply()
+
+    var v492pixelAutoCorrect492: Boolean
+        get() = prefs.getBoolean(KEY_V492PIXELAUTOCORRECT492, false)
+        set(value) = prefs.edit().putBoolean(KEY_V492PIXELAUTOCORRECT492, value).apply()
+
+    var v493padAutoDetect493: Boolean
+        get() = prefs.getBoolean(KEY_V493PADAUTODETECT493, false)
+        set(value) = prefs.edit().putBoolean(KEY_V493PADAUTODETECT493, value).apply()
+
+    var v493parentControlPin493: Boolean
+        get() = prefs.getBoolean(KEY_V493PARENTCONTROLPIN493, false)
+        set(value) = prefs.edit().putBoolean(KEY_V493PARENTCONTROLPIN493, value).apply()
+
+    var v493passThroughAudio493: Boolean
+        get() = prefs.getBoolean(KEY_V493PASSTHROUGHAUDIO493, false)
+        set(value) = prefs.edit().putBoolean(KEY_V493PASSTHROUGHAUDIO493, value).apply()
+
+    var v493pathAutoResolve493: Boolean
+        get() = prefs.getBoolean(KEY_V493PATHAUTORESOLVE493, false)
+        set(value) = prefs.edit().putBoolean(KEY_V493PATHAUTORESOLVE493, value).apply()
+
+    var v493patternAutoMatch493: Boolean
+        get() = prefs.getBoolean(KEY_V493PATTERNAUTOMATCH493, false)
+        set(value) = prefs.edit().putBoolean(KEY_V493PATTERNAUTOMATCH493, value).apply()
+
+    var v493pauseOnHeadset493: Boolean
+        get() = prefs.getBoolean(KEY_V493PAUSEONHEADSET493, false)
+        set(value) = prefs.edit().putBoolean(KEY_V493PAUSEONHEADSET493, value).apply()
+
+    var v493peakAutoDetect493: Boolean
+        get() = prefs.getBoolean(KEY_V493PEAKAUTODETECT493, false)
+        set(value) = prefs.edit().putBoolean(KEY_V493PEAKAUTODETECT493, value).apply()
+
+    var v493periodAutoExtend493: Boolean
+        get() = prefs.getBoolean(KEY_V493PERIODAUTOEXTEND493, false)
+        set(value) = prefs.edit().putBoolean(KEY_V493PERIODAUTOEXTEND493, value).apply()
+
+    var v493permissionAutoGrant493: Boolean
+        get() = prefs.getBoolean(KEY_V493PERMISSIONAUTOGRANT493, false)
+        set(value) = prefs.edit().putBoolean(KEY_V493PERMISSIONAUTOGRANT493, value).apply()
+
+    var v493phaseAutoAlign493: Boolean
+        get() = prefs.getBoolean(KEY_V493PHASEAUTOALIGN493, false)
+        set(value) = prefs.edit().putBoolean(KEY_V493PHASEAUTOALIGN493, value).apply()
+
+    var v493phoneAutoAnswer493: Boolean
+        get() = prefs.getBoolean(KEY_V493PHONEAUTOANSWER493, false)
+        set(value) = prefs.edit().putBoolean(KEY_V493PHONEAUTOANSWER493, value).apply()
+
+    var v493pickAutoConfirm493: Boolean
+        get() = prefs.getBoolean(KEY_V493PICKAUTOCONFIRM493, false)
+        set(value) = prefs.edit().putBoolean(KEY_V493PICKAUTOCONFIRM493, value).apply()
+
+    var v493pinToTop493: Boolean
+        get() = prefs.getBoolean(KEY_V493PINTOTOP493, false)
+        set(value) = prefs.edit().putBoolean(KEY_V493PINTOTOP493, value).apply()
+
+    var v493pipeAutoRoute493: Boolean
+        get() = prefs.getBoolean(KEY_V493PIPEAUTOROUTE493, false)
+        set(value) = prefs.edit().putBoolean(KEY_V493PIPEAUTOROUTE493, value).apply()
+
+    var v493pixelAutoCorrect493: Boolean
+        get() = prefs.getBoolean(KEY_V493PIXELAUTOCORRECT493, false)
+        set(value) = prefs.edit().putBoolean(KEY_V493PIXELAUTOCORRECT493, value).apply()
+
+    var v494padAutoDetect494: Boolean
+        get() = prefs.getBoolean(KEY_V494PADAUTODETECT494, false)
+        set(value) = prefs.edit().putBoolean(KEY_V494PADAUTODETECT494, value).apply()
+
+    var v494parentControlPin494: Boolean
+        get() = prefs.getBoolean(KEY_V494PARENTCONTROLPIN494, false)
+        set(value) = prefs.edit().putBoolean(KEY_V494PARENTCONTROLPIN494, value).apply()
+
+    var v494passThroughAudio494: Boolean
+        get() = prefs.getBoolean(KEY_V494PASSTHROUGHAUDIO494, false)
+        set(value) = prefs.edit().putBoolean(KEY_V494PASSTHROUGHAUDIO494, value).apply()
+
+    var v494pathAutoResolve494: Boolean
+        get() = prefs.getBoolean(KEY_V494PATHAUTORESOLVE494, false)
+        set(value) = prefs.edit().putBoolean(KEY_V494PATHAUTORESOLVE494, value).apply()
+
+    var v494patternAutoMatch494: Boolean
+        get() = prefs.getBoolean(KEY_V494PATTERNAUTOMATCH494, false)
+        set(value) = prefs.edit().putBoolean(KEY_V494PATTERNAUTOMATCH494, value).apply()
+
+    var v494pauseOnHeadset494: Boolean
+        get() = prefs.getBoolean(KEY_V494PAUSEONHEADSET494, false)
+        set(value) = prefs.edit().putBoolean(KEY_V494PAUSEONHEADSET494, value).apply()
+
+    var v494peakAutoDetect494: Boolean
+        get() = prefs.getBoolean(KEY_V494PEAKAUTODETECT494, false)
+        set(value) = prefs.edit().putBoolean(KEY_V494PEAKAUTODETECT494, value).apply()
+
+    var v494periodAutoExtend494: Boolean
+        get() = prefs.getBoolean(KEY_V494PERIODAUTOEXTEND494, false)
+        set(value) = prefs.edit().putBoolean(KEY_V494PERIODAUTOEXTEND494, value).apply()
+
+    var v494permissionAutoGrant494: Boolean
+        get() = prefs.getBoolean(KEY_V494PERMISSIONAUTOGRANT494, false)
+        set(value) = prefs.edit().putBoolean(KEY_V494PERMISSIONAUTOGRANT494, value).apply()
+
+    var v494phaseAutoAlign494: Boolean
+        get() = prefs.getBoolean(KEY_V494PHASEAUTOALIGN494, false)
+        set(value) = prefs.edit().putBoolean(KEY_V494PHASEAUTOALIGN494, value).apply()
+
+    var v494phoneAutoAnswer494: Boolean
+        get() = prefs.getBoolean(KEY_V494PHONEAUTOANSWER494, false)
+        set(value) = prefs.edit().putBoolean(KEY_V494PHONEAUTOANSWER494, value).apply()
+
+    var v494pickAutoConfirm494: Boolean
+        get() = prefs.getBoolean(KEY_V494PICKAUTOCONFIRM494, false)
+        set(value) = prefs.edit().putBoolean(KEY_V494PICKAUTOCONFIRM494, value).apply()
+
+    var v494pinToTop494: Boolean
+        get() = prefs.getBoolean(KEY_V494PINTOTOP494, false)
+        set(value) = prefs.edit().putBoolean(KEY_V494PINTOTOP494, value).apply()
+
+    var v494pipeAutoRoute494: Boolean
+        get() = prefs.getBoolean(KEY_V494PIPEAUTOROUTE494, false)
+        set(value) = prefs.edit().putBoolean(KEY_V494PIPEAUTOROUTE494, value).apply()
+
+    var v494pixelAutoCorrect494: Boolean
+        get() = prefs.getBoolean(KEY_V494PIXELAUTOCORRECT494, false)
+        set(value) = prefs.edit().putBoolean(KEY_V494PIXELAUTOCORRECT494, value).apply()
+
+    var v495padAutoDetect495: Boolean
+        get() = prefs.getBoolean(KEY_V495PADAUTODETECT495, false)
+        set(value) = prefs.edit().putBoolean(KEY_V495PADAUTODETECT495, value).apply()
+
+    var v495parentControlPin495: Boolean
+        get() = prefs.getBoolean(KEY_V495PARENTCONTROLPIN495, false)
+        set(value) = prefs.edit().putBoolean(KEY_V495PARENTCONTROLPIN495, value).apply()
+
+    var v495passThroughAudio495: Boolean
+        get() = prefs.getBoolean(KEY_V495PASSTHROUGHAUDIO495, false)
+        set(value) = prefs.edit().putBoolean(KEY_V495PASSTHROUGHAUDIO495, value).apply()
+
+    var v495pathAutoResolve495: Boolean
+        get() = prefs.getBoolean(KEY_V495PATHAUTORESOLVE495, false)
+        set(value) = prefs.edit().putBoolean(KEY_V495PATHAUTORESOLVE495, value).apply()
+
+    var v495patternAutoMatch495: Boolean
+        get() = prefs.getBoolean(KEY_V495PATTERNAUTOMATCH495, false)
+        set(value) = prefs.edit().putBoolean(KEY_V495PATTERNAUTOMATCH495, value).apply()
+
+    var v495pauseOnHeadset495: Boolean
+        get() = prefs.getBoolean(KEY_V495PAUSEONHEADSET495, false)
+        set(value) = prefs.edit().putBoolean(KEY_V495PAUSEONHEADSET495, value).apply()
+
+    var v495peakAutoDetect495: Boolean
+        get() = prefs.getBoolean(KEY_V495PEAKAUTODETECT495, false)
+        set(value) = prefs.edit().putBoolean(KEY_V495PEAKAUTODETECT495, value).apply()
+
+    var v495periodAutoExtend495: Boolean
+        get() = prefs.getBoolean(KEY_V495PERIODAUTOEXTEND495, false)
+        set(value) = prefs.edit().putBoolean(KEY_V495PERIODAUTOEXTEND495, value).apply()
+
+    var v495permissionAutoGrant495: Boolean
+        get() = prefs.getBoolean(KEY_V495PERMISSIONAUTOGRANT495, false)
+        set(value) = prefs.edit().putBoolean(KEY_V495PERMISSIONAUTOGRANT495, value).apply()
+
+    var v495phaseAutoAlign495: Boolean
+        get() = prefs.getBoolean(KEY_V495PHASEAUTOALIGN495, false)
+        set(value) = prefs.edit().putBoolean(KEY_V495PHASEAUTOALIGN495, value).apply()
+
+    var v495phoneAutoAnswer495: Boolean
+        get() = prefs.getBoolean(KEY_V495PHONEAUTOANSWER495, false)
+        set(value) = prefs.edit().putBoolean(KEY_V495PHONEAUTOANSWER495, value).apply()
+
+    var v495pickAutoConfirm495: Boolean
+        get() = prefs.getBoolean(KEY_V495PICKAUTOCONFIRM495, false)
+        set(value) = prefs.edit().putBoolean(KEY_V495PICKAUTOCONFIRM495, value).apply()
+
+    var v495pinToTop495: Boolean
+        get() = prefs.getBoolean(KEY_V495PINTOTOP495, false)
+        set(value) = prefs.edit().putBoolean(KEY_V495PINTOTOP495, value).apply()
+
+    var v495pipeAutoRoute495: Boolean
+        get() = prefs.getBoolean(KEY_V495PIPEAUTOROUTE495, false)
+        set(value) = prefs.edit().putBoolean(KEY_V495PIPEAUTOROUTE495, value).apply()
+
+    var v495pixelAutoCorrect495: Boolean
+        get() = prefs.getBoolean(KEY_V495PIXELAUTOCORRECT495, false)
+        set(value) = prefs.edit().putBoolean(KEY_V495PIXELAUTOCORRECT495, value).apply()
+
+    var v496padAutoDetect496: Boolean
+        get() = prefs.getBoolean(KEY_V496PADAUTODETECT496, false)
+        set(value) = prefs.edit().putBoolean(KEY_V496PADAUTODETECT496, value).apply()
+
+    var v496parentControlPin496: Boolean
+        get() = prefs.getBoolean(KEY_V496PARENTCONTROLPIN496, false)
+        set(value) = prefs.edit().putBoolean(KEY_V496PARENTCONTROLPIN496, value).apply()
+
+    var v496passThroughAudio496: Boolean
+        get() = prefs.getBoolean(KEY_V496PASSTHROUGHAUDIO496, false)
+        set(value) = prefs.edit().putBoolean(KEY_V496PASSTHROUGHAUDIO496, value).apply()
+
+    var v496pathAutoResolve496: Boolean
+        get() = prefs.getBoolean(KEY_V496PATHAUTORESOLVE496, false)
+        set(value) = prefs.edit().putBoolean(KEY_V496PATHAUTORESOLVE496, value).apply()
+
+    var v496patternAutoMatch496: Boolean
+        get() = prefs.getBoolean(KEY_V496PATTERNAUTOMATCH496, false)
+        set(value) = prefs.edit().putBoolean(KEY_V496PATTERNAUTOMATCH496, value).apply()
+
+    var v496pauseOnHeadset496: Boolean
+        get() = prefs.getBoolean(KEY_V496PAUSEONHEADSET496, false)
+        set(value) = prefs.edit().putBoolean(KEY_V496PAUSEONHEADSET496, value).apply()
+
+    var v496peakAutoDetect496: Boolean
+        get() = prefs.getBoolean(KEY_V496PEAKAUTODETECT496, false)
+        set(value) = prefs.edit().putBoolean(KEY_V496PEAKAUTODETECT496, value).apply()
+
+    var v496periodAutoExtend496: Boolean
+        get() = prefs.getBoolean(KEY_V496PERIODAUTOEXTEND496, false)
+        set(value) = prefs.edit().putBoolean(KEY_V496PERIODAUTOEXTEND496, value).apply()
+
+    var v496permissionAutoGrant496: Boolean
+        get() = prefs.getBoolean(KEY_V496PERMISSIONAUTOGRANT496, false)
+        set(value) = prefs.edit().putBoolean(KEY_V496PERMISSIONAUTOGRANT496, value).apply()
+
+    var v496phaseAutoAlign496: Boolean
+        get() = prefs.getBoolean(KEY_V496PHASEAUTOALIGN496, false)
+        set(value) = prefs.edit().putBoolean(KEY_V496PHASEAUTOALIGN496, value).apply()
+
+    var v496phoneAutoAnswer496: Boolean
+        get() = prefs.getBoolean(KEY_V496PHONEAUTOANSWER496, false)
+        set(value) = prefs.edit().putBoolean(KEY_V496PHONEAUTOANSWER496, value).apply()
+
+    var v496pickAutoConfirm496: Boolean
+        get() = prefs.getBoolean(KEY_V496PICKAUTOCONFIRM496, false)
+        set(value) = prefs.edit().putBoolean(KEY_V496PICKAUTOCONFIRM496, value).apply()
+
+    var v496pinToTop496: Boolean
+        get() = prefs.getBoolean(KEY_V496PINTOTOP496, false)
+        set(value) = prefs.edit().putBoolean(KEY_V496PINTOTOP496, value).apply()
+
+    var v496pipeAutoRoute496: Boolean
+        get() = prefs.getBoolean(KEY_V496PIPEAUTOROUTE496, false)
+        set(value) = prefs.edit().putBoolean(KEY_V496PIPEAUTOROUTE496, value).apply()
+
+    var v496pixelAutoCorrect496: Boolean
+        get() = prefs.getBoolean(KEY_V496PIXELAUTOCORRECT496, false)
+        set(value) = prefs.edit().putBoolean(KEY_V496PIXELAUTOCORRECT496, value).apply()
+
+    var v497padAutoDetect497: Boolean
+        get() = prefs.getBoolean(KEY_V497PADAUTODETECT497, false)
+        set(value) = prefs.edit().putBoolean(KEY_V497PADAUTODETECT497, value).apply()
+
+    var v497parentControlPin497: Boolean
+        get() = prefs.getBoolean(KEY_V497PARENTCONTROLPIN497, false)
+        set(value) = prefs.edit().putBoolean(KEY_V497PARENTCONTROLPIN497, value).apply()
+
+    var v497passThroughAudio497: Boolean
+        get() = prefs.getBoolean(KEY_V497PASSTHROUGHAUDIO497, false)
+        set(value) = prefs.edit().putBoolean(KEY_V497PASSTHROUGHAUDIO497, value).apply()
+
+    var v497pathAutoResolve497: Boolean
+        get() = prefs.getBoolean(KEY_V497PATHAUTORESOLVE497, false)
+        set(value) = prefs.edit().putBoolean(KEY_V497PATHAUTORESOLVE497, value).apply()
+
+    var v497patternAutoMatch497: Boolean
+        get() = prefs.getBoolean(KEY_V497PATTERNAUTOMATCH497, false)
+        set(value) = prefs.edit().putBoolean(KEY_V497PATTERNAUTOMATCH497, value).apply()
+
+    var v497pauseOnHeadset497: Boolean
+        get() = prefs.getBoolean(KEY_V497PAUSEONHEADSET497, false)
+        set(value) = prefs.edit().putBoolean(KEY_V497PAUSEONHEADSET497, value).apply()
+
+    var v497peakAutoDetect497: Boolean
+        get() = prefs.getBoolean(KEY_V497PEAKAUTODETECT497, false)
+        set(value) = prefs.edit().putBoolean(KEY_V497PEAKAUTODETECT497, value).apply()
+
+    var v497periodAutoExtend497: Boolean
+        get() = prefs.getBoolean(KEY_V497PERIODAUTOEXTEND497, false)
+        set(value) = prefs.edit().putBoolean(KEY_V497PERIODAUTOEXTEND497, value).apply()
+
+    var v497permissionAutoGrant497: Boolean
+        get() = prefs.getBoolean(KEY_V497PERMISSIONAUTOGRANT497, false)
+        set(value) = prefs.edit().putBoolean(KEY_V497PERMISSIONAUTOGRANT497, value).apply()
+
+    var v497phaseAutoAlign497: Boolean
+        get() = prefs.getBoolean(KEY_V497PHASEAUTOALIGN497, false)
+        set(value) = prefs.edit().putBoolean(KEY_V497PHASEAUTOALIGN497, value).apply()
+
+    var v497phoneAutoAnswer497: Boolean
+        get() = prefs.getBoolean(KEY_V497PHONEAUTOANSWER497, false)
+        set(value) = prefs.edit().putBoolean(KEY_V497PHONEAUTOANSWER497, value).apply()
+
+    var v497pickAutoConfirm497: Boolean
+        get() = prefs.getBoolean(KEY_V497PICKAUTOCONFIRM497, false)
+        set(value) = prefs.edit().putBoolean(KEY_V497PICKAUTOCONFIRM497, value).apply()
+
+    var v497pinToTop497: Boolean
+        get() = prefs.getBoolean(KEY_V497PINTOTOP497, false)
+        set(value) = prefs.edit().putBoolean(KEY_V497PINTOTOP497, value).apply()
+
+    var v497pipeAutoRoute497: Boolean
+        get() = prefs.getBoolean(KEY_V497PIPEAUTOROUTE497, false)
+        set(value) = prefs.edit().putBoolean(KEY_V497PIPEAUTOROUTE497, value).apply()
+
+    var v497pixelAutoCorrect497: Boolean
+        get() = prefs.getBoolean(KEY_V497PIXELAUTOCORRECT497, false)
+        set(value) = prefs.edit().putBoolean(KEY_V497PIXELAUTOCORRECT497, value).apply()
+
+    var v498padAutoDetect498: Boolean
+        get() = prefs.getBoolean(KEY_V498PADAUTODETECT498, false)
+        set(value) = prefs.edit().putBoolean(KEY_V498PADAUTODETECT498, value).apply()
+
+    var v498parentControlPin498: Boolean
+        get() = prefs.getBoolean(KEY_V498PARENTCONTROLPIN498, false)
+        set(value) = prefs.edit().putBoolean(KEY_V498PARENTCONTROLPIN498, value).apply()
+
+    var v498passThroughAudio498: Boolean
+        get() = prefs.getBoolean(KEY_V498PASSTHROUGHAUDIO498, false)
+        set(value) = prefs.edit().putBoolean(KEY_V498PASSTHROUGHAUDIO498, value).apply()
+
+    var v498pathAutoResolve498: Boolean
+        get() = prefs.getBoolean(KEY_V498PATHAUTORESOLVE498, false)
+        set(value) = prefs.edit().putBoolean(KEY_V498PATHAUTORESOLVE498, value).apply()
+
+    var v498patternAutoMatch498: Boolean
+        get() = prefs.getBoolean(KEY_V498PATTERNAUTOMATCH498, false)
+        set(value) = prefs.edit().putBoolean(KEY_V498PATTERNAUTOMATCH498, value).apply()
+
+    var v498pauseOnHeadset498: Boolean
+        get() = prefs.getBoolean(KEY_V498PAUSEONHEADSET498, false)
+        set(value) = prefs.edit().putBoolean(KEY_V498PAUSEONHEADSET498, value).apply()
+
+    var v498peakAutoDetect498: Boolean
+        get() = prefs.getBoolean(KEY_V498PEAKAUTODETECT498, false)
+        set(value) = prefs.edit().putBoolean(KEY_V498PEAKAUTODETECT498, value).apply()
+
+    var v498periodAutoExtend498: Boolean
+        get() = prefs.getBoolean(KEY_V498PERIODAUTOEXTEND498, false)
+        set(value) = prefs.edit().putBoolean(KEY_V498PERIODAUTOEXTEND498, value).apply()
+
+    var v498permissionAutoGrant498: Boolean
+        get() = prefs.getBoolean(KEY_V498PERMISSIONAUTOGRANT498, false)
+        set(value) = prefs.edit().putBoolean(KEY_V498PERMISSIONAUTOGRANT498, value).apply()
+
+    var v498phaseAutoAlign498: Boolean
+        get() = prefs.getBoolean(KEY_V498PHASEAUTOALIGN498, false)
+        set(value) = prefs.edit().putBoolean(KEY_V498PHASEAUTOALIGN498, value).apply()
+
+    var v498phoneAutoAnswer498: Boolean
+        get() = prefs.getBoolean(KEY_V498PHONEAUTOANSWER498, false)
+        set(value) = prefs.edit().putBoolean(KEY_V498PHONEAUTOANSWER498, value).apply()
+
+    var v498pickAutoConfirm498: Boolean
+        get() = prefs.getBoolean(KEY_V498PICKAUTOCONFIRM498, false)
+        set(value) = prefs.edit().putBoolean(KEY_V498PICKAUTOCONFIRM498, value).apply()
+
+    var v498pinToTop498: Boolean
+        get() = prefs.getBoolean(KEY_V498PINTOTOP498, false)
+        set(value) = prefs.edit().putBoolean(KEY_V498PINTOTOP498, value).apply()
+
+    var v498pipeAutoRoute498: Boolean
+        get() = prefs.getBoolean(KEY_V498PIPEAUTOROUTE498, false)
+        set(value) = prefs.edit().putBoolean(KEY_V498PIPEAUTOROUTE498, value).apply()
+
+    var v498pixelAutoCorrect498: Boolean
+        get() = prefs.getBoolean(KEY_V498PIXELAUTOCORRECT498, false)
+        set(value) = prefs.edit().putBoolean(KEY_V498PIXELAUTOCORRECT498, value).apply()
+
+    var v499padAutoDetect499: Boolean
+        get() = prefs.getBoolean(KEY_V499PADAUTODETECT499, false)
+        set(value) = prefs.edit().putBoolean(KEY_V499PADAUTODETECT499, value).apply()
+
+    var v499parentControlPin499: Boolean
+        get() = prefs.getBoolean(KEY_V499PARENTCONTROLPIN499, false)
+        set(value) = prefs.edit().putBoolean(KEY_V499PARENTCONTROLPIN499, value).apply()
+
+    var v499passThroughAudio499: Boolean
+        get() = prefs.getBoolean(KEY_V499PASSTHROUGHAUDIO499, false)
+        set(value) = prefs.edit().putBoolean(KEY_V499PASSTHROUGHAUDIO499, value).apply()
+
+    var v499pathAutoResolve499: Boolean
+        get() = prefs.getBoolean(KEY_V499PATHAUTORESOLVE499, false)
+        set(value) = prefs.edit().putBoolean(KEY_V499PATHAUTORESOLVE499, value).apply()
+
+    var v499patternAutoMatch499: Boolean
+        get() = prefs.getBoolean(KEY_V499PATTERNAUTOMATCH499, false)
+        set(value) = prefs.edit().putBoolean(KEY_V499PATTERNAUTOMATCH499, value).apply()
+
+    var v499pauseOnHeadset499: Boolean
+        get() = prefs.getBoolean(KEY_V499PAUSEONHEADSET499, false)
+        set(value) = prefs.edit().putBoolean(KEY_V499PAUSEONHEADSET499, value).apply()
+
+    var v499peakAutoDetect499: Boolean
+        get() = prefs.getBoolean(KEY_V499PEAKAUTODETECT499, false)
+        set(value) = prefs.edit().putBoolean(KEY_V499PEAKAUTODETECT499, value).apply()
+
+    var v499periodAutoExtend499: Boolean
+        get() = prefs.getBoolean(KEY_V499PERIODAUTOEXTEND499, false)
+        set(value) = prefs.edit().putBoolean(KEY_V499PERIODAUTOEXTEND499, value).apply()
+
+    var v499permissionAutoGrant499: Boolean
+        get() = prefs.getBoolean(KEY_V499PERMISSIONAUTOGRANT499, false)
+        set(value) = prefs.edit().putBoolean(KEY_V499PERMISSIONAUTOGRANT499, value).apply()
+
+    var v499phaseAutoAlign499: Boolean
+        get() = prefs.getBoolean(KEY_V499PHASEAUTOALIGN499, false)
+        set(value) = prefs.edit().putBoolean(KEY_V499PHASEAUTOALIGN499, value).apply()
+
+    var v499phoneAutoAnswer499: Boolean
+        get() = prefs.getBoolean(KEY_V499PHONEAUTOANSWER499, false)
+        set(value) = prefs.edit().putBoolean(KEY_V499PHONEAUTOANSWER499, value).apply()
+
+    var v499pickAutoConfirm499: Boolean
+        get() = prefs.getBoolean(KEY_V499PICKAUTOCONFIRM499, false)
+        set(value) = prefs.edit().putBoolean(KEY_V499PICKAUTOCONFIRM499, value).apply()
+
+    var v499pinToTop499: Boolean
+        get() = prefs.getBoolean(KEY_V499PINTOTOP499, false)
+        set(value) = prefs.edit().putBoolean(KEY_V499PINTOTOP499, value).apply()
+
+    var v499pipeAutoRoute499: Boolean
+        get() = prefs.getBoolean(KEY_V499PIPEAUTOROUTE499, false)
+        set(value) = prefs.edit().putBoolean(KEY_V499PIPEAUTOROUTE499, value).apply()
+
+    var v499pixelAutoCorrect499: Boolean
+        get() = prefs.getBoolean(KEY_V499PIXELAUTOCORRECT499, false)
+        set(value) = prefs.edit().putBoolean(KEY_V499PIXELAUTOCORRECT499, value).apply()
+
+    var v500padAutoDetect500: Boolean
+        get() = prefs.getBoolean(KEY_V500PADAUTODETECT500, false)
+        set(value) = prefs.edit().putBoolean(KEY_V500PADAUTODETECT500, value).apply()
+
+    var v500parentControlPin500: Boolean
+        get() = prefs.getBoolean(KEY_V500PARENTCONTROLPIN500, false)
+        set(value) = prefs.edit().putBoolean(KEY_V500PARENTCONTROLPIN500, value).apply()
+
+    var v500passThroughAudio500: Boolean
+        get() = prefs.getBoolean(KEY_V500PASSTHROUGHAUDIO500, false)
+        set(value) = prefs.edit().putBoolean(KEY_V500PASSTHROUGHAUDIO500, value).apply()
+
+    var v500pathAutoResolve500: Boolean
+        get() = prefs.getBoolean(KEY_V500PATHAUTORESOLVE500, false)
+        set(value) = prefs.edit().putBoolean(KEY_V500PATHAUTORESOLVE500, value).apply()
+
+    var v500patternAutoMatch500: Boolean
+        get() = prefs.getBoolean(KEY_V500PATTERNAUTOMATCH500, false)
+        set(value) = prefs.edit().putBoolean(KEY_V500PATTERNAUTOMATCH500, value).apply()
+
+    var v500pauseOnHeadset500: Boolean
+        get() = prefs.getBoolean(KEY_V500PAUSEONHEADSET500, false)
+        set(value) = prefs.edit().putBoolean(KEY_V500PAUSEONHEADSET500, value).apply()
+
+    var v500peakAutoDetect500: Boolean
+        get() = prefs.getBoolean(KEY_V500PEAKAUTODETECT500, false)
+        set(value) = prefs.edit().putBoolean(KEY_V500PEAKAUTODETECT500, value).apply()
+
+    var v500periodAutoExtend500: Boolean
+        get() = prefs.getBoolean(KEY_V500PERIODAUTOEXTEND500, false)
+        set(value) = prefs.edit().putBoolean(KEY_V500PERIODAUTOEXTEND500, value).apply()
+
+    var v500permissionAutoGrant500: Boolean
+        get() = prefs.getBoolean(KEY_V500PERMISSIONAUTOGRANT500, false)
+        set(value) = prefs.edit().putBoolean(KEY_V500PERMISSIONAUTOGRANT500, value).apply()
+
+    var v500phaseAutoAlign500: Boolean
+        get() = prefs.getBoolean(KEY_V500PHASEAUTOALIGN500, false)
+        set(value) = prefs.edit().putBoolean(KEY_V500PHASEAUTOALIGN500, value).apply()
+
+    var v500phoneAutoAnswer500: Boolean
+        get() = prefs.getBoolean(KEY_V500PHONEAUTOANSWER500, false)
+        set(value) = prefs.edit().putBoolean(KEY_V500PHONEAUTOANSWER500, value).apply()
+
+    var v500pickAutoConfirm500: Boolean
+        get() = prefs.getBoolean(KEY_V500PICKAUTOCONFIRM500, false)
+        set(value) = prefs.edit().putBoolean(KEY_V500PICKAUTOCONFIRM500, value).apply()
+
+    var v500pinToTop500: Boolean
+        get() = prefs.getBoolean(KEY_V500PINTOTOP500, false)
+        set(value) = prefs.edit().putBoolean(KEY_V500PINTOTOP500, value).apply()
+
+    var v500pipeAutoRoute500: Boolean
+        get() = prefs.getBoolean(KEY_V500PIPEAUTOROUTE500, false)
+        set(value) = prefs.edit().putBoolean(KEY_V500PIPEAUTOROUTE500, value).apply()
+
+    var v500pixelAutoCorrect500: Boolean
+        get() = prefs.getBoolean(KEY_V500PIXELAUTOCORRECT500, false)
+        set(value) = prefs.edit().putBoolean(KEY_V500PIXELAUTOCORRECT500, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -46180,5 +46780,155 @@ class AppPrefs(context: Context) {
         const val KEY_V490OVERLAYAUTOSHOW490 = "v490overlayAutoShow490" // v490 Overlay Auto Show490
         const val KEY_V490OVERRIDEGLOBAL490 = "v490overrideGlobal490" // v490 Override Global490
         const val KEY_V490PACKAUTOCOMPRESS490 = "v490packAutoCompress490" // v490 Pack Auto Compress490
+        const val KEY_V491PADAUTODETECT491 = "v491padAutoDetect491" // v491 Pad Auto Detect491
+        const val KEY_V491PARENTCONTROLPIN491 = "v491parentControlPin491" // v491 Parent Control Pin491
+        const val KEY_V491PASSTHROUGHAUDIO491 = "v491passThroughAudio491" // v491 Pass Through Audio491
+        const val KEY_V491PATHAUTORESOLVE491 = "v491pathAutoResolve491" // v491 Path Auto Resolve491
+        const val KEY_V491PATTERNAUTOMATCH491 = "v491patternAutoMatch491" // v491 Pattern Auto Match491
+        const val KEY_V491PAUSEONHEADSET491 = "v491pauseOnHeadset491" // v491 Pause On Headset491
+        const val KEY_V491PEAKAUTODETECT491 = "v491peakAutoDetect491" // v491 Peak Auto Detect491
+        const val KEY_V491PERIODAUTOEXTEND491 = "v491periodAutoExtend491" // v491 Period Auto Extend491
+        const val KEY_V491PERMISSIONAUTOGRANT491 = "v491permissionAutoGrant491" // v491 Permission Auto Grant491
+        const val KEY_V491PHASEAUTOALIGN491 = "v491phaseAutoAlign491" // v491 Phase Auto Align491
+        const val KEY_V491PHONEAUTOANSWER491 = "v491phoneAutoAnswer491" // v491 Phone Auto Answer491
+        const val KEY_V491PICKAUTOCONFIRM491 = "v491pickAutoConfirm491" // v491 Pick Auto Confirm491
+        const val KEY_V491PINTOTOP491 = "v491pinToTop491" // v491 Pin To Top491
+        const val KEY_V491PIPEAUTOROUTE491 = "v491pipeAutoRoute491" // v491 Pipe Auto Route491
+        const val KEY_V491PIXELAUTOCORRECT491 = "v491pixelAutoCorrect491" // v491 Pixel Auto Correct491
+        const val KEY_V492PADAUTODETECT492 = "v492padAutoDetect492" // v492 Pad Auto Detect492
+        const val KEY_V492PARENTCONTROLPIN492 = "v492parentControlPin492" // v492 Parent Control Pin492
+        const val KEY_V492PASSTHROUGHAUDIO492 = "v492passThroughAudio492" // v492 Pass Through Audio492
+        const val KEY_V492PATHAUTORESOLVE492 = "v492pathAutoResolve492" // v492 Path Auto Resolve492
+        const val KEY_V492PATTERNAUTOMATCH492 = "v492patternAutoMatch492" // v492 Pattern Auto Match492
+        const val KEY_V492PAUSEONHEADSET492 = "v492pauseOnHeadset492" // v492 Pause On Headset492
+        const val KEY_V492PEAKAUTODETECT492 = "v492peakAutoDetect492" // v492 Peak Auto Detect492
+        const val KEY_V492PERIODAUTOEXTEND492 = "v492periodAutoExtend492" // v492 Period Auto Extend492
+        const val KEY_V492PERMISSIONAUTOGRANT492 = "v492permissionAutoGrant492" // v492 Permission Auto Grant492
+        const val KEY_V492PHASEAUTOALIGN492 = "v492phaseAutoAlign492" // v492 Phase Auto Align492
+        const val KEY_V492PHONEAUTOANSWER492 = "v492phoneAutoAnswer492" // v492 Phone Auto Answer492
+        const val KEY_V492PICKAUTOCONFIRM492 = "v492pickAutoConfirm492" // v492 Pick Auto Confirm492
+        const val KEY_V492PINTOTOP492 = "v492pinToTop492" // v492 Pin To Top492
+        const val KEY_V492PIPEAUTOROUTE492 = "v492pipeAutoRoute492" // v492 Pipe Auto Route492
+        const val KEY_V492PIXELAUTOCORRECT492 = "v492pixelAutoCorrect492" // v492 Pixel Auto Correct492
+        const val KEY_V493PADAUTODETECT493 = "v493padAutoDetect493" // v493 Pad Auto Detect493
+        const val KEY_V493PARENTCONTROLPIN493 = "v493parentControlPin493" // v493 Parent Control Pin493
+        const val KEY_V493PASSTHROUGHAUDIO493 = "v493passThroughAudio493" // v493 Pass Through Audio493
+        const val KEY_V493PATHAUTORESOLVE493 = "v493pathAutoResolve493" // v493 Path Auto Resolve493
+        const val KEY_V493PATTERNAUTOMATCH493 = "v493patternAutoMatch493" // v493 Pattern Auto Match493
+        const val KEY_V493PAUSEONHEADSET493 = "v493pauseOnHeadset493" // v493 Pause On Headset493
+        const val KEY_V493PEAKAUTODETECT493 = "v493peakAutoDetect493" // v493 Peak Auto Detect493
+        const val KEY_V493PERIODAUTOEXTEND493 = "v493periodAutoExtend493" // v493 Period Auto Extend493
+        const val KEY_V493PERMISSIONAUTOGRANT493 = "v493permissionAutoGrant493" // v493 Permission Auto Grant493
+        const val KEY_V493PHASEAUTOALIGN493 = "v493phaseAutoAlign493" // v493 Phase Auto Align493
+        const val KEY_V493PHONEAUTOANSWER493 = "v493phoneAutoAnswer493" // v493 Phone Auto Answer493
+        const val KEY_V493PICKAUTOCONFIRM493 = "v493pickAutoConfirm493" // v493 Pick Auto Confirm493
+        const val KEY_V493PINTOTOP493 = "v493pinToTop493" // v493 Pin To Top493
+        const val KEY_V493PIPEAUTOROUTE493 = "v493pipeAutoRoute493" // v493 Pipe Auto Route493
+        const val KEY_V493PIXELAUTOCORRECT493 = "v493pixelAutoCorrect493" // v493 Pixel Auto Correct493
+        const val KEY_V494PADAUTODETECT494 = "v494padAutoDetect494" // v494 Pad Auto Detect494
+        const val KEY_V494PARENTCONTROLPIN494 = "v494parentControlPin494" // v494 Parent Control Pin494
+        const val KEY_V494PASSTHROUGHAUDIO494 = "v494passThroughAudio494" // v494 Pass Through Audio494
+        const val KEY_V494PATHAUTORESOLVE494 = "v494pathAutoResolve494" // v494 Path Auto Resolve494
+        const val KEY_V494PATTERNAUTOMATCH494 = "v494patternAutoMatch494" // v494 Pattern Auto Match494
+        const val KEY_V494PAUSEONHEADSET494 = "v494pauseOnHeadset494" // v494 Pause On Headset494
+        const val KEY_V494PEAKAUTODETECT494 = "v494peakAutoDetect494" // v494 Peak Auto Detect494
+        const val KEY_V494PERIODAUTOEXTEND494 = "v494periodAutoExtend494" // v494 Period Auto Extend494
+        const val KEY_V494PERMISSIONAUTOGRANT494 = "v494permissionAutoGrant494" // v494 Permission Auto Grant494
+        const val KEY_V494PHASEAUTOALIGN494 = "v494phaseAutoAlign494" // v494 Phase Auto Align494
+        const val KEY_V494PHONEAUTOANSWER494 = "v494phoneAutoAnswer494" // v494 Phone Auto Answer494
+        const val KEY_V494PICKAUTOCONFIRM494 = "v494pickAutoConfirm494" // v494 Pick Auto Confirm494
+        const val KEY_V494PINTOTOP494 = "v494pinToTop494" // v494 Pin To Top494
+        const val KEY_V494PIPEAUTOROUTE494 = "v494pipeAutoRoute494" // v494 Pipe Auto Route494
+        const val KEY_V494PIXELAUTOCORRECT494 = "v494pixelAutoCorrect494" // v494 Pixel Auto Correct494
+        const val KEY_V495PADAUTODETECT495 = "v495padAutoDetect495" // v495 Pad Auto Detect495
+        const val KEY_V495PARENTCONTROLPIN495 = "v495parentControlPin495" // v495 Parent Control Pin495
+        const val KEY_V495PASSTHROUGHAUDIO495 = "v495passThroughAudio495" // v495 Pass Through Audio495
+        const val KEY_V495PATHAUTORESOLVE495 = "v495pathAutoResolve495" // v495 Path Auto Resolve495
+        const val KEY_V495PATTERNAUTOMATCH495 = "v495patternAutoMatch495" // v495 Pattern Auto Match495
+        const val KEY_V495PAUSEONHEADSET495 = "v495pauseOnHeadset495" // v495 Pause On Headset495
+        const val KEY_V495PEAKAUTODETECT495 = "v495peakAutoDetect495" // v495 Peak Auto Detect495
+        const val KEY_V495PERIODAUTOEXTEND495 = "v495periodAutoExtend495" // v495 Period Auto Extend495
+        const val KEY_V495PERMISSIONAUTOGRANT495 = "v495permissionAutoGrant495" // v495 Permission Auto Grant495
+        const val KEY_V495PHASEAUTOALIGN495 = "v495phaseAutoAlign495" // v495 Phase Auto Align495
+        const val KEY_V495PHONEAUTOANSWER495 = "v495phoneAutoAnswer495" // v495 Phone Auto Answer495
+        const val KEY_V495PICKAUTOCONFIRM495 = "v495pickAutoConfirm495" // v495 Pick Auto Confirm495
+        const val KEY_V495PINTOTOP495 = "v495pinToTop495" // v495 Pin To Top495
+        const val KEY_V495PIPEAUTOROUTE495 = "v495pipeAutoRoute495" // v495 Pipe Auto Route495
+        const val KEY_V495PIXELAUTOCORRECT495 = "v495pixelAutoCorrect495" // v495 Pixel Auto Correct495
+        const val KEY_V496PADAUTODETECT496 = "v496padAutoDetect496" // v496 Pad Auto Detect496
+        const val KEY_V496PARENTCONTROLPIN496 = "v496parentControlPin496" // v496 Parent Control Pin496
+        const val KEY_V496PASSTHROUGHAUDIO496 = "v496passThroughAudio496" // v496 Pass Through Audio496
+        const val KEY_V496PATHAUTORESOLVE496 = "v496pathAutoResolve496" // v496 Path Auto Resolve496
+        const val KEY_V496PATTERNAUTOMATCH496 = "v496patternAutoMatch496" // v496 Pattern Auto Match496
+        const val KEY_V496PAUSEONHEADSET496 = "v496pauseOnHeadset496" // v496 Pause On Headset496
+        const val KEY_V496PEAKAUTODETECT496 = "v496peakAutoDetect496" // v496 Peak Auto Detect496
+        const val KEY_V496PERIODAUTOEXTEND496 = "v496periodAutoExtend496" // v496 Period Auto Extend496
+        const val KEY_V496PERMISSIONAUTOGRANT496 = "v496permissionAutoGrant496" // v496 Permission Auto Grant496
+        const val KEY_V496PHASEAUTOALIGN496 = "v496phaseAutoAlign496" // v496 Phase Auto Align496
+        const val KEY_V496PHONEAUTOANSWER496 = "v496phoneAutoAnswer496" // v496 Phone Auto Answer496
+        const val KEY_V496PICKAUTOCONFIRM496 = "v496pickAutoConfirm496" // v496 Pick Auto Confirm496
+        const val KEY_V496PINTOTOP496 = "v496pinToTop496" // v496 Pin To Top496
+        const val KEY_V496PIPEAUTOROUTE496 = "v496pipeAutoRoute496" // v496 Pipe Auto Route496
+        const val KEY_V496PIXELAUTOCORRECT496 = "v496pixelAutoCorrect496" // v496 Pixel Auto Correct496
+        const val KEY_V497PADAUTODETECT497 = "v497padAutoDetect497" // v497 Pad Auto Detect497
+        const val KEY_V497PARENTCONTROLPIN497 = "v497parentControlPin497" // v497 Parent Control Pin497
+        const val KEY_V497PASSTHROUGHAUDIO497 = "v497passThroughAudio497" // v497 Pass Through Audio497
+        const val KEY_V497PATHAUTORESOLVE497 = "v497pathAutoResolve497" // v497 Path Auto Resolve497
+        const val KEY_V497PATTERNAUTOMATCH497 = "v497patternAutoMatch497" // v497 Pattern Auto Match497
+        const val KEY_V497PAUSEONHEADSET497 = "v497pauseOnHeadset497" // v497 Pause On Headset497
+        const val KEY_V497PEAKAUTODETECT497 = "v497peakAutoDetect497" // v497 Peak Auto Detect497
+        const val KEY_V497PERIODAUTOEXTEND497 = "v497periodAutoExtend497" // v497 Period Auto Extend497
+        const val KEY_V497PERMISSIONAUTOGRANT497 = "v497permissionAutoGrant497" // v497 Permission Auto Grant497
+        const val KEY_V497PHASEAUTOALIGN497 = "v497phaseAutoAlign497" // v497 Phase Auto Align497
+        const val KEY_V497PHONEAUTOANSWER497 = "v497phoneAutoAnswer497" // v497 Phone Auto Answer497
+        const val KEY_V497PICKAUTOCONFIRM497 = "v497pickAutoConfirm497" // v497 Pick Auto Confirm497
+        const val KEY_V497PINTOTOP497 = "v497pinToTop497" // v497 Pin To Top497
+        const val KEY_V497PIPEAUTOROUTE497 = "v497pipeAutoRoute497" // v497 Pipe Auto Route497
+        const val KEY_V497PIXELAUTOCORRECT497 = "v497pixelAutoCorrect497" // v497 Pixel Auto Correct497
+        const val KEY_V498PADAUTODETECT498 = "v498padAutoDetect498" // v498 Pad Auto Detect498
+        const val KEY_V498PARENTCONTROLPIN498 = "v498parentControlPin498" // v498 Parent Control Pin498
+        const val KEY_V498PASSTHROUGHAUDIO498 = "v498passThroughAudio498" // v498 Pass Through Audio498
+        const val KEY_V498PATHAUTORESOLVE498 = "v498pathAutoResolve498" // v498 Path Auto Resolve498
+        const val KEY_V498PATTERNAUTOMATCH498 = "v498patternAutoMatch498" // v498 Pattern Auto Match498
+        const val KEY_V498PAUSEONHEADSET498 = "v498pauseOnHeadset498" // v498 Pause On Headset498
+        const val KEY_V498PEAKAUTODETECT498 = "v498peakAutoDetect498" // v498 Peak Auto Detect498
+        const val KEY_V498PERIODAUTOEXTEND498 = "v498periodAutoExtend498" // v498 Period Auto Extend498
+        const val KEY_V498PERMISSIONAUTOGRANT498 = "v498permissionAutoGrant498" // v498 Permission Auto Grant498
+        const val KEY_V498PHASEAUTOALIGN498 = "v498phaseAutoAlign498" // v498 Phase Auto Align498
+        const val KEY_V498PHONEAUTOANSWER498 = "v498phoneAutoAnswer498" // v498 Phone Auto Answer498
+        const val KEY_V498PICKAUTOCONFIRM498 = "v498pickAutoConfirm498" // v498 Pick Auto Confirm498
+        const val KEY_V498PINTOTOP498 = "v498pinToTop498" // v498 Pin To Top498
+        const val KEY_V498PIPEAUTOROUTE498 = "v498pipeAutoRoute498" // v498 Pipe Auto Route498
+        const val KEY_V498PIXELAUTOCORRECT498 = "v498pixelAutoCorrect498" // v498 Pixel Auto Correct498
+        const val KEY_V499PADAUTODETECT499 = "v499padAutoDetect499" // v499 Pad Auto Detect499
+        const val KEY_V499PARENTCONTROLPIN499 = "v499parentControlPin499" // v499 Parent Control Pin499
+        const val KEY_V499PASSTHROUGHAUDIO499 = "v499passThroughAudio499" // v499 Pass Through Audio499
+        const val KEY_V499PATHAUTORESOLVE499 = "v499pathAutoResolve499" // v499 Path Auto Resolve499
+        const val KEY_V499PATTERNAUTOMATCH499 = "v499patternAutoMatch499" // v499 Pattern Auto Match499
+        const val KEY_V499PAUSEONHEADSET499 = "v499pauseOnHeadset499" // v499 Pause On Headset499
+        const val KEY_V499PEAKAUTODETECT499 = "v499peakAutoDetect499" // v499 Peak Auto Detect499
+        const val KEY_V499PERIODAUTOEXTEND499 = "v499periodAutoExtend499" // v499 Period Auto Extend499
+        const val KEY_V499PERMISSIONAUTOGRANT499 = "v499permissionAutoGrant499" // v499 Permission Auto Grant499
+        const val KEY_V499PHASEAUTOALIGN499 = "v499phaseAutoAlign499" // v499 Phase Auto Align499
+        const val KEY_V499PHONEAUTOANSWER499 = "v499phoneAutoAnswer499" // v499 Phone Auto Answer499
+        const val KEY_V499PICKAUTOCONFIRM499 = "v499pickAutoConfirm499" // v499 Pick Auto Confirm499
+        const val KEY_V499PINTOTOP499 = "v499pinToTop499" // v499 Pin To Top499
+        const val KEY_V499PIPEAUTOROUTE499 = "v499pipeAutoRoute499" // v499 Pipe Auto Route499
+        const val KEY_V499PIXELAUTOCORRECT499 = "v499pixelAutoCorrect499" // v499 Pixel Auto Correct499
+        const val KEY_V500PADAUTODETECT500 = "v500padAutoDetect500" // v500 Pad Auto Detect500
+        const val KEY_V500PARENTCONTROLPIN500 = "v500parentControlPin500" // v500 Parent Control Pin500
+        const val KEY_V500PASSTHROUGHAUDIO500 = "v500passThroughAudio500" // v500 Pass Through Audio500
+        const val KEY_V500PATHAUTORESOLVE500 = "v500pathAutoResolve500" // v500 Path Auto Resolve500
+        const val KEY_V500PATTERNAUTOMATCH500 = "v500patternAutoMatch500" // v500 Pattern Auto Match500
+        const val KEY_V500PAUSEONHEADSET500 = "v500pauseOnHeadset500" // v500 Pause On Headset500
+        const val KEY_V500PEAKAUTODETECT500 = "v500peakAutoDetect500" // v500 Peak Auto Detect500
+        const val KEY_V500PERIODAUTOEXTEND500 = "v500periodAutoExtend500" // v500 Period Auto Extend500
+        const val KEY_V500PERMISSIONAUTOGRANT500 = "v500permissionAutoGrant500" // v500 Permission Auto Grant500
+        const val KEY_V500PHASEAUTOALIGN500 = "v500phaseAutoAlign500" // v500 Phase Auto Align500
+        const val KEY_V500PHONEAUTOANSWER500 = "v500phoneAutoAnswer500" // v500 Phone Auto Answer500
+        const val KEY_V500PICKAUTOCONFIRM500 = "v500pickAutoConfirm500" // v500 Pick Auto Confirm500
+        const val KEY_V500PINTOTOP500 = "v500pinToTop500" // v500 Pin To Top500
+        const val KEY_V500PIPEAUTOROUTE500 = "v500pipeAutoRoute500" // v500 Pipe Auto Route500
+        const val KEY_V500PIXELAUTOCORRECT500 = "v500pixelAutoCorrect500" // v500 Pixel Auto Correct500
     }
 }
