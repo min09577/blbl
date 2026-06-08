@@ -31,10 +31,10 @@
 4. Properties must be between class body and `companion object`
 
 ## Current Status (2026-06-08 21:00)
-- **Latest Release**: v210.15.0 (CI build succeeded)
-- **Total Features**: 2700+ (v31-v210, 180 versions × 15 features)
-- **README**: Updated to v201-v210 (4 languages)
-- **Next**: Continue with v211-v220 and beyond
+- **Latest Release**: v220.15.0 (CI build succeeded)
+- **Total Features**: 2850+ (v31-v220, 190 versions × 15 features)
+- **README**: Updated to v211-v220 (4 languages)
+- **Next**: Continue with v221-v230 and beyond
 - **Mode**: Loop development (user requested continuous feature batches)
 
 ## Session Log (2026-06-08 Evening)
