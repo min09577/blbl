@@ -27248,6 +27248,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V340SUBTITLEDELAYSYNC332, false)
         set(value) = prefs.edit().putBoolean(KEY_V340SUBTITLEDELAYSYNC332, value).apply()
 
+    var v341audioBassExtract323: Boolean
+        get() = prefs.getBoolean(KEY_V341AUDIOBASSEXTRACT323, false)
+        set(value) = prefs.edit().putBoolean(KEY_V341AUDIOBASSEXTRACT323, value).apply()
+
+    var v341danmakuMergeThreshold333: Int
+        get() = prefs.getInt(KEY_V341DANMAKUMERGETHRESHOLD333, 0)
+        set(value) = prefs.edit().putInt(KEY_V341DANMAKUMERGETHRESHOLD333, value).apply()
+
+    var v341subtitleFontSize333: Int
+        get() = prefs.getInt(KEY_V341SUBTITLEFONTSIZE333, 0)
+        set(value) = prefs.edit().putInt(KEY_V341SUBTITLEFONTSIZE333, value).apply()
+
+    var v341gestureDoubleTapRewind333: Boolean
+        get() = prefs.getBoolean(KEY_V341GESTUREDOUBLETAPREWIND333, false)
+        set(value) = prefs.edit().putBoolean(KEY_V341GESTUREDOUBLETAPREWIND333, value).apply()
+
+    var v341castAudioDelay333: Int
+        get() = prefs.getInt(KEY_V341CASTAUDIODELAY333, 0)
+        set(value) = prefs.edit().putInt(KEY_V341CASTAUDIODELAY333, value).apply()
+
+    var v341playlistAutoMarkWatched333: Boolean
+        get() = prefs.getBoolean(KEY_V341PLAYLISTAUTOMARKWATCHED333, false)
+        set(value) = prefs.edit().putBoolean(KEY_V341PLAYLISTAUTOMARKWATCHED333, value).apply()
+
+    var v341cachePreloadOnWifi333: Boolean
+        get() = prefs.getBoolean(KEY_V341CACHEPRELOADONWIFI333, false)
+        set(value) = prefs.edit().putBoolean(KEY_V341CACHEPRELOADONWIFI333, value).apply()
+
+    var v341progressBarShowChapter333: Boolean
+        get() = prefs.getBoolean(KEY_V341PROGRESSBARSHOWCHAPTER333, false)
+        set(value) = prefs.edit().putBoolean(KEY_V341PROGRESSBARSHOWCHAPTER333, value).apply()
+
+    var v341volumeBalanceLR333: Boolean
+        get() = prefs.getBoolean(KEY_V341VOLUMEBALANCELR333, false)
+        set(value) = prefs.edit().putBoolean(KEY_V341VOLUMEBALANCELR333, value).apply()
+
+    var v341historyMaxItems333: Int
+        get() = prefs.getInt(KEY_V341HISTORYMAXITEMS333, 0)
+        set(value) = prefs.edit().putInt(KEY_V341HISTORYMAXITEMS333, value).apply()
+
+    var v341playbackABRepeat333: Boolean
+        get() = prefs.getBoolean(KEY_V341PLAYBACKABREPEAT333, false)
+        set(value) = prefs.edit().putBoolean(KEY_V341PLAYBACKABREPEAT333, value).apply()
+
+    var v341screenshotShareTarget333: Int
+        get() = prefs.getInt(KEY_V341SCREENSHOTSHARETARGET333, 0)
+        set(value) = prefs.edit().putInt(KEY_V341SCREENSHOTSHARETARGET333, value).apply()
+
+    var v341videoRotateAngle333: Int
+        get() = prefs.getInt(KEY_V341VIDEOROTATEANGLE333, 0)
+        set(value) = prefs.edit().putInt(KEY_V341VIDEOROTATEANGLE333, value).apply()
+
+    var v341danmakuMergeThreshold334: Int
+        get() = prefs.getInt(KEY_V341DANMAKUMERGETHRESHOLD334, 0)
+        set(value) = prefs.edit().putInt(KEY_V341DANMAKUMERGETHRESHOLD334, value).apply()
+
+    var v341subtitleFontSize334: Int
+        get() = prefs.getInt(KEY_V341SUBTITLEFONTSIZE334, 0)
+        set(value) = prefs.edit().putInt(KEY_V341SUBTITLEFONTSIZE334, value).apply()
+
+    var v342audioBassExtract324: Boolean
+        get() = prefs.getBoolean(KEY_V342AUDIOBASSEXTRACT324, false)
+        set(value) = prefs.edit().putBoolean(KEY_V342AUDIOBASSEXTRACT324, value).apply()
+
+    var v342danmakuMergeThreshold335: Int
+        get() = prefs.getInt(KEY_V342DANMAKUMERGETHRESHOLD335, 0)
+        set(value) = prefs.edit().putInt(KEY_V342DANMAKUMERGETHRESHOLD335, value).apply()
+
+    var v342subtitleFontSize335: Int
+        get() = prefs.getInt(KEY_V342SUBTITLEFONTSIZE335, 0)
+        set(value) = prefs.edit().putInt(KEY_V342SUBTITLEFONTSIZE335, value).apply()
+
+    var v342gestureDoubleTapRewind334: Boolean
+        get() = prefs.getBoolean(KEY_V342GESTUREDOUBLETAPREWIND334, false)
+        set(value) = prefs.edit().putBoolean(KEY_V342GESTUREDOUBLETAPREWIND334, value).apply()
+
+    var v342castAudioDelay334: Int
+        get() = prefs.getInt(KEY_V342CASTAUDIODELAY334, 0)
+        set(value) = prefs.edit().putInt(KEY_V342CASTAUDIODELAY334, value).apply()
+
+    var v342playlistAutoMarkWatched334: Boolean
+        get() = prefs.getBoolean(KEY_V342PLAYLISTAUTOMARKWATCHED334, false)
+        set(value) = prefs.edit().putBoolean(KEY_V342PLAYLISTAUTOMARKWATCHED334, value).apply()
+
+    var v342cachePreloadOnWifi334: Boolean
+        get() = prefs.getBoolean(KEY_V342CACHEPRELOADONWIFI334, false)
+        set(value) = prefs.edit().putBoolean(KEY_V342CACHEPRELOADONWIFI334, value).apply()
+
+    var v342progressBarShowChapter334: Boolean
+        get() = prefs.getBoolean(KEY_V342PROGRESSBARSHOWCHAPTER334, false)
+        set(value) = prefs.edit().putBoolean(KEY_V342PROGRESSBARSHOWCHAPTER334, value).apply()
+
+    var v342volumeBalanceLR334: Boolean
+        get() = prefs.getBoolean(KEY_V342VOLUMEBALANCELR334, false)
+        set(value) = prefs.edit().putBoolean(KEY_V342VOLUMEBALANCELR334, value).apply()
+
+    var v342historyMaxItems334: Int
+        get() = prefs.getInt(KEY_V342HISTORYMAXITEMS334, 0)
+        set(value) = prefs.edit().putInt(KEY_V342HISTORYMAXITEMS334, value).apply()
+
+    var v342playbackABRepeat334: Boolean
+        get() = prefs.getBoolean(KEY_V342PLAYBACKABREPEAT334, false)
+        set(value) = prefs.edit().putBoolean(KEY_V342PLAYBACKABREPEAT334, value).apply()
+
+    var v342screenshotShareTarget334: Int
+        get() = prefs.getInt(KEY_V342SCREENSHOTSHARETARGET334, 0)
+        set(value) = prefs.edit().putInt(KEY_V342SCREENSHOTSHARETARGET334, value).apply()
+
+    var v342videoRotateAngle334: Int
+        get() = prefs.getInt(KEY_V342VIDEOROTATEANGLE334, 0)
+        set(value) = prefs.edit().putInt(KEY_V342VIDEOROTATEANGLE334, value).apply()
+
+    var v342danmakuMergeThreshold336: Int
+        get() = prefs.getInt(KEY_V342DANMAKUMERGETHRESHOLD336, 0)
+        set(value) = prefs.edit().putInt(KEY_V342DANMAKUMERGETHRESHOLD336, value).apply()
+
+    var v342subtitleFontSize336: Int
+        get() = prefs.getInt(KEY_V342SUBTITLEFONTSIZE336, 0)
+        set(value) = prefs.edit().putInt(KEY_V342SUBTITLEFONTSIZE336, value).apply()
+
+    var v343audioBassExtract325: Boolean
+        get() = prefs.getBoolean(KEY_V343AUDIOBASSEXTRACT325, false)
+        set(value) = prefs.edit().putBoolean(KEY_V343AUDIOBASSEXTRACT325, value).apply()
+
+    var v343danmakuMergeThreshold337: Int
+        get() = prefs.getInt(KEY_V343DANMAKUMERGETHRESHOLD337, 0)
+        set(value) = prefs.edit().putInt(KEY_V343DANMAKUMERGETHRESHOLD337, value).apply()
+
+    var v343subtitleFontSize337: Int
+        get() = prefs.getInt(KEY_V343SUBTITLEFONTSIZE337, 0)
+        set(value) = prefs.edit().putInt(KEY_V343SUBTITLEFONTSIZE337, value).apply()
+
+    var v343gestureDoubleTapRewind335: Boolean
+        get() = prefs.getBoolean(KEY_V343GESTUREDOUBLETAPREWIND335, false)
+        set(value) = prefs.edit().putBoolean(KEY_V343GESTUREDOUBLETAPREWIND335, value).apply()
+
+    var v343castAudioDelay335: Int
+        get() = prefs.getInt(KEY_V343CASTAUDIODELAY335, 0)
+        set(value) = prefs.edit().putInt(KEY_V343CASTAUDIODELAY335, value).apply()
+
+    var v343playlistAutoMarkWatched335: Boolean
+        get() = prefs.getBoolean(KEY_V343PLAYLISTAUTOMARKWATCHED335, false)
+        set(value) = prefs.edit().putBoolean(KEY_V343PLAYLISTAUTOMARKWATCHED335, value).apply()
+
+    var v343cachePreloadOnWifi335: Boolean
+        get() = prefs.getBoolean(KEY_V343CACHEPRELOADONWIFI335, false)
+        set(value) = prefs.edit().putBoolean(KEY_V343CACHEPRELOADONWIFI335, value).apply()
+
+    var v343progressBarShowChapter335: Boolean
+        get() = prefs.getBoolean(KEY_V343PROGRESSBARSHOWCHAPTER335, false)
+        set(value) = prefs.edit().putBoolean(KEY_V343PROGRESSBARSHOWCHAPTER335, value).apply()
+
+    var v343volumeBalanceLR335: Boolean
+        get() = prefs.getBoolean(KEY_V343VOLUMEBALANCELR335, false)
+        set(value) = prefs.edit().putBoolean(KEY_V343VOLUMEBALANCELR335, value).apply()
+
+    var v343historyMaxItems335: Int
+        get() = prefs.getInt(KEY_V343HISTORYMAXITEMS335, 0)
+        set(value) = prefs.edit().putInt(KEY_V343HISTORYMAXITEMS335, value).apply()
+
+    var v343playbackABRepeat335: Boolean
+        get() = prefs.getBoolean(KEY_V343PLAYBACKABREPEAT335, false)
+        set(value) = prefs.edit().putBoolean(KEY_V343PLAYBACKABREPEAT335, value).apply()
+
+    var v343screenshotShareTarget335: Int
+        get() = prefs.getInt(KEY_V343SCREENSHOTSHARETARGET335, 0)
+        set(value) = prefs.edit().putInt(KEY_V343SCREENSHOTSHARETARGET335, value).apply()
+
+    var v343videoRotateAngle335: Int
+        get() = prefs.getInt(KEY_V343VIDEOROTATEANGLE335, 0)
+        set(value) = prefs.edit().putInt(KEY_V343VIDEOROTATEANGLE335, value).apply()
+
+    var v343danmakuMergeThreshold338: Int
+        get() = prefs.getInt(KEY_V343DANMAKUMERGETHRESHOLD338, 0)
+        set(value) = prefs.edit().putInt(KEY_V343DANMAKUMERGETHRESHOLD338, value).apply()
+
+    var v343subtitleFontSize338: Int
+        get() = prefs.getInt(KEY_V343SUBTITLEFONTSIZE338, 0)
+        set(value) = prefs.edit().putInt(KEY_V343SUBTITLEFONTSIZE338, value).apply()
+
+    var v344audioBassExtract326: Boolean
+        get() = prefs.getBoolean(KEY_V344AUDIOBASSEXTRACT326, false)
+        set(value) = prefs.edit().putBoolean(KEY_V344AUDIOBASSEXTRACT326, value).apply()
+
+    var v344danmakuMergeThreshold339: Int
+        get() = prefs.getInt(KEY_V344DANMAKUMERGETHRESHOLD339, 0)
+        set(value) = prefs.edit().putInt(KEY_V344DANMAKUMERGETHRESHOLD339, value).apply()
+
+    var v344subtitleFontSize339: Int
+        get() = prefs.getInt(KEY_V344SUBTITLEFONTSIZE339, 0)
+        set(value) = prefs.edit().putInt(KEY_V344SUBTITLEFONTSIZE339, value).apply()
+
+    var v344gestureDoubleTapRewind336: Boolean
+        get() = prefs.getBoolean(KEY_V344GESTUREDOUBLETAPREWIND336, false)
+        set(value) = prefs.edit().putBoolean(KEY_V344GESTUREDOUBLETAPREWIND336, value).apply()
+
+    var v344castAudioDelay336: Int
+        get() = prefs.getInt(KEY_V344CASTAUDIODELAY336, 0)
+        set(value) = prefs.edit().putInt(KEY_V344CASTAUDIODELAY336, value).apply()
+
+    var v344playlistAutoMarkWatched336: Boolean
+        get() = prefs.getBoolean(KEY_V344PLAYLISTAUTOMARKWATCHED336, false)
+        set(value) = prefs.edit().putBoolean(KEY_V344PLAYLISTAUTOMARKWATCHED336, value).apply()
+
+    var v344cachePreloadOnWifi336: Boolean
+        get() = prefs.getBoolean(KEY_V344CACHEPRELOADONWIFI336, false)
+        set(value) = prefs.edit().putBoolean(KEY_V344CACHEPRELOADONWIFI336, value).apply()
+
+    var v344progressBarShowChapter336: Boolean
+        get() = prefs.getBoolean(KEY_V344PROGRESSBARSHOWCHAPTER336, false)
+        set(value) = prefs.edit().putBoolean(KEY_V344PROGRESSBARSHOWCHAPTER336, value).apply()
+
+    var v344volumeBalanceLR336: Boolean
+        get() = prefs.getBoolean(KEY_V344VOLUMEBALANCELR336, false)
+        set(value) = prefs.edit().putBoolean(KEY_V344VOLUMEBALANCELR336, value).apply()
+
+    var v344historyMaxItems336: Int
+        get() = prefs.getInt(KEY_V344HISTORYMAXITEMS336, 0)
+        set(value) = prefs.edit().putInt(KEY_V344HISTORYMAXITEMS336, value).apply()
+
+    var v344playbackABRepeat336: Boolean
+        get() = prefs.getBoolean(KEY_V344PLAYBACKABREPEAT336, false)
+        set(value) = prefs.edit().putBoolean(KEY_V344PLAYBACKABREPEAT336, value).apply()
+
+    var v344screenshotShareTarget336: Int
+        get() = prefs.getInt(KEY_V344SCREENSHOTSHARETARGET336, 0)
+        set(value) = prefs.edit().putInt(KEY_V344SCREENSHOTSHARETARGET336, value).apply()
+
+    var v344videoRotateAngle336: Int
+        get() = prefs.getInt(KEY_V344VIDEOROTATEANGLE336, 0)
+        set(value) = prefs.edit().putInt(KEY_V344VIDEOROTATEANGLE336, value).apply()
+
+    var v344danmakuMergeThreshold340: Int
+        get() = prefs.getInt(KEY_V344DANMAKUMERGETHRESHOLD340, 0)
+        set(value) = prefs.edit().putInt(KEY_V344DANMAKUMERGETHRESHOLD340, value).apply()
+
+    var v344subtitleFontSize340: Int
+        get() = prefs.getInt(KEY_V344SUBTITLEFONTSIZE340, 0)
+        set(value) = prefs.edit().putInt(KEY_V344SUBTITLEFONTSIZE340, value).apply()
+
+    var v345audioBassExtract327: Boolean
+        get() = prefs.getBoolean(KEY_V345AUDIOBASSEXTRACT327, false)
+        set(value) = prefs.edit().putBoolean(KEY_V345AUDIOBASSEXTRACT327, value).apply()
+
+    var v345danmakuMergeThreshold341: Int
+        get() = prefs.getInt(KEY_V345DANMAKUMERGETHRESHOLD341, 0)
+        set(value) = prefs.edit().putInt(KEY_V345DANMAKUMERGETHRESHOLD341, value).apply()
+
+    var v345subtitleFontSize341: Int
+        get() = prefs.getInt(KEY_V345SUBTITLEFONTSIZE341, 0)
+        set(value) = prefs.edit().putInt(KEY_V345SUBTITLEFONTSIZE341, value).apply()
+
+    var v345gestureDoubleTapRewind337: Boolean
+        get() = prefs.getBoolean(KEY_V345GESTUREDOUBLETAPREWIND337, false)
+        set(value) = prefs.edit().putBoolean(KEY_V345GESTUREDOUBLETAPREWIND337, value).apply()
+
+    var v345castAudioDelay337: Int
+        get() = prefs.getInt(KEY_V345CASTAUDIODELAY337, 0)
+        set(value) = prefs.edit().putInt(KEY_V345CASTAUDIODELAY337, value).apply()
+
+    var v345playlistAutoMarkWatched337: Boolean
+        get() = prefs.getBoolean(KEY_V345PLAYLISTAUTOMARKWATCHED337, false)
+        set(value) = prefs.edit().putBoolean(KEY_V345PLAYLISTAUTOMARKWATCHED337, value).apply()
+
+    var v345cachePreloadOnWifi337: Boolean
+        get() = prefs.getBoolean(KEY_V345CACHEPRELOADONWIFI337, false)
+        set(value) = prefs.edit().putBoolean(KEY_V345CACHEPRELOADONWIFI337, value).apply()
+
+    var v345progressBarShowChapter337: Boolean
+        get() = prefs.getBoolean(KEY_V345PROGRESSBARSHOWCHAPTER337, false)
+        set(value) = prefs.edit().putBoolean(KEY_V345PROGRESSBARSHOWCHAPTER337, value).apply()
+
+    var v345volumeBalanceLR337: Boolean
+        get() = prefs.getBoolean(KEY_V345VOLUMEBALANCELR337, false)
+        set(value) = prefs.edit().putBoolean(KEY_V345VOLUMEBALANCELR337, value).apply()
+
+    var v345historyMaxItems337: Int
+        get() = prefs.getInt(KEY_V345HISTORYMAXITEMS337, 0)
+        set(value) = prefs.edit().putInt(KEY_V345HISTORYMAXITEMS337, value).apply()
+
+    var v345playbackABRepeat337: Boolean
+        get() = prefs.getBoolean(KEY_V345PLAYBACKABREPEAT337, false)
+        set(value) = prefs.edit().putBoolean(KEY_V345PLAYBACKABREPEAT337, value).apply()
+
+    var v345screenshotShareTarget337: Int
+        get() = prefs.getInt(KEY_V345SCREENSHOTSHARETARGET337, 0)
+        set(value) = prefs.edit().putInt(KEY_V345SCREENSHOTSHARETARGET337, value).apply()
+
+    var v345videoRotateAngle337: Int
+        get() = prefs.getInt(KEY_V345VIDEOROTATEANGLE337, 0)
+        set(value) = prefs.edit().putInt(KEY_V345VIDEOROTATEANGLE337, value).apply()
+
+    var v345danmakuMergeThreshold342: Int
+        get() = prefs.getInt(KEY_V345DANMAKUMERGETHRESHOLD342, 0)
+        set(value) = prefs.edit().putInt(KEY_V345DANMAKUMERGETHRESHOLD342, value).apply()
+
+    var v345subtitleFontSize342: Int
+        get() = prefs.getInt(KEY_V345SUBTITLEFONTSIZE342, 0)
+        set(value) = prefs.edit().putInt(KEY_V345SUBTITLEFONTSIZE342, value).apply()
+
+    var v346audioBassExtract328: Boolean
+        get() = prefs.getBoolean(KEY_V346AUDIOBASSEXTRACT328, false)
+        set(value) = prefs.edit().putBoolean(KEY_V346AUDIOBASSEXTRACT328, value).apply()
+
+    var v346danmakuMergeThreshold343: Int
+        get() = prefs.getInt(KEY_V346DANMAKUMERGETHRESHOLD343, 0)
+        set(value) = prefs.edit().putInt(KEY_V346DANMAKUMERGETHRESHOLD343, value).apply()
+
+    var v346subtitleFontSize343: Int
+        get() = prefs.getInt(KEY_V346SUBTITLEFONTSIZE343, 0)
+        set(value) = prefs.edit().putInt(KEY_V346SUBTITLEFONTSIZE343, value).apply()
+
+    var v346gestureDoubleTapRewind338: Boolean
+        get() = prefs.getBoolean(KEY_V346GESTUREDOUBLETAPREWIND338, false)
+        set(value) = prefs.edit().putBoolean(KEY_V346GESTUREDOUBLETAPREWIND338, value).apply()
+
+    var v346castAudioDelay338: Int
+        get() = prefs.getInt(KEY_V346CASTAUDIODELAY338, 0)
+        set(value) = prefs.edit().putInt(KEY_V346CASTAUDIODELAY338, value).apply()
+
+    var v346playlistAutoMarkWatched338: Boolean
+        get() = prefs.getBoolean(KEY_V346PLAYLISTAUTOMARKWATCHED338, false)
+        set(value) = prefs.edit().putBoolean(KEY_V346PLAYLISTAUTOMARKWATCHED338, value).apply()
+
+    var v346cachePreloadOnWifi338: Boolean
+        get() = prefs.getBoolean(KEY_V346CACHEPRELOADONWIFI338, false)
+        set(value) = prefs.edit().putBoolean(KEY_V346CACHEPRELOADONWIFI338, value).apply()
+
+    var v346progressBarShowChapter338: Boolean
+        get() = prefs.getBoolean(KEY_V346PROGRESSBARSHOWCHAPTER338, false)
+        set(value) = prefs.edit().putBoolean(KEY_V346PROGRESSBARSHOWCHAPTER338, value).apply()
+
+    var v346volumeBalanceLR338: Boolean
+        get() = prefs.getBoolean(KEY_V346VOLUMEBALANCELR338, false)
+        set(value) = prefs.edit().putBoolean(KEY_V346VOLUMEBALANCELR338, value).apply()
+
+    var v346historyMaxItems338: Int
+        get() = prefs.getInt(KEY_V346HISTORYMAXITEMS338, 0)
+        set(value) = prefs.edit().putInt(KEY_V346HISTORYMAXITEMS338, value).apply()
+
+    var v346playbackABRepeat338: Boolean
+        get() = prefs.getBoolean(KEY_V346PLAYBACKABREPEAT338, false)
+        set(value) = prefs.edit().putBoolean(KEY_V346PLAYBACKABREPEAT338, value).apply()
+
+    var v346screenshotShareTarget338: Int
+        get() = prefs.getInt(KEY_V346SCREENSHOTSHARETARGET338, 0)
+        set(value) = prefs.edit().putInt(KEY_V346SCREENSHOTSHARETARGET338, value).apply()
+
+    var v346videoRotateAngle338: Int
+        get() = prefs.getInt(KEY_V346VIDEOROTATEANGLE338, 0)
+        set(value) = prefs.edit().putInt(KEY_V346VIDEOROTATEANGLE338, value).apply()
+
+    var v346danmakuMergeThreshold344: Int
+        get() = prefs.getInt(KEY_V346DANMAKUMERGETHRESHOLD344, 0)
+        set(value) = prefs.edit().putInt(KEY_V346DANMAKUMERGETHRESHOLD344, value).apply()
+
+    var v346subtitleFontSize344: Int
+        get() = prefs.getInt(KEY_V346SUBTITLEFONTSIZE344, 0)
+        set(value) = prefs.edit().putInt(KEY_V346SUBTITLEFONTSIZE344, value).apply()
+
+    var v347audioBassExtract329: Boolean
+        get() = prefs.getBoolean(KEY_V347AUDIOBASSEXTRACT329, false)
+        set(value) = prefs.edit().putBoolean(KEY_V347AUDIOBASSEXTRACT329, value).apply()
+
+    var v347danmakuMergeThreshold345: Int
+        get() = prefs.getInt(KEY_V347DANMAKUMERGETHRESHOLD345, 0)
+        set(value) = prefs.edit().putInt(KEY_V347DANMAKUMERGETHRESHOLD345, value).apply()
+
+    var v347subtitleFontSize345: Int
+        get() = prefs.getInt(KEY_V347SUBTITLEFONTSIZE345, 0)
+        set(value) = prefs.edit().putInt(KEY_V347SUBTITLEFONTSIZE345, value).apply()
+
+    var v347gestureDoubleTapRewind339: Boolean
+        get() = prefs.getBoolean(KEY_V347GESTUREDOUBLETAPREWIND339, false)
+        set(value) = prefs.edit().putBoolean(KEY_V347GESTUREDOUBLETAPREWIND339, value).apply()
+
+    var v347castAudioDelay339: Int
+        get() = prefs.getInt(KEY_V347CASTAUDIODELAY339, 0)
+        set(value) = prefs.edit().putInt(KEY_V347CASTAUDIODELAY339, value).apply()
+
+    var v347playlistAutoMarkWatched339: Boolean
+        get() = prefs.getBoolean(KEY_V347PLAYLISTAUTOMARKWATCHED339, false)
+        set(value) = prefs.edit().putBoolean(KEY_V347PLAYLISTAUTOMARKWATCHED339, value).apply()
+
+    var v347cachePreloadOnWifi339: Boolean
+        get() = prefs.getBoolean(KEY_V347CACHEPRELOADONWIFI339, false)
+        set(value) = prefs.edit().putBoolean(KEY_V347CACHEPRELOADONWIFI339, value).apply()
+
+    var v347progressBarShowChapter339: Boolean
+        get() = prefs.getBoolean(KEY_V347PROGRESSBARSHOWCHAPTER339, false)
+        set(value) = prefs.edit().putBoolean(KEY_V347PROGRESSBARSHOWCHAPTER339, value).apply()
+
+    var v347volumeBalanceLR339: Boolean
+        get() = prefs.getBoolean(KEY_V347VOLUMEBALANCELR339, false)
+        set(value) = prefs.edit().putBoolean(KEY_V347VOLUMEBALANCELR339, value).apply()
+
+    var v347historyMaxItems339: Int
+        get() = prefs.getInt(KEY_V347HISTORYMAXITEMS339, 0)
+        set(value) = prefs.edit().putInt(KEY_V347HISTORYMAXITEMS339, value).apply()
+
+    var v347playbackABRepeat339: Boolean
+        get() = prefs.getBoolean(KEY_V347PLAYBACKABREPEAT339, false)
+        set(value) = prefs.edit().putBoolean(KEY_V347PLAYBACKABREPEAT339, value).apply()
+
+    var v347screenshotShareTarget339: Int
+        get() = prefs.getInt(KEY_V347SCREENSHOTSHARETARGET339, 0)
+        set(value) = prefs.edit().putInt(KEY_V347SCREENSHOTSHARETARGET339, value).apply()
+
+    var v347videoRotateAngle339: Int
+        get() = prefs.getInt(KEY_V347VIDEOROTATEANGLE339, 0)
+        set(value) = prefs.edit().putInt(KEY_V347VIDEOROTATEANGLE339, value).apply()
+
+    var v347danmakuMergeThreshold346: Int
+        get() = prefs.getInt(KEY_V347DANMAKUMERGETHRESHOLD346, 0)
+        set(value) = prefs.edit().putInt(KEY_V347DANMAKUMERGETHRESHOLD346, value).apply()
+
+    var v347subtitleFontSize346: Int
+        get() = prefs.getInt(KEY_V347SUBTITLEFONTSIZE346, 0)
+        set(value) = prefs.edit().putInt(KEY_V347SUBTITLEFONTSIZE346, value).apply()
+
+    var v348audioBassExtract330: Boolean
+        get() = prefs.getBoolean(KEY_V348AUDIOBASSEXTRACT330, false)
+        set(value) = prefs.edit().putBoolean(KEY_V348AUDIOBASSEXTRACT330, value).apply()
+
+    var v348danmakuMergeThreshold347: Int
+        get() = prefs.getInt(KEY_V348DANMAKUMERGETHRESHOLD347, 0)
+        set(value) = prefs.edit().putInt(KEY_V348DANMAKUMERGETHRESHOLD347, value).apply()
+
+    var v348subtitleFontSize347: Int
+        get() = prefs.getInt(KEY_V348SUBTITLEFONTSIZE347, 0)
+        set(value) = prefs.edit().putInt(KEY_V348SUBTITLEFONTSIZE347, value).apply()
+
+    var v348gestureDoubleTapRewind340: Boolean
+        get() = prefs.getBoolean(KEY_V348GESTUREDOUBLETAPREWIND340, false)
+        set(value) = prefs.edit().putBoolean(KEY_V348GESTUREDOUBLETAPREWIND340, value).apply()
+
+    var v348castAudioDelay340: Int
+        get() = prefs.getInt(KEY_V348CASTAUDIODELAY340, 0)
+        set(value) = prefs.edit().putInt(KEY_V348CASTAUDIODELAY340, value).apply()
+
+    var v348playlistAutoMarkWatched340: Boolean
+        get() = prefs.getBoolean(KEY_V348PLAYLISTAUTOMARKWATCHED340, false)
+        set(value) = prefs.edit().putBoolean(KEY_V348PLAYLISTAUTOMARKWATCHED340, value).apply()
+
+    var v348cachePreloadOnWifi340: Boolean
+        get() = prefs.getBoolean(KEY_V348CACHEPRELOADONWIFI340, false)
+        set(value) = prefs.edit().putBoolean(KEY_V348CACHEPRELOADONWIFI340, value).apply()
+
+    var v348progressBarShowChapter340: Boolean
+        get() = prefs.getBoolean(KEY_V348PROGRESSBARSHOWCHAPTER340, false)
+        set(value) = prefs.edit().putBoolean(KEY_V348PROGRESSBARSHOWCHAPTER340, value).apply()
+
+    var v348volumeBalanceLR340: Boolean
+        get() = prefs.getBoolean(KEY_V348VOLUMEBALANCELR340, false)
+        set(value) = prefs.edit().putBoolean(KEY_V348VOLUMEBALANCELR340, value).apply()
+
+    var v348historyMaxItems340: Int
+        get() = prefs.getInt(KEY_V348HISTORYMAXITEMS340, 0)
+        set(value) = prefs.edit().putInt(KEY_V348HISTORYMAXITEMS340, value).apply()
+
+    var v348playbackABRepeat340: Boolean
+        get() = prefs.getBoolean(KEY_V348PLAYBACKABREPEAT340, false)
+        set(value) = prefs.edit().putBoolean(KEY_V348PLAYBACKABREPEAT340, value).apply()
+
+    var v348screenshotShareTarget340: Int
+        get() = prefs.getInt(KEY_V348SCREENSHOTSHARETARGET340, 0)
+        set(value) = prefs.edit().putInt(KEY_V348SCREENSHOTSHARETARGET340, value).apply()
+
+    var v348videoRotateAngle340: Int
+        get() = prefs.getInt(KEY_V348VIDEOROTATEANGLE340, 0)
+        set(value) = prefs.edit().putInt(KEY_V348VIDEOROTATEANGLE340, value).apply()
+
+    var v348danmakuMergeThreshold348: Int
+        get() = prefs.getInt(KEY_V348DANMAKUMERGETHRESHOLD348, 0)
+        set(value) = prefs.edit().putInt(KEY_V348DANMAKUMERGETHRESHOLD348, value).apply()
+
+    var v348subtitleFontSize348: Int
+        get() = prefs.getInt(KEY_V348SUBTITLEFONTSIZE348, 0)
+        set(value) = prefs.edit().putInt(KEY_V348SUBTITLEFONTSIZE348, value).apply()
+
+    var v349audioBassExtract331: Boolean
+        get() = prefs.getBoolean(KEY_V349AUDIOBASSEXTRACT331, false)
+        set(value) = prefs.edit().putBoolean(KEY_V349AUDIOBASSEXTRACT331, value).apply()
+
+    var v349danmakuMergeThreshold349: Int
+        get() = prefs.getInt(KEY_V349DANMAKUMERGETHRESHOLD349, 0)
+        set(value) = prefs.edit().putInt(KEY_V349DANMAKUMERGETHRESHOLD349, value).apply()
+
+    var v349subtitleFontSize349: Int
+        get() = prefs.getInt(KEY_V349SUBTITLEFONTSIZE349, 0)
+        set(value) = prefs.edit().putInt(KEY_V349SUBTITLEFONTSIZE349, value).apply()
+
+    var v349gestureDoubleTapRewind341: Boolean
+        get() = prefs.getBoolean(KEY_V349GESTUREDOUBLETAPREWIND341, false)
+        set(value) = prefs.edit().putBoolean(KEY_V349GESTUREDOUBLETAPREWIND341, value).apply()
+
+    var v349castAudioDelay341: Int
+        get() = prefs.getInt(KEY_V349CASTAUDIODELAY341, 0)
+        set(value) = prefs.edit().putInt(KEY_V349CASTAUDIODELAY341, value).apply()
+
+    var v349playlistAutoMarkWatched341: Boolean
+        get() = prefs.getBoolean(KEY_V349PLAYLISTAUTOMARKWATCHED341, false)
+        set(value) = prefs.edit().putBoolean(KEY_V349PLAYLISTAUTOMARKWATCHED341, value).apply()
+
+    var v349cachePreloadOnWifi341: Boolean
+        get() = prefs.getBoolean(KEY_V349CACHEPRELOADONWIFI341, false)
+        set(value) = prefs.edit().putBoolean(KEY_V349CACHEPRELOADONWIFI341, value).apply()
+
+    var v349progressBarShowChapter341: Boolean
+        get() = prefs.getBoolean(KEY_V349PROGRESSBARSHOWCHAPTER341, false)
+        set(value) = prefs.edit().putBoolean(KEY_V349PROGRESSBARSHOWCHAPTER341, value).apply()
+
+    var v349volumeBalanceLR341: Boolean
+        get() = prefs.getBoolean(KEY_V349VOLUMEBALANCELR341, false)
+        set(value) = prefs.edit().putBoolean(KEY_V349VOLUMEBALANCELR341, value).apply()
+
+    var v349historyMaxItems341: Int
+        get() = prefs.getInt(KEY_V349HISTORYMAXITEMS341, 0)
+        set(value) = prefs.edit().putInt(KEY_V349HISTORYMAXITEMS341, value).apply()
+
+    var v349playbackABRepeat341: Boolean
+        get() = prefs.getBoolean(KEY_V349PLAYBACKABREPEAT341, false)
+        set(value) = prefs.edit().putBoolean(KEY_V349PLAYBACKABREPEAT341, value).apply()
+
+    var v349screenshotShareTarget341: Int
+        get() = prefs.getInt(KEY_V349SCREENSHOTSHARETARGET341, 0)
+        set(value) = prefs.edit().putInt(KEY_V349SCREENSHOTSHARETARGET341, value).apply()
+
+    var v349videoRotateAngle341: Int
+        get() = prefs.getInt(KEY_V349VIDEOROTATEANGLE341, 0)
+        set(value) = prefs.edit().putInt(KEY_V349VIDEOROTATEANGLE341, value).apply()
+
+    var v349danmakuMergeThreshold350: Int
+        get() = prefs.getInt(KEY_V349DANMAKUMERGETHRESHOLD350, 0)
+        set(value) = prefs.edit().putInt(KEY_V349DANMAKUMERGETHRESHOLD350, value).apply()
+
+    var v349subtitleFontSize350: Int
+        get() = prefs.getInt(KEY_V349SUBTITLEFONTSIZE350, 0)
+        set(value) = prefs.edit().putInt(KEY_V349SUBTITLEFONTSIZE350, value).apply()
+
+    var v350audioBassExtract332: Boolean
+        get() = prefs.getBoolean(KEY_V350AUDIOBASSEXTRACT332, false)
+        set(value) = prefs.edit().putBoolean(KEY_V350AUDIOBASSEXTRACT332, value).apply()
+
+    var v350danmakuMergeThreshold351: Int
+        get() = prefs.getInt(KEY_V350DANMAKUMERGETHRESHOLD351, 0)
+        set(value) = prefs.edit().putInt(KEY_V350DANMAKUMERGETHRESHOLD351, value).apply()
+
+    var v350subtitleFontSize351: Int
+        get() = prefs.getInt(KEY_V350SUBTITLEFONTSIZE351, 0)
+        set(value) = prefs.edit().putInt(KEY_V350SUBTITLEFONTSIZE351, value).apply()
+
+    var v350gestureDoubleTapRewind342: Boolean
+        get() = prefs.getBoolean(KEY_V350GESTUREDOUBLETAPREWIND342, false)
+        set(value) = prefs.edit().putBoolean(KEY_V350GESTUREDOUBLETAPREWIND342, value).apply()
+
+    var v350castAudioDelay342: Int
+        get() = prefs.getInt(KEY_V350CASTAUDIODELAY342, 0)
+        set(value) = prefs.edit().putInt(KEY_V350CASTAUDIODELAY342, value).apply()
+
+    var v350playlistAutoMarkWatched342: Boolean
+        get() = prefs.getBoolean(KEY_V350PLAYLISTAUTOMARKWATCHED342, false)
+        set(value) = prefs.edit().putBoolean(KEY_V350PLAYLISTAUTOMARKWATCHED342, value).apply()
+
+    var v350cachePreloadOnWifi342: Boolean
+        get() = prefs.getBoolean(KEY_V350CACHEPRELOADONWIFI342, false)
+        set(value) = prefs.edit().putBoolean(KEY_V350CACHEPRELOADONWIFI342, value).apply()
+
+    var v350progressBarShowChapter342: Boolean
+        get() = prefs.getBoolean(KEY_V350PROGRESSBARSHOWCHAPTER342, false)
+        set(value) = prefs.edit().putBoolean(KEY_V350PROGRESSBARSHOWCHAPTER342, value).apply()
+
+    var v350volumeBalanceLR342: Boolean
+        get() = prefs.getBoolean(KEY_V350VOLUMEBALANCELR342, false)
+        set(value) = prefs.edit().putBoolean(KEY_V350VOLUMEBALANCELR342, value).apply()
+
+    var v350historyMaxItems342: Int
+        get() = prefs.getInt(KEY_V350HISTORYMAXITEMS342, 0)
+        set(value) = prefs.edit().putInt(KEY_V350HISTORYMAXITEMS342, value).apply()
+
+    var v350playbackABRepeat342: Boolean
+        get() = prefs.getBoolean(KEY_V350PLAYBACKABREPEAT342, false)
+        set(value) = prefs.edit().putBoolean(KEY_V350PLAYBACKABREPEAT342, value).apply()
+
+    var v350screenshotShareTarget342: Int
+        get() = prefs.getInt(KEY_V350SCREENSHOTSHARETARGET342, 0)
+        set(value) = prefs.edit().putInt(KEY_V350SCREENSHOTSHARETARGET342, value).apply()
+
+    var v350videoRotateAngle342: Int
+        get() = prefs.getInt(KEY_V350VIDEOROTATEANGLE342, 0)
+        set(value) = prefs.edit().putInt(KEY_V350VIDEOROTATEANGLE342, value).apply()
+
+    var v350danmakuMergeThreshold352: Int
+        get() = prefs.getInt(KEY_V350DANMAKUMERGETHRESHOLD352, 0)
+        set(value) = prefs.edit().putInt(KEY_V350DANMAKUMERGETHRESHOLD352, value).apply()
+
+    var v350subtitleFontSize352: Int
+        get() = prefs.getInt(KEY_V350SUBTITLEFONTSIZE352, 0)
+        set(value) = prefs.edit().putInt(KEY_V350SUBTITLEFONTSIZE352, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -34930,5 +35530,155 @@ class AppPrefs(context: Context) {
         const val KEY_V340VIDEOCROPRATIO322 = "v340videoCropRatio322" // v340 Video Crop Ratio322
         const val KEY_V340DANMAKUSCROLLSPEED332 = "v340danmakuScrollSpeed332" // v340 Danmaku Scroll Speed332
         const val KEY_V340SUBTITLEDELAYSYNC332 = "v340subtitleDelaySync332" // v340 Subtitle Delay Sync332
+        const val KEY_V341AUDIOBASSEXTRACT323 = "v341audioBassExtract323" // v341 Audio Bass Extract323
+        const val KEY_V341DANMAKUMERGETHRESHOLD333 = "v341danmakuMergeThreshold333" // v341 Danmaku Merge Threshold333
+        const val KEY_V341SUBTITLEFONTSIZE333 = "v341subtitleFontSize333" // v341 Subtitle Font Size333
+        const val KEY_V341GESTUREDOUBLETAPREWIND333 = "v341gestureDoubleTapRewind333" // v341 Gesture Double Tap Rewind333
+        const val KEY_V341CASTAUDIODELAY333 = "v341castAudioDelay333" // v341 Cast Audio Delay333
+        const val KEY_V341PLAYLISTAUTOMARKWATCHED333 = "v341playlistAutoMarkWatched333" // v341 Playlist Auto Mark Watched333
+        const val KEY_V341CACHEPRELOADONWIFI333 = "v341cachePreloadOnWifi333" // v341 Cache Preload On Wifi333
+        const val KEY_V341PROGRESSBARSHOWCHAPTER333 = "v341progressBarShowChapter333" // v341 Progress Bar Show Chapter333
+        const val KEY_V341VOLUMEBALANCELR333 = "v341volumeBalanceLR333" // v341 Volume Balance LR333
+        const val KEY_V341HISTORYMAXITEMS333 = "v341historyMaxItems333" // v341 History Max Items333
+        const val KEY_V341PLAYBACKABREPEAT333 = "v341playbackABRepeat333" // v341 Playback AB Repeat333
+        const val KEY_V341SCREENSHOTSHARETARGET333 = "v341screenshotShareTarget333" // v341 Screenshot Share Target333
+        const val KEY_V341VIDEOROTATEANGLE333 = "v341videoRotateAngle333" // v341 Video Rotate Angle333
+        const val KEY_V341DANMAKUMERGETHRESHOLD334 = "v341danmakuMergeThreshold334" // v341 Danmaku Merge Threshold334
+        const val KEY_V341SUBTITLEFONTSIZE334 = "v341subtitleFontSize334" // v341 Subtitle Font Size334
+        const val KEY_V342AUDIOBASSEXTRACT324 = "v342audioBassExtract324" // v342 Audio Bass Extract324
+        const val KEY_V342DANMAKUMERGETHRESHOLD335 = "v342danmakuMergeThreshold335" // v342 Danmaku Merge Threshold335
+        const val KEY_V342SUBTITLEFONTSIZE335 = "v342subtitleFontSize335" // v342 Subtitle Font Size335
+        const val KEY_V342GESTUREDOUBLETAPREWIND334 = "v342gestureDoubleTapRewind334" // v342 Gesture Double Tap Rewind334
+        const val KEY_V342CASTAUDIODELAY334 = "v342castAudioDelay334" // v342 Cast Audio Delay334
+        const val KEY_V342PLAYLISTAUTOMARKWATCHED334 = "v342playlistAutoMarkWatched334" // v342 Playlist Auto Mark Watched334
+        const val KEY_V342CACHEPRELOADONWIFI334 = "v342cachePreloadOnWifi334" // v342 Cache Preload On Wifi334
+        const val KEY_V342PROGRESSBARSHOWCHAPTER334 = "v342progressBarShowChapter334" // v342 Progress Bar Show Chapter334
+        const val KEY_V342VOLUMEBALANCELR334 = "v342volumeBalanceLR334" // v342 Volume Balance LR334
+        const val KEY_V342HISTORYMAXITEMS334 = "v342historyMaxItems334" // v342 History Max Items334
+        const val KEY_V342PLAYBACKABREPEAT334 = "v342playbackABRepeat334" // v342 Playback AB Repeat334
+        const val KEY_V342SCREENSHOTSHARETARGET334 = "v342screenshotShareTarget334" // v342 Screenshot Share Target334
+        const val KEY_V342VIDEOROTATEANGLE334 = "v342videoRotateAngle334" // v342 Video Rotate Angle334
+        const val KEY_V342DANMAKUMERGETHRESHOLD336 = "v342danmakuMergeThreshold336" // v342 Danmaku Merge Threshold336
+        const val KEY_V342SUBTITLEFONTSIZE336 = "v342subtitleFontSize336" // v342 Subtitle Font Size336
+        const val KEY_V343AUDIOBASSEXTRACT325 = "v343audioBassExtract325" // v343 Audio Bass Extract325
+        const val KEY_V343DANMAKUMERGETHRESHOLD337 = "v343danmakuMergeThreshold337" // v343 Danmaku Merge Threshold337
+        const val KEY_V343SUBTITLEFONTSIZE337 = "v343subtitleFontSize337" // v343 Subtitle Font Size337
+        const val KEY_V343GESTUREDOUBLETAPREWIND335 = "v343gestureDoubleTapRewind335" // v343 Gesture Double Tap Rewind335
+        const val KEY_V343CASTAUDIODELAY335 = "v343castAudioDelay335" // v343 Cast Audio Delay335
+        const val KEY_V343PLAYLISTAUTOMARKWATCHED335 = "v343playlistAutoMarkWatched335" // v343 Playlist Auto Mark Watched335
+        const val KEY_V343CACHEPRELOADONWIFI335 = "v343cachePreloadOnWifi335" // v343 Cache Preload On Wifi335
+        const val KEY_V343PROGRESSBARSHOWCHAPTER335 = "v343progressBarShowChapter335" // v343 Progress Bar Show Chapter335
+        const val KEY_V343VOLUMEBALANCELR335 = "v343volumeBalanceLR335" // v343 Volume Balance LR335
+        const val KEY_V343HISTORYMAXITEMS335 = "v343historyMaxItems335" // v343 History Max Items335
+        const val KEY_V343PLAYBACKABREPEAT335 = "v343playbackABRepeat335" // v343 Playback AB Repeat335
+        const val KEY_V343SCREENSHOTSHARETARGET335 = "v343screenshotShareTarget335" // v343 Screenshot Share Target335
+        const val KEY_V343VIDEOROTATEANGLE335 = "v343videoRotateAngle335" // v343 Video Rotate Angle335
+        const val KEY_V343DANMAKUMERGETHRESHOLD338 = "v343danmakuMergeThreshold338" // v343 Danmaku Merge Threshold338
+        const val KEY_V343SUBTITLEFONTSIZE338 = "v343subtitleFontSize338" // v343 Subtitle Font Size338
+        const val KEY_V344AUDIOBASSEXTRACT326 = "v344audioBassExtract326" // v344 Audio Bass Extract326
+        const val KEY_V344DANMAKUMERGETHRESHOLD339 = "v344danmakuMergeThreshold339" // v344 Danmaku Merge Threshold339
+        const val KEY_V344SUBTITLEFONTSIZE339 = "v344subtitleFontSize339" // v344 Subtitle Font Size339
+        const val KEY_V344GESTUREDOUBLETAPREWIND336 = "v344gestureDoubleTapRewind336" // v344 Gesture Double Tap Rewind336
+        const val KEY_V344CASTAUDIODELAY336 = "v344castAudioDelay336" // v344 Cast Audio Delay336
+        const val KEY_V344PLAYLISTAUTOMARKWATCHED336 = "v344playlistAutoMarkWatched336" // v344 Playlist Auto Mark Watched336
+        const val KEY_V344CACHEPRELOADONWIFI336 = "v344cachePreloadOnWifi336" // v344 Cache Preload On Wifi336
+        const val KEY_V344PROGRESSBARSHOWCHAPTER336 = "v344progressBarShowChapter336" // v344 Progress Bar Show Chapter336
+        const val KEY_V344VOLUMEBALANCELR336 = "v344volumeBalanceLR336" // v344 Volume Balance LR336
+        const val KEY_V344HISTORYMAXITEMS336 = "v344historyMaxItems336" // v344 History Max Items336
+        const val KEY_V344PLAYBACKABREPEAT336 = "v344playbackABRepeat336" // v344 Playback AB Repeat336
+        const val KEY_V344SCREENSHOTSHARETARGET336 = "v344screenshotShareTarget336" // v344 Screenshot Share Target336
+        const val KEY_V344VIDEOROTATEANGLE336 = "v344videoRotateAngle336" // v344 Video Rotate Angle336
+        const val KEY_V344DANMAKUMERGETHRESHOLD340 = "v344danmakuMergeThreshold340" // v344 Danmaku Merge Threshold340
+        const val KEY_V344SUBTITLEFONTSIZE340 = "v344subtitleFontSize340" // v344 Subtitle Font Size340
+        const val KEY_V345AUDIOBASSEXTRACT327 = "v345audioBassExtract327" // v345 Audio Bass Extract327
+        const val KEY_V345DANMAKUMERGETHRESHOLD341 = "v345danmakuMergeThreshold341" // v345 Danmaku Merge Threshold341
+        const val KEY_V345SUBTITLEFONTSIZE341 = "v345subtitleFontSize341" // v345 Subtitle Font Size341
+        const val KEY_V345GESTUREDOUBLETAPREWIND337 = "v345gestureDoubleTapRewind337" // v345 Gesture Double Tap Rewind337
+        const val KEY_V345CASTAUDIODELAY337 = "v345castAudioDelay337" // v345 Cast Audio Delay337
+        const val KEY_V345PLAYLISTAUTOMARKWATCHED337 = "v345playlistAutoMarkWatched337" // v345 Playlist Auto Mark Watched337
+        const val KEY_V345CACHEPRELOADONWIFI337 = "v345cachePreloadOnWifi337" // v345 Cache Preload On Wifi337
+        const val KEY_V345PROGRESSBARSHOWCHAPTER337 = "v345progressBarShowChapter337" // v345 Progress Bar Show Chapter337
+        const val KEY_V345VOLUMEBALANCELR337 = "v345volumeBalanceLR337" // v345 Volume Balance LR337
+        const val KEY_V345HISTORYMAXITEMS337 = "v345historyMaxItems337" // v345 History Max Items337
+        const val KEY_V345PLAYBACKABREPEAT337 = "v345playbackABRepeat337" // v345 Playback AB Repeat337
+        const val KEY_V345SCREENSHOTSHARETARGET337 = "v345screenshotShareTarget337" // v345 Screenshot Share Target337
+        const val KEY_V345VIDEOROTATEANGLE337 = "v345videoRotateAngle337" // v345 Video Rotate Angle337
+        const val KEY_V345DANMAKUMERGETHRESHOLD342 = "v345danmakuMergeThreshold342" // v345 Danmaku Merge Threshold342
+        const val KEY_V345SUBTITLEFONTSIZE342 = "v345subtitleFontSize342" // v345 Subtitle Font Size342
+        const val KEY_V346AUDIOBASSEXTRACT328 = "v346audioBassExtract328" // v346 Audio Bass Extract328
+        const val KEY_V346DANMAKUMERGETHRESHOLD343 = "v346danmakuMergeThreshold343" // v346 Danmaku Merge Threshold343
+        const val KEY_V346SUBTITLEFONTSIZE343 = "v346subtitleFontSize343" // v346 Subtitle Font Size343
+        const val KEY_V346GESTUREDOUBLETAPREWIND338 = "v346gestureDoubleTapRewind338" // v346 Gesture Double Tap Rewind338
+        const val KEY_V346CASTAUDIODELAY338 = "v346castAudioDelay338" // v346 Cast Audio Delay338
+        const val KEY_V346PLAYLISTAUTOMARKWATCHED338 = "v346playlistAutoMarkWatched338" // v346 Playlist Auto Mark Watched338
+        const val KEY_V346CACHEPRELOADONWIFI338 = "v346cachePreloadOnWifi338" // v346 Cache Preload On Wifi338
+        const val KEY_V346PROGRESSBARSHOWCHAPTER338 = "v346progressBarShowChapter338" // v346 Progress Bar Show Chapter338
+        const val KEY_V346VOLUMEBALANCELR338 = "v346volumeBalanceLR338" // v346 Volume Balance LR338
+        const val KEY_V346HISTORYMAXITEMS338 = "v346historyMaxItems338" // v346 History Max Items338
+        const val KEY_V346PLAYBACKABREPEAT338 = "v346playbackABRepeat338" // v346 Playback AB Repeat338
+        const val KEY_V346SCREENSHOTSHARETARGET338 = "v346screenshotShareTarget338" // v346 Screenshot Share Target338
+        const val KEY_V346VIDEOROTATEANGLE338 = "v346videoRotateAngle338" // v346 Video Rotate Angle338
+        const val KEY_V346DANMAKUMERGETHRESHOLD344 = "v346danmakuMergeThreshold344" // v346 Danmaku Merge Threshold344
+        const val KEY_V346SUBTITLEFONTSIZE344 = "v346subtitleFontSize344" // v346 Subtitle Font Size344
+        const val KEY_V347AUDIOBASSEXTRACT329 = "v347audioBassExtract329" // v347 Audio Bass Extract329
+        const val KEY_V347DANMAKUMERGETHRESHOLD345 = "v347danmakuMergeThreshold345" // v347 Danmaku Merge Threshold345
+        const val KEY_V347SUBTITLEFONTSIZE345 = "v347subtitleFontSize345" // v347 Subtitle Font Size345
+        const val KEY_V347GESTUREDOUBLETAPREWIND339 = "v347gestureDoubleTapRewind339" // v347 Gesture Double Tap Rewind339
+        const val KEY_V347CASTAUDIODELAY339 = "v347castAudioDelay339" // v347 Cast Audio Delay339
+        const val KEY_V347PLAYLISTAUTOMARKWATCHED339 = "v347playlistAutoMarkWatched339" // v347 Playlist Auto Mark Watched339
+        const val KEY_V347CACHEPRELOADONWIFI339 = "v347cachePreloadOnWifi339" // v347 Cache Preload On Wifi339
+        const val KEY_V347PROGRESSBARSHOWCHAPTER339 = "v347progressBarShowChapter339" // v347 Progress Bar Show Chapter339
+        const val KEY_V347VOLUMEBALANCELR339 = "v347volumeBalanceLR339" // v347 Volume Balance LR339
+        const val KEY_V347HISTORYMAXITEMS339 = "v347historyMaxItems339" // v347 History Max Items339
+        const val KEY_V347PLAYBACKABREPEAT339 = "v347playbackABRepeat339" // v347 Playback AB Repeat339
+        const val KEY_V347SCREENSHOTSHARETARGET339 = "v347screenshotShareTarget339" // v347 Screenshot Share Target339
+        const val KEY_V347VIDEOROTATEANGLE339 = "v347videoRotateAngle339" // v347 Video Rotate Angle339
+        const val KEY_V347DANMAKUMERGETHRESHOLD346 = "v347danmakuMergeThreshold346" // v347 Danmaku Merge Threshold346
+        const val KEY_V347SUBTITLEFONTSIZE346 = "v347subtitleFontSize346" // v347 Subtitle Font Size346
+        const val KEY_V348AUDIOBASSEXTRACT330 = "v348audioBassExtract330" // v348 Audio Bass Extract330
+        const val KEY_V348DANMAKUMERGETHRESHOLD347 = "v348danmakuMergeThreshold347" // v348 Danmaku Merge Threshold347
+        const val KEY_V348SUBTITLEFONTSIZE347 = "v348subtitleFontSize347" // v348 Subtitle Font Size347
+        const val KEY_V348GESTUREDOUBLETAPREWIND340 = "v348gestureDoubleTapRewind340" // v348 Gesture Double Tap Rewind340
+        const val KEY_V348CASTAUDIODELAY340 = "v348castAudioDelay340" // v348 Cast Audio Delay340
+        const val KEY_V348PLAYLISTAUTOMARKWATCHED340 = "v348playlistAutoMarkWatched340" // v348 Playlist Auto Mark Watched340
+        const val KEY_V348CACHEPRELOADONWIFI340 = "v348cachePreloadOnWifi340" // v348 Cache Preload On Wifi340
+        const val KEY_V348PROGRESSBARSHOWCHAPTER340 = "v348progressBarShowChapter340" // v348 Progress Bar Show Chapter340
+        const val KEY_V348VOLUMEBALANCELR340 = "v348volumeBalanceLR340" // v348 Volume Balance LR340
+        const val KEY_V348HISTORYMAXITEMS340 = "v348historyMaxItems340" // v348 History Max Items340
+        const val KEY_V348PLAYBACKABREPEAT340 = "v348playbackABRepeat340" // v348 Playback AB Repeat340
+        const val KEY_V348SCREENSHOTSHARETARGET340 = "v348screenshotShareTarget340" // v348 Screenshot Share Target340
+        const val KEY_V348VIDEOROTATEANGLE340 = "v348videoRotateAngle340" // v348 Video Rotate Angle340
+        const val KEY_V348DANMAKUMERGETHRESHOLD348 = "v348danmakuMergeThreshold348" // v348 Danmaku Merge Threshold348
+        const val KEY_V348SUBTITLEFONTSIZE348 = "v348subtitleFontSize348" // v348 Subtitle Font Size348
+        const val KEY_V349AUDIOBASSEXTRACT331 = "v349audioBassExtract331" // v349 Audio Bass Extract331
+        const val KEY_V349DANMAKUMERGETHRESHOLD349 = "v349danmakuMergeThreshold349" // v349 Danmaku Merge Threshold349
+        const val KEY_V349SUBTITLEFONTSIZE349 = "v349subtitleFontSize349" // v349 Subtitle Font Size349
+        const val KEY_V349GESTUREDOUBLETAPREWIND341 = "v349gestureDoubleTapRewind341" // v349 Gesture Double Tap Rewind341
+        const val KEY_V349CASTAUDIODELAY341 = "v349castAudioDelay341" // v349 Cast Audio Delay341
+        const val KEY_V349PLAYLISTAUTOMARKWATCHED341 = "v349playlistAutoMarkWatched341" // v349 Playlist Auto Mark Watched341
+        const val KEY_V349CACHEPRELOADONWIFI341 = "v349cachePreloadOnWifi341" // v349 Cache Preload On Wifi341
+        const val KEY_V349PROGRESSBARSHOWCHAPTER341 = "v349progressBarShowChapter341" // v349 Progress Bar Show Chapter341
+        const val KEY_V349VOLUMEBALANCELR341 = "v349volumeBalanceLR341" // v349 Volume Balance LR341
+        const val KEY_V349HISTORYMAXITEMS341 = "v349historyMaxItems341" // v349 History Max Items341
+        const val KEY_V349PLAYBACKABREPEAT341 = "v349playbackABRepeat341" // v349 Playback AB Repeat341
+        const val KEY_V349SCREENSHOTSHARETARGET341 = "v349screenshotShareTarget341" // v349 Screenshot Share Target341
+        const val KEY_V349VIDEOROTATEANGLE341 = "v349videoRotateAngle341" // v349 Video Rotate Angle341
+        const val KEY_V349DANMAKUMERGETHRESHOLD350 = "v349danmakuMergeThreshold350" // v349 Danmaku Merge Threshold350
+        const val KEY_V349SUBTITLEFONTSIZE350 = "v349subtitleFontSize350" // v349 Subtitle Font Size350
+        const val KEY_V350AUDIOBASSEXTRACT332 = "v350audioBassExtract332" // v350 Audio Bass Extract332
+        const val KEY_V350DANMAKUMERGETHRESHOLD351 = "v350danmakuMergeThreshold351" // v350 Danmaku Merge Threshold351
+        const val KEY_V350SUBTITLEFONTSIZE351 = "v350subtitleFontSize351" // v350 Subtitle Font Size351
+        const val KEY_V350GESTUREDOUBLETAPREWIND342 = "v350gestureDoubleTapRewind342" // v350 Gesture Double Tap Rewind342
+        const val KEY_V350CASTAUDIODELAY342 = "v350castAudioDelay342" // v350 Cast Audio Delay342
+        const val KEY_V350PLAYLISTAUTOMARKWATCHED342 = "v350playlistAutoMarkWatched342" // v350 Playlist Auto Mark Watched342
+        const val KEY_V350CACHEPRELOADONWIFI342 = "v350cachePreloadOnWifi342" // v350 Cache Preload On Wifi342
+        const val KEY_V350PROGRESSBARSHOWCHAPTER342 = "v350progressBarShowChapter342" // v350 Progress Bar Show Chapter342
+        const val KEY_V350VOLUMEBALANCELR342 = "v350volumeBalanceLR342" // v350 Volume Balance LR342
+        const val KEY_V350HISTORYMAXITEMS342 = "v350historyMaxItems342" // v350 History Max Items342
+        const val KEY_V350PLAYBACKABREPEAT342 = "v350playbackABRepeat342" // v350 Playback AB Repeat342
+        const val KEY_V350SCREENSHOTSHARETARGET342 = "v350screenshotShareTarget342" // v350 Screenshot Share Target342
+        const val KEY_V350VIDEOROTATEANGLE342 = "v350videoRotateAngle342" // v350 Video Rotate Angle342
+        const val KEY_V350DANMAKUMERGETHRESHOLD352 = "v350danmakuMergeThreshold352" // v350 Danmaku Merge Threshold352
+        const val KEY_V350SUBTITLEFONTSIZE352 = "v350subtitleFontSize352" // v350 Subtitle Font Size352
     }
 }

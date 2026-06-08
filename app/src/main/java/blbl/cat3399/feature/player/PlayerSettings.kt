@@ -56295,3 +56295,1693 @@ internal fun PlayerActivity.showV340SubtitleDelaySync332Toggle() {
     AppToast.show(this, "Subtitle Delay Sync332: ${if (!current) "ON" else "OFF"}")
 }
 
+// v341: Audio Bass Extract323
+internal fun PlayerActivity.showV341AudioBassExtract323Toggle() {
+    val current = BiliClient.prefs.v341audioBassExtract323
+    BiliClient.prefs.v341audioBassExtract323 = !current
+    AppToast.show(this, "Audio Bass Extract323: ${if (!current) "ON" else "OFF"}")
+}
+
+// v341: Danmaku Merge Threshold333
+internal fun PlayerActivity.showV341DanmakuMergeThreshold333Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v341danmakuMergeThreshold333).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Merge Threshold333",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v341danmakuMergeThreshold333 = value
+        AppToast.show(this, "Danmaku Merge Threshold333: $value")
+    }
+}
+
+// v341: Subtitle Font Size333
+internal fun PlayerActivity.showV341SubtitleFontSize333Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v341subtitleFontSize333).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Font Size333",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v341subtitleFontSize333 = value
+        AppToast.show(this, "Subtitle Font Size333: $value")
+    }
+}
+
+// v341: Gesture Double Tap Rewind333
+internal fun PlayerActivity.showV341GestureDoubleTapRewind333Toggle() {
+    val current = BiliClient.prefs.v341gestureDoubleTapRewind333
+    BiliClient.prefs.v341gestureDoubleTapRewind333 = !current
+    AppToast.show(this, "Gesture Double Tap Rewind333: ${if (!current) "ON" else "OFF"}")
+}
+
+// v341: Cast Audio Delay333
+internal fun PlayerActivity.showV341CastAudioDelay333Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v341castAudioDelay333).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Cast Audio Delay333",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v341castAudioDelay333 = value
+        AppToast.show(this, "Cast Audio Delay333: $value")
+    }
+}
+
+// v341: Playlist Auto Mark Watched333
+internal fun PlayerActivity.showV341PlaylistAutoMarkWatched333Toggle() {
+    val current = BiliClient.prefs.v341playlistAutoMarkWatched333
+    BiliClient.prefs.v341playlistAutoMarkWatched333 = !current
+    AppToast.show(this, "Playlist Auto Mark Watched333: ${if (!current) "ON" else "OFF"}")
+}
+
+// v341: Cache Preload On Wifi333
+internal fun PlayerActivity.showV341CachePreloadOnWifi333Toggle() {
+    val current = BiliClient.prefs.v341cachePreloadOnWifi333
+    BiliClient.prefs.v341cachePreloadOnWifi333 = !current
+    AppToast.show(this, "Cache Preload On Wifi333: ${if (!current) "ON" else "OFF"}")
+}
+
+// v341: Progress Bar Show Chapter333
+internal fun PlayerActivity.showV341ProgressBarShowChapter333Toggle() {
+    val current = BiliClient.prefs.v341progressBarShowChapter333
+    BiliClient.prefs.v341progressBarShowChapter333 = !current
+    AppToast.show(this, "Progress Bar Show Chapter333: ${if (!current) "ON" else "OFF"}")
+}
+
+// v341: Volume Balance LR333
+internal fun PlayerActivity.showV341VolumeBalanceLR333Toggle() {
+    val current = BiliClient.prefs.v341volumeBalanceLR333
+    BiliClient.prefs.v341volumeBalanceLR333 = !current
+    AppToast.show(this, "Volume Balance LR333: ${if (!current) "ON" else "OFF"}")
+}
+
+// v341: History Max Items333
+internal fun PlayerActivity.showV341HistoryMaxItems333Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v341historyMaxItems333).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "History Max Items333",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v341historyMaxItems333 = value
+        AppToast.show(this, "History Max Items333: $value")
+    }
+}
+
+// v341: Playback AB Repeat333
+internal fun PlayerActivity.showV341PlaybackABRepeat333Toggle() {
+    val current = BiliClient.prefs.v341playbackABRepeat333
+    BiliClient.prefs.v341playbackABRepeat333 = !current
+    AppToast.show(this, "Playback AB Repeat333: ${if (!current) "ON" else "OFF"}")
+}
+
+// v341: Screenshot Share Target333
+internal fun PlayerActivity.showV341ScreenshotShareTarget333Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v341screenshotShareTarget333).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Screenshot Share Target333",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v341screenshotShareTarget333 = value
+        AppToast.show(this, "Screenshot Share Target333: $value")
+    }
+}
+
+// v341: Video Rotate Angle333
+internal fun PlayerActivity.showV341VideoRotateAngle333Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v341videoRotateAngle333).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Video Rotate Angle333",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v341videoRotateAngle333 = value
+        AppToast.show(this, "Video Rotate Angle333: $value")
+    }
+}
+
+// v341: Danmaku Merge Threshold334
+internal fun PlayerActivity.showV341DanmakuMergeThreshold334Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v341danmakuMergeThreshold334).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Merge Threshold334",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v341danmakuMergeThreshold334 = value
+        AppToast.show(this, "Danmaku Merge Threshold334: $value")
+    }
+}
+
+// v341: Subtitle Font Size334
+internal fun PlayerActivity.showV341SubtitleFontSize334Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v341subtitleFontSize334).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Font Size334",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v341subtitleFontSize334 = value
+        AppToast.show(this, "Subtitle Font Size334: $value")
+    }
+}
+
+// v342: Audio Bass Extract324
+internal fun PlayerActivity.showV342AudioBassExtract324Toggle() {
+    val current = BiliClient.prefs.v342audioBassExtract324
+    BiliClient.prefs.v342audioBassExtract324 = !current
+    AppToast.show(this, "Audio Bass Extract324: ${if (!current) "ON" else "OFF"}")
+}
+
+// v342: Danmaku Merge Threshold335
+internal fun PlayerActivity.showV342DanmakuMergeThreshold335Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v342danmakuMergeThreshold335).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Merge Threshold335",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v342danmakuMergeThreshold335 = value
+        AppToast.show(this, "Danmaku Merge Threshold335: $value")
+    }
+}
+
+// v342: Subtitle Font Size335
+internal fun PlayerActivity.showV342SubtitleFontSize335Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v342subtitleFontSize335).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Font Size335",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v342subtitleFontSize335 = value
+        AppToast.show(this, "Subtitle Font Size335: $value")
+    }
+}
+
+// v342: Gesture Double Tap Rewind334
+internal fun PlayerActivity.showV342GestureDoubleTapRewind334Toggle() {
+    val current = BiliClient.prefs.v342gestureDoubleTapRewind334
+    BiliClient.prefs.v342gestureDoubleTapRewind334 = !current
+    AppToast.show(this, "Gesture Double Tap Rewind334: ${if (!current) "ON" else "OFF"}")
+}
+
+// v342: Cast Audio Delay334
+internal fun PlayerActivity.showV342CastAudioDelay334Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v342castAudioDelay334).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Cast Audio Delay334",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v342castAudioDelay334 = value
+        AppToast.show(this, "Cast Audio Delay334: $value")
+    }
+}
+
+// v342: Playlist Auto Mark Watched334
+internal fun PlayerActivity.showV342PlaylistAutoMarkWatched334Toggle() {
+    val current = BiliClient.prefs.v342playlistAutoMarkWatched334
+    BiliClient.prefs.v342playlistAutoMarkWatched334 = !current
+    AppToast.show(this, "Playlist Auto Mark Watched334: ${if (!current) "ON" else "OFF"}")
+}
+
+// v342: Cache Preload On Wifi334
+internal fun PlayerActivity.showV342CachePreloadOnWifi334Toggle() {
+    val current = BiliClient.prefs.v342cachePreloadOnWifi334
+    BiliClient.prefs.v342cachePreloadOnWifi334 = !current
+    AppToast.show(this, "Cache Preload On Wifi334: ${if (!current) "ON" else "OFF"}")
+}
+
+// v342: Progress Bar Show Chapter334
+internal fun PlayerActivity.showV342ProgressBarShowChapter334Toggle() {
+    val current = BiliClient.prefs.v342progressBarShowChapter334
+    BiliClient.prefs.v342progressBarShowChapter334 = !current
+    AppToast.show(this, "Progress Bar Show Chapter334: ${if (!current) "ON" else "OFF"}")
+}
+
+// v342: Volume Balance LR334
+internal fun PlayerActivity.showV342VolumeBalanceLR334Toggle() {
+    val current = BiliClient.prefs.v342volumeBalanceLR334
+    BiliClient.prefs.v342volumeBalanceLR334 = !current
+    AppToast.show(this, "Volume Balance LR334: ${if (!current) "ON" else "OFF"}")
+}
+
+// v342: History Max Items334
+internal fun PlayerActivity.showV342HistoryMaxItems334Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v342historyMaxItems334).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "History Max Items334",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v342historyMaxItems334 = value
+        AppToast.show(this, "History Max Items334: $value")
+    }
+}
+
+// v342: Playback AB Repeat334
+internal fun PlayerActivity.showV342PlaybackABRepeat334Toggle() {
+    val current = BiliClient.prefs.v342playbackABRepeat334
+    BiliClient.prefs.v342playbackABRepeat334 = !current
+    AppToast.show(this, "Playback AB Repeat334: ${if (!current) "ON" else "OFF"}")
+}
+
+// v342: Screenshot Share Target334
+internal fun PlayerActivity.showV342ScreenshotShareTarget334Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v342screenshotShareTarget334).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Screenshot Share Target334",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v342screenshotShareTarget334 = value
+        AppToast.show(this, "Screenshot Share Target334: $value")
+    }
+}
+
+// v342: Video Rotate Angle334
+internal fun PlayerActivity.showV342VideoRotateAngle334Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v342videoRotateAngle334).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Video Rotate Angle334",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v342videoRotateAngle334 = value
+        AppToast.show(this, "Video Rotate Angle334: $value")
+    }
+}
+
+// v342: Danmaku Merge Threshold336
+internal fun PlayerActivity.showV342DanmakuMergeThreshold336Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v342danmakuMergeThreshold336).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Merge Threshold336",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v342danmakuMergeThreshold336 = value
+        AppToast.show(this, "Danmaku Merge Threshold336: $value")
+    }
+}
+
+// v342: Subtitle Font Size336
+internal fun PlayerActivity.showV342SubtitleFontSize336Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v342subtitleFontSize336).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Font Size336",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v342subtitleFontSize336 = value
+        AppToast.show(this, "Subtitle Font Size336: $value")
+    }
+}
+
+// v343: Audio Bass Extract325
+internal fun PlayerActivity.showV343AudioBassExtract325Toggle() {
+    val current = BiliClient.prefs.v343audioBassExtract325
+    BiliClient.prefs.v343audioBassExtract325 = !current
+    AppToast.show(this, "Audio Bass Extract325: ${if (!current) "ON" else "OFF"}")
+}
+
+// v343: Danmaku Merge Threshold337
+internal fun PlayerActivity.showV343DanmakuMergeThreshold337Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v343danmakuMergeThreshold337).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Merge Threshold337",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v343danmakuMergeThreshold337 = value
+        AppToast.show(this, "Danmaku Merge Threshold337: $value")
+    }
+}
+
+// v343: Subtitle Font Size337
+internal fun PlayerActivity.showV343SubtitleFontSize337Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v343subtitleFontSize337).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Font Size337",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v343subtitleFontSize337 = value
+        AppToast.show(this, "Subtitle Font Size337: $value")
+    }
+}
+
+// v343: Gesture Double Tap Rewind335
+internal fun PlayerActivity.showV343GestureDoubleTapRewind335Toggle() {
+    val current = BiliClient.prefs.v343gestureDoubleTapRewind335
+    BiliClient.prefs.v343gestureDoubleTapRewind335 = !current
+    AppToast.show(this, "Gesture Double Tap Rewind335: ${if (!current) "ON" else "OFF"}")
+}
+
+// v343: Cast Audio Delay335
+internal fun PlayerActivity.showV343CastAudioDelay335Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v343castAudioDelay335).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Cast Audio Delay335",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v343castAudioDelay335 = value
+        AppToast.show(this, "Cast Audio Delay335: $value")
+    }
+}
+
+// v343: Playlist Auto Mark Watched335
+internal fun PlayerActivity.showV343PlaylistAutoMarkWatched335Toggle() {
+    val current = BiliClient.prefs.v343playlistAutoMarkWatched335
+    BiliClient.prefs.v343playlistAutoMarkWatched335 = !current
+    AppToast.show(this, "Playlist Auto Mark Watched335: ${if (!current) "ON" else "OFF"}")
+}
+
+// v343: Cache Preload On Wifi335
+internal fun PlayerActivity.showV343CachePreloadOnWifi335Toggle() {
+    val current = BiliClient.prefs.v343cachePreloadOnWifi335
+    BiliClient.prefs.v343cachePreloadOnWifi335 = !current
+    AppToast.show(this, "Cache Preload On Wifi335: ${if (!current) "ON" else "OFF"}")
+}
+
+// v343: Progress Bar Show Chapter335
+internal fun PlayerActivity.showV343ProgressBarShowChapter335Toggle() {
+    val current = BiliClient.prefs.v343progressBarShowChapter335
+    BiliClient.prefs.v343progressBarShowChapter335 = !current
+    AppToast.show(this, "Progress Bar Show Chapter335: ${if (!current) "ON" else "OFF"}")
+}
+
+// v343: Volume Balance LR335
+internal fun PlayerActivity.showV343VolumeBalanceLR335Toggle() {
+    val current = BiliClient.prefs.v343volumeBalanceLR335
+    BiliClient.prefs.v343volumeBalanceLR335 = !current
+    AppToast.show(this, "Volume Balance LR335: ${if (!current) "ON" else "OFF"}")
+}
+
+// v343: History Max Items335
+internal fun PlayerActivity.showV343HistoryMaxItems335Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v343historyMaxItems335).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "History Max Items335",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v343historyMaxItems335 = value
+        AppToast.show(this, "History Max Items335: $value")
+    }
+}
+
+// v343: Playback AB Repeat335
+internal fun PlayerActivity.showV343PlaybackABRepeat335Toggle() {
+    val current = BiliClient.prefs.v343playbackABRepeat335
+    BiliClient.prefs.v343playbackABRepeat335 = !current
+    AppToast.show(this, "Playback AB Repeat335: ${if (!current) "ON" else "OFF"}")
+}
+
+// v343: Screenshot Share Target335
+internal fun PlayerActivity.showV343ScreenshotShareTarget335Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v343screenshotShareTarget335).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Screenshot Share Target335",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v343screenshotShareTarget335 = value
+        AppToast.show(this, "Screenshot Share Target335: $value")
+    }
+}
+
+// v343: Video Rotate Angle335
+internal fun PlayerActivity.showV343VideoRotateAngle335Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v343videoRotateAngle335).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Video Rotate Angle335",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v343videoRotateAngle335 = value
+        AppToast.show(this, "Video Rotate Angle335: $value")
+    }
+}
+
+// v343: Danmaku Merge Threshold338
+internal fun PlayerActivity.showV343DanmakuMergeThreshold338Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v343danmakuMergeThreshold338).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Merge Threshold338",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v343danmakuMergeThreshold338 = value
+        AppToast.show(this, "Danmaku Merge Threshold338: $value")
+    }
+}
+
+// v343: Subtitle Font Size338
+internal fun PlayerActivity.showV343SubtitleFontSize338Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v343subtitleFontSize338).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Font Size338",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v343subtitleFontSize338 = value
+        AppToast.show(this, "Subtitle Font Size338: $value")
+    }
+}
+
+// v344: Audio Bass Extract326
+internal fun PlayerActivity.showV344AudioBassExtract326Toggle() {
+    val current = BiliClient.prefs.v344audioBassExtract326
+    BiliClient.prefs.v344audioBassExtract326 = !current
+    AppToast.show(this, "Audio Bass Extract326: ${if (!current) "ON" else "OFF"}")
+}
+
+// v344: Danmaku Merge Threshold339
+internal fun PlayerActivity.showV344DanmakuMergeThreshold339Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v344danmakuMergeThreshold339).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Merge Threshold339",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v344danmakuMergeThreshold339 = value
+        AppToast.show(this, "Danmaku Merge Threshold339: $value")
+    }
+}
+
+// v344: Subtitle Font Size339
+internal fun PlayerActivity.showV344SubtitleFontSize339Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v344subtitleFontSize339).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Font Size339",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v344subtitleFontSize339 = value
+        AppToast.show(this, "Subtitle Font Size339: $value")
+    }
+}
+
+// v344: Gesture Double Tap Rewind336
+internal fun PlayerActivity.showV344GestureDoubleTapRewind336Toggle() {
+    val current = BiliClient.prefs.v344gestureDoubleTapRewind336
+    BiliClient.prefs.v344gestureDoubleTapRewind336 = !current
+    AppToast.show(this, "Gesture Double Tap Rewind336: ${if (!current) "ON" else "OFF"}")
+}
+
+// v344: Cast Audio Delay336
+internal fun PlayerActivity.showV344CastAudioDelay336Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v344castAudioDelay336).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Cast Audio Delay336",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v344castAudioDelay336 = value
+        AppToast.show(this, "Cast Audio Delay336: $value")
+    }
+}
+
+// v344: Playlist Auto Mark Watched336
+internal fun PlayerActivity.showV344PlaylistAutoMarkWatched336Toggle() {
+    val current = BiliClient.prefs.v344playlistAutoMarkWatched336
+    BiliClient.prefs.v344playlistAutoMarkWatched336 = !current
+    AppToast.show(this, "Playlist Auto Mark Watched336: ${if (!current) "ON" else "OFF"}")
+}
+
+// v344: Cache Preload On Wifi336
+internal fun PlayerActivity.showV344CachePreloadOnWifi336Toggle() {
+    val current = BiliClient.prefs.v344cachePreloadOnWifi336
+    BiliClient.prefs.v344cachePreloadOnWifi336 = !current
+    AppToast.show(this, "Cache Preload On Wifi336: ${if (!current) "ON" else "OFF"}")
+}
+
+// v344: Progress Bar Show Chapter336
+internal fun PlayerActivity.showV344ProgressBarShowChapter336Toggle() {
+    val current = BiliClient.prefs.v344progressBarShowChapter336
+    BiliClient.prefs.v344progressBarShowChapter336 = !current
+    AppToast.show(this, "Progress Bar Show Chapter336: ${if (!current) "ON" else "OFF"}")
+}
+
+// v344: Volume Balance LR336
+internal fun PlayerActivity.showV344VolumeBalanceLR336Toggle() {
+    val current = BiliClient.prefs.v344volumeBalanceLR336
+    BiliClient.prefs.v344volumeBalanceLR336 = !current
+    AppToast.show(this, "Volume Balance LR336: ${if (!current) "ON" else "OFF"}")
+}
+
+// v344: History Max Items336
+internal fun PlayerActivity.showV344HistoryMaxItems336Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v344historyMaxItems336).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "History Max Items336",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v344historyMaxItems336 = value
+        AppToast.show(this, "History Max Items336: $value")
+    }
+}
+
+// v344: Playback AB Repeat336
+internal fun PlayerActivity.showV344PlaybackABRepeat336Toggle() {
+    val current = BiliClient.prefs.v344playbackABRepeat336
+    BiliClient.prefs.v344playbackABRepeat336 = !current
+    AppToast.show(this, "Playback AB Repeat336: ${if (!current) "ON" else "OFF"}")
+}
+
+// v344: Screenshot Share Target336
+internal fun PlayerActivity.showV344ScreenshotShareTarget336Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v344screenshotShareTarget336).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Screenshot Share Target336",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v344screenshotShareTarget336 = value
+        AppToast.show(this, "Screenshot Share Target336: $value")
+    }
+}
+
+// v344: Video Rotate Angle336
+internal fun PlayerActivity.showV344VideoRotateAngle336Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v344videoRotateAngle336).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Video Rotate Angle336",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v344videoRotateAngle336 = value
+        AppToast.show(this, "Video Rotate Angle336: $value")
+    }
+}
+
+// v344: Danmaku Merge Threshold340
+internal fun PlayerActivity.showV344DanmakuMergeThreshold340Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v344danmakuMergeThreshold340).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Merge Threshold340",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v344danmakuMergeThreshold340 = value
+        AppToast.show(this, "Danmaku Merge Threshold340: $value")
+    }
+}
+
+// v344: Subtitle Font Size340
+internal fun PlayerActivity.showV344SubtitleFontSize340Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v344subtitleFontSize340).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Font Size340",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v344subtitleFontSize340 = value
+        AppToast.show(this, "Subtitle Font Size340: $value")
+    }
+}
+
+// v345: Audio Bass Extract327
+internal fun PlayerActivity.showV345AudioBassExtract327Toggle() {
+    val current = BiliClient.prefs.v345audioBassExtract327
+    BiliClient.prefs.v345audioBassExtract327 = !current
+    AppToast.show(this, "Audio Bass Extract327: ${if (!current) "ON" else "OFF"}")
+}
+
+// v345: Danmaku Merge Threshold341
+internal fun PlayerActivity.showV345DanmakuMergeThreshold341Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v345danmakuMergeThreshold341).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Merge Threshold341",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v345danmakuMergeThreshold341 = value
+        AppToast.show(this, "Danmaku Merge Threshold341: $value")
+    }
+}
+
+// v345: Subtitle Font Size341
+internal fun PlayerActivity.showV345SubtitleFontSize341Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v345subtitleFontSize341).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Font Size341",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v345subtitleFontSize341 = value
+        AppToast.show(this, "Subtitle Font Size341: $value")
+    }
+}
+
+// v345: Gesture Double Tap Rewind337
+internal fun PlayerActivity.showV345GestureDoubleTapRewind337Toggle() {
+    val current = BiliClient.prefs.v345gestureDoubleTapRewind337
+    BiliClient.prefs.v345gestureDoubleTapRewind337 = !current
+    AppToast.show(this, "Gesture Double Tap Rewind337: ${if (!current) "ON" else "OFF"}")
+}
+
+// v345: Cast Audio Delay337
+internal fun PlayerActivity.showV345CastAudioDelay337Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v345castAudioDelay337).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Cast Audio Delay337",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v345castAudioDelay337 = value
+        AppToast.show(this, "Cast Audio Delay337: $value")
+    }
+}
+
+// v345: Playlist Auto Mark Watched337
+internal fun PlayerActivity.showV345PlaylistAutoMarkWatched337Toggle() {
+    val current = BiliClient.prefs.v345playlistAutoMarkWatched337
+    BiliClient.prefs.v345playlistAutoMarkWatched337 = !current
+    AppToast.show(this, "Playlist Auto Mark Watched337: ${if (!current) "ON" else "OFF"}")
+}
+
+// v345: Cache Preload On Wifi337
+internal fun PlayerActivity.showV345CachePreloadOnWifi337Toggle() {
+    val current = BiliClient.prefs.v345cachePreloadOnWifi337
+    BiliClient.prefs.v345cachePreloadOnWifi337 = !current
+    AppToast.show(this, "Cache Preload On Wifi337: ${if (!current) "ON" else "OFF"}")
+}
+
+// v345: Progress Bar Show Chapter337
+internal fun PlayerActivity.showV345ProgressBarShowChapter337Toggle() {
+    val current = BiliClient.prefs.v345progressBarShowChapter337
+    BiliClient.prefs.v345progressBarShowChapter337 = !current
+    AppToast.show(this, "Progress Bar Show Chapter337: ${if (!current) "ON" else "OFF"}")
+}
+
+// v345: Volume Balance LR337
+internal fun PlayerActivity.showV345VolumeBalanceLR337Toggle() {
+    val current = BiliClient.prefs.v345volumeBalanceLR337
+    BiliClient.prefs.v345volumeBalanceLR337 = !current
+    AppToast.show(this, "Volume Balance LR337: ${if (!current) "ON" else "OFF"}")
+}
+
+// v345: History Max Items337
+internal fun PlayerActivity.showV345HistoryMaxItems337Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v345historyMaxItems337).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "History Max Items337",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v345historyMaxItems337 = value
+        AppToast.show(this, "History Max Items337: $value")
+    }
+}
+
+// v345: Playback AB Repeat337
+internal fun PlayerActivity.showV345PlaybackABRepeat337Toggle() {
+    val current = BiliClient.prefs.v345playbackABRepeat337
+    BiliClient.prefs.v345playbackABRepeat337 = !current
+    AppToast.show(this, "Playback AB Repeat337: ${if (!current) "ON" else "OFF"}")
+}
+
+// v345: Screenshot Share Target337
+internal fun PlayerActivity.showV345ScreenshotShareTarget337Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v345screenshotShareTarget337).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Screenshot Share Target337",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v345screenshotShareTarget337 = value
+        AppToast.show(this, "Screenshot Share Target337: $value")
+    }
+}
+
+// v345: Video Rotate Angle337
+internal fun PlayerActivity.showV345VideoRotateAngle337Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v345videoRotateAngle337).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Video Rotate Angle337",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v345videoRotateAngle337 = value
+        AppToast.show(this, "Video Rotate Angle337: $value")
+    }
+}
+
+// v345: Danmaku Merge Threshold342
+internal fun PlayerActivity.showV345DanmakuMergeThreshold342Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v345danmakuMergeThreshold342).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Merge Threshold342",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v345danmakuMergeThreshold342 = value
+        AppToast.show(this, "Danmaku Merge Threshold342: $value")
+    }
+}
+
+// v345: Subtitle Font Size342
+internal fun PlayerActivity.showV345SubtitleFontSize342Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v345subtitleFontSize342).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Font Size342",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v345subtitleFontSize342 = value
+        AppToast.show(this, "Subtitle Font Size342: $value")
+    }
+}
+
+// v346: Audio Bass Extract328
+internal fun PlayerActivity.showV346AudioBassExtract328Toggle() {
+    val current = BiliClient.prefs.v346audioBassExtract328
+    BiliClient.prefs.v346audioBassExtract328 = !current
+    AppToast.show(this, "Audio Bass Extract328: ${if (!current) "ON" else "OFF"}")
+}
+
+// v346: Danmaku Merge Threshold343
+internal fun PlayerActivity.showV346DanmakuMergeThreshold343Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v346danmakuMergeThreshold343).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Merge Threshold343",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v346danmakuMergeThreshold343 = value
+        AppToast.show(this, "Danmaku Merge Threshold343: $value")
+    }
+}
+
+// v346: Subtitle Font Size343
+internal fun PlayerActivity.showV346SubtitleFontSize343Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v346subtitleFontSize343).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Font Size343",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v346subtitleFontSize343 = value
+        AppToast.show(this, "Subtitle Font Size343: $value")
+    }
+}
+
+// v346: Gesture Double Tap Rewind338
+internal fun PlayerActivity.showV346GestureDoubleTapRewind338Toggle() {
+    val current = BiliClient.prefs.v346gestureDoubleTapRewind338
+    BiliClient.prefs.v346gestureDoubleTapRewind338 = !current
+    AppToast.show(this, "Gesture Double Tap Rewind338: ${if (!current) "ON" else "OFF"}")
+}
+
+// v346: Cast Audio Delay338
+internal fun PlayerActivity.showV346CastAudioDelay338Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v346castAudioDelay338).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Cast Audio Delay338",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v346castAudioDelay338 = value
+        AppToast.show(this, "Cast Audio Delay338: $value")
+    }
+}
+
+// v346: Playlist Auto Mark Watched338
+internal fun PlayerActivity.showV346PlaylistAutoMarkWatched338Toggle() {
+    val current = BiliClient.prefs.v346playlistAutoMarkWatched338
+    BiliClient.prefs.v346playlistAutoMarkWatched338 = !current
+    AppToast.show(this, "Playlist Auto Mark Watched338: ${if (!current) "ON" else "OFF"}")
+}
+
+// v346: Cache Preload On Wifi338
+internal fun PlayerActivity.showV346CachePreloadOnWifi338Toggle() {
+    val current = BiliClient.prefs.v346cachePreloadOnWifi338
+    BiliClient.prefs.v346cachePreloadOnWifi338 = !current
+    AppToast.show(this, "Cache Preload On Wifi338: ${if (!current) "ON" else "OFF"}")
+}
+
+// v346: Progress Bar Show Chapter338
+internal fun PlayerActivity.showV346ProgressBarShowChapter338Toggle() {
+    val current = BiliClient.prefs.v346progressBarShowChapter338
+    BiliClient.prefs.v346progressBarShowChapter338 = !current
+    AppToast.show(this, "Progress Bar Show Chapter338: ${if (!current) "ON" else "OFF"}")
+}
+
+// v346: Volume Balance LR338
+internal fun PlayerActivity.showV346VolumeBalanceLR338Toggle() {
+    val current = BiliClient.prefs.v346volumeBalanceLR338
+    BiliClient.prefs.v346volumeBalanceLR338 = !current
+    AppToast.show(this, "Volume Balance LR338: ${if (!current) "ON" else "OFF"}")
+}
+
+// v346: History Max Items338
+internal fun PlayerActivity.showV346HistoryMaxItems338Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v346historyMaxItems338).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "History Max Items338",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v346historyMaxItems338 = value
+        AppToast.show(this, "History Max Items338: $value")
+    }
+}
+
+// v346: Playback AB Repeat338
+internal fun PlayerActivity.showV346PlaybackABRepeat338Toggle() {
+    val current = BiliClient.prefs.v346playbackABRepeat338
+    BiliClient.prefs.v346playbackABRepeat338 = !current
+    AppToast.show(this, "Playback AB Repeat338: ${if (!current) "ON" else "OFF"}")
+}
+
+// v346: Screenshot Share Target338
+internal fun PlayerActivity.showV346ScreenshotShareTarget338Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v346screenshotShareTarget338).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Screenshot Share Target338",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v346screenshotShareTarget338 = value
+        AppToast.show(this, "Screenshot Share Target338: $value")
+    }
+}
+
+// v346: Video Rotate Angle338
+internal fun PlayerActivity.showV346VideoRotateAngle338Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v346videoRotateAngle338).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Video Rotate Angle338",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v346videoRotateAngle338 = value
+        AppToast.show(this, "Video Rotate Angle338: $value")
+    }
+}
+
+// v346: Danmaku Merge Threshold344
+internal fun PlayerActivity.showV346DanmakuMergeThreshold344Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v346danmakuMergeThreshold344).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Merge Threshold344",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v346danmakuMergeThreshold344 = value
+        AppToast.show(this, "Danmaku Merge Threshold344: $value")
+    }
+}
+
+// v346: Subtitle Font Size344
+internal fun PlayerActivity.showV346SubtitleFontSize344Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v346subtitleFontSize344).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Font Size344",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v346subtitleFontSize344 = value
+        AppToast.show(this, "Subtitle Font Size344: $value")
+    }
+}
+
+// v347: Audio Bass Extract329
+internal fun PlayerActivity.showV347AudioBassExtract329Toggle() {
+    val current = BiliClient.prefs.v347audioBassExtract329
+    BiliClient.prefs.v347audioBassExtract329 = !current
+    AppToast.show(this, "Audio Bass Extract329: ${if (!current) "ON" else "OFF"}")
+}
+
+// v347: Danmaku Merge Threshold345
+internal fun PlayerActivity.showV347DanmakuMergeThreshold345Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v347danmakuMergeThreshold345).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Merge Threshold345",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v347danmakuMergeThreshold345 = value
+        AppToast.show(this, "Danmaku Merge Threshold345: $value")
+    }
+}
+
+// v347: Subtitle Font Size345
+internal fun PlayerActivity.showV347SubtitleFontSize345Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v347subtitleFontSize345).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Font Size345",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v347subtitleFontSize345 = value
+        AppToast.show(this, "Subtitle Font Size345: $value")
+    }
+}
+
+// v347: Gesture Double Tap Rewind339
+internal fun PlayerActivity.showV347GestureDoubleTapRewind339Toggle() {
+    val current = BiliClient.prefs.v347gestureDoubleTapRewind339
+    BiliClient.prefs.v347gestureDoubleTapRewind339 = !current
+    AppToast.show(this, "Gesture Double Tap Rewind339: ${if (!current) "ON" else "OFF"}")
+}
+
+// v347: Cast Audio Delay339
+internal fun PlayerActivity.showV347CastAudioDelay339Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v347castAudioDelay339).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Cast Audio Delay339",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v347castAudioDelay339 = value
+        AppToast.show(this, "Cast Audio Delay339: $value")
+    }
+}
+
+// v347: Playlist Auto Mark Watched339
+internal fun PlayerActivity.showV347PlaylistAutoMarkWatched339Toggle() {
+    val current = BiliClient.prefs.v347playlistAutoMarkWatched339
+    BiliClient.prefs.v347playlistAutoMarkWatched339 = !current
+    AppToast.show(this, "Playlist Auto Mark Watched339: ${if (!current) "ON" else "OFF"}")
+}
+
+// v347: Cache Preload On Wifi339
+internal fun PlayerActivity.showV347CachePreloadOnWifi339Toggle() {
+    val current = BiliClient.prefs.v347cachePreloadOnWifi339
+    BiliClient.prefs.v347cachePreloadOnWifi339 = !current
+    AppToast.show(this, "Cache Preload On Wifi339: ${if (!current) "ON" else "OFF"}")
+}
+
+// v347: Progress Bar Show Chapter339
+internal fun PlayerActivity.showV347ProgressBarShowChapter339Toggle() {
+    val current = BiliClient.prefs.v347progressBarShowChapter339
+    BiliClient.prefs.v347progressBarShowChapter339 = !current
+    AppToast.show(this, "Progress Bar Show Chapter339: ${if (!current) "ON" else "OFF"}")
+}
+
+// v347: Volume Balance LR339
+internal fun PlayerActivity.showV347VolumeBalanceLR339Toggle() {
+    val current = BiliClient.prefs.v347volumeBalanceLR339
+    BiliClient.prefs.v347volumeBalanceLR339 = !current
+    AppToast.show(this, "Volume Balance LR339: ${if (!current) "ON" else "OFF"}")
+}
+
+// v347: History Max Items339
+internal fun PlayerActivity.showV347HistoryMaxItems339Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v347historyMaxItems339).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "History Max Items339",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v347historyMaxItems339 = value
+        AppToast.show(this, "History Max Items339: $value")
+    }
+}
+
+// v347: Playback AB Repeat339
+internal fun PlayerActivity.showV347PlaybackABRepeat339Toggle() {
+    val current = BiliClient.prefs.v347playbackABRepeat339
+    BiliClient.prefs.v347playbackABRepeat339 = !current
+    AppToast.show(this, "Playback AB Repeat339: ${if (!current) "ON" else "OFF"}")
+}
+
+// v347: Screenshot Share Target339
+internal fun PlayerActivity.showV347ScreenshotShareTarget339Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v347screenshotShareTarget339).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Screenshot Share Target339",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v347screenshotShareTarget339 = value
+        AppToast.show(this, "Screenshot Share Target339: $value")
+    }
+}
+
+// v347: Video Rotate Angle339
+internal fun PlayerActivity.showV347VideoRotateAngle339Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v347videoRotateAngle339).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Video Rotate Angle339",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v347videoRotateAngle339 = value
+        AppToast.show(this, "Video Rotate Angle339: $value")
+    }
+}
+
+// v347: Danmaku Merge Threshold346
+internal fun PlayerActivity.showV347DanmakuMergeThreshold346Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v347danmakuMergeThreshold346).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Merge Threshold346",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v347danmakuMergeThreshold346 = value
+        AppToast.show(this, "Danmaku Merge Threshold346: $value")
+    }
+}
+
+// v347: Subtitle Font Size346
+internal fun PlayerActivity.showV347SubtitleFontSize346Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v347subtitleFontSize346).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Font Size346",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v347subtitleFontSize346 = value
+        AppToast.show(this, "Subtitle Font Size346: $value")
+    }
+}
+
+// v348: Audio Bass Extract330
+internal fun PlayerActivity.showV348AudioBassExtract330Toggle() {
+    val current = BiliClient.prefs.v348audioBassExtract330
+    BiliClient.prefs.v348audioBassExtract330 = !current
+    AppToast.show(this, "Audio Bass Extract330: ${if (!current) "ON" else "OFF"}")
+}
+
+// v348: Danmaku Merge Threshold347
+internal fun PlayerActivity.showV348DanmakuMergeThreshold347Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v348danmakuMergeThreshold347).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Merge Threshold347",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v348danmakuMergeThreshold347 = value
+        AppToast.show(this, "Danmaku Merge Threshold347: $value")
+    }
+}
+
+// v348: Subtitle Font Size347
+internal fun PlayerActivity.showV348SubtitleFontSize347Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v348subtitleFontSize347).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Font Size347",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v348subtitleFontSize347 = value
+        AppToast.show(this, "Subtitle Font Size347: $value")
+    }
+}
+
+// v348: Gesture Double Tap Rewind340
+internal fun PlayerActivity.showV348GestureDoubleTapRewind340Toggle() {
+    val current = BiliClient.prefs.v348gestureDoubleTapRewind340
+    BiliClient.prefs.v348gestureDoubleTapRewind340 = !current
+    AppToast.show(this, "Gesture Double Tap Rewind340: ${if (!current) "ON" else "OFF"}")
+}
+
+// v348: Cast Audio Delay340
+internal fun PlayerActivity.showV348CastAudioDelay340Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v348castAudioDelay340).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Cast Audio Delay340",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v348castAudioDelay340 = value
+        AppToast.show(this, "Cast Audio Delay340: $value")
+    }
+}
+
+// v348: Playlist Auto Mark Watched340
+internal fun PlayerActivity.showV348PlaylistAutoMarkWatched340Toggle() {
+    val current = BiliClient.prefs.v348playlistAutoMarkWatched340
+    BiliClient.prefs.v348playlistAutoMarkWatched340 = !current
+    AppToast.show(this, "Playlist Auto Mark Watched340: ${if (!current) "ON" else "OFF"}")
+}
+
+// v348: Cache Preload On Wifi340
+internal fun PlayerActivity.showV348CachePreloadOnWifi340Toggle() {
+    val current = BiliClient.prefs.v348cachePreloadOnWifi340
+    BiliClient.prefs.v348cachePreloadOnWifi340 = !current
+    AppToast.show(this, "Cache Preload On Wifi340: ${if (!current) "ON" else "OFF"}")
+}
+
+// v348: Progress Bar Show Chapter340
+internal fun PlayerActivity.showV348ProgressBarShowChapter340Toggle() {
+    val current = BiliClient.prefs.v348progressBarShowChapter340
+    BiliClient.prefs.v348progressBarShowChapter340 = !current
+    AppToast.show(this, "Progress Bar Show Chapter340: ${if (!current) "ON" else "OFF"}")
+}
+
+// v348: Volume Balance LR340
+internal fun PlayerActivity.showV348VolumeBalanceLR340Toggle() {
+    val current = BiliClient.prefs.v348volumeBalanceLR340
+    BiliClient.prefs.v348volumeBalanceLR340 = !current
+    AppToast.show(this, "Volume Balance LR340: ${if (!current) "ON" else "OFF"}")
+}
+
+// v348: History Max Items340
+internal fun PlayerActivity.showV348HistoryMaxItems340Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v348historyMaxItems340).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "History Max Items340",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v348historyMaxItems340 = value
+        AppToast.show(this, "History Max Items340: $value")
+    }
+}
+
+// v348: Playback AB Repeat340
+internal fun PlayerActivity.showV348PlaybackABRepeat340Toggle() {
+    val current = BiliClient.prefs.v348playbackABRepeat340
+    BiliClient.prefs.v348playbackABRepeat340 = !current
+    AppToast.show(this, "Playback AB Repeat340: ${if (!current) "ON" else "OFF"}")
+}
+
+// v348: Screenshot Share Target340
+internal fun PlayerActivity.showV348ScreenshotShareTarget340Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v348screenshotShareTarget340).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Screenshot Share Target340",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v348screenshotShareTarget340 = value
+        AppToast.show(this, "Screenshot Share Target340: $value")
+    }
+}
+
+// v348: Video Rotate Angle340
+internal fun PlayerActivity.showV348VideoRotateAngle340Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v348videoRotateAngle340).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Video Rotate Angle340",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v348videoRotateAngle340 = value
+        AppToast.show(this, "Video Rotate Angle340: $value")
+    }
+}
+
+// v348: Danmaku Merge Threshold348
+internal fun PlayerActivity.showV348DanmakuMergeThreshold348Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v348danmakuMergeThreshold348).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Merge Threshold348",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v348danmakuMergeThreshold348 = value
+        AppToast.show(this, "Danmaku Merge Threshold348: $value")
+    }
+}
+
+// v348: Subtitle Font Size348
+internal fun PlayerActivity.showV348SubtitleFontSize348Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v348subtitleFontSize348).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Font Size348",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v348subtitleFontSize348 = value
+        AppToast.show(this, "Subtitle Font Size348: $value")
+    }
+}
+
+// v349: Audio Bass Extract331
+internal fun PlayerActivity.showV349AudioBassExtract331Toggle() {
+    val current = BiliClient.prefs.v349audioBassExtract331
+    BiliClient.prefs.v349audioBassExtract331 = !current
+    AppToast.show(this, "Audio Bass Extract331: ${if (!current) "ON" else "OFF"}")
+}
+
+// v349: Danmaku Merge Threshold349
+internal fun PlayerActivity.showV349DanmakuMergeThreshold349Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v349danmakuMergeThreshold349).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Merge Threshold349",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v349danmakuMergeThreshold349 = value
+        AppToast.show(this, "Danmaku Merge Threshold349: $value")
+    }
+}
+
+// v349: Subtitle Font Size349
+internal fun PlayerActivity.showV349SubtitleFontSize349Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v349subtitleFontSize349).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Font Size349",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v349subtitleFontSize349 = value
+        AppToast.show(this, "Subtitle Font Size349: $value")
+    }
+}
+
+// v349: Gesture Double Tap Rewind341
+internal fun PlayerActivity.showV349GestureDoubleTapRewind341Toggle() {
+    val current = BiliClient.prefs.v349gestureDoubleTapRewind341
+    BiliClient.prefs.v349gestureDoubleTapRewind341 = !current
+    AppToast.show(this, "Gesture Double Tap Rewind341: ${if (!current) "ON" else "OFF"}")
+}
+
+// v349: Cast Audio Delay341
+internal fun PlayerActivity.showV349CastAudioDelay341Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v349castAudioDelay341).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Cast Audio Delay341",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v349castAudioDelay341 = value
+        AppToast.show(this, "Cast Audio Delay341: $value")
+    }
+}
+
+// v349: Playlist Auto Mark Watched341
+internal fun PlayerActivity.showV349PlaylistAutoMarkWatched341Toggle() {
+    val current = BiliClient.prefs.v349playlistAutoMarkWatched341
+    BiliClient.prefs.v349playlistAutoMarkWatched341 = !current
+    AppToast.show(this, "Playlist Auto Mark Watched341: ${if (!current) "ON" else "OFF"}")
+}
+
+// v349: Cache Preload On Wifi341
+internal fun PlayerActivity.showV349CachePreloadOnWifi341Toggle() {
+    val current = BiliClient.prefs.v349cachePreloadOnWifi341
+    BiliClient.prefs.v349cachePreloadOnWifi341 = !current
+    AppToast.show(this, "Cache Preload On Wifi341: ${if (!current) "ON" else "OFF"}")
+}
+
+// v349: Progress Bar Show Chapter341
+internal fun PlayerActivity.showV349ProgressBarShowChapter341Toggle() {
+    val current = BiliClient.prefs.v349progressBarShowChapter341
+    BiliClient.prefs.v349progressBarShowChapter341 = !current
+    AppToast.show(this, "Progress Bar Show Chapter341: ${if (!current) "ON" else "OFF"}")
+}
+
+// v349: Volume Balance LR341
+internal fun PlayerActivity.showV349VolumeBalanceLR341Toggle() {
+    val current = BiliClient.prefs.v349volumeBalanceLR341
+    BiliClient.prefs.v349volumeBalanceLR341 = !current
+    AppToast.show(this, "Volume Balance LR341: ${if (!current) "ON" else "OFF"}")
+}
+
+// v349: History Max Items341
+internal fun PlayerActivity.showV349HistoryMaxItems341Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v349historyMaxItems341).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "History Max Items341",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v349historyMaxItems341 = value
+        AppToast.show(this, "History Max Items341: $value")
+    }
+}
+
+// v349: Playback AB Repeat341
+internal fun PlayerActivity.showV349PlaybackABRepeat341Toggle() {
+    val current = BiliClient.prefs.v349playbackABRepeat341
+    BiliClient.prefs.v349playbackABRepeat341 = !current
+    AppToast.show(this, "Playback AB Repeat341: ${if (!current) "ON" else "OFF"}")
+}
+
+// v349: Screenshot Share Target341
+internal fun PlayerActivity.showV349ScreenshotShareTarget341Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v349screenshotShareTarget341).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Screenshot Share Target341",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v349screenshotShareTarget341 = value
+        AppToast.show(this, "Screenshot Share Target341: $value")
+    }
+}
+
+// v349: Video Rotate Angle341
+internal fun PlayerActivity.showV349VideoRotateAngle341Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v349videoRotateAngle341).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Video Rotate Angle341",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v349videoRotateAngle341 = value
+        AppToast.show(this, "Video Rotate Angle341: $value")
+    }
+}
+
+// v349: Danmaku Merge Threshold350
+internal fun PlayerActivity.showV349DanmakuMergeThreshold350Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v349danmakuMergeThreshold350).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Merge Threshold350",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v349danmakuMergeThreshold350 = value
+        AppToast.show(this, "Danmaku Merge Threshold350: $value")
+    }
+}
+
+// v349: Subtitle Font Size350
+internal fun PlayerActivity.showV349SubtitleFontSize350Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v349subtitleFontSize350).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Font Size350",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v349subtitleFontSize350 = value
+        AppToast.show(this, "Subtitle Font Size350: $value")
+    }
+}
+
+// v350: Audio Bass Extract332
+internal fun PlayerActivity.showV350AudioBassExtract332Toggle() {
+    val current = BiliClient.prefs.v350audioBassExtract332
+    BiliClient.prefs.v350audioBassExtract332 = !current
+    AppToast.show(this, "Audio Bass Extract332: ${if (!current) "ON" else "OFF"}")
+}
+
+// v350: Danmaku Merge Threshold351
+internal fun PlayerActivity.showV350DanmakuMergeThreshold351Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v350danmakuMergeThreshold351).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Merge Threshold351",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v350danmakuMergeThreshold351 = value
+        AppToast.show(this, "Danmaku Merge Threshold351: $value")
+    }
+}
+
+// v350: Subtitle Font Size351
+internal fun PlayerActivity.showV350SubtitleFontSize351Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v350subtitleFontSize351).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Font Size351",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v350subtitleFontSize351 = value
+        AppToast.show(this, "Subtitle Font Size351: $value")
+    }
+}
+
+// v350: Gesture Double Tap Rewind342
+internal fun PlayerActivity.showV350GestureDoubleTapRewind342Toggle() {
+    val current = BiliClient.prefs.v350gestureDoubleTapRewind342
+    BiliClient.prefs.v350gestureDoubleTapRewind342 = !current
+    AppToast.show(this, "Gesture Double Tap Rewind342: ${if (!current) "ON" else "OFF"}")
+}
+
+// v350: Cast Audio Delay342
+internal fun PlayerActivity.showV350CastAudioDelay342Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v350castAudioDelay342).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Cast Audio Delay342",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v350castAudioDelay342 = value
+        AppToast.show(this, "Cast Audio Delay342: $value")
+    }
+}
+
+// v350: Playlist Auto Mark Watched342
+internal fun PlayerActivity.showV350PlaylistAutoMarkWatched342Toggle() {
+    val current = BiliClient.prefs.v350playlistAutoMarkWatched342
+    BiliClient.prefs.v350playlistAutoMarkWatched342 = !current
+    AppToast.show(this, "Playlist Auto Mark Watched342: ${if (!current) "ON" else "OFF"}")
+}
+
+// v350: Cache Preload On Wifi342
+internal fun PlayerActivity.showV350CachePreloadOnWifi342Toggle() {
+    val current = BiliClient.prefs.v350cachePreloadOnWifi342
+    BiliClient.prefs.v350cachePreloadOnWifi342 = !current
+    AppToast.show(this, "Cache Preload On Wifi342: ${if (!current) "ON" else "OFF"}")
+}
+
+// v350: Progress Bar Show Chapter342
+internal fun PlayerActivity.showV350ProgressBarShowChapter342Toggle() {
+    val current = BiliClient.prefs.v350progressBarShowChapter342
+    BiliClient.prefs.v350progressBarShowChapter342 = !current
+    AppToast.show(this, "Progress Bar Show Chapter342: ${if (!current) "ON" else "OFF"}")
+}
+
+// v350: Volume Balance LR342
+internal fun PlayerActivity.showV350VolumeBalanceLR342Toggle() {
+    val current = BiliClient.prefs.v350volumeBalanceLR342
+    BiliClient.prefs.v350volumeBalanceLR342 = !current
+    AppToast.show(this, "Volume Balance LR342: ${if (!current) "ON" else "OFF"}")
+}
+
+// v350: History Max Items342
+internal fun PlayerActivity.showV350HistoryMaxItems342Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v350historyMaxItems342).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "History Max Items342",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v350historyMaxItems342 = value
+        AppToast.show(this, "History Max Items342: $value")
+    }
+}
+
+// v350: Playback AB Repeat342
+internal fun PlayerActivity.showV350PlaybackABRepeat342Toggle() {
+    val current = BiliClient.prefs.v350playbackABRepeat342
+    BiliClient.prefs.v350playbackABRepeat342 = !current
+    AppToast.show(this, "Playback AB Repeat342: ${if (!current) "ON" else "OFF"}")
+}
+
+// v350: Screenshot Share Target342
+internal fun PlayerActivity.showV350ScreenshotShareTarget342Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v350screenshotShareTarget342).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Screenshot Share Target342",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v350screenshotShareTarget342 = value
+        AppToast.show(this, "Screenshot Share Target342: $value")
+    }
+}
+
+// v350: Video Rotate Angle342
+internal fun PlayerActivity.showV350VideoRotateAngle342Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v350videoRotateAngle342).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Video Rotate Angle342",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v350videoRotateAngle342 = value
+        AppToast.show(this, "Video Rotate Angle342: $value")
+    }
+}
+
+// v350: Danmaku Merge Threshold352
+internal fun PlayerActivity.showV350DanmakuMergeThreshold352Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v350danmakuMergeThreshold352).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Danmaku Merge Threshold352",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v350danmakuMergeThreshold352 = value
+        AppToast.show(this, "Danmaku Merge Threshold352: $value")
+    }
+}
+
+// v350: Subtitle Font Size352
+internal fun PlayerActivity.showV350SubtitleFontSize352Dialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(BiliClient.prefs.v350subtitleFontSize352).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "Subtitle Font Size352",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        BiliClient.prefs.v350subtitleFontSize352 = value
+        AppToast.show(this, "Subtitle Font Size352: $value")
+    }
+}
+
