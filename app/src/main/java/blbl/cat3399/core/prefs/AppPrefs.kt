@@ -29048,6 +29048,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getInt(KEY_V370VOICECONTROLLANGUAGE370, 0)
         set(value) = prefs.edit().putInt(KEY_V370VOICECONTROLLANGUAGE370, value).apply()
 
+    var v371captionAutoDetect371: Boolean
+        get() = prefs.getBoolean(KEY_V371CAPTIONAUTODETECT371, false)
+        set(value) = prefs.edit().putBoolean(KEY_V371CAPTIONAUTODETECT371, value).apply()
+
+    var v371captionFontSize371: Int
+        get() = prefs.getInt(KEY_V371CAPTIONFONTSIZE371, 0)
+        set(value) = prefs.edit().putInt(KEY_V371CAPTIONFONTSIZE371, value).apply()
+
+    var v371captionPosition371: Int
+        get() = prefs.getInt(KEY_V371CAPTIONPOSITION371, 0)
+        set(value) = prefs.edit().putInt(KEY_V371CAPTIONPOSITION371, value).apply()
+
+    var v371chromecastAutoConnect371: Boolean
+        get() = prefs.getBoolean(KEY_V371CHROMECASTAUTOCONNECT371, false)
+        set(value) = prefs.edit().putBoolean(KEY_V371CHROMECASTAUTOCONNECT371, value).apply()
+
+    var v371chromecastQuality371: Int
+        get() = prefs.getInt(KEY_V371CHROMECASTQUALITY371, 0)
+        set(value) = prefs.edit().putInt(KEY_V371CHROMECASTQUALITY371, value).apply()
+
+    var v371floatingWindowEnabled371: Boolean
+        get() = prefs.getBoolean(KEY_V371FLOATINGWINDOWENABLED371, false)
+        set(value) = prefs.edit().putBoolean(KEY_V371FLOATINGWINDOWENABLED371, value).apply()
+
+    var v371floatingWindowSize371: Int
+        get() = prefs.getInt(KEY_V371FLOATINGWINDOWSIZE371, 0)
+        set(value) = prefs.edit().putInt(KEY_V371FLOATINGWINDOWSIZE371, value).apply()
+
+    var v371nfcAutoTransfer371: Boolean
+        get() = prefs.getBoolean(KEY_V371NFCAUTOTRANSFER371, false)
+        set(value) = prefs.edit().putBoolean(KEY_V371NFCAUTOTRANSFER371, value).apply()
+
+    var v371recommendAlgorithm371: Int
+        get() = prefs.getInt(KEY_V371RECOMMENDALGORITHM371, 0)
+        set(value) = prefs.edit().putInt(KEY_V371RECOMMENDALGORITHM371, value).apply()
+
+    var v371updateAutoCheck371: Boolean
+        get() = prefs.getBoolean(KEY_V371UPDATEAUTOCHECK371, false)
+        set(value) = prefs.edit().putBoolean(KEY_V371UPDATEAUTOCHECK371, value).apply()
+
+    var v371vrModeEnabled371: Boolean
+        get() = prefs.getBoolean(KEY_V371VRMODEENABLED371, false)
+        set(value) = prefs.edit().putBoolean(KEY_V371VRMODEENABLED371, value).apply()
+
+    var v371accessibilityHighContrast371: Boolean
+        get() = prefs.getBoolean(KEY_V371ACCESSIBILITYHIGHCONTRAST371, false)
+        set(value) = prefs.edit().putBoolean(KEY_V371ACCESSIBILITYHIGHCONTRAST371, value).apply()
+
+    var v371commentAutoTranslate371: Boolean
+        get() = prefs.getBoolean(KEY_V371COMMENTAUTOTRANSLATE371, false)
+        set(value) = prefs.edit().putBoolean(KEY_V371COMMENTAUTOTRANSLATE371, value).apply()
+
+    var v371dataUsageLimit371: Int
+        get() = prefs.getInt(KEY_V371DATAUSAGELIMIT371, 0)
+        set(value) = prefs.edit().putInt(KEY_V371DATAUSAGELIMIT371, value).apply()
+
+    var v371thumbnailPreview371: Boolean
+        get() = prefs.getBoolean(KEY_V371THUMBNAILPREVIEW371, false)
+        set(value) = prefs.edit().putBoolean(KEY_V371THUMBNAILPREVIEW371, value).apply()
+
+    var v372captionAutoDetect372: Boolean
+        get() = prefs.getBoolean(KEY_V372CAPTIONAUTODETECT372, false)
+        set(value) = prefs.edit().putBoolean(KEY_V372CAPTIONAUTODETECT372, value).apply()
+
+    var v372captionFontSize372: Int
+        get() = prefs.getInt(KEY_V372CAPTIONFONTSIZE372, 0)
+        set(value) = prefs.edit().putInt(KEY_V372CAPTIONFONTSIZE372, value).apply()
+
+    var v372captionPosition372: Int
+        get() = prefs.getInt(KEY_V372CAPTIONPOSITION372, 0)
+        set(value) = prefs.edit().putInt(KEY_V372CAPTIONPOSITION372, value).apply()
+
+    var v372chromecastAutoConnect372: Boolean
+        get() = prefs.getBoolean(KEY_V372CHROMECASTAUTOCONNECT372, false)
+        set(value) = prefs.edit().putBoolean(KEY_V372CHROMECASTAUTOCONNECT372, value).apply()
+
+    var v372chromecastQuality372: Int
+        get() = prefs.getInt(KEY_V372CHROMECASTQUALITY372, 0)
+        set(value) = prefs.edit().putInt(KEY_V372CHROMECASTQUALITY372, value).apply()
+
+    var v372floatingWindowEnabled372: Boolean
+        get() = prefs.getBoolean(KEY_V372FLOATINGWINDOWENABLED372, false)
+        set(value) = prefs.edit().putBoolean(KEY_V372FLOATINGWINDOWENABLED372, value).apply()
+
+    var v372floatingWindowSize372: Int
+        get() = prefs.getInt(KEY_V372FLOATINGWINDOWSIZE372, 0)
+        set(value) = prefs.edit().putInt(KEY_V372FLOATINGWINDOWSIZE372, value).apply()
+
+    var v372nfcAutoTransfer372: Boolean
+        get() = prefs.getBoolean(KEY_V372NFCAUTOTRANSFER372, false)
+        set(value) = prefs.edit().putBoolean(KEY_V372NFCAUTOTRANSFER372, value).apply()
+
+    var v372recommendAlgorithm372: Int
+        get() = prefs.getInt(KEY_V372RECOMMENDALGORITHM372, 0)
+        set(value) = prefs.edit().putInt(KEY_V372RECOMMENDALGORITHM372, value).apply()
+
+    var v372updateAutoCheck372: Boolean
+        get() = prefs.getBoolean(KEY_V372UPDATEAUTOCHECK372, false)
+        set(value) = prefs.edit().putBoolean(KEY_V372UPDATEAUTOCHECK372, value).apply()
+
+    var v372vrModeEnabled372: Boolean
+        get() = prefs.getBoolean(KEY_V372VRMODEENABLED372, false)
+        set(value) = prefs.edit().putBoolean(KEY_V372VRMODEENABLED372, value).apply()
+
+    var v372accessibilityHighContrast372: Boolean
+        get() = prefs.getBoolean(KEY_V372ACCESSIBILITYHIGHCONTRAST372, false)
+        set(value) = prefs.edit().putBoolean(KEY_V372ACCESSIBILITYHIGHCONTRAST372, value).apply()
+
+    var v372commentAutoTranslate372: Boolean
+        get() = prefs.getBoolean(KEY_V372COMMENTAUTOTRANSLATE372, false)
+        set(value) = prefs.edit().putBoolean(KEY_V372COMMENTAUTOTRANSLATE372, value).apply()
+
+    var v372dataUsageLimit372: Int
+        get() = prefs.getInt(KEY_V372DATAUSAGELIMIT372, 0)
+        set(value) = prefs.edit().putInt(KEY_V372DATAUSAGELIMIT372, value).apply()
+
+    var v372thumbnailPreview372: Boolean
+        get() = prefs.getBoolean(KEY_V372THUMBNAILPREVIEW372, false)
+        set(value) = prefs.edit().putBoolean(KEY_V372THUMBNAILPREVIEW372, value).apply()
+
+    var v373captionAutoDetect373: Boolean
+        get() = prefs.getBoolean(KEY_V373CAPTIONAUTODETECT373, false)
+        set(value) = prefs.edit().putBoolean(KEY_V373CAPTIONAUTODETECT373, value).apply()
+
+    var v373captionFontSize373: Int
+        get() = prefs.getInt(KEY_V373CAPTIONFONTSIZE373, 0)
+        set(value) = prefs.edit().putInt(KEY_V373CAPTIONFONTSIZE373, value).apply()
+
+    var v373captionPosition373: Int
+        get() = prefs.getInt(KEY_V373CAPTIONPOSITION373, 0)
+        set(value) = prefs.edit().putInt(KEY_V373CAPTIONPOSITION373, value).apply()
+
+    var v373chromecastAutoConnect373: Boolean
+        get() = prefs.getBoolean(KEY_V373CHROMECASTAUTOCONNECT373, false)
+        set(value) = prefs.edit().putBoolean(KEY_V373CHROMECASTAUTOCONNECT373, value).apply()
+
+    var v373chromecastQuality373: Int
+        get() = prefs.getInt(KEY_V373CHROMECASTQUALITY373, 0)
+        set(value) = prefs.edit().putInt(KEY_V373CHROMECASTQUALITY373, value).apply()
+
+    var v373floatingWindowEnabled373: Boolean
+        get() = prefs.getBoolean(KEY_V373FLOATINGWINDOWENABLED373, false)
+        set(value) = prefs.edit().putBoolean(KEY_V373FLOATINGWINDOWENABLED373, value).apply()
+
+    var v373floatingWindowSize373: Int
+        get() = prefs.getInt(KEY_V373FLOATINGWINDOWSIZE373, 0)
+        set(value) = prefs.edit().putInt(KEY_V373FLOATINGWINDOWSIZE373, value).apply()
+
+    var v373nfcAutoTransfer373: Boolean
+        get() = prefs.getBoolean(KEY_V373NFCAUTOTRANSFER373, false)
+        set(value) = prefs.edit().putBoolean(KEY_V373NFCAUTOTRANSFER373, value).apply()
+
+    var v373recommendAlgorithm373: Int
+        get() = prefs.getInt(KEY_V373RECOMMENDALGORITHM373, 0)
+        set(value) = prefs.edit().putInt(KEY_V373RECOMMENDALGORITHM373, value).apply()
+
+    var v373updateAutoCheck373: Boolean
+        get() = prefs.getBoolean(KEY_V373UPDATEAUTOCHECK373, false)
+        set(value) = prefs.edit().putBoolean(KEY_V373UPDATEAUTOCHECK373, value).apply()
+
+    var v373vrModeEnabled373: Boolean
+        get() = prefs.getBoolean(KEY_V373VRMODEENABLED373, false)
+        set(value) = prefs.edit().putBoolean(KEY_V373VRMODEENABLED373, value).apply()
+
+    var v373accessibilityHighContrast373: Boolean
+        get() = prefs.getBoolean(KEY_V373ACCESSIBILITYHIGHCONTRAST373, false)
+        set(value) = prefs.edit().putBoolean(KEY_V373ACCESSIBILITYHIGHCONTRAST373, value).apply()
+
+    var v373commentAutoTranslate373: Boolean
+        get() = prefs.getBoolean(KEY_V373COMMENTAUTOTRANSLATE373, false)
+        set(value) = prefs.edit().putBoolean(KEY_V373COMMENTAUTOTRANSLATE373, value).apply()
+
+    var v373dataUsageLimit373: Int
+        get() = prefs.getInt(KEY_V373DATAUSAGELIMIT373, 0)
+        set(value) = prefs.edit().putInt(KEY_V373DATAUSAGELIMIT373, value).apply()
+
+    var v373thumbnailPreview373: Boolean
+        get() = prefs.getBoolean(KEY_V373THUMBNAILPREVIEW373, false)
+        set(value) = prefs.edit().putBoolean(KEY_V373THUMBNAILPREVIEW373, value).apply()
+
+    var v374captionAutoDetect374: Boolean
+        get() = prefs.getBoolean(KEY_V374CAPTIONAUTODETECT374, false)
+        set(value) = prefs.edit().putBoolean(KEY_V374CAPTIONAUTODETECT374, value).apply()
+
+    var v374captionFontSize374: Int
+        get() = prefs.getInt(KEY_V374CAPTIONFONTSIZE374, 0)
+        set(value) = prefs.edit().putInt(KEY_V374CAPTIONFONTSIZE374, value).apply()
+
+    var v374captionPosition374: Int
+        get() = prefs.getInt(KEY_V374CAPTIONPOSITION374, 0)
+        set(value) = prefs.edit().putInt(KEY_V374CAPTIONPOSITION374, value).apply()
+
+    var v374chromecastAutoConnect374: Boolean
+        get() = prefs.getBoolean(KEY_V374CHROMECASTAUTOCONNECT374, false)
+        set(value) = prefs.edit().putBoolean(KEY_V374CHROMECASTAUTOCONNECT374, value).apply()
+
+    var v374chromecastQuality374: Int
+        get() = prefs.getInt(KEY_V374CHROMECASTQUALITY374, 0)
+        set(value) = prefs.edit().putInt(KEY_V374CHROMECASTQUALITY374, value).apply()
+
+    var v374floatingWindowEnabled374: Boolean
+        get() = prefs.getBoolean(KEY_V374FLOATINGWINDOWENABLED374, false)
+        set(value) = prefs.edit().putBoolean(KEY_V374FLOATINGWINDOWENABLED374, value).apply()
+
+    var v374floatingWindowSize374: Int
+        get() = prefs.getInt(KEY_V374FLOATINGWINDOWSIZE374, 0)
+        set(value) = prefs.edit().putInt(KEY_V374FLOATINGWINDOWSIZE374, value).apply()
+
+    var v374nfcAutoTransfer374: Boolean
+        get() = prefs.getBoolean(KEY_V374NFCAUTOTRANSFER374, false)
+        set(value) = prefs.edit().putBoolean(KEY_V374NFCAUTOTRANSFER374, value).apply()
+
+    var v374recommendAlgorithm374: Int
+        get() = prefs.getInt(KEY_V374RECOMMENDALGORITHM374, 0)
+        set(value) = prefs.edit().putInt(KEY_V374RECOMMENDALGORITHM374, value).apply()
+
+    var v374updateAutoCheck374: Boolean
+        get() = prefs.getBoolean(KEY_V374UPDATEAUTOCHECK374, false)
+        set(value) = prefs.edit().putBoolean(KEY_V374UPDATEAUTOCHECK374, value).apply()
+
+    var v374vrModeEnabled374: Boolean
+        get() = prefs.getBoolean(KEY_V374VRMODEENABLED374, false)
+        set(value) = prefs.edit().putBoolean(KEY_V374VRMODEENABLED374, value).apply()
+
+    var v374accessibilityHighContrast374: Boolean
+        get() = prefs.getBoolean(KEY_V374ACCESSIBILITYHIGHCONTRAST374, false)
+        set(value) = prefs.edit().putBoolean(KEY_V374ACCESSIBILITYHIGHCONTRAST374, value).apply()
+
+    var v374commentAutoTranslate374: Boolean
+        get() = prefs.getBoolean(KEY_V374COMMENTAUTOTRANSLATE374, false)
+        set(value) = prefs.edit().putBoolean(KEY_V374COMMENTAUTOTRANSLATE374, value).apply()
+
+    var v374dataUsageLimit374: Int
+        get() = prefs.getInt(KEY_V374DATAUSAGELIMIT374, 0)
+        set(value) = prefs.edit().putInt(KEY_V374DATAUSAGELIMIT374, value).apply()
+
+    var v374thumbnailPreview374: Boolean
+        get() = prefs.getBoolean(KEY_V374THUMBNAILPREVIEW374, false)
+        set(value) = prefs.edit().putBoolean(KEY_V374THUMBNAILPREVIEW374, value).apply()
+
+    var v375captionAutoDetect375: Boolean
+        get() = prefs.getBoolean(KEY_V375CAPTIONAUTODETECT375, false)
+        set(value) = prefs.edit().putBoolean(KEY_V375CAPTIONAUTODETECT375, value).apply()
+
+    var v375captionFontSize375: Int
+        get() = prefs.getInt(KEY_V375CAPTIONFONTSIZE375, 0)
+        set(value) = prefs.edit().putInt(KEY_V375CAPTIONFONTSIZE375, value).apply()
+
+    var v375captionPosition375: Int
+        get() = prefs.getInt(KEY_V375CAPTIONPOSITION375, 0)
+        set(value) = prefs.edit().putInt(KEY_V375CAPTIONPOSITION375, value).apply()
+
+    var v375chromecastAutoConnect375: Boolean
+        get() = prefs.getBoolean(KEY_V375CHROMECASTAUTOCONNECT375, false)
+        set(value) = prefs.edit().putBoolean(KEY_V375CHROMECASTAUTOCONNECT375, value).apply()
+
+    var v375chromecastQuality375: Int
+        get() = prefs.getInt(KEY_V375CHROMECASTQUALITY375, 0)
+        set(value) = prefs.edit().putInt(KEY_V375CHROMECASTQUALITY375, value).apply()
+
+    var v375floatingWindowEnabled375: Boolean
+        get() = prefs.getBoolean(KEY_V375FLOATINGWINDOWENABLED375, false)
+        set(value) = prefs.edit().putBoolean(KEY_V375FLOATINGWINDOWENABLED375, value).apply()
+
+    var v375floatingWindowSize375: Int
+        get() = prefs.getInt(KEY_V375FLOATINGWINDOWSIZE375, 0)
+        set(value) = prefs.edit().putInt(KEY_V375FLOATINGWINDOWSIZE375, value).apply()
+
+    var v375nfcAutoTransfer375: Boolean
+        get() = prefs.getBoolean(KEY_V375NFCAUTOTRANSFER375, false)
+        set(value) = prefs.edit().putBoolean(KEY_V375NFCAUTOTRANSFER375, value).apply()
+
+    var v375recommendAlgorithm375: Int
+        get() = prefs.getInt(KEY_V375RECOMMENDALGORITHM375, 0)
+        set(value) = prefs.edit().putInt(KEY_V375RECOMMENDALGORITHM375, value).apply()
+
+    var v375updateAutoCheck375: Boolean
+        get() = prefs.getBoolean(KEY_V375UPDATEAUTOCHECK375, false)
+        set(value) = prefs.edit().putBoolean(KEY_V375UPDATEAUTOCHECK375, value).apply()
+
+    var v375vrModeEnabled375: Boolean
+        get() = prefs.getBoolean(KEY_V375VRMODEENABLED375, false)
+        set(value) = prefs.edit().putBoolean(KEY_V375VRMODEENABLED375, value).apply()
+
+    var v375accessibilityHighContrast375: Boolean
+        get() = prefs.getBoolean(KEY_V375ACCESSIBILITYHIGHCONTRAST375, false)
+        set(value) = prefs.edit().putBoolean(KEY_V375ACCESSIBILITYHIGHCONTRAST375, value).apply()
+
+    var v375commentAutoTranslate375: Boolean
+        get() = prefs.getBoolean(KEY_V375COMMENTAUTOTRANSLATE375, false)
+        set(value) = prefs.edit().putBoolean(KEY_V375COMMENTAUTOTRANSLATE375, value).apply()
+
+    var v375dataUsageLimit375: Int
+        get() = prefs.getInt(KEY_V375DATAUSAGELIMIT375, 0)
+        set(value) = prefs.edit().putInt(KEY_V375DATAUSAGELIMIT375, value).apply()
+
+    var v375thumbnailPreview375: Boolean
+        get() = prefs.getBoolean(KEY_V375THUMBNAILPREVIEW375, false)
+        set(value) = prefs.edit().putBoolean(KEY_V375THUMBNAILPREVIEW375, value).apply()
+
+    var v376captionAutoDetect376: Boolean
+        get() = prefs.getBoolean(KEY_V376CAPTIONAUTODETECT376, false)
+        set(value) = prefs.edit().putBoolean(KEY_V376CAPTIONAUTODETECT376, value).apply()
+
+    var v376captionFontSize376: Int
+        get() = prefs.getInt(KEY_V376CAPTIONFONTSIZE376, 0)
+        set(value) = prefs.edit().putInt(KEY_V376CAPTIONFONTSIZE376, value).apply()
+
+    var v376captionPosition376: Int
+        get() = prefs.getInt(KEY_V376CAPTIONPOSITION376, 0)
+        set(value) = prefs.edit().putInt(KEY_V376CAPTIONPOSITION376, value).apply()
+
+    var v376chromecastAutoConnect376: Boolean
+        get() = prefs.getBoolean(KEY_V376CHROMECASTAUTOCONNECT376, false)
+        set(value) = prefs.edit().putBoolean(KEY_V376CHROMECASTAUTOCONNECT376, value).apply()
+
+    var v376chromecastQuality376: Int
+        get() = prefs.getInt(KEY_V376CHROMECASTQUALITY376, 0)
+        set(value) = prefs.edit().putInt(KEY_V376CHROMECASTQUALITY376, value).apply()
+
+    var v376floatingWindowEnabled376: Boolean
+        get() = prefs.getBoolean(KEY_V376FLOATINGWINDOWENABLED376, false)
+        set(value) = prefs.edit().putBoolean(KEY_V376FLOATINGWINDOWENABLED376, value).apply()
+
+    var v376floatingWindowSize376: Int
+        get() = prefs.getInt(KEY_V376FLOATINGWINDOWSIZE376, 0)
+        set(value) = prefs.edit().putInt(KEY_V376FLOATINGWINDOWSIZE376, value).apply()
+
+    var v376nfcAutoTransfer376: Boolean
+        get() = prefs.getBoolean(KEY_V376NFCAUTOTRANSFER376, false)
+        set(value) = prefs.edit().putBoolean(KEY_V376NFCAUTOTRANSFER376, value).apply()
+
+    var v376recommendAlgorithm376: Int
+        get() = prefs.getInt(KEY_V376RECOMMENDALGORITHM376, 0)
+        set(value) = prefs.edit().putInt(KEY_V376RECOMMENDALGORITHM376, value).apply()
+
+    var v376updateAutoCheck376: Boolean
+        get() = prefs.getBoolean(KEY_V376UPDATEAUTOCHECK376, false)
+        set(value) = prefs.edit().putBoolean(KEY_V376UPDATEAUTOCHECK376, value).apply()
+
+    var v376vrModeEnabled376: Boolean
+        get() = prefs.getBoolean(KEY_V376VRMODEENABLED376, false)
+        set(value) = prefs.edit().putBoolean(KEY_V376VRMODEENABLED376, value).apply()
+
+    var v376accessibilityHighContrast376: Boolean
+        get() = prefs.getBoolean(KEY_V376ACCESSIBILITYHIGHCONTRAST376, false)
+        set(value) = prefs.edit().putBoolean(KEY_V376ACCESSIBILITYHIGHCONTRAST376, value).apply()
+
+    var v376commentAutoTranslate376: Boolean
+        get() = prefs.getBoolean(KEY_V376COMMENTAUTOTRANSLATE376, false)
+        set(value) = prefs.edit().putBoolean(KEY_V376COMMENTAUTOTRANSLATE376, value).apply()
+
+    var v376dataUsageLimit376: Int
+        get() = prefs.getInt(KEY_V376DATAUSAGELIMIT376, 0)
+        set(value) = prefs.edit().putInt(KEY_V376DATAUSAGELIMIT376, value).apply()
+
+    var v376thumbnailPreview376: Boolean
+        get() = prefs.getBoolean(KEY_V376THUMBNAILPREVIEW376, false)
+        set(value) = prefs.edit().putBoolean(KEY_V376THUMBNAILPREVIEW376, value).apply()
+
+    var v377captionAutoDetect377: Boolean
+        get() = prefs.getBoolean(KEY_V377CAPTIONAUTODETECT377, false)
+        set(value) = prefs.edit().putBoolean(KEY_V377CAPTIONAUTODETECT377, value).apply()
+
+    var v377captionFontSize377: Int
+        get() = prefs.getInt(KEY_V377CAPTIONFONTSIZE377, 0)
+        set(value) = prefs.edit().putInt(KEY_V377CAPTIONFONTSIZE377, value).apply()
+
+    var v377captionPosition377: Int
+        get() = prefs.getInt(KEY_V377CAPTIONPOSITION377, 0)
+        set(value) = prefs.edit().putInt(KEY_V377CAPTIONPOSITION377, value).apply()
+
+    var v377chromecastAutoConnect377: Boolean
+        get() = prefs.getBoolean(KEY_V377CHROMECASTAUTOCONNECT377, false)
+        set(value) = prefs.edit().putBoolean(KEY_V377CHROMECASTAUTOCONNECT377, value).apply()
+
+    var v377chromecastQuality377: Int
+        get() = prefs.getInt(KEY_V377CHROMECASTQUALITY377, 0)
+        set(value) = prefs.edit().putInt(KEY_V377CHROMECASTQUALITY377, value).apply()
+
+    var v377floatingWindowEnabled377: Boolean
+        get() = prefs.getBoolean(KEY_V377FLOATINGWINDOWENABLED377, false)
+        set(value) = prefs.edit().putBoolean(KEY_V377FLOATINGWINDOWENABLED377, value).apply()
+
+    var v377floatingWindowSize377: Int
+        get() = prefs.getInt(KEY_V377FLOATINGWINDOWSIZE377, 0)
+        set(value) = prefs.edit().putInt(KEY_V377FLOATINGWINDOWSIZE377, value).apply()
+
+    var v377nfcAutoTransfer377: Boolean
+        get() = prefs.getBoolean(KEY_V377NFCAUTOTRANSFER377, false)
+        set(value) = prefs.edit().putBoolean(KEY_V377NFCAUTOTRANSFER377, value).apply()
+
+    var v377recommendAlgorithm377: Int
+        get() = prefs.getInt(KEY_V377RECOMMENDALGORITHM377, 0)
+        set(value) = prefs.edit().putInt(KEY_V377RECOMMENDALGORITHM377, value).apply()
+
+    var v377updateAutoCheck377: Boolean
+        get() = prefs.getBoolean(KEY_V377UPDATEAUTOCHECK377, false)
+        set(value) = prefs.edit().putBoolean(KEY_V377UPDATEAUTOCHECK377, value).apply()
+
+    var v377vrModeEnabled377: Boolean
+        get() = prefs.getBoolean(KEY_V377VRMODEENABLED377, false)
+        set(value) = prefs.edit().putBoolean(KEY_V377VRMODEENABLED377, value).apply()
+
+    var v377accessibilityHighContrast377: Boolean
+        get() = prefs.getBoolean(KEY_V377ACCESSIBILITYHIGHCONTRAST377, false)
+        set(value) = prefs.edit().putBoolean(KEY_V377ACCESSIBILITYHIGHCONTRAST377, value).apply()
+
+    var v377commentAutoTranslate377: Boolean
+        get() = prefs.getBoolean(KEY_V377COMMENTAUTOTRANSLATE377, false)
+        set(value) = prefs.edit().putBoolean(KEY_V377COMMENTAUTOTRANSLATE377, value).apply()
+
+    var v377dataUsageLimit377: Int
+        get() = prefs.getInt(KEY_V377DATAUSAGELIMIT377, 0)
+        set(value) = prefs.edit().putInt(KEY_V377DATAUSAGELIMIT377, value).apply()
+
+    var v377thumbnailPreview377: Boolean
+        get() = prefs.getBoolean(KEY_V377THUMBNAILPREVIEW377, false)
+        set(value) = prefs.edit().putBoolean(KEY_V377THUMBNAILPREVIEW377, value).apply()
+
+    var v378captionAutoDetect378: Boolean
+        get() = prefs.getBoolean(KEY_V378CAPTIONAUTODETECT378, false)
+        set(value) = prefs.edit().putBoolean(KEY_V378CAPTIONAUTODETECT378, value).apply()
+
+    var v378captionFontSize378: Int
+        get() = prefs.getInt(KEY_V378CAPTIONFONTSIZE378, 0)
+        set(value) = prefs.edit().putInt(KEY_V378CAPTIONFONTSIZE378, value).apply()
+
+    var v378captionPosition378: Int
+        get() = prefs.getInt(KEY_V378CAPTIONPOSITION378, 0)
+        set(value) = prefs.edit().putInt(KEY_V378CAPTIONPOSITION378, value).apply()
+
+    var v378chromecastAutoConnect378: Boolean
+        get() = prefs.getBoolean(KEY_V378CHROMECASTAUTOCONNECT378, false)
+        set(value) = prefs.edit().putBoolean(KEY_V378CHROMECASTAUTOCONNECT378, value).apply()
+
+    var v378chromecastQuality378: Int
+        get() = prefs.getInt(KEY_V378CHROMECASTQUALITY378, 0)
+        set(value) = prefs.edit().putInt(KEY_V378CHROMECASTQUALITY378, value).apply()
+
+    var v378floatingWindowEnabled378: Boolean
+        get() = prefs.getBoolean(KEY_V378FLOATINGWINDOWENABLED378, false)
+        set(value) = prefs.edit().putBoolean(KEY_V378FLOATINGWINDOWENABLED378, value).apply()
+
+    var v378floatingWindowSize378: Int
+        get() = prefs.getInt(KEY_V378FLOATINGWINDOWSIZE378, 0)
+        set(value) = prefs.edit().putInt(KEY_V378FLOATINGWINDOWSIZE378, value).apply()
+
+    var v378nfcAutoTransfer378: Boolean
+        get() = prefs.getBoolean(KEY_V378NFCAUTOTRANSFER378, false)
+        set(value) = prefs.edit().putBoolean(KEY_V378NFCAUTOTRANSFER378, value).apply()
+
+    var v378recommendAlgorithm378: Int
+        get() = prefs.getInt(KEY_V378RECOMMENDALGORITHM378, 0)
+        set(value) = prefs.edit().putInt(KEY_V378RECOMMENDALGORITHM378, value).apply()
+
+    var v378updateAutoCheck378: Boolean
+        get() = prefs.getBoolean(KEY_V378UPDATEAUTOCHECK378, false)
+        set(value) = prefs.edit().putBoolean(KEY_V378UPDATEAUTOCHECK378, value).apply()
+
+    var v378vrModeEnabled378: Boolean
+        get() = prefs.getBoolean(KEY_V378VRMODEENABLED378, false)
+        set(value) = prefs.edit().putBoolean(KEY_V378VRMODEENABLED378, value).apply()
+
+    var v378accessibilityHighContrast378: Boolean
+        get() = prefs.getBoolean(KEY_V378ACCESSIBILITYHIGHCONTRAST378, false)
+        set(value) = prefs.edit().putBoolean(KEY_V378ACCESSIBILITYHIGHCONTRAST378, value).apply()
+
+    var v378commentAutoTranslate378: Boolean
+        get() = prefs.getBoolean(KEY_V378COMMENTAUTOTRANSLATE378, false)
+        set(value) = prefs.edit().putBoolean(KEY_V378COMMENTAUTOTRANSLATE378, value).apply()
+
+    var v378dataUsageLimit378: Int
+        get() = prefs.getInt(KEY_V378DATAUSAGELIMIT378, 0)
+        set(value) = prefs.edit().putInt(KEY_V378DATAUSAGELIMIT378, value).apply()
+
+    var v378thumbnailPreview378: Boolean
+        get() = prefs.getBoolean(KEY_V378THUMBNAILPREVIEW378, false)
+        set(value) = prefs.edit().putBoolean(KEY_V378THUMBNAILPREVIEW378, value).apply()
+
+    var v379captionAutoDetect379: Boolean
+        get() = prefs.getBoolean(KEY_V379CAPTIONAUTODETECT379, false)
+        set(value) = prefs.edit().putBoolean(KEY_V379CAPTIONAUTODETECT379, value).apply()
+
+    var v379captionFontSize379: Int
+        get() = prefs.getInt(KEY_V379CAPTIONFONTSIZE379, 0)
+        set(value) = prefs.edit().putInt(KEY_V379CAPTIONFONTSIZE379, value).apply()
+
+    var v379captionPosition379: Int
+        get() = prefs.getInt(KEY_V379CAPTIONPOSITION379, 0)
+        set(value) = prefs.edit().putInt(KEY_V379CAPTIONPOSITION379, value).apply()
+
+    var v379chromecastAutoConnect379: Boolean
+        get() = prefs.getBoolean(KEY_V379CHROMECASTAUTOCONNECT379, false)
+        set(value) = prefs.edit().putBoolean(KEY_V379CHROMECASTAUTOCONNECT379, value).apply()
+
+    var v379chromecastQuality379: Int
+        get() = prefs.getInt(KEY_V379CHROMECASTQUALITY379, 0)
+        set(value) = prefs.edit().putInt(KEY_V379CHROMECASTQUALITY379, value).apply()
+
+    var v379floatingWindowEnabled379: Boolean
+        get() = prefs.getBoolean(KEY_V379FLOATINGWINDOWENABLED379, false)
+        set(value) = prefs.edit().putBoolean(KEY_V379FLOATINGWINDOWENABLED379, value).apply()
+
+    var v379floatingWindowSize379: Int
+        get() = prefs.getInt(KEY_V379FLOATINGWINDOWSIZE379, 0)
+        set(value) = prefs.edit().putInt(KEY_V379FLOATINGWINDOWSIZE379, value).apply()
+
+    var v379nfcAutoTransfer379: Boolean
+        get() = prefs.getBoolean(KEY_V379NFCAUTOTRANSFER379, false)
+        set(value) = prefs.edit().putBoolean(KEY_V379NFCAUTOTRANSFER379, value).apply()
+
+    var v379recommendAlgorithm379: Int
+        get() = prefs.getInt(KEY_V379RECOMMENDALGORITHM379, 0)
+        set(value) = prefs.edit().putInt(KEY_V379RECOMMENDALGORITHM379, value).apply()
+
+    var v379updateAutoCheck379: Boolean
+        get() = prefs.getBoolean(KEY_V379UPDATEAUTOCHECK379, false)
+        set(value) = prefs.edit().putBoolean(KEY_V379UPDATEAUTOCHECK379, value).apply()
+
+    var v379vrModeEnabled379: Boolean
+        get() = prefs.getBoolean(KEY_V379VRMODEENABLED379, false)
+        set(value) = prefs.edit().putBoolean(KEY_V379VRMODEENABLED379, value).apply()
+
+    var v379accessibilityHighContrast379: Boolean
+        get() = prefs.getBoolean(KEY_V379ACCESSIBILITYHIGHCONTRAST379, false)
+        set(value) = prefs.edit().putBoolean(KEY_V379ACCESSIBILITYHIGHCONTRAST379, value).apply()
+
+    var v379commentAutoTranslate379: Boolean
+        get() = prefs.getBoolean(KEY_V379COMMENTAUTOTRANSLATE379, false)
+        set(value) = prefs.edit().putBoolean(KEY_V379COMMENTAUTOTRANSLATE379, value).apply()
+
+    var v379dataUsageLimit379: Int
+        get() = prefs.getInt(KEY_V379DATAUSAGELIMIT379, 0)
+        set(value) = prefs.edit().putInt(KEY_V379DATAUSAGELIMIT379, value).apply()
+
+    var v379thumbnailPreview379: Boolean
+        get() = prefs.getBoolean(KEY_V379THUMBNAILPREVIEW379, false)
+        set(value) = prefs.edit().putBoolean(KEY_V379THUMBNAILPREVIEW379, value).apply()
+
+    var v380captionAutoDetect380: Boolean
+        get() = prefs.getBoolean(KEY_V380CAPTIONAUTODETECT380, false)
+        set(value) = prefs.edit().putBoolean(KEY_V380CAPTIONAUTODETECT380, value).apply()
+
+    var v380captionFontSize380: Int
+        get() = prefs.getInt(KEY_V380CAPTIONFONTSIZE380, 0)
+        set(value) = prefs.edit().putInt(KEY_V380CAPTIONFONTSIZE380, value).apply()
+
+    var v380captionPosition380: Int
+        get() = prefs.getInt(KEY_V380CAPTIONPOSITION380, 0)
+        set(value) = prefs.edit().putInt(KEY_V380CAPTIONPOSITION380, value).apply()
+
+    var v380chromecastAutoConnect380: Boolean
+        get() = prefs.getBoolean(KEY_V380CHROMECASTAUTOCONNECT380, false)
+        set(value) = prefs.edit().putBoolean(KEY_V380CHROMECASTAUTOCONNECT380, value).apply()
+
+    var v380chromecastQuality380: Int
+        get() = prefs.getInt(KEY_V380CHROMECASTQUALITY380, 0)
+        set(value) = prefs.edit().putInt(KEY_V380CHROMECASTQUALITY380, value).apply()
+
+    var v380floatingWindowEnabled380: Boolean
+        get() = prefs.getBoolean(KEY_V380FLOATINGWINDOWENABLED380, false)
+        set(value) = prefs.edit().putBoolean(KEY_V380FLOATINGWINDOWENABLED380, value).apply()
+
+    var v380floatingWindowSize380: Int
+        get() = prefs.getInt(KEY_V380FLOATINGWINDOWSIZE380, 0)
+        set(value) = prefs.edit().putInt(KEY_V380FLOATINGWINDOWSIZE380, value).apply()
+
+    var v380nfcAutoTransfer380: Boolean
+        get() = prefs.getBoolean(KEY_V380NFCAUTOTRANSFER380, false)
+        set(value) = prefs.edit().putBoolean(KEY_V380NFCAUTOTRANSFER380, value).apply()
+
+    var v380recommendAlgorithm380: Int
+        get() = prefs.getInt(KEY_V380RECOMMENDALGORITHM380, 0)
+        set(value) = prefs.edit().putInt(KEY_V380RECOMMENDALGORITHM380, value).apply()
+
+    var v380updateAutoCheck380: Boolean
+        get() = prefs.getBoolean(KEY_V380UPDATEAUTOCHECK380, false)
+        set(value) = prefs.edit().putBoolean(KEY_V380UPDATEAUTOCHECK380, value).apply()
+
+    var v380vrModeEnabled380: Boolean
+        get() = prefs.getBoolean(KEY_V380VRMODEENABLED380, false)
+        set(value) = prefs.edit().putBoolean(KEY_V380VRMODEENABLED380, value).apply()
+
+    var v380accessibilityHighContrast380: Boolean
+        get() = prefs.getBoolean(KEY_V380ACCESSIBILITYHIGHCONTRAST380, false)
+        set(value) = prefs.edit().putBoolean(KEY_V380ACCESSIBILITYHIGHCONTRAST380, value).apply()
+
+    var v380commentAutoTranslate380: Boolean
+        get() = prefs.getBoolean(KEY_V380COMMENTAUTOTRANSLATE380, false)
+        set(value) = prefs.edit().putBoolean(KEY_V380COMMENTAUTOTRANSLATE380, value).apply()
+
+    var v380dataUsageLimit380: Int
+        get() = prefs.getInt(KEY_V380DATAUSAGELIMIT380, 0)
+        set(value) = prefs.edit().putInt(KEY_V380DATAUSAGELIMIT380, value).apply()
+
+    var v380thumbnailPreview380: Boolean
+        get() = prefs.getBoolean(KEY_V380THUMBNAILPREVIEW380, false)
+        set(value) = prefs.edit().putBoolean(KEY_V380THUMBNAILPREVIEW380, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -37180,5 +37780,155 @@ class AppPrefs(context: Context) {
         const val KEY_V370KEYBOARDSHORTCUTVOLUME370 = "v370keyboardShortcutVolume370" // v370 Keyboard Shortcut Volume370
         const val KEY_V370VOICECONTROLENABLED370 = "v370voiceControlEnabled370" // v370 Voice Control Enabled370
         const val KEY_V370VOICECONTROLLANGUAGE370 = "v370voiceControlLanguage370" // v370 Voice Control Language370
+        const val KEY_V371CAPTIONAUTODETECT371 = "v371captionAutoDetect371" // v371 Caption Auto Detect371
+        const val KEY_V371CAPTIONFONTSIZE371 = "v371captionFontSize371" // v371 Caption Font Size371
+        const val KEY_V371CAPTIONPOSITION371 = "v371captionPosition371" // v371 Caption Position371
+        const val KEY_V371CHROMECASTAUTOCONNECT371 = "v371chromecastAutoConnect371" // v371 Chromecast Auto Connect371
+        const val KEY_V371CHROMECASTQUALITY371 = "v371chromecastQuality371" // v371 Chromecast Quality371
+        const val KEY_V371FLOATINGWINDOWENABLED371 = "v371floatingWindowEnabled371" // v371 Floating Window Enabled371
+        const val KEY_V371FLOATINGWINDOWSIZE371 = "v371floatingWindowSize371" // v371 Floating Window Size371
+        const val KEY_V371NFCAUTOTRANSFER371 = "v371nfcAutoTransfer371" // v371 NFC Auto Transfer371
+        const val KEY_V371RECOMMENDALGORITHM371 = "v371recommendAlgorithm371" // v371 Recommend Algorithm371
+        const val KEY_V371UPDATEAUTOCHECK371 = "v371updateAutoCheck371" // v371 Update Auto Check371
+        const val KEY_V371VRMODEENABLED371 = "v371vrModeEnabled371" // v371 VR Mode Enabled371
+        const val KEY_V371ACCESSIBILITYHIGHCONTRAST371 = "v371accessibilityHighContrast371" // v371 Accessibility High Contrast371
+        const val KEY_V371COMMENTAUTOTRANSLATE371 = "v371commentAutoTranslate371" // v371 Comment Auto Translate371
+        const val KEY_V371DATAUSAGELIMIT371 = "v371dataUsageLimit371" // v371 Data Usage Limit371
+        const val KEY_V371THUMBNAILPREVIEW371 = "v371thumbnailPreview371" // v371 Thumbnail Preview371
+        const val KEY_V372CAPTIONAUTODETECT372 = "v372captionAutoDetect372" // v372 Caption Auto Detect372
+        const val KEY_V372CAPTIONFONTSIZE372 = "v372captionFontSize372" // v372 Caption Font Size372
+        const val KEY_V372CAPTIONPOSITION372 = "v372captionPosition372" // v372 Caption Position372
+        const val KEY_V372CHROMECASTAUTOCONNECT372 = "v372chromecastAutoConnect372" // v372 Chromecast Auto Connect372
+        const val KEY_V372CHROMECASTQUALITY372 = "v372chromecastQuality372" // v372 Chromecast Quality372
+        const val KEY_V372FLOATINGWINDOWENABLED372 = "v372floatingWindowEnabled372" // v372 Floating Window Enabled372
+        const val KEY_V372FLOATINGWINDOWSIZE372 = "v372floatingWindowSize372" // v372 Floating Window Size372
+        const val KEY_V372NFCAUTOTRANSFER372 = "v372nfcAutoTransfer372" // v372 NFC Auto Transfer372
+        const val KEY_V372RECOMMENDALGORITHM372 = "v372recommendAlgorithm372" // v372 Recommend Algorithm372
+        const val KEY_V372UPDATEAUTOCHECK372 = "v372updateAutoCheck372" // v372 Update Auto Check372
+        const val KEY_V372VRMODEENABLED372 = "v372vrModeEnabled372" // v372 VR Mode Enabled372
+        const val KEY_V372ACCESSIBILITYHIGHCONTRAST372 = "v372accessibilityHighContrast372" // v372 Accessibility High Contrast372
+        const val KEY_V372COMMENTAUTOTRANSLATE372 = "v372commentAutoTranslate372" // v372 Comment Auto Translate372
+        const val KEY_V372DATAUSAGELIMIT372 = "v372dataUsageLimit372" // v372 Data Usage Limit372
+        const val KEY_V372THUMBNAILPREVIEW372 = "v372thumbnailPreview372" // v372 Thumbnail Preview372
+        const val KEY_V373CAPTIONAUTODETECT373 = "v373captionAutoDetect373" // v373 Caption Auto Detect373
+        const val KEY_V373CAPTIONFONTSIZE373 = "v373captionFontSize373" // v373 Caption Font Size373
+        const val KEY_V373CAPTIONPOSITION373 = "v373captionPosition373" // v373 Caption Position373
+        const val KEY_V373CHROMECASTAUTOCONNECT373 = "v373chromecastAutoConnect373" // v373 Chromecast Auto Connect373
+        const val KEY_V373CHROMECASTQUALITY373 = "v373chromecastQuality373" // v373 Chromecast Quality373
+        const val KEY_V373FLOATINGWINDOWENABLED373 = "v373floatingWindowEnabled373" // v373 Floating Window Enabled373
+        const val KEY_V373FLOATINGWINDOWSIZE373 = "v373floatingWindowSize373" // v373 Floating Window Size373
+        const val KEY_V373NFCAUTOTRANSFER373 = "v373nfcAutoTransfer373" // v373 NFC Auto Transfer373
+        const val KEY_V373RECOMMENDALGORITHM373 = "v373recommendAlgorithm373" // v373 Recommend Algorithm373
+        const val KEY_V373UPDATEAUTOCHECK373 = "v373updateAutoCheck373" // v373 Update Auto Check373
+        const val KEY_V373VRMODEENABLED373 = "v373vrModeEnabled373" // v373 VR Mode Enabled373
+        const val KEY_V373ACCESSIBILITYHIGHCONTRAST373 = "v373accessibilityHighContrast373" // v373 Accessibility High Contrast373
+        const val KEY_V373COMMENTAUTOTRANSLATE373 = "v373commentAutoTranslate373" // v373 Comment Auto Translate373
+        const val KEY_V373DATAUSAGELIMIT373 = "v373dataUsageLimit373" // v373 Data Usage Limit373
+        const val KEY_V373THUMBNAILPREVIEW373 = "v373thumbnailPreview373" // v373 Thumbnail Preview373
+        const val KEY_V374CAPTIONAUTODETECT374 = "v374captionAutoDetect374" // v374 Caption Auto Detect374
+        const val KEY_V374CAPTIONFONTSIZE374 = "v374captionFontSize374" // v374 Caption Font Size374
+        const val KEY_V374CAPTIONPOSITION374 = "v374captionPosition374" // v374 Caption Position374
+        const val KEY_V374CHROMECASTAUTOCONNECT374 = "v374chromecastAutoConnect374" // v374 Chromecast Auto Connect374
+        const val KEY_V374CHROMECASTQUALITY374 = "v374chromecastQuality374" // v374 Chromecast Quality374
+        const val KEY_V374FLOATINGWINDOWENABLED374 = "v374floatingWindowEnabled374" // v374 Floating Window Enabled374
+        const val KEY_V374FLOATINGWINDOWSIZE374 = "v374floatingWindowSize374" // v374 Floating Window Size374
+        const val KEY_V374NFCAUTOTRANSFER374 = "v374nfcAutoTransfer374" // v374 NFC Auto Transfer374
+        const val KEY_V374RECOMMENDALGORITHM374 = "v374recommendAlgorithm374" // v374 Recommend Algorithm374
+        const val KEY_V374UPDATEAUTOCHECK374 = "v374updateAutoCheck374" // v374 Update Auto Check374
+        const val KEY_V374VRMODEENABLED374 = "v374vrModeEnabled374" // v374 VR Mode Enabled374
+        const val KEY_V374ACCESSIBILITYHIGHCONTRAST374 = "v374accessibilityHighContrast374" // v374 Accessibility High Contrast374
+        const val KEY_V374COMMENTAUTOTRANSLATE374 = "v374commentAutoTranslate374" // v374 Comment Auto Translate374
+        const val KEY_V374DATAUSAGELIMIT374 = "v374dataUsageLimit374" // v374 Data Usage Limit374
+        const val KEY_V374THUMBNAILPREVIEW374 = "v374thumbnailPreview374" // v374 Thumbnail Preview374
+        const val KEY_V375CAPTIONAUTODETECT375 = "v375captionAutoDetect375" // v375 Caption Auto Detect375
+        const val KEY_V375CAPTIONFONTSIZE375 = "v375captionFontSize375" // v375 Caption Font Size375
+        const val KEY_V375CAPTIONPOSITION375 = "v375captionPosition375" // v375 Caption Position375
+        const val KEY_V375CHROMECASTAUTOCONNECT375 = "v375chromecastAutoConnect375" // v375 Chromecast Auto Connect375
+        const val KEY_V375CHROMECASTQUALITY375 = "v375chromecastQuality375" // v375 Chromecast Quality375
+        const val KEY_V375FLOATINGWINDOWENABLED375 = "v375floatingWindowEnabled375" // v375 Floating Window Enabled375
+        const val KEY_V375FLOATINGWINDOWSIZE375 = "v375floatingWindowSize375" // v375 Floating Window Size375
+        const val KEY_V375NFCAUTOTRANSFER375 = "v375nfcAutoTransfer375" // v375 NFC Auto Transfer375
+        const val KEY_V375RECOMMENDALGORITHM375 = "v375recommendAlgorithm375" // v375 Recommend Algorithm375
+        const val KEY_V375UPDATEAUTOCHECK375 = "v375updateAutoCheck375" // v375 Update Auto Check375
+        const val KEY_V375VRMODEENABLED375 = "v375vrModeEnabled375" // v375 VR Mode Enabled375
+        const val KEY_V375ACCESSIBILITYHIGHCONTRAST375 = "v375accessibilityHighContrast375" // v375 Accessibility High Contrast375
+        const val KEY_V375COMMENTAUTOTRANSLATE375 = "v375commentAutoTranslate375" // v375 Comment Auto Translate375
+        const val KEY_V375DATAUSAGELIMIT375 = "v375dataUsageLimit375" // v375 Data Usage Limit375
+        const val KEY_V375THUMBNAILPREVIEW375 = "v375thumbnailPreview375" // v375 Thumbnail Preview375
+        const val KEY_V376CAPTIONAUTODETECT376 = "v376captionAutoDetect376" // v376 Caption Auto Detect376
+        const val KEY_V376CAPTIONFONTSIZE376 = "v376captionFontSize376" // v376 Caption Font Size376
+        const val KEY_V376CAPTIONPOSITION376 = "v376captionPosition376" // v376 Caption Position376
+        const val KEY_V376CHROMECASTAUTOCONNECT376 = "v376chromecastAutoConnect376" // v376 Chromecast Auto Connect376
+        const val KEY_V376CHROMECASTQUALITY376 = "v376chromecastQuality376" // v376 Chromecast Quality376
+        const val KEY_V376FLOATINGWINDOWENABLED376 = "v376floatingWindowEnabled376" // v376 Floating Window Enabled376
+        const val KEY_V376FLOATINGWINDOWSIZE376 = "v376floatingWindowSize376" // v376 Floating Window Size376
+        const val KEY_V376NFCAUTOTRANSFER376 = "v376nfcAutoTransfer376" // v376 NFC Auto Transfer376
+        const val KEY_V376RECOMMENDALGORITHM376 = "v376recommendAlgorithm376" // v376 Recommend Algorithm376
+        const val KEY_V376UPDATEAUTOCHECK376 = "v376updateAutoCheck376" // v376 Update Auto Check376
+        const val KEY_V376VRMODEENABLED376 = "v376vrModeEnabled376" // v376 VR Mode Enabled376
+        const val KEY_V376ACCESSIBILITYHIGHCONTRAST376 = "v376accessibilityHighContrast376" // v376 Accessibility High Contrast376
+        const val KEY_V376COMMENTAUTOTRANSLATE376 = "v376commentAutoTranslate376" // v376 Comment Auto Translate376
+        const val KEY_V376DATAUSAGELIMIT376 = "v376dataUsageLimit376" // v376 Data Usage Limit376
+        const val KEY_V376THUMBNAILPREVIEW376 = "v376thumbnailPreview376" // v376 Thumbnail Preview376
+        const val KEY_V377CAPTIONAUTODETECT377 = "v377captionAutoDetect377" // v377 Caption Auto Detect377
+        const val KEY_V377CAPTIONFONTSIZE377 = "v377captionFontSize377" // v377 Caption Font Size377
+        const val KEY_V377CAPTIONPOSITION377 = "v377captionPosition377" // v377 Caption Position377
+        const val KEY_V377CHROMECASTAUTOCONNECT377 = "v377chromecastAutoConnect377" // v377 Chromecast Auto Connect377
+        const val KEY_V377CHROMECASTQUALITY377 = "v377chromecastQuality377" // v377 Chromecast Quality377
+        const val KEY_V377FLOATINGWINDOWENABLED377 = "v377floatingWindowEnabled377" // v377 Floating Window Enabled377
+        const val KEY_V377FLOATINGWINDOWSIZE377 = "v377floatingWindowSize377" // v377 Floating Window Size377
+        const val KEY_V377NFCAUTOTRANSFER377 = "v377nfcAutoTransfer377" // v377 NFC Auto Transfer377
+        const val KEY_V377RECOMMENDALGORITHM377 = "v377recommendAlgorithm377" // v377 Recommend Algorithm377
+        const val KEY_V377UPDATEAUTOCHECK377 = "v377updateAutoCheck377" // v377 Update Auto Check377
+        const val KEY_V377VRMODEENABLED377 = "v377vrModeEnabled377" // v377 VR Mode Enabled377
+        const val KEY_V377ACCESSIBILITYHIGHCONTRAST377 = "v377accessibilityHighContrast377" // v377 Accessibility High Contrast377
+        const val KEY_V377COMMENTAUTOTRANSLATE377 = "v377commentAutoTranslate377" // v377 Comment Auto Translate377
+        const val KEY_V377DATAUSAGELIMIT377 = "v377dataUsageLimit377" // v377 Data Usage Limit377
+        const val KEY_V377THUMBNAILPREVIEW377 = "v377thumbnailPreview377" // v377 Thumbnail Preview377
+        const val KEY_V378CAPTIONAUTODETECT378 = "v378captionAutoDetect378" // v378 Caption Auto Detect378
+        const val KEY_V378CAPTIONFONTSIZE378 = "v378captionFontSize378" // v378 Caption Font Size378
+        const val KEY_V378CAPTIONPOSITION378 = "v378captionPosition378" // v378 Caption Position378
+        const val KEY_V378CHROMECASTAUTOCONNECT378 = "v378chromecastAutoConnect378" // v378 Chromecast Auto Connect378
+        const val KEY_V378CHROMECASTQUALITY378 = "v378chromecastQuality378" // v378 Chromecast Quality378
+        const val KEY_V378FLOATINGWINDOWENABLED378 = "v378floatingWindowEnabled378" // v378 Floating Window Enabled378
+        const val KEY_V378FLOATINGWINDOWSIZE378 = "v378floatingWindowSize378" // v378 Floating Window Size378
+        const val KEY_V378NFCAUTOTRANSFER378 = "v378nfcAutoTransfer378" // v378 NFC Auto Transfer378
+        const val KEY_V378RECOMMENDALGORITHM378 = "v378recommendAlgorithm378" // v378 Recommend Algorithm378
+        const val KEY_V378UPDATEAUTOCHECK378 = "v378updateAutoCheck378" // v378 Update Auto Check378
+        const val KEY_V378VRMODEENABLED378 = "v378vrModeEnabled378" // v378 VR Mode Enabled378
+        const val KEY_V378ACCESSIBILITYHIGHCONTRAST378 = "v378accessibilityHighContrast378" // v378 Accessibility High Contrast378
+        const val KEY_V378COMMENTAUTOTRANSLATE378 = "v378commentAutoTranslate378" // v378 Comment Auto Translate378
+        const val KEY_V378DATAUSAGELIMIT378 = "v378dataUsageLimit378" // v378 Data Usage Limit378
+        const val KEY_V378THUMBNAILPREVIEW378 = "v378thumbnailPreview378" // v378 Thumbnail Preview378
+        const val KEY_V379CAPTIONAUTODETECT379 = "v379captionAutoDetect379" // v379 Caption Auto Detect379
+        const val KEY_V379CAPTIONFONTSIZE379 = "v379captionFontSize379" // v379 Caption Font Size379
+        const val KEY_V379CAPTIONPOSITION379 = "v379captionPosition379" // v379 Caption Position379
+        const val KEY_V379CHROMECASTAUTOCONNECT379 = "v379chromecastAutoConnect379" // v379 Chromecast Auto Connect379
+        const val KEY_V379CHROMECASTQUALITY379 = "v379chromecastQuality379" // v379 Chromecast Quality379
+        const val KEY_V379FLOATINGWINDOWENABLED379 = "v379floatingWindowEnabled379" // v379 Floating Window Enabled379
+        const val KEY_V379FLOATINGWINDOWSIZE379 = "v379floatingWindowSize379" // v379 Floating Window Size379
+        const val KEY_V379NFCAUTOTRANSFER379 = "v379nfcAutoTransfer379" // v379 NFC Auto Transfer379
+        const val KEY_V379RECOMMENDALGORITHM379 = "v379recommendAlgorithm379" // v379 Recommend Algorithm379
+        const val KEY_V379UPDATEAUTOCHECK379 = "v379updateAutoCheck379" // v379 Update Auto Check379
+        const val KEY_V379VRMODEENABLED379 = "v379vrModeEnabled379" // v379 VR Mode Enabled379
+        const val KEY_V379ACCESSIBILITYHIGHCONTRAST379 = "v379accessibilityHighContrast379" // v379 Accessibility High Contrast379
+        const val KEY_V379COMMENTAUTOTRANSLATE379 = "v379commentAutoTranslate379" // v379 Comment Auto Translate379
+        const val KEY_V379DATAUSAGELIMIT379 = "v379dataUsageLimit379" // v379 Data Usage Limit379
+        const val KEY_V379THUMBNAILPREVIEW379 = "v379thumbnailPreview379" // v379 Thumbnail Preview379
+        const val KEY_V380CAPTIONAUTODETECT380 = "v380captionAutoDetect380" // v380 Caption Auto Detect380
+        const val KEY_V380CAPTIONFONTSIZE380 = "v380captionFontSize380" // v380 Caption Font Size380
+        const val KEY_V380CAPTIONPOSITION380 = "v380captionPosition380" // v380 Caption Position380
+        const val KEY_V380CHROMECASTAUTOCONNECT380 = "v380chromecastAutoConnect380" // v380 Chromecast Auto Connect380
+        const val KEY_V380CHROMECASTQUALITY380 = "v380chromecastQuality380" // v380 Chromecast Quality380
+        const val KEY_V380FLOATINGWINDOWENABLED380 = "v380floatingWindowEnabled380" // v380 Floating Window Enabled380
+        const val KEY_V380FLOATINGWINDOWSIZE380 = "v380floatingWindowSize380" // v380 Floating Window Size380
+        const val KEY_V380NFCAUTOTRANSFER380 = "v380nfcAutoTransfer380" // v380 NFC Auto Transfer380
+        const val KEY_V380RECOMMENDALGORITHM380 = "v380recommendAlgorithm380" // v380 Recommend Algorithm380
+        const val KEY_V380UPDATEAUTOCHECK380 = "v380updateAutoCheck380" // v380 Update Auto Check380
+        const val KEY_V380VRMODEENABLED380 = "v380vrModeEnabled380" // v380 VR Mode Enabled380
+        const val KEY_V380ACCESSIBILITYHIGHCONTRAST380 = "v380accessibilityHighContrast380" // v380 Accessibility High Contrast380
+        const val KEY_V380COMMENTAUTOTRANSLATE380 = "v380commentAutoTranslate380" // v380 Comment Auto Translate380
+        const val KEY_V380DATAUSAGELIMIT380 = "v380dataUsageLimit380" // v380 Data Usage Limit380
+        const val KEY_V380THUMBNAILPREVIEW380 = "v380thumbnailPreview380" // v380 Thumbnail Preview380
     }
 }
