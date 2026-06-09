@@ -133,4 +133,24 @@ object FeaturePrefsStore {
     val batch1971: FeaturePrefs1971 by lazy { FeaturePrefs1971(BlblApp.instance) }
     val batch1981: FeaturePrefs1981 by lazy { FeaturePrefs1981(BlblApp.instance) }
     val batch1991: FeaturePrefs1991 by lazy { FeaturePrefs1991(BlblApp.instance) }
+    val batch2001: FeaturePrefs2001 by lazy { FeaturePrefs2001(BlblApp.instance) }
+    val batch2011: FeaturePrefs2011 by lazy { FeaturePrefs2011(BlblApp.instance) }
+    val batch2021: FeaturePrefs2021 by lazy { FeaturePrefs2021(BlblApp.instance) }
+    val batch2031: FeaturePrefs2031 by lazy { FeaturePrefs2031(BlblApp.instance) }
+    val batch2041: FeaturePrefs2041 by lazy { FeaturePrefs2041(BlblApp.instance) }
+    val batch2051: FeaturePrefs2051 by lazy { FeaturePrefs2051(BlblApp.instance) }
+    val batch2061: FeaturePrefs2061 by lazy { FeaturePrefs2061(BlblApp.instance) }
+    val batch2071: FeaturePrefs2071 by lazy { FeaturePrefs2071(BlblApp.instance) }
+    val batch2081: FeaturePrefs2081 by lazy { FeaturePrefs2081(BlblApp.instance) }
+    val batch2091: FeaturePrefs2091 by lazy { FeaturePrefs2091(BlblApp.instance) }
+    val batch2101: FeaturePrefs2101 by lazy { FeaturePrefs2101(BlblApp.instance) }
+    val batch2111: FeaturePrefs2111 by lazy { FeaturePrefs2111(BlblApp.instance) }
+    val batch2121: FeaturePrefs2121 by lazy { FeaturePrefs2121(BlblApp.instance) }
+    val batch2131: FeaturePrefs2131 by lazy { FeaturePrefs2131(BlblApp.instance) }
+    val batch2141: FeaturePrefs2141 by lazy { FeaturePrefs2141(BlblApp.instance) }
+    val batch2151: FeaturePrefs2151 by lazy { FeaturePrefs2151(BlblApp.instance) }
+    val batch2161: FeaturePrefs2161 by lazy { FeaturePrefs2161(BlblApp.instance) }
+    val batch2171: FeaturePrefs2171 by lazy { FeaturePrefs2171(BlblApp.instance) }
+    val batch2181: FeaturePrefs2181 by lazy { FeaturePrefs2181(BlblApp.instance) }
+    val batch2191: FeaturePrefs2191 by lazy { FeaturePrefs2191(BlblApp.instance) }
 }
