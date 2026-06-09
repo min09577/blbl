@@ -5,10 +5,6 @@ import android.content.Context
 class FeaturePrefs761(context: Context) {
     private val prefs = context.getSharedPreferences("feature_prefs_761", Context.MODE_PRIVATE)
 
-    var v761context: Boolean
-        get() = prefs.getBoolean("v761context", false)
-        set(value) = prefs.edit().putBoolean("v761context", value).apply()
-
     var v761contract: Boolean
         get() = prefs.getBoolean("v761contract", false)
         set(value) = prefs.edit().putBoolean("v761contract", value).apply()
@@ -25,9 +21,9 @@ class FeaturePrefs761(context: Context) {
         get() = prefs.getBoolean("v761coordinate", false)
         set(value) = prefs.edit().putBoolean("v761coordinate", value).apply()
 
-    var v761copy: Int
-        get() = prefs.getInt("v761copy", 0)
-        set(value) = prefs.edit().putInt("v761copy", value).apply()
+    var v761copy: Boolean
+        get() = prefs.getBoolean("v761copy", false)
+        set(value) = prefs.edit().putBoolean("v761copy", value).apply()
 
     var v761core: Int
         get() = prefs.getInt("v761core", 0)
@@ -45,9 +41,9 @@ class FeaturePrefs761(context: Context) {
         get() = prefs.getInt("v761crash", 0)
         set(value) = prefs.edit().putInt("v761crash", value).apply()
 
-    var v761create: Boolean
-        get() = prefs.getBoolean("v761create", false)
-        set(value) = prefs.edit().putBoolean("v761create", value).apply()
+    var v761create: Int
+        get() = prefs.getInt("v761create", 0)
+        set(value) = prefs.edit().putInt("v761create", value).apply()
 
     var v761crop: Boolean
         get() = prefs.getBoolean("v761crop", false)
@@ -65,9 +61,9 @@ class FeaturePrefs761(context: Context) {
         get() = prefs.getBoolean("v761cursor", false)
         set(value) = prefs.edit().putBoolean("v761cursor", value).apply()
 
-    var v762context: Boolean
-        get() = prefs.getBoolean("v762context", false)
-        set(value) = prefs.edit().putBoolean("v762context", value).apply()
+    var v761curve: Boolean
+        get() = prefs.getBoolean("v761curve", false)
+        set(value) = prefs.edit().putBoolean("v761curve", value).apply()
 
     var v762contract: Boolean
         get() = prefs.getBoolean("v762contract", false)
@@ -85,9 +81,9 @@ class FeaturePrefs761(context: Context) {
         get() = prefs.getBoolean("v762coordinate", false)
         set(value) = prefs.edit().putBoolean("v762coordinate", value).apply()
 
-    var v762copy: Int
-        get() = prefs.getInt("v762copy", 0)
-        set(value) = prefs.edit().putInt("v762copy", value).apply()
+    var v762copy: Boolean
+        get() = prefs.getBoolean("v762copy", false)
+        set(value) = prefs.edit().putBoolean("v762copy", value).apply()
 
     var v762core: Int
         get() = prefs.getInt("v762core", 0)
@@ -105,9 +101,9 @@ class FeaturePrefs761(context: Context) {
         get() = prefs.getInt("v762crash", 0)
         set(value) = prefs.edit().putInt("v762crash", value).apply()
 
-    var v762create: Boolean
-        get() = prefs.getBoolean("v762create", false)
-        set(value) = prefs.edit().putBoolean("v762create", value).apply()
+    var v762create: Int
+        get() = prefs.getInt("v762create", 0)
+        set(value) = prefs.edit().putInt("v762create", value).apply()
 
     var v762crop: Boolean
         get() = prefs.getBoolean("v762crop", false)
@@ -125,9 +121,9 @@ class FeaturePrefs761(context: Context) {
         get() = prefs.getBoolean("v762cursor", false)
         set(value) = prefs.edit().putBoolean("v762cursor", value).apply()
 
-    var v763context: Boolean
-        get() = prefs.getBoolean("v763context", false)
-        set(value) = prefs.edit().putBoolean("v763context", value).apply()
+    var v762curve: Boolean
+        get() = prefs.getBoolean("v762curve", false)
+        set(value) = prefs.edit().putBoolean("v762curve", value).apply()
 
     var v763contract: Boolean
         get() = prefs.getBoolean("v763contract", false)
@@ -145,9 +141,9 @@ class FeaturePrefs761(context: Context) {
         get() = prefs.getBoolean("v763coordinate", false)
         set(value) = prefs.edit().putBoolean("v763coordinate", value).apply()
 
-    var v763copy: Int
-        get() = prefs.getInt("v763copy", 0)
-        set(value) = prefs.edit().putInt("v763copy", value).apply()
+    var v763copy: Boolean
+        get() = prefs.getBoolean("v763copy", false)
+        set(value) = prefs.edit().putBoolean("v763copy", value).apply()
 
     var v763core: Int
         get() = prefs.getInt("v763core", 0)
@@ -165,9 +161,9 @@ class FeaturePrefs761(context: Context) {
         get() = prefs.getInt("v763crash", 0)
         set(value) = prefs.edit().putInt("v763crash", value).apply()
 
-    var v763create: Boolean
-        get() = prefs.getBoolean("v763create", false)
-        set(value) = prefs.edit().putBoolean("v763create", value).apply()
+    var v763create: Int
+        get() = prefs.getInt("v763create", 0)
+        set(value) = prefs.edit().putInt("v763create", value).apply()
 
     var v763crop: Boolean
         get() = prefs.getBoolean("v763crop", false)
@@ -185,9 +181,9 @@ class FeaturePrefs761(context: Context) {
         get() = prefs.getBoolean("v763cursor", false)
         set(value) = prefs.edit().putBoolean("v763cursor", value).apply()
 
-    var v764context: Boolean
-        get() = prefs.getBoolean("v764context", false)
-        set(value) = prefs.edit().putBoolean("v764context", value).apply()
+    var v763curve: Boolean
+        get() = prefs.getBoolean("v763curve", false)
+        set(value) = prefs.edit().putBoolean("v763curve", value).apply()
 
     var v764contract: Boolean
         get() = prefs.getBoolean("v764contract", false)
@@ -205,9 +201,9 @@ class FeaturePrefs761(context: Context) {
         get() = prefs.getBoolean("v764coordinate", false)
         set(value) = prefs.edit().putBoolean("v764coordinate", value).apply()
 
-    var v764copy: Int
-        get() = prefs.getInt("v764copy", 0)
-        set(value) = prefs.edit().putInt("v764copy", value).apply()
+    var v764copy: Boolean
+        get() = prefs.getBoolean("v764copy", false)
+        set(value) = prefs.edit().putBoolean("v764copy", value).apply()
 
     var v764core: Int
         get() = prefs.getInt("v764core", 0)
@@ -225,9 +221,9 @@ class FeaturePrefs761(context: Context) {
         get() = prefs.getInt("v764crash", 0)
         set(value) = prefs.edit().putInt("v764crash", value).apply()
 
-    var v764create: Boolean
-        get() = prefs.getBoolean("v764create", false)
-        set(value) = prefs.edit().putBoolean("v764create", value).apply()
+    var v764create: Int
+        get() = prefs.getInt("v764create", 0)
+        set(value) = prefs.edit().putInt("v764create", value).apply()
 
     var v764crop: Boolean
         get() = prefs.getBoolean("v764crop", false)
@@ -245,9 +241,9 @@ class FeaturePrefs761(context: Context) {
         get() = prefs.getBoolean("v764cursor", false)
         set(value) = prefs.edit().putBoolean("v764cursor", value).apply()
 
-    var v765context: Boolean
-        get() = prefs.getBoolean("v765context", false)
-        set(value) = prefs.edit().putBoolean("v765context", value).apply()
+    var v764curve: Boolean
+        get() = prefs.getBoolean("v764curve", false)
+        set(value) = prefs.edit().putBoolean("v764curve", value).apply()
 
     var v765contract: Boolean
         get() = prefs.getBoolean("v765contract", false)
@@ -265,9 +261,9 @@ class FeaturePrefs761(context: Context) {
         get() = prefs.getBoolean("v765coordinate", false)
         set(value) = prefs.edit().putBoolean("v765coordinate", value).apply()
 
-    var v765copy: Int
-        get() = prefs.getInt("v765copy", 0)
-        set(value) = prefs.edit().putInt("v765copy", value).apply()
+    var v765copy: Boolean
+        get() = prefs.getBoolean("v765copy", false)
+        set(value) = prefs.edit().putBoolean("v765copy", value).apply()
 
     var v765core: Int
         get() = prefs.getInt("v765core", 0)
@@ -285,9 +281,9 @@ class FeaturePrefs761(context: Context) {
         get() = prefs.getInt("v765crash", 0)
         set(value) = prefs.edit().putInt("v765crash", value).apply()
 
-    var v765create: Boolean
-        get() = prefs.getBoolean("v765create", false)
-        set(value) = prefs.edit().putBoolean("v765create", value).apply()
+    var v765create: Int
+        get() = prefs.getInt("v765create", 0)
+        set(value) = prefs.edit().putInt("v765create", value).apply()
 
     var v765crop: Boolean
         get() = prefs.getBoolean("v765crop", false)
@@ -305,9 +301,9 @@ class FeaturePrefs761(context: Context) {
         get() = prefs.getBoolean("v765cursor", false)
         set(value) = prefs.edit().putBoolean("v765cursor", value).apply()
 
-    var v766context: Boolean
-        get() = prefs.getBoolean("v766context", false)
-        set(value) = prefs.edit().putBoolean("v766context", value).apply()
+    var v765curve: Boolean
+        get() = prefs.getBoolean("v765curve", false)
+        set(value) = prefs.edit().putBoolean("v765curve", value).apply()
 
     var v766contract: Boolean
         get() = prefs.getBoolean("v766contract", false)
@@ -325,9 +321,9 @@ class FeaturePrefs761(context: Context) {
         get() = prefs.getBoolean("v766coordinate", false)
         set(value) = prefs.edit().putBoolean("v766coordinate", value).apply()
 
-    var v766copy: Int
-        get() = prefs.getInt("v766copy", 0)
-        set(value) = prefs.edit().putInt("v766copy", value).apply()
+    var v766copy: Boolean
+        get() = prefs.getBoolean("v766copy", false)
+        set(value) = prefs.edit().putBoolean("v766copy", value).apply()
 
     var v766core: Int
         get() = prefs.getInt("v766core", 0)
@@ -345,9 +341,9 @@ class FeaturePrefs761(context: Context) {
         get() = prefs.getInt("v766crash", 0)
         set(value) = prefs.edit().putInt("v766crash", value).apply()
 
-    var v766create: Boolean
-        get() = prefs.getBoolean("v766create", false)
-        set(value) = prefs.edit().putBoolean("v766create", value).apply()
+    var v766create: Int
+        get() = prefs.getInt("v766create", 0)
+        set(value) = prefs.edit().putInt("v766create", value).apply()
 
     var v766crop: Boolean
         get() = prefs.getBoolean("v766crop", false)
@@ -365,9 +361,9 @@ class FeaturePrefs761(context: Context) {
         get() = prefs.getBoolean("v766cursor", false)
         set(value) = prefs.edit().putBoolean("v766cursor", value).apply()
 
-    var v767context: Boolean
-        get() = prefs.getBoolean("v767context", false)
-        set(value) = prefs.edit().putBoolean("v767context", value).apply()
+    var v766curve: Boolean
+        get() = prefs.getBoolean("v766curve", false)
+        set(value) = prefs.edit().putBoolean("v766curve", value).apply()
 
     var v767contract: Boolean
         get() = prefs.getBoolean("v767contract", false)
@@ -385,9 +381,9 @@ class FeaturePrefs761(context: Context) {
         get() = prefs.getBoolean("v767coordinate", false)
         set(value) = prefs.edit().putBoolean("v767coordinate", value).apply()
 
-    var v767copy: Int
-        get() = prefs.getInt("v767copy", 0)
-        set(value) = prefs.edit().putInt("v767copy", value).apply()
+    var v767copy: Boolean
+        get() = prefs.getBoolean("v767copy", false)
+        set(value) = prefs.edit().putBoolean("v767copy", value).apply()
 
     var v767core: Int
         get() = prefs.getInt("v767core", 0)
@@ -405,9 +401,9 @@ class FeaturePrefs761(context: Context) {
         get() = prefs.getInt("v767crash", 0)
         set(value) = prefs.edit().putInt("v767crash", value).apply()
 
-    var v767create: Boolean
-        get() = prefs.getBoolean("v767create", false)
-        set(value) = prefs.edit().putBoolean("v767create", value).apply()
+    var v767create: Int
+        get() = prefs.getInt("v767create", 0)
+        set(value) = prefs.edit().putInt("v767create", value).apply()
 
     var v767crop: Boolean
         get() = prefs.getBoolean("v767crop", false)
@@ -425,9 +421,9 @@ class FeaturePrefs761(context: Context) {
         get() = prefs.getBoolean("v767cursor", false)
         set(value) = prefs.edit().putBoolean("v767cursor", value).apply()
 
-    var v768context: Boolean
-        get() = prefs.getBoolean("v768context", false)
-        set(value) = prefs.edit().putBoolean("v768context", value).apply()
+    var v767curve: Boolean
+        get() = prefs.getBoolean("v767curve", false)
+        set(value) = prefs.edit().putBoolean("v767curve", value).apply()
 
     var v768contract: Boolean
         get() = prefs.getBoolean("v768contract", false)
@@ -445,9 +441,9 @@ class FeaturePrefs761(context: Context) {
         get() = prefs.getBoolean("v768coordinate", false)
         set(value) = prefs.edit().putBoolean("v768coordinate", value).apply()
 
-    var v768copy: Int
-        get() = prefs.getInt("v768copy", 0)
-        set(value) = prefs.edit().putInt("v768copy", value).apply()
+    var v768copy: Boolean
+        get() = prefs.getBoolean("v768copy", false)
+        set(value) = prefs.edit().putBoolean("v768copy", value).apply()
 
     var v768core: Int
         get() = prefs.getInt("v768core", 0)
@@ -465,9 +461,9 @@ class FeaturePrefs761(context: Context) {
         get() = prefs.getInt("v768crash", 0)
         set(value) = prefs.edit().putInt("v768crash", value).apply()
 
-    var v768create: Boolean
-        get() = prefs.getBoolean("v768create", false)
-        set(value) = prefs.edit().putBoolean("v768create", value).apply()
+    var v768create: Int
+        get() = prefs.getInt("v768create", 0)
+        set(value) = prefs.edit().putInt("v768create", value).apply()
 
     var v768crop: Boolean
         get() = prefs.getBoolean("v768crop", false)
@@ -485,9 +481,9 @@ class FeaturePrefs761(context: Context) {
         get() = prefs.getBoolean("v768cursor", false)
         set(value) = prefs.edit().putBoolean("v768cursor", value).apply()
 
-    var v769context: Boolean
-        get() = prefs.getBoolean("v769context", false)
-        set(value) = prefs.edit().putBoolean("v769context", value).apply()
+    var v768curve: Boolean
+        get() = prefs.getBoolean("v768curve", false)
+        set(value) = prefs.edit().putBoolean("v768curve", value).apply()
 
     var v769contract: Boolean
         get() = prefs.getBoolean("v769contract", false)
@@ -505,9 +501,9 @@ class FeaturePrefs761(context: Context) {
         get() = prefs.getBoolean("v769coordinate", false)
         set(value) = prefs.edit().putBoolean("v769coordinate", value).apply()
 
-    var v769copy: Int
-        get() = prefs.getInt("v769copy", 0)
-        set(value) = prefs.edit().putInt("v769copy", value).apply()
+    var v769copy: Boolean
+        get() = prefs.getBoolean("v769copy", false)
+        set(value) = prefs.edit().putBoolean("v769copy", value).apply()
 
     var v769core: Int
         get() = prefs.getInt("v769core", 0)
@@ -525,9 +521,9 @@ class FeaturePrefs761(context: Context) {
         get() = prefs.getInt("v769crash", 0)
         set(value) = prefs.edit().putInt("v769crash", value).apply()
 
-    var v769create: Boolean
-        get() = prefs.getBoolean("v769create", false)
-        set(value) = prefs.edit().putBoolean("v769create", value).apply()
+    var v769create: Int
+        get() = prefs.getInt("v769create", 0)
+        set(value) = prefs.edit().putInt("v769create", value).apply()
 
     var v769crop: Boolean
         get() = prefs.getBoolean("v769crop", false)
@@ -545,9 +541,9 @@ class FeaturePrefs761(context: Context) {
         get() = prefs.getBoolean("v769cursor", false)
         set(value) = prefs.edit().putBoolean("v769cursor", value).apply()
 
-    var v770context: Boolean
-        get() = prefs.getBoolean("v770context", false)
-        set(value) = prefs.edit().putBoolean("v770context", value).apply()
+    var v769curve: Boolean
+        get() = prefs.getBoolean("v769curve", false)
+        set(value) = prefs.edit().putBoolean("v769curve", value).apply()
 
     var v770contract: Boolean
         get() = prefs.getBoolean("v770contract", false)
@@ -565,9 +561,9 @@ class FeaturePrefs761(context: Context) {
         get() = prefs.getBoolean("v770coordinate", false)
         set(value) = prefs.edit().putBoolean("v770coordinate", value).apply()
 
-    var v770copy: Int
-        get() = prefs.getInt("v770copy", 0)
-        set(value) = prefs.edit().putInt("v770copy", value).apply()
+    var v770copy: Boolean
+        get() = prefs.getBoolean("v770copy", false)
+        set(value) = prefs.edit().putBoolean("v770copy", value).apply()
 
     var v770core: Int
         get() = prefs.getInt("v770core", 0)
@@ -585,9 +581,9 @@ class FeaturePrefs761(context: Context) {
         get() = prefs.getInt("v770crash", 0)
         set(value) = prefs.edit().putInt("v770crash", value).apply()
 
-    var v770create: Boolean
-        get() = prefs.getBoolean("v770create", false)
-        set(value) = prefs.edit().putBoolean("v770create", value).apply()
+    var v770create: Int
+        get() = prefs.getInt("v770create", 0)
+        set(value) = prefs.edit().putInt("v770create", value).apply()
 
     var v770crop: Boolean
         get() = prefs.getBoolean("v770crop", false)
@@ -604,5 +600,9 @@ class FeaturePrefs761(context: Context) {
     var v770cursor: Boolean
         get() = prefs.getBoolean("v770cursor", false)
         set(value) = prefs.edit().putBoolean("v770cursor", value).apply()
+
+    var v770curve: Boolean
+        get() = prefs.getBoolean("v770curve", false)
+        set(value) = prefs.edit().putBoolean("v770curve", value).apply()
 
 }

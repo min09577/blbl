@@ -3,1453 +3,1453 @@ package blbl.cat3399.feature.player
 import blbl.cat3399.core.prefs.FeaturePrefsStore
 import blbl.cat3399.core.ui.AppToast
 
-// v721: callback mode
-internal fun PlayerActivity.showV721CallbackToggle() {
-    val current = FeaturePrefsStore.batch721.v721callback
-    FeaturePrefsStore.batch721.v721callback = !current
-    AppToast.show(this, "callback: ${if (!current) "ON" else "OFF"}")
-}
-
-// v721: cancel mode
-internal fun PlayerActivity.showV721CancelToggle() {
-    val current = FeaturePrefsStore.batch721.v721cancel
-    FeaturePrefsStore.batch721.v721cancel = !current
+// v731: cancel mode
+internal fun PlayerActivity.showV731CancelToggle() {
+    val current = FeaturePrefsStore.batch731.v731cancel
+    FeaturePrefsStore.batch731.v731cancel = !current
     AppToast.show(this, "cancel: ${if (!current) "ON" else "OFF"}")
 }
 
-// v721: capture mode
-internal fun PlayerActivity.showV721CaptureToggle() {
-    val current = FeaturePrefsStore.batch721.v721capture
-    FeaturePrefsStore.batch721.v721capture = !current
+// v731: capture mode
+internal fun PlayerActivity.showV731CaptureToggle() {
+    val current = FeaturePrefsStore.batch731.v731capture
+    FeaturePrefsStore.batch731.v731capture = !current
     AppToast.show(this, "capture: ${if (!current) "ON" else "OFF"}")
 }
 
-// v721: cascade mode
-internal fun PlayerActivity.showV721CascadeToggle() {
-    val current = FeaturePrefsStore.batch721.v721cascade
-    FeaturePrefsStore.batch721.v721cascade = !current
+// v731: cascade mode
+internal fun PlayerActivity.showV731CascadeToggle() {
+    val current = FeaturePrefsStore.batch731.v731cascade
+    FeaturePrefsStore.batch731.v731cascade = !current
     AppToast.show(this, "cascade: ${if (!current) "ON" else "OFF"}")
 }
 
-// v721: category mode
-internal fun PlayerActivity.showV721CategoryToggle() {
-    val current = FeaturePrefsStore.batch721.v721category
-    FeaturePrefsStore.batch721.v721category = !current
+// v731: category mode
+internal fun PlayerActivity.showV731CategoryToggle() {
+    val current = FeaturePrefsStore.batch731.v731category
+    FeaturePrefsStore.batch731.v731category = !current
     AppToast.show(this, "category: ${if (!current) "ON" else "OFF"}")
 }
 
-// v721: chain level
-internal fun PlayerActivity.showV721ChainDialog() {
-    val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v721chain).takeIf { it >= 0 } ?: 0
-    showSettingsChoiceDialog(
-        title = "chain level",
-        options = options,
-        checkedIndex = currentIndex,
-        label = { "$it" },
-    ) { value ->
-        FeaturePrefsStore.batch721.v721chain = value
-        AppToast.show(this, "chain: $value")
-    }
+// v731: chain mode
+internal fun PlayerActivity.showV731ChainToggle() {
+    val current = FeaturePrefsStore.batch731.v731chain
+    FeaturePrefsStore.batch731.v731chain = !current
+    AppToast.show(this, "chain: ${if (!current) "ON" else "OFF"}")
 }
 
-// v721: challenge level
-internal fun PlayerActivity.showV721ChallengeDialog() {
+// v731: challenge level
+internal fun PlayerActivity.showV731ChallengeDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v721challenge).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v731challenge).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
         title = "challenge level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch721.v721challenge = value
+        FeaturePrefsStore.batch731.v731challenge = value
         AppToast.show(this, "challenge: $value")
     }
 }
 
-// v721: channel level
-internal fun PlayerActivity.showV721ChannelDialog() {
+// v731: channel level
+internal fun PlayerActivity.showV731ChannelDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v721channel).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v731channel).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
         title = "channel level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch721.v721channel = value
+        FeaturePrefsStore.batch731.v731channel = value
         AppToast.show(this, "channel: $value")
     }
 }
 
-// v721: chart level
-internal fun PlayerActivity.showV721ChartDialog() {
+// v731: chart level
+internal fun PlayerActivity.showV731ChartDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v721chart).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v731chart).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
         title = "chart level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch721.v721chart = value
+        FeaturePrefsStore.batch731.v731chart = value
         AppToast.show(this, "chart: $value")
     }
 }
 
-// v721: checkpoint level
-internal fun PlayerActivity.showV721CheckpointDialog() {
+// v731: checkpoint level
+internal fun PlayerActivity.showV731CheckpointDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v721checkpoint).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v731checkpoint).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
         title = "checkpoint level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch721.v721checkpoint = value
+        FeaturePrefsStore.batch731.v731checkpoint = value
         AppToast.show(this, "checkpoint: $value")
     }
 }
 
-// v721: chunk mode
-internal fun PlayerActivity.showV721ChunkToggle() {
-    val current = FeaturePrefsStore.batch721.v721chunk
-    FeaturePrefsStore.batch721.v721chunk = !current
-    AppToast.show(this, "chunk: ${if (!current) "ON" else "OFF"}")
-}
-
-// v721: cipher mode
-internal fun PlayerActivity.showV721CipherToggle() {
-    val current = FeaturePrefsStore.batch721.v721cipher
-    FeaturePrefsStore.batch721.v721cipher = !current
-    AppToast.show(this, "cipher: ${if (!current) "ON" else "OFF"}")
-}
-
-// v721: clamp mode
-internal fun PlayerActivity.showV721ClampToggle() {
-    val current = FeaturePrefsStore.batch721.v721clamp
-    FeaturePrefsStore.batch721.v721clamp = !current
-    AppToast.show(this, "clamp: ${if (!current) "ON" else "OFF"}")
-}
-
-// v721: classify mode
-internal fun PlayerActivity.showV721ClassifyToggle() {
-    val current = FeaturePrefsStore.batch721.v721classify
-    FeaturePrefsStore.batch721.v721classify = !current
-    AppToast.show(this, "classify: ${if (!current) "ON" else "OFF"}")
-}
-
-// v721: clean mode
-internal fun PlayerActivity.showV721CleanToggle() {
-    val current = FeaturePrefsStore.batch721.v721clean
-    FeaturePrefsStore.batch721.v721clean = !current
-    AppToast.show(this, "clean: ${if (!current) "ON" else "OFF"}")
-}
-
-// v722: callback mode
-internal fun PlayerActivity.showV722CallbackToggle() {
-    val current = FeaturePrefsStore.batch721.v722callback
-    FeaturePrefsStore.batch721.v722callback = !current
-    AppToast.show(this, "callback: ${if (!current) "ON" else "OFF"}")
-}
-
-// v722: cancel mode
-internal fun PlayerActivity.showV722CancelToggle() {
-    val current = FeaturePrefsStore.batch721.v722cancel
-    FeaturePrefsStore.batch721.v722cancel = !current
-    AppToast.show(this, "cancel: ${if (!current) "ON" else "OFF"}")
-}
-
-// v722: capture mode
-internal fun PlayerActivity.showV722CaptureToggle() {
-    val current = FeaturePrefsStore.batch721.v722capture
-    FeaturePrefsStore.batch721.v722capture = !current
-    AppToast.show(this, "capture: ${if (!current) "ON" else "OFF"}")
-}
-
-// v722: cascade mode
-internal fun PlayerActivity.showV722CascadeToggle() {
-    val current = FeaturePrefsStore.batch721.v722cascade
-    FeaturePrefsStore.batch721.v722cascade = !current
-    AppToast.show(this, "cascade: ${if (!current) "ON" else "OFF"}")
-}
-
-// v722: category mode
-internal fun PlayerActivity.showV722CategoryToggle() {
-    val current = FeaturePrefsStore.batch721.v722category
-    FeaturePrefsStore.batch721.v722category = !current
-    AppToast.show(this, "category: ${if (!current) "ON" else "OFF"}")
-}
-
-// v722: chain level
-internal fun PlayerActivity.showV722ChainDialog() {
+// v731: chunk level
+internal fun PlayerActivity.showV731ChunkDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v722chain).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v731chunk).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "chain level",
+        title = "chunk level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch721.v722chain = value
-        AppToast.show(this, "chain: $value")
+        FeaturePrefsStore.batch731.v731chunk = value
+        AppToast.show(this, "chunk: $value")
     }
 }
 
-// v722: challenge level
-internal fun PlayerActivity.showV722ChallengeDialog() {
+// v731: cipher mode
+internal fun PlayerActivity.showV731CipherToggle() {
+    val current = FeaturePrefsStore.batch731.v731cipher
+    FeaturePrefsStore.batch731.v731cipher = !current
+    AppToast.show(this, "cipher: ${if (!current) "ON" else "OFF"}")
+}
+
+// v731: clamp mode
+internal fun PlayerActivity.showV731ClampToggle() {
+    val current = FeaturePrefsStore.batch731.v731clamp
+    FeaturePrefsStore.batch731.v731clamp = !current
+    AppToast.show(this, "clamp: ${if (!current) "ON" else "OFF"}")
+}
+
+// v731: classify mode
+internal fun PlayerActivity.showV731ClassifyToggle() {
+    val current = FeaturePrefsStore.batch731.v731classify
+    FeaturePrefsStore.batch731.v731classify = !current
+    AppToast.show(this, "classify: ${if (!current) "ON" else "OFF"}")
+}
+
+// v731: clean mode
+internal fun PlayerActivity.showV731CleanToggle() {
+    val current = FeaturePrefsStore.batch731.v731clean
+    FeaturePrefsStore.batch731.v731clean = !current
+    AppToast.show(this, "clean: ${if (!current) "ON" else "OFF"}")
+}
+
+// v731: clear mode
+internal fun PlayerActivity.showV731ClearToggle() {
+    val current = FeaturePrefsStore.batch731.v731clear
+    FeaturePrefsStore.batch731.v731clear = !current
+    AppToast.show(this, "clear: ${if (!current) "ON" else "OFF"}")
+}
+
+// v732: cancel mode
+internal fun PlayerActivity.showV732CancelToggle() {
+    val current = FeaturePrefsStore.batch731.v732cancel
+    FeaturePrefsStore.batch731.v732cancel = !current
+    AppToast.show(this, "cancel: ${if (!current) "ON" else "OFF"}")
+}
+
+// v732: capture mode
+internal fun PlayerActivity.showV732CaptureToggle() {
+    val current = FeaturePrefsStore.batch731.v732capture
+    FeaturePrefsStore.batch731.v732capture = !current
+    AppToast.show(this, "capture: ${if (!current) "ON" else "OFF"}")
+}
+
+// v732: cascade mode
+internal fun PlayerActivity.showV732CascadeToggle() {
+    val current = FeaturePrefsStore.batch731.v732cascade
+    FeaturePrefsStore.batch731.v732cascade = !current
+    AppToast.show(this, "cascade: ${if (!current) "ON" else "OFF"}")
+}
+
+// v732: category mode
+internal fun PlayerActivity.showV732CategoryToggle() {
+    val current = FeaturePrefsStore.batch731.v732category
+    FeaturePrefsStore.batch731.v732category = !current
+    AppToast.show(this, "category: ${if (!current) "ON" else "OFF"}")
+}
+
+// v732: chain mode
+internal fun PlayerActivity.showV732ChainToggle() {
+    val current = FeaturePrefsStore.batch731.v732chain
+    FeaturePrefsStore.batch731.v732chain = !current
+    AppToast.show(this, "chain: ${if (!current) "ON" else "OFF"}")
+}
+
+// v732: challenge level
+internal fun PlayerActivity.showV732ChallengeDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v722challenge).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v732challenge).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
         title = "challenge level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch721.v722challenge = value
+        FeaturePrefsStore.batch731.v732challenge = value
         AppToast.show(this, "challenge: $value")
     }
 }
 
-// v722: channel level
-internal fun PlayerActivity.showV722ChannelDialog() {
+// v732: channel level
+internal fun PlayerActivity.showV732ChannelDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v722channel).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v732channel).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
         title = "channel level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch721.v722channel = value
+        FeaturePrefsStore.batch731.v732channel = value
         AppToast.show(this, "channel: $value")
     }
 }
 
-// v722: chart level
-internal fun PlayerActivity.showV722ChartDialog() {
+// v732: chart level
+internal fun PlayerActivity.showV732ChartDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v722chart).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v732chart).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
         title = "chart level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch721.v722chart = value
+        FeaturePrefsStore.batch731.v732chart = value
         AppToast.show(this, "chart: $value")
     }
 }
 
-// v722: checkpoint level
-internal fun PlayerActivity.showV722CheckpointDialog() {
+// v732: checkpoint level
+internal fun PlayerActivity.showV732CheckpointDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v722checkpoint).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v732checkpoint).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
         title = "checkpoint level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch721.v722checkpoint = value
+        FeaturePrefsStore.batch731.v732checkpoint = value
         AppToast.show(this, "checkpoint: $value")
     }
 }
 
-// v722: chunk mode
-internal fun PlayerActivity.showV722ChunkToggle() {
-    val current = FeaturePrefsStore.batch721.v722chunk
-    FeaturePrefsStore.batch721.v722chunk = !current
-    AppToast.show(this, "chunk: ${if (!current) "ON" else "OFF"}")
-}
-
-// v722: cipher mode
-internal fun PlayerActivity.showV722CipherToggle() {
-    val current = FeaturePrefsStore.batch721.v722cipher
-    FeaturePrefsStore.batch721.v722cipher = !current
-    AppToast.show(this, "cipher: ${if (!current) "ON" else "OFF"}")
-}
-
-// v722: clamp mode
-internal fun PlayerActivity.showV722ClampToggle() {
-    val current = FeaturePrefsStore.batch721.v722clamp
-    FeaturePrefsStore.batch721.v722clamp = !current
-    AppToast.show(this, "clamp: ${if (!current) "ON" else "OFF"}")
-}
-
-// v722: classify mode
-internal fun PlayerActivity.showV722ClassifyToggle() {
-    val current = FeaturePrefsStore.batch721.v722classify
-    FeaturePrefsStore.batch721.v722classify = !current
-    AppToast.show(this, "classify: ${if (!current) "ON" else "OFF"}")
-}
-
-// v722: clean mode
-internal fun PlayerActivity.showV722CleanToggle() {
-    val current = FeaturePrefsStore.batch721.v722clean
-    FeaturePrefsStore.batch721.v722clean = !current
-    AppToast.show(this, "clean: ${if (!current) "ON" else "OFF"}")
-}
-
-// v723: callback mode
-internal fun PlayerActivity.showV723CallbackToggle() {
-    val current = FeaturePrefsStore.batch721.v723callback
-    FeaturePrefsStore.batch721.v723callback = !current
-    AppToast.show(this, "callback: ${if (!current) "ON" else "OFF"}")
-}
-
-// v723: cancel mode
-internal fun PlayerActivity.showV723CancelToggle() {
-    val current = FeaturePrefsStore.batch721.v723cancel
-    FeaturePrefsStore.batch721.v723cancel = !current
-    AppToast.show(this, "cancel: ${if (!current) "ON" else "OFF"}")
-}
-
-// v723: capture mode
-internal fun PlayerActivity.showV723CaptureToggle() {
-    val current = FeaturePrefsStore.batch721.v723capture
-    FeaturePrefsStore.batch721.v723capture = !current
-    AppToast.show(this, "capture: ${if (!current) "ON" else "OFF"}")
-}
-
-// v723: cascade mode
-internal fun PlayerActivity.showV723CascadeToggle() {
-    val current = FeaturePrefsStore.batch721.v723cascade
-    FeaturePrefsStore.batch721.v723cascade = !current
-    AppToast.show(this, "cascade: ${if (!current) "ON" else "OFF"}")
-}
-
-// v723: category mode
-internal fun PlayerActivity.showV723CategoryToggle() {
-    val current = FeaturePrefsStore.batch721.v723category
-    FeaturePrefsStore.batch721.v723category = !current
-    AppToast.show(this, "category: ${if (!current) "ON" else "OFF"}")
-}
-
-// v723: chain level
-internal fun PlayerActivity.showV723ChainDialog() {
+// v732: chunk level
+internal fun PlayerActivity.showV732ChunkDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v723chain).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v732chunk).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "chain level",
+        title = "chunk level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch721.v723chain = value
-        AppToast.show(this, "chain: $value")
+        FeaturePrefsStore.batch731.v732chunk = value
+        AppToast.show(this, "chunk: $value")
     }
 }
 
-// v723: challenge level
-internal fun PlayerActivity.showV723ChallengeDialog() {
+// v732: cipher mode
+internal fun PlayerActivity.showV732CipherToggle() {
+    val current = FeaturePrefsStore.batch731.v732cipher
+    FeaturePrefsStore.batch731.v732cipher = !current
+    AppToast.show(this, "cipher: ${if (!current) "ON" else "OFF"}")
+}
+
+// v732: clamp mode
+internal fun PlayerActivity.showV732ClampToggle() {
+    val current = FeaturePrefsStore.batch731.v732clamp
+    FeaturePrefsStore.batch731.v732clamp = !current
+    AppToast.show(this, "clamp: ${if (!current) "ON" else "OFF"}")
+}
+
+// v732: classify mode
+internal fun PlayerActivity.showV732ClassifyToggle() {
+    val current = FeaturePrefsStore.batch731.v732classify
+    FeaturePrefsStore.batch731.v732classify = !current
+    AppToast.show(this, "classify: ${if (!current) "ON" else "OFF"}")
+}
+
+// v732: clean mode
+internal fun PlayerActivity.showV732CleanToggle() {
+    val current = FeaturePrefsStore.batch731.v732clean
+    FeaturePrefsStore.batch731.v732clean = !current
+    AppToast.show(this, "clean: ${if (!current) "ON" else "OFF"}")
+}
+
+// v732: clear mode
+internal fun PlayerActivity.showV732ClearToggle() {
+    val current = FeaturePrefsStore.batch731.v732clear
+    FeaturePrefsStore.batch731.v732clear = !current
+    AppToast.show(this, "clear: ${if (!current) "ON" else "OFF"}")
+}
+
+// v733: cancel mode
+internal fun PlayerActivity.showV733CancelToggle() {
+    val current = FeaturePrefsStore.batch731.v733cancel
+    FeaturePrefsStore.batch731.v733cancel = !current
+    AppToast.show(this, "cancel: ${if (!current) "ON" else "OFF"}")
+}
+
+// v733: capture mode
+internal fun PlayerActivity.showV733CaptureToggle() {
+    val current = FeaturePrefsStore.batch731.v733capture
+    FeaturePrefsStore.batch731.v733capture = !current
+    AppToast.show(this, "capture: ${if (!current) "ON" else "OFF"}")
+}
+
+// v733: cascade mode
+internal fun PlayerActivity.showV733CascadeToggle() {
+    val current = FeaturePrefsStore.batch731.v733cascade
+    FeaturePrefsStore.batch731.v733cascade = !current
+    AppToast.show(this, "cascade: ${if (!current) "ON" else "OFF"}")
+}
+
+// v733: category mode
+internal fun PlayerActivity.showV733CategoryToggle() {
+    val current = FeaturePrefsStore.batch731.v733category
+    FeaturePrefsStore.batch731.v733category = !current
+    AppToast.show(this, "category: ${if (!current) "ON" else "OFF"}")
+}
+
+// v733: chain mode
+internal fun PlayerActivity.showV733ChainToggle() {
+    val current = FeaturePrefsStore.batch731.v733chain
+    FeaturePrefsStore.batch731.v733chain = !current
+    AppToast.show(this, "chain: ${if (!current) "ON" else "OFF"}")
+}
+
+// v733: challenge level
+internal fun PlayerActivity.showV733ChallengeDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v723challenge).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v733challenge).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
         title = "challenge level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch721.v723challenge = value
+        FeaturePrefsStore.batch731.v733challenge = value
         AppToast.show(this, "challenge: $value")
     }
 }
 
-// v723: channel level
-internal fun PlayerActivity.showV723ChannelDialog() {
+// v733: channel level
+internal fun PlayerActivity.showV733ChannelDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v723channel).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v733channel).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
         title = "channel level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch721.v723channel = value
+        FeaturePrefsStore.batch731.v733channel = value
         AppToast.show(this, "channel: $value")
     }
 }
 
-// v723: chart level
-internal fun PlayerActivity.showV723ChartDialog() {
+// v733: chart level
+internal fun PlayerActivity.showV733ChartDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v723chart).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v733chart).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
         title = "chart level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch721.v723chart = value
+        FeaturePrefsStore.batch731.v733chart = value
         AppToast.show(this, "chart: $value")
     }
 }
 
-// v723: checkpoint level
-internal fun PlayerActivity.showV723CheckpointDialog() {
+// v733: checkpoint level
+internal fun PlayerActivity.showV733CheckpointDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v723checkpoint).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v733checkpoint).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
         title = "checkpoint level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch721.v723checkpoint = value
+        FeaturePrefsStore.batch731.v733checkpoint = value
         AppToast.show(this, "checkpoint: $value")
     }
 }
 
-// v723: chunk mode
-internal fun PlayerActivity.showV723ChunkToggle() {
-    val current = FeaturePrefsStore.batch721.v723chunk
-    FeaturePrefsStore.batch721.v723chunk = !current
-    AppToast.show(this, "chunk: ${if (!current) "ON" else "OFF"}")
-}
-
-// v723: cipher mode
-internal fun PlayerActivity.showV723CipherToggle() {
-    val current = FeaturePrefsStore.batch721.v723cipher
-    FeaturePrefsStore.batch721.v723cipher = !current
-    AppToast.show(this, "cipher: ${if (!current) "ON" else "OFF"}")
-}
-
-// v723: clamp mode
-internal fun PlayerActivity.showV723ClampToggle() {
-    val current = FeaturePrefsStore.batch721.v723clamp
-    FeaturePrefsStore.batch721.v723clamp = !current
-    AppToast.show(this, "clamp: ${if (!current) "ON" else "OFF"}")
-}
-
-// v723: classify mode
-internal fun PlayerActivity.showV723ClassifyToggle() {
-    val current = FeaturePrefsStore.batch721.v723classify
-    FeaturePrefsStore.batch721.v723classify = !current
-    AppToast.show(this, "classify: ${if (!current) "ON" else "OFF"}")
-}
-
-// v723: clean mode
-internal fun PlayerActivity.showV723CleanToggle() {
-    val current = FeaturePrefsStore.batch721.v723clean
-    FeaturePrefsStore.batch721.v723clean = !current
-    AppToast.show(this, "clean: ${if (!current) "ON" else "OFF"}")
-}
-
-// v724: callback mode
-internal fun PlayerActivity.showV724CallbackToggle() {
-    val current = FeaturePrefsStore.batch721.v724callback
-    FeaturePrefsStore.batch721.v724callback = !current
-    AppToast.show(this, "callback: ${if (!current) "ON" else "OFF"}")
-}
-
-// v724: cancel mode
-internal fun PlayerActivity.showV724CancelToggle() {
-    val current = FeaturePrefsStore.batch721.v724cancel
-    FeaturePrefsStore.batch721.v724cancel = !current
-    AppToast.show(this, "cancel: ${if (!current) "ON" else "OFF"}")
-}
-
-// v724: capture mode
-internal fun PlayerActivity.showV724CaptureToggle() {
-    val current = FeaturePrefsStore.batch721.v724capture
-    FeaturePrefsStore.batch721.v724capture = !current
-    AppToast.show(this, "capture: ${if (!current) "ON" else "OFF"}")
-}
-
-// v724: cascade mode
-internal fun PlayerActivity.showV724CascadeToggle() {
-    val current = FeaturePrefsStore.batch721.v724cascade
-    FeaturePrefsStore.batch721.v724cascade = !current
-    AppToast.show(this, "cascade: ${if (!current) "ON" else "OFF"}")
-}
-
-// v724: category mode
-internal fun PlayerActivity.showV724CategoryToggle() {
-    val current = FeaturePrefsStore.batch721.v724category
-    FeaturePrefsStore.batch721.v724category = !current
-    AppToast.show(this, "category: ${if (!current) "ON" else "OFF"}")
-}
-
-// v724: chain level
-internal fun PlayerActivity.showV724ChainDialog() {
+// v733: chunk level
+internal fun PlayerActivity.showV733ChunkDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v724chain).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v733chunk).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "chain level",
+        title = "chunk level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch721.v724chain = value
-        AppToast.show(this, "chain: $value")
+        FeaturePrefsStore.batch731.v733chunk = value
+        AppToast.show(this, "chunk: $value")
     }
 }
 
-// v724: challenge level
-internal fun PlayerActivity.showV724ChallengeDialog() {
+// v733: cipher mode
+internal fun PlayerActivity.showV733CipherToggle() {
+    val current = FeaturePrefsStore.batch731.v733cipher
+    FeaturePrefsStore.batch731.v733cipher = !current
+    AppToast.show(this, "cipher: ${if (!current) "ON" else "OFF"}")
+}
+
+// v733: clamp mode
+internal fun PlayerActivity.showV733ClampToggle() {
+    val current = FeaturePrefsStore.batch731.v733clamp
+    FeaturePrefsStore.batch731.v733clamp = !current
+    AppToast.show(this, "clamp: ${if (!current) "ON" else "OFF"}")
+}
+
+// v733: classify mode
+internal fun PlayerActivity.showV733ClassifyToggle() {
+    val current = FeaturePrefsStore.batch731.v733classify
+    FeaturePrefsStore.batch731.v733classify = !current
+    AppToast.show(this, "classify: ${if (!current) "ON" else "OFF"}")
+}
+
+// v733: clean mode
+internal fun PlayerActivity.showV733CleanToggle() {
+    val current = FeaturePrefsStore.batch731.v733clean
+    FeaturePrefsStore.batch731.v733clean = !current
+    AppToast.show(this, "clean: ${if (!current) "ON" else "OFF"}")
+}
+
+// v733: clear mode
+internal fun PlayerActivity.showV733ClearToggle() {
+    val current = FeaturePrefsStore.batch731.v733clear
+    FeaturePrefsStore.batch731.v733clear = !current
+    AppToast.show(this, "clear: ${if (!current) "ON" else "OFF"}")
+}
+
+// v734: cancel mode
+internal fun PlayerActivity.showV734CancelToggle() {
+    val current = FeaturePrefsStore.batch731.v734cancel
+    FeaturePrefsStore.batch731.v734cancel = !current
+    AppToast.show(this, "cancel: ${if (!current) "ON" else "OFF"}")
+}
+
+// v734: capture mode
+internal fun PlayerActivity.showV734CaptureToggle() {
+    val current = FeaturePrefsStore.batch731.v734capture
+    FeaturePrefsStore.batch731.v734capture = !current
+    AppToast.show(this, "capture: ${if (!current) "ON" else "OFF"}")
+}
+
+// v734: cascade mode
+internal fun PlayerActivity.showV734CascadeToggle() {
+    val current = FeaturePrefsStore.batch731.v734cascade
+    FeaturePrefsStore.batch731.v734cascade = !current
+    AppToast.show(this, "cascade: ${if (!current) "ON" else "OFF"}")
+}
+
+// v734: category mode
+internal fun PlayerActivity.showV734CategoryToggle() {
+    val current = FeaturePrefsStore.batch731.v734category
+    FeaturePrefsStore.batch731.v734category = !current
+    AppToast.show(this, "category: ${if (!current) "ON" else "OFF"}")
+}
+
+// v734: chain mode
+internal fun PlayerActivity.showV734ChainToggle() {
+    val current = FeaturePrefsStore.batch731.v734chain
+    FeaturePrefsStore.batch731.v734chain = !current
+    AppToast.show(this, "chain: ${if (!current) "ON" else "OFF"}")
+}
+
+// v734: challenge level
+internal fun PlayerActivity.showV734ChallengeDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v724challenge).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v734challenge).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
         title = "challenge level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch721.v724challenge = value
+        FeaturePrefsStore.batch731.v734challenge = value
         AppToast.show(this, "challenge: $value")
     }
 }
 
-// v724: channel level
-internal fun PlayerActivity.showV724ChannelDialog() {
+// v734: channel level
+internal fun PlayerActivity.showV734ChannelDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v724channel).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v734channel).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
         title = "channel level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch721.v724channel = value
+        FeaturePrefsStore.batch731.v734channel = value
         AppToast.show(this, "channel: $value")
     }
 }
 
-// v724: chart level
-internal fun PlayerActivity.showV724ChartDialog() {
+// v734: chart level
+internal fun PlayerActivity.showV734ChartDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v724chart).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v734chart).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
         title = "chart level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch721.v724chart = value
+        FeaturePrefsStore.batch731.v734chart = value
         AppToast.show(this, "chart: $value")
     }
 }
 
-// v724: checkpoint level
-internal fun PlayerActivity.showV724CheckpointDialog() {
+// v734: checkpoint level
+internal fun PlayerActivity.showV734CheckpointDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v724checkpoint).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v734checkpoint).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
         title = "checkpoint level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch721.v724checkpoint = value
+        FeaturePrefsStore.batch731.v734checkpoint = value
         AppToast.show(this, "checkpoint: $value")
     }
 }
 
-// v724: chunk mode
-internal fun PlayerActivity.showV724ChunkToggle() {
-    val current = FeaturePrefsStore.batch721.v724chunk
-    FeaturePrefsStore.batch721.v724chunk = !current
-    AppToast.show(this, "chunk: ${if (!current) "ON" else "OFF"}")
-}
-
-// v724: cipher mode
-internal fun PlayerActivity.showV724CipherToggle() {
-    val current = FeaturePrefsStore.batch721.v724cipher
-    FeaturePrefsStore.batch721.v724cipher = !current
-    AppToast.show(this, "cipher: ${if (!current) "ON" else "OFF"}")
-}
-
-// v724: clamp mode
-internal fun PlayerActivity.showV724ClampToggle() {
-    val current = FeaturePrefsStore.batch721.v724clamp
-    FeaturePrefsStore.batch721.v724clamp = !current
-    AppToast.show(this, "clamp: ${if (!current) "ON" else "OFF"}")
-}
-
-// v724: classify mode
-internal fun PlayerActivity.showV724ClassifyToggle() {
-    val current = FeaturePrefsStore.batch721.v724classify
-    FeaturePrefsStore.batch721.v724classify = !current
-    AppToast.show(this, "classify: ${if (!current) "ON" else "OFF"}")
-}
-
-// v724: clean mode
-internal fun PlayerActivity.showV724CleanToggle() {
-    val current = FeaturePrefsStore.batch721.v724clean
-    FeaturePrefsStore.batch721.v724clean = !current
-    AppToast.show(this, "clean: ${if (!current) "ON" else "OFF"}")
-}
-
-// v725: callback mode
-internal fun PlayerActivity.showV725CallbackToggle() {
-    val current = FeaturePrefsStore.batch721.v725callback
-    FeaturePrefsStore.batch721.v725callback = !current
-    AppToast.show(this, "callback: ${if (!current) "ON" else "OFF"}")
-}
-
-// v725: cancel mode
-internal fun PlayerActivity.showV725CancelToggle() {
-    val current = FeaturePrefsStore.batch721.v725cancel
-    FeaturePrefsStore.batch721.v725cancel = !current
-    AppToast.show(this, "cancel: ${if (!current) "ON" else "OFF"}")
-}
-
-// v725: capture mode
-internal fun PlayerActivity.showV725CaptureToggle() {
-    val current = FeaturePrefsStore.batch721.v725capture
-    FeaturePrefsStore.batch721.v725capture = !current
-    AppToast.show(this, "capture: ${if (!current) "ON" else "OFF"}")
-}
-
-// v725: cascade mode
-internal fun PlayerActivity.showV725CascadeToggle() {
-    val current = FeaturePrefsStore.batch721.v725cascade
-    FeaturePrefsStore.batch721.v725cascade = !current
-    AppToast.show(this, "cascade: ${if (!current) "ON" else "OFF"}")
-}
-
-// v725: category mode
-internal fun PlayerActivity.showV725CategoryToggle() {
-    val current = FeaturePrefsStore.batch721.v725category
-    FeaturePrefsStore.batch721.v725category = !current
-    AppToast.show(this, "category: ${if (!current) "ON" else "OFF"}")
-}
-
-// v725: chain level
-internal fun PlayerActivity.showV725ChainDialog() {
+// v734: chunk level
+internal fun PlayerActivity.showV734ChunkDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v725chain).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v734chunk).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "chain level",
+        title = "chunk level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch721.v725chain = value
-        AppToast.show(this, "chain: $value")
+        FeaturePrefsStore.batch731.v734chunk = value
+        AppToast.show(this, "chunk: $value")
     }
 }
 
-// v725: challenge level
-internal fun PlayerActivity.showV725ChallengeDialog() {
+// v734: cipher mode
+internal fun PlayerActivity.showV734CipherToggle() {
+    val current = FeaturePrefsStore.batch731.v734cipher
+    FeaturePrefsStore.batch731.v734cipher = !current
+    AppToast.show(this, "cipher: ${if (!current) "ON" else "OFF"}")
+}
+
+// v734: clamp mode
+internal fun PlayerActivity.showV734ClampToggle() {
+    val current = FeaturePrefsStore.batch731.v734clamp
+    FeaturePrefsStore.batch731.v734clamp = !current
+    AppToast.show(this, "clamp: ${if (!current) "ON" else "OFF"}")
+}
+
+// v734: classify mode
+internal fun PlayerActivity.showV734ClassifyToggle() {
+    val current = FeaturePrefsStore.batch731.v734classify
+    FeaturePrefsStore.batch731.v734classify = !current
+    AppToast.show(this, "classify: ${if (!current) "ON" else "OFF"}")
+}
+
+// v734: clean mode
+internal fun PlayerActivity.showV734CleanToggle() {
+    val current = FeaturePrefsStore.batch731.v734clean
+    FeaturePrefsStore.batch731.v734clean = !current
+    AppToast.show(this, "clean: ${if (!current) "ON" else "OFF"}")
+}
+
+// v734: clear mode
+internal fun PlayerActivity.showV734ClearToggle() {
+    val current = FeaturePrefsStore.batch731.v734clear
+    FeaturePrefsStore.batch731.v734clear = !current
+    AppToast.show(this, "clear: ${if (!current) "ON" else "OFF"}")
+}
+
+// v735: cancel mode
+internal fun PlayerActivity.showV735CancelToggle() {
+    val current = FeaturePrefsStore.batch731.v735cancel
+    FeaturePrefsStore.batch731.v735cancel = !current
+    AppToast.show(this, "cancel: ${if (!current) "ON" else "OFF"}")
+}
+
+// v735: capture mode
+internal fun PlayerActivity.showV735CaptureToggle() {
+    val current = FeaturePrefsStore.batch731.v735capture
+    FeaturePrefsStore.batch731.v735capture = !current
+    AppToast.show(this, "capture: ${if (!current) "ON" else "OFF"}")
+}
+
+// v735: cascade mode
+internal fun PlayerActivity.showV735CascadeToggle() {
+    val current = FeaturePrefsStore.batch731.v735cascade
+    FeaturePrefsStore.batch731.v735cascade = !current
+    AppToast.show(this, "cascade: ${if (!current) "ON" else "OFF"}")
+}
+
+// v735: category mode
+internal fun PlayerActivity.showV735CategoryToggle() {
+    val current = FeaturePrefsStore.batch731.v735category
+    FeaturePrefsStore.batch731.v735category = !current
+    AppToast.show(this, "category: ${if (!current) "ON" else "OFF"}")
+}
+
+// v735: chain mode
+internal fun PlayerActivity.showV735ChainToggle() {
+    val current = FeaturePrefsStore.batch731.v735chain
+    FeaturePrefsStore.batch731.v735chain = !current
+    AppToast.show(this, "chain: ${if (!current) "ON" else "OFF"}")
+}
+
+// v735: challenge level
+internal fun PlayerActivity.showV735ChallengeDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v725challenge).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v735challenge).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
         title = "challenge level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch721.v725challenge = value
+        FeaturePrefsStore.batch731.v735challenge = value
         AppToast.show(this, "challenge: $value")
     }
 }
 
-// v725: channel level
-internal fun PlayerActivity.showV725ChannelDialog() {
+// v735: channel level
+internal fun PlayerActivity.showV735ChannelDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v725channel).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v735channel).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
         title = "channel level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch721.v725channel = value
+        FeaturePrefsStore.batch731.v735channel = value
         AppToast.show(this, "channel: $value")
     }
 }
 
-// v725: chart level
-internal fun PlayerActivity.showV725ChartDialog() {
+// v735: chart level
+internal fun PlayerActivity.showV735ChartDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v725chart).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v735chart).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
         title = "chart level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch721.v725chart = value
+        FeaturePrefsStore.batch731.v735chart = value
         AppToast.show(this, "chart: $value")
     }
 }
 
-// v725: checkpoint level
-internal fun PlayerActivity.showV725CheckpointDialog() {
+// v735: checkpoint level
+internal fun PlayerActivity.showV735CheckpointDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v725checkpoint).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v735checkpoint).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
         title = "checkpoint level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch721.v725checkpoint = value
+        FeaturePrefsStore.batch731.v735checkpoint = value
         AppToast.show(this, "checkpoint: $value")
     }
 }
 
-// v725: chunk mode
-internal fun PlayerActivity.showV725ChunkToggle() {
-    val current = FeaturePrefsStore.batch721.v725chunk
-    FeaturePrefsStore.batch721.v725chunk = !current
-    AppToast.show(this, "chunk: ${if (!current) "ON" else "OFF"}")
-}
-
-// v725: cipher mode
-internal fun PlayerActivity.showV725CipherToggle() {
-    val current = FeaturePrefsStore.batch721.v725cipher
-    FeaturePrefsStore.batch721.v725cipher = !current
-    AppToast.show(this, "cipher: ${if (!current) "ON" else "OFF"}")
-}
-
-// v725: clamp mode
-internal fun PlayerActivity.showV725ClampToggle() {
-    val current = FeaturePrefsStore.batch721.v725clamp
-    FeaturePrefsStore.batch721.v725clamp = !current
-    AppToast.show(this, "clamp: ${if (!current) "ON" else "OFF"}")
-}
-
-// v725: classify mode
-internal fun PlayerActivity.showV725ClassifyToggle() {
-    val current = FeaturePrefsStore.batch721.v725classify
-    FeaturePrefsStore.batch721.v725classify = !current
-    AppToast.show(this, "classify: ${if (!current) "ON" else "OFF"}")
-}
-
-// v725: clean mode
-internal fun PlayerActivity.showV725CleanToggle() {
-    val current = FeaturePrefsStore.batch721.v725clean
-    FeaturePrefsStore.batch721.v725clean = !current
-    AppToast.show(this, "clean: ${if (!current) "ON" else "OFF"}")
-}
-
-// v726: callback mode
-internal fun PlayerActivity.showV726CallbackToggle() {
-    val current = FeaturePrefsStore.batch721.v726callback
-    FeaturePrefsStore.batch721.v726callback = !current
-    AppToast.show(this, "callback: ${if (!current) "ON" else "OFF"}")
-}
-
-// v726: cancel mode
-internal fun PlayerActivity.showV726CancelToggle() {
-    val current = FeaturePrefsStore.batch721.v726cancel
-    FeaturePrefsStore.batch721.v726cancel = !current
-    AppToast.show(this, "cancel: ${if (!current) "ON" else "OFF"}")
-}
-
-// v726: capture mode
-internal fun PlayerActivity.showV726CaptureToggle() {
-    val current = FeaturePrefsStore.batch721.v726capture
-    FeaturePrefsStore.batch721.v726capture = !current
-    AppToast.show(this, "capture: ${if (!current) "ON" else "OFF"}")
-}
-
-// v726: cascade mode
-internal fun PlayerActivity.showV726CascadeToggle() {
-    val current = FeaturePrefsStore.batch721.v726cascade
-    FeaturePrefsStore.batch721.v726cascade = !current
-    AppToast.show(this, "cascade: ${if (!current) "ON" else "OFF"}")
-}
-
-// v726: category mode
-internal fun PlayerActivity.showV726CategoryToggle() {
-    val current = FeaturePrefsStore.batch721.v726category
-    FeaturePrefsStore.batch721.v726category = !current
-    AppToast.show(this, "category: ${if (!current) "ON" else "OFF"}")
-}
-
-// v726: chain level
-internal fun PlayerActivity.showV726ChainDialog() {
+// v735: chunk level
+internal fun PlayerActivity.showV735ChunkDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v726chain).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v735chunk).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "chain level",
+        title = "chunk level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch721.v726chain = value
-        AppToast.show(this, "chain: $value")
+        FeaturePrefsStore.batch731.v735chunk = value
+        AppToast.show(this, "chunk: $value")
     }
 }
 
-// v726: challenge level
-internal fun PlayerActivity.showV726ChallengeDialog() {
+// v735: cipher mode
+internal fun PlayerActivity.showV735CipherToggle() {
+    val current = FeaturePrefsStore.batch731.v735cipher
+    FeaturePrefsStore.batch731.v735cipher = !current
+    AppToast.show(this, "cipher: ${if (!current) "ON" else "OFF"}")
+}
+
+// v735: clamp mode
+internal fun PlayerActivity.showV735ClampToggle() {
+    val current = FeaturePrefsStore.batch731.v735clamp
+    FeaturePrefsStore.batch731.v735clamp = !current
+    AppToast.show(this, "clamp: ${if (!current) "ON" else "OFF"}")
+}
+
+// v735: classify mode
+internal fun PlayerActivity.showV735ClassifyToggle() {
+    val current = FeaturePrefsStore.batch731.v735classify
+    FeaturePrefsStore.batch731.v735classify = !current
+    AppToast.show(this, "classify: ${if (!current) "ON" else "OFF"}")
+}
+
+// v735: clean mode
+internal fun PlayerActivity.showV735CleanToggle() {
+    val current = FeaturePrefsStore.batch731.v735clean
+    FeaturePrefsStore.batch731.v735clean = !current
+    AppToast.show(this, "clean: ${if (!current) "ON" else "OFF"}")
+}
+
+// v735: clear mode
+internal fun PlayerActivity.showV735ClearToggle() {
+    val current = FeaturePrefsStore.batch731.v735clear
+    FeaturePrefsStore.batch731.v735clear = !current
+    AppToast.show(this, "clear: ${if (!current) "ON" else "OFF"}")
+}
+
+// v736: cancel mode
+internal fun PlayerActivity.showV736CancelToggle() {
+    val current = FeaturePrefsStore.batch731.v736cancel
+    FeaturePrefsStore.batch731.v736cancel = !current
+    AppToast.show(this, "cancel: ${if (!current) "ON" else "OFF"}")
+}
+
+// v736: capture mode
+internal fun PlayerActivity.showV736CaptureToggle() {
+    val current = FeaturePrefsStore.batch731.v736capture
+    FeaturePrefsStore.batch731.v736capture = !current
+    AppToast.show(this, "capture: ${if (!current) "ON" else "OFF"}")
+}
+
+// v736: cascade mode
+internal fun PlayerActivity.showV736CascadeToggle() {
+    val current = FeaturePrefsStore.batch731.v736cascade
+    FeaturePrefsStore.batch731.v736cascade = !current
+    AppToast.show(this, "cascade: ${if (!current) "ON" else "OFF"}")
+}
+
+// v736: category mode
+internal fun PlayerActivity.showV736CategoryToggle() {
+    val current = FeaturePrefsStore.batch731.v736category
+    FeaturePrefsStore.batch731.v736category = !current
+    AppToast.show(this, "category: ${if (!current) "ON" else "OFF"}")
+}
+
+// v736: chain mode
+internal fun PlayerActivity.showV736ChainToggle() {
+    val current = FeaturePrefsStore.batch731.v736chain
+    FeaturePrefsStore.batch731.v736chain = !current
+    AppToast.show(this, "chain: ${if (!current) "ON" else "OFF"}")
+}
+
+// v736: challenge level
+internal fun PlayerActivity.showV736ChallengeDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v726challenge).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v736challenge).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
         title = "challenge level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch721.v726challenge = value
+        FeaturePrefsStore.batch731.v736challenge = value
         AppToast.show(this, "challenge: $value")
     }
 }
 
-// v726: channel level
-internal fun PlayerActivity.showV726ChannelDialog() {
+// v736: channel level
+internal fun PlayerActivity.showV736ChannelDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v726channel).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v736channel).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
         title = "channel level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch721.v726channel = value
+        FeaturePrefsStore.batch731.v736channel = value
         AppToast.show(this, "channel: $value")
     }
 }
 
-// v726: chart level
-internal fun PlayerActivity.showV726ChartDialog() {
+// v736: chart level
+internal fun PlayerActivity.showV736ChartDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v726chart).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v736chart).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
         title = "chart level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch721.v726chart = value
+        FeaturePrefsStore.batch731.v736chart = value
         AppToast.show(this, "chart: $value")
     }
 }
 
-// v726: checkpoint level
-internal fun PlayerActivity.showV726CheckpointDialog() {
+// v736: checkpoint level
+internal fun PlayerActivity.showV736CheckpointDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v726checkpoint).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v736checkpoint).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
         title = "checkpoint level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch721.v726checkpoint = value
+        FeaturePrefsStore.batch731.v736checkpoint = value
         AppToast.show(this, "checkpoint: $value")
     }
 }
 
-// v726: chunk mode
-internal fun PlayerActivity.showV726ChunkToggle() {
-    val current = FeaturePrefsStore.batch721.v726chunk
-    FeaturePrefsStore.batch721.v726chunk = !current
-    AppToast.show(this, "chunk: ${if (!current) "ON" else "OFF"}")
-}
-
-// v726: cipher mode
-internal fun PlayerActivity.showV726CipherToggle() {
-    val current = FeaturePrefsStore.batch721.v726cipher
-    FeaturePrefsStore.batch721.v726cipher = !current
-    AppToast.show(this, "cipher: ${if (!current) "ON" else "OFF"}")
-}
-
-// v726: clamp mode
-internal fun PlayerActivity.showV726ClampToggle() {
-    val current = FeaturePrefsStore.batch721.v726clamp
-    FeaturePrefsStore.batch721.v726clamp = !current
-    AppToast.show(this, "clamp: ${if (!current) "ON" else "OFF"}")
-}
-
-// v726: classify mode
-internal fun PlayerActivity.showV726ClassifyToggle() {
-    val current = FeaturePrefsStore.batch721.v726classify
-    FeaturePrefsStore.batch721.v726classify = !current
-    AppToast.show(this, "classify: ${if (!current) "ON" else "OFF"}")
-}
-
-// v726: clean mode
-internal fun PlayerActivity.showV726CleanToggle() {
-    val current = FeaturePrefsStore.batch721.v726clean
-    FeaturePrefsStore.batch721.v726clean = !current
-    AppToast.show(this, "clean: ${if (!current) "ON" else "OFF"}")
-}
-
-// v727: callback mode
-internal fun PlayerActivity.showV727CallbackToggle() {
-    val current = FeaturePrefsStore.batch721.v727callback
-    FeaturePrefsStore.batch721.v727callback = !current
-    AppToast.show(this, "callback: ${if (!current) "ON" else "OFF"}")
-}
-
-// v727: cancel mode
-internal fun PlayerActivity.showV727CancelToggle() {
-    val current = FeaturePrefsStore.batch721.v727cancel
-    FeaturePrefsStore.batch721.v727cancel = !current
-    AppToast.show(this, "cancel: ${if (!current) "ON" else "OFF"}")
-}
-
-// v727: capture mode
-internal fun PlayerActivity.showV727CaptureToggle() {
-    val current = FeaturePrefsStore.batch721.v727capture
-    FeaturePrefsStore.batch721.v727capture = !current
-    AppToast.show(this, "capture: ${if (!current) "ON" else "OFF"}")
-}
-
-// v727: cascade mode
-internal fun PlayerActivity.showV727CascadeToggle() {
-    val current = FeaturePrefsStore.batch721.v727cascade
-    FeaturePrefsStore.batch721.v727cascade = !current
-    AppToast.show(this, "cascade: ${if (!current) "ON" else "OFF"}")
-}
-
-// v727: category mode
-internal fun PlayerActivity.showV727CategoryToggle() {
-    val current = FeaturePrefsStore.batch721.v727category
-    FeaturePrefsStore.batch721.v727category = !current
-    AppToast.show(this, "category: ${if (!current) "ON" else "OFF"}")
-}
-
-// v727: chain level
-internal fun PlayerActivity.showV727ChainDialog() {
+// v736: chunk level
+internal fun PlayerActivity.showV736ChunkDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v727chain).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v736chunk).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "chain level",
+        title = "chunk level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch721.v727chain = value
-        AppToast.show(this, "chain: $value")
+        FeaturePrefsStore.batch731.v736chunk = value
+        AppToast.show(this, "chunk: $value")
     }
 }
 
-// v727: challenge level
-internal fun PlayerActivity.showV727ChallengeDialog() {
+// v736: cipher mode
+internal fun PlayerActivity.showV736CipherToggle() {
+    val current = FeaturePrefsStore.batch731.v736cipher
+    FeaturePrefsStore.batch731.v736cipher = !current
+    AppToast.show(this, "cipher: ${if (!current) "ON" else "OFF"}")
+}
+
+// v736: clamp mode
+internal fun PlayerActivity.showV736ClampToggle() {
+    val current = FeaturePrefsStore.batch731.v736clamp
+    FeaturePrefsStore.batch731.v736clamp = !current
+    AppToast.show(this, "clamp: ${if (!current) "ON" else "OFF"}")
+}
+
+// v736: classify mode
+internal fun PlayerActivity.showV736ClassifyToggle() {
+    val current = FeaturePrefsStore.batch731.v736classify
+    FeaturePrefsStore.batch731.v736classify = !current
+    AppToast.show(this, "classify: ${if (!current) "ON" else "OFF"}")
+}
+
+// v736: clean mode
+internal fun PlayerActivity.showV736CleanToggle() {
+    val current = FeaturePrefsStore.batch731.v736clean
+    FeaturePrefsStore.batch731.v736clean = !current
+    AppToast.show(this, "clean: ${if (!current) "ON" else "OFF"}")
+}
+
+// v736: clear mode
+internal fun PlayerActivity.showV736ClearToggle() {
+    val current = FeaturePrefsStore.batch731.v736clear
+    FeaturePrefsStore.batch731.v736clear = !current
+    AppToast.show(this, "clear: ${if (!current) "ON" else "OFF"}")
+}
+
+// v737: cancel mode
+internal fun PlayerActivity.showV737CancelToggle() {
+    val current = FeaturePrefsStore.batch731.v737cancel
+    FeaturePrefsStore.batch731.v737cancel = !current
+    AppToast.show(this, "cancel: ${if (!current) "ON" else "OFF"}")
+}
+
+// v737: capture mode
+internal fun PlayerActivity.showV737CaptureToggle() {
+    val current = FeaturePrefsStore.batch731.v737capture
+    FeaturePrefsStore.batch731.v737capture = !current
+    AppToast.show(this, "capture: ${if (!current) "ON" else "OFF"}")
+}
+
+// v737: cascade mode
+internal fun PlayerActivity.showV737CascadeToggle() {
+    val current = FeaturePrefsStore.batch731.v737cascade
+    FeaturePrefsStore.batch731.v737cascade = !current
+    AppToast.show(this, "cascade: ${if (!current) "ON" else "OFF"}")
+}
+
+// v737: category mode
+internal fun PlayerActivity.showV737CategoryToggle() {
+    val current = FeaturePrefsStore.batch731.v737category
+    FeaturePrefsStore.batch731.v737category = !current
+    AppToast.show(this, "category: ${if (!current) "ON" else "OFF"}")
+}
+
+// v737: chain mode
+internal fun PlayerActivity.showV737ChainToggle() {
+    val current = FeaturePrefsStore.batch731.v737chain
+    FeaturePrefsStore.batch731.v737chain = !current
+    AppToast.show(this, "chain: ${if (!current) "ON" else "OFF"}")
+}
+
+// v737: challenge level
+internal fun PlayerActivity.showV737ChallengeDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v727challenge).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v737challenge).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
         title = "challenge level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch721.v727challenge = value
+        FeaturePrefsStore.batch731.v737challenge = value
         AppToast.show(this, "challenge: $value")
     }
 }
 
-// v727: channel level
-internal fun PlayerActivity.showV727ChannelDialog() {
+// v737: channel level
+internal fun PlayerActivity.showV737ChannelDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v727channel).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v737channel).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
         title = "channel level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch721.v727channel = value
+        FeaturePrefsStore.batch731.v737channel = value
         AppToast.show(this, "channel: $value")
     }
 }
 
-// v727: chart level
-internal fun PlayerActivity.showV727ChartDialog() {
+// v737: chart level
+internal fun PlayerActivity.showV737ChartDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v727chart).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v737chart).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
         title = "chart level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch721.v727chart = value
+        FeaturePrefsStore.batch731.v737chart = value
         AppToast.show(this, "chart: $value")
     }
 }
 
-// v727: checkpoint level
-internal fun PlayerActivity.showV727CheckpointDialog() {
+// v737: checkpoint level
+internal fun PlayerActivity.showV737CheckpointDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v727checkpoint).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v737checkpoint).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
         title = "checkpoint level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch721.v727checkpoint = value
+        FeaturePrefsStore.batch731.v737checkpoint = value
         AppToast.show(this, "checkpoint: $value")
     }
 }
 
-// v727: chunk mode
-internal fun PlayerActivity.showV727ChunkToggle() {
-    val current = FeaturePrefsStore.batch721.v727chunk
-    FeaturePrefsStore.batch721.v727chunk = !current
-    AppToast.show(this, "chunk: ${if (!current) "ON" else "OFF"}")
-}
-
-// v727: cipher mode
-internal fun PlayerActivity.showV727CipherToggle() {
-    val current = FeaturePrefsStore.batch721.v727cipher
-    FeaturePrefsStore.batch721.v727cipher = !current
-    AppToast.show(this, "cipher: ${if (!current) "ON" else "OFF"}")
-}
-
-// v727: clamp mode
-internal fun PlayerActivity.showV727ClampToggle() {
-    val current = FeaturePrefsStore.batch721.v727clamp
-    FeaturePrefsStore.batch721.v727clamp = !current
-    AppToast.show(this, "clamp: ${if (!current) "ON" else "OFF"}")
-}
-
-// v727: classify mode
-internal fun PlayerActivity.showV727ClassifyToggle() {
-    val current = FeaturePrefsStore.batch721.v727classify
-    FeaturePrefsStore.batch721.v727classify = !current
-    AppToast.show(this, "classify: ${if (!current) "ON" else "OFF"}")
-}
-
-// v727: clean mode
-internal fun PlayerActivity.showV727CleanToggle() {
-    val current = FeaturePrefsStore.batch721.v727clean
-    FeaturePrefsStore.batch721.v727clean = !current
-    AppToast.show(this, "clean: ${if (!current) "ON" else "OFF"}")
-}
-
-// v728: callback mode
-internal fun PlayerActivity.showV728CallbackToggle() {
-    val current = FeaturePrefsStore.batch721.v728callback
-    FeaturePrefsStore.batch721.v728callback = !current
-    AppToast.show(this, "callback: ${if (!current) "ON" else "OFF"}")
-}
-
-// v728: cancel mode
-internal fun PlayerActivity.showV728CancelToggle() {
-    val current = FeaturePrefsStore.batch721.v728cancel
-    FeaturePrefsStore.batch721.v728cancel = !current
-    AppToast.show(this, "cancel: ${if (!current) "ON" else "OFF"}")
-}
-
-// v728: capture mode
-internal fun PlayerActivity.showV728CaptureToggle() {
-    val current = FeaturePrefsStore.batch721.v728capture
-    FeaturePrefsStore.batch721.v728capture = !current
-    AppToast.show(this, "capture: ${if (!current) "ON" else "OFF"}")
-}
-
-// v728: cascade mode
-internal fun PlayerActivity.showV728CascadeToggle() {
-    val current = FeaturePrefsStore.batch721.v728cascade
-    FeaturePrefsStore.batch721.v728cascade = !current
-    AppToast.show(this, "cascade: ${if (!current) "ON" else "OFF"}")
-}
-
-// v728: category mode
-internal fun PlayerActivity.showV728CategoryToggle() {
-    val current = FeaturePrefsStore.batch721.v728category
-    FeaturePrefsStore.batch721.v728category = !current
-    AppToast.show(this, "category: ${if (!current) "ON" else "OFF"}")
-}
-
-// v728: chain level
-internal fun PlayerActivity.showV728ChainDialog() {
+// v737: chunk level
+internal fun PlayerActivity.showV737ChunkDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v728chain).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v737chunk).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "chain level",
+        title = "chunk level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch721.v728chain = value
-        AppToast.show(this, "chain: $value")
+        FeaturePrefsStore.batch731.v737chunk = value
+        AppToast.show(this, "chunk: $value")
     }
 }
 
-// v728: challenge level
-internal fun PlayerActivity.showV728ChallengeDialog() {
+// v737: cipher mode
+internal fun PlayerActivity.showV737CipherToggle() {
+    val current = FeaturePrefsStore.batch731.v737cipher
+    FeaturePrefsStore.batch731.v737cipher = !current
+    AppToast.show(this, "cipher: ${if (!current) "ON" else "OFF"}")
+}
+
+// v737: clamp mode
+internal fun PlayerActivity.showV737ClampToggle() {
+    val current = FeaturePrefsStore.batch731.v737clamp
+    FeaturePrefsStore.batch731.v737clamp = !current
+    AppToast.show(this, "clamp: ${if (!current) "ON" else "OFF"}")
+}
+
+// v737: classify mode
+internal fun PlayerActivity.showV737ClassifyToggle() {
+    val current = FeaturePrefsStore.batch731.v737classify
+    FeaturePrefsStore.batch731.v737classify = !current
+    AppToast.show(this, "classify: ${if (!current) "ON" else "OFF"}")
+}
+
+// v737: clean mode
+internal fun PlayerActivity.showV737CleanToggle() {
+    val current = FeaturePrefsStore.batch731.v737clean
+    FeaturePrefsStore.batch731.v737clean = !current
+    AppToast.show(this, "clean: ${if (!current) "ON" else "OFF"}")
+}
+
+// v737: clear mode
+internal fun PlayerActivity.showV737ClearToggle() {
+    val current = FeaturePrefsStore.batch731.v737clear
+    FeaturePrefsStore.batch731.v737clear = !current
+    AppToast.show(this, "clear: ${if (!current) "ON" else "OFF"}")
+}
+
+// v738: cancel mode
+internal fun PlayerActivity.showV738CancelToggle() {
+    val current = FeaturePrefsStore.batch731.v738cancel
+    FeaturePrefsStore.batch731.v738cancel = !current
+    AppToast.show(this, "cancel: ${if (!current) "ON" else "OFF"}")
+}
+
+// v738: capture mode
+internal fun PlayerActivity.showV738CaptureToggle() {
+    val current = FeaturePrefsStore.batch731.v738capture
+    FeaturePrefsStore.batch731.v738capture = !current
+    AppToast.show(this, "capture: ${if (!current) "ON" else "OFF"}")
+}
+
+// v738: cascade mode
+internal fun PlayerActivity.showV738CascadeToggle() {
+    val current = FeaturePrefsStore.batch731.v738cascade
+    FeaturePrefsStore.batch731.v738cascade = !current
+    AppToast.show(this, "cascade: ${if (!current) "ON" else "OFF"}")
+}
+
+// v738: category mode
+internal fun PlayerActivity.showV738CategoryToggle() {
+    val current = FeaturePrefsStore.batch731.v738category
+    FeaturePrefsStore.batch731.v738category = !current
+    AppToast.show(this, "category: ${if (!current) "ON" else "OFF"}")
+}
+
+// v738: chain mode
+internal fun PlayerActivity.showV738ChainToggle() {
+    val current = FeaturePrefsStore.batch731.v738chain
+    FeaturePrefsStore.batch731.v738chain = !current
+    AppToast.show(this, "chain: ${if (!current) "ON" else "OFF"}")
+}
+
+// v738: challenge level
+internal fun PlayerActivity.showV738ChallengeDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v728challenge).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v738challenge).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
         title = "challenge level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch721.v728challenge = value
+        FeaturePrefsStore.batch731.v738challenge = value
         AppToast.show(this, "challenge: $value")
     }
 }
 
-// v728: channel level
-internal fun PlayerActivity.showV728ChannelDialog() {
+// v738: channel level
+internal fun PlayerActivity.showV738ChannelDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v728channel).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v738channel).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
         title = "channel level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch721.v728channel = value
+        FeaturePrefsStore.batch731.v738channel = value
         AppToast.show(this, "channel: $value")
     }
 }
 
-// v728: chart level
-internal fun PlayerActivity.showV728ChartDialog() {
+// v738: chart level
+internal fun PlayerActivity.showV738ChartDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v728chart).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v738chart).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
         title = "chart level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch721.v728chart = value
+        FeaturePrefsStore.batch731.v738chart = value
         AppToast.show(this, "chart: $value")
     }
 }
 
-// v728: checkpoint level
-internal fun PlayerActivity.showV728CheckpointDialog() {
+// v738: checkpoint level
+internal fun PlayerActivity.showV738CheckpointDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v728checkpoint).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v738checkpoint).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
         title = "checkpoint level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch721.v728checkpoint = value
+        FeaturePrefsStore.batch731.v738checkpoint = value
         AppToast.show(this, "checkpoint: $value")
     }
 }
 
-// v728: chunk mode
-internal fun PlayerActivity.showV728ChunkToggle() {
-    val current = FeaturePrefsStore.batch721.v728chunk
-    FeaturePrefsStore.batch721.v728chunk = !current
-    AppToast.show(this, "chunk: ${if (!current) "ON" else "OFF"}")
-}
-
-// v728: cipher mode
-internal fun PlayerActivity.showV728CipherToggle() {
-    val current = FeaturePrefsStore.batch721.v728cipher
-    FeaturePrefsStore.batch721.v728cipher = !current
-    AppToast.show(this, "cipher: ${if (!current) "ON" else "OFF"}")
-}
-
-// v728: clamp mode
-internal fun PlayerActivity.showV728ClampToggle() {
-    val current = FeaturePrefsStore.batch721.v728clamp
-    FeaturePrefsStore.batch721.v728clamp = !current
-    AppToast.show(this, "clamp: ${if (!current) "ON" else "OFF"}")
-}
-
-// v728: classify mode
-internal fun PlayerActivity.showV728ClassifyToggle() {
-    val current = FeaturePrefsStore.batch721.v728classify
-    FeaturePrefsStore.batch721.v728classify = !current
-    AppToast.show(this, "classify: ${if (!current) "ON" else "OFF"}")
-}
-
-// v728: clean mode
-internal fun PlayerActivity.showV728CleanToggle() {
-    val current = FeaturePrefsStore.batch721.v728clean
-    FeaturePrefsStore.batch721.v728clean = !current
-    AppToast.show(this, "clean: ${if (!current) "ON" else "OFF"}")
-}
-
-// v729: callback mode
-internal fun PlayerActivity.showV729CallbackToggle() {
-    val current = FeaturePrefsStore.batch721.v729callback
-    FeaturePrefsStore.batch721.v729callback = !current
-    AppToast.show(this, "callback: ${if (!current) "ON" else "OFF"}")
-}
-
-// v729: cancel mode
-internal fun PlayerActivity.showV729CancelToggle() {
-    val current = FeaturePrefsStore.batch721.v729cancel
-    FeaturePrefsStore.batch721.v729cancel = !current
-    AppToast.show(this, "cancel: ${if (!current) "ON" else "OFF"}")
-}
-
-// v729: capture mode
-internal fun PlayerActivity.showV729CaptureToggle() {
-    val current = FeaturePrefsStore.batch721.v729capture
-    FeaturePrefsStore.batch721.v729capture = !current
-    AppToast.show(this, "capture: ${if (!current) "ON" else "OFF"}")
-}
-
-// v729: cascade mode
-internal fun PlayerActivity.showV729CascadeToggle() {
-    val current = FeaturePrefsStore.batch721.v729cascade
-    FeaturePrefsStore.batch721.v729cascade = !current
-    AppToast.show(this, "cascade: ${if (!current) "ON" else "OFF"}")
-}
-
-// v729: category mode
-internal fun PlayerActivity.showV729CategoryToggle() {
-    val current = FeaturePrefsStore.batch721.v729category
-    FeaturePrefsStore.batch721.v729category = !current
-    AppToast.show(this, "category: ${if (!current) "ON" else "OFF"}")
-}
-
-// v729: chain level
-internal fun PlayerActivity.showV729ChainDialog() {
+// v738: chunk level
+internal fun PlayerActivity.showV738ChunkDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v729chain).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v738chunk).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "chain level",
+        title = "chunk level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch721.v729chain = value
-        AppToast.show(this, "chain: $value")
+        FeaturePrefsStore.batch731.v738chunk = value
+        AppToast.show(this, "chunk: $value")
     }
 }
 
-// v729: challenge level
-internal fun PlayerActivity.showV729ChallengeDialog() {
+// v738: cipher mode
+internal fun PlayerActivity.showV738CipherToggle() {
+    val current = FeaturePrefsStore.batch731.v738cipher
+    FeaturePrefsStore.batch731.v738cipher = !current
+    AppToast.show(this, "cipher: ${if (!current) "ON" else "OFF"}")
+}
+
+// v738: clamp mode
+internal fun PlayerActivity.showV738ClampToggle() {
+    val current = FeaturePrefsStore.batch731.v738clamp
+    FeaturePrefsStore.batch731.v738clamp = !current
+    AppToast.show(this, "clamp: ${if (!current) "ON" else "OFF"}")
+}
+
+// v738: classify mode
+internal fun PlayerActivity.showV738ClassifyToggle() {
+    val current = FeaturePrefsStore.batch731.v738classify
+    FeaturePrefsStore.batch731.v738classify = !current
+    AppToast.show(this, "classify: ${if (!current) "ON" else "OFF"}")
+}
+
+// v738: clean mode
+internal fun PlayerActivity.showV738CleanToggle() {
+    val current = FeaturePrefsStore.batch731.v738clean
+    FeaturePrefsStore.batch731.v738clean = !current
+    AppToast.show(this, "clean: ${if (!current) "ON" else "OFF"}")
+}
+
+// v738: clear mode
+internal fun PlayerActivity.showV738ClearToggle() {
+    val current = FeaturePrefsStore.batch731.v738clear
+    FeaturePrefsStore.batch731.v738clear = !current
+    AppToast.show(this, "clear: ${if (!current) "ON" else "OFF"}")
+}
+
+// v739: cancel mode
+internal fun PlayerActivity.showV739CancelToggle() {
+    val current = FeaturePrefsStore.batch731.v739cancel
+    FeaturePrefsStore.batch731.v739cancel = !current
+    AppToast.show(this, "cancel: ${if (!current) "ON" else "OFF"}")
+}
+
+// v739: capture mode
+internal fun PlayerActivity.showV739CaptureToggle() {
+    val current = FeaturePrefsStore.batch731.v739capture
+    FeaturePrefsStore.batch731.v739capture = !current
+    AppToast.show(this, "capture: ${if (!current) "ON" else "OFF"}")
+}
+
+// v739: cascade mode
+internal fun PlayerActivity.showV739CascadeToggle() {
+    val current = FeaturePrefsStore.batch731.v739cascade
+    FeaturePrefsStore.batch731.v739cascade = !current
+    AppToast.show(this, "cascade: ${if (!current) "ON" else "OFF"}")
+}
+
+// v739: category mode
+internal fun PlayerActivity.showV739CategoryToggle() {
+    val current = FeaturePrefsStore.batch731.v739category
+    FeaturePrefsStore.batch731.v739category = !current
+    AppToast.show(this, "category: ${if (!current) "ON" else "OFF"}")
+}
+
+// v739: chain mode
+internal fun PlayerActivity.showV739ChainToggle() {
+    val current = FeaturePrefsStore.batch731.v739chain
+    FeaturePrefsStore.batch731.v739chain = !current
+    AppToast.show(this, "chain: ${if (!current) "ON" else "OFF"}")
+}
+
+// v739: challenge level
+internal fun PlayerActivity.showV739ChallengeDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v729challenge).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v739challenge).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
         title = "challenge level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch721.v729challenge = value
+        FeaturePrefsStore.batch731.v739challenge = value
         AppToast.show(this, "challenge: $value")
     }
 }
 
-// v729: channel level
-internal fun PlayerActivity.showV729ChannelDialog() {
+// v739: channel level
+internal fun PlayerActivity.showV739ChannelDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v729channel).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v739channel).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
         title = "channel level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch721.v729channel = value
+        FeaturePrefsStore.batch731.v739channel = value
         AppToast.show(this, "channel: $value")
     }
 }
 
-// v729: chart level
-internal fun PlayerActivity.showV729ChartDialog() {
+// v739: chart level
+internal fun PlayerActivity.showV739ChartDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v729chart).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v739chart).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
         title = "chart level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch721.v729chart = value
+        FeaturePrefsStore.batch731.v739chart = value
         AppToast.show(this, "chart: $value")
     }
 }
 
-// v729: checkpoint level
-internal fun PlayerActivity.showV729CheckpointDialog() {
+// v739: checkpoint level
+internal fun PlayerActivity.showV739CheckpointDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v729checkpoint).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v739checkpoint).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
         title = "checkpoint level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch721.v729checkpoint = value
+        FeaturePrefsStore.batch731.v739checkpoint = value
         AppToast.show(this, "checkpoint: $value")
     }
 }
 
-// v729: chunk mode
-internal fun PlayerActivity.showV729ChunkToggle() {
-    val current = FeaturePrefsStore.batch721.v729chunk
-    FeaturePrefsStore.batch721.v729chunk = !current
-    AppToast.show(this, "chunk: ${if (!current) "ON" else "OFF"}")
-}
-
-// v729: cipher mode
-internal fun PlayerActivity.showV729CipherToggle() {
-    val current = FeaturePrefsStore.batch721.v729cipher
-    FeaturePrefsStore.batch721.v729cipher = !current
-    AppToast.show(this, "cipher: ${if (!current) "ON" else "OFF"}")
-}
-
-// v729: clamp mode
-internal fun PlayerActivity.showV729ClampToggle() {
-    val current = FeaturePrefsStore.batch721.v729clamp
-    FeaturePrefsStore.batch721.v729clamp = !current
-    AppToast.show(this, "clamp: ${if (!current) "ON" else "OFF"}")
-}
-
-// v729: classify mode
-internal fun PlayerActivity.showV729ClassifyToggle() {
-    val current = FeaturePrefsStore.batch721.v729classify
-    FeaturePrefsStore.batch721.v729classify = !current
-    AppToast.show(this, "classify: ${if (!current) "ON" else "OFF"}")
-}
-
-// v729: clean mode
-internal fun PlayerActivity.showV729CleanToggle() {
-    val current = FeaturePrefsStore.batch721.v729clean
-    FeaturePrefsStore.batch721.v729clean = !current
-    AppToast.show(this, "clean: ${if (!current) "ON" else "OFF"}")
-}
-
-// v730: callback mode
-internal fun PlayerActivity.showV730CallbackToggle() {
-    val current = FeaturePrefsStore.batch721.v730callback
-    FeaturePrefsStore.batch721.v730callback = !current
-    AppToast.show(this, "callback: ${if (!current) "ON" else "OFF"}")
-}
-
-// v730: cancel mode
-internal fun PlayerActivity.showV730CancelToggle() {
-    val current = FeaturePrefsStore.batch721.v730cancel
-    FeaturePrefsStore.batch721.v730cancel = !current
-    AppToast.show(this, "cancel: ${if (!current) "ON" else "OFF"}")
-}
-
-// v730: capture mode
-internal fun PlayerActivity.showV730CaptureToggle() {
-    val current = FeaturePrefsStore.batch721.v730capture
-    FeaturePrefsStore.batch721.v730capture = !current
-    AppToast.show(this, "capture: ${if (!current) "ON" else "OFF"}")
-}
-
-// v730: cascade mode
-internal fun PlayerActivity.showV730CascadeToggle() {
-    val current = FeaturePrefsStore.batch721.v730cascade
-    FeaturePrefsStore.batch721.v730cascade = !current
-    AppToast.show(this, "cascade: ${if (!current) "ON" else "OFF"}")
-}
-
-// v730: category mode
-internal fun PlayerActivity.showV730CategoryToggle() {
-    val current = FeaturePrefsStore.batch721.v730category
-    FeaturePrefsStore.batch721.v730category = !current
-    AppToast.show(this, "category: ${if (!current) "ON" else "OFF"}")
-}
-
-// v730: chain level
-internal fun PlayerActivity.showV730ChainDialog() {
+// v739: chunk level
+internal fun PlayerActivity.showV739ChunkDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v730chain).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v739chunk).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "chain level",
+        title = "chunk level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch721.v730chain = value
-        AppToast.show(this, "chain: $value")
+        FeaturePrefsStore.batch731.v739chunk = value
+        AppToast.show(this, "chunk: $value")
     }
 }
 
-// v730: challenge level
-internal fun PlayerActivity.showV730ChallengeDialog() {
+// v739: cipher mode
+internal fun PlayerActivity.showV739CipherToggle() {
+    val current = FeaturePrefsStore.batch731.v739cipher
+    FeaturePrefsStore.batch731.v739cipher = !current
+    AppToast.show(this, "cipher: ${if (!current) "ON" else "OFF"}")
+}
+
+// v739: clamp mode
+internal fun PlayerActivity.showV739ClampToggle() {
+    val current = FeaturePrefsStore.batch731.v739clamp
+    FeaturePrefsStore.batch731.v739clamp = !current
+    AppToast.show(this, "clamp: ${if (!current) "ON" else "OFF"}")
+}
+
+// v739: classify mode
+internal fun PlayerActivity.showV739ClassifyToggle() {
+    val current = FeaturePrefsStore.batch731.v739classify
+    FeaturePrefsStore.batch731.v739classify = !current
+    AppToast.show(this, "classify: ${if (!current) "ON" else "OFF"}")
+}
+
+// v739: clean mode
+internal fun PlayerActivity.showV739CleanToggle() {
+    val current = FeaturePrefsStore.batch731.v739clean
+    FeaturePrefsStore.batch731.v739clean = !current
+    AppToast.show(this, "clean: ${if (!current) "ON" else "OFF"}")
+}
+
+// v739: clear mode
+internal fun PlayerActivity.showV739ClearToggle() {
+    val current = FeaturePrefsStore.batch731.v739clear
+    FeaturePrefsStore.batch731.v739clear = !current
+    AppToast.show(this, "clear: ${if (!current) "ON" else "OFF"}")
+}
+
+// v740: cancel mode
+internal fun PlayerActivity.showV740CancelToggle() {
+    val current = FeaturePrefsStore.batch731.v740cancel
+    FeaturePrefsStore.batch731.v740cancel = !current
+    AppToast.show(this, "cancel: ${if (!current) "ON" else "OFF"}")
+}
+
+// v740: capture mode
+internal fun PlayerActivity.showV740CaptureToggle() {
+    val current = FeaturePrefsStore.batch731.v740capture
+    FeaturePrefsStore.batch731.v740capture = !current
+    AppToast.show(this, "capture: ${if (!current) "ON" else "OFF"}")
+}
+
+// v740: cascade mode
+internal fun PlayerActivity.showV740CascadeToggle() {
+    val current = FeaturePrefsStore.batch731.v740cascade
+    FeaturePrefsStore.batch731.v740cascade = !current
+    AppToast.show(this, "cascade: ${if (!current) "ON" else "OFF"}")
+}
+
+// v740: category mode
+internal fun PlayerActivity.showV740CategoryToggle() {
+    val current = FeaturePrefsStore.batch731.v740category
+    FeaturePrefsStore.batch731.v740category = !current
+    AppToast.show(this, "category: ${if (!current) "ON" else "OFF"}")
+}
+
+// v740: chain mode
+internal fun PlayerActivity.showV740ChainToggle() {
+    val current = FeaturePrefsStore.batch731.v740chain
+    FeaturePrefsStore.batch731.v740chain = !current
+    AppToast.show(this, "chain: ${if (!current) "ON" else "OFF"}")
+}
+
+// v740: challenge level
+internal fun PlayerActivity.showV740ChallengeDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v730challenge).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v740challenge).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
         title = "challenge level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch721.v730challenge = value
+        FeaturePrefsStore.batch731.v740challenge = value
         AppToast.show(this, "challenge: $value")
     }
 }
 
-// v730: channel level
-internal fun PlayerActivity.showV730ChannelDialog() {
+// v740: channel level
+internal fun PlayerActivity.showV740ChannelDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v730channel).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v740channel).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
         title = "channel level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch721.v730channel = value
+        FeaturePrefsStore.batch731.v740channel = value
         AppToast.show(this, "channel: $value")
     }
 }
 
-// v730: chart level
-internal fun PlayerActivity.showV730ChartDialog() {
+// v740: chart level
+internal fun PlayerActivity.showV740ChartDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v730chart).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v740chart).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
         title = "chart level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch721.v730chart = value
+        FeaturePrefsStore.batch731.v740chart = value
         AppToast.show(this, "chart: $value")
     }
 }
 
-// v730: checkpoint level
-internal fun PlayerActivity.showV730CheckpointDialog() {
+// v740: checkpoint level
+internal fun PlayerActivity.showV740CheckpointDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch721.v730checkpoint).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v740checkpoint).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
         title = "checkpoint level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch721.v730checkpoint = value
+        FeaturePrefsStore.batch731.v740checkpoint = value
         AppToast.show(this, "checkpoint: $value")
     }
 }
 
-// v730: chunk mode
-internal fun PlayerActivity.showV730ChunkToggle() {
-    val current = FeaturePrefsStore.batch721.v730chunk
-    FeaturePrefsStore.batch721.v730chunk = !current
-    AppToast.show(this, "chunk: ${if (!current) "ON" else "OFF"}")
+// v740: chunk level
+internal fun PlayerActivity.showV740ChunkDialog() {
+    val options = listOf(0, 1, 2, 3)
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v740chunk).takeIf { it >= 0 } ?: 0
+    showSettingsChoiceDialog(
+        title = "chunk level",
+        options = options,
+        checkedIndex = currentIndex,
+        label = { "$it" },
+    ) { value ->
+        FeaturePrefsStore.batch731.v740chunk = value
+        AppToast.show(this, "chunk: $value")
+    }
 }
 
-// v730: cipher mode
-internal fun PlayerActivity.showV730CipherToggle() {
-    val current = FeaturePrefsStore.batch721.v730cipher
-    FeaturePrefsStore.batch721.v730cipher = !current
+// v740: cipher mode
+internal fun PlayerActivity.showV740CipherToggle() {
+    val current = FeaturePrefsStore.batch731.v740cipher
+    FeaturePrefsStore.batch731.v740cipher = !current
     AppToast.show(this, "cipher: ${if (!current) "ON" else "OFF"}")
 }
 
-// v730: clamp mode
-internal fun PlayerActivity.showV730ClampToggle() {
-    val current = FeaturePrefsStore.batch721.v730clamp
-    FeaturePrefsStore.batch721.v730clamp = !current
+// v740: clamp mode
+internal fun PlayerActivity.showV740ClampToggle() {
+    val current = FeaturePrefsStore.batch731.v740clamp
+    FeaturePrefsStore.batch731.v740clamp = !current
     AppToast.show(this, "clamp: ${if (!current) "ON" else "OFF"}")
 }
 
-// v730: classify mode
-internal fun PlayerActivity.showV730ClassifyToggle() {
-    val current = FeaturePrefsStore.batch721.v730classify
-    FeaturePrefsStore.batch721.v730classify = !current
+// v740: classify mode
+internal fun PlayerActivity.showV740ClassifyToggle() {
+    val current = FeaturePrefsStore.batch731.v740classify
+    FeaturePrefsStore.batch731.v740classify = !current
     AppToast.show(this, "classify: ${if (!current) "ON" else "OFF"}")
 }
 
-// v730: clean mode
-internal fun PlayerActivity.showV730CleanToggle() {
-    val current = FeaturePrefsStore.batch721.v730clean
-    FeaturePrefsStore.batch721.v730clean = !current
+// v740: clean mode
+internal fun PlayerActivity.showV740CleanToggle() {
+    val current = FeaturePrefsStore.batch731.v740clean
+    FeaturePrefsStore.batch731.v740clean = !current
     AppToast.show(this, "clean: ${if (!current) "ON" else "OFF"}")
+}
+
+// v740: clear mode
+internal fun PlayerActivity.showV740ClearToggle() {
+    val current = FeaturePrefsStore.batch731.v740clear
+    FeaturePrefsStore.batch731.v740clear = !current
+    AppToast.show(this, "clear: ${if (!current) "ON" else "OFF"}")
 }
 

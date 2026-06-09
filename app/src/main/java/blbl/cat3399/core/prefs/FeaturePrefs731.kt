@@ -5,604 +5,604 @@ import android.content.Context
 class FeaturePrefs731(context: Context) {
     private val prefs = context.getSharedPreferences("feature_prefs_731", Context.MODE_PRIVATE)
 
-    var v731border: Boolean
-        get() = prefs.getBoolean("v731border", false)
-        set(value) = prefs.edit().putBoolean("v731border", value).apply()
-
-    var v731bounce: Boolean
-        get() = prefs.getBoolean("v731bounce", false)
-        set(value) = prefs.edit().putBoolean("v731bounce", value).apply()
-
-    var v731box: Boolean
-        get() = prefs.getBoolean("v731box", false)
-        set(value) = prefs.edit().putBoolean("v731box", value).apply()
-
-    var v731branch: Boolean
-        get() = prefs.getBoolean("v731branch", false)
-        set(value) = prefs.edit().putBoolean("v731branch", value).apply()
-
-    var v731brand: Boolean
-        get() = prefs.getBoolean("v731brand", false)
-        set(value) = prefs.edit().putBoolean("v731brand", value).apply()
-
-    var v731break: Int
-        get() = prefs.getInt("v731break", 0)
-        set(value) = prefs.edit().putInt("v731break", value).apply()
-
-    var v731bridge: Int
-        get() = prefs.getInt("v731bridge", 0)
-        set(value) = prefs.edit().putInt("v731bridge", value).apply()
-
-    var v731browse: Int
-        get() = prefs.getInt("v731browse", 0)
-        set(value) = prefs.edit().putInt("v731browse", value).apply()
-
-    var v731buffer: Int
-        get() = prefs.getInt("v731buffer", 0)
-        set(value) = prefs.edit().putInt("v731buffer", value).apply()
-
-    var v731build: Int
-        get() = prefs.getInt("v731build", 0)
-        set(value) = prefs.edit().putInt("v731build", value).apply()
-
-    var v731bulk: Boolean
-        get() = prefs.getBoolean("v731bulk", false)
-        set(value) = prefs.edit().putBoolean("v731bulk", value).apply()
-
-    var v731burst: Boolean
-        get() = prefs.getBoolean("v731burst", false)
-        set(value) = prefs.edit().putBoolean("v731burst", value).apply()
-
-    var v731byte: Boolean
-        get() = prefs.getBoolean("v731byte", false)
-        set(value) = prefs.edit().putBoolean("v731byte", value).apply()
-
-    var v731cache: Boolean
-        get() = prefs.getBoolean("v731cache", false)
-        set(value) = prefs.edit().putBoolean("v731cache", value).apply()
-
-    var v731calibrate: Boolean
-        get() = prefs.getBoolean("v731calibrate", false)
-        set(value) = prefs.edit().putBoolean("v731calibrate", value).apply()
-
-    var v732border: Boolean
-        get() = prefs.getBoolean("v732border", false)
-        set(value) = prefs.edit().putBoolean("v732border", value).apply()
-
-    var v732bounce: Boolean
-        get() = prefs.getBoolean("v732bounce", false)
-        set(value) = prefs.edit().putBoolean("v732bounce", value).apply()
-
-    var v732box: Boolean
-        get() = prefs.getBoolean("v732box", false)
-        set(value) = prefs.edit().putBoolean("v732box", value).apply()
-
-    var v732branch: Boolean
-        get() = prefs.getBoolean("v732branch", false)
-        set(value) = prefs.edit().putBoolean("v732branch", value).apply()
-
-    var v732brand: Boolean
-        get() = prefs.getBoolean("v732brand", false)
-        set(value) = prefs.edit().putBoolean("v732brand", value).apply()
-
-    var v732break: Int
-        get() = prefs.getInt("v732break", 0)
-        set(value) = prefs.edit().putInt("v732break", value).apply()
-
-    var v732bridge: Int
-        get() = prefs.getInt("v732bridge", 0)
-        set(value) = prefs.edit().putInt("v732bridge", value).apply()
-
-    var v732browse: Int
-        get() = prefs.getInt("v732browse", 0)
-        set(value) = prefs.edit().putInt("v732browse", value).apply()
-
-    var v732buffer: Int
-        get() = prefs.getInt("v732buffer", 0)
-        set(value) = prefs.edit().putInt("v732buffer", value).apply()
-
-    var v732build: Int
-        get() = prefs.getInt("v732build", 0)
-        set(value) = prefs.edit().putInt("v732build", value).apply()
-
-    var v732bulk: Boolean
-        get() = prefs.getBoolean("v732bulk", false)
-        set(value) = prefs.edit().putBoolean("v732bulk", value).apply()
-
-    var v732burst: Boolean
-        get() = prefs.getBoolean("v732burst", false)
-        set(value) = prefs.edit().putBoolean("v732burst", value).apply()
-
-    var v732byte: Boolean
-        get() = prefs.getBoolean("v732byte", false)
-        set(value) = prefs.edit().putBoolean("v732byte", value).apply()
-
-    var v732cache: Boolean
-        get() = prefs.getBoolean("v732cache", false)
-        set(value) = prefs.edit().putBoolean("v732cache", value).apply()
-
-    var v732calibrate: Boolean
-        get() = prefs.getBoolean("v732calibrate", false)
-        set(value) = prefs.edit().putBoolean("v732calibrate", value).apply()
-
-    var v733border: Boolean
-        get() = prefs.getBoolean("v733border", false)
-        set(value) = prefs.edit().putBoolean("v733border", value).apply()
-
-    var v733bounce: Boolean
-        get() = prefs.getBoolean("v733bounce", false)
-        set(value) = prefs.edit().putBoolean("v733bounce", value).apply()
-
-    var v733box: Boolean
-        get() = prefs.getBoolean("v733box", false)
-        set(value) = prefs.edit().putBoolean("v733box", value).apply()
-
-    var v733branch: Boolean
-        get() = prefs.getBoolean("v733branch", false)
-        set(value) = prefs.edit().putBoolean("v733branch", value).apply()
-
-    var v733brand: Boolean
-        get() = prefs.getBoolean("v733brand", false)
-        set(value) = prefs.edit().putBoolean("v733brand", value).apply()
-
-    var v733break: Int
-        get() = prefs.getInt("v733break", 0)
-        set(value) = prefs.edit().putInt("v733break", value).apply()
-
-    var v733bridge: Int
-        get() = prefs.getInt("v733bridge", 0)
-        set(value) = prefs.edit().putInt("v733bridge", value).apply()
-
-    var v733browse: Int
-        get() = prefs.getInt("v733browse", 0)
-        set(value) = prefs.edit().putInt("v733browse", value).apply()
-
-    var v733buffer: Int
-        get() = prefs.getInt("v733buffer", 0)
-        set(value) = prefs.edit().putInt("v733buffer", value).apply()
-
-    var v733build: Int
-        get() = prefs.getInt("v733build", 0)
-        set(value) = prefs.edit().putInt("v733build", value).apply()
-
-    var v733bulk: Boolean
-        get() = prefs.getBoolean("v733bulk", false)
-        set(value) = prefs.edit().putBoolean("v733bulk", value).apply()
-
-    var v733burst: Boolean
-        get() = prefs.getBoolean("v733burst", false)
-        set(value) = prefs.edit().putBoolean("v733burst", value).apply()
-
-    var v733byte: Boolean
-        get() = prefs.getBoolean("v733byte", false)
-        set(value) = prefs.edit().putBoolean("v733byte", value).apply()
-
-    var v733cache: Boolean
-        get() = prefs.getBoolean("v733cache", false)
-        set(value) = prefs.edit().putBoolean("v733cache", value).apply()
-
-    var v733calibrate: Boolean
-        get() = prefs.getBoolean("v733calibrate", false)
-        set(value) = prefs.edit().putBoolean("v733calibrate", value).apply()
-
-    var v734border: Boolean
-        get() = prefs.getBoolean("v734border", false)
-        set(value) = prefs.edit().putBoolean("v734border", value).apply()
-
-    var v734bounce: Boolean
-        get() = prefs.getBoolean("v734bounce", false)
-        set(value) = prefs.edit().putBoolean("v734bounce", value).apply()
-
-    var v734box: Boolean
-        get() = prefs.getBoolean("v734box", false)
-        set(value) = prefs.edit().putBoolean("v734box", value).apply()
-
-    var v734branch: Boolean
-        get() = prefs.getBoolean("v734branch", false)
-        set(value) = prefs.edit().putBoolean("v734branch", value).apply()
-
-    var v734brand: Boolean
-        get() = prefs.getBoolean("v734brand", false)
-        set(value) = prefs.edit().putBoolean("v734brand", value).apply()
-
-    var v734break: Int
-        get() = prefs.getInt("v734break", 0)
-        set(value) = prefs.edit().putInt("v734break", value).apply()
-
-    var v734bridge: Int
-        get() = prefs.getInt("v734bridge", 0)
-        set(value) = prefs.edit().putInt("v734bridge", value).apply()
-
-    var v734browse: Int
-        get() = prefs.getInt("v734browse", 0)
-        set(value) = prefs.edit().putInt("v734browse", value).apply()
-
-    var v734buffer: Int
-        get() = prefs.getInt("v734buffer", 0)
-        set(value) = prefs.edit().putInt("v734buffer", value).apply()
-
-    var v734build: Int
-        get() = prefs.getInt("v734build", 0)
-        set(value) = prefs.edit().putInt("v734build", value).apply()
-
-    var v734bulk: Boolean
-        get() = prefs.getBoolean("v734bulk", false)
-        set(value) = prefs.edit().putBoolean("v734bulk", value).apply()
-
-    var v734burst: Boolean
-        get() = prefs.getBoolean("v734burst", false)
-        set(value) = prefs.edit().putBoolean("v734burst", value).apply()
-
-    var v734byte: Boolean
-        get() = prefs.getBoolean("v734byte", false)
-        set(value) = prefs.edit().putBoolean("v734byte", value).apply()
-
-    var v734cache: Boolean
-        get() = prefs.getBoolean("v734cache", false)
-        set(value) = prefs.edit().putBoolean("v734cache", value).apply()
-
-    var v734calibrate: Boolean
-        get() = prefs.getBoolean("v734calibrate", false)
-        set(value) = prefs.edit().putBoolean("v734calibrate", value).apply()
-
-    var v735border: Boolean
-        get() = prefs.getBoolean("v735border", false)
-        set(value) = prefs.edit().putBoolean("v735border", value).apply()
-
-    var v735bounce: Boolean
-        get() = prefs.getBoolean("v735bounce", false)
-        set(value) = prefs.edit().putBoolean("v735bounce", value).apply()
-
-    var v735box: Boolean
-        get() = prefs.getBoolean("v735box", false)
-        set(value) = prefs.edit().putBoolean("v735box", value).apply()
-
-    var v735branch: Boolean
-        get() = prefs.getBoolean("v735branch", false)
-        set(value) = prefs.edit().putBoolean("v735branch", value).apply()
-
-    var v735brand: Boolean
-        get() = prefs.getBoolean("v735brand", false)
-        set(value) = prefs.edit().putBoolean("v735brand", value).apply()
-
-    var v735break: Int
-        get() = prefs.getInt("v735break", 0)
-        set(value) = prefs.edit().putInt("v735break", value).apply()
-
-    var v735bridge: Int
-        get() = prefs.getInt("v735bridge", 0)
-        set(value) = prefs.edit().putInt("v735bridge", value).apply()
-
-    var v735browse: Int
-        get() = prefs.getInt("v735browse", 0)
-        set(value) = prefs.edit().putInt("v735browse", value).apply()
-
-    var v735buffer: Int
-        get() = prefs.getInt("v735buffer", 0)
-        set(value) = prefs.edit().putInt("v735buffer", value).apply()
-
-    var v735build: Int
-        get() = prefs.getInt("v735build", 0)
-        set(value) = prefs.edit().putInt("v735build", value).apply()
-
-    var v735bulk: Boolean
-        get() = prefs.getBoolean("v735bulk", false)
-        set(value) = prefs.edit().putBoolean("v735bulk", value).apply()
-
-    var v735burst: Boolean
-        get() = prefs.getBoolean("v735burst", false)
-        set(value) = prefs.edit().putBoolean("v735burst", value).apply()
-
-    var v735byte: Boolean
-        get() = prefs.getBoolean("v735byte", false)
-        set(value) = prefs.edit().putBoolean("v735byte", value).apply()
-
-    var v735cache: Boolean
-        get() = prefs.getBoolean("v735cache", false)
-        set(value) = prefs.edit().putBoolean("v735cache", value).apply()
-
-    var v735calibrate: Boolean
-        get() = prefs.getBoolean("v735calibrate", false)
-        set(value) = prefs.edit().putBoolean("v735calibrate", value).apply()
-
-    var v736border: Boolean
-        get() = prefs.getBoolean("v736border", false)
-        set(value) = prefs.edit().putBoolean("v736border", value).apply()
-
-    var v736bounce: Boolean
-        get() = prefs.getBoolean("v736bounce", false)
-        set(value) = prefs.edit().putBoolean("v736bounce", value).apply()
-
-    var v736box: Boolean
-        get() = prefs.getBoolean("v736box", false)
-        set(value) = prefs.edit().putBoolean("v736box", value).apply()
-
-    var v736branch: Boolean
-        get() = prefs.getBoolean("v736branch", false)
-        set(value) = prefs.edit().putBoolean("v736branch", value).apply()
-
-    var v736brand: Boolean
-        get() = prefs.getBoolean("v736brand", false)
-        set(value) = prefs.edit().putBoolean("v736brand", value).apply()
-
-    var v736break: Int
-        get() = prefs.getInt("v736break", 0)
-        set(value) = prefs.edit().putInt("v736break", value).apply()
-
-    var v736bridge: Int
-        get() = prefs.getInt("v736bridge", 0)
-        set(value) = prefs.edit().putInt("v736bridge", value).apply()
-
-    var v736browse: Int
-        get() = prefs.getInt("v736browse", 0)
-        set(value) = prefs.edit().putInt("v736browse", value).apply()
-
-    var v736buffer: Int
-        get() = prefs.getInt("v736buffer", 0)
-        set(value) = prefs.edit().putInt("v736buffer", value).apply()
-
-    var v736build: Int
-        get() = prefs.getInt("v736build", 0)
-        set(value) = prefs.edit().putInt("v736build", value).apply()
-
-    var v736bulk: Boolean
-        get() = prefs.getBoolean("v736bulk", false)
-        set(value) = prefs.edit().putBoolean("v736bulk", value).apply()
-
-    var v736burst: Boolean
-        get() = prefs.getBoolean("v736burst", false)
-        set(value) = prefs.edit().putBoolean("v736burst", value).apply()
-
-    var v736byte: Boolean
-        get() = prefs.getBoolean("v736byte", false)
-        set(value) = prefs.edit().putBoolean("v736byte", value).apply()
-
-    var v736cache: Boolean
-        get() = prefs.getBoolean("v736cache", false)
-        set(value) = prefs.edit().putBoolean("v736cache", value).apply()
-
-    var v736calibrate: Boolean
-        get() = prefs.getBoolean("v736calibrate", false)
-        set(value) = prefs.edit().putBoolean("v736calibrate", value).apply()
-
-    var v737border: Boolean
-        get() = prefs.getBoolean("v737border", false)
-        set(value) = prefs.edit().putBoolean("v737border", value).apply()
-
-    var v737bounce: Boolean
-        get() = prefs.getBoolean("v737bounce", false)
-        set(value) = prefs.edit().putBoolean("v737bounce", value).apply()
-
-    var v737box: Boolean
-        get() = prefs.getBoolean("v737box", false)
-        set(value) = prefs.edit().putBoolean("v737box", value).apply()
-
-    var v737branch: Boolean
-        get() = prefs.getBoolean("v737branch", false)
-        set(value) = prefs.edit().putBoolean("v737branch", value).apply()
-
-    var v737brand: Boolean
-        get() = prefs.getBoolean("v737brand", false)
-        set(value) = prefs.edit().putBoolean("v737brand", value).apply()
-
-    var v737break: Int
-        get() = prefs.getInt("v737break", 0)
-        set(value) = prefs.edit().putInt("v737break", value).apply()
-
-    var v737bridge: Int
-        get() = prefs.getInt("v737bridge", 0)
-        set(value) = prefs.edit().putInt("v737bridge", value).apply()
-
-    var v737browse: Int
-        get() = prefs.getInt("v737browse", 0)
-        set(value) = prefs.edit().putInt("v737browse", value).apply()
-
-    var v737buffer: Int
-        get() = prefs.getInt("v737buffer", 0)
-        set(value) = prefs.edit().putInt("v737buffer", value).apply()
-
-    var v737build: Int
-        get() = prefs.getInt("v737build", 0)
-        set(value) = prefs.edit().putInt("v737build", value).apply()
-
-    var v737bulk: Boolean
-        get() = prefs.getBoolean("v737bulk", false)
-        set(value) = prefs.edit().putBoolean("v737bulk", value).apply()
-
-    var v737burst: Boolean
-        get() = prefs.getBoolean("v737burst", false)
-        set(value) = prefs.edit().putBoolean("v737burst", value).apply()
-
-    var v737byte: Boolean
-        get() = prefs.getBoolean("v737byte", false)
-        set(value) = prefs.edit().putBoolean("v737byte", value).apply()
-
-    var v737cache: Boolean
-        get() = prefs.getBoolean("v737cache", false)
-        set(value) = prefs.edit().putBoolean("v737cache", value).apply()
-
-    var v737calibrate: Boolean
-        get() = prefs.getBoolean("v737calibrate", false)
-        set(value) = prefs.edit().putBoolean("v737calibrate", value).apply()
-
-    var v738border: Boolean
-        get() = prefs.getBoolean("v738border", false)
-        set(value) = prefs.edit().putBoolean("v738border", value).apply()
-
-    var v738bounce: Boolean
-        get() = prefs.getBoolean("v738bounce", false)
-        set(value) = prefs.edit().putBoolean("v738bounce", value).apply()
-
-    var v738box: Boolean
-        get() = prefs.getBoolean("v738box", false)
-        set(value) = prefs.edit().putBoolean("v738box", value).apply()
-
-    var v738branch: Boolean
-        get() = prefs.getBoolean("v738branch", false)
-        set(value) = prefs.edit().putBoolean("v738branch", value).apply()
-
-    var v738brand: Boolean
-        get() = prefs.getBoolean("v738brand", false)
-        set(value) = prefs.edit().putBoolean("v738brand", value).apply()
-
-    var v738break: Int
-        get() = prefs.getInt("v738break", 0)
-        set(value) = prefs.edit().putInt("v738break", value).apply()
-
-    var v738bridge: Int
-        get() = prefs.getInt("v738bridge", 0)
-        set(value) = prefs.edit().putInt("v738bridge", value).apply()
-
-    var v738browse: Int
-        get() = prefs.getInt("v738browse", 0)
-        set(value) = prefs.edit().putInt("v738browse", value).apply()
-
-    var v738buffer: Int
-        get() = prefs.getInt("v738buffer", 0)
-        set(value) = prefs.edit().putInt("v738buffer", value).apply()
-
-    var v738build: Int
-        get() = prefs.getInt("v738build", 0)
-        set(value) = prefs.edit().putInt("v738build", value).apply()
-
-    var v738bulk: Boolean
-        get() = prefs.getBoolean("v738bulk", false)
-        set(value) = prefs.edit().putBoolean("v738bulk", value).apply()
-
-    var v738burst: Boolean
-        get() = prefs.getBoolean("v738burst", false)
-        set(value) = prefs.edit().putBoolean("v738burst", value).apply()
-
-    var v738byte: Boolean
-        get() = prefs.getBoolean("v738byte", false)
-        set(value) = prefs.edit().putBoolean("v738byte", value).apply()
-
-    var v738cache: Boolean
-        get() = prefs.getBoolean("v738cache", false)
-        set(value) = prefs.edit().putBoolean("v738cache", value).apply()
-
-    var v738calibrate: Boolean
-        get() = prefs.getBoolean("v738calibrate", false)
-        set(value) = prefs.edit().putBoolean("v738calibrate", value).apply()
-
-    var v739border: Boolean
-        get() = prefs.getBoolean("v739border", false)
-        set(value) = prefs.edit().putBoolean("v739border", value).apply()
-
-    var v739bounce: Boolean
-        get() = prefs.getBoolean("v739bounce", false)
-        set(value) = prefs.edit().putBoolean("v739bounce", value).apply()
-
-    var v739box: Boolean
-        get() = prefs.getBoolean("v739box", false)
-        set(value) = prefs.edit().putBoolean("v739box", value).apply()
-
-    var v739branch: Boolean
-        get() = prefs.getBoolean("v739branch", false)
-        set(value) = prefs.edit().putBoolean("v739branch", value).apply()
-
-    var v739brand: Boolean
-        get() = prefs.getBoolean("v739brand", false)
-        set(value) = prefs.edit().putBoolean("v739brand", value).apply()
-
-    var v739break: Int
-        get() = prefs.getInt("v739break", 0)
-        set(value) = prefs.edit().putInt("v739break", value).apply()
-
-    var v739bridge: Int
-        get() = prefs.getInt("v739bridge", 0)
-        set(value) = prefs.edit().putInt("v739bridge", value).apply()
-
-    var v739browse: Int
-        get() = prefs.getInt("v739browse", 0)
-        set(value) = prefs.edit().putInt("v739browse", value).apply()
-
-    var v739buffer: Int
-        get() = prefs.getInt("v739buffer", 0)
-        set(value) = prefs.edit().putInt("v739buffer", value).apply()
-
-    var v739build: Int
-        get() = prefs.getInt("v739build", 0)
-        set(value) = prefs.edit().putInt("v739build", value).apply()
-
-    var v739bulk: Boolean
-        get() = prefs.getBoolean("v739bulk", false)
-        set(value) = prefs.edit().putBoolean("v739bulk", value).apply()
-
-    var v739burst: Boolean
-        get() = prefs.getBoolean("v739burst", false)
-        set(value) = prefs.edit().putBoolean("v739burst", value).apply()
-
-    var v739byte: Boolean
-        get() = prefs.getBoolean("v739byte", false)
-        set(value) = prefs.edit().putBoolean("v739byte", value).apply()
-
-    var v739cache: Boolean
-        get() = prefs.getBoolean("v739cache", false)
-        set(value) = prefs.edit().putBoolean("v739cache", value).apply()
-
-    var v739calibrate: Boolean
-        get() = prefs.getBoolean("v739calibrate", false)
-        set(value) = prefs.edit().putBoolean("v739calibrate", value).apply()
-
-    var v740border: Boolean
-        get() = prefs.getBoolean("v740border", false)
-        set(value) = prefs.edit().putBoolean("v740border", value).apply()
-
-    var v740bounce: Boolean
-        get() = prefs.getBoolean("v740bounce", false)
-        set(value) = prefs.edit().putBoolean("v740bounce", value).apply()
-
-    var v740box: Boolean
-        get() = prefs.getBoolean("v740box", false)
-        set(value) = prefs.edit().putBoolean("v740box", value).apply()
-
-    var v740branch: Boolean
-        get() = prefs.getBoolean("v740branch", false)
-        set(value) = prefs.edit().putBoolean("v740branch", value).apply()
-
-    var v740brand: Boolean
-        get() = prefs.getBoolean("v740brand", false)
-        set(value) = prefs.edit().putBoolean("v740brand", value).apply()
-
-    var v740break: Int
-        get() = prefs.getInt("v740break", 0)
-        set(value) = prefs.edit().putInt("v740break", value).apply()
-
-    var v740bridge: Int
-        get() = prefs.getInt("v740bridge", 0)
-        set(value) = prefs.edit().putInt("v740bridge", value).apply()
-
-    var v740browse: Int
-        get() = prefs.getInt("v740browse", 0)
-        set(value) = prefs.edit().putInt("v740browse", value).apply()
-
-    var v740buffer: Int
-        get() = prefs.getInt("v740buffer", 0)
-        set(value) = prefs.edit().putInt("v740buffer", value).apply()
-
-    var v740build: Int
-        get() = prefs.getInt("v740build", 0)
-        set(value) = prefs.edit().putInt("v740build", value).apply()
-
-    var v740bulk: Boolean
-        get() = prefs.getBoolean("v740bulk", false)
-        set(value) = prefs.edit().putBoolean("v740bulk", value).apply()
-
-    var v740burst: Boolean
-        get() = prefs.getBoolean("v740burst", false)
-        set(value) = prefs.edit().putBoolean("v740burst", value).apply()
-
-    var v740byte: Boolean
-        get() = prefs.getBoolean("v740byte", false)
-        set(value) = prefs.edit().putBoolean("v740byte", value).apply()
-
-    var v740cache: Boolean
-        get() = prefs.getBoolean("v740cache", false)
-        set(value) = prefs.edit().putBoolean("v740cache", value).apply()
-
-    var v740calibrate: Boolean
-        get() = prefs.getBoolean("v740calibrate", false)
-        set(value) = prefs.edit().putBoolean("v740calibrate", value).apply()
+    var v731cancel: Boolean
+        get() = prefs.getBoolean("v731cancel", false)
+        set(value) = prefs.edit().putBoolean("v731cancel", value).apply()
+
+    var v731capture: Boolean
+        get() = prefs.getBoolean("v731capture", false)
+        set(value) = prefs.edit().putBoolean("v731capture", value).apply()
+
+    var v731cascade: Boolean
+        get() = prefs.getBoolean("v731cascade", false)
+        set(value) = prefs.edit().putBoolean("v731cascade", value).apply()
+
+    var v731category: Boolean
+        get() = prefs.getBoolean("v731category", false)
+        set(value) = prefs.edit().putBoolean("v731category", value).apply()
+
+    var v731chain: Boolean
+        get() = prefs.getBoolean("v731chain", false)
+        set(value) = prefs.edit().putBoolean("v731chain", value).apply()
+
+    var v731challenge: Int
+        get() = prefs.getInt("v731challenge", 0)
+        set(value) = prefs.edit().putInt("v731challenge", value).apply()
+
+    var v731channel: Int
+        get() = prefs.getInt("v731channel", 0)
+        set(value) = prefs.edit().putInt("v731channel", value).apply()
+
+    var v731chart: Int
+        get() = prefs.getInt("v731chart", 0)
+        set(value) = prefs.edit().putInt("v731chart", value).apply()
+
+    var v731checkpoint: Int
+        get() = prefs.getInt("v731checkpoint", 0)
+        set(value) = prefs.edit().putInt("v731checkpoint", value).apply()
+
+    var v731chunk: Int
+        get() = prefs.getInt("v731chunk", 0)
+        set(value) = prefs.edit().putInt("v731chunk", value).apply()
+
+    var v731cipher: Boolean
+        get() = prefs.getBoolean("v731cipher", false)
+        set(value) = prefs.edit().putBoolean("v731cipher", value).apply()
+
+    var v731clamp: Boolean
+        get() = prefs.getBoolean("v731clamp", false)
+        set(value) = prefs.edit().putBoolean("v731clamp", value).apply()
+
+    var v731classify: Boolean
+        get() = prefs.getBoolean("v731classify", false)
+        set(value) = prefs.edit().putBoolean("v731classify", value).apply()
+
+    var v731clean: Boolean
+        get() = prefs.getBoolean("v731clean", false)
+        set(value) = prefs.edit().putBoolean("v731clean", value).apply()
+
+    var v731clear: Boolean
+        get() = prefs.getBoolean("v731clear", false)
+        set(value) = prefs.edit().putBoolean("v731clear", value).apply()
+
+    var v732cancel: Boolean
+        get() = prefs.getBoolean("v732cancel", false)
+        set(value) = prefs.edit().putBoolean("v732cancel", value).apply()
+
+    var v732capture: Boolean
+        get() = prefs.getBoolean("v732capture", false)
+        set(value) = prefs.edit().putBoolean("v732capture", value).apply()
+
+    var v732cascade: Boolean
+        get() = prefs.getBoolean("v732cascade", false)
+        set(value) = prefs.edit().putBoolean("v732cascade", value).apply()
+
+    var v732category: Boolean
+        get() = prefs.getBoolean("v732category", false)
+        set(value) = prefs.edit().putBoolean("v732category", value).apply()
+
+    var v732chain: Boolean
+        get() = prefs.getBoolean("v732chain", false)
+        set(value) = prefs.edit().putBoolean("v732chain", value).apply()
+
+    var v732challenge: Int
+        get() = prefs.getInt("v732challenge", 0)
+        set(value) = prefs.edit().putInt("v732challenge", value).apply()
+
+    var v732channel: Int
+        get() = prefs.getInt("v732channel", 0)
+        set(value) = prefs.edit().putInt("v732channel", value).apply()
+
+    var v732chart: Int
+        get() = prefs.getInt("v732chart", 0)
+        set(value) = prefs.edit().putInt("v732chart", value).apply()
+
+    var v732checkpoint: Int
+        get() = prefs.getInt("v732checkpoint", 0)
+        set(value) = prefs.edit().putInt("v732checkpoint", value).apply()
+
+    var v732chunk: Int
+        get() = prefs.getInt("v732chunk", 0)
+        set(value) = prefs.edit().putInt("v732chunk", value).apply()
+
+    var v732cipher: Boolean
+        get() = prefs.getBoolean("v732cipher", false)
+        set(value) = prefs.edit().putBoolean("v732cipher", value).apply()
+
+    var v732clamp: Boolean
+        get() = prefs.getBoolean("v732clamp", false)
+        set(value) = prefs.edit().putBoolean("v732clamp", value).apply()
+
+    var v732classify: Boolean
+        get() = prefs.getBoolean("v732classify", false)
+        set(value) = prefs.edit().putBoolean("v732classify", value).apply()
+
+    var v732clean: Boolean
+        get() = prefs.getBoolean("v732clean", false)
+        set(value) = prefs.edit().putBoolean("v732clean", value).apply()
+
+    var v732clear: Boolean
+        get() = prefs.getBoolean("v732clear", false)
+        set(value) = prefs.edit().putBoolean("v732clear", value).apply()
+
+    var v733cancel: Boolean
+        get() = prefs.getBoolean("v733cancel", false)
+        set(value) = prefs.edit().putBoolean("v733cancel", value).apply()
+
+    var v733capture: Boolean
+        get() = prefs.getBoolean("v733capture", false)
+        set(value) = prefs.edit().putBoolean("v733capture", value).apply()
+
+    var v733cascade: Boolean
+        get() = prefs.getBoolean("v733cascade", false)
+        set(value) = prefs.edit().putBoolean("v733cascade", value).apply()
+
+    var v733category: Boolean
+        get() = prefs.getBoolean("v733category", false)
+        set(value) = prefs.edit().putBoolean("v733category", value).apply()
+
+    var v733chain: Boolean
+        get() = prefs.getBoolean("v733chain", false)
+        set(value) = prefs.edit().putBoolean("v733chain", value).apply()
+
+    var v733challenge: Int
+        get() = prefs.getInt("v733challenge", 0)
+        set(value) = prefs.edit().putInt("v733challenge", value).apply()
+
+    var v733channel: Int
+        get() = prefs.getInt("v733channel", 0)
+        set(value) = prefs.edit().putInt("v733channel", value).apply()
+
+    var v733chart: Int
+        get() = prefs.getInt("v733chart", 0)
+        set(value) = prefs.edit().putInt("v733chart", value).apply()
+
+    var v733checkpoint: Int
+        get() = prefs.getInt("v733checkpoint", 0)
+        set(value) = prefs.edit().putInt("v733checkpoint", value).apply()
+
+    var v733chunk: Int
+        get() = prefs.getInt("v733chunk", 0)
+        set(value) = prefs.edit().putInt("v733chunk", value).apply()
+
+    var v733cipher: Boolean
+        get() = prefs.getBoolean("v733cipher", false)
+        set(value) = prefs.edit().putBoolean("v733cipher", value).apply()
+
+    var v733clamp: Boolean
+        get() = prefs.getBoolean("v733clamp", false)
+        set(value) = prefs.edit().putBoolean("v733clamp", value).apply()
+
+    var v733classify: Boolean
+        get() = prefs.getBoolean("v733classify", false)
+        set(value) = prefs.edit().putBoolean("v733classify", value).apply()
+
+    var v733clean: Boolean
+        get() = prefs.getBoolean("v733clean", false)
+        set(value) = prefs.edit().putBoolean("v733clean", value).apply()
+
+    var v733clear: Boolean
+        get() = prefs.getBoolean("v733clear", false)
+        set(value) = prefs.edit().putBoolean("v733clear", value).apply()
+
+    var v734cancel: Boolean
+        get() = prefs.getBoolean("v734cancel", false)
+        set(value) = prefs.edit().putBoolean("v734cancel", value).apply()
+
+    var v734capture: Boolean
+        get() = prefs.getBoolean("v734capture", false)
+        set(value) = prefs.edit().putBoolean("v734capture", value).apply()
+
+    var v734cascade: Boolean
+        get() = prefs.getBoolean("v734cascade", false)
+        set(value) = prefs.edit().putBoolean("v734cascade", value).apply()
+
+    var v734category: Boolean
+        get() = prefs.getBoolean("v734category", false)
+        set(value) = prefs.edit().putBoolean("v734category", value).apply()
+
+    var v734chain: Boolean
+        get() = prefs.getBoolean("v734chain", false)
+        set(value) = prefs.edit().putBoolean("v734chain", value).apply()
+
+    var v734challenge: Int
+        get() = prefs.getInt("v734challenge", 0)
+        set(value) = prefs.edit().putInt("v734challenge", value).apply()
+
+    var v734channel: Int
+        get() = prefs.getInt("v734channel", 0)
+        set(value) = prefs.edit().putInt("v734channel", value).apply()
+
+    var v734chart: Int
+        get() = prefs.getInt("v734chart", 0)
+        set(value) = prefs.edit().putInt("v734chart", value).apply()
+
+    var v734checkpoint: Int
+        get() = prefs.getInt("v734checkpoint", 0)
+        set(value) = prefs.edit().putInt("v734checkpoint", value).apply()
+
+    var v734chunk: Int
+        get() = prefs.getInt("v734chunk", 0)
+        set(value) = prefs.edit().putInt("v734chunk", value).apply()
+
+    var v734cipher: Boolean
+        get() = prefs.getBoolean("v734cipher", false)
+        set(value) = prefs.edit().putBoolean("v734cipher", value).apply()
+
+    var v734clamp: Boolean
+        get() = prefs.getBoolean("v734clamp", false)
+        set(value) = prefs.edit().putBoolean("v734clamp", value).apply()
+
+    var v734classify: Boolean
+        get() = prefs.getBoolean("v734classify", false)
+        set(value) = prefs.edit().putBoolean("v734classify", value).apply()
+
+    var v734clean: Boolean
+        get() = prefs.getBoolean("v734clean", false)
+        set(value) = prefs.edit().putBoolean("v734clean", value).apply()
+
+    var v734clear: Boolean
+        get() = prefs.getBoolean("v734clear", false)
+        set(value) = prefs.edit().putBoolean("v734clear", value).apply()
+
+    var v735cancel: Boolean
+        get() = prefs.getBoolean("v735cancel", false)
+        set(value) = prefs.edit().putBoolean("v735cancel", value).apply()
+
+    var v735capture: Boolean
+        get() = prefs.getBoolean("v735capture", false)
+        set(value) = prefs.edit().putBoolean("v735capture", value).apply()
+
+    var v735cascade: Boolean
+        get() = prefs.getBoolean("v735cascade", false)
+        set(value) = prefs.edit().putBoolean("v735cascade", value).apply()
+
+    var v735category: Boolean
+        get() = prefs.getBoolean("v735category", false)
+        set(value) = prefs.edit().putBoolean("v735category", value).apply()
+
+    var v735chain: Boolean
+        get() = prefs.getBoolean("v735chain", false)
+        set(value) = prefs.edit().putBoolean("v735chain", value).apply()
+
+    var v735challenge: Int
+        get() = prefs.getInt("v735challenge", 0)
+        set(value) = prefs.edit().putInt("v735challenge", value).apply()
+
+    var v735channel: Int
+        get() = prefs.getInt("v735channel", 0)
+        set(value) = prefs.edit().putInt("v735channel", value).apply()
+
+    var v735chart: Int
+        get() = prefs.getInt("v735chart", 0)
+        set(value) = prefs.edit().putInt("v735chart", value).apply()
+
+    var v735checkpoint: Int
+        get() = prefs.getInt("v735checkpoint", 0)
+        set(value) = prefs.edit().putInt("v735checkpoint", value).apply()
+
+    var v735chunk: Int
+        get() = prefs.getInt("v735chunk", 0)
+        set(value) = prefs.edit().putInt("v735chunk", value).apply()
+
+    var v735cipher: Boolean
+        get() = prefs.getBoolean("v735cipher", false)
+        set(value) = prefs.edit().putBoolean("v735cipher", value).apply()
+
+    var v735clamp: Boolean
+        get() = prefs.getBoolean("v735clamp", false)
+        set(value) = prefs.edit().putBoolean("v735clamp", value).apply()
+
+    var v735classify: Boolean
+        get() = prefs.getBoolean("v735classify", false)
+        set(value) = prefs.edit().putBoolean("v735classify", value).apply()
+
+    var v735clean: Boolean
+        get() = prefs.getBoolean("v735clean", false)
+        set(value) = prefs.edit().putBoolean("v735clean", value).apply()
+
+    var v735clear: Boolean
+        get() = prefs.getBoolean("v735clear", false)
+        set(value) = prefs.edit().putBoolean("v735clear", value).apply()
+
+    var v736cancel: Boolean
+        get() = prefs.getBoolean("v736cancel", false)
+        set(value) = prefs.edit().putBoolean("v736cancel", value).apply()
+
+    var v736capture: Boolean
+        get() = prefs.getBoolean("v736capture", false)
+        set(value) = prefs.edit().putBoolean("v736capture", value).apply()
+
+    var v736cascade: Boolean
+        get() = prefs.getBoolean("v736cascade", false)
+        set(value) = prefs.edit().putBoolean("v736cascade", value).apply()
+
+    var v736category: Boolean
+        get() = prefs.getBoolean("v736category", false)
+        set(value) = prefs.edit().putBoolean("v736category", value).apply()
+
+    var v736chain: Boolean
+        get() = prefs.getBoolean("v736chain", false)
+        set(value) = prefs.edit().putBoolean("v736chain", value).apply()
+
+    var v736challenge: Int
+        get() = prefs.getInt("v736challenge", 0)
+        set(value) = prefs.edit().putInt("v736challenge", value).apply()
+
+    var v736channel: Int
+        get() = prefs.getInt("v736channel", 0)
+        set(value) = prefs.edit().putInt("v736channel", value).apply()
+
+    var v736chart: Int
+        get() = prefs.getInt("v736chart", 0)
+        set(value) = prefs.edit().putInt("v736chart", value).apply()
+
+    var v736checkpoint: Int
+        get() = prefs.getInt("v736checkpoint", 0)
+        set(value) = prefs.edit().putInt("v736checkpoint", value).apply()
+
+    var v736chunk: Int
+        get() = prefs.getInt("v736chunk", 0)
+        set(value) = prefs.edit().putInt("v736chunk", value).apply()
+
+    var v736cipher: Boolean
+        get() = prefs.getBoolean("v736cipher", false)
+        set(value) = prefs.edit().putBoolean("v736cipher", value).apply()
+
+    var v736clamp: Boolean
+        get() = prefs.getBoolean("v736clamp", false)
+        set(value) = prefs.edit().putBoolean("v736clamp", value).apply()
+
+    var v736classify: Boolean
+        get() = prefs.getBoolean("v736classify", false)
+        set(value) = prefs.edit().putBoolean("v736classify", value).apply()
+
+    var v736clean: Boolean
+        get() = prefs.getBoolean("v736clean", false)
+        set(value) = prefs.edit().putBoolean("v736clean", value).apply()
+
+    var v736clear: Boolean
+        get() = prefs.getBoolean("v736clear", false)
+        set(value) = prefs.edit().putBoolean("v736clear", value).apply()
+
+    var v737cancel: Boolean
+        get() = prefs.getBoolean("v737cancel", false)
+        set(value) = prefs.edit().putBoolean("v737cancel", value).apply()
+
+    var v737capture: Boolean
+        get() = prefs.getBoolean("v737capture", false)
+        set(value) = prefs.edit().putBoolean("v737capture", value).apply()
+
+    var v737cascade: Boolean
+        get() = prefs.getBoolean("v737cascade", false)
+        set(value) = prefs.edit().putBoolean("v737cascade", value).apply()
+
+    var v737category: Boolean
+        get() = prefs.getBoolean("v737category", false)
+        set(value) = prefs.edit().putBoolean("v737category", value).apply()
+
+    var v737chain: Boolean
+        get() = prefs.getBoolean("v737chain", false)
+        set(value) = prefs.edit().putBoolean("v737chain", value).apply()
+
+    var v737challenge: Int
+        get() = prefs.getInt("v737challenge", 0)
+        set(value) = prefs.edit().putInt("v737challenge", value).apply()
+
+    var v737channel: Int
+        get() = prefs.getInt("v737channel", 0)
+        set(value) = prefs.edit().putInt("v737channel", value).apply()
+
+    var v737chart: Int
+        get() = prefs.getInt("v737chart", 0)
+        set(value) = prefs.edit().putInt("v737chart", value).apply()
+
+    var v737checkpoint: Int
+        get() = prefs.getInt("v737checkpoint", 0)
+        set(value) = prefs.edit().putInt("v737checkpoint", value).apply()
+
+    var v737chunk: Int
+        get() = prefs.getInt("v737chunk", 0)
+        set(value) = prefs.edit().putInt("v737chunk", value).apply()
+
+    var v737cipher: Boolean
+        get() = prefs.getBoolean("v737cipher", false)
+        set(value) = prefs.edit().putBoolean("v737cipher", value).apply()
+
+    var v737clamp: Boolean
+        get() = prefs.getBoolean("v737clamp", false)
+        set(value) = prefs.edit().putBoolean("v737clamp", value).apply()
+
+    var v737classify: Boolean
+        get() = prefs.getBoolean("v737classify", false)
+        set(value) = prefs.edit().putBoolean("v737classify", value).apply()
+
+    var v737clean: Boolean
+        get() = prefs.getBoolean("v737clean", false)
+        set(value) = prefs.edit().putBoolean("v737clean", value).apply()
+
+    var v737clear: Boolean
+        get() = prefs.getBoolean("v737clear", false)
+        set(value) = prefs.edit().putBoolean("v737clear", value).apply()
+
+    var v738cancel: Boolean
+        get() = prefs.getBoolean("v738cancel", false)
+        set(value) = prefs.edit().putBoolean("v738cancel", value).apply()
+
+    var v738capture: Boolean
+        get() = prefs.getBoolean("v738capture", false)
+        set(value) = prefs.edit().putBoolean("v738capture", value).apply()
+
+    var v738cascade: Boolean
+        get() = prefs.getBoolean("v738cascade", false)
+        set(value) = prefs.edit().putBoolean("v738cascade", value).apply()
+
+    var v738category: Boolean
+        get() = prefs.getBoolean("v738category", false)
+        set(value) = prefs.edit().putBoolean("v738category", value).apply()
+
+    var v738chain: Boolean
+        get() = prefs.getBoolean("v738chain", false)
+        set(value) = prefs.edit().putBoolean("v738chain", value).apply()
+
+    var v738challenge: Int
+        get() = prefs.getInt("v738challenge", 0)
+        set(value) = prefs.edit().putInt("v738challenge", value).apply()
+
+    var v738channel: Int
+        get() = prefs.getInt("v738channel", 0)
+        set(value) = prefs.edit().putInt("v738channel", value).apply()
+
+    var v738chart: Int
+        get() = prefs.getInt("v738chart", 0)
+        set(value) = prefs.edit().putInt("v738chart", value).apply()
+
+    var v738checkpoint: Int
+        get() = prefs.getInt("v738checkpoint", 0)
+        set(value) = prefs.edit().putInt("v738checkpoint", value).apply()
+
+    var v738chunk: Int
+        get() = prefs.getInt("v738chunk", 0)
+        set(value) = prefs.edit().putInt("v738chunk", value).apply()
+
+    var v738cipher: Boolean
+        get() = prefs.getBoolean("v738cipher", false)
+        set(value) = prefs.edit().putBoolean("v738cipher", value).apply()
+
+    var v738clamp: Boolean
+        get() = prefs.getBoolean("v738clamp", false)
+        set(value) = prefs.edit().putBoolean("v738clamp", value).apply()
+
+    var v738classify: Boolean
+        get() = prefs.getBoolean("v738classify", false)
+        set(value) = prefs.edit().putBoolean("v738classify", value).apply()
+
+    var v738clean: Boolean
+        get() = prefs.getBoolean("v738clean", false)
+        set(value) = prefs.edit().putBoolean("v738clean", value).apply()
+
+    var v738clear: Boolean
+        get() = prefs.getBoolean("v738clear", false)
+        set(value) = prefs.edit().putBoolean("v738clear", value).apply()
+
+    var v739cancel: Boolean
+        get() = prefs.getBoolean("v739cancel", false)
+        set(value) = prefs.edit().putBoolean("v739cancel", value).apply()
+
+    var v739capture: Boolean
+        get() = prefs.getBoolean("v739capture", false)
+        set(value) = prefs.edit().putBoolean("v739capture", value).apply()
+
+    var v739cascade: Boolean
+        get() = prefs.getBoolean("v739cascade", false)
+        set(value) = prefs.edit().putBoolean("v739cascade", value).apply()
+
+    var v739category: Boolean
+        get() = prefs.getBoolean("v739category", false)
+        set(value) = prefs.edit().putBoolean("v739category", value).apply()
+
+    var v739chain: Boolean
+        get() = prefs.getBoolean("v739chain", false)
+        set(value) = prefs.edit().putBoolean("v739chain", value).apply()
+
+    var v739challenge: Int
+        get() = prefs.getInt("v739challenge", 0)
+        set(value) = prefs.edit().putInt("v739challenge", value).apply()
+
+    var v739channel: Int
+        get() = prefs.getInt("v739channel", 0)
+        set(value) = prefs.edit().putInt("v739channel", value).apply()
+
+    var v739chart: Int
+        get() = prefs.getInt("v739chart", 0)
+        set(value) = prefs.edit().putInt("v739chart", value).apply()
+
+    var v739checkpoint: Int
+        get() = prefs.getInt("v739checkpoint", 0)
+        set(value) = prefs.edit().putInt("v739checkpoint", value).apply()
+
+    var v739chunk: Int
+        get() = prefs.getInt("v739chunk", 0)
+        set(value) = prefs.edit().putInt("v739chunk", value).apply()
+
+    var v739cipher: Boolean
+        get() = prefs.getBoolean("v739cipher", false)
+        set(value) = prefs.edit().putBoolean("v739cipher", value).apply()
+
+    var v739clamp: Boolean
+        get() = prefs.getBoolean("v739clamp", false)
+        set(value) = prefs.edit().putBoolean("v739clamp", value).apply()
+
+    var v739classify: Boolean
+        get() = prefs.getBoolean("v739classify", false)
+        set(value) = prefs.edit().putBoolean("v739classify", value).apply()
+
+    var v739clean: Boolean
+        get() = prefs.getBoolean("v739clean", false)
+        set(value) = prefs.edit().putBoolean("v739clean", value).apply()
+
+    var v739clear: Boolean
+        get() = prefs.getBoolean("v739clear", false)
+        set(value) = prefs.edit().putBoolean("v739clear", value).apply()
+
+    var v740cancel: Boolean
+        get() = prefs.getBoolean("v740cancel", false)
+        set(value) = prefs.edit().putBoolean("v740cancel", value).apply()
+
+    var v740capture: Boolean
+        get() = prefs.getBoolean("v740capture", false)
+        set(value) = prefs.edit().putBoolean("v740capture", value).apply()
+
+    var v740cascade: Boolean
+        get() = prefs.getBoolean("v740cascade", false)
+        set(value) = prefs.edit().putBoolean("v740cascade", value).apply()
+
+    var v740category: Boolean
+        get() = prefs.getBoolean("v740category", false)
+        set(value) = prefs.edit().putBoolean("v740category", value).apply()
+
+    var v740chain: Boolean
+        get() = prefs.getBoolean("v740chain", false)
+        set(value) = prefs.edit().putBoolean("v740chain", value).apply()
+
+    var v740challenge: Int
+        get() = prefs.getInt("v740challenge", 0)
+        set(value) = prefs.edit().putInt("v740challenge", value).apply()
+
+    var v740channel: Int
+        get() = prefs.getInt("v740channel", 0)
+        set(value) = prefs.edit().putInt("v740channel", value).apply()
+
+    var v740chart: Int
+        get() = prefs.getInt("v740chart", 0)
+        set(value) = prefs.edit().putInt("v740chart", value).apply()
+
+    var v740checkpoint: Int
+        get() = prefs.getInt("v740checkpoint", 0)
+        set(value) = prefs.edit().putInt("v740checkpoint", value).apply()
+
+    var v740chunk: Int
+        get() = prefs.getInt("v740chunk", 0)
+        set(value) = prefs.edit().putInt("v740chunk", value).apply()
+
+    var v740cipher: Boolean
+        get() = prefs.getBoolean("v740cipher", false)
+        set(value) = prefs.edit().putBoolean("v740cipher", value).apply()
+
+    var v740clamp: Boolean
+        get() = prefs.getBoolean("v740clamp", false)
+        set(value) = prefs.edit().putBoolean("v740clamp", value).apply()
+
+    var v740classify: Boolean
+        get() = prefs.getBoolean("v740classify", false)
+        set(value) = prefs.edit().putBoolean("v740classify", value).apply()
+
+    var v740clean: Boolean
+        get() = prefs.getBoolean("v740clean", false)
+        set(value) = prefs.edit().putBoolean("v740clean", value).apply()
+
+    var v740clear: Boolean
+        get() = prefs.getBoolean("v740clear", false)
+        set(value) = prefs.edit().putBoolean("v740clear", value).apply()
 
 }

@@ -3,1453 +3,1453 @@ package blbl.cat3399.feature.player
 import blbl.cat3399.core.prefs.FeaturePrefsStore
 import blbl.cat3399.core.ui.AppToast
 
-// v731: border mode
-internal fun PlayerActivity.showV731BorderToggle() {
-    val current = FeaturePrefsStore.batch731.v731border
-    FeaturePrefsStore.batch731.v731border = !current
-    AppToast.show(this, "border: ${if (!current) "ON" else "OFF"}")
+// v741: click mode
+internal fun PlayerActivity.showV741ClickToggle() {
+    val current = FeaturePrefsStore.batch741.v741click
+    FeaturePrefsStore.batch741.v741click = !current
+    AppToast.show(this, "click: ${if (!current) "ON" else "OFF"}")
 }
 
-// v731: bounce mode
-internal fun PlayerActivity.showV731BounceToggle() {
-    val current = FeaturePrefsStore.batch731.v731bounce
-    FeaturePrefsStore.batch731.v731bounce = !current
-    AppToast.show(this, "bounce: ${if (!current) "ON" else "OFF"}")
+// v741: clip mode
+internal fun PlayerActivity.showV741ClipToggle() {
+    val current = FeaturePrefsStore.batch741.v741clip
+    FeaturePrefsStore.batch741.v741clip = !current
+    AppToast.show(this, "clip: ${if (!current) "ON" else "OFF"}")
 }
 
-// v731: box mode
-internal fun PlayerActivity.showV731BoxToggle() {
-    val current = FeaturePrefsStore.batch731.v731box
-    FeaturePrefsStore.batch731.v731box = !current
-    AppToast.show(this, "box: ${if (!current) "ON" else "OFF"}")
+// v741: clone mode
+internal fun PlayerActivity.showV741CloneToggle() {
+    val current = FeaturePrefsStore.batch741.v741clone
+    FeaturePrefsStore.batch741.v741clone = !current
+    AppToast.show(this, "clone: ${if (!current) "ON" else "OFF"}")
 }
 
-// v731: branch mode
-internal fun PlayerActivity.showV731BranchToggle() {
-    val current = FeaturePrefsStore.batch731.v731branch
-    FeaturePrefsStore.batch731.v731branch = !current
-    AppToast.show(this, "branch: ${if (!current) "ON" else "OFF"}")
+// v741: close mode
+internal fun PlayerActivity.showV741CloseToggle() {
+    val current = FeaturePrefsStore.batch741.v741close
+    FeaturePrefsStore.batch741.v741close = !current
+    AppToast.show(this, "close: ${if (!current) "ON" else "OFF"}")
 }
 
-// v731: brand mode
-internal fun PlayerActivity.showV731BrandToggle() {
-    val current = FeaturePrefsStore.batch731.v731brand
-    FeaturePrefsStore.batch731.v731brand = !current
-    AppToast.show(this, "brand: ${if (!current) "ON" else "OFF"}")
+// v741: cluster mode
+internal fun PlayerActivity.showV741ClusterToggle() {
+    val current = FeaturePrefsStore.batch741.v741cluster
+    FeaturePrefsStore.batch741.v741cluster = !current
+    AppToast.show(this, "cluster: ${if (!current) "ON" else "OFF"}")
 }
 
-// v731: break level
-internal fun PlayerActivity.showV731BreakDialog() {
+// v741: code level
+internal fun PlayerActivity.showV741CodeDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v731break).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v741code).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "break level",
+        title = "code level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v731break = value
-        AppToast.show(this, "break: $value")
+        FeaturePrefsStore.batch741.v741code = value
+        AppToast.show(this, "code: $value")
     }
 }
 
-// v731: bridge level
-internal fun PlayerActivity.showV731BridgeDialog() {
+// v741: collapse level
+internal fun PlayerActivity.showV741CollapseDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v731bridge).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v741collapse).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "bridge level",
+        title = "collapse level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v731bridge = value
-        AppToast.show(this, "bridge: $value")
+        FeaturePrefsStore.batch741.v741collapse = value
+        AppToast.show(this, "collapse: $value")
     }
 }
 
-// v731: browse level
-internal fun PlayerActivity.showV731BrowseDialog() {
+// v741: collect level
+internal fun PlayerActivity.showV741CollectDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v731browse).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v741collect).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "browse level",
+        title = "collect level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v731browse = value
-        AppToast.show(this, "browse: $value")
+        FeaturePrefsStore.batch741.v741collect = value
+        AppToast.show(this, "collect: $value")
     }
 }
 
-// v731: buffer level
-internal fun PlayerActivity.showV731BufferDialog() {
+// v741: column level
+internal fun PlayerActivity.showV741ColumnDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v731buffer).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v741column).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "buffer level",
+        title = "column level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v731buffer = value
-        AppToast.show(this, "buffer: $value")
+        FeaturePrefsStore.batch741.v741column = value
+        AppToast.show(this, "column: $value")
     }
 }
 
-// v731: build level
-internal fun PlayerActivity.showV731BuildDialog() {
+// v741: combine level
+internal fun PlayerActivity.showV741CombineDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v731build).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v741combine).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "build level",
+        title = "combine level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v731build = value
-        AppToast.show(this, "build: $value")
+        FeaturePrefsStore.batch741.v741combine = value
+        AppToast.show(this, "combine: $value")
     }
 }
 
-// v731: bulk mode
-internal fun PlayerActivity.showV731BulkToggle() {
-    val current = FeaturePrefsStore.batch731.v731bulk
-    FeaturePrefsStore.batch731.v731bulk = !current
-    AppToast.show(this, "bulk: ${if (!current) "ON" else "OFF"}")
+// v741: command mode
+internal fun PlayerActivity.showV741CommandToggle() {
+    val current = FeaturePrefsStore.batch741.v741command
+    FeaturePrefsStore.batch741.v741command = !current
+    AppToast.show(this, "command: ${if (!current) "ON" else "OFF"}")
 }
 
-// v731: burst mode
-internal fun PlayerActivity.showV731BurstToggle() {
-    val current = FeaturePrefsStore.batch731.v731burst
-    FeaturePrefsStore.batch731.v731burst = !current
-    AppToast.show(this, "burst: ${if (!current) "ON" else "OFF"}")
+// v741: commit mode
+internal fun PlayerActivity.showV741CommitToggle() {
+    val current = FeaturePrefsStore.batch741.v741commit
+    FeaturePrefsStore.batch741.v741commit = !current
+    AppToast.show(this, "commit: ${if (!current) "ON" else "OFF"}")
 }
 
-// v731: byte mode
-internal fun PlayerActivity.showV731ByteToggle() {
-    val current = FeaturePrefsStore.batch731.v731byte
-    FeaturePrefsStore.batch731.v731byte = !current
-    AppToast.show(this, "byte: ${if (!current) "ON" else "OFF"}")
+// v741: compact mode
+internal fun PlayerActivity.showV741CompactToggle() {
+    val current = FeaturePrefsStore.batch741.v741compact
+    FeaturePrefsStore.batch741.v741compact = !current
+    AppToast.show(this, "compact: ${if (!current) "ON" else "OFF"}")
 }
 
-// v731: cache mode
-internal fun PlayerActivity.showV731CacheToggle() {
-    val current = FeaturePrefsStore.batch731.v731cache
-    FeaturePrefsStore.batch731.v731cache = !current
-    AppToast.show(this, "cache: ${if (!current) "ON" else "OFF"}")
+// v741: compare mode
+internal fun PlayerActivity.showV741CompareToggle() {
+    val current = FeaturePrefsStore.batch741.v741compare
+    FeaturePrefsStore.batch741.v741compare = !current
+    AppToast.show(this, "compare: ${if (!current) "ON" else "OFF"}")
 }
 
-// v731: calibrate mode
-internal fun PlayerActivity.showV731CalibrateToggle() {
-    val current = FeaturePrefsStore.batch731.v731calibrate
-    FeaturePrefsStore.batch731.v731calibrate = !current
-    AppToast.show(this, "calibrate: ${if (!current) "ON" else "OFF"}")
+// v741: compile mode
+internal fun PlayerActivity.showV741CompileToggle() {
+    val current = FeaturePrefsStore.batch741.v741compile
+    FeaturePrefsStore.batch741.v741compile = !current
+    AppToast.show(this, "compile: ${if (!current) "ON" else "OFF"}")
 }
 
-// v732: border mode
-internal fun PlayerActivity.showV732BorderToggle() {
-    val current = FeaturePrefsStore.batch731.v732border
-    FeaturePrefsStore.batch731.v732border = !current
-    AppToast.show(this, "border: ${if (!current) "ON" else "OFF"}")
+// v742: click mode
+internal fun PlayerActivity.showV742ClickToggle() {
+    val current = FeaturePrefsStore.batch741.v742click
+    FeaturePrefsStore.batch741.v742click = !current
+    AppToast.show(this, "click: ${if (!current) "ON" else "OFF"}")
 }
 
-// v732: bounce mode
-internal fun PlayerActivity.showV732BounceToggle() {
-    val current = FeaturePrefsStore.batch731.v732bounce
-    FeaturePrefsStore.batch731.v732bounce = !current
-    AppToast.show(this, "bounce: ${if (!current) "ON" else "OFF"}")
+// v742: clip mode
+internal fun PlayerActivity.showV742ClipToggle() {
+    val current = FeaturePrefsStore.batch741.v742clip
+    FeaturePrefsStore.batch741.v742clip = !current
+    AppToast.show(this, "clip: ${if (!current) "ON" else "OFF"}")
 }
 
-// v732: box mode
-internal fun PlayerActivity.showV732BoxToggle() {
-    val current = FeaturePrefsStore.batch731.v732box
-    FeaturePrefsStore.batch731.v732box = !current
-    AppToast.show(this, "box: ${if (!current) "ON" else "OFF"}")
+// v742: clone mode
+internal fun PlayerActivity.showV742CloneToggle() {
+    val current = FeaturePrefsStore.batch741.v742clone
+    FeaturePrefsStore.batch741.v742clone = !current
+    AppToast.show(this, "clone: ${if (!current) "ON" else "OFF"}")
 }
 
-// v732: branch mode
-internal fun PlayerActivity.showV732BranchToggle() {
-    val current = FeaturePrefsStore.batch731.v732branch
-    FeaturePrefsStore.batch731.v732branch = !current
-    AppToast.show(this, "branch: ${if (!current) "ON" else "OFF"}")
+// v742: close mode
+internal fun PlayerActivity.showV742CloseToggle() {
+    val current = FeaturePrefsStore.batch741.v742close
+    FeaturePrefsStore.batch741.v742close = !current
+    AppToast.show(this, "close: ${if (!current) "ON" else "OFF"}")
 }
 
-// v732: brand mode
-internal fun PlayerActivity.showV732BrandToggle() {
-    val current = FeaturePrefsStore.batch731.v732brand
-    FeaturePrefsStore.batch731.v732brand = !current
-    AppToast.show(this, "brand: ${if (!current) "ON" else "OFF"}")
+// v742: cluster mode
+internal fun PlayerActivity.showV742ClusterToggle() {
+    val current = FeaturePrefsStore.batch741.v742cluster
+    FeaturePrefsStore.batch741.v742cluster = !current
+    AppToast.show(this, "cluster: ${if (!current) "ON" else "OFF"}")
 }
 
-// v732: break level
-internal fun PlayerActivity.showV732BreakDialog() {
+// v742: code level
+internal fun PlayerActivity.showV742CodeDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v732break).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v742code).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "break level",
+        title = "code level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v732break = value
-        AppToast.show(this, "break: $value")
+        FeaturePrefsStore.batch741.v742code = value
+        AppToast.show(this, "code: $value")
     }
 }
 
-// v732: bridge level
-internal fun PlayerActivity.showV732BridgeDialog() {
+// v742: collapse level
+internal fun PlayerActivity.showV742CollapseDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v732bridge).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v742collapse).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "bridge level",
+        title = "collapse level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v732bridge = value
-        AppToast.show(this, "bridge: $value")
+        FeaturePrefsStore.batch741.v742collapse = value
+        AppToast.show(this, "collapse: $value")
     }
 }
 
-// v732: browse level
-internal fun PlayerActivity.showV732BrowseDialog() {
+// v742: collect level
+internal fun PlayerActivity.showV742CollectDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v732browse).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v742collect).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "browse level",
+        title = "collect level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v732browse = value
-        AppToast.show(this, "browse: $value")
+        FeaturePrefsStore.batch741.v742collect = value
+        AppToast.show(this, "collect: $value")
     }
 }
 
-// v732: buffer level
-internal fun PlayerActivity.showV732BufferDialog() {
+// v742: column level
+internal fun PlayerActivity.showV742ColumnDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v732buffer).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v742column).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "buffer level",
+        title = "column level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v732buffer = value
-        AppToast.show(this, "buffer: $value")
+        FeaturePrefsStore.batch741.v742column = value
+        AppToast.show(this, "column: $value")
     }
 }
 
-// v732: build level
-internal fun PlayerActivity.showV732BuildDialog() {
+// v742: combine level
+internal fun PlayerActivity.showV742CombineDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v732build).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v742combine).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "build level",
+        title = "combine level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v732build = value
-        AppToast.show(this, "build: $value")
+        FeaturePrefsStore.batch741.v742combine = value
+        AppToast.show(this, "combine: $value")
     }
 }
 
-// v732: bulk mode
-internal fun PlayerActivity.showV732BulkToggle() {
-    val current = FeaturePrefsStore.batch731.v732bulk
-    FeaturePrefsStore.batch731.v732bulk = !current
-    AppToast.show(this, "bulk: ${if (!current) "ON" else "OFF"}")
+// v742: command mode
+internal fun PlayerActivity.showV742CommandToggle() {
+    val current = FeaturePrefsStore.batch741.v742command
+    FeaturePrefsStore.batch741.v742command = !current
+    AppToast.show(this, "command: ${if (!current) "ON" else "OFF"}")
 }
 
-// v732: burst mode
-internal fun PlayerActivity.showV732BurstToggle() {
-    val current = FeaturePrefsStore.batch731.v732burst
-    FeaturePrefsStore.batch731.v732burst = !current
-    AppToast.show(this, "burst: ${if (!current) "ON" else "OFF"}")
+// v742: commit mode
+internal fun PlayerActivity.showV742CommitToggle() {
+    val current = FeaturePrefsStore.batch741.v742commit
+    FeaturePrefsStore.batch741.v742commit = !current
+    AppToast.show(this, "commit: ${if (!current) "ON" else "OFF"}")
 }
 
-// v732: byte mode
-internal fun PlayerActivity.showV732ByteToggle() {
-    val current = FeaturePrefsStore.batch731.v732byte
-    FeaturePrefsStore.batch731.v732byte = !current
-    AppToast.show(this, "byte: ${if (!current) "ON" else "OFF"}")
+// v742: compact mode
+internal fun PlayerActivity.showV742CompactToggle() {
+    val current = FeaturePrefsStore.batch741.v742compact
+    FeaturePrefsStore.batch741.v742compact = !current
+    AppToast.show(this, "compact: ${if (!current) "ON" else "OFF"}")
 }
 
-// v732: cache mode
-internal fun PlayerActivity.showV732CacheToggle() {
-    val current = FeaturePrefsStore.batch731.v732cache
-    FeaturePrefsStore.batch731.v732cache = !current
-    AppToast.show(this, "cache: ${if (!current) "ON" else "OFF"}")
+// v742: compare mode
+internal fun PlayerActivity.showV742CompareToggle() {
+    val current = FeaturePrefsStore.batch741.v742compare
+    FeaturePrefsStore.batch741.v742compare = !current
+    AppToast.show(this, "compare: ${if (!current) "ON" else "OFF"}")
 }
 
-// v732: calibrate mode
-internal fun PlayerActivity.showV732CalibrateToggle() {
-    val current = FeaturePrefsStore.batch731.v732calibrate
-    FeaturePrefsStore.batch731.v732calibrate = !current
-    AppToast.show(this, "calibrate: ${if (!current) "ON" else "OFF"}")
+// v742: compile mode
+internal fun PlayerActivity.showV742CompileToggle() {
+    val current = FeaturePrefsStore.batch741.v742compile
+    FeaturePrefsStore.batch741.v742compile = !current
+    AppToast.show(this, "compile: ${if (!current) "ON" else "OFF"}")
 }
 
-// v733: border mode
-internal fun PlayerActivity.showV733BorderToggle() {
-    val current = FeaturePrefsStore.batch731.v733border
-    FeaturePrefsStore.batch731.v733border = !current
-    AppToast.show(this, "border: ${if (!current) "ON" else "OFF"}")
+// v743: click mode
+internal fun PlayerActivity.showV743ClickToggle() {
+    val current = FeaturePrefsStore.batch741.v743click
+    FeaturePrefsStore.batch741.v743click = !current
+    AppToast.show(this, "click: ${if (!current) "ON" else "OFF"}")
 }
 
-// v733: bounce mode
-internal fun PlayerActivity.showV733BounceToggle() {
-    val current = FeaturePrefsStore.batch731.v733bounce
-    FeaturePrefsStore.batch731.v733bounce = !current
-    AppToast.show(this, "bounce: ${if (!current) "ON" else "OFF"}")
+// v743: clip mode
+internal fun PlayerActivity.showV743ClipToggle() {
+    val current = FeaturePrefsStore.batch741.v743clip
+    FeaturePrefsStore.batch741.v743clip = !current
+    AppToast.show(this, "clip: ${if (!current) "ON" else "OFF"}")
 }
 
-// v733: box mode
-internal fun PlayerActivity.showV733BoxToggle() {
-    val current = FeaturePrefsStore.batch731.v733box
-    FeaturePrefsStore.batch731.v733box = !current
-    AppToast.show(this, "box: ${if (!current) "ON" else "OFF"}")
+// v743: clone mode
+internal fun PlayerActivity.showV743CloneToggle() {
+    val current = FeaturePrefsStore.batch741.v743clone
+    FeaturePrefsStore.batch741.v743clone = !current
+    AppToast.show(this, "clone: ${if (!current) "ON" else "OFF"}")
 }
 
-// v733: branch mode
-internal fun PlayerActivity.showV733BranchToggle() {
-    val current = FeaturePrefsStore.batch731.v733branch
-    FeaturePrefsStore.batch731.v733branch = !current
-    AppToast.show(this, "branch: ${if (!current) "ON" else "OFF"}")
+// v743: close mode
+internal fun PlayerActivity.showV743CloseToggle() {
+    val current = FeaturePrefsStore.batch741.v743close
+    FeaturePrefsStore.batch741.v743close = !current
+    AppToast.show(this, "close: ${if (!current) "ON" else "OFF"}")
 }
 
-// v733: brand mode
-internal fun PlayerActivity.showV733BrandToggle() {
-    val current = FeaturePrefsStore.batch731.v733brand
-    FeaturePrefsStore.batch731.v733brand = !current
-    AppToast.show(this, "brand: ${if (!current) "ON" else "OFF"}")
+// v743: cluster mode
+internal fun PlayerActivity.showV743ClusterToggle() {
+    val current = FeaturePrefsStore.batch741.v743cluster
+    FeaturePrefsStore.batch741.v743cluster = !current
+    AppToast.show(this, "cluster: ${if (!current) "ON" else "OFF"}")
 }
 
-// v733: break level
-internal fun PlayerActivity.showV733BreakDialog() {
+// v743: code level
+internal fun PlayerActivity.showV743CodeDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v733break).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v743code).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "break level",
+        title = "code level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v733break = value
-        AppToast.show(this, "break: $value")
+        FeaturePrefsStore.batch741.v743code = value
+        AppToast.show(this, "code: $value")
     }
 }
 
-// v733: bridge level
-internal fun PlayerActivity.showV733BridgeDialog() {
+// v743: collapse level
+internal fun PlayerActivity.showV743CollapseDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v733bridge).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v743collapse).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "bridge level",
+        title = "collapse level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v733bridge = value
-        AppToast.show(this, "bridge: $value")
+        FeaturePrefsStore.batch741.v743collapse = value
+        AppToast.show(this, "collapse: $value")
     }
 }
 
-// v733: browse level
-internal fun PlayerActivity.showV733BrowseDialog() {
+// v743: collect level
+internal fun PlayerActivity.showV743CollectDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v733browse).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v743collect).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "browse level",
+        title = "collect level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v733browse = value
-        AppToast.show(this, "browse: $value")
+        FeaturePrefsStore.batch741.v743collect = value
+        AppToast.show(this, "collect: $value")
     }
 }
 
-// v733: buffer level
-internal fun PlayerActivity.showV733BufferDialog() {
+// v743: column level
+internal fun PlayerActivity.showV743ColumnDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v733buffer).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v743column).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "buffer level",
+        title = "column level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v733buffer = value
-        AppToast.show(this, "buffer: $value")
+        FeaturePrefsStore.batch741.v743column = value
+        AppToast.show(this, "column: $value")
     }
 }
 
-// v733: build level
-internal fun PlayerActivity.showV733BuildDialog() {
+// v743: combine level
+internal fun PlayerActivity.showV743CombineDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v733build).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v743combine).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "build level",
+        title = "combine level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v733build = value
-        AppToast.show(this, "build: $value")
+        FeaturePrefsStore.batch741.v743combine = value
+        AppToast.show(this, "combine: $value")
     }
 }
 
-// v733: bulk mode
-internal fun PlayerActivity.showV733BulkToggle() {
-    val current = FeaturePrefsStore.batch731.v733bulk
-    FeaturePrefsStore.batch731.v733bulk = !current
-    AppToast.show(this, "bulk: ${if (!current) "ON" else "OFF"}")
+// v743: command mode
+internal fun PlayerActivity.showV743CommandToggle() {
+    val current = FeaturePrefsStore.batch741.v743command
+    FeaturePrefsStore.batch741.v743command = !current
+    AppToast.show(this, "command: ${if (!current) "ON" else "OFF"}")
 }
 
-// v733: burst mode
-internal fun PlayerActivity.showV733BurstToggle() {
-    val current = FeaturePrefsStore.batch731.v733burst
-    FeaturePrefsStore.batch731.v733burst = !current
-    AppToast.show(this, "burst: ${if (!current) "ON" else "OFF"}")
+// v743: commit mode
+internal fun PlayerActivity.showV743CommitToggle() {
+    val current = FeaturePrefsStore.batch741.v743commit
+    FeaturePrefsStore.batch741.v743commit = !current
+    AppToast.show(this, "commit: ${if (!current) "ON" else "OFF"}")
 }
 
-// v733: byte mode
-internal fun PlayerActivity.showV733ByteToggle() {
-    val current = FeaturePrefsStore.batch731.v733byte
-    FeaturePrefsStore.batch731.v733byte = !current
-    AppToast.show(this, "byte: ${if (!current) "ON" else "OFF"}")
+// v743: compact mode
+internal fun PlayerActivity.showV743CompactToggle() {
+    val current = FeaturePrefsStore.batch741.v743compact
+    FeaturePrefsStore.batch741.v743compact = !current
+    AppToast.show(this, "compact: ${if (!current) "ON" else "OFF"}")
 }
 
-// v733: cache mode
-internal fun PlayerActivity.showV733CacheToggle() {
-    val current = FeaturePrefsStore.batch731.v733cache
-    FeaturePrefsStore.batch731.v733cache = !current
-    AppToast.show(this, "cache: ${if (!current) "ON" else "OFF"}")
+// v743: compare mode
+internal fun PlayerActivity.showV743CompareToggle() {
+    val current = FeaturePrefsStore.batch741.v743compare
+    FeaturePrefsStore.batch741.v743compare = !current
+    AppToast.show(this, "compare: ${if (!current) "ON" else "OFF"}")
 }
 
-// v733: calibrate mode
-internal fun PlayerActivity.showV733CalibrateToggle() {
-    val current = FeaturePrefsStore.batch731.v733calibrate
-    FeaturePrefsStore.batch731.v733calibrate = !current
-    AppToast.show(this, "calibrate: ${if (!current) "ON" else "OFF"}")
+// v743: compile mode
+internal fun PlayerActivity.showV743CompileToggle() {
+    val current = FeaturePrefsStore.batch741.v743compile
+    FeaturePrefsStore.batch741.v743compile = !current
+    AppToast.show(this, "compile: ${if (!current) "ON" else "OFF"}")
 }
 
-// v734: border mode
-internal fun PlayerActivity.showV734BorderToggle() {
-    val current = FeaturePrefsStore.batch731.v734border
-    FeaturePrefsStore.batch731.v734border = !current
-    AppToast.show(this, "border: ${if (!current) "ON" else "OFF"}")
+// v744: click mode
+internal fun PlayerActivity.showV744ClickToggle() {
+    val current = FeaturePrefsStore.batch741.v744click
+    FeaturePrefsStore.batch741.v744click = !current
+    AppToast.show(this, "click: ${if (!current) "ON" else "OFF"}")
 }
 
-// v734: bounce mode
-internal fun PlayerActivity.showV734BounceToggle() {
-    val current = FeaturePrefsStore.batch731.v734bounce
-    FeaturePrefsStore.batch731.v734bounce = !current
-    AppToast.show(this, "bounce: ${if (!current) "ON" else "OFF"}")
+// v744: clip mode
+internal fun PlayerActivity.showV744ClipToggle() {
+    val current = FeaturePrefsStore.batch741.v744clip
+    FeaturePrefsStore.batch741.v744clip = !current
+    AppToast.show(this, "clip: ${if (!current) "ON" else "OFF"}")
 }
 
-// v734: box mode
-internal fun PlayerActivity.showV734BoxToggle() {
-    val current = FeaturePrefsStore.batch731.v734box
-    FeaturePrefsStore.batch731.v734box = !current
-    AppToast.show(this, "box: ${if (!current) "ON" else "OFF"}")
+// v744: clone mode
+internal fun PlayerActivity.showV744CloneToggle() {
+    val current = FeaturePrefsStore.batch741.v744clone
+    FeaturePrefsStore.batch741.v744clone = !current
+    AppToast.show(this, "clone: ${if (!current) "ON" else "OFF"}")
 }
 
-// v734: branch mode
-internal fun PlayerActivity.showV734BranchToggle() {
-    val current = FeaturePrefsStore.batch731.v734branch
-    FeaturePrefsStore.batch731.v734branch = !current
-    AppToast.show(this, "branch: ${if (!current) "ON" else "OFF"}")
+// v744: close mode
+internal fun PlayerActivity.showV744CloseToggle() {
+    val current = FeaturePrefsStore.batch741.v744close
+    FeaturePrefsStore.batch741.v744close = !current
+    AppToast.show(this, "close: ${if (!current) "ON" else "OFF"}")
 }
 
-// v734: brand mode
-internal fun PlayerActivity.showV734BrandToggle() {
-    val current = FeaturePrefsStore.batch731.v734brand
-    FeaturePrefsStore.batch731.v734brand = !current
-    AppToast.show(this, "brand: ${if (!current) "ON" else "OFF"}")
+// v744: cluster mode
+internal fun PlayerActivity.showV744ClusterToggle() {
+    val current = FeaturePrefsStore.batch741.v744cluster
+    FeaturePrefsStore.batch741.v744cluster = !current
+    AppToast.show(this, "cluster: ${if (!current) "ON" else "OFF"}")
 }
 
-// v734: break level
-internal fun PlayerActivity.showV734BreakDialog() {
+// v744: code level
+internal fun PlayerActivity.showV744CodeDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v734break).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v744code).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "break level",
+        title = "code level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v734break = value
-        AppToast.show(this, "break: $value")
+        FeaturePrefsStore.batch741.v744code = value
+        AppToast.show(this, "code: $value")
     }
 }
 
-// v734: bridge level
-internal fun PlayerActivity.showV734BridgeDialog() {
+// v744: collapse level
+internal fun PlayerActivity.showV744CollapseDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v734bridge).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v744collapse).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "bridge level",
+        title = "collapse level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v734bridge = value
-        AppToast.show(this, "bridge: $value")
+        FeaturePrefsStore.batch741.v744collapse = value
+        AppToast.show(this, "collapse: $value")
     }
 }
 
-// v734: browse level
-internal fun PlayerActivity.showV734BrowseDialog() {
+// v744: collect level
+internal fun PlayerActivity.showV744CollectDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v734browse).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v744collect).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "browse level",
+        title = "collect level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v734browse = value
-        AppToast.show(this, "browse: $value")
+        FeaturePrefsStore.batch741.v744collect = value
+        AppToast.show(this, "collect: $value")
     }
 }
 
-// v734: buffer level
-internal fun PlayerActivity.showV734BufferDialog() {
+// v744: column level
+internal fun PlayerActivity.showV744ColumnDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v734buffer).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v744column).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "buffer level",
+        title = "column level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v734buffer = value
-        AppToast.show(this, "buffer: $value")
+        FeaturePrefsStore.batch741.v744column = value
+        AppToast.show(this, "column: $value")
     }
 }
 
-// v734: build level
-internal fun PlayerActivity.showV734BuildDialog() {
+// v744: combine level
+internal fun PlayerActivity.showV744CombineDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v734build).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v744combine).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "build level",
+        title = "combine level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v734build = value
-        AppToast.show(this, "build: $value")
+        FeaturePrefsStore.batch741.v744combine = value
+        AppToast.show(this, "combine: $value")
     }
 }
 
-// v734: bulk mode
-internal fun PlayerActivity.showV734BulkToggle() {
-    val current = FeaturePrefsStore.batch731.v734bulk
-    FeaturePrefsStore.batch731.v734bulk = !current
-    AppToast.show(this, "bulk: ${if (!current) "ON" else "OFF"}")
+// v744: command mode
+internal fun PlayerActivity.showV744CommandToggle() {
+    val current = FeaturePrefsStore.batch741.v744command
+    FeaturePrefsStore.batch741.v744command = !current
+    AppToast.show(this, "command: ${if (!current) "ON" else "OFF"}")
 }
 
-// v734: burst mode
-internal fun PlayerActivity.showV734BurstToggle() {
-    val current = FeaturePrefsStore.batch731.v734burst
-    FeaturePrefsStore.batch731.v734burst = !current
-    AppToast.show(this, "burst: ${if (!current) "ON" else "OFF"}")
+// v744: commit mode
+internal fun PlayerActivity.showV744CommitToggle() {
+    val current = FeaturePrefsStore.batch741.v744commit
+    FeaturePrefsStore.batch741.v744commit = !current
+    AppToast.show(this, "commit: ${if (!current) "ON" else "OFF"}")
 }
 
-// v734: byte mode
-internal fun PlayerActivity.showV734ByteToggle() {
-    val current = FeaturePrefsStore.batch731.v734byte
-    FeaturePrefsStore.batch731.v734byte = !current
-    AppToast.show(this, "byte: ${if (!current) "ON" else "OFF"}")
+// v744: compact mode
+internal fun PlayerActivity.showV744CompactToggle() {
+    val current = FeaturePrefsStore.batch741.v744compact
+    FeaturePrefsStore.batch741.v744compact = !current
+    AppToast.show(this, "compact: ${if (!current) "ON" else "OFF"}")
 }
 
-// v734: cache mode
-internal fun PlayerActivity.showV734CacheToggle() {
-    val current = FeaturePrefsStore.batch731.v734cache
-    FeaturePrefsStore.batch731.v734cache = !current
-    AppToast.show(this, "cache: ${if (!current) "ON" else "OFF"}")
+// v744: compare mode
+internal fun PlayerActivity.showV744CompareToggle() {
+    val current = FeaturePrefsStore.batch741.v744compare
+    FeaturePrefsStore.batch741.v744compare = !current
+    AppToast.show(this, "compare: ${if (!current) "ON" else "OFF"}")
 }
 
-// v734: calibrate mode
-internal fun PlayerActivity.showV734CalibrateToggle() {
-    val current = FeaturePrefsStore.batch731.v734calibrate
-    FeaturePrefsStore.batch731.v734calibrate = !current
-    AppToast.show(this, "calibrate: ${if (!current) "ON" else "OFF"}")
+// v744: compile mode
+internal fun PlayerActivity.showV744CompileToggle() {
+    val current = FeaturePrefsStore.batch741.v744compile
+    FeaturePrefsStore.batch741.v744compile = !current
+    AppToast.show(this, "compile: ${if (!current) "ON" else "OFF"}")
 }
 
-// v735: border mode
-internal fun PlayerActivity.showV735BorderToggle() {
-    val current = FeaturePrefsStore.batch731.v735border
-    FeaturePrefsStore.batch731.v735border = !current
-    AppToast.show(this, "border: ${if (!current) "ON" else "OFF"}")
+// v745: click mode
+internal fun PlayerActivity.showV745ClickToggle() {
+    val current = FeaturePrefsStore.batch741.v745click
+    FeaturePrefsStore.batch741.v745click = !current
+    AppToast.show(this, "click: ${if (!current) "ON" else "OFF"}")
 }
 
-// v735: bounce mode
-internal fun PlayerActivity.showV735BounceToggle() {
-    val current = FeaturePrefsStore.batch731.v735bounce
-    FeaturePrefsStore.batch731.v735bounce = !current
-    AppToast.show(this, "bounce: ${if (!current) "ON" else "OFF"}")
+// v745: clip mode
+internal fun PlayerActivity.showV745ClipToggle() {
+    val current = FeaturePrefsStore.batch741.v745clip
+    FeaturePrefsStore.batch741.v745clip = !current
+    AppToast.show(this, "clip: ${if (!current) "ON" else "OFF"}")
 }
 
-// v735: box mode
-internal fun PlayerActivity.showV735BoxToggle() {
-    val current = FeaturePrefsStore.batch731.v735box
-    FeaturePrefsStore.batch731.v735box = !current
-    AppToast.show(this, "box: ${if (!current) "ON" else "OFF"}")
+// v745: clone mode
+internal fun PlayerActivity.showV745CloneToggle() {
+    val current = FeaturePrefsStore.batch741.v745clone
+    FeaturePrefsStore.batch741.v745clone = !current
+    AppToast.show(this, "clone: ${if (!current) "ON" else "OFF"}")
 }
 
-// v735: branch mode
-internal fun PlayerActivity.showV735BranchToggle() {
-    val current = FeaturePrefsStore.batch731.v735branch
-    FeaturePrefsStore.batch731.v735branch = !current
-    AppToast.show(this, "branch: ${if (!current) "ON" else "OFF"}")
+// v745: close mode
+internal fun PlayerActivity.showV745CloseToggle() {
+    val current = FeaturePrefsStore.batch741.v745close
+    FeaturePrefsStore.batch741.v745close = !current
+    AppToast.show(this, "close: ${if (!current) "ON" else "OFF"}")
 }
 
-// v735: brand mode
-internal fun PlayerActivity.showV735BrandToggle() {
-    val current = FeaturePrefsStore.batch731.v735brand
-    FeaturePrefsStore.batch731.v735brand = !current
-    AppToast.show(this, "brand: ${if (!current) "ON" else "OFF"}")
+// v745: cluster mode
+internal fun PlayerActivity.showV745ClusterToggle() {
+    val current = FeaturePrefsStore.batch741.v745cluster
+    FeaturePrefsStore.batch741.v745cluster = !current
+    AppToast.show(this, "cluster: ${if (!current) "ON" else "OFF"}")
 }
 
-// v735: break level
-internal fun PlayerActivity.showV735BreakDialog() {
+// v745: code level
+internal fun PlayerActivity.showV745CodeDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v735break).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v745code).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "break level",
+        title = "code level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v735break = value
-        AppToast.show(this, "break: $value")
+        FeaturePrefsStore.batch741.v745code = value
+        AppToast.show(this, "code: $value")
     }
 }
 
-// v735: bridge level
-internal fun PlayerActivity.showV735BridgeDialog() {
+// v745: collapse level
+internal fun PlayerActivity.showV745CollapseDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v735bridge).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v745collapse).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "bridge level",
+        title = "collapse level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v735bridge = value
-        AppToast.show(this, "bridge: $value")
+        FeaturePrefsStore.batch741.v745collapse = value
+        AppToast.show(this, "collapse: $value")
     }
 }
 
-// v735: browse level
-internal fun PlayerActivity.showV735BrowseDialog() {
+// v745: collect level
+internal fun PlayerActivity.showV745CollectDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v735browse).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v745collect).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "browse level",
+        title = "collect level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v735browse = value
-        AppToast.show(this, "browse: $value")
+        FeaturePrefsStore.batch741.v745collect = value
+        AppToast.show(this, "collect: $value")
     }
 }
 
-// v735: buffer level
-internal fun PlayerActivity.showV735BufferDialog() {
+// v745: column level
+internal fun PlayerActivity.showV745ColumnDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v735buffer).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v745column).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "buffer level",
+        title = "column level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v735buffer = value
-        AppToast.show(this, "buffer: $value")
+        FeaturePrefsStore.batch741.v745column = value
+        AppToast.show(this, "column: $value")
     }
 }
 
-// v735: build level
-internal fun PlayerActivity.showV735BuildDialog() {
+// v745: combine level
+internal fun PlayerActivity.showV745CombineDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v735build).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v745combine).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "build level",
+        title = "combine level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v735build = value
-        AppToast.show(this, "build: $value")
+        FeaturePrefsStore.batch741.v745combine = value
+        AppToast.show(this, "combine: $value")
     }
 }
 
-// v735: bulk mode
-internal fun PlayerActivity.showV735BulkToggle() {
-    val current = FeaturePrefsStore.batch731.v735bulk
-    FeaturePrefsStore.batch731.v735bulk = !current
-    AppToast.show(this, "bulk: ${if (!current) "ON" else "OFF"}")
+// v745: command mode
+internal fun PlayerActivity.showV745CommandToggle() {
+    val current = FeaturePrefsStore.batch741.v745command
+    FeaturePrefsStore.batch741.v745command = !current
+    AppToast.show(this, "command: ${if (!current) "ON" else "OFF"}")
 }
 
-// v735: burst mode
-internal fun PlayerActivity.showV735BurstToggle() {
-    val current = FeaturePrefsStore.batch731.v735burst
-    FeaturePrefsStore.batch731.v735burst = !current
-    AppToast.show(this, "burst: ${if (!current) "ON" else "OFF"}")
+// v745: commit mode
+internal fun PlayerActivity.showV745CommitToggle() {
+    val current = FeaturePrefsStore.batch741.v745commit
+    FeaturePrefsStore.batch741.v745commit = !current
+    AppToast.show(this, "commit: ${if (!current) "ON" else "OFF"}")
 }
 
-// v735: byte mode
-internal fun PlayerActivity.showV735ByteToggle() {
-    val current = FeaturePrefsStore.batch731.v735byte
-    FeaturePrefsStore.batch731.v735byte = !current
-    AppToast.show(this, "byte: ${if (!current) "ON" else "OFF"}")
+// v745: compact mode
+internal fun PlayerActivity.showV745CompactToggle() {
+    val current = FeaturePrefsStore.batch741.v745compact
+    FeaturePrefsStore.batch741.v745compact = !current
+    AppToast.show(this, "compact: ${if (!current) "ON" else "OFF"}")
 }
 
-// v735: cache mode
-internal fun PlayerActivity.showV735CacheToggle() {
-    val current = FeaturePrefsStore.batch731.v735cache
-    FeaturePrefsStore.batch731.v735cache = !current
-    AppToast.show(this, "cache: ${if (!current) "ON" else "OFF"}")
+// v745: compare mode
+internal fun PlayerActivity.showV745CompareToggle() {
+    val current = FeaturePrefsStore.batch741.v745compare
+    FeaturePrefsStore.batch741.v745compare = !current
+    AppToast.show(this, "compare: ${if (!current) "ON" else "OFF"}")
 }
 
-// v735: calibrate mode
-internal fun PlayerActivity.showV735CalibrateToggle() {
-    val current = FeaturePrefsStore.batch731.v735calibrate
-    FeaturePrefsStore.batch731.v735calibrate = !current
-    AppToast.show(this, "calibrate: ${if (!current) "ON" else "OFF"}")
+// v745: compile mode
+internal fun PlayerActivity.showV745CompileToggle() {
+    val current = FeaturePrefsStore.batch741.v745compile
+    FeaturePrefsStore.batch741.v745compile = !current
+    AppToast.show(this, "compile: ${if (!current) "ON" else "OFF"}")
 }
 
-// v736: border mode
-internal fun PlayerActivity.showV736BorderToggle() {
-    val current = FeaturePrefsStore.batch731.v736border
-    FeaturePrefsStore.batch731.v736border = !current
-    AppToast.show(this, "border: ${if (!current) "ON" else "OFF"}")
+// v746: click mode
+internal fun PlayerActivity.showV746ClickToggle() {
+    val current = FeaturePrefsStore.batch741.v746click
+    FeaturePrefsStore.batch741.v746click = !current
+    AppToast.show(this, "click: ${if (!current) "ON" else "OFF"}")
 }
 
-// v736: bounce mode
-internal fun PlayerActivity.showV736BounceToggle() {
-    val current = FeaturePrefsStore.batch731.v736bounce
-    FeaturePrefsStore.batch731.v736bounce = !current
-    AppToast.show(this, "bounce: ${if (!current) "ON" else "OFF"}")
+// v746: clip mode
+internal fun PlayerActivity.showV746ClipToggle() {
+    val current = FeaturePrefsStore.batch741.v746clip
+    FeaturePrefsStore.batch741.v746clip = !current
+    AppToast.show(this, "clip: ${if (!current) "ON" else "OFF"}")
 }
 
-// v736: box mode
-internal fun PlayerActivity.showV736BoxToggle() {
-    val current = FeaturePrefsStore.batch731.v736box
-    FeaturePrefsStore.batch731.v736box = !current
-    AppToast.show(this, "box: ${if (!current) "ON" else "OFF"}")
+// v746: clone mode
+internal fun PlayerActivity.showV746CloneToggle() {
+    val current = FeaturePrefsStore.batch741.v746clone
+    FeaturePrefsStore.batch741.v746clone = !current
+    AppToast.show(this, "clone: ${if (!current) "ON" else "OFF"}")
 }
 
-// v736: branch mode
-internal fun PlayerActivity.showV736BranchToggle() {
-    val current = FeaturePrefsStore.batch731.v736branch
-    FeaturePrefsStore.batch731.v736branch = !current
-    AppToast.show(this, "branch: ${if (!current) "ON" else "OFF"}")
+// v746: close mode
+internal fun PlayerActivity.showV746CloseToggle() {
+    val current = FeaturePrefsStore.batch741.v746close
+    FeaturePrefsStore.batch741.v746close = !current
+    AppToast.show(this, "close: ${if (!current) "ON" else "OFF"}")
 }
 
-// v736: brand mode
-internal fun PlayerActivity.showV736BrandToggle() {
-    val current = FeaturePrefsStore.batch731.v736brand
-    FeaturePrefsStore.batch731.v736brand = !current
-    AppToast.show(this, "brand: ${if (!current) "ON" else "OFF"}")
+// v746: cluster mode
+internal fun PlayerActivity.showV746ClusterToggle() {
+    val current = FeaturePrefsStore.batch741.v746cluster
+    FeaturePrefsStore.batch741.v746cluster = !current
+    AppToast.show(this, "cluster: ${if (!current) "ON" else "OFF"}")
 }
 
-// v736: break level
-internal fun PlayerActivity.showV736BreakDialog() {
+// v746: code level
+internal fun PlayerActivity.showV746CodeDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v736break).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v746code).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "break level",
+        title = "code level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v736break = value
-        AppToast.show(this, "break: $value")
+        FeaturePrefsStore.batch741.v746code = value
+        AppToast.show(this, "code: $value")
     }
 }
 
-// v736: bridge level
-internal fun PlayerActivity.showV736BridgeDialog() {
+// v746: collapse level
+internal fun PlayerActivity.showV746CollapseDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v736bridge).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v746collapse).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "bridge level",
+        title = "collapse level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v736bridge = value
-        AppToast.show(this, "bridge: $value")
+        FeaturePrefsStore.batch741.v746collapse = value
+        AppToast.show(this, "collapse: $value")
     }
 }
 
-// v736: browse level
-internal fun PlayerActivity.showV736BrowseDialog() {
+// v746: collect level
+internal fun PlayerActivity.showV746CollectDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v736browse).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v746collect).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "browse level",
+        title = "collect level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v736browse = value
-        AppToast.show(this, "browse: $value")
+        FeaturePrefsStore.batch741.v746collect = value
+        AppToast.show(this, "collect: $value")
     }
 }
 
-// v736: buffer level
-internal fun PlayerActivity.showV736BufferDialog() {
+// v746: column level
+internal fun PlayerActivity.showV746ColumnDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v736buffer).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v746column).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "buffer level",
+        title = "column level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v736buffer = value
-        AppToast.show(this, "buffer: $value")
+        FeaturePrefsStore.batch741.v746column = value
+        AppToast.show(this, "column: $value")
     }
 }
 
-// v736: build level
-internal fun PlayerActivity.showV736BuildDialog() {
+// v746: combine level
+internal fun PlayerActivity.showV746CombineDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v736build).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v746combine).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "build level",
+        title = "combine level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v736build = value
-        AppToast.show(this, "build: $value")
+        FeaturePrefsStore.batch741.v746combine = value
+        AppToast.show(this, "combine: $value")
     }
 }
 
-// v736: bulk mode
-internal fun PlayerActivity.showV736BulkToggle() {
-    val current = FeaturePrefsStore.batch731.v736bulk
-    FeaturePrefsStore.batch731.v736bulk = !current
-    AppToast.show(this, "bulk: ${if (!current) "ON" else "OFF"}")
+// v746: command mode
+internal fun PlayerActivity.showV746CommandToggle() {
+    val current = FeaturePrefsStore.batch741.v746command
+    FeaturePrefsStore.batch741.v746command = !current
+    AppToast.show(this, "command: ${if (!current) "ON" else "OFF"}")
 }
 
-// v736: burst mode
-internal fun PlayerActivity.showV736BurstToggle() {
-    val current = FeaturePrefsStore.batch731.v736burst
-    FeaturePrefsStore.batch731.v736burst = !current
-    AppToast.show(this, "burst: ${if (!current) "ON" else "OFF"}")
+// v746: commit mode
+internal fun PlayerActivity.showV746CommitToggle() {
+    val current = FeaturePrefsStore.batch741.v746commit
+    FeaturePrefsStore.batch741.v746commit = !current
+    AppToast.show(this, "commit: ${if (!current) "ON" else "OFF"}")
 }
 
-// v736: byte mode
-internal fun PlayerActivity.showV736ByteToggle() {
-    val current = FeaturePrefsStore.batch731.v736byte
-    FeaturePrefsStore.batch731.v736byte = !current
-    AppToast.show(this, "byte: ${if (!current) "ON" else "OFF"}")
+// v746: compact mode
+internal fun PlayerActivity.showV746CompactToggle() {
+    val current = FeaturePrefsStore.batch741.v746compact
+    FeaturePrefsStore.batch741.v746compact = !current
+    AppToast.show(this, "compact: ${if (!current) "ON" else "OFF"}")
 }
 
-// v736: cache mode
-internal fun PlayerActivity.showV736CacheToggle() {
-    val current = FeaturePrefsStore.batch731.v736cache
-    FeaturePrefsStore.batch731.v736cache = !current
-    AppToast.show(this, "cache: ${if (!current) "ON" else "OFF"}")
+// v746: compare mode
+internal fun PlayerActivity.showV746CompareToggle() {
+    val current = FeaturePrefsStore.batch741.v746compare
+    FeaturePrefsStore.batch741.v746compare = !current
+    AppToast.show(this, "compare: ${if (!current) "ON" else "OFF"}")
 }
 
-// v736: calibrate mode
-internal fun PlayerActivity.showV736CalibrateToggle() {
-    val current = FeaturePrefsStore.batch731.v736calibrate
-    FeaturePrefsStore.batch731.v736calibrate = !current
-    AppToast.show(this, "calibrate: ${if (!current) "ON" else "OFF"}")
+// v746: compile mode
+internal fun PlayerActivity.showV746CompileToggle() {
+    val current = FeaturePrefsStore.batch741.v746compile
+    FeaturePrefsStore.batch741.v746compile = !current
+    AppToast.show(this, "compile: ${if (!current) "ON" else "OFF"}")
 }
 
-// v737: border mode
-internal fun PlayerActivity.showV737BorderToggle() {
-    val current = FeaturePrefsStore.batch731.v737border
-    FeaturePrefsStore.batch731.v737border = !current
-    AppToast.show(this, "border: ${if (!current) "ON" else "OFF"}")
+// v747: click mode
+internal fun PlayerActivity.showV747ClickToggle() {
+    val current = FeaturePrefsStore.batch741.v747click
+    FeaturePrefsStore.batch741.v747click = !current
+    AppToast.show(this, "click: ${if (!current) "ON" else "OFF"}")
 }
 
-// v737: bounce mode
-internal fun PlayerActivity.showV737BounceToggle() {
-    val current = FeaturePrefsStore.batch731.v737bounce
-    FeaturePrefsStore.batch731.v737bounce = !current
-    AppToast.show(this, "bounce: ${if (!current) "ON" else "OFF"}")
+// v747: clip mode
+internal fun PlayerActivity.showV747ClipToggle() {
+    val current = FeaturePrefsStore.batch741.v747clip
+    FeaturePrefsStore.batch741.v747clip = !current
+    AppToast.show(this, "clip: ${if (!current) "ON" else "OFF"}")
 }
 
-// v737: box mode
-internal fun PlayerActivity.showV737BoxToggle() {
-    val current = FeaturePrefsStore.batch731.v737box
-    FeaturePrefsStore.batch731.v737box = !current
-    AppToast.show(this, "box: ${if (!current) "ON" else "OFF"}")
+// v747: clone mode
+internal fun PlayerActivity.showV747CloneToggle() {
+    val current = FeaturePrefsStore.batch741.v747clone
+    FeaturePrefsStore.batch741.v747clone = !current
+    AppToast.show(this, "clone: ${if (!current) "ON" else "OFF"}")
 }
 
-// v737: branch mode
-internal fun PlayerActivity.showV737BranchToggle() {
-    val current = FeaturePrefsStore.batch731.v737branch
-    FeaturePrefsStore.batch731.v737branch = !current
-    AppToast.show(this, "branch: ${if (!current) "ON" else "OFF"}")
+// v747: close mode
+internal fun PlayerActivity.showV747CloseToggle() {
+    val current = FeaturePrefsStore.batch741.v747close
+    FeaturePrefsStore.batch741.v747close = !current
+    AppToast.show(this, "close: ${if (!current) "ON" else "OFF"}")
 }
 
-// v737: brand mode
-internal fun PlayerActivity.showV737BrandToggle() {
-    val current = FeaturePrefsStore.batch731.v737brand
-    FeaturePrefsStore.batch731.v737brand = !current
-    AppToast.show(this, "brand: ${if (!current) "ON" else "OFF"}")
+// v747: cluster mode
+internal fun PlayerActivity.showV747ClusterToggle() {
+    val current = FeaturePrefsStore.batch741.v747cluster
+    FeaturePrefsStore.batch741.v747cluster = !current
+    AppToast.show(this, "cluster: ${if (!current) "ON" else "OFF"}")
 }
 
-// v737: break level
-internal fun PlayerActivity.showV737BreakDialog() {
+// v747: code level
+internal fun PlayerActivity.showV747CodeDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v737break).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v747code).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "break level",
+        title = "code level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v737break = value
-        AppToast.show(this, "break: $value")
+        FeaturePrefsStore.batch741.v747code = value
+        AppToast.show(this, "code: $value")
     }
 }
 
-// v737: bridge level
-internal fun PlayerActivity.showV737BridgeDialog() {
+// v747: collapse level
+internal fun PlayerActivity.showV747CollapseDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v737bridge).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v747collapse).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "bridge level",
+        title = "collapse level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v737bridge = value
-        AppToast.show(this, "bridge: $value")
+        FeaturePrefsStore.batch741.v747collapse = value
+        AppToast.show(this, "collapse: $value")
     }
 }
 
-// v737: browse level
-internal fun PlayerActivity.showV737BrowseDialog() {
+// v747: collect level
+internal fun PlayerActivity.showV747CollectDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v737browse).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v747collect).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "browse level",
+        title = "collect level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v737browse = value
-        AppToast.show(this, "browse: $value")
+        FeaturePrefsStore.batch741.v747collect = value
+        AppToast.show(this, "collect: $value")
     }
 }
 
-// v737: buffer level
-internal fun PlayerActivity.showV737BufferDialog() {
+// v747: column level
+internal fun PlayerActivity.showV747ColumnDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v737buffer).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v747column).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "buffer level",
+        title = "column level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v737buffer = value
-        AppToast.show(this, "buffer: $value")
+        FeaturePrefsStore.batch741.v747column = value
+        AppToast.show(this, "column: $value")
     }
 }
 
-// v737: build level
-internal fun PlayerActivity.showV737BuildDialog() {
+// v747: combine level
+internal fun PlayerActivity.showV747CombineDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v737build).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v747combine).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "build level",
+        title = "combine level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v737build = value
-        AppToast.show(this, "build: $value")
+        FeaturePrefsStore.batch741.v747combine = value
+        AppToast.show(this, "combine: $value")
     }
 }
 
-// v737: bulk mode
-internal fun PlayerActivity.showV737BulkToggle() {
-    val current = FeaturePrefsStore.batch731.v737bulk
-    FeaturePrefsStore.batch731.v737bulk = !current
-    AppToast.show(this, "bulk: ${if (!current) "ON" else "OFF"}")
+// v747: command mode
+internal fun PlayerActivity.showV747CommandToggle() {
+    val current = FeaturePrefsStore.batch741.v747command
+    FeaturePrefsStore.batch741.v747command = !current
+    AppToast.show(this, "command: ${if (!current) "ON" else "OFF"}")
 }
 
-// v737: burst mode
-internal fun PlayerActivity.showV737BurstToggle() {
-    val current = FeaturePrefsStore.batch731.v737burst
-    FeaturePrefsStore.batch731.v737burst = !current
-    AppToast.show(this, "burst: ${if (!current) "ON" else "OFF"}")
+// v747: commit mode
+internal fun PlayerActivity.showV747CommitToggle() {
+    val current = FeaturePrefsStore.batch741.v747commit
+    FeaturePrefsStore.batch741.v747commit = !current
+    AppToast.show(this, "commit: ${if (!current) "ON" else "OFF"}")
 }
 
-// v737: byte mode
-internal fun PlayerActivity.showV737ByteToggle() {
-    val current = FeaturePrefsStore.batch731.v737byte
-    FeaturePrefsStore.batch731.v737byte = !current
-    AppToast.show(this, "byte: ${if (!current) "ON" else "OFF"}")
+// v747: compact mode
+internal fun PlayerActivity.showV747CompactToggle() {
+    val current = FeaturePrefsStore.batch741.v747compact
+    FeaturePrefsStore.batch741.v747compact = !current
+    AppToast.show(this, "compact: ${if (!current) "ON" else "OFF"}")
 }
 
-// v737: cache mode
-internal fun PlayerActivity.showV737CacheToggle() {
-    val current = FeaturePrefsStore.batch731.v737cache
-    FeaturePrefsStore.batch731.v737cache = !current
-    AppToast.show(this, "cache: ${if (!current) "ON" else "OFF"}")
+// v747: compare mode
+internal fun PlayerActivity.showV747CompareToggle() {
+    val current = FeaturePrefsStore.batch741.v747compare
+    FeaturePrefsStore.batch741.v747compare = !current
+    AppToast.show(this, "compare: ${if (!current) "ON" else "OFF"}")
 }
 
-// v737: calibrate mode
-internal fun PlayerActivity.showV737CalibrateToggle() {
-    val current = FeaturePrefsStore.batch731.v737calibrate
-    FeaturePrefsStore.batch731.v737calibrate = !current
-    AppToast.show(this, "calibrate: ${if (!current) "ON" else "OFF"}")
+// v747: compile mode
+internal fun PlayerActivity.showV747CompileToggle() {
+    val current = FeaturePrefsStore.batch741.v747compile
+    FeaturePrefsStore.batch741.v747compile = !current
+    AppToast.show(this, "compile: ${if (!current) "ON" else "OFF"}")
 }
 
-// v738: border mode
-internal fun PlayerActivity.showV738BorderToggle() {
-    val current = FeaturePrefsStore.batch731.v738border
-    FeaturePrefsStore.batch731.v738border = !current
-    AppToast.show(this, "border: ${if (!current) "ON" else "OFF"}")
+// v748: click mode
+internal fun PlayerActivity.showV748ClickToggle() {
+    val current = FeaturePrefsStore.batch741.v748click
+    FeaturePrefsStore.batch741.v748click = !current
+    AppToast.show(this, "click: ${if (!current) "ON" else "OFF"}")
 }
 
-// v738: bounce mode
-internal fun PlayerActivity.showV738BounceToggle() {
-    val current = FeaturePrefsStore.batch731.v738bounce
-    FeaturePrefsStore.batch731.v738bounce = !current
-    AppToast.show(this, "bounce: ${if (!current) "ON" else "OFF"}")
+// v748: clip mode
+internal fun PlayerActivity.showV748ClipToggle() {
+    val current = FeaturePrefsStore.batch741.v748clip
+    FeaturePrefsStore.batch741.v748clip = !current
+    AppToast.show(this, "clip: ${if (!current) "ON" else "OFF"}")
 }
 
-// v738: box mode
-internal fun PlayerActivity.showV738BoxToggle() {
-    val current = FeaturePrefsStore.batch731.v738box
-    FeaturePrefsStore.batch731.v738box = !current
-    AppToast.show(this, "box: ${if (!current) "ON" else "OFF"}")
+// v748: clone mode
+internal fun PlayerActivity.showV748CloneToggle() {
+    val current = FeaturePrefsStore.batch741.v748clone
+    FeaturePrefsStore.batch741.v748clone = !current
+    AppToast.show(this, "clone: ${if (!current) "ON" else "OFF"}")
 }
 
-// v738: branch mode
-internal fun PlayerActivity.showV738BranchToggle() {
-    val current = FeaturePrefsStore.batch731.v738branch
-    FeaturePrefsStore.batch731.v738branch = !current
-    AppToast.show(this, "branch: ${if (!current) "ON" else "OFF"}")
+// v748: close mode
+internal fun PlayerActivity.showV748CloseToggle() {
+    val current = FeaturePrefsStore.batch741.v748close
+    FeaturePrefsStore.batch741.v748close = !current
+    AppToast.show(this, "close: ${if (!current) "ON" else "OFF"}")
 }
 
-// v738: brand mode
-internal fun PlayerActivity.showV738BrandToggle() {
-    val current = FeaturePrefsStore.batch731.v738brand
-    FeaturePrefsStore.batch731.v738brand = !current
-    AppToast.show(this, "brand: ${if (!current) "ON" else "OFF"}")
+// v748: cluster mode
+internal fun PlayerActivity.showV748ClusterToggle() {
+    val current = FeaturePrefsStore.batch741.v748cluster
+    FeaturePrefsStore.batch741.v748cluster = !current
+    AppToast.show(this, "cluster: ${if (!current) "ON" else "OFF"}")
 }
 
-// v738: break level
-internal fun PlayerActivity.showV738BreakDialog() {
+// v748: code level
+internal fun PlayerActivity.showV748CodeDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v738break).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v748code).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "break level",
+        title = "code level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v738break = value
-        AppToast.show(this, "break: $value")
+        FeaturePrefsStore.batch741.v748code = value
+        AppToast.show(this, "code: $value")
     }
 }
 
-// v738: bridge level
-internal fun PlayerActivity.showV738BridgeDialog() {
+// v748: collapse level
+internal fun PlayerActivity.showV748CollapseDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v738bridge).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v748collapse).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "bridge level",
+        title = "collapse level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v738bridge = value
-        AppToast.show(this, "bridge: $value")
+        FeaturePrefsStore.batch741.v748collapse = value
+        AppToast.show(this, "collapse: $value")
     }
 }
 
-// v738: browse level
-internal fun PlayerActivity.showV738BrowseDialog() {
+// v748: collect level
+internal fun PlayerActivity.showV748CollectDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v738browse).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v748collect).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "browse level",
+        title = "collect level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v738browse = value
-        AppToast.show(this, "browse: $value")
+        FeaturePrefsStore.batch741.v748collect = value
+        AppToast.show(this, "collect: $value")
     }
 }
 
-// v738: buffer level
-internal fun PlayerActivity.showV738BufferDialog() {
+// v748: column level
+internal fun PlayerActivity.showV748ColumnDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v738buffer).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v748column).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "buffer level",
+        title = "column level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v738buffer = value
-        AppToast.show(this, "buffer: $value")
+        FeaturePrefsStore.batch741.v748column = value
+        AppToast.show(this, "column: $value")
     }
 }
 
-// v738: build level
-internal fun PlayerActivity.showV738BuildDialog() {
+// v748: combine level
+internal fun PlayerActivity.showV748CombineDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v738build).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v748combine).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "build level",
+        title = "combine level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v738build = value
-        AppToast.show(this, "build: $value")
+        FeaturePrefsStore.batch741.v748combine = value
+        AppToast.show(this, "combine: $value")
     }
 }
 
-// v738: bulk mode
-internal fun PlayerActivity.showV738BulkToggle() {
-    val current = FeaturePrefsStore.batch731.v738bulk
-    FeaturePrefsStore.batch731.v738bulk = !current
-    AppToast.show(this, "bulk: ${if (!current) "ON" else "OFF"}")
+// v748: command mode
+internal fun PlayerActivity.showV748CommandToggle() {
+    val current = FeaturePrefsStore.batch741.v748command
+    FeaturePrefsStore.batch741.v748command = !current
+    AppToast.show(this, "command: ${if (!current) "ON" else "OFF"}")
 }
 
-// v738: burst mode
-internal fun PlayerActivity.showV738BurstToggle() {
-    val current = FeaturePrefsStore.batch731.v738burst
-    FeaturePrefsStore.batch731.v738burst = !current
-    AppToast.show(this, "burst: ${if (!current) "ON" else "OFF"}")
+// v748: commit mode
+internal fun PlayerActivity.showV748CommitToggle() {
+    val current = FeaturePrefsStore.batch741.v748commit
+    FeaturePrefsStore.batch741.v748commit = !current
+    AppToast.show(this, "commit: ${if (!current) "ON" else "OFF"}")
 }
 
-// v738: byte mode
-internal fun PlayerActivity.showV738ByteToggle() {
-    val current = FeaturePrefsStore.batch731.v738byte
-    FeaturePrefsStore.batch731.v738byte = !current
-    AppToast.show(this, "byte: ${if (!current) "ON" else "OFF"}")
+// v748: compact mode
+internal fun PlayerActivity.showV748CompactToggle() {
+    val current = FeaturePrefsStore.batch741.v748compact
+    FeaturePrefsStore.batch741.v748compact = !current
+    AppToast.show(this, "compact: ${if (!current) "ON" else "OFF"}")
 }
 
-// v738: cache mode
-internal fun PlayerActivity.showV738CacheToggle() {
-    val current = FeaturePrefsStore.batch731.v738cache
-    FeaturePrefsStore.batch731.v738cache = !current
-    AppToast.show(this, "cache: ${if (!current) "ON" else "OFF"}")
+// v748: compare mode
+internal fun PlayerActivity.showV748CompareToggle() {
+    val current = FeaturePrefsStore.batch741.v748compare
+    FeaturePrefsStore.batch741.v748compare = !current
+    AppToast.show(this, "compare: ${if (!current) "ON" else "OFF"}")
 }
 
-// v738: calibrate mode
-internal fun PlayerActivity.showV738CalibrateToggle() {
-    val current = FeaturePrefsStore.batch731.v738calibrate
-    FeaturePrefsStore.batch731.v738calibrate = !current
-    AppToast.show(this, "calibrate: ${if (!current) "ON" else "OFF"}")
+// v748: compile mode
+internal fun PlayerActivity.showV748CompileToggle() {
+    val current = FeaturePrefsStore.batch741.v748compile
+    FeaturePrefsStore.batch741.v748compile = !current
+    AppToast.show(this, "compile: ${if (!current) "ON" else "OFF"}")
 }
 
-// v739: border mode
-internal fun PlayerActivity.showV739BorderToggle() {
-    val current = FeaturePrefsStore.batch731.v739border
-    FeaturePrefsStore.batch731.v739border = !current
-    AppToast.show(this, "border: ${if (!current) "ON" else "OFF"}")
+// v749: click mode
+internal fun PlayerActivity.showV749ClickToggle() {
+    val current = FeaturePrefsStore.batch741.v749click
+    FeaturePrefsStore.batch741.v749click = !current
+    AppToast.show(this, "click: ${if (!current) "ON" else "OFF"}")
 }
 
-// v739: bounce mode
-internal fun PlayerActivity.showV739BounceToggle() {
-    val current = FeaturePrefsStore.batch731.v739bounce
-    FeaturePrefsStore.batch731.v739bounce = !current
-    AppToast.show(this, "bounce: ${if (!current) "ON" else "OFF"}")
+// v749: clip mode
+internal fun PlayerActivity.showV749ClipToggle() {
+    val current = FeaturePrefsStore.batch741.v749clip
+    FeaturePrefsStore.batch741.v749clip = !current
+    AppToast.show(this, "clip: ${if (!current) "ON" else "OFF"}")
 }
 
-// v739: box mode
-internal fun PlayerActivity.showV739BoxToggle() {
-    val current = FeaturePrefsStore.batch731.v739box
-    FeaturePrefsStore.batch731.v739box = !current
-    AppToast.show(this, "box: ${if (!current) "ON" else "OFF"}")
+// v749: clone mode
+internal fun PlayerActivity.showV749CloneToggle() {
+    val current = FeaturePrefsStore.batch741.v749clone
+    FeaturePrefsStore.batch741.v749clone = !current
+    AppToast.show(this, "clone: ${if (!current) "ON" else "OFF"}")
 }
 
-// v739: branch mode
-internal fun PlayerActivity.showV739BranchToggle() {
-    val current = FeaturePrefsStore.batch731.v739branch
-    FeaturePrefsStore.batch731.v739branch = !current
-    AppToast.show(this, "branch: ${if (!current) "ON" else "OFF"}")
+// v749: close mode
+internal fun PlayerActivity.showV749CloseToggle() {
+    val current = FeaturePrefsStore.batch741.v749close
+    FeaturePrefsStore.batch741.v749close = !current
+    AppToast.show(this, "close: ${if (!current) "ON" else "OFF"}")
 }
 
-// v739: brand mode
-internal fun PlayerActivity.showV739BrandToggle() {
-    val current = FeaturePrefsStore.batch731.v739brand
-    FeaturePrefsStore.batch731.v739brand = !current
-    AppToast.show(this, "brand: ${if (!current) "ON" else "OFF"}")
+// v749: cluster mode
+internal fun PlayerActivity.showV749ClusterToggle() {
+    val current = FeaturePrefsStore.batch741.v749cluster
+    FeaturePrefsStore.batch741.v749cluster = !current
+    AppToast.show(this, "cluster: ${if (!current) "ON" else "OFF"}")
 }
 
-// v739: break level
-internal fun PlayerActivity.showV739BreakDialog() {
+// v749: code level
+internal fun PlayerActivity.showV749CodeDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v739break).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v749code).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "break level",
+        title = "code level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v739break = value
-        AppToast.show(this, "break: $value")
+        FeaturePrefsStore.batch741.v749code = value
+        AppToast.show(this, "code: $value")
     }
 }
 
-// v739: bridge level
-internal fun PlayerActivity.showV739BridgeDialog() {
+// v749: collapse level
+internal fun PlayerActivity.showV749CollapseDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v739bridge).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v749collapse).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "bridge level",
+        title = "collapse level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v739bridge = value
-        AppToast.show(this, "bridge: $value")
+        FeaturePrefsStore.batch741.v749collapse = value
+        AppToast.show(this, "collapse: $value")
     }
 }
 
-// v739: browse level
-internal fun PlayerActivity.showV739BrowseDialog() {
+// v749: collect level
+internal fun PlayerActivity.showV749CollectDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v739browse).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v749collect).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "browse level",
+        title = "collect level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v739browse = value
-        AppToast.show(this, "browse: $value")
+        FeaturePrefsStore.batch741.v749collect = value
+        AppToast.show(this, "collect: $value")
     }
 }
 
-// v739: buffer level
-internal fun PlayerActivity.showV739BufferDialog() {
+// v749: column level
+internal fun PlayerActivity.showV749ColumnDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v739buffer).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v749column).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "buffer level",
+        title = "column level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v739buffer = value
-        AppToast.show(this, "buffer: $value")
+        FeaturePrefsStore.batch741.v749column = value
+        AppToast.show(this, "column: $value")
     }
 }
 
-// v739: build level
-internal fun PlayerActivity.showV739BuildDialog() {
+// v749: combine level
+internal fun PlayerActivity.showV749CombineDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v739build).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v749combine).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "build level",
+        title = "combine level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v739build = value
-        AppToast.show(this, "build: $value")
+        FeaturePrefsStore.batch741.v749combine = value
+        AppToast.show(this, "combine: $value")
     }
 }
 
-// v739: bulk mode
-internal fun PlayerActivity.showV739BulkToggle() {
-    val current = FeaturePrefsStore.batch731.v739bulk
-    FeaturePrefsStore.batch731.v739bulk = !current
-    AppToast.show(this, "bulk: ${if (!current) "ON" else "OFF"}")
+// v749: command mode
+internal fun PlayerActivity.showV749CommandToggle() {
+    val current = FeaturePrefsStore.batch741.v749command
+    FeaturePrefsStore.batch741.v749command = !current
+    AppToast.show(this, "command: ${if (!current) "ON" else "OFF"}")
 }
 
-// v739: burst mode
-internal fun PlayerActivity.showV739BurstToggle() {
-    val current = FeaturePrefsStore.batch731.v739burst
-    FeaturePrefsStore.batch731.v739burst = !current
-    AppToast.show(this, "burst: ${if (!current) "ON" else "OFF"}")
+// v749: commit mode
+internal fun PlayerActivity.showV749CommitToggle() {
+    val current = FeaturePrefsStore.batch741.v749commit
+    FeaturePrefsStore.batch741.v749commit = !current
+    AppToast.show(this, "commit: ${if (!current) "ON" else "OFF"}")
 }
 
-// v739: byte mode
-internal fun PlayerActivity.showV739ByteToggle() {
-    val current = FeaturePrefsStore.batch731.v739byte
-    FeaturePrefsStore.batch731.v739byte = !current
-    AppToast.show(this, "byte: ${if (!current) "ON" else "OFF"}")
+// v749: compact mode
+internal fun PlayerActivity.showV749CompactToggle() {
+    val current = FeaturePrefsStore.batch741.v749compact
+    FeaturePrefsStore.batch741.v749compact = !current
+    AppToast.show(this, "compact: ${if (!current) "ON" else "OFF"}")
 }
 
-// v739: cache mode
-internal fun PlayerActivity.showV739CacheToggle() {
-    val current = FeaturePrefsStore.batch731.v739cache
-    FeaturePrefsStore.batch731.v739cache = !current
-    AppToast.show(this, "cache: ${if (!current) "ON" else "OFF"}")
+// v749: compare mode
+internal fun PlayerActivity.showV749CompareToggle() {
+    val current = FeaturePrefsStore.batch741.v749compare
+    FeaturePrefsStore.batch741.v749compare = !current
+    AppToast.show(this, "compare: ${if (!current) "ON" else "OFF"}")
 }
 
-// v739: calibrate mode
-internal fun PlayerActivity.showV739CalibrateToggle() {
-    val current = FeaturePrefsStore.batch731.v739calibrate
-    FeaturePrefsStore.batch731.v739calibrate = !current
-    AppToast.show(this, "calibrate: ${if (!current) "ON" else "OFF"}")
+// v749: compile mode
+internal fun PlayerActivity.showV749CompileToggle() {
+    val current = FeaturePrefsStore.batch741.v749compile
+    FeaturePrefsStore.batch741.v749compile = !current
+    AppToast.show(this, "compile: ${if (!current) "ON" else "OFF"}")
 }
 
-// v740: border mode
-internal fun PlayerActivity.showV740BorderToggle() {
-    val current = FeaturePrefsStore.batch731.v740border
-    FeaturePrefsStore.batch731.v740border = !current
-    AppToast.show(this, "border: ${if (!current) "ON" else "OFF"}")
+// v750: click mode
+internal fun PlayerActivity.showV750ClickToggle() {
+    val current = FeaturePrefsStore.batch741.v750click
+    FeaturePrefsStore.batch741.v750click = !current
+    AppToast.show(this, "click: ${if (!current) "ON" else "OFF"}")
 }
 
-// v740: bounce mode
-internal fun PlayerActivity.showV740BounceToggle() {
-    val current = FeaturePrefsStore.batch731.v740bounce
-    FeaturePrefsStore.batch731.v740bounce = !current
-    AppToast.show(this, "bounce: ${if (!current) "ON" else "OFF"}")
+// v750: clip mode
+internal fun PlayerActivity.showV750ClipToggle() {
+    val current = FeaturePrefsStore.batch741.v750clip
+    FeaturePrefsStore.batch741.v750clip = !current
+    AppToast.show(this, "clip: ${if (!current) "ON" else "OFF"}")
 }
 
-// v740: box mode
-internal fun PlayerActivity.showV740BoxToggle() {
-    val current = FeaturePrefsStore.batch731.v740box
-    FeaturePrefsStore.batch731.v740box = !current
-    AppToast.show(this, "box: ${if (!current) "ON" else "OFF"}")
+// v750: clone mode
+internal fun PlayerActivity.showV750CloneToggle() {
+    val current = FeaturePrefsStore.batch741.v750clone
+    FeaturePrefsStore.batch741.v750clone = !current
+    AppToast.show(this, "clone: ${if (!current) "ON" else "OFF"}")
 }
 
-// v740: branch mode
-internal fun PlayerActivity.showV740BranchToggle() {
-    val current = FeaturePrefsStore.batch731.v740branch
-    FeaturePrefsStore.batch731.v740branch = !current
-    AppToast.show(this, "branch: ${if (!current) "ON" else "OFF"}")
+// v750: close mode
+internal fun PlayerActivity.showV750CloseToggle() {
+    val current = FeaturePrefsStore.batch741.v750close
+    FeaturePrefsStore.batch741.v750close = !current
+    AppToast.show(this, "close: ${if (!current) "ON" else "OFF"}")
 }
 
-// v740: brand mode
-internal fun PlayerActivity.showV740BrandToggle() {
-    val current = FeaturePrefsStore.batch731.v740brand
-    FeaturePrefsStore.batch731.v740brand = !current
-    AppToast.show(this, "brand: ${if (!current) "ON" else "OFF"}")
+// v750: cluster mode
+internal fun PlayerActivity.showV750ClusterToggle() {
+    val current = FeaturePrefsStore.batch741.v750cluster
+    FeaturePrefsStore.batch741.v750cluster = !current
+    AppToast.show(this, "cluster: ${if (!current) "ON" else "OFF"}")
 }
 
-// v740: break level
-internal fun PlayerActivity.showV740BreakDialog() {
+// v750: code level
+internal fun PlayerActivity.showV750CodeDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v740break).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v750code).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "break level",
+        title = "code level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v740break = value
-        AppToast.show(this, "break: $value")
+        FeaturePrefsStore.batch741.v750code = value
+        AppToast.show(this, "code: $value")
     }
 }
 
-// v740: bridge level
-internal fun PlayerActivity.showV740BridgeDialog() {
+// v750: collapse level
+internal fun PlayerActivity.showV750CollapseDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v740bridge).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v750collapse).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "bridge level",
+        title = "collapse level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v740bridge = value
-        AppToast.show(this, "bridge: $value")
+        FeaturePrefsStore.batch741.v750collapse = value
+        AppToast.show(this, "collapse: $value")
     }
 }
 
-// v740: browse level
-internal fun PlayerActivity.showV740BrowseDialog() {
+// v750: collect level
+internal fun PlayerActivity.showV750CollectDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v740browse).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v750collect).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "browse level",
+        title = "collect level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v740browse = value
-        AppToast.show(this, "browse: $value")
+        FeaturePrefsStore.batch741.v750collect = value
+        AppToast.show(this, "collect: $value")
     }
 }
 
-// v740: buffer level
-internal fun PlayerActivity.showV740BufferDialog() {
+// v750: column level
+internal fun PlayerActivity.showV750ColumnDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v740buffer).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v750column).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "buffer level",
+        title = "column level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v740buffer = value
-        AppToast.show(this, "buffer: $value")
+        FeaturePrefsStore.batch741.v750column = value
+        AppToast.show(this, "column: $value")
     }
 }
 
-// v740: build level
-internal fun PlayerActivity.showV740BuildDialog() {
+// v750: combine level
+internal fun PlayerActivity.showV750CombineDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch731.v740build).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch741.v750combine).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "build level",
+        title = "combine level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch731.v740build = value
-        AppToast.show(this, "build: $value")
+        FeaturePrefsStore.batch741.v750combine = value
+        AppToast.show(this, "combine: $value")
     }
 }
 
-// v740: bulk mode
-internal fun PlayerActivity.showV740BulkToggle() {
-    val current = FeaturePrefsStore.batch731.v740bulk
-    FeaturePrefsStore.batch731.v740bulk = !current
-    AppToast.show(this, "bulk: ${if (!current) "ON" else "OFF"}")
+// v750: command mode
+internal fun PlayerActivity.showV750CommandToggle() {
+    val current = FeaturePrefsStore.batch741.v750command
+    FeaturePrefsStore.batch741.v750command = !current
+    AppToast.show(this, "command: ${if (!current) "ON" else "OFF"}")
 }
 
-// v740: burst mode
-internal fun PlayerActivity.showV740BurstToggle() {
-    val current = FeaturePrefsStore.batch731.v740burst
-    FeaturePrefsStore.batch731.v740burst = !current
-    AppToast.show(this, "burst: ${if (!current) "ON" else "OFF"}")
+// v750: commit mode
+internal fun PlayerActivity.showV750CommitToggle() {
+    val current = FeaturePrefsStore.batch741.v750commit
+    FeaturePrefsStore.batch741.v750commit = !current
+    AppToast.show(this, "commit: ${if (!current) "ON" else "OFF"}")
 }
 
-// v740: byte mode
-internal fun PlayerActivity.showV740ByteToggle() {
-    val current = FeaturePrefsStore.batch731.v740byte
-    FeaturePrefsStore.batch731.v740byte = !current
-    AppToast.show(this, "byte: ${if (!current) "ON" else "OFF"}")
+// v750: compact mode
+internal fun PlayerActivity.showV750CompactToggle() {
+    val current = FeaturePrefsStore.batch741.v750compact
+    FeaturePrefsStore.batch741.v750compact = !current
+    AppToast.show(this, "compact: ${if (!current) "ON" else "OFF"}")
 }
 
-// v740: cache mode
-internal fun PlayerActivity.showV740CacheToggle() {
-    val current = FeaturePrefsStore.batch731.v740cache
-    FeaturePrefsStore.batch731.v740cache = !current
-    AppToast.show(this, "cache: ${if (!current) "ON" else "OFF"}")
+// v750: compare mode
+internal fun PlayerActivity.showV750CompareToggle() {
+    val current = FeaturePrefsStore.batch741.v750compare
+    FeaturePrefsStore.batch741.v750compare = !current
+    AppToast.show(this, "compare: ${if (!current) "ON" else "OFF"}")
 }
 
-// v740: calibrate mode
-internal fun PlayerActivity.showV740CalibrateToggle() {
-    val current = FeaturePrefsStore.batch731.v740calibrate
-    FeaturePrefsStore.batch731.v740calibrate = !current
-    AppToast.show(this, "calibrate: ${if (!current) "ON" else "OFF"}")
+// v750: compile mode
+internal fun PlayerActivity.showV750CompileToggle() {
+    val current = FeaturePrefsStore.batch741.v750compile
+    FeaturePrefsStore.batch741.v750compile = !current
+    AppToast.show(this, "compile: ${if (!current) "ON" else "OFF"}")
 }
 

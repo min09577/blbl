@@ -3,1453 +3,1453 @@ package blbl.cat3399.feature.player
 import blbl.cat3399.core.prefs.FeaturePrefsStore
 import blbl.cat3399.core.ui.AppToast
 
-// v751: compile mode
-internal fun PlayerActivity.showV751CompileToggle() {
-    val current = FeaturePrefsStore.batch751.v751compile
-    FeaturePrefsStore.batch751.v751compile = !current
-    AppToast.show(this, "compile: ${if (!current) "ON" else "OFF"}")
+// v761: contract mode
+internal fun PlayerActivity.showV761ContractToggle() {
+    val current = FeaturePrefsStore.batch761.v761contract
+    FeaturePrefsStore.batch761.v761contract = !current
+    AppToast.show(this, "contract: ${if (!current) "ON" else "OFF"}")
 }
 
-// v751: complete mode
-internal fun PlayerActivity.showV751CompleteToggle() {
-    val current = FeaturePrefsStore.batch751.v751complete
-    FeaturePrefsStore.batch751.v751complete = !current
-    AppToast.show(this, "complete: ${if (!current) "ON" else "OFF"}")
+// v761: control mode
+internal fun PlayerActivity.showV761ControlToggle() {
+    val current = FeaturePrefsStore.batch761.v761control
+    FeaturePrefsStore.batch761.v761control = !current
+    AppToast.show(this, "control: ${if (!current) "ON" else "OFF"}")
 }
 
-// v751: compress mode
-internal fun PlayerActivity.showV751CompressToggle() {
-    val current = FeaturePrefsStore.batch751.v751compress
-    FeaturePrefsStore.batch751.v751compress = !current
-    AppToast.show(this, "compress: ${if (!current) "ON" else "OFF"}")
+// v761: convert mode
+internal fun PlayerActivity.showV761ConvertToggle() {
+    val current = FeaturePrefsStore.batch761.v761convert
+    FeaturePrefsStore.batch761.v761convert = !current
+    AppToast.show(this, "convert: ${if (!current) "ON" else "OFF"}")
 }
 
-// v751: compute mode
-internal fun PlayerActivity.showV751ComputeToggle() {
-    val current = FeaturePrefsStore.batch751.v751compute
-    FeaturePrefsStore.batch751.v751compute = !current
-    AppToast.show(this, "compute: ${if (!current) "ON" else "OFF"}")
+// v761: coordinate mode
+internal fun PlayerActivity.showV761CoordinateToggle() {
+    val current = FeaturePrefsStore.batch761.v761coordinate
+    FeaturePrefsStore.batch761.v761coordinate = !current
+    AppToast.show(this, "coordinate: ${if (!current) "ON" else "OFF"}")
 }
 
-// v751: concat mode
-internal fun PlayerActivity.showV751ConcatToggle() {
-    val current = FeaturePrefsStore.batch751.v751concat
-    FeaturePrefsStore.batch751.v751concat = !current
-    AppToast.show(this, "concat: ${if (!current) "ON" else "OFF"}")
+// v761: copy mode
+internal fun PlayerActivity.showV761CopyToggle() {
+    val current = FeaturePrefsStore.batch761.v761copy
+    FeaturePrefsStore.batch761.v761copy = !current
+    AppToast.show(this, "copy: ${if (!current) "ON" else "OFF"}")
 }
 
-// v751: concurrent level
-internal fun PlayerActivity.showV751ConcurrentDialog() {
+// v761: core level
+internal fun PlayerActivity.showV761CoreDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v751concurrent).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v761core).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "concurrent level",
+        title = "core level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v751concurrent = value
-        AppToast.show(this, "concurrent: $value")
+        FeaturePrefsStore.batch761.v761core = value
+        AppToast.show(this, "core: $value")
     }
 }
 
-// v751: condition level
-internal fun PlayerActivity.showV751ConditionDialog() {
+// v761: count level
+internal fun PlayerActivity.showV761CountDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v751condition).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v761count).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "condition level",
+        title = "count level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v751condition = value
-        AppToast.show(this, "condition: $value")
+        FeaturePrefsStore.batch761.v761count = value
+        AppToast.show(this, "count: $value")
     }
 }
 
-// v751: configure level
-internal fun PlayerActivity.showV751ConfigureDialog() {
+// v761: cover level
+internal fun PlayerActivity.showV761CoverDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v751configure).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v761cover).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "configure level",
+        title = "cover level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v751configure = value
-        AppToast.show(this, "configure: $value")
+        FeaturePrefsStore.batch761.v761cover = value
+        AppToast.show(this, "cover: $value")
     }
 }
 
-// v751: confirm level
-internal fun PlayerActivity.showV751ConfirmDialog() {
+// v761: crash level
+internal fun PlayerActivity.showV761CrashDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v751confirm).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v761crash).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "confirm level",
+        title = "crash level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v751confirm = value
-        AppToast.show(this, "confirm: $value")
+        FeaturePrefsStore.batch761.v761crash = value
+        AppToast.show(this, "crash: $value")
     }
 }
 
-// v751: connect level
-internal fun PlayerActivity.showV751ConnectDialog() {
+// v761: create level
+internal fun PlayerActivity.showV761CreateDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v751connect).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v761create).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "connect level",
+        title = "create level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v751connect = value
-        AppToast.show(this, "connect: $value")
+        FeaturePrefsStore.batch761.v761create = value
+        AppToast.show(this, "create: $value")
     }
 }
 
-// v751: console mode
-internal fun PlayerActivity.showV751ConsoleToggle() {
-    val current = FeaturePrefsStore.batch751.v751console
-    FeaturePrefsStore.batch751.v751console = !current
-    AppToast.show(this, "console: ${if (!current) "ON" else "OFF"}")
+// v761: crop mode
+internal fun PlayerActivity.showV761CropToggle() {
+    val current = FeaturePrefsStore.batch761.v761crop
+    FeaturePrefsStore.batch761.v761crop = !current
+    AppToast.show(this, "crop: ${if (!current) "ON" else "OFF"}")
 }
 
-// v751: constant mode
-internal fun PlayerActivity.showV751ConstantToggle() {
-    val current = FeaturePrefsStore.batch751.v751constant
-    FeaturePrefsStore.batch751.v751constant = !current
-    AppToast.show(this, "constant: ${if (!current) "ON" else "OFF"}")
+// v761: cross mode
+internal fun PlayerActivity.showV761CrossToggle() {
+    val current = FeaturePrefsStore.batch761.v761cross
+    FeaturePrefsStore.batch761.v761cross = !current
+    AppToast.show(this, "cross: ${if (!current) "ON" else "OFF"}")
 }
 
-// v751: constraint mode
-internal fun PlayerActivity.showV751ConstraintToggle() {
-    val current = FeaturePrefsStore.batch751.v751constraint
-    FeaturePrefsStore.batch751.v751constraint = !current
-    AppToast.show(this, "constraint: ${if (!current) "ON" else "OFF"}")
+// v761: crypto mode
+internal fun PlayerActivity.showV761CryptoToggle() {
+    val current = FeaturePrefsStore.batch761.v761crypto
+    FeaturePrefsStore.batch761.v761crypto = !current
+    AppToast.show(this, "crypto: ${if (!current) "ON" else "OFF"}")
 }
 
-// v751: consume mode
-internal fun PlayerActivity.showV751ConsumeToggle() {
-    val current = FeaturePrefsStore.batch751.v751consume
-    FeaturePrefsStore.batch751.v751consume = !current
-    AppToast.show(this, "consume: ${if (!current) "ON" else "OFF"}")
+// v761: cursor mode
+internal fun PlayerActivity.showV761CursorToggle() {
+    val current = FeaturePrefsStore.batch761.v761cursor
+    FeaturePrefsStore.batch761.v761cursor = !current
+    AppToast.show(this, "cursor: ${if (!current) "ON" else "OFF"}")
 }
 
-// v751: content mode
-internal fun PlayerActivity.showV751ContentToggle() {
-    val current = FeaturePrefsStore.batch751.v751content
-    FeaturePrefsStore.batch751.v751content = !current
-    AppToast.show(this, "content: ${if (!current) "ON" else "OFF"}")
+// v761: curve mode
+internal fun PlayerActivity.showV761CurveToggle() {
+    val current = FeaturePrefsStore.batch761.v761curve
+    FeaturePrefsStore.batch761.v761curve = !current
+    AppToast.show(this, "curve: ${if (!current) "ON" else "OFF"}")
 }
 
-// v752: compile mode
-internal fun PlayerActivity.showV752CompileToggle() {
-    val current = FeaturePrefsStore.batch751.v752compile
-    FeaturePrefsStore.batch751.v752compile = !current
-    AppToast.show(this, "compile: ${if (!current) "ON" else "OFF"}")
+// v762: contract mode
+internal fun PlayerActivity.showV762ContractToggle() {
+    val current = FeaturePrefsStore.batch761.v762contract
+    FeaturePrefsStore.batch761.v762contract = !current
+    AppToast.show(this, "contract: ${if (!current) "ON" else "OFF"}")
 }
 
-// v752: complete mode
-internal fun PlayerActivity.showV752CompleteToggle() {
-    val current = FeaturePrefsStore.batch751.v752complete
-    FeaturePrefsStore.batch751.v752complete = !current
-    AppToast.show(this, "complete: ${if (!current) "ON" else "OFF"}")
+// v762: control mode
+internal fun PlayerActivity.showV762ControlToggle() {
+    val current = FeaturePrefsStore.batch761.v762control
+    FeaturePrefsStore.batch761.v762control = !current
+    AppToast.show(this, "control: ${if (!current) "ON" else "OFF"}")
 }
 
-// v752: compress mode
-internal fun PlayerActivity.showV752CompressToggle() {
-    val current = FeaturePrefsStore.batch751.v752compress
-    FeaturePrefsStore.batch751.v752compress = !current
-    AppToast.show(this, "compress: ${if (!current) "ON" else "OFF"}")
+// v762: convert mode
+internal fun PlayerActivity.showV762ConvertToggle() {
+    val current = FeaturePrefsStore.batch761.v762convert
+    FeaturePrefsStore.batch761.v762convert = !current
+    AppToast.show(this, "convert: ${if (!current) "ON" else "OFF"}")
 }
 
-// v752: compute mode
-internal fun PlayerActivity.showV752ComputeToggle() {
-    val current = FeaturePrefsStore.batch751.v752compute
-    FeaturePrefsStore.batch751.v752compute = !current
-    AppToast.show(this, "compute: ${if (!current) "ON" else "OFF"}")
+// v762: coordinate mode
+internal fun PlayerActivity.showV762CoordinateToggle() {
+    val current = FeaturePrefsStore.batch761.v762coordinate
+    FeaturePrefsStore.batch761.v762coordinate = !current
+    AppToast.show(this, "coordinate: ${if (!current) "ON" else "OFF"}")
 }
 
-// v752: concat mode
-internal fun PlayerActivity.showV752ConcatToggle() {
-    val current = FeaturePrefsStore.batch751.v752concat
-    FeaturePrefsStore.batch751.v752concat = !current
-    AppToast.show(this, "concat: ${if (!current) "ON" else "OFF"}")
+// v762: copy mode
+internal fun PlayerActivity.showV762CopyToggle() {
+    val current = FeaturePrefsStore.batch761.v762copy
+    FeaturePrefsStore.batch761.v762copy = !current
+    AppToast.show(this, "copy: ${if (!current) "ON" else "OFF"}")
 }
 
-// v752: concurrent level
-internal fun PlayerActivity.showV752ConcurrentDialog() {
+// v762: core level
+internal fun PlayerActivity.showV762CoreDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v752concurrent).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v762core).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "concurrent level",
+        title = "core level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v752concurrent = value
-        AppToast.show(this, "concurrent: $value")
+        FeaturePrefsStore.batch761.v762core = value
+        AppToast.show(this, "core: $value")
     }
 }
 
-// v752: condition level
-internal fun PlayerActivity.showV752ConditionDialog() {
+// v762: count level
+internal fun PlayerActivity.showV762CountDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v752condition).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v762count).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "condition level",
+        title = "count level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v752condition = value
-        AppToast.show(this, "condition: $value")
+        FeaturePrefsStore.batch761.v762count = value
+        AppToast.show(this, "count: $value")
     }
 }
 
-// v752: configure level
-internal fun PlayerActivity.showV752ConfigureDialog() {
+// v762: cover level
+internal fun PlayerActivity.showV762CoverDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v752configure).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v762cover).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "configure level",
+        title = "cover level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v752configure = value
-        AppToast.show(this, "configure: $value")
+        FeaturePrefsStore.batch761.v762cover = value
+        AppToast.show(this, "cover: $value")
     }
 }
 
-// v752: confirm level
-internal fun PlayerActivity.showV752ConfirmDialog() {
+// v762: crash level
+internal fun PlayerActivity.showV762CrashDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v752confirm).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v762crash).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "confirm level",
+        title = "crash level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v752confirm = value
-        AppToast.show(this, "confirm: $value")
+        FeaturePrefsStore.batch761.v762crash = value
+        AppToast.show(this, "crash: $value")
     }
 }
 
-// v752: connect level
-internal fun PlayerActivity.showV752ConnectDialog() {
+// v762: create level
+internal fun PlayerActivity.showV762CreateDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v752connect).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v762create).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "connect level",
+        title = "create level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v752connect = value
-        AppToast.show(this, "connect: $value")
+        FeaturePrefsStore.batch761.v762create = value
+        AppToast.show(this, "create: $value")
     }
 }
 
-// v752: console mode
-internal fun PlayerActivity.showV752ConsoleToggle() {
-    val current = FeaturePrefsStore.batch751.v752console
-    FeaturePrefsStore.batch751.v752console = !current
-    AppToast.show(this, "console: ${if (!current) "ON" else "OFF"}")
+// v762: crop mode
+internal fun PlayerActivity.showV762CropToggle() {
+    val current = FeaturePrefsStore.batch761.v762crop
+    FeaturePrefsStore.batch761.v762crop = !current
+    AppToast.show(this, "crop: ${if (!current) "ON" else "OFF"}")
 }
 
-// v752: constant mode
-internal fun PlayerActivity.showV752ConstantToggle() {
-    val current = FeaturePrefsStore.batch751.v752constant
-    FeaturePrefsStore.batch751.v752constant = !current
-    AppToast.show(this, "constant: ${if (!current) "ON" else "OFF"}")
+// v762: cross mode
+internal fun PlayerActivity.showV762CrossToggle() {
+    val current = FeaturePrefsStore.batch761.v762cross
+    FeaturePrefsStore.batch761.v762cross = !current
+    AppToast.show(this, "cross: ${if (!current) "ON" else "OFF"}")
 }
 
-// v752: constraint mode
-internal fun PlayerActivity.showV752ConstraintToggle() {
-    val current = FeaturePrefsStore.batch751.v752constraint
-    FeaturePrefsStore.batch751.v752constraint = !current
-    AppToast.show(this, "constraint: ${if (!current) "ON" else "OFF"}")
+// v762: crypto mode
+internal fun PlayerActivity.showV762CryptoToggle() {
+    val current = FeaturePrefsStore.batch761.v762crypto
+    FeaturePrefsStore.batch761.v762crypto = !current
+    AppToast.show(this, "crypto: ${if (!current) "ON" else "OFF"}")
 }
 
-// v752: consume mode
-internal fun PlayerActivity.showV752ConsumeToggle() {
-    val current = FeaturePrefsStore.batch751.v752consume
-    FeaturePrefsStore.batch751.v752consume = !current
-    AppToast.show(this, "consume: ${if (!current) "ON" else "OFF"}")
+// v762: cursor mode
+internal fun PlayerActivity.showV762CursorToggle() {
+    val current = FeaturePrefsStore.batch761.v762cursor
+    FeaturePrefsStore.batch761.v762cursor = !current
+    AppToast.show(this, "cursor: ${if (!current) "ON" else "OFF"}")
 }
 
-// v752: content mode
-internal fun PlayerActivity.showV752ContentToggle() {
-    val current = FeaturePrefsStore.batch751.v752content
-    FeaturePrefsStore.batch751.v752content = !current
-    AppToast.show(this, "content: ${if (!current) "ON" else "OFF"}")
+// v762: curve mode
+internal fun PlayerActivity.showV762CurveToggle() {
+    val current = FeaturePrefsStore.batch761.v762curve
+    FeaturePrefsStore.batch761.v762curve = !current
+    AppToast.show(this, "curve: ${if (!current) "ON" else "OFF"}")
 }
 
-// v753: compile mode
-internal fun PlayerActivity.showV753CompileToggle() {
-    val current = FeaturePrefsStore.batch751.v753compile
-    FeaturePrefsStore.batch751.v753compile = !current
-    AppToast.show(this, "compile: ${if (!current) "ON" else "OFF"}")
+// v763: contract mode
+internal fun PlayerActivity.showV763ContractToggle() {
+    val current = FeaturePrefsStore.batch761.v763contract
+    FeaturePrefsStore.batch761.v763contract = !current
+    AppToast.show(this, "contract: ${if (!current) "ON" else "OFF"}")
 }
 
-// v753: complete mode
-internal fun PlayerActivity.showV753CompleteToggle() {
-    val current = FeaturePrefsStore.batch751.v753complete
-    FeaturePrefsStore.batch751.v753complete = !current
-    AppToast.show(this, "complete: ${if (!current) "ON" else "OFF"}")
+// v763: control mode
+internal fun PlayerActivity.showV763ControlToggle() {
+    val current = FeaturePrefsStore.batch761.v763control
+    FeaturePrefsStore.batch761.v763control = !current
+    AppToast.show(this, "control: ${if (!current) "ON" else "OFF"}")
 }
 
-// v753: compress mode
-internal fun PlayerActivity.showV753CompressToggle() {
-    val current = FeaturePrefsStore.batch751.v753compress
-    FeaturePrefsStore.batch751.v753compress = !current
-    AppToast.show(this, "compress: ${if (!current) "ON" else "OFF"}")
+// v763: convert mode
+internal fun PlayerActivity.showV763ConvertToggle() {
+    val current = FeaturePrefsStore.batch761.v763convert
+    FeaturePrefsStore.batch761.v763convert = !current
+    AppToast.show(this, "convert: ${if (!current) "ON" else "OFF"}")
 }
 
-// v753: compute mode
-internal fun PlayerActivity.showV753ComputeToggle() {
-    val current = FeaturePrefsStore.batch751.v753compute
-    FeaturePrefsStore.batch751.v753compute = !current
-    AppToast.show(this, "compute: ${if (!current) "ON" else "OFF"}")
+// v763: coordinate mode
+internal fun PlayerActivity.showV763CoordinateToggle() {
+    val current = FeaturePrefsStore.batch761.v763coordinate
+    FeaturePrefsStore.batch761.v763coordinate = !current
+    AppToast.show(this, "coordinate: ${if (!current) "ON" else "OFF"}")
 }
 
-// v753: concat mode
-internal fun PlayerActivity.showV753ConcatToggle() {
-    val current = FeaturePrefsStore.batch751.v753concat
-    FeaturePrefsStore.batch751.v753concat = !current
-    AppToast.show(this, "concat: ${if (!current) "ON" else "OFF"}")
+// v763: copy mode
+internal fun PlayerActivity.showV763CopyToggle() {
+    val current = FeaturePrefsStore.batch761.v763copy
+    FeaturePrefsStore.batch761.v763copy = !current
+    AppToast.show(this, "copy: ${if (!current) "ON" else "OFF"}")
 }
 
-// v753: concurrent level
-internal fun PlayerActivity.showV753ConcurrentDialog() {
+// v763: core level
+internal fun PlayerActivity.showV763CoreDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v753concurrent).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v763core).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "concurrent level",
+        title = "core level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v753concurrent = value
-        AppToast.show(this, "concurrent: $value")
+        FeaturePrefsStore.batch761.v763core = value
+        AppToast.show(this, "core: $value")
     }
 }
 
-// v753: condition level
-internal fun PlayerActivity.showV753ConditionDialog() {
+// v763: count level
+internal fun PlayerActivity.showV763CountDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v753condition).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v763count).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "condition level",
+        title = "count level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v753condition = value
-        AppToast.show(this, "condition: $value")
+        FeaturePrefsStore.batch761.v763count = value
+        AppToast.show(this, "count: $value")
     }
 }
 
-// v753: configure level
-internal fun PlayerActivity.showV753ConfigureDialog() {
+// v763: cover level
+internal fun PlayerActivity.showV763CoverDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v753configure).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v763cover).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "configure level",
+        title = "cover level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v753configure = value
-        AppToast.show(this, "configure: $value")
+        FeaturePrefsStore.batch761.v763cover = value
+        AppToast.show(this, "cover: $value")
     }
 }
 
-// v753: confirm level
-internal fun PlayerActivity.showV753ConfirmDialog() {
+// v763: crash level
+internal fun PlayerActivity.showV763CrashDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v753confirm).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v763crash).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "confirm level",
+        title = "crash level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v753confirm = value
-        AppToast.show(this, "confirm: $value")
+        FeaturePrefsStore.batch761.v763crash = value
+        AppToast.show(this, "crash: $value")
     }
 }
 
-// v753: connect level
-internal fun PlayerActivity.showV753ConnectDialog() {
+// v763: create level
+internal fun PlayerActivity.showV763CreateDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v753connect).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v763create).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "connect level",
+        title = "create level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v753connect = value
-        AppToast.show(this, "connect: $value")
+        FeaturePrefsStore.batch761.v763create = value
+        AppToast.show(this, "create: $value")
     }
 }
 
-// v753: console mode
-internal fun PlayerActivity.showV753ConsoleToggle() {
-    val current = FeaturePrefsStore.batch751.v753console
-    FeaturePrefsStore.batch751.v753console = !current
-    AppToast.show(this, "console: ${if (!current) "ON" else "OFF"}")
+// v763: crop mode
+internal fun PlayerActivity.showV763CropToggle() {
+    val current = FeaturePrefsStore.batch761.v763crop
+    FeaturePrefsStore.batch761.v763crop = !current
+    AppToast.show(this, "crop: ${if (!current) "ON" else "OFF"}")
 }
 
-// v753: constant mode
-internal fun PlayerActivity.showV753ConstantToggle() {
-    val current = FeaturePrefsStore.batch751.v753constant
-    FeaturePrefsStore.batch751.v753constant = !current
-    AppToast.show(this, "constant: ${if (!current) "ON" else "OFF"}")
+// v763: cross mode
+internal fun PlayerActivity.showV763CrossToggle() {
+    val current = FeaturePrefsStore.batch761.v763cross
+    FeaturePrefsStore.batch761.v763cross = !current
+    AppToast.show(this, "cross: ${if (!current) "ON" else "OFF"}")
 }
 
-// v753: constraint mode
-internal fun PlayerActivity.showV753ConstraintToggle() {
-    val current = FeaturePrefsStore.batch751.v753constraint
-    FeaturePrefsStore.batch751.v753constraint = !current
-    AppToast.show(this, "constraint: ${if (!current) "ON" else "OFF"}")
+// v763: crypto mode
+internal fun PlayerActivity.showV763CryptoToggle() {
+    val current = FeaturePrefsStore.batch761.v763crypto
+    FeaturePrefsStore.batch761.v763crypto = !current
+    AppToast.show(this, "crypto: ${if (!current) "ON" else "OFF"}")
 }
 
-// v753: consume mode
-internal fun PlayerActivity.showV753ConsumeToggle() {
-    val current = FeaturePrefsStore.batch751.v753consume
-    FeaturePrefsStore.batch751.v753consume = !current
-    AppToast.show(this, "consume: ${if (!current) "ON" else "OFF"}")
+// v763: cursor mode
+internal fun PlayerActivity.showV763CursorToggle() {
+    val current = FeaturePrefsStore.batch761.v763cursor
+    FeaturePrefsStore.batch761.v763cursor = !current
+    AppToast.show(this, "cursor: ${if (!current) "ON" else "OFF"}")
 }
 
-// v753: content mode
-internal fun PlayerActivity.showV753ContentToggle() {
-    val current = FeaturePrefsStore.batch751.v753content
-    FeaturePrefsStore.batch751.v753content = !current
-    AppToast.show(this, "content: ${if (!current) "ON" else "OFF"}")
+// v763: curve mode
+internal fun PlayerActivity.showV763CurveToggle() {
+    val current = FeaturePrefsStore.batch761.v763curve
+    FeaturePrefsStore.batch761.v763curve = !current
+    AppToast.show(this, "curve: ${if (!current) "ON" else "OFF"}")
 }
 
-// v754: compile mode
-internal fun PlayerActivity.showV754CompileToggle() {
-    val current = FeaturePrefsStore.batch751.v754compile
-    FeaturePrefsStore.batch751.v754compile = !current
-    AppToast.show(this, "compile: ${if (!current) "ON" else "OFF"}")
+// v764: contract mode
+internal fun PlayerActivity.showV764ContractToggle() {
+    val current = FeaturePrefsStore.batch761.v764contract
+    FeaturePrefsStore.batch761.v764contract = !current
+    AppToast.show(this, "contract: ${if (!current) "ON" else "OFF"}")
 }
 
-// v754: complete mode
-internal fun PlayerActivity.showV754CompleteToggle() {
-    val current = FeaturePrefsStore.batch751.v754complete
-    FeaturePrefsStore.batch751.v754complete = !current
-    AppToast.show(this, "complete: ${if (!current) "ON" else "OFF"}")
+// v764: control mode
+internal fun PlayerActivity.showV764ControlToggle() {
+    val current = FeaturePrefsStore.batch761.v764control
+    FeaturePrefsStore.batch761.v764control = !current
+    AppToast.show(this, "control: ${if (!current) "ON" else "OFF"}")
 }
 
-// v754: compress mode
-internal fun PlayerActivity.showV754CompressToggle() {
-    val current = FeaturePrefsStore.batch751.v754compress
-    FeaturePrefsStore.batch751.v754compress = !current
-    AppToast.show(this, "compress: ${if (!current) "ON" else "OFF"}")
+// v764: convert mode
+internal fun PlayerActivity.showV764ConvertToggle() {
+    val current = FeaturePrefsStore.batch761.v764convert
+    FeaturePrefsStore.batch761.v764convert = !current
+    AppToast.show(this, "convert: ${if (!current) "ON" else "OFF"}")
 }
 
-// v754: compute mode
-internal fun PlayerActivity.showV754ComputeToggle() {
-    val current = FeaturePrefsStore.batch751.v754compute
-    FeaturePrefsStore.batch751.v754compute = !current
-    AppToast.show(this, "compute: ${if (!current) "ON" else "OFF"}")
+// v764: coordinate mode
+internal fun PlayerActivity.showV764CoordinateToggle() {
+    val current = FeaturePrefsStore.batch761.v764coordinate
+    FeaturePrefsStore.batch761.v764coordinate = !current
+    AppToast.show(this, "coordinate: ${if (!current) "ON" else "OFF"}")
 }
 
-// v754: concat mode
-internal fun PlayerActivity.showV754ConcatToggle() {
-    val current = FeaturePrefsStore.batch751.v754concat
-    FeaturePrefsStore.batch751.v754concat = !current
-    AppToast.show(this, "concat: ${if (!current) "ON" else "OFF"}")
+// v764: copy mode
+internal fun PlayerActivity.showV764CopyToggle() {
+    val current = FeaturePrefsStore.batch761.v764copy
+    FeaturePrefsStore.batch761.v764copy = !current
+    AppToast.show(this, "copy: ${if (!current) "ON" else "OFF"}")
 }
 
-// v754: concurrent level
-internal fun PlayerActivity.showV754ConcurrentDialog() {
+// v764: core level
+internal fun PlayerActivity.showV764CoreDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v754concurrent).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v764core).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "concurrent level",
+        title = "core level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v754concurrent = value
-        AppToast.show(this, "concurrent: $value")
+        FeaturePrefsStore.batch761.v764core = value
+        AppToast.show(this, "core: $value")
     }
 }
 
-// v754: condition level
-internal fun PlayerActivity.showV754ConditionDialog() {
+// v764: count level
+internal fun PlayerActivity.showV764CountDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v754condition).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v764count).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "condition level",
+        title = "count level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v754condition = value
-        AppToast.show(this, "condition: $value")
+        FeaturePrefsStore.batch761.v764count = value
+        AppToast.show(this, "count: $value")
     }
 }
 
-// v754: configure level
-internal fun PlayerActivity.showV754ConfigureDialog() {
+// v764: cover level
+internal fun PlayerActivity.showV764CoverDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v754configure).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v764cover).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "configure level",
+        title = "cover level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v754configure = value
-        AppToast.show(this, "configure: $value")
+        FeaturePrefsStore.batch761.v764cover = value
+        AppToast.show(this, "cover: $value")
     }
 }
 
-// v754: confirm level
-internal fun PlayerActivity.showV754ConfirmDialog() {
+// v764: crash level
+internal fun PlayerActivity.showV764CrashDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v754confirm).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v764crash).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "confirm level",
+        title = "crash level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v754confirm = value
-        AppToast.show(this, "confirm: $value")
+        FeaturePrefsStore.batch761.v764crash = value
+        AppToast.show(this, "crash: $value")
     }
 }
 
-// v754: connect level
-internal fun PlayerActivity.showV754ConnectDialog() {
+// v764: create level
+internal fun PlayerActivity.showV764CreateDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v754connect).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v764create).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "connect level",
+        title = "create level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v754connect = value
-        AppToast.show(this, "connect: $value")
+        FeaturePrefsStore.batch761.v764create = value
+        AppToast.show(this, "create: $value")
     }
 }
 
-// v754: console mode
-internal fun PlayerActivity.showV754ConsoleToggle() {
-    val current = FeaturePrefsStore.batch751.v754console
-    FeaturePrefsStore.batch751.v754console = !current
-    AppToast.show(this, "console: ${if (!current) "ON" else "OFF"}")
+// v764: crop mode
+internal fun PlayerActivity.showV764CropToggle() {
+    val current = FeaturePrefsStore.batch761.v764crop
+    FeaturePrefsStore.batch761.v764crop = !current
+    AppToast.show(this, "crop: ${if (!current) "ON" else "OFF"}")
 }
 
-// v754: constant mode
-internal fun PlayerActivity.showV754ConstantToggle() {
-    val current = FeaturePrefsStore.batch751.v754constant
-    FeaturePrefsStore.batch751.v754constant = !current
-    AppToast.show(this, "constant: ${if (!current) "ON" else "OFF"}")
+// v764: cross mode
+internal fun PlayerActivity.showV764CrossToggle() {
+    val current = FeaturePrefsStore.batch761.v764cross
+    FeaturePrefsStore.batch761.v764cross = !current
+    AppToast.show(this, "cross: ${if (!current) "ON" else "OFF"}")
 }
 
-// v754: constraint mode
-internal fun PlayerActivity.showV754ConstraintToggle() {
-    val current = FeaturePrefsStore.batch751.v754constraint
-    FeaturePrefsStore.batch751.v754constraint = !current
-    AppToast.show(this, "constraint: ${if (!current) "ON" else "OFF"}")
+// v764: crypto mode
+internal fun PlayerActivity.showV764CryptoToggle() {
+    val current = FeaturePrefsStore.batch761.v764crypto
+    FeaturePrefsStore.batch761.v764crypto = !current
+    AppToast.show(this, "crypto: ${if (!current) "ON" else "OFF"}")
 }
 
-// v754: consume mode
-internal fun PlayerActivity.showV754ConsumeToggle() {
-    val current = FeaturePrefsStore.batch751.v754consume
-    FeaturePrefsStore.batch751.v754consume = !current
-    AppToast.show(this, "consume: ${if (!current) "ON" else "OFF"}")
+// v764: cursor mode
+internal fun PlayerActivity.showV764CursorToggle() {
+    val current = FeaturePrefsStore.batch761.v764cursor
+    FeaturePrefsStore.batch761.v764cursor = !current
+    AppToast.show(this, "cursor: ${if (!current) "ON" else "OFF"}")
 }
 
-// v754: content mode
-internal fun PlayerActivity.showV754ContentToggle() {
-    val current = FeaturePrefsStore.batch751.v754content
-    FeaturePrefsStore.batch751.v754content = !current
-    AppToast.show(this, "content: ${if (!current) "ON" else "OFF"}")
+// v764: curve mode
+internal fun PlayerActivity.showV764CurveToggle() {
+    val current = FeaturePrefsStore.batch761.v764curve
+    FeaturePrefsStore.batch761.v764curve = !current
+    AppToast.show(this, "curve: ${if (!current) "ON" else "OFF"}")
 }
 
-// v755: compile mode
-internal fun PlayerActivity.showV755CompileToggle() {
-    val current = FeaturePrefsStore.batch751.v755compile
-    FeaturePrefsStore.batch751.v755compile = !current
-    AppToast.show(this, "compile: ${if (!current) "ON" else "OFF"}")
+// v765: contract mode
+internal fun PlayerActivity.showV765ContractToggle() {
+    val current = FeaturePrefsStore.batch761.v765contract
+    FeaturePrefsStore.batch761.v765contract = !current
+    AppToast.show(this, "contract: ${if (!current) "ON" else "OFF"}")
 }
 
-// v755: complete mode
-internal fun PlayerActivity.showV755CompleteToggle() {
-    val current = FeaturePrefsStore.batch751.v755complete
-    FeaturePrefsStore.batch751.v755complete = !current
-    AppToast.show(this, "complete: ${if (!current) "ON" else "OFF"}")
+// v765: control mode
+internal fun PlayerActivity.showV765ControlToggle() {
+    val current = FeaturePrefsStore.batch761.v765control
+    FeaturePrefsStore.batch761.v765control = !current
+    AppToast.show(this, "control: ${if (!current) "ON" else "OFF"}")
 }
 
-// v755: compress mode
-internal fun PlayerActivity.showV755CompressToggle() {
-    val current = FeaturePrefsStore.batch751.v755compress
-    FeaturePrefsStore.batch751.v755compress = !current
-    AppToast.show(this, "compress: ${if (!current) "ON" else "OFF"}")
+// v765: convert mode
+internal fun PlayerActivity.showV765ConvertToggle() {
+    val current = FeaturePrefsStore.batch761.v765convert
+    FeaturePrefsStore.batch761.v765convert = !current
+    AppToast.show(this, "convert: ${if (!current) "ON" else "OFF"}")
 }
 
-// v755: compute mode
-internal fun PlayerActivity.showV755ComputeToggle() {
-    val current = FeaturePrefsStore.batch751.v755compute
-    FeaturePrefsStore.batch751.v755compute = !current
-    AppToast.show(this, "compute: ${if (!current) "ON" else "OFF"}")
+// v765: coordinate mode
+internal fun PlayerActivity.showV765CoordinateToggle() {
+    val current = FeaturePrefsStore.batch761.v765coordinate
+    FeaturePrefsStore.batch761.v765coordinate = !current
+    AppToast.show(this, "coordinate: ${if (!current) "ON" else "OFF"}")
 }
 
-// v755: concat mode
-internal fun PlayerActivity.showV755ConcatToggle() {
-    val current = FeaturePrefsStore.batch751.v755concat
-    FeaturePrefsStore.batch751.v755concat = !current
-    AppToast.show(this, "concat: ${if (!current) "ON" else "OFF"}")
+// v765: copy mode
+internal fun PlayerActivity.showV765CopyToggle() {
+    val current = FeaturePrefsStore.batch761.v765copy
+    FeaturePrefsStore.batch761.v765copy = !current
+    AppToast.show(this, "copy: ${if (!current) "ON" else "OFF"}")
 }
 
-// v755: concurrent level
-internal fun PlayerActivity.showV755ConcurrentDialog() {
+// v765: core level
+internal fun PlayerActivity.showV765CoreDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v755concurrent).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v765core).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "concurrent level",
+        title = "core level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v755concurrent = value
-        AppToast.show(this, "concurrent: $value")
+        FeaturePrefsStore.batch761.v765core = value
+        AppToast.show(this, "core: $value")
     }
 }
 
-// v755: condition level
-internal fun PlayerActivity.showV755ConditionDialog() {
+// v765: count level
+internal fun PlayerActivity.showV765CountDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v755condition).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v765count).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "condition level",
+        title = "count level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v755condition = value
-        AppToast.show(this, "condition: $value")
+        FeaturePrefsStore.batch761.v765count = value
+        AppToast.show(this, "count: $value")
     }
 }
 
-// v755: configure level
-internal fun PlayerActivity.showV755ConfigureDialog() {
+// v765: cover level
+internal fun PlayerActivity.showV765CoverDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v755configure).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v765cover).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "configure level",
+        title = "cover level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v755configure = value
-        AppToast.show(this, "configure: $value")
+        FeaturePrefsStore.batch761.v765cover = value
+        AppToast.show(this, "cover: $value")
     }
 }
 
-// v755: confirm level
-internal fun PlayerActivity.showV755ConfirmDialog() {
+// v765: crash level
+internal fun PlayerActivity.showV765CrashDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v755confirm).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v765crash).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "confirm level",
+        title = "crash level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v755confirm = value
-        AppToast.show(this, "confirm: $value")
+        FeaturePrefsStore.batch761.v765crash = value
+        AppToast.show(this, "crash: $value")
     }
 }
 
-// v755: connect level
-internal fun PlayerActivity.showV755ConnectDialog() {
+// v765: create level
+internal fun PlayerActivity.showV765CreateDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v755connect).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v765create).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "connect level",
+        title = "create level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v755connect = value
-        AppToast.show(this, "connect: $value")
+        FeaturePrefsStore.batch761.v765create = value
+        AppToast.show(this, "create: $value")
     }
 }
 
-// v755: console mode
-internal fun PlayerActivity.showV755ConsoleToggle() {
-    val current = FeaturePrefsStore.batch751.v755console
-    FeaturePrefsStore.batch751.v755console = !current
-    AppToast.show(this, "console: ${if (!current) "ON" else "OFF"}")
+// v765: crop mode
+internal fun PlayerActivity.showV765CropToggle() {
+    val current = FeaturePrefsStore.batch761.v765crop
+    FeaturePrefsStore.batch761.v765crop = !current
+    AppToast.show(this, "crop: ${if (!current) "ON" else "OFF"}")
 }
 
-// v755: constant mode
-internal fun PlayerActivity.showV755ConstantToggle() {
-    val current = FeaturePrefsStore.batch751.v755constant
-    FeaturePrefsStore.batch751.v755constant = !current
-    AppToast.show(this, "constant: ${if (!current) "ON" else "OFF"}")
+// v765: cross mode
+internal fun PlayerActivity.showV765CrossToggle() {
+    val current = FeaturePrefsStore.batch761.v765cross
+    FeaturePrefsStore.batch761.v765cross = !current
+    AppToast.show(this, "cross: ${if (!current) "ON" else "OFF"}")
 }
 
-// v755: constraint mode
-internal fun PlayerActivity.showV755ConstraintToggle() {
-    val current = FeaturePrefsStore.batch751.v755constraint
-    FeaturePrefsStore.batch751.v755constraint = !current
-    AppToast.show(this, "constraint: ${if (!current) "ON" else "OFF"}")
+// v765: crypto mode
+internal fun PlayerActivity.showV765CryptoToggle() {
+    val current = FeaturePrefsStore.batch761.v765crypto
+    FeaturePrefsStore.batch761.v765crypto = !current
+    AppToast.show(this, "crypto: ${if (!current) "ON" else "OFF"}")
 }
 
-// v755: consume mode
-internal fun PlayerActivity.showV755ConsumeToggle() {
-    val current = FeaturePrefsStore.batch751.v755consume
-    FeaturePrefsStore.batch751.v755consume = !current
-    AppToast.show(this, "consume: ${if (!current) "ON" else "OFF"}")
+// v765: cursor mode
+internal fun PlayerActivity.showV765CursorToggle() {
+    val current = FeaturePrefsStore.batch761.v765cursor
+    FeaturePrefsStore.batch761.v765cursor = !current
+    AppToast.show(this, "cursor: ${if (!current) "ON" else "OFF"}")
 }
 
-// v755: content mode
-internal fun PlayerActivity.showV755ContentToggle() {
-    val current = FeaturePrefsStore.batch751.v755content
-    FeaturePrefsStore.batch751.v755content = !current
-    AppToast.show(this, "content: ${if (!current) "ON" else "OFF"}")
+// v765: curve mode
+internal fun PlayerActivity.showV765CurveToggle() {
+    val current = FeaturePrefsStore.batch761.v765curve
+    FeaturePrefsStore.batch761.v765curve = !current
+    AppToast.show(this, "curve: ${if (!current) "ON" else "OFF"}")
 }
 
-// v756: compile mode
-internal fun PlayerActivity.showV756CompileToggle() {
-    val current = FeaturePrefsStore.batch751.v756compile
-    FeaturePrefsStore.batch751.v756compile = !current
-    AppToast.show(this, "compile: ${if (!current) "ON" else "OFF"}")
+// v766: contract mode
+internal fun PlayerActivity.showV766ContractToggle() {
+    val current = FeaturePrefsStore.batch761.v766contract
+    FeaturePrefsStore.batch761.v766contract = !current
+    AppToast.show(this, "contract: ${if (!current) "ON" else "OFF"}")
 }
 
-// v756: complete mode
-internal fun PlayerActivity.showV756CompleteToggle() {
-    val current = FeaturePrefsStore.batch751.v756complete
-    FeaturePrefsStore.batch751.v756complete = !current
-    AppToast.show(this, "complete: ${if (!current) "ON" else "OFF"}")
+// v766: control mode
+internal fun PlayerActivity.showV766ControlToggle() {
+    val current = FeaturePrefsStore.batch761.v766control
+    FeaturePrefsStore.batch761.v766control = !current
+    AppToast.show(this, "control: ${if (!current) "ON" else "OFF"}")
 }
 
-// v756: compress mode
-internal fun PlayerActivity.showV756CompressToggle() {
-    val current = FeaturePrefsStore.batch751.v756compress
-    FeaturePrefsStore.batch751.v756compress = !current
-    AppToast.show(this, "compress: ${if (!current) "ON" else "OFF"}")
+// v766: convert mode
+internal fun PlayerActivity.showV766ConvertToggle() {
+    val current = FeaturePrefsStore.batch761.v766convert
+    FeaturePrefsStore.batch761.v766convert = !current
+    AppToast.show(this, "convert: ${if (!current) "ON" else "OFF"}")
 }
 
-// v756: compute mode
-internal fun PlayerActivity.showV756ComputeToggle() {
-    val current = FeaturePrefsStore.batch751.v756compute
-    FeaturePrefsStore.batch751.v756compute = !current
-    AppToast.show(this, "compute: ${if (!current) "ON" else "OFF"}")
+// v766: coordinate mode
+internal fun PlayerActivity.showV766CoordinateToggle() {
+    val current = FeaturePrefsStore.batch761.v766coordinate
+    FeaturePrefsStore.batch761.v766coordinate = !current
+    AppToast.show(this, "coordinate: ${if (!current) "ON" else "OFF"}")
 }
 
-// v756: concat mode
-internal fun PlayerActivity.showV756ConcatToggle() {
-    val current = FeaturePrefsStore.batch751.v756concat
-    FeaturePrefsStore.batch751.v756concat = !current
-    AppToast.show(this, "concat: ${if (!current) "ON" else "OFF"}")
+// v766: copy mode
+internal fun PlayerActivity.showV766CopyToggle() {
+    val current = FeaturePrefsStore.batch761.v766copy
+    FeaturePrefsStore.batch761.v766copy = !current
+    AppToast.show(this, "copy: ${if (!current) "ON" else "OFF"}")
 }
 
-// v756: concurrent level
-internal fun PlayerActivity.showV756ConcurrentDialog() {
+// v766: core level
+internal fun PlayerActivity.showV766CoreDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v756concurrent).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v766core).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "concurrent level",
+        title = "core level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v756concurrent = value
-        AppToast.show(this, "concurrent: $value")
+        FeaturePrefsStore.batch761.v766core = value
+        AppToast.show(this, "core: $value")
     }
 }
 
-// v756: condition level
-internal fun PlayerActivity.showV756ConditionDialog() {
+// v766: count level
+internal fun PlayerActivity.showV766CountDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v756condition).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v766count).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "condition level",
+        title = "count level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v756condition = value
-        AppToast.show(this, "condition: $value")
+        FeaturePrefsStore.batch761.v766count = value
+        AppToast.show(this, "count: $value")
     }
 }
 
-// v756: configure level
-internal fun PlayerActivity.showV756ConfigureDialog() {
+// v766: cover level
+internal fun PlayerActivity.showV766CoverDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v756configure).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v766cover).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "configure level",
+        title = "cover level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v756configure = value
-        AppToast.show(this, "configure: $value")
+        FeaturePrefsStore.batch761.v766cover = value
+        AppToast.show(this, "cover: $value")
     }
 }
 
-// v756: confirm level
-internal fun PlayerActivity.showV756ConfirmDialog() {
+// v766: crash level
+internal fun PlayerActivity.showV766CrashDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v756confirm).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v766crash).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "confirm level",
+        title = "crash level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v756confirm = value
-        AppToast.show(this, "confirm: $value")
+        FeaturePrefsStore.batch761.v766crash = value
+        AppToast.show(this, "crash: $value")
     }
 }
 
-// v756: connect level
-internal fun PlayerActivity.showV756ConnectDialog() {
+// v766: create level
+internal fun PlayerActivity.showV766CreateDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v756connect).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v766create).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "connect level",
+        title = "create level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v756connect = value
-        AppToast.show(this, "connect: $value")
+        FeaturePrefsStore.batch761.v766create = value
+        AppToast.show(this, "create: $value")
     }
 }
 
-// v756: console mode
-internal fun PlayerActivity.showV756ConsoleToggle() {
-    val current = FeaturePrefsStore.batch751.v756console
-    FeaturePrefsStore.batch751.v756console = !current
-    AppToast.show(this, "console: ${if (!current) "ON" else "OFF"}")
+// v766: crop mode
+internal fun PlayerActivity.showV766CropToggle() {
+    val current = FeaturePrefsStore.batch761.v766crop
+    FeaturePrefsStore.batch761.v766crop = !current
+    AppToast.show(this, "crop: ${if (!current) "ON" else "OFF"}")
 }
 
-// v756: constant mode
-internal fun PlayerActivity.showV756ConstantToggle() {
-    val current = FeaturePrefsStore.batch751.v756constant
-    FeaturePrefsStore.batch751.v756constant = !current
-    AppToast.show(this, "constant: ${if (!current) "ON" else "OFF"}")
+// v766: cross mode
+internal fun PlayerActivity.showV766CrossToggle() {
+    val current = FeaturePrefsStore.batch761.v766cross
+    FeaturePrefsStore.batch761.v766cross = !current
+    AppToast.show(this, "cross: ${if (!current) "ON" else "OFF"}")
 }
 
-// v756: constraint mode
-internal fun PlayerActivity.showV756ConstraintToggle() {
-    val current = FeaturePrefsStore.batch751.v756constraint
-    FeaturePrefsStore.batch751.v756constraint = !current
-    AppToast.show(this, "constraint: ${if (!current) "ON" else "OFF"}")
+// v766: crypto mode
+internal fun PlayerActivity.showV766CryptoToggle() {
+    val current = FeaturePrefsStore.batch761.v766crypto
+    FeaturePrefsStore.batch761.v766crypto = !current
+    AppToast.show(this, "crypto: ${if (!current) "ON" else "OFF"}")
 }
 
-// v756: consume mode
-internal fun PlayerActivity.showV756ConsumeToggle() {
-    val current = FeaturePrefsStore.batch751.v756consume
-    FeaturePrefsStore.batch751.v756consume = !current
-    AppToast.show(this, "consume: ${if (!current) "ON" else "OFF"}")
+// v766: cursor mode
+internal fun PlayerActivity.showV766CursorToggle() {
+    val current = FeaturePrefsStore.batch761.v766cursor
+    FeaturePrefsStore.batch761.v766cursor = !current
+    AppToast.show(this, "cursor: ${if (!current) "ON" else "OFF"}")
 }
 
-// v756: content mode
-internal fun PlayerActivity.showV756ContentToggle() {
-    val current = FeaturePrefsStore.batch751.v756content
-    FeaturePrefsStore.batch751.v756content = !current
-    AppToast.show(this, "content: ${if (!current) "ON" else "OFF"}")
+// v766: curve mode
+internal fun PlayerActivity.showV766CurveToggle() {
+    val current = FeaturePrefsStore.batch761.v766curve
+    FeaturePrefsStore.batch761.v766curve = !current
+    AppToast.show(this, "curve: ${if (!current) "ON" else "OFF"}")
 }
 
-// v757: compile mode
-internal fun PlayerActivity.showV757CompileToggle() {
-    val current = FeaturePrefsStore.batch751.v757compile
-    FeaturePrefsStore.batch751.v757compile = !current
-    AppToast.show(this, "compile: ${if (!current) "ON" else "OFF"}")
+// v767: contract mode
+internal fun PlayerActivity.showV767ContractToggle() {
+    val current = FeaturePrefsStore.batch761.v767contract
+    FeaturePrefsStore.batch761.v767contract = !current
+    AppToast.show(this, "contract: ${if (!current) "ON" else "OFF"}")
 }
 
-// v757: complete mode
-internal fun PlayerActivity.showV757CompleteToggle() {
-    val current = FeaturePrefsStore.batch751.v757complete
-    FeaturePrefsStore.batch751.v757complete = !current
-    AppToast.show(this, "complete: ${if (!current) "ON" else "OFF"}")
+// v767: control mode
+internal fun PlayerActivity.showV767ControlToggle() {
+    val current = FeaturePrefsStore.batch761.v767control
+    FeaturePrefsStore.batch761.v767control = !current
+    AppToast.show(this, "control: ${if (!current) "ON" else "OFF"}")
 }
 
-// v757: compress mode
-internal fun PlayerActivity.showV757CompressToggle() {
-    val current = FeaturePrefsStore.batch751.v757compress
-    FeaturePrefsStore.batch751.v757compress = !current
-    AppToast.show(this, "compress: ${if (!current) "ON" else "OFF"}")
+// v767: convert mode
+internal fun PlayerActivity.showV767ConvertToggle() {
+    val current = FeaturePrefsStore.batch761.v767convert
+    FeaturePrefsStore.batch761.v767convert = !current
+    AppToast.show(this, "convert: ${if (!current) "ON" else "OFF"}")
 }
 
-// v757: compute mode
-internal fun PlayerActivity.showV757ComputeToggle() {
-    val current = FeaturePrefsStore.batch751.v757compute
-    FeaturePrefsStore.batch751.v757compute = !current
-    AppToast.show(this, "compute: ${if (!current) "ON" else "OFF"}")
+// v767: coordinate mode
+internal fun PlayerActivity.showV767CoordinateToggle() {
+    val current = FeaturePrefsStore.batch761.v767coordinate
+    FeaturePrefsStore.batch761.v767coordinate = !current
+    AppToast.show(this, "coordinate: ${if (!current) "ON" else "OFF"}")
 }
 
-// v757: concat mode
-internal fun PlayerActivity.showV757ConcatToggle() {
-    val current = FeaturePrefsStore.batch751.v757concat
-    FeaturePrefsStore.batch751.v757concat = !current
-    AppToast.show(this, "concat: ${if (!current) "ON" else "OFF"}")
+// v767: copy mode
+internal fun PlayerActivity.showV767CopyToggle() {
+    val current = FeaturePrefsStore.batch761.v767copy
+    FeaturePrefsStore.batch761.v767copy = !current
+    AppToast.show(this, "copy: ${if (!current) "ON" else "OFF"}")
 }
 
-// v757: concurrent level
-internal fun PlayerActivity.showV757ConcurrentDialog() {
+// v767: core level
+internal fun PlayerActivity.showV767CoreDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v757concurrent).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v767core).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "concurrent level",
+        title = "core level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v757concurrent = value
-        AppToast.show(this, "concurrent: $value")
+        FeaturePrefsStore.batch761.v767core = value
+        AppToast.show(this, "core: $value")
     }
 }
 
-// v757: condition level
-internal fun PlayerActivity.showV757ConditionDialog() {
+// v767: count level
+internal fun PlayerActivity.showV767CountDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v757condition).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v767count).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "condition level",
+        title = "count level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v757condition = value
-        AppToast.show(this, "condition: $value")
+        FeaturePrefsStore.batch761.v767count = value
+        AppToast.show(this, "count: $value")
     }
 }
 
-// v757: configure level
-internal fun PlayerActivity.showV757ConfigureDialog() {
+// v767: cover level
+internal fun PlayerActivity.showV767CoverDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v757configure).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v767cover).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "configure level",
+        title = "cover level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v757configure = value
-        AppToast.show(this, "configure: $value")
+        FeaturePrefsStore.batch761.v767cover = value
+        AppToast.show(this, "cover: $value")
     }
 }
 
-// v757: confirm level
-internal fun PlayerActivity.showV757ConfirmDialog() {
+// v767: crash level
+internal fun PlayerActivity.showV767CrashDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v757confirm).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v767crash).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "confirm level",
+        title = "crash level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v757confirm = value
-        AppToast.show(this, "confirm: $value")
+        FeaturePrefsStore.batch761.v767crash = value
+        AppToast.show(this, "crash: $value")
     }
 }
 
-// v757: connect level
-internal fun PlayerActivity.showV757ConnectDialog() {
+// v767: create level
+internal fun PlayerActivity.showV767CreateDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v757connect).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v767create).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "connect level",
+        title = "create level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v757connect = value
-        AppToast.show(this, "connect: $value")
+        FeaturePrefsStore.batch761.v767create = value
+        AppToast.show(this, "create: $value")
     }
 }
 
-// v757: console mode
-internal fun PlayerActivity.showV757ConsoleToggle() {
-    val current = FeaturePrefsStore.batch751.v757console
-    FeaturePrefsStore.batch751.v757console = !current
-    AppToast.show(this, "console: ${if (!current) "ON" else "OFF"}")
+// v767: crop mode
+internal fun PlayerActivity.showV767CropToggle() {
+    val current = FeaturePrefsStore.batch761.v767crop
+    FeaturePrefsStore.batch761.v767crop = !current
+    AppToast.show(this, "crop: ${if (!current) "ON" else "OFF"}")
 }
 
-// v757: constant mode
-internal fun PlayerActivity.showV757ConstantToggle() {
-    val current = FeaturePrefsStore.batch751.v757constant
-    FeaturePrefsStore.batch751.v757constant = !current
-    AppToast.show(this, "constant: ${if (!current) "ON" else "OFF"}")
+// v767: cross mode
+internal fun PlayerActivity.showV767CrossToggle() {
+    val current = FeaturePrefsStore.batch761.v767cross
+    FeaturePrefsStore.batch761.v767cross = !current
+    AppToast.show(this, "cross: ${if (!current) "ON" else "OFF"}")
 }
 
-// v757: constraint mode
-internal fun PlayerActivity.showV757ConstraintToggle() {
-    val current = FeaturePrefsStore.batch751.v757constraint
-    FeaturePrefsStore.batch751.v757constraint = !current
-    AppToast.show(this, "constraint: ${if (!current) "ON" else "OFF"}")
+// v767: crypto mode
+internal fun PlayerActivity.showV767CryptoToggle() {
+    val current = FeaturePrefsStore.batch761.v767crypto
+    FeaturePrefsStore.batch761.v767crypto = !current
+    AppToast.show(this, "crypto: ${if (!current) "ON" else "OFF"}")
 }
 
-// v757: consume mode
-internal fun PlayerActivity.showV757ConsumeToggle() {
-    val current = FeaturePrefsStore.batch751.v757consume
-    FeaturePrefsStore.batch751.v757consume = !current
-    AppToast.show(this, "consume: ${if (!current) "ON" else "OFF"}")
+// v767: cursor mode
+internal fun PlayerActivity.showV767CursorToggle() {
+    val current = FeaturePrefsStore.batch761.v767cursor
+    FeaturePrefsStore.batch761.v767cursor = !current
+    AppToast.show(this, "cursor: ${if (!current) "ON" else "OFF"}")
 }
 
-// v757: content mode
-internal fun PlayerActivity.showV757ContentToggle() {
-    val current = FeaturePrefsStore.batch751.v757content
-    FeaturePrefsStore.batch751.v757content = !current
-    AppToast.show(this, "content: ${if (!current) "ON" else "OFF"}")
+// v767: curve mode
+internal fun PlayerActivity.showV767CurveToggle() {
+    val current = FeaturePrefsStore.batch761.v767curve
+    FeaturePrefsStore.batch761.v767curve = !current
+    AppToast.show(this, "curve: ${if (!current) "ON" else "OFF"}")
 }
 
-// v758: compile mode
-internal fun PlayerActivity.showV758CompileToggle() {
-    val current = FeaturePrefsStore.batch751.v758compile
-    FeaturePrefsStore.batch751.v758compile = !current
-    AppToast.show(this, "compile: ${if (!current) "ON" else "OFF"}")
+// v768: contract mode
+internal fun PlayerActivity.showV768ContractToggle() {
+    val current = FeaturePrefsStore.batch761.v768contract
+    FeaturePrefsStore.batch761.v768contract = !current
+    AppToast.show(this, "contract: ${if (!current) "ON" else "OFF"}")
 }
 
-// v758: complete mode
-internal fun PlayerActivity.showV758CompleteToggle() {
-    val current = FeaturePrefsStore.batch751.v758complete
-    FeaturePrefsStore.batch751.v758complete = !current
-    AppToast.show(this, "complete: ${if (!current) "ON" else "OFF"}")
+// v768: control mode
+internal fun PlayerActivity.showV768ControlToggle() {
+    val current = FeaturePrefsStore.batch761.v768control
+    FeaturePrefsStore.batch761.v768control = !current
+    AppToast.show(this, "control: ${if (!current) "ON" else "OFF"}")
 }
 
-// v758: compress mode
-internal fun PlayerActivity.showV758CompressToggle() {
-    val current = FeaturePrefsStore.batch751.v758compress
-    FeaturePrefsStore.batch751.v758compress = !current
-    AppToast.show(this, "compress: ${if (!current) "ON" else "OFF"}")
+// v768: convert mode
+internal fun PlayerActivity.showV768ConvertToggle() {
+    val current = FeaturePrefsStore.batch761.v768convert
+    FeaturePrefsStore.batch761.v768convert = !current
+    AppToast.show(this, "convert: ${if (!current) "ON" else "OFF"}")
 }
 
-// v758: compute mode
-internal fun PlayerActivity.showV758ComputeToggle() {
-    val current = FeaturePrefsStore.batch751.v758compute
-    FeaturePrefsStore.batch751.v758compute = !current
-    AppToast.show(this, "compute: ${if (!current) "ON" else "OFF"}")
+// v768: coordinate mode
+internal fun PlayerActivity.showV768CoordinateToggle() {
+    val current = FeaturePrefsStore.batch761.v768coordinate
+    FeaturePrefsStore.batch761.v768coordinate = !current
+    AppToast.show(this, "coordinate: ${if (!current) "ON" else "OFF"}")
 }
 
-// v758: concat mode
-internal fun PlayerActivity.showV758ConcatToggle() {
-    val current = FeaturePrefsStore.batch751.v758concat
-    FeaturePrefsStore.batch751.v758concat = !current
-    AppToast.show(this, "concat: ${if (!current) "ON" else "OFF"}")
+// v768: copy mode
+internal fun PlayerActivity.showV768CopyToggle() {
+    val current = FeaturePrefsStore.batch761.v768copy
+    FeaturePrefsStore.batch761.v768copy = !current
+    AppToast.show(this, "copy: ${if (!current) "ON" else "OFF"}")
 }
 
-// v758: concurrent level
-internal fun PlayerActivity.showV758ConcurrentDialog() {
+// v768: core level
+internal fun PlayerActivity.showV768CoreDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v758concurrent).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v768core).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "concurrent level",
+        title = "core level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v758concurrent = value
-        AppToast.show(this, "concurrent: $value")
+        FeaturePrefsStore.batch761.v768core = value
+        AppToast.show(this, "core: $value")
     }
 }
 
-// v758: condition level
-internal fun PlayerActivity.showV758ConditionDialog() {
+// v768: count level
+internal fun PlayerActivity.showV768CountDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v758condition).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v768count).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "condition level",
+        title = "count level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v758condition = value
-        AppToast.show(this, "condition: $value")
+        FeaturePrefsStore.batch761.v768count = value
+        AppToast.show(this, "count: $value")
     }
 }
 
-// v758: configure level
-internal fun PlayerActivity.showV758ConfigureDialog() {
+// v768: cover level
+internal fun PlayerActivity.showV768CoverDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v758configure).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v768cover).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "configure level",
+        title = "cover level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v758configure = value
-        AppToast.show(this, "configure: $value")
+        FeaturePrefsStore.batch761.v768cover = value
+        AppToast.show(this, "cover: $value")
     }
 }
 
-// v758: confirm level
-internal fun PlayerActivity.showV758ConfirmDialog() {
+// v768: crash level
+internal fun PlayerActivity.showV768CrashDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v758confirm).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v768crash).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "confirm level",
+        title = "crash level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v758confirm = value
-        AppToast.show(this, "confirm: $value")
+        FeaturePrefsStore.batch761.v768crash = value
+        AppToast.show(this, "crash: $value")
     }
 }
 
-// v758: connect level
-internal fun PlayerActivity.showV758ConnectDialog() {
+// v768: create level
+internal fun PlayerActivity.showV768CreateDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v758connect).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v768create).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "connect level",
+        title = "create level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v758connect = value
-        AppToast.show(this, "connect: $value")
+        FeaturePrefsStore.batch761.v768create = value
+        AppToast.show(this, "create: $value")
     }
 }
 
-// v758: console mode
-internal fun PlayerActivity.showV758ConsoleToggle() {
-    val current = FeaturePrefsStore.batch751.v758console
-    FeaturePrefsStore.batch751.v758console = !current
-    AppToast.show(this, "console: ${if (!current) "ON" else "OFF"}")
+// v768: crop mode
+internal fun PlayerActivity.showV768CropToggle() {
+    val current = FeaturePrefsStore.batch761.v768crop
+    FeaturePrefsStore.batch761.v768crop = !current
+    AppToast.show(this, "crop: ${if (!current) "ON" else "OFF"}")
 }
 
-// v758: constant mode
-internal fun PlayerActivity.showV758ConstantToggle() {
-    val current = FeaturePrefsStore.batch751.v758constant
-    FeaturePrefsStore.batch751.v758constant = !current
-    AppToast.show(this, "constant: ${if (!current) "ON" else "OFF"}")
+// v768: cross mode
+internal fun PlayerActivity.showV768CrossToggle() {
+    val current = FeaturePrefsStore.batch761.v768cross
+    FeaturePrefsStore.batch761.v768cross = !current
+    AppToast.show(this, "cross: ${if (!current) "ON" else "OFF"}")
 }
 
-// v758: constraint mode
-internal fun PlayerActivity.showV758ConstraintToggle() {
-    val current = FeaturePrefsStore.batch751.v758constraint
-    FeaturePrefsStore.batch751.v758constraint = !current
-    AppToast.show(this, "constraint: ${if (!current) "ON" else "OFF"}")
+// v768: crypto mode
+internal fun PlayerActivity.showV768CryptoToggle() {
+    val current = FeaturePrefsStore.batch761.v768crypto
+    FeaturePrefsStore.batch761.v768crypto = !current
+    AppToast.show(this, "crypto: ${if (!current) "ON" else "OFF"}")
 }
 
-// v758: consume mode
-internal fun PlayerActivity.showV758ConsumeToggle() {
-    val current = FeaturePrefsStore.batch751.v758consume
-    FeaturePrefsStore.batch751.v758consume = !current
-    AppToast.show(this, "consume: ${if (!current) "ON" else "OFF"}")
+// v768: cursor mode
+internal fun PlayerActivity.showV768CursorToggle() {
+    val current = FeaturePrefsStore.batch761.v768cursor
+    FeaturePrefsStore.batch761.v768cursor = !current
+    AppToast.show(this, "cursor: ${if (!current) "ON" else "OFF"}")
 }
 
-// v758: content mode
-internal fun PlayerActivity.showV758ContentToggle() {
-    val current = FeaturePrefsStore.batch751.v758content
-    FeaturePrefsStore.batch751.v758content = !current
-    AppToast.show(this, "content: ${if (!current) "ON" else "OFF"}")
+// v768: curve mode
+internal fun PlayerActivity.showV768CurveToggle() {
+    val current = FeaturePrefsStore.batch761.v768curve
+    FeaturePrefsStore.batch761.v768curve = !current
+    AppToast.show(this, "curve: ${if (!current) "ON" else "OFF"}")
 }
 
-// v759: compile mode
-internal fun PlayerActivity.showV759CompileToggle() {
-    val current = FeaturePrefsStore.batch751.v759compile
-    FeaturePrefsStore.batch751.v759compile = !current
-    AppToast.show(this, "compile: ${if (!current) "ON" else "OFF"}")
+// v769: contract mode
+internal fun PlayerActivity.showV769ContractToggle() {
+    val current = FeaturePrefsStore.batch761.v769contract
+    FeaturePrefsStore.batch761.v769contract = !current
+    AppToast.show(this, "contract: ${if (!current) "ON" else "OFF"}")
 }
 
-// v759: complete mode
-internal fun PlayerActivity.showV759CompleteToggle() {
-    val current = FeaturePrefsStore.batch751.v759complete
-    FeaturePrefsStore.batch751.v759complete = !current
-    AppToast.show(this, "complete: ${if (!current) "ON" else "OFF"}")
+// v769: control mode
+internal fun PlayerActivity.showV769ControlToggle() {
+    val current = FeaturePrefsStore.batch761.v769control
+    FeaturePrefsStore.batch761.v769control = !current
+    AppToast.show(this, "control: ${if (!current) "ON" else "OFF"}")
 }
 
-// v759: compress mode
-internal fun PlayerActivity.showV759CompressToggle() {
-    val current = FeaturePrefsStore.batch751.v759compress
-    FeaturePrefsStore.batch751.v759compress = !current
-    AppToast.show(this, "compress: ${if (!current) "ON" else "OFF"}")
+// v769: convert mode
+internal fun PlayerActivity.showV769ConvertToggle() {
+    val current = FeaturePrefsStore.batch761.v769convert
+    FeaturePrefsStore.batch761.v769convert = !current
+    AppToast.show(this, "convert: ${if (!current) "ON" else "OFF"}")
 }
 
-// v759: compute mode
-internal fun PlayerActivity.showV759ComputeToggle() {
-    val current = FeaturePrefsStore.batch751.v759compute
-    FeaturePrefsStore.batch751.v759compute = !current
-    AppToast.show(this, "compute: ${if (!current) "ON" else "OFF"}")
+// v769: coordinate mode
+internal fun PlayerActivity.showV769CoordinateToggle() {
+    val current = FeaturePrefsStore.batch761.v769coordinate
+    FeaturePrefsStore.batch761.v769coordinate = !current
+    AppToast.show(this, "coordinate: ${if (!current) "ON" else "OFF"}")
 }
 
-// v759: concat mode
-internal fun PlayerActivity.showV759ConcatToggle() {
-    val current = FeaturePrefsStore.batch751.v759concat
-    FeaturePrefsStore.batch751.v759concat = !current
-    AppToast.show(this, "concat: ${if (!current) "ON" else "OFF"}")
+// v769: copy mode
+internal fun PlayerActivity.showV769CopyToggle() {
+    val current = FeaturePrefsStore.batch761.v769copy
+    FeaturePrefsStore.batch761.v769copy = !current
+    AppToast.show(this, "copy: ${if (!current) "ON" else "OFF"}")
 }
 
-// v759: concurrent level
-internal fun PlayerActivity.showV759ConcurrentDialog() {
+// v769: core level
+internal fun PlayerActivity.showV769CoreDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v759concurrent).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v769core).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "concurrent level",
+        title = "core level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v759concurrent = value
-        AppToast.show(this, "concurrent: $value")
+        FeaturePrefsStore.batch761.v769core = value
+        AppToast.show(this, "core: $value")
     }
 }
 
-// v759: condition level
-internal fun PlayerActivity.showV759ConditionDialog() {
+// v769: count level
+internal fun PlayerActivity.showV769CountDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v759condition).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v769count).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "condition level",
+        title = "count level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v759condition = value
-        AppToast.show(this, "condition: $value")
+        FeaturePrefsStore.batch761.v769count = value
+        AppToast.show(this, "count: $value")
     }
 }
 
-// v759: configure level
-internal fun PlayerActivity.showV759ConfigureDialog() {
+// v769: cover level
+internal fun PlayerActivity.showV769CoverDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v759configure).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v769cover).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "configure level",
+        title = "cover level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v759configure = value
-        AppToast.show(this, "configure: $value")
+        FeaturePrefsStore.batch761.v769cover = value
+        AppToast.show(this, "cover: $value")
     }
 }
 
-// v759: confirm level
-internal fun PlayerActivity.showV759ConfirmDialog() {
+// v769: crash level
+internal fun PlayerActivity.showV769CrashDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v759confirm).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v769crash).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "confirm level",
+        title = "crash level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v759confirm = value
-        AppToast.show(this, "confirm: $value")
+        FeaturePrefsStore.batch761.v769crash = value
+        AppToast.show(this, "crash: $value")
     }
 }
 
-// v759: connect level
-internal fun PlayerActivity.showV759ConnectDialog() {
+// v769: create level
+internal fun PlayerActivity.showV769CreateDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v759connect).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v769create).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "connect level",
+        title = "create level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v759connect = value
-        AppToast.show(this, "connect: $value")
+        FeaturePrefsStore.batch761.v769create = value
+        AppToast.show(this, "create: $value")
     }
 }
 
-// v759: console mode
-internal fun PlayerActivity.showV759ConsoleToggle() {
-    val current = FeaturePrefsStore.batch751.v759console
-    FeaturePrefsStore.batch751.v759console = !current
-    AppToast.show(this, "console: ${if (!current) "ON" else "OFF"}")
+// v769: crop mode
+internal fun PlayerActivity.showV769CropToggle() {
+    val current = FeaturePrefsStore.batch761.v769crop
+    FeaturePrefsStore.batch761.v769crop = !current
+    AppToast.show(this, "crop: ${if (!current) "ON" else "OFF"}")
 }
 
-// v759: constant mode
-internal fun PlayerActivity.showV759ConstantToggle() {
-    val current = FeaturePrefsStore.batch751.v759constant
-    FeaturePrefsStore.batch751.v759constant = !current
-    AppToast.show(this, "constant: ${if (!current) "ON" else "OFF"}")
+// v769: cross mode
+internal fun PlayerActivity.showV769CrossToggle() {
+    val current = FeaturePrefsStore.batch761.v769cross
+    FeaturePrefsStore.batch761.v769cross = !current
+    AppToast.show(this, "cross: ${if (!current) "ON" else "OFF"}")
 }
 
-// v759: constraint mode
-internal fun PlayerActivity.showV759ConstraintToggle() {
-    val current = FeaturePrefsStore.batch751.v759constraint
-    FeaturePrefsStore.batch751.v759constraint = !current
-    AppToast.show(this, "constraint: ${if (!current) "ON" else "OFF"}")
+// v769: crypto mode
+internal fun PlayerActivity.showV769CryptoToggle() {
+    val current = FeaturePrefsStore.batch761.v769crypto
+    FeaturePrefsStore.batch761.v769crypto = !current
+    AppToast.show(this, "crypto: ${if (!current) "ON" else "OFF"}")
 }
 
-// v759: consume mode
-internal fun PlayerActivity.showV759ConsumeToggle() {
-    val current = FeaturePrefsStore.batch751.v759consume
-    FeaturePrefsStore.batch751.v759consume = !current
-    AppToast.show(this, "consume: ${if (!current) "ON" else "OFF"}")
+// v769: cursor mode
+internal fun PlayerActivity.showV769CursorToggle() {
+    val current = FeaturePrefsStore.batch761.v769cursor
+    FeaturePrefsStore.batch761.v769cursor = !current
+    AppToast.show(this, "cursor: ${if (!current) "ON" else "OFF"}")
 }
 
-// v759: content mode
-internal fun PlayerActivity.showV759ContentToggle() {
-    val current = FeaturePrefsStore.batch751.v759content
-    FeaturePrefsStore.batch751.v759content = !current
-    AppToast.show(this, "content: ${if (!current) "ON" else "OFF"}")
+// v769: curve mode
+internal fun PlayerActivity.showV769CurveToggle() {
+    val current = FeaturePrefsStore.batch761.v769curve
+    FeaturePrefsStore.batch761.v769curve = !current
+    AppToast.show(this, "curve: ${if (!current) "ON" else "OFF"}")
 }
 
-// v760: compile mode
-internal fun PlayerActivity.showV760CompileToggle() {
-    val current = FeaturePrefsStore.batch751.v760compile
-    FeaturePrefsStore.batch751.v760compile = !current
-    AppToast.show(this, "compile: ${if (!current) "ON" else "OFF"}")
+// v770: contract mode
+internal fun PlayerActivity.showV770ContractToggle() {
+    val current = FeaturePrefsStore.batch761.v770contract
+    FeaturePrefsStore.batch761.v770contract = !current
+    AppToast.show(this, "contract: ${if (!current) "ON" else "OFF"}")
 }
 
-// v760: complete mode
-internal fun PlayerActivity.showV760CompleteToggle() {
-    val current = FeaturePrefsStore.batch751.v760complete
-    FeaturePrefsStore.batch751.v760complete = !current
-    AppToast.show(this, "complete: ${if (!current) "ON" else "OFF"}")
+// v770: control mode
+internal fun PlayerActivity.showV770ControlToggle() {
+    val current = FeaturePrefsStore.batch761.v770control
+    FeaturePrefsStore.batch761.v770control = !current
+    AppToast.show(this, "control: ${if (!current) "ON" else "OFF"}")
 }
 
-// v760: compress mode
-internal fun PlayerActivity.showV760CompressToggle() {
-    val current = FeaturePrefsStore.batch751.v760compress
-    FeaturePrefsStore.batch751.v760compress = !current
-    AppToast.show(this, "compress: ${if (!current) "ON" else "OFF"}")
+// v770: convert mode
+internal fun PlayerActivity.showV770ConvertToggle() {
+    val current = FeaturePrefsStore.batch761.v770convert
+    FeaturePrefsStore.batch761.v770convert = !current
+    AppToast.show(this, "convert: ${if (!current) "ON" else "OFF"}")
 }
 
-// v760: compute mode
-internal fun PlayerActivity.showV760ComputeToggle() {
-    val current = FeaturePrefsStore.batch751.v760compute
-    FeaturePrefsStore.batch751.v760compute = !current
-    AppToast.show(this, "compute: ${if (!current) "ON" else "OFF"}")
+// v770: coordinate mode
+internal fun PlayerActivity.showV770CoordinateToggle() {
+    val current = FeaturePrefsStore.batch761.v770coordinate
+    FeaturePrefsStore.batch761.v770coordinate = !current
+    AppToast.show(this, "coordinate: ${if (!current) "ON" else "OFF"}")
 }
 
-// v760: concat mode
-internal fun PlayerActivity.showV760ConcatToggle() {
-    val current = FeaturePrefsStore.batch751.v760concat
-    FeaturePrefsStore.batch751.v760concat = !current
-    AppToast.show(this, "concat: ${if (!current) "ON" else "OFF"}")
+// v770: copy mode
+internal fun PlayerActivity.showV770CopyToggle() {
+    val current = FeaturePrefsStore.batch761.v770copy
+    FeaturePrefsStore.batch761.v770copy = !current
+    AppToast.show(this, "copy: ${if (!current) "ON" else "OFF"}")
 }
 
-// v760: concurrent level
-internal fun PlayerActivity.showV760ConcurrentDialog() {
+// v770: core level
+internal fun PlayerActivity.showV770CoreDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v760concurrent).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v770core).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "concurrent level",
+        title = "core level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v760concurrent = value
-        AppToast.show(this, "concurrent: $value")
+        FeaturePrefsStore.batch761.v770core = value
+        AppToast.show(this, "core: $value")
     }
 }
 
-// v760: condition level
-internal fun PlayerActivity.showV760ConditionDialog() {
+// v770: count level
+internal fun PlayerActivity.showV770CountDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v760condition).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v770count).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "condition level",
+        title = "count level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v760condition = value
-        AppToast.show(this, "condition: $value")
+        FeaturePrefsStore.batch761.v770count = value
+        AppToast.show(this, "count: $value")
     }
 }
 
-// v760: configure level
-internal fun PlayerActivity.showV760ConfigureDialog() {
+// v770: cover level
+internal fun PlayerActivity.showV770CoverDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v760configure).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v770cover).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "configure level",
+        title = "cover level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v760configure = value
-        AppToast.show(this, "configure: $value")
+        FeaturePrefsStore.batch761.v770cover = value
+        AppToast.show(this, "cover: $value")
     }
 }
 
-// v760: confirm level
-internal fun PlayerActivity.showV760ConfirmDialog() {
+// v770: crash level
+internal fun PlayerActivity.showV770CrashDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v760confirm).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v770crash).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "confirm level",
+        title = "crash level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v760confirm = value
-        AppToast.show(this, "confirm: $value")
+        FeaturePrefsStore.batch761.v770crash = value
+        AppToast.show(this, "crash: $value")
     }
 }
 
-// v760: connect level
-internal fun PlayerActivity.showV760ConnectDialog() {
+// v770: create level
+internal fun PlayerActivity.showV770CreateDialog() {
     val options = listOf(0, 1, 2, 3)
-    val currentIndex = options.indexOf(FeaturePrefsStore.batch751.v760connect).takeIf { it >= 0 } ?: 0
+    val currentIndex = options.indexOf(FeaturePrefsStore.batch761.v770create).takeIf { it >= 0 } ?: 0
     showSettingsChoiceDialog(
-        title = "connect level",
+        title = "create level",
         options = options,
         checkedIndex = currentIndex,
         label = { "$it" },
     ) { value ->
-        FeaturePrefsStore.batch751.v760connect = value
-        AppToast.show(this, "connect: $value")
+        FeaturePrefsStore.batch761.v770create = value
+        AppToast.show(this, "create: $value")
     }
 }
 
-// v760: console mode
-internal fun PlayerActivity.showV760ConsoleToggle() {
-    val current = FeaturePrefsStore.batch751.v760console
-    FeaturePrefsStore.batch751.v760console = !current
-    AppToast.show(this, "console: ${if (!current) "ON" else "OFF"}")
+// v770: crop mode
+internal fun PlayerActivity.showV770CropToggle() {
+    val current = FeaturePrefsStore.batch761.v770crop
+    FeaturePrefsStore.batch761.v770crop = !current
+    AppToast.show(this, "crop: ${if (!current) "ON" else "OFF"}")
 }
 
-// v760: constant mode
-internal fun PlayerActivity.showV760ConstantToggle() {
-    val current = FeaturePrefsStore.batch751.v760constant
-    FeaturePrefsStore.batch751.v760constant = !current
-    AppToast.show(this, "constant: ${if (!current) "ON" else "OFF"}")
+// v770: cross mode
+internal fun PlayerActivity.showV770CrossToggle() {
+    val current = FeaturePrefsStore.batch761.v770cross
+    FeaturePrefsStore.batch761.v770cross = !current
+    AppToast.show(this, "cross: ${if (!current) "ON" else "OFF"}")
 }
 
-// v760: constraint mode
-internal fun PlayerActivity.showV760ConstraintToggle() {
-    val current = FeaturePrefsStore.batch751.v760constraint
-    FeaturePrefsStore.batch751.v760constraint = !current
-    AppToast.show(this, "constraint: ${if (!current) "ON" else "OFF"}")
+// v770: crypto mode
+internal fun PlayerActivity.showV770CryptoToggle() {
+    val current = FeaturePrefsStore.batch761.v770crypto
+    FeaturePrefsStore.batch761.v770crypto = !current
+    AppToast.show(this, "crypto: ${if (!current) "ON" else "OFF"}")
 }
 
-// v760: consume mode
-internal fun PlayerActivity.showV760ConsumeToggle() {
-    val current = FeaturePrefsStore.batch751.v760consume
-    FeaturePrefsStore.batch751.v760consume = !current
-    AppToast.show(this, "consume: ${if (!current) "ON" else "OFF"}")
+// v770: cursor mode
+internal fun PlayerActivity.showV770CursorToggle() {
+    val current = FeaturePrefsStore.batch761.v770cursor
+    FeaturePrefsStore.batch761.v770cursor = !current
+    AppToast.show(this, "cursor: ${if (!current) "ON" else "OFF"}")
 }
 
-// v760: content mode
-internal fun PlayerActivity.showV760ContentToggle() {
-    val current = FeaturePrefsStore.batch751.v760content
-    FeaturePrefsStore.batch751.v760content = !current
-    AppToast.show(this, "content: ${if (!current) "ON" else "OFF"}")
+// v770: curve mode
+internal fun PlayerActivity.showV770CurveToggle() {
+    val current = FeaturePrefsStore.batch761.v770curve
+    FeaturePrefsStore.batch761.v770curve = !current
+    AppToast.show(this, "curve: ${if (!current) "ON" else "OFF"}")
 }
 

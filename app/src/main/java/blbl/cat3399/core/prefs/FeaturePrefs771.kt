@@ -5,10 +5,6 @@ import android.content.Context
 class FeaturePrefs771(context: Context) {
     private val prefs = context.getSharedPreferences("feature_prefs_771", Context.MODE_PRIVATE)
 
-    var v771curve: Boolean
-        get() = prefs.getBoolean("v771curve", false)
-        set(value) = prefs.edit().putBoolean("v771curve", value).apply()
-
     var v771custom: Boolean
         get() = prefs.getBoolean("v771custom", false)
         set(value) = prefs.edit().putBoolean("v771custom", value).apply()
@@ -25,9 +21,9 @@ class FeaturePrefs771(context: Context) {
         get() = prefs.getBoolean("v771database", false)
         set(value) = prefs.edit().putBoolean("v771database", value).apply()
 
-    var v771date: Int
-        get() = prefs.getInt("v771date", 0)
-        set(value) = prefs.edit().putInt("v771date", value).apply()
+    var v771date: Boolean
+        get() = prefs.getBoolean("v771date", false)
+        set(value) = prefs.edit().putBoolean("v771date", value).apply()
 
     var v771debug: Int
         get() = prefs.getInt("v771debug", 0)
@@ -45,9 +41,9 @@ class FeaturePrefs771(context: Context) {
         get() = prefs.getInt("v771decode", 0)
         set(value) = prefs.edit().putInt("v771decode", value).apply()
 
-    var v771default: Boolean
-        get() = prefs.getBoolean("v771default", false)
-        set(value) = prefs.edit().putBoolean("v771default", value).apply()
+    var v771default: Int
+        get() = prefs.getInt("v771default", 0)
+        set(value) = prefs.edit().putInt("v771default", value).apply()
 
     var v771defer: Boolean
         get() = prefs.getBoolean("v771defer", false)
@@ -65,9 +61,9 @@ class FeaturePrefs771(context: Context) {
         get() = prefs.getBoolean("v771delete", false)
         set(value) = prefs.edit().putBoolean("v771delete", value).apply()
 
-    var v772curve: Boolean
-        get() = prefs.getBoolean("v772curve", false)
-        set(value) = prefs.edit().putBoolean("v772curve", value).apply()
+    var v771delta: Boolean
+        get() = prefs.getBoolean("v771delta", false)
+        set(value) = prefs.edit().putBoolean("v771delta", value).apply()
 
     var v772custom: Boolean
         get() = prefs.getBoolean("v772custom", false)
@@ -85,9 +81,9 @@ class FeaturePrefs771(context: Context) {
         get() = prefs.getBoolean("v772database", false)
         set(value) = prefs.edit().putBoolean("v772database", value).apply()
 
-    var v772date: Int
-        get() = prefs.getInt("v772date", 0)
-        set(value) = prefs.edit().putInt("v772date", value).apply()
+    var v772date: Boolean
+        get() = prefs.getBoolean("v772date", false)
+        set(value) = prefs.edit().putBoolean("v772date", value).apply()
 
     var v772debug: Int
         get() = prefs.getInt("v772debug", 0)
@@ -105,9 +101,9 @@ class FeaturePrefs771(context: Context) {
         get() = prefs.getInt("v772decode", 0)
         set(value) = prefs.edit().putInt("v772decode", value).apply()
 
-    var v772default: Boolean
-        get() = prefs.getBoolean("v772default", false)
-        set(value) = prefs.edit().putBoolean("v772default", value).apply()
+    var v772default: Int
+        get() = prefs.getInt("v772default", 0)
+        set(value) = prefs.edit().putInt("v772default", value).apply()
 
     var v772defer: Boolean
         get() = prefs.getBoolean("v772defer", false)
@@ -125,9 +121,9 @@ class FeaturePrefs771(context: Context) {
         get() = prefs.getBoolean("v772delete", false)
         set(value) = prefs.edit().putBoolean("v772delete", value).apply()
 
-    var v773curve: Boolean
-        get() = prefs.getBoolean("v773curve", false)
-        set(value) = prefs.edit().putBoolean("v773curve", value).apply()
+    var v772delta: Boolean
+        get() = prefs.getBoolean("v772delta", false)
+        set(value) = prefs.edit().putBoolean("v772delta", value).apply()
 
     var v773custom: Boolean
         get() = prefs.getBoolean("v773custom", false)
@@ -145,9 +141,9 @@ class FeaturePrefs771(context: Context) {
         get() = prefs.getBoolean("v773database", false)
         set(value) = prefs.edit().putBoolean("v773database", value).apply()
 
-    var v773date: Int
-        get() = prefs.getInt("v773date", 0)
-        set(value) = prefs.edit().putInt("v773date", value).apply()
+    var v773date: Boolean
+        get() = prefs.getBoolean("v773date", false)
+        set(value) = prefs.edit().putBoolean("v773date", value).apply()
 
     var v773debug: Int
         get() = prefs.getInt("v773debug", 0)
@@ -165,9 +161,9 @@ class FeaturePrefs771(context: Context) {
         get() = prefs.getInt("v773decode", 0)
         set(value) = prefs.edit().putInt("v773decode", value).apply()
 
-    var v773default: Boolean
-        get() = prefs.getBoolean("v773default", false)
-        set(value) = prefs.edit().putBoolean("v773default", value).apply()
+    var v773default: Int
+        get() = prefs.getInt("v773default", 0)
+        set(value) = prefs.edit().putInt("v773default", value).apply()
 
     var v773defer: Boolean
         get() = prefs.getBoolean("v773defer", false)
@@ -185,9 +181,9 @@ class FeaturePrefs771(context: Context) {
         get() = prefs.getBoolean("v773delete", false)
         set(value) = prefs.edit().putBoolean("v773delete", value).apply()
 
-    var v774curve: Boolean
-        get() = prefs.getBoolean("v774curve", false)
-        set(value) = prefs.edit().putBoolean("v774curve", value).apply()
+    var v773delta: Boolean
+        get() = prefs.getBoolean("v773delta", false)
+        set(value) = prefs.edit().putBoolean("v773delta", value).apply()
 
     var v774custom: Boolean
         get() = prefs.getBoolean("v774custom", false)
@@ -205,9 +201,9 @@ class FeaturePrefs771(context: Context) {
         get() = prefs.getBoolean("v774database", false)
         set(value) = prefs.edit().putBoolean("v774database", value).apply()
 
-    var v774date: Int
-        get() = prefs.getInt("v774date", 0)
-        set(value) = prefs.edit().putInt("v774date", value).apply()
+    var v774date: Boolean
+        get() = prefs.getBoolean("v774date", false)
+        set(value) = prefs.edit().putBoolean("v774date", value).apply()
 
     var v774debug: Int
         get() = prefs.getInt("v774debug", 0)
@@ -225,9 +221,9 @@ class FeaturePrefs771(context: Context) {
         get() = prefs.getInt("v774decode", 0)
         set(value) = prefs.edit().putInt("v774decode", value).apply()
 
-    var v774default: Boolean
-        get() = prefs.getBoolean("v774default", false)
-        set(value) = prefs.edit().putBoolean("v774default", value).apply()
+    var v774default: Int
+        get() = prefs.getInt("v774default", 0)
+        set(value) = prefs.edit().putInt("v774default", value).apply()
 
     var v774defer: Boolean
         get() = prefs.getBoolean("v774defer", false)
@@ -245,9 +241,9 @@ class FeaturePrefs771(context: Context) {
         get() = prefs.getBoolean("v774delete", false)
         set(value) = prefs.edit().putBoolean("v774delete", value).apply()
 
-    var v775curve: Boolean
-        get() = prefs.getBoolean("v775curve", false)
-        set(value) = prefs.edit().putBoolean("v775curve", value).apply()
+    var v774delta: Boolean
+        get() = prefs.getBoolean("v774delta", false)
+        set(value) = prefs.edit().putBoolean("v774delta", value).apply()
 
     var v775custom: Boolean
         get() = prefs.getBoolean("v775custom", false)
@@ -265,9 +261,9 @@ class FeaturePrefs771(context: Context) {
         get() = prefs.getBoolean("v775database", false)
         set(value) = prefs.edit().putBoolean("v775database", value).apply()
 
-    var v775date: Int
-        get() = prefs.getInt("v775date", 0)
-        set(value) = prefs.edit().putInt("v775date", value).apply()
+    var v775date: Boolean
+        get() = prefs.getBoolean("v775date", false)
+        set(value) = prefs.edit().putBoolean("v775date", value).apply()
 
     var v775debug: Int
         get() = prefs.getInt("v775debug", 0)
@@ -285,9 +281,9 @@ class FeaturePrefs771(context: Context) {
         get() = prefs.getInt("v775decode", 0)
         set(value) = prefs.edit().putInt("v775decode", value).apply()
 
-    var v775default: Boolean
-        get() = prefs.getBoolean("v775default", false)
-        set(value) = prefs.edit().putBoolean("v775default", value).apply()
+    var v775default: Int
+        get() = prefs.getInt("v775default", 0)
+        set(value) = prefs.edit().putInt("v775default", value).apply()
 
     var v775defer: Boolean
         get() = prefs.getBoolean("v775defer", false)
@@ -305,9 +301,9 @@ class FeaturePrefs771(context: Context) {
         get() = prefs.getBoolean("v775delete", false)
         set(value) = prefs.edit().putBoolean("v775delete", value).apply()
 
-    var v776curve: Boolean
-        get() = prefs.getBoolean("v776curve", false)
-        set(value) = prefs.edit().putBoolean("v776curve", value).apply()
+    var v775delta: Boolean
+        get() = prefs.getBoolean("v775delta", false)
+        set(value) = prefs.edit().putBoolean("v775delta", value).apply()
 
     var v776custom: Boolean
         get() = prefs.getBoolean("v776custom", false)
@@ -325,9 +321,9 @@ class FeaturePrefs771(context: Context) {
         get() = prefs.getBoolean("v776database", false)
         set(value) = prefs.edit().putBoolean("v776database", value).apply()
 
-    var v776date: Int
-        get() = prefs.getInt("v776date", 0)
-        set(value) = prefs.edit().putInt("v776date", value).apply()
+    var v776date: Boolean
+        get() = prefs.getBoolean("v776date", false)
+        set(value) = prefs.edit().putBoolean("v776date", value).apply()
 
     var v776debug: Int
         get() = prefs.getInt("v776debug", 0)
@@ -345,9 +341,9 @@ class FeaturePrefs771(context: Context) {
         get() = prefs.getInt("v776decode", 0)
         set(value) = prefs.edit().putInt("v776decode", value).apply()
 
-    var v776default: Boolean
-        get() = prefs.getBoolean("v776default", false)
-        set(value) = prefs.edit().putBoolean("v776default", value).apply()
+    var v776default: Int
+        get() = prefs.getInt("v776default", 0)
+        set(value) = prefs.edit().putInt("v776default", value).apply()
 
     var v776defer: Boolean
         get() = prefs.getBoolean("v776defer", false)
@@ -365,9 +361,9 @@ class FeaturePrefs771(context: Context) {
         get() = prefs.getBoolean("v776delete", false)
         set(value) = prefs.edit().putBoolean("v776delete", value).apply()
 
-    var v777curve: Boolean
-        get() = prefs.getBoolean("v777curve", false)
-        set(value) = prefs.edit().putBoolean("v777curve", value).apply()
+    var v776delta: Boolean
+        get() = prefs.getBoolean("v776delta", false)
+        set(value) = prefs.edit().putBoolean("v776delta", value).apply()
 
     var v777custom: Boolean
         get() = prefs.getBoolean("v777custom", false)
@@ -385,9 +381,9 @@ class FeaturePrefs771(context: Context) {
         get() = prefs.getBoolean("v777database", false)
         set(value) = prefs.edit().putBoolean("v777database", value).apply()
 
-    var v777date: Int
-        get() = prefs.getInt("v777date", 0)
-        set(value) = prefs.edit().putInt("v777date", value).apply()
+    var v777date: Boolean
+        get() = prefs.getBoolean("v777date", false)
+        set(value) = prefs.edit().putBoolean("v777date", value).apply()
 
     var v777debug: Int
         get() = prefs.getInt("v777debug", 0)
@@ -405,9 +401,9 @@ class FeaturePrefs771(context: Context) {
         get() = prefs.getInt("v777decode", 0)
         set(value) = prefs.edit().putInt("v777decode", value).apply()
 
-    var v777default: Boolean
-        get() = prefs.getBoolean("v777default", false)
-        set(value) = prefs.edit().putBoolean("v777default", value).apply()
+    var v777default: Int
+        get() = prefs.getInt("v777default", 0)
+        set(value) = prefs.edit().putInt("v777default", value).apply()
 
     var v777defer: Boolean
         get() = prefs.getBoolean("v777defer", false)
@@ -425,9 +421,9 @@ class FeaturePrefs771(context: Context) {
         get() = prefs.getBoolean("v777delete", false)
         set(value) = prefs.edit().putBoolean("v777delete", value).apply()
 
-    var v778curve: Boolean
-        get() = prefs.getBoolean("v778curve", false)
-        set(value) = prefs.edit().putBoolean("v778curve", value).apply()
+    var v777delta: Boolean
+        get() = prefs.getBoolean("v777delta", false)
+        set(value) = prefs.edit().putBoolean("v777delta", value).apply()
 
     var v778custom: Boolean
         get() = prefs.getBoolean("v778custom", false)
@@ -445,9 +441,9 @@ class FeaturePrefs771(context: Context) {
         get() = prefs.getBoolean("v778database", false)
         set(value) = prefs.edit().putBoolean("v778database", value).apply()
 
-    var v778date: Int
-        get() = prefs.getInt("v778date", 0)
-        set(value) = prefs.edit().putInt("v778date", value).apply()
+    var v778date: Boolean
+        get() = prefs.getBoolean("v778date", false)
+        set(value) = prefs.edit().putBoolean("v778date", value).apply()
 
     var v778debug: Int
         get() = prefs.getInt("v778debug", 0)
@@ -465,9 +461,9 @@ class FeaturePrefs771(context: Context) {
         get() = prefs.getInt("v778decode", 0)
         set(value) = prefs.edit().putInt("v778decode", value).apply()
 
-    var v778default: Boolean
-        get() = prefs.getBoolean("v778default", false)
-        set(value) = prefs.edit().putBoolean("v778default", value).apply()
+    var v778default: Int
+        get() = prefs.getInt("v778default", 0)
+        set(value) = prefs.edit().putInt("v778default", value).apply()
 
     var v778defer: Boolean
         get() = prefs.getBoolean("v778defer", false)
@@ -485,9 +481,9 @@ class FeaturePrefs771(context: Context) {
         get() = prefs.getBoolean("v778delete", false)
         set(value) = prefs.edit().putBoolean("v778delete", value).apply()
 
-    var v779curve: Boolean
-        get() = prefs.getBoolean("v779curve", false)
-        set(value) = prefs.edit().putBoolean("v779curve", value).apply()
+    var v778delta: Boolean
+        get() = prefs.getBoolean("v778delta", false)
+        set(value) = prefs.edit().putBoolean("v778delta", value).apply()
 
     var v779custom: Boolean
         get() = prefs.getBoolean("v779custom", false)
@@ -505,9 +501,9 @@ class FeaturePrefs771(context: Context) {
         get() = prefs.getBoolean("v779database", false)
         set(value) = prefs.edit().putBoolean("v779database", value).apply()
 
-    var v779date: Int
-        get() = prefs.getInt("v779date", 0)
-        set(value) = prefs.edit().putInt("v779date", value).apply()
+    var v779date: Boolean
+        get() = prefs.getBoolean("v779date", false)
+        set(value) = prefs.edit().putBoolean("v779date", value).apply()
 
     var v779debug: Int
         get() = prefs.getInt("v779debug", 0)
@@ -525,9 +521,9 @@ class FeaturePrefs771(context: Context) {
         get() = prefs.getInt("v779decode", 0)
         set(value) = prefs.edit().putInt("v779decode", value).apply()
 
-    var v779default: Boolean
-        get() = prefs.getBoolean("v779default", false)
-        set(value) = prefs.edit().putBoolean("v779default", value).apply()
+    var v779default: Int
+        get() = prefs.getInt("v779default", 0)
+        set(value) = prefs.edit().putInt("v779default", value).apply()
 
     var v779defer: Boolean
         get() = prefs.getBoolean("v779defer", false)
@@ -545,9 +541,9 @@ class FeaturePrefs771(context: Context) {
         get() = prefs.getBoolean("v779delete", false)
         set(value) = prefs.edit().putBoolean("v779delete", value).apply()
 
-    var v780curve: Boolean
-        get() = prefs.getBoolean("v780curve", false)
-        set(value) = prefs.edit().putBoolean("v780curve", value).apply()
+    var v779delta: Boolean
+        get() = prefs.getBoolean("v779delta", false)
+        set(value) = prefs.edit().putBoolean("v779delta", value).apply()
 
     var v780custom: Boolean
         get() = prefs.getBoolean("v780custom", false)
@@ -565,9 +561,9 @@ class FeaturePrefs771(context: Context) {
         get() = prefs.getBoolean("v780database", false)
         set(value) = prefs.edit().putBoolean("v780database", value).apply()
 
-    var v780date: Int
-        get() = prefs.getInt("v780date", 0)
-        set(value) = prefs.edit().putInt("v780date", value).apply()
+    var v780date: Boolean
+        get() = prefs.getBoolean("v780date", false)
+        set(value) = prefs.edit().putBoolean("v780date", value).apply()
 
     var v780debug: Int
         get() = prefs.getInt("v780debug", 0)
@@ -585,9 +581,9 @@ class FeaturePrefs771(context: Context) {
         get() = prefs.getInt("v780decode", 0)
         set(value) = prefs.edit().putInt("v780decode", value).apply()
 
-    var v780default: Boolean
-        get() = prefs.getBoolean("v780default", false)
-        set(value) = prefs.edit().putBoolean("v780default", value).apply()
+    var v780default: Int
+        get() = prefs.getInt("v780default", 0)
+        set(value) = prefs.edit().putInt("v780default", value).apply()
 
     var v780defer: Boolean
         get() = prefs.getBoolean("v780defer", false)
@@ -604,5 +600,9 @@ class FeaturePrefs771(context: Context) {
     var v780delete: Boolean
         get() = prefs.getBoolean("v780delete", false)
         set(value) = prefs.edit().putBoolean("v780delete", value).apply()
+
+    var v780delta: Boolean
+        get() = prefs.getBoolean("v780delta", false)
+        set(value) = prefs.edit().putBoolean("v780delta", value).apply()
 
 }

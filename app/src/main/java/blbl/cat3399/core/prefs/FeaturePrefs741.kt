@@ -5,10 +5,6 @@ import android.content.Context
 class FeaturePrefs741(context: Context) {
     private val prefs = context.getSharedPreferences("feature_prefs_741", Context.MODE_PRIVATE)
 
-    var v741clear: Boolean
-        get() = prefs.getBoolean("v741clear", false)
-        set(value) = prefs.edit().putBoolean("v741clear", value).apply()
-
     var v741click: Boolean
         get() = prefs.getBoolean("v741click", false)
         set(value) = prefs.edit().putBoolean("v741click", value).apply()
@@ -25,9 +21,9 @@ class FeaturePrefs741(context: Context) {
         get() = prefs.getBoolean("v741close", false)
         set(value) = prefs.edit().putBoolean("v741close", value).apply()
 
-    var v741cluster: Int
-        get() = prefs.getInt("v741cluster", 0)
-        set(value) = prefs.edit().putInt("v741cluster", value).apply()
+    var v741cluster: Boolean
+        get() = prefs.getBoolean("v741cluster", false)
+        set(value) = prefs.edit().putBoolean("v741cluster", value).apply()
 
     var v741code: Int
         get() = prefs.getInt("v741code", 0)
@@ -45,9 +41,9 @@ class FeaturePrefs741(context: Context) {
         get() = prefs.getInt("v741column", 0)
         set(value) = prefs.edit().putInt("v741column", value).apply()
 
-    var v741combine: Boolean
-        get() = prefs.getBoolean("v741combine", false)
-        set(value) = prefs.edit().putBoolean("v741combine", value).apply()
+    var v741combine: Int
+        get() = prefs.getInt("v741combine", 0)
+        set(value) = prefs.edit().putInt("v741combine", value).apply()
 
     var v741command: Boolean
         get() = prefs.getBoolean("v741command", false)
@@ -65,9 +61,9 @@ class FeaturePrefs741(context: Context) {
         get() = prefs.getBoolean("v741compare", false)
         set(value) = prefs.edit().putBoolean("v741compare", value).apply()
 
-    var v742clear: Boolean
-        get() = prefs.getBoolean("v742clear", false)
-        set(value) = prefs.edit().putBoolean("v742clear", value).apply()
+    var v741compile: Boolean
+        get() = prefs.getBoolean("v741compile", false)
+        set(value) = prefs.edit().putBoolean("v741compile", value).apply()
 
     var v742click: Boolean
         get() = prefs.getBoolean("v742click", false)
@@ -85,9 +81,9 @@ class FeaturePrefs741(context: Context) {
         get() = prefs.getBoolean("v742close", false)
         set(value) = prefs.edit().putBoolean("v742close", value).apply()
 
-    var v742cluster: Int
-        get() = prefs.getInt("v742cluster", 0)
-        set(value) = prefs.edit().putInt("v742cluster", value).apply()
+    var v742cluster: Boolean
+        get() = prefs.getBoolean("v742cluster", false)
+        set(value) = prefs.edit().putBoolean("v742cluster", value).apply()
 
     var v742code: Int
         get() = prefs.getInt("v742code", 0)
@@ -105,9 +101,9 @@ class FeaturePrefs741(context: Context) {
         get() = prefs.getInt("v742column", 0)
         set(value) = prefs.edit().putInt("v742column", value).apply()
 
-    var v742combine: Boolean
-        get() = prefs.getBoolean("v742combine", false)
-        set(value) = prefs.edit().putBoolean("v742combine", value).apply()
+    var v742combine: Int
+        get() = prefs.getInt("v742combine", 0)
+        set(value) = prefs.edit().putInt("v742combine", value).apply()
 
     var v742command: Boolean
         get() = prefs.getBoolean("v742command", false)
@@ -125,9 +121,9 @@ class FeaturePrefs741(context: Context) {
         get() = prefs.getBoolean("v742compare", false)
         set(value) = prefs.edit().putBoolean("v742compare", value).apply()
 
-    var v743clear: Boolean
-        get() = prefs.getBoolean("v743clear", false)
-        set(value) = prefs.edit().putBoolean("v743clear", value).apply()
+    var v742compile: Boolean
+        get() = prefs.getBoolean("v742compile", false)
+        set(value) = prefs.edit().putBoolean("v742compile", value).apply()
 
     var v743click: Boolean
         get() = prefs.getBoolean("v743click", false)
@@ -145,9 +141,9 @@ class FeaturePrefs741(context: Context) {
         get() = prefs.getBoolean("v743close", false)
         set(value) = prefs.edit().putBoolean("v743close", value).apply()
 
-    var v743cluster: Int
-        get() = prefs.getInt("v743cluster", 0)
-        set(value) = prefs.edit().putInt("v743cluster", value).apply()
+    var v743cluster: Boolean
+        get() = prefs.getBoolean("v743cluster", false)
+        set(value) = prefs.edit().putBoolean("v743cluster", value).apply()
 
     var v743code: Int
         get() = prefs.getInt("v743code", 0)
@@ -165,9 +161,9 @@ class FeaturePrefs741(context: Context) {
         get() = prefs.getInt("v743column", 0)
         set(value) = prefs.edit().putInt("v743column", value).apply()
 
-    var v743combine: Boolean
-        get() = prefs.getBoolean("v743combine", false)
-        set(value) = prefs.edit().putBoolean("v743combine", value).apply()
+    var v743combine: Int
+        get() = prefs.getInt("v743combine", 0)
+        set(value) = prefs.edit().putInt("v743combine", value).apply()
 
     var v743command: Boolean
         get() = prefs.getBoolean("v743command", false)
@@ -185,9 +181,9 @@ class FeaturePrefs741(context: Context) {
         get() = prefs.getBoolean("v743compare", false)
         set(value) = prefs.edit().putBoolean("v743compare", value).apply()
 
-    var v744clear: Boolean
-        get() = prefs.getBoolean("v744clear", false)
-        set(value) = prefs.edit().putBoolean("v744clear", value).apply()
+    var v743compile: Boolean
+        get() = prefs.getBoolean("v743compile", false)
+        set(value) = prefs.edit().putBoolean("v743compile", value).apply()
 
     var v744click: Boolean
         get() = prefs.getBoolean("v744click", false)
@@ -205,9 +201,9 @@ class FeaturePrefs741(context: Context) {
         get() = prefs.getBoolean("v744close", false)
         set(value) = prefs.edit().putBoolean("v744close", value).apply()
 
-    var v744cluster: Int
-        get() = prefs.getInt("v744cluster", 0)
-        set(value) = prefs.edit().putInt("v744cluster", value).apply()
+    var v744cluster: Boolean
+        get() = prefs.getBoolean("v744cluster", false)
+        set(value) = prefs.edit().putBoolean("v744cluster", value).apply()
 
     var v744code: Int
         get() = prefs.getInt("v744code", 0)
@@ -225,9 +221,9 @@ class FeaturePrefs741(context: Context) {
         get() = prefs.getInt("v744column", 0)
         set(value) = prefs.edit().putInt("v744column", value).apply()
 
-    var v744combine: Boolean
-        get() = prefs.getBoolean("v744combine", false)
-        set(value) = prefs.edit().putBoolean("v744combine", value).apply()
+    var v744combine: Int
+        get() = prefs.getInt("v744combine", 0)
+        set(value) = prefs.edit().putInt("v744combine", value).apply()
 
     var v744command: Boolean
         get() = prefs.getBoolean("v744command", false)
@@ -245,9 +241,9 @@ class FeaturePrefs741(context: Context) {
         get() = prefs.getBoolean("v744compare", false)
         set(value) = prefs.edit().putBoolean("v744compare", value).apply()
 
-    var v745clear: Boolean
-        get() = prefs.getBoolean("v745clear", false)
-        set(value) = prefs.edit().putBoolean("v745clear", value).apply()
+    var v744compile: Boolean
+        get() = prefs.getBoolean("v744compile", false)
+        set(value) = prefs.edit().putBoolean("v744compile", value).apply()
 
     var v745click: Boolean
         get() = prefs.getBoolean("v745click", false)
@@ -265,9 +261,9 @@ class FeaturePrefs741(context: Context) {
         get() = prefs.getBoolean("v745close", false)
         set(value) = prefs.edit().putBoolean("v745close", value).apply()
 
-    var v745cluster: Int
-        get() = prefs.getInt("v745cluster", 0)
-        set(value) = prefs.edit().putInt("v745cluster", value).apply()
+    var v745cluster: Boolean
+        get() = prefs.getBoolean("v745cluster", false)
+        set(value) = prefs.edit().putBoolean("v745cluster", value).apply()
 
     var v745code: Int
         get() = prefs.getInt("v745code", 0)
@@ -285,9 +281,9 @@ class FeaturePrefs741(context: Context) {
         get() = prefs.getInt("v745column", 0)
         set(value) = prefs.edit().putInt("v745column", value).apply()
 
-    var v745combine: Boolean
-        get() = prefs.getBoolean("v745combine", false)
-        set(value) = prefs.edit().putBoolean("v745combine", value).apply()
+    var v745combine: Int
+        get() = prefs.getInt("v745combine", 0)
+        set(value) = prefs.edit().putInt("v745combine", value).apply()
 
     var v745command: Boolean
         get() = prefs.getBoolean("v745command", false)
@@ -305,9 +301,9 @@ class FeaturePrefs741(context: Context) {
         get() = prefs.getBoolean("v745compare", false)
         set(value) = prefs.edit().putBoolean("v745compare", value).apply()
 
-    var v746clear: Boolean
-        get() = prefs.getBoolean("v746clear", false)
-        set(value) = prefs.edit().putBoolean("v746clear", value).apply()
+    var v745compile: Boolean
+        get() = prefs.getBoolean("v745compile", false)
+        set(value) = prefs.edit().putBoolean("v745compile", value).apply()
 
     var v746click: Boolean
         get() = prefs.getBoolean("v746click", false)
@@ -325,9 +321,9 @@ class FeaturePrefs741(context: Context) {
         get() = prefs.getBoolean("v746close", false)
         set(value) = prefs.edit().putBoolean("v746close", value).apply()
 
-    var v746cluster: Int
-        get() = prefs.getInt("v746cluster", 0)
-        set(value) = prefs.edit().putInt("v746cluster", value).apply()
+    var v746cluster: Boolean
+        get() = prefs.getBoolean("v746cluster", false)
+        set(value) = prefs.edit().putBoolean("v746cluster", value).apply()
 
     var v746code: Int
         get() = prefs.getInt("v746code", 0)
@@ -345,9 +341,9 @@ class FeaturePrefs741(context: Context) {
         get() = prefs.getInt("v746column", 0)
         set(value) = prefs.edit().putInt("v746column", value).apply()
 
-    var v746combine: Boolean
-        get() = prefs.getBoolean("v746combine", false)
-        set(value) = prefs.edit().putBoolean("v746combine", value).apply()
+    var v746combine: Int
+        get() = prefs.getInt("v746combine", 0)
+        set(value) = prefs.edit().putInt("v746combine", value).apply()
 
     var v746command: Boolean
         get() = prefs.getBoolean("v746command", false)
@@ -365,9 +361,9 @@ class FeaturePrefs741(context: Context) {
         get() = prefs.getBoolean("v746compare", false)
         set(value) = prefs.edit().putBoolean("v746compare", value).apply()
 
-    var v747clear: Boolean
-        get() = prefs.getBoolean("v747clear", false)
-        set(value) = prefs.edit().putBoolean("v747clear", value).apply()
+    var v746compile: Boolean
+        get() = prefs.getBoolean("v746compile", false)
+        set(value) = prefs.edit().putBoolean("v746compile", value).apply()
 
     var v747click: Boolean
         get() = prefs.getBoolean("v747click", false)
@@ -385,9 +381,9 @@ class FeaturePrefs741(context: Context) {
         get() = prefs.getBoolean("v747close", false)
         set(value) = prefs.edit().putBoolean("v747close", value).apply()
 
-    var v747cluster: Int
-        get() = prefs.getInt("v747cluster", 0)
-        set(value) = prefs.edit().putInt("v747cluster", value).apply()
+    var v747cluster: Boolean
+        get() = prefs.getBoolean("v747cluster", false)
+        set(value) = prefs.edit().putBoolean("v747cluster", value).apply()
 
     var v747code: Int
         get() = prefs.getInt("v747code", 0)
@@ -405,9 +401,9 @@ class FeaturePrefs741(context: Context) {
         get() = prefs.getInt("v747column", 0)
         set(value) = prefs.edit().putInt("v747column", value).apply()
 
-    var v747combine: Boolean
-        get() = prefs.getBoolean("v747combine", false)
-        set(value) = prefs.edit().putBoolean("v747combine", value).apply()
+    var v747combine: Int
+        get() = prefs.getInt("v747combine", 0)
+        set(value) = prefs.edit().putInt("v747combine", value).apply()
 
     var v747command: Boolean
         get() = prefs.getBoolean("v747command", false)
@@ -425,9 +421,9 @@ class FeaturePrefs741(context: Context) {
         get() = prefs.getBoolean("v747compare", false)
         set(value) = prefs.edit().putBoolean("v747compare", value).apply()
 
-    var v748clear: Boolean
-        get() = prefs.getBoolean("v748clear", false)
-        set(value) = prefs.edit().putBoolean("v748clear", value).apply()
+    var v747compile: Boolean
+        get() = prefs.getBoolean("v747compile", false)
+        set(value) = prefs.edit().putBoolean("v747compile", value).apply()
 
     var v748click: Boolean
         get() = prefs.getBoolean("v748click", false)
@@ -445,9 +441,9 @@ class FeaturePrefs741(context: Context) {
         get() = prefs.getBoolean("v748close", false)
         set(value) = prefs.edit().putBoolean("v748close", value).apply()
 
-    var v748cluster: Int
-        get() = prefs.getInt("v748cluster", 0)
-        set(value) = prefs.edit().putInt("v748cluster", value).apply()
+    var v748cluster: Boolean
+        get() = prefs.getBoolean("v748cluster", false)
+        set(value) = prefs.edit().putBoolean("v748cluster", value).apply()
 
     var v748code: Int
         get() = prefs.getInt("v748code", 0)
@@ -465,9 +461,9 @@ class FeaturePrefs741(context: Context) {
         get() = prefs.getInt("v748column", 0)
         set(value) = prefs.edit().putInt("v748column", value).apply()
 
-    var v748combine: Boolean
-        get() = prefs.getBoolean("v748combine", false)
-        set(value) = prefs.edit().putBoolean("v748combine", value).apply()
+    var v748combine: Int
+        get() = prefs.getInt("v748combine", 0)
+        set(value) = prefs.edit().putInt("v748combine", value).apply()
 
     var v748command: Boolean
         get() = prefs.getBoolean("v748command", false)
@@ -485,9 +481,9 @@ class FeaturePrefs741(context: Context) {
         get() = prefs.getBoolean("v748compare", false)
         set(value) = prefs.edit().putBoolean("v748compare", value).apply()
 
-    var v749clear: Boolean
-        get() = prefs.getBoolean("v749clear", false)
-        set(value) = prefs.edit().putBoolean("v749clear", value).apply()
+    var v748compile: Boolean
+        get() = prefs.getBoolean("v748compile", false)
+        set(value) = prefs.edit().putBoolean("v748compile", value).apply()
 
     var v749click: Boolean
         get() = prefs.getBoolean("v749click", false)
@@ -505,9 +501,9 @@ class FeaturePrefs741(context: Context) {
         get() = prefs.getBoolean("v749close", false)
         set(value) = prefs.edit().putBoolean("v749close", value).apply()
 
-    var v749cluster: Int
-        get() = prefs.getInt("v749cluster", 0)
-        set(value) = prefs.edit().putInt("v749cluster", value).apply()
+    var v749cluster: Boolean
+        get() = prefs.getBoolean("v749cluster", false)
+        set(value) = prefs.edit().putBoolean("v749cluster", value).apply()
 
     var v749code: Int
         get() = prefs.getInt("v749code", 0)
@@ -525,9 +521,9 @@ class FeaturePrefs741(context: Context) {
         get() = prefs.getInt("v749column", 0)
         set(value) = prefs.edit().putInt("v749column", value).apply()
 
-    var v749combine: Boolean
-        get() = prefs.getBoolean("v749combine", false)
-        set(value) = prefs.edit().putBoolean("v749combine", value).apply()
+    var v749combine: Int
+        get() = prefs.getInt("v749combine", 0)
+        set(value) = prefs.edit().putInt("v749combine", value).apply()
 
     var v749command: Boolean
         get() = prefs.getBoolean("v749command", false)
@@ -545,9 +541,9 @@ class FeaturePrefs741(context: Context) {
         get() = prefs.getBoolean("v749compare", false)
         set(value) = prefs.edit().putBoolean("v749compare", value).apply()
 
-    var v750clear: Boolean
-        get() = prefs.getBoolean("v750clear", false)
-        set(value) = prefs.edit().putBoolean("v750clear", value).apply()
+    var v749compile: Boolean
+        get() = prefs.getBoolean("v749compile", false)
+        set(value) = prefs.edit().putBoolean("v749compile", value).apply()
 
     var v750click: Boolean
         get() = prefs.getBoolean("v750click", false)
@@ -565,9 +561,9 @@ class FeaturePrefs741(context: Context) {
         get() = prefs.getBoolean("v750close", false)
         set(value) = prefs.edit().putBoolean("v750close", value).apply()
 
-    var v750cluster: Int
-        get() = prefs.getInt("v750cluster", 0)
-        set(value) = prefs.edit().putInt("v750cluster", value).apply()
+    var v750cluster: Boolean
+        get() = prefs.getBoolean("v750cluster", false)
+        set(value) = prefs.edit().putBoolean("v750cluster", value).apply()
 
     var v750code: Int
         get() = prefs.getInt("v750code", 0)
@@ -585,9 +581,9 @@ class FeaturePrefs741(context: Context) {
         get() = prefs.getInt("v750column", 0)
         set(value) = prefs.edit().putInt("v750column", value).apply()
 
-    var v750combine: Boolean
-        get() = prefs.getBoolean("v750combine", false)
-        set(value) = prefs.edit().putBoolean("v750combine", value).apply()
+    var v750combine: Int
+        get() = prefs.getInt("v750combine", 0)
+        set(value) = prefs.edit().putInt("v750combine", value).apply()
 
     var v750command: Boolean
         get() = prefs.getBoolean("v750command", false)
@@ -604,5 +600,9 @@ class FeaturePrefs741(context: Context) {
     var v750compare: Boolean
         get() = prefs.getBoolean("v750compare", false)
         set(value) = prefs.edit().putBoolean("v750compare", value).apply()
+
+    var v750compile: Boolean
+        get() = prefs.getBoolean("v750compile", false)
+        set(value) = prefs.edit().putBoolean("v750compile", value).apply()
 
 }
