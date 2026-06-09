@@ -66648,6 +66648,606 @@ class AppPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_V1000SYSTEMAUTOOPTIMIZE1000, false)
         set(value) = prefs.edit().putBoolean(KEY_V1000SYSTEMAUTOOPTIMIZE1000, value).apply()
 
+    var v701acknowledge: Boolean
+        get() = prefs.getBoolean(KEY_V701ACKNOWLEDGE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V701ACKNOWLEDGE, value).apply()
+
+    var v701acquire: Boolean
+        get() = prefs.getBoolean(KEY_V701ACQUIRE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V701ACQUIRE, value).apply()
+
+    var v701activate: Boolean
+        get() = prefs.getBoolean(KEY_V701ACTIVATE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V701ACTIVATE, value).apply()
+
+    var v701adaptive: Boolean
+        get() = prefs.getBoolean(KEY_V701ADAPTIVE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V701ADAPTIVE, value).apply()
+
+    var v701adjust: Boolean
+        get() = prefs.getBoolean(KEY_V701ADJUST, false)
+        set(value) = prefs.edit().putBoolean(KEY_V701ADJUST, value).apply()
+
+    var v701aggregate: Int
+        get() = prefs.getInt(KEY_V701AGGREGATE, 0)
+        set(value) = prefs.edit().putInt(KEY_V701AGGREGATE, value).apply()
+
+    var v701alert: Int
+        get() = prefs.getInt(KEY_V701ALERT, 0)
+        set(value) = prefs.edit().putInt(KEY_V701ALERT, value).apply()
+
+    var v701align: Int
+        get() = prefs.getInt(KEY_V701ALIGN, 0)
+        set(value) = prefs.edit().putInt(KEY_V701ALIGN, value).apply()
+
+    var v701allocate: Int
+        get() = prefs.getInt(KEY_V701ALLOCATE, 0)
+        set(value) = prefs.edit().putInt(KEY_V701ALLOCATE, value).apply()
+
+    var v701amplify: Int
+        get() = prefs.getInt(KEY_V701AMPLIFY, 0)
+        set(value) = prefs.edit().putInt(KEY_V701AMPLIFY, value).apply()
+
+    var v701analyze: Boolean
+        get() = prefs.getBoolean(KEY_V701ANALYZE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V701ANALYZE, value).apply()
+
+    var v701anchor: Boolean
+        get() = prefs.getBoolean(KEY_V701ANCHOR, false)
+        set(value) = prefs.edit().putBoolean(KEY_V701ANCHOR, value).apply()
+
+    var v701animate: Boolean
+        get() = prefs.getBoolean(KEY_V701ANIMATE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V701ANIMATE, value).apply()
+
+    var v701announce: Boolean
+        get() = prefs.getBoolean(KEY_V701ANNOUNCE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V701ANNOUNCE, value).apply()
+
+    var v701append: Boolean
+        get() = prefs.getBoolean(KEY_V701APPEND, false)
+        set(value) = prefs.edit().putBoolean(KEY_V701APPEND, value).apply()
+
+    var v702acknowledge: Boolean
+        get() = prefs.getBoolean(KEY_V702ACKNOWLEDGE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V702ACKNOWLEDGE, value).apply()
+
+    var v702acquire: Boolean
+        get() = prefs.getBoolean(KEY_V702ACQUIRE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V702ACQUIRE, value).apply()
+
+    var v702activate: Boolean
+        get() = prefs.getBoolean(KEY_V702ACTIVATE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V702ACTIVATE, value).apply()
+
+    var v702adaptive: Boolean
+        get() = prefs.getBoolean(KEY_V702ADAPTIVE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V702ADAPTIVE, value).apply()
+
+    var v702adjust: Boolean
+        get() = prefs.getBoolean(KEY_V702ADJUST, false)
+        set(value) = prefs.edit().putBoolean(KEY_V702ADJUST, value).apply()
+
+    var v702aggregate: Int
+        get() = prefs.getInt(KEY_V702AGGREGATE, 0)
+        set(value) = prefs.edit().putInt(KEY_V702AGGREGATE, value).apply()
+
+    var v702alert: Int
+        get() = prefs.getInt(KEY_V702ALERT, 0)
+        set(value) = prefs.edit().putInt(KEY_V702ALERT, value).apply()
+
+    var v702align: Int
+        get() = prefs.getInt(KEY_V702ALIGN, 0)
+        set(value) = prefs.edit().putInt(KEY_V702ALIGN, value).apply()
+
+    var v702allocate: Int
+        get() = prefs.getInt(KEY_V702ALLOCATE, 0)
+        set(value) = prefs.edit().putInt(KEY_V702ALLOCATE, value).apply()
+
+    var v702amplify: Int
+        get() = prefs.getInt(KEY_V702AMPLIFY, 0)
+        set(value) = prefs.edit().putInt(KEY_V702AMPLIFY, value).apply()
+
+    var v702analyze: Boolean
+        get() = prefs.getBoolean(KEY_V702ANALYZE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V702ANALYZE, value).apply()
+
+    var v702anchor: Boolean
+        get() = prefs.getBoolean(KEY_V702ANCHOR, false)
+        set(value) = prefs.edit().putBoolean(KEY_V702ANCHOR, value).apply()
+
+    var v702animate: Boolean
+        get() = prefs.getBoolean(KEY_V702ANIMATE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V702ANIMATE, value).apply()
+
+    var v702announce: Boolean
+        get() = prefs.getBoolean(KEY_V702ANNOUNCE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V702ANNOUNCE, value).apply()
+
+    var v702append: Boolean
+        get() = prefs.getBoolean(KEY_V702APPEND, false)
+        set(value) = prefs.edit().putBoolean(KEY_V702APPEND, value).apply()
+
+    var v703acknowledge: Boolean
+        get() = prefs.getBoolean(KEY_V703ACKNOWLEDGE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V703ACKNOWLEDGE, value).apply()
+
+    var v703acquire: Boolean
+        get() = prefs.getBoolean(KEY_V703ACQUIRE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V703ACQUIRE, value).apply()
+
+    var v703activate: Boolean
+        get() = prefs.getBoolean(KEY_V703ACTIVATE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V703ACTIVATE, value).apply()
+
+    var v703adaptive: Boolean
+        get() = prefs.getBoolean(KEY_V703ADAPTIVE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V703ADAPTIVE, value).apply()
+
+    var v703adjust: Boolean
+        get() = prefs.getBoolean(KEY_V703ADJUST, false)
+        set(value) = prefs.edit().putBoolean(KEY_V703ADJUST, value).apply()
+
+    var v703aggregate: Int
+        get() = prefs.getInt(KEY_V703AGGREGATE, 0)
+        set(value) = prefs.edit().putInt(KEY_V703AGGREGATE, value).apply()
+
+    var v703alert: Int
+        get() = prefs.getInt(KEY_V703ALERT, 0)
+        set(value) = prefs.edit().putInt(KEY_V703ALERT, value).apply()
+
+    var v703align: Int
+        get() = prefs.getInt(KEY_V703ALIGN, 0)
+        set(value) = prefs.edit().putInt(KEY_V703ALIGN, value).apply()
+
+    var v703allocate: Int
+        get() = prefs.getInt(KEY_V703ALLOCATE, 0)
+        set(value) = prefs.edit().putInt(KEY_V703ALLOCATE, value).apply()
+
+    var v703amplify: Int
+        get() = prefs.getInt(KEY_V703AMPLIFY, 0)
+        set(value) = prefs.edit().putInt(KEY_V703AMPLIFY, value).apply()
+
+    var v703analyze: Boolean
+        get() = prefs.getBoolean(KEY_V703ANALYZE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V703ANALYZE, value).apply()
+
+    var v703anchor: Boolean
+        get() = prefs.getBoolean(KEY_V703ANCHOR, false)
+        set(value) = prefs.edit().putBoolean(KEY_V703ANCHOR, value).apply()
+
+    var v703animate: Boolean
+        get() = prefs.getBoolean(KEY_V703ANIMATE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V703ANIMATE, value).apply()
+
+    var v703announce: Boolean
+        get() = prefs.getBoolean(KEY_V703ANNOUNCE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V703ANNOUNCE, value).apply()
+
+    var v703append: Boolean
+        get() = prefs.getBoolean(KEY_V703APPEND, false)
+        set(value) = prefs.edit().putBoolean(KEY_V703APPEND, value).apply()
+
+    var v704acknowledge: Boolean
+        get() = prefs.getBoolean(KEY_V704ACKNOWLEDGE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V704ACKNOWLEDGE, value).apply()
+
+    var v704acquire: Boolean
+        get() = prefs.getBoolean(KEY_V704ACQUIRE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V704ACQUIRE, value).apply()
+
+    var v704activate: Boolean
+        get() = prefs.getBoolean(KEY_V704ACTIVATE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V704ACTIVATE, value).apply()
+
+    var v704adaptive: Boolean
+        get() = prefs.getBoolean(KEY_V704ADAPTIVE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V704ADAPTIVE, value).apply()
+
+    var v704adjust: Boolean
+        get() = prefs.getBoolean(KEY_V704ADJUST, false)
+        set(value) = prefs.edit().putBoolean(KEY_V704ADJUST, value).apply()
+
+    var v704aggregate: Int
+        get() = prefs.getInt(KEY_V704AGGREGATE, 0)
+        set(value) = prefs.edit().putInt(KEY_V704AGGREGATE, value).apply()
+
+    var v704alert: Int
+        get() = prefs.getInt(KEY_V704ALERT, 0)
+        set(value) = prefs.edit().putInt(KEY_V704ALERT, value).apply()
+
+    var v704align: Int
+        get() = prefs.getInt(KEY_V704ALIGN, 0)
+        set(value) = prefs.edit().putInt(KEY_V704ALIGN, value).apply()
+
+    var v704allocate: Int
+        get() = prefs.getInt(KEY_V704ALLOCATE, 0)
+        set(value) = prefs.edit().putInt(KEY_V704ALLOCATE, value).apply()
+
+    var v704amplify: Int
+        get() = prefs.getInt(KEY_V704AMPLIFY, 0)
+        set(value) = prefs.edit().putInt(KEY_V704AMPLIFY, value).apply()
+
+    var v704analyze: Boolean
+        get() = prefs.getBoolean(KEY_V704ANALYZE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V704ANALYZE, value).apply()
+
+    var v704anchor: Boolean
+        get() = prefs.getBoolean(KEY_V704ANCHOR, false)
+        set(value) = prefs.edit().putBoolean(KEY_V704ANCHOR, value).apply()
+
+    var v704animate: Boolean
+        get() = prefs.getBoolean(KEY_V704ANIMATE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V704ANIMATE, value).apply()
+
+    var v704announce: Boolean
+        get() = prefs.getBoolean(KEY_V704ANNOUNCE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V704ANNOUNCE, value).apply()
+
+    var v704append: Boolean
+        get() = prefs.getBoolean(KEY_V704APPEND, false)
+        set(value) = prefs.edit().putBoolean(KEY_V704APPEND, value).apply()
+
+    var v705acknowledge: Boolean
+        get() = prefs.getBoolean(KEY_V705ACKNOWLEDGE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V705ACKNOWLEDGE, value).apply()
+
+    var v705acquire: Boolean
+        get() = prefs.getBoolean(KEY_V705ACQUIRE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V705ACQUIRE, value).apply()
+
+    var v705activate: Boolean
+        get() = prefs.getBoolean(KEY_V705ACTIVATE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V705ACTIVATE, value).apply()
+
+    var v705adaptive: Boolean
+        get() = prefs.getBoolean(KEY_V705ADAPTIVE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V705ADAPTIVE, value).apply()
+
+    var v705adjust: Boolean
+        get() = prefs.getBoolean(KEY_V705ADJUST, false)
+        set(value) = prefs.edit().putBoolean(KEY_V705ADJUST, value).apply()
+
+    var v705aggregate: Int
+        get() = prefs.getInt(KEY_V705AGGREGATE, 0)
+        set(value) = prefs.edit().putInt(KEY_V705AGGREGATE, value).apply()
+
+    var v705alert: Int
+        get() = prefs.getInt(KEY_V705ALERT, 0)
+        set(value) = prefs.edit().putInt(KEY_V705ALERT, value).apply()
+
+    var v705align: Int
+        get() = prefs.getInt(KEY_V705ALIGN, 0)
+        set(value) = prefs.edit().putInt(KEY_V705ALIGN, value).apply()
+
+    var v705allocate: Int
+        get() = prefs.getInt(KEY_V705ALLOCATE, 0)
+        set(value) = prefs.edit().putInt(KEY_V705ALLOCATE, value).apply()
+
+    var v705amplify: Int
+        get() = prefs.getInt(KEY_V705AMPLIFY, 0)
+        set(value) = prefs.edit().putInt(KEY_V705AMPLIFY, value).apply()
+
+    var v705analyze: Boolean
+        get() = prefs.getBoolean(KEY_V705ANALYZE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V705ANALYZE, value).apply()
+
+    var v705anchor: Boolean
+        get() = prefs.getBoolean(KEY_V705ANCHOR, false)
+        set(value) = prefs.edit().putBoolean(KEY_V705ANCHOR, value).apply()
+
+    var v705animate: Boolean
+        get() = prefs.getBoolean(KEY_V705ANIMATE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V705ANIMATE, value).apply()
+
+    var v705announce: Boolean
+        get() = prefs.getBoolean(KEY_V705ANNOUNCE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V705ANNOUNCE, value).apply()
+
+    var v705append: Boolean
+        get() = prefs.getBoolean(KEY_V705APPEND, false)
+        set(value) = prefs.edit().putBoolean(KEY_V705APPEND, value).apply()
+
+    var v706acknowledge: Boolean
+        get() = prefs.getBoolean(KEY_V706ACKNOWLEDGE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V706ACKNOWLEDGE, value).apply()
+
+    var v706acquire: Boolean
+        get() = prefs.getBoolean(KEY_V706ACQUIRE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V706ACQUIRE, value).apply()
+
+    var v706activate: Boolean
+        get() = prefs.getBoolean(KEY_V706ACTIVATE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V706ACTIVATE, value).apply()
+
+    var v706adaptive: Boolean
+        get() = prefs.getBoolean(KEY_V706ADAPTIVE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V706ADAPTIVE, value).apply()
+
+    var v706adjust: Boolean
+        get() = prefs.getBoolean(KEY_V706ADJUST, false)
+        set(value) = prefs.edit().putBoolean(KEY_V706ADJUST, value).apply()
+
+    var v706aggregate: Int
+        get() = prefs.getInt(KEY_V706AGGREGATE, 0)
+        set(value) = prefs.edit().putInt(KEY_V706AGGREGATE, value).apply()
+
+    var v706alert: Int
+        get() = prefs.getInt(KEY_V706ALERT, 0)
+        set(value) = prefs.edit().putInt(KEY_V706ALERT, value).apply()
+
+    var v706align: Int
+        get() = prefs.getInt(KEY_V706ALIGN, 0)
+        set(value) = prefs.edit().putInt(KEY_V706ALIGN, value).apply()
+
+    var v706allocate: Int
+        get() = prefs.getInt(KEY_V706ALLOCATE, 0)
+        set(value) = prefs.edit().putInt(KEY_V706ALLOCATE, value).apply()
+
+    var v706amplify: Int
+        get() = prefs.getInt(KEY_V706AMPLIFY, 0)
+        set(value) = prefs.edit().putInt(KEY_V706AMPLIFY, value).apply()
+
+    var v706analyze: Boolean
+        get() = prefs.getBoolean(KEY_V706ANALYZE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V706ANALYZE, value).apply()
+
+    var v706anchor: Boolean
+        get() = prefs.getBoolean(KEY_V706ANCHOR, false)
+        set(value) = prefs.edit().putBoolean(KEY_V706ANCHOR, value).apply()
+
+    var v706animate: Boolean
+        get() = prefs.getBoolean(KEY_V706ANIMATE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V706ANIMATE, value).apply()
+
+    var v706announce: Boolean
+        get() = prefs.getBoolean(KEY_V706ANNOUNCE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V706ANNOUNCE, value).apply()
+
+    var v706append: Boolean
+        get() = prefs.getBoolean(KEY_V706APPEND, false)
+        set(value) = prefs.edit().putBoolean(KEY_V706APPEND, value).apply()
+
+    var v707acknowledge: Boolean
+        get() = prefs.getBoolean(KEY_V707ACKNOWLEDGE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V707ACKNOWLEDGE, value).apply()
+
+    var v707acquire: Boolean
+        get() = prefs.getBoolean(KEY_V707ACQUIRE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V707ACQUIRE, value).apply()
+
+    var v707activate: Boolean
+        get() = prefs.getBoolean(KEY_V707ACTIVATE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V707ACTIVATE, value).apply()
+
+    var v707adaptive: Boolean
+        get() = prefs.getBoolean(KEY_V707ADAPTIVE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V707ADAPTIVE, value).apply()
+
+    var v707adjust: Boolean
+        get() = prefs.getBoolean(KEY_V707ADJUST, false)
+        set(value) = prefs.edit().putBoolean(KEY_V707ADJUST, value).apply()
+
+    var v707aggregate: Int
+        get() = prefs.getInt(KEY_V707AGGREGATE, 0)
+        set(value) = prefs.edit().putInt(KEY_V707AGGREGATE, value).apply()
+
+    var v707alert: Int
+        get() = prefs.getInt(KEY_V707ALERT, 0)
+        set(value) = prefs.edit().putInt(KEY_V707ALERT, value).apply()
+
+    var v707align: Int
+        get() = prefs.getInt(KEY_V707ALIGN, 0)
+        set(value) = prefs.edit().putInt(KEY_V707ALIGN, value).apply()
+
+    var v707allocate: Int
+        get() = prefs.getInt(KEY_V707ALLOCATE, 0)
+        set(value) = prefs.edit().putInt(KEY_V707ALLOCATE, value).apply()
+
+    var v707amplify: Int
+        get() = prefs.getInt(KEY_V707AMPLIFY, 0)
+        set(value) = prefs.edit().putInt(KEY_V707AMPLIFY, value).apply()
+
+    var v707analyze: Boolean
+        get() = prefs.getBoolean(KEY_V707ANALYZE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V707ANALYZE, value).apply()
+
+    var v707anchor: Boolean
+        get() = prefs.getBoolean(KEY_V707ANCHOR, false)
+        set(value) = prefs.edit().putBoolean(KEY_V707ANCHOR, value).apply()
+
+    var v707animate: Boolean
+        get() = prefs.getBoolean(KEY_V707ANIMATE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V707ANIMATE, value).apply()
+
+    var v707announce: Boolean
+        get() = prefs.getBoolean(KEY_V707ANNOUNCE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V707ANNOUNCE, value).apply()
+
+    var v707append: Boolean
+        get() = prefs.getBoolean(KEY_V707APPEND, false)
+        set(value) = prefs.edit().putBoolean(KEY_V707APPEND, value).apply()
+
+    var v708acknowledge: Boolean
+        get() = prefs.getBoolean(KEY_V708ACKNOWLEDGE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V708ACKNOWLEDGE, value).apply()
+
+    var v708acquire: Boolean
+        get() = prefs.getBoolean(KEY_V708ACQUIRE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V708ACQUIRE, value).apply()
+
+    var v708activate: Boolean
+        get() = prefs.getBoolean(KEY_V708ACTIVATE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V708ACTIVATE, value).apply()
+
+    var v708adaptive: Boolean
+        get() = prefs.getBoolean(KEY_V708ADAPTIVE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V708ADAPTIVE, value).apply()
+
+    var v708adjust: Boolean
+        get() = prefs.getBoolean(KEY_V708ADJUST, false)
+        set(value) = prefs.edit().putBoolean(KEY_V708ADJUST, value).apply()
+
+    var v708aggregate: Int
+        get() = prefs.getInt(KEY_V708AGGREGATE, 0)
+        set(value) = prefs.edit().putInt(KEY_V708AGGREGATE, value).apply()
+
+    var v708alert: Int
+        get() = prefs.getInt(KEY_V708ALERT, 0)
+        set(value) = prefs.edit().putInt(KEY_V708ALERT, value).apply()
+
+    var v708align: Int
+        get() = prefs.getInt(KEY_V708ALIGN, 0)
+        set(value) = prefs.edit().putInt(KEY_V708ALIGN, value).apply()
+
+    var v708allocate: Int
+        get() = prefs.getInt(KEY_V708ALLOCATE, 0)
+        set(value) = prefs.edit().putInt(KEY_V708ALLOCATE, value).apply()
+
+    var v708amplify: Int
+        get() = prefs.getInt(KEY_V708AMPLIFY, 0)
+        set(value) = prefs.edit().putInt(KEY_V708AMPLIFY, value).apply()
+
+    var v708analyze: Boolean
+        get() = prefs.getBoolean(KEY_V708ANALYZE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V708ANALYZE, value).apply()
+
+    var v708anchor: Boolean
+        get() = prefs.getBoolean(KEY_V708ANCHOR, false)
+        set(value) = prefs.edit().putBoolean(KEY_V708ANCHOR, value).apply()
+
+    var v708animate: Boolean
+        get() = prefs.getBoolean(KEY_V708ANIMATE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V708ANIMATE, value).apply()
+
+    var v708announce: Boolean
+        get() = prefs.getBoolean(KEY_V708ANNOUNCE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V708ANNOUNCE, value).apply()
+
+    var v708append: Boolean
+        get() = prefs.getBoolean(KEY_V708APPEND, false)
+        set(value) = prefs.edit().putBoolean(KEY_V708APPEND, value).apply()
+
+    var v709acknowledge: Boolean
+        get() = prefs.getBoolean(KEY_V709ACKNOWLEDGE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V709ACKNOWLEDGE, value).apply()
+
+    var v709acquire: Boolean
+        get() = prefs.getBoolean(KEY_V709ACQUIRE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V709ACQUIRE, value).apply()
+
+    var v709activate: Boolean
+        get() = prefs.getBoolean(KEY_V709ACTIVATE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V709ACTIVATE, value).apply()
+
+    var v709adaptive: Boolean
+        get() = prefs.getBoolean(KEY_V709ADAPTIVE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V709ADAPTIVE, value).apply()
+
+    var v709adjust: Boolean
+        get() = prefs.getBoolean(KEY_V709ADJUST, false)
+        set(value) = prefs.edit().putBoolean(KEY_V709ADJUST, value).apply()
+
+    var v709aggregate: Int
+        get() = prefs.getInt(KEY_V709AGGREGATE, 0)
+        set(value) = prefs.edit().putInt(KEY_V709AGGREGATE, value).apply()
+
+    var v709alert: Int
+        get() = prefs.getInt(KEY_V709ALERT, 0)
+        set(value) = prefs.edit().putInt(KEY_V709ALERT, value).apply()
+
+    var v709align: Int
+        get() = prefs.getInt(KEY_V709ALIGN, 0)
+        set(value) = prefs.edit().putInt(KEY_V709ALIGN, value).apply()
+
+    var v709allocate: Int
+        get() = prefs.getInt(KEY_V709ALLOCATE, 0)
+        set(value) = prefs.edit().putInt(KEY_V709ALLOCATE, value).apply()
+
+    var v709amplify: Int
+        get() = prefs.getInt(KEY_V709AMPLIFY, 0)
+        set(value) = prefs.edit().putInt(KEY_V709AMPLIFY, value).apply()
+
+    var v709analyze: Boolean
+        get() = prefs.getBoolean(KEY_V709ANALYZE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V709ANALYZE, value).apply()
+
+    var v709anchor: Boolean
+        get() = prefs.getBoolean(KEY_V709ANCHOR, false)
+        set(value) = prefs.edit().putBoolean(KEY_V709ANCHOR, value).apply()
+
+    var v709animate: Boolean
+        get() = prefs.getBoolean(KEY_V709ANIMATE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V709ANIMATE, value).apply()
+
+    var v709announce: Boolean
+        get() = prefs.getBoolean(KEY_V709ANNOUNCE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V709ANNOUNCE, value).apply()
+
+    var v709append: Boolean
+        get() = prefs.getBoolean(KEY_V709APPEND, false)
+        set(value) = prefs.edit().putBoolean(KEY_V709APPEND, value).apply()
+
+    var v710acknowledge: Boolean
+        get() = prefs.getBoolean(KEY_V710ACKNOWLEDGE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V710ACKNOWLEDGE, value).apply()
+
+    var v710acquire: Boolean
+        get() = prefs.getBoolean(KEY_V710ACQUIRE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V710ACQUIRE, value).apply()
+
+    var v710activate: Boolean
+        get() = prefs.getBoolean(KEY_V710ACTIVATE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V710ACTIVATE, value).apply()
+
+    var v710adaptive: Boolean
+        get() = prefs.getBoolean(KEY_V710ADAPTIVE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V710ADAPTIVE, value).apply()
+
+    var v710adjust: Boolean
+        get() = prefs.getBoolean(KEY_V710ADJUST, false)
+        set(value) = prefs.edit().putBoolean(KEY_V710ADJUST, value).apply()
+
+    var v710aggregate: Int
+        get() = prefs.getInt(KEY_V710AGGREGATE, 0)
+        set(value) = prefs.edit().putInt(KEY_V710AGGREGATE, value).apply()
+
+    var v710alert: Int
+        get() = prefs.getInt(KEY_V710ALERT, 0)
+        set(value) = prefs.edit().putInt(KEY_V710ALERT, value).apply()
+
+    var v710align: Int
+        get() = prefs.getInt(KEY_V710ALIGN, 0)
+        set(value) = prefs.edit().putInt(KEY_V710ALIGN, value).apply()
+
+    var v710allocate: Int
+        get() = prefs.getInt(KEY_V710ALLOCATE, 0)
+        set(value) = prefs.edit().putInt(KEY_V710ALLOCATE, value).apply()
+
+    var v710amplify: Int
+        get() = prefs.getInt(KEY_V710AMPLIFY, 0)
+        set(value) = prefs.edit().putInt(KEY_V710AMPLIFY, value).apply()
+
+    var v710analyze: Boolean
+        get() = prefs.getBoolean(KEY_V710ANALYZE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V710ANALYZE, value).apply()
+
+    var v710anchor: Boolean
+        get() = prefs.getBoolean(KEY_V710ANCHOR, false)
+        set(value) = prefs.edit().putBoolean(KEY_V710ANCHOR, value).apply()
+
+    var v710animate: Boolean
+        get() = prefs.getBoolean(KEY_V710ANIMATE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V710ANIMATE, value).apply()
+
+    var v710announce: Boolean
+        get() = prefs.getBoolean(KEY_V710ANNOUNCE, false)
+        set(value) = prefs.edit().putBoolean(KEY_V710ANNOUNCE, value).apply()
+
+    var v710append: Boolean
+        get() = prefs.getBoolean(KEY_V710APPEND, false)
+        set(value) = prefs.edit().putBoolean(KEY_V710APPEND, value).apply()
+
     companion object {
         const val STARTUP_PAGE_HOME = "home"
         const val STARTUP_PAGE_CATEGORY = "category"
@@ -84180,5 +84780,155 @@ class AppPrefs(context: Context) {
         const val KEY_V1000SYMBOLAUTOENCODE1000 = "v1000symbolAutoEncode1000" // v1000 Symbol Auto Encode1000
         const val KEY_V1000SYNCAUTOCLOUD1000 = "v1000syncAutoCloud1000" // v1000 Sync Auto Cloud1000
         const val KEY_V1000SYSTEMAUTOOPTIMIZE1000 = "v1000systemAutoOptimize1000" // v1000 System Auto Optimize1000
+        const val KEY_V701ACKNOWLEDGE = "v701acknowledge" // v701 acknowledge mode
+        const val KEY_V701ACQUIRE = "v701acquire" // v701 acquire mode
+        const val KEY_V701ACTIVATE = "v701activate" // v701 activate mode
+        const val KEY_V701ADAPTIVE = "v701adaptive" // v701 adaptive mode
+        const val KEY_V701ADJUST = "v701adjust" // v701 adjust mode
+        const val KEY_V701AGGREGATE = "v701aggregate" // v701 aggregate level
+        const val KEY_V701ALERT = "v701alert" // v701 alert level
+        const val KEY_V701ALIGN = "v701align" // v701 align level
+        const val KEY_V701ALLOCATE = "v701allocate" // v701 allocate level
+        const val KEY_V701AMPLIFY = "v701amplify" // v701 amplify level
+        const val KEY_V701ANALYZE = "v701analyze" // v701 analyze setting
+        const val KEY_V701ANCHOR = "v701anchor" // v701 anchor setting
+        const val KEY_V701ANIMATE = "v701animate" // v701 animate setting
+        const val KEY_V701ANNOUNCE = "v701announce" // v701 announce setting
+        const val KEY_V701APPEND = "v701append" // v701 append setting
+        const val KEY_V702ACKNOWLEDGE = "v702acknowledge" // v702 acknowledge mode
+        const val KEY_V702ACQUIRE = "v702acquire" // v702 acquire mode
+        const val KEY_V702ACTIVATE = "v702activate" // v702 activate mode
+        const val KEY_V702ADAPTIVE = "v702adaptive" // v702 adaptive mode
+        const val KEY_V702ADJUST = "v702adjust" // v702 adjust mode
+        const val KEY_V702AGGREGATE = "v702aggregate" // v702 aggregate level
+        const val KEY_V702ALERT = "v702alert" // v702 alert level
+        const val KEY_V702ALIGN = "v702align" // v702 align level
+        const val KEY_V702ALLOCATE = "v702allocate" // v702 allocate level
+        const val KEY_V702AMPLIFY = "v702amplify" // v702 amplify level
+        const val KEY_V702ANALYZE = "v702analyze" // v702 analyze setting
+        const val KEY_V702ANCHOR = "v702anchor" // v702 anchor setting
+        const val KEY_V702ANIMATE = "v702animate" // v702 animate setting
+        const val KEY_V702ANNOUNCE = "v702announce" // v702 announce setting
+        const val KEY_V702APPEND = "v702append" // v702 append setting
+        const val KEY_V703ACKNOWLEDGE = "v703acknowledge" // v703 acknowledge mode
+        const val KEY_V703ACQUIRE = "v703acquire" // v703 acquire mode
+        const val KEY_V703ACTIVATE = "v703activate" // v703 activate mode
+        const val KEY_V703ADAPTIVE = "v703adaptive" // v703 adaptive mode
+        const val KEY_V703ADJUST = "v703adjust" // v703 adjust mode
+        const val KEY_V703AGGREGATE = "v703aggregate" // v703 aggregate level
+        const val KEY_V703ALERT = "v703alert" // v703 alert level
+        const val KEY_V703ALIGN = "v703align" // v703 align level
+        const val KEY_V703ALLOCATE = "v703allocate" // v703 allocate level
+        const val KEY_V703AMPLIFY = "v703amplify" // v703 amplify level
+        const val KEY_V703ANALYZE = "v703analyze" // v703 analyze setting
+        const val KEY_V703ANCHOR = "v703anchor" // v703 anchor setting
+        const val KEY_V703ANIMATE = "v703animate" // v703 animate setting
+        const val KEY_V703ANNOUNCE = "v703announce" // v703 announce setting
+        const val KEY_V703APPEND = "v703append" // v703 append setting
+        const val KEY_V704ACKNOWLEDGE = "v704acknowledge" // v704 acknowledge mode
+        const val KEY_V704ACQUIRE = "v704acquire" // v704 acquire mode
+        const val KEY_V704ACTIVATE = "v704activate" // v704 activate mode
+        const val KEY_V704ADAPTIVE = "v704adaptive" // v704 adaptive mode
+        const val KEY_V704ADJUST = "v704adjust" // v704 adjust mode
+        const val KEY_V704AGGREGATE = "v704aggregate" // v704 aggregate level
+        const val KEY_V704ALERT = "v704alert" // v704 alert level
+        const val KEY_V704ALIGN = "v704align" // v704 align level
+        const val KEY_V704ALLOCATE = "v704allocate" // v704 allocate level
+        const val KEY_V704AMPLIFY = "v704amplify" // v704 amplify level
+        const val KEY_V704ANALYZE = "v704analyze" // v704 analyze setting
+        const val KEY_V704ANCHOR = "v704anchor" // v704 anchor setting
+        const val KEY_V704ANIMATE = "v704animate" // v704 animate setting
+        const val KEY_V704ANNOUNCE = "v704announce" // v704 announce setting
+        const val KEY_V704APPEND = "v704append" // v704 append setting
+        const val KEY_V705ACKNOWLEDGE = "v705acknowledge" // v705 acknowledge mode
+        const val KEY_V705ACQUIRE = "v705acquire" // v705 acquire mode
+        const val KEY_V705ACTIVATE = "v705activate" // v705 activate mode
+        const val KEY_V705ADAPTIVE = "v705adaptive" // v705 adaptive mode
+        const val KEY_V705ADJUST = "v705adjust" // v705 adjust mode
+        const val KEY_V705AGGREGATE = "v705aggregate" // v705 aggregate level
+        const val KEY_V705ALERT = "v705alert" // v705 alert level
+        const val KEY_V705ALIGN = "v705align" // v705 align level
+        const val KEY_V705ALLOCATE = "v705allocate" // v705 allocate level
+        const val KEY_V705AMPLIFY = "v705amplify" // v705 amplify level
+        const val KEY_V705ANALYZE = "v705analyze" // v705 analyze setting
+        const val KEY_V705ANCHOR = "v705anchor" // v705 anchor setting
+        const val KEY_V705ANIMATE = "v705animate" // v705 animate setting
+        const val KEY_V705ANNOUNCE = "v705announce" // v705 announce setting
+        const val KEY_V705APPEND = "v705append" // v705 append setting
+        const val KEY_V706ACKNOWLEDGE = "v706acknowledge" // v706 acknowledge mode
+        const val KEY_V706ACQUIRE = "v706acquire" // v706 acquire mode
+        const val KEY_V706ACTIVATE = "v706activate" // v706 activate mode
+        const val KEY_V706ADAPTIVE = "v706adaptive" // v706 adaptive mode
+        const val KEY_V706ADJUST = "v706adjust" // v706 adjust mode
+        const val KEY_V706AGGREGATE = "v706aggregate" // v706 aggregate level
+        const val KEY_V706ALERT = "v706alert" // v706 alert level
+        const val KEY_V706ALIGN = "v706align" // v706 align level
+        const val KEY_V706ALLOCATE = "v706allocate" // v706 allocate level
+        const val KEY_V706AMPLIFY = "v706amplify" // v706 amplify level
+        const val KEY_V706ANALYZE = "v706analyze" // v706 analyze setting
+        const val KEY_V706ANCHOR = "v706anchor" // v706 anchor setting
+        const val KEY_V706ANIMATE = "v706animate" // v706 animate setting
+        const val KEY_V706ANNOUNCE = "v706announce" // v706 announce setting
+        const val KEY_V706APPEND = "v706append" // v706 append setting
+        const val KEY_V707ACKNOWLEDGE = "v707acknowledge" // v707 acknowledge mode
+        const val KEY_V707ACQUIRE = "v707acquire" // v707 acquire mode
+        const val KEY_V707ACTIVATE = "v707activate" // v707 activate mode
+        const val KEY_V707ADAPTIVE = "v707adaptive" // v707 adaptive mode
+        const val KEY_V707ADJUST = "v707adjust" // v707 adjust mode
+        const val KEY_V707AGGREGATE = "v707aggregate" // v707 aggregate level
+        const val KEY_V707ALERT = "v707alert" // v707 alert level
+        const val KEY_V707ALIGN = "v707align" // v707 align level
+        const val KEY_V707ALLOCATE = "v707allocate" // v707 allocate level
+        const val KEY_V707AMPLIFY = "v707amplify" // v707 amplify level
+        const val KEY_V707ANALYZE = "v707analyze" // v707 analyze setting
+        const val KEY_V707ANCHOR = "v707anchor" // v707 anchor setting
+        const val KEY_V707ANIMATE = "v707animate" // v707 animate setting
+        const val KEY_V707ANNOUNCE = "v707announce" // v707 announce setting
+        const val KEY_V707APPEND = "v707append" // v707 append setting
+        const val KEY_V708ACKNOWLEDGE = "v708acknowledge" // v708 acknowledge mode
+        const val KEY_V708ACQUIRE = "v708acquire" // v708 acquire mode
+        const val KEY_V708ACTIVATE = "v708activate" // v708 activate mode
+        const val KEY_V708ADAPTIVE = "v708adaptive" // v708 adaptive mode
+        const val KEY_V708ADJUST = "v708adjust" // v708 adjust mode
+        const val KEY_V708AGGREGATE = "v708aggregate" // v708 aggregate level
+        const val KEY_V708ALERT = "v708alert" // v708 alert level
+        const val KEY_V708ALIGN = "v708align" // v708 align level
+        const val KEY_V708ALLOCATE = "v708allocate" // v708 allocate level
+        const val KEY_V708AMPLIFY = "v708amplify" // v708 amplify level
+        const val KEY_V708ANALYZE = "v708analyze" // v708 analyze setting
+        const val KEY_V708ANCHOR = "v708anchor" // v708 anchor setting
+        const val KEY_V708ANIMATE = "v708animate" // v708 animate setting
+        const val KEY_V708ANNOUNCE = "v708announce" // v708 announce setting
+        const val KEY_V708APPEND = "v708append" // v708 append setting
+        const val KEY_V709ACKNOWLEDGE = "v709acknowledge" // v709 acknowledge mode
+        const val KEY_V709ACQUIRE = "v709acquire" // v709 acquire mode
+        const val KEY_V709ACTIVATE = "v709activate" // v709 activate mode
+        const val KEY_V709ADAPTIVE = "v709adaptive" // v709 adaptive mode
+        const val KEY_V709ADJUST = "v709adjust" // v709 adjust mode
+        const val KEY_V709AGGREGATE = "v709aggregate" // v709 aggregate level
+        const val KEY_V709ALERT = "v709alert" // v709 alert level
+        const val KEY_V709ALIGN = "v709align" // v709 align level
+        const val KEY_V709ALLOCATE = "v709allocate" // v709 allocate level
+        const val KEY_V709AMPLIFY = "v709amplify" // v709 amplify level
+        const val KEY_V709ANALYZE = "v709analyze" // v709 analyze setting
+        const val KEY_V709ANCHOR = "v709anchor" // v709 anchor setting
+        const val KEY_V709ANIMATE = "v709animate" // v709 animate setting
+        const val KEY_V709ANNOUNCE = "v709announce" // v709 announce setting
+        const val KEY_V709APPEND = "v709append" // v709 append setting
+        const val KEY_V710ACKNOWLEDGE = "v710acknowledge" // v710 acknowledge mode
+        const val KEY_V710ACQUIRE = "v710acquire" // v710 acquire mode
+        const val KEY_V710ACTIVATE = "v710activate" // v710 activate mode
+        const val KEY_V710ADAPTIVE = "v710adaptive" // v710 adaptive mode
+        const val KEY_V710ADJUST = "v710adjust" // v710 adjust mode
+        const val KEY_V710AGGREGATE = "v710aggregate" // v710 aggregate level
+        const val KEY_V710ALERT = "v710alert" // v710 alert level
+        const val KEY_V710ALIGN = "v710align" // v710 align level
+        const val KEY_V710ALLOCATE = "v710allocate" // v710 allocate level
+        const val KEY_V710AMPLIFY = "v710amplify" // v710 amplify level
+        const val KEY_V710ANALYZE = "v710analyze" // v710 analyze setting
+        const val KEY_V710ANCHOR = "v710anchor" // v710 anchor setting
+        const val KEY_V710ANIMATE = "v710animate" // v710 animate setting
+        const val KEY_V710ANNOUNCE = "v710announce" // v710 announce setting
+        const val KEY_V710APPEND = "v710append" // v710 append setting
     }
 }
