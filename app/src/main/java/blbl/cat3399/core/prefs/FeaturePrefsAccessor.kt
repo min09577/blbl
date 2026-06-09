@@ -50,4 +50,27 @@ object FeaturePrefsStore {
     val batch1141: FeaturePrefs1141 by lazy { FeaturePrefs1141(BlblApp.instance) }
     val batch1151: FeaturePrefs1151 by lazy { FeaturePrefs1151(BlblApp.instance) }
     val batch1161: FeaturePrefs1161 by lazy { FeaturePrefs1161(BlblApp.instance) }
+    val batch1171: FeaturePrefs1171 by lazy { FeaturePrefs1171(BlblApp.instance) }
+    val batch1181: FeaturePrefs1181 by lazy { FeaturePrefs1181(BlblApp.instance) }
+    val batch1191: FeaturePrefs1191 by lazy { FeaturePrefs1191(BlblApp.instance) }
+    val batch1201: FeaturePrefs1201 by lazy { FeaturePrefs1201(BlblApp.instance) }
+    val batch1211: FeaturePrefs1211 by lazy { FeaturePrefs1211(BlblApp.instance) }
+    val batch1221: FeaturePrefs1221 by lazy { FeaturePrefs1221(BlblApp.instance) }
+    val batch1231: FeaturePrefs1231 by lazy { FeaturePrefs1231(BlblApp.instance) }
+    val batch1241: FeaturePrefs1241 by lazy { FeaturePrefs1241(BlblApp.instance) }
+    val batch1251: FeaturePrefs1251 by lazy { FeaturePrefs1251(BlblApp.instance) }
+    val batch1261: FeaturePrefs1261 by lazy { FeaturePrefs1261(BlblApp.instance) }
+    val batch1271: FeaturePrefs1271 by lazy { FeaturePrefs1271(BlblApp.instance) }
+    val batch1281: FeaturePrefs1281 by lazy { FeaturePrefs1281(BlblApp.instance) }
+    val batch1291: FeaturePrefs1291 by lazy { FeaturePrefs1291(BlblApp.instance) }
+    val batch1301: FeaturePrefs1301 by lazy { FeaturePrefs1301(BlblApp.instance) }
+    val batch1311: FeaturePrefs1311 by lazy { FeaturePrefs1311(BlblApp.instance) }
+    val batch1321: FeaturePrefs1321 by lazy { FeaturePrefs1321(BlblApp.instance) }
+    val batch1331: FeaturePrefs1331 by lazy { FeaturePrefs1331(BlblApp.instance) }
+    val batch1341: FeaturePrefs1341 by lazy { FeaturePrefs1341(BlblApp.instance) }
+    val batch1351: FeaturePrefs1351 by lazy { FeaturePrefs1351(BlblApp.instance) }
+    val batch1361: FeaturePrefs1361 by lazy { FeaturePrefs1361(BlblApp.instance) }
+    val batch1371: FeaturePrefs1371 by lazy { FeaturePrefs1371(BlblApp.instance) }
+    val batch1381: FeaturePrefs1381 by lazy { FeaturePrefs1381(BlblApp.instance) }
+    val batch1391: FeaturePrefs1391 by lazy { FeaturePrefs1391(BlblApp.instance) }
 }
