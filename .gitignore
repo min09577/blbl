@@ -22,3 +22,17 @@ libs/
 .git-rewrite/
 
 build_output*.txt
+
+# Test artifacts
+test_screen.png
+test_snapshot.txt
+*.log
+
+# Python scripts (generation)
+gen_*.py
+verify_*.py
+deep_verify.py
+
+# Temporary test files
+test_results/
+screenshot_*.png
