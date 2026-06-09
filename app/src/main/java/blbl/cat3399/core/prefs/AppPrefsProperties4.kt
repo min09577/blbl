@@ -2751,7 +2751,7 @@ var AppPrefs.v90CachePrefetchSize2: Int
             includeKeys = CREDENTIAL_KEYS,
         )
 
-    private fun loadStringList(key: String): List<String> {
+    internal fun loadStringList(key: String): List<String> {
         val raw = prefs.getString(key, null) ?: return emptyList()
         return runCatching {
             val arr = JSONArray(raw)
@@ -2764,7 +2764,7 @@ var AppPrefs.v90CachePrefetchSize2: Int
         }.getOrDefault(emptyList())
     }
 
-    private fun saveStringList(key: String, value: List<String>) {
+    internal fun saveStringList(key: String, value: List<String>) {
         val arr = JSONArray()
         for (s in value) {
             val v = s.trim()
@@ -2773,7 +2773,7 @@ var AppPrefs.v90CachePrefetchSize2: Int
         prefs.edit().putString(key, arr.toString()).apply()
     }
 
-    private fun normalizeStringList(value: List<String>): List<String> {
+    internal fun normalizeStringList(value: List<String>): List<String> {
         if (value.isEmpty()) return emptyList()
         val out = ArrayList<String>(value.size)
         val seen = HashSet<String>(value.size * 2)
@@ -2785,7 +2785,7 @@ var AppPrefs.v90CachePrefetchSize2: Int
         return out
     }
 
-    private fun migratePlayerOsdDetailButtonIfNeeded(normalized: List<String>): List<String> {
+    internal fun migratePlayerOsdDetailButtonIfNeeded(normalized: List<String>): List<String> {
         if (prefs.getBoolean(KEY_PLAYER_OSD_BUTTONS_DETAIL_MIGRATED, false)) return normalized
         // Requirement: auto-enable the new "Detail" button even for users who previously customized OSD.
         // Do it only once so the user can later disable it in Settings.
@@ -2797,7 +2797,7 @@ var AppPrefs.v90CachePrefetchSize2: Int
         return migrated
     }
 
-    private fun normalizePlayerOsdButtons(value: List<String>): List<String> {
+    internal fun normalizePlayerOsdButtons(value: List<String>): List<String> {
         val out = ArrayList<String>(value.size + 1)
         val seen = HashSet<String>(value.size + 1)
         for (raw in value) {
@@ -2812,7 +2812,7 @@ var AppPrefs.v90CachePrefetchSize2: Int
         return out
     }
 
-    private fun normalizeUiScaleFactor(value: Float): Float {
+    internal fun normalizeUiScaleFactor(value: Float): Float {
         val v = if (value.isFinite()) value else UI_SCALE_FACTOR_DEFAULT
         val clamped = v.coerceIn(UI_SCALE_FACTOR_MIN, UI_SCALE_FACTOR_MAX)
         val scaled = (clamped * 100f).roundToInt()
@@ -2821,11 +2821,11 @@ var AppPrefs.v90CachePrefetchSize2: Int
         return (snapped / 100f).coerceIn(UI_SCALE_FACTOR_MIN, UI_SCALE_FACTOR_MAX)
     }
 
-    private fun normalizePlayerShortSeekStepSeconds(value: Int): Int {
+    internal fun normalizePlayerShortSeekStepSeconds(value: Int): Int {
         return if (PLAYER_SHORT_SEEK_STEP_SECONDS_OPTIONS.contains(value)) value else PLAYER_SHORT_SEEK_STEP_SECONDS_DEFAULT
     }
 
-    private fun normalizePlayerHoldScrubSeconds(value: Int): Int {
+    internal fun normalizePlayerHoldScrubSeconds(value: Int): Int {
         return if (PLAYER_HOLD_SCRUB_SECONDS_OPTIONS.contains(value)) value else PLAYER_HOLD_SCRUB_SECONDS_DEFAULT
     }
 
