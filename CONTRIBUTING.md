@@ -36,7 +36,7 @@ app/src/main/java/blbl/cat3399/
 │   └── ...
 └── feature/player/
     ├── PlayerSettings.kt        # 主设置面板
-    ├── PlayerSettingsPart*.kt   # 功能函数 (221 个文件)
+    ├── PlayerSettingsPart*.kt   # 功能函数 (56 个合并文件)
     └── ...
 ```
 
@@ -44,7 +44,7 @@ app/src/main/java/blbl/cat3399/
 
 ### 功能存储层
 - **AppPrefs**: 使用 SharedPreferences 存储 v31-v700 的设置
-- **FeaturePrefs**: 独立的 SharedPreferences 存储 v701-v2400 的设置
+- **FeaturePrefs**: 独立的 SharedPreferences 存储 v701-v2400 的设置 (43 个合并文件, 170 批次)
 - **FeaturePrefsAccessor**: 统一的 lazy 访问器，提供所有 FeaturePrefs 批次的访问
 
 ### UI 层
