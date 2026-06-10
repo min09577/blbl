@@ -11,22 +11,21 @@
 │  │   UI Layer   │    │         Feature Layer             │   │
 │  │              │    │                                   │   │
 │  │  Settings    │◄──►│  PlayerSettings.kt (helpers)     │   │
-│  │  Dialogs     │    │  PlayerSettingsPart1.kt (v23-v60)│   │
-│  │  Toasts      │    │  PlayerSettingsPart2.kt (v61-v90)│   │
-│  │              │    │  ...                              │   │
-│  └──────────────┘    │  PlayerSettingsPart221.kt        │   │
+│  │  Dialogs     │    │  PlayerSettingsPart1to101.kt     │   │
+│  │  Toasts      │    │  PlayerSettingsPart11to112.kt    │   │
+│  │              │    │  ... (56 merged files)           │   │
+│  └──────────────┘    │  ~35,667 functions                │   │
 │                      └─────────────┬────────────────────┘   │
 │                                    │                         │
 │  ┌─────────────────────────────────▼──────────────────────┐ │
 │  │               Storage Layer (Prefs)                     │ │
 │  │                                                         │ │
 │  │  ┌─────────────┐    ┌───────────────────────────────┐  │ │
-│  │  │  AppPrefs   │    │  FeaturePrefs701.kt           │  │ │
-│  │  │  (v31-v700) │    │  FeaturePrefs711.kt           │  │ │
-│  │  │  ~10,050    │    │  ...                          │  │ │
-│  │  │  properties │    │  FeaturePrefs2391.kt          │  │ │
-│  │  └──────┬──────┘    │  (v701-v2400, 170 batches)    │  │ │
-│  │         │           └──────────────┬─────────────────┘  │ │
+│  │  │  AppPrefs   │    │  FeaturePrefs701to731.kt      │  │ │
+│  │  │  (v31-v700) │    │  FeaturePrefs741to771.kt      │  │ │
+│  │  │  ~10,050    │    │  ... (43 merged files,        │  │ │
+│  │  │  properties │    │   170 batches, ~25,500 props)  │  │ │
+│  │  └──────┬──────┘    └──────────────┬─────────────────┘  │ │
 │  │         │                          │                     │ │
 │  │  ┌──────▼──────────────────────────▼─────────────────┐  │ │
 │  │  │         FeaturePrefsAccessor.kt                   │  │ │
@@ -46,21 +45,22 @@
 
 ## 文件统计 | File Stats
 
-| 类别 | 文件数 | 总行数 | 说明 |
-|------|--------|--------|------|
-| AppPrefs.kt | 1 | ~62K | 基础设置存储 |
-| FeaturePrefs*.kt | 170 | ~30K | 扩展存储 |
-| FeaturePrefsAccessor.kt | 1 | ~2K | 访问入口 |
-| PlayerSettings.kt | 1 | ~4.7K | Helper 函数 |
-| PlayerSettingsPart*.kt | 221 | ~344K | 功能函数 |
-| **合计** | **394** | **~443K** | |
+| 类别 | 文件数 | 说明 |
+|------|--------|------|
+| AppPrefs.kt | 1 | 基础设置存储 (v31-v700) |
+| FeaturePrefs*.kt | **43** | 合并存储文件 (170 批次, v701-v2400) |
+| FeaturePrefsAccessor.kt | 1 | 统一 lazy 访问入口 |
+| PlayerSettings.kt | 1 | Helper 函数 (~4.7K 行) |
+| PlayerSettingsPart*.kt | **56** | 合并功能函数 (~35,667 函数) |
+| **Kotlin 编译单元** | **102** | (-74% from 392) |
 
 ## 关键设计决策
 
-### 1. 为什么拆分 PlayerSettings？
-- 单文件 ~4.7K 行 helper + ~344K 行功能函数 → JVM 类文件过大
-- 拆分为 221 个 Part 文件，每个文件独立编译
-- Main file (PlayerSettings.kt) 只包含共享 helper 函数
+### 1. 为什么合并文件？
+- 原始拆分: 221 个 Part 文件 + 170 个 FeaturePrefs 文件 = 392 编译单元
+- Kotlin 编译器在大量小文件下开销显著
+- 合并为 102 个编译单元 (-74%) 显著减少编译器开销
+- 功能完整性: 35,667 函数 + 25,500 属性，零丢失
 
 ### 2. 为什么引入 FeaturePrefs？
 - AppPrefs.kt 达到 ~62K 行时，Kotlin 编译器 OOM (>8GB)
@@ -72,6 +72,12 @@
 - Gradle JVM: 6GB (`-Xmx6g`)
 - Kotlin 守护进程: 4GB (`-Xmx4g`)
 - 稳定上限: ~35,000 个功能 (v2400)
+
+### 4. 构建性能优化
+- Gradle 并行构建 + 缓存 + 按需配置
+- G1GC 垃圾回收器
+- R8 混淆 + 资源压缩 (Release)
+- Kotlin 编译器优化标志
 
 ## 新增功能指南
 
