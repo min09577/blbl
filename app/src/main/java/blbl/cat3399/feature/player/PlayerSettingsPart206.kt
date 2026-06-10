@@ -3,6 +3,8 @@ package blbl.cat3399.feature.player
 import blbl.cat3399.core.prefs.FeaturePrefsStore
 import blbl.cat3399.core.ui.AppToast
 
+
+
 // v2241: shut mode
 internal fun PlayerActivity.showV2241ShutToggle() {
     val current = FeaturePrefsStore.batch2241.v2241shut

@@ -3,6 +3,8 @@ package blbl.cat3399.feature.player
 import blbl.cat3399.core.prefs.FeaturePrefsStore
 import blbl.cat3399.core.ui.AppToast
 
+
+
 // v2271: struggled mode
 internal fun PlayerActivity.showV2271StruggledToggle() {
     val current = FeaturePrefsStore.batch2271.v2271struggled

@@ -3,6 +3,8 @@ package blbl.cat3399.feature.player
 import blbl.cat3399.core.prefs.FeaturePrefsStore
 import blbl.cat3399.core.ui.AppToast
 
+
+
 // v2371: critical mode
 internal fun PlayerActivity.showV2371CriticalToggle() {
     val current = FeaturePrefsStore.batch2371.v2371critical

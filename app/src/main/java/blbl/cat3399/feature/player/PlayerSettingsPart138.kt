@@ -3,6 +3,8 @@ package blbl.cat3399.feature.player
 import blbl.cat3399.core.prefs.FeaturePrefsStore
 import blbl.cat3399.core.ui.AppToast
 
+
+
 // v1561: inflict mode
 internal fun PlayerActivity.showV1561InflictToggle() {
     val current = FeaturePrefsStore.batch1561.v1561inflict

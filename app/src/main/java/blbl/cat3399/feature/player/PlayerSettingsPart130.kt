@@ -3,6 +3,8 @@ package blbl.cat3399.feature.player
 import blbl.cat3399.core.prefs.FeaturePrefsStore
 import blbl.cat3399.core.ui.AppToast
 
+
+
 // v1481: furnace mode
 internal fun PlayerActivity.showV1481FurnaceToggle() {
     val current = FeaturePrefsStore.batch1481.v1481furnace

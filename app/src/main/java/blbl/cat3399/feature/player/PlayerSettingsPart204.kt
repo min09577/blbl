@@ -3,6 +3,8 @@ package blbl.cat3399.feature.player
 import blbl.cat3399.core.prefs.FeaturePrefsStore
 import blbl.cat3399.core.ui.AppToast
 
+
+
 // v2221: ruined mode
 internal fun PlayerActivity.showV2221RuinedToggle() {
     val current = FeaturePrefsStore.batch2221.v2221ruined
