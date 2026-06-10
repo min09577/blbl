@@ -13,7 +13,9 @@ local.properties
 
 # OS
 .DS_Store
+Thumbs.db
 
+# APK artifacts
 *.apk
 keystore/
 docs/
@@ -21,18 +23,34 @@ libs/
 
 .git-rewrite/
 
+# Build output logs
 build_output*.txt
+build_log*.txt
 
 # Test artifacts
 test_screen.png
 test_snapshot.txt
 *.log
 
-# Python scripts (generation)
+# Generation scripts (dev-only)
 gen_*.py
 verify_*.py
 deep_verify.py
+split_*.py
 
-# Temporary test files
+# Temporary generation artifacts
+v*-functions.txt
+v*-keys.txt
+v*-properties.txt
+*-functions.txt
+*-keys.txt
+*-properties.txt
+
+# Temp files
+ui-player.txt
+versions.json
+
+# Test results
 test_results/
 screenshot_*.png
+output/

@@ -1,5 +1,46 @@
 # CHANGELOG
 
+## v2400.1.9
+
+### 🔧 代码质量与安全修复
+- 🚨 修复 `tv-build.yml` 硬编码密钥泄露 → 改用 GitHub Secrets
+- 🧹 清理 37 个残留文件（30 个生成产物 + 3 个脚本 + 4 个日志/临时文件）
+- 📝 更新 `.gitignore` 覆盖所有生成产物模式
+- 📄 新增 `LICENSE` (MIT)
+- 📐 新增 `.editorconfig` 统一代码格式
+- 🔄 更新 `gradle.properties` 版本号至 v2400.1.9
+- ⚙️ 现代化 `tv-build.yml`（JDK 安装 → setup-java Action）
+
+## v2400.1.3 - v2400.1.8
+
+### 🚀 工程优化系列
+- 📦 文件合并：392 → 102 编译单元（-74%）；221 PlayerSettingsPart → 56；170 FeaturePrefs → 43
+- ⚡ Gradle 优化：并行构建、缓存、按需配置、G1GC
+- 🗜️ R8 混淆 + 资源压缩（Release 构建）
+- 🔄 Kotlin 编译器优化标志
+- 📖 精简 README：73,316 行 → 163 行
+- 📚 新增 ARCHITECTURE.md + CONTRIBUTING.md
+- 🔧 GitHub Actions 缓存 + Dependabot 配置
+- 🧪 FeaturePrefsIntegrityTest 验证 35,667 函数 + 25,500 属性零丢失
+
+## v2100.0.0 - v2400.0.0
+
+### ✨ 功能扩展（~25,500 个播放器设置）
+- 新增 v701-v2400 功能系列（FeaturePrefs 架构）
+- 独立 FeaturePrefs 类避免 AppPrefs OOM
+- PlayerSettingsPart 拆分缓解 JVM class-too-large
+
+## v1000.0.0 - v2000.0.0
+
+### ✨ 功能扩展中间阶段
+- v701-v2000 功能系列
+
+## v31.0.0 - v700.0.0
+
+### 🎯 初始功能系列
+- 671 个版本的播放器自定义设置
+- AppPrefs 架构
+
 ## 6.4.0
 
 1. 弹幕关键词高亮功能

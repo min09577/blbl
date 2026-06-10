@@ -9,6 +9,8 @@
 ## Current Stable Version
 **v2400.1.8** (2026-06-10)
 
+> Full changelog: `memory/2026-06-10.md` | Lessons: `memory/2026-06-10-reflections.md`
+
 | Metric | Value |
 |--------|-------|
 | Features | ~35,550 |
