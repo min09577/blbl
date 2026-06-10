@@ -21,3 +21,13 @@
 # Without this, release (R8) obfuscation can make `libijkplayer.so` fail to bind and crash on startup.
 -keep class tv.danmaku.ijk.** { *; }
 -keep class com.debugly.ijkplayer.** { *; }
+
+# Keep generated settings code (PlayerSettingsPart*, FeaturePrefs*)
+-keep class blbl.cat3399.feature.player.PlayerSettingsPart* { *; }
+-keep class blbl.cat3399.core.prefs.FeaturePrefs* { *; }
+-keep class blbl.cat3399.core.prefs.AppPrefs { *; }
+
+# Keep SharedPreferences key constants
+-keepclassmembers class blbl.cat3399.core.prefs.** {
+    static final java.lang.String KEY_*;
+}

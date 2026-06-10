@@ -30,15 +30,21 @@
 3. `const val` must be inside `companion object`
 4. Properties must be between class body and `companion object`
 
-## Current Status (2026-06-08 21:00)
-- **Latest Release**: v220.15.0 (CI build succeeded)
-- **Total Features**: 2850+ (v31-v220, 190 versions × 15 features)
-- **README**: Updated to v211-v220 (4 languages)
-- **Next**: v221-v230 script written, needs execution
-- **Mode**: Loop development (user requested continuous feature batches)
+## Current Status (2026-06-10)
+- **Latest Release**: v2400.1.2 ✅
+- **Total Features**: ~35,550 (v31-v2400)
+- **CI Builds**: 14 consecutive successes
+- **Architecture**: FeaturePrefs (170 batches) + PlayerSettingsPart (221 files)
+- **Mode**: Optimization phase (no new features, focus on quality)
+- **Key Docs**: README (152 lines) + ARCHITECTURE.md + CONTRIBUTING.md
+- **Test**: FeaturePrefsIntegrityTest
 
-## Session Log (2026-06-08 Evening)
-- Successfully developed v151-v220 (70 versions, 1050 features, 10 batches)
-- All CI builds passed (with 2 transient network retries)
-- README updated with 4-language changelog for each batch
-- Development pattern stable: ~7-8 min per batch cycle
+## Build Limit
+- GitHub Actions standard runner (7GB RAM) caps at ~35,000 features
+- Gradle: `-Xmx6g`, Kotlin daemon: `-Xmx4g`
+- v2400 is the last stable version (9-10 min build)
+
+## Optimization Log (2026-06-10)
+- v2400.1.0: Added unit test + Robolectric
+- v2400.1.1: README 73K→152 lines
+- v2400.1.2: Cleaned 505 unused imports, fixed package ordering, added architecture docs
