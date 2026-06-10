@@ -12,7 +12,7 @@ class FeaturePrefsIntegrityTest {
     @Test
     fun allBatches_haveCorrectTypeCounts() {
         val baseDir = File("src/main/java/blbl/cat3399/core/prefs")
-        val batchFiles = baseDir.listFiles()?.filter { it.name.matches(Regex("FeaturePrefs\\d+\\.kt")) } ?: emptyList()
+        val batchFiles = baseDir.listFiles()?.filter { it.name.matches(Regex("FeaturePrefs\\d+to\\d+\\.kt")) } ?: emptyList()
         assertTrue("No FeaturePrefs batch files found", batchFiles.isNotEmpty())
 
         val typeCountRegex = Regex("""var (v\d+\w+): (Boolean|Int)""")
@@ -43,7 +43,7 @@ class FeaturePrefsIntegrityTest {
     @Test
     fun noDuplicateFunctions_acrossAllPartFiles() {
         val partDir = File("src/main/java/blbl/cat3399/feature/player")
-        val partFiles = partDir.listFiles()?.filter { it.name.matches(Regex("PlayerSettingsPart\\d+\\.kt")) } ?: emptyList()
+        val partFiles = partDir.listFiles()?.filter { it.name.matches(Regex("PlayerSettingsPart\\d+to\\d+\\.kt")) } ?: emptyList()
         val funcs = mutableMapOf<String, MutableList<String>>()
         val funcRegex = Regex("""internal fun PlayerActivity\.(showV\d+\w+)\(""")
         for (file in partFiles) {
@@ -59,7 +59,7 @@ class FeaturePrefsIntegrityTest {
     fun accessor_declaresAllBatches() {
         val baseDir = File("src/main/java/blbl/cat3399/core/prefs")
         val batchNums = baseDir.listFiles()
-            ?.mapNotNull { Regex("FeaturePrefs(\\d+)\\.kt").find(it.name)?.groupValues?.get(1)?.toInt() }
+            ?.mapNotNull { Regex("FeaturePrefs(\\d+)to\\d+\\.kt").find(it.name)?.groupValues?.get(1)?.toInt() }
             ?.toSet() ?: emptySet()
         val accessorFile = File(baseDir, "FeaturePrefsAccessor.kt")
         val content = accessorFile.readText()
@@ -70,7 +70,7 @@ class FeaturePrefsIntegrityTest {
     @Test
     fun totalFunctionCount_isReasonable() {
         val partDir = File("src/main/java/blbl/cat3399/feature/player")
-        val partFiles = partDir.listFiles()?.filter { it.name.matches(Regex("PlayerSettingsPart\\d+\\.kt")) } ?: emptyList()
+        val partFiles = partDir.listFiles()?.filter { it.name.matches(Regex("PlayerSettingsPart\\d+to\\d+\\.kt")) } ?: emptyList()
         val funcRegex = Regex("""internal fun PlayerActivity\.(showV\d+\w+)\(""")
         val total = partFiles.sumOf { funcRegex.findAll(it.readText()).count() }
         assertTrue("Should have at least 30,000 functions, got $total", total >= 30000)
