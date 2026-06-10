@@ -6,45 +6,52 @@
 - **Tech Stack**: Kotlin + Android + Media3 + IjkPlayer
 - **CI**: android-debug.yml (tag push triggers Debug APK build)
 
-## Development Patterns
+## Current Stable Version
+**v2400.1.8** (2026-06-10)
 
-### Code Generation for Features
-- **AppPrefs.kt structure**: properties before `companion object`, keys inside it
-- **SharedPreferences variable**: `prefs` (NOT `mSharedPreferences`)
-- **Property naming**: version-prefixed like `v131audioChorusDepth`
-- **Key naming**: `KEY_V131AUDIOCHORUSDEPTH`
-- **KEY value**: same as property name (e.g., `"v131audioChorusDepth"`)
-- **Bool default**: `false` (Kotlin literal, not Python `False`)
-- **PlayerSettings functions**: `BiliClient.prefs.v{ver}{name_lower}` for both get/set
-- **Line-based insertion**: no more placeholder markers; use line counting
+| Metric | Value |
+|--------|-------|
+| Features | ~35,550 |
+| Kotlin files | 102 (-74% from 392) |
+| FeaturePrefs batches | 43 merged files (170 batches) |
+| PlayerSettingsPart | 56 merged files (was 221) |
+| CI build time | ~11 min |
+| Build status | ✅ 6 consecutive successes |
 
-### Tag/Release Management
-- Delete remote tag first: `git push origin :refs/tags/vXXX`
-- Delete local tag: `git tag -d vXXX`
-- Create new tag: `git tag vXXX`
-- Push: `git push origin vXXX`
+## Architecture
+- **AppPrefs.kt**: v31-v700 properties (no longer modified)
+- **FeaturePrefs701to731.kt ~ FeaturePrefs2381to2391.kt**: 43 files, 170 classes
+- **FeaturePrefsAccessor.kt**: 170 lazy declarations
+- **PlayerSettings.kt**: helper functions
+- **PlayerSettingsPart1to101.kt ~ PlayerSettingsPart99to99.kt**: 56 files
+- **FeaturePrefsIntegrityTest.kt**: unit test
 
-### Common Pitfalls
-1. Simple `str.replace()` doesn't respect word boundaries - use version-prefixed names
-2. Brace counting must iterate ALL characters, not just stripped lines
-3. `const val` must be inside `companion object`
-4. Properties must be between class body and `companion object`
+## Build Configuration (optimized)
+- Gradle: parallel + cache + configure-on-demand + G1GC
+- Kotlin: `-Xno-*-assertions`, `-Xjvm-default=all`
+- Release: R8 minify + shrink enabled
+- ProGuard: keep rules for generated code
 
-## Current Status (2026-06-10)
-- **Latest Release**: v2400.1.2 ✅
-- **Total Features**: ~35,550 (v31-v2400)
-- **CI Builds**: 14 consecutive successes
-- **Architecture**: FeaturePrefs (170 batches) + PlayerSettingsPart (221 files)
-- **Mode**: Optimization phase (no new features, focus on quality)
-- **Key Docs**: README (152 lines) + ARCHITECTURE.md + CONTRIBUTING.md
-- **Test**: FeaturePrefsIntegrityTest
+## Code Generation Patterns
+- **AppPrefs**: properties before `companion object`, keys inside it
+- **FeaturePrefs**: class with `context.getSharedPreferences(name, MODE_PRIVATE)`
+- **PlayerSettingsPart**: extension functions on PlayerActivity
+- **Toggle**: `BiliClient.prefs.xxx = !current` + `AppToast.show()`
+- **Choice**: `showSettingsChoiceDialog()` with `options.indexOf().takeIf { it >= 0 } ?: 0`
 
-## Build Limit
-- GitHub Actions standard runner (7GB RAM) caps at ~35,000 features
-- Gradle: `-Xmx6g`, Kotlin daemon: `-Xmx4g`
-- v2400 is the last stable version (9-10 min build)
+## Common Pitfalls
+1. Do NOT modify FeaturePrefs file structure (KDoc annotations can break compilation)
+2. Do NOT add more skeleton features (build memory limit reached at ~35,000)
+3. Key naming: version-prefixed (e.g., `v701acknowledge`)
+4. Bool default: always `false`
+5. Import must be after package declaration
 
-## Optimization Log (2026-06-10)
-- v2400.1.0: Added unit test + Robolectric
-- v2400.1.1: README 73K→152 lines
-- v2400.1.2: Cleaned 505 unused imports, fixed package ordering, added architecture docs
+## Build Limits
+- Standard GitHub Actions runner (7GB RAM) supports max ~35,000 features
+- More features require a larger runner (16GB)
+- v2400 is the stable limit
+
+## Key Documents
+- [`ARCHITECTURE.md`](ARCHITECTURE.md) - architecture diagram
+- [`CONTRIBUTING.md`](CONTRIBUTING.md) - contribution guide
+- [`memory/2026-06-10.md`](memory/2026-06-10.md) - daily log
