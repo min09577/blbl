@@ -7,7 +7,7 @@
 - **CI**: android-debug.yml (tag push triggers Debug APK build)
 
 ## Current Stable Version
-**v2400.1.8** (2026-06-10)
+**v2400.1.9** (2026-06-10)
 
 > Full changelog: `memory/2026-06-10.md` | Lessons: `memory/2026-06-10-reflections.md`
 
@@ -18,7 +18,14 @@
 | FeaturePrefs batches | 43 merged files (170 batches) |
 | PlayerSettingsPart | 56 merged files (was 221) |
 | CI build time | ~11 min |
-| Build status | ✅ 6 consecutive successes |
+| Build status | ✅ 7 consecutive successes |
+
+### v2400.1.9 Changes
+- 🔴 **Security**: tv-build.yml hardcoded credential removed → GitHub Secrets
+- 🧹 **Cleanup**: 37 repo files deleted (30 gen artifacts, 3 scripts, 4 temp files)
+- 📄 **New**: LICENSE (MIT), .editorconfig, updated CHANGELOG
+- ⚙️ **CI**: tv-build.yml modernized (setup-java action)
+- 📝 **Config**: gradle.properties version → v2400.1.9
 
 ## Architecture
 - **AppPrefs.kt**: v31-v700 properties (no longer modified)
