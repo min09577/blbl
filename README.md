@@ -1,7 +1,7 @@
 # blbl — 哔哩哔哩第三方客户端 | Third‑party Bilibili Client
 
 [![CI Build](https://github.com/min09577/blbl/actions/workflows/android-debug.yml/badge.svg)](https://github.com/min09577/blbl/actions/workflows/android-debug.yml)
-[![Version](https://img.shields.io/badge/version-v2400.1.7-blue)](https://github.com/min09577/blbl/releases)
+[![Version](https://img.shields.io/badge/version-v2400.1.9-blue)](https://github.com/min09577/blbl/releases)
 [![Features](https://img.shields.io/badge/features-35%2C550%2B-orange)](#features)
 
 一个第三方哔哩哔哩安卓 App，支持触摸、遥控，适用于平板、TV、车机等设备。
@@ -29,7 +29,7 @@ Tablets · TV · car‑head‑unit.
 
 ## 🚀 当前版本 | Current Version | 現行バージョン | 현재 버전
 
-**v2400.1.7 — Stable Optimization Release (2026‑06‑10)**
+**v2400.1.9 — Stable Optimization Release (2026‑06‑10)**
 
 | Metric | Value |
 |--------|-------|
@@ -82,7 +82,7 @@ feature/player/
 
 ## 📝 版本日志 | Changelog
 
-### v2400.1.7 (2026‑06‑10) — stable
+### v2400.1.9 (2026‑06‑10) — stable
 - ✅ Deep optimization baseline confirmed
 - ✅ File consolidation: 392 → 102 Kotlin files (−74 %)
 - ✅ Gradle parallel, caching, G1GC enabled
