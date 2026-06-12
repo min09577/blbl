@@ -33,8 +33,8 @@ jobs:
           cat >> gradle.properties << 'EOF'
           # CI overrides: GitHub Actions ubuntu-latest has 7GB RAM, 2 cores
           org.gradle.jvmargs=-Xmx2g -XX:+UseG1GC -XX:MaxGCPauseMillis=200 -Dfile.encoding=UTF-8
-          kotlin.daemon.jvmargs=-Xmx3g -XX:+UseG1GC
-          org.gradle.workers.max=2
+          kotlin.daemon.jvmargs=-Xmx4g -XX:+UseG1GC
+          org.gradle.workers.max=1
           org.gradle.parallel=true
           EOF
           echo "=== Effective gradle.properties (last lines) ==="
