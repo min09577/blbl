@@ -126,22 +126,6 @@ dependencies {
     compileOnly("javax.annotation:javax.annotation-api:1.3.2")
     implementation("com.google.zxing:core:3.5.3")
 
-    val protocClassifier =
-        when {
-            org.gradle.internal.os.OperatingSystem
-                .current()
-                .isWindows -> "windows-x86_64"
-            org.gradle.internal.os.OperatingSystem
-                .current()
-                .isMacOsX ->
-                if (System.getProperty("os.arch") == "aarch64") "osx-aarch_64" else "osx-x86_64"
-            else ->
-                if (System.getProperty("os.arch") == "aarch64") "linux-aarch_64" else "linux-x86_64"
-        }
-
-    add("protobufTools", "com.google.protobuf:protoc:3.25.3:$protocClassifier@exe")
-    add("protobufTools", "io.grpc:protoc-gen-grpc-java:1.72.0:$protocClassifier@exe")
-
     testImplementation("junit:junit:4.13.2")
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.9.0")
     testImplementation("org.robolectric:robolectric:4.14.1")
@@ -158,75 +142,88 @@ val generateProto by tasks.registering {
     outputs.dir(protoOutputDir)
 
     doLast {
-        val resolved = protobufTools.resolvedConfiguration.resolvedArtifacts
-        val protocExe =
-            resolved.find { it.moduleVersion.id.name == "protoc" }?.file
-                ?: error("protoc artifact not found in protobufTools configuration")
-        val grpcPluginExe =
-            resolved.find { it.moduleVersion.id.name == "protoc-gen-grpc-java" }?.file
-                ?: error("protoc-gen-grpc-java artifact not found in protobufTools configuration")
+        val toolsDir = layout.buildDirectory.dir("tmp/protoc-tools").get().asFile
+        val protoIncludeDir = layout.buildDirectory.dir("tmp/proto-include").get().asFile
+        val isWindows = org.gradle.internal.os.OperatingSystem.current().isWindows
+        val protocExe = File(toolsDir, if (isWindows) "protoc.exe" else "protoc")
+        val grpcPluginExe = File(toolsDir, "protoc-gen-grpc-java" + if (isWindows) ".exe" else "")
 
-        // Ensure binaries are executable (required on Linux/macOS CI)
+        val protocDist =
+            when {
+                isWindows -> "win64"
+                org.gradle.internal.os.OperatingSystem.current().isMacOsX ->
+                    if (System.getProperty("os.arch") == "aarch64") "osx-aarch_64" else "osx-x86_64"
+                else ->
+                    if (System.getProperty("os.arch") == "aarch64") "linux-aarch_64" else "linux-x86_64"
+            }
+        val protocGrpcClassifier =
+            when {
+                isWindows -> "windows-x86_64"
+                org.gradle.internal.os.OperatingSystem.current().isMacOsX ->
+                    if (System.getProperty("os.arch") == "aarch64") "osx-aarch_64" else "osx-x86_64"
+                else ->
+                    if (System.getProperty("os.arch") == "aarch64") "linux-aarch_64" else "linux-x86_64"
+            }
+
+        // Download protoc binary + includes from GitHub Release (cached)
+        if (!protocExe.exists() || !protoIncludeDir.resolve("google/protobuf/any.proto").exists()) {
+            val protoZip = layout.buildDirectory.file("tmp/protoc-dist.zip").get().asFile
+            protoZip.parentFile.mkdirs()
+            val url = URL("https://github.com/protocolbuffers/protobuf/releases/download/v25.3/protoc-25.3-$protocDist.zip")
+            logger.lifecycle("protoc: downloading protoc-25.3-$protocDist.zip from GitHub...")
+            url.openStream().use { inp -> protoZip.outputStream().use { out -> inp.copyTo(out) } }
+
+            // Extract entire zip to temp dir, then copy needed files
+            val extractDir = layout.buildDirectory.dir("tmp/protoc-extract").get().asFile
+            extractDir.deleteRecursively()
+            project.copy { from(project.zipTree(protoZip)); into(extractDir) }
+            val srcProtoc = File(extractDir, if (isWindows) "bin/protoc.exe" else "bin/protoc")
+            if (srcProtoc.exists()) {
+                toolsDir.mkdirs()
+                srcProtoc.copyTo(protocExe, overwrite = true)
+            }
+            val srcInclude = File(extractDir, "include")
+            if (srcInclude.isDirectory) {
+                protoIncludeDir.deleteRecursively()
+                srcInclude.renameTo(protoIncludeDir)
+            }
+            extractDir.deleteRecursively()
+            protoZip.delete()
+        } else {
+            logger.lifecycle("protoc: using cached protoc binary and includes")
+        }
+
+        // Download protoc-gen-grpc-java from Maven Central (direct HTTP, avoids Gradle dependency resolution)
+        if (!grpcPluginExe.exists()) {
+            grpcPluginExe.parentFile.mkdirs()
+            val grpcUrl = URL("https://repo1.maven.org/maven2/io/grpc/protoc-gen-grpc-java/1.72.0/protoc-gen-grpc-java-1.72.0-$protocGrpcClassifier.exe")
+            logger.lifecycle("protoc: downloading protoc-gen-grpc-java 1.72.0 from Maven Central...")
+            grpcUrl.openStream().use { inp -> grpcPluginExe.outputStream().use { out -> inp.copyTo(out) } }
+        } else {
+            logger.lifecycle("protoc: using cached protoc-gen-grpc-java")
+        }
+
         protocExe.setExecutable(true)
         grpcPluginExe.setExecutable(true)
-
-        // protoc from Maven lacks the include/ directory; download full distribution from GitHub
-        val protoIncludeDir =
-            layout.buildDirectory
-                .dir("tmp/proto-include")
-                .get()
-                .asFile
-        if (!protoIncludeDir.resolve("google/protobuf/any.proto").exists()) {
-            val protoZip =
-                layout.buildDirectory
-                    .file("tmp/protoc-dist.zip")
-                    .get()
-                    .asFile
-            protoZip.parentFile.mkdirs()
-            val protocDist =
-                when {
-                    org.gradle.internal.os.OperatingSystem
-                        .current()
-                        .isWindows -> "win64"
-                    org.gradle.internal.os.OperatingSystem
-                        .current()
-                        .isMacOsX ->
-                        if (System.getProperty("os.arch") == "aarch64") "osx-aarch_64" else "osx-x86_64"
-                    else ->
-                        if (System.getProperty("os.arch") == "aarch64") "linux-aarch_64" else "linux-x86_64"
-                }
-            val url = URL("https://github.com/protocolbuffers/protobuf/releases/download/v25.3/protoc-25.3-$protocDist.zip")
-            url.openStream().use { inp ->
-                protoZip.outputStream().use { out -> inp.copyTo(out) }
-            }
-            project.copy {
-                from(project.zipTree(protoZip)) { include("include/**") }
-                into(protoIncludeDir)
-            }
-            protoZip.delete()
-        }
 
         val outputDir = protoOutputDir.get().asFile
         outputDir.deleteRecursively()
         outputDir.mkdirs()
 
-        val cmd =
-            mutableListOf(
-                protocExe.absolutePath,
-                "-I${protoSourceDir.asFile.absolutePath}",
-                "-I${protoIncludeDir.resolve("include").absolutePath}",
-                "--java_out=lite:${outputDir.absolutePath}",
-                "--grpc_out=lite:${outputDir.absolutePath}",
-                "--plugin=protoc-gen-grpc=${grpcPluginExe.absolutePath}",
-            )
+        val cmd = mutableListOf(
+            protocExe.absolutePath,
+            "-I${protoSourceDir.asFile.absolutePath}",
+            "-I${protoIncludeDir.absolutePath}",
+            "--java_out=lite:${outputDir.absolutePath}",
+            "--grpc_out=lite:${outputDir.absolutePath}",
+            "--plugin=protoc-gen-grpc=${grpcPluginExe.absolutePath}",
+        )
         cmd.addAll(protoFiles.files.map { it.absolutePath })
 
         val process = ProcessBuilder(cmd).redirectErrorStream(true).start()
         val stdout = process.inputStream.bufferedReader().readText()
         val exitCode = process.waitFor()
-        if (exitCode != 0) {
-            error("protoc failed (exit $exitCode):\n$stdout")
-        }
+        if (exitCode != 0) error("protoc failed (exit $exitCode):\n$stdout")
 
         logger.lifecycle(
             "protoc: generated {} Java files from {} proto sources",
