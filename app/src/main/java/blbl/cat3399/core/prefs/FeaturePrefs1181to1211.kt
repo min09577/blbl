@@ -1,9 +1,10 @@
 package blbl.cat3399.core.prefs
 
 import android.content.Context
-import android.content.SharedPreferences
 
-class FeaturePrefs1181(context: Context) {
+class FeaturePrefs1181(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1181", Context.MODE_PRIVATE)
 
     var v1181adapt: Boolean
@@ -605,11 +606,11 @@ class FeaturePrefs1181(context: Context) {
     var v1190agenda: Boolean
         get() = prefs.getBoolean("v1190agenda", false)
         set(value) = prefs.edit().putBoolean("v1190agenda", value).apply()
-
 }
 
-
-class FeaturePrefs1191(context: Context) {
+class FeaturePrefs1191(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1191", Context.MODE_PRIVATE)
 
     var v1191agent: Boolean
@@ -1211,11 +1212,11 @@ class FeaturePrefs1191(context: Context) {
     var v1200alley: Boolean
         get() = prefs.getBoolean("v1200alley", false)
         set(value) = prefs.edit().putBoolean("v1200alley", value).apply()
-
 }
 
-
-class FeaturePrefs1201(context: Context) {
+class FeaturePrefs1201(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1201", Context.MODE_PRIVATE)
 
     var v1201allow: Boolean
@@ -1817,11 +1818,11 @@ class FeaturePrefs1201(context: Context) {
     var v1210answer: Boolean
         get() = prefs.getBoolean("v1210answer", false)
         set(value) = prefs.edit().putBoolean("v1210answer", value).apply()
-
 }
 
-
-class FeaturePrefs1211(context: Context) {
+class FeaturePrefs1211(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1211", Context.MODE_PRIVATE)
 
     var v1211anthem: Boolean
@@ -2423,7 +2424,4 @@ class FeaturePrefs1211(context: Context) {
     var v1220aside: Boolean
         get() = prefs.getBoolean("v1220aside", false)
         set(value) = prefs.edit().putBoolean("v1220aside", value).apply()
-
 }
-
-

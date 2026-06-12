@@ -8,13 +8,13 @@ import androidx.collection.LruCache
 import blbl.cat3399.R
 import blbl.cat3399.core.log.AppLog
 import blbl.cat3399.core.net.BiliClient
-import okhttp3.HttpUrl.Companion.toHttpUrlOrNull
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import okhttp3.HttpUrl.Companion.toHttpUrlOrNull
 import java.util.WeakHashMap
 
 object ImageLoader {
@@ -23,11 +23,18 @@ object ImageLoader {
     private val inFlight = WeakHashMap<ImageView, Job>()
     private val scope = CoroutineScope(SupervisorJob() + Dispatchers.Main.immediate)
 
-    private val cache = object : LruCache<String, Bitmap>(maxCacheBytes()) {
-        override fun sizeOf(key: String, value: Bitmap): Int = value.byteCount
-    }
+    private val cache =
+        object : LruCache<String, Bitmap>(maxCacheBytes()) {
+            override fun sizeOf(
+                key: String,
+                value: Bitmap,
+            ): Int = value.byteCount
+        }
 
-    fun loadInto(view: ImageView, url: String?) {
+    fun loadInto(
+        view: ImageView,
+        url: String?,
+    ) {
         val normalized = normalizeImageUrl(url)
 
         if (normalized == null) {
@@ -61,20 +68,21 @@ object ImageLoader {
         }
 
         if (view.drawable !== placeholder) view.setImageDrawable(placeholder)
-        val job = scope.launch {
-            try {
-                val bytes = withContext(Dispatchers.IO) { BiliClient.getBytes(normalized) }
-                val bmp = withContext(Dispatchers.Default) { BitmapFactory.decodeByteArray(bytes, 0, bytes.size) }
-                if (bmp != null) {
-                    cache.put(normalized, bmp)
-                    if ((view.getTag(R.id.tag_image_loader_url) as? String) == normalized) {
-                        view.setImageBitmap(bmp)
+        val job =
+            scope.launch {
+                try {
+                    val bytes = withContext(Dispatchers.IO) { BiliClient.getBytes(normalized) }
+                    val bmp = withContext(Dispatchers.Default) { BitmapFactory.decodeByteArray(bytes, 0, bytes.size) }
+                    if (bmp != null) {
+                        cache.put(normalized, bmp)
+                        if ((view.getTag(R.id.tag_image_loader_url) as? String) == normalized) {
+                            view.setImageBitmap(bmp)
+                        }
                     }
+                } catch (t: Throwable) {
+                    AppLog.w(TAG, "load failed url=$normalized", t)
                 }
-            } catch (t: Throwable) {
-                AppLog.w(TAG, "load failed url=$normalized", t)
             }
-        }
         inFlight[view] = job
     }
 
@@ -83,7 +91,12 @@ object ImageLoader {
         if (raw.startsWith("//")) return "https:$raw"
         if (!raw.startsWith("http://")) return raw
 
-        val host = raw.toHttpUrlOrNull()?.host?.lowercase().orEmpty()
+        val host =
+            raw
+                .toHttpUrlOrNull()
+                ?.host
+                ?.lowercase()
+                .orEmpty()
         val isBiliCdn =
             host == "hdslb.com" ||
                 host.endsWith(".hdslb.com") ||

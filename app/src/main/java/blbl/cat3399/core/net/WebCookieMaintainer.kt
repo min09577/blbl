@@ -1,7 +1,7 @@
 package blbl.cat3399.core.net
 
-import android.util.Base64
 import android.os.SystemClock
+import android.util.Base64
 import blbl.cat3399.core.log.AppLog
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.sync.Mutex
@@ -47,7 +47,11 @@ object WebCookieMaintainer {
     private val cookieRefreshMutex = Mutex()
 
     suspend fun ensureBuvidActiveOncePerDay(nowMs: Long = System.currentTimeMillis()) {
-        val midStr = BiliClient.cookies.getCookieValue("DedeUserID")?.trim().orEmpty()
+        val midStr =
+            BiliClient.cookies
+                .getCookieValue("DedeUserID")
+                ?.trim()
+                .orEmpty()
         val mid = midStr.toLongOrNull()?.takeIf { it > 0 } ?: return
         val epochDay = nowMs / 86_400_000L
         if (BiliClient.prefs.buvidActivatedMid == mid && BiliClient.prefs.buvidActivatedEpochDay == epochDay) return
@@ -78,8 +82,7 @@ object WebCookieMaintainer {
                         JSONObject()
                             .put("adca", "Linux")
                             .put("bfe9", randPngEnd.takeLast(50)),
-                    )
-                    .toString()
+                    ).toString()
 
             val body =
                 JSONObject()
@@ -207,11 +210,12 @@ object WebCookieMaintainer {
                     },
                 )
             val json =
-                BiliClient.requestString(
-                    url,
-                    method = "POST",
-                    body = ByteArray(0).toRequestBody(null),
-                ).let { raw -> withContext(Dispatchers.Default) { JSONObject(raw) } }
+                BiliClient
+                    .requestString(
+                        url,
+                        method = "POST",
+                        body = ByteArray(0).toRequestBody(null),
+                    ).let { raw -> withContext(Dispatchers.Default) { JSONObject(raw) } }
             val data = json.optJSONObject("data") ?: JSONObject()
             val ticket = data.optString("ticket", "").trim()
             val createdAt = data.optLong("created_at", 0L)
@@ -256,7 +260,12 @@ object WebCookieMaintainer {
                 val ts = data.optLong("timestamp", nowMs).takeIf { it > 0 } ?: nowMs
                 val correspondPath = withContext(Dispatchers.Default) { getCorrespondPath(ts) }
                 val html = BiliClient.requestString("https://www.bilibili.com/correspond/1/$correspondPath")
-                val refreshCsrf = refreshCsrfRegex.find(html)?.groupValues?.getOrNull(1).orEmpty()
+                val refreshCsrf =
+                    refreshCsrfRegex
+                        .find(html)
+                        ?.groupValues
+                        ?.getOrNull(1)
+                        .orEmpty()
                 if (refreshCsrf.isBlank()) error("refresh_csrf not found")
 
                 val refreshResult =
@@ -296,8 +305,13 @@ object WebCookieMaintainer {
         }
     }
 
-    private fun buildCookie(name: String, value: String, expiresAt: Long): Cookie {
-        return Cookie.Builder()
+    private fun buildCookie(
+        name: String,
+        value: String,
+        expiresAt: Long,
+    ): Cookie =
+        Cookie
+            .Builder()
             .name(name)
             .value(value)
             .domain("bilibili.com")
@@ -305,9 +319,11 @@ object WebCookieMaintainer {
             .expiresAt(expiresAt)
             .secure()
             .build()
-    }
 
-    private fun hmacSha256Hex(key: String, message: String): String {
+    private fun hmacSha256Hex(
+        key: String,
+        message: String,
+    ): String {
         val mac = Mac.getInstance("HmacSHA256")
         mac.init(SecretKeySpec(key.toByteArray(StandardCharsets.UTF_8), "HmacSHA256"))
         val out = mac.doFinal(message.toByteArray(StandardCharsets.UTF_8))

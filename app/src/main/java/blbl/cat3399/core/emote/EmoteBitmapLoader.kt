@@ -5,7 +5,6 @@ import android.graphics.BitmapFactory
 import androidx.collection.LruCache
 import blbl.cat3399.core.log.AppLog
 import blbl.cat3399.core.net.BiliClient
-import java.util.concurrent.ConcurrentHashMap
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
@@ -13,6 +12,7 @@ import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import okhttp3.HttpUrl.Companion.toHttpUrlOrNull
+import java.util.concurrent.ConcurrentHashMap
 
 object EmoteBitmapLoader {
     private const val TAG = "EmoteBitmapLoader"
@@ -22,7 +22,10 @@ object EmoteBitmapLoader {
 
     private val cache =
         object : LruCache<String, Bitmap>(maxCacheBytes()) {
-            override fun sizeOf(key: String, value: Bitmap): Int = value.byteCount
+            override fun sizeOf(
+                key: String,
+                value: Bitmap,
+            ): Int = value.byteCount
         }
 
     private val inFlight: ConcurrentHashMap<String, Job> = ConcurrentHashMap()
@@ -41,7 +44,10 @@ object EmoteBitmapLoader {
         load(normalized) { /* no-op */ }
     }
 
-    fun load(url: String, onResult: (Bitmap?) -> Unit) {
+    fun load(
+        url: String,
+        onResult: (Bitmap?) -> Unit,
+    ) {
         val normalized = normalizeImageUrl(url)
         if (normalized == null || normalized.isBlank()) {
             onResult(null)
@@ -106,7 +112,12 @@ object EmoteBitmapLoader {
         if (raw.startsWith("//")) return "https:$raw"
         if (!raw.startsWith("http://")) return raw
 
-        val host = raw.toHttpUrlOrNull()?.host?.lowercase().orEmpty()
+        val host =
+            raw
+                .toHttpUrlOrNull()
+                ?.host
+                ?.lowercase()
+                .orEmpty()
         val isBiliCdn =
             host == "hdslb.com" ||
                 host.endsWith(".hdslb.com") ||

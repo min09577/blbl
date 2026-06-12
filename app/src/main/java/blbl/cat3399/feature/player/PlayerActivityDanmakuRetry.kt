@@ -6,9 +6,14 @@ package blbl.cat3399.feature.player
  */
 class PlayerActivityDanmakuRetry {
     fun setAutoRetryEnabled(enabled: Boolean) {}
+
     fun getMaxRetries(): Int = 3
+
     fun setMaxRetries(count: Int) {}
+
     fun getRetryDelay(): Int = 5
+
     fun setRetryDelay(seconds: Int) {}
+
     fun clearRetryQueue() {}
 }

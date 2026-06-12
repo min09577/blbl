@@ -1,9 +1,10 @@
 package blbl.cat3399.core.prefs
 
 import android.content.Context
-import android.content.SharedPreferences
 
-class FeaturePrefs2341(context: Context) {
+class FeaturePrefs2341(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_2341", Context.MODE_PRIVATE)
 
     var v2341appreciative: Boolean
@@ -605,11 +606,11 @@ class FeaturePrefs2341(context: Context) {
     var v2350bountiful: Boolean
         get() = prefs.getBoolean("v2350bountiful", false)
         set(value) = prefs.edit().putBoolean("v2350bountiful", value).apply()
-
 }
 
-
-class FeaturePrefs2351(context: Context) {
+class FeaturePrefs2351(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_2351", Context.MODE_PRIVATE)
 
     var v2351brilliant: Boolean
@@ -1211,11 +1212,11 @@ class FeaturePrefs2351(context: Context) {
     var v2360compassionate: Boolean
         get() = prefs.getBoolean("v2360compassionate", false)
         set(value) = prefs.edit().putBoolean("v2360compassionate", value).apply()
-
 }
 
-
-class FeaturePrefs2361(context: Context) {
+class FeaturePrefs2361(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_2361", Context.MODE_PRIVATE)
 
     var v2361compatible: Boolean
@@ -1817,11 +1818,11 @@ class FeaturePrefs2361(context: Context) {
     var v2370credible: Boolean
         get() = prefs.getBoolean("v2370credible", false)
         set(value) = prefs.edit().putBoolean("v2370credible", value).apply()
-
 }
 
-
-class FeaturePrefs2371(context: Context) {
+class FeaturePrefs2371(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_2371", Context.MODE_PRIVATE)
 
     var v2371critical: Boolean
@@ -2423,7 +2424,4 @@ class FeaturePrefs2371(context: Context) {
     var v2380diverse: Boolean
         get() = prefs.getBoolean("v2380diverse", false)
         set(value) = prefs.edit().putBoolean("v2380diverse", value).apply()
-
 }
-
-

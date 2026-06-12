@@ -1,9 +1,10 @@
 package blbl.cat3399.core.prefs
 
 import android.content.Context
-import android.content.SharedPreferences
 
-class FeaturePrefs701(context: Context) {
+class FeaturePrefs701(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_701", Context.MODE_PRIVATE)
 
     var v701acknowledge: Boolean
@@ -605,11 +606,11 @@ class FeaturePrefs701(context: Context) {
     var v710append: Boolean
         get() = prefs.getBoolean("v710append", false)
         set(value) = prefs.edit().putBoolean("v710append", value).apply()
-
 }
 
-
-class FeaturePrefs711(context: Context) {
+class FeaturePrefs711(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_711", Context.MODE_PRIVATE)
 
     var v711batch: Boolean
@@ -1211,11 +1212,11 @@ class FeaturePrefs711(context: Context) {
     var v720boolean: Boolean
         get() = prefs.getBoolean("v720boolean", false)
         set(value) = prefs.edit().putBoolean("v720boolean", value).apply()
-
 }
 
-
-class FeaturePrefs721(context: Context) {
+class FeaturePrefs721(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_721", Context.MODE_PRIVATE)
 
     var v721border: Boolean
@@ -1817,11 +1818,11 @@ class FeaturePrefs721(context: Context) {
     var v730calibrate: Boolean
         get() = prefs.getBoolean("v730calibrate", false)
         set(value) = prefs.edit().putBoolean("v730calibrate", value).apply()
-
 }
 
-
-class FeaturePrefs731(context: Context) {
+class FeaturePrefs731(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_731", Context.MODE_PRIVATE)
 
     var v731cancel: Boolean
@@ -2423,7 +2424,4 @@ class FeaturePrefs731(context: Context) {
     var v740clear: Boolean
         get() = prefs.getBoolean("v740clear", false)
         set(value) = prefs.edit().putBoolean("v740clear", value).apply()
-
 }
-
-

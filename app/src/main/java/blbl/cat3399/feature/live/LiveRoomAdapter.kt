@@ -37,7 +37,7 @@ class LiveRoomAdapter(
             oldList = oldList,
             newList = items,
             areItemsTheSame = { old: LiveRoomCard, new: LiveRoomCard -> old.roomId == new.roomId },
-            areContentsTheSame = { old: LiveRoomCard, new: LiveRoomCard -> old == new }
+            areContentsTheSame = { old: LiveRoomCard, new: LiveRoomCard -> old == new },
         )
     }
 
@@ -50,7 +50,10 @@ class LiveRoomAdapter(
 
     override fun getItemId(position: Int): Long = items[position].roomId
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Vh {
+    override fun onCreateViewHolder(
+        parent: ViewGroup,
+        viewType: Int,
+    ): Vh {
         val binding =
             ItemLiveCardBinding.inflate(
                 LayoutInflater.from(parent.context).cloneInUserScale(parent.context),
@@ -60,12 +63,20 @@ class LiveRoomAdapter(
         return Vh(binding)
     }
 
-    override fun onBindViewHolder(holder: Vh, position: Int) = holder.bind(items[position], onClick)
+    override fun onBindViewHolder(
+        holder: Vh,
+        position: Int,
+    ) = holder.bind(items[position], onClick)
 
     override fun getItemCount(): Int = items.size
 
-    class Vh(private val binding: ItemLiveCardBinding) : RecyclerView.ViewHolder(binding.root) {
-        fun bind(item: LiveRoomCard, onClick: (position: Int, room: LiveRoomCard) -> Unit) {
+    class Vh(
+        private val binding: ItemLiveCardBinding,
+    ) : RecyclerView.ViewHolder(binding.root) {
+        fun bind(
+            item: LiveRoomCard,
+            onClick: (position: Int, room: LiveRoomCard) -> Unit,
+        ) {
             binding.tvTitle.text = item.title
             binding.tvSubtitle.text =
                 buildString {

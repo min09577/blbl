@@ -133,8 +133,8 @@ class HoldToTriggerController(
     }
 }
 
-private fun isHoldTriggerConfirmKey(keyCode: Int): Boolean {
-    return when (keyCode) {
+private fun isHoldTriggerConfirmKey(keyCode: Int): Boolean =
+    when (keyCode) {
         KeyEvent.KEYCODE_DPAD_CENTER,
         KeyEvent.KEYCODE_ENTER,
         KeyEvent.KEYCODE_NUMPAD_ENTER,
@@ -144,4 +144,3 @@ private fun isHoldTriggerConfirmKey(keyCode: Int): Boolean {
 
         else -> false
     }
-}

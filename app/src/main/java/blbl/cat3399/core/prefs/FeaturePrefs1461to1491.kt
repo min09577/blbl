@@ -1,9 +1,10 @@
 package blbl.cat3399.core.prefs
 
 import android.content.Context
-import android.content.SharedPreferences
 
-class FeaturePrefs1461(context: Context) {
+class FeaturePrefs1461(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1461", Context.MODE_PRIVATE)
 
     var v1461flavor: Boolean
@@ -605,11 +606,11 @@ class FeaturePrefs1461(context: Context) {
     var v1470forget: Boolean
         get() = prefs.getBoolean("v1470forget", false)
         set(value) = prefs.edit().putBoolean("v1470forget", value).apply()
-
 }
 
-
-class FeaturePrefs1471(context: Context) {
+class FeaturePrefs1471(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1471", Context.MODE_PRIVATE)
 
     var v1471fork: Boolean
@@ -1211,11 +1212,11 @@ class FeaturePrefs1471(context: Context) {
     var v1480fun: Boolean
         get() = prefs.getBoolean("v1480fun", false)
         set(value) = prefs.edit().putBoolean("v1480fun", value).apply()
-
 }
 
-
-class FeaturePrefs1481(context: Context) {
+class FeaturePrefs1481(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1481", Context.MODE_PRIVATE)
 
     var v1481furnace: Boolean
@@ -1817,11 +1818,11 @@ class FeaturePrefs1481(context: Context) {
     var v1490genius: Boolean
         get() = prefs.getBoolean("v1490genius", false)
         set(value) = prefs.edit().putBoolean("v1490genius", value).apply()
-
 }
 
-
-class FeaturePrefs1491(context: Context) {
+class FeaturePrefs1491(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1491", Context.MODE_PRIVATE)
 
     var v1491genre: Boolean
@@ -2423,7 +2424,4 @@ class FeaturePrefs1491(context: Context) {
     var v1500good: Boolean
         get() = prefs.getBoolean("v1500good", false)
         set(value) = prefs.edit().putBoolean("v1500good", value).apply()
-
 }
-
-

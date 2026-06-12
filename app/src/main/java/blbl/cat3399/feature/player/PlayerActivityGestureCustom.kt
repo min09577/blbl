@@ -9,7 +9,10 @@ import blbl.cat3399.core.ui.AppToast
  * 支持自定义双击左/右/中区域的动作
  */
 
-enum class GestureAction(val label: String, val icon: String) {
+enum class GestureAction(
+    val label: String,
+    val icon: String,
+) {
     NONE("无操作", "❌"),
     SEEK_BACK_10("快退10秒", "⏪"),
     SEEK_FORWARD_10("快进10秒", "⏩"),
@@ -26,71 +29,76 @@ enum class GestureAction(val label: String, val icon: String) {
 
 internal fun PlayerActivity.showGestureCustomizationDialog() {
     val items = GestureAction.entries.map { "${it.icon} ${it.label}" }.toTypedArray()
-    
+
     // 双击左侧
     val leftIndex = BiliClient.prefs.gestureDoubleTapLeft
     val centerIndex = BiliClient.prefs.gestureDoubleTapCenter
     val rightIndex = BiliClient.prefs.gestureDoubleTapRight
-    
-    val layout = android.widget.LinearLayout(this).apply {
-        orientation = android.widget.LinearLayout.VERTICAL
-        setPadding(48, 24, 48, 0)
-    }
-    
-    val leftLabel = android.widget.TextView(this).apply {
-        text = "双击左侧: ${GestureAction.entries.getOrElse(leftIndex) { GestureAction.SEEK_BACK_10 }.label}"
-        textSize = 14f
-        setPadding(0, 16, 0, 8)
-    }
-    val centerLabel = android.widget.TextView(this).apply {
-        text = "双击中间: ${GestureAction.entries.getOrElse(centerIndex) { GestureAction.TOGGLE_PLAY_PAUSE }.label}"
-        textSize = 14f
-        setPadding(0, 16, 0, 8)
-    }
-    val rightLabel = android.widget.TextView(this).apply {
-        text = "双击右侧: ${GestureAction.entries.getOrElse(rightIndex) { GestureAction.SEEK_FORWARD_10 }.label}"
-        textSize = 14f
-        setPadding(0, 16, 0, 8)
-    }
-    
+
+    val layout =
+        android.widget.LinearLayout(this).apply {
+            orientation = android.widget.LinearLayout.VERTICAL
+            setPadding(48, 24, 48, 0)
+        }
+
+    val leftLabel =
+        android.widget.TextView(this).apply {
+            text = "双击左侧: ${GestureAction.entries.getOrElse(leftIndex) { GestureAction.SEEK_BACK_10 }.label}"
+            textSize = 14f
+            setPadding(0, 16, 0, 8)
+        }
+    val centerLabel =
+        android.widget.TextView(this).apply {
+            text = "双击中间: ${GestureAction.entries.getOrElse(centerIndex) { GestureAction.TOGGLE_PLAY_PAUSE }.label}"
+            textSize = 14f
+            setPadding(0, 16, 0, 8)
+        }
+    val rightLabel =
+        android.widget.TextView(this).apply {
+            text = "双击右侧: ${GestureAction.entries.getOrElse(rightIndex) { GestureAction.SEEK_FORWARD_10 }.label}"
+            textSize = 14f
+            setPadding(0, 16, 0, 8)
+        }
+
     layout.addView(leftLabel)
     layout.addView(centerLabel)
     layout.addView(rightLabel)
-    
+
     leftLabel.setOnClickListener {
-        AlertDialog.Builder(this)
+        AlertDialog
+            .Builder(this)
             .setTitle("双击左侧动作")
             .setSingleChoiceItems(items, leftIndex) { d, which ->
                 BiliClient.prefs.gestureDoubleTapLeft = which
                 leftLabel.text = "双击左侧: ${GestureAction.entries[which].label}"
                 d.dismiss()
-            }
-            .show()
+            }.show()
     }
-    
+
     centerLabel.setOnClickListener {
-        AlertDialog.Builder(this)
+        AlertDialog
+            .Builder(this)
             .setTitle("双击中间动作")
             .setSingleChoiceItems(items, centerIndex) { d, which ->
                 BiliClient.prefs.gestureDoubleTapCenter = which
                 centerLabel.text = "双击中间: ${GestureAction.entries[which].label}"
                 d.dismiss()
-            }
-            .show()
+            }.show()
     }
-    
+
     rightLabel.setOnClickListener {
-        AlertDialog.Builder(this)
+        AlertDialog
+            .Builder(this)
             .setTitle("双击右侧动作")
             .setSingleChoiceItems(items, rightIndex) { d, which ->
                 BiliClient.prefs.gestureDoubleTapRight = which
                 rightLabel.text = "双击右侧: ${GestureAction.entries[which].label}"
                 d.dismiss()
-            }
-            .show()
+            }.show()
     }
-    
-    AlertDialog.Builder(this)
+
+    AlertDialog
+        .Builder(this)
         .setTitle("手势自定义")
         .setView(layout)
         .setPositiveButton("确定", null)
@@ -99,8 +107,7 @@ internal fun PlayerActivity.showGestureCustomizationDialog() {
             BiliClient.prefs.gestureDoubleTapCenter = GestureAction.TOGGLE_PLAY_PAUSE.ordinal
             BiliClient.prefs.gestureDoubleTapRight = GestureAction.SEEK_FORWARD_10.ordinal
             AppToast.show(this, "手势已重置为默认")
-        }
-        .show()
+        }.show()
 }
 
 internal fun PlayerActivity.executeGestureAction(actionIndex: Int) {
@@ -135,7 +142,8 @@ internal fun PlayerActivity.executeGestureAction(actionIndex: Int) {
             try {
                 val btn = binding.root.findViewById<android.view.View>(blbl.cat3399.R.id.btn_screenshot)
                 btn?.performClick()
-            } catch (_: Throwable) {}
+            } catch (_: Throwable) {
+            }
         }
         GestureAction.TOGGLE_MIRROR -> {
             val current = session.videoMirror

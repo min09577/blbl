@@ -9,8 +9,8 @@ import blbl.cat3399.core.io.CreateDocumentContract
 import blbl.cat3399.core.net.BiliClient
 import blbl.cat3399.core.ui.BaseActivity
 import blbl.cat3399.core.ui.FocusTreeUtils
-import blbl.cat3399.core.ui.cloneInUserScale
 import blbl.cat3399.core.ui.Immersive
+import blbl.cat3399.core.ui.cloneInUserScale
 import blbl.cat3399.core.ui.popup.PopupHost
 import blbl.cat3399.databinding.ActivitySettingsBinding
 
@@ -140,9 +140,8 @@ class SettingsActivity : BaseActivity() {
         return super.dispatchKeyEvent(event)
     }
 
-    private fun isBackLikeKey(keyCode: Int): Boolean {
-        return keyCode == KeyEvent.KEYCODE_BACK ||
+    private fun isBackLikeKey(keyCode: Int): Boolean =
+        keyCode == KeyEvent.KEYCODE_BACK ||
             keyCode == KeyEvent.KEYCODE_ESCAPE ||
             keyCode == KeyEvent.KEYCODE_BUTTON_B
-    }
 }

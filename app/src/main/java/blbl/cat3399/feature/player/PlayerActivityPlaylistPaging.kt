@@ -10,21 +10,19 @@ import kotlinx.coroutines.withContext
 
 private typealias PlaylistLoadCallback = (Boolean) -> Unit
 
-internal fun PlayerActivity.hasMorePlaylistItems(kind: PlayerVideoListKind): Boolean {
-    return when (kind) {
+internal fun PlayerActivity.hasMorePlaylistItems(kind: PlayerVideoListKind): Boolean =
+    when (kind) {
         PlayerVideoListKind.PAGE -> pageListContinuation?.hasMore == true
         PlayerVideoListKind.PARTS -> partsListContinuation?.hasMore == true
         PlayerVideoListKind.RECOMMEND -> false
     }
-}
 
-internal fun PlayerActivity.isPlaylistLoadMoreRunning(kind: PlayerVideoListKind): Boolean {
-    return when (kind) {
+internal fun PlayerActivity.isPlaylistLoadMoreRunning(kind: PlayerVideoListKind): Boolean =
+    when (kind) {
         PlayerVideoListKind.PAGE -> pageListLoadMoreJob?.isActive == true
         PlayerVideoListKind.PARTS -> partsListLoadMoreJob?.isActive == true
         PlayerVideoListKind.RECOMMEND -> false
     }
-}
 
 internal fun PlayerActivity.preloadNextPageForPlaylist(kind: PlayerVideoListKind) {
     if (!hasMorePlaylistItems(kind)) return
@@ -134,7 +132,10 @@ internal fun PlayerActivity.loadMorePlaylist(
     }
 }
 
-private fun PlayerActivity.applyPlaylistAppend(kind: PlayerVideoListKind, parsed: PlaylistParsed) {
+private fun PlayerActivity.applyPlaylistAppend(
+    kind: PlayerVideoListKind,
+    parsed: PlaylistParsed,
+) {
     when (kind) {
         PlayerVideoListKind.PAGE -> {
             pageListItems = pageListItems + parsed.items
@@ -165,13 +166,12 @@ private fun PlayerActivity.syncPagePlaylistToken() {
     )
 }
 
-private fun PlayerActivity.callbacksForPlaylist(kind: PlayerVideoListKind): ArrayList<PlaylistLoadCallback> {
-    return when (kind) {
+private fun PlayerActivity.callbacksForPlaylist(kind: PlayerVideoListKind): ArrayList<PlaylistLoadCallback> =
+    when (kind) {
         PlayerVideoListKind.PAGE -> pageListLoadMoreCallbacks
         PlayerVideoListKind.PARTS -> partsListLoadMoreCallbacks
         PlayerVideoListKind.RECOMMEND -> pageListLoadMoreCallbacks
     }
-}
 
 private fun PlayerActivity.playlistLoadMoreFailureMessage(
     kind: PlayerVideoListKind,

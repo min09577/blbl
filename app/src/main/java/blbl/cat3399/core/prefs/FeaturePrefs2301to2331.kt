@@ -1,9 +1,10 @@
 package blbl.cat3399.core.prefs
 
 import android.content.Context
-import android.content.SharedPreferences
 
-class FeaturePrefs2301(context: Context) {
+class FeaturePrefs2301(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_2301", Context.MODE_PRIVATE)
 
     var v2301treated: Boolean
@@ -605,11 +606,11 @@ class FeaturePrefs2301(context: Context) {
     var v2310updated: Boolean
         get() = prefs.getBoolean("v2310updated", false)
         set(value) = prefs.edit().putBoolean("v2310updated", value).apply()
-
 }
 
-
-class FeaturePrefs2311(context: Context) {
+class FeaturePrefs2311(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_2311", Context.MODE_PRIVATE)
 
     var v2311upgraded: Boolean
@@ -1211,11 +1212,11 @@ class FeaturePrefs2311(context: Context) {
     var v2320warned: Boolean
         get() = prefs.getBoolean("v2320warned", false)
         set(value) = prefs.edit().putBoolean("v2320warned", value).apply()
-
 }
 
-
-class FeaturePrefs2321(context: Context) {
+class FeaturePrefs2321(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_2321", Context.MODE_PRIVATE)
 
     var v2321warped: Boolean
@@ -1817,11 +1818,11 @@ class FeaturePrefs2321(context: Context) {
     var v2330wrapped: Boolean
         get() = prefs.getBoolean("v2330wrapped", false)
         set(value) = prefs.edit().putBoolean("v2330wrapped", value).apply()
-
 }
 
-
-class FeaturePrefs2331(context: Context) {
+class FeaturePrefs2331(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_2331", Context.MODE_PRIVATE)
 
     var v2331yielded: Boolean
@@ -2423,7 +2424,4 @@ class FeaturePrefs2331(context: Context) {
     var v2340apparent: Boolean
         get() = prefs.getBoolean("v2340apparent", false)
         set(value) = prefs.edit().putBoolean("v2340apparent", value).apply()
-
 }
-
-

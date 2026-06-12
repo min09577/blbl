@@ -7,6 +7,7 @@ private const val BUFFERING_SPEED_STALE_MS = 2_000L
 
 internal class BufferingSpeedMeter {
     @Volatile private var lastBytesPerSecond: Long? = null
+
     @Volatile private var lastUpdatedAtMs: Long = 0L
 
     private var sampleBytes: Long = 0L
@@ -21,7 +22,10 @@ internal class BufferingSpeedMeter {
     }
 
     @Synchronized
-    fun addBytes(bytes: Long, nowMs: Long = SystemClock.elapsedRealtime()) {
+    fun addBytes(
+        bytes: Long,
+        nowMs: Long = SystemClock.elapsedRealtime(),
+    ) {
         if (bytes <= 0L) return
         if (sampleStartAtMs <= 0L) {
             sampleStartAtMs = nowMs

@@ -27,16 +27,16 @@ object PlayerOsdSizing {
         activity.theme.applyStyle(R.style.ThemeOverlay_Blbl_PlayerOsd_Normal, true)
     }
 
-    fun inflationContext(activity: Activity): Context {
-        return ContextThemeWrapper(
+    fun inflationContext(activity: Activity): Context =
+        ContextThemeWrapper(
             activity.userScaledContext(),
             R.style.ThemeOverlay_Blbl_PlayerOsd_Normal,
         )
-    }
 
-    fun cloneInflater(activity: Activity, baseInflater: LayoutInflater): LayoutInflater {
-        return baseInflater.cloneInContext(inflationContext(activity))
-    }
+    fun cloneInflater(
+        activity: Activity,
+        baseInflater: LayoutInflater,
+    ): LayoutInflater = baseInflater.cloneInContext(inflationContext(activity))
 }
 
 /**
@@ -115,11 +115,16 @@ internal object PlayerUiMode {
         var lastAppliedScale: Float? = null,
     )
 
-    fun applyVideo(activity: Activity, binding: ActivityPlayerBinding) {
+    fun applyVideo(
+        activity: Activity,
+        binding: ActivityPlayerBinding,
+    ) {
         val uiScale = UiScale.factor(activity).takeIf { it.isFinite() && it > 0f } ?: 1.0f
         val scaler = binding.root.context.uiScaler(uiScale)
         val viewScale = scaler.scale
+
         fun scaledPx(id: Int): Int = scaler.scaledDimenPx(id)
+
         fun scaledPxF(id: Int): Float = scaler.scaledDimenPxF(id)
 
         applyBottomListPanelSizing(binding = binding, viewScale = viewScale, userScale = uiScale)
@@ -392,11 +397,16 @@ internal object PlayerUiMode {
         applyBufferingOverlaySizing(binding = binding, scaledPx = ::scaledPx, scaledPxF = ::scaledPxF)
     }
 
-    fun applyLive(activity: Activity, binding: ActivityPlayerBinding) {
+    fun applyLive(
+        activity: Activity,
+        binding: ActivityPlayerBinding,
+    ) {
         val uiScale = UiScale.factor(activity).takeIf { it.isFinite() && it > 0f } ?: 1.0f
         val scaler = binding.root.context.uiScaler(uiScale)
         val viewScale = scaler.scale
+
         fun scaledPx(id: Int): Int = scaler.scaledDimenPx(id)
+
         fun scaledPxF(id: Int): Float = scaler.scaledDimenPxF(id)
 
         applySidePanelsSizing(binding = binding, scale = viewScale)
@@ -579,9 +589,13 @@ internal object PlayerUiMode {
         state.lastAppliedScale = s
 
         fun scaledPx(basePx: Int): Int = (basePx * s).roundToInt().coerceAtLeast(0)
+
         fun scaledPxF(basePx: Float): Float = (basePx * s).coerceAtLeast(0f)
 
-        fun applyMargins(view: View, base: Margins) {
+        fun applyMargins(
+            view: View,
+            base: Margins,
+        ) {
             val lp = view.layoutParams as? MarginLayoutParams ?: return
             val ms = scaledPx(base.start)
             val mt = scaledPx(base.top)
@@ -596,7 +610,10 @@ internal object PlayerUiMode {
             }
         }
 
-        fun applyPadding(view: View, base: Insets) {
+        fun applyPadding(
+            view: View,
+            base: Insets,
+        ) {
             val pl = scaledPx(base.left)
             val pt = scaledPx(base.top)
             val pr = scaledPx(base.right)
@@ -606,7 +623,10 @@ internal object PlayerUiMode {
             }
         }
 
-        fun applyTextView(view: android.widget.TextView, base: TextViewMetrics) {
+        fun applyTextView(
+            view: android.widget.TextView,
+            base: TextViewMetrics,
+        ) {
             applyMargins(view, base.margins)
             applyPadding(view, base.padding)
             val textSize = scaledPxF(base.textSizePx).coerceAtLeast(1f)
@@ -647,7 +667,10 @@ internal object PlayerUiMode {
         (binding.recyclerRecommend.adapter as? VideoCardAdapter)?.invalidateSizing()
     }
 
-    private fun applySidePanelsSizing(binding: ActivityPlayerBinding, scale: Float) {
+    private fun applySidePanelsSizing(
+        binding: ActivityPlayerBinding,
+        scale: Float,
+    ) {
         val s = scale.takeIf { it.isFinite() && it > 0f } ?: 1.0f
 
         val state =
@@ -661,9 +684,13 @@ internal object PlayerUiMode {
         state.lastAppliedScale = s
 
         fun scaledPx(basePx: Int): Int = (basePx * s).roundToInt().coerceAtLeast(0)
+
         fun scaledPxF(basePx: Float): Float = (basePx * s).coerceAtLeast(0f)
 
-        fun applyMargins(view: View, base: Margins) {
+        fun applyMargins(
+            view: View,
+            base: Margins,
+        ) {
             val lp = view.layoutParams as? MarginLayoutParams ?: return
             val ms = scaledPx(base.start)
             val mt = scaledPx(base.top)
@@ -678,7 +705,10 @@ internal object PlayerUiMode {
             }
         }
 
-        fun applyPadding(view: View, base: Insets) {
+        fun applyPadding(
+            view: View,
+            base: Insets,
+        ) {
             val pl = scaledPx(base.left)
             val pt = scaledPx(base.top)
             val pr = scaledPx(base.right)
@@ -688,7 +718,10 @@ internal object PlayerUiMode {
             }
         }
 
-        fun applyTextView(view: android.widget.TextView, base: TextViewMetrics) {
+        fun applyTextView(
+            view: android.widget.TextView,
+            base: TextViewMetrics,
+        ) {
             applyMargins(view, base.margins)
             applyPadding(view, base.padding)
             val textSize = scaledPxF(base.textSizePx).coerceAtLeast(1f)
@@ -759,22 +792,20 @@ internal object PlayerUiMode {
             )
         }
 
-        fun capturePadding(view: View): Insets {
-            return Insets(
+        fun capturePadding(view: View): Insets =
+            Insets(
                 left = view.paddingLeft,
                 top = view.paddingTop,
                 right = view.paddingRight,
                 bottom = view.paddingBottom,
             )
-        }
 
-        fun captureTextViewMetrics(view: android.widget.TextView): TextViewMetrics {
-            return TextViewMetrics(
+        fun captureTextViewMetrics(view: android.widget.TextView): TextViewMetrics =
+            TextViewMetrics(
                 margins = captureMargins(view),
                 padding = capturePadding(view),
                 textSizePx = view.textSize,
             )
-        }
 
         return ListPanelBaseMetrics(
             panelMargins = captureMargins(binding.recommendPanel),
@@ -792,7 +823,10 @@ internal object PlayerUiMode {
         )
     }
 
-    private fun scaledListPanelGuidelinePercent(basePercent: Float, userScale: Float): Float {
+    private fun scaledListPanelGuidelinePercent(
+        basePercent: Float,
+        userScale: Float,
+    ): Float {
         val s = userScale.takeIf { it.isFinite() && it > 0f } ?: 1.0f
         val base = basePercent.takeIf { it.isFinite() } ?: 0.47f
 
@@ -822,22 +856,20 @@ internal object PlayerUiMode {
             )
         }
 
-        fun capturePadding(view: View): Insets {
-            return Insets(
+        fun capturePadding(view: View): Insets =
+            Insets(
                 left = view.paddingLeft,
                 top = view.paddingTop,
                 right = view.paddingRight,
                 bottom = view.paddingBottom,
             )
-        }
 
-        fun captureTextViewMetrics(view: android.widget.TextView): TextViewMetrics {
-            return TextViewMetrics(
+        fun captureTextViewMetrics(view: android.widget.TextView): TextViewMetrics =
+            TextViewMetrics(
                 margins = captureMargins(view),
                 padding = capturePadding(view),
                 textSizePx = view.textSize,
             )
-        }
 
         val settingsContainer = (binding.recyclerSettings.parent as? View) ?: binding.recyclerSettings
         val commentsContainer = (binding.rowCommentSort.parent as? View) ?: binding.rowCommentSort
@@ -864,7 +896,11 @@ internal object PlayerUiMode {
         )
     }
 
-    private fun setSize(view: View, widthPx: Int, heightPx: Int) {
+    private fun setSize(
+        view: View,
+        widthPx: Int,
+        heightPx: Int,
+    ) {
         val lp = view.layoutParams ?: return
         if (lp.width == widthPx && lp.height == heightPx) return
         lp.width = widthPx
@@ -875,8 +911,13 @@ internal object PlayerUiMode {
     private fun cloneSeekThumbDrawable(binding: ActivityPlayerBinding): Drawable? {
         val context = binding.root.context
         val resources = context.resources
-        binding.seekProgress.thumb?.constantState?.newDrawable(resources)?.mutate()?.let { return it }
-        return ContextCompat.getDrawable(context, R.drawable.seekbar_player_thumb)
+        binding.seekProgress.thumb
+            ?.constantState
+            ?.newDrawable(resources)
+            ?.mutate()
+            ?.let { return it }
+        return ContextCompat
+            .getDrawable(context, R.drawable.seekbar_player_thumb)
             ?.constantState
             ?.newDrawable(resources)
             ?.mutate()

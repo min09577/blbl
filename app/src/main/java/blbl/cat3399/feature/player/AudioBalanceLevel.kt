@@ -15,14 +15,12 @@ internal enum class AudioBalanceLevel(
     companion object {
         val ordered: List<AudioBalanceLevel> = listOf(Off, Low, Medium, High)
 
-        fun fromPrefValue(value: String): AudioBalanceLevel {
-            return when (value.trim()) {
+        fun fromPrefValue(value: String): AudioBalanceLevel =
+            when (value.trim()) {
                 AppPrefs.PLAYER_AUDIO_BALANCE_LOW -> Low
                 AppPrefs.PLAYER_AUDIO_BALANCE_MEDIUM -> Medium
                 AppPrefs.PLAYER_AUDIO_BALANCE_HIGH -> High
                 else -> Off
             }
-        }
     }
 }
-

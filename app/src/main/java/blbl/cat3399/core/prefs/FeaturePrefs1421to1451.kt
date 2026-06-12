@@ -1,9 +1,10 @@
 package blbl.cat3399.core.prefs
 
 import android.content.Context
-import android.content.SharedPreferences
 
-class FeaturePrefs1421(context: Context) {
+class FeaturePrefs1421(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1421", Context.MODE_PRIVATE)
 
     var v1421enemy: Boolean
@@ -605,11 +606,11 @@ class FeaturePrefs1421(context: Context) {
     var v1430ethic: Boolean
         get() = prefs.getBoolean("v1430ethic", false)
         set(value) = prefs.edit().putBoolean("v1430ethic", value).apply()
-
 }
 
-
-class FeaturePrefs1431(context: Context) {
+class FeaturePrefs1431(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1431", Context.MODE_PRIVATE)
 
     var v1431event: Boolean
@@ -1211,11 +1212,11 @@ class FeaturePrefs1431(context: Context) {
     var v1440fade: Boolean
         get() = prefs.getBoolean("v1440fade", false)
         set(value) = prefs.edit().putBoolean("v1440fade", value).apply()
-
 }
 
-
-class FeaturePrefs1441(context: Context) {
+class FeaturePrefs1441(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1441", Context.MODE_PRIVATE)
 
     var v1441fair: Boolean
@@ -1817,11 +1818,11 @@ class FeaturePrefs1441(context: Context) {
     var v1450ferry: Boolean
         get() = prefs.getBoolean("v1450ferry", false)
         set(value) = prefs.edit().putBoolean("v1450ferry", value).apply()
-
 }
 
-
-class FeaturePrefs1451(context: Context) {
+class FeaturePrefs1451(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1451", Context.MODE_PRIVATE)
 
     var v1451fever: Boolean
@@ -2423,7 +2424,4 @@ class FeaturePrefs1451(context: Context) {
     var v1460flame: Boolean
         get() = prefs.getBoolean("v1460flame", false)
         set(value) = prefs.edit().putBoolean("v1460flame", value).apply()
-
 }
-
-

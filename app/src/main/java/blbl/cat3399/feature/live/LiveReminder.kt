@@ -13,14 +13,12 @@ import blbl.cat3399.R
 import blbl.cat3399.ui.MainActivity
 import org.json.JSONArray
 import org.json.JSONObject
-import java.util.*
 
 /**
  * v4.14: 直播预约提醒
  * 使用 AlarmManager + BroadcastReceiver，无需额外依赖
  */
 object LiveReminder {
-
     private const val CHANNEL_ID = "live_reminder"
     private const val PREFS_NAME = "live_reminders"
     private const val KEY_REMINDERS = "reminders"
@@ -37,13 +35,14 @@ object LiveReminder {
 
     fun initChannel(context: Context) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            val channel = NotificationChannel(
-                CHANNEL_ID,
-                "直播提醒",
-                NotificationManager.IMPORTANCE_HIGH
-            ).apply {
-                description = "直播开播提醒通知"
-            }
+            val channel =
+                NotificationChannel(
+                    CHANNEL_ID,
+                    "直播提醒",
+                    NotificationManager.IMPORTANCE_HIGH,
+                ).apply {
+                    description = "直播开播提醒通知"
+                }
             val nm = context.getSystemService(NotificationManager::class.java)
             nm.createNotificationChannel(channel)
         }
@@ -52,7 +51,10 @@ object LiveReminder {
     /**
      * 添加预约提醒
      */
-    fun addReminder(context: Context, reminder: Reminder): Boolean {
+    fun addReminder(
+        context: Context,
+        reminder: Reminder,
+    ): Boolean {
         val reminders = getAllReminders(context).toMutableList()
         if (reminders.any { it.roomId == reminder.roomId && it.scheduledTimeMs == reminder.scheduledTimeMs }) {
             return false // 已存在
@@ -66,7 +68,10 @@ object LiveReminder {
     /**
      * 取消预约
      */
-    fun removeReminder(context: Context, roomId: Long) {
+    fun removeReminder(
+        context: Context,
+        roomId: Long,
+    ) {
         val reminders = getAllReminders(context).toMutableList()
         val removed = reminders.filter { it.roomId == roomId }
         reminders.removeAll { it.roomId == roomId }
@@ -75,12 +80,13 @@ object LiveReminder {
         val am = context.getSystemService(Context.ALARM_SERVICE) as AlarmManager
         removed.forEach { reminder ->
             val intent = Intent(context, LiveReminderReceiver::class.java)
-            val pi = PendingIntent.getBroadcast(
-                context,
-                reminder.notificationId,
-                intent,
-                PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE,
-            )
+            val pi =
+                PendingIntent.getBroadcast(
+                    context,
+                    reminder.notificationId,
+                    intent,
+                    PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE,
+                )
             am.cancel(pi)
         }
     }
@@ -102,7 +108,7 @@ object LiveReminder {
                     upName = obj.optString("upName", ""),
                     scheduledTimeMs = obj.getLong("scheduledTimeMs"),
                     createdAtMs = obj.optLong("createdAtMs", System.currentTimeMillis()),
-                )
+                ),
             )
         }
         return result
@@ -111,40 +117,52 @@ object LiveReminder {
     /**
      * 检查是否已预约
      */
-    fun isReminderSet(context: Context, roomId: Long): Boolean {
-        return getAllReminders(context).any { it.roomId == roomId }
-    }
+    fun isReminderSet(
+        context: Context,
+        roomId: Long,
+    ): Boolean = getAllReminders(context).any { it.roomId == roomId }
 
-    private fun saveReminders(context: Context, reminders: List<Reminder>) {
+    private fun saveReminders(
+        context: Context,
+        reminders: List<Reminder>,
+    ) {
         val arr = JSONArray()
         reminders.forEach { r ->
-            arr.put(JSONObject().apply {
-                put("roomId", r.roomId)
-                put("roomTitle", r.roomTitle)
-                put("upName", r.upName)
-                put("scheduledTimeMs", r.scheduledTimeMs)
-                put("createdAtMs", r.createdAtMs)
-            })
+            arr.put(
+                JSONObject().apply {
+                    put("roomId", r.roomId)
+                    put("roomTitle", r.roomTitle)
+                    put("upName", r.upName)
+                    put("scheduledTimeMs", r.scheduledTimeMs)
+                    put("createdAtMs", r.createdAtMs)
+                },
+            )
         }
-        context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
+        context
+            .getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
             .edit()
             .putString(KEY_REMINDERS, arr.toString())
             .apply()
     }
 
-    private fun scheduleAlarm(context: Context, reminder: Reminder) {
+    private fun scheduleAlarm(
+        context: Context,
+        reminder: Reminder,
+    ) {
         val am = context.getSystemService(Context.ALARM_SERVICE) as AlarmManager
-        val intent = Intent(context, LiveReminderReceiver::class.java).apply {
-            putExtra("roomId", reminder.roomId)
-            putExtra("roomTitle", reminder.roomTitle)
-            putExtra("upName", reminder.upName)
-        }
-        val pi = PendingIntent.getBroadcast(
-            context,
-            reminder.notificationId,
-            intent,
-            PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE,
-        )
+        val intent =
+            Intent(context, LiveReminderReceiver::class.java).apply {
+                putExtra("roomId", reminder.roomId)
+                putExtra("roomTitle", reminder.roomTitle)
+                putExtra("upName", reminder.upName)
+            }
+        val pi =
+            PendingIntent.getBroadcast(
+                context,
+                reminder.notificationId,
+                intent,
+                PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE,
+            )
 
         // 提前1分钟提醒
         val triggerTime = reminder.scheduledTimeMs - 60_000
@@ -157,26 +175,35 @@ object LiveReminder {
         }
     }
 
-    fun sendNotificationNow(context: Context, roomId: Long, roomTitle: String, upName: String) {
+    fun sendNotificationNow(
+        context: Context,
+        roomId: Long,
+        roomTitle: String,
+        upName: String,
+    ) {
         val nm = context.getSystemService(NotificationManager::class.java)
-        val intent = Intent(context, MainActivity::class.java).apply {
-            putExtra("liveRoomId", roomId)
-            flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TOP
-        }
-        val pi = PendingIntent.getActivity(
-            context,
-            roomId.toInt(),
-            intent,
-            PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE,
-        )
-        val notification = NotificationCompat.Builder(context, CHANNEL_ID)
-            .setSmallIcon(R.mipmap.ic_launcher_foreground)
-            .setContentTitle("$upName 开播了！")
-            .setContentText(roomTitle)
-            .setPriority(NotificationCompat.PRIORITY_HIGH)
-            .setAutoCancel(true)
-            .setContentIntent(pi)
-            .build()
+        val intent =
+            Intent(context, MainActivity::class.java).apply {
+                putExtra("liveRoomId", roomId)
+                flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TOP
+            }
+        val pi =
+            PendingIntent.getActivity(
+                context,
+                roomId.toInt(),
+                intent,
+                PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE,
+            )
+        val notification =
+            NotificationCompat
+                .Builder(context, CHANNEL_ID)
+                .setSmallIcon(R.mipmap.ic_launcher_foreground)
+                .setContentTitle("$upName 开播了！")
+                .setContentText(roomTitle)
+                .setPriority(NotificationCompat.PRIORITY_HIGH)
+                .setAutoCancel(true)
+                .setContentIntent(pi)
+                .build()
         nm.notify(roomId.toInt(), notification)
     }
 }
@@ -185,7 +212,10 @@ object LiveReminder {
  * AlarmManager 触发的广播接收器
  */
 class LiveReminderReceiver : BroadcastReceiver() {
-    override fun onReceive(context: Context, intent: Intent) {
+    override fun onReceive(
+        context: Context,
+        intent: Intent,
+    ) {
         val roomId = intent.getLongExtra("roomId", 0)
         val roomTitle = intent.getStringExtra("roomTitle") ?: ""
         val upName = intent.getStringExtra("upName") ?: ""

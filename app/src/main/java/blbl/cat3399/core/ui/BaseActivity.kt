@@ -3,8 +3,8 @@ package blbl.cat3399.core.ui
 import android.app.Activity
 import android.content.Context
 import android.os.BadParcelableException
-import android.os.Bundle
 import android.os.Build
+import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import blbl.cat3399.core.log.AppLog
 import blbl.cat3399.core.theme.ThemePresets
@@ -18,11 +18,12 @@ open class BaseActivity : AppCompatActivity() {
     override fun attachBaseContext(newBase: Context) {
         val wrapped = UiDensity.wrap(newBase)
         // v5.0: 应用全局字体大小缩放
-        val fontScale = try {
-            blbl.cat3399.core.net.BiliClient.prefs.fontScaleFactor
-        } catch (_: Exception) {
-            1.0f
-        }
+        val fontScale =
+            try {
+                blbl.cat3399.core.net.BiliClient.prefs.fontScaleFactor
+            } catch (_: Exception) {
+                1.0f
+            }
         if (fontScale != 1.0f && fontScale.isFinite()) {
             val config = android.content.res.Configuration(wrapped.resources.configuration)
             config.fontScale = fontScale

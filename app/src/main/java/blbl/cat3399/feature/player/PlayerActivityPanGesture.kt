@@ -1,7 +1,6 @@
 package blbl.cat3399.feature.player
 
 import android.view.MotionEvent
-import android.view.View
 import blbl.cat3399.core.ui.AppToast
 
 /**
@@ -17,7 +16,7 @@ private var isPanning = false
 
 internal fun PlayerActivity.initPanGesture() {
     val overlay = requirePlayerTouchOverlayBinding(binding)
-    
+
     // 使用 touchGestureLayer 的触摸事件来检测双指平移
     overlay.touchGestureLayer.setOnTouchListener { _, event ->
         when (event.pointerCount) {
@@ -35,13 +34,13 @@ internal fun PlayerActivity.initPanGesture() {
                             val currentY = (event.getY(0) + event.getY(1)) / 2
                             val dx = currentX - lastPanX
                             val dy = currentY - lastPanY
-                            
+
                             currentTranslateX += dx
                             currentTranslateY += dy
-                            
+
                             binding.playerView.translationX = currentTranslateX
                             binding.playerView.translationY = currentTranslateY
-                            
+
                             lastPanX = currentX
                             lastPanY = currentY
                             true

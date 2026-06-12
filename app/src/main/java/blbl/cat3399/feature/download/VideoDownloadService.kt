@@ -14,14 +14,19 @@ import blbl.cat3399.R
 import blbl.cat3399.core.api.BiliApi
 import blbl.cat3399.core.api.video.VideoPlayKind
 import blbl.cat3399.core.api.video.VideoPlayRequest
-import kotlinx.coroutines.*
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.SupervisorJob
+import kotlinx.coroutines.cancel
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import java.io.File
 import java.io.FileOutputStream
 
 class VideoDownloadService : Service() {
-
     companion object {
         const val CHANNEL_ID = "video_download"
         const val NOTIFICATION_ID = 1001
@@ -31,14 +36,22 @@ class VideoDownloadService : Service() {
         const val EXTRA_PAGE = "page"
         const val EXTRA_QN = "qn"
 
-        fun start(context: Context, bvid: String, cid: Long, title: String, page: String = "", qn: Int = 80) {
-            val intent = Intent(context, VideoDownloadService::class.java).apply {
-                putExtra(EXTRA_BVID, bvid)
-                putExtra(EXTRA_CID, cid)
-                putExtra(EXTRA_TITLE, title)
-                putExtra(EXTRA_PAGE, page)
-                putExtra(EXTRA_QN, qn)
-            }
+        fun start(
+            context: Context,
+            bvid: String,
+            cid: Long,
+            title: String,
+            page: String = "",
+            qn: Int = 80,
+        ) {
+            val intent =
+                Intent(context, VideoDownloadService::class.java).apply {
+                    putExtra(EXTRA_BVID, bvid)
+                    putExtra(EXTRA_CID, cid)
+                    putExtra(EXTRA_TITLE, title)
+                    putExtra(EXTRA_PAGE, page)
+                    putExtra(EXTRA_QN, qn)
+                }
             context.startForegroundService(intent)
         }
     }
@@ -51,7 +64,11 @@ class VideoDownloadService : Service() {
         createNotificationChannel()
     }
 
-    override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
+    override fun onStartCommand(
+        intent: Intent?,
+        flags: Int,
+        startId: Int,
+    ): Int {
         val bvid = intent?.getStringExtra(EXTRA_BVID) ?: return START_NOT_STICKY
         val cid = intent.getLongExtra(EXTRA_CID, 0L)
         val title = intent.getStringExtra(EXTRA_TITLE) ?: "未知视频"
@@ -62,21 +79,28 @@ class VideoDownloadService : Service() {
         startForeground(NOTIFICATION_ID, notification)
 
         currentJob?.cancel()
-        currentJob = scope.launch {
-            try {
-                downloadVideo(bvid, cid, title, page, qn)
-            } catch (e: Exception) {
-                updateNotification(title, "下载失败: ${e.message}", 0, true)
-            } finally {
-                delay(2000)
-                stopSelf()
+        currentJob =
+            scope.launch {
+                try {
+                    downloadVideo(bvid, cid, title, page, qn)
+                } catch (e: Exception) {
+                    updateNotification(title, "下载失败: ${e.message}", 0, true)
+                } finally {
+                    delay(2000)
+                    stopSelf()
+                }
             }
-        }
 
         return START_NOT_STICKY
     }
 
-    private suspend fun downloadVideo(bvid: String, cid: Long, title: String, page: String, qn: Int) {
+    private suspend fun downloadVideo(
+        bvid: String,
+        cid: Long,
+        title: String,
+        page: String,
+        qn: Int,
+    ) {
         // 1. 获取视频流URL
         updateNotification(title, "获取视频地址...", 0, false)
         val request = VideoPlayRequest(kind = VideoPlayKind.UGC, bvid = bvid, cid = cid)
@@ -88,10 +112,11 @@ class VideoDownloadService : Service() {
         }
 
         // 2. 确定下载目录
-        val downloadDir = File(
-            getExternalFilesDir(Environment.DIRECTORY_MOVIES),
-            "blbl_downloads"
-        ).apply { mkdirs() }
+        val downloadDir =
+            File(
+                getExternalFilesDir(Environment.DIRECTORY_MOVIES),
+                "blbl_downloads",
+            ).apply { mkdirs() }
 
         val safeTitle = title.replace(Regex("[\\\\/:*?\"<>|]"), "_")
         val suffix = if (page.isNotBlank()) "_$page" else ""
@@ -126,7 +151,7 @@ class VideoDownloadService : Service() {
             val prog = stream.progressive.maxByOrNull { it.lengthMs ?: 0L } ?: stream.progressive.first()
             val url = prog.urls.firstOrNull()
             if (url != null) {
-                val file = File(downloadDir, "${safeTitle}${suffix}.mp4")
+                val file = File(downloadDir, "${safeTitle}$suffix.mp4")
                 downloadFile(url, file, title, "视频", "video/mp4")
                 updateNotification(title, "下载完成", 100, false)
                 saveDownloadRecord(bvid, cid, title, page, file.absolutePath, null)
@@ -143,15 +168,19 @@ class VideoDownloadService : Service() {
         trackName: String,
         mimeType: String?,
     ) {
-        val client = OkHttpClient.Builder()
-            .connectTimeout(30, java.util.concurrent.TimeUnit.SECONDS)
-            .readTimeout(60, java.util.concurrent.TimeUnit.SECONDS)
-            .build()
-        val request = Request.Builder()
-            .url(url)
-            .header("User-Agent", "Mozilla/5.0")
-            .header("Referer", "https://www.bilibili.com/")
-            .build()
+        val client =
+            OkHttpClient
+                .Builder()
+                .connectTimeout(30, java.util.concurrent.TimeUnit.SECONDS)
+                .readTimeout(60, java.util.concurrent.TimeUnit.SECONDS)
+                .build()
+        val request =
+            Request
+                .Builder()
+                .url(url)
+                .header("User-Agent", "Mozilla/5.0")
+                .header("Referer", "https://www.bilibili.com/")
+                .build()
 
         val response = client.newCall(request).execute()
         if (!response.isSuccessful) {
@@ -174,11 +203,12 @@ class VideoDownloadService : Service() {
 
                     val now = System.currentTimeMillis()
                     if (now - lastUpdate > 500) {
-                        val progress = if (totalBytes > 0) {
-                            (downloadedBytes * 100 / totalBytes).toInt()
-                        } else {
-                            -1
-                        }
+                        val progress =
+                            if (totalBytes > 0) {
+                                (downloadedBytes * 100 / totalBytes).toInt()
+                            } else {
+                                -1
+                            }
                         val sizeStr = formatSize(downloadedBytes)
                         updateNotification(title, "$trackName: $sizeStr", progress, false)
                         lastUpdate = now
@@ -199,41 +229,50 @@ class VideoDownloadService : Service() {
         val prefs = getSharedPreferences("downloads", MODE_PRIVATE)
         val records = prefs.getString("records", "[]") ?: "[]"
         val arr = org.json.JSONArray(records)
-        val obj = org.json.JSONObject().apply {
-            put("bvid", bvid)
-            put("cid", cid)
-            put("title", title)
-            put("page", page)
-            put("videoPath", videoPath)
-            put("audioPath", audioPath ?: "")
-            put("downloadedAt", System.currentTimeMillis())
-            put("fileSize", File(videoPath).length() + (audioPath?.let { File(it).length() } ?: 0L))
-        }
+        val obj =
+            org.json.JSONObject().apply {
+                put("bvid", bvid)
+                put("cid", cid)
+                put("title", title)
+                put("page", page)
+                put("videoPath", videoPath)
+                put("audioPath", audioPath ?: "")
+                put("downloadedAt", System.currentTimeMillis())
+                put("fileSize", File(videoPath).length() + (audioPath?.let { File(it).length() } ?: 0L))
+            }
         arr.put(obj)
         prefs.edit().putString("records", arr.toString()).apply()
     }
 
     private fun createNotificationChannel() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            val channel = NotificationChannel(
-                CHANNEL_ID,
-                "视频下载",
-                NotificationManager.IMPORTANCE_LOW
-            ).apply {
-                description = "视频下载进度通知"
-            }
+            val channel =
+                NotificationChannel(
+                    CHANNEL_ID,
+                    "视频下载",
+                    NotificationManager.IMPORTANCE_LOW,
+                ).apply {
+                    description = "视频下载进度通知"
+                }
             val nm = getSystemService(NotificationManager::class.java)
             nm.createNotificationChannel(channel)
         }
     }
 
-    private fun buildNotification(title: String, text: String, progress: Int, isError: Boolean = false): Notification {
-        val builder = NotificationCompat.Builder(this, CHANNEL_ID)
-            .setSmallIcon(R.mipmap.ic_launcher_foreground)
-            .setContentTitle(title)
-            .setContentText(text)
-            .setOngoing(!isError)
-            .setOnlyAlertOnce(true)
+    private fun buildNotification(
+        title: String,
+        text: String,
+        progress: Int,
+        isError: Boolean = false,
+    ): Notification {
+        val builder =
+            NotificationCompat
+                .Builder(this, CHANNEL_ID)
+                .setSmallIcon(R.mipmap.ic_launcher_foreground)
+                .setContentTitle(title)
+                .setContentText(text)
+                .setOngoing(!isError)
+                .setOnlyAlertOnce(true)
 
         if (progress > 0) {
             builder.setProgress(100, progress, false)
@@ -244,17 +283,23 @@ class VideoDownloadService : Service() {
         return builder.build()
     }
 
-    private fun updateNotification(title: String, text: String, progress: Int, isError: Boolean) {
+    private fun updateNotification(
+        title: String,
+        text: String,
+        progress: Int,
+        isError: Boolean,
+    ) {
         val nm = getSystemService(NotificationManager::class.java)
         nm.notify(NOTIFICATION_ID, buildNotification(title, text, progress, isError))
     }
 
-    private fun formatSize(bytes: Long): String = when {
-        bytes < 1024 -> "${bytes}B"
-        bytes < 1024 * 1024 -> "${bytes / 1024}KB"
-        bytes < 1024 * 1024 * 1024 -> String.format("%.1fMB", bytes / 1024.0 / 1024.0)
-        else -> String.format("%.2fGB", bytes / 1024.0 / 1024.0 / 1024.0)
-    }
+    private fun formatSize(bytes: Long): String =
+        when {
+            bytes < 1024 -> "${bytes}B"
+            bytes < 1024 * 1024 -> "${bytes / 1024}KB"
+            bytes < 1024 * 1024 * 1024 -> String.format("%.1fMB", bytes / 1024.0 / 1024.0)
+            else -> String.format("%.2fGB", bytes / 1024.0 / 1024.0 / 1024.0)
+        }
 
     override fun onBind(intent: Intent?): IBinder? = null
 

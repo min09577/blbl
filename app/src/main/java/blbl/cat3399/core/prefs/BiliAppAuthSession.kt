@@ -123,7 +123,8 @@ data class BiliAppAuthSession(
                 expiresInSec = expiresInSec,
                 issuedAtMs = issuedAtMs,
                 expiresAtMs =
-                    root.longOrNull(KEY_EXPIRES_AT_MS)
+                    root
+                        .longOrNull(KEY_EXPIRES_AT_MS)
                         ?.takeIf { it > 0L }
                         ?: expiresInSec?.let { issuedAtMs + it * 1000L },
                 appKey = appKey,
@@ -143,11 +144,9 @@ data class BiliAppAuthSession(
             return copy.toString()
         }
 
-        private fun firstNonBlank(vararg values: String?): String? =
-            values.firstOrNull { !it.isNullOrBlank() }?.trim()
+        private fun firstNonBlank(vararg values: String?): String? = values.firstOrNull { !it.isNullOrBlank() }?.trim()
 
-        private fun firstPositiveLong(vararg values: Long?): Long? =
-            values.firstOrNull { it != null && it > 0L }
+        private fun firstPositiveLong(vararg values: Long?): Long? = values.firstOrNull { it != null && it > 0L }
 
         private fun JSONObject.stringOrNull(key: String): String? {
             if (!has(key) || isNull(key)) return null

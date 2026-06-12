@@ -15,4 +15,3 @@ interface SidebarFocusHost {
      */
     fun requestFocusSidebarSelectedNav(): Boolean
 }
-

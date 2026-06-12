@@ -24,7 +24,7 @@ object PlayerActivityBrightnessMemory {
      */
     fun applyMemoryBrightness(activity: Activity) {
         if (!BiliClient.prefs.brightnessMemoryEnabled) return
-        
+
         val savedBrightness = BiliClient.prefs.lastVideoBrightness
         if (savedBrightness < 0f) return
 
@@ -59,18 +59,15 @@ object PlayerActivityBrightnessMemory {
     /**
      * 获取当前屏幕亮度
      */
-    fun getCurrentBrightness(activity: Activity): Float {
-        return try {
+    fun getCurrentBrightness(activity: Activity): Float =
+        try {
             activity.window.attributes.screenBrightness
         } catch (e: Exception) {
             -1f
         }
-    }
 
     /**
      * 检查是否应该应用默认亮度（在defaultBrightness < 0时）
      */
-    fun shouldApplyMemoryInsteadOfDefault(): Boolean {
-        return BiliClient.prefs.brightnessMemoryEnabled && BiliClient.prefs.lastVideoBrightness >= 0f
-    }
+    fun shouldApplyMemoryInsteadOfDefault(): Boolean = BiliClient.prefs.brightnessMemoryEnabled && BiliClient.prefs.lastVideoBrightness >= 0f
 }

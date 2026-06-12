@@ -6,8 +6,12 @@ package blbl.cat3399.feature.player
  */
 class PlayerActivityVideoMirror {
     fun setHorizontalMirror(enabled: Boolean) {}
+
     fun setVerticalMirror(enabled: Boolean) {}
+
     fun isHorizontalMirrored(): Boolean = false
+
     fun isVerticalMirrored(): Boolean = false
+
     fun reset() {}
 }

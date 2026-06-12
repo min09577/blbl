@@ -19,14 +19,14 @@ import blbl.cat3399.core.paging.appliedOrNull
 import blbl.cat3399.core.ui.AppToast
 import blbl.cat3399.core.ui.DpadGridController
 import blbl.cat3399.core.ui.FocusTreeUtils
-import blbl.cat3399.core.ui.GridViewportFillMonitor
 import blbl.cat3399.core.ui.GridSpanPolicy
+import blbl.cat3399.core.ui.GridViewportFillMonitor
 import blbl.cat3399.core.ui.TabContentSwitchFocusHost
 import blbl.cat3399.core.ui.UiScale
+import blbl.cat3399.core.ui.installGridViewportFillMonitor
 import blbl.cat3399.core.ui.postDelayedIfAlive
 import blbl.cat3399.core.ui.postIfAlive
 import blbl.cat3399.core.ui.postIfAttached
-import blbl.cat3399.core.ui.installGridViewportFillMonitor
 import blbl.cat3399.core.ui.requestFocusAdapterPositionReliable
 import blbl.cat3399.core.ui.requestFocusFirstItemOrSelfAfterRefresh
 import blbl.cat3399.databinding.FragmentLiveGridBinding
@@ -34,7 +34,10 @@ import blbl.cat3399.ui.RefreshKeyHandler
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.launch
 
-class LiveGridFragment : Fragment(), LivePageFocusTarget, RefreshKeyHandler {
+class LiveGridFragment :
+    Fragment(),
+    LivePageFocusTarget,
+    RefreshKeyHandler {
     private var _binding: FragmentLiveGridBinding? = null
     private val binding get() = _binding!!
 
@@ -60,13 +63,20 @@ class LiveGridFragment : Fragment(), LivePageFocusTarget, RefreshKeyHandler {
     private var pendingRestorePosition: Int? = null
     private var pendingRestoreAttemptsLeft: Int = 0
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?,
+    ): View {
         _binding = FragmentLiveGridBinding.inflate(inflater, container, false)
         AppLog.d("LiveGrid", "onCreateView src=$source t=${SystemClock.uptimeMillis()}")
         return binding.root
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+    override fun onViewCreated(
+        view: View,
+        savedInstanceState: Bundle?,
+    ) {
         if (!::adapter.isInitialized) {
             adapter =
                 LiveRoomAdapter { position, room ->
@@ -96,7 +106,11 @@ class LiveGridFragment : Fragment(), LivePageFocusTarget, RefreshKeyHandler {
         binding.recycler.clearOnScrollListeners()
         binding.recycler.addOnScrollListener(
             object : RecyclerView.OnScrollListener() {
-                override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
+                override fun onScrolled(
+                    recyclerView: RecyclerView,
+                    dx: Int,
+                    dy: Int,
+                ) {
                     if (dy <= 0) return
                     val s = paging.snapshot()
                     if (s.isLoading || s.endReached) return
@@ -120,13 +134,12 @@ class LiveGridFragment : Fragment(), LivePageFocusTarget, RefreshKeyHandler {
                 recyclerView = binding.recycler,
                 callbacks =
                     object : DpadGridController.Callbacks {
-                        override fun onTopEdge(): Boolean {
-                            return if (enableTabFocus) {
+                        override fun onTopEdge(): Boolean =
+                            if (enableTabFocus) {
                                 focusSelectedTabIfAvailable()
                             } else {
                                 focusBackButtonIfAvailable()
                             }
-                        }
 
                         override fun onLeftEdge(): Boolean {
                             if (!enableTabFocus) {
@@ -269,7 +282,11 @@ class LiveGridFragment : Fragment(), LivePageFocusTarget, RefreshKeyHandler {
 
                 val applied = result.appliedOrNull() ?: return@launch
                 applied.items.forEach { loadedRoomIds.add(it.roomId) }
-                if (applied.isRefresh) adapter.submit(applied.items) else if (applied.items.isNotEmpty()) adapter.append(applied.items)
+                if (applied.isRefresh) {
+                    adapter.submit(applied.items)
+                } else if (applied.items.isNotEmpty()) {
+                    adapter.append(applied.items)
+                }
                 _binding?.let { b ->
                     b.recycler.postIfAlive(isAlive = { _binding === b && isResumed }) {
                         if (pendingFocusFirstCardAfterRefresh && applied.isRefresh) {
@@ -605,11 +622,13 @@ class LiveGridFragment : Fragment(), LivePageFocusTarget, RefreshKeyHandler {
 
         fun newFollowing() = LiveGridFragment().apply { arguments = Bundle().apply { putString(ARG_SOURCE, SRC_FOLLOWING) } }
 
-        fun newSearch(keyword: String) = LiveGridFragment().apply {
-            arguments = Bundle().apply {
-                putString(ARG_SOURCE, SRC_SEARCH)
-                putString(ARG_SEARCH_KEYWORD, keyword.trim())
+        fun newSearch(keyword: String) =
+            LiveGridFragment().apply {
+                arguments =
+                    Bundle().apply {
+                        putString(ARG_SOURCE, SRC_SEARCH)
+                        putString(ARG_SEARCH_KEYWORD, keyword.trim())
+                    }
             }
-        }
     }
 }

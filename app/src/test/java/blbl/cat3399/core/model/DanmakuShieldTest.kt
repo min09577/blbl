@@ -93,4 +93,3 @@ class DanmakuShieldTest {
         assertTrue(shield.allow(noHash))
     }
 }
-

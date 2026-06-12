@@ -1,9 +1,10 @@
 package blbl.cat3399.core.prefs
 
 import android.content.Context
-import android.content.SharedPreferences
 
-class FeaturePrefs821(context: Context) {
+class FeaturePrefs821(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_821", Context.MODE_PRIVATE)
 
     var v821exclude: Boolean
@@ -605,11 +606,11 @@ class FeaturePrefs821(context: Context) {
     var v830feature: Boolean
         get() = prefs.getBoolean("v830feature", false)
         set(value) = prefs.edit().putBoolean("v830feature", value).apply()
-
 }
 
-
-class FeaturePrefs831(context: Context) {
+class FeaturePrefs831(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_831", Context.MODE_PRIVATE)
 
     var v831fetch: Boolean
@@ -1211,11 +1212,11 @@ class FeaturePrefs831(context: Context) {
     var v840flip: Boolean
         get() = prefs.getBoolean("v840flip", false)
         set(value) = prefs.edit().putBoolean("v840flip", value).apply()
-
 }
 
-
-class FeaturePrefs841(context: Context) {
+class FeaturePrefs841(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_841", Context.MODE_PRIVATE)
 
     var v841float: Boolean
@@ -1817,11 +1818,11 @@ class FeaturePrefs841(context: Context) {
     var v850full: Boolean
         get() = prefs.getBoolean("v850full", false)
         set(value) = prefs.edit().putBoolean("v850full", value).apply()
-
 }
 
-
-class FeaturePrefs851(context: Context) {
+class FeaturePrefs851(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_851", Context.MODE_PRIVATE)
 
     var v851gain: Boolean
@@ -2423,7 +2424,4 @@ class FeaturePrefs851(context: Context) {
     var v860grow: Boolean
         get() = prefs.getBoolean("v860grow", false)
         set(value) = prefs.edit().putBoolean("v860grow", value).apply()
-
 }
-
-

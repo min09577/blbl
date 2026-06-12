@@ -38,7 +38,16 @@ class GaiaVgateActivity : BaseActivity() {
                 append(" vVoucherPrefix=").append(vVoucher.take(8))
                 append(" hasSess=").append(if (BiliClient.cookies.hasSessData()) 1 else 0)
                 append(" hasCsrf=").append(
-                    if (BiliClient.cookies.getCookieValue("bili_jct").orEmpty().trim().isNotBlank()) 1 else 0,
+                    if (BiliClient.cookies
+                            .getCookieValue("bili_jct")
+                            .orEmpty()
+                            .trim()
+                            .isNotBlank()
+                    ) {
+                        1
+                    } else {
+                        0
+                    },
                 )
                 append(" hasGaiaVtoken=").append(
                     if (
@@ -113,7 +122,11 @@ class GaiaVgateActivity : BaseActivity() {
         private val token: String,
     ) {
         @JavascriptInterface
-        fun onGeetestResult(validate: String?, seccode: String?, geetestChallenge: String?) {
+        fun onGeetestResult(
+            validate: String?,
+            seccode: String?,
+            geetestChallenge: String?,
+        ) {
             val v = validate.orEmpty().trim()
             val s = seccode.orEmpty().trim()
             val c = geetestChallenge.orEmpty().trim()
@@ -142,7 +155,10 @@ class GaiaVgateActivity : BaseActivity() {
         }
     }
 
-    private fun geetestHtml(gt: String, challenge: String): String {
+    private fun geetestHtml(
+        gt: String,
+        challenge: String,
+    ): String {
         val safeGt = gt.replace("'", "\\'")
         val safeChallenge = challenge.replace("'", "\\'")
         return """
@@ -199,7 +215,7 @@ class GaiaVgateActivity : BaseActivity() {
   </script>
 </body>
 </html>
-        """.trimIndent()
+            """.trimIndent()
     }
 
     companion object {

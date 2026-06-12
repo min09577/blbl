@@ -11,14 +11,14 @@ import android.view.ViewTreeObserver
 import android.widget.TextView
 import androidx.activity.OnBackPressedCallback
 import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.lifecycle.Lifecycle
-import androidx.lifecycle.lifecycleScope
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import androidx.recyclerview.widget.SimpleItemAnimator
+import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import blbl.cat3399.BuildConfig
 import blbl.cat3399.R
 import blbl.cat3399.core.account.AccountSessionStore
@@ -54,7 +54,9 @@ import org.json.JSONObject
 import java.lang.ref.WeakReference
 import java.util.Locale
 
-class MainActivity : BaseActivity(), SidebarFocusHost {
+class MainActivity :
+    BaseActivity(),
+    SidebarFocusHost {
     private enum class UserInfoOverlayMode {
         PROFILE,
         ACCOUNT_SWITCH,
@@ -132,12 +134,13 @@ class MainActivity : BaseActivity(), SidebarFocusHost {
                     ?: launchNavId
             }
 
-        navAdapter = SidebarNavAdapter(
-            onClick = { item ->
-                AppLog.d("Nav", "sidebar click id=${item.id} title=${item.title} t=${SystemClock.uptimeMillis()}")
-                handleSidebarNavClick(item.id)
-            },
-        )
+        navAdapter =
+            SidebarNavAdapter(
+                onClick = { item ->
+                    AppLog.d("Nav", "sidebar click id=${item.id} title=${item.title} t=${SystemClock.uptimeMillis()}")
+                    handleSidebarNavClick(item.id)
+                },
+            )
         binding.recyclerSidebar.layoutManager = LinearLayoutManager(this)
         binding.recyclerSidebar.adapter = navAdapter
         (binding.recyclerSidebar.itemAnimator as? SimpleItemAnimator)?.supportsChangeAnimations = false
@@ -150,13 +153,14 @@ class MainActivity : BaseActivity(), SidebarFocusHost {
         }
 
         focusListener =
-            ViewTreeObserver.OnGlobalFocusChangeListener { _, newFocus ->
-                if (newFocus != null && isInMainContainer(newFocus)) {
-                    lastMainFocusedView = WeakReference(newFocus)
-                    lastMainFocusAtMs = SystemClock.uptimeMillis()
-                    maybeCollapseSidebarAfterMainFocusTransfer(newFocus)
-                }
-            }.also { binding.root.viewTreeObserver.addOnGlobalFocusChangeListener(it) }
+            ViewTreeObserver
+                .OnGlobalFocusChangeListener { _, newFocus ->
+                    if (newFocus != null && isInMainContainer(newFocus)) {
+                        lastMainFocusedView = WeakReference(newFocus)
+                        lastMainFocusAtMs = SystemClock.uptimeMillis()
+                        maybeCollapseSidebarAfterMainFocusTransfer(newFocus)
+                    }
+                }.also { binding.root.viewTreeObserver.addOnGlobalFocusChangeListener(it) }
 
         onBackPressedDispatcher.addCallback(
             this,
@@ -195,13 +199,9 @@ class MainActivity : BaseActivity(), SidebarFocusHost {
         maybeStartAutoUpdateCheck()
     }
 
-    private fun resolveLaunchNavId(): Int {
-        return MainRootNavRegistry.resolveLaunchNavId(BiliClient.prefs.startupPage)
-    }
+    private fun resolveLaunchNavId(): Int = MainRootNavRegistry.resolveLaunchNavId(BiliClient.prefs.startupPage)
 
-    private fun isAtLaunchRoot(fragment: Fragment?): Boolean {
-        return navIdForRootFragment(fragment) == launchNavId
-    }
+    private fun isAtLaunchRoot(fragment: Fragment?): Boolean = navIdForRootFragment(fragment) == launchNavId
 
     override fun onResume() {
         super.onResume()
@@ -261,8 +261,10 @@ class MainActivity : BaseActivity(), SidebarFocusHost {
     private fun syncSidebarNavState() {
         launchNavId = resolveLaunchNavId()
         val currentValidNavId =
-            (currentRootNavId?.takeIf { isValidRootNavId(it) }
-                ?: inferCurrentRootNavIdFromFragments()?.takeIf { isValidRootNavId(it) })
+            (
+                currentRootNavId?.takeIf { isValidRootNavId(it) }
+                    ?: inferCurrentRootNavIdFromFragments()?.takeIf { isValidRootNavId(it) }
+            )
         val desiredNavId =
             currentValidNavId
                 ?: launchNavId.takeIf { isValidRootNavId(it) }
@@ -433,11 +435,12 @@ class MainActivity : BaseActivity(), SidebarFocusHost {
         return handler.handleRefreshKey()
     }
 
-    private fun findRefreshKeyHandler(fragment: Fragment): RefreshKeyHandler? {
-        return findRefreshKeyHandler(fragment, preferResumed = true) ?: findRefreshKeyHandler(fragment, preferResumed = false)
-    }
+    private fun findRefreshKeyHandler(fragment: Fragment): RefreshKeyHandler? = findRefreshKeyHandler(fragment, preferResumed = true) ?: findRefreshKeyHandler(fragment, preferResumed = false)
 
-    private fun findRefreshKeyHandler(fragment: Fragment, preferResumed: Boolean): RefreshKeyHandler? {
+    private fun findRefreshKeyHandler(
+        fragment: Fragment,
+        preferResumed: Boolean,
+    ): RefreshKeyHandler? {
         if (!fragment.isAdded) return null
 
         fragment.childFragmentManager.fragments.asReversed().forEach { child ->
@@ -465,10 +468,11 @@ class MainActivity : BaseActivity(), SidebarFocusHost {
         userInfoOverlay.btnAddAccount.setOnClickListener { openQrLogin() }
         userInfoOverlay.btnLogout.setOnClickListener { showLogoutConfirm() }
 
-        val invalidateOverlay = View.OnFocusChangeListener { _, _ ->
-            userInfoOverlay.card.invalidate()
-            userInfoOverlay.root.invalidate()
-        }
+        val invalidateOverlay =
+            View.OnFocusChangeListener { _, _ ->
+                userInfoOverlay.card.invalidate()
+                userInfoOverlay.root.invalidate()
+            }
         userInfoOverlay.btnFollowing.onFocusChangeListener = invalidateOverlay
         userInfoOverlay.btnFollower.onFocusChangeListener = invalidateOverlay
         userInfoOverlay.btnSwitchAccount.onFocusChangeListener = invalidateOverlay
@@ -659,8 +663,11 @@ class MainActivity : BaseActivity(), SidebarFocusHost {
 
                     userInfoOverlay.tvName.text = name
                     userInfoOverlay.tvMid.text = getString(R.string.label_uid_fmt, mid.toString())
-                    val normalizedUrl = blbl.cat3399.core.image.ImageUrl.avatar(avatarUrl)
-                    blbl.cat3399.core.image.ImageLoader.loadInto(userInfoOverlay.ivAvatar, normalizedUrl)
+                    val normalizedUrl =
+                        blbl.cat3399.core.image.ImageUrl
+                            .avatar(avatarUrl)
+                    blbl.cat3399.core.image.ImageLoader
+                        .loadInto(userInfoOverlay.ivAvatar, normalizedUrl)
 
                     userInfoOverlay.tvFollowing.text = (stat?.following ?: 0L).toString()
                     userInfoOverlay.tvFollower.text = (stat?.follower ?: 0L).toString()
@@ -728,7 +735,10 @@ class MainActivity : BaseActivity(), SidebarFocusHost {
         return if (v >= 1000) String.format(Locale.getDefault(), "%.0f", v) else String.format(Locale.getDefault(), "%.1f", v)
     }
 
-    private fun parseInt(obj: JSONObject?, key: String): Int? {
+    private fun parseInt(
+        obj: JSONObject?,
+        key: String,
+    ): Int? {
         val any = obj?.opt(key) ?: return null
         return when (any) {
             is Number -> any.toInt()
@@ -765,7 +775,10 @@ class MainActivity : BaseActivity(), SidebarFocusHost {
         }
     }
 
-    private fun switchRoot(navId: Int, clearBackStack: Boolean): Boolean {
+    private fun switchRoot(
+        navId: Int,
+        clearBackStack: Boolean,
+    ): Boolean {
         if (!isValidRootNavId(navId)) return false
 
         AppLog.d("MainActivity", "switchRoot navId=$navId clearBackStack=$clearBackStack t=${SystemClock.uptimeMillis()}")
@@ -836,23 +849,20 @@ class MainActivity : BaseActivity(), SidebarFocusHost {
     }
 
     private fun createRootFragment(navId: Int): Fragment {
-        val spec = MainRootNavRegistry.enabledSpecForNavId(navId)
-            ?: throw IllegalArgumentException("Unknown root navId=$navId")
+        val spec =
+            MainRootNavRegistry.enabledSpecForNavId(navId)
+                ?: throw IllegalArgumentException("Unknown root navId=$navId")
         return spec.fragmentFactory()
     }
 
-    private fun rootTagFor(navId: Int): String {
-        return MainRootNavRegistry.rootTagFor(navId)
-    }
+    private fun rootTagFor(navId: Int): String = MainRootNavRegistry.rootTagFor(navId)
 
     private fun navIdForRootFragment(fragment: Fragment?): Int? {
         val navId = MainRootNavRegistry.navIdForFragment(fragment) ?: return null
         return navId.takeIf { isValidRootNavId(it) }
     }
 
-    private fun isValidRootNavId(id: Int): Boolean {
-        return MainRootNavRegistry.enabledSpecForNavId(id) != null
-    }
+    private fun isValidRootNavId(id: Int): Boolean = MainRootNavRegistry.enabledSpecForNavId(id) != null
 
     private fun openQrLogin() {
         AppLog.i("MainActivity", "openQrLogin")
@@ -1041,8 +1051,11 @@ class MainActivity : BaseActivity(), SidebarFocusHost {
     private fun showLoggedIn(avatarUrl: String?) {
         binding.btnSidebarLogin.visibility = android.view.View.GONE
         binding.ivSidebarUser.visibility = android.view.View.VISIBLE
-        val normalizedUrl = blbl.cat3399.core.image.ImageUrl.avatar(avatarUrl)
-        blbl.cat3399.core.image.ImageLoader.loadInto(binding.ivSidebarUser, normalizedUrl)
+        val normalizedUrl =
+            blbl.cat3399.core.image.ImageUrl
+                .avatar(avatarUrl)
+        blbl.cat3399.core.image.ImageLoader
+            .loadInto(binding.ivSidebarUser, normalizedUrl)
         if (binding.btnSidebarLogin.isFocused) {
             binding.ivSidebarUser.requestFocus()
         }
@@ -1069,7 +1082,10 @@ class MainActivity : BaseActivity(), SidebarFocusHost {
             binding.recyclerSidebar.scrollToPosition(pos)
             binding.recyclerSidebar.post {
                 if (currentFocus == null) {
-                    binding.recyclerSidebar.findViewHolderForAdapterPosition(pos)?.itemView?.requestFocus()
+                    binding.recyclerSidebar
+                        .findViewHolderForAdapterPosition(pos)
+                        ?.itemView
+                        ?.requestFocus()
                 }
             }
         }
@@ -1122,9 +1138,7 @@ class MainActivity : BaseActivity(), SidebarFocusHost {
         return focusSidebarNavAt(pos)
     }
 
-    override fun requestFocusSidebarSelectedNav(): Boolean {
-        return focusSidebarSelectedNav()
-    }
+    override fun requestFocusSidebarSelectedNav(): Boolean = focusSidebarSelectedNav()
 
     private fun focusSidebarNavAt(position: Int): Boolean {
         if (position < 0 || position >= navAdapter.itemCount) return false
@@ -1138,7 +1152,10 @@ class MainActivity : BaseActivity(), SidebarFocusHost {
             }
             binding.recyclerSidebar.scrollToPosition(position)
             binding.recyclerSidebar.post {
-                binding.recyclerSidebar.findViewHolderForAdapterPosition(position)?.itemView?.requestFocus()
+                binding.recyclerSidebar
+                    .findViewHolderForAdapterPosition(position)
+                    ?.itemView
+                    ?.requestFocus()
             }
         }
         return true
@@ -1315,9 +1332,10 @@ class MainActivity : BaseActivity(), SidebarFocusHost {
         if (!isStaggeredGridLeftEdge(focused, recyclerDynamic)) return false
 
         recyclerFollowing.post {
-            val selectedChild = (0 until recyclerFollowing.childCount)
-                .map { recyclerFollowing.getChildAt(it) }
-                .firstOrNull { it?.isSelected == true }
+            val selectedChild =
+                (0 until recyclerFollowing.childCount)
+                    .map { recyclerFollowing.getChildAt(it) }
+                    .firstOrNull { it?.isSelected == true }
             if (selectedChild != null) {
                 selectedChild.requestFocus()
                 return@post
@@ -1340,7 +1358,10 @@ class MainActivity : BaseActivity(), SidebarFocusHost {
         return true
     }
 
-    private fun isStaggeredGridLeftEdge(view: View, recyclerView: RecyclerView): Boolean {
+    private fun isStaggeredGridLeftEdge(
+        view: View,
+        recyclerView: RecyclerView,
+    ): Boolean {
         recyclerView.layoutManager as? StaggeredGridLayoutManager ?: return false
         val itemView = recyclerView.findContainingItemView(view) ?: return false
         val lp = itemView.layoutParams as? StaggeredGridLayoutManager.LayoutParams ?: return false
@@ -1427,8 +1448,8 @@ class MainActivity : BaseActivity(), SidebarFocusHost {
         return (valueDp * dm.density).toInt()
     }
 
-    private fun isNavKey(keyCode: Int): Boolean {
-        return when (keyCode) {
+    private fun isNavKey(keyCode: Int): Boolean =
+        when (keyCode) {
             KeyEvent.KEYCODE_DPAD_UP,
             KeyEvent.KEYCODE_DPAD_DOWN,
             KeyEvent.KEYCODE_DPAD_LEFT,
@@ -1441,7 +1462,6 @@ class MainActivity : BaseActivity(), SidebarFocusHost {
 
             else -> false
         }
-    }
 
     companion object {
         private const val STATE_KEY_ROOT_NAV_ID = "MainActivity.rootNavId"

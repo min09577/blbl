@@ -15,24 +15,31 @@ private var headphoneReceiver: BroadcastReceiver? = null
 
 internal fun PlayerActivity.registerHeadphoneDisconnectReceiver() {
     if (headphoneReceiver != null) return
-    headphoneReceiver = object : BroadcastReceiver() {
-        override fun onReceive(context: Context?, intent: Intent?) {
-            if (intent?.action == AudioManager.ACTION_AUDIO_BECOMING_NOISY) {
-                val engine = player ?: return
-                if (engine.playWhenReady) {
-                    engine.playWhenReady = false
-                    AppToast.show(this@registerHeadphoneDisconnectReceiver, "耳机已断开，自动暂停")
+    headphoneReceiver =
+        object : BroadcastReceiver() {
+            override fun onReceive(
+                context: Context?,
+                intent: Intent?,
+            ) {
+                if (intent?.action == AudioManager.ACTION_AUDIO_BECOMING_NOISY) {
+                    val engine = player ?: return
+                    if (engine.playWhenReady) {
+                        engine.playWhenReady = false
+                        AppToast.show(this@registerHeadphoneDisconnectReceiver, "耳机已断开，自动暂停")
+                    }
                 }
             }
         }
-    }
     val filter = IntentFilter(AudioManager.ACTION_AUDIO_BECOMING_NOISY)
     registerReceiver(headphoneReceiver, filter)
 }
 
 internal fun PlayerActivity.unregisterHeadphoneDisconnectReceiver() {
     headphoneReceiver?.let {
-        try { unregisterReceiver(it) } catch (_: Exception) {}
+        try {
+            unregisterReceiver(it)
+        } catch (_: Exception) {
+        }
     }
     headphoneReceiver = null
 }

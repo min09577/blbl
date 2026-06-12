@@ -1,7 +1,6 @@
 package blbl.cat3399.core.api.video.app
 
 import bilibili.app.playerunite.v1.PlayViewUniteReq
-import bilibili.pgc.gateway.player.v2.CodeType as PgcCodeType
 import bilibili.pgc.gateway.player.v2.PlayViewReq
 import bilibili.playershared.CodeType
 import bilibili.playershared.VideoVod
@@ -20,11 +19,11 @@ import blbl.cat3399.core.api.video.VideoDetailRequest
 import blbl.cat3399.core.api.video.VideoDynamicTagRequest
 import blbl.cat3399.core.api.video.VideoOnlineStatus
 import blbl.cat3399.core.api.video.VideoOnlineStatusRequest
-import blbl.cat3399.core.api.video.VideoPlayerInfo
-import blbl.cat3399.core.api.video.VideoPlayerInfoRequest
 import blbl.cat3399.core.api.video.VideoPlayKind
 import blbl.cat3399.core.api.video.VideoPlayRequest
 import blbl.cat3399.core.api.video.VideoPlayStream
+import blbl.cat3399.core.api.video.VideoPlayerInfo
+import blbl.cat3399.core.api.video.VideoPlayerInfoRequest
 import blbl.cat3399.core.api.video.VideoPopularRequest
 import blbl.cat3399.core.api.video.VideoRecommendPage
 import blbl.cat3399.core.api.video.VideoRecommendRequest
@@ -36,14 +35,15 @@ import blbl.cat3399.core.api.video.VideoSourceApi
 import blbl.cat3399.core.api.video.VideoTagsPage
 import blbl.cat3399.core.api.video.VideoTagsRequest
 import kotlinx.coroutines.CancellationException
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.withContext
-import kotlinx.coroutines.Dispatchers
 import org.json.JSONArray
 import org.json.JSONObject
 import java.util.Locale
+import bilibili.pgc.gateway.player.v2.CodeType as PgcCodeType
 
 internal class AppVideoApi(
     private val httpTransport: AppVideoHttpTransport = BiliClientAppVideoHttpTransport,
@@ -67,12 +67,11 @@ internal class AppVideoApi(
         return VideoRecommendPage(source = source, request = request, items = items)
     }
 
-    override suspend fun playUrl(request: VideoPlayRequest): VideoPlayStream {
-        return when (request.kind) {
+    override suspend fun playUrl(request: VideoPlayRequest): VideoPlayStream =
+        when (request.kind) {
             VideoPlayKind.UGC -> requestUgcPlayStream(request)
             VideoPlayKind.PGC -> requestPgcPlayStream(request)
         }
-    }
 
     private suspend fun requestUgcPlayStream(request: VideoPlayRequest): VideoPlayStream {
         val aid = request.aid?.takeIf { it > 0L } ?: error("aid required")
@@ -94,9 +93,12 @@ internal class AppVideoApi(
                         .setPreferCodecType(ugcPreferredCodecType(request.preferCodec))
                         .setVoiceBalance(1)
                         .build(),
-                )
-                .apply { request.bvid?.trim()?.takeIf { it.isNotBlank() }?.let(::setBvid) }
-                .build()
+                ).apply {
+                    request.bvid
+                        ?.trim()
+                        ?.takeIf { it.isNotBlank() }
+                        ?.let(::setBvid)
+                }.build()
         return mapper.parseUgcPlayStream(reply = grpcTransport.playUgc(req), request = request)
     }
 
@@ -134,8 +136,7 @@ internal class AppVideoApi(
                         async {
                             runCatching { block(codecType) }
                         }
-                    }
-                    .awaitAll()
+                    }.awaitAll()
             val streams = results.mapNotNull { it.getOrNull() }
             if (streams.isNotEmpty()) return@coroutineScope streams
             val failure = results.firstOrNull()?.exceptionOrNull()

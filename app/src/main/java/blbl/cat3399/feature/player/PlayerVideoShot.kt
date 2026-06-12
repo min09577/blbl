@@ -132,7 +132,10 @@ internal data class VideoShot(
             }
     }
 
-    suspend fun getSpriteFrame(time: Int, cache: VideoShotImageCache): SpriteFrame {
+    suspend fun getSpriteFrame(
+        time: Int,
+        cache: VideoShotImageCache,
+    ): SpriteFrame {
         if (times.isEmpty() || images.isEmpty() || imageCountX <= 0 || imageCountY <= 0) {
             throw IllegalStateException("videoshot not ready")
         }
@@ -157,7 +160,10 @@ internal data class VideoShot(
         )
     }
 
-    private fun findClosestValueIndex(array: List<Int>, target: Int): Int {
+    private fun findClosestValueIndex(
+        array: List<Int>,
+        target: Int,
+    ): Int {
         if (array.isEmpty()) return 0
         var left = 0
         var right = array.size - 1
@@ -187,8 +193,10 @@ internal class VideoShotImageCache {
                 inScaled = false
             }
 
-        private fun frameCacheKey(imagesIndex: Int, imageIndex: Int): Long =
-            (imagesIndex.toLong() shl 32) xor (imageIndex.toLong() and 0xffffffffL)
+        private fun frameCacheKey(
+            imagesIndex: Int,
+            imageIndex: Int,
+        ): Long = (imagesIndex.toLong() shl 32) xor (imageIndex.toLong() and 0xffffffffL)
     }
 
     suspend fun getOrDecodeFrame(

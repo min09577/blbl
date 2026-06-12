@@ -47,15 +47,27 @@ internal object VideoApi {
     private var dmFilterUserCache: DmFilterUserCache? = null
 
     internal interface JsonObj {
-        fun optString(name: String, fallback: String): String
+        fun optString(
+            name: String,
+            fallback: String,
+        ): String
 
         fun optLong(name: String): Long
 
-        fun optLong(name: String, fallback: Long): Long
+        fun optLong(
+            name: String,
+            fallback: Long,
+        ): Long
 
-        fun optInt(name: String, fallback: Int): Int
+        fun optInt(
+            name: String,
+            fallback: Int,
+        ): Int
 
-        fun optBoolean(name: String, fallback: Boolean): Boolean
+        fun optBoolean(
+            name: String,
+            fallback: Boolean,
+        ): Boolean
 
         fun optJSONObject(name: String): JsonObj?
     }
@@ -63,15 +75,27 @@ internal object VideoApi {
     private class OrgJsonObj(
         private val obj: JSONObject,
     ) : JsonObj {
-        override fun optString(name: String, fallback: String): String = obj.optString(name, fallback)
+        override fun optString(
+            name: String,
+            fallback: String,
+        ): String = obj.optString(name, fallback)
 
         override fun optLong(name: String): Long = obj.optLong(name)
 
-        override fun optLong(name: String, fallback: Long): Long = obj.optLong(name, fallback)
+        override fun optLong(
+            name: String,
+            fallback: Long,
+        ): Long = obj.optLong(name, fallback)
 
-        override fun optInt(name: String, fallback: Int): Int = obj.optInt(name, fallback)
+        override fun optInt(
+            name: String,
+            fallback: Int,
+        ): Int = obj.optInt(name, fallback)
 
-        override fun optBoolean(name: String, fallback: Boolean): Boolean = obj.optBoolean(name, fallback)
+        override fun optBoolean(
+            name: String,
+            fallback: Boolean,
+        ): Boolean = obj.optBoolean(name, fallback)
 
         override fun optJSONObject(name: String): JsonObj? {
             val nested = obj.optJSONObject(name) ?: return null
@@ -99,7 +123,11 @@ internal object VideoApi {
         val safeAid = aid?.takeIf { it > 0L }
         if (safeBvid.isBlank() && safeAid == null) throw BiliApiException(apiCode = -400, apiMessage = "missing_video_id")
 
-        val csrf = BiliClient.cookies.getCookieValue("bili_jct").orEmpty().trim()
+        val csrf =
+            BiliClient.cookies
+                .getCookieValue("bili_jct")
+                .orEmpty()
+                .trim()
         if (csrf.isBlank()) throw BiliApiException(apiCode = -111, apiMessage = "missing_csrf")
 
         val url = "https://api.bilibili.com/x/v2/history/toview/add"
@@ -124,7 +152,11 @@ internal object VideoApi {
 
     suspend fun toViewDelete(aid: Long) {
         val safeAid = aid.takeIf { it > 0L } ?: throw BiliApiException(apiCode = -400, apiMessage = "missing_video_id")
-        val csrf = BiliClient.cookies.getCookieValue("bili_jct").orEmpty().trim()
+        val csrf =
+            BiliClient.cookies
+                .getCookieValue("bili_jct")
+                .orEmpty()
+                .trim()
         if (csrf.isBlank()) throw BiliApiException(apiCode = -111, apiMessage = "missing_csrf")
 
         val url = "https://api.bilibili.com/x/v2/history/toview/del"
@@ -148,7 +180,11 @@ internal object VideoApi {
 
     suspend fun historyDelete(kid: String) {
         val safeKid = kid.trim().takeIf { it.isNotBlank() } ?: throw BiliApiException(apiCode = -400, apiMessage = "missing_history_kid")
-        val csrf = BiliClient.cookies.getCookieValue("bili_jct").orEmpty().trim()
+        val csrf =
+            BiliClient.cookies
+                .getCookieValue("bili_jct")
+                .orEmpty()
+                .trim()
         if (csrf.isBlank()) throw BiliApiException(apiCode = -111, apiMessage = "missing_csrf")
 
         val url = "https://api.bilibili.com/x/v2/history/delete"
@@ -171,7 +207,11 @@ internal object VideoApi {
     }
 
     suspend fun feedbackDislike(card: VideoCard) {
-        val csrf = BiliClient.cookies.getCookieValue("bili_jct").orEmpty().trim()
+        val csrf =
+            BiliClient.cookies
+                .getCookieValue("bili_jct")
+                .orEmpty()
+                .trim()
         if (csrf.isBlank()) throw BiliApiException(apiCode = -111, apiMessage = "missing_csrf")
 
         val payload = resolveFeedbackDislikePayload(card)
@@ -300,16 +340,21 @@ internal object VideoApi {
         like: Boolean,
     ) {
         if (oid <= 0L || rpid <= 0L || type <= 0) error("comment_action_invalid_params")
-        val csrf = BiliClient.cookies.getCookieValue("bili_jct").orEmpty().trim()
+        val csrf =
+            BiliClient.cookies
+                .getCookieValue("bili_jct")
+                .orEmpty()
+                .trim()
         if (csrf.isBlank()) throw BiliApiException(apiCode = -111, apiMessage = "missing_csrf")
         val url = "https://api.bilibili.com/x/v2/reply/action"
-        val form = buildMap {
-            put("oid", oid.toString())
-            put("type", type.toString())
-            put("rpid", rpid.toString())
-            put("action", if (like) "1" else "0")
-            put("csrf", csrf)
-        }
+        val form =
+            buildMap {
+                put("oid", oid.toString())
+                put("type", type.toString())
+                put("rpid", rpid.toString())
+                put("action", if (like) "1" else "0")
+                put("csrf", csrf)
+            }
         val json = BiliClient.postFormJson(url, form = form, noCookies = true)
         val code = json.optInt("code", 0)
         if (code != 0) {
@@ -327,18 +372,23 @@ internal object VideoApi {
     ) {
         if (oid <= 0L || root <= 0L || parent <= 0L || type <= 0) error("comment_add_invalid_params")
         val text = message.trim().takeIf { it.isNotBlank() } ?: error("comment_add_empty")
-        val csrf = BiliClient.cookies.getCookieValue("bili_jct").orEmpty().trim()
+        val csrf =
+            BiliClient.cookies
+                .getCookieValue("bili_jct")
+                .orEmpty()
+                .trim()
         if (csrf.isBlank()) throw BiliApiException(apiCode = -111, apiMessage = "missing_csrf")
         val url = "https://api.bilibili.com/x/v2/reply/add"
-        val form = buildMap {
-            put("oid", oid.toString())
-            put("type", type.toString())
-            put("root", root.toString())
-            put("parent", parent.toString())
-            put("message", text)
-            put("plat", "1")
-            put("csrf", csrf)
-        }
+        val form =
+            buildMap {
+                put("oid", oid.toString())
+                put("type", type.toString())
+                put("root", root.toString())
+                put("parent", parent.toString())
+                put("message", text)
+                put("plat", "1")
+                put("csrf", csrf)
+            }
         val json = BiliClient.postFormJson(url, form = form, noCookies = true)
         val code = json.optInt("code", 0)
         if (code != 0) {
@@ -354,16 +404,21 @@ internal object VideoApi {
         reason: Int = 2,
     ) {
         if (oid <= 0L || rpid <= 0L || type <= 0) error("comment_report_invalid_params")
-        val csrf = BiliClient.cookies.getCookieValue("bili_jct").orEmpty().trim()
+        val csrf =
+            BiliClient.cookies
+                .getCookieValue("bili_jct")
+                .orEmpty()
+                .trim()
         if (csrf.isBlank()) throw BiliApiException(apiCode = -111, apiMessage = "missing_csrf")
         val url = "https://api.bilibili.com/x/v2/reply/hate"
-        val form = buildMap {
-            put("oid", oid.toString())
-            put("type", type.toString())
-            put("rpid", rpid.toString())
-            put("reason", reason.toString())
-            put("csrf", csrf)
-        }
+        val form =
+            buildMap {
+                put("oid", oid.toString())
+                put("type", type.toString())
+                put("rpid", rpid.toString())
+                put("reason", reason.toString())
+                put("csrf", csrf)
+            }
         val json = BiliClient.postFormJson(url, form = form, noCookies = true)
         val code = json.optInt("code", 0)
         if (code != 0) {
@@ -378,7 +433,11 @@ internal object VideoApi {
         delMediaIds: List<Long>,
     ) {
         if (rid <= 0L) error("fav_resource_deal_invalid_rid")
-        val csrf = BiliClient.cookies.getCookieValue("bili_jct").orEmpty().trim()
+        val csrf =
+            BiliClient.cookies
+                .getCookieValue("bili_jct")
+                .orEmpty()
+                .trim()
         if (csrf.isBlank()) throw BiliApiException(apiCode = -111, apiMessage = "missing_csrf")
         if (addMediaIds.isEmpty() && delMediaIds.isEmpty()) return
 
@@ -417,7 +476,11 @@ internal object VideoApi {
 
         WebCookieMaintainer.ensureWebFingerprintCookies()
         WebCookieMaintainer.ensureBuvidActiveOncePerDay()
-        val csrf = BiliClient.cookies.getCookieValue("bili_jct").orEmpty().trim()
+        val csrf =
+            BiliClient.cookies
+                .getCookieValue("bili_jct")
+                .orEmpty()
+                .trim()
         if (csrf.isBlank()) throw BiliApiException(apiCode = -111, apiMessage = "missing_csrf")
 
         val url = "https://api.bilibili.com/x/web-interface/archive/like"
@@ -562,7 +625,11 @@ internal object VideoApi {
 
         WebCookieMaintainer.ensureWebFingerprintCookies()
         WebCookieMaintainer.ensureBuvidActiveOncePerDay()
-        val csrf = BiliClient.cookies.getCookieValue("bili_jct").orEmpty().trim()
+        val csrf =
+            BiliClient.cookies
+                .getCookieValue("bili_jct")
+                .orEmpty()
+                .trim()
         if (csrf.isBlank()) throw BiliApiException(apiCode = -111, apiMessage = "missing_csrf")
 
         val url = "https://api.bilibili.com/x/web-interface/coin/add"
@@ -595,7 +662,11 @@ internal object VideoApi {
     ) {
         if (aid <= 0L) error("history_report_invalid_aid")
         if (cid <= 0L) error("history_report_invalid_cid")
-        val csrf = BiliClient.cookies.getCookieValue("bili_jct").orEmpty().trim()
+        val csrf =
+            BiliClient.cookies
+                .getCookieValue("bili_jct")
+                .orEmpty()
+                .trim()
         if (csrf.isBlank()) throw BiliApiException(apiCode = -111, apiMessage = "missing_csrf")
 
         val url = "https://api.bilibili.com/x/v2/history/report"
@@ -639,7 +710,11 @@ internal object VideoApi {
         val safeSeasonId = seasonId?.takeIf { it > 0 }
         if (safeAid == null && safeBvid == null) error("heartbeat_missing_aid_bvid")
         if (safeCid == null) error("heartbeat_missing_cid")
-        val csrf = BiliClient.cookies.getCookieValue("bili_jct").orEmpty().trim()
+        val csrf =
+            BiliClient.cookies
+                .getCookieValue("bili_jct")
+                .orEmpty()
+                .trim()
         if (csrf.isBlank()) throw BiliApiException(apiCode = -111, apiMessage = "missing_csrf")
 
         val url = "https://api.bilibili.com/x/click-interface/web/heartbeat"
@@ -671,7 +746,10 @@ internal object VideoApi {
         }
     }
 
-    suspend fun dmSeg(cid: Long, segmentIndex: Int): List<Danmaku> {
+    suspend fun dmSeg(
+        cid: Long,
+        segmentIndex: Int,
+    ): List<Danmaku> {
         try {
             return requestWithAnonymousFallback(
                 requestName = "dmSeg",
@@ -685,14 +763,16 @@ internal object VideoApi {
         }
     }
 
-    suspend fun dmWebView(cid: Long, aid: Long? = null): BiliApi.DanmakuWebView {
-        return requestWithAnonymousFallback(
+    suspend fun dmWebView(
+        cid: Long,
+        aid: Long? = null,
+    ): BiliApi.DanmakuWebView =
+        requestWithAnonymousFallback(
             requestName = "dmWebView",
             context = "cid=$cid aid=${aid ?: -1}",
             primary = { requestDmWebView(cid = cid, aid = aid, includeCookie = true) },
             fallback = { requestDmWebView(cid = cid, aid = aid, includeCookie = false) },
         )
-    }
 
     private suspend fun requestDmSeg(
         cid: Long,
@@ -797,7 +877,8 @@ internal object VideoApi {
     suspend fun dmFilterUser(forceRefresh: Boolean = false): DanmakuUserFilter {
         // Requires login (SESSDATA).
         val mid =
-            BiliClient.cookies.getCookieValue("DedeUserID")
+            BiliClient.cookies
+                .getCookieValue("DedeUserID")
                 ?.trim()
                 ?.toLongOrNull()
                 ?.takeIf { it > 0L }
@@ -827,25 +908,36 @@ internal object VideoApi {
     }
 
     // v6.5: 发送视频弹幕
-    suspend fun sendDanmaku(cid: Long, aid: Long, message: String, color: Int = 0xFFFFFF, mode: Int = 1, fontSize: Int = 25) {
+    suspend fun sendDanmaku(
+        cid: Long,
+        aid: Long,
+        message: String,
+        color: Int = 0xFFFFFF,
+        mode: Int = 1,
+        fontSize: Int = 25,
+    ) {
         if (!BiliClient.cookies.hasSessData()) throw IllegalStateException("需要登录")
         val url = "https://api.bilibili.com/x/v2/dm/post"
-        val formBody = okhttp3.FormBody.Builder()
-            .add("type", "1")
-            .add("oid", cid.toString())
-            .add("aid", aid.toString())
-            .add("message", message)
-            .add("color", color.toString())
-            .add("mode", mode.toString())
-            .add("fontsize", fontSize.toString())
-            .build()
-        val request = okhttp3.Request.Builder()
-            .url(url)
-            .post(formBody)
-            .header("Cookie", BiliClient.cookies.cookieHeaderFor(url).orEmpty())
-            .header("Referer", "https://www.bilibili.com")
-            .header("User-Agent", BiliClient.prefs.userAgent)
-            .build()
+        val formBody =
+            okhttp3.FormBody
+                .Builder()
+                .add("type", "1")
+                .add("oid", cid.toString())
+                .add("aid", aid.toString())
+                .add("message", message)
+                .add("color", color.toString())
+                .add("mode", mode.toString())
+                .add("fontsize", fontSize.toString())
+                .build()
+        val request =
+            okhttp3.Request
+                .Builder()
+                .url(url)
+                .post(formBody)
+                .header("Cookie", BiliClient.cookies.cookieHeaderFor(url).orEmpty())
+                .header("Referer", "https://www.bilibili.com")
+                .header("User-Agent", BiliClient.prefs.userAgent)
+                .build()
         withContext(Dispatchers.IO) {
             val response = BiliClient.apiOkHttp.newCall(request).execute()
             val body = response.body?.string().orEmpty()
@@ -882,13 +974,14 @@ internal object VideoApi {
             val obj = list.optJSONObject(i) ?: continue
             val type = obj.optInt("type", -1)
             val raw =
-                obj.optString(
-                    "filter",
-                    obj.optString(
-                        "filter_content",
-                        obj.optString("content", ""),
-                    ),
-                ).trim()
+                obj
+                    .optString(
+                        "filter",
+                        obj.optString(
+                            "filter_content",
+                            obj.optString("content", ""),
+                        ),
+                    ).trim()
 
             if (raw.isBlank()) continue
 
@@ -974,7 +1067,7 @@ internal object VideoApi {
             }
         }
         if (ignored.isNotEmpty()) {
-            AppLog.w(TAG, "dmFilterUser ignored regex flags=${ignored} raw=${raw.take(120)}")
+            AppLog.w(TAG, "dmFilterUser ignored regex flags=$ignored raw=${raw.take(120)}")
         }
         return RegexLiteral(pattern = pattern, options = options)
     }
@@ -996,7 +1089,9 @@ internal object VideoApi {
     private fun midHashOfMid(mid: Long): String {
         val crc = CRC32()
         crc.update(mid.toString().toByteArray(Charsets.UTF_8))
-        return java.lang.Long.toHexString(crc.value).padStart(8, '0')
+        return java.lang.Long
+            .toHexString(crc.value)
+            .padStart(8, '0')
     }
 
     internal fun parseVideoCard(obj: JsonObj): VideoCard? {
@@ -1040,13 +1135,16 @@ internal object VideoApi {
         return out
     }
 
-    private fun webFeedbackHeaders(targetUrl: String): Map<String, String> {
-        return buildMap {
+    private fun webFeedbackHeaders(targetUrl: String): Map<String, String> =
+        buildMap {
             put("Referer", "https://www.bilibili.com/")
-            val cookie = BiliClient.cookies.cookieHeaderFor(targetUrl).orEmpty().trim()
+            val cookie =
+                BiliClient.cookies
+                    .cookieHeaderFor(targetUrl)
+                    .orEmpty()
+                    .trim()
             if (cookie.isNotBlank()) put("Cookie", cookie)
         }
-    }
 
     private suspend fun resolveFeedbackDislikePayload(card: VideoCard): FeedbackDislikePayload {
         var aid = card.aid?.takeIf { it > 0L }

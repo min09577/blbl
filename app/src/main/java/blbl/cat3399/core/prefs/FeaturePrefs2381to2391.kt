@@ -1,9 +1,10 @@
 package blbl.cat3399.core.prefs
 
 import android.content.Context
-import android.content.SharedPreferences
 
-class FeaturePrefs2381(context: Context) {
+class FeaturePrefs2381(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_2381", Context.MODE_PRIVATE)
 
     var v2381dominant: Boolean
@@ -605,11 +606,11 @@ class FeaturePrefs2381(context: Context) {
     var v2390explicit: Boolean
         get() = prefs.getBoolean("v2390explicit", false)
         set(value) = prefs.edit().putBoolean("v2390explicit", value).apply()
-
 }
 
-
-class FeaturePrefs2391(context: Context) {
+class FeaturePrefs2391(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_2391", Context.MODE_PRIVATE)
 
     var v2391extensive: Boolean
@@ -1211,7 +1212,4 @@ class FeaturePrefs2391(context: Context) {
     var v2400frequent: Boolean
         get() = prefs.getBoolean("v2400frequent", false)
         set(value) = prefs.edit().putBoolean("v2400frequent", value).apply()
-
 }
-
-

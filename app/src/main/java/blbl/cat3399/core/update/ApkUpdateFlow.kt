@@ -90,7 +90,8 @@ object ApkUpdateFlow {
                     overScrollMode = View.OVER_SCROLL_IF_CONTENT_SCROLLS
                 }
             val tv =
-                LayoutInflater.from(dialogContext)
+                LayoutInflater
+                    .from(dialogContext)
                     .inflate(R.layout.view_popup_message, scroll, false) as TextView
             tv.setTextSize(TypedValue.COMPLEX_UNIT_SP, 18f)
             tv.setLineSpacing(2f, 1.05f)

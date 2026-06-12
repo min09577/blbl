@@ -6,8 +6,12 @@ package blbl.cat3399.feature.player
  */
 class PlayerActivityDanmakuExport {
     fun addToFavorites(message: String) {}
+
     fun removeFromFavorites(message: String) {}
+
     fun exportFavorites(): String? = null
+
     fun getFavoriteCount(): Int = 0
+
     fun clearFavorites() {}
 }

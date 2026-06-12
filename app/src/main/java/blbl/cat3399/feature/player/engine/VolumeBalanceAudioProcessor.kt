@@ -311,7 +311,10 @@ internal class VolumeBalanceAudioProcessor(
             return 10.0.pow(db / 20.0).toFloat()
         }
 
-        private fun alphaForTimeConstant(dtSec: Double, tauSec: Double): Double {
+        private fun alphaForTimeConstant(
+            dtSec: Double,
+            tauSec: Double,
+        ): Double {
             if (!dtSec.isFinite() || !tauSec.isFinite()) return 1.0
             if (dtSec <= 0.0) return 0.0
             if (tauSec <= 0.0) return 1.0

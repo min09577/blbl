@@ -27,11 +27,15 @@ private class PlayerCustomShortcutToggleMemory {
 
 private val shortcutToggleMemoryByPlayer = WeakHashMap<PlayerActivity, PlayerCustomShortcutToggleMemory>()
 
-private fun PlayerActivity.shortcutToggleMemory(): PlayerCustomShortcutToggleMemory {
-    return shortcutToggleMemoryByPlayer.getOrPut(this) { PlayerCustomShortcutToggleMemory() }
-}
+private fun PlayerActivity.shortcutToggleMemory(): PlayerCustomShortcutToggleMemory =
+    shortcutToggleMemoryByPlayer.getOrPut(this) {
+        PlayerCustomShortcutToggleMemory()
+    }
 
-private fun sameFloat(a: Float, b: Float): Boolean {
+private fun sameFloat(
+    a: Float,
+    b: Float,
+): Boolean {
     if (!a.isFinite() || !b.isFinite()) return false
     return abs(a - b) < 0.0001f
 }
@@ -68,7 +72,10 @@ internal fun PlayerActivity.dispatchPlayerCustomShortcutIfNeeded(event: KeyEvent
     return true
 }
 
-private fun PlayerActivity.applyPlayerCustomShortcut(keyCode: Int, action: PlayerCustomShortcutAction) {
+private fun PlayerActivity.applyPlayerCustomShortcut(
+    keyCode: Int,
+    action: PlayerCustomShortcutAction,
+) {
     val memory = shortcutToggleMemory()
     when (action) {
         is PlayerCustomShortcutAction.OpenVideoList -> {
@@ -183,7 +190,10 @@ private fun PlayerActivity.applyPlayerCustomShortcut(keyCode: Int, action: Playe
                 value = next.coerceIn(0.25f, 4.0f),
                 updateSession = { copy(playbackSpeed = it) },
                 syncToGlobal = { playerSpeed = it },
-                afterApplied = { player?.setPlaybackSpeed(it); BiliClient.prefs.setVideoSpeed(currentBvid, it) },
+                afterApplied = {
+                    player?.setPlaybackSpeed(it)
+                    BiliClient.prefs.setVideoSpeed(currentBvid, it)
+                },
             )
             showSeekHint("播放速度：${String.format(Locale.US, "%.2fx", next)}", hold = false)
         }
@@ -364,7 +374,8 @@ private fun PlayerActivity.applyPlayerCustomShortcut(keyCode: Int, action: Playe
         }
 
         is PlayerCustomShortcutAction.SetDanmakuArea -> {
-            val target = action.area.takeIf { it.isFinite() }?.let(AppPrefs::normalizeLegacyDanmakuAreaCompat) ?: AppPrefs.DANMAKU_AREA_DEFAULT
+            val target =
+                action.area.takeIf { it.isFinite() }?.let(AppPrefs::normalizeLegacyDanmakuAreaCompat) ?: AppPrefs.DANMAKU_AREA_DEFAULT
             val current = session.danmaku.area
             val next =
                 if (sameFloat(current, target)) {

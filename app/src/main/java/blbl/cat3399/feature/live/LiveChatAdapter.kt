@@ -20,7 +20,10 @@ class LiveChatAdapter : RecyclerView.Adapter<LiveChatAdapter.Vh>() {
         notifyDataSetChanged()
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Vh {
+    override fun onCreateViewHolder(
+        parent: ViewGroup,
+        viewType: Int,
+    ): Vh {
         val binding =
             ItemLiveChatBinding.inflate(
                 LayoutInflater.from(parent.context).cloneInUserScale(parent.context),
@@ -30,11 +33,16 @@ class LiveChatAdapter : RecyclerView.Adapter<LiveChatAdapter.Vh>() {
         return Vh(binding)
     }
 
-    override fun onBindViewHolder(holder: Vh, position: Int) = holder.bind(items[position])
+    override fun onBindViewHolder(
+        holder: Vh,
+        position: Int,
+    ) = holder.bind(items[position])
 
     override fun getItemCount(): Int = items.size
 
-    class Vh(private val binding: ItemLiveChatBinding) : RecyclerView.ViewHolder(binding.root) {
+    class Vh(
+        private val binding: ItemLiveChatBinding,
+    ) : RecyclerView.ViewHolder(binding.root) {
         fun bind(item: Item) {
             binding.tvTitle.text = item.title
             binding.tvBody.text = item.body

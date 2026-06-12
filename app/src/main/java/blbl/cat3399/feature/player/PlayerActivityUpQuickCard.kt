@@ -91,7 +91,12 @@ internal class PlayerUpQuickCardController(
 
     fun refreshFollowStateIfNeeded(force: Boolean) {
         val mid = owner.mid.takeIf { it > 0L } ?: return
-        val selfMid = BiliClient.cookies.getCookieValue("DedeUserID")?.trim()?.toLongOrNull()?.takeIf { it > 0L }
+        val selfMid =
+            BiliClient.cookies
+                .getCookieValue("DedeUserID")
+                ?.trim()
+                ?.toLongOrNull()
+                ?.takeIf { it > 0L }
         val isSelf = selfMid != null && selfMid == mid
         if (isSelf) {
             followed = null
@@ -140,7 +145,12 @@ internal class PlayerUpQuickCardController(
         }
         if (actionJob?.isActive == true) return
 
-        val selfMid = BiliClient.cookies.getCookieValue("DedeUserID")?.trim()?.toLongOrNull()?.takeIf { it > 0L }
+        val selfMid =
+            BiliClient.cookies
+                .getCookieValue("DedeUserID")
+                ?.trim()
+                ?.toLongOrNull()
+                ?.takeIf { it > 0L }
         if (selfMid != null && selfMid == mid) return
 
         val wantFollow = followed != true
@@ -191,11 +201,20 @@ internal class PlayerUpQuickCardController(
         val showCard = hasUp && BiliClient.prefs.playerUpQuickCardEnabled && isCardVisible()
         binding.cardUpQuick.visibility = if (showCard) View.VISIBLE else View.GONE
         if (hasUp) {
-            val upName = owner.name?.trim().orEmpty().ifBlank { "UP主" }
+            val upName =
+                owner.name
+                    ?.trim()
+                    .orEmpty()
+                    .ifBlank { "UP主" }
             binding.tvUpQuickName.text = upName
             ImageLoader.loadInto(binding.ivUpQuickAvatar, ImageUrl.avatar(owner.avatar))
 
-            val selfMid = BiliClient.cookies.getCookieValue("DedeUserID")?.trim()?.toLongOrNull()?.takeIf { it > 0L }
+            val selfMid =
+                BiliClient.cookies
+                    .getCookieValue("DedeUserID")
+                    ?.trim()
+                    ?.toLongOrNull()
+                    ?.takeIf { it > 0L }
             val isSelf = selfMid != null && selfMid == owner.mid
             binding.btnUpQuickFollow.visibility = if (isSelf) View.GONE else View.VISIBLE
             if (!isSelf) {

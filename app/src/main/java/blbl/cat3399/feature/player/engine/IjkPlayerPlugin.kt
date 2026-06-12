@@ -6,8 +6,8 @@ import blbl.cat3399.core.net.BiliClient
 import blbl.cat3399.core.net.await
 import blbl.cat3399.core.net.ipv4OnlyDns
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.ensureActive
 import kotlinx.coroutines.currentCoroutineContext
+import kotlinx.coroutines.ensureActive
 import kotlinx.coroutines.withContext
 import okhttp3.CookieJar
 import okhttp3.OkHttpClient
@@ -17,8 +17,8 @@ import java.io.BufferedInputStream
 import java.io.File
 import java.io.FileInputStream
 import java.io.FileOutputStream
-import java.io.OutputStream
 import java.io.IOException
+import java.io.OutputStream
 import java.security.MessageDigest
 import java.util.Locale
 import java.util.concurrent.TimeUnit
@@ -79,11 +79,12 @@ internal object IjkPlayerPlugin {
         Installed,
     }
 
-    fun deviceAbi(): String? {
-        return Build.SUPPORTED_ABIS.firstOrNull { supportedAbis.contains(it) }
-    }
+    fun deviceAbi(): String? = Build.SUPPORTED_ABIS.firstOrNull { supportedAbis.contains(it) }
 
-    fun status(context: Context, abi: String = deviceAbi().orEmpty()): InstallStatus {
+    fun status(
+        context: Context,
+        abi: String = deviceAbi().orEmpty(),
+    ): InstallStatus {
         if (abi.isBlank()) return InstallStatus.Unsupported
         val so = soFile(context, abi)
         if (!so.exists() || !so.isFile) return InstallStatus.NotInstalled
@@ -96,11 +97,15 @@ internal object IjkPlayerPlugin {
         }
     }
 
-    fun isInstalled(context: Context, abi: String = deviceAbi().orEmpty()): Boolean {
-        return status(context, abi) == InstallStatus.Installed
-    }
+    fun isInstalled(
+        context: Context,
+        abi: String = deviceAbi().orEmpty(),
+    ): Boolean = status(context, abi) == InstallStatus.Installed
 
-    fun soFile(context: Context, abi: String = deviceAbi().orEmpty()): File {
+    fun soFile(
+        context: Context,
+        abi: String = deviceAbi().orEmpty(),
+    ): File {
         val safeAbi = abi.trim()
         val dir = File(context.applicationContext.filesDir, "plugins/ijkplayer/$safeAbi").apply { mkdirs() }
         return File(dir, SO_FILE_NAME)
@@ -151,7 +156,8 @@ internal object IjkPlayerPlugin {
     }
 
     private val okHttp: OkHttpClient by lazy {
-        OkHttpClient.Builder()
+        OkHttpClient
+            .Builder()
             .cookieJar(CookieJar.NO_COOKIES)
             .dns(ipv4OnlyDns { BiliClient.prefs.ipv4OnlyEnabled })
             .connectTimeout(12, TimeUnit.SECONDS)
@@ -172,7 +178,12 @@ internal object IjkPlayerPlugin {
         runCatching { part.delete() }
         runCatching { target.delete() }
 
-        val req = Request.Builder().url(url).get().build()
+        val req =
+            Request
+                .Builder()
+                .url(url)
+                .get()
+                .build()
         val call = okHttp.newCall(req)
         val res = call.await()
 
@@ -301,35 +312,44 @@ internal object IjkPlayerPlugin {
         check(looksLikeElf(file)) { "so 文件格式不正确" }
     }
 
-    private fun installStampFile(context: Context, abi: String): File {
-        return File(soFile(context, abi).parentFile, INSTALL_STAMP_FILE_NAME)
-    }
+    private fun installStampFile(
+        context: Context,
+        abi: String,
+    ): File = File(soFile(context, abi).parentFile, INSTALL_STAMP_FILE_NAME)
 
-    private fun readInstallStamp(context: Context, abi: String): Int? {
-        return runCatching {
+    private fun readInstallStamp(
+        context: Context,
+        abi: String,
+    ): Int? =
+        runCatching {
             installStampFile(context, abi)
                 .takeIf { it.exists() && it.isFile }
                 ?.readText(Charsets.UTF_8)
                 ?.trim()
                 ?.toIntOrNull()
         }.getOrNull()
-    }
 
-    private fun writeInstallStamp(context: Context, abi: String) {
+    private fun writeInstallStamp(
+        context: Context,
+        abi: String,
+    ) {
         val file = installStampFile(context, abi)
         file.parentFile?.mkdirs()
         file.writeText(REQUIRED_INSTALL_STAMP.toString(), Charsets.UTF_8)
     }
 
-    private fun looksLikeElf(file: File): Boolean {
-        return runCatching {
+    private fun looksLikeElf(file: File): Boolean =
+        runCatching {
             FileInputStream(file).use { input ->
                 val head = ByteArray(4)
                 val n = input.read(head)
-                n == 4 && head[0] == 0x7F.toByte() && head[1] == 'E'.code.toByte() && head[2] == 'L'.code.toByte() && head[3] == 'F'.code.toByte()
+                n == 4 &&
+                    head[0] == 0x7F.toByte() &&
+                    head[1] == 'E'.code.toByte() &&
+                    head[2] == 'L'.code.toByte() &&
+                    head[3] == 'F'.code.toByte()
             }
         }.getOrDefault(false)
-    }
 
     private fun formatBytes(bytes: Long): String {
         val b = bytes.coerceAtLeast(0)

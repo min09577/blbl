@@ -5,10 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
-import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -19,20 +16,29 @@ import blbl.cat3399.databinding.ItemDownloadBinding
 import org.json.JSONArray
 import java.io.File
 import java.text.SimpleDateFormat
-import java.util.*
+import java.util.Date
+import java.util.Locale
 
 class DownloadListFragment : Fragment() {
-
     private var _binding: blbl.cat3399.databinding.FragmentDownloadListBinding? = null
     private val binding get() = _binding!!
     private var adapter: DownloadAdapter? = null
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
-        _binding = blbl.cat3399.databinding.FragmentDownloadListBinding.inflate(inflater, container, false)
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?,
+    ): View {
+        _binding =
+            blbl.cat3399.databinding.FragmentDownloadListBinding
+                .inflate(inflater, container, false)
         return binding.root
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+    override fun onViewCreated(
+        view: View,
+        savedInstanceState: Bundle?,
+    ) {
         super.onViewCreated(view, savedInstanceState)
         setupRecyclerView()
         setupHeader()
@@ -40,11 +46,12 @@ class DownloadListFragment : Fragment() {
     }
 
     private fun setupRecyclerView() {
-        adapter = DownloadAdapter(
-            onPlay = ::onPlayDownload,
-            onDelete = ::onDeleteDownload,
-            onInfo = ::onShowInfo,
-        )
+        adapter =
+            DownloadAdapter(
+                onPlay = ::onPlayDownload,
+                onDelete = ::onDeleteDownload,
+                onInfo = ::onShowInfo,
+            )
         binding.recyclerDownloads.layoutManager = LinearLayoutManager(requireContext())
         binding.recyclerDownloads.adapter = adapter
     }
@@ -57,7 +64,8 @@ class DownloadListFragment : Fragment() {
                 AppToast.show(requireContext(), getString(R.string.download_empty))
                 return@setOnClickListener
             }
-            AlertDialog.Builder(requireContext())
+            AlertDialog
+                .Builder(requireContext())
                 .setTitle(R.string.download_delete_all_title)
                 .setMessage(getString(R.string.download_delete_all_msg, items.size))
                 .setPositiveButton(R.string.download_delete_confirm) { _, _ -> deleteAllDownloads() }
@@ -94,7 +102,7 @@ class DownloadListFragment : Fragment() {
                         audioPath = obj.optString("audioPath", ""),
                         fileSize = obj.optLong("fileSize", 0),
                         downloadedAt = obj.optLong("downloadedAt", 0),
-                    )
+                    ),
                 )
             }
         }
@@ -125,16 +133,18 @@ class DownloadListFragment : Fragment() {
             return
         }
         try {
-            val uri = FileProvider.getUriForFile(
-                requireContext(),
-                "${requireContext().packageName}.fileprovider",
-                file
-            )
+            val uri =
+                FileProvider.getUriForFile(
+                    requireContext(),
+                    "${requireContext().packageName}.fileprovider",
+                    file,
+                )
             val mimeType = if (item.isDash) "video/mp4" else "video/*"
-            val intent = Intent(Intent.ACTION_VIEW).apply {
-                setDataAndType(uri, mimeType)
-                addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
-            }
+            val intent =
+                Intent(Intent.ACTION_VIEW).apply {
+                    setDataAndType(uri, mimeType)
+                    addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
+                }
             if (intent.resolveActivity(requireContext().packageManager) != null) {
                 startActivity(intent)
                 if (item.isDash) {
@@ -149,39 +159,47 @@ class DownloadListFragment : Fragment() {
     }
 
     private fun onDeleteDownload(item: DownloadItem) {
-        AlertDialog.Builder(requireContext())
+        AlertDialog
+            .Builder(requireContext())
             .setTitle(R.string.download_delete_title)
             .setMessage(getString(R.string.download_delete_msg_single, item.title))
             .setPositiveButton(R.string.download_delete_confirm) { _, _ ->
                 deleteDownload(item)
-            }
-            .setNegativeButton(android.R.string.cancel, null)
+            }.setNegativeButton(android.R.string.cancel, null)
             .show()
     }
 
     private fun onShowInfo(item: DownloadItem) {
         val sizeStr = formatSize(item.fileSize)
         val dateStr = SimpleDateFormat("yyyy-MM-dd HH:mm", Locale.getDefault()).format(Date(item.downloadedAt))
-        val audioSize = if (item.audioPath.isNotBlank()) {
-            val audioFile = File(item.audioPath)
-            if (audioFile.exists()) formatSize(audioFile.length()) else "N/A"
-        } else "N/A"
-        val videoSize = if (item.audioPath.isNotBlank()) {
-            formatSize(item.playableFile.length())
-        } else sizeStr
+        val audioSize =
+            if (item.audioPath.isNotBlank()) {
+                val audioFile = File(item.audioPath)
+                if (audioFile.exists()) formatSize(audioFile.length()) else "N/A"
+            } else {
+                "N/A"
+            }
+        val videoSize =
+            if (item.audioPath.isNotBlank()) {
+                formatSize(item.playableFile.length())
+            } else {
+                sizeStr
+            }
 
-        val msg = buildString {
-            appendLine("标题：${item.title}")
-            if (item.page.isNotBlank()) appendLine("分P：${item.page}")
-            appendLine("BV号：${item.bvid}")
-            appendLine("格式：${item.formatLabel}")
-            appendLine("视频大小：$videoSize")
-            if (item.isDash) appendLine("音频大小：$audioSize")
-            appendLine("总大小：$sizeStr")
-            appendLine("下载时间：$dateStr")
-            appendLine("路径：${item.videoPath}")
-        }
-        AlertDialog.Builder(requireContext())
+        val msg =
+            buildString {
+                appendLine("标题：${item.title}")
+                if (item.page.isNotBlank()) appendLine("分P：${item.page}")
+                appendLine("BV号：${item.bvid}")
+                appendLine("格式：${item.formatLabel}")
+                appendLine("视频大小：$videoSize")
+                if (item.isDash) appendLine("音频大小：$audioSize")
+                appendLine("总大小：$sizeStr")
+                appendLine("下载时间：$dateStr")
+                appendLine("路径：${item.videoPath}")
+            }
+        AlertDialog
+            .Builder(requireContext())
             .setTitle(R.string.download_info_title)
             .setMessage(msg)
             .setPositiveButton(android.R.string.ok, null)
@@ -226,12 +244,13 @@ class DownloadListFragment : Fragment() {
         return "共 ${items.size} 个文件，占用 ${formatSize(totalSize)}"
     }
 
-    private fun formatSize(bytes: Long): String = when {
-        bytes < 1024 -> "${bytes}B"
-        bytes < 1024 * 1024 -> "${bytes / 1024}KB"
-        bytes < 1024 * 1024 * 1024 -> String.format("%.1fMB", bytes / 1024.0 / 1024.0)
-        else -> String.format("%.2fGB", bytes / 1024.0 / 1024.0 / 1024.0)
-    }
+    private fun formatSize(bytes: Long): String =
+        when {
+            bytes < 1024 -> "${bytes}B"
+            bytes < 1024 * 1024 -> "${bytes / 1024}KB"
+            bytes < 1024 * 1024 * 1024 -> String.format("%.1fMB", bytes / 1024.0 / 1024.0)
+            else -> String.format("%.2fGB", bytes / 1024.0 / 1024.0 / 1024.0)
+        }
 
     override fun onDestroyView() {
         _binding = null
@@ -245,33 +264,41 @@ class DownloadListFragment : Fragment() {
         private val onDelete: (DownloadItem) -> Unit,
         private val onInfo: (DownloadItem) -> Unit,
     ) : RecyclerView.Adapter<DownloadAdapter.VH>() {
-
         private var items: List<DownloadItem> = emptyList()
         val currentItems: List<DownloadItem> get() = items
 
-        inner class VH(val binding: ItemDownloadBinding) : RecyclerView.ViewHolder(binding.root)
+        inner class VH(
+            val binding: ItemDownloadBinding,
+        ) : RecyclerView.ViewHolder(binding.root)
 
-        override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): VH {
+        override fun onCreateViewHolder(
+            parent: ViewGroup,
+            viewType: Int,
+        ): VH {
             val binding = ItemDownloadBinding.inflate(LayoutInflater.from(parent.context), parent, false)
             return VH(binding)
         }
 
         override fun getItemCount() = items.size
 
-        override fun onBindViewHolder(holder: VH, position: Int) {
+        override fun onBindViewHolder(
+            holder: VH,
+            position: Int,
+        ) {
             val item = items[position]
             val ctx = holder.binding.root.context
             val dateStr = SimpleDateFormat("yyyy-MM-dd HH:mm", Locale.getDefault()).format(Date(item.downloadedAt))
 
-            holder.binding.tvTitle.text = buildString {
-                append(item.title)
-                if (item.page.isNotBlank()) append(" - ${item.page}")
-            }
+            holder.binding.tvTitle.text =
+                buildString {
+                    append(item.title)
+                    if (item.page.isNotBlank()) append(" - ${item.page}")
+                }
             holder.binding.tvMeta.text = "${formatSize(item.fileSize)} | ${item.formatLabel} | $dateStr"
 
             // 格式图标
             holder.binding.ivDownloadIcon.setImageResource(
-                if (item.isDash) R.drawable.ic_download else R.drawable.ic_download
+                if (item.isDash) R.drawable.ic_download else R.drawable.ic_download,
             )
 
             // 播放按钮

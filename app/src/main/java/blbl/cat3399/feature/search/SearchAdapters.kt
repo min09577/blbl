@@ -27,7 +27,7 @@ internal class SearchAdapters(
     val suggestAdapter: SearchSuggestAdapter =
         SearchSuggestAdapter(
             onClick = { keyword -> fragment.onSearchKeywordClicked(keyword) },
-            onLongClick = { keyword -> fragment.onSearchKeywordLongClicked(keyword) }
+            onLongClick = { keyword -> fragment.onSearchKeywordLongClicked(keyword) },
         )
 
     val hotAdapter: SearchHotAdapter =

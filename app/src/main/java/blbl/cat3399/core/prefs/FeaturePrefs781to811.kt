@@ -1,9 +1,10 @@
 package blbl.cat3399.core.prefs
 
 import android.content.Context
-import android.content.SharedPreferences
 
-class FeaturePrefs781(context: Context) {
+class FeaturePrefs781(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_781", Context.MODE_PRIVATE)
 
     var v781demo: Boolean
@@ -605,11 +606,11 @@ class FeaturePrefs781(context: Context) {
     var v790dirty: Boolean
         get() = prefs.getBoolean("v790dirty", false)
         set(value) = prefs.edit().putBoolean("v790dirty", value).apply()
-
 }
 
-
-class FeaturePrefs791(context: Context) {
+class FeaturePrefs791(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_791", Context.MODE_PRIVATE)
 
     var v791disable: Boolean
@@ -1211,11 +1212,11 @@ class FeaturePrefs791(context: Context) {
     var v800draw: Boolean
         get() = prefs.getBoolean("v800draw", false)
         set(value) = prefs.edit().putBoolean("v800draw", value).apply()
-
 }
 
-
-class FeaturePrefs801(context: Context) {
+class FeaturePrefs801(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_801", Context.MODE_PRIVATE)
 
     var v801driver: Boolean
@@ -1817,11 +1818,11 @@ class FeaturePrefs801(context: Context) {
     var v810empty: Boolean
         get() = prefs.getBoolean("v810empty", false)
         set(value) = prefs.edit().putBoolean("v810empty", value).apply()
-
 }
 
-
-class FeaturePrefs811(context: Context) {
+class FeaturePrefs811(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_811", Context.MODE_PRIVATE)
 
     var v811enable: Boolean
@@ -2423,7 +2424,4 @@ class FeaturePrefs811(context: Context) {
     var v820exchange: Boolean
         get() = prefs.getBoolean("v820exchange", false)
         set(value) = prefs.edit().putBoolean("v820exchange", value).apply()
-
 }
-
-

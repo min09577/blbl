@@ -24,7 +24,10 @@ class SidebarNavAdapter(
     private var selectedId: Int = ID_HOME
     private var showLabelsAlways: Boolean = false
 
-    fun submit(list: List<NavItem>, selectedId: Int) {
+    fun submit(
+        list: List<NavItem>,
+        selectedId: Int,
+    ) {
         items.clear()
         items.addAll(list)
         this.selectedId = selectedId
@@ -37,7 +40,10 @@ class SidebarNavAdapter(
         notifyDataSetChanged()
     }
 
-    fun select(id: Int, trigger: Boolean) {
+    fun select(
+        id: Int,
+        trigger: Boolean,
+    ) {
         if (selectedId == id) {
             if (trigger) items.firstOrNull { it.id == id }?.let { onClick(it) }
             return
@@ -66,12 +72,18 @@ class SidebarNavAdapter(
         selectedId: Int,
     ): Boolean = items == list && this.selectedId == selectedId
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Vh {
+    override fun onCreateViewHolder(
+        parent: ViewGroup,
+        viewType: Int,
+    ): Vh {
         val binding = ItemSidebarNavBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return Vh(binding)
     }
 
-    override fun onBindViewHolder(holder: Vh, position: Int) {
+    override fun onBindViewHolder(
+        holder: Vh,
+        position: Int,
+    ) {
         val item = items[position]
         val selected = item.id == selectedId
         AppLog.d(
@@ -86,7 +98,9 @@ class SidebarNavAdapter(
 
     override fun getItemCount(): Int = items.size
 
-    class Vh(private val binding: ItemSidebarNavBinding) : RecyclerView.ViewHolder(binding.root) {
+    class Vh(
+        private val binding: ItemSidebarNavBinding,
+    ) : RecyclerView.ViewHolder(binding.root) {
         fun bind(
             item: NavItem,
             selected: Boolean,
@@ -115,7 +129,10 @@ class SidebarNavAdapter(
                     selected -> R.dimen.sidebar_nav_item_height_selected
                     else -> R.dimen.sidebar_nav_item_height_default
                 }
-            val heightPx = binding.root.resources.getDimensionPixelSize(heightRes).coerceAtLeast(1)
+            val heightPx =
+                binding.root.resources
+                    .getDimensionPixelSize(heightRes)
+                    .coerceAtLeast(1)
             val lp = binding.card.layoutParams
             if (lp.height != heightPx) {
                 lp.height = heightPx

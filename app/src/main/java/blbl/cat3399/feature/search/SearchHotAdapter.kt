@@ -28,7 +28,10 @@ class SearchHotAdapter(
 
     override fun getItemId(position: Int): Long = items[position].hashCode().toLong()
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Vh {
+    override fun onCreateViewHolder(
+        parent: ViewGroup,
+        viewType: Int,
+    ): Vh {
         val binding =
             ItemSearchHotBinding.inflate(
                 LayoutInflater.from(parent.context).cloneInUserScale(parent.context),
@@ -38,14 +41,22 @@ class SearchHotAdapter(
         return Vh(binding)
     }
 
-    override fun onBindViewHolder(holder: Vh, position: Int) {
+    override fun onBindViewHolder(
+        holder: Vh,
+        position: Int,
+    ) {
         holder.bind(items[position], onClick)
     }
 
     override fun getItemCount(): Int = items.size
 
-    class Vh(private val binding: ItemSearchHotBinding) : RecyclerView.ViewHolder(binding.root) {
-        fun bind(keyword: String, onClick: (String) -> Unit) {
+    class Vh(
+        private val binding: ItemSearchHotBinding,
+    ) : RecyclerView.ViewHolder(binding.root) {
+        fun bind(
+            keyword: String,
+            onClick: (String) -> Unit,
+        ) {
             binding.tvKeyword.text = keyword
             binding.root.setOnClickListener { onClick(keyword) }
         }

@@ -11,18 +11,15 @@ private var abRepeatPointAMs: Long = -1L
 private var abRepeatPointBMs: Long = -1L
 
 /** 是否处于AB循环状态 */
-internal fun PlayerActivity.isAbRepeatActive(): Boolean {
-    return abRepeatPointAMs >= 0 && abRepeatPointBMs > abRepeatPointAMs
-}
+internal fun PlayerActivity.isAbRepeatActive(): Boolean = abRepeatPointAMs >= 0 && abRepeatPointBMs > abRepeatPointAMs
 
 /** 获取当前AB循环状态文本 */
-internal fun PlayerActivity.abRepeatStatusText(): String {
-    return when {
+internal fun PlayerActivity.abRepeatStatusText(): String =
+    when {
         abRepeatPointAMs < 0 -> "关闭"
         abRepeatPointBMs < 0 -> "A: ${formatHmsAb(abRepeatPointAMs)} → 等待B点"
         else -> "A: ${formatHmsAb(abRepeatPointAMs)} → B: ${formatHmsAb(abRepeatPointBMs)}"
     }
-}
 
 /** 设置/清除AB循环 */
 internal fun PlayerActivity.toggleAbRepeat() {

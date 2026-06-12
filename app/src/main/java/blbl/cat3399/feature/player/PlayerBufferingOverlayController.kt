@@ -23,6 +23,7 @@ internal class PlayerBufferingOverlayController(
     private val speedMeter = BufferingSpeedMeter()
     private var showJob: Job? = null
     private var bufferingStateStartedAtMs: Long = 0L
+
     @Volatile private var speedTrackingEnabled: Boolean = false
     private var overlaySuppressedUntilMs: Long = 0L
     private var overlayEligibleAtMs: Long = 0L
@@ -56,7 +57,10 @@ internal class PlayerBufferingOverlayController(
         update()
     }
 
-    fun suppressFor(durationMs: Long, graceMs: Long) {
+    fun suppressFor(
+        durationMs: Long,
+        graceMs: Long,
+    ) {
         val nowMs = SystemClock.elapsedRealtime()
         val suppressedUntil = nowMs + durationMs.coerceAtLeast(0L) + graceMs.coerceAtLeast(0L)
         if (suppressedUntil > overlaySuppressedUntilMs) {

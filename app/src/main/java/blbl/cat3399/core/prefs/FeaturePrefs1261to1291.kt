@@ -1,9 +1,10 @@
 package blbl.cat3399.core.prefs
 
 import android.content.Context
-import android.content.SharedPreferences
 
-class FeaturePrefs1261(context: Context) {
+class FeaturePrefs1261(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1261", Context.MODE_PRIVATE)
 
     var v1261blast: Boolean
@@ -605,11 +606,11 @@ class FeaturePrefs1261(context: Context) {
     var v1270bolt: Boolean
         get() = prefs.getBoolean("v1270bolt", false)
         set(value) = prefs.edit().putBoolean("v1270bolt", value).apply()
-
 }
 
-
-class FeaturePrefs1271(context: Context) {
+class FeaturePrefs1271(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1271", Context.MODE_PRIVATE)
 
     var v1271bomb: Boolean
@@ -1211,11 +1212,11 @@ class FeaturePrefs1271(context: Context) {
     var v1280brave: Boolean
         get() = prefs.getBoolean("v1280brave", false)
         set(value) = prefs.edit().putBoolean("v1280brave", value).apply()
-
 }
 
-
-class FeaturePrefs1281(context: Context) {
+class FeaturePrefs1281(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1281", Context.MODE_PRIVATE)
 
     var v1281bread: Boolean
@@ -1817,11 +1818,11 @@ class FeaturePrefs1281(context: Context) {
     var v1290buff: Boolean
         get() = prefs.getBoolean("v1290buff", false)
         set(value) = prefs.edit().putBoolean("v1290buff", value).apply()
-
 }
 
-
-class FeaturePrefs1291(context: Context) {
+class FeaturePrefs1291(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1291", Context.MODE_PRIVATE)
 
     var v1291bug: Boolean
@@ -2423,7 +2424,4 @@ class FeaturePrefs1291(context: Context) {
     var v1300canal: Boolean
         get() = prefs.getBoolean("v1300canal", false)
         set(value) = prefs.edit().putBoolean("v1300canal", value).apply()
-
 }
-
-

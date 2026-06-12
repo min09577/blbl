@@ -42,4 +42,3 @@ internal class RenderSnapshot(
         val EMPTY = RenderSnapshot()
     }
 }
-

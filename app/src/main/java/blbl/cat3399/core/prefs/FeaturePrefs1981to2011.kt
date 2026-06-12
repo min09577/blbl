@@ -1,9 +1,10 @@
 package blbl.cat3399.core.prefs
 
 import android.content.Context
-import android.content.SharedPreferences
 
-class FeaturePrefs1981(context: Context) {
+class FeaturePrefs1981(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1981", Context.MODE_PRIVATE)
 
     var v1981erased: Boolean
@@ -605,11 +606,11 @@ class FeaturePrefs1981(context: Context) {
     var v1990expected: Boolean
         get() = prefs.getBoolean("v1990expected", false)
         set(value) = prefs.edit().putBoolean("v1990expected", value).apply()
-
 }
 
-
-class FeaturePrefs1991(context: Context) {
+class FeaturePrefs1991(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1991", Context.MODE_PRIVATE)
 
     var v1991expedited: Boolean
@@ -1211,11 +1212,11 @@ class FeaturePrefs1991(context: Context) {
     var v2000featured: Boolean
         get() = prefs.getBoolean("v2000featured", false)
         set(value) = prefs.edit().putBoolean("v2000featured", value).apply()
-
 }
 
-
-class FeaturePrefs2001(context: Context) {
+class FeaturePrefs2001(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_2001", Context.MODE_PRIVATE)
 
     var v2001federated: Boolean
@@ -1817,11 +1818,11 @@ class FeaturePrefs2001(context: Context) {
     var v2010forced: Boolean
         get() = prefs.getBoolean("v2010forced", false)
         set(value) = prefs.edit().putBoolean("v2010forced", value).apply()
-
 }
 
-
-class FeaturePrefs2011(context: Context) {
+class FeaturePrefs2011(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_2011", Context.MODE_PRIVATE)
 
     var v2011forecasted: Boolean
@@ -2423,7 +2424,4 @@ class FeaturePrefs2011(context: Context) {
     var v2020frustrated: Boolean
         get() = prefs.getBoolean("v2020frustrated", false)
         set(value) = prefs.edit().putBoolean("v2020frustrated", value).apply()
-
 }
-
-

@@ -16,8 +16,8 @@ import blbl.cat3399.core.tv.RemoteKeys
 import blbl.cat3399.core.ui.AppToast
 import blbl.cat3399.core.ui.BaseActivity
 import blbl.cat3399.core.ui.DpadGridController
-import blbl.cat3399.core.ui.GridViewportFillMonitor
 import blbl.cat3399.core.ui.GridSpanPolicy
+import blbl.cat3399.core.ui.GridViewportFillMonitor
 import blbl.cat3399.core.ui.Immersive
 import blbl.cat3399.core.ui.cloneInUserScale
 import blbl.cat3399.core.ui.installGridViewportFillMonitor
@@ -103,7 +103,11 @@ class RegionDetailActivity : BaseActivity() {
         binding.recycler.clearOnScrollListeners()
         binding.recycler.addOnScrollListener(
             object : RecyclerView.OnScrollListener() {
-                override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
+                override fun onScrolled(
+                    recyclerView: RecyclerView,
+                    dx: Int,
+                    dy: Int,
+                ) {
                     if (dy <= 0) return
                     if (isLoadingMore || endReached) return
                     val lm = recyclerView.layoutManager as? GridLayoutManager ?: return
@@ -296,7 +300,10 @@ class RegionDetailActivity : BaseActivity() {
             }
     }
 
-    private fun startUpDetail(mid: Long, card: VideoCard) {
+    private fun startUpDetail(
+        mid: Long,
+        card: VideoCard,
+    ) {
         startActivity(
             Intent(this, UpDetailActivity::class.java)
                 .putExtra(UpDetailActivity.EXTRA_MID, mid)

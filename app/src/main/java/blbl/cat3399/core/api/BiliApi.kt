@@ -1,5 +1,28 @@
 package blbl.cat3399.core.api
 
+import blbl.cat3399.core.api.video.ArchiveRelatedRequest
+import blbl.cat3399.core.api.video.UgcSeasonArchivesPage
+import blbl.cat3399.core.api.video.UgcSeasonArchivesRequest
+import blbl.cat3399.core.api.video.VideoApiGateway
+import blbl.cat3399.core.api.video.VideoCardPage
+import blbl.cat3399.core.api.video.VideoCollectionSectionsPage
+import blbl.cat3399.core.api.video.VideoCollectionSectionsRequest
+import blbl.cat3399.core.api.video.VideoDetail
+import blbl.cat3399.core.api.video.VideoDetailRequest
+import blbl.cat3399.core.api.video.VideoDynamicTagRequest
+import blbl.cat3399.core.api.video.VideoOnlineStatus
+import blbl.cat3399.core.api.video.VideoOnlineStatusRequest
+import blbl.cat3399.core.api.video.VideoPlayRequest
+import blbl.cat3399.core.api.video.VideoPlayStream
+import blbl.cat3399.core.api.video.VideoPlayerInfo
+import blbl.cat3399.core.api.video.VideoPlayerInfoRequest
+import blbl.cat3399.core.api.video.VideoPopularRequest
+import blbl.cat3399.core.api.video.VideoRecommendRequest
+import blbl.cat3399.core.api.video.VideoRegionLatestRequest
+import blbl.cat3399.core.api.video.VideoSeriesArchivesRequest
+import blbl.cat3399.core.api.video.VideoShotInfo
+import blbl.cat3399.core.api.video.VideoShotRequest
+import blbl.cat3399.core.api.video.VideoTagsRequest
 import blbl.cat3399.core.log.AppLog
 import blbl.cat3399.core.model.BangumiEpisode
 import blbl.cat3399.core.model.BangumiEpisodeSection
@@ -14,40 +37,15 @@ import blbl.cat3399.core.model.LiveAreaParent
 import blbl.cat3399.core.model.LiveRoomCard
 import blbl.cat3399.core.model.VideoCard
 import blbl.cat3399.core.model.VideoTag
-import blbl.cat3399.core.prefs.AppPrefs
-import okhttp3.FormBody
-import blbl.cat3399.core.api.video.ArchiveRelatedRequest
-import blbl.cat3399.core.api.video.UgcSeasonArchivesPage
-import blbl.cat3399.core.api.video.UgcSeasonArchivesRequest
-import blbl.cat3399.core.api.video.VideoApiGateway
-import blbl.cat3399.core.api.video.VideoCardPage
-import blbl.cat3399.core.api.video.VideoCollectionSectionsPage
-import blbl.cat3399.core.api.video.VideoCollectionSectionsRequest
-import blbl.cat3399.core.api.video.VideoDetail
-import blbl.cat3399.core.api.video.VideoDetailRequest
-import blbl.cat3399.core.api.video.VideoDynamicTagRequest
-import blbl.cat3399.core.api.video.VideoOnlineStatus
-import blbl.cat3399.core.api.video.VideoOnlineStatusRequest
-import blbl.cat3399.core.api.video.VideoPlayerInfo
-import blbl.cat3399.core.api.video.VideoPlayerInfoRequest
-import blbl.cat3399.core.api.video.VideoPlayRequest
-import blbl.cat3399.core.api.video.VideoPlayStream
-import blbl.cat3399.core.api.video.VideoPopularRequest
-import blbl.cat3399.core.api.video.VideoRecommendRequest
-import blbl.cat3399.core.api.video.VideoRegionLatestRequest
-import blbl.cat3399.core.api.video.VideoSeriesArchivesRequest
-import blbl.cat3399.core.api.video.VideoShotInfo
-import blbl.cat3399.core.api.video.VideoShotRequest
-import blbl.cat3399.core.api.video.VideoTagsRequest
 import blbl.cat3399.core.net.BiliClient
 import blbl.cat3399.core.net.PiliWebHeaders
 import blbl.cat3399.core.net.WebCookieMaintainer
+import blbl.cat3399.core.prefs.AppPrefs
 import blbl.cat3399.core.util.Format
 import blbl.cat3399.core.util.parseBangumiRedirectUrl
-import blbl.cat3399.proto.dm.DmSegMobileReply
-import blbl.cat3399.proto.dmview.DmWebViewReply
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
+import okhttp3.FormBody
 import org.json.JSONArray
 import org.json.JSONObject
 import java.security.MessageDigest
@@ -78,8 +76,10 @@ object BiliApi {
         return data.optString("v_voucher", "").trim().takeIf { it.isNotBlank() }
     }
 
-    internal fun piliWebHeaders(targetUrl: String, includeCookie: Boolean = true): Map<String, String> =
-        PiliWebHeaders.forUrl(targetUrl = targetUrl, includeCookie = includeCookie)
+    internal fun piliWebHeaders(
+        targetUrl: String,
+        includeCookie: Boolean = true,
+    ): Map<String, String> = PiliWebHeaders.forUrl(targetUrl = targetUrl, includeCookie = includeCookie)
 
     data class GaiaVgateRegister(
         val gt: String,
@@ -219,8 +219,7 @@ object BiliApi {
         val total: Int,
     )
 
-    private fun VideoCardPage<*>.toHasMorePage(): HasMorePage<VideoCard> =
-        HasMorePage(items = items, page = page, hasMore = hasMore, total = total)
+    private fun VideoCardPage<*>.toHasMorePage(): HasMorePage<VideoCard> = HasMorePage(items = items, page = page, hasMore = hasMore, total = total)
 
     data class PgcFollowActionResult(
         val status: Int?,
@@ -261,9 +260,7 @@ object BiliApi {
         val wsPort: Int,
     )
 
-    suspend fun nav(): JSONObject {
-        return BiliClient.getJson("https://api.bilibili.com/x/web-interface/nav")
-    }
+    suspend fun nav(): JSONObject = BiliClient.getJson("https://api.bilibili.com/x/web-interface/nav")
 
     suspend fun searchDefaultText(): String? = SearchApi.searchDefaultText()
 
@@ -275,33 +272,25 @@ object BiliApi {
         keyword: String,
         page: Int = 1,
         order: String = "totalrank",
-    ): PagedResult<VideoCard> {
-        return SearchApi.searchVideo(keyword = keyword, page = page, order = order)
-    }
+    ): PagedResult<VideoCard> = SearchApi.searchVideo(keyword = keyword, page = page, order = order)
 
     suspend fun searchMediaFt(
         keyword: String,
         page: Int = 1,
         order: String = "totalrank",
-    ): PagedResult<BangumiSeason> {
-        return SearchApi.searchMediaFt(keyword = keyword, page = page, order = order)
-    }
+    ): PagedResult<BangumiSeason> = SearchApi.searchMediaFt(keyword = keyword, page = page, order = order)
 
     suspend fun searchMediaBangumi(
         keyword: String,
         page: Int = 1,
         order: String = "totalrank",
-    ): PagedResult<BangumiSeason> {
-        return SearchApi.searchMediaBangumi(keyword = keyword, page = page, order = order)
-    }
+    ): PagedResult<BangumiSeason> = SearchApi.searchMediaBangumi(keyword = keyword, page = page, order = order)
 
     suspend fun searchLiveRoom(
         keyword: String,
         page: Int = 1,
         order: String = "online",
-    ): PagedResult<LiveRoomCard> {
-        return SearchApi.searchLiveRoom(keyword = keyword, page = page, order = order)
-    }
+    ): PagedResult<LiveRoomCard> = SearchApi.searchLiveRoom(keyword = keyword, page = page, order = order)
 
     suspend fun searchUser(
         keyword: String,
@@ -309,21 +298,21 @@ object BiliApi {
         order: String = "0",
         orderSort: Int = 0,
         userType: Int = 0,
-    ): PagedResult<Following> {
-        return SearchApi.searchUser(
+    ): PagedResult<Following> =
+        SearchApi.searchUser(
             keyword = keyword,
             page = page,
             order = order,
             orderSort = orderSort,
             userType = userType,
         )
-    }
 
     suspend fun relationStat(vmid: Long): RelationStat {
-        val url = BiliClient.withQuery(
-            "https://api.bilibili.com/x/relation/stat",
-            mapOf("vmid" to vmid.toString()),
-        )
+        val url =
+            BiliClient.withQuery(
+                "https://api.bilibili.com/x/relation/stat",
+                mapOf("vmid" to vmid.toString()),
+            )
         val json = BiliClient.getJson(url)
         val data = json.optJSONObject("data") ?: JSONObject()
         return RelationStat(
@@ -349,12 +338,14 @@ object BiliApi {
         if (data.length() <= 0) error("space_upstat_empty")
 
         val archiveView =
-            data.optJSONObject("archive")
+            data
+                .optJSONObject("archive")
                 ?.optLong("view")
                 ?.takeIf { it >= 0 }
                 ?: 0L
         val articleView =
-            data.optJSONObject("article")
+            data
+                .optJSONObject("article")
                 ?.optLong("view")
                 ?.takeIf { it >= 0 }
         val likesAny = data.opt("likes")
@@ -382,26 +373,29 @@ object BiliApi {
         page: Int = 1,
         pageSize: Int = 30,
         sortType: String = "online",
-    ): List<LiveRoomCard> {
-        return LiveApi.liveAreaRooms(
+    ): List<LiveRoomCard> =
+        LiveApi.liveAreaRooms(
             parentAreaId = parentAreaId,
             areaId = areaId,
             page = page,
             pageSize = pageSize,
             sortType = sortType,
         )
-    }
 
-    suspend fun liveFollowing(page: Int = 1, pageSize: Int = 10): HasMorePage<LiveRoomCard> {
-        return LiveApi.liveFollowing(page = page, pageSize = pageSize)
-    }
+    suspend fun liveFollowing(
+        page: Int = 1,
+        pageSize: Int = 10,
+    ): HasMorePage<LiveRoomCard> = LiveApi.liveFollowing(page = page, pageSize = pageSize)
 
     suspend fun liveRoomInfo(roomId: Long): LiveRoomInfo = LiveApi.liveRoomInfo(roomId = roomId)
 
     suspend fun liveRoomEntryAction(roomId: Long) = LiveApi.liveRoomEntryAction(roomId = roomId)
 
-    suspend fun livePlayUrl(roomId: Long, qn: Int, highBitrateEnabled: Boolean): LivePlayUrl =
-        LiveApi.livePlayUrl(roomId = roomId, qn = qn, highBitrateEnabled = highBitrateEnabled)
+    suspend fun livePlayUrl(
+        roomId: Long,
+        qn: Int,
+        highBitrateEnabled: Boolean,
+    ): LivePlayUrl = LiveApi.livePlayUrl(roomId = roomId, qn = qn, highBitrateEnabled = highBitrateEnabled)
 
     suspend fun liveDanmuInfo(roomId: Long): LiveDanmuInfo = LiveApi.liveDanmuInfo(roomId = roomId)
 
@@ -411,11 +405,12 @@ object BiliApi {
         viewAt: Long = 0,
         ps: Int = 24,
     ): HistoryPage {
-        val params = mutableMapOf(
-            "max" to max.coerceAtLeast(0).toString(),
-            "view_at" to viewAt.coerceAtLeast(0).toString(),
-            "ps" to ps.coerceIn(1, 30).toString(),
-        )
+        val params =
+            mutableMapOf(
+                "max" to max.coerceAtLeast(0).toString(),
+                "view_at" to viewAt.coerceAtLeast(0).toString(),
+                "ps" to ps.coerceIn(1, 30).toString(),
+            )
         if (!business.isNullOrBlank()) params["business"] = business
         val url = BiliClient.withQuery("https://api.bilibili.com/x/web-interface/history/cursor", params)
         val json = BiliClient.getJson(url)
@@ -488,11 +483,12 @@ object BiliApi {
         val progressSec = rawProgressSec.takeIf { v -> v > 0 && !progressFinished }
         val showTitle = obj.optString("show_title", "").trim().takeIf { s -> s.isNotBlank() }
         val badge = obj.optString("badge", "").trim().takeIf { s -> s.isNotBlank() }
-        val subtitleParts = buildList {
-            viewAtSec?.let { add(Format.timeText(it)) }
-            badge?.let { add(it) }
-            showTitle?.let { add(it) }
-        }
+        val subtitleParts =
+            buildList {
+                viewAtSec?.let { add(Format.timeText(it)) }
+                badge?.let { add(it) }
+                showTitle?.let { add(it) }
+            }
         val subtitle = subtitleParts.joinToString(" · ").takeIf { s -> s.isNotBlank() }
         return VideoCard(
             bvid = bvid,
@@ -531,7 +527,11 @@ object BiliApi {
         val liveStatus = obj.optInt("live_status", 0)
         val coverUrl =
             obj.optString("cover", "").trim().takeIf { it.isNotBlank() }
-                ?: obj.optJSONArray("covers")?.optString(0)?.trim()?.takeIf { it.isNotBlank() }
+                ?: obj
+                    .optJSONArray("covers")
+                    ?.optString(0)
+                    ?.trim()
+                    ?.takeIf { it.isNotBlank() }
                 ?: ""
         return LiveRoomCard(
             roomId = roomId,
@@ -579,10 +579,11 @@ object BiliApi {
     ) = VideoApi.favResourceDeal(rid = aid, addMediaIds = emptyList(), delMediaIds = listOf(mediaId))
 
     private suspend fun favFolderInfo(mediaId: Long): FavFolder? {
-        val url = BiliClient.withQuery(
-            "https://api.bilibili.com/x/v3/fav/folder/info",
-            mapOf("media_id" to mediaId.toString()),
-        )
+        val url =
+            BiliClient.withQuery(
+                "https://api.bilibili.com/x/v3/fav/folder/info",
+                mapOf("media_id" to mediaId.toString()),
+            )
         val json = BiliClient.getJson(url)
         val code = json.optInt("code", 0)
         if (code != 0) return null
@@ -596,14 +597,15 @@ object BiliApi {
     }
 
     suspend fun favFolders(upMid: Long): List<FavFolder> {
-        val url = BiliClient.withQuery(
-            "https://api.bilibili.com/x/v3/fav/folder/created/list-all",
-            mapOf(
-                "up_mid" to upMid.toString(),
-                "type" to "2",
-                "web_location" to "333.1387",
-            ),
-        )
+        val url =
+            BiliClient.withQuery(
+                "https://api.bilibili.com/x/v3/fav/folder/created/list-all",
+                mapOf(
+                    "up_mid" to upMid.toString(),
+                    "type" to "2",
+                    "web_location" to "333.1387",
+                ),
+            )
         val json = BiliClient.getJson(url)
         val code = json.optInt("code", 0)
         if (code != 0) {
@@ -611,22 +613,23 @@ object BiliApi {
             throw BiliApiException(apiCode = code, apiMessage = msg)
         }
         val list = json.optJSONObject("data")?.optJSONArray("list") ?: JSONArray()
-        val folders = withContext(Dispatchers.Default) {
-            val out = ArrayList<FavFolder>(list.length())
-            for (i in 0 until list.length()) {
-                val obj = list.optJSONObject(i) ?: continue
-                val mediaId = obj.optLong("id").takeIf { it > 0 } ?: continue
-                out.add(
-                    FavFolder(
-                        mediaId = mediaId,
-                        title = obj.optString("title", ""),
-                        coverUrl = obj.optString("cover").takeIf { it.isNotBlank() },
-                        mediaCount = obj.optInt("media_count", 0),
-                    ),
-                )
+        val folders =
+            withContext(Dispatchers.Default) {
+                val out = ArrayList<FavFolder>(list.length())
+                for (i in 0 until list.length()) {
+                    val obj = list.optJSONObject(i) ?: continue
+                    val mediaId = obj.optLong("id").takeIf { it > 0 } ?: continue
+                    out.add(
+                        FavFolder(
+                            mediaId = mediaId,
+                            title = obj.optString("title", ""),
+                            coverUrl = obj.optString("cover").takeIf { it.isNotBlank() },
+                            mediaCount = obj.optInt("media_count", 0),
+                        ),
+                    )
+                }
+                out
             }
-            out
-        }
         val missingIndices = folders.withIndex().filter { it.value.coverUrl.isNullOrBlank() }.map { it.index }
         if (missingIndices.isEmpty()) return folders
 
@@ -648,18 +651,22 @@ object BiliApi {
         val favState: Boolean,
     )
 
-    suspend fun favFoldersWithState(upMid: Long, rid: Long): List<FavFolderWithState> {
+    suspend fun favFoldersWithState(
+        upMid: Long,
+        rid: Long,
+    ): List<FavFolderWithState> {
         if (upMid <= 0L) error("fav_folders_with_state_invalid_up_mid")
         if (rid <= 0L) error("fav_folders_with_state_invalid_rid")
-        val url = BiliClient.withQuery(
-            "https://api.bilibili.com/x/v3/fav/folder/created/list-all",
-            mapOf(
-                "up_mid" to upMid.toString(),
-                "type" to "2",
-                "rid" to rid.toString(),
-                "web_location" to "333.1387",
-            ),
-        )
+        val url =
+            BiliClient.withQuery(
+                "https://api.bilibili.com/x/v3/fav/folder/created/list-all",
+                mapOf(
+                    "up_mid" to upMid.toString(),
+                    "type" to "2",
+                    "rid" to rid.toString(),
+                    "web_location" to "333.1387",
+                ),
+            )
         val json = BiliClient.getJson(url)
         val code = json.optInt("code", 0)
         if (code != 0) {
@@ -690,16 +697,19 @@ object BiliApi {
     suspend fun favFolderCreate(title: String): Long {
         if (title.isBlank()) error("收藏夹名称不能为空")
         val url = "https://api.bilibili.com/x/v3/fav/folder/add"
-        val formBody = okhttp3.FormBody.Builder()
-            .add("title", title.trim())
-            .add("intro", "")
-            .add("privacy", "0")
-            .build()
-        val body = BiliClient.requestString(
-            url = url,
-            method = "POST",
-            body = formBody,
-        )
+        val formBody =
+            okhttp3.FormBody
+                .Builder()
+                .add("title", title.trim())
+                .add("intro", "")
+                .add("privacy", "0")
+                .build()
+        val body =
+            BiliClient.requestString(
+                url = url,
+                method = "POST",
+                body = formBody,
+            )
         val json = org.json.JSONObject(body)
         val code = json.optInt("code", 0)
         if (code != 0) {
@@ -749,15 +759,16 @@ object BiliApi {
         pn: Int = 1,
         ps: Int = 20,
     ): HasMorePage<VideoCard> {
-        val url = BiliClient.withQuery(
-            "https://api.bilibili.com/x/v3/fav/resource/list",
-            mapOf(
-                "media_id" to mediaId.toString(),
-                "pn" to pn.coerceAtLeast(1).toString(),
-                "ps" to ps.coerceIn(1, 20).toString(),
-                "platform" to "web",
-            ),
-        )
+        val url =
+            BiliClient.withQuery(
+                "https://api.bilibili.com/x/v3/fav/resource/list",
+                mapOf(
+                    "media_id" to mediaId.toString(),
+                    "pn" to pn.coerceAtLeast(1).toString(),
+                    "ps" to ps.coerceIn(1, 20).toString(),
+                    "platform" to "web",
+                ),
+            )
         val json = BiliClient.getJson(url)
         val code = json.optInt("code", 0)
         if (code != 0) {
@@ -807,15 +818,16 @@ object BiliApi {
         ps: Int = 15,
     ): PagedResult<BangumiSeason> {
         if (type != 1 && type != 2) error("invalid bangumi follow type=$type")
-        val url = BiliClient.withQuery(
-            "https://api.bilibili.com/x/space/bangumi/follow/list",
-            mapOf(
-                "vmid" to vmid.toString(),
-                "type" to type.toString(),
-                "pn" to pn.coerceAtLeast(1).toString(),
-                "ps" to ps.coerceIn(1, 30).toString(),
-            ),
-        )
+        val url =
+            BiliClient.withQuery(
+                "https://api.bilibili.com/x/space/bangumi/follow/list",
+                mapOf(
+                    "vmid" to vmid.toString(),
+                    "type" to type.toString(),
+                    "pn" to pn.coerceAtLeast(1).toString(),
+                    "ps" to ps.coerceIn(1, 30).toString(),
+                ),
+            )
         val json = BiliClient.getJson(url)
         val code = json.optInt("code", 0)
         if (code != 0) {
@@ -903,19 +915,17 @@ object BiliApi {
         return bangumiSeasonDetailInner(url = url, seasonId = null, epId = safeEpId)
     }
 
-    suspend fun pgcFollowAdd(seasonId: Long): PgcFollowActionResult {
-        return pgcFollowAction(
+    suspend fun pgcFollowAdd(seasonId: Long): PgcFollowActionResult =
+        pgcFollowAction(
             url = "https://api.bilibili.com/pgc/web/follow/add",
             seasonId = seasonId,
         )
-    }
 
-    suspend fun pgcFollowDel(seasonId: Long): PgcFollowActionResult {
-        return pgcFollowAction(
+    suspend fun pgcFollowDel(seasonId: Long): PgcFollowActionResult =
+        pgcFollowAction(
             url = "https://api.bilibili.com/pgc/web/follow/del",
             seasonId = seasonId,
         )
-    }
 
     private suspend fun pgcFollowAction(
         url: String,
@@ -925,7 +935,11 @@ object BiliApi {
 
         WebCookieMaintainer.ensureWebFingerprintCookies()
         WebCookieMaintainer.ensureBuvidActiveOncePerDay()
-        val csrf = BiliClient.cookies.getCookieValue("bili_jct").orEmpty().trim()
+        val csrf =
+            BiliClient.cookies
+                .getCookieValue("bili_jct")
+                .orEmpty()
+                .trim()
         if (csrf.isBlank()) throw BiliApiException(apiCode = -111, apiMessage = "missing_csrf")
 
         val form =
@@ -965,7 +979,11 @@ object BiliApi {
         }
         val result = json.optJSONObject("result") ?: JSONObject()
         val progressLastEpId =
-            result.optJSONObject("user_status")?.optJSONObject("progress")?.optLong("last_ep_id")?.takeIf { it > 0 }
+            result
+                .optJSONObject("user_status")
+                ?.optJSONObject("progress")
+                ?.optLong("last_ep_id")
+                ?.takeIf { it > 0 }
                 ?: result.optJSONObject("user_status")?.optLong("progress")?.takeIf { it > 0 }
                 ?: result.optJSONObject("progress")?.optLong("last_ep_id")?.takeIf { it > 0 }
                 ?: result.optLong("last_ep_id").takeIf { it > 0 }
@@ -1056,7 +1074,11 @@ object BiliApi {
         val rawUserLastTime = userProgress.optLong("last_time", -1L).takeIf { it > 0 }
         val rawUserLastEpIndex =
             userProgress.optInt("last_ep_index", -1).takeIf { it > 0 }
-                ?: userProgress.optString("last_ep_index", "").trim().toIntOrNull()?.takeIf { it > 0 }
+                ?: userProgress
+                    .optString("last_ep_index", "")
+                    .trim()
+                    .toIntOrNull()
+                    ?.takeIf { it > 0 }
         val rawProgressLastEpId = result.optJSONObject("progress")?.optLong("last_ep_id", -1L)?.takeIf { it > 0 }
         val rawResultLastEpId = result.optLong("last_ep_id", -1L).takeIf { it > 0 }
         AppLog.i(
@@ -1095,8 +1117,8 @@ object BiliApi {
         )
     }
 
-    private fun pgcSeasonTypeName(type: Int): String? {
-        return when (type) {
+    private fun pgcSeasonTypeName(type: Int): String? =
+        when (type) {
             1 -> "番剧"
             2 -> "电影"
             3 -> "纪录片"
@@ -1105,7 +1127,6 @@ object BiliApi {
             7 -> "综艺"
             else -> null
         }
-    }
 
     private fun normalizeBadgeText(raw: String?): String? {
         val s = raw?.trim().orEmpty()
@@ -1133,8 +1154,8 @@ object BiliApi {
         return texts.none(::looksLikePgcExtraByText)
     }
 
-    private fun parseOptionalInt(raw: Any?): Int? {
-        return when (raw) {
+    private fun parseOptionalInt(raw: Any?): Int? =
+        when (raw) {
             null,
             JSONObject.NULL,
             -> null
@@ -1142,7 +1163,6 @@ object BiliApi {
             is String -> raw.trim().toIntOrNull()
             else -> null
         }
-    }
 
     private fun looksLikePgcExtraByText(raw: String?): Boolean {
         val text = raw?.trim().orEmpty()
@@ -1155,8 +1175,8 @@ object BiliApi {
         return false
     }
 
-    private fun parsePgcScoreText(any: Any?): String? {
-        return when (any) {
+    private fun parsePgcScoreText(any: Any?): String? =
+        when (any) {
             is Number -> any.toDouble().takeIf { it > 0 }?.let { String.format(Locale.getDefault(), "%.1f", it) }
             is String ->
                 any
@@ -1168,7 +1188,6 @@ object BiliApi {
                     ?.let { String.format(Locale.getDefault(), "%.1f", it) }
             else -> null
         }
-    }
 
     private fun parsePgcPageToBangumiSeasons(json: JSONObject): CursorPage<BangumiSeason> {
         val result = json.optJSONObject("result") ?: JSONObject()
@@ -1199,7 +1218,8 @@ object BiliApi {
 
                         val scoreText = parsePgcScoreText(obj.opt("score"))
                         val newEpIndexShow =
-                            obj.optJSONObject("new_ep")
+                            obj
+                                .optJSONObject("new_ep")
                                 ?.optString("index_show")
                                 ?.trim()
                                 ?.takeIf { it.isNotBlank() }
@@ -1268,8 +1288,18 @@ object BiliApi {
                         val typeName = seasonType?.let(::pgcSeasonTypeName)
                         val badge = normalizeBadgeText(obj.optJSONObject("badge_info")?.optString("text"))
                         val badgeEp = normalizeBadgeText(obj.optJSONObject("bottom_right_badge")?.optString("text"))
-                        val newEpIndexShow = obj.optJSONObject("new_ep")?.optString("index_show", "")?.trim().takeIf { !it.isNullOrBlank() }
-                        val followView = obj.optJSONObject("stat")?.optString("follow_view", "")?.trim().takeIf { !it.isNullOrBlank() }
+                        val newEpIndexShow =
+                            obj
+                                .optJSONObject("new_ep")
+                                ?.optString("index_show", "")
+                                ?.trim()
+                                .takeIf { !it.isNullOrBlank() }
+                        val followView =
+                            obj
+                                .optJSONObject("stat")
+                                ?.optString("follow_view", "")
+                                ?.trim()
+                                .takeIf { !it.isNullOrBlank() }
                         val desc = obj.optString("desc", "").trim().takeIf { it.isNotBlank() }
                         val subTitle = obj.optString("sub_title", "").trim().takeIf { it.isNotBlank() }
                         val progressText = badgeEp ?: newEpIndexShow ?: followView ?: desc ?: subTitle
@@ -1298,7 +1328,10 @@ object BiliApi {
         return CursorPage(items = items, hasNext = hasNext, nextCursor = nextCursor)
     }
 
-    suspend fun pgcBangumiPage(cursor: String? = null, build: Int = PGC_PAGE_BUILD_DEFAULT): CursorPage<BangumiSeason> {
+    suspend fun pgcBangumiPage(
+        cursor: String? = null,
+        build: Int = PGC_PAGE_BUILD_DEFAULT,
+    ): CursorPage<BangumiSeason> {
         val safeCursor = cursor?.trim()?.takeIf { it.isNotBlank() } ?: "0"
         val params = LinkedHashMap<String, String>(4)
         params["mobi_app"] = PGC_PAGE_MOBI_APP_DEFAULT
@@ -1320,7 +1353,10 @@ object BiliApi {
         return withContext(Dispatchers.Default) { parsePgcPcBangumiTabToBangumiSeasons(data) }
     }
 
-    suspend fun pgcCinemaTabPage(cursor: String? = null, build: Int = PGC_PAGE_BUILD_DEFAULT): CursorPage<BangumiSeason> {
+    suspend fun pgcCinemaTabPage(
+        cursor: String? = null,
+        build: Int = PGC_PAGE_BUILD_DEFAULT,
+    ): CursorPage<BangumiSeason> {
         val params = LinkedHashMap<String, String>(4)
         params["mobi_app"] = PGC_PAGE_MOBI_APP_DEFAULT
         params["build"] = build.toString()
@@ -1344,7 +1380,10 @@ object BiliApi {
             .recommend(VideoRecommendRequest(freshIdx = freshIdx, ps = ps, fetchRow = fetchRow))
             .items
 
-    suspend fun popular(pn: Int = 1, ps: Int = 20): List<VideoCard> = popularPage(pn = pn, ps = ps).items
+    suspend fun popular(
+        pn: Int = 1,
+        ps: Int = 20,
+    ): List<VideoCard> = popularPage(pn = pn, ps = ps).items
 
     suspend fun popularPage(
         pn: Int = 1,
@@ -1354,8 +1393,11 @@ object BiliApi {
             .popular(VideoPopularRequest(pn = pn, ps = ps))
             .toHasMorePage()
 
-    suspend fun regionLatest(rid: Int, pn: Int = 1, ps: Int = 20): List<VideoCard> =
-        regionLatestPage(rid = rid, pn = pn, ps = ps).items
+    suspend fun regionLatest(
+        rid: Int,
+        pn: Int = 1,
+        ps: Int = 20,
+    ): List<VideoCard> = regionLatestPage(rid = rid, pn = pn, ps = ps).items
 
     suspend fun regionLatestPage(
         rid: Int,
@@ -1376,11 +1418,9 @@ object BiliApi {
             .dynamicTag(VideoDynamicTagRequest(rid = rid, tagId = tagId, pn = pn, ps = ps))
             .toHasMorePage()
 
-    suspend fun videoDetail(bvid: String): VideoDetail =
-        VideoApiGateway.detail(VideoDetailRequest(bvid = bvid))
+    suspend fun videoDetail(bvid: String): VideoDetail = VideoApiGateway.detail(VideoDetailRequest(bvid = bvid))
 
-    suspend fun videoDetail(aid: Long): VideoDetail =
-        VideoApiGateway.detail(VideoDetailRequest(aid = aid))
+    suspend fun videoDetail(aid: Long): VideoDetail = VideoApiGateway.detail(VideoDetailRequest(aid = aid))
 
     suspend fun viewTags(
         bvid: String? = null,
@@ -1408,16 +1448,32 @@ object BiliApi {
         ps: Int = 20,
     ): JSONObject = VideoApi.commentRepliesPage(type = type, oid = oid, rootRpid = rootRpid, pn = pn, ps = ps)
 
-    suspend fun commentLike(oid: Long, type: Int, rpid: Long, like: Boolean) =
-        VideoApi.commentLike(oid = oid, type = type, rpid = rpid, like = like)
+    suspend fun commentLike(
+        oid: Long,
+        type: Int,
+        rpid: Long,
+        like: Boolean,
+    ) = VideoApi.commentLike(oid = oid, type = type, rpid = rpid, like = like)
 
-    suspend fun commentReply(oid: Long, type: Int, root: Long, parent: Long, message: String) =
-        VideoApi.commentReply(oid = oid, type = type, root = root, parent = parent, message = message)
+    suspend fun commentReply(
+        oid: Long,
+        type: Int,
+        root: Long,
+        parent: Long,
+        message: String,
+    ) = VideoApi.commentReply(oid = oid, type = type, root = root, parent = parent, message = message)
 
-    suspend fun commentReport(oid: Long, type: Int, rpid: Long, reason: Int = 2) =
-        VideoApi.commentReport(oid = oid, type = type, rpid = rpid, reason = reason)
+    suspend fun commentReport(
+        oid: Long,
+        type: Int,
+        rpid: Long,
+        reason: Int = 2,
+    ) = VideoApi.commentReport(oid = oid, type = type, rpid = rpid, reason = reason)
 
-    suspend fun archiveRelated(bvid: String, aid: Long? = null): List<VideoCard> =
+    suspend fun archiveRelated(
+        bvid: String,
+        aid: Long? = null,
+    ): List<VideoCard> =
         VideoApiGateway
             .archiveRelated(ArchiveRelatedRequest(bvid = bvid, aid = aid))
             .items
@@ -1471,16 +1527,24 @@ object BiliApi {
             ),
         )
 
-    suspend fun videoOnlineStatus(bvid: String, cid: Long): VideoOnlineStatus =
-        VideoApiGateway.onlineStatus(VideoOnlineStatusRequest(bvid = bvid, cid = cid))
+    suspend fun videoOnlineStatus(
+        bvid: String,
+        cid: Long,
+    ): VideoOnlineStatus = VideoApiGateway.onlineStatus(VideoOnlineStatusRequest(bvid = bvid, cid = cid))
 
     suspend fun playUrl(request: VideoPlayRequest): VideoPlayStream = VideoApiGateway.playUrl(request)
 
-    suspend fun videoPlayerInfo(bvid: String, cid: Long): VideoPlayerInfo =
-        VideoApiGateway.playerInfo(VideoPlayerInfoRequest(bvid = bvid, cid = cid))
+    suspend fun videoPlayerInfo(
+        bvid: String,
+        cid: Long,
+    ): VideoPlayerInfo = VideoApiGateway.playerInfo(VideoPlayerInfoRequest(bvid = bvid, cid = cid))
 
-    suspend fun historyReport(aid: Long, cid: Long, progressSec: Long, platform: String = "android") =
-        VideoApi.historyReport(aid = aid, cid = cid, progressSec = progressSec, platform = platform)
+    suspend fun historyReport(
+        aid: Long,
+        cid: Long,
+        progressSec: Long,
+        platform: String = "android",
+    ) = VideoApi.historyReport(aid = aid, cid = cid, progressSec = progressSec, platform = platform)
 
     suspend fun webHeartbeat(
         aid: Long? = null,
@@ -1504,15 +1568,27 @@ object BiliApi {
         playType = playType,
     )
 
-    suspend fun dmSeg(cid: Long, segmentIndex: Int): List<Danmaku> = VideoApi.dmSeg(cid = cid, segmentIndex = segmentIndex)
+    suspend fun dmSeg(
+        cid: Long,
+        segmentIndex: Int,
+    ): List<Danmaku> = VideoApi.dmSeg(cid = cid, segmentIndex = segmentIndex)
 
-    suspend fun dmWebView(cid: Long, aid: Long? = null): DanmakuWebView = VideoApi.dmWebView(cid = cid, aid = aid)
+    suspend fun dmWebView(
+        cid: Long,
+        aid: Long? = null,
+    ): DanmakuWebView = VideoApi.dmWebView(cid = cid, aid = aid)
 
     suspend fun dmFilterUser(forceRefresh: Boolean = false): DanmakuUserFilter = VideoApi.dmFilterUser(forceRefresh = forceRefresh)
 
     // v6.5: 发送视频弹幕
-    suspend fun sendDanmaku(cid: Long, aid: Long, message: String, color: Int = 0xFFFFFF, mode: Int = 1, fontSize: Int = 25) =
-        VideoApi.sendDanmaku(cid = cid, aid = aid, message = message, color = color, mode = mode, fontSize = fontSize)
+    suspend fun sendDanmaku(
+        cid: Long,
+        aid: Long,
+        message: String,
+        color: Int = 0xFFFFFF,
+        mode: Int = 1,
+        fontSize: Int = 25,
+    ) = VideoApi.sendDanmaku(cid = cid, aid = aid, message = message, color = color, mode = mode, fontSize = fontSize)
 
     internal fun isChargingArc(
         isChargingArc: Boolean,
@@ -1546,10 +1622,18 @@ object BiliApi {
                 )
             val play =
                 obj.optLong("play").takeIf { it > 0 }
-                    ?: obj.optString("play").trim().toLongOrNull()?.takeIf { it > 0 }
+                    ?: obj
+                        .optString("play")
+                        .trim()
+                        .toLongOrNull()
+                        ?.takeIf { it > 0 }
             val danmaku =
                 obj.optLong("video_review").takeIf { it > 0 }
-                    ?: obj.optString("video_review").trim().toLongOrNull()?.takeIf { it > 0 }
+                    ?: obj
+                        .optString("video_review")
+                        .trim()
+                        .toLongOrNull()
+                        ?.takeIf { it > 0 }
             val created =
                 obj.optLong("created").takeIf { it > 0 }
                     ?: obj.optLong("pubdate").takeIf { it > 0 }
@@ -1594,11 +1678,12 @@ object BiliApi {
     private fun parseCountText(text: String): Long? {
         val s = text.trim()
         if (s.isBlank()) return null
-        val multiplier = when {
-            s.contains("亿") -> 100_000_000L
-            s.contains("万") -> 10_000L
-            else -> 1L
-        }
+        val multiplier =
+            when {
+                s.contains("亿") -> 100_000_000L
+                s.contains("万") -> 10_000L
+                else -> 1L
+            }
         val numText = s.replace(Regex("[^0-9.]"), "")
         if (numText.isBlank()) return null
         val value = numText.toDoubleOrNull() ?: return null
@@ -1611,9 +1696,7 @@ object BiliApi {
         pn: Int = 1,
         ps: Int = 20,
         order: String = AppPrefs.FOLLOWING_LIST_ORDER_FOLLOW_TIME,
-    ): List<Following> {
-        return followingsPage(vmid = vmid, pn = pn, ps = ps, order = order).items
-    }
+    ): List<Following> = followingsPage(vmid = vmid, pn = pn, ps = ps, order = order).items
 
     suspend fun followingsPage(
         vmid: Long,
@@ -1635,16 +1718,19 @@ object BiliApi {
         if (normalizedOrder == AppPrefs.FOLLOWING_LIST_ORDER_RECENT_VISIT) {
             query["order_type"] = "attention"
         }
-        val url = BiliClient.withQuery(
-            "https://api.bilibili.com/x/relation/followings",
-            query,
-        )
-        val json = BiliClient.getJson(
-            url,
-            headers = mapOf(
-                "Referer" to "https://www.bilibili.com/",
-            ),
-        )
+        val url =
+            BiliClient.withQuery(
+                "https://api.bilibili.com/x/relation/followings",
+                query,
+            )
+        val json =
+            BiliClient.getJson(
+                url,
+                headers =
+                    mapOf(
+                        "Referer" to "https://www.bilibili.com/",
+                    ),
+            )
         val code = json.optInt("code", 0)
         if (code != 0) {
             val msg = json.optString("message", json.optString("msg", ""))
@@ -1840,11 +1926,12 @@ object BiliApi {
     }
 
     suspend fun dynamicAllVideo(offset: String? = null): DynamicPage {
-        val params = mutableMapOf(
-            "type" to "video",
-            "platform" to "web",
-            "features" to "itemOpusStyle,listOnlyfans,opusBigCover",
-        )
+        val params =
+            mutableMapOf(
+                "type" to "video",
+                "platform" to "web",
+                "features" to "itemOpusStyle,listOnlyfans,opusBigCover",
+            )
         if (!offset.isNullOrBlank()) params["offset"] = offset
         val url = BiliClient.withQuery("https://api.bilibili.com/x/polymer/web-dynamic/v1/feed/all", params)
         val json = BiliClient.getJson(url)
@@ -1911,12 +1998,16 @@ object BiliApi {
         AppLog.d(TAG, "consumeDynamicRecentUpdate hostMid=$safeHostMid ok")
     }
 
-    private suspend fun dynamicSpaceVideoPage(hostMid: Long, offset: String?): DynamicFeedPage {
-        val params = mutableMapOf(
-            "host_mid" to hostMid.toString(),
-            "platform" to "web",
-            "features" to "itemOpusStyle,listOnlyfans,opusBigCover",
-        )
+    private suspend fun dynamicSpaceVideoPage(
+        hostMid: Long,
+        offset: String?,
+    ): DynamicFeedPage {
+        val params =
+            mutableMapOf(
+                "host_mid" to hostMid.toString(),
+                "platform" to "web",
+                "features" to "itemOpusStyle,listOnlyfans,opusBigCover",
+            )
         if (!offset.isNullOrBlank()) params["offset"] = offset
         val url = BiliClient.withQuery("https://api.bilibili.com/x/polymer/web-dynamic/v1/feed/space", params)
         val json = BiliClient.getJson(url)
@@ -1971,7 +2062,9 @@ object BiliApi {
 
         AppLog.d(
             TAG,
-            "dynamicSpaceVideo hostMid=$hostMid pages=$pages rawItems=$rawItems cards=${cards.size} min=$minCardCount hasMore=$hasMore nextOffset=${nextOffset?.take(8)}",
+            "dynamicSpaceVideo hostMid=$hostMid pages=$pages rawItems=$rawItems cards=${cards.size} min=$minCardCount hasMore=$hasMore nextOffset=${nextOffset?.take(
+                8,
+            )}",
         )
         return DynamicPage(cards, nextOffset)
     }
@@ -2023,11 +2116,12 @@ object BiliApi {
 
     suspend fun spaceAccInfo(mid: Long): SpaceAccInfo {
         val keys = BiliClient.ensureWbiKeys()
-        val url = BiliClient.signedWbiUrl(
-            path = "/x/space/wbi/acc/info",
-            params = mapOf("mid" to mid.toString()),
-            keys = keys,
-        )
+        val url =
+            BiliClient.signedWbiUrl(
+                path = "/x/space/wbi/acc/info",
+                params = mapOf("mid" to mid.toString()),
+                keys = keys,
+            )
         val json = BiliClient.getJson(url)
         val code = json.optInt("code", 0)
         if (code != 0) {

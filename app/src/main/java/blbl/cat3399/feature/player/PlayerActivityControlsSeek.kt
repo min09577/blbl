@@ -12,18 +12,21 @@ import blbl.cat3399.core.net.BiliClient
 import blbl.cat3399.core.prefs.AppPrefs
 import blbl.cat3399.feature.player.engine.BlblPlayerEngine
 import blbl.cat3399.feature.player.engine.PlayerEngineKind
-import java.util.Locale
-import kotlin.math.roundToInt
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.isActive
 import kotlinx.coroutines.launch
+import java.util.Locale
+import kotlin.math.roundToInt
 
 internal fun PlayerActivity.seekRelative(deltaMs: Long) {
     seekRelative(deltaMs, danmakuImmediate = true)
 }
 
-internal fun PlayerActivity.seekRelative(deltaMs: Long, danmakuImmediate: Boolean) {
+internal fun PlayerActivity.seekRelative(
+    deltaMs: Long,
+    danmakuImmediate: Boolean,
+) {
     val exo = player ?: return
     val duration = exo.duration.takeIf { it > 0 } ?: Long.MAX_VALUE
     val next = (exo.currentPosition + deltaMs).coerceIn(0L, duration)
@@ -33,12 +36,13 @@ internal fun PlayerActivity.seekRelative(deltaMs: Long, danmakuImmediate: Boolea
 
 internal fun PlayerActivity.startProgressLoop() {
     progressJob?.cancel()
-    progressJob = lifecycleScope.launch {
-        while (isActive) {
-            updateProgressUi()
-            delay(250)
+    progressJob =
+        lifecycleScope.launch {
+            while (isActive) {
+                updateProgressUi()
+                delay(250)
+            }
         }
-    }
 }
 
 internal fun PlayerActivity.toggleControls() {
@@ -118,7 +122,11 @@ internal fun PlayerActivity.showSeekOsd() {
     scheduleHideSeekOsd()
 }
 
-internal fun PlayerActivity.showSeekOsd(posMs: Long, durationMs: Long, bufferedPosMs: Long) {
+internal fun PlayerActivity.showSeekOsd(
+    posMs: Long,
+    durationMs: Long,
+    bufferedPosMs: Long,
+) {
     if (isSidePanelVisible() || isSponsorSubmitPanelVisible()) return
     val duration = durationMs.coerceAtLeast(0L)
     val pos = posMs.coerceAtLeast(0L)
@@ -263,11 +271,12 @@ internal fun PlayerActivity.restartAutoHideTimer() {
     if (scrubbing) return
     if (!exo.isPlaying) return
     val token = lastInteractionAtMs
-    autoHideJob = lifecycleScope.launch {
-        delay(PlayerActivity.AUTO_HIDE_MS)
-        if (token != lastInteractionAtMs) return@launch
-        setControlsVisible(false)
-    }
+    autoHideJob =
+        lifecycleScope.launch {
+            delay(PlayerActivity.AUTO_HIDE_MS)
+            if (token != lastInteractionAtMs) return@launch
+            setControlsVisible(false)
+        }
 }
 
 internal fun PlayerActivity.noteUserInteraction() {
@@ -405,8 +414,8 @@ internal enum class SeekHintKind {
     Hold,
 }
 
-internal fun PlayerActivity.isSeekKey(keyCode: Int): Boolean {
-    return when (keyCode) {
+internal fun PlayerActivity.isSeekKey(keyCode: Int): Boolean =
+    when (keyCode) {
         KeyEvent.KEYCODE_DPAD_LEFT,
         KeyEvent.KEYCODE_DPAD_RIGHT,
         KeyEvent.KEYCODE_MEDIA_REWIND,
@@ -419,7 +428,6 @@ internal fun PlayerActivity.isSeekKey(keyCode: Int): Boolean {
 
         else -> false
     }
-}
 
 internal fun PlayerActivity.clearKeySeekPending() {
     keySeekHoldDetectJob?.cancel()
@@ -428,7 +436,11 @@ internal fun PlayerActivity.clearKeySeekPending() {
     keySeekPendingDirection = 0
 }
 
-internal fun PlayerActivity.beginKeySeekPending(keyCode: Int, direction: Int, showControls: Boolean) {
+internal fun PlayerActivity.beginKeySeekPending(
+    keyCode: Int,
+    direction: Int,
+    showControls: Boolean,
+) {
     clearKeySeekPending()
     keySeekPendingKeyCode = keyCode
     keySeekPendingDirection = direction
@@ -464,7 +476,11 @@ internal fun PlayerActivity.holdSeekUsesProgressPreview(direction: Int): Boolean
     }
 }
 
-internal fun PlayerActivity.smartSeek(direction: Int, showControls: Boolean, hintKind: SeekHintKind) {
+internal fun PlayerActivity.smartSeek(
+    direction: Int,
+    showControls: Boolean,
+    hintKind: SeekHintKind,
+) {
     val now = SystemClock.uptimeMillis()
     val sameDir = direction == smartSeekDirection
     val within = now - smartSeekLastAtMs <= PlayerActivity.SMART_SEEK_WINDOW_MS
@@ -510,11 +526,12 @@ internal fun PlayerActivity.smartSeek(direction: Int, showControls: Boolean, hin
     if (hintKind == SeekHintKind.Step) showSeekStepHint(direction, smartSeekTotalMs)
 }
 
-internal fun PlayerActivity.smartSeekStepMs(): Long {
-    return BiliClient.prefs.playerShortSeekStepSeconds * 1_000L
-}
+internal fun PlayerActivity.smartSeekStepMs(): Long = BiliClient.prefs.playerShortSeekStepSeconds * 1_000L
 
-internal fun PlayerActivity.startHoldSeek(direction: Int, showControls: Boolean) {
+internal fun PlayerActivity.startHoldSeek(
+    direction: Int,
+    showControls: Boolean,
+) {
     // Speed-hold seek is forward-only; long-press LEFT is handled by preview-scrub (startHoldScrub).
     if (direction <= 0) return
     if (holdSeekJob?.isActive == true) return
@@ -550,7 +567,10 @@ internal fun PlayerActivity.startHoldSeek(direction: Int, showControls: Boolean)
     holdSeekJob = lifecycleScope.launch { kotlinx.coroutines.awaitCancellation() }
 }
 
-internal fun PlayerActivity.startHoldScrub(direction: Int, showControls: Boolean) {
+internal fun PlayerActivity.startHoldScrub(
+    direction: Int,
+    showControls: Boolean,
+) {
     if (holdSeekJob?.isActive == true) return
     val engine = player ?: return
 
@@ -574,7 +594,12 @@ internal fun PlayerActivity.startHoldScrub(direction: Int, showControls: Boolean
     startHoldScrubSeek(engine = engine, direction = direction, speed = holdSpeed, fixedStepMs = fixedStepMs)
 }
 
-internal fun PlayerActivity.startHoldScrubSeek(engine: BlblPlayerEngine, direction: Int, speed: Float, fixedStepMs: Long?) {
+internal fun PlayerActivity.startHoldScrubSeek(
+    engine: BlblPlayerEngine,
+    direction: Int,
+    speed: Float,
+    fixedStepMs: Long?,
+) {
     val duration = engine.duration.takeIf { it > 0 } ?: currentViewDurationMs ?: 0L
     if (duration <= 0L) {
         // Unknown duration: cannot show an actual progress bar scrub; fall back to speed-hold.
@@ -653,13 +678,19 @@ internal fun PlayerActivity.stopHoldSeek() {
     scheduleHideSeekHint()
 }
 
-internal fun PlayerActivity.showSeekStepHint(direction: Int, totalMs: Long) {
+internal fun PlayerActivity.showSeekStepHint(
+    direction: Int,
+    totalMs: Long,
+) {
     val sec = (kotlin.math.abs(totalMs) / 1000L).coerceAtLeast(1L)
     val text = if (direction > 0) "快进 ${sec}s" else "后退 ${sec}s"
     showSeekHint(text, hold = false)
 }
 
-internal fun PlayerActivity.showSeekHoldHint(direction: Int, speed: Float) {
+internal fun PlayerActivity.showSeekHoldHint(
+    direction: Int,
+    speed: Float,
+) {
     val s = holdSeekSpeedText(speed)
     val text = if (direction > 0) "快进 x$s" else "后退 x$s"
     showSeekHint(text, hold = true)
@@ -678,11 +709,12 @@ internal fun PlayerActivity.holdSeekSpeedText(speed: Float): String {
     return fixed.trimEnd('0').trimEnd('.')
 }
 
-internal fun PlayerActivity.holdScrubFixedStepMs(): Long {
-    return BiliClient.prefs.playerHoldScrubFixedStepSeconds * 1_000L
-}
+internal fun PlayerActivity.holdScrubFixedStepMs(): Long = BiliClient.prefs.playerHoldScrubFixedStepSeconds * 1_000L
 
-internal fun PlayerActivity.holdScrubStepMs(durationMs: Long, tickMs: Long): Long {
+internal fun PlayerActivity.holdScrubStepMs(
+    durationMs: Long,
+    tickMs: Long,
+): Long {
     val duration = durationMs.coerceAtLeast(0L)
     if (duration <= 0L) return 0L
     val tick = tickMs.coerceAtLeast(1L)
@@ -706,9 +738,7 @@ internal fun resolvePlayerUiPositionMs(
     committedPositionMs: Long,
     holdPreviewPositionMs: Long?,
     deferredPreviewPositionMs: Long?,
-): Long {
-    return (holdPreviewPositionMs ?: deferredPreviewPositionMs ?: committedPositionMs).coerceAtLeast(0L)
-}
+): Long = (holdPreviewPositionMs ?: deferredPreviewPositionMs ?: committedPositionMs).coerceAtLeast(0L)
 
 internal fun PlayerActivity.resolveSeekUiBufferedPositionMs(
     committedBufferedPositionMs: Long,
@@ -752,16 +782,18 @@ internal fun PlayerActivity.scheduleHideSeekHint(hideDelayMs: Long = PlayerActiv
         }
 }
 
-internal fun PlayerActivity.edgeDirection(x: Float, width: Float): Int {
-    return when {
+internal fun PlayerActivity.edgeDirection(
+    x: Float,
+    width: Float,
+): Int =
+    when {
         x < width * PlayerActivity.EDGE_TAP_THRESHOLD -> -1
         x > width * (1f - PlayerActivity.EDGE_TAP_THRESHOLD) -> +1
         else -> 0
     }
-}
 
-internal fun PlayerActivity.isInteractionKey(keyCode: Int): Boolean {
-    return when (keyCode) {
+internal fun PlayerActivity.isInteractionKey(keyCode: Int): Boolean =
+    when (keyCode) {
         KeyEvent.KEYCODE_DPAD_UP,
         KeyEvent.KEYCODE_DPAD_DOWN,
         KeyEvent.KEYCODE_DPAD_LEFT,
@@ -791,7 +823,6 @@ internal fun PlayerActivity.isInteractionKey(keyCode: Int): Boolean {
 
         else -> false
     }
-}
 
 internal fun PlayerActivity.updatePlayPauseIcon(isPlaying: Boolean) {
     binding.btnPlayPause.setImageResource(
@@ -803,7 +834,7 @@ internal fun PlayerActivity.updateVideoShotPreview(
     progress: Int,
     max: Int,
     positionMs: Long,
-    trackView: View // 传入当前正在使用的进度条控件
+    trackView: View, // 传入当前正在使用的进度条控件
 ) {
     if (BiliClient.prefs.playerVideoShotPreviewSize == AppPrefs.PLAYER_VIDEOSHOT_PREVIEW_SIZE_OFF) {
         hideVideoShotPreviewNow()
@@ -822,30 +853,34 @@ internal fun PlayerActivity.updateVideoShotPreview(
     }
 
     videoShotFetchJob?.cancel()
-    videoShotFetchJob = lifecycleScope.launch {
-        delay(16) // 16ms 防抖
-        val frame =
-            try {
-                shot.getSpriteFrame((positionMs / 1000).toInt(), cache)
-            } catch (t: Throwable) {
-                if (t is CancellationException) throw t
-                disableVideoShotPreviewForCurrentVideo(reason = "decode", throwable = t)
-                return@launch
-            }
+    videoShotFetchJob =
+        lifecycleScope.launch {
+            delay(16) // 16ms 防抖
+            val frame =
+                try {
+                    shot.getSpriteFrame((positionMs / 1000).toInt(), cache)
+                } catch (t: Throwable) {
+                    if (t is CancellationException) throw t
+                    disableVideoShotPreviewForCurrentVideo(reason = "decode", throwable = t)
+                    return@launch
+                }
 
-        if (currentVideoShot !== shot || videoShotImageCache !== cache) return@launch
+            if (currentVideoShot !== shot || videoShotImageCache !== cache) return@launch
 
-        previewView.spriteFrame = frame
-        positionVideoShotPreviewX(previewView, trackView, progress, max)
-        previewView.post {
-            if (previewView.spriteFrame === frame) {
-                positionVideoShotPreviewX(previewView, trackView, progress, max)
+            previewView.spriteFrame = frame
+            positionVideoShotPreviewX(previewView, trackView, progress, max)
+            previewView.post {
+                if (previewView.spriteFrame === frame) {
+                    positionVideoShotPreviewX(previewView, trackView, progress, max)
+                }
             }
         }
-    }
 }
 
-internal fun PlayerActivity.disableVideoShotPreviewForCurrentVideo(reason: String, throwable: Throwable? = null) {
+internal fun PlayerActivity.disableVideoShotPreviewForCurrentVideo(
+    reason: String,
+    throwable: Throwable? = null,
+) {
     AppLog.w("Player", "disable videoShot preview reason=$reason bvid=$currentBvid cid=$currentCid", throwable)
     videoShotFetchJob?.cancel()
     videoShotFetchJob = null

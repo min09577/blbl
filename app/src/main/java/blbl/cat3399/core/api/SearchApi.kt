@@ -12,29 +12,53 @@ import org.json.JSONObject
 
 internal object SearchApi {
     internal interface JsonObj {
-        fun optString(name: String, fallback: String): String
+        fun optString(
+            name: String,
+            fallback: String,
+        ): String
 
         fun optLong(name: String): Long
 
-        fun optLong(name: String, fallback: Long): Long
+        fun optLong(
+            name: String,
+            fallback: Long,
+        ): Long
 
-        fun optInt(name: String, fallback: Int): Int
+        fun optInt(
+            name: String,
+            fallback: Int,
+        ): Int
 
-        fun optBoolean(name: String, fallback: Boolean): Boolean
+        fun optBoolean(
+            name: String,
+            fallback: Boolean,
+        ): Boolean
     }
 
     private class OrgJsonObj(
         private val obj: JSONObject,
     ) : JsonObj {
-        override fun optString(name: String, fallback: String): String = obj.optString(name, fallback)
+        override fun optString(
+            name: String,
+            fallback: String,
+        ): String = obj.optString(name, fallback)
 
         override fun optLong(name: String): Long = obj.optLong(name)
 
-        override fun optLong(name: String, fallback: Long): Long = obj.optLong(name, fallback)
+        override fun optLong(
+            name: String,
+            fallback: Long,
+        ): Long = obj.optLong(name, fallback)
 
-        override fun optInt(name: String, fallback: Int): Int = obj.optInt(name, fallback)
+        override fun optInt(
+            name: String,
+            fallback: Int,
+        ): Int = obj.optInt(name, fallback)
 
-        override fun optBoolean(name: String, fallback: Boolean): Boolean = obj.optBoolean(name, fallback)
+        override fun optBoolean(
+            name: String,
+            fallback: Boolean,
+        ): Boolean = obj.optBoolean(name, fallback)
     }
 
     suspend fun searchDefaultText(): String? {
@@ -113,37 +137,33 @@ internal object SearchApi {
         keyword: String,
         page: Int = 1,
         order: String = "totalrank",
-    ): BiliApi.PagedResult<VideoCard> {
-        return searchVideoInner(keyword = keyword, page = page, order = order, allowRetry = true)
-    }
+    ): BiliApi.PagedResult<VideoCard> = searchVideoInner(keyword = keyword, page = page, order = order, allowRetry = true)
 
     suspend fun searchMediaFt(
         keyword: String,
         page: Int = 1,
         order: String = "totalrank",
-    ): BiliApi.PagedResult<BangumiSeason> {
-        return searchMediaInner(
+    ): BiliApi.PagedResult<BangumiSeason> =
+        searchMediaInner(
             keyword = keyword,
             page = page,
             order = order,
             searchType = "media_ft",
             allowRetry = true,
         )
-    }
 
     suspend fun searchMediaBangumi(
         keyword: String,
         page: Int = 1,
         order: String = "totalrank",
-    ): BiliApi.PagedResult<BangumiSeason> {
-        return searchMediaInner(
+    ): BiliApi.PagedResult<BangumiSeason> =
+        searchMediaInner(
             keyword = keyword,
             page = page,
             order = order,
             searchType = "media_bangumi",
             allowRetry = true,
         )
-    }
 
     private suspend fun searchMediaInner(
         keyword: String,
@@ -196,9 +216,7 @@ internal object SearchApi {
         keyword: String,
         page: Int = 1,
         order: String = "online",
-    ): BiliApi.PagedResult<LiveRoomCard> {
-        return searchLiveRoomInner(keyword = keyword, page = page, order = order, allowRetry = true)
-    }
+    ): BiliApi.PagedResult<LiveRoomCard> = searchLiveRoomInner(keyword = keyword, page = page, order = order, allowRetry = true)
 
     private suspend fun searchLiveRoomInner(
         keyword: String,
@@ -251,8 +269,8 @@ internal object SearchApi {
         order: String = "0",
         orderSort: Int = 0,
         userType: Int = 0,
-    ): BiliApi.PagedResult<Following> {
-        return searchUserInner(
+    ): BiliApi.PagedResult<Following> =
+        searchUserInner(
             keyword = keyword,
             page = page,
             order = order,
@@ -260,7 +278,6 @@ internal object SearchApi {
             userType = userType,
             allowRetry = true,
         )
-    }
 
     private suspend fun searchUserInner(
         keyword: String,
@@ -365,7 +382,13 @@ internal object SearchApi {
             val seasonType = obj.optString("season_type_name").takeIf { it.isNotBlank() }
             val badgeText =
                 obj.optString("angle_title").takeIf { it.isNotBlank() }
-                    ?: (obj.optJSONArray("display_info")?.optJSONObject(0)?.optString("text")?.takeIf { it.isNotBlank() })
+                    ?: (
+                        obj
+                            .optJSONArray("display_info")
+                            ?.optJSONObject(0)
+                            ?.optString("text")
+                            ?.takeIf { it.isNotBlank() }
+                    )
             val area = obj.optString("areas").takeIf { it.isNotBlank() }
             val styles = obj.optString("styles").takeIf { it.isNotBlank() }
             val progressText =
@@ -479,7 +502,8 @@ internal object SearchApi {
             pubDate = obj.optLong("pubdate").takeIf { it > 0 },
             pubDateText = null,
             trackId =
-                obj.optString("trackid", obj.optString("track_id", ""))
+                obj
+                    .optString("trackid", obj.optString("track_id", ""))
                     .trim()
                     .takeIf { it.isNotBlank() },
         )

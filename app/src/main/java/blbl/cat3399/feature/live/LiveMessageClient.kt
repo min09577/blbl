@@ -39,18 +39,24 @@ class LiveMessageClient(
         val price: Long,
     )
 
-    private val scheduler = Executors.newSingleThreadScheduledExecutor { r ->
-        Thread(r, "blbl-live-ws").apply { isDaemon = true }
-    }
+    private val scheduler =
+        Executors.newSingleThreadScheduledExecutor { r ->
+            Thread(r, "blbl-live-ws").apply { isDaemon = true }
+        }
     private var heartbeatTask: ScheduledFuture<*>? = null
     private var authTimeoutTask: ScheduledFuture<*>? = null
     private var reconnectTask: ScheduledFuture<*>? = null
 
     private var ws: WebSocket? = null
+
     @Volatile private var seq: Int = 1
+
     @Volatile private var authed: Boolean = false
+
     @Volatile private var closed: Boolean = false
+
     @Volatile private var reconnectAttempt: Int = 0
+
     @Volatile private var hostIndex: Int = 0
 
     private var token: String = ""
@@ -125,7 +131,8 @@ class LiveMessageClient(
         onStatus("连接弹幕：${host.host}:$port")
 
         val req =
-            Request.Builder()
+            Request
+                .Builder()
                 .url(url)
                 .header("User-Agent", BiliClient.prefs.userAgent)
                 .header("Referer", "https://live.bilibili.com/")
@@ -170,9 +177,11 @@ class LiveMessageClient(
             )
     }
 
-    private inner class Listener(
-    ) : WebSocketListener() {
-        override fun onOpen(webSocket: WebSocket, response: Response) {
+    private inner class Listener : WebSocketListener() {
+        override fun onOpen(
+            webSocket: WebSocket,
+            response: Response,
+        ) {
             onStatus("弹幕已连接")
             val uid =
                 if (!BiliClient.cookies.hasSessData()) {
@@ -212,30 +221,48 @@ class LiveMessageClient(
                 )
         }
 
-        override fun onMessage(webSocket: WebSocket, bytes: ByteString) {
+        override fun onMessage(
+            webSocket: WebSocket,
+            bytes: ByteString,
+        ) {
             val data = bytes.toByteArray()
             runCatching { handlePacketBytes(data) }
                 .onFailure { AppLog.w("LiveWs", "handle ws packet failed size=${data.size}", it) }
         }
 
-        override fun onMessage(webSocket: WebSocket, text: String) {
+        override fun onMessage(
+            webSocket: WebSocket,
+            text: String,
+        ) {
             val preview = text.replace("\n", "\\n").replace("\r", "\\r").take(160)
             AppLog.d("LiveWs", "onMessage(text) len=${text.length} preview=$preview")
         }
 
-        override fun onFailure(webSocket: WebSocket, t: Throwable, response: Response?) {
+        override fun onFailure(
+            webSocket: WebSocket,
+            t: Throwable,
+            response: Response?,
+        ) {
             onStatus("弹幕连接失败：${t.message}")
             AppLog.w("LiveWs", "onFailure roomId=$roomId code=${response?.code}", t)
             scheduleReconnect("onFailure code=${response?.code} ${t::class.java.simpleName}:${t.message}")
         }
 
-        override fun onClosing(webSocket: WebSocket, code: Int, reason: String) {
+        override fun onClosing(
+            webSocket: WebSocket,
+            code: Int,
+            reason: String,
+        ) {
             onStatus("弹幕断开：$code $reason")
             runCatching { webSocket.close(code, reason) }
             scheduleReconnect("onClosing $code $reason")
         }
 
-        override fun onClosed(webSocket: WebSocket, code: Int, reason: String) {
+        override fun onClosed(
+            webSocket: WebSocket,
+            code: Int,
+            reason: String,
+        ) {
             onStatus("弹幕已断开：$code $reason")
             scheduleReconnect("onClosed $code $reason")
         }
@@ -347,7 +374,11 @@ class LiveMessageClient(
         return out
     }
 
-    private fun buildPacket(op: Int, ver: Int, body: ByteArray): ByteArray {
+    private fun buildPacket(
+        op: Int,
+        ver: Int,
+        body: ByteArray,
+    ): ByteArray {
         val total = 16 + body.size
         val buf = ByteBuffer.allocate(total).order(ByteOrder.BIG_ENDIAN)
         buf.putInt(total)
@@ -359,13 +390,20 @@ class LiveMessageClient(
         return buf.array()
     }
 
-    private fun readInt(bytes: ByteArray, offset: Int): Int {
-        return ByteBuffer.wrap(bytes, offset, 4).order(ByteOrder.BIG_ENDIAN).int
-    }
+    private fun readInt(
+        bytes: ByteArray,
+        offset: Int,
+    ): Int = ByteBuffer.wrap(bytes, offset, 4).order(ByteOrder.BIG_ENDIAN).int
 
-    private fun readShort(bytes: ByteArray, offset: Int): Int {
-        return ByteBuffer.wrap(bytes, offset, 2).order(ByteOrder.BIG_ENDIAN).short.toInt() and 0xFFFF
-    }
+    private fun readShort(
+        bytes: ByteArray,
+        offset: Int,
+    ): Int =
+        ByteBuffer
+            .wrap(bytes, offset, 2)
+            .order(ByteOrder.BIG_ENDIAN)
+            .short
+            .toInt() and 0xFFFF
 
     private fun inflateZlib(bytes: ByteArray): ByteArray? {
         if (bytes.isEmpty()) return ByteArray(0)

@@ -93,9 +93,15 @@ internal fun PlayerActivity.refreshPlayerInfoPanelContent() {
     updatePlayerInfoActionUi()
 
     val title =
-        currentMainTitle?.trim().orEmpty().ifBlank {
-            binding.tvTitle.text?.toString()?.trim().orEmpty()
-        }.ifBlank { "-" }
+        currentMainTitle
+            ?.trim()
+            .orEmpty()
+            .ifBlank {
+                binding.tvTitle.text
+                    ?.toString()
+                    ?.trim()
+                    .orEmpty()
+            }.ifBlank { "-" }
     binding.tvPlayerInfoTitle.text = title
 
     val stats =
@@ -130,7 +136,13 @@ internal fun PlayerActivity.refreshPlayerInfoPanelContent() {
 }
 
 internal fun PlayerActivity.updatePlayerInfoActionUi() {
-    fun applyAction(iconView: android.widget.ImageView, textView: android.widget.TextView, active: Boolean, count: Long?, fallback: String) {
+    fun applyAction(
+        iconView: android.widget.ImageView,
+        textView: android.widget.TextView,
+        active: Boolean,
+        count: Long?,
+        fallback: String,
+    ) {
         val tint = if (active) R.color.blbl_blue else R.color.player_button_tint
         iconView.imageTintList = ContextCompat.getColorStateList(this, tint)
         textView.text = count?.let { Format.count(it) } ?: fallback
@@ -143,7 +155,13 @@ internal fun PlayerActivity.updatePlayerInfoActionUi() {
     }
 
     applyAction(binding.ivPlayerInfoLike, binding.tvPlayerInfoLike, active = actionLiked, count = currentPlayerLikeCount, fallback = "点赞")
-    applyAction(binding.ivPlayerInfoCoin, binding.tvPlayerInfoCoin, active = actionCoinCount > 0, count = currentPlayerCoinCount, fallback = "投币")
+    applyAction(
+        binding.ivPlayerInfoCoin,
+        binding.tvPlayerInfoCoin,
+        active = actionCoinCount > 0,
+        count = currentPlayerCoinCount,
+        fallback = "投币",
+    )
     applyAction(binding.ivPlayerInfoFav, binding.tvPlayerInfoFav, active = actionFavored, count = currentPlayerFavCount, fallback = "收藏")
 }
 
@@ -156,7 +174,12 @@ internal fun PlayerActivity.updatePlayerInfoUpUi() {
     binding.tvPlayerInfoUpMeta.text = "UP主"
     ImageLoader.loadInto(binding.ivPlayerInfoAvatar, ImageUrl.avatar(currentUpAvatar))
 
-    val selfMid = BiliClient.cookies.getCookieValue("DedeUserID")?.trim()?.toLongOrNull()?.takeIf { it > 0L }
+    val selfMid =
+        BiliClient.cookies
+            .getCookieValue("DedeUserID")
+            ?.trim()
+            ?.toLongOrNull()
+            ?.takeIf { it > 0L }
     val isSelf = selfMid != null && selfMid == currentUpMid
     binding.btnPlayerInfoFollow.visibility = if (isSelf) View.GONE else View.VISIBLE
     if (isSelf) return
@@ -222,7 +245,14 @@ private fun PlayerActivity.buildPlayerInfoRecommendPayload(): PlayerInfoRecommen
         if (currentBvid.isNotBlank()) ensureRecommendCardsLoadedForAutoNext()
         return PlayerInfoRecommendPayload(
             cards = emptyList(),
-            hint = if (relatedVideosFetchJob?.isActive == true) getString(R.string.player_loading) else getString(R.string.player_info_recommend_empty),
+            hint =
+                if (relatedVideosFetchJob?.isActive ==
+                    true
+                ) {
+                    getString(R.string.player_loading)
+                } else {
+                    getString(R.string.player_info_recommend_empty)
+                },
         )
     }
     val cards =
@@ -295,6 +325,4 @@ private fun PlayerActivity.playPlayerInfoRecommended(card: VideoCard) {
     )
 }
 
-private fun PlayerActivity.isPlayerInfoShelfPositionSelected(position: Int): Boolean {
-    return !playerInfoShelfUsesRecommendFallback && position == partsListIndex
-}
+private fun PlayerActivity.isPlayerInfoShelfPositionSelected(position: Int): Boolean = !playerInfoShelfUsesRecommendFallback && position == partsListIndex

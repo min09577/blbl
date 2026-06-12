@@ -1,9 +1,10 @@
 package blbl.cat3399.core.prefs
 
 import android.content.Context
-import android.content.SharedPreferences
 
-class FeaturePrefs1621(context: Context) {
+class FeaturePrefs1621(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1621", Context.MODE_PRIVATE)
 
     var v1621odor: Boolean
@@ -605,11 +606,11 @@ class FeaturePrefs1621(context: Context) {
     var v1630onto: Boolean
         get() = prefs.getBoolean("v1630onto", false)
         set(value) = prefs.edit().putBoolean("v1630onto", value).apply()
-
 }
 
-
-class FeaturePrefs1631(context: Context) {
+class FeaturePrefs1631(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1631", Context.MODE_PRIVATE)
 
     var v1631opera: Boolean
@@ -1211,11 +1212,11 @@ class FeaturePrefs1631(context: Context) {
     var v1640over: Boolean
         get() = prefs.getBoolean("v1640over", false)
         set(value) = prefs.edit().putBoolean("v1640over", value).apply()
-
 }
 
-
-class FeaturePrefs1641(context: Context) {
+class FeaturePrefs1641(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1641", Context.MODE_PRIVATE)
 
     var v1641own: Boolean
@@ -1817,11 +1818,11 @@ class FeaturePrefs1641(context: Context) {
     var v1650parrot: Boolean
         get() = prefs.getBoolean("v1650parrot", false)
         set(value) = prefs.edit().putBoolean("v1650parrot", value).apply()
-
 }
 
-
-class FeaturePrefs1651(context: Context) {
+class FeaturePrefs1651(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1651", Context.MODE_PRIVATE)
 
     var v1651party: Boolean
@@ -2423,7 +2424,4 @@ class FeaturePrefs1651(context: Context) {
     var v1660people: Boolean
         get() = prefs.getBoolean("v1660people", false)
         set(value) = prefs.edit().putBoolean("v1660people", value).apply()
-
 }
-
-

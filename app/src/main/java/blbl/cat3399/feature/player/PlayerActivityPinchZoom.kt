@@ -1,8 +1,6 @@
 package blbl.cat3399.feature.player
 
 import android.view.ScaleGestureDetector
-import android.view.MotionEvent
-import android.view.View
 import blbl.cat3399.core.ui.AppToast
 
 /**
@@ -15,28 +13,32 @@ private var scaleDetector: ScaleGestureDetector? = null
 
 internal fun PlayerActivity.initPinchZoom() {
     val overlay = requirePlayerTouchOverlayBinding(binding)
-    
-    scaleDetector = ScaleGestureDetector(this, object : ScaleGestureDetector.SimpleOnScaleGestureListener() {
-        override fun onScale(detector: ScaleGestureDetector): Boolean {
-            val scaleFactor = detector.scaleFactor
-            currentScale = (currentScale * scaleFactor).coerceIn(0.5f, 3.0f)
-            
-            binding.playerView.scaleX = currentScale
-            binding.playerView.scaleY = currentScale
-            
-            return true
-        }
-        
-        override fun onScaleEnd(detector: ScaleGestureDetector) {
-            // 如果缩放接近1，自动恢复
-            if (currentScale > 0.95f && currentScale < 1.05f) {
-                currentScale = 1.0f
-                binding.playerView.scaleX = 1.0f
-                binding.playerView.scaleY = 1.0f
-            }
-        }
-    })
-    
+
+    scaleDetector =
+        ScaleGestureDetector(
+            this,
+            object : ScaleGestureDetector.SimpleOnScaleGestureListener() {
+                override fun onScale(detector: ScaleGestureDetector): Boolean {
+                    val scaleFactor = detector.scaleFactor
+                    currentScale = (currentScale * scaleFactor).coerceIn(0.5f, 3.0f)
+
+                    binding.playerView.scaleX = currentScale
+                    binding.playerView.scaleY = currentScale
+
+                    return true
+                }
+
+                override fun onScaleEnd(detector: ScaleGestureDetector) {
+                    // 如果缩放接近1，自动恢复
+                    if (currentScale > 0.95f && currentScale < 1.05f) {
+                        currentScale = 1.0f
+                        binding.playerView.scaleX = 1.0f
+                        binding.playerView.scaleY = 1.0f
+                    }
+                }
+            },
+        )
+
     // 在 touch gesture layer 上添加缩放检测
     overlay.touchGestureLayer.setOnTouchListener { _, event ->
         scaleDetector?.onTouchEvent(event)

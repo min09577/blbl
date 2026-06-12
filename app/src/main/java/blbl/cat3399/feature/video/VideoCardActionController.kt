@@ -45,14 +45,13 @@ class VideoCardActionController(
     override fun manualActions(
         card: VideoCard,
         position: Int,
-    ): List<VideoCardQuickAction> {
-        return listOf(
+    ): List<VideoCardQuickAction> =
+        listOf(
             VideoCardQuickAction.watchLater(context.getString(R.string.video_card_action_watch_later)),
             VideoCardQuickAction.openDetail(context.getString(R.string.video_card_action_open_detail)),
             VideoCardQuickAction.openUp(context.getString(R.string.video_card_action_open_up)),
             VideoCardQuickAction.dismiss(context.getString(dismissActionLabelRes())),
         )
-    }
 
     override fun onActionSelected(
         card: VideoCard,
@@ -182,24 +181,23 @@ class VideoCardActionController(
             ?: throw BiliApiException(apiCode = -400, apiMessage = "missing_video_id")
     }
 
-    private suspend fun buildHistoryKid(card: VideoCard): String {
-        return when (card.business?.trim()) {
+    private suspend fun buildHistoryKid(card: VideoCard): String =
+        when (card.business?.trim()) {
             "archive" -> "archive_${resolveAid(card)}"
             "pgc" -> {
-                val seasonId = card.seasonId?.takeIf { it > 0L } ?: throw BiliApiException(apiCode = -400, apiMessage = "missing_history_kid")
+                val seasonId =
+                    card.seasonId?.takeIf { it > 0L } ?: throw BiliApiException(apiCode = -400, apiMessage = "missing_history_kid")
                 "pgc_$seasonId"
             }
 
             else -> throw BiliApiException(apiCode = -400, apiMessage = "missing_history_kid")
         }
-    }
 
-    private fun dismissActionLabelRes(): Int {
-        return when (dismissBehavior) {
+    private fun dismissActionLabelRes(): Int =
+        when (dismissBehavior) {
             VideoCardDismissBehavior.LocalNotInterested -> R.string.video_card_action_not_interested
             else -> R.string.video_card_action_delete
         }
-    }
 
     private fun buildActionKey(
         card: VideoCard,
@@ -219,7 +217,12 @@ class VideoCardActionController(
     }
 
     private fun errorMessage(t: Throwable): String {
-        val raw = (t as? BiliApiException)?.apiMessage?.trim().orEmpty().ifBlank { t.message.orEmpty().trim() }
+        val raw =
+            (t as? BiliApiException)
+                ?.apiMessage
+                ?.trim()
+                .orEmpty()
+                .ifBlank { t.message.orEmpty().trim() }
         return when {
             raw.isBlank() -> context.getString(R.string.video_card_action_failed)
             raw == "missing_history_kid" -> context.getString(R.string.video_card_action_missing_video_id)
@@ -236,12 +239,17 @@ class VideoCardActionController(
             return
         }
         val url = "https://www.bilibili.com/video/$bvid"
-        val title = card.title?.trim().orEmpty().ifBlank { "B站视频" }
+        val title =
+            card.title
+                ?.trim()
+                .orEmpty()
+                .ifBlank { "B站视频" }
         try {
-            val intent = android.content.Intent(android.content.Intent.ACTION_SEND).apply {
-                type = "text/plain"
-                putExtra(android.content.Intent.EXTRA_TEXT, "$title\n$url")
-            }
+            val intent =
+                android.content.Intent(android.content.Intent.ACTION_SEND).apply {
+                    type = "text/plain"
+                    putExtra(android.content.Intent.EXTRA_TEXT, "$title\n$url")
+                }
             context.startActivity(android.content.Intent.createChooser(intent, "分享视频"))
         } catch (t: Throwable) {
             AppToast.show(context, "分享失败：${t.message}")

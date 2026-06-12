@@ -50,13 +50,16 @@ internal class DashLocalHttpProxy(
     val port: Int
         get() = serverSocket?.localPort ?: 0
 
-    fun register(kind: String, upstreamUrl: String): String {
+    fun register(
+        kind: String,
+        upstreamUrl: String,
+    ): String {
         ensureStarted()
         val k = kind.trim().lowercase(Locale.US).ifBlank { "v" }
         val url = upstreamUrl.trim()
         val key = md5Hex("$k|$url")
         upstreamByKey[key] = url
-        return "http://127.0.0.1:${port}/${k}/${key}.m4s"
+        return "http://127.0.0.1:$port/$k/$key.m4s"
     }
 
     fun resetRegistrations() {
@@ -149,8 +152,7 @@ internal class DashLocalHttpProxy(
                 .onFailure { t ->
                     AppLog.w("DashProxy", "upstream request failed", t)
                     respondPlain(s, code = 502, message = "Bad Gateway", body = "upstream failed")
-                }
-                .onSuccess { upstreamRes ->
+                }.onSuccess { upstreamRes ->
                     upstreamRes.use { res ->
                         if (BuildConfig.DEBUG && range != null && res.code != 206) {
                             AppLog.w("DashProxy", "range request got http=${res.code} key=$key range=$range")
@@ -164,7 +166,11 @@ internal class DashLocalHttpProxy(
                         val contentRange = res.header("Content-Range")?.trim()?.takeIf { it.isNotBlank() }
                         val upstreamTransferEncoding = res.header("Transfer-Encoding")?.trim()?.takeIf { it.isNotBlank() }
                         val upstreamContentLength =
-                            res.header("Content-Length")?.trim()?.toLongOrNull()?.takeIf { it >= 0L }
+                            res
+                                .header("Content-Length")
+                                ?.trim()
+                                ?.toLongOrNull()
+                                ?.takeIf { it >= 0L }
 
                         contentType?.let { writeHeader(out, "Content-Type", it) }
                         acceptRanges?.let { writeHeader(out, "Accept-Ranges", it) }
@@ -249,9 +255,14 @@ internal class DashLocalHttpProxy(
         }
     }
 
-    private fun executeUpstream(upstreamUrl: String, range: String?, method: String): Response {
+    private fun executeUpstream(
+        upstreamUrl: String,
+        range: String?,
+        method: String,
+    ): Response {
         val builder =
-            Request.Builder()
+            Request
+                .Builder()
                 .url(upstreamUrl)
                 // Keep the payload raw (avoid implicit gzip decompression breaking Content-Length).
                 .header("Accept-Encoding", "identity")
@@ -263,7 +274,12 @@ internal class DashLocalHttpProxy(
         return okHttpClient.newCall(builder.build()).execute()
     }
 
-    private fun respondPlain(socket: Socket, code: Int, message: String, body: String) {
+    private fun respondPlain(
+        socket: Socket,
+        code: Int,
+        message: String,
+        body: String,
+    ) {
         val bytes = body.toByteArray(StandardCharsets.UTF_8)
         val out = BufferedOutputStream(socket.getOutputStream())
         out.write("HTTP/1.1 $code $message\r\n".toByteArray(StandardCharsets.ISO_8859_1))
@@ -275,12 +291,19 @@ internal class DashLocalHttpProxy(
         out.flush()
     }
 
-    private fun writeStatusLine(out: BufferedOutputStream, res: Response) {
+    private fun writeStatusLine(
+        out: BufferedOutputStream,
+        res: Response,
+    ) {
         val msg = res.message.takeIf { it.isNotBlank() } ?: "OK"
         out.write("HTTP/1.1 ${res.code} $msg\r\n".toByteArray(StandardCharsets.ISO_8859_1))
     }
 
-    private fun writeHeader(out: BufferedOutputStream, name: String, value: String) {
+    private fun writeHeader(
+        out: BufferedOutputStream,
+        name: String,
+        value: String,
+    ) {
         out.write("$name: $value\r\n".toByteArray(StandardCharsets.ISO_8859_1))
     }
 
@@ -288,7 +311,10 @@ internal class DashLocalHttpProxy(
         out.write("\r\n".toByteArray(StandardCharsets.ISO_8859_1))
     }
 
-    private fun streamChunked(input: java.io.InputStream, out: BufferedOutputStream) {
+    private fun streamChunked(
+        input: java.io.InputStream,
+        out: BufferedOutputStream,
+    ) {
         val buf = ByteArray(DEFAULT_BUF_SIZE)
         while (true) {
             val n = input.read(buf)
@@ -347,7 +373,11 @@ internal class DashLocalHttpProxy(
         return (end - start + 1L).takeIf { it >= 0L }
     }
 
-    private fun copyToExactly(input: InputStream, out: BufferedOutputStream, bytes: Long) {
+    private fun copyToExactly(
+        input: InputStream,
+        out: BufferedOutputStream,
+        bytes: Long,
+    ) {
         var remaining = bytes.coerceAtLeast(0L)
         val buf = ByteArray(DEFAULT_BUF_SIZE)
         while (remaining > 0L) {

@@ -1,11 +1,11 @@
 package blbl.cat3399.feature.category
 
+import android.os.SystemClock
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import blbl.cat3399.core.log.AppLog
 import blbl.cat3399.core.model.Zone
 import blbl.cat3399.feature.video.VideoGridFragment
-import android.os.SystemClock
 
 class CategoryPagerAdapter(
     fragment: Fragment,

@@ -11,13 +11,12 @@ import blbl.cat3399.core.api.video.VideoResumeTimeUnit
 import blbl.cat3399.core.log.AppLog
 import blbl.cat3399.core.net.BiliClient
 import blbl.cat3399.feature.player.engine.BlblPlayerEngine
-import java.util.LinkedHashMap
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.isActive
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import org.json.JSONObject
+import java.util.LinkedHashMap
 
 private const val AUTO_SKIP_LOG_TAG = "PlayerAutoSkip"
 
@@ -66,7 +65,8 @@ internal fun PlayerActivity.updateProgressUi() {
             } else {
                 binding.tvSpeedBadge?.visibility = View.GONE
             }
-        } catch (_: Throwable) {}
+        } catch (_: Throwable) {
+        }
     }
 
     val enabled = duration > 0
@@ -170,7 +170,10 @@ internal fun PlayerActivity.tryRollbackAutoResumeOnBack(): Boolean {
     return true
 }
 
-internal fun PlayerActivity.cancelPendingAutoSkip(reason: String, markIgnored: Boolean) {
+internal fun PlayerActivity.cancelPendingAutoSkip(
+    reason: String,
+    markIgnored: Boolean,
+) {
     autoSkipPending?.let { pending ->
         if (markIgnored) {
             autoSkipHandledSegmentIds.add(pending.segment.id)
@@ -334,7 +337,10 @@ internal fun PlayerActivity.extractClipInfoSegmentsFromPlayStream(playStream: Vi
     return out
 }
 
-internal fun buildAutoSkipSegmentMarks(segments: List<SkipSegment>, durationMs: Long): List<SegmentMark> {
+internal fun buildAutoSkipSegmentMarks(
+    segments: List<SkipSegment>,
+    durationMs: Long,
+): List<SegmentMark> {
     val durF = durationMs.toFloat()
     if (durF <= 0f) return emptyList()
     return segments.mapNotNull { seg ->
@@ -392,7 +398,10 @@ internal fun mergeAutoSkipSegments(
     return merged.values.toList()
 }
 
-internal fun PlayerActivity.setAutoSkipSegments(token: Int, segments: List<SkipSegment>) {
+internal fun PlayerActivity.setAutoSkipSegments(
+    token: Int,
+    segments: List<SkipSegment>,
+) {
     if (token != autoSkipToken) return
     autoSkipSegments = segments.sortedBy { it.startMs }
     autoSkipMarkersDirty = true
@@ -410,7 +419,11 @@ internal fun PlayerActivity.extractResumeCandidateFromPlayStream(playStream: Vid
     return ResumeCandidate(rawTime = time, rawTimeUnitHint = hint, source = "playurl")
 }
 
-internal fun normalizeResumePositionMs(raw: Long, hint: RawTimeUnitHint, durationMs: Long?): Long? {
+internal fun normalizeResumePositionMs(
+    raw: Long,
+    hint: RawTimeUnitHint,
+    durationMs: Long?,
+): Long? {
     if (raw <= 0) return null
     val dur = durationMs?.takeIf { it > 0 }
     when (hint) {
@@ -428,7 +441,10 @@ internal fun normalizeResumePositionMs(raw: Long, hint: RawTimeUnitHint, duratio
     return if (raw >= 10_000L) raw else raw * 1000
 }
 
-internal fun PlayerActivity.shouldAutoResumeTo(positionMs: Long, durationMs: Long?): Boolean {
+internal fun PlayerActivity.shouldAutoResumeTo(
+    positionMs: Long,
+    durationMs: Long?,
+): Boolean {
     if (positionMs < 5_000L) return false
     val dur = durationMs?.takeIf { it > 0 } ?: return true
     return positionMs < (dur - 10_000L).coerceAtLeast(0L)
@@ -494,7 +510,11 @@ internal fun PlayerActivity.maybeScheduleAutoResume(
         }
 }
 
-internal fun PlayerActivity.scheduleAutoResume(engine: BlblPlayerEngine, candidate: ResumeCandidate, playbackToken: Int) {
+internal fun PlayerActivity.scheduleAutoResume(
+    engine: BlblPlayerEngine,
+    candidate: ResumeCandidate,
+    playbackToken: Int,
+) {
     if (autoResumeCancelledByUser) return
     autoResumeJob?.cancel()
     dismissAutoResumeHint()

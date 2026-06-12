@@ -1,13 +1,6 @@
 package blbl.cat3399.feature.player
 
 import android.app.AlertDialog
-import android.view.View
-import android.view.ViewGroup
-import android.widget.TextView
-import android.widget.LinearLayout
-import android.widget.ArrayAdapter
-import blbl.cat3399.R
-import blbl.cat3399.core.net.BiliClient
 import blbl.cat3399.core.ui.AppToast
 
 /**
@@ -22,10 +15,11 @@ internal fun PlayerActivity.showDanmakuHistoryDialog() {
         AppToast.show(this, "暂无弹幕发送历史")
         return
     }
-    
+
     val items = danmakuHistory.toTypedArray()
-    
-    AlertDialog.Builder(this)
+
+    AlertDialog
+        .Builder(this)
         .setTitle("弹幕发送历史 (${danmakuHistory.size}条)")
         .setItems(items) { _, which ->
             // 复制到剪贴板
@@ -33,12 +27,10 @@ internal fun PlayerActivity.showDanmakuHistoryDialog() {
             val clip = android.content.ClipData.newPlainText("danmaku", danmakuHistory[which])
             clipboard.setPrimaryClip(clip)
             AppToast.show(this, "已复制: ${danmakuHistory[which]}")
-        }
-        .setPositiveButton("清除历史") { _, _ ->
+        }.setPositiveButton("清除历史") { _, _ ->
             danmakuHistory.clear()
             AppToast.show(this, "历史已清除")
-        }
-        .setNegativeButton("关闭", null)
+        }.setNegativeButton("关闭", null)
         .show()
 }
 

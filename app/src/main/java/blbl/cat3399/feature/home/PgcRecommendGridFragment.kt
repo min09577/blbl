@@ -1,7 +1,7 @@
 package blbl.cat3399.feature.home
 
-import android.os.Bundle
 import android.content.Intent
+import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -16,22 +16,25 @@ import blbl.cat3399.core.log.AppLog
 import blbl.cat3399.core.model.BangumiSeason
 import blbl.cat3399.core.net.BiliClient
 import blbl.cat3399.core.ui.AppToast
-import blbl.cat3399.core.ui.TabContentSwitchFocusHost
 import blbl.cat3399.core.ui.DpadGridController
 import blbl.cat3399.core.ui.FocusTreeUtils
+import blbl.cat3399.core.ui.TabContentSwitchFocusHost
 import blbl.cat3399.core.ui.TabSwitchFocusTarget
 import blbl.cat3399.core.ui.postIfAlive
 import blbl.cat3399.core.ui.postIfAttached
 import blbl.cat3399.core.ui.requestFocusAdapterPositionReliable
 import blbl.cat3399.core.ui.requestFocusFirstItemOrSelfAfterRefresh
 import blbl.cat3399.databinding.FragmentVideoGridBinding
-import blbl.cat3399.feature.my.BangumiFollowAdapter
 import blbl.cat3399.feature.my.BangumiDetailActivity
+import blbl.cat3399.feature.my.BangumiFollowAdapter
 import blbl.cat3399.ui.RefreshKeyHandler
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.launch
 
-class PgcRecommendGridFragment : Fragment(), RefreshKeyHandler, TabSwitchFocusTarget {
+class PgcRecommendGridFragment :
+    Fragment(),
+    RefreshKeyHandler,
+    TabSwitchFocusTarget {
     private data class PgcPagingKey(
         val cursor: String? = null,
         val page: Int = 1,
@@ -77,22 +80,22 @@ class PgcRecommendGridFragment : Fragment(), RefreshKeyHandler, TabSwitchFocusTa
             }
         }
 
-        data class BangumiSearch(private val keyword: String) : PgcGridSource {
+        data class BangumiSearch(
+            private val keyword: String,
+        ) : PgcGridSource {
             override val isDrama: Boolean = false
             override val logName: String = "bangumi_search"
 
-            override suspend fun fetch(key: PgcPagingKey): FetchedPage {
-                return fetchSearchPage(keyword = keyword, key = key, isDrama = false)
-            }
+            override suspend fun fetch(key: PgcPagingKey): FetchedPage = fetchSearchPage(keyword = keyword, key = key, isDrama = false)
         }
 
-        data class CinemaSearch(private val keyword: String) : PgcGridSource {
+        data class CinemaSearch(
+            private val keyword: String,
+        ) : PgcGridSource {
             override val isDrama: Boolean = true
             override val logName: String = "cinema_search"
 
-            override suspend fun fetch(key: PgcPagingKey): FetchedPage {
-                return fetchSearchPage(keyword = keyword, key = key, isDrama = true)
-            }
+            override suspend fun fetch(key: PgcPagingKey): FetchedPage = fetchSearchPage(keyword = keyword, key = key, isDrama = true)
         }
     }
 
@@ -119,12 +122,19 @@ class PgcRecommendGridFragment : Fragment(), RefreshKeyHandler, TabSwitchFocusTa
     private var lastFocusedAdapterPosition: Int? = null
     private var dpadGridController: DpadGridController? = null
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?,
+    ): View {
         _binding = FragmentVideoGridBinding.inflate(inflater, container, false)
         return binding.root
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+    override fun onViewCreated(
+        view: View,
+        savedInstanceState: Bundle?,
+    ) {
         if (!::adapter.isInitialized) {
             adapter =
                 BangumiFollowAdapter { position, season ->
@@ -149,9 +159,7 @@ class PgcRecommendGridFragment : Fragment(), RefreshKeyHandler, TabSwitchFocusTa
                             return true
                         }
 
-                        override fun onLeftEdge(): Boolean {
-                            return switchToPrevTabFromContentEdge()
-                        }
+                        override fun onLeftEdge(): Boolean = switchToPrevTabFromContentEdge()
 
                         override fun onRightEdge() {
                             switchToNextTabFromContentEdge()
@@ -170,7 +178,11 @@ class PgcRecommendGridFragment : Fragment(), RefreshKeyHandler, TabSwitchFocusTa
             ).also { it.install() }
         binding.recycler.addOnScrollListener(
             object : RecyclerView.OnScrollListener() {
-                override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
+                override fun onScrolled(
+                    recyclerView: RecyclerView,
+                    dx: Int,
+                    dy: Int,
+                ) {
                     if (dy <= 0) return
                     if (isLoadingMore || !hasNext) return
                     val lm = recyclerView.layoutManager as? GridLayoutManager ?: return
@@ -517,28 +529,32 @@ class PgcRecommendGridFragment : Fragment(), RefreshKeyHandler, TabSwitchFocusTa
             )
         }
 
-        fun newBangumi(): PgcRecommendGridFragment = PgcRecommendGridFragment().apply {
-            arguments = Bundle().apply { putInt(ARG_KIND, KIND_BANGUMI) }
-        }
+        fun newBangumi(): PgcRecommendGridFragment =
+            PgcRecommendGridFragment().apply {
+                arguments = Bundle().apply { putInt(ARG_KIND, KIND_BANGUMI) }
+            }
 
-        fun newCinema(): PgcRecommendGridFragment = PgcRecommendGridFragment().apply {
-            arguments = Bundle().apply { putInt(ARG_KIND, KIND_CINEMA) }
-        }
+        fun newCinema(): PgcRecommendGridFragment =
+            PgcRecommendGridFragment().apply {
+                arguments = Bundle().apply { putInt(ARG_KIND, KIND_CINEMA) }
+            }
 
-        fun newSearchBangumi(keyword: String): PgcRecommendGridFragment = PgcRecommendGridFragment().apply {
-            arguments =
-                Bundle().apply {
-                    putInt(ARG_KIND, KIND_SEARCH_BANGUMI)
-                    putString(ARG_SEARCH_KEYWORD, keyword.trim())
-                }
-        }
+        fun newSearchBangumi(keyword: String): PgcRecommendGridFragment =
+            PgcRecommendGridFragment().apply {
+                arguments =
+                    Bundle().apply {
+                        putInt(ARG_KIND, KIND_SEARCH_BANGUMI)
+                        putString(ARG_SEARCH_KEYWORD, keyword.trim())
+                    }
+            }
 
-        fun newSearchCinema(keyword: String): PgcRecommendGridFragment = PgcRecommendGridFragment().apply {
-            arguments =
-                Bundle().apply {
-                    putInt(ARG_KIND, KIND_SEARCH_CINEMA)
-                    putString(ARG_SEARCH_KEYWORD, keyword.trim())
-                }
-        }
+        fun newSearchCinema(keyword: String): PgcRecommendGridFragment =
+            PgcRecommendGridFragment().apply {
+                arguments =
+                    Bundle().apply {
+                        putInt(ARG_KIND, KIND_SEARCH_CINEMA)
+                        putString(ARG_SEARCH_KEYWORD, keyword.trim())
+                    }
+            }
     }
 }

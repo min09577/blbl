@@ -3,7 +3,6 @@ package blbl.cat3399.feature.player
 import blbl.cat3399.core.api.video.VideoDetail
 import blbl.cat3399.core.api.video.VideoDetailStat
 import blbl.cat3399.core.api.video.VideoUgcSeason
-import blbl.cat3399.core.api.video.VideoUgcSeasonEpisode
 import blbl.cat3399.core.log.AppLog
 import blbl.cat3399.core.model.VideoCard
 import blbl.cat3399.feature.video.VideoCardVisibilityFilter
@@ -40,8 +39,8 @@ internal fun <Cursor> buildFreshVideoCardPlaylistContinuation(
     hasMore: Boolean,
     playlistItemFactory: (VideoCard) -> PlayerPlaylistItem,
     fetchPage: suspend (cursor: Cursor) -> VideoCardPlaylistPage<Cursor>,
-): PlayerPlaylistContinuation? {
-    return buildVideoCardPlaylistContinuation(
+): PlayerPlaylistContinuation? =
+    buildVideoCardPlaylistContinuation(
         seedCards = seedCards,
         nextCursor = nextCursor,
         hasMore = hasMore,
@@ -53,7 +52,6 @@ internal fun <Cursor> buildFreshVideoCardPlaylistContinuation(
             fetchPage = fetchPage,
         )
     }
-}
 
 private suspend fun <Cursor> loadFreshVideoCardPlaylistPage(
     cursor: Cursor,
@@ -176,7 +174,11 @@ internal fun parseUgcSeasonPlaylistFromDetailWithUiCards(ugcSeason: VideoUgcSeas
     return PlaylistParsed(items = outItems, uiCards = outCards)
 }
 
-internal fun parseMultiPagePlaylistFromDetailWithUiCards(detail: VideoDetail, bvid: String, aid: Long?): PlaylistParsed {
+internal fun parseMultiPagePlaylistFromDetailWithUiCards(
+    detail: VideoDetail,
+    bvid: String,
+    aid: Long?,
+): PlaylistParsed {
     if (detail.pages.size <= 1) return PlaylistParsed(emptyList(), emptyList())
 
     val outItems = ArrayList<PlayerPlaylistItem>(detail.pages.size)
@@ -222,14 +224,22 @@ internal fun parseMultiPagePlaylistFromDetailWithUiCards(detail: VideoDetail, bv
     return PlaylistParsed(items = outItems, uiCards = outCards)
 }
 
-private fun statCount(stat: VideoDetailStat, key: String): Long? =
+private fun statCount(
+    stat: VideoDetailStat,
+    key: String,
+): Long? =
     when (key) {
         "view" -> stat.view
         "danmaku" -> stat.danmaku
         else -> null
     }
 
-internal fun pickPlaylistIndexForCurrentMedia(list: List<PlayerPlaylistItem>, bvid: String, aid: Long?, cid: Long?): Int {
+internal fun pickPlaylistIndexForCurrentMedia(
+    list: List<PlayerPlaylistItem>,
+    bvid: String,
+    aid: Long?,
+    cid: Long?,
+): Int {
     val safeBvid = bvid.trim()
     if (cid != null && cid > 0) {
         val byCid = list.indexOfFirst { it.cid == cid }
@@ -246,7 +256,10 @@ internal fun pickPlaylistIndexForCurrentMedia(list: List<PlayerPlaylistItem>, bv
     return -1
 }
 
-internal fun isMultiPagePlaylist(list: List<PlayerPlaylistItem>, currentBvid: String): Boolean {
+internal fun isMultiPagePlaylist(
+    list: List<PlayerPlaylistItem>,
+    currentBvid: String,
+): Boolean {
     if (list.size < 2) return false
     val bvid = currentBvid.trim().takeIf { it.isNotBlank() } ?: return false
     return list.all { it.bvid == bvid && (it.cid ?: 0L) > 0L }
@@ -333,7 +346,9 @@ internal object PlayerPlaylistStore {
         }
         AppLog.d(
             "PlayerPlaylistStore",
-            "put size=${outItems.size} cards=${if (hasCards) outCards.size else 0} idx=$safeIndex source=${source.orEmpty()} token=${token.take(8)}",
+            "put size=${outItems.size} cards=${if (hasCards) outCards.size else 0} idx=$safeIndex source=${source.orEmpty()} token=${token.take(
+                8,
+            )}",
         )
         return token
     }
@@ -343,7 +358,10 @@ internal object PlayerPlaylistStore {
         return store[token]
     }
 
-    fun updateIndex(token: String, index: Int) {
+    fun updateIndex(
+        token: String,
+        index: Int,
+    ) {
         if (token.isBlank()) return
         val p = store[token] ?: return
         p.index = index.coerceIn(0, (p.items.size - 1).coerceAtLeast(0))

@@ -15,9 +15,11 @@ internal fun PlayerActivity.tryEnterPipOnBack(): Boolean {
     if (!engine.isPlaying) return false
 
     return try {
-        val params = PictureInPictureParams.Builder()
-            .setAspectRatio(Rational(16, 9))
-            .build()
+        val params =
+            PictureInPictureParams
+                .Builder()
+                .setAspectRatio(Rational(16, 9))
+                .build()
         enterPictureInPictureMode(params)
         AppLog.d("PlayerActivity", "Entered PiP mode")
         true

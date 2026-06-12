@@ -25,7 +25,11 @@ import blbl.cat3399.ui.RefreshKeyHandler
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.launch
 
-class LiveAreaIndexFragment : Fragment(), LivePageFocusTarget, LivePageReturnFocusTarget, RefreshKeyHandler {
+class LiveAreaIndexFragment :
+    Fragment(),
+    LivePageFocusTarget,
+    LivePageReturnFocusTarget,
+    RefreshKeyHandler {
     private var _binding: FragmentLiveGridBinding? = null
     private val binding get() = _binding!!
 
@@ -45,12 +49,19 @@ class LiveAreaIndexFragment : Fragment(), LivePageFocusTarget, LivePageReturnFoc
     private var pendingFocusFirstCardAfterRefresh: Boolean = false
     private var dpadGridController: DpadGridController? = null
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?,
+    ): View {
         _binding = FragmentLiveGridBinding.inflate(inflater, container, false)
         return binding.root
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+    override fun onViewCreated(
+        view: View,
+        savedInstanceState: Bundle?,
+    ) {
         if (!::adapter.isInitialized) {
             adapter =
                 LiveAreaAdapter { position, area ->
@@ -85,9 +96,7 @@ class LiveAreaIndexFragment : Fragment(), LivePageFocusTarget, LivePageReturnFoc
                             return true
                         }
 
-                        override fun onLeftEdge(): Boolean {
-                            return switchToPrevTabFromContentEdge()
-                        }
+                        override fun onLeftEdge(): Boolean = switchToPrevTabFromContentEdge()
 
                         override fun onRightEdge() {
                             switchToNextTabFromContentEdge()
@@ -268,7 +277,11 @@ class LiveAreaIndexFragment : Fragment(), LivePageFocusTarget, LivePageReturnFoc
         return true
     }
 
-    private fun tryRestoreFocusAtPosition(recycler: RecyclerView, pos: Int, attemptsLeft: Int) {
+    private fun tryRestoreFocusAtPosition(
+        recycler: RecyclerView,
+        pos: Int,
+        attemptsLeft: Int,
+    ) {
         if (!isAdded || _binding == null || !isResumed) return
         if (pendingRestorePosition != pos) return
 
@@ -431,7 +444,10 @@ class LiveAreaIndexFragment : Fragment(), LivePageFocusTarget, LivePageReturnFoc
         private const val ARG_PARENT_AREA_ID = "parent_area_id"
         private const val ARG_PARENT_TITLE = "parent_title"
 
-        fun newInstance(parentAreaId: Int, parentTitle: String): LiveAreaIndexFragment =
+        fun newInstance(
+            parentAreaId: Int,
+            parentTitle: String,
+        ): LiveAreaIndexFragment =
             LiveAreaIndexFragment().apply {
                 arguments =
                     Bundle().apply {

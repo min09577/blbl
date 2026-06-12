@@ -27,12 +27,13 @@ private fun applyEyeProtection(activity: Activity) {
         return
     }
     // Alpha values: 1=light(0x22), 2=medium(0x44), 3=heavy(0x66)
-    val alpha = when (level) {
-        1 -> 0x22
-        2 -> 0x44
-        3 -> 0x66
-        else -> 0x00
-    }
+    val alpha =
+        when (level) {
+            1 -> 0x22
+            2 -> 0x44
+            3 -> 0x66
+            else -> 0x00
+        }
     overlay.setBackgroundColor(Color.argb(alpha, 0, 0, 0))
     overlay.visibility = View.VISIBLE
     overlay.isClickable = false

@@ -34,7 +34,10 @@ class FollowingAdapter(
         notifyItemRangeChanged(0, itemCount)
     }
 
-    fun submit(list: List<FollowingUi>, selected: Long = MID_ALL) {
+    fun submit(
+        list: List<FollowingUi>,
+        selected: Long = MID_ALL,
+    ) {
         val prevSelected = selectedMid
         val sameItems =
             items.size == list.size &&
@@ -56,7 +59,10 @@ class FollowingAdapter(
 
     override fun getItemId(position: Int): Long = items[position].mid
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Vh {
+    override fun onCreateViewHolder(
+        parent: ViewGroup,
+        viewType: Int,
+    ): Vh {
         val binding =
             ItemFollowingBinding.inflate(
                 LayoutInflater.from(parent.context).cloneInUserScale(parent.context),
@@ -66,13 +72,21 @@ class FollowingAdapter(
         return Vh(binding)
     }
 
-    override fun onBindViewHolder(holder: Vh, position: Int) =
-        holder.bind(items[position], items[position].mid == selectedMid, onClick)
+    override fun onBindViewHolder(
+        holder: Vh,
+        position: Int,
+    ) = holder.bind(items[position], items[position].mid == selectedMid, onClick)
 
     override fun getItemCount(): Int = items.size
 
-    class Vh(private val binding: ItemFollowingBinding) : RecyclerView.ViewHolder(binding.root) {
-        fun bind(item: FollowingUi, selected: Boolean, onClick: (FollowingUi) -> Unit) {
+    class Vh(
+        private val binding: ItemFollowingBinding,
+    ) : RecyclerView.ViewHolder(binding.root) {
+        fun bind(
+            item: FollowingUi,
+            selected: Boolean,
+            onClick: (FollowingUi) -> Unit,
+        ) {
             binding.tvName.text = item.name
             val ctx = binding.root.context
             val primaryText = ThemeColor.resolve(ctx, MaterialR.attr.colorOnSurface, blbl.cat3399.R.color.blbl_text)

@@ -1,8 +1,8 @@
 package blbl.cat3399.feature.player
 
-import blbl.cat3399.feature.settings.SettingsText
 import blbl.cat3399.feature.player.danmaku.DanmakuFontWeight
 import blbl.cat3399.feature.player.danmaku.DanmakuLaneDensity
+import blbl.cat3399.feature.settings.SettingsText
 import org.json.JSONArray
 import java.util.Locale
 
@@ -15,14 +15,20 @@ private fun normalAudioRank(id: Int): Int {
     return if (idx >= 0) idx else Int.MAX_VALUE
 }
 
-private fun firstAvailableAudioId(availableAudioIds: Collection<Int>, preferredOrder: IntArray): Int {
+private fun firstAvailableAudioId(
+    availableAudioIds: Collection<Int>,
+    preferredOrder: IntArray,
+): Int {
     for (id in preferredOrder) {
         if (availableAudioIds.contains(id)) return id
     }
     return 0
 }
 
-internal fun pickAudioIdByPreference(availableAudioIds: List<Int>, desiredAudioId: Int): Int {
+internal fun pickAudioIdByPreference(
+    availableAudioIds: List<Int>,
+    desiredAudioId: Int,
+): Int {
     val available = availableAudioIds.filter { it > 0 }.distinct()
     if (available.isEmpty()) return 0
     if (desiredAudioId > 0 && available.contains(desiredAudioId)) return desiredAudioId
@@ -59,7 +65,10 @@ internal fun qnRank(qn: Int): Int {
     return if (idx >= 0) idx else (order.size + qn)
 }
 
-internal fun pickQnByQualityOrder(availableQns: List<Int>, desiredQn: Int): Int {
+internal fun pickQnByQualityOrder(
+    availableQns: List<Int>,
+    desiredQn: Int,
+): Int {
     val available = availableQns.filter { it > 0 }.distinct()
     if (available.isEmpty()) return 0
     if (desiredQn <= 0) return available.maxBy { qnRank(it) }
@@ -103,7 +112,11 @@ internal fun buildWebVtt(body: JSONArray): String {
         val to = line.optDouble("to", -1.0)
         val content = line.optString("content", "").trim()
         if (from < 0 || to <= 0 || content.isBlank()) continue
-        sb.append(formatVttTime(from)).append(" --> ").append(formatVttTime(to)).append('\n')
+        sb
+            .append(formatVttTime(from))
+            .append(" --> ")
+            .append(formatVttTime(to))
+            .append('\n')
         sb.append(content.replace('\n', ' ')).append("\n\n")
     }
     return sb.toString()

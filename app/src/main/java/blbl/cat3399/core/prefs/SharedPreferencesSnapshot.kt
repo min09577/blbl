@@ -76,8 +76,8 @@ internal object SharedPreferencesSnapshot {
     private fun encodeValue(
         key: String,
         value: Any,
-    ): JSONObject {
-        return when (value) {
+    ): JSONObject =
+        when (value) {
             is Boolean -> typedEntry(type = TYPE_BOOLEAN, value = value)
             is Int -> typedEntry(type = TYPE_INT, value = value)
             is Long -> typedEntry(type = TYPE_LONG, value = value)
@@ -96,7 +96,6 @@ internal object SharedPreferencesSnapshot {
                 )
             else -> error("不支持导出的配置类型: key=$key type=${value.javaClass.name}")
         }
-    }
 
     private fun decodeValue(
         key: String,
@@ -119,25 +118,31 @@ internal object SharedPreferencesSnapshot {
                 }
 
             TYPE_INT ->
-                (when (value) {
-                    is Number -> value.toInt()
-                    is String -> value.trim().toIntOrNull()
-                    else -> null
-                } ?: error("整型配置项无效: $key"))
+                (
+                    when (value) {
+                        is Number -> value.toInt()
+                        is String -> value.trim().toIntOrNull()
+                        else -> null
+                    } ?: error("整型配置项无效: $key")
+                )
 
             TYPE_LONG ->
-                (when (value) {
-                    is Number -> value.toLong()
-                    is String -> value.trim().toLongOrNull()
-                    else -> null
-                } ?: error("长整型配置项无效: $key"))
+                (
+                    when (value) {
+                        is Number -> value.toLong()
+                        is String -> value.trim().toLongOrNull()
+                        else -> null
+                    } ?: error("长整型配置项无效: $key")
+                )
 
             TYPE_FLOAT ->
-                (when (value) {
-                    is Number -> value.toFloat()
-                    is String -> value.trim().toFloatOrNull()
-                    else -> null
-                }?.takeIf { it.isFinite() } ?: error("浮点配置项无效: $key"))
+                (
+                    when (value) {
+                        is Number -> value.toFloat()
+                        is String -> value.trim().toFloatOrNull()
+                        else -> null
+                    }?.takeIf { it.isFinite() } ?: error("浮点配置项无效: $key")
+                )
 
             TYPE_STRING -> value as? String ?: error("字符串配置项无效: $key")
             TYPE_STRING_SET -> {
@@ -156,11 +161,10 @@ internal object SharedPreferencesSnapshot {
     private fun typedEntry(
         type: String,
         value: Any,
-    ): JSONObject {
-        return JSONObject()
+    ): JSONObject =
+        JSONObject()
             .put(KEY_TYPE, type)
             .put(KEY_VALUE, value)
-    }
 
     private fun allowKey(
         key: String,

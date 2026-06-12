@@ -1,9 +1,10 @@
 package blbl.cat3399.core.prefs
 
 import android.content.Context
-import android.content.SharedPreferences
 
-class FeaturePrefs1861(context: Context) {
+class FeaturePrefs1861(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1861", Context.MODE_PRIVATE)
 
     var v1861carried: Boolean
@@ -605,11 +606,11 @@ class FeaturePrefs1861(context: Context) {
     var v1870cleared: Boolean
         get() = prefs.getBoolean("v1870cleared", false)
         set(value) = prefs.edit().putBoolean("v1870cleared", value).apply()
-
 }
 
-
-class FeaturePrefs1871(context: Context) {
+class FeaturePrefs1871(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1871", Context.MODE_PRIVATE)
 
     var v1871clicked: Boolean
@@ -1211,11 +1212,11 @@ class FeaturePrefs1871(context: Context) {
     var v1880compared: Boolean
         get() = prefs.getBoolean("v1880compared", false)
         set(value) = prefs.edit().putBoolean("v1880compared", value).apply()
-
 }
 
-
-class FeaturePrefs1881(context: Context) {
+class FeaturePrefs1881(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1881", Context.MODE_PRIVATE)
 
     var v1881compensated: Boolean
@@ -1817,11 +1818,11 @@ class FeaturePrefs1881(context: Context) {
     var v1890constructed: Boolean
         get() = prefs.getBoolean("v1890constructed", false)
         set(value) = prefs.edit().putBoolean("v1890constructed", value).apply()
-
 }
 
-
-class FeaturePrefs1891(context: Context) {
+class FeaturePrefs1891(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1891", Context.MODE_PRIVATE)
 
     var v1891consulted: Boolean
@@ -2423,7 +2424,4 @@ class FeaturePrefs1891(context: Context) {
     var v1900correlated: Boolean
         get() = prefs.getBoolean("v1900correlated", false)
         set(value) = prefs.edit().putBoolean("v1900correlated", value).apply()
-
 }
-
-

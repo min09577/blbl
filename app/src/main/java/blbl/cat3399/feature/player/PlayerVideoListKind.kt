@@ -5,4 +5,3 @@ internal enum class PlayerVideoListKind {
     PARTS,
     RECOMMEND,
 }
-

@@ -1,9 +1,10 @@
 package blbl.cat3399.core.prefs
 
 import android.content.Context
-import android.content.SharedPreferences
 
-class FeaturePrefs1901(context: Context) {
+class FeaturePrefs1901(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1901", Context.MODE_PRIVATE)
 
     var v1901costed: Boolean
@@ -605,11 +606,11 @@ class FeaturePrefs1901(context: Context) {
     var v1910cycling: Boolean
         get() = prefs.getBoolean("v1910cycling", false)
         set(value) = prefs.edit().putBoolean("v1910cycling", value).apply()
-
 }
 
-
-class FeaturePrefs1911(context: Context) {
+class FeaturePrefs1911(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1911", Context.MODE_PRIVATE)
 
     var v1911damaged: Boolean
@@ -1211,11 +1212,11 @@ class FeaturePrefs1911(context: Context) {
     var v1920decreased: Boolean
         get() = prefs.getBoolean("v1920decreased", false)
         set(value) = prefs.edit().putBoolean("v1920decreased", value).apply()
-
 }
 
-
-class FeaturePrefs1921(context: Context) {
+class FeaturePrefs1921(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1921", Context.MODE_PRIVATE)
 
     var v1921dedicated: Boolean
@@ -1817,11 +1818,11 @@ class FeaturePrefs1921(context: Context) {
     var v1930deposited: Boolean
         get() = prefs.getBoolean("v1930deposited", false)
         set(value) = prefs.edit().putBoolean("v1930deposited", value).apply()
-
 }
 
-
-class FeaturePrefs1931(context: Context) {
+class FeaturePrefs1931(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1931", Context.MODE_PRIVATE)
 
     var v1931depressed: Boolean
@@ -2423,7 +2424,4 @@ class FeaturePrefs1931(context: Context) {
     var v1940disabled: Boolean
         get() = prefs.getBoolean("v1940disabled", false)
         set(value) = prefs.edit().putBoolean("v1940disabled", value).apply()
-
 }
-
-

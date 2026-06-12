@@ -1,9 +1,10 @@
 package blbl.cat3399.core.prefs
 
 import android.content.Context
-import android.content.SharedPreferences
 
-class FeaturePrefs1781(context: Context) {
+class FeaturePrefs1781(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1781", Context.MODE_PRIVATE)
 
     var v1781sea: Boolean
@@ -605,11 +606,11 @@ class FeaturePrefs1781(context: Context) {
     var v1790seven: Boolean
         get() = prefs.getBoolean("v1790seven", false)
         set(value) = prefs.edit().putBoolean("v1790seven", value).apply()
-
 }
 
-
-class FeaturePrefs1791(context: Context) {
+class FeaturePrefs1791(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1791", Context.MODE_PRIVATE)
 
     var v1791shaft: Boolean
@@ -1211,11 +1212,11 @@ class FeaturePrefs1791(context: Context) {
     var v1800shove: Boolean
         get() = prefs.getBoolean("v1800shove", false)
         set(value) = prefs.edit().putBoolean("v1800shove", value).apply()
-
 }
 
-
-class FeaturePrefs1801(context: Context) {
+class FeaturePrefs1801(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1801", Context.MODE_PRIVATE)
 
     var v1801aboveboard: Boolean
@@ -1817,11 +1818,11 @@ class FeaturePrefs1801(context: Context) {
     var v1810added: Boolean
         get() = prefs.getBoolean("v1810added", false)
         set(value) = prefs.edit().putBoolean("v1810added", value).apply()
-
 }
 
-
-class FeaturePrefs1811(context: Context) {
+class FeaturePrefs1811(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1811", Context.MODE_PRIVATE)
 
     var v1811addressed: Boolean
@@ -2423,7 +2424,4 @@ class FeaturePrefs1811(context: Context) {
     var v1820approved: Boolean
         get() = prefs.getBoolean("v1820approved", false)
         set(value) = prefs.edit().putBoolean("v1820approved", value).apply()
-
 }
-
-

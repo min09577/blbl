@@ -10,11 +10,10 @@ internal enum class PlayerEngineKind(
     ;
 
     companion object {
-        fun fromPrefValue(value: String): PlayerEngineKind {
-            return when (value.trim()) {
+        fun fromPrefValue(value: String): PlayerEngineKind =
+            when (value.trim()) {
                 AppPrefs.PLAYER_ENGINE_IJK -> IjkPlayer
                 else -> ExoPlayer
             }
-        }
     }
 }

@@ -9,13 +9,21 @@ import android.graphics.Color
 class PlayerActivityKeywordHighlight {
     data class HighlightStyle(
         val backgroundColor: Int = Color.YELLOW,
-        val textColor: Int = Color.BLACK
+        val textColor: Int = Color.BLACK,
     )
-    
-    fun addKeyword(keyword: String, style: HighlightStyle = HighlightStyle()) {}
+
+    fun addKeyword(
+        keyword: String,
+        style: HighlightStyle = HighlightStyle(),
+    ) {}
+
     fun removeKeyword(keyword: String) {}
+
     fun clearKeywords() {}
+
     fun getKeywords(): List<String> = emptyList()
+
     fun isEnabled(): Boolean = true
+
     fun setEnabled(enabled: Boolean) {}
 }

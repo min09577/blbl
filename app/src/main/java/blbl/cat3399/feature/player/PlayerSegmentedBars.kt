@@ -61,7 +61,12 @@ class SegmentedSeekBar : AppCompatSeekBar {
         setSegments(emptyList())
     }
 
-    override fun onSizeChanged(w: Int, h: Int, oldw: Int, oldh: Int) {
+    override fun onSizeChanged(
+        w: Int,
+        h: Int,
+        oldw: Int,
+        oldh: Int,
+    ) {
         super.onSizeChanged(w, h, oldw, oldh)
         updateTrackBounds()
     }
@@ -79,11 +84,17 @@ class SegmentedSeekBar : AppCompatSeekBar {
         val hasValidBounds = b.width() > 1 && b.height() > 1
 
         val left =
-            if (hasValidBounds) b.left
-            else max(paddingLeft, thumbOffset).coerceAtLeast(0)
+            if (hasValidBounds) {
+                b.left
+            } else {
+                max(paddingLeft, thumbOffset).coerceAtLeast(0)
+            }
         val right =
-            if (hasValidBounds) b.right
-            else (width - max(paddingRight, thumbOffset)).coerceAtLeast(left + 1)
+            if (hasValidBounds) {
+                b.right
+            } else {
+                (width - max(paddingRight, thumbOffset)).coerceAtLeast(left + 1)
+            }
 
         val contentTop = paddingTop
         val contentBottom = (height - paddingBottom).coerceAtLeast(contentTop + 1)
@@ -93,8 +104,11 @@ class SegmentedSeekBar : AppCompatSeekBar {
         val h = desired.coerceIn(1, contentHeight)
 
         val centerY =
-            if (hasValidBounds) b.centerY()
-            else (contentTop + contentHeight / 2)
+            if (hasValidBounds) {
+                b.centerY()
+            } else {
+                (contentTop + contentHeight / 2)
+            }
         val top = (centerY - h / 2).coerceIn(contentTop, contentBottom - 1)
         val bottom = (top + h).coerceAtMost(contentBottom)
 
@@ -118,7 +132,15 @@ class SegmentedSeekBar : AppCompatSeekBar {
         val range = rightBase - leftBase
         if (range <= 1f) return
 
-        drawSegments(canvas = canvas, top = top, bottom = bottom, leftBase = leftBase, rightBase = rightBase, range = range, poiOnly = false)
+        drawSegments(
+            canvas = canvas,
+            top = top,
+            bottom = bottom,
+            leftBase = leftBase,
+            rightBase = rightBase,
+            range = range,
+            poiOnly = false,
+        )
         drawSegments(canvas = canvas, top = top, bottom = bottom, leftBase = leftBase, rightBase = rightBase, range = range, poiOnly = true)
     }
 
@@ -240,7 +262,12 @@ class SegmentedProgressBar : ProgressBar {
         setSegments(emptyList())
     }
 
-    override fun onSizeChanged(w: Int, h: Int, oldw: Int, oldh: Int) {
+    override fun onSizeChanged(
+        w: Int,
+        h: Int,
+        oldw: Int,
+        oldh: Int,
+    ) {
         super.onSizeChanged(w, h, oldw, oldh)
         updateTrackBounds()
     }
@@ -304,8 +331,24 @@ class SegmentedProgressBar : ProgressBar {
         val rightBase = bounds.right.toFloat()
         val range = rightBase - leftBase
         if (range > 1f && segments.isNotEmpty()) {
-            drawSegments(canvas = canvas, top = top, bottom = bottom, leftBase = leftBase, rightBase = rightBase, range = range, poiOnly = false)
-            drawSegments(canvas = canvas, top = top, bottom = bottom, leftBase = leftBase, rightBase = rightBase, range = range, poiOnly = true)
+            drawSegments(
+                canvas = canvas,
+                top = top,
+                bottom = bottom,
+                leftBase = leftBase,
+                rightBase = rightBase,
+                range = range,
+                poiOnly = false,
+            )
+            drawSegments(
+                canvas = canvas,
+                top = top,
+                bottom = bottom,
+                leftBase = leftBase,
+                rightBase = rightBase,
+                range = range,
+                poiOnly = true,
+            )
         }
         drawThumb(canvas)
     }

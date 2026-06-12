@@ -1,9 +1,10 @@
 package blbl.cat3399.core.prefs
 
 import android.content.Context
-import android.content.SharedPreferences
 
-class FeaturePrefs861(context: Context) {
+class FeaturePrefs861(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_861", Context.MODE_PRIVATE)
 
     var v861guard: Boolean
@@ -605,11 +606,11 @@ class FeaturePrefs861(context: Context) {
     var v870history: Boolean
         get() = prefs.getBoolean("v870history", false)
         set(value) = prefs.edit().putBoolean("v870history", value).apply()
-
 }
 
-
-class FeaturePrefs871(context: Context) {
+class FeaturePrefs871(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_871", Context.MODE_PRIVATE)
 
     var v871hit: Boolean
@@ -1211,11 +1212,11 @@ class FeaturePrefs871(context: Context) {
     var v880index: Boolean
         get() = prefs.getBoolean("v880index", false)
         set(value) = prefs.edit().putBoolean("v880index", value).apply()
-
 }
 
-
-class FeaturePrefs881(context: Context) {
+class FeaturePrefs881(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_881", Context.MODE_PRIVATE)
 
     var v881info: Boolean
@@ -1817,11 +1818,11 @@ class FeaturePrefs881(context: Context) {
     var v890iterate: Boolean
         get() = prefs.getBoolean("v890iterate", false)
         set(value) = prefs.edit().putBoolean("v890iterate", value).apply()
-
 }
 
-
-class FeaturePrefs891(context: Context) {
+class FeaturePrefs891(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_891", Context.MODE_PRIVATE)
 
     var v891join: Boolean
@@ -2423,7 +2424,4 @@ class FeaturePrefs891(context: Context) {
     var v900leaf: Boolean
         get() = prefs.getBoolean("v900leaf", false)
         set(value) = prefs.edit().putBoolean("v900leaf", value).apply()
-
 }
-
-

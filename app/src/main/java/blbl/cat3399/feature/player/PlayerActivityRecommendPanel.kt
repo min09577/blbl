@@ -103,13 +103,20 @@ internal fun PlayerActivity.initBottomCardPanel() {
 
     binding.recyclerRecommend.addOnScrollListener(
         object : RecyclerView.OnScrollListener() {
-            override fun onScrollStateChanged(recyclerView: RecyclerView, newState: Int) {
+            override fun onScrollStateChanged(
+                recyclerView: RecyclerView,
+                newState: Int,
+            ) {
                 if (newState != RecyclerView.SCROLL_STATE_DRAGGING && newState != RecyclerView.SCROLL_STATE_IDLE) return
                 if (recyclerView.canScrollHorizontally(1)) return
                 maybeLoadMoreBottomPanelItemsFromScroll()
             }
 
-            override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
+            override fun onScrolled(
+                recyclerView: RecyclerView,
+                dx: Int,
+                dy: Int,
+            ) {
                 if (dx <= 0) return
                 maybeLoadMoreBottomPanelItemsFromScroll()
             }
@@ -158,7 +165,11 @@ internal fun PlayerActivity.initBottomCardPanel() {
                                 val nextPos = pos + 1
                                 ensurePlaylistIndexLoaded(kind = bottomCardPanelKind, index = nextPos) { available ->
                                     if (!available) return@ensurePlaylistIndexLoaded
-                                    if (!isBottomCardPanelVisible() || bottomCardPanelKind == PlayerVideoListKind.RECOMMEND) return@ensurePlaylistIndexLoaded
+                                    if (!isBottomCardPanelVisible() ||
+                                        bottomCardPanelKind == PlayerVideoListKind.RECOMMEND
+                                    ) {
+                                        return@ensurePlaylistIndexLoaded
+                                    }
                                     binding.recyclerRecommend.post { focusBottomPanelPosition(nextPos) }
                                 }
                                 return@setOnKeyListener true
@@ -217,7 +228,10 @@ internal fun PlayerActivity.showListPanel(
     selectBottomPanelKind(kind = kind, requestFocus = true)
 }
 
-private fun PlayerActivity.selectBottomPanelKind(kind: PlayerVideoListKind, requestFocus: Boolean) {
+private fun PlayerActivity.selectBottomPanelKind(
+    kind: PlayerVideoListKind,
+    requestFocus: Boolean,
+) {
     if (bottomCardPanelKind == kind) {
         syncBottomPanelTabUi(kind = kind)
         if (isBottomCardPanelVisible()) {
@@ -240,8 +254,8 @@ private fun PlayerActivity.syncBottomPanelTabUi(kind: PlayerVideoListKind) {
     binding.tabRecommendList.isSelected = kind == PlayerVideoListKind.RECOMMEND
 }
 
-private fun PlayerActivity.preferredListPanelKindForPlaybackMode(): PlayerVideoListKind {
-    return when (resolvedPlaybackMode()) {
+private fun PlayerActivity.preferredListPanelKindForPlaybackMode(): PlayerVideoListKind =
+    when (resolvedPlaybackMode()) {
         AppPrefs.PLAYER_PLAYBACK_MODE_RECOMMEND -> PlayerVideoListKind.RECOMMEND
         AppPrefs.PLAYER_PLAYBACK_MODE_PARTS_LIST_THEN_RECOMMEND ->
             when {
@@ -252,16 +266,14 @@ private fun PlayerActivity.preferredListPanelKindForPlaybackMode(): PlayerVideoL
         AppPrefs.PLAYER_PLAYBACK_MODE_PARTS_LIST -> PlayerVideoListKind.PARTS
         else -> PlayerVideoListKind.PAGE
     }
-}
 
-private fun PlayerActivity.preferredListPanelKindForShortcutTarget(target: PlayerCustomShortcutOpenVideoListTarget): PlayerVideoListKind {
-    return when (target) {
+private fun PlayerActivity.preferredListPanelKindForShortcutTarget(target: PlayerCustomShortcutOpenVideoListTarget): PlayerVideoListKind =
+    when (target) {
         PlayerCustomShortcutOpenVideoListTarget.AUTO -> preferredListPanelKindForPlaybackMode()
         PlayerCustomShortcutOpenVideoListTarget.PAGE -> PlayerVideoListKind.PAGE
         PlayerCustomShortcutOpenVideoListTarget.PARTS -> PlayerVideoListKind.PARTS
         PlayerCustomShortcutOpenVideoListTarget.RECOMMEND -> PlayerVideoListKind.RECOMMEND
     }
-}
 
 internal fun PlayerActivity.hideBottomCardPanel(
     restoreFocus: Boolean,
@@ -377,13 +389,12 @@ private fun PlayerActivity.maybeLoadMoreBottomPanelItemsFromScroll() {
     }
 }
 
-private fun PlayerActivity.cardsForBottomPanel(kind: PlayerVideoListKind): List<VideoCard> {
-    return when (kind) {
+private fun PlayerActivity.cardsForBottomPanel(kind: PlayerVideoListKind): List<VideoCard> =
+    when (kind) {
         PlayerVideoListKind.PAGE -> resolvePlaylistUiCards(items = pageListItems, uiCards = pageListUiCards)
         PlayerVideoListKind.PARTS -> resolvePlaylistUiCards(items = partsListItems, uiCards = partsListUiCards)
         PlayerVideoListKind.RECOMMEND -> recommendCardsForCurrentVideo()
     }
-}
 
 private fun PlayerActivity.recommendCardsForCurrentVideo(): List<VideoCard> {
     val requestBvid = currentBvid.trim()
@@ -431,14 +442,22 @@ private fun PlayerActivity.ensureRecommendCardsLoaded() {
             } finally {
                 if (token == relatedVideosFetchToken) relatedVideosFetchJob = null
                 if (currentBvid.trim() == requestBvid) refreshPlayerInfoPanelContent()
-                if (isBottomCardPanelVisible() && bottomCardPanelKind == PlayerVideoListKind.RECOMMEND && currentBvid.trim() == requestBvid) {
-                    refreshBottomCardPanelContent(requestFocus = shouldRequestBottomPanelContentFocusAfterAsyncUpdate(kind = PlayerVideoListKind.RECOMMEND))
+                if (isBottomCardPanelVisible() &&
+                    bottomCardPanelKind == PlayerVideoListKind.RECOMMEND &&
+                    currentBvid.trim() == requestBvid
+                ) {
+                    refreshBottomCardPanelContent(
+                        requestFocus = shouldRequestBottomPanelContentFocusAfterAsyncUpdate(kind = PlayerVideoListKind.RECOMMEND),
+                    )
                 }
             }
         }
 }
 
-private fun PlayerActivity.resolvePlaylistUiCards(items: List<PlayerPlaylistItem>, uiCards: List<VideoCard>): List<VideoCard> {
+private fun PlayerActivity.resolvePlaylistUiCards(
+    items: List<PlayerPlaylistItem>,
+    uiCards: List<VideoCard>,
+): List<VideoCard> {
     if (items.isEmpty()) return emptyList()
     if (uiCards.isNotEmpty() && uiCards.size == items.size) return uiCards
     return items.mapIndexed { index, item ->
@@ -487,13 +506,12 @@ private fun PlayerActivity.shouldRequestBottomPanelContentFocusAfterAsyncUpdate(
     return focused === currentBottomPanelTabView() || focused === binding.tvListPanelEmpty
 }
 
-private fun PlayerActivity.currentBottomPanelTabView(): View {
-    return when (bottomCardPanelKind) {
+private fun PlayerActivity.currentBottomPanelTabView(): View =
+    when (bottomCardPanelKind) {
         PlayerVideoListKind.PAGE -> binding.tabPageList
         PlayerVideoListKind.PARTS -> binding.tabPartsList
         PlayerVideoListKind.RECOMMEND -> binding.tabRecommendList
     }
-}
 
 private fun PlayerActivity.focusBottomPanelDefaultItem() {
     val count = binding.recyclerRecommend.adapter?.itemCount ?: 0
@@ -579,13 +597,19 @@ private fun PlayerActivity.focusBottomPanelPosition(position: Int) {
     val count = adapter.itemCount
     if (position !in 0 until count) return
 
-    binding.recyclerRecommend.findViewHolderForAdapterPosition(position)?.itemView?.requestOsdFocusIfUsable()
+    binding.recyclerRecommend
+        .findViewHolderForAdapterPosition(position)
+        ?.itemView
+        ?.requestOsdFocusIfUsable()
         ?: run {
             binding.recyclerRecommend.scrollToPosition(position)
             binding.recyclerRecommend.postIfAlive(
                 isAlive = { isBottomCardPanelVisible() && binding.recyclerRecommend.isAttachedToWindow },
             ) {
-                binding.recyclerRecommend.findViewHolderForAdapterPosition(position)?.itemView?.requestOsdFocusIfUsable()
+                binding.recyclerRecommend
+                    .findViewHolderForAdapterPosition(position)
+                    ?.itemView
+                    ?.requestOsdFocusIfUsable()
             }
         }
 }

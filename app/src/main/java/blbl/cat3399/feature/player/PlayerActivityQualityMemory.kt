@@ -7,11 +7,17 @@ package blbl.cat3399.feature.player
 class PlayerActivityQualityMemory {
     data class QualityPreference(
         val quality: String,
-        val useCount: Int = 1
+        val useCount: Int = 1,
     )
-    
-    fun saveQuality(videoId: String, quality: String) {}
+
+    fun saveQuality(
+        videoId: String,
+        quality: String,
+    ) {}
+
     fun getPreferredQuality(videoId: String): String? = null
+
     fun clearHistory() {}
+
     fun getMostUsedQuality(): String? = null
 }

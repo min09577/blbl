@@ -1,9 +1,10 @@
 package blbl.cat3399.core.prefs
 
 import android.content.Context
-import android.content.SharedPreferences
 
-class FeaturePrefs1341(context: Context) {
+class FeaturePrefs1341(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1341", Context.MODE_PRIVATE)
 
     var v1341cold: Boolean
@@ -605,11 +606,11 @@ class FeaturePrefs1341(context: Context) {
     var v1350corner: Boolean
         get() = prefs.getBoolean("v1350corner", false)
         set(value) = prefs.edit().putBoolean("v1350corner", value).apply()
-
 }
 
-
-class FeaturePrefs1351(context: Context) {
+class FeaturePrefs1351(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1351", Context.MODE_PRIVATE)
 
     var v1351cost: Boolean
@@ -1211,11 +1212,11 @@ class FeaturePrefs1351(context: Context) {
     var v1360crisis: Boolean
         get() = prefs.getBoolean("v1360crisis", false)
         set(value) = prefs.edit().putBoolean("v1360crisis", value).apply()
-
 }
 
-
-class FeaturePrefs1361(context: Context) {
+class FeaturePrefs1361(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1361", Context.MODE_PRIVATE)
 
     var v1361crowd: Boolean
@@ -1817,11 +1818,11 @@ class FeaturePrefs1361(context: Context) {
     var v1370dash: Boolean
         get() = prefs.getBoolean("v1370dash", false)
         set(value) = prefs.edit().putBoolean("v1370dash", value).apply()
-
 }
 
-
-class FeaturePrefs1371(context: Context) {
+class FeaturePrefs1371(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1371", Context.MODE_PRIVATE)
 
     var v1371dawn: Boolean
@@ -2423,7 +2424,4 @@ class FeaturePrefs1371(context: Context) {
     var v1380denial: Boolean
         get() = prefs.getBoolean("v1380denial", false)
         set(value) = prefs.edit().putBoolean("v1380denial", value).apply()
-
 }
-
-

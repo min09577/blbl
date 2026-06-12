@@ -1,9 +1,10 @@
 package blbl.cat3399.core.prefs
 
 import android.content.Context
-import android.content.SharedPreferences
 
-class FeaturePrefs1301(context: Context) {
+class FeaturePrefs1301(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1301", Context.MODE_PRIVATE)
 
     var v1301candy: Boolean
@@ -605,11 +606,11 @@ class FeaturePrefs1301(context: Context) {
     var v1310cave: Boolean
         get() = prefs.getBoolean("v1310cave", false)
         set(value) = prefs.edit().putBoolean("v1310cave", value).apply()
-
 }
 
-
-class FeaturePrefs1311(context: Context) {
+class FeaturePrefs1311(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1311", Context.MODE_PRIVATE)
 
     var v1311cedar: Boolean
@@ -1211,11 +1212,11 @@ class FeaturePrefs1311(context: Context) {
     var v1320china: Boolean
         get() = prefs.getBoolean("v1320china", false)
         set(value) = prefs.edit().putBoolean("v1320china", value).apply()
-
 }
 
-
-class FeaturePrefs1321(context: Context) {
+class FeaturePrefs1321(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1321", Context.MODE_PRIVATE)
 
     var v1321chip: Boolean
@@ -1817,11 +1818,11 @@ class FeaturePrefs1321(context: Context) {
     var v1330clever: Boolean
         get() = prefs.getBoolean("v1330clever", false)
         set(value) = prefs.edit().putBoolean("v1330clever", value).apply()
-
 }
 
-
-class FeaturePrefs1331(context: Context) {
+class FeaturePrefs1331(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1331", Context.MODE_PRIVATE)
 
     var v1331cliff: Boolean
@@ -2423,7 +2424,4 @@ class FeaturePrefs1331(context: Context) {
     var v1340coin: Boolean
         get() = prefs.getBoolean("v1340coin", false)
         set(value) = prefs.edit().putBoolean("v1340coin", value).apply()
-
 }
-
-

@@ -2,6 +2,8 @@ package blbl.cat3399.core.api.video.web
 
 import blbl.cat3399.core.api.BiliApiSource
 import blbl.cat3399.core.api.video.AudioTrack
+import blbl.cat3399.core.api.video.UgcSeasonArchivesPage
+import blbl.cat3399.core.api.video.UgcSeasonArchivesRequest
 import blbl.cat3399.core.api.video.VideoAudioKind
 import blbl.cat3399.core.api.video.VideoCardPage
 import blbl.cat3399.core.api.video.VideoCollectionKind
@@ -15,34 +17,32 @@ import blbl.cat3399.core.api.video.VideoDetailRequest
 import blbl.cat3399.core.api.video.VideoDetailStat
 import blbl.cat3399.core.api.video.VideoDimension
 import blbl.cat3399.core.api.video.VideoDynamicTagRequest
+import blbl.cat3399.core.api.video.VideoOnlineStatus
+import blbl.cat3399.core.api.video.VideoOnlineStatusRequest
 import blbl.cat3399.core.api.video.VideoOwner
 import blbl.cat3399.core.api.video.VideoPlayClipSegment
 import blbl.cat3399.core.api.video.VideoPlayRequest
 import blbl.cat3399.core.api.video.VideoPlayResume
 import blbl.cat3399.core.api.video.VideoPlayStream
+import blbl.cat3399.core.api.video.VideoPlayerInfo
+import blbl.cat3399.core.api.video.VideoPlayerInfoRequest
 import blbl.cat3399.core.api.video.VideoPopularRequest
 import blbl.cat3399.core.api.video.VideoProgressiveStream
 import blbl.cat3399.core.api.video.VideoRegionLatestRequest
 import blbl.cat3399.core.api.video.VideoResumeTimeUnit
 import blbl.cat3399.core.api.video.VideoSegmentBase
 import blbl.cat3399.core.api.video.VideoSeriesArchivesRequest
+import blbl.cat3399.core.api.video.VideoShotInfo
+import blbl.cat3399.core.api.video.VideoShotRequest
 import blbl.cat3399.core.api.video.VideoSubtitle
 import blbl.cat3399.core.api.video.VideoSupportFormat
+import blbl.cat3399.core.api.video.VideoTagsPage
+import blbl.cat3399.core.api.video.VideoTagsRequest
 import blbl.cat3399.core.api.video.VideoTrack
 import blbl.cat3399.core.api.video.VideoTrackInfo
 import blbl.cat3399.core.api.video.VideoUgcSeason
 import blbl.cat3399.core.api.video.VideoUgcSeasonEpisode
 import blbl.cat3399.core.api.video.VideoUgcSeasonSection
-import blbl.cat3399.core.api.video.VideoOnlineStatus
-import blbl.cat3399.core.api.video.VideoOnlineStatusRequest
-import blbl.cat3399.core.api.video.VideoPlayerInfo
-import blbl.cat3399.core.api.video.VideoPlayerInfoRequest
-import blbl.cat3399.core.api.video.VideoShotInfo
-import blbl.cat3399.core.api.video.VideoShotRequest
-import blbl.cat3399.core.api.video.VideoTagsPage
-import blbl.cat3399.core.api.video.VideoTagsRequest
-import blbl.cat3399.core.api.video.UgcSeasonArchivesPage
-import blbl.cat3399.core.api.video.UgcSeasonArchivesRequest
 import blbl.cat3399.core.model.VideoCard
 import blbl.cat3399.core.model.VideoTag
 import org.json.JSONArray
@@ -148,28 +148,26 @@ internal class WebVideoMapper(
     fun parseRegionLatestPage(
         data: JSONObject,
         request: VideoRegionLatestRequest,
-    ): VideoCardPage<VideoRegionLatestRequest> {
-        return parseArchiveListPage(
+    ): VideoCardPage<VideoRegionLatestRequest> =
+        parseArchiveListPage(
             data = data,
             request = request,
             fallbackPage = request.pn,
             fallbackPageSize = request.ps,
             useLengthFallback = true,
         )
-    }
 
     fun parseDynamicTagPage(
         data: JSONObject,
         request: VideoDynamicTagRequest,
-    ): VideoCardPage<VideoDynamicTagRequest> {
-        return parseArchiveListPage(
+    ): VideoCardPage<VideoDynamicTagRequest> =
+        parseArchiveListPage(
             data = data,
             request = request,
             fallbackPage = request.pn,
             fallbackPageSize = request.ps,
             useLengthFallback = false,
         )
-    }
 
     fun parseOnlineStatus(
         data: JSONObject,
@@ -204,14 +202,19 @@ internal class WebVideoMapper(
         data: JSONObject,
         request: VideoShotRequest,
     ): VideoShotInfo {
-        val images = buildList {
-            val arr = data.optJSONArray("image")
-            if (arr != null) {
-                for (i in 0 until arr.length()) {
-                    arr.optString(i).trim().takeIf { it.isNotBlank() }?.let(::add)
+        val images =
+            buildList {
+                val arr = data.optJSONArray("image")
+                if (arr != null) {
+                    for (i in 0 until arr.length()) {
+                        arr
+                            .optString(i)
+                            .trim()
+                            .takeIf { it.isNotBlank() }
+                            ?.let(::add)
+                    }
                 }
             }
-        }
         val indexList =
             data.optJSONArray("index")?.let { arr ->
                 buildList {
@@ -269,14 +272,13 @@ internal class WebVideoMapper(
     fun parseSeriesArchives(
         data: JSONObject,
         request: VideoSeriesArchivesRequest,
-    ): VideoCardPage<VideoSeriesArchivesRequest> {
-        return parseArchiveCardsPage(
+    ): VideoCardPage<VideoSeriesArchivesRequest> =
+        parseArchiveCardsPage(
             data = data,
             request = request,
             fallbackPage = request.pageNum,
             fallbackPageSize = request.pageSize,
         )
-    }
 
     private fun parseCollectionSectionArray(
         arr: JSONArray,
@@ -427,9 +429,12 @@ internal class WebVideoMapper(
             obj.optString("title", "").trim().takeIf { it.isNotBlank() }
                 ?: arc.optString("title", "").trim().takeIf { it.isNotBlank() }
         val cover =
-            arc.optString("pic", arc.optString("cover", "")).trim().ifBlank {
-                obj.optString("cover", obj.optString("pic", "")).trim()
-            }.takeIf { it.isNotBlank() }
+            arc
+                .optString("pic", arc.optString("cover", ""))
+                .trim()
+                .ifBlank {
+                    obj.optString("cover", obj.optString("pic", "")).trim()
+                }.takeIf { it.isNotBlank() }
         val owner = parseOwner(arc.optJSONObject("owner") ?: obj.optJSONObject("owner"))
         return VideoUgcSeasonEpisode(
             bvid = bvid,
@@ -660,7 +665,8 @@ internal class WebVideoMapper(
             val obj = arr.optJSONObject(i) ?: continue
             val quality = obj.optInt("quality", 0).takeIf { it > 0 } ?: continue
             val label =
-                obj.optString("new_description", obj.optString("display_desc", obj.optString("description", "")))
+                obj
+                    .optString("new_description", obj.optString("display_desc", obj.optString("description", "")))
                     .trim()
                     .takeIf { it.isNotBlank() }
             out += VideoSupportFormat(quality = quality, label = label)
@@ -710,13 +716,18 @@ internal class WebVideoMapper(
 
     private fun urlsOf(obj: JSONObject): List<String> {
         val out = ArrayList<String>(4)
-        obj.optString("baseUrl", obj.optString("base_url", obj.optString("url", "")))
+        obj
+            .optString("baseUrl", obj.optString("base_url", obj.optString("url", "")))
             .trim()
             .takeIf { it.isNotBlank() }
             ?.let { out += it }
         val backup = obj.optJSONArray("backupUrl") ?: obj.optJSONArray("backup_url") ?: JSONArray()
         for (i in 0 until backup.length()) {
-            backup.optString(i, "").trim().takeIf { it.isNotBlank() }?.let { out += it }
+            backup
+                .optString(i, "")
+                .trim()
+                .takeIf { it.isNotBlank() }
+                ?.let { out += it }
         }
         return out.distinct()
     }
@@ -760,7 +771,5 @@ internal class WebVideoMapper(
         return codecs.startsWith("dvhe") || codecs.startsWith("dvh1") || codecs.contains("dovi")
     }
 
-    private fun normalizeClipTimeToMs(value: Double): Long {
-        return if (value >= 10_000.0) value.toLong() else (value * 1000.0).toLong()
-    }
+    private fun normalizeClipTimeToMs(value: Double): Long = if (value >= 10_000.0) value.toLong() else (value * 1000.0).toLong()
 }

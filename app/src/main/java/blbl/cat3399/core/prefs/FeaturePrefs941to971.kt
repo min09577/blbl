@@ -1,9 +1,10 @@
 package blbl.cat3399.core.prefs
 
 import android.content.Context
-import android.content.SharedPreferences
 
-class FeaturePrefs941(context: Context) {
+class FeaturePrefs941(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_941", Context.MODE_PRIVATE)
 
     var v941near: Boolean
@@ -605,11 +606,11 @@ class FeaturePrefs941(context: Context) {
     var v950old: Boolean
         get() = prefs.getBoolean("v950old", false)
         set(value) = prefs.edit().putBoolean("v950old", value).apply()
-
 }
 
-
-class FeaturePrefs951(context: Context) {
+class FeaturePrefs951(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_951", Context.MODE_PRIVATE)
 
     var v951open: Boolean
@@ -1211,11 +1212,11 @@ class FeaturePrefs951(context: Context) {
     var v960pair: Boolean
         get() = prefs.getBoolean("v960pair", false)
         set(value) = prefs.edit().putBoolean("v960pair", value).apply()
-
 }
 
-
-class FeaturePrefs961(context: Context) {
+class FeaturePrefs961(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_961", Context.MODE_PRIVATE)
 
     var v961panel: Boolean
@@ -1817,11 +1818,11 @@ class FeaturePrefs961(context: Context) {
     var v970peak: Boolean
         get() = prefs.getBoolean("v970peak", false)
         set(value) = prefs.edit().putBoolean("v970peak", value).apply()
-
 }
 
-
-class FeaturePrefs971(context: Context) {
+class FeaturePrefs971(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_971", Context.MODE_PRIVATE)
 
     var v971pending: Boolean
@@ -2423,7 +2424,4 @@ class FeaturePrefs971(context: Context) {
     var v980pixel: Boolean
         get() = prefs.getBoolean("v980pixel", false)
         set(value) = prefs.edit().putBoolean("v980pixel", value).apply()
-
 }
-
-

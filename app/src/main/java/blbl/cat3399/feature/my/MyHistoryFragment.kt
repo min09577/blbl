@@ -44,7 +44,10 @@ import blbl.cat3399.ui.RefreshKeyHandler
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.launch
 
-class MyHistoryFragment : Fragment(), MyTabSwitchFocusTarget, RefreshKeyHandler {
+class MyHistoryFragment :
+    Fragment(),
+    MyTabSwitchFocusTarget,
+    RefreshKeyHandler {
     private enum class RefreshPresentation {
         ResetToServerOrder,
         PreserveCurrentOrder,
@@ -64,13 +67,20 @@ class MyHistoryFragment : Fragment(), MyTabSwitchFocusTarget, RefreshKeyHandler 
     private var dpadGridController: DpadGridController? = null
     private var viewportFillMonitor: GridViewportFillMonitor? = null
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?,
+    ): View {
         _binding = FragmentVideoGridBinding.inflate(inflater, container, false)
         AppLog.d("MyHistory", "onCreateView t=${SystemClock.uptimeMillis()}")
         return binding.root
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+    override fun onViewCreated(
+        view: View,
+        savedInstanceState: Bundle?,
+    ) {
         if (!::adapter.isInitialized) {
             val actionController =
                 VideoCardActionController(
@@ -112,7 +122,11 @@ class MyHistoryFragment : Fragment(), MyTabSwitchFocusTarget, RefreshKeyHandler 
         binding.recycler.clearOnScrollListeners()
         binding.recycler.addOnScrollListener(
             object : RecyclerView.OnScrollListener() {
-                override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
+                override fun onScrolled(
+                    recyclerView: RecyclerView,
+                    dx: Int,
+                    dy: Int,
+                ) {
                     if (dy <= 0) return
                     val s = paging.snapshot()
                     if (s.isLoading || s.endReached) return
@@ -135,9 +149,7 @@ class MyHistoryFragment : Fragment(), MyTabSwitchFocusTarget, RefreshKeyHandler 
                             return true
                         }
 
-                        override fun onLeftEdge(): Boolean {
-                            return switchToPrevMyTabFromContentEdge()
-                        }
+                        override fun onLeftEdge(): Boolean = switchToPrevMyTabFromContentEdge()
 
                         override fun onRightEdge() {
                             switchToNextMyTabFromContentEdge()
@@ -371,7 +383,6 @@ class MyHistoryFragment : Fragment(), MyTabSwitchFocusTarget, RefreshKeyHandler 
                     dpadGridController?.consumePendingFocusAfterLoadMore()
                     viewportFillMonitor?.scheduleCheck()
                 }
-
             } catch (t: Throwable) {
                 if (t is CancellationException) throw t
                 if (preserveCurrentOrderRefresh) resetLoadedKeysFromAdapter()

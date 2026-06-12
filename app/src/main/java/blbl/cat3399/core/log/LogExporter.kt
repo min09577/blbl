@@ -88,7 +88,7 @@ object LogExporter {
     private fun buildExportFileName(nowMs: Long): String {
         val sdf = SimpleDateFormat("yyyyMMdd_HHmmss", Locale.US)
         val ts = runCatching { sdf.format(Date(nowMs)) }.getOrNull() ?: nowMs.toString()
-        return "blbl_logs_${ts}.zip"
+        return "blbl_logs_$ts.zip"
     }
 
     private fun writeZip(
@@ -149,8 +149,10 @@ object LogExporter {
     ): ExportInput {
         val appContext = context.applicationContext
         val logFiles =
-            AppLog.logDir(appContext)
-                .listFiles()?.asSequence()
+            AppLog
+                .logDir(appContext)
+                .listFiles()
+                ?.asSequence()
                 ?.filter { it.isFile && it.name.endsWith(".log") }
                 ?.sortedBy { it.lastModified() }
                 ?.toList()

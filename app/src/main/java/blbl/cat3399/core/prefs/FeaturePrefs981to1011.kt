@@ -1,9 +1,10 @@
 package blbl.cat3399.core.prefs
 
 import android.content.Context
-import android.content.SharedPreferences
 
-class FeaturePrefs981(context: Context) {
+class FeaturePrefs981(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_981", Context.MODE_PRIVATE)
 
     var v981place: Boolean
@@ -605,11 +606,11 @@ class FeaturePrefs981(context: Context) {
     var v990pre: Boolean
         get() = prefs.getBoolean("v990pre", false)
         set(value) = prefs.edit().putBoolean("v990pre", value).apply()
-
 }
 
-
-class FeaturePrefs991(context: Context) {
+class FeaturePrefs991(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_991", Context.MODE_PRIVATE)
 
     var v991precision: Boolean
@@ -1211,11 +1212,11 @@ class FeaturePrefs991(context: Context) {
     var v1000process: Boolean
         get() = prefs.getBoolean("v1000process", false)
         set(value) = prefs.edit().putBoolean("v1000process", value).apply()
-
 }
 
-
-class FeaturePrefs1001(context: Context) {
+class FeaturePrefs1001(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1001", Context.MODE_PRIVATE)
 
     var v1001produce: Boolean
@@ -1817,11 +1818,11 @@ class FeaturePrefs1001(context: Context) {
     var v1010push: Boolean
         get() = prefs.getBoolean("v1010push", false)
         set(value) = prefs.edit().putBoolean("v1010push", value).apply()
-
 }
 
-
-class FeaturePrefs1011(context: Context) {
+class FeaturePrefs1011(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1011", Context.MODE_PRIVATE)
 
     var v1011query: Boolean
@@ -2423,7 +2424,4 @@ class FeaturePrefs1011(context: Context) {
     var v1020record: Boolean
         get() = prefs.getBoolean("v1020record", false)
         set(value) = prefs.edit().putBoolean("v1020record", value).apply()
-
 }
-
-

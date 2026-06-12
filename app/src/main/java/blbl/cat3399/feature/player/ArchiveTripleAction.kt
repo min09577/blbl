@@ -20,15 +20,14 @@ data class ArchiveTripleActionResult(
     val changedParts: Set<String>,
     val warnings: List<String>,
 ) {
-    fun toastMessage(): String {
-        return when {
+    fun toastMessage(): String =
+        when {
             warnings.isEmpty() && state.isSatisfied -> "一键三连成功"
             warnings.isEmpty() && changedParts.isNotEmpty() -> "已完成${changedParts.joinToString("、")}"
             changedParts.isNotEmpty() -> "已完成${changedParts.joinToString("、")}，${warnings.joinToString("；")}"
             warnings.isNotEmpty() -> warnings.joinToString("；")
             else -> "操作失败"
         }
-    }
 }
 
 suspend fun executeArchiveTripleAction(
@@ -161,11 +160,7 @@ suspend fun executeArchiveTripleAction(
     )
 }
 
-fun pickTripleActionFavFolder(
-    folders: List<BiliApi.FavFolderWithState>,
-): BiliApi.FavFolderWithState? {
-    return folders.firstOrNull { it.title == "默认收藏夹" } ?: folders.firstOrNull()
-}
+fun pickTripleActionFavFolder(folders: List<BiliApi.FavFolderWithState>): BiliApi.FavFolderWithState? = folders.firstOrNull { it.title == "默认收藏夹" } ?: folders.firstOrNull()
 
 fun Throwable.userMessage(defaultMessage: String): String {
     val apiError = this as? BiliApiException

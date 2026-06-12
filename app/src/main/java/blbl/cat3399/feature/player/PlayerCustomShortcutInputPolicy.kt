@@ -9,14 +9,10 @@ internal object PlayerCustomShortcutInputPolicy {
         hasInteractiveOsd: Boolean,
         hasSidePanel: Boolean,
         hasBottomCardPanel: Boolean,
-    ): Boolean {
-        return !hasInteractiveOsd && !hasSidePanel && !hasBottomCardPanel
-    }
+    ): Boolean = !hasInteractiveOsd && !hasSidePanel && !hasBottomCardPanel
 
     fun canDispatchInLive(
         hasInteractiveOsd: Boolean,
         hasSettingsPanel: Boolean,
-    ): Boolean {
-        return !hasInteractiveOsd && !hasSettingsPanel
-    }
+    ): Boolean = !hasInteractiveOsd && !hasSettingsPanel
 }

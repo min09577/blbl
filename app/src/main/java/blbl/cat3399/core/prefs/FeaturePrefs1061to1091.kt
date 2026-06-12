@@ -1,9 +1,10 @@
 package blbl.cat3399.core.prefs
 
 import android.content.Context
-import android.content.SharedPreferences
 
-class FeaturePrefs1061(context: Context) {
+class FeaturePrefs1061(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1061", Context.MODE_PRIVATE)
 
     var v1061send: Boolean
@@ -605,11 +606,11 @@ class FeaturePrefs1061(context: Context) {
     var v1070shift: Boolean
         get() = prefs.getBoolean("v1070shift", false)
         set(value) = prefs.edit().putBoolean("v1070shift", value).apply()
-
 }
 
-
-class FeaturePrefs1071(context: Context) {
+class FeaturePrefs1071(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1071", Context.MODE_PRIVATE)
 
     var v1071short: Boolean
@@ -1211,11 +1212,11 @@ class FeaturePrefs1071(context: Context) {
     var v1080slide: Boolean
         get() = prefs.getBoolean("v1080slide", false)
         set(value) = prefs.edit().putBoolean("v1080slide", value).apply()
-
 }
 
-
-class FeaturePrefs1081(context: Context) {
+class FeaturePrefs1081(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1081", Context.MODE_PRIVATE)
 
     var v1081slow: Boolean
@@ -1817,11 +1818,11 @@ class FeaturePrefs1081(context: Context) {
     var v1090spot: Boolean
         get() = prefs.getBoolean("v1090spot", false)
         set(value) = prefs.edit().putBoolean("v1090spot", value).apply()
-
 }
 
-
-class FeaturePrefs1091(context: Context) {
+class FeaturePrefs1091(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1091", Context.MODE_PRIVATE)
 
     var v1091stack: Boolean
@@ -2423,7 +2424,4 @@ class FeaturePrefs1091(context: Context) {
     var v1100strict: Boolean
         get() = prefs.getBoolean("v1100strict", false)
         set(value) = prefs.edit().putBoolean("v1100strict", value).apply()
-
 }
-
-

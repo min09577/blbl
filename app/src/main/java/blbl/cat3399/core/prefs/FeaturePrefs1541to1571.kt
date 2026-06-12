@@ -1,9 +1,10 @@
 package blbl.cat3399.core.prefs
 
 import android.content.Context
-import android.content.SharedPreferences
 
-class FeaturePrefs1541(context: Context) {
+class FeaturePrefs1541(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1541", Context.MODE_PRIVATE)
 
     var v1541hood: Boolean
@@ -605,11 +606,11 @@ class FeaturePrefs1541(context: Context) {
     var v1550hurt: Boolean
         get() = prefs.getBoolean("v1550hurt", false)
         set(value) = prefs.edit().putBoolean("v1550hurt", value).apply()
-
 }
 
-
-class FeaturePrefs1551(context: Context) {
+class FeaturePrefs1551(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1551", Context.MODE_PRIVATE)
 
     var v1551husband: Boolean
@@ -1211,11 +1212,11 @@ class FeaturePrefs1551(context: Context) {
     var v1560infant: Boolean
         get() = prefs.getBoolean("v1560infant", false)
         set(value) = prefs.edit().putBoolean("v1560infant", value).apply()
-
 }
 
-
-class FeaturePrefs1561(context: Context) {
+class FeaturePrefs1561(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1561", Context.MODE_PRIVATE)
 
     var v1561inflict: Boolean
@@ -1817,11 +1818,11 @@ class FeaturePrefs1561(context: Context) {
     var v1570invite: Boolean
         get() = prefs.getBoolean("v1570invite", false)
         set(value) = prefs.edit().putBoolean("v1570invite", value).apply()
-
 }
 
-
-class FeaturePrefs1571(context: Context) {
+class FeaturePrefs1571(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1571", Context.MODE_PRIVATE)
 
     var v1571involve: Boolean
@@ -2423,7 +2424,4 @@ class FeaturePrefs1571(context: Context) {
     var v1580judge: Boolean
         get() = prefs.getBoolean("v1580judge", false)
         set(value) = prefs.edit().putBoolean("v1580judge", value).apply()
-
 }
-
-

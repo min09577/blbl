@@ -1,16 +1,16 @@
 package blbl.cat3399.ui
 
-import android.os.Bundle
 import android.content.Intent
+import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.DialogFragment
-import androidx.fragment.app.FragmentManager
-import androidx.lifecycle.lifecycleScope
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
+import androidx.fragment.app.DialogFragment
+import androidx.fragment.app.FragmentManager
+import androidx.lifecycle.lifecycleScope
 import blbl.cat3399.R
 import blbl.cat3399.core.api.BiliApi
 import blbl.cat3399.core.image.ImageLoader
@@ -41,7 +41,10 @@ class UserInfoDialogFragment : DialogFragment() {
         return binding.root
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+    override fun onViewCreated(
+        view: View,
+        savedInstanceState: Bundle?,
+    ) {
         binding.root.setOnClickListener { dismissAllowingStateLoss() }
         binding.card.setOnClickListener { /* consume */ }
         binding.btnFollowing.setOnClickListener {
@@ -102,7 +105,9 @@ class UserInfoDialogFragment : DialogFragment() {
                 val b = _binding ?: return@launch
                 b.tvName.text = name
                 b.tvMid.text = getString(R.string.label_uid_fmt, mid.toString())
-                val normalizedUrl = blbl.cat3399.core.image.ImageUrl.avatar(avatarUrl)
+                val normalizedUrl =
+                    blbl.cat3399.core.image.ImageUrl
+                        .avatar(avatarUrl)
                 ImageLoader.loadInto(b.ivAvatar, normalizedUrl)
 
                 b.tvFollowing.text = (stat?.following ?: 0L).toString()
@@ -147,7 +152,10 @@ class UserInfoDialogFragment : DialogFragment() {
         return if (v >= 1000) String.format(Locale.getDefault(), "%.0f", v) else String.format(Locale.getDefault(), "%.1f", v)
     }
 
-    private fun parseInt(obj: JSONObject?, key: String): Int? {
+    private fun parseInt(
+        obj: JSONObject?,
+        key: String,
+    ): Int? {
         val any = obj?.opt(key) ?: return null
         return when (any) {
             is Number -> any.toInt()
@@ -156,7 +164,10 @@ class UserInfoDialogFragment : DialogFragment() {
         }
     }
 
-    private fun applyImmersive(window: android.view.Window, enabled: Boolean) {
+    private fun applyImmersive(
+        window: android.view.Window,
+        enabled: Boolean,
+    ) {
         WindowCompat.setDecorFitsSystemWindows(window, !enabled)
         val controller = WindowInsetsControllerCompat(window, window.decorView)
         if (enabled) {

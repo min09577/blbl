@@ -41,7 +41,8 @@ object ApkUpdater {
 
     private val okHttpLazy: Lazy<OkHttpClient> =
         lazy {
-            OkHttpClient.Builder()
+            OkHttpClient
+                .Builder()
                 .dns(ipv4OnlyDns { BiliClient.prefs.ipv4OnlyEnabled })
                 .connectTimeout(12, TimeUnit.SECONDS)
                 .readTimeout(60, TimeUnit.SECONDS)
@@ -100,9 +101,7 @@ object ApkUpdater {
         return left.coerceAtLeast(0)
     }
 
-    suspend fun fetchLatestUpdate(
-        url: String = TEST_CHANGELOG_URL,
-    ): RemoteUpdate {
+    suspend fun fetchLatestUpdate(url: String = TEST_CHANGELOG_URL): RemoteUpdate {
         return withContext(Dispatchers.IO) {
             var lastError: Throwable? = null
             val maxAttempts = 3
@@ -126,7 +125,8 @@ object ApkUpdater {
 
     private fun fetchLatestUpdateOnce(url: String): RemoteUpdate {
         val req =
-            Request.Builder()
+            Request
+                .Builder()
                 .url(url)
                 .header("Cache-Control", "no-cache")
                 .get()
@@ -151,7 +151,8 @@ object ApkUpdater {
 
         val lines = normalized.lines()
         val allHeadings =
-            lines.withIndex()
+            lines
+                .withIndex()
                 .mapNotNull { (index, line) ->
                     parseVersionHeading(line)?.let { heading -> index to heading }
                 }
@@ -162,7 +163,8 @@ object ApkUpdater {
         return headings.mapIndexed { index, (headingIndex, heading) ->
             val nextHeadingIndex = headings.getOrNull(index + 1)?.first ?: lines.size
             val sectionLines =
-                lines.subList(headingIndex + 1, nextHeadingIndex)
+                lines
+                    .subList(headingIndex + 1, nextHeadingIndex)
                     .dropLastWhile { it.isBlank() }
             val changelog =
                 sectionLines
@@ -189,15 +191,19 @@ object ApkUpdater {
 
     private fun parseVersionHeading(line: String): VersionHeading? {
         val trimmed = line.trim()
-        val match = Regex("""^(#{1,6})\s+\[?v?([0-9]+(?:\.[0-9]+)*(?:[-+][A-Za-z0-9_.-]+)?)\]?(?:\s+.*)?$""").matchEntire(trimmed)
-            ?: return null
+        val match =
+            Regex("""^(#{1,6})\s+\[?v?([0-9]+(?:\.[0-9]+)*(?:[-+][A-Za-z0-9_.-]+)?)\]?(?:\s+.*)?$""").matchEntire(trimmed)
+                ?: return null
         val level = match.groupValues[1].length
         val versionName = match.groupValues[2].trim()
         if (parseVersion(versionName) == null) return null
         return VersionHeading(level = level, versionName = versionName)
     }
 
-    fun isRemoteNewer(remoteVersionName: String, currentVersionName: String = BuildConfig.VERSION_NAME): Boolean {
+    fun isRemoteNewer(
+        remoteVersionName: String,
+        currentVersionName: String = BuildConfig.VERSION_NAME,
+    ): Boolean {
         val remote = parseVersion(remoteVersionName) ?: return false
         val current = parseVersion(currentVersionName) ?: return remoteVersionName.trim() != currentVersionName.trim()
         return compareVersion(remote, current) > 0
@@ -216,7 +222,12 @@ object ApkUpdater {
         runCatching { part.delete() }
         runCatching { target.delete() }
 
-        val req = Request.Builder().url(url).get().build()
+        val req =
+            Request
+                .Builder()
+                .url(url)
+                .get()
+                .build()
         val call = okHttp.newCall(req)
         val res = call.await()
         res.use { r ->
@@ -254,7 +265,9 @@ object ApkUpdater {
                             // UI progress: at most 5 updates per second.
                             if (nowMs - lastEmitAtMs >= 200) {
                                 lastEmitAtMs = nowMs
-                                onProgress(Progress.Downloading(downloadedBytes = downloaded, totalBytes = total, bytesPerSecond = bytesPerSecond))
+                                onProgress(
+                                    Progress.Downloading(downloadedBytes = downloaded, totalBytes = total, bytesPerSecond = bytesPerSecond),
+                                )
                             }
                         }
                         output.fd.sync()
@@ -268,7 +281,10 @@ object ApkUpdater {
         return target
     }
 
-    fun installApk(context: Context, apkFile: File) {
+    fun installApk(
+        context: Context,
+        apkFile: File,
+    ) {
         val uri = installUriFor(context, apkFile)
         val intent =
             Intent(Intent.ACTION_VIEW).apply {
@@ -282,15 +298,17 @@ object ApkUpdater {
     }
 
     @SuppressLint("SetWorldReadable")
-    private fun installUriFor(context: Context, apkFile: File): Uri {
-        return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+    private fun installUriFor(
+        context: Context,
+        apkFile: File,
+    ): Uri =
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
             val authority = "${context.packageName}.fileprovider"
             FileProvider.getUriForFile(context, authority, apkFile)
         } else {
             apkFile.setReadable(true, false)
             Uri.fromFile(apkFile)
         }
-    }
 
     @Suppress("DEPRECATION")
     private fun grantInstallerReadPermissions(
@@ -335,7 +353,10 @@ object ApkUpdater {
         return nums
     }
 
-    private fun compareVersion(a: List<Int>, b: List<Int>): Int {
+    private fun compareVersion(
+        a: List<Int>,
+        b: List<Int>,
+    ): Int {
         val max = maxOf(a.size, b.size)
         for (i in 0 until max) {
             val ai = a.getOrElse(i) { 0 }

@@ -2,16 +2,15 @@
 
 package blbl.cat3399.feature.player
 
-import android.content.Intent
-import android.media.AudioManager
-import android.net.Uri
 import android.app.Activity
 import android.app.Application
+import android.content.Intent
 import android.graphics.SurfaceTexture
+import android.media.AudioManager
+import android.net.Uri
 import android.os.Bundle
 import android.os.Looper
 import android.os.SystemClock
-import android.util.TypedValue
 import android.view.FocusFinder
 import android.view.KeyEvent
 import android.view.Surface
@@ -19,7 +18,6 @@ import android.view.SurfaceHolder
 import android.view.SurfaceView
 import android.view.TextureView
 import android.view.View
-import android.view.ViewGroup.MarginLayoutParams
 import android.widget.FrameLayout
 import android.widget.SeekBar
 import androidx.constraintlayout.widget.ConstraintSet
@@ -31,14 +29,11 @@ import androidx.media3.common.MediaItem
 import androidx.media3.common.MimeTypes
 import androidx.media3.common.PlaybackException
 import androidx.media3.common.Player
-import androidx.media3.common.VideoSize
-import androidx.media3.ui.PlayerView
-import androidx.media3.ui.SubtitleView
-import androidx.media3.datasource.DefaultDataSource
 import androidx.media3.datasource.DataSource
 import androidx.media3.datasource.DataSpec
-import androidx.media3.datasource.TransferListener
+import androidx.media3.datasource.DefaultDataSource
 import androidx.media3.datasource.HttpDataSource
+import androidx.media3.datasource.TransferListener
 import androidx.media3.datasource.okhttp.OkHttpDataSource
 import androidx.media3.exoplayer.DecoderReuseEvaluation
 import androidx.media3.exoplayer.ExoPlayer
@@ -48,7 +43,6 @@ import androidx.media3.exoplayer.source.DefaultMediaSourceFactory
 import androidx.media3.exoplayer.source.MediaSource
 import androidx.media3.exoplayer.source.MergingMediaSource
 import androidx.media3.ui.AspectRatioFrameLayout
-import androidx.media3.ui.CaptionStyleCompat
 import blbl.cat3399.BlblApp
 import blbl.cat3399.R
 import blbl.cat3399.core.api.BiliApi
@@ -60,10 +54,8 @@ import blbl.cat3399.core.api.video.VideoMediaRequestProfile
 import blbl.cat3399.core.api.video.VideoPlayKind
 import blbl.cat3399.core.api.video.VideoPlayRequest
 import blbl.cat3399.core.api.video.VideoPlayStream
-import blbl.cat3399.core.api.video.VideoSubtitle
-import blbl.cat3399.core.api.video.VideoTrackInfo
 import blbl.cat3399.core.api.video.VideoTrack
-import blbl.cat3399.core.api.SponsorBlockApi
+import blbl.cat3399.core.api.video.VideoTrackInfo
 import blbl.cat3399.core.log.AppLog
 import blbl.cat3399.core.model.DanmakuShield
 import blbl.cat3399.core.model.VideoCard
@@ -72,46 +64,41 @@ import blbl.cat3399.core.prefs.AppPrefs
 import blbl.cat3399.core.ui.ActivityStackLimiter
 import blbl.cat3399.core.ui.AppToast
 import blbl.cat3399.core.ui.BaseActivity
-import blbl.cat3399.core.ui.DpadGridController
 import blbl.cat3399.core.ui.DoubleBackToExitHandler
+import blbl.cat3399.core.ui.DpadGridController
 import blbl.cat3399.core.ui.FocusReturn
 import blbl.cat3399.core.ui.FocusTreeUtils
 import blbl.cat3399.core.ui.Immersive
 import blbl.cat3399.core.ui.popup.PopupHost
-import blbl.cat3399.core.util.Format as BlblFormat
+import blbl.cat3399.databinding.ActivityPlayerBinding
 import blbl.cat3399.feature.cast.DlnaHelper
 import blbl.cat3399.feature.cast.initCastButton
 import blbl.cat3399.feature.my.BangumiDetailActivity
-import blbl.cat3399.feature.player.danmaku.DanmakuSessionSettings
 import blbl.cat3399.feature.player.danmaku.DanmakuFontWeight
 import blbl.cat3399.feature.player.danmaku.DanmakuLaneDensity
+import blbl.cat3399.feature.player.danmaku.DanmakuSessionSettings
 import blbl.cat3399.feature.player.engine.BlblPlayerEngine
 import blbl.cat3399.feature.player.engine.ExoPlayerEngine
 import blbl.cat3399.feature.player.engine.IjkPlayerEngine
 import blbl.cat3399.feature.player.engine.IjkPlayerPlugin
 import blbl.cat3399.feature.player.engine.IjkPlayerPluginUi
-import blbl.cat3399.feature.player.engine.PlayerEngineKind
 import blbl.cat3399.feature.player.engine.PlaybackSource
-import blbl.cat3399.feature.settings.SettingsActivity
+import blbl.cat3399.feature.player.engine.PlayerEngineKind
 import blbl.cat3399.feature.video.VideoDetailActivity
-import blbl.cat3399.databinding.ActivityPlayerBinding
 import kotlinx.coroutines.CancellationException
-import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.CoroutineExceptionHandler
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.NonCancellable
-import kotlinx.coroutines.async
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.isActive
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import org.json.JSONArray
-import org.json.JSONObject
 import java.io.File
 import java.lang.ref.WeakReference
 import java.util.Locale
 import kotlin.math.abs
-import kotlin.math.roundToInt
+import blbl.cat3399.core.util.Format as BlblFormat
 
 class PlayerActivity : BaseActivity() {
     override fun shouldRecreateOnUiScaleChange(): Boolean = true
@@ -133,8 +120,10 @@ class PlayerActivity : BaseActivity() {
     internal var pendingIntentResumeCid: Long? = null
     internal var pendingIntentResumeEpId: Long? = null
     internal val sidePanelFocusReturn = FocusReturn()
+
     // v4.13: DLNA投屏设备
     internal var castDevice: DlnaHelper.DlnaDevice? = null
+
     // v4.4: Smart quality monitoring
     private val smartQualityController = SmartQualityController(this)
     internal val commentImageViewerFocusReturn = FocusReturn()
@@ -341,6 +330,7 @@ class PlayerActivity : BaseActivity() {
     private var exitCleanupReason: String? = null
     private var exitTraceStartAtMs: Long = 0L
     private var exitTraceStartTrigger: String? = null
+
     @Volatile
     private var exitTracePauseAtMs: Long = 0L
 
@@ -351,10 +341,12 @@ class PlayerActivity : BaseActivity() {
     private var exitTraceDestroyAtMs: Long = 0L
 
     private var exitTraceStallWatchJob: kotlinx.coroutines.Job? = null
+
     @Volatile
     private var exitTraceStallSampled: Boolean = false
     private var exitTraceNavCallbacks: Application.ActivityLifecycleCallbacks? = null
     private var exitTraceNavTarget: WeakReference<Activity>? = null
+
     @Volatile
     private var exitTraceNavTargetResumedLogged: Boolean = false
 
@@ -366,6 +358,7 @@ class PlayerActivity : BaseActivity() {
     private var resumeAfterDecoderReleasePositionMs: Long = 0L
     private var resumeAfterDecoderReleasePlayWhenReady: Boolean = true
     private var resumeExpiredUrlReloadArmed: Boolean = false
+
     // v6.2: 播放开始时显示画质信息
     private var qualityInfoShown: Boolean = false
     private var resumeExpiredUrlReloadAttempted: Boolean = false
@@ -380,9 +373,7 @@ class PlayerActivity : BaseActivity() {
     internal var currentVideoContentWidth: Int? = null
     internal var currentVideoContentHeight: Int? = null
 
-    private fun isPlayerTeardownInProgress(): Boolean {
-        return exitCleanupRequested || isFinishing || isDestroyed || decoderReleaseRequestedOnStop || resumeAfterDecoderRelease
-    }
+    private fun isPlayerTeardownInProgress(): Boolean = exitCleanupRequested || isFinishing || isDestroyed || decoderReleaseRequestedOnStop || resumeAfterDecoderRelease
 
     private fun shouldSuppressPlayerError(error: Throwable): Boolean {
         if (!isPlayerTeardownInProgress()) return false
@@ -412,7 +403,10 @@ class PlayerActivity : BaseActivity() {
         )
     }
 
-    private fun exitTraceLog(stage: String, extra: String = "") {
+    private fun exitTraceLog(
+        stage: String,
+        extra: String = "",
+    ) {
         val now = SystemClock.elapsedRealtime()
         val dtText =
             if (exitTraceStartAtMs > 0L) {
@@ -461,7 +455,10 @@ class PlayerActivity : BaseActivity() {
             }
     }
 
-    private fun captureThreadStackTop(thread: Thread, maxFrames: Int): String {
+    private fun captureThreadStackTop(
+        thread: Thread,
+        maxFrames: Int,
+    ): String {
         val frames =
             runCatching { thread.stackTrace.toList() }
                 .getOrDefault(emptyList())
@@ -472,8 +469,7 @@ class PlayerActivity : BaseActivity() {
                     c.startsWith("java.lang.Thread") ||
                         c.startsWith("dalvik.system.VMStack") ||
                         c.startsWith("kotlinx.coroutines")
-                }
-                .take(maxFrames.coerceAtLeast(1))
+                }.take(maxFrames.coerceAtLeast(1))
                 .toList()
 
         if (frames.isEmpty()) return "(empty)"
@@ -490,11 +486,22 @@ class PlayerActivity : BaseActivity() {
 
         val cb =
             object : Application.ActivityLifecycleCallbacks {
-                override fun onActivityCreated(activity: Activity, savedInstanceState: Bundle?) = Unit
+                override fun onActivityCreated(
+                    activity: Activity,
+                    savedInstanceState: Bundle?,
+                ) = Unit
+
                 override fun onActivityStarted(activity: Activity) = Unit
+
                 override fun onActivityPaused(activity: Activity) = Unit
+
                 override fun onActivityStopped(activity: Activity) = Unit
-                override fun onActivitySaveInstanceState(activity: Activity, outState: Bundle) = Unit
+
+                override fun onActivitySaveInstanceState(
+                    activity: Activity,
+                    outState: Bundle,
+                ) = Unit
+
                 override fun onActivityDestroyed(activity: Activity) = Unit
 
                 override fun onActivityResumed(activity: Activity) {
@@ -547,11 +554,16 @@ class PlayerActivity : BaseActivity() {
         exitTraceLog("nav:callbacks:unregister", "reason=$reason")
     }
 
-    internal class PlaybackTrace(private val id: String) {
+    internal class PlaybackTrace(
+        private val id: String,
+    ) {
         private val startMs = SystemClock.elapsedRealtime()
         private var lastMs = startMs
 
-        fun log(stage: String, extra: String = "") {
+        fun log(
+            stage: String,
+            extra: String = "",
+        ) {
             val now = SystemClock.elapsedRealtime()
             val total = now - startMs
             val delta = now - lastMs
@@ -641,7 +653,8 @@ class PlayerActivity : BaseActivity() {
                     apply()
                 }
             }
-        } catch (_: Exception) {}
+        } catch (_: Exception) {
+        }
 
         exitTraceLog("exitCleanup:detachView", "deferred=1")
 
@@ -734,7 +747,13 @@ class PlayerActivity : BaseActivity() {
         val playerInflater = PlayerOsdSizing.cloneInflater(this, layoutInflater)
         val root =
             playerInflater.inflate(
-                if (prefs.playerRenderViewType == AppPrefs.PLAYER_RENDER_VIEW_TEXTURE_VIEW) R.layout.activity_player_texture else R.layout.activity_player,
+                if (prefs.playerRenderViewType ==
+                    AppPrefs.PLAYER_RENDER_VIEW_TEXTURE_VIEW
+                ) {
+                    R.layout.activity_player_texture
+                } else {
+                    R.layout.activity_player
+                },
                 null,
             )
         binding = ActivityPlayerBinding.bind(root)
@@ -780,7 +799,8 @@ class PlayerActivity : BaseActivity() {
         val aidExtra = intent.getLongExtra(EXTRA_AID, -1L).takeIf { it > 0 }
         val seasonIdExtra = intent.getLongExtra(EXTRA_SEASON_ID, -1L).takeIf { it > 0 }
         val startPositionMsExtra =
-            intent.getLongExtra(EXTRA_START_POSITION_MS, -1L)
+            intent
+                .getLongExtra(EXTRA_START_POSITION_MS, -1L)
                 .takeIf { intent.hasExtra(EXTRA_START_POSITION_MS) && it > 0L }
         pageListToken = intent.getStringExtra(EXTRA_PLAYLIST_TOKEN)?.trim()?.takeIf { it.isNotBlank() }
         pageListIndex = intent.getIntExtra(EXTRA_PLAYLIST_INDEX, -1)
@@ -840,7 +860,8 @@ class PlayerActivity : BaseActivity() {
         }
 
         pendingStartPositionMs =
-            intent.getLongExtra(EXTRA_ENGINE_SWITCH_RESUME_POSITION_MS, -1L)
+            intent
+                .getLongExtra(EXTRA_ENGINE_SWITCH_RESUME_POSITION_MS, -1L)
                 .takeIf { intent.hasExtra(EXTRA_ENGINE_SWITCH_RESUME_POSITION_MS) && it >= 0L }
         pendingStartPlayWhenReady =
             if (intent.hasExtra(EXTRA_ENGINE_SWITCH_RESUME_PLAY_WHEN_READY)) {
@@ -849,60 +870,64 @@ class PlayerActivity : BaseActivity() {
                 null
             }
         val sessionOverrideJson =
-            intent.getStringExtra(EXTRA_ENGINE_SWITCH_SESSION_JSON)
+            intent
+                .getStringExtra(EXTRA_ENGINE_SWITCH_SESSION_JSON)
                 ?.trim()
                 ?.takeIf { it.isNotBlank() }
 
-        session = PlayerSessionSettings(
-            playbackSpeed = prefs.playerSpeed,
-            preferCodec = prefs.playerPreferredCodec,
-            preferAudioId = prefs.playerPreferredAudioId,
-            preferredQn = prefs.playerPreferredQn,
-            targetQn = 0,
-            playbackModeOverride = null,
-            subtitleEnabled = prefs.subtitleEnabledDefault,
-            subtitleLangOverride = null,
-            subtitleTextSizeSp = prefs.subtitleTextSizeSp,
-            subtitleBottomPaddingFraction = prefs.subtitleBottomPaddingFraction,
-            subtitleBackgroundOpacity = prefs.subtitleBackgroundOpacity,
-            audioBalanceLevel = AudioBalanceLevel.fromPrefValue(prefs.playerAudioBalanceLevel),
-            persistentBottomProgressEnabled = prefs.playerPersistentBottomProgressEnabled,
-            danmaku = DanmakuSessionSettings(
-                enabled = prefs.danmakuEnabled,
-                opacity = prefs.danmakuOpacity,
-                textSizeSp = prefs.danmakuTextSizeSp,
-                fontWeight = DanmakuFontWeight.fromPrefValue(prefs.danmakuFontWeight),
-                strokeWidthPx = prefs.danmakuStrokeWidthPx,
-                strokeColor = prefs.danmakuStrokeColor, // v12.23: 描边颜色
-                speedLevel = prefs.danmakuSpeed,
-                area = prefs.danmakuArea,
-                laneDensity = if (prefs.danmakuAutoDensity) {
-                    // v12.7: 弹幕密度自适应 - 根据视频时长调整密度
-                    val durationMs = currentViewDurationMs ?: 0L
-                    when {
-                        durationMs <= 60_000L -> DanmakuLaneDensity.Dense       // 短视频：密集
-                        durationMs <= 300_000L -> DanmakuLaneDensity.Standard   // 中等视频：标准
-                        durationMs <= 600_000L -> DanmakuLaneDensity.Sparse     // 较长视频：稀疏
-                        else -> DanmakuLaneDensity.VerySparse                   // 长视频：极疏
-                    }
-                } else {
-                    DanmakuLaneDensity.fromPrefValue(prefs.danmakuLaneDensity)
-                },
-                followBiliShield = prefs.danmakuFollowBiliShield,
-                showHighLikeIcon = prefs.danmakuShowHighLikeIcon,
-                aiShieldEnabled = prefs.danmakuAiShieldEnabled,
-                aiShieldLevel = prefs.danmakuAiShieldLevel,
-                allowScroll = prefs.danmakuAllowScroll,
-                allowTop = prefs.danmakuAllowTop,
-                allowBottom = prefs.danmakuAllowBottom,
-                allowColor = prefs.danmakuAllowColor,
-                allowSpecial = prefs.danmakuAllowSpecial,
-            ),
-            debugEnabled = prefs.playerDebugEnabled,
-            engineKind = PlayerEngineKind.fromPrefValue(prefs.playerEngineKind),
-            videoRotation = prefs.videoRotation, // v12.14: 视频画面旋转
-            videoMirror = prefs.videoMirror, // v12.15: 视频画面镜像
-        )
+        session =
+            PlayerSessionSettings(
+                playbackSpeed = prefs.playerSpeed,
+                preferCodec = prefs.playerPreferredCodec,
+                preferAudioId = prefs.playerPreferredAudioId,
+                preferredQn = prefs.playerPreferredQn,
+                targetQn = 0,
+                playbackModeOverride = null,
+                subtitleEnabled = prefs.subtitleEnabledDefault,
+                subtitleLangOverride = null,
+                subtitleTextSizeSp = prefs.subtitleTextSizeSp,
+                subtitleBottomPaddingFraction = prefs.subtitleBottomPaddingFraction,
+                subtitleBackgroundOpacity = prefs.subtitleBackgroundOpacity,
+                audioBalanceLevel = AudioBalanceLevel.fromPrefValue(prefs.playerAudioBalanceLevel),
+                persistentBottomProgressEnabled = prefs.playerPersistentBottomProgressEnabled,
+                danmaku =
+                    DanmakuSessionSettings(
+                        enabled = prefs.danmakuEnabled,
+                        opacity = prefs.danmakuOpacity,
+                        textSizeSp = prefs.danmakuTextSizeSp,
+                        fontWeight = DanmakuFontWeight.fromPrefValue(prefs.danmakuFontWeight),
+                        strokeWidthPx = prefs.danmakuStrokeWidthPx,
+                        strokeColor = prefs.danmakuStrokeColor, // v12.23: 描边颜色
+                        speedLevel = prefs.danmakuSpeed,
+                        area = prefs.danmakuArea,
+                        laneDensity =
+                            if (prefs.danmakuAutoDensity) {
+                                // v12.7: 弹幕密度自适应 - 根据视频时长调整密度
+                                val durationMs = currentViewDurationMs ?: 0L
+                                when {
+                                    durationMs <= 60_000L -> DanmakuLaneDensity.Dense // 短视频：密集
+                                    durationMs <= 300_000L -> DanmakuLaneDensity.Standard // 中等视频：标准
+                                    durationMs <= 600_000L -> DanmakuLaneDensity.Sparse // 较长视频：稀疏
+                                    else -> DanmakuLaneDensity.VerySparse // 长视频：极疏
+                                }
+                            } else {
+                                DanmakuLaneDensity.fromPrefValue(prefs.danmakuLaneDensity)
+                            },
+                        followBiliShield = prefs.danmakuFollowBiliShield,
+                        showHighLikeIcon = prefs.danmakuShowHighLikeIcon,
+                        aiShieldEnabled = prefs.danmakuAiShieldEnabled,
+                        aiShieldLevel = prefs.danmakuAiShieldLevel,
+                        allowScroll = prefs.danmakuAllowScroll,
+                        allowTop = prefs.danmakuAllowTop,
+                        allowBottom = prefs.danmakuAllowBottom,
+                        allowColor = prefs.danmakuAllowColor,
+                        allowSpecial = prefs.danmakuAllowSpecial,
+                    ),
+                debugEnabled = prefs.playerDebugEnabled,
+                engineKind = PlayerEngineKind.fromPrefValue(prefs.playerEngineKind),
+                videoRotation = prefs.videoRotation, // v12.14: 视频画面旋转
+                videoMirror = prefs.videoMirror, // v12.15: 视频画面镜像
+            )
         // v12.16: 应用持久化的画面比例
         session = session.copy(playerAspectRatio = prefs.playerAspectRatio)
         if (sessionOverrideJson != null) {
@@ -961,11 +986,12 @@ class PlayerActivity : BaseActivity() {
         }
         // v11.9: 默认亮度
         // v13.14: 亮度记忆
-        val targetBrightness = when {
-            prefs.brightnessMemoryEnabled && prefs.lastVideoBrightness >= 0f -> prefs.lastVideoBrightness
-            prefs.defaultBrightness >= 0f -> prefs.defaultBrightness
-            else -> -1f
-        }
+        val targetBrightness =
+            when {
+                prefs.brightnessMemoryEnabled && prefs.lastVideoBrightness >= 0f -> prefs.lastVideoBrightness
+                prefs.defaultBrightness >= 0f -> prefs.defaultBrightness
+                else -> -1f
+            }
         if (targetBrightness >= 0f) {
             val attrs = window.attributes
             attrs.screenBrightness = targetBrightness
@@ -1091,7 +1117,10 @@ class PlayerActivity : BaseActivity() {
                             else -> playbackState.toString()
                         }
                     trace?.log("player:state", "state=$state pos=${engine.currentPosition}ms")
-                    if (playbackState == Player.STATE_BUFFERING && debug.lastPlaybackState != Player.STATE_BUFFERING && engine.playWhenReady) {
+                    if (playbackState == Player.STATE_BUFFERING &&
+                        debug.lastPlaybackState != Player.STATE_BUFFERING &&
+                        engine.playWhenReady
+                    ) {
                         debug.rebufferCount++
                     }
                     if (playbackState == Player.STATE_BUFFERING) {
@@ -1111,137 +1140,197 @@ class PlayerActivity : BaseActivity() {
                         qualityInfoShown = true
                         try {
                             val qn = BiliClient.prefs.playerPreferredQn
-                            val qnText = when (qn) {
-                                127 -> "4K"
-                                120 -> "超清"
-                                116 -> "1080P60"
-                                112 -> "1080P+"
-                                80 -> "1080P"
-                                74 -> "720P60"
-                                64 -> "720P"
-                                32 -> "480P"
-                                16 -> "360P"
-                                else -> "${qn}P"
-                            }
-                            blbl.cat3399.core.ui.AppToast.show(this@PlayerActivity, "播放画质: $qnText")
-                        } catch (_: Throwable) {}
+                            val qnText =
+                                when (qn) {
+                                    127 -> "4K"
+                                    120 -> "超清"
+                                    116 -> "1080P60"
+                                    112 -> "1080P+"
+                                    80 -> "1080P"
+                                    74 -> "720P60"
+                                    64 -> "720P"
+                                    32 -> "480P"
+                                    16 -> "360P"
+                                    else -> "${qn}P"
+                                }
+                            blbl.cat3399.core.ui.AppToast
+                                .show(this@PlayerActivity, "播放画质: $qnText")
+                        } catch (_: Throwable) {
+                        }
                         // v8.0: 显示视频编码格式
                         try {
-                            val codec = debug.videoDecoderName?.takeIf { it.isNotBlank() } ?: run {
-                                val mime = exo?.videoFormat?.sampleMimeType
-                                when {
-                                    mime == null -> "未知"
-                                    mime.contains("avc") || mime.contains("264") -> "H.264"
-                                    mime.contains("hevc") || mime.contains("265") -> "H.265"
-                                    mime.contains("av01") || mime.contains("av1") -> "AV1"
-                                    mime.contains("vp9") -> "VP9"
-                                    else -> mime.substringAfter("/")
+                            val codec =
+                                debug.videoDecoderName?.takeIf { it.isNotBlank() } ?: run {
+                                    val mime = exo?.videoFormat?.sampleMimeType
+                                    when {
+                                        mime == null -> "未知"
+                                        mime.contains("avc") || mime.contains("264") -> "H.264"
+                                        mime.contains("hevc") || mime.contains("265") -> "H.265"
+                                        mime.contains("av01") || mime.contains("av1") -> "AV1"
+                                        mime.contains("vp9") -> "VP9"
+                                        else -> mime.substringAfter("/")
+                                    }
                                 }
-                            }
                             val w = debug.videoInputWidth ?: exo?.videoFormat?.width ?: 0
                             val h = debug.videoInputHeight ?: exo?.videoFormat?.height ?: 0
                             val fps = debug.videoInputFps?.toInt() ?: (exo?.videoFormat?.frameRate?.toInt() ?: 0)
                             // v8.2: 显示视频比特率
-                            val br = try {
-                                val fmt = exo?.videoFormat
-                                val brBps = fmt?.averageBitrate?.takeIf { it > 0 }
-                                    ?: fmt?.bitrate?.takeIf { it > 0 }
-                                    ?: fmt?.peakBitrate?.takeIf { it > 0 } ?: 0
-                                if (brBps > 0) String.format(java.util.Locale.US, "%.0fkbps", brBps / 1000.0) else ""
-                            } catch (_: Throwable) { "" }
-                            val res = if (w > 0 && h > 0) "${w}x${h}" else ""
+                            val br =
+                                try {
+                                    val fmt = exo?.videoFormat
+                                    val brBps =
+                                        fmt?.averageBitrate?.takeIf { it > 0 }
+                                            ?: fmt?.bitrate?.takeIf { it > 0 }
+                                            ?: fmt?.peakBitrate?.takeIf { it > 0 } ?: 0
+                                    if (brBps > 0) String.format(java.util.Locale.US, "%.0fkbps", brBps / 1000.0) else ""
+                                } catch (_: Throwable) {
+                                    ""
+                                }
+                            val res = if (w > 0 && h > 0) "${w}x$h" else ""
                             // v9.4: 显示视频宽高比
-                            val aspectRatio = try {
-                                if (w > 0 && h > 0) {
-                                    fun gcd(a: Int, b: Int): Int = if (b == 0) a else gcd(b, a % b)
-                                    val g = gcd(w, h)
-                                    "${w/g}:${h/g}"
-                                } else ""
-                            } catch (_: Throwable) { "" }
+                            val aspectRatio =
+                                try {
+                                    if (w > 0 && h > 0) {
+                                        fun gcd(
+                                            a: Int,
+                                            b: Int,
+                                        ): Int = if (b == 0) a else gcd(b, a % b)
+                                        val g = gcd(w, h)
+                                        "${w / g}:${h / g}"
+                                    } else {
+                                        ""
+                                    }
+                                } catch (_: Throwable) {
+                                    ""
+                                }
                             // v9.3: 实际渲染帧率
                             val renderFps = debug.renderFps?.toInt() ?: 0
-                            val fpsText = if (fps > 0) {
-                                if (renderFps > 0 && Math.abs(renderFps - fps) > 2) "${fps}fps(render:${renderFps})"
-                                else "${fps}fps"
-                            } else if (renderFps > 0) "${renderFps}fps"
-                            else ""
+                            val fpsText =
+                                if (fps > 0) {
+                                    if (renderFps > 0 && Math.abs(renderFps - fps) > 2) {
+                                        "${fps}fps(render:$renderFps)"
+                                    } else {
+                                        "${fps}fps"
+                                    }
+                                } else if (renderFps > 0) {
+                                    "${renderFps}fps"
+                                } else {
+                                    ""
+                                }
                             // v8.7: 显示视频色彩空间
-                            val colorSpace = try {
-                                val cs = exo?.videoFormat?.colorInfo?.colorSpace ?: -1
-                                val ct = exo?.videoFormat?.colorInfo?.colorTransfer ?: -1
-                                when {
-                                    ct == 6 || ct == 7 -> "HDR" // ST2084 / HLG
-                                    cs == 1 -> "BT.709"
-                                    cs == 2 -> "BT.601"
-                                    cs == 6 -> "BT.2020"
-                                    else -> ""
-                                }
-                            } catch (_: Throwable) { "" }
-                            // v8.3: 显示音频编码格式
-                            val audioCodec = try {
-                                val amime = exo?.audioFormat?.sampleMimeType
-                                when {
-                                    amime == null -> ""
-                                    amime.contains("mp4a") || amime.contains("aac") -> "AAC"
-                                    amime.contains("ac3") || amime.contains("eac3") -> "E-AC3"
-                                    amime.contains("opus") -> "Opus"
-                                    amime.contains("flac") -> "FLAC"
-                                    amime.contains("vorbis") -> "Vorbis"
-                                    else -> amime.substringAfter("/")
-                                }
-                            } catch (_: Throwable) { "" }
-                            // v8.4: 显示音频采样率
-                            val audioSampleRate = try {
-                                val sr = exo?.audioFormat?.sampleRate ?: 0
-                                if (sr > 0) "${sr / 1000}kHz" else ""
-                            } catch (_: Throwable) { "" }
-                            // v8.5: 显示音频比特率
-                            val audioBr = try {
-                                val abr = exo?.audioFormat?.bitrate?.takeIf { it > 0 } ?: 0
-                                if (abr > 0) "${abr / 1000}kbps" else ""
-                            } catch (_: Throwable) { "" }
-                            // v8.6: 显示音频通道
-                            val audioCh = try {
-                                val ch = exo?.audioFormat?.channelCount ?: 0
-                                when (ch) {
-                                    1 -> "Mono"
-                                    2 -> "Stereo"
-                                    in 6..8 -> "${ch}ch"
-                                    else -> ""
-                                }
-                            } catch (_: Throwable) { "" }
-                            val audioInfo = listOf(audioCodec, audioSampleRate, audioBr, audioCh).filter { it.isNotEmpty() }.joinToString(" ")
-                            // v9.0: 估算视频文件大小
-                            val fileSize = try {
-                                val totalBr = (exo?.videoFormat?.bitrate?.takeIf { it > 0 } ?: 0) +
-                                    (exo?.audioFormat?.bitrate?.takeIf { it > 0 } ?: 0)
-                                val dur = exo?.duration?.takeIf { it > 0 } ?: 0L
-                                if (totalBr > 0 && dur > 0) {
-                                    val bytes = (totalBr.toLong() * dur) / 8000L // bits to bytes, ms to s
+                            val colorSpace =
+                                try {
+                                    val cs = exo?.videoFormat?.colorInfo?.colorSpace ?: -1
+                                    val ct = exo?.videoFormat?.colorInfo?.colorTransfer ?: -1
                                     when {
-                                        bytes >= 1_073_741_824 -> String.format(java.util.Locale.US, "%.1fGB", bytes / 1_073_741_824.0)
-                                        bytes >= 1_048_576 -> String.format(java.util.Locale.US, "%.0fMB", bytes / 1_048_576.0)
+                                        ct == 6 || ct == 7 -> "HDR" // ST2084 / HLG
+                                        cs == 1 -> "BT.709"
+                                        cs == 2 -> "BT.601"
+                                        cs == 6 -> "BT.2020"
                                         else -> ""
                                     }
-                                } else ""
-                            } catch (_: Throwable) { "" }
-                            val info = listOf(codec, res, aspectRatio, fpsText, br, colorSpace).filter { it.isNotEmpty() }.joinToString(" · ") +
-                                if (fileSize.isNotEmpty()) " | $fileSize" else "" +
-                                if (audioInfo.isNotEmpty()) " | $audioInfo" else ""
+                                } catch (_: Throwable) {
+                                    ""
+                                }
+                            // v8.3: 显示音频编码格式
+                            val audioCodec =
+                                try {
+                                    val amime = exo?.audioFormat?.sampleMimeType
+                                    when {
+                                        amime == null -> ""
+                                        amime.contains("mp4a") || amime.contains("aac") -> "AAC"
+                                        amime.contains("ac3") || amime.contains("eac3") -> "E-AC3"
+                                        amime.contains("opus") -> "Opus"
+                                        amime.contains("flac") -> "FLAC"
+                                        amime.contains("vorbis") -> "Vorbis"
+                                        else -> amime.substringAfter("/")
+                                    }
+                                } catch (_: Throwable) {
+                                    ""
+                                }
+                            // v8.4: 显示音频采样率
+                            val audioSampleRate =
+                                try {
+                                    val sr = exo?.audioFormat?.sampleRate ?: 0
+                                    if (sr > 0) "${sr / 1000}kHz" else ""
+                                } catch (_: Throwable) {
+                                    ""
+                                }
+                            // v8.5: 显示音频比特率
+                            val audioBr =
+                                try {
+                                    val abr = exo?.audioFormat?.bitrate?.takeIf { it > 0 } ?: 0
+                                    if (abr > 0) "${abr / 1000}kbps" else ""
+                                } catch (_: Throwable) {
+                                    ""
+                                }
+                            // v8.6: 显示音频通道
+                            val audioCh =
+                                try {
+                                    val ch = exo?.audioFormat?.channelCount ?: 0
+                                    when (ch) {
+                                        1 -> "Mono"
+                                        2 -> "Stereo"
+                                        in 6..8 -> "${ch}ch"
+                                        else -> ""
+                                    }
+                                } catch (_: Throwable) {
+                                    ""
+                                }
+                            val audioInfo =
+                                listOf(
+                                    audioCodec,
+                                    audioSampleRate,
+                                    audioBr,
+                                    audioCh,
+                                ).filter { it.isNotEmpty() }.joinToString(" ")
+                            // v9.0: 估算视频文件大小
+                            val fileSize =
+                                try {
+                                    val totalBr =
+                                        (exo?.videoFormat?.bitrate?.takeIf { it > 0 } ?: 0) +
+                                            (exo?.audioFormat?.bitrate?.takeIf { it > 0 } ?: 0)
+                                    val dur = exo?.duration?.takeIf { it > 0 } ?: 0L
+                                    if (totalBr > 0 && dur > 0) {
+                                        val bytes = (totalBr.toLong() * dur) / 8000L // bits to bytes, ms to s
+                                        when {
+                                            bytes >= 1_073_741_824 -> String.format(java.util.Locale.US, "%.1fGB", bytes / 1_073_741_824.0)
+                                            bytes >= 1_048_576 -> String.format(java.util.Locale.US, "%.0fMB", bytes / 1_048_576.0)
+                                            else -> ""
+                                        }
+                                    } else {
+                                        ""
+                                    }
+                                } catch (_: Throwable) {
+                                    ""
+                                }
+                            val info =
+                                listOf(codec, res, aspectRatio, fpsText, br, colorSpace).filter { it.isNotEmpty() }.joinToString(" · ") +
+                                    if (fileSize.isNotEmpty()) {
+                                        " | $fileSize"
+                                    } else {
+                                        "" +
+                                            if (audioInfo.isNotEmpty()) " | $audioInfo" else ""
+                                    }
                             // v9.9: 显示已缓冲时长
-                            val bufferedSec = try {
-                                val bufPos = exo?.bufferedPosition ?: 0L
-                                val curPos = exo?.currentPosition ?: 0L
-                                val bufSec = ((bufPos - curPos) / 1000).coerceAtLeast(0)
-                                if (bufSec > 0) "已缓冲: ${bufSec}秒" else ""
-                            } catch (_: Throwable) { "" }
+                            val bufferedSec =
+                                try {
+                                    val bufPos = exo?.bufferedPosition ?: 0L
+                                    val curPos = exo?.currentPosition ?: 0L
+                                    val bufSec = ((bufPos - curPos) / 1000).coerceAtLeast(0)
+                                    if (bufSec > 0) "已缓冲: ${bufSec}秒" else ""
+                                } catch (_: Throwable) {
+                                    ""
+                                }
                             val fullInfo = if (bufferedSec.isNotEmpty()) "$info\n$bufferedSec" else info
                             if (fullInfo.isNotEmpty()) {
                                 android.os.Handler(mainLooper).postDelayed({
-                                    blbl.cat3399.core.ui.AppToast.show(this@PlayerActivity, fullInfo)
+                                    blbl.cat3399.core.ui.AppToast
+                                        .show(this@PlayerActivity, fullInfo)
                                 }, 500L)
                             }
-                        } catch (_: Throwable) {}
+                        } catch (_: Throwable) {
+                        }
                     }
                     // v7.0: 跳过片头
                     if (playbackState == Player.STATE_READY && engine.playWhenReady) {
@@ -1263,7 +1352,10 @@ class PlayerActivity : BaseActivity() {
                     requestDanmakuSegmentsForPosition(newPositionMs, immediate = true)
                 }
 
-                override fun onVideoSizeChanged(width: Int, height: Int) {
+                override fun onVideoSizeChanged(
+                    width: Int,
+                    height: Int,
+                ) {
                     if (width <= 0 || height <= 0) return
                     currentVideoContentWidth = width
                     currentVideoContentHeight = height
@@ -1297,43 +1389,59 @@ class PlayerActivity : BaseActivity() {
 
         exo?.addAnalyticsListener(
             object : AnalyticsListener {
-            override fun onVideoDecoderInitialized(
-                eventTime: EventTime,
-                decoderName: String,
-                initializedTimestampMs: Long,
-                initializationDurationMs: Long,
-            ) {
-                debug.videoDecoderName = decoderName
-            }
+                override fun onVideoDecoderInitialized(
+                    eventTime: EventTime,
+                    decoderName: String,
+                    initializedTimestampMs: Long,
+                    initializationDurationMs: Long,
+                ) {
+                    debug.videoDecoderName = decoderName
+                }
 
-            override fun onVideoInputFormatChanged(eventTime: EventTime, format: Format, decoderReuseEvaluation: DecoderReuseEvaluation?) {
-                debug.videoInputWidth = format.width.takeIf { it > 0 }
-                debug.videoInputHeight = format.height.takeIf { it > 0 }
-                debug.videoInputFps = format.frameRate.takeIf { it > 0f }
-            }
+                override fun onVideoInputFormatChanged(
+                    eventTime: EventTime,
+                    format: Format,
+                    decoderReuseEvaluation: DecoderReuseEvaluation?,
+                ) {
+                    debug.videoInputWidth = format.width.takeIf { it > 0 }
+                    debug.videoInputHeight = format.height.takeIf { it > 0 }
+                    debug.videoInputFps = format.frameRate.takeIf { it > 0f }
+                }
 
-            override fun onDroppedVideoFrames(eventTime: EventTime, droppedFrames: Int, elapsedMs: Long) {
-                debug.droppedFramesTotal += droppedFrames.toLong().coerceAtLeast(0L)
-            }
+                override fun onDroppedVideoFrames(
+                    eventTime: EventTime,
+                    droppedFrames: Int,
+                    elapsedMs: Long,
+                ) {
+                    debug.droppedFramesTotal += droppedFrames.toLong().coerceAtLeast(0L)
+                }
 
-            override fun onVideoFrameProcessingOffset(eventTime: EventTime, totalProcessingOffsetUs: Long, frameCount: Int) {
-                val now = eventTime.realtimeMs
-                val last = debug.renderFpsLastAtMs
-                debug.renderFpsLastAtMs = now
-                if (last == null) return
-                val deltaMs = now - last
-                if (deltaMs <= 0L || deltaMs > 60_000L) return
-                val frames = frameCount.coerceAtLeast(0)
-                if (frames == 0) return
-                debug.renderFps = (frames * 1000f) / deltaMs.toFloat()
-            }
+                override fun onVideoFrameProcessingOffset(
+                    eventTime: EventTime,
+                    totalProcessingOffsetUs: Long,
+                    frameCount: Int,
+                ) {
+                    val now = eventTime.realtimeMs
+                    val last = debug.renderFpsLastAtMs
+                    debug.renderFpsLastAtMs = now
+                    if (last == null) return
+                    val deltaMs = now - last
+                    if (deltaMs <= 0L || deltaMs > 60_000L) return
+                    val frames = frameCount.coerceAtLeast(0)
+                    if (frames == 0) return
+                    debug.renderFps = (frames * 1000f) / deltaMs.toFloat()
+                }
 
-            override fun onRenderedFirstFrame(eventTime: EventTime, output: Any, renderTimeMs: Long) {
-                if (traceFirstFrameLogged) return
-                traceFirstFrameLogged = true
-                trace?.log("exo:firstFrame", "pos=${engine.currentPosition}ms")
-            }
-        },
+                override fun onRenderedFirstFrame(
+                    eventTime: EventTime,
+                    output: Any,
+                    renderTimeMs: Long,
+                ) {
+                    if (traceFirstFrameLogged) return
+                    traceFirstFrameLogged = true
+                    trace?.log("exo:firstFrame", "pos=${engine.currentPosition}ms")
+                }
+            },
         )
 
         val settingsAdapter = PlayerSettingsAdapter { item -> handleSettingsItemClick(item) }
@@ -1429,7 +1537,10 @@ class PlayerActivity : BaseActivity() {
         val playable: Playable,
     )
 
-    internal fun requestOnlineWatchingText(bvid: String, cid: Long) {
+    internal fun requestOnlineWatchingText(
+        bvid: String,
+        cid: Long,
+    ) {
         // Must not crash the player: always swallow any network/parse errors.
         binding.tvOnline.text = "-人正在观看"
         lifecycleScope.launch {
@@ -1490,9 +1601,7 @@ class PlayerActivity : BaseActivity() {
         return BiliApi.playUrl(request)
     }
 
-    private fun shouldAttemptTryLookFallback(stream: VideoPlayStream): Boolean {
-        return !stream.hasPlayableStream()
-    }
+    private fun shouldAttemptTryLookFallback(stream: VideoPlayStream): Boolean = !stream.hasPlayableStream()
 
     private fun buildPlayStreamRiskPayload(stream: VideoPlayStream): String {
         val dash = stream.dash
@@ -1506,7 +1615,12 @@ class PlayerActivity : BaseActivity() {
             append(" dashVideo=").append(dash?.videos?.size ?: 0)
             append(" dashAudio=").append(dash?.audios?.size ?: 0)
             append(" progressive=").append(stream.progressive.size)
-            append(" supportQns=").append(stream.supportFormats.map { it.quality }.filter { it > 0 }.distinct())
+            append(" supportQns=").append(
+                stream.supportFormats
+                    .map { it.quality }
+                    .filter { it > 0 }
+                    .distinct(),
+            )
             append(" hasVVoucher=").append(if (stream.vVoucher != null) 1 else 0)
             append(" clips=").append(stream.clipSegments.size)
             append(" resume=").append(if (stream.resume != null) 1 else 0)
@@ -1540,7 +1654,11 @@ class PlayerActivity : BaseActivity() {
         AppLog.w(
             "Player",
             buildString {
-                append("risk-control ").append(stage).append(" reason=").append(reason).append('\n')
+                append("risk-control ")
+                    .append(stage)
+                    .append(" reason=")
+                    .append(reason)
+                    .append('\n')
                 append("context: ").append(context).append('\n')
                 append(buildPlayStreamRiskPayload(stream))
             },
@@ -1996,7 +2114,8 @@ class PlayerActivity : BaseActivity() {
                     val focusedView = currentFocus
                     val hasLeftFocusInPanel =
                         if (panelRoot != null && focusedView != null) {
-                            FocusFinder.getInstance()
+                            FocusFinder
+                                .getInstance()
                                 .findNextFocus(panelRoot, focusedView, View.FOCUS_LEFT) != null
                         } else {
                             false
@@ -2099,7 +2218,7 @@ class PlayerActivity : BaseActivity() {
         }
         resumeExpiredUrlReloadArmed = true
         resumeExpiredUrlReloadAttempted = false
-        qualityInfoShown = false  // v6.2: 重置画质提示标志
+        qualityInfoShown = false // v6.2: 重置画质提示标志
         engine.playWhenReady = playWhenReadyAfterReturn
         engine.prepare()
         if (pos > 0L) engine.seekTo(pos)
@@ -2192,7 +2311,11 @@ class PlayerActivity : BaseActivity() {
         }
         if (player?.isPlaying == true) {
             try {
-                enterPictureInPictureMode(android.app.PictureInPictureParams.Builder().build())
+                enterPictureInPictureMode(
+                    android.app.PictureInPictureParams
+                        .Builder()
+                        .build(),
+                )
             } catch (_: Exception) {
                 super.onBackPressed()
             }
@@ -2304,7 +2427,10 @@ class PlayerActivity : BaseActivity() {
         prepareTransientPlaybackExit()
         val title =
             currentMainTitle?.trim().orEmpty().ifBlank {
-                binding.tvTitle.text?.toString()?.trim().orEmpty()
+                binding.tvTitle.text
+                    ?.toString()
+                    ?.trim()
+                    .orEmpty()
             }
         startActivity(
             Intent(this, VideoDetailActivity::class.java)
@@ -2316,8 +2442,7 @@ class PlayerActivity : BaseActivity() {
                     currentUpName?.takeIf { it.isNotBlank() }?.let { putExtra(VideoDetailActivity.EXTRA_OWNER_NAME, it) }
                     currentUpAvatar?.takeIf { it.isNotBlank() }?.let { putExtra(VideoDetailActivity.EXTRA_OWNER_AVATAR, it) }
                     currentUpMid.takeIf { it > 0L }?.let { putExtra(VideoDetailActivity.EXTRA_OWNER_MID, it) }
-                }
-                .apply {
+                }.apply {
                     pageListToken?.takeIf { it.isNotBlank() }?.let { putExtra(VideoDetailActivity.EXTRA_PLAYLIST_TOKEN, it) }
                     pageListIndex.takeIf { it >= 0 }?.let { putExtra(VideoDetailActivity.EXTRA_PLAYLIST_INDEX, it) }
                 },
@@ -2338,7 +2463,10 @@ class PlayerActivity : BaseActivity() {
         togglePlayPause(showControls = shouldShowOsdOnPlaybackToggle(), showHint = showHint)
     }
 
-    internal fun togglePlayPause(showControls: Boolean = true, showHint: Boolean = false) {
+    internal fun togglePlayPause(
+        showControls: Boolean = true,
+        showHint: Boolean = false,
+    ) {
         val engine = player ?: return
         if (engine.playbackState == Player.STATE_ENDED) {
             restartCurrentPlaybackFromBeginning(engine = engine, showControls = showControls, showHint = showHint)
@@ -2450,7 +2578,11 @@ class PlayerActivity : BaseActivity() {
         binding.seekProgress.max = SEEK_MAX
         binding.seekProgress.setOnSeekBarChangeListener(
             object : SeekBar.OnSeekBarChangeListener {
-                override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
+                override fun onProgressChanged(
+                    seekBar: SeekBar?,
+                    progress: Int,
+                    fromUser: Boolean,
+                ) {
                     if (!fromUser) return
                     cancelPendingAutoResume(reason = "user_seek")
                     cancelPendingAutoSkip(reason = "user_seek", markIgnored = true)
@@ -2546,9 +2678,12 @@ class PlayerActivity : BaseActivity() {
 
     internal fun updateTopTitleUi(placeholder: String?) {
         val main =
-            currentMainTitle?.trim().orEmpty().ifBlank {
-                placeholder?.trim().orEmpty()
-            }.ifBlank { "-" }
+            currentMainTitle
+                ?.trim()
+                .orEmpty()
+                .ifBlank {
+                    placeholder?.trim().orEmpty()
+                }.ifBlank { "-" }
 
         val partTitle =
             if (partsListSource == "MultiPage") {
@@ -2591,7 +2726,11 @@ class PlayerActivity : BaseActivity() {
 
     private fun shouldReportHistoryNow(): Boolean {
         if (!BiliClient.cookies.hasSessData()) return false
-        val csrf = BiliClient.cookies.getCookieValue("bili_jct").orEmpty().trim()
+        val csrf =
+            BiliClient.cookies
+                .getCookieValue("bili_jct")
+                .orEmpty()
+                .trim()
         if (csrf.isBlank()) return false
         val aid = currentAid ?: return false
         if (aid <= 0L) return false
@@ -2610,16 +2749,22 @@ class PlayerActivity : BaseActivity() {
         val payload = src.removePrefix("Bangumi:").trim()
         if (payload.isBlank()) return null
         // Support both legacy "Bangumi:<seasonId>" and current "Bangumi:<seasonId>:<listKind>".
-        return payload.substringBefore(':').trim().toLongOrNull()?.takeIf { it > 0L }
+        return payload
+            .substringBefore(':')
+            .trim()
+            .toLongOrNull()
+            ?.takeIf { it > 0L }
     }
 
-    private fun parseSeasonIdFromPlaylistSource(): Long? {
-        return currentSeasonId?.takeIf { it > 0L } ?: parseBangumiSeasonIdFromSource(pageListSource)
-    }
+    private fun parseSeasonIdFromPlaylistSource(): Long? = currentSeasonId?.takeIf { it > 0L } ?: parseBangumiSeasonIdFromSource(pageListSource)
 
     private fun shouldReportWebHeartbeatNow(): Boolean {
         if (!BiliClient.cookies.hasSessData()) return false
-        val csrf = BiliClient.cookies.getCookieValue("bili_jct").orEmpty().trim()
+        val csrf =
+            BiliClient.cookies
+                .getCookieValue("bili_jct")
+                .orEmpty()
+                .trim()
         if (csrf.isBlank()) return false
         val cid = currentCid
         if (cid <= 0L) return false
@@ -2628,9 +2773,7 @@ class PlayerActivity : BaseActivity() {
         return true
     }
 
-    private fun shouldReportAnyProgressNow(): Boolean {
-        return shouldReportHistoryNow() || shouldReportWebHeartbeatNow()
-    }
+    private fun shouldReportAnyProgressNow(): Boolean = shouldReportHistoryNow() || shouldReportWebHeartbeatNow()
 
     private fun startReportProgressLoop() {
         if (reportProgressJob != null) return
@@ -2646,7 +2789,10 @@ class PlayerActivity : BaseActivity() {
             }
     }
 
-    internal fun stopReportProgressLoop(flush: Boolean, reason: String) {
+    internal fun stopReportProgressLoop(
+        flush: Boolean,
+        reason: String,
+    ) {
         reportProgressJob?.cancel()
         reportProgressJob = null
         if (flush) lifecycleScope.launch { reportProgressOnce(force = true, reason = reason) }
@@ -2656,7 +2802,10 @@ class PlayerActivity : BaseActivity() {
         lifecycleScope.launch { reportProgressOnce(force = true, reason = reason) }
     }
 
-    private suspend fun reportProgressOnce(force: Boolean, reason: String) {
+    private suspend fun reportProgressOnce(
+        force: Boolean,
+        reason: String,
+    ) {
         if (!shouldReportAnyProgressNow()) return
         val token = reportToken
         val exo = player ?: return
@@ -2865,18 +3014,25 @@ class PlayerActivity : BaseActivity() {
                 .build()
     }
 
-    private fun Playable.Dash.shouldAttemptDolbyFallback(): Boolean =
-        isDolbyVision || audioKind == DashAudioKind.DOLBY || audioKind == DashAudioKind.FLAC
+    private fun Playable.Dash.shouldAttemptDolbyFallback(): Boolean = isDolbyVision || audioKind == DashAudioKind.DOLBY || audioKind == DashAudioKind.FLAC
 
     private fun nextPlaybackConstraintsForDolbyFallback(picked: Playable.Dash): PlaybackConstraints? {
-        if (picked.audioKind == DashAudioKind.FLAC && playbackConstraints.allowFlacAudio) return playbackConstraints.copy(allowFlacAudio = false)
-        if (picked.audioKind == DashAudioKind.DOLBY && playbackConstraints.allowDolbyAudio) return playbackConstraints.copy(allowDolbyAudio = false)
+        if (picked.audioKind == DashAudioKind.FLAC &&
+            playbackConstraints.allowFlacAudio
+        ) {
+            return playbackConstraints.copy(allowFlacAudio = false)
+        }
+        if (picked.audioKind == DashAudioKind.DOLBY &&
+            playbackConstraints.allowDolbyAudio
+        ) {
+            return playbackConstraints.copy(allowDolbyAudio = false)
+        }
         if (picked.isDolbyVision && playbackConstraints.allowDolbyVision) return playbackConstraints.copy(allowDolbyVision = false)
         return null
     }
 
-    private fun shouldAttemptHighSpecFallback(error: PlaybackException): Boolean {
-        return when (error.errorCode) {
+    private fun shouldAttemptHighSpecFallback(error: PlaybackException): Boolean =
+        when (error.errorCode) {
             PlaybackException.ERROR_CODE_FAILED_RUNTIME_CHECK,
             PlaybackException.ERROR_CODE_NOT_SUPPORTED,
             PlaybackException.ERROR_CODE_PARSING_CONTAINER_MALFORMED,
@@ -2903,9 +3059,11 @@ class PlayerActivity : BaseActivity() {
                     name.contains("PARSING")
             }
         }
-    }
 
-    private fun maybeReloadExpiredUrlAfterResume(error: PlaybackException, httpCode: Int?): Boolean {
+    private fun maybeReloadExpiredUrlAfterResume(
+        error: PlaybackException,
+        httpCode: Int?,
+    ): Boolean {
         if (!resumeExpiredUrlReloadArmed) return false
         if (resumeExpiredUrlReloadAttempted) return false
         if (!isLikelyExpiredUrlError(error, httpCode)) return false
@@ -2917,7 +3075,10 @@ class PlayerActivity : BaseActivity() {
         return true
     }
 
-    private fun isLikelyExpiredUrlError(error: PlaybackException, httpCode: Int?): Boolean {
+    private fun isLikelyExpiredUrlError(
+        error: PlaybackException,
+        httpCode: Int?,
+    ): Boolean {
         if (httpCode != null && httpCode in setOf(403, 404, 410)) return true
         if (error.errorCode != PlaybackException.ERROR_CODE_IO_BAD_HTTP_STATUS) return false
         val msg = (error.cause?.message ?: error.message ?: "").lowercase(Locale.US)
@@ -2939,7 +3100,10 @@ class PlayerActivity : BaseActivity() {
         trace?.log("playurl:autoRefresh:cancel", "reason=$reason")
     }
 
-    internal fun schedulePlayUrlAutoRefresh(playable: Playable, reason: String) {
+    internal fun schedulePlayUrlAutoRefresh(
+        playable: Playable,
+        reason: String,
+    ) {
         // Media3/ExoPlayer requires all player access on the thread that created it (main).
         // Auto refresh used to run on Dispatchers.Default and crashed after the signed URL expired (~120min).
         if (Thread.currentThread() !== Looper.getMainLooper().thread) {
@@ -3035,7 +3199,10 @@ class PlayerActivity : BaseActivity() {
             return best
         }
 
-        fun minNonNull(a: Long?, b: Long?): Long? =
+        fun minNonNull(
+            a: Long?,
+            b: Long?,
+        ): Long? =
             when {
                 a == null -> b
                 b == null -> a
@@ -3067,12 +3234,14 @@ class PlayerActivity : BaseActivity() {
 
     private fun effectiveTargetAudioIdForLog(): Int = session.targetAudioId.takeIf { it > 0 } ?: session.preferAudioId
 
-    private fun selectCdnUrls(urls: List<String>, preference: String): List<String> {
+    private fun selectCdnUrls(
+        urls: List<String>,
+        preference: String,
+    ): List<String> {
         val candidates = urls.map { it.trim() }.filter { it.isNotBlank() }.distinct()
         if (candidates.isEmpty()) return emptyList()
 
-        fun hostOf(url: String): String =
-            runCatching { Uri.parse(url).host.orEmpty() }.getOrDefault("").lowercase(Locale.US)
+        fun hostOf(url: String): String = runCatching { Uri.parse(url).host.orEmpty() }.getOrDefault("").lowercase(Locale.US)
 
         fun isMcdn(url: String): Boolean {
             val host = hostOf(url)
@@ -3137,16 +3306,20 @@ class PlayerActivity : BaseActivity() {
         return null
     }
 
-    private suspend fun pickPlayable(stream: VideoPlayStream, constraints: PlaybackConstraints): Playable {
+    private suspend fun pickPlayable(
+        stream: VideoPlayStream,
+        constraints: PlaybackConstraints,
+    ): Playable {
         stream.vVoucher?.let { recordVVoucher(it) }
         val dash = stream.dash
         var dashVideoMetaForFallback: Playable.VideoOnly? = null
         if (dash != null) {
-            val preferCodecid = when (session.preferCodec) {
-                "HEVC" -> 12
-                "AV1" -> 13
-                else -> 7
-            }
+            val preferCodecid =
+                when (session.preferCodec) {
+                    "HEVC" -> 12
+                    "AV1" -> 13
+                    else -> 7
+                }
 
             val rawVideoItems = dash.videos.filter { it.urls.isNotEmpty() && it.qn > 0 }
 
@@ -3209,21 +3382,27 @@ class PlayerActivity : BaseActivity() {
                         isDolbyVision = pickedIsDolbyVision,
                     )
 
-                data class AudioCandidate(val track: AudioTrack, val kind: DashAudioKind, val id: Int, val bandwidth: Long)
+                data class AudioCandidate(
+                    val track: AudioTrack,
+                    val kind: DashAudioKind,
+                    val id: Int,
+                    val bandwidth: Long,
+                )
 
-                val rawAudioCandidates = buildList<AudioCandidate> {
-                    for (audio in dash.audios) {
-                        if (audio.urls.isEmpty()) continue
-                        add(
-                            AudioCandidate(
-                                track = audio,
-                                kind = dashAudioKindOf(audio.kind),
-                                id = audio.id,
-                                bandwidth = audio.info.bandwidth ?: 0L,
-                            ),
-                        )
+                val rawAudioCandidates =
+                    buildList<AudioCandidate> {
+                        for (audio in dash.audios) {
+                            if (audio.urls.isEmpty()) continue
+                            add(
+                                AudioCandidate(
+                                    track = audio,
+                                    kind = dashAudioKindOf(audio.kind),
+                                    id = audio.id,
+                                    bandwidth = audio.info.bandwidth ?: 0L,
+                                ),
+                            )
+                        }
                     }
-                }
 
                 val allAudioCandidates =
                     rawAudioCandidates.filterNot { candidate ->
@@ -3253,7 +3432,7 @@ class PlayerActivity : BaseActivity() {
                 val audioPicked =
                     audioPool.maxByOrNull { it.bandwidth }
                         ?: allAudioCandidates.maxWithOrNull(
-                    compareBy<AudioCandidate> { it.bandwidth }.thenBy { if (it.id == desiredAudioId) 1 else 0 },
+                            compareBy<AudioCandidate> { it.bandwidth }.thenBy { if (it.id == desiredAudioId) 1 else 0 },
                         )
                 if (audioPicked == null) {
                     AppLog.w("Player", "no DASH audio track picked; fallback to durl if possible (or video-only if durl missing)")
@@ -3293,9 +3472,10 @@ class PlayerActivity : BaseActivity() {
             )
         }
 
-        val cid = currentCid.takeIf { it > 0 }
-            ?: intent.getLongExtra(EXTRA_CID, -1L).takeIf { it > 0 }
-            ?: error("cid missing for fallback")
+        val cid =
+            currentCid.takeIf { it > 0 }
+                ?: intent.getLongExtra(EXTRA_CID, -1L).takeIf { it > 0 }
+                ?: error("cid missing for fallback")
         val bvid = currentBvid.ifBlank { intent.getStringExtra(EXTRA_BVID).orEmpty() }
         // Extra fallback: request MP4 directly (avoid deprecated fnval=0).
         val fallbackStream =
@@ -3330,13 +3510,27 @@ class PlayerActivity : BaseActivity() {
         error("No playable url in playurl response")
     }
 
-    internal fun createCdnFactory(kind: DebugStreamKind, urlCandidates: List<String>? = null): DataSource.Factory {
+    internal fun createCdnFactory(
+        kind: DebugStreamKind,
+        urlCandidates: List<String>? = null,
+    ): DataSource.Factory {
         val listener =
             object : TransferListener {
-                override fun onTransferInitializing(source: DataSource, dataSpec: DataSpec, isNetwork: Boolean) {}
+                override fun onTransferInitializing(
+                    source: DataSource,
+                    dataSpec: DataSpec,
+                    isNetwork: Boolean,
+                ) {}
 
-                override fun onTransferStart(source: DataSource, dataSpec: DataSpec, isNetwork: Boolean) {
-                    val host = dataSpec.uri.host?.trim().orEmpty()
+                override fun onTransferStart(
+                    source: DataSource,
+                    dataSpec: DataSpec,
+                    isNetwork: Boolean,
+                ) {
+                    val host =
+                        dataSpec.uri.host
+                            ?.trim()
+                            .orEmpty()
                     if (host.isBlank()) return
                     when (kind) {
                         DebugStreamKind.VIDEO -> debug.videoTransferHost = host
@@ -3345,9 +3539,18 @@ class PlayerActivity : BaseActivity() {
                     }
                 }
 
-                override fun onBytesTransferred(source: DataSource, dataSpec: DataSpec, isNetwork: Boolean, bytesTransferred: Int) {}
+                override fun onBytesTransferred(
+                    source: DataSource,
+                    dataSpec: DataSpec,
+                    isNetwork: Boolean,
+                    bytesTransferred: Int,
+                ) {}
 
-                override fun onTransferEnd(source: DataSource, dataSpec: DataSpec, isNetwork: Boolean) {}
+                override fun onTransferEnd(
+                    source: DataSource,
+                    dataSpec: DataSpec,
+                    isNetwork: Boolean,
+                ) {}
             }
 
         val upstream = OkHttpDataSource.Factory(BiliClient.cdnOkHttp).setTransferListener(listener)
@@ -3373,7 +3576,11 @@ class PlayerActivity : BaseActivity() {
         val videoSource =
             DefaultMediaSourceFactory(DefaultDataSource.Factory(this, videoFactory))
                 .createMediaSource(
-                    MediaItem.Builder().setUri(Uri.parse(videoUrl)).setSubtitleConfigurations(subs).build(),
+                    MediaItem
+                        .Builder()
+                        .setUri(Uri.parse(videoUrl))
+                        .setSubtitleConfigurations(subs)
+                        .build(),
                 )
         val audioSource =
             DefaultMediaSourceFactory(DefaultDataSource.Factory(this, audioFactory))
@@ -3383,17 +3590,26 @@ class PlayerActivity : BaseActivity() {
         return MergingMediaSource(videoSource, audioSource)
     }
 
-    internal fun buildProgressive(factory: DataSource.Factory, url: String, subtitle: MediaItem.SubtitleConfiguration?): MediaSource {
+    internal fun buildProgressive(
+        factory: DataSource.Factory,
+        url: String,
+        subtitle: MediaItem.SubtitleConfiguration?,
+    ): MediaSource {
         val subs = listOfNotNull(subtitle)
         val item =
-            MediaItem.Builder()
+            MediaItem
+                .Builder()
                 .setUri(Uri.parse(url))
                 .setSubtitleConfigurations(subs)
                 .build()
         return DefaultMediaSourceFactory(DefaultDataSource.Factory(this, factory)).createMediaSource(item)
     }
 
-    internal fun reloadStream(keepPosition: Boolean, resetConstraints: Boolean = true, autoPlay: Boolean = true) {
+    internal fun reloadStream(
+        keepPosition: Boolean,
+        resetConstraints: Boolean = true,
+        autoPlay: Boolean = true,
+    ) {
         // Defensive: Player/ExoPlayer must only be accessed on main thread.
         if (Thread.currentThread() !== Looper.getMainLooper().thread) {
             lifecycleScope.launch(Dispatchers.Main.immediate) {
@@ -3428,12 +3644,13 @@ class PlayerActivity : BaseActivity() {
                 // v12.7: 更新弹幕密度自适应
                 if (BiliClient.prefs.danmakuAutoDensity) {
                     val durationMs = currentViewDurationMs ?: 0L
-                    val autoDensity = when {
-                        durationMs <= 60_000L -> DanmakuLaneDensity.Dense
-                        durationMs <= 300_000L -> DanmakuLaneDensity.Standard
-                        durationMs <= 600_000L -> DanmakuLaneDensity.Sparse
-                        else -> DanmakuLaneDensity.VerySparse
-                    }
+                    val autoDensity =
+                        when {
+                            durationMs <= 60_000L -> DanmakuLaneDensity.Dense
+                            durationMs <= 300_000L -> DanmakuLaneDensity.Standard
+                            durationMs <= 600_000L -> DanmakuLaneDensity.Sparse
+                            else -> DanmakuLaneDensity.VerySparse
+                        }
                     session = session.copy(danmaku = session.danmaku.copy(laneDensity = autoDensity))
                 }
                 showRiskControlBypassHintIfNeeded(playStream)
@@ -3449,7 +3666,9 @@ class PlayerActivity : BaseActivity() {
                         lastPickedDash = playable
                         debug.cdnHost = runCatching { Uri.parse(playable.videoUrl).host }.getOrNull()
                         logPickedPlayable(source = "reload", playable = playable)
-                        engine.setSource(PlaybackSource.Vod(playable = playable, subtitle = subtitleConfig, durationMs = currentViewDurationMs))
+                        engine.setSource(
+                            PlaybackSource.Vod(playable = playable, subtitle = subtitleConfig, durationMs = currentViewDurationMs),
+                        )
                         applyResolutionFallbackIfNeeded(requestedQn = session.targetQn, actualQn = playable.qn)
                         applyAudioFallbackIfNeeded(requestedAudioId = session.targetAudioId, actualAudioId = playable.audioId)
                     }
@@ -3459,7 +3678,9 @@ class PlayerActivity : BaseActivity() {
                         (binding.recyclerSettings.adapter as? PlayerSettingsAdapter)?.let { refreshSettings(it) }
                         debug.cdnHost = runCatching { Uri.parse(playable.videoUrl).host }.getOrNull()
                         logPickedPlayable(source = "reload", playable = playable)
-                        engine.setSource(PlaybackSource.Vod(playable = playable, subtitle = subtitleConfig, durationMs = currentViewDurationMs))
+                        engine.setSource(
+                            PlaybackSource.Vod(playable = playable, subtitle = subtitleConfig, durationMs = currentViewDurationMs),
+                        )
                         applyResolutionFallbackIfNeeded(requestedQn = session.targetQn, actualQn = playable.qn)
                     }
                     is Playable.Progressive -> {
@@ -3468,7 +3689,9 @@ class PlayerActivity : BaseActivity() {
                         (binding.recyclerSettings.adapter as? PlayerSettingsAdapter)?.let { refreshSettings(it) }
                         debug.cdnHost = runCatching { Uri.parse(playable.url).host }.getOrNull()
                         logPickedPlayable(source = "reload", playable = playable)
-                        engine.setSource(PlaybackSource.Vod(playable = playable, subtitle = subtitleConfig, durationMs = currentViewDurationMs))
+                        engine.setSource(
+                            PlaybackSource.Vod(playable = playable, subtitle = subtitleConfig, durationMs = currentViewDurationMs),
+                        )
                     }
                 }
                 schedulePlayUrlAutoRefresh(playable, reason = "reload_stream")
@@ -3513,11 +3736,12 @@ class PlayerActivity : BaseActivity() {
         if (vtt.isBlank()) return null
 
         val safeLan = item.lan.replace(Regex("[^a-zA-Z0-9_-]"), "_")
-        val file = File(cacheDir, "sub_${bvid}_${cid}_${safeLan}.vtt")
+        val file = File(cacheDir, "sub_${bvid}_${cid}_$safeLan.vtt")
         runCatching { file.writeText(vtt, Charsets.UTF_8) }.getOrElse { return null }
         trace?.log("subtitle:download:done", "vttBytes=${vtt.toByteArray(Charsets.UTF_8).size}")
 
-        return MediaItem.SubtitleConfiguration.Builder(Uri.fromFile(file))
+        return MediaItem.SubtitleConfiguration
+            .Builder(Uri.fromFile(file))
             .setMimeType(MimeTypes.TEXT_VTT)
             .setLanguage(item.lan)
             .setSelectionFlags(C.SELECTION_FLAG_DEFAULT)
@@ -3556,7 +3780,10 @@ class PlayerActivity : BaseActivity() {
         }
     }
 
-    internal suspend fun buildSubtitleConfigFromCurrentSelection(bvid: String, cid: Long): MediaItem.SubtitleConfiguration? {
+    internal suspend fun buildSubtitleConfigFromCurrentSelection(
+        bvid: String,
+        cid: Long,
+    ): MediaItem.SubtitleConfiguration? {
         if (bvid.isBlank() || cid <= 0) return null
         val chosen = pickSubtitleItem(subtitleItems) ?: return null
         return buildSubtitleConfigFromItem(chosen, bvid, cid)
@@ -3568,7 +3795,11 @@ class PlayerActivity : BaseActivity() {
         val segmentSizeMs: Int,
     )
 
-    internal suspend fun prepareDanmakuMeta(cid: Long, aid: Long?, trace: PlaybackTrace? = null): DanmakuMeta {
+    internal suspend fun prepareDanmakuMeta(
+        cid: Long,
+        aid: Long?,
+        trace: PlaybackTrace? = null,
+    ): DanmakuMeta {
         trace?.log("danmakuMeta:prepare:start", "cid=$cid aid=${aid ?: -1}")
         val danmakuSession = session.danmaku
         return withContext(Dispatchers.IO) {
@@ -3577,46 +3808,49 @@ class PlayerActivity : BaseActivity() {
             if (session.debugEnabled) {
                 AppLog.d("Player", "danmakuMeta cid=$cid aid=${aid ?: -1} followBili=$followBili hasSess=$hasSess")
             }
-            val dmView = if (followBili && hasSess) {
-                val t0 = SystemClock.elapsedRealtime()
-                runCatching { BiliApi.dmWebView(cid, aid) }
-                    .onFailure { AppLog.w("Player", "dmWebView failed", it) }
-                    .getOrNull()
-                    .also {
-                        val cost = SystemClock.elapsedRealtime() - t0
-                        trace?.log("danmakuMeta:dmWebView", "ok=${it != null} cost=${cost}ms")
-                    }
-            } else {
-                null
-            }
-            val userFilter = if (followBili && hasSess) {
-                val t0 = SystemClock.elapsedRealtime()
-                runCatching { BiliApi.dmFilterUser() }
-                    .onFailure { AppLog.w("Player", "dmFilterUser failed", it) }
-                    .getOrNull()
-                    .also {
-                        val cost = SystemClock.elapsedRealtime() - t0
-                        val kw = it?.keywords?.size ?: 0
-                        val re = it?.regexes?.size ?: 0
-                        val user = it?.blockedUserMidHashes?.size ?: 0
-                        trace?.log("danmakuMeta:dmFilterUser", "ok=${it != null} kw=$kw re=$re user=$user cost=${cost}ms")
-                    }
-            } else {
-                null
-            }
+            val dmView =
+                if (followBili && hasSess) {
+                    val t0 = SystemClock.elapsedRealtime()
+                    runCatching { BiliApi.dmWebView(cid, aid) }
+                        .onFailure { AppLog.w("Player", "dmWebView failed", it) }
+                        .getOrNull()
+                        .also {
+                            val cost = SystemClock.elapsedRealtime() - t0
+                            trace?.log("danmakuMeta:dmWebView", "ok=${it != null} cost=${cost}ms")
+                        }
+                } else {
+                    null
+                }
+            val userFilter =
+                if (followBili && hasSess) {
+                    val t0 = SystemClock.elapsedRealtime()
+                    runCatching { BiliApi.dmFilterUser() }
+                        .onFailure { AppLog.w("Player", "dmFilterUser failed", it) }
+                        .getOrNull()
+                        .also {
+                            val cost = SystemClock.elapsedRealtime() - t0
+                            val kw = it?.keywords?.size ?: 0
+                            val re = it?.regexes?.size ?: 0
+                            val user = it?.blockedUserMidHashes?.size ?: 0
+                            trace?.log("danmakuMeta:dmFilterUser", "ok=${it != null} kw=$kw re=$re user=$user cost=${cost}ms")
+                        }
+                } else {
+                    null
+                }
             val setting = dmView?.setting
-            val shield = DanmakuShield(
-                allowScroll = danmakuSession.allowScroll && (setting?.allowScroll ?: true),
-                allowTop = danmakuSession.allowTop && (setting?.allowTop ?: true),
-                allowBottom = danmakuSession.allowBottom && (setting?.allowBottom ?: true),
-                allowColor = danmakuSession.allowColor && (setting?.allowColor ?: true),
-                allowSpecial = danmakuSession.allowSpecial && (setting?.allowSpecial ?: true),
-                aiEnabled = danmakuSession.aiShieldEnabled || (setting?.aiEnabled ?: false),
-                aiLevel = maxOf(danmakuSession.aiShieldLevel, setting?.aiLevel ?: 0),
-                keywords = userFilter?.keywords.orEmpty(),
-                regexes = userFilter?.regexes.orEmpty(),
-                blockedUserMidHashes = userFilter?.blockedUserMidHashes.orEmpty(),
-            )
+            val shield =
+                DanmakuShield(
+                    allowScroll = danmakuSession.allowScroll && (setting?.allowScroll ?: true),
+                    allowTop = danmakuSession.allowTop && (setting?.allowTop ?: true),
+                    allowBottom = danmakuSession.allowBottom && (setting?.allowBottom ?: true),
+                    allowColor = danmakuSession.allowColor && (setting?.allowColor ?: true),
+                    allowSpecial = danmakuSession.allowSpecial && (setting?.allowSpecial ?: true),
+                    aiEnabled = danmakuSession.aiShieldEnabled || (setting?.aiEnabled ?: false),
+                    aiLevel = maxOf(danmakuSession.aiShieldLevel, setting?.aiLevel ?: 0),
+                    keywords = userFilter?.keywords.orEmpty(),
+                    regexes = userFilter?.regexes.orEmpty(),
+                    blockedUserMidHashes = userFilter?.blockedUserMidHashes.orEmpty(),
+                )
             val segmentTotal = dmView?.segmentTotal?.takeIf { it > 0 } ?: 0
             val segmentSizeMs = dmView?.segmentPageSizeMs?.takeIf { it > 0 }?.toInt() ?: DANMAKU_DEFAULT_SEGMENT_MS
             AppLog.i(
@@ -3669,7 +3903,10 @@ class PlayerActivity : BaseActivity() {
         }
     }
 
-    internal fun requestDanmakuSegmentsForPosition(positionMs: Long, immediate: Boolean) {
+    internal fun requestDanmakuSegmentsForPosition(
+        positionMs: Long,
+        immediate: Boolean,
+    ) {
         val debug = session.debugEnabled
         if (danmakuShield == null) {
             if (debug) AppLog.d("Player", "danmaku prefetch skipped: shield=null")
@@ -3691,10 +3928,11 @@ class PlayerActivity : BaseActivity() {
         val targetSeg = (positionMs / segSize).toInt() + 1
         if (targetSeg <= 0) return
 
-        val toLoad = buildList {
-            add(targetSeg)
-            for (i in 1..DANMAKU_PREFETCH_SEGMENTS) add(targetSeg + i)
-        }.filter { canLoadSegment(it) }
+        val toLoad =
+            buildList {
+                add(targetSeg)
+                for (i in 1..DANMAKU_PREFETCH_SEGMENTS) add(targetSeg + i)
+            }.filter { canLoadSegment(it) }
 
         if (toLoad.isEmpty()) return
 
@@ -3735,7 +3973,7 @@ class PlayerActivity : BaseActivity() {
                             val maxMs = sorted.lastOrNull()?.timeMs ?: -1
                             AppLog.d(
                                 "Player",
-                                "danmaku seg=$seg items=$before kept=$after range=${minMs}..${maxMs}ms pos=${requestPositionMs}ms cost=${cost}ms",
+                                "danmaku seg=$seg items=$before kept=$after range=$minMs..${maxMs}ms pos=${requestPositionMs}ms cost=${cost}ms",
                             )
                         }
                         if (before > 0 && after == 0 && debugEnabled) {
@@ -3842,7 +4080,10 @@ class PlayerActivity : BaseActivity() {
         return qn to fnval
     }
 
-    internal fun applyResolutionFallbackIfNeeded(requestedQn: Int, actualQn: Int) {
+    internal fun applyResolutionFallbackIfNeeded(
+        requestedQn: Int,
+        actualQn: Int,
+    ) {
         var changed = false
         if (actualQn > 0 && session.actualQn != actualQn) {
             session = session.copy(actualQn = actualQn)
@@ -3862,7 +4103,10 @@ class PlayerActivity : BaseActivity() {
         }
     }
 
-    internal fun applyAudioFallbackIfNeeded(requestedAudioId: Int, actualAudioId: Int) {
+    internal fun applyAudioFallbackIfNeeded(
+        requestedAudioId: Int,
+        actualAudioId: Int,
+    ) {
         var changed = false
         if (actualAudioId > 0 && session.actualAudioId != actualAudioId) {
             session = session.copy(actualAudioId = actualAudioId)
@@ -3890,7 +4134,10 @@ class PlayerActivity : BaseActivity() {
             .distinct()
             .sortedBy { qnRank(it) }
 
-    internal fun parseSelectableDashVideoQnList(stream: VideoPlayStream, constraints: PlaybackConstraints): List<Int> =
+    internal fun parseSelectableDashVideoQnList(
+        stream: VideoPlayStream,
+        constraints: PlaybackConstraints,
+    ): List<Int> =
         stream.dash
             ?.videos
             .orEmpty()
@@ -3900,7 +4147,10 @@ class PlayerActivity : BaseActivity() {
             .distinct()
             .sortedBy { qnRank(it) }
 
-    internal fun parseDashAudioIdList(stream: VideoPlayStream, constraints: PlaybackConstraints): List<Int> =
+    internal fun parseDashAudioIdList(
+        stream: VideoPlayStream,
+        constraints: PlaybackConstraints,
+    ): List<Int> =
         stream.dash
             ?.audios
             .orEmpty()
@@ -3908,11 +4158,14 @@ class PlayerActivity : BaseActivity() {
             .filterNot { audio ->
                 (audio.kind == VideoAudioKind.DOLBY && !constraints.allowDolbyAudio) ||
                     (audio.kind == VideoAudioKind.FLAC && !constraints.allowFlacAudio)
-            }
-            .map { it.id }
+            }.map { it.id }
             .distinct()
 
-    internal fun logPlayUrlTrackSummary(source: String, stream: VideoPlayStream, constraints: PlaybackConstraints) {
+    internal fun logPlayUrlTrackSummary(
+        source: String,
+        stream: VideoPlayStream,
+        constraints: PlaybackConstraints,
+    ) {
         val rawQns = parseDashVideoQnList(stream)
         val selectableQns = parseSelectableDashVideoQnList(stream, constraints)
         val rawAudioIds = parseDashAudioIdList(stream, constraints = PlaybackConstraints())
@@ -3930,7 +4183,10 @@ class PlayerActivity : BaseActivity() {
         )
     }
 
-    internal fun logPickedPlayable(source: String, playable: Playable) {
+    internal fun logPickedPlayable(
+        source: String,
+        playable: Playable,
+    ) {
         val targetQn = effectiveTargetQnForLog()
         val targetAudioId = effectiveTargetAudioIdForLog()
         when (playable) {
@@ -4021,7 +4277,10 @@ class PlayerActivity : BaseActivity() {
         private const val PLAYURL_AUTO_REFRESH_MIN_RELOAD_INTERVAL_MS = 30_000L
     }
 
-    private fun applyRenderForEngine(engine: BlblPlayerEngine, prefs: AppPrefs) {
+    private fun applyRenderForEngine(
+        engine: BlblPlayerEngine,
+        prefs: AppPrefs,
+    ) {
         // Reset any previous IJK render state.
         binding.ijkAspect.visibility = View.GONE
         binding.ijkContainer.removeAllViews()
@@ -4077,7 +4336,12 @@ class PlayerActivity : BaseActivity() {
                             engine.setVideoSurface(holder.surface)
                         }
 
-                        override fun surfaceChanged(holder: SurfaceHolder, format: Int, width: Int, height: Int) {
+                        override fun surfaceChanged(
+                            holder: SurfaceHolder,
+                            format: Int,
+                            width: Int,
+                            height: Int,
+                        ) {
                             engine.setVideoSurface(holder.surface)
                         }
 
@@ -4103,11 +4367,19 @@ class PlayerActivity : BaseActivity() {
 
                 renderView.surfaceTextureListener =
                     object : TextureView.SurfaceTextureListener {
-                        override fun onSurfaceTextureAvailable(surface: SurfaceTexture, width: Int, height: Int) {
+                        override fun onSurfaceTextureAvailable(
+                            surface: SurfaceTexture,
+                            width: Int,
+                            height: Int,
+                        ) {
                             setSurface(surface)
                         }
 
-                        override fun onSurfaceTextureSizeChanged(surface: SurfaceTexture, width: Int, height: Int) {}
+                        override fun onSurfaceTextureSizeChanged(
+                            surface: SurfaceTexture,
+                            width: Int,
+                            height: Int,
+                        ) {}
 
                         override fun onSurfaceTextureDestroyed(surface: SurfaceTexture): Boolean {
                             setSurface(null)
@@ -4132,175 +4404,229 @@ class PlayerActivity : BaseActivity() {
             return
         }
 
-        val editText = android.widget.EditText(this).apply {
-            hint = "输入弹幕内容"
-            maxLines = 1
-            setSingleLine(true)
-            val dp16 = (16 * resources.displayMetrics.density).toInt()
-            setPadding(dp16, dp16, dp16, dp16)
-        }
+        val editText =
+            android.widget.EditText(this).apply {
+                hint = "输入弹幕内容"
+                maxLines = 1
+                setSingleLine(true)
+                val dp16 = (16 * resources.displayMetrics.density).toInt()
+                setPadding(dp16, dp16, dp16, dp16)
+            }
 
         // 颜色选择
-        val colors = intArrayOf(
-            0xFFFFFF, // 白
-            0xFE0302, // 红
-            0xFFAA00, // 橙
-            0x00FF00, // 绿
-            0x00CCFF, // 蓝
-            0xFF6699, // 粉
-        )
+        val colors =
+            intArrayOf(
+                0xFFFFFF, // 白
+                0xFE0302, // 红
+                0xFFAA00, // 橙
+                0x00FF00, // 绿
+                0x00CCFF, // 蓝
+                0xFF6699, // 粉
+            )
         val colorNames = arrayOf("白色", "红色", "橙色", "绿色", "蓝色", "粉色")
         var selectedColor = 0xFFFFFF
         var selectedMode = 1 // 1=滚动, 4=底部, 5=顶部
 
-        val colorLayout = android.widget.LinearLayout(this).apply {
-            orientation = android.widget.LinearLayout.HORIZONTAL
-            val dp8 = (8 * resources.displayMetrics.density).toInt()
-            setPadding(dp8, 0, dp8, 0)
-        }
+        val colorLayout =
+            android.widget.LinearLayout(this).apply {
+                orientation = android.widget.LinearLayout.HORIZONTAL
+                val dp8 = (8 * resources.displayMetrics.density).toInt()
+                setPadding(dp8, 0, dp8, 0)
+            }
         val colorButtons = mutableListOf<android.view.View>()
         colors.forEachIndexed { index, color ->
-            val btn = android.view.View(this).apply {
-                val dp24 = (24 * resources.displayMetrics.density).toInt()
-                layoutParams = android.widget.LinearLayout.LayoutParams(dp24, dp24).apply {
-                    val dp4 = (4 * resources.displayMetrics.density).toInt()
-                    marginStart = dp4
-                    marginEnd = dp4
-                }
-                setBackgroundColor(android.graphics.Color.rgb(
-                    (color shr 16) and 0xFF,
-                    (color shr 8) and 0xFF,
-                    color and 0xFF
-                ))
-                if (index == 0) {
-                    setBackground(android.graphics.drawable.GradientDrawable().apply {
-                        setStroke(3, android.graphics.Color.YELLOW)
-                        setColor(android.graphics.Color.rgb(
+            val btn =
+                android.view.View(this).apply {
+                    val dp24 = (24 * resources.displayMetrics.density).toInt()
+                    layoutParams =
+                        android.widget.LinearLayout.LayoutParams(dp24, dp24).apply {
+                            val dp4 = (4 * resources.displayMetrics.density).toInt()
+                            marginStart = dp4
+                            marginEnd = dp4
+                        }
+                    setBackgroundColor(
+                        android.graphics.Color.rgb(
                             (color shr 16) and 0xFF,
                             (color shr 8) and 0xFF,
-                            color and 0xFF
-                        ))
-                    })
-                }
-                setOnClickListener {
-                    selectedColor = colors[index]
-                    // 更新选中状态
-                    colorButtons.forEachIndexed { i, v ->
-                        v.setBackground(android.graphics.drawable.GradientDrawable().apply {
-                            if (i == index) setStroke(3, android.graphics.Color.YELLOW)
-                            setColor(android.graphics.Color.rgb(
-                                (colors[i] shr 16) and 0xFF,
-                                (colors[i] shr 8) and 0xFF,
-                                colors[i] and 0xFF
-                            ))
-                        })
+                            color and 0xFF,
+                        ),
+                    )
+                    if (index == 0) {
+                        setBackground(
+                            android.graphics.drawable.GradientDrawable().apply {
+                                setStroke(3, android.graphics.Color.YELLOW)
+                                setColor(
+                                    android.graphics.Color.rgb(
+                                        (color shr 16) and 0xFF,
+                                        (color shr 8) and 0xFF,
+                                        color and 0xFF,
+                                    ),
+                                )
+                            },
+                        )
+                    }
+                    setOnClickListener {
+                        selectedColor = colors[index]
+                        // 更新选中状态
+                        colorButtons.forEachIndexed { i, v ->
+                            v.setBackground(
+                                android.graphics.drawable.GradientDrawable().apply {
+                                    if (i == index) setStroke(3, android.graphics.Color.YELLOW)
+                                    setColor(
+                                        android.graphics.Color.rgb(
+                                            (colors[i] shr 16) and 0xFF,
+                                            (colors[i] shr 8) and 0xFF,
+                                            colors[i] and 0xFF,
+                                        ),
+                                    )
+                                },
+                            )
+                        }
                     }
                 }
-            }
             colorButtons.add(btn)
             colorLayout.addView(btn)
         }
 
         // 模式选择
-        val modeLayout = android.widget.LinearLayout(this).apply {
-            orientation = android.widget.LinearLayout.HORIZONTAL
-            val dp8 = (8 * resources.displayMetrics.density).toInt()
-            setPadding(dp8, 0, dp8, 0)
-        }
+        val modeLayout =
+            android.widget.LinearLayout(this).apply {
+                orientation = android.widget.LinearLayout.HORIZONTAL
+                val dp8 = (8 * resources.displayMetrics.density).toInt()
+                setPadding(dp8, 0, dp8, 0)
+            }
         val modeNames = arrayOf("滚动", "底部", "顶部")
         val modeValues = intArrayOf(1, 4, 5)
         var selectedModeBtn = 0
         val modeButtons = mutableListOf<android.widget.Button>()
         modeNames.forEachIndexed { index, name ->
-            val btn = android.widget.Button(this).apply {
-                text = name
-                textSize = 12f
-                val dp4 = (4 * resources.displayMetrics.density).toInt()
-                setPadding(dp4, dp4, dp4, dp4)
-                if (index == 0) {
-                    setBackgroundTintList(android.content.res.ColorStateList.valueOf(android.graphics.Color.parseColor("#FF6699")))
-                }
-                setOnClickListener {
-                    selectedMode = modeValues[index]
-                    selectedModeBtn = index
-                    modeButtons.forEachIndexed { i, v ->
-                        v.setBackgroundTintList(android.content.res.ColorStateList.valueOf(
-                            if (i == index) android.graphics.Color.parseColor("#FF6699") else android.graphics.Color.DKGRAY
-                        ))
+            val btn =
+                android.widget.Button(this).apply {
+                    text = name
+                    textSize = 12f
+                    val dp4 = (4 * resources.displayMetrics.density).toInt()
+                    setPadding(dp4, dp4, dp4, dp4)
+                    if (index == 0) {
+                        setBackgroundTintList(
+                            android.content.res.ColorStateList
+                                .valueOf(android.graphics.Color.parseColor("#FF6699")),
+                        )
+                    }
+                    setOnClickListener {
+                        selectedMode = modeValues[index]
+                        selectedModeBtn = index
+                        modeButtons.forEachIndexed { i, v ->
+                            v.setBackgroundTintList(
+                                android.content.res.ColorStateList.valueOf(
+                                    if (i == index) android.graphics.Color.parseColor("#FF6699") else android.graphics.Color.DKGRAY,
+                                ),
+                            )
+                        }
                     }
                 }
-            }
             modeButtons.add(btn)
             modeLayout.addView(btn)
         }
 
-        val container = android.widget.LinearLayout(this).apply {
-            orientation = android.widget.LinearLayout.VERTICAL
-            val dp16 = (16 * resources.displayMetrics.density).toInt()
-            setPadding(dp16, dp16, dp16, 0)
-            addView(editText, android.widget.LinearLayout.LayoutParams(android.widget.LinearLayout.LayoutParams.MATCH_PARENT, android.widget.LinearLayout.LayoutParams.WRAP_CONTENT))
-            addView(colorLayout, android.widget.LinearLayout.LayoutParams(android.widget.LinearLayout.LayoutParams.MATCH_PARENT, android.widget.LinearLayout.LayoutParams.WRAP_CONTENT).apply {
-                topMargin = (8 * resources.displayMetrics.density).toInt()
-            })
-            addView(modeLayout, android.widget.LinearLayout.LayoutParams(android.widget.LinearLayout.LayoutParams.MATCH_PARENT, android.widget.LinearLayout.LayoutParams.WRAP_CONTENT).apply {
-                topMargin = (8 * resources.displayMetrics.density).toInt()
-            })
+        val container =
+            android.widget.LinearLayout(this).apply {
+                orientation = android.widget.LinearLayout.VERTICAL
+                val dp16 = (16 * resources.displayMetrics.density).toInt()
+                setPadding(dp16, dp16, dp16, 0)
+                addView(
+                    editText,
+                    android.widget.LinearLayout.LayoutParams(
+                        android.widget.LinearLayout.LayoutParams.MATCH_PARENT,
+                        android.widget.LinearLayout.LayoutParams.WRAP_CONTENT,
+                    ),
+                )
+                addView(
+                    colorLayout,
+                    android.widget.LinearLayout
+                        .LayoutParams(
+                            android.widget.LinearLayout.LayoutParams.MATCH_PARENT,
+                            android.widget.LinearLayout.LayoutParams.WRAP_CONTENT,
+                        ).apply {
+                            topMargin = (8 * resources.displayMetrics.density).toInt()
+                        },
+                )
+                addView(
+                    modeLayout,
+                    android.widget.LinearLayout
+                        .LayoutParams(
+                            android.widget.LinearLayout.LayoutParams.MATCH_PARENT,
+                            android.widget.LinearLayout.LayoutParams.WRAP_CONTENT,
+                        ).apply {
+                            topMargin = (8 * resources.displayMetrics.density).toInt()
+                        },
+                )
 
-            // v6.7: 弹幕发送历史
-            val history = BiliClient.prefs.danmakuSendHistory
-            if (history.isNotEmpty()) {
-                val historyLabelRow = android.widget.LinearLayout(this@PlayerActivity).apply {
-                    orientation = android.widget.LinearLayout.HORIZONTAL
-                    val dp8 = (8 * resources.displayMetrics.density).toInt()
-                    setPadding(0, dp8, 0, 0)
-                    gravity = android.view.Gravity.CENTER_VERTICAL
-                }
-                val historyLabel = android.widget.TextView(this@PlayerActivity).apply {
-                    text = "最近发送"
-                    textSize = 12f
-                    setTextColor(android.graphics.Color.GRAY)
-                }
-                historyLabelRow.addView(historyLabel, android.widget.LinearLayout.LayoutParams(0, android.widget.LinearLayout.LayoutParams.WRAP_CONTENT, 1f))
-                addView(historyLabelRow)
+                // v6.7: 弹幕发送历史
+                val history = BiliClient.prefs.danmakuSendHistory
+                if (history.isNotEmpty()) {
+                    val historyLabelRow =
+                        android.widget.LinearLayout(this@PlayerActivity).apply {
+                            orientation = android.widget.LinearLayout.HORIZONTAL
+                            val dp8 = (8 * resources.displayMetrics.density).toInt()
+                            setPadding(0, dp8, 0, 0)
+                            gravity = android.view.Gravity.CENTER_VERTICAL
+                        }
+                    val historyLabel =
+                        android.widget.TextView(this@PlayerActivity).apply {
+                            text = "最近发送"
+                            textSize = 12f
+                            setTextColor(android.graphics.Color.GRAY)
+                        }
+                    historyLabelRow.addView(
+                        historyLabel,
+                        android.widget.LinearLayout.LayoutParams(0, android.widget.LinearLayout.LayoutParams.WRAP_CONTENT, 1f),
+                    )
+                    addView(historyLabelRow)
 
-                val historyLayout = android.widget.LinearLayout(this@PlayerActivity).apply {
-                    orientation = android.widget.LinearLayout.HORIZONTAL
-                    val dp4 = (4 * resources.displayMetrics.density).toInt()
-                    setPadding(0, dp4, 0, 0)
-                }
-                // v9.8: 清空历史按钮
-                val clearBtn = android.widget.TextView(this@PlayerActivity).apply {
-                    text = "清空"
-                    textSize = 12f
-                    setTextColor(android.graphics.Color.parseColor("#FF6666"))
-                    setOnClickListener {
-                        BiliClient.prefs.clearDanmakuSendHistory()
-                        historyLabelRow.visibility = android.view.View.GONE
-                        historyLayout.visibility = android.view.View.GONE
-                        AppToast.show(this@PlayerActivity, "已清空发送历史")
+                    val historyLayout =
+                        android.widget.LinearLayout(this@PlayerActivity).apply {
+                            orientation = android.widget.LinearLayout.HORIZONTAL
+                            val dp4 = (4 * resources.displayMetrics.density).toInt()
+                            setPadding(0, dp4, 0, 0)
+                        }
+                    // v9.8: 清空历史按钮
+                    val clearBtn =
+                        android.widget.TextView(this@PlayerActivity).apply {
+                            text = "清空"
+                            textSize = 12f
+                            setTextColor(android.graphics.Color.parseColor("#FF6666"))
+                            setOnClickListener {
+                                BiliClient.prefs.clearDanmakuSendHistory()
+                                historyLabelRow.visibility = android.view.View.GONE
+                                historyLayout.visibility = android.view.View.GONE
+                                AppToast.show(this@PlayerActivity, "已清空发送历史")
+                            }
+                        }
+                    historyLabelRow.addView(clearBtn)
+                    history.forEach { text ->
+                        val chip =
+                            android.widget.TextView(this@PlayerActivity).apply {
+                                this.text = text
+                                textSize = 13f
+                                val dp8 = (8 * resources.displayMetrics.density).toInt()
+                                val dp4 = (4 * resources.displayMetrics.density).toInt()
+                                setPadding(dp8, dp4, dp8, dp4)
+                                setBackground(
+                                    android.graphics.drawable.GradientDrawable().apply {
+                                        setStroke(2, android.graphics.Color.DKGRAY)
+                                        cornerRadius = 4f * resources.displayMetrics.density
+                                    },
+                                )
+                                setOnClickListener { editText.setText(text) }
+                            }
+                        historyLayout.addView(chip)
                     }
+                    addView(historyLayout)
                 }
-                historyLabelRow.addView(clearBtn)
-                history.forEach { text ->
-                    val chip = android.widget.TextView(this@PlayerActivity).apply {
-                        this.text = text
-                        textSize = 13f
-                        val dp8 = (8 * resources.displayMetrics.density).toInt()
-                        val dp4 = (4 * resources.displayMetrics.density).toInt()
-                        setPadding(dp8, dp4, dp8, dp4)
-                        setBackground(android.graphics.drawable.GradientDrawable().apply {
-                            setStroke(2, android.graphics.Color.DKGRAY)
-                            cornerRadius = 4f * resources.displayMetrics.density
-                        })
-                        setOnClickListener { editText.setText(text) }
-                    }
-                    historyLayout.addView(chip)
-                }
-                addView(historyLayout)
             }
-        }
 
-        android.app.AlertDialog.Builder(this)
+        android.app.AlertDialog
+            .Builder(this)
             .setTitle("发送弹幕")
             .setView(container)
             .setPositiveButton("发送") { _, _ ->
@@ -4322,13 +4648,13 @@ class PlayerActivity : BaseActivity() {
                         try {
                             val vib = getSystemService(android.content.Context.VIBRATOR_SERVICE) as? android.os.Vibrator
                             vib?.vibrate(android.os.VibrationEffect.createOneShot(50, android.os.VibrationEffect.DEFAULT_AMPLITUDE))
-                        } catch (_: Throwable) {}
+                        } catch (_: Throwable) {
+                        }
                     } catch (t: Throwable) {
                         AppToast.show(this@PlayerActivity, "发送失败: ${t.message}")
                     }
                 }
-            }
-            .setNegativeButton("取消", null)
+            }.setNegativeButton("取消", null)
             .show()
     }
 }

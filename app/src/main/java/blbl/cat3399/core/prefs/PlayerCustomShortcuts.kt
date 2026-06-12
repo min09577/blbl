@@ -19,9 +19,11 @@ internal enum class PlayerCustomShortcutOpenVideoListTarget(
     ;
 
     companion object {
-        fun fromValueOrNull(raw: String?): PlayerCustomShortcutOpenVideoListTarget? {
-            return entries.firstOrNull { it.value == raw?.trim()?.lowercase() }
-        }
+        fun fromValueOrNull(raw: String?): PlayerCustomShortcutOpenVideoListTarget? =
+            entries.firstOrNull {
+                it.value ==
+                    raw?.trim()?.lowercase()
+            }
     }
 }
 
@@ -166,7 +168,8 @@ internal object PlayerCustomShortcutsStore {
         if (text.isBlank()) return emptyList()
 
         val arr =
-            runCatching { JSONObject(text) }.getOrNull()
+            runCatching { JSONObject(text) }
+                .getOrNull()
                 ?.takeIf { it.optInt(KEY_VERSION, JSON_VERSION) == JSON_VERSION }
                 ?.optJSONArray(KEY_ITEMS)
                 ?: runCatching { JSONArray(text) }.getOrNull()
@@ -206,7 +209,10 @@ internal object PlayerCustomShortcutsStore {
             .toString()
     }
 
-    fun upsert(existing: List<PlayerCustomShortcut>, binding: PlayerCustomShortcut): List<PlayerCustomShortcut> {
+    fun upsert(
+        existing: List<PlayerCustomShortcut>,
+        binding: PlayerCustomShortcut,
+    ): List<PlayerCustomShortcut> {
         if (binding.keyCode <= 0 || isForbiddenKeyCode(binding.keyCode)) return normalize(existing)
         val out = existing.toMutableList()
         val idx = out.indexOfFirst { it.keyCode == binding.keyCode }
@@ -218,7 +224,10 @@ internal object PlayerCustomShortcutsStore {
         return normalize(out)
     }
 
-    fun remove(existing: List<PlayerCustomShortcut>, keyCode: Int): List<PlayerCustomShortcut> {
+    fun remove(
+        existing: List<PlayerCustomShortcut>,
+        keyCode: Int,
+    ): List<PlayerCustomShortcut> {
         if (keyCode <= 0) return normalize(existing)
         return normalize(existing.filterNot { it.keyCode == keyCode })
     }
@@ -241,11 +250,15 @@ internal object PlayerCustomShortcutsStore {
         return outReversed
     }
 
-    private fun parseAction(type: String, params: JSONObject?): PlayerCustomShortcutAction? {
+    private fun parseAction(
+        type: String,
+        params: JSONObject?,
+    ): PlayerCustomShortcutAction? {
         return when (type) {
             PlayerCustomShortcutAction.TYPE_OPEN_VIDEO_LIST -> {
-                val target = PlayerCustomShortcutOpenVideoListTarget.fromValueOrNull(params?.optString("target"))
-                    ?: return null
+                val target =
+                    PlayerCustomShortcutOpenVideoListTarget.fromValueOrNull(params?.optString("target"))
+                        ?: return null
                 PlayerCustomShortcutAction.OpenVideoList(target = target)
             }
             PlayerCustomShortcutAction.TYPE_OPEN_COMMENTS -> PlayerCustomShortcutAction.OpenComments
@@ -307,7 +320,10 @@ internal object PlayerCustomShortcutsStore {
                 val raw = params?.optString("lang", "")?.trim().orEmpty()
                 val lang =
                     when {
-                        raw.equals(PlayerCustomShortcutAction.SUBTITLE_LANG_DEFAULT, ignoreCase = true) -> PlayerCustomShortcutAction.SUBTITLE_LANG_DEFAULT
+                        raw.equals(
+                            PlayerCustomShortcutAction.SUBTITLE_LANG_DEFAULT,
+                            ignoreCase = true,
+                        ) -> PlayerCustomShortcutAction.SUBTITLE_LANG_DEFAULT
                         raw.isBlank() -> PlayerCustomShortcutAction.SUBTITLE_LANG_DEFAULT
                         raw.length > 32 -> raw.take(32)
                         else -> raw
@@ -349,8 +365,8 @@ internal object PlayerCustomShortcutsStore {
         }
     }
 
-    private fun buildActionParams(action: PlayerCustomShortcutAction): JSONObject? {
-        return when (action) {
+    private fun buildActionParams(action: PlayerCustomShortcutAction): JSONObject? =
+        when (action) {
             is PlayerCustomShortcutAction.OpenVideoList ->
                 JSONObject().put("target", action.target.value)
 
@@ -404,5 +420,4 @@ internal object PlayerCustomShortcutsStore {
             is PlayerCustomShortcutAction.SetDanmakuArea ->
                 JSONObject().put("area", action.area.toDouble())
         }
-    }
 }

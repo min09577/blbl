@@ -10,7 +10,6 @@ import android.view.MotionEvent
 import android.view.View
 import android.view.ViewConfiguration
 import android.widget.TextView
-import java.util.Locale
 import androidx.lifecycle.LifecycleCoroutineScope
 import androidx.lifecycle.lifecycleScope
 import blbl.cat3399.R
@@ -21,6 +20,7 @@ import blbl.cat3399.feature.player.engine.BlblPlayerEngine
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
+import java.util.Locale
 import kotlin.math.abs
 import kotlin.math.roundToInt
 
@@ -70,10 +70,18 @@ internal interface PlayerTouchGestureHost {
         get() = null
 
     fun setControlsVisibleFromTouch(visible: Boolean)
+
     fun closeSidePanelFromTouch(): Boolean
+
     fun togglePlayPauseFromTouch()
+
     fun noteUserInteractionFromTouch()
-    fun showTouchHint(text: String, hold: Boolean)
+
+    fun showTouchHint(
+        text: String,
+        hold: Boolean,
+    )
+
     fun scheduleHideTouchHint()
 }
 
@@ -82,20 +90,35 @@ internal interface PlayerTouchSeekDelegate {
     var tapSeekActiveUntilMs: Long
 
     fun smartSeekFromTouch(direction: Int)
+
     fun beginTouchSeek(): PlayerTouchSeekSnapshot?
+
     fun setTouchSeekPreviewPosition(positionMs: Long?)
-    fun showTouchSeekPreview(posMs: Long, durationMs: Long, bufferedPositionMs: Long)
-    fun finishTouchSeek(targetMs: Long, durationMs: Long, commit: Boolean)
+
+    fun showTouchSeekPreview(
+        posMs: Long,
+        durationMs: Long,
+        bufferedPositionMs: Long,
+    )
+
+    fun finishTouchSeek(
+        targetMs: Long,
+        durationMs: Long,
+        commit: Boolean,
+    )
 }
 
 internal interface PlayerTouchBoostDelegate {
     fun touchBoostSpeed(): Float
+
     fun touchBoostSpeedText(speed: Float): String
 }
 
 private class VodPlayerTouchHost(
     private val playerActivity: PlayerActivity,
-) : PlayerTouchGestureHost, PlayerTouchSeekDelegate, PlayerTouchBoostDelegate {
+) : PlayerTouchGestureHost,
+    PlayerTouchSeekDelegate,
+    PlayerTouchBoostDelegate {
     override val activity: Activity
         get() = playerActivity
     override val binding: ActivityPlayerBinding
@@ -169,7 +192,11 @@ private class VodPlayerTouchHost(
         playerActivity.holdScrubPreviewPosMs = positionMs
     }
 
-    override fun showTouchSeekPreview(posMs: Long, durationMs: Long, bufferedPositionMs: Long) {
+    override fun showTouchSeekPreview(
+        posMs: Long,
+        durationMs: Long,
+        bufferedPositionMs: Long,
+    ) {
         playerActivity.showSeekOsd(
             posMs = posMs,
             durationMs = durationMs,
@@ -177,7 +204,11 @@ private class VodPlayerTouchHost(
         )
     }
 
-    override fun finishTouchSeek(targetMs: Long, durationMs: Long, commit: Boolean) {
+    override fun finishTouchSeek(
+        targetMs: Long,
+        durationMs: Long,
+        commit: Boolean,
+    ) {
         val engine = playerActivity.player
         playerActivity.holdScrubPreviewPosMs = null
         playerActivity.scrubbing = false
@@ -197,7 +228,10 @@ private class VodPlayerTouchHost(
         playerActivity.restartAutoHideTimer()
     }
 
-    override fun showTouchHint(text: String, hold: Boolean) {
+    override fun showTouchHint(
+        text: String,
+        hold: Boolean,
+    ) {
         playerActivity.showSeekHint(text, hold)
     }
 
@@ -252,11 +286,12 @@ internal class PlayerTouchController(
         get() = host.binding
 
     // v4.8: 手势灵敏度 (1=低, 2=中, 3=高)
-    private val sensitivityMultiplier: Float = when (BiliClient.prefs.playerGestureSensitivity) {
-        1 -> 1.5f  // 低灵敏度：需要更多位移
-        3 -> 0.7f  // 高灵敏度：更少位移即可触发
-        else -> 1f // 中等（默认）
-    }
+    private val sensitivityMultiplier: Float =
+        when (BiliClient.prefs.playerGestureSensitivity) {
+            1 -> 1.5f // 低灵敏度：需要更多位移
+            3 -> 0.7f // 高灵敏度：更少位移即可触发
+            else -> 1f // 中等（默认）
+        }
 
     private val touchSlopPx = ViewConfiguration.get(activity).scaledTouchSlop.toFloat()
     private val displayDensity = activity.resources.displayMetrics.density
@@ -292,13 +327,15 @@ internal class PlayerTouchController(
                                 try {
                                     val likeBtn = host.binding.root.findViewById<android.view.View>(blbl.cat3399.R.id.btn_like)
                                     likeBtn?.performClick()
-                                } catch (_: Throwable) {}
+                                } catch (_: Throwable) {
+                                }
                             }
                             2 -> { // 弹幕开关
                                 try {
                                     val danmakuBtn = host.binding.root.findViewById<android.view.View>(blbl.cat3399.R.id.btn_danmaku)
                                     danmakuBtn?.performClick()
-                                } catch (_: Throwable) {}
+                                } catch (_: Throwable) {
+                                }
                             }
                             else -> host.togglePlayPauseFromTouch()
                         }
@@ -412,7 +449,10 @@ internal class PlayerTouchController(
         overlayBinding.root.visibility = View.GONE
     }
 
-    private fun onTouch(v: View, event: MotionEvent): Boolean {
+    private fun onTouch(
+        v: View,
+        event: MotionEvent,
+    ): Boolean {
         if (touchLocked) {
             handleLockedTouch(event)
             return true
@@ -780,14 +820,23 @@ internal class PlayerTouchController(
             tvSpeed.text = String.format(Locale.US, "%.1fx", speed)
             indicator.visibility = View.VISIBLE
             indicator.alpha = 0f
-            indicator.animate().alpha(1f).setDuration(150).start()
+            indicator
+                .animate()
+                .alpha(1f)
+                .setDuration(150)
+                .start()
         }
     }
 
     private fun hideBoostIndicator() {
         val indicator = overlayBinding.root.findViewById<View>(R.id.boost_indicator)
         indicator?.let {
-            it.animate().alpha(0f).setDuration(100).withEndAction { it.visibility = View.GONE }.start()
+            it
+                .animate()
+                .alpha(0f)
+                .setDuration(100)
+                .withEndAction { it.visibility = View.GONE }
+                .start()
         }
     }
 
@@ -860,26 +909,35 @@ internal class PlayerTouchController(
             )
     }
 
-    private fun gestureLayerWidth(): Float {
-        return overlayBinding.touchGestureLayer.width.toFloat().takeIf { it > 0f }
+    private fun gestureLayerWidth(): Float =
+        overlayBinding.touchGestureLayer.width
+            .toFloat()
+            .takeIf { it > 0f }
             ?: binding.playerView.width.toFloat()
-    }
 
-    private fun gestureLayerHeight(): Float {
-        return overlayBinding.touchGestureLayer.height.toFloat().takeIf { it > 0f }
+    private fun gestureLayerHeight(): Float =
+        overlayBinding.touchGestureLayer.height
+            .toFloat()
+            .takeIf { it > 0f }
             ?: binding.playerView.height.toFloat()
-    }
 
-    private fun hasExceededTouchSlop(x: Float, y: Float): Boolean {
-        return abs(x - downX) > touchSlopPx || abs(y - downY) > touchSlopPx
-    }
+    private fun hasExceededTouchSlop(
+        x: Float,
+        y: Float,
+    ): Boolean = abs(x - downX) > touchSlopPx || abs(y - downY) > touchSlopPx
 
-    private fun shouldBlockGestureRecognition(absDx: Float, absDy: Float): Boolean {
-        return absDx > touchSlopPx * PlayerActivity.TOUCH_GESTURE_BLOCK_THRESHOLD_MULTIPLIER ||
+    private fun shouldBlockGestureRecognition(
+        absDx: Float,
+        absDy: Float,
+    ): Boolean =
+        absDx > touchSlopPx * PlayerActivity.TOUCH_GESTURE_BLOCK_THRESHOLD_MULTIPLIER ||
             absDy > touchSlopPx * PlayerActivity.TOUCH_GESTURE_BLOCK_THRESHOLD_MULTIPLIER
-    }
 
-    private fun computeSeekDeltaMs(dx: Float, width: Float, durationMs: Long): Long {
+    private fun computeSeekDeltaMs(
+        dx: Float,
+        width: Float,
+        durationMs: Long,
+    ): Long {
         val fullWidthMs =
             (durationMs.toDouble() * PlayerActivity.TOUCH_GESTURE_SEEK_RATIO.toDouble())
                 .roundToInt()
@@ -908,62 +966,83 @@ internal class PlayerTouchController(
         private const val touchTapSeekActiveMs = 1_200L
     }
 
-    private fun edgeDirection(x: Float, width: Float): Int {
-        return when {
+    private fun edgeDirection(
+        x: Float,
+        width: Float,
+    ): Int =
+        when {
             x < width * PlayerActivity.EDGE_TAP_THRESHOLD -> -1
             x > width * (1f - PlayerActivity.EDGE_TAP_THRESHOLD) -> +1
             else -> 0
         }
-    }
 
     // v4.4: Gesture direction indicator helpers
-    private fun showVerticalIndicator(iconRes: Int, label: String, progress: Int) {
+    private fun showVerticalIndicator(
+        iconRes: Int,
+        label: String,
+        progress: Int,
+    ) {
         try {
-            val container = overlayBinding.root.findViewById<android.widget.LinearLayout>(
-                blbl.cat3399.R.id.gesture_vertical_indicator
-            ) ?: return
-            val arrow = overlayBinding.root.findViewById<android.widget.ImageView>(
-                blbl.cat3399.R.id.gesture_vertical_arrow
-            )
-            val progressBar = overlayBinding.root.findViewById<android.widget.ProgressBar>(
-                blbl.cat3399.R.id.gesture_vertical_progress
-            )
-            val text = overlayBinding.root.findViewById<android.widget.TextView>(
-                blbl.cat3399.R.id.gesture_vertical_text
-            )
+            val container =
+                overlayBinding.root.findViewById<android.widget.LinearLayout>(
+                    blbl.cat3399.R.id.gesture_vertical_indicator,
+                ) ?: return
+            val arrow =
+                overlayBinding.root.findViewById<android.widget.ImageView>(
+                    blbl.cat3399.R.id.gesture_vertical_arrow,
+                )
+            val progressBar =
+                overlayBinding.root.findViewById<android.widget.ProgressBar>(
+                    blbl.cat3399.R.id.gesture_vertical_progress,
+                )
+            val text =
+                overlayBinding.root.findViewById<android.widget.TextView>(
+                    blbl.cat3399.R.id.gesture_vertical_text,
+                )
             arrow?.setImageResource(iconRes)
             progressBar?.progress = progress
             text?.text = "$label $progress%"
             container.visibility = android.view.View.VISIBLE
             // hide seek indicator if visible
-            overlayBinding.root.findViewById<android.widget.LinearLayout>(
-                blbl.cat3399.R.id.gesture_seek_indicator
-            )?.visibility = android.view.View.GONE
-        } catch (_: Throwable) { }
+            overlayBinding.root
+                .findViewById<android.widget.LinearLayout>(
+                    blbl.cat3399.R.id.gesture_seek_indicator,
+                )?.visibility = android.view.View.GONE
+        } catch (_: Throwable) {
+        }
     }
 
-    private fun updateVerticalIndicator(progress: Int, arrow: String) {
+    private fun updateVerticalIndicator(
+        progress: Int,
+        arrow: String,
+    ) {
         try {
-            val progressBar = overlayBinding.root.findViewById<android.widget.ProgressBar>(
-                blbl.cat3399.R.id.gesture_vertical_progress
-            )
-            val text = overlayBinding.root.findViewById<android.widget.TextView>(
-                blbl.cat3399.R.id.gesture_vertical_text
-            )
+            val progressBar =
+                overlayBinding.root.findViewById<android.widget.ProgressBar>(
+                    blbl.cat3399.R.id.gesture_vertical_progress,
+                )
+            val text =
+                overlayBinding.root.findViewById<android.widget.TextView>(
+                    blbl.cat3399.R.id.gesture_vertical_text,
+                )
             progressBar?.progress = progress
             val label = text?.text?.toString()?.substringBefore(" ") ?: ""
             text?.text = "$label $progress% $arrow"
-        } catch (_: Throwable) { }
+        } catch (_: Throwable) {
+        }
     }
 
     private fun hideGestureIndicators() {
         try {
-            overlayBinding.root.findViewById<android.widget.LinearLayout>(
-                blbl.cat3399.R.id.gesture_vertical_indicator
-            )?.visibility = android.view.View.GONE
-            overlayBinding.root.findViewById<android.widget.LinearLayout>(
-                blbl.cat3399.R.id.gesture_seek_indicator
-            )?.visibility = android.view.View.GONE
-        } catch (_: Throwable) { }
+            overlayBinding.root
+                .findViewById<android.widget.LinearLayout>(
+                    blbl.cat3399.R.id.gesture_vertical_indicator,
+                )?.visibility = android.view.View.GONE
+            overlayBinding.root
+                .findViewById<android.widget.LinearLayout>(
+                    blbl.cat3399.R.id.gesture_seek_indicator,
+                )?.visibility = android.view.View.GONE
+        } catch (_: Throwable) {
+        }
     }
 }

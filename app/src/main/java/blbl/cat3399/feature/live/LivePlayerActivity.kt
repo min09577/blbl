@@ -3,6 +3,7 @@
 package blbl.cat3399.feature.live
 
 import android.content.Intent
+import android.graphics.SurfaceTexture
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
@@ -10,24 +11,18 @@ import android.os.SystemClock
 import android.util.TypedValue
 import android.view.KeyEvent
 import android.view.LayoutInflater
-import android.graphics.SurfaceTexture
 import android.view.Surface
 import android.view.SurfaceHolder
 import android.view.SurfaceView
 import android.view.TextureView
 import android.view.View
 import android.view.ViewGroup
-import android.view.ViewGroup.MarginLayoutParams
 import android.widget.FrameLayout
-import androidx.core.content.ContextCompat
 import androidx.lifecycle.LifecycleCoroutineScope
 import androidx.lifecycle.lifecycleScope
-import androidx.media3.common.C
 import androidx.media3.common.Format
-import androidx.media3.common.MediaItem
 import androidx.media3.common.PlaybackException
 import androidx.media3.common.Player
-import androidx.media3.datasource.okhttp.OkHttpDataSource
 import androidx.media3.exoplayer.DecoderReuseEvaluation
 import androidx.media3.exoplayer.ExoPlayer
 import androidx.media3.exoplayer.analytics.AnalyticsListener
@@ -57,33 +52,33 @@ import blbl.cat3399.databinding.DialogLiveChatBinding
 import blbl.cat3399.feature.player.AudioBalanceLevel
 import blbl.cat3399.feature.player.PlayerBufferingOverlayController
 import blbl.cat3399.feature.player.PlayerCustomShortcutInputPolicy
-import blbl.cat3399.feature.player.applyEyeProtectionMode
 import blbl.cat3399.feature.player.PlayerDebugMetrics
 import blbl.cat3399.feature.player.PlayerOsdSizing
 import blbl.cat3399.feature.player.PlayerSettingsAdapter
 import blbl.cat3399.feature.player.PlayerTouchController
 import blbl.cat3399.feature.player.PlayerTouchGestureHost
-import blbl.cat3399.feature.player.PlayerUpQuickCardController
 import blbl.cat3399.feature.player.PlayerUiMode
+import blbl.cat3399.feature.player.PlayerUpQuickCardController
+import blbl.cat3399.feature.player.applyEyeProtectionMode
 import blbl.cat3399.feature.player.areaText
-import blbl.cat3399.feature.player.danmaku.DanmakuSessionSettings
 import blbl.cat3399.feature.player.danmaku.DanmakuFontWeight
 import blbl.cat3399.feature.player.danmaku.DanmakuLaneDensity
+import blbl.cat3399.feature.player.danmaku.DanmakuSessionSettings
 import blbl.cat3399.feature.player.engine.BlblPlayerEngine
 import blbl.cat3399.feature.player.engine.ExoPlayerEngine
+import blbl.cat3399.feature.player.engine.IjkPlayerEngine
 import blbl.cat3399.feature.player.engine.IjkPlayerPlugin
 import blbl.cat3399.feature.player.engine.IjkPlayerPluginUi
-import blbl.cat3399.feature.player.engine.IjkPlayerEngine
 import blbl.cat3399.feature.player.engine.LiveHlsDebugInfo
-import blbl.cat3399.feature.player.engine.PlayerEngineKind
 import blbl.cat3399.feature.player.engine.PlaybackSource
+import blbl.cat3399.feature.player.engine.PlayerEngineKind
 import blbl.cat3399.feature.player.requirePlayerTouchOverlayBinding
 import kotlinx.coroutines.CancellationException
-import org.json.JSONObject
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.isActive
 import kotlinx.coroutines.launch
+import org.json.JSONObject
 import java.util.Locale
 import kotlin.math.abs
 import kotlin.math.roundToInt
@@ -154,6 +149,7 @@ class LivePlayerActivity : BaseActivity() {
 
     private var session: LiveSession = LiveSession()
     private val debug = PlayerDebugMetrics()
+
     @Volatile private var liveHlsDebugInfo: LiveHlsDebugInfo? = null
 
     private var lastPlay: BiliApi.LivePlayUrl? = null
@@ -174,7 +170,13 @@ class LivePlayerActivity : BaseActivity() {
         val playerInflater = PlayerOsdSizing.cloneInflater(this, layoutInflater)
         val root =
             playerInflater.inflate(
-                if (prefs.playerRenderViewType == AppPrefs.PLAYER_RENDER_VIEW_TEXTURE_VIEW) blbl.cat3399.R.layout.activity_player_texture else blbl.cat3399.R.layout.activity_player,
+                if (prefs.playerRenderViewType ==
+                    AppPrefs.PLAYER_RENDER_VIEW_TEXTURE_VIEW
+                ) {
+                    blbl.cat3399.R.layout.activity_player_texture
+                } else {
+                    blbl.cat3399.R.layout.activity_player
+                },
                 null,
             )
         binding = ActivityPlayerBinding.bind(root)
@@ -201,23 +203,25 @@ class LivePlayerActivity : BaseActivity() {
         }
 
         val sessionOverrideJson =
-            intent.getStringExtra(EXTRA_ENGINE_SWITCH_SESSION_JSON)
+            intent
+                .getStringExtra(EXTRA_ENGINE_SWITCH_SESSION_JSON)
                 ?.trim()
                 ?.takeIf { it.isNotBlank() }
         session =
             LiveSession(
                 engineKind = PlayerEngineKind.fromPrefValue(prefs.playerEngineKind),
                 highBitrateEnabled = prefs.liveHighBitrateEnabled,
-                danmaku = DanmakuSessionSettings(
-                    enabled = prefs.danmakuEnabled,
-                    opacity = prefs.danmakuOpacity,
-                    textSizeSp = prefs.danmakuTextSizeSp,
-                    fontWeight = DanmakuFontWeight.fromPrefValue(prefs.danmakuFontWeight),
-                    strokeWidthPx = prefs.danmakuStrokeWidthPx,
-                    speedLevel = prefs.danmakuSpeed,
-                    area = prefs.danmakuArea,
-                    laneDensity = DanmakuLaneDensity.fromPrefValue(prefs.danmakuLaneDensity),
-                ),
+                danmaku =
+                    DanmakuSessionSettings(
+                        enabled = prefs.danmakuEnabled,
+                        opacity = prefs.danmakuOpacity,
+                        textSizeSp = prefs.danmakuTextSizeSp,
+                        fontWeight = DanmakuFontWeight.fromPrefValue(prefs.danmakuFontWeight),
+                        strokeWidthPx = prefs.danmakuStrokeWidthPx,
+                        speedLevel = prefs.danmakuSpeed,
+                        area = prefs.danmakuArea,
+                        laneDensity = DanmakuLaneDensity.fromPrefValue(prefs.danmakuLaneDensity),
+                    ),
                 debugEnabled = prefs.playerDebugEnabled,
             )
         if (sessionOverrideJson != null) {
@@ -297,17 +301,29 @@ class LivePlayerActivity : BaseActivity() {
                     debug.videoDecoderName = decoderName
                 }
 
-                override fun onVideoInputFormatChanged(eventTime: EventTime, format: Format, decoderReuseEvaluation: DecoderReuseEvaluation?) {
+                override fun onVideoInputFormatChanged(
+                    eventTime: EventTime,
+                    format: Format,
+                    decoderReuseEvaluation: DecoderReuseEvaluation?,
+                ) {
                     debug.videoInputWidth = format.width.takeIf { it > 0 }
                     debug.videoInputHeight = format.height.takeIf { it > 0 }
                     debug.videoInputFps = format.frameRate.takeIf { it > 0f }
                 }
 
-                override fun onDroppedVideoFrames(eventTime: EventTime, droppedFrames: Int, elapsedMs: Long) {
+                override fun onDroppedVideoFrames(
+                    eventTime: EventTime,
+                    droppedFrames: Int,
+                    elapsedMs: Long,
+                ) {
                     debug.droppedFramesTotal += droppedFrames.toLong().coerceAtLeast(0L)
                 }
 
-                override fun onVideoFrameProcessingOffset(eventTime: EventTime, totalProcessingOffsetUs: Long, frameCount: Int) {
+                override fun onVideoFrameProcessingOffset(
+                    eventTime: EventTime,
+                    totalProcessingOffsetUs: Long,
+                    frameCount: Int,
+                ) {
                     val now = eventTime.realtimeMs
                     val last = debug.renderFpsLastAtMs
                     debug.renderFpsLastAtMs = now
@@ -356,7 +372,10 @@ class LivePlayerActivity : BaseActivity() {
                 }
 
                 override fun onPlaybackStateChanged(playbackState: Int) {
-                    if (playbackState == Player.STATE_BUFFERING && debug.lastPlaybackState != Player.STATE_BUFFERING && engine.playWhenReady) {
+                    if (playbackState == Player.STATE_BUFFERING &&
+                        debug.lastPlaybackState != Player.STATE_BUFFERING &&
+                        engine.playWhenReady
+                    ) {
                         debug.rebufferCount++
                     }
                     when (playbackState) {
@@ -366,12 +385,16 @@ class LivePlayerActivity : BaseActivity() {
                             )
                         Player.STATE_READY,
                         Player.STATE_IDLE,
-                        Player.STATE_ENDED -> resetBufferingOverlayState()
+                        Player.STATE_ENDED,
+                        -> resetBufferingOverlayState()
                     }
                     debug.lastPlaybackState = playbackState
                 }
 
-                override fun onVideoSizeChanged(width: Int, height: Int) {
+                override fun onVideoSizeChanged(
+                    width: Int,
+                    height: Int,
+                ) {
                     if (engine.kind != PlayerEngineKind.IjkPlayer) return
                     if (width <= 0 || height <= 0) return
                     debug.videoInputWidth = width
@@ -557,7 +580,10 @@ class LivePlayerActivity : BaseActivity() {
         applyCloseTransitionNoAnim()
     }
 
-    private fun applyRenderForEngine(engine: BlblPlayerEngine, prefs: AppPrefs) {
+    private fun applyRenderForEngine(
+        engine: BlblPlayerEngine,
+        prefs: AppPrefs,
+    ) {
         // Reset any previous IJK render state.
         binding.ijkAspect.visibility = View.GONE
         binding.ijkContainer.removeAllViews()
@@ -612,7 +638,12 @@ class LivePlayerActivity : BaseActivity() {
                             engine.setVideoSurface(holder.surface)
                         }
 
-                        override fun surfaceChanged(holder: SurfaceHolder, format: Int, width: Int, height: Int) {
+                        override fun surfaceChanged(
+                            holder: SurfaceHolder,
+                            format: Int,
+                            width: Int,
+                            height: Int,
+                        ) {
                             engine.setVideoSurface(holder.surface)
                         }
 
@@ -638,11 +669,19 @@ class LivePlayerActivity : BaseActivity() {
 
                 renderView.surfaceTextureListener =
                     object : TextureView.SurfaceTextureListener {
-                        override fun onSurfaceTextureAvailable(surface: SurfaceTexture, width: Int, height: Int) {
+                        override fun onSurfaceTextureAvailable(
+                            surface: SurfaceTexture,
+                            width: Int,
+                            height: Int,
+                        ) {
                             setSurface(surface)
                         }
 
-                        override fun onSurfaceTextureSizeChanged(surface: SurfaceTexture, width: Int, height: Int) {}
+                        override fun onSurfaceTextureSizeChanged(
+                            surface: SurfaceTexture,
+                            width: Int,
+                            height: Int,
+                        ) {}
 
                         override fun onSurfaceTextureDestroyed(surface: SurfaceTexture): Boolean {
                             setSurface(null)
@@ -932,7 +971,10 @@ class LivePlayerActivity : BaseActivity() {
         showSeekHint(text, hold = false)
     }
 
-    private fun showSeekHint(text: String, hold: Boolean = false) {
+    private fun showSeekHint(
+        text: String,
+        hold: Boolean = false,
+    ) {
         binding.tvSeekHint.text = text
         binding.tvSeekHint.visibility = View.VISIBLE
         seekHintJob?.cancel()
@@ -948,7 +990,10 @@ class LivePlayerActivity : BaseActivity() {
             }
     }
 
-    private fun sameFloat(a: Float, b: Float): Boolean {
+    private fun sameFloat(
+        a: Float,
+        b: Float,
+    ): Boolean {
         if (!a.isFinite() || !b.isFinite()) return false
         return kotlin.math.abs(a - b) < 0.0001f
     }
@@ -1045,7 +1090,8 @@ class LivePlayerActivity : BaseActivity() {
         val qn = session.targetQn.takeIf { it > 0 } ?: p?.currentQn ?: LIVE_QN_ORIGINAL
         val qLabel = liveQnLabel(qn, p)
         val lineLabel =
-            p?.lines
+            p
+                ?.lines
                 ?.getOrNull((session.lineOrder - 1).coerceAtLeast(0))
                 ?.let { "线路 ${it.order}" }
                 ?: "自动"
@@ -1055,11 +1101,12 @@ class LivePlayerActivity : BaseActivity() {
                 PlayerEngineKind.ExoPlayer -> "ExoPlayer"
             }
         val balanceLabel = AudioBalanceLevel.fromPrefValue(prefs.playerAudioBalanceLevel).label
-        val fpsLabel = when (session.fps) {
-            30 -> "30 fps"
-            60 -> "60 fps"
-            else -> "原生"
-        }
+        val fpsLabel =
+            when (session.fps) {
+                30 -> "30 fps"
+                60 -> "60 fps"
+                else -> "原生"
+            }
         val list =
             listOf(
                 PlayerSettingsAdapter.SettingItem(key = LivePlayerSettingKeys.QUALITY, title = "清晰度", subtitle = qLabel),
@@ -1072,8 +1119,16 @@ class LivePlayerActivity : BaseActivity() {
                 PlayerSettingsAdapter.SettingItem(key = LivePlayerSettingKeys.FPS, title = "帧数", subtitle = fpsLabel),
                 PlayerSettingsAdapter.SettingItem(key = LivePlayerSettingKeys.AUDIO_BALANCE, title = "音频平衡", subtitle = balanceLabel),
                 PlayerSettingsAdapter.SettingItem(key = LivePlayerSettingKeys.PLAYER_ENGINE, title = "播放器内核", subtitle = engineLabel),
-                PlayerSettingsAdapter.SettingItem(key = LivePlayerSettingKeys.DEBUG_INFO, title = "调试信息", subtitle = if (session.debugEnabled) "开" else "关"),
-                PlayerSettingsAdapter.SettingItem(key = LivePlayerSettingKeys.REMINDER, title = "开播提醒", subtitle = if (LiveReminder.isReminderSet(this, realRoomId)) "已设置" else "未设置"),
+                PlayerSettingsAdapter.SettingItem(
+                    key = LivePlayerSettingKeys.DEBUG_INFO,
+                    title = "调试信息",
+                    subtitle = if (session.debugEnabled) "开" else "关",
+                ),
+                PlayerSettingsAdapter.SettingItem(
+                    key = LivePlayerSettingKeys.REMINDER,
+                    title = "开播提醒",
+                    subtitle = if (LiveReminder.isReminderSet(this, realRoomId)) "已设置" else "未设置",
+                ),
             )
         (binding.recyclerSettings.adapter as? PlayerSettingsAdapter)?.submit(list)
     }
@@ -1092,7 +1147,8 @@ class LivePlayerActivity : BaseActivity() {
         val options = listOf(0, 30, 60)
         val labels = listOf("原生", "30 fps", "60 fps")
         val currentIndex = options.indexOf(session.fps).coerceAtLeast(0)
-        android.app.AlertDialog.Builder(this)
+        android.app.AlertDialog
+            .Builder(this)
             .setTitle("帧数")
             .setSingleChoiceItems(labels.toTypedArray(), currentIndex) { dialog, which ->
                 val newFps = options[which]
@@ -1101,8 +1157,7 @@ class LivePlayerActivity : BaseActivity() {
                 refreshSettings()
                 dialog.dismiss()
                 lifecycleScope.launch { loadAndPlay(initial = false) }
-            }
-            .setNegativeButton("取消", null)
+            }.setNegativeButton("取消", null)
             .show()
     }
 
@@ -1118,12 +1173,13 @@ class LivePlayerActivity : BaseActivity() {
             AppToast.show(this, "已取消开播提醒")
         } else {
             val scheduledTime = System.currentTimeMillis() + 60 * 60 * 1000L
-            val reminder = LiveReminder.Reminder(
-                roomId = roomId,
-                roomTitle = roomTitle,
-                upName = roomUname,
-                scheduledTimeMs = scheduledTime,
-            )
+            val reminder =
+                LiveReminder.Reminder(
+                    roomId = roomId,
+                    roomTitle = roomTitle,
+                    upName = roomUname,
+                    scheduledTimeMs = scheduledTime,
+                )
             val added = LiveReminder.addReminder(this, reminder)
             if (added) {
                 AppToast.show(this, "已设置开播提醒（1小时后）")
@@ -1137,82 +1193,91 @@ class LivePlayerActivity : BaseActivity() {
     // v4.11: 发送直播弹幕对话框
     private fun showSendDanmakuDialog() {
         val history = BiliClient.prefs.liveDanmakuHistory
-        val editText = android.widget.EditText(this).apply {
-            hint = "输入弹幕内容..."
-            setSingleLine(true)
-            val dp16 = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 16f, resources.displayMetrics).toInt()
-            setPadding(dp16, dp16, dp16, dp16)
-        }
+        val editText =
+            android.widget.EditText(this).apply {
+                hint = "输入弹幕内容..."
+                setSingleLine(true)
+                val dp16 = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 16f, resources.displayMetrics).toInt()
+                setPadding(dp16, dp16, dp16, dp16)
+            }
 
-        val historyChips = android.widget.HorizontalScrollView(this).apply {
-            isHorizontalScrollBarEnabled = false
-            visibility = if (history.isEmpty()) android.view.View.GONE else android.view.View.VISIBLE
-        }
-        val chipContainer = android.widget.LinearLayout(this).apply {
-            orientation = android.widget.LinearLayout.HORIZONTAL
-            val dp8 = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 8f, resources.displayMetrics).toInt()
-            setPadding(dp8, 0, dp8, dp8)
-        }
+        val historyChips =
+            android.widget.HorizontalScrollView(this).apply {
+                isHorizontalScrollBarEnabled = false
+                visibility = if (history.isEmpty()) android.view.View.GONE else android.view.View.VISIBLE
+            }
+        val chipContainer =
+            android.widget.LinearLayout(this).apply {
+                orientation = android.widget.LinearLayout.HORIZONTAL
+                val dp8 = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 8f, resources.displayMetrics).toInt()
+                setPadding(dp8, 0, dp8, dp8)
+            }
         historyChips.addView(chipContainer)
         for (item in history) {
-            val chip = android.widget.TextView(this).apply {
-                text = item
-                textSize = 13f
-                val dp12 = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 12f, resources.displayMetrics).toInt()
-                val dp6 = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 6f, resources.displayMetrics).toInt()
-                setPadding(dp12, dp6, dp12, dp6)
-                setBackgroundResource(blbl.cat3399.R.drawable.bg_player_list_tab_chip)
-                val dp4 = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 4f, resources.displayMetrics).toInt()
-                (layoutParams as? android.widget.LinearLayout.LayoutParams)?.let { lp ->
-                    lp.rightMargin = dp4
-                    layoutParams = lp
-                } ?: run {
-                    layoutParams = android.widget.LinearLayout.LayoutParams(
-                        android.widget.LinearLayout.LayoutParams.WRAP_CONTENT,
-                        android.widget.LinearLayout.LayoutParams.WRAP_CONTENT
-                    ).apply { rightMargin = dp4 }
+            val chip =
+                android.widget.TextView(this).apply {
+                    text = item
+                    textSize = 13f
+                    val dp12 = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 12f, resources.displayMetrics).toInt()
+                    val dp6 = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 6f, resources.displayMetrics).toInt()
+                    setPadding(dp12, dp6, dp12, dp6)
+                    setBackgroundResource(blbl.cat3399.R.drawable.bg_player_list_tab_chip)
+                    val dp4 = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 4f, resources.displayMetrics).toInt()
+                    (layoutParams as? android.widget.LinearLayout.LayoutParams)?.let { lp ->
+                        lp.rightMargin = dp4
+                        layoutParams = lp
+                    } ?: run {
+                        layoutParams =
+                            android.widget.LinearLayout
+                                .LayoutParams(
+                                    android.widget.LinearLayout.LayoutParams.WRAP_CONTENT,
+                                    android.widget.LinearLayout.LayoutParams.WRAP_CONTENT,
+                                ).apply { rightMargin = dp4 }
+                    }
+                    setOnClickListener {
+                        editText.setText(item)
+                        editText.setSelection(item.length)
+                    }
                 }
-                setOnClickListener {
-                    editText.setText(item)
-                    editText.setSelection(item.length)
-                }
-            }
             chipContainer.addView(chip)
         }
 
-        val layout = android.widget.LinearLayout(this).apply {
-            orientation = android.widget.LinearLayout.VERTICAL
-            addView(historyChips)
-            addView(editText)
-        }
+        val layout =
+            android.widget.LinearLayout(this).apply {
+                orientation = android.widget.LinearLayout.VERTICAL
+                addView(historyChips)
+                addView(editText)
+            }
 
         AppPopup.custom(
             context = this,
             title = "发送弹幕",
             cancelable = true,
-            actions = listOf(
-                PopupAction(role = PopupActionRole.POSITIVE, text = "发送", onClick = {
-                    val msg = editText.text.toString().trim()
-                    if (msg.isNotBlank()) {
-                        lifecycleScope.launch {
-                            try {
-                                LiveApi.sendLiveDanmaku(realRoomId, msg)
-                                AppToast.show(this@LivePlayerActivity, "弹幕已发送")
-                                pushChatItem(LiveChatAdapter.Item(title = "我", body = msg))
-                                // v11.5: 保存发送历史
-                                BiliClient.prefs.liveDanmakuHistory = BiliClient.prefs.liveDanmakuHistory.toMutableList().apply {
-                                    remove(msg)
-                                    add(0, msg)
-                                    if (size > 20) removeAt(lastIndex)
+            actions =
+                listOf(
+                    PopupAction(role = PopupActionRole.POSITIVE, text = "发送", onClick = {
+                        val msg = editText.text.toString().trim()
+                        if (msg.isNotBlank()) {
+                            lifecycleScope.launch {
+                                try {
+                                    LiveApi.sendLiveDanmaku(realRoomId, msg)
+                                    AppToast.show(this@LivePlayerActivity, "弹幕已发送")
+                                    pushChatItem(LiveChatAdapter.Item(title = "我", body = msg))
+                                    // v11.5: 保存发送历史
+                                    BiliClient.prefs.liveDanmakuHistory =
+                                        BiliClient.prefs.liveDanmakuHistory.toMutableList().apply {
+                                            remove(msg)
+                                            add(0, msg)
+                                            if (size > 20) removeAt(lastIndex)
+                                        }
+                                } catch (e: Exception) {
+                                    AppToast.show(this@LivePlayerActivity, "发送失败：${e.message}")
                                 }
-                            } catch (e: Exception) {
-                                AppToast.show(this@LivePlayerActivity, "发送失败：${e.message}")
                             }
                         }
-                    }
-                }),
-                PopupAction(role = PopupActionRole.NEGATIVE, text = "取消"),
-            ),
+                    }),
+                    PopupAction(role = PopupActionRole.NEGATIVE, text = "取消"),
+                ),
             preferredActionRole = PopupActionRole.POSITIVE,
             content = { layout },
         )
@@ -1242,6 +1307,7 @@ class LivePlayerActivity : BaseActivity() {
         ) { which, _ ->
             val picked = if (which == 1) PlayerEngineKind.IjkPlayer else PlayerEngineKind.ExoPlayer
             if (picked == currentKind) return@singleChoice
+
             fun doSwitch() {
                 val sessionJson = session.copy(engineKind = picked).toEngineSwitchJsonString()
                 val restart =
@@ -1300,9 +1366,7 @@ class LivePlayerActivity : BaseActivity() {
             }
     }
 
-    private fun focusFirstControl(): Boolean {
-        return requestFocusControlNow(binding.btnPlayPause) || requestFocusControlNow(binding.btnBack)
-    }
+    private fun focusFirstControl(): Boolean = requestFocusControlNow(binding.btnPlayPause) || requestFocusControlNow(binding.btnBack)
 
     private fun requestFocusControlNow(view: View?): Boolean {
         val target = view ?: return false
@@ -1312,9 +1376,7 @@ class LivePlayerActivity : BaseActivity() {
         return target.requestFocus()
     }
 
-    private fun focusAdvancedControl(): Boolean {
-        return binding.btnAdvanced.requestFocus()
-    }
+    private fun focusAdvancedControl(): Boolean = binding.btnAdvanced.requestFocus()
 
     private fun focusSettingsPanel() {
         binding.recyclerSettings.post {
@@ -1403,7 +1465,10 @@ class LivePlayerActivity : BaseActivity() {
                 noteUserInteraction()
             }
 
-            override fun showTouchHint(text: String, hold: Boolean) {
+            override fun showTouchHint(
+                text: String,
+                hold: Boolean,
+            ) {
                 showSeekHint(text, hold)
             }
 
@@ -1418,8 +1483,8 @@ class LivePlayerActivity : BaseActivity() {
         restartAutoHideTimer()
     }
 
-    private fun isInteractionKey(keyCode: Int): Boolean {
-        return when (keyCode) {
+    private fun isInteractionKey(keyCode: Int): Boolean =
+        when (keyCode) {
             KeyEvent.KEYCODE_DPAD_UP,
             KeyEvent.KEYCODE_DPAD_DOWN,
             KeyEvent.KEYCODE_DPAD_LEFT,
@@ -1441,21 +1506,17 @@ class LivePlayerActivity : BaseActivity() {
             -> true
             else -> false
         }
-    }
 
-    private fun isExitKey(keyCode: Int): Boolean {
-        return when (keyCode) {
+    private fun isExitKey(keyCode: Int): Boolean =
+        when (keyCode) {
             KeyEvent.KEYCODE_BACK,
             KeyEvent.KEYCODE_ESCAPE, // some TV remotes map “Exit” to ESC
             KeyEvent.KEYCODE_BUTTON_B, // gamepad B
             -> true
             else -> false
         }
-    }
 
-    private fun isPlayerTeardownInProgress(): Boolean {
-        return exitRequested || isFinishing || isDestroyed
-    }
+    private fun isPlayerTeardownInProgress(): Boolean = exitRequested || isFinishing || isDestroyed
 
     private fun shouldSuppressPlayerError(error: Throwable): Boolean {
         if (!isPlayerTeardownInProgress()) return false
@@ -1514,7 +1575,10 @@ class LivePlayerActivity : BaseActivity() {
         val currentIndex = (session.lineOrder - 1).coerceAtLeast(0)
         val url =
             lastPlay?.lines?.getOrNull(currentIndex)?.url
-                ?: exo.currentMediaItem?.localConfiguration?.uri?.toString()
+                ?: exo.currentMediaItem
+                    ?.localConfiguration
+                    ?.uri
+                    ?.toString()
         if (url.isNullOrBlank()) return false
 
         runCatching { exo.stop() }
@@ -1584,16 +1648,16 @@ class LivePlayerActivity : BaseActivity() {
                     if (!hasSigned) return false
                     signedStartIndex
                 } else {
-                val nextOriginIndex = currentIndex + 1
-                val reachEnd = nextOriginIndex >= originCount
-                val switchToSigned =
-                    hasSigned &&
-                        (session.originFailCount + 1 >= ORIGIN_FAIL_BEFORE_SIGNED || reachEnd)
-                when {
-                    switchToSigned -> signedStartIndex
-                    nextOriginIndex in 0 until originCount -> nextOriginIndex
-                    else -> 0
-                }
+                    val nextOriginIndex = currentIndex + 1
+                    val reachEnd = nextOriginIndex >= originCount
+                    val switchToSigned =
+                        hasSigned &&
+                            (session.originFailCount + 1 >= ORIGIN_FAIL_BEFORE_SIGNED || reachEnd)
+                    when {
+                        switchToSigned -> signedStartIndex
+                        nextOriginIndex in 0 until originCount -> nextOriginIndex
+                        else -> 0
+                    }
                 }
             } else {
                 // Signed phase: only rotate inside signed urls.
@@ -1802,10 +1866,11 @@ class LivePlayerActivity : BaseActivity() {
     }
 
     private fun showQualityDialog() {
-        val play = lastPlay ?: run {
-            AppToast.show(this, "暂无可用清晰度")
-            return
-        }
+        val play =
+            lastPlay ?: run {
+                AppToast.show(this, "暂无可用清晰度")
+                return
+            }
         val available = play.acceptQn.ifEmpty { play.qnDesc.keys.sortedDescending() }.distinct()
         if (available.isEmpty()) {
             AppToast.show(this, "暂无可用清晰度")
@@ -1833,10 +1898,11 @@ class LivePlayerActivity : BaseActivity() {
     }
 
     private fun showLineDialog() {
-        val play = lastPlay ?: run {
-            AppToast.show(this, "暂无可用线路")
-            return
-        }
+        val play =
+            lastPlay ?: run {
+                AppToast.show(this, "暂无可用线路")
+                return
+            }
         val lines = play.lines
         if (lines.isEmpty()) {
             AppToast.show(this, "暂无可用线路")
@@ -1894,8 +1960,10 @@ class LivePlayerActivity : BaseActivity() {
         )
     }
 
-    private fun dp(context: android.content.Context, value: Float): Int =
-        TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, value, context.resources.displayMetrics).toInt()
+    private fun dp(
+        context: android.content.Context,
+        value: Float,
+    ): Int = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, value, context.resources.displayMetrics).toInt()
 
     private fun updatePlayPauseIcon(isPlaying: Boolean) {
         val icon = if (isPlaying) blbl.cat3399.R.drawable.ic_player_pause else blbl.cat3399.R.drawable.ic_player_play
@@ -2025,7 +2093,12 @@ class LivePlayerActivity : BaseActivity() {
         }
     }
 
-    private fun appendLiveDebugHeader(sb: StringBuilder, state: String, isPlaying: Boolean, playWhenReady: Boolean) {
+    private fun appendLiveDebugHeader(
+        sb: StringBuilder,
+        state: String,
+        isPlaying: Boolean,
+        playWhenReady: Boolean,
+    ) {
         val play = lastPlay
         sb.append("room=").append(realRoomId)
         sb.append(" qn=").append(play?.currentQn ?: 0)
@@ -2037,7 +2110,8 @@ class LivePlayerActivity : BaseActivity() {
     }
 
     private fun appendCdnHostLine(sb: StringBuilder) {
-        val cdnHost = debug.videoTransferHost?.trim().takeIf { !it.isNullOrBlank() } ?: debug.cdnHost?.trim().takeIf { !it.isNullOrBlank() } ?: "-"
+        val cdnHost =
+            debug.videoTransferHost?.trim().takeIf { !it.isNullOrBlank() } ?: debug.cdnHost?.trim().takeIf { !it.isNullOrBlank() } ?: "-"
         if (cdnHost.length <= 42) {
             sb.append(" cdn=").append(cdnHost)
             sb.append('\n')
@@ -2091,13 +2165,21 @@ class LivePlayerActivity : BaseActivity() {
             sb.append(" fps=").append(String.format(Locale.US, "%.1f", dm.drawFps))
             sb.append(" act=").append(dm.lastFrameActive)
             sb.append(" pend=").append(dm.lastFramePending)
-            sb.append(" hit=").append(dm.lastFrameCachedDrawn).append('/').append(dm.lastFrameActive)
+            sb
+                .append(" hit=")
+                .append(dm.lastFrameCachedDrawn)
+                .append('/')
+                .append(dm.lastFrameActive)
             sb.append(" fb=").append(dm.lastFrameFallbackDrawn)
             sb.append(" q=").append(dm.queueDepth)
             if (dm.invalidateFull) {
                 sb.append(" inv=full")
             } else {
-                sb.append(" inv=").append(dm.invalidateTopPx).append('-').append(dm.invalidateBottomPx)
+                sb
+                    .append(" inv=")
+                    .append(dm.invalidateTopPx)
+                    .append('-')
+                    .append(dm.invalidateBottomPx)
             }
         }
     }
@@ -2138,14 +2220,17 @@ class LivePlayerActivity : BaseActivity() {
         debug.renderFps = debug.renderFps?.let { it * 0.7f + instantFps * 0.3f } ?: instantFps
     }
 
-    private fun buildDebugResolutionText(exo: ExoPlayer, trackFormat: Format?): String {
+    private fun buildDebugResolutionText(
+        exo: ExoPlayer,
+        trackFormat: Format?,
+    ): String {
         val videoSize = exo.videoSize
         val width = videoSize.width.takeIf { it > 0 } ?: debug.videoInputWidth ?: 0
         val height = videoSize.height.takeIf { it > 0 } ?: debug.videoInputHeight ?: 0
-        if (width > 0 && height > 0) return "${width}x${height}"
+        if (width > 0 && height > 0) return "${width}x$height"
         val trackWidth = trackFormat?.width?.takeIf { it > 0 } ?: 0
         val trackHeight = trackFormat?.height?.takeIf { it > 0 } ?: 0
-        return if (trackWidth > 0 && trackHeight > 0) "${trackWidth}x${trackHeight}" else "-"
+        return if (trackWidth > 0 && trackHeight > 0) "${trackWidth}x$trackHeight" else "-"
     }
 
     private fun pickSelectedVideoFormat(exo: ExoPlayer): Format? {
@@ -2178,7 +2263,10 @@ class LivePlayerActivity : BaseActivity() {
         return String.format(Locale.US, "%.1fkbps", value / 1000.0)
     }
 
-    private fun shortenDebugValue(value: String, maxChars: Int): String {
+    private fun shortenDebugValue(
+        value: String,
+        maxChars: Int,
+    ): String {
         val text = value.trim()
         if (text.length <= maxChars) return text
         return text.take(maxChars - 1) + "…"
@@ -2196,10 +2284,13 @@ class LivePlayerActivity : BaseActivity() {
         val mhz = mode.refreshRate.takeIf { it > 0f } ?: hz
         val hzText = mhz?.let { String.format(Locale.US, "%.0fHz", it) } ?: "-"
         if (w <= 0 || h <= 0) return hzText
-        return "${w}x${h}@${hzText}"
+        return "${w}x$h@$hzText"
     }
 
-    private fun liveQnLabel(qn: Int, play: BiliApi.LivePlayUrl?): String {
+    private fun liveQnLabel(
+        qn: Int,
+        play: BiliApi.LivePlayUrl?,
+    ): String {
         val fromApi = play?.qnDesc?.get(qn)?.takeIf { it.isNotBlank() }
         if (fromApi != null) return fromApi
         return when (qn) {
@@ -2214,47 +2305,50 @@ class LivePlayerActivity : BaseActivity() {
         }
     }
 
-    private fun LiveSession.toEngineSwitchJsonString(): String {
-        return JSONObject().apply {
-            put("v", 1)
-            put("engineKind", engineKind.prefValue)
-            put("targetQn", targetQn)
-            put("lineOrder", lineOrder)
-            put("originFailCount", originFailCount)
-            put("highBitrateEnabled", highBitrateEnabled)
-            put("danmakuEnabled", danmaku.enabled)
-            put("danmakuOpacity", danmaku.opacity.toDouble())
-            put("danmakuTextSizeSp", danmaku.textSizeSp.toDouble())
-            put("danmakuFontWeight", danmaku.fontWeight.prefValue)
-            put("danmakuStrokeWidthPx", danmaku.strokeWidthPx)
-            put("danmakuSpeedLevel", danmaku.speedLevel)
-            put("danmakuArea", danmaku.area.toDouble())
-            put("danmakuLaneDensity", danmaku.laneDensity.prefValue)
-            put("debugEnabled", debugEnabled)
-        }.toString()
-    }
+    private fun LiveSession.toEngineSwitchJsonString(): String =
+        JSONObject()
+            .apply {
+                put("v", 1)
+                put("engineKind", engineKind.prefValue)
+                put("targetQn", targetQn)
+                put("lineOrder", lineOrder)
+                put("originFailCount", originFailCount)
+                put("highBitrateEnabled", highBitrateEnabled)
+                put("danmakuEnabled", danmaku.enabled)
+                put("danmakuOpacity", danmaku.opacity.toDouble())
+                put("danmakuTextSizeSp", danmaku.textSizeSp.toDouble())
+                put("danmakuFontWeight", danmaku.fontWeight.prefValue)
+                put("danmakuStrokeWidthPx", danmaku.strokeWidthPx)
+                put("danmakuSpeedLevel", danmaku.speedLevel)
+                put("danmakuArea", danmaku.area.toDouble())
+                put("danmakuLaneDensity", danmaku.laneDensity.prefValue)
+                put("debugEnabled", debugEnabled)
+            }.toString()
 
     private fun LiveSession.restoreFromEngineSwitchJsonString(raw: String): LiveSession {
         val obj = runCatching { JSONObject(raw) }.getOrNull() ?: return this
 
-        fun optFloat(key: String, fallback: Float): Float {
+        fun optFloat(
+            key: String,
+            fallback: Float,
+        ): Float {
             val value = obj.optDouble(key, fallback.toDouble()).toFloat()
             if (!value.isFinite()) return fallback
             return value
         }
 
-        fun optInt(key: String, fallback: Int): Int {
-            return obj.optInt(key, fallback)
-        }
+        fun optInt(
+            key: String,
+            fallback: Int,
+        ): Int = obj.optInt(key, fallback)
 
-        fun normalizeDanmakuStrokeWidthPx(value: Int): Int {
-            return when {
+        fun normalizeDanmakuStrokeWidthPx(value: Int): Int =
+            when {
                 value <= 1 -> 0
                 value <= 3 -> 2
                 value <= 5 -> 4
                 else -> 6
             }
-        }
 
         val restoredEngineKind = PlayerEngineKind.fromPrefValue(obj.optString("engineKind", engineKind.prefValue))
         val restoredTargetQn = optInt("targetQn", targetQn).takeIf { it > 0 } ?: targetQn
@@ -2268,7 +2362,10 @@ class LivePlayerActivity : BaseActivity() {
         val restoredDanmakuStrokeWidthPx = normalizeDanmakuStrokeWidthPx(optInt("danmakuStrokeWidthPx", danmaku.strokeWidthPx))
         val restoredDanmakuSpeedLevel = optInt("danmakuSpeedLevel", danmaku.speedLevel).coerceIn(1, 10)
         val restoredDanmakuArea = AppPrefs.normalizeLegacyDanmakuAreaCompat(optFloat("danmakuArea", danmaku.area))
-        val restoredDanmakuLaneDensity = DanmakuLaneDensity.fromPrefValue(obj.optString("danmakuLaneDensity", danmaku.laneDensity.prefValue))
+        val restoredDanmakuLaneDensity =
+            DanmakuLaneDensity.fromPrefValue(
+                obj.optString("danmakuLaneDensity", danmaku.laneDensity.prefValue),
+            )
         val restoredDebugEnabled = obj.optBoolean("debugEnabled", debugEnabled)
 
         return copy(

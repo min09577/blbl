@@ -4,7 +4,6 @@ import android.os.Build
 import bilibili.app.playerunite.v1.PlayViewUniteReply
 import bilibili.app.playerunite.v1.PlayViewUniteReq
 import bilibili.app.playerunite.v1.PlayerGrpc
-import bilibili.metadata.Metadata as BiliMetadata
 import bilibili.metadata.device.Device
 import bilibili.metadata.locale.Locale
 import bilibili.metadata.network.Network
@@ -26,10 +25,11 @@ import io.grpc.ManagedChannelBuilder
 import io.grpc.MethodDescriptor
 import io.grpc.StatusException
 import io.grpc.StatusRuntimeException
-import java.util.concurrent.TimeUnit
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.asExecutor
 import kotlinx.coroutines.withContext
+import java.util.concurrent.TimeUnit
+import bilibili.metadata.Metadata as BiliMetadata
 import io.grpc.Metadata as GrpcMetadata
 
 internal interface AppVideoGrpcTransport {
@@ -68,7 +68,10 @@ internal object BiliClientAppVideoGrpcTransport : AppVideoGrpcTransport {
     @Synchronized
     private fun channel(): ManagedChannel {
         val session = requireAppSession()
-        val buvid = BiliClient.prefs.deviceBuvid.trim().takeIf { it.isNotBlank() } ?: error("app_buvid_missing")
+        val buvid =
+            BiliClient.prefs.deviceBuvid
+                .trim()
+                .takeIf { it.isNotBlank() } ?: error("app_buvid_missing")
         val identity = "${session.accessKey}:$buvid"
         cachedChannel?.takeIf { cachedIdentity == identity && !it.isShutdown && !it.isTerminated }?.let { return it }
 
@@ -83,8 +86,7 @@ internal object BiliClientAppVideoGrpcTransport : AppVideoGrpcTransport {
             .also { cachedChannel = it }
     }
 
-    private fun requireAppSession(): BiliAppAuthSession =
-        BiliClient.prefs.appAuthSession ?: error("app_auth_session_missing")
+    private fun requireAppSession(): BiliAppAuthSession = BiliClient.prefs.appAuthSession ?: error("app_auth_session_missing")
 
     private inline fun <T> runGrpcCall(block: () -> T): T {
         try {
@@ -129,8 +131,8 @@ private class AppGrpcMetadataInterceptor(
         method: MethodDescriptor<ReqT, RespT>,
         callOptions: CallOptions,
         next: Channel,
-    ): ClientCall<ReqT, RespT> {
-        return object : ForwardingClientCall.SimpleForwardingClientCall<ReqT, RespT>(next.newCall(method, callOptions)) {
+    ): ClientCall<ReqT, RespT> =
+        object : ForwardingClientCall.SimpleForwardingClientCall<ReqT, RespT>(next.newCall(method, callOptions)) {
             override fun start(
                 responseListener: Listener<RespT>,
                 headers: GrpcMetadata,
@@ -149,22 +151,33 @@ private class AppGrpcMetadataInterceptor(
                 )
                 headers.put(
                     GrpcMetadata.Key.of("x-bili-local-bin", GrpcMetadata.BINARY_BYTE_MARSHALLER),
-                    Locale.newBuilder().setTimezone(APP_TIMEZONE).build().toByteArray(),
+                    Locale
+                        .newBuilder()
+                        .setTimezone(APP_TIMEZONE)
+                        .build()
+                        .toByteArray(),
                 )
                 headers.put(
                     GrpcMetadata.Key.of("x-bili-network-bin", GrpcMetadata.BINARY_BYTE_MARSHALLER),
-                    Network.newBuilder().setType(NetworkType.WIFI).build().toByteArray(),
+                    Network
+                        .newBuilder()
+                        .setType(NetworkType.WIFI)
+                        .build()
+                        .toByteArray(),
                 )
                 super.start(responseListener, headers)
             }
         }
-    }
 
     private fun buildMetadata(
         session: BiliAppAuthSession,
         buvid: String,
     ): BiliMetadata {
-        val model = Build.MODEL?.trim().orEmpty().ifBlank { APP_DEVICE_FALLBACK }
+        val model =
+            Build.MODEL
+                ?.trim()
+                .orEmpty()
+                .ifBlank { APP_DEVICE_FALLBACK }
         return BiliMetadata
             .newBuilder()
             .setAccessKey(session.accessKey)
@@ -178,8 +191,15 @@ private class AppGrpcMetadataInterceptor(
     }
 
     private fun buildDevice(buvid: String): Device {
-        val model = Build.MODEL?.trim().orEmpty().ifBlank { APP_DEVICE_FALLBACK }
-        val osVer = Build.VERSION.RELEASE?.trim().orEmpty()
+        val model =
+            Build.MODEL
+                ?.trim()
+                .orEmpty()
+                .ifBlank { APP_DEVICE_FALLBACK }
+        val osVer =
+            Build.VERSION.RELEASE
+                ?.trim()
+                .orEmpty()
         return Device
             .newBuilder()
             .setAppId(APP_ID)

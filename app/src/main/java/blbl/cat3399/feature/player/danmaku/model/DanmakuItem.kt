@@ -23,11 +23,15 @@ internal class DanmakuItem(
 ) {
     // ---- Measure/cache (updated by cache thread) ----
     @Volatile var measuredWidthPx: Float = Float.NaN
+
     @Volatile var measuredHeightPx: Float = Float.NaN
+
     @Volatile var measureGeneration: Int = -1
 
     @Volatile var cacheBitmap: Bitmap? = null
+
     @Volatile var cacheGeneration: Int = -1
+
     @Volatile var cacheState: DanmakuCacheState = DanmakuCacheState.Init
 
     // Optional: cached parse result for inline segments.

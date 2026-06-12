@@ -22,5 +22,8 @@ object LiveAreas {
         val name: String,
     )
 
-    private fun parent(id: Int, name: String): Parent = Parent(id = id, name = name)
+    private fun parent(
+        id: Int,
+        name: String,
+    ): Parent = Parent(id = id, name = name)
 }

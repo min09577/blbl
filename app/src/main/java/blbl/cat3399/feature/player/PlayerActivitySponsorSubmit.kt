@@ -74,8 +74,7 @@ internal fun PlayerActivity.initSponsorSubmitPanel() {
     updateSponsorSubmitPanelUi(loadThumbnails = false)
 }
 
-internal fun PlayerActivity.isSponsorSubmitPanelVisible(): Boolean =
-    binding.sponsorSubmitPanel.visibility == View.VISIBLE
+internal fun PlayerActivity.isSponsorSubmitPanelVisible(): Boolean = binding.sponsorSubmitPanel.visibility == View.VISIBLE
 
 internal fun PlayerActivity.openSponsorSubmitPanel() {
     val engine = player
@@ -364,7 +363,10 @@ private fun PlayerActivity.clickSponsorSubmitThumbnail(timeMs: Long) {
     }
 }
 
-private fun PlayerActivity.selectSponsorSubmitMarker(marker: SponsorSubmitMarker, loadThumbnails: Boolean): Boolean {
+private fun PlayerActivity.selectSponsorSubmitMarker(
+    marker: SponsorSubmitMarker,
+    loadThumbnails: Boolean,
+): Boolean {
     val state = sponsorSubmitPanelState
     if (state.submitting) return false
 
@@ -460,7 +462,10 @@ private fun PlayerActivity.deleteSelectedSponsorSubmitMarker() {
     updateSponsorSubmitPanelUi(loadThumbnails = true)
 }
 
-private fun PlayerActivity.moveSponsorSubmitCursor(direction: Int, fast: Boolean) {
+private fun PlayerActivity.moveSponsorSubmitCursor(
+    direction: Int,
+    fast: Boolean,
+) {
     val state = sponsorSubmitPanelState
     val duration = resolveSponsorSubmitDurationMs()
     if (duration <= 0L) return
@@ -522,7 +527,10 @@ private fun PlayerActivity.sponsorSubmitSeekTarget(
     return cursor
 }
 
-private fun PlayerActivity.nextVideoShotTimeMs(currentMs: Long, direction: Int): Long? {
+private fun PlayerActivity.nextVideoShotTimeMs(
+    currentMs: Long,
+    direction: Int,
+): Long? {
     val times = currentVideoShot?.times ?: return null
     if (times.isEmpty()) return null
     val guard = 50L
@@ -534,10 +542,15 @@ private fun PlayerActivity.nextVideoShotTimeMs(currentMs: Long, direction: Int):
 }
 
 private fun PlayerActivity.fallbackSponsorSubmitSeekStepMs(): Long =
-    BiliClient.prefs.playerShortSeekStepSeconds.coerceAtLeast(1).toLong() * 1000L
+    BiliClient.prefs.playerShortSeekStepSeconds
+        .coerceAtLeast(1)
+        .toLong() * 1000L
 
 private fun PlayerActivity.sponsorSubmitMarkerToleranceMs(): Long =
-    max(SPONSOR_SUBMIT_MARKER_TOLERANCE_MIN_MS, fallbackSponsorSubmitSeekStepMs() / 2L)
+    max(
+        SPONSOR_SUBMIT_MARKER_TOLERANCE_MIN_MS,
+        fallbackSponsorSubmitSeekStepMs() / 2L,
+    )
 
 private fun PlayerActivity.resolveSponsorSubmitDurationMs(): Long =
     player?.duration?.takeIf { it > 0L }
@@ -589,11 +602,13 @@ private fun PlayerActivity.buildSponsorSubmitStatusText(durationMs: Long): Strin
             }
         }
     val draftText =
-        state.draft.drafts().joinToString("  ") { draft ->
-            val start = draft.start?.timeMs?.let(::formatHms) ?: "--:--"
-            val end = draft.end?.timeMs?.let(::formatHms) ?: "--:--"
-            "$start-$end"
-        }.ifBlank { "未标记" }
+        state.draft
+            .drafts()
+            .joinToString("  ") { draft ->
+                val start = draft.start?.timeMs?.let(::formatHms) ?: "--:--"
+                val end = draft.end?.timeMs?.let(::formatHms) ?: "--:--"
+                "$start-$end"
+            }.ifBlank { "未标记" }
     return "${formatHms(state.cursorMs)} / ${formatHms(durationMs)} · $modeText · $draftText"
 }
 
@@ -636,8 +651,7 @@ private fun List<Int>.closestIndexTo(target: Int): Int {
     return bestIndex
 }
 
-private fun PlayerActivity.focusSponsorSubmitTimeline(): Boolean =
-    binding.sponsorSubmitTimeline.requestSponsorSubmitFocusIfUsable()
+private fun PlayerActivity.focusSponsorSubmitTimeline(): Boolean = binding.sponsorSubmitTimeline.requestSponsorSubmitFocusIfUsable()
 
 private fun PlayerActivity.focusSponsorSubmitDefaultButton() {
     val target =
@@ -657,7 +671,8 @@ private fun PlayerActivity.moveSponsorSubmitButtonFocus(direction: Int) {
             binding.btnSponsorSubmitClose,
         ).filter { it.visibility == View.VISIBLE && it.isEnabled }
     if (buttons.isEmpty()) return
-    val currentIndex = buttons.indexOf(currentFocus).takeIf { it >= 0 } ?: buttons.indexOf(binding.btnSponsorSubmitClose).takeIf { it >= 0 } ?: 0
+    val currentIndex =
+        buttons.indexOf(currentFocus).takeIf { it >= 0 } ?: buttons.indexOf(binding.btnSponsorSubmitClose).takeIf { it >= 0 } ?: 0
     val next = buttons[(currentIndex + direction).coerceIn(0, buttons.lastIndex)]
     next.requestSponsorSubmitFocusIfUsable()
 }
@@ -797,13 +812,11 @@ private fun PlayerActivity.logSponsorSubmitResultSegments(
     }
 }
 
-private fun PlayerActivity.applySponsorSubmitLocalAutoSkipSegments(
-    submittedSegments: List<SponsorBlockApi.SubmitSegment>,
-) {
+private fun PlayerActivity.applySponsorSubmitLocalAutoSkipSegments(submittedSegments: List<SponsorBlockApi.SubmitSegment>) {
     val localSubmitted =
         submittedSegments.map { segment ->
             SkipSegment(
-                id = "sb:local:${currentBvid}:${currentCid}:${segment.category}:${segment.startMs}-${segment.endMs}",
+                id = "sb:local:$currentBvid:$currentCid:${segment.category}:${segment.startMs}-${segment.endMs}",
                 startMs = segment.startMs,
                 endMs = segment.endMs,
                 category = segment.category,

@@ -1,9 +1,10 @@
 package blbl.cat3399.core.prefs
 
 import android.content.Context
-import android.content.SharedPreferences
 
-class FeaturePrefs1941(context: Context) {
+class FeaturePrefs1941(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1941", Context.MODE_PRIVATE)
 
     var v1941disagreed: Boolean
@@ -605,11 +606,11 @@ class FeaturePrefs1941(context: Context) {
     var v1950diversified: Boolean
         get() = prefs.getBoolean("v1950diversified", false)
         set(value) = prefs.edit().putBoolean("v1950diversified", value).apply()
-
 }
 
-
-class FeaturePrefs1951(context: Context) {
+class FeaturePrefs1951(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1951", Context.MODE_PRIVATE)
 
     var v1951divided: Boolean
@@ -1211,11 +1212,11 @@ class FeaturePrefs1951(context: Context) {
     var v1960duplicated: Boolean
         get() = prefs.getBoolean("v1960duplicated", false)
         set(value) = prefs.edit().putBoolean("v1960duplicated", value).apply()
-
 }
 
-
-class FeaturePrefs1961(context: Context) {
+class FeaturePrefs1961(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1961", Context.MODE_PRIVATE)
 
     var v1961dusted: Boolean
@@ -1817,11 +1818,11 @@ class FeaturePrefs1961(context: Context) {
     var v1970employed: Boolean
         get() = prefs.getBoolean("v1970employed", false)
         set(value) = prefs.edit().putBoolean("v1970employed", value).apply()
-
 }
 
-
-class FeaturePrefs1971(context: Context) {
+class FeaturePrefs1971(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1971", Context.MODE_PRIVATE)
 
     var v1971empowered: Boolean
@@ -2423,7 +2424,4 @@ class FeaturePrefs1971(context: Context) {
     var v1980equipped: Boolean
         get() = prefs.getBoolean("v1980equipped", false)
         set(value) = prefs.edit().putBoolean("v1980equipped", value).apply()
-
 }
-
-

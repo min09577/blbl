@@ -4,11 +4,11 @@ import blbl.cat3399.core.api.ApiSourceSelector
 import blbl.cat3399.core.api.BiliApiCapability
 import blbl.cat3399.core.api.BiliApiSource
 import blbl.cat3399.core.api.BiliApiSourceProvider
+import blbl.cat3399.core.api.video.app.AppVideoApi
+import blbl.cat3399.core.api.video.web.WebVideoApi
 import blbl.cat3399.core.model.VideoCard
 import blbl.cat3399.core.model.VideoTag
 import blbl.cat3399.core.net.BiliClient
-import blbl.cat3399.core.api.video.app.AppVideoApi
-import blbl.cat3399.core.api.video.web.WebVideoApi
 
 data class VideoRecommendRequest(
     val freshIdx: Int = 1,
@@ -228,47 +228,33 @@ internal class VideoApiSources(
 ) {
     private val selector = ApiSourceSelector(providers = providers, preferredSource = preferredSource)
 
-    suspend fun detail(request: VideoDetailRequest): VideoDetail =
-        selector.providerFor(BiliApiCapability.VIDEO_DETAIL).detail(request)
+    suspend fun detail(request: VideoDetailRequest): VideoDetail = selector.providerFor(BiliApiCapability.VIDEO_DETAIL).detail(request)
 
-    suspend fun tags(request: VideoTagsRequest): VideoTagsPage =
-        selector.providerFor(BiliApiCapability.VIDEO_TAGS).tags(request)
+    suspend fun tags(request: VideoTagsRequest): VideoTagsPage = selector.providerFor(BiliApiCapability.VIDEO_TAGS).tags(request)
 
-    suspend fun recommend(request: VideoRecommendRequest): VideoRecommendPage =
-        selector.providerFor(BiliApiCapability.VIDEO_RECOMMEND).recommend(request)
+    suspend fun recommend(request: VideoRecommendRequest): VideoRecommendPage = selector.providerFor(BiliApiCapability.VIDEO_RECOMMEND).recommend(request)
 
-    suspend fun popular(request: VideoPopularRequest): VideoCardPage<VideoPopularRequest> =
-        selector.providerFor(BiliApiCapability.VIDEO_POPULAR).popular(request)
+    suspend fun popular(request: VideoPopularRequest): VideoCardPage<VideoPopularRequest> = selector.providerFor(BiliApiCapability.VIDEO_POPULAR).popular(request)
 
-    suspend fun regionLatest(request: VideoRegionLatestRequest): VideoCardPage<VideoRegionLatestRequest> =
-        selector.providerFor(BiliApiCapability.VIDEO_REGION_LATEST).regionLatest(request)
+    suspend fun regionLatest(request: VideoRegionLatestRequest): VideoCardPage<VideoRegionLatestRequest> = selector.providerFor(BiliApiCapability.VIDEO_REGION_LATEST).regionLatest(request)
 
-    suspend fun dynamicTag(request: VideoDynamicTagRequest): VideoCardPage<VideoDynamicTagRequest> =
-        selector.providerFor(BiliApiCapability.VIDEO_DYNAMIC_TAG).dynamicTag(request)
+    suspend fun dynamicTag(request: VideoDynamicTagRequest): VideoCardPage<VideoDynamicTagRequest> = selector.providerFor(BiliApiCapability.VIDEO_DYNAMIC_TAG).dynamicTag(request)
 
-    suspend fun archiveRelated(request: ArchiveRelatedRequest): ArchiveRelatedPage =
-        selector.providerFor(BiliApiCapability.VIDEO_ARCHIVE_RELATED).archiveRelated(request)
+    suspend fun archiveRelated(request: ArchiveRelatedRequest): ArchiveRelatedPage = selector.providerFor(BiliApiCapability.VIDEO_ARCHIVE_RELATED).archiveRelated(request)
 
-    suspend fun playUrl(request: VideoPlayRequest): VideoPlayStream =
-        selector.providerFor(request.capability).playUrl(request)
+    suspend fun playUrl(request: VideoPlayRequest): VideoPlayStream = selector.providerFor(request.capability).playUrl(request)
 
-    suspend fun playerInfo(request: VideoPlayerInfoRequest): VideoPlayerInfo =
-        selector.providerFor(BiliApiCapability.VIDEO_PLAYER_INFO).playerInfo(request)
+    suspend fun playerInfo(request: VideoPlayerInfoRequest): VideoPlayerInfo = selector.providerFor(BiliApiCapability.VIDEO_PLAYER_INFO).playerInfo(request)
 
-    suspend fun onlineStatus(request: VideoOnlineStatusRequest): VideoOnlineStatus =
-        selector.providerFor(BiliApiCapability.VIDEO_ONLINE_STATUS).onlineStatus(request)
+    suspend fun onlineStatus(request: VideoOnlineStatusRequest): VideoOnlineStatus = selector.providerFor(BiliApiCapability.VIDEO_ONLINE_STATUS).onlineStatus(request)
 
-    suspend fun videoShot(request: VideoShotRequest): VideoShotInfo =
-        selector.providerFor(BiliApiCapability.VIDEO_SHOT).videoShot(request)
+    suspend fun videoShot(request: VideoShotRequest): VideoShotInfo = selector.providerFor(BiliApiCapability.VIDEO_SHOT).videoShot(request)
 
-    suspend fun ugcSeasonArchives(request: UgcSeasonArchivesRequest): UgcSeasonArchivesPage =
-        selector.providerFor(BiliApiCapability.VIDEO_UGC_SEASON_ARCHIVES).ugcSeasonArchives(request)
+    suspend fun ugcSeasonArchives(request: UgcSeasonArchivesRequest): UgcSeasonArchivesPage = selector.providerFor(BiliApiCapability.VIDEO_UGC_SEASON_ARCHIVES).ugcSeasonArchives(request)
 
-    suspend fun collectionSections(request: VideoCollectionSectionsRequest): VideoCollectionSectionsPage =
-        selector.providerFor(BiliApiCapability.VIDEO_COLLECTION_SECTIONS).collectionSections(request)
+    suspend fun collectionSections(request: VideoCollectionSectionsRequest): VideoCollectionSectionsPage = selector.providerFor(BiliApiCapability.VIDEO_COLLECTION_SECTIONS).collectionSections(request)
 
-    suspend fun seriesArchives(request: VideoSeriesArchivesRequest): VideoCardPage<VideoSeriesArchivesRequest> =
-        selector.providerFor(BiliApiCapability.VIDEO_SERIES_ARCHIVES).seriesArchives(request)
+    suspend fun seriesArchives(request: VideoSeriesArchivesRequest): VideoCardPage<VideoSeriesArchivesRequest> = selector.providerFor(BiliApiCapability.VIDEO_SERIES_ARCHIVES).seriesArchives(request)
 
     private val VideoPlayRequest.capability: BiliApiCapability
         get() =
@@ -285,7 +271,7 @@ internal object VideoApiGateway {
             preferredSource = {
                 runCatching { BiliApiSource.fromPrefValue(BiliClient.prefs.apiSource) }.getOrDefault(BiliApiSource.WEB)
             },
-    )
+        )
 
     suspend fun detail(request: VideoDetailRequest): VideoDetail = sources.detail(request)
 
@@ -295,11 +281,9 @@ internal object VideoApiGateway {
 
     suspend fun popular(request: VideoPopularRequest): VideoCardPage<VideoPopularRequest> = sources.popular(request)
 
-    suspend fun regionLatest(request: VideoRegionLatestRequest): VideoCardPage<VideoRegionLatestRequest> =
-        sources.regionLatest(request)
+    suspend fun regionLatest(request: VideoRegionLatestRequest): VideoCardPage<VideoRegionLatestRequest> = sources.regionLatest(request)
 
-    suspend fun dynamicTag(request: VideoDynamicTagRequest): VideoCardPage<VideoDynamicTagRequest> =
-        sources.dynamicTag(request)
+    suspend fun dynamicTag(request: VideoDynamicTagRequest): VideoCardPage<VideoDynamicTagRequest> = sources.dynamicTag(request)
 
     suspend fun archiveRelated(request: ArchiveRelatedRequest): ArchiveRelatedPage = sources.archiveRelated(request)
 
@@ -311,12 +295,9 @@ internal object VideoApiGateway {
 
     suspend fun videoShot(request: VideoShotRequest): VideoShotInfo = sources.videoShot(request)
 
-    suspend fun ugcSeasonArchives(request: UgcSeasonArchivesRequest): UgcSeasonArchivesPage =
-        sources.ugcSeasonArchives(request)
+    suspend fun ugcSeasonArchives(request: UgcSeasonArchivesRequest): UgcSeasonArchivesPage = sources.ugcSeasonArchives(request)
 
-    suspend fun collectionSections(request: VideoCollectionSectionsRequest): VideoCollectionSectionsPage =
-        sources.collectionSections(request)
+    suspend fun collectionSections(request: VideoCollectionSectionsRequest): VideoCollectionSectionsPage = sources.collectionSections(request)
 
-    suspend fun seriesArchives(request: VideoSeriesArchivesRequest): VideoCardPage<VideoSeriesArchivesRequest> =
-        sources.seriesArchives(request)
+    suspend fun seriesArchives(request: VideoSeriesArchivesRequest): VideoCardPage<VideoSeriesArchivesRequest> = sources.seriesArchives(request)
 }

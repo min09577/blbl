@@ -12,7 +12,6 @@ import android.text.Spanned
 import android.text.style.ImageSpan
 import android.widget.TextView
 import blbl.cat3399.R
-import kotlin.math.roundToInt
 
 object EmoteSpannable {
     private const val MAX_EMOTES_PER_TEXT = 64
@@ -129,7 +128,9 @@ object EmoteSpannable {
         override fun getIntrinsicHeight(): Int = sizePx
     }
 
-    private class CenterAlignedImageSpan(drawable: Drawable) : ImageSpan(drawable, ALIGN_BOTTOM) {
+    private class CenterAlignedImageSpan(
+        drawable: Drawable,
+    ) : ImageSpan(drawable, ALIGN_BOTTOM) {
         override fun draw(
             canvas: Canvas,
             text: CharSequence?,
@@ -154,4 +155,3 @@ object EmoteSpannable {
         }
     }
 }
-

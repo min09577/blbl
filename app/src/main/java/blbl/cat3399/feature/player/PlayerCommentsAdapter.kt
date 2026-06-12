@@ -23,7 +23,7 @@ class PlayerCommentsAdapter(
     private val onClick: (Item) -> Unit,
     private val onLongClick: (Item) -> Boolean = { false },
     private val onReply: (Item) -> Unit = {},
-    private val onLike: (rpid: Long, like: Boolean) -> Unit = { _: Long, _: Boolean -> },  // v12.2: 点赞回调
+    private val onLike: (rpid: Long, like: Boolean) -> Unit = { _: Long, _: Boolean -> }, // v12.2: 点赞回调
 ) : RecyclerView.Adapter<PlayerCommentsAdapter.Vh>() {
     data class ReplyPreview(
         val userName: String,
@@ -45,7 +45,7 @@ class PlayerCommentsAdapter(
         val noteCvid: Long = 0L,
         val ctimeSec: Long,
         val likeCount: Long,
-        val liked: Boolean = false,  // v12.2: 点赞状态
+        val liked: Boolean = false, // v12.2: 点赞状态
         val replyCount: Int,
         val replyPreviews: List<ReplyPreview> = emptyList(),
         val contextTag: String? = null,
@@ -88,7 +88,10 @@ class PlayerCommentsAdapter(
         notifyItemRangeInserted(start, list.size)
     }
 
-    fun updatePictures(rpid: Long, pictures: List<String>) {
+    fun updatePictures(
+        rpid: Long,
+        pictures: List<String>,
+    ) {
         if (pictures.isEmpty()) return
         val idx = items.indexOfFirst { it.rpid == rpid }
         if (idx !in items.indices) return
@@ -102,7 +105,10 @@ class PlayerCommentsAdapter(
 
     override fun getItemId(position: Int): Long = items[position].key.hashCode().toLong()
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Vh {
+    override fun onCreateViewHolder(
+        parent: ViewGroup,
+        viewType: Int,
+    ): Vh {
         val binding =
             ItemPlayerCommentBinding.inflate(
                 LayoutInflater.from(parent.context).cloneInUserScale(parent.context),
@@ -112,7 +118,10 @@ class PlayerCommentsAdapter(
         return Vh(binding)
     }
 
-    override fun onBindViewHolder(holder: Vh, position: Int) {
+    override fun onBindViewHolder(
+        holder: Vh,
+        position: Int,
+    ) {
         val item = items[position]
         maybeRequestNotePictures(item)
         holder.bind(
@@ -129,7 +138,8 @@ class PlayerCommentsAdapter(
             onClick = onClick,
             onLongClick = onLongClick,
             onReply = { onReply(item) },
-            onLike = {  // v12.2: 点赞回调 - Adapter层处理数据更新
+            onLike = {
+                // v12.2: 点赞回调 - Adapter层处理数据更新
                 val pos = holder.bindingAdapterPosition.takeIf { p -> p != RecyclerView.NO_POSITION } ?: return@bind
                 val currentItem = items.getOrNull(pos) ?: return@bind
                 val newLiked = !currentItem.liked
@@ -150,7 +160,9 @@ class PlayerCommentsAdapter(
         }
     }
 
-    class Vh(private val binding: ItemPlayerCommentBinding) : RecyclerView.ViewHolder(binding.root) {
+    class Vh(
+        private val binding: ItemPlayerCommentBinding,
+    ) : RecyclerView.ViewHolder(binding.root) {
         private var boundRpid: Long = 0L
 
         fun bind(
@@ -160,7 +172,7 @@ class PlayerCommentsAdapter(
             onClick: (Item) -> Unit,
             onLongClick: (Item) -> Boolean,
             onReply: (Item) -> Unit,
-            onLike: () -> Unit,  // v12.2: 点赞回调（无参数，Adapter层处理数据）
+            onLike: () -> Unit, // v12.2: 点赞回调（无参数，Adapter层处理数据）
         ) {
             boundRpid = item.rpid
             val ctx = binding.root.context
@@ -178,22 +190,24 @@ class PlayerCommentsAdapter(
                 if (item.userLevel > 0) {
                     text = "Lv.${item.userLevel}"
                     visibility = View.VISIBLE
-                    val levelColor = when {
-                        item.userLevel >= 10 -> 0xFFFF8800.toInt() // 金色
-                        item.userLevel >= 7  -> 0xFFE040FB.toInt() // 紫色
-                        item.userLevel >= 4  -> 0xFF448AFF.toInt() // 蓝色
-                        else                 -> 0xFF9E9E9E.toInt() // 灰色
-                    }
+                    val levelColor =
+                        when {
+                            item.userLevel >= 10 -> 0xFFFF8800.toInt() // 金色
+                            item.userLevel >= 7 -> 0xFFE040FB.toInt() // 紫色
+                            item.userLevel >= 4 -> 0xFF448AFF.toInt() // 蓝色
+                            else -> 0xFF9E9E9E.toInt() // 灰色
+                        }
                     setTextColor(levelColor)
                 } else {
                     visibility = View.GONE
                 }
             }
-            binding.tvTime.text = if (item.floor > 0) {
-                "${item.floor}楼 · ${Format.pubDateText(item.ctimeSec)}"
-            } else {
-                Format.pubDateText(item.ctimeSec)
-            }
+            binding.tvTime.text =
+                if (item.floor > 0) {
+                    "${item.floor}楼 · ${Format.pubDateText(item.ctimeSec)}"
+                } else {
+                    Format.pubDateText(item.ctimeSec)
+                }
             // v12.2: 点赞UI - 总是显示点赞按钮，已点赞时着色
             binding.ivLike.visibility = View.VISIBLE
             val likedColor = ContextCompat.getColor(ctx, R.color.blbl_blue)
@@ -301,7 +315,10 @@ class PlayerCommentsAdapter(
             }
         }
 
-        private fun updateExpandHint(itemRpid: Long, isExpanded: Boolean) {
+        private fun updateExpandHint(
+            itemRpid: Long,
+            isExpanded: Boolean,
+        ) {
             binding.tvExpand.visibility = View.GONE
             if (isExpanded) return
 
@@ -364,7 +381,11 @@ class PlayerCommentsAdapter(
             }
         }
 
-        private fun bindReplyPreviewText(view: android.widget.TextView, preview: ReplyPreview, userColor: Int) {
+        private fun bindReplyPreviewText(
+            view: android.widget.TextView,
+            preview: ReplyPreview,
+            userColor: Int,
+        ) {
             val u = preview.userName.ifBlank { "-" }
             val m = preview.message.ifBlank { "-" }
             val s = "$u：$m"

@@ -36,8 +36,12 @@ internal data class SponsorSubmitSegmentForUpload(
 )
 
 internal sealed interface SponsorSubmitMarkResult {
-    data class Placed(val marker: SponsorSubmitMarker) : SponsorSubmitMarkResult
+    data class Placed(
+        val marker: SponsorSubmitMarker,
+    ) : SponsorSubmitMarkResult
+
     data object NoCapacity : SponsorSubmitMarkResult
+
     data object EndBeforeStart : SponsorSubmitMarkResult
 }
 
@@ -61,7 +65,11 @@ internal class SponsorSubmitDraftState(
     fun hasAnyMarker(): Boolean = markers.isNotEmpty()
 
     fun orderedMarkers(): List<SponsorSubmitMarker> =
-        markers.sortedWith(compareBy<SponsorSubmitMarker> { it.timeMs }.thenBy { it.kind.ordinal }.thenBy { it.id })
+        markers.sortedWith(
+            compareBy<SponsorSubmitMarker> {
+                it.timeMs
+            }.thenBy { it.kind.ordinal }.thenBy { it.id },
+        )
 
     fun completeSegments(): List<SponsorSubmitSegmentForUpload> =
         drafts()
@@ -90,7 +98,10 @@ internal class SponsorSubmitDraftState(
         }
     }
 
-    fun placeMarker(timeMs: Long, durationMs: Long): SponsorSubmitMarkResult {
+    fun placeMarker(
+        timeMs: Long,
+        durationMs: Long,
+    ): SponsorSubmitMarkResult {
         val clamped = clampToDuration(timeMs, durationMs)
         val incomplete = drafts().firstOrNull { it.start != null && it.end == null }
         if (incomplete != null) {
@@ -126,7 +137,10 @@ internal class SponsorSubmitDraftState(
         return markers.firstOrNull { it.id == id }
     }
 
-    fun nearestMarkerAt(timeMs: Long, toleranceMs: Long): SponsorSubmitMarker? {
+    fun nearestMarkerAt(
+        timeMs: Long,
+        toleranceMs: Long,
+    ): SponsorSubmitMarker? {
         val tolerance = toleranceMs.coerceAtLeast(0L)
         return markers
             .map { marker -> marker to kotlin.math.abs(marker.timeMs - timeMs) }
@@ -135,7 +149,11 @@ internal class SponsorSubmitDraftState(
             ?.first
     }
 
-    fun moveMarker(markerId: Long, timeMs: Long, durationMs: Long): Boolean {
+    fun moveMarker(
+        markerId: Long,
+        timeMs: Long,
+        durationMs: Long,
+    ): Boolean {
         val index = markers.indexOfFirst { it.id == markerId }
         if (index < 0) return false
         val current = markers[index]
@@ -174,7 +192,10 @@ internal class SponsorSubmitDraftState(
         return markers.removeAll { it.pairId in completePairIds }
     }
 
-    private fun clampToDuration(timeMs: Long, durationMs: Long): Long {
+    private fun clampToDuration(
+        timeMs: Long,
+        durationMs: Long,
+    ): Long {
         val duration = durationMs.coerceAtLeast(0L)
         return if (duration > 0L) timeMs.coerceIn(0L, duration) else timeMs.coerceAtLeast(0L)
     }
@@ -190,7 +211,10 @@ internal data class SponsorSubmitPanelState(
     var wasPlayingBeforeOpen: Boolean = false
     var submitting: Boolean = false
 
-    fun reset(positionMs: Long, wasPlaying: Boolean) {
+    fun reset(
+        positionMs: Long,
+        wasPlaying: Boolean,
+    ) {
         draft.clear()
         mode = SponsorSubmitInteractionMode.MARK
         cursorMs = positionMs.coerceAtLeast(0L)

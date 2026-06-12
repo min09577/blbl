@@ -3,7 +3,6 @@ package blbl.cat3399.core.note
 import androidx.collection.LruCache
 import blbl.cat3399.core.log.AppLog
 import blbl.cat3399.core.net.BiliClient
-import java.util.concurrent.ConcurrentHashMap
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
@@ -12,6 +11,7 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import org.json.JSONArray
 import org.json.JSONObject
+import java.util.concurrent.ConcurrentHashMap
 
 object NoteImageRepository {
     private const val TAG = "NoteImageRepo"
@@ -22,17 +22,24 @@ object NoteImageRepository {
 
     private val cache =
         object : LruCache<Long, List<String>>(MAX_CACHE_ITEMS) {
-            override fun sizeOf(key: Long, value: List<String>): Int = 1
+            override fun sizeOf(
+                key: Long,
+                value: List<String>,
+            ): Int = 1
         }
 
     private val inFlight: ConcurrentHashMap<Long, Job> = ConcurrentHashMap()
     private val waiters: ConcurrentHashMap<Long, MutableList<(List<String>) -> Unit>> = ConcurrentHashMap()
 
-    fun load(cvid: Long, onResult: (List<String>) -> Unit) {
-        val safe = cvid.takeIf { it > 0 } ?: run {
-            onResult(emptyList())
-            return
-        }
+    fun load(
+        cvid: Long,
+        onResult: (List<String>) -> Unit,
+    ) {
+        val safe =
+            cvid.takeIf { it > 0 } ?: run {
+                onResult(emptyList())
+                return
+            }
 
         synchronized(lock) {
             val cached = cache.get(safe)
@@ -103,7 +110,10 @@ object NoteImageRepository {
         return extractFirstImageUrlsFromContent(content, limit = 3)
     }
 
-    private fun extractFirstImageUrlsFromContent(content: String, limit: Int): List<String> {
+    private fun extractFirstImageUrlsFromContent(
+        content: String,
+        limit: Int,
+    ): List<String> {
         if (content.isBlank() || limit <= 0) return emptyList()
         if (!content.startsWith("[")) return emptyList()
 

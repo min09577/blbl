@@ -1,7 +1,7 @@
 package blbl.cat3399.feature.player
 
-import android.graphics.Bitmap
 import android.content.Context
+import android.graphics.Bitmap
 import android.graphics.Matrix
 import android.graphics.RectF
 import android.graphics.drawable.Drawable
@@ -110,7 +110,12 @@ internal class PlayerCommentImageView
             scheduleViewportReset()
         }
 
-        override fun onSizeChanged(w: Int, h: Int, oldw: Int, oldh: Int) {
+        override fun onSizeChanged(
+            w: Int,
+            h: Int,
+            oldw: Int,
+            oldh: Int,
+        ) {
             super.onSizeChanged(w, h, oldw, oldh)
             updateMatrix()
         }
@@ -197,7 +202,10 @@ internal class PlayerCommentImageView
 
         override fun performClick(): Boolean = super.performClick()
 
-        private fun handleTap(x: Float, y: Float) {
+        private fun handleTap(
+            x: Float,
+            y: Float,
+        ) {
             if (!isZoomed()) {
                 val edgeWidth = width * EDGE_TAP_RATIO
                 when {
@@ -218,7 +226,10 @@ internal class PlayerCommentImageView
             }
         }
 
-        private fun panBy(deltaX: Float, deltaY: Float): Boolean {
+        private fun panBy(
+            deltaX: Float,
+            deltaY: Float,
+        ): Boolean {
             if (!isZoomed() || !hasDrawableMetrics()) return false
             val prevX = offsetX
             val prevY = offsetY
@@ -228,7 +239,11 @@ internal class PlayerCommentImageView
             return abs(offsetX - prevX) > 0.5f || abs(offsetY - prevY) > 0.5f
         }
 
-        private fun setZoomAround(newScale: Float, focusX: Float, focusY: Float) {
+        private fun setZoomAround(
+            newScale: Float,
+            focusX: Float,
+            focusY: Float,
+        ) {
             if (!hasDrawableMetrics()) return
             val clampedScale = newScale.coerceIn(MIN_SCALE, MAX_SCALE)
             val oldScale = zoomScale

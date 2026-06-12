@@ -1,9 +1,10 @@
 package blbl.cat3399.core.prefs
 
 import android.content.Context
-import android.content.SharedPreferences
 
-class FeaturePrefs2181(context: Context) {
+class FeaturePrefs2181(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_2181", Context.MODE_PRIVATE)
 
     var v2181received: Boolean
@@ -605,11 +606,11 @@ class FeaturePrefs2181(context: Context) {
     var v2190refused: Boolean
         get() = prefs.getBoolean("v2190refused", false)
         set(value) = prefs.edit().putBoolean("v2190refused", value).apply()
-
 }
 
-
-class FeaturePrefs2191(context: Context) {
+class FeaturePrefs2191(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_2191", Context.MODE_PRIVATE)
 
     var v2191registered: Boolean
@@ -1211,11 +1212,11 @@ class FeaturePrefs2191(context: Context) {
     var v2200reopened: Boolean
         get() = prefs.getBoolean("v2200reopened", false)
         set(value) = prefs.edit().putBoolean("v2200reopened", value).apply()
-
 }
 
-
-class FeaturePrefs2201(context: Context) {
+class FeaturePrefs2201(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_2201", Context.MODE_PRIVATE)
 
     var v2201replaced: Boolean
@@ -1817,11 +1818,11 @@ class FeaturePrefs2201(context: Context) {
     var v2210restored: Boolean
         get() = prefs.getBoolean("v2210restored", false)
         set(value) = prefs.edit().putBoolean("v2210restored", value).apply()
-
 }
 
-
-class FeaturePrefs2211(context: Context) {
+class FeaturePrefs2211(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_2211", Context.MODE_PRIVATE)
 
     var v2211restricted: Boolean
@@ -2423,7 +2424,4 @@ class FeaturePrefs2211(context: Context) {
     var v2220routed: Boolean
         get() = prefs.getBoolean("v2220routed", false)
         set(value) = prefs.edit().putBoolean("v2220routed", value).apply()
-
 }
-
-

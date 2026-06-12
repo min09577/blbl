@@ -28,7 +28,10 @@ internal class PlayerInfoRecommendAdapter(
 
     override fun getItemId(position: Int): Long = items[position].stableKey().hashCode().toLong()
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Vh {
+    override fun onCreateViewHolder(
+        parent: ViewGroup,
+        viewType: Int,
+    ): Vh {
         val binding =
             ItemPlayerInfoRecommendBinding.inflate(
                 LayoutInflater.from(parent.context).cloneInUserScale(parent.context),
@@ -38,7 +41,10 @@ internal class PlayerInfoRecommendAdapter(
         return Vh(binding)
     }
 
-    override fun onBindViewHolder(holder: Vh, position: Int) {
+    override fun onBindViewHolder(
+        holder: Vh,
+        position: Int,
+    ) {
         holder.bind(items[position], position, onClick)
     }
 

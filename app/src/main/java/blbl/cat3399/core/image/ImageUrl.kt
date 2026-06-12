@@ -8,25 +8,31 @@ object ImageUrl {
 
     private fun normalize(url: String): String {
         val u = url.trim()
-        val fixed = when {
-            u.startsWith("//") -> "https:$u"
-            u.startsWith("http://") -> "https://" + u.removePrefix("http://")
-            else -> u
-        }
+        val fixed =
+            when {
+                u.startsWith("//") -> "https:$u"
+                u.startsWith("http://") -> "https://" + u.removePrefix("http://")
+                else -> u
+            }
         return fixed
     }
 
-    private fun resized(url: String?, suffix: String): String? {
+    private fun resized(
+        url: String?,
+        suffix: String,
+    ): String? {
         val u = url ?: return null
         if (u.isBlank()) return null
         val normalized = normalize(u)
         val httpUrl = normalized.toHttpUrlOrNull() ?: return normalized
         val host = httpUrl.host.lowercase()
         val supportsResize =
-            (host == "hdslb.com" ||
-                host.endsWith(".hdslb.com") ||
-                host == "biliimg.com" ||
-                host.endsWith(".biliimg.com")) &&
+            (
+                host == "hdslb.com" ||
+                    host.endsWith(".hdslb.com") ||
+                    host == "biliimg.com" ||
+                    host.endsWith(".biliimg.com")
+            ) &&
                 httpUrl.encodedPath.contains("/bfs/")
         if (!supportsResize) return normalized
 
@@ -38,31 +44,34 @@ object ImageUrl {
     }
 
     fun cover(url: String?): String? {
-        val suffix = when (imageQuality()) {
-            "small" -> "@320w_180h_1c.webp"
-            "large" -> "@640w_360h_1c.webp"
-            else -> "@480w_270h_1c.webp"
-        }
+        val suffix =
+            when (imageQuality()) {
+                "small" -> "@320w_180h_1c.webp"
+                "large" -> "@640w_360h_1c.webp"
+                else -> "@480w_270h_1c.webp"
+            }
         return resized(url, suffix)
     }
 
     fun poster(url: String?): String? {
-        val suffix = when (imageQuality()) {
-            "small" -> "@240w_340h_1c.webp"
-            "large" -> "@480w_680h_1c.webp"
-            else -> "@360w_510h_1c.webp"
-        }
+        val suffix =
+            when (imageQuality()) {
+                "small" -> "@240w_340h_1c.webp"
+                "large" -> "@480w_680h_1c.webp"
+                else -> "@360w_510h_1c.webp"
+            }
         return resized(url, suffix)
     }
 
     fun avatar(url: String?): String? = resized(url, "@80w_80h_1c.webp")
 
     fun commentThumbnail(url: String?): String? {
-        val suffix = when (imageQuality()) {
-            "small" -> "@320w_240h_1c.webp"
-            "large" -> "@640w_480h_1c.webp"
-            else -> "@480w_360h_1c.webp"
-        }
+        val suffix =
+            when (imageQuality()) {
+                "small" -> "@320w_240h_1c.webp"
+                "large" -> "@640w_480h_1c.webp"
+                else -> "@480w_360h_1c.webp"
+            }
         return resized(url, suffix)
     }
 }

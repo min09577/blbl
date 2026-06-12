@@ -1,9 +1,10 @@
 package blbl.cat3399.core.prefs
 
 import android.content.Context
-import android.content.SharedPreferences
 
-class FeaturePrefs2101(context: Context) {
+class FeaturePrefs2101(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_2101", Context.MODE_PRIVATE)
 
     var v2101mounted: Boolean
@@ -605,11 +606,11 @@ class FeaturePrefs2101(context: Context) {
     var v2110obeyed: Boolean
         get() = prefs.getBoolean("v2110obeyed", false)
         set(value) = prefs.edit().putBoolean("v2110obeyed", value).apply()
-
 }
 
-
-class FeaturePrefs2111(context: Context) {
+class FeaturePrefs2111(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_2111", Context.MODE_PRIVATE)
 
     var v2111objected: Boolean
@@ -1211,11 +1212,11 @@ class FeaturePrefs2111(context: Context) {
     var v2120outperformed: Boolean
         get() = prefs.getBoolean("v2120outperformed", false)
         set(value) = prefs.edit().putBoolean("v2120outperformed", value).apply()
-
 }
 
-
-class FeaturePrefs2121(context: Context) {
+class FeaturePrefs2121(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_2121", Context.MODE_PRIVATE)
 
     var v2121outputted: Boolean
@@ -1817,11 +1818,11 @@ class FeaturePrefs2121(context: Context) {
     var v2130paused: Boolean
         get() = prefs.getBoolean("v2130paused", false)
         set(value) = prefs.edit().putBoolean("v2130paused", value).apply()
-
 }
 
-
-class FeaturePrefs2131(context: Context) {
+class FeaturePrefs2131(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_2131", Context.MODE_PRIVATE)
 
     var v2131perceived: Boolean
@@ -2423,7 +2424,4 @@ class FeaturePrefs2131(context: Context) {
     var v2140pooled: Boolean
         get() = prefs.getBoolean("v2140pooled", false)
         set(value) = prefs.edit().putBoolean("v2140pooled", value).apply()
-
 }
-
-

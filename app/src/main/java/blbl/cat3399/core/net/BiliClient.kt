@@ -15,7 +15,6 @@ import okhttp3.Protocol
 import okhttp3.Request
 import okhttp3.RequestBody
 import okhttp3.RequestBody.Companion.toRequestBody
-import okhttp3.Response
 import org.json.JSONObject
 import java.io.IOException
 import java.util.concurrent.TimeUnit
@@ -66,88 +65,93 @@ object BiliClient {
         // v4.1: HTTP响应缓存 (10MB)
         val cacheDir = java.io.File(context.applicationContext.cacheDir, "http-cache")
         val cache = okhttp3.Cache(cacheDir, 10L * 1024 * 1024)
-        val baseClient = OkHttpClient.Builder()
-            .cookieJar(cookies)
-            .dns(dns)
-            .connectionPool(connectionPool)
-            .cache(cache)
-            .connectTimeout(12, TimeUnit.SECONDS)
-            .readTimeout(20, TimeUnit.SECONDS)
-            .writeTimeout(20, TimeUnit.SECONDS)
-            .retryOnConnectionFailure(false)
-            .build()
+        val baseClient =
+            OkHttpClient
+                .Builder()
+                .cookieJar(cookies)
+                .dns(dns)
+                .connectionPool(connectionPool)
+                .cache(cache)
+                .connectTimeout(12, TimeUnit.SECONDS)
+                .readTimeout(20, TimeUnit.SECONDS)
+                .writeTimeout(20, TimeUnit.SECONDS)
+                .retryOnConnectionFailure(false)
+                .build()
 
-        apiOkHttp = baseClient.newBuilder()
-            .addInterceptor { chain ->
-                val ua = prefs.userAgent
-                val original = chain.request()
-                val builder = original.newBuilder()
-                if (original.header("User-Agent").isNullOrBlank()) builder.header("User-Agent", ua)
-                if (original.header("Referer").isNullOrBlank()) builder.header("Referer", "https://www.bilibili.com/")
-                val skipOrigin = original.header(HDR_SKIP_ORIGIN) == "1"
-                if (skipOrigin) builder.removeHeader(HDR_SKIP_ORIGIN)
-                if (!skipOrigin && original.header("Origin").isNullOrBlank()) builder.header("Origin", "https://www.bilibili.com")
-                val req = builder.build()
-                val start = System.nanoTime()
-                val res = chain.proceed(req)
-                val costMs = (System.nanoTime() - start) / 1_000_000
-                if (LOG_HTTP_REQUESTS) {
-                    AppLog.d(TAG, "${req.method} ${req.url.host}${req.url.encodedPath} -> ${res.code} (${costMs}ms)")
-                }
-                res
-            }
-            .build()
+        apiOkHttp =
+            baseClient
+                .newBuilder()
+                .addInterceptor { chain ->
+                    val ua = prefs.userAgent
+                    val original = chain.request()
+                    val builder = original.newBuilder()
+                    if (original.header("User-Agent").isNullOrBlank()) builder.header("User-Agent", ua)
+                    if (original.header("Referer").isNullOrBlank()) builder.header("Referer", "https://www.bilibili.com/")
+                    val skipOrigin = original.header(HDR_SKIP_ORIGIN) == "1"
+                    if (skipOrigin) builder.removeHeader(HDR_SKIP_ORIGIN)
+                    if (!skipOrigin && original.header("Origin").isNullOrBlank()) builder.header("Origin", "https://www.bilibili.com")
+                    val req = builder.build()
+                    val start = System.nanoTime()
+                    val res = chain.proceed(req)
+                    val costMs = (System.nanoTime() - start) / 1_000_000
+                    if (LOG_HTTP_REQUESTS) {
+                        AppLog.d(TAG, "${req.method} ${req.url.host}${req.url.encodedPath} -> ${res.code} (${costMs}ms)")
+                    }
+                    res
+                }.build()
 
         apiOkHttpNoCookies = apiOkHttp.newBuilder().cookieJar(CookieJar.NO_COOKIES).build()
 
-        cdnOkHttp = baseClient.newBuilder()
-            .addInterceptor { chain ->
-                val ua = prefs.userAgent
-                val original = chain.request()
-                val builder = original.newBuilder()
-                if (original.header("User-Agent").isNullOrBlank()) builder.header("User-Agent", ua)
-                if (original.header("Referer").isNullOrBlank()) builder.header("Referer", "https://www.bilibili.com/")
-                // CDN/媒体请求通常不需要 Origin；某些 CDN 反而会因 Origin 触发 403。
-                val req = builder.build()
-                val start = System.nanoTime()
-                val res = chain.proceed(req)
-                val costMs = (System.nanoTime() - start) / 1_000_000
-                if (LOG_HTTP_REQUESTS) {
-                    AppLog.d(TAG, "CDN ${req.method} ${req.url.host}${req.url.encodedPath} -> ${res.code} (${costMs}ms)")
-                }
-                res
-            }
-            .build()
-
-        appCdnOkHttp = baseClient.newBuilder()
-            .cookieJar(CookieJar.NO_COOKIES)
-            .protocols(listOf(Protocol.HTTP_1_1))
-            .addInterceptor { chain ->
-                val original = chain.request()
-                val defaultPort = if (original.url.isHttps) 443 else 80
-                val hostHeader =
-                    if (original.url.port == defaultPort) {
-                        original.url.host
-                    } else {
-                        "${original.url.host}:${original.url.port}"
+        cdnOkHttp =
+            baseClient
+                .newBuilder()
+                .addInterceptor { chain ->
+                    val ua = prefs.userAgent
+                    val original = chain.request()
+                    val builder = original.newBuilder()
+                    if (original.header("User-Agent").isNullOrBlank()) builder.header("User-Agent", ua)
+                    if (original.header("Referer").isNullOrBlank()) builder.header("Referer", "https://www.bilibili.com/")
+                    // CDN/媒体请求通常不需要 Origin；某些 CDN 反而会因 Origin 触发 403。
+                    val req = builder.build()
+                    val start = System.nanoTime()
+                    val res = chain.proceed(req)
+                    val costMs = (System.nanoTime() - start) / 1_000_000
+                    if (LOG_HTTP_REQUESTS) {
+                        AppLog.d(TAG, "CDN ${req.method} ${req.url.host}${req.url.encodedPath} -> ${res.code} (${costMs}ms)")
                     }
-                val req =
-                    original
-                        .newBuilder()
-                        .header("User-Agent", APP_CDN_USER_AGENT)
-                        .header("Accept-Encoding", "identity")
-                        .header("Host", hostHeader)
-                        .header("Connection", "Keep-Alive")
-                        .build()
-                val start = System.nanoTime()
-                val res = chain.proceed(req)
-                val costMs = (System.nanoTime() - start) / 1_000_000
-                if (LOG_HTTP_REQUESTS) {
-                    AppLog.d(TAG, "APP CDN ${req.method} ${req.url.host}${req.url.encodedPath} -> ${res.code} (${costMs}ms)")
-                }
-                res
-            }
-            .build()
+                    res
+                }.build()
+
+        appCdnOkHttp =
+            baseClient
+                .newBuilder()
+                .cookieJar(CookieJar.NO_COOKIES)
+                .protocols(listOf(Protocol.HTTP_1_1))
+                .addInterceptor { chain ->
+                    val original = chain.request()
+                    val defaultPort = if (original.url.isHttps) 443 else 80
+                    val hostHeader =
+                        if (original.url.port == defaultPort) {
+                            original.url.host
+                        } else {
+                            "${original.url.host}:${original.url.port}"
+                        }
+                    val req =
+                        original
+                            .newBuilder()
+                            .header("User-Agent", APP_CDN_USER_AGENT)
+                            .header("Accept-Encoding", "identity")
+                            .header("Host", hostHeader)
+                            .header("Connection", "Keep-Alive")
+                            .build()
+                    val start = System.nanoTime()
+                    val res = chain.proceed(req)
+                    val costMs = (System.nanoTime() - start) / 1_000_000
+                    if (LOG_HTTP_REQUESTS) {
+                        AppLog.d(TAG, "APP CDN ${req.method} ${req.url.host}${req.url.encodedPath} -> ${res.code} (${costMs}ms)")
+                    }
+                    res
+                }.build()
 
         AppLog.i(TAG, "init ua=${prefs.userAgent.take(48)} cookiesSess=${cookies.hasSessData()}")
     }
@@ -156,15 +160,22 @@ object BiliClient {
         accounts.clearAllAccountsAndCurrentSession(appPrefs = prefs, cookies = cookies)
     }
 
-    private fun clientFor(url: String, noCookies: Boolean = false): OkHttpClient {
+    private fun clientFor(
+        url: String,
+        noCookies: Boolean = false,
+    ): OkHttpClient {
         val host = runCatching { url.toHttpUrl().host }.getOrNull().orEmpty()
         return if (
             host.endsWith("hdslb.com") ||
             host.contains("bilivideo.com") ||
             host.contains("bilivideo.cn") ||
             host.contains("mcdn.bilivideo")
-        ) cdnOkHttp else apiOkHttp
-            .let { if (noCookies) apiOkHttpNoCookies else apiOkHttp }
+        ) {
+            cdnOkHttp
+        } else {
+            apiOkHttp
+                .let { if (noCookies) apiOkHttpNoCookies else apiOkHttp }
+        }
     }
 
     suspend fun requestString(
@@ -200,7 +211,11 @@ object BiliClient {
         }
     }
 
-    suspend fun getJson(url: String, headers: Map<String, String> = emptyMap(), noCookies: Boolean = false): JSONObject {
+    suspend fun getJson(
+        url: String,
+        headers: Map<String, String> = emptyMap(),
+        noCookies: Boolean = false,
+    ): JSONObject {
         val body = requestString(url, method = "GET", headers = headers, noCookies = noCookies)
         return withContext(Dispatchers.Default) { JSONObject(body) }
     }
@@ -217,7 +232,11 @@ object BiliClient {
         return withContext(Dispatchers.Default) { JSONObject(body) }
     }
 
-    suspend fun getBytes(url: String, headers: Map<String, String> = emptyMap(), noCookies: Boolean = false): ByteArray {
+    suspend fun getBytes(
+        url: String,
+        headers: Map<String, String> = emptyMap(),
+        noCookies: Boolean = false,
+    ): ByteArray {
         val reqBuilder = Request.Builder().url(url)
         for ((k, v) in headers) reqBuilder.header(k, v)
         val res = clientFor(url, noCookies = noCookies).newCall(reqBuilder.build()).await()
@@ -253,19 +272,34 @@ object BiliClient {
         return keys
     }
 
-    fun withQuery(url: String, params: Map<String, String>): String {
+    fun withQuery(
+        url: String,
+        params: Map<String, String>,
+    ): String {
         val httpUrl = url.toHttpUrl().newBuilder()
         for ((k, v) in params) httpUrl.addQueryParameter(k, v)
         return httpUrl.build().toString()
     }
 
-    fun signedWbiUrl(path: String, params: Map<String, String>, keys: WbiSigner.Keys, nowEpochSec: Long = System.currentTimeMillis() / 1000): String {
+    fun signedWbiUrl(
+        path: String,
+        params: Map<String, String>,
+        keys: WbiSigner.Keys,
+        nowEpochSec: Long = System.currentTimeMillis() / 1000,
+    ): String {
         val base = "$BASE$path"
         val signed = WbiSigner.signQuery(params, keys, nowEpochSec)
         return withQuery(base, signed)
     }
 
-    fun signedWbiUrlAbsolute(url: String, params: Map<String, String>, keys: WbiSigner.Keys, nowEpochSec: Long = System.currentTimeMillis() / 1000): String {
+    fun signedWbiUrlAbsolute(
+        url: String,
+        params: Map<String, String>,
+        keys: WbiSigner.Keys,
+        nowEpochSec: Long =
+            System.currentTimeMillis() /
+                1000,
+    ): String {
         val signed = WbiSigner.signQuery(params, keys, nowEpochSec)
         return withQuery(url, signed)
     }

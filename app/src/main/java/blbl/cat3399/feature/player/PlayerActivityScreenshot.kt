@@ -74,21 +74,26 @@ private fun PlayerActivity.captureAndShareScreenshot() {
 }
 
 // v12.9: 截图预览和操作选项
-private fun PlayerActivity.showScreenshotPreview(uri: Uri, bitmap: Bitmap) {
+private fun PlayerActivity.showScreenshotPreview(
+    uri: Uri,
+    bitmap: Bitmap,
+) {
     val previewSize = 240
     val scale = minOf(previewSize.toFloat() / bitmap.width, previewSize.toFloat() / bitmap.height)
     val scaledW = (bitmap.width * scale).toInt()
     val scaledH = (bitmap.height * scale).toInt()
     val previewBitmap = Bitmap.createScaledBitmap(bitmap, scaledW, scaledH, true)
 
-    val imageView = android.widget.ImageView(this).apply {
-        setImageBitmap(previewBitmap)
-        setPadding(24, 16, 24, 8)
-        adjustViewBounds = true
-        maxHeight = previewSize
-    }
+    val imageView =
+        android.widget.ImageView(this).apply {
+            setImageBitmap(previewBitmap)
+            setPadding(24, 16, 24, 8)
+            adjustViewBounds = true
+            maxHeight = previewSize
+        }
 
-    androidx.appcompat.app.AlertDialog.Builder(this)
+    androidx.appcompat.app.AlertDialog
+        .Builder(this)
         .setTitle("截图已保存")
         .setView(imageView)
         .setPositiveButton("分享") { _, _ -> shareScreenshot(uri) }
@@ -126,7 +131,8 @@ private suspend fun PlayerActivity.captureVideoFrame(): Bitmap? {
         if (textureView != null) {
             return textureView.bitmap
         }
-    } catch (_: Exception) {}
+    } catch (_: Exception) {
+    }
 
     // Method 3: Drawing cache fallback (won't capture SurfaceView but works for UI)
     try {
@@ -137,7 +143,8 @@ private suspend fun PlayerActivity.captureVideoFrame(): Bitmap? {
         val bitmap = Bitmap.createBitmap(view.drawingCache)
         view.isDrawingCacheEnabled = false
         return bitmap
-    } catch (_: Exception) {}
+    } catch (_: Exception) {
+    }
 
     return null
 }
@@ -145,8 +152,8 @@ private suspend fun PlayerActivity.captureVideoFrame(): Bitmap? {
 /**
  * Use PixelCopy API to capture the full window including SurfaceView content.
  */
-private suspend fun pixelCopyWindow(window: Window): Bitmap? {
-    return withTimeoutOrNull(3000L) {
+private suspend fun pixelCopyWindow(window: Window): Bitmap? =
+    withTimeoutOrNull(3000L) {
         suspendCancellableCoroutine { cont ->
             val width = window.decorView.width.coerceAtLeast(1)
             val height = window.decorView.height.coerceAtLeast(1)
@@ -156,7 +163,7 @@ private suspend fun pixelCopyWindow(window: Window): Bitmap? {
                 bitmap,
                 { result ->
                     if (result == PixelCopy.SUCCESS) {
-                        AppLog.d("Screenshot", "PixelCopy success: ${width}x${height}")
+                        AppLog.d("Screenshot", "PixelCopy success: ${width}x$height")
                         cont.resume(bitmap)
                     } else {
                         AppLog.w("Screenshot", "PixelCopy failed with result=$result")
@@ -164,58 +171,61 @@ private suspend fun pixelCopyWindow(window: Window): Bitmap? {
                         cont.resume(null)
                     }
                 },
-                Handler(Looper.getMainLooper())
+                Handler(Looper.getMainLooper()),
             )
         }
     }
-}
 
-private suspend fun PlayerActivity.saveScreenshot(bitmap: Bitmap): Uri? = withContext(Dispatchers.IO) {
-    // v12.1: 添加水印
-    val watermarkedBitmap = addWatermark(bitmap)
+private suspend fun PlayerActivity.saveScreenshot(bitmap: Bitmap): Uri? =
+    withContext(Dispatchers.IO) {
+        // v12.1: 添加水印
+        val watermarkedBitmap = addWatermark(bitmap)
 
-    val rawTitle = currentMainTitle?.take(40)?.replace(Regex("[^\\w\\u4e00-\\u9fff\\s-]"), "")?.trim() ?: ""
-    val titlePart = if (rawTitle.isNotBlank()) "${rawTitle}_" else ""
-    val filename = "blbl_${titlePart}${System.currentTimeMillis()}.jpg"
+        val rawTitle = currentMainTitle?.take(40)?.replace(Regex("[^\\w\\u4e00-\\u9fff\\s-]"), "")?.trim() ?: ""
+        val titlePart = if (rawTitle.isNotBlank()) "${rawTitle}_" else ""
+        val filename = "blbl_${titlePart}${System.currentTimeMillis()}.jpg"
 
-    return@withContext if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-        // Android 10+ : MediaStore
-        val values = ContentValues().apply {
-            put(MediaStore.Images.Media.DISPLAY_NAME, filename)
-            put(MediaStore.Images.Media.MIME_TYPE, "image/jpeg")
-            put(MediaStore.Images.Media.RELATIVE_PATH, Environment.DIRECTORY_PICTURES + "/blbl")
-        }
-        val resolver = contentResolver
-        val uri = resolver.insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, values)
-        uri?.let {
-            resolver.openOutputStream(it)?.use { out ->
+        return@withContext if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+            // Android 10+ : MediaStore
+            val values =
+                ContentValues().apply {
+                    put(MediaStore.Images.Media.DISPLAY_NAME, filename)
+                    put(MediaStore.Images.Media.MIME_TYPE, "image/jpeg")
+                    put(MediaStore.Images.Media.RELATIVE_PATH, Environment.DIRECTORY_PICTURES + "/blbl")
+                }
+            val resolver = contentResolver
+            val uri = resolver.insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, values)
+            uri?.let {
+                resolver.openOutputStream(it)?.use { out ->
+                    watermarkedBitmap.compress(Bitmap.CompressFormat.JPEG, 95, out)
+                }
+            }
+            uri
+        } else {
+            // Legacy storage
+            val dir =
+                File(
+                    Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES),
+                    "blbl",
+                )
+            if (!dir.exists()) dir.mkdirs()
+            val file = File(dir, filename)
+            FileOutputStream(file).use { out ->
                 watermarkedBitmap.compress(Bitmap.CompressFormat.JPEG, 95, out)
             }
+            Uri.fromFile(file)
         }
-        uri
-    } else {
-        // Legacy storage
-        val dir = File(
-            Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES),
-            "blbl"
-        )
-        if (!dir.exists()) dir.mkdirs()
-        val file = File(dir, filename)
-        FileOutputStream(file).use { out ->
-            watermarkedBitmap.compress(Bitmap.CompressFormat.JPEG, 95, out)
-        }
-        Uri.fromFile(file)
     }
-}
 
 private fun PlayerActivity.shareScreenshot(uri: Uri) {
     try {
-        val intent = Intent(Intent.ACTION_SEND).apply {
-            type = "image/jpeg"
-            putExtra(Intent.EXTRA_STREAM, uri)
-            putExtra(Intent.EXTRA_SUBJECT, "BLBL 截图分享")
-            addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
-        }
+        val intent =
+            Intent(Intent.ACTION_SEND).apply {
+                type = "image/jpeg"
+                putExtra(Intent.EXTRA_STREAM, uri)
+                putExtra(Intent.EXTRA_SUBJECT, "BLBL 截图分享")
+                addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
+            }
         startActivity(Intent.createChooser(intent, "分享截图"))
     } catch (e: Exception) {
         AppToast.show(this, "分享失败: ${e.message}")
@@ -229,12 +239,13 @@ private fun PlayerActivity.addWatermark(bitmap: Bitmap): Bitmap {
 
     val result = bitmap.copy(Bitmap.Config.ARGB_8888, true)
     val canvas = Canvas(result)
-    val paint = Paint().apply {
-        color = Color.WHITE
-        textSize = 24f
-        isAntiAlias = true
-        setShadowLayer(2f, 1f, 1f, Color.BLACK)
-    }
+    val paint =
+        Paint().apply {
+            color = Color.WHITE
+            textSize = 24f
+            isAntiAlias = true
+            setShadowLayer(2f, 1f, 1f, Color.BLACK)
+        }
 
     val title = currentMainTitle ?: ""
     val upName = currentUpName ?: ""
@@ -242,11 +253,14 @@ private fun PlayerActivity.addWatermark(bitmap: Bitmap): Bitmap {
 
     // v12.18: 添加视频播放时间戳
     val engine = player
-    val playTime = if (engine != null && engine.duration > 0) {
-        val pos = engine.currentPosition
-        val dur = engine.duration
-        "${formatTime(pos)}/${formatTime(dur)}"
-    } else ""
+    val playTime =
+        if (engine != null && engine.duration > 0) {
+            val pos = engine.currentPosition
+            val dur = engine.duration
+            "${formatTime(pos)}/${formatTime(dur)}"
+        } else {
+            ""
+        }
 
     val lines = mutableListOf<String>()
     if (mode >= 1 && title.isNotBlank()) lines.add(title)
@@ -303,6 +317,9 @@ private fun formatTime(ms: Long): String {
     val h = totalSec / 3600
     val m = (totalSec % 3600) / 60
     val s = totalSec % 60
-    return if (h > 0) String.format(java.util.Locale.US, "%d:%02d:%02d", h, m, s)
-    else String.format(java.util.Locale.US, "%02d:%02d", m, s)
+    return if (h > 0) {
+        String.format(java.util.Locale.US, "%d:%02d:%02d", h, m, s)
+    } else {
+        String.format(java.util.Locale.US, "%02d:%02d", m, s)
+    }
 }

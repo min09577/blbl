@@ -48,8 +48,8 @@ class VideoCardVisibilityFilterTest {
         assertEquals(listOf(duplicate, visible), filtered)
     }
 
-    private fun videoCard(bvid: String): VideoCard {
-        return VideoCard(
+    private fun videoCard(bvid: String): VideoCard =
+        VideoCard(
             bvid = bvid,
             cid = null,
             title = bvid,
@@ -62,5 +62,4 @@ class VideoCardVisibilityFilterTest {
             pubDate = null,
             pubDateText = null,
         )
-    }
 }

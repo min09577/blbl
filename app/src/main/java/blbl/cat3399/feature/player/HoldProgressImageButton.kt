@@ -61,7 +61,9 @@ private class HoldProgressRingRenderer(
     }
 }
 
-class HoldProgressImageButton : AppCompatImageButton, HoldProgressHost {
+class HoldProgressImageButton :
+    AppCompatImageButton,
+    HoldProgressHost {
     private val ringRenderer = HoldProgressRingRenderer(context)
 
     override var holdProgress: Float = 0f
@@ -84,7 +86,9 @@ class HoldProgressImageButton : AppCompatImageButton, HoldProgressHost {
     }
 }
 
-class HoldProgressCardView : MaterialCardView, HoldProgressHost {
+class HoldProgressCardView :
+    MaterialCardView,
+    HoldProgressHost {
     private val ringRenderer = HoldProgressRingRenderer(context)
 
     override var holdProgress: Float = 0f

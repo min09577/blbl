@@ -76,7 +76,11 @@ object SponsorBlockApi {
         val isNetworkFailure: Boolean,
     )
 
-    suspend fun skipSegments(bvid: String, cid: Long, forceRefresh: Boolean = false): FetchResult {
+    suspend fun skipSegments(
+        bvid: String,
+        cid: Long,
+        forceRefresh: Boolean = false,
+    ): FetchResult {
         val safeBvid = bvid.trim()
         if (safeBvid.isBlank() || cid <= 0L) {
             return FetchResult(state = FetchState.NOT_FOUND, detail = "invalid_args")
@@ -198,7 +202,11 @@ object SponsorBlockApi {
         )
     }
 
-    private suspend fun querySkipSegments(bvid: String, cid: Long?, forceRefresh: Boolean): FetchResult {
+    private suspend fun querySkipSegments(
+        bvid: String,
+        cid: Long?,
+        forceRefresh: Boolean,
+    ): FetchResult {
         val primaryBaseUrl = BiliClient.prefs.playerAutoSkipServerBaseUrl
         val primary = querySkipSegmentsOnce(baseUrl = primaryBaseUrl, bvid = bvid, cid = cid, forceRefresh = forceRefresh)
         if (!primary.isNetworkFailure || primaryBaseUrl == AppPrefs.FALLBACK_PLAYER_AUTO_SKIP_SERVER_BASE_URL) {
@@ -225,7 +233,12 @@ object SponsorBlockApi {
         return fallback.result.annotate("retry_fallback_ip")
     }
 
-    private suspend fun querySkipSegmentsOnce(baseUrl: String, bvid: String, cid: Long?, forceRefresh: Boolean): RequestAttempt {
+    private suspend fun querySkipSegmentsOnce(
+        baseUrl: String,
+        bvid: String,
+        cid: Long?,
+        forceRefresh: Boolean,
+    ): RequestAttempt {
         val url = buildSkipSegmentsUrl(baseUrl = baseUrl, bvid = bvid, cid = cid)
         return runCatching {
             BiliClient.requestStringResponse(
@@ -286,12 +299,23 @@ object SponsorBlockApi {
         )
     }
 
-    private fun logResult(bvid: String, cid: Long, result: FetchResult) {
+    private fun logResult(
+        bvid: String,
+        cid: Long,
+        result: FetchResult,
+    ) {
         val detail = result.detail?.takeIf { it.isNotBlank() } ?: "-"
-        AppLog.i(TAG, "skipSegments bvid=$bvid cid=$cid state=${result.state.name.lowercase()} count=${result.segments.size} detail=$detail")
+        AppLog.i(
+            TAG,
+            "skipSegments bvid=$bvid cid=$cid state=${result.state.name.lowercase()} count=${result.segments.size} detail=$detail",
+        )
     }
 
-    private fun logSubmitResult(bvid: String, cid: Long, result: SubmitResult) {
+    private fun logSubmitResult(
+        bvid: String,
+        cid: Long,
+        result: SubmitResult,
+    ) {
         val detail = result.detail?.takeIf { it.isNotBlank() } ?: "-"
         AppLog.i(
             TAG,
@@ -302,7 +326,10 @@ object SponsorBlockApi {
 
     private fun requestScopeLabel(cid: Long?): String = if (cid != null && cid > 0L) "cid=$cid" else "cid=all"
 
-    private fun requestDetail(cid: Long?, baseUrl: String): String = "${requestScopeLabel(cid)} base=$baseUrl"
+    private fun requestDetail(
+        cid: Long?,
+        baseUrl: String,
+    ): String = "${requestScopeLabel(cid)} base=$baseUrl"
 
     private fun FetchResult.annotate(label: String): FetchResult {
         if (label.isBlank()) return this
@@ -310,7 +337,11 @@ object SponsorBlockApi {
         return copy(detail = if (detailText == null) label else "$label; $detailText")
     }
 
-    private fun buildSkipSegmentsUrl(baseUrl: String, bvid: String, cid: Long?): String =
+    private fun buildSkipSegmentsUrl(
+        baseUrl: String,
+        bvid: String,
+        cid: Long?,
+    ): String =
         buildString {
             append(baseUrl)
             append("/api/skipSegments?videoID=")
@@ -356,8 +387,7 @@ object SponsorBlockApi {
                                     JSONArray()
                                         .put(segment.startMs.coerceAtLeast(0L) / 1000.0)
                                         .put(segment.endMs.coerceAtLeast(0L) / 1000.0),
-                                )
-                                .put("category", segment.category.trim())
+                                ).put("category", segment.category.trim())
                                 .put("actionType", segment.actionType.trim()),
                         )
                     }
@@ -451,7 +481,10 @@ object SponsorBlockApi {
         return out
     }
 
-    internal fun pickSegmentsForCid(segments: List<Segment>, cid: Long): List<Segment> {
+    internal fun pickSegmentsForCid(
+        segments: List<Segment>,
+        cid: Long,
+    ): List<Segment> {
         val exact = segments.filter { it.cid == cid }
         if (exact.isNotEmpty()) return exact
 
@@ -463,7 +496,10 @@ object SponsorBlockApi {
         }
     }
 
-    internal fun isPoiSegment(category: String?, actionType: String?): Boolean {
+    internal fun isPoiSegment(
+        category: String?,
+        actionType: String?,
+    ): Boolean {
         val normalizedAction = actionType?.trim().orEmpty()
         if (normalizedAction.equals(ACTION_POI, ignoreCase = true)) return true
         return category?.trim().equals("poi_highlight", ignoreCase = true)

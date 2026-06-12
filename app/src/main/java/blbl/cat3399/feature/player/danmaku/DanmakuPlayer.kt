@@ -12,8 +12,8 @@ import blbl.cat3399.core.model.Danmaku
 import blbl.cat3399.feature.player.danmaku.model.RenderSnapshot
 import java.util.concurrent.Semaphore
 import java.util.concurrent.atomic.AtomicBoolean
-import java.util.concurrent.atomic.AtomicLong
 import java.util.concurrent.atomic.AtomicInteger
+import java.util.concurrent.atomic.AtomicLong
 
 /**
  * AkDanmaku-style player loop:
@@ -191,7 +191,12 @@ internal class DanmakuPlayer(
         }
     }
 
-    fun onViewportChanged(width: Int, height: Int, topInsetPx: Int, bottomInsetPx: Int) {
+    fun onViewportChanged(
+        width: Int,
+        height: Int,
+        topInsetPx: Int,
+        bottomInsetPx: Int,
+    ) {
         viewportWidth = width.coerceAtLeast(0)
         viewportHeight = height.coerceAtLeast(0)
         viewportTopInsetPx = topInsetPx.coerceAtLeast(0)
@@ -210,12 +215,19 @@ internal class DanmakuPlayer(
         actionHandler.obtainMessage(MSG_OP_SET, list).sendToTarget()
     }
 
-    fun appendDanmakus(list: List<Danmaku>, maxItems: Int, alreadySorted: Boolean) {
+    fun appendDanmakus(
+        list: List<Danmaku>,
+        maxItems: Int,
+        alreadySorted: Boolean,
+    ) {
         val payload = AppendPayload(list = list, maxItems = maxItems, alreadySorted = alreadySorted)
         actionHandler.obtainMessage(MSG_OP_APPEND, payload).sendToTarget()
     }
 
-    fun trimToTimeRange(minTimeMs: Long, maxTimeMs: Long) {
+    fun trimToTimeRange(
+        minTimeMs: Long,
+        maxTimeMs: Long,
+    ) {
         actionHandler.obtainMessage(MSG_OP_TRIM_RANGE, TrimRangePayload(minTimeMs, maxTimeMs)).sendToTarget()
     }
 
@@ -293,7 +305,9 @@ internal class DanmakuPlayer(
         }
     }
 
-    private inner class ActionHandler(looper: Looper) : Handler(looper) {
+    private inner class ActionHandler(
+        looper: Looper,
+    ) : Handler(looper) {
         override fun handleMessage(msg: Message) {
             when (msg.what) {
                 MSG_FRAME_UPDATE -> {
@@ -429,7 +443,10 @@ internal class DanmakuPlayer(
         }
     }
 
-    private fun updateMax(target: AtomicLong, v: Long) {
+    private fun updateMax(
+        target: AtomicLong,
+        v: Long,
+    ) {
         while (true) {
             val cur = target.get()
             if (v <= cur) return

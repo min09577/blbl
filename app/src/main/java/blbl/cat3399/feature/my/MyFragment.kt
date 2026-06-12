@@ -13,16 +13,27 @@ import blbl.cat3399.core.ui.TabContentSwitchFocusHost
 import blbl.cat3399.databinding.FragmentMyContainerBinding
 import blbl.cat3399.ui.BackPressHandler
 
-class MyFragment : Fragment(), BackPressHandler, MyNavigator, TabContentSwitchFocusHost {
+class MyFragment :
+    Fragment(),
+    BackPressHandler,
+    MyNavigator,
+    TabContentSwitchFocusHost {
     private var _binding: FragmentMyContainerBinding? = null
     private val binding get() = _binding!!
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?,
+    ): View {
         _binding = FragmentMyContainerBinding.inflate(inflater, container, false)
         return binding.root
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+    override fun onViewCreated(
+        view: View,
+        savedInstanceState: Bundle?,
+    ) {
         if (savedInstanceState == null) {
             showRootForLoginState()
         }
@@ -51,16 +62,25 @@ class MyFragment : Fragment(), BackPressHandler, MyNavigator, TabContentSwitchFo
         return current.requestFocusCurrentPagePrimaryItemFromContentSwitch()
     }
 
-    override fun openFavFolder(mediaId: Long, title: String) {
+    override fun openFavFolder(
+        mediaId: Long,
+        title: String,
+    ) {
         if (_binding == null || childFragmentManager.isStateSaved) return
-        childFragmentManager.beginTransaction()
+        childFragmentManager
+            .beginTransaction()
             .setReorderingAllowed(true)
             .replace(R.id.my_container, MyFavFolderDetailFragment.newInstance(mediaId = mediaId, title = title))
             .addToBackStack(null)
             .commit()
     }
 
-    override fun openBangumiDetail(seasonId: Long, isDrama: Boolean, continueEpId: Long?, continueEpIndex: Int?) {
+    override fun openBangumiDetail(
+        seasonId: Long,
+        isDrama: Boolean,
+        continueEpId: Long?,
+        continueEpIndex: Int?,
+    ) {
         if (!isAdded) return
         startActivity(
             Intent(requireContext(), BangumiDetailActivity::class.java)
@@ -80,7 +100,8 @@ class MyFragment : Fragment(), BackPressHandler, MyNavigator, TabContentSwitchFo
 
         val fragment = if (wantLogin) MyLoginFragment() else MyTabsFragment()
         AppLog.d("My", "showRoot loginRequired=$wantLogin")
-        childFragmentManager.beginTransaction()
+        childFragmentManager
+            .beginTransaction()
             .setReorderingAllowed(true)
             .replace(R.id.my_container, fragment)
             .commit()

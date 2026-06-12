@@ -41,8 +41,10 @@ class VideoApiDmFilterUserNormalizeTest {
         val mid = "3546586239994702"
         val crc = CRC32()
         crc.update(mid.toByteArray(Charsets.UTF_8))
-        val expected = java.lang.Long.toHexString(crc.value).padStart(8, '0')
+        val expected =
+            java.lang.Long
+                .toHexString(crc.value)
+                .padStart(8, '0')
         assertEquals(expected, VideoApi.normalizeMidHashRule(mid))
     }
 }
-

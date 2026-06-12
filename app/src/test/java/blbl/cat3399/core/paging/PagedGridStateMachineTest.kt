@@ -142,4 +142,3 @@ class PagedGridStateMachineTest {
             assertFalse(s2.isLoading)
         }
 }
-

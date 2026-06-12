@@ -1,14 +1,15 @@
 package blbl.cat3399.feature.player
 
-import android.view.View
 import android.content.ClipData
 import android.content.ClipboardManager
 import android.content.Context
+import android.view.View
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.lifecycleScope
 import blbl.cat3399.R
 import blbl.cat3399.core.api.BiliApi
 import blbl.cat3399.core.api.BiliApiException
+import blbl.cat3399.core.model.VideoCard
 import blbl.cat3399.core.net.BiliClient
 import blbl.cat3399.core.prefs.AppPrefs
 import blbl.cat3399.core.ui.AppToast
@@ -19,7 +20,6 @@ import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import blbl.cat3399.core.model.VideoCard
 
 internal fun PlayerActivity.applyOsdButtonsVisibility() {
     val enabled = BiliClient.prefs.playerOsdButtons.toSet()
@@ -28,7 +28,8 @@ internal fun PlayerActivity.applyOsdButtonsVisibility() {
     binding.btnPrev.visibility = if (enabled.contains(AppPrefs.PLAYER_OSD_BTN_PREV)) View.VISIBLE else View.GONE
     binding.btnPlayPause.visibility = View.VISIBLE
     binding.btnNext.visibility = if (enabled.contains(AppPrefs.PLAYER_OSD_BTN_NEXT)) View.VISIBLE else View.GONE
-    binding.btnSubtitle.visibility = if (subtitleSupported && enabled.contains(AppPrefs.PLAYER_OSD_BTN_SUBTITLE)) View.VISIBLE else View.GONE
+    binding.btnSubtitle.visibility =
+        if (subtitleSupported && enabled.contains(AppPrefs.PLAYER_OSD_BTN_SUBTITLE)) View.VISIBLE else View.GONE
     binding.btnDanmaku.visibility = if (enabled.contains(AppPrefs.PLAYER_OSD_BTN_DANMAKU)) View.VISIBLE else View.GONE
     binding.btnComments.visibility = if (enabled.contains(AppPrefs.PLAYER_OSD_BTN_COMMENTS)) View.VISIBLE else View.GONE
     binding.btnDetail.visibility = if (enabled.contains(AppPrefs.PLAYER_OSD_BTN_DETAIL)) View.VISIBLE else View.GONE
@@ -236,7 +237,12 @@ internal fun PlayerActivity.onCoinButtonClicked(showControls: Boolean = true) {
 internal fun PlayerActivity.onFavButtonClicked(showControls: Boolean = true) {
     if (tripleActionJob?.isActive == true) return
     if (favDialogJob?.isActive == true || favApplyJob?.isActive == true) return
-    val selfMid = BiliClient.cookies.getCookieValue("DedeUserID")?.trim()?.toLongOrNull()?.takeIf { it > 0L }
+    val selfMid =
+        BiliClient.cookies
+            .getCookieValue("DedeUserID")
+            ?.trim()
+            ?.toLongOrNull()
+            ?.takeIf { it > 0L }
     if (selfMid == null) {
         AppToast.show(this, "请先登录后再收藏")
         return
@@ -360,13 +366,12 @@ internal fun PlayerActivity.updatePlaylistControls() {
             currentBvid.isNotBlank()
     val playbackMode = resolvedPlaybackMode()
 
-    fun hasControlContext(kind: PlayerVideoListKind): Boolean {
-        return when (kind) {
+    fun hasControlContext(kind: PlayerVideoListKind): Boolean =
+        when (kind) {
             PlayerVideoListKind.PAGE -> pageListItems.isNotEmpty() && pageListIndex in pageListItems.indices
             PlayerVideoListKind.PARTS -> partsListItems.isNotEmpty() && partsListIndex in partsListItems.indices
             PlayerVideoListKind.RECOMMEND -> currentBvid.isNotBlank()
         }
-    }
 
     val prevEnabled =
         when (playbackMode) {
@@ -407,7 +412,10 @@ internal fun PlayerActivity.updateUpButton() {
     binding.btnUp.alpha = alpha
 }
 
-internal fun PlayerActivity.pickRecommendedVideo(items: List<VideoCard>, excludeBvid: String): VideoCard? {
+internal fun PlayerActivity.pickRecommendedVideo(
+    items: List<VideoCard>,
+    excludeBvid: String,
+): VideoCard? {
     val safeExclude = excludeBvid.trim()
     return items.firstOrNull { it.bvid.isNotBlank() && it.bvid != safeExclude }
         ?: items.firstOrNull { it.bvid.isNotBlank() }
@@ -629,7 +637,10 @@ internal fun PlayerActivity.playPartsPrev(userInitiated: Boolean) {
     playPartsListIndex(prev, showTitleHint = userInitiated)
 }
 
-internal fun PlayerActivity.playPageListIndex(index: Int, showTitleHint: Boolean = false) {
+internal fun PlayerActivity.playPageListIndex(
+    index: Int,
+    showTitleHint: Boolean = false,
+) {
     val list = pageListItems
     val item = list.getOrNull(index) ?: return
     if (item.bvid.isBlank() && (item.aid ?: 0L) <= 0L) return
@@ -658,7 +669,10 @@ internal fun PlayerActivity.playPageListIndex(index: Int, showTitleHint: Boolean
     )
 }
 
-internal fun PlayerActivity.playPartsListIndex(index: Int, showTitleHint: Boolean = false) {
+internal fun PlayerActivity.playPartsListIndex(
+    index: Int,
+    showTitleHint: Boolean = false,
+) {
     val list = partsListItems
     val item = list.getOrNull(index) ?: return
     if (item.bvid.isBlank() && (item.aid ?: 0L) <= 0L) return
@@ -687,19 +701,28 @@ internal fun PlayerActivity.playPartsListIndex(index: Int, showTitleHint: Boolea
 }
 
 // v4.4: Create new favorites folder dialog
-private fun PlayerActivity.showCreateFavFolderDialog(rid: Long, initialFavState: Set<Long>) {
-    val editText = android.widget.EditText(this).apply {
-        hint = "请输入收藏夹名称"
-        setSingleLine(true)
-        val dp16 = (16 * resources.displayMetrics.density).toInt()
-        setPadding(dp16, dp16, dp16, dp16)
-    }
+private fun PlayerActivity.showCreateFavFolderDialog(
+    rid: Long,
+    initialFavState: Set<Long>,
+) {
+    val editText =
+        android.widget.EditText(this).apply {
+            hint = "请输入收藏夹名称"
+            setSingleLine(true)
+            val dp16 = (16 * resources.displayMetrics.density).toInt()
+            setPadding(dp16, dp16, dp16, dp16)
+        }
 
-    android.app.AlertDialog.Builder(this)
+    android.app.AlertDialog
+        .Builder(this)
         .setTitle("创建新收藏夹")
         .setView(editText)
         .setPositiveButton("创建") { _, _ ->
-            val title = editText.text?.toString()?.trim().orEmpty()
+            val title =
+                editText.text
+                    ?.toString()
+                    ?.trim()
+                    .orEmpty()
             if (title.isBlank()) {
                 AppToast.show(this, "名称不能为空")
                 return@setPositiveButton
@@ -718,13 +741,13 @@ private fun PlayerActivity.showCreateFavFolderDialog(rid: Long, initialFavState:
                     }
                 } catch (t: Throwable) {
                     if (t is kotlinx.coroutines.CancellationException) return@launch
-                    val msg = (t as? BiliApiException)?.apiMessage?.takeIf { it.isNotBlank() }
-                        ?: (t.message ?: "创建失败")
+                    val msg =
+                        (t as? BiliApiException)?.apiMessage?.takeIf { it.isNotBlank() }
+                            ?: (t.message ?: "创建失败")
                     AppToast.show(this@showCreateFavFolderDialog, msg)
                 }
             }
-        }
-        .setNegativeButton("取消", null)
+        }.setNegativeButton("取消", null)
         .show()
 }
 

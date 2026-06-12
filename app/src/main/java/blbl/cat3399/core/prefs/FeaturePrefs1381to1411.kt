@@ -1,9 +1,10 @@
 package blbl.cat3399.core.prefs
 
 import android.content.Context
-import android.content.SharedPreferences
 
-class FeaturePrefs1381(context: Context) {
+class FeaturePrefs1381(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1381", Context.MODE_PRIVATE)
 
     var v1381dense: Boolean
@@ -605,11 +606,11 @@ class FeaturePrefs1381(context: Context) {
     var v1390dodge: Boolean
         get() = prefs.getBoolean("v1390dodge", false)
         set(value) = prefs.edit().putBoolean("v1390dodge", value).apply()
-
 }
 
-
-class FeaturePrefs1391(context: Context) {
+class FeaturePrefs1391(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1391", Context.MODE_PRIVATE)
 
     var v1391donor: Boolean
@@ -1211,11 +1212,11 @@ class FeaturePrefs1391(context: Context) {
     var v1400drum: Boolean
         get() = prefs.getBoolean("v1400drum", false)
         set(value) = prefs.edit().putBoolean("v1400drum", value).apply()
-
 }
 
-
-class FeaturePrefs1401(context: Context) {
+class FeaturePrefs1401(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1401", Context.MODE_PRIVATE)
 
     var v1401duck: Boolean
@@ -1817,11 +1818,11 @@ class FeaturePrefs1401(context: Context) {
     var v1410educate: Boolean
         get() = prefs.getBoolean("v1410educate", false)
         set(value) = prefs.edit().putBoolean("v1410educate", value).apply()
-
 }
 
-
-class FeaturePrefs1411(context: Context) {
+class FeaturePrefs1411(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1411", Context.MODE_PRIVATE)
 
     var v1411effort: Boolean
@@ -2423,7 +2424,4 @@ class FeaturePrefs1411(context: Context) {
     var v1420encore: Boolean
         get() = prefs.getBoolean("v1420encore", false)
         set(value) = prefs.edit().putBoolean("v1420encore", value).apply()
-
 }
-
-

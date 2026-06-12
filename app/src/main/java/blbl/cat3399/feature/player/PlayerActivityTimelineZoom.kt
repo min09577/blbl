@@ -7,6 +7,8 @@ package blbl.cat3399.feature.player
 class PlayerActivityTimelineZoom {
     // Stub implementation - would be integrated into PlayerActivity
     fun setTimelineZoomEnabled(enabled: Boolean) {}
+
     fun getZoomLevel(): Float = 1.0f
+
     fun setZoomLevel(level: Float) {}
 }

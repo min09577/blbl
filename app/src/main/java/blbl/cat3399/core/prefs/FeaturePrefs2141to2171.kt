@@ -1,9 +1,10 @@
 package blbl.cat3399.core.prefs
 
 import android.content.Context
-import android.content.SharedPreferences
 
-class FeaturePrefs2141(context: Context) {
+class FeaturePrefs2141(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_2141", Context.MODE_PRIVATE)
 
     var v2141populated: Boolean
@@ -605,11 +606,11 @@ class FeaturePrefs2141(context: Context) {
     var v2150preserved: Boolean
         get() = prefs.getBoolean("v2150preserved", false)
         set(value) = prefs.edit().putBoolean("v2150preserved", value).apply()
-
 }
 
-
-class FeaturePrefs2151(context: Context) {
+class FeaturePrefs2151(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_2151", Context.MODE_PRIVATE)
 
     var v2151pressed: Boolean
@@ -1211,11 +1212,11 @@ class FeaturePrefs2151(context: Context) {
     var v2160proofed: Boolean
         get() = prefs.getBoolean("v2160proofed", false)
         set(value) = prefs.edit().putBoolean("v2160proofed", value).apply()
-
 }
 
-
-class FeaturePrefs2161(context: Context) {
+class FeaturePrefs2161(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_2161", Context.MODE_PRIVATE)
 
     var v2161propagated: Boolean
@@ -1817,11 +1818,11 @@ class FeaturePrefs2161(context: Context) {
     var v2170pushed: Boolean
         get() = prefs.getBoolean("v2170pushed", false)
         set(value) = prefs.edit().putBoolean("v2170pushed", value).apply()
-
 }
 
-
-class FeaturePrefs2171(context: Context) {
+class FeaturePrefs2171(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_2171", Context.MODE_PRIVATE)
 
     var v2171qualified: Boolean
@@ -2423,7 +2424,4 @@ class FeaturePrefs2171(context: Context) {
     var v2180rebuilt: Boolean
         get() = prefs.getBoolean("v2180rebuilt", false)
         set(value) = prefs.edit().putBoolean("v2180rebuilt", value).apply()
-
 }
-
-

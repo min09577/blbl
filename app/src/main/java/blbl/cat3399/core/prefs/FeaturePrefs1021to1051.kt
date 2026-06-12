@@ -1,9 +1,10 @@
 package blbl.cat3399.core.prefs
 
 import android.content.Context
-import android.content.SharedPreferences
 
-class FeaturePrefs1021(context: Context) {
+class FeaturePrefs1021(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1021", Context.MODE_PRIVATE)
 
     var v1021recover: Boolean
@@ -605,11 +606,11 @@ class FeaturePrefs1021(context: Context) {
     var v1030rename: Boolean
         get() = prefs.getBoolean("v1030rename", false)
         set(value) = prefs.edit().putBoolean("v1030rename", value).apply()
-
 }
 
-
-class FeaturePrefs1031(context: Context) {
+class FeaturePrefs1031(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1031", Context.MODE_PRIVATE)
 
     var v1031render: Boolean
@@ -1211,11 +1212,11 @@ class FeaturePrefs1031(context: Context) {
     var v1040retry: Boolean
         get() = prefs.getBoolean("v1040retry", false)
         set(value) = prefs.edit().putBoolean("v1040retry", value).apply()
-
 }
 
-
-class FeaturePrefs1041(context: Context) {
+class FeaturePrefs1041(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1041", Context.MODE_PRIVATE)
 
     var v1041return: Boolean
@@ -1817,11 +1818,11 @@ class FeaturePrefs1041(context: Context) {
     var v1050sample: Boolean
         get() = prefs.getBoolean("v1050sample", false)
         set(value) = prefs.edit().putBoolean("v1050sample", value).apply()
-
 }
 
-
-class FeaturePrefs1051(context: Context) {
+class FeaturePrefs1051(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1051", Context.MODE_PRIVATE)
 
     var v1051save: Boolean
@@ -2423,7 +2424,4 @@ class FeaturePrefs1051(context: Context) {
     var v1060select: Boolean
         get() = prefs.getBoolean("v1060select", false)
         set(value) = prefs.edit().putBoolean("v1060select", value).apply()
-
 }
-
-

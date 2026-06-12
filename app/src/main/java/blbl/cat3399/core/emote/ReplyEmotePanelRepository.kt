@@ -3,7 +3,6 @@ package blbl.cat3399.core.emote
 import android.content.Context
 import blbl.cat3399.core.log.AppLog
 import blbl.cat3399.core.net.BiliClient
-import java.io.File
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
@@ -11,6 +10,7 @@ import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.launch
 import org.json.JSONArray
 import org.json.JSONObject
+import java.io.File
 
 /**
  * Token -> image URL mapping used to render `[doge]`-style emotes in places where the API only
@@ -169,7 +169,11 @@ object ReplyEmotePanelRepository {
         persistToDisk(context, nowSec, out)
     }
 
-    private fun persistToDisk(context: Context, fetchedAtSec: Long, map: Map<String, String>) {
+    private fun persistToDisk(
+        context: Context,
+        fetchedAtSec: Long,
+        map: Map<String, String>,
+    ) {
         val file = cacheFile(context)
         runCatching {
             val mapObj = JSONObject()
@@ -189,4 +193,3 @@ object ReplyEmotePanelRepository {
         return text.first() == '[' && text.last() == ']'
     }
 }
-

@@ -2,6 +2,7 @@ import java.net.URL
 
 plugins {
     id("com.android.application")
+    id("org.jlleitschuh.gradle.ktlint")
 }
 
 android {
@@ -70,12 +71,13 @@ android {
 
     packaging {
         resources {
-            excludes += setOf(
-                "META-INF/DEPENDENCIES",
-                "META-INF/LICENSE*",
-                "META-INF/NOTICE*",
-                "META-INF/*.kotlin_module",
-            )
+            excludes +=
+                setOf(
+                    "META-INF/DEPENDENCIES",
+                    "META-INF/LICENSE*",
+                    "META-INF/NOTICE*",
+                    "META-INF/*.kotlin_module",
+                )
         }
         jniLibs {
             // IjkPlayer native libs are shipped as an on-demand plugin (downloaded when needed).
@@ -85,10 +87,11 @@ android {
 }
 
 // --- Protobuf tools configuration (must be declared before dependencies block) ---
-val protobufTools = configurations.create("protobufTools") {
-    isCanBeConsumed = false
-    isCanBeResolved = true
-}
+val protobufTools =
+    configurations.create("protobufTools") {
+        isCanBeConsumed = false
+        isCanBeResolved = true
+    }
 
 val protoSourceDir = layout.projectDirectory.dir("src/main/proto")
 val protoOutputDir = layout.buildDirectory.dir("generated/source/proto/debug/java")
@@ -122,8 +125,21 @@ dependencies {
     compileOnly("javax.annotation:javax.annotation-api:1.3.2")
     implementation("com.google.zxing:core:3.5.3")
 
-    add("protobufTools", "com.google.protobuf:protoc:3.25.3:windows-x86_64@exe")
-    add("protobufTools", "io.grpc:protoc-gen-grpc-java:1.72.0:windows-x86_64@exe")
+    val protocClassifier =
+        when {
+            org.gradle.internal.os.OperatingSystem
+                .current()
+                .isWindows -> "windows-x86_64"
+            org.gradle.internal.os.OperatingSystem
+                .current()
+                .isMacOsX ->
+                if (System.getProperty("os.arch") == "aarch64") "osx-aarch_64" else "osx-x86_64"
+            else ->
+                if (System.getProperty("os.arch") == "aarch64") "linux-aarch_64" else "linux-x86_64"
+        }
+
+    add("protobufTools", "com.google.protobuf:protoc:3.25.3:$protocClassifier@exe")
+    add("protobufTools", "io.grpc:protoc-gen-grpc-java:1.72.0:$protocClassifier@exe")
 
     testImplementation("junit:junit:4.13.2")
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.9.0")
@@ -142,17 +158,39 @@ val generateProto by tasks.registering {
 
     doLast {
         val resolved = protobufTools.resolvedConfiguration.resolvedArtifacts
-        val protocExe = resolved.find { it.moduleVersion.id.name == "protoc" }?.file
-            ?: error("protoc artifact not found in protobufTools configuration")
-        val grpcPluginExe = resolved.find { it.moduleVersion.id.name == "protoc-gen-grpc-java" }?.file
-            ?: error("protoc-gen-grpc-java artifact not found in protobufTools configuration")
+        val protocExe =
+            resolved.find { it.moduleVersion.id.name == "protoc" }?.file
+                ?: error("protoc artifact not found in protobufTools configuration")
+        val grpcPluginExe =
+            resolved.find { it.moduleVersion.id.name == "protoc-gen-grpc-java" }?.file
+                ?: error("protoc-gen-grpc-java artifact not found in protobufTools configuration")
 
         // protoc from Maven lacks the include/ directory; download full distribution from GitHub
-        val protoIncludeDir = layout.buildDirectory.dir("tmp/proto-include").get().asFile
+        val protoIncludeDir =
+            layout.buildDirectory
+                .dir("tmp/proto-include")
+                .get()
+                .asFile
         if (!protoIncludeDir.resolve("google/protobuf/any.proto").exists()) {
-            val protoZip = layout.buildDirectory.file("tmp/protoc-dist.zip").get().asFile
+            val protoZip =
+                layout.buildDirectory
+                    .file("tmp/protoc-dist.zip")
+                    .get()
+                    .asFile
             protoZip.parentFile.mkdirs()
-            val url = URL("https://github.com/protocolbuffers/protobuf/releases/download/v25.3/protoc-25.3-win64.zip")
+            val protocDist =
+                when {
+                    org.gradle.internal.os.OperatingSystem
+                        .current()
+                        .isWindows -> "win64"
+                    org.gradle.internal.os.OperatingSystem
+                        .current()
+                        .isMacOsX ->
+                        if (System.getProperty("os.arch") == "aarch64") "osx-aarch_64" else "osx-x86_64"
+                    else ->
+                        if (System.getProperty("os.arch") == "aarch64") "linux-aarch_64" else "linux-x86_64"
+                }
+            val url = URL("https://github.com/protocolbuffers/protobuf/releases/download/v25.3/protoc-25.3-$protocDist.zip")
             url.openStream().use { inp ->
                 protoZip.outputStream().use { out -> inp.copyTo(out) }
             }
@@ -167,14 +205,15 @@ val generateProto by tasks.registering {
         outputDir.deleteRecursively()
         outputDir.mkdirs()
 
-        val cmd = mutableListOf(
-            protocExe.absolutePath,
-            "-I${protoSourceDir.asFile.absolutePath}",
-            "-I${protoIncludeDir.resolve("include").absolutePath}",
-            "--java_out=lite:${outputDir.absolutePath}",
-            "--grpc_out=lite:${outputDir.absolutePath}",
-            "--plugin=protoc-gen-grpc=${grpcPluginExe.absolutePath}",
-        )
+        val cmd =
+            mutableListOf(
+                protocExe.absolutePath,
+                "-I${protoSourceDir.asFile.absolutePath}",
+                "-I${protoIncludeDir.resolve("include").absolutePath}",
+                "--java_out=lite:${outputDir.absolutePath}",
+                "--grpc_out=lite:${outputDir.absolutePath}",
+                "--plugin=protoc-gen-grpc=${grpcPluginExe.absolutePath}",
+            )
         cmd.addAll(protoFiles.files.map { it.absolutePath })
 
         val process = ProcessBuilder(cmd).redirectErrorStream(true).start()
@@ -214,7 +253,10 @@ val checkThemeTokens =
 
             // Match whole resource refs (word boundary) to avoid false positives like
             // `@color/blbl_text_on_media` or `@drawable/blbl_focus_bg_round_danger`.
-            fun containsWholeToken(line: String, token: String): Boolean {
+            fun containsWholeToken(
+                line: String,
+                token: String,
+            ): Boolean {
                 var fromIndex = 0
                 while (true) {
                     val idx = line.indexOf(token, startIndex = fromIndex)
@@ -240,7 +282,8 @@ val checkThemeTokens =
 
             val violations = mutableListOf<String>()
             for (dir in layoutDirs) {
-                dir.walkTopDown()
+                dir
+                    .walkTopDown()
                     .filter { it.isFile && it.extension.equals("xml", ignoreCase = true) }
                     .forEach { f ->
                         val relPath = f.relativeTo(projectDir).invariantSeparatorsPath
@@ -276,3 +319,14 @@ tasks.named("preBuild").configure {
     dependsOn(checkThemeTokens)
 }
 
+ktlint {
+    android.set(true)
+    outputToConsole.set(true)
+    reporters {
+        reporter(org.jlleitschuh.gradle.ktlint.reporter.ReporterType.PLAIN)
+        reporter(org.jlleitschuh.gradle.ktlint.reporter.ReporterType.CHECKSTYLE)
+    }
+    filter {
+        exclude("**/proto/**")
+    }
+}

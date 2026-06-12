@@ -15,8 +15,8 @@ import blbl.cat3399.core.emote.ReplyEmotePanelRepository
 import blbl.cat3399.core.model.Danmaku
 import blbl.cat3399.core.model.isHighLiked
 import blbl.cat3399.feature.player.danmaku.model.DanmakuCacheState
-import blbl.cat3399.feature.player.danmaku.model.DanmakuItem
 import blbl.cat3399.feature.player.danmaku.model.DanmakuInlineSegment
+import blbl.cat3399.feature.player.danmaku.model.DanmakuItem
 import blbl.cat3399.feature.player.danmaku.model.DanmakuKind
 import blbl.cat3399.feature.player.danmaku.model.RenderSnapshot
 import kotlin.math.ceil
@@ -29,21 +29,36 @@ internal interface DanmakuEngineMainApi {
 
     fun lastDrawFallbackCount(): Int
 
-    fun stepTime(positionMs: Long, uiFrameId: Int)
+    fun stepTime(
+        positionMs: Long,
+        uiFrameId: Int,
+    )
 
     fun drainReleasedBitmaps(uiFrameId: Int)
 
     fun renderSnapshot(): RenderSnapshot
 
-    fun draw(canvas: Canvas, snapshot: RenderSnapshot, config: DanmakuConfig)
+    fun draw(
+        canvas: Canvas,
+        snapshot: RenderSnapshot,
+        config: DanmakuConfig,
+    )
 }
 
 internal interface DanmakuEngineActionApi {
-    fun updateViewport(width: Int, height: Int, topInsetPx: Int, bottomInsetPx: Int)
+    fun updateViewport(
+        width: Int,
+        height: Int,
+        topInsetPx: Int,
+        bottomInsetPx: Int,
+    )
 
     fun updateConfig(newConfig: DanmakuConfig)
 
-    fun stepTime(positionMs: Long, uiFrameId: Int)
+    fun stepTime(
+        positionMs: Long,
+        uiFrameId: Int,
+    )
 
     fun currentPositionMs(): Long
 
@@ -55,11 +70,17 @@ internal interface DanmakuEngineActionApi {
 
     fun setDanmakus(list: List<Danmaku>)
 
-    fun appendDanmakus(list: List<Danmaku>, alreadySorted: Boolean)
+    fun appendDanmakus(
+        list: List<Danmaku>,
+        alreadySorted: Boolean,
+    )
 
     fun trimToMax(maxItems: Int)
 
-    fun trimToTimeRange(minTimeMs: Long, maxTimeMs: Long)
+    fun trimToTimeRange(
+        minTimeMs: Long,
+        maxTimeMs: Long,
+    )
 
     fun seekTo(positionMs: Long)
 
@@ -76,8 +97,10 @@ internal interface DanmakuEngineActionApi {
 internal class DanmakuEngine(
     private val displayMetrics: DisplayMetrics,
     private val cacheManager: CacheManager,
-) : DanmakuEngineMainApi, DanmakuEngineActionApi {
+) : DanmakuEngineMainApi,
+    DanmakuEngineActionApi {
     private val density: Float = displayMetrics.density.takeIf { it.isFinite() && it > 0f } ?: 1f
+
     // ---- Data ----
     private val actionStateLock = Any()
     private var items: MutableList<DanmakuItem> = mutableListOf()
@@ -90,8 +113,11 @@ internal class DanmakuEngine(
 
     // ---- Viewport / Config (action thread writes; main reads) ----
     @Volatile private var viewportWidth: Int = 0
+
     @Volatile private var viewportHeight: Int = 0
+
     @Volatile private var viewportTopInsetPx: Int = 0
+
     @Volatile private var viewportBottomInsetPx: Int = 0
 
     @Volatile
@@ -109,15 +135,21 @@ internal class DanmakuEngine(
         )
 
     @Volatile private var textSizePx: Float = sp(18f)
+
     @Volatile private var strokeWidthPx: Float = 4f
+
     @Volatile private var outlinePadPx: Float = 2f
 
     @Volatile private var cacheStyleGeneration: Int = 0
+
     @Volatile private var measureGeneration: Int = 0
+
     @Volatile private var debugPendingCount: Int = 0
+
     @Volatile private var debugNextAtMs: Int? = null
 
     @Volatile private var lastDrawCachedCount: Int = 0
+
     @Volatile private var lastDrawFallbackCount: Int = 0
 
     override fun lastDrawCachedCount(): Int = lastDrawCachedCount
@@ -126,11 +158,13 @@ internal class DanmakuEngine(
 
     // ---- Time (main writes; action reads) ----
     @Volatile private var currentPositionMs: Long = 0L
+
     @Volatile private var currentUiFrameId: Int = 0
 
     // ---- Render snapshot (double buffer) ----
     private val snapshotA = RenderSnapshot()
     private val snapshotB = RenderSnapshot()
+
     @Volatile private var latestSnapshot: RenderSnapshot = snapshotA
     private var snapshotDirty: Boolean = true
     private var rebuildRequested: Boolean = true
@@ -150,25 +184,29 @@ internal class DanmakuEngine(
 
     // ---- Draw (main thread only) ----
     private val drawFontMetrics = Paint.FontMetrics()
-    private val drawFill = Paint(Paint.ANTI_ALIAS_FLAG).apply {
-        typeface = Typeface.DEFAULT_BOLD
-        isSubpixelText = true
-    }
-    private val drawStroke = Paint(Paint.ANTI_ALIAS_FLAG).apply {
-        typeface = Typeface.DEFAULT_BOLD
-        style = Paint.Style.STROKE
-        isSubpixelText = true
-    }
-    private val bitmapPaint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
-        // Smooth-first by default for TVs (may be adjusted by overload strategies later).
-        isFilterBitmap = true
-    }
+    private val drawFill =
+        Paint(Paint.ANTI_ALIAS_FLAG).apply {
+            typeface = Typeface.DEFAULT_BOLD
+            isSubpixelText = true
+        }
+    private val drawStroke =
+        Paint(Paint.ANTI_ALIAS_FLAG).apply {
+            typeface = Typeface.DEFAULT_BOLD
+            style = Paint.Style.STROKE
+            isSubpixelText = true
+        }
+    private val bitmapPaint =
+        Paint(Paint.ANTI_ALIAS_FLAG).apply {
+            // Smooth-first by default for TVs (may be adjusted by overload strategies later).
+            isFilterBitmap = true
+        }
     private val emotePaint = Paint(Paint.ANTI_ALIAS_FLAG).apply { isFilterBitmap = true }
     private val emotePlaceholderFill = Paint(Paint.ANTI_ALIAS_FLAG).apply { style = Paint.Style.FILL }
-    private val emotePlaceholderStroke = Paint(Paint.ANTI_ALIAS_FLAG).apply {
-        style = Paint.Style.STROKE
-        strokeWidth = max(1f, density) // ~1dp
-    }
+    private val emotePlaceholderStroke =
+        Paint(Paint.ANTI_ALIAS_FLAG).apply {
+            style = Paint.Style.STROKE
+            strokeWidth = max(1f, density) // ~1dp
+        }
     private val emoteTmpRectF = RectF()
     private val inlineLikeIcon by lazy(LazyThreadSafetyMode.NONE) {
         AppCompatResources.getDrawable(BlblApp.instance, R.drawable.ic_action_like)?.mutate()?.apply {
@@ -176,7 +214,12 @@ internal class DanmakuEngine(
         }
     }
 
-    override fun updateViewport(width: Int, height: Int, topInsetPx: Int, bottomInsetPx: Int) {
+    override fun updateViewport(
+        width: Int,
+        height: Int,
+        topInsetPx: Int,
+        bottomInsetPx: Int,
+    ) {
         viewportWidth = width.coerceAtLeast(0)
         viewportHeight = height.coerceAtLeast(0)
         viewportTopInsetPx = topInsetPx.coerceAtLeast(0)
@@ -224,10 +267,12 @@ internal class DanmakuEngine(
         }
     }
 
-    private fun sp(v: Float): Float =
-        TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, v, displayMetrics)
+    private fun sp(v: Float): Float = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, v, displayMetrics)
 
-    override fun stepTime(positionMs: Long, uiFrameId: Int) {
+    override fun stepTime(
+        positionMs: Long,
+        uiFrameId: Int,
+    ) {
         currentPositionMs = positionMs.coerceAtLeast(0L)
         currentUiFrameId = uiFrameId
     }
@@ -356,7 +401,11 @@ internal class DanmakuEngine(
             it.nextAtMs = debugNextAtMs
         }
 
-    override fun draw(canvas: Canvas, snapshot: RenderSnapshot, config: DanmakuConfig) {
+    override fun draw(
+        canvas: Canvas,
+        snapshot: RenderSnapshot,
+        config: DanmakuConfig,
+    ) {
         val cfg = config
         if (!cfg.enabled) return
 
@@ -444,69 +493,75 @@ internal class DanmakuEngine(
         }
     }
 
-    override fun appendDanmakus(list: List<Danmaku>, alreadySorted: Boolean) {
+    override fun appendDanmakus(
+        list: List<Danmaku>,
+        alreadySorted: Boolean,
+    ) {
         synchronized(actionStateLock) {
-        if (list.isEmpty()) return
-        if (items.isEmpty()) {
-            setDanmakus(list)
-            return
-        }
-        val newItems =
-            if (alreadySorted) {
-                list
-            } else {
-                list.sortedBy { it.timeMs }
+            if (list.isEmpty()) return
+            if (items.isEmpty()) {
+                setDanmakus(list)
+                return
             }
-        val lastTime = items.lastOrNull()?.timeMs() ?: Int.MIN_VALUE
-        if (newItems.firstOrNull()?.timeMs ?: Int.MIN_VALUE >= lastTime) {
+            val newItems =
+                if (alreadySorted) {
+                    list
+                } else {
+                    list.sortedBy { it.timeMs }
+                }
+            val lastTime = items.lastOrNull()?.timeMs() ?: Int.MIN_VALUE
+            if (newItems.firstOrNull()?.timeMs ?: Int.MIN_VALUE >= lastTime) {
+                for (d in newItems) items.add(DanmakuItem(d))
+                debugNextAtMs = items.getOrNull(index)?.timeMs()
+                return
+            }
+            // Rare: merge & reset.
             for (d in newItems) items.add(DanmakuItem(d))
-            debugNextAtMs = items.getOrNull(index)?.timeMs()
-            return
-        }
-        // Rare: merge & reset.
-        for (d in newItems) items.add(DanmakuItem(d))
-        items.sortBy { it.timeMs() }
-        rebuildRequested = true
-        seekTo(currentPositionMs)
+            items.sortBy { it.timeMs() }
+            rebuildRequested = true
+            seekTo(currentPositionMs)
         }
     }
 
     override fun trimToMax(maxItems: Int) {
         synchronized(actionStateLock) {
-        if (maxItems <= 0) return
-        val drop = items.size - maxItems
-        if (drop <= 0) return
-        items = items.subList(drop, items.size).toMutableList()
-        index = (index - drop).coerceIn(0, items.size)
-        debugNextAtMs = items.getOrNull(index)?.timeMs()
+            if (maxItems <= 0) return
+            val drop = items.size - maxItems
+            if (drop <= 0) return
+            items = items.subList(drop, items.size).toMutableList()
+            index = (index - drop).coerceIn(0, items.size)
+            debugNextAtMs = items.getOrNull(index)?.timeMs()
         }
     }
 
-    override fun trimToTimeRange(minTimeMs: Long, maxTimeMs: Long) {
+    override fun trimToTimeRange(
+        minTimeMs: Long,
+        maxTimeMs: Long,
+    ) {
         synchronized(actionStateLock) {
-        if (items.isEmpty()) return
-        val min = minTimeMs.coerceAtLeast(0L).coerceAtMost(Int.MAX_VALUE.toLong()).toInt()
-        val max = maxTimeMs.coerceAtLeast(0L).coerceAtMost(Int.MAX_VALUE.toLong()).toInt()
-        if (max <= min) return
+            if (items.isEmpty()) return
+            val min = minTimeMs.coerceAtLeast(0L).coerceAtMost(Int.MAX_VALUE.toLong()).toInt()
+            val max = maxTimeMs.coerceAtLeast(0L).coerceAtMost(Int.MAX_VALUE.toLong()).toInt()
+            if (max <= min) return
 
-        val start = lowerBound(min)
-        val end = lowerBound(max)
-        if (start <= 0 && end >= items.size) return
-        if (start >= end) {
-            items.clear()
-            index = 0
-            clearActives()
-            resetLaneState()
-            pending.clear()
-            lastNowMs = 0
+            val start = lowerBound(min)
+            val end = lowerBound(max)
+            if (start <= 0 && end >= items.size) return
+            if (start >= end) {
+                items.clear()
+                index = 0
+                clearActives()
+                resetLaneState()
+                pending.clear()
+                lastNowMs = 0
+                rebuildRequested = true
+                publishEmptySnapshot()
+                return
+            }
+            items = items.subList(start, end).toMutableList()
+            index = (index - start).coerceIn(0, items.size)
             rebuildRequested = true
-            publishEmptySnapshot()
-            return
-        }
-        items = items.subList(start, end).toMutableList()
-        index = (index - start).coerceIn(0, items.size)
-        rebuildRequested = true
-        seekTo(currentPositionMs)
+            seekTo(currentPositionMs)
         }
     }
 
@@ -641,7 +696,10 @@ internal class DanmakuEngine(
         snapshotDirty = true
     }
 
-    private fun pruneExpired(width: Int, nowMs: Int) {
+    private fun pruneExpired(
+        width: Int,
+        nowMs: Int,
+    ) {
         if (active.isEmpty()) return
         val size = active.size
         var write = 0
@@ -959,7 +1017,10 @@ internal class DanmakuEngine(
         cacheProbeCursor = if (active.isEmpty()) 0 else (cacheProbeCursor + scanCount) % active.size
     }
 
-    private fun releaseItemCache(item: DanmakuItem, releaseAtFrameId: Int) {
+    private fun releaseItemCache(
+        item: DanmakuItem,
+        releaseAtFrameId: Int,
+    ) {
         val bmp = item.cacheBitmap
         if (bmp != null) {
             cacheManager.enqueueRelease(bmp, releaseAtFrameId = releaseAtFrameId)
@@ -971,9 +1032,19 @@ internal class DanmakuEngine(
 
     private fun clearLaneReferenceIfMatch(item: DanmakuItem) {
         when (item.kind) {
-            DanmakuKind.SCROLL -> if (item.lane in laneLastScroll.indices && laneLastScroll[item.lane] === item) laneLastScroll[item.lane] = null
+            DanmakuKind.SCROLL ->
+                if (item.lane in laneLastScroll.indices &&
+                    laneLastScroll[item.lane] === item
+                ) {
+                    laneLastScroll[item.lane] = null
+                }
             DanmakuKind.TOP -> if (item.lane in laneLastTop.indices && laneLastTop[item.lane] === item) laneLastTop[item.lane] = null
-            DanmakuKind.BOTTOM -> if (item.lane in laneLastBottom.indices && laneLastBottom[item.lane] === item) laneLastBottom[item.lane] = null
+            DanmakuKind.BOTTOM ->
+                if (item.lane in laneLastBottom.indices &&
+                    laneLastBottom[item.lane] === item
+                ) {
+                    laneLastBottom[item.lane] = null
+                }
         }
     }
 
@@ -1009,7 +1080,12 @@ internal class DanmakuEngine(
         return ready
     }
 
-    private fun scrollX(width: Int, nowMs: Int, startTimeMs: Int, pxPerMs: Float): Float {
+    private fun scrollX(
+        width: Int,
+        nowMs: Int,
+        startTimeMs: Int,
+        pxPerMs: Float,
+    ): Float {
         val elapsed = (nowMs - startTimeMs).coerceAtLeast(0)
         return width.toFloat() - elapsed * pxPerMs
     }
@@ -1054,7 +1130,11 @@ internal class DanmakuEngine(
         snapshotDirty = true
     }
 
-    private fun computeScrollDurationMs(distancePx: Float, pxPerMs: Float, fallbackDurationMs: Int): Int {
+    private fun computeScrollDurationMs(
+        distancePx: Float,
+        pxPerMs: Float,
+        fallbackDurationMs: Int,
+    ): Int {
         val safeFallback = fallbackDurationMs.coerceAtLeast(1)
         if (!distancePx.isFinite() || distancePx <= 0f) return safeFallback
         if (!pxPerMs.isFinite() || pxPerMs <= 0f) return safeFallback
@@ -1062,7 +1142,10 @@ internal class DanmakuEngine(
         return max(safeFallback, travel)
     }
 
-    private fun skipOld(nowMs: Int, rollingDurationMs: Int) {
+    private fun skipOld(
+        nowMs: Int,
+        rollingDurationMs: Int,
+    ) {
         val ignoreBefore = nowMs - rollingDurationMs
         while (index < items.size && items[index].timeMs() < ignoreBefore) {
             index++
@@ -1076,7 +1159,10 @@ internal class DanmakuEngine(
         }
     }
 
-    private fun enqueuePending(item: DanmakuItem, nowMs: Int) {
+    private fun enqueuePending(
+        item: DanmakuItem,
+        nowMs: Int,
+    ) {
         if (pending.size >= MAX_PENDING) pending.removeFirst()
         pending.addLast(
             PendingSpawn(
@@ -1108,7 +1194,10 @@ internal class DanmakuEngine(
             else -> DanmakuKind.SCROLL
         }
 
-    private fun measureTextWidth(item: DanmakuItem, outlinePad: Float): Float {
+    private fun measureTextWidth(
+        item: DanmakuItem,
+        outlinePad: Float,
+    ): Float {
         if (item.measureGeneration == measureGeneration && item.measuredWidthPx.isFinite() && item.measuredWidthPx >= 0f) {
             return item.measuredWidthPx
         }
@@ -1126,7 +1215,11 @@ internal class DanmakuEngine(
         return width
     }
 
-    private fun measureTextWidthWithInlineSegments(item: DanmakuItem, paint: Paint, outlinePad: Float): Float {
+    private fun measureTextWidthWithInlineSegments(
+        item: DanmakuItem,
+        paint: Paint,
+        outlinePad: Float,
+    ): Float {
         val text = item.data.text
         paint.getFontMetrics(actionFontMetrics)
         val emoteSizePx = (actionFontMetrics.descent - actionFontMetrics.ascent).coerceAtLeast(1f)
@@ -1223,7 +1316,7 @@ internal class DanmakuEngine(
                     val parsed = parseInlineSegments(item)
                     if (parsed != null && shouldCacheInlineSegments(item)) item.inlineSegments = parsed
                     parsed
-        }
+                }
         if (segments == null) {
             if (drawStrokeEnabled) canvas.drawText(text, textX, baseline, drawStroke)
             canvas.drawText(text, textX, baseline, drawFill)
@@ -1295,7 +1388,10 @@ internal class DanmakuEngine(
         return l
     }
 
-    private fun centerX(width: Int, contentWidth: Float): Float {
+    private fun centerX(
+        width: Int,
+        contentWidth: Float,
+    ): Float {
         if (width <= 0) return 0f
         val x = (width.toFloat() - contentWidth) / 2f
         return x.coerceAtLeast(0f)

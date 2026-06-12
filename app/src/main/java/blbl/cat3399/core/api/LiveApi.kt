@@ -13,6 +13,7 @@ internal object LiveApi {
     private const val LIVE_AREAS_CACHE_TTL_MS = 12 * 60 * 60 * 1000L // 12h
     private val LIVE_ORIGIN_INDEX_M3U8_REGEX = Regex("""(/live-bvc/\d+/live_\d+_\d+)(?:_[^/]+)?(/index\.m3u8)$""")
     private val LIVE_ORIGIN_M3U8_REGEX = Regex("""(/live-bvc/\d+/live_\d+_\d+)(?:_[^/\.]+)?(\.m3u8)$""")
+
     // Issue #35: Prefer known-good origin hosts instead of rewriting every API host.
     // Keep this list small and easy to extend.
     private val LIVE_ORIGIN_HOST_OVERRIDES = listOf("https://d1--cn-gotcha204.bilivideo.com")
@@ -25,25 +26,43 @@ internal object LiveApi {
     @Volatile private var liveAreasCache: LiveAreasCache? = null
 
     internal interface JsonObj {
-        fun optString(name: String, fallback: String): String
+        fun optString(
+            name: String,
+            fallback: String,
+        ): String
 
         fun optLong(name: String): Long
 
-        fun optLong(name: String, fallback: Long): Long
+        fun optLong(
+            name: String,
+            fallback: Long,
+        ): Long
 
-        fun optInt(name: String, fallback: Int): Int
+        fun optInt(
+            name: String,
+            fallback: Int,
+        ): Int
     }
 
     private class OrgJsonObj(
         private val obj: JSONObject,
     ) : JsonObj {
-        override fun optString(name: String, fallback: String): String = obj.optString(name, fallback)
+        override fun optString(
+            name: String,
+            fallback: String,
+        ): String = obj.optString(name, fallback)
 
         override fun optLong(name: String): Long = obj.optLong(name)
 
-        override fun optLong(name: String, fallback: Long): Long = obj.optLong(name, fallback)
+        override fun optLong(
+            name: String,
+            fallback: Long,
+        ): Long = obj.optLong(name, fallback)
 
-        override fun optInt(name: String, fallback: Int): Int = obj.optInt(name, fallback)
+        override fun optInt(
+            name: String,
+            fallback: Int,
+        ): Int = obj.optInt(name, fallback)
     }
 
     suspend fun liveAreas(force: Boolean = false): List<LiveAreaParent> {
@@ -210,7 +229,11 @@ internal object LiveApi {
 
     suspend fun liveRoomEntryAction(roomId: Long) {
         if (roomId <= 0L) error("live_room_entry_invalid_room_id")
-        val csrf = BiliClient.cookies.getCookieValue("bili_jct").orEmpty().trim()
+        val csrf =
+            BiliClient.cookies
+                .getCookieValue("bili_jct")
+                .orEmpty()
+                .trim()
         if (csrf.isBlank()) throw BiliApiException(apiCode = -111, apiMessage = "missing_csrf")
         val url =
             BiliClient.withQuery(
@@ -291,7 +314,12 @@ internal object LiveApi {
         val codecOrder = listOf("avc", "hevc")
 
         fun normalize(v: String): String = v.trim().lowercase()
-        fun pickCodec(protocol: String, format: String, codec: String): JSONObject? {
+
+        fun pickCodec(
+            protocol: String,
+            format: String,
+            codec: String,
+        ): JSONObject? {
             val targetProtocol = normalize(protocol)
             val targetFormat = normalize(format)
             val targetCodec = normalize(codec)
@@ -383,7 +411,10 @@ internal object LiveApi {
         return BiliApi.LivePlayUrl(currentQn = currentQn, acceptQn = acceptQn, qnDesc = qnDesc, lines = lines)
     }
 
-    internal fun tryBuildLiveOriginHlsUrl(host: String, baseUrl: String): String? {
+    internal fun tryBuildLiveOriginHlsUrl(
+        host: String,
+        baseUrl: String,
+    ): String? {
         val h = host.trim().trimEnd('/')
         val base = baseUrl.trim()
         if (h.isBlank() || base.isBlank()) return null
@@ -597,26 +628,35 @@ internal object LiveApi {
     }
 
     // v4.11: 发送直播弹幕
-    suspend fun sendLiveDanmaku(roomId: Long, message: String) {
+    suspend fun sendLiveDanmaku(
+        roomId: Long,
+        message: String,
+    ) {
         if (roomId <= 0L) error("invalid_room_id")
         if (message.isBlank()) error("empty_message")
-        val csrf = BiliClient.cookies.getCookieValue("bili_jct").orEmpty().trim()
+        val csrf =
+            BiliClient.cookies
+                .getCookieValue("bili_jct")
+                .orEmpty()
+                .trim()
         if (csrf.isBlank()) throw BiliApiException(apiCode = -111, apiMessage = "missing_csrf")
         val url = "https://api.live.bilibili.com/msg/send"
-        val json = BiliClient.postFormJson(
-            url,
-            form = mapOf(
-                "bubble" to "0",
-                "msg" to message,
-                "color" to "16777215",
-                "mode" to "1",
-                "room_type" to "0",
-                "roomid" to roomId.toString(),
-                "rnd" to (System.currentTimeMillis() / 1000).toString(),
-                "csrf_token" to csrf,
-            ),
-            headers = mapOf("Referer" to "https://live.bilibili.com/$roomId"),
-        )
+        val json =
+            BiliClient.postFormJson(
+                url,
+                form =
+                    mapOf(
+                        "bubble" to "0",
+                        "msg" to message,
+                        "color" to "16777215",
+                        "mode" to "1",
+                        "room_type" to "0",
+                        "roomid" to roomId.toString(),
+                        "rnd" to (System.currentTimeMillis() / 1000).toString(),
+                        "csrf_token" to csrf,
+                    ),
+                headers = mapOf("Referer" to "https://live.bilibili.com/$roomId"),
+            )
         val code = json.optInt("code", -1)
         if (code != 0) {
             val msg = json.optString("message", json.optString("msg", ""))

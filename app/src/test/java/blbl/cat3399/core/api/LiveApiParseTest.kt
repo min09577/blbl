@@ -8,7 +8,10 @@ class LiveApiParseTest {
     private class MapJsonObj(
         private val values: Map<String, Any?>,
     ) : LiveApi.JsonObj {
-        override fun optString(name: String, fallback: String): String {
+        override fun optString(
+            name: String,
+            fallback: String,
+        ): String {
             val v = values[name] ?: return fallback
             return when (v) {
                 is String -> v
@@ -20,7 +23,10 @@ class LiveApiParseTest {
 
         override fun optLong(name: String): Long = optLong(name, 0L)
 
-        override fun optLong(name: String, fallback: Long): Long {
+        override fun optLong(
+            name: String,
+            fallback: Long,
+        ): Long {
             val v = values[name] ?: return fallback
             return when (v) {
                 is Number -> v.toLong()
@@ -30,7 +36,10 @@ class LiveApiParseTest {
             }
         }
 
-        override fun optInt(name: String, fallback: Int): Int {
+        override fun optInt(
+            name: String,
+            fallback: Int,
+        ): Int {
             val v = values[name] ?: return fallback
             return when (v) {
                 is Number -> v.toInt()

@@ -1,9 +1,10 @@
 package blbl.cat3399.core.prefs
 
 import android.content.Context
-import android.content.SharedPreferences
 
-class FeaturePrefs741(context: Context) {
+class FeaturePrefs741(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_741", Context.MODE_PRIVATE)
 
     var v741click: Boolean
@@ -605,11 +606,11 @@ class FeaturePrefs741(context: Context) {
     var v750compile: Boolean
         get() = prefs.getBoolean("v750compile", false)
         set(value) = prefs.edit().putBoolean("v750compile", value).apply()
-
 }
 
-
-class FeaturePrefs751(context: Context) {
+class FeaturePrefs751(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_751", Context.MODE_PRIVATE)
 
     var v751complete: Boolean
@@ -1211,11 +1212,11 @@ class FeaturePrefs751(context: Context) {
     var v760context: Boolean
         get() = prefs.getBoolean("v760context", false)
         set(value) = prefs.edit().putBoolean("v760context", value).apply()
-
 }
 
-
-class FeaturePrefs761(context: Context) {
+class FeaturePrefs761(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_761", Context.MODE_PRIVATE)
 
     var v761contract: Boolean
@@ -1817,11 +1818,11 @@ class FeaturePrefs761(context: Context) {
     var v770curve: Boolean
         get() = prefs.getBoolean("v770curve", false)
         set(value) = prefs.edit().putBoolean("v770curve", value).apply()
-
 }
 
-
-class FeaturePrefs771(context: Context) {
+class FeaturePrefs771(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_771", Context.MODE_PRIVATE)
 
     var v771custom: Boolean
@@ -2423,7 +2424,4 @@ class FeaturePrefs771(context: Context) {
     var v780delta: Boolean
         get() = prefs.getBoolean("v780delta", false)
         set(value) = prefs.edit().putBoolean("v780delta", value).apply()
-
 }
-
-

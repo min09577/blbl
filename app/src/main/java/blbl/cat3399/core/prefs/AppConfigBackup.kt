@@ -153,8 +153,7 @@ object AppConfigBackup {
                         .put("package", BuildConfig.APPLICATION_ID)
                         .put("version_name", BuildConfig.VERSION_NAME)
                         .put("version_code", BuildConfig.VERSION_CODE),
-                )
-                .put(
+                ).put(
                     KEY_CONFIG,
                     JSONObject()
                         .put(KEY_PREFS, configPrefsJson),

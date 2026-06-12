@@ -1,6 +1,5 @@
 package blbl.cat3399.core.ui.popup
 
-import androidx.activity.ComponentActivity
 import android.os.Handler
 import android.os.Looper
 import android.util.TypedValue
@@ -13,6 +12,7 @@ import android.view.ViewTreeObserver
 import android.widget.FrameLayout
 import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.activity.ComponentActivity
 import androidx.activity.OnBackPressedCallback
 import androidx.core.graphics.Insets
 import androidx.core.view.ViewCompat
@@ -117,9 +117,12 @@ internal class PopupHost private constructor(
         hostView.addView(
             view,
             FrameLayout.LayoutParams(
-                /* width= */ 1,
-                /* height= */ 1,
-                /* gravity= */ Gravity.START or Gravity.TOP,
+                // width=
+                1,
+                // height=
+                1,
+                // gravity=
+                Gravity.START or Gravity.TOP,
             ),
         )
         focusParkingView = view
@@ -209,7 +212,8 @@ internal class PopupHost private constructor(
 
         val dialogContext = activity.userScaledContext()
         val root =
-            LayoutInflater.from(dialogContext)
+            LayoutInflater
+                .from(dialogContext)
                 .inflate(R.layout.view_popup_modal, modalLayer, false)
 
         val overlay = root.findViewById<View>(R.id.overlay)
@@ -269,8 +273,9 @@ internal class PopupHost private constructor(
         val actionViews = ArrayList<View>(actions.size)
         for ((idx, a) in actions.withIndex()) {
             val btn =
-                LayoutInflater.from(dialogContext)
-                .inflate(R.layout.item_popup_action, actionsRow, false)
+                LayoutInflater
+                    .from(dialogContext)
+                    .inflate(R.layout.item_popup_action, actionsRow, false)
             btn.id = View.generateViewId()
             val tv = btn.findViewById<TextView>(R.id.tv_text)
             tv.text = a.text
@@ -364,8 +369,18 @@ internal class PopupHost private constructor(
         card.alpha = 0f
         card.scaleX = 0.96f
         card.scaleY = 0.96f
-        overlay.animate().alpha(1f).setDuration(160L).start()
-        card.animate().alpha(1f).scaleX(1f).scaleY(1f).setDuration(180L).start()
+        overlay
+            .animate()
+            .alpha(1f)
+            .setDuration(160L)
+            .start()
+        card
+            .animate()
+            .alpha(1f)
+            .scaleX(1f)
+            .scaleY(1f)
+            .setDuration(180L)
+            .start()
 
         val entry =
             ModalEntry(
@@ -426,7 +441,11 @@ internal class PopupHost private constructor(
         }
     }
 
-    private fun applyModalSizeAndInsets(dialogContext: android.content.Context, modalRoot: View, card: View) {
+    private fun applyModalSizeAndInsets(
+        dialogContext: android.content.Context,
+        modalRoot: View,
+        card: View,
+    ) {
         val bottom = max(systemBarsInsets.bottom, imeInsets.bottom)
         modalRoot.setPadding(systemBarsInsets.left, systemBarsInsets.top, systemBarsInsets.right, bottom)
 
@@ -443,8 +462,10 @@ internal class PopupHost private constructor(
         (card.findViewById<View>(R.id.container) as? PopupModalLayout)?.maxHeightPx = targetHeightPx
     }
 
-    private fun dp(context: android.content.Context, value: Float): Int =
-        TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, value, context.resources.displayMetrics).toInt()
+    private fun dp(
+        context: android.content.Context,
+        value: Float,
+    ): Int = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, value, context.resources.displayMetrics).toInt()
 
     private fun findFirstFocusableDescendant(root: View): View? {
         if (root.isShown && root.isFocusable) return root
@@ -551,16 +572,20 @@ internal class PopupHost private constructor(
         // Animate out then remove.
         // During dismiss we disable the focus trap (see focusListener early-return) and instead
         // rely on focus parking to prevent a system-level fallback focus target flicker.
-        root.animate().alpha(0f).setDuration(140L).start()
-        card.animate()
+        root
+            .animate()
+            .alpha(0f)
+            .setDuration(140L)
+            .start()
+        card
+            .animate()
             .alpha(0f)
             .scaleX(0.98f)
             .scaleY(0.98f)
             .setDuration(140L)
             .withEndAction {
                 finalizeDismiss()
-            }
-            .start()
+            }.start()
 
         // Fallback: in rare cases the end-action may not fire (e.g. animation canceled externally).
         // Ensure we eventually tear down the modal so it cannot block input forever.
@@ -568,7 +593,8 @@ internal class PopupHost private constructor(
             {
                 if (modalEntry === entry) finalizeDismiss()
             },
-            /* delayMillis = */ 220L,
+            // delayMillis =
+            220L,
         )
     }
 
@@ -576,9 +602,7 @@ internal class PopupHost private constructor(
         check(Looper.myLooper() == Looper.getMainLooper()) { "PopupHost must be used on main thread." }
     }
 
-    fun hasModalView(): Boolean {
-        return modalLayer.childCount > 0
-    }
+    fun hasModalView(): Boolean = modalLayer.childCount > 0
 
     fun consumeBackLikeKeyEventIfNeeded(event: KeyEvent): Boolean {
         val keyCode = event.keyCode

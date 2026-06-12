@@ -71,7 +71,8 @@ internal class ExoPlayerEngine(
 
     private val volumeBalanceProcessor = VolumeBalanceAudioProcessor(level = audioBalanceLevel)
     private val loadControl: DefaultLoadControl =
-        DefaultLoadControl.Builder()
+        DefaultLoadControl
+            .Builder()
             // Keep roughly one forward buffer window behind the playhead so in-buffer seek
             // does not immediately discard media that was already fetched.
             .setBackBuffer(DefaultLoadControl.DEFAULT_MAX_BUFFER_MS, true)
@@ -80,7 +81,8 @@ internal class ExoPlayerEngine(
         ExtXStartStrippingHlsPlaylistParserFactory(onPlaylistParsed = onLiveHlsDebugInfo)
 
     val exoPlayer: ExoPlayer =
-        ExoPlayer.Builder(context, BlblRenderersFactory(context.applicationContext, volumeBalanceProcessor))
+        ExoPlayer
+            .Builder(context, BlblRenderersFactory(context.applicationContext, volumeBalanceProcessor))
             .setLoadControl(loadControl)
             .setVideoChangeFrameRateStrategy(C.VIDEO_CHANGE_FRAME_RATE_STRATEGY_OFF)
             .build()
@@ -147,7 +149,11 @@ internal class ExoPlayerEngine(
                     listeners.forEach { it.onPlaybackStateChanged(playbackState) }
                 }
 
-                override fun onPositionDiscontinuity(oldPosition: Player.PositionInfo, newPosition: Player.PositionInfo, reason: Int) {
+                override fun onPositionDiscontinuity(
+                    oldPosition: Player.PositionInfo,
+                    newPosition: Player.PositionInfo,
+                    reason: Int,
+                ) {
                     listeners.forEach { it.onPositionDiscontinuity(newPosition.positionMs) }
                 }
 
@@ -158,7 +164,11 @@ internal class ExoPlayerEngine(
         )
         exoPlayer.addAnalyticsListener(
             object : AnalyticsListener {
-                override fun onRenderedFirstFrame(eventTime: AnalyticsListener.EventTime, output: Any, renderTimeMs: Long) {
+                override fun onRenderedFirstFrame(
+                    eventTime: AnalyticsListener.EventTime,
+                    output: Any,
+                    renderTimeMs: Long,
+                ) {
                     listeners.forEach { it.onRenderedFirstFrame() }
                 }
             },
@@ -176,10 +186,16 @@ internal class ExoPlayerEngine(
                 val uri = Uri.parse(url)
                 val factory = createCdnFactory(DebugStreamKind.MAIN, urlCandidates = listOf(url))
 
-                val isM3u8 = url.substringBefore('?').trim().lowercase(Locale.US).endsWith(".m3u8")
+                val isM3u8 =
+                    url
+                        .substringBefore('?')
+                        .trim()
+                        .lowercase(Locale.US)
+                        .endsWith(".m3u8")
                 if (isM3u8) {
                     val hlsSource =
-                        HlsMediaSource.Factory(factory)
+                        HlsMediaSource
+                            .Factory(factory)
                             .setPlaylistParserFactory(liveHlsPlaylistParserFactory)
                             .createMediaSource(MediaItem.fromUri(uri))
                     exoPlayer.setMediaSource(hlsSource)
@@ -231,20 +247,40 @@ internal class ExoPlayerEngine(
     ): DataSource.Factory {
         val listener =
             object : TransferListener {
-                override fun onTransferInitializing(source: DataSource, dataSpec: DataSpec, isNetwork: Boolean) {}
+                override fun onTransferInitializing(
+                    source: DataSource,
+                    dataSpec: DataSpec,
+                    isNetwork: Boolean,
+                ) {}
 
-                override fun onTransferStart(source: DataSource, dataSpec: DataSpec, isNetwork: Boolean) {
-                    val host = dataSpec.uri.host?.trim().orEmpty()
+                override fun onTransferStart(
+                    source: DataSource,
+                    dataSpec: DataSpec,
+                    isNetwork: Boolean,
+                ) {
+                    val host =
+                        dataSpec.uri.host
+                            ?.trim()
+                            .orEmpty()
                     if (host.isBlank()) return
                     onTransferHost?.invoke(kind, host.lowercase(Locale.US))
                 }
 
-                override fun onBytesTransferred(source: DataSource, dataSpec: DataSpec, isNetwork: Boolean, bytesTransferred: Int) {
+                override fun onBytesTransferred(
+                    source: DataSource,
+                    dataSpec: DataSpec,
+                    isNetwork: Boolean,
+                    bytesTransferred: Int,
+                ) {
                     if (!isNetwork || bytesTransferred <= 0) return
                     onBytesTransferred?.invoke(kind, bytesTransferred.toLong())
                 }
 
-                override fun onTransferEnd(source: DataSource, dataSpec: DataSpec, isNetwork: Boolean) {}
+                override fun onTransferEnd(
+                    source: DataSource,
+                    dataSpec: DataSpec,
+                    isNetwork: Boolean,
+                ) {}
             }
 
         val client =
@@ -275,7 +311,11 @@ internal class ExoPlayerEngine(
         val videoSource =
             DefaultMediaSourceFactory(DefaultDataSource.Factory(appContext, videoFactory))
                 .createMediaSource(
-                    MediaItem.Builder().setUri(Uri.parse(videoUrl)).setSubtitleConfigurations(subs).build(),
+                    MediaItem
+                        .Builder()
+                        .setUri(Uri.parse(videoUrl))
+                        .setSubtitleConfigurations(subs)
+                        .build(),
                 )
         val audioSource =
             DefaultMediaSourceFactory(DefaultDataSource.Factory(appContext, audioFactory))
@@ -285,17 +325,25 @@ internal class ExoPlayerEngine(
         return MergingMediaSource(true, true, videoSource, audioSource)
     }
 
-    private fun buildProgressive(factory: DataSource.Factory, url: String, subtitle: MediaItem.SubtitleConfiguration?): MediaSource {
+    private fun buildProgressive(
+        factory: DataSource.Factory,
+        url: String,
+        subtitle: MediaItem.SubtitleConfiguration?,
+    ): MediaSource {
         val subs = listOfNotNull(subtitle)
         val item =
-            MediaItem.Builder()
+            MediaItem
+                .Builder()
                 .setUri(Uri.parse(url))
                 .setSubtitleConfigurations(subs)
                 .build()
         return DefaultMediaSourceFactory(DefaultDataSource.Factory(appContext, factory)).createMediaSource(item)
     }
 
-    private fun setVodPlayable(playable: Playable, subtitle: MediaItem.SubtitleConfiguration?) {
+    private fun setVodPlayable(
+        playable: Playable,
+        subtitle: MediaItem.SubtitleConfiguration?,
+    ) {
         when (playable) {
             is Playable.Dash -> {
                 val videoFactory =
@@ -340,26 +388,26 @@ private class ExtXStartStrippingHlsPlaylistParserFactory(
     private val delegate: HlsPlaylistParserFactory = DefaultHlsPlaylistParserFactory(),
     private val onPlaylistParsed: ((LiveHlsDebugInfo) -> Unit)? = null,
 ) : HlsPlaylistParserFactory {
-    override fun createPlaylistParser(): ParsingLoadable.Parser<HlsPlaylist> {
-        return ExtXStartStrippingParser(delegate.createPlaylistParser(), onPlaylistParsed = onPlaylistParsed)
-    }
+    override fun createPlaylistParser(): ParsingLoadable.Parser<HlsPlaylist> = ExtXStartStrippingParser(delegate.createPlaylistParser(), onPlaylistParsed = onPlaylistParsed)
 
     override fun createPlaylistParser(
         multivariantPlaylist: HlsMultivariantPlaylist,
         previousMediaPlaylist: HlsMediaPlaylist?,
-    ): ParsingLoadable.Parser<HlsPlaylist> {
-        return ExtXStartStrippingParser(
+    ): ParsingLoadable.Parser<HlsPlaylist> =
+        ExtXStartStrippingParser(
             delegate.createPlaylistParser(multivariantPlaylist, previousMediaPlaylist),
             onPlaylistParsed = onPlaylistParsed,
         )
-    }
 }
 
 private class ExtXStartStrippingParser(
     private val delegate: ParsingLoadable.Parser<HlsPlaylist>,
     private val onPlaylistParsed: ((LiveHlsDebugInfo) -> Unit)? = null,
 ) : ParsingLoadable.Parser<HlsPlaylist> {
-    override fun parse(uri: Uri, inputStream: InputStream): HlsPlaylist {
+    override fun parse(
+        uri: Uri,
+        inputStream: InputStream,
+    ): HlsPlaylist {
         val bytes = inputStream.readBytes()
         val text = String(bytes, Charsets.UTF_8)
         parseLiveHlsDebugInfo(text = text)?.let { info -> onPlaylistParsed?.invoke(info) }
@@ -412,7 +460,12 @@ private fun parseLiveHlsDebugInfo(text: String): LiveHlsDebugInfo? {
             }
 
             line.startsWith("#EXTINF:", ignoreCase = true) -> {
-                pendingDurationSec = line.substringAfter(':').substringBefore(',').trim().toDoubleOrNull()
+                pendingDurationSec =
+                    line
+                        .substringAfter(':')
+                        .substringBefore(',')
+                        .trim()
+                        .toDoubleOrNull()
             }
 
             line.startsWith("#") -> Unit
@@ -479,9 +532,17 @@ private fun parseLiveHlsDebugInfo(text: String): LiveHlsDebugInfo? {
     }
 }
 
-private fun parseHlsQuotedAttr(line: String, key: String): String? {
+private fun parseHlsQuotedAttr(
+    line: String,
+    key: String,
+): String? {
     val pattern = Regex("""(?:^|,)${Regex.escape(key)}=\"([^\"]+)\"""")
-    return pattern.find(line)?.groupValues?.getOrNull(1)?.trim()?.ifBlank { null }
+    return pattern
+        .find(line)
+        ?.groupValues
+        ?.getOrNull(1)
+        ?.trim()
+        ?.ifBlank { null }
 }
 
 private fun parseLiveHlsAuxBytes(auxRaw: String?): Long? {
@@ -498,11 +559,15 @@ private class BlblRenderersFactory(
     context: Context,
     private val volumeBalanceProcessor: VolumeBalanceAudioProcessor,
 ) : DefaultRenderersFactory(context) {
-    override fun buildAudioSink(context: Context, enableFloatOutput: Boolean, enableAudioTrackPlaybackParams: Boolean): AudioSink {
-        return DefaultAudioSink.Builder(context)
+    override fun buildAudioSink(
+        context: Context,
+        enableFloatOutput: Boolean,
+        enableAudioTrackPlaybackParams: Boolean,
+    ): AudioSink =
+        DefaultAudioSink
+            .Builder(context)
             .setEnableFloatOutput(enableFloatOutput)
             .setEnableAudioTrackPlaybackParams(enableAudioTrackPlaybackParams)
             .setAudioProcessors(arrayOf(volumeBalanceProcessor))
             .build()
-    }
 }

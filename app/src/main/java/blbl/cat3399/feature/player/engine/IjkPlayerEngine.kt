@@ -42,8 +42,10 @@ internal class IjkPlayerEngine(
 
     private var source: PlaybackSource? = null
     private var nativeHttpEventCount: Int = 0
+
     @Volatile private var liveReconnecting: Boolean = false
     private var liveReconnectAttempt: Int = 0
+
     /** Live FPS limit: 0=native, 30=30fps, 60=60fps. Set before setSource for live. */
     var liveFps: Int = 0
 
@@ -111,7 +113,10 @@ internal class IjkPlayerEngine(
         runCatching { p.setSurface(surface) }
         val hasSurface = surface != null
         if (hadSurface != hasSurface) {
-            AppLog.d("IjkEngine", "surface changed: hasSurface=${if (hasSurface) 1 else 0} prepared=${if (prepared) 1 else 0} preparing=${if (preparing) 1 else 0}")
+            AppLog.d(
+                "IjkEngine",
+                "surface changed: hasSurface=${if (hasSurface) 1 else 0} prepared=${if (prepared) 1 else 0} preparing=${if (preparing) 1 else 0}",
+            )
         }
         startPrepareIfPossible(reason = "surface_set")
     }
@@ -140,8 +145,7 @@ internal class IjkPlayerEngine(
                 .onSuccess {
                     markVisibleSeekPosition(pos, clearsOnFirstFrame = false)
                     handleSeekLeavesEndedState(p, leavesEndedState)
-                }
-                .onFailure { clearVisibleSeekPosition() }
+                }.onFailure { clearVisibleSeekPosition() }
             return
         }
 
@@ -151,15 +155,16 @@ internal class IjkPlayerEngine(
             val aCache = p.audioCachedDuration.coerceAtLeast(0L)
             AppLog.i(
                 "IjkEngine",
-                "seek dash to=${pos}ms cur=${p.currentPosition.coerceAtLeast(0L)}ms buf=${buf}ms vCache=${vCache}ms aCache=${aCache}ms mode=native",
+                "seek dash to=${pos}ms cur=${p.currentPosition.coerceAtLeast(
+                    0L,
+                )}ms buf=${buf}ms vCache=${vCache}ms aCache=${aCache}ms mode=native",
             )
         }
         runCatching { p.seekTo(pos) }
             .onSuccess {
                 markVisibleSeekPosition(pos, clearsOnFirstFrame = false)
                 handleSeekLeavesEndedState(p, leavesEndedState)
-            }
-            .onFailure { clearVisibleSeekPosition() }
+            }.onFailure { clearVisibleSeekPosition() }
     }
 
     override val playbackSpeed: Float
@@ -346,7 +351,10 @@ internal class IjkPlayerEngine(
         return d <= 0L || positionMs < d
     }
 
-    private fun markVisibleSeekPosition(positionMs: Long, clearsOnFirstFrame: Boolean) {
+    private fun markVisibleSeekPosition(
+        positionMs: Long,
+        clearsOnFirstFrame: Boolean,
+    ) {
         visibleSeekPositionMs = positionMs.coerceAtLeast(0L)
         visibleSeekStartedAtMs = SystemClock.elapsedRealtime()
         visibleSeekClearsOnFirstFrame = clearsOnFirstFrame
@@ -435,135 +443,142 @@ internal class IjkPlayerEngine(
                     AppLog.w("IjkEngine", "create IjkMediaPlayer failed", t)
                     throw t
                 }.also { p ->
-            p.setOnPreparedListener(
-                IMediaPlayer.OnPreparedListener {
-                    prepared = true
-                    buffering = false
-                    preparing = false
-                    val preparedSeekMs = pendingSeekMs?.coerceAtLeast(0L)
-                    if (preparedSeekMs != null) {
-                        markVisibleSeekPosition(preparedSeekMs, clearsOnFirstFrame = false)
-                    }
-                    updateState(Player.STATE_READY)
-                    runCatching { p.setLooping(repeatModeInternal == Player.REPEAT_MODE_ONE) }
-                    runCatching { p.setSpeed(playbackSpeedInternal) }
-                    preparedSeekMs?.let { target ->
-                        pendingSeekMs = null
-                        runCatching { p.seekTo(target) }
-                            .onFailure { clearVisibleSeekPosition() }
-                    }
-                    syncPlayWhenReadyToNative(p)
-                },
-            )
-            p.setOnCompletionListener(
-                IMediaPlayer.OnCompletionListener {
-                    prepared = true
-                    buffering = false
-                    preparing = false
-                    clearVisibleSeekPosition()
-                    updateState(Player.STATE_ENDED)
-                    notifyIsPlayingIfChanged()
-                },
-            )
-            p.setOnErrorListener(
-                IMediaPlayer.OnErrorListener { _, what, extra ->
-                    // Live auto-reconnect: when playing a live stream, try to reconnect instead of reporting error.
-                    val currentSource = source
-                    if (currentSource is PlaybackSource.Live && !liveReconnecting) {
-                        liveReconnectAttempt++
-                        if (liveReconnectAttempt <= LIVE_MAX_RECONNECT_ATTEMPTS) {
-                            val delayMs = (LIVE_RECONNECT_BASE_DELAY_MS * liveReconnectAttempt).coerceAtMost(LIVE_RECONNECT_MAX_DELAY_MS)
-                            AppLog.w("IjkEngine", "live error what=$what extra=$extra, reconnect #$liveReconnectAttempt in ${delayMs}ms")
-                            liveReconnecting = true
-                            Thread {
-                                try {
-                                    Thread.sleep(delayMs)
-                                    if (ijk != null && source is PlaybackSource.Live) {
-                                        runCatching { p.reset() }
-                                        applyCommonOptions(p)
-                                        applyLiveOptions(p)
-                                        runCatching { p.setSurface(videoSurface) }
-                                        runCatching { p.setDataSource(currentSource.url) }
-                                        runCatching { p.prepareAsync() }
-                                    }
-                                } catch (_: Exception) {}
-                                liveReconnecting = false
-                            }.start()
-                            return@OnErrorListener true
-                        }
-                    }
-                    val e = IjkPlayerErrorException(what = what, extra = extra)
-                    prepared = false
-                    buffering = false
-                    preparing = false
-                    liveReconnectAttempt = 0
-                    clearVisibleSeekPosition()
-                    updateState(Player.STATE_IDLE)
-                    listeners.forEach { it.onPlayerError(e) }
-                    true
-                },
-            )
-            p.setOnInfoListener(
-                IMediaPlayer.OnInfoListener { _, what, _ ->
-                    when (what) {
-                        IMediaPlayer.MEDIA_INFO_BUFFERING_START -> {
-                            buffering = true
-                            updateState(Player.STATE_BUFFERING)
-                        }
-
-                        IMediaPlayer.MEDIA_INFO_BUFFERING_END -> {
+                    p.setOnPreparedListener(
+                        IMediaPlayer.OnPreparedListener {
+                            prepared = true
                             buffering = false
-                            updateState(if (prepared) Player.STATE_READY else Player.STATE_BUFFERING)
+                            preparing = false
+                            val preparedSeekMs = pendingSeekMs?.coerceAtLeast(0L)
+                            if (preparedSeekMs != null) {
+                                markVisibleSeekPosition(preparedSeekMs, clearsOnFirstFrame = false)
+                            }
+                            updateState(Player.STATE_READY)
+                            runCatching { p.setLooping(repeatModeInternal == Player.REPEAT_MODE_ONE) }
+                            runCatching { p.setSpeed(playbackSpeedInternal) }
+                            preparedSeekMs?.let { target ->
+                                pendingSeekMs = null
+                                runCatching { p.seekTo(target) }
+                                    .onFailure { clearVisibleSeekPosition() }
+                            }
                             syncPlayWhenReadyToNative(p)
-                        }
-
-                        IMediaPlayer.MEDIA_INFO_VIDEO_RENDERING_START -> {
-                            if (visibleSeekClearsOnFirstFrame) clearVisibleSeekPosition()
-                            listeners.forEach { it.onRenderedFirstFrame() }
-                        }
-
-                        IMediaPlayer.MEDIA_INFO_MEDIA_ACCURATE_SEEK_COMPLETE,
-                        IMediaPlayer.MEDIA_INFO_VIDEO_SEEK_RENDERING_START,
-                        IMediaPlayer.MEDIA_INFO_AUDIO_SEEK_RENDERING_START,
-                        -> {
+                        },
+                    )
+                    p.setOnCompletionListener(
+                        IMediaPlayer.OnCompletionListener {
+                            prepared = true
+                            buffering = false
+                            preparing = false
                             clearVisibleSeekPosition()
+                            updateState(Player.STATE_ENDED)
+                            notifyIsPlayingIfChanged()
+                        },
+                    )
+                    p.setOnErrorListener(
+                        IMediaPlayer.OnErrorListener { _, what, extra ->
+                            // Live auto-reconnect: when playing a live stream, try to reconnect instead of reporting error.
+                            val currentSource = source
+                            if (currentSource is PlaybackSource.Live && !liveReconnecting) {
+                                liveReconnectAttempt++
+                                if (liveReconnectAttempt <= LIVE_MAX_RECONNECT_ATTEMPTS) {
+                                    val delayMs =
+                                        (LIVE_RECONNECT_BASE_DELAY_MS * liveReconnectAttempt).coerceAtMost(
+                                            LIVE_RECONNECT_MAX_DELAY_MS,
+                                        )
+                                    AppLog.w(
+                                        "IjkEngine",
+                                        "live error what=$what extra=$extra, reconnect #$liveReconnectAttempt in ${delayMs}ms",
+                                    )
+                                    liveReconnecting = true
+                                    Thread {
+                                        try {
+                                            Thread.sleep(delayMs)
+                                            if (ijk != null && source is PlaybackSource.Live) {
+                                                runCatching { p.reset() }
+                                                applyCommonOptions(p)
+                                                applyLiveOptions(p)
+                                                runCatching { p.setSurface(videoSurface) }
+                                                runCatching { p.setDataSource(currentSource.url) }
+                                                runCatching { p.prepareAsync() }
+                                            }
+                                        } catch (_: Exception) {
+                                        }
+                                        liveReconnecting = false
+                                    }.start()
+                                    return@OnErrorListener true
+                                }
+                            }
+                            val e = IjkPlayerErrorException(what = what, extra = extra)
+                            prepared = false
+                            buffering = false
+                            preparing = false
+                            liveReconnectAttempt = 0
+                            clearVisibleSeekPosition()
+                            updateState(Player.STATE_IDLE)
+                            listeners.forEach { it.onPlayerError(e) }
+                            true
+                        },
+                    )
+                    p.setOnInfoListener(
+                        IMediaPlayer.OnInfoListener { _, what, _ ->
+                            when (what) {
+                                IMediaPlayer.MEDIA_INFO_BUFFERING_START -> {
+                                    buffering = true
+                                    updateState(Player.STATE_BUFFERING)
+                                }
+
+                                IMediaPlayer.MEDIA_INFO_BUFFERING_END -> {
+                                    buffering = false
+                                    updateState(if (prepared) Player.STATE_READY else Player.STATE_BUFFERING)
+                                    syncPlayWhenReadyToNative(p)
+                                }
+
+                                IMediaPlayer.MEDIA_INFO_VIDEO_RENDERING_START -> {
+                                    if (visibleSeekClearsOnFirstFrame) clearVisibleSeekPosition()
+                                    listeners.forEach { it.onRenderedFirstFrame() }
+                                }
+
+                                IMediaPlayer.MEDIA_INFO_MEDIA_ACCURATE_SEEK_COMPLETE,
+                                IMediaPlayer.MEDIA_INFO_VIDEO_SEEK_RENDERING_START,
+                                IMediaPlayer.MEDIA_INFO_AUDIO_SEEK_RENDERING_START,
+                                -> {
+                                    clearVisibleSeekPosition()
+                                    listeners.forEach { it.onPositionDiscontinuity(currentPosition) }
+                                    settleSeekIfReady(p)
+                                }
+                            }
+                            false
+                        },
+                    )
+                    p.setOnSeekCompleteListener(
+                        IMediaPlayer.OnSeekCompleteListener {
                             listeners.forEach { it.onPositionDiscontinuity(currentPosition) }
                             settleSeekIfReady(p)
-                        }
-                    }
-                    false
-                },
-            )
-            p.setOnSeekCompleteListener(
-                IMediaPlayer.OnSeekCompleteListener {
-                    listeners.forEach { it.onPositionDiscontinuity(currentPosition) }
-                    settleSeekIfReady(p)
-                },
-            )
-            p.setOnVideoSizeChangedListener(
-                IMediaPlayer.OnVideoSizeChangedListener { _, width, height, _, _ ->
-                    val w = width.coerceAtLeast(0)
-                    val h = height.coerceAtLeast(0)
-                    listeners.forEach { it.onVideoSizeChanged(w, h) }
-                },
-            )
-            p.setOnBufferingUpdateListener(
-                IMediaPlayer.OnBufferingUpdateListener { _, _ ->
-                    // We expose bufferedPosition via cached durations; no-op here.
-                },
-            )
+                        },
+                    )
+                    p.setOnVideoSizeChangedListener(
+                        IMediaPlayer.OnVideoSizeChangedListener { _, width, height, _, _ ->
+                            val w = width.coerceAtLeast(0)
+                            val h = height.coerceAtLeast(0)
+                            listeners.forEach { it.onVideoSizeChanged(w, h) }
+                        },
+                    )
+                    p.setOnBufferingUpdateListener(
+                        IMediaPlayer.OnBufferingUpdateListener { _, _ ->
+                            // We expose bufferedPosition via cached durations; no-op here.
+                        },
+                    )
 
-            if (BuildConfig.DEBUG) {
-                p.setOnNativeInvokeListener(
-                    IjkMediaPlayer.OnNativeInvokeListener { what, args ->
-                        logNativeHttpEvent(what, args)
-                        false
-                    },
-                )
-                // Keep DASH/native playback diagnostics visible while validating custom ijk builds.
-                runCatching { IjkMediaPlayer.native_setLogLevel(IjkMediaPlayer.IJK_LOG_DEBUG) }
-            }
-        }
+                    if (BuildConfig.DEBUG) {
+                        p.setOnNativeInvokeListener(
+                            IjkMediaPlayer.OnNativeInvokeListener { what, args ->
+                                logNativeHttpEvent(what, args)
+                                false
+                            },
+                        )
+                        // Keep DASH/native playback diagnostics visible while validating custom ijk builds.
+                        runCatching { IjkMediaPlayer.native_setLogLevel(IjkMediaPlayer.IJK_LOG_DEBUG) }
+                    }
+                }
     }
 
     private fun applyCommonOptions(p: IjkMediaPlayer) {
@@ -669,7 +684,10 @@ internal class IjkPlayerEngine(
         )
     }
 
-    private fun applyHttpOptions(p: IjkMediaPlayer, headers: IjkHttpHeaders) {
+    private fun applyHttpOptions(
+        p: IjkMediaPlayer,
+        headers: IjkHttpHeaders,
+    ) {
         // Prefer option-based UA so DASH sub-requests (init/m4s) can inherit it.
         runCatching { p.setOption(IjkMediaPlayer.OPT_CATEGORY_FORMAT, "user_agent", headers.userAgent) }
         runCatching { p.setOption(IjkMediaPlayer.OPT_CATEGORY_FORMAT, "user-agent", headers.userAgent) }
@@ -690,7 +708,10 @@ internal class IjkPlayerEngine(
         }
     }
 
-    private fun logNativeHttpEvent(what: Int, args: Bundle?) {
+    private fun logNativeHttpEvent(
+        what: Int,
+        args: Bundle?,
+    ) {
         val bundle = args ?: return
         runCatching {
             val url = bundle.getString(IjkMediaPlayer.OnNativeInvokeListener.ARG_URL).orEmpty()
@@ -722,10 +743,9 @@ internal class IjkPlayerEngine(
                     }
                 }
             }
+        }.onFailure { t ->
+            AppLog.w("IjkHttp", "native http event parse failed", t)
         }
-            .onFailure { t ->
-                AppLog.w("IjkHttp", "native http event parse failed", t)
-            }
     }
 
     private fun startPrepareIfPossible(reason: String) {
@@ -856,9 +876,16 @@ internal object IjkHttpHeaderBuilder {
     }
 
     private fun buildWebHeaders(urlForCookie: String): IjkHttpHeaders {
-        val userAgent = BiliClient.prefs.userAgent.trim().ifBlank { blbl.cat3399.core.prefs.AppPrefs.DEFAULT_UA }
+        val userAgent =
+            BiliClient.prefs.userAgent
+                .trim()
+                .ifBlank { blbl.cat3399.core.prefs.AppPrefs.DEFAULT_UA }
         val referer = "https://www.bilibili.com/"
-        val cookie = BiliClient.cookies.cookieHeaderFor(urlForCookie)?.trim().takeIf { !it.isNullOrBlank() }
+        val cookie =
+            BiliClient.cookies
+                .cookieHeaderFor(urlForCookie)
+                ?.trim()
+                .takeIf { !it.isNullOrBlank() }
 
         // NOTE:
         // - Keep User-Agent in `user_agent` option (not in custom headers) to avoid duplicates.

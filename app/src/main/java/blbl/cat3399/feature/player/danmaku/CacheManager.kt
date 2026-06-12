@@ -6,14 +6,14 @@ import android.graphics.Color
 import android.graphics.Paint
 import android.graphics.RectF
 import android.graphics.Typeface
-import androidx.appcompat.content.res.AppCompatResources
-import blbl.cat3399.BlblApp
-import blbl.cat3399.R
 import android.os.Handler
 import android.os.HandlerThread
 import android.os.Looper
 import android.os.Message
 import android.os.Process
+import androidx.appcompat.content.res.AppCompatResources
+import blbl.cat3399.BlblApp
+import blbl.cat3399.R
 import blbl.cat3399.core.emote.EmoteBitmapLoader
 import blbl.cat3399.core.emote.ReplyEmotePanelRepository
 import blbl.cat3399.core.log.AppLog
@@ -77,22 +77,25 @@ internal class CacheManager(
     private val bitmapRecycled = AtomicLong(0L)
 
     // Cache draw tools (cache thread only).
-    private val fill = Paint(Paint.ANTI_ALIAS_FLAG).apply {
-        typeface = Typeface.DEFAULT_BOLD
-        isSubpixelText = true
-    }
-    private val stroke = Paint(Paint.ANTI_ALIAS_FLAG).apply {
-        typeface = Typeface.DEFAULT_BOLD
-        style = Paint.Style.STROKE
-        isSubpixelText = true
-    }
+    private val fill =
+        Paint(Paint.ANTI_ALIAS_FLAG).apply {
+            typeface = Typeface.DEFAULT_BOLD
+            isSubpixelText = true
+        }
+    private val stroke =
+        Paint(Paint.ANTI_ALIAS_FLAG).apply {
+            typeface = Typeface.DEFAULT_BOLD
+            style = Paint.Style.STROKE
+            isSubpixelText = true
+        }
     private val fontMetrics = Paint.FontMetrics()
     private val emotePaint = Paint(Paint.ANTI_ALIAS_FLAG).apply { isFilterBitmap = true }
     private val placeholderFill = Paint(Paint.ANTI_ALIAS_FLAG).apply { style = Paint.Style.FILL }
-    private val placeholderStroke = Paint(Paint.ANTI_ALIAS_FLAG).apply {
-        style = Paint.Style.STROKE
-        strokeWidth = max(1f, density)
-    }
+    private val placeholderStroke =
+        Paint(Paint.ANTI_ALIAS_FLAG).apply {
+            style = Paint.Style.STROKE
+            strokeWidth = max(1f, density)
+        }
     private val emoteRect = RectF()
     private val inlineLikeIcon by lazy(LazyThreadSafetyMode.NONE) {
         AppCompatResources.getDrawable(BlblApp.instance, R.drawable.ic_action_like)?.mutate()?.apply {
@@ -123,7 +126,10 @@ internal class CacheManager(
         handler.obtainMessage(MSG_BUILD_CACHE, payload).sendToTarget()
     }
 
-    fun enqueueRelease(bitmap: Bitmap?, releaseAtFrameId: Int) {
+    fun enqueueRelease(
+        bitmap: Bitmap?,
+        releaseAtFrameId: Int,
+    ) {
         if (bitmap == null) return
         if (bitmap.isRecycled) return
         releaseQueue.add(PendingRelease(bitmap = bitmap, releaseAtFrameId = releaseAtFrameId))
@@ -158,7 +164,9 @@ internal class CacheManager(
         handler.sendEmptyMessage(MSG_RELEASE)
     }
 
-    private inner class CacheHandler(looper: Looper) : Handler(looper) {
+    private inner class CacheHandler(
+        looper: Looper,
+    ) : Handler(looper) {
         override fun handleMessage(msg: Message) {
             when (msg.what) {
                 MSG_BUILD_CACHE -> {
@@ -212,9 +220,11 @@ internal class CacheManager(
         val boxWidth = ceil(req.textWidthPx.coerceAtLeast(outlinePad * 2f)).toInt().coerceAtLeast(1)
 
         val bmp =
-            pool.acquire(minWidth = boxWidth, minHeight = boxHeight)
+            pool
+                .acquire(minWidth = boxWidth, minHeight = boxHeight)
                 ?.also { bitmapReused.incrementAndGet() }
-                ?: runCatching { Bitmap.createBitmap(boxWidth, boxHeight, Bitmap.Config.ARGB_8888) }.getOrNull()
+                ?: runCatching { Bitmap.createBitmap(boxWidth, boxHeight, Bitmap.Config.ARGB_8888) }
+                    .getOrNull()
                     ?.also { bitmapCreated.incrementAndGet() }
                 ?: return
 
@@ -388,7 +398,10 @@ internal class CacheManager(
         private var pooledBytes: Long = 0L
 
         @Synchronized
-        fun acquire(minWidth: Int, minHeight: Int): Bitmap? {
+        fun acquire(
+            minWidth: Int,
+            minHeight: Int,
+        ): Bitmap? {
             if (pool.isEmpty()) return null
             val it = pool.iterator()
             while (it.hasNext()) {
@@ -437,7 +450,11 @@ internal class CacheManager(
                 maxBytes = maxBytes,
             )
 
-        private fun isReusable(bitmap: Bitmap, minWidth: Int, minHeight: Int): Boolean {
+        private fun isReusable(
+            bitmap: Bitmap,
+            minWidth: Int,
+            minHeight: Int,
+        ): Boolean {
             if (bitmap.config != Bitmap.Config.ARGB_8888) return false
             if (bitmap.width < minWidth || bitmap.height < minHeight) return false
             val dw = bitmap.width - minWidth

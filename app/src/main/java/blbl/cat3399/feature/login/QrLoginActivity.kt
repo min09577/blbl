@@ -5,10 +5,10 @@ import android.os.Bundle
 import android.view.KeyEvent
 import androidx.lifecycle.lifecycleScope
 import blbl.cat3399.core.log.AppLog
-import blbl.cat3399.core.net.BiliClient
 import blbl.cat3399.core.net.AppSigner
-import blbl.cat3399.core.prefs.BiliAppAuthSession
+import blbl.cat3399.core.net.BiliClient
 import blbl.cat3399.core.net.WebCookieMaintainer
+import blbl.cat3399.core.prefs.BiliAppAuthSession
 import blbl.cat3399.core.ui.BaseActivity
 import blbl.cat3399.core.ui.Immersive
 import blbl.cat3399.core.ui.cloneInUserScale
@@ -41,8 +41,9 @@ class QrLoginActivity : BaseActivity() {
             "Referer" to "https://passport.bilibili.com/",
             "Origin" to "https://passport.bilibili.com",
         )
-    private fun tvHeaders(): Map<String, String> {
-        return buildMap {
+
+    private fun tvHeaders(): Map<String, String> =
+        buildMap {
             putAll(passportHeaders)
             put("buvid", BiliClient.prefs.deviceBuvid)
             put("env", "prod")
@@ -54,7 +55,6 @@ class QrLoginActivity : BaseActivity() {
             put("bili-http-engine", "cronet")
             put("content-type", "application/x-www-form-urlencoded; charset=utf-8")
         }
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -221,12 +221,14 @@ class QrLoginActivity : BaseActivity() {
                                     if (name.isBlank() || value.isBlank()) continue
                                     val expiresSec = c.optLong("expires", 0L)
                                     val expiresAt = if (expiresSec > 0L) expiresSec * 1000L else (nowMs + 180L * 24 * 60 * 60 * 1000)
-                                    val builder = okhttp3.Cookie.Builder()
-                                        .name(name)
-                                        .value(value)
-                                        .domain("bilibili.com")
-                                        .path("/")
-                                        .expiresAt(expiresAt)
+                                    val builder =
+                                        okhttp3.Cookie
+                                            .Builder()
+                                            .name(name)
+                                            .value(value)
+                                            .domain("bilibili.com")
+                                            .path("/")
+                                            .expiresAt(expiresAt)
                                     if (c.optInt("http_only", 0) == 1) builder.httpOnly()
                                     if (c.optInt("secure", 0) == 1) builder.secure()
                                     out.add(builder.build())
@@ -258,7 +260,10 @@ class QrLoginActivity : BaseActivity() {
         }
     }
 
-    private fun makeQr(text: String, size: Int): Bitmap {
+    private fun makeQr(
+        text: String,
+        size: Int,
+    ): Bitmap {
         val hints = mapOf(EncodeHintType.MARGIN to 0)
         val matrix: BitMatrix = MultiFormatWriter().encode(text, BarcodeFormat.QR_CODE, size, size, hints)
         val pixels = IntArray(size * size)
@@ -273,8 +278,8 @@ class QrLoginActivity : BaseActivity() {
         return bmp
     }
 
-    private fun isNavKey(keyCode: Int): Boolean {
-        return when (keyCode) {
+    private fun isNavKey(keyCode: Int): Boolean =
+        when (keyCode) {
             KeyEvent.KEYCODE_DPAD_UP,
             KeyEvent.KEYCODE_DPAD_DOWN,
             KeyEvent.KEYCODE_DPAD_LEFT,
@@ -287,5 +292,4 @@ class QrLoginActivity : BaseActivity() {
 
             else -> false
         }
-    }
 }

@@ -39,8 +39,7 @@ class AccountSessionStore(
             .sortedWith(
                 compareByDescending<AccountRecord> { it.id == activeId }
                     .thenByDescending { it.updatedAtMs },
-            )
-            .map { it.toSummary(activeId) }
+            ).map { it.toSummary(activeId) }
     }
 
     @Synchronized
@@ -51,7 +50,8 @@ class AccountSessionStore(
         avatarUrl: String? = null,
         mid: Long? = null,
     ): AccountSummary? {
-        val record = buildCurrentRecord(appPrefs = appPrefs, cookies = cookies, name = name, avatarUrl = avatarUrl, mid = mid) ?: return null
+        val record =
+            buildCurrentRecord(appPrefs = appPrefs, cookies = cookies, name = name, avatarUrl = avatarUrl, mid = mid) ?: return null
         val records = readRecords().filterNot { it.id == record.id } + record
         writeRecords(records = records, activeId = record.id)
         return record.toSummary(record.id)
@@ -190,7 +190,11 @@ class AccountSessionStore(
         cookies: CookieStore,
     ): Long? =
         appPrefs.appAuthSession?.mid?.takeIf { it > 0L }
-            ?: cookies.getCookieValue("DedeUserID")?.trim()?.toLongOrNull()?.takeIf { it > 0L }
+            ?: cookies
+                .getCookieValue("DedeUserID")
+                ?.trim()
+                ?.toLongOrNull()
+                ?.takeIf { it > 0L }
 
     private fun activeAccountId(): String? = prefs.getString(KEY_ACTIVE_ACCOUNT_ID, null)?.trim()?.takeIf { it.isNotBlank() }
 

@@ -6,9 +6,14 @@ package blbl.cat3399.feature.player
  */
 class PlayerActivitySmartQueue {
     fun setEnabled(enabled: Boolean) {}
+
     fun isEnabled(): Boolean = false
+
     fun getQueueSize(): Int = 0
+
     fun getMaxQueueSize(): Int = 50
+
     fun isQueueFull(): Boolean = false
+
     fun clearQueue() {}
 }

@@ -15,12 +15,11 @@ class CreateDocumentContract : ActivityResultContract<CreateDocumentRequest, Uri
     override fun createIntent(
         context: Context,
         input: CreateDocumentRequest,
-    ): Intent {
-        return Intent(Intent.ACTION_CREATE_DOCUMENT)
+    ): Intent =
+        Intent(Intent.ACTION_CREATE_DOCUMENT)
             .addCategory(Intent.CATEGORY_OPENABLE)
             .setType(input.mimeType.ifBlank { "*/*" })
             .putExtra(Intent.EXTRA_TITLE, input.fileName)
-    }
 
     override fun parseResult(
         resultCode: Int,

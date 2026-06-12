@@ -75,7 +75,11 @@ internal class CdnFailoverDataSource(
         throw lastException ?: IOException("Failed to open any CDN candidate (kind=${state.kind})")
     }
 
-    override fun read(buffer: ByteArray, offset: Int, length: Int): Int {
+    override fun read(
+        buffer: ByteArray,
+        offset: Int,
+        length: Int,
+    ): Int {
         val ds = upstream ?: throw IllegalStateException("read() before open() (kind=${state.kind})")
         return ds.read(buffer, offset, length)
     }

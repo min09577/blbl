@@ -1,9 +1,10 @@
 package blbl.cat3399.core.prefs
 
 import android.content.Context
-import android.content.SharedPreferences
 
-class FeaturePrefs1141(context: Context) {
+class FeaturePrefs1141(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1141", Context.MODE_PRIVATE)
 
     var v1141turn: Boolean
@@ -605,11 +606,11 @@ class FeaturePrefs1141(context: Context) {
     var v1150upscale: Boolean
         get() = prefs.getBoolean("v1150upscale", false)
         set(value) = prefs.edit().putBoolean("v1150upscale", value).apply()
-
 }
 
-
-class FeaturePrefs1151(context: Context) {
+class FeaturePrefs1151(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1151", Context.MODE_PRIVATE)
 
     var v1151usage: Boolean
@@ -1211,11 +1212,11 @@ class FeaturePrefs1151(context: Context) {
     var v1160wake: Boolean
         get() = prefs.getBoolean("v1160wake", false)
         set(value) = prefs.edit().putBoolean("v1160wake", value).apply()
-
 }
 
-
-class FeaturePrefs1161(context: Context) {
+class FeaturePrefs1161(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1161", Context.MODE_PRIVATE)
 
     var v1161walk: Boolean
@@ -1817,11 +1818,11 @@ class FeaturePrefs1161(context: Context) {
     var v1170word: Boolean
         get() = prefs.getBoolean("v1170word", false)
         set(value) = prefs.edit().putBoolean("v1170word", value).apply()
-
 }
 
-
-class FeaturePrefs1171(context: Context) {
+class FeaturePrefs1171(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1171", Context.MODE_PRIVATE)
 
     var v1171accent: Boolean
@@ -2423,7 +2424,4 @@ class FeaturePrefs1171(context: Context) {
     var v1180adam: Boolean
         get() = prefs.getBoolean("v1180adam", false)
         set(value) = prefs.edit().putBoolean("v1180adam", value).apply()
-
 }
-
-

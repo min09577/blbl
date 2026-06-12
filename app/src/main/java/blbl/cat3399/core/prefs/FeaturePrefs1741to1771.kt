@@ -1,9 +1,10 @@
 package blbl.cat3399.core.prefs
 
 import android.content.Context
-import android.content.SharedPreferences
 
-class FeaturePrefs1741(context: Context) {
+class FeaturePrefs1741(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1741", Context.MODE_PRIVATE)
 
     var v1741reward: Boolean
@@ -605,11 +606,11 @@ class FeaturePrefs1741(context: Context) {
     var v1750ritual: Boolean
         get() = prefs.getBoolean("v1750ritual", false)
         set(value) = prefs.edit().putBoolean("v1750ritual", value).apply()
-
 }
 
-
-class FeaturePrefs1751(context: Context) {
+class FeaturePrefs1751(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1751", Context.MODE_PRIVATE)
 
     var v1751rival: Boolean
@@ -1211,11 +1212,11 @@ class FeaturePrefs1751(context: Context) {
     var v1760rubber: Boolean
         get() = prefs.getBoolean("v1760rubber", false)
         set(value) = prefs.edit().putBoolean("v1760rubber", value).apply()
-
 }
 
-
-class FeaturePrefs1761(context: Context) {
+class FeaturePrefs1761(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1761", Context.MODE_PRIVATE)
 
     var v1761rude: Boolean
@@ -1817,11 +1818,11 @@ class FeaturePrefs1761(context: Context) {
     var v1770sand: Boolean
         get() = prefs.getBoolean("v1770sand", false)
         set(value) = prefs.edit().putBoolean("v1770sand", value).apply()
-
 }
 
-
-class FeaturePrefs1771(context: Context) {
+class FeaturePrefs1771(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1771", Context.MODE_PRIVATE)
 
     var v1771satisfy: Boolean
@@ -2423,7 +2424,4 @@ class FeaturePrefs1771(context: Context) {
     var v1780scrub: Boolean
         get() = prefs.getBoolean("v1780scrub", false)
         set(value) = prefs.edit().putBoolean("v1780scrub", value).apply()
-
 }
-
-

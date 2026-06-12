@@ -34,6 +34,7 @@ internal class PlayerDebugMetrics {
     var renderFpsLastAtMs: Long? = null
     var renderedFramesLastCount: Int? = null
     var renderedFramesLastAtMs: Long? = null
+
     // v11.0: 下载速度追踪
     var downloadBytesWindow: Long = 0L
     var downloadSpeedBps: Long = 0L
@@ -154,8 +155,7 @@ private fun PlayerActivity.buildDebugText(exo: ExoPlayer): String {
                 f.averageBitrate.takeIf { it > 0 }
                     ?: f.bitrate.takeIf { it > 0 }
                     ?: f.peakBitrate.takeIf { it > 0 }
-            }
-            ?.toDouble()
+            }?.toDouble()
     if (brBps != null) {
         sb.append(" br=").append(String.format(Locale.US, "%.1f", brBps / 1000.0)).append("kbps")
     } else {
@@ -181,13 +181,21 @@ private fun PlayerActivity.buildDebugText(exo: ExoPlayer): String {
         sb.append(" fps=").append(String.format(Locale.US, "%.1f", dm.drawFps))
         sb.append(" act=").append(dm.lastFrameActive)
         sb.append(" pend=").append(dm.lastFramePending)
-        sb.append(" hit=").append(dm.lastFrameCachedDrawn).append('/').append(dm.lastFrameActive)
+        sb
+            .append(" hit=")
+            .append(dm.lastFrameCachedDrawn)
+            .append('/')
+            .append(dm.lastFrameActive)
         sb.append(" fb=").append(dm.lastFrameFallbackDrawn)
         sb.append(" q=").append(dm.queueDepth)
         if (dm.invalidateFull) {
             sb.append(" inv=full")
         } else {
-            sb.append(" inv=").append(dm.invalidateTopPx).append('-').append(dm.invalidateBottomPx)
+            sb
+                .append(" inv=")
+                .append(dm.invalidateTopPx)
+                .append('-')
+                .append(dm.invalidateBottomPx)
         }
         sb.append('\n')
 
@@ -196,7 +204,8 @@ private fun PlayerActivity.buildDebugText(exo: ExoPlayer): String {
         sb.append("bmp cache=").append(dm.cacheItems)
         sb.append(" rendering=").append(dm.renderingItems)
         sb.append(" pool=").append(dm.poolItems)
-        sb.append('(')
+        sb
+            .append('(')
             .append(String.format(Locale.US, "%.1f", poolMb))
             .append('/')
             .append(String.format(Locale.US, "%.0f", poolMaxMb))
@@ -207,15 +216,21 @@ private fun PlayerActivity.buildDebugText(exo: ExoPlayer): String {
         sb.append(" rec=").append(dm.bitmapRecycled)
         sb.append('\n')
 
-        sb.append("dm ms upd=")
+        sb
+            .append("dm ms upd=")
             .append(String.format(Locale.US, "%.2f", dm.updateAvgMs))
             .append('/')
             .append(String.format(Locale.US, "%.2f", dm.updateMaxMs))
-        sb.append(" draw=")
+        sb
+            .append(" draw=")
             .append(String.format(Locale.US, "%.2f", dm.drawAvgMs))
             .append('/')
             .append(String.format(Locale.US, "%.2f", dm.drawMaxMs))
-        sb.append(" req=").append(dm.lastFrameRequestsActive).append('+').append(dm.lastFrameRequestsPrefetch)
+        sb
+            .append(" req=")
+            .append(dm.lastFrameRequestsActive)
+            .append('+')
+            .append(dm.lastFrameRequestsPrefetch)
     }
     return sb.toString()
 }
@@ -244,7 +259,7 @@ private fun PlayerActivity.buildDebugText(ijk: IjkPlayerEngine): String {
 
     val w = snap.videoWidth?.takeIf { it > 0 } ?: debug.videoInputWidth ?: 0
     val h = snap.videoHeight?.takeIf { it > 0 } ?: debug.videoInputHeight ?: 0
-    val res = if (w > 0 && h > 0) "${w}x${h}" else "-"
+    val res = if (w > 0 && h > 0) "${w}x$h" else "-"
     sb.append("res=").append(res)
 
     val fps =
@@ -292,13 +307,21 @@ private fun PlayerActivity.buildDebugText(ijk: IjkPlayerEngine): String {
         sb.append(" fps=").append(String.format(Locale.US, "%.1f", dm.drawFps))
         sb.append(" act=").append(dm.lastFrameActive)
         sb.append(" pend=").append(dm.lastFramePending)
-        sb.append(" hit=").append(dm.lastFrameCachedDrawn).append('/').append(dm.lastFrameActive)
+        sb
+            .append(" hit=")
+            .append(dm.lastFrameCachedDrawn)
+            .append('/')
+            .append(dm.lastFrameActive)
         sb.append(" fb=").append(dm.lastFrameFallbackDrawn)
         sb.append(" q=").append(dm.queueDepth)
         if (dm.invalidateFull) {
             sb.append(" inv=full")
         } else {
-            sb.append(" inv=").append(dm.invalidateTopPx).append('-').append(dm.invalidateBottomPx)
+            sb
+                .append(" inv=")
+                .append(dm.invalidateTopPx)
+                .append('-')
+                .append(dm.invalidateBottomPx)
         }
         sb.append('\n')
 
@@ -307,7 +330,8 @@ private fun PlayerActivity.buildDebugText(ijk: IjkPlayerEngine): String {
         sb.append("bmp cache=").append(dm.cacheItems)
         sb.append(" rendering=").append(dm.renderingItems)
         sb.append(" pool=").append(dm.poolItems)
-        sb.append('(')
+        sb
+            .append('(')
             .append(String.format(Locale.US, "%.1f", poolMb))
             .append('/')
             .append(String.format(Locale.US, "%.0f", poolMaxMb))
@@ -318,15 +342,21 @@ private fun PlayerActivity.buildDebugText(ijk: IjkPlayerEngine): String {
         sb.append(" rec=").append(dm.bitmapRecycled)
         sb.append('\n')
 
-        sb.append("dm ms upd=")
+        sb
+            .append("dm ms upd=")
             .append(String.format(Locale.US, "%.2f", dm.updateAvgMs))
             .append('/')
             .append(String.format(Locale.US, "%.2f", dm.updateMaxMs))
-        sb.append(" draw=")
+        sb
+            .append(" draw=")
             .append(String.format(Locale.US, "%.2f", dm.drawAvgMs))
             .append('/')
             .append(String.format(Locale.US, "%.2f", dm.drawMaxMs))
-        sb.append(" req=").append(dm.lastFrameRequestsActive).append('+').append(dm.lastFrameRequestsPrefetch)
+        sb
+            .append(" req=")
+            .append(dm.lastFrameRequestsActive)
+            .append('+')
+            .append(dm.lastFrameRequestsPrefetch)
     }
 
     return sb.toString()
@@ -344,7 +374,7 @@ private fun PlayerActivity.buildDebugDisplayText(): String? {
     val mhz = mode.refreshRate.takeIf { it > 0f } ?: hz
     val hzText = mhz?.let { String.format(Locale.US, "%.0fHz", it) } ?: "-"
     if (w <= 0 || h <= 0) return hzText
-    return "${w}x${h}@${hzText}"
+    return "${w}x$h@$hzText"
 }
 
 private fun PlayerActivity.updateDebugVideoStatsFromCounters(exo: ExoPlayer) {
@@ -371,13 +401,18 @@ private fun PlayerActivity.updateDebugVideoStatsFromCounters(exo: ExoPlayer) {
     debug.renderFps = debug.renderFps?.let { it * 0.7f + instantFps * 0.3f } ?: instantFps
 }
 
-private fun buildDebugResolutionText(vs: VideoSize, fallbackWidth: Int?, fallbackHeight: Int?, trackFormat: Format?): String {
+private fun buildDebugResolutionText(
+    vs: VideoSize,
+    fallbackWidth: Int?,
+    fallbackHeight: Int?,
+    trackFormat: Format?,
+): String {
     val w = vs.width.takeIf { it > 0 } ?: fallbackWidth ?: 0
     val h = vs.height.takeIf { it > 0 } ?: fallbackHeight ?: 0
-    if (w > 0 && h > 0) return "${w}x${h}"
+    if (w > 0 && h > 0) return "${w}x$h"
     val tw = trackFormat?.width?.takeIf { it > 0 } ?: 0
     val th = trackFormat?.height?.takeIf { it > 0 } ?: 0
-    return if (tw > 0 && th > 0) "${tw}x${th}" else "-"
+    return if (tw > 0 && th > 0) "${tw}x$th" else "-"
 }
 
 private fun formatDebugFps(fps: Float?): String? {
@@ -386,7 +421,10 @@ private fun formatDebugFps(fps: Float?): String? {
     return if (abs(v - rounded) < 0.05f) rounded.toInt().toString() else String.format(Locale.US, "%.1f", v)
 }
 
-private fun shortenDebugValue(value: String, maxChars: Int): String {
+private fun shortenDebugValue(
+    value: String,
+    maxChars: Int,
+): String {
     val v = value.trim()
     if (v.length <= maxChars) return v
     return v.take(maxChars - 1) + "…"
@@ -424,12 +462,12 @@ internal fun PlayerActivity.showMediaInfoDialog() {
         val w = debug.videoInputWidth ?: vf?.width ?: 0
         val h = debug.videoInputHeight ?: vf?.height ?: 0
         if (w > 0 && h > 0) {
-            sb.appendLine("分辨率: ${w}x${h}")
+            sb.appendLine("分辨率: ${w}x$h")
             // v12.4: 宽高比
             val gcd = gcd(w, h)
             val ratioW = w / gcd
             val ratioH = h / gcd
-            sb.appendLine("宽高比: ${ratioW}:${ratioH}")
+            sb.appendLine("宽高比: $ratioW:$ratioH")
         }
         val fps = debug.videoInputFps?.toInt() ?: (vf?.frameRate?.toInt() ?: 0)
         if (fps > 0) sb.appendLine("帧率: ${fps}fps")
@@ -451,13 +489,14 @@ internal fun PlayerActivity.showMediaInfoDialog() {
         if (sr > 0) sb.appendLine("采样率: ${sr}Hz")
         val ch = af?.channelCount ?: 0
         if (ch > 0) {
-            val channelText = when (ch) {
-                1 -> "单声道"
-                2 -> "立体声"
-                6 -> "5.1环绕声"
-                8 -> "7.1环绕声"
-                else -> "${ch}声道"
-            }
+            val channelText =
+                when (ch) {
+                    1 -> "单声道"
+                    2 -> "立体声"
+                    6 -> "5.1环绕声"
+                    8 -> "7.1环绕声"
+                    else -> "${ch}声道"
+                }
             sb.appendLine("声道: $channelText")
         }
         val abr = af?.averageBitrate?.takeIf { it > 0 } ?: af?.bitrate?.takeIf { it > 0 } ?: 0
@@ -472,17 +511,19 @@ internal fun PlayerActivity.showMediaInfoDialog() {
         // v12.4: HDR和色彩空间增强
         val ct = vf?.colorInfo?.colorTransfer ?: 0
         val cp = vf?.colorInfo?.colorSpace ?: 0
-        val hdr = when (ct) {
-            6 -> "HDR10 (ST2084)"
-            7 -> "HLG"
-            else -> "SDR"
-        }
-        val colorSpace = when (cp) {
-            1 -> "BT.601"
-            2 -> "BT.709"
-            6 -> "BT.2020"
-            else -> "未知"
-        }
+        val hdr =
+            when (ct) {
+                6 -> "HDR10 (ST2084)"
+                7 -> "HLG"
+                else -> "SDR"
+            }
+        val colorSpace =
+            when (cp) {
+                1 -> "BT.601"
+                2 -> "BT.709"
+                6 -> "BT.2020"
+                else -> "未知"
+            }
         sb.appendLine("HDR: $hdr")
         sb.appendLine("色彩空间: $colorSpace")
         // v12.4: 下载速度
@@ -500,7 +541,8 @@ internal fun PlayerActivity.showMediaInfoDialog() {
     }
     // v12.2: 媒体信息一键复制
     val infoText = sb.toString()
-    android.app.AlertDialog.Builder(this)
+    android.app.AlertDialog
+        .Builder(this)
         .setTitle("媒体信息")
         .setMessage(infoText)
         .setPositiveButton("关闭", null)
@@ -508,13 +550,16 @@ internal fun PlayerActivity.showMediaInfoDialog() {
             val clipboard = getSystemService(android.content.Context.CLIPBOARD_SERVICE) as android.content.ClipboardManager
             val clip = android.content.ClipData.newPlainText("blbl_media_info", infoText)
             clipboard.setPrimaryClip(clip)
-            blbl.cat3399.core.ui.AppToast.show(this, "媒体信息已复制")
-        }
-        .show()
+            blbl.cat3399.core.ui.AppToast
+                .show(this, "媒体信息已复制")
+        }.show()
 }
 
 // v12.4: 最大公约数（用于计算宽高比）
-private fun gcd(a: Int, b: Int): Int {
+private fun gcd(
+    a: Int,
+    b: Int,
+): Int {
     var x = a
     var y = b
     while (y != 0) {

@@ -8,12 +8,11 @@ enum class BiliApiSource(
     ;
 
     companion object {
-        fun fromPrefValue(value: String?): BiliApiSource {
-            return when (value?.trim()?.lowercase()) {
+        fun fromPrefValue(value: String?): BiliApiSource =
+            when (value?.trim()?.lowercase()) {
                 APP.prefValue -> APP
                 else -> WEB
             }
-        }
     }
 }
 

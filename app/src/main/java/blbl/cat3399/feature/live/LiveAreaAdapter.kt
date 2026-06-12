@@ -32,7 +32,10 @@ class LiveAreaAdapter(
 
     override fun getItemId(position: Int): Long = items[position].id.toLong()
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Vh {
+    override fun onCreateViewHolder(
+        parent: ViewGroup,
+        viewType: Int,
+    ): Vh {
         val binding =
             ItemLiveAreaBinding.inflate(
                 LayoutInflater.from(parent.context).cloneInUserScale(parent.context),
@@ -42,12 +45,20 @@ class LiveAreaAdapter(
         return Vh(binding)
     }
 
-    override fun onBindViewHolder(holder: Vh, position: Int) = holder.bind(items[position], onClick)
+    override fun onBindViewHolder(
+        holder: Vh,
+        position: Int,
+    ) = holder.bind(items[position], onClick)
 
     override fun getItemCount(): Int = items.size
 
-    class Vh(private val binding: ItemLiveAreaBinding) : RecyclerView.ViewHolder(binding.root) {
-        fun bind(item: LiveAreaParent.Child, onClick: (position: Int, area: LiveAreaParent.Child) -> Unit) {
+    class Vh(
+        private val binding: ItemLiveAreaBinding,
+    ) : RecyclerView.ViewHolder(binding.root) {
+        fun bind(
+            item: LiveAreaParent.Child,
+            onClick: (position: Int, area: LiveAreaParent.Child) -> Unit,
+        ) {
             binding.tvTitle.text = item.name
             binding.tvBadge.visibility = if (item.hot) View.VISIBLE else View.GONE
             ImageLoader.loadInto(binding.ivCover, ImageUrl.cover(item.coverUrl))

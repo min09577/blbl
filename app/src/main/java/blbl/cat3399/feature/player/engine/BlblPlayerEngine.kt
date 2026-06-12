@@ -37,18 +37,25 @@ internal interface BlblPlayerEngine {
     fun seekTo(positionMs: Long)
 
     val playbackSpeed: Float
+
     fun setPlaybackSpeed(speed: Float)
 
     var repeatMode: Int
 
     fun setSource(source: PlaybackSource)
+
     fun prepare()
+
     fun play()
+
     fun pause()
+
     fun stop()
+
     fun release()
 
     fun addListener(listener: Listener)
+
     fun removeListener(listener: Listener)
 
     interface Listener {
@@ -60,7 +67,10 @@ internal interface BlblPlayerEngine {
 
         fun onPositionDiscontinuity(newPositionMs: Long) {}
 
-        fun onVideoSizeChanged(width: Int, height: Int) {}
+        fun onVideoSizeChanged(
+            width: Int,
+            height: Int,
+        ) {}
 
         fun onRenderedFirstFrame() {}
     }

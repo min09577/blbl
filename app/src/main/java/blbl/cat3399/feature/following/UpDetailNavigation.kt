@@ -39,7 +39,10 @@ fun Fragment.openUpDetailFromVideoCard(card: VideoCard) {
     }
 }
 
-private fun Fragment.startUpDetail(mid: Long, card: VideoCard) {
+private fun Fragment.startUpDetail(
+    mid: Long,
+    card: VideoCard,
+) {
     startActivity(
         Intent(requireContext(), UpDetailActivity::class.java)
             .putExtra(UpDetailActivity.EXTRA_MID, mid)

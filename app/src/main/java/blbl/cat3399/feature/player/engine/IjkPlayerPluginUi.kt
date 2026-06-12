@@ -13,7 +13,10 @@ internal object IjkPlayerPluginUi {
     @Volatile
     private var installJob: Job? = null
 
-    fun ensureInstalled(activity: BaseActivity, onInstalled: () -> Unit) {
+    fun ensureInstalled(
+        activity: BaseActivity,
+        onInstalled: () -> Unit,
+    ) {
         val status = IjkPlayerPlugin.status(activity)
         if (status == IjkPlayerPlugin.InstallStatus.Installed) {
             onInstalled()

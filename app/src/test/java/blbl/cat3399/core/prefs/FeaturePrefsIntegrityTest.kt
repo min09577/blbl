@@ -1,6 +1,7 @@
 package blbl.cat3399.core.prefs
 
-import org.junit.Assert.*
+import org.junit.Assert.assertEquals
+import org.junit.Assert.assertTrue
 import org.junit.Test
 import java.io.File
 
@@ -8,7 +9,6 @@ import java.io.File
  * Comprehensive integrity test for all FeaturePrefs batches and PlayerSettingsPart files.
  */
 class FeaturePrefsIntegrityTest {
-
     @Test
     fun allBatches_haveCorrectTypeCounts() {
         val baseDir = File("src/main/java/blbl/cat3399/core/prefs")
@@ -58,9 +58,16 @@ class FeaturePrefsIntegrityTest {
     @Test
     fun accessor_declaresAllBatches() {
         val baseDir = File("src/main/java/blbl/cat3399/core/prefs")
-        val batchNums = baseDir.listFiles()
-            ?.mapNotNull { Regex("FeaturePrefs(\\d+)to\\d+\\.kt").find(it.name)?.groupValues?.get(1)?.toInt() }
-            ?.toSet() ?: emptySet()
+        val batchNums =
+            baseDir
+                .listFiles()
+                ?.mapNotNull {
+                    Regex("FeaturePrefs(\\d+)to\\d+\\.kt")
+                        .find(it.name)
+                        ?.groupValues
+                        ?.get(1)
+                        ?.toInt()
+                }?.toSet() ?: emptySet()
         val accessorFile = File(baseDir, "FeaturePrefsAccessor.kt")
         val content = accessorFile.readText()
         val accessorBatches = Regex("""batch(\d+):""").findAll(content).map { it.groupValues[1].toInt() }.toSet()

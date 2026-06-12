@@ -1,9 +1,10 @@
 package blbl.cat3399.core.prefs
 
 import android.content.Context
-import android.content.SharedPreferences
 
-class FeaturePrefs1101(context: Context) {
+class FeaturePrefs1101(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1101", Context.MODE_PRIVATE)
 
     var v1101string: Boolean
@@ -605,11 +606,11 @@ class FeaturePrefs1101(context: Context) {
     var v1110switch: Boolean
         get() = prefs.getBoolean("v1110switch", false)
         set(value) = prefs.edit().putBoolean("v1110switch", value).apply()
-
 }
 
-
-class FeaturePrefs1111(context: Context) {
+class FeaturePrefs1111(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1111", Context.MODE_PRIVATE)
 
     var v1111symbol: Boolean
@@ -1211,11 +1212,11 @@ class FeaturePrefs1111(context: Context) {
     var v1120throw: Boolean
         get() = prefs.getBoolean("v1120throw", false)
         set(value) = prefs.edit().putBoolean("v1120throw", value).apply()
-
 }
 
-
-class FeaturePrefs1121(context: Context) {
+class FeaturePrefs1121(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1121", Context.MODE_PRIVATE)
 
     var v1121tick: Boolean
@@ -1817,11 +1818,11 @@ class FeaturePrefs1121(context: Context) {
     var v1130track: Boolean
         get() = prefs.getBoolean("v1130track", false)
         set(value) = prefs.edit().putBoolean("v1130track", value).apply()
-
 }
 
-
-class FeaturePrefs1131(context: Context) {
+class FeaturePrefs1131(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1131", Context.MODE_PRIVATE)
 
     var v1131trade: Boolean
@@ -2423,7 +2424,4 @@ class FeaturePrefs1131(context: Context) {
     var v1140tune: Boolean
         get() = prefs.getBoolean("v1140tune", false)
         set(value) = prefs.edit().putBoolean("v1140tune", value).apply()
-
 }
-
-

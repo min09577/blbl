@@ -1,9 +1,10 @@
 package blbl.cat3399.core.prefs
 
 import android.content.Context
-import android.content.SharedPreferences
 
-class FeaturePrefs1581(context: Context) {
+class FeaturePrefs1581(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1581", Context.MODE_PRIVATE)
 
     var v1581juice: Boolean
@@ -605,11 +606,11 @@ class FeaturePrefs1581(context: Context) {
     var v1590kiss: Boolean
         get() = prefs.getBoolean("v1590kiss", false)
         set(value) = prefs.edit().putBoolean("v1590kiss", value).apply()
-
 }
 
-
-class FeaturePrefs1591(context: Context) {
+class FeaturePrefs1591(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1591", Context.MODE_PRIVATE)
 
     var v1591kite: Boolean
@@ -1211,11 +1212,11 @@ class FeaturePrefs1591(context: Context) {
     var v1600laugh: Boolean
         get() = prefs.getBoolean("v1600laugh", false)
         set(value) = prefs.edit().putBoolean("v1600laugh", value).apply()
-
 }
 
-
-class FeaturePrefs1601(context: Context) {
+class FeaturePrefs1601(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1601", Context.MODE_PRIVATE)
 
     var v1601navy: Boolean
@@ -1817,11 +1818,11 @@ class FeaturePrefs1601(context: Context) {
     var v1610notable: Boolean
         get() = prefs.getBoolean("v1610notable", false)
         set(value) = prefs.edit().putBoolean("v1610notable", value).apply()
-
 }
 
-
-class FeaturePrefs1611(context: Context) {
+class FeaturePrefs1611(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1611", Context.MODE_PRIVATE)
 
     var v1611nothing: Boolean
@@ -2423,7 +2424,4 @@ class FeaturePrefs1611(context: Context) {
     var v1620october: Boolean
         get() = prefs.getBoolean("v1620october", false)
         set(value) = prefs.edit().putBoolean("v1620october", value).apply()
-
 }
-
-

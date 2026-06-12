@@ -9,11 +9,18 @@ class PlayerActivityHistoryTimeline {
         val videoId: String,
         val title: String,
         val progressPercent: Float,
-        val lastWatchTime: Long
+        val lastWatchTime: Long,
     )
-    
-    fun addToHistory(videoId: String, title: String, progress: Float) {}
+
+    fun addToHistory(
+        videoId: String,
+        title: String,
+        progress: Float,
+    ) {}
+
     fun getRecentHistory(count: Int = 10): List<WatchHistoryItem> = emptyList()
+
     fun clearHistory() {}
+
     fun getTotalWatchTime(): Long = 0
 }

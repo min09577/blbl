@@ -19,21 +19,33 @@ class UiScaler(
     private val resources: Resources,
     val scale: Float,
 ) {
-    fun px(@DimenRes id: Int): Int = resources.getDimensionPixelSize(id)
+    fun px(
+        @DimenRes id: Int,
+    ): Int = resources.getDimensionPixelSize(id)
 
-    fun pxF(@DimenRes id: Int): Float = resources.getDimension(id)
+    fun pxF(
+        @DimenRes id: Int,
+    ): Float = resources.getDimension(id)
 
-    fun scaledDimenPx(@DimenRes id: Int, minPx: Int = 0): Int = scaledPx(px(id), minPx = minPx)
+    fun scaledDimenPx(
+        @DimenRes id: Int,
+        minPx: Int = 0,
+    ): Int = scaledPx(px(id), minPx = minPx)
 
-    fun scaledDimenPxF(@DimenRes id: Int, minPx: Float = 0f): Float = scaledPxF(pxF(id), minPx = minPx)
+    fun scaledDimenPxF(
+        @DimenRes id: Int,
+        minPx: Float = 0f,
+    ): Float = scaledPxF(pxF(id), minPx = minPx)
 
-    fun scaledPx(basePx: Int, minPx: Int = 0): Int {
-        return (basePx * scale).roundToInt().coerceAtLeast(minPx)
-    }
+    fun scaledPx(
+        basePx: Int,
+        minPx: Int = 0,
+    ): Int = (basePx * scale).roundToInt().coerceAtLeast(minPx)
 
-    fun scaledPxF(basePx: Float, minPx: Float = 0f): Float {
-        return (basePx * scale).coerceAtLeast(minPx)
-    }
+    fun scaledPxF(
+        basePx: Float,
+        minPx: Float = 0f,
+    ): Float = (basePx * scale).coerceAtLeast(minPx)
 }
 
 fun Context.uiScaler(scale: Float = UiScale.factor(this)): UiScaler {
@@ -50,7 +62,10 @@ fun Context.uiScaler(scale: Float = UiScale.factor(this)): UiScaler {
     return UiScaler(resources, effectiveScale)
 }
 
-fun TextView.setTextSizePxIfChanged(sizePx: Float, epsilonPx: Float = 0.01f) {
+fun TextView.setTextSizePxIfChanged(
+    sizePx: Float,
+    epsilonPx: Float = 0.01f,
+) {
     if (!sizePx.isFinite() || sizePx <= 0f) return
     if (abs(textSize - sizePx) <= epsilonPx) return
     setTextSize(TypedValue.COMPLEX_UNIT_PX, sizePx)

@@ -8,4 +8,3 @@ package blbl.cat3399.feature.live
 interface LivePageReturnFocusTarget {
     fun restoreFocusAfterReturnFromDetail(): Boolean
 }
-

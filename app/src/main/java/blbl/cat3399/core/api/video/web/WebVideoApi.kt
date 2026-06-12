@@ -5,31 +5,31 @@ import blbl.cat3399.core.api.BiliApiException
 import blbl.cat3399.core.api.BiliApiSource
 import blbl.cat3399.core.api.video.ArchiveRelatedPage
 import blbl.cat3399.core.api.video.ArchiveRelatedRequest
+import blbl.cat3399.core.api.video.UgcSeasonArchivesPage
+import blbl.cat3399.core.api.video.UgcSeasonArchivesRequest
 import blbl.cat3399.core.api.video.VideoCardPage
 import blbl.cat3399.core.api.video.VideoCollectionSectionsPage
 import blbl.cat3399.core.api.video.VideoCollectionSectionsRequest
 import blbl.cat3399.core.api.video.VideoDetail
 import blbl.cat3399.core.api.video.VideoDetailRequest
 import blbl.cat3399.core.api.video.VideoDynamicTagRequest
+import blbl.cat3399.core.api.video.VideoOnlineStatus
+import blbl.cat3399.core.api.video.VideoOnlineStatusRequest
 import blbl.cat3399.core.api.video.VideoPlayKind
 import blbl.cat3399.core.api.video.VideoPlayRequest
 import blbl.cat3399.core.api.video.VideoPlayStream
+import blbl.cat3399.core.api.video.VideoPlayerInfo
+import blbl.cat3399.core.api.video.VideoPlayerInfoRequest
 import blbl.cat3399.core.api.video.VideoPopularRequest
 import blbl.cat3399.core.api.video.VideoRecommendPage
 import blbl.cat3399.core.api.video.VideoRecommendRequest
 import blbl.cat3399.core.api.video.VideoRegionLatestRequest
 import blbl.cat3399.core.api.video.VideoSeriesArchivesRequest
-import blbl.cat3399.core.api.video.VideoSourceApi
-import blbl.cat3399.core.api.video.VideoOnlineStatus
-import blbl.cat3399.core.api.video.VideoOnlineStatusRequest
-import blbl.cat3399.core.api.video.VideoPlayerInfo
-import blbl.cat3399.core.api.video.VideoPlayerInfoRequest
 import blbl.cat3399.core.api.video.VideoShotInfo
 import blbl.cat3399.core.api.video.VideoShotRequest
+import blbl.cat3399.core.api.video.VideoSourceApi
 import blbl.cat3399.core.api.video.VideoTagsPage
 import blbl.cat3399.core.api.video.VideoTagsRequest
-import blbl.cat3399.core.api.video.UgcSeasonArchivesPage
-import blbl.cat3399.core.api.video.UgcSeasonArchivesRequest
 import blbl.cat3399.core.log.AppLog
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.Dispatchers
@@ -79,7 +79,11 @@ internal class WebVideoApi(
     }
 
     override suspend fun tags(request: VideoTagsRequest): VideoTagsPage {
-        val safeBvid = request.bvid?.trim().orEmpty().takeIf { it.isNotBlank() }
+        val safeBvid =
+            request.bvid
+                ?.trim()
+                .orEmpty()
+                .takeIf { it.isNotBlank() }
         val safeAid = request.aid?.takeIf { it > 0L }
         val safeCid = request.cid?.takeIf { it > 0L }
         if (safeBvid == null && safeAid == null) error("view_tags_missing_bvid_aid")
@@ -187,7 +191,7 @@ internal class WebVideoApi(
             when (request.kind) {
                 VideoPlayKind.UGC -> requestUgcPlayJson(request)
                 VideoPlayKind.PGC -> requestPgcPlayJson(request)
-        }
+            }
         return withContext(Dispatchers.Default) {
             mapper.parsePlayStream(json = json, request = request)
         }
@@ -248,7 +252,10 @@ internal class WebVideoApi(
         val params =
             buildMap {
                 request.aid?.takeIf { it > 0L }?.let { put("aid", it.toString()) }
-                request.bvid?.trim()?.takeIf { it.isNotBlank() }?.let { put("bvid", it) }
+                request.bvid
+                    ?.trim()
+                    ?.takeIf { it.isNotBlank() }
+                    ?.let { put("bvid", it) }
                 request.cid?.takeIf { it > 0L }?.let { put("cid", it.toString()) }
                 put("index", if (request.needJsonArrayIndex) "1" else "0")
             }

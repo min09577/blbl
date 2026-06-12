@@ -1,6 +1,5 @@
 package blbl.cat3399.feature.cast
 
-import android.view.View
 import androidx.lifecycle.lifecycleScope
 import blbl.cat3399.core.ui.AppToast
 import blbl.cat3399.core.ui.popup.AppPopup
@@ -27,7 +26,10 @@ private var lastCastTitle: String? = null
 private var playerCastUrl: String? = null
 private var playerCastTitle: String? = null
 
-fun PlayerActivity.setCastSource(url: String, title: String = "BLBL投屏") {
+fun PlayerActivity.setCastSource(
+    url: String,
+    title: String = "BLBL投屏",
+) {
     playerCastUrl = url
     playerCastTitle = title
 }
@@ -51,9 +53,7 @@ fun PlayerActivity.initCastButton(binding: ActivityPlayerBinding) {
 }
 
 // v6.12: 获取上次投屏设备
-private fun getLastCastDevice(): DlnaHelper.DlnaDevice? {
-    return lastCastDevice
-}
+private fun getLastCastDevice(): DlnaHelper.DlnaDevice? = lastCastDevice
 
 private suspend fun PlayerActivity.showCastDeviceDialog() {
     // 如果已在投屏，显示控制选项
@@ -65,15 +65,16 @@ private suspend fun PlayerActivity.showCastDeviceDialog() {
     // v6.12: 如果有上次投屏设备，直接显示快速重连选项
     val lastDevice = getLastCastDevice()
     if (lastDevice != null) {
-        val actions = listOf(
-            PopupAction(role = PopupActionRole.POSITIVE, text = "📺 重新投屏到 ${lastDevice.friendlyName}") {
-                startCast(lastDevice)
-            },
-            PopupAction(role = PopupActionRole.POSITIVE, text = "🔍 搜索新设备") {
-                lifecycleScope.launch { searchAndShowCastDevices() }
-            },
-            PopupAction(role = PopupActionRole.NEGATIVE, text = "取消"),
-        )
+        val actions =
+            listOf(
+                PopupAction(role = PopupActionRole.POSITIVE, text = "📺 重新投屏到 ${lastDevice.friendlyName}") {
+                    startCast(lastDevice)
+                },
+                PopupAction(role = PopupActionRole.POSITIVE, text = "🔍 搜索新设备") {
+                    lifecycleScope.launch { searchAndShowCastDevices() }
+                },
+                PopupAction(role = PopupActionRole.NEGATIVE, text = "取消"),
+            )
         AppPopup.custom(
             context = this,
             title = "投屏",
@@ -95,26 +96,27 @@ private suspend fun PlayerActivity.showCastDeviceDialog() {
 }
 
 private suspend fun PlayerActivity.searchAndShowCastDevices() {
-
-    val devices = try {
-        DlnaHelper.discoverDevices(3000)
-    } catch (e: Exception) {
-        AppToast.show(this, "搜索失败: ${e.message}")
-        emptyList()
-    }
+    val devices =
+        try {
+            DlnaHelper.discoverDevices(3000)
+        } catch (e: Exception) {
+            AppToast.show(this, "搜索失败: ${e.message}")
+            emptyList()
+        }
 
     if (devices.isEmpty()) {
         AppToast.show(this, "未找到投屏设备")
         return
     }
 
-    val actions = devices.map { device ->
-        PopupAction(
-            role = PopupActionRole.POSITIVE,
-            text = device.friendlyName,
-            onClick = { startCast(device) },
-        )
-    } + PopupAction(role = PopupActionRole.NEGATIVE, text = "取消")
+    val actions =
+        devices.map { device ->
+            PopupAction(
+                role = PopupActionRole.POSITIVE,
+                text = device.friendlyName,
+                onClick = { startCast(device) },
+            )
+        } + PopupAction(role = PopupActionRole.NEGATIVE, text = "取消")
 
     AppPopup.custom(
         context = this,
@@ -135,19 +137,30 @@ private suspend fun PlayerActivity.searchAndShowCastDevices() {
 /** 投屏中控制面板 */
 private suspend fun PlayerActivity.showCastControlDialog() {
     val device = DlnaHelper.currentDevice ?: return
-    val actions = listOf(
-        PopupAction(role = PopupActionRole.POSITIVE, text = "🔊 音量80%") {
-            lifecycleScope.launch { try { DlnaHelper.setVolume(device, 80) } catch (_: Exception) {} }
-        },
-        PopupAction(role = PopupActionRole.POSITIVE, text = "🔉 音量30%") {
-            lifecycleScope.launch { try { DlnaHelper.setVolume(device, 30) } catch (_: Exception) {} }
-        },
-        PopupAction(role = PopupActionRole.POSITIVE, text = "⏹ 断开投屏") {
-            stopCast()
-            AppToast.show(this, "已断开投屏")
-        },
-        PopupAction(role = PopupActionRole.NEGATIVE, text = "取消"),
-    )
+    val actions =
+        listOf(
+            PopupAction(role = PopupActionRole.POSITIVE, text = "🔊 音量80%") {
+                lifecycleScope.launch {
+                    try {
+                        DlnaHelper.setVolume(device, 80)
+                    } catch (_: Exception) {
+                    }
+                }
+            },
+            PopupAction(role = PopupActionRole.POSITIVE, text = "🔉 音量30%") {
+                lifecycleScope.launch {
+                    try {
+                        DlnaHelper.setVolume(device, 30)
+                    } catch (_: Exception) {
+                    }
+                }
+            },
+            PopupAction(role = PopupActionRole.POSITIVE, text = "⏹ 断开投屏") {
+                stopCast()
+                AppToast.show(this, "已断开投屏")
+            },
+            PopupAction(role = PopupActionRole.NEGATIVE, text = "取消"),
+        )
 
     AppPopup.custom(
         context = this,
@@ -196,7 +209,6 @@ private fun PlayerActivity.startCast(device: DlnaHelper.DlnaDevice) {
 
             // 更新按钮状态
             updateCastButtonState(true)
-
         } catch (e: Exception) {
             AppToast.show(this@startCast, "投屏失败: ${e.message}")
             // 自动重连
@@ -214,7 +226,8 @@ private fun PlayerActivity.stopCast() {
     lifecycleScope.launch {
         try {
             DlnaHelper.currentDevice?.let { DlnaHelper.stop(it) }
-        } catch (_: Exception) {}
+        } catch (_: Exception) {
+        }
         lastCastDevice = null
         lastCastUrl = null
         lastCastTitle = null
@@ -225,55 +238,61 @@ private fun PlayerActivity.stopCast() {
 /** 启动投屏进度同步 - 每3秒获取一次远端播放进度 */
 private fun PlayerActivity.startCastProgressSync(device: DlnaHelper.DlnaDevice) {
     castProgressJob?.cancel()
-    castProgressJob = lifecycleScope.launch {
-        while (true) {
-            delay(3000)
-            try {
-                val info = DlnaHelper.getPositionInfo(device)
-                if (info != null) {
-                    // 检查是否播放结束
-                    if (info.currentPos >= info.duration && info.duration > 0) {
-                        AppToast.show(this@startCastProgressSync, "投屏播放结束")
-                        stopCast()
-                        break
+    castProgressJob =
+        lifecycleScope.launch {
+            while (true) {
+                delay(3000)
+                try {
+                    val info = DlnaHelper.getPositionInfo(device)
+                    if (info != null) {
+                        // 检查是否播放结束
+                        if (info.currentPos >= info.duration && info.duration > 0) {
+                            AppToast.show(this@startCastProgressSync, "投屏播放结束")
+                            stopCast()
+                            break
+                        }
                     }
+                } catch (e: Exception) {
+                    // 连接断开，尝试重连
+                    startCastReconnect()
+                    break
                 }
-            } catch (e: Exception) {
-                // 连接断开，尝试重连
-                startCastReconnect()
-                break
             }
         }
-    }
 }
 
 /** 自动重连 - 最多重试3次 */
 private fun PlayerActivity.startCastReconnect() {
     castReconnectJob?.cancel()
-    castReconnectJob = lifecycleScope.launch {
-        val device = lastCastDevice ?: return@launch
-        val url = lastCastUrl ?: return@launch
-        val title = lastCastTitle ?: "BLBL投屏"
+    castReconnectJob =
+        lifecycleScope.launch {
+            val device = lastCastDevice ?: return@launch
+            val url = lastCastUrl ?: return@launch
+            val title = lastCastTitle ?: "BLBL投屏"
 
-        repeat(3) { attempt ->
-            delay(2000L * (attempt + 1))
-            try {
-                DlnaHelper.setAVTransportURI(device, url, title)
-                DlnaHelper.play(device)
-                AppToast.show(this@startCastReconnect, "投屏重连成功")
-                startCastProgressSync(device)
-                return@launch
-            } catch (_: Exception) {}
+            repeat(3) { attempt ->
+                delay(2000L * (attempt + 1))
+                try {
+                    DlnaHelper.setAVTransportURI(device, url, title)
+                    DlnaHelper.play(device)
+                    AppToast.show(this@startCastReconnect, "投屏重连成功")
+                    startCastProgressSync(device)
+                    return@launch
+                } catch (_: Exception) {
+                }
+            }
+            AppToast.show(this@startCastReconnect, "投屏重连失败，请重新连接")
+            stopCast()
         }
-        AppToast.show(this@startCastReconnect, "投屏重连失败，请重新连接")
-        stopCast()
-    }
 }
 
 /** 更新投屏按钮视觉状态 */
 private fun PlayerActivity.updateCastButtonState(isCasting: Boolean) {
     try {
-        val binding = blbl.cat3399.databinding.ActivityPlayerBinding.bind(window.decorView)
+        val binding =
+            blbl.cat3399.databinding.ActivityPlayerBinding
+                .bind(window.decorView)
         binding.btnCast.alpha = if (isCasting) 1.0f else 0.6f
-    } catch (_: Exception) {}
+    } catch (_: Exception) {
+    }
 }

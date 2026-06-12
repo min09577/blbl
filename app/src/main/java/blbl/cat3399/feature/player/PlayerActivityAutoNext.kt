@@ -38,8 +38,8 @@ internal sealed interface AutoNextTarget {
     }
 }
 
-private fun autoNextModeAllowsNext(mode: String): Boolean {
-    return when (mode) {
+private fun autoNextModeAllowsNext(mode: String): Boolean =
+    when (mode) {
         AppPrefs.PLAYER_PLAYBACK_MODE_PAGE_LIST,
         AppPrefs.PLAYER_PLAYBACK_MODE_PARTS_LIST,
         AppPrefs.PLAYER_PLAYBACK_MODE_PARTS_LIST_THEN_RECOMMEND,
@@ -49,19 +49,15 @@ private fun autoNextModeAllowsNext(mode: String): Boolean {
 
         else -> false
     }
-}
 
-private fun autoNextFallbackTitleForMode(mode: String): String {
-    return when (mode) {
+private fun autoNextFallbackTitleForMode(mode: String): String =
+    when (mode) {
         AppPrefs.PLAYER_PLAYBACK_MODE_RECOMMEND -> "推荐视频"
         AppPrefs.PLAYER_PLAYBACK_MODE_RANDOM -> "随机视频"
         else -> "下一个视频"
     }
-}
 
-private fun PlayerActivity.hasPendingPartsAutoNextResolution(): Boolean {
-    return partsListFetchJob?.isActive == true
-}
+private fun PlayerActivity.hasPendingPartsAutoNextResolution(): Boolean = partsListFetchJob?.isActive == true
 
 private fun PlayerActivity.hasPendingRecommendAutoNextResolution(): Boolean {
     val requestBvid = currentBvid.trim()
@@ -94,7 +90,10 @@ internal fun PlayerActivity.isAutoNextUiBlocked(): Boolean {
     return false
 }
 
-internal fun formatAutoNextHintTitle(rawTitle: String?, fallbackTitle: String): String {
+internal fun formatAutoNextHintTitle(
+    rawTitle: String?,
+    fallbackTitle: String,
+): String {
     val normalized =
         rawTitle
             .orEmpty()
@@ -107,7 +106,10 @@ internal fun formatAutoNextHintTitle(rawTitle: String?, fallbackTitle: String): 
     return normalized.substring(0, endExclusive) + "..."
 }
 
-internal fun PlayerActivity.clearAutoNextPreviewState(reason: String, resetUserCancellation: Boolean) {
+internal fun PlayerActivity.clearAutoNextPreviewState(
+    reason: String,
+    resetUserCancellation: Boolean,
+) {
     val hadPending = autoNextPending != null
     val hadHint = autoNextHintVisible
     val wasCancelled = autoNextCancelledByUser
@@ -122,7 +124,10 @@ internal fun PlayerActivity.clearAutoNextPreviewState(reason: String, resetUserC
     }
 }
 
-internal fun PlayerActivity.clearAutoNextState(reason: String, resetUserCancellation: Boolean) {
+internal fun PlayerActivity.clearAutoNextState(
+    reason: String,
+    resetUserCancellation: Boolean,
+) {
     val hadPending = autoNextPending != null
     val hadHint = autoNextHintVisible
     val wasCancelled = autoNextCancelledByUser
@@ -143,7 +148,10 @@ internal fun PlayerActivity.clearAutoNextState(reason: String, resetUserCancella
     }
 }
 
-internal fun PlayerActivity.cancelPendingAutoNext(reason: String, markCancelledByUser: Boolean) {
+internal fun PlayerActivity.cancelPendingAutoNext(
+    reason: String,
+    markCancelledByUser: Boolean,
+) {
     val hadPending = autoNextPending != null
     val hadHint = autoNextHintVisible
     val wasArmed = autoNextAfterEndedArmed
@@ -205,8 +213,8 @@ internal fun PlayerActivity.maybeWarmUpAutoNextTarget() {
     }
 }
 
-internal fun PlayerActivity.resolveAutoNextTargetByPlaybackMode(preloadRecommendation: Boolean): AutoNextTarget? {
-    return when (resolvedPlaybackMode()) {
+internal fun PlayerActivity.resolveAutoNextTargetByPlaybackMode(preloadRecommendation: Boolean): AutoNextTarget? =
+    when (resolvedPlaybackMode()) {
         AppPrefs.PLAYER_PLAYBACK_MODE_PAGE_LIST -> resolvePageAutoNextTarget()
         AppPrefs.PLAYER_PLAYBACK_MODE_PARTS_LIST -> resolvePartsAutoNextTarget()
         AppPrefs.PLAYER_PLAYBACK_MODE_PARTS_LIST_THEN_RECOMMEND ->
@@ -216,7 +224,6 @@ internal fun PlayerActivity.resolveAutoNextTargetByPlaybackMode(preloadRecommend
         AppPrefs.PLAYER_PLAYBACK_MODE_RANDOM -> resolveRandomAutoNextTarget()
         else -> null
     }
-}
 
 private fun PlayerActivity.resolveRandomAutoNextTarget(): AutoNextTarget? {
     // Random: pick from all available lists (page + parts + recommend)
@@ -397,7 +404,10 @@ internal fun PlayerActivity.maybeStartAutoNextAfterEndedCountdown() {
         }
 }
 
-internal fun PlayerActivity.maybeUpdateAutoNext(posMs: Long, durationMs: Long) {
+internal fun PlayerActivity.maybeUpdateAutoNext(
+    posMs: Long,
+    durationMs: Long,
+) {
     val engine = player ?: return
     if (engine.playbackState == Player.STATE_ENDED) {
         // After END we defer auto-next until all OSD/panels are fully closed.

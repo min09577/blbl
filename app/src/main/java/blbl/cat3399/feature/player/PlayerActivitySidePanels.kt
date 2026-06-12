@@ -27,7 +27,7 @@ import org.json.JSONObject
 internal const val COMMENT_TYPE_VIDEO = 1
 internal const val COMMENT_SORT_NEW = 0
 internal const val COMMENT_SORT_HOT = 1
-internal const val COMMENT_SORT_REPLY = 2  // v5.5: 按回复数排序
+internal const val COMMENT_SORT_REPLY = 2 // v5.5: 按回复数排序
 
 internal fun PlayerActivity.isSettingsPanelVisible(): Boolean = binding.settingsPanel.visibility == View.VISIBLE
 
@@ -37,8 +37,7 @@ internal fun PlayerActivity.isCommentThreadVisible(): Boolean = binding.recycler
 
 internal fun PlayerActivity.isSidePanelVisible(): Boolean = isSettingsPanelVisible() || isCommentsPanelVisible()
 
-internal fun PlayerActivity.isOverlayPanelVisible(): Boolean =
-    isSidePanelVisible() || isBottomCardPanelVisible() || isSponsorSubmitPanelVisible()
+internal fun PlayerActivity.isOverlayPanelVisible(): Boolean = isSidePanelVisible() || isBottomCardPanelVisible() || isSponsorSubmitPanelVisible()
 
 internal fun PlayerActivity.onOverlayPanelShown(openedFromMenuKey: Boolean) {
     when {
@@ -59,9 +58,10 @@ internal fun PlayerActivity.onLastOverlayPanelDismissed(dismissTarget: PlayerAct
 internal fun PlayerActivity.initSidePanels() {
     binding.chipCommentSortHot.setOnClickListener { applyCommentSort(COMMENT_SORT_HOT) }
     binding.chipCommentSortNew.setOnClickListener { applyCommentSort(COMMENT_SORT_NEW) }
-    binding.chipCommentSortReply.setOnClickListener { applyCommentSort(COMMENT_SORT_REPLY) }  // v5.5
+    binding.chipCommentSortReply.setOnClickListener { applyCommentSort(COMMENT_SORT_REPLY) } // v5.5
     // v12.6: 评论楼层跳转
     binding.btnCommentFloorJump?.setOnClickListener { showCommentFloorJumpDialog() }
+
     fun switchCommentSortOnFocus(sort: Int) {
         if (!isCommentsPanelVisible()) return
         if (isCommentThreadVisible()) return
@@ -161,7 +161,11 @@ internal fun PlayerActivity.initSidePanels() {
         binding.recyclerComments.clearOnScrollListeners()
         binding.recyclerComments.addOnScrollListener(
             object : RecyclerView.OnScrollListener() {
-                override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
+                override fun onScrolled(
+                    recyclerView: RecyclerView,
+                    dx: Int,
+                    dy: Int,
+                ) {
                     if (dy <= 0) return
                     if (!isCommentsPanelVisible() || isCommentThreadVisible()) return
                     if (commentsFetchJob?.isActive == true || commentsEndReached) return
@@ -221,7 +225,11 @@ internal fun PlayerActivity.initSidePanels() {
         binding.recyclerCommentThread.clearOnScrollListeners()
         binding.recyclerCommentThread.addOnScrollListener(
             object : RecyclerView.OnScrollListener() {
-                override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
+                override fun onScrolled(
+                    recyclerView: RecyclerView,
+                    dx: Int,
+                    dy: Int,
+                ) {
                     if (dy <= 0) return
                     if (!isCommentsPanelVisible() || !isCommentThreadVisible()) return
                     if (commentThreadFetchJob?.isActive == true || commentThreadEndReached) return
@@ -446,16 +454,18 @@ internal fun PlayerActivity.showCommentReplyDialog(replyItem: PlayerCommentsAdap
         AppToast.show(ctx, "请先登录后再回复")
         return
     }
-    val root = replyItem.rpid  // 对于根评论，root 就是自己的 rpid
-    val parent = replyItem.rpid  // 直接回复根评论时，parent 也是自己的 rpid
+    val root = replyItem.rpid // 对于根评论，root 就是自己的 rpid
+    val parent = replyItem.rpid // 直接回复根评论时，parent 也是自己的 rpid
     val dialogView = layoutInflater.inflate(R.layout.dialog_comment_reply, null)
     val etMessage = dialogView.findViewById<EditText>(R.id.etReplyMessage)
     val btnSend = dialogView.findViewById<Button>(R.id.btnSendReply)
-    val dialog = AlertDialog.Builder(ctx)
-        .setTitle("回复 @${replyItem.userName}")
-        .setView(dialogView)
-        .setNegativeButton("取消", null)
-        .create()
+    val dialog =
+        AlertDialog
+            .Builder(ctx)
+            .setTitle("回复 @${replyItem.userName}")
+            .setView(dialogView)
+            .setNegativeButton("取消", null)
+            .create()
     btnSend.setOnClickListener {
         val message = etMessage.text.toString().trim()
         if (message.isBlank()) {
@@ -496,12 +506,14 @@ private fun PlayerActivity.showCommentFloorJumpDialog() {
         AppToast.show(this, "评论尚未加载")
         return
     }
-    val input = android.widget.EditText(this).apply {
-        inputType = android.text.InputType.TYPE_CLASS_NUMBER
-        hint = "输入楼层号"
-        setPadding(48, 32, 48, 32)
-    }
-    android.app.AlertDialog.Builder(this)
+    val input =
+        android.widget.EditText(this).apply {
+            inputType = android.text.InputType.TYPE_CLASS_NUMBER
+            hint = "输入楼层号"
+            setPadding(48, 32, 48, 32)
+        }
+    android.app.AlertDialog
+        .Builder(this)
         .setTitle("跳转到楼层")
         .setView(input)
         .setPositiveButton("跳转") { _, _ ->
@@ -518,11 +530,13 @@ private fun PlayerActivity.showCommentFloorJumpDialog() {
             }
             binding.recyclerComments.scrollToPosition(targetPos)
             binding.recyclerComments.post {
-                binding.recyclerComments.findViewHolderForAdapterPosition(targetPos)?.itemView?.requestFocus()
+                binding.recyclerComments
+                    .findViewHolderForAdapterPosition(targetPos)
+                    ?.itemView
+                    ?.requestFocus()
             }
             AppToast.show(this, "已跳转到第${floor}楼")
-        }
-        .setNegativeButton("取消", null)
+        }.setNegativeButton("取消", null)
         .show()
 }
 
@@ -668,9 +682,14 @@ internal fun PlayerActivity.reloadComments() {
                         val items = parseReplyList(replies, oid = aid, canOpenThread = true, upMid = currentUpMid)
                         // v11.1: 评论关键词过滤
                         val filterKws = BiliClient.prefs.commentFilterKeywords
-                        val filtered = if (filterKws.isEmpty()) items else items.filter { item ->
-                            !filterKws.any { kw -> item.message.contains(kw, ignoreCase = true) }
-                        }
+                        val filtered =
+                            if (filterKws.isEmpty()) {
+                                items
+                            } else {
+                                items.filter { item ->
+                                    !filterKws.any { kw -> item.message.contains(kw, ignoreCase = true) }
+                                }
+                            }
                         count to filtered
                     }
                 if (token != commentsFetchToken) return@launch
@@ -681,7 +700,7 @@ internal fun PlayerActivity.reloadComments() {
                 commentsItems.addAll(list)
                 commentsEndReached =
                     list.isEmpty() ||
-                        (commentsTotalCount >= 0 && commentsItems.size >= commentsTotalCount)
+                    (commentsTotalCount >= 0 && commentsItems.size >= commentsTotalCount)
 
                 (binding.recyclerComments.adapter as? PlayerCommentsAdapter)?.setItems(commentsItems)
 
@@ -749,7 +768,8 @@ internal fun PlayerActivity.loadMoreComments() {
                 commentsPage = nextPage
                 commentsItems.addAll(list)
                 commentsEndReached =
-                    commentsTotalCount >= 0 && commentsItems.size >= commentsTotalCount
+                    commentsTotalCount >= 0 &&
+                    commentsItems.size >= commentsTotalCount
                 (binding.recyclerComments.adapter as? PlayerCommentsAdapter)?.appendItems(list)
                 binding.recyclerComments.postIfAlive(isAlive = { !isFinishing && !isDestroyed }) {
                     commentsDpadController?.consumePendingFocusAfterLoadMore()
@@ -827,7 +847,7 @@ internal fun PlayerActivity.reloadCommentThread() {
                 val loadedReplies = (commentThreadItems.size - (if (rootItemKeyed != null) 1 else 0)).coerceAtLeast(0)
                 commentThreadEndReached =
                     replyItemsKeyed.isEmpty() ||
-                        (commentThreadTotalCount >= 0 && loadedReplies >= commentThreadTotalCount)
+                    (commentThreadTotalCount >= 0 && loadedReplies >= commentThreadTotalCount)
 
                 (binding.recyclerCommentThread.adapter as? PlayerCommentsAdapter)?.setItems(commentThreadItems)
                 binding.recyclerCommentThread.postIfAlive(isAlive = { !isFinishing && !isDestroyed }) {
@@ -883,7 +903,12 @@ internal fun PlayerActivity.loadMoreCommentThread() {
                 val list =
                     withContext(Dispatchers.Default) {
                         val replies = data.optJSONArray("replies") ?: JSONArray()
-                        parseReplyList(replies, oid = aid, canOpenThread = false, upMid = currentUpMid).map { it.copy(key = "thread:${it.rpid}") }
+                        parseReplyList(
+                            replies,
+                            oid = aid,
+                            canOpenThread = false,
+                            upMid = currentUpMid,
+                        ).map { it.copy(key = "thread:${it.rpid}") }
                     }
                 if (token != commentThreadFetchToken) return@launch
                 if (currentAid?.takeIf { it > 0L } != aid) return@launch
@@ -901,7 +926,8 @@ internal fun PlayerActivity.loadMoreCommentThread() {
                 val rootCount = if (commentThreadItems.firstOrNull()?.key?.startsWith("thread_root:") == true) 1 else 0
                 val loadedReplies = (commentThreadItems.size - rootCount).coerceAtLeast(0)
                 commentThreadEndReached =
-                    commentThreadTotalCount >= 0 && loadedReplies >= commentThreadTotalCount
+                    commentThreadTotalCount >= 0 &&
+                    loadedReplies >= commentThreadTotalCount
 
                 (binding.recyclerCommentThread.adapter as? PlayerCommentsAdapter)?.appendItems(list)
                 binding.recyclerCommentThread.postIfAlive(isAlive = { !isFinishing && !isDestroyed }) {
@@ -918,7 +944,12 @@ internal fun PlayerActivity.loadMoreCommentThread() {
         }
 }
 
-private fun parseReplyList(arr: JSONArray, oid: Long, canOpenThread: Boolean, upMid: Long): List<PlayerCommentsAdapter.Item> {
+private fun parseReplyList(
+    arr: JSONArray,
+    oid: Long,
+    canOpenThread: Boolean,
+    upMid: Long,
+): List<PlayerCommentsAdapter.Item> {
     if (arr.length() <= 0) return emptyList()
     val out = ArrayList<PlayerCommentsAdapter.Item>(arr.length())
     for (i in 0 until arr.length()) {
@@ -993,11 +1024,14 @@ private fun parseReplyItem(
         userLevel = userLevel,
         userSign = userSign,
         ipLocation = ipLocation,
-        liked = false,  // v12.2: 点赞状态（默认未点赞）
+        liked = false, // v12.2: 点赞状态（默认未点赞）
     )
 }
 
-private fun parseReplyPreviewList(arr: JSONArray, limit: Int = 2): List<PlayerCommentsAdapter.ReplyPreview> {
+private fun parseReplyPreviewList(
+    arr: JSONArray,
+    limit: Int = 2,
+): List<PlayerCommentsAdapter.ReplyPreview> {
     if (arr.length() <= 0) return emptyList()
     val max = minOf(limit.coerceAtLeast(0), arr.length())
     if (max <= 0) return emptyList()

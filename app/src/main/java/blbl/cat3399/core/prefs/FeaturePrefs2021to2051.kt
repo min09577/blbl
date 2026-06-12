@@ -1,9 +1,10 @@
 package blbl.cat3399.core.prefs
 
 import android.content.Context
-import android.content.SharedPreferences
 
-class FeaturePrefs2021(context: Context) {
+class FeaturePrefs2021(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_2021", Context.MODE_PRIVATE)
 
     var v2021fulfilled: Boolean
@@ -605,11 +606,11 @@ class FeaturePrefs2021(context: Context) {
     var v2030handled: Boolean
         get() = prefs.getBoolean("v2030handled", false)
         set(value) = prefs.edit().putBoolean("v2030handled", value).apply()
-
 }
 
-
-class FeaturePrefs2031(context: Context) {
+class FeaturePrefs2031(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_2031", Context.MODE_PRIVATE)
 
     var v2031hardened: Boolean
@@ -1211,11 +1212,11 @@ class FeaturePrefs2031(context: Context) {
     var v2040ignored: Boolean
         get() = prefs.getBoolean("v2040ignored", false)
         set(value) = prefs.edit().putBoolean("v2040ignored", value).apply()
-
 }
 
-
-class FeaturePrefs2041(context: Context) {
+class FeaturePrefs2041(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_2041", Context.MODE_PRIVATE)
 
     var v2041illustrated: Boolean
@@ -1817,11 +1818,11 @@ class FeaturePrefs2041(context: Context) {
     var v2050informed: Boolean
         get() = prefs.getBoolean("v2050informed", false)
         set(value) = prefs.edit().putBoolean("v2050informed", value).apply()
-
 }
 
-
-class FeaturePrefs2051(context: Context) {
+class FeaturePrefs2051(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_2051", Context.MODE_PRIVATE)
 
     var v2051inherited: Boolean
@@ -2423,7 +2424,4 @@ class FeaturePrefs2051(context: Context) {
     var v2060interacted: Boolean
         get() = prefs.getBoolean("v2060interacted", false)
         set(value) = prefs.edit().putBoolean("v2060interacted", value).apply()
-
 }
-
-

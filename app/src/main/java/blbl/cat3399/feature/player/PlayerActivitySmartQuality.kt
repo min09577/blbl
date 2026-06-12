@@ -33,13 +33,14 @@ internal class SmartQualityController(
     private var stablePlaybackStart = 0L
     private var downgradeHintShown = false
 
-    private val checkRunnable = object : Runnable {
-        override fun run() {
-            if (!enabled) return
-            checkHealth()
-            handler.postDelayed(this, CHECK_INTERVAL_MS)
+    private val checkRunnable =
+        object : Runnable {
+            override fun run() {
+                if (!enabled) return
+                checkHealth()
+                handler.postDelayed(this, CHECK_INTERVAL_MS)
+            }
         }
-    }
 
     fun start() {
         if (!BiliClient.prefs.playerSmartQualityEnabled) return

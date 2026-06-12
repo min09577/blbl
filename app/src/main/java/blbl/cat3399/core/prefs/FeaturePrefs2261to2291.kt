@@ -1,9 +1,10 @@
 package blbl.cat3399.core.prefs
 
 import android.content.Context
-import android.content.SharedPreferences
 
-class FeaturePrefs2261(context: Context) {
+class FeaturePrefs2261(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_2261", Context.MODE_PRIVATE)
 
     var v2261stayed: Boolean
@@ -605,11 +606,11 @@ class FeaturePrefs2261(context: Context) {
     var v2270structured: Boolean
         get() = prefs.getBoolean("v2270structured", false)
         set(value) = prefs.edit().putBoolean("v2270structured", value).apply()
-
 }
 
-
-class FeaturePrefs2271(context: Context) {
+class FeaturePrefs2271(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_2271", Context.MODE_PRIVATE)
 
     var v2271struggled: Boolean
@@ -1211,11 +1212,11 @@ class FeaturePrefs2271(context: Context) {
     var v2280surrounded: Boolean
         get() = prefs.getBoolean("v2280surrounded", false)
         set(value) = prefs.edit().putBoolean("v2280surrounded", value).apply()
-
 }
 
-
-class FeaturePrefs2281(context: Context) {
+class FeaturePrefs2281(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_2281", Context.MODE_PRIVATE)
 
     var v2281survived: Boolean
@@ -1817,11 +1818,11 @@ class FeaturePrefs2281(context: Context) {
     var v2290terminated: Boolean
         get() = prefs.getBoolean("v2290terminated", false)
         set(value) = prefs.edit().putBoolean("v2290terminated", value).apply()
-
 }
 
-
-class FeaturePrefs2291(context: Context) {
+class FeaturePrefs2291(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_2291", Context.MODE_PRIVATE)
 
     var v2291tested: Boolean
@@ -2423,7 +2424,4 @@ class FeaturePrefs2291(context: Context) {
     var v2300traveled: Boolean
         get() = prefs.getBoolean("v2300traveled", false)
         set(value) = prefs.edit().putBoolean("v2300traveled", value).apply()
-
 }
-
-

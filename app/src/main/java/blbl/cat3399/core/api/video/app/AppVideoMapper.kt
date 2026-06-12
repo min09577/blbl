@@ -2,11 +2,6 @@ package blbl.cat3399.core.api.video.app
 
 import bilibili.app.playerunite.v1.PlayViewUniteReply
 import bilibili.pgc.gateway.player.v2.PlayViewReply
-import bilibili.playershared.DashItem as UgcDashItem
-import bilibili.playershared.DashVideo as UgcDashVideo
-import bilibili.playershared.ResponseUrl as UgcResponseUrl
-import bilibili.playershared.Stream as UgcStream
-import bilibili.playershared.StreamInfo as UgcStreamInfo
 import bilibili.playershared.VodInfo
 import blbl.cat3399.core.api.BiliApiSource
 import blbl.cat3399.core.api.video.AudioTrack
@@ -18,7 +13,6 @@ import blbl.cat3399.core.api.video.VideoPlayResume
 import blbl.cat3399.core.api.video.VideoPlayStream
 import blbl.cat3399.core.api.video.VideoProgressiveStream
 import blbl.cat3399.core.api.video.VideoResumeTimeUnit
-import blbl.cat3399.core.api.video.VideoSegmentBase
 import blbl.cat3399.core.api.video.VideoSupportFormat
 import blbl.cat3399.core.api.video.VideoTrack
 import blbl.cat3399.core.api.video.VideoTrackInfo
@@ -31,6 +25,11 @@ import bilibili.pgc.gateway.player.v2.ResponseUrl as PgcResponseUrl
 import bilibili.pgc.gateway.player.v2.Stream as PgcStream
 import bilibili.pgc.gateway.player.v2.StreamInfo as PgcStreamInfo
 import bilibili.pgc.gateway.player.v2.VideoInfo as PgcVideoInfo
+import bilibili.playershared.DashItem as UgcDashItem
+import bilibili.playershared.DashVideo as UgcDashVideo
+import bilibili.playershared.ResponseUrl as UgcResponseUrl
+import bilibili.playershared.Stream as UgcStream
+import bilibili.playershared.StreamInfo as UgcStreamInfo
 
 internal class AppVideoMapper(
     private val source: BiliApiSource,
@@ -77,15 +76,22 @@ internal class AppVideoMapper(
             progressive = fallbackProgressive,
             supportFormats = ugcSupportFormats(vod),
             clipSegments = emptyList(),
-            resume = reply.takeIf { it.hasHistory() }?.history?.currentVideo?.progress
-                ?.takeIf { it > 0L }
-                ?.let { progress ->
-                    VideoPlayResume(
-                        rawTime = progress,
-                        timeUnit = VideoResumeTimeUnit.SECONDS,
-                        lastCid = reply.history.currentVideo.lastPlayCid.takeIf { it > 0L },
-                    )
-                },
+            resume =
+                reply
+                    .takeIf { it.hasHistory() }
+                    ?.history
+                    ?.currentVideo
+                    ?.progress
+                    ?.takeIf { it > 0L }
+                    ?.let { progress ->
+                        VideoPlayResume(
+                            rawTime = progress,
+                            timeUnit = VideoResumeTimeUnit.SECONDS,
+                            lastCid =
+                                reply.history.currentVideo.lastPlayCid
+                                    .takeIf { it > 0L },
+                        )
+                    },
             vVoucher = null,
         )
     }
@@ -193,8 +199,9 @@ internal class AppVideoMapper(
             danmaku = parseCountText(obj.optString("cover_left_text_2", "")),
             pubDate = null,
             pubDateText = null,
-            trackId = obj.optString("track_id", obj.optString("trackid", "")).trim().takeIf { it.isNotBlank() }
-                ?: obj.optInt("idx", -1).takeIf { it >= 0 }?.let { "app-idx:$it" },
+            trackId =
+                obj.optString("track_id", obj.optString("trackid", "")).trim().takeIf { it.isNotBlank() }
+                    ?: obj.optInt("idx", -1).takeIf { it >= 0 }?.let { "app-idx:$it" },
         )
     }
 
@@ -360,7 +367,12 @@ internal class AppVideoMapper(
     }
 
     private fun parseCountText(text: String): Long? {
-        val raw = text.trim().removeSuffix("观看").removeSuffix("弹幕").trim()
+        val raw =
+            text
+                .trim()
+                .removeSuffix("观看")
+                .removeSuffix("弹幕")
+                .trim()
         if (raw.isBlank()) return null
         return runCatching {
             when {

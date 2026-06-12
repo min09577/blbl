@@ -1,9 +1,10 @@
 package blbl.cat3399.core.prefs
 
 import android.content.Context
-import android.content.SharedPreferences
 
-class FeaturePrefs2221(context: Context) {
+class FeaturePrefs2221(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_2221", Context.MODE_PRIVATE)
 
     var v2221ruined: Boolean
@@ -605,11 +606,11 @@ class FeaturePrefs2221(context: Context) {
     var v2230secured: Boolean
         get() = prefs.getBoolean("v2230secured", false)
         set(value) = prefs.edit().putBoolean("v2230secured", value).apply()
-
 }
 
-
-class FeaturePrefs2231(context: Context) {
+class FeaturePrefs2231(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_2231", Context.MODE_PRIVATE)
 
     var v2231segmented: Boolean
@@ -1211,11 +1212,11 @@ class FeaturePrefs2231(context: Context) {
     var v2240shuffled: Boolean
         get() = prefs.getBoolean("v2240shuffled", false)
         set(value) = prefs.edit().putBoolean("v2240shuffled", value).apply()
-
 }
 
-
-class FeaturePrefs2241(context: Context) {
+class FeaturePrefs2241(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_2241", Context.MODE_PRIVATE)
 
     var v2241shut: Boolean
@@ -1817,11 +1818,11 @@ class FeaturePrefs2241(context: Context) {
     var v2250sparked: Boolean
         get() = prefs.getBoolean("v2250sparked", false)
         set(value) = prefs.edit().putBoolean("v2250sparked", value).apply()
-
 }
 
-
-class FeaturePrefs2251(context: Context) {
+class FeaturePrefs2251(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_2251", Context.MODE_PRIVATE)
 
     var v2251specialized: Boolean
@@ -2423,7 +2424,4 @@ class FeaturePrefs2251(context: Context) {
     var v2260stationed: Boolean
         get() = prefs.getBoolean("v2260stationed", false)
         set(value) = prefs.edit().putBoolean("v2260stationed", value).apply()
-
 }
-
-

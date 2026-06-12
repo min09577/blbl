@@ -1,9 +1,10 @@
 package blbl.cat3399.core.prefs
 
 import android.content.Context
-import android.content.SharedPreferences
 
-class FeaturePrefs901(context: Context) {
+class FeaturePrefs901(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_901", Context.MODE_PRIVATE)
 
     var v901learn: Boolean
@@ -605,11 +606,11 @@ class FeaturePrefs901(context: Context) {
     var v910load: Boolean
         get() = prefs.getBoolean("v910load", false)
         set(value) = prefs.edit().putBoolean("v910load", value).apply()
-
 }
 
-
-class FeaturePrefs911(context: Context) {
+class FeaturePrefs911(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_911", Context.MODE_PRIVATE)
 
     var v911local: Boolean
@@ -1211,11 +1212,11 @@ class FeaturePrefs911(context: Context) {
     var v920margin: Boolean
         get() = prefs.getBoolean("v920margin", false)
         set(value) = prefs.edit().putBoolean("v920margin", value).apply()
-
 }
 
-
-class FeaturePrefs921(context: Context) {
+class FeaturePrefs921(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_921", Context.MODE_PRIVATE)
 
     var v921mark: Boolean
@@ -1817,11 +1818,11 @@ class FeaturePrefs921(context: Context) {
     var v930middle: Boolean
         get() = prefs.getBoolean("v930middle", false)
         set(value) = prefs.edit().putBoolean("v930middle", value).apply()
-
 }
 
-
-class FeaturePrefs931(context: Context) {
+class FeaturePrefs931(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_931", Context.MODE_PRIVATE)
 
     var v931min: Boolean
@@ -2423,7 +2424,4 @@ class FeaturePrefs931(context: Context) {
     var v940navigate: Boolean
         get() = prefs.getBoolean("v940navigate", false)
         set(value) = prefs.edit().putBoolean("v940navigate", value).apply()
-
 }
-
-

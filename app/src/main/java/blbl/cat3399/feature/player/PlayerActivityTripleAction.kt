@@ -44,7 +44,12 @@ private fun PlayerActivity.onLikeButtonLongPressed() {
 
     val requestBvid = currentBvid.trim().takeIf { it.isNotBlank() } ?: return
     val requestAid = currentAid?.takeIf { it > 0L }
-    val selfMid = BiliClient.cookies.getCookieValue("DedeUserID")?.trim()?.toLongOrNull()?.takeIf { it > 0L }
+    val selfMid =
+        BiliClient.cookies
+            .getCookieValue("DedeUserID")
+            ?.trim()
+            ?.toLongOrNull()
+            ?.takeIf { it > 0L }
     val initialState =
         ArchiveTripleActionState(
             liked = actionLiked,

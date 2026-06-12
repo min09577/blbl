@@ -1,9 +1,10 @@
 package blbl.cat3399.core.prefs
 
 import android.content.Context
-import android.content.SharedPreferences
 
-class FeaturePrefs2061(context: Context) {
+class FeaturePrefs2061(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_2061", Context.MODE_PRIVATE)
 
     var v2061interested: Boolean
@@ -605,11 +606,11 @@ class FeaturePrefs2061(context: Context) {
     var v2070kicked: Boolean
         get() = prefs.getBoolean("v2070kicked", false)
         set(value) = prefs.edit().putBoolean("v2070kicked", value).apply()
-
 }
 
-
-class FeaturePrefs2071(context: Context) {
+class FeaturePrefs2071(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_2071", Context.MODE_PRIVATE)
 
     var v2071killed: Boolean
@@ -1211,11 +1212,11 @@ class FeaturePrefs2071(context: Context) {
     var v2080limited: Boolean
         get() = prefs.getBoolean("v2080limited", false)
         set(value) = prefs.edit().putBoolean("v2080limited", value).apply()
-
 }
 
-
-class FeaturePrefs2081(context: Context) {
+class FeaturePrefs2081(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_2081", Context.MODE_PRIVATE)
 
     var v2081linked: Boolean
@@ -1817,11 +1818,11 @@ class FeaturePrefs2081(context: Context) {
     var v2090manufactured: Boolean
         get() = prefs.getBoolean("v2090manufactured", false)
         set(value) = prefs.edit().putBoolean("v2090manufactured", value).apply()
-
 }
 
-
-class FeaturePrefs2091(context: Context) {
+class FeaturePrefs2091(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_2091", Context.MODE_PRIVATE)
 
     var v2091mapped: Boolean
@@ -2423,7 +2424,4 @@ class FeaturePrefs2091(context: Context) {
     var v2100motivated: Boolean
         get() = prefs.getBoolean("v2100motivated", false)
         set(value) = prefs.edit().putBoolean("v2100motivated", value).apply()
-
 }
-
-

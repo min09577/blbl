@@ -159,6 +159,4 @@ class PagedGridStateMachine<K>(
 }
 
 @Suppress("UNCHECKED_CAST")
-fun <Item> PagedGridStateMachine.LoadResult<Item>.appliedOrNull(): PagedGridStateMachine.LoadResult.Applied<Item>? {
-    return this as? PagedGridStateMachine.LoadResult.Applied<Item>
-}
+fun <Item> PagedGridStateMachine.LoadResult<Item>.appliedOrNull(): PagedGridStateMachine.LoadResult.Applied<Item>? = this as? PagedGridStateMachine.LoadResult.Applied<Item>

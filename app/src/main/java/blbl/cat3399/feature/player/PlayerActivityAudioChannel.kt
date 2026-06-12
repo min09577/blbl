@@ -1,11 +1,6 @@
 package blbl.cat3399.feature.player
 
 import android.app.AlertDialog
-import android.view.View
-import android.widget.LinearLayout
-import android.widget.RadioButton
-import android.widget.TextView
-import blbl.cat3399.R
 import blbl.cat3399.core.net.BiliClient
 import blbl.cat3399.core.ui.AppToast
 
@@ -16,18 +11,20 @@ import blbl.cat3399.core.ui.AppToast
 
 internal fun PlayerActivity.showAudioChannelDialog() {
     val currentChannel = BiliClient.prefs.audioChannelMode
-    
-    val options = listOf(
-        0 to "立体声 (Stereo)",
-        1 to "左声道 (Left)",
-        2 to "右声道 (Right)",
-        3 to "交换左右 (Swap L/R)"
-    )
-    
+
+    val options =
+        listOf(
+            0 to "立体声 (Stereo)",
+            1 to "左声道 (Left)",
+            2 to "右声道 (Right)",
+            3 to "交换左右 (Swap L/R)",
+        )
+
     val labels = options.map { it.second }.toTypedArray()
     val checked = options.indexOfFirst { it.first == currentChannel }
-    
-    AlertDialog.Builder(this)
+
+    AlertDialog
+        .Builder(this)
         .setTitle("音频声道")
         .setSingleChoiceItems(labels, checked) { dialog, which ->
             val selected = options[which].first
@@ -35,14 +32,13 @@ internal fun PlayerActivity.showAudioChannelDialog() {
             applyAudioChannel(selected)
             AppToast.show(this, "声道已切换: ${options[which].second}")
             dialog.dismiss()
-        }
-        .setNegativeButton("取消", null)
+        }.setNegativeButton("取消", null)
         .show()
 }
 
 private fun PlayerActivity.applyAudioChannel(mode: Int) {
     val engine = player ?: return
-    
+
     try {
         // Android MediaPlayer 音频声道控制
         // 通过 AudioAttributes 和 AudioFormat 设置

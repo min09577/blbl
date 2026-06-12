@@ -42,7 +42,11 @@ internal object PlayerCustomShortcutCatalog {
             PlayerCustomShortcutActionOption(PlayerCustomShortcutAction.TYPE_TOGGLE_SUBTITLES, "字幕 开/关", requiresValue = false),
             PlayerCustomShortcutActionOption(PlayerCustomShortcutAction.TYPE_TOGGLE_DANMAKU, "弹幕 开/关", requiresValue = false),
             PlayerCustomShortcutActionOption(PlayerCustomShortcutAction.TYPE_TOGGLE_DEBUG_OVERLAY, "调试信息 开/关", requiresValue = false),
-            PlayerCustomShortcutActionOption(PlayerCustomShortcutAction.TYPE_TOGGLE_PERSISTENT_BOTTOM_PROGRESS, "底部常驻进度条 开/关", requiresValue = false),
+            PlayerCustomShortcutActionOption(
+                PlayerCustomShortcutAction.TYPE_TOGGLE_PERSISTENT_BOTTOM_PROGRESS,
+                "底部常驻进度条 开/关",
+                requiresValue = false,
+            ),
             PlayerCustomShortcutActionOption(PlayerCustomShortcutAction.TYPE_SET_PLAYBACK_SPEED, "播放速度", requiresValue = true),
             PlayerCustomShortcutActionOption(PlayerCustomShortcutAction.TYPE_SET_RESOLUTION_QN, "分辨率", requiresValue = true),
             PlayerCustomShortcutActionOption(PlayerCustomShortcutAction.TYPE_SET_AUDIO_ID, "音轨", requiresValue = true),
@@ -62,8 +66,8 @@ internal object PlayerCustomShortcutCatalog {
 
     fun actionTitle(type: String): String = actionOptionsByType[type]?.label ?: type
 
-    fun createAction(type: String): PlayerCustomShortcutAction? {
-        return when (type) {
+    fun createAction(type: String): PlayerCustomShortcutAction? =
+        when (type) {
             PlayerCustomShortcutAction.TYPE_OPEN_COMMENTS -> PlayerCustomShortcutAction.OpenComments
             PlayerCustomShortcutAction.TYPE_OPEN_SETTINGS -> PlayerCustomShortcutAction.OpenSettings
             PlayerCustomShortcutAction.TYPE_SHOW_OSD -> PlayerCustomShortcutAction.ShowOsd
@@ -81,10 +85,9 @@ internal object PlayerCustomShortcutCatalog {
             PlayerCustomShortcutAction.TYPE_TOGGLE_PERSISTENT_BOTTOM_PROGRESS -> PlayerCustomShortcutAction.TogglePersistentBottomProgress
             else -> null
         }
-    }
 
-    fun actionLabel(action: PlayerCustomShortcutAction): String {
-        return when (action) {
+    fun actionLabel(action: PlayerCustomShortcutAction): String =
+        when (action) {
             is PlayerCustomShortcutAction.OpenVideoList -> "打开视频列表：${openVideoListTargetText(action.target)}"
             PlayerCustomShortcutAction.OpenComments -> "打开评论"
             PlayerCustomShortcutAction.OpenSettings -> "打开设置"
@@ -120,13 +123,12 @@ internal object PlayerCustomShortcutCatalog {
             is PlayerCustomShortcutAction.SetDanmakuSpeed -> "弹幕速度：${action.speedLevel}"
             is PlayerCustomShortcutAction.SetDanmakuArea -> "弹幕区域：${areaText(action.area)}"
         }
-    }
 
     fun valuePickerConfig(
         type: String,
         currentAction: PlayerCustomShortcutAction?,
-    ): PlayerCustomShortcutValuePickerConfig? {
-        return when (type) {
+    ): PlayerCustomShortcutValuePickerConfig? =
+        when (type) {
             PlayerCustomShortcutAction.TYPE_OPEN_VIDEO_LIST -> {
                 val options =
                     listOf(
@@ -154,7 +156,13 @@ internal object PlayerCustomShortcutCatalog {
                 val current = (currentAction as? PlayerCustomShortcutAction.SetPlaybackSpeed)?.speed
                 val checked = options.indices.minByOrNull { idx -> abs(options[idx] - (current ?: 1.0f)) } ?: 2
                 PlayerCustomShortcutValuePickerConfig(
-                    choices = options.map { PlayerCustomShortcutValueChoice(String.format(Locale.US, "%.2fx", it), PlayerCustomShortcutAction.SetPlaybackSpeed(speed = it)) },
+                    choices =
+                        options.map {
+                            PlayerCustomShortcutValueChoice(
+                                String.format(Locale.US, "%.2fx", it),
+                                PlayerCustomShortcutAction.SetPlaybackSpeed(speed = it),
+                            )
+                        },
                     checkedIndex = checked,
                 )
             }
@@ -164,7 +172,13 @@ internal object PlayerCustomShortcutCatalog {
                 val current = (currentAction as? PlayerCustomShortcutAction.SetResolutionQn)?.qn
                 val checked = options.indexOf(current).takeIf { it >= 0 } ?: 0
                 PlayerCustomShortcutValuePickerConfig(
-                    choices = options.map { PlayerCustomShortcutValueChoice(qnLabel(it), PlayerCustomShortcutAction.SetResolutionQn(qn = it)) },
+                    choices =
+                        options.map {
+                            PlayerCustomShortcutValueChoice(
+                                qnLabel(it),
+                                PlayerCustomShortcutAction.SetResolutionQn(qn = it),
+                            )
+                        },
                     checkedIndex = checked,
                 )
             }
@@ -174,7 +188,13 @@ internal object PlayerCustomShortcutCatalog {
                 val current = (currentAction as? PlayerCustomShortcutAction.SetAudioId)?.audioId
                 val checked = options.indexOf(current).takeIf { it >= 0 } ?: 0
                 PlayerCustomShortcutValuePickerConfig(
-                    choices = options.map { PlayerCustomShortcutValueChoice(audioLabel(it), PlayerCustomShortcutAction.SetAudioId(audioId = it)) },
+                    choices =
+                        options.map {
+                            PlayerCustomShortcutValueChoice(
+                                audioLabel(it),
+                                PlayerCustomShortcutAction.SetAudioId(audioId = it),
+                            )
+                        },
                     checkedIndex = checked,
                 )
             }
@@ -194,7 +214,13 @@ internal object PlayerCustomShortcutCatalog {
                 val current = (currentAction as? PlayerCustomShortcutAction.SetPlaybackMode)?.mode
                 val checked = options.indexOfFirst { it == current }.takeIf { it >= 0 } ?: 0
                 PlayerCustomShortcutValuePickerConfig(
-                    choices = options.map { PlayerCustomShortcutValueChoice(playbackModeText(it), PlayerCustomShortcutAction.SetPlaybackMode(mode = it)) },
+                    choices =
+                        options.map {
+                            PlayerCustomShortcutValueChoice(
+                                playbackModeText(it),
+                                PlayerCustomShortcutAction.SetPlaybackMode(mode = it),
+                            )
+                        },
                     checkedIndex = checked,
                 )
             }
@@ -232,7 +258,13 @@ internal object PlayerCustomShortcutCatalog {
                 val current = (currentAction as? PlayerCustomShortcutAction.SetSubtitleTextSize)?.textSizeSp
                 val checked = options.indices.minByOrNull { idx -> abs(options[idx].toFloat() - (current ?: 26f)) } ?: 0
                 PlayerCustomShortcutValuePickerConfig(
-                    choices = options.map { PlayerCustomShortcutValueChoice(it.toString(), PlayerCustomShortcutAction.SetSubtitleTextSize(textSizeSp = it.toFloat())) },
+                    choices =
+                        options.map {
+                            PlayerCustomShortcutValueChoice(
+                                it.toString(),
+                                PlayerCustomShortcutAction.SetSubtitleTextSize(textSizeSp = it.toFloat()),
+                            )
+                        },
                     checkedIndex = checked,
                 )
             }
@@ -242,7 +274,13 @@ internal object PlayerCustomShortcutCatalog {
                 val current = (currentAction as? PlayerCustomShortcutAction.SetDanmakuOpacity)?.opacity
                 val checked = options.indices.minByOrNull { idx -> abs(options[idx] - (current ?: 1f)) } ?: 0
                 PlayerCustomShortcutValuePickerConfig(
-                    choices = options.map { PlayerCustomShortcutValueChoice(String.format(Locale.US, "%.2f", it), PlayerCustomShortcutAction.SetDanmakuOpacity(opacity = it)) },
+                    choices =
+                        options.map {
+                            PlayerCustomShortcutValueChoice(
+                                String.format(Locale.US, "%.2f", it),
+                                PlayerCustomShortcutAction.SetDanmakuOpacity(opacity = it),
+                            )
+                        },
                     checkedIndex = checked,
                 )
             }
@@ -252,7 +290,13 @@ internal object PlayerCustomShortcutCatalog {
                 val current = (currentAction as? PlayerCustomShortcutAction.SetDanmakuTextSize)?.textSizeSp
                 val checked = options.indices.minByOrNull { idx -> abs(options[idx].toFloat() - (current ?: 18f)) } ?: 0
                 PlayerCustomShortcutValuePickerConfig(
-                    choices = options.map { PlayerCustomShortcutValueChoice(it.toString(), PlayerCustomShortcutAction.SetDanmakuTextSize(textSizeSp = it.toFloat())) },
+                    choices =
+                        options.map {
+                            PlayerCustomShortcutValueChoice(
+                                it.toString(),
+                                PlayerCustomShortcutAction.SetDanmakuTextSize(textSizeSp = it.toFloat()),
+                            )
+                        },
                     checkedIndex = checked,
                 )
             }
@@ -262,7 +306,13 @@ internal object PlayerCustomShortcutCatalog {
                 val current = (currentAction as? PlayerCustomShortcutAction.SetDanmakuSpeed)?.speedLevel
                 val checked = options.indexOf(current).takeIf { it >= 0 } ?: 0
                 PlayerCustomShortcutValuePickerConfig(
-                    choices = options.map { PlayerCustomShortcutValueChoice(it.toString(), PlayerCustomShortcutAction.SetDanmakuSpeed(speedLevel = it)) },
+                    choices =
+                        options.map {
+                            PlayerCustomShortcutValueChoice(
+                                it.toString(),
+                                PlayerCustomShortcutAction.SetDanmakuSpeed(speedLevel = it),
+                            )
+                        },
                     checkedIndex = checked,
                 )
             }
@@ -270,25 +320,31 @@ internal object PlayerCustomShortcutCatalog {
             PlayerCustomShortcutAction.TYPE_SET_DANMAKU_AREA -> {
                 val options = PlaybackSettingChoices.danmakuAreas
                 val current = (currentAction as? PlayerCustomShortcutAction.SetDanmakuArea)?.area
-                val checked = options.indices.minByOrNull { idx -> abs(options[idx].first - (current ?: AppPrefs.DANMAKU_AREA_DEFAULT)) } ?: options.lastIndex
+                val checked =
+                    options.indices.minByOrNull { idx -> abs(options[idx].first - (current ?: AppPrefs.DANMAKU_AREA_DEFAULT)) }
+                        ?: options.lastIndex
                 PlayerCustomShortcutValuePickerConfig(
-                    choices = options.map { PlayerCustomShortcutValueChoice(it.second, PlayerCustomShortcutAction.SetDanmakuArea(area = it.first)) },
+                    choices =
+                        options.map {
+                            PlayerCustomShortcutValueChoice(
+                                it.second,
+                                PlayerCustomShortcutAction.SetDanmakuArea(area = it.first),
+                            )
+                        },
                     checkedIndex = checked,
                 )
             }
 
             else -> null
-    }
-}
+        }
 
-private fun openVideoListTargetText(target: PlayerCustomShortcutOpenVideoListTarget): String {
-    return when (target) {
-        PlayerCustomShortcutOpenVideoListTarget.AUTO -> "自动"
-        PlayerCustomShortcutOpenVideoListTarget.PAGE -> "视频列表"
-        PlayerCustomShortcutOpenVideoListTarget.PARTS -> "合集/分P"
-        PlayerCustomShortcutOpenVideoListTarget.RECOMMEND -> "推荐"
-    }
-}
+    private fun openVideoListTargetText(target: PlayerCustomShortcutOpenVideoListTarget): String =
+        when (target) {
+            PlayerCustomShortcutOpenVideoListTarget.AUTO -> "自动"
+            PlayerCustomShortcutOpenVideoListTarget.PAGE -> "视频列表"
+            PlayerCustomShortcutOpenVideoListTarget.PARTS -> "合集/分P"
+            PlayerCustomShortcutOpenVideoListTarget.RECOMMEND -> "推荐"
+        }
 
     private fun playbackModeText(code: String): String = SettingsText.playbackModeText(code)
 }

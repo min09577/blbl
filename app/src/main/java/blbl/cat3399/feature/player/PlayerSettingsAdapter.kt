@@ -29,13 +29,19 @@ class PlayerSettingsAdapter(
         notifyItemRangeChanged(0, itemCount)
     }
 
-    fun submit(list: List<SettingItem>, onCommitted: (() -> Unit)? = null) {
+    fun submit(
+        list: List<SettingItem>,
+        onCommitted: (() -> Unit)? = null,
+    ) {
         submitList(list.toList()) {
             onCommitted?.invoke()
         }
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Vh {
+    override fun onCreateViewHolder(
+        parent: ViewGroup,
+        viewType: Int,
+    ): Vh {
         val binding =
             ItemPlayerSettingBinding.inflate(
                 LayoutInflater.from(parent.context).cloneInUserScale(parent.context),
@@ -45,11 +51,12 @@ class PlayerSettingsAdapter(
         return Vh(binding)
     }
 
-    override fun onBindViewHolder(holder: Vh, position: Int) = holder.bind(getItem(position), onClick)
+    override fun onBindViewHolder(
+        holder: Vh,
+        position: Int,
+    ) = holder.bind(getItem(position), onClick)
 
-    override fun getItemId(position: Int): Long {
-        return getItem(position).key.hashCode().toLong()
-    }
+    override fun getItemId(position: Int): Long = getItem(position).key.hashCode().toLong()
 
     fun indexOfTitle(title: String): Int {
         val index = currentList.indexOfFirst { it.title == title }
@@ -59,18 +66,25 @@ class PlayerSettingsAdapter(
     private companion object {
         private val DIFF =
             object : DiffUtil.ItemCallback<SettingItem>() {
-                override fun areItemsTheSame(oldItem: SettingItem, newItem: SettingItem): Boolean {
-                    return oldItem.key == newItem.key
-                }
+                override fun areItemsTheSame(
+                    oldItem: SettingItem,
+                    newItem: SettingItem,
+                ): Boolean = oldItem.key == newItem.key
 
-                override fun areContentsTheSame(oldItem: SettingItem, newItem: SettingItem): Boolean {
-                    return oldItem == newItem
-                }
+                override fun areContentsTheSame(
+                    oldItem: SettingItem,
+                    newItem: SettingItem,
+                ): Boolean = oldItem == newItem
             }
     }
 
-    class Vh(private val binding: ItemPlayerSettingBinding) : RecyclerView.ViewHolder(binding.root) {
-        fun bind(item: SettingItem, onClick: (SettingItem) -> Unit) {
+    class Vh(
+        private val binding: ItemPlayerSettingBinding,
+    ) : RecyclerView.ViewHolder(binding.root) {
+        fun bind(
+            item: SettingItem,
+            onClick: (SettingItem) -> Unit,
+        ) {
             binding.tvTitle.text = item.title
             binding.tvSubtitle.text = item.subtitle.orEmpty()
             binding.tvSubtitle.visibility = if (item.subtitle.isNullOrBlank()) View.GONE else View.VISIBLE

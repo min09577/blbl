@@ -11,14 +11,20 @@ package blbl.cat3399.testutil.json
 class TestJSONObject {
     private val values: MutableMap<String, Any?> = LinkedHashMap()
 
-    fun put(name: String, value: Any?): TestJSONObject {
+    fun put(
+        name: String,
+        value: Any?,
+    ): TestJSONObject {
         values[name] = value
         return this
     }
 
     fun optString(name: String): String = optString(name, "")
 
-    fun optString(name: String, fallback: String): String {
+    fun optString(
+        name: String,
+        fallback: String,
+    ): String {
         val v = values[name] ?: return fallback
         return when (v) {
             is String -> v
@@ -30,7 +36,10 @@ class TestJSONObject {
 
     fun optLong(name: String): Long = optLong(name, 0L)
 
-    fun optLong(name: String, fallback: Long): Long {
+    fun optLong(
+        name: String,
+        fallback: Long,
+    ): Long {
         val v = values[name] ?: return fallback
         return when (v) {
             is Number -> v.toLong()
@@ -42,7 +51,10 @@ class TestJSONObject {
 
     fun optInt(name: String): Int = optInt(name, 0)
 
-    fun optInt(name: String, fallback: Int): Int {
+    fun optInt(
+        name: String,
+        fallback: Int,
+    ): Int {
         val v = values[name] ?: return fallback
         return when (v) {
             is Number -> v.toInt()
@@ -54,7 +66,10 @@ class TestJSONObject {
 
     fun optBoolean(name: String): Boolean = optBoolean(name, false)
 
-    fun optBoolean(name: String, fallback: Boolean): Boolean {
+    fun optBoolean(
+        name: String,
+        fallback: Boolean,
+    ): Boolean {
         val v = values[name] ?: return fallback
         return when (v) {
             is Boolean -> v

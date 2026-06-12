@@ -6,8 +6,8 @@ import android.content.res.Configuration
 import android.view.LayoutInflater
 import androidx.appcompat.view.ContextThemeWrapper
 import blbl.cat3399.R
-import blbl.cat3399.core.theme.ThemePresets
 import blbl.cat3399.core.prefs.AppPrefs
+import blbl.cat3399.core.theme.ThemePresets
 import kotlin.math.abs
 import kotlin.math.roundToInt
 
@@ -105,6 +105,7 @@ object UiUserScale {
 
 fun Context.userScaledContext(scale: Float = UiScale.factor(this)): Context = UiUserScale.wrap(this, scale)
 
-fun LayoutInflater.cloneInUserScale(context: Context, scale: Float = UiScale.factor(context)): LayoutInflater {
-    return cloneInContext(UiUserScale.wrap(context, scale))
-}
+fun LayoutInflater.cloneInUserScale(
+    context: Context,
+    scale: Float = UiScale.factor(context),
+): LayoutInflater = cloneInContext(UiUserScale.wrap(context, scale))

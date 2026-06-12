@@ -60,7 +60,10 @@ internal fun PlayerActivity.initCommentImageViewer() {
 
 internal fun PlayerActivity.isCommentImageViewerVisible(): Boolean = binding.commentImageViewer.visibility == View.VISIBLE
 
-internal fun PlayerActivity.openCommentImageViewer(urls: List<String>, startIndex: Int = 0) {
+internal fun PlayerActivity.openCommentImageViewer(
+    urls: List<String>,
+    startIndex: Int = 0,
+) {
     val safeUrls = urls.map { it.trim() }.filter { it.isNotBlank() }
     if (safeUrls.isEmpty()) return
 
@@ -222,20 +225,25 @@ private fun PlayerActivity.saveCommentImage(url: String) {
         val context = this
         val fileName = "blbl_comment_${System.currentTimeMillis()}.jpg"
         val resolver = context.contentResolver
-        val contentValues = android.content.ContentValues().apply {
-            put(android.provider.MediaStore.Images.Media.DISPLAY_NAME, fileName)
-            put(android.provider.MediaStore.Images.Media.MIME_TYPE, "image/jpeg")
-            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.Q) {
-                put(android.provider.MediaStore.Images.Media.RELATIVE_PATH, "Pictures/blbl")
-                put(android.provider.MediaStore.Images.Media.IS_PENDING, 1)
+        val contentValues =
+            android.content.ContentValues().apply {
+                put(android.provider.MediaStore.Images.Media.DISPLAY_NAME, fileName)
+                put(android.provider.MediaStore.Images.Media.MIME_TYPE, "image/jpeg")
+                if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.Q) {
+                    put(android.provider.MediaStore.Images.Media.RELATIVE_PATH, "Pictures/blbl")
+                    put(android.provider.MediaStore.Images.Media.IS_PENDING, 1)
+                }
             }
-        }
         val uri = resolver.insert(android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI, contentValues)
         if (uri != null) {
             CoroutineScope(Dispatchers.IO).launch {
                 try {
                     val client = okhttp3.OkHttpClient()
-                    val request = okhttp3.Request.Builder().url(url).build()
+                    val request =
+                        okhttp3.Request
+                            .Builder()
+                            .url(url)
+                            .build()
                     val response = client.newCall(request).execute()
                     response.body?.byteStream()?.use { input ->
                         resolver.openOutputStream(uri)?.use { output ->
@@ -248,16 +256,19 @@ private fun PlayerActivity.saveCommentImage(url: String) {
                         resolver.update(uri, contentValues, null, null)
                     }
                     kotlinx.coroutines.withContext(kotlinx.coroutines.Dispatchers.Main) {
-                        blbl.cat3399.core.ui.AppToast.show(context, "图片已保存到 Pictures/blbl")
+                        blbl.cat3399.core.ui.AppToast
+                            .show(context, "图片已保存到 Pictures/blbl")
                     }
                 } catch (t: Throwable) {
                     kotlinx.coroutines.withContext(kotlinx.coroutines.Dispatchers.Main) {
-                        blbl.cat3399.core.ui.AppToast.show(context, "保存失败：${t.message}")
+                        blbl.cat3399.core.ui.AppToast
+                            .show(context, "保存失败：${t.message}")
                     }
                 }
             }
         }
     } catch (t: Throwable) {
-        blbl.cat3399.core.ui.AppToast.show(this, "保存失败：${t.message}")
+        blbl.cat3399.core.ui.AppToast
+            .show(this, "保存失败：${t.message}")
     }
 }

@@ -17,11 +17,11 @@ import blbl.cat3399.core.ui.AppToast
 import blbl.cat3399.core.ui.BackButtonSizingHelper
 import blbl.cat3399.core.ui.DpadGridController
 import blbl.cat3399.core.ui.FocusTreeUtils
-import blbl.cat3399.core.ui.GridViewportFillMonitor
 import blbl.cat3399.core.ui.GridSpanPolicy
+import blbl.cat3399.core.ui.GridViewportFillMonitor
 import blbl.cat3399.core.ui.UiScale
-import blbl.cat3399.core.ui.postIfAlive
 import blbl.cat3399.core.ui.installGridViewportFillMonitor
+import blbl.cat3399.core.ui.postIfAlive
 import blbl.cat3399.databinding.FragmentLiveAreaDetailBinding
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.launch
@@ -50,12 +50,19 @@ class LiveAreaDetailFragment : Fragment() {
     private var dpadGridController: DpadGridController? = null
     private var viewportFillMonitor: GridViewportFillMonitor? = null
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?,
+    ): View {
         _binding = FragmentLiveAreaDetailBinding.inflate(inflater, container, false)
         return binding.root
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+    override fun onViewCreated(
+        view: View,
+        savedInstanceState: Bundle?,
+    ) {
         binding.btnBack.setOnClickListener { parentFragmentManager.popBackStack() }
         binding.tvTitle.text =
             when {
@@ -96,7 +103,11 @@ class LiveAreaDetailFragment : Fragment() {
         binding.recycler.clearOnScrollListeners()
         binding.recycler.addOnScrollListener(
             object : RecyclerView.OnScrollListener() {
-                override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
+                override fun onScrolled(
+                    recyclerView: RecyclerView,
+                    dx: Int,
+                    dy: Int,
+                ) {
                     if (dy <= 0) return
                     if (isLoadingMore || endReached) return
                     val lm = recyclerView.layoutManager as? GridLayoutManager ?: return
@@ -207,7 +218,12 @@ class LiveAreaDetailFragment : Fragment() {
         private const val ARG_AREA_ID = "area_id"
         private const val ARG_AREA_TITLE = "area_title"
 
-        fun newInstance(parentAreaId: Int, parentTitle: String, areaId: Int, areaTitle: String): LiveAreaDetailFragment =
+        fun newInstance(
+            parentAreaId: Int,
+            parentTitle: String,
+            areaId: Int,
+            areaTitle: String,
+        ): LiveAreaDetailFragment =
             LiveAreaDetailFragment().apply {
                 arguments =
                     Bundle().apply {
@@ -328,7 +344,10 @@ class LiveAreaDetailFragment : Fragment() {
                 restoreFocusIfNeeded()
                 maybeFocusFirstItem()
                 page++
-                AppLog.i("LiveAreaDetail", "load ok pid=$parentAreaId aid=$areaId page=${page - 1} add=${filtered.size} total=${adapter.itemCount} cost=${SystemClock.uptimeMillis() - startAt}ms")
+                AppLog.i(
+                    "LiveAreaDetail",
+                    "load ok pid=$parentAreaId aid=$areaId page=${page - 1} add=${filtered.size} total=${adapter.itemCount} cost=${SystemClock.uptimeMillis() - startAt}ms",
+                )
             } catch (t: Throwable) {
                 if (t is CancellationException) throw t
                 AppLog.e("LiveAreaDetail", "load failed pid=$parentAreaId aid=$areaId page=$page", t)
@@ -361,7 +380,11 @@ class LiveAreaDetailFragment : Fragment() {
         if (pos == null) {
             // The room no longer exists in this list (data changed). Give up and clear.
             clearPendingRestore()
-            b.recycler.findViewHolderForAdapterPosition(0)?.itemView?.requestFocus() == true || b.btnBack.requestFocus()
+            b.recycler
+                .findViewHolderForAdapterPosition(0)
+                ?.itemView
+                ?.requestFocus() == true ||
+                b.btnBack.requestFocus()
             return
         }
 
@@ -371,22 +394,28 @@ class LiveAreaDetailFragment : Fragment() {
         val isUiAlive = { _binding === b && isResumed }
 
         recycler.postIfAlive(isAlive = isUiAlive) outer@{
-            val resolved = resolvePendingRestorePosition(itemCount = adapter.itemCount) ?: run {
-                clearPendingRestore()
-                return@outer
-            }
+            val resolved =
+                resolvePendingRestorePosition(itemCount = adapter.itemCount) ?: run {
+                    clearPendingRestore()
+                    return@outer
+                }
             recycler.scrollToPosition(resolved)
             recycler.postIfAlive(isAlive = isUiAlive) inner@{
-                val resolved2 = resolvePendingRestorePosition(itemCount = adapter.itemCount) ?: run {
-                    clearPendingRestore()
-                    return@inner
-                }
+                val resolved2 =
+                    resolvePendingRestorePosition(itemCount = adapter.itemCount) ?: run {
+                        clearPendingRestore()
+                        return@inner
+                    }
                 tryRestoreFocusAtPosition(recycler = recycler, pos = resolved2, attemptsLeft = 12)
             }
         }
     }
 
-    private fun tryRestoreFocusAtPosition(recycler: RecyclerView, pos: Int, attemptsLeft: Int) {
+    private fun tryRestoreFocusAtPosition(
+        recycler: RecyclerView,
+        pos: Int,
+        attemptsLeft: Int,
+    ) {
         val b = _binding ?: return
         if (!isAdded || !isResumed) return
         if (pendingRestoreRoomId == null) return
@@ -448,5 +477,4 @@ class LiveAreaDetailFragment : Fragment() {
             }
         }
     }
-
 }

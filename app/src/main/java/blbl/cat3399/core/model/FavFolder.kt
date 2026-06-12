@@ -6,4 +6,3 @@ data class FavFolder(
     val coverUrl: String?,
     val mediaCount: Int,
 )
-

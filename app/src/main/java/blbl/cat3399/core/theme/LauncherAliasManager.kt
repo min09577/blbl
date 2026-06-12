@@ -11,5 +11,8 @@ object LauncherAliasManager {
     fun sync(context: Context) = Unit
 
     @Suppress("UNUSED_PARAMETER")
-    fun sync(context: Context, preset: String) = Unit
+    fun sync(
+        context: Context,
+        preset: String,
+    ) = Unit
 }

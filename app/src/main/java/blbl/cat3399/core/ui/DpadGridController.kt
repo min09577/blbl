@@ -190,7 +190,7 @@ internal class DpadGridController(
         object : RecyclerView.OnChildAttachStateChangeListener {
             override fun onChildViewAttachedToWindow(view: View) {
                 if (config.enableCenterLongPressToLongClick) {
-                view.setTag(R.id.tag_long_press_handled, false)
+                    view.setTag(R.id.tag_long_press_handled, false)
                 }
                 view.setOnKeyListener { v, keyCode, event ->
                     if (!installed) return@setOnKeyListener false
@@ -402,7 +402,11 @@ internal class DpadGridController(
         return true
     }
 
-    private fun handleCenterLongPress(v: View, keyCode: Int, event: KeyEvent): Boolean {
+    private fun handleCenterLongPress(
+        v: View,
+        keyCode: Int,
+        event: KeyEvent,
+    ): Boolean {
         if (
             keyCode != KeyEvent.KEYCODE_DPAD_CENTER &&
             keyCode != KeyEvent.KEYCODE_ENTER &&
@@ -654,7 +658,10 @@ internal class DpadGridController(
         return true
     }
 
-    private fun handleDpadDown(itemView: View, position: Int): Boolean {
+    private fun handleDpadDown(
+        itemView: View,
+        position: Int,
+    ): Boolean {
         val rootItem = recyclerView.findContainingItemView(itemView) ?: itemView
         val next = FocusFinder.getInstance().findNextFocus(recyclerView, rootItem, View.FOCUS_DOWN)
         if (next != null && FocusTreeUtils.isDescendantOf(next, recyclerView)) {
@@ -892,7 +899,11 @@ internal class DpadGridController(
         return scrollAndFocusAdapterPosition(position, smooth = true)
     }
 
-    private fun scrollAndFocusAdapterPosition(position: Int, smooth: Boolean, onFocused: (() -> Unit)? = null): Boolean {
+    private fun scrollAndFocusAdapterPosition(
+        position: Int,
+        smooth: Boolean,
+        onFocused: (() -> Unit)? = null,
+    ): Boolean {
         val adapter = recyclerView.adapter
         if (adapter == null) {
             maybeAbortPendingLoadMoreFocusRetry(position)
@@ -918,7 +929,11 @@ internal class DpadGridController(
         return true
     }
 
-    private fun retryFocusAdapterPosition(position: Int, attemptsLeft: Int, onFocused: (() -> Unit)? = null) {
+    private fun retryFocusAdapterPosition(
+        position: Int,
+        attemptsLeft: Int,
+        onFocused: (() -> Unit)? = null,
+    ) {
         if (!isAliveForFocusJump()) {
             maybeAbortPendingLoadMoreFocusRetry(position)
             return

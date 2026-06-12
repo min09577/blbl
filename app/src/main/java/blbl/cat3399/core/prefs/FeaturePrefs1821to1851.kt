@@ -1,9 +1,10 @@
 package blbl.cat3399.core.prefs
 
 import android.content.Context
-import android.content.SharedPreferences
 
-class FeaturePrefs1821(context: Context) {
+class FeaturePrefs1821(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1821", Context.MODE_PRIVATE)
 
     var v1821arranged: Boolean
@@ -605,11 +606,11 @@ class FeaturePrefs1821(context: Context) {
     var v1830banded: Boolean
         get() = prefs.getBoolean("v1830banded", false)
         set(value) = prefs.edit().putBoolean("v1830banded", value).apply()
-
 }
 
-
-class FeaturePrefs1831(context: Context) {
+class FeaturePrefs1831(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1831", Context.MODE_PRIVATE)
 
     var v1831banned: Boolean
@@ -1211,11 +1212,11 @@ class FeaturePrefs1831(context: Context) {
     var v1840blinding: Boolean
         get() = prefs.getBoolean("v1840blinding", false)
         set(value) = prefs.edit().putBoolean("v1840blinding", value).apply()
-
 }
 
-
-class FeaturePrefs1841(context: Context) {
+class FeaturePrefs1841(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1841", Context.MODE_PRIVATE)
 
     var v1841blocking: Boolean
@@ -1817,11 +1818,11 @@ class FeaturePrefs1841(context: Context) {
     var v1850broadcasting: Boolean
         get() = prefs.getBoolean("v1850broadcasting", false)
         set(value) = prefs.edit().putBoolean("v1850broadcasting", value).apply()
-
 }
 
-
-class FeaturePrefs1851(context: Context) {
+class FeaturePrefs1851(
+    context: Context,
+) {
     private val prefs = context.getSharedPreferences("feature_prefs_1851", Context.MODE_PRIVATE)
 
     var v1851broadening: Boolean
@@ -2423,7 +2424,4 @@ class FeaturePrefs1851(context: Context) {
     var v1860captured: Boolean
         get() = prefs.getBoolean("v1860captured", false)
         set(value) = prefs.edit().putBoolean("v1860captured", value).apply()
-
 }
-
-

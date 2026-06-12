@@ -6,7 +6,10 @@ package blbl.cat3399.feature.player
  */
 class PlayerActivityRotationLock {
     fun lockRotation(degrees: Int) {}
+
     fun unlockRotation() {}
+
     fun isRotationLocked(): Boolean = false
+
     fun getLockedRotation(): Int = 0
 }

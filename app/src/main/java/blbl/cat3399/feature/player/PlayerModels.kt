@@ -2,9 +2,9 @@ package blbl.cat3399.feature.player
 
 import blbl.cat3399.core.api.video.VideoMediaRequestProfile
 import blbl.cat3399.core.prefs.AppPrefs
-import blbl.cat3399.feature.player.danmaku.DanmakuSessionSettings
 import blbl.cat3399.feature.player.danmaku.DanmakuFontWeight
 import blbl.cat3399.feature.player.danmaku.DanmakuLaneDensity
+import blbl.cat3399.feature.player.danmaku.DanmakuSessionSettings
 import blbl.cat3399.feature.player.engine.PlayerEngineKind
 import org.json.JSONObject
 
@@ -189,15 +189,19 @@ internal fun PlayerSessionSettings.toEngineSwitchJsonString(): String {
 internal fun PlayerSessionSettings.restoreFromEngineSwitchJsonString(raw: String): PlayerSessionSettings {
     val obj = runCatching { JSONObject(raw) }.getOrNull() ?: return this
 
-    fun optFloat(key: String, fallback: Float): Float {
+    fun optFloat(
+        key: String,
+        fallback: Float,
+    ): Float {
         val v = obj.optDouble(key, fallback.toDouble()).toFloat()
         if (!v.isFinite()) return fallback
         return v
     }
 
-    fun optInt(key: String, fallback: Int): Int {
-        return obj.optInt(key, fallback)
-    }
+    fun optInt(
+        key: String,
+        fallback: Int,
+    ): Int = obj.optInt(key, fallback)
 
     fun optStringOrNull(key: String): String? {
         if (obj.isNull(key)) return null
@@ -205,14 +209,13 @@ internal fun PlayerSessionSettings.restoreFromEngineSwitchJsonString(raw: String
         return v.takeIf { it.isNotBlank() }
     }
 
-    fun normalizeDanmakuStrokeWidthPx(value: Int): Int {
-        return when {
+    fun normalizeDanmakuStrokeWidthPx(value: Int): Int =
+        when {
             value <= 1 -> 0
             value <= 3 -> 2
             value <= 5 -> 4
             else -> 6
         }
-    }
 
     val speed = optFloat("playbackSpeed", playbackSpeed).coerceIn(0.25f, 4.0f)
     val codec = obj.optString("preferCodec", preferCodec).trim().ifBlank { preferCodec }

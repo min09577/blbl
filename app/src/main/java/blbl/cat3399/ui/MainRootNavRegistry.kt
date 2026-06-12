@@ -5,8 +5,8 @@ import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
 import androidx.fragment.app.Fragment
 import blbl.cat3399.R
-import blbl.cat3399.core.prefs.AppPrefs
 import blbl.cat3399.core.net.BiliClient
+import blbl.cat3399.core.prefs.AppPrefs
 import blbl.cat3399.feature.category.CategoryFragment
 import blbl.cat3399.feature.custom.CustomPageFragment
 import blbl.cat3399.feature.custom.CustomPageTabRegistry
@@ -111,26 +111,27 @@ object MainRootNavRegistry {
 
     fun enabledStartupSpecs(): List<RootNavSpec> = enabledSpecs().filter { it.startupPageKey != null }
 
-    fun sidebarItems(context: Context): List<SidebarNavAdapter.NavItem> {
-        return enabledSpecs().map { spec ->
+    fun sidebarItems(context: Context): List<SidebarNavAdapter.NavItem> =
+        enabledSpecs().map { spec ->
             SidebarNavAdapter.NavItem(
                 id = spec.navId,
                 title = context.getString(spec.titleRes),
                 iconRes = spec.iconRes,
             )
         }
-    }
 
-    fun resolveLaunchNavId(startupPageKey: String): Int {
-        return enabledStartupSpecs().firstOrNull { it.startupPageKey == startupPageKey }?.navId
+    fun resolveLaunchNavId(startupPageKey: String): Int =
+        enabledStartupSpecs().firstOrNull { it.startupPageKey == startupPageKey }?.navId
             ?: SidebarNavAdapter.ID_HOME
-    }
 
-    fun startupTitle(context: Context, startupPageKey: String): String {
-        return startupSpecs().firstOrNull { it.startupPageKey == startupPageKey }
+    fun startupTitle(
+        context: Context,
+        startupPageKey: String,
+    ): String =
+        startupSpecs()
+            .firstOrNull { it.startupPageKey == startupPageKey }
             ?.let { context.getString(it.titleRes) }
             ?: context.getString(R.string.tab_recommend)
-    }
 
     fun specForNavId(navId: Int): RootNavSpec? = specs.firstOrNull { it.navId == navId }
 
