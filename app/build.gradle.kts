@@ -166,6 +166,10 @@ val generateProto by tasks.registering {
             resolved.find { it.moduleVersion.id.name == "protoc-gen-grpc-java" }?.file
                 ?: error("protoc-gen-grpc-java artifact not found in protobufTools configuration")
 
+        // Ensure binaries are executable (required on Linux/macOS CI)
+        protocExe.setExecutable(true)
+        grpcPluginExe.setExecutable(true)
+
         // protoc from Maven lacks the include/ directory; download full distribution from GitHub
         val protoIncludeDir =
             layout.buildDirectory
