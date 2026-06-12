@@ -28,6 +28,17 @@ jobs:
           cache: "gradle"
       - name: Grant execute permission for gradlew
         run: chmod +x ./gradlew
+      - name: CI Gradle tuning (limit heap for 7GB runner)
+        run: |
+          cat >> gradle.properties << 'EOF'
+          # CI overrides: GitHub Actions ubuntu-latest has 7GB RAM, 2 cores
+          org.gradle.jvmargs=-Xmx3g -XX:+UseG1GC -XX:MaxGCPauseMillis=200 -Dfile.encoding=UTF-8
+          kotlin.daemon.jvmargs=-Xmx2g -XX:+UseG1GC
+          org.gradle.workers.max=2
+          org.gradle.parallel=true
+          EOF
+          echo "=== Effective gradle.properties (last lines) ==="
+          tail -20 gradle.properties
       - name: Mark API19 app label
         run: |
           set -euo pipefail
@@ -41,7 +52,7 @@ jobs:
           RELEASE_STORE_PASSWORD: ${{ secrets.RELEASE_STORE_PASSWORD }}
           RELEASE_KEY_ALIAS: ${{ secrets.RELEASE_KEY_ALIAS }}
           RELEASE_KEY_PASSWORD: ${{ secrets.RELEASE_KEY_PASSWORD }}
-        run: ./gradlew :app:assembleKitkatRelease -PversionName=${{ inputs.version_name }} -PversionCode=${{ github.run_number }}
+        run: ./gradlew :app:assembleKitkatRelease -PversionName=${{ inputs.version_name }} -PversionCode=${{ github.run_number }} --no-daemon
       - name: Upload API19 release APK to R2 (optional)
         env:
           R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
