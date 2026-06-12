@@ -722,7 +722,7 @@ class SearchRenderer internal constructor(
         val recycler = binding.recyclerResults
         val isUiAlive = { !released && fragment.isAdded && fragment.isResumed }
         val targetPosition = resolvePendingResultFocusTarget(itemCount = adapter.itemCount)
-        if (focusInRecycler && focused != null && focused != recycler) {
+        if (focusInRecycler && focused != recycler) {
             val holder = recycler.findContainingViewHolder(focused)
             val currentPosition = holder?.bindingAdapterPosition?.takeIf { it != RecyclerView.NO_POSITION }
             if (!state.pendingFocusResultCardFromContentSwitch || currentPosition == targetPosition) {

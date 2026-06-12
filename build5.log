@@ -1,0 +1,31 @@
+Starting a Gradle Daemon, 10 stopped Daemons could not be reused, use --status for details
+Configuration on demand is an incubating feature.
+> Task :app:clean
+> Task :app:checkThemeTokens
+
+> Task :app:generateProto
+protoc: generated 290 Java files from 11 proto sources
+
+> Task :app:preBuild
+> Task :app:preDebugBuild
+> Task :app:dataBindingMergeDependencyArtifactsDebug
+> Task :app:generateDebugResources FROM-CACHE
+> Task :app:mergeDebugResources FROM-CACHE
+> Task :app:packageDebugResources FROM-CACHE
+> Task :app:processDebugNavigationResources FROM-CACHE
+> Task :app:parseDebugLocalResources FROM-CACHE
+> Task :app:dataBindingGenBaseClassesDebug FROM-CACHE
+> Task :app:generateDebugBuildConfig FROM-CACHE
+> Task :app:generateDebugRFile FROM-CACHE
+> Task :app:compileDebugKotlin FROM-CACHE
+
+[Incubating] Problems report is available at: file:///C:/Users/Min/.qclaw/workspace-agent-279f079a/blbl/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.1.0/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 1m 32s
+13 actionable tasks: 4 executed, 9 from cache

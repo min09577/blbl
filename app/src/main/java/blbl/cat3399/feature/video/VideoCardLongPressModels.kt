@@ -35,7 +35,7 @@ enum class VideoCardQuickActionId {
 
 data class VideoCardQuickAction(
     val id: VideoCardQuickActionId,
-    @DrawableRes val iconResId: Int,
+    @field:DrawableRes val iconResId: Int,
     val contentDescription: CharSequence,
 ) {
     companion object {

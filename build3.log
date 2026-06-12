@@ -1,0 +1,75 @@
+Starting a Gradle Daemon, 6 stopped Daemons could not be reused, use --status for details
+Configuration on demand is an incubating feature.
+Checking the license for package Android SDK Build-Tools 36 in C:\Users\Min\AppData\Local\Android\Sdk\licenses
+License for package Android SDK Build-Tools 36 accepted.
+Preparing "Install Android SDK Build-Tools 36 v.36.0.0".
+"Install Android SDK Build-Tools 36 v.36.0.0" ready.
+Installing Android SDK Build-Tools 36 in C:\Users\Min\AppData\Local\Android\Sdk\build-tools\36.0.0
+"Install Android SDK Build-Tools 36 v.36.0.0" complete.
+"Install Android SDK Build-Tools 36 v.36.0.0" finished.
+[=========                              ] 25%                                   > Task :app:clean
+> Task :app:checkThemeTokens
+> Task :app:preBuild
+> Task :app:preDebugBuild
+> Task :app:dataBindingMergeDependencyArtifactsDebug
+> Task :app:generateDebugResources
+> Task :app:mergeDebugResources
+> Task :app:packageDebugResources
+> Task :app:processDebugNavigationResources
+> Task :app:generateDebugBuildConfig
+> Task :app:parseDebugLocalResources
+> Task :app:dataBindingGenBaseClassesDebug
+> Task :app:generateDebugRFile
+> Task :app:compileDebugKotlin
+w: file:///C:/Users/Min/.qclaw/workspace-agent-279f079a/blbl/app/src/main/java/blbl/cat3399/core/prefs/AppConfigBackup.kt:38:29 Non-public primary constructor is exposed via the generated 'copy()' method of the 'data' class.
+
+The generated 'copy()' will change its visibility in future releases.
+
+To suppress the warning do one of the following:
+- Annotate the data class with the '@ConsistentCopyVisibility' annotation.
+- Use the '-Xconsistent-data-class-copy-visibility' compiler flag.
+- Annotate the data class with the '@ExposedCopyVisibility' annotation 
+  (Discouraged, but can be used to keep binary compatibility).
+
+To learn more, see the documentation of the '@ConsistentCopyVisibility' and '@ExposedCopyVisibility' annotations.
+
+This will become an error in language version 2.3.
+w: file:///C:/Users/Min/.qclaw/workspace-agent-279f079a/blbl/app/src/main/java/blbl/cat3399/feature/home/HomePagerAdapter.kt:12:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to field.
+- To opt in to applying to both value parameter and field, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///C:/Users/Min/.qclaw/workspace-agent-279f079a/blbl/app/src/main/java/blbl/cat3399/feature/my/MyPagerAdapter.kt:11:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to field.
+- To opt in to applying to both value parameter and field, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///C:/Users/Min/.qclaw/workspace-agent-279f079a/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerActivity.kt:2188:18 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+w: file:///C:/Users/Min/.qclaw/workspace-agent-279f079a/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerActivity.kt:2190:19 'fun onBackPressed(): Unit' is deprecated. Deprecated in Java.
+w: file:///C:/Users/Min/.qclaw/workspace-agent-279f079a/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerActivity.kt:2197:23 'fun onBackPressed(): Unit' is deprecated. Deprecated in Java.
+w: file:///C:/Users/Min/.qclaw/workspace-agent-279f079a/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerActivity.kt:2200:19 'fun onBackPressed(): Unit' is deprecated. Deprecated in Java.
+w: file:///C:/Users/Min/.qclaw/workspace-agent-279f079a/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerActivity.kt:4323:80 'static field VIBRATOR_SERVICE: String' is deprecated. Deprecated in Java.
+w: file:///C:/Users/Min/.qclaw/workspace-agent-279f079a/blbl/app/src/main/java/blbl/cat3399/feature/player/PlayerActivityScreenshot.kt:138:14 'var isDrawingCacheEnabled: Boolean' is deprecated. Deprecated in Java.
+w: file:///C:/Users/Min/.qclaw/workspace-agent-279f079a/blbl/app/src/main/java/blbl/cat3399/feature/search/SearchRenderer.kt:713:32 Condition is always 'true'.
+w: file:///C:/Users/Min/.qclaw/workspace-agent-279f079a/blbl/app/src/main/java/blbl/cat3399/feature/settings/SettingsInteractionHandler.kt:1964:13 Duplicate branch condition in 'when'.
+w: file:///C:/Users/Min/.qclaw/workspace-agent-279f079a/blbl/app/src/main/java/blbl/cat3399/feature/settings/SettingsInteractionHandler.kt:2002:13 Duplicate branch condition in 'when'.
+w: file:///C:/Users/Min/.qclaw/workspace-agent-279f079a/blbl/app/src/main/java/blbl/cat3399/feature/settings/SettingsInteractionHandler.kt:2016:13 Duplicate branch condition in 'when'.
+w: file:///C:/Users/Min/.qclaw/workspace-agent-279f079a/blbl/app/src/main/java/blbl/cat3399/feature/video/VideoCardLongPressModels.kt:44:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to field.
+- To opt in to applying to both value parameter and field, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///C:/Users/Min/.qclaw/workspace-agent-279f079a/blbl/app/src/main/java/blbl/cat3399/ui/MainRootNavRegistry.kt:22:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to field.
+- To opt in to applying to both value parameter and field, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///C:/Users/Min/.qclaw/workspace-agent-279f079a/blbl/app/src/main/java/blbl/cat3399/ui/MainRootNavRegistry.kt:23:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to field.
+- To opt in to applying to both value parameter and field, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+
+BUILD SUCCESSFUL in 6m
+12 actionable tasks: 12 executed
+Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.1.0/userguide/configuration_cache_enabling.html

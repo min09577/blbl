@@ -1,0 +1,74 @@
+Starting a Gradle Daemon, 11 stopped Daemons could not be reused, use --status for details
+Configuration on demand is an incubating feature.
+> Task :app:clean
+> Task :app:checkThemeTokens
+
+> Task :app:generateProto
+protoc: generated 290 Java files from 11 proto sources
+
+> Task :app:preBuild
+> Task :app:preDebugBuild
+> Task :app:dataBindingMergeDependencyArtifactsDebug
+> Task :app:generateDebugResources FROM-CACHE
+> Task :app:mergeDebugResources FROM-CACHE
+> Task :app:packageDebugResources FROM-CACHE
+> Task :app:processDebugNavigationResources FROM-CACHE
+> Task :app:parseDebugLocalResources FROM-CACHE
+> Task :app:dataBindingGenBaseClassesDebug FROM-CACHE
+> Task :app:generateDebugBuildConfig FROM-CACHE
+> Task :app:generateDebugRFile FROM-CACHE
+> Task :app:compileDebugKotlin FROM-CACHE
+> Task :app:javaPreCompileDebug FROM-CACHE
+> Task :app:compileDebugJavaWithJavac FROM-CACHE
+> Task :app:compileDebugNavigationResources FROM-CACHE
+> Task :app:mapDebugSourceSetPaths
+> Task :app:checkDebugAarMetadata
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug FROM-CACHE
+> Task :app:processDebugMainManifest FROM-CACHE
+> Task :app:processDebugManifest FROM-CACHE
+> Task :app:processDebugManifestForPackage FROM-CACHE
+> Task :app:processDebugResources FROM-CACHE
+> Task :app:preDebugUnitTestBuild
+> Task :app:javaPreCompileDebugUnitTest FROM-CACHE
+> Task :app:processDebugJavaRes
+> Task :app:bundleDebugClassesToRuntimeJar
+> Task :app:bundleDebugClassesToCompileJar
+> Task :app:compileDebugUnitTestKotlin FROM-CACHE
+> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:processDebugUnitTestJavaRes
+
+> Task :app:testDebugUnitTest
+
+FeaturePrefsIntegrityTest > accessor_declaresAllBatches FAILED
+    java.lang.AssertionError at FeaturePrefsIntegrityTest.kt:67
+
+FeaturePrefsIntegrityTest > allBatches_haveCorrectTypeCounts FAILED
+    java.lang.AssertionError at FeaturePrefsIntegrityTest.kt:23
+
+PlayerAutoNextTitleTest > truncatesTitlesToTwelveCharactersBeforeEllipsis FAILED
+    org.junit.ComparisonFailure at PlayerAutoNextTitleTest.kt:14
+
+48 tests completed, 3 failed
+
+> Task :app:testDebugUnitTest FAILED
+
+[Incubating] Problems report is available at: file:///C:/Users/Min/.qclaw/workspace-agent-279f079a/blbl/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:testDebugUnitTest'.
+> There were failing tests. See the report at: file:///C:/Users/Min/.qclaw/workspace-agent-279f079a/blbl/app/build/reports/tests/testDebugUnitTest/index.html
+
+* Try:
+> Run with --scan to generate a Build Scan (Powered by Develocity).
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.1.0/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 1m 36s
+31 actionable tasks: 12 executed, 19 from cache
