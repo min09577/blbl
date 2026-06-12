@@ -6,16 +6,17 @@ import org.junit.Test
 class PlayerAutoNextTitleTest {
     @Test
     fun keepsShortTitlesAfterWhitespaceNormalization() {
-        assertEquals("第12话", formatAutoNextHintTitle("  第12话  ", fallbackTitle = "推荐视频"))
+        assertEquals("\u7B2C2\u8BDD", formatAutoNextHintTitle("  \u7B2C2\u8BDD ", fallbackTitle = "\u63A8\u8350\u89C6\u9891"))
     }
 
     @Test
-    fun truncatesTitlesToTwelveCharactersBeforeEllipsis() {
-        assertEquals("123456789012...", formatAutoNextHintTitle("12345678901234567890", fallbackTitle = "推荐视频"))
+    fun truncatesTitlesToEighteenCharactersBeforeEllipsis() {
+        // AUTO_NEXT_TITLE_MAX_CHARS = 18: first 18 chars + "..."
+        assertEquals("123456789012345678...", formatAutoNextHintTitle("12345678901234567890", fallbackTitle = "\u63A8\u8350\u89C6\u9891"))
     }
 
     @Test
     fun fallsBackWhenTitleIsBlank() {
-        assertEquals("推荐视频", formatAutoNextHintTitle("  \n\t  ", fallbackTitle = "推荐视频"))
+        assertEquals("\u63A8\u8350\u89C6\u9891", formatAutoNextHintTitle("  \n\t  ", fallbackTitle = "\u63A8\u8350\u89C6\u9891"))
     }
 }

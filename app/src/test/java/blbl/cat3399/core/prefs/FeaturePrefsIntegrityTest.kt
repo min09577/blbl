@@ -16,12 +16,21 @@ class FeaturePrefsIntegrityTest {
         assertTrue("No FeaturePrefs batch files found", batchFiles.isNotEmpty())
 
         val typeCountRegex = Regex("""var (v\d+\w+): (Boolean|Int)""")
+        val fileRangeRegex = Regex("FeaturePrefs(\\d+)to(\\d+)\\.kt")
         for (file in batchFiles.sortedBy { it.name }) {
+            val match = fileRangeRegex.find(file.name)
+                ?: error("Cannot parse range from ${file.name}")
+            val start = match.groupValues[1].toInt()
+            val end = match.groupValues[2].toInt()
+            val numBatches = (end - start) / 10 + 1
+            val expectedBoolean = 100 * numBatches
+            val expectedInt = 50 * numBatches
+
             val content = file.readText()
             val boolCount = typeCountRegex.findAll(content).count { it.groupValues[2] == "Boolean" }
             val intCount = typeCountRegex.findAll(content).count { it.groupValues[2] == "Int" }
-            assertEquals("Batch ${file.name}: Boolean count mismatch", 100, boolCount)
-            assertEquals("Batch ${file.name}: Int count mismatch", 50, intCount)
+            assertEquals("Batch ${file.name}: Boolean count mismatch", expectedBoolean, boolCount)
+            assertEquals("Batch ${file.name}: Int count mismatch", expectedInt, intCount)
         }
     }
 
@@ -58,20 +67,24 @@ class FeaturePrefsIntegrityTest {
     @Test
     fun accessor_declaresAllBatches() {
         val baseDir = File("src/main/java/blbl/cat3399/core/prefs")
-        val batchNums =
-            baseDir
-                .listFiles()
-                ?.mapNotNull {
-                    Regex("FeaturePrefs(\\d+)to\\d+\\.kt")
-                        .find(it.name)
-                        ?.groupValues
-                        ?.get(1)
-                        ?.toInt()
-                }?.toSet() ?: emptySet()
+        // Collect ALL batch start numbers from file ranges (e.g. FeaturePrefs701to731.kt -> 701,711,721,731)
+        val fileRangeRegex = Regex("FeaturePrefs(\\d+)to(\\d+)\\.kt")
+        val allBatchNums = mutableSetOf<Int>()
+        baseDir
+            .listFiles()
+                ?.filter { it.name.matches(fileRangeRegex) }
+                ?.forEach { file ->
+                    val match = fileRangeRegex.find(file.name)!!
+                    val start = match.groupValues[1].toInt()
+                    val end = match.groupValues[2].toInt()
+                    for (n in start..end step 10) allBatchNums.add(n)
+                }
+        assertTrue("No batch files found", allBatchNums.isNotEmpty())
+
         val accessorFile = File(baseDir, "FeaturePrefsAccessor.kt")
         val content = accessorFile.readText()
         val accessorBatches = Regex("""batch(\d+):""").findAll(content).map { it.groupValues[1].toInt() }.toSet()
-        assertEquals("Accessor should declare all batches", batchNums.sorted(), accessorBatches.sorted())
+        assertEquals("Accessor should declare all batches", allBatchNums.sorted(), accessorBatches.sorted())
     }
 
     @Test
