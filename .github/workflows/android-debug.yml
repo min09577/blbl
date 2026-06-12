@@ -1,4 +1,4 @@
-name: Android Debug
+﻿name: Android Debug
 
 on:
   push:
@@ -58,6 +58,12 @@ jobs:
           EOF
           echo "=== Effective gradle.properties (last lines) ==="
           tail -20 gradle.properties
+      - name: Cache Gradle configuration cache
+        uses: actions/cache@v4
+        with:
+          path: .gradle/configuration-cache
+          key: config-cache-${{ runner.os }}-${{ hashFiles('gradle.properties', 'build.gradle.kts', 'app/build.gradle.kts') }}
+          restore-keys: config-cache-${{ runner.os }}-
       - name: Build debug APK
         run: ./gradlew assembleDebug -PversionName=${{ steps.version.outputs.version_name }} -PversionCode=${{ github.run_number }} --no-daemon
       - name: Upload debug APK to R2 (optional)

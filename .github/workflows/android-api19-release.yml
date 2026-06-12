@@ -1,4 +1,4 @@
-name: Android API19 Release
+﻿name: Android API19 Release
 
 on:
   workflow_dispatch:
@@ -39,6 +39,12 @@ jobs:
           EOF
           echo "=== Effective gradle.properties (last lines) ==="
           tail -20 gradle.properties
+      - name: Cache Gradle configuration cache
+        uses: actions/cache@v4
+        with:
+          path: .gradle/configuration-cache
+          key: config-cache-${{ runner.os }}-${{ hashFiles('gradle.properties', 'build.gradle.kts', 'app/build.gradle.kts') }}
+          restore-keys: config-cache-${{ runner.os }}-
       - name: Mark API19 app label
         run: |
           set -euo pipefail
