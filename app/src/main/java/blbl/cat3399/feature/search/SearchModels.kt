@@ -42,6 +42,8 @@ enum class SearchTab(
     ;
 
     companion object {
-        fun forIndex(index: Int): SearchTab = entries.firstOrNull { it.index == index } ?: Video
+        fun forIndex(index: Int): SearchTab {
+            return entries.firstOrNull { it.index == index } ?: Video
+        }
     }
 }

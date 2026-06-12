@@ -29,3 +29,4 @@ data class LiveRoomCard(
     val areaName: String?,
     val keyframe: String?,
 )
+

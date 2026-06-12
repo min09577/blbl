@@ -4,10 +4,7 @@ object GridSpanPolicy {
     private const val MIN_SPAN = 1
     private const val MAX_SPAN = 6
 
-    fun fixedSpanCountForWidthDp(
-        widthDp: Float,
-        overrideSpanCount: Int,
-    ): Int {
+    fun fixedSpanCountForWidthDp(widthDp: Float, overrideSpanCount: Int): Int {
         if (overrideSpanCount > 0) return overrideSpanCount.coerceIn(MIN_SPAN, MAX_SPAN)
         return when {
             widthDp >= 1100f -> 4
@@ -16,11 +13,7 @@ object GridSpanPolicy {
         }
     }
 
-    fun dynamicSpanCountForWidthDp(
-        widthDp: Float,
-        dynamicOverrideSpanCount: Int,
-        globalOverrideSpanCount: Int,
-    ): Int {
+    fun dynamicSpanCountForWidthDp(widthDp: Float, dynamicOverrideSpanCount: Int, globalOverrideSpanCount: Int): Int {
         if (dynamicOverrideSpanCount > 0) return dynamicOverrideSpanCount.coerceIn(MIN_SPAN, MAX_SPAN)
         return fixedSpanCountForWidthDp(widthDp = widthDp, overrideSpanCount = globalOverrideSpanCount)
     }
@@ -39,3 +32,4 @@ object GridSpanPolicy {
         return raw.coerceIn(minSpan, maxSpan)
     }
 }
+

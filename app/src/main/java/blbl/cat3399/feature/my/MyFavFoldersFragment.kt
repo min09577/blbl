@@ -19,10 +19,7 @@ import blbl.cat3399.ui.RefreshKeyHandler
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.launch
 
-class MyFavFoldersFragment :
-    Fragment(),
-    MyTabSwitchFocusTarget,
-    RefreshKeyHandler {
+class MyFavFoldersFragment : Fragment(), MyTabSwitchFocusTarget, RefreshKeyHandler {
     private var _binding: FragmentVideoGridBinding? = null
     private val binding get() = _binding!!
 
@@ -33,34 +30,25 @@ class MyFavFoldersFragment :
     private var pendingFocusFirstItemFromTabSwitch: Boolean = false
     private var dpadGridController: DpadGridController? = null
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?,
-    ): View {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         _binding = FragmentVideoGridBinding.inflate(inflater, container, false)
         return binding.root
     }
 
-    override fun onViewCreated(
-        view: View,
-        savedInstanceState: Bundle?,
-    ) {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         if (!::adapter.isInitialized) {
-            adapter =
-                FavFolderAdapter { position, folder ->
-                    pendingRestorePosition = position
-                    val nav = findMyNavigator()
-                    nav?.openFavFolder(folder.mediaId, folder.title)
-                }
+            adapter = FavFolderAdapter { position, folder ->
+                pendingRestorePosition = position
+                val nav = findMyNavigator()
+                nav?.openFavFolder(folder.mediaId, folder.title)
+            }
         }
 
         binding.recycler.adapter = adapter
         binding.recycler.setHasFixedSize(true)
-        binding.recycler.layoutManager =
-            StaggeredGridLayoutManager(spanCountForWidth(resources), StaggeredGridLayoutManager.VERTICAL).apply {
-                gapStrategy = StaggeredGridLayoutManager.GAP_HANDLING_NONE
-            }
+        binding.recycler.layoutManager = StaggeredGridLayoutManager(spanCountForWidth(resources), StaggeredGridLayoutManager.VERTICAL).apply {
+            gapStrategy = StaggeredGridLayoutManager.GAP_HANDLING_NONE
+        }
         (binding.recycler.itemAnimator as? SimpleItemAnimator)?.supportsChangeAnimations = false
         dpadGridController?.release()
         dpadGridController =
@@ -68,9 +56,13 @@ class MyFavFoldersFragment :
                 recyclerView = binding.recycler,
                 callbacks =
                     object : DpadGridController.Callbacks {
-                        override fun onTopEdge(): Boolean = focusSelectedMyTabIfAvailable()
+                        override fun onTopEdge(): Boolean {
+                            return focusSelectedMyTabIfAvailable()
+                        }
 
-                        override fun onLeftEdge(): Boolean = switchToPrevMyTabFromContentEdge()
+                        override fun onLeftEdge(): Boolean {
+                            return switchToPrevMyTabFromContentEdge()
+                        }
 
                         override fun onRightEdge() {
                             switchToNextMyTabFromContentEdge()

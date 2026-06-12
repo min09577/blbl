@@ -3,6 +3,7 @@ package blbl.cat3399.feature.following
 import android.content.Intent
 import android.os.Bundle
 import android.view.KeyEvent
+import android.view.View
 import androidx.core.view.isVisible
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.GridLayoutManager
@@ -66,11 +67,7 @@ class FollowingListActivity : BaseActivity() {
         binding.recycler.clearOnScrollListeners()
         binding.recycler.addOnScrollListener(
             object : RecyclerView.OnScrollListener() {
-                override fun onScrolled(
-                    recyclerView: RecyclerView,
-                    dx: Int,
-                    dy: Int,
-                ) {
+                override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
                     if (dy <= 0) return
                     val s = paging.snapshot()
                     if (s.isLoading || s.endReached) return
@@ -297,7 +294,9 @@ class FollowingListActivity : BaseActivity() {
         }
     }
 
-    private fun spanCountForWidth(): Int = followingSpanCountForWidth(binding.root.context)
+    private fun spanCountForWidth(): Int {
+        return followingSpanCountForWidth(binding.root.context)
+    }
 
     override fun onDestroy() {
         dpadGridController?.release()
@@ -305,8 +304,8 @@ class FollowingListActivity : BaseActivity() {
         super.onDestroy()
     }
 
-    private fun isNavKey(keyCode: Int): Boolean =
-        when (keyCode) {
+    private fun isNavKey(keyCode: Int): Boolean {
+        return when (keyCode) {
             KeyEvent.KEYCODE_DPAD_UP,
             KeyEvent.KEYCODE_DPAD_DOWN,
             KeyEvent.KEYCODE_DPAD_LEFT,
@@ -319,4 +318,5 @@ class FollowingListActivity : BaseActivity() {
 
             else -> false
         }
+    }
 }

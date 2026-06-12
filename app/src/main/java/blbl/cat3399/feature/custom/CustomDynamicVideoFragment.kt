@@ -18,13 +18,13 @@ import blbl.cat3399.core.paging.appliedOrNull
 import blbl.cat3399.core.ui.AppToast
 import blbl.cat3399.core.ui.DpadGridController
 import blbl.cat3399.core.ui.FocusTreeUtils
-import blbl.cat3399.core.ui.GridSpanPolicy
 import blbl.cat3399.core.ui.GridViewportFillMonitor
+import blbl.cat3399.core.ui.GridSpanPolicy
 import blbl.cat3399.core.ui.TabContentSwitchFocusHost
 import blbl.cat3399.core.ui.TabSwitchFocusTarget
-import blbl.cat3399.core.ui.installGridViewportFillMonitor
 import blbl.cat3399.core.ui.postIfAlive
 import blbl.cat3399.core.ui.postIfAttached
+import blbl.cat3399.core.ui.installGridViewportFillMonitor
 import blbl.cat3399.core.ui.requestFocusAdapterPositionReliable
 import blbl.cat3399.core.ui.requestFocusFirstItemOrSelfAfterRefresh
 import blbl.cat3399.databinding.FragmentVideoGridBinding
@@ -35,6 +35,7 @@ import blbl.cat3399.feature.video.VideoCardAdapter
 import blbl.cat3399.feature.video.VideoCardDismissBehavior
 import blbl.cat3399.feature.video.VideoCardVisibilityFilter
 import blbl.cat3399.feature.video.buildPagedVideoCardPlaybackHandle
+import blbl.cat3399.feature.video.defaultVideoCardPlaylistItem
 import blbl.cat3399.feature.video.openVideoDetailFromPlaybackHandle
 import blbl.cat3399.feature.video.openVideoFromPlaybackHandle
 import blbl.cat3399.feature.video.removeVideoCardAndRestoreFocus
@@ -42,10 +43,7 @@ import blbl.cat3399.ui.RefreshKeyHandler
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.launch
 
-class CustomDynamicVideoFragment :
-    Fragment(),
-    RefreshKeyHandler,
-    TabSwitchFocusTarget {
+class CustomDynamicVideoFragment : Fragment(), RefreshKeyHandler, TabSwitchFocusTarget {
     private data class FetchedPage(
         val items: List<VideoCard>,
         val nextOffset: String?,
@@ -68,19 +66,12 @@ class CustomDynamicVideoFragment :
     private var dpadGridController: DpadGridController? = null
     private var viewportFillMonitor: GridViewportFillMonitor? = null
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?,
-    ): View {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         _binding = FragmentVideoGridBinding.inflate(inflater, container, false)
         return binding.root
     }
 
-    override fun onViewCreated(
-        view: View,
-        savedInstanceState: Bundle?,
-    ) {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         if (!::adapter.isInitialized) {
             val actionController =
                 VideoCardActionController(
@@ -121,11 +112,7 @@ class CustomDynamicVideoFragment :
         binding.recycler.clearOnScrollListeners()
         binding.recycler.addOnScrollListener(
             object : RecyclerView.OnScrollListener() {
-                override fun onScrolled(
-                    recyclerView: RecyclerView,
-                    dx: Int,
-                    dy: Int,
-                ) {
+                override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
                     if (dy <= 0) return
                     val snapshot = paging.snapshot()
                     if (snapshot.isLoading || snapshot.endReached) return
@@ -144,9 +131,13 @@ class CustomDynamicVideoFragment :
                 recyclerView = binding.recycler,
                 callbacks =
                     object : DpadGridController.Callbacks {
-                        override fun onTopEdge(): Boolean = focusSelectedTabIfAvailable()
+                        override fun onTopEdge(): Boolean {
+                            return focusSelectedTabIfAvailable()
+                        }
 
-                        override fun onLeftEdge(): Boolean = switchToPrevTabFromContentEdge()
+                        override fun onLeftEdge(): Boolean {
+                            return switchToPrevTabFromContentEdge()
+                        }
 
                         override fun onRightEdge() {
                             switchToNextTabFromContentEdge()

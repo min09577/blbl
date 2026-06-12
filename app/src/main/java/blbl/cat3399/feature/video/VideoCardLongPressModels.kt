@@ -11,21 +11,18 @@ enum class VideoCardConfiguredLongPressAction {
     OPEN_DETAIL,
     OPEN_UP,
     DISMISS,
-    SHARE, // v5.9
-    COPY_LINK, // v6.3
     ;
 
     companion object {
-        fun fromPref(value: String): VideoCardConfiguredLongPressAction =
-            when (AppPrefs.normalizeVideoCardLongPressAction(value)) {
+        fun fromPref(value: String): VideoCardConfiguredLongPressAction {
+            return when (AppPrefs.normalizeVideoCardLongPressAction(value)) {
                 AppPrefs.VIDEO_CARD_LONG_PRESS_ACTION_WATCH_LATER -> WATCH_LATER
                 AppPrefs.VIDEO_CARD_LONG_PRESS_ACTION_OPEN_DETAIL -> OPEN_DETAIL
                 AppPrefs.VIDEO_CARD_LONG_PRESS_ACTION_OPEN_UP -> OPEN_UP
                 AppPrefs.VIDEO_CARD_LONG_PRESS_ACTION_DISMISS -> DISMISS
-                AppPrefs.VIDEO_CARD_LONG_PRESS_ACTION_SHARE -> SHARE
-                AppPrefs.VIDEO_CARD_LONG_PRESS_ACTION_COPY_LINK -> COPY_LINK
                 else -> MANUAL
             }
+        }
     }
 }
 
@@ -34,8 +31,6 @@ enum class VideoCardQuickActionId {
     OPEN_DETAIL,
     OPEN_UP,
     DISMISS,
-    SHARE, // v5.9
-    COPY_LINK, // v6.3
 }
 
 data class VideoCardQuickAction(
@@ -71,22 +66,6 @@ data class VideoCardQuickAction(
                 iconResId = R.drawable.ic_video_card_delete,
                 contentDescription = label,
             )
-
-        // v5.9: 分享视频
-        fun share(label: CharSequence): VideoCardQuickAction =
-            VideoCardQuickAction(
-                id = VideoCardQuickActionId.SHARE,
-                iconResId = R.drawable.ic_action_like,
-                contentDescription = label,
-            )
-
-        // v6.3: 复制链接
-        fun copyLink(label: CharSequence): VideoCardQuickAction =
-            VideoCardQuickAction(
-                id = VideoCardQuickActionId.COPY_LINK,
-                iconResId = R.drawable.ic_action_like,
-                contentDescription = label,
-            )
     }
 }
 
@@ -108,4 +87,5 @@ interface VideoCardActionDelegate {
     )
 }
 
-internal fun VideoCard.hasVideoDetailIdentity(): Boolean = bvid.isNotBlank() || (aid ?: 0L) > 0L
+internal fun VideoCard.hasVideoDetailIdentity(): Boolean =
+    bvid.isNotBlank() || (aid ?: 0L) > 0L

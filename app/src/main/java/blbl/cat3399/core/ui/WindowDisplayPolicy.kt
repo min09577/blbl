@@ -16,10 +16,7 @@ object WindowDisplayPolicy {
         val avoidDisplayCutout: Boolean,
     )
 
-    fun applyWindow(
-        activity: Activity,
-        fullscreen: Boolean = currentOptions(activity).fullscreen,
-    ) {
+    fun applyWindow(activity: Activity, fullscreen: Boolean = currentOptions(activity).fullscreen) {
         val window = activity.window ?: return
         val options = currentOptions(activity).copy(fullscreen = fullscreen)
         applyCutoutMode(window, options)
@@ -47,19 +44,21 @@ object WindowDisplayPolicy {
         window.attributes = attrs
     }
 
-    private fun desiredCutoutMode(options: Options): Int =
-        if (options.avoidDisplayCutout) {
+    private fun desiredCutoutMode(options: Options): Int {
+        return if (options.avoidDisplayCutout) {
             WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_NEVER
         } else {
             allowCutoutMode()
         }
+    }
 
-    private fun allowCutoutMode(): Int =
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+    private fun allowCutoutMode(): Int {
+        return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
             WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_ALWAYS
         } else {
             WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES
         }
+    }
 
     private fun currentOptions(context: Context): Options {
         val prefs =

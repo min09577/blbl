@@ -25,10 +25,7 @@ import blbl.cat3399.ui.SidebarFocusHost
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 
-class CustomPageFragment :
-    Fragment(),
-    TabContentSwitchFocusHost,
-    BackPressHandler {
+class CustomPageFragment : Fragment(), TabContentSwitchFocusHost, BackPressHandler {
     private var _binding: FragmentCustomPageBinding? = null
     private val binding get() = _binding!!
 
@@ -52,19 +49,12 @@ class CustomPageFragment :
             }
         }
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?,
-    ): View {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         _binding = FragmentCustomPageBinding.inflate(inflater, container, false)
         return binding.root
     }
 
-    override fun onViewCreated(
-        view: View,
-        savedInstanceState: Bundle?,
-    ) {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         syncTabs(force = true)
     }
 

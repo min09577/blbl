@@ -14,6 +14,7 @@ import blbl.cat3399.R
 import blbl.cat3399.core.api.BiliApi
 import blbl.cat3399.core.log.AppLog
 import blbl.cat3399.core.model.Following
+import blbl.cat3399.core.model.VideoCard
 import blbl.cat3399.core.net.BiliClient
 import blbl.cat3399.core.ui.AppToast
 import blbl.cat3399.core.ui.DpadGridController
@@ -21,10 +22,10 @@ import blbl.cat3399.core.ui.FocusTreeUtils
 import blbl.cat3399.core.ui.GridSpanPolicy
 import blbl.cat3399.core.ui.UiScale
 import blbl.cat3399.core.ui.parkFocusForDataSetReset
-import blbl.cat3399.core.ui.postIfAlive
 import blbl.cat3399.core.ui.requestFocusFirstItemOrSelfAfterRefresh
 import blbl.cat3399.core.ui.uiScaler
 import blbl.cat3399.core.ui.unparkFocusAfterDataSetReset
+import blbl.cat3399.core.ui.postIfAlive
 import blbl.cat3399.databinding.FragmentDynamicBinding
 import blbl.cat3399.databinding.FragmentDynamicLoginBinding
 import blbl.cat3399.feature.following.openUpDetailFromVideoCard
@@ -35,6 +36,7 @@ import blbl.cat3399.feature.video.VideoCardAdapter
 import blbl.cat3399.feature.video.VideoCardDismissBehavior
 import blbl.cat3399.feature.video.VideoCardVisibilityFilter
 import blbl.cat3399.feature.video.buildPagedVideoCardPlaybackHandle
+import blbl.cat3399.feature.video.defaultVideoCardPlaylistItem
 import blbl.cat3399.feature.video.openVideoDetailFromPlaybackHandle
 import blbl.cat3399.feature.video.openVideoFromPlaybackHandle
 import blbl.cat3399.feature.video.removeVideoCardAndRestoreFocus
@@ -46,10 +48,7 @@ import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.launch
 
-class DynamicFragment :
-    Fragment(),
-    RefreshKeyHandler,
-    BackPressHandler {
+class DynamicFragment : Fragment(), RefreshKeyHandler, BackPressHandler {
     private data class FeedContinuationCursor(
         val selectedMid: Long,
         val page: Int,
@@ -88,11 +87,7 @@ class DynamicFragment :
 
     private var pendingFocusFirstFeedCardAfterRefresh: Boolean = false
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?,
-    ): View {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         if (!loggedIn) {
             _bindingLogin = FragmentDynamicLoginBinding.inflate(inflater, container, false)
             return _bindingLogin!!.root
@@ -101,10 +96,7 @@ class DynamicFragment :
         return _binding!!.root
     }
 
-    override fun onViewCreated(
-        view: View,
-        savedInstanceState: Bundle?,
-    ) {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         if (!loggedIn) {
             _bindingLogin?.btnLogin?.setOnClickListener {
                 startActivity(Intent(requireContext(), QrLoginActivity::class.java))
@@ -116,17 +108,11 @@ class DynamicFragment :
 
         followAdapter = FollowingAdapter(::onFollowingClicked)
         binding.recyclerFollowing.layoutManager = LinearLayoutManager(requireContext())
-        // v4.1: 增加RecyclerView缓存
-        binding.recyclerFollowing.setItemViewCacheSize(10)
         binding.recyclerFollowing.adapter = followAdapter
         binding.recyclerFollowing.clearOnScrollListeners()
         binding.recyclerFollowing.addOnScrollListener(
             object : RecyclerView.OnScrollListener() {
-                override fun onScrolled(
-                    recyclerView: RecyclerView,
-                    dx: Int,
-                    dy: Int,
-                ) {
+                override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
                     if (dy <= 0) return
                     if (followIsLoadingMore || followEndReached) return
                     val lm = recyclerView.layoutManager as? LinearLayoutManager ?: return
@@ -200,8 +186,6 @@ class DynamicFragment :
                 actionDelegate = actionController,
             )
         binding.recyclerDynamic.setHasFixedSize(true)
-        // v4.1: 增加RecyclerView缓存，提升滚动流畅度
-        binding.recyclerDynamic.setItemViewCacheSize(10)
         binding.recyclerDynamic.layoutManager = GridLayoutManager(requireContext(), spanCountForWidth())
         binding.recyclerDynamic.adapter = videoAdapter
         (binding.recyclerDynamic.itemAnimator as? androidx.recyclerview.widget.SimpleItemAnimator)?.supportsChangeAnimations = false
@@ -216,7 +200,9 @@ class DynamicFragment :
                             return false
                         }
 
-                        override fun onLeftEdge(): Boolean = focusSelectedFollowingIfAvailable()
+                        override fun onLeftEdge(): Boolean {
+                            return focusSelectedFollowingIfAvailable()
+                        }
 
                         override fun onRightEdge() = Unit
 
@@ -234,11 +220,7 @@ class DynamicFragment :
             ).also { it.install() }
         binding.recyclerDynamic.addOnScrollListener(
             object : RecyclerView.OnScrollListener() {
-                override fun onScrolled(
-                    recyclerView: RecyclerView,
-                    dx: Int,
-                    dy: Int,
-                ) {
+                override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
                     if (dy <= 0) return
                     if (isLoadingMore || endReached) return
                     if (binding.swipeRefresh.isRefreshing) return
@@ -643,7 +625,6 @@ class DynamicFragment :
         val binding = _binding ?: return
         val uiScale = UiScale.factor(requireContext())
         val scaler = requireContext().uiScaler(uiScale)
-
         fun scaledPx(id: Int): Int = scaler.scaledDimenPx(id)
 
         val width =
@@ -666,19 +647,13 @@ class DynamicFragment :
             changed = true
         }
         val mlp = cardLp as? ViewGroup.MarginLayoutParams
-        if (mlp != null &&
-            (mlp.leftMargin != margin || mlp.topMargin != margin || mlp.rightMargin != margin || mlp.bottomMargin != margin)
-        ) {
+        if (mlp != null && (mlp.leftMargin != margin || mlp.topMargin != margin || mlp.rightMargin != margin || mlp.bottomMargin != margin)) {
             mlp.setMargins(margin, margin, margin, margin)
             changed = true
         }
         if (changed) binding.cardFollowing.layoutParams = cardLp
 
-        if (binding.recyclerFollowing.paddingLeft != padding ||
-            binding.recyclerFollowing.paddingTop != padding ||
-            binding.recyclerFollowing.paddingRight != padding ||
-            binding.recyclerFollowing.paddingBottom != padding
-        ) {
+        if (binding.recyclerFollowing.paddingLeft != padding || binding.recyclerFollowing.paddingTop != padding || binding.recyclerFollowing.paddingRight != padding || binding.recyclerFollowing.paddingBottom != padding) {
             binding.recyclerFollowing.setPadding(padding, padding, padding, padding)
         }
     }

@@ -8,6 +8,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.SimpleItemAnimator
+import blbl.cat3399.R
 import blbl.cat3399.core.api.BiliApi
 import blbl.cat3399.core.api.BiliApiException
 import blbl.cat3399.core.log.AppLog
@@ -17,8 +18,8 @@ import blbl.cat3399.core.tv.RemoteKeys
 import blbl.cat3399.core.ui.AppToast
 import blbl.cat3399.core.ui.BaseActivity
 import blbl.cat3399.core.ui.DpadGridController
-import blbl.cat3399.core.ui.GridSpanPolicy
 import blbl.cat3399.core.ui.GridViewportFillMonitor
+import blbl.cat3399.core.ui.GridSpanPolicy
 import blbl.cat3399.core.ui.Immersive
 import blbl.cat3399.core.ui.cloneInUserScale
 import blbl.cat3399.core.ui.installGridViewportFillMonitor
@@ -122,11 +123,7 @@ class TagDetailActivity : BaseActivity() {
         binding.recycler.clearOnScrollListeners()
         binding.recycler.addOnScrollListener(
             object : RecyclerView.OnScrollListener() {
-                override fun onScrolled(
-                    recyclerView: RecyclerView,
-                    dx: Int,
-                    dy: Int,
-                ) {
+                override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
                     if (dy <= 0) return
                     if (isLoadingMore || endReached) return
                     val lm = recyclerView.layoutManager as? GridLayoutManager ?: return
@@ -247,15 +244,7 @@ class TagDetailActivity : BaseActivity() {
                                 fetchDynamicTagPage(page = requestPage)
                             } catch (t: Throwable) {
                                 if (requestPage == 1 && adapter.itemCount <= 0 && shouldFallbackToSearchOnDynamicError(t)) {
-                                    if (fallbackToSearch(
-                                            token = token,
-                                            isRefresh = isRefresh,
-                                            startAt = startAt,
-                                            reason = "api_error",
-                                        )
-                                    ) {
-                                        return@launch
-                                    }
+                                    if (fallbackToSearch(token = token, isRefresh = isRefresh, startAt = startAt, reason = "api_error")) return@launch
                                 }
                                 throw t
                             }
@@ -315,9 +304,7 @@ class TagDetailActivity : BaseActivity() {
         page = 2
         AppLog.i(
             "TagDetail",
-            "load ok fallbackToSearch reason=$reason rid=$rid tagId=$tagId keyword=${keyword.take(
-                20,
-            )} add=${visibleItems.size} total=${adapter.itemCount} hasMore=${search.hasMore} cost=${SystemClock.uptimeMillis() - startAt}ms",
+            "load ok fallbackToSearch reason=$reason rid=$rid tagId=$tagId keyword=${keyword.take(20)} add=${visibleItems.size} total=${adapter.itemCount} hasMore=${search.hasMore} cost=${SystemClock.uptimeMillis() - startAt}ms",
         )
         return true
     }
@@ -408,10 +395,7 @@ class TagDetailActivity : BaseActivity() {
             }
     }
 
-    private fun startUpDetail(
-        mid: Long,
-        card: VideoCard,
-    ) {
+    private fun startUpDetail(mid: Long, card: VideoCard) {
         startActivity(
             Intent(this, UpDetailActivity::class.java)
                 .putExtra(UpDetailActivity.EXTRA_MID, mid)

@@ -27,25 +27,15 @@ object AppToast {
 
     private val mainHandler = Handler(Looper.getMainLooper())
 
-    fun show(
-        context: Context,
-        text: CharSequence,
-    ) {
+    fun show(context: Context, text: CharSequence) {
         showInternal(context = context, text = text, durationMs = DURATION_SHORT_MS)
     }
 
-    fun showLong(
-        context: Context,
-        text: CharSequence,
-    ) {
+    fun showLong(context: Context, text: CharSequence) {
         showInternal(context = context, text = text, durationMs = DURATION_LONG_MS)
     }
 
-    private fun showInternal(
-        context: Context,
-        text: CharSequence,
-        durationMs: Long,
-    ) {
+    private fun showInternal(context: Context, text: CharSequence, durationMs: Long) {
         if (text.isBlank()) return
 
         if (Looper.myLooper() != Looper.getMainLooper()) {
@@ -54,8 +44,7 @@ object AppToast {
         }
 
         val activity =
-            context
-                .findActivity()
+            context.findActivity()
                 ?.takeIf { !it.isFinishing && !it.isDestroyed }
         if (activity == null) {
             showFallbackSystemToast(context = context, text = text, long = durationMs > DURATION_SHORT_MS)
@@ -83,23 +72,21 @@ object AppToast {
                 .coerceAtLeast(dp(root.context, 200f))
 
         val insetsBottom =
-            ViewCompat
-                .getRootWindowInsets(root)
+            ViewCompat.getRootWindowInsets(root)
                 ?.getInsets(WindowInsetsCompat.Type.systemBars())
                 ?.bottom
                 ?: 0
 
         val lp =
-            FrameLayout
-                .LayoutParams(
-                    FrameLayout.LayoutParams.WRAP_CONTENT,
-                    FrameLayout.LayoutParams.WRAP_CONTENT,
-                ).apply {
-                    gravity = Gravity.BOTTOM or Gravity.CENTER_HORIZONTAL
-                    val marginH = dp(root.context, 24f)
-                    val marginB = dp(root.context, 32f) + insetsBottom
-                    setMargins(marginH, 0, marginH, marginB)
-                }
+            FrameLayout.LayoutParams(
+                FrameLayout.LayoutParams.WRAP_CONTENT,
+                FrameLayout.LayoutParams.WRAP_CONTENT,
+            ).apply {
+                gravity = Gravity.BOTTOM or Gravity.CENTER_HORIZONTAL
+                val marginH = dp(root.context, 24f)
+                val marginB = dp(root.context, 32f) + insetsBottom
+                setMargins(marginH, 0, marginH, marginB)
+            }
 
         root.addView(view, lp)
         root.setTag(R.id.tag_app_toast_view, view)
@@ -107,8 +94,7 @@ object AppToast {
         val startOffsetPx = dp(root.context, 16f).toFloat()
         view.alpha = 0f
         view.translationY = startOffsetPx
-        view
-            .animate()
+        view.animate()
             .alpha(1f)
             .translationY(0f)
             .setDuration(ANIM_IN_MS)
@@ -120,10 +106,7 @@ object AppToast {
         mainHandler.postDelayed(hideRunnable, durationMs)
     }
 
-    private fun hideInternal(
-        root: FrameLayout,
-        view: View,
-    ) {
+    private fun hideInternal(root: FrameLayout, view: View) {
         if (Looper.myLooper() != Looper.getMainLooper()) {
             mainHandler.post { hideInternal(root = root, view = view) }
             return
@@ -132,8 +115,7 @@ object AppToast {
         if (root.getTag(R.id.tag_app_toast_view) !== view) return
 
         val endOffsetPx = dp(root.context, 12f).toFloat()
-        view
-            .animate()
+        view.animate()
             .alpha(0f)
             .translationY(endOffsetPx)
             .setDuration(ANIM_OUT_MS)
@@ -142,7 +124,8 @@ object AppToast {
                 if (root.getTag(R.id.tag_app_toast_view) === view) {
                     dismissCurrent(root)
                 }
-            }.start()
+            }
+            .start()
     }
 
     private fun dismissCurrent(root: FrameLayout) {
@@ -156,18 +139,12 @@ object AppToast {
         root.setTag(R.id.tag_app_toast_hide_runnable, null)
     }
 
-    private fun showFallbackSystemToast(
-        context: Context,
-        text: CharSequence,
-        long: Boolean,
-    ) {
+    private fun showFallbackSystemToast(context: Context, text: CharSequence, long: Boolean) {
         Toast.makeText(context.applicationContext, text, if (long) Toast.LENGTH_LONG else Toast.LENGTH_SHORT).show()
     }
 
-    private fun dp(
-        context: Context,
-        value: Float,
-    ): Int = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, value, context.resources.displayMetrics).toInt()
+    private fun dp(context: Context, value: Float): Int =
+        TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, value, context.resources.displayMetrics).toInt()
 
     private fun Context.findActivity(): Activity? {
         var current: Context? = this
@@ -178,3 +155,4 @@ object AppToast {
         return current as? Activity
     }
 }
+

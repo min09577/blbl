@@ -24,11 +24,7 @@ object BackButtonSizingHelper {
         applySizeAndPadding(view = view, sizePx = sizePx, paddingPx = paddingPx)
     }
 
-    fun applySizeAndPadding(
-        view: View,
-        sizePx: Int,
-        paddingPx: Int,
-    ) {
+    fun applySizeAndPadding(view: View, sizePx: Int, paddingPx: Int) {
         val lp = view.layoutParams ?: return
         if (lp.width != sizePx || lp.height != sizePx) {
             lp.width = sizePx
@@ -45,3 +41,4 @@ object BackButtonSizingHelper {
         }
     }
 }
+

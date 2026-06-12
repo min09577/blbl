@@ -20,3 +20,4 @@ internal fun RecyclerView.smoothScrollToPositionStart(position: Int) {
     scroller.targetPosition = position
     lm.startSmoothScroll(scroller)
 }
+

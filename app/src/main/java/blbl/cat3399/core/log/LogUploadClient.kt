@@ -36,8 +36,7 @@ object LogUploadClient {
 
     private val okHttpLazy: Lazy<OkHttpClient> =
         lazy {
-            OkHttpClient
-                .Builder()
+            OkHttpClient.Builder()
                 .dns(ipv4OnlyDns { BiliClient.prefs.ipv4OnlyEnabled })
                 .connectTimeout(12, TimeUnit.SECONDS)
                 .readTimeout(60, TimeUnit.SECONDS)
@@ -71,8 +70,7 @@ object LogUploadClient {
                 )
             }
         val req =
-            Request
-                .Builder()
+            Request.Builder()
                 .url(UPLOAD_URL)
                 .post(body)
                 .header("Authorization", "Bearer $AUTH_TOKEN")
@@ -84,8 +82,7 @@ object LogUploadClient {
         res.use { r ->
             val raw = withContext(Dispatchers.IO) { r.body?.string().orEmpty() }
             val jsonMessage =
-                runCatching { JSONObject(raw).optString("message", "").trim() }
-                    .getOrNull()
+                runCatching { JSONObject(raw).optString("message", "").trim() }.getOrNull()
                     ?.takeIf { it.isNotBlank() }
             if (!r.isSuccessful) {
                 AppLog.w(TAG, "upload failed http=${r.code} msg=${r.message} body=${raw.take(200)}")
@@ -128,10 +125,7 @@ object LogUploadClient {
             var sent = 0L
             val forwardingSink =
                 object : ForwardingSink(sink) {
-                    override fun write(
-                        source: Buffer,
-                        byteCount: Long,
-                    ) {
+                    override fun write(source: Buffer, byteCount: Long) {
                         super.write(source, byteCount)
                         sent += byteCount
                         onProgress(sent.coerceAtMost(totalBytes), totalBytes)

@@ -38,11 +38,8 @@ object Format {
         val h = s / 3600
         val m = (s % 3600) / 60
         val ss = s % 60
-        return if (h > 0) {
-            String.format(Locale.US, "%d:%02d:%02d", h, m, ss)
-        } else {
-            String.format(Locale.US, "%02d:%02d", m, ss)
-        }
+        return if (h > 0) String.format(Locale.US, "%d:%02d:%02d", h, m, ss)
+        else String.format(Locale.US, "%02d:%02d", m, ss)
     }
 
     fun clock(sec: Long): String {
@@ -50,11 +47,8 @@ object Format {
         val h = safe / 3600L
         val m = (safe % 3600L) / 60L
         val ss = safe % 60L
-        return if (h > 0L) {
-            String.format(Locale.US, "%d:%02d:%02d", h, m, ss)
-        } else {
-            String.format(Locale.US, "%d:%02d", m, ss)
-        }
+        return if (h > 0L) String.format(Locale.US, "%d:%02d:%02d", h, m, ss)
+        else String.format(Locale.US, "%d:%02d", m, ss)
     }
 
     fun count(n: Long?): String {
@@ -66,10 +60,7 @@ object Format {
         }
     }
 
-    fun timeText(
-        epochSec: Long,
-        nowMs: Long = System.currentTimeMillis(),
-    ): String {
+    fun timeText(epochSec: Long, nowMs: Long = System.currentTimeMillis()): String {
         if (epochSec <= 0) return "-"
         val whenMs = epochSec * 1000
 
@@ -87,10 +78,7 @@ object Format {
         }
     }
 
-    fun pubDateText(
-        epochSec: Long,
-        nowMs: Long = System.currentTimeMillis(),
-    ): String {
+    fun pubDateText(epochSec: Long, nowMs: Long = System.currentTimeMillis()): String {
         if (epochSec <= 0) return ""
         val whenMs = epochSec * 1000
         val diffMs = nowMs - whenMs

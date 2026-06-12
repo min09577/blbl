@@ -40,10 +40,7 @@ class BangumiFollowAdapter(
 
     override fun getItemId(position: Int): Long = items[position].seasonId
 
-    override fun onCreateViewHolder(
-        parent: ViewGroup,
-        viewType: Int,
-    ): Vh {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Vh {
         val binding =
             ItemBangumiFollowBinding.inflate(
                 LayoutInflater.from(parent.context).cloneInUserScale(parent.context),
@@ -53,20 +50,12 @@ class BangumiFollowAdapter(
         return Vh(binding)
     }
 
-    override fun onBindViewHolder(
-        holder: Vh,
-        position: Int,
-    ) = holder.bind(items[position], onClick)
+    override fun onBindViewHolder(holder: Vh, position: Int) = holder.bind(items[position], onClick)
 
     override fun getItemCount(): Int = items.size
 
-    class Vh(
-        private val binding: ItemBangumiFollowBinding,
-    ) : RecyclerView.ViewHolder(binding.root) {
-        fun bind(
-            item: BangumiSeason,
-            onClick: (position: Int, season: BangumiSeason) -> Unit,
-        ) {
+    class Vh(private val binding: ItemBangumiFollowBinding) : RecyclerView.ViewHolder(binding.root) {
+        fun bind(item: BangumiSeason, onClick: (position: Int, season: BangumiSeason) -> Unit) {
             binding.tvTitle.text = item.title
 
             val badgeText =

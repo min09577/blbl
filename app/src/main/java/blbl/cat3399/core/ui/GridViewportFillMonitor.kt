@@ -18,7 +18,6 @@ internal class GridViewportFillMonitor(
 ) {
     interface Callbacks {
         fun canLoadMore(): Boolean
-
         fun loadMore()
     }
 
@@ -50,10 +49,7 @@ internal class GridViewportFillMonitor(
         object : RecyclerView.AdapterDataObserver() {
             override fun onChanged() = scheduleCheck()
 
-            override fun onItemRangeChanged(
-                positionStart: Int,
-                itemCount: Int,
-            ) = scheduleCheck()
+            override fun onItemRangeChanged(positionStart: Int, itemCount: Int) = scheduleCheck()
 
             override fun onItemRangeChanged(
                 positionStart: Int,
@@ -61,21 +57,11 @@ internal class GridViewportFillMonitor(
                 payload: Any?,
             ) = scheduleCheck()
 
-            override fun onItemRangeInserted(
-                positionStart: Int,
-                itemCount: Int,
-            ) = scheduleCheck()
+            override fun onItemRangeInserted(positionStart: Int, itemCount: Int) = scheduleCheck()
 
-            override fun onItemRangeRemoved(
-                positionStart: Int,
-                itemCount: Int,
-            ) = scheduleCheck()
+            override fun onItemRangeRemoved(positionStart: Int, itemCount: Int) = scheduleCheck()
 
-            override fun onItemRangeMoved(
-                fromPosition: Int,
-                toPosition: Int,
-                itemCount: Int,
-            ) = scheduleCheck()
+            override fun onItemRangeMoved(fromPosition: Int, toPosition: Int, itemCount: Int) = scheduleCheck()
         }
 
     fun install() {

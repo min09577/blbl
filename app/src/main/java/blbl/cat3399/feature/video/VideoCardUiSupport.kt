@@ -6,9 +6,9 @@ import androidx.recyclerview.widget.RecyclerView
 import blbl.cat3399.core.model.VideoCard
 import blbl.cat3399.core.ui.postIfAlive
 import blbl.cat3399.core.ui.requestFocusAdapterPositionReliable
-import blbl.cat3399.feature.player.PlayerPlaylistContinuation
 import blbl.cat3399.feature.player.PlayerPlaylistItem
 import blbl.cat3399.feature.player.PlayerPlaylistStore
+import blbl.cat3399.feature.player.PlayerPlaylistContinuation
 import blbl.cat3399.feature.player.VideoCardPlaylistPage
 import blbl.cat3399.feature.player.buildFreshVideoCardPlaylistContinuation
 
@@ -41,13 +41,14 @@ internal fun buildVideoCardPlaybackHandle(
     cardsProvider: () -> List<VideoCard>,
     playlistItemFactory: (VideoCard) -> PlayerPlaylistItem = ::defaultVideoCardPlaylistItem,
     continuationProvider: (List<VideoCard>) -> PlayerPlaylistContinuation? = { null },
-): VideoCardPlaybackHandle =
-    VideoCardPlaybackHandle(
+): VideoCardPlaybackHandle {
+    return VideoCardPlaybackHandle(
         source = source,
         cardsProvider = cardsProvider,
         playlistItemFactory = playlistItemFactory,
         continuationProvider = continuationProvider,
     )
+}
 
 internal fun <Cursor> buildPagedVideoCardPlaybackHandle(
     source: String,
@@ -56,8 +57,8 @@ internal fun <Cursor> buildPagedVideoCardPlaybackHandle(
     hasMoreProvider: () -> Boolean,
     playlistItemFactory: (VideoCard) -> PlayerPlaylistItem = ::defaultVideoCardPlaylistItem,
     fetchPage: suspend (cursor: Cursor) -> VideoCardPlaylistPage<Cursor>,
-): VideoCardPlaybackHandle =
-    buildVideoCardPlaybackHandle(
+): VideoCardPlaybackHandle {
+    return buildVideoCardPlaybackHandle(
         source = source,
         cardsProvider = cardsProvider,
         playlistItemFactory = playlistItemFactory,
@@ -70,13 +71,14 @@ internal fun <Cursor> buildPagedVideoCardPlaybackHandle(
             fetchPage = fetchPage,
         )
     }
+}
 
 internal fun Context.buildVideoDetailIntent(
     card: VideoCard,
     playlistToken: String? = null,
     playlistIndex: Int? = null,
-): Intent =
-    Intent(this, VideoDetailActivity::class.java)
+): Intent {
+    return Intent(this, VideoDetailActivity::class.java)
         .putExtra(VideoDetailActivity.EXTRA_BVID, card.bvid)
         .putExtra(VideoDetailActivity.EXTRA_CID, card.cid ?: -1L)
         .apply { card.aid?.let { putExtra(VideoDetailActivity.EXTRA_AID, it) } }
@@ -86,8 +88,10 @@ internal fun Context.buildVideoDetailIntent(
             card.ownerName.takeIf { it.isNotBlank() }?.let { putExtra(VideoDetailActivity.EXTRA_OWNER_NAME, it) }
             card.ownerFace?.takeIf { it.isNotBlank() }?.let { putExtra(VideoDetailActivity.EXTRA_OWNER_AVATAR, it) }
             card.ownerMid?.takeIf { it > 0L }?.let { putExtra(VideoDetailActivity.EXTRA_OWNER_MID, it) }
-        }.apply { playlistToken?.let { putExtra(VideoDetailActivity.EXTRA_PLAYLIST_TOKEN, it) } }
+        }
+        .apply { playlistToken?.let { putExtra(VideoDetailActivity.EXTRA_PLAYLIST_TOKEN, it) } }
         .apply { playlistIndex?.let { putExtra(VideoDetailActivity.EXTRA_PLAYLIST_INDEX, it) } }
+}
 
 internal fun defaultVideoCardPlaylistItem(card: VideoCard): PlayerPlaylistItem =
     PlayerPlaylistItem(
@@ -124,13 +128,14 @@ internal fun List<VideoCard>.buildVideoCardPlaylistToken(
     )
 }
 
-private fun VideoCardPlaybackSource.buildPlaylistToken(index: Int): String? =
-    cards.buildVideoCardPlaylistToken(
+private fun VideoCardPlaybackSource.buildPlaylistToken(index: Int): String? {
+    return cards.buildVideoCardPlaylistToken(
         index = index,
         source = source,
         playlistItemFactory = playlistItemFactory,
         continuation = continuation,
     )
+}
 
 internal fun Context.openVideoDetailFromCards(
     cards: List<VideoCard>,

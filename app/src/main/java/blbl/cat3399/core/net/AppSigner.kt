@@ -36,10 +36,7 @@ object AppSigner {
                 (c in 'a'.code..'z'.code) ||
                     (c in 'A'.code..'Z'.code) ||
                     (c in '0'.code..'9'.code) ||
-                    c == '-'.code ||
-                    c == '_'.code ||
-                    c == '.'.code ||
-                    c == '~'.code
+                    c == '-'.code || c == '_'.code || c == '.'.code || c == '~'.code
             if (isUnreserved) {
                 sb.append(c.toChar())
             } else {
@@ -58,3 +55,4 @@ object AppSigner {
         return sb.toString()
     }
 }
+

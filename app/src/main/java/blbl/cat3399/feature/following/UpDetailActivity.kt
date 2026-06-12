@@ -47,11 +47,11 @@ import blbl.cat3399.feature.video.defaultVideoCardPlaylistItem
 import blbl.cat3399.feature.video.openVideoDetailFromPlaybackHandle
 import blbl.cat3399.feature.video.openVideoFromPlaybackHandle
 import blbl.cat3399.feature.video.removeVideoCardAndRestoreFocus
+import com.google.android.material.R as MaterialR
 import com.google.android.material.appbar.AppBarLayout
 import com.google.android.material.tabs.TabLayout
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.launch
-import com.google.android.material.R as MaterialR
 
 class UpDetailActivity : BaseActivity() {
     private lateinit var binding: ActivityUpDetailBinding
@@ -240,13 +240,12 @@ class UpDetailActivity : BaseActivity() {
     private fun installFocusListener() {
         if (focusListener != null) return
         focusListener =
-            android.view.ViewTreeObserver
-                .OnGlobalFocusChangeListener { _, newFocus ->
-                    if (newFocus == null) return@OnGlobalFocusChangeListener
-                    if (FocusTreeUtils.isDescendantOf(newFocus, binding.recycler)) {
-                        collapseHeaderForContent()
-                    }
-                }.also { binding.root.viewTreeObserver.addOnGlobalFocusChangeListener(it) }
+            android.view.ViewTreeObserver.OnGlobalFocusChangeListener { _, newFocus ->
+                if (newFocus == null) return@OnGlobalFocusChangeListener
+                if (FocusTreeUtils.isDescendantOf(newFocus, binding.recycler)) {
+                    collapseHeaderForContent()
+                }
+            }.also { binding.root.viewTreeObserver.addOnGlobalFocusChangeListener(it) }
     }
 
     private fun uninstallFocusListener() {
@@ -286,12 +285,7 @@ class UpDetailActivity : BaseActivity() {
         binding.tvLikesCount.text = "-"
         binding.tvPlayCount.text = "-"
         val avatar = intent.getStringExtra(EXTRA_AVATAR)
-        blbl.cat3399.core.image.ImageLoader
-            .loadInto(
-                binding.ivAvatar,
-                blbl.cat3399.core.image.ImageUrl
-                    .avatar(avatar),
-            )
+        blbl.cat3399.core.image.ImageLoader.loadInto(binding.ivAvatar, blbl.cat3399.core.image.ImageUrl.avatar(avatar))
     }
 
     private fun setupAdapters() {
@@ -432,11 +426,7 @@ class UpDetailActivity : BaseActivity() {
 
                 binding.recycler.addOnScrollListener(
                     object : RecyclerView.OnScrollListener() {
-                        override fun onScrolled(
-                            recyclerView: RecyclerView,
-                            dx: Int,
-                            dy: Int,
-                        ) {
+                        override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
                             if (dy > 0) collapseHeaderForContent()
                             if (dy <= 0) return
                             if (archiveIsLoadingMore || archiveEndReached) return
@@ -465,11 +455,7 @@ class UpDetailActivity : BaseActivity() {
     private fun installSeasonsSeriesScrollListener() {
         binding.recycler.addOnScrollListener(
             object : RecyclerView.OnScrollListener() {
-                override fun onScrolled(
-                    recyclerView: RecyclerView,
-                    dx: Int,
-                    dy: Int,
-                ) {
+                override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
                     if (dy > 0) collapseHeaderForContent()
                     if (dy <= 0) return
                     if (seasonsSeriesIsLoadingMore || seasonsSeriesEndReached) return
@@ -556,7 +542,9 @@ class UpDetailActivity : BaseActivity() {
         return binding.btnBack.requestFocus()
     }
 
-    private fun focusTabsFromContentEdge(): Boolean = requestFocusSelectedTabView()
+    private fun focusTabsFromContentEdge(): Boolean {
+        return requestFocusSelectedTabView()
+    }
 
     private fun requestFocusFirstContentFromTab(): Boolean {
         when (currentTab) {
@@ -619,12 +607,7 @@ class UpDetailActivity : BaseActivity() {
                 binding.tvName.text = info.name
                 binding.tvSign.text = info.sign.orEmpty()
                 binding.tvSign.isVisible = !info.sign.isNullOrBlank()
-                blbl.cat3399.core.image.ImageLoader
-                    .loadInto(
-                        binding.ivAvatar,
-                        blbl.cat3399.core.image.ImageUrl
-                            .avatar(info.faceUrl),
-                    )
+                blbl.cat3399.core.image.ImageLoader.loadInto(binding.ivAvatar, blbl.cat3399.core.image.ImageUrl.avatar(info.faceUrl))
                 isFollowed = info.isFollowed
                 updateFollowUi()
             } else if (!loadedInitialInfo) {
@@ -759,10 +742,7 @@ class UpDetailActivity : BaseActivity() {
         return state
     }
 
-    private fun onSectionLoadMoreRequested(
-        section: UpDetailSection,
-        requestedNextIndex: Int,
-    ) {
+    private fun onSectionLoadMoreRequested(section: UpDetailSection, requestedNextIndex: Int) {
         val stableId = section.stableId
         val latest = seasonsSeriesSections.firstOrNull { it.stableId == stableId } ?: section
         val state = ensureSectionPagingState(latest)
@@ -800,16 +780,14 @@ class UpDetailActivity : BaseActivity() {
         total: Int,
         videos: List<VideoCard>,
         ownerFallback: String,
-    ): SectionArchivesParsedPage =
-        SectionArchivesParsedPage(
+    ): SectionArchivesParsedPage {
+        return SectionArchivesParsedPage(
             totalCount = total.takeIf { it > 0 },
             videos = videos.withOwnerFallback(ownerFallback),
         )
+    }
 
-    private fun appendVideosToSectionInMemory(
-        sectionStableId: String,
-        videos: List<VideoCard>,
-    ): UpDetailSection? {
+    private fun appendVideosToSectionInMemory(sectionStableId: String, videos: List<VideoCard>): UpDetailSection? {
         if (videos.isEmpty()) return null
         val idx = seasonsSeriesSections.indexOfFirst { it.stableId == sectionStableId }
         if (idx < 0) return null
@@ -819,19 +797,12 @@ class UpDetailActivity : BaseActivity() {
         return updated
     }
 
-    private fun loadMoreSectionVideos(
-        section: UpDetailSection,
-        state: SectionPagingState,
-    ) {
+    private fun loadMoreSectionVideos(section: UpDetailSection, state: SectionPagingState) {
         if (state.isLoading || state.endReached) return
         val token = seasonsSeriesRequestToken
         val targetPage = state.nextPage.coerceAtLeast(1)
         state.isLoading = true
-        val ownerFallback =
-            binding.tvName.text
-                ?.toString()
-                .orEmpty()
-                .trim()
+        val ownerFallback = binding.tvName.text?.toString().orEmpty().trim()
         lifecycleScope.launch {
             try {
                 val parsed =
@@ -921,11 +892,7 @@ class UpDetailActivity : BaseActivity() {
         val token = seasonsSeriesRequestToken
         val targetPage = seasonsSeriesNextPage.coerceAtLeast(1)
         seasonsSeriesIsLoadingMore = true
-        val ownerFallback =
-            binding.tvName.text
-                ?.toString()
-                .orEmpty()
-                .trim()
+        val ownerFallback = binding.tvName.text?.toString().orEmpty().trim()
         lifecycleScope.launch {
             try {
                 val parsed = BiliApi.collectionSections(mid = mid, pageNum = targetPage, pageSize = 10)
@@ -977,11 +944,7 @@ class UpDetailActivity : BaseActivity() {
             return
         }
         if (followActionInFlight) return
-        val selfMid =
-            BiliClient.cookies
-                .getCookieValue("DedeUserID")
-                ?.trim()
-                ?.toLongOrNull()
+        val selfMid = BiliClient.cookies.getCookieValue("DedeUserID")?.trim()?.toLongOrNull()
         if (selfMid != null && selfMid == mid) return
 
         val wantFollow = !isFollowed
@@ -1013,11 +976,7 @@ class UpDetailActivity : BaseActivity() {
     }
 
     private fun updateFollowUi() {
-        val selfMid =
-            BiliClient.cookies
-                .getCookieValue("DedeUserID")
-                ?.trim()
-                ?.toLongOrNull()
+        val selfMid = BiliClient.cookies.getCookieValue("DedeUserID")?.trim()?.toLongOrNull()
         val isSelf = selfMid != null && selfMid == mid
         binding.btnFollow.isVisible = !isSelf
         if (isSelf) return
@@ -1146,9 +1105,13 @@ class UpDetailActivity : BaseActivity() {
                 recyclerView = binding.recycler,
                 callbacks =
                     object : DpadGridController.Callbacks {
-                        override fun onTopEdge(): Boolean = focusTabsFromContentEdge()
+                        override fun onTopEdge(): Boolean {
+                            return focusTabsFromContentEdge()
+                        }
 
-                        override fun onLeftEdge(): Boolean = switchToPrevTabFromContentEdge()
+                        override fun onLeftEdge(): Boolean {
+                            return switchToPrevTabFromContentEdge()
+                        }
 
                         override fun onRightEdge() {
                             switchToNextTabFromContentEdge()
@@ -1225,11 +1188,7 @@ class UpDetailActivity : BaseActivity() {
     ): PlayerPlaylistContinuation? {
         val state = sectionPagingStates[section.stableId] ?: return null
         val pageSize = if (section.kind == UpDetailSectionKind.SEASON) 30 else 20
-        val ownerFallback =
-            binding.tvName.text
-                ?.toString()
-                .orEmpty()
-                .trim()
+        val ownerFallback = binding.tvName.text?.toString().orEmpty().trim()
         return buildFreshVideoCardPlaylistContinuation(
             seedCards = cards,
             nextCursor = state.nextPage,
@@ -1306,8 +1265,8 @@ class UpDetailActivity : BaseActivity() {
         )
     }
 
-    private fun isNavKey(keyCode: Int): Boolean =
-        when (keyCode) {
+    private fun isNavKey(keyCode: Int): Boolean {
+        return when (keyCode) {
             KeyEvent.KEYCODE_DPAD_UP,
             KeyEvent.KEYCODE_DPAD_DOWN,
             KeyEvent.KEYCODE_DPAD_LEFT,
@@ -1320,6 +1279,7 @@ class UpDetailActivity : BaseActivity() {
 
             else -> false
         }
+    }
 
     companion object {
         const val EXTRA_MID: String = "mid"

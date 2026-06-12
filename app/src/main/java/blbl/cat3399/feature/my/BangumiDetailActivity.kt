@@ -3,6 +3,7 @@ package blbl.cat3399.feature.my
 import android.content.Intent
 import android.os.Bundle
 import android.view.Gravity
+import android.view.View
 import android.widget.FrameLayout
 import android.widget.ProgressBar
 import androidx.activity.OnBackPressedCallback
@@ -127,13 +128,12 @@ class BangumiDetailActivity : BaseActivity() {
                 )
                 addView(
                     ProgressBar(this@BangumiDetailActivity),
-                    FrameLayout
-                        .LayoutParams(
-                            FrameLayout.LayoutParams.WRAP_CONTENT,
-                            FrameLayout.LayoutParams.WRAP_CONTENT,
-                        ).apply {
-                            gravity = Gravity.CENTER
-                        },
+                    FrameLayout.LayoutParams(
+                        FrameLayout.LayoutParams.WRAP_CONTENT,
+                        FrameLayout.LayoutParams.WRAP_CONTENT,
+                    ).apply {
+                        gravity = Gravity.CENTER
+                    },
                 )
             }
         setContentView(root)
@@ -477,16 +477,13 @@ class BangumiDetailActivity : BaseActivity() {
                 .apply { card.aid?.let { putExtra(PlayerActivity.EXTRA_AID, it) } }
                 .apply {
                     startPositionMs?.takeIf { it >= 5_000L }?.let { putExtra(PlayerActivity.EXTRA_START_POSITION_MS, it) }
-                }.putExtra(PlayerActivity.EXTRA_PLAYLIST_TOKEN, token)
+                }
+                .putExtra(PlayerActivity.EXTRA_PLAYLIST_TOKEN, token)
                 .putExtra(PlayerActivity.EXTRA_PLAYLIST_INDEX, idx),
         )
     }
 
-    private fun bangumiEpToVideoCard(
-        ep: BangumiEpisode,
-        defaultIndex: Int,
-        sectionTitle: String?,
-    ): VideoCard {
+    private fun bangumiEpToVideoCard(ep: BangumiEpisode, defaultIndex: Int, sectionTitle: String?): VideoCard {
         val rawTitle = ep.title.trim().takeIf { it.isNotBlank() } ?: "-"
         val episodeNumberText =
             when {

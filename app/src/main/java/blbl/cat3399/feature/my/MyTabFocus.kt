@@ -9,15 +9,17 @@ import com.google.android.material.tabs.TabLayout
 
 private fun Fragment.myTabAncestors(): Sequence<Fragment> = generateSequence(parentFragment) { it.parentFragment }
 
-fun Fragment.myTabLayout(): TabLayout? =
-    myTabAncestors()
+fun Fragment.myTabLayout(): TabLayout? {
+    return myTabAncestors()
         .mapNotNull { it.view?.findViewById<TabLayout?>(R.id.tab_layout) }
         .firstOrNull()
+}
 
-private fun Fragment.findMyTabSwitchFocusHost(): TabContentSwitchFocusHost? =
-    myTabAncestors()
+private fun Fragment.findMyTabSwitchFocusHost(): TabContentSwitchFocusHost? {
+    return myTabAncestors()
         .filterIsInstance<TabContentSwitchFocusHost>()
         .firstOrNull()
+}
 
 fun Fragment.focusSelectedMyTabIfAvailable(): Boolean {
     val tabLayout = myTabLayout() ?: return false

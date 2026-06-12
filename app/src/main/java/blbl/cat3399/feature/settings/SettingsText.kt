@@ -43,7 +43,7 @@ object SettingsText {
     fun subtitleBottomPaddingText(fraction: Float): String {
         val v = fraction.takeIf { it.isFinite() } ?: 0.16f
         val pct = (v.coerceIn(0f, 0.30f) * 100f).roundToInt()
-        return "$pct%"
+        return "${pct}%"
     }
 
     fun subtitleBackgroundOpacityText(opacity: Float): String {
@@ -55,20 +55,14 @@ object SettingsText {
 
     fun danmakuLaneDensityText(prefValue: String): String =
         when (prefValue.trim()) {
-            blbl.cat3399.core.prefs.AppPrefs.DANMAKU_LANE_DENSITY_VERY_SPARSE -> "极疏"
             blbl.cat3399.core.prefs.AppPrefs.DANMAKU_LANE_DENSITY_SPARSE -> "稀疏"
             blbl.cat3399.core.prefs.AppPrefs.DANMAKU_LANE_DENSITY_DENSE -> "密集"
-            blbl.cat3399.core.prefs.AppPrefs.DANMAKU_LANE_DENSITY_VERY_DENSE -> "极密"
             else -> "标准"
         }
 
     fun danmakuFontWeightText(prefValue: String): String =
         when (prefValue.trim()) {
             blbl.cat3399.core.prefs.AppPrefs.DANMAKU_FONT_WEIGHT_NORMAL -> "常规"
-            "serif_normal" -> "宋体(常规)"
-            "serif_bold" -> "宋体(加粗)"
-            "mono_normal" -> "等宽(常规)"
-            "mono_bold" -> "等宽(加粗)"
             else -> "加粗"
         }
 
@@ -87,10 +81,7 @@ object SettingsText {
             else -> "关注时间"
         }
 
-    fun startupPageText(
-        context: Context,
-        prefValue: String,
-    ): String = MainRootNavRegistry.startupTitle(context, prefValue)
+    fun startupPageText(context: Context, prefValue: String): String = MainRootNavRegistry.startupTitle(context, prefValue)
 
     fun customPageContentText(config: CustomPageConfig): String {
         if (config.tabs.isEmpty()) return "未配置"
@@ -99,40 +90,35 @@ object SettingsText {
         return labels.take(2).joinToString(separator = " / ") + " 等${labels.size}项"
     }
 
-    fun mainHomeVisibleTabsText(
-        context: Context,
-        selectedKeys: List<String>,
-    ): String =
-        visibleTabsText(
+    fun mainHomeVisibleTabsText(context: Context, selectedKeys: List<String>): String {
+        return visibleTabsText(
             options = HomeTabs.all.map { it.key to context.getString(it.titleRes) },
             selectedKeys = selectedKeys,
         )
+    }
 
-    fun mainCategoryVisibleTabsText(selectedKeys: List<String>): String =
-        visibleTabsText(
+    fun mainCategoryVisibleTabsText(selectedKeys: List<String>): String {
+        return visibleTabsText(
             options = CategoryZones.defaultZones.map { CategoryZones.stableKeyFor(it) to it.title },
             selectedKeys = selectedKeys,
         )
+    }
 
-    fun mainLiveVisibleTabsText(selectedKeys: List<String>): String =
-        visibleTabsText(
+    fun mainLiveVisibleTabsText(selectedKeys: List<String>): String {
+        return visibleTabsText(
             options = LiveFragment.LiveTabs.all.map { it.key to it.title },
             selectedKeys = selectedKeys,
         )
+    }
 
-    fun mainMyVisibleTabsText(
-        context: Context,
-        selectedKeys: List<String>,
-    ): String =
-        visibleTabsText(
+    fun mainMyVisibleTabsText(context: Context, selectedKeys: List<String>): String {
+        return visibleTabsText(
             options = MyTabs.all.map { it.key to context.getString(it.titleRes) },
             selectedKeys = selectedKeys,
         )
+    }
 
-    private fun visibleTabsText(
-        options: List<Pair<String, String>>,
-        selectedKeys: List<String>,
-    ): String {
+    private fun visibleTabsText(options: List<Pair<String, String>>, selectedKeys: List<String>): String {
         val selected = selectedKeys.takeIf { it.isNotEmpty() }?.toSet()
         val labels =
             if (selected == null) {
@@ -158,10 +144,6 @@ object SettingsText {
             blbl.cat3399.core.prefs.AppPrefs.VIDEO_CARD_LONG_PRESS_ACTION_OPEN_DETAIL -> "进入详情页"
             blbl.cat3399.core.prefs.AppPrefs.VIDEO_CARD_LONG_PRESS_ACTION_OPEN_UP -> "进入UP主页"
             blbl.cat3399.core.prefs.AppPrefs.VIDEO_CARD_LONG_PRESS_ACTION_DISMISS -> "不感兴趣"
-            // v5.9: 分享视频
-            blbl.cat3399.core.prefs.AppPrefs.VIDEO_CARD_LONG_PRESS_ACTION_SHARE -> "分享视频"
-            // v6.3: 复制链接
-            blbl.cat3399.core.prefs.AppPrefs.VIDEO_CARD_LONG_PRESS_ACTION_COPY_LINK -> "复制链接"
             else -> "手动选择"
         }
 
@@ -169,8 +151,6 @@ object SettingsText {
         when (prefValue) {
             blbl.cat3399.core.prefs.AppPrefs.THEME_PRESET_TV_PINK -> "小电视粉"
             blbl.cat3399.core.prefs.AppPrefs.THEME_PRESET_TV_PINK_ILLUSTRATION -> "经典"
-            blbl.cat3399.core.prefs.AppPrefs.THEME_PRESET_BLUE_DARK -> "深海蓝"
-            blbl.cat3399.core.prefs.AppPrefs.THEME_PRESET_GREEN_DARK -> "极光绿"
             else -> "默认"
         }
 
@@ -185,35 +165,10 @@ object SettingsText {
         return String.format(Locale.US, "%.2fx", v)
     }
 
-    // v5.0: 字体大小文本
-    fun fontScaleFactorText(factor: Float): String {
-        val v = factor.takeIf { it.isFinite() } ?: 1.0f
-        return when {
-            v <= 0.80f -> "极小"
-            v <= 0.85f -> "很小"
-            v <= 0.90f -> "小"
-            v <= 0.95f -> "较小"
-            v <= 1.00f -> "标准"
-            v <= 1.05f -> "较大"
-            v <= 1.10f -> "大"
-            v <= 1.15f -> "很大"
-            v <= 1.20f -> "极大"
-            else -> "超大"
-        }
-    }
-
     fun cdnText(code: String): String =
         when (code) {
             blbl.cat3399.core.prefs.AppPrefs.PLAYER_CDN_MCDN -> "mcdn"
             else -> "bilivideo"
-        }
-
-    // v5.7: 双击动作
-    fun doubleTapActionText(action: Int): String =
-        when (action) {
-            1 -> "点赞"
-            2 -> "弹幕开关"
-            else -> "播放/暂停"
         }
 
     fun seekStepSecondsText(seconds: Int): String = "${seconds.coerceAtLeast(0)}秒"
@@ -318,7 +273,7 @@ object SettingsText {
             }
 
         // Settings -> Device Info -> Screen: show only resolution + system display scaling.
-        return "${width}x$height $scaleText"
+        return "${width}x${height} $scaleText"
     }
 
     fun ramText(context: Context): String {

@@ -32,7 +32,9 @@ object CrashTracker {
         }
     }
 
-    fun crashFile(context: Context): File = File(AppLog.logDir(context), CRASH_FILE_NAME)
+    fun crashFile(context: Context): File {
+        return File(AppLog.logDir(context), CRASH_FILE_NAME)
+    }
 
     fun loadLastCrash(context: Context): CrashInfo? {
         val file = crashFile(context)
@@ -41,28 +43,15 @@ object CrashTracker {
         if (raw.isBlank()) return null
 
         val lines = raw.lineSequence().toList()
-        val crashAtMs =
-            lines
-                .firstOrNull()
-                ?.substringAfter("crashAtMs=", "")
-                ?.trim()
-                ?.toLongOrNull() ?: return null
-        val thread =
-            lines
-                .getOrNull(1)
-                ?.substringAfter("thread=", "")
-                ?.trim()
-                ?.ifBlank { "unknown" } ?: "unknown"
+        val crashAtMs = lines.firstOrNull()?.substringAfter("crashAtMs=", "")?.trim()?.toLongOrNull() ?: return null
+        val thread = lines.getOrNull(1)?.substringAfter("thread=", "")?.trim()?.ifBlank { "unknown" } ?: "unknown"
         val stack =
             raw.substringAfter("\n\n", missingDelimiterValue = "").takeIf { it.isNotBlank() }
                 ?: raw
         return CrashInfo(crashAtMs = crashAtMs, threadName = thread, stacktrace = stack)
     }
 
-    fun wasPrompted(
-        context: Context,
-        crashAtMs: Long,
-    ): Boolean {
+    fun wasPrompted(context: Context, crashAtMs: Long): Boolean {
         val marker = File(AppLog.logDir(context), PROMPT_MARKER_FILE_NAME)
         if (!marker.exists()) return false
         val raw = runCatching { marker.readText(Charsets.UTF_8) }.getOrNull().orEmpty()
@@ -70,21 +59,14 @@ object CrashTracker {
         return marked == crashAtMs
     }
 
-    fun markPrompted(
-        context: Context,
-        crashAtMs: Long,
-    ) {
+    fun markPrompted(context: Context, crashAtMs: Long) {
         val dir = AppLog.logDir(context)
         runCatching { dir.mkdirs() }
         val marker = File(dir, PROMPT_MARKER_FILE_NAME)
         runCatching { marker.writeText("crashAtMs=$crashAtMs\n", Charsets.UTF_8) }
     }
 
-    private fun writeCrashFile(
-        context: Context,
-        thread: Thread,
-        throwable: Throwable,
-    ) {
+    private fun writeCrashFile(context: Context, thread: Thread, throwable: Throwable) {
         val nowMs = System.currentTimeMillis()
         val dir = AppLog.logDir(context)
         runCatching { dir.mkdirs() }
@@ -121,3 +103,4 @@ object CrashTracker {
         runCatching { file.writeText(body, Charsets.UTF_8) }
     }
 }
+

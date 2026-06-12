@@ -25,7 +25,9 @@ private val SHOW_IME_RETRY_DELAYS_MS = longArrayOf(60L, 180L)
  *
  * The caller owns [isAlive] to avoid delayed retries after the view/fragment is torn down or edit mode is cancelled.
  */
-fun View.showImeReliable(isAlive: () -> Boolean = { isAttachedToWindow }) {
+fun View.showImeReliable(
+    isAlive: () -> Boolean = { isAttachedToWindow },
+) {
     val startedAtMs = SystemClock.uptimeMillis()
     if (isLaidOut) {
         postIfAlive(isAlive = isAlive) {

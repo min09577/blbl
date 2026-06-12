@@ -4,3 +4,4 @@ data class Zone(
     val title: String,
     val tid: Int?, // null => 全站
 )
+

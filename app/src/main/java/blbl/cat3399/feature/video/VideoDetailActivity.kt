@@ -26,11 +26,11 @@ import blbl.cat3399.core.ui.GridSpanPolicy
 import blbl.cat3399.core.ui.Immersive
 import blbl.cat3399.core.ui.ThemeColor
 import blbl.cat3399.core.ui.cloneInUserScale
-import blbl.cat3399.core.ui.popup.AppPopup
 import blbl.cat3399.core.ui.requestFocusAdapterPositionReliable
 import blbl.cat3399.core.ui.smoothScrollToPositionStart
-import blbl.cat3399.core.util.Format
 import blbl.cat3399.core.util.parseBangumiRedirectUrl
+import blbl.cat3399.core.util.Format
+import blbl.cat3399.core.ui.popup.AppPopup
 import blbl.cat3399.databinding.ActivityVideoDetailBinding
 import blbl.cat3399.feature.following.UpDetailActivity
 import blbl.cat3399.feature.my.BangumiDetailActivity
@@ -43,8 +43,8 @@ import blbl.cat3399.feature.player.VideoCardPlaylistPage
 import blbl.cat3399.feature.player.buildFreshVideoCardPlaylistContinuation
 import blbl.cat3399.feature.player.executeArchiveTripleAction
 import blbl.cat3399.feature.player.parseMultiPagePlaylistFromDetailWithUiCards
-import blbl.cat3399.feature.player.parseUgcSeasonPlaylistFromDetailWithUiCards
 import blbl.cat3399.feature.player.parseVideoCardsToPlaylistParsed
+import blbl.cat3399.feature.player.parseUgcSeasonPlaylistFromDetailWithUiCards
 import blbl.cat3399.feature.player.userMessage
 import blbl.cat3399.feature.tag.TagDetailActivity
 import kotlinx.coroutines.CancellationException
@@ -72,7 +72,6 @@ class VideoDetailActivity : BaseActivity() {
     private var ownerMid: Long? = null
     private var ownerName: String? = null
     private var ownerAvatar: String? = null
-    private var ownerFollowers: String? = null
     private var coverUrl: String? = null
     private var title: String? = null
     private var desc: String? = null
@@ -121,48 +120,6 @@ class VideoDetailActivity : BaseActivity() {
         ownerName = intent.getStringExtra(EXTRA_OWNER_NAME)?.trim()?.takeIf { it.isNotBlank() }
         ownerAvatar = intent.getStringExtra(EXTRA_OWNER_AVATAR)?.trim()?.takeIf { it.isNotBlank() }
         ownerMid = intent.getLongExtra(EXTRA_OWNER_MID, -1L).takeIf { it > 0L }
-
-        // v8.1: 获取UP主粉丝数
-        ownerMid?.takeIf { it > 0L }?.let { mid ->
-            lifecycleScope.launch {
-                runCatching {
-                    val stat = BiliApi.relationStat(mid)
-                    ownerFollowers =
-                        if (stat.follower >= 10000) {
-                            String.format("%.1f万粉", stat.follower / 10000.0)
-                        } else {
-                            "${stat.follower}粉"
-                        }
-                    headerAdapter.update(
-                        title = title,
-                        metaText = metaText,
-                        desc = desc,
-                        coverUrl = coverUrl,
-                        usePosterCover = false,
-                        upName = ownerName,
-                        upAvatar = ownerAvatar,
-                        upFollowers = ownerFollowers,
-                        tabName = tabName,
-                        tags = tags,
-                        primaryButtonText = "播放",
-                        secondaryButtonText = null,
-                        showActions = true,
-                        actionLiked = actionLiked,
-                        actionCoinCount = actionCoinCount,
-                        actionFavored = actionFavored,
-                        partsHeaderText = null,
-                        partsCards = emptyList(),
-                        partsSelectedKey = null,
-                        partsOrderReversed = false,
-                        seasonHeaderText = null,
-                        seasonCards = emptyList(),
-                        seasonSelectedKey = null,
-                        seasonOrderReversed = false,
-                        recommendHeaderText = null,
-                    )
-                }.onFailure { /* ignore */ }
-            }
-        }
 
         if (bvid.isBlank() && aid == null) {
             AppToast.show(this, "缺少 bvid/aid")
@@ -234,13 +191,12 @@ class VideoDetailActivity : BaseActivity() {
                 )
                 addView(
                     ProgressBar(this@VideoDetailActivity),
-                    FrameLayout
-                        .LayoutParams(
-                            FrameLayout.LayoutParams.WRAP_CONTENT,
-                            FrameLayout.LayoutParams.WRAP_CONTENT,
-                        ).apply {
-                            gravity = Gravity.CENTER
-                        },
+                    FrameLayout.LayoutParams(
+                        FrameLayout.LayoutParams.WRAP_CONTENT,
+                        FrameLayout.LayoutParams.WRAP_CONTENT,
+                    ).apply {
+                        gravity = Gravity.CENTER
+                    },
                 )
             }
         setContentView(root)
@@ -297,8 +253,7 @@ class VideoDetailActivity : BaseActivity() {
 
         concatAdapter =
             ConcatAdapter(
-                ConcatAdapter.Config
-                    .Builder()
+                ConcatAdapter.Config.Builder()
                     .setStableIdMode(ConcatAdapter.Config.StableIdMode.ISOLATED_STABLE_IDS)
                     .build(),
                 headerAdapter,
@@ -310,7 +265,9 @@ class VideoDetailActivity : BaseActivity() {
         val lm = GridLayoutManager(this, spanCount)
         lm.spanSizeLookup =
             object : GridLayoutManager.SpanSizeLookup() {
-                override fun getSpanSize(position: Int): Int = if (position == 0) spanCount else 1
+                override fun getSpanSize(position: Int): Int {
+                    return if (position == 0) spanCount else 1
+                }
             }
         binding.recycler.layoutManager = lm
         (binding.recycler.itemAnimator as? SimpleItemAnimator)?.supportsChangeAnimations = false
@@ -347,7 +304,6 @@ class VideoDetailActivity : BaseActivity() {
             usePosterCover = false,
             upName = ownerName,
             upAvatar = ownerAvatar,
-            upFollowers = ownerFollowers,
             tabName = tabName,
             tags = tags,
             primaryButtonText = "播放",
@@ -450,8 +406,6 @@ class VideoDetailActivity : BaseActivity() {
                                 likeCount?.let { "${Format.count(it)}赞" }?.let(::add)
                                 coinCount?.let { "${Format.count(it)}投币" }?.let(::add)
                                 favCount?.let { "${Format.count(it)}收藏" }?.let(::add)
-                                // v9.1: 显示BV号
-                                if (bvid.isNotBlank()) add(bvid)
                             }.joinToString(" · ")
                                 .trim()
                                 .takeIf { it.isNotBlank() }
@@ -486,13 +440,7 @@ class VideoDetailActivity : BaseActivity() {
                             if (seasonId != null && mid != null) {
                                 val archivesPage =
                                     withContext(Dispatchers.IO) {
-                                        runCatching {
-                                            BiliApi.ugcSeasonArchives(
-                                                mid = mid,
-                                                seasonId = seasonId,
-                                                pageSize = 200,
-                                            )
-                                        }.getOrNull()
+                                        runCatching { BiliApi.ugcSeasonArchives(mid = mid, seasonId = seasonId, pageSize = 200) }.getOrNull()
                                     }
                                 if (archivesPage != null) {
                                     val parsedFromApi = parseVideoCardsToPlaylistParsed(archivesPage.items, ::defaultVideoCardPlaylistItem)
@@ -540,12 +488,7 @@ class VideoDetailActivity : BaseActivity() {
             }
     }
 
-    private fun pickPlaylistIndexForCurrentMedia(
-        list: List<PlayerPlaylistItem>,
-        bvid: String,
-        aid: Long?,
-        cid: Long?,
-    ): Int {
+    private fun pickPlaylistIndexForCurrentMedia(list: List<PlayerPlaylistItem>, bvid: String, aid: Long?, cid: Long?): Int {
         val safeBvid = bvid.trim()
         if (cid != null && cid > 0) {
             val byCid = list.indexOfFirst { it.cid == cid }
@@ -681,7 +624,9 @@ class VideoDetailActivity : BaseActivity() {
         }
     }
 
-    private fun buildUgcSeasonPlaylistContinuation(cards: List<blbl.cat3399.core.model.VideoCard>): PlayerPlaylistContinuation? {
+    private fun buildUgcSeasonPlaylistContinuation(
+        cards: List<blbl.cat3399.core.model.VideoCard>,
+    ): PlayerPlaylistContinuation? {
         val seasonId = currentUgcSeasonId?.takeIf { it > 0L } ?: return null
         val mid = currentUgcSeasonOwnerMid?.takeIf { it > 0L } ?: return null
         return buildFreshVideoCardPlaylistContinuation(
@@ -757,7 +702,6 @@ class VideoDetailActivity : BaseActivity() {
             usePosterCover = false,
             upName = ownerName,
             upAvatar = ownerAvatar,
-            upFollowers = ownerFollowers,
             tabName = tabName,
             tags = tags,
             primaryButtonText = "播放",
@@ -778,9 +722,11 @@ class VideoDetailActivity : BaseActivity() {
         )
     }
 
-    private fun partsCardsForDisplay(): List<blbl.cat3399.core.model.VideoCard> = if (partsOrderReversed) currentPartsUiCards.asReversed() else currentPartsUiCards
+    private fun partsCardsForDisplay(): List<blbl.cat3399.core.model.VideoCard> =
+        if (partsOrderReversed) currentPartsUiCards.asReversed() else currentPartsUiCards
 
-    private fun seasonCardsForDisplay(): List<blbl.cat3399.core.model.VideoCard> = if (seasonOrderReversed) currentUgcSeasonUiCards.asReversed() else currentUgcSeasonUiCards
+    private fun seasonCardsForDisplay(): List<blbl.cat3399.core.model.VideoCard> =
+        if (seasonOrderReversed) currentUgcSeasonUiCards.asReversed() else currentUgcSeasonUiCards
 
     private fun buildPartsHeaderText(cardsCount: Int): String? {
         if (cardsCount <= 1) return null
@@ -816,11 +762,10 @@ class VideoDetailActivity : BaseActivity() {
         val safeBvid = card.bvid.trim().takeIf { it.isNotBlank() }
         val safeCid = card.cid?.takeIf { it > 0L }
         val idx =
-            currentUgcSeasonUiCards
-                .indexOfFirst {
-                    (safeCid != null && it.cid == safeCid) ||
-                        (safeBvid != null && it.bvid.trim() == safeBvid)
-                }.takeIf { it >= 0 } ?: return
+            currentUgcSeasonUiCards.indexOfFirst {
+                (safeCid != null && it.cid == safeCid) ||
+                    (safeBvid != null && it.bvid.trim() == safeBvid)
+            }.takeIf { it >= 0 } ?: return
         playSeasonItem(idx)
     }
 
@@ -940,12 +885,7 @@ class VideoDetailActivity : BaseActivity() {
 
         val requestBvid = bvid.trim().takeIf { it.isNotBlank() } ?: return
         val requestAid = aid?.takeIf { it > 0L }
-        val selfMid =
-            BiliClient.cookies
-                .getCookieValue("DedeUserID")
-                ?.trim()
-                ?.toLongOrNull()
-                ?.takeIf { it > 0L }
+        val selfMid = BiliClient.cookies.getCookieValue("DedeUserID")?.trim()?.toLongOrNull()?.takeIf { it > 0L }
         val initialState =
             ArchiveTripleActionState(
                 liked = actionLiked,
@@ -1062,12 +1002,7 @@ class VideoDetailActivity : BaseActivity() {
     private fun onFavButtonClicked() {
         if (tripleActionJob?.isActive == true) return
         if (favDialogJob?.isActive == true || favApplyJob?.isActive == true) return
-        val selfMid =
-            BiliClient.cookies
-                .getCookieValue("DedeUserID")
-                ?.trim()
-                ?.toLongOrNull()
-                ?.takeIf { it > 0L }
+        val selfMid = BiliClient.cookies.getCookieValue("DedeUserID")?.trim()?.toLongOrNull()?.takeIf { it > 0L }
         if (selfMid == null) {
             AppToast.show(this, "请先登录后再收藏")
             return

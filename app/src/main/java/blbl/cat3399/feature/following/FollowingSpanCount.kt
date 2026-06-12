@@ -14,7 +14,6 @@ fun followingSpanCountForWidth(context: Context): Int {
 
     val uiScale = UiScale.factor(context)
     val scaler = context.uiScaler(uiScale)
-
     fun scaledPx(id: Int): Int = scaler.scaledDimenPx(id)
     val itemMargin = scaledPx(R.dimen.following_grid_item_margin)
     val itemPadding = scaledPx(R.dimen.following_grid_item_padding)

@@ -23,10 +23,7 @@ internal class ForegroundRefreshEpochTracker {
 internal class ForegroundRefreshEpochConsumer {
     private var handledEpoch: Long = 0L
 
-    fun shouldRefresh(
-        epoch: Long,
-        enabled: Boolean = true,
-    ): Boolean {
+    fun shouldRefresh(epoch: Long, enabled: Boolean = true): Boolean {
         if (!enabled) return false
         if (epoch <= 0L) return false
         if (handledEpoch >= epoch) return false

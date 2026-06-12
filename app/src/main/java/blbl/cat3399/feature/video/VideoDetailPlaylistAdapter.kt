@@ -37,10 +37,7 @@ class VideoDetailPlaylistAdapter(
         return key.hashCode().toLong()
     }
 
-    override fun onCreateViewHolder(
-        parent: ViewGroup,
-        viewType: Int,
-    ): Vh {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Vh {
         val binding =
             ItemVideoDetailPlaylistBinding.inflate(
                 LayoutInflater.from(parent.context).cloneInUserScale(parent.context),
@@ -50,22 +47,14 @@ class VideoDetailPlaylistAdapter(
         return Vh(binding)
     }
 
-    override fun onBindViewHolder(
-        holder: Vh,
-        position: Int,
-    ) {
+    override fun onBindViewHolder(holder: Vh, position: Int) {
         holder.bind(items[position], onClick)
     }
 
     override fun getItemCount(): Int = items.size
 
-    class Vh(
-        private val binding: ItemVideoDetailPlaylistBinding,
-    ) : RecyclerView.ViewHolder(binding.root) {
-        fun bind(
-            item: PlayerPlaylistItem,
-            onClick: (item: PlayerPlaylistItem, position: Int) -> Unit,
-        ) {
+    class Vh(private val binding: ItemVideoDetailPlaylistBinding) : RecyclerView.ViewHolder(binding.root) {
+        fun bind(item: PlayerPlaylistItem, onClick: (item: PlayerPlaylistItem, position: Int) -> Unit) {
             binding.btn.text = item.title?.trim().takeIf { !it.isNullOrBlank() } ?: "视频"
             binding.btn.setOnClickListener {
                 val pos = bindingAdapterPosition.takeIf { it != RecyclerView.NO_POSITION } ?: return@setOnClickListener

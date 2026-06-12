@@ -56,7 +56,9 @@ class SearchState {
             SearchTab.User -> userPaging
         }
 
-    fun hasMemoryForTab(index: Int): Boolean = index in tabHasMemory.indices && tabHasMemory[index]
+    fun hasMemoryForTab(index: Int): Boolean {
+        return index in tabHasMemory.indices && tabHasMemory[index]
+    }
 
     fun markMemoryForTab(index: Int) {
         if (index !in tabHasMemory.indices) return
@@ -73,10 +75,7 @@ class SearchState {
         return pos.takeIf { it >= 0 }
     }
 
-    fun rememberFocusedResultPosition(
-        index: Int,
-        position: Int,
-    ) {
+    fun rememberFocusedResultPosition(index: Int, position: Int) {
         if (index !in lastFocusedResultPositions.indices) return
         lastFocusedResultPositions[index] = position.coerceAtLeast(0)
     }
@@ -90,7 +89,9 @@ class SearchState {
         lastFocusedResultPositions.fill(-1)
     }
 
-    fun hasPendingResultFocusRequest(): Boolean = pendingFocusFirstResultCardFromTab || pendingFocusResultCardFromContentSwitch
+    fun hasPendingResultFocusRequest(): Boolean {
+        return pendingFocusFirstResultCardFromTab || pendingFocusResultCardFromContentSwitch
+    }
 
     fun clearPendingResultFocusRequests() {
         pendingFocusFirstResultCardFromTab = false

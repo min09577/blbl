@@ -100,7 +100,9 @@ object CustomPageTabRegistry {
     fun isEnabled(
         config: CustomPageConfig,
         isLoggedIn: Boolean = BiliClient.cookies.hasSessData(),
-    ): Boolean = config.enabled && resolvedTabs(config = config, isLoggedIn = isLoggedIn).isNotEmpty()
+    ): Boolean {
+        return config.enabled && resolvedTabs(config = config, isLoggedIn = isLoggedIn).isNotEmpty()
+    }
 
     fun resolvedTabs(
         config: CustomPageConfig,
@@ -174,13 +176,15 @@ object CustomPageTabRegistry {
                     label = label,
                     config = supportedConfig,
                 )
-            }.sortedWith(compareBy({ descriptorFor(it.config)?.itemOrder ?: Int.MAX_VALUE }, { it.label }))
+            }
+            .sortedWith(compareBy({ descriptorFor(it.config)?.itemOrder ?: Int.MAX_VALUE }, { it.label }))
     }
 
-    fun availableSearchSourceKinds(config: CustomPageConfig): List<CustomPageSearchSourceKind> =
-        searchSourceKinds
+    fun availableSearchSourceKinds(config: CustomPageConfig): List<CustomPageSearchSourceKind> {
+        return searchSourceKinds
             .filter { availableSearchHistoryOptions(it.sourceType, config).isNotEmpty() }
             .sortedBy { it.order }
+    }
 
     fun availableSearchHistoryOptions(
         sourceType: String,
@@ -197,7 +201,8 @@ object CustomPageTabRegistry {
                     label = descriptor.tabTitle,
                     config = supportedConfig,
                 )
-            }.sortedWith(compareBy({ descriptorFor(it.config)?.itemOrder ?: Int.MAX_VALUE }, { it.label }))
+            }
+            .sortedWith(compareBy({ descriptorFor(it.config)?.itemOrder ?: Int.MAX_VALUE }, { it.label }))
     }
 
     fun managerLabel(
@@ -223,8 +228,8 @@ object CustomPageTabRegistry {
         return if (sourceKey.isBlank()) sourceType else "$sourceType:$sourceKey"
     }
 
-    private fun addMenuConfigs(): List<CustomPageTabConfig> =
-        buildList {
+    private fun addMenuConfigs(): List<CustomPageTabConfig> {
+        return buildList {
             add(CustomPageTabConfig(sourceType = TYPE_HOME_RECOMMEND))
             add(CustomPageTabConfig(sourceType = TYPE_HOME_POPULAR))
             add(CustomPageTabConfig(sourceType = TYPE_HOME_BANGUMI))
@@ -246,6 +251,7 @@ object CustomPageTabRegistry {
             add(CustomPageTabConfig(sourceType = TYPE_MY_TOVIEW))
             add(CustomPageTabConfig(sourceType = TYPE_MY_LIKE))
         }
+    }
 
     private fun descriptorFor(config: CustomPageTabConfig): Descriptor? {
         return when (config.sourceType) {
@@ -440,12 +446,13 @@ object CustomPageTabRegistry {
         }
     }
 
-    private fun searchHistoryConfigs(kind: CustomPageSearchSourceKind): List<CustomPageTabConfig> =
-        BiliClient.prefs.searchHistory.mapNotNull { keyword ->
+    private fun searchHistoryConfigs(kind: CustomPageSearchSourceKind): List<CustomPageTabConfig> {
+        return BiliClient.prefs.searchHistory.mapNotNull { keyword ->
             keyword.trim().takeIf { it.isNotBlank() }?.let {
                 CustomPageTabConfig(sourceType = kind.sourceType, sourceKey = it)
             }
         }
+    }
 
     private fun searchKindForSourceType(sourceType: String): CustomPageSearchSourceKind? {
         val type = sourceType.trim().lowercase()

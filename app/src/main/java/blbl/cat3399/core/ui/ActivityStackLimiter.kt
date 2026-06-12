@@ -12,11 +12,7 @@ object ActivityStackLimiter {
     private val lock = Any()
     private val entries = ArrayList<Entry>()
 
-    fun register(
-        group: String,
-        activity: Activity,
-        maxDepth: Int,
-    ) {
+    fun register(group: String, activity: Activity, maxDepth: Int) {
         if (group.isBlank()) return
         if (maxDepth <= 0) return
 
@@ -38,10 +34,7 @@ object ActivityStackLimiter {
         toFinish.forEach { it.finish() }
     }
 
-    fun unregister(
-        group: String,
-        activity: Activity,
-    ) {
+    fun unregister(group: String, activity: Activity) {
         if (group.isBlank()) return
         synchronized(lock) {
             entries.removeAll { e ->
@@ -64,3 +57,4 @@ object ActivityStackLimiter {
         return c
     }
 }
+

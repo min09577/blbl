@@ -26,35 +26,11 @@ object AppLog {
     // Never block callers. When the buffer is full, drop the oldest log events.
     private const val FILE_EVENT_BUFFER = 256
 
-    fun v(
-        tag: String,
-        msg: String,
-        tr: Throwable? = null,
-    ) = log(Log.VERBOSE, tag, msg, tr)
-
-    fun d(
-        tag: String,
-        msg: String,
-        tr: Throwable? = null,
-    ) = log(Log.DEBUG, tag, msg, tr)
-
-    fun i(
-        tag: String,
-        msg: String,
-        tr: Throwable? = null,
-    ) = log(Log.INFO, tag, msg, tr)
-
-    fun w(
-        tag: String,
-        msg: String,
-        tr: Throwable? = null,
-    ) = log(Log.WARN, tag, msg, tr)
-
-    fun e(
-        tag: String,
-        msg: String,
-        tr: Throwable? = null,
-    ) = log(Log.ERROR, tag, msg, tr)
+    fun v(tag: String, msg: String, tr: Throwable? = null) = log(Log.VERBOSE, tag, msg, tr)
+    fun d(tag: String, msg: String, tr: Throwable? = null) = log(Log.DEBUG, tag, msg, tr)
+    fun i(tag: String, msg: String, tr: Throwable? = null) = log(Log.INFO, tag, msg, tr)
+    fun w(tag: String, msg: String, tr: Throwable? = null) = log(Log.WARN, tag, msg, tr)
+    fun e(tag: String, msg: String, tr: Throwable? = null) = log(Log.ERROR, tag, msg, tr)
 
     private val scope = CoroutineScope(SupervisorJob() + Dispatchers.IO)
     private val initialized = AtomicBoolean(false)
@@ -113,14 +89,11 @@ object AppLog {
         }
     }
 
-    fun logDir(context: Context): File = File(context.applicationContext.filesDir, LOG_DIR_NAME)
+    fun logDir(context: Context): File {
+        return File(context.applicationContext.filesDir, LOG_DIR_NAME)
+    }
 
-    private fun log(
-        priority: Int,
-        tag: String,
-        msg: String,
-        tr: Throwable?,
-    ) {
+    private fun log(priority: Int, tag: String, msg: String, tr: Throwable?) {
         val fullTag = "$PREFIX/$tag"
         val rendered =
             if (tr == null) {
@@ -148,11 +121,11 @@ object AppLog {
     private fun buildSessionFileName(startedAtMs: Long): String {
         val sdf = SimpleDateFormat("yyyyMMdd_HHmmss_SSS", Locale.US)
         val ts = runCatching { sdf.format(Date(startedAtMs)) }.getOrNull() ?: startedAtMs.toString()
-        return "blbl_$ts.log"
+        return "blbl_${ts}.log"
     }
 
-    private fun priorityToLetter(priority: Int): Char =
-        when (priority) {
+    private fun priorityToLetter(priority: Int): Char {
+        return when (priority) {
             Log.VERBOSE -> 'V'
             Log.DEBUG -> 'D'
             Log.INFO -> 'I'
@@ -161,6 +134,7 @@ object AppLog {
             Log.ASSERT -> 'A'
             else -> '?'
         }
+    }
 
     private suspend fun runFileWriter(file: File) {
         val sdf = SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS", Locale.US)
@@ -250,16 +224,11 @@ object AppLog {
         }
     }
 
-    private fun cleanupLogs(
-        dir: File,
-        keep: File?,
-    ) {
+    private fun cleanupLogs(dir: File, keep: File?) {
         val keepPath = runCatching { keep?.canonicalPath }.getOrNull()
         val all =
             runCatching {
-                dir
-                    .listFiles()
-                    ?.asSequence()
+                dir.listFiles()?.asSequence()
                     ?.filter { it.isFile && it.name.endsWith(".log") }
                     ?.sortedBy { it.lastModified() }
                     ?.toMutableList()

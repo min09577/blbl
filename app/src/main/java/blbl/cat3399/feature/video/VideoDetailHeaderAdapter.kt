@@ -4,16 +4,15 @@ import android.text.Layout
 import android.text.StaticLayout
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
 import androidx.core.view.isVisible
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import blbl.cat3399.core.model.VideoTag
 import blbl.cat3399.core.image.ImageLoader
 import blbl.cat3399.core.image.ImageUrl
 import blbl.cat3399.core.model.VideoCard
-import blbl.cat3399.core.model.VideoTag
-import blbl.cat3399.core.net.BiliClient
 import blbl.cat3399.core.ui.cloneInUserScale
 import blbl.cat3399.databinding.ItemVideoDetailHeaderBinding
 import blbl.cat3399.feature.player.HoldToTriggerController
@@ -52,7 +51,6 @@ class VideoDetailHeaderAdapter(
     private var usePosterCover: Boolean = false
     private var upName: String? = null
     private var upAvatar: String? = null
-    private var upFollowers: String? = null
     private var tabName: String? = null
     private var tags: List<VideoTag> = emptyList()
 
@@ -87,47 +85,17 @@ class VideoDetailHeaderAdapter(
 
     override fun getItemCount(): Int = 1
 
-    fun requestFocusPlay(): Boolean =
-        holderRef
-            ?.get()
-            ?.binding
-            ?.btnPlay
-            ?.requestFocus() == true
+    fun requestFocusPlay(): Boolean = holderRef?.get()?.binding?.btnPlay?.requestFocus() == true
 
-    fun requestFocusLike(): Boolean =
-        holderRef
-            ?.get()
-            ?.binding
-            ?.btnLike
-            ?.requestFocus() == true
+    fun requestFocusLike(): Boolean = holderRef?.get()?.binding?.btnLike?.requestFocus() == true
 
-    fun requestFocusCoin(): Boolean =
-        holderRef
-            ?.get()
-            ?.binding
-            ?.btnCoin
-            ?.requestFocus() == true
+    fun requestFocusCoin(): Boolean = holderRef?.get()?.binding?.btnCoin?.requestFocus() == true
 
-    fun requestFocusFav(): Boolean =
-        holderRef
-            ?.get()
-            ?.binding
-            ?.btnFav
-            ?.requestFocus() == true
+    fun requestFocusFav(): Boolean = holderRef?.get()?.binding?.btnFav?.requestFocus() == true
 
-    fun requestFocusPartsOrder(): Boolean =
-        holderRef
-            ?.get()
-            ?.binding
-            ?.btnPartsOrder
-            ?.requestFocus() == true
+    fun requestFocusPartsOrder(): Boolean = holderRef?.get()?.binding?.btnPartsOrder?.requestFocus() == true
 
-    fun requestFocusSeasonOrder(): Boolean =
-        holderRef
-            ?.get()
-            ?.binding
-            ?.btnSeasonOrder
-            ?.requestFocus() == true
+    fun requestFocusSeasonOrder(): Boolean = holderRef?.get()?.binding?.btnSeasonOrder?.requestFocus() == true
 
     fun invalidateSizing() {
         notifyItemChanged(0)
@@ -142,7 +110,6 @@ class VideoDetailHeaderAdapter(
         usePosterCover: Boolean,
         upName: String?,
         upAvatar: String?,
-        upFollowers: String? = null,
         tabName: String?,
         tags: List<VideoTag>,
         primaryButtonText: String?,
@@ -168,7 +135,7 @@ class VideoDetailHeaderAdapter(
         val nextDescKey = desc?.trim()?.takeIf { it.isNotBlank() }
         if (nextDescKey != descKey) {
             descKey = nextDescKey
-            descExpanded = BiliClient.prefs.autoExpandDesc
+            descExpanded = false
         }
 
         this.title = title
@@ -179,7 +146,6 @@ class VideoDetailHeaderAdapter(
         this.usePosterCover = usePosterCover
         this.upName = upName
         this.upAvatar = upAvatar
-        this.upFollowers = upFollowers
         this.tabName = tabName
         this.tags = tags
 
@@ -208,10 +174,7 @@ class VideoDetailHeaderAdapter(
         notifyItemChanged(0)
     }
 
-    override fun onCreateViewHolder(
-        parent: ViewGroup,
-        viewType: Int,
-    ): Vh {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Vh {
         val binding =
             ItemVideoDetailHeaderBinding.inflate(
                 LayoutInflater.from(parent.context).cloneInUserScale(parent.context),
@@ -247,10 +210,7 @@ class VideoDetailHeaderAdapter(
         )
     }
 
-    override fun onBindViewHolder(
-        holder: Vh,
-        position: Int,
-    ) {
+    override fun onBindViewHolder(holder: Vh, position: Int) {
         holder.bind(
             title = title,
             metaText = metaText,
@@ -261,7 +221,6 @@ class VideoDetailHeaderAdapter(
             usePosterCover = usePosterCover,
             upName = upName,
             upAvatar = upAvatar,
-            upFollowers = upFollowers,
             tabName = tabName,
             tags = tags,
             primaryButtonText = primaryButtonText,
@@ -408,7 +367,6 @@ class VideoDetailHeaderAdapter(
             usePosterCover: Boolean,
             upName: String?,
             upAvatar: String?,
-            upFollowers: String?,
             tabName: String?,
             tags: List<VideoTag>,
             primaryButtonText: String?,
@@ -466,10 +424,6 @@ class VideoDetailHeaderAdapter(
                 binding.tvUpName.text = safeUpName
                 ImageLoader.loadInto(binding.ivUpAvatar, ImageUrl.avatar(upAvatar))
             }
-            val sf = upFollowers
-            val safeFollowers = if (sf != null && sf.isNotBlank()) sf.trim() else null
-            binding.tvUpFollowers.isVisible = safeFollowers != null
-            binding.tvUpFollowers.text = safeFollowers.orEmpty()
 
             bindDesc(desc = desc, expanded = descExpanded)
 
@@ -584,10 +538,7 @@ class VideoDetailHeaderAdapter(
             likeHoldController.cancel(resetTriggered = true)
         }
 
-        private fun bindDesc(
-            desc: String?,
-            expanded: Boolean,
-        ) {
+        private fun bindDesc(desc: String?, expanded: Boolean) {
             val safeDesc = desc?.trim().takeIf { !it.isNullOrBlank() }
             binding.tvDesc.text = safeDesc ?: "暂无简介"
             lastDescLayoutKey = safeDesc
@@ -608,10 +559,7 @@ class VideoDetailHeaderAdapter(
             binding.layoutDesc.isClickable = expandable
         }
 
-        private fun applyDescExpanded(
-            expanded: Boolean,
-            expandable: Boolean = true,
-        ) {
+        private fun applyDescExpanded(expanded: Boolean, expandable: Boolean = true) {
             if (expanded) {
                 binding.tvDesc.maxLines = Int.MAX_VALUE
                 binding.tvDescMoreIndicator.isVisible = false
@@ -681,10 +629,7 @@ class VideoDetailHeaderAdapter(
             binding.clCoverContainer.layoutParams = params
         }
 
-        private fun maybeAutoScrollParts(
-            partsCards: List<VideoCard>,
-            selectedKey: String?,
-        ) {
+        private fun maybeAutoScrollParts(partsCards: List<VideoCard>, selectedKey: String?) {
             val safeSelected = selectedKey?.trim()?.takeIf { it.isNotBlank() } ?: return
             val idx = partsCards.indexOfFirst { cardStableKey(it) == safeSelected }.takeIf { it >= 0 } ?: return
 
@@ -700,10 +645,7 @@ class VideoDetailHeaderAdapter(
             }
         }
 
-        private fun maybeAutoScrollSeason(
-            seasonCards: List<VideoCard>,
-            selectedKey: String?,
-        ) {
+        private fun maybeAutoScrollSeason(seasonCards: List<VideoCard>, selectedKey: String?) {
             val safeSelected = selectedKey?.trim()?.takeIf { it.isNotBlank() } ?: return
             val idx = seasonCards.indexOfFirst { cardStableKey(it) == safeSelected }.takeIf { it >= 0 } ?: return
 

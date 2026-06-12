@@ -32,10 +32,7 @@ import blbl.cat3399.ui.RefreshKeyHandler
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.launch
 
-class MyLikeFragment :
-    Fragment(),
-    MyTabSwitchFocusTarget,
-    RefreshKeyHandler {
+class MyLikeFragment : Fragment(), MyTabSwitchFocusTarget, RefreshKeyHandler {
     private var _binding: FragmentVideoGridBinding? = null
     private val binding get() = _binding!!
 
@@ -46,19 +43,12 @@ class MyLikeFragment :
     private var pendingFocusFirstItemAfterRefresh: Boolean = false
     private var dpadGridController: DpadGridController? = null
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?,
-    ): View {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         _binding = FragmentVideoGridBinding.inflate(inflater, container, false)
         return binding.root
     }
 
-    override fun onViewCreated(
-        view: View,
-        savedInstanceState: Bundle?,
-    ) {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         if (!::adapter.isInitialized) {
             val actionController =
                 VideoCardActionController(
@@ -122,7 +112,9 @@ class MyLikeFragment :
                             return true
                         }
 
-                        override fun onLeftEdge(): Boolean = switchToPrevMyTabFromContentEdge()
+                        override fun onLeftEdge(): Boolean {
+                            return switchToPrevMyTabFromContentEdge()
+                        }
 
                         override fun onRightEdge() {
                             switchToNextMyTabFromContentEdge()

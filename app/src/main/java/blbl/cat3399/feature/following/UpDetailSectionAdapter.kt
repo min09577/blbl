@@ -11,8 +11,8 @@ import blbl.cat3399.R
 import blbl.cat3399.core.model.VideoCard
 import blbl.cat3399.core.ui.FocusTreeUtils
 import blbl.cat3399.core.ui.cloneInUserScale
-import blbl.cat3399.core.ui.postDelayedIfAlive
 import blbl.cat3399.core.ui.postIfAlive
+import blbl.cat3399.core.ui.postDelayedIfAlive
 import blbl.cat3399.databinding.ItemUpSectionBinding
 import blbl.cat3399.feature.video.VideoCardAdapter
 import kotlin.math.roundToInt
@@ -59,10 +59,7 @@ class UpDetailSectionAdapter(
         notifyItemRangeInserted(start, list.size)
     }
 
-    fun appendVideos(
-        sectionStableId: String,
-        videos: List<VideoCard>,
-    ) {
+    fun appendVideos(sectionStableId: String, videos: List<VideoCard>) {
         if (videos.isEmpty()) return
         val pos = items.indexOfFirst { it.stableId == sectionStableId }
         if (pos < 0) return
@@ -78,10 +75,7 @@ class UpDetailSectionAdapter(
         }
     }
 
-    fun requestVideoFocus(
-        sectionStableId: String,
-        index: Int,
-    ): Boolean {
+    fun requestVideoFocus(sectionStableId: String, index: Int): Boolean {
         val rv = attachedRecyclerView ?: return false
         val pos = items.indexOfFirst { it.stableId == sectionStableId }
         if (pos < 0) return false
@@ -109,10 +103,7 @@ class UpDetailSectionAdapter(
         super.onDetachedFromRecyclerView(recyclerView)
     }
 
-    override fun onCreateViewHolder(
-        parent: ViewGroup,
-        viewType: Int,
-    ): Vh {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Vh {
         val binding =
             ItemUpSectionBinding.inflate(
                 LayoutInflater.from(parent.context).cloneInUserScale(parent.context),
@@ -122,10 +113,7 @@ class UpDetailSectionAdapter(
         return Vh(binding, onVideoClick, onRequestLoadMore, onRequestMoveToTabs)
     }
 
-    override fun onBindViewHolder(
-        holder: Vh,
-        position: Int,
-    ) = holder.bind(items[position])
+    override fun onBindViewHolder(holder: Vh, position: Int) = holder.bind(items[position])
 
     override fun getItemCount(): Int = items.size
 
@@ -167,18 +155,15 @@ class UpDetailSectionAdapter(
                 }
             val titleText =
                 if (section.totalCount != null && section.totalCount > 0) {
-                    "$kindPrefix：${section.title}（${section.totalCount}）"
+                    "${kindPrefix}：${section.title}（${section.totalCount}）"
                 } else {
-                    "$kindPrefix：${section.title}"
+                    "${kindPrefix}：${section.title}"
                 }
             binding.tvTitle.text = titleText
             videoAdapter.submit(section.videos)
         }
 
-        fun appendVideos(
-            updatedSection: UpDetailSection,
-            newVideos: List<VideoCard>,
-        ) {
+        fun appendVideos(updatedSection: UpDetailSection, newVideos: List<VideoCard>) {
             boundSection = updatedSection
             videoAdapter.append(newVideos)
         }
@@ -197,8 +182,7 @@ class UpDetailSectionAdapter(
 
                             val holder = recycler.findContainingViewHolder(view)
                             val pos =
-                                holder
-                                    ?.bindingAdapterPosition
+                                holder?.bindingAdapterPosition
                                     ?.takeIf { it != RecyclerView.NO_POSITION }
                                     ?: return@setOnKeyListener false
                             val total = recycler.adapter?.itemCount ?: 0
@@ -275,10 +259,7 @@ class UpDetailSectionAdapter(
             )
         }
 
-        private fun requestVideoFocus(
-            position: Int,
-            attempt: Int,
-        ) {
+        private fun requestVideoFocus(position: Int, attempt: Int) {
             val recycler = binding.recyclerVideos
             val isUiAlive = { bindingAdapterPosition != RecyclerView.NO_POSITION && recycler.isAttachedToWindow }
             recycler.postIfAlive(isAlive = isUiAlive) {
@@ -287,13 +268,7 @@ class UpDetailSectionAdapter(
 
                 if (attempt >= 30) return@postIfAlive
                 recycler.scrollToPosition(position)
-                recycler.postDelayedIfAlive(delayMillis = 16, isAlive = isUiAlive) {
-                    requestVideoFocus(
-                        position = position,
-                        attempt =
-                            attempt + 1,
-                    )
-                }
+                recycler.postDelayedIfAlive(delayMillis = 16, isAlive = isUiAlive) { requestVideoFocus(position = position, attempt = attempt + 1) }
             }
         }
     }

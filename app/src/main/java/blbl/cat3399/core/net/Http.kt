@@ -11,29 +11,20 @@ import java.net.UnknownHostException
 import kotlin.coroutines.resume
 import kotlin.coroutines.resumeWithException
 
-suspend fun Call.await(): Response =
-    suspendCancellableCoroutine { cont ->
-        cont.invokeOnCancellation {
-            runCatching { cancel() }
-        }
-        enqueue(
-            object : okhttp3.Callback {
-                override fun onFailure(
-                    call: Call,
-                    e: IOException,
-                ) {
-                    if (!cont.isCancelled) cont.resumeWithException(e)
-                }
-
-                override fun onResponse(
-                    call: Call,
-                    response: Response,
-                ) {
-                    cont.resume(response)
-                }
-            },
-        )
+suspend fun Call.await(): Response = suspendCancellableCoroutine { cont ->
+    cont.invokeOnCancellation {
+        runCatching { cancel() }
     }
+    enqueue(object : okhttp3.Callback {
+        override fun onFailure(call: Call, e: IOException) {
+            if (!cont.isCancelled) cont.resumeWithException(e)
+        }
+
+        override fun onResponse(call: Call, response: Response) {
+            cont.resume(response)
+        }
+    })
+}
 
 fun ipv4OnlyDns(ipv4OnlyEnabled: () -> Boolean): Dns =
     object : Dns {

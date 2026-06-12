@@ -24,10 +24,7 @@ import blbl.cat3399.ui.RefreshKeyHandler
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.launch
 
-class MyBangumiFollowFragment :
-    Fragment(),
-    MyTabSwitchFocusTarget,
-    RefreshKeyHandler {
+class MyBangumiFollowFragment : Fragment(), MyTabSwitchFocusTarget, RefreshKeyHandler {
     private var _binding: FragmentVideoGridBinding? = null
     private val binding get() = _binding!!
 
@@ -41,33 +38,25 @@ class MyBangumiFollowFragment :
     private var pendingFocusFirstItemAfterRefresh: Boolean = false
     private var dpadGridController: DpadGridController? = null
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?,
-    ): View {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         _binding = FragmentVideoGridBinding.inflate(inflater, container, false)
         return binding.root
     }
 
-    override fun onViewCreated(
-        view: View,
-        savedInstanceState: Bundle?,
-    ) {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         if (!::adapter.isInitialized) {
-            adapter =
-                BangumiFollowAdapter { position, season ->
-                    val nav = findMyNavigator()
-                    if (nav != null) {
-                        pendingRestorePosition = position
-                        nav.openBangumiDetail(
-                            seasonId = season.seasonId,
-                            isDrama = type == 2,
-                            continueEpId = season.lastEpId,
-                            continueEpIndex = season.lastEpIndex,
-                        )
-                    }
+            adapter = BangumiFollowAdapter { position, season ->
+                val nav = findMyNavigator()
+                if (nav != null) {
+                    pendingRestorePosition = position
+                    nav.openBangumiDetail(
+                        seasonId = season.seasonId,
+                        isDrama = type == 2,
+                        continueEpId = season.lastEpId,
+                        continueEpIndex = season.lastEpIndex,
+                    )
                 }
+            }
         }
         binding.recycler.adapter = adapter
         binding.recycler.setHasFixedSize(true)
@@ -85,7 +74,9 @@ class MyBangumiFollowFragment :
                             return true
                         }
 
-                        override fun onLeftEdge(): Boolean = switchToPrevMyTabFromContentEdge()
+                        override fun onLeftEdge(): Boolean {
+                            return switchToPrevMyTabFromContentEdge()
+                        }
 
                         override fun onRightEdge() {
                             switchToNextMyTabFromContentEdge()
@@ -104,11 +95,7 @@ class MyBangumiFollowFragment :
             ).also { it.install() }
         binding.recycler.addOnScrollListener(
             object : RecyclerView.OnScrollListener() {
-                override fun onScrolled(
-                    recyclerView: RecyclerView,
-                    dx: Int,
-                    dy: Int,
-                ) {
+                override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
                     if (dy <= 0) return
                     val s = paging.snapshot()
                     if (s.isLoading || s.endReached) return

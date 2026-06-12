@@ -19,13 +19,13 @@ import blbl.cat3399.core.paging.appliedOrNull
 import blbl.cat3399.core.ui.AppToast
 import blbl.cat3399.core.ui.DpadGridController
 import blbl.cat3399.core.ui.FocusTreeUtils
-import blbl.cat3399.core.ui.GridSpanPolicy
 import blbl.cat3399.core.ui.GridViewportFillMonitor
+import blbl.cat3399.core.ui.GridSpanPolicy
 import blbl.cat3399.core.ui.TabContentSwitchFocusHost
 import blbl.cat3399.core.ui.TabSwitchFocusTarget
-import blbl.cat3399.core.ui.installGridViewportFillMonitor
 import blbl.cat3399.core.ui.postIfAlive
 import blbl.cat3399.core.ui.postIfAttached
+import blbl.cat3399.core.ui.installGridViewportFillMonitor
 import blbl.cat3399.core.ui.requestFocusAdapterPositionReliable
 import blbl.cat3399.core.ui.requestFocusFirstItemOrSelfAfterRefresh
 import blbl.cat3399.databinding.FragmentVideoGridBinding
@@ -35,10 +35,7 @@ import blbl.cat3399.ui.RefreshKeyHandler
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.launch
 
-class VideoGridFragment :
-    Fragment(),
-    RefreshKeyHandler,
-    TabSwitchFocusTarget {
+class VideoGridFragment : Fragment(), RefreshKeyHandler, TabSwitchFocusTarget {
     private data class PagingKey(
         val page: Int,
         val recommendFetchRow: Int,
@@ -73,20 +70,13 @@ class VideoGridFragment :
     private var viewportFillMonitor: GridViewportFillMonitor? = null
     private var pendingFocusFirstCardAfterRefresh: Boolean = false
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?,
-    ): View {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         _binding = FragmentVideoGridBinding.inflate(inflater, container, false)
         AppLog.d("VideoGrid", "onCreateView source=$source rid=$rid t=${SystemClock.uptimeMillis()}")
         return binding.root
     }
 
-    override fun onViewCreated(
-        view: View,
-        savedInstanceState: Bundle?,
-    ) {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         AppLog.d("VideoGrid", "onViewCreated source=$source rid=$rid t=${SystemClock.uptimeMillis()}")
         if (!::adapter.isInitialized) {
             val actionController =
@@ -123,18 +113,12 @@ class VideoGridFragment :
         }
         binding.recycler.adapter = adapter
         binding.recycler.setHasFixedSize(true)
-        // v4.1: 增加RecyclerView缓存，提升滚动流畅度
-        binding.recycler.setItemViewCacheSize(10)
         binding.recycler.layoutManager = GridLayoutManager(requireContext(), spanCountForWidth())
         (binding.recycler.itemAnimator as? androidx.recyclerview.widget.SimpleItemAnimator)?.supportsChangeAnimations = false
         binding.recycler.clearOnScrollListeners()
         binding.recycler.addOnScrollListener(
             object : RecyclerView.OnScrollListener() {
-                override fun onScrolled(
-                    recyclerView: RecyclerView,
-                    dx: Int,
-                    dy: Int,
-                ) {
+                override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
                     if (dy <= 0) return
                     val s = paging.snapshot()
                     if (s.isLoading || s.endReached) return
@@ -162,7 +146,9 @@ class VideoGridFragment :
                             return true
                         }
 
-                        override fun onLeftEdge(): Boolean = switchToPrevTabFromContentEdge()
+                        override fun onLeftEdge(): Boolean {
+                            return switchToPrevTabFromContentEdge()
+                        }
 
                         override fun onRightEdge() {
                             switchToNextTabFromContentEdge()
@@ -526,8 +512,8 @@ class VideoGridFragment :
     private suspend fun fetchRawPage(
         key: PagingKey,
         ps: Int,
-    ): FetchedPage =
-        when (source) {
+    ): FetchedPage {
+        return when (source) {
             SRC_RECOMMEND -> {
                 val items = BiliApi.recommend(freshIdx = key.page, ps = ps, fetchRow = key.recommendFetchRow)
                 FetchedPage(
@@ -577,6 +563,7 @@ class VideoGridFragment :
                 )
             }
         }
+    }
 
     private fun openDetail(position: Int) {
         requireContext().openVideoDetailFromPlaybackHandle(playbackHandle(), position)
@@ -609,25 +596,19 @@ class VideoGridFragment :
         const val SRC_SEARCH = "search"
 
         fun newRecommend() = VideoGridFragment().apply { arguments = Bundle().apply { putString(ARG_SOURCE, SRC_RECOMMEND) } }
-
         fun newPopular() = VideoGridFragment().apply { arguments = Bundle().apply { putString(ARG_SOURCE, SRC_POPULAR) } }
-
-        fun newRegion(rid: Int) =
-            VideoGridFragment().apply {
-                arguments =
-                    Bundle().apply {
-                        putString(ARG_SOURCE, SRC_REGION)
-                        putInt(ARG_RID, rid)
-                    }
+        fun newRegion(rid: Int) = VideoGridFragment().apply {
+            arguments = Bundle().apply {
+                putString(ARG_SOURCE, SRC_REGION)
+                putInt(ARG_RID, rid)
             }
+        }
 
-        fun newSearch(keyword: String) =
-            VideoGridFragment().apply {
-                arguments =
-                    Bundle().apply {
-                        putString(ARG_SOURCE, SRC_SEARCH)
-                        putString(ARG_SEARCH_KEYWORD, keyword.trim())
-                    }
+        fun newSearch(keyword: String) = VideoGridFragment().apply {
+            arguments = Bundle().apply {
+                putString(ARG_SOURCE, SRC_SEARCH)
+                putString(ARG_SEARCH_KEYWORD, keyword.trim())
             }
+        }
     }
 }
