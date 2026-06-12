@@ -9,17 +9,17 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.SimpleItemAnimator
+import blbl.cat3399.R
 import blbl.cat3399.core.api.BiliApi
 import blbl.cat3399.core.log.AppLog
-import blbl.cat3399.R
 import blbl.cat3399.core.net.BiliClient
 import blbl.cat3399.core.ui.AppToast
 import blbl.cat3399.core.ui.BackButtonSizingHelper
 import blbl.cat3399.core.ui.DpadGridController
 import blbl.cat3399.core.ui.GridViewportFillMonitor
 import blbl.cat3399.core.ui.UiScale
-import blbl.cat3399.core.ui.postIfAlive
 import blbl.cat3399.core.ui.installGridViewportFillMonitor
+import blbl.cat3399.core.ui.postIfAlive
 import blbl.cat3399.core.ui.requestFocusFirstItemOrSelfAfterRefresh
 import blbl.cat3399.core.ui.setTextSizePxIfChanged
 import blbl.cat3399.core.ui.uiScaler
@@ -31,7 +31,6 @@ import blbl.cat3399.feature.video.VideoCardAdapter
 import blbl.cat3399.feature.video.VideoCardDismissBehavior
 import blbl.cat3399.feature.video.VideoCardVisibilityFilter
 import blbl.cat3399.feature.video.buildPagedVideoCardPlaybackHandle
-import blbl.cat3399.feature.video.defaultVideoCardPlaylistItem
 import blbl.cat3399.feature.video.openVideoDetailFromPlaybackHandle
 import blbl.cat3399.feature.video.openVideoFromPlaybackHandle
 import blbl.cat3399.feature.video.removeVideoCardAndRestoreFocus
@@ -39,7 +38,9 @@ import blbl.cat3399.ui.RefreshKeyHandler
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.launch
 
-class MyFavFolderDetailFragment : Fragment(), RefreshKeyHandler {
+class MyFavFolderDetailFragment :
+    Fragment(),
+    RefreshKeyHandler {
     private var _binding: FragmentMyFavFolderDetailBinding? = null
     private val binding get() = _binding!!
 
@@ -59,12 +60,19 @@ class MyFavFolderDetailFragment : Fragment(), RefreshKeyHandler {
     private var dpadGridController: DpadGridController? = null
     private var viewportFillMonitor: GridViewportFillMonitor? = null
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?,
+    ): View {
         _binding = FragmentMyFavFolderDetailBinding.inflate(inflater, container, false)
         return binding.root
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+    override fun onViewCreated(
+        view: View,
+        savedInstanceState: Bundle?,
+    ) {
         binding.btnBack.setOnClickListener { parentFragmentManager.popBackStackImmediate() }
         binding.tvTitle.text = title.ifBlank { getString(R.string.my_fav_default_title) }
         applyHeaderSizing(uiScale = UiScale.factor(requireContext()))
@@ -108,7 +116,11 @@ class MyFavFolderDetailFragment : Fragment(), RefreshKeyHandler {
         binding.recycler.clearOnScrollListeners()
         binding.recycler.addOnScrollListener(
             object : RecyclerView.OnScrollListener() {
-                override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
+                override fun onScrolled(
+                    recyclerView: RecyclerView,
+                    dx: Int,
+                    dy: Int,
+                ) {
                     if (dy <= 0) return
                     if (isLoadingMore || endReached) return
                     val lm = recyclerView.layoutManager as? GridLayoutManager ?: return
@@ -168,7 +180,6 @@ class MyFavFolderDetailFragment : Fragment(), RefreshKeyHandler {
             binding.swipeRefresh.isRefreshing = true
             resetAndLoad()
         }
-
     }
 
     override fun onResume() {
@@ -308,12 +319,16 @@ class MyFavFolderDetailFragment : Fragment(), RefreshKeyHandler {
         private const val ARG_MEDIA_ID = "media_id"
         private const val ARG_TITLE = "title"
 
-        fun newInstance(mediaId: Long, title: String): MyFavFolderDetailFragment =
+        fun newInstance(
+            mediaId: Long,
+            title: String,
+        ): MyFavFolderDetailFragment =
             MyFavFolderDetailFragment().apply {
-                arguments = Bundle().apply {
-                    putLong(ARG_MEDIA_ID, mediaId)
-                    putString(ARG_TITLE, title)
-                }
+                arguments =
+                    Bundle().apply {
+                        putLong(ARG_MEDIA_ID, mediaId)
+                        putString(ARG_TITLE, title)
+                    }
             }
     }
 }

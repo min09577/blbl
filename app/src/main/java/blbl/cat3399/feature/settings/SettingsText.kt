@@ -43,7 +43,7 @@ object SettingsText {
     fun subtitleBottomPaddingText(fraction: Float): String {
         val v = fraction.takeIf { it.isFinite() } ?: 0.16f
         val pct = (v.coerceIn(0f, 0.30f) * 100f).roundToInt()
-        return "${pct}%"
+        return "$pct%"
     }
 
     fun subtitleBackgroundOpacityText(opacity: Float): String {
@@ -81,7 +81,10 @@ object SettingsText {
             else -> "关注时间"
         }
 
-    fun startupPageText(context: Context, prefValue: String): String = MainRootNavRegistry.startupTitle(context, prefValue)
+    fun startupPageText(
+        context: Context,
+        prefValue: String,
+    ): String = MainRootNavRegistry.startupTitle(context, prefValue)
 
     fun customPageContentText(config: CustomPageConfig): String {
         if (config.tabs.isEmpty()) return "未配置"
@@ -90,7 +93,10 @@ object SettingsText {
         return labels.take(2).joinToString(separator = " / ") + " 等${labels.size}项"
     }
 
-    fun mainHomeVisibleTabsText(context: Context, selectedKeys: List<String>): String {
+    fun mainHomeVisibleTabsText(
+        context: Context,
+        selectedKeys: List<String>,
+    ): String {
         return visibleTabsText(
             options = HomeTabs.all.map { it.key to context.getString(it.titleRes) },
             selectedKeys = selectedKeys,
@@ -111,14 +117,20 @@ object SettingsText {
         )
     }
 
-    fun mainMyVisibleTabsText(context: Context, selectedKeys: List<String>): String {
+    fun mainMyVisibleTabsText(
+        context: Context,
+        selectedKeys: List<String>,
+    ): String {
         return visibleTabsText(
             options = MyTabs.all.map { it.key to context.getString(it.titleRes) },
             selectedKeys = selectedKeys,
         )
     }
 
-    private fun visibleTabsText(options: List<Pair<String, String>>, selectedKeys: List<String>): String {
+    private fun visibleTabsText(
+        options: List<Pair<String, String>>,
+        selectedKeys: List<String>,
+    ): String {
         val selected = selectedKeys.takeIf { it.isNotEmpty() }?.toSet()
         val labels =
             if (selected == null) {
@@ -273,7 +285,7 @@ object SettingsText {
             }
 
         // Settings -> Device Info -> Screen: show only resolution + system display scaling.
-        return "${width}x${height} $scaleText"
+        return "${width}x$height $scaleText"
     }
 
     fun ramText(context: Context): String {

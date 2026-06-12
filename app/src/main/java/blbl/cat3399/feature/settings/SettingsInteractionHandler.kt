@@ -20,8 +20,8 @@ import androidx.activity.result.ActivityResultLauncher
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import blbl.cat3399.R
 import blbl.cat3399.BuildConfig
+import blbl.cat3399.R
 import blbl.cat3399.core.io.CreateDocumentRequest
 import blbl.cat3399.core.io.DocumentExporter
 import blbl.cat3399.core.log.AppLog
@@ -34,8 +34,8 @@ import blbl.cat3399.core.prefs.CustomPageConfig
 import blbl.cat3399.core.prefs.CustomPageTabConfig
 import blbl.cat3399.core.prefs.PlayerCustomShortcut
 import blbl.cat3399.core.prefs.PlayerCustomShortcutAction
-import blbl.cat3399.core.prefs.PlayerPlaybackModes
 import blbl.cat3399.core.prefs.PlayerCustomShortcutsStore
+import blbl.cat3399.core.prefs.PlayerPlaybackModes
 import blbl.cat3399.core.ui.AppToast
 import blbl.cat3399.core.ui.Immersive
 import blbl.cat3399.core.ui.popup.AppPopup
@@ -43,20 +43,20 @@ import blbl.cat3399.core.ui.popup.PopupAction
 import blbl.cat3399.core.ui.popup.PopupActionRole
 import blbl.cat3399.core.update.ApkUpdateFlow
 import blbl.cat3399.core.update.ApkUpdater
-import blbl.cat3399.feature.player.engine.IjkPlayerPlugin
-import blbl.cat3399.feature.player.engine.IjkPlayerPluginUi
-import blbl.cat3399.feature.player.AudioBalanceLevel
-import blbl.cat3399.feature.player.PlaybackSettingChoices
-import blbl.cat3399.feature.player.PlayerCustomShortcutCatalog
-import blbl.cat3399.feature.risk.GaiaVgateActivity
 import blbl.cat3399.feature.category.CategoryZones
 import blbl.cat3399.feature.custom.CustomPageSearchSourceKind
 import blbl.cat3399.feature.custom.CustomPageTabRegistry
 import blbl.cat3399.feature.home.HomeTabs
 import blbl.cat3399.feature.live.LiveFragment
 import blbl.cat3399.feature.my.MyTabs
-import blbl.cat3399.ui.MainRootNavRegistry
+import blbl.cat3399.feature.player.AudioBalanceLevel
+import blbl.cat3399.feature.player.PlaybackSettingChoices
+import blbl.cat3399.feature.player.PlayerCustomShortcutCatalog
+import blbl.cat3399.feature.player.engine.IjkPlayerPlugin
+import blbl.cat3399.feature.player.engine.IjkPlayerPluginUi
+import blbl.cat3399.feature.risk.GaiaVgateActivity
 import blbl.cat3399.ui.MainActivity
+import blbl.cat3399.ui.MainRootNavRegistry
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
@@ -66,12 +66,12 @@ import kotlinx.coroutines.ensureActive
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import okhttp3.Cookie
+import org.json.JSONObject
 import java.io.File
 import java.text.SimpleDateFormat
 import java.util.ArrayDeque
 import java.util.Date
 import java.util.Locale
-import org.json.JSONObject
 
 class SettingsInteractionHandler(
     private val activity: SettingsActivity,
@@ -107,7 +107,10 @@ class SettingsInteractionHandler(
     fun onGaiaVgateResult(result: ActivityResult) {
         if (result.resultCode != Activity.RESULT_OK) return
         val token =
-            result.data?.getStringExtra(GaiaVgateActivity.EXTRA_GAIA_VTOKEN)?.trim()?.takeIf { it.isNotBlank() }
+            result.data
+                ?.getStringExtra(GaiaVgateActivity.EXTRA_GAIA_VTOKEN)
+                ?.trim()
+                ?.takeIf { it.isNotBlank() }
                 ?: return
         upsertGaiaVtokenCookie(token)
         val prefs = BiliClient.prefs
@@ -205,7 +208,8 @@ class SettingsInteractionHandler(
             autoFocus = true,
         ) { dialogContext ->
             val tv =
-                LayoutInflater.from(dialogContext)
+                LayoutInflater
+                    .from(dialogContext)
                     .inflate(R.layout.view_popup_message, null, false) as TextView
             tv.text = "可导出当前配置，也可选包含已保存帐号和登录状态；导入时会按文件内容整包覆盖。"
             tv
@@ -397,7 +401,7 @@ class SettingsInteractionHandler(
                     val deviceUuid = BiliClient.prefs.deviceUuid
                     val epochSeconds = (nowMs / 1000L).coerceAtLeast(0L)
                     val deviceId8 = deviceUuid.replace("-", "").take(8).ifBlank { "unknown00" }
-                    val fileName = "${epochSeconds}-${deviceId8}.zip"
+                    val fileName = "$epochSeconds-$deviceId8.zip"
                     val metaJson = buildUploadMetaJson(nowMs = nowMs, deviceUuid = deviceUuid)
 
                     popup?.updateProgress(null)
@@ -437,7 +441,7 @@ class SettingsInteractionHandler(
                                 lastUpdateAtMs = now
                                 val hint = "${SettingsText.formatBytes(sentBytes)}/${SettingsText.formatBytes(totalBytes)}"
                                 popup?.updateProgress(pct)
-                                popup?.updateStatus("上传中… ${pct}% $hint")
+                                popup?.updateStatus("上传中… $pct% $hint")
                             },
                         )
                     }
@@ -480,7 +484,8 @@ class SettingsInteractionHandler(
             preferredActionRole = PopupActionRole.NEUTRAL,
             content = { dialogContext ->
                 val tv =
-                    android.view.LayoutInflater.from(dialogContext)
+                    android.view.LayoutInflater
+                        .from(dialogContext)
                         .inflate(blbl.cat3399.R.layout.view_popup_message, null, false) as TextView
                 tv.text = body
                 tv
@@ -497,7 +502,12 @@ class SettingsInteractionHandler(
         nowMs: Long,
         deviceUuid: String,
     ): String {
-        val tzId = runCatching { java.util.TimeZone.getDefault().id }.getOrNull().orEmpty()
+        val tzId =
+            runCatching {
+                java.util.TimeZone
+                    .getDefault()
+                    .id
+            }.getOrNull().orEmpty()
         val locale = runCatching { Locale.getDefault() }.getOrNull()
         val localeTag = runCatching { locale?.toLanguageTag() }.getOrNull().orEmpty()
         val prefs = BiliClient.prefs
@@ -518,8 +528,7 @@ class SettingsInteractionHandler(
                         .put("version_code", BuildConfig.VERSION_CODE)
                         .put("build_type", BuildConfig.BUILD_TYPE)
                         .put("debug", BuildConfig.DEBUG),
-                )
-                .put(
+                ).put(
                     "device",
                     JSONObject()
                         .put("manufacturer", Build.MANUFACTURER)
@@ -529,13 +538,11 @@ class SettingsInteractionHandler(
                         .put("abi", Build.SUPPORTED_ABIS.firstOrNull().orEmpty())
                         .put("ram", SettingsText.ramText(activity))
                         .put("hardware_decoder", SettingsText.hardDecoderSupportText()),
-                )
-                .put(
+                ).put(
                     "account",
                     JSONObject()
                         .put("is_logged_in", BiliClient.cookies.hasSessData()),
-                )
-                .put("screen", buildUploadScreenJson())
+                ).put("screen", buildUploadScreenJson())
                 .put("prefs_snapshot", prefs.exportDiagnosticsSnapshotJson())
 
         return json.toString(2)
@@ -559,7 +566,10 @@ class SettingsInteractionHandler(
                 else -> "undefined"
             }
 
-        val sysDm = android.content.res.Resources.getSystem().displayMetrics
+        val sysDm =
+            android.content.res.Resources
+                .getSystem()
+                .displayMetrics
         val scaledDensity = dm.density * cfg.fontScale
         val systemScaledDensity = sysDm.density * cfg.fontScale
 
@@ -710,8 +720,9 @@ class SettingsInteractionHandler(
                     items = options.map { it.second },
                     current = SettingsText.apiSourceText(prefs.apiSource),
                 ) { selected ->
-                    val key = options.firstOrNull { it.second == selected }?.first
-                        ?: blbl.cat3399.core.prefs.AppPrefs.API_SOURCE_WEB
+                    val key =
+                        options.firstOrNull { it.second == selected }?.first
+                            ?: blbl.cat3399.core.prefs.AppPrefs.API_SOURCE_WEB
                     if (key == blbl.cat3399.core.prefs.AppPrefs.API_SOURCE_APP &&
                         prefs.appAuthSession?.accessKey.isNullOrBlank()
                     ) {
@@ -798,8 +809,9 @@ class SettingsInteractionHandler(
                     items = options.map { it.second },
                     current = SettingsText.mainBackFocusSchemeText(prefs.mainBackFocusScheme),
                 ) { selected ->
-                    val key = options.firstOrNull { it.second == selected }?.first
-                        ?: blbl.cat3399.core.prefs.AppPrefs.MAIN_BACK_FOCUS_SCHEME_A
+                    val key =
+                        options.firstOrNull { it.second == selected }?.first
+                            ?: blbl.cat3399.core.prefs.AppPrefs.MAIN_BACK_FOCUS_SCHEME_A
                     prefs.mainBackFocusScheme = key
                     AppToast.show(activity, "返回键焦点策略：$selected")
                     renderer.refreshSection(entry.id)
@@ -994,7 +1006,7 @@ class SettingsInteractionHandler(
 
             SettingId.SubtitleBottomPaddingFraction -> {
                 val options = PlaybackSettingChoices.subtitleBottomPaddingPercents
-                val items = options.map { "${it}%" }
+                val items = options.map { "$it%" }
                 val checked =
                     options.indices.minByOrNull { kotlin.math.abs(options[it] / 100f - prefs.subtitleBottomPaddingFraction) }
                         ?: 0
@@ -1225,8 +1237,9 @@ class SettingsInteractionHandler(
                     items = options.map { it.second },
                     checkedIndex = checked,
                 ) { selected ->
-                    val value = options.firstOrNull { it.second == selected }?.first
-                        ?: blbl.cat3399.core.prefs.AppPrefs.PLAYER_CDN_BILIVIDEO
+                    val value =
+                        options.firstOrNull { it.second == selected }?.first
+                            ?: blbl.cat3399.core.prefs.AppPrefs.PLAYER_CDN_BILIVIDEO
                     prefs.playerCdnPreference = value
                     renderer.refreshSection(entry.id)
                 }
@@ -1610,7 +1623,12 @@ class SettingsInteractionHandler(
         runCatching { ApkUpdater.evictConnections() }
     }
 
-    private fun showChoiceDialog(title: String, items: List<String>, current: String, onPicked: (String) -> Unit) {
+    private fun showChoiceDialog(
+        title: String,
+        items: List<String>,
+        current: String,
+        onPicked: (String) -> Unit,
+    ) {
         val checked = items.indexOf(current).takeIf { it >= 0 } ?: 0
         showChoiceDialog(
             title = title,
@@ -1620,7 +1638,12 @@ class SettingsInteractionHandler(
         )
     }
 
-    private fun showChoiceDialog(title: String, items: List<String>, checkedIndex: Int, onPicked: (String) -> Unit) {
+    private fun showChoiceDialog(
+        title: String,
+        items: List<String>,
+        checkedIndex: Int,
+        onPicked: (String) -> Unit,
+    ) {
         val checked = checkedIndex.takeIf { it in items.indices } ?: 0
         AppPopup.singleChoice(
             context = activity,
@@ -1671,7 +1694,10 @@ class SettingsInteractionHandler(
         )
     }
 
-    private fun showPlayerOsdButtonsDialog(sectionIndex: Int, focusId: SettingId) {
+    private fun showPlayerOsdButtonsDialog(
+        sectionIndex: Int,
+        focusId: SettingId,
+    ) {
         val prefs = BiliClient.prefs
         val options =
             listOf(
@@ -1712,7 +1738,10 @@ class SettingsInteractionHandler(
         )
     }
 
-    private fun showPlayerCustomShortcutsDialog(sectionIndex: Int, focusId: SettingId) {
+    private fun showPlayerCustomShortcutsDialog(
+        sectionIndex: Int,
+        focusId: SettingId,
+    ) {
         fun keyLabel(keyCode: Int): String {
             val raw = runCatching { KeyEvent.keyCodeToString(keyCode) }.getOrNull()?.trim().orEmpty()
             if (raw.isBlank()) return keyCode.toString()
@@ -1726,8 +1755,7 @@ class SettingsInteractionHandler(
 
         fun actionLabel(action: PlayerCustomShortcutAction): String = PlayerCustomShortcutCatalog.actionLabel(action)
 
-        fun bindingLabel(binding: PlayerCustomShortcut): String =
-            "${keyLabel(binding.keyCode)} → ${actionLabel(binding.action)}"
+        fun bindingLabel(binding: PlayerCustomShortcut): String = "${keyLabel(binding.keyCode)} → ${actionLabel(binding.action)}"
 
         fun loadShortcuts(): List<PlayerCustomShortcut> = BiliClient.prefs.playerCustomShortcuts
 
@@ -1748,11 +1776,16 @@ class SettingsInteractionHandler(
             renderer.refreshSection(SettingId.PlayerCustomShortcuts)
         }
 
-        class ShortcutItemVh(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        class ShortcutItemVh(
+            itemView: View,
+        ) : RecyclerView.ViewHolder(itemView) {
             private val tvLabel: TextView = itemView.findViewById(blbl.cat3399.R.id.tv_label)
             private val tvCheck: TextView = itemView.findViewById(blbl.cat3399.R.id.tv_check)
 
-            fun bind(label: String, onClick: () -> Unit) {
+            fun bind(
+                label: String,
+                onClick: () -> Unit,
+            ) {
                 tvLabel.text = label
                 tvCheck.visibility = View.GONE
                 itemView.setOnClickListener { onClick() }
@@ -1779,12 +1812,18 @@ class SettingsInteractionHandler(
             private val list: List<PlayerCustomShortcut>,
             private val onItemClick: (PlayerCustomShortcut) -> Unit,
         ) : RecyclerView.Adapter<ShortcutItemVh>() {
-            override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ShortcutItemVh {
+            override fun onCreateViewHolder(
+                parent: ViewGroup,
+                viewType: Int,
+            ): ShortcutItemVh {
                 val view = LayoutInflater.from(parent.context).inflate(blbl.cat3399.R.layout.item_popup_choice, parent, false)
                 return ShortcutItemVh(view)
             }
 
-            override fun onBindViewHolder(holder: ShortcutItemVh, position: Int) {
+            override fun onBindViewHolder(
+                holder: ShortcutItemVh,
+                position: Int,
+            ) {
                 val item = list.getOrNull(position) ?: return
                 holder.bind(
                     label = bindingLabel(item),
@@ -1911,7 +1950,8 @@ class SettingsInteractionHandler(
                     },
                 ) { dialogContext ->
                     val tv =
-                        LayoutInflater.from(dialogContext)
+                        LayoutInflater
+                            .from(dialogContext)
                             .inflate(blbl.cat3399.R.layout.view_player_custom_shortcut_key_capture, null, false) as TextView
                     captureView = tv
                     tv.text = "请按下要绑定的按键\n（返回键取消）"
@@ -1947,12 +1987,16 @@ class SettingsInteractionHandler(
                 }
             }
 
-            private fun showActionPicker(keyCode: Int, currentAction: PlayerCustomShortcutAction?) {
+            private fun showActionPicker(
+                keyCode: Int,
+                currentAction: PlayerCustomShortcutAction?,
+            ) {
                 var forward = false
                 val options = PlayerCustomShortcutCatalog.actionOptions()
 
                 val checked =
-                    options.indexOfFirst { it.type == currentAction?.type }
+                    options
+                        .indexOfFirst { it.type == currentAction?.type }
                         .takeIf { it >= 0 } ?: 0
 
                 AppPopup.singleChoice(
@@ -1979,7 +2023,11 @@ class SettingsInteractionHandler(
                 }
             }
 
-            private fun showValuePicker(keyCode: Int, actionType: String, currentAction: PlayerCustomShortcutAction?) {
+            private fun showValuePicker(
+                keyCode: Int,
+                actionType: String,
+                currentAction: PlayerCustomShortcutAction?,
+            ) {
                 var forward = false
                 val title = "${keyLabel(keyCode)} → ${PlayerCustomShortcutCatalog.actionTitle(actionType)}"
 
@@ -2060,7 +2108,10 @@ class SettingsInteractionHandler(
         Controller().showManager()
     }
 
-    private fun showCustomPageContentDialog(sectionIndex: Int, focusId: SettingId) {
+    private fun showCustomPageContentDialog(
+        sectionIndex: Int,
+        focusId: SettingId,
+    ) {
         fun loadConfig(): CustomPageConfig = BiliClient.prefs.customPageConfig
 
         fun saveConfig(config: CustomPageConfig) {
@@ -2080,11 +2131,16 @@ class SettingsInteractionHandler(
             return out
         }
 
-        class TabItemVh(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        class TabItemVh(
+            itemView: View,
+        ) : RecyclerView.ViewHolder(itemView) {
             private val tvLabel: TextView = itemView.findViewById(blbl.cat3399.R.id.tv_label)
             private val tvCheck: TextView = itemView.findViewById(blbl.cat3399.R.id.tv_check)
 
-            fun bind(label: String, onClick: () -> Unit) {
+            fun bind(
+                label: String,
+                onClick: () -> Unit,
+            ) {
                 tvLabel.text = label
                 tvCheck.visibility = View.GONE
                 itemView.setOnClickListener { onClick() }
@@ -2111,12 +2167,18 @@ class SettingsInteractionHandler(
             private val list: List<CustomPageTabConfig>,
             private val onItemClick: (CustomPageTabConfig) -> Unit,
         ) : RecyclerView.Adapter<TabItemVh>() {
-            override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TabItemVh {
+            override fun onCreateViewHolder(
+                parent: ViewGroup,
+                viewType: Int,
+            ): TabItemVh {
                 val view = LayoutInflater.from(parent.context).inflate(blbl.cat3399.R.layout.item_popup_choice, parent, false)
                 return TabItemVh(view)
             }
 
-            override fun onBindViewHolder(holder: TabItemVh, position: Int) {
+            override fun onBindViewHolder(
+                holder: TabItemVh,
+                position: Int,
+            ) {
                 val item = list.getOrNull(position) ?: return
                 holder.bind(
                     label = CustomPageTabRegistry.settingsLabelForConfig(item),
@@ -2187,8 +2249,11 @@ class SettingsInteractionHandler(
                     },
                 ) { dialogContext ->
                     if (tabs.isEmpty()) {
-                        return@custom (LayoutInflater.from(dialogContext)
-                            .inflate(blbl.cat3399.R.layout.view_popup_message, null, false) as TextView).apply {
+                        return@custom (
+                            LayoutInflater
+                                .from(dialogContext)
+                                .inflate(blbl.cat3399.R.layout.view_popup_message, null, false) as TextView
+                        ).apply {
                             text = "暂无内容，按“新增”添加来源。"
                         }
                     }
@@ -2420,7 +2485,10 @@ class SettingsInteractionHandler(
         Controller().showManager()
     }
 
-    private fun showUserAgentDialog(sectionIndex: Int, focusId: SettingId) {
+    private fun showUserAgentDialog(
+        sectionIndex: Int,
+        focusId: SettingId,
+    ) {
         val prefs = BiliClient.prefs
         AppPopup.input(
             context = activity,
@@ -2454,7 +2522,10 @@ class SettingsInteractionHandler(
         )
     }
 
-    private fun showPlayerAutoSkipServerBaseUrlDialog(sectionIndex: Int, focusId: SettingId) {
+    private fun showPlayerAutoSkipServerBaseUrlDialog(
+        sectionIndex: Int,
+        focusId: SettingId,
+    ) {
         val prefs = BiliClient.prefs
         AppPopup.input(
             context = activity,
@@ -2491,7 +2562,10 @@ class SettingsInteractionHandler(
         )
     }
 
-    private fun showPlayerShortSeekStepDialog(sectionIndex: Int, focusId: SettingId) {
+    private fun showPlayerShortSeekStepDialog(
+        sectionIndex: Int,
+        focusId: SettingId,
+    ) {
         val prefs = BiliClient.prefs
         val options = AppPrefs.PLAYER_SHORT_SEEK_STEP_SECONDS_OPTIONS.toList()
         showChoiceDialog(
@@ -2507,7 +2581,10 @@ class SettingsInteractionHandler(
         }
     }
 
-    private fun showPlayerHoldScrubTraverseSecondsDialog(sectionIndex: Int, focusId: SettingId) {
+    private fun showPlayerHoldScrubTraverseSecondsDialog(
+        sectionIndex: Int,
+        focusId: SettingId,
+    ) {
         val prefs = BiliClient.prefs
         showPlayerHoldScrubSecondsDialog(
             title = "拖完整个视频所需时间",
@@ -2519,7 +2596,10 @@ class SettingsInteractionHandler(
         }
     }
 
-    private fun showPlayerHoldScrubFixedStepSecondsDialog(sectionIndex: Int, focusId: SettingId) {
+    private fun showPlayerHoldScrubFixedStepSecondsDialog(
+        sectionIndex: Int,
+        focusId: SettingId,
+    ) {
         val prefs = BiliClient.prefs
         showPlayerHoldScrubSecondsDialog(
             title = "固定时间拖动进度条间隔",
@@ -2552,7 +2632,10 @@ class SettingsInteractionHandler(
         }
     }
 
-    private fun showClearLoginDialog(sectionIndex: Int, focusId: SettingId) {
+    private fun showClearLoginDialog(
+        sectionIndex: Int,
+        focusId: SettingId,
+    ) {
         AppPopup.confirm(
             context = activity,
             title = "清除登录",
@@ -2571,7 +2654,10 @@ class SettingsInteractionHandler(
         )
     }
 
-    private fun showClearCacheDialog(sectionIndex: Int, focusId: SettingId) {
+    private fun showClearCacheDialog(
+        sectionIndex: Int,
+        focusId: SettingId,
+    ) {
         if (clearCacheJob?.isActive == true) {
             AppToast.show(activity, "清理中…")
             return
@@ -2592,7 +2678,10 @@ class SettingsInteractionHandler(
         )
     }
 
-    private fun startClearCache(sectionIndex: Int, focusId: SettingId) {
+    private fun startClearCache(
+        sectionIndex: Int,
+        focusId: SettingId,
+    ) {
         cacheSizeJob?.cancel()
         val popup =
             AppPopup.progress(
@@ -2669,7 +2758,11 @@ class SettingsInteractionHandler(
         return total.coerceAtLeast(0L)
     }
 
-    private fun ensureTestUpdateChecked(force: Boolean, refreshUi: Boolean = true, promptIfUpdate: Boolean = false) {
+    private fun ensureTestUpdateChecked(
+        force: Boolean,
+        refreshUi: Boolean = true,
+        promptIfUpdate: Boolean = false,
+    ) {
         if (testUpdateJob?.isActive == true) return
         if (testUpdateCheckJob?.isActive == true) return
         if (state.testUpdateCheckState is TestUpdateCheckState.Checking) return
@@ -2750,7 +2843,8 @@ class SettingsInteractionHandler(
             preferredActionRole = PopupActionRole.POSITIVE,
             content = { dialogContext ->
                 val tv =
-                    android.view.LayoutInflater.from(dialogContext)
+                    android.view.LayoutInflater
+                        .from(dialogContext)
                         .inflate(blbl.cat3399.R.layout.view_popup_message, null, false) as TextView
                 tv.text = SettingsConstants.PROJECT_URL
                 tv
@@ -2766,7 +2860,11 @@ class SettingsInteractionHandler(
         }
     }
 
-    private fun copyToClipboard(label: String, text: String, toastText: String? = null) {
+    private fun copyToClipboard(
+        label: String,
+        text: String,
+        toastText: String? = null,
+    ) {
         val clipboard = activity.getSystemService(Context.CLIPBOARD_SERVICE) as? ClipboardManager
         if (clipboard == null) {
             AppToast.show(activity, "无法访问剪贴板")
@@ -2779,7 +2877,8 @@ class SettingsInteractionHandler(
     private fun upsertGaiaVtokenCookie(token: String) {
         val expiresAt = System.currentTimeMillis() + 12 * 60 * 60 * 1000L
         val cookie =
-            Cookie.Builder()
+            Cookie
+                .Builder()
                 .name("x-bili-gaia-vtoken")
                 .value(token)
                 .domain("bilibili.com")
@@ -2790,7 +2889,10 @@ class SettingsInteractionHandler(
         BiliClient.cookies.upsert(cookie)
     }
 
-    private fun showGaiaVgateDialog(sectionIndex: Int, focusId: SettingId) {
+    private fun showGaiaVgateDialog(
+        sectionIndex: Int,
+        focusId: SettingId,
+    ) {
         val prefs = BiliClient.prefs
         val now = System.currentTimeMillis()
         val tokenCookie = BiliClient.cookies.getCookie("x-bili-gaia-vtoken")
@@ -2809,14 +2911,20 @@ class SettingsInteractionHandler(
                 append(if (tokenOk) "有效" else "无/已过期")
                 if (tokenOk && expiresAt > 0L) {
                     append("\n")
-                    append("过期时间：").append(android.text.format.DateFormat.format("yyyy-MM-dd HH:mm", expiresAt))
+                    append("过期时间：").append(
+                        android.text.format.DateFormat
+                            .format("yyyy-MM-dd HH:mm", expiresAt),
+                    )
                 }
                 append("\n\n")
                 append("v_voucher：")
                 append(if (hasVoucher) "已记录" else "暂无")
                 if (hasVoucher && savedAt > 0L) {
                     append("\n")
-                    append("记录时间：").append(android.text.format.DateFormat.format("yyyy-MM-dd HH:mm", savedAt))
+                    append("记录时间：").append(
+                        android.text.format.DateFormat
+                            .format("yyyy-MM-dd HH:mm", savedAt),
+                    )
                 }
             }
 
@@ -2844,7 +2952,8 @@ class SettingsInteractionHandler(
             preferredActionRole = PopupActionRole.POSITIVE,
             content = { dialogContext ->
                 val tv =
-                    android.view.LayoutInflater.from(dialogContext)
+                    android.view.LayoutInflater
+                        .from(dialogContext)
                         .inflate(blbl.cat3399.R.layout.view_popup_message, null, false) as TextView
                 tv.text = msg
                 tv
@@ -2852,7 +2961,10 @@ class SettingsInteractionHandler(
         )
     }
 
-    private fun showGaiaVgateVoucherDialog(sectionIndex: Int, focusId: SettingId) {
+    private fun showGaiaVgateVoucherDialog(
+        sectionIndex: Int,
+        focusId: SettingId,
+    ) {
         val prefs = BiliClient.prefs
         AppPopup.input(
             context = activity,

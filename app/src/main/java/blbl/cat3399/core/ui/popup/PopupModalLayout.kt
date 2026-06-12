@@ -21,7 +21,10 @@ internal class PopupModalLayout
                 requestLayout()
             }
 
-        override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
+        override fun onMeasure(
+            widthMeasureSpec: Int,
+            heightMeasureSpec: Int,
+        ) {
             if (orientation != VERTICAL || maxHeightPx <= 0) {
                 super.onMeasure(widthMeasureSpec, heightMeasureSpec)
                 return
@@ -32,7 +35,10 @@ internal class PopupModalLayout
             var maxWidth = paddingLeft + paddingRight
             var childState = 0
 
-            fun measureChild(view: View, maxChildHeight: Int) {
+            fun measureChild(
+                view: View,
+                maxChildHeight: Int,
+            ) {
                 val lp = view.layoutParams as MarginLayoutParams
                 val childWidthSpec =
                     getChildMeasureSpec(

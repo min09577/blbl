@@ -3,8 +3,8 @@ package blbl.cat3399.core.ui
 import android.app.Activity
 import android.content.Context
 import android.os.BadParcelableException
-import android.os.Bundle
 import android.os.Build
+import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import blbl.cat3399.core.log.AppLog
 import blbl.cat3399.core.theme.ThemePresets

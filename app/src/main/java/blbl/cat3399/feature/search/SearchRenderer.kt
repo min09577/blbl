@@ -398,7 +398,11 @@ class SearchRenderer internal constructor(
         binding.recyclerResults.clearOnScrollListeners()
         binding.recyclerResults.addOnScrollListener(
             object : RecyclerView.OnScrollListener() {
-                override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
+                override fun onScrolled(
+                    recyclerView: RecyclerView,
+                    dx: Int,
+                    dy: Int,
+                ) {
                     if (dy <= 0) return
                     val s = pagingForCurrentTab().snapshot()
                     if (s.isLoading || s.endReached) return
@@ -506,7 +510,9 @@ class SearchRenderer internal constructor(
         ) { page ->
             val keyword = state.query.trim()
             val order = state.currentVideoOrder.apiValue
-            val res = blbl.cat3399.core.api.BiliApi.searchVideo(keyword = keyword, page = page, order = order)
+            val res =
+                blbl.cat3399.core.api.BiliApi
+                    .searchVideo(keyword = keyword, page = page, order = order)
             val hasNextPage = res.pages > 0 && page < res.pages
             VideoCardPlaylistPage(
                 cards = res.items,
@@ -573,7 +579,10 @@ class SearchRenderer internal constructor(
         binding.tvQuery.hint = hintText
         updateQueryAlpha(query = state.query)
 
-        val current = binding.tvQuery.text?.toString().orEmpty()
+        val current =
+            binding.tvQuery.text
+                ?.toString()
+                .orEmpty()
         if (current == state.query) return
         state.ignoreQueryTextChanges = true
         binding.tvQuery.setText(state.query)
@@ -587,7 +596,10 @@ class SearchRenderer internal constructor(
         binding.tvQuery.alpha = if (query.isBlank()) 0.65f else 1f
     }
 
-    fun updateMiddleUi(history: List<String>, extra: List<String>) {
+    fun updateMiddleUi(
+        history: List<String>,
+        extra: List<String>,
+    ) {
         val merged = LinkedHashMap<String, String>()
         for (s in history) {
             val key = s.trim().lowercase()
@@ -964,10 +976,16 @@ class SearchRenderer internal constructor(
 
         val ratio = (newScale / oldScale).takeIf { it.isFinite() && it > 0f } ?: 1.0f
         val rescaler = viewContext.uiScaler(ratio)
+
         fun rescalePx(valuePx: Int): Int = rescaler.scaledPx(valuePx)
+
         fun rescalePxF(valuePx: Float): Float = rescaler.scaledPxF(valuePx)
 
-        fun rescaleLayoutSize(view: View, width: Boolean = true, height: Boolean = true) {
+        fun rescaleLayoutSize(
+            view: View,
+            width: Boolean = true,
+            height: Boolean = true,
+        ) {
             val lp = view.layoutParams ?: return
             var changed = false
             if (width && lp.width > 0) {
@@ -987,7 +1005,13 @@ class SearchRenderer internal constructor(
             if (changed) view.layoutParams = lp
         }
 
-        fun rescaleMargins(view: View, start: Boolean = true, top: Boolean = true, end: Boolean = true, bottom: Boolean = true) {
+        fun rescaleMargins(
+            view: View,
+            start: Boolean = true,
+            top: Boolean = true,
+            end: Boolean = true,
+            bottom: Boolean = true,
+        ) {
             val lp = view.layoutParams as? ViewGroup.MarginLayoutParams ?: return
             var changed = false
             if (start) {
@@ -1021,7 +1045,13 @@ class SearchRenderer internal constructor(
             if (changed) view.layoutParams = lp
         }
 
-        fun rescalePadding(view: View, left: Boolean = true, top: Boolean = true, right: Boolean = true, bottom: Boolean = true) {
+        fun rescalePadding(
+            view: View,
+            left: Boolean = true,
+            top: Boolean = true,
+            right: Boolean = true,
+            bottom: Boolean = true,
+        ) {
             val l = if (left) rescalePx(view.paddingLeft).coerceAtLeast(0) else view.paddingLeft
             val t = if (top) rescalePx(view.paddingTop).coerceAtLeast(0) else view.paddingTop
             val r = if (right) rescalePx(view.paddingRight).coerceAtLeast(0) else view.paddingRight
@@ -1114,12 +1144,42 @@ class SearchRenderer internal constructor(
     companion object {
         private val KEYS =
             listOf(
-                "A", "B", "C", "D", "E", "F",
-                "G", "H", "I", "J", "K", "L",
-                "M", "N", "O", "P", "Q", "R",
-                "S", "T", "U", "V", "W", "X",
-                "Y", "Z", "1", "2", "3", "4",
-                "5", "6", "7", "8", "9", "0",
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H",
+                "I",
+                "J",
+                "K",
+                "L",
+                "M",
+                "N",
+                "O",
+                "P",
+                "Q",
+                "R",
+                "S",
+                "T",
+                "U",
+                "V",
+                "W",
+                "X",
+                "Y",
+                "Z",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "0",
             )
     }
 }

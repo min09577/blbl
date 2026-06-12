@@ -75,7 +75,10 @@ class SearchState {
         return pos.takeIf { it >= 0 }
     }
 
-    fun rememberFocusedResultPosition(index: Int, position: Int) {
+    fun rememberFocusedResultPosition(
+        index: Int,
+        position: Int,
+    ) {
         if (index !in lastFocusedResultPositions.indices) return
         lastFocusedResultPositions[index] = position.coerceAtLeast(0)
     }

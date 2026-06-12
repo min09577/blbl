@@ -23,7 +23,10 @@ class CookieStore(
         loadFromDisk()
     }
 
-    override fun saveFromResponse(url: HttpUrl, cookies: List<Cookie>) {
+    override fun saveFromResponse(
+        url: HttpUrl,
+        cookies: List<Cookie>,
+    ) {
         if (cookies.isEmpty()) return
         for (cookie in cookies) {
             val key = cookie.domain
@@ -65,7 +68,10 @@ class CookieStore(
 
     fun getCookieValue(name: String): String? {
         val now = System.currentTimeMillis()
-        return store.values.flatten().firstOrNull { it.name == name && it.expiresAt >= now }?.value
+        return store.values
+            .flatten()
+            .firstOrNull { it.name == name && it.expiresAt >= now }
+            ?.value
     }
 
     fun getCookie(name: String): Cookie? {
@@ -169,10 +175,12 @@ class CookieStore(
             val list = mutableListOf<Cookie>()
             for (i in 0 until arr.length()) {
                 val obj = arr.optJSONObject(i) ?: continue
-                val builder = Cookie.Builder()
-                    .name(obj.getString("name"))
-                    .value(obj.getString("value"))
-                    .path(obj.optString("path", "/"))
+                val builder =
+                    Cookie
+                        .Builder()
+                        .name(obj.getString("name"))
+                        .value(obj.getString("value"))
+                        .path(obj.optString("path", "/"))
 
                 val cookieDomain = obj.optString("domain", domain)
                 if (obj.optBoolean("hostOnly", false)) builder.hostOnlyDomain(cookieDomain) else builder.domain(cookieDomain)

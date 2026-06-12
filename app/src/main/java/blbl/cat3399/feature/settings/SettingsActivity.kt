@@ -9,8 +9,8 @@ import blbl.cat3399.core.io.CreateDocumentContract
 import blbl.cat3399.core.net.BiliClient
 import blbl.cat3399.core.ui.BaseActivity
 import blbl.cat3399.core.ui.FocusTreeUtils
-import blbl.cat3399.core.ui.cloneInUserScale
 import blbl.cat3399.core.ui.Immersive
+import blbl.cat3399.core.ui.cloneInUserScale
 import blbl.cat3399.core.ui.popup.PopupHost
 import blbl.cat3399.databinding.ActivitySettingsBinding
 

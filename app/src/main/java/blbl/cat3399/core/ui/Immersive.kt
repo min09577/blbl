@@ -5,7 +5,10 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
 
 object Immersive {
-    fun apply(activity: Activity, enabled: Boolean) {
+    fun apply(
+        activity: Activity,
+        enabled: Boolean,
+    ) {
         val window = activity.window ?: return
         WindowDisplayPolicy.applyWindow(activity, fullscreen = enabled)
         val controller = WindowInsetsControllerCompat(window, window.decorView)

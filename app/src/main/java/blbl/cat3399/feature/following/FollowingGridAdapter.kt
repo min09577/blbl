@@ -39,7 +39,10 @@ class FollowingGridAdapter(
 
     override fun getItemId(position: Int): Long = items[position].mid
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Vh {
+    override fun onCreateViewHolder(
+        parent: ViewGroup,
+        viewType: Int,
+    ): Vh {
         val binding =
             ItemFollowingGridBinding.inflate(
                 LayoutInflater.from(parent.context).cloneInUserScale(parent.context),
@@ -49,14 +52,22 @@ class FollowingGridAdapter(
         return Vh(binding)
     }
 
-    override fun onBindViewHolder(holder: Vh, position: Int) {
+    override fun onBindViewHolder(
+        holder: Vh,
+        position: Int,
+    ) {
         holder.bind(items[position], onClick)
     }
 
     override fun getItemCount(): Int = items.size
 
-    class Vh(private val binding: ItemFollowingGridBinding) : RecyclerView.ViewHolder(binding.root) {
-        fun bind(item: Following, onClick: (Following) -> Unit) {
+    class Vh(
+        private val binding: ItemFollowingGridBinding,
+    ) : RecyclerView.ViewHolder(binding.root) {
+        fun bind(
+            item: Following,
+            onClick: (Following) -> Unit,
+        ) {
             binding.tvName.text = item.name
             binding.tvSign.text = item.sign.orEmpty()
             binding.tvSign.isVisible = !item.sign.isNullOrBlank()

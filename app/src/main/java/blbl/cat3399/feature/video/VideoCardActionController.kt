@@ -215,7 +215,12 @@ class VideoCardActionController(
     }
 
     private fun errorMessage(t: Throwable): String {
-        val raw = (t as? BiliApiException)?.apiMessage?.trim().orEmpty().ifBlank { t.message.orEmpty().trim() }
+        val raw =
+            (t as? BiliApiException)
+                ?.apiMessage
+                ?.trim()
+                .orEmpty()
+                .ifBlank { t.message.orEmpty().trim() }
         return when {
             raw.isBlank() -> context.getString(R.string.video_card_action_failed)
             raw == "missing_history_kid" -> context.getString(R.string.video_card_action_missing_video_id)

@@ -46,4 +46,3 @@ object UiDensity {
         return base.createConfigurationContext(config)
     }
 }
-

@@ -93,7 +93,10 @@ class VideoCardAdapter(
         return key.hashCode().toLong()
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Vh {
+    override fun onCreateViewHolder(
+        parent: ViewGroup,
+        viewType: Int,
+    ): Vh {
         val binding =
             ItemVideoCardBinding.inflate(
                 LayoutInflater.from(parent.context).cloneInUserScale(parent.context),
@@ -113,7 +116,10 @@ class VideoCardAdapter(
         )
     }
 
-    override fun onBindViewHolder(holder: Vh, position: Int) {
+    override fun onBindViewHolder(
+        holder: Vh,
+        position: Int,
+    ) {
         val item = items[position]
         holder.bind(
             item = item,
@@ -165,28 +171,32 @@ class VideoCardAdapter(
             }
 
             VideoCardConfiguredLongPressAction.WATCH_LATER -> {
-                delegate.manualActions(item, position)
+                delegate
+                    .manualActions(item, position)
                     .firstOrNull { it.id == VideoCardQuickActionId.WATCH_LATER }
                     ?.let { delegate.onActionSelected(item, position, it) }
                 true
             }
 
             VideoCardConfiguredLongPressAction.OPEN_DETAIL -> {
-                delegate.manualActions(item, position)
+                delegate
+                    .manualActions(item, position)
                     .firstOrNull { it.id == VideoCardQuickActionId.OPEN_DETAIL }
                     ?.let { delegate.onActionSelected(item, position, it) }
                 true
             }
 
             VideoCardConfiguredLongPressAction.OPEN_UP -> {
-                delegate.manualActions(item, position)
+                delegate
+                    .manualActions(item, position)
                     .firstOrNull { it.id == VideoCardQuickActionId.OPEN_UP }
                     ?.let { delegate.onActionSelected(item, position, it) }
                 true
             }
 
             VideoCardConfiguredLongPressAction.DISMISS -> {
-                delegate.manualActions(item, position)
+                delegate
+                    .manualActions(item, position)
                     .firstOrNull { it.id == VideoCardQuickActionId.DISMISS }
                     ?.let { delegate.onActionSelected(item, position, it) }
                 true
@@ -403,7 +413,10 @@ class VideoCardAdapter(
             }
 
             if (fixedItemMarginDimenRes != null) {
-                val margin = binding.root.resources.getDimensionPixelSize(fixedItemMarginDimenRes).coerceAtLeast(0)
+                val margin =
+                    binding.root.resources
+                        .getDimensionPixelSize(fixedItemMarginDimenRes)
+                        .coerceAtLeast(0)
                 (binding.root.layoutParams as? MarginLayoutParams)?.let { lp ->
                     if (lp.leftMargin != margin || lp.topMargin != margin || lp.rightMargin != margin || lp.bottomMargin != margin) {
                         lp.setMargins(margin, margin, margin, margin)
@@ -574,15 +587,16 @@ class VideoCardAdapter(
         }
 
         private fun buildWatchProgressUi(item: VideoCard): WatchProgressUi? {
-            val durationSec = item.durationSec.takeIf { it > 0 } ?: return if (item.progressFinished) {
-                WatchProgressUi(
-                    labelLeft = binding.root.context.getString(R.string.video_card_progress_complete),
-                    labelRight = null,
-                    progressPermille = 1000,
-                )
-            } else {
-                null
-            }
+            val durationSec =
+                item.durationSec.takeIf { it > 0 } ?: return if (item.progressFinished) {
+                    WatchProgressUi(
+                        labelLeft = binding.root.context.getString(R.string.video_card_progress_complete),
+                        labelRight = null,
+                        progressPermille = 1000,
+                    )
+                } else {
+                    null
+                }
             if (item.progressFinished) {
                 val full = Format.clock(durationSec.toLong())
                 return WatchProgressUi(
@@ -612,7 +626,7 @@ class VideoCardAdapter(
                     .roundToInt()
                     .coerceIn(1, 999)
             return WatchProgressUi(
-                labelLeft = "${percent}%",
+                labelLeft = "$percent%",
                 labelRight = "${Format.clock(clampedPositionSec)} / ${Format.clock(durationSec.toLong())}",
                 progressPermille = permille,
             )

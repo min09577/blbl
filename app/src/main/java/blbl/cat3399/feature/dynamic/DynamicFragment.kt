@@ -14,7 +14,6 @@ import blbl.cat3399.R
 import blbl.cat3399.core.api.BiliApi
 import blbl.cat3399.core.log.AppLog
 import blbl.cat3399.core.model.Following
-import blbl.cat3399.core.model.VideoCard
 import blbl.cat3399.core.net.BiliClient
 import blbl.cat3399.core.ui.AppToast
 import blbl.cat3399.core.ui.DpadGridController
@@ -22,10 +21,10 @@ import blbl.cat3399.core.ui.FocusTreeUtils
 import blbl.cat3399.core.ui.GridSpanPolicy
 import blbl.cat3399.core.ui.UiScale
 import blbl.cat3399.core.ui.parkFocusForDataSetReset
+import blbl.cat3399.core.ui.postIfAlive
 import blbl.cat3399.core.ui.requestFocusFirstItemOrSelfAfterRefresh
 import blbl.cat3399.core.ui.uiScaler
 import blbl.cat3399.core.ui.unparkFocusAfterDataSetReset
-import blbl.cat3399.core.ui.postIfAlive
 import blbl.cat3399.databinding.FragmentDynamicBinding
 import blbl.cat3399.databinding.FragmentDynamicLoginBinding
 import blbl.cat3399.feature.following.openUpDetailFromVideoCard
@@ -36,7 +35,6 @@ import blbl.cat3399.feature.video.VideoCardAdapter
 import blbl.cat3399.feature.video.VideoCardDismissBehavior
 import blbl.cat3399.feature.video.VideoCardVisibilityFilter
 import blbl.cat3399.feature.video.buildPagedVideoCardPlaybackHandle
-import blbl.cat3399.feature.video.defaultVideoCardPlaylistItem
 import blbl.cat3399.feature.video.openVideoDetailFromPlaybackHandle
 import blbl.cat3399.feature.video.openVideoFromPlaybackHandle
 import blbl.cat3399.feature.video.removeVideoCardAndRestoreFocus
@@ -48,7 +46,10 @@ import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.launch
 
-class DynamicFragment : Fragment(), RefreshKeyHandler, BackPressHandler {
+class DynamicFragment :
+    Fragment(),
+    RefreshKeyHandler,
+    BackPressHandler {
     private data class FeedContinuationCursor(
         val selectedMid: Long,
         val page: Int,
@@ -87,7 +88,11 @@ class DynamicFragment : Fragment(), RefreshKeyHandler, BackPressHandler {
 
     private var pendingFocusFirstFeedCardAfterRefresh: Boolean = false
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?,
+    ): View {
         if (!loggedIn) {
             _bindingLogin = FragmentDynamicLoginBinding.inflate(inflater, container, false)
             return _bindingLogin!!.root
@@ -96,7 +101,10 @@ class DynamicFragment : Fragment(), RefreshKeyHandler, BackPressHandler {
         return _binding!!.root
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+    override fun onViewCreated(
+        view: View,
+        savedInstanceState: Bundle?,
+    ) {
         if (!loggedIn) {
             _bindingLogin?.btnLogin?.setOnClickListener {
                 startActivity(Intent(requireContext(), QrLoginActivity::class.java))
@@ -112,7 +120,11 @@ class DynamicFragment : Fragment(), RefreshKeyHandler, BackPressHandler {
         binding.recyclerFollowing.clearOnScrollListeners()
         binding.recyclerFollowing.addOnScrollListener(
             object : RecyclerView.OnScrollListener() {
-                override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
+                override fun onScrolled(
+                    recyclerView: RecyclerView,
+                    dx: Int,
+                    dy: Int,
+                ) {
                     if (dy <= 0) return
                     if (followIsLoadingMore || followEndReached) return
                     val lm = recyclerView.layoutManager as? LinearLayoutManager ?: return
@@ -220,7 +232,11 @@ class DynamicFragment : Fragment(), RefreshKeyHandler, BackPressHandler {
             ).also { it.install() }
         binding.recyclerDynamic.addOnScrollListener(
             object : RecyclerView.OnScrollListener() {
-                override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
+                override fun onScrolled(
+                    recyclerView: RecyclerView,
+                    dx: Int,
+                    dy: Int,
+                ) {
                     if (dy <= 0) return
                     if (isLoadingMore || endReached) return
                     if (binding.swipeRefresh.isRefreshing) return
@@ -625,6 +641,7 @@ class DynamicFragment : Fragment(), RefreshKeyHandler, BackPressHandler {
         val binding = _binding ?: return
         val uiScale = UiScale.factor(requireContext())
         val scaler = requireContext().uiScaler(uiScale)
+
         fun scaledPx(id: Int): Int = scaler.scaledDimenPx(id)
 
         val width =

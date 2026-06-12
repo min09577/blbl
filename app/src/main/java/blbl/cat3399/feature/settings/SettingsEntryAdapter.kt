@@ -24,11 +24,17 @@ class SettingsEntryAdapter(
 
                     override fun getNewListSize(): Int = list.size
 
-                    override fun areItemsTheSame(oldItemPosition: Int, newItemPosition: Int): Boolean {
+                    override fun areItemsTheSame(
+                        oldItemPosition: Int,
+                        newItemPosition: Int,
+                    ): Boolean {
                         return old.getOrNull(oldItemPosition)?.id == list.getOrNull(newItemPosition)?.id
                     }
 
-                    override fun areContentsTheSame(oldItemPosition: Int, newItemPosition: Int): Boolean {
+                    override fun areContentsTheSame(
+                        oldItemPosition: Int,
+                        newItemPosition: Int,
+                    ): Boolean {
                         return old.getOrNull(oldItemPosition) == list.getOrNull(newItemPosition)
                     }
                 },
@@ -41,20 +47,36 @@ class SettingsEntryAdapter(
     fun indexOfId(id: SettingId): Int = items.indexOfFirst { it.id == id }
 
     override fun getItemId(position: Int): Long {
-        return items.getOrNull(position)?.id?.key?.hashCode()?.toLong() ?: RecyclerView.NO_ID
+        return items
+            .getOrNull(position)
+            ?.id
+            ?.key
+            ?.hashCode()
+            ?.toLong() ?: RecyclerView.NO_ID
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Vh {
+    override fun onCreateViewHolder(
+        parent: ViewGroup,
+        viewType: Int,
+    ): Vh {
         val binding = ItemSettingEntryBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return Vh(binding)
     }
 
-    override fun onBindViewHolder(holder: Vh, position: Int) = holder.bind(items[position], onClick)
+    override fun onBindViewHolder(
+        holder: Vh,
+        position: Int,
+    ) = holder.bind(items[position], onClick)
 
     override fun getItemCount(): Int = items.size
 
-    class Vh(private val binding: ItemSettingEntryBinding) : RecyclerView.ViewHolder(binding.root) {
-        fun bind(item: SettingEntry, onClick: (SettingEntry) -> Unit) {
+    class Vh(
+        private val binding: ItemSettingEntryBinding,
+    ) : RecyclerView.ViewHolder(binding.root) {
+        fun bind(
+            item: SettingEntry,
+            onClick: (SettingEntry) -> Unit,
+        ) {
             binding.root.tag = item.id
             binding.tvTitle.text = item.title
             if (item.value.isBlank()) {

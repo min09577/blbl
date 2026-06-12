@@ -117,7 +117,6 @@ enum class SettingId(
     DeviceDecoder("device_decoder"),
     DeviceScreen("device_screen"),
     DeviceRam("device_ram"),
-
 }
 
 data class SettingEntry(

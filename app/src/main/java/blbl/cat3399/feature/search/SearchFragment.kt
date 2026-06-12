@@ -1,12 +1,11 @@
 package blbl.cat3399.feature.search
 
-import android.os.Bundle
 import android.content.Intent
+import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import blbl.cat3399.R
 import blbl.cat3399.core.log.AppLog
 import blbl.cat3399.core.model.BangumiSeason
 import blbl.cat3399.core.ui.FocusTreeUtils
@@ -17,7 +16,10 @@ import blbl.cat3399.ui.BackPressHandler
 import blbl.cat3399.ui.RefreshKeyHandler
 import blbl.cat3399.ui.SidebarFocusHost
 
-class SearchFragment : Fragment(), BackPressHandler, RefreshKeyHandler {
+class SearchFragment :
+    Fragment(),
+    BackPressHandler,
+    RefreshKeyHandler {
     private var _binding: FragmentSearchBinding? = null
     private val binding get() = _binding!!
 
@@ -26,12 +28,19 @@ class SearchFragment : Fragment(), BackPressHandler, RefreshKeyHandler {
     private var renderer: SearchRenderer? = null
     private var interactor: SearchInteractor? = null
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?,
+    ): View {
         _binding = FragmentSearchBinding.inflate(inflater, container, false)
         return binding.root
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+    override fun onViewCreated(
+        view: View,
+        savedInstanceState: Bundle?,
+    ) {
         ensureAdapters()
         val interactor = SearchInteractor(fragment = this, state = state)
         val renderer = SearchRenderer(fragment = this, binding = binding, state = state, interactor = interactor, adapters = adapters)
@@ -142,7 +151,10 @@ class SearchFragment : Fragment(), BackPressHandler, RefreshKeyHandler {
         )
     }
 
-    internal fun openBangumiDetail(season: BangumiSeason, isDrama: Boolean) {
+    internal fun openBangumiDetail(
+        season: BangumiSeason,
+        isDrama: Boolean,
+    ) {
         if (!isAdded) return
         startActivity(
             Intent(requireContext(), BangumiDetailActivity::class.java)

@@ -32,7 +32,10 @@ object MyTabs {
 
     fun visibleTabs(prefs: AppPrefs): List<MyTabSpec> = filterVisible(all, prefs.mainMyVisibleTabs)
 
-    private fun filterVisible(allTabs: List<MyTabSpec>, selectedKeys: List<String>): List<MyTabSpec> {
+    private fun filterVisible(
+        allTabs: List<MyTabSpec>,
+        selectedKeys: List<String>,
+    ): List<MyTabSpec> {
         if (selectedKeys.isEmpty()) return allTabs
         val selected = selectedKeys.toSet()
         return allTabs.filter { it.key in selected }.ifEmpty { allTabs }

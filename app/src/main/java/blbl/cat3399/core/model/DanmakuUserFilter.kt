@@ -13,4 +13,3 @@ data class DanmakuUserFilter(
         val EMPTY = DanmakuUserFilter()
     }
 }
-

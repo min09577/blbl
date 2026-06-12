@@ -19,12 +19,15 @@ import blbl.cat3399.core.ui.postIfAlive
 import blbl.cat3399.core.ui.requestFocusSelectedTab
 import blbl.cat3399.databinding.FragmentMyTabsBinding
 import blbl.cat3399.ui.BackPressHandler
-import com.google.android.material.tabs.TabLayoutMediator
 import blbl.cat3399.ui.RefreshKeyHandler
 import blbl.cat3399.ui.SidebarFocusHost
 import com.google.android.material.tabs.TabLayout
+import com.google.android.material.tabs.TabLayoutMediator
 
-class MyTabsFragment : Fragment(), MyTabContentSwitchFocusHost, BackPressHandler {
+class MyTabsFragment :
+    Fragment(),
+    MyTabContentSwitchFocusHost,
+    BackPressHandler {
     private var _binding: FragmentMyTabsBinding? = null
     private val binding get() = _binding!!
 
@@ -33,12 +36,19 @@ class MyTabsFragment : Fragment(), MyTabContentSwitchFocusHost, BackPressHandler
     private var tabs: List<MyTabSpec> = emptyList()
     private var pendingFocusFirstItemFromContentSwitch: Boolean = false
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?,
+    ): View {
         _binding = FragmentMyTabsBinding.inflate(inflater, container, false)
         return binding.root
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+    override fun onViewCreated(
+        view: View,
+        savedInstanceState: Bundle?,
+    ) {
         setTabs(MyTabs.visibleTabs(BiliClient.prefs), force = true)
         binding.tabLayout.addOnTabSelectedListener(
             object : TabLayout.OnTabSelectedListener {
@@ -72,7 +82,10 @@ class MyTabsFragment : Fragment(), MyTabContentSwitchFocusHost, BackPressHandler
         setTabs(MyTabs.visibleTabs(BiliClient.prefs))
     }
 
-    private fun setTabs(nextTabs: List<MyTabSpec>, force: Boolean = false) {
+    private fun setTabs(
+        nextTabs: List<MyTabSpec>,
+        force: Boolean = false,
+    ) {
         val b = _binding ?: return
         val next = nextTabs.ifEmpty { MyTabs.all }
         if (!force && tabs.map { it.key } == next.map { it.key }) return
@@ -157,8 +170,9 @@ class MyTabsFragment : Fragment(), MyTabContentSwitchFocusHost, BackPressHandler
     }
 
     private fun focusCurrentPageFirstItemFromContentSwitch(): Boolean {
-        val target = findCurrentViewPagerChildFragmentAs<MyTabSwitchFocusTarget>(binding.viewPager)
-            ?: return false
+        val target =
+            findCurrentViewPagerChildFragmentAs<MyTabSwitchFocusTarget>(binding.viewPager)
+                ?: return false
         return target.requestFocusFirstItemFromTabSwitch()
     }
 

@@ -19,7 +19,6 @@ import androidx.recyclerview.widget.RecyclerView
 import blbl.cat3399.R
 import blbl.cat3399.core.ui.userScaledContext
 import com.google.android.material.progressindicator.LinearProgressIndicator
-import kotlin.math.max
 
 object AppPopup {
     private const val DESIRED_VISIBLE_ROWS: Int = 7
@@ -39,7 +38,8 @@ object AppPopup {
             val activity = context.findActivity() ?: return@runOnMainOrPost null
             val dialogContext = activity.userScaledContext()
             val tv =
-                LayoutInflater.from(dialogContext)
+                LayoutInflater
+                    .from(dialogContext)
                     .inflate(R.layout.view_popup_message, null, false) as TextView
             tv.text = message
             PopupHost.from(activity).showModal(
@@ -71,7 +71,8 @@ object AppPopup {
             val activity = context.findActivity() ?: return@runOnMainOrPost null
             val dialogContext = activity.userScaledContext()
             val tv =
-                LayoutInflater.from(dialogContext)
+                LayoutInflater
+                    .from(dialogContext)
                     .inflate(R.layout.view_popup_message, null, false) as TextView
             tv.text = message
             PopupHost.from(activity).showModal(
@@ -188,7 +189,8 @@ object AppPopup {
             }
 
             val view =
-                LayoutInflater.from(dialogContext)
+                LayoutInflater
+                    .from(dialogContext)
                     .inflate(R.layout.view_popup_choice_list, null, false)
             val recycler = view.findViewById<RecyclerView>(R.id.recycler)
             recycler.layoutManager = LinearLayoutManager(dialogContext)
@@ -271,7 +273,8 @@ object AppPopup {
             }
 
             val view =
-                LayoutInflater.from(dialogContext)
+                LayoutInflater
+                    .from(dialogContext)
                     .inflate(R.layout.view_popup_choice_list, null, false)
             val recycler = view.findViewById<RecyclerView>(R.id.recycler)
             recycler.layoutManager = LinearLayoutManager(dialogContext)
@@ -332,7 +335,8 @@ object AppPopup {
         val dialogContext = activity.userScaledContext()
 
         val view =
-            LayoutInflater.from(dialogContext)
+            LayoutInflater
+                .from(dialogContext)
                 .inflate(R.layout.dialog_test_update_progress, null, false)
         val tvStatus = view.findViewById<TextView>(R.id.tv_status)
         val progress = view.findViewById<LinearProgressIndicator>(R.id.progress)
@@ -513,8 +517,10 @@ object AppPopup {
         return true
     }
 
-    private fun dp(context: Context, value: Float): Int =
-        TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, value, context.resources.displayMetrics).toInt()
+    private fun dp(
+        context: Context,
+        value: Float,
+    ): Int = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, value, context.resources.displayMetrics).toInt()
 
     private fun Context.findActivity(): ComponentActivity? {
         var current: Context? = this
@@ -540,12 +546,18 @@ object AppPopup {
         private var checkedIndex: Int,
         private val onPick: (index: Int) -> Unit,
     ) : RecyclerView.Adapter<SingleChoiceAdapter.Vh>() {
-        override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Vh {
+        override fun onCreateViewHolder(
+            parent: ViewGroup,
+            viewType: Int,
+        ): Vh {
             val view = LayoutInflater.from(parent.context).inflate(R.layout.item_popup_choice, parent, false)
             return Vh(view)
         }
 
-        override fun onBindViewHolder(holder: Vh, position: Int) {
+        override fun onBindViewHolder(
+            holder: Vh,
+            position: Int,
+        ) {
             val label = items.getOrNull(position).orEmpty()
             holder.bind(
                 label = label,
@@ -562,11 +574,19 @@ object AppPopup {
 
         override fun getItemCount(): Int = items.size
 
-        class Vh(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        class Vh(
+            itemView: View,
+        ) : RecyclerView.ViewHolder(itemView) {
             private val tvLabel: TextView = itemView.findViewById(R.id.tv_label)
             private val tvCheck: TextView = itemView.findViewById(R.id.tv_check)
 
-            fun bind(label: String, checked: Boolean, position: Int, itemCount: Int, onClick: () -> Unit) {
+            fun bind(
+                label: String,
+                checked: Boolean,
+                position: Int,
+                itemCount: Int,
+                onClick: () -> Unit,
+            ) {
                 tvLabel.text = label
                 tvCheck.visibility = if (checked) View.VISIBLE else View.GONE
                 itemView.setOnClickListener { onClick() }
@@ -602,12 +622,18 @@ object AppPopup {
         private val minCheckedCount: Int,
         private val onChanged: (() -> Unit)?,
     ) : RecyclerView.Adapter<MultiChoiceAdapter.Vh>() {
-        override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Vh {
+        override fun onCreateViewHolder(
+            parent: ViewGroup,
+            viewType: Int,
+        ): Vh {
             val view = LayoutInflater.from(parent.context).inflate(R.layout.item_popup_choice, parent, false)
             return Vh(view)
         }
 
-        override fun onBindViewHolder(holder: Vh, position: Int) {
+        override fun onBindViewHolder(
+            holder: Vh,
+            position: Int,
+        ) {
             val label = items.getOrNull(position).orEmpty()
             holder.bind(
                 label = label,
@@ -628,11 +654,19 @@ object AppPopup {
 
         private fun BooleanArray.getOrNull(index: Int): Boolean? = if (index in indices) this[index] else null
 
-        class Vh(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        class Vh(
+            itemView: View,
+        ) : RecyclerView.ViewHolder(itemView) {
             private val tvLabel: TextView = itemView.findViewById(R.id.tv_label)
             private val tvCheck: TextView = itemView.findViewById(R.id.tv_check)
 
-            fun bind(label: String, checked: Boolean, position: Int, itemCount: Int, onToggle: () -> Unit) {
+            fun bind(
+                label: String,
+                checked: Boolean,
+                position: Int,
+                itemCount: Int,
+                onToggle: () -> Unit,
+            ) {
                 tvLabel.text = label
                 tvCheck.visibility = if (checked) View.VISIBLE else View.GONE
                 itemView.setOnClickListener { onToggle() }

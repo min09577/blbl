@@ -28,7 +28,11 @@ internal object PiliWebHeaders {
                 "x-bili-aurora-zone" to "sh001",
             )
         if (!includeMid) return headers
-        val midStr = BiliClient.cookies.getCookieValue("DedeUserID")?.trim().orEmpty()
+        val midStr =
+            BiliClient.cookies
+                .getCookieValue("DedeUserID")
+                ?.trim()
+                .orEmpty()
         val mid = midStr.toLongOrNull()?.takeIf { it > 0 } ?: return headers
         headers["x-bili-mid"] = mid.toString()
         genAuroraEid(mid)?.let { headers["x-bili-aurora-eid"] = it }

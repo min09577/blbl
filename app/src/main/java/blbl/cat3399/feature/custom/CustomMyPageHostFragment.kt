@@ -20,18 +20,30 @@ import blbl.cat3399.feature.my.MyToViewFragment
 import blbl.cat3399.ui.BackPressHandler
 import blbl.cat3399.ui.RefreshKeyHandler
 
-class CustomMyPageHostFragment : Fragment(), MyNavigator, BackPressHandler, RefreshKeyHandler, TabContentFocusTarget {
+class CustomMyPageHostFragment :
+    Fragment(),
+    MyNavigator,
+    BackPressHandler,
+    RefreshKeyHandler,
+    TabContentFocusTarget {
     private var _binding: FragmentMyContainerBinding? = null
     private val binding get() = _binding!!
 
     private val pageKind: String by lazy { requireArguments().getString(ARG_PAGE_KIND).orEmpty() }
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?,
+    ): View {
         _binding = FragmentMyContainerBinding.inflate(inflater, container, false)
         return binding.root
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+    override fun onViewCreated(
+        view: View,
+        savedInstanceState: Bundle?,
+    ) {
         if (savedInstanceState == null) {
             showRootPage()
         }
@@ -49,16 +61,25 @@ class CustomMyPageHostFragment : Fragment(), MyNavigator, BackPressHandler, Refr
         super.onDestroyView()
     }
 
-    override fun openFavFolder(mediaId: Long, title: String) {
+    override fun openFavFolder(
+        mediaId: Long,
+        title: String,
+    ) {
         if (_binding == null || childFragmentManager.isStateSaved) return
-        childFragmentManager.beginTransaction()
+        childFragmentManager
+            .beginTransaction()
             .setReorderingAllowed(true)
             .replace(R.id.my_container, MyFavFolderDetailFragment.newInstance(mediaId = mediaId, title = title))
             .addToBackStack(null)
             .commit()
     }
 
-    override fun openBangumiDetail(seasonId: Long, isDrama: Boolean, continueEpId: Long?, continueEpIndex: Int?) {
+    override fun openBangumiDetail(
+        seasonId: Long,
+        isDrama: Boolean,
+        continueEpId: Long?,
+        continueEpIndex: Int?,
+    ) {
         if (!isAdded) return
         startActivity(
             Intent(requireContext(), BangumiDetailActivity::class.java)
@@ -82,11 +103,9 @@ class CustomMyPageHostFragment : Fragment(), MyNavigator, BackPressHandler, Refr
 
     override fun requestFocusPrimaryItemFromTab(): Boolean = requestCurrentPrimaryFocus { it.requestFocusPrimaryItemFromTab() }
 
-    override fun requestFocusPrimaryItemFromContentSwitch(): Boolean =
-        requestCurrentPrimaryFocus { it.requestFocusPrimaryItemFromContentSwitch() }
+    override fun requestFocusPrimaryItemFromContentSwitch(): Boolean = requestCurrentPrimaryFocus { it.requestFocusPrimaryItemFromContentSwitch() }
 
-    override fun requestFocusPrimaryItemFromBackToTab0(): Boolean =
-        requestCurrentPrimaryFocus { it.requestFocusPrimaryItemFromBackToTab0() }
+    override fun requestFocusPrimaryItemFromBackToTab0(): Boolean = requestCurrentPrimaryFocus { it.requestFocusPrimaryItemFromBackToTab0() }
 
     private fun requestCurrentPrimaryFocus(block: (TabContentFocusTarget) -> Boolean): Boolean {
         val current = currentChild()
@@ -108,7 +127,8 @@ class CustomMyPageHostFragment : Fragment(), MyNavigator, BackPressHandler, Refr
         val current = currentChild()
         if (childFragmentManager.backStackEntryCount == 0 && current != null) return
 
-        childFragmentManager.beginTransaction()
+        childFragmentManager
+            .beginTransaction()
             .setReorderingAllowed(true)
             .replace(R.id.my_container, createRootFragment())
             .commit()

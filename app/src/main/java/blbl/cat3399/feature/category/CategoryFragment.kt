@@ -2,30 +2,33 @@ package blbl.cat3399.feature.category
 
 import android.os.Bundle
 import android.os.SystemClock
-import android.view.LayoutInflater
 import android.view.KeyEvent
+import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import blbl.cat3399.core.prefs.AppPrefs
-import blbl.cat3399.ui.RefreshKeyHandler
-import com.google.android.material.tabs.TabLayout
-import com.google.android.material.tabs.TabLayoutMediator
 import blbl.cat3399.core.log.AppLog
 import blbl.cat3399.core.model.Zone
 import blbl.cat3399.core.net.BiliClient
+import blbl.cat3399.core.prefs.AppPrefs
+import blbl.cat3399.core.ui.TabContentFocusTarget
 import blbl.cat3399.core.ui.enableDpadTabFocus
 import blbl.cat3399.core.ui.findCurrentViewPagerChildFragmentAs
 import blbl.cat3399.core.ui.postDelayedIfAlive
 import blbl.cat3399.core.ui.postIfAlive
 import blbl.cat3399.core.ui.requestFocusSelectedTab
-import blbl.cat3399.core.ui.TabContentFocusTarget
 import blbl.cat3399.databinding.FragmentCategoryBinding
 import blbl.cat3399.feature.video.VideoGridTabSwitchFocusHost
 import blbl.cat3399.ui.BackPressHandler
+import blbl.cat3399.ui.RefreshKeyHandler
 import blbl.cat3399.ui.SidebarFocusHost
+import com.google.android.material.tabs.TabLayout
+import com.google.android.material.tabs.TabLayoutMediator
 
-class CategoryFragment : Fragment(), VideoGridTabSwitchFocusHost, BackPressHandler {
+class CategoryFragment :
+    Fragment(),
+    VideoGridTabSwitchFocusHost,
+    BackPressHandler {
     private var _binding: FragmentCategoryBinding? = null
     private val binding get() = _binding!!
     private var mediator: TabLayoutMediator? = null
@@ -37,12 +40,19 @@ class CategoryFragment : Fragment(), VideoGridTabSwitchFocusHost, BackPressHandl
 
     private var zones: List<Zone> = emptyList()
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?,
+    ): View {
         _binding = FragmentCategoryBinding.inflate(inflater, container, false)
         return binding.root
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+    override fun onViewCreated(
+        view: View,
+        savedInstanceState: Bundle?,
+    ) {
         setZones(CategoryZones.visibleZones(BiliClient.prefs), force = true)
         binding.tabLayout.addOnTabSelectedListener(
             object : TabLayout.OnTabSelectedListener {
@@ -80,7 +90,10 @@ class CategoryFragment : Fragment(), VideoGridTabSwitchFocusHost, BackPressHandl
         setZones(CategoryZones.visibleZones(BiliClient.prefs))
     }
 
-    private fun setZones(nextZones: List<Zone>, force: Boolean = false) {
+    private fun setZones(
+        nextZones: List<Zone>,
+        force: Boolean = false,
+    ) {
         val b = _binding ?: return
         val next = nextZones.ifEmpty { CategoryZones.defaultZones }
         if (!force && zones.map { CategoryZones.stableKeyFor(it) } == next.map { CategoryZones.stableKeyFor(it) }) return

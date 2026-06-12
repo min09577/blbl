@@ -142,16 +142,29 @@ val generateProto by tasks.registering {
     outputs.dir(protoOutputDir)
 
     doLast {
-        val toolsDir = layout.buildDirectory.dir("tmp/protoc-tools").get().asFile
-        val protoIncludeDir = layout.buildDirectory.dir("tmp/proto-include").get().asFile
-        val isWindows = org.gradle.internal.os.OperatingSystem.current().isWindows
+        val toolsDir =
+            layout.buildDirectory
+                .dir("tmp/protoc-tools")
+                .get()
+                .asFile
+        val protoIncludeDir =
+            layout.buildDirectory
+                .dir("tmp/proto-include")
+                .get()
+                .asFile
+        val isWindows =
+            org.gradle.internal.os.OperatingSystem
+                .current()
+                .isWindows
         val protocExe = File(toolsDir, if (isWindows) "protoc.exe" else "protoc")
         val grpcPluginExe = File(toolsDir, "protoc-gen-grpc-java" + if (isWindows) ".exe" else "")
 
         val protocDist =
             when {
                 isWindows -> "win64"
-                org.gradle.internal.os.OperatingSystem.current().isMacOsX ->
+                org.gradle.internal.os.OperatingSystem
+                    .current()
+                    .isMacOsX ->
                     if (System.getProperty("os.arch") == "aarch64") "osx-aarch_64" else "osx-x86_64"
                 else ->
                     if (System.getProperty("os.arch") == "aarch64") "linux-aarch_64" else "linux-x86_64"
@@ -159,7 +172,9 @@ val generateProto by tasks.registering {
         val protocGrpcClassifier =
             when {
                 isWindows -> "windows-x86_64"
-                org.gradle.internal.os.OperatingSystem.current().isMacOsX ->
+                org.gradle.internal.os.OperatingSystem
+                    .current()
+                    .isMacOsX ->
                     if (System.getProperty("os.arch") == "aarch64") "osx-aarch_64" else "osx-x86_64"
                 else ->
                     if (System.getProperty("os.arch") == "aarch64") "linux-aarch_64" else "linux-x86_64"
@@ -167,16 +182,27 @@ val generateProto by tasks.registering {
 
         // Download protoc binary + includes from GitHub Release (cached)
         if (!protocExe.exists() || !protoIncludeDir.resolve("google/protobuf/any.proto").exists()) {
-            val protoZip = layout.buildDirectory.file("tmp/protoc-dist.zip").get().asFile
+            val protoZip =
+                layout.buildDirectory
+                    .file("tmp/protoc-dist.zip")
+                    .get()
+                    .asFile
             protoZip.parentFile.mkdirs()
             val url = URL("https://github.com/protocolbuffers/protobuf/releases/download/v25.3/protoc-25.3-$protocDist.zip")
             logger.lifecycle("protoc: downloading protoc-25.3-$protocDist.zip from GitHub...")
             url.openStream().use { inp -> protoZip.outputStream().use { out -> inp.copyTo(out) } }
 
             // Extract entire zip to temp dir, then copy needed files
-            val extractDir = layout.buildDirectory.dir("tmp/protoc-extract").get().asFile
+            val extractDir =
+                layout.buildDirectory
+                    .dir("tmp/protoc-extract")
+                    .get()
+                    .asFile
             extractDir.deleteRecursively()
-            project.copy { from(project.zipTree(protoZip)); into(extractDir) }
+            project.copy {
+                from(project.zipTree(protoZip))
+                into(extractDir)
+            }
             val srcProtoc = File(extractDir, if (isWindows) "bin/protoc.exe" else "bin/protoc")
             if (srcProtoc.exists()) {
                 toolsDir.mkdirs()
@@ -196,7 +222,10 @@ val generateProto by tasks.registering {
         // Download protoc-gen-grpc-java from Maven Central (direct HTTP, avoids Gradle dependency resolution)
         if (!grpcPluginExe.exists()) {
             grpcPluginExe.parentFile.mkdirs()
-            val grpcUrl = URL("https://repo1.maven.org/maven2/io/grpc/protoc-gen-grpc-java/1.72.0/protoc-gen-grpc-java-1.72.0-$protocGrpcClassifier.exe")
+            val grpcUrl =
+                URL(
+                    "https://repo1.maven.org/maven2/io/grpc/protoc-gen-grpc-java/1.72.0/protoc-gen-grpc-java-1.72.0-$protocGrpcClassifier.exe",
+                )
             logger.lifecycle("protoc: downloading protoc-gen-grpc-java 1.72.0 from Maven Central...")
             grpcUrl.openStream().use { inp -> grpcPluginExe.outputStream().use { out -> inp.copyTo(out) } }
         } else {
@@ -210,14 +239,15 @@ val generateProto by tasks.registering {
         outputDir.deleteRecursively()
         outputDir.mkdirs()
 
-        val cmd = mutableListOf(
-            protocExe.absolutePath,
-            "-I${protoSourceDir.asFile.absolutePath}",
-            "-I${protoIncludeDir.absolutePath}",
-            "--java_out=lite:${outputDir.absolutePath}",
-            "--grpc_out=lite:${outputDir.absolutePath}",
-            "--plugin=protoc-gen-grpc=${grpcPluginExe.absolutePath}",
-        )
+        val cmd =
+            mutableListOf(
+                protocExe.absolutePath,
+                "-I${protoSourceDir.asFile.absolutePath}",
+                "-I${protoIncludeDir.absolutePath}",
+                "--java_out=lite:${outputDir.absolutePath}",
+                "--grpc_out=lite:${outputDir.absolutePath}",
+                "--plugin=protoc-gen-grpc=${grpcPluginExe.absolutePath}",
+            )
         cmd.addAll(protoFiles.files.map { it.absolutePath })
 
         val process = ProcessBuilder(cmd).redirectErrorStream(true).start()

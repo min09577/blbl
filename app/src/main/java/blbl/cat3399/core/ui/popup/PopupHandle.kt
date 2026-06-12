@@ -18,4 +18,3 @@ data class PopupAction(
     val dismissOnClick: Boolean = true,
     val onClick: (() -> Unit)? = null,
 )
-

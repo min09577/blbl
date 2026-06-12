@@ -43,7 +43,6 @@
     <ID>ComplexCondition:PopupHost.kt$PopupHost$desired != null &amp;&amp; desired.isAttachedToWindow &amp;&amp; desired.isShown &amp;&amp; desired.isFocusable &amp;&amp; desired.requestFocus()</ID>
     <ID>ComplexCondition:PopupHost.kt$PopupHost$last != null &amp;&amp; last.isAttachedToWindow &amp;&amp; last.isShown &amp;&amp; last.isFocusable &amp;&amp; last.requestFocus()</ID>
     <ID>ComplexCondition:SearchRenderer.kt$SearchRenderer$l != view.paddingLeft || t != view.paddingTop || r != view.paddingRight || btm != view.paddingBottom</ID>
-    <ID>ComplexCondition:SettingsInteractionHandler.kt$SettingsInteractionHandler$it.isDirectory &amp;&amp; ( it.name.contains("image") || it.name.contains("picasso") || it.name.contains("glide") || it.name.contains("cache") )</ID>
     <ID>ComplexCondition:SettingsText.kt$SettingsText$h264 &amp;&amp; h265 &amp;&amp; av1 &amp;&amp; dolbyVision &amp;&amp; dolbyAtmos</ID>
     <ID>ComplexCondition:SponsorBlockApi.kt$SponsorBlockApi$safeBvid.isBlank() || cid &lt;= 0L || safeUserId.length &lt; 30 || validSegments.isEmpty()</ID>
     <ID>ComplexCondition:TagDetailActivity.kt$TagDetailActivity$dataSource == DataSource.DYNAMIC_TAG &amp;&amp; requestPage == 1 &amp;&amp; res.items.isEmpty() &amp;&amp; adapter.itemCount &lt;= 0</ID>
@@ -59,7 +58,7 @@
     <ID>ComplexInterface:PlayerActivityTouch.kt$PlayerTouchGestureHost</ID>
     <ID>CyclomaticComplexMethod:AccountSessionStore.kt$AccountSessionStore$private fun parseRecords(arr: JSONArray): List&lt;AccountRecord&gt;</ID>
     <ID>CyclomaticComplexMethod:ApkUpdateFlow.kt$ApkUpdateFlow$fun startDownloadAndInstall( activity: ComponentActivity, latestVersionHint: String? = null, apkUrl: String? = null, onResolved: ((latestVersion: String, isNewer: Boolean) -&gt; Unit)? = null, ): Job?</ID>
-    <ID>CyclomaticComplexMethod:AppLog.kt$AppLog$private fun cleanupLogs( dir: File, keep: File?, )</ID>
+    <ID>CyclomaticComplexMethod:AppLog.kt$AppLog$private fun cleanupLogs(dir: File, keep: File?)</ID>
     <ID>CyclomaticComplexMethod:AppLog.kt$AppLog$private suspend fun runFileWriter(file: File)</ID>
     <ID>CyclomaticComplexMethod:ArchiveTripleAction.kt$suspend fun executeArchiveTripleAction( bvid: String, aid: Long?, selfMid: Long?, initialState: ArchiveTripleActionState, isStillValid: () -&gt; Boolean = { true }, ): ArchiveTripleActionResult</ID>
     <ID>CyclomaticComplexMethod:BangumiDetailActivity.kt$BangumiDetailActivity$private fun applyDetail(detail: BangumiSeasonDetail)</ID>
@@ -83,7 +82,7 @@
     <ID>CyclomaticComplexMethod:DanmakuShield.kt$DanmakuShield$fun allow(danmaku: Danmaku): Boolean</ID>
     <ID>CyclomaticComplexMethod:DashLocalHttpProxy.kt$DashLocalHttpProxy$private fun handleClient(socket: Socket)</ID>
     <ID>CyclomaticComplexMethod:DpadGridController.kt$DpadGridController$fun consumePendingFocusAfterLoadMore(): Boolean</ID>
-    <ID>CyclomaticComplexMethod:DpadGridController.kt$DpadGridController$private fun handleDpadDown( itemView: View, position: Int, ): Boolean</ID>
+    <ID>CyclomaticComplexMethod:DpadGridController.kt$DpadGridController$private fun handleDpadDown(itemView: View, position: Int): Boolean</ID>
     <ID>CyclomaticComplexMethod:DpadGridController.kt$DpadGridController$private fun handleDpadDownFallback(itemView: View): Boolean</ID>
     <ID>CyclomaticComplexMethod:DpadGridController.kt$DpadGridController$private fun maybeProtectFocusOnChildDetach(detachedChild: View)</ID>
     <ID>CyclomaticComplexMethod:DpadGridController.kt$DpadGridController$private fun parkFocusInRecyclerViewForLoadMore(keepDescendantFocusabilityOverridden: Boolean = false)</ID>
@@ -194,18 +193,15 @@
     <ID>CyclomaticComplexMethod:QrLoginActivity.kt$QrLoginActivity$private fun poll(key: String): Job</ID>
     <ID>CyclomaticComplexMethod:RecyclerViewFocus.kt$private fun RecyclerView.requestFocusAdapterPositionReliableInternal( position: Int, smoothScroll: Boolean, isAlive: () -&gt; Boolean, token: Int, attemptsLeft: Int, attemptDelayMs: Long, scrolled: Boolean, onFocused: () -&gt; Unit, ): Boolean</ID>
     <ID>CyclomaticComplexMethod:ReplyEmotePanelRepository.kt$ReplyEmotePanelRepository$private suspend fun refreshFromNetwork(context: Context)</ID>
-    <ID>CyclomaticComplexMethod:SearchInteractor.kt$SearchInteractor$fun loadNextPage( isRefresh: Boolean = false, refreshToken: Int = state.refreshUiToken, )</ID>
+    <ID>CyclomaticComplexMethod:SearchInteractor.kt$SearchInteractor$fun loadNextPage(isRefresh: Boolean = false, refreshToken: Int = state.refreshUiToken)</ID>
     <ID>CyclomaticComplexMethod:SearchRenderer.kt$SearchRenderer$fun applyUiScale()</ID>
     <ID>CyclomaticComplexMethod:SearchRenderer.kt$SearchRenderer$fun setupInput()</ID>
     <ID>CyclomaticComplexMethod:SearchRenderer.kt$SearchRenderer$private fun maybeConsumePendingResultFocus(): Boolean</ID>
     <ID>CyclomaticComplexMethod:SearchRenderer.kt$SearchRenderer$private fun setupQueryInput()</ID>
     <ID>CyclomaticComplexMethod:SettingsInteractionHandler.kt$SettingsInteractionHandler$fun onEntryClicked(entry: SettingEntry)</ID>
-    <ID>CyclomaticComplexMethod:SettingsInteractionHandler.kt$SettingsInteractionHandler$private fun ensureTestUpdateChecked( force: Boolean, refreshUi: Boolean = true, promptIfUpdate: Boolean = false, )</ID>
-    <ID>CyclomaticComplexMethod:SettingsInteractionHandler.kt$SettingsInteractionHandler$private fun showCacheManagementDialog()</ID>
-    <ID>CyclomaticComplexMethod:SettingsInteractionHandler.kt$SettingsInteractionHandler$private fun showCustomPageContentDialog( sectionIndex: Int, focusId: SettingId, )</ID>
-    <ID>CyclomaticComplexMethod:SettingsInteractionHandler.kt$SettingsInteractionHandler$private fun showPlayerCustomShortcutsDialog( sectionIndex: Int, focusId: SettingId, )</ID>
-    <ID>CyclomaticComplexMethod:SettingsInteractionHandler.kt$SettingsInteractionHandler$private fun showQuickQualityDialog()</ID>
-    <ID>CyclomaticComplexMethod:SettingsInteractionHandler.kt$SettingsInteractionHandler$private fun showVideoInfoDialog()</ID>
+    <ID>CyclomaticComplexMethod:SettingsInteractionHandler.kt$SettingsInteractionHandler$private fun ensureTestUpdateChecked(force: Boolean, refreshUi: Boolean = true, promptIfUpdate: Boolean = false)</ID>
+    <ID>CyclomaticComplexMethod:SettingsInteractionHandler.kt$SettingsInteractionHandler$private fun showCustomPageContentDialog(sectionIndex: Int, focusId: SettingId)</ID>
+    <ID>CyclomaticComplexMethod:SettingsInteractionHandler.kt$SettingsInteractionHandler$private fun showPlayerCustomShortcutsDialog(sectionIndex: Int, focusId: SettingId)</ID>
     <ID>CyclomaticComplexMethod:SettingsRenderer.kt$SettingsRenderer$private fun buildEntriesForSection(sectionName: String?): List&lt;SettingEntry&gt;</ID>
     <ID>CyclomaticComplexMethod:SettingsText.kt$SettingsText$fun downKeyOsdFocusTargetText(code: String): String</ID>
     <ID>CyclomaticComplexMethod:SettingsText.kt$SettingsText$fun playerOsdButtonsText(buttons: List&lt;String&gt;): String</ID>
@@ -219,16 +215,15 @@
     <ID>CyclomaticComplexMethod:UpDetailActivity.kt$UpDetailActivity$override fun dispatchKeyEvent(event: KeyEvent): Boolean</ID>
     <ID>CyclomaticComplexMethod:UpDetailActivity.kt$UpDetailActivity$private fun loadHeader()</ID>
     <ID>CyclomaticComplexMethod:UpDetailActivity.kt$UpDetailActivity$private fun loadMoreSeasonsSeries(isRefresh: Boolean = false)</ID>
-    <ID>CyclomaticComplexMethod:UpDetailActivity.kt$UpDetailActivity$private fun loadMoreSectionVideos( section: UpDetailSection, state: SectionPagingState, )</ID>
+    <ID>CyclomaticComplexMethod:UpDetailActivity.kt$UpDetailActivity$private fun loadMoreSectionVideos(section: UpDetailSection, state: SectionPagingState)</ID>
     <ID>CyclomaticComplexMethod:UserInfoDialogFragment.kt$UserInfoDialogFragment$private fun load()</ID>
-    <ID>CyclomaticComplexMethod:UserScaleTabLayout.kt$UserScaleTabLayout$private fun updateUserScaleTabTextView( view: android.view.View, expectedPx: Float? = null, ): Boolean</ID>
-    <ID>CyclomaticComplexMethod:VideoCardAdapter.kt$VideoCardAdapter$private fun handleItemLongClick( item: VideoCard, position: Int, isPointerLongClick: Boolean, ): Boolean</ID>
+    <ID>CyclomaticComplexMethod:UserScaleTabLayout.kt$UserScaleTabLayout$private fun updateUserScaleTabTextView(view: android.view.View, expectedPx: Float? = null): Boolean</ID>
     <ID>CyclomaticComplexMethod:VideoCardAdapter.kt$VideoCardAdapter.Vh$fun bind( item: VideoCard, position: Int, isSelected: ((VideoCard, Int) -&gt; Boolean)?, overlayUi: ActionOverlayUi?, actionDelegate: VideoCardActionDelegate?, )</ID>
     <ID>CyclomaticComplexMethod:VideoCardAdapter.kt$VideoCardAdapter.Vh$private fun bindActionOverlay( item: VideoCard, overlayUi: ActionOverlayUi?, actionDelegate: VideoCardActionDelegate?, )</ID>
     <ID>CyclomaticComplexMethod:VideoDetailActivity.kt$VideoDetailActivity$private fun load(prefetchedDetail: VideoDetail? = null)</ID>
     <ID>CyclomaticComplexMethod:VideoDetailActivity.kt$VideoDetailActivity$private fun onFavButtonClicked()</ID>
     <ID>CyclomaticComplexMethod:VideoDetailActivity.kt$VideoDetailActivity$private fun refreshActionButtonStatesFromServer( bvid: String, aid: Long?, )</ID>
-    <ID>CyclomaticComplexMethod:VideoDetailHeaderAdapter.kt$VideoDetailHeaderAdapter.Vh$fun bind( title: String?, metaText: String?, desc: String?, descExpanded: Boolean, coverUrl: String?, accessBadgeText: String?, usePosterCover: Boolean, upName: String?, upAvatar: String?, upFollowers: String?, tabName: String?, tags: List&lt;VideoTag&gt;, primaryButtonText: String?, secondaryButtonText: String?, showActions: Boolean, actionLiked: Boolean, actionCoinCount: Int, actionFavored: Boolean, partsHeaderText: String?, partsCards: List&lt;VideoCard&gt;, partsSelectedKey: String?, partsOrderReversed: Boolean, partsAutoScrollToSelected: Boolean, partsScrollToStart: Boolean, seasonHeaderText: String?, seasonCards: List&lt;VideoCard&gt;, seasonSelectedKey: String?, seasonOrderReversed: Boolean, seasonAutoScrollToSelected: Boolean, seasonScrollToStart: Boolean, recommendHeaderText: String?, )</ID>
+    <ID>CyclomaticComplexMethod:VideoDetailHeaderAdapter.kt$VideoDetailHeaderAdapter.Vh$fun bind( title: String?, metaText: String?, desc: String?, descExpanded: Boolean, coverUrl: String?, accessBadgeText: String?, usePosterCover: Boolean, upName: String?, upAvatar: String?, tabName: String?, tags: List&lt;VideoTag&gt;, primaryButtonText: String?, secondaryButtonText: String?, showActions: Boolean, actionLiked: Boolean, actionCoinCount: Int, actionFavored: Boolean, partsHeaderText: String?, partsCards: List&lt;VideoCard&gt;, partsSelectedKey: String?, partsOrderReversed: Boolean, partsAutoScrollToSelected: Boolean, partsScrollToStart: Boolean, seasonHeaderText: String?, seasonCards: List&lt;VideoCard&gt;, seasonSelectedKey: String?, seasonOrderReversed: Boolean, seasonAutoScrollToSelected: Boolean, seasonScrollToStart: Boolean, recommendHeaderText: String?, )</ID>
     <ID>CyclomaticComplexMethod:VideoGridFragment.kt$VideoGridFragment$private fun loadNextPage(isRefresh: Boolean = false)</ID>
     <ID>CyclomaticComplexMethod:VideoGridFragment.kt$VideoGridFragment$private fun maybeConsumePendingFocusFirstCard(): Boolean</ID>
     <ID>CyclomaticComplexMethod:VolumeBalanceAudioProcessor.kt$VolumeBalanceAudioProcessor$override fun queueInput(inputBuffer: ByteBuffer)</ID>
@@ -303,12 +298,6 @@
     <ID>ImplicitDefaultLocale:PlayerSettings.kt$String.format("#%06X", 0xFFFFFF and color)</ID>
     <ID>ImplicitDefaultLocale:PlayerSettings.kt$String.format("%.1fx", it)</ID>
     <ID>ImplicitDefaultLocale:PlayerSettings.kt$String.format("%.1fx", speed)</ID>
-    <ID>ImplicitDefaultLocale:SettingsInteractionHandler.kt$SettingsInteractionHandler$String.format("%.1fKB", totalSize / 1024.0)</ID>
-    <ID>ImplicitDefaultLocale:SettingsInteractionHandler.kt$SettingsInteractionHandler$String.format("%.1fMB", item.fileSize / 1024.0 / 1024.0)</ID>
-    <ID>ImplicitDefaultLocale:SettingsInteractionHandler.kt$SettingsInteractionHandler$String.format("%.1fMB", totalSize / 1024.0 / 1024.0)</ID>
-    <ID>ImplicitDefaultLocale:SettingsInteractionHandler.kt$SettingsInteractionHandler$String.format("%.2fGB", item.fileSize / 1024.0 / 1024.0 / 1024.0)</ID>
-    <ID>ImplicitDefaultLocale:SettingsInteractionHandler.kt$SettingsInteractionHandler$String.format("%.2fGB", totalSize / 1024.0 / 1024.0 / 1024.0)</ID>
-    <ID>ImplicitDefaultLocale:VideoDetailActivity.kt$VideoDetailActivity$String.format("%.1f万粉", stat.follower / 10000.0)</ID>
     <ID>ImplicitDefaultLocale:VideoDownloadService.kt$VideoDownloadService$String.format("%.1fMB", bytes / 1024.0 / 1024.0)</ID>
     <ID>ImplicitDefaultLocale:VideoDownloadService.kt$VideoDownloadService$String.format("%.2fGB", bytes / 1024.0 / 1024.0 / 1024.0)</ID>
     <ID>ImplicitDefaultLocale:WebCookieMaintainer.kt$WebCookieMaintainer$String.format("%02x", b)</ID>
@@ -325,7 +314,6 @@
     <ID>LargeClass:PlayerUiMode.kt$PlayerUiMode</ID>
     <ID>LargeClass:SearchRenderer.kt$SearchRenderer</ID>
     <ID>LargeClass:SettingsInteractionHandler.kt$SettingsInteractionHandler</ID>
-    <ID>LargeClass:SettingsRenderer.kt$SettingsRenderer</ID>
     <ID>LargeClass:UpDetailActivity.kt$UpDetailActivity : BaseActivity</ID>
     <ID>LargeClass:VideoApi.kt$VideoApi</ID>
     <ID>LargeClass:VideoDetailActivity.kt$VideoDetailActivity : BaseActivity</ID>
@@ -340,7 +328,7 @@
     <ID>LongMethod:DanmakuEngine.kt$DanmakuEngine$override fun act()</ID>
     <ID>LongMethod:DanmakuPlayer.kt$DanmakuPlayer.ActionHandler$override fun handleMessage(msg: Message)</ID>
     <ID>LongMethod:DashLocalHttpProxy.kt$DashLocalHttpProxy$private fun handleClient(socket: Socket)</ID>
-    <ID>LongMethod:DynamicFragment.kt$DynamicFragment$override fun onViewCreated( view: View, savedInstanceState: Bundle?, )</ID>
+    <ID>LongMethod:DynamicFragment.kt$DynamicFragment$override fun onViewCreated(view: View, savedInstanceState: Bundle?)</ID>
     <ID>LongMethod:ExoPlayerEngine.kt$private fun parseLiveHlsDebugInfo(text: String): LiveHlsDebugInfo?</ID>
     <ID>LongMethod:GaiaVgateActivity.kt$GaiaVgateActivity$@SuppressLint("SetJavaScriptEnabled") override fun onCreate(savedInstanceState: Bundle?)</ID>
     <ID>LongMethod:IjkPlayerEngine.kt$IjkPlayerEngine$override fun setSource(source: PlaybackSource)</ID>
@@ -386,24 +374,19 @@
     <ID>LongMethod:PopupHost.kt$PopupHost$fun showModal( title: CharSequence?, contentView: View, cancelable: Boolean, actions: List&lt;PopupAction&gt;, preferredActionRole: PopupActionRole? = PopupActionRole.POSITIVE, autoFocus: Boolean = true, onModalAttached: ((modalRoot: View) -&gt; Unit)? = null, onDismiss: (() -&gt; Unit)? = null, onRestoreFocus: (() -&gt; Boolean)? = null, ): PopupHandle</ID>
     <ID>LongMethod:QrLoginActivity.kt$QrLoginActivity$private fun poll(key: String): Job</ID>
     <ID>LongMethod:RegionDetailActivity.kt$RegionDetailActivity$override fun onCreate(savedInstanceState: Bundle?)</ID>
-    <ID>LongMethod:SearchInteractor.kt$SearchInteractor$fun loadNextPage( isRefresh: Boolean = false, refreshToken: Int = state.refreshUiToken, )</ID>
+    <ID>LongMethod:SearchInteractor.kt$SearchInteractor$fun loadNextPage(isRefresh: Boolean = false, refreshToken: Int = state.refreshUiToken)</ID>
     <ID>LongMethod:SettingsInteractionHandler.kt$SettingsInteractionHandler$fun onEntryClicked(entry: SettingEntry)</ID>
-    <ID>LongMethod:SettingsInteractionHandler.kt$SettingsInteractionHandler$fun runDiagnostics()</ID>
-    <ID>LongMethod:SettingsInteractionHandler.kt$SettingsInteractionHandler$private fun showCacheManagementDialog()</ID>
-    <ID>LongMethod:SettingsInteractionHandler.kt$SettingsInteractionHandler$private fun showCastManagementDialog()</ID>
-    <ID>LongMethod:SettingsInteractionHandler.kt$SettingsInteractionHandler$private fun showHistoryManagementDialog()</ID>
     <ID>LongMethod:SettingsInteractionHandler.kt$SettingsInteractionHandler.Controller$fun showManager(focusKeyCode: Int? = null)</ID>
     <ID>LongMethod:SettingsInteractionHandler.kt$SettingsInteractionHandler.Controller$fun showManager(focusStableKey: String? = null)</ID>
     <ID>LongMethod:SettingsRenderer.kt$SettingsRenderer$private fun buildEntriesForSection(sectionName: String?): List&lt;SettingEntry&gt;</ID>
     <ID>LongMethod:TagDetailActivity.kt$TagDetailActivity$override fun onCreate(savedInstanceState: Bundle?)</ID>
-    <ID>LongMethod:UpDetailActivity.kt$UpDetailActivity$private fun loadMoreSectionVideos( section: UpDetailSection, state: SectionPagingState, )</ID>
+    <ID>LongMethod:UpDetailActivity.kt$UpDetailActivity$private fun loadMoreSectionVideos(section: UpDetailSection, state: SectionPagingState)</ID>
     <ID>LongMethod:VideoCardAdapter.kt$VideoCardAdapter.Vh$fun bind( item: VideoCard, position: Int, isSelected: ((VideoCard, Int) -&gt; Boolean)?, overlayUi: ActionOverlayUi?, actionDelegate: VideoCardActionDelegate?, )</ID>
     <ID>LongMethod:VideoCardAdapter.kt$VideoCardAdapter.Vh$private fun bindActionOverlay( item: VideoCard, overlayUi: ActionOverlayUi?, actionDelegate: VideoCardActionDelegate?, )</ID>
-    <ID>LongMethod:VideoDetailActivity.kt$VideoDetailActivity$override fun onCreate(savedInstanceState: Bundle?)</ID>
     <ID>LongMethod:VideoDetailActivity.kt$VideoDetailActivity$private fun initUi()</ID>
     <ID>LongMethod:VideoDetailActivity.kt$VideoDetailActivity$private fun load(prefetchedDetail: VideoDetail? = null)</ID>
-    <ID>LongMethod:VideoDetailHeaderAdapter.kt$VideoDetailHeaderAdapter.Vh$fun bind( title: String?, metaText: String?, desc: String?, descExpanded: Boolean, coverUrl: String?, accessBadgeText: String?, usePosterCover: Boolean, upName: String?, upAvatar: String?, upFollowers: String?, tabName: String?, tags: List&lt;VideoTag&gt;, primaryButtonText: String?, secondaryButtonText: String?, showActions: Boolean, actionLiked: Boolean, actionCoinCount: Int, actionFavored: Boolean, partsHeaderText: String?, partsCards: List&lt;VideoCard&gt;, partsSelectedKey: String?, partsOrderReversed: Boolean, partsAutoScrollToSelected: Boolean, partsScrollToStart: Boolean, seasonHeaderText: String?, seasonCards: List&lt;VideoCard&gt;, seasonSelectedKey: String?, seasonOrderReversed: Boolean, seasonAutoScrollToSelected: Boolean, seasonScrollToStart: Boolean, recommendHeaderText: String?, )</ID>
-    <ID>LongMethod:VideoGridFragment.kt$VideoGridFragment$override fun onViewCreated( view: View, savedInstanceState: Bundle?, )</ID>
+    <ID>LongMethod:VideoDetailHeaderAdapter.kt$VideoDetailHeaderAdapter.Vh$fun bind( title: String?, metaText: String?, desc: String?, descExpanded: Boolean, coverUrl: String?, accessBadgeText: String?, usePosterCover: Boolean, upName: String?, upAvatar: String?, tabName: String?, tags: List&lt;VideoTag&gt;, primaryButtonText: String?, secondaryButtonText: String?, showActions: Boolean, actionLiked: Boolean, actionCoinCount: Int, actionFavored: Boolean, partsHeaderText: String?, partsCards: List&lt;VideoCard&gt;, partsSelectedKey: String?, partsOrderReversed: Boolean, partsAutoScrollToSelected: Boolean, partsScrollToStart: Boolean, seasonHeaderText: String?, seasonCards: List&lt;VideoCard&gt;, seasonSelectedKey: String?, seasonOrderReversed: Boolean, seasonAutoScrollToSelected: Boolean, seasonScrollToStart: Boolean, recommendHeaderText: String?, )</ID>
+    <ID>LongMethod:VideoGridFragment.kt$VideoGridFragment$override fun onViewCreated(view: View, savedInstanceState: Bundle?)</ID>
     <ID>LongMethod:VolumeBalanceAudioProcessor.kt$VolumeBalanceAudioProcessor$override fun queueInput(inputBuffer: ByteBuffer)</ID>
     <ID>LongParameterList:AppPopup.kt$AppPopup$( context: Context, title: CharSequence, initial: String, hint: CharSequence? = null, inputType: Int = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_VARIATION_NORMAL, minLines: Int = 1, positiveText: CharSequence = "保存", negativeText: CharSequence = "取消", neutralText: CharSequence? = null, cancelable: Boolean = true, onPositive: (text: String) -&gt; Unit, onNegative: (() -&gt; Unit)? = null, onNeutral: (() -&gt; Unit)? = null, validate: ((text: String) -&gt; Boolean)? = null, onDismiss: (() -&gt; Unit)? = null, )</ID>
     <ID>LongParameterList:AppPopup.kt$AppPopup$( context: Context, title: CharSequence, items: List&lt;String&gt;, checked: BooleanArray, cancelable: Boolean = true, minCheckedCount: Int = 0, onChanged: (checked: BooleanArray) -&gt; Unit, onDismiss: (() -&gt; Unit)? = null, )</ID>
@@ -424,8 +407,8 @@
     <ID>LongParameterList:SearchInteractor.kt$SearchInteractor$( paging: PagedGridStateMachine&lt;Int&gt;, isRefresh: Boolean, tabIndexAtStart: Int, tabAtStart: SearchTab, fetch: suspend (page: Int) -&gt; BiliApi.PagedResult&lt;Item&gt;, idOf: (Item) -&gt; Id, loaded: MutableSet&lt;Id&gt;, endReachedOf: (page: Int, res: BiliApi.PagedResult&lt;Item&gt;, filtered: List&lt;Item&gt;) -&gt; Boolean, apply: (items: List&lt;Item&gt;, isRefresh: Boolean) -&gt; Unit, )</ID>
     <ID>LongParameterList:VideoApi.kt$VideoApi$( aid: Long? = null, bvid: String? = null, cid: Long? = null, epId: Long? = null, seasonId: Long? = null, playedTimeSec: Long, type: Int, subType: Int? = null, playType: Int = 0, )</ID>
     <ID>LongParameterList:VideoDetailHeaderAdapter.kt$VideoDetailHeaderAdapter$( private val onPlayClick: () -&gt; Unit, private val onUpClick: () -&gt; Unit, private val onTabClick: (tabName: String) -&gt; Unit, private val onTagClick: (tag: VideoTag) -&gt; Unit, private val onLikeClick: () -&gt; Unit, private val onLikeLongPress: () -&gt; Unit, private val onCoinClick: () -&gt; Unit, private val onFavClick: () -&gt; Unit, private val onSecondaryClick: () -&gt; Unit, private val onUpCardFocused: (() -&gt; Unit)? = null, private val onPrimaryActionFocused: (() -&gt; Unit)? = null, private val onSecondaryActionFocused: (() -&gt; Unit)? = null, private val onPartsOrderClick: () -&gt; Unit, private val onSeasonOrderClick: () -&gt; Unit, private val onPartCardClick: (card: VideoCard, index: Int) -&gt; Unit, private val onSeasonCardClick: (card: VideoCard, index: Int) -&gt; Unit, )</ID>
-    <ID>LongParameterList:VideoDetailHeaderAdapter.kt$VideoDetailHeaderAdapter$( title: String?, metaText: String?, desc: String?, coverUrl: String?, accessBadgeText: String? = null, usePosterCover: Boolean, upName: String?, upAvatar: String?, upFollowers: String? = null, tabName: String?, tags: List&lt;VideoTag&gt;, primaryButtonText: String?, secondaryButtonText: String?, showActions: Boolean, actionLiked: Boolean = false, actionCoinCount: Int = 0, actionFavored: Boolean = false, partsHeaderText: String?, partsCards: List&lt;VideoCard&gt;, partsSelectedKey: String?, partsOrderReversed: Boolean, partsAutoScrollToSelected: Boolean = true, partsScrollToStart: Boolean = false, seasonHeaderText: String?, seasonCards: List&lt;VideoCard&gt;, seasonSelectedKey: String?, seasonOrderReversed: Boolean, seasonAutoScrollToSelected: Boolean = true, seasonScrollToStart: Boolean = false, recommendHeaderText: String?, )</ID>
-    <ID>LongParameterList:VideoDetailHeaderAdapter.kt$VideoDetailHeaderAdapter.Vh$( title: String?, metaText: String?, desc: String?, descExpanded: Boolean, coverUrl: String?, accessBadgeText: String?, usePosterCover: Boolean, upName: String?, upAvatar: String?, upFollowers: String?, tabName: String?, tags: List&lt;VideoTag&gt;, primaryButtonText: String?, secondaryButtonText: String?, showActions: Boolean, actionLiked: Boolean, actionCoinCount: Int, actionFavored: Boolean, partsHeaderText: String?, partsCards: List&lt;VideoCard&gt;, partsSelectedKey: String?, partsOrderReversed: Boolean, partsAutoScrollToSelected: Boolean, partsScrollToStart: Boolean, seasonHeaderText: String?, seasonCards: List&lt;VideoCard&gt;, seasonSelectedKey: String?, seasonOrderReversed: Boolean, seasonAutoScrollToSelected: Boolean, seasonScrollToStart: Boolean, recommendHeaderText: String?, )</ID>
+    <ID>LongParameterList:VideoDetailHeaderAdapter.kt$VideoDetailHeaderAdapter$( title: String?, metaText: String?, desc: String?, coverUrl: String?, accessBadgeText: String? = null, usePosterCover: Boolean, upName: String?, upAvatar: String?, tabName: String?, tags: List&lt;VideoTag&gt;, primaryButtonText: String?, secondaryButtonText: String?, showActions: Boolean, actionLiked: Boolean = false, actionCoinCount: Int = 0, actionFavored: Boolean = false, partsHeaderText: String?, partsCards: List&lt;VideoCard&gt;, partsSelectedKey: String?, partsOrderReversed: Boolean, partsAutoScrollToSelected: Boolean = true, partsScrollToStart: Boolean = false, seasonHeaderText: String?, seasonCards: List&lt;VideoCard&gt;, seasonSelectedKey: String?, seasonOrderReversed: Boolean, seasonAutoScrollToSelected: Boolean = true, seasonScrollToStart: Boolean = false, recommendHeaderText: String?, )</ID>
+    <ID>LongParameterList:VideoDetailHeaderAdapter.kt$VideoDetailHeaderAdapter.Vh$( title: String?, metaText: String?, desc: String?, descExpanded: Boolean, coverUrl: String?, accessBadgeText: String?, usePosterCover: Boolean, upName: String?, upAvatar: String?, tabName: String?, tags: List&lt;VideoTag&gt;, primaryButtonText: String?, secondaryButtonText: String?, showActions: Boolean, actionLiked: Boolean, actionCoinCount: Int, actionFavored: Boolean, partsHeaderText: String?, partsCards: List&lt;VideoCard&gt;, partsSelectedKey: String?, partsOrderReversed: Boolean, partsAutoScrollToSelected: Boolean, partsScrollToStart: Boolean, seasonHeaderText: String?, seasonCards: List&lt;VideoCard&gt;, seasonSelectedKey: String?, seasonOrderReversed: Boolean, seasonAutoScrollToSelected: Boolean, seasonScrollToStart: Boolean, recommendHeaderText: String?, )</ID>
     <ID>LongParameterList:VideoDetailHeaderAdapter.kt$VideoDetailHeaderAdapter.Vh$( val binding: ItemVideoDetailHeaderBinding, private val onPlayClick: () -&gt; Unit, private val onUpClick: () -&gt; Unit, private val onTabClick: (tabName: String) -&gt; Unit, private val onTagClick: (tag: VideoTag) -&gt; Unit, private val onLikeClick: () -&gt; Unit, private val onLikeLongPress: () -&gt; Unit, private val onCoinClick: () -&gt; Unit, private val onFavClick: () -&gt; Unit, private val onSecondaryClick: () -&gt; Unit, private val onUpCardFocused: (() -&gt; Unit)?, private val onPrimaryActionFocused: (() -&gt; Unit)?, private val onSecondaryActionFocused: (() -&gt; Unit)?, private val onPartsOrderClick: () -&gt; Unit, private val onSeasonOrderClick: () -&gt; Unit, private val onPartCardClick: (card: VideoCard, index: Int) -&gt; Unit, private val onSeasonCardClick: (card: VideoCard, index: Int) -&gt; Unit, private val onDescExpandClick: () -&gt; Boolean, )</ID>
     <ID>LoopWithTooManyJumpStatements:AccountSessionStore.kt$AccountSessionStore$for</ID>
     <ID>LoopWithTooManyJumpStatements:AppLog.kt$AppLog$while</ID>
@@ -505,7 +488,6 @@
     <ID>MagicNumber:BiliApi.kt$BiliApi$6</ID>
     <ID>MagicNumber:BiliApi.kt$BiliApi$60</ID>
     <ID>MagicNumber:BiliApi.kt$BiliApi$7</ID>
-    <ID>MagicNumber:BiliClient.kt$BiliClient$10L</ID>
     <ID>MagicNumber:BiliClient.kt$BiliClient$12</ID>
     <ID>MagicNumber:BiliClient.kt$BiliClient$1_000_000</ID>
     <ID>MagicNumber:BiliClient.kt$BiliClient$20</ID>
@@ -585,7 +567,6 @@
     <ID>MagicNumber:DocumentExporter.kt$DocumentExporter$20</ID>
     <ID>MagicNumber:DocumentExporter.kt$DocumentExporter$96</ID>
     <ID>MagicNumber:DownloadListFragment.kt$DownloadListFragment.DownloadAdapter$0.7f</ID>
-    <ID>MagicNumber:DynamicFragment.kt$DynamicFragment$10</ID>
     <ID>MagicNumber:DynamicFragment.kt$DynamicFragment.&lt;no name provided&gt;$6</ID>
     <ID>MagicNumber:EmoteSpannable.kt$EmoteSpannable.EmoteDrawable$255</ID>
     <ID>MagicNumber:FollowingListActivity.kt$FollowingListActivity.&lt;no name provided&gt;$12</ID>
@@ -1442,82 +1423,22 @@
     <ID>MagicNumber:SearchRenderer.kt$SearchRenderer$6</ID>
     <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$0.05f</ID>
     <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$0.25f</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$0.5f</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$0.75f</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$0x0000FF</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$0x00BFFF</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$0x00FF00</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$0xFF0000</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$0xFF00FF</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$0xFF69B4</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$0xFFFF00</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$0xFFFFFF</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$1.25f</ID>
     <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$1.5f</ID>
     <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$10</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$1000</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$10000</ID>
     <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$10f</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$112</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$116</ID>
     <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$12</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$120</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$125</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$127</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$130</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$14</ID>
     <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$140</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$1440</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$14f</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$15</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$150</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$15000</ID>
     <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$18</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$2.5f</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$20</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$200</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$2000</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$22</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$25</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$250</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$255</ID>
     <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$26</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$28</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$30</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$300</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$3000</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$30000</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$33</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$40</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$400</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$45</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$48</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$50</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$500</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$5000</ID>
     <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$6</ID>
     <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$60</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$60000</ID>
     <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$60f</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$7</ID>
     <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$70</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$75</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$80</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$8000</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$90</ID>
     <ID>MagicNumber:SettingsRenderer.kt$SettingsRenderer$60</ID>
     <ID>MagicNumber:SettingsRenderer.kt$SettingsRenderer$80</ID>
     <ID>MagicNumber:SettingsText.kt$SettingsText$0.001f</ID>
     <ID>MagicNumber:SettingsText.kt$SettingsText$0.16f</ID>
     <ID>MagicNumber:SettingsText.kt$SettingsText$0.30f</ID>
-    <ID>MagicNumber:SettingsText.kt$SettingsText$0.80f</ID>
-    <ID>MagicNumber:SettingsText.kt$SettingsText$0.85f</ID>
-    <ID>MagicNumber:SettingsText.kt$SettingsText$0.90f</ID>
-    <ID>MagicNumber:SettingsText.kt$SettingsText$0.95f</ID>
-    <ID>MagicNumber:SettingsText.kt$SettingsText$1.05f</ID>
-    <ID>MagicNumber:SettingsText.kt$SettingsText$1.10f</ID>
-    <ID>MagicNumber:SettingsText.kt$SettingsText$1.15f</ID>
-    <ID>MagicNumber:SettingsText.kt$SettingsText$1.20f</ID>
     <ID>MagicNumber:SettingsText.kt$SettingsText$10</ID>
     <ID>MagicNumber:SettingsText.kt$SettingsText$10f</ID>
     <ID>MagicNumber:SettingsText.kt$SettingsText$112</ID>
@@ -1579,8 +1500,6 @@
     <ID>MagicNumber:VideoCardAdapter.kt$VideoCardAdapter.Vh$0.5f</ID>
     <ID>MagicNumber:VideoCardAdapter.kt$VideoCardAdapter.Vh$99</ID>
     <ID>MagicNumber:VideoCardAdapter.kt$VideoCardAdapter.Vh$999</ID>
-    <ID>MagicNumber:VideoDetailActivity.kt$VideoDetailActivity$10000</ID>
-    <ID>MagicNumber:VideoDetailActivity.kt$VideoDetailActivity$10000.0</ID>
     <ID>MagicNumber:VideoDetailActivity.kt$VideoDetailActivity$200</ID>
     <ID>MagicNumber:VideoDetailActivity.kt$VideoDetailActivity$34005</ID>
     <ID>MagicNumber:VideoDetailActivity.kt$VideoDetailActivity$65006</ID>
@@ -1590,7 +1509,6 @@
     <ID>MagicNumber:VideoDownloadService.kt$VideoDownloadService$60</ID>
     <ID>MagicNumber:VideoDownloadService.kt$VideoDownloadService$80</ID>
     <ID>MagicNumber:VideoDownloadService.kt$VideoDownloadService$8192</ID>
-    <ID>MagicNumber:VideoGridFragment.kt$VideoGridFragment$10</ID>
     <ID>MagicNumber:VideoShotPreviewView.kt$VideoShotPreviewView$0.0001f</ID>
     <ID>MagicNumber:VideoShotPreviewView.kt$VideoShotPreviewView$0.001f</ID>
     <ID>MagicNumber:VolumeBalanceAudioProcessor.kt$VolumeBalanceAudioProcessor$120.0</ID>
@@ -1729,16 +1647,18 @@
     <ID>MaxLineLength:AppVideoHttpTransport.kt$BiliClientAppVideoHttpTransport$"Mozilla/5.0 BiliDroid/2.2.0 (bbcallen@gmail.com) os/android model/2505DRP06G mobi_app/android_hd build/2020100 channel/yingyongbao innerVer/2020100 osVer/15 network/2"</ID>
     <ID>MaxLineLength:ArchiveTripleAction.kt$fun pickTripleActionFavFolder(folders: List&lt;BiliApi.FavFolderWithState&gt;): BiliApi.FavFolderWithState?</ID>
     <ID>MaxLineLength:BiliApi.kt$BiliApi$private fun VideoCardPage&lt;*&gt;.toHasMorePage(): HasMorePage&lt;VideoCard&gt;</ID>
+    <ID>MaxLineLength:BiliClient.kt$BiliClient$fun</ID>
     <ID>MaxLineLength:BlblApp.kt$BlblApp$"app=${BuildConfig.VERSION_NAME} api=${Build.VERSION.SDK_INT} device=${Build.MANUFACTURER} ${Build.MODEL} abi=${Build.SUPPORTED_ABIS.firstOrNull().orEmpty()}"</ID>
-    <ID>MaxLineLength:CustomMyPageHostFragment.kt$CustomMyPageHostFragment$override fun requestFocusPrimaryItemFromBackToTab0(): Boolean</ID>
+    <ID>MaxLineLength:DynamicFragment.kt$DynamicFragment$if</ID>
     <ID>MaxLineLength:ExoPlayerEngine.kt$ExtXStartStrippingHlsPlaylistParserFactory$override fun createPlaylistParser(): ParsingLoadable.Parser&lt;HlsPlaylist&gt;</ID>
+    <ID>MaxLineLength:HistoryAdapter.kt$HistoryAdapter$is HistoryEntry.Video -&gt; videoAdapter.onBindViewHolder(holder as VideoCardAdapter.Vh, videos.indexOf((items[position] as HistoryEntry.Video).card))</ID>
     <ID>MaxLineLength:IjkPlayerEngine.kt$IjkPlayerEngine$"DASH segment url is very long (&gt;1024). If playback fails, consider ijkffmpeg dashdec long-url support."</ID>
     <ID>MaxLineLength:IjkPlayerEngine.kt$IjkPlayerEngine$"async,cache,crypto,file,http,https,ijkhttphook,ijkinject,ijklivehook,ijklongurl,ijksegment,ijktcphook,pipe,rtp,tcp,tls,udp,ijkurlhook,data"</ID>
     <ID>MaxLineLength:IjkPlayerEngine.kt$IjkPlayerEngine$"surface changed: hasSurface=${if (hasSurface) 1 else 0} prepared=${if (prepared) 1 else 0} preparing=${if (preparing) 1 else 0}"</ID>
     <ID>MaxLineLength:LiveAreaDetailFragment.kt$LiveAreaDetailFragment$"load ok pid=$parentAreaId aid=$areaId page=${page - 1} add=${filtered.size} total=${adapter.itemCount} cost=${SystemClock.uptimeMillis() - startAt}ms"</ID>
     <ID>MaxLineLength:LiveGridFragment.kt$LiveGridFragment$"load ok src=$source page=$startPage add=${applied.items.size} total=${adapter.itemCount} cost=${SystemClock.uptimeMillis() - startAt}ms"</ID>
     <ID>MaxLineLength:MainActivity.kt$MainActivity$private fun findRefreshKeyHandler(fragment: Fragment): RefreshKeyHandler?</ID>
-    <ID>MaxLineLength:PagedGridStateMachine.kt$fun</ID>
+    <ID>MaxLineLength:MyFavFoldersFragment.kt$MyFavFoldersFragment$binding.recycler.layoutManager</ID>
     <ID>MaxLineLength:PlayerActivity.kt$PlayerActivity$"danmaku cid=$cid segTotal=$segmentTotal segSizeMs=$segmentSizeMs followBili=$followBili hasSess=$hasSess hasDmSetting=${setting != null} filters=kw${userFilter?.keywords?.size ?: 0},re${userFilter?.regexes?.size ?: 0},user${userFilter?.blockedUserMidHashes?.size ?: 0}"</ID>
     <ID>MaxLineLength:PlayerActivity.kt$PlayerActivity$"danmaku prefetch cid=$cid pos=${positionMs}ms segSizeMs=$segSize targetSeg=$targetSeg toLoad=${toLoad.joinToString()} segTotal=$danmakuSegmentTotal"</ID>
     <ID>MaxLineLength:PlayerActivity.kt$PlayerActivity$"danmaku seg=$seg items=$before kept=$after range=$minMs..${maxMs}ms pos=${requestPositionMs}ms cost=${cost}ms"</ID>
@@ -1760,12 +1680,17 @@
     <ID>MaxLineLength:PlayerActivityInfoPanel.kt$private fun PlayerActivity.isPlayerInfoShelfPositionSelected(position: Int): Boolean</ID>
     <ID>MaxLineLength:PlayerActivitySidePanels.kt$internal fun PlayerActivity.isOverlayPanelVisible(): Boolean</ID>
     <ID>MaxLineLength:PlayerSettingsPart197to2.kt$showSettingsChoiceDialog</ID>
+    <ID>MaxLineLength:SettingsInteractionHandler.kt$SettingsInteractionHandler.Controller$(LayoutInflater.from(dialogContext).inflate(blbl.cat3399.R.layout.view_popup_choice_list, null, false) as RecyclerView)</ID>
+    <ID>MaxLineLength:SettingsInteractionHandler.kt$SettingsInteractionHandler.Controller$if</ID>
+    <ID>MaxLineLength:SettingsRenderer.kt$SettingsRenderer$SettingEntry(SettingId.PlayerOpenDetailBeforePlay, "播放前打开详情页", if (prefs.playerOpenDetailBeforePlay) "开" else "关", null)</ID>
     <ID>MaxLineLength:SponsorSubmitViews.kt$SponsorSubmitThumbnailStripView$private fun childCenterX(child: View): Float</ID>
+    <ID>MaxLineLength:TagDetailActivity.kt$TagDetailActivity$"load ok fallbackToSearch reason=$reason rid=$rid tagId=$tagId keyword=${keyword.take(20)} add=${visibleItems.size} total=${adapter.itemCount} hasMore=${search.hasMore} cost=${SystemClock.uptimeMillis() - startAt}ms"</ID>
     <ID>MaxLineLength:TagDetailActivity.kt$TagDetailActivity$"load ok src=$dataSource rid=$rid tagId=$tagId add=${visibleItems.size} total=${adapter.itemCount} hasMore=${res.hasMore} cost=${SystemClock.uptimeMillis() - startAt}ms"</ID>
-    <ID>MaxLineLength:TagDetailActivity.kt$TagDetailActivity$)</ID>
+    <ID>MaxLineLength:TagDetailActivity.kt$TagDetailActivity$if (fallbackToSearch(token = token, isRefresh = isRefresh, startAt = startAt, reason = "api_error")) return@launch</ID>
+    <ID>MaxLineLength:UpDetailSectionAdapter.kt$UpDetailSectionAdapter.Vh$recycler.postDelayedIfAlive(delayMillis = 16, isAlive = isUiAlive) { requestVideoFocus(position = position, attempt = attempt + 1) }</ID>
     <ID>MaxLineLength:VideoApi.kt$VideoApi$"dmWebView cid=$cid aid=${aid ?: -1} includeCookie=$includeCookie bytes=${bytes.size} segTotal=$segTotal pageSizeMs=$pageSizeMs hasSetting=${setting != null}"</ID>
-    <ID>MaxLineLength:VideoDetailActivity.kt$VideoDetailActivity$private fun partsCardsForDisplay(): List&lt;blbl.cat3399.core.model.VideoCard&gt;</ID>
-    <ID>MaxLineLength:VideoDetailActivity.kt$VideoDetailActivity$private fun seasonCardsForDisplay(): List&lt;blbl.cat3399.core.model.VideoCard&gt;</ID>
+    <ID>MaxLineLength:VideoCardActionController.kt$VideoCardActionController$val seasonId = card.seasonId?.takeIf { it &gt; 0L } ?: throw BiliApiException(apiCode = -400, apiMessage = "missing_history_kid")</ID>
+    <ID>MaxLineLength:VideoDetailActivity.kt$VideoDetailActivity$runCatching { BiliApi.ugcSeasonArchives(mid = mid, seasonId = seasonId, pageSize = 200) }.getOrNull()</ID>
     <ID>MaxLineLength:VideoGridFragment.kt$VideoGridFragment$"load ok source=$source rid=$rid page=${startKey.page} add=${applied.items.size} total=${adapter.itemCount} cost=${SystemClock.uptimeMillis() - startAt}ms"</ID>
     <ID>MaxLineLength:VideoGridFragment.kt$VideoGridFragment$"loadNextPage end source=$source rid=$rid page=${paging.snapshot().nextKey.page} refresh=$isRefresh t=${SystemClock.uptimeMillis()}"</ID>
     <ID>MaxLineLength:VideoSourceApi.kt$VideoApiGateway$suspend fun collectionSections(request: VideoCollectionSectionsRequest): VideoCollectionSectionsPage</ID>
@@ -1798,7 +1723,6 @@
     <ID>NestedBlockDepth:PlayerActivity.kt$PlayerActivity$private fun requestExitCleanup(reason: String)</ID>
     <ID>NestedBlockDepth:PlayerActivity.kt$PlayerActivity$private fun showSendVideoDanmakuDialog()</ID>
     <ID>NestedBlockDepth:PlayerActivityCustomWatermark.kt$internal fun PlayerActivity.releaseCustomWatermark()</ID>
-    <ID>NestedBlockDepth:SettingsInteractionHandler.kt$SettingsInteractionHandler$private fun showVideoBookmarksDialog()</ID>
     <ID>NestedBlockDepth:VideoDownloadService.kt$VideoDownloadService$private suspend fun downloadFile( url: String, outputFile: File, title: String, trackName: String, mimeType: String?, )</ID>
     <ID>ObjectPropertyNaming:AppPrefs.kt$AppPrefs.Companion$const val KEY_V351NETWORKDNS优选351 = "v351networkDNS优选351" // v351 Network DNS优选351</ID>
     <ID>ObjectPropertyNaming:AppPrefs.kt$AppPrefs.Companion$const val KEY_V351NETWORKIPV6优先351 = "v351networkIPv6优先351" // v351 Network IPv6优先351</ID>
@@ -5451,64 +5375,11 @@
     <ID>StringLiteralDuplication:SearchApi.kt$SearchApi$"title"</ID>
     <ID>StringLiteralDuplication:SearchApi.kt$SearchApi$"totalrank"</ID>
     <ID>StringLiteralDuplication:SearchInteractor.kt$SearchInteractor$"Search"</ID>
-    <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler$"${item.fileSize / 1024}KB"</ID>
-    <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler$"%.1fMB"</ID>
-    <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler$"%.2fGB"</ID>
     <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler$"%.2fx"</ID>
-    <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler$"100MB"</ID>
-    <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler$"1080P"</ID>
-    <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler$"1080P+"</ID>
     <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler$"Settings"</ID>
-    <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler$"WiFi画质"</ID>
-    <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler$"auto_play_next"</ID>
-    <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler$"blbl_prefs"</ID>
-    <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler$"comment_image_load"</ID>
-    <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler$"danmaku_filter_keywords"</ID>
-    <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler$"danmaku_send_history"</ID>
-    <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler$"dynamic_filter_ad"</ID>
-    <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler$"dynamic_filter_article"</ID>
-    <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler$"dynamic_filter_keywords"</ID>
-    <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler$"dynamic_filter_live"</ID>
-    <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler$"dynamic_filter_share"</ID>
-    <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler$"dynamic_filter_users"</ID>
-    <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler$"google"</ID>
-    <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler$"live_auto_reconnect"</ID>
-    <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler$"live_danmaku_block_keywords"</ID>
-    <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler$"live_danmaku_font_size"</ID>
-    <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler$"live_danmaku_speed"</ID>
-    <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler$"player_auto_rotate"</ID>
-    <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler$"player_subtitle_size"</ID>
-    <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler$"records"</ID>
-    <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler$"screenshot_save_path"</ID>
-    <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler$"yyyy-MM-dd HH:mm"</ID>
-    <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler$"• 当前策略: $strategyLabel"</ID>
-    <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler$"仅WiFi"</ID>
-    <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler$"已添加: "</ID>
-    <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler$"已清空关键词"</ID>
-    <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler$"已设置为 ${actions[which]}"</ID>
-    <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler$"已设置为 ${modes[which]}"</ID>
-    <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler$"已设置为 ${qualities[which]}"</ID>
-    <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler$"已设置为 ${sizes[which]}"</ID>
-    <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler$"已设置为 ${speeds[which]}"</ID>
-    <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler$"已设置为 ${strategies[which]}"</ID>
-    <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler$"弹幕透明度"</ID>
-    <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler$"快进/快退"</ID>
-    <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler$"播放/暂停"</ID>
-    <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler$"旋转锁定: "</ID>
-    <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler$"暂无发送记录"</ID>
-    <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler$"评论排序: "</ID>
-    <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler$"输入关键词"</ID>
-    <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler$"（开发中）"</ID>
-    <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler$"（重启播放器生效）"</ID>
     <ID>StringLiteralDuplication:SettingsInteractionHandler.kt$SettingsInteractionHandler.Controller$"暂无快捷键"</ID>
-    <ID>StringLiteralDuplication:SettingsRenderer.kt$SettingsRenderer$"字幕背景透明度"</ID>
-    <ID>StringLiteralDuplication:SettingsRenderer.kt$SettingsRenderer$"弹幕透明度"</ID>
     <ID>StringLiteralDuplication:SettingsRenderer.kt$SettingsRenderer$"播放器内核检测"</ID>
-    <ID>StringLiteralDuplication:SettingsRenderer.kt$SettingsRenderer$"直播弹幕字体"</ID>
-    <ID>StringLiteralDuplication:SettingsRenderer.kt$SettingsRenderer$"直播弹幕颜色"</ID>
-    <ID>StringLiteralDuplication:SettingsRenderer.kt$SettingsRenderer$"自动播放下一集"</ID>
     <ID>StringLiteralDuplication:SettingsText.kt$SettingsText$" 等${labels.size}项"</ID>
-    <ID>StringLiteralDuplication:SettingsText.kt$SettingsText$"播放/暂停"</ID>
     <ID>StringLiteralDuplication:SponsorBlockApi.kt$SponsorBlockApi$"category"</ID>
     <ID>StringLiteralDuplication:SponsorBlockApi.kt$SponsorBlockApi$"segment"</ID>
     <ID>StringLiteralDuplication:TagDetailActivity.kt$TagDetailActivity$"TagDetail"</ID>
@@ -5545,7 +5416,6 @@
     <ID>SwallowedException:PlayerActivityBrightnessMemory.kt$PlayerActivityBrightnessMemory$e: Exception</ID>
     <ID>SwallowedException:PlayerActivityCast.kt$e: Exception</ID>
     <ID>SwallowedException:PlayerActivityTouch.kt$PlayerTouchController$e: Exception</ID>
-    <ID>SwallowedException:SettingsInteractionHandler.kt$SettingsInteractionHandler$e: Exception</ID>
     <ID>SwallowedException:UpDetailNavigation.kt$e: Exception</ID>
     <ID>ThrowsCount:LogUploadClient.kt$LogUploadClient$suspend fun uploadZip( file: File, fileName: String = file.name, onProgress: ((sentBytes: Long, totalBytes: Long) -&gt; Unit)? = null, ): UploadResult</ID>
     <ID>TooGenericExceptionCaught:ApkUpdateFlow.kt$ApkUpdateFlow$t: Throwable</ID>
@@ -5605,7 +5475,6 @@
     <ID>TooGenericExceptionCaught:QrLoginActivity.kt$QrLoginActivity$t: Throwable</ID>
     <ID>TooGenericExceptionCaught:RegionDetailActivity.kt$RegionDetailActivity$t: Throwable</ID>
     <ID>TooGenericExceptionCaught:SearchInteractor.kt$SearchInteractor$t: Throwable</ID>
-    <ID>TooGenericExceptionCaught:SettingsInteractionHandler.kt$SettingsInteractionHandler$e: Exception</ID>
     <ID>TooGenericExceptionCaught:SettingsInteractionHandler.kt$SettingsInteractionHandler$t: Throwable</ID>
     <ID>TooGenericExceptionCaught:SponsorSubmitViews.kt$SponsorSubmitThumbnailAdapter.Vh$t: Throwable</ID>
     <ID>TooGenericExceptionCaught:TagDetailActivity.kt$TagDetailActivity$t: Throwable</ID>
@@ -5694,6 +5563,17 @@
     <ID>TooManyFunctions:SearchRenderer.kt$SearchRenderer</ID>
     <ID>TooManyFunctions:SettingsText.kt$SettingsText</ID>
     <ID>TooManyFunctions:VideoApi.kt$VideoApi</ID>
+    <ID>UnusedImports:AppPopup.kt$import kotlin.math.max</ID>
+    <ID>UnusedImports:BangumiDetailActivity.kt$import android.view.View</ID>
+    <ID>UnusedImports:BiliClient.kt$import okhttp3.Response</ID>
+    <ID>UnusedImports:CustomDynamicVideoFragment.kt$import blbl.cat3399.feature.video.defaultVideoCardPlaylistItem</ID>
+    <ID>UnusedImports:DynamicFragment.kt$import blbl.cat3399.core.model.VideoCard</ID>
+    <ID>UnusedImports:DynamicFragment.kt$import blbl.cat3399.feature.video.defaultVideoCardPlaylistItem</ID>
+    <ID>UnusedImports:FollowingListActivity.kt$import android.view.View</ID>
+    <ID>UnusedImports:MyFavFolderDetailFragment.kt$import blbl.cat3399.feature.video.defaultVideoCardPlaylistItem</ID>
+    <ID>UnusedImports:SearchFragment.kt$import blbl.cat3399.R</ID>
+    <ID>UnusedImports:SettingsRenderer.kt$import android.view.View</ID>
+    <ID>UnusedImports:TagDetailActivity.kt$import blbl.cat3399.R</ID>
     <ID>UnusedParameter:PlayerActivityAutoQuality.kt$PlayerActivityAutoQuality$enabled: Boolean</ID>
     <ID>UnusedParameter:PlayerActivityAutoQuality.kt$PlayerActivityAutoQuality$quality: String</ID>
     <ID>UnusedParameter:PlayerActivityCastDelay.kt$PlayerActivityCastDelay$delayMs: Long</ID>
@@ -5724,23 +5604,16 @@
     <ID>UnusedParameter:PlayerActivityTimelineZoom.kt$PlayerActivityTimelineZoom$level: Float</ID>
     <ID>UnusedParameter:PlayerActivityVideoMirror.kt$PlayerActivityVideoMirror$enabled: Boolean</ID>
     <ID>UnusedParameter:VideoDownloadService.kt$VideoDownloadService$mimeType: String?</ID>
-    <ID>UnusedPrivateMember:AppPopup.kt$AppPopup$private fun dp( context: Context, value: Float, ): Int</ID>
+    <ID>UnusedPrivateMember:AppPopup.kt$AppPopup$private fun dp(context: Context, value: Float): Int</ID>
     <ID>UnusedPrivateMember:BiliApi.kt$BiliApi$private fun extractVVoucher(json: JSONObject): String?</ID>
     <ID>UnusedPrivateMember:BiliApi.kt$BiliApi$private fun genPlayUrlSession(nowMs: Long = System.currentTimeMillis()): String?</ID>
     <ID>UnusedPrivateMember:LivePlayerActivity.kt$LivePlayerActivity$private fun focusAdvancedControl(): Boolean</ID>
     <ID>UnusedPrivateMember:MainActivity.kt$MainActivity$private fun focusSelectedTabInCurrentFragment(): Boolean</ID>
-    <ID>UnusedPrivateMember:SettingsInteractionHandler.kt$SettingsInteractionHandler$private fun showDynamicFilterStoryDialog()</ID>
     <ID>UnusedPrivateProperty:DownloadListFragment.kt$DownloadListFragment.DownloadAdapter$val ctx = holder.binding.root.context</ID>
     <ID>UnusedPrivateProperty:PlayerActivity.kt$PlayerActivity$val colorNames = arrayOf("白色", "红色", "橙色", "绿色", "蓝色", "粉色")</ID>
     <ID>UnusedPrivateProperty:PlayerActivity.kt$PlayerActivity.Companion$private const val PLAYURL_RISK_LOG_FULL_JSON_MAX_CHARS = 8_192</ID>
     <ID>UnusedPrivateProperty:PlayerActivity.kt$PlayerActivity.Companion$private const val TAP_SEEK_ACTIVE_MS = 1_200L</ID>
     <ID>UnusedPrivateProperty:PlayerActivityAudioChannel.kt$val engine = player ?: return</ID>
-    <ID>UnusedPrivateProperty:SettingsInteractionHandler.kt$SettingsInteractionHandler$val downloadDir = android.os.Environment .getExternalStoragePublicDirectory( android.os.Environment.DIRECTORY_MOVIES, )?.let { java.io.File(it, "blbl_downloads") }</ID>
-    <ID>UnusedPrivateProperty:SettingsInteractionHandler.kt$SettingsInteractionHandler$val longPressLabels = arrayOf("1.5x", "2.0x", "2.5x", "3.0x")</ID>
-    <ID>UnusedPrivateProperty:SettingsInteractionHandler.kt$SettingsInteractionHandler$val longPressValues = floatArrayOf(1.5f, 2.0f, 2.5f, 3.0f)</ID>
-    <ID>UnusedPrivateProperty:SettingsInteractionHandler.kt$SettingsInteractionHandler$val marker = if (uid == currentUid) " ✓" else ""</ID>
-    <ID>UnusedPrivateProperty:SettingsInteractionHandler.kt$SettingsInteractionHandler$val secondsValues = intArrayOf(3, 5, 8, 10, 15)</ID>
-    <ID>UnusedPrivateProperty:SettingsInteractionHandler.kt$SettingsInteractionHandler$var bgColor = prefs.getInt("subtitle_bg_color", 0x80000000.toInt()) // 半透明黑</ID>
     <ID>VariableNaming:AppPrefs.kt$AppPrefs$var v351networkDNS优选351: Boolean get() = prefs.getBoolean(KEY_V351NETWORKDNS优选351, false) set(value) = prefs.edit().putBoolean(KEY_V351NETWORKDNS优选351, value).apply()</ID>
     <ID>VariableNaming:AppPrefs.kt$AppPrefs$var v351networkIPv6优先351: Boolean get() = prefs.getBoolean(KEY_V351NETWORKIPV6优先351, false) set(value) = prefs.edit().putBoolean(KEY_V351NETWORKIPV6优先351, value).apply()</ID>
     <ID>VariableNaming:AppPrefs.kt$AppPrefs$var v352networkDNS优选352: Boolean get() = prefs.getBoolean(KEY_V352NETWORKDNS优选352, false) set(value) = prefs.edit().putBoolean(KEY_V352NETWORKDNS优选352, value).apply()</ID>

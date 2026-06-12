@@ -5,4 +5,3 @@ object SettingsConstants {
     const val QQ_GROUP = "1080221910"
     const val UPDATE_CHECK_TTL_MS = 60_000L
 }
-

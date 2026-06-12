@@ -6,9 +6,9 @@ import androidx.recyclerview.widget.RecyclerView
 import blbl.cat3399.core.model.VideoCard
 import blbl.cat3399.core.ui.postIfAlive
 import blbl.cat3399.core.ui.requestFocusAdapterPositionReliable
+import blbl.cat3399.feature.player.PlayerPlaylistContinuation
 import blbl.cat3399.feature.player.PlayerPlaylistItem
 import blbl.cat3399.feature.player.PlayerPlaylistStore
-import blbl.cat3399.feature.player.PlayerPlaylistContinuation
 import blbl.cat3399.feature.player.VideoCardPlaylistPage
 import blbl.cat3399.feature.player.buildFreshVideoCardPlaylistContinuation
 
@@ -88,8 +88,7 @@ internal fun Context.buildVideoDetailIntent(
             card.ownerName.takeIf { it.isNotBlank() }?.let { putExtra(VideoDetailActivity.EXTRA_OWNER_NAME, it) }
             card.ownerFace?.takeIf { it.isNotBlank() }?.let { putExtra(VideoDetailActivity.EXTRA_OWNER_AVATAR, it) }
             card.ownerMid?.takeIf { it > 0L }?.let { putExtra(VideoDetailActivity.EXTRA_OWNER_MID, it) }
-        }
-        .apply { playlistToken?.let { putExtra(VideoDetailActivity.EXTRA_PLAYLIST_TOKEN, it) } }
+        }.apply { playlistToken?.let { putExtra(VideoDetailActivity.EXTRA_PLAYLIST_TOKEN, it) } }
         .apply { playlistIndex?.let { putExtra(VideoDetailActivity.EXTRA_PLAYLIST_INDEX, it) } }
 }
 

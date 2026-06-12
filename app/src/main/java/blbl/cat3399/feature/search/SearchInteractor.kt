@@ -118,8 +118,7 @@ class SearchInteractor(
                     .onSuccess {
                         state.suggestKeywords = it
                         renderer.updateMiddleUi(historyMatches(term), extra = state.suggestKeywords)
-                    }
-                    .onFailure {
+                    }.onFailure {
                         AppLog.w("Search", "suggest failed term=${term.take(16)}", it)
                         state.suggestKeywords = emptyList()
                         renderer.updateMiddleUi(historyMatches(term), extra = state.suggestKeywords)
@@ -257,7 +256,10 @@ class SearchInteractor(
         loadNextPage(isRefresh = true, refreshToken = refreshToken)
     }
 
-    fun loadNextPage(isRefresh: Boolean = false, refreshToken: Int = state.refreshUiToken) {
+    fun loadNextPage(
+        isRefresh: Boolean = false,
+        refreshToken: Int = state.refreshUiToken,
+    ) {
         if (!renderer.isResultsVisible()) return
 
         val keyword = effectiveKeyword().trim()
@@ -459,7 +461,10 @@ class SearchInteractor(
         return state.query.ifBlank { state.defaultHint?.trim().orEmpty() }
     }
 
-    private fun historyMatches(term: String, limit: Int = 12): List<String> {
+    private fun historyMatches(
+        term: String,
+        limit: Int = 12,
+    ): List<String> {
         val history = state.history
         if (history.isEmpty()) return emptyList()
         val t = term.trim()

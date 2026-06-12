@@ -32,7 +32,10 @@ class FavFolderAdapter(
 
     override fun getItemId(position: Int): Long = items[position].mediaId
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Vh {
+    override fun onCreateViewHolder(
+        parent: ViewGroup,
+        viewType: Int,
+    ): Vh {
         val binding =
             ItemFavFolderBinding.inflate(
                 LayoutInflater.from(parent.context).cloneInUserScale(parent.context),
@@ -42,12 +45,20 @@ class FavFolderAdapter(
         return Vh(binding)
     }
 
-    override fun onBindViewHolder(holder: Vh, position: Int) = holder.bind(items[position], onClick)
+    override fun onBindViewHolder(
+        holder: Vh,
+        position: Int,
+    ) = holder.bind(items[position], onClick)
 
     override fun getItemCount(): Int = items.size
 
-    class Vh(private val binding: ItemFavFolderBinding) : RecyclerView.ViewHolder(binding.root) {
-        fun bind(item: FavFolder, onClick: (position: Int, folder: FavFolder) -> Unit) {
+    class Vh(
+        private val binding: ItemFavFolderBinding,
+    ) : RecyclerView.ViewHolder(binding.root) {
+        fun bind(
+            item: FavFolder,
+            onClick: (position: Int, folder: FavFolder) -> Unit,
+        ) {
             binding.tvTitle.text = item.title
             binding.tvCount.text = binding.root.context.getString(R.string.my_fav_item_count_fmt, item.mediaCount)
             ImageLoader.loadInto(binding.ivCover, ImageUrl.cover(item.coverUrl))

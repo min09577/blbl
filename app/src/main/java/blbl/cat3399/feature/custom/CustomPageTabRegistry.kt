@@ -176,8 +176,7 @@ object CustomPageTabRegistry {
                     label = label,
                     config = supportedConfig,
                 )
-            }
-            .sortedWith(compareBy({ descriptorFor(it.config)?.itemOrder ?: Int.MAX_VALUE }, { it.label }))
+            }.sortedWith(compareBy({ descriptorFor(it.config)?.itemOrder ?: Int.MAX_VALUE }, { it.label }))
     }
 
     fun availableSearchSourceKinds(config: CustomPageConfig): List<CustomPageSearchSourceKind> {
@@ -201,8 +200,7 @@ object CustomPageTabRegistry {
                     label = descriptor.tabTitle,
                     config = supportedConfig,
                 )
-            }
-            .sortedWith(compareBy({ descriptorFor(it.config)?.itemOrder ?: Int.MAX_VALUE }, { it.label }))
+            }.sortedWith(compareBy({ descriptorFor(it.config)?.itemOrder ?: Int.MAX_VALUE }, { it.label }))
     }
 
     fun managerLabel(

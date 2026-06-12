@@ -96,7 +96,10 @@ internal class HistoryAdapter(
             is HistoryEntry.Live -> VIEW_TYPE_LIVE
         }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
+    override fun onCreateViewHolder(
+        parent: ViewGroup,
+        viewType: Int,
+    ): RecyclerView.ViewHolder {
         return when (viewType) {
             VIEW_TYPE_VIDEO -> videoAdapter.onCreateViewHolder(parent, 0)
             VIEW_TYPE_LIVE -> liveAdapter.onCreateViewHolder(parent, 0)
@@ -104,7 +107,10 @@ internal class HistoryAdapter(
         }
     }
 
-    override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
+    override fun onBindViewHolder(
+        holder: RecyclerView.ViewHolder,
+        position: Int,
+    ) {
         when (items[position]) {
             is HistoryEntry.Video -> videoAdapter.onBindViewHolder(holder as VideoCardAdapter.Vh, videos.indexOf((items[position] as HistoryEntry.Video).card))
             is HistoryEntry.Live -> liveAdapter.onBindViewHolder(holder as LiveRoomAdapter.Vh, liveIndex(position))
@@ -128,8 +134,7 @@ internal class HistoryAdapter(
         return -1
     }
 
-    private fun videoIndex(card: VideoCard): Int? =
-        videos.indexOfFirst { it.stableKey() == card.stableKey() }.takeIf { it >= 0 }
+    private fun videoIndex(card: VideoCard): Int? = videos.indexOfFirst { it.stableKey() == card.stableKey() }.takeIf { it >= 0 }
 
     private fun notifyVideoRangeChanged(
         positionStart: Int,

@@ -2,7 +2,6 @@ package blbl.cat3399.feature.settings
 
 import android.os.Build
 import android.view.KeyEvent
-import android.view.View
 import androidx.core.view.doOnPreDraw
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -28,30 +27,31 @@ class SettingsRenderer(
     fun installFocusListener() {
         if (focusListener != null) return
         focusListener =
-            android.view.ViewTreeObserver.OnGlobalFocusChangeListener { _, newFocus ->
-                if (newFocus == null) return@OnGlobalFocusChangeListener
-                when {
-                    newFocus == binding.btnBack -> {
-                        state.pendingRestoreBack = false
-                    }
+            android.view.ViewTreeObserver
+                .OnGlobalFocusChangeListener { _, newFocus ->
+                    if (newFocus == null) return@OnGlobalFocusChangeListener
+                    when {
+                        newFocus == binding.btnBack -> {
+                            state.pendingRestoreBack = false
+                        }
 
-                    FocusTreeUtils.isDescendantOf(newFocus, binding.recyclerLeft) -> {
-                        val holder = binding.recyclerLeft.findContainingViewHolder(newFocus) ?: return@OnGlobalFocusChangeListener
-                        val pos =
-                            holder.bindingAdapterPosition.takeIf { it != RecyclerView.NO_POSITION }
-                                ?: return@OnGlobalFocusChangeListener
-                        state.lastFocusedLeftIndex = pos
-                        if (state.pendingRestoreLeftIndex == pos) state.pendingRestoreLeftIndex = null
-                    }
+                        FocusTreeUtils.isDescendantOf(newFocus, binding.recyclerLeft) -> {
+                            val holder = binding.recyclerLeft.findContainingViewHolder(newFocus) ?: return@OnGlobalFocusChangeListener
+                            val pos =
+                                holder.bindingAdapterPosition.takeIf { it != RecyclerView.NO_POSITION }
+                                    ?: return@OnGlobalFocusChangeListener
+                            state.lastFocusedLeftIndex = pos
+                            if (state.pendingRestoreLeftIndex == pos) state.pendingRestoreLeftIndex = null
+                        }
 
-                    FocusTreeUtils.isDescendantOf(newFocus, binding.recyclerRight) -> {
-                        val itemView = binding.recyclerRight.findContainingItemView(newFocus) ?: newFocus
-                        val id = itemView.tag as? SettingId
-                        if (id != null) state.lastFocusedRightId = id
-                        if (state.pendingRestoreRightId == id) state.pendingRestoreRightId = null
+                        FocusTreeUtils.isDescendantOf(newFocus, binding.recyclerRight) -> {
+                            val itemView = binding.recyclerRight.findContainingItemView(newFocus) ?: newFocus
+                            val id = itemView.tag as? SettingId
+                            if (id != null) state.lastFocusedRightId = id
+                            if (state.pendingRestoreRightId == id) state.pendingRestoreRightId = null
+                        }
                     }
-                }
-            }.also { binding.root.viewTreeObserver.addOnGlobalFocusChangeListener(it) }
+                }.also { binding.root.viewTreeObserver.addOnGlobalFocusChangeListener(it) }
     }
 
     fun uninstallFocusListener() {
@@ -59,7 +59,11 @@ class SettingsRenderer(
         focusListener = null
     }
 
-    fun showSection(index: Int, keepScroll: Boolean = index == state.currentSectionIndex, focusId: SettingId? = null) {
+    fun showSection(
+        index: Int,
+        keepScroll: Boolean = index == state.currentSectionIndex,
+        focusId: SettingId? = null,
+    ) {
         val lm = binding.recyclerRight.layoutManager as? LinearLayoutManager
         val scrollAnchor =
             if (keepScroll && lm != null) {
@@ -504,7 +508,7 @@ class SettingsRenderer(
     private fun loginStatusText(): String {
         val count = BiliClient.accounts.accounts().size
         return when {
-            count > 1 -> "已登录 ${count} 个帐号"
+            count > 1 -> "已登录 $count 个帐号"
             BiliClient.cookies.hasSessData() -> "已登录"
             else -> "未登录"
         }
@@ -591,7 +595,10 @@ class SettingsRenderer(
         return true
     }
 
-    private fun isPositionOutsideVisibleRange(layoutManager: LinearLayoutManager?, position: Int): Boolean {
+    private fun isPositionOutsideVisibleRange(
+        layoutManager: LinearLayoutManager?,
+        position: Int,
+    ): Boolean {
         if (layoutManager == null) return true
         val first = layoutManager.findFirstVisibleItemPosition()
         val last = layoutManager.findLastVisibleItemPosition()
