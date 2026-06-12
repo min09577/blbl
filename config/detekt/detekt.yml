@@ -1,0 +1,205 @@
+# detekt configuration for blbl
+# Docs: https://detekt.dev/docs/rules
+
+build:
+  maxIssues: 0
+  excludeCorrectable: false
+  weights:
+    complexity: 2
+    formatting: 1
+    long-parameter-list: 1
+    comments: 1
+
+console-reports:
+  active: true
+  exclude:
+    - 'ProjectStatisticsReport'
+    - 'NotificationReport'
+
+style:
+  active: true
+  # Android View Binding pattern
+  ForbiddenComment:
+    active: false
+  MagicNumber:
+    active: true
+    ignoreNumbers:
+      - '-1'
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      - '8'
+      - '16'
+      - '24'
+      - '32'
+      - '64'
+      - '100'
+      - '1000'
+      - '1024'
+      - '360'
+      - '720'
+      - '1080'
+    ignorePropertyDeclaration: true
+    ignoreCompanionObjectPropertyDeclaration: true
+  WildcardImport:
+    active: true
+    excludeImports:
+      - 'blbl.cat3399.core.prefs.*'
+  MaxLineLength:
+    maxLineLength: 140
+    excludePackageStatements: true
+    excludeImportStatements: true
+    excludeCommentStatements: true
+  UseCheckOrError:
+    active: false
+  UnusedImports:
+    active: true
+  UnusedPrivateMember:
+    active: true
+    allowedNames: '(_|ignored|expected|serialVersionUID)'
+  UnusedParameter:
+    active: true
+    allowedNames: '(_|ignored|scrollDirection)'
+  ReturnCount:
+    max: 6
+  ThrowsCount:
+    max: 4
+  NewLineAtEndOfFile:
+    active: true
+  NoTabs:
+    active: true
+
+complexity:
+  active: true
+  LongParameterList:
+    active: true
+    functionThreshold: 8
+    constructorThreshold: 10
+  LongMethod:
+    active: true
+    threshold: 80
+  LargeClass:
+    active: true
+    threshold: 600
+  ComplexInterface:
+    active: true
+    threshold: 15
+  CyclomaticComplexMethod:
+    active: true
+    threshold: 15
+  TooManyFunctions:
+    active: true
+    thresholdInFiles: 15
+    thresholdInClasses: 15
+    thresholdInInterfaces: 15
+    thresholdInObjects: 15
+    thresholdInEnums: 15
+    ignoreDeprecated: true
+    ignorePrivate: true
+    ignoreOverridden: true
+  StringLiteralDuplication:
+    active: true
+    threshold: 3
+    ignoreAnnotation: true
+  
+naming:
+  active: true
+  # Android View Binding conventions
+  MemberNameEqualsClassName:
+    active: false
+  FunctionMaxLength:
+    maximumFunctionNameLength: 35
+  FunctionMinLength:
+    active: false
+  ClassNaming:
+    active: true
+    classPattern: '[A-Z][A-Za-z0-9]*'
+  FunctionNaming:
+    active: true
+    ignoreAnnotated:
+      - 'Composable'
+  VariableNaming:
+    active: true
+    ignoreAnnotated:
+      - 'Composable'
+  TopLevelPropertyNaming:
+    active: true
+    constantPattern: '[A-Z][A-Za-z0-9_]*'
+
+exceptions:
+  active: true
+  TooGenericExceptionCaught:
+    active: true
+    allowedExceptionNameRegex: '(_|(ignore|expected).*)'
+  InstanceOfCheckForException:
+    active: false
+  SwallowedException:
+    active: true
+    allowedExceptionNameRegex: '(_|(ignore|expected).*)'
+  ThrowingExceptionInMain:
+    active: false
+  ThrowingExceptionsWithoutMessageOrCause:
+    active: false
+  ThrowingNewInstanceOfSameException:
+    active: true
+  ReturnFromFinally:
+    active: true
+
+performance:
+  active: true
+  SpreadOperator:
+    active: true
+  ForEachOnRange:
+    active: true
+  UnnecessaryTemporaryInstantiation:
+    active: true
+  ArrayPrimitive:
+    active: true
+
+potential-bugs:
+  active: true
+  UnsafeCallOnNullableType:
+    active: false
+  EqualsWithHashCodeExist:
+    active: true
+  UnsafeCast:
+    active: true
+  UnreachableCode:
+    active: true
+  UselessPostfixExpression:
+    active: true
+  WrongEqualsTypeParameter:
+    active: true
+  LateinitUsage:
+    active: false
+
+coroutines:
+  active: true
+  RedundantSuspendModifier:
+    active: true
+  GlobalCoroutineUsage:
+    active: true
+  InjectDispatcher:
+    active: false
+  SuspendFunSwallowedCancellation:
+    active: true
+  SleepInsteadOfDelay:
+    active: true
+
+empty-blocks:
+  active: true
+  EmptyFunctionBlock:
+    active: true
+    ignoreOverridden: true
+  EmptyClassBlock:
+    active: true
+  EmptyCatchBlock:
+    active: true
+    allowedExceptionNameRegex: '(_|(ignore|expected).*)'
+  EmptyDefaultConstructor:
+    active: true
+  EmptyInitBlock:
+    active: true

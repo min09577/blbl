@@ -3,6 +3,7 @@ import java.net.URL
 plugins {
     id("com.android.application")
     id("org.jlleitschuh.gradle.ktlint")
+    id("io.gitlab.arturbosch.detekt")
 }
 
 android {
@@ -328,5 +329,24 @@ ktlint {
     }
     filter {
         exclude("**/proto/**")
+    }
+}
+
+detekt {
+    buildUponDefaultConfig = true
+    allRules = false
+    config.setFrom(file("$rootDir/config/detekt/detekt.yml"))
+    baseline = file("$rootDir/config/detekt/baseline.xml")
+    parallel = true
+}
+
+tasks.withType<io.gitlab.arturbosch.detekt.Detekt>().configureEach {
+    reports {
+        html.required.set(true)
+        html.outputLocation.set(file("build/reports/detekt/detekt.html"))
+        txt.required.set(true)
+        txt.outputLocation.set(file("build/reports/detekt/detekt.txt"))
+        xml.required.set(true)
+        xml.outputLocation.set(file("build/reports/detekt/detekt.xml"))
     }
 }
