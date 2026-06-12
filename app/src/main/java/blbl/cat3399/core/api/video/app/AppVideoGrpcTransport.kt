@@ -12,6 +12,7 @@ import bilibili.metadata.network.NetworkType
 import bilibili.pgc.gateway.player.v2.PlayURLGrpc
 import bilibili.pgc.gateway.player.v2.PlayViewReply
 import bilibili.pgc.gateway.player.v2.PlayViewReq
+import bilibili.rpc.Status
 import blbl.cat3399.core.net.BiliClient
 import blbl.cat3399.core.prefs.BiliAppAuthSession
 import common.ErrorProto
@@ -103,7 +104,7 @@ internal object BiliClientAppVideoGrpcTransport : AppVideoGrpcTransport {
         val key = GrpcMetadata.Key.of("grpc-status-details-bin", GrpcMetadata.BINARY_BYTE_MARSHALLER)
         val details = trailers.get(key) ?: return t
         runCatching {
-            val status = bilibili.rpc.Status.parseFrom(details)
+            val status = Status.parseFrom(details)
             val message = status.message.trim().takeIf { it.isNotBlank() }
             if (message != null) return IllegalStateException(message, t)
         }

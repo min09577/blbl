@@ -1,7 +1,7 @@
+import java.net.URL
+
 plugins {
     id("com.android.application")
-    id("org.jetbrains.kotlin.android")
-    id("com.google.protobuf")
 }
 
 android {
@@ -57,19 +57,15 @@ android {
         viewBinding = true
     }
 
+    sourceSets {
+        getByName("main") {
+            java.directories.add("build/generated/source/proto/debug/java")
+        }
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
-    }
-
-    kotlinOptions {
-        jvmTarget = "17"
-        freeCompilerArgs += listOf(
-            "-Xno-call-assertions",
-            "-Xno-param-assertions",
-            "-Xno-receiver-assertions",
-            "-Xjvm-default=all",
-        )
     }
 
     packaging {
@@ -88,30 +84,14 @@ android {
     }
 }
 
-protobuf {
-    protoc {
-        artifact = "com.google.protobuf:protoc:3.25.3"
-    }
-    plugins {
-        register("grpc") {
-            artifact = "io.grpc:protoc-gen-grpc-java:1.72.0"
-        }
-    }
-    generateProtoTasks {
-        all().forEach { task ->
-            task.builtins {
-                register("java") {
-                    option("lite")
-                }
-            }
-            task.plugins {
-                register("grpc") {
-                    option("lite")
-                }
-            }
-        }
-    }
+// --- Protobuf tools configuration (must be declared before dependencies block) ---
+val protobufTools = configurations.create("protobufTools") {
+    isCanBeConsumed = false
+    isCanBeResolved = true
 }
+
+val protoSourceDir = layout.projectDirectory.dir("src/main/proto")
+val protoOutputDir = layout.buildDirectory.dir("generated/source/proto/debug/java")
 
 dependencies {
     implementation(files("libs/ijkplayer-cmake-release.aar"))
@@ -125,7 +105,7 @@ dependencies {
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
 
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.1")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0")
 
     implementation("com.squareup.okhttp3:okhttp:4.12.0")
     implementation("org.brotli:dec:0.1.2")
@@ -142,9 +122,78 @@ dependencies {
     compileOnly("javax.annotation:javax.annotation-api:1.3.2")
     implementation("com.google.zxing:core:3.5.3")
 
+    add("protobufTools", "com.google.protobuf:protoc:3.25.3:windows-x86_64@exe")
+    add("protobufTools", "io.grpc:protoc-gen-grpc-java:1.72.0:windows-x86_64@exe")
+
     testImplementation("junit:junit:4.13.2")
-    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.8.1")
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.9.0")
     testImplementation("org.robolectric:robolectric:4.14.1")
+}
+
+// --- Protobuf code generation task ---
+
+val generateProto by tasks.registering {
+    group = "protobuf"
+    description = "Generate Java lite + gRPC lite sources from .proto files"
+
+    val protoFiles = fileTree(protoSourceDir) { include("**/*.proto") }
+    inputs.files(protoFiles)
+    outputs.dir(protoOutputDir)
+
+    doLast {
+        val resolved = protobufTools.resolvedConfiguration.resolvedArtifacts
+        val protocExe = resolved.find { it.moduleVersion.id.name == "protoc" }?.file
+            ?: error("protoc artifact not found in protobufTools configuration")
+        val grpcPluginExe = resolved.find { it.moduleVersion.id.name == "protoc-gen-grpc-java" }?.file
+            ?: error("protoc-gen-grpc-java artifact not found in protobufTools configuration")
+
+        // protoc from Maven lacks the include/ directory; download full distribution from GitHub
+        val protoIncludeDir = layout.buildDirectory.dir("tmp/proto-include").get().asFile
+        if (!protoIncludeDir.resolve("google/protobuf/any.proto").exists()) {
+            val protoZip = layout.buildDirectory.file("tmp/protoc-dist.zip").get().asFile
+            protoZip.parentFile.mkdirs()
+            val url = URL("https://github.com/protocolbuffers/protobuf/releases/download/v25.3/protoc-25.3-win64.zip")
+            url.openStream().use { inp ->
+                protoZip.outputStream().use { out -> inp.copyTo(out) }
+            }
+            project.copy {
+                from(project.zipTree(protoZip)) { include("include/**") }
+                into(protoIncludeDir)
+            }
+            protoZip.delete()
+        }
+
+        val outputDir = protoOutputDir.get().asFile
+        outputDir.deleteRecursively()
+        outputDir.mkdirs()
+
+        val cmd = mutableListOf(
+            protocExe.absolutePath,
+            "-I${protoSourceDir.asFile.absolutePath}",
+            "-I${protoIncludeDir.resolve("include").absolutePath}",
+            "--java_out=lite:${outputDir.absolutePath}",
+            "--grpc_out=lite:${outputDir.absolutePath}",
+            "--plugin=protoc-gen-grpc=${grpcPluginExe.absolutePath}",
+        )
+        cmd.addAll(protoFiles.files.map { it.absolutePath })
+
+        val process = ProcessBuilder(cmd).redirectErrorStream(true).start()
+        val stdout = process.inputStream.bufferedReader().readText()
+        val exitCode = process.waitFor()
+        if (exitCode != 0) {
+            error("protoc failed (exit $exitCode):\n$stdout")
+        }
+
+        logger.lifecycle(
+            "protoc: generated {} Java files from {} proto sources",
+            fileTree(outputDir) { include("**/*.java") }.files.size,
+            protoFiles.files.size,
+        )
+    }
+}
+
+tasks.named("preBuild").configure {
+    dependsOn(generateProto)
 }
 
 // Enforce theme-token usage in layouts so adding new theme presets doesn't silently break contrast.
