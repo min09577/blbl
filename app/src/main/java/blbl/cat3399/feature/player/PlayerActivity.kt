@@ -4646,6 +4646,7 @@ class PlayerActivity : BaseActivity() {
                         BiliClient.prefs.addDanmakuSendHistory(msg) // v6.7: 保存发送历史
                         AppToast.show(this@PlayerActivity, "弹幕已发送")
                         // v9.6: 发送成功震动反馈
+                        @Suppress("DEPRECATION")
                         try {
                             val vib = getSystemService(android.content.Context.VIBRATOR_SERVICE) as? android.os.Vibrator
                             vib?.vibrate(android.os.VibrationEffect.createOneShot(50, android.os.VibrationEffect.DEFAULT_AMPLITUDE))

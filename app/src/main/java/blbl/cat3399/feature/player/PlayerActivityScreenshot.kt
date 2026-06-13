@@ -141,6 +141,7 @@ private suspend fun PlayerActivity.captureVideoFrame(): Bitmap? {
         view.isDrawingCacheEnabled = true
         @Suppress("DEPRECATION")
         val bitmap = Bitmap.createBitmap(view.drawingCache)
+        @Suppress("DEPRECATION")
         view.isDrawingCacheEnabled = false
         return bitmap
     } catch (_: Exception) {
