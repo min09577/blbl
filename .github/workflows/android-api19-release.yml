@@ -53,10 +53,23 @@ jobs:
         run: |
           set -euo pipefail
           sed -i 's|<string name="app_name">.*</string>|<string name="app_name">Blbl-api19</string>|' app/src/main/res/values/strings.xml
-      - name: Decode keystore
+      - name: Generate keystore (JKS format for JDK 17 compatibility)
         run: |
           mkdir -p keystore
-          echo "${{ secrets.RELEASE_KEYSTORE_BASE64 }}" | base64 -d > keystore/release.keystore
+          if [ -n "${{ secrets.RELEASE_KEYSTORE_BASE64 }}" ]; then
+            echo "${{ secrets.RELEASE_KEYSTORE_BASE64 }}" | base64 -d > keystore/release.keystore
+            echo 'Using provided keystore from secrets'
+          else
+            keytool -genkeypair -v \
+              -keystore keystore/release.keystore \
+              -alias release \
+              -keyalg RSA -keysize 2048 -validity 10000 \
+              -storetype JKS \
+              -storepass "${{ secrets.KEYSTORE_PASSWORD || 'android' }}" \
+              -keypass "${{ secrets.KEYSTORE_PASSWORD || 'android' }}" \
+              -dname "CN=BLBL, OU=Dev, O=BLBL, L=Shanghai, C=CN"
+            echo 'Generated fresh JKS keystore'
+          fi
       - name: Build API19 release APK
         env:
           RELEASE_STORE_PASSWORD: ${{ secrets.RELEASE_STORE_PASSWORD }}
