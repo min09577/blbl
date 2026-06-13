@@ -58,6 +58,7 @@ internal object PlayerCustomShortcutCatalog {
             PlayerCustomShortcutActionOption(PlayerCustomShortcutAction.TYPE_SET_DANMAKU_TEXT_SIZE, "弹幕字体大小", requiresValue = true),
             PlayerCustomShortcutActionOption(PlayerCustomShortcutAction.TYPE_SET_DANMAKU_SPEED, "弹幕速度", requiresValue = true),
             PlayerCustomShortcutActionOption(PlayerCustomShortcutAction.TYPE_SET_DANMAKU_AREA, "弹幕区域", requiresValue = true),
+            PlayerCustomShortcutActionOption(PlayerCustomShortcutAction.TYPE_SLEEP_TIMER_TOGGLE, "休眠定时器", requiresValue = false),
         )
 
     private val actionOptionsByType = actionOptionsInternal.associateBy { it.type }

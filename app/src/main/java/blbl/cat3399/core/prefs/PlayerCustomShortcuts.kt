@@ -111,6 +111,8 @@ internal sealed class PlayerCustomShortcutAction(
 
     object TogglePersistentBottomProgress : PlayerCustomShortcutAction(TYPE_TOGGLE_PERSISTENT_BOTTOM_PROGRESS)
 
+    object ToggleSleepTimer : PlayerCustomShortcutAction(TYPE_SLEEP_TIMER_TOGGLE)
+
     companion object {
         const val TYPE_OPEN_VIDEO_LIST = "open_video_list"
         const val TYPE_OPEN_COMMENTS = "open_comments"
@@ -139,6 +141,7 @@ internal sealed class PlayerCustomShortcutAction(
         const val TYPE_SET_DANMAKU_AREA = "set_danmaku_area"
         const val TYPE_TOGGLE_DEBUG_OVERLAY = "toggle_debug_overlay"
         const val TYPE_TOGGLE_PERSISTENT_BOTTOM_PROGRESS = "toggle_persistent_bottom_progress"
+        const val TYPE_SLEEP_TIMER_TOGGLE = "sleep_timer_toggle"
 
         const val SUBTITLE_LANG_DEFAULT = "default"
     }
