@@ -10,19 +10,18 @@ object GridSpanPolicy {
     /**
      * Returns the recommended grid span count for the given screen width.
      *
-     * When [tvLayout] is true the layout is optimised for TV/car big screens —
-     * fewer columns with larger cards for comfortable couch-distance viewing.
+     * TV devices detected via [ScreenSizer] get fewer columns with larger cards
+     * for comfortable couch-distance viewing.
      */
     fun fixedSpanCountForWidthDp(
         widthDp: Float,
         overrideSpanCount: Int,
-        tvLayout: Boolean = false,
     ): Int {
         if (overrideSpanCount > 0) return overrideSpanCount.coerceIn(MIN_SPAN, MAX_SPAN)
         return when {
-            tvLayout -> when {
-                widthDp >= 1600f -> 3   // 4K TV
-                else -> 2               // 1080p TV / car screen
+            isTvLayout -> when {
+                widthDp >= 1600f -> 3
+                else -> 2
             }
             widthDp >= 1100f -> 4
             widthDp >= 800f -> 3
@@ -30,16 +29,15 @@ object GridSpanPolicy {
         }
     }
 
-    /** Context-aware variant that auto-detects TV mode via [ScreenSizer]. */
-    fun fixedSpanCountForContext(
-        ctx: Context,
-        widthDp: Float,
-        overrideSpanCount: Int,
-    ): Int = fixedSpanCountForWidthDp(
-        widthDp = widthDp,
-        overrideSpanCount = overrideSpanCount,
-        tvLayout = ScreenSizer.classify(ctx) == blbl.cat3399.core.tv.ScreenClass.TV,
-    )
+    /**
+     * Per-process TV-layout flag. Call [init] once with a Context to enable
+     * TV-aware grid spans; without it the policy behaves as before (phone-optimised).
+     */
+    private var isTvLayout: Boolean = false
+
+    fun init(ctx: Context) {
+        isTvLayout = ScreenSizer.classify(ctx) == ScreenSizer.ScreenClass.TV
+    }
 
     fun dynamicSpanCountForWidthDp(
         widthDp: Float,
