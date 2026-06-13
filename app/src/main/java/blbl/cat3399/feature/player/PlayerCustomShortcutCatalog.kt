@@ -84,6 +84,7 @@ internal object PlayerCustomShortcutCatalog {
             PlayerCustomShortcutAction.TYPE_TOGGLE_DANMAKU -> PlayerCustomShortcutAction.ToggleDanmaku
             PlayerCustomShortcutAction.TYPE_TOGGLE_DEBUG_OVERLAY -> PlayerCustomShortcutAction.ToggleDebugOverlay
             PlayerCustomShortcutAction.TYPE_TOGGLE_PERSISTENT_BOTTOM_PROGRESS -> PlayerCustomShortcutAction.TogglePersistentBottomProgress
+            PlayerCustomShortcutAction.TYPE_SLEEP_TIMER_TOGGLE -> PlayerCustomShortcutAction.ToggleSleepTimer
             else -> null
         }
 
@@ -105,6 +106,7 @@ internal object PlayerCustomShortcutCatalog {
             PlayerCustomShortcutAction.ToggleDanmaku -> "弹幕：开/关"
             PlayerCustomShortcutAction.ToggleDebugOverlay -> "调试信息：开/关"
             PlayerCustomShortcutAction.TogglePersistentBottomProgress -> "底部常驻进度条：开/关"
+            PlayerCustomShortcutAction.ToggleSleepTimer -> "休眠定时器"
             is PlayerCustomShortcutAction.SetPlaybackSpeed -> "播放速度：${String.format(Locale.US, "%.2fx", action.speed)}"
             is PlayerCustomShortcutAction.SetResolutionQn -> "分辨率：${qnLabel(action.qn)}"
             is PlayerCustomShortcutAction.SetAudioId -> "音轨：${audioLabel(action.audioId)}"

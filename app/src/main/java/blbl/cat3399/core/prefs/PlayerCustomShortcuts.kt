@@ -279,6 +279,7 @@ internal object PlayerCustomShortcutsStore {
             PlayerCustomShortcutAction.TYPE_TOGGLE_DANMAKU -> PlayerCustomShortcutAction.ToggleDanmaku
             PlayerCustomShortcutAction.TYPE_TOGGLE_DEBUG_OVERLAY -> PlayerCustomShortcutAction.ToggleDebugOverlay
             PlayerCustomShortcutAction.TYPE_TOGGLE_PERSISTENT_BOTTOM_PROGRESS -> PlayerCustomShortcutAction.TogglePersistentBottomProgress
+            PlayerCustomShortcutAction.TYPE_SLEEP_TIMER_TOGGLE -> PlayerCustomShortcutAction.ToggleSleepTimer
 
             PlayerCustomShortcutAction.TYPE_SET_PLAYBACK_SPEED -> {
                 val v = params?.optDouble("speed", Double.NaN)?.toFloat() ?: return null
