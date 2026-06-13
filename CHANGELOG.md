@@ -1,5 +1,30 @@
 # CHANGELOG
 
+## v0.3.0 (2026-06-13)
+
+### 🖥 TV/大屏适配
+- ScreenSizer：设备分类（PHONE/TABLET/TV），基于 dp 宽度 + isTvDevice() 检测
+- GridSpanPolicy：TV 模式自动降低列数、增大卡片
+- TV 专属 dimens 覆盖：侧边栏宽度、视频卡片、播放器控件适配 2.5–3m 观看距离
+
+### ⏱ 休眠定时器
+- 播放器休眠定时器（15/30/60/90/120 分钟预设）
+- 状态持久化（SharedPreferences），支持配置重载
+- 可接入手势快捷方式系统
+
+### 📦 上游同步
+- 同步 [cat3399/blbl](https://github.com/cat3399/blbl) 464 个提交（截止 2026-06-12）
+- 修复 app 接口详情页无法进入、进度恢复无效、TextureView 崩溃等问题
+- 新增 1.75 倍速、清空历史记录、搜索功能等特性
+
+### ⚡ 基础设施
+- Gradle 配置缓存启用
+- Dependabot weekly 自动更新 + 分组（Gradle / GitHub Actions）
+- 统一 Release workflow（debug + release + TV 三合一 tagged 发布）
+- API19 (KitKat, minSdk 19) 分支同步及 CI 修复
+- Kotlin 编译器优化（precise incremental、experimental warning suppress）
+- R8 并行 DEX 支持
+
 ## v0.2.0 (2026-06-13)
 
 ### 🏗️ 构建工具现代化
