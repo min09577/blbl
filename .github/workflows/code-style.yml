@@ -1,4 +1,4 @@
-name: Code Style
+﻿name: Code Style
 
 on:
   workflow_dispatch:
@@ -21,6 +21,10 @@ on:
 permissions:
   contents: read
 
+# Node.js 24 migration: force actions to run on Node.js 24
+# Required starting June 16, 2026
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
 jobs:
   ktlint:
     runs-on: ubuntu-latest
