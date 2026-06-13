@@ -1,5 +1,38 @@
 # CHANGELOG
 
+## v0.2.0 (2026-06-13)
+
+### 🏗️ 构建工具现代化
+- Gradle 8.7 → 9.1.0
+- AGP 8.5.2 → 9.0.1
+- Kotlin 1.9.24 → 2.0.21 (K2 编译器)
+- Coroutines 1.8.1 → 1.9.0
+- 所有 Kotlin 编译器 deprecation warning 清零（12 项修复）
+- 修复 3 项已有测试失败
+
+### 🐛 上游 Bug 修复同步
+- 同步上游 103 个文件修复（cherry-pick from cat3399 v46.1.0）
+- IjkPlayer 卡死、seek 异常、进度条回弹修复
+- 直播弹幕异常抖动修复
+- 切换主题崩溃修复
+- 视频时长识别、头像过大崩溃修复
+- 续签 CDN 超时崩溃修复
+- 评论区协程异常修复
+
+### 🚀 CI/CD 完整体系
+- 自动代码质量门禁（ktlint + detekt）
+- 统一 Release workflow：tag push `v*` 自动构建 debug + release + TV 三个变体
+- 自动创建 GitHub Release 并上传至 Cloudflare R2
+- 支持手动 workflow_dispatch 触发，可选跳过任意构建变体
+- 所有 workflow 已迁移至 Node.js 24（6 月 16 日 GitHub Actions deadline 前完成）
+
+### ⚙️ 工程改进
+- 自定义 generateProto：protoc/grpc-java 从 GitHub/Maven 直取，无需 Gradle 依赖
+- CI 编译优化：Kotlin daemon 4GB、workers=1、G1GC 调优
+- 配置缓存尝试后关闭（自定义 task 使用不兼容 Gradle API）
+
+---
+
 ## 0.1.26
 
 1. 修复0.1.25的一些问题
@@ -48,7 +81,7 @@
 
 ## 0.1.21
 
-1. 新增自定义页，支持将推荐、分类、动态、直播与“我的”中的内容按需组合到独立入口
+1. 新增自定义页，支持将推荐、分类、动态、直播与"我的"中的内容按需组合到独立入口
 2. 支持配置导入/导出
 3. 重构播放器设置与交互：支持进度条缩略图、缓冲动画与更多触摸手势；增加更多自定义快捷键功能和弹幕配置
 4. 播放器内增加 UP 主卡片和关注按钮、一键三连；历史记录与稍后再看支持显示进度
