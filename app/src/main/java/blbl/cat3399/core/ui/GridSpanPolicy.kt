@@ -1,6 +1,7 @@
 package blbl.cat3399.core.ui
 
 import android.content.Context
+import blbl.cat3399.core.tv.ScreenClass
 import blbl.cat3399.core.tv.ScreenSizer
 
 object GridSpanPolicy {
@@ -36,7 +37,7 @@ object GridSpanPolicy {
     private var isTvLayout: Boolean = false
 
     fun init(ctx: Context) {
-        isTvLayout = ScreenSizer.classify(ctx) == ScreenSizer.ScreenClass.TV
+        isTvLayout = ScreenSizer.classify(ctx) == ScreenClass.TV
     }
 
     fun dynamicSpanCountForWidthDp(

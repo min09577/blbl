@@ -1,8 +1,6 @@
 package blbl.cat3399.core.tv
 
-import android.app.Activity
 import android.content.Context
-import android.content.res.Configuration
 import android.util.DisplayMetrics
 import android.view.WindowManager
 
@@ -25,6 +23,7 @@ enum class ScreenClass {
 object ScreenSizer {
     private var cachedClass: ScreenClass? = null
 
+    @Suppress("DEPRECATION")
     fun classify(ctx: Context): ScreenClass {
         cachedClass?.let { return it }
 
@@ -34,7 +33,6 @@ object ScreenSizer {
         } else {
             val wm = appCtx.getSystemService(Context.WINDOW_SERVICE) as WindowManager
             val metrics = DisplayMetrics()
-            @Suppress("DEPRECATION")
             wm.defaultDisplay.getRealMetrics(metrics)
 
             val density = metrics.density
