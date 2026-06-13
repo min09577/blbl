@@ -37,11 +37,20 @@ style:
       - '32'
       - '64'
       - '100'
+      - '140'
+      - '200'
+      - '210'
+      - '280'
+      - '600'
+      - '800'
+      - '960'
       - '1000'
       - '1024'
+      - '1080'
+      - '1100'
+      - '1600'
       - '360'
       - '720'
-      - '1080'
     ignorePropertyDeclaration: true
     ignoreCompanionObjectPropertyDeclaration: true
   WildcardImport:
