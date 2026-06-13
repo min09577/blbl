@@ -32,10 +32,13 @@ style:
       - '4'
       - '5'
       - '8'
+      - '14'
       - '16'
       - '24'
       - '32'
+      - '60'
       - '64'
+      - '78'
       - '100'
       - '140'
       - '200'
@@ -51,6 +54,8 @@ style:
       - '1600'
       - '360'
       - '720'
+      - '3600'
+      - '60000'
     ignorePropertyDeclaration: true
     ignoreCompanionObjectPropertyDeclaration: true
   WildcardImport:

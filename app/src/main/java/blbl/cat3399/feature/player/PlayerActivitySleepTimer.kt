@@ -6,9 +6,7 @@ import android.view.Gravity
 import android.view.View
 import android.widget.LinearLayout
 import android.widget.TextView
-import androidx.core.content.ContextCompat
 import blbl.cat3399.R
-import blbl.cat3399.core.prefs.AppPrefs
 
 /**
  * v46.x: Sleep timer for TV / car infotainment
@@ -21,8 +19,6 @@ import blbl.cat3399.core.prefs.AppPrefs
  * Presets: off / 15 / 30 / 60 / 90 / 120 minutes.
  * When the timer expires the player is paused and a toast is shown.
  */
-
-private const val TAG = "SleepTimer"
 
 /** Sleep-timer preferences stored directly (avoids bloating AppPrefs). */
 object SleepTimerPrefs {
