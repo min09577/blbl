@@ -4,6 +4,7 @@ import blbl.cat3399.BuildConfig
 import blbl.cat3399.core.account.AccountSessionStore
 import blbl.cat3399.core.net.CookieStore
 import org.json.JSONObject
+import kotlin.ConsistentCopyVisibility
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
@@ -35,6 +36,7 @@ object AppConfigBackup {
         val jsonText: String,
     )
 
+    @ConsistentCopyVisibility
     data class ParsedBackup internal constructor(
         val includesCredentials: Boolean,
         internal val configPrefsJson: JSONObject,

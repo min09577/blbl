@@ -2304,6 +2304,7 @@ class PlayerActivity : BaseActivity() {
         }
     }
 
+    @Suppress("DEPRECATION")
     override fun onBackPressed() {
         if (isInPictureInPictureMode) {
             super.onBackPressed()
