@@ -263,8 +263,6 @@ val generateProto by tasks.registering {
     }
 }
 
-
-
 tasks.named("preBuild").configure {
     dependsOn(generateProto)
 }
@@ -346,8 +344,8 @@ val checkThemeTokens =
                     }
                 throw GradleException(msg)
             }
+        }
     }
-}
 
 tasks.named("preBuild").configure {
     dependsOn(checkThemeTokens)

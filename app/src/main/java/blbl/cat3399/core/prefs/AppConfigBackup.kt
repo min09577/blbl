@@ -4,10 +4,10 @@ import blbl.cat3399.BuildConfig
 import blbl.cat3399.core.account.AccountSessionStore
 import blbl.cat3399.core.net.CookieStore
 import org.json.JSONObject
-import kotlin.ConsistentCopyVisibility
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
+import kotlin.ConsistentCopyVisibility
 
 object AppConfigBackup {
     const val JSON_MIME = "application/json"
