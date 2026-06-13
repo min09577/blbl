@@ -176,6 +176,12 @@ private fun PlayerActivity.applyPlayerCustomShortcut(
             showSeekHint("底部进度条：$state", hold = false)
         }
 
+        PlayerCustomShortcutAction.ToggleSleepTimer -> {
+            toggleSleepTimer()
+            val min = SleepTimerPrefs.minutes
+            showSeekHint(if (min > 0) "💤 休眠定时器：${min}分钟" else "💤 休眠定时器：已关闭", hold = false)
+        }
+
         is PlayerCustomShortcutAction.SetPlaybackSpeed -> {
             val target = action.speed.takeIf { it.isFinite() }?.coerceIn(0.25f, 4.0f) ?: 1.0f
             val current = session.playbackSpeed
