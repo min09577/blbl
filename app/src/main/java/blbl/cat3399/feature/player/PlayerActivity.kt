@@ -1494,6 +1494,7 @@ class PlayerActivity : BaseActivity() {
         initPinchZoom() // v13.4: 初始化捏合缩放
         initPanGesture() // v13.5: 初始化双指平移
         initCountdownDisplay() // v13.7: 初始化剩余时间倒计时
+        initSleepTimer() // v46.x: 休眠定时器（TV/车机）
         initSpeedCurveDisplay() // v13.8: 初始化播放速度曲线
         initPercentageDisplay() // v13.9: 初始化播放位置百分比
         applyVignetteEffect() // v13.10: 暗角效果
@@ -2339,6 +2340,7 @@ class PlayerActivity : BaseActivity() {
         debugJob?.cancel()
         networkSpeedJob?.cancel()
         releaseBatteryIndicator() // v12.12: 释放电池指示器
+        releaseSleepTimer() // v46.x: 释放休眠定时器
         watchTimeJob?.cancel()
         progressJob?.cancel()
         autoResumeJob?.cancel()
