@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- TV big-screen dimension overrides — scaled for couch-distance viewing (~2.5–3 m) -->
+<resources>
+    <!-- Sidebar: wider + larger icons for TV remotes -->
+    <dimen name="sidebar_width">96dp</dimen>
+    <dimen name="sidebar_user_size">64dp</dimen>
+    <dimen name="sidebar_login_size">72dp</dimen>
+    <dimen name="sidebar_login_text_size">20sp</dimen>
+    <dimen name="sidebar_settings_size">56dp</dimen>
+    <dimen name="sidebar_main_settings_size">48dp</dimen>
+    <dimen name="sidebar_nav_icon_size">44dp</dimen>
+    <dimen name="sidebar_nav_label_text_size">18sp</dimen>
+    <dimen name="sidebar_nav_item_height_default">60dp</dimen>
+    <dimen name="sidebar_nav_item_height_selected">100dp</dimen>
+    <dimen name="sidebar_nav_item_height_labeled">88dp</dimen>
+
+    <!-- Video card: larger thumbnails + bigger text for couch reading -->
+    <dimen name="video_card_margin">12dp</dimen>
+    <dimen name="video_card_text_margin">14dp</dimen>
+    <dimen name="video_card_duration_text_size">18sp</dimen>
+    <dimen name="video_card_stat_icon_size">22dp</dimen>
+    <dimen name="video_card_stat_text_size">18sp</dimen>
+    <dimen name="video_card_title_text_size">24sp</dimen>
+    <dimen name="video_card_subtitle_text_size">18sp</dimen>
+    <dimen name="video_card_progress_bar_height">4dp</dimen>
+    <dimen name="video_card_action_button_height">72dp</dimen>
+    <dimen name="video_card_action_gap">10dp</dimen>
+    <dimen name="video_card_action_icon_watch_later_size">56dp</dimen>
+    <dimen name="video_card_action_icon_detail_size">44dp</dimen>
+    <dimen name="video_card_action_icon_up_size">40dp</dimen>
+    <dimen name="video_card_action_icon_dismiss_size">40dp</dimen>
+    <dimen name="video_card_action_button_radius">20dp</dimen>
+
+    <!-- Player top/bottom controls: larger tap targets for remote -->
+    <dimen name="player_top_bar_padding_h">16dp</dimen>
+    <dimen name="player_top_bar_padding_v">4dp</dimen>
+    <dimen name="player_top_button_size">72dp</dimen>
+    <dimen name="player_top_button_padding">8dp</dimen>
+    <dimen name="player_title_text_size">28sp</dimen>
+    <dimen name="player_online_text_size">20sp</dimen>
+    <dimen name="player_clock_text_size">28sp</dimen>
+    <dimen name="player_time_text_size">26sp</dimen>
+    <dimen name="player_controls_row_height">88dp</dimen>
+    <dimen name="player_seekbar_height">36dp</dimen>
+    <dimen name="player_seekbar_track_height">7dp</dimen>
+    <dimen name="player_seekbar_touch_height">36dp</dimen>
+    <dimen name="player_persistent_progress_height">3dp</dimen>
+    <dimen name="player_seek_hint_text_size">26sp</dimen>
+    <dimen name="player_seek_hint_padding_h">18dp</dimen>
+    <dimen name="player_seek_hint_padding_v">14dp</dimen>
+    <dimen name="player_touch_lock_button_size">64dp</dimen>
+    <dimen name="player_buffering_indicator_size">56dp</dimen>
+    <dimen name="player_buffering_text_size">24sp</dimen>
+
+    <!-- Player side panels: wider reading area -->
+    <dimen name="player_side_panel_width">480dp</dimen>
+    <dimen name="player_comments_panel_width">480dp</dimen>
+    <dimen name="player_setting_item_padding">22dp</dimen>
+    <dimen name="player_setting_item_title_text_size">22sp</dimen>
+    <dimen name="player_setting_item_subtitle_text_size">18sp</dimen>
+
+    <!-- Player: comment panel -->
+    <dimen name="player_comment_user_text_size">18sp</dimen>
+    <dimen name="player_comment_message_text_size">16sp</dimen>
+    <dimen name="player_comment_time_text_size">14sp</dimen>
+    <dimen name="player_comment_avatar_size">48dp</dimen>
+    <dimen name="player_comment_item_padding">16dp</dimen>
+    <dimen name="player_comment_up_badge_height">20dp</dimen>
+    <dimen name="player_comment_up_badge_text_size">13sp</dimen>
+    <dimen name="player_comment_picture_width">128dp</dimen>
+    <dimen name="player_comment_picture_height">96dp</dimen>
+
+    <!-- Player: info panel -->
+    <dimen name="player_info_tab_text_size">22sp</dimen>
+    <dimen name="player_info_tab_gap">32dp</dimen>
+    <dimen name="player_info_avatar_size">56dp</dimen>
+    <dimen name="player_info_up_name_text_size">20sp</dimen>
+    <dimen name="player_info_title_text_size">28sp</dimen>
+    <dimen name="player_info_stats_text_size">16sp</dimen>
+    <dimen name="player_info_desc_text_size">16sp</dimen>
+    <dimen name="player_info_section_title_text_size">18sp</dimen>
+    <dimen name="player_info_action_icon_size">24dp</dimen>
+    <dimen name="player_info_action_text_size">16sp</dimen>
+    <dimen name="player_info_recommend_cover_width">160dp</dimen>
+    <dimen name="player_info_recommend_cover_height">90dp</dimen>
+
+    <!-- Video detail: header -->
+    <dimen name="video_detail_header_cover_width">600dp</dimen>
+    <dimen name="video_detail_section_card_width">320dp</dimen>
+
+    <!-- Following list -->
+    <dimen name="following_item_height">64dp</dimen>
+    <dimen name="following_avatar_size">48dp</dimen>
+    <dimen name="following_avatar_update_dot_size">14dp</dimen>
+    <dimen name="following_name_text_size">20sp</dimen>
+    <dimen name="following_grid_avatar_size">140dp</dimen>
+    <dimen name="following_grid_name_text_size">22sp</dimen>
+    <dimen name="following_grid_sign_text_size">16sp</dimen>
+
+    <!-- Search -->
+    <dimen name="search_suggest_padding_h">24dp</dimen>
+    <dimen name="search_suggest_padding_v">18dp</dimen>
+    <dimen name="search_suggest_text_size">22sp</dimen>
+    <dimen name="search_hot_text_size">22sp</dimen>
+    <dimen name="focus_safe_padding_h">12dp</dimen>
+    <dimen name="focus_safe_padding_v">8dp</dimen>
+
+    <!-- Settings -->
+    <dimen name="settings_content_padding_h">28dp</dimen>
+    <dimen name="settings_content_padding_v">22dp</dimen>
+    <dimen name="settings_entry_margin_bottom">20dp</dimen>
+
+    <!-- Dynamic: following panel -->
+    <dimen name="dynamic_following_panel_width">280dp</dimen>
+    <dimen name="dynamic_following_panel_margin">12dp</dimen>
+
+    <!-- Splash -->
+    <dimen name="splash_logo_width">240dp</dimen>
+    <dimen name="splash_logo_height">248dp</dimen>
+</resources>
