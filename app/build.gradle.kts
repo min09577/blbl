@@ -136,7 +136,6 @@ dependencies {
 val generateProto by tasks.registering {
     group = "protobuf"
     description = "Generate Java lite + gRPC lite sources from .proto files"
-    notCompatibleWithConfigurationCache("Uses Gradle script objects and exec operations")
 
     val protoFiles = fileTree(protoSourceDir) { include("**/*.proto") }
     inputs.files(protoFiles)
@@ -275,7 +274,6 @@ val checkThemeTokens =
     tasks.register("checkThemeTokens") {
         group = "verification"
         description = "Fails if layouts reference fixed palette colors instead of theme attributes."
-        notCompatibleWithConfigurationCache("Uses Gradle script objects")
 
         doLast {
             val resDir = file("src/main/res")
