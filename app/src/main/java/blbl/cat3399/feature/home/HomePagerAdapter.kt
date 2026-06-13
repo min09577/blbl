@@ -9,7 +9,7 @@ import blbl.cat3399.feature.video.VideoGridFragment
 
 data class HomeTabSpec(
     val key: String,
-    @StringRes val titleRes: Int,
+    @param:StringRes val titleRes: Int,
     val createFragment: () -> Fragment,
 )
 

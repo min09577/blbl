@@ -19,8 +19,8 @@ import blbl.cat3399.feature.search.SearchFragment
 data class RootNavSpec(
     val navId: Int,
     val key: String,
-    @StringRes val titleRes: Int,
-    @DrawableRes val iconRes: Int,
+    @param:StringRes val titleRes: Int,
+    @param:DrawableRes val iconRes: Int,
     val startupPageKey: String? = null,
     val isEnabled: () -> Boolean = { true },
     val matchesFragment: (Fragment) -> Boolean,

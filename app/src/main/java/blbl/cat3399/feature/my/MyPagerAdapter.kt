@@ -8,7 +8,7 @@ import blbl.cat3399.core.prefs.AppPrefs
 
 data class MyTabSpec(
     val key: String,
-    @StringRes val titleRes: Int,
+    @param:StringRes val titleRes: Int,
     val createFragment: () -> Fragment,
 )
 
