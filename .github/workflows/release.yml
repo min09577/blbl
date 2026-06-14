@@ -131,13 +131,13 @@ jobs:
         if: steps.check.outputs.skip != 'true'
         run: |
           mkdir -p keystore
-          keytool -genkeypair -v -keystore keystore/release.keystore -alias release -keyalg RSA -keysize 2048 -validity 10000 -storetype PKCS12 -storepass "${{ secrets.KEYSTORE_PASSWORD }}" -keypass "${{ secrets.KEYSTORE_PASSWORD }}" -dname "CN=BLBL, OU=Dev, O=BLBL, L=Shanghai, C=CN"
+          keytool -genkeypair -v -keystore keystore/release.keystore -alias release -keyalg RSA -keysize 2048 -validity 10000 -storetype PKCS12 -storepass android -keypass android -dname "CN=BLBL, OU=Dev, O=BLBL, L=Shanghai, C=CN"
       - name: Build release APK
         if: steps.check.outputs.skip != 'true'
         env:
-          RELEASE_STORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
+          RELEASE_STORE_PASSWORD: android
           RELEASE_KEY_ALIAS: release
-          RELEASE_KEY_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
+          RELEASE_KEY_PASSWORD: android
         run: ./gradlew assembleRelease -PversionName=${{ needs.version.outputs.version_name }} -PversionCode=${{ github.run_number }} --no-daemon --no-build-cache --stacktrace
       - name: Upload release APK
         if: steps.check.outputs.skip != 'true'
