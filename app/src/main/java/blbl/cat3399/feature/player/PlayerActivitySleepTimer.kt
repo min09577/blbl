@@ -79,7 +79,7 @@ internal fun PlayerActivity.releaseSleepTimer() {
     sleepTimerView?.let { v ->
         try {
             (v.parent as? android.view.ViewGroup)?.removeView(v)
-        } catch (_: Throwable) {}
+        } catch (e: Throwable) {}
     }
     sleepTimerView = null
 }
@@ -181,7 +181,7 @@ private fun PlayerActivity.showSleepTimerOverlay() {
         try {
             val overlay = requirePlayerTouchOverlayBinding(binding)
             overlay.root.addView(sleepTimerView)
-        } catch (_: Throwable) {
+        } catch (e: Throwable) {
             // view not ready — will be added on next update
         }
     }
