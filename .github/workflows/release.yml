@@ -131,7 +131,10 @@ jobs:
         if: steps.check.outputs.skip != 'true'
         run: |
           mkdir -p keystore
-          echo "${{ secrets.RELEASE_KEYSTORE_BASE64 }}" | base64 -d > keystore/release.keystore
+          printf '%s' "$KEYSTORE_B64" | base64 -d > keystore/release.keystore
+          if [ ! -s keystore/release.keystore ]; then echo "ERROR: keystore decode failed or empty"; exit 1; fi
+        env:
+          KEYSTORE_B64: ${{ secrets.RELEASE_KEYSTORE_BASE64 }}
       - name: Build release APK
         if: steps.check.outputs.skip != 'true'
         env:
