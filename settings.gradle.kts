@@ -16,4 +16,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "blbl-android"
 include(":app")
+include(":proto")
 
