@@ -258,6 +258,10 @@ val generateProto by tasks.registering {
     }
 }
 
+generateProto.configure {
+    notCompatibleWithConfigurationCache("Downloads protoc from GitHub releases")
+}
+
 tasks.named("preBuild").configure {
     dependsOn(generateProto)
 }
@@ -341,6 +345,10 @@ val checkThemeTokens =
             }
         }
     }
+
+checkThemeTokens.configure {
+    notCompatibleWithConfigurationCache("Scans layout XML for theme tokens")
+}
 
 tasks.named("preBuild").configure {
     dependsOn(checkThemeTokens)
