@@ -152,19 +152,16 @@ val generateProto by tasks.registering {
                 .dir("tmp/proto-include")
                 .get()
                 .asFile
-        val isWindows =
-            org.gradle.internal.os.OperatingSystem
-                .current()
-                .isWindows
+        val osName = System.getProperty("os.name").lowercase()
+        val isWindows = osName.contains("windows")
+        val isMac = osName.contains("mac")
         val protocExe = File(toolsDir, if (isWindows) "protoc.exe" else "protoc")
         val grpcPluginExe = File(toolsDir, "protoc-gen-grpc-java" + if (isWindows) ".exe" else "")
 
         val protocDist =
             when {
                 isWindows -> "win64"
-                org.gradle.internal.os.OperatingSystem
-                    .current()
-                    .isMacOsX ->
+                isMac ->
                     if (System.getProperty("os.arch") == "aarch64") "osx-aarch_64" else "osx-x86_64"
                 else ->
                     if (System.getProperty("os.arch") == "aarch64") "linux-aarch_64" else "linux-x86_64"
@@ -172,9 +169,7 @@ val generateProto by tasks.registering {
         val protocGrpcClassifier =
             when {
                 isWindows -> "windows-x86_64"
-                org.gradle.internal.os.OperatingSystem
-                    .current()
-                    .isMacOsX ->
+                isMac ->
                     if (System.getProperty("os.arch") == "aarch64") "osx-aarch_64" else "osx-x86_64"
                 else ->
                     if (System.getProperty("os.arch") == "aarch64") "linux-aarch_64" else "linux-x86_64"

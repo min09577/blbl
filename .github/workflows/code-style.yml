@@ -37,8 +37,8 @@ jobs:
           cache: "gradle"
       - name: Grant execute permission for gradlew
         run: chmod +x ./gradlew
-      - name: ktlintCheck
-        run: ./gradlew :app:ktlintCheck --no-daemon
+      - name: ktlintMainSourceSetCheck
+        run: ./gradlew :app:ktlintMainSourceSetCheck --no-daemon
 
   detekt:
     runs-on: ubuntu-latest
