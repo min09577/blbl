@@ -3,6 +3,7 @@ package blbl.cat3399.core.ui
 import android.app.Activity
 import android.content.Context
 import android.content.ContextWrapper
+import androidx.core.content.ContextCompat
 import android.os.Handler
 import android.os.Looper
 import android.util.TypedValue
@@ -72,7 +73,7 @@ object AppToast {
 
         view.findViewById<ImageView>(R.id.iv_app_icon).setImageDrawable(
             runCatching { root.context.applicationInfo.loadIcon(root.context.packageManager) }
-                .getOrElse { root.context.getDrawable(R.mipmap.ic_launcher) },
+                .getOrElse { ContextCompat.getDrawable(root.context, R.mipmap.ic_launcher) },
         )
 
         val tvText = view.findViewById<TextView>(R.id.tv_text)

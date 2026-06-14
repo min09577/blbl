@@ -156,3 +156,11 @@ generateProto.configure {
 tasks.named("compileJava").configure {
     dependsOn(generateProto)
 }
+
+sourceSets {
+    main {
+        java {
+            srcDir(protoOutputDir)
+        }
+    }
+}

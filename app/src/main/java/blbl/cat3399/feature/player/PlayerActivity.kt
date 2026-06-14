@@ -2305,6 +2305,7 @@ class PlayerActivity : BaseActivity() {
         }
     }
 
+    @Deprecated("Use onBackPressedDispatcher instead")
     @Suppress("DEPRECATION")
     override fun onBackPressed() {
         if (isInPictureInPictureMode) {
