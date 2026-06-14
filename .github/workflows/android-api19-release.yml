@@ -30,14 +30,10 @@ jobs:
         run: chmod +x ./gradlew
       - name: CI Gradle tuning (limit heap for 7GB runner)
         run: |
-          
-          printf '%s\n' '# CI overrides: GitHub Actions ubuntu-latest has 7GB RAM, 2 cores' >> gradle.properties
-          printf '%s\n' 'org.gradle.jvmargs=-Xmx2g -XX:+UseG1GC -XX:MaxGCPauseMillis=200 -Dfile.encoding=UTF-8' >> gradle.properties
-          printf '%s\n' 'kotlin.daemon.jvmargs=-Xmx4g -XX:+UseG1GC' >> gradle.properties
-          printf '%s\n' 'org.gradle.workers.max=1' >> gradle.properties
-          printf '%s\n' 'org.gradle.parallel=true' >> gradle.properties
-          echo "=== Effective gradle.properties (last lines) ==="
-          tail -20 gradle.properties
+          sed -i 's|^org.gradle.jvmargs.*|org.gradle.jvmargs=-Xmx2g -XX:+UseG1GC -XX:MaxGCPauseMillis=200 -Dfile.encoding=UTF-8|' gradle.properties
+          sed -i 's|^kotlin.daemon.jvmargs.*|kotlin.daemon.jvmargs=-Xmx4g -XX:+UseG1GC|' gradle.properties
+          sed -i 's|^org.gradle.workers.max.*|org.gradle.workers.max=1|' gradle.properties
+          grep -q '^org.gradle.parallel=' gradle.properties || echo 'org.gradle.parallel=true' >> gradle.properties
       - name: Cache Gradle configuration cache
         uses: actions/cache@v4
         with:
