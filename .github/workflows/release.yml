@@ -69,12 +69,10 @@ jobs:
         run: chmod +x ./gradlew
       - name: CI Gradle tuning
         run: |
-          cat >> gradle.properties << 'EOF'
-          org.gradle.jvmargs=-Xmx2g -XX:+UseG1GC -XX:MaxGCPauseMillis=200 -Dfile.encoding=UTF-8
-          kotlin.daemon.jvmargs=-Xmx4g -XX:+UseG1GC
-          org.gradle.workers.max=1
-          org.gradle.parallel=true
-          EOF
+          
+          printf '%s\n' 'org.gradle.jvmargs=-Xmx2g -XX:+UseG1GC -XX:MaxGCPauseMillis=200 -Dfile.encoding=UTF-8' >> gradle.properties
+          printf '%s\n' 'kotlin.daemon.jvmargs=-Xmx2g -XX:+UseG1GC' >> gradle.properties
+          printf '%s\n' 'org.gradle.workers.max=1' >> gradle.properties
       - name: Cache Gradle configuration cache
         uses: actions/cache@v4
         with:
@@ -105,7 +103,7 @@ jobs:
         id: check
         run: |
           if [ -z "${KEYSTORE:-}" ]; then
-            echo "SKIP: RELEASE_KEYSTORE_BASE64 not set â†?will skip build"
+            echo "SKIP: RELEASE_KEYSTORE_BASE64 not set é”Ÿ?will skip build"
             echo "skip=true" >> "$GITHUB_OUTPUT"
           else
             echo "skip=false" >> "$GITHUB_OUTPUT"
@@ -118,12 +116,11 @@ jobs:
       - name: CI Gradle tuning
         if: steps.check.outputs.skip != 'true'
         run: |
-          cat >> gradle.properties << 'EOF'
-          org.gradle.jvmargs=-Xmx2g -XX:+UseG1GC -XX:MaxGCPauseMillis=200 -Dfile.encoding=UTF-8
-          kotlin.daemon.jvmargs=-Xmx4g -XX:+UseG1GC
-          org.gradle.workers.max=1
-          org.gradle.parallel=true
-          EOF
+          
+          printf '%s\n' 'org.gradle.jvmargs=-Xmx2g -XX:+UseG1GC -XX:MaxGCPauseMillis=200 -Dfile.encoding=UTF-8' >> gradle.properties
+          printf '%s\n' 'kotlin.daemon.jvmargs=-Xmx4g -XX:+UseG1GC' >> gradle.properties
+          printf '%s\n' 'org.gradle.workers.max=1' >> gradle.properties
+          printf '%s\n' 'org.gradle.parallel=true' >> gradle.properties
       - name: Cache Gradle configuration cache
         if: steps.check.outputs.skip != 'true'
         uses: actions/cache@v4
@@ -166,7 +163,7 @@ jobs:
         id: check-tv
         run: |
           if [ -z "${KP:-}" ]; then
-            echo "SKIP: KEYSTORE_PASSWORD not set â†?will skip TV build"
+            echo "SKIP: KEYSTORE_PASSWORD not set é”Ÿ?will skip TV build"
             echo "skip=true" >> "$GITHUB_OUTPUT"
           else
             echo "skip=false" >> "$GITHUB_OUTPUT"
@@ -179,12 +176,11 @@ jobs:
       - name: CI Gradle tuning
         if: steps.check-tv.outputs.skip != 'true'
         run: |
-          cat >> gradle.properties << 'EOF'
-          org.gradle.jvmargs=-Xmx2g -XX:+UseG1GC -XX:MaxGCPauseMillis=200 -Dfile.encoding=UTF-8
-          kotlin.daemon.jvmargs=-Xmx4g -XX:+UseG1GC
-          org.gradle.workers.max=1
-          org.gradle.parallel=true
-          EOF
+          
+          printf '%s\n' 'org.gradle.jvmargs=-Xmx2g -XX:+UseG1GC -XX:MaxGCPauseMillis=200 -Dfile.encoding=UTF-8' >> gradle.properties
+          printf '%s\n' 'kotlin.daemon.jvmargs=-Xmx4g -XX:+UseG1GC' >> gradle.properties
+          printf '%s\n' 'org.gradle.workers.max=1' >> gradle.properties
+          printf '%s\n' 'org.gradle.parallel=true' >> gradle.properties
       - name: Generate keystore
         if: steps.check-tv.outputs.skip != 'true'
         run: |
