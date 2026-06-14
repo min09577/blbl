@@ -14,7 +14,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
 
 class AboutActivity : ComponentActivity() {
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -31,13 +30,16 @@ class AboutActivity : ComponentActivity() {
 private fun BlblAboutTheme(content: @Composable () -> Unit) {
     val context = LocalContext.current
     val darkTheme = isSystemInDarkTheme()
-    val colorScheme = when {
-        android.os.Build.VERSION.SDK_INT >= 31 && darkTheme ->
-            dynamicDarkColorScheme(context)
-        android.os.Build.VERSION.SDK_INT >= 31 ->
-            dynamicLightColorScheme(context)
-        darkTheme -> darkColorScheme()
-        else -> lightColorScheme()
-    }
+    val colorScheme =
+        when {
+            android.os.Build.VERSION.SDK_INT >= 31 && darkTheme ->
+                dynamicDarkColorScheme(context)
+            android.os.Build.VERSION.SDK_INT >= 31 ->
+                dynamicLightColorScheme(context)
+            darkTheme ->
+                darkColorScheme()
+            else ->
+                lightColorScheme()
+        }
     MaterialTheme(colorScheme = colorScheme, content = content)
 }
