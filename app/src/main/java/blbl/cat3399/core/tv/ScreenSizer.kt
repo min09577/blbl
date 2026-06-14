@@ -28,24 +28,25 @@ object ScreenSizer {
         cachedClass?.let { return it }
 
         val appCtx = ctx.applicationContext
-        val class_ = if (appCtx.isTvDevice()) {
-            ScreenClass.TV
-        } else {
-            val wm = appCtx.getSystemService(Context.WINDOW_SERVICE) as WindowManager
-            val metrics = DisplayMetrics()
-            wm.defaultDisplay.getRealMetrics(metrics)
+        val class_ =
+            if (appCtx.isTvDevice()) {
+                ScreenClass.TV
+            } else {
+                val wm = appCtx.getSystemService(Context.WINDOW_SERVICE) as WindowManager
+                val metrics = DisplayMetrics()
+                wm.defaultDisplay.getRealMetrics(metrics)
 
-            val density = metrics.density
-            val widthDp = (metrics.widthPixels / density).toInt()
-            val heightDp = (metrics.heightPixels / density).toInt()
-            val minDp = minOf(widthDp, heightDp)
+                val density = metrics.density
+                val widthDp = (metrics.widthPixels / density).toInt()
+                val heightDp = (metrics.heightPixels / density).toInt()
+                val minDp = minOf(widthDp, heightDp)
 
-            when {
-                minDp >= 960 -> ScreenClass.TV
-                minDp >= 600 -> ScreenClass.TABLET
-                else -> ScreenClass.PHONE
+                when {
+                    minDp >= 960 -> ScreenClass.TV
+                    minDp >= 600 -> ScreenClass.TABLET
+                    else -> ScreenClass.PHONE
+                }
             }
-        }
         cachedClass = class_
         return class_
     }
@@ -67,6 +68,5 @@ object ScreenSizer {
         }
 
     /** Whether the device should use larger player controls. */
-    fun useLargePlayerControls(ctx: Context): Boolean =
-        classify(ctx) == ScreenClass.TV
+    fun useLargePlayerControls(ctx: Context): Boolean = classify(ctx) == ScreenClass.TV
 }

@@ -58,7 +58,7 @@
     <ID>ComplexInterface:PlayerActivityTouch.kt$PlayerTouchGestureHost</ID>
     <ID>CyclomaticComplexMethod:AccountSessionStore.kt$AccountSessionStore$private fun parseRecords(arr: JSONArray): List&lt;AccountRecord&gt;</ID>
     <ID>CyclomaticComplexMethod:ApkUpdateFlow.kt$ApkUpdateFlow$fun startDownloadAndInstall( activity: ComponentActivity, latestVersionHint: String? = null, apkUrl: String? = null, onResolved: ((latestVersion: String, isNewer: Boolean) -&gt; Unit)? = null, ): Job?</ID>
-    <ID>CyclomaticComplexMethod:AppLog.kt$AppLog$private fun cleanupLogs(dir: File, keep: File?)</ID>
+    <ID>CyclomaticComplexMethod:AppLog.kt$AppLog$private fun cleanupLogs( dir: File, keep: File?, )</ID>
     <ID>CyclomaticComplexMethod:AppLog.kt$AppLog$private suspend fun runFileWriter(file: File)</ID>
     <ID>CyclomaticComplexMethod:ArchiveTripleAction.kt$suspend fun executeArchiveTripleAction( bvid: String, aid: Long?, selfMid: Long?, initialState: ArchiveTripleActionState, isStillValid: () -&gt; Boolean = { true }, ): ArchiveTripleActionResult</ID>
     <ID>CyclomaticComplexMethod:BangumiDetailActivity.kt$BangumiDetailActivity$private fun applyDetail(detail: BangumiSeasonDetail)</ID>
@@ -82,7 +82,7 @@
     <ID>CyclomaticComplexMethod:DanmakuShield.kt$DanmakuShield$fun allow(danmaku: Danmaku): Boolean</ID>
     <ID>CyclomaticComplexMethod:DashLocalHttpProxy.kt$DashLocalHttpProxy$private fun handleClient(socket: Socket)</ID>
     <ID>CyclomaticComplexMethod:DpadGridController.kt$DpadGridController$fun consumePendingFocusAfterLoadMore(): Boolean</ID>
-    <ID>CyclomaticComplexMethod:DpadGridController.kt$DpadGridController$private fun handleDpadDown(itemView: View, position: Int): Boolean</ID>
+    <ID>CyclomaticComplexMethod:DpadGridController.kt$DpadGridController$private fun handleDpadDown( itemView: View, position: Int, ): Boolean</ID>
     <ID>CyclomaticComplexMethod:DpadGridController.kt$DpadGridController$private fun handleDpadDownFallback(itemView: View): Boolean</ID>
     <ID>CyclomaticComplexMethod:DpadGridController.kt$DpadGridController$private fun maybeProtectFocusOnChildDetach(detachedChild: View)</ID>
     <ID>CyclomaticComplexMethod:DpadGridController.kt$DpadGridController$private fun parkFocusInRecyclerViewForLoadMore(keepDescendantFocusabilityOverridden: Boolean = false)</ID>
@@ -193,15 +193,15 @@
     <ID>CyclomaticComplexMethod:QrLoginActivity.kt$QrLoginActivity$private fun poll(key: String): Job</ID>
     <ID>CyclomaticComplexMethod:RecyclerViewFocus.kt$private fun RecyclerView.requestFocusAdapterPositionReliableInternal( position: Int, smoothScroll: Boolean, isAlive: () -&gt; Boolean, token: Int, attemptsLeft: Int, attemptDelayMs: Long, scrolled: Boolean, onFocused: () -&gt; Unit, ): Boolean</ID>
     <ID>CyclomaticComplexMethod:ReplyEmotePanelRepository.kt$ReplyEmotePanelRepository$private suspend fun refreshFromNetwork(context: Context)</ID>
-    <ID>CyclomaticComplexMethod:SearchInteractor.kt$SearchInteractor$fun loadNextPage(isRefresh: Boolean = false, refreshToken: Int = state.refreshUiToken)</ID>
+    <ID>CyclomaticComplexMethod:SearchInteractor.kt$SearchInteractor$fun loadNextPage( isRefresh: Boolean = false, refreshToken: Int = state.refreshUiToken, )</ID>
     <ID>CyclomaticComplexMethod:SearchRenderer.kt$SearchRenderer$fun applyUiScale()</ID>
     <ID>CyclomaticComplexMethod:SearchRenderer.kt$SearchRenderer$fun setupInput()</ID>
     <ID>CyclomaticComplexMethod:SearchRenderer.kt$SearchRenderer$private fun maybeConsumePendingResultFocus(): Boolean</ID>
     <ID>CyclomaticComplexMethod:SearchRenderer.kt$SearchRenderer$private fun setupQueryInput()</ID>
     <ID>CyclomaticComplexMethod:SettingsInteractionHandler.kt$SettingsInteractionHandler$fun onEntryClicked(entry: SettingEntry)</ID>
-    <ID>CyclomaticComplexMethod:SettingsInteractionHandler.kt$SettingsInteractionHandler$private fun ensureTestUpdateChecked(force: Boolean, refreshUi: Boolean = true, promptIfUpdate: Boolean = false)</ID>
-    <ID>CyclomaticComplexMethod:SettingsInteractionHandler.kt$SettingsInteractionHandler$private fun showCustomPageContentDialog(sectionIndex: Int, focusId: SettingId)</ID>
-    <ID>CyclomaticComplexMethod:SettingsInteractionHandler.kt$SettingsInteractionHandler$private fun showPlayerCustomShortcutsDialog(sectionIndex: Int, focusId: SettingId)</ID>
+    <ID>CyclomaticComplexMethod:SettingsInteractionHandler.kt$SettingsInteractionHandler$private fun ensureTestUpdateChecked( force: Boolean, refreshUi: Boolean = true, promptIfUpdate: Boolean = false, )</ID>
+    <ID>CyclomaticComplexMethod:SettingsInteractionHandler.kt$SettingsInteractionHandler$private fun showCustomPageContentDialog( sectionIndex: Int, focusId: SettingId, )</ID>
+    <ID>CyclomaticComplexMethod:SettingsInteractionHandler.kt$SettingsInteractionHandler$private fun showPlayerCustomShortcutsDialog( sectionIndex: Int, focusId: SettingId, )</ID>
     <ID>CyclomaticComplexMethod:SettingsRenderer.kt$SettingsRenderer$private fun buildEntriesForSection(sectionName: String?): List&lt;SettingEntry&gt;</ID>
     <ID>CyclomaticComplexMethod:SettingsText.kt$SettingsText$fun downKeyOsdFocusTargetText(code: String): String</ID>
     <ID>CyclomaticComplexMethod:SettingsText.kt$SettingsText$fun playerOsdButtonsText(buttons: List&lt;String&gt;): String</ID>
@@ -215,9 +215,9 @@
     <ID>CyclomaticComplexMethod:UpDetailActivity.kt$UpDetailActivity$override fun dispatchKeyEvent(event: KeyEvent): Boolean</ID>
     <ID>CyclomaticComplexMethod:UpDetailActivity.kt$UpDetailActivity$private fun loadHeader()</ID>
     <ID>CyclomaticComplexMethod:UpDetailActivity.kt$UpDetailActivity$private fun loadMoreSeasonsSeries(isRefresh: Boolean = false)</ID>
-    <ID>CyclomaticComplexMethod:UpDetailActivity.kt$UpDetailActivity$private fun loadMoreSectionVideos(section: UpDetailSection, state: SectionPagingState)</ID>
+    <ID>CyclomaticComplexMethod:UpDetailActivity.kt$UpDetailActivity$private fun loadMoreSectionVideos( section: UpDetailSection, state: SectionPagingState, )</ID>
     <ID>CyclomaticComplexMethod:UserInfoDialogFragment.kt$UserInfoDialogFragment$private fun load()</ID>
-    <ID>CyclomaticComplexMethod:UserScaleTabLayout.kt$UserScaleTabLayout$private fun updateUserScaleTabTextView(view: android.view.View, expectedPx: Float? = null): Boolean</ID>
+    <ID>CyclomaticComplexMethod:UserScaleTabLayout.kt$UserScaleTabLayout$private fun updateUserScaleTabTextView( view: android.view.View, expectedPx: Float? = null, ): Boolean</ID>
     <ID>CyclomaticComplexMethod:VideoCardAdapter.kt$VideoCardAdapter.Vh$fun bind( item: VideoCard, position: Int, isSelected: ((VideoCard, Int) -&gt; Boolean)?, overlayUi: ActionOverlayUi?, actionDelegate: VideoCardActionDelegate?, )</ID>
     <ID>CyclomaticComplexMethod:VideoCardAdapter.kt$VideoCardAdapter.Vh$private fun bindActionOverlay( item: VideoCard, overlayUi: ActionOverlayUi?, actionDelegate: VideoCardActionDelegate?, )</ID>
     <ID>CyclomaticComplexMethod:VideoDetailActivity.kt$VideoDetailActivity$private fun load(prefetchedDetail: VideoDetail? = null)</ID>
@@ -229,6 +229,7 @@
     <ID>CyclomaticComplexMethod:VolumeBalanceAudioProcessor.kt$VolumeBalanceAudioProcessor$override fun queueInput(inputBuffer: ByteBuffer)</ID>
     <ID>CyclomaticComplexMethod:VolumeBalanceAudioProcessor.kt$VolumeBalanceAudioProcessor.Companion$private fun paramsFor(level: AudioBalanceLevel): Params</ID>
     <ID>CyclomaticComplexMethod:WebVideoMapper.kt$WebVideoMapper$private fun parseVideoCard( obj: JSONObject, index: Int, ): VideoCard?</ID>
+    <ID>EmptyCatchBlock:PlayerActivitySleepTimer.kt${ }</ID>
     <ID>EmptyFunctionBlock:PlayerActivityAutoQuality.kt$PlayerActivityAutoQuality${}</ID>
     <ID>EmptyFunctionBlock:PlayerActivityCastDelay.kt$PlayerActivityCastDelay${}</ID>
     <ID>EmptyFunctionBlock:PlayerActivityDanmakuExport.kt$PlayerActivityDanmakuExport${}</ID>
@@ -328,7 +329,7 @@
     <ID>LongMethod:DanmakuEngine.kt$DanmakuEngine$override fun act()</ID>
     <ID>LongMethod:DanmakuPlayer.kt$DanmakuPlayer.ActionHandler$override fun handleMessage(msg: Message)</ID>
     <ID>LongMethod:DashLocalHttpProxy.kt$DashLocalHttpProxy$private fun handleClient(socket: Socket)</ID>
-    <ID>LongMethod:DynamicFragment.kt$DynamicFragment$override fun onViewCreated(view: View, savedInstanceState: Bundle?)</ID>
+    <ID>LongMethod:DynamicFragment.kt$DynamicFragment$override fun onViewCreated( view: View, savedInstanceState: Bundle?, )</ID>
     <ID>LongMethod:ExoPlayerEngine.kt$private fun parseLiveHlsDebugInfo(text: String): LiveHlsDebugInfo?</ID>
     <ID>LongMethod:GaiaVgateActivity.kt$GaiaVgateActivity$@SuppressLint("SetJavaScriptEnabled") override fun onCreate(savedInstanceState: Bundle?)</ID>
     <ID>LongMethod:IjkPlayerEngine.kt$IjkPlayerEngine$override fun setSource(source: PlaybackSource)</ID>
@@ -346,6 +347,7 @@
     <ID>LongMethod:PlayerActivity.kt$PlayerActivity$internal fun requestDanmakuSegmentsForPosition( positionMs: Long, immediate: Boolean, )</ID>
     <ID>LongMethod:PlayerActivity.kt$PlayerActivity$override fun dispatchKeyEvent(event: KeyEvent): Boolean</ID>
     <ID>LongMethod:PlayerActivity.kt$PlayerActivity$override fun onCreate(savedInstanceState: Bundle?)</ID>
+    <ID>LongMethod:PlayerActivity.kt$PlayerActivity$override fun onDestroy()</ID>
     <ID>LongMethod:PlayerActivity.kt$PlayerActivity$private fun initControls(engine: BlblPlayerEngine)</ID>
     <ID>LongMethod:PlayerActivity.kt$PlayerActivity$private fun showSendVideoDanmakuDialog()</ID>
     <ID>LongMethod:PlayerActivity.kt$PlayerActivity$private suspend fun pickPlayable( stream: VideoPlayStream, constraints: PlaybackConstraints, ): Playable</ID>
@@ -374,19 +376,19 @@
     <ID>LongMethod:PopupHost.kt$PopupHost$fun showModal( title: CharSequence?, contentView: View, cancelable: Boolean, actions: List&lt;PopupAction&gt;, preferredActionRole: PopupActionRole? = PopupActionRole.POSITIVE, autoFocus: Boolean = true, onModalAttached: ((modalRoot: View) -&gt; Unit)? = null, onDismiss: (() -&gt; Unit)? = null, onRestoreFocus: (() -&gt; Boolean)? = null, ): PopupHandle</ID>
     <ID>LongMethod:QrLoginActivity.kt$QrLoginActivity$private fun poll(key: String): Job</ID>
     <ID>LongMethod:RegionDetailActivity.kt$RegionDetailActivity$override fun onCreate(savedInstanceState: Bundle?)</ID>
-    <ID>LongMethod:SearchInteractor.kt$SearchInteractor$fun loadNextPage(isRefresh: Boolean = false, refreshToken: Int = state.refreshUiToken)</ID>
+    <ID>LongMethod:SearchInteractor.kt$SearchInteractor$fun loadNextPage( isRefresh: Boolean = false, refreshToken: Int = state.refreshUiToken, )</ID>
     <ID>LongMethod:SettingsInteractionHandler.kt$SettingsInteractionHandler$fun onEntryClicked(entry: SettingEntry)</ID>
     <ID>LongMethod:SettingsInteractionHandler.kt$SettingsInteractionHandler.Controller$fun showManager(focusKeyCode: Int? = null)</ID>
     <ID>LongMethod:SettingsInteractionHandler.kt$SettingsInteractionHandler.Controller$fun showManager(focusStableKey: String? = null)</ID>
     <ID>LongMethod:SettingsRenderer.kt$SettingsRenderer$private fun buildEntriesForSection(sectionName: String?): List&lt;SettingEntry&gt;</ID>
     <ID>LongMethod:TagDetailActivity.kt$TagDetailActivity$override fun onCreate(savedInstanceState: Bundle?)</ID>
-    <ID>LongMethod:UpDetailActivity.kt$UpDetailActivity$private fun loadMoreSectionVideos(section: UpDetailSection, state: SectionPagingState)</ID>
+    <ID>LongMethod:UpDetailActivity.kt$UpDetailActivity$private fun loadMoreSectionVideos( section: UpDetailSection, state: SectionPagingState, )</ID>
     <ID>LongMethod:VideoCardAdapter.kt$VideoCardAdapter.Vh$fun bind( item: VideoCard, position: Int, isSelected: ((VideoCard, Int) -&gt; Boolean)?, overlayUi: ActionOverlayUi?, actionDelegate: VideoCardActionDelegate?, )</ID>
     <ID>LongMethod:VideoCardAdapter.kt$VideoCardAdapter.Vh$private fun bindActionOverlay( item: VideoCard, overlayUi: ActionOverlayUi?, actionDelegate: VideoCardActionDelegate?, )</ID>
     <ID>LongMethod:VideoDetailActivity.kt$VideoDetailActivity$private fun initUi()</ID>
     <ID>LongMethod:VideoDetailActivity.kt$VideoDetailActivity$private fun load(prefetchedDetail: VideoDetail? = null)</ID>
     <ID>LongMethod:VideoDetailHeaderAdapter.kt$VideoDetailHeaderAdapter.Vh$fun bind( title: String?, metaText: String?, desc: String?, descExpanded: Boolean, coverUrl: String?, accessBadgeText: String?, usePosterCover: Boolean, upName: String?, upAvatar: String?, tabName: String?, tags: List&lt;VideoTag&gt;, primaryButtonText: String?, secondaryButtonText: String?, showActions: Boolean, actionLiked: Boolean, actionCoinCount: Int, actionFavored: Boolean, partsHeaderText: String?, partsCards: List&lt;VideoCard&gt;, partsSelectedKey: String?, partsOrderReversed: Boolean, partsAutoScrollToSelected: Boolean, partsScrollToStart: Boolean, seasonHeaderText: String?, seasonCards: List&lt;VideoCard&gt;, seasonSelectedKey: String?, seasonOrderReversed: Boolean, seasonAutoScrollToSelected: Boolean, seasonScrollToStart: Boolean, recommendHeaderText: String?, )</ID>
-    <ID>LongMethod:VideoGridFragment.kt$VideoGridFragment$override fun onViewCreated(view: View, savedInstanceState: Bundle?)</ID>
+    <ID>LongMethod:VideoGridFragment.kt$VideoGridFragment$override fun onViewCreated( view: View, savedInstanceState: Bundle?, )</ID>
     <ID>LongMethod:VolumeBalanceAudioProcessor.kt$VolumeBalanceAudioProcessor$override fun queueInput(inputBuffer: ByteBuffer)</ID>
     <ID>LongParameterList:AppPopup.kt$AppPopup$( context: Context, title: CharSequence, initial: String, hint: CharSequence? = null, inputType: Int = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_VARIATION_NORMAL, minLines: Int = 1, positiveText: CharSequence = "保存", negativeText: CharSequence = "取消", neutralText: CharSequence? = null, cancelable: Boolean = true, onPositive: (text: String) -&gt; Unit, onNegative: (() -&gt; Unit)? = null, onNeutral: (() -&gt; Unit)? = null, validate: ((text: String) -&gt; Boolean)? = null, onDismiss: (() -&gt; Unit)? = null, )</ID>
     <ID>LongParameterList:AppPopup.kt$AppPopup$( context: Context, title: CharSequence, items: List&lt;String&gt;, checked: BooleanArray, cancelable: Boolean = true, minCheckedCount: Int = 0, onChanged: (checked: BooleanArray) -&gt; Unit, onDismiss: (() -&gt; Unit)? = null, )</ID>
@@ -450,7 +452,6 @@
     <ID>LoopWithTooManyJumpStatements:WebVideoMapper.kt$WebVideoMapper$for</ID>
     <ID>MagicNumber:ApkUpdateFlow.kt$ApkUpdateFlow$1.05f</ID>
     <ID>MagicNumber:ApkUpdateFlow.kt$ApkUpdateFlow$18f</ID>
-    <ID>MagicNumber:ApkUpdater.kt$ApkUpdater$200</ID>
     <ID>MagicNumber:ApkUpdater.kt$ApkUpdater$400L</ID>
     <ID>MagicNumber:AppLog.kt$AppLog$30_000L</ID>
     <ID>MagicNumber:AppLog.kt$AppLog$512</ID>
@@ -459,7 +460,6 @@
     <ID>MagicNumber:AppPrefs.kt$AppPrefs$10f</ID>
     <ID>MagicNumber:AppPrefs.kt$AppPrefs$26f</ID>
     <ID>MagicNumber:AppPrefs.kt$AppPrefs$6</ID>
-    <ID>MagicNumber:AppPrefs.kt$AppPrefs$60f</ID>
     <ID>MagicNumber:AppPrefs.kt$AppPrefs.Companion$12</ID>
     <ID>MagicNumber:AppPrefs.kt$AppPrefs.Companion$22</ID>
     <ID>MagicNumber:AppPrefs.kt$AppPrefs.Companion$30</ID>
@@ -467,11 +467,8 @@
     <ID>MagicNumber:AppSigner.kt$AppSigner$0xFF</ID>
     <ID>MagicNumber:AppToast.kt$AppToast$0.70f</ID>
     <ID>MagicNumber:AppToast.kt$AppToast$12f</ID>
-    <ID>MagicNumber:AppToast.kt$AppToast$200f</ID>
     <ID>MagicNumber:AppVideoMapper.kt$AppVideoMapper$100_000_000</ID>
     <ID>MagicNumber:AppVideoMapper.kt$AppVideoMapper$10_000</ID>
-    <ID>MagicNumber:AppVideoMapper.kt$AppVideoMapper$3600</ID>
-    <ID>MagicNumber:AppVideoMapper.kt$AppVideoMapper$60</ID>
     <ID>MagicNumber:ArchiveTripleAction.kt$34005</ID>
     <ID>MagicNumber:ArchiveTripleAction.kt$65006</ID>
     <ID>MagicNumber:BangumiDetailActivity.kt$BangumiDetailActivity$5_000L</ID>
@@ -482,20 +479,16 @@
     <ID>MagicNumber:BiliApi.kt$BiliApi$20</ID>
     <ID>MagicNumber:BiliApi.kt$BiliApi$256</ID>
     <ID>MagicNumber:BiliApi.kt$BiliApi$30</ID>
-    <ID>MagicNumber:BiliApi.kt$BiliApi$3600</ID>
     <ID>MagicNumber:BiliApi.kt$BiliApi$50</ID>
     <ID>MagicNumber:BiliApi.kt$BiliApi$58L</ID>
     <ID>MagicNumber:BiliApi.kt$BiliApi$6</ID>
-    <ID>MagicNumber:BiliApi.kt$BiliApi$60</ID>
     <ID>MagicNumber:BiliApi.kt$BiliApi$7</ID>
     <ID>MagicNumber:BiliClient.kt$BiliClient$12</ID>
     <ID>MagicNumber:BiliClient.kt$BiliClient$1_000_000</ID>
     <ID>MagicNumber:BiliClient.kt$BiliClient$20</ID>
-    <ID>MagicNumber:BiliClient.kt$BiliClient$200</ID>
     <ID>MagicNumber:BiliClient.kt$BiliClient$443</ID>
     <ID>MagicNumber:BiliClient.kt$BiliClient$48</ID>
     <ID>MagicNumber:BiliClient.kt$BiliClient$6</ID>
-    <ID>MagicNumber:BiliClient.kt$BiliClient$60</ID>
     <ID>MagicNumber:BiliClient.kt$BiliClient$80</ID>
     <ID>MagicNumber:CacheManager.kt$CacheManager$0.01f</ID>
     <ID>MagicNumber:CacheManager.kt$CacheManager$0.14f</ID>
@@ -559,32 +552,21 @@
     <ID>MagicNumber:DashLocalHttpProxy.kt$DashLocalHttpProxy$15_000</ID>
     <ID>MagicNumber:DashLocalHttpProxy.kt$DashLocalHttpProxy$206</ID>
     <ID>MagicNumber:DashLocalHttpProxy.kt$DashLocalHttpProxy$50</ID>
-    <ID>MagicNumber:DashLocalHttpProxy.kt$DashLocalHttpProxy$800</ID>
     <ID>MagicNumber:DashLocalHttpProxy.kt$DashLocalHttpProxy$96</ID>
-    <ID>MagicNumber:DlnaHelper.kt$DlnaHelper$3600</ID>
     <ID>MagicNumber:DlnaHelper.kt$DlnaHelper$4096</ID>
-    <ID>MagicNumber:DlnaHelper.kt$DlnaHelper$60</ID>
     <ID>MagicNumber:DocumentExporter.kt$DocumentExporter$20</ID>
     <ID>MagicNumber:DocumentExporter.kt$DocumentExporter$96</ID>
     <ID>MagicNumber:DownloadListFragment.kt$DownloadListFragment.DownloadAdapter$0.7f</ID>
     <ID>MagicNumber:DynamicFragment.kt$DynamicFragment.&lt;no name provided&gt;$6</ID>
     <ID>MagicNumber:EmoteSpannable.kt$EmoteSpannable.EmoteDrawable$255</ID>
     <ID>MagicNumber:FollowingListActivity.kt$FollowingListActivity.&lt;no name provided&gt;$12</ID>
-    <ID>MagicNumber:FollowingSpanCount.kt$14</ID>
     <ID>MagicNumber:Format.kt$Format$100_000_000</ID>
     <ID>MagicNumber:Format.kt$Format$100_000_000.0</ID>
     <ID>MagicNumber:Format.kt$Format$10_000</ID>
     <ID>MagicNumber:Format.kt$Format$10_000.0</ID>
-    <ID>MagicNumber:Format.kt$Format$3600</ID>
-    <ID>MagicNumber:Format.kt$Format$3600L</ID>
     <ID>MagicNumber:Format.kt$Format$3_600_000L</ID>
-    <ID>MagicNumber:Format.kt$Format$60</ID>
-    <ID>MagicNumber:Format.kt$Format$60L</ID>
-    <ID>MagicNumber:Format.kt$Format$60_000L</ID>
     <ID>MagicNumber:Format.kt$Format$86_400_000L</ID>
     <ID>MagicNumber:GaiaVgateActivity.kt$GaiaVgateActivity$6</ID>
-    <ID>MagicNumber:GridSpanPolicy.kt$GridSpanPolicy$1100f</ID>
-    <ID>MagicNumber:GridSpanPolicy.kt$GridSpanPolicy$800f</ID>
     <ID>MagicNumber:HoldProgressImageButton.kt$HoldProgressRingRenderer$90f</ID>
     <ID>MagicNumber:HomeFragment.kt$HomeFragment$30</ID>
     <ID>MagicNumber:IjkPlayerEngine.kt$IjkPlayerEngine$0.25f</ID>
@@ -592,12 +574,10 @@
     <ID>MagicNumber:IjkPlayerEngine.kt$IjkPlayerEngine$20_000_000L</ID>
     <ID>MagicNumber:IjkPlayerEngine.kt$IjkPlayerEngine$220</ID>
     <ID>MagicNumber:IjkPlayerEngine.kt$IjkPlayerEngine$400</ID>
-    <ID>MagicNumber:IjkPlayerPlugin.kt$IjkPlayerPlugin$200</ID>
     <ID>MagicNumber:IjkPlayerPlugin.kt$IjkPlayerPlugin$512</ID>
     <ID>MagicNumber:LiveApi.kt$LiveApi$10</ID>
     <ID>MagicNumber:LiveApi.kt$LiveApi$100_000_000.0</ID>
     <ID>MagicNumber:LiveApi.kt$LiveApi$10_000.0</ID>
-    <ID>MagicNumber:LiveApi.kt$LiveApi$60</ID>
     <ID>MagicNumber:LiveAreaDetailFragment.kt$LiveAreaDetailFragment$30</ID>
     <ID>MagicNumber:LiveAreaDetailFragment.kt$LiveAreaDetailFragment$6</ID>
     <ID>MagicNumber:LiveFragment.kt$LiveFragment$30</ID>
@@ -637,16 +617,11 @@
     <ID>MagicNumber:LivePlayerActivity.kt$LivePlayerActivity$500</ID>
     <ID>MagicNumber:LivePlayerActivity.kt$LivePlayerActivity$520f</ID>
     <ID>MagicNumber:LivePlayerActivity.kt$LivePlayerActivity$6</ID>
-    <ID>MagicNumber:LivePlayerActivity.kt$LivePlayerActivity$60</ID>
-    <ID>MagicNumber:LivePlayerActivity.kt$LivePlayerActivity$60f</ID>
     <ID>MagicNumber:LivePlayerActivity.kt$LivePlayerActivity$6f</ID>
     <ID>MagicNumber:LivePlayerActivity.kt$LivePlayerActivity$80</ID>
-    <ID>MagicNumber:LivePlayerActivity.kt$LivePlayerActivity.&lt;no name provided&gt;$60_000L</ID>
-    <ID>MagicNumber:LiveReminder.kt$LiveReminder$60_000</ID>
     <ID>MagicNumber:LiveRoomAdapter.kt$LiveRoomAdapter.Vh$0.2f</ID>
     <ID>MagicNumber:LogExporter.kt$LogExporter$256</ID>
     <ID>MagicNumber:LogExporter.kt$LogExporter$96</ID>
-    <ID>MagicNumber:LogUploadClient.kt$LogUploadClient$200</ID>
     <ID>MagicNumber:LogUploadClient.kt$LogUploadClient$96</ID>
     <ID>MagicNumber:MainActivity.kt$MainActivity$120L</ID>
     <ID>MagicNumber:MyBangumiFollowFragment.kt$MyBangumiFollowFragment$6</ID>
@@ -686,9 +661,7 @@
     <ID>MagicNumber:PlayerActivity.kt$PlayerActivity$5000</ID>
     <ID>MagicNumber:PlayerActivity.kt$PlayerActivity$512</ID>
     <ID>MagicNumber:PlayerActivity.kt$PlayerActivity$6</ID>
-    <ID>MagicNumber:PlayerActivity.kt$PlayerActivity$600L</ID>
     <ID>MagicNumber:PlayerActivity.kt$PlayerActivity$600_000L</ID>
-    <ID>MagicNumber:PlayerActivity.kt$PlayerActivity$60_000L</ID>
     <ID>MagicNumber:PlayerActivity.kt$PlayerActivity$7</ID>
     <ID>MagicNumber:PlayerActivity.kt$PlayerActivity.&lt;no name provided&gt;$112</ID>
     <ID>MagicNumber:PlayerActivity.kt$PlayerActivity.&lt;no name provided&gt;$116</ID>
@@ -700,15 +673,11 @@
     <ID>MagicNumber:PlayerActivity.kt$PlayerActivity.&lt;no name provided&gt;$1_073_741_824.0</ID>
     <ID>MagicNumber:PlayerActivity.kt$PlayerActivity.&lt;no name provided&gt;$500L</ID>
     <ID>MagicNumber:PlayerActivity.kt$PlayerActivity.&lt;no name provided&gt;$6</ID>
-    <ID>MagicNumber:PlayerActivity.kt$PlayerActivity.&lt;no name provided&gt;$60_000L</ID>
     <ID>MagicNumber:PlayerActivity.kt$PlayerActivity.&lt;no name provided&gt;$7</ID>
     <ID>MagicNumber:PlayerActivity.kt$PlayerActivity.&lt;no name provided&gt;$74</ID>
     <ID>MagicNumber:PlayerActivity.kt$PlayerActivity.&lt;no name provided&gt;$80</ID>
     <ID>MagicNumber:PlayerActivity.kt$PlayerActivity.&lt;no name provided&gt;$8000L</ID>
-    <ID>MagicNumber:PlayerActivityAbRepeat.kt$3600</ID>
-    <ID>MagicNumber:PlayerActivityAbRepeat.kt$60</ID>
     <ID>MagicNumber:PlayerActivityAnnotation.kt$12f</ID>
-    <ID>MagicNumber:PlayerActivityAnnotation.kt$14f</ID>
     <ID>MagicNumber:PlayerActivityAutoSkip.kt$0.01f</ID>
     <ID>MagicNumber:PlayerActivityAutoSkip.kt$10_000L</ID>
     <ID>MagicNumber:PlayerActivityAutoSkip.kt$30_000L</ID>
@@ -719,7 +688,6 @@
     <ID>MagicNumber:PlayerActivityBattery.kt$&lt;no name provided&gt;$50</ID>
     <ID>MagicNumber:PlayerActivityBattery.kt$&lt;no name provided&gt;$80</ID>
     <ID>MagicNumber:PlayerActivityCast.kt$0.6f</ID>
-    <ID>MagicNumber:PlayerActivityCast.kt$14f</ID>
     <ID>MagicNumber:PlayerActivityCast.kt$2000L</ID>
     <ID>MagicNumber:PlayerActivityCast.kt$30</ID>
     <ID>MagicNumber:PlayerActivityCast.kt$3000</ID>
@@ -730,13 +698,8 @@
     <ID>MagicNumber:PlayerActivityCastDelay.kt$PlayerActivityCastDelay$500L</ID>
     <ID>MagicNumber:PlayerActivityControlsSeek.kt$1.5f</ID>
     <ID>MagicNumber:PlayerActivityControlsSeek.kt$250</ID>
-    <ID>MagicNumber:PlayerActivityCountdown.kt$14f</ID>
-    <ID>MagicNumber:PlayerActivityCountdown.kt$3600</ID>
-    <ID>MagicNumber:PlayerActivityCountdown.kt$60</ID>
     <ID>MagicNumber:PlayerActivityCustomWatermark.kt$10f</ID>
     <ID>MagicNumber:PlayerActivityCustomWatermark.kt$12f</ID>
-    <ID>MagicNumber:PlayerActivityCustomWatermark.kt$14f</ID>
-    <ID>MagicNumber:PlayerActivityCustomWatermark.kt$200</ID>
     <ID>MagicNumber:PlayerActivityCustomWatermark.kt$48</ID>
     <ID>MagicNumber:PlayerActivityDanmakuHistory.kt$50</ID>
     <ID>MagicNumber:PlayerActivityDebug.kt$0.05f</ID>
@@ -756,14 +719,12 @@
     <ID>MagicNumber:PlayerActivityEyeProtection.kt$0x44</ID>
     <ID>MagicNumber:PlayerActivityEyeProtection.kt$0x66</ID>
     <ID>MagicNumber:PlayerActivityGestureCustom.kt$10000</ID>
-    <ID>MagicNumber:PlayerActivityGestureCustom.kt$14f</ID>
     <ID>MagicNumber:PlayerActivityGestureCustom.kt$30000</ID>
     <ID>MagicNumber:PlayerActivityGestureCustom.kt$48</ID>
     <ID>MagicNumber:PlayerActivityGestureCustom.kt$90</ID>
     <ID>MagicNumber:PlayerActivityInfoPanel.kt$10</ID>
     <ID>MagicNumber:PlayerActivityInfoPanel.kt$6</ID>
     <ID>MagicNumber:PlayerActivityNetworkSpeed.kt$1_000_000.0</ID>
-    <ID>MagicNumber:PlayerActivityNetworkSpeed.kt$60000</ID>
     <ID>MagicNumber:PlayerActivityPercentage.kt$12</ID>
     <ID>MagicNumber:PlayerActivityPercentage.kt$12f</ID>
     <ID>MagicNumber:PlayerActivityPercentage.kt$160</ID>
@@ -774,13 +735,10 @@
     <ID>MagicNumber:PlayerActivityPip.kt$9</ID>
     <ID>MagicNumber:PlayerActivityQuickAdjust.kt$0.8f</ID>
     <ID>MagicNumber:PlayerActivityQuickAdjust.kt$12</ID>
-    <ID>MagicNumber:PlayerActivityQuickAdjust.kt$14f</ID>
     <ID>MagicNumber:PlayerActivityQuickAdjust.kt$150</ID>
-    <ID>MagicNumber:PlayerActivityQuickAdjust.kt$200</ID>
     <ID>MagicNumber:PlayerActivityQuickPanel.kt$0.8f</ID>
     <ID>MagicNumber:PlayerActivityQuickPanel.kt$13f</ID>
     <ID>MagicNumber:PlayerActivityQuickPanel.kt$150</ID>
-    <ID>MagicNumber:PlayerActivityQuickPanel.kt$200</ID>
     <ID>MagicNumber:PlayerActivityQuickPanel.kt$90</ID>
     <ID>MagicNumber:PlayerActivityQuickSettings.kt$0.01f</ID>
     <ID>MagicNumber:PlayerActivityQuickSettings.kt$0.5f</ID>
@@ -792,8 +750,6 @@
     <ID>MagicNumber:PlayerActivityQuickSettings.kt$120</ID>
     <ID>MagicNumber:PlayerActivityQuickSettings.kt$127</ID>
     <ID>MagicNumber:PlayerActivityQuickSettings.kt$12f</ID>
-    <ID>MagicNumber:PlayerActivityQuickSettings.kt$14</ID>
-    <ID>MagicNumber:PlayerActivityQuickSettings.kt$14f</ID>
     <ID>MagicNumber:PlayerActivityQuickSettings.kt$15f</ID>
     <ID>MagicNumber:PlayerActivityQuickSettings.kt$18f</ID>
     <ID>MagicNumber:PlayerActivityQuickSettings.kt$20</ID>
@@ -808,18 +764,13 @@
     <ID>MagicNumber:PlayerActivityQuickSpeed.kt$12</ID>
     <ID>MagicNumber:PlayerActivityQuickSpeed.kt$120</ID>
     <ID>MagicNumber:PlayerActivityQuickSpeed.kt$12f</ID>
-    <ID>MagicNumber:PlayerActivityQuickSpeed.kt$14f</ID>
     <ID>MagicNumber:PlayerActivityQuickSpeed.kt$150</ID>
-    <ID>MagicNumber:PlayerActivityQuickSpeed.kt$200</ID>
     <ID>MagicNumber:PlayerActivityQuickSpeed.kt$50f</ID>
-    <ID>MagicNumber:PlayerActivityScreenshot.kt$200</ID>
     <ID>MagicNumber:PlayerActivityScreenshot.kt$20f</ID>
     <ID>MagicNumber:PlayerActivityScreenshot.kt$240</ID>
     <ID>MagicNumber:PlayerActivityScreenshot.kt$3000L</ID>
     <ID>MagicNumber:PlayerActivityScreenshot.kt$30f</ID>
-    <ID>MagicNumber:PlayerActivityScreenshot.kt$3600</ID>
     <ID>MagicNumber:PlayerActivityScreenshot.kt$40</ID>
-    <ID>MagicNumber:PlayerActivityScreenshot.kt$60</ID>
     <ID>MagicNumber:PlayerActivityScreenshot.kt$95</ID>
     <ID>MagicNumber:PlayerActivitySidePanels.kt$48</ID>
     <ID>MagicNumber:PlayerActivitySidePanels.kt$6</ID>
@@ -846,7 +797,6 @@
     <ID>MagicNumber:PlayerActivitySponsorSubmit.kt$50L</ID>
     <ID>MagicNumber:PlayerActivitySponsorSubmit.kt$9</ID>
     <ID>MagicNumber:PlayerActivityStartPlayback.kt$0xFFFF</ID>
-    <ID>MagicNumber:PlayerActivityStartPlayback.kt$200</ID>
     <ID>MagicNumber:PlayerActivityStartPlayback.kt$3000</ID>
     <ID>MagicNumber:PlayerActivityStartPlayback.kt$350</ID>
     <ID>MagicNumber:PlayerActivityStartPlayback.kt$352</ID>
@@ -856,12 +806,9 @@
     <ID>MagicNumber:PlayerActivityTouch.kt$PlayerTouchController$0.5f</ID>
     <ID>MagicNumber:PlayerActivityTouch.kt$PlayerTouchController$150</ID>
     <ID>MagicNumber:PlayerActivityTouch.kt$PlayerTouchController$255f</ID>
-    <ID>MagicNumber:PlayerActivityVideoColor.kt$14f</ID>
-    <ID>MagicNumber:PlayerActivityVideoColor.kt$200</ID>
     <ID>MagicNumber:PlayerActivityVideoColor.kt$255f</ID>
     <ID>MagicNumber:PlayerActivityVideoColor.kt$48</ID>
     <ID>MagicNumber:PlayerActivityVideoColor.kt$&lt;no name provided&gt;$255f</ID>
-    <ID>MagicNumber:PlayerActivityVideoCrop.kt$14f</ID>
     <ID>MagicNumber:PlayerActivityVideoCrop.kt$48</ID>
     <ID>MagicNumber:PlayerActivityVideoCrop.kt$50</ID>
     <ID>MagicNumber:PlayerActivityVideoFilter.kt$VideoFilterPreset.COOL$0.8f</ID>
@@ -898,21 +845,14 @@
     <ID>MagicNumber:PlayerActivityVideoQuality.kt$2160</ID>
     <ID>MagicNumber:PlayerActivityVideoQuality.kt$480</ID>
     <ID>MagicNumber:PlayerActivityVideoSharpen.kt$0.1f</ID>
-    <ID>MagicNumber:PlayerActivityVideoSharpen.kt$14f</ID>
-    <ID>MagicNumber:PlayerActivityVideoSharpen.kt$200</ID>
     <ID>MagicNumber:PlayerActivityVideoSharpen.kt$25f</ID>
     <ID>MagicNumber:PlayerActivityVideoSharpen.kt$48</ID>
     <ID>MagicNumber:PlayerActivityVideoTemperature.kt$0.05f</ID>
     <ID>MagicNumber:PlayerActivityVideoTemperature.kt$0.3f</ID>
-    <ID>MagicNumber:PlayerActivityVideoTemperature.kt$14f</ID>
-    <ID>MagicNumber:PlayerActivityVideoTemperature.kt$200</ID>
     <ID>MagicNumber:PlayerActivityVideoTemperature.kt$48</ID>
     <ID>MagicNumber:PlayerActivityVignette.kt$0.5f</ID>
-    <ID>MagicNumber:PlayerActivityVignette.kt$14f</ID>
     <ID>MagicNumber:PlayerActivityVignette.kt$2.55</ID>
-    <ID>MagicNumber:PlayerActivityVignette.kt$200f</ID>
     <ID>MagicNumber:PlayerActivityVignette.kt$48</ID>
-    <ID>MagicNumber:PlayerActivityWatchTime.kt$60_000L</ID>
     <ID>MagicNumber:PlayerCommentImageView.kt$PlayerCommentImageView$0.0001f</ID>
     <ID>MagicNumber:PlayerCommentImageView.kt$PlayerCommentImageView$0.5f</ID>
     <ID>MagicNumber:PlayerCommentsAdapter.kt$PlayerCommentsAdapter.Vh$10</ID>
@@ -923,12 +863,10 @@
     <ID>MagicNumber:PlayerCustomShortcutCatalog.kt$PlayerCustomShortcutCatalog$20</ID>
     <ID>MagicNumber:PlayerCustomShortcutCatalog.kt$PlayerCustomShortcutCatalog$20f</ID>
     <ID>MagicNumber:PlayerCustomShortcutCatalog.kt$PlayerCustomShortcutCatalog$26f</ID>
-    <ID>MagicNumber:PlayerCustomShortcutCatalog.kt$PlayerCustomShortcutCatalog$60</ID>
     <ID>MagicNumber:PlayerCustomShortcuts.kt$PlayerCustomShortcutsStore$0.05f</ID>
     <ID>MagicNumber:PlayerCustomShortcuts.kt$PlayerCustomShortcutsStore$0.25f</ID>
     <ID>MagicNumber:PlayerCustomShortcuts.kt$PlayerCustomShortcutsStore$10</ID>
     <ID>MagicNumber:PlayerCustomShortcuts.kt$PlayerCustomShortcutsStore$10f</ID>
-    <ID>MagicNumber:PlayerCustomShortcuts.kt$PlayerCustomShortcutsStore$60f</ID>
     <ID>MagicNumber:PlayerCustomShortcutsExecutor.kt$0.0001f</ID>
     <ID>MagicNumber:PlayerCustomShortcutsExecutor.kt$0.05f</ID>
     <ID>MagicNumber:PlayerCustomShortcutsExecutor.kt$0.25f</ID>
@@ -936,14 +874,12 @@
     <ID>MagicNumber:PlayerCustomShortcutsExecutor.kt$10f</ID>
     <ID>MagicNumber:PlayerCustomShortcutsExecutor.kt$18f</ID>
     <ID>MagicNumber:PlayerCustomShortcutsExecutor.kt$26f</ID>
-    <ID>MagicNumber:PlayerCustomShortcutsExecutor.kt$60f</ID>
     <ID>MagicNumber:PlayerModels.kt$0.05f</ID>
     <ID>MagicNumber:PlayerModels.kt$0.25f</ID>
     <ID>MagicNumber:PlayerModels.kt$0.30f</ID>
     <ID>MagicNumber:PlayerModels.kt$10</ID>
     <ID>MagicNumber:PlayerModels.kt$10f</ID>
     <ID>MagicNumber:PlayerModels.kt$6</ID>
-    <ID>MagicNumber:PlayerModels.kt$60f</ID>
     <ID>MagicNumber:PlayerSettings.kt$0.01f</ID>
     <ID>MagicNumber:PlayerSettings.kt$0.05f</ID>
     <ID>MagicNumber:PlayerSettings.kt$0.16f</ID>
@@ -977,7 +913,6 @@
     <ID>MagicNumber:PlayerSettings.kt$127</ID>
     <ID>MagicNumber:PlayerSettings.kt$12f</ID>
     <ID>MagicNumber:PlayerSettings.kt$1440</ID>
-    <ID>MagicNumber:PlayerSettings.kt$14f</ID>
     <ID>MagicNumber:PlayerSettings.kt$15</ID>
     <ID>MagicNumber:PlayerSettings.kt$150</ID>
     <ID>MagicNumber:PlayerSettings.kt$1500</ID>
@@ -985,7 +920,6 @@
     <ID>MagicNumber:PlayerSettings.kt$2</ID>
     <ID>MagicNumber:PlayerSettings.kt$2.5f</ID>
     <ID>MagicNumber:PlayerSettings.kt$20</ID>
-    <ID>MagicNumber:PlayerSettings.kt$200</ID>
     <ID>MagicNumber:PlayerSettings.kt$2000</ID>
     <ID>MagicNumber:PlayerSettings.kt$2000L</ID>
     <ID>MagicNumber:PlayerSettings.kt$200L</ID>
@@ -1004,7 +938,6 @@
     <ID>MagicNumber:PlayerSettings.kt$300</ID>
     <ID>MagicNumber:PlayerSettings.kt$3000</ID>
     <ID>MagicNumber:PlayerSettings.kt$34f</ID>
-    <ID>MagicNumber:PlayerSettings.kt$3600</ID>
     <ID>MagicNumber:PlayerSettings.kt$40</ID>
     <ID>MagicNumber:PlayerSettings.kt$40f</ID>
     <ID>MagicNumber:PlayerSettings.kt$45</ID>
@@ -1017,10 +950,6 @@
     <ID>MagicNumber:PlayerSettings.kt$500L</ID>
     <ID>MagicNumber:PlayerSettings.kt$512L</ID>
     <ID>MagicNumber:PlayerSettings.kt$6</ID>
-    <ID>MagicNumber:PlayerSettings.kt$60</ID>
-    <ID>MagicNumber:PlayerSettings.kt$60000</ID>
-    <ID>MagicNumber:PlayerSettings.kt$60_000L</ID>
-    <ID>MagicNumber:PlayerSettings.kt$60f</ID>
     <ID>MagicNumber:PlayerSettings.kt$74</ID>
     <ID>MagicNumber:PlayerSettings.kt$75</ID>
     <ID>MagicNumber:PlayerSettings.kt$80</ID>
@@ -1033,14 +962,12 @@
     <ID>MagicNumber:PlayerSettingsPart11to112.kt$125</ID>
     <ID>MagicNumber:PlayerSettingsPart11to112.kt$150</ID>
     <ID>MagicNumber:PlayerSettingsPart11to112.kt$1500</ID>
-    <ID>MagicNumber:PlayerSettingsPart11to112.kt$200</ID>
     <ID>MagicNumber:PlayerSettingsPart11to112.kt$25</ID>
     <ID>MagicNumber:PlayerSettingsPart11to112.kt$300</ID>
     <ID>MagicNumber:PlayerSettingsPart11to112.kt$50</ID>
     <ID>MagicNumber:PlayerSettingsPart11to112.kt$500</ID>
     <ID>MagicNumber:PlayerSettingsPart11to112.kt$700</ID>
     <ID>MagicNumber:PlayerSettingsPart11to112.kt$75</ID>
-    <ID>MagicNumber:PlayerSettingsPart11to112.kt$800</ID>
     <ID>MagicNumber:PlayerSettingsPart128to130.kt$25</ID>
     <ID>MagicNumber:PlayerSettingsPart128to130.kt$50</ID>
     <ID>MagicNumber:PlayerSettingsPart128to130.kt$75</ID>
@@ -1068,8 +995,6 @@
     <ID>MagicNumber:PlayerSettingsPart197to2.kt$120</ID>
     <ID>MagicNumber:PlayerSettingsPart197to2.kt$13</ID>
     <ID>MagicNumber:PlayerSettingsPart197to2.kt$130</ID>
-    <ID>MagicNumber:PlayerSettingsPart197to2.kt$14</ID>
-    <ID>MagicNumber:PlayerSettingsPart197to2.kt$140</ID>
     <ID>MagicNumber:PlayerSettingsPart197to2.kt$15</ID>
     <ID>MagicNumber:PlayerSettingsPart197to2.kt$150</ID>
     <ID>MagicNumber:PlayerSettingsPart197to2.kt$160</ID>
@@ -1108,15 +1033,12 @@
     <ID>MagicNumber:PlayerSettingsPart197to2.kt$500</ID>
     <ID>MagicNumber:PlayerSettingsPart197to2.kt$5000</ID>
     <ID>MagicNumber:PlayerSettingsPart197to2.kt$6</ID>
-    <ID>MagicNumber:PlayerSettingsPart197to2.kt$60</ID>
-    <ID>MagicNumber:PlayerSettingsPart197to2.kt$600</ID>
     <ID>MagicNumber:PlayerSettingsPart197to2.kt$7</ID>
     <ID>MagicNumber:PlayerSettingsPart197to2.kt$70</ID>
     <ID>MagicNumber:PlayerSettingsPart197to2.kt$700</ID>
     <ID>MagicNumber:PlayerSettingsPart197to2.kt$75</ID>
     <ID>MagicNumber:PlayerSettingsPart197to2.kt$8</ID>
     <ID>MagicNumber:PlayerSettingsPart197to2.kt$80</ID>
-    <ID>MagicNumber:PlayerSettingsPart197to2.kt$800</ID>
     <ID>MagicNumber:PlayerSettingsPart197to2.kt$9</ID>
     <ID>MagicNumber:PlayerSettingsPart197to2.kt$90</ID>
     <ID>MagicNumber:PlayerSettingsPart197to2.kt$900</ID>
@@ -1135,14 +1057,12 @@
     <ID>MagicNumber:PlayerSettingsPart1to101.kt$12</ID>
     <ID>MagicNumber:PlayerSettingsPart1to101.kt$120</ID>
     <ID>MagicNumber:PlayerSettingsPart1to101.kt$125</ID>
-    <ID>MagicNumber:PlayerSettingsPart1to101.kt$14</ID>
     <ID>MagicNumber:PlayerSettingsPart1to101.kt$15</ID>
     <ID>MagicNumber:PlayerSettingsPart1to101.kt$150</ID>
     <ID>MagicNumber:PlayerSettingsPart1to101.kt$1500</ID>
     <ID>MagicNumber:PlayerSettingsPart1to101.kt$180</ID>
     <ID>MagicNumber:PlayerSettingsPart1to101.kt$2</ID>
     <ID>MagicNumber:PlayerSettingsPart1to101.kt$20</ID>
-    <ID>MagicNumber:PlayerSettingsPart1to101.kt$200</ID>
     <ID>MagicNumber:PlayerSettingsPart1to101.kt$2000</ID>
     <ID>MagicNumber:PlayerSettingsPart1to101.kt$25</ID>
     <ID>MagicNumber:PlayerSettingsPart1to101.kt$250</ID>
@@ -1156,13 +1076,11 @@
     <ID>MagicNumber:PlayerSettingsPart1to101.kt$500</ID>
     <ID>MagicNumber:PlayerSettingsPart1to101.kt$5000</ID>
     <ID>MagicNumber:PlayerSettingsPart1to101.kt$6</ID>
-    <ID>MagicNumber:PlayerSettingsPart1to101.kt$60</ID>
     <ID>MagicNumber:PlayerSettingsPart1to101.kt$7</ID>
     <ID>MagicNumber:PlayerSettingsPart1to101.kt$70</ID>
     <ID>MagicNumber:PlayerSettingsPart1to101.kt$75</ID>
     <ID>MagicNumber:PlayerSettingsPart1to101.kt$750</ID>
     <ID>MagicNumber:PlayerSettingsPart1to101.kt$80</ID>
-    <ID>MagicNumber:PlayerSettingsPart1to101.kt$800</ID>
     <ID>MagicNumber:PlayerSettingsPart1to101.kt$90</ID>
     <ID>MagicNumber:PlayerSettingsPart207to21.kt$25</ID>
     <ID>MagicNumber:PlayerSettingsPart207to21.kt$50</ID>
@@ -1196,7 +1114,6 @@
     <ID>MagicNumber:PlayerSettingsPart3to32.kt$125</ID>
     <ID>MagicNumber:PlayerSettingsPart3to32.kt$13</ID>
     <ID>MagicNumber:PlayerSettingsPart3to32.kt$130</ID>
-    <ID>MagicNumber:PlayerSettingsPart3to32.kt$14</ID>
     <ID>MagicNumber:PlayerSettingsPart3to32.kt$15</ID>
     <ID>MagicNumber:PlayerSettingsPart3to32.kt$150</ID>
     <ID>MagicNumber:PlayerSettingsPart3to32.kt$17</ID>
@@ -1208,7 +1125,6 @@
     <ID>MagicNumber:PlayerSettingsPart3to32.kt$200</ID>
     <ID>MagicNumber:PlayerSettingsPart3to32.kt$2000</ID>
     <ID>MagicNumber:PlayerSettingsPart3to32.kt$21</ID>
-    <ID>MagicNumber:PlayerSettingsPart3to32.kt$210</ID>
     <ID>MagicNumber:PlayerSettingsPart3to32.kt$240</ID>
     <ID>MagicNumber:PlayerSettingsPart3to32.kt$25</ID>
     <ID>MagicNumber:PlayerSettingsPart3to32.kt$27</ID>
@@ -1229,7 +1145,6 @@
     <ID>MagicNumber:PlayerSettingsPart3to32.kt$5000</ID>
     <ID>MagicNumber:PlayerSettingsPart3to32.kt$55</ID>
     <ID>MagicNumber:PlayerSettingsPart3to32.kt$6</ID>
-    <ID>MagicNumber:PlayerSettingsPart3to32.kt$60</ID>
     <ID>MagicNumber:PlayerSettingsPart3to32.kt$7</ID>
     <ID>MagicNumber:PlayerSettingsPart3to32.kt$700</ID>
     <ID>MagicNumber:PlayerSettingsPart3to32.kt$75</ID>
@@ -1241,12 +1156,10 @@
     <ID>MagicNumber:PlayerSettingsPart48to50.kt$110</ID>
     <ID>MagicNumber:PlayerSettingsPart48to50.kt$12</ID>
     <ID>MagicNumber:PlayerSettingsPart48to50.kt$120</ID>
-    <ID>MagicNumber:PlayerSettingsPart48to50.kt$14</ID>
     <ID>MagicNumber:PlayerSettingsPart48to50.kt$15</ID>
     <ID>MagicNumber:PlayerSettingsPart48to50.kt$150</ID>
     <ID>MagicNumber:PlayerSettingsPart48to50.kt$2</ID>
     <ID>MagicNumber:PlayerSettingsPart48to50.kt$20</ID>
-    <ID>MagicNumber:PlayerSettingsPart48to50.kt$200</ID>
     <ID>MagicNumber:PlayerSettingsPart48to50.kt$2000</ID>
     <ID>MagicNumber:PlayerSettingsPart48to50.kt$25</ID>
     <ID>MagicNumber:PlayerSettingsPart48to50.kt$250</ID>
@@ -1257,21 +1170,16 @@
     <ID>MagicNumber:PlayerSettingsPart48to50.kt$50</ID>
     <ID>MagicNumber:PlayerSettingsPart48to50.kt$500</ID>
     <ID>MagicNumber:PlayerSettingsPart48to50.kt$6</ID>
-    <ID>MagicNumber:PlayerSettingsPart48to50.kt$60</ID>
-    <ID>MagicNumber:PlayerSettingsPart48to50.kt$600</ID>
     <ID>MagicNumber:PlayerSettingsPart48to50.kt$70</ID>
     <ID>MagicNumber:PlayerSettingsPart48to50.kt$700</ID>
     <ID>MagicNumber:PlayerSettingsPart48to50.kt$75</ID>
     <ID>MagicNumber:PlayerSettingsPart48to50.kt$80</ID>
-    <ID>MagicNumber:PlayerSettingsPart48to50.kt$800</ID>
     <ID>MagicNumber:PlayerSettingsPart48to50.kt$90</ID>
     <ID>MagicNumber:PlayerSettingsPart48to50.kt$900</ID>
     <ID>MagicNumber:PlayerSettingsPart59to61.kt$10</ID>
     <ID>MagicNumber:PlayerSettingsPart59to61.kt$12</ID>
     <ID>MagicNumber:PlayerSettingsPart59to61.kt$120</ID>
     <ID>MagicNumber:PlayerSettingsPart59to61.kt$125</ID>
-    <ID>MagicNumber:PlayerSettingsPart59to61.kt$14</ID>
-    <ID>MagicNumber:PlayerSettingsPart59to61.kt$140</ID>
     <ID>MagicNumber:PlayerSettingsPart59to61.kt$15</ID>
     <ID>MagicNumber:PlayerSettingsPart59to61.kt$150</ID>
     <ID>MagicNumber:PlayerSettingsPart59to61.kt$160</ID>
@@ -1279,7 +1187,6 @@
     <ID>MagicNumber:PlayerSettingsPart59to61.kt$180</ID>
     <ID>MagicNumber:PlayerSettingsPart59to61.kt$2</ID>
     <ID>MagicNumber:PlayerSettingsPart59to61.kt$20</ID>
-    <ID>MagicNumber:PlayerSettingsPart59to61.kt$200</ID>
     <ID>MagicNumber:PlayerSettingsPart59to61.kt$25</ID>
     <ID>MagicNumber:PlayerSettingsPart59to61.kt$250</ID>
     <ID>MagicNumber:PlayerSettingsPart59to61.kt$270</ID>
@@ -1293,21 +1200,17 @@
     <ID>MagicNumber:PlayerSettingsPart59to61.kt$50</ID>
     <ID>MagicNumber:PlayerSettingsPart59to61.kt$500</ID>
     <ID>MagicNumber:PlayerSettingsPart59to61.kt$6</ID>
-    <ID>MagicNumber:PlayerSettingsPart59to61.kt$60</ID>
-    <ID>MagicNumber:PlayerSettingsPart59to61.kt$600</ID>
     <ID>MagicNumber:PlayerSettingsPart59to61.kt$7</ID>
     <ID>MagicNumber:PlayerSettingsPart59to61.kt$70</ID>
     <ID>MagicNumber:PlayerSettingsPart59to61.kt$700</ID>
     <ID>MagicNumber:PlayerSettingsPart59to61.kt$75</ID>
     <ID>MagicNumber:PlayerSettingsPart59to61.kt$80</ID>
-    <ID>MagicNumber:PlayerSettingsPart59to61.kt$800</ID>
     <ID>MagicNumber:PlayerSettingsPart59to61.kt$90</ID>
     <ID>MagicNumber:PlayerSettingsPart59to61.kt$900</ID>
     <ID>MagicNumber:PlayerSettingsPart77to8.kt$125</ID>
     <ID>MagicNumber:PlayerSettingsPart77to8.kt$150</ID>
     <ID>MagicNumber:PlayerSettingsPart77to8.kt$175</ID>
     <ID>MagicNumber:PlayerSettingsPart77to8.kt$180</ID>
-    <ID>MagicNumber:PlayerSettingsPart77to8.kt$200</ID>
     <ID>MagicNumber:PlayerSettingsPart77to8.kt$25</ID>
     <ID>MagicNumber:PlayerSettingsPart77to8.kt$270</ID>
     <ID>MagicNumber:PlayerSettingsPart77to8.kt$300</ID>
@@ -1316,7 +1219,6 @@
     <ID>MagicNumber:PlayerSettingsPart77to8.kt$500</ID>
     <ID>MagicNumber:PlayerSettingsPart77to8.kt$6</ID>
     <ID>MagicNumber:PlayerSettingsPart77to8.kt$75</ID>
-    <ID>MagicNumber:PlayerSettingsPart77to8.kt$800</ID>
     <ID>MagicNumber:PlayerSettingsPart77to8.kt$90</ID>
     <ID>MagicNumber:PlayerSettingsPart7to72.kt$10</ID>
     <ID>MagicNumber:PlayerSettingsPart7to72.kt$125</ID>
@@ -1326,7 +1228,6 @@
     <ID>MagicNumber:PlayerSettingsPart7to72.kt$180</ID>
     <ID>MagicNumber:PlayerSettingsPart7to72.kt$2</ID>
     <ID>MagicNumber:PlayerSettingsPart7to72.kt$20</ID>
-    <ID>MagicNumber:PlayerSettingsPart7to72.kt$200</ID>
     <ID>MagicNumber:PlayerSettingsPart7to72.kt$25</ID>
     <ID>MagicNumber:PlayerSettingsPart7to72.kt$270</ID>
     <ID>MagicNumber:PlayerSettingsPart7to72.kt$30</ID>
@@ -1334,21 +1235,17 @@
     <ID>MagicNumber:PlayerSettingsPart7to72.kt$400</ID>
     <ID>MagicNumber:PlayerSettingsPart7to72.kt$50</ID>
     <ID>MagicNumber:PlayerSettingsPart7to72.kt$500</ID>
-    <ID>MagicNumber:PlayerSettingsPart7to72.kt$600</ID>
     <ID>MagicNumber:PlayerSettingsPart7to72.kt$700</ID>
     <ID>MagicNumber:PlayerSettingsPart7to72.kt$75</ID>
-    <ID>MagicNumber:PlayerSettingsPart7to72.kt$800</ID>
     <ID>MagicNumber:PlayerSettingsPart7to72.kt$90</ID>
     <ID>MagicNumber:PlayerSettingsPart7to72.kt$900</ID>
     <ID>MagicNumber:PlayerSettingsPart88to90.kt$10</ID>
     <ID>MagicNumber:PlayerSettingsPart88to90.kt$12</ID>
     <ID>MagicNumber:PlayerSettingsPart88to90.kt$125</ID>
-    <ID>MagicNumber:PlayerSettingsPart88to90.kt$14</ID>
     <ID>MagicNumber:PlayerSettingsPart88to90.kt$15</ID>
     <ID>MagicNumber:PlayerSettingsPart88to90.kt$150</ID>
     <ID>MagicNumber:PlayerSettingsPart88to90.kt$2</ID>
     <ID>MagicNumber:PlayerSettingsPart88to90.kt$20</ID>
-    <ID>MagicNumber:PlayerSettingsPart88to90.kt$200</ID>
     <ID>MagicNumber:PlayerSettingsPart88to90.kt$25</ID>
     <ID>MagicNumber:PlayerSettingsPart88to90.kt$30</ID>
     <ID>MagicNumber:PlayerSettingsPart88to90.kt$300</ID>
@@ -1358,7 +1255,6 @@
     <ID>MagicNumber:PlayerSettingsPart88to90.kt$6</ID>
     <ID>MagicNumber:PlayerSettingsPart88to90.kt$700</ID>
     <ID>MagicNumber:PlayerSettingsPart88to90.kt$75</ID>
-    <ID>MagicNumber:PlayerSettingsPart88to90.kt$800</ID>
     <ID>MagicNumber:PlayerTextFormats.kt$112</ID>
     <ID>MagicNumber:PlayerTextFormats.kt$116</ID>
     <ID>MagicNumber:PlayerTextFormats.kt$120</ID>
@@ -1371,11 +1267,8 @@
     <ID>MagicNumber:PlayerTextFormats.kt$30250</ID>
     <ID>MagicNumber:PlayerTextFormats.kt$30251</ID>
     <ID>MagicNumber:PlayerTextFormats.kt$30280</ID>
-    <ID>MagicNumber:PlayerTextFormats.kt$3600</ID>
     <ID>MagicNumber:PlayerTextFormats.kt$3_600_000</ID>
     <ID>MagicNumber:PlayerTextFormats.kt$6</ID>
-    <ID>MagicNumber:PlayerTextFormats.kt$60</ID>
-    <ID>MagicNumber:PlayerTextFormats.kt$60_000</ID>
     <ID>MagicNumber:PlayerTextFormats.kt$74</ID>
     <ID>MagicNumber:PlayerTextFormats.kt$80</ID>
     <ID>MagicNumber:PlayerUiMode.kt$PlayerUiMode$0.001f</ID>
@@ -1392,23 +1285,18 @@
     <ID>MagicNumber:PlayerVideoShot.kt$VideoShot.Companion$10</ID>
     <ID>MagicNumber:PlayerVideoShot.kt$VideoShot.Companion$160</ID>
     <ID>MagicNumber:PlayerVideoShot.kt$VideoShot.Companion$90</ID>
-    <ID>MagicNumber:PlayerVideoShot.kt$VideoShotImageCache.Companion$0xffffffffL</ID>
     <ID>MagicNumber:PopupHost.kt$PopupHost$0.90f</ID>
     <ID>MagicNumber:PopupHost.kt$PopupHost$0.96f</ID>
     <ID>MagicNumber:PopupHost.kt$PopupHost$0.98f</ID>
     <ID>MagicNumber:PopupHost.kt$PopupHost$10f</ID>
-    <ID>MagicNumber:PopupHost.kt$PopupHost$140L</ID>
     <ID>MagicNumber:PopupHost.kt$PopupHost$160L</ID>
     <ID>MagicNumber:PopupHost.kt$PopupHost$180L</ID>
     <ID>MagicNumber:PopupHost.kt$PopupHost$220L</ID>
-    <ID>MagicNumber:PopupHost.kt$PopupHost$600f</ID>
     <ID>MagicNumber:PopupHost.kt$PopupHost$80L</ID>
     <ID>MagicNumber:QrLoginActivity.kt$QrLoginActivity$1200</ID>
     <ID>MagicNumber:QrLoginActivity.kt$QrLoginActivity$180L</ID>
     <ID>MagicNumber:QrLoginActivity.kt$QrLoginActivity$2000</ID>
     <ID>MagicNumber:QrLoginActivity.kt$QrLoginActivity$6</ID>
-    <ID>MagicNumber:QrLoginActivity.kt$QrLoginActivity$60</ID>
-    <ID>MagicNumber:QrLoginActivity.kt$QrLoginActivity$800</ID>
     <ID>MagicNumber:QrLoginActivity.kt$QrLoginActivity$86038</ID>
     <ID>MagicNumber:QrLoginActivity.kt$QrLoginActivity$86039</ID>
     <ID>MagicNumber:QrLoginActivity.kt$QrLoginActivity$86090</ID>
@@ -1418,7 +1306,6 @@
     <ID>MagicNumber:SearchApi.kt$SearchApi$412</ID>
     <ID>MagicNumber:SearchApi.kt$SearchApi$50</ID>
     <ID>MagicNumber:SearchInteractor.kt$SearchInteractor$12</ID>
-    <ID>MagicNumber:SearchInteractor.kt$SearchInteractor$200</ID>
     <ID>MagicNumber:SearchRenderer.kt$SearchRenderer$0.65f</ID>
     <ID>MagicNumber:SearchRenderer.kt$SearchRenderer$6</ID>
     <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$0.05f</ID>
@@ -1427,14 +1314,10 @@
     <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$10</ID>
     <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$10f</ID>
     <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$12</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$140</ID>
     <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$18</ID>
     <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$26</ID>
     <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$6</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$60</ID>
-    <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$60f</ID>
     <ID>MagicNumber:SettingsInteractionHandler.kt$SettingsInteractionHandler$70</ID>
-    <ID>MagicNumber:SettingsRenderer.kt$SettingsRenderer$60</ID>
     <ID>MagicNumber:SettingsRenderer.kt$SettingsRenderer$80</ID>
     <ID>MagicNumber:SettingsText.kt$SettingsText$0.001f</ID>
     <ID>MagicNumber:SettingsText.kt$SettingsText$0.16f</ID>
@@ -1459,7 +1342,6 @@
     <ID>MagicNumber:SettingsText.kt$SettingsText$74</ID>
     <ID>MagicNumber:SettingsText.kt$SettingsText$80</ID>
     <ID>MagicNumber:SplashActivity.kt$SplashActivity$34</ID>
-    <ID>MagicNumber:SponsorBlockApi.kt$SponsorBlockApi$200</ID>
     <ID>MagicNumber:SponsorBlockApi.kt$SponsorBlockApi$30</ID>
     <ID>MagicNumber:SponsorSubmitViews.kt$SponsorSubmitThumbnailItemView$0.0001f</ID>
     <ID>MagicNumber:SponsorSubmitViews.kt$SponsorSubmitThumbnailItemView$0.001f</ID>
@@ -1500,13 +1382,11 @@
     <ID>MagicNumber:VideoCardAdapter.kt$VideoCardAdapter.Vh$0.5f</ID>
     <ID>MagicNumber:VideoCardAdapter.kt$VideoCardAdapter.Vh$99</ID>
     <ID>MagicNumber:VideoCardAdapter.kt$VideoCardAdapter.Vh$999</ID>
-    <ID>MagicNumber:VideoDetailActivity.kt$VideoDetailActivity$200</ID>
     <ID>MagicNumber:VideoDetailActivity.kt$VideoDetailActivity$34005</ID>
     <ID>MagicNumber:VideoDetailActivity.kt$VideoDetailActivity$65006</ID>
     <ID>MagicNumber:VideoDownloadService.kt$VideoDownloadService$2000</ID>
     <ID>MagicNumber:VideoDownloadService.kt$VideoDownloadService$30</ID>
     <ID>MagicNumber:VideoDownloadService.kt$VideoDownloadService$500</ID>
-    <ID>MagicNumber:VideoDownloadService.kt$VideoDownloadService$60</ID>
     <ID>MagicNumber:VideoDownloadService.kt$VideoDownloadService$80</ID>
     <ID>MagicNumber:VideoDownloadService.kt$VideoDownloadService$8192</ID>
     <ID>MagicNumber:VideoShotPreviewView.kt$VideoShotPreviewView$0.0001f</ID>
@@ -1545,23 +1425,19 @@
     <ID>MagicNumber:WebCookieMaintainer.kt$WebCookieMaintainer$40</ID>
     <ID>MagicNumber:WebCookieMaintainer.kt$WebCookieMaintainer$50</ID>
     <ID>MagicNumber:WebCookieMaintainer.kt$WebCookieMaintainer$6</ID>
-    <ID>MagicNumber:WebCookieMaintainer.kt$WebCookieMaintainer$60</ID>
     <ID>MagicNumber:WebCookieMaintainer.kt$WebCookieMaintainer$68</ID>
     <ID>MagicNumber:WebCookieMaintainer.kt$WebCookieMaintainer$69</ID>
     <ID>MagicNumber:WebCookieMaintainer.kt$WebCookieMaintainer$73</ID>
-    <ID>MagicNumber:WebCookieMaintainer.kt$WebCookieMaintainer$78</ID>
     <ID>MagicNumber:WebCookieMaintainer.kt$WebCookieMaintainer$86_400_000L</ID>
-    <ID>MagicNumber:WebVideoApi.kt$WebVideoApi$200</ID>
     <ID>MagicNumber:WebVideoApi.kt$WebVideoApi$50</ID>
     <ID>MagicNumber:WebVideoMapper.kt$WebVideoMapper$10</ID>
     <ID>MagicNumber:WebVideoMapper.kt$WebVideoMapper$10_000.0</ID>
     <ID>MagicNumber:WebVideoMapper.kt$WebVideoMapper$126</ID>
-    <ID>MagicNumber:WebVideoMapper.kt$WebVideoMapper$3600</ID>
-    <ID>MagicNumber:WebVideoMapper.kt$WebVideoMapper$60</ID>
     <ID>MatchingDeclarationName:FeaturePrefsAccessor.kt$FeaturePrefsStore</ID>
     <ID>MatchingDeclarationName:PlayerActivityAutoNext.kt$AutoNextTarget</ID>
     <ID>MatchingDeclarationName:PlayerActivityDebug.kt$PlayerDebugMetrics</ID>
     <ID>MatchingDeclarationName:PlayerActivityGestureCustom.kt$GestureAction</ID>
+    <ID>MatchingDeclarationName:PlayerActivitySleepTimer.kt$SleepTimerPrefs</ID>
     <ID>MatchingDeclarationName:PlayerActivitySmartQuality.kt$SmartQualityController</ID>
     <ID>MatchingDeclarationName:PlayerActivityVideoFilter.kt$VideoFilterPreset</ID>
     <ID>MaxLineLength:AppPrefs.kt$AppPrefs$private fun normalizePlayerHoldScrubSeconds(value: Int): Int</ID>
@@ -1647,8 +1523,9 @@
     <ID>MaxLineLength:AppVideoHttpTransport.kt$BiliClientAppVideoHttpTransport$"Mozilla/5.0 BiliDroid/2.2.0 (bbcallen@gmail.com) os/android model/2505DRP06G mobi_app/android_hd build/2020100 channel/yingyongbao innerVer/2020100 osVer/15 network/2"</ID>
     <ID>MaxLineLength:ArchiveTripleAction.kt$fun pickTripleActionFavFolder(folders: List&lt;BiliApi.FavFolderWithState&gt;): BiliApi.FavFolderWithState?</ID>
     <ID>MaxLineLength:BiliApi.kt$BiliApi$private fun VideoCardPage&lt;*&gt;.toHasMorePage(): HasMorePage&lt;VideoCard&gt;</ID>
-    <ID>MaxLineLength:BiliClient.kt$BiliClient$fun</ID>
     <ID>MaxLineLength:BlblApp.kt$BlblApp$"app=${BuildConfig.VERSION_NAME} api=${Build.VERSION.SDK_INT} device=${Build.MANUFACTURER} ${Build.MODEL} abi=${Build.SUPPORTED_ABIS.firstOrNull().orEmpty()}"</ID>
+    <ID>MaxLineLength:CustomMyPageHostFragment.kt$CustomMyPageHostFragment$override fun requestFocusPrimaryItemFromBackToTab0(): Boolean</ID>
+    <ID>MaxLineLength:CustomMyPageHostFragment.kt$CustomMyPageHostFragment$override fun requestFocusPrimaryItemFromContentSwitch(): Boolean</ID>
     <ID>MaxLineLength:DynamicFragment.kt$DynamicFragment$if</ID>
     <ID>MaxLineLength:ExoPlayerEngine.kt$ExtXStartStrippingHlsPlaylistParserFactory$override fun createPlaylistParser(): ParsingLoadable.Parser&lt;HlsPlaylist&gt;</ID>
     <ID>MaxLineLength:HistoryAdapter.kt$HistoryAdapter$is HistoryEntry.Video -&gt; videoAdapter.onBindViewHolder(holder as VideoCardAdapter.Vh, videos.indexOf((items[position] as HistoryEntry.Video).card))</ID>
@@ -1658,7 +1535,6 @@
     <ID>MaxLineLength:LiveAreaDetailFragment.kt$LiveAreaDetailFragment$"load ok pid=$parentAreaId aid=$areaId page=${page - 1} add=${filtered.size} total=${adapter.itemCount} cost=${SystemClock.uptimeMillis() - startAt}ms"</ID>
     <ID>MaxLineLength:LiveGridFragment.kt$LiveGridFragment$"load ok src=$source page=$startPage add=${applied.items.size} total=${adapter.itemCount} cost=${SystemClock.uptimeMillis() - startAt}ms"</ID>
     <ID>MaxLineLength:MainActivity.kt$MainActivity$private fun findRefreshKeyHandler(fragment: Fragment): RefreshKeyHandler?</ID>
-    <ID>MaxLineLength:MyFavFoldersFragment.kt$MyFavFoldersFragment$binding.recycler.layoutManager</ID>
     <ID>MaxLineLength:PlayerActivity.kt$PlayerActivity$"danmaku cid=$cid segTotal=$segmentTotal segSizeMs=$segmentSizeMs followBili=$followBili hasSess=$hasSess hasDmSetting=${setting != null} filters=kw${userFilter?.keywords?.size ?: 0},re${userFilter?.regexes?.size ?: 0},user${userFilter?.blockedUserMidHashes?.size ?: 0}"</ID>
     <ID>MaxLineLength:PlayerActivity.kt$PlayerActivity$"danmaku prefetch cid=$cid pos=${positionMs}ms segSizeMs=$segSize targetSeg=$targetSeg toLoad=${toLoad.joinToString()} segTotal=$danmakuSegmentTotal"</ID>
     <ID>MaxLineLength:PlayerActivity.kt$PlayerActivity$"danmaku seg=$seg items=$before kept=$after range=$minMs..${maxMs}ms pos=${requestPositionMs}ms cost=${cost}ms"</ID>
@@ -1690,6 +1566,8 @@
     <ID>MaxLineLength:UpDetailSectionAdapter.kt$UpDetailSectionAdapter.Vh$recycler.postDelayedIfAlive(delayMillis = 16, isAlive = isUiAlive) { requestVideoFocus(position = position, attempt = attempt + 1) }</ID>
     <ID>MaxLineLength:VideoApi.kt$VideoApi$"dmWebView cid=$cid aid=${aid ?: -1} includeCookie=$includeCookie bytes=${bytes.size} segTotal=$segTotal pageSizeMs=$pageSizeMs hasSetting=${setting != null}"</ID>
     <ID>MaxLineLength:VideoCardActionController.kt$VideoCardActionController$val seasonId = card.seasonId?.takeIf { it &gt; 0L } ?: throw BiliApiException(apiCode = -400, apiMessage = "missing_history_kid")</ID>
+    <ID>MaxLineLength:VideoDetailActivity.kt$VideoDetailActivity$private fun partsCardsForDisplay(): List&lt;blbl.cat3399.core.model.VideoCard&gt;</ID>
+    <ID>MaxLineLength:VideoDetailActivity.kt$VideoDetailActivity$private fun seasonCardsForDisplay(): List&lt;blbl.cat3399.core.model.VideoCard&gt;</ID>
     <ID>MaxLineLength:VideoDetailActivity.kt$VideoDetailActivity$runCatching { BiliApi.ugcSeasonArchives(mid = mid, seasonId = seasonId, pageSize = 200) }.getOrNull()</ID>
     <ID>MaxLineLength:VideoGridFragment.kt$VideoGridFragment$"load ok source=$source rid=$rid page=${startKey.page} add=${applied.items.size} total=${adapter.itemCount} cost=${SystemClock.uptimeMillis() - startAt}ms"</ID>
     <ID>MaxLineLength:VideoGridFragment.kt$VideoGridFragment$"loadNextPage end source=$source rid=$rid page=${paging.snapshot().nextKey.page} refresh=$isRefresh t=${SystemClock.uptimeMillis()}"</ID>
@@ -5415,6 +5293,7 @@
     <ID>SwallowedException:PlayerActivity.kt$PlayerActivity$e: Exception</ID>
     <ID>SwallowedException:PlayerActivityBrightnessMemory.kt$PlayerActivityBrightnessMemory$e: Exception</ID>
     <ID>SwallowedException:PlayerActivityCast.kt$e: Exception</ID>
+    <ID>SwallowedException:PlayerActivitySleepTimer.kt$e: Throwable</ID>
     <ID>SwallowedException:PlayerActivityTouch.kt$PlayerTouchController$e: Exception</ID>
     <ID>SwallowedException:UpDetailNavigation.kt$e: Exception</ID>
     <ID>ThrowsCount:LogUploadClient.kt$LogUploadClient$suspend fun uploadZip( file: File, fileName: String = file.name, onProgress: ((sentBytes: Long, totalBytes: Long) -&gt; Unit)? = null, ): UploadResult</ID>
@@ -5464,6 +5343,7 @@
     <ID>TooGenericExceptionCaught:PlayerActivityScreenshot.kt$e: Exception</ID>
     <ID>TooGenericExceptionCaught:PlayerActivitySidePanels.kt$e: Exception</ID>
     <ID>TooGenericExceptionCaught:PlayerActivitySidePanels.kt$t: Throwable</ID>
+    <ID>TooGenericExceptionCaught:PlayerActivitySleepTimer.kt$e: Throwable</ID>
     <ID>TooGenericExceptionCaught:PlayerActivitySocialActions.kt$t: Throwable</ID>
     <ID>TooGenericExceptionCaught:PlayerActivitySponsorSubmit.kt$t: Throwable</ID>
     <ID>TooGenericExceptionCaught:PlayerActivityStartPlayback.kt$t: Throwable</ID>
@@ -5563,17 +5443,6 @@
     <ID>TooManyFunctions:SearchRenderer.kt$SearchRenderer</ID>
     <ID>TooManyFunctions:SettingsText.kt$SettingsText</ID>
     <ID>TooManyFunctions:VideoApi.kt$VideoApi</ID>
-    <ID>UnusedImports:AppPopup.kt$import kotlin.math.max</ID>
-    <ID>UnusedImports:BangumiDetailActivity.kt$import android.view.View</ID>
-    <ID>UnusedImports:BiliClient.kt$import okhttp3.Response</ID>
-    <ID>UnusedImports:CustomDynamicVideoFragment.kt$import blbl.cat3399.feature.video.defaultVideoCardPlaylistItem</ID>
-    <ID>UnusedImports:DynamicFragment.kt$import blbl.cat3399.core.model.VideoCard</ID>
-    <ID>UnusedImports:DynamicFragment.kt$import blbl.cat3399.feature.video.defaultVideoCardPlaylistItem</ID>
-    <ID>UnusedImports:FollowingListActivity.kt$import android.view.View</ID>
-    <ID>UnusedImports:MyFavFolderDetailFragment.kt$import blbl.cat3399.feature.video.defaultVideoCardPlaylistItem</ID>
-    <ID>UnusedImports:SearchFragment.kt$import blbl.cat3399.R</ID>
-    <ID>UnusedImports:SettingsRenderer.kt$import android.view.View</ID>
-    <ID>UnusedImports:TagDetailActivity.kt$import blbl.cat3399.R</ID>
     <ID>UnusedParameter:PlayerActivityAutoQuality.kt$PlayerActivityAutoQuality$enabled: Boolean</ID>
     <ID>UnusedParameter:PlayerActivityAutoQuality.kt$PlayerActivityAutoQuality$quality: String</ID>
     <ID>UnusedParameter:PlayerActivityCastDelay.kt$PlayerActivityCastDelay$delayMs: Long</ID>
@@ -5604,7 +5473,7 @@
     <ID>UnusedParameter:PlayerActivityTimelineZoom.kt$PlayerActivityTimelineZoom$level: Float</ID>
     <ID>UnusedParameter:PlayerActivityVideoMirror.kt$PlayerActivityVideoMirror$enabled: Boolean</ID>
     <ID>UnusedParameter:VideoDownloadService.kt$VideoDownloadService$mimeType: String?</ID>
-    <ID>UnusedPrivateMember:AppPopup.kt$AppPopup$private fun dp(context: Context, value: Float): Int</ID>
+    <ID>UnusedPrivateMember:AppPopup.kt$AppPopup$private fun dp( context: Context, value: Float, ): Int</ID>
     <ID>UnusedPrivateMember:BiliApi.kt$BiliApi$private fun extractVVoucher(json: JSONObject): String?</ID>
     <ID>UnusedPrivateMember:BiliApi.kt$BiliApi$private fun genPlayUrlSession(nowMs: Long = System.currentTimeMillis()): String?</ID>
     <ID>UnusedPrivateMember:LivePlayerActivity.kt$LivePlayerActivity$private fun focusAdvancedControl(): Boolean</ID>

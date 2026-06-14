@@ -80,7 +80,7 @@ jobs:
           key: config-cache-${{ runner.os }}-${{ hashFiles('gradle.properties', 'build.gradle.kts', 'app/build.gradle.kts') }}
           restore-keys: config-cache-${{ runner.os }}-
       - name: Build debug APK
-        run: ./gradlew assembleDebug -PversionName=${{ needs.version.outputs.version_name }} -PversionCode=${{ github.run_number }} --no-daemon
+        run: ./gradlew assembleDebug -PversionName=${{ needs.version.outputs.version_name }} -PversionCode=${{ github.run_number }} --no-daemon --no-build-cache
       - name: Upload debug APK
         uses: actions/upload-artifact@v4
         with:
@@ -138,7 +138,7 @@ jobs:
           RELEASE_STORE_PASSWORD: ${{ secrets.RELEASE_STORE_PASSWORD }}
           RELEASE_KEY_ALIAS: ${{ secrets.RELEASE_KEY_ALIAS }}
           RELEASE_KEY_PASSWORD: ${{ secrets.RELEASE_KEY_PASSWORD }}
-        run: ./gradlew assembleRelease -PversionName=${{ needs.version.outputs.version_name }} -PversionCode=${{ github.run_number }} --no-daemon
+        run: ./gradlew assembleRelease -PversionName=${{ needs.version.outputs.version_name }} -PversionCode=${{ github.run_number }} --no-daemon --no-build-cache --stacktrace
       - name: Upload release APK
         if: steps.check.outputs.skip != 'true'
         uses: actions/upload-artifact@v4

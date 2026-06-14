@@ -18,9 +18,9 @@ import blbl.cat3399.R
  *
  * Presets: off / 15 / 30 / 60 / 90 / 120 minutes.
  * When the timer expires the player is paused and a toast is shown.
+ *
+ * Sleep-timer preferences stored directly (avoids bloating AppPrefs).
  */
-
-/** Sleep-timer preferences stored directly (avoids bloating AppPrefs). */
 object SleepTimerPrefs {
     private const val STORE = "blbl_sleep_timer"
     private const val KEY_MINUTES = "sleep_timer_minutes"
@@ -79,7 +79,8 @@ internal fun PlayerActivity.releaseSleepTimer() {
     sleepTimerView?.let { v ->
         try {
             (v.parent as? android.view.ViewGroup)?.removeView(v)
-        } catch (e: Throwable) {}
+        } catch (e: Throwable) {
+        }
     }
     sleepTimerView = null
 }
@@ -149,7 +150,9 @@ private fun PlayerActivity.onSleepTimerExpired() {
     }
 
     // Toast notification
-    android.widget.Toast.makeText(this, "💤 休眠定时器结束，播放已暂停", android.widget.Toast.LENGTH_LONG).show()
+    android.widget.Toast
+        .makeText(this, "💤 休眠定时器结束，播放已暂停", android.widget.Toast.LENGTH_LONG)
+        .show()
 }
 
 // ── Overlay ───────────────────────────────────────────────
@@ -167,14 +170,15 @@ private fun PlayerActivity.showSleepTimerOverlay() {
                 setBackgroundResource(R.drawable.boost_indicator_bg)
                 setPadding(16, 8, 16, 8)
                 val params =
-                    LinearLayout.LayoutParams(
-                        LinearLayout.LayoutParams.WRAP_CONTENT,
-                        LinearLayout.LayoutParams.WRAP_CONTENT,
-                    ).apply {
-                        gravity = Gravity.TOP or Gravity.END
-                        topMargin = 78
-                        marginEnd = 16
-                    }
+                    LinearLayout
+                        .LayoutParams(
+                            LinearLayout.LayoutParams.WRAP_CONTENT,
+                            LinearLayout.LayoutParams.WRAP_CONTENT,
+                        ).apply {
+                            gravity = Gravity.TOP or Gravity.END
+                            topMargin = 78
+                            marginEnd = 16
+                        }
                 layoutParams = params
             }
 
@@ -197,8 +201,11 @@ private fun updateSleepTimerOverlay(remainingMs: Long) {
     val m = (totalSec % 3600) / 60
     val s = totalSec % 60
     v.text =
-        if (h > 0) "💤 休眠 %d:%02d:%02d".format(h, m, s)
-        else "💤 休眠 %02d:%02d".format(m, s)
+        if (h > 0) {
+            "💤 休眠 %d:%02d:%02d".format(h, m, s)
+        } else {
+            "💤 休眠 %02d:%02d".format(m, s)
+        }
 }
 
 private fun hideSleepTimerOverlay() {

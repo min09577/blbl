@@ -20,10 +20,11 @@ object GridSpanPolicy {
     ): Int {
         if (overrideSpanCount > 0) return overrideSpanCount.coerceIn(MIN_SPAN, MAX_SPAN)
         return when {
-            isTvLayout -> when {
-                widthDp >= 1600f -> 3
-                else -> 2
-            }
+            isTvLayout ->
+                when {
+                    widthDp >= 1600f -> 3
+                    else -> 2
+                }
             widthDp >= 1100f -> 4
             widthDp >= 800f -> 3
             else -> 2

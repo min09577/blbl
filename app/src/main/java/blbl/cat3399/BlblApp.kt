@@ -26,7 +26,8 @@ class BlblApp : Application() {
         )
         AppLog.i("BlblApp", "onCreate")
         BiliClient.init(this)
-        blbl.cat3399.core.ui.GridSpanPolicy.init(this)
+        blbl.cat3399.core.ui.GridSpanPolicy
+            .init(this)
         blbl.cat3399.feature.live.LiveReminder
             .initChannel(this) // v4.14: 直播提醒通知通道
         appScope.launch {
