@@ -107,7 +107,7 @@ jobs:
         id: check
         run: |
           if [ -z "${KEYSTORE:-}" ]; then
-            echo "SKIP: RELEASE_KEYSTORE_BASE64 not set â†’ will skip build"
+            echo "SKIP: RELEASE_KEYSTORE_BASE64 not set â†?will skip build"
             echo "skip=true" >> "$GITHUB_OUTPUT"
           else
             echo "skip=false" >> "$GITHUB_OUTPUT"
@@ -168,7 +168,7 @@ jobs:
         id: check-tv
         run: |
           if [ -z "${KP:-}" ]; then
-            echo "SKIP: KEYSTORE_PASSWORD not set â†’ will skip TV build"
+            echo "SKIP: KEYSTORE_PASSWORD not set â†?will skip TV build"
             echo "skip=true" >> "$GITHUB_OUTPUT"
           else
             echo "skip=false" >> "$GITHUB_OUTPUT"
