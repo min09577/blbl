@@ -389,6 +389,7 @@ internal object PlayerCustomShortcutsStore {
             PlayerCustomShortcutAction.ToggleDanmaku,
             PlayerCustomShortcutAction.ToggleDebugOverlay,
             PlayerCustomShortcutAction.TogglePersistentBottomProgress,
+            PlayerCustomShortcutAction.ToggleSleepTimer,
             -> null
 
             is PlayerCustomShortcutAction.SetPlaybackSpeed ->
