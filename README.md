@@ -76,12 +76,12 @@ Tag Push `v*` 自动触发三路并行构建流水线：
 ```
 v* Tag Push
   ├── build-debug   → APK
-  ├── build-release → 签名 APK
+  ├── build-release → 临时签名 APK（CI 当场生成 ephemeral keystore）
   ├── build-tv      → TV 签名 APK
   └── publish       → GitHub Release + Cloudflare R2 CDN
 ```
 
-需配置 Secrets：`RELEASE_KEYSTORE_BASE64` · `RELEASE_STORE_PASSWORD` · `RELEASE_KEY_ALIAS` · `RELEASE_KEY_PASSWORD` · `R2_*` 系列
+需配置 Secrets：`KEYSTORE_PASSWORD` · `R2_*` 系列
 
 ---
 
