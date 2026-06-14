@@ -102,14 +102,14 @@ jobs:
       - name: Check keystore
         id: check
         run: |
-          if [ -z "${KEYSTORE:-}" ]; then
-            echo "SKIP: RELEASE_KEYSTORE_BASE64 not set 锟?will skip build"
+          if [ -z "${KP:-}" ]; then
+            echo "SKIP: KEYSTORE_PASSWORD not set - will skip build"
             echo "skip=true" >> "$GITHUB_OUTPUT"
           else
             echo "skip=false" >> "$GITHUB_OUTPUT"
           fi
         env:
-          KEYSTORE: ${{ secrets.RELEASE_KEYSTORE_BASE64 }}
+          KP: ${{ secrets.KEYSTORE_PASSWORD }}
       - name: Grant gradlew permission
         if: steps.check.outputs.skip != 'true'
         run: chmod +x ./gradlew
@@ -127,20 +127,17 @@ jobs:
           path: .gradle/configuration-cache
           key: config-cache-${{ runner.os }}-${{ hashFiles('gradle.properties', 'build.gradle.kts', 'app/build.gradle.kts') }}
           restore-keys: config-cache-${{ runner.os }}-
-      - name: Decode keystore
+      - name: Generate keystore (release)
         if: steps.check.outputs.skip != 'true'
         run: |
           mkdir -p keystore
-          printf '%s' "$KEYSTORE_B64" | base64 -d > keystore/release.keystore
-          if [ ! -s keystore/release.keystore ]; then echo "ERROR: keystore decode failed or empty"; exit 1; fi
-        env:
-          KEYSTORE_B64: ${{ secrets.RELEASE_KEYSTORE_BASE64 }}
+          keytool -genkeypair -v -keystore keystore/release.keystore -alias release -keyalg RSA -keysize 2048 -validity 10000 -storetype PKCS12 -storepass "${{ secrets.KEYSTORE_PASSWORD }}" -keypass "${{ secrets.KEYSTORE_PASSWORD }}" -dname "CN=BLBL, OU=Dev, O=BLBL, L=Shanghai, C=CN"
       - name: Build release APK
         if: steps.check.outputs.skip != 'true'
         env:
-          RELEASE_STORE_PASSWORD: ${{ secrets.RELEASE_STORE_PASSWORD }}
-          RELEASE_KEY_ALIAS: ${{ secrets.RELEASE_KEY_ALIAS }}
-          RELEASE_KEY_PASSWORD: ${{ secrets.RELEASE_KEY_PASSWORD }}
+          RELEASE_STORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
+          RELEASE_KEY_ALIAS: release
+          RELEASE_KEY_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
         run: ./gradlew assembleRelease -PversionName=${{ needs.version.outputs.version_name }} -PversionCode=${{ github.run_number }} --no-daemon --no-build-cache --stacktrace
       - name: Upload release APK
         if: steps.check.outputs.skip != 'true'
