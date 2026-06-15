@@ -121,6 +121,15 @@ val generateProto by tasks.registering {
         protocExe.setExecutable(true)
         grpcPluginExe.setExecutable(true)
 
+        // Verify executability; fallback to chmod on Linux/Mac if setExecutable didn't stick
+        if (!grpcPluginExe.canExecute()) {
+            logger.lifecycle("protoc: setExecutable did not take effect, trying chmod +x")
+            Runtime.getRuntime().exec(arrayOf("chmod", "+x", grpcPluginExe.absolutePath)).waitFor()
+        }
+        if (!protocExe.canExecute()) {
+            Runtime.getRuntime().exec(arrayOf("chmod", "+x", protocExe.absolutePath)).waitFor()
+        }
+
         val outputDir = protoOutputDir.get().asFile
         outputDir.deleteRecursively()
         outputDir.mkdirs()
