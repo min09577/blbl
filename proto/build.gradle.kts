@@ -129,19 +129,20 @@ val generateProto by tasks.registering {
         grpcPluginExe.inputStream().use { it.read(magic) }
         val isElf = magic[0] == 0x7f.toByte() && magic[1] == 0x45.toByte() && magic[2] == 0x4c.toByte() && magic[3] == 0x46.toByte()
         logger.lifecycle("protoc: grpc plugin size=${grpcPluginExe.length()}, isELF=$isElf")
-        // Debug: check dynamic linker path
+        // Debug: test if OS can execute the binary
         if (!isWindows && isElf) {
             val linker = java.io.File("/lib64/ld-linux-x86-64.so.2")
-            logger.lifecycle("protoc: linker exists=${linker.exists()}, isSymlink=${if (linker.exists()) java.nio.file.Files.isSymbolicLink(linker.toPath()) else "N/A"}")
+            logger.lifecycle("protoc: ld-linux.so.2 exists=${linker.exists()}")
             try {
-                val resolved = java.nio.file.Files.readSymbolicLink(linker.toPath())
-                logger.lifecycle("protoc: linker symlink -> $resolved")
-            } catch (_: Exception) {}
-            try {
-                val fileOut =
-                    ProcessBuilder("file", grpcPluginExe.absolutePath).start().inputStream.bufferedReader().readText()
-                logger.lifecycle("protoc: file: $fileOut")
-            } catch (_: Exception) {}
+                // Test: can the kernel exec this binary at all?
+                val testBin = ProcessBuilder(grpcPluginExe.absolutePath).redirectErrorStream(true).start()
+                testBin.outputStream.close() // close stdin
+                val out = testBin.inputStream.bufferedReader().readText()
+                val ec = testBin.waitFor()
+                logger.lifecycle("protoc: test exec exit=$ec, out=${out.take(200)}")
+            } catch (e: Exception) {
+                logger.lifecycle("protoc: test exec EXCEPTION: ${e.javaClass.simpleName}: ${e.message}")
+            }
         }
         if (!isWindows && !grpcPluginExe.canExecute()) {
             val chmod = ProcessBuilder("chmod", "+x", grpcPluginExe.absolutePath).start()
