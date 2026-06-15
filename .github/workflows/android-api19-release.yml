@@ -40,12 +40,20 @@ jobs:
           path: .gradle/configuration-cache
           key: config-cache-${{ runner.os }}-${{ hashFiles('gradle.properties', 'build.gradle.kts', 'app/build.gradle.kts') }}
           restore-keys: config-cache-${{ runner.os }}-
+      - name: Generate keystore
+        run: |
+          mkdir -p keystore
+          keytool -genkeypair -v -keystore keystore/release.keystore -alias release -keyalg RSA -keysize 2048 -validity 10000 -storetype PKCS12 -storepass android -keypass android -dname "CN=BLBL, OU=Dev, O=BLBL, L=Shanghai, C=CN"
       - name: Mark API19 app label
         run: |
           set -euo pipefail
           sed -i 's|<string name="app_name">.*</string>|<string name="app_name">Blbl-api19</string>|' app/src/main/res/values/strings.xml
       - name: Build API19 release APK (unsigned for CI verification)
-        run: ./gradlew :app:assembleKitkatRelease -PversionName=${{ inputs.version_name }} -PversionCode=${{ github.run_number }} --no-daemon
+        env:
+          RELEASE_STORE_PASSWORD: android
+          RELEASE_KEY_ALIAS: release
+          RELEASE_KEY_PASSWORD: android
+        run: ./gradlew :app:assembleKitkatRelease -PversionName=${{ inputs.version_name }} -PversionCode=${{ github.run_number }} --no-daemon --no-build-cache
       - name: Upload API19 release APK to R2 (optional)
         env:
           R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
