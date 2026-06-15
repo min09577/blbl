@@ -1561,6 +1561,10 @@ class SettingsInteractionHandler(
                 }
             }
 
+            SettingId.About -> {
+                activity.startActivity(Intent(activity, blbl.cat3399.feature.about.AboutActivity::class.java))
+            }
+
             SettingId.ProjectUrl -> showProjectDialog()
 
             SettingId.QqGroup -> {
