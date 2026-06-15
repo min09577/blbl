@@ -129,17 +129,18 @@ val generateProto by tasks.registering {
         grpcPluginExe.inputStream().use { it.read(magic) }
         val isElf = magic[0] == 0x7f.toByte() && magic[1] == 0x45.toByte() && magic[2] == 0x4c.toByte() && magic[3] == 0x46.toByte()
         logger.lifecycle("protoc: grpc plugin size=${grpcPluginExe.length()}, isELF=$isElf")
-        // Debug: check file type and dynamic linker dependencies
+        // Debug: check dynamic linker path
         if (!isWindows && isElf) {
+            val linker = java.io.File("/lib64/ld-linux-x86-64.so.2")
+            logger.lifecycle("protoc: linker exists=${linker.exists()}, isSymlink=${if (linker.exists()) java.nio.file.Files.isSymbolicLink(linker.toPath()) else "N/A"}")
+            try {
+                val resolved = java.nio.file.Files.readSymbolicLink(linker.toPath())
+                logger.lifecycle("protoc: linker symlink -> $resolved")
+            } catch (_: Exception) {}
             try {
                 val fileOut =
                     ProcessBuilder("file", grpcPluginExe.absolutePath).start().inputStream.bufferedReader().readText()
                 logger.lifecycle("protoc: file: $fileOut")
-            } catch (_: Exception) {}
-            try {
-                val lddOut =
-                    ProcessBuilder("ldd", grpcPluginExe.absolutePath).start().inputStream.bufferedReader().readText()
-                logger.lifecycle("protoc: ldd: $lddOut")
             } catch (_: Exception) {}
         }
         if (!isWindows && !grpcPluginExe.canExecute()) {
