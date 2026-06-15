@@ -132,15 +132,14 @@ val generateProto by tasks.registering {
         // Debug: check file type and dynamic linker dependencies
         if (!isWindows && isElf) {
             try {
-                val fileCmd = ProcessBuilder("file", grpcPluginExe.absolutePath).start()
-                fileCmd.waitFor(5, java.util.concurrent.TimeUnit.SECONDS)
-                logger.lifecycle("protoc: file: ${fileCmd.inputStream.bufferedReader().readText().trim()}")
+                val fileOut =
+                    ProcessBuilder("file", grpcPluginExe.absolutePath).start().inputStream.bufferedReader().readText()
+                logger.lifecycle("protoc: file: $fileOut")
             } catch (_: Exception) {}
             try {
-                val ldd =
-                    ProcessBuilder("ldd", grpcPluginExe.absolutePath).start()
-                ldd.waitFor(5, java.util.concurrent.TimeUnit.SECONDS)
-                logger.lifecycle("protoc: ldd: ${ldd.inputStream.bufferedReader().readText().trim()}")
+                val lddOut =
+                    ProcessBuilder("ldd", grpcPluginExe.absolutePath).start().inputStream.bufferedReader().readText()
+                logger.lifecycle("protoc: ldd: $lddOut")
             } catch (_: Exception) {}
         }
         if (!isWindows && !grpcPluginExe.canExecute()) {
