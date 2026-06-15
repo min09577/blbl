@@ -19,7 +19,8 @@ android {
 
     defaultConfig {
         applicationId = "blbl.cat3399"
-        minSdk = 21
+        minSdk = 19
+        multiDexEnabled = true
         targetSdk = 36
         versionCode = (project.findProperty("versionCode") as String?)?.toInt() ?: 18
         versionName = project.findProperty("versionName") as String? ?: "11.19.0"
@@ -35,6 +36,16 @@ android {
             storePassword = propOrEnv("RELEASE_STORE_PASSWORD") ?: ""
             keyAlias = propOrEnv("RELEASE_KEY_ALIAS") ?: ""
             keyPassword = propOrEnv("RELEASE_KEY_PASSWORD") ?: ""
+        }
+    }
+
+    flavorDimensions += "api"
+    productFlavors {
+        register("kitkat") {
+            dimension = "api"
+            minSdk = 19
+            applicationIdSuffix = ".kitkat"
+            signingConfig = signingConfigs.getByName("release")
         }
     }
 
@@ -121,6 +132,15 @@ dependencies {
     implementation("androidx.media3:media3-datasource-okhttp:1.8.0")
 
     implementation("com.google.zxing:core:3.5.3")
+
+    // MultiDex for KitKat (DEX 64K limit)
+    implementation("androidx.multidex:multidex:2.0.1")
+
+    // KitKat (API 19) compatibility - lower media3 version for minSdk 19
+    "kitkatImplementation"("androidx.media3:media3-exoplayer:1.4.1")
+    "kitkatImplementation"("androidx.media3:media3-exoplayer-hls:1.4.1")
+    "kitkatImplementation"("androidx.media3:media3-ui:1.4.1")
+    "kitkatImplementation"("androidx.media3:media3-datasource:1.4.1")
 
     testImplementation("junit:junit:4.13.2")
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.9.0")

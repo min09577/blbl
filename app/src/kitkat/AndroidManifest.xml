@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- KitKat (API 19): override minSdk requirements for media3 + ijkplayer packages -->
+    <uses-sdk tools:overrideLibrary="androidx.media3.exoplayer, androidx.media3.exoplayer.hls, androidx.media3.ui, androidx.media3.datasource, androidx.media3.datasource.okhttp" />
+
+</manifest>
