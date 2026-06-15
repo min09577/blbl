@@ -45,7 +45,6 @@ val generateProto by tasks.registering {
         val isWindows = osName.contains("windows")
         val isMac = osName.contains("mac")
         val protocExe = File(toolsDir, if (isWindows) "protoc.exe" else "protoc")
-        val grpcPluginExe = File(toolsDir, "protoc-gen-grpc-java" + if (isWindows) ".exe" else "")
 
         val protocDist =
             when {
@@ -96,7 +95,13 @@ val generateProto by tasks.registering {
             logger.lifecycle("protoc: using cached protoc binary and includes")
         }
 
-        // Download protoc-gen-grpc-java from Maven Central
+        protocExe.setExecutable(true)
+        if (!isWindows) {
+            val chmod = ProcessBuilder("chmod", "+x", protocExe.absolutePath).start()
+            chmod.waitFor()
+        }
+
+        // Download protoc-gen-grpc-java native binary from Maven Central
         val protocGrpcClassifier =
             when {
                 isWindows -> "windows-x86_64"
@@ -105,8 +110,9 @@ val generateProto by tasks.registering {
                 else ->
                     if (System.getProperty("os.arch") == "aarch64") "linux-aarch_64" else "linux-x86_64"
             }
+        val grpcPluginExe = File(toolsDir, "protoc-gen-grpc-java" + if (isWindows) ".exe" else "")
         if (!grpcPluginExe.exists()) {
-            grpcPluginExe.parentFile.mkdirs()
+            toolsDir.mkdirs()
             val grpcUrl =
                 URL(
                     "https://repo1.maven.org/maven2/io/grpc/protoc-gen-grpc-java/1.72.0/protoc-gen-grpc-java-1.72.0-$protocGrpcClassifier.exe",
@@ -118,16 +124,12 @@ val generateProto by tasks.registering {
             logger.lifecycle("protoc: using cached protoc-gen-grpc-java")
         }
 
-        protocExe.setExecutable(true)
         grpcPluginExe.setExecutable(true)
-
-        // Verify executability; fallback to chmod on Linux/Mac if setExecutable didn't stick
-        if (!grpcPluginExe.canExecute()) {
-            logger.lifecycle("protoc: setExecutable did not take effect, trying chmod +x")
-            Runtime.getRuntime().exec(arrayOf("chmod", "+x", grpcPluginExe.absolutePath)).waitFor()
-        }
-        if (!protocExe.canExecute()) {
-            Runtime.getRuntime().exec(arrayOf("chmod", "+x", protocExe.absolutePath)).waitFor()
+        logger.lifecycle("protoc: grpc plugin size=${grpcPluginExe.length()}, canExecute=${grpcPluginExe.canExecute()}")
+        if (!isWindows && !grpcPluginExe.canExecute()) {
+            val chmod = ProcessBuilder("chmod", "+x", grpcPluginExe.absolutePath).start()
+            chmod.waitFor()
+            logger.lifecycle("protoc: after chmod canExecute=${grpcPluginExe.canExecute()}")
         }
 
         val outputDir = protoOutputDir.get().asFile
