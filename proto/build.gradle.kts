@@ -128,7 +128,21 @@ val generateProto by tasks.registering {
         val magic = ByteArray(4)
         grpcPluginExe.inputStream().use { it.read(magic) }
         val isElf = magic[0] == 0x7f.toByte() && magic[1] == 0x45.toByte() && magic[2] == 0x4c.toByte() && magic[3] == 0x46.toByte()
-        logger.lifecycle("protoc: grpc plugin size=${grpcPluginExe.length()}, isELF=$isElf, magic=${magic.joinToString(" ") { String.format("%02x", it) }}")
+        logger.lifecycle("protoc: grpc plugin size=${grpcPluginExe.length()}, isELF=$isElf")
+        // Debug: check file type and dynamic linker dependencies
+        if (!isWindows && isElf) {
+            try {
+                val fileCmd = ProcessBuilder("file", grpcPluginExe.absolutePath).start()
+                fileCmd.waitFor(5, java.util.concurrent.TimeUnit.SECONDS)
+                logger.lifecycle("protoc: file: ${fileCmd.inputStream.bufferedReader().readText().trim()}")
+            } catch (_: Exception) {}
+            try {
+                val ldd =
+                    ProcessBuilder("ldd", grpcPluginExe.absolutePath).start()
+                ldd.waitFor(5, java.util.concurrent.TimeUnit.SECONDS)
+                logger.lifecycle("protoc: ldd: ${ldd.inputStream.bufferedReader().readText().trim()}")
+            } catch (_: Exception) {}
+        }
         if (!isWindows && !grpcPluginExe.canExecute()) {
             val chmod = ProcessBuilder("chmod", "+x", grpcPluginExe.absolutePath).start()
             chmod.waitFor()
