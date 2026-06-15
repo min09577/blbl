@@ -98,21 +98,6 @@ android {
     }
 }
 
-configurations {
-    named("kitkatReleaseRuntimeClasspath") {
-        exclude(group = "androidx.compose")
-        exclude(group = "androidx.compose.ui")
-        exclude(group = "androidx.compose.material3")
-        exclude(group = "androidx.activity", module = "activity-compose")
-    }
-    named("kitkatReleaseCompileClasspath") {
-        exclude(group = "androidx.compose")
-        exclude(group = "androidx.compose.ui")
-        exclude(group = "androidx.compose.material3")
-        exclude(group = "androidx.activity", module = "activity-compose")
-    }
-}
-
 dependencies {
     implementation(project(":proto"))
 
