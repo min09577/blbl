@@ -125,7 +125,10 @@ val generateProto by tasks.registering {
         }
 
         grpcPluginExe.setExecutable(true)
-        logger.lifecycle("protoc: grpc plugin size=${grpcPluginExe.length()}, canExecute=${grpcPluginExe.canExecute()}")
+        val magic = ByteArray(4)
+        grpcPluginExe.inputStream().use { it.read(magic) }
+        val isElf = magic[0] == 0x7f.toByte() && magic[1] == 0x45.toByte() && magic[2] == 0x4c.toByte() && magic[3] == 0x46.toByte()
+        logger.lifecycle("protoc: grpc plugin size=${grpcPluginExe.length()}, isELF=$isElf, magic=${magic.joinToString(" ") { String.format("%02x", it) }}")
         if (!isWindows && !grpcPluginExe.canExecute()) {
             val chmod = ProcessBuilder("chmod", "+x", grpcPluginExe.absolutePath).start()
             chmod.waitFor()
