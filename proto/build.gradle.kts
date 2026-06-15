@@ -17,14 +17,14 @@ dependencies {
     compileOnly("javax.annotation:javax.annotation-api:1.3.2")
 }
 
-// --- Protobuf code generation task ---
+// --- Protobuf code generation (protobuf java only; gRPC stubs pre-generated in src/generated/java) ---
 
 val protoSourceDir = layout.projectDirectory.dir("src/main/proto")
 val protoOutputDir = layout.buildDirectory.dir("generated/source/proto/main/java")
 
 val generateProto by tasks.registering {
     group = "protobuf"
-    description = "Generate Java lite + gRPC lite sources from .proto files"
+    description = "Generate Java-lite sources from .proto files (protoc only, no gRPC)"
 
     val protoFiles = fileTree(protoSourceDir) { include("**/*.proto") }
     inputs.files(protoFiles)
@@ -43,13 +43,12 @@ val generateProto by tasks.registering {
                 .asFile
         val osName = System.getProperty("os.name").lowercase()
         val isWindows = osName.contains("windows")
-        val isMac = osName.contains("mac")
         val protocExe = File(toolsDir, if (isWindows) "protoc.exe" else "protoc")
 
         val protocDist =
             when {
                 isWindows -> "win64"
-                isMac ->
+                osName.contains("mac") ->
                     if (System.getProperty("os.arch") == "aarch64") "osx-aarch_64" else "osx-x86_64"
                 else ->
                     if (System.getProperty("os.arch") == "aarch64") "linux-aarch_64" else "linux-x86_64"
@@ -64,11 +63,10 @@ val generateProto by tasks.registering {
                     .asFile
             protoZip.parentFile.mkdirs()
             val url = URL("https://github.com/protocolbuffers/protobuf/releases/download/v25.3/protoc-25.3-$protocDist.zip")
-            logger.lifecycle("protoc: downloading protoc-25.3-$protocDist.zip from GitHub...")
+            logger.lifecycle("protoc: downloading protoc-25.3-$protocDist.zip...")
             val inp = url.openStream()
             try { inp.copyTo(protoZip.outputStream()) } finally { inp.close() }
 
-            // Extract entire zip to temp dir, then copy needed files
             val extractDir =
                 layout.buildDirectory
                     .dir("tmp/protoc-extract")
@@ -92,76 +90,26 @@ val generateProto by tasks.registering {
             extractDir.deleteRecursively()
             protoZip.delete()
         } else {
-            logger.lifecycle("protoc: using cached protoc binary and includes")
+            logger.lifecycle("protoc: using cached protoc")
         }
 
         protocExe.setExecutable(true)
-        if (!isWindows) {
-            val chmod = ProcessBuilder("chmod", "+x", protocExe.absolutePath).start()
-            chmod.waitFor()
-        }
-
-        // Download protoc-gen-grpc-java native binary from Maven Central
-        val protocGrpcClassifier =
-            when {
-                isWindows -> "windows-x86_64"
-                isMac ->
-                    if (System.getProperty("os.arch") == "aarch64") "osx-aarch_64" else "osx-x86_64"
-                else ->
-                    if (System.getProperty("os.arch") == "aarch64") "linux-aarch_64" else "linux-x86_64"
-            }
-        val grpcPluginExe = File(toolsDir, "protoc-gen-grpc-java" + if (isWindows) ".exe" else "")
-        if (!grpcPluginExe.exists()) {
-            toolsDir.mkdirs()
-            val grpcUrl =
-                URL(
-                    "https://repo1.maven.org/maven2/io/grpc/protoc-gen-grpc-java/1.72.0/protoc-gen-grpc-java-1.72.0-$protocGrpcClassifier.exe",
-                )
-            logger.lifecycle("protoc: downloading protoc-gen-grpc-java 1.72.0 from Maven Central...")
-            val inp = grpcUrl.openStream()
-            try { inp.copyTo(grpcPluginExe.outputStream()) } finally { inp.close() }
-        } else {
-            logger.lifecycle("protoc: using cached protoc-gen-grpc-java")
-        }
-
-        grpcPluginExe.setExecutable(true)
-        val magic = ByteArray(4)
-        grpcPluginExe.inputStream().use { it.read(magic) }
-        val isElf = magic[0] == 0x7f.toByte() && magic[1] == 0x45.toByte() && magic[2] == 0x4c.toByte() && magic[3] == 0x46.toByte()
-        logger.lifecycle("protoc: grpc plugin size=${grpcPluginExe.length()}, isELF=$isElf")
-        // Debug: test if OS can execute the binary
-        if (!isWindows && isElf) {
-            val linker = java.io.File("/lib64/ld-linux-x86-64.so.2")
-            logger.lifecycle("protoc: ld-linux.so.2 exists=${linker.exists()}")
-            try {
-                // Test: can the kernel exec this binary at all?
-                val testBin = ProcessBuilder(grpcPluginExe.absolutePath).redirectErrorStream(true).start()
-                testBin.outputStream.close() // close stdin
-                val out = testBin.inputStream.bufferedReader().readText()
-                val ec = testBin.waitFor()
-                logger.lifecycle("protoc: test exec exit=$ec, out=${out.take(200)}")
-            } catch (e: Exception) {
-                logger.lifecycle("protoc: test exec EXCEPTION: ${e.javaClass.simpleName}: ${e.message}")
-            }
-        }
-        if (!isWindows && !grpcPluginExe.canExecute()) {
-            val chmod = ProcessBuilder("chmod", "+x", grpcPluginExe.absolutePath).start()
-            chmod.waitFor()
-            logger.lifecycle("protoc: after chmod canExecute=${grpcPluginExe.canExecute()}")
+        val isWin = isWindows
+        if (!isWin) {
+            ProcessBuilder("chmod", "+x", protocExe.absolutePath).start().waitFor()
         }
 
         val outputDir = protoOutputDir.get().asFile
         outputDir.deleteRecursively()
         outputDir.mkdirs()
 
+        // Only generate protobuf Java-lite; gRPC stubs are pre-generated in src/generated/java
         val cmd =
             mutableListOf(
                 protocExe.absolutePath,
                 "-I${protoSourceDir.asFile.absolutePath}",
                 "-I${protoIncludeDir.absolutePath}",
                 "--java_out=lite:${outputDir.absolutePath}",
-                "--grpc_out=lite:${outputDir.absolutePath}",
-                "--plugin=protoc-gen-grpc=${grpcPluginExe.absolutePath}",
             )
         cmd.addAll(protoFiles.files.map { it.absolutePath })
 
@@ -190,6 +138,8 @@ sourceSets {
     main {
         java {
             srcDir(protoOutputDir)
+            // Pre-generated gRPC stubs (committed to repo; regenerate locally when .proto changes)
+            srcDir(layout.projectDirectory.dir("src/generated/java"))
         }
     }
 }
