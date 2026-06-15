@@ -30,10 +30,10 @@ jobs:
         run: chmod +x ./gradlew
       - name: CI Gradle tuning (limit heap for 7GB runner)
         run: |
-          sed -i 's|^org.gradle.jvmargs.*|org.gradle.jvmargs=-Xmx3g -XX:+UseG1GC -XX:MaxGCPauseMillis=200 -Dfile.encoding=UTF-8|' gradle.properties
+          sed -i 's|^org.gradle.jvmargs.*|org.gradle.jvmargs=-Xmx2g -XX:+UseG1GC -XX:MaxGCPauseMillis=200 -Dfile.encoding=UTF-8|' gradle.properties
           sed -i 's|^kotlin.daemon.jvmargs.*|kotlin.daemon.jvmargs=-Xmx4g -XX:+UseG1GC|' gradle.properties
           sed -i 's|^org.gradle.workers.max.*|org.gradle.workers.max=1|' gradle.properties
-          grep -q '^org.gradle.parallel=' gradle.properties || echo 'org.gradle.parallel=true' >> gradle.properties
+          grep -q '^org.gradle.workers.max=' gradle.properties || echo 'org.gradle.workers.max=1' >> gradle.properties
       - name: Cache Gradle configuration cache
         uses: actions/cache@v4
         with:
@@ -48,12 +48,13 @@ jobs:
         run: |
           set -euo pipefail
           sed -i 's|<string name="app_name">.*</string>|<string name="app_name">Blbl-api19</string>|' app/src/main/res/values/strings.xml
-      - name: Build API19 release APK (unsigned for CI verification)
+      - name: Build API19 release APK
         env:
+          RELEASE_KEYSTORE_PATH: keystore/release.keystore
           RELEASE_STORE_PASSWORD: android
           RELEASE_KEY_ALIAS: release
           RELEASE_KEY_PASSWORD: android
-        run: ./gradlew :app:assembleKitkatRelease -PversionName=${{ inputs.version_name }} -PversionCode=${{ github.run_number }}
+        run: ./gradlew :app:assembleKitkatRelease -PversionName=${{ inputs.version_name }} -PversionCode=${{ github.run_number }} --no-daemon --no-build-cache
       - name: Upload API19 release APK to R2 (optional)
         env:
           R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
