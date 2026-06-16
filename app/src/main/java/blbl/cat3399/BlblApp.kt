@@ -1,12 +1,14 @@
 package blbl.cat3399
 
 import android.app.Application
+import android.content.Context
 import android.os.Build
 import blbl.cat3399.core.emote.ReplyEmotePanelRepository
 import blbl.cat3399.core.log.AppLog
 import blbl.cat3399.core.log.CrashTracker
 import blbl.cat3399.core.net.BiliClient
 import blbl.cat3399.core.net.WebCookieMaintainer
+import blbl.cat3399.core.prefs.MmkvContextWrapper
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
@@ -14,6 +16,10 @@ import kotlinx.coroutines.launch
 
 class BlblApp : Application() {
     private val appScope = CoroutineScope(SupervisorJob() + Dispatchers.IO)
+
+    override fun attachBaseContext(base: Context?) {
+        super.attachBaseContext(MmkvContextWrapper(base!!))
+    }
 
     override fun onCreate() {
         super.onCreate()

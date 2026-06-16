@@ -1,4 +1,4 @@
-﻿plugins {
+plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.plugin.compose")
     id("org.jlleitschuh.gradle.ktlint")
@@ -101,7 +101,7 @@ dependencies {
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
 
-    // Compose BOM — AGP auto-resolves compiler plugin for Kotlin 2.0.21
+    // Compose BOM - AGP auto-resolves compiler plugin for Kotlin 2.0.21
     val composeBom = platform("androidx.compose:compose-bom:2024.12.01")
     implementation(composeBom)
     implementation("androidx.compose.ui:ui")
@@ -114,6 +114,7 @@ dependencies {
 
     implementation("com.squareup.okhttp3:okhttp:4.12.0")
     implementation("io.coil-kt:coil:2.7.0")
+    implementation("com.tencent:mmkv:1.3.14")
     implementation("org.brotli:dec:0.1.2")
 
     implementation("androidx.media3:media3-exoplayer:1.8.0")

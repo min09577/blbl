@@ -319,6 +319,7 @@
     <ID>LargeClass:VideoApi.kt$VideoApi</ID>
     <ID>LargeClass:VideoDetailActivity.kt$VideoDetailActivity : BaseActivity</ID>
     <ID>LargeClass:WebVideoMapper.kt$WebVideoMapper</ID>
+    <ID>LongMethod:AboutScreen.kt$@Composable fun AboutScreen()</ID>
     <ID>LongMethod:AppLog.kt$AppLog$private suspend fun runFileWriter(file: File)</ID>
     <ID>LongMethod:ArchiveTripleAction.kt$suspend fun executeArchiveTripleAction( bvid: String, aid: Long?, selfMid: Long?, initialState: ArchiveTripleActionState, isStillValid: () -&gt; Boolean = { true }, ): ArchiveTripleActionResult</ID>
     <ID>LongMethod:BiliApi.kt$BiliApi$private fun parseDynamicVideoCards(items: JSONArray): List&lt;VideoCard&gt;</ID>
@@ -450,6 +451,7 @@
     <ID>LoopWithTooManyJumpStatements:UserScaleTabLayout.kt$UserScaleTabLayout$for</ID>
     <ID>LoopWithTooManyJumpStatements:VideoApi.kt$VideoApi$for</ID>
     <ID>LoopWithTooManyJumpStatements:WebVideoMapper.kt$WebVideoMapper$for</ID>
+    <ID>MagicNumber:AboutActivity.kt$31</ID>
     <ID>MagicNumber:ApkUpdateFlow.kt$ApkUpdateFlow$1.05f</ID>
     <ID>MagicNumber:ApkUpdateFlow.kt$ApkUpdateFlow$18f</ID>
     <ID>MagicNumber:ApkUpdater.kt$ApkUpdater$400L</ID>
@@ -575,6 +577,8 @@
     <ID>MagicNumber:IjkPlayerEngine.kt$IjkPlayerEngine$220</ID>
     <ID>MagicNumber:IjkPlayerEngine.kt$IjkPlayerEngine$400</ID>
     <ID>MagicNumber:IjkPlayerPlugin.kt$IjkPlayerPlugin$512</ID>
+    <ID>MagicNumber:ImageLoader.kt$ImageLoader$0.15</ID>
+    <ID>MagicNumber:ImageLoader.kt$ImageLoader$50</ID>
     <ID>MagicNumber:LiveApi.kt$LiveApi$10</ID>
     <ID>MagicNumber:LiveApi.kt$LiveApi$100_000_000.0</ID>
     <ID>MagicNumber:LiveApi.kt$LiveApi$10_000.0</ID>
@@ -5313,7 +5317,6 @@
     <ID>TooGenericExceptionCaught:GaiaVgateActivity.kt$GaiaVgateActivity.Bridge$t: Throwable</ID>
     <ID>TooGenericExceptionCaught:IjkPlayerEngine.kt$IjkPlayerEngine$t: Throwable</ID>
     <ID>TooGenericExceptionCaught:IjkPlayerPluginUi.kt$IjkPlayerPluginUi$t: Throwable</ID>
-    <ID>TooGenericExceptionCaught:ImageLoader.kt$ImageLoader$t: Throwable</ID>
     <ID>TooGenericExceptionCaught:LiveAreaDetailFragment.kt$LiveAreaDetailFragment$t: Throwable</ID>
     <ID>TooGenericExceptionCaught:LiveAreaIndexFragment.kt$LiveAreaIndexFragment$t: Throwable</ID>
     <ID>TooGenericExceptionCaught:LiveGridFragment.kt$LiveGridFragment$t: Throwable</ID>
