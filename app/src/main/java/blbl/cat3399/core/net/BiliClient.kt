@@ -6,6 +6,7 @@ import blbl.cat3399.core.log.AppLog
 import blbl.cat3399.core.prefs.AppPrefs
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
+import okhttp3.Cache
 import okhttp3.CookieJar
 import okhttp3.FormBody
 import okhttp3.HttpUrl.Companion.toHttpUrl
@@ -15,6 +16,7 @@ import okhttp3.Request
 import okhttp3.RequestBody
 import okhttp3.RequestBody.Companion.toRequestBody
 import org.json.JSONObject
+import java.io.File
 import java.io.IOException
 import java.util.concurrent.TimeUnit
 
@@ -23,6 +25,7 @@ object BiliClient {
     private const val BASE = "https://api.bilibili.com"
     private const val HDR_SKIP_ORIGIN = "X-Blbl-Skip-Origin"
     private const val LOG_HTTP_REQUESTS = false
+    private const val OKHTTP_CACHE_SIZE_BYTES = 50L * 1024 * 1024 // 50 MB
     internal const val APP_CDN_USER_AGENT = "Bilibili Freedoooooom/MarkII"
 
     lateinit var prefs: AppPrefs
@@ -59,9 +62,12 @@ object BiliClient {
         accounts = AccountSessionStore(context.applicationContext)
         cookies = CookieStore(context.applicationContext)
         val dns = ipv4OnlyDns { prefs.ipv4OnlyEnabled }
+        val cacheDir = File(context.applicationContext.cacheDir, "okhttp")
+        val cache = Cache(cacheDir, OKHTTP_CACHE_SIZE_BYTES)
         val baseClient =
             OkHttpClient
                 .Builder()
+                .cache(cache)
                 .cookieJar(cookies)
                 .dns(dns)
                 .connectTimeout(12, TimeUnit.SECONDS)
