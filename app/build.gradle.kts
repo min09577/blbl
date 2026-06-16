@@ -117,10 +117,10 @@ dependencies {
     implementation("com.tencent:mmkv:1.3.14")
     implementation("org.brotli:dec:0.1.2")
 
-    implementation("androidx.media3:media3-exoplayer:1.8.0")
-    implementation("androidx.media3:media3-exoplayer-hls:1.8.0")
-    implementation("androidx.media3:media3-ui:1.8.0")
-    implementation("androidx.media3:media3-datasource-okhttp:1.8.0")
+    implementation("androidx.media3:media3-exoplayer:1.10.1")
+    implementation("androidx.media3:media3-exoplayer-hls:1.10.1")
+    implementation("androidx.media3:media3-ui:1.10.1")
+    implementation("androidx.media3:media3-datasource-okhttp:1.10.1")
 
     implementation("com.google.zxing:core:3.5.3")
 
