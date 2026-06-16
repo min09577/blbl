@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.core.content.ContextCompat
+import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import blbl.cat3399.R
 import blbl.cat3399.core.emote.EmoteSpannable
@@ -65,6 +66,24 @@ class PlayerCommentsAdapter(
     private val items = ArrayList<Item>()
     private val requestedNotePictures = HashSet<Long>()
 
+    /**
+     * DiffUtil for efficient item-level updates.
+     * Kept as a manual adapter (not ListAdapter) because we need mutable access to items[]
+     * for in-place copy() mutations (like toggle, picture updates).
+     */
+    private val diffCallback =
+        object : DiffUtil.ItemCallback<Item>() {
+            override fun areItemsTheSame(
+                oldItem: Item,
+                newItem: Item,
+            ): Boolean = oldItem.rpid == newItem.rpid
+
+            override fun areContentsTheSame(
+                oldItem: Item,
+                newItem: Item,
+            ): Boolean = oldItem == newItem
+        }
+
     init {
         setHasStableIds(true)
     }
@@ -75,10 +94,28 @@ class PlayerCommentsAdapter(
     }
 
     fun setItems(list: List<Item>) {
+        val result =
+            DiffUtil.calculateDiff(
+                object : DiffUtil.Callback() {
+                    override fun getOldListSize(): Int = items.size
+
+                    override fun getNewListSize(): Int = list.size
+
+                    override fun areItemsTheSame(
+                        oldItemPosition: Int,
+                        newItemPosition: Int,
+                    ): Boolean = diffCallback.areItemsTheSame(items[oldItemPosition], list[newItemPosition])
+
+                    override fun areContentsTheSame(
+                        oldItemPosition: Int,
+                        newItemPosition: Int,
+                    ): Boolean = diffCallback.areContentsTheSame(items[oldItemPosition], list[newItemPosition])
+                },
+            )
         items.clear()
         items.addAll(list)
         requestedNotePictures.clear()
-        notifyDataSetChanged()
+        result.dispatchUpdatesTo(this)
     }
 
     fun appendItems(list: List<Item>) {

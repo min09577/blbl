@@ -2,22 +2,20 @@ package blbl.cat3399.feature.live
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import blbl.cat3399.core.ui.cloneInUserScale
 import blbl.cat3399.databinding.ItemLiveChatBinding
 
-class LiveChatAdapter : RecyclerView.Adapter<LiveChatAdapter.Vh>() {
+class LiveChatAdapter : ListAdapter<LiveChatAdapter.Item, LiveChatAdapter.Vh>(DiffCallback) {
     data class Item(
         val title: String,
         val body: String,
     )
 
-    private val items = ArrayList<Item>()
-
     fun submit(list: List<Item>) {
-        items.clear()
-        items.addAll(list)
-        notifyDataSetChanged()
+        submitList(list)
     }
 
     override fun onCreateViewHolder(
@@ -36,9 +34,7 @@ class LiveChatAdapter : RecyclerView.Adapter<LiveChatAdapter.Vh>() {
     override fun onBindViewHolder(
         holder: Vh,
         position: Int,
-    ) = holder.bind(items[position])
-
-    override fun getItemCount(): Int = items.size
+    ) = holder.bind(getItem(position))
 
     class Vh(
         private val binding: ItemLiveChatBinding,
@@ -47,5 +43,20 @@ class LiveChatAdapter : RecyclerView.Adapter<LiveChatAdapter.Vh>() {
             binding.tvTitle.text = item.title
             binding.tvBody.text = item.body
         }
+    }
+
+    companion object {
+        private val DiffCallback =
+            object : DiffUtil.ItemCallback<Item>() {
+                override fun areItemsTheSame(
+                    oldItem: Item,
+                    newItem: Item,
+                ): Boolean = oldItem.title == newItem.title
+
+                override fun areContentsTheSame(
+                    oldItem: Item,
+                    newItem: Item,
+                ): Boolean = oldItem == newItem
+            }
     }
 }

@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.ViewGroup.MarginLayoutParams
 import androidx.core.view.isVisible
+import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import blbl.cat3399.R
 import blbl.cat3399.core.image.ImageLoader
@@ -43,6 +44,19 @@ class VideoCardAdapter(
         val selectedIndex: Int,
     )
 
+    private val diffCallback =
+        object : DiffUtil.ItemCallback<VideoCard>() {
+            override fun areItemsTheSame(
+                oldItem: VideoCard,
+                newItem: VideoCard,
+            ): Boolean = stableKeyFor(oldItem) == stableKeyFor(newItem)
+
+            override fun areContentsTheSame(
+                oldItem: VideoCard,
+                newItem: VideoCard,
+            ): Boolean = oldItem == newItem
+        }
+
     init {
         setHasStableIds(true)
     }
@@ -53,13 +67,31 @@ class VideoCardAdapter(
     }
 
     fun submit(list: List<VideoCard>) {
+        val result =
+            DiffUtil.calculateDiff(
+                object : DiffUtil.Callback() {
+                    override fun getOldListSize(): Int = items.size
+
+                    override fun getNewListSize(): Int = list.size
+
+                    override fun areItemsTheSame(
+                        oldItemPosition: Int,
+                        newItemPosition: Int,
+                    ): Boolean = diffCallback.areItemsTheSame(items[oldItemPosition], list[newItemPosition])
+
+                    override fun areContentsTheSame(
+                        oldItemPosition: Int,
+                        newItemPosition: Int,
+                    ): Boolean = diffCallback.areContentsTheSame(items[oldItemPosition], list[newItemPosition])
+                },
+            )
         items.clear()
         items.addAll(list)
         if (expandedCardStableKey != null && items.none { stableKeyFor(it) == expandedCardStableKey }) {
             expandedCardStableKey = null
             selectedActionIndex = 0
         }
-        notifyDataSetChanged()
+        result.dispatchUpdatesTo(this)
     }
 
     fun append(list: List<VideoCard>) {
