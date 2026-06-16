@@ -31,7 +31,7 @@ jobs:
       - name: CI Gradle tuning (limit heap for 7GB runner)
         run: |
           sed -i 's|^org.gradle.jvmargs.*|org.gradle.jvmargs=-Xmx3g -XX:+UseG1GC -XX:MaxGCPauseMillis=200 -Dfile.encoding=UTF-8|' gradle.properties
-          sed -i 's|^kotlin.daemon.jvmargs.*|kotlin.daemon.jvmargs=-Xmx3g -XX:+UseG1GC|' gradle.properties
+          sed -i 's|^kotlin.daemon.jvmargs.*|kotlin.daemon.jvmargs=-Xmx4g -XX:+UseG1GC|' gradle.properties
           sed -i 's|^org.gradle.workers.max.*|org.gradle.workers.max=1|' gradle.properties
           grep -q '^org.gradle.workers.max=' gradle.properties || printf '\norg.gradle.workers.max=1\n' >> gradle.properties
       - name: Cache Gradle configuration cache
