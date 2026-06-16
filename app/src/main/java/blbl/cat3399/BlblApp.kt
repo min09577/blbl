@@ -38,6 +38,7 @@ class BlblApp : Application() {
             runCatching { ReplyEmotePanelRepository.warmup(this@BlblApp) }
                 .onFailure { AppLog.w("BlblApp", "reply emote warmup failed", it) }
         }
+        blbl.cat3399.core.image.ImageLoader.init(BiliClient.cdnOkHttp)
     }
 
     companion object {
