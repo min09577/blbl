@@ -111,8 +111,14 @@ class GaiaVgateActivity : BaseActivity() {
     }
 
     override fun onDestroy() {
-        runCatching {
+        if (::webView.isInitialized) {
             webView.removeJavascriptInterface("Android")
+            webView.stopLoading()
+            webView.webChromeClient = null
+            (webView.parent as? ViewGroup)?.removeView(webView)
+            webView.removeAllViews()
+            webView.settings.javaScriptEnabled = false
+            webView.clearHistory()
             webView.destroy()
         }
         super.onDestroy()
