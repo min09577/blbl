@@ -72,7 +72,7 @@ jobs:
           sed -i 's|^org.gradle.jvmargs.*|org.gradle.jvmargs=-Xmx2g -XX:+UseG1GC -XX:MaxGCPauseMillis=200 -Dfile.encoding=UTF-8|' gradle.properties
           sed -i 's|^kotlin.daemon.jvmargs.*|kotlin.daemon.jvmargs=-Xmx4g -XX:+UseG1GC|' gradle.properties
           sed -i 's|^org.gradle.workers.max.*|org.gradle.workers.max=1|' gradle.properties
-          grep -q '^org.gradle.workers.max=' gradle.properties || echo 'org.gradle.workers.max=1' >> gradle.properties
+          grep -q '^org.gradle.workers.max=' gradle.properties || printf '\norg.gradle.workers.max=1\n' >> gradle.properties
       - name: Cache Gradle configuration cache
         uses: actions/cache@v4
         with:
@@ -119,7 +119,7 @@ jobs:
           sed -i 's|^org.gradle.jvmargs.*|org.gradle.jvmargs=-Xmx2g -XX:+UseG1GC -XX:MaxGCPauseMillis=200 -Dfile.encoding=UTF-8|' gradle.properties
           sed -i 's|^kotlin.daemon.jvmargs.*|kotlin.daemon.jvmargs=-Xmx4g -XX:+UseG1GC|' gradle.properties
           sed -i 's|^org.gradle.workers.max.*|org.gradle.workers.max=1|' gradle.properties
-          grep -q '^org.gradle.parallel=' gradle.properties || echo 'org.gradle.parallel=true' >> gradle.properties
+          grep -q '^org.gradle.parallel=' gradle.properties || printf '\norg.gradle.parallel=true\n' >> gradle.properties
       - name: Cache Gradle configuration cache
         if: steps.check.outputs.skip != 'true'
         uses: actions/cache@v4
@@ -178,7 +178,7 @@ jobs:
           sed -i 's|^org.gradle.jvmargs.*|org.gradle.jvmargs=-Xmx2g -XX:+UseG1GC -XX:MaxGCPauseMillis=200 -Dfile.encoding=UTF-8|' gradle.properties
           sed -i 's|^kotlin.daemon.jvmargs.*|kotlin.daemon.jvmargs=-Xmx4g -XX:+UseG1GC|' gradle.properties
           sed -i 's|^org.gradle.workers.max.*|org.gradle.workers.max=1|' gradle.properties
-          grep -q '^org.gradle.parallel=' gradle.properties || echo 'org.gradle.parallel=true' >> gradle.properties
+          grep -q '^org.gradle.parallel=' gradle.properties || printf '\norg.gradle.parallel=true\n' >> gradle.properties
       - name: Generate keystore
         if: steps.check-tv.outputs.skip != 'true'
         run: |
