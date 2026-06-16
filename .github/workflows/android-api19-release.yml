@@ -50,7 +50,7 @@ jobs:
           sed -i 's|<string name="app_name">.*</string>|<string name="app_name">Blbl-api19</string>|' app/src/main/res/values/strings.xml
       - name: Build API19 release APK
         env:
-          RELEASE_KEYSTORE_PATH: keystore/release.keystore
+          RELEASE_KEYSTORE_PATH: ${{ github.workspace }}/keystore/release.keystore
           RELEASE_STORE_PASSWORD: android
           RELEASE_KEY_ALIAS: release
           RELEASE_KEY_PASSWORD: android
