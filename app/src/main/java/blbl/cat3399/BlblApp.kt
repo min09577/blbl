@@ -3,6 +3,8 @@ package blbl.cat3399
 import android.app.Application
 import android.content.Context
 import android.os.Build
+import android.os.Handler
+import android.os.Looper
 import blbl.cat3399.core.emote.ReplyEmotePanelRepository
 import blbl.cat3399.core.log.AppLog
 import blbl.cat3399.core.log.CrashTracker
@@ -16,6 +18,7 @@ import kotlinx.coroutines.launch
 
 class BlblApp : Application() {
     private val appScope = CoroutineScope(SupervisorJob() + Dispatchers.IO)
+    private val mainHandler = Handler(Looper.getMainLooper())
 
     override fun attachBaseContext(base: Context?) {
         super.attachBaseContext(MmkvContextWrapper(base!!))
@@ -36,14 +39,18 @@ class BlblApp : Application() {
             .init(this)
         blbl.cat3399.feature.live.LiveReminder
             .initChannel(this) // v4.14: 直播提醒通知通道
-        appScope.launch {
-            runCatching { WebCookieMaintainer.ensureDailyMaintenance() }
-                .onFailure { AppLog.w("BlblApp", "daily maintenance failed", it) }
-        }
-        appScope.launch {
-            runCatching { ReplyEmotePanelRepository.warmup(this@BlblApp) }
-                .onFailure { AppLog.w("BlblApp", "reply emote warmup failed", it) }
-        }
+        // Defer non-critical background work until after first frame (500ms)
+        // to reduce cold-start CPU/memory contention
+        mainHandler.postDelayed({
+            appScope.launch {
+                runCatching { WebCookieMaintainer.ensureDailyMaintenance() }
+                    .onFailure { AppLog.w("BlblApp", "daily maintenance failed", it) }
+            }
+            appScope.launch {
+                runCatching { ReplyEmotePanelRepository.warmup(this@BlblApp) }
+                    .onFailure { AppLog.w("BlblApp", "reply emote warmup failed", it) }
+            }
+        }, 500L)
         blbl.cat3399.core.image.ImageLoader
             .init(BiliClient.cdnOkHttp)
     }
