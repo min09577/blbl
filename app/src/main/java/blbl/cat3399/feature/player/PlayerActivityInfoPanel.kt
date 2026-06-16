@@ -33,6 +33,7 @@ internal fun PlayerActivity.initPlayerInfoPanel() {
     binding.actionPlayerInfoFav.setOnClickListener { onFavButtonClicked(showControls = false) }
     binding.actionPlayerInfoShare.setOnClickListener { copyVideoLink() }
 
+    binding.recyclerPlayerInfoShelf.setHasFixedSize(true)
     binding.recyclerPlayerInfoShelf.layoutManager =
         LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
     binding.recyclerPlayerInfoShelf.itemAnimator = null
@@ -44,6 +45,7 @@ internal fun PlayerActivity.initPlayerInfoPanel() {
             isSelected = { _, pos -> isPlayerInfoShelfPositionSelected(pos) },
         )
 
+    binding.recyclerPlayerInfoRecommend.setHasFixedSize(true)
     binding.recyclerPlayerInfoRecommend.layoutManager = LinearLayoutManager(this)
     binding.recyclerPlayerInfoRecommend.itemAnimator = null
     binding.recyclerPlayerInfoRecommend.adapter =

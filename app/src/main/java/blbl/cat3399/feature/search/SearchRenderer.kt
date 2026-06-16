@@ -56,6 +56,7 @@ class SearchRenderer internal constructor(
     fun setupInput() {
         setupQueryInput()
 
+        binding.recyclerKeys.setHasFixedSize(true)
         binding.recyclerKeys.adapter = keyAdapter
         binding.recyclerKeys.layoutManager = GridLayoutManager(viewContext, 6)
         (binding.recyclerKeys.itemAnimator as? SimpleItemAnimator)?.supportsChangeAnimations = false

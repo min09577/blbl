@@ -115,6 +115,7 @@ class DynamicFragment :
         val binding = _binding ?: return
 
         followAdapter = FollowingAdapter(::onFollowingClicked)
+        binding.recyclerFollowing.setHasFixedSize(true)
         binding.recyclerFollowing.layoutManager = LinearLayoutManager(requireContext())
         binding.recyclerFollowing.adapter = followAdapter
         binding.recyclerFollowing.clearOnScrollListeners()

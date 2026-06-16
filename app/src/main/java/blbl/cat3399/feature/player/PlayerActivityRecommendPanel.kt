@@ -71,6 +71,7 @@ internal fun PlayerActivity.initBottomCardPanel() {
 
     syncBottomPanelTabUi(kind = bottomCardPanelKind)
 
+    binding.recyclerRecommend.setHasFixedSize(true)
     binding.recyclerRecommend.layoutManager =
         LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
     binding.recyclerRecommend.itemAnimator = null

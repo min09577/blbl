@@ -69,11 +69,13 @@ class SettingsActivity : BaseActivity() {
         binding.btnBack.setOnClickListener { finish() }
 
         leftAdapter = SettingsLeftAdapter { index -> renderer.showSection(index, keepScroll = false) }
+        binding.recyclerLeft.setHasFixedSize(true)
         binding.recyclerLeft.layoutManager = LinearLayoutManager(this)
         binding.recyclerLeft.itemAnimator = null
         binding.recyclerLeft.adapter = leftAdapter
         leftAdapter.submit(sections, selected = 0)
 
+        binding.recyclerRight.setHasFixedSize(true)
         binding.recyclerRight.layoutManager = LinearLayoutManager(this)
         binding.recyclerRight.itemAnimator = null
         rightAdapter = SettingsEntryAdapter { entry -> interactionHandler.onEntryClicked(entry) }

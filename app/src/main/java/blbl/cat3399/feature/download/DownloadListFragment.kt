@@ -52,6 +52,7 @@ class DownloadListFragment : Fragment() {
                 onDelete = ::onDeleteDownload,
                 onInfo = ::onShowInfo,
             )
+        binding.recyclerDownloads.setHasFixedSize(true)
         binding.recyclerDownloads.layoutManager = LinearLayoutManager(requireContext())
         binding.recyclerDownloads.adapter = adapter
     }

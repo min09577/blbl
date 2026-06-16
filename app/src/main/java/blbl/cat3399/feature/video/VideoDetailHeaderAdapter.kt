@@ -382,11 +382,13 @@ class VideoDetailHeaderAdapter(
             binding.btnPartsOrder.setOnClickListener { onPartsOrderClick() }
             binding.btnSeasonOrder.setOnClickListener { onSeasonOrderClick() }
 
+            binding.recyclerParts.setHasFixedSize(true)
             binding.recyclerParts.layoutManager =
                 LinearLayoutManager(binding.root.context, LinearLayoutManager.HORIZONTAL, false)
             binding.recyclerParts.itemAnimator = null
             binding.recyclerParts.adapter = partsAdapter
 
+            binding.recyclerSeason.setHasFixedSize(true)
             binding.recyclerSeason.layoutManager =
                 LinearLayoutManager(binding.root.context, LinearLayoutManager.HORIZONTAL, false)
             binding.recyclerSeason.itemAnimator = null

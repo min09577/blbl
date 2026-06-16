@@ -141,6 +141,7 @@ class MainActivity :
                     handleSidebarNavClick(item.id)
                 },
             )
+        binding.recyclerSidebar.setHasFixedSize(true)
         binding.recyclerSidebar.layoutManager = LinearLayoutManager(this)
         binding.recyclerSidebar.adapter = navAdapter
         (binding.recyclerSidebar.itemAnimator as? SimpleItemAnimator)?.supportsChangeAnimations = false
