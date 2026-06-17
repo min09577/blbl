@@ -76,15 +76,16 @@ jobs:
           RELEASE_KEY_ALIAS: release
           RELEASE_KEY_PASSWORD: android
         run: ./gradlew assembleRelease -PversionName=${{ needs.version.outputs.version_name }} -PversionCode=${{ github.run_number }} --no-daemon --stacktrace
-      - name: Copy TV APK
+      - name: Copy APKs
         run: |
           mkdir -p output
-          cp app/build/outputs/apk/release/app-release.apk "output/blbl-tv-${{ needs.version.outputs.version_name }}.apk"
+          cp app/build/outputs/apk/kitkat/release/app-kitkat-release.apk output/app-release.apk
+          cp app/build/outputs/apk/kitkat/release/app-kitkat-release.apk "output/blbl-tv-${{ needs.version.outputs.version_name }}.apk"
       - name: Upload release APK
         uses: actions/upload-artifact@v4
         with:
           name: app-release-apk
-          path: app/build/outputs/apk/release/app-release.apk
+          path: output/app-release.apk
       - name: Upload TV APK
         uses: actions/upload-artifact@v4
         with:
@@ -117,8 +118,8 @@ jobs:
         run: |
           APK_FILES=""
           VN="${{ needs.version.outputs.version_name }}"
-          if [ -f artifacts/release/app-release.apk ]; then
-            cp artifacts/release/app-release.apk "blbl-${VN}-release.apk"
+          if [ -f artifacts/release/output/app-release.apk ]; then
+            cp artifacts/release/output/app-release.apk "blbl-${VN}-release.apk"
             APK_FILES="$APK_FILES blbl-${VN}-release.apk"
           fi
           if ls artifacts/tv/*.apk 1>/dev/null 2>&1; then
@@ -175,8 +176,8 @@ jobs:
             aws s3 cp "version" "s3://${R2_BUCKET}/${PREFIX}version" --endpoint-url "${ENDPOINT}" --content-type "text/plain" --cache-control "no-cache"
             aws s3 cp "CHANGELOG.md" "s3://${R2_BUCKET}/${PREFIX}CHANGELOG.md" --endpoint-url "${ENDPOINT}" --content-type "text/markdown; charset=utf-8" --cache-control "no-cache"
           fi
-          if [ -f artifacts/release/app-release.apk ]; then
-            aws s3 cp "artifacts/release/app-release.apk" "s3://${R2_BUCKET}/${PREFIX}blbl-${CLEAN}-release.apk" --endpoint-url "${ENDPOINT}" --content-type "application/vnd.android.package-archive"
-            aws s3 cp "artifacts/release/app-release.apk" "s3://${R2_BUCKET}/${PREFIX}blbl-latest-release.apk" --endpoint-url "${ENDPOINT}" --content-type "application/vnd.android.package-archive" --cache-control "no-cache"
+          if [ -f artifacts/release/output/app-release.apk ]; then
+            aws s3 cp "artifacts/release/output/app-release.apk" "s3://${R2_BUCKET}/${PREFIX}blbl-${CLEAN}-release.apk" --endpoint-url "${ENDPOINT}" --content-type "application/vnd.android.package-archive"
+            aws s3 cp "artifacts/release/output/app-release.apk" "s3://${R2_BUCKET}/${PREFIX}blbl-latest-release.apk" --endpoint-url "${ENDPOINT}" --content-type "application/vnd.android.package-archive" --cache-control "no-cache"
           fi
           echo "R2 upload done"
