@@ -2,8 +2,6 @@ plugins {
     id("java-library")
 }
 
-import java.net.URL
-
 java {
     sourceCompatibility = JavaVersion.VERSION_17
     targetCompatibility = JavaVersion.VERSION_17
@@ -19,115 +17,30 @@ dependencies {
 
 // --- Protobuf code generation (protobuf java only; gRPC stubs pre-generated in src/generated/java) ---
 
-val protoSourceDir = layout.projectDirectory.dir("src/main/proto")
-val protoOutputDir = layout.buildDirectory.dir("generated/source/proto/main/java")
+val protoSrcDir = layout.projectDirectory.dir("src/main/proto")
+val protoGenDir = layout.buildDirectory.dir("generated/source/proto/main/java")
 
-val generateProto by tasks.registering {
+val generateProto by tasks.registering(blbl.build.GenerateProto::class) {
     group = "protobuf"
     description = "Generate Java-lite sources from .proto files (protoc only, no gRPC)"
 
-    val protoFiles = fileTree(protoSourceDir) { include("**/*.proto") }
-    inputs.files(protoFiles)
-    outputs.dir(protoOutputDir)
+    protoFiles.from(fileTree(protoSrcDir) { include("**/*.proto") })
+    protoSourceRoot.set(protoSrcDir.asFile.absolutePath)
+    protoOutputDir.set(protoGenDir)
+    workDir.set(layout.buildDirectory)
 
-    doLast {
-        val toolsDir =
-            layout.buildDirectory
-                .dir("tmp/protoc-tools")
-                .get()
-                .asFile
-        val protoIncludeDir =
-            layout.buildDirectory
-                .dir("tmp/proto-include")
-                .get()
-                .asFile
-        val osName = System.getProperty("os.name").lowercase()
-        val isWindows = osName.contains("windows")
-        val protocExe = File(toolsDir, if (isWindows) "protoc.exe" else "protoc")
-
-        val protocDist =
-            when {
-                isWindows -> "win64"
-                osName.contains("mac") ->
-                    if (System.getProperty("os.arch") == "aarch64") "osx-aarch_64" else "osx-x86_64"
-                else ->
-                    if (System.getProperty("os.arch") == "aarch64") "linux-aarch_64" else "linux-x86_64"
-            }
-
-        // Download protoc binary + includes from GitHub Release (cached)
-        if (!protocExe.exists() || !protoIncludeDir.resolve("google/protobuf/any.proto").exists()) {
-            val protoZip =
-                layout.buildDirectory
-                    .file("tmp/protoc-dist.zip")
-                    .get()
-                    .asFile
-            protoZip.parentFile.mkdirs()
-            val url = URL("https://github.com/protocolbuffers/protobuf/releases/download/v25.3/protoc-25.3-$protocDist.zip")
-            logger.lifecycle("protoc: downloading protoc-25.3-$protocDist.zip...")
-            val inp = url.openStream()
-            try { inp.copyTo(protoZip.outputStream()) } finally { inp.close() }
-
-            val extractDir =
-                layout.buildDirectory
-                    .dir("tmp/protoc-extract")
-                    .get()
-                    .asFile
-            extractDir.deleteRecursively()
-            project.copy {
-                from(project.zipTree(protoZip))
-                into(extractDir)
-            }
-            val srcProtoc = File(extractDir, if (isWindows) "bin/protoc.exe" else "bin/protoc")
-            if (srcProtoc.exists()) {
-                toolsDir.mkdirs()
-                srcProtoc.copyTo(protocExe, overwrite = true)
-            }
-            val srcInclude = File(extractDir, "include")
-            if (srcInclude.isDirectory) {
-                protoIncludeDir.deleteRecursively()
-                srcInclude.renameTo(protoIncludeDir)
-            }
-            extractDir.deleteRecursively()
-            protoZip.delete()
-        } else {
-            logger.lifecycle("protoc: using cached protoc")
-        }
-
-        protocExe.setExecutable(true)
-        val isWin = isWindows
-        if (!isWin) {
-            ProcessBuilder("chmod", "+x", protocExe.absolutePath).start().waitFor()
-        }
-
-        val outputDir = protoOutputDir.get().asFile
-        outputDir.deleteRecursively()
-        outputDir.mkdirs()
-
-        // Only generate protobuf Java-lite; gRPC stubs are pre-generated in src/generated/java
-        val cmd =
-            mutableListOf(
-                protocExe.absolutePath,
-                "-I${protoSourceDir.asFile.absolutePath}",
-                "-I${protoIncludeDir.absolutePath}",
-                "--java_out=lite:${outputDir.absolutePath}",
-            )
-        cmd.addAll(protoFiles.files.map { it.absolutePath })
-
-        val process = ProcessBuilder(cmd).redirectErrorStream(true).start()
-        val stdout = process.inputStream.bufferedReader().readText()
-        val exitCode = process.waitFor()
-        if (exitCode != 0) error("protoc failed (exit $exitCode):\n$stdout")
-
-        logger.lifecycle(
-            "protoc: generated {} Java files from {} proto sources",
-            fileTree(outputDir) { include("**/*.java") }.files.size,
-            protoFiles.files.size,
-        )
-    }
-}
-
-generateProto.configure {
-    notCompatibleWithConfigurationCache("Downloads protoc from GitHub releases")
+    val osName = System.getProperty("os.name").lowercase()
+    val isWin = osName.contains("windows")
+    windowsHost.set(isWin)
+    protocDistSuffix.set(
+        when {
+            isWin -> "win64"
+            osName.contains("mac") ->
+                if (System.getProperty("os.arch") == "aarch64") "osx-aarch_64" else "osx-x86_64"
+            else ->
+                if (System.getProperty("os.arch") == "aarch64") "linux-aarch_64" else "linux-x86_64"
+        },
+    )
 }
 
 tasks.named("compileJava").configure {
@@ -137,7 +50,7 @@ tasks.named("compileJava").configure {
 sourceSets {
     main {
         java {
-            srcDir(protoOutputDir)
+            srcDir(protoGenDir)
             // Pre-generated gRPC stubs (committed to repo; regenerate locally when .proto changes)
             srcDir(layout.projectDirectory.dir("src/generated/java"))
         }

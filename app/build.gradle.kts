@@ -131,87 +131,12 @@ dependencies {
 
 // Enforce theme-token usage in layouts so adding new theme presets doesn't silently break contrast.
 val checkThemeTokens =
-    tasks.register("checkThemeTokens") {
+    tasks.register<blbl.build.CheckThemeTokens>("checkThemeTokens") {
         group = "verification"
         description = "Fails if layouts reference fixed palette colors instead of theme attributes."
-
-        doLast {
-            val resDir = file("src/main/res")
-            val layoutDirs =
-                resDir
-                    .listFiles()
-                    ?.filter { it.isDirectory && it.name.startsWith("layout") }
-                    .orEmpty()
-
-            fun isWordChar(c: Char): Boolean = c.isLetterOrDigit() || c == '_'
-
-            // Match whole resource refs (word boundary) to avoid false positives like
-            // `@color/blbl_text_on_media` or `@drawable/blbl_focus_bg_round_danger`.
-            fun containsWholeToken(
-                line: String,
-                token: String,
-            ): Boolean {
-                var fromIndex = 0
-                while (true) {
-                    val idx = line.indexOf(token, startIndex = fromIndex)
-                    if (idx < 0) return false
-                    val before = line.getOrNull(idx - 1)
-                    val after = line.getOrNull(idx + token.length)
-                    val beforeOk = before == null || !isWordChar(before)
-                    val afterOk = after == null || !isWordChar(after)
-                    if (beforeOk && afterOk) return true
-                    fromIndex = idx + token.length
-                }
-            }
-
-            val forbidden =
-                listOf(
-                    "@color/blbl_bg",
-                    "@color/blbl_surface",
-                    "@color/blbl_text",
-                    "@color/blbl_text_secondary",
-                    "@color/blbl_focus_stroke",
-                    "@drawable/blbl_focus_bg_round",
-                )
-
-            val violations = mutableListOf<String>()
-            for (dir in layoutDirs) {
-                dir
-                    .walkTopDown()
-                    .filter { it.isFile && it.extension.equals("xml", ignoreCase = true) }
-                    .forEach { f ->
-                        val relPath = f.relativeTo(projectDir).invariantSeparatorsPath
-                        val lines = f.readLines(Charsets.UTF_8)
-                        for ((index, line) in lines.withIndex()) {
-                            for (token in forbidden) {
-                                if (containsWholeToken(line, token)) {
-                                    violations.add("$relPath:${index + 1}: $token")
-                                }
-                            }
-                        }
-                    }
-            }
-
-            if (violations.isNotEmpty()) {
-                val msg =
-                    buildString {
-                        appendLine("Theme token check failed: layouts must use theme attributes, not fixed palette colors.")
-                        appendLine(
-                            "Use ?attr/colorOnSurface, ?android:attr/textColorSecondary, ?attr/colorBackground, " +
-                                "?attr/colorSurface, ?attr/blblOnPageBackdrop, ?attr/blblFocusBgRound, " +
-                                "?attr/blblFocusStrokeColor, etc.",
-                        )
-                        appendLine("Violations:")
-                        violations.forEach { appendLine("  $it") }
-                    }
-                throw GradleException(msg)
-            }
-        }
+        resDir.set(layout.projectDirectory.dir("src/main/res"))
+        projectRoot.set(layout.projectDirectory.asFile)
     }
-
-checkThemeTokens.configure {
-    notCompatibleWithConfigurationCache("Scans layout XML for theme tokens")
-}
 
 tasks.named("preBuild").configure {
     dependsOn(checkThemeTokens)
