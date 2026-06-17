@@ -2000,8 +2000,9 @@ class PlayerActivity : BaseActivity() {
             // P3: Gamepad Y key — toggle danmaku on/off
             KeyEvent.KEYCODE_BUTTON_Y,
             -> {
-                session.danmaku.enabled = !session.danmaku.enabled
-                AppToast.show(this, if (session.danmaku.enabled) "弹幕已开启" else "弹幕已关闭")
+                val newEnabled = !session.danmaku.enabled
+                setDanmakuEnabled(newEnabled)
+                AppToast.show(this, if (newEnabled) "弹幕已开启" else "弹幕已关闭")
                 return true
             }
 

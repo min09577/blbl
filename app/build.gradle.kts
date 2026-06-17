@@ -43,7 +43,7 @@ android {
     productFlavors {
         register("kitkat") {
             dimension = "api"
-            minSdk = 19
+            minSdk = 21
             applicationIdSuffix = ".kitkat"
             signingConfig = signingConfigs.getByName("release")
         }
