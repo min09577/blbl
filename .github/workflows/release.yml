@@ -57,7 +57,7 @@ jobs:
       - name: CI Gradle tuning
         run: |
           sed -i 's|^org.gradle.jvmargs.*|org.gradle.jvmargs=-Xmx3g -XX:+UseG1GC -XX:MaxGCPauseMillis=200 -Dfile.encoding=UTF-8|' gradle.properties
-          sed -i 's|^kotlin.daemon.jvmargs.*|kotlin.daemon.jvmargs=-Xmx2g -XX:+UseG1GC|' gradle.properties
+          sed -i 's|^kotlin.daemon.jvmargs.*|kotlin.daemon.jvmargs=-Xmx4g -XX:+UseG1GC|' gradle.properties
           sed -i 's|^org.gradle.workers.max.*|org.gradle.workers.max=1|' gradle.properties
           grep -q '^org.gradle.parallel=' gradle.properties || printf '\norg.gradle.parallel=false\n' >> gradle.properties
           grep -q '^kotlin.compiler.execution.strategy=' gradle.properties || printf '\nkotlin.compiler.execution.strategy=in-process\n' >> gradle.properties
