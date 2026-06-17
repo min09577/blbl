@@ -788,7 +788,7 @@ class PlayerActivity : BaseActivity() {
         // Touch-only back button: keep click, but never allow DPAD focus.
         binding.btnBack.isFocusable = false
         binding.btnBack.isFocusableInTouchMode = false
-        binding.tvOnline.text = "-人正在观看"
+        binding.tvOnline.text = "-人正在观�?
         binding.llTitleMeta.visibility = View.VISIBLE
         binding.tvViewCount.text = "-"
         binding.tvPubdate.text = ""
@@ -907,9 +907,7 @@ class PlayerActivity : BaseActivity() {
                                 val durationMs = currentViewDurationMs ?: 0L
                                 when {
                                     durationMs <= 60_000L -> DanmakuLaneDensity.Dense // 短视频：密集
-                                    durationMs <= 300_000L -> DanmakuLaneDensity.Standard // 中等视频：标准
-                                    durationMs <= 600_000L -> DanmakuLaneDensity.Sparse // 较长视频：稀疏
-                                    else -> DanmakuLaneDensity.VerySparse // 长视频：极疏
+                                    durationMs <= 300_000L -> DanmakuLaneDensity.Standard // 中等视频：标�?                                    durationMs <= 600_000L -> DanmakuLaneDensity.Sparse // 较长视频：稀�?                                    else -> DanmakuLaneDensity.VerySparse // 长视频：极疏
                                 }
                             } else {
                                 DanmakuLaneDensity.fromPrefValue(prefs.danmakuLaneDensity)
@@ -941,9 +939,9 @@ class PlayerActivity : BaseActivity() {
                 val status = IjkPlayerPlugin.status(this)
                 val text =
                     if (status == IjkPlayerPlugin.InstallStatus.NeedsUpdate) {
-                        "IjkPlayer 插件需要更新，已临时使用 ExoPlayer"
+                        "IjkPlayer 插件需要更新，已临时使�?ExoPlayer"
                     } else {
-                        "IjkPlayer 插件未安装，已临时使用 ExoPlayer"
+                        "IjkPlayer 插件未安装，已临时使�?ExoPlayer"
                     }
                 AppToast.showLong(this, text)
                 IjkPlayerPluginUi.ensureInstalled(this) {
@@ -998,8 +996,7 @@ class PlayerActivity : BaseActivity() {
             attrs.screenBrightness = targetBrightness
             window.attributes = attrs
         }
-        // v13.15: 音量记忆 - 应用记忆的音量
-        if (prefs.volumeMemoryEnabled && prefs.lastVideoVolume >= 0) {
+        // v13.15: 音量记忆 - 应用记忆的音�?        if (prefs.volumeMemoryEnabled && prefs.lastVideoVolume >= 0) {
             try {
                 val audioManager = getSystemService(AUDIO_SERVICE) as AudioManager
                 val maxVolume = audioManager.getStreamMaxVolume(AudioManager.STREAM_MUSIC)
@@ -1037,8 +1034,7 @@ class PlayerActivity : BaseActivity() {
                 AppToast.show(this, "已从上次位置继续播放")
             }
         }
-        // v13.17: 画质记忆 - 恢复上次选择的画质
-        if (prefs.qualityMemoryEnabled) {
+        // v13.17: 画质记忆 - 恢复上次选择的画�?        if (prefs.qualityMemoryEnabled) {
             val savedQuality = BiliClient.prefs.getVideoQuality(currentBvid)
             if (savedQuality > 0) {
                 session = session.copy(targetQn = savedQuality)
@@ -1083,15 +1079,15 @@ class PlayerActivity : BaseActivity() {
                                     "player:fallback",
                                     "attempt=$decodeFallbackAttemptCount/${HIGH_SPEC_FALLBACK_MAX_ATTEMPTS} type=${playbackException.errorCodeName} to=$nextConstraints",
                                 )
-                                AppToast.show(this@PlayerActivity, "杜比/无损播放失败，尝试回退到普通轨道…")
+                                AppToast.show(this@PlayerActivity, "杜比/无损播放失败，尝试回退到普通轨道�?)
                                 reloadStream(keepPosition = true, resetConstraints = false)
                                 return
                             }
                         }
-                        AppToast.show(this@PlayerActivity, "播放失败：${playbackException.errorCodeName}")
+                        AppToast.show(this@PlayerActivity, "播放失败�?{playbackException.errorCodeName}")
                         return
                     }
-                    AppToast.showLong(this@PlayerActivity, "播放失败：${error.message ?: "未知错误"}")
+                    AppToast.showLong(this@PlayerActivity, "播放失败�?{error.message ?: "未知错误"}")
                 }
 
                 override fun onIsPlayingChanged(isPlaying: Boolean) {
@@ -1175,8 +1171,7 @@ class PlayerActivity : BaseActivity() {
                             val w = debug.videoInputWidth ?: exo?.videoFormat?.width ?: 0
                             val h = debug.videoInputHeight ?: exo?.videoFormat?.height ?: 0
                             val fps = debug.videoInputFps?.toInt() ?: (exo?.videoFormat?.frameRate?.toInt() ?: 0)
-                            // v8.2: 显示视频比特率
-                            val br =
+                            // v8.2: 显示视频比特�?                            val br =
                                 try {
                                     val fmt = exo?.videoFormat
                                     val brBps =
@@ -1188,8 +1183,7 @@ class PlayerActivity : BaseActivity() {
                                     ""
                                 }
                             val res = if (w > 0 && h > 0) "${w}x$h" else ""
-                            // v9.4: 显示视频宽高比
-                            val aspectRatio =
+                            // v9.4: 显示视频宽高�?                            val aspectRatio =
                                 try {
                                     if (w > 0 && h > 0) {
                                         fun gcd(
@@ -1249,16 +1243,14 @@ class PlayerActivity : BaseActivity() {
                                 } catch (_: Throwable) {
                                     ""
                                 }
-                            // v8.4: 显示音频采样率
-                            val audioSampleRate =
+                            // v8.4: 显示音频采样�?                            val audioSampleRate =
                                 try {
                                     val sr = exo?.audioFormat?.sampleRate ?: 0
                                     if (sr > 0) "${sr / 1000}kHz" else ""
                                 } catch (_: Throwable) {
                                     ""
                                 }
-                            // v8.5: 显示音频比特率
-                            val audioBr =
+                            // v8.5: 显示音频比特�?                            val audioBr =
                                 try {
                                     val abr = exo?.audioFormat?.bitrate?.takeIf { it > 0 } ?: 0
                                     if (abr > 0) "${abr / 1000}kbps" else ""
@@ -1313,13 +1305,12 @@ class PlayerActivity : BaseActivity() {
                                         "" +
                                             if (audioInfo.isNotEmpty()) " | $audioInfo" else ""
                                     }
-                            // v9.9: 显示已缓冲时长
-                            val bufferedSec =
+                            // v9.9: 显示已缓冲时�?                            val bufferedSec =
                                 try {
                                     val bufPos = exo?.bufferedPosition ?: 0L
                                     val curPos = exo?.currentPosition ?: 0L
                                     val bufSec = ((bufPos - curPos) / 1000).coerceAtLeast(0)
-                                    if (bufSec > 0) "已缓冲: ${bufSec}秒" else ""
+                                    if (bufSec > 0) "已缓�? ${bufSec}�? else ""
                                 } catch (_: Throwable) {
                                     ""
                                 }
@@ -1485,18 +1476,12 @@ class PlayerActivity : BaseActivity() {
         refreshSettings(settingsAdapter)
         updateDebugOverlay()
         initNetworkSpeedIndicator()
-        initBatteryIndicator() // v12.12: 电池电量指示器
-        initVideoQualityIndicator() // v12.25: 视频质量指示器
-        applyVideoColorAdjustment() // v12.26: 视频色彩调节
+        initBatteryIndicator() // v12.12: 电池电量指示�?        initVideoQualityIndicator() // v12.25: 视频质量指示�?        applyVideoColorAdjustment() // v12.26: 视频色彩调节
         applyVideoCrop() // v12.27: 视频画面裁剪
         applyVideoSharpen() // v12.28: 视频画面锐化/模糊
         applyVideoColorTemperature() // v12.29: 视频画面色温调节
         applyVideoFilterPreset() // v12.30: 视频画面滤镜预设
-        initPinchZoom() // v13.4: 初始化捏合缩放
-        initPanGesture() // v13.5: 初始化双指平移
-        initCountdownDisplay() // v13.7: 初始化剩余时间倒计时
-        initSleepTimer() // v46.x: 休眠定时器（TV/车机）
-        initSpeedCurveDisplay() // v13.8: 初始化播放速度曲线
+        initPinchZoom() // v13.4: 初始化捏合缩�?        initPanGesture() // v13.5: 初始化双指平�?        initCountdownDisplay() // v13.7: 初始化剩余时间倒计�?        initSleepTimer() // v46.x: 休眠定时器（TV/车机�?        initSpeedCurveDisplay() // v13.8: 初始化播放速度曲线
         initPercentageDisplay() // v13.9: 初始化播放位置百分比
         applyVignetteEffect() // v13.10: 暗角效果
         applyCustomWatermark() // v13.10: 初始化自定义文字水印
@@ -1519,7 +1504,7 @@ class PlayerActivity : BaseActivity() {
         val uncaughtHandler =
             CoroutineExceptionHandler { _, t ->
                 AppLog.e("Player", "uncaught", t)
-                AppToast.showLong(this@PlayerActivity, "播放失败：${t.message}")
+                AppToast.showLong(this@PlayerActivity, "播放失败�?{t.message}")
                 finish()
             }
         playbackUncaughtHandler = uncaughtHandler
@@ -1544,7 +1529,7 @@ class PlayerActivity : BaseActivity() {
         cid: Long,
     ) {
         // Must not crash the player: always swallow any network/parse errors.
-        binding.tvOnline.text = "-人正在观看"
+        binding.tvOnline.text = "-人正在观�?
         lifecycleScope.launch {
             val countText =
                 withContext(Dispatchers.IO) {
@@ -1552,7 +1537,7 @@ class PlayerActivity : BaseActivity() {
                         BiliApi.videoOnlineStatus(bvid = bvid, cid = cid).displayCountText()
                     }.getOrDefault("-")
                 }
-            binding.tvOnline.text = "${countText}人正在观看"
+            binding.tvOnline.text = "${countText}人正在观�?
         }
     }
 
@@ -1765,14 +1750,14 @@ class PlayerActivity : BaseActivity() {
                         } catch (_: Throwable) {
                             throw BiliApiException(
                                 apiCode = -352,
-                                apiMessage = "风控拦截：主请求被限制，且 try_look 请求失败",
+                                apiMessage = "风控拦截：主请求被限制，�?try_look 请求失败",
                             )
                         }
                     return buildTryLookResult(
                         fallbackStream = fallbackStream,
                         riskCode = e.apiCode,
                         riskMessage = e.apiMessage,
-                        failureMessage = "风控拦截：主请求被限制，且 try_look 兜底失败",
+                        failureMessage = "风控拦截：主请求被限制，�?try_look 兜底失败",
                         reason = "risk_api_error",
                     )
                 }
@@ -1979,7 +1964,7 @@ class PlayerActivity : BaseActivity() {
                 return true
             }
 
-            // P1: TV danmaku settings shortcut — X key on remote opens danmaku settings directly
+            // P1: TV danmaku settings shortcut �?X key on remote opens danmaku settings directly
             KeyEvent.KEYCODE_BUTTON_X,
             -> {
                 if (isSidePanelVisible() && isSettingsPanelVisible()) {
@@ -1994,6 +1979,14 @@ class PlayerActivity : BaseActivity() {
                 }
                 settingsPanelMenu = PlayerSettingsMenu.DANMAKU
                 showSettingsPanel(openedFromMenuKey = true)
+                return true
+            }
+
+            // P3: Gamepad Y key — toggle danmaku on/off
+            KeyEvent.KEYCODE_BUTTON_Y,
+            -> {
+                session.danmaku.enabled = !session.danmaku.enabled
+                AppToast.show(this, if (session.danmaku.enabled) "弹幕已开启" else "弹幕已关闭")
                 return true
             }
 
@@ -2277,8 +2270,7 @@ class PlayerActivity : BaseActivity() {
     }
 
     // v12.10: 保存当前播放位置
-    // v13.16: 只有开启播放位置记忆时才保存
-    private fun saveCurrentPlaybackPosition() {
+    // v13.16: 只有开启播放位置记忆时才保�?    private fun saveCurrentPlaybackPosition() {
         // v13.16: 检查是否开启了播放位置记忆
         if (!BiliClient.prefs.playbackPositionMemoryEnabled) return
         val bvid = currentBvid.trim()
@@ -2287,8 +2279,7 @@ class PlayerActivity : BaseActivity() {
         if (bvid.isBlank() || cid <= 0) return
         val pos = engine.currentPosition.coerceAtLeast(0L)
         val duration = engine.duration.coerceAtLeast(0L)
-        // 如果播放到末尾（最后3秒），清除位置记忆
-        if (duration > 0 && pos >= duration - 3000) {
+        // 如果播放到末尾（最�?秒），清除位置记�?        if (duration > 0 && pos >= duration - 3000) {
             BiliClient.prefs.clearVideoPosition(bvid, cid)
         } else if (pos > 3000) {
             BiliClient.prefs.setVideoPosition(bvid, cid, pos)
@@ -2315,8 +2306,7 @@ class PlayerActivity : BaseActivity() {
         }
     }
 
-    // v4.6: 画中画支持
-    @androidx.annotation.OptIn(androidx.media3.common.util.UnstableApi::class)
+    // v4.6: 画中画支�?    @androidx.annotation.OptIn(androidx.media3.common.util.UnstableApi::class)
     override fun onPictureInPictureModeChanged(isInPipMode: Boolean) {
         super.onPictureInPictureModeChanged(isInPipMode)
         if (isInPipMode) {
@@ -2359,9 +2349,7 @@ class PlayerActivity : BaseActivity() {
         trace?.log("activity:onDestroy:start")
         debugJob?.cancel()
         networkSpeedJob?.cancel()
-        releaseBatteryIndicator() // v12.12: 释放电池指示器
-        releaseSleepTimer() // v46.x: 释放休眠定时器
-        watchTimeJob?.cancel()
+        releaseBatteryIndicator() // v12.12: 释放电池指示�?        releaseSleepTimer() // v46.x: 释放休眠定时�?        watchTimeJob?.cancel()
         progressJob?.cancel()
         autoResumeJob?.cancel()
         autoResumeHintTimeoutJob?.cancel()
@@ -2556,14 +2544,12 @@ class PlayerActivity : BaseActivity() {
             setControlsVisible(true)
         }
 
-        // v6.5: 长按弹幕按钮发送弹幕
-        binding.btnDanmaku.setOnLongClickListener {
+        // v6.5: 长按弹幕按钮发送弹�?        binding.btnDanmaku.setOnLongClickListener {
             showSendVideoDanmakuDialog()
             true
         }
 
-        // v6.6: 发送弹幕按钮
-        binding.btnSendDanmaku?.setOnClickListener {
+        // v6.6: 发送弹幕按�?        binding.btnSendDanmaku?.setOnClickListener {
             showSendVideoDanmakuDialog()
         }
 
@@ -2576,8 +2562,7 @@ class PlayerActivity : BaseActivity() {
             setControlsVisible(true)
         }
 
-        // v10.3: 长按详情按钮呼出快速设置面板
-        binding.btnDetail.setOnLongClickListener {
+        // v10.3: 长按详情按钮呼出快速设置面�?        binding.btnDetail.setOnLongClickListener {
             showQuickSettingsPanel()
             true
         }
@@ -2935,7 +2920,7 @@ class PlayerActivity : BaseActivity() {
             return
         }
         if (!subtitleAvailable) {
-            AppToast.show(this, "该视频暂无字幕")
+            AppToast.show(this, "该视频暂无字�?)
             return
         }
         applySubtitleEnabledSetting(!session.subtitleEnabled, exo)
@@ -2943,7 +2928,7 @@ class PlayerActivity : BaseActivity() {
 
     internal fun loadAndEnableSubtitlesOnDemand(exo: ExoPlayer) {
         if (subtitleLoadJob?.isActive == true) {
-            AppToast.show(this, "字幕加载中")
+            AppToast.show(this, "字幕加载�?)
             return
         }
         val detail = currentVideoDetail
@@ -3001,7 +2986,7 @@ class PlayerActivity : BaseActivity() {
                     updateSubtitleButton()
                     (binding.recyclerSettings.adapter as? PlayerSettingsAdapter)?.let { refreshSettings(it) }
                     if (config == null) {
-                        if (showUnavailableToast) AppToast.show(this@PlayerActivity, "该视频暂无字幕")
+                        if (showUnavailableToast) AppToast.show(this@PlayerActivity, "该视频暂无字�?)
                         return@launch
                     }
 
@@ -3093,7 +3078,7 @@ class PlayerActivity : BaseActivity() {
         resumeExpiredUrlReloadAttempted = true
         resumeExpiredUrlReloadArmed = false
         trace?.log("exo:resumeReload", "http=${httpCode ?: -1} type=${error.errorCodeName}")
-        AppToast.show(this@PlayerActivity, "播放地址已过期，正在刷新…")
+        AppToast.show(this@PlayerActivity, "播放地址已过期，正在刷新�?)
         reloadStream(keepPosition = true, resetConstraints = false, autoPlay = false)
         return true
     }
@@ -3681,7 +3666,7 @@ class PlayerActivity : BaseActivity() {
                 lastAvailableAudioIds = parseDashAudioIdList(playStream, constraints = playbackConstraints)
                 logPlayUrlTrackSummary(source = "reload", stream = playStream, constraints = playbackConstraints)
                 if (engine.kind == PlayerEngineKind.IjkPlayer && playable !is Playable.Dash) {
-                    AppToast.showLong(this@PlayerActivity, "IjkPlayer 内核仅支持 DASH（音视频分离）流，请切回 ExoPlayer")
+                    AppToast.showLong(this@PlayerActivity, "IjkPlayer 内核仅支�?DASH（音视频分离）流，请切回 ExoPlayer")
                     return@launch
                 }
                 when (playable) {
@@ -3725,7 +3710,7 @@ class PlayerActivity : BaseActivity() {
             } catch (t: Throwable) {
                 AppLog.e("Player", "reloadStream failed", t)
                 if (!handlePlayUrlErrorIfNeeded(t)) {
-                    AppToast.show(this@PlayerActivity, "切换失败：${t.message}")
+                    AppToast.show(this@PlayerActivity, "切换失败�?{t.message}")
                 }
             }
         }
@@ -4095,8 +4080,7 @@ class PlayerActivity : BaseActivity() {
     }
 
     internal fun playUrlParamsForSession(): Pair<Int, Int> {
-        // Always request the highest; B 站会根据登录/会员权限返回实际可用清晰度。
-        val qn = 127
+        // Always request the highest; B 站会根据登录/会员权限返回实际可用清晰度�?        val qn = 127
         var fnval = 4048 // all available DASH video
         fnval = fnval or 128 // 4K
         fnval = fnval or 1024 // 8K
@@ -4441,13 +4425,7 @@ class PlayerActivity : BaseActivity() {
         // 颜色选择
         val colors =
             intArrayOf(
-                0xFFFFFF, // 白
-                0xFE0302, // 红
-                0xFFAA00, // 橙
-                0x00FF00, // 绿
-                0x00CCFF, // 蓝
-                0xFF6699, // 粉
-            )
+                0xFFFFFF, // �?                0xFE0302, // �?                0xFFAA00, // �?                0x00FF00, // �?                0x00CCFF, // �?                0xFF6699, // �?            )
         val colorNames = arrayOf("白色", "红色", "橙色", "绿色", "蓝色", "粉色")
         var selectedColor = 0xFFFFFF
         var selectedMode = 1 // 1=滚动, 4=底部, 5=顶部
@@ -4492,8 +4470,7 @@ class PlayerActivity : BaseActivity() {
                     }
                     setOnClickListener {
                         selectedColor = colors[index]
-                        // 更新选中状态
-                        colorButtons.forEachIndexed { i, v ->
+                        // 更新选中状�?                        colorButtons.forEachIndexed { i, v ->
                             v.setBackground(
                                 android.graphics.drawable.GradientDrawable().apply {
                                     if (i == index) setStroke(3, android.graphics.Color.YELLOW)
@@ -4586,8 +4563,7 @@ class PlayerActivity : BaseActivity() {
                         },
                 )
 
-                // v6.7: 弹幕发送历史
-                val history = BiliClient.prefs.danmakuSendHistory
+                // v6.7: 弹幕发送历�?                val history = BiliClient.prefs.danmakuSendHistory
                 if (history.isNotEmpty()) {
                     val historyLabelRow =
                         android.widget.LinearLayout(this@PlayerActivity).apply {
@@ -4598,7 +4574,7 @@ class PlayerActivity : BaseActivity() {
                         }
                     val historyLabel =
                         android.widget.TextView(this@PlayerActivity).apply {
-                            text = "最近发送"
+                            text = "最近发�?
                             textSize = 12f
                             setTextColor(android.graphics.Color.GRAY)
                         }
@@ -4624,7 +4600,7 @@ class PlayerActivity : BaseActivity() {
                                 BiliClient.prefs.clearDanmakuSendHistory()
                                 historyLabelRow.visibility = android.view.View.GONE
                                 historyLayout.visibility = android.view.View.GONE
-                                AppToast.show(this@PlayerActivity, "已清空发送历史")
+                                AppToast.show(this@PlayerActivity, "已清空发送历�?)
                             }
                         }
                     historyLabelRow.addView(clearBtn)
@@ -4652,24 +4628,22 @@ class PlayerActivity : BaseActivity() {
 
         android.app.AlertDialog
             .Builder(this)
-            .setTitle("发送弹幕")
+            .setTitle("发送弹�?)
             .setView(container)
-            .setPositiveButton("发送") { _, _ ->
+            .setPositiveButton("发�?) { _, _ ->
                 val msg = editText.text.toString().trim()
                 if (msg.isEmpty()) {
                     AppToast.show(this, "弹幕内容不能为空")
                     return@setPositiveButton
                 }
                 if (msg.length > 100) {
-                    AppToast.show(this, "弹幕内容不能超过100字")
+                    AppToast.show(this, "弹幕内容不能超过100�?)
                     return@setPositiveButton
                 }
                 lifecycleScope.launch {
                     try {
                         BiliApi.sendDanmaku(cid = cid, aid = aid, message = msg, color = selectedColor, mode = selectedMode)
-                        BiliClient.prefs.addDanmakuSendHistory(msg) // v6.7: 保存发送历史
-                        // v6.7: 发送成功后本地立即显示自己的弹幕
-                        val dm =
+                        BiliClient.prefs.addDanmakuSendHistory(msg) // v6.7: 保存发送历�?                        // v6.7: 发送成功后本地立即显示自己的弹�?                        val dm =
                             Danmaku(
                                 timeMs = (player?.currentPosition?.times(1000) ?: 0L).takeIf { it > 0 }?.coerceAtMost(Int.MAX_VALUE.toLong())?.toInt() ?: 0,
                                 mode = selectedMode,
@@ -4679,16 +4653,15 @@ class PlayerActivity : BaseActivity() {
                                 weight = 400,
                             )
                         binding.danmakuView.appendDanmakus(listOf(dm))
-                        AppToast.show(this@PlayerActivity, "弹幕已发送")
-                        // v9.6: 发送成功震动反馈
-                        @Suppress("DEPRECATION")
+                        AppToast.show(this@PlayerActivity, "弹幕已发�?)
+                        // v9.6: 发送成功震动反�?                        @Suppress("DEPRECATION")
                         try {
                             val vib = getSystemService(android.content.Context.VIBRATOR_SERVICE) as? android.os.Vibrator
                             vib?.vibrate(android.os.VibrationEffect.createOneShot(50, android.os.VibrationEffect.DEFAULT_AMPLITUDE))
                         } catch (_: Throwable) {
                         }
                     } catch (t: Throwable) {
-                        AppToast.show(this@PlayerActivity, "发送失败: ${t.message}")
+                        AppToast.show(this@PlayerActivity, "发送失�? ${t.message}")
                     }
                 }
             }.setNegativeButton("取消", null)
