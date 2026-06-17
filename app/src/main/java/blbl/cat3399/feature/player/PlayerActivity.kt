@@ -1997,6 +1997,14 @@ class PlayerActivity : BaseActivity() {
                 return true
             }
 
+            // P3: Gamepad Y key — toggle danmaku on/off
+            KeyEvent.KEYCODE_BUTTON_Y,
+            -> {
+                session.danmaku.enabled = !session.danmaku.enabled
+                AppToast.show(this, if (session.danmaku.enabled) "弹幕已开启" else "弹幕已关闭")
+                return true
+            }
+
             KeyEvent.KEYCODE_BACK,
             KeyEvent.KEYCODE_ESCAPE,
             KeyEvent.KEYCODE_BUTTON_B,
