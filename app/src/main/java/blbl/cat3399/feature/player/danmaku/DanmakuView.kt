@@ -9,6 +9,7 @@ import android.view.View
 import blbl.cat3399.core.emote.ReplyEmotePanelRepository
 import blbl.cat3399.core.log.AppLog
 import blbl.cat3399.core.model.Danmaku
+import blbl.cat3399.core.model.DanmakuShield
 import java.util.Locale
 import java.util.concurrent.atomic.AtomicLong
 
@@ -167,6 +168,10 @@ class DanmakuView
 
         fun setConfigProvider(provider: () -> DanmakuConfig) {
             configProvider = provider
+        }
+
+        fun setDanmakuShield(shield: DanmakuShield) {
+            player.updateShield(shield)
         }
 
         fun setDanmakus(list: List<Danmaku>) {

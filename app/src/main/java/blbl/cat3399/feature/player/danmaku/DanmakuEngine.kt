@@ -13,6 +13,7 @@ import blbl.cat3399.R
 import blbl.cat3399.core.emote.EmoteBitmapLoader
 import blbl.cat3399.core.emote.ReplyEmotePanelRepository
 import blbl.cat3399.core.model.Danmaku
+import blbl.cat3399.core.model.DanmakuShield
 import blbl.cat3399.core.model.isHighLiked
 import blbl.cat3399.feature.player.danmaku.model.DanmakuCacheState
 import blbl.cat3399.feature.player.danmaku.model.DanmakuInlineSegment
@@ -46,6 +47,8 @@ internal interface DanmakuEngineMainApi {
 }
 
 internal interface DanmakuEngineActionApi {
+    fun updateShield(shield: DanmakuShield)
+
     fun updateViewport(
         width: Int,
         height: Int,
@@ -144,6 +147,9 @@ internal class DanmakuEngine(
 
     @Volatile private var measureGeneration: Int = 0
 
+    @Volatile
+    private var shield: DanmakuShield = DanmakuShield()
+
     @Volatile private var debugPendingCount: Int = 0
 
     @Volatile private var debugNextAtMs: Int? = null
@@ -225,6 +231,12 @@ internal class DanmakuEngine(
         viewportTopInsetPx = topInsetPx.coerceAtLeast(0)
         viewportBottomInsetPx = bottomInsetPx.coerceAtLeast(0)
         rebuildRequested = true
+    }
+
+    override fun updateShield(shield: DanmakuShield) {
+        synchronized(actionStateLock) {
+            this.shield = shield
+        }
     }
 
     override fun updateConfig(newConfig: DanmakuConfig) {
@@ -477,13 +489,19 @@ internal class DanmakuEngine(
 
     override fun setDanmakus(list: List<Danmaku>) {
         synchronized(actionStateLock) {
+            val s = shield
+            val filtered = if (s.keywords.isEmpty() && s.regexes.isEmpty() && s.blockedUserMidHashes.isEmpty() && s.allowScroll && s.allowTop && s.allowBottom && s.allowColor && s.allowSpecial && !s.aiEnabled) {
+                list
+            } else {
+                list.filter { s.allow(it) }
+            }
             clearActives()
             resetLaneState()
             pending.clear()
             items =
-                list
+                filtered
                     .sortedBy { it.timeMs }
-                    .mapTo(ArrayList(list.size.coerceAtLeast(0))) { DanmakuItem(it) }
+                    .mapTo(ArrayList(filtered.size.coerceAtLeast(0))) { DanmakuItem(it) }
             index = 0
             lastNowMs = 0
             rebuildRequested = true
@@ -498,16 +516,22 @@ internal class DanmakuEngine(
         alreadySorted: Boolean,
     ) {
         synchronized(actionStateLock) {
-            if (list.isEmpty()) return
+            val s = shield
+            val filtered = if (s.keywords.isEmpty() && s.regexes.isEmpty() && s.blockedUserMidHashes.isEmpty() && s.allowScroll && s.allowTop && s.allowBottom && s.allowColor && s.allowSpecial && !s.aiEnabled) {
+                list
+            } else {
+                list.filter { s.allow(it) }
+            }
+            if (filtered.isEmpty()) return
             if (items.isEmpty()) {
                 setDanmakus(list)
                 return
             }
             val newItems =
                 if (alreadySorted) {
-                    list
+                    filtered
                 } else {
-                    list.sortedBy { it.timeMs }
+                    filtered.sortedBy { it.timeMs }
                 }
             val lastTime = items.lastOrNull()?.timeMs() ?: Int.MIN_VALUE
             if (newItems.firstOrNull()?.timeMs ?: Int.MIN_VALUE >= lastTime) {

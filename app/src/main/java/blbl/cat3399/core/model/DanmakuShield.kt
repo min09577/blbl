@@ -21,7 +21,7 @@ data class DanmakuShield(
                 1, 2, 3, 6 -> allowScroll
                 4 -> allowBottom
                 5 -> allowTop
-                7, 8, 9 -> false
+                7, 8, 9 -> allowSpecial
                 else -> allowSpecial
             }
         if (!typeAllowed) return false

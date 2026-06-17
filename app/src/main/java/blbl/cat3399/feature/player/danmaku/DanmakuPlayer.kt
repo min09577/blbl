@@ -9,6 +9,7 @@ import android.os.SystemClock
 import android.view.Choreographer
 import blbl.cat3399.core.log.AppLog
 import blbl.cat3399.core.model.Danmaku
+import blbl.cat3399.core.model.DanmakuShield
 import blbl.cat3399.feature.player.danmaku.model.RenderSnapshot
 import java.util.concurrent.Semaphore
 import java.util.concurrent.atomic.AtomicBoolean
@@ -189,6 +190,10 @@ internal class DanmakuPlayer(
         runCatching {
             actionHandler.obtainMessage(MSG_OP_RELEASE).sendToTarget()
         }
+    }
+
+    fun updateShield(shield: DanmakuShield) {
+        engineAction.updateShield(shield)
     }
 
     fun onViewportChanged(

@@ -57,6 +57,7 @@ import blbl.cat3399.core.api.video.VideoPlayStream
 import blbl.cat3399.core.api.video.VideoTrack
 import blbl.cat3399.core.api.video.VideoTrackInfo
 import blbl.cat3399.core.log.AppLog
+import blbl.cat3399.core.model.Danmaku
 import blbl.cat3399.core.model.DanmakuShield
 import blbl.cat3399.core.model.VideoCard
 import blbl.cat3399.core.net.BiliClient
@@ -1978,6 +1979,24 @@ class PlayerActivity : BaseActivity() {
                 return true
             }
 
+            // P1: TV danmaku settings shortcut — X key on remote opens danmaku settings directly
+            KeyEvent.KEYCODE_BUTTON_X,
+            -> {
+                if (isSidePanelVisible() && isSettingsPanelVisible()) {
+                    if (settingsPanelMenu == PlayerSettingsMenu.DANMAKU) {
+                        hideSettingsPanel(dismissTarget = PanelDismissTarget.ResumeOsd)
+                    } else {
+                        settingsPanelMenu = PlayerSettingsMenu.DANMAKU
+                        refreshSettings(binding.recyclerSettings.adapter as PlayerSettingsAdapter)
+                        focusSettingsPanel()
+                    }
+                    return true
+                }
+                settingsPanelMenu = PlayerSettingsMenu.DANMAKU
+                showSettingsPanel(openedFromMenuKey = true)
+                return true
+            }
+
             KeyEvent.KEYCODE_BACK,
             KeyEvent.KEYCODE_ESCAPE,
             KeyEvent.KEYCODE_BUTTON_B,
@@ -3874,6 +3893,7 @@ class PlayerActivity : BaseActivity() {
     internal fun applyDanmakuMeta(meta: DanmakuMeta) {
         cancelDanmakuLoading(reason = "meta_update")
         danmakuShield = meta.shield
+        binding.danmakuView.setDanmakuShield(meta.shield)
         danmakuSegmentTotal = meta.segmentTotal
         danmakuSegmentSizeMs = meta.segmentSizeMs.coerceAtLeast(1)
         danmakuLoadedSegments.clear()
@@ -3886,6 +3906,7 @@ class PlayerActivity : BaseActivity() {
         if (cid == null) {
             cancelDanmakuLoading(reason = "settings_change_no_cid")
             danmakuShield = null
+            binding.danmakuView.setDanmakuShield(DanmakuShield())
             danmakuLoadedSegments.clear()
             danmakuSegmentItems.clear()
             binding.danmakuView.setDanmakus(emptyList())
@@ -4647,6 +4668,16 @@ class PlayerActivity : BaseActivity() {
                     try {
                         BiliApi.sendDanmaku(cid = cid, aid = aid, message = msg, color = selectedColor, mode = selectedMode)
                         BiliClient.prefs.addDanmakuSendHistory(msg) // v6.7: 保存发送历史
+                        // v6.7: 发送成功后本地立即显示自己的弹幕
+                        val dm = Danmaku(
+                            timeMs = (player?.currentPosition?.times(1000) ?: 0L).takeIf { it > 0 }?.coerceAtMost(Int.MAX_VALUE.toLong())?.toInt() ?: 0,
+                            mode = selectedMode,
+                            text = msg,
+                            color = selectedColor,
+                            fontSize = 25,
+                            weight = 400,
+                        )
+                        binding.danmakuView.appendDanmakus(listOf(dm))
                         AppToast.show(this@PlayerActivity, "弹幕已发送")
                         // v9.6: 发送成功震动反馈
                         @Suppress("DEPRECATION")
