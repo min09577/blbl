@@ -38,8 +38,8 @@ jobs:
         uses: actions/cache@v4
         with:
           path: .gradle/configuration-cache
-          key: config-cache-${{ runner.os }}-${{ hashFiles('gradle.properties', 'build.gradle.kts', 'app/build.gradle.kts') }}
-          restore-keys: config-cache-${{ runner.os }}-
+          key: config-cache-v2-${{ runner.os }}-${{ hashFiles('gradle.properties', '*.gradle.kts', '**/*.gradle.kts', 'buildSrc/**', 'gradle/libs.versions.toml') }}
+          restore-keys: config-cache-v2-${{ runner.os }}-
       - name: Generate keystore
         run: |
           mkdir -p keystore

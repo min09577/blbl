@@ -64,8 +64,8 @@ jobs:
         uses: actions/cache@v4
         with:
           path: .gradle/configuration-cache
-          key: config-cache-${{ runner.os }}-${{ hashFiles('gradle.properties', 'build.gradle.kts', 'app/build.gradle.kts') }}
-          restore-keys: config-cache-${{ runner.os }}-
+          key: config-cache-v2-${{ runner.os }}-${{ hashFiles('gradle.properties', '*.gradle.kts', '**/*.gradle.kts', 'buildSrc/**', 'gradle/libs.versions.toml') }}
+          restore-keys: config-cache-v2-${{ runner.os }}-
       - name: Generate keystore
         run: |
           mkdir -p keystore
@@ -75,7 +75,7 @@ jobs:
           RELEASE_STORE_PASSWORD: android
           RELEASE_KEY_ALIAS: release
           RELEASE_KEY_PASSWORD: android
-        run: ./gradlew assembleRelease -PversionName=${{ needs.version.outputs.version_name }} -PversionCode=${{ github.run_number }} --no-daemon --no-build-cache --stacktrace
+        run: ./gradlew assembleRelease -PversionName=${{ needs.version.outputs.version_name }} -PversionCode=${{ github.run_number }} --no-daemon --stacktrace
       - name: Copy TV APK
         run: |
           mkdir -p output
