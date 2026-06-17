@@ -14,9 +14,6 @@ on:
         required: true
         default: ''
 
-permissions:
-  contents: write
-
 jobs:
   version:
     runs-on: ubuntu-latest
