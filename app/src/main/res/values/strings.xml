@@ -175,4 +175,58 @@
     <string name="settings_video_bookmarks">视频书签</string>
     <string name="player_network_speed">网络速度</string>
     <string name="player_bookmark_indicator">书签</string>
+
+    <!-- Widget Danmaku Pool -->
+    <string-array name="widget_danmaku_extras">
+        <item>2333 前方高能预警！</item>
+        <item>666666 这波操作我服</item>
+        <item>梦开始的地方</item>
+        <item>你币有了！</item>
+        <item>空降成功 感谢指挥部</item>
+        <item>名场面！每日一遍</item>
+        <item>我永远喜欢二次元</item>
+        <item>高能预警！非战斗人员请撤离</item>
+        <item>这个笑容由我守护</item>
+        <item>前方高萌！</item>
+        <item>完结撒花 🎉</item>
+        <item>进度条撑住啊！</item>
+        <item>这个画质我哭了</item>
+        <item>大佬受我一拜</item>
+        <item>有生之年系列！</item>
+        <item>哔哩哔哩干杯！( ゜- ゜)つロ</item>
+        <item>建议改成：绝活</item>
+        <item>妙啊～</item>
+        <item>梦回 ××××</item>
+        <item>开幕雷击！</item>
+        <item>建议 0.5 倍速食用</item>
+        <item>建议 2 倍速食用</item>
+        <item>我反手就是一个三连</item>
+        <item>下次一定！</item>
+        <item>这次一定！</item>
+        <item>注入灵魂</item>
+        <item>经费在燃烧</item>
+        <item>要素过多</item>
+        <item>DNA 动了</item>
+        <item>双厨狂喜！</item>
+        <item>这波属于是经典永流传了</item>
+        <item>禁止好活！</item>
+        <item>建议申遗</item>
+        <item>典中典</item>
+        <item>顶级理解</item>
+        <item>未曾设想的道路</item>
+        <item>你就是列文虎克？</item>
+        <item>建议改成：精准投喂</item>
+        <item>好！很有精神！</item>
+        <item>这弹幕我能笑一年</item>
+        <item>前方足控福利</item>
+        <item>建议开启循环播放</item>
+        <item>教练我想学这个</item>
+        <item>已全文背诵</item>
+        <item>这特效我给满分</item>
+        <item>开幕雷击 结尾暴击</item>
+        <item>要素察觉</item>
+        <item>纯度太高了</item>
+        <item>刻进 DNA 了</item>
+        <item>每日一遍，烦恼再见</item>
+    </string-array>
 </resources>

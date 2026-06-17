@@ -177,6 +177,19 @@
         <receiver
             android:name=".feature.live.LiveReminderReceiver"
             android:exported="false" />
+
+        <!-- Danmaku Lock-Screen Widget (P2) -->
+        <receiver
+            android:name=".feature.widget.DanmakuWidgetProvider"
+            android:exported="true"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/danmaku_widget_info" />
+        </receiver>
 </application>
 
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
