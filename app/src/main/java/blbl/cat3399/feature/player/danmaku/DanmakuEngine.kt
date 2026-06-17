@@ -490,11 +490,12 @@ internal class DanmakuEngine(
     override fun setDanmakus(list: List<Danmaku>) {
         synchronized(actionStateLock) {
             val s = shield
-            val filtered = if (s.keywords.isEmpty() && s.regexes.isEmpty() && s.blockedUserMidHashes.isEmpty() && s.allowScroll && s.allowTop && s.allowBottom && s.allowColor && s.allowSpecial && !s.aiEnabled) {
-                list
-            } else {
-                list.filter { s.allow(it) }
-            }
+            val filtered =
+                if (s.keywords.isEmpty() && s.regexes.isEmpty() && s.blockedUserMidHashes.isEmpty() && s.allowScroll && s.allowTop && s.allowBottom && s.allowColor && s.allowSpecial && !s.aiEnabled) {
+                    list
+                } else {
+                    list.filter { s.allow(it) }
+                }
             clearActives()
             resetLaneState()
             pending.clear()
@@ -517,11 +518,12 @@ internal class DanmakuEngine(
     ) {
         synchronized(actionStateLock) {
             val s = shield
-            val filtered = if (s.keywords.isEmpty() && s.regexes.isEmpty() && s.blockedUserMidHashes.isEmpty() && s.allowScroll && s.allowTop && s.allowBottom && s.allowColor && s.allowSpecial && !s.aiEnabled) {
-                list
-            } else {
-                list.filter { s.allow(it) }
-            }
+            val filtered =
+                if (s.keywords.isEmpty() && s.regexes.isEmpty() && s.blockedUserMidHashes.isEmpty() && s.allowScroll && s.allowTop && s.allowBottom && s.allowColor && s.allowSpecial && !s.aiEnabled) {
+                    list
+                } else {
+                    list.filter { s.allow(it) }
+                }
             if (filtered.isEmpty()) return
             if (items.isEmpty()) {
                 setDanmakus(list)

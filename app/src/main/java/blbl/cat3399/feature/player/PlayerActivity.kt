@@ -4669,14 +4669,15 @@ class PlayerActivity : BaseActivity() {
                         BiliApi.sendDanmaku(cid = cid, aid = aid, message = msg, color = selectedColor, mode = selectedMode)
                         BiliClient.prefs.addDanmakuSendHistory(msg) // v6.7: 保存发送历史
                         // v6.7: 发送成功后本地立即显示自己的弹幕
-                        val dm = Danmaku(
-                            timeMs = (player?.currentPosition?.times(1000) ?: 0L).takeIf { it > 0 }?.coerceAtMost(Int.MAX_VALUE.toLong())?.toInt() ?: 0,
-                            mode = selectedMode,
-                            text = msg,
-                            color = selectedColor,
-                            fontSize = 25,
-                            weight = 400,
-                        )
+                        val dm =
+                            Danmaku(
+                                timeMs = (player?.currentPosition?.times(1000) ?: 0L).takeIf { it > 0 }?.coerceAtMost(Int.MAX_VALUE.toLong())?.toInt() ?: 0,
+                                mode = selectedMode,
+                                text = msg,
+                                color = selectedColor,
+                                fontSize = 25,
+                                weight = 400,
+                            )
                         binding.danmakuView.appendDanmakus(listOf(dm))
                         AppToast.show(this@PlayerActivity, "弹幕已发送")
                         // v9.6: 发送成功震动反馈
