@@ -8,7 +8,7 @@ java {
 }
 
 dependencies {
-    api("com.google.protobuf:protobuf-javalite:3.25.5")
+    api("com.google.protobuf:protobuf-javalite:4.35.1")
     api("io.grpc:grpc-protobuf-lite:1.72.0")
     api("io.grpc:grpc-stub:1.72.0")
     api("io.grpc:grpc-okhttp:1.72.0")
