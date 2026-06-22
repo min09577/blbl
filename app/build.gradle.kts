@@ -129,10 +129,10 @@ dependencies {
     implementation("androidx.work:work-runtime-ktx:2.9.1")
     implementation("org.brotli:dec:0.1.2")
 
-    implementation("androidx.media3:media3-exoplayer:1.4.1")
-    implementation("androidx.media3:media3-exoplayer-hls:1.4.1")
-    implementation("androidx.media3:media3-ui:1.4.1")
-    implementation("androidx.media3:media3-datasource-okhttp:1.4.1")
+    implementation("androidx.media3:media3-exoplayer:1.10.1")
+    implementation("androidx.media3:media3-exoplayer-hls:1.10.1")
+    implementation("androidx.media3:media3-ui:1.10.1")
+    implementation("androidx.media3:media3-datasource-okhttp:1.10.1")
 
     implementation("com.google.zxing:core:3.5.3")
 
@@ -140,10 +140,10 @@ dependencies {
     implementation("androidx.multidex:multidex:2.0.1")
 
     // KitKat (API 19) compatibility - lower media3 version for minSdk 19
-    "kitkatImplementation"("androidx.media3:media3-exoplayer:1.4.1")
-    "kitkatImplementation"("androidx.media3:media3-exoplayer-hls:1.4.1")
-    "kitkatImplementation"("androidx.media3:media3-ui:1.4.1")
-    "kitkatImplementation"("androidx.media3:media3-datasource:1.4.1")
+    "kitkatImplementation"("androidx.media3:media3-exoplayer:1.10.1")
+    "kitkatImplementation"("androidx.media3:media3-exoplayer-hls:1.10.1")
+    "kitkatImplementation"("androidx.media3:media3-ui:1.10.1")
+    "kitkatImplementation"("androidx.media3:media3-datasource:1.10.1")
 
     testImplementation("junit:junit:4.13.2")
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.9.0")
