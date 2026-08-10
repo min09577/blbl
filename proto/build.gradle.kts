@@ -9,9 +9,9 @@ java {
 
 dependencies {
     api("com.google.protobuf:protobuf-javalite:3.25.5")
-    api("io.grpc:grpc-protobuf-lite:1.72.0")
-    api("io.grpc:grpc-stub:1.72.0")
-    api("io.grpc:grpc-okhttp:1.72.0")
+    api("io.grpc:grpc-protobuf-lite:1.83.1")
+    api("io.grpc:grpc-stub:1.83.1")
+    api("io.grpc:grpc-okhttp:1.83.1")
     compileOnly("javax.annotation:javax.annotation-api:1.3.2")
 }
 
